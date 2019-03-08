@@ -1,31 +1,31 @@
 ---
-title: "Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6. Dezember 2018)"
-description: "In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind."
+title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6. Dezember 2018)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 09936c7161a7e303a0ada2f48ef3281b81a67295
 ms.openlocfilehash: 6fae56d2feeec8e5c26fc86bdf89b8ab4c282144
-ms.contentlocale: de-de
-ms.lasthandoff: 12/10/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304596"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6. Dezember 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6. Dezember 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -142,5 +142,4 @@ Die aktualisierten Zuordnungen sollten wie folgt aussehen.
 ![Arbeitskräfte einer Arbeitskraftaufgabe zuweisen](./media/WorkerMapping.png)
 
 ![Geschlechtsfeld-Umwandlung](./media/WorkerTransform.png)
-
 

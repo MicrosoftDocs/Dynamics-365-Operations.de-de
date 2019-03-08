@@ -1,13 +1,13 @@
 ---
-title: "Wählen Sie ein Produktkonfigurationsmodell aus."
-description: "Die Notwendigkeit, Produkte zu konfigurieren, um bestimmte Anforderungen zu erfüllen, wird eher die Regel anstatt die Ausnahme, sowohl in B2B- als auch in den B2C-Beziehungen."
+title: Wählen Sie ein Produktkonfigurationsmodell aus.
+description: Die Notwendigkeit, Produkte zu konfigurieren, um bestimmte Anforderungen zu erfüllen, wird eher die Regel anstatt die Ausnahme, sowohl in B2B- als auch in den B2C-Beziehungen.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 60a901ce9e87571b2d199a49af2cddbd72fc5808
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 2bfaf16cde329909c167d1ad402e08619bdcd5a2
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327457"
 ---
-
 # <a name="build-a-product-configuration-model"></a>Wählen Sie ein Produktkonfigurationsmodell aus.
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefiniert
 
 Eine benutzerdefinierte Tabelleneinschränkung wird vom Benutzer erstellt. Der Benutzer wählt eine Kombination von Attributtypen aus, um die Spalten der Tabelle darzustellen und gibt dann Werte aus den Domänen der ausgewählten Attributtypen ein, um die Zeilen in der Tabelleneinschränkung zu bilden.  
 
-Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Microsoft Dynamics 365 for Finance and Operations-Tabelle als Referenz verwendet wird, und indem dann Felder aus dieser Tabelle festgelegt werden, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Finance and Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
+Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Microsoft Dynamics 365 for Finance and Operations-Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Finance and Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
 
 Eine Tabelleneinschränkung wird in einem Produktkonfigurationsmodell einbezogen, indem die Tabelleneinschränkungsdefinition verwiesen und die betreffenden Attribute im Modell zu den Spalten in der Tabelleneinschränkung zuordnet werden.
 
@@ -158,7 +157,6 @@ Der Zweck der Konfiguration ist, eine unterschiedliche Variante des Produkts zu 
 ### <a name="multiple-sites-and-intercompany"></a>Mehrere Standorte und Intercompany
 
 Wenn eine Variante an einem Standort erfolgt oder auch an einem Unternehmen, das von der Site oder dem Unternehmen der Produktion abweicht, werden die Stückliste und der Arbeitsplan für die Lieferantensite im Lieferunternehmen erstellt und dort eingelagert. Die Produktvariante wird in allen Unternehmen freigegeben, die an der Lieferkette teilnehmen.
-
 
 
 

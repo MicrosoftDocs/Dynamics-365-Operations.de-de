@@ -1,13 +1,13 @@
---- 
+---
 title: EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
-description: "Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein eingehendes elektronisches Dokument für die Anwendungsdatenaktualisierung zu analysieren."
+description: Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) entworfen werden, um ein eingehendes elektronisches Dokument für die Anwendungsdatenaktualisierung zu analysieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326100"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
 
@@ -35,7 +35,7 @@ Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. B
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
-    * Anhand des folgenden Szenarios werden die Funktionen beim Analysieren eingehender elektronischer Dokumente im XML-Format gezeigt: ERP-Anwendung (Dynamics 365 for Finance and Operations) fordert Daten aus dem Webdienst an (beispielsweise http://efsta.org/ EFSTA-Steuerdienst) und analysiert die eingehenden Antworten, um die Anwendungsdaten entsprechend zu aktualisieren. Um auf effizienteste Weise zu analysieren, wird ein einziges EB-Format verwendet, trotz der anderen Struktur der erwarteten eingehenden Dokumente im XML-Format.   
+    * Anhand des folgenden Szenarios werden die Funktionen beim Analysieren eingehender elektronischer Dokumente im XML-Format gezeigt: ERP-Anwendung (Dynamics 365 for Finance and Operations) fordert Daten aus dem Webdienst an (beispielsweise http://efsta.org//EFSTA-Steuerdienst) und analysiert die eingehenden Antworten, um die Anwendungsdaten entsprechend zu aktualisieren. Um auf effizienteste Weise zu analysieren, wird ein einziges EB-Format verwendet, trotz der anderen Struktur der erwarteten eingehenden Dokumente im XML-Format.   
 
 ## <a name="import-and-review-er-configurations"></a>EB-Konfigurationen importieren und überprüfen
 Importieren Sie die EB-Modellkonfiguration, die das Beispieldatenmodell enthält, das entwickelt wurde, um die Details der eingehenden Datei zu speichern.  
@@ -110,5 +110,4 @@ Sie führen die erstellte Modellzuordnung für Testzwecke durch um zu sehen, wie
     * Klicken Sie auf „Durchsuchen”, und wählen Sie die Datei Response4.xml aus.  
 16. Klicken Sie auf "OK".
     * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass der Antworttyp nun ordnungsgemäß als gleich für die Datei Response1.xml-Datei erkannt wurde.  
-
 

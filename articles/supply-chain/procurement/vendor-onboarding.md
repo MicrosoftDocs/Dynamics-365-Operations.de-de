@@ -1,13 +1,13 @@
 ---
 title: Kreditoren aufnehmen
-description: "In diesem Thema wird der Prozess beschreiben, durch den neue Kreditoren aufgenommen werden. Es werden die Aktivitäten erklärt, die während des Prozesses von verschiedenen Rollen erforderlich sind."
+description: In diesem Thema wird der Prozess beschreiben, durch den neue Kreditoren aufgenommen werden. Es werden die Aktivitäten erklärt, die während des Prozesses von verschiedenen Rollen erforderlich sind.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
 ms.reviewer: josaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: f831d986d7b534bf030bee0fa0c5dcb97af03289
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322144"
 ---
-
 # <a name="onboard-vendors"></a>Kreditoren aufnehmen
 [!include [banner](../includes/banner.md)]
 
@@ -49,7 +48,7 @@ In der folgenden Tabelle werden die Schritte und die Rollen angezeigt, die am Pr
 | Administrator            | | | Erstellen Sie einen Benutzer in Finance and Operations und Microsoft Azure. | | | |
 | Kontaktperson des Kreditors    | | | Senden Sie eine E-Mail an die Kontaktperson. | Erfassen Sie Kreditoreninformationen. | | |
 
-Für eine schnelle Vorführung des Onboarding-Prozesses des Kreditors, schauen Sie sich dieses kurze YouTube-Video an: [Einen neuen Kreditor in Dynamics 365 for Finance and Operations onboarden] (https://www.youtube.com/watch?v=0KUc3AGaTKk}).
+Für eine rasche Präsentation des Lieferanten-Onboardingprozesses schauen Sie das kurze YouTube video: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importieren der Registrierungsanforderung des künftigen Kreditors
 
@@ -174,5 +173,4 @@ Indem Sie die Aktivität **Löschen** in der Registrierungsanforderung des zukü
 |  Kreditorenanforderung erstellt  |                                                                     Der Kreditorenregistrierungs-Assistent wurde abgeschlossen.                                                                      | Eine Anforderung, den Benutzer zu deaktivieren, wird erstellt, und die Registrierungsanforderung des künftigen Kreditors, die in den Kreditorenregistrierungs-Assistenten eingegebenen Daten sowie die Kreditorenanforderung werden gelöscht.<blockquote>[!NOTE]<br>Sie können die Aktivität <strong>Löschen</strong> nicht verwenden, wenn die Kreditorenanforderung sich in einem Prüfprozess im Workflow befindet.</blockquote> |
 |         Genehmigt         |                                                                               Die Kreditorenanforderung ist genehmigt.                                                                               |                                                                                                   Eine Registrierungsanforderung des künftigen Kreditors, die in den Kreditorenregistrierungs-Assistenten eingegebenen Daten sowie die Kreditorenanforderung werden gelöscht.                                                                                                    |
 |         Verweigert         |                                                                               Die Kreditorenanforderung wird abgelehnt.                                                                               |                                                                                                   Eine Registrierungsanforderung des künftigen Kreditors, die in den Kreditorenregistrierungs-Assistenten eingegebenen Daten sowie die Kreditorenanforderung werden gelöscht.                                                                                                    |
-
 

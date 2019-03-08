@@ -1,13 +1,13 @@
 ---
-title: "Power BI-Inhalt – Kredit- und Inkassoverwaltung"
-description: "In diesem Thema wird beschrieben, was im Power Bl-Inhalt \"Kredit und Inkassoverwaltung\" enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+title: Power BI-Inhalt zur Kredit- und Inkassoverwaltung
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kredit und Inkassoverwaltung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,25 +16,24 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
-ms.openlocfilehash: 3832cabb11d67eda7afd7f3d5322c005b36dc1f5
-ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325180"
 ---
-
-# <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt – Kredit- und Inkassoverwaltung
+# <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im Microsoft Power Bl-Inhalt **Kredit und Inkassoverwaltung** enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt zur **Kredit und Inkassoverwaltung** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der **Kredit- und Inkassoverwaltung**-Power BI-Inhalt wurde für Kredit- und Inkassoverwalter und Inkassosekretäre erstellt. Er bietet wichtige Kredit- und Inkasso-Metriken, wie ausstehende Verkäufe in Tagen, überfälliger Saldo, Kreditrisken und Debitoren, die das Kreditlimit überschritten haben. Es verwendet Transaktionsdaten und bietet Aggregatansichten von Kredit- und Inkassovorgängen für alle Unternehmen. Er bietet auch eine Aufschlüsselung pro Unternehmen, Debitorengruppe und Debitor.
+Der Power BI-Inhalt zur **Kredit- und Inkassoverwaltung** wurde für Kredit- und Inkassoverwalter und Inkassobearbeiter erstellt. Er bietet wichtige Kredit- und Inkasso-Metriken, wie ausstehende Verkäufe in Tagen, überfälliger Saldo, Kreditrisken und Debitoren, die das Kreditlimit überschritten haben. Es verwendet Transaktionsdaten und bietet Aggregatansichten von Kredit- und Inkassovorgängen für alle Unternehmen. Er bietet auch eine Aufschlüsselung pro Unternehmen, Debitorengruppe und Debitor.
 
-Dieser Power BI-Inhalt besteht aus 10 Berichtseiten:
+Dieser Power BI-Inhalt besteht aus 10 Berichtsseiten:
 
 - Zwei Überblicksseiten (eine Seite für einen Kreditüberblick und eine Seite für einen Inkassoüberblick)
 - Acht Detailseiten, die Details der Kredit- und Inkassometriken liefern, die in verschiedene Dimensionen und aufgeteilt sind
@@ -43,12 +42,12 @@ Alle Beträge werden in der Systemwährung angezeigt. Sie können die Systemwäh
 
 Standardmäßig wird die Kredit- und Inkassodaten für das aktuelle Unternehmen angezeigt. Um die Daten für alle Unternehmen anzuzeigen, weisen Sie der Rolle die Berechtigung **CustCollectionsBICrossCompany** zu.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Die **Kredit- und Inkassoverwaltung** Power BI-Inhalt wird im Arbeitsbereich **Debitorenkredit und -Inkassos** angezeigt.
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
+Der Power BI-Inhalt zur **Kredit- und Inkassoverwaltung** wird im Arbeitsbereich **Debitorenkredit und Inkasso** angezeigt.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
 
-Der **CustCollectionsBICrossCompany** Power BI-Inhalt umfasst einen Bericht, der aus einem Satz von Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **CustCollectionsBICrossCompany** Power Bl Inhalt.
+Der Power BI-Inhalt zu **CustCollectionsBICrossCompany** umfasst einen Bericht, der aus einem Satz von Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Power BI-Inhalt zu **CustCollectionsBICrossCompany**.
 
 | Berichtsseiten                 | Darstellung |
 |-----------------------------|---------------|
@@ -67,7 +66,7 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt **Kredit- und Inkassoverwaltung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt zur **Kredit- und Inkassoverwaltung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
 
 
 |                   Entität                    |      Zentrale aggregierte Messungen      |             Datenquelle              |                           Feld                            |                                    Beschreibung                                     |
@@ -88,5 +87,4 @@ Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt **Kredit
 |        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Die Anzahl der erstellten Zinsrechnungen.                |
 |        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Die Anzahl der gesamten Aufträge, die gesperrt sind.                 |
 |          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Die Gesamtanzahl der Buchungen, die abgeschrieben wurden.                 |
-
 

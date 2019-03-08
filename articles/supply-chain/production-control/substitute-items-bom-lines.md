@@ -1,13 +1,13 @@
 ---
 title: Materielle Ersetzung in der Fertigung
-description: "In diesem Thema wird beschrieben, wie Materialien während des Produktionsprozesses ersetzt werden."
+description: In diesem Thema wird beschrieben, wie Materialien während des Produktionsprozesses ersetzt werden.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdBOM
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 461b717acafb5ccf37acae23a1564069cea6828a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3e70a6ad074911438ef45b6aac2523a4a9fccf8
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327618"
 ---
-
 # <a name="material-substitution-in-manufacturing"></a>Materielle Ersetzung in der Fertigung
 
 [!include [banner](../includes/banner.md)]
@@ -47,7 +46,6 @@ Sie können Materialien bei der Planung nur dann ersetzen, wenn Sie Formeln verw
 
 ## <a name="substituting-material-during-production"></a>Ersetzen des Materials während der Produktion
 Betrachten wir das folgende Szenario: Ein Artikel der Metallplatte ist für einen Schweißensarbeitsgang erforderlich. Während des Arbeitsgangs informiert ein Lagerarbeiter den Maschinenbediener, dass die Platte nicht vorrätig ist. Jedoch wird beschlossen, dass die Platte mit einer Platte ersetzt werden kann, die etwas stärker ist. Daher kann der Arbeitsgang abgeschlossen werden. Material kann die Stückliste für einen offenen Produktionsauftrag hinzugefügt werden. Wenn der Produktionsauftrag den **Gestartet** Status aufweist, werden Benutzer aufgefordert, den Auftrag erneut zu schätzen, wenn sie ein neues Element der Produktionsstückliste hinzufügen. Nachdem das Material hinzugefügt wurde, kann eine neue Kommissionierliste für das neue Element erstellt werden. Sie müssen das neue Material nicht der Produktionsstückliste hinzufügen. Stattdessen können Sie diese direkt auf die Produktionskommissionierliste hinzufügen. Wird anschließend die Kommissionierliste gebucht, fügt das System das Material der Produktionsstückliste hinzu.
-
 
 
 

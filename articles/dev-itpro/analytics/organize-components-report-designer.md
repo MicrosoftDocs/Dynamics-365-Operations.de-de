@@ -1,13 +1,13 @@
 ---
 title: Organisieren von Berichtskomponenten im Berichtsdesigner
-description: "Nachdem Sie Bausteine und generierte Berichte entworfen haben, ist es hilfreich, diese Objekte zu organisieren, sodass sie vom Benutzer leichter gefunden werden können. Dieser Artikel erläutert, wie vorhandene Berichte, Bausteine und Objekte im Berichts-Designer organisiert werden."
+description: Nachdem Sie Bausteine und generierte Berichte entworfen haben, ist es hilfreich, diese Objekte zu organisieren, sodass sie vom Benutzer leichter gefunden werden können. Dieser Artikel erläutert, wie vorhandene Berichte, Bausteine und Objekte im Berichts-Designer organisiert werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
-ms.contentlocale: de-de
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323938"
 ---
-
 # <a name="organize-report-components-in-report-designer"></a>Organisieren von Berichtskomponenten im Berichtsdesigner
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,7 @@ In der folgenden Tabelle werden die Steuerelemente der Registerkarte **Berichtsg
 <td>Detailebene</td>
 <td>Spezifizieren Sie die für den Bericht gewünschte Detailstufe.
 <ul>
-<li><strong>Financial</strong> − Ein übergeordneter Zusammenfassungsbericht. Sie können keine Detailinformationen zu Konten und Dimensionen anzeigen, ausgenommen derer, die über die Berichtsstruktur hinzugefügt wurden.</li>
+<li><strong>Financial</strong> − Ein übergeordneter Zusammenfassungsbericht. Sie können keine Detailinformationen zu Konten und Dimensionen durchführen, ausgenommen derer, die Sie über die Berichtstruktur hinzugefügt haben.</li>
 <li><strong>Finanzen &amp; Konto</strong> − Ein Bericht, der eine übergeordnete Zusammenfassung und Kontodetails enthält.</li>
 <li><strong>Finanzen, Konto &amp; Buchung</strong> − Ein Bericht, der eine übergeordnete Zusammenfassung und Buchungsdetails enthält.</li>
 </ul></td>
@@ -150,4 +149,3 @@ Nur Einstellungen zum Standardbasiszeitraum werden mit der Berichtsdefinition ge
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-

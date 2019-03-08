@@ -1,13 +1,13 @@
 ---
-title: "Aktualisieren der Standardkosten in einer Umgebung ohne Produktionstätigkeit"
-description: "Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten in einer Umgebung ohne Produktionstätigkeit."
+title: Aktualisieren der Standardkosten in einer Umgebung ohne Produktionstätigkeit
+description: Dieser Artikel bietet eine Anleitung zum Aktualisieren von Standardkosten in einer Umgebung ohne Produktionstätigkeit.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4fa545aa6903bd6f789dda20ab5755ffe9a12b88
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0386ca1e5e7bf6e578ba2abf1b2c9eefe4dd2a02
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323018"
 ---
-
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Aktualisieren der Standardkosten in einer Umgebung ohne Produktionstätigkeit
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,6 @@ Gehen Sie zum Korrigieren, Regulieren oder Aktualisieren der Standardkosten für
 4.  Ändern Sie mithilfe der Seite **Verwaltung der Nachkalkulationsversion** die Sperrmarkierung, um in der zweiten Nachkalkulationsversion die Aktivierung von Datensätzen für ausstehende Kosten zu ermöglichen.
 5.  Verwenden Sie die Seite **Preise aktivieren** (die Sie über die Seite **Verwaltung der Nachkalkulationsversion** öffnen), um alle ausstehenden Artikelkostendatensätze in der zweiten Nachkalkulationsversion zu aktivieren. Die Datensätze mit ausstehenden Kosten können auch für einzelne Artikel aktiviert werden, indem Sie auf der Seite **Artikelkosten** auf die Schaltfläche **Ausstehende Preise aktivieren** klicken.
 6.  Mithilfe der Seite **Einstellungen für Nachkalkulationsversion** können Sie die Sperrmarkierungen in der zweiten Nachkalkulationsversion ändern, um eine weitere Datenverwaltung zu verhindern. Durch die Sperrrichtlinien werden die Eingabe neuer ausstehender Kosten sowie die Aktivierung ausstehender Kosten verhindert.
-
 
 
 

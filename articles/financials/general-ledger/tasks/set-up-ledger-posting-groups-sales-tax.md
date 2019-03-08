@@ -1,13 +1,13 @@
---- 
-title: "Sachkontobuchungsgruppen für Mehrwertsteuer einrichten"
+---
+title: Sachkontobuchungsgruppen für Mehrwertsteuer einrichten
 description: Die Mehrwertsteuer wird zu den Hauptkonten berechnet und gebucht, die in den "Sachkontobuchungsgruppen" angegeben werden.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAccountGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 15421da6f325dfee22a303e9fe83a0e72895fa08
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308344"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Sachkontobuchungsgruppen für Mehrwertsteuer einrichten
 
@@ -48,5 +48,4 @@ Die Mehrwertsteuer wird zu den Hauptkonten berechnet und gebucht, die in den "Sa
 11. Wählen Sie im Feld "Debitorenskonto" das Hauptkonto aus, um Skonto für Mehrwertsteuercodes zu buchen, die dieser "Sachkontobuchungsgruppe" zugeordnet sind.
     * Das ist optional und wenn kein Konto eingegeben wird, wird das Hauptkonto für die "Skontocodes" verwendet. Es kann hilfreich sein, verschiedene Konten pro Sachkontobuchungsgruppe zu verwenden, wenn Sie die Option zum Stornieren der Mehrwertsteuer auf Skonten bei "Mehrwertsteuergruppen" verwenden.  
 12. Klicken Sie auf "Speichern".
-
 

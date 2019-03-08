@@ -1,32 +1,31 @@
 ---
 title: Dimensionshierarchie
-description: "Dieses Thema bietet Informationen über Dimensionshierarchien. Sie verwenden eine Dimensionshierarchie, um die Berichtsstruktur, Kostenrichtlinien sowie die Sicherheitseinstellungen zu in der Kostenrechnung zu definieren."
+description: Dieses Thema bietet Informationen über Dimensionshierarchien. Sie verwenden eine Dimensionshierarchie, um die Berichtsstruktur, Kostenrichtlinien sowie die Sicherheitseinstellungen zu in der Kostenrechnung zu definieren.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 55d567eb3b4ad6746f39118b575457bb00fe0a47
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 40a4a1d7549876b72186f30a9c0089f0d27cf3b6
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320212"
 ---
-
 # <a name="dimension-hierarchy"></a>Dimensionshierarchie
 
 [!include [banner](../includes/banner.md)]
@@ -172,7 +171,7 @@ Verschieben Sie einen Knoten an einen neuen Standort in der Hierarchie, indem Si
 - **Verschieben hinter** – Verschiebt den ausgewählten Knoten aus der aktuellen Position in der Hierarchie, und fügt ihn **hinter** dem ausgewählten Zielknoten auf seiner Hierarchieebene ein.
 
 > [!NOTE] 
-> Die Reihenfolge der Knoten wird nicht gewahrt, wenn Sie Daten nach Excel oder Power Bi exportieren, da diese Tools standardmäßig eine alphanumerische Sortierreihenfolge verwenden. Sie sollten den Auftrag manuell anpassen.
+> Die Reihenfolge der Knoten wird nicht gewahrt, wenn Sie Daten nach Excel oder Power BI exportieren, da diese Tools standardmäßig eine alphanumerische Sortierreihenfolge verwenden. Sie sollten den Auftrag manuell anpassen.
 
 ## <a name="define-dimension-hierarchies-for-reporting"></a>Dimensionshierarchien für die Berichterstellung definieren
 
@@ -328,10 +327,9 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 
 - Power BI:
 
-    - Daten, die in den BI-Visualisierungen angezeigt werden
-    - Data Power BI Visualisierungen, die im Microsoft Dynamics 365 for Finance and Operations Client eingebettet werden
+    - Daten, die in Power BI-Visualisierungen angezeigt werden
+    - Power BI-Datenvisualisierungen, die im Client der Microsoft Dynamics 365 for Finance and Operations eingebettet werden
 
 > [!NOTE] 
-> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Die Zugriffslistenhierarchie hilft nicht bei der Sicherheit des Exports der Daten in Excel. Daher sollte dieses Berichtstool nur von Kostenbuchhaltern und Managern verwendet werden, die vollen Zugriff zum Anzeigen der Daten haben.
-

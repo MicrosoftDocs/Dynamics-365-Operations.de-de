@@ -1,13 +1,13 @@
 ---
 title: Schicht- und Kassenladenverwaltung
-description: "In diesem Thema wird erläutert, wie Sie in der Retail-Verkaufsstelle (POS) Schichten einrichten und nutzen."
+description: In diesem Thema wird erläutert, wie Sie in der Retail-Verkaufsstelle (POS) Schichten einrichten und nutzen.
 author: jblucher
 manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313013"
 ---
-
 # <a name="shift-and-cash-drawer-management"></a>Schicht- und Kassenladenverwaltung
 
 [!include [banner](includes/banner.md)]
@@ -70,7 +69,7 @@ Damit geteilte Schichten in einem Geschäft verwendet werden können, muss die K
 
 ## <a name="shift-and-drawer-operations"></a>Schicht- und Kassenverwaltung
 
-Verschiedene Aktivitäten können ausgeführt werden, um den Status einer Schicht zu ändern oder um den Geldbetrag in der Kasse zu erhöhen oder zu verringern. Dieser Abschnitt unten beschreibt Schichtvorgänge für Microsoft Dynamics 365 for Retail Modern POS und Cloud POS.
+Verschiedene Aktivitäten können ausgeführt werden, um den Status einer Schicht zu ändern oder um den Geldbetrag in der Kasse zu erhöhen oder zu verringern. Dieser Abschnitt beschreibt diese Schichtbetriebe für Microsoft Dynamics 365 for Retail Modern POS und Cloud POS.
 
 ### <a name="open-shift"></a>Offene Schichten
 
@@ -159,4 +158,3 @@ Gehen Sie zu **Einzelhandel \> Kanal \> Ladengeschäfte \> Alle Einzelhandelsges
 Diese Einstellung stellt sicher, dass Backofficeauszüge die gleichen Buchungen wie Schichten im POS enthalten und die Daten durch diese Schicht zusammengefasst werden.
 
 Weitere Informationen zu Auszugs- und Abschlussmethoden, finden Sie unter [Shopkonfigurationen für Einzelhandelsauszug](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-

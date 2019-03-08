@@ -1,31 +1,30 @@
 ---
 title: Kandidaten mithilfe von Talentpools sourcen
-description: "In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools eingerichtet werden."
-author: 
+description: In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools eingerichtet werden.
+author: ''
 manager: AnnBe
 ms.date: 10/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 2eb46f436305a4c81ea99553e4dc07288ee74008
 ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304517"
 ---
-
 # <a name="source-candidates-by-using-talent-pools"></a>Kandidaten mithilfe von Talentpools sourcen
 
 [!include[banner](../includes/banner.md)]
@@ -71,7 +70,7 @@ Der Besitzer und die Beteiligten dieses Talentpools können dem Talentpool Kandi
 
     - Wenn Sie einen internen Kandidaten hinzuzufügen möchten, können Sie über die E-Mail-Adresse nach der Person suchen. Nach einer erfolgreichen Suche wird die E-Mail-Adresse des Kandidaten, der Vorname und der Nachnamen ausgefüllt. Wenn Ihnen der Lebenslauf des Kandidaten oder zugehörigen Dokumente vorliegen, können Sie an diesem Punkt hochladen. Wählen Sie dann **Hinzufügen** aus, um den Kandidaten dem Talentpool hinzuzufügen.
     - Um einen externen Kandidaten manuell hinzuzufügen, geben Sie hier seine E-Mail-Adresse, den Vornamen und den Nachnamen ein. Wenn Ihnen der Lebenslauf des Kandidaten oder zugehörigen Dokumente vorliegen, können Sie an diesem Punkt hochladen. Wählen Sie dann **Hinzufügen** aus, um den Kandidaten dem Talentpool hinzuzufügen.
-    - Um mehrere Kandidaten hinzuzufügen, wählen Sie die Registerkarte **Über Excel** aus. Sie können die entsprechende Microsoft Excel-Vorlage herunterladen, die Details des Kandidaten eingeben, das Excel-Arbeitsblatt speichern und es zur Anwendung hochladen.
+    - Um mehrere Kandidaten hinzuzufügen, wählen Sie die Registerkarte **Über Excel**aus. Sie können dann die entsprechende Microsoft Excel-Vorlage herunterladen, die Details des Kandidaten eingeben, das Excel-Arbeitsblatt speichern und es zur Anwendung hochladen.
 
         Bei Fehlern im Arbeitsblatt erhalten Sie in Meldungen darüber informiert. Sie können die Fehler dann korrigieren und es anschließend erneut versuchen, das Arbeitsblatt hochzuladen. Wenn keine Fehler mehr gefunden werden, wählen Sie **Hinzufügen** aus, um das Arbeitsblatt hochzuladen. Das Arbeitsblatt wird im Hintergrund verarbeitet, und Sie werden benachrichtigt, wenn alle Kandidaten dem Talentpool hinzugefügt wurden.
 
@@ -139,4 +138,3 @@ Häufig werden mehrere gute Kandidaten nicht für eine Stelle ausgewählt, aber 
 1. Auf der Bewerbungsseite wählen Sie **Zu Talentpool hinzufügen** aus. Eine Liste der Talentpools, auf die Sie Zugriff haben, wird angezeigt.
 
 1. Wählen Sie den Talentpool aus oder suchen Sie danach und wählen Sie dann **Hinzufügen** aus, um den Kandidaten dieser Talentschmiede hinzuzufügen.
-

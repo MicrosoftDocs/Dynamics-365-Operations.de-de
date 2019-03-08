@@ -1,13 +1,13 @@
 ---
-title: "Kostenverwaltung für Power BI Inhalt"
-description: In diesem Thema wird beschrieben, was im Kostenmanagement Power Bl enthalten ist.
+title: Power BI-Inhalt zur Kostenverwaltung
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenverwaltung enthalten ist.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -19,26 +19,25 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f67b1c901267bdf79c94e4f4c698c8731c515bb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327802"
 ---
-
-# <a name="cost-management-power-bi-content"></a>Kostenverwaltung für Power BI Inhalt
+# <a name="cost-management-power-bi-content"></a>Power BI-Inhalt zur Kostenverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der Microsoft Power BI-Inhalt **Kostenmanagement** ist für Lagerbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status „Bestand” oder „Ressource in Bearbeitung (RIF)” zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
+Der Microsoft Power BI-Inhalt für **Kostenmanagement** ist für Bestandsbuchhalter oder Einzelpersonen in der Organisation bestimmt, die für den Status "Bestand" oder "Ressource in Bearbeitung (RIF)" zuständig oder daran interessiert sind oder die für die Analyse von standardmäßigen Kostenabweichungen zuständig oder daran interessiert sind.
 
 > [!NOTE]
-> Der Power BI-Inhalt **Kostenmanagement**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 for Finance and Operations 8.0.
+> Der Power BI-Inhalt zur **Kostenverwaltung**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 for Finance and Operations 8.0.
 > 
-> Das Power BI-Inhaltspaket **Kostenmanagement**, das auf AppSource veröffentlicht ist, wurde veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Power BI-Inhaltspakete, die auf AppSource veröffentlich sind](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Das Power BI-Inhaltspaket zur **Kostenverwaltung**, das auf der AppSource-Site verfügbar ist, ist veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Power BI-Inhaltspakete, die auf AppSource verfügbar sind](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dieser Power BI-Inhalt bietet ein kategorisiertes Format, mit dessen Hilfe Sie die Leistung von Beständen überwachen können und visuell darstellen können, wie Kosten durch sie fließen. Sie können Verwaltungseinblicke erhalten, wie das Umsatzverhältnis, die Anzahl von Tagen, während der der Bestand verfügbar ist, die Genauigkeit sowie die „ABC-Klassifizierung” auf Ihrer bevorzugten aggregierten Ebene (Untenehmen, Artikel, Artikelgruppe oder Standort). Die verfügbar gemachten Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 
@@ -46,28 +45,28 @@ Der Power BI-Inhalt wird auf Grundlage der aggregierten Messung **CostObjectStat
 
 Nach jeder Aktualisierung der Tabelle **CostObjectStatementCache** muss die aggregierte Messung **CostObjectStatementCacheMonthly** aktualisiert werden, bevor Daten in den Power BI-Visualisierungen aktualisiert werden.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 
-Der Power BI-Inhalt **Kostenmanagement** wird in den Arbeitsbereichen **Kostenverwaltung** und **Kostenanalyse** angezeigt.
+Der Power BI-Inhalt zur **Kostenverwaltung** wird in den Arbeitsbereichen **Kostenverwaltung** und **Kostenanalyse** angezeigt.
 
 Der Arbeitsbereich **Kostenverwaltung** enthält die folgenden Registerkarten:
 
 - **Übersicht** – Auf dieser Registerkarte werden Anwendungsdaten angezeigt.
-- **Lagerbuchhaltungsstatus** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
-- **Fertigungsbuchhaltungsstatus** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Bestandsbuchhaltung – Status** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Fertigungsbuchhaltung – Status** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
 
 Der Arbeitsbereich **Kostenanalyse** enthält die folgenden Registerkarten:
 
 - **Übersicht** – Auf dieser Registerkarte werden Anwendungsdaten angezeigt.
-- **Lagerbuchhaltungsanalyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
-- **Fertigungsbuchhaltungsanalyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
-- **Analyse standardmäßiger Kostenabweichung** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Bestandsbuchhaltung – Analyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Fertigungsbuchhaltung – Analyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
+- **Standardkostenabweichungsanalyse** – Auf dieser Registerkarte wird Power BI-Inhalt angezeigt.
 
 ## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Berichtsseiten, die im Power BI-Inhalt enthalten sind
 
-Der Power BI-Inhalt **Kostenmanagement** enthält eine Reihe von Berichtsseiten, die aus einem Satz von Metriken bestehen. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. 
+Der Power BI-Inhalt zur **Kostenverwaltung** enthält einen Satz von Berichtsseiten, die aus einem Satz von Metriken bestehen. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. 
 
-Die folgende Tabelle bietet eine Übersicht der Visualisierungen im Power Bl-Inhalt **Kostenmanagement**.
+Die folgende Tabelle bietet eine Übersicht der Visualisierungen im Power BI-Inhalt zur **Kostenverwaltung**.
 
 ### <a name="inventory-accounting-status"></a>Bestandsbuchhaltung – Status
 
@@ -173,9 +172,9 @@ Die folgende Tabelle bietet eine Übersicht der Visualisierungen im Power Bl-Inh
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Daten aus Microsoft Dynamics 365 for Finance and Operations werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenmanagement** zu füllen. Diese Daten werden als zusammengeführte Messungen dargestellt, die im Entitätsspeicher bereitgestellt werden, der eine Microsoft SQL Server-Datenbank ist, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie unter [Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Daten von Microsoft Dynamics 365 for Finance and Operations werden verwendet, um die Berichtsseiten im Power BI-Inhalt zur **Kostenverwaltung** auszufüllen. Diese Daten werden als aggregierte Messungen dargestellt, die im Entitätsspeicher bereitgestellt werden, der eine Microsoft SQL Server-Datenbank ist, die für Analysen optimiert ist. Weitere Informationen finden Sie unter [Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
-Die wesentlichen aggregierten Messungen der folgenden Objekte werden als Grundlage des Power BI Inhalts verwendet.
+Die wesentlichen aggregierten Messungen der folgenden Objekte werden als Grundlage des Power BI-Inhalts verwendet.
 
 | Objekt                          | Zentrale aggregierte Messungen | Datenquelle für Finance and Operations | Feld               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
@@ -209,4 +208,3 @@ Die folgenden wesentlichen Dimensionen werden als Filter verwendet, um die aggre
 | Juristische Personen                                          | Name der juristischen Person                              |
 | Steuerkalender                                        | Steuerkalender, Jahr, Quartal, Periode, Monat   |
 | Standort                                                    | ID, Name, Adresse, Bundesland, Land               |
-

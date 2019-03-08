@@ -1,13 +1,13 @@
 ---
 title: Kreditorenrzahlung unter Verwendung eines Zahlungsvorschlags erstellen
-description: "Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren."
+description: Dieser Artikel gibt einen Überblick über die Zahlungsvorschlagsoptionen und umfasst einige Beispiele, die zeigen, wie Zahlungsvorschläge funktionieren.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 332a18eb98811505b38c023c97c22b86a9367af1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327411"
 ---
-
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Kreditorenzahlungen unter Verwendung eines Zahlungsvorschlags erstellen
 
 [!include [banner](../includes/banner.md)]
@@ -70,14 +69,14 @@ Am 1. Juli zahlt April Kreditoren aus. Sie verwendet einen Zahlungsvorschlag, um
 
 ### <a name="option-1-by-cash-discount"></a>Option 1:Nach Skonto
 
-April wählt **Skonto** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
+April wählt **Skonto** als Vorschlagstyp aus. Sie gibt einen Datumsbereich vom 26. Juni bis zum 10. Juli ein. Die nachfolgenden Rechnungen werden in den Vorschlag einbezogen:
 
 -   1002, da das Skontodatum vom 4. Juni im Bereich der Zahlungsdaten ist.
 -   1004, da das Skontodatum vom 1. Juni im Bereich der Zahlungsdaten ist.
 
 Die nachfolgenden Rechnungen werden nicht in den Vorschlag einbezogen:
 
--   1001, da das Rabattdatum vom 29. Juni bereits abgelaufen ist, ist diese Rechnung daher nicht mehr für das Skonto freigegeben.
+-   1001, da das Rabattdatum vom 29. Juni bereits abgelaufen ist, ist diese Rechnung daher nicht mehr für das Skonto freigegeben.
 -   1003, da diese Rechnung kein Rabattdatum hat.
 
 ### <a name="option-2-by-due-date"></a>Option 2: Nach Fälligkeitsdatum
@@ -102,7 +101,7 @@ April wählt **Fälligkeitsdatum und Skonto** als Vorschlagstyp aus. Sie gibt ei
 
 Die nachfolgenden Rechnungen werden nicht in den Vorschlag einbezogen:
 
--   1001, da das Rabattdatum vom 29. Juni bereits abgelaufen ist, ist daher diese Rechnung nicht mehr für den Skonto freigegeben, und das Fälligkeitsdatum vom 15. Juli ist auch außerhalb des Datumsbereichs.
+-   1001, da das Rabattdatum vom 29. Juni bereits abgelaufen ist, ist daher diese Rechnung nicht mehr für den Skonto freigegeben, und das Fälligkeitsdatum vom 15. Juli ist auch außerhalb des Datumsbereichs.
 
 ## <a name="country-specific-considerations"></a>Landesspezifische Betrachtungen
 ### <a name="norway"></a>Norwegen
@@ -120,8 +119,7 @@ Mit der Dimensionssteuerung können Steuergruppierung von generierten Positionen
 
 #### <a name="bank-account-selection"></a>Bankkontoauswahl
 
-Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmahethoden** einrichten, indem Sie die Schaltfläche **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp** = **Bank** verfügbar ist.
-
+Sie können ein Zahlungsstandardkonto pro Zahlungsmethode definieren, unbeachtet den Landkontext. Dies wird in Zahlungspositionen festgelegt, die durch einen Vorschlag generiert werden. Mit der Bankkontofunktion können Sie mehrere Bankkonten definieren, die nach Dimension und Währung oder einer Kombination dieser verwaltet wird, um verschiedene belastende Bankkonten zu nutzen, abhängig von der Kombination. Sie können diese Kombinationen auf der Seite **Zahlungsmethoden** einrichten, indem Sie die Schaltfläche **Bankkonten** verwenden, die für jede Zahlungsmethode mit **Buchungskontotyp** = **Bank** verfügbar ist.
 
 
 

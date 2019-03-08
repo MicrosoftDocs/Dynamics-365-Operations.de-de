@@ -1,31 +1,30 @@
 ---
 title: Serviceobjektbeziehungen
-description: "Zwischen einem Serviceobjekt und einer Servicevereinbarung oder einem Serviceauftrag können Serviceobjektbeziehungen erstellt werden."
+description: Zwischen einem Serviceobjekt und einer Servicevereinbarung oder einem Serviceauftrag können Serviceobjektbeziehungen erstellt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 03047b3eccf3c90d4cf7426ddaec83f10dbea1b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: 0e54a0dc9b643077d45fe76e073772e81f99ea44
-ms.contentlocale: de-de
-ms.lasthandoff: 02/21/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314370"
 ---
-
 # <a name="service-object-relations"></a>Serviceobjektbeziehungen 
 
 [!include [banner](../includes/banner.md)]
@@ -78,5 +77,4 @@ Aufrufen des Stücklisten-Designers mithilfe einer Serviceobjektbeziehung
 ## <a name="automatically-created-service-orders"></a>Automatisch erstellte Serviceaufträge
 
 Werden Serviceaufträge für eine Servicevereinbarung automatisch erstellt, werden die Serviceobjektbeziehungen aus der Vereinbarung auch in den Serviceaufträgen erstellt.
-
 

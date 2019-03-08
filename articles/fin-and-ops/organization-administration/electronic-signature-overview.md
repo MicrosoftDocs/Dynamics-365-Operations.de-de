@@ -1,13 +1,13 @@
 ---
 title: Elektronische Signaturen
-description: "Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Finance and Operations."
+description: Dieser Artikel enthält einen Überblick über elektronische Signaturen und erläutert ihre Verwendung in Microsoft Dynamics 365 for Finance and Operations.
 author: maertenm
 manager: AnnBe
 ms.date: 08/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SIGParameters, SIGProcSetup, SIGReasonCode
 audience: Application User
 ms.reviewer: sericks
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 676510ef503d51d914ba762e7ac15e2c4811c6ba
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325663"
 ---
-
 # <a name="electronic-signatures"></a>Elektronische Signaturen
 
 [!include [banner](../includes/banner.md)]
@@ -39,9 +38,9 @@ Eine elektronische Signatur bestätigt die Identität einer Person, die im Begri
 Elektronische Signaturen sind eine Konformitätsanforderung für verschiedene behördlich regulierte Branchen. Dazu zählen z. B. die Arzneimittel-, Lebensmittel- und Getränke-, Luftfahrt- und Rüstungsindustrie. Sie sind auch erforderlich, um die Konformität mit den Bestimmungen in 21 CFR Teil 11 der Bundesbehörde zur Überwachung von Nahrungs- und Arzneimitteln in den USA (Food and Drug Administration, FDA) zu gewährleisten.
 
 > [!NOTE]
-> Eine elektronische Signatur ist nicht das Gleiche wie eine digitale Signatur. Eine elektronische Signatur ist einfach ein Ersatz für eine handschriftliche Signatur, während eine digitale Signatur zusätzliche Sicherheitsmerkmale bietet. Mithilfe einer digitalen Signatur kann festgestellt werden, ob die Daten durch einen anderen Benutzer oder Prozess manipuliert wurden. Außerdem kann eine digitale Signatur überprüft werden, und diese Überprüfung kann nicht vom Besitzer des Zertifikats angefochten werden, das zum Signieren der Daten verwendet wurde. Wie nachfolgend erläutert, verfügen elektronische Signaturen in Microsoft Dynamics 365 for Finance and Operations über die integrierte Funktion für digitale Signaturen.
+> Eine elektronische Signatur ist nicht das Gleiche wie eine digitale Signatur. Eine elektronische Signatur ist einfach ein Ersatz für eine handschriftliche Signatur, während eine digitale Signatur zusätzliche Sicherheitsmerkmale bietet. Mithilfe einer digitalen Signatur kann festgestellt werden, ob die Daten durch einen anderen Benutzer oder Prozess manipuliert wurden. Außerdem kann eine digitale Signatur überprüft werden, und diese Überprüfung kann nicht vom Besitzer des Zertifikats angefochten werden, das zum Signieren der Daten verwendet wurde. Wie nachfolgend erläutert wird, verfügen elektronische Signaturen Microsoft Dynamics 365 for Finance and Operations über die integrierte Funktion für digitale Signatur.
 
-## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronische Signaturen in Microsoft Dynamics 365 for Finance and Operations
+## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektronische Signaturen in Dynamics 365 for Finance and Operations
 
 In Finance and Operations können Sie elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen.
 
@@ -111,4 +110,3 @@ Gehen Sie folgendermaßen vor, um einen Genehmiger festzulegen.
 1. Klicken Sie auf der Seite **Optionen**, auf der Registerkarte **Konten** auf **Genehmigende Person festlegen**.
 2. Wählen Sie im Feld **Benutzerkennung für genehmigende Person** die Kennung des Benutzers aus, der die Änderungen eines anderen Benutzers abzeichnen muss.
 3. Wählen Sie im Feld **Signatur für Benutzer (Kennung)** die Kennung des Benutzers aus, dessen Änderungen abgezeichnet werden müssen.
-

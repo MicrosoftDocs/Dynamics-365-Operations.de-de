@@ -1,13 +1,13 @@
 ---
 title: Lagerabschluss
-description: "Im Rahmen des Prozesses, um Abgangstransaktionen mit Zugangstransaktionen auszugleichen, können Sie wählen, dass das Hauptbuch ausgeglichen wird, um die Regulierungen widerzuspiegeln, die vorgenommen wurden."
+description: Im Rahmen des Prozesses, um Abgangstransaktionen mit Zugangstransaktionen auszugleichen, können Sie wählen, dass das Hauptbuch ausgeglichen wird, um die Regulierungen widerzuspiegeln, die vorgenommen wurden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a705853ea27d117c99a00893b862348bbac0b9b0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dfb6b9c2f4bad95c165a8d8a1e888e7a67e66c69
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326491"
 ---
-
 # <a name="inventory-close"></a>Lagerabschluss
 
 [!include [banner](../includes/banner.md)]
@@ -87,7 +86,6 @@ Unter bestimmten Voraussetzungen lassen sich Warnungen unter Umständen nicht ve
 Gelegentlich muss ein bereits abgeschlossener Lagerabschluss storniert werden, um die Ausgleiche wieder in den Zustand zu versetzen, der vor der Ausführung der Regulierungen vorlag. Durch die Stornierung eines abgeschlossenen Lagerabschlusses wird auch das Lager wieder geöffnet, um Buchungen für die entsprechende Periode zu ermöglichen. Auch im Hauptbuch können dann entsprechende Änderungen vorgenommen werden. Nach Abschluss der Anpassungen können Sie den Lagerabschluss für die bearbeitete Periode erneut ausführen. 
 
 **Hinweis:** Es kann jeweils nur die letzte abgeschlossene Lagerbuchungsperiode erneut geöffnet werden. Um einen älteren Lagerabschluss zu stornieren, müssen Sie jeden nachfolgenden Lagerabschluss, beginnend dem letzten Abschluss einzeln stornieren.
-
 
 
 

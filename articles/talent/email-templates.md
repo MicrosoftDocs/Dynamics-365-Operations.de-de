@@ -1,14 +1,14 @@
 ---
 title: E-Mail-Vorlagen
-description: "Dieses Thema enthält Informationen zu den E-Mail-Vorlagen, die Sie in Microsoft Dynamics 365 for Talent - Attract erstellen und verwenden können."
+description: Dieses Thema enthält Informationen zu den E-Mail-Vorlagen, die Sie in Microsoft Dynamics 365 for Talent - Attract erstellen und verwenden können.
 author: josaw
 manager: AnnBe
 ms.date: 10/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,25 +18,24 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: e02912ad242186fe3e2dd8d7a4cc7312aec6015e
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304569"
 ---
-
 # <a name="email-templates"></a>E-Mail-Vorlagen
 [!include[banner](../includes/banner.md)]
 
-Mithilfe der Email-Vorlagen-Bibliothek können Administratoren ein einheitliches Design und Branding für alle E-Mails erstellen, die von Microsoft Dynamics 365 for Talent: attract gesendet werden. Administratoren können auch eine Sammlung von E-Mail-Inhaltsvorlagen zusammenstellen, die von anderen E-Mail-Nutzern verwendet werden können. Das Einstellungsteam kann diese Vorlagen in ihrem Workflow verwenden, um E-Mail-Nachrichten effizienter zu senden. Einige E-Mails werden in Attract so konfiguriert, dass sie automatisch gesendet werden, und der Administrator kann die Email-Vorlagen-Bibliothek verwenden, um den Inhalt für die E-Mails anzupassen.
+Mithilfe der E-Mail-Vorlagen-Bibliothek können Administratoren ein einheitliches Design und Branding für alle E-Mails erstellen, die von Microsoft Dynamics 365 for Talent: Attract gesendet werden. Administratoren können auch eine Sammlung von E-Mail-Inhaltsvorlagen zusammenstellen, die von anderen E-Mail-Nutzern verwendet werden können. Das Einstellungsteam kann diese Vorlagen in ihrem Workflow verwenden, um E-Mail-Nachrichten effizienter zu senden. Einige E-Mails werden in Attract so konfiguriert, dass sie automatisch gesendet werden, und der Administrator kann die Email-Vorlagen-Bibliothek verwenden, um den Inhalt für die E-Mails anzupassen.
 
 > [!NOTE]
 > Um E-Mail-Vorlagen zu verwenden, muss die Organisation das Verständliche Einstellungsadd-on haben.
 
 ## <a name="global-template-configurations"></a>Globale Konfigurationsvorlagen
 
-Um ein konsistentes Branding für die gesamte E-Mail-Kommunikation zu erstellen, muss der Administrator erst die globalen Kopf- und Fußzeilen für alle E-Mail-Vorlagen festlegen. Im Administratorcenter kann der Administrator auf der Registerkarte **Email-Vorlagen-Einstellungen** im Abschnitt **Kopfzeile** ein Bild hochladen, das bei allen E-Mails als Kopfzeile oder Banner verwendet werden soll. Das Bild kann ein Firmenlogo, ein Briefkopf oder jedes andere Repräsentativbild sein. Es wird empfohlen, dass die Breite zwischen 25 und 800 Pixel beträgt und die Höhe Pixel zwischen 25 und 150 Pixel, da diese Abmessungen für die meisten E-Mail-Clients wie Microsoft Outlook optimal sind. Das Bild muss eine JPEG-, JPG-, PNG- oder SVG-Datei sein, und die Dateigröße muss kleiner als 1 Megabyte (MB) sein. Nachdem ein Bild hochgeladen wurde, wird eine Vorschau der Kopfzeile generiert und angezeigt. Wenn das Kopfzeilenbild entfernt oder ersetzt werden muss, kann der Administrator die Option **Entfernen** über der Vorschau verwenden.
+Um ein konsistentes Branding für die gesamte E-Mail-Kommunikation zu erstellen, muss der Administrator erst die globalen Kopf- und Fußzeilen für alle E-Mail-Vorlagen festlegen. Im Administratorcenter kann der Administrator auf der Registerkarte **Email-Vorlagen-Einstellungen** im Abschnitt **Kopfzeile** ein Bild hochladen, das bei allen E-Mails als Kopfzeile oder Banner verwendet werden soll. Das Bild kann ein Firmenlogo, ein Briefkopf oder jedes andere Repräsentativbild sein. Es wird empfohlen, dass die Breite zwischen 25 und 800 Pixel beträgt und die Höhe zwischen 25 und 150 Pixel, da diese Abmessungen für die meisten E-Mail-Clients wie Microsoft Outlook optimal sind. Das Bild muss eine JPEG-, JPG-, PNG- oder SVG-Datei sein, und die Dateigröße muss kleiner als 1 Megabyte (MB) sein. Nachdem ein Bild hochgeladen wurde, wird eine Vorschau der Kopfzeile generiert und angezeigt. Wenn das Kopfzeilenbild entfernt oder ersetzt werden muss, kann der Administrator die Option **Entfernen** über der Vorschau verwenden.
 
 Im Abschnitt **Fußzeile** kann der Administrator Links zur Kommunikations-Datenschutzrichtlinie den Bedingungen des Unternehmens bereitstellen. Diese Links werden in eine Fußzeile integriert, die automatisch generiert wird. Eine Vorschau der Fußzeile wird dann angezeigt.
 
@@ -81,4 +80,3 @@ Wenn das Einstellungsteam eine E-Mail sendet, kann es die vom Administrator erst
 
 > [!NOTE] 
 > Für E-Mails, die automatisch gesendet werden, können mehrerer Vorlagen erstellt werden. Allerdings kann nur einer Vorlage als die aktive Vorlage festgelegt werden. Da dieser Prozess durch Ereignisse ausgelöst wird, kann nur der Administrator festlegen, welche Vorlage anhand der Kombination der Kennkarten **Standard** und **Automatisch übermittelt** in der Vorlagenbibliothek verwendet werden soll.
-

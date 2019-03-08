@@ -1,13 +1,13 @@
 ---
 title: Organisationen und Organisationshierarchien
-description: "Eine Organisation ist eine Gruppe von Personen, die zusammenarbeiten, um einen Geschäftsprozess durchzuführen oder ein Ziel zu erreichen. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht."
+description: Eine Organisation ist eine Gruppe von Personen, die zusammenarbeiten, um einen Geschäftsprozess durchzuführen oder ein Ziel zu erreichen. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 72834769e393382ac511ad3af21544efddb049d3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f8afc37e8d69b06622176d4f6cfb3ff06a0ab54
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322236"
 ---
-
 # <a name="organizations-and-organizational-hierarchies"></a>Organisationen und Organisationshierarchien
 
 [!include [banner](../includes/banner.md)]
 
 Eine Organisation ist eine Gruppe von Personen, die zusammenarbeiten, um einen Geschäftsprozess durchzuführen oder ein Ziel zu erreichen. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht.
 
-## <a name="organizations"></a>Organisation
+## <a name="organizations"></a>Organisationen
 
 In Microsoft Dynamics 365 for Finance and Operations können Sie die folgenden Typen von internen Organisationen definieren: juristische Personen, Organisationseinheiten und Teams.
 
@@ -48,7 +47,7 @@ Ein Unternehmen ist eine Art von juristischer Person. In diesem Release von Micr
 
 Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle über wirtschaftliche Ressourcen und Betriebsprozesse in einem Unternehmen aufzuteilen. Die Personen in einer Organisationseinheit sind verpflichtet, die Nutzung knapper Ressourcen zu maximieren, die Prozesse zu verbessern und Rechenschaft über ihre Leistung abzulegen.
 
-In Microsoft Dynamics 365 for Finance and Operations zählen Kostenstellen, Unternehmenseinheiten, Wertströme, Abteilungen und Einzelhandelskanäle zu den Organisationseinheiten. Die folgende Tabelle enthält weitere Informationen zu jedem Organisationseinheitstyp.
+In Microsoft Dynamics 365 for Finance and Operations umfassen die Arten Unternehmenseinheiten Kostenstellen, Organisationseinheiten, Wertströme, Abteilungen und Vertriebswege. Die folgende Tabelle enthält weitere Informationen zu jedem Organisationseinheitstyp.
 
 | Organisationseinheitstyp | Beschreibung | Zweck |
 |---------------------|-------------|---------|
@@ -66,7 +65,6 @@ Ein Team ist eine Organisation, deren Mitglieder gemeinsame Interessen, Zuständ
 
 Organisationshierarchien werden eingerichtet, um unterschiedliche Perspektiven des Unternehmens anzuzeigen und entsprechende Berichte zu erstellen. So können Sie beispielsweise eine Hierarchie juristischer Personen für die Steuererklärung sowie für rechtlich relevante oder für gesetzlich vorgeschriebene Berichte einrichten. Richten Sie eine auf Organisationseinheiten basierende Hierarchie ein, um anhand von Finanzdaten Berichte zu erstellen, die zwar gesetzlich nicht erforderlich sind, aber zur internen Kontrolle dienen. Sie können beispielsweise eine Einkaufshierarchie erstellen, um Einkaufsrichtlinien, Regeln und Geschäftsprozesse zu kontrollieren.
 
-Jede Hierarchie wird ein Zweck in Microsoft Dynamics 365 for Finance and Operations zugewiesen. Der Zweck der Hierarchie bestimmt die Organisationstypen, die der Hierarchie hinzugefügt werden können. Der Zweck definiert auch die Anwendungsszenarien, in denen die Hierarchie verwendet werden kann.
+Jede Hierarchie wird einem Kostenträger in Microsoft Dynamics 365 for Finance and Operations zugewiesen. Der Zweck der Hierarchie bestimmt die Organisationstypen, die der Hierarchie hinzugefügt werden können. Der Zweck definiert auch die Anwendungsszenarien, in denen die Hierarchie verwendet werden kann.
 
 Organisationen in einer Hierarchie können Parameter, Richtlinien und Buchungen gemeinsam nutzen. Eine Organisation kann die Parameter der übergeordneten Organisation erben oder überschreiben. Gemeinsam genutzte Masterdaten, z. B. Produkte und Adressbücher, betreffen jedoch die gesamte Organisation und können für einzelne Organisationen nicht überschrieben werden. Das Erstellen von Organisationen und Hierarchien erfordert eine sorgfältige Planung. Weitere Informationen finden Sie unter [Die Organisationshierarchie planen](plan-organizational-hierarchy.md).
-

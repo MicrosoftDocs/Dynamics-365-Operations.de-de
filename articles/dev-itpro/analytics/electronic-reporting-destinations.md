@@ -1,13 +1,13 @@
 ---
-title: "Ziele für elektronische Berichterstellung (EB)"
-description: "Sie können ein Ziel für jede Formatvariante zur \"Elektronischen Berichterstellung\" (ER) und die Ausgabenkomponente (einen Ordner oder eine Datei) konfigurieren. Benutzer, die entsprechende Zugriffsrechte haben, können auch Zieleinstellungen zur Laufzeit ändern. Dieser Artikel beschreibt die ER Zielverwaltung, die unterstützten Zieltypen und die Sicherheitsaspekte."
+title: Ziele für elektronische Berichterstellung (EB)
+description: Sie können ein Ziel für jede Formatvariante zur "Elektronischen Berichterstellung" (ER) und die Ausgabenkomponente (einen Ordner oder eine Datei) konfigurieren. Benutzer, die entsprechende Zugriffsrechte haben, können auch Zieleinstellungen zur Laufzeit ändern. Dieser Artikel beschreibt die ER Zielverwaltung, die unterstützten Zieltypen und die Sicherheitsaspekte.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 301dccaf154c3c12bcc4d611a147cdef03b8f851
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314922"
 ---
-
 # <a name="electronic-reporting-er-destinations"></a>Ziele für elektronische Berichterstellung (EB)
 
 [!include [banner](../includes/banner.md)]
@@ -35,9 +34,9 @@ Sie können ein Ziel für jede Formatvariante zur "Elektronischen Berichterstell
 Die Formatkonfiguration für die elektronische Berichterstellung (ER) umfasst in der Regel mindestens eine Ausgabekomponente: eine Datei. Konfigurationen enthalten in der Regel mehrere Ausgabedatei-Komponenten verschiedener Typen (XML, TXT oder XLSX), die entweder in einen einzelnen Ordner oder mehrere Ordner gruppiert sind. Die ER-Zielverwaltung ermöglicht die Vorkonfiguration der Ausführung jeder Komponente. Standardmäßig wird dem Benutzer bei der Ausführung einer Konfiguration ein Dialogfeld angezeigt, das zum Speichern oder Öffnen der Datei verwendet wird. Dasselbe Verhalten wird auch beim Importieren einer ER-Konfiguration ohne spezifischen Ziele für diese verwendet. Nachdem ein Ziel für eine Hauptausgabekomponente erstellt wurde, überschreibt das Ziel das Standardverhalten und der Ordner oder die Datei wird entsprechend dem Ziel gesendet.
 
 ## <a name="availability-and-general-prerequisites"></a>Verfügbarkeit und allgemeine Voraussetzungen
-Die Funktionalität für die ER-Ziele ist nicht in Microsoft Dynamics AX 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations, Version 1611 (November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
+Die Funktionalität für die EB-Ziele ist nicht in Microsoft Dynamics AX 7.0 (Februar 2016) verfügbar. Daher müssen Sie Microsoft Dynamics 365 for Operations Version 1611 (November 2016) einrichten, um alle Funktionen zu verwenden, die in diesem Thema beschrieben sind. Alternativ können Sie eine der folgenden Komponenten installieren. Beachten Sie jedoch, dass diese Alternative eine eher begrenzte ER-Zielerfahrung bietet.
 
-- Microsoft Dynamics AX 7.0.1 (Mai 2016)
+- Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016)
 - [Anwendungs-Hotfix](https://fix.lcs.dynamics.com/issue/results/?q=3160213) für die ER Zielverwaltung
 
 Sie können Ziele nur für ER-Konfigurationen einrichten, die importiert wurden und für die Formate auf der Seite **Konfigurationen für die elektronische Berichterstellung** verfügbar sind.
@@ -94,7 +93,7 @@ Verwenden Sie diesen E-Mail-Typ, wenn die Konfiguration, die Sie verwenden, eine
 
 ### <a name="archive-destination"></a>Archivziel
 
-Mit dieser Option können Ausgaben als Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja** fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
+Mit dieser Option können Sie Ausgaben an Microsoft SharePoint-Ordner oder Microsoft Azure Storage senden. Legen Sie **Aktiviert** auf **Ja** fest, um die Ausgabe an ein Ziel zu senden, das über den ausgewählten Dokumenttyp definiert ist. Nur Dokumenttypen mit der Gruppe **Datei** stehen zur Auswahl. Sie legen die Dokumenttypen unter **Organisationsadministration** &gt; **Dokumentenmanagement** &gt; **Dokumenttypen** fest. Die Konfiguration für ER-Ziele ist identisch mit der Konfiguration für das Dokumentverwaltungssystem.
 
 [![Seite „Dokumenttypen”](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg)
 
@@ -105,7 +104,7 @@ Der Speicherort bestimmt, wo die Datei gespeichert wird. Nachdem das Ziel **Arch
 
 #### <a name="sharepoint"></a>SharePoint
 
-Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den Standardwert SharePoint-Server unter: **Organisationsverwaltung** &gt; **Dokumentverwaltung** &gt; **Parameter der Dokumentverwaltung** auf der Registerkarte **SharePoint** . Nachdem der SharePoint-Ordner konfiguriert ist, können Sie diesen als den Ordner auswählen, in dem die ER-Ausgabe für den Dokumenttyp gespeichert wird.
+Sie können eine Datei in einem bestimmten SharePoint-Ordner speichern. Sie definieren den standardmäßigen SharePoint-Server unter: **Organisationsverwaltung** &gt; **Dokumentverwaltung** &gt; **Parameter der Dokumentverwaltung** auf der Registerkarte **SharePoint**. Nachdem der SharePoint-Ordner konfiguriert ist, können Sie diesen als den Ordner auswählen, in dem die EB-Ausgabe für den Dokumenttyp gespeichert wird.
 
 [![Einen SharePoint-Ordner auswählen](./media/ger_sharepointfolderselection-1024x543.jpg)](./media/ger_sharepointfolderselection.jpg)
 
@@ -123,7 +122,7 @@ Wenn Sie **Aktiviert** auf **Ja** setzen, wird eine Vorschau der Ausgabe erstell
 
 ### <a name="power-bi-destination"></a>Power BI-Ziel
 
-Setzen Sie **Aktiviert** auf **Ja**, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurde. Weitere Informationen finden Sie unter [Eine elektronische Berichtskonfiguration verwenden, um Power BI mit Daten aus Finance and Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Legen Sie **Aktiviert** auf **Ja** fest, um Ihre EB-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance and Operations zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurden muss. Weitere Informationen finden Sie unter [Eine Konfiguration zur elektronischen Berichterstellung verwenden, um Power BI mit Daten aus Finance and Operations bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Zum Überschreiben des Standardverhaltens (das Dialogfeld für eine Konfiguration) können Sie einen Zielverweis und ein Dateiziel für die Hauptausgabekomponente erstellen und alle Ziele deaktivieren.
@@ -158,11 +157,10 @@ Das **Datei**-ziel dient zur Steuerung eines Dialogfelds. Wenn Sie dieses Ziel a
 
 Die Formel ist für die ER-Konfiguration spezifisch. Wenn Sie beispielsweise die ISO 20022-Kreditübertragunskonfiguration verwenden, dann können Sie **'$PaymentsForCoveringLetter'. Creditor.Identification.SourceID** oder **Modell. Payments.Creditor.Identification.SourceID** verwenden, um das zugeordnete Kreditorenkonto zu erhalten.
 
-### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>Eine meiner Formatkonfigurationen enthält mehrere Dateien, die in einem Ordner Gruppoert sind (z. B. Ordner1, der Datei1, Datei2 und Datei3 enthält). Wie richte ich Ziele ein, damit Ordner1.zip ist nicht erstellt wird, Datei1 per E-Mail gesendet wird, Datei2 an SharePoint gesendet wird und ich Datei3 direkt nach der Ausführung der Konfiguration öffnen kann?
+### <a name="one-of-my-format-configurations-contains-multiple-files-that-are-group-into-one-folder-for-example-folder1-contains-file1-file2-and-file3-how-do-i-set-up-destinations-so-that-folder1zip-isnt-created-at-all-file1-is-sent-by-email-file2-is-sent-to-sharepoint-and-i-can-open-file3-immediately-after-the-configuration-is-run"></a>Eine meiner Formatkonfigurationen enthält mehrere Dateien, die in einem Ordner Gruppoert sind (z. B. Ordner1, der Datei1, Datei2 und Datei3 enthält). Wie richte ich Ziele ein, damit Ordner1.zip nicht erstellt wird, Datei1 per E-Mail gesendet wird, Datei2 an SharePoint gesendet wird und ich Datei3 direkt nach der Ausführung der Konfiguration öffnen kann?
 
 Die Voraussetzung ist, dass das Format in ER-Konfigurationen verfügbar sein muss. Öffnen Sie das Format haben, öffnen Sie die Seite **Ziel für elektronische Berichterstellung**, und erstellen Sie eine neue Referenz zu dieser Konfiguration. Sie müssen dann über vier Dateiziele verfügen – eine für jede Komponente. Erstellen Sie das erste Ziel, geben sie ihm einen Namen (z. B. **Ordner**), und wählen Sie einen Dateinamen, die einen Ordner in Ihrer Konfiguration darstellt. Klicken Sie dann auf **Einstellungen**, und stellen Sie sicher, dass alle Ziele deaktiviert sind. Für dieses Dateiziel wird kein Ordner erstellt. Aufgrund der hierarchischen Abhängigkeiten zwischen Dateien und übergeordneten Ordner verhalten sich die Dateien genauso. Sie werden also auch nicht gesendet. Um dieses Standardverhalten zu überschreiben, müssen Sie drei weitere Datei Ziele für jede Datei erstellen. In jeder Zieleinstellungen müssen Sie das Ziel aktivieren, an das die Datei gesendet werden soll.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-

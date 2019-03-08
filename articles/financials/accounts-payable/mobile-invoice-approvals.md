@@ -5,9 +5,9 @@ author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e39d81b0d600012f936865b53f8556eb3ef0a3d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314393"
 ---
-
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
 [!include [banner](../includes/banner.md)]
 
-Mit mobilen Funktionen in Microsoft Dynamics 365 for Finance and Operations können geschäftliche Benutzer mobile Umgebungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
+Mithilfe der mobilen Funktionen in Microsoft Dynamics 365 for Finance and Operations können Geschäftsbenutzer mobile Erfahrungen entwerfen. Bei erweiterten Szenarien ermöglicht die Plattform auch Entwickler die Funktionen zu erweitern. Die effektivste Möglichkeit, einige der neuen mobilen Konzepten kennenzulernen, ist, den Prozess des Entwurfs einiger Szenarios durchzulaufen. Dieses Thema soll einen praktischen Ansatz zum Entwerfen von mobilen Szenarien bereitstellen, indem es mobile Kreditorenrechnungsgenehmigungen als Anwendungsfall zeigt. Dieses Thema soll helfen, andere der Szenarien zu entwerfen und kann auch auf anderen Szenarios angewendet werden, die nicht den Kreditorenrechnungen zugeordnet werden.
 
 <a name="prerequisites"></a>Voraussetzungen
 -------------
@@ -37,11 +36,11 @@ Mit mobilen Funktionen in Microsoft Dynamics 365 for Finance and Operations kön
 | Voraussetzung                                                                                            | Beschreibung                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Vorbereitung                                                                                |[Mobile Plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
-| Dynamics 365 for Finance and Operations                                                                             | Eine Umgebung, die Microsoft Dynamics 365 for Operations Version 1611 und Microsoft Dynamics for Operations Platform Update 3 (November 2016) nutzen.                   |
+| Dynamics 365 for Finance and Operations                                                                             | Eine Umgebung mit Microsoft Dynamics 365 for Operations Version 1611 und Microsoft Dynamics for Operations-Plattform – Update 3 (November 2016)                   |
 | Hotfix KB 3204341 installieren.                                                                              | Die Aufgabenaufzeichnung kann fälschlicherweise zwei Scließen-Befehle für Dropdowndialogfelder erfassen, die in Dynamics 365 for Operation Update 3 (November 2016) einbezogen sind. |
 | Hotfix KB 3207800 installieren.                                                                              | Dieser Hotfix ermöglicht das Anzeigen von Anhängen im mobilen Client, der in Dynamics 365 for Operation Update 3 (November 2016) enthalten ist.           |
-| Hotfix KB 3208224 installieren.                                                                              | Anwendungscode für die mobile Kreditorenrechnungs-Genehmigungsanwendung aus Microsoft Dynamics AX 7.0.1 (Mai 2016).                          |
-| Ein Android- oder iOS- oder Windows-Gerät, das die mobile App für Finance and Operations installiert hat | Suchen Sie die App im entsprechenden App-Store.                                                                                                                     |
+| Hotfix KB 3208224 installieren.                                                                              | Anwendungscode für die mobile Kreditorenrechnungs-Genehmigungsanwendung ist in der Microsoft Dynamics AX-Anwendung 7.0.1 (Mai 2016) enthalten.                          |
+| Ein Android- oder iOS- oder Windows-Gerät, auf dem die mobile App für Finance and Operations installiert wurde | Suchen Sie die App im entsprechenden App-Store.                                                                                                                     |
 
 ## <a name="introduction"></a>Einführung
 Mobile Genehmigungen für Kreditorenrechnungen erfordern die drei Hotfixes, die im Abschnitt "Vorbereitung" angegeben werden. Diese Hotfixes bieten keinen Arbeitsbereich für die Rechnungsgenehmigungen. Um zu lernen, was ein Arbeitsbereich im Rahmen des mobilen Clients ist, lesen Sie das Handbuch aus dem Abschnitt "Vorbereitung". Der Rechnungsgenehmigungsarbeitsbereich muss konzipiert werden. 
@@ -126,7 +125,7 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 ### <a name="create-the-workspace"></a>Arbeitsbereich erstellen
 
 1.  Öffnen Sie Finance and Operations in einem Browser, und melden sich an.
-2.  Nachdem Sie angemeldet sind, hängen Sie **&mode=mobile** an die URL wie im folgenden Beispiel an und aktualisieren die Seite: https://&lt;ihreUrl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
+2.  Nachdem Sie angemeldet sind, hängen Sie **&mode=mobile** an die URL wie im folgenden Beispiel an und aktualisieren die Seite: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard **&mode=mobile**
 3.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**. Der Designer für mobile Apps wird wie die Aufgabenaufzeichnung angezeigt.
 4.  Klicken Sie auf **Hinzufügen** um einen neuen Arbeitsbereich zu erstellen Im vorliegenden Beispiel ist Name des Arbeitsbereichs **Meine Genehmigungen**.
 5.  Geben Sie eine Beschreibung ein.
@@ -139,7 +138,7 @@ Allgemeine, wenn mit dem mobilen Designer gearbeitet wird, vergewissern Sie sich
 
 Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Genehmigung zugewiesen werden zeigen. Um diese mobile Seite zu entwerfen verwenden Sie die **VendMobileInvoiceAssignedToMeListPage**-Seite in Finance and Operations. Bevor Sie dieses Verfahren ausführen, stellen Sie sicher, dass mindestens eine Kreditorenrechnung zur Prüfung Ihnen zugewiesen ist und die Rechnungsposition zwei Verteilungen hat. Diese Einstellung erfüllt die Bedingungen für dieses Szenarios.
 
-1.  In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceAssignedToMeListPage**, um die mobile Version der Listenseite **Ausstehende Kreditorenrechnungen – mir zugewiesen** im **Kreditor**-Modul zu öffnen. Je nach der Anzahl von Rechnungen, die Sie in Ihrem System besitzen, das Ihnen zugeordnet ist, wird auf dieser Seite die Rechnungen angezeigt. Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es benötigen nur eine Rechnung, die Ihnen zugewiesen ist. Die neuen Seiten, die verfügbar sind, wurden insbesondere zum Entwickeln von mobilen Szenarien für Kreditorenrechnung entworfen. Daher müssen Sie diesen Seiten nutzen. Die URL muss der folgenden URL ähneln. Nachdem Sie sie eingeben haben, muss die Seite, die in der Abbildung dargestellt wird, angezeigt werden: https://&lt;IhreURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Zu meiner Seite zugewiesene ausstehende Kreditorechungen anzeigen](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+1.  In der Finance and Operations-URL ersetzen Sie den Namen der Menüoption durch **VendMobileInvoiceAssignedToMeListPage**, um die mobile Version der Listenseite **Ausstehende Kreditorenrechnungen – mir zugewiesen** im **Kreditor**-Modul zu öffnen. Je nach der Anzahl von Rechnungen, die Sie in Ihrem System besitzen, das Ihnen zugeordnet ist, wird auf dieser Seite die Rechnungen angezeigt. Sie können den Filter links verwenden um eine bestimmte Rechnung zu suchen. Allerdings benötigen wir keine bestimmte Rechnung für dieses Beispiel. Es benötigen nur eine Rechnung, die Ihnen zugewiesen ist. Die neuen Seiten, die verfügbar sind, wurden insbesondere zum Entwickeln von mobilen Szenarien für Kreditorenrechnung entworfen. Daher müssen Sie diesen Seiten nutzen. Die URL muss der folgenden URL ähneln. Nachdem Sie sie eingeben haben, muss die Seite, die in der Abbildung dargestellt wird, angezeigt werden: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Zu meiner Seite zugewiesene ausstehende Kreditorenrechnungen](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
 2.  Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**.
 3.  Wählen Sie einen und Arbeitsbereich aus und klicken sie **Bearbeiten**
 4.  Klicken Sie auf **Seite hinzufügen**, um die ersten mobilen Seite zu erstellen.
@@ -297,7 +296,7 @@ Um Workflowaktivitäten hinzuzufügen, verwenden Sie die **VendMobileInvoiceHead
 
 1. Klicken Sie auf **Einstellungen** (Zahnrad) in der oberen rechten Ecke der Seite und klicken dann auf **Mobile App**.
 2. Klicken Sie auf die **Bearbeiten** Schaltfläche, um im Bearbeitungsmodus Arbeitsbereich zu starten.
-3. Wählen Sie die Seite <strong>Rechnungsdetails ** aus, die Sie zuvor erstellt haben, und klicken Sie dann auf **Bearbeiten</strong>.
+3. Wählen Sie die Seite <strong>Rechnungsdetails **aus, die Sie zuvor erstellt haben, und klicken Sie dann auf** Bearbeiten</strong>.
 4. Legen Sie die **Dokumentverwaltung** Option **Ja** wie weiter unten) fest. **Hinweis:** Wenn keine Anforderungen gibt, Zuordnungen im mobilen Gerät angezeigt werden, können Sie diese Option **Nein**, mit der die Standardeinstellung ist.
    ![Dokumentverwaltung](./media/docmanagement-216x300.png)
 5. Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
@@ -488,7 +487,6 @@ Die folgenden Abweichungen für Szenario 1, basierend auf den Anforderungen für
     3.  Im Idealfall sollten die Verteilungen im Kontext einer Rechnungsposition in diesem Szenario angezeigt werden. Daher müssen Sie unbedingt, ob der Benutzer in einer Position richten bohren kann, um die Verteilungsseite anzuzeigen. Verwenden Sie die Seitenlinkfunktion, den Drillthrough einzurichten, wie Sie für den Kopf und die Detailseiten in Szenario 1. ".
 
 2.  Da mehrere ein Betragsart für die Verteilungen in Szenario 2 (Mehrwertsteuer, Belastungen usw.) erwartet wird, ist es hilfreich, die Beschreibung des Betrags Typ anzeigen. (Wir haben diese Informationen in Szenario 1 ausgelassen.)
-
 
 
 

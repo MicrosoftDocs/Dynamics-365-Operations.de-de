@@ -1,13 +1,13 @@
 ---
-title: "Finance and Operations-Client – FAQ"
-description: "Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Microsoft Dynamics 365 for Finance and Operations-Client."
+title: Finance and Operations-Client – FAQ
+description: Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Microsoft Dynamics 365 for Finance and Operations-Client.
 author: jasongre
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 74f85f7a1c390d1f21d0423a794ff16c7250d9fa
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316716"
 ---
-
 # <a name="finance-and-operations-client-faq"></a>Finance and Operations-Client – FAQ
 
 [!include [banner](../includes/banner.md)]
@@ -35,10 +34,10 @@ Dieser Artikel enthält Antworten auf häufig gestellte Fragen zum Microsoft Dyn
 
 Die Sicherheitseinstellungen in Ihrem Browser verhinderten möglicherweise, das die Symbole ordnungsgemäß geladen werden. Zur Behebung dieses Problems wird Folgendes empfohlen:
 
-- Falls dieses Problem in Internet Explorer ermitteln, klicken Sie **Tools**, und klicken Sie dann **Internetoptione**. Im Internetoptionsdialogfeld **Datenschutz** auf der Registerkarte, klicken Sie **Benutzerdefinierte  Ebene** an, und vergewissern Sie sich, dass die **Schriftartdownload** Option ausgewählt wird.
+- Falls dieses Problem in Internet Explorer auftritt, klicken Sie auf **Tools**, und klicken Sie dann auf **Internetoptionen**. Im Internetoptionsdialogfeld **Datenschutz** auf der Registerkarte, klicken Sie **Benutzerdefinierte  Ebene** an, und vergewissern Sie sich, dass die **Schriftartdownload** Option ausgewählt wird.
 - Andernfalls müssen Sie möglicherweise die Finance and Operations-Website der Liste der vertrauenswürdigen Standorte hinzufügen.
 
-## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Ich vermisse das Menüband von Microsoft Dynamics AX 2012. Kann ich Registerkarten ständig offen anhalten?
+## <a name="i-miss-the-ribbon-from-dynamics-ax-2012-can-i-keep-action-pane-tabs-open-all-the-time"></a>Ich vermisse das Menüband von Dynamics AX 2012. Kann ich Registerkarten ständig offen anhalten?
 
 Wir planen, diese Funktion bald zu implementieren. Die Benutzer können dann angeben, ob die Registerkarten im Aktivitätsbereichen ständig offen sein soll. Andernfalls werden die Registerkarten reduziert wenn sie nicht verwendet werden, um mehr Platz für die Seite zu erhalten.
 
@@ -56,4 +55,3 @@ Die **Details anzeigen**-Option ist auf mehrere Arten verfügbar:
 
 - Wenn ein Steuerelemente die Funktionen **Details anzeigen** hat, und wenn das Steuerelement einen Wert enthält, dann wird der Wert als Link angezeigt. Sie können auf die Verknüpfung klicken, um die Seite zu öffnen, die zusätzliche Details enthält.
 - **Details anzeigen** ist außerdem eine Option in den Kontextmenüs von Finance and Operations. Weitere Informationen zur Anzeige von Finance and Operations-Kontextmenü beim Rechtsklick finden Sie im vorherigen Abschnitt.
-

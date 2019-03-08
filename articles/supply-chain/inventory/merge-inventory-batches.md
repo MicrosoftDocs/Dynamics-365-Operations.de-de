@@ -1,13 +1,13 @@
 ---
-title: "Lagerchargen zusammenführen"
-description: "Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden."
+title: Lagerchargen zusammenführen
+description: Dieses Thema enthält Informationen, wie zwei oder mehr Lagerchargen in einer zusammengeführte Charge konsolidiert werden.
 author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f118ef38e88171ad1eac463078acf37ba4390e57
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319821"
 ---
-
 # <a name="merge-inventory-batches"></a>Lagerchargen zusammenführen
 
 [!include [banner](../includes/banner.md)]
@@ -61,8 +60,8 @@ Ja, gibt es mehrere Dinge, die Sie einrichten müssen, bevor Sie die Zusammenfü
 <td>Freigegebene Produkte</td>
 <td>Die empfohlenen Einstellungen für den Artikel sind wie folgt:
 <ul>
-<li>Um Chargennummern für zusammengeführte Chargen automatisch zu generieren, müssen Sie das freigegebene Produkt einer Chargennummerngruppe zuweisen. Sie können eine Chargennummer auch manuell eingeben, wenn Sie eine zusammengeführte Charge erstellen, oder wählen Sie eine vorhandene Chargennummer. Wenn Sie eine vorhandene Chargennummer auswählen, müssen Sie sicherstellen, dass die ausgewählte Charge in keine Lagerbuchung einbezogen wurde.</li>
-<li>Wenn Sie Haltbarkeits- oder Mindesthaltbarkeits-Datumsangaben für das freigegebene Produkt verwenden, werden die Datumsangaben für eine zusammengeführte Charge basierend auf der Auswahl im Feld <strong>Datumsberechnung für Chargenzusammenführung</strong> berechnet. Die folgenden Optionen sind verfügbar:
+<li>Um Chargennummern für zusammengeführte Chargen automatisch zu generieren, müssen Sie das freigegebene Produkt einer Chargennummerngruppe zuweisen. Sie können eine Chargennummer auch manuell eingeben, wenn Sie eine zusammengeführte Charge erstellen, oder wählen Sie eine vorhandene Chargennummer. Wenn Sie eine vorhandene Chargennummer auswählen, müssen Sie sicherstellen, dass die ausgewählte Charge in keine Bestandstransaktion einbezogen wurde.</li>
+<li>Wenn Sie Haltbarkeits- oder Mindesthaltbarkeits-Datumsangaben für das freigegebene Produkt verwenden, werden die Datumsangaben für eine zusammengeführte Charge basierend auf der Auswahl im Feld <strong>Datumsberechnung für Chargenzusammenführung</strong> berechnet. Die folgenden Optionen sind verfügbar:
 <ul>
 <li><strong>Frühester Zeitpunkt</strong> - Die Berechnung basiert auf dem frühesten Datum, das für eine Quellcharge angegeben wird, die für die Chargenzusammenführung ausgewählt ist.</li>
 <li><strong>Spätester Zeitpunkt</strong> - Die Berechnung basiert auf dem spätesten Datum, das für eine Quellcharge angegeben wird, die für die Chargenzusammenführung ausgewählt ist.</li>
@@ -141,4 +140,3 @@ Sie können die Bestandserfassung für die Chargenzusammenführung auf der Liste
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Warum kann ich, nachdem ich einen Artikelgewichtsartikel zusammengeführt habe, die Artikelgewichtsinformationen in der Lagererfassung nicht anzeigen?
 Sie können Chargen von Artikelgewichtsartikeln ebenso wie alle anderen Artikel zusammenführen. Allerdings werden die Artikelgewichtsinformationen nicht in der Lagererfassung angezeigt. Es wird empfohlen, die Artikelgewichtsinformationen zu prüfen, bevor Sie die Chargenzusammenführung in die Bestandserfassung übertragen.
-

@@ -1,13 +1,13 @@
 ---
 title: Lagerortarbeitsrichtlinien
-description: "Lagerortarbeitsrichtlinien steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird."
+description: Lagerortarbeitsrichtlinien steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325594"
 ---
-
 # <a name="warehouse-work-policies"></a>Lagerortarbeitsrichtlinien
 
 [!include [banner](../includes/banner.md)]
 
-Lagerortarbeitsrichtlinien in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage von Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
+Lagerortarbeitsrichtlinien in Microsoft Dynamics 365 for Finance and Operations steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 
 Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird. Sie können die Arbeitsrichtlinie einrichten, indem Sie eine Kombination von **Arbeitsauftragstypen**, einen **Bestandslagerbestand** und ein **Produkt** verwenden. Beispielsweise wird Produkt L0101 dem Ausgangslagerplatz 001 als fertig gemeldet. Das Endprodukt wird später in einem anderen Produktionsauftrag an Ausgangslagerplatz 001 verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass fertige eingelagerte Waren erstellt werden, wenn Sie Produkt L0101 dem Ausgangslagerort 001 als fertig melden. Die Arbeitsrichtlinie ist eine einzelne Entität, die durch die folgenden Informationen beschrieben werden kann:
 
@@ -126,7 +125,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>2.</td>
-<td>Wählen Sie in der Liste Ressourcengruppe "5102" aus.</td>
+<td>Wählen Sie in der Liste Ressourcengruppe &#39;5102&#39; aus.</td>
 </tr>
 <tr>
 <td></td>
@@ -136,12 +135,12 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Geben Sie im Feld "Ausgangslagerort" den Wert "51" ein.</td>
+<td>Geben Sie im Feld "Ausgangslagerort" den Wert &#39;51&#39; ein.</td>
 </tr>
 <tr>
 <td></td>
 <td>5.</td>
-<td>Geben Sie im Feld "Ausgangslagerplatz" den Wert "001" ein.</td>
+<td>Geben Sie im Feld "Ausgangslagerplatz" den Wert &#39;001&#39; ein.</td>
 </tr>
 <tr>
 <td></td>
@@ -169,7 +168,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>4.</td>
-<td>Geben Sie im Feld "Artikelnummer" den Wert "L0101" ein.</td>
+<td>Geben Sie im Feld "Artikelnummer" den Wert &#39;L0101&#39; ein.</td>
 </tr>
 <tr>
 <td></td>
@@ -204,7 +203,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>11.</td>
-<td>Wählen Sie im Feld "Stücklistenverbrauch" die Option "Nie" aus.</td>
+<td>Wählen Sie im Feld "Stücklistenverbrauch" die Option &#39;Nie&#39; aus.</td>
 </tr>
 <tr>
 <td></td>
@@ -248,7 +247,6 @@ SCHRITTE (25)
 </tr>
 </tbody>
 </table>
-
 
 
 

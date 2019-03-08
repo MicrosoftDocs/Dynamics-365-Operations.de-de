@@ -1,31 +1,30 @@
 ---
-title: "Serviceverträge"
-description: "In Serviceverträgen können Sie die Ressourcen definieren, die für einen typischen Servicebesuch benötigt werden, und festlegen, wie diese Ressourcen dem Debitor in Rechnung gestellt werden sollen."
+title: Serviceverträge
+description: In Serviceverträgen können Sie die Ressourcen definieren, die für einen typischen Servicebesuch benötigt werden, und festlegen, wie diese Ressourcen dem Debitor in Rechnung gestellt werden sollen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c6425dcf1c89f625d997be0dd4a52aaecb6e6d65
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: bf9df2a31c758ba6b63ac7952e00065df04552dc
-ms.openlocfilehash: aaff0c1d71fcf2656d5d6e76a2bf4b7b3a699281
-ms.contentlocale: de-de
-ms.lasthandoff: 02/19/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315037"
 ---
-
 # <a name="service-agreements"></a>Serviceverträge
 
 [!include [banner](../includes/banner.md)]
@@ -80,4 +79,3 @@ In jeder Servicevertragsposition wird der Inhalt der erforderlichen Servicearbei
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Erstellen von Servicevereinbarungen](create-service-agreements.md)
-

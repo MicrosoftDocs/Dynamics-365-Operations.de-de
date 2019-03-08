@@ -1,13 +1,13 @@
 ---
 title: Manuelle Aufgaben in einem Workflow konfigurieren
-description: "Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Aufgabe konfigurieren können."
+description: Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Aufgabe konfigurieren können.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 669fce3ddade4d6e0a130da2420ab33ca4ff4671
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309747"
 ---
-
 # <a name="configure-manual-tasks-in-a-workflow"></a>Manuelle Aufgaben in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
@@ -136,7 +135,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem die manuelle Aufgabe zugewiesen
     </tr>
     <tr>
     <td>Benutzer</td>
-    <td>Bestimmte Benutzer von Microsoft Dynamics 365 Finance and Operations</td>
+    <td>Bestimmte Microsoft Dynamics 365 for Finance and Operations-Benutzer</td>
     <td>
     <ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
@@ -383,4 +382,3 @@ Wenn die manuelle Aufgabe einem Benutzer zugewiesen wird, muss der Benutzer die 
 5. Aktivieren Sie das Kontrollkästchen **Delegieren**, wenn der Benutzer in der Lage sein soll, die Aufgabe einem anderen Benutzer zuzuweisen.
 6. Aktivieren Sie das Kontrollkästchen **Neu zuordnen**, wenn der Benutzer in der Lage sein soll, die Aufgabe einem anderen Benutzer in der Warteschlange für Arbeitsaufgaben neu zuzuweisen.
 7. Aktivieren Sie das Kontrollkästchen **Freigeben**, wenn der Benutzer in der Lage sein soll, die Aufgabe der Warteschlange für Arbeitsaufgaben neu zuzuweisen. Ein anderer Benutzer kann die Aufgabe anschließend ausführen.
-

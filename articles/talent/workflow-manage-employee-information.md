@@ -1,13 +1,13 @@
 ---
 title: Mit Workflows Mitarbeiterinformationen verwalten
-description: "In diesem Thema wird erläutert, wie die Sie Workflowfunktion für die Personalverwaltung verwenden können, um Mitarbeiterdaten zu verwalten. So können Sie beispielsweise einen Workflow einer Position zuordnen und einen Genehmigungsworkflow konfigurieren, der gestartet wird, wenn Mitarbeiter Ihren Datensatz ändern."
+description: In diesem Thema wird erläutert, wie die Sie Workflowfunktion für die Personalverwaltung verwenden können, um Mitarbeiterdaten zu verwalten. So können Sie beispielsweise einen Workflow einer Position zuordnen und einen Genehmigungsworkflow konfigurieren, der gestartet wird, wenn Mitarbeiter Ihren Datensatz ändern.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 0ffae206ae1956e5dc41487f04561ed2c48bd20b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: cf2200057053f5a6d4754d37111ebe34849bb99d
-ms.contentlocale: de-de
-ms.lasthandoff: 02/14/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304460"
 ---
-
 # <a name="use-workflows-to-manage-employee-information"></a>Mit Workflows Mitarbeiterinformationen verwalten
 
 [!include [banner](includes/banner.md)]
@@ -69,7 +68,6 @@ Um einen grundlegenden Workflow zu konfigurieren, der startet, wenn Mitarbeiter 
 10. Wechseln Sie zu **Personalverwaltung** &gt; **Positionen** &gt; **Hierarchietypen für die Position**.
 11. Wählen Sie **Matrix** aus.
 12. Fügen Sie den **Arbeitskraft-Kennungsnummer**-Workflow zur Liste hinzu.
-
 
 
 

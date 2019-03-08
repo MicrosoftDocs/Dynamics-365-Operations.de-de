@@ -1,13 +1,13 @@
 ---
 title: Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
-description: "Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode können Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. In der anderen Methode erstellen Sie Erfassungsbelege für Vorauszahlungen, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren."
+description: Dieser Artikel erläutert und vergleicht die beiden Methoden, die Organisationen für Vorauszahlungen verwenden können. In einer Methode können Sie eine Vorauszahlungsrechnung erstellen, die einer Bestellung zugeordnet ist. In der anderen Methode erstellen Sie Erfassungsbelege für Vorauszahlungen, indem Sie Journaleinträge erstellen und diese dann als Erfassungsbelege für Vorauszahlungen markieren.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c81045b72d15f4474d82040d7725740cff5eba91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c1f30e375b759641875ed6a5a7d2f77132715c57
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310138"
 ---
-
 # <a name="prepayment-invoices-vs-prepayments"></a>Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Organisationen können für Waren oder Dienstleistungen Vorauszahlungen an Kredi
 | Vorauszahlungsrechnungsstellung                                                                | Vorauszahlungen                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Vorauszahlungswerte können für eine Bestellung definiert werden,                                    | Kein Vorauszahlungswert ist für die Bestellung definiert.                    |
-| Schlüssel: Eine Vorauszahlungsrechnung und eine Endabrechnung müssen gebucht werden.                       | Keine Vorauszahlungsrechnung muss gebucht werden.                                    |
+| Schlüssel: Eine Vorauszahlungsrechnung und eine Endabrechnung müssen gebucht werden.                       | Keine Vorauszahlungsrechnung muss gebucht werden.                                    |
 | Verbindlichkeiten für die Vorauszahlung werden im Vorauszahlungskonto, nicht im Kreditorenkonto vorgesehen. | Verbindlichkeiten für die Vorauszahlung werden im Kreditorenkonto vorgesehen.                  |
 | Der Kreditorensaldo spiegelt nicht den Vorauszahlungswert beim Ausführen des Prozesses wider.     | Der Kreditorensaldo spiegelt den Vorauszahlungswert beim Ausführen des Prozesses wider. |
 | Vorauszahlungsrechnungsstellung ist nur in den Kreditoren verfügbar.                         | Vorauszahlungen sind in Kreditoren und Debitoren verfügbar.    |
@@ -49,21 +48,20 @@ Die Buchführungsmethoden in vielen Ländern/Regionen verlangen, dass Vorauszahl
 
 1.  Buchungsprofile für Vorauszahlungen einrichten.
 2.  In den Debitorenparametern und in den Kreditorenparametern unter **Sachkonto und Mehrwertsteuer** das neue Buchungsprofil aus, indem Sie den Parameter **Buchungsprofil für Zahlungserfassung mit Vorauszahlung** verwenden.
-3.  Erstellen Sie eine Zahlungserfassung, und erstellen Sie dann die neue Zahlung.
-4.  Sie können die Zahlung als Vorauszahlung kennzeichnen. Wenn eine Zahlung als Vorauszahlung gekennzeichnet ist, wird die Zahlung an den Sachkonten gebucht, die im Buchungsprofil definiert werden, das Sie in den Schritten 1 und 2 einrichten. Darüber hinaus, wenn die Zahlung als Vorauszahlung gekennzeichnet ist, werden Steuern berechnet. Einige Regierungen verlangen, dass Steuern gezahlt werden, wenn eine Vorauszahlung erfasst wird, selbst wenn keine Rechnung vorliegt.
+3.  Erstellen Sie eine Zahlungserfassung, und erstellen Sie dann die neue Zahlung.
+4.  Sie können die Zahlung als Vorauszahlung kennzeichnen. Wenn eine Zahlung als Vorauszahlung gekennzeichnet ist, wird die Zahlung an den Sachkonten gebucht, die im Buchungsprofil definiert werden, das Sie in den Schritten 1 und 2 einrichten. Darüber hinaus, wenn die Zahlung als Vorauszahlung gekennzeichnet ist, werden Steuern berechnet. Einige Regierungen verlangen, dass Steuern gezahlt werden, wenn eine Vorauszahlung erfasst wird, selbst wenn keine Rechnung vorliegt.
 5.  Buchen Sie die Vorauszahlung.
-6.  Optional: Sie können die Vorauszahlung für die Bestellung bzw. den Auftrag ausgleichen, bevor Sie die Rechnung erstellen. Auf der Auftrags- oder Bestellungsseite im Aktivitätsbereich, verwendet **Bankbuchungen**.
-7.  Nachdem der Kreditor die Waren oder Dienstleistungen geliefert hat, erfassen Sie die Rechnung. Wenn Sie die Vorauszahlung für die Bestellung oder den Verkaufsauftrag in Schritt 6 ausgeglichen haben, wird die Vorauszahlung automatisch mit der Rechnung ausgeglichen, die Sie erstellt haben. Wenn Sie die Vorauszahlung nicht für die Bestellung bzw. den Auftrag ausgeglichen haben, können Sie sie anhand der Rechnung manuell ausgleichen, indem Sie **Buchungen ausgleichen** der Debitoren- oder Kreditorenseite verwenden. Der Vorauszahlungsbetrag wird dann aus dem temporären Debitoren-/Kreditoren-Sachkonto storniert. Darüber hinaus, wenn Steuern berechnet wurden, werden sie storniert, da die Rechnung die tatsächlichen Steuern hat.
+6.  Optional: Sie können die Vorauszahlung für die Bestellung bzw. den Auftrag ausgleichen, bevor Sie die Rechnung erstellen.Auf der Auftrags- oder Bestellungsseite im Aktivitätsbereich, verwendet **Bankbuchungen**.
+7.  Nachdem der Kreditor die Waren oder Dienstleistungen geliefert hat, erfassen Sie die Rechnung. Wenn Sie die Vorauszahlung für die Bestellung oder den Verkaufsauftrag in Schritt 6 ausgeglichen haben, wird die Vorauszahlung automatisch mit der Rechnung ausgeglichen, die Sie erstellt haben. Wenn Sie die Vorauszahlung nicht für die Bestellung bzw. den Auftrag ausgeglichen haben, können Sie sie anhand der Rechnung manuell ausgleichen, indem Sie **Buchungen ausgleichen** der Debitoren- oder Kreditorenseite verwenden. Der Vorauszahlungsbetrag wird dann aus dem temporären Debitoren-/Kreditoren-Sachkonto storniert. Darüber hinaus, wenn Steuern berechnet wurden, werden sie storniert, da die Rechnung die tatsächlichen Steuern hat.
 
 ## <a name="overview-of-the-prepayment-invoicing-process"></a>Überblick über den Vorauszahlungsrechnungsstellungsprozesses
-Vorauszahlungsrechnungen sind eine allgemeine Geschäftspraktik. Ein Kreditor gibt Vorauszahlungsrechnungen aus, um eine Einzahlung auf dem Einkauf zu erfordern, bevor die Bestellung erfüllt wurde. Beispielsweise verlangen einige Kreditoren kann eine Vorauszahlung für angepasste Waren oder Dienstleistungen. Wenn ein Kreditor einer Rechnung abgeglichen werden, die eine Vorauszahlung fordert, können Sie die Funktion zur Vorauszahlungsrechnungsstellung verwenden. Ein Vorauszahlungswert kann auf der Bestellung definiert werden, eine Vorauszahlungsrechnung wird erfasst und bezahlt, und die Vorauszahlungsrechnung wird auf die Endabrechnung angewendet. Gehen Sie folgendermaßen vor, um eine Vorauszahlung zu erstellen.
+Vorauszahlungsrechnungen sind eine allgemeine Geschäftspraktik. Ein Kreditor gibt Vorauszahlungsrechnungen aus, um eine Einzahlung auf dem Einkauf zu erfordern, bevor die Bestellung erfüllt wurde. Beispielsweise verlangen einige Kreditoren kann eine Vorauszahlung für angepasste Waren oder Dienstleistungen. Wenn ein Kreditor einer Rechnung abgeglichen werden, die eine Vorauszahlung fordert, können Sie die Funktion zur Vorauszahlungsrechnungsstellung verwenden. Ein Vorauszahlungswert kann auf der Bestellung definiert werden, eine Vorauszahlungsrechnung wird erfasst und bezahlt, und die Vorauszahlungsrechnung wird auf die Endabrechnung angewendet. Gehen Sie folgendermaßen vor, um eine Vorauszahlung zu erstellen.
 
 1.  Die Bestellung, für die der Kreditor eine Vorauszahlung angefordert hat, wird vom Einkaufsvertreter erstellt, bestätigt und gesendet. Der Vorauszahlungswert wird auf der Bestellung als Teil der Vereinbarung definiert.
 2.  Der Kreditor übermittelt eine Vorauszahlungsrechnung.
 3.  Der Kreditorenkoordinator erfasst die Vorauszahlungsrechnung für die Bestellung, und dann wird die Vorauszahlungsrechnung bezahlt.
 4.  Nachdem der Kreditor die Waren oder Dienstleistungen geliefert hat und die zugehörige Kreditorenrechnung eingegangen ist, wendet der Kreditorenkoordinator den bereits geleisteten Vorauszahlungsbetrag auf die Rechnung an.
 5.  Der Kreditorenkoordinator begleicht dann den verbleibenden Rechnungsbetrag.
-
 
 
 

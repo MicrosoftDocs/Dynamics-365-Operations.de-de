@@ -1,13 +1,13 @@
 ---
-title: "Die Ergebnisse von Fragebögen anzeigen und auswerten"
-description: "In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben."
+title: Die Ergebnisse von Fragebögen anzeigen und auswerten
+description: In diesem Thema wird beschrieben, wie Sie die Ergebnisse von Fragebögen anzeigen und bewerten können, die die Befragten abgeschlossen haben.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: 9fd4af5589cfab2a92c913639f1192029eb7c592
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304589"
 ---
-
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Die Ergebnisse von Fragebögen anzeigen und auswerten
 
 [!include [banner](includes/banner.md)]
@@ -46,7 +45,7 @@ Es können auch verschiedene Berichte generiert werden, um Ergebnisse nach Perso
 -   Rückmeldungsanalyse
 
 ## <a name="answer-session-results"></a>Antwortsitzungsergebnisse
-Nachdem die Teilnehmer einen Fragebogen ausgefüllt haben, können Sie die Ergebnisse abgeschlossener Antwortsitzungen anzeigen. Eine Antwortsitzung ist die Beantwortung eines Fragebogens durch einen Benutzer. Sie können Details zu abgeschlossenen Antwortsitzungen auf der Seite **Antworten** anzeigen. Die Antwortsitzungen, die auf der Seite **Antworten** enthalten sind, werden auf verschiedene Weise gefiltert, abhängig davon, wie Sie die Seite öffnen:
+Nachdem die Teilnehmer einen Fragebogen ausgefüllt haben, können Sie die Ergebnisse abgeschlossener Antwortsitzungen anzeigen. Eine Antwortsitzung ist die Beantwortung eines Fragebogens durch einen Benutzer. Sie können Details zu abgeschlossenen Antwortsitzungen auf der Seite **Antworten** anzeigen. Die Antwortsitzungen, die auf der Seite **Antworten** enthalten sind, werden auf verschiedene Weise gefiltert, abhängig davon, wie Sie die Seite öffnen:
 
 -   Alle Fragebögen
 -   Ein bestimmter Fragebogen
@@ -54,7 +53,7 @@ Nachdem die Teilnehmer einen Fragebogen ausgefüllt haben, können Sie die Ergeb
 
 Auf der Seite **Antworten** können Sie Details zu Antworten, erzielten Punkten, den Antworten eines Teilnehmers in jeder Ergebnisgruppe und zur Fragenhierarchie anzeigen, die im ausgewählten Fragebogen verwendet wird. Sie können auch die folgenden Berichte generieren und drucken:
 
--   **Ergebnisbericht** - Dieser Bericht zeigt eine grafische Darstellung der Punkte, die pro Ergebnisgruppe für die ausgewählte Antwortsitzung erzielt wurden.
+-   **Ergebnisbericht** - Dieser Bericht zeigt eine grafische Darstellung der Punkte, die pro Ergebnisgruppe für die ausgewählte Antwortsitzung erzielt wurden.
 -   **Antwortbericht** - In diesem Bericht werden die Antworten angezeigt, die der Befragte für jede Frage zum Fragebogen ausgewählt hat.
 -   **Falsche Antworten** - Dieser Bericht werden Informationen zu den falschen Antworten des Befragten angezeigt.
 
@@ -68,7 +67,7 @@ Mithilfe der Fragebogenstatistik können Sie die Ergebnisse eines ausgefüllten 
     -   Wählen Sie den Diagrammtyp aus, der verwendet wird, wenn Sie Ergebnisse anzeigen.
     -   Wählen Sie die Typen von Personen im Netzwerk aus, z. B. Mitarbeiter, Kontaktperson oder Bewerber, deren Antworten einbezogen werden sollen. Sie können auch Antworten von Fragebögen einbeziehen, die anonym ausgefüllt wurden.
     -   Richten Sie Intervalle ein, die auf dem Alter oder Dienstalter beruhen, um die Ergebnisse zu analysieren.
--   Hier können Sie Einstellungen auswählen oder anzeigen, mit denen das Thema der Statistik enger eingegrenzt werden kann. Wenn Sie z. B. eine Postleitzahl auswählen, können Sie die Ergebnisse für alle Befragten im betreffenden geografischen Gebiet analysieren.
+-   Hier können Sie Einstellungen auswählen oder anzeigen, mit denen das Thema der Statistik enger eingegrenzt werden kann. Wenn Sie z. B. eine Postleitzahl auswählen, können Sie die Ergebnisse für alle Befragten im betreffenden geografischen Gebiet analysieren.
 -   Wählen Sie Kriterien aus, oder zeigen Sie Kriterien an, um die Ergebnisse nach Merkmalen des Befragten oder des Fragebogens zu analysieren. Wenn Sie z. B. die **Postleitzahl** auswählen, können Sie die Korrelation zwischen dem Standort eines Befragten und den richtigen Antworten analysieren.
 
 Die festgelegten Einstellungen werden gespeichert und können zur regelmäßigen Neuberechnung der Ergebnisse verwendet werden.
@@ -81,5 +80,4 @@ Die festgelegten Einstellungen werden gespeichert und können zur regelmäßigen
 [Verwenden von Fragebögen](questionnaires.md)
 
 [Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
-
 

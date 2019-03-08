@@ -1,13 +1,13 @@
 ---
-title: "Verbesserungen der Auszugsbuchungsfunktionalität"
+title: Verbesserungen der Auszugsbuchungsfunktionalität
 description: In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden.
 author: josaw1
 manager: AnnBe
 ms.date: 04/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -16,21 +16,20 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321431"
 ---
-
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
 [!include[banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden. Diese Verbesserungen sind in Microsoft Dynamics 365 for Finance and Operations 7.3.2 verfügbar.
+In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden. Verbesserungen Diese sind in Microsoft Dynamics 365 for Finance and Operations 7.3.2 verfügbar.
 
-## <a name="activation"></a>Aktivieren
+## <a name="activation"></a>Aktivierung
 
 Standardmäßig ist das Programm beim Deployment von Finance and Operations 7.3.2 so eingestellt, dass es das Legacy-Feature für Kontoauszugsbuchungen verwendet. Um die verbesserte Auszugsbuchung zu aktivieren, müssen Sie den Konfigurationsschlüssel dafür einschalten.
 
@@ -171,4 +170,3 @@ Weitere Backend-Verbesserungen, die der Benutzer sehen kann, wurden an der Auszu
 
     - Klicken Sie auf **Einzelhandel** \> **Zentralverwaltungseinrichtun** \> **Parameter** \> **Einzelhandelsparamete**. Stellen Sie anschließend auf der Registerkarte **Buchung**, auf dem Inforegister **Lageraktualisierung**, auf dem Feld **Detailebene**, wählen Sie **Zusammenfassung** aus.
     - Klicken Sie auf **Einzelhandel** \> **Zentralverwaltungseinrichtun** \> **Parameter** \> **Einzelhandelsparamete**. Stellen Sie anschließend auf der Registerkarte **Buchung**, auf dem Inforegister **Aggregation**, Satz **Belegbuchungen** die Option **Ja**.
-

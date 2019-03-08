@@ -1,13 +1,13 @@
 ---
-title: "Qualitätsmangel-Verwaltung"
-description: "In diesem Artikel werden die Basiseinstellungen beschrieben, die erforderlich sind, um Qualitätsmängel zu verwenden. Zusätzliche Einstellungen sind erforderlich, wenn Sie Testbestellungen verwenden möchten."
+title: Qualitätsmangel-Verwaltung
+description: In diesem Artikel werden die Basiseinstellungen beschrieben, die erforderlich sind, um Qualitätsmängel zu verwenden. Zusätzliche Einstellungen sind erforderlich, wenn Sie Testbestellungen verwenden möchten.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fc1e1eb9d8ede1d07a873ca98a1c385cf0126c3f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316440"
 ---
-
 # <a name="nonconformance-management"></a>Qualitätsmangel-Verwaltung
 
 [!include [banner](../includes/banner.md)]
@@ -55,4 +54,3 @@ Um die Verwaltung von Qualitätsmängeln zu aktivieren, führen Sie die folgende
 [Qualitätsmanagementprozesse](quality-management-processes.md)
 
 [Einrichtung von Voraussetzungen für den Umgang mit Nicht-Konformitäten (Aufgabenleitfaden) ](tasks/set-up-prerequisites-nonconformance-management.md)
-

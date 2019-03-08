@@ -1,13 +1,13 @@
 ---
-title: "Standardauftragseinstellungen für Dimensionen und Produktvarianten"
-description: "Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode."
+title: Standardauftragseinstellungen für Dimensionen und Produktvarianten
+description: Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventItemOrderSetup
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: b7c36553c9ad5bf4b061285d617be85ce77d0fcd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: d0e8d1ac8b775f9c728d6bfa6ba219dd889bf8a2
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326376"
 ---
-
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
 [!include [banner](../includes/banner.md)]
 
 [!include [retail name](../includes/retail-name.md)]
 
-Standardauftragseinstellungen in Microsoft Dynamics 365 for Finance and Operations definieren die Site und den Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
+Standardauftragseinstellungen in Microsoft Dynamics 365 for Finance and Operations definieren den Standort und Lagerort, aus dem Artikel bezogen oder an dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
 
 Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, wechseln Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; **wählen Sie ein freigegebenes Produkt aus** &gt; im Aktionsbereich **Plan** oder **Bestand verwalten**&gt;  **Auftragseinstellungen** &gt; **Standardauftragseinstellungen**.
 
@@ -170,7 +169,6 @@ Wenn das Regelsystem für Standardauftragseinstellungen zu lästig ist, dann gib
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 In diesem Fall ist der Rang tatsächlich unerheblich, sodass Sie ihn ausblenden können. Diese Lösung führt möglicherweise zu einem Wartungsproblem. Möglicherweise empfiehlt es sich jedoch, diese Einstellung zu verwenden, wenn Sie in Erwägung ziehen, eine Integration mit Product Lifecycle Management (PLM)-Systemen vorzunehmen.
-
 
 
 

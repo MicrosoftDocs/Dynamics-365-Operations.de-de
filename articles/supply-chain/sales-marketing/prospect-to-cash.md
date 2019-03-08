@@ -1,39 +1,38 @@
 ---
 title: Interessent zu Bargeld
-description: "Dieses Thema bietet eine Übersicht der Lösung „Interessent zu Bargeld” zwischen Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Sales."
+description: Dieses Thema enthält einen Überblick der Prospect to Cash-Lösung zwischen Microsoft Dynamics 365 for Finance and Operationsund Microsoft Dynamics 365 for Sales.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
 ms.openlocfilehash: b46ece384a28f8e78989253fcf467fbf3feaf1b7
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309494"
 ---
-
 # <a name="prospect-to-cash"></a>Interessent zu Bargeld
 
 [!include [banner](../includes/banner.md)]
 
-Die „Interessent zu Bargeld”-Lösung bietet direkte Synchronisation zwischen Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben. 
+Die Prospect to Cash-Lösung bietet direkte Synchronisierung zwischen Dynamics 365 for Finance and Operationsund Dynamics 365 for Sales. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Während die Daten zwischen Finance and Operations und Sales fließen, können Sie Vertriebs- und Marketingaktivitäten zwischen Finance and Operations und Sales ausführen und die Auftagserfüllung mit Bestandsverwaltung in Finance and Operations handhaben. 
 
-Für weitere Informationen über die Integration von „Interessent zu Bargeld” sehen Sie sich das kurze YouTube-Video an: [Integration von „Interessent zu Bargeld”](https://www.youtube.com/watch?v=AVV9x5x-XCg)
+Für weitere Informationen über die Integration Prospect to Cash sehen Sie sich das kurze YouTube-Video an: [Integration von Prospect to Cash](https://www.youtube.com/watch?v=AVV9x5x-XCg).
 
 In der aktuellen Version enthält die Interessent in Bargeldlösung die folgenden Typen der direkten Synchronisierung:
 
@@ -47,13 +46,13 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
 „Interessent zu Bargeld”-Integration wird in den folgenden Versionen unterstützt:
 
-### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (Dezember 2017)
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (Dezember 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (Dezember 2017) – Anwendungsbuild 7.3.11971.56116 mit Plattformupdate 12 (7.0.4709.41129)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (Dezember 2017) - Anwendungserstellung 7.3.11971.56116 mit Plattform-Update 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017) – mit Plattformupdate 8 (Anwendungsbuild 7.2.11792.56024 mit Plattformbuild 7.0.4565.16212).
+- Dynamics 365 for Finance and Operations, Enterprise Edition (Juli 2017) - mit Plattformupdate 8 (Anwendungserstellung 7.2.11792.56024 mit Plattformbuild 7.0.4565.16212).
 - Die folgenden Hotfixes sind erforderlich:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** Dieser Hotfix aktiviert die Auftragspositionssynchronisierung von Sales zu Finance and Operations über die Datenintegrationsfunktion. Er enthält auch einige anderen Erweiterungen.
@@ -63,9 +62,9 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
     > [!NOTE]
     > Sie müssen nur KB4045570 installieren, da diese Installation die Änderungen aus anderen Hotfixes enthält. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations Version 1611 (November 2016)
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations Version 1611 (November 2016)
 
-- Dynamics 365 for Finance and Operations, Version 1611 (November 2016) mit Plattform-Update 8 oder höher
+- Dynamics 365 for Finance and Operations-Version 1611 (November 2016) mit Plattformaktualisierung 8 oder höher
 
 - Die folgenden Hotfixes sind erforderlich:
 
@@ -81,6 +80,5 @@ In der aktuellen Version enthält die Interessent in Bargeldlösung die folgende
 
 Um die Interessent zu Bargeld-Lösung zu nutzen, müssen Sie Folgendes installieren:
 
-- Dynamics 365 for Sales, Version 1612 (8.2.1.207) (DB 8.2.1.207) online oder höher.
-- Interessent zu Bargeld-Lösung für Dynamics 365 for Sales, Version 1.15.0.0 oder höher. Die Lösung ist unter AppSource zum Download verfügbar. [Laden Sie Dynamics 365, Prospect to Cash herunter](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-
+- Dynamics 365 for Sales-Version 1612 (8.2.1.207) (DB) 8.2.1.207 online oder eine höhere Version
+- Prospect to Cash-Lösung für Dynamics 365 for Sales, Version 1.15.0.0 oder einer höheren Version. Die Lösung ist aus AppSource zum Download verfügbar. [Laden Sie Dynamics 365, Prospect to Cash herunter](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).

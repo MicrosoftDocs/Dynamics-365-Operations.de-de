@@ -1,13 +1,13 @@
 ---
 title: Cashflowplanung
-description: "Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird."
+description: Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 681817f2879034d65b53666a9d56ec00cc175ad8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9aefc79897d0abcee14c05f33516181b3eb05e55
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324490"
 ---
-
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
 [!include [banner](../includes/banner.md)]
@@ -129,7 +128,7 @@ Der Arbeitsbereich **Bargeldüberblick – alle Unternehmen** zeigt die Cashflow
 
 Der Arbeitsbereich **Bargeldüberblick – aktuelles Unternehmen** zeigt Cashflowplanungsanalyse in der definierten Buchhaltungswährung des Unternehmens. Die Buchhaltungswährung, die zur Analyse verwendet wird, wird auf der Seite **Sachkonto** definiert. Der Arbeitsbereich zeigt einen Überblick der Cashflowplanung und Bankkontosalden für das aktuelle Unternehmen an. Ein Diagramm aus Barzu- und -ausflüssen bietet eine Übersicht der künftigen Geldbewegungen und Salden in der Buchhaltungswährung, zusammen mit detaillierten Informationen zu den Planungsbuchungen. Sie können auch die folgenden Währungssalden sehen.
 
-Weitere Informationen zur Cashflowplanungsanalyse finden Sie im Inhaltsthema "Power BI-Bargeldübersicht".
+Weitere Informationen zur Cashflowplanungsanalyse finden Sie im Power BI-Inhaltsthema zur Bargeldübersicht.
 
 Darüber hinaus können Sie Cashflowplanungsdaten für bestimmte Konten, Aufträge und Artikel auf den folgenden Seiten anzeigen:
 
@@ -138,5 +137,4 @@ Darüber hinaus können Sie Cashflowplanungsdaten für bestimmte Konten, Aufträ
 - **Alle Bestellungen**: Auf der Registerkarte **Rechnung** wählen Sie **Cashflow-Planungen** aus, um die geplante Bargeldauswirkung der ausgewählten Bestellung anzuzeigen.
 - **Beschaffungsplanung**: Wählen Sie **Cashflow-Planungen** aus, um die künftigen Cashflows anzuzeigen, die der ausgewählten Artikelbeschaffungsplanung zugeordnet werden.
 - **Bedarfsplanung**: Wählen Sie **Cashflow-Planungen** aus, um die künftigen Cashflows anzuzeigen, die der ausgewählten Artikelbedarfsplanung zugeordnet werden.
-
 

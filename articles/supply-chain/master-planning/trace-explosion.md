@@ -1,13 +1,13 @@
 ---
-title: "Verwenden der Ablaufverfolgung für die Auflösung"
-description: "In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen."
+title: Verwenden der Ablaufverfolgung für die Auflösung
+description: In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d4a6123d7443cce51e95aa6d1fdb1fdc19d001d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2642ced283d815ad671512cc5a17e531e9169f91
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309448"
 ---
-
 # <a name="use-tracing-for-explosion"></a>Verwenden der Ablaufverfolgung für die Auflösung
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten 
 --------
 
 [Produktprogrammpläne](master-plans.md)
-
 
 
 

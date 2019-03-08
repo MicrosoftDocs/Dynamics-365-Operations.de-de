@@ -1,14 +1,14 @@
 ---
-title: "Rollforwardbericht für Anlagen"
-description: "In diesem Thema wird erläutert, wie Sie den Rollforwardbericht für Anlagen verwenden."
+title: Rollforwardbericht für Anlagen
+description: In diesem Thema wird erläutert, wie Sie den Rollforwardbericht für Anlagen verwenden.
 author: saraschi2
-manager: 
+manager: ''
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,19 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-12-20
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 3f2da6d552dd27566d3e012d3e6055fcaa194e4b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313749"
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Rollforwardbericht für Anlagen
 
 [!include [banner](../includes/banner.md)]
 
-Der Bericht **Rollforward für Anlagen** bietet ein einfach zu lesendes Microsoft Excel-Format, die detaillierten Anlagedaten, die Sie für den Periodenabschluss, für Finanzaufstellungen und die Steuererklärung benötigen. Der Bericht umfasst Start- und Endsalden für Anlagen zusammen mit Bewertungsbewegungen für die Periode und sämtlicher neuer Anlagenanschaffungen und -abgänge, die sich während der Periode ereigneten. Daten werden für einzelne Anlagen gemeldet, und Werte werden auch für Anlagengruppen und die juristische Person zusammengefasst.
+Der Bericht **Rollforward für Anlagen** bietet – in einem einfach zu lesenden Microsoft Excel-Format – die detaillierten Anlagedaten, die Sie für den Periodenabschluss, für Finanzaufstellungen und für die Steuererklärung benötigen. Der Bericht umfasst Start- und Endsalden für Anlagen zusammen mit Bewertungsbewegungen für die Periode und sämtlicher neuer Anlagenanschaffungen und -abgänge, die sich während der Periode ereigneten. Daten werden für einzelne Anlagen gemeldet, und Werte werden auch für Anlagengruppen und die juristische Person zusammengefasst.
 
 Der Bericht **Rollforward für Anlagen** verwendet das Framework für die elektronische Berichterstellung (EB). Bevor Sie den Bericht ausführen können, müssen die Rollforwardkonfigurationen für Anlagenmodell und Anlagen aus Microsoft Dynamics Lifecycle Services (LCS) importiert werden. Weitere Informationen finden Sie unter [Elektronische Berichtskonfigurationen aus Lifecycle Services herunterladen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
@@ -66,5 +66,4 @@ In der folgenden Tabelle werden die Felder beschrieben, die im Bericht zur Verf�
 |            Abgänge: Verkaufswert            |                                                                                               Der Verkaufswert für das Anlagenbuch mit einem Abgang – Verkaufstransaktion.                                                                                                |
 |           Abgänge: Verschrottungswert            |                                                                                               Der Verschrottungswert für das Anlagenbuch mit einem Abgang – Verschrottungstransaktion.                                                                                               |
 |           Abgänge: Gewinn/Verlust            |                                                                                 Der Gewinn- oder Verlustwert, der als Teil der Abgangstransaktion für das Anlagenbuch berechnet wird.                                                                                 |
-
 

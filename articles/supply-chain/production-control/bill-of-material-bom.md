@@ -1,13 +1,13 @@
 ---
-title: "Stücklisten und Formeln"
-description: "Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind."
+title: Stücklisten und Formeln
+description: Dieser Artikel enthält Informationen zu Stücklisten (BOMs) und Formeln, die ein zentraler Teil der Definition der Produkte und Produktvarianten sind.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0833143722df5402a17e4f8f456a923792c478a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317107"
 ---
-
 # <a name="bills-of-materials-and-formulas"></a>Stücklisten und Formeln
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Wählen Sie den**Lieferung mit Bedarfsverursachung** Positionstyp aus, wenn Sie 
 Wählen Sie den Positionstyp **Händler** wenn für den Produktionsprozess ein Zulieferer zum Einsatz kommt und für diesen automatisch eine Unterproduktion oder eine Bestellung erstellt werden soll.  
 
 **Hinweis zu Fremdarbeitsdiensten in einer Stückliste:** Die Dienstleistung oder Arbeit, die der Zulieferer ausführt wird, muss als Dienstleistungsartikel erstellt werden, der im Bestand nachverfolgt wird. Sie müssen den Dienstleistungsartikel dem übergeordneten Artikel als Stücklistenposition zuordnen. Der Arbeitsplan muss einen Arbeitsgang enthalten, der der betrieblichen Ressource des Zulieferers zugewiesen ist.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Ändern von Zeilendefinitionszellen"
-description: "Dieser Artikel beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden."
+title: Ändern von Zeilendefinitionszellen
+description: Dieser Artikel beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323639"
 ---
-
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
 [!include [banner](../includes/banner.md)]
@@ -387,10 +386,10 @@ Sie können eine Zeile auf einen vorhandenen Buchcode einschränken. Die Spalten
 Einige Kontoführungssysteme unterstützen Konto- und Buchungsattribute in den Finanzdaten. Diese Attribute funktionieren wie virtuelle Kontosegmente und können zusätzliche Informationen zu Konto oder Buchung enthalten. Diese zusätzlichen Informationen könnten Kontokennungen, Chargenkennungen, Postleitzahlen oder andere Attribute sein. Wenn Ihr Kontoführungssystem Attribute unterstützt, können Sie Kontoattribute oder Buchungsattribute als Zeilenmodifizierer in der Zeilendefinition verwenden. Informationen über das Außerkraftsetzen von Zeileninformationen finden Sie im Bereich "Spaltendefinition außer Kraft setzen" weiter oben in diesem Artikel.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Zelle „Verknüpfung mit Finanzdimensionen“ angeben
-Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte, Sie können aber anstelle von oder zusätzlich zu Segment- oder Dimensionswerten auch Zellen in einem Microsoft Excel-Arbeitsblatt angeben. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Mit Finanzdimensionen verknüpfen**.
+Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte. Sie können aber anstelle von oder zusätzlich zu Segment- oder Dimensionswerten auch Zellen in einem Microsoft Excel-Arbeitsblatt angeben. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Mit Finanzdimensionen verknüpfen**.
 
 > [!NOTE]
-> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder } Um Informationen für eine Zeile anzugeben, die bereits in der Zeilendefinition ist, fügen Sie die Informationen in der Zelle **Mit Finanzdimensionen verknüpfen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
+> Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Wenn Sie Informationen für eine Zeile angeben möchten, die bereits in der Zeilendefinition enthalten ist, fügen Sie die Informationen in der Zelle **Verknüpfen mit Finanzdimensionen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
 
 | Ausgewählter Linktyp       | Beschreibung in der Linkspalte |
 |----------------------------------|----------------------------------------------------|
@@ -429,14 +428,14 @@ Wenn Sie einen natürlichen Segmentwert im Dialogfeld **Dimensionen** eingeben, 
 Sie können einen Bereich von Segment- oder Dimensionswerten angeben. Der Vorteil bei der Angabe eines Bereichs ist, dass Sie die Zeilendefinition nicht jedes Mal aktualisieren müssen, wenn ein neuer Segmentwert oder ein Dimensionswert den Finanzdaten hinzugefügt wird. Beispielsweise holt der Bereich **+Account=\[6100:6900\]** die Werte aus den Konten 6100 bis 6900 in den Zeilenbetrag. Wenn ein Bereich ein Platzhalterzeichen (?) umfasst, wertet der Berichtsdesigner den Bereich nicht auf einer Zeichen-pro-Zeichenbasis aus. Stattdessen werden die unteren und oberen Grenzen des Bereichs bestimmt, und dann werden die Endwerte und alle Werte dazwischen eingeschlossen.
 
 > [!NOTE]
-> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder } Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
+> Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Bereiche mit mehreren Segmenten oder Dimensionen
 
 Wenn Sie einen Bereich eingeben, indem Sie Kombinationen mehrerer Dimensionswerte verwenden, wird der Bereichsvergleich ..\\financial-dimensions\\dimension-by-dimension durchgeführt. Der Bereichsvergleich kann weder auf Basis von Zeichen-nach-Zeichen noch auf Teilesegmentbasis ausgeführt werden. Beispielsweise umfasst der Bereich **+Konto=\[5000:6000\], Abteilung=\[1000:2000\], Kostenstelle=\[00\]** nur die Konten, die mit jedem Segment übereinstimmen. In diesem Szenario müssen sich die erste Dimension im Bereich von 5000 bis 6000 befinden, muss die andere Dimension im Bereich von 1000 bis 2000 befinden, und die letzte Dimension muss 00 sein. Beispielsweise **+Konto=\[5100\], Abteilung=\[1100\], Kostencenter=\[01\]** ist nicht im Bericht enthalten, da das letzte Segment außerhalb des angegebenen Bereich befindet. Wenn ein Segmentwert Leerzeichen umfasst, schließen Sie diesen Wert in eckige Klammern ein (\[ \]). Folgende Werte sind für ein vier Zeichen langes Segment gültig: **\[ 234\], \[123 \], \[1 34\]**. Dimensionswerte sollen in eckige Klammern eingeschlossen werden (\[ \]), und der Berichtsdesigner fügt diese Klammern für Sie hinzu. Wann enthält ein Bereich mit mehreren Segmenten oder Dimensionen Platzhalterzeichen (? oder \*). Stattdessen werden die unteren und oberen Grenzen des Bereichs bestimmt, und dann werden die Endwerte und alle Werte dazwischen eingeschlossen. Bei einem großen Bereich, wie dem Gesamtbereich der Konten von 40000 bis 99999, sollten Sie ein gültiges Startkonto und Endkonto angeben, wann immer möglich.
 
 > [!NOTE] 
-> Berichts-Designer kann Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder } Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
+> Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Sie können nur dann ein kaufmännisches Und-Zeichen (&) hinzufügen, wenn Sie Zeilendefinitionen automatisch mithilfe des Dialogfelds **Zeilen aus Dimensionen einfügen** erstellen.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Addieren oder Subtrahieren von anderen Konten in einer Zeilendefinition
 Um die Geldbeträge in einem Konto zu den Geldbeträgen in einem anderen Konto zu addieren oder davon zu subtrahieren, können Sie das Pluszeichen (+) und das Minuszeichen (-) in der Zelle **Mit Finanzdimensionen verknüpfen** verwenden. Die folgende Tabelle zeigt die zulässigen Formate für Additions- und Subtraktionslinks zu Finanzdaten.
@@ -456,10 +455,10 @@ Um die Geldbeträge in einem Konto zu den Geldbeträgen in einem anderen Konto z
 | Subtrahieren Sie einen Bereich von Segmentwerten.                                                     | -Konto=\[1200:1205\]                                                                                       |
 | Subtrahieren Sie einen Bereich von Segmentwerten, die Platzhalterzeichen enthalten.                    | -Konto=\[120?:130?\]                                                                                       |
 
-Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld **Dimensionen** verwenden, um die korrekte Formatierung auf Ihre Finanzdatenverknüpfungen anzuwenden. Jeder der Werte kann ein Platzhalterzeichen einschließen (? oder \*). Allerdings kann der Berichts-Designer Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System nicht auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }.
+Zwar können Sie die Konten direkt ändern, Sie können aber auch das Dialogfeld **Dimensionen** verwenden, um die korrekte Formatierung auf Ihre Finanzdatenverknüpfungen anzuwenden. Jeder der Werte kann ein Platzhalterzeichen einschließen (? oder \*). Berichts-Designer kann jedoch keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }.
 
 > [!NOTE]
-> Um Werte zu subtrahieren, müssen diese Werte in Klammern stehen. Wenn Sie beispielsweise **450? - (4509)** eingeben, wird dies als **+Konto=\[4509\]-Konto=\[450?\]** angezeigt, und Sie weisen den Berichtsdesigner an, den Betrag für das Kontosegment 4509 vom Betrag für jedes Kontosegment zu subtrahieren, das mit 450 beginnt.
+> Zum Subtrahieren von Werten müssen Sie diese in Klammern setzen. Wenn Sie beispielsweise **450? - (4509)** eingeben, wird dies als **+Konto=\[4509\]-Konto=\[450?\]** angezeigt, und Sie weisen den Berichtsdesigner an, den Betrag für das Kontosegment 4509 vom Betrag für jedes Kontosegment zu subtrahieren, das mit 450 beginnt.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Addieren oder subtrahieren von Konten aus anderen Konten
 
@@ -533,4 +532,3 @@ Ein Dimensionswertsatz ist eine benannte Gruppe von Dimensionswerten. Ein Dimens
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-

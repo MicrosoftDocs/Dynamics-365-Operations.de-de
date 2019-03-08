@@ -1,13 +1,13 @@
 ---
 title: Finanzinformationen
-description: "„Finanzinformationen” verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen."
+description: "\"Finanzinformationen\" verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen."
 author: kweekley
 manager: AnnBe
 ms.date: 08/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,20 +16,19 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 2c261d2aea66b578bc976a66b6184384f0a5bf5d
-ms.contentlocale: de-de
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308850"
 ---
-
 # <a name="financial-insights"></a>Finanzinformationen
 
 [!include [banner](../includes/banner.md)]
 
-**Finanzinformationen** verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen. Power BI ist in Microsoft Dynamics 365 for Finance and Operations eingebettet. Der Fokus von **Finanzinformationen** liegt auf der analytischen Berichterstellung. Personen in einer gesamten Organisation können anzeigen, erforschen, verstehen und handeln. 
+**Finanzinformationen** verwendet Microsoft Power BI, um Finanzleistungskennzahlen (KPIs), Diagramme und Finanzaufstellungen zusammenzuführen. Power BI ist in Microsoft Dynamics 365 Finance and Operations eingebettet. Der Fokus von **Finanzinformationen** liegt auf der analytischen Berichterstellung. Personen in einer gesamten Organisation können anzeigen, erforschen, verstehen und handeln. 
 
 **Finanzinformationen** kombiniert Daten aus dem Hauptbuch und von untergeordneten Sachkonten, um ein vollständigeres Bild der finanziellen Lage einer Organisation zu vermitteln.
 
@@ -87,7 +86,7 @@ Aktuell können die Daten in eingebetteten Power BI-Berichten nicht auf juristis
 |-----------------------------------------|-------|------------|
 | Arbeitsbereich der Übersicht (Leiter der Finanzabteilung) anzeigen             | Leiter Finanzabteilung | Diese Berechtigungen bieten Zugriff auf Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
 | Finanzeinblicke des derzeitigen Unternehmens anzeigen | <ul><li>Sachbearbeiter Buchhaltung</li><li>Leiter Buchhaltung</li><li>Supervisor Buchhaltung</li><li>Wirtschaftsprüfer</li><li>Budget-Manager</li><li>Leitender Geschäftsführer</li><li>Leiter Finanzabteilung</li><li>Financial Controller</li></ul> | Diese Berechtigungen bieten Zugriff auf Finanzinformationen. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können nicht andere juristische Personen hinzufügen. |
-| Finanzeinblicke unternehmensübergreifend anzeigen   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 sind diese Berechtigungen keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
+| Finanzeinblicke unternehmensübergreifend anzeigen   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, sind diese Berechtigungen keiner Rolle zugewiesen. In der nächsten Version werden diese Berechtigungen der Rolle „Leiter Finanzabteilung” zugewiesen werden. | Diese Berechtigungen bieten Zugriff auf das Menüelement für den Arbeitsbereich CFO-Überblick. Standardmäßig wird das aktive Unternehmen als Filter verwendet. Sie können jedoch alle juristischen Personen hinzufügen, unabhängig davon, ob der Benutzer Zugriff auf die anderen juristischen Personen hat. |
 
 
 ## <a name="financial-reporting-vs-finanical-insights"></a>Financial reporting vs. Finanical insights
@@ -125,8 +124,8 @@ Zudem sind zur Benutzerschnittstelle der ursprüngliche Arbeitsbereich **CFO-Üb
 ## <a name="edit-visuals"></a>Bearbeiten visueller Elemente
 In der ersten Version von **Finanzinformationen** können keine visuellen Elemente bearbeitet werden. In künftigen Versionen können Benutzer, die über die entsprechende Sicherheit verfügen, neue visuelle Elemente erstellen, vorhandene visuelle Elemente kopieren und visuelle Elemente bearbeiten. Obwohl die .pbix-Dateien, die die Berichte enthalten, als Ressourcen verfügbar sind, wird davon abgeraten, dass Sie die Standardberichte bearbeiten. Zusätzliche Änderungen werden am Datenmodell, Standardberichten und benutzerdefinierten visuellen Elementen zur Finanzaufstellung, die zum Erstellen der Finanzaufstellungen verwendet werden, vorgenommen. Um sich daher neue Funktionen und Änderungen am Datenmodell in der nächsten Version zunutze zu machen, müssen Sie sämtliche Änderungen erneut vornehmen, die Sie in Standardberichten mithilfe von Microsoft Power BI Desktop vorgenommen haben.
 
-## <a name="filtering"></a>Filterung
-Benutzer können den Bericht filtern, indem sie den Bereich **Filter** links verwenden. Dieser Bereich ist der gleiche Bereich, der durch Power BI Desktop verfügbar ist. Es gibt verschiedene Ebenen der Filterung, von denen einige möglicherweise nicht verfügbar sind, abhängig davon, was Sie auf einer Seite (Registerkarte) ausgewählt haben oder ob Sie die Drillthroughfunktionen verwenden:
+## <a name="filtering"></a>Filtern
+Benutzer können den Bericht filtern, indem sie den Bereich **Filter** links verwenden. Dieser Bereich ist der gleiche Bereich, der über Power BI Desktop verfügbar ist. Es gibt verschiedene Ebenen der Filterung, von denen einige möglicherweise nicht verfügbar sind, abhängig davon, was Sie auf einer Seite (Registerkarte) ausgewählt haben oder ob Sie die Drillthroughfunktionen verwenden:
 
 - **Filter auf Berichtsebene** – Diese Filter werden auf alle visuellen Elemente auf allen Seiten (Registerkarten) angewendet.
 - **Filter auf Seitenebene** – Diese Filter werden auf alle visuellen Elemente auf der aktiven Registerkarte angewendet. Diese Filter werden zusätzlich zu den Filtern auf Berichtsebene angewendet.
@@ -174,7 +173,7 @@ Folgende Dimensionen werden in den Standardberichten verwendet. Keine dieser Dim
 
 ## <a name="drill-on-data"></a>Drillvorgang für Daten
 
-Verschiedene Ebenen von Drillvorgängen sind durch Power BI verfügbar. Jede Ebene hat einen anderen Namen und andere Funktionen. Sie können auch Drillvorgänge für Zeilen und Spalten vornehmen. In diesem Abschnitt werden die verschiedenen Optionen behandelt, indem die Finanzaufstellung **Zwischenbilanz** als Beispiel verwendet wird und gezeigt wird, wie Sie Drillvorgänge für Zeilen durchführen können. Die gleiche Funktionalität ist für Spalten vorhanden. Sie müssen einfach die Einstellung **Drillvorgang für** ändern.
+Verschiedene Ebenen von Drillvorgängen sind über Power BI verfügbar. Jede Ebene hat einen anderen Namen und andere Funktionen. Sie können auch Drillvorgänge für Zeilen und Spalten vornehmen. In diesem Abschnitt werden die verschiedenen Optionen behandelt, indem die Finanzaufstellung **Zwischenbilanz** als Beispiel verwendet wird und gezeigt wird, wie Sie Drillvorgänge für Zeilen durchführen können. Die gleiche Funktionalität ist für Spalten vorhanden. Sie müssen einfach die Einstellung **Drillvorgang für** ändern.
 
 In der folgenden Abbildung ist die Aufstellung **Zwischenbilanz** auf die oberste Ebene der Zeilenhierarchie reduziert, nämlich dem Hauptkontotyp.
 
@@ -250,4 +249,3 @@ Die Informationen in den folgenden Ressourcen sind nicht erforderlich, um die ei
 - <https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/>
 
 - <https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces>
-

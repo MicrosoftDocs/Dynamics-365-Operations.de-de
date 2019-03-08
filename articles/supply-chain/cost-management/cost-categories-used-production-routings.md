@@ -1,13 +1,13 @@
 ---
-title: "Kostenkategorien in Produktionsarbeitsplänen"
-description: "Dieser Artikel bietet Informationen über Kostenkategorien, die für Produktionsumgebungen gelten, die Arbeitspläne verwenden."
+title: Kostenkategorien in Produktionsarbeitsplänen
+description: Dieser Artikel bietet Informationen über Kostenkategorien, die für Produktionsumgebungen gelten, die Arbeitspläne verwenden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjCategory, RouteCostCategoryPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 90177a6b8dd277ba1180073c9cf416f857c5d730
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 53e038183a10b8732a9a5e0f25aac440c224400e
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315796"
 ---
-
 # <a name="cost-categories-used-in-production-routing"></a>Kostenkategorien in Produktionsarbeitsplänen
 
 [!include [banner](../includes/banner.md)]
@@ -54,7 +53,6 @@ Der Kostendatensatz für eine Kostenkategorie kann sich auf einen bestimmten Sta
 Von einem Arbeitsgang des Arbeitsplan werden in der Regel die Kostenkategorien, die dem Arbeitsgang für betriebliche Ressourcen oder dem Masterarbeitsgang zugewiesen sind, übernommen. Bei der Erstellung eines Produktionsauftrags wird die ausgewählte Arbeitsplanversion durch die Arbeitsgänge des Arbeitsplans innerhalb des Produktionsarbeitsplans widergespiegelt. Die Kostenkategorien, die den Arbeitsgängen im Produktionsarbeitsplan zugewiesen sind, können außer Kraft gesetzt werden. 
 
 Bestimmte Arten von Produktionsarbeiten beziehen sich auch auf Vorkalkulationen und Berichte in Bezug auf den Projektzeitaufwand. In diesem Fall ist eine Kostenkategorie für die Produktion und die Projektzwecke erforderlich. Sie müssen zusätzlich projektbezogene Informationen definieren, wenn eine Kostenkategorie für die Verwendung in Projekten gekennzeichnet ist.
-
 
 
 

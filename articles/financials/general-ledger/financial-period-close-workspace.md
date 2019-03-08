@@ -1,13 +1,13 @@
 ---
 title: Finanzperiodenabschluss-Arbeitsbereich
-description: "Dieser Artikel enthält eine Übersicht über den Finanzperiodenabschlussarbeitsbereiche und der zugeordneten Konfiguration."
+description: Dieser Artikel enthält eine Übersicht über den Finanzperiodenabschlussarbeitsbereiche und der zugeordneten Konfiguration.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerPeriodCloseProjectWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9c3c7f00d0a0e4379547edc5199f4a9a6727f3c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326905"
 ---
-
 # <a name="financial-period-close-workspace"></a>Finanzperiodenabschluss-Arbeitsbereich
 
 [!include [banner](../includes/banner.md)]
@@ -60,10 +59,10 @@ Sie können Dateien, Hinweise, Bilder und URLs zu einer Aufgabe zuordnen, indem 
 Die Option **Aufgabe abgeschlossen** muss manuell aktiviert werden, nachdem die Aufgabe abgeschlossen ist. Wenn eine Aufgabe markiert wird, die als abgeschlossen markiert wird, wird das Feld **Datum abgeschlossen** automatisch mit dem aktuellen Datum und der Systemzeit aktualisiert. Abhängigkeitsindikatoren werden ebenfalls bei Bedarf aktualisiert.
 
 ## <a name="all-financial-period-close-tasks-list-page"></a>Listenseite für alle Aufgaben für den Finanzperiodenabschluss
-Sie können alle Aufgaben der laufenden und der vorherigen Periode auf der Seite **Alle Aufgaben der Finanzperiode schließe**, anzeigen. Diese Listenseite eignet zur historischen Analyse Ihres Abschlussprozess, da sie die Informationen zum geplanten Fälligkeitsdatum, dem tatsächlichen Abschlussdatum und die Person beinhaltet, die die Aufgabe abgeschlossen hat. Nun können Sie die Informationen auf dieser Listenseite in Microsoft Excel zum Melden und Überwachen der Zwecke einfacher exportieren.
+Sie können alle Aufgaben der laufenden und der vorherigen Periode auf der Seite **Alle Aufgaben der Finanzperiode schließe**, anzeigen. Diese Listenseite eignet zur historischen Analyse Ihres Abschlussprozess, da sie die Informationen zum geplanten Fälligkeitsdatum, dem tatsächlichen Abschlussdatum und die Person beinhaltet, die die Aufgabe abgeschlossen hat. Nun können Sie die Informationen auf dieser Listenseite zum Melden und Überwachen der Zwecke einfach nach Microsoft Excel exportieren.
 
 ## <a name="financial-period-close-configuration-page"></a>Seite der Finanzperiodenabschluss-Konfiguration
-Bevor Sie den Arbeitsbereich **Finanzperiodenabschluss** verwenden können, müssen Sie den Prozess in Microsoft Dynamics 365 for Finance and Operations konfigurieren, indem Sie die Seite **Finanzperiodenkonfiguration abschließen** verwenden. (Klicken Sie auf **Hauptbuch** &gt; **Periode schließen** &gt; **Finanzperiodenkonfiguration abschließe**.)
+Bevor Sie den Arbeitsbereich **Finanzperiodenabschluss** verwenden können, müssen Sie den Prozess in Microsoft Dynamics 365 for Finance and Operations mithilfe der Seite **Finanzperiodenabschlusskonfiguration** konfigurieren. (Klicken Sie auf **Hauptbuch** &gt; **Periode schließen** &gt; **Finanzperiodenkonfiguration abschließe**.)
 
 ### <a name="resources"></a>Ressourcen
 
@@ -88,7 +87,7 @@ Sie verwenden Sie eine Vorlage für den Finanzabschluss, um Aufgaben zu definier
 
 Sie können eine Aufgabe in der Vorlage einem oder mehreren Unternehmen, in denen diese Aufgabe gilt. Wenn eine andere Person zugewiesen wird, um diesen Arbeitseinsatz in jedem Unternehmen ausführen, finden Sie es möglicherweise hilfreich, mehrere Aufgaben für den gleichen Arbeitseinsatz zu erstellen. Erstellen Sie eine Aufgabe für jedes Unternehmen. 
 
-Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe den Währungsbewertungsprozess für Kreditoren ausführen, der mit der Seite der zugeordneten **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Finance and Operations verknüpft werden kann. Sie können auch eine externe URL verknüpfen. 
+Die Menüoptiib **Aufgabenlink** wird dem Aufgabenarbeitseinsatz zugeordnet und kann verwendet werden, um in direktem Bezug zur zugeordneten Seite über den Aufgabenlink im Arbeitsbereich zu wechseln. Beispielsweise kann eine Abschlussaufgabe, die den Währungsbewertungsprozess für Kreditorenkonten ausführen soll, mit der zugeordneten Seite **Neubewertung der Fremdwährung** in Microsoft Dynamics 365 for Finance and Operations verknüpft werden. Sie können auch eine externe URL verknüpfen. 
 
 > [!TIP]
 > Wenn Sie einen bestimmten Management Reporter-Bericht mit einer Finanzperiodenabschlussaufgabe verknüpfen möchten, können Sie die Berichts-URL verwenden. Um auf die Berichts-URL zuzugreifen, öffnen Sie den Bericht im Berichts-Designer, und klicken Sie auf  **Datei** &gt; **Bericht anzeigen** , um den Bericht in einem Webbrowser zu öffnen. Sie können die URL dann in die Adressleiste des Browsers kopieren und in das Feld **Aufgabenlink**-**URL** einfügen. 
@@ -106,7 +105,6 @@ Weisen Sie den Kalender für den Abschlusszeitplan zu, um die Arbeitstage anzuge
 Sie müssen die Unternehmen auch festlegen, die der Planung zugeordnet werden. Wenn Vorlagen mehreren Unternehmen zugewiesen sind, werden separate Aufgaben für jedes Unternehmen erstellt, das im abschließenden Zeitplan ist und der Vorlagenaufgabe zugewiesen ist. 
 
 Nachdem ein Abschlusskonto-Zeitplan abgeschlossen ist, wählen Sie die Option für **abgeschlossen**. Der Aufgabenverlauf ist auf der Listenseite **Alle Finanzperioden abschließen**  verfügbarm aber der Abschlusszeitplan wird vom Arbeitsbereich entfernt. Nachdem ein Abschlusszeitplan als  **Geschlossen** markiert wurde, sind Sie nicht mehr in der Lage, Aufgaben hinzuzufügen, zu bearbeiten oder zu entfernen.
-
 
 
 

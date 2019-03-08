@@ -1,36 +1,35 @@
 ---
 title: Personalbeschaffung mittels LinkedIn Recruiter
-description: "Dieses Thema enthält Informationen zur Verwendung von Machine Learning, um Stellen- und Kandidaten-Empfehlungen zu erhalten."
+description: Dieses Thema enthält Informationen zur Verwendung von Machine Learning, um Stellen- und Kandidaten-Empfehlungen zu erhalten.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: 9bb323728923ff3b09ff0bfba3849f3c5d84eb34
-ms.contentlocale: de-de
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304475"
 ---
-
 # <a name="sourcing-with-linkedin-recruiter"></a>Personalbeschaffung mittels LinkedIn Recruiter
 [!include[banner](../includes/banner.md)]
 
-LinkedIn ist die weltgrößte Talentdatenbank und häufig das Hauptsystem, dass Personalbeschaffer verwenden, um neue Kandidaten zu suchen und mit ihnen zu kommunizieren, um zu besetzende Stellen zu füllen. LinkedIn Recruiter-Interaktion mit Dynamics 365 for Talent: Attract vereinfacht es Benutzern anzustellen und die Daten zwischen zwei Systemen synchron zu halten.
+LinkedIn ist die weltgrößte Talentdatenbank und häufig das Hauptsystem, dass Personalbeschaffer verwenden, um neue Kandidaten zu suchen und mit ihnen zu kommunizieren, um zu besetzende Stellen zu füllen. LinkedIn Recruiter-Interaktion mit Dynamics 365 for Talent: Attract vereinfacht es Benutzern, Mitarbeiter einzustellen, und die Daten zwischen zwei Systemen synchron zu halten.
 
 > [!NOTE]
 > Sie benötigen Lizenzen für umfassende Add-On für Neueinstellungen und LinkedIn Recruiter, um LinkedIn Recruiter-Integration mit Attract verwenden zu können.
@@ -127,9 +126,9 @@ Mit LinkedIn Recruiter können Sie nachverfolgen, ob sich ein Kandidat auf ander
 
 ### <a name="inmail-history"></a>InMail-Verlauf
 
-Der LinkedIns InMail-Verlauf ist bei Zugriff auf Vertragsebene bei LinkedIn Recruiter verfügbar. Wenn er aktiviert ist, können Sie Ihren gesamten InMail-Verlauf mit dem Kandidaten anzeigen. Sie können außerdem sehen, wer sonst aus Ihrer Organisation mit dem Kandidaten per InMail korrespondiert hat. Allerdings werden diese Nachrichten nicht angezeigt.
+Der LinkedIn InMail-Verlauf ist bei Zugriff auf Vertragsebene bei LinkedIn Recruiter verfügbar. Wenn er aktiviert ist, können Sie Ihren gesamten InMail-Verlauf mit dem Kandidaten anzeigen. Sie können außerdem sehen, wer sonst aus Ihrer Organisation mit dem Kandidaten per InMail korrespondiert hat. Allerdings werden diese Nachrichten nicht angezeigt.
 
-Um den InMail-Verlauf anzuzeigen, navigieren Sie zum Profil des Kandidaten, zur Registerkarte **LinkedIn** und scrollen ans Ende der Seite, um den Verlauf anzuzeigen. Sie können InMail-Verlauf anzeigen, wenn Sie eine Diskussion mit dem Kandidaten hatten. Die Nachrichten aus InMail werden alle paar Stunden mit Attract synchronisiert.
+Um den InMail-Verlauf anzuzeigen, navigieren Sie zum Profil des Kandidaten, zur Registerkarte **LinkedIn**, und scrollen Sie ans Ende der Seite, um den Verlauf anzuzeigen. Sie können einen InMail-Verlauf anzeigen, wenn Sie eine Diskussion mit dem Kandidaten hatten. Die Nachrichten aus InMail werden alle paar Stunden mit Attract synchronisiert.
 
 ### <a name="notes-history"></a>Hinweisverlauf 
 
@@ -142,4 +141,3 @@ Um den Hinweis-Verlauf anzuzeigen, navigieren Sie zum Profil des Kandidaten, zur
 Das InMail-Kurzprofil ist bei Zugriff auf Vertragsebene bei LinkedIn Recruiter verfügbar. Wenn Kandidaten der Freigabe ihres LinkedIn-Profilen für einen Benutzer in Ihrem Unternehmen zustimmen, können Sie die Kandidaten in Attract verfolgen und für jeden Kandidaten wird ein neuer Kandidatendatensatz erstellt. Sie können die E-Mail-Adresse des Kandidaten anzeigen, wenn der Kandidat bereits im System mit einer E-Mail-Adresse vorhanden ist oder festgelegt hat, dass die Adresse mit dem Personalbeschaffungsmitarbeiter geteilt werden kann.
 
 Um die Kandidatenliste anzuzeigen, navigieren Sie zu **Talentpools**, um einen vom System erstellten LinkedIn-Talentpool anzuzeigen. Dieser Talentpool enthält die Liste der Kandidaten und deren Kurzprofile, wie Sie von LinkedIn empfangen wurden. Es werden der Vorname und Nachname des Kandidaten angezeigt. Die E-Mail-ID des Kandidaten wird angezeigt, wenn sich der Kandidat für die Freigabe seiner E-Mail-Adresse entschieden hat.
-

@@ -1,13 +1,13 @@
 ---
-title: "Arbeitsauslastungskapazität planen"
-description: "In diesem Thema wird erläutert, wie Sie die Auslastung der Mitarbeiter in einem Lager oder für ein ganzes Lager einrichten und einplanen."
+title: Arbeitsauslastungskapazität planen
+description: In diesem Thema wird erläutert, wie Sie die Auslastung der Mitarbeiter in einem Lager oder für ein ganzes Lager einrichten und einplanen.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: josaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 1b1334dcba7d12f2da301f70e21a08fceb88e2b4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317291"
 ---
-
 # <a name="schedule-workload-capacity"></a>Arbeitsauslastungskapazität planen
 
 [!include[banner](../includes/banner.md)]
@@ -81,4 +80,3 @@ Wenn diese Informationen nicht korrekt angegeben sind, erhalten Sie eine Meldung
 3. Wählen Sie im Feld **Auftragsart** die Option **Geplant und bestätigt**, **Geplant** oder **Bestätigt**, um die Art der zu projizierenden Aufträge auf dem Bericht anzugeben.
 4. Wählen Sie im Feld **Auslastungstyp** eine Auslastungstyp aus, um festzulegen, ob die Auslastungskapazität für Volumen oder Gewicht hochgerechnet werden soll.
 5. Wählen Sie im Feld **Arbeitslastkapazität** eine Auslastungskapazitätseinstellung aus.
-

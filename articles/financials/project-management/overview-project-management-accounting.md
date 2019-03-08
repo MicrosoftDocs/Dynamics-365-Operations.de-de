@@ -1,13 +1,13 @@
 ---
 title: Projektverwaltung und -verrechnung
-description: "Die Projektverwaltungs- und Buchhaltungsfunktionen können in mehreren Branchen verwendet werden, um eine Dienstleistung anzubieten, ein Produkt zu erzeugen oder ein Ergebnis zu erreichen."
+description: Die Projektverwaltungs- und Buchhaltungsfunktionen können in mehreren Branchen verwendet werden, um eine Dienstleistung anzubieten, ein Produkt zu erzeugen oder ein Ergebnis zu erreichen.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c21587499a68143d403760ad32bea65948d7fbc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9747ba144d56c9410846769e5465372c89ea111
-ms.openlocfilehash: e927e45511c5e6c232457a76b2d1fab160fe0f5a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311334"
 ---
-
 # <a name="project-management-and-accounting"></a>Projektverwaltung und -verrechnung
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Die Projektverwaltungs- und Buchhaltungsfunktionen kann in mehreren Branchen, wi
 
 [![Projekte in Branchen](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch dafür verwendet wird, diese Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
+In einem Callcenter kann ein Ticket verwendet werden, um die Gruppe von Aktivitäten zu beschreiben, die erforderlich sind, um einen Anruf aufzulösen. Beratungsfirmen. z. B. Management oder technische Beratungsunternehmen oder Werbeagenturen, finden ihre Aktivitäten als Projekte anzeigen. Im Marketing stellt eine Kampagne einen Satz Arbeit dar, der geliefert werden muss. In der projektbasierten Fertigung besteht ein Produktionsauftrag aus verschiedene Arbeit zu, die ausgeführt werden muss, um mehrere fertige Artikel zu erzeugen. Welche Bezeichnung auch verwendet wird, die Projekte beinhalten Ressourcen, Zeitpläne und Kosten. Die Projektverwaltungs- und Buchhaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations können bei der Planung, Durchführung und Analyse dieser Projekte helfen.
 
 ## <a name="project-phases"></a>Projektphasen
 Obwohl das folgenden Ablaufdiagramm für externe Projekte oder Projekte, die für einen oder mehrere Kunden durchgeführt werden gedacht ist, finden die Funktionen auch auf interne kostenbasierte Projekte Anwendung. 
@@ -129,7 +128,7 @@ Nachfolgend sind einige der Methoden zur Nutzung der Einsatzplanungsfunktionen b
 -   Ändern Sie die Ressourcenzuweisungen für unterschiedliche Zeiteinheiten, z. B. Tag, Woche oder Monat, um die Arbeitskraftauslastung zu optimieren.
 
 ## <a name="execute-the-project"></a>Projekte ausführen
-Während der Projektausführung zeichnen Teammitglieder oder Manager die Arbeit und Aufwendungen, die verursacht werden über Arbeitszeitnachweise, Spesenabrechnungen und andere Dokumente auf. Projektmanager haben Tools, mit denen sie den Verbrauch von budgetierten Beträgen für das Projekt überwachen können. Projektmanager können Material für Projekte bestellen, entnehmen oder beschaffen, indem sie Bestellungen und andere Dokumente verwenden. Rechnungen werden vorbereitet und genehmigt, damit die laufende Arbeit den Kunden berechnet werden kann. Schließlich wird der Umsatzerlös während dieses Vorgangs realisiert, um die Finanzdaten der Organisation zu aktualisieren.
+Während der Projektausführung zeichnen Teammitglieder oder Manager die Arbeit und Aufwendungen, die verursacht werden über Arbeitszeitnachweise, Spesenabrechnungen und andere Dokumente auf. Projektmanager haben Tools, mit denen sie den Verbrauch von budgetierten Beträgen für das Projekt überwachen können. Projektmanager können Material für Projekte bestellen, entnehmen oder beschaffen, indem sie Bestellungen und andere Dokumente verwenden. Rechnungen werden vorbereitet und genehmigt, damit die laufende Arbeit den Kunden berechnet werden kann. Schließlich wird der Umsatzerlös während dieses Vorgangs realisiert, um die Finanzdaten der Organisation zu aktualisieren.
 
 ### <a name="manage-work-breakdown-structures"></a>Verwalten von Projektstrukturplänen
 
@@ -206,7 +205,7 @@ Sie können Artikeln aus dem Lagerbestand des Unternehmens für den Verbrauch in
 
 Die Art und Weise, wie Sie Artikel bestellen, hängt davon ab, wo Sie die Artikel bestellen:
 
--   Zum Bestellen von Artikeln aus dem Lagerbestand des Unternehmens muss die Bestellung als Artikelbedarf eingegeben werden. Bei Verwendung des Formulars **Artikelanforderungen** kann dieses so eingerichtet werden, dass Artikel als Teillieferungen eingehen. Dies bedeutet, dass Sie den Verbrauch einer Menge der Artikel verschieben können, bis die Artikel benötigt werden.
+-   Zum Bestellen von Artikeln aus dem Lagerbestand des Unternehmens muss die Bestellung als Artikelbedarf eingegeben werden. Bei Verwendung des Formulars **Artikelanforderungen** kann dieses so eingerichtet werden, dass Artikel als Teillieferungen eingehen.Dies bedeutet, dass Sie den Verbrauch einer Menge der Artikel verschieben können, bis die Artikel benötigt werden.
 -   Zum Bestellen von Artikeln von einem externen Kreditor muss der Auftrag als Bestellung auf der Seite **Bestellung** erstellt werden.
 
 > [!NOTE] 
@@ -233,7 +232,7 @@ Informationen zum Verarbeiten von Projektrechnungen finden Sie unter [Projektrec
 
 ### <a name="calculate-the-cost-to-complete-a-project"></a>Berechnen der Fertigstellungskosten
 
-Beim Erstellen einer Vorkalkulation können Sie festlegen, wie die Fertigstellungskosten des Projekts berechnet werden sollen. Wählen Sie eine Methode im Feld **Fertigstellungskosten-Methode** auf der Seite **Vorkalkulation erstellen** aus. Die Methode, die Sie auswählen, wird einzeln auf jeder Kostenposition in der Vorkalkulation angewendet. Während eine Position den **Erstellt**-Status hat, können Sie die Methode ändern, die auf der Seite **Vorkalkulation** angewendet wird. 
+Beim Erstellen einer Vorkalkulation können Sie festlegen, wie die Fertigstellungskosten des Projekts berechnet werden sollen. Wählen Sie eine Methode im Feld **Fertigstellungskosten-Methode** auf der Seite **Vorkalkulation erstellen** aus. Die Methode, die Sie auswählen, wird einzeln auf jeder Kostenposition in der Vorkalkulation angewendet. Während eine Position den **Erstellt**-Status hat, können Sie die Methode ändern, die auf der Seite **Vorkalkulation** angewendet wird. 
 
 In der folgenden Tabelle werden die Methoden zum Berechnen der Kosten für den Abschluss eines Projektes beschrieben.
 
@@ -301,7 +300,7 @@ Auf Grundlage der Einstellungen können Sie den Zufluss flüssiger Mittel für e
 -   **Projektdatum:** 5. März 2012.
 -   **Rechnungsdatum:** 31. März 2012. Dieses Datum wird basierend auf der Rechnungshäufigkeit bestimmt. In diesem Beispiel legen die Rechnungshäufigkeit auf den aktuellen Monat fest. Dies bedeutet, dass alle Buchungen, die im März gebucht werden, am letzten Tag des Monats fakturiert werden.
 -   **Fälligkeitsdatum**: Am 14. April 2012. Dieses Datum wird durch die Zahlungsbedingungen bestimmt die Sie für dieses Projekt ausgewählt haben. Sie haben z. B. eine Zahlungsfrist von 14 Tagen ausgewählt. Daher werden 14 Tage zum Rechnungsdatum hinzugefügt, um zu einem Fälligkeitsdatum vom 14. April 2012 zu kommen.
--   **Erwartetes Datum für Verkaufszahlung:** Am 27. April 2012. Dieses Datum wird berechnet, indem die Anzahl der Tage im Feld **Allgemeine Puffertage** auf der Seite **Projektverwaltungs- und Buchhaltungsparameter** zur Anzahl der Tage im **Individuelle Karenztage**-Feld auf der Seite **Projektverträge** und dann die Summe der Anzahl von Tagen im **Fälligkeitsdatum** Feld hinzufügt wird. In vorliegenden Beispiel haben Sie **3** im Feld **Allgemeine Puffertage** und **10** im Feld **Individuelle Karenztage** eingegeben. Daher werden 13 Tage zum Fälligkeitsdatum hinzugefügt, um zu einem erwarteten Datum für die Verkaufszahlung am 27. April 2012 zu kommen.
+-   **Erwartetes Datum für Verkaufszahlung:** Am 27. April 2012. Dieses Datum wird berechnet, indem die Anzahl der Tage im Feld **Allgemeine Puffertage** auf der **Projektverwaltungs- und Buchhaltungsparameter** Seite zur Anzahl der Tage im **Individuelle Karenztage**-Feld auf der Seite **Projektverträge** und dann die Summe der Anzahl von Tagen im Feld **Fälligkeitsdatum** hinzufügt wird. In vorliegenden Beispiel haben Sie **3** im Feld **Allgemeine Puffertage** und **10** im Feld **Individuelle Karenztage** eingegeben. Daher werden 13 Tage zum Fälligkeitsdatum hinzugefügt, um zu einem erwarteten Datum für die Verkaufszahlung am 27. April 2012 zu kommen.
 
 Die allgemeinen Puffertage können entweder die einzelnen Puffertage ersetzen oder zu den einzelnen Puffertagen addiert werden:
 
@@ -372,7 +371,7 @@ Wenn **Restbudget** als die Kostenkontrollmethode auf der Seite **Projektverwalt
 -   **Restbudget** – Der Betrag des ursprünglich budgetierten Betrags, der für die ausgewählte Kostenposition weiterhin verfügbar ist. Der verbleibende Budgetbetrag ist auf der Seite **Hauptbuch - Vorschau** berechnet.
 -   **Gesamtkosten** – Die Summe der Istkosten, zugesagten Kosten und des verbleibenden Budgets.
 
-Auf der Seite **Kostensteuerung** der Registerkarte **Abweichung** kann der Vergleich der gesamten voraussichtlichen Kosten mit dem ursprünglichen Budget angezeigt werden. Dieser Vergleich zeigt sämtliche Unterschiede zwischen diesen Beträgen an. Daher können Sie ermitteln, wo die Daten nicht übereinstimmen. Die abweichenden Beträge werden folgendermaßen berechnet:
+Auf der Seite **Kostensteuerung** der Registerkarte **Abweichung** kann der Vergleich der gesamten voraussichtlichen Kosten mit dem ursprünglichen Budget angezeigt werden. Dieser Vergleich zeigt sämtliche Unterschiede zwischen diesen Beträgen an. Daher können Sie ermitteln, wo die Daten nicht übereinstimmen. Die abweichenden Beträge werden folgendermaßen berechnet:
 
 -   **Ursprüngliches Budget** – Der Betrag, der ursprünglich für die ausgewählte Kostenposition budgetiert wurde. Das ursprüngliche Budget ist auf der Seite **Hauptbuch - Vorschau** berechnet.
 -   **Gesamtkosten** – Die Summe aus Istkosten, zugesagten Kosten und dem verbleibenden Budget, wie auf der Registerkarte **Allgemein** angegeben.
@@ -419,7 +418,7 @@ Auf der Seite **Auslastung/Stunde** können Sie zusammen mit dem allgemeinen Nut
 
 -   **Nicht einbezogene Stunden** - Nicht enthaltene Stunden werden nicht in die Stundenauslastungsrate einbezogen.
 -   **Einbezogene Stunden** – Einbezogene Stunden werden durch Addieren der Auslastungs- und Belastungsstunden berechnet. Diese Stunden sind in den Nutzungssatz einbezogen.
--   **Nicht berechenbare Stunden** - Wenn Sie einen berechenbaren Satz berechnen, sind diese Stunden nicht mit fakturierbaren Stunden identisch. Wenn Sie einen Effizienzrate berechnen, sind diese Stunden nicht mit produktiven Stunden identisch.
+-   **Nicht berechenbare Stunden** - Wenn Sie einen berechenbaren Satz berechnen, sind diese Stunden nicht mit fakturierbaren Stunden identisch. Wenn Sie einen Effizienzrate berechnen, sind diese Stunden nicht mit produktiven Stunden identisch.
 -   **Berechenbare Stunden** - Wenn Sie einen berechenbaren Satz berechnen, sind diese Stunden mit fakturierbaren Stunden identisch. Wenn Sie einen Effizienzrate berechnen, sind diese Stunden mit produktiven Stunden identisch.
 
 Wenn Sie den Nutzungssatz für eine Arbeitskraft berechnen, können Sie Normstunden oder einbezogene Stunden verwenden. Wenn Sie einbezogene Stunden verwenden, müssen Sie sicherstellen, dass Arbeitskräfte die gesamte Arbeitszeit für die Arbeitszeitnachweisperioden erfassen, da die Berechnung als Prozentsatz der Stunden angegeben wird, die erfasst wurden. Wenn Sie die Stundenauslastungsrate für ein Projekt, einen Projektvertrag, einen Debitorendatensatz oder eine Kategorie berechnen, müssen Sie einbezogene Stunden für die Berechnung verwenden.
@@ -441,4 +440,3 @@ Nachdem der Auszug berechnet ist, können folgende Informationen auf den verschi
 -   **Verbrauch** – Informationen zum Verbrauch für Stunden, Artikel, Ausgaben und Lohnabrechnungsbuchungen.
 -   **Rechnung** – Informationen zu Rechnungen und Akontofakturierung.
 -   **Stundensatz** – Die Stundensätze für die in GuV-Konten gebuchten Stunden.
-

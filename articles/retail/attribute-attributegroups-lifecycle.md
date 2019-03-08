@@ -1,37 +1,36 @@
 ---
 title: Attribute und Attributsgruppen
-description: "In diesem Thema wird beschrieben, wie Sie Attribute verwendet, um ein Produkt und dessen Eigenschaften über benutzerdefinierte Felder zu beschreiben."
+description: In diesem Thema wird beschrieben, wie Sie Attribute verwendet, um ein Produkt und dessen Eigenschaften über benutzerdefinierte Felder zu beschreiben.
 author: ashishmsft
 manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 76b78a898a619f1bc7faa4749e5380a0ccfef527
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326238"
 ---
-
 # <a name="attributes-and-attribute-groups"></a>Attribute und Attributsgruppen
 
 [!include [banner](includes/banner.md)]
 
-*Attribute* enthalten eine weitere Möglichkeit, ein Produkt und dessen Eigenschaften nach benutzerdefinierte Felder (wie **Speichergröße**, **Festplattenkapazität**, **Ist der kompatible Energiestern**, usw.) zu beschreiben. In Microsoft Dynamics 365 for Finance and Operations können Attributte unterschiedlichen Retailentitäten zugeordnet werden, wie Produktkategorien und Retailkanäle und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Retailkanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Retailkanalebene oder in einem Retailkatalog überschrieben werden.
+*Attribute* enthalten eine weitere Möglichkeit, ein Produkt und dessen Eigenschaften nach benutzerdefinierte Felder (wie **Speichergröße**, **Festplattenkapazität**, **Ist der kompatible Energiestern**, usw.) zu beschreiben. Attribute können in Microsoft Dynamics 365 for Finance and Operations unterschiedlichen Retail-Entitäten zugeordnet werden, wie Produktkategorien und Einzelhandelskanälen, und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Retailkanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Retailkanalebene oder in einem Retailkatalog überschrieben werden.
 
 So kann beispielsweise ein Fernsehprodukt folgende Attribute haben.
 
@@ -104,7 +103,7 @@ Hierbei gelten die verbleibenden Attributmetadatumenoptionen auf der Seite **Att
 
 Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Finance and Operations den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
 
-Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchenschemas in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchschemas in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Attributfiltereinstellungen
 
@@ -257,4 +256,3 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
 
     > [!NOTE]
     > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
-

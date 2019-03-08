@@ -1,13 +1,13 @@
 ---
-title: "Unterstützung für Talent erhalten"
-description: In diesem Artikel wird beschrieben, wie die Hilfe mit Dynamics 365 for Talent abgerufen wird.
+title: Erhalten Sie Support für Talent
+description: Dieser Artikel erklärt, wie Sie Hilfe zu Dynamics 365 for Talent erhalten
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -15,15 +15,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent September 10, 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 1bf37d65cd8ce6a98fc2d2fb11ae9587cf6958a3
 ms.openlocfilehash: 9b2d7159b458b6f3b2cbb3271210c10ab486f496
-ms.contentlocale: de-de
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304601"
 ---
-
-# <a name="get-support-for-talent"></a>Unterstützung für Talent erhalten
+# <a name="get-support-for-talent"></a>Erhalten Sie Support für Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -55,4 +54,3 @@ Um Unterstützung für Attract und Onboard zu erhalten, verwenden Sie die Ressou
 | Ein Problem melden                                                        | Wählen Sie **?** Symbol im Menü und wählen Sie die Optionen, um ein Problem zu melden. Geben Sie das Problem in die Beschreibung ein und fügen Sie eine E-Mail-Adresse hinzu, wenn Sie das gemeldete Problem nachverfolgen möchten.                                                                                           |
 | Rufen Sie die Hilfe mit Fragen zu Talentlizenzierung ab                         | Kontaktieren Sie Ihren Partner oder Ihren Microsoft Vertreter.                                                                                                                                                                                                                                        |
 | Fordern Sie neue Funktionen und Funktionalitäten in Attract und Onboard an | Klicken Sie auf **?**. Symbol und wählen **Ideen** aus oder verwenden den folgenden Link, um neue Ideen anzuzeigen[Attract](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract) oder [Onboar](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard) |
-

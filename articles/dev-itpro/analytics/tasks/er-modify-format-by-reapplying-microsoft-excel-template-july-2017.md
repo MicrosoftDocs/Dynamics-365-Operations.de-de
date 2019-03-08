@@ -1,13 +1,13 @@
---- 
-title: "Formate durch erneute Anwendung von Excel-Vorlagen ändern"
-description: "Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen."
+---
+title: Formate durch erneute Anwendung von Excel-Vorlagen ändern
+description: Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327112"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Formate durch erneute Anwendung von Excel-Vorlagen ändern
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/08/2018
 
 Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen.
 
-Dieses Verfahren zeigt, wie eine elektronische Berichtsformatkonfiguration geändert wird, indem eine Microsoft Excel-Vorlage erneut angewendet wird, die geändert wurde. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den GBSI-Datensatz verwenden. Bevor Sie beginnen, laden und speichern Sie die Datei, SampleVendPaymWsReport2.xlsx, die im Hilfethema aufgeführt ist, ändern elektronisches Berichterstellungsformat, indem Sie eine Tabelle erneut öffnen (modify-electronic-reporting-format-reapply-excel-template/).
+Dieses Verfahren zeigt, wie eine Konfiguration für das Format der elektronischen Berichterstellung (EB) geändert wird, indem eine Microsoft Excel-Vorlage erneut angewendet wird, die geändert wurde. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den GBSI-Datensatz verwenden. Bevor Sie beginnen, laden und speichern Sie die Datei, SampleVendPaymWsReport2.xlsx, die im Hilfethema aufgeführt ist, ändern elektronisches Berichterstellungsformat, indem Sie eine Tabelle erneut öffnen (modify-electronic-reporting-format-reapply-excel-template/).
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
@@ -83,5 +83,4 @@ Dieses Verfahren zeigt, wie eine elektronische Berichtsformatkonfiguration geän
 
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Nutzen Sie die geänderte Entwurfsversion des ER-Formats für die Verwendung bei Zahlungserfassungsverarbeitungen
     * Wiederholen Sie das erstellte Arbeitsblatt, einschließlich neue Details der Zahlungszeilen - Zahlungsdatum.  
-
 

@@ -1,13 +1,13 @@
 ---
 title: Erste Schritte mit Talent
-description: "Dieses Thema enthält Informationen dazu, wie die Benutzeroberfläche an Ihre Einstellungen angepasst wird und mit den Hilferessourcen, die innerhalb des Produkts und am docs.microsoft.com-Speicherort verfügbar sind, verbunden werden"
+description: Dieses Thema enthält Informationen dazu, wie die Benutzeroberfläche an Ihre Einstellungen angepasst wird und mit den Hilferessourcen, die innerhalb des Produkts und am docs.microsoft.com-Speicherort verfügbar sind, verbunden werden
 author: rschloma
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: ddd7d9315b61cb3aa5e23f86666752ca8280acbf
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304595"
 ---
 # <a name="get-started-with-talent"></a>Erste Schritte mit Talent
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 08/08/2018
 In Microsoft Dynamics 365 for Talent ist es einfach, die Benutzeroberflächen- und Satzoptionen zu ändern, um die Software für Ihre Anforderungen intuitiver zu machen. Dieses Thema enthält Links zu Themen, die Informationen angeben, wie die Benutzeroberfläche Ihren Einstellungen angepasst werden. Das Thema enthält auch Links zu Informationen, die Sie dabei unterstützen, Informationen im System effizient und genau zu suchen. 
 
 > [!NOTE] 
-> Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Die folgenden drei Produkte sind eng miteinander verknüpft: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, Dynamics 365 for Talent Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Daraus ergibt sich, dass in Themen, die in erster Linie für Retail gelten, der Produktname Dynamics 365 for Retailverwendet wird; Themen, die sich in erster Linie Talent widmen verwenden den Produktnamen Dynamics 365 for Talent; und Themen, die in erster Linie dem Kernprodukt zugeordnet sind, verwenden den Produktnamen Dynamics 365 for Finance and Operations. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 ## <a name="personalizing-talent"></a>Personalisieren von Talent 
-Die folgenden Themen enthalten Informationen dazu, wie viele Funktionen in Dynamics 365 Talent eingerichtet werden, die es erleichtern, Ihre Arbeit zeitnah auszuführen. 
+Die folgenden Themen enthalten Informationen dazu, wie viele Funktionen in Dynamics 365 for Talent eingerichtet werden, die es erleichtern, Ihre Arbeit zeitnah auszuführen. 
 
 -   [Personalisieren Sie die Benutzerfreundlichkeit](../fin-and-ops/get-started/personalize-user-experience.md) - In diesem Thema werden die verschiedenen Arten, in denen Sie Talent personalisieren und Bereiche der Produkts Suite genauer anpassen können.
 
@@ -61,9 +61,8 @@ Die folgenden Themen erläutern, wie Suchen verwendet werden, und die Such- und 
 Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="blogs"></a>Blogs
-Meinungen, Neuigkeiten und weitere Informationen zu Kreditorenkonten und anderen Lösungen finden Sie im [Microsoft Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videos
-Sehen Sie in den Videos zu Hilfe + Anleitungen nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
-
+Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
 

@@ -1,13 +1,13 @@
 ---
 title: Statistische Grundplanung generieren
-description: "Dieser Artikel enthält Informationen zu den Parametern und Filtern, die in der Berechnung der Bedarfsplanung verwendet werden."
+description: Dieser Artikel enthält Informationen zu den Parametern und Filtern, die in der Berechnung der Bedarfsplanung verwendet werden.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30f2ccb8c0b4d7c4755e0b8dc66539e165265090
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326422"
 ---
-
 # <a name="generate-a-statistical-baseline-forecast"></a>Statistische Grundplanung generieren
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Wenn die Planungsstrategie auf **Über historischen Bedarf kopieren** festgelegt
 
 Um Unklarheiten in den Produktionsplänen zu verhindern, können mehrere Planungszeitrahmen eingefroren werden. Diese Zahl wird im Feld **Nichtplanungszeitraum** festgelegt. Auf der Seite **Angepasste Bedarfsplanung** werden die Zellen für die fixierten Zeitrahmen deaktiviert, um optisch anzugeben, dass diese Werte nicht geändert werden sollen. 
 
-Das Startdatum für die Grundbedarfsplanung muss nicht das aktuelle Datum oder ein Datum in der Zukunft sein. Um ein anderes Startdatum festzulegen, verwenden Sie das Feld **Startdatum für statistische Grundplanung - Von Datum**. So können Benutzer im Juni beispielswseise eine Planung für das nächste Jahr generieren. Da die Planungszeitrahmen zwischen dem Ende des historischen Bedarfs und dem Beginn der Grundbedarfs fehlen, sind die Vorhersagen nicht genau. Wenn Sie den Microsoft Dynamics 365 for Finance and Operations -Bedarfsplanungsdienst verwenden, gibt es vier Arten, auf die Sie die fehlenden Lücken ausfüllen können. Sie können die Methode auswählen, die Sie wünschen, indem Sie den MISSING\_VALUE\_SUBSTITUTION-Parameter auf der Seite **Bedarfsplanungsparameter** festlegen. 
+Das Startdatum für die Grundbedarfsplanung muss nicht das aktuelle Datum oder ein Datum in der Zukunft sein. Um ein anderes Startdatum festzulegen, verwenden Sie das Feld **Startdatum für statistische Grundplanung - Von Datum**. So können Benutzer im Juni beispielswseise eine Planung für das nächste Jahr generieren. Da die Planungszeitrahmen zwischen dem Ende des historischen Bedarfs und dem Beginn der Grundbedarfs fehlen, sind die Vorhersagen nicht genau. Wenn Sie den Microsoft Dynamics 365 for Finance and Operations-Bedarfsplanungsdienst verwenden, gibt es vier Arten, auf die Sie die fehlenden Lücken ausfüllen können. Sie können die Methode auswählen, die Sie wünschen, indem Sie den MISSING\_VALUE\_SUBSTITUTION-Parameter auf der Seite **Bedarfsplanungsparameter** festlegen. 
 
 Das Feld **Startdatum für statistische Grundplanung** - **Von Datum** muss auf den Beginn eines Planungszeitrahmens festgelegt werden, beispielsweise in den USA ein Sonntag, wenn der Planungszeitrahmen die Woche ist. Das System reguliert automatisch das Feld **Startdatum für statistische Grundplanung** - **Von Datum**, um den Beginn eines Planungszeitrahmens abzugleichen. 
 
@@ -72,7 +71,6 @@ Wenn die Planung nicht für einen großen Satz Artikel generiert wird, sondern b
 [Manuelle Anpassungen an die Grundplanung](manual-adjustments-baseline-forecast.md)
 
 [Autorisieren der angepassten Planung](authorize-adjusted-forecast.md)
-
 
 
 

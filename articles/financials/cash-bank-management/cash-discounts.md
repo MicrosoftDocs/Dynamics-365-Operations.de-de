@@ -1,13 +1,13 @@
 ---
 title: Skonti
-description: "Skonti werden für Kreditoren und Debitoren eingerichtet und freigegeben.  Das verfügbare Skonto kann auf der Debitorenrechnung oder der Kreditorenrechnung definiert werden und wird übernommen, wenn die Rechnung innerhalb des Skontodatums bezahlt wird."
+description: Skonti werden für Kreditoren und Debitoren eingerichtet und freigegeben.  Das verfügbare Skonto kann auf der Debitorenrechnung oder der Kreditorenrechnung definiert werden und wird übernommen, wenn die Rechnung innerhalb des Skontodatums bezahlt wird.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CashDisc
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dd15a021244e55ea988a95184a758a321ebeafb3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320028"
 ---
-
 # <a name="cash-discounts"></a>Skonti
 
 [!include [banner](../includes/banner.md)]
@@ -66,5 +65,4 @@ Eine Rechnung in Höhe von 1.000 US-Dollar mit den Skontobedingungen von 20D2% w
 
 > [!NOTE]
 > Wenn die Option "Skonti für Teilzahlungen berechnen" auf der Debitorenparameter- oder Kreditorenparameterseite aktiviert ist, wird der Wechselkurs, der am Tag der jeweiligen Teilzahlung gültig ist, verwendet. 
-
 

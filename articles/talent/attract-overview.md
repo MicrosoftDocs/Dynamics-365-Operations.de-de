@@ -1,13 +1,13 @@
 ---
 title: Features und Funktionen von Attract
-description: "In diesem Thema werden die Funktionen beschrieben, die Attract zum Verwalten des Einstellungsprozesses für neue Talente bietet."
+description: In diesem Thema werden die Funktionen beschrieben, die Attract zum Verwalten des Einstellungsprozesses für neue Talente bietet.
 author: rschloma
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
 ms.openlocfilehash: dd65def0006445da1a8d07577cf5ef05178c19bd
-ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304528"
 ---
 # <a name="attract-features-and-capabilities"></a>Features und Funktionen von Attract
 
@@ -33,7 +33,7 @@ Attract stellt Funktionen bereit, um den Prozess für die Einstellung neuer Tale
 In diesem Thema werden die Funktionen von Attract angeboten werden.
 
 ## <a name="attract-dashboard"></a>Attract Dashboard
-Auf dem Dashboard können Einstellungsteammitglieder die Details der Stellen anzeigen, denen an denen sie teilnehmen. Auf dem Dashboard können zukünftige Vorgesetzte oder ein Personalbeschaffungsmitarbeiter neue Stellen in Attract hinzufügen, entweder durch Erstellen einer individuellen Stelle oder durch gleichzeitiges Importieren mehrerer Stellen aus einer Microsoft Excel-Tabelle.
+Auf dem Dashboard können Einstellungsteammitglieder die Details der Stellen anzeigen, denen an denen sie teilnehmen. Auf dem Dashboard können zukünftige Vorgesetzte oder Personalbeschaffer neue Stellen in Attract hinzufügen, entweder durch Erstellen einer individuellen Stelle oder durch gleichzeitiges Importieren mehrerer Stellen aus einem Microsoft Excel-Arbeitsblatt.
 
 ## <a name="jobs"></a>Stellentyp
 Auf der Seite **Stelle** können Details wie die Stellenbeschreibung und der Arbeitsort angezeigt und bearbeitet werden. Auf der Seite **Stelle** wird auch das Einstellungsteam zusammengestellt und hier können Sie die Interviewer und Einstellungsmitarbeiter im Team ändern. Neue Kandidaten können auf der Seite **Stelle** ebenfalls hinzugefügt werden.
@@ -46,4 +46,3 @@ Attract stellt einen vordefinierten Prozess bereit, der über vier grundlegende 
 
 ## <a name="candidate-app"></a>App Kandidat
 Sobald die Kandidaten der Stelle hinzugefügt wurden, erhalten Sie eine E-Mail mit einem Link zum Abruf der Web-App. Die App bietet Stellendetails und wird verwendet, um mit dem Einstellungsteam zu kommunizieren. Kandidaten können damit ihre Verfügbarkeit für Gespräche senden.
-

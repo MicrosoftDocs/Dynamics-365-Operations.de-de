@@ -1,13 +1,13 @@
 ---
 title: Onlineshops einrichten
-description: "Dieser Artikel enthält Informationen zu Onlineshops und wie man sie in Microsoft Dynamics 365 for Retail einrichtet."
+description: Dieser Artikel enthält Informationen zu Einzelhandel-Onlineshops und wie man sie in Microsoft Dynamics 365 for Retail einrichtet.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelManagementWorkspace, RetailOnlineStoreList
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 2b736b5e5ce5b5b384181a73c72bbb89b072a284
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324927"
 ---
-
 # <a name="set-up-online-stores"></a>Onlineshops einrichten
 
 [!include [banner](includes/banner.md)]
 
-Dieser Artikel enthält Informationen zu Onlineshops und wie man sie in Microsoft Dynamics 365 for Retail einrichtet.
+Dieser Artikel enthält Informationen zu Einzelhandel-Onlineshops und wie man sie in Microsoft Dynamics 365 for Retail einrichtet.
 
-Dynamics 365 for Retail unterstützt mehrere Vertriebskanäle. Diese Vertriebskanäle umfassen Onlineshops, Callcenter und Einzelhandelsgeschäfte (auch physische Läden genannt). Onlineshops stellen für ein Einzelhandelsgeschäft eine Onlinepräsenz bereit, damit die Debitoren der Filiale Produkte aus dem Onlineshop des Einzelhändlers sowie aus dessen physischen Shops erwerben können. Wenn Debitoren Produkte des Onlineshops kaufen, können die Produkte entweder zugesendet oder vom Debitoren in einer lokalen Filiale abgeholt werden. Erstellen Sie einen Onlineshop in Dynamics 365 for Retail Client. Dieser Onlineshop wird dann über einen Onlineshop von Drittanbietern veröffentlicht, der in Dynamics 365 for Retail integriert ist. Der Drittanbieteronlineshop dient als die Ladenzeile (Benutzeroberfläche) für den Onlineshop und bietet eine Auswahl an CMS (Customer Management System)- und Benutzeroberflächen-Funktionen. Viele Integrationen dieses Typs sind für Dynamics 365 for Retail verfügbar. Die Eigenschaften, die Sie für den Onlineshop festlegen, steuern das Verhalten des Onlineshops. Definieren Sie beispielsweise die Navigationskategoriehierarchie in Dynamics 365 for Retail, und weisen Sie sie dem Onlineshop zu. Wenn Sie den Onlineshop über den Onlineshop eines Drittanbieters veröffentlichen, wird die Navigationskategoriehierarchie in der Onlineversion der Filiale angezeigt. Käufer verwenden dann die Navigationskategoriehierarchie, um den Onlineshop zu durchsuchen und nach Produkten zu suchen. Um einen Onlineshop zu erstellen, müssen Sie die Komponenten einrichten, die es ermöglichen, dass die Filiale Transaktionen verarbeiten kann. Sie müssen beispielsweise Sortimente hinzufügen, Attribute übernehmen und Zahlungsmethoden wie Versandarten einrichten. Sie können auch Preise, Aktionen, Rabatte, Handelsvereinbarungen und Versandbedingungen festlegen, die für den Onlineshop spezifisch sind. Nachdem Sie den Onlineshop über den Onlineshop des Drittanbieters veröffentlicht haben, können Sie Einzelhandelsproduktkataloge für den Onlineshop erstellen. Die Produkte im Katalog werden Produktlisten im Onlineshop. Wenn ein Käufer Produkte aus dem Onlineshop kauft, wird der verfügbare Lagerbestand im Client aktualisiert und synchronisiert. Zudem werden Aufträge für die Einkäufe generiert und an den Client zur Auftragserfüllung und Verarbeitung gesendet.
+Dynamics 365 for Retail unterstützt mehrere Retail Channels. Diese Vertriebskanäle umfassen Onlineshops, Callcenter und Einzelhandelsgeschäfte (auch physische Läden genannt). Onlineshops stellen für ein Einzelhandelsgeschäft eine Onlinepräsenz bereit, damit die Debitoren der Filiale Produkte aus dem Onlineshop des Einzelhändlers sowie aus dessen physischen Shops erwerben können. Wenn Debitoren Produkte des Onlineshops kaufen, können die Produkte entweder zugesendet oder vom Debitoren in einer lokalen Filiale abgeholt werden. Erstellen Sie einen Onlineshop im Dynamics 365 for Retail-Client. Dieser Onlineshop wird dann über einen Onlineshop von Drittanbietern veröffentlicht, der in Dynamics 365 for Retail integriert ist. Der Drittanbieteronlineshop dient als die Ladenzeile (Benutzeroberfläche) für den Onlineshop und bietet eine Auswahl an CMS (Customer Management System)- und Benutzeroberflächen-Funktionen. Einige Integrationen dieses Typs sind für Dynamics 365 for Retailverfügbar. Die Eigenschaften, die Sie für den Onlineshop festlegen, steuern das Verhalten des Onlineshops. Definieren Sie beispielsweise die Navigationskategoriehierarchie in Dynamics 365 for Retail und weisen Sie sie dem Onlineshop zu. Wenn Sie den Onlineshop über den Onlineshop eines Drittanbieters veröffentlichen, wird die Navigationskategoriehierarchie in der Onlineversion der Filiale angezeigt. Käufer verwenden dann die Navigationskategoriehierarchie, um den Onlineshop zu durchsuchen und nach Produkten zu suchen. Um einen Onlineshop zu erstellen, müssen Sie die Komponenten einrichten, die es ermöglichen, dass die Filiale Transaktionen verarbeiten kann. Sie müssen beispielsweise Sortimente hinzufügen, Attribute übernehmen und Zahlungsmethoden wie Versandarten einrichten. Sie können auch Preise, Aktionen, Rabatte, Handelsvereinbarungen und Versandbedingungen festlegen, die für den Onlineshop spezifisch sind. Nachdem Sie den Onlineshop über den Onlineshop des Drittanbieters veröffentlicht haben, können Sie Einzelhandelsproduktkataloge für den Onlineshop erstellen. Die Produkte im Katalog werden Produktlisten im Onlineshop. Wenn ein Käufer Produkte aus dem Onlineshop kauft, wird der verfügbare Lagerbestand im Client aktualisiert und synchronisiert. Zudem werden Aufträge für die Einkäufe generiert und an den Client zur Auftragserfüllung und Verarbeitung gesendet.
 
 ## <a name="set-up-an-online-store"></a>Onlineshop einrichten
 
@@ -60,4 +59,3 @@ Bevor Sie einen Onlineshop erstellen, müssen Sie die Navigationshierarchie für
 ## <a name="organization-hierarchies"></a>Organisationshierarchien
 
 Organisationshierarchien werden verwendet, um Einzelhandelskanäle zu strukturieren. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht. Wenn Sie Onlineshops einrichten, können Sie diese einer Organisationshierarchie hinzufügen. Die Shops teilen dann Daten, die für Sortimente, Auffüllung und Berichterstellung verwendet werden. Wenn Sie eine Organisationshierarchie erstellen, müssen Sie einen Kostenträger zuweisen. Der Kostenträger gibt an, wie die Hierarchie in der Struktur des Unternehmens verwendet wird. Sie können eine Organisationshierarchie für die Filialenarbeitsgänge erstellen und diese Hierarchie für Sortimente, Auffüllung und Berichte verwenden. Sie können auch eine separate Organisationshierarchie für jeden Kostenträger erstellen. Sie können auch mehrere Hierarchien mit demselben Kostenträger erstellen und diesen je einen separaten Kanal zuweisen. Wenn Sie Einzelhandelsproduktkataloge im Onlineshop veröffentlichen möchten, sollten Sie mindestens den Onlineshop einer Organisationshierarchie für Sortimente hinzufügen. Die Produkte in einem Katalog werden von den Sortimenten ausgewählt, die dem Onlineshop zugewiesen sind. Wenn der Katalog veröffentlicht wird, vergleicht der Veröffentlichungsprozess die Gültigkeitsdaten für das Sortiment, das dem Onlineshop für die Produkte zugewiesen ist, die im Katalog enthalten sind, um zu bestimmen, welche Produkte im Onlineshop verfügbar gemacht werden.
-

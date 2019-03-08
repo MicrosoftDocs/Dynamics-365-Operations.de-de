@@ -1,13 +1,13 @@
 ---
-title: "Produktkonfigurationsmodelle – Überblick"
-description: "Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren."
+title: Produktkonfigurationsmodelle – Überblick
+description: Dieser Artikel definiert Begriffe und Konzepte, die zu den Produktkonfigurationsmodellen relevant sind. Produktkonfigurationsmodelle lassen Sie eine generische Produktstruktur erstellen, die verwendet werden kann, wenn viele Produktvarianten für ein bestimmtes Produkt zu konfigurieren.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d908b9e58da06646e07ddc5fc4d937cc1f1849cd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ddc9d43f62df937a6fb18e15c718c37442bb9b4
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313956"
 ---
-
 # <a name="product-configuration-models-overview"></a>Produktkonfigurationsmodelle – Überblick
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,7 @@ Produktkonfigurationsmodelle werden erstellt, um eine allgemeine Produktstruktur
 <td>Attribute beschreiben alle Funktionen des Produktkonfigurationsmodells. Sie können Attribute verwenden, um die Funktion anzugeben, die ausgewählt werden können, wenn ein eindeutig identifizierbares Produkt konfiguriert wird. Attribute werden in Einschränkungen und Bedingungen verwendet. Wenn Attribute zu einem Produktkonfigurationsmodell erstellt und hinzugefügt werden, wird auf die zugehörigen Attributtypen verwiesen. Ein Standardwert kann für ein Attribut festgelegt werden. Der Standardwert wird in der Konfigurationsbenutzeroberfläche (UI) verwendet, wenn das Produktkonfigurationsmodell konfiguriert wird. Sie können angeben, dass ein Attribut erforderlich, schreibgeschützt oder ausgeblendet ist.
 <ul>
 <li><strong>Erforderlich</strong> – Ein Wert muss für das Attribut festgelegt werden, wenn das Produkt konfiguriert wird.</li>
-<li><strong>Schreibgeschützt</strong> – Der Attributwert wird während einer Konfigurationssitzung angezeigt, er kann aber nicht geändert werden.</li>
+<li><strong>Schreibgeschützt</strong> – Der Attributwert wird während einer Konfigurationssitzung angezeigt, er kann jedoch nicht geändert werden.</li>
 <li><strong>Ausgeblendet</strong> – Der Attributwert ist in den Einschränkungen und Bedingungen enthalten, er wird jedoch noch nicht während einer Konfigurationssitzung angezeigt.</li>
 </ul>
 Sie können auch eine Bedingung für Attribute angeben. Wenn die Bedingung erfüllt ist, muss ein Wert für das erforderliche Attribut eingegeben werden. Bedingungen sind Ausdrucke, die erfüllt sein müssen, damit Attribute, Stücklistenpositionen und Arbeitsplan-Arbeitsgänge in ein Produktkonfigurationsmodell einbezogen werden können. Alle in einer Bedingung referenzierten Attribute werden obligatorisch. Es wird empfohlen, Attribute auf der Registerkarte <strong>Attribute</strong> als erforderlich auszuwählen. Dadurch werden erforderliche Attribute besser erkannt. Attributwerte sind ein wichtiger Bestandteil der Wiederverwendung von Konfigurationen. Das System verwendet Attributwerte, um zu bestimmen, ob eine Konfiguration vorhanden ist, die den Auswahlen entspricht, die ein Benutzer während einer Konfigurationssitzung vorgenommen hat.</td>
@@ -149,7 +148,6 @@ Sie können auf der Registerkarte <strong>Allgemein</strong> der Seite <strong>D
 </tr>
 </tbody>
 </table>
-
 
 
 

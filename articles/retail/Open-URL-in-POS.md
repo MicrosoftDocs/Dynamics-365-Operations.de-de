@@ -1,36 +1,35 @@
 ---
-title: "URL in POS öffnen"
-description: "Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Microsoft Dynamics 365 for Retail."
+title: URL in POS öffnen
+description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Microsoft Dynamics 365 for Retail.
 author: AamirAllaq
 manager: AnnBe
-ms.date: 11/14/2018
+ms.date: 01/28/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Retail
 ms.custom: 141393
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b07406b4e218b45bdde87c4a579814fe0edbc286
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: d2b692ac86244eca31780a558112167391fc6d77
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327089"
 ---
-
-# <a name="open-url-in-pos"></a>URL in POS öffnen
+# <a name="open-url-in-pos"></a>Öffnen der URL in POS
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie eine Schaltfläche in der Retail-Verkaufsstelle (POS) konfigurieren, um eine URL zu öffnen. Diese Funktion erfordert keine Codeanpassung und kann von jemandem in einer Nicht-Entwickler-Rolle konfiguriert werden.
+In diesem Thema wird beschrieben, wie Sie eine Schaltfläche in der Retail-Verkaufsstelle (POS) konfigurieren, um eine URL zu öffnen. Diese Funktion erfordert keine Codeanpassung und kann von jemandem in einer Nicht-Entwickler-Rolle konfiguriert werden. Diese Funktion ist als Teil des Dynamics 365 for Finance and Operations Version 8.1.3 Release (Build 8.1.227.10014) und höher verfügbar. 
 
 Diese Funktion ermöglicht die Konfiguration einer Schaltfläche in POS mithilfe des Raster-Designers, um eine URL zu öffnen. Aktuell wird diese in den folgenden Konfigurationen unterstützt:
 
@@ -62,7 +61,7 @@ Windows, iOS und Android ermöglichen auch das problemlosere Öffnen von Apps, b
 - Für IOS finden Sie Informationen unter [Universelle Links für Entwickler](https://developer.apple.com/ios/universal-links/).
 - Für Android finden Sie Informationen unter [Handhabung von Android-App-Links](https://developer.android.com/training/app-links/).
 
-| Client                | In neuem Fenster öffnen | Native App öffnen | Innerhalb von POS öffnen | Detaildaten                           |
+| Kunde                | In neuem Fenster öffnen | Native App öffnen | Innerhalb von POS öffnen | Detaildaten                           |
 |-----------------------|--------------------|-----------------|-----------------|-----------------------------------|
 | Modern POS auf Windows | ✓\*                | ✓               | ✓              | \* Wird in neuem „Modern POS”-Fenster geöffnet |
 | Cloud POS             | ✓\*                | ✓               | X              | \* Wird in neuer Browserregisterkarte geöffnet        |
@@ -84,4 +83,3 @@ Um eine URL zu konfigurieren, die in POS geöffnet werden soll, führen Sie die 
 5. Wählen Sie **URL öffnen** als die Aktivität aus.
 6. Geben Sie die URL ein, die Sie verwenden möchten.
 7. Konfigurieren Sie, ob die URL in einem neuen Fenster geöffnet werden soll.
-

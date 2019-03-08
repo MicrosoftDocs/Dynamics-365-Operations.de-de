@@ -1,13 +1,13 @@
 ---
 title: Finanzdimensionen und Buchungen
-description: "Wenn Sie Ihren Kontenplan und die Planung einrichten, müssen Sie entscheiden, wie die verschiedenen Komponenten zusammenarbeiten, wenn Sie ein Dokument oder eine Erfassung buchen. Diese Komponenten schließen Kontostrukturen, erweiterte Regeln und Ausgleichen und feste Dimensionen ein. In diesem Thema wird erläutert, was jede Komponente ist und wie die Komponenten zusammenarbeiten."
+description: Wenn Sie Ihren Kontenplan und die Planung einrichten, müssen Sie entscheiden, wie die verschiedenen Komponenten zusammenarbeiten, wenn Sie ein Dokument oder eine Erfassung buchen. Diese Komponenten schließen Kontostrukturen, erweiterte Regeln und Ausgleichen und feste Dimensionen ein. In diesem Thema wird erläutert, was jede Komponente ist und wie die Komponenten zusammenarbeiten.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 89bc6f1f01f77dac4c24419705737783b07e4ac7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0530a569978bafffcdcc63c8d502b9bfa645bc5
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327940"
 ---
-
 # <a name="financial-dimensions-and-posting"></a>Finanzdimensionen und Buchungen 
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,7 @@ Standarddimensionen stammen aus verschiedenen Orten, wie Hauptdatensätzen, Debi
 Personen haben häufig Fragen über den Auftrag, den die verschiedenen Komponenten ausführen. Es ist außerordentlich wichtig, dass Sie den Auftrag kennen, der Standarddimensionen verwendet, da sich dieses Verhalten auf den Ansatz auswirkt, den Sie akzeptieren, um einzurichten.
 
 > [!NOTE]
-> Diese Informationen beziehen sich nur auf die Anwendung von Standarddimensionen in der Anwendung. Wenn Sie Daten importieren, indem Sie das Microsoft Excel oder Datenverwaltungs-Framework verwenden, variiert das Verhalten.
+> Diese Informationen beziehen sich nur auf die Anwendung von Standarddimensionen in der Anwendung. Wenn Sie Daten importieren, indem Sie das Microsoft Excel- oder Datenverwaltungs-Framework verwenden, variiert das Verhalten.
 
 ### <a name="example-1"></a>Beispiel 1
 
@@ -123,9 +122,8 @@ Einige der folgenden Ressourcen beziehen sich auf eine ältere Versionen der erh
 
 [Ihren Kontenplan planen](plan-chart-of-accounts.md) 
 
-[Planung Ihres Kontenplans im AX 2012-](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Dieser Link geht zu Teil 1 einer siebenteiligen Reihe.
+[Planung Ihres Kontenplans in AX 2012 (Blog)](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Dieser Link geht zu Teil 1 einer siebenteiligen Reihe.
 
 [Dimension, die in den Buchhaltungsverteilungen den Standardwert akzeptiert](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimension, die das Dimensionsframework standardmäßig akzeptiert](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2014/09/)
-

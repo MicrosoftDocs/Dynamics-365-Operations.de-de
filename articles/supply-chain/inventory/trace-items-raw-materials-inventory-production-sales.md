@@ -1,13 +1,13 @@
 ---
 title: Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion und im Verkauf
-description: "In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden."
+description: In diesem Thema wird beschrieben, wie Sie Artikelverfolgung verwenden können, um erkennen zu können, wo Artikel oder Rohmaterial verwendet wurden, verwendet werden oder zukünftig in der Produktion und in den Verkaufsprozessen verwendet werden.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f45c39769b71832afe531db8a55097ede8a3c769
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310069"
 ---
-
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion und im Verkauf
 
 [!include [banner](../includes/banner.md)]
@@ -131,7 +130,7 @@ Wenn Sie die Option **Neu rückwärts** oder **Neu vorwärts** anwenden möchten
 Sie können die Informationen auf der Registerkarte <strong>Details</strong> als XML-Datei speichern, indem Sie auf <strong>Exportieren</strong> unterhalb der Aktion *<strong><em>Verfolgung</em></strong> *im Aktivitätsbereich klicken. Neben den Verfolgungsdetails beinhaltet die XML-Datei auch die Verfolgungskriterien, übergeordnete Knoten und die verfügbare Menge. Die Möglichkeit, eine Verfolgung zu speichern ist zweckmäßig, wenn Sie die Informationen beispielsweise einem Qualitätsprüfungsauftrag oder einer anderen Kompatibilitätsdokumentation hinzufügen möchten. Sie können angeben, wo die Datei gespeichert wird. Aktivieren Sie zum sofortigen Anzeigen der Datei das Kontrollkästchen <strong>Dokument anzeigen</strong>. <strong>Hinweis:</strong> Die Datei wird immer gespeichert, auch wenn Sie sie nur anzeigen möchten. Die XML-Datei wird standardmäßig in einem Browserfenster geöffnet. Sie können jedoch auch mit der rechten Maustaste auf die Datei klicken, <strong>Öffnen mit</strong> auswählen, und dann das Programm auswählen, mit dem Sie die Inhalte anzeigen möchten.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kann ich einen Saldo für einen bestimmten Artikel oder eine Substanz berechnen?
-Sie können die Informationen aus den zusammengefassten Seiten in Microsoft Excel exportieren. Öffnen Sie die entsprechende Seite, klicken Sie auf das Symbol **In Microsoft Office öffnen** , und wählen Sie dann **Nach Microsoft Excel exportieren** aus. Diese Funktion ist insbesonders dann hilfreich, wenn Sie einen Massensaldo für einen Artikel oder eine einzelne Substanz von der Seite **Buchungszusammenfassung** berechnen möchten. Auf der Seite **Buchungszusammenfassung** können Sie nach Artikel oder Substanz und wahlweise nach Charge filtern und dann die Informationen in Excel exportieren. In Excel können Sie beispielsweise die verfügbare Menge, die Menge, die verkauft wurde, und den Betrag, der in der Produktion verwendet wurde, isolieren.
+Sie können die Informationen aus den zusammengefassten Seiten in Microsoft Excel exportieren. Öffnen Sie die entsprechende Seite, klicken Sie auf das Symbol **In Microsoft Office öffnen**, und wählen Sie dann **Nach Microsoft Excel exportieren** aus. Diese Funktion ist insbesonders dann hilfreich, wenn Sie einen Massensaldo für einen Artikel oder eine einzelne Substanz von der Seite **Buchungszusammenfassung** berechnen möchten. Auf der Seite **Buchungszusammenfassung** können Sie nach Artikel oder Substanz und wahlweise nach Charge filtern und dann die Informationen in Excel exportieren. In Excel können Sie beispielsweise die verfügbare Menge, die Menge, die verkauft wurde, und den Betrag, der in der Produktion verwendet wurde, isolieren.
 
 ## <a name="can-i-investigate-whether-there-is-a-history-of-issues-with-items-or-raw-materials"></a>Kann ich herausfinden, ob es eine Historie der Probleme mit Artikeln oder Rohmaterialien gibt?
 Die Verfolgungsdetails enthalten Informationen zu Qualitätsprüfungsaufträgen und Qualitätsmängeln, die den Artikel oder das Rohmaterial einschließen. Sie können eine Zusammenfassung von Qualitätsprüfungsaufträgen und von Qualitätsmängeln anzeigen, indem Sie im Aktivitätsbereich auf **Qualitätsprüfungsaufträge** oder **Qualitätsmangel** klicken. **Hinweis:** Qualitätsprüfungsaufträge mit Zerstörungstests können mehrmals in den Verfolgungsdetails erscheinen. Wenn für ein Dokument, z.B. eine Bestellung, ein Qualitätsprüfungsauftrag mit Zerstörungstest erstellt wird, wird dieser für jede Transaktion dieses Dokuments angezeigt.
@@ -141,4 +140,3 @@ Sie können den Bericht **Geliefert an Debitoren** generieren, um die Menge des 
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kann ich Kuppel- und Nebenprodukte verfolgen?
 Sie können Kuppelprodukte aber keine Nebenprodukte nachverfolgen, da Rückverfolgungsangaben in der Regel nicht Nebenprodukten zugewiesen werden. Wenn Sie einen Artikel nachverfolgen, beinhalten die Verfolgungsdetails alle zugehörigen Kuppelprodukte. Ein Knoten, der ein Kuppelprodukt enthält, umfasst das Wort "Kuppelprodukt" in den Details. Sie können Details zu einem Kuppelprodukt auch anzeigen, indem Sie den Knoten in den Verfolgungsdetails auswählen, und dann auf das Inforegister **Produktion** klicken.
-

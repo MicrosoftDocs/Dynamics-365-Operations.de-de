@@ -1,13 +1,13 @@
---- 
-title: "ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)"
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann."
+---
+title: 'ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)'
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 92efd6a0b36471286c292a80542b81cd14a8eff3
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319591"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2-model-mapping"></a>ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)
 
@@ -43,7 +43,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER -
 8. Geben Sie im Feld "Beschreibung" "Dimensionsdatenzuordnung" ein.
 9. Klicken Sie auf "Speichern".
 10. Klicken Sie auf Designer.
-11. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabelle" aus.
+11. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabelle' aus.
 12. Klicken Sie auf "Stamm hinzufügen".
 13. Geben Sie im Feld Name "Firma" ein.
 14. Im Tabellenfeld geben Sie "CompanyInfo" ein.
@@ -59,7 +59,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER -
 21. Wählen Sie "Ja" im Feld "Hauptkonto anfordern".
     * Legen Sie "Hauptkonto anfordern" auf "Ja" fest, um Benutzern zu ermöglichen, das Hauptkonto als Teil der Liste mit den Dimensionen auszuwählen.   Bei "Nein" wird das Hauptkonto nicht in der Liste mit den Dimensionen aufgenommen und die Option "Hauptkonto erforderlich" ist aktiviert. Wenn "Hauptkonto erforderlich" auf Ja festgelegt ist, wird das Hauptkonto unabhängig von der Auswahl des Benutzers in der Liste mit den Dimensionen festgelegt.  
 22. Klicken Sie auf "OK".
-23. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.
+23. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 24. Klicken Sie auf "Stamm hinzufügen".
 25. Geben Sie im Feld "Name" "LedgerJournal" ein.
 26. Wählen Sie "Ja" im Feld "Ask for query".
@@ -143,5 +143,4 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER -
 3. Klicken Sie auf "Status ändern".
 4. Klicken Sie auf "Abgeschlossen".
 5. Klicken Sie auf "OK".
-
 

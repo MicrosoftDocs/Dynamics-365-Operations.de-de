@@ -1,13 +1,13 @@
 ---
 title: Elektronische Berichterstellung (ER, Elektronic Reporting)
-description: "Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden."
+description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 67dc5b5cdec797f19a742addd05c6002aa31cf15
 ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.contentlocale: de-de
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310805"
 ---
-
 # <a name="electronic-reporting-er"></a>Elektronische Berichterstellung (ER, Elektronic Reporting)
 
 [!include [banner](../includes/banner.md)]
@@ -36,12 +35,12 @@ ER ist ein Tool, mit dem Sie Formate für eingehende und ausgehende elektronisch
 
 Das ER-Modul ist für die Verwendung durch geschäftliche Benutzer anstatt Entwickler bestimmt. Da Sie Formate statt Code konfigurieren, ist der Prozess zum Erstellen und Anpassen von Formaten für elektronische Dokumente schneller und einfacher.
 
-ER unterstützt derzeit nur TEXT, XML, das Microsoft Word-Dokument und die OPENXML-Arbeitsblattformate. Allerdings unterstützt eine Erweiterungsschnittstelle auch weitere Formate.
+EB unterstützt zurzeit TEXT, XML, Microsoft Word-Dokumente und OPENXML-Arbeitsblattformate. Allerdings unterstützt eine Erweiterungsschnittstelle auch weitere Formate.
 
 ## <a name="capabilities"></a>Funktionen
 Das ER-Modul hat folgende Funktionen:
 
-- Es stellt ein einziges, gemeinsam genutztes Tool für die Erstellung elektronischer Berichte in unterschiedlichen Bereichen dar und ersetzt mehr als 20 unterschiedliche Engines, die irgendeine Art elektronischer Berichte für Microsoft Dynamics 365 for Finance and Operations erstellen.
+- Es stellt ein einzelnes freigegebenes Tool für elektronische Berichterstellung in verschiedenen Domänen dar und ersetzt mehr als 20 verschiedene Module, die einige Arten der elektronischen Berichterstellung für Microsoft Dynamics 365 for Finance and Operations ausführen.
 - Es isoliert das Format eines Berichts von der aktuellen Finance and Operations-Implementierung. Mit anderen Worten, das Format ist für unterschiedliche Versionen von Finance and Operations anwendbar.
 - Es unterstützt die Erstellung eines benutzerdefinierten Formats, das auf einem ursprünglichen Format basiert. Es umfasst zudem Funktionen zum automatischen Aktualisieren von benutzerdefinierten Formaten, wenn am Originalformat Änderungen durch die Einführung von Lokalisierungs-/Anpassungsanforderungen entstehen.
 - Es wird das primäre Standardtool zur Unterstützung von Lokalisierungsanforderungen in der elektronischen Berichterstellung, sowohl für Microsoft als auch für MS-Partner.
@@ -72,7 +71,7 @@ Eine Modellzuordnung, die ausgehende elektronische Dokumente unterstützt, hat d
 
 - Sie kann verschiedene Datentypen von Finance and Operations als Datenquellen für ein Datenmodell verwenden. Beispielsweise kann sie Tabellen, Datenentitäten, Methoden oder Enumerationen verwenden.
 - Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
-- Sie unterstützt die Umwandlung von Daten aus Finance and Operations in die erforderlichen Gruppen. Sie können damit zudem filtern, sortieren und Daten summieren sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)).
+- Sie unterstützt die Umwandlung von Daten aus Finance and Operations in die erforderlichen Gruppen. Sie können damit zudem Daten filtern, sortieren und zusammenfassen sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln, wie in der folgenden Abbildung dargestellt. Weitere Informationen finden Sie unter [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)).
 
 [![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
@@ -94,13 +93,13 @@ Eine Formatkomponente ist das Schema der Berichtsausgabe, die zur Laufzeit gener
 
 Eine Formatkomponente unterstützt die folgenden Funktionen:
 
-- Das Erstellen von Berichtsausgabe als individuelle Dateien in unterschiedlichen Formaten, wie Text, XML, Microsoft Word-Dokument oder Arbeitsblatt.
+- Das Erstellen der Berichtsausgabe als individuelle Dateien in unterschiedlichen Formaten, wie Text, XML, Microsoft Word-Dokument oder Arbeitsblatt.
 - Erstellen von mehreren Dateien getrennt sowie die Zusammenfassung von Dateien in Zip-Dateien.
 
 Mit einer Formatkomponente können Sie bestimmte Dateien anzufügen, die in der Berichtsausgabe verwendet werden können:
 
 - Excel-Arbeitsmappen, die Arbeitsblätter enthälten, die als Vorlage für Ausgaben im OPENXML-Arbeitsblattformat verwendet werden können
-- Word-Dateien, die Dokumente enthalten, die als Vorlage für Ausgaben im Microsoft Word-Dokument verwendet werden können
+- Word-Dateien, die ein Dokument enthalten, das als Vorlage für Ausgaben im Microsoft Word-Dokumentformat verwendet werden kann
 - Andere Dateien, die in die Ausgabe des Formats als vordefinierte Dateien übernommen werden können
 
 Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
@@ -170,7 +169,7 @@ Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Liste der Konfig
 
 Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Finance and Operations-Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Finance and Operations-Instanz importieren.
 
-Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Finance and Operations-Instanz importieren. Beachten Sie, dass auf diesen Repositorytyp in den folgenden Dynamics 365 for Finance and Operations-Umgebungen zugegriffen werden kann:
+Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Finance and Operations-Instanz importieren. Beachten Sie, dass auf diesen Repositorytyp in die folgenden Dynamics 365 for Finance and Operations-Umgebungen zugegriffen werden kann:
 - in der Cloud gehostete Umgebungen, die für Entwicklungszwecke bereitgestellt werden (enthalten Testmodelle eingeschlossener Suiten)
 - lokal bereitgestellte Umgebungen (lokal oder lokale Geschäftsdatenbereitstellung (LBD))
 
@@ -381,4 +380,3 @@ ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version 
 [Lokalisierungsanforderungen – Erstellen einer elektronischen Berichtskonfiguration](electronic-reporting-configuration.md)
 
 [Verwalten des Lebenszyklus der elektronischen Berichterstellung](general-electronic-reporting-manage-configuration-lifecycle.md)
-

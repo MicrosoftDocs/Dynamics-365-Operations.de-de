@@ -1,13 +1,13 @@
 ---
-title: "Synchronisieren von Projektverträgen und Projekten direkt aus Project Service Automation mit Finance and Operations"
-description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektverträge und Projekte direkt aus Microsoft Dynamics 365 for Project Service Automation in Microsoft Dynamics 365 for Finance and Operations zu synchronisieren."
+title: Synchronisieren von Projektverträgen und Projekten direkt aus Project Service Automation mit Finance and Operations
+description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Projekte und Projektverträge direkt aus Microsoft Dynamics 365 for Project Service Automation mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,27 +17,26 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
-ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312116"
 ---
-
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronisieren von Projektverträgen und Projekten direkt aus Project Service Automation mit Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Projektverträge und Projekte direkt aus Microsoft Dynamics 365 for Project Service Automation in Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Projekte und Projektverträge direkt aus Microsoft Dynamics 365 for Project Service Automation mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 
 > [!NOTE] 
-> Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.0 verwenden, müssen Sie KB 4074835 installieren.
+> Wenn Sie Microsoft Dynamics 365 for Finance and Operations,Enterprise Edition 7.3.0 verwenden, müssen Sie KB 4074835 installieren.
 
 ## <a name="data-flow-for-project-service-automation-to-finance-and-operations"></a>Datenfluss für Project Service Automation zu Finance and Operations
 
 > [!NOTE]
-> Bevor Sie die Integrationslösung von Project Service Automation nach Finance and Operations nutzen können, sollten Sie sich mit der Datenintegrationsfunktion von Microsoft Dynamics 365 vertraut gemacht haben.
+> Bevor Sie die Project Service Automation to Finance and Operations Integrationslösung nutzen können, sollten Sie sich mit der Datenenintegrationsfunktion Microsoft Dynamics 365 vertraut gemacht haben.
 
 Die Project Service Automation zu Finance and Operations Integrationslösung nutzt die Datenenintegrationsfunktion, um Daten in Instanzen von Project Service Automation und Finance and Operations zu synchronisieren. Die Integrationsvorlagen, die in der Daten-Integrationsfunktion verfügbar sind, aktivieren den Fluss von Daten zu Projektverträgen, Projekten, Projektvertragspositionen und Projektvertragszeilen-Meilensteine von Project Service Automation zu Finance and Operations.
 
@@ -47,7 +46,7 @@ Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Projec
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
-Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps Admin Center zugreifen möchten, wählen Sie **Projekte** aus, und wählen Sie dann in der oberen rechten Ecke **Neues Projekt** aus, um die öffentlichen Vorlagen auszuwählen.
+Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
 
 Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um Projektverträge und Projekte von Project Service Automation zu Finance and Operations zu synchronisieren:
 
@@ -95,8 +94,8 @@ Wenn die Project Service Automation zu Finance and Operations Integrationslösun
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
 - Vor der Synchronisierung von Projektverträgen und Projekten müssen Sie zunächst Konten synchronisieren.
-- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_organizationalunits** zu **msdyn\_name \[Name\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen finden Sie unter [Integrieren von Daten in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) Sie unter.
-- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_projects** zu **msdynce\_projectnumber \[Project Number\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen finden Sie unter [Integrieren von Daten in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) Sie unter.
+- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_organizationalunits** zu **msdyn\_name \[Name\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen finden Sie unter [Datenintegration in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- In Ihrem Verbindungssatz fügen Sie eine Integrationsschlüsselfeldzuordnung für **msdyn\_projects** zu **msdynce\_projectnumber \[Project Number\]** hinzu. Möglicherweise müssen Sie zuerst ein Projekt im Verbindungssatz hinzufügen. Weitere Informationen finden Sie unter [Datenintegration in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 - **SourceDataID** für Projektverträge und Projekte kann mit einem anderen Wert aktualisiert oder von der Zuordnung entfernt werden. Der Standardvorlagewert ist **Project Service Automation**.
 - Die Zuordnung **PaymentTerms** muss aktualisiert werden, damit er gültige Zahlungsbedingungen im Bereich Finance and Operations anzeigt. Sie können die Zuordnung aus der Projektaufgabe auch wieder entfernen. Die Standardwerte für Standardwertzuordnung hat Demodaten. Die folgende Tabelle zeigt die Werte in der Project Service Automation.
 
@@ -135,4 +134,3 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenaufgabenzuordnun
 [![Vorlagenzuordnung](./media/ProjectContractLinesMapping.JPG)](./media/ProjectContractLinesMapping.JPG)
 
 [![Vorlagenzuordnung](./media/ProjectContractLineMilestonesMapping.JPG)](./media/ProjectContractLineMilestonesMapping.JPG)
-

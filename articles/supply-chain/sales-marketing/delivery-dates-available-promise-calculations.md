@@ -1,13 +1,13 @@
 ---
 title: Lieferterminzusage
-description: "Dieser Artikel enthält Informationen zu Lieferterminzusagen. Lieferterminzusagen ermöglichen es Ihnen, Ihren Kunden zuverlässige Lieferdaten zuzusichern und geben Ihnen Flexibilität, sodass Sie diese Daten auch einhalten können."
+description: Dieser Artikel enthält Informationen zu Lieferterminzusagen. Lieferterminzusagen ermöglichen es Ihnen, Ihren Kunden zuverlässige Lieferdaten zuzusichern und geben Ihnen Flexibilität, sodass Sie diese Daten auch einhalten können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesATP, SalesAvailableDlvDates
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ad70e94521fdb8c6d3f9a76a84aa9da5759fcf89
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 039bc5c572d204d9fa3e10a9f33cb4f4eb00b31c
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312346"
 ---
-
 # <a name="order-promising"></a>Lieferterminzusage
 
 [!include [banner](../includes/banner.md)]
@@ -71,7 +70,6 @@ Sie erstellen eine Auftragsposition für das Produkt und geben **150** als Menge
 Da die Methode der Lieferdatumskontrolle VfZ ist, sind die VfZ-Daten so berechnet, dass sie das frühest mögliche Versanddatum suchen. Basierend auf den Einstellungen werden die verzögerte Bestellung und der Auftrag berücksichtigt. Die sich daraus ergebende VfZ-Menge für das aktuelle Datum ist 0. Morgen, wenn die verzögerte Bestellung erwartet wird, wird die VfZ-Menge als mehr als 0 berechnet (in diesem Fall 125). Aber 10 Tagen ab nun, wenn der zusätzliche Kauf über 100 Stück erwartet wird ist, wird die VfZ-Menge mehr als 150.  
 
 Das Versanddatum wird auf 10 Tage ab jetzt festgelegt, basierend auf der VfZ-Berechnung. Daher können Sie den Debitor darüber informieren, dass die erforderliche Menge in 10 Tage geliefert werden kann.
-
 
 
 

@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 08641eaac31813a8bee3231118f8e2bf802ea3e1
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325640"
 ---
-
 # <a name="configure-approval-processes-in-a-workflow"></a>Genehmigungsprozesse in einem Workflow konfigurieren
 
 [!include [banner](../includes/banner.md)]
@@ -124,11 +123,11 @@ Sie können Benachrichtigungen an Personen senden, wenn ein Dokument genehmigt, 
     </tr>
     <tr>
     <td><strong>Benutzer</strong></td>
-    <td>Bestimmte Benutzer von Microsoft Dynamics 365 Finance and Operations</td>
+    <td>Bestimmte Microsoft Dynamics 365 for Finance and Operations-Benutzer</td>
     <td>
     <ol>
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
-    <li>Die <strong>Verfügbaren Benutzer</strong>:-Liste umfasst alle Benutzer von Microsoft Dynamics 365 for Finance and Operations. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
+    <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält alle Microsoft Dynamics 365 for Finance and Operations-Benutzer. Wählen Sie die Benutzer aus, an die Benachrichtigungen gesendet werden sollen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol>
     </td>
     </tr>
@@ -184,4 +183,3 @@ Ein Genehmigungsprozess besteht aus Genehmigungsschritten. Führen Sie die folge
 1. Doppelklicken Sie im Workflow-Editor auf den Genehmigungsprozess. Im Workflow-Editor werden die Schritte des Genehmigungsprozesses angezeigt.
 2. Ziehen Sie zum Hinzufügen eines Genehmigungsschritts den Schritt aus dem Bereich **Workflow-Elemente** auf die Canvas.
 3. Informationen zum Konfigurieren eines Genehmigungsschritts finden, finden Sie unter [Konfigurieren eines Genehmigungsschritts](configure-approval-step-workflow.md).
-

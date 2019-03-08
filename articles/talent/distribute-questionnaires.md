@@ -1,13 +1,13 @@
 ---
-title: "Fragebögen verteilen und planen"
-description: "In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen."
+title: Fragebögen verteilen und planen
+description: In diesem Artikel wird beschrieben, wie Sie die Fragebögen verteilen die Sie entworfen haben, sodass sie für die Person oder Gruppe von Personen verfügbar sind, die sie beantworten sollen.
 author: kherr75
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304485"
 ---
-
 # <a name="distribute-and-schedule-questionnaires"></a>Fragebögen verteilen und planen
 
 [!include [banner](includes/banner.md)]
@@ -132,6 +131,5 @@ Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmte
 [Verwenden von Fragebögen](questionnaires.md)
 
 [Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
-
 
 

@@ -1,13 +1,13 @@
 ---
 title: Sachkontoausgleiche
-description: "In diesem Thema wird erläutert, wie die Sachkontoausgleichseite verwendet wird, um Sachkontobuchungen und Stornierungs-Ausgleiche auszugleichen."
+description: In diesem Thema wird erläutert, wie die Sachkontoausgleichseite verwendet wird, um Sachkontobuchungen und Stornierungs-Ausgleiche auszugleichen.
 author: mikefalkner
 manager: aolson
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerTransSettlement
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
+ms.openlocfilehash: b02a1a066913c9959e9a55e78789e5ff1a175c56
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: ec659a53c187b1bdfd81565d6e2f20a59e08834c
-ms.contentlocale: de-de
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308482"
 ---
-
 # <a name="ledger-settlements"></a>Sachkontoausgleiche
 
 [!include [banner](../includes/banner.md)]
@@ -76,4 +75,3 @@ Sie können einen Ausgleich stornieren, die versehentlich vorgenommen wurde.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Aktualisiert die Liste mit Konten, die in der Liste der Transaktionen einbezogen werden
 
 Wählen Sie **Sachkontoausgleichverrechnungskonten**, um ein Dialogfeld zu öffnen, in dem Sie die Konten bearbeiten können, die in der Liste der Transaktionen einbezogen werden. Wählen Sie **Neu** aus, um neue Konten der Liste hinzuzufügen. Diese Liste wird verwendet, um die Liste der Buchungen zu filtern, die auf der Seite **Sachkontoausgleiche** angezeigt wird.
-

@@ -1,13 +1,13 @@
 ---
-title: "Fragebögen"
-description: "Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren."
+title: Fragebögen
+description: Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu detaillierteren Informationen. Ein Fragebogen ist ein Satz von Fragen, mit dem Informationen für verschiedene Zwecke erfasst werden. Sie können Fragebögen entwerfen, erstellen, verteilen und ausfüllen. Anschließend können Sie die Ergebnisse analysieren.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: d5c3e02bf5bc17db7232ccbb56e4dfbc062795b4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304487"
 ---
-
 # <a name="questionnaires"></a>Fragebögen
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Dieser Artikel enthält allgemeine Informationen zu Fragebögen und Links zu det
 Sie können einen Fragebogen den spezifischen Anforderungen anpassen, indem Sie eine Kombination der verschiedenen Funktionen verwenden, die in Microsoft Dynamics 365 for Finance and Operations verfügbar sind. Nachfolgend finden Sie einige Beispiele dazu, wie Sie Fragebögen verwenden können:
 
 -   Testen der beruflichen Fähigkeiten von Mitarbeitern und Bewerbern.
--   Auswerten, ob Kursteilnehmer das Kursmaterial erlernt haben.
+-   Auswerten, ob Kursteilnehmer das Kursmaterial erlernt haben.
 -   Auswerten eines Kurses (z. B. Einrichtungen, Inhalt und Kursleiter).
 -   Durchführen von Umfragen zur Zufriedenheit von Kunden und Mitarbeitern.
 -   Bewerten der Mitarbeiterarbeitsleistung
@@ -58,5 +57,4 @@ Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von 
 [Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
 
 [Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
-
 

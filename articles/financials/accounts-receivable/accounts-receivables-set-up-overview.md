@@ -5,9 +5,9 @@ author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CashDisc, CollectionLetterCourse, CreditCardProcessors, CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsAgent, CustCollectionsPool, CustGroup, CustParameters, CustPaymMode, CustPosting, CustVendReportInterval, Interest, PaymTerm, Reasons
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 802dc83e028a59f5082627f0f0a99d02d6b66a7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
-ms.contentlocale: de-de
-ms.lasthandoff: 11/14/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310161"
 ---
-
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurieren von Debitoren und Kredit und Inkasso
 
 [!include [banner](../includes/banner.md)]
@@ -108,7 +107,6 @@ In der folgenden Tabelle führt die Seiten für die Konfiguration und Verwaltung
 
 
 Weitere Informationen finden Sie unter [Kreditl und Inkassi in Debitorenparametern](collections-credit-accounts-receivable.md).
-
 
 
 

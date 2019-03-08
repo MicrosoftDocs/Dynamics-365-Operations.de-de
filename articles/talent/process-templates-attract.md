@@ -1,13 +1,13 @@
 ---
 title: Erstellen einer Prozessvorlage in Attract
-description: "Dieses Thema enthält Informationen darüber, wie eine Prozessvorlage in Attract erstellt wird."
+description: Dieses Thema enthält Informationen darüber, wie eine Prozessvorlage in Attract erstellt wird.
 author: hasrivas
 manager: AnnBe
 ms.date: 10/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: b589a6ce02cdc02436e256f9e81346fe8b766687
 ms.openlocfilehash: 2b9cac68093be65584192757229c20b1a1546342
-ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "304523"
 ---
-
 # <a name="create-a-process-template-in-attract"></a>Erstellen einer Prozessvorlage in Attract
 
 [!include [banner](includes/banner.md)]
 
-Eine *Einstellungs-Prozessvorlage* enthält alle Aktivitäten, die im Rahmen des Einrichtungsprozesses für einen Stelle einbezogen werden sollen. In diesem Thema werden die Elemente in einer Prozeßvorlage in Microsoft Dynamics 365 for Talent beschrieben: Attract. Es wird auch erklärt, wie eine Vorlage erstellt wird.
+Eine *Einstellungs-Prozessvorlage* enthält alle Aktivitäten, die im Rahmen des Einrichtungsprozesses für einen Stelle einbezogen werden sollen. In diesem Thema werden die Elemente einer Prozessvorlage in Microsoft Dynamics 365 for Talent: Attract beschrieben. Es wird auch erklärt, wie eine Vorlage erstellt wird.
 
 > [!NOTE]
 > Vorlagenerstellung ist Teil des umfassenden Add-On für Neueinstellungen für Attract.
@@ -72,4 +71,3 @@ Folgen Sie diesen Schritten, um eine Einstellungsvorlage zu erstellen.
     - Um eine Aktion zu entfernen, erweitern Sie sie und wählen Sie dann die Abfalleimerschaltfläche im Feld Aktivitätskopf aus.
 
 8. Wählen Sie **Speichern**.
-

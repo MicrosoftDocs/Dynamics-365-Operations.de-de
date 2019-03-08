@@ -1,14 +1,14 @@
 ---
 title: Praktische Empfehlungen
-description: "In diesem Thema wird erläutert, wie die Lernfähigkeit einer Maschine verwendet werden kann, um Empfehlungen für Stellen und Stellen-Bewerber bereitzustellen."
+description: In diesem Thema wird erläutert, wie die Lernfähigkeit einer Maschine verwendet werden kann, um Empfehlungen für Stellen und Stellen-Bewerber bereitzustellen.
 author: josaw
 manager: AnnBe
 ms.date: 10/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
+ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: fea36661c65739ef09261c82ec44e16c29fad0e7
-ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304533"
 ---
-
 # <a name="intelligent-recommendations"></a>Praktische Empfehlungen
 
 [!include[banner](../includes/banner.md)]
@@ -45,4 +44,3 @@ Für jeden möglichen empfohlenen Kandidaten können Sie **Kandidat anzeigen** a
 ## <a name="job-recommendations"></a>Stellenempfehlungen 
 
 Wenn ein potenziellen Mitarbeiter die Karriereseite verwendet, um sich für einen Stelle zu bewerben, werden andere offene Stellen in der Organisation angezeigt. Diese Empfehlungen basieren auf früheren Bewerbungen des Interessenten der auf seiner Zusammenfassung oder seinem Kandidatenprofil. Daher helfen Stellenempfehlungen Interessenten, schnell die Stellen zu finden, die am besten für sie passen. Stellenempfehlungen werden für die Interessenten bereitgestellt, wenn mehr als zehn Stellen in der Karriere-Site vorhanden sind. Interessenten können die Details einer Stellenausschreibung von der Empfehlungskarte aus öffnen. Sie können Rückmeldungen zu einer Empfehlung geben, um künftige Empfehlungen zu verbessern.
-

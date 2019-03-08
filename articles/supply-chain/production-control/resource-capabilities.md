@@ -1,13 +1,13 @@
 ---
-title: "Ressourcenfähigkeiten"
-description: "«»Dieser Artikel enthält Informationen zu Ressourcenfunktionen. Eine Funktion ist die Fähigkeit einer betrieblichen Ressource, eine bestimmte Aktivität auszuführen. Der Artikel wird beschrieben, wie Funktionen und zugehörige Konzepte, wie Leistungsfähigkeitsebene und Priorität, verwendet werden, damit entsprechende Ressourcen für eine Aktivität verwendet werden können."
+title: Ressourcenfähigkeiten
+description: «»Dieser Artikel enthält Informationen zu Ressourcenfunktionen. Eine Funktion ist die Fähigkeit einer betrieblichen Ressource, eine bestimmte Aktivität auszuführen. Der Artikel wird beschrieben, wie Funktionen und zugehörige Konzepte, wie Leistungsfähigkeitsebene und Priorität, verwendet werden, damit entsprechende Ressourcen für eine Aktivität verwendet werden können.
 author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 567b4c5544f2a58801fefb1aa9d4c72815913910
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 533faf78e4cc9a091d64f7c6a0f82d14158710c8
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319292"
 ---
-
 # <a name="resource-capabilities"></a>Ressourcenfähigkeiten
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,6 @@ In diesem Beispiel können beide Maschinen vom Planungsmodul ausgewählt werden,
 
 ## <a name="competencies-for-human-resources"></a>Kompetenzen für Personalverwaltung
 Wenn Sie betriebliche Ressourcen vom Typ **Personalverwaltung** besitzen, die mit Arbeitskräfte in der Personalverwaltung verknüpft sind, können Sie die Kompetenzen der Arbeitskräfte auch nutzen, wenn Sie die Ressourcenanforderungen für einen Produktionsarbeitsplan definieren. Das bedeutet, dass Sie auch Anforderungen für bestimmte Qualifikationen, Kurse, Zertifizierungen oder Titel definieren können. Das Planungsmodul kann dann Ressourcen auswählen, die mit Arbeitskräften verknüpft sind und die Auswahl wird dann auf den Kompetenzen dieser Arbeitskräfte basieren. Die Kompetenzen werden unter Personalverwaltung und nicht auf der Seite **Ressourcenfähigkeiten** eingerichtet. Wenn Sie Fähigkeiten, Kurse, Zertifizierungen oder Titel als Ressourcenanforderungen definieren, müssen Sie die Personalverwaltungsfunktion verwenden und jede Ressource vom Typ **Personalverwaltung** mit einer Arbeitskraft verknüpfen. Wenn Sie die Personalverwaltungsfunktion nicht verwenden, können Sie Fähigkeiten auf der Seite **Ressourcenfähigkeiten** definieren, die denen im Modul "Personalverwaltung" ähneln oder entsprechen. Die Seite **Ressourcenfähigkeit** enthält jedoch keine Option zum Verwalten der Qualifikationen, Kurse, Zertifizierungen oder Titel.
-
 
 
 

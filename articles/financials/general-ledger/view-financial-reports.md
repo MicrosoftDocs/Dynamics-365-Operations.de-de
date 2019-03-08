@@ -1,13 +1,13 @@
 ---
 title: Finanzberichte anzeigen
-description: "In diesem Artikel wird beschrieben, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations untersucht und angezeigt werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern."
+description: Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 author: kweekley
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d9c7bcb8cae7b17636ffc0c87bb1147b9d27a6c8
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312944"
 ---
-
 # <a name="view-financial-reports"></a>Finanzberichte anzeigen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations untersucht und angezeigt werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
+Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 
 <a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
 ----------------------------
@@ -87,8 +86,7 @@ Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **E
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Finanzberichterstellung in Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
-
+[Finanzberichterstellung für Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

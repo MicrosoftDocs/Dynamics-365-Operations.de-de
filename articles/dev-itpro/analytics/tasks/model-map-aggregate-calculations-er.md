@@ -1,13 +1,13 @@
---- 
-title: "Verwenden von Modellzuordnungskonfigurationen für aggregierte Berechnungen auf Datenbankebene"
-description: "Diese Prozedur bietet Informationen darüber, wie eine neue Modellzuordnungskonfiguration für elektronische Berichterstellung (EB) entworfen wird und wie integrierte EB-Funktionen für effiziente Aggregationsberechnungen verwendet werden."
+---
+title: Verwenden von Modellzuordnungskonfigurationen für aggregierte Berechnungen auf Datenbankebene
+description: Diese Prozedur bietet Informationen darüber, wie eine neue Modellzuordnungskonfiguration für elektronische Berichterstellung (EB) entworfen wird und wie integrierte EB-Funktionen für effiziente Aggregationsberechnungen verwendet werden.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: a462a3997644a494b5cea89c9530ddba67c32450
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313634"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Verwenden von Modellzuordnungskonfigurationen für aggregierte Berechnungen auf Datenbankebene
 
@@ -37,7 +37,7 @@ Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrato
 3. Wählen Sie in der Struktur „Intrastat-Modell\Intrastat-Beispielzuordnung” aus.
 4. Klicken Sie auf Designer.
 5. Klicken Sie auf Designer.
-6. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.
+6. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 7. Klicken Sie auf "Stamm hinzufügen".
     * Fügen Sie eine neue Datenquelle hinzu, die Datensätze darstellt, die Sie gruppieren möchten.  
 8. Geben Sie im Feld "Name" 'Transactions' ein.
@@ -116,5 +116,4 @@ Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrato
 67. Erweitern Sie „Warendatensatz(Intrastat)” in der Struktur.
 68. Klicken Sie auf "Speichern".
     * Beachten Sie, dass das Feld „Ausführung bei” angibt, dass diese Gruppierung zur Laufzeit im Arbeitsspeicher ausgeführt wird, obwohl keine Aggregationen definiert sind und die ausgewählte Datenquelle vom Typ „Tabellendatensätze” sich auf dieselbe „Intrastat”-Tabelle bezieht. Dies ist erforderlich, weil in der Datenquelle einige berechneten Felder enthält, die noch nicht zur SQL-Datenbankebene übersetzt werden können.  
-
 

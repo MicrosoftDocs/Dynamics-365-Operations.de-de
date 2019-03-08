@@ -1,13 +1,13 @@
 ---
-title: "Startseite für Dynamics 365 for Unified Operations Mobile-App"
-description: In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
+title: Startseite für Dynamics 365 for Unified Operations Mobile-App
+description: In diesem Thema wird die Microsoft Dynamics 365 for Unified Operations Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 author: sericks007
 manager: AnnBe
 ms.date: 10/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,29 +17,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.translationtype: HT
-ms.sourcegitcommit: 3e9ec83e2cecdf8a7ec4ce3db1a80a310fe07255
 ms.openlocfilehash: 5666bee776e3d97244ce4830ac59971831848e71
-ms.contentlocale: de-de
-ms.lasthandoff: 10/26/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321385"
 ---
-
 # <a name="dynamics-365-for-unified-operations-mobile-app-home-page"></a>Startseite für Dynamics 365 for Unified Operations Mobile-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird die mobile Microsoft Dynamics 365 for Unified Operations-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
+In diesem Thema wird die Microsoft Dynamics 365 for Unified Operations Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
 
 > [!NOTE]
 > Die mobile App wurde zuvor als *Microsoft Dynamics 365 for Finance and Operations* bezeichnet.
 
-<a name="overview"></a>Überblick
+<a name="overview"></a>Übersicht
 --------
 
 Die mobile App ermöglicht es Ihrer Organisation, Geschäftsprozesse auf mobilen Geräten bereitzustellen. Nachdem Ihr IT-Administrator den mobilen Arbeitsbereich für Ihre Organisation bereitgestellt hat, können sich Benutzer bei der App anmelden und sofort damit beginnen, Geschäftsprozesse über ihre mobilen Geräte auszuführen. Die mobile App umfasst folgende Funktionen, die helfen, die Produktivität zu steigern:
 
-- Benutzer können Geschäftsdaten anzeigen, bearbeiten und ausführen, selbst wenn die Netzwerkverbindung unterbrochen ist oder ihre mobilen Geräte vollständig offline sind. Wenn ein Gerät eine Netzwerkverbindung erneut einrichtet, werden die Offlinedatenvorgänge automatisch mit Dynamics 365 for Finance and Operations synchronisiert.
+- Benutzer können Geschäftsdaten anzeigen, bearbeiten und ausführen, selbst wenn die Netzwerkverbindung unterbrochen ist oder ihre mobilen Geräte vollständig offline sind. Wenn ein Gerät eine Netzwerkverbindung erneut einrichtet, werden die Offline-Vorgänge automatisch mit Dynamics 365 for Finance and Operations synchronisiert.
 - IT-Administratoren oder Entwickler können mobile Arbeitsbereiche erstellen und veröffentlichen, die auf die Organisation zugeschnitten wurden. Die App verwendet die vorhandenen Codeanlagen. Daher müssen Sie den Validierungsprozess, Geschäftslogik oder Sicherheitskonfiguration nicht erneut implementieren.
 - IT-Administratoren oder -Entwickler können ganz einfach mobile Arbeitsbereiche entwerfen, indem sie den Arbeitsbereichdesigner zum Anzeigen und Klicken verwenden, der im Webclient enthalten ist.
 - IT-Administratoren oder Entwickler können die Offline-Funktionalität von Arbeitsbereichen optional optimieren, indem das Geschäftslogikerweiterbarkeitsframework verwendet wird. Da Daten weiter verarbeitet werden, wenn ein Gerät offline ist, bleiben die mobilen Szenarien erhalten. auch wenn die Geräte keine permanente Netzwerkkonnektivität haben.
@@ -85,12 +84,12 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <td>1</td>
 <td>Systemadministrator</td>
 <td>Finance and Operations in Ihrer Organisation implementieren.</td>
-<td><ul><li>Wenn Sie noch keine Version von Microsoft Dynamics 365 bereitgestellt haben, siehe <a href="../deployment/deploy-demo-environment.md">Bereitstellen einer Demoumgebung</a>.</li><li>Um eine Liste mobiler Arbeitsbereiche anzuzeigen, die verwendet werden können, siehe <a href="mobile-workspaces-released.md">Vor Kurzem freigegebene mobile Arbeitsbereiche</a>.</li></ul></td>
+<td><ul><li>Wenn Sie noch keine Version von Microsoft Dynamics 365 bereitgestellt haben, siehe <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>.</li><li>Um eine Liste mobiler Arbeitsbereiche anzuzeigen, die verwendet werden können, siehe <a href="mobile-workspaces-released.md">Vor Kurzem freigegebene mobile Arbeitsbereiche</a>.</li></ul></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Systemadministrator</td>
-<td><strong>Wenn Sie Microsoft Dynamics 365 for Operations, Version 1611, verwenden:</strong> Laden Sie KBs herunter und installieren diese, die die von Microsoft bereitgestellten mobilen Arbeitsbereiche aktivieren.</td>
+<td><strong>Falls Sie Microsoft Dynamics 365 for Operations Version 1611 verwenden:</strong>Laden Sie KBs herunter und installieren Sie diese. Sie aktivieren die mobilen Arbeitsbereiche, die von Microsoft bereitgestellt werden.</td>
 <td>Weitere Informationen finden Sie in folgenden Themen:
 <ul>
 
@@ -119,8 +118,8 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <tr class="odd">
 <td>5</td>
 <td>ISV</td>
-<td>Erstellen eines Bereitstellungspaket, das benutzerdefinierte mobile Arbeitsbereiche enthält, und laden Sie das Paket zu den Microsoft Dynamics Lifecycle Services (LCS) hoch.</td>
-<td><a href="../deployment/create-apply-deployable-package.md">Ein Bereitstellungspaket erstellen</a></td>
+<td>Erstellen Sie ein Bereitstellungspaket, das benutzerdefinierte mobile Arbeitsbereiche enthält, und laden Sie das Paket zu Microsoft Dynamics Lifecycle Services (LCS) hoch.</td>
+<td><a href="../deployment/create-apply-deployable-package.md">Ein bereitstellbares Paket erstellen</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
@@ -153,4 +152,3 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 </tr>
 </tbody>
 </table>
-

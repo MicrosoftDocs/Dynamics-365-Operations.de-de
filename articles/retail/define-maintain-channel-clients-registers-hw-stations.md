@@ -1,13 +1,13 @@
 ---
-title: "Peripheriegeräte mit der Verkaufsstelle (POS) verbinden"
-description: "Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden."
+title: Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
+description: Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 544f109a4f46bd7511ee564902f627beddd29f15
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308781"
 ---
-
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
 
 > [!NOTE]
-> Spezifische Installationshinweise finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md) und [Retail Modern POS Self-Service-Download/-Installation und Geräteaktivierung von Modern POS und Cloud POS](retail-modern-pos-device-activation.md).
+> Spezifische Installationshinweise finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md) und [Retail Modern POS Self-Service-Download/-Installation und Geräteaktivierung von Modern POS und Cloud POS](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Schlüsselkomponenten
 
@@ -188,4 +187,3 @@ Zusätzliche Informationen zur Aktivierungen beinhalten die Arbeitskraft,die den
 ### <a name="client-data-synchronization"></a>Client-Datensynchronisierung
 
 Alle Änderungen an einem POS-Client, ausgenommen der Änderungen am Geräteaktivierungsstatus, müssen mit der Kanaldatenbank synchronisiert werden, um wirksam zu werden. Um Änderungen an der Kanaldatenbank zu synchronisieren, navigieren Sie zu **Einzelhandel** &gt; **IT für den Einzelhandel** &gt; **Vertriebsplan**, und führen Sie den erforderlichen Vertriebsplan aus. Für Änderungen am Client sollten Sie die Vertriebszeitpläne "Register" und "Kanalkonfiguration" ausführen.
-

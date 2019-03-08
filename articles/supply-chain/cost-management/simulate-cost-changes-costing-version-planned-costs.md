@@ -1,13 +1,13 @@
 ---
-title: "Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten"
-description: "Dieser Artikel erklärt, wie die Auswirkungen von Kostenänderungen auf die berechneten Kosten eines produzierten Artikels mithilfe einer separaten Nachkalkulationsversion für geplante Kosten simuliert werden können."
+title: Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
+description: Dieser Artikel erklärt, wie die Auswirkungen von Kostenänderungen auf die berechneten Kosten eines produzierten Artikels mithilfe einer separaten Nachkalkulationsversion für geplante Kosten simuliert werden können.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3ef3cdb2ede2c30609db4addfc10b819629cdc64
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8d5b6354ee8c627014a6da675bb2a7b52db97348
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318878"
 ---
-
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
 
 [!include [banner](../includes/banner.md)]
@@ -57,7 +56,6 @@ In den folgenden Szenarios wird die Verwendung der Nachkalkulationsversion vom T
 -   Simulieren der Kostenänderung in einer Formel zur Berechnung indirekter Kosten. Im Rahmen der Kostenänderung kann beispielsweise eine erwartete Kostensteigerung oder -senkung bei den Fertigungsgemeinkosten berücksichtigt werden. Verwenden Sie zum Definieren der Änderung in einer Formel zur Berechnung indirekter Kosten das Formular **Nachkalkulationsbogen**, und geben Sie einen Datensatz für ausstehende Kosten in der Nachkalkulationsversion vom Typ "Simulation" ein. Dieses Formular dient auch zum Überprüfen und Speichern der Änderung.
 
 Berechnen Sie nach Eingabe der simulierten Kostenänderungen die Kosten für produzierte Artikel, die von den Kostenänderungen betroffen sind. Verwenden Sie die Seite **Kalkulation** für die Nachkalkulationsversion vom Typ "Simulation", und kennzeichnen Sie die ausgewählten produzierten Artikel, die von den Kostenänderungen betroffen sind. Werden keine der ausgewählten Artikel gekennzeichnet, gelten die Herstellkostenkalkulationen für alle produzierten Artikel. Alternativ kann auch die Herstellkostenkalkulationsoption für Aktualisierungen vom Typ "Wo verwendet" ausgewählt werden. Zeigen Sie die Datensätze für Artikelkosten in der Nachkalkulationsversion vom Typ "Simulation" an, und analysieren Sie, inwiefern sich die simulierten Kostenänderungen auf die Kosten der ausgewählten produzierten Artikel ausgewirkt haben. Verwenden Sie die **Artikelpreis** Seite und die Seite **Artikelpreis berechnen**, um die Kosten anzuzeigen und zu analysieren.
-
 
 
 

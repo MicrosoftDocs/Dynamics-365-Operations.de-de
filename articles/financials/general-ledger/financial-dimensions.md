@@ -1,13 +1,13 @@
 ---
 title: Finanzdimensionen
-description: "In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden."
+description: In diesem Thema werden die verschiedenen Arten von wertmäßigen Dimensionen beschrieben und wie sie eingerichtet wurden.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/03/2019
 ms.topic: article
-ems.prod: 
+ems.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 ms.reviewer: shylaw
@@ -16,15 +16,14 @@ ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 92d1f2997ca8ea1bd47dfe47d91bf7f6234833b0
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 2fb325e143eff067e1c9d0f23a1f913fc2dc36f3
-ms.contentlocale: de-de
-ms.lasthandoff: 01/03/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317544"
 ---
-
 # <a name="financial-dimensions"></a>Finanzdimensionen
 
 [!include [banner](../includes/banner.md)]
@@ -141,4 +140,3 @@ Weitere Informationen finden Sie in folgenden Themen:
 
 - [Finanzdimensionen definieren](tasks/define-financial-dimensions.md)
 - [Standardvorlagen für Finanzdimension verwalten](tasks/maintain-financial-dimension-default-templates.md)
-

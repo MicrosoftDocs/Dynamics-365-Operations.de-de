@@ -1,13 +1,13 @@
 ---
-title: "Vergütungspläne"
-description: "Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten."
+title: Vergütungspläne
+description: Manager Vergütungen und Leistungen können die Vergütungsverwaltung verwenden, um die festen und variablen Vergütungspläne für die Mitarbeiter der Organisation verwalten und verarbeiten.
 author: kherr75
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+ms.openlocfilehash: e80b3ebc9c374073ff5a2dfc8c2acf1d7f6c6287
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 86070204769b866b947405436437eb0eb746de11
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304507"
 ---
-
 # <a name="compensation-plans"></a>Vergütungspläne
 
 [!include [banner](includes/banner.md)]
@@ -56,7 +55,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 <td>Aktivitäten bezüglich fester Vergütung werden aus zwei Gründen eingerichtet:
 <ul>
 <li>Aktivitäten können die Art der Informationen angeben, die erfasst werden muss, wenn sich die Vergütung eines Mitarbeiters ändert. So können z. B. festlegen, dass der Grund eine Änderung (z. B. eine Beförderung oder Zurückstufung) erfasst wird.</li>
-<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Beispielsweise bei Aktivitäten vom Typ „Fairness” wird der Lohn/Gehalt der Mitarbeiter mit dem Mindestreferenzpunkt für die Ebene des Mitarbeiters verglichen und sichergestellt, dass der Mitarbeiter mindestens den Mindestbetrag erhält.</li>
+<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Aktivitäten vom Typ "Vergleich" vergleichen beispielsweise die Bezahlung von Mitarbeitern mit dem Mindestreferenzpunkt für die Stufe des Mitarbeiters und stellen sicher, dass dem Mitarbeiter mindestens das Minimum gezahlt wird.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -132,7 +131,6 @@ Jedes Mal, wenn ein Prozessereignis ausgeführt wird, wird ein Kompensationserei
 
 ## <a name="recommendations"></a>Empfehlungen
 Nachdem Sie ein Prozessereignis ausgeführt haben, können Sie Anpassungen an Lohnsteigerung oder Prämienbetrag eines Mitarbeiters basierend auf den berechneten Richtlinien des Prozessereignisses empfehlen. Um Empfehlungen für Mitarbeiter zu machen, müssen Sie Empfehlungen aktivieren, wenn Sie Vergütungspläne einrichten oder das Prozessereignis erstellen.
-
 
 
 

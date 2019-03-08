@@ -1,66 +1,64 @@
 ---
 title: Projektliste von Finance and Operations mit Field Service synchronisieren
-description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegende Aufgabe, die verwendet wird, um Projekte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren."
+description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Projekte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 01/14/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
+ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
-ms.openlocfilehash: adcb1c1b241ce2b073cd26cf2a8a8d64931c8b0f
-ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312507"
 ---
-
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Projektliste von Finance and Operations mit Field Service synchronisieren
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erläutert die Vorlagen und die zugrunde liegende Aufgabe, die verwendet wird, um Projekte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
+Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Projekte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
 
 [![Synchronisierung von Geschäftsprozessen zwischen Finance and Operations und Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
-Die folgende Vorlagen und die zugrunde liegenden Aufgaben werden verwendet, um Projekte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
+Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um die Synchronisation von Projekten von Microsoft Dynamics 365 for Finance and Operations nach Microsoft Dynamics 365 for Field Service durchzuführen.
 
-**Name der Vorlage in der Datenintegration:**
+**Vorlagen in der Datenintegration**
 - Projekte (Finance and Operations zu Field Service)
 
-**Namen der Aufgaben im Datenintegrationsprojekt:**
+**Aufgaben im Datenintegrationsprojekt**
 - Projekte
 
 Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von  Projektlisten erfolgen kann:
 - Konten (Sales zu Finance and Operations) 
 
 ## <a name="entity-set"></a>Entitätssatz
-Field Service  Finance and Operations
-
 | Field Service           | Finance and Operations  |
 |-------------------------|-------------------------|
 |msdynce_externalprojects | Projekte                |
 
 ## <a name="entity-flow"></a>Entitätsfluss
-Projekte werden in Finance and Operations erstellt. Projekte mit **Projekttyp** Zeit und -material und **Projektphase** Prozess synchronisiert mit **Externer Projekt** Entität in Field Service, einschließlich Projektnummeren-, Projektnamen-, und Projektphasen und Debitorenkontoinformationen. Die Liste **Externes Projekt** wird verwendet, um Field Service Arbeitsaufträge mit Finance and Operations Projekte zu verbinden.
-Field Service CRM Lösund The External Project ist eine neue Entität, die alle Projekte aus Operations abruft.
-Das Feld Externes Projekt ist der Arbeitsauftragsentität hinzugefügt worden. Dieses Feld ist ein Suchfeld und  verbindet den Arbeitsauftrag mit einem Projekt. Der Auftrag wird dann mit dem Projekt in Operations verbunden. Wenn der Systemstatus von Offen auf In Verarbeitung (690.970.000) auf einen höheren Status das Feld für externe Projekttypen wird gesperrt und Sie können den Wert nicht hinzufügen, entfernen oder ändern.
+Projekte werden in Finance and Operations erstellt. Projekte mit **Projekttyp** **Zeit und -material** und **Projektphase** **Prozess** synchronisiert mit **Externer Projekt** Entität in Field Service, einschließlich Projektnummeren-, Projektnamen-, und Projektphasen und Debitorenkontoinformationen. Die Liste **Externes Projekt** wird verwendet, um Field Service Arbeitsaufträge mit Finance and Operations Projekte zu verbinden.
+
+## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung
+Die Entität ruft **Externes Projekt** alle Projekte von der erhaltenen Finanzierung und Arbeitsgängen ab. Das Feld **Externes Projekt** ist der **Arbeitsauftragsentität** hinzugefügt worden. Dieses Feld ist ein Suchfeld. Durch das Markieren des Arbeitsauftrags mit einem Projekt wird der Auftrag dem Projekt in Finance and Operations verbunden. Wenn der **Systemstatus** von **Offen auf In Verarbeitung (690.970.000)** auf einen höheren Status ändert, wird das Feld **Externe Projekttypen** gesperrt und Sie können den Wert nicht hinzufügen, entfernen oder ändern.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
-### <a name="in-finance-and-operations"></a>In Finance and Operations
+### <a name="finance-and-operations"></a>Finance and Operations
 Änderungsnachverfolgung für Datentitätprojekte nachverfolgen
 
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
@@ -69,4 +67,3 @@ Das Feld Externes Projekt ist der Arbeitsauftragsentität hinzugefügt worden. D
 ### <a name="projects-finance-and-operations-to-field-service-projects"></a>Projekte (Finance and Operations zu Field Service): Projekte
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSProject1.png)](./media/FSProject1.png)
-

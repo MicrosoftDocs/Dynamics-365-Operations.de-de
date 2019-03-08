@@ -1,13 +1,13 @@
---- 
-title: "Arbeitsvorlage für Bestellungen einrichten"
+---
+title: Arbeitsvorlage für Bestellungen einrichten
 description: Ziel dieser Prozedur ist es, eine einfache Arbeitsvorlage einzurichten, die verwendet wird, wenn empfangene Artikel eingelagert werden sollen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSWorkTemplateTable, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: d737f9dfd1888602266a87853e54407618ae2781
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbbe019bdca2d5182466a20370418a14032fe63d
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318027"
 ---
 # <a name="set-up-a-work-template-for-purchase-orders"></a>Arbeitsvorlage für Bestellungen einrichten
 
@@ -70,5 +70,4 @@ Ziel dieser Prozedur ist es, eine einfache Arbeitsvorlage einzurichten, die verw
     * Die Entnahme- und Einlagerungsanweisungen sind ein Satz. Jede Entnahme/Einlagerung muss dieselbe Arbeitsklasse aufweisen. Verwenden Sie die gleiche Arbeitsklasse, die Sie für die Entnahmeanweisung angegeben haben.  
 7. Klicken Sie auf "Speichern".
     * Beachten Sie, dass das Kontrollkästchen "Gültig" nun aktiviert ist.  
-
 

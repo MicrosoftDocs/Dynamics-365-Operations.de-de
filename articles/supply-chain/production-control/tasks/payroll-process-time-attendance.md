@@ -1,13 +1,13 @@
---- 
-title: "Lohnprozess für Zeit und Anwesenheit aktivieren"
-description: "Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wird."
+---
+title: Lohnprozess für Zeit und Anwesenheit aktivieren
+description: Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wird.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgPayTable, JmgPayRate, JmgPayAgreementTable, JmgPayAgreementLine, HcmWorker
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 0174f438396d814d153befe4a59a79b6eebb2288
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: 16d8fc2120dfb7b356b238957019a29d05963f9a
-ms.contentlocale: de-de
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "311104"
 ---
 # <a name="enable-the-payroll-process-for-time-and-attendance"></a>Lohnprozess für Zeit und Anwesenheit aktivieren
 
@@ -69,5 +69,4 @@ Diese Prozedur zeigt, wie der Lohnprozess für Zeit und Anwesenheit aktiviert wi
 6. Erweitern Sie den Abschnitt "Zeiterfassung".
 7. Klicken Sie auf "Bearbeiten".
 8. Geben Sie im Feld "Lohnvereinbarung" einen Wert ein, oder wählen Sie einen Wert aus.
-
 

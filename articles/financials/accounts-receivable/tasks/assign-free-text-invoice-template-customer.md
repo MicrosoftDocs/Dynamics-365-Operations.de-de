@@ -1,13 +1,13 @@
---- 
+---
 title: Einem Debitor eine Freitextrechnungsvorlage zuweisen
 description: In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu einem Debitor zuweisen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTable, CustRecurrenceInvoice
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 317b3bd4c1f395987ef3dbbd268c40be5c688320
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318924"
 ---
 # <a name="assign-free-text-invoice-template-to-a-customer"></a>Einem Debitor eine Freitextrechnungsvorlage zuweisen
 
@@ -48,5 +48,4 @@ In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu ein
 10. Wählen Sie das Wiederholungsmuster aus.
     * Täglich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Tagen ein. Beispiel: Wenn Sie 15 eingeben, wird für diesen Debitor alle 15 Tage eine Rechnung generiert.  Wöchentlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Wochen ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Wochen eine Rechnung generiert.  Monatlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Monaten ein. Beispiel: Wenn Sie 6 eingeben, wird für diesen Debitor alle sechs Monate eine Rechnung generiert.  Jährlich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Jahren ein. Beispiel: Wenn Sie 2 eingeben, wird für diesen Debitor alle zwei Jahre eine Rechnung generiert.  
 11. Geben Sie im Feld "Pro" eine Zahl ein.
-
 

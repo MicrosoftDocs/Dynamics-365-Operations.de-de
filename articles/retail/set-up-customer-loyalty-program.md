@@ -1,13 +1,13 @@
 ---
-title: "Überblick über die Loyalität"
-description: "In diesem Thema werden die Loyalitätsfunktionen innerhalb von Microsoft Dynamics 365 for Retail und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können."
+title: Übersicht über die Loyalität
+description: In diesem Thema werden die Loyalitätsfunktionen innerhalb von Microsoft Dynamics 365 for Retail und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
 author: scott-tucker
 manager: AnnBe
-ms.date: 10/24/2018
+ms.date: 01/08/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: bb1a1ff28c846a35858df971e29bb7a551c8012a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 09d4e46694e89b648981352f64da4a43ab1522e1
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320120"
 ---
-
 # <a name="loyalty-overview"></a>Überblick über die Loyalität
 
 [!include [banner](includes/banner.md)]
@@ -70,7 +69,7 @@ In der folgenden Tabelle werden die Prozesse beschreiben, die ausgeführt werden
 
 | Prozessname                         | Beschreibung | Seitenname |
 |--------------------------------------|-------------|-----------|
-| 1050 (Treueinformationen)           | Führen Sie diesen Prozess aus, um die Treuedaten von Microsoft Dynamics 365 for Retail an die Einzelhandelsshops zu senden. Es wird empfohlen, diesen Vorgang für eine regelmäßige Ausführung zu planen, damit Loyalitätsdaten an allen Filialen gesendet werden. | Vertriebsplan |
+| 1050 (Treueinformationen)           | Führen Sie diesen Prozess aus, um die Treuekonfigurationsdaten von Dynamics 365 for Retail an die Einzelhandelsshops zu senden. Es wird empfohlen, diesen Vorgang für eine regelmäßige Ausführung zu planen, damit Loyalitätsdaten an allen Filialen gesendet werden. | Vertriebsplan |
 | Treueschemas verarbeiten              | Führen Sie diesen Prozess aus, um Treueschemas den Einzelhandelskanälen zuzuordnen, denen das Treueschema zugewiesen ist. Dieser Vorgang kann so geplant werden, dass er als Stapelverarbeitungsvorgang ausgeführt wird. Sie müssen diesen Prozess ausführen, wenn Sie die Loyalitätskonfigurationsdaten (z. B. Treueschemas, Treueprogramme oder Treuebelohnungspunkte) ändern. | Treueschemas verarbeiten |
 | Offlinetreuebuchungen verarbeiten | Führen Sie diesen Prozess aus, um Treuekarten zu aktualisieren, damit sie Transaktionen einbeziehen, die offline verarbeitet wurden. Dieser Prozess gilt nur, wenn das **Offline verdienen**-Kontrollkästchen auf der Seite **Freigegebene Einzelhandelsparameter** aktiviert ist, damit Belohnungen offline erworben werden können. | Offlinetreuebuchungen verarbeiten |
 | Treuekartenebenen aktualisieren            | Führen Sie diesen Prozess aus, um die Einnahmenaktivität des Debitors mit den Stufenregeln für ein Treueprogramm zu vergleichen und um den Stufenstatus des Debitors zu aktualisieren. Dieser Prozess ist nur erforderlich, wenn Sie die Stufenregeln in den Treueprogrammen ändern und wenn Sie die aktualisierten Regeln rückwirkend auf die Treuekarten anwenden möchten, die bereits ausgestellt wurden. Dieser Prozess kann für einzelne Karten als Stapelverarbeitungsvorgang ausgeführt werden. | Treuekartenebenen aktualisieren |
@@ -118,12 +117,29 @@ Einzelhandel hat neue Loyalitätsfunktionen als Teil der Freigabe vom Oktober 20
 
     ![Verfallende Punkte](./media/Expiring%20points.png "Verfallende Punkte anzeigen")
     
-## <a name="upcoming-enhancements"></a>Anstehende Verbesserungen
 
-Die folgenden Funktionen werden in den künftigen monatlichen Aktualisierungen von Dynamics 365 for  Retail verfügbar sein.
-    
-- Debitoren wollen die Möglichkeit, die Treusaldodetails auf den Verbraucherseiten ansehen zu können. Desgleichen ist es wichtig, dass der Kassierer den Debitorenverlauf der Treupunkte in MPOS/CPOS anzeigen kann, um rasch auf Anfragen von Kunden zu antworten. In einer geplanten monatlischen Aktualisierung können Kunden un d Kassierer die Details des Loyalitätsverlaufs sehen.
-- Viele Einzelhändler können Treuepunkte nur auf Basis der Verkaufstransaktionen vornehmen, aber die  die Debitor-orientierteren Einzelhändler möchten ihre Kunden für alle Engagementaktivität mit ihrer Marke vergüten. Beispielsweise möchten sie eine Belohnung für das Ausfüllen einer Onlineumfrage, für den Besuch im Geschäft, für das Liken des Einzelhändlers auf Facebook, für das Tweeten und mehr ausgeben. In der Zukunft werden wir die Möglichkeit hinzufügen, für jede Debitorenaktivität Treuepunkte auszugeben. Um dies zu tun, kann der Einzelhändler einen "anderen Aktivitätstyp" definieren und die Einnahmen für diese Aktivitäten definieren. Wir werden auch eine Retail Server API bereitstellen, die aufgerufen werden kann, wenn eine Aktivität angezeigt wird, die die Einnahmeregel verwendet, um die erforderlichen Treuepunkte zu vergeben).
-- Um eine echte OmniKanals Retail Experience zu aktivieren, erlauben wir Debitoren, Treuepunkte über alle Kanäle zu erwerben und einzulösen.
-- Kostenloser Versand oder vergünstigter Versand ist einer der erwiesenen Motivationsfaktoren, damit Kunden online kaufen. Um Einzelhändler zu ermöglichen, Versandpromotionen einzurichten, stellen wir eine neue Promotionsart bereit, in der Einzelhändler den Schwellenwerte definieren können, bei dem Debitoren nach Erreichen von vergünstigtem oder kostenlosem Versand profitieren können.
+- Mit der Version 8.1.3 haben wir die Option "Zahlen nach Treue" im Callcenterkanal aktiviert. Um diese Option zu aktivieren, erstellen Sie einen Kundentreue-Zahlungsmitteltyp und ordnen Sie ihn dem Callcenter zu. 
 
+>[!NOTE]
+> Da die Treuezahlungen als Kartenzahlungen eingerichtet sind, müssen Sie eine Karte auf der Seite **Karteneinstellung** auswählen. 
+
+![Treuekarteneinrichtung](./media/LoyaltyCardSetup.png "Treuekarteneinrichtung")
+
+Nach der Einrichtung können Kunden ihre Treuepunkte im Callcenter einlösen. Darüber hinaus verbessern wir die Benutzerumgebung weiter, um den "Betrag, der durch Treuepunkte abgedeckt ist", darzustellen, so dass die Callcenter-Benutzer nicht zu einem anderen Bildschirm navigieren müssen, um den Treuebetrag anzuzeigen.
+
+- Viele Einzelhändler vergeben Treuepunkte nur auf der Grundlage der Verkaufstransaktionen, aber die meisten kundenorientierten Einzelhändler wollen ihre Kunden für jede ihrer Engagementaktivitäten mit ihrer Marke belohnen. Beispielsweise möchten sie Belohnungen für das Ausfüllen einer Online-Umfrage, den Besuch eines Ladens, das Liken der Einzelhändler auf Facebook oder das Tweeten über den Einzelhändler bereitstellen. Dazu kann der Einzelhändler beliebig viele "Andere Aktivitätstypen" definieren und die entsprechenden Einnahmeregeln für diese Aktivitäten definieren. Es gibt auch eine exponierte Retail Server API "PostNonTransactionalActivityLoyaltyPoints", die aufgerufen werden kann, wenn eine Aktivität identifiziert wird, die den Kunden mit Treuepunkten vergüten soll. Diese API erwartet die Treuekartenkennung, die Kanalkennung und die andere Aktivitätstyp-ID, so dass der Kunde, der belohnt werden soll, gefunden werden kann und die Einnahmeregel für die Aktivität identifiziert werden kann. 
+
+    Die Vergabe von Punkten für Nicht-Transaktionsaktivitäten erfolgt in der Regel in zwei wesentlichen Schritten:
+    - Es ist eine Aktivität zu erkennen, die vergütet werden sollte.
+    - Vergütung der entsprechenden Punkte.
+
+    Der erste Schritt ist extern zu Microsoft Dynamics 365 for Retail, wie z.B. das Twittern über die Marke oder das Liken der Marke auf Facebook. Nachdem diese Aktivität erkannt wurde, können die Händler die oben genannte Retail Server API aufrufen und Treuepunkte in Echtzeit vergeben. In solchen Szenarien ist ein Überprüfungsschritt nicht erforderlich, da eine Aktivität stattgefunden hat und entsprechende Punkte vergeben werden sollten. Es gibt jedoch Szenarien, in denen der Einzelhändler die Datensätze vor der Vergabe der Punkte überprüfen möchte. Beispielsweise bietet der Einzelhändler in der Filiale einen Workshop an, für den sich die Kunden auf der E-Commerce-Website oder einer anderen Anwendung zur Registrierung von Veranstaltungen anmelden. Allerdings sollten nur die teilnehmenden Kunden Treuepunkte sammeln. Für solche Szenarien haben wir mit dem Release 10.0 eine Dateneinheit mit dem Namen **Einzelhandelstreue andere Aktivitätstyp-Positionen** eingeführt. Diese Datenentität ermöglicht es den Einzelhändlern, entweder Datenimport/-export-Framework (DIXF) oder OData API zu verwenden, um die Aktivitäten aufzuzeichnen, die Kunden Treuepunkte verleihen sollen. Die Dateneinheit speichert die Aktivitäten in einer Erfassung mit dem Namen **Loyalitätspositionen für andere Aktivitäten**, das für Überprüfungs- und Änderungszwecke verwendet werden kann. Nach der Überprüfung der Daten kann der IT-Benutzer entweder die Aktivitätspositionen manuell buchen oder einen Einzelvorgang mit dem Namen **Andere Aktivitätstypen für Loyalitätspositionen verarbeiten** ausführen, der alle nicht gebuchten Aktivitätspositionen bucht und die Punkte auf der Grundlage der Ertragsregeln an die Kunden vergibt. In dem obigen Szenario ruft die Ereigniserfassungsanwendung OData API auf, um die Kundeninformationen an Dynamics 365 for Retail zu senden. Der IT-Anwender kann jedoch die Aktivitätspositionen nur für die Kunden buchen, die am Workshop teilgenommen haben, und die Aktivitätspositionen für die anderen Kunden löschen. 
+
+> [!NOTE]
+> Derzeit zwingt das System die Benutzer, einen Nummernkreis für "andere Aktivitätstypen" einzurichten, aber dies wird in zukünftigen Versionen kein notwendiger Schritt sein. Um eine Nummernkreis einzurichten, gehen Sie zu **Freigegebene Einzelhandelsparameter > Nummernkreise** und wählen Sie einen Nummernkreis für **Loyalität andere Aktivitätstyp-ID**.
+
+- Um einen guten Kundenservice zu bieten und Kundenanfragen effektiv zu beantworten, ist es wichtig, dass die Kassierer Zugang zu einem vollständigen Kundenprofil haben. Mit der Version 10.0 können Kassierer Details zur Loyalitätshistorie sowie das zugehörige Treueprogramm und Stufeninformationen am POS einsehen.
+- Kostenloser Versand oder vergünstigter Versand ist einer der erwiesenen Motivationsfaktoren, damit Kunden online kaufen. Um den Einzelhändlern die Einrichtung von Versandpromotionen zu ermöglichen, haben wir mit der Version 10.0 eine neue Art von Aktion namens "Versandschwellenrabatt" eingeführt, bei der der Einzelhändler die Schwellenwerte definieren kann, die nach Erreichen der Schwellenwerte die Kunden für den vergünstigten oder kostenlosen Versand qualifizieren. Geben Sie z.B. 35 Euro für kostenlosen "Zweitageversand" oder kostenlosen "Zweitageversand" für alle treuen Kunden aus. Diese Rabatte gelten nur für die Versandkosten, die auf Bestellungen angewendet werden. Da ein Einzelhändler mehrere Arten von Belastungen, wie z.B. Bearbeitung oder Installationen, einrichten kann, muss der Einzelhändler angeben, welche Belastung als Versandkosten angesehen wird. Diese Konfiguration trägt den Namen "Versandkostencode" und ist auf der Registerkarte **Kundenaufträge** auf der Seite **Einzelhandelsparameter** verfügbar. Dieser Rabatt berücksichtigt alle vorhandenen Standardrabattfunktionen, wie z.B. die Möglichkeit, dass der Einzelhändler Rabatte mit Coupons beschränken kann, so dass nur die Kunden mit Coupons diese Rabatte erhalten können. Diese Rabatte nutzen die Preisgruppenfunktion, um die Berechtigung solcher Rabatte zu bestimmen. Beispielsweise kann der Einzelhändler wählen, ob er diese Aktionen nur in den Online-Kanälen und/oder kanalübergreifend für bestimmte Kundengruppen wie z.B. Treuekunden durchführen möchte. Nachdem die Auftragspositionen mit der angegebenen Lieferart den definierten Schwellenwert erreicht haben, wird der Versandrabatt angewendet und reduziert die Versandkosten basierend auf dem eingerichteten Rabatt. 
+
+> [!NOTE]
+> Im Gegensatz zu anderen periodischen Rabatten wie Mengen-, Einfach-, Angebots-Sortiment- und Schwellenrabatten erzeugt der Versandrabatt keine Rabattpositionen. Änderungen an den Versandkosten müssen direkt vorgenommen werden.

@@ -1,13 +1,13 @@
---- 
-title: "Eine Vorlage für Freitextrechnungen erstellen"
-description: "Verwenden Sie die folgende Prozedur, um eine Vorlage für Freitext-Serienrechnungen zu erstellen."
+---
+title: Eine Vorlage für Freitextrechnungen erstellen
+description: Verwenden Sie die folgende Prozedur, um eine Vorlage für Freitext-Serienrechnungen zu erstellen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 05/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 91f2ec2f8ab21616c6a1b886ee89d6faf84023e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f69505f0c6137121cae92d42d052b244326c8436
-ms.openlocfilehash: 9b7ce8ba180f67c4a52439f4e03b59f07a71323d
-ms.contentlocale: de-de
-ms.lasthandoff: 06/28/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310782"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Eine Vorlage für Freitextrechnungen erstellen
 
@@ -68,4 +68,3 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Die Erfassung ist 
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Eine Vorlage für Freitextrechnungen erstellen
 Sie können eine vorhandene Freitextrechnung als Vorlage auch speichern. Wenn Sie aus der Rechnungsregisterkarte Speichern in Vorlage auswählen, geben Sie einen Namen und eine Beschreibung für die Vorlage an. Wenn eine Vorlage mit dem Namen bereits vorhanden ist, sehen Sie eine Benachrichtigung, dass eine Vorlage mit diesem Namen vorhanden ist. Sie können immer noch auf OK klicken, um es zu ersetzen. 
-

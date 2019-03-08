@@ -1,13 +1,13 @@
 ---
-title: "Power BI Inhalte Vergütung und Benefits"
-description: "In diesem Thema wird der Finance and Operations-Power BI-Inhalt \"Vergütung und Vorteile\" beschrieben."
+title: Power BI-Inhalt "Vergütung und Vorteile"
+description: In diesem Thema wird der Power BI-Inhalt "Vergütung und Vorteile" in Finance and Operations beschrieben.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 6834940b16749461066e8f1000cbb7c2d4371109
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "327434"
 ---
-
-# <a name="compensation-and-benefits-power-bi-content"></a>Power BI Inhalte Vergütung und Benefits
+# <a name="compensation-and-benefits-power-bi-content"></a>Power BI-Inhalt "Vergütung und Vorteile"
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Finance and Operations-Power BI-Inhalt "Vergütung und Vorteile" beschrieben. 
+In diesem Thema wird der Power BI-Inhalt "Vergütung und Vorteile" in Finance and Operations beschrieben. 
 
 ## <a name="reports-that-are-included-in-the-content-pack"></a>Berichte, die im Paket enthalten sind
 Nachdem Sie das Inhaltspaket mit Ihren Finance and Operations-Daten verbunden haben, zeigen die Berichte die Daten Ihrer Organisation an. Wenn Sie bisher noch nie Microsoft Power BI verwendet haben, finden Sie weitere Informationen unter [Erste Schritte in Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Die Berichte, die im Paket enthalten sind, haben Diagrammen und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
@@ -68,4 +67,3 @@ Finance and Operations-Daten werden für die Berichte des Inhaltspaket "Vergütu
 | Workforce\_WorkerName             | Vorname, Nachname, vollständiger Name                                                                       | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend |
 | Workforce\_WorkerTitle            | Titel- und Dienstalter                                                                                   | Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend |
 | Workorce\_WorkerTrend            | Arbeitskräfte im Zeitverlauf, Mitarbeiterzahl, Unternehmen und Position                                                        | Workforce\_Company, Workforce\_Compensation, Workforce\_GeographicLocation, Workforce\_Performance, Workforce\_WorkerName, Workforce\_ReportsToWorkerName, Workforce\_CalendarOffset, Workforces\_Date, Workforce\_WorkerTitle, Workforce\_Demographics, Workforce\_Employment, Workforce\_Job, Workforce\_WorkerBenefit |
-

@@ -1,13 +1,13 @@
 ---
-title: "Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen"
-description: "Dieser Artikel beschreibt den Prozess der Aktualisierung von Wiederbeschaffungskosten und versicherten Werten für Anlagen."
+title: Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen
+description: Dieser Artikel beschreibt den Prozess der Aktualisierung von Wiederbeschaffungskosten und versicherten Werten für Anlagen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0756287406ad12237632ffbd455dbc6ba15d9915
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: eb3db5863bf2fcca31b6af878e7324b079f1c630
-ms.openlocfilehash: ad706a9ee441858a6f4a128ff978e24efb6ecfce
-ms.contentlocale: de-de
-ms.lasthandoff: 01/12/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324375"
 ---
-
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Neuberechnung von Wiederbeschaffungskosten und versicherten Werten für Anlagengruppen
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Am nächsten Tag teilt Ihnen Ihr Vorgesetzter mit, dass die Verringerung bei den
 
 > [!NOTE]  
 > Der Faktor "-10" lässt sich nicht durch Eingabe eines positiven Faktors mit dem Wert "10" (oder durch Eingabe des Faktors "2" – also der Differenz zwischen "-10" und "-8") rückgängig machen, da die Beträge dann nicht korrekt berechnet werden. 
-
 
 
 

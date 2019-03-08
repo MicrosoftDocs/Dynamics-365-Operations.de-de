@@ -1,13 +1,13 @@
---- 
+---
 title: E-Mail-Vorlagen verwalten
-description: "Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeichen in einem neuen Dokument übertragen und in Vorlagen verwenden, die Sie bei der Kommunikation mit Bewerbern und Kandidaten unterstützen."
+description: Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeichen in einem neuen Dokument übertragen und in Vorlagen verwenden, die Sie bei der Kommunikation mit Bewerbern und Kandidaten unterstützen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMApplicationWordBookmark, HRMApplicationEmailTemplate
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f8eface8fd47378e25c7baeca9a84fa41097dfbe
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1eeaf1675b6653ab2c8c04d05ec1bff3cd0bb18d
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309609"
 ---
 # <a name="manage-email-templates"></a>E-Mail-Vorlagen verwalten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeichen in einem neuen Dokument übertragen und in Vorlagen verwenden, die Sie bei der Kommunikation mit Bewerbern und Kandidaten unterstützen. Hierfür muss eine Vorlage mit Standardtext und einigen Lesezeichen an den Positionen erstellt werden, an denen die Systemdaten eingefügt werden sollen. So können Sie z. B. Adresse und Kontaktinformationen für einen Bewerber in ein Microsoft Word-Dokument einfügen, das Sie bei der Kommunikation mit diesem Bewerber verwenden können. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeichen in einem neuen Dokument übertragen und in Vorlagen verwenden, die Sie bei der Kommunikation mit Bewerbern und Kandidaten unterstützen. Hierfür muss eine Vorlage mit Standardtext und einigen Lesezeichen an den Positionen erstellt werden, an denen die Systemdaten eingefügt werden sollen. So können Sie z. B. Adresse und Kontaktinformationen für einen Bewerber in ein Microsoft Word-Dokument einfügen, das Sie bei der Kommunikation mit diesem Bewerber verwenden können. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
 
 ## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a>Auswählen der Lesezeichen für die E-Mail-Vorlagen
@@ -50,5 +50,4 @@ Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeiche
 8. Setzen Sie die Eingabe der E-Mail-Nachricht fort, und fügen Sie die Lesezeichenfelder an den gewünschten Positionen ein.
     * Setzen Sie die Eingabe der E-Mail-Nachricht fort, und fügen Sie die Lesezeichenfelder an den gewünschten Positionen ein.  
 9. Klicken Sie auf "Speichern".
-
 

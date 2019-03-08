@@ -1,13 +1,13 @@
 ---
 title: Laufender Durchschnittseinstandspreis
-description: "Durch den Lagerabschluss werden Abgangsbuchungen mit Zugangsbuchungen ausgeglichen. Grundlage hierfür bildet die Lagerbewertungsmethode, die in der Artikelmodellgruppe des Artikels ausgewählt ist. Vor Ausführung des Lagerabschlusses wird vom System jedoch ein laufender Durchschnittseinstandspreis berechnet, der in der Regel zum Ausführen von Abgangsbuchungen verwendet wird."
+description: Durch den Lagerabschluss werden Abgangsbuchungen mit Zugangsbuchungen ausgeglichen. Grundlage hierfür bildet die Lagerbewertungsmethode, die in der Artikelmodellgruppe des Artikels ausgewählt ist. Vor Ausführung des Lagerabschlusses wird vom System jedoch ein laufender Durchschnittseinstandspreis berechnet, der in der Regel zum Ausführen von Abgangsbuchungen verwendet wird.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e14f38baaef32c72761594147feca8d08651a050
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: aeb23f78d9bec93cf92214470e9ace3cd88b92c3
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312024"
 ---
-
 # <a name="running-average-cost-price"></a>Laufender Durchschnittseinstandspreis
 
 [!include [banner](../includes/banner.md)]
@@ -76,7 +75,6 @@ Sollten die folgenden Methoden im Rahmen des Geschäftsmodells zulässig sein, k
 -   Wenn Sie *nicht* die Option **Physischen Wert einbeziehen** für einen Artikel auswählen, müssen Sie das Kontrollkästchen **Wertmäßig negativer Bestand** auf der Seite **Artikelmodellgruppen** deaktivieren.
 
 Bedenken Sie ausserdem, dass der maximale Versatz des physischen Lagerwerts durch die Anzahl der physischen Buchungen, sowie durch die Differenz zwischen physischen und wertmäßigen Preisen begrenzt wird. Vorausgesetzt, dass alle physischen Buchungen letzten Endes wertmäßig aktualisiert werden, kann der physische Wert keinen extrem hohen Wert erreichen. Beachten Sie, dass der Verstärkungseffekt sich deutlich abschwächt , wenn sich der kumulierte Versatz nicht auf einen verfügbaren Artikel beschränkt, sondern sich auf mehrere Artikel verteilt.
-
 
 
 

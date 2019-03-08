@@ -1,37 +1,36 @@
 ---
-title: "Erstellen, Genehmigen und Buchen von Aufträgen in Attract"
-description: "In diesem Thema werden die Elemente einer Stelle in Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird."
+title: Erstellen, Genehmigen und Buchen von Aufträgen in Attract
+description: In diesem Thema werden die Elemente einer Stelle in Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
 author: josaw
 manager: AnnBe
 ms.date: 12/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: 95031534c43dc0578e258bc3e5376c429d72b0ab
 ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.contentlocale: de-de
-ms.lasthandoff: 12/23/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304549"
 ---
-
 # <a name="create-approve-and-post-jobs-in-attract"></a>Erstellen, Genehmigen und Buchen von Aufträgen in Attract
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Elemente einer Stelle in Microsoft Dynamics 365 for Talent beschrieben: Attract. Es wird auch erklärt, wie eine Stelle erstellt wird.
+In diesem Thema werden die Elemente einer Stelle in Microsoft Dynamics 365 for Talent: Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
 
 ## <a name="job-creation"></a>Joberstellung
 
@@ -45,7 +44,7 @@ Die Registerkarte **Stellendetails** enthält Details zu den Zuständigkeiten un
 
 Standardmäßig wird das Feld **Anzahl der offenen Stellen** auf **1** festgelegt. Allerdings kann der Wert geändert werden. Wenn ein Angebot für eine Stelle vorbereitet wurde, wird der Wert im Feldes **Anzahl der offenen Stellen** verringert.
 
-Wenn Positionsverwaltung im Administrator-Center aktiviert wurde, ist die **Positionen aktualisieren**-Suche verfügbar. Diese Suche liest den JobPositions-Entität im Common Data Service for Apps und gibt eine Liste der Positionen zurück, die für die Stelle ausgewählt werden können. Wenn die Anzahl der Positionen, die Sie auswählen, die Anzahl offener Stellen überschreitet, erhalten Sie eine Warnung. Sie erhalten auch dann eine Warnung, wenn eine Position in mehreren Stellen verwendet wird.
+Wenn Positionsverwaltung im Administrator-Center aktiviert wurde, ist die **Positionen aktualisieren**-Suche verfügbar. Diese Suche liest die JobPositions-Entität im Common Data Service for Apps und gibt eine Liste der Positionen zurück, die für die Stelle ausgewählt werden können. Wenn die Anzahl der Positionen, die Sie auswählen, die Anzahl offener Stellen überschreitet, erhalten Sie eine Warnung. Sie erhalten auch dann eine Warnung, wenn eine Position in mehreren Stellen verwendet wird.
 
 > [!NOTE]
 > Positionsverwaltung ist im Unternehmen mit dem umfassenden Add-On für Neueinstellungen verfügbar.
@@ -75,7 +74,7 @@ Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt 
 
 ## <a name="postings"></a>Buchungen
 
-Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder zu Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder zu LinkedIn veröffentlicht werden. 
+Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. 
 
 > [!NOTE]
 > Es gibt drei wichtige die für den Stellenausschreibungsprozess für LinkedIn zu beachten sind.
@@ -169,4 +168,3 @@ Führen Sie folgende Schritte aus, um eine Stelle zu erstellen.
 
 13. Um die Stelle zu aktivieren, wählen Sie **Aktivieren** aus.
 14. Um die Stelle zu veröffentlichen, navigieren Sie zu **Veröffentlichungen** und wählen anschließend **Jetzt veröffentlichen** auf der Talent Careers-Seite oder LinkedIn aus.
-

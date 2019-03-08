@@ -1,13 +1,13 @@
 ---
 title: Permanente Inventur
-description: "In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing-Lösung verwenden können, die in der Warehouse-Verwaltung verfügbar ist. Dieser Artikel gilt nicht für die Warehousing-Lösung, die in der Lagerverwaltung verfügbar ist."
+description: In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing-Lösung verwenden können, die in der Warehouse-Verwaltung verfügbar ist. Dieser Artikel gilt nicht für die Warehousing-Lösung, die in der Lagerverwaltung verfügbar ist.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 9da40e90982d9d4aca38890ed121782f4236712d
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323225"
 ---
-
 # <a name="cycle-counting"></a>Permanente Inventur
 
 [!include [banner](../includes/banner.md)]
@@ -138,7 +137,6 @@ Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählt
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Konfigurieren von mobile Geräten für Lagerortarbeit](configure-mobile-devices-warehouse.md)
-
 
 
 

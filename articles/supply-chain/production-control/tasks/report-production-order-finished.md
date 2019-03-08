@@ -1,13 +1,13 @@
---- 
+---
 title: Einen Produktionsauftrag als abgeschlossen melden
 description: Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet wird.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 97e67ff51e4bc4533aeb2485c34cd5ec8a882bb6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dadf0e87eac8522f61bb094c146e37f46a21fc09
-ms.openlocfilehash: e6f5e7316f89ba7c2b7091eb9df02aa07ea44dbd
-ms.contentlocale: de-de
-ms.lasthandoff: 02/06/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320488"
 ---
 # <a name="report-a-production-order-as-finished"></a>Einen Produktionsauftrag als abgeschlossen melden
 
@@ -51,5 +51,4 @@ Diese Prozedur zeigt an, wie ein Produktionsauftrag als abgeschlossen gemeldet w
 3. Markieren Sie in der Liste die ausgewählte Zeile.
 4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
     * Die Erfassung "Fertigmeldung" wurde gebucht. Wenn Sie Regulierungen in der Erfassung vornehmen möchten, können Sie manuell eine neue Erfassung erstellen, in der Sie Änderungen vornehmen können.  
-
 

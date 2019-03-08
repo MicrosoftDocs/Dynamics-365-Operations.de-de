@@ -1,13 +1,13 @@
 ---
-title: "Registrierung für Fertigungssteuerung"
-description: "In diesem Thema wird beschrieben Konzepte und Begriffe erläutert, die für müssen, um Fertigungssteuerungsfunktionen zu konfigurieren und zu verwenden."
+title: Registrierung für Fertigungssteuerung
+description: In diesem Thema wird beschrieben Konzepte und Begriffe erläutert, die für müssen, um Fertigungssteuerungsfunktionen zu konfigurieren und zu verwenden.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgRegistration
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1bbcd7ebea869f921c2eadd05e64509ff9246aa4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e5d4ee2fb1cd58107043939c3721fd857909f16b
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318165"
 ---
-
 # <a name="registration-for-manufacturing-execution"></a>Registrierung für Fertigungssteuerung
 
 [!include [banner](../includes/banner.md)]
@@ -59,7 +58,6 @@ Arbeitskräfte können bei der Fertigungssteuerung verschiedene Arten von Erfass
 -   **Pausen erfassen** (verfügbar bei Zeit und Anwesenheit) – Während des Arbeitstags können Arbeitskräfte erfassen, dass sie ihre Arbeitsstation verlassen, um eine Pause einzulegen. Es können mehrere Pausentypen eingerichtet werden. Wenn eine Arbeitskraft aus der Pause zurückkehrt und sich wieder anmeldet, erfasst das System die Rückkehr der Arbeitskraft, und die Erfassung der Pausenzeit wird beendet.
 -   **Indirekte Aktivitäten erfassen** (verfügbar bei Zeit und Anwesenheit) – Bei indirekten Aktivitäten handelt es sich um unproduktive Aktivitäten, die Arbeitskräfte während des Arbeitstags ggf. erledigen. Beispiele hierfür sind eine Abteilungs- oder Teambesprechung oder Wartungsarbeiten, die im Fertigungsbereich durchgeführt werden. Arbeitskräfte können die Erfassungen anhand der indirekten Projektvorgänge durchführen, die eingerichtet wurden.
 -   **Überstunden erfassen** (verfügbar bei Zeit und Anwesenheit) – Arbeitskräfte, die gebeten wurden, Überstunden zu mache, können auswählen, ob die Überstunden als Gleitzeit oder Überstunden erfasst werden sollen.
-
 
 
 

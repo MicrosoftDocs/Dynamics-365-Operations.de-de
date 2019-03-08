@@ -1,13 +1,13 @@
 ---
-title: Power BI-Weiterbildung
-description: In diesem Thema wird der Power BI-Weiterbildungsinhalt beschrieben.
+title: Power BI-Inhalt zur Weiterbildung
+description: In diesem Thema wird der Power BI-Inhalt zur Weiterbildung beschrieben.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations, Talent
@@ -15,28 +15,27 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ee0cc2e22609d1a87e7d2b6dcd031606191f879
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321454"
 ---
-
-# <a name="learning-power-bi-content"></a>Power BI-Weiterbildung
+# <a name="learning-power-bi-content"></a>Power BI-Inhalt zur Weiterbildung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der **Weiterbildungs**-Inhalt für Microsoft Power BI beschrieben.
+In diesem Thema wird der Microsoft Power BI-Inhalt zur **Weiterbildung** beschrieben.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
 
-Die Berichte, die im **Weiterbildungs**-Inhalt von Power BI enthalten sind, haben Diagramme und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
+Die Berichte, die im Power BI-Inhalt zur **Weiterbildung** enthalten sind, haben Diagramme und Tabellen, die zusätzliche Informationen enthalten. Die Berichte werden in der folgenden Tabelle näher erläutert.
 
 | Bericht                | Inhalt |
 |-----------------------|----------|
 | Überblick über die Weiterbildung     | Zusammenfassung der anderen Berichte |
-| Kurs-Analyse       | Erfassung nach Lagerplatz, Teilnehmer nach Status, Kurse nach Typ pro Unternehmen und Kursanwesenheit nach Stelle |
+| Kurs-Analyse       | Erfassung nach Lagerplatz, Teilnehmer nach Status, Kurse nach Typ pro Unternehmen und Kursanwesenheit nach Stelle |
 | Erfassungsanalyse | Steuernummer |
 | Kurstypen          | Kurstypen nach Qualifikation |
 | Kursleiteranalyse   | Verhältnis von Kurse zu Kursleiter, Anzahl Kursleiter, Kurse vom Kursleiter, Kurse pro Kursleiter und Kursagenda nach Kursleiter |
@@ -47,7 +46,7 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Die folgenden Daten werden verwendet, um die Berichte im **Weiterbildungs**-Inhalt von Power BI zu füllen. Diese Tabelle zeigt die Entitäten, auf denen der Inhalt basiert.
+Die folgenden Daten werden verwendet, um die Berichte im Power BI-Inhalt zur **Weiterbildung** zu füllen. Diese Tabelle zeigt die Entitäten, auf denen der Inhalt basiert.
 
 | Entität           | Inhalt                                                         | Beziehungen mit anderen Entitäten |
 |------------------|------------------------------------------------------------------|-----------------------------------|
@@ -64,4 +63,3 @@ Die folgenden Daten werden verwendet, um die Berichte im **Weiterbildungs**-Inha
 | Position         | Position, Titel und FTE                  | Kursagenda, Kursteilnehmer |
 | Mitarbeitername    | Vorname, Nachname, vollständiger Name                             | Kursteilnehmer |
 | Mitarbeitertitel   | Titel- und Dienstalter                                         | Kursteilnehmer |
-
