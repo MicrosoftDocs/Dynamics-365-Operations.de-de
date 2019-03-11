@@ -1,13 +1,13 @@
 ---
-title: "Aktivitätsbasierte Fremdarbeit"
-description: "In diesem Thema wird beschrieben wie Fremdarbeitsaktivitäten in einem Produktionsfluss für die Lean Manufacturing verwendet wird."
+title: Aktivitätsbasierte Fremdarbeit
+description: In diesem Thema wird beschrieben wie Fremdarbeitsaktivitäten in einem Produktionsfluss für die Lean Manufacturing verwendet wird.
 author: cvocph
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 59b41b31931a128898ee70a583bfb9c515f90abc
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350043"
 ---
-
 # <a name="activity-based-subcontracting"></a>Aktivitätsbasierte Fremdarbeit
 
 [!include [banner](../includes/banner.md)]
@@ -44,7 +43,7 @@ Beispielsweise hilft ein Zulieferer in einem Supermarkt aus, der sich am Standor
 
 Ein Zulieferer kann zum Lastenausgleich verwendet werden, um die Gesamtkapazität des Produktionsflusses auszugleichen. Beispielsweise wird ein Produktionsfluss modelliert, indem geplante Kanban-Regeln verwendet werden. Der Planer verwendet die Kanbanplanungskarte, um Arbeitsgruppen zu planen und auszulasten. Der Planer überwacht auch den konsolidierten Lieferungszeitplan für den Supermakrt auf der Seite **Zeitplan bereitstellen**. Mehrere Zulieferer können in einem oder mehreren Produktionsflüssen modelliert werden, und es gibt möglicherweise mehrere Kanban-Regeln, die verwendet werden können, um das gleiche Produkt an denselben Lagerplatz durch unterschiedliche Aktivitäten zu liefern. Der Planer kann Kanbans zu einer alternativen Kanban-Regel konvertieren, ein Kanban neu einzuplanen, der ursprünglich für  die interne Produktion mit einem alternativen Prozess erstellt wurde. Genau genommen hat die Art der Fertigungszelle keine Auswirkungen auf den Produktionsfluss. Dasselbe Funktionsprinzip gilt für zwei parallele interne Fertigungszellen oder zwei untergeordnete Dienstleistungszellen.   
 
-Wie jede andere Aktivität in einem Produktionsfluss, können in Fremdarbeit ausgeführte Aktivitäten inventarisiertes, nicht-inventarisiertes (Ressource in Fertigung) und RIF \[\] und halbfertige Materialien und Produkte verbrauchen. In allen Argumenten sind die Prozesse für die Planung und die Ausführung mit denen der geregelten Aktivitäten identisch. Darüber hinaus verarbeiten denjenigen Prozesse das gleiche wie interne Arbeit.
+Wie jede andere Aktivität in einem Produktionsfluss, können in Fremdarbeit ausgeführte Aktivitäten inventarisiertes, nicht-inventarisiertes (Ressource in Fertigung) und \[RIF\] und halbfertige Materialien und Produkte verbrauchen. In allen Argumenten sind die Prozesse für die Planung und die Ausführung mit denen der geregelten Aktivitäten identisch. Darüber hinaus verarbeiten denjenigen Prozesse das gleiche wie interne Arbeit.
 
 ## <a name="purchase-process-for-subcontracted-activities-services"></a>Bestellanforderungen für Fremdarbeitsaktivitäten (Services)
 Der Einkaufprozess für Fremdarbeitsaktivitäten basiert auf dem physischen Materialfluss, der durch Kanban-Einzelvorgangs-Fortschritt beispielsweise Start oder Beenden erfasst wird. Der Finanzstrom beispielsweise Kosten von Fremdarbeit ist ein sekundärer Fluss, der dem physischen Ablauf folgt. Gleichzeitig ist der Einkaufprozess ein unabhängiger Prozess, der manuelle Regulierung der Bestellungen bei jedem Schritt zulässt. Bestellanforderungen für Fremdarbeitsaktivitäten (Services):
@@ -89,7 +88,7 @@ Wie für Prozessaktivitäten müssen Sie einen Standard-Service für weiterverge
 ## <a name="service-quantity-calculation"></a>Servicemengenberechnung
 Der ganze Einkaufsprozess basiert auf einer Artikelreferenz für einen Service. Diese Artikelreferenz wird in eine Maßeinheit eines Dienstes gemessen. Services werden üblicherweise entweder in Anzahl Dienstleistungen (Einheiten) oder in Zeit gemessen. Um die Service-Menge, basierend auf den erfassten Abschluss von Kanban-Einzelvorgängen zu berechnen, können die folgenden Methoden zur Verfügung gestellt werden:
 
--   **Berechnung, die auf der Anzahl von Einzelvorgängen basiert** – Ein Kanban-Einzelvorgang entspricht *n* Service-Einheiten, unabhängig von der beschafften Produktmenge. Im Lean Manufacturing, ein Einzelvorgang entspricht einer Handhabungseinheit. Diese Berechnungsmethode betrifft alle Services, die einen Festpreis pro Handhabungseinheit haben. Daher gilt diese Methode normalerweise für Umlagerungsaktivitäten. Allerdings kann dies auch für Prozessaktivitäten gelten, die gesamte Handhabungseinheiten verarbeiten.
+-   **Berechnung, die auf der Anzahl von Einzelvorgängen basiert** – Ein Kanban-Einzelvorgang entspricht *n* Service-Einheiten, unabhängig davon, wie die Fertigproduktmenge beschafft wird. Im Lean Manufacturing, ein Einzelvorgang entspricht einer Handhabungseinheit. Diese Berechnungsmethode betrifft alle Services, die einen Festpreis pro Handhabungseinheit haben. Daher gilt diese Methode normalerweise für Umlagerungsaktivitäten. Allerdings kann dies auch für Prozessaktivitäten gelten, die gesamte Handhabungseinheiten verarbeiten.
 -   **Berechnung, die auf Grundlage der Produktmenge basiert** – Die Service-Menge ist relativ zu der Produktmenge, die geplant/beschafft wird. Wenn die beschaffte Produktmenge berechnet wird, können Ausschussmengen entweder einbezogen oder nicht berücksichtigt werden. Diese Berechnungsmethode gilt für alle Anfragen, in denen der Service-Preis pro Einheit des verarbeiteten Produkts ausgeglichen wird.
 -   **Berechnung, die auf der Aktivitätszeit basiert** – Die theoretischen Aktivitätszeiten werden, basierend auf der Laufzeit der Aktivität, der verarbeiteten Summe der Menge und des Durchsatz-Verhältnisses des verarbeiteten Produkts berechnet. Diese Berechnungsmethode gilt für Dienste, die stundenweise bezahlt werden und Abweichungen in Zeit pro verarbeitetes Produkt aufweisen.
 
@@ -104,7 +103,6 @@ Menschen betrachten den Transport oft als unproduktive und denken, er habe keine
 Mit der aktivitätsbasierten Fremdarbeit im Lean Manufacturing können Sie Spediteure integrieren und Kreditoren bewegen, die Material und Produkte zwischen Lagerplätzen eines Produktionsflusses verschieben. Durch die Modellierung einer Umlagerungsaktivität können Sie einen Spediteur oder Kreditor zuweisen. Die Umlagerungsaktivitäten/der Einzelvorgang basiert auf einem Service und einer Rahmenbereinbarung, und Sie können Bestellungen und Zugangsempfehlungen auf Basis der tatsächlichen Umlagerungseinzelvorgänge erstellen. Diese Funktionen sind identisch wie die Funktionalität für die Weitervergabe von Prozessaktivitäten.  
 
 Daher unterstützt Finance and Operations jetzt BOM-Berechnungen, die Transportdienste, die Erstellung von Bestellungen, integrierte Zugangserfassung und die Integration von Transportdienstleistungskosten in die Produktionsflussnachkalkulation enthalten.
-
 
 
 

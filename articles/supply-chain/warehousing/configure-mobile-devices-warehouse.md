@@ -1,13 +1,13 @@
 ---
-title: "Mobile Geräte für Lagerarbeiten einrichten"
-description: "In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden."
+title: Mobile Geräte für Lagerarbeiten einrichten
+description: In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 09/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4c200c07ad576073ab5410b52ec237d31b2415d2
 ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.contentlocale: de-de
-ms.lasthandoff: 10/03/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347950"
 ---
-
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
 [!include [banner](../includes/banner.md)]
@@ -174,7 +173,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </tr>
 <tr>
 <td>Ladungsträgerladung</td>
-<td>Verwenden Sie diese Option, wenn Sie den Lagerort zum ersten Mal einrichten. Scannen Sie alle Ladungsträger in allen Lagerplätzen am Lagerort. Die Lagerplätze müssen von einem Ladungsträger gesteuert sein. Sie können diese Option nicht verwenden, wenn in der Lagerreservierungshierarchie über <strong>Lagerplatz</strong> <strong>Seriennummer</strong> oder <strong>Chargennummer</strong> aufgeführt wird.</td>
+<td>Verwenden Sie diese Option, wenn Sie den Lagerort zum ersten Mal einrichten. Scannen Sie alle Ladungsträger in allen Lagerplätzen am Lagerort. Die Lagerplätze müssen von einem Ladungsträger gesteuert sein. Sie können diese Option nicht verwenden, wenn in der Bestandsreservierungshierarchie über <strong>Lagerplatz</strong> <strong>Seriennummer</strong> oder <strong>Chargennummer</strong> aufgeführt wird.</td>
 </tr>
 <tr>
 <td>Inventur</td>
@@ -208,12 +207,12 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 </thead>
 <tbody>
 <tr class="odd">
-<td>None</td>
+<td>Keines</td>
 <td>Dieser Standardwert verarbeitet keine Arbeit.</td>
 </tr>
 <tr class="even">
 <td>Systemgeleitet</td>
-<td>Microsoft Dynamics 365 for Finance and Operations steuert den Arbeitstyp, der einer Arbeitskraft zugewiesen wird, und den Auftrag, für den die Arbeitskraft die Arbeit ausführt. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>System-zugewiesene Arbeit</strong> klicken, um die Seite <strong>System-zugewiesene Sortierreihenfolge</strong> zu öffnen, in der Sie Sortierkriterien für die Arbeit einrichten können. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Arbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations steuert den Typ der Arbeit, die einer Arbeitskraft zugewiesen wird, und die Reihenfolge, in der die Arbeitskraft die Arbeit ausführt. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>System-zugewiesene Arbeit</strong> klicken, um die Seite <strong>System-zugewiesene Sortierreihenfolge</strong> zu öffnen, in der Sie Sortierkriterien für die Arbeit einrichten können. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Arbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.</td>
 </tr>
 <tr class="odd">
 <td>Benutzergeleitet</td>
@@ -282,7 +281,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Anker von</td>
-<td>Wenn Sie Verankern verwenden, müssen Sie angeben, ob Sie nach Lieferung oder nach Ladung verankern möchten.</td>
+<td>Wenn Sie "Verankern" verwenden, müssen Sie angeben, ob Sie nach Lieferdatum oder nach Ladung verankern möchten.</td>
 </tr>
 <tr class="even">
 <td>Überwachungsvorlagenkennung</td>
@@ -306,11 +305,11 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Schwellenwerte für permanente Inventur deaktivieren</td>
-<td>Aktivieren Sie diese Option, um die Inventurschwellenwerte zu ignorieren. Wenn Sie diese Option aktivieren, wird Zykluszählungsarbeit nicht erstellt, wenn Schwellenwerte überschritten werden.</td>
+<td>Aktivieren Sie diese Option, um die Inventurschwellenwerte zu ignorieren. Wenn Sie diese Option aktivieren, wird Inventurarbeit nicht erstellt, wenn Schwellenwerte überschritten werden.</td>
 </tr>
 <tr class="even">
 <td>Den Chargendispositionscode anzeigen</td>
-<td>Aktivieren Sie dieses Kontrollkästchen, um Chargendispositionscodes anzuzeigen. Sie können beispielsweise Chargendispositionscodes anzeigen, wenn Sie eine zurückgegebene Charge empfangen. Arbeitskräfte können dann den Status oder die Qualität einer Charge überprüfen und den entsprechenden Code auswählen. Die Regeln im Chargendispositionscode bestimmen, ob die Charge für andere Lagerortprozesse verfügbar ist. Wenn Sie diese Option nicht auswählen, wird eine der folgenden Chargendispositionscodes verwendet:
+<td>Aktivieren Sie dieses Kontrollkästchen, um Chargendispositionscodes anzuzeigen. Sie können beispielsweise Chargendispositionscodes anzeigen, wenn Sie eine zurückgegebene Charge empfangen. Arbeitskräfte können dann den Status oder die Qualität einer Charge überprüfen und den entsprechenden Code auswählen. Die Regeln im Chargendispositionscode bestimmen, ob die Charge für andere Lagerortprozesse verfügbar ist. Wenn Sie diese Option nicht auswählen, wird einer der folgenden Chargendispositionscodes verwendet:
 <ul>
 <li>Wenn Sie eine neue Chargennummer empfangen, wird der standardmäßige Chargendispositionscode verwendet, der auf der Artikelmodellgruppe angegeben ist.</li>
 <li>Der Chargendispositionscode, der bereits der Charge zugeordnet ist, wird verwendet.</li>
@@ -357,7 +356,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 <td>Geben Sie an, ob die Arbeitskraft zuerst die älteste Charge in einem Lagerplatz entnehmen muss. Die folgenden Optionen sind verfügbar:
 <ul>
 <li><strong>Keine</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen. Die Arbeitskraft erhält keine Meldung.</li>
-<li><strong>Warnen</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen, es wird jedoch eine Warnmeldung angezeigt, wenn die Charge nicht die älteste ist.</li>
+<li><strong>Warnen</strong> – Die Arbeitskraft kann jede Charge im Lagerplatz entnehmen, es wird jedoch eine Warnmeldung angezeigt, wenn die Charge nicht die älteste ist.</li>
 <li><strong>Erzwingen</strong> – Die Arbeitskraft muss zuerst die älteste Charge im Lagerplatz entnehmen. Der Arbeitskraft wird eine Fehlermeldung angezeigt, wenn eine Charge nicht die älteste Charge ist. <strong>Hinweis:</strong> Diese Option ist nur relevant, wenn <strong>Chargennummer</strong> in der Reservierungshierarchie ist, die dem Artikel zugewiesen ist, niedriger ist als <strong>Lagerplatz</strong>.</li>
 </ul></td>
 </tr>
@@ -367,11 +366,11 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="even">
 <td>Systemgruppierungsfeld</td>
-<td>Wählen Sie das Feld aus, das bestimmt, wie Microsoft Dynamics 365 for Finance and Operations die Entnahme von Arbeit für Arbeitskräfte gruppiert. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> auswählen, scannt die Arbeitskraft die Lieferkennung, um die Entnahmearbeit zu gruppieren. Alle Arbeit für die Lieferung wird dann der Arbeitskraft zugewiesen. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen außerdem Text im Feld <strong>Systemgruppierungsbezeichnung</strong> eingeben, um die Arbeitskraft darüber zu informieren, was zu scannen ist.</td>
+<td>Wählen Sie das Feld aus, das bestimmt, wie Microsoft Dynamics 365 for Finance and Operations Entnahmearbeit für Arbeitskräfte gruppiert. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> auswählen, scannt die Arbeitskraft die Lieferkennung, um die Entnahmearbeit zu gruppieren. Alle Arbeit für die Lieferung wird dann der Arbeitskraft zugewiesen. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen außerdem Text im Feld <strong>Systemgruppierungsbezeichnung</strong> eingeben, um die Arbeitskraft darüber zu informieren, was zu scannen ist.</td>
 </tr>
 <tr class="odd">
 <td>Systemgruppierungsbezeichnung</td>
-<td>Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn die Entnahme von Arbeit von Microsoft Dynamics 365 for Finance and Operations gruppiert wird. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie <strong>Lieferkennung</strong> in das Feld eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, nach dem im Feld <strong>Systemgruppierungsfeld</strong> gruppiert wird.</td>
+<td>Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit von Microsoft Dynamics 365 for Finance and Operations gruppiert wird. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie <strong>Lieferkennung</strong> in das Feld eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, nach dem im Feld <strong>Systemgruppierungsfeld</strong> gruppiert wird.</td>
 </tr>
 <tr class="even">
 <td>Standarddaten verwenden</td>
@@ -387,13 +386,13 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Arbeitsvorlagencode</td>
-<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 for Finance and Operations eine Vorlage basierend auf den Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
+<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 for Finance and Operations eine Vorlage auf Grundlage von Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Erfordern von Arbeitskräften, das Produkt, den Lagerplatz oder die Menge zu bestätigen, wenn sie Artikel entnehmen
-Sie können Arbeitsbestätigungen einrichten, die eine Arbeitskraft auffordern, ein mobiles Gerät zu verwenden, um den Lagerplatz oder die Menge zu erfassen, wenn Arbeit am Lagerort ausgeführt wird. Arbeitsbestätigungen helfen dabei, sicherzustellen, dass die Arbeitskraft am richtigen Lagerplatz ist oder die richtige Menge der Artikel bearbeitet. Sie in können Microsoft Dynamics 365 for Finance and Operations auch aktivieren, um die Erfassung der Arbeitskraft automatisch zu bestätigen. Wenn Sie Autobestätigung aktivieren, können Sie keine Bestätigungen für Lagerplatz oder Menge anfordern. Arbeitsbestätigungen beinhalten auch Produkte und Produktvarianten. Darüber hinaus können Sie Bestätigungen erfassen, indem Sie einen Strichcode scannen. Um Produkte und Produktvarianten zu bestätigen, müssen Sie eine Kennung für das Produkt oder die Produktvariante eingeben. Diese Kennung kann eine Produktkennung, Produktsuchkennung, externe Kennung, GTIN oder ein Strichcode sein. Nachdem Sie die Kennung eingeben oder den Strichcode gescannt haben, werden die Dimensionen für die Produktvariante im mobilen Gerät angezeigt. 
+Sie können Arbeitsbestätigungen einrichten, die eine Arbeitskraft auffordern, ein mobiles Gerät zu verwenden, um den Lagerplatz oder die Menge zu erfassen, wenn Arbeit am Lagerort ausgeführt wird. Arbeitsbestätigungen helfen dabei, sicherzustellen, dass die Arbeitskraft am richtigen Lagerplatz ist oder die richtige Menge der Artikel bearbeitet. Sie können Microsoft Dynamics 365 for Finance and Operations auch aktivieren, um die Erfassung der Arbeitskraft automatisch zu bestätigen. Wenn Sie Autobestätigung aktivieren, können Sie keine Bestätigungen für Lagerplatz oder Menge anfordern. Arbeitsbestätigungen beinhalten auch Produkte und Produktvarianten. Darüber hinaus können Sie Bestätigungen erfassen, indem Sie einen Strichcode scannen. Um Produkte und Produktvarianten zu bestätigen, müssen Sie eine Kennung für das Produkt oder die Produktvariante eingeben. Diese Kennung kann eine Produktkennung, Produktsuchkennung, externe Kennung, GTIN oder ein Strichcode sein. Nachdem Sie die Kennung eingeben oder den Strichcode gescannt haben, werden die Dimensionen für die Produktvariante im mobilen Gerät angezeigt. 
 
 In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei denen Sie Arbeitsbestätigungen verwenden können.
 
@@ -420,6 +419,5 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 
 [Einrichtung eines Menüeintrags für mobile Geräte, um eingegangene Waren zu registrieren (Aufgabenleitfaden)](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 [Vorteile bei der Verwendung von Bestandsstatus](../inventory/inventory-statuses.md)
-
 
 

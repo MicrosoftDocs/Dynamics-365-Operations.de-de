@@ -1,13 +1,13 @@
 ---
-title: "Bilder für Retail Modern POS (MPOS) einrichten und verwalten"
-description: "In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS erforderlich sind."
+title: Einrichten und Verwalten von Retail Modern POS (MPOS)
+description: In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS (MPOS) erforderlich sind.
 author: athinesh99
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 audience: Application User
 ms.reviewer: josaw
@@ -19,26 +19,25 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d2f4cc99ec239c4c35c44a226235d01e18d4185f
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356736"
 ---
-
-# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Bilder für Retail Modern POS (MPOS) einrichten und verwalten
+# <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Einrichten und Verwalten von Retail Modern POS (MPOS)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS erforderlich sind.
+In diesem Artikel wird beschrieben welche Schritte beim Einrichten und Verwalten von Bildern für verschiedene Retail Modern POS (MPOS) erforderlich sind.
 
 ## <a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Die URL für die Medienbasis festlegen und die Medienvorlagen bestimmen, um das Format für die Bild-URL einrichten.
 
-Die Bilder, die im Retail Modern POS (MPOS) angezeigt werden, müssen extern, außerhalb von Microsoft Dynamics 365 for Retail gehostet werden. In der Regel werden sie auf einem Content Management-System, auf einem Content Delivery Network (CDN) oder einem Medienserver gehostet. MPOS ruft dann die Bilder von den entsprechenden Einheiten wie Produkten und Kataloge ab und zeigt sie an, indem es auf die Ziel URL zugreift. Um diese extern gehosteten Bilder abzurufen, braucht MPOS das korrekte URL-Format für die Bilder. Sie können das erforderliche URL-Format für Bilder konfigurieren, indem Sie den Wert für die **medienbasierte URL** im Kanalprofil einrichten und die Funktionen **Medienvorlage definieren** für jede Entität verwenden. Sie können das Format der Standard-URL für eine Teilmenge von Entitäten auch überschreiben, indem Sie dies Funktion **In Excel bearbeiten** verwenden.
+Die Bilder, die in Retail Modern POS (MPOS) angezeigt werden müssen extern gehosteten werden, außerhalb von Microsoft Dynamics 365 for Retail. In der Regel werden sie auf einem Content Management-System, auf einem Content Delivery Network (CDN) oder einem Medienserver gehostet. MPOS ruft dann die Bilder von den entsprechenden Einheiten wie Produkten und Kataloge ab und zeigt sie an, indem es auf die Ziel URL zugreift. Um diese extern gehosteten Bilder abzurufen, braucht MPOS das korrekte URL-Format für die Bilder. Sie können das erforderliche URL-Format für Bilder konfigurieren, indem Sie den Wert für die **medienbasierte URL** im Kanalprofil einrichten und die Funktionen **Medienvorlage definieren** für jede Entität verwenden. Sie können das Format der Standard-URL für eine Teilmenge von Entitäten auch überschreiben, indem Sie dies Funktion **In Excel bearbeiten** verwenden.
 
 > [!IMPORTANT]
-> In der aktuellen Version von Dynamics 365 for Retail können Sie das URL-Format nicht mehr mithilfe des **Bild** Attributs XML für MPOS unter **Standard** Attribut für Gruppenentitäten einrichten. Wenn Sie mit Microsoft Dynamics AX 2012 R3 vertraut sind und nun die aktuelle Version von Dynamics 365 for Retail verwenden, überprüfen Sie, ob Sie immer die neuen Funktionen **Medienvorlage definieren**, um Bilder einzurichten. Verwenden oder ändern Sie auf keinen Fall das Attribut **Bild** in der **Standard**-Attributengruppe für Entitäten, einschließlich Produkte. Änderungen, die Sie direkt in der Attributgruppe **Standard** für Bilder machen, werden nicht abgebildet. Diese Option wird in einer späteren Version deaktiviert.
+> In der aktuellen Version von Dynamics 365 for Retail können Sie das URL-Format nicht mehr mithilfe des **Image** Attributs XML für MPOS unter **Default** Attribut für Gruppenentitäten einrichten. Wenn Sie mit Microsoft Dynamics AX 2012 R3 vertraut sind und nun die aktuelle Version von Dynamics 365 for Retail verwenden, überprüfen Sie, ob Sie immer die neuen Funktionen **Medienvorlage definieren**, um Bilder einzurichten. Verwenden oder ändern Sie auf keinen Fall das Attribut **Bild** in der **Standard**-Attributengruppe für Entitäten, einschließlich Produkte. Änderungen, die Sie direkt in der Attributgruppe **Standard** für Bilder machen, werden nicht abgebildet. Diese Option wird in einer späteren Version deaktiviert.
 
 In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel genannte. Diese Verfahren helfen sicherzustellen, dass der korrekte Bildzielpfad implizit für alle Katalogbilder festgelegt wird, die einen allgemeinen Pfad folgen. Wenn Sie beispielsweise einen Medienserver oder ein CDN extern eingerichtet haben und möchten, dass die Bilder in MPOS für eine angegebenen Filiale angezeigt werden, wird Ihnen die Funktionalität **Medienvorlage definieren** helfen, den Pfad festzulegen, von dem MPOS Bilder suchen und holen kann.
 
@@ -47,7 +46,7 @@ In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel g
 
 ### <a name="set-up-the-media-base-url-for-a-channel"></a>Die medienbasierte URL für einen Kanal einrichten
 
-1. Öffnen des Dynamics 365 for Retail-HQ-Portals
+1. Öffnet das Dynamics 365 for Retail HQ-Portal.
 2. Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellung** &gt; **Kanalprofile**.
 
     [![channel-profile1](./media/channel-profile1.png)](./media/channel-profile1.png)
@@ -63,7 +62,7 @@ In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel g
 3. Geben Sie im Inforegister **Medienpfad** den verbleibenden Pfad des Bildlagerplatzes ein. Die Medienpfad unterstützt **LanguageID** als Variable. Sie können beispielswiese für die Demodaten einen Ordner **Kataloge** für alle Katalogbilder unter der medienbasierten URL für Ihren Medienserver erstellen (`https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer`). Sie können dann einen Ordner für jede Sprache haben, wie en-US oder fr-FR und dann die entsprechenden Bilder in jedem Ordner entsprechend speichern. Wenn Sie keine verschiedenen Bilder für die unterschiedlichen Sprachen haben, können Sie die Variablen **LanguageID** aus Ihrer Ordnerstruktur übergehen und direkt zum Katalogordner gehen, der die Katalogbilder enthält.
 
     > [!NOTE]
-    > Die aktuelle Version von Dynamics 365 for Retail unterstützt den Token **{LanguageID}** für Katalog-, Produkt- und Kategorieentitäten. (Der Token **{LanguageID}** wird für Debitoren- und Arbeitskraftentitäten gemäß dem vorhandenen Standard, der seit Microsoft Dynamics AX 6.x. in Kraft war, nicht unterstützt.)
+    > Die aktuelle Version von Dynamics 365 for Retail unterstützt den Token **{LanguageId}** für Katalog-, Produkt- und Kategorieentitäten. (Der Token **{LanguageID}** wird für Debitoren- und Arbeitskraftentitäten gemäß dem vorhandenen Standard, der seit Microsoft Dynamics AX 6.x. in Kraft war, nicht unterstützt.)
 
 4. Für Bilder wird das Dateinamenformat mit dem Katalognamen fest verbunden und kann nicht geändert werden. Daher benennen Sie Ihre Bilder um, sodass sie entsprechende Katalognamen haben und um sicherzustellen, dass MPOS sie ordnungsgemäß verarbeitet.
 5. Wählen Sie im Feld **Dateierweiterung** die erwartete Dateinamenerweiterung abhängig vom Typ der Bilder, die Sie haben. Für die Demodaten werden die Katalogbilder beispielsweise mit der .jpg- Erweiterung festgelegt. (Die Bilddateien werden auch umbenannt, sodass sie Katalognamen haben).
@@ -214,4 +213,3 @@ Die Katalog-, Kategorie-, Mitarbeiter sowie die Debitorenbilder, die im Offline-
 5. Führen Sie einen ähnlichen Prozess für andere Entitäten, wie Kategorie, Mitarbeiter und Debitor durch.
 
     [![offline2](./media/offline2.png)](./media/offline2.png)
-

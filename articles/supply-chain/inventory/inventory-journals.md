@@ -1,13 +1,13 @@
 ---
 title: Lagererfassungen
-description: "In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen."
+description: In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen.
 author: perlynne
 manager: AnnBe
 ms.date: 04/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361681"
 ---
-
 # <a name="inventory-journals"></a>Lagererfassungen
 
 [!include [banner](../includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 04/13/2018
 
 In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen.
 
-Die Bestanderfassungen in Microsoft Dynamics 365 for Finance and Operations werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen, Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
+Die Bestandserfassungen in Microsoft Dynamics 365 for Finance and Operations werden verwendet, um physische Bestandstransaktionen unterschiedlicher Art wie Abgangs- und Zugangsbuchungen, Bestandsumlagerungen oder die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
 
 ## <a name="types-of-inventory-journals"></a>Arten der Lagererfassung
 Die folgenden Lagererfassungstypen stehen zur Verfügung:
@@ -104,7 +103,7 @@ Datenentitäten unterstützen die folgenden Arten von Integrationsszenarien:
 Weitere Informationen finden Sie unter [Datenentitäten](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Nicht bei allen Lagererfassungen ist OData aktiviert. Deshalb können Sie nicht den Excel-Datenkonnektor verwenden, damit Daten veröffentlicht, aktualisiert und zurück nach Dynamics 365 for Finance and Operations importiert werden. 
+> Nicht bei allen Bestandserfassungen ist OData aktiviert. Deshalb können Sie nicht den Excel-Datenkonnektor verwenden, damit Daten veröffentlicht, aktualisiert und zurück in Dynamics 365 for Finance and Operations importiert werden. 
 
 Ein weiterer Unterschied zwischen den Erfassungsdatenentitäten ist die Fähigkeit, zusammengesetzte Entitäten zu verwenden, die sowohl die Kopfzeilen- als auch Positionsdaten enthalten. Aktuell können Sie die zusammengesetzten Entitäten verwenden für:
 -   Lagerregulierungserfassung
@@ -120,4 +119,3 @@ Diese beiden Lagererfassungen unterstützen nur das Szenario *Bestand initialisi
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Datenentitäten](../../dev-itpro/data-entities/data-entities.md)
-

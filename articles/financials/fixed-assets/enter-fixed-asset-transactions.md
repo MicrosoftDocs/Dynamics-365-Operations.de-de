@@ -1,13 +1,13 @@
 ---
-title: Anlagenbudgetbuchungsoptione
-description: "In diesem Artikel werden die unterschiedlichen, verfügbaren Methoden beschrieben, um Transaktionen für Anlagen zu erstellen."
+title: Anlagenbuchungsoptionen
+description: In diesem Thema werden die unterschiedlichen Methoden beschrieben, die verfügbar sind, um Transaktionen für Anlagen zu erstellen.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/07/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetTable, PurchCreateOrder
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6362a63bca43b5ac8da14becf6b966e459365ce1
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 18352ad921c2e2d110a7535f979272685105662f
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377181"
 ---
-
-# <a name="fixed-asset-transaction-options"></a>Anlagenbudgetbuchungsoptione
+# <a name="fixed-asset-transaction-options"></a>Anlagenbuchungsoptionen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel werden die unterschiedlichen, verfügbaren Methoden beschrieben, um Transaktionen für Anlagen zu erstellen.
+In diesem Thema werden die unterschiedlichen Methoden beschrieben, die verfügbar sind, um Transaktionen für Anlagen zu erstellen.
 
 Sie können Anlagen für die Integration in Kreditoren, Debitoren, Beschaffung und Hauptbuch einrichten. Sie können außerdem Artikel in der Lagerverwaltung in Anlagen übertragen, wenn Sie diese Artikel intern verwenden möchten.
 
@@ -66,9 +65,6 @@ Jede Anlagenbuchungsart kann auf der Seite "Allgemeine Erfassung" gebucht werden
 | ** **                               | Debitorenkonten      | Freitextrechnung                         |
 
 
+Der Wert der verbleibenden Abschreibungsperioden der Anlage wird nicht aktualisiert, wenn eine Erfassungsposition für einen Abschreibungstransaktionstyp manuell erstellt oder über eine Datenentität importiert wird. Dieser Wert wird aktualisiert, wenn der Abschreibungsvorschlagprozess verwendet wird, um die neue Erfassungsposition zu erstellen.
 
 Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integration.md).
-
-
-
-

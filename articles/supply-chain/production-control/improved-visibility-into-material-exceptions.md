@@ -1,13 +1,13 @@
 ---
 title: Sichtbarkeit von Materialausnahmen
-description: "In diesem Thema wird beschrieben, wie Sie eine bessere Sichtbarkeit von Ausnahmen bei Rohmaterialien für Produktionsaufträge und Chargenaufträge erhalten."
+description: In diesem Thema wird beschrieben, wie Sie eine bessere Sichtbarkeit von Ausnahmen bei Rohmaterialien für Produktionsaufträge und Chargenaufträge erhalten.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace
 audience: Application User
 ms.reviewer: josaw
@@ -16,13 +16,13 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: c7a5cc4f6c6f430a2ceb9125edb3916fe7b71ab8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: eca3141fc48aea24411524e5fc84686d9e4bfaa7
-ms.contentlocale: de-de
-ms.lasthandoff: 03/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344753"
 ---
 # <a name="visibility-into-material-exceptions"></a>Sichtbarkeit von Materialausnahmen
 
@@ -67,4 +67,3 @@ Wenn die Kachel ausgewählt ist, wird die Seite **Alle Produktionswellen** geöf
 Die Kachel **Lagerortarbeit öffnen, die Aufmerksamkeit benötigt** zeigt die Anzahl von Stücklisten- und Formelpositionen an, die für den Lagerort freigegeben wurden, die nicht verarbeitete Arbeit haben und ein Rohmaterialdatum haben, das vor dem Arbeitsbereichsdatum liegt oder mit diesem übereinstimmt. Die Positionen müssen auch durch eine Vorgangsressource verbraucht werden, die für den Filter des Arbeitsbereichs gilt.
 
 Wenn die Kachel ausgewählt ist, wird die Seite **Alle Arbeit** geöffnet. Diese Seite wird durch die Anzahl offener Arbeitskopfzeilen gefiltert, die Arbeitspositionen freigegebener Stücklisten- und Formelpositionen enthalten, die die Kriterien für die Kachel erfüllen. Über die Seite **Alle Arbeit** können Sie manuell die Arbeit verarbeiten.
-

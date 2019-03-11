@@ -1,13 +1,13 @@
 ---
-title: "Willkommen bei Dynamics 365 for Talent"
-description: "Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement."
+title: Willkommen bei Dynamics 365 for Talent
+description: Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement.
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302309"
 ---
-
-# <a name="welcome-to-dynamics-365-for-talent"></a>Willkommen bei Dynamics 365 for Talent
+# <a name="welcome-to-dynamics-365-for-talent"></a>Willkommen bei Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement. Darüber hinaus bietet es Personalverwaltungsmitarbeitern einen Rahmen für die Verwaltung der Bereiche, für die sie zuständig sind.
+Microsoft Dynamics 365 for Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement. Darüber hinaus bietet es Personalverwaltungsmitarbeitern einen Rahmen für die Verwaltung der Bereiche, für die sie zuständig sind.
 
 Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 
@@ -42,21 +41,21 @@ Sie können Talent verwenden, um diese Aufgaben zu bearbeiten:
 + Überprüfen von Leistungen und Implementieren von Zielen der Arbeitskräfte.
 + Einrichten, Veranstalten und Analysieren von Schulungskursen mit Tagesordnungen, Sitzungen und Protokollen.
 
-Entdecken Sie Dynamics 365 for Talent, indem Sie sich das Video ansehen [Erste Schritte mit Dynamics 365 for Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+Entdecken Sie Dynamics 365 for Talent, indem Sie das Video [Erste Schritte mit Dynamics 365 for Talent](https://www.youtube.com/watch?v=6rg2ByadbN0) ansehen.
 
 
 > [!NOTE] 
-> Dynamics 365 for Talent und die Personalverwaltung in Dynamics 365 for Finance and Operations sind sich sehr ähnlich. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations. Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Dynamics 365 for Talent ist eng mit der Personalverwaltung in Dynamics 365 for Finance and Operations verknüpft. Beide Produkte weisen möglicherweise dieselbe Funktion auf. Daher lautet bei Themen, deren hauptsächlicher Bezug die Personalverwaltung ist, der Produktname Dynamics 365 for Finance and Operations. Bei Themen, die sich hauptsächlich um Talent drehen, lautet der Produktname Dynamics 365 for Talent. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Entwickeln einer Strategie für die Personalverwaltung
 ---------------------------------------------------------
 
 Bei Ihrer Arbeit mit Talent entscheiden Sie über die Strukturierung Ihrer Organisation mithilfe von Elementen wie Abteilungen, Stellen und Positionen. Diese gehören zu den grundlegenden Elementen, die Sie konfigurieren. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
--   [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](departments-jobs-positions.md)
+-   [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](departments-jobs-positions.md)
 -   [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](set-up-company-specific-hr-parameters.md)
 -   [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md) 
--   [Personalaktivitäten – FAQ](personnel-actions-faq.md)
+-   [FAQs zu Personalaktivitäten](personnel-actions-faq.md)
 -   [Urlaubs- und Abwesenheitsübersicht](leave-absence-overview.md)
 -   [Verwenden von Dynamics 365 for Talent: Urlaub und Abwesenheit (Video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Personalverwaltung in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
@@ -74,7 +73,7 @@ Sie können Pläne einrichten, um effektiv und ausgewogen Vergütungen sowie Obj
 
 -   [Vergütungspläne](compensation-plans.md)
 -   [Vergütungsprozess](process-compensation.md)
--   [Erstellen fester Vergütungspläne](create-fixed-compensation-plans.md)
+-   [Feste Vergütungspläne erstellen](create-fixed-compensation-plans.md)
 -   [Variable Vergütungspläne erstellen](create-variable-compensation-plans.md)
 -   [Vergütungsverwaltung in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
@@ -93,7 +92,7 @@ Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, kö
 
 -   [Ein Vergütungsprogramm verwalten](manage-benefit-program.md)
 -   [Vorteilsberechtigungsrichtlinien](benefit-eligibility-policies.md)
--   [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
+-   [An Arbeitskräfte ausgeliehene Artikel verwalten](loan-items.md)
 -   [Verwalten der Mitarbeitervorteile in Dynamics 365 for Talent (Video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
@@ -111,4 +110,3 @@ Sie können Fragebögen entwerfen und verwalten, um Informationen für die versc
 -   [Entwerfen eines Fragebogens](design-questionnaires.md)
 -   [Einen Fragebogen verteilen und ausfüllen](distribute-questionnaires.md)
 -   [Die Ergebnisse eines Fragebogens anzeigen und auswerten](evaluate-questionnaire-results.md)
-

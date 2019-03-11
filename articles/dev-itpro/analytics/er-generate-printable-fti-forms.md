@@ -1,13 +1,13 @@
 ---
 title: Druckbare Freitextrechnungsformulare generieren
-description: "In diesem Thema wird erläutert, wie das Framework zur elektronischen Berichterstellung (EB) dazu verwendet werden kann, um druckbare Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente zu generieren."
+description: In diesem Thema wird erläutert, wie das Framework zur elektronischen Berichterstellung (EB) dazu verwendet werden kann, um druckbare Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente zu generieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
 ms.openlocfilehash: d27a11a0d925b0f1164578f9c04e6abd4736b2b2
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "325525"
 ---
-
-# <a name="generate-printable-fti-forms"></a>Druckbare Freitextrechnungsformulare generieren
+# <a name="generate-printable-fti-forms"></a>Generieren von druckbaren FTI-Formularen
 
 [!include[banner](../includes/banner.md)]
 
@@ -33,7 +32,7 @@ Das Framework zur elektronischen Berichterstellung (EB) ermöglicht Ihnen das Ge
 
 ## <a name="overview"></a>Übersicht
 
-Neben der vorhandenen Fähigkeit zum Generieren druckbarer FTR-Formulare mithilfe von Microsoft SQL Server Reporting Services (SSRS) können Sie jetzt das EB-Framework verwenden. Sie können druckbare FTR-Formulare in Microsoft Office Excel und Word verwalten. Sie können auch das Layout, den Datenfluss und die Formatierungen ändern, um bestimmte Anforderungen zu erfüllen, ohne Codeänderungen vorzunehmen.
+Neben der vorhandenen Funktion zum Generieren druckbarer FTR-Formulare mithilfe von Microsoft SQL Server Reporting Services (SSRS) können Sie jetzt das EB-Framework verwenden. Sie können druckbare FTR-Formulare in Microsoft Office Excel und Word verwalten. Sie können auch das Layout, den Datenfluss und die Formatierungen ändern, um bestimmte Anforderungen zu erfüllen, ohne Codeänderungen vorzunehmen.
 
 > [!NOTE]
 > Wenn Sie mit einer Übersicht über die vorhandenen EB-Konfigurationen für dieses Beispiel der druckbaren FTR-Formularlösung beginnen möchten, können Sie direkt zum Abschnitt **EB-Beispielkonfigurationen herunterladen, um FTR-Formulare zu generieren** weiter unten in diesem Thema gehen.
@@ -112,16 +111,16 @@ Sie können auch FTR-Formulare generieren, wenn Sie eine FTR buchen, indem Sie *
 Das EB-Framework unterstützt aktuell die folgenden Ziele für generierte Dokumente:
 
 - **Heruntergeladene Datei** – Generierte Formulare werden als Downloads angeboten, die Sie speichern können mithilfe des Browser.
-- **Bildschirm** – Microsoft Office 365 Excel wird verwendet, um generierte FTR-Formulare im Excel-Format in der Vorschau anzuzeigen.
-- **SharePoint-Ordner** – Generierte Formulare werden basierend auf den Einstellungen des Dokumentverwaltungsframeworks gespeichert.
-- **Anwendungsarchiv** – Generierte Formulare werden als Anhänge von Ausführungsprotokolldatensätzen in Microsoft Azure Storage gespeichert.
+- **Bildschirm** – Microsoft Office 365 Excel wird verwendet, um generierte FTR-Formulare im Excel-Format in der Vorschau anzuzeigen.
+- **SharePoint-Ordner** – Generierte Formulare werden basierend auf den Einstellungen des Dokumentverwaltungsframeworks gespeichert.
+- **Anwendungsarchiv** – Generierte Formulare werden als Anhänge von Ausführungsprotokolldatensätzen in Microsoft Azure Storage gespeichert.
 - **E-Mail** – Generierte Formulare werden als E-Mail-Anhänge übermittelt.
 
 > [!NOTE]
 > Sie können die FTR-Formulare nicht übermitteln, die direkt für den Drucker generiert werden, da direktes Drucken unter Verwendung des Dynamics-Druckerweiterleitungsagent derzeit nicht unterstützt wird.
 
 ## <a name="download-sample-er-configurations-to-generate-printable-fti-forms"></a>Beispiel-EB-Konfigurationen zum Generieren druckbarer FTR-Formulare herunterladen
-Sie können Beispiel-EB-Konfigurationen herunterladen, um sie als Vorlage für Ihre FTR-Lösung zu verwenden. Die Konfigurationen werden in der Bibliothek freigegebener Anlage in Microsoft Dynamics Lifecycle Services (LCS) gespeichert. Die Konfigurationen umfassen:
+Sie können Beispiel-EB-Konfigurationen herunterladen, um sie als Vorlage für Ihre FTR-Lösung zu verwenden. Die Konfigurationen werden in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS) gespeichert. Die Konfigurationen umfassen:
 
 - Die Konfiguration **Debitorenfakturierungsmodell** enthält das erforderliche Datenmodell und Modellzuordnung.
 - Die Konfiguration **Debitoren-FTR-Bericht (GER)** enthält das Beispielformat.
@@ -211,19 +210,18 @@ Wenn die Organisations-E-Mail-Vorlage, die die vordefinierte **ERFTITMP**-Kennun
 
 ![E-Mail-Vorlage hochladen](media/FTIbyGER-EmailTemplateBody.png)
 
-Der EB-Ausdruck **Emailing.TxtToUse.Subject** des Beispiel-EB-Formats wird so konfiguriert, dass sämtliche Vorkommen des Platzhalters „%1” durch die Kennung der verarbeitenden Rechnung ersetzt wird.
+Der EB-Ausdruck **Emailing.TxtToUse.Subject** des Beispiel-EB-Formats wird so konfiguriert, dass sämtliche Vorkommen des Platzhalters %1 durch die Kennung der verarbeitenden Rechnung ersetzt werden.
 
 Der Ausdruck **Emailing.TxtToUse.Body** des Beispielformats wird für die folgenden Ersetzungen für Platzhalter konfiguriert:
 
-- „%1” wird durch den Namen der Kontaktperson des Debitors ersetzt.
-- „%2” wird durch den Unternehmensnamen ersetzt.
-- „%3” wird durch den Debitorennamen ersetzt.
-- „%4” wird durch den Namen der Kontaktperson des Unternehmens ersetzt.
-- „%5” wird durch den Stellentitel der Kontaktperson des Unternehmens ersetzt.
-- „%6” wird durch die E-Mail-Adresse der Kontaktperson des Unternehmens ersetzt.
+- "%1" wird durch den Namen der Kontaktperson des Debitors ersetzt.
+- "%2" wird durch den Unternehmensnamen ersetzt.
+- "%3" wird durch den Debitorennamen ersetzt.
+- "%4" wird durch den Namen der Kontaktperson des Unternehmens ersetzt.
+- "%5" wird durch den Stellentitel der Kontaktperson des Unternehmens ersetzt.
+- "%6" wird durch die E-Mail-Adresse der Kontaktperson des Unternehmens ersetzt.
 
 ![E-Mail](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-

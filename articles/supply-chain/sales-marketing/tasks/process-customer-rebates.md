@@ -1,13 +1,13 @@
---- 
-title: "Debitorenrückvergütungen generieren und verarbeiten"
-description: "Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgenerierung so weit des Übergebens sie als Abgrenzungen zu Debitoren verarbeitet."
+---
+title: Debitorenrückvergütungen generieren und verarbeiten
+description: Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgenerierung so weit des Übergebens sie als Abgrenzungen zu Debitoren verarbeitet.
 author: omulvad
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5afe2fa73e218aa9eb21aff866baa509860a83cb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 348793abc6d219f38bcdc2629b77343d93927005
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "336450"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Debitorenrückvergütungen generieren und verarbeiten
 
@@ -83,5 +83,4 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
 9. Geben Sie im Feld '' einen Wert ein, oder wählen Sie einen Wert aus.
 10. Klicken Sie auf "OK".
     * Eine Meldung zeigt an, dass die Rückvergütung erfolgreich verarbeitet wurde, und der Status der Ansprüche wurde geändert, um zu markieren. Das bedeutet das Folge einer Rückvergütungsabgrenzungserfassung, die gebucht wird: A) sind die Ansprüche nun dem temporären Debitorensaldo als Ableitungen übertragen wurde; B) ist das Rückvergütungsabgrenzungskonto gutgeschrieben werden, um die zukünftigen Verbindlichkeiten gegenüber dem Debitor darzustellen; und c) ist das Rückvergütungsausgabenkonto, in Erkennung der Kosten belastet wurde, die in Verbindung mit dem Verkauf anfallen.   
-
 

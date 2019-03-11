@@ -1,13 +1,13 @@
 ---
-title: "Startseite für die Budgetierung"
-description: "Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponenten, die Budgetierungstools und die Berichtsfunktionen in Microsoft Dynamics 365 for Finance and Operations."
+title: Startseite für die Budgetierung
+description: Dieses Thema enthält eine Übersicht über die Budgetierungsfunktionskomponenten, die Budgetierungstools und die Berichtsfunktionen in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/09/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 84321b78c9869a4920c3488373876bb56bcb3a29
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: efe348d9967ab7594afd22a3ebb4df76dc6607f8
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302337"
 ---
-
 # <a name="budgeting-home-page"></a>Startseite für die Budgetierung
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,7 @@ Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organ
 -   [Budgetplanung: Überblick und Konfiguration](budget-planning-overview-configuration.md)
 -   [Positionsplanung](position-forecasting.md)
 -   [Begründungsdokumente für die Budgetplanung](budget-planning-justification-docs.md)
--   [Microsoft Excel-Vorlagen für die Budgetplanung](budget-planning-excel-templates.md)
+-   [Microsoft Excel-Vorlagen zur Budgetplanung](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools-in-finance-and-operations"></a>Budgetierungstools in Finance and Operations
 [![Budgetierungstools](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
@@ -66,7 +65,6 @@ Informationen zur Integration von Planungsdaten aus anderen Modulen in Budgetpl�
 In Finance and Operations können Benutzer Budgetpläne entweder direkt im Finance and Operations-Client (mithilfe einer konfigurierbaren Budgetplan-Dokumentenseite) oder in Excel erstellen. Excel bietet mehrere zusätzliche Funktionen. So können Sie beispielsweise externe Daten als Quelle für einen Budgetplan nutzen, benutzerdefinierte Berechnungen ausführen und Microsoft Excel-PivotTable-Tabellen und -Diagramme verwenden. Die meisten Variablen im Budgetplanungsprozess können konfiguriert werden. 
 
 Sie können beispielsweise definieren, wer die Budgetierung vornimmt, was budgetiert wird und wie der Prozess verläuft. Obwohl Sie Excel für die Budgetplanung verwenden können, ist Finance and Operations die vertrauenswürdigere Quelle, mit der Sie Budgetsteuerungsprobleme vermeiden können. Periodische Prozesse können verwendet werden, um ursprüngliche Daten für die Budgetierung in den Budgetplan einzufügen. Finance and Operations bietet zu Berichtszwecken eine Zusammenstellung an Standardabfrageseiten an, in denen Sie Budgetplanungsdaten anzeigen und analysieren können. Über Management Reporter können Sie auf Budgetplandaten zugreifen, und Sie können separate Budgetplanszenarien als Spalten im Management Reporter-Bericht anzeigen.
-
 
 
 

@@ -1,33 +1,32 @@
 ---
 title: Elektronisches Messaging
-description: "Dieses Thema bietet eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 for Finance and Operations."
+description: Dieses Thema enthält eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: 232398a6c4193d0074881e26fff361deb9784bf2
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 082ad886f40a52457900523f44158da3ed939458
-ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357932"
 ---
-
-# <a name="electronic-messaging"></a>Elektronisches Messaging
+# <a name="electronic-messaging"></a>Elektronische Nachrichten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema bietet eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 for Finance and Operations.
+Dieses Thema enthält eine Übersicht und Einrichtungsinformationen für elektronisches Messaging in Microsoft Dynamics 365 for Finance and Operations.
 
 Vor kurzem haben die Behörden und die gesetzgebenden Instanzen aus verschiedenen Ländern und Regionen der Welt Meldeanforderungen für Unternehmen implementiert, die in diesen Ländern oder Regionen registriert sind. Anhand dieser Anforderungen sollen Daten von diesen Unternehmen in elektronischem Format bezogen werden, direkt aus den Systemen, in denen sie kalkuliert, gespeichert und verarbeitet werden.
 
@@ -39,7 +38,7 @@ Elektronisches Messaging basiert auf folgenden Entitäten:
 
 - **Elektronische Nachricht** – Ein Bericht oder eine Meldung, die intern gemeldet und/oder gesendet werden sollte Ein Beispiel ist ein Bericht, der an eine Steuerbehörde gesendet wird.
 - **Elektronische Nachrichtenelemente** – Datensätze, die in die Nachricht eingeschlossen werden sollen, die gemeldet wird.
-- **Verarbeiten der elektronischen Nachricht** – Eine Kette von Aktivitäten, entweder verknüpft oder nicht verknüpft, die ausgeführt werden sollte, um die erforderlichen Daten zu sammeln, Berichte zu generieren, Daten in Microsoft Azure Blob Storage zu speichern, Berichte außerhalb des Systems zu übermitteln, Antworten von außerhalb des Systems abzurufen und die Datenbank anhand empfangener Informationen zu aktualisieren.
+- **Verarbeiten der elektronischen Nachricht** – Eine Kette von Aktivitäten, entweder verknüpft oder nicht verknüpft, die ausgeführt werden sollte, um die erforderlichen Daten zu sammeln, Berichte zu generieren, Daten in Microsoft Azure Blob Storage zu speichern, Berichte außerhalb des Systems zu übermitteln, Antworten von außerhalb des Systems abzurufen und die Datenbank anhand empfangener Informationen zu aktualisieren.
 
 Die folgende Abbildung zeigt den Datenfluss für elektronisches Messaging an.
 
@@ -47,7 +46,7 @@ Die folgende Abbildung zeigt den Datenfluss für elektronisches Messaging an.
 
 Die Funktion der elektronischen Messaging unterstützt die folgenden Szenarien:
 
-- Manuelles Erstellen von Nachrichten und das Generieren von Berichten, die auf zugeordneten EB-Formaten verschiedener Typen für das Exportieren basieren: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, Text und Microsoft Word.
+- Manuelles Erstellen von Nachrichten und Generieren von Berichten, die auf zugeordneten EB-Formaten verschiedener Typen für das Exportieren basieren: Microsoft Excel, XML, JavaScript Object Notation (JSON), PDF, Text und Microsoft Word.
 - Automatisches Erstellen und Verarbeiten von Nachrichten, die auf Informationen basieren, die von einer Behörde über ein zugeordnetes EB-Format für den Import angefordert und abgerufen wurden.
 - Sammeln und Verarbeiten von Informationen aus Datenquellen (Finance and Operations-Tabelle) als Nachrichtenelemente.
 - Zusätzliche Informationen speichern und verschiedene Werte auswerten, indem speziell definierte ausführbare Klassen in Relation zu Nachrichten und Nachrichtenelementen aufgerufen werden.
@@ -452,4 +451,3 @@ Sie können jetzt den Nachrichtenstatus entweder löschen oder aktualisieren. Um
 ![Den Nachrichtenstatus aktualisieren](media/update-status.png)
 
 Der Nachrichtenstatus wird auf **Vorbereitet** aktualisiert, und Sie können jetzt den Bericht generieren, indem Sie **Bericht generieren** auswählen. Der Bericht wird generiert, und der Nachrichtenstatus sowie das Aktivitätsprotokoll werden aktualisiert. Um den generierten Bericht anzuzeigen, wählen Sie die im Aktivitätsbereich die Schaltfläche **Anhang** aus.
-

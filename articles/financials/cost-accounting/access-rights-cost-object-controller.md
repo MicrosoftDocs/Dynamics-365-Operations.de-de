@@ -1,32 +1,31 @@
 ---
-title: "Zugriffsrechte für Kostenobjekt-Controller definieren"
-description: "Dieses Thema bietet Informationen über Zugriffsrechte für Kostenobjekt-Controller."
+title: Zugriffsrechte für Kostenobjekt-Controller definieren
+description: Dieses Thema bietet Informationen über Zugriffsrechte für Kostenobjekt-Controller.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostControlWorkspace, CAMParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 290b16eeb99ac7ddb9b552b289215c99a0451660
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1cac3c3b724dda4ab39a65aa5221eda427767eb8
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355540"
 ---
-
 # <a name="access-rights-of-a-cost-object-controller"></a>Zugriffsrechte eines Kostenobjekt-Controllers
 
 [!include [banner](../includes/banner.md)]
@@ -95,11 +94,11 @@ Die Einstellungen für die Zugriffslistenhierarchie werden verwendet, um die Dat
 
 - Microsoft Power BI:
 
-    - Daten, die in den BI-Visualisierungen angezeigt werden
-    - Data Power BI Visualisierungen, die im Microsoft Dynamics 365 for Finance and Operations Client eingebettet werden
+    - Daten, die in Power BI-Visualisierungen angezeigt werden
+    - Power BI-Datenvisualisierungen, die im Client von Microsoft Dynamics 365 for Finance and Operations eingebettet werden
 
 > [!IMPORTANT]
-> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Positionsebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
+> - Bevor sich die Zugriffslistenhierarchie auf Daten in Power BI auswirken kann, müssen die Zugriffslistenhierarchie und Sicherheit auf Zeilenebene in Power BI zugeordnet werden. Weitere Informationen finden Sie unter [Sicherheit für das Kostenrechnungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - In diesem Thema werden die Voraussetzungen behandelt, die erfüllt sein müssen, bevor Sie den Arbeitsbereich **Kostensteuerung** verwenden können.
 
 Zusätzliche Ressourcen
@@ -107,4 +106,3 @@ Zusätzliche Ressourcen
 - [Kostensteuerungs-Arbeitsbereich](cost-control-workspace.md)
 - [Dimensionshierarchie](dimension-hierarchy.md)
 - [Sicherheit für Kostensteuerungs-Inhaltspack einrichten](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
-

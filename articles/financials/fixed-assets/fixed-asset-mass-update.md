@@ -1,13 +1,13 @@
 ---
 title: Anlagen-Massenaktualisierung
-description: "Bei Verwendung von Büchern können die Abschreibungskonventionen für Gruppen von Anlagen geändert werden, die zum gleichen Buch gehören."
+description: Bei Verwendung von Büchern können die Abschreibungskonventionen für Gruppen von Anlagen geändert werden, die zum gleichen Buch gehören.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b740f1fe710c2278bd5ac5f8d615f0e305cd7df1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b3fb55f1a51652299db8a31274b07f239fbaf28f
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348801"
 ---
-
 # <a name="fixed-asset-mass-update"></a>Anlagen-Massenaktualisierung
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,6 @@ Wenn Sie die Abschreibungskonvention für Anlagen aktualisieren, löschen Sie al
 Um die Abschreibungskonvention für Anlagen zu aktualisieren, die bereits veräußert wurden, müssen Sie die vorhandenen Abgangsbuchungen erst löschen. Sie müssen alle Buchungen löschen, die wegen der Veräußerung generiert wurden. 
 
 Nachdem Sie die Abschreibungskonvention für Anlagen aktualisiert haben, können Sie die Abschreibung und die außerordentliche Abschreibung für jede Anlage verarbeiten. Sie können auch manuelle Abschreibungsregulierungen vornehmen, wenn Anpassungen erforderlich sind.
-
 
 
 

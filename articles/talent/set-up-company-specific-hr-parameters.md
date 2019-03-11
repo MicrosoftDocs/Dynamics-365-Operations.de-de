@@ -1,13 +1,13 @@
 ---
 title: Unternehmensspezifische Personalverwaltungsparameter einrichten
-description: "Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unternehmen freigegeben, während die Einstellungen anderer Parameter unternehmensspezifisch sind. In diesem Artikel wird beschrieben, wie unternehmensspezifische Personalverwaltungsparameter eingerichtet werden."
+description: Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unternehmen freigegeben, während die Einstellungen anderer Parameter unternehmensspezifisch sind. In diesem Artikel wird beschrieben, wie unternehmensspezifische Personalverwaltungsparameter eingerichtet werden.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HRMParameters
 audience: Application User
 ms.reviewer: rschloma
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
 ms.openlocfilehash: f7ecd72a2a6ba4ba15e412e40508462f6ef0d218
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304590"
 ---
-
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Unternehmensspezifische Personalverwaltungsparameter einrichten
 
 [!include [banner](includes/banner.md)]
@@ -35,7 +34,7 @@ Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unterne
 Zwei Seiten werden verwendet, um Personalverwaltungsparameter (HR-Parameter) festzulegen. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**. Auf der Seite **Personalverwaltungsparameter** sind die Einstellungen in sechs Registerkarten unterteilt:
 
 -   Allgemein
--   Einstellungen - Dies ist nicht in Dynamics 365 for Talent enthalten
+-   Personalbeschaffung - Dies ist nicht in Dynamics 365 for Talententhalten
 -   Vergütung
 -   Nummernkreise
 -   Family and Medical Leave Act (FMLA)
@@ -50,7 +49,7 @@ Die Einstellungen auf der Registerkarte fest **Vergütung**, ob Benutzer müssen
 ### <a name="previously-released-functionality"></a>Bereits freigegebene Funktionen
 Die Einstellungen in der Registerkarte **Zahlensequenz** bestimmt die Sequenzen, die verwendet werden, um Elementen in der Personalverwaltung IDs zuzuweisen, wie Bewerbungen, Abwesenheitserfassungen, Vergütungsprozessergebnisse, Fallnummern, Kurse und Kursagenden. Um Nummernsequenzreferenzen und - codes zu verwalten, verwenden Sie die Seite **Nummernsequenzliste** (Klicken Sie **Organisationsverwaltung** &gt; **Nummernsequenzen** &gt; **Nummernsequenzen**) an.
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Wenn Sie Dynamics 365 for Talent verwenden
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Wenn Sie Dynamics 365 for Talent verwenden:
 Die Einstellungen in der Registerkarte **Zahlensequenz** bestimmt die Sequenzen, die verwendet werden, um Elementen in der Personalverwaltung IDs zuzuweisen, wie Bewerbungen, Abwesenheitserfassungen, Vergütungsprozessergebnisse, Fallnummern, Kurse und Kursagenden. Um Nummernsequenzreferenzen und - codes zu verwalten, verwenden Sie die Seite **Nummernsequenzliste** (Klicken Sie **Systemverwaltung** &gt; **Registerkarte Links** &gt; **Nummernsequenzen** &gt; **Nummernsequenzen**) an. 
 
 Die Einstellungen in der Registerkarte **FMLA** definieren, wie viele Stunden ein Mitarbeiter arbeiten muss, um von den FMLA-Vorteilen profitieren zu können, die erforderliche Beschäftigungslänge für die Berechtigung und das Anfangsdatum der Anstellung, das für die Bestimmung der Beschäftigungslänge verwendet wird. Die Einstellungen definieren auch die Anzahl der FMLA-Stunden, für die ein Mitarbeiter berechtigt ist und den FMLA-Urlaubkalender, der verwendet wird, um zu berechnen, wie viele FMLA-Stunden ein Angestellter verwendet hat. Die Registerkarte **FMLA** ist nur für die Unternehmen in den USA verfügbar. 
@@ -61,7 +60,6 @@ Die Einstellungen in der Registerkarte **FMLA** definieren, wie viele Stunden ei
 --------
 
 [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md)
-
 
 
 

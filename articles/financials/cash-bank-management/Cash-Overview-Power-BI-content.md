@@ -1,13 +1,13 @@
 ---
-title: "Power BI-Inhalt – Bargeldüberblick"
-description: "In diesem Thema wird der Inhalt des Power BI-Bargeldüberblicks beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden."
+title: Power BI-Inhalt – Bargeldübersicht
+description: In diesem Thema wird der Inhalt des Power BI-Bargeldüberblicks beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
 author: saraschi2
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: sericks
@@ -16,34 +16,33 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 5d02a009ca988f91a212e467d4f9784248bbae76
-ms.contentlocale: de-de
-ms.lasthandoff: 12/19/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318648"
 ---
-
-# <a name="cash-overview-power-bi-content"></a>Power BI-Inhalt – Bargeldüberblick
+# <a name="cash-overview-power-bi-content"></a>Power BI-Inhalt – Bargeldübersicht
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Inhalt des Microsoft Power BI-**Bargeldüberblicks** beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
+In diesem Thema wird der Inhalt vom Microsoft Power BI-**Bargeldüberblick** beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der Power BI-**Bargeldüberblick** wurde für Personen erstellt, die in ihrer Organisation für das Bargeld zuständig sind. Die Power BI-**Bargeldüberblick** ermöglicht Sichtbarkeit des Cashflows. Es enthält auch Planungen, die Sie beim Treffen besserer Entscheidungen unterstützen, und daher den Status Ihres Cashflows verbessern. Sie können die Bargeld nach juristischer Person, Währung und Bankkonto analysieren, um ein besseres Verständnis für Überschüsse und Defizite zu erhalten.
+Der Power BI-**Bargeldüberblick** wurde für Personen erstellt, die in ihrer Organisation für das Bargeld zuständig sind. Der Power BI-**Bargeldüberblick** ermöglicht die Sichtbarkeit des Cashflows. Es enthält auch Planungen, die Sie beim Treffen besserer Entscheidungen unterstützen, und daher den Status Ihres Cashflows verbessern. Sie können die Bargeld nach juristischer Person, Währung und Bankkonto analysieren, um ein besseres Verständnis für Überschüsse und Defizite zu erhalten.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 
-Berichte vom **Bargeldüberblick** Power BI-Inhalt werden in den Formularen **Bargeldüberblick** und **Bankwesen** angezeigt.
+Berichte vom Inhalt vom Power BI-**Bargeldüberblick** werden in den Arbeitsbereichen **Bargeldüberblick** und **Bankverwaltung** angezeigt.
 
 Um die Bargeld-Planungsberichte mit Daten anzuzeigen, müssen Sie zuerst die Planungsberechnung unter Verwendung der Funktion **Bargeld-Planungen berechnen** aus dem Bereich Bargeld- und Bankverwaltung durchführen.  Dies muss für jedes in die Planung aufgenommene Unternehmen stattfinden.  Anschließend müssen Sie die LedgerCovLiquidityMeasurement-Aggregatmessung auf der Seite **Entitätsspeicher** aktualisieren.  
 
 Für Demonstrationszwecke können Sie Demodaten für die Bargeld-Planung unter Verwendung der Seite **Daten generieren** im Demodatenmodul hinzufügen.  Dieses Skript fügt Daten in die Bargeld-Planungstabellen ein, um schnell die für Berichte benötigten Informationen bereitzustellen.  Dieses Modul steht nur zur Verfügung, wenn Sie das Demo-Datenpaket-Modell in der Umgebung bereitgestellt haben. 
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
-Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im BI-Inhalt **Bargeldüberblick** befinden.
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
+Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im Inhalt vom Power BI-**Bargeldüberblick** befinden.
 
 | Bericht                                | Inhalt |
 |---------------------------------------|----------|
@@ -57,7 +56,7 @@ Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtssei
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Die folgende Tabelle zeigt die Entitäten, auf denen das der **Bargeldüberblick**-Inhalt von Power BI basiert.
+Die folgende Tabelle zeigt die Entitäten, auf denen der Inhalt vom Power BI-**Bargeldüberblick** basiert.
 
 | Entität                                                                          | Inhalt |
 |---------------------------------------------------------------------------------|----------|
@@ -68,6 +67,5 @@ Die folgende Tabelle zeigt die Entitäten, auf denen das der **Bargeldüberblick
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Zusammengefasste Bargeldzu- und -abflüsse und -saldo mithilfe der Buchhaltungswährung jedes Unternehmens |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Zusammengefasste Bargeldzu- und -abflüsse und -saldo mithilfe der Systemwährung für alle Unternehmen |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Zusammengefasster und Nettobuchungsbetrag und -saldo von Währungen anhand der Buchungswährung |
-
 
 

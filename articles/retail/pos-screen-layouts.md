@@ -1,13 +1,13 @@
 ---
-title: "Bildschirmlayouts für die Verkaufsstelle (POS)"
-description: "Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail -POS-Erfahrungen."
+title: Bildschirmlayouts für die Verkaufsstelle (POS)
+description: Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail-Verkaufsstellen (POS)-Umgebungen.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailTillLayout
 audience: Application user
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: dda9c8cb7f3da99fb2e7df0372e59769cfaf77d1
-ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
-ms.contentlocale: de-de
-ms.lasthandoff: 11/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321891"
 ---
-
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Bildschirmlayouts für die Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail -POS-Erfahrungen.
+Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail-Verkaufsstellen (POS)-Umgebungen.
 
 Die Retail-POS-Benutzeroberfläche (UI) kann mithilfe einer Kombination von visuellen Profilen und Bildschirmlayouts konfiguriert werden, die Shops, Kassen und/oder den Benutzern zugewiesen sind.
 
@@ -51,7 +50,7 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 - **Beschreibung** - Die Beschreibung ermöglicht es Ihnen, einen beschreibenden Namen angeben, der Ihnen hilft, das richtige Profil für in Ihrer Situation zu identifizieren.
 - **Thema** - Sie können zwischen den hellen oder dunklen Anwendungsdesigns auswählen. Das Thema betrifft die gewünschten Schrift- und Hintergrundfarben in der Anwendung.
 - **Akzentfarbe** - Die Akzentfarbe wird im POS verwendet, um bestimmte Sichtelemente wie Kacheln, Befehlsschaltflächen oder Links zu unterscheiden oder hervorzuheben. Diese Elemente sind in der Regel aktiv.
-- **Kopffarbe** – Sie können die Farbe der Kopfzeile konfigurieren, um die Brandingbedingungen des Einzelhändlers zu erfüllen. Diese Funktion ist nur in Microsoft Dynamics 365 for Retail, Version 1611, verfügbar.
+- **Kopffarbe** – Sie können die Farbe der Kopfzeile konfigurieren, um die Brandingbedingungen des Einzelhändlers zu erfüllen. Diese Funktion ist nur in Microsoft Dynamics 365 for Retail, Version 1611 verfügbar.
 - **Anmeldungs-Hintergrund** - Sie können ein Hintergrundbild für die Bildschirm-Anmeldung angeben. Die Dateigröße von Hintergrundbildern sollte so gering wie möglich gehalten werden, da das Speichern und Hochladen großer Dateien Auswirkungen auf das Anwendungsverhalten und die Leistung haben kann.
 - **Anwendungshintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Für den Anmelde-Hintergrund sollte die Dateigröße so gering wie möglich gehalten werden.
 
@@ -165,7 +164,7 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
 - **Schaltflächeneigenschaften** – Sie können Schaltflächeneigenschaften konfigurieren, indem Sie auf die Schaltfläche mit der rechten Maustaste klicken und das Kontextmenü verwenden.
 
     > [!IMPORTANT]
-    > Einige Schaltflächenrastereinstellungen gelten nur Enterprise POS und nicht für Retail Modern POS oder Cloud POS.
+    > Einige Schaltflächenrastereinstellungen gelten nur für Enterprise POS und nicht für Retail Modern POS oder Cloud POS.
 
     ![Eigenschaften von Schaltflächenraster](../retail/media/Button-grid-button-properties.png)
 
@@ -185,7 +184,7 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
     - **Benutzerdefiniertes Thema** – POS-Schaltflächen verwenden standardmäßig die Akzentfarbe des visuellen Profils. Wenn Sie das Kontrollkästchen **Benutzerdefiniertes Design verwenden** aktivieren, können Sie ggf. zusätzliche Farben angeben.
 
         > [!NOTE]
-        > Retail Modern POS und Cloud POS nutzen nur die **Hintergrundfarbe** und die **Schriftfarbe**.
+        > Retail Modern POS und Cloud POS nutzen nur die **Hintergrundfarbe**- und die **Schriftfarbe**-Werte.
 
     - **Schaltflächensymbol** – Symbole können Schaltflächen oder Bilder einschließen. Wählen Sie eines der verfügbaren Bilder aus, die als **Einzelhandel \> Kanaleinstellung \> POS-Einstellung \> POS \> Bilder** angegeben werden.
 
@@ -194,4 +193,3 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Den Retail POS-Layout-Designer installieren](install-pos-layout-designer.md)
-

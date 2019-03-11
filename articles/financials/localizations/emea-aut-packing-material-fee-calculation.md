@@ -1,13 +1,13 @@
 ---
-title: "Bericht \"Berechnung der Verpackungsmaterialgebühren\" für Österreich"
-description: "Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich."
+title: Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
+description: Dieses Thema enthält Informationen zu Verpackungsmaterialsätze und Gebühren in Österreich.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingMaterialTransPurch
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: edb0036c62cf26a1949099280f54b19bedb29a2f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: aeb91f402eb4ab983e4ccbcaf87a24a817065485
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370380"
 ---
-
 # <a name="packing-material-fee-calculation-for-austria"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" für Österreich
 
 [!include [banner](../includes/banner.md)]
@@ -110,7 +109,6 @@ Verwenden Sie die Verpackungsmaterialberechnungserfassung, um Gebühren für das
 
 ## <a name="print-the-packing-materials-fee-calculation-report"></a>Bericht "Berechnung der Verpackungsmaterialgebühren" drucken
 Der Bericht **Berechnung der Verpackungsmaterialgebühren** enthält Daten zu Verpackungsmaterialgebühren, die berechnet wurden, indem österreichische Regeln eingerichtet werden. Um diesen Bericht zu drucken, wählen Sie auf der Seite **Verpackungsmaterialberechnungserfassung**die berechnete Erfassung aus und klicken dann **Bericht drucken**.
-
 
 
 

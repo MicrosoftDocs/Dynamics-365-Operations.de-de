@@ -1,13 +1,13 @@
---- 
-title: "Eine vorherige Aktivität zu einer Produktionsflussaktivität hinzufügen"
-description: "In einer Produktionsflussversion müssen alle Aktivitäten geordnet werden."
+---
+title: Eine vorherige Aktivität zu einer Produktionsflussaktivität hinzufügen
+description: In einer Produktionsflussversion müssen alle Aktivitäten geordnet werden.
 author: cvocph
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9acb1c2672af70f535f3dce1c8f5a97e8d479158
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d19fb20e8cc941daeaa506e4bf1cb0c7031cf2ee
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343672"
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>Eine vorherige Aktivität zu einer Produktionsflussaktivität hinzufügen
 
@@ -51,5 +51,4 @@ Weitere Informationen finden Sie im Whitepaper "Produktionsflüsse und Aktivitä
 4. Geben Sie im Feld "Zykluszeitanteil" eine Zahl ein.
     * Der Standardzykluszeitanteil einer Aktivitätsrelation ist 1. Diese nimmt an, dass die beiden Aktivitäten mit dem gleichen Tempo oder zur gleichen Taktzeit ausgeführt werden. Wenn die vorherige Aktivität an einem höheren Tempo (niedrigere Taktzeit) ausgeführt wird, sollte das Verhältnis niedriger als 1 sein. Wenn die vorherige Aktivität in einem langsameren Tempo (höhere Taktzeit) ausgeführt wird, ist der Zykluszeitanteil größer als 1.  
 5. Klicken Sie auf "OK".
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Verwalten der Lagerortarbeitskräfte"
-description: "In diesem Artikel wird beschrieben, wie Sie Dynamics 365 for Finance and Operations verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern in Ihren Lagerorten ausgeführt wird."
+title: Verwalten der Lagerortarbeitskräfte
+description: In diesem Artikel wird beschrieben, wie Sie Dynamics 365 for Finance and Operations verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5a35d0a52d6f5bf995ce54f10eab92147b0e76a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 211ced007e7729265621a05c2162a228eb0023c2
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310989"
 ---
-
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern in Ihren Lagerorten ausgeführt wird.
+In diesem Artikel wird beschrieben, wie Sie Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
 
 Wenn Sie die Funktionen in der Lagerortverwaltung verwenden, werden alle Arbeitsgänge der Lagerarbeiter als *Arbeit* bezeichnet. Arbeit, wie die Entnahme, das Umlagern und das Zählen des verfügbaren Lagerbestands wird mithilfe von mobilen Geräten erfasst. Bevor ein Lagerarbeiter Arbeit ausführen kann, muss er einer Arbeitskraft in der Personalverwaltung zugeordnet werden. Jedes **Arbeitskraftkonto** kann mehrere Lagerortarbeitsbenutzer haben, die ihm zugeordnet sind. Diese Arbeitsbenutzer können in verschiedenen Lagerorten arbeiten und verschiedene Zugriffsebenen auf unterschiedliche Menüs des mobilen Geräts haben. Sie können die Lagerortarbeitsbenutzer als mehrere Anmeldungen für die ausgewählte Arbeitskraft betrachten. Jeder Arbeitsbenutzer hat einen Standardlagerort, und bestimmte Workflows werden durch die Menüartikel, die diesem Arbeitsbenutzer verfügbar sind, offengelegt. 
 
@@ -54,7 +53,6 @@ Eine Analyse der Zeit, die benötigt wird, um Arbeitsaufgaben zu verarbeiten, ka
 
 -   **Arbeit nach Benutzer** – Dieser Bericht zeigt die Arbeitskraftproduktivität, auf der Grundlage der tatsächlichen Zeiten im Vergleich mit erwarteten Zeiten.
 -   **Arbeit nach Arbeitstransaktionstyp** – Sie können diesen Bericht verwenden, um Unwirtschaftlichkeiten in bestimmten Lagerortprozessen zu untersuchen. Beispielsweise stellen Sie fest, dass Entnahmen für Umlagerungsaufträge diese Woche länger als in den Vorwochen dauern. Sie können diese Informationen dann für weitere Untersuchungen verwenden.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Ein neues Lagerortlayout erstellen
-description: "Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in einem Lagerort eingerichtet werden."
+description: Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in einem Lagerort eingerichtet werden.
 author: perlynne
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 26314f9015feded41f105814b85069fff0c62964
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360531"
 ---
 # <a name="create-a-new-warehouse-layout"></a>Ein neues Lagerortlayout erstellen
 
@@ -75,5 +75,4 @@ Diese Prozedur zeigt Ihnen an, wie die Informationen zu den Lagerplätzen in ein
 14. Klicken Sie auf Fertig stellen.
 15. Schließen Sie die Seite.
 16. Aktualisieren Sie die Seite.
-
 

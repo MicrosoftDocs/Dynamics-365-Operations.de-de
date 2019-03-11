@@ -1,13 +1,13 @@
 ---
-title: "Geschäftsprozesse formalisieren"
-description: "Dieses Thema erklärt, wie die Geschäftsprozessfunktion es Ihnen ermöglicht, eine Geschäftsprozessvorlage für Prozesse zu erstellen, die innerhalb Ihrer Organisation abgeschlossen werden müssen."
+title: Geschäftsprozesse formalisieren
+description: Dieses Thema erklärt, wie die Geschäftsprozessfunktion es Ihnen ermöglicht, eine Geschäftsprozessvorlage für Prozesse zu erstellen, die innerhalb Ihrer Organisation abgeschlossen werden müssen.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: PersonnelBusinessProcessGenericWorkspace, BusinessProcessGenericTemplateListpage, BusinessProcessGenericMyTemplates, BusinessProcessGroupAssignment
 audience: Application User
 ms.reviewer: rschloma
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
 ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304585"
 ---
 # <a name="formalize-business-processes"></a>Geschäftsprozesse formalisieren
 
@@ -43,7 +43,7 @@ Für jeden Geschäftsprozess wird ein Prozesseinhaber definiert werden. Der Proz
 Ein Prozessbesitzer kann keine neuen Geschäftsprozesse oder Geschäftsprozessvorlagen erstellen oder aktive Geschäftsprozesse oder Geschäftsprozessvorlagen löschen.
 
 ## <a name="tasks"></a>Aufgaben
-Ein Geschäftsprozess enthält häufig mehrere Aufgaben. Einige Aufgaben wie Überprüfung interner Kursangebote können in Microsoft Dynamics 365 for Talent abgeschlossen werden. In diesem Fall ist eine Option im Feld **Aufgabenlink** ausgewählt. Andere Aufgaben beinhalten Formulare, die es erfordern, eine Website zu prüfenn oder auszufüllen. In diesem Fall wird das Feld **URL** auf **Aufgabenlink** ausgewählt, und die Webadresse kann eingegeben werden. Sie können URLs sowohl für externe als auch interne Websites in diesem Feld eingeben. Sie können auch Aufgaben für Aktivitäten erstellen, die Sie manuell ausführen, wie beispielsweise die Überprüfung der Barrierefreiheit aller Strukturen. In diesem Beispiel ist ein Aufgabenlink nicht erforderlich. Diese Flexibilität ermöglicht es Ihnen, mehrere Arten von Aufgaben in einem umfassenden Prozess nachzuverfolgen.
+Ein Geschäftsprozess enthält häufig mehrere Aufgaben. Einige Aufgaben, wie die Überprüfung interner Kursangebote, können in Microsoft Dynamics 365 for Talent[?] abgeschlossen werden. In diesem Fall ist eine Option im Feld **Aufgabenlink** ausgewählt. Andere Aufgaben beinhalten Formulare, die es erfordern, eine Website zu prüfenn oder auszufüllen. In diesem Fall wird das Feld **URL** auf **Aufgabenlink** ausgewählt, und die Webadresse kann eingegeben werden. Sie können URLs sowohl für externe als auch interne Websites in diesem Feld eingeben. Sie können auch Aufgaben für Aktivitäten erstellen, die Sie manuell ausführen, wie beispielsweise die Überprüfung der Barrierefreiheit aller Strukturen. In diesem Beispiel ist ein Aufgabenlink nicht erforderlich. Diese Flexibilität ermöglicht es Ihnen, mehrere Arten von Aufgaben in einem umfassenden Prozess nachzuverfolgen.
 
 Aufgaben können einer bestimmten Arbeitskraft oder einer Position zugewiesen werden. Beispielsweise ist der Vergütungsmanager immer die Person, die eine Prüfung von Versicherungsprämien vornehmen wird. Wenn Sie diese Aufgabe erstellen, wählen Sie die **Position** für den **Zuweisungstyp** aus, und wählen Sie dann **Leiter Vergütungen/Bezüge** aus der Liste **Position** aus. Wenn der Geschäftsprozess startet, wird die Aufgabe der Arbeitskraft zugewiesen, die sich in der Position **Leiter Vergütungen/Bezüge** befindet. Sie können auch eine Aufgabe einer bestimmten **Arbeitskraft** zuweisen, indem Sie im Feld **Zuweisungstyp** die Option „Arbeitskraft” auswählen und anschließend die entsprechende Person auswählen.
 
@@ -58,7 +58,7 @@ Komplexe Aufgaben erfordern möglicherweise mehrere Schritte, oder benötigen da
 Ein Prozess kann innerhalb einer Geschäftsprozessvorlage gestartet werden, indem **Prozess starten** ausgewählt wird. Wenn ein Prozess gestartet wird, werden Aufgaben für die ausgewählten Arbeitskräfte erstellt und/oder Positionen in den Aufgaben definiert, die in der Geschäftsprozessvorlage definiert sind. Ein Fälligkeitsdatum wird auch jeder Aufgabe zugeordnet, indem die Offsettage vom Stichdatum addiert oder subtrahiert werden (lesen Sie hierzu die Informationen zu Offsettage im Aufgabenabschnitt). Die aktiven Geschäftsprozesse können im Arbeitsbereich **Geschäftsprozesse** angezeigt werden.
 
 ## <a name="employee-self-service"></a>Mitarbeiter-Self-Service
-Nachdem einem Mitarbeiter eine Aufgabe zugeordnet wurde, kann der Mitarbeiter eine oder alle zugewiesenen Aufgaben auf der Seite **Mitarbeiter-Self-Service** anzeigen. Für jede Geschäftsprozessaufgabe, die ihm zugewiesen wird, kann der Mitarbeiter den Namen und die Beschreibung der Aufgabe und die Anweisungen für ihre Ausführung finden und den Namen einer Kontaktperson. Über die Seite **Mitarbeiter-Self-Service** kann der Mitarbeiter die entsprechende Seite in Microsoft Dynamics 365 oder in der zugeordneten Webseite öffnen und die Aufgaben festlegen, wie beispielsweise laufend, storniert, oder abgeschlossen.
+Nachdem einem Mitarbeiter eine Aufgabe zugeordnet wurde, kann der Mitarbeiter eine oder alle zugewiesenen Aufgaben auf der Seite **Mitarbeiter-Self-Service** anzeigen. Für jede Geschäftsprozessaufgabe, die ihm zugewiesen wird, kann der Mitarbeiter den Namen und die Beschreibung der Aufgabe und die Anweisungen für ihre Ausführung finden und den Namen einer Kontaktperson. Über die Seite **Mitarbeiter-Self-Service** kann der Mitarbeiter die entsprechende Seite auch in Microsoft Dynamics 365 oder in der zugeordneten Webseite öffnen und Aufgaben als „In Bearbeitung”, „Abgebrochen” oder „Abgeschlossen” markieren.
 
 ## <a name="business-process-workspace"></a>Geschäftsprozess-Arbeitsbereich
 HR Mitarbeiter können die aktiven Geschäftsprozesse im Arbeitsbereich **Geschäftsprozesse** anzeigen. Im Arbeitsbereich werden alle aktiven Prozesse und die Aufgaben aufgeführt, die zugeordnet sind. Die umfassende Aufgabenliste kann nach Fälligkeitsdatum gefiltert werden. Der Arbeitsbereich führt auch überfällige Aufgaben sowie Aufgaben auf, die spezifisch der Personalverwaltungsfachkraft zugewiesen sind. Der HR-Mitarbeiter kann auch den Status aller Aufgaben aktualisiert und ggf. Aufgaben neu zuweisen, damit dadurch der allgemeine Geschäftsprozess vorankommt.
@@ -74,5 +74,4 @@ Um eine Geschäftsprozessvorlage zu erstellen oder zu kopieren, navigieren Sie z
 - Wählen Sie **Startprozess**, um den ausgewählten Geschäftsprozess, zugewiesene Aufgaben und Fälligkeitsdaten zu berechnen.
 
 Um aktive Prozesse und zugehörige Aufgaben anzuzeigen, navigieren Sie zum Arbeitsbereich **Geschäftsprozesse**.
-
 

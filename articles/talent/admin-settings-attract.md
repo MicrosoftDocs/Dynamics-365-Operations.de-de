@@ -1,14 +1,14 @@
 ---
 title: Administratoreinstellungen in Attract
-description: "In diesem Thema wird erläutert, wie die Funktionen für Organisationen und Benutzer in Attract aktiviert werden."
-author: 
+description: In diesem Thema wird erläutert, wie die Funktionen für Organisationen und Benutzer in Attract aktiviert werden.
+author: ''
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: fb7b5e5b98ddb8e0e44fccbb0ddbb05199265414
-ms.contentlocale: de-de
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304515"
 ---
-
 # <a name="admin-settings-in-attract"></a>Administratoreinstellungen in Attract
 [!include[banner](../includes/banner.md)]
 
@@ -69,4 +68,3 @@ Sie können auch Optionen in Zusammenhang mit der Kandidatenerfahrung konfigurie
 Sie können auch ein Ablaufdatum für Angebote festlegen und durchsetzen. Wenn die Option **Ein Ablaufdatum für alle Angebote erforderlich machen** auf **Ja** festlegen, laufen Angebote nach der angegebenen Anzahl von Stunden oder Tagen ab.
 
 Weitere Informationen zur Angebotsverwaltung finden Sie unter [Einrichten der Angebotsverwaltung](./offer-setup.md).
-

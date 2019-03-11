@@ -1,13 +1,13 @@
 ---
 title: Kreditkartenbuchungen importieren und verwalten
-description: "In diesem Thema wird erläutert, wie ausgabenbezogenen Kreditkartenbuchungen importiert und verwaltet werden. Diese Transaktionen können so eingerichtet werden, dass Sie automatische nach einem sich wiederholenden Zeitplan importiert werden sollen, oder Sie können die Buchungen nach Bedarf manuell importieren."
+description: In diesem Thema wird erläutert, wie ausgabenbezogenen Kreditkartenbuchungen importiert und verwaltet werden. Diese Transaktionen können so eingerichtet werden, dass Sie automatische nach einem sich wiederholenden Zeitplan importiert werden sollen, oder Sie können die Buchungen nach Bedarf manuell importieren.
 author: KimANelson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPbsMainDataLines
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: 9674cf495b7fdd40d8672580b9d10e9ebe626bb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e640c9e44add5599be4a2e381b4ffd81f212889c
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322650"
 ---
-
 # <a name="import-and-maintain-credit-card-transactions"></a>Kreditkartenbuchungen importieren und verwalten
 
 [!include [banner](../includes/banner.md)]
@@ -53,4 +52,3 @@ Weitere Informationen zu den Daten-Entitäten finden Sie unter [Daten-Entitäten
 Nachdem ein Mitarbeiterdatensatz beendet ist, wird das Konto Active Directory-Domain Services (AD DS) des Mitarbeiters deaktiviert. Allerdings gibt es möglicherweise aktive Kreditkartenbuchungen, die noch bezahlt und erstattet werden müssen. Sie können nun die Seite **Kreditkartenbuchungen** verwenden, um den Mitarbeiter für eine Kreditkartenbuchung neu zuzuweisen, wo der zugeordnete Mitarbeiter ausgeschieden ist.
 
 Wählen Sie mindestens eine Kreditkartenbuchung aus, und wählen Sie dann **Weisen Sie Buchungen neu zu** aus. Sie können dann einen anderen Mitarbeiter auswählen, dem die Kreditkartenbuchungen zugewiesen werden sollen. Nachdem die Kreditkartenbuchung neu zugewiesen wurde, kann die Buchung für eine Spesenabrechnung ausgewählt werden und über den regulären Prozess für Spesenabrechnungsrückerstattung bezahlt werden.
-

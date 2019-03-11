@@ -1,13 +1,13 @@
---- 
-title: "ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Datenmodell entwerfen)"
-description: "In den folgenden Schritten wird erläutert, wie ein Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann."
+---
+title: 'ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Datenmodell entwerfen)'
+description: In den folgenden Schritten wird erläutert, wie ein Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 84f546b73eefe3ead78c6ab3fdbbc05d0db5fef5
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339509"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-1-design-data-model"></a>ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Designdatenmodell)
 
@@ -106,5 +106,4 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfig
 68. Klicken Sie auf Hinzufügen.
 69. Klicken Sie auf "Speichern".
 70. Schließen Sie die Seite.
-
 

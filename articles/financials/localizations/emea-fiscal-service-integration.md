@@ -1,13 +1,13 @@
 ---
 title: Integration von steuerlichem Dienst (ESR)
-description: "Dieses Thema enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik."
+description: Dieses Thema enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik.
 author: Anasyash
 manager: AnnBe
 ms.date: 01/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CashRegister_W
 audience: Application user
 ms.reviewer: shylaw
@@ -15,29 +15,28 @@ ms.search.scope: Core, Operations
 ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
+ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 308f46ae4afef1eb88548bdebdf8215aabb87442
-ms.contentlocale: de-de
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370334"
 ---
-
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
 [!include [banner](../includes/banner.md)]
 
 In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden. In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden. In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.
 
-Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Microsoft Dynamics 365 for Finance and Operations es Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.
+Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Microsoft Dynamics 365 for Finance and Operations Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.
 
 > [!NOTE]
 > Es wird vorausgesetzt, dass der steuerliche Dienst des Drittanbieters alle anderen landesspezifischen gesetzlichen Anforderungen bezüglich registrierter Transaktionen erfüllt. Sie sind für die ordnungsgemäße Einrichtung und Verwaltung des steuerlichen Diensts verantwortlich.
 
 ## <a name="available-configurations"></a>Verfügbare Konfigurationen
 
-Die Formate des Barbelegs, der XML-Anforderung des steuerlichen Diensts und die XML-Antwort vom steuerlichen Dienst werden als elektronische Berichterstellungskonfigurationen (EB) konfiguriert, die in der Bibliothek freigegebener Anlagen in Microsoft Dynamics Lifecycle Services (LCS) gespeichert werden. Die folgenden Konfigurationen sind verfügbar.
+Die Formate des Barbelegs, die XML-Anforderung des steuerlichen Diensts und die XML-Antwort vom steuerlichen Dienst werden als Konfigurationen zur elektronischen Berichterstellung (EB) konfiguriert, die in der Bibliothek freigegebener Anlagen in Microsoft Dynamics Lifecycle Services (LCS) gespeichert werden. Die folgenden Konfigurationen sind verfügbar.
 
 | Konfigurationsname | Konfigurationsbeschreibung | Kommentar | EB-Konfigurationsdatei in der LCS-Bibliothek freigegebener Anlagen |
 |---|---|---|---|
@@ -68,12 +67,12 @@ Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kom
 <tbody>
 <tr>
 <td>Kasseneinstellungen</td>
-<td>Geben Sie die URL der Kasse an, den Namen der Instanz von Microsoft Azure Key Vault und den Klassennamen.</td>
+<td>Geben Sie die URL der Kasse, den Namen der Instanz von Microsoft Azure Key Vault und den Klassennamen an.</td>
 <td><ul>
 <li><strong>Kassen-URL</strong> – Geben Sie die URL des steuerlichen Diensts ein.
-<blockquote>[!WARNING]<br>Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft. Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet. Sie sind dafür verantwortlich sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen. Sie tragen das Risiko der Verwendung dieser Dienste. Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen. Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</blockquote>
+<blockquote>[!WARNING]<br>Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft. Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet. Sie sind dafür verantwortlich, sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen. Sie tragen das Risiko der Verwendung dieser Dienste. Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen. Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</blockquote>
 </li>
-<li><strong>Key Vault-Name</strong> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters). In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist. Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Einen Azure Key Vault-Client einrichten</a>.</li>
+<li><strong>Key Vault-Name</strong> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters). In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist. Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Einen Azure Key Vault-Client einrichten</a>.</li>
 <li><strong>Klassenname</strong> – Wählen Sie die Klasse aus, in der Eigenschaften der Integration mit dem steuerlichen Dienst implementiert werden. Die verfügbare Klasse ist <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
 </ul>
 </td>
@@ -90,7 +89,7 @@ Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische For
 <td>Aktivieren Sie die Verwendung selbstsignierter Zertifikate.</td>
 <td>
 <ul>
-<li><strong>Selbstsigniertes Zertifikat verwenden</strong> – Legen Sie diese Option auf <strong>Ja</strong> fest, wenn Sie ein selbst generiertes, selbst signiertes Zertifikat verwenden, das sie nicht der Liste vertrauenswürdiger Zertifikate hinzufügen können.</li>
+<li><strong>Verwenden eines selbstsignierten Zertifikats</strong> – Legen Sie diese Option auf <strong>Ja</strong> fest, wenn Sie ein selbstgeneriertes, selbstsigniertes Zertifikat verwenden, das sie nicht der Liste vertrauenswürdiger Zertifikate hinzufügen können.</li>
 <li><strong>Kassenzertifikats-Fingerabdruck</strong> – Geben Sie den Fingerabdruck des selbst signierten Zertifikats ein, das in einem steuerlichen Dienst gespeichert ist und das verwendet wird, um das Zertifikat des steuerlichen Diensts zu überprüfen.</li>
 </ul>
 </td>
@@ -272,7 +271,7 @@ In der folgenden Tabelle werden die Felder für Kassenzahlungsbuchungen beschrie
 <td>Status</td>
 <td>Der Status der Buchung. Folgende Werte werden verwendet:
 <ul>
-<li><strong>Erstellt</strong> – Die Zahlungstransaktion ist gebucht worden, jedoch nicht registriert worden.</li>
+<li><strong>Erstellt</strong> – Die Zahlungstransaktion ist gebucht, aber nicht registriert worden.</li>
 <li><strong>Registriert</strong> – Die Zahlungstransaktion ist gebucht und registriert worden. (Somit haben Sie die Zahlungstransaktion an den steuerlichen Dienst übermittelt, und Sie haben eine Antwort empfangen, die Steuercodes enthält.)</li>
 </ul></td>
 </tr>
@@ -350,4 +349,3 @@ In der folgenden Tabelle werden die Felder für Kassenzahlungsbuchungen beschrie
 </tr>
 </tbody>
 </table>
-

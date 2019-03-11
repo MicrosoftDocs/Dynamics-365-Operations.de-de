@@ -1,31 +1,30 @@
 ---
 title: Zeitfenster
-description: "Sie können Zeitfenster verwenden, um die Planung von Serviceauftragspositionen zu optimieren."
+description: Sie können Zeitfenster verwenden, um die Planung von Serviceauftragspositionen zu optimieren.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMATimeAgreement
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6f748268f6cb85ff835919485da2828689eee23c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 4ea10e4c0fbfd21538bba16d2b01deb3e4b3a10d
-ms.openlocfilehash: b7268870aa9065e4e52d936e819107094bad3663
-ms.contentlocale: de-de
-ms.lasthandoff: 02/20/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347214"
 ---
-
 # <a name="time-windows"></a>Zeitfenster  
 
 [!include [banner](../includes/banner.md)]
@@ -45,5 +44,4 @@ Wenn für eine Servicevereinbarungsposition kein Zeitfenster angegeben wird, mus
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Erstellen von Zeitfenstern](create-time-windows.md)
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Leistungserfassung hinzufügen und Lob an eine Person senden"
-description: "Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht."
+---
+title: Leistungserfassung hinzufügen und Lob an eine Person senden
+description: Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 07f5a16ccb349fbef4c0d2be14c1ef02ed8831dd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364556"
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Leistungserfassung hinzufügen und Lob an eine Person senden
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht. Sie können außerdem Aktivitäten von Mitarbeitern aus der Erfassung loben. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele erreichen oder wie Ihre Leistung für einen bestimmten Zeitraum aussieht. Sie können außerdem Aktivitäten von Mitarbeitern aus der Erfassung loben. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 1. Wechseln Sie zu Alle Arbeitsbereiche > Mitarbeiter-Self-Service.
 2. Klicken Sie auf "Leistungserfassung".
@@ -43,7 +43,7 @@ Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele er
 9. Geben Sie im Feld "Schlüsselwörter" einen Wert ein.
 10. Klicken Sie auf "Externen Link hinzufügen".
 11. Geben Sie im Feld "Beschreibung" die Bezeichnung "Envision" ein.
-12. Geben Sie im Feld Internetadresse "https://www.microsoft.com/en/envision/default" ein.
+12. Geben Sie im Feld „Internetadresse” „https://www.microsoft.com/en/envision/default” ein.
 13. Klicken Sie auf die Bezeichnung mit dem Namen "Leistungserfassung" unter der "Speichern"-Schaltfläche, um zum Raster zurückzukehren.
     * Sie können die ausgewählte Erfassung oder Erfassungen einem Ziel hinzufügen, um es anzuzeigen, wenn Sie das Ziel öffnen. Ein Link wird im Inforegistername Link hinzugefügt. Wenn Sie eine Erfassung einem Ziel hinzufügen und dann das Ziel einer Überprüfung hinzufügen, wird die Erfassung automatisch bei der Überprüfung angezeigt.  
     * Sie können die ausgewählte Erfassung oder Erfassungen einer Überprüfung hinzufügen, um sie anzuzeigen, wenn Sie die Überprüfung öffnen.    Ein Link wird in dem Links-Inforegister hinzugefügt.  
@@ -55,5 +55,4 @@ Die Leistungserfassung verwahrt Informationen, die zeigen, wie Sie Ihre Ziele er
 19. Wählen Sie eine Person aus der Liste der Mitarbeiter aus.
 20. Geben Sie im Textfeld "Danke für die Hilfe bei der Konferenz" ein.
 21. Klicken Sie auf Senden.
-
 

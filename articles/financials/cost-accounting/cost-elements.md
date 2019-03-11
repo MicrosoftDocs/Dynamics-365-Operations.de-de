@@ -1,13 +1,13 @@
 ---
 title: Kostenelementdimensionen
-description: "Als eine der Kernpfeiler bei der Kostenrechnung werden Kostenelementdimensionen verwendet, um zu kategorisieren und nachzuverfolgen, wo Kosten hinfließen."
+description: Als eine der Kernpfeiler bei der Kostenrechnung werden Kostenelementdimensionen verwendet, um zu kategorisieren und nachzuverfolgen, wo Kosten hinfließen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: c703d1a9ae36d4342dc652d70dd82379187057c1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0f47c75b6f6f4533501070f78698de82cf70f9bd
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366074"
 ---
-
 # <a name="cost-element-dimensions"></a>Kostenelementdimensionen
 
 [!include [banner](../includes/banner.md)]
@@ -74,7 +73,6 @@ Um die Einstellungen der Kostenelement-Dimensionsmitglieder in der Kostenrechnun
 
 ## <a name="implementation-considerations"></a>Implementierungsüberlegungen
 Da Kostenelemente die unterste Ebene der Kostendetails darstellen, sollten Sie sicherstellen, dass alle Kostenelemente, die zur Berichterstellung auf Führungsebene erforderlich sind, einbezogen werden, wenn Sie die Kostenelementstruktur implementieren. Es kann eine Herausforderung sein, eine entsprechenden Anzahl von Kostenelementen für die Kostensteuerung zu finden. Wenn Sie Tausende von Kostenelementen haben, kann es schwierig sein, jedes Kostenelement zu steuern. Alternativ können Sie Kostenelemente gruppieren und die Kostensteuerung auf einer aggregierten Ebene verwalten.
-
 
 
 

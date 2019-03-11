@@ -1,13 +1,13 @@
 ---
 title: Bericht "Deutsches Journal"
-description: "In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird."
+description: In diesem Artikel wird beschrieben, für was der deutsche Erfassungslistenbericht verwendet wird, wer ihn in der Regel verwendet und wie er ausgeführt wird.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalizeReport
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc931e17092a772d3a87c84533fe50d54249c962
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0959d2c19c7135bc20b2f9604016cb6770e2fac7
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370376"
 ---
-
 # <a name="german-journal-list-report"></a>Bericht "Deutsches Journal"
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,6 @@ Der Bericht **Deutsches Journal** enthält eine Liste mit Buchungen, die produzi
 
 1.  Führen Sie die Journalisierungsfunktion aus (**Hauptbuch** &gt; **Periodische Aufgaben** &gt; **Allgemeine Erfassung** &gt; **Journalisierung**).
 2.  Wählen Sie auf der Seite **Sachkonten** eine Position aus, und klicken Sie anschließend auf **Deutsches Journal**.
-
 
 
 

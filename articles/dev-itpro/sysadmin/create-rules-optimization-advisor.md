@@ -1,32 +1,31 @@
 ---
-title: "Erstellen von Regeln für Optimierungsratgeber"
-description: "In diesem Thema wird erläutert, wie dem Optimierungsratgeber neue Regeln hinzufügt werden."
+title: Erstellen von Regeln für Optimierungsratgeber
+description: In diesem Thema wird erläutert, wie dem Optimierungsratgeber neue Regeln hinzufügt werden.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/04/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: ca73120a5a0da4dc348c2d16dca8e7654876af5d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: a18fac31b5acb7d2a1ec40203122d4eb9d94a439
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354160"
 ---
-
 # <a name="create-rules-for-optimization-advisor"></a>Erstellen von Regeln für Optimierungsratgeber
 
 [!include [banner](../includes/banner.md)]
@@ -103,11 +102,11 @@ Zwei Methoden, die implementiert werden müssen, sind **opportunityTitle** und *
 
 Der Titel, der durch **opportunityTitle** zurückgegeben wird, wird unter der Spalte **Optimierungsverkaufschance** im Arbeitsbereich **Optimierungsratgeber** angezeigt. Er wird zudem als der Kopf des Seitenbereichs angezeigt, der mehr Informationen zu der Verkaufschance anzeigt. Ordnungsgemäß ist diese Methode mit dem Attribut **DiagnosticRuleSubscription** ausgestattet, das die folgenden Argumente bezieht: 
 
-* **Diagnosebereich** – Eine Aufzählung des Typs **DiagnosticArea**, der beschreibt, zu welchem Bereich der Anwendung die Regel gehört, wie beispielsweise **DiagnosticArea::SCM**. 
+* **Diagnosebereich** – Eine Aufzählung des Typs **DiagnosticArea**, die beschreibt, zu welchem Bereich der Anwendung die Regel gehört, wie beispielsweise **DiagnosticArea::SCM**. 
 
 * **Regelname** – Eine Zeichenfolge mit dem Regelname. Diese wird unter der Spalte **Regelname** im Formular **Diagnoseüberprüfungsregel** (**DiagnosticsValidationRuleMaintain**) angezeigt. 
 
-* **Ausführungshäufigkeit** – Eine Aufzählung des Typs **DiagnosticRunFrequency**, die beschreibt, wie oft die Regel ausgeführt werden soll, wie beispielsweise **DiagnosticRunFrequency::Daily**. 
+* **Ausführungshäufigkeit** – Eine Aufzählung des Typs **DiagnosticRunFrequency**, die beschreibt, wie oft die Regel ausgeführt werden soll, wie beispielsweise **DiagnosticRunFrequency::Daily**. 
 
 * **Regelbeschreibung** – Eine Zeichenfolge mit einer ausführlicheren Beschreibung der Regel. Diese wird unter der Spalte **Regelbeschreibung** im Formular **Diagnoseüberprüfungsregel** (**DiagnosticsValidationRuleMaintain**) angezeigt. 
 
@@ -196,7 +195,7 @@ class ScanNewRulesJob
 
 Die Regel wird im Formular **Diagnoseüberprüfungsregel** angezeigt, das von **Systemverwaltung** > **Periodische Aufgaben** > **Diagnoseüberprüfungsregel verwalten** verfügbar ist. Damit sie bewertet wird, wechseln Sie zu **Systemverwaltung** > **Periodische Aufgaben** > **Diagnoseüberprüfungsregel planen**, wählen Sie die Häufigkeit der Regel aus, wie beispielsweise **Täglich**. Klicken Sie auf **OK**. Wechseln Sie zu **Systemverwaltung** > **Optimierungsratgeber**, um die neue Verkaufschance anzuzeigen. 
 
-Das folgende Beispiel ist ein Codeausschnitt mit dem Skelett einer Regel einschließlich aller erforderlichen Attribute und Methoden. Es ermöglicht, mit dem schreiben neuer Regeln zu beginnen. Die Beschriftungen und die Aktivitätsmenüoptionen, die im Beispiel verwendet werden, gelten nur zu Vorführungszwecken.
+Das folgende Beispiel ist ein Codeausschnitt mit dem Skelett einer Regel einschließlich aller erforderlichen Attribute und Methoden. Es ermöglicht, mit dem schreiben neuer Regeln zu beginnen.Die Beschriftungen und Aktivitätsmenüoptionen, die im Beispiel verwendet werden, gelten nur zu Vorführungszwecken.
 
 ```
 [DiagnosticsRuleAttribute]
@@ -255,5 +254,4 @@ public final class SkeletonSelfHealingRule extends SelfHealingRule implements ID
 }
 ```
 
-Weitere Informationen finden Sie im kurzen YouTube-Video: [Optimierungsratgeber in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
-
+Weitere Informationen erhalten Sie in einem kurzen YouTube-Video: [Optimierungsratgeber in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

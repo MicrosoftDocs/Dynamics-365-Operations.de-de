@@ -1,13 +1,13 @@
---- 
+---
 title: Ein Ziel erstellen
-description: "Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen."
+description: Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EssWorkspace, HcmGoal, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmGoalChangeSettings
 audience: Application User
 ms.reviewer: rschloma
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: abd59b96a2e5dceb2492c2db2c617485b332fbd3
 ms.openlocfilehash: e3f3bc01113099c5b28f10e702ebf981e26c196a
-ms.contentlocale: de-de
-ms.lasthandoff: 09/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350710"
 ---
 # <a name="create-a-goal"></a>Ein Ziel erstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt. Diese Prozedur ist für eine Funktion gedacht, die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
+Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen und die Ziele mit einer Überprüfung verknüpfen. Diese Prozedur wurde mit dem Demodatenunternehmen USMF erstellt. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 1. Wechseln Sie zu Alle Arbeitsbereiche > Mitarbeiter-Self-Service.
 2. Klicken Sie auf "Alle Ziele anzeigen".
@@ -59,5 +59,4 @@ Sie können Ziele erstellen, Aktivitäten hinzufügen, Messungen nachverfolgen u
     * Es gibt oftmals Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.     Ihr Personalverwaltungsadministrator oder Manager können Zielvorlagen für diese Ziele erstellen. Sie können eine Ziel aus einer Vorlage hinzufügen und dieses anschließend ändern, um die Zeitachsen abzugleichen.  
     * Es gibt oftmals merhere Ziele, die für alle Teammitglieder oder Mitarbeiter gleich oder ähnlich sind.     Ihr Personalverwaltungsadministrator oder Manager können Zielgruppen erstellen, die eine oder mehrere Zielvorlagen enthalten. Sie können Ziele aus einer Vorlagengruppe hinzufügen und diese anschließend ändern, um die Zeitachsen abzugleichen.  
     * Beim Erstellen einer Überprüfung können Sie dieser Überprüfung Ziele hinzufügen. Lesen Sie den Aufgabenleitfaden für Überprüfungen, um zu sehen, inwiefern Sie Ziele den Überprüfungen hinzufügen können.  
-
 

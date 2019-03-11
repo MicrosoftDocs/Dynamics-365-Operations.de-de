@@ -1,13 +1,13 @@
 ---
-title: "Mobiler Arbeitsbereich für mein Team"
-description: "Dieses Thema enthält Informationen zum Mein Team mobilen Arbeitsbereich, mit dem Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen können. Benutzer können auch Lob an Personen in der Mitarbeitergruppe senden."
+title: Mobiler Arbeitsbereich für mein Team
+description: Dieses Thema enthält Informationen zum Mein Team mobilen Arbeitsbereich, mit dem Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen können. Benutzer können auch Lob an Personen in der Mitarbeitergruppe senden.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,23 +15,22 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fccbedea611228cc57531c89406f72a6664153c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d049c55a40761d0663e3d558b47b4840e5db9bf1
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346915"
 ---
-
 # <a name="my-team-mobile-workspace"></a>Mobiler Arbeitsbereich für mein Team
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Mein Team**. Mit dem Arbeitsbereich können Manager ihre eigenen Mitarbeiter und erweitertes Personal anzeigen. Sie können auch Lob an Personen innerhalb der Mitarbeitergruppe senden.
 
-Dieser mobile Arbeitsbereich soll mit der Mobil-App für Microsoft Dynamics 365 für Unified Operations verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
 
-## <a name="overview"></a>Überblick 
+## <a name="overview"></a>Übersicht 
 Der mobile Arbeitsbereich **Mein Team** ermöglicht Managern, folgende Aufgaben auszuführen:
 
 - Liste der eigenen Mitarbeiter des Managers anzeigen.
@@ -54,11 +53,11 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 <tr class="odd">
 <td>Eines der folgenden Produkte muss in der Organisation bereitgestellt werden:
 <ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
-<li>Microsoft Dynamics 365 for Talent</li>
+<li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Wenn Finance und Operations nicht bereits in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in Ihrer Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
+<td>Wenn Finance and Operations nicht bereits in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
 </td>
 </tr>
 <tr class="even">
@@ -73,7 +72,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 
 Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
 
--   [Für Androide-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bei der mobile App anmelden
@@ -99,4 +98,3 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 1.  Wählen Sie **Lob versenden**. 
 1. Geben Sie den Text des Lobs ein, das Sie übermitteln möchten. 
 1. Wählen Sie **Fertig**.
-

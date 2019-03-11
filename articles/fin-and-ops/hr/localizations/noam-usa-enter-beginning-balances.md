@@ -1,13 +1,13 @@
 ---
 title: Eingeben von Lohnanfangssalden
-description: "In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, um Daten für eine neue Lohnimplementierung von einem anderen System zu migrieren oder transferieren."
+description: In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, um Daten für eine neue Lohnimplementierung von einem anderen System zu migrieren oder transferieren.
 author: kherr75
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1e7bdfca55e1bdaba0b5ebdf55b46744e584ab2c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312990"
 ---
-
 # <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
 
 [!include [banner](../../includes/banner.md)]
@@ -168,4 +167,3 @@ Es ist möglich, Buchungen zu stornieren und erneut eingeben. Um die Buchung zu 
 2. Klicken Sie auf **Ja**, wenn die Nachricht „Wenn Sie diese Zahlungsaufstellung zurücksetzen, wird eine Rückbuchungszahlungsaufstellung zum Ausgleichen dieser Zahlungsaufstellung erstellt. Keine der Zahlungsaufstellungen kann bearbeitet werden. Möchten Sie diese Zahlungsaufstellung zurücksetzen?“ angezeigt wird. 
 
 Nachdem Sie die Zahlungsaufstellung rückgängig gemacht haben, können Sie eine neue Zahlungsaufstellung für den Mitarbeiter aus der zuvor erstellten Lohnabrechnung erstellen. Achten Sie darauf, dass alle fehlerhaften Positionen der Zahlungsaufstellung korrigiert werden, bevor Sie die neue Zahlungsaufstellung erzeugen, und erzeugen Sie dann die neuen Zahlungsaufstellungen mit den richtigen Beträgen. 
-

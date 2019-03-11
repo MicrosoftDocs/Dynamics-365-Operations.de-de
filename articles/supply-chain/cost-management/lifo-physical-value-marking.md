@@ -1,13 +1,13 @@
 ---
 title: LIFO mit physischem Wert und Markierung
-description: "Bei LIFO (Last in, First out) handelt es sich um ein Lagermodell, bei dem die zuletzt eingegangenen Zugänge das Lager als Erstes wieder verlassen. Abgänge aus dem Lager werden mit den neuesten Zugängen im Lager auf der Grundlage des Datums der Lagerbuchung abgeglichen."
+description: Bei LIFO (Last in, First out) handelt es sich um ein Lagermodell, bei dem die zuletzt eingegangenen Zugänge das Lager als Erstes wieder verlassen. Abgänge aus dem Lager werden mit den neuesten Zugängen im Lager auf der Grundlage des Datums der Lagerbuchung abgeglichen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db6d04a64821b3b02679056f787092dc40ef4423
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344201"
 ---
-
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO mit physischem Wert und Markierung
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Der neue laufende Durchschnittseinstandspreis stellt den Durchschnitt der wertm�
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unit Preis angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format "Menge@Einheitenpreis" der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein nicht in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
@@ -98,7 +97,7 @@ Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO für diese B
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unit Preis angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format "Menge@Einheitenpreis" der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein nicht in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
@@ -140,14 +139,13 @@ Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermode
 - Lagerbuchungen sind durch vertikale Pfeile dargestellt.
 - Zugänge zum Lager sind als vertikale Pfeile über der Zeitachse dargestellt.
 - Abgänge aus dem Lager sind als vertikale Pfeile unter der Zeitachse dargestellt.
-- Über (oder unter) den einzelnen vertikalen Pfeilen ist der Wert der Bestandtransaktion im Format Quantity@Unit Preis angegeben.
+- Über (oder unter) den einzelnen vertikalen Pfeilen ist im Format "Menge@Einheitenpreis" der Wert der Lagerbuchung angegeben.
 - Ein in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung physisch in das Lager gebucht wurde.
 - Ein nicht in Klammern gesetzter Lagerbuchungswert weist darauf hin, dass die Lagerbuchung wertmäßig in das Lager gebucht wurde.
 - Jede neue Zugangs- oder Abgangsbuchung wird mit einer neuen Beschriftung versehen.
 - Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
 - Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
 - Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
-
 
 
 

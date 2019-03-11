@@ -1,13 +1,13 @@
---- 
-title: "EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung"
-description: "Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird."
+---
+title: EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung
+description: Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,19 +16,19 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4db22444bee1590770a47ca5946941b530ae85ce
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370345"
 ---
 # <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a>EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird. Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse. Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort. Die Lieferung muss in Intrastat gemeldet werden. Dasselbe Verhalten gilt für Debitorenrücklieferungen.
-Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt. Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren. Diese Prozedur ist für Buchhalter vorgesehen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt. Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren. Diese Prozedur ist für Buchhalter vorgesehen. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 1. Wechseln Sie zu "Kreditoren" > "Bestellungen" > "Alle Bestellungen".
 2. Klicken Sie auf "Neu".
@@ -72,5 +72,4 @@ Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Aufgabe wurd
 36. Klicken Sie auf "OK".
 37. Klicken Sie auf die Registerkarte "Allgemein".
     * Suchen Sie eine neu erstellte Position und vergewissern Sie sich, dass der Absender die Waren aus Italien liefert.  
-
 

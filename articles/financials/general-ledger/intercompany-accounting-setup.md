@@ -1,13 +1,13 @@
 ---
 title: Einrichten der Intercompany-Verrechnung
-description: "In diesem Thema wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können."
+description: In diesem Thema wird erläutert, wie die Intercompany-Verrechnung eingerichtet wird, sodass Sie Intercompany-Erfassungen für Sachkonto-Zuweisungen Finanzerfassung, z. B. Tageserfassungen, Kreditorenrechnungserfassungen und Zahlungserfassungen, verwenden können.
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ce07a29d7aa5057d0b61c7fcc6bb87a0a2755fc9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48e0b00e2a9bd1a1387780747e1976bd386200eb
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363981"
 ---
-
 # <a name="intercompany-accounting-setup"></a>Einrichten der Intercompany-Verrechnung
 
 [!include [banner](../includes/banner.md)]
@@ -48,7 +47,6 @@ Wählen Sie **Sollkonto (fällig am)** und **Habenkonto (fällig am)** für den 
 Schließlich wählen Sie, welche juristische Person die unterstützenden erklärenden Beträge erhält, z.B. Skonto oder realisierte Gewinne/Verluste für zentralisierte Zahlungen aus. 
 
 Eine Beziehung gegenseitige kann für die **Intercompany-Verrechnung** Seite einfacher eingerichtet werden, indem die verwendet **Gegenseitige Beziehung Erstellen**-Schaltfläche, nachdem das erste Paar der juristischen Person erstellt wurde. Wenn das gegenseitige Paar erstellt wird, werden die Angaben für das Zielunternehmen zum ursprünglichen Unternehmen und umgekehrt kopiert. Die Erfassung, die für das Zielunternehmen definiert wird, bleibt. Die meisten Organisationen verwendet dieselbe Benennungskonvention für ihre Journale, damit das Journal das gleich ist. Wenn das Journal unterscheidet, wird eine Warnung in dem Feld, die Sie darüber informiert werden, dass die Erfassung nicht vorhanden ist und eine andere Erfassung ausgewählt werden kann.
-
 
 
 

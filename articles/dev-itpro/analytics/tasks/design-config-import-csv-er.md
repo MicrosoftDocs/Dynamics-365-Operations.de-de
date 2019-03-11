@@ -1,13 +1,13 @@
---- 
+---
 title: EB-Konfigurationen entwerfen, um Daten aus externen CSV-Dateien zu importieren
-description: Nutzen Sie diese Prozedur, um elektronische Berichterstellungskonfigurationen (EB) zu entwerfen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren.
+description: Nutzen Sie diese Prozedur, um Konfigurationen zur elektronischen Berichterstellung (EB) zu erstellen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 8d3ea3d797de154979eae112658cf05d1914feeb
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365223"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>EB-Konfigurationen entwerfen, um Daten aus externen CSV-Dateien zu importieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Nutzen Sie diese Prozedur, um elektronische Berichterstellungskonfigurationen (EB) zu entwerfen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren. In diesem Verfahren erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Verfahren erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren. 
+Nutzen Sie diese Prozedur, um Konfigurationen zur elektronischen Berichterstellung (EB) zu erstellen, um Daten in die Dynamics 365 for Finance and Operations-Anwendung aus einer externen Datei im CSV-Format zu importieren. In diesem Verfahren erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Verfahren erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren. 
 
 Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrators oder des Entwicklers für elektronische Berichterstellung haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. 
 
 Sie müssen auch die folgenden Dateien herunterladen und lokal speichern: (https://go.microsoft.com/fwlink/?linkid=862266): 1099model.xml, 1099formatcsv.xml, 1099entriescsv.csv.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Sie können einen Prozesse konfigurieren, um externe Dateien im XML-, TXT- oder CSV-Format in Tabellen in der Dynamics 365 for Finance and Operations-Anwendung zu importieren. Zunächst müssen Sie ein abstraktes Datenmodell erstellen, um die importierten Daten darzustellen, von einem Geschäftsstandpunkt aus wird dafür eine Datenmodellkonfiguration für die elektronische Berichterstellung erstellt. Als nächstes definieren Sie eine Struktur der importierten Datei, die dem entworfenen Datenmodell zugeordnet ist, als Methode, um Daten aus der Datei in das abstrakte Datenmodell zu übertragen – dazu wird eine Formatkonfiguration für die elektronische Berichterstellung erstellt. Anschließend muss die Datenmodellkonfiguration für die elektronische Berichterstellung mit einer neuen Modellzuordnung erweitert werden, die beschreibt, wie die Daten aus der importierten Datei und die persistierten Daten aus dem abstrakten Datenmodell verwendet werden, um die Anwendungstabellen oder Datenentitäten zu aktualisieren.  
+    * Sie können einen Prozesses konfigurieren, um externe Dateien im XML-, TXT- oder CSV-Format in Tabellen in der Anwendung von Dynamics 365 for Finance and Operations zu importieren. Zunächst müssen Sie ein abstraktes Datenmodell erstellen, um die importierten Daten darzustellen, von einem Geschäftsstandpunkt aus wird dafür eine Datenmodellkonfiguration für die elektronische Berichterstellung erstellt. Als nächstes definieren Sie eine Struktur der importierten Datei, die dem entworfenen Datenmodell zugeordnet ist, als Methode, um Daten aus der Datei in das abstrakte Datenmodell zu übertragen – dazu wird eine Formatkonfiguration für die elektronische Berichterstellung erstellt. Anschließend muss die Datenmodellkonfiguration für die elektronische Berichterstellung mit einer neuen Modellzuordnung erweitert werden, die beschreibt, wie die Daten aus der importierten Datei und die persistierten Daten aus dem abstrakten Datenmodell verwendet werden, um die Anwendungstabellen oder Datenentitäten zu aktualisieren.  
     * Die nachfolgenden Schritte veranschaulichen, wie extern nachverfolgte Kreditorentransaktionen aus der externen CSV-Datei importiert werden, um später im Ausgleich des Kreditors für 1099-Formulare (für Steuererklärung US 1099) verwendet zu werden.   
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
@@ -119,5 +119,4 @@ Zu Textwecken führen Sie die Formatzuordnung mithilfe der Datei 1099entriescsv.
     * Überprüfen Sie die Ausgabe im XML-Format, das die Daten darstellt, die aus der ausgewählten Datei importiert wurden und in das Datenmodell übertragen wurden. Beachten Sie, dass alle 7 Positionen der importierten CSV-Datei verarbeitet wurden. Die Position 1 der Titel der enthaltenden Felder wurden übersprungen, 4 Transaktionen wurden richtig analysiert und 2 Transaktionen wurden als ungültig erkannt.   
 3. Schließen Sie die Seite.
 4. Schließen Sie die Seite.
-
 

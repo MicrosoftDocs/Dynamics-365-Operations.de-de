@@ -1,13 +1,13 @@
 ---
 title: Talent-Umgebungen entfernen
-description: "Dieses Thema führt Sie durch den Prozess des Entfernens einer Testversion oder einer Produktionsumgebung für Microsoft Dynamics 365 for Talent."
+description: Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
+ms.openlocfilehash: e0422a5b7ac227ad03ccafb4e34e614dc770a363
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 5080f1ec182b8cbdf281967185a1afeb9887f682
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304607"
 ---
 # <a name="remove-talent-environments"></a>Talent-Umgebungen entfernen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema führt Sie durch den Prozess des Entfernens einer Testversion oder einer Produktionsumgebung für Microsoft Dynamics 365 for Talent.
+Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 for Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Entfernen einer Testversionsumgebung
 
@@ -73,5 +73,4 @@ Um eine Talent-Umgebung aus einer vorhandenen PowerApps-Umgebung zu entfernen, f
 6. In Ihrem LCS-Projekt wählen Sie die Kachel **Talent App-Verwaltung** aus. 
 7. Wählen Sie die Instanz aus, die Sie entfernen möchten, die mit dem Bereitstellungsstatus **Fehler** markiert werden muss.
 8. Wählen Sie **Instanz entfernen** aus, und bestätigen Sie Ihre Entscheidung. 
-
 

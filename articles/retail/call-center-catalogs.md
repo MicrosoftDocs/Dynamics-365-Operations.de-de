@@ -1,13 +1,13 @@
 ---
 title: Callcenterkataloge
-description: "Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Kataloge in Microsoft Dynamics 365 for Retail."
+description: Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Kataloge in Microsoft Dynamics 365 for Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322742"
 ---
-
 # <a name="call-center-catalogs"></a>Callcenterkataloge
 
 [!include [banner](includes/banner.md)]
@@ -35,9 +34,9 @@ Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Kat
 
 Die Katalogfunktionen von Dynamics 365 for Retail können für verschiedene Zwecke genutzt werden. Ursprünglich wurden die Katalogfunktionen zur Unterstützung von E-Commerce-Integrationen von Drittanbietern entwickelt. Durch die Einrichtung des Katalogs konnten Unternehmen eine Gruppierung von Produkten und Attributen erstellen, die extern für die Nutzung durch eine E-Commerce-Lösung eines Drittanbieters veröffentlicht werden konnten.
 
-Als Dynamics 365 for Retail um die Unterstützung von Call Center-Kanälen erweitert wurde, wurde das Katalogkonzept um zusätzliche Funktionen zur Unterstützung und Verwaltung von Funktionen im Zusammenhang mit herkömmlichen Direktmarketing-Katalogen erweitert. Ein Direct-to-Consumer-Unternehmen produziert oft gedruckte Kataloge, die dann an ein oder mehrere Kundensegmente verschickt werden. Diese Kataloge haben in der Regel spezifische Aktionen oder Angebote, die nur dann berücksichtigt werden, wenn der Kunde bei der Auftragserstellung einen Katalog-Identifikationscode angibt.
+Als Dynamics 365 for Retail um die Unterstützung von Callcenter-Kanälen erweitert wurde, wurde das Katalogkonzept um zusätzliche Funktionen zur Unterstützung und Verwaltung von Funktionen im Zusammenhang mit herkömmlichen Direktmarketing-Katalogen erweitert. Ein Direct-to-Consumer-Unternehmen produziert oft gedruckte Kataloge, die dann an ein oder mehrere Kundensegmente verschickt werden. Diese Kataloge haben in der Regel spezifische Aktionen oder Angebote, die nur dann berücksichtigt werden, wenn der Kunde bei der Auftragserstellung einen Katalog-Identifikationscode angibt.
 
-Direct-to-Consumer-Marketing-Unternehmen sind sehr darauf ausgerichtet, die Reaktion auf diese Kataloge zu verfolgen, um sicherzustellen, dass die Kosten für die Produktion und den Versand gerechtfertigt sind. Um die Antwort zu verfolgen, wird traditionell ein Code auf die Rückseite des Katalogs gedruckt und dieser Code wird dann angefordert und angewendet, wenn der Katalogempfänger anruft, um eine Bestellung per Telefon aufzugeben (oder jetzt kann der Code traditionellerweise eingegeben werden, wenn der Kunde eine Bestellung online aufgibt). Während es verschiedene Branchenbegriffe gibt, die verwendet wurden, um diesen Katalogverfolgungscode zu identifizieren (einschließlich Schlüsselcode, Promo-Code, Katalogcode, Quellcode), bezeichnen wir den Code in Dynamics 365 for Retail als **Quellcode ID**.
+Direct-to-Consumer-Marketing-Unternehmen sind sehr darauf ausgerichtet, die Reaktion auf diese Kataloge zu verfolgen, um sicherzustellen, dass die Kosten für die Produktion und den Versand gerechtfertigt sind. Um die Antwort zu verfolgen, wird traditionell ein Code auf die Rückseite des Katalogs gedruckt und dieser Code wird dann angefordert und angewendet, wenn der Katalogempfänger anruft, um eine Bestellung per Telefon aufzugeben (oder jetzt kann der Code traditionellerweise eingegeben werden, wenn der Kunde eine Bestellung online aufgibt). Während es verschiedene Branchenbegriffe gibt, die verwendet wurden, um diesen Katalogverfolgungscode zu identifizieren (einschließlich Schlüsselcode, Promo-Code, Katalogcode, Quellcode), bezeichnen wir den Code in Dynamics 365 for Retail als **Quellcode-ID**.
 
 ## <a name="basic-catalog-setup"></a>Grundlegende Katalogeinrichtung
 
@@ -102,4 +101,3 @@ Auf der Registerkarte **Kataloge** sind auch Optionen zur Konfiguration eines **
 ## <a name="additional-notes"></a>Weitere Hinweise
 
 Derzeit wird eine Quellcodekennung für einen Kundenauftrag im Call Center verwendet, um Preise, Aktionen, Skripte und weitere/ergänzende Verkäufe, die katalogspezifisch sind, zu steuern. Das System verbietet oder verhindert nicht, daß ein Produkt, das nicht im Katalog enthalten ist, auf dem Auftrag bestellt wird. Wenn ein Artikel bestellt wird, der nicht Teil des Katalogs ist, verwendet das System zunächst die **Preisgruppe** die auf dem Callcenterkanal definiert ist (**Retail**\>**Kanäle**\>**Callcenter**\>**Alle Callcenter**) für Artikelpreise oder Aktionen. Wenn kein bestimmter Kanalpreis gefunden wird, wird der Basisverkaufspreis des Artikels verwendet.
-

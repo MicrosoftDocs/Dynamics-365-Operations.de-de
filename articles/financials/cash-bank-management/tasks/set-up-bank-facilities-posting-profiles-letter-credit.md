@@ -1,13 +1,13 @@
---- 
-title: "Bankfazilitäten und Buchungsprofile für Akkreditiv einrichten"
-description: "Gänge dieser Prozedur mithilfe einer Bankfazilität und Buchungsprofilen erforderlich, Kreditbrief zu verarbeiten."
+---
+title: Bankfazilitäten und Buchungsprofile für Akkreditiv einrichten
+description: Gänge dieser Prozedur mithilfe einer Bankfazilität und Buchungsprofilen erforderlich, Kreditbrief zu verarbeiten.
 author: kweekley
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankParameters, DefaultDashboard, BankDocumentSetup, BankDocumentPosting
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3419d975c087350c01c6854dbbae07b6bb20bc03
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 43422627f8529768ab9377c04568da531d6565c6
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309931"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a>Bankfazilitäten und Buchungsprofile für Akkreditiv einrichten
 
@@ -73,5 +73,4 @@ Für diese Aufgaben wird das Demo-Unternehmen USMF verwendet.
 8. Wählen Sie im Feld Einschusskonto das Konto für Einschussbuchungen aus.
     * Dieses Konto wird bei der Buchung der Eröffnungsmarge belastet und bei der Buchung der Zahlung entlastet.  
 9. Klicken Sie auf "Speichern".
-
 

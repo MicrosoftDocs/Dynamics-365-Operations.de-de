@@ -1,13 +1,13 @@
 ---
 title: Sortimentsverwaltung
-description: "In diesem Thema werden die grundlegende Begriffe der Sortimentesverwaltung in Microsoft Dynamics 365 for Retail erläutert und die Implementierungsüberlegungen für Ihr Projekt zur Verfügung gestellt."
+description: In diesem Thema werden die grundlegende Begriffe der Sortimentsverwaltung in Microsoft Dynamics 365 for Retail erläutert und die Implementierungsüberlegungen für Ihr Projekt zur Verfügung gestellt.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail, Operations
@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
+ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365039"
 ---
-
 # <a name="assortment-management"></a>Sortimentsverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Microsoft Dynamics 365 for Retail stellt *Sortimente* bereit, mit denen Sie die Produktverfügbarkeitskanälen verwalten können. Sortimente bestimmen, welche Produkte für bestimmte Shops und für einen bestimmten Zeitraum verfügbar sind.
+Microsoft Dynamics 365 for Retail stellt *Sortimente* bereit, mit denen Sie die Produktverfügbarkeit in Kanälen verwalten können. Sortimente bestimmen, welche Produkte für bestimmte Shops und für einen bestimmten Zeitraum verfügbar sind.
 
 In Retail ist ein Sortiment eine Zuordnung eines oder mehrerer Kanäle oder Gruppen von Kanälen, wenn Organisationshierarchien verwendet werden (oder Gruppen von Produkten, wenn Kategoriehierarchien verwendet werden).
 
@@ -108,4 +107,3 @@ Berücksichtigen Sie die folgenden Implementierungsanforderungen, wie Sie Sortim
 - **Vertrieb und externe Sortimente der Rücklieferungen** – Diese Funktion hilft Einzelhändlern, die Sortimente verwalten, indem sie die Anzahl der verfügbaren Produkte in den Produkten einschränken können, die der Kerngesamtproduktion für den Shop angehören. Diese Funktion ermöglicht auch Einzelhändlern, Situationen zu ermöglichen, in der ein Produkt irrtümlich von einem Sortiment ausgelassen wurde, oder in ein Produkt außerhalb des Gültigkeitsdatums für das Sortiment zurückgegeben wurde.
 
 Wenn Produktdaten nicht in der Kanaldatenbank vorhanden sind, können POS Anrufe in Echtzeit zu den Hauptsitzen machen, um die erforderlichen Informationen abzurufen, damit das Produkt verkauft, angezeigt oder zurückgegebenen oder einem Kundenauftrag hinzugefüt werden kann. Produktinformationen, die auf diese Weise abgerufen werden, gelten nur während des Bereichs dieser Buchung. Das Produkt wird nicht der Sortimentsdefinition hinzugefügt. Daher werden folgende Echtzeitanrufe bei Bedarf ausgeführt.
-

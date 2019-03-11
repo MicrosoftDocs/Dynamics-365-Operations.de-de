@@ -1,13 +1,13 @@
---- 
+---
 title: ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Konfigurationen für elektronische Berichterstellung (ER) entwerfen kann, um Daten in die Dynamics 365 for Finance and Operations, Enterprise edition-Anwendung aus einer externen Datei zu importieren."
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle "Systemadministrator" oder "Entwickler für elektronische Berichterstellung" Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung von Dynamics 365 for Finance and Operations, Enterprise Edition aus einer externen Datei zu importieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERSolutionCreateDropDialog, EROperationDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula, Tax1099Summary, VendSettlementTax1099
 audience: Application User
 ms.reviewer: kfend
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6675f35c9ec163a620e63af32ecdbff02197d3c3
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "337370"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Konfigurationen für elektronische Berichterstellung (ER) entwerfen kann, um Daten in die Dynamics 365 for Finance and Operations, Enterprise edition-Anwendung aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren, ihn. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien mithilfe der Links aus dem Elektronischen Berichterstellungsüberblick-Thema herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle "Systemadministrator" oder "Entwickler für elektronische Berichterstellung" Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung von Dynamics 365 for Finance and Operations, Enterprise Edition aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren, ihn. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien mithilfe der Links aus dem Elektronischen Berichterstellungsüberblick-Thema herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
     * ER bietet Geschäftskunden die Möglichkeit, den Prozess des Imports externer Datendateien in Tabellen in Dynamics 365 for Finance and Operations, Enterprise Edition entweder im .XML- oder .TXT-Format, zu konfigurieren. Zunächst muss eine Kurzfassungsdatenmodell- sowie ein ER-Datenmodellkonfiguration entworfen werden, um die Daten darzustellen, die Sie importieren. Danach müssen Sie die Struktur der Datei, die Sie importieren und die Methode, die Sie verwenden, um die Daten aus der Datei zum Kurzfassungsdatenmodell zu übertragen, definieren. Die ER-Formatkonfiguration, die dem entworfenen Datenmodell zugeordnet ist, muss für das Kurzfassungsatenmodell erstellt werden. Anschließend muss die Datenmodellkonfiguration mit einer Zuordnung erweitert werden, die beschreibt, wie die importierten Daten permanent als Kurzfassungsdatenmodell sind und wie sie verwendet werden, um Tabellen in Dynamics 365 for Finance and Operations Enterprise Edition zu aktualisieren.  Der ER-Datenmodellkonfiguration muss eine neue Modellzuordnung angefügt werden, die die Bindung des Datenmodells an die Ziele der Anwendung beschreibt.  
     * Das folgende Szenario zeigt die ER-Datenimportfunktionen. Hierzu zählen Kreditorenbuchungen, die extern nachverfolgt werden und dann in Dynamics 365 for Finance and Operations, Enterprise Edition, importiert werden, um später im Kreditorenausgleich für Steuerformulare 1099 vermeldet zu werden.   
@@ -36,7 +36,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie den Konfigurationsanbieter für Beispielunternehmen Litware, Inc. ist verfügbar und markiert als aktiv. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
-    * Statt ein neuen Modells zu erstellen, um den Datenimport zu unterstützen, laden Sie die Datei 1099model.xml, die Sie zuvor heruntergeladen haben. Diese Datei enthält ein benutzerdefiniertes Datenmodell von Kreditorenbuchungen. Datenmodell Dies ist z Dynamics 365 f, Gfor Finance and Operations, Enterprise Datenenkomponenten zugeordnet, die in der Entwicklungsumgebungs-Datenentität sind.   
+    * Statt ein neuen Modells zu erstellen, um den Datenimport zu unterstützen, laden Sie die Datei 1099model.xml, die Sie zuvor heruntergeladen haben. Diese Datei enthält ein benutzerdefiniertes Datenmodell von Kreditorenbuchungen. Dieses Datenmodell ist den Dynamics 365 for Finance and Operations, Enterprise Edition Datenenkomponenten zugeordnet, die in der AOT-Datenentität sind.   
 3. Klicken Sie auf „Austauschen”.
 4. Klicken Sie auf „Aus XML-Datei laden”.
     * Klicken Sie auf „Durchsuchen” und navigieren Sie zur Datei 1099model.xml, die Sie bereits zuvor heruntergeladen haben.  
@@ -45,7 +45,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 
 ## <a name="review-data-model-settings"></a>Datenmodelleinstellungen überprüfen
 1. Klicken Sie auf Designer.
-    * Dieses Modell ist dazu entworfen, die Kreditorenbuchungen seitens des Unternehmens darzustellen und sind getrennt von der Implementierung in Dynamics 365 for Finance and Operations, Enterprise Edition    
+    * Dieses Modell ist dazu entworfen, die Kreditorenbuchungen seitens des Unternehmens darzustellen und sind getrennt von der Implementierung in Dynamics 365 for Finance and Operations, Enterprise Editionl   
 2. Erweitern Sie in der Struktur „1099-MISC”.
 3. Wählen Sie in der Struktur „1099-MISC\Buchungen” aus.
 4. Erweitern Sie in der Struktur „1099-MISC\Buchungen”.
@@ -107,7 +107,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 1. Wählen Sie in der Struktur „US 1099-Steuerzahlungsmodell” aus.
 2. Klicken Sie auf Designer.
 3. Klicken Sie auf "Modell der Datenquelle zuordnen".
-    * Die Zuordnung „Für den Import von manuellen 1099-Buchungen” wurde mit dem Richtungstyp „Zum Ziel” definiert. Das bedeutet, dass sie eingegeben wurde, um den Datenimport zu unterstützen und enthält die Festlegung von Regeln, die definieren, wie die importierte externe Datei und die permanent als Kurzfassungsdatenmodell bestimmten Daten verwendet werden, um Tabellen in der Anwendung Dynamics 365 for Finance and Operations,, Enterprise Edition zu aktualisieren.  
+    * Die Zuordnung „Für den Import von manuellen 1099-Buchungen” wurde mit dem Richtungstyp „Zum Ziel” definiert. Das bedeutet, dass sie eingegeben wurde, um den Datenimport zu unterstützen und enthält die Festlegung von Regeln, die definieren, wie die importierte externe Datei und die permanent als Kurzfassungsdatenmodell bestimmten Daten verwendet werden, um Tabellen in der Anwendung Dynamics 365 for Finance and Operations, Enterprise Edition zu aktualisieren.  
 4. Klicken Sie auf Designer.
 5. In der Struktur erweitern Sie „model: Data model 1099 Payments model”.
 6. In der Struktur erweitern Sie „Modell: Datenmodell US 1099-Steuerzahlungsmodell\Buchungen: Datensatzliste”.
@@ -121,7 +121,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 12. Wählen Sie in der Struktur „tax1099trans: Table „VendSettlementTax1099” records= model.Validated” aus.
 13. Klicken Sie auf „Ziel bearbeiten”.
     * Dieses ER-Ziel wurde hinzugefügt, um anzugeben, wie die importierten Daren die Anwedungstabellen aktualisieren. In diesem Fall wurde die Tabelle VendSettlementTax1099 ausgewählt. Da die Datensatzaktivität INSERT ausgewählt wurde, werden die importierten Buchungen in der Tabelle VendSettlementTax1099 eingefügt. Beachten Sie, dass eine einzelne Modellzuordnung möglicherweise mehrere Ziele beinhaltet. Das bedeutet, dass die importierten Daten verwendet werden können, um Tabellen mehrerer Anwendungen auf einmal zu aktualisieren. Tabellen, Ansichten und Datenentitäten können als ER-Ziele verwendet werden.   
-    * Wenn die Zuordnung von einem Punkt in der , Dynamics 365 for Finance and Operations Enterprise Edition, Anwendung aufgerufen wird (wie beispielsweise eine Schaltfläche oder ein Menüelement), das speziell für diese Aktivität entworfen wurde, sollte das ER-Ziel als der Integrationspunkt markiert werden. In diesem Beispiel ist dies der Punkt ERTableDestination#VendSettlementTax1099.  
+    * Wenn die Zuordnung von einem Punkt in der Dynamics 365 for Finance and Operations, Enterprise Edition, Anwendung aufgerufen wird (wie beispielsweise eine Schaltfläche oder ein Menüelement), das speziell für diese Aktivität entworfen wurde, sollte das ER-Ziel als der Integrationspunkt markiert werden. In diesem Beispiel ist dies der Punkt ERTableDestination#VendSettlementTax1099.  
 14. Klicken Sie auf "Abbrechen".
 15. Klicken Sie auf „Alle anzeigen”.
 16. Klicken Sie auf „Nur Zugeordnete anzeigen”.
@@ -177,17 +177,16 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 18. Schließen Sie die Seite.
 19. Schließen Sie die Seite.
 20. Klicken Sie auf "Bearbeiten".
-    * Wenn Sie den Hotfix „KB 4012871 Unterstützung von DE-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 for Finance and Operations, Enterprise edition auszuführen (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ) installiert haben, führen Sie den nächsten Schritt „Kennung „Standard für Modellzuordnung” einschalten” für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
+    * Wenn Sie den Hotfix "KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 for Finance and Operations, Enterprise Edition" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) installiert haben, führen Sie den nächsten Schritt "Kennung „Standard für Modellzuordnung” einschalten" für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
 21. Wählen Sie die Option „Ja” im Feld „Standard für Modellzuordnung” aus.
 22. Wählen Sie in der Struktur „US 1099-Steuerzahlungsmodell” aus.
 23. Klicken Sie auf Designer.
 24. Klicken Sie auf "Modell der Datenquelle zuordnen".
 25. Klicken Sie auf "Ausführen".
-    * Wenn Sie den Hotfix „KB 4012871 Unterstützung von DE-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 for Finance and Operations, Enterprise edition(https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 ) installiert haben, wählen Sie die bevorzugte Modellzuordnung im Suchfeld aus. Wenn Sie den Hotfix noch nicht installiert haben, überspringen Sie diesen Schritt und gehen Sie zum nächsten Schritt, da durch die Definition der Standardformatkonfiguration die Zuordnung bereits ausgewählt wurde.  
+    * Wenn Sie den Hotfix "KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 for Finance and Operations, Enterprise Edition" (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) installiert haben, wählen Sie die bevorzugte Modellzuordnung im Suchfeld aus. Wenn Sie den Hotfix noch nicht installiert haben, überspringen Sie diesen Schritt und gehen Sie zum nächsten Schritt, da durch die Definition der Standardformatkonfiguration die Zuordnung bereits ausgewählt wurde.  
     * Wenn Sie den Hotfix nicht installiert haben, KB 4012871, beachten Sie, dass das Dialogfeld eine zusätzliche Modellzuordnungsfrage enthält, die verwendet wird, um die Datei, die Sie importieren, zu analysieren. Die Daten werden dann aus dem Dialogfeld zum Datenmodell übertragen. Aktuell können Sie auswählen, welche Formatzuordnung verwendet werden muss, abhängig vom Dateityp, den Sie importieren möchten.  
-    * Wenn Sie planen, diese Modellzuordnung von einem Punkt in , Dynamics 365 for Finance and Operations Enterprise Edition, aus aufzurufen, der speziell für diese Aktivität entworfen wurde, müssen das ER-Ziel und die Formatzuordnung als Teil der Integration markiert sein.  
+    * Wenn Sie planen, diese Modellzuordnung von einem Punkt in Dynamics 365 for Finance and Operations, Enterprise Edition, aus aufzurufen, der speziell für diese Aktivität entworfen wurde, müssen das ER-Ziel und die Formatzuordnung als Teil der Integration markiert sein.  
 26. Klicken Sie auf "Abbrechen".
 27. Schließen Sie die Seite.
 28. Schließen Sie die Seite.
-
 

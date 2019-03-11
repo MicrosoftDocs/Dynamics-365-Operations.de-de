@@ -1,32 +1,31 @@
 ---
-title: "Sicherheitslagerbestandserfüllung für Artikel"
-description: "In diesem Thema wird die Sicherheitslagerbestandserfüllung behandelt und wie Sicherheitslagerbestandsmengen für Artikel eingerichtet werden."
+title: Sicherheitslagerbestandserfüllung für Artikel
+description: In diesem Thema wird die Sicherheitslagerbestandserfüllung behandelt und wie Sicherheitslagerbestandsmengen für Artikel eingerichtet werden.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: roxanad
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
+ms.openlocfilehash: 147cc3984e6dc641209beefdb3545615b42767a2
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: d6ecb346f7bfa54a4e16307f623c82acb3a86892
-ms.contentlocale: de-de
-ms.lasthandoff: 12/14/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341533"
 ---
-
 # <a name="safety-stock-fulfillment-for-items"></a>Sicherheitslagerbestandserfüllung für Artikel
 
 [!include [banner](../includes/banner.md)]
@@ -117,4 +116,3 @@ Die Priorität für Erfüllung der Sicherheitsbestandsbedarfs-Transaktion wird a
 Während der Deckungsphase der Produktprogrammplanung wird die Priorität für die Wiederbeschaffung von Sicherheitslagerbestand nicht mehr aufgehoben. Verfügbarer Lagerbestand kann vor irgendwelchen anderen Bedarfstypen verwendet werden. Während der Verzögerungsberechnung wird neue Logik hinzugefügt, um die verzögerten Verkaufspositionen, Stücklistenpositionsbedarf und alle anderen Bedarfstypen durchzugehen, um zu bestimmen, ob sie rechtzeitig geliefert werden können, vorausgesetzt, dass der Sicherheitslagerbestand verwendet wird. Wenn das System identifiziert, dass es Verzögerungen durch die Verwendung des Sicherheitsbestands minimieren kann, dann werden Verkaufspositionen und Stücklistenpositionen ihre anfängliche Deckung durch Sicherheitsbestand ersetzen, und das System löst stattdessen die Wiederbeschaffung für den Sicherheitsbestand aus.
 
 Wenn der Plan oder der Artikel nicht für verzögerte Berechnung eingerichtet ist, dann hat die Sicherheitsbestandseinschränkung dieselbe Priorität, wie beliebige andere Bedarfstypen. Das bedeutet, dass es eine Reserve von griffbereitem und anderem verfügbarem Bestand vor anderen Bedarfstypen gibt.
-

@@ -1,35 +1,34 @@
 ---
-title: "Support für Dynamics 365 for Retail erhalten"
-description: In diesem Artikel wird beschrieben, wie die Hilfe mit Microsoft Dynamics 365 for Retail abgerufen wird.
+title: Anfordern von Support zu Dynamics 365 for Retail
+description: Dieser Artikel erklärt, wie Sie Hilfe zu Microsoft Dynamics 365 for Retail erhalten
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
 ms.search.scope: Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
+ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
-ms.openlocfilehash: 2e74554338e4b12991756f63257f67ee3e2e6dc4
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364050"
 ---
-
-# <a name="get-support-for-dynamics-365-for-retail"></a>Support für Dynamics 365 for Retail erhalten
+# <a name="get-support-for-dynamics-365-for-retail"></a>Anfordern von Support zu Dynamics 365 for Retail
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie die Hilfe mit Dynamics 365 for Retail abgerufen wird.
+Dieser Artikel erklärt, wie Sie Hilfe zu Dynamics 365 for Retail erhalten.
 
 ## <a name="contact-support"></a>Kundendienst kontaktieren
 
@@ -49,7 +48,7 @@ Um Unterstützung für Retail zu erhalten, verwenden Sie die Ressourcen in der f
 <tbody>
 <tr>
 <td>Die Community fragen.</td>
-<td>Gehen Sie zur Seite <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a> Community, um Hilfe auf die Fragen von der Dynamics-Community zu suchen.</td>
+<td>Gehen Sie zur Communityseite <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>, um Hilfe auf Ihre Fragen von der Dynamics-Community zu erhalten.</td>
 </tr>
 <tr>
 <td>Verwenden Sie das Problemsuchetool.</td>
@@ -67,12 +66,12 @@ Um Unterstützung für Retail zu erhalten, verwenden Sie die Ressourcen in der f
 </tr>
 <tr>
 <td>Öffnet ein Ticket beim Support-Team.</td>
-<td>Wenn Sie Probleme haben, das Ticket an Microsoft aus der Kachel <strong>Support</strong> in LCS zu senden, gehen Sie zu <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Microsoft Business Solutions Support kontaktieren</a> für Informationen, wie Sie ein Microsoft Dynamics Regional Operations Center kontraktieren können. Das Support-Team kann Ihnen dabei helfen, die folgenden technischen Probleme zu lösen:
+<td>Wenn Sie Probleme haben, das Ticket an Microsoft aus der Kachel <strong>Support</strong> in LCS zu senden, gehen Sie zu <a href="https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/global_support_contacts_eng">Microsoft Business Solutions Support kontaktieren</a> für Informationen dazu, wie Sie ein Microsoft Dynamics Regional Operations Center kontraktieren können. Das Support-Team kann Ihnen dabei helfen, die folgenden technischen Probleme zu lösen:
 <ul>
 <li>Fehler, die ausgeführt werden, wenn Sie LCS nutzen oder Problem beim Zugreifen auf LCS haben.</li>
 <li>Fehler, die auftreten, wenn Sie Retail verwenden.</li>
 </ul>
-Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf CustomerSource, E-Learning, Suche, Wissensdatenbank, Dateidownload und Seiten- oder Systemfehler, gehen Sie zu <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Website-Support</a>.</td>
+Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf CustomerSource, E-Learning, Suche, Wissensdatenbank, Dateidownload und Seiten- oder Systemfehler gehen Sie zu <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Website-Support</a>.</td>
 </tr>
 <tr>
 <td>Hilfe zu Fragen mit Lizenzen für Retail oder Finance and Operations.</td>
@@ -85,5 +84,4 @@ Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf Cus
 </tbody>
 </table>
 
-Weitere Informationen zu Microsoft Dynamics Supportangebote finden Sie unter [Microsoft Dynamics-Onlinesupport](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
-
+Weitere Informationen zu Microsoft Dynamics-Supportangeboten finden Sie unter [Microsoft Dynamics-Onlinesupport](https://dynamics.microsoft.com/en-us/support/).

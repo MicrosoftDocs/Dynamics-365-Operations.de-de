@@ -1,13 +1,13 @@
 ---
-title: "Einzelvorgänge für Datenimport und -export"
-description: "Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten."
+title: Einzelvorgänge für Datenimport und -export
+description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
 ms.search.scope: Operations
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360209"
 ---
-
 # <a name="data-import-and-export-jobs"></a>Einzelvorgänge für Datenimport und -export
 
 [!include [banner](../includes/banner.md)]
 
-Um Datenimport- und Datenexporteinzelvorgänge in Microsoft Dynamics 365 for Finance and Operations zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung**. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
+Um Datenimport- und Datenexporteinzelvorgänge in Microsoft Dynamics 365 for Finance and Operations zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung** workspace. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 
 > [!NOTE]
 > Für dieses Thema wird vorausgesetzt, dass Sie sich mit dem Thema [Datenentitäten](data-entities.md) vertraut gemacht haben.
@@ -158,4 +157,3 @@ Sie können Tabellen bereinigen, indem Sie die Funktion **Bereinigen der Tabelle
 - **Datenprojekte** – Wenn nur ein Datenprojekt aktiviert ist, werden alle Datensätze für alle Entitäten und zu allen Einzelvorgängen für das ausgewählte Datenprojekt gelöscht.
 
 Sie können auch die Optionen kombinieren, um den Datensatz einzuschränken, der gelöscht werden soll.
-

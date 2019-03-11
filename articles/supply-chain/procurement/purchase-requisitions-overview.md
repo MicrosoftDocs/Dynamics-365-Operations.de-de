@@ -1,13 +1,13 @@
 ---
-title: "Übersicht über Bestellanforderung"
+title: Übersicht über Bestellanforderung
 description: Dieses Thema beschreibt den Bestellanforderungsworkflow und die verschiedenen Statuswerte, die eine Bestellanforderung haben kann.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 942693ed3d2d54c6e973e5d3f86454b195f0fdee
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309839"
 ---
-
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
 [!include [banner](../includes/banner.md)]
@@ -39,7 +38,7 @@ Nachdem eine Bestellanforderung genehmigt wurde, kann auf deren Grundlage eine B
 ## <a name="creating-purchase-requisitions"></a>Erstellen von Bestellanforderungen
 Sie können eine Bestellanforderung auf der Seite **Eigene Bestellanforderungen** erstellen und die Artikel und Dienstleistungen auswählen, die Sie benötigen. Sie können Artikel aus einem Beschaffungskatalog auswählen, den Ihre Organisation erstellt hat, oder Artikel anfordern, die nicht im Katalog enthalten sind, indem Sie eine Beschaffungskategorie auswählen und die Produktdetails eingeben.  
 
-Bevor Sie eine Bestellanforderung zur Prüfung übermitteln können, müssen Workflows im Microsoft Dynamics 365 for Finance and Operations konfiguriert werden. Sie verwenden einen Workflow, um eine Bestellanforderung vom Anfangsstatus **Entwurf** bis zum endgültigen Status **Genehmigt** durch den Prüfungsprozess zu leiten.
+Bevor Sie eine Bestellanforderung zur Prüfung übermitteln können, müssen in Microsoft Dynamics 365 for Finance and Operations Workflows konfiguriert sein. Sie verwenden einen Workflow, um eine Bestellanforderung vom Anfangsstatus **Entwurf** bis zum endgültigen Status **Genehmigt** durch den Prüfungsprozess zu leiten.
 
 ### <a name="purchase-requisition-statuses"></a>Bestellanforderungsstatus
 
@@ -142,7 +141,7 @@ In den Beschaffungsrichtlinien können Sie die Anforderungszwecke steuern, die v
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Anforderungen, die Verbrauch als Zweck haben
 
-Eine Anforderung, die Verbrauch als Zweck hat, repräsentiert einen Bedarf für Artikel oder Dienstleistungen, die intern von Ihrer Organisation verwendet werden. Der Bedarf, der durch diese Art der Anforderung entsteht, wird immer durch eine Bestellung erfüllt. Wenn Microsoft Dynamics 365 for Finance and Operations eingerichtet ist, um Bestellungen automatisch zu generieren, werden Bestellungen erstellt, nachdem die Bestellanforderung genehmigt wurde.
+Eine Anforderung, die Verbrauch als Zweck hat, repräsentiert einen Bedarf für Artikel oder Dienstleistungen, die intern von Ihrer Organisation verwendet werden. Der Bedarf, der durch diese Art der Anforderung entsteht, wird immer durch eine Bestellung erfüllt. Wenn Microsoft Dynamics 365 for Finance and Operations zum automatischen Generieren von Bestellungen eingerichtet ist, werden Bestellungen erstellt, nachdem die Bestellanforderung genehmigt wurde.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Anforderungen, die Auffüllung als Zweck haben
 
@@ -198,7 +197,6 @@ Um genehmigte Bestellanforderungspositionen zu konsolidieren, führen Sie folgen
 [Erstellen einer Anforderung für Verbrauch (Aufgabenleitfaden)](tasks/create-requisition-consumption.md)
 
 [Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
-
 
 
 

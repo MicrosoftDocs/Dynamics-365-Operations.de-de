@@ -1,13 +1,13 @@
---- 
+---
 title: Eine Hierarchie zur Produktklassifizierung erstellen
 description: Im folgenden Verfahren, wie eine neue Kategoriehierarchie erstellt und einen Warencodehierarchietyp zuweist.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: fb49f5f3f8a5a788cb4c6d1be69534ba808e3675
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0c107c9d15e0e023de51891f23c2d2360c3b8e7f
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "346823"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Eine Hierarchie zur Produktklassifizierung erstellen
 
@@ -67,5 +67,4 @@ Im folgenden Verfahren, wie eine neue Kategoriehierarchie erstellt und einen War
 7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 9. Schließen Sie die Seite.
-
 

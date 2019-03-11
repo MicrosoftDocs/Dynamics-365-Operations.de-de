@@ -1,13 +1,13 @@
 ---
-title: "Berichte erstellen, indem Sie Inhalt als unformatierten XML-Code hinzufügen"
-description: "Sie können Elektronische Berichterstellung(ER)-Formate entwerfen, die ausgehende Dokumente im XML-Format generieren."
+title: Berichte erstellen, indem Sie Inhalt als unformatierten XML-Code hinzufügen
+description: Sie können Elektronische Berichterstellung(ER)-Formate entwerfen, die ausgehende Dokumente im XML-Format generieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
+ms.openlocfilehash: 39503d051e3b4686bbaa0130fe5be7cb980fbcb4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 56a5f53e1d3da8aa57e98e7d34fbc9c4005b6df8
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312185"
 ---
-
 # <a name="generate-reports-by-adding-content-as-raw-xml"></a>Berichte erstellen, indem Sie Inhalt als unformatierten XML-Code hinzufügen
 
 [!include[banner](../includes/banner.md)]
@@ -39,4 +38,3 @@ Mit dem neuen Formatelement **RAW XML** können Sie Elektronische Berichterstell
 > Beachten Sie, dass das Framework nicht kontrolliert, ob der XML-Inhalt, der mit Hilfe des Formatelements **RAW XML** in das generierte Dokument eingefügt wird, korrekt ist.
 
 Um mehr über diese Funktion zu erfahren, spielen Sie die Aufgabenleitfäden **ER XML-Rohdaten verwenden, um XML-Berichte zu generieren (Teil 1: Entwerfen eines Datenmodells)** und **ER XML-Rohdaten verwenden, um XML-Berichte zu generieren (Teil 2: Bericht entwerfen und ausführen)** ab, die Teil des **7.5.4.3 Acquire/Develop IT-Service/Lösungskomponenten (10677)** Geschäftsprozesses sind und im [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) heruntergeladen werden können. Diese Aufgabenleitfäden führen Sie durch den Prozess der Konfiguration eines ER-Formats zum Einfügen von XML-Rohdaten in generierte Dateien.
-

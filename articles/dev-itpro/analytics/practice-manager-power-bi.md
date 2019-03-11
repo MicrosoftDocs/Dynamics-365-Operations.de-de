@@ -1,51 +1,50 @@
 ---
-title: Power BI-Inhalt des Practice Manager
-description: "In diesem Thema wird beschrieben, was im Power Bl-Inhalt des Practice Manager enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden."
+title: Power BI-Inhalt – Practice Manager
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt – Practice Manager enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367799"
 ---
-
-# <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt des Practice Manager
+# <a name="practice-manager-power-bi-content"></a>Power BI-Inhalt – Practice Manager
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im Microsoft Power Bl-Inhalt des **Practice Manager** enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Power BI-Inhalt – **Practice Manager** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der Power BI-Inhalt des **Practice Manager** wurde für Methodenmanager und Projektmanager erstellt. Er stellt Schlüsselmetrik bereit, die sich auf die Projekte bezieht, an denen die Organisation gerade arbeitet. Das Dashboard bietet eine Übersicht der Projekte und zugehörigen Debitoren. Ein Berichtsebenenfilter kann verwendet werden, um für bestimmte juristische Personen Meldung zu erteilen. Dieses Power BI Inhalt extrahiert Daten aus aggregierten Messungen der Projektbuchhaltung.
+Der Power BI-Inhalt – **Practice Manager** wurde für Methodenmanager und Projektmanager erstellt. Er stellt Schlüsselmetrik bereit, die sich auf die Projekte bezieht, an denen die Organisation gerade arbeitet. Das Dashboard bietet eine Übersicht der Projekte und zugehörigen Debitoren. Ein Berichtsebenenfilter kann verwendet werden, um für bestimmte juristische Personen Meldung zu erteilen. Dieses Power BI-Inhalt extrahiert Daten aus aggregierenden Messungen der Projektbuchhaltung.
 
-Der Power BI-Inhalt des **Practice Manager** umfasst fünf Berichtsseiten: eine Übersichtsseite und vier Seiten, die Details zu Projektkosten, Umsatzerlösen, Ertragswertverwaltung und Stundenmetrik enthalten, die über unterschiedliche Dimensionen hinweg unterteilt sind.
+Der Power BI-Inhalt – **Practice Manager** umfasst fünf Berichtsseiten: eine Übersichtsseite und vier Seiten, die Details zu Projektkosten, Umsatzerlösen, Ertragswertverwaltung und Stundenmetrik enthalten, die über unterschiedliche Dimensionen hinweg unterteilt sind.
 
 Alle Beträge im Inhalt werden in der Systemwährung angezeigt. Sie können die Systemwährung auf der Seite **Systemparameter** festlegen.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 
-Der **Methodenmanager** Power BI-Inhalt wird im **Projektmanagement**-Arbeitsbereich angezeigt.
+Der Power BI-Inhalt – **Practice Manager** wird im **Projektmanagement**-Arbeitsbereich angezeigt.
 
-## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI Inhalt enthalten sind
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
 
-Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im BI-Inhalt **Practice Manager** befinden.
+Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im Power BI-Inhalt – **Practice Manager** befinden.
 
 | Berichtsseiten       | Metriken |
 |-------------------|---------|
@@ -59,7 +58,7 @@ Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und a
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Practice Manager** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt – **Practice Manager** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
 In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Entität verwendet werden, beschrieben.
 
@@ -119,4 +118,3 @@ In den folgenden Abschnitten werden die aggregierten Messungen, die in jeder Ent
 | Zentrale aggregierte Messungen       | Feld               | Beschreibung |
 |---------------------------------|---------------------|-------------|
 | Geplante Kosten für abgeschlossene Aktivität | Sum(TotalCostPrice) | Der Gesamteinstandspreis in Vorkalkulationen für alle Projektbuchungsarten mit abgeschlossenen Aufgaben. |
-

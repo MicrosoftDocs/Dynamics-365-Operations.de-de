@@ -1,31 +1,30 @@
 ---
-title: "Rücklieferungseinstandspreis und Rücklieferungsloskennung"
-description: "Unter Umständen sollen die Kosten der zurückgegebenen Produkte jedoch den Produktkosten zum Zeitpunkt des Verkaufs an den Debitor entsprechen. Sie können dies über die **Rücklieferungsloskennung** tun."
+title: Rücklieferungseinstandspreis und Rücklieferungsloskennung
+description: Unter Umständen sollen die Kosten der zurückgegebenen Produkte jedoch den Produktkosten zum Zeitpunkt des Verkaufs an den Debitor entsprechen. Sie können dies über die **Rücklieferungsloskennung** tun.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/30/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReturnTableListPage
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 33cd3d50fe342ba12a17419f4e759c243a60b3e0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: aeba56128ab6c9ab7d244bdf153faba8e96069d6
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335139"
 ---
-
 # <a name="return-cost-price-and-return-lot-id"></a>Rücklieferungseinstandspreis und Rücklieferungsloskennung        
 
 [!include [banner](../includes/banner.md)]
@@ -64,7 +63,7 @@ Dies ist die bevorzugte Methode zum Erstellen von Rückgabepositionen. Um die Pr
 
 3.  In der **Rücklieferung erstellen** Formular wählen Sie ein Debitorenkonto aus, und klicken Sie dann **OK**.
 
-4.  Klicken Sie im Formular **Rücklieferung - RMA-Nummer: %1, %2** im **Aktivitätsbereich** ein auf **Auftrag suchen**.
+4.  Klicken Sie im Formular **Rücklieferung - RMA-Nummer: %1, %2** im **Aktivitätsbereich** auf **Auftrag suchen**.
 
 5.  Wählen Sie im Formular **Auftrag suchen** die zurückzugebende Rechnungsposition, und klicken Sie anschließend auf **OK**.
     
@@ -94,7 +93,7 @@ Wenn Sie das Feld **Rücklieferungsloskennung** in einer Rücklieferungsposition
 
 4.  Erstellen Sie eine Rücklieferung für den ausgewählten Debitor. Wählen Sie im Formular **Auftrag suchen** die Rechnungsposition, und klicken Sie anschließend auf **OK**.
 
-5.  Vergewissern Sie sich im Formular **Rücklieferung - RMA-Nummer: %1, %2**, dass eine Rücklieferung für die Rückgabe des Artikels Test generiert wird. Die Menge der Rücklieferung wird auf -5,00 festgelegt.
+5.  Vergewissern Sie sich im Formular **Rücklieferung - RMA-Nummer: %1, %2**, dass ein Rücklieferungsauftrag für die Rückgabe des Testartikels generiert wird. Die Menge der Rücklieferung wird auf -5,00 festgelegt.
     
     Die **Rücklieferungsloskennung** zeigt eine Kennung an. Diese Loskennung wird aus dem Originalauftrag des Artikels übernommen, der an den Debitor verkauft wurde. Im Feld **Rücklieferungseinstandspreis** wird der Einstandspreis aus der ursprünglichen Auftragsposition angezeigt.
 
@@ -104,12 +103,11 @@ Wenn Sie das Feld **Rücklieferungsloskennung** in einer Rücklieferungsposition
 
 8.  Buchen Sie eine Rechnung für die Rücklieferung. Auf der Listenseite **Alle Aufträge** wählen Sie einen Auftrag aus, für den der Auftragstyp **Zurückgegebener Auftrag** ist.
 
-9.  Öffnen Sie das Formular **Lagerbuchungen**. Überprüfen Sie, ob die Rücklieferung mit dem Einstandspreis 7,00 pro Artikel vorkalkuliert wird, indem der Wert im Feld **Rücklieferungseinstandspreis** verwendet wird, sodass sich im Feld **Kostenbetrag** die Summe 35,00 ergibt. Sie können **Lagerbuchungen** das Formular über das Formular **Retoure -: Rücksendungsnummer "%1", " %2 "** öffnen. Klicken Sie im Raster **Positionen** auf **Bestand** \> **Transaktion**.
+9.  Öffnen Sie das Formular **Lagerbuchungen**. Überprüfen Sie, ob die Rücklieferung mit dem Einstandspreis 7,00 pro Artikel vorkalkuliert wird, indem der Wert im Feld **Rücklieferungseinstandspreis** verwendet wird, sodass sich im Feld **Kostenbetrag** die Summe 35,00 ergibt. Sie können das Formular **Lagerbuchungen** aus dem Formular **Rücklieferung - RMA-Nummer: %1, %2** öffnen. Klicken Sie im Raster **Positionen** auf **Bestand** \> **Transaktion**.
 
 10. In der Bestands- und Lagerortverwaltung verwenden Sie das Formular **Abschluss und Regulierung**, um die Prozedur **3. Schließen** auszuführen.
     
     Hiermit werden die Kosten in der ursprünglichen Auftragsposition, die mit -35,00 vorkalkuliert wurden (5 Stück \* 7,00), in -30,00 (5 Stück \* 6,00) geändert. Dies ist so, weil für die Lagersteuerungsgruppe das FIFO-Prinzip (First in, First out) verwendet wird, und 6,00 pro Artikel sind die FIFO-Kosten aus der ersten Bestellung. Zudem werden mit dieser Aktivität die Kosten in der Rückholverkaufsposition angepasst, sodass die Kosten pro Artikel der ursprünglichen Auftragsposition entsprechen. Daher werden die Kosten der Rückgabeposition von 35,00 in 30,00 geändert.
-
 
 
 

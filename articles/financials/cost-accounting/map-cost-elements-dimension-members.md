@@ -1,13 +1,13 @@
 ---
 title: Kostenelement-Dimensionselemente einem allgemeinen Satz von Dimensionselementen zuordnen
-description: "Indem Sie verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern zuordnen, führen Sie Daten in einem gemeinsamen Format zu Analysezwecken zusammen."
+description: Indem Sie verschiedene Kostenelement-Dimensionsmitglieder einem gemeinsamen Satz von Kostenelement-Dimensionsmitgliedern zuordnen, führen Sie Daten in einem gemeinsamen Format zu Analysezwecken zusammen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: e5c9387d74443ec6ca5dc70ad923b67f962181dc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6f2384155a07d17004c640160aee90b1e8bdb9f8
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318142"
 ---
-
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Kostenelement-Dimensionselemente einem allgemeinen Satz von Dimensionselementen zuordnen
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Das folgende Beispiel veranschaulicht, wie Sie als Kostencontroller eine neue Ko
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Importierte Kostenelement-Dimensionsmitglieder vom US-Kontenplan | Importierte Kostenelement-Dimensionsmitglieder aus dem französischen Kontenplan | Zuordnung von US-amerikanischen und französischen Kostenelement-Dimensionsmitgliedern zu einem gemeinsamen Satz |
 | 5001: Vertrieb                                                           | 5001: Vertrieb und Werbung                                               | 5000: Vertrieb und Werbung                                             |
-| 5030: Werbung                                                     | 6390: Bestandseinkauf*\*                                                    | 7000: Reinigungsausgaben                                                 |
+| 5030: Werbung                                                     | 6390: Bestandseinkauf\*                                                    | 7000: Reinigungsausgaben                                                 |
 | 7001: Reinigungsausgaben                                               | 7001: Reisekosten                                                      | 7001: Reisekosten                                                   |
 
 \*Das französische Kostenelement-Dimensionsmitglied des Bestandskaufs ist nicht zugeordnet.
@@ -51,7 +50,6 @@ Die verschiedenen Kontenpläne, die Sie verwenden, sind möglicherweise für die
 
 ## <a name="update-mappings-at-any-time"></a>Zuordnungen jederzeit aktualisieren
 Sie können die Zuordnungsdefinitionen für eine Kostenelementdimension jederzeit aktualisieren. Da Zuordnungen nicht ab einem bestimmten Datum gültig sind, werden Änderung das nächste Mal, wenn Sie Kostenbuchungen verarbeiten oder Kostenberechnungen ausführen, angewendet.
-
 
 
 

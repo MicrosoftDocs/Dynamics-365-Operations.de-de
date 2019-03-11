@@ -1,13 +1,13 @@
---- 
+---
 title: Neue Abteilungen definieren
 description: Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 6dedddf305e303de5b284b34420cd0eda5170ed1
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342844"
 ---
 # <a name="define-new-departments"></a>Neue Abteilungen definieren
 
@@ -51,5 +51,4 @@ Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Untern
     * Wenn Sie die Abteilungshierarchie veröffentlichen, können Sie festlegen, wann die Änderungen wirksam werden. Änderungen können zukünftig datiert werden. Beispielsweise wissen Sie, dass Sie am Anfang des Geschäftsjahrs eine zusätzliche Abteilung hinzufügen werden. Sie können Ihr Gültigkeitsdatum auf den Beginn des Geschäftsjahrs festlegen, und die Änderungen an der Hierarchie werden zu diesem Datum wirksam.  
 16. Geben Sie im Feld "Änderungen beschreiben" einen Wert ein.
 17. Klicken Sie auf "Veröffentlichen".
-
 

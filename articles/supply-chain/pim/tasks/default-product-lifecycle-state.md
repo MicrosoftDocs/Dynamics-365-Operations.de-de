@@ -1,13 +1,13 @@
---- 
-title: "Erstellen eines standardmäßigen Produktlebenszyklus-Status"
-description: "Diese Prozedur zeigt, wie ein standardmäßiger Produktlebenszyklus-Status erstellt wird und wie der standardmäßige Status den freigegebenen Produkten zugeordnet wird."
+---
+title: Erstellen eines standardmäßigen Produktlebenszyklus-Status
+description: Diese Prozedur zeigt, wie ein standardmäßiger Produktlebenszyklus-Status erstellt wird und wie der standardmäßige Status den freigegebenen Produkten zugeordnet wird.
 author: cvocph
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e7e637157ee06a3d07a1a9c5da71295eb75b424
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d445ea2f2362f146a1e3e7bcf747898dc2cc89ba
-ms.openlocfilehash: 06a6c7c8fa767edf6fdf50c3c971b6d767f8755f
-ms.contentlocale: de-de
-ms.lasthandoff: 02/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310828"
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>Erstellen eines standardmäßigen Produktlebenszyklus-Status
 
@@ -61,5 +61,4 @@ Diese Prozedur zeigt, wie ein standardmäßiger Produktlebenszyklus-Status erste
 
 > [!NOTE]
 > Angenommen, Sie haben einen aktiven Status eingerichtet, dann können Sie jetzt den aktiven Status auswählen, um zuzulassen, dass das Produkt im Produktprogrammplan und der Stücklistenberechnung verwendet wird. Offensichtlich ist dies nur sinnvoll, wenn alle Produktdetails, die für eine konsistente Planung erforderlich sind, angegeben sind.  
-
 

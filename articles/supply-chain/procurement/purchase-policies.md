@@ -1,13 +1,13 @@
 ---
 title: Einkaufsrichtlinien
-description: "Dieser Artikel enthält Informationen zu Einkaufsrichtlinien. Eine Einkaufsrichtlinie ist Sammlung von Regeln, mit denen der Bestellanforderungsprozess kontrolliert wird. Einkaufsrichtlinien unterstützen Beschaffungsadministratoren beim Implementieren der Beschaffungsstrategie, indem eine Richtlinienstruktur erstellt wird, die auf die Anforderungen einer Organisation für den strategischen Einkauf ausgerichtet ist."
+description: Dieser Artikel enthält Informationen zu Einkaufsrichtlinien. Eine Einkaufsrichtlinie ist Sammlung von Regeln, mit denen der Bestellanforderungsprozess kontrolliert wird. Einkaufsrichtlinien unterstützen Beschaffungsadministratoren beim Implementieren der Beschaffungsstrategie, indem eine Richtlinienstruktur erstellt wird, die auf die Anforderungen einer Organisation für den strategischen Einkauf ausgerichtet ist.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a16f365fa5a8b39dddac2886c36a8231de745a37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 675a7a8b0da228e789ee37ca8fe1d0c0ea01c283
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358760"
 ---
-
 # <a name="purchasing-policies"></a>Einkaufsrichtlinien
 
 [!include [banner](../includes/banner.md)]
@@ -148,7 +147,6 @@ Die Richtlinie definiert Richtlinienregeln, die beim Generieren einer Bestellung
     -   **Keine Bedarfskonsolidierung zulassen** – Keine genehmigten Bestellanforderungspositionen kommen für die Bedarfskonsolidierung in Frage. Diese Option ist standardmäßig ausgewählt und betrifft nur Bestellanforderungspositionen, die zur Erstellung einer Bestellung manuell verarbeitet werden müssen.
     -   **Immer Bedarfskonsolidierung zulassen** – Alle genehmigten Bestellanforderungspositionen kommen für die Bedarfskonsolidierung in Frage. **Hinweis:** Wenn Sie die Option **Immer Bedarfskonsolidierung zulassen** auf der Registerkarte **Bedarfskonsolidierung** auswählen, jedoch die Option **Bestellungen automatisch erstellen** auf der Registerkarte **Manuelle Erstellung der Bestellung** auswählen, werden alle Bestellanforderungen für die manuelle Bearbeitung vorgesehen.
     -   **Bedarfskonsolidierung unter diesen Bedingungen zulassen** – Definieren Sie die Kriterien, die bestimmen, ob genehmigte Bestellanforderungspositionen für die Bedarfskonsolidierung infrage kommen. Für jeden Typ der Bestellanforderungsposition können Sie die Kriterien nach Beschaffungskategorie und Kreditor festlegen. Wenn Sie die Option **Bedarfskonsolidierung unter diesen Bedingungen zulassen** auswählen, können Sie die Kriterien nach Beschaffungskategorie und Kreditor für jeden Typ der Bestellanforderungsposition festlegen. Wenn Sie eine Beschaffungskategorie auswählen, werden auch Unterkategorien für diese Beschaffungskategorie ausgewählt. Wenn Sie die Option **Alle** für einen bestimmten Positionstyp auswählen, kommen alle Bestellanforderungspositionen dieses Positionstyps für die Bedarfskonsolidierung in Frage.
-
 
 
 

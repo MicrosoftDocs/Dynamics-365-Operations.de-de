@@ -1,13 +1,13 @@
 ---
-title: "Zentralisierte Zahlungen für Debitorenkonten"
-description: "Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird."
+title: Zentralisierte Zahlungen für Debitorenkonten
+description: Organisationen mit mehreren juristischen Personen können zum Erstellen und Verwalten von Zahlungen eine juristische Person festlegen, die alle Zahlungen abwickelt. Daher muss die gleiche Buchung nicht in mehrere juristische Personen eingegeben werden. Dieser Artikel enthält Beispiele, die zeigen, wie das Buchen für zentralisierte Zahlungen in verschiedenen Szenarien behandelt wird.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e9eb935d32e61b2cf0ec8710f6c2cfb18ecfe034
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7208acc35e656d12b3c4f88a090f36ecfdd4fdfb
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330746"
 ---
-
 # <a name="centralized-payments-for-accounts-receivable"></a>Zentralisierte Zahlungen für Debitorenkonten
 
 [!include [banner](../includes/banner.md)]
@@ -297,7 +296,6 @@ Bei Fabrikam geht eine Zahlung in Höhe von EUR 75,00 vom Debitor "4000" (North
 | Debitoren (Fabrikam West)    |              | 75,00         |
 | Fällig von Fabrikam Ost (Fabrikam West) | 25,00        |               |
 | Debitoren (Fabrikam West)    |              | 25,00         |
-
 
 
 

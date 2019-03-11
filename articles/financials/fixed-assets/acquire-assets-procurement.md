@@ -1,13 +1,13 @@
 ---
 title: Erwerben von Anlagen durch Beschaffung
-description: "Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen \"Anlagevermögen\" und \"Kreditoren\" eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden."
+description: Dieser Artikel beschreibt, wie eine Integration zwischen den Modulen "Anlagevermögen" und "Kreditoren" eingerichtet wird. Dadurch können Anlagen automatisch auf Grundlage von Bestellungen oder Kreditorenrechnungen erstellt oder Anschaffungs- und Anschaffungsänderungsbuchungen für Anlagen automatisch vorgenommen werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: eef69de1c93de5c19b9f197838f1f2d3eb2e7645
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1e9b1dc6297f33ea25ca498895740596ebd020b8
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355793"
 ---
-
 # <a name="acquire-assets-through-procurement"></a>Erwerben von Anlagen durch Beschaffung
 
 [!include [banner](../includes/banner.md)]
@@ -107,7 +106,6 @@ Im Folgenden finden Sie Variationen dieses Szenarios:
 
 
 Weitere Informationen finden Sie unter [Anlage-Integration](fixed-asset-integration.md).
-
 
 
 

@@ -1,13 +1,13 @@
---- 
+---
 title: Erstellen eines Kreditorenkontos
 description: Im folgenden Verfahren, wie ein Kreditorenkonto erstellt und eine Adresse und Kontaktinformationen unter.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 22c7a1a2b7468f00aa25a67a2c5f62b088e2fe7c
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6ff2357d5266c45be2f403e463c72089d73db21b
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360140"
 ---
 # <a name="create-a-vendor-account"></a>Erstellen eines Kreditorenkontos
 
@@ -62,5 +62,4 @@ Im folgenden Verfahren, wie ein Kreditorenkonto erstellt und eine Adresse und Ko
 5. Klicken Sie auf "Speichern".
 6. Schließen Sie die Seite.
 7. Schließen Sie die Seite.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Informationen mithilfe von Suchvorgängen finden"
-description: "In Microsoft Dynamics 365 for Finance and Operations verfügen viele Felder über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Thema erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung."
+title: Informationen per Suchen finden
+description: In Microsoft Dynamics 365 for Finance and Operations verfügen viele Felder über Suchen, mit denen Sie schnell den richtigen oder gewünschten Wert finden. Den Suchen wurden viele Erweiterungen hinzugefügt, die diese einfacher und produktiver in der Anwendung machen. In diesem Thema erfahren Sie mehr über die neuen Suchfunktionen und erhalten wertvolle Tipps für deren optimale Nutzung.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a0722f057c1613fdc03281ca68a90608a701aef
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 9de957490b2ca87949a7cbcecc9acb4e8b98aaaf
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328354"
 ---
-
-# <a name="find-information-by-using-lookups"></a>Informationen mithilfe von Suchvorgängen finden
+# <a name="find-information-by-using-lookups"></a>Informationen per Suchen finden
 
 [!include [banner](../includes/banner.md)]
 
@@ -85,4 +84,3 @@ Stattdessen muss der Benutzer den Wert des Suchsteuerelements löschen, das Such
 Nachdem der Filter angewendet wurde (siehe Bild unten), kann der Benutzer die Zeile wie gewohnt suchen und auswählen.
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
-

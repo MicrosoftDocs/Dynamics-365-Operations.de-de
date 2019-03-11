@@ -1,32 +1,30 @@
 ---
-title: "Dauerauftragsworkflow (Übersicht)"
-description: "Dieses Thema enthält eine Übersicht über den Dauerauftragsworkflow."
+title: Dauerauftragsworkflow (Übersicht)
+description: Dieses Thema enthält eine Übersicht über den Dauerauftragsworkflow.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b5cff6910dcb273fc081443546676426387f6625
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: b4872c0753b54bdddf2c7778a13819726eea4a90
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321638"
 ---
-
-
 # <a name="subscription-workflow-overview"></a>Dauerauftragsworkflow (Übersicht) 
 
 [!include [banner](../includes/banner.md)]
@@ -57,6 +55,5 @@ Zwei Tage später erhalten Sie einen Anruf des Debitors, der darum bittet, die R
 Am Monatsende kann der Monatsumsatz des Dauerauftrags des Debitors für das GuV-Konto sowie für die RIF-Konten antizipiert werden. Weitere Informationen zum Antizipieren von Umsatzerlös für Daueraufträge finden Sie unter [Dauerauftragsumsatz antizipieren](accrue-subscription-revenue.md).
 
   
-
 
 

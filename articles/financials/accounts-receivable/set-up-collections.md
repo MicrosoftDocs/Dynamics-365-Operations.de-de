@@ -5,9 +5,9 @@ author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsActivitiesListPage
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6b1dcd6ad0ca05a94409d5d23039ccefe53392e3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f35981396c782b530737adac8ad62d0ff4b0f77e
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351837"
 ---
-
 # <a name="set-up-credit-and-collections"></a>Kredit und Inkasso einrichten
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,7 @@ Richten Sie die Namen der Erfassungen ein, die verwendet werden, wenn Buchungen 
 Richten Sie den Standardursachencode ein, der verwendet wird, wenn Buchungen auf die Seite **Inkassi** abgeschrieben werden. Sie können den Code während des Tilgungsprozesses ändern.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Einrichten eines Ordners für E-Mail-Anhänge und Erstellen von E-Mail-Vorlagen
-Wenn Sie E-Mail-Nachrichten von der Seite **Inkassi** senden, die Microsoft Excel-Anlagen haben, können Sie optionale E-Mail-Vorlagen für diese Nachrichten erstellen.
+Wenn Sie E-Mail-Nachrichten von der Seite **Inkasso** senden, die Microsoft Excel-Anlagen haben, können Sie optionale E-Mail-Vorlagen für diese Nachrichten erstellen.
 
 ## <a name="set-up-accounts-receivable-parameters-for-collections"></a>Einrichten von Debitorenparametern für Inkassi
 Richten Sie die Debitorenparameter ein, die auf der Registerkarte **Inkassi** erscheinen.
@@ -77,7 +76,7 @@ Richten Sie das Abschreibungskonto ein, das beim Abschreiben einer Buchung für 
 Aktualisieren Sie Bankkonten, sodass sie die richtige Erfassung haben, wenn NSF-Zahlungen auf der Seite **Inkassi** identifiziert werden. Wählen Sie auf der Registerkarte **Währungsverwaltung** im Feld **KD-Zahlungserfassung** eine Zahlungserfassung aus.
 
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Einrichten von Outlook-Einstellungen für Benutzer der Seite "Inkassi"
-Damit Arbeitskräfte mit der Seite **Inkassi** Aktivitäten erstellen oder E-Mail-Nachrichten senden können, müssen Sie zuerst sicherstellen, dass der Konfigurationsschlüssel **Microsoft Outlook-Synchronisierung** ausgewählt und die Outlook-Synchronisierung für diese Arbeitskräfte eingerichtet ist.
+Damit Arbeitskräfte mit der Seite **Inkasso** Aktivitäten erstellen oder E-Mail-Nachrichten senden können, müssen Sie zuerst sicherstellen, dass der Konfigurationsschlüssel **Microsoft Outlook-Synchronisierung** ausgewählt und die Outlook-Synchronisierung für diese Arbeitskräfte eingerichtet ist.
 
 ## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Einrichten von E-Mail-Einstellungen für Inkassokontakte von Debitoren
 Richten Sie E-Mail-Adressen für Debitorenkontakte ein, wenn Sie mit der Seite **Inkassi** E-Mail-Nachrichten an diese Kontakte senden möchten. Der Inkassokontakt wird als Standardkontakt auf der Seite **Inkassi** verwendet. Sie können eine Adresse für Aufstellungen einrichten, wenn der Debitor Aufstellungen unter einer anderen als der primären Adresse erhalten soll. 
@@ -100,5 +99,4 @@ Weitere Informationen finden Sie in folgenden Themen:
  - [Mahnschreiben verarbeiten](tasks/process-collection-letters.md)
 
  - [Inkassoinformationen überprüfen](tasks/review-collections-information.md)
-
 

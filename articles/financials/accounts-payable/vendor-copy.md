@@ -1,13 +1,13 @@
 ---
 title: Kreditoren unter Verwendung gemeinsamer Nummernkreise kopieren
-description: "In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Kreditor unter Beibehaltung der gleichen Kreditorenkennung zu einer anderen juristischen Person zu kopieren."
+description: In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Kreditor unter Beibehaltung der gleichen Kreditorenkennung zu einer anderen juristischen Person zu kopieren.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -15,15 +15,14 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.1
-ms.translationtype: HT
-ms.sourcegitcommit: a8c033caa8a4c4cf579ec166dce7a9982408d816
+ms.dyn365.ops.version: 8.0999999999999996
 ms.openlocfilehash: 0c492cd76fc9742aa4cff8fe588541cb2c6f1863
-ms.contentlocale: de-de
-ms.lasthandoff: 10/11/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302347"
 ---
-
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kreditoren unter Verwendung gemeinsamer Nummernkreise kopieren
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ Sie können gemeinsame Nummernkreise verwenden, um Kreditorenkennungen zuzuweise
 
 ## <a name="setup"></a>Setup
 
-Die Funktion wird aktiviert, wenn Sie einen gemeinsamen Nummernkreis verwenden, um Kreditorenkennungen zuzuweisen. Sie müssen den gleichen Nummernkreis bei jeder juristischen Person verwenden, in die Sie einen Kreditoren kopieren möchten. Sie ändern den Kreditorennummernkreis auf der Seite **Kreditorenparameter** für jede juristische Person. Wählen Sie **Kreditoren** \> **Setup** \> **Kreditorenparameter** und dann die Registerkarte **Nummernkreise** aus.
+Die Funktion wird aktiviert, wenn Sie einen gemeinsamen Nummernkreis verwenden, um Kreditorenkennungen zuzuweisen. Sie müssen den gleichen Nummernkreis bei jeder juristischen Person verwenden, in die Sie einen Kreditoren kopieren möchten. Sie ändern den Kreditorennummernkreis auf der Seite **Kreditorenparameter** für jede juristische Person. Wählen Sie **Kreditorenkonten** \> **Setup** \> **Kreditorenkontenparameter** und dann die Registerkarte **Nummernkreise** aus.
 
 Sie können Kreditorennummernkreise auch für jede Kreditorengruppe einrichten. Diese Nummernkreise müssen ebenfalls freigegeben sein. Der Nummernkreis für eine Kreditorengruppe wird zuerst verwendet. Wenn für eine Kreditorengruppe kein Nummernkreis angegeben ist, wird der Nummernkreis verwendet, der auf der Seite **Kreditorenparameter** angegeben ist.
 
@@ -40,7 +39,7 @@ Sie können Kreditoren auch zwischen juristischen Personen kopieren, wenn Sie ma
 
 ## <a name="copy-a-vendor"></a>Kopieren von Kreditoren
 
-Um einen Kreditor zu kopieren, wählen Sie auf der Listenseite **Alle Kreditoren** die Option **Neu** aus. Die Seite **Alle Kreditoren, neuer Datensatz** wird angezeigt. Beachten Sie, dass die neue Kreditorenkennung nicht sofort zugewiesen wird. Dieses Verhalten unterscheidet sich von früheren Versionen von Microsoft Dynamics 365 for Finance and Operations. Da Sie die Kreditorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll. Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Kreditor zu erstellen oder einen Kreditor zu kopieren. Daher wird die Kreditorkennung erst zugewiesen, wenn Sie unten auf der Seite **Speichern** auswählen.
+Um einen Kreditor zu kopieren, wählen Sie auf der Listenseite **Alle Kreditoren** die Option **Neu** aus. Die Seite **Alle Kreditoren, neuer Datensatz** wird angezeigt. Beachten Sie, dass die neue Kreditorenkennung nicht sofort zugewiesen wird. Dieses Verhalten unterscheidet sich vom Verhalten der Vorgängerversionen von Microsoft Dynamics 365 for Finance and Operations. Da Sie die Kreditorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll. Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Kreditor zu erstellen oder einen Kreditor zu kopieren. Daher wird die Kreditorkennung erst zugewiesen, wenn Sie unten auf der Seite **Speichern** auswählen.
 
 Wenn Sie einen neuen Kreditor erstellen, können Sie alle Felder weiter füllen, wie Sie es gewohnt sind. Wenn Sie fertig sind und **Speichern** auswählen, werden Sie feststellen, dass die Kreditorenkennung automatisch zugewiesen wurde. Bei manuellen Nummernkreisen sehen Sie, dass Ihre manuelle Kreditorenkennung verwendet wurde.
 
@@ -66,4 +65,3 @@ Sie können Kreditoren auch kopieren, indem Sie die Suchfunktion der Umsatzsteue
 
 1. Die Option **Kreditor kopieren** wird angezeigt. Standardmäßig ist diese Option auf **Nein** festgelegt. Um den Kreditor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest.
 2. Wählen Sie **Auswählen**. Der neue Kreditor wird erstellt.
-

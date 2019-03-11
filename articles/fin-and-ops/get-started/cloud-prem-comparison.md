@@ -1,30 +1,29 @@
 ---
 title: Vergleich von Cloudfunktionen und lokalen Funktionen
-description: "Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden."
+description: Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden.
 author: robinarh
 manager: AnnBe
 ms.date: 11/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: robinr
 ms.search.scope: Operations
 ms.custom: 89563
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
+ms.openlocfilehash: 2abddec24776dc84860116cc708e4d8e102dc503
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 596cfa056c6f2e64f554b643bb5a61d09c7bf20c
-ms.openlocfilehash: 58bba3dead4d2a8ed3ae424694377e410df16f4c
-ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313979"
 ---
-
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloudfunktionen und lokalen Funktionen
 
 [!include [banner](../includes/banner.md)]
@@ -32,7 +31,7 @@ ms.lasthandoff: 12/04/2018
 In diesem Thema wird erkennbar, ob jede Funktion in diesen Produkten verfügbar ist:
 
 + Dynamics 365 for Finance and Operations (Cloud)
-+ Probleme bei Dynamics 365 for Finance and Operations (lokal) behandeln
++ Dynamics 365 for Finance and Operations (lokal)
 
 Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support wird für die Funktion als Ganzes aufgeführt. Wo bestimmte Funktionen im Bereich gesamthaft unterschieden werden, werden die Funktionen in einer separaten Position in der Funktionsspalte aufgeführt.
 
@@ -43,10 +42,10 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Compliance und Bescheinigungen | | Ja | Ja |
 | | SOC 1 Type 1 Zertifizierung | Ja | Nr. |
 | Kostenrechnung | | Ja | Ja |
-| | Power BI-Inhalt der Kostenrechnungsanalyse | Ja | Nr. |
+| | Kostenrechnungs-Inhaltspaket für Power BI | Ja | Nr. |
 | | Kostenrechnungsarbeitsbereich für mobile App | Ja | Nr. |
 | Kostenverwaltung | | Ja | Ja |
-| | Power BI-Inhalt der Kostenrechnungsanalyse | Ja | Nr. |
+| | Kostenrechnungs-Inhaltspaket für Power BI | Ja | Nr. |
 | Datenverwaltung und -integration | | Ja | Ja |
 | | Konfigurations-getriebene Erweiterung | Ja | Nr. |
 | | Exportieren von Daten in Ihrem eigenen Data Warehouse | Ja | Ja |
@@ -58,7 +57,7 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Personalverwaltung | | Ja | Ja |
 | Intelligence | | Ja | Ja |
 | | Elektronische Meldung (ER) - Integration mit Kreditbriefen | Ja | Nr. |
-| | Elektronische Meldung (ER) - Integration mit SharePoint | Ja | Nr. |
+| | Elektronische Berichterstellung (EB) – Integration in SharePoint | Ja | Nr. |
 | | Integration mit PowerBI.com | Ja | Nr. |
 | | Analytische Arbeitsbereiche | Ja | Nr. |
 | | Intelligente Geschäftsprozesse: Empfehlungen | Ja | Nr. |
@@ -78,14 +77,14 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | | Direktüberweisung | Ja | Nr. |
 | Beschaffung | | Ja | Ja |
 | | Angebot für die Bestellanforderungsposition aus dem externen Katalog | Ja | Nr. |
-| | Einkaufausgabenanalyse Power BI-Berichte | Ja | Nr. |
+| | Power BI-Berichte zur Einkaufs- und Ausgabenanalyse | Ja | Nr. |
 | Produktinformationsverwaltung | | Ja | Ja |
 | Produktmasterdaten | | Ja | Ja |
 | Produktion | | Ja | Ja |
-| | Power BI-Berichte – Produktionsleistung | Ja | Nr. |
+| | Power BI-Berichte zur Produktionsleistung | Ja | Nr. |
 | Projektverwaltung und -verrechnung | | Ja | Ja |
-| Vertrieb | | Ja | Ja |
-| | Vertriebs-und Rentabilitätsleistungsinhalt für Power BI Berichte | Ja | Nr. |
+| Verk. | | Ja | Ja |
+| | Power BI-Berichte zur Umsatz- und Rentabilitätsleistung | Ja | Nr. |
 | Sicherheit | | Ja | Ja |
 | Serviceverwaltung | | Ja | Ja |
 | Lieferkettenverwaltung | | Ja | Ja |
@@ -93,7 +92,7 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Kreditor-Kooperation | | Ja | Nr. |
 | Lagerortverwaltung | | Ja | Ja |
 | | Mobile App am Lagerort | Ja | Ja |
-| | Power BI-Berichte am Lagerort | Ja | Nr. |
+| | Power BI-Berichte zur Lagerung | Ja | Nr. |
 | Webclient | | Ja | Ja |
 | | Aufgabenaufzeichnung - Aufgabenaufzeichnung aus der BPM-Bibliothek speichern oder laden | Ja | Nr. |
 | Unterstützung | | Ja | Ja |
@@ -113,12 +112,12 @@ Die folgenden Tabellen führt die Produktbereiche auf. Cloud und lokaler Support
 | Upgrade durchführen | | Ja | Ja |
 | | Upgrade durchführen | Ja | Nr. |
 | | Aktualisierung und Support für frühere Versionen | Ja | Nr. |
-| Visual Studio Entwicklung | | Ja | Ja |
+| Visual Studio-Entwicklung | | Ja | Ja |
 
 ### <a name="retail"></a>Retail 
 Eine Liste der Einzelhandelsfunktionen, die in den lokalen Bereitstellungen verfügbar sind, finden Sie unter [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
+## <a name="dynamics-365-for-talent"></a>Dynamics 365 for Talent
 
 | Bereich | Funktion | Cloud | Lokal |
 |---|---|---|---|
@@ -127,4 +126,3 @@ Eine Liste der Einzelhandelsfunktionen, die in den lokalen Bereitstellungen verf
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Funktionen, die in lokalen Bereitstellungen nicht implementiert sind](features-not-implemented-on-prem.md)
-

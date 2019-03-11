@@ -1,13 +1,13 @@
 ---
-title: "Anlagewertmodel und Abschreibungsbuchzusammenführung"
-description: "In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611), wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist."
+title: Anlagewertmodel und Abschreibungsbuchzusammenführung
+description: 'In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In der Microsoft Dynamics 365 for Operations-Version 1611 wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 26f4b73f67064a83eb7b3d57f2dc98d90602c254
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8ef31b63dd253ab5b436a65385e248c4753abf1e
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342522"
 ---
-
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Anlagewertmodel und Abschreibungsbuchzusammenführung
 
 [!include [banner](../includes/banner.md)]
 
-In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611), wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist.
+In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In der Microsoft Dynamics 365 for Operations-Version 1611 wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist.
 
 Die neue Buchfunktionalität basiert auf einer früheren Wertmodellfunktionalität, aber sie umfasst auch die gesamte Funktionalität, die zuvor nur in Abschreibungsbüchern bereitgestellt wurde. [![Buchen als eine Zusammenführung von Wertmodell- und Abschreibungsbuchfunktionalität](./media/fixed-assets.png)](./media/fixed-assets.png) Wegen dieser Zusammenführung können Sie jetzt einen einzigen Satz von Seiten, Abfragen und Berichten für alle Ihre Anlagenprozesse verwenden. Die Tabellen in diesem Thema beschrieben die vorhergehende Funktionalität für Abschreibungsbücher und Wertmodelle, zusammen mit der neuen Funktionalität für Bücher.
 
@@ -69,7 +68,6 @@ Abfragen und Berichte unterstützen alle Bücher. Berichte, die in der folgenden
 
 ## <a name="upgrade"></a>Upgrade durchführen
 Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vorhandenen Transaktionen zur neuen Buchstruktur verschoben. Wertmodelle bleiben, wie sie zurzeit sind, als Buch, das zum Hauptbuch bucht. Allerdings werden Abschreibungsbücher zu einem Buch verschoben, bei dem die Option **Ins Hauptbuch buchen** auf **Nein** festgelegt ist. Abschreibungsbuch-Erfassungsnamen werden zu einem Hauptbuch-Erfassungsnamen verschoben, bei dem die Buchungsebene auf **Keine** festgelegt ist.
-
 
 
 

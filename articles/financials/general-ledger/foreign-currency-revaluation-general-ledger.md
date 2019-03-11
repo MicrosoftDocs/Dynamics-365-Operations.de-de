@@ -1,13 +1,13 @@
 ---
-title: "Neubewertung der Fremdwährung für das Sachkonto"
-description: "Dieses Thema enthält einen Überblick der folgenden Hauptbuchneubewertung für den Prozess der Neubewertung der Fremdwährungen im Hauptbuch bereit: Einrichten, Vorgang ausführen, Berechnung für den Prozess und sofern erforderlich Stornierung der Neubewertungsbuchungen."
+title: Neubewertung der Fremdwährung für das Sachkonto
+description: 'Dieses Thema enthält einen Überblick der folgenden Hauptbuchneubewertung für den Prozess der Neubewertung der Fremdwährungen im Hauptbuch bereit: Einrichten, Vorgang ausführen, Berechnung für den Prozess und sofern erforderlich Stornierung der Neubewertungsbuchungen.'
 author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CurrencyLedgerGainLossAccount
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bb04c5a9e7db1a6c6a8d8c7126bfa80208d1fd53
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f967854e9a39c7b2d76559744bbc1e16a53d7f6a
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "315543"
 ---
-
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
 [!include [banner](../includes/banner.md)]
@@ -116,7 +115,6 @@ Der nächste Buchhaltungseintrag wird erstellt.
 Wenn Sie die Neubewertungsbuchung stornieren müssen, wählen Sie die Schaltfläche **Buchung stornieren** auf der Seite **Neubewertung der Fremdwährung** aus. Es wird eine neue Neubewertung der Fremdwährung des historischen Datensatzes erstellt, um den historischen Audit-Trail zum Zeitpunkt der Ausführung oder Stornierung zu erhalten. 
 
 Sie können die Ergebnisse eines veralteten Auftrags der Neubewertung stornieren, jedoch müssen Sie möglicherweise eine aktuellere Neubewertung auch storniert, um die richtigen Salden für jedes neu vorkalkulierte Hauptkonto ein. Neu bewertet, werden die Rückbuchungen möglich veralteter Auftrag, da keine Möglichkeit besteht, Steuern, welcher Hauptkonten und die Häufigkeit wenn er neu bewertet werden. So kann eine Organisation hat, um alle anderen Monats Hauptkonten vierteljährlich neu bewerten, aber die Bargeldhauptkonten.
-
 
 
 

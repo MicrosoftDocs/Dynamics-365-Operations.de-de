@@ -1,13 +1,13 @@
 ---
 title: Leistungsverwaltung
-description: "Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben."
+description: Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.
 author: mikefalkner
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Operations, Talent
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 67da25514edc6b27f8478a7b317f6690720ab592
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: e7621b4c1358d1ecd6ff1c9ce2f1de08766a4bf6
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304470"
 ---
-
 # <a name="performance-management"></a>Leistungsverwaltung
 
 [!include [banner](includes/banner.md)]
@@ -56,9 +55,9 @@ Wenn der Zugriff über den **ESS**-Arbeitsbereich erfolgt, können Sie auf der S
 
 Sie können die Leistungserfassung auch mit einer externen Website verknüpfen, indem Sie die URL dieser Site speichern. Wenn sich die Erfassung auf Ziele oder Leistungsbeurteilungen bezieht, können Sie sie mit diesen verknüpfen. Wenn über die **MSS**-Seite auf die Leistungserfassung zugegriffen wird, können Sie dieselben Informationen wie für die Mitarbeitererfassung eingeben. Darüber hinaus können Sie den Mitarbeiter angeben, für den die Erfassung erstellt wird. Sie können auswählen, ob die Managererfassung für diesen Mitarbeiter freigegeben wird.
 
-### <a name="praise"></a>Lob
+### <a name="send-feedback"></a>Feedback senden
 
-Die Leistungserfassung enthält eine zusätzliche Funktion mit der Bezeichnung "Lob". Wenn Sie auf **Lob versenden** klicken, können Sie einen Mitarbeiter auswählen und per E-Mail Rückmeldungen für diesen Mitarbeiter bereitstellen. Diese Nachricht wird an den Mitarbeiter gesendet, für den das Lob ausgesprochen wurde, an den Vorgesetzten dieses Mitarbeiters, an den Mitarbeiter, der das Lob ausspricht und an den Vorgesetzten dieses Mitarbeiters. Für jede Person, die diese Nachricht mit dem Lob erhält, wird ein Leistungserfassungseintrag erstellt.
+Die Leistungserfassung enthält eine zusätzliche Funktion mit der Bezeichnung "Feedback". Wenn Sie auf **Feedback versenden** klicken, können Sie einen Mitarbeiter auswählen und per E-Mail Rückmeldungen für diesen Mitarbeiter bereitstellen. Diese Nachricht wird an den Mitarbeiter gesendet, an den das Feedback gerichtet ist, an den Vorgesetzten dieses Mitarbeiters, an den Mitarbeiter, der das Feddback sendet und an den Vorgesetzten dieses Mitarbeiters. Für jede Person, die diese Nachricht mit dem Feedback erhält, wird ein Leistungserfassungseintrag erstellt.
 
 ## <a name="goals"></a>Ziele
 Über die Seite **Leistungsziele** können Sie die Ziele nachverfolgen, die Sie und Ihr Vorgesetzter für Sie erstellt haben. Sie können beliebig viele Ziele erstellen, und diese Ziele können verschiedene Zeiträume und Leistungsbeurteilungen enthalten. Sie können einfache oder komplexe Ziele erstellen, je nach Umfang der eingegebenen Informationen zu einem Ziel. Ziele sind keine Voraussetzungen für Leistungsbeurteilungen. 
@@ -151,7 +150,6 @@ Leistungserfassungs-Quelltypen beschreiben, woher die Leistungserfassungen stamm
 ### <a name="review-types"></a>Überprüfungstypen
 
 Typen der Leistungsbeurteilung helfen, das Verhalten einer Leistungsbeurteilung zu steuern. Sie können den Workflow für eine Beurteilung aktivieren oder deaktivieren. Wenn die Beurteilung keinem Workflow unterliegt, können Sie den Standardstatus definieren, der beim Erstellen der Beurteilung verwendet wird. Sie können außerdem festlegen, ob der Mitarbeiter, der Vorgesetzte oder beide die Beurteilung abzeichnen müssen.
-
 
 
 

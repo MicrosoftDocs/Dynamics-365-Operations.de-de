@@ -1,13 +1,13 @@
 ---
-title: Power BI Inhalt Mitarbeitermetrik
-description: "In diesem Thema wird der Microsoft Power BI-Inhalt Arbeitskraftkennzahlen beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+title: Power BI-Inhalt zu Arbeitskraftkennzahlen
+description: In diesem Thema wird der Power BI-Inhalt Arbeitskraftkennzahlen beschrieben. Es wird erläutert, wie Sie auf die Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmWorkforceWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -18,27 +18,26 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345788"
 ---
-
-# <a name="workforce-metrics-power-bi-content"></a>Power BI Inhalt Mitarbeitermetrik
+# <a name="workforce-metrics-power-bi-content"></a>Power BI-Inhalt zu Arbeitskraftkennzahlen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird der Microsoft Power BI-Inhalt **Arbeitskraftkennzahlen** beschrieben. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird der Microsoft Power BI-Inhalt **Arbeitskraftkennzahlen** beschrieben. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 Der **Arbeitskraftkennzahlen**-Inhalt für Power BI wird im Arbeitsbereich **Personalverwaltung** angezeigt, wenn Sie eines der folgenden Produkte verwenden:
 
 - Microsoft Dynamics 365 for Finance and Operations
-- Microsoft Dynamics 365 for Talent
+- Microsoft Dynamics 365 for Talent
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriken, die im Power BI-Inhalt enthalten sind
 Die folgende Tabelle enthält die Metrik, die für jede Berichtsseite verfügbar ist.
 
 | Bericht                                           | Metriken |
@@ -88,4 +87,3 @@ Die folgende Tabelle zeigt die Entitäten, auf denen das Paket basiert.
 | Mitarbeitertrend           | Arbeitskräfte im Zeitverlauf, Mitarbeiterzahl, Unternehmen und Position                                 | Unternehmen, geografischer Standort, Mitarbeitername, Vorgesetzter, Kalender-Gegenkonto, Datum, Mitarbeitertitel, Demographie, Beschäftigung, Stelle |
 | Masseneinstellungsprojekt        | Anzahl der Massenprojekte, Projekteigentümer und Projektstatus                     | Unternehmen, Positionsstatus für Masseneinstellung. |
 | Positionen für Masseneinstellung           | Abteilung, Beschäftigungstyp und Position                                           | Datum, Stelle, Masseneinstellungsprojekt |
-

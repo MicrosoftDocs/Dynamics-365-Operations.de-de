@@ -1,13 +1,13 @@
 ---
-title: "Neue oder aktualisierte Aufgabenleitfäden (November 2016)"
-description: "Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 -- alle Sprachen) für Microsoft Dynamicx 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
+title: Neue oder aktualisierte Aufgabenleitfäden (November 2016)
+description: Dieses Thema führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 – alle Sprachen) für Microsoft Dynamics 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,24 +17,23 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 9cba30560762b5f647621aafb8db19241523f904
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348916"
 ---
-
 # <a name="new-or-updated-task-guides-november-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (November 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 -- alle Sprachen) für Microsoft Dynamics 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
+Dieses Thema führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 – alle Sprachen) für Microsoft Dynamics 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
 
-Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitfäden zur Unterstützung mit Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations Platform Update 3, Microsoft Dynamics AX Platform Update 2, Dynamics AX May 2016 Update und Microsoft Dynamics AX February 2016 Release. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die APQC Unified-Bibliothek (November 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations – Plattformupdate 3, Microsoft Dynamics AX – Plattformupdate 2, Dynamics AX-Update vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
 
 > [!NOTE]
-> Hinweis: Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics 365 for Operations November 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
+> :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für das Dynamics 365 for Operations-Update vom November 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
 
 ### <a name="accounts-payable"></a>Kreditorenkonten
 
@@ -549,4 +548,3 @@ Die (November 2016 -- alle Sprachen) APQC Unified Library enthält Aufgabenleitf
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Kostenrechnungsterminologie
-description: "Dieses Thema definiert die Schlüsselbegriffe, die in der Kostenrechnung verwendet werden."
+description: Dieses Thema definiert die Schlüsselbegriffe, die in der Kostenrechnung verwendet werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 702fa3cb4219aecd95a74d3c225e104be5f281fc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365936"
 ---
-
 # <a name="cost-accounting-terminology"></a>Kostenrechnungsterminologie
 
 [!include [banner](../includes/banner.md)]
@@ -128,7 +127,7 @@ Kostenrechnung unterstützt die Integration von Daten aus Quellsystemen über ei
 
 Die meisten Quellsysteme können Daten bereitstellen, die mindestens mit einer Datenquelle in der Kostenrechnung übereinstimmen. Um Daten aus Quellsystemen an der Datenquelle in der Kostenrechnung auszurichten, muss ein Datenanbieter konfiguriert werden. Die folgende Tabelle listet die Verfügbarkeit von Datenanbietern pro Datenkonnektor und Datenquelle auf.
 
-|  **Datenquellen** |  **Importierter Transaktionsdatenkonnektor** | **Dynamics 365 for Finance and Operations, Enterprise Edition, Datenkonnektor**  | **Dynamics AX-Datenkonnektor**  |
+|  **Datenquellen** |  **Importierter Transaktionsdatenkonnektor** | **Dynamics 365 for Finance and Operations Datenkonnektor**  | **Dynamics AX-Datenkonnektor**  |
 |---|---|---|---|
 | Kostenelement-Dimensionsmitglieder  |  Ja | Ja  | Ja  |
 |  Mitglieder der Kostenobjektdimension |  Ja | Ja  | Ja  |
@@ -204,6 +203,5 @@ Aufstellungen sind Ansichten für die Manager, die für die Kostensteuerung vera
 **Version**
 
 Versionen werden verwendet, um verschiedene Ergebnisse zu simulieren, anzuzeigen und zu vergleichen. Standardmäßig werden alle Istkosten in einer Basisversion angezeigt, die als *Tatsächlich* bekannt ist. Für Budgets und Berechnungen können Sie mit so vielen Versionen arbeiten, wie Sie benötigen. Beispielsweise können Sie Budgetdaten in eine ursprüngliche Version importieren und dann das Budget in einer überarbeiteten Version überarbeiten. Für Berechnungen können Sie mehrere Versionen erstellen. In diesen verschiedenen Versionen können Sie dann Berechnungen erstellen, indem Sie unterschiedliche Berechnungsregeln verwenden, die für die Kostenzuteilung angewendet werden.
-
 
 

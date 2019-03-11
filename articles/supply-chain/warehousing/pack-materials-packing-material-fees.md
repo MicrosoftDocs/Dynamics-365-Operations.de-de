@@ -1,13 +1,13 @@
 ---
-title: "Verpackungsmaterial und Gebühren"
-description: "Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind."
+title: Verpackungsmaterial und Gebühren
+description: Verpackungsmaterialgebühren werden in bestimmten Zeitabständen an ein Recyclingunternehmen entrichtet. Für jedes Material, aus dem eine Verpackung besteht, muss ein bestimmter Betrag pro Gewichtseinheit bezahlt werden. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c188651fe8ba3fe3f9678f36ab11ae886ef6f1cf
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312300"
 ---
-
 # <a name="packing-materials-and-fees"></a>Verpackungsmaterial und Gebühren
 
 [!include [banner](../includes/banner.md)]
@@ -62,7 +61,6 @@ Wenn die Verpackungsmaterialgebühren von Ihrem Unternehmen getragen werden, geb
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Angeben des Verpackungsmaterialgewichts auf Rechnungen
 Sie können das Gewicht des Verpackungsmaterials auf der Rechnung ausweisen und angeben, wer für die aufgeführten Gebühren aufkommt. Das Gewicht wird nach Verpackungscode zusammengefasst.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer"
-description: "Dieses Thema erklärt, wie Sie die internationale Bankkontonummer (IBAN) prüfen."
+title: Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
+description: Dieses Thema erklärt, wie Sie die internationale Bankkontonummer (IBAN) prüfen.
 author: mikefalkner
 manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
 ms.openlocfilehash: 19e0528b95952de8e5503c361efcfeca4c529caf
-ms.contentlocale: de-de
-ms.lasthandoff: 10/12/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360002"
 ---
-
 # <a name="manage-international-bank-account-number-iban-validation"></a>Verwalten Sie die Kontoprüfung (IBAN) der internationalen Bankkontonummer
 
 [!include [banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ Informationen zur Struktur der IBAN werden in Microsoft Dynamics 365 for Finance
     Es wird auch geprüft, ob die Bankkontonummer mit dem Teil der IBAN übereinstimmt, die die Bankkontonummer darstellt. Wenn die Kontonummer nicht übereinstimmt, erhalten Sie eine Warnmeldung. Eine Warnmeldung wird angezeigt. Sie können fortfahren, selbst wenn die Kontonummer nicht übereinstimmt.
 
     Es wird auch geprüft, ob die Bankkontonummer mit dem Teil der IBAN übereinstimmt, die die Bankroutingnummer darstellt. Die Routingnummer enthält eine Banknummer und häufig eine zusätzliche Bankfiliale. Wenn die Bankroutingnummer nicht übereinstimmt, erhalten Sie eine Warnmeldung. Eine Warnmeldung wird angezeigt. Sie können fortfahren, selbst wenn die Bankroutingnummer nicht übereinstimmt.
-

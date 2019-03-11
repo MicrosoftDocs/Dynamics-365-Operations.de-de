@@ -1,35 +1,34 @@
 ---
 title: Arbeitsbereich "Anlageverwaltung"
-description: "Dieses Thema enthält Informationen zum Arbeitsbereich \"Anlageverwaltung\". Der Arbeitsbereich zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden. Er enthält eine Überblicksansicht und eine Analyseansicht."
+description: Dieses Thema enthält Informationen zum Arbeitsbereich "Anlageverwaltung". Der Arbeitsbereich zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden. Er enthält eine Überblicksansicht und eine Analyseansicht.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 1e8e02bf308b5506aef41d302755911f6a9ce3e4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 8425387d4004e02e9b8adf9ba3b31a0b4e02b6e9
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352320"
 ---
-
 # <a name="fixed-asset-management-workspace"></a>Arbeitsbereich "Anlageverwaltung"
 
 [!include [banner](../includes/banner.md)]
 
-Der Arbeitsbereich **Anlagenverwaltung** zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden. Der Arbeitsbereich umfasst eine Überblicksansicht und eine Analyseansicht. Die Registerkarte **Meine Arbeit** zeigt Überblickskacheln, Anlagendetails und zugehörige Informationen zu Anlagen im aktuellen Unternehmen. Sie können dem Power BI-Analyseabschnitt direkt im Arbeitsbereich Analysemöglichkeiten hinzufügen. Die Registerkarte **Analyse – alle Unternehmen** verwendet die Möglichkeiten von Microsoft Power BI, um grafische Elemente anzuzeigen, die sich auf Anlagen in allen Unternehmen beziehen.
+Der Arbeitsbereich **Anlagenverwaltung** zeigt Informationen, die sich auf Anlagen beziehen, die im System eingegeben werden. Der Arbeitsbereich umfasst eine Überblicksansicht und eine Analyseansicht. Die Registerkarte **Meine Arbeit** zeigt Überblickskacheln, Anlagendetails und zugehörige Informationen zu Anlagen im aktuellen Unternehmen. Sie können dem Power BI-Analyseabschnitt direkt im Arbeitsbereich Analysen hinzufügen. Die Registerkarte **Analyse – alle Unternehmen** verwendet die Möglichkeiten von Microsoft Power BI, um grafische Elemente anzuzeigen, die sich auf Anlagen in allen Unternehmen beziehen.
 
 ## <a name="my-work"></a>Meine Arbeit
 
@@ -75,4 +74,3 @@ Die folgende Tabelle enthält die Visualisierungen, die für jede Berichtsseite 
 | Bewertungszuordnungen        | Anlagendetails |
 
 Um die Analyse mit Daten anzuzeigen, müssen Sie die AssetTransactionMeasure-Aggregatmessung auf der Seite **Entität-Speicher** aktualisieren.
-

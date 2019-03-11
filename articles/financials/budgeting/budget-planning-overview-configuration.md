@@ -1,13 +1,13 @@
 ---
-title: "Budgetplanung (Überblick)"
-description: "Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen die dabei helfen, die Budgetplanung zu konfigurieren und Budgetplanungsprozesse einzurichten."
+title: Budgetplanung (Überblick)
+description: Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen die dabei helfen, die Budgetplanung zu konfigurieren und Budgetplanungsprozesse einzurichten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329918"
 ---
-
 # <a name="budget-planning-overview"></a>Budgetplanung (Überblick)
 
 [!include [banner](../includes/banner.md)]
@@ -37,7 +36,7 @@ Dieser Artikel umfasst die Budgetplanung und enthält Informationen, die Ihnen d
 
 Sie führen Budgetplanung durch, wenn Sie die Budgets vorbereiten, die von einer Organisation implementiert werden. Eine Organisation kann Budgetplanung konfigurieren und anschließend Budgetplanungsprozesse einrichten, um die Richtlinien, die Verfahren und Bedingungen ihrer Organisation für Budgetausarbeitung zu erfüllen. 
 
-Wenn Sie die Konzepte und die Terminologie verstehen, die in Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanung in Ihrer Organisation.
+Wenn Sie die Konzepte und die Terminologie verstehen, die in Microsoft Dynamics 365 for Finance and Operations verwendet werden, erleichtert dies die Budgetplanungsimlementierung in Ihrer Organisation.
 
 ### <a name="key-terms"></a>Schlüsselbegriffe
 
@@ -58,7 +57,7 @@ Die folgenden Aufgaben können mit Budgetplanung ausgeführt werden:
 -   Leiten Sie die Budgetpläne automatisch zusammen mit Arbeitsblättern, Begründungsdokumenten und weiteren Anlagen zur Prüfung und Genehmigung weiter.
 -   Konsolidieren Sie mehrere Budgetpläne von einer untergeordneten Ebene der Organisation in einen einzigen Haushaltsplan auf einer höheren Ebene der Organisation. Sie können auch einen einzelnen Budgetplan auf einer höheren Ebene der Organisation entwickeln und das Budget den untergeordneten Ebenen der Organisation zuordnen.
 
-Budgetplanung ist in anderen Microsoft Dynamics 365 for Fiance and Operations-Modulen integriert. Daher können Sie Informationen aus früheren Budgets, tatsächlichen Aufwendungen, Anlagen und der Personalverwaltung einbringen. Da die Budgetplanung ebenfalls in Microsoft Excel und Microsoft Word integriert ist, können Sie diese Programme verwenden, um mit den Budgetplanungsdaten zu arbeiten. So kann ein Budget-Manager Budgetanforderung einer Abteilung aus einem Budgetplanszenario in ein Excel-Arbeitsblatt exportieren. Die Daten können im Arbeitsblatt analysiert, aktualisiert und entworfen werden, und dann wieder in den Budgetplanpositionen veröffentlicht werden.
+Budgetplanung ist in anderen Microsoft Dynamics 365 for Finance and Operations-Modulen integriert. Daher können Sie Informationen aus früheren Budgets, tatsächlichen Aufwendungen, Anlagen und der Personalverwaltung einbringen. Da die Budgetplanung ebenfalls in Microsoft Excel und Microsoft Word integriert ist, können Sie diese Programme verwenden, um mit den Budgetplanungsdaten zu arbeiten. So kann ein Budget-Manager Budgetanforderung einer Abteilung aus einem Budgetplanszenario in ein Excel-Arbeitsblatt exportieren. Die Daten können im Arbeitsblatt analysiert, aktualisiert und entworfen werden, und dann wieder in den Budgetplanpositionen veröffentlicht werden.
 
 ## <a name="configuring-budget-planning"></a>Budgetplanung konfigurieren
 Die Seite **Budgetplanungskonfiguration** enthält die meisten Einstellungen, die Sie benötigen, um eine Budgetplanung einzurichten. In folgenden Abschnitte beschreiben wesentliche Faktoren, die Sie bei der Konfiguration der Budgetplanung berücksichtigen sollten. Nachdem die Konfiguration abgeschlossen ist, richten Sie Budgetplanungsprozesse ein.
@@ -188,7 +187,6 @@ Im Menü **Aktivitäten** können Sie auch einen neuen Prozess erstellen, indem 
 Ein anderer nützlicher Befehl im Menü **Aktivitäten** ist **Budgetprozessstatus anzeigen**. Dieser Befehl stellt die Budgetpläne innerhalb eines Prozesses zusammen mit relevanten Daten, wie den Workflowstatus der Pläne, Zusammenfassungen nach Betrag und nach Einheit sowie Navigation zu den Budgetplänen grafisch dar.
 
 [![Status des Budgetplanungsprozesses](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
-
 
 
 

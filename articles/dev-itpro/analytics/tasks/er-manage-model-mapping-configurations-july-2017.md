@@ -1,13 +1,13 @@
---- 
+---
 title: EB-Modellzuordnung in getrennten EB-Konfigurationen verwalten
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann."
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349146"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>EB-Modellzuordnung in getrennten EB-Konfigurationen verwalten
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 08/08/2018
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, einen Konfigurationsanbieter für elektronische Berichterstellung (ER) erstellen kann. In diesem Aufgabenleitfaden erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren, ihn. 
 
-Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Aufgabenleitfaden mithilfe der Unternehmensdaten aus, die von Ihrer Auswahl werden gefestgelegt werden. Die Funktionen für diesen Aufgabenleitfaden sind nur verfügbar, wenn Sie einen der folgenden Hotfixes installiert haben: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 für die Version Dynamics AX 7.0 oder https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 für die Version Dynamics 365 for Operations.
+Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Aufgabenleitfaden mithilfe der Unternehmensdaten aus, die von Ihrer Auswahl werden gefestgelegt werden. Die Funktionen für diesen Aufgabenleitfaden sind nur verfügbar, wenn Sie einen der folgenden Hotfixes installiert haben: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 für die Dynamics AX 7.0 Version oder https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 für die Dynamics 365 for Operations Version.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
@@ -70,7 +70,7 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 6. Klicken Sie auf Designer.
     * Beachten Sie, dass die vorbildliche erstellte Zuordnungskonfiguration eine neue leere Zuordnung mit demselben Namen wie die erstellte Konfiguration enthält. Beachten Sie, dass, wenn eine ausgewählte Elternteilmodellkonfiguration vorbildliche Zuordnungen, enthält sie in eine Zuordnungskonfiguration des neuen Modells kopiert werden.   
 7. Klicken Sie auf Designer.
-8. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabelle" aus.
+8. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabelle' aus.
 9. Klicken Sie auf "Stamm hinzufügen".
 10. Geben Sie im Feld Name "Firma" ein.
     * Unternehmen  
@@ -123,7 +123,7 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 5. Klicken Sie auf Konfiguration erstellen.
 6. Klicken Sie auf Designer.
 7. Klicken Sie auf Designer.
-8. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabelle" aus.
+8. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabelle' aus.
 9. Klicken Sie auf "Stamm hinzufügen".
 10. Geben Sie im Feld Name "Firma" ein.
     * Unternehmen  
@@ -161,5 +161,4 @@ Da ER-Konfigurationen unter Unternehmen freigegeben werden, können Sie diese Au
 6. Klicken Sie auf "Ausführen".
 7. Klicken Sie auf "OK".
     * Beachten Sie, dass die Standardmodellzuordnungskonfiguration von dieser Formatkonfiguration für die Generierung elektronischer Dokumente verwendet wird (die erstellten Ausgaben enthält den Unternehmenscode).  
-
 

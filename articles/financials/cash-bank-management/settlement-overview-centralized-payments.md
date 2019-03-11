@@ -1,13 +1,13 @@
 ---
-title: "Ausgleichsüberblick für zentralisierte Zahlungen"
-description: "In diesem Thema wird der Ausgleich von zentralisierten Zahlungen für Microsoft Dynamics 365 for Finance and Operations beschrieben."
+title: Ausgleichsüberblick für zentralisierte Zahlungen
+description: In diesem Thema wird der Ausgleich von zentralisierten Zahlungen für Microsoft Dynamics 365 for Finance and Operations beschrieben.
 author: abruer
 manager: AnnBe
 ms.date: 08/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -18,15 +18,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
 ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358576"
 ---
-
-# <a name="settlement-overview-for-centralized-payments"></a>Ausgleichsüberblick für zentralisierte Zahlungen
+# <a name="settlement-overview-for-centralized-payments"></a>Übersicht über Ausgleiche bei zentralisierten Zahlungen
 
 [!include [banner](../includes/banner.md)]
 
@@ -109,4 +108,3 @@ Bei Kreditorenzahlungen werden für die Buchungen vom Typ "Fällig bis" und "Fä
 
 ## <a name="withholding-tax"></a>Quellensteuer
 Anhand des Kreditorenkontos, das der Rechnung zugeordnet ist, wird bestimmt, ob Quellensteuer berechnet werden soll. Wenn Quellensteuer anfällt, wird sie für die juristische Person berechnet, die der Rechnung zugeordnet ist. Wenn die juristischen Personen unterschiedliche Währungen verwenden, wird der Wechselkurs der juristischen verwendet, die der Rechnung zugeordnet ist.
-

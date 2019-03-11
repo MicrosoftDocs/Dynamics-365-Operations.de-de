@@ -1,13 +1,13 @@
 ---
 title: Erstellen einer Debitorenrechnung
-description: "Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält."
+description: Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechnung, die sich auf einen Auftrag bezieht, und die ein Debitor von einer Organisation erhält.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 4f4cb254ad2d4328e146f5dba471aafb21660986
 ms.openlocfilehash: 6d7c9a61f935503b74ac27b354c875df095d84b4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365269"
 ---
-
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
 [!include [banner](../includes/banner.md)]
@@ -91,16 +90,16 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 <ul>
 <li><strong>Jetzt liefern</strong> - Hiermit werden alle Mengen ausgewählt, die im Feld <strong>Jetzt liefern</strong> eingegeben wurden. Verwenden Sie diese Option, um einen Teilauftrag zu bestätigen oder zu liefern.</li>
 <li><strong>Entnommen</strong> – Wählt alle Mengen aus, die entnommen wurden.</li>
-<li><strong>Alle</strong> – Wählt alle Mengen im Auftrag aus, die noch nicht durch den aktuellen Dokumenttyp aktualisiert wurden.</li>
+<li><strong>Alle</strong> – Wählt alle Mengen im Auftrag aus, die noch nicht durch den aktuellen Dokumenttyp aktualisiert wurden.</li>
 <li><strong>Lieferschein</strong>– Hiermit werden alle Mengen ausgewählt, die durch einen Lieferschein aktualisiert wurden.</li>
-<li><strong>Entnommene Menge und nicht gelagerte Produkte</strong> – Wählt alle Mengen aus, die entnommen wurden, und alle Produktmengen, die nicht gelagert werden.</li>
+<li><strong>Entnommene Menge und nicht gelagerte Produkte</strong> – Wählen Sie alle Mengen aus, die entnommen wurden, und alle Produktmengen, die nicht gelagert werden.</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Buchung</td>
 <td><ul>
 <li>Wählen Sie diese Option, um den Auftrag journalisieren.</li>
-<li>Deaktivieren Sie diese Option, um einen Proformaauftrag zu drucken. <strong>Hinweis:</strong> Falls Sie eine Vereinbarung über einen Zahlungsplan getroffen haben, wird dieser auf dem Proforma-Auftrag nicht angezeigt. Der Zahlungsplan wird nur auf dem tatsächlichen Auftrag angezeigt.</li>
+<li>Deaktivieren Sie diese Option, um einen Proformaauftrag zu drucken. <strong>Hinweis:</strong> Falls Sie eine Vereinbarung über einen Zahlungszeitplan getroffen haben, wird dieser auf dem Proforma-Auftrag nicht angezeigt. Der Zahlungsplan wird nur auf dem tatsächlichen Auftrag angezeigt.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -118,7 +117,7 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 <li><strong>Aktuell</strong> – Dokumente drucken, nachdem eine Rechnung aktualisiert wurde.</li>
 <li><strong>Später</strong> – Dokumente drucken, nachdem alle Rechnungen aktualisiert wurden.</li>
 </ul>
-<strong>Hinweis:</strong> Das Feld <strong>Drucken</strong> ist nur verfügbar, wenn Sie die Option <strong>Rechnung drucken</strong>, <strong>Angebot drucken</strong>, <strong>Kommissionierliste drucken</strong> oder <strong>Lieferschein drucken</strong> aktivieren. Sie haben beispielsweise das System so eingerichtet, dass Daten im Formular <strong>Formularsortierung</strong> nach Rechnungskonto sortiert werden. Sie können dann <strong>Später</strong> auswählen, um die Dokumente in einer Charge zu drucken, die nach Rechnungskonto sortiert wird. Andernfalls werden die Dokumente, bevor die Verarbeitung abgeschlossen ist, gedruckt und die Dokumente werden nicht in der Reihenfolge sortiert, die in der Seite <strong>Formularsortierung</strong> angegeben ist.</td>
+<strong>Hinweis:</strong> Das Feld <strong>Drucken</strong> ist nur verfügbar, wenn Sie die Option <strong>Rechnung drucken</strong>, <strong>Angebot drucken</strong>, <strong>Kommissionierliste drucken</strong> oder <strong>Lieferschein drucken</strong> aktivieren. Sie haben beispielsweise das System so eingerichtet, dass Daten im Formular <strong>Formularsortierung</strong> nach Rechnungskonto sortiert werden. Sie können dann <strong>Später</strong> auswählen, um die Dokumente in einer Charge zu drucken, die nach Rechnungskonto sortiert wird. Andernfalls werden die Dokumente gedruckt, bevor die Verarbeitung abgeschlossen ist, und die Dokumente werden nicht in der Reihenfolge sortiert, die auf der Seite <strong>Formularsortierung</strong> angegeben ist.</td>
 </tr>
 <tr class="even">
 <td>Rechnung drucken</td>
@@ -154,7 +153,7 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 <td>Sammelaktualisierung für</td>
 <td>Wählen Sie aus, wie mehrere Aufträge zusammengefasst werden sollen.
 <ul>
-<li><strong>Kein</strong> – Aufträge werden nicht zusammengefasst. Für jeden Auftrag wird z. B. eine separate Rechnung erstellt.</li>
+<li><strong>Kein</strong> – Aufträge werden nicht summiert. Für jeden Auftrag wird z. B. eine separate Rechnung erstellt.</li>
 <li><strong>Rechnungskonto</strong> – Fassen Sie alle ausgewählten Aufträge, basierend auf der im Formular <strong>Sammelaktualisierungsparameter</strong> festgelegten Kriterien, zusammen.</li>
 <li><strong>Auftrag</strong> – Ein ausgewählter Bereich von Aufträgen wird in einem angegebenen Auftrag summiert. Die Aufträge werden entsprechend der im Formular <strong>Sammelaktualisierungsparameter</strong> festgelegten Kriterien zusammengefasst. Wenn Sie diese Option auswählen, muss auch ein Wert im Feld <strong>Auftrag</strong> ausgewählt werden.</li>
 <li><strong>Automatische Zusammenfassung</strong> – Wenn Sammelaktualisierungen auf der Seite <strong>Sammelaktualisierung</strong> angegeben wurden, können Sie alle ausgewählten Aufträge, basierend auf den Kriterien der Seite <strong>Sammelaktualisierungsparameter</strong>, zusammenfassen. Wenn Sammelaktualisierungen nicht angegeben wurden, wird der Auftrag separat gebucht.</li>
@@ -163,7 +162,6 @@ Die folgenden Felder ändern das Verhalten des Buchungsprozesses.
 </tr>
 </tbody>
 </table>
-
 
 
 

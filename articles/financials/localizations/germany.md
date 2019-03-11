@@ -1,13 +1,13 @@
 ---
 title: Deutschland
-description: "Dieses Thema bietet eine Übersicht über Dynamics 365 for Finance and Operations-Funktionen, die spezifisch für Deutschland sind."
+description: Dieses Thema bietet eine Übersicht der Dynamics 365 for Finance and Operations-Funktionen, die für Deutschland spezifisch sind.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Germany
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 5e007e120693018e6b5b2b0f9e958b3e91844525
-ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370384"
 ---
-
 # <a name="germany"></a>Deutschland
 
 [!include[banner](../includes/banner.md)]
@@ -64,4 +63,3 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Lokalisierung und rechtliche Funktionen](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
 - [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/VATdeclarationXMLELSTER)
-

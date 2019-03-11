@@ -1,13 +1,13 @@
 ---
-title: "Arbeitsbereich für die Bankverwaltung"
-description: "Dieses Thema enthält Informationen zum Bankwesen-Arbeitsbereich. Der Arbeitsbereich zeigt Informationen hinsichtlich der Bankkonten des Unternehmens und enthält eine Zusammenfassungsansicht und eine Analyseseite. Die Zusammenfassungsansicht zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die Analyseseite verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen."
+title: Arbeitsbereich für die Bankverwaltung
+description: Dieses Thema enthält Informationen zum Bankwesen-Arbeitsbereich. Der Arbeitsbereich zeigt Informationen hinsichtlich der Bankkonten des Unternehmens und enthält eine Zusammenfassungsansicht und eine Analyseseite. Die Zusammenfassungsansicht zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die Analyseseite verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: fdc0d1e5ea02cdcff9f7f5ede4ab685f54365698
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 3c38807e9ed3b2ced37ada35b72e388c125bd654
-ms.contentlocale: de-de
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348364"
 ---
 # <a name="bank-management-workspace"></a>Arbeitsbereich für die Bankverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-Der Arbeitsbereich **Bankwesen** zeigt Informationen bezüglich der Bankkonten des Unternehmens. Der Arbeitsbereich umfasst eine Ansicht **Zusammenfassung** und eine Seite **Analyse**. Die **Zusammenfassungsansicht** zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die **Analyseseite** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen.
+Der Arbeitsbereich **Bankwesen** zeigt Informationen bezüglich der Bankkonten des Unternehmens. Der Arbeitsbereich umfasst eine Ansicht **Zusammenfassung** und eine Seite **Analyse**. Die **Zusammenfassungsansicht** zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die **Analyse**-Seite verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen.
 
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 
@@ -64,4 +64,3 @@ Die Seite **Analyse** enthält wichtige Metriken zu Bankkonten im aktuellen Unte
 -   Saldo in Währung
 
 Sie können die Bankanalyse für alle Unternehmen im Arbeitsbereich **Bargeldüberblick – alle Unternehmen** anzeigen.
-

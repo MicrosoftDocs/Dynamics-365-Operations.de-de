@@ -1,13 +1,13 @@
---- 
-title: "EB-Modellzuordnungen definieren und Datenquellen für sie auswählen"
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" zugewiesen ist, ein Modell der elektronischen Berichterstellung auswählen kann."
+---
+title: EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, ein Modell der elektronischen Berichterstellung auswählen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b5f2f2c699514d723f42f5d1fb25724f46dfc4f4
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348870"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
 
@@ -51,7 +51,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 
 ## <a name="define-required-data-sources-for-the-current-model-mapping"></a>Benötigte Datenquellen für die Strommodellzuordnung definieren
 1. Klicken Sie auf Designer.
-2. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.
+2. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 3. Klicken Sie auf "Stamm hinzufügen".
     * Geben Sie diese Datenquelle ein, um Zahlungsbuchungen zuzugreifen.  
 4. Geben Sie im Feld "Name" 'Transactions' ein.
@@ -110,7 +110,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 41. Erweitern Sie in der Struktur den Knoten 'Transactions'.
 42. In der Struktur erweitern oder reduzieren Sie „Buchungen\$Betrag”.
 43. Erweitern oder reduzieren Sie „Buchungen” in der Struktur.
-44. Wählen Sie in der Strukturdarstellung "Dynamics 365 for Operations \Tabellendatensätze" aus.
+44. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 45. Klicken Sie auf "Stamm hinzufügen".
     * Geben Sie diese Datenquelle ein, um die Bankkontodetails des Unternehmens zuzugreifen.  
 46. Geben Sie im Feld "Name" "BankAccount" ein.
@@ -157,5 +157,4 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 70. Schließen Sie die Seite.
 71. Schließen Sie die Seite.
 72. Schließen Sie die Seite.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Verfügbare mobile Arbeitsbereiche"
-description: "In diesem Thema werden die mobilen Arbeitsbereiche aufgeführt, die für Systemadministratoren verfügbar sind."
+title: Verfügbare mobile Arbeitsbereiche
+description: In diesem Thema werden die mobilen Arbeitsbereiche aufgeführt, die für Systemadministratoren verfügbar sind.
 author: sericks007
 manager: AnnBe
 ms.date: 08/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
 ms.openlocfilehash: 75f7df4ca3b675d720eb46395118529d09f2f9d4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354965"
 ---
-
 # <a name="available-mobile-workspaces"></a>Verfügbare mobile Arbeitsbereiche
 
 [!include [banner](../includes/banner.md)]
@@ -44,5 +43,4 @@ Dieses Thema führt die mobilen Arbeitsbereiche auf, die vor kurzem für die mob
 | [Verfügbarer Lagerbestand](../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Erhalten Sie Einblicke in reservierten und verfügbaren Lagerbestand.                                                                                                    |   2017. Januar       |
 | [Aufträge](../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Sie sind jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall.                                                                                                                          |  2017. Januar                  |
 | [Kreditor-Kooperation](../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Ermöglicht Ihren Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen. |2017. Januar    |
-
 

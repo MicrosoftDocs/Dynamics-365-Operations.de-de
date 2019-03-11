@@ -1,13 +1,13 @@
 ---
-title: "Überwachen von Verkaufs- und erstellen Sie ein Leistung"
-description: "Sie können den Verkauf und die Gewinnspannen mit Microsoft Dynamics 365 for Retail in Echtzeit überwachen."
+title: Überwachen von Verkaufs- und erstellen Sie ein Leistung
+description: Sie können die Verkaufs- und Margenleistung mit Microsoft Dynamics 365 for Retail in Echtzeit überwachen.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailSales
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: e2b3591f6403542c79457d12ae850ad40d9253a1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e1d4f693fa9712585593b9d3de43c3603588531c
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "357265"
 ---
-
-# <a name="monitor-sales-and-margin-performance"></a>Verkaufs- und Margenleistung überwachen
+# <a name="monitor-sales-and-margin-performance"></a>Überwachen der Verkaufs- und Margenleistung
 
 [!include [banner](includes/banner.md)]
 
-Sie können den Verkauf und die Gewinnspannen mit Microsoft Dynamics 365 for Retail in Echtzeit überwachen.
+Sie können die Verkaufs- und Margenleistung mit Microsoft Dynamics 365 for Retail in Echtzeit überwachen.
 
-Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer den Verkauf und die Gewinnspanne in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für die folgenden Dimensionen überwachen:
+Im Rahmen von Dynamics 365 for Retail können Benutzer die Verkaufs- und Margenleistung in Echtzeit auf unterschiedlichen Ebenen der Organisationshierarchie für die folgenden Dimensionen überwachen:
 
 - Produkte
 - Kategorien
@@ -50,4 +49,3 @@ Darüber hinaus können die Benutzer mit zwei eindeutigen Berichte mit der hiera
 - **Kategorie- und Produktverwaltung**-Arbeitsbereich &gt; **Retail** &gt; **Produkt und Kategorien** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
 - **Verwaltung von Preisen und Rabatten**-Arbeitsbereich &gt; **Retail** &gt; **Preise und Rabatte** &gt; **Einzelhandelsshopleitung** &gt; **Berichte**
 - **Abfragen und Berichte**-Abschnitt &gt; **Retail** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte**
-

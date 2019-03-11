@@ -1,13 +1,13 @@
 ---
 title: Personalisierte Produktempfehlungen
-description: "Dieses Thema enthält Informationen zu Dynamics 365 for Retail-Produktempfehlungen, die im Feld Verkaufsstelle (POS)- Gerät angezeigt werden können."
+description: Dieses Thema enthält Informationen zu Dynamics 365 for Retail-Produktempfehlungen, die im Verkaufsstelle (POS)- Gerät angezeigt werden können.
 author: ashishmsft
 manager: AnnBe
 ms.date: 02/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326468"
 ---
-
 # <a name="personalized-product-recommendations"></a>Personalisierte Produktempfehlungen
 
 [!include [banner](includes/banner.md)]
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/04/2019
 > [!NOTE]
 > Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen. Weitere Informationen finden Sie unter [Entfernte oder veraltete Funktionen](../dev-itpro/migration-upgrade/deprecated-features.md)
 
-In Dynamics 365 for Retail können Produktempfehlungen auf dem POS-Gerät angezeigt werden. Empfehlungen sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Für Einzelhändler mit großen Katalogen, helfen Empfehlungen den Kunden bei der Produkterfassung. Indem Produkte zur Schau gestellt werden, die sich an den Interessen und Kaufgewohnheiten eines Kunden orientieren, erhalten Einzelhändler Upsell-Möglichkeiten und die Kundenbindung wird gestärkt. In Dynamics 365 for Retail werden Produktempfehlungen von kognitiven Diensten und Microsoft Azure Machine Learning unterstützt.
+In Dynamics 365 for Retail können Produktempfehlungen auf dem POS-Gerät angezeigt werden. Empfehlungen sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Für Einzelhändler mit großen Katalogen, helfen Empfehlungen den Kunden bei der Produkterfassung. Indem Produkte zur Schau gestellt werden, die sich an den Interessen und Kaufgewohnheiten eines Kunden orientieren, erhalten Einzelhändler Upsell-Möglichkeiten und die Kundenbindung wird gestärkt. In Dynamics 365 for Retail werden die Produktempfehlungen durch kognitive Dienste und Microsoft Azure Machine Learning unterstützt.
 
 ## <a name="scenarios"></a>Szenarien
 
@@ -63,7 +62,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
     [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurieren von Dynamics 365 for Retail zum Aktivieren von POS-Empfehlungen
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurieren Sie Dynamics 365 for Retail, um POS-Empfehlungen zu aktivieren
 
 Um Produktempfehlungen einzurichten, muss Folgendes eingerichtet werden:
 
@@ -77,7 +76,7 @@ Um Produktempfehlungen einzurichten, muss Folgendes eingerichtet werden:
 
 Wenn Sie die **Entitätsspeicher** Entität aktualisieren, finden folgenden Aktionen statt.
 
-- Daten in dem von den kognitiven Diensten erforderlichem Format werden aus der operationalen Datenbank von Dynamics 365 for Retail extrahiert und an den Entitäts-Store gesendet.
+- Daten in dem von den kognitiven Diensten erforderlichem Format werden aus der operationalen Datenbank von Dynamics 365 for Retail extrahiert und an den Entitätsspeicher gesendet.
 - Die Daten werden von Azure Data Factory (ADF) verwendet, um die Daten mithilfe der Hive-Skripte als Teil der ADF-Aktivitäten bereinigen. Bereinigte Daten werden im Blob gespeichert.
 - Daten vom Blob-Speicher werden von den Cognitive-Services-API verwendet, um ein Empfehlungsmodell zu schulen.
 
@@ -94,4 +93,3 @@ Wenn Sie **Empfehlungen aktivieren** aktivieren und die Konfigurationseinzelvorg
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Hinzufügen eines Empfehlungssteuerelement der Buchungsseite auf einem POS-Gerät](add-recommendations-control-pos-screen.md)
-

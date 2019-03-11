@@ -5,25 +5,24 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 06/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.assetid: 
+ms.assetid: ''
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 6cae0ce1ec88f0500f8d281d314d59dc7001a384
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6702ac241c41cc99d96bc46a515837235b3ae651
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359680"
 ---
-
 [!include [banner](../includes/banner.md)]
 
 # <a name="electronic-reporting-sample-check-formats"></a>Beispielscheckformate bei der elektronischen Berichterstellung
@@ -32,9 +31,9 @@ Sie können elektronische Berichtserstellung (ER) zum Formatieren von Kreditoren
 
 ## <a name="what-check-formats-are-currently-supported"></a>Welche Scheckformate werden derzeit unterstützt?
 
-Sie sollten die Bibliothek der freigegebenen Anlage in Microsoft Dynamics Lifecycle Services (LCS) nutzen und die aktuellen Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** anzeigen. Im nächsten Abschnitt "Was muss ich einrichten?" ist ein Link zu einem Thema enthalten, das erläutert, wie ein LCS-Repository erstellt wird, damit Sie verfügbare Konfigurationen prüfen und ausgewählte Konfigurationen importieren können.
+Sie sollten immer die Bibliothek der freigegebenen Anlagen in Microsoft Dynamics Lifecycle Services (LCS) nutzen und die aktuelle Liste der verfügbaren Dateien mit dem Anlagentyp **GER-Konfiguration** anzeigen. Im nächsten Abschnitt "Was muss ich einrichten?" ist ein Link zu einem Thema enthalten, das erläutert, wie ein LCS-Repository erstellt wird, damit Sie verfügbare Konfigurationen prüfen und ausgewählte Konfigurationen importieren können.
 
-Microsoft Dynamics 365 for Finance and Operations umfasst ein Beispielformat, mit dem Scheck oben gefolgt von zwei Rimesseabschnitten. Es enthält außerdem ein Beispielformat, mit dem Scheck in der Mitte zwischen zwei Rimesseabschnitten. Diese Beispielformate entsprechen den geschäftlichen Deluxe-Scheckformaten.
+Microsoft Dynamics 365 for Finance and Operations enthält außerdem ein Beispielformat (mit dem Scheck oben, gefolgt von zwei Rimesseabschnitten). Es enthält außerdem ein Beispielformat, mit dem Scheck in der Mitte zwischen zwei Rimesseabschnitten. Diese Beispielformate entsprechen den geschäftlichen Deluxe-Scheckformaten.
 
 ## <a name="what-do-i-have-to-set-up"></a>Was muss ich einrichten?
 
@@ -45,4 +44,3 @@ Microsoft Dynamics 365 for Finance and Operations umfasst ein Beispielformat, mi
 - Wenn Sie Zahlungen für das konfigurierte Bankkonto in der Zahlungserfassung generieren, werden die Schecks gedruckt, indem das angegebene Format verwendet wird.
 
 Weitere Informationen finden Sie unter [Ein elektronisches Berichterstellungsformat ändern](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
-

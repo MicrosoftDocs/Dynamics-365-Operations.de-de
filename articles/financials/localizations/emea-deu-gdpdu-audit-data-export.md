@@ -1,13 +1,13 @@
 ---
 title: Deutsche Protokolldatei (GDPdU/GoBD)
-description: "Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations die Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden."
+description: Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
 author: mrolecki
 manager: AnnBe
 ms.date: 11/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 83dbe295e53cf024628b7a0293772d4945a203b5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ef6b2daed0ede6ab51909ca5542434f8fac7426
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370356"
 ---
-
 # <a name="german-audit-file-gdpdugobd"></a>Deutsche Protokolldatei (GDPdU/GoBD)
 
 [!include [banner](../includes/banner.md)]
 
-Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations die Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
+Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
 
 Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, Daten für alle Buchungen und Masterdaten aus einem Geschäftsjahr zu exportieren und diese Daten den Wirtschaftsprüfern innerhalb eines angemessenen Zeitraums bereitzustellen. Die Daten müssen in einem bestimmten Dateiformat gesammelt werden, damit sie in die Auditumgebung des Wirtschaftsprüfers importiert werden können. Diese Vorgehensweise wird von den Steuerbehörden gesteuert. Die Daten, die exportiert werden müssen, hängen von den Anforderungen für ein Audit ab. Zum Beispiel umfasst ein typischer Satz an exportierten Daten die folgenden Masterdaten und Buchungstabellen:
 
@@ -223,4 +222,3 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 - [Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
 - [Protokolldateikonfiguration anpassen](./tasks/customize-german-audit-file-configuration.md)
 - [Protokolldatei generieren](./tasks/german-audit-file.md)
-

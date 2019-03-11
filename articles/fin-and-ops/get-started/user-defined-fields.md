@@ -1,13 +1,13 @@
 ---
-title: Benutzerdefinierte Felder erstellen und mit ihnen arbeiten
-description: "In diesem Thema wird gezeigt, wie Microsoft Dynamics 365 for Finance and Operations es mehreren Benutzern ermöglicht, benutzerdefinierten Felder zu erstellen, um die Anwendung für ihre geschäftlichen Bedürfnisse anzupassen."
+title: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+description: In diesem Thema wird gezeigt, wie Microsoft Dynamics 365 for Finance and Operations es mehreren Benutzern ermöglicht, benutzerdefinierten Felder zu erstellen, um die Anwendung für ihre geschäftlichen Bedürfnisse anzupassen.
 author: jasongre
 manager: AnnBe
 ms.date: 07/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysCustomFieldManageFields
 audience: Application User
 ms.reviewer: sericks
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 18402579789c17de7b46dd7a013b3b6327ea5d4f
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "348019"
 ---
-
-# <a name="create-and-work-with-custom-fields"></a>Benutzerdefinierte Felder erstellen und mit ihnen arbeiten
+# <a name="create-and-work-with-custom-fields"></a>Erstellen von und Arbeiten mit benutzerdefinierten Feldern
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +31,7 @@ Während Microsoft Dynamics 365 for Finance and Operations einen umfangreichen S
 
 Die Möglichkeit, benutzerdefinierte Felder hinzuzufügen, ist in Plattformupdate 13 und höher verfügbar.
 
-Diese Videodatei zeigt, wie einfach es ist, eine benutzerdefiniertes Feld einer Seite hinzuzufügen: [Hinzufügen von benutzerdefinierten Feldern in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc).
+Dieses Video zeigt, wie einfach es ist, ein benutzerdefiniertes Feld einer Seite hinzuzufügen: [Hinzufügen von benutzerdefinierten Feldern in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 
 ## <a name="creating-custom-fields"></a>Erstellen benutzerdefinierter Felder
 
@@ -160,4 +159,3 @@ Aus Gründen der Leistung und technischen Gründen ist es nur bei Tabellen, die 
 - Die Tabelle kann keine andere Tabelle erweitern.
 - Die Tabelle kann nicht als Systemtabelle markiert werden.
 - Die Tabelle kann keine temporäre Tabelle sein.
-

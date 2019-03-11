@@ -1,13 +1,13 @@
---- 
-title: "ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren von Berechnungen)"
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe."
+---
+title: 'ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren von Berechnungen)'
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERExpressionDesignerFormula
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 4ef657b13bc1f7f4a84676821e4175ace32c069a
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338911"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2-configure-computations"></a>ER Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren von Berechnungen)
 
@@ -31,7 +31,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Syste
 
 Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 1: Format erstellen)" ausführen.
 
-Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 
 ## <a name="create-a-format-configuration-to-add-counting-and-summing-details"></a>Erstellen einer Formatkonfiguration, um Inventarisierungs- und Zusammenfassungsdetails hinzuzufügen
@@ -139,5 +139,4 @@ Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 16
 82. Schließen Sie die Seite.
 83. Klicken Sie auf "Speichern".
 84. Schließen Sie die Seite.
-
 

@@ -1,13 +1,13 @@
 ---
-title: "Kreditlimits für Debitoren"
-description: "Dieser Artikel stellt eine Übersicht der Kreditkarten-Autorisierung in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, bereit."
+title: Kreditlimits für Debitoren
+description: Dieser Artikel stellt eine Übersicht der Kreditlimitprüfung in Microsoft Dynamics 365 for Finance and Operations bereit.
 author: omulvad
 manager: AnnBe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: josaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8fd7022eb1ed2671fcfc2861eb8ec7504ebf9f98
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e00828ea24434da6dfd7443153b007ea728375f3
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312668"
 ---
-
 # <a name="credit-limits-for-customers"></a>Kreditlimits für Debitoren
 
 [!include [banner](../includes/banner.md)]
@@ -139,4 +138,3 @@ Manchmal können Sie das Kreditlimit eines Debitors manuell prüfen. Beispielswe
 1.  Klicken auf Bereichsseitenknoten: **Vertrieb und Marketing** \> **Gemeinsam** \> **Aufträge** \> **Alle Aufträge**. Doppelklicken Sie auf einen Auftrag.
 
 2.  Klicken Sie im Aktivitätsbereich auf der Registerkarte **Verkaufsauftrag** in der Gruppe **Verwalten** auf **Kreditlimite überprüfen**.
-

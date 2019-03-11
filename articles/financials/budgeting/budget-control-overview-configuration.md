@@ -1,13 +1,13 @@
 ---
-title: "Überblick zur Budgetsteuerung"
-description: "Dieser Artikel stellt die Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie finanzielle Ressourcen verwalten können."
+title: Überblick zur Budgetsteuerung
+description: Dieser Artikel stellt Budgetsteuerung vor und bietet Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie Finanzquellen verwalten können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: shylaw
@@ -18,24 +18,23 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4dbbbdf403c3e3f7c1bfa391cc32f80505098db9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e77760d6729b8faf3099590c60ea7673cfcb18ec
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308528"
 ---
-
-# <a name="budget-control-overview"></a>Budgetsteuerungsüberblick 
+# <a name="budget-control-overview"></a>Übersicht über Budgetsteuerung
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel stellt die Budgetsteuerung vor und gibt Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie finanzielle Ressourcen verwalten können.
+Dieser Artikel stellt Budgetsteuerung vor und bietet Informationen, mit denen Sie die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations so konfigurieren können, dass Sie Finanzquellen verwalten können.
 
-<a name="overview"></a>Überblick
+<a name="overview"></a>Übersicht
 --------
 
-Die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations unterstützt die Verwaltung der Finanzquellen einer Organisation über den Kontenplan, den Workflow, die Benutzergruppen, die Quelldokumente und Erfassungen, konfigurierbare Berechnung der verfügbaren Budgetmittel, die Budgetzyklen und die Schwellenwerte. Mit Steuerelementen kann eine Organisation während des Geschäftsjahrs seine Finanzquellen planen, messen und verwalten. 
+Die Budgetsteuerung in Microsoft Dynamics 365 for Finance and Operations unterstützt die Verwaltung der Finanzquellen einer Organisation über den Kontenplan, Workflows, Benutzergruppen, Quelldokumente und Erfassungen, konfigurierbare Berechnungen der verfügbaren Budgetmittel, Budgetzyklen und Schwellenwerte. Mit Steuerelementen kann eine Organisation während des Geschäftsjahrs seine Finanzquellen planen, messen und verwalten. 
 
 Nachdem Budgets in Finance and Operations genehmigt wurden, können Sie Budgetpläne verwenden, um Budgetregistereinträge zu generieren, um das Aufwendungsbudget für eine Organisation zu erfassen. Alternativ können Sie Budgetregistereinträge von einem Programm von einem Drittanbieter erstellen oder importieren, anstatt Budgetplanungsfunktionen zu verwenden. 
 
@@ -53,7 +52,7 @@ Sie können die Budgetsteuerung gemäß verschiedenen Faktoren konfigurieren:
 -   **Berechnung der verfügbaren Budgetmittel** – Sollten Dokumente wie Bestellanforderungen (Vorabbelastung) sowie Bestellungen (Belastungen) in die Berechnung der Budgetmittel berücksichtigt werden? Müssen Dokumente in einem Entwurfsstatus in die Berechnung der Budgetmittel berücksichtigt werden?
 -   **Berechtigung für Außerkraftsetzung**– Wer ist berechtigt, das verfügbare Budget zu überschreiten?
 
-Budgetsteuerung ist vollständig in Finance and Operations integriert. Daher können Sie das verfügbare Budget für geplante Einkäufe und tatsächliche Einkäufe überprüfen. Budgetanfragen und Berichte sind verfügbar. Benutzer können das Budget über Budgetzyklen evaluieren und die erforderlichen Anpassungen in Form einer Budgetüberarbeitung oder einer Übertrag vornehmen. Ein Budget-Manager kann das Budget und die Istwerte in Microsoft Excel auch exportieren, um besser nach Bedarf zu analysieren und zu planen.
+Budgetsteuerung ist vollständig in Finance and Operations integriert. Daher können Sie das verfügbare Budget für geplante Einkäufe und tatsächliche Einkäufe überprüfen. Budgetanfragen und Berichte sind verfügbar. Benutzer können das Budget über Budgetzyklen evaluieren und die erforderlichen Anpassungen in Form einer Budgetüberarbeitung oder einer Übertrag vornehmen. Ein Budget-Manager kann auch das Budget und die Istwerte nach Microsoft Excel exportieren, um besser nach Bedarf zu analysieren und zu planen.
 
 ## <a name="configuring-budget-control"></a>Konfigurieren der Budgetsteuerung
 ### <a name="budget-cycle-time-span"></a>Zeitspanne für Budgetzyklus
@@ -128,4 +127,3 @@ Sobald die Budgetsteuerung aktiviert wird, erhalten Benutzer Budgetsteuerungswar
 Von dieser Seite aus können Benutzer auf der Seite **Budgetsteuerungsstatistiken** Budgetverfügbarkeiten nach Perioden anzeigen und Reservierungen für eine ausgewählte Budgetsteuerungsdimensionskombination anzeigen. Benutzer können auf der Seite **Budgetsteuerungsstatistik** auch die Budgetverfügbarkeit für alle Finanzdimensionskombinationen anzeigen, die in der Budgetsteuerung verwendet werden. 
 
 Wenn die Budgetsteuerung für Bestellungen aktiviert ist, kann der Budget-Manager den Arbeitsbereich **Sachkontobudgets und Planungen** verwenden, um die Warteschlange aller nicht bestätigter Bestellungen mit Budgetprüfungswarnungen und -fehlern überprüfen. Wenn der Budget-Manager Berechtigungen für Budgetüberschreitung konfiguriert hat, kann er oder sie die Bestellung direkt im Arbeitsbereich bestätigen.    
-

@@ -1,13 +1,13 @@
 ---
-title: "Stücklisten- und Formelpositionen für den Lagerort freigeben"
-description: "In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklistenpositionen und Formelpositionen zum Lagerort beschrieben."
+title: Stücklisten- und Formelpositionen für den Lagerort freigeben
+description: In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklistenpositionen und Formelpositionen zum Lagerort beschrieben.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 8ccdb71f49652d6cca6ced2e9e9764d9ad0fffd8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343143"
 ---
-
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
 
 [!include [banner](../includes/banner.md)]
@@ -99,4 +98,3 @@ Sie können Rohmaterial für eine Teilmenge der Fertigartikel oder in einer best
     Die Einheiten, die zur Verfügung stehen, werden in der Einheitsnummernkreisgruppen-ID der Fertigartikel definiert.
 
     Ein Fertigartikel weist beispielsweise die folgende Einheitskonvertierung zwischen Kilogramm (kg) und Palette (PL) auf: 1 PL = 50 kg. Um einen Produktionsauftrag für 5.000 kg von Fertigkartikeln zu erstellen, können Sie Rohmaterialen für die Anzahl der Paletten freigeben, für die Sie die Fertigung planen. Wählen Sie **PL** als Einheit aus, und wählen Sie dann eine entsprechende Zahl im Feld **Menge** aus.
-

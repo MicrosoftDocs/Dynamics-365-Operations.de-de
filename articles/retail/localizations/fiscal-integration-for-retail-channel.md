@@ -1,13 +1,13 @@
 ---
-title: "Steuerintegration für Einzelhandelskanal"
-description: "In diesem Thema erhalten Sie einen Überblick über für die steuerliche Integration für Retail POS."
+title: Übersicht über die Steuerintegration für Retail Channels
+description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind.
 author: josaw
 manager: annbe
-ms.date: 11/01/2018
+ms.date: 02/01/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
@@ -15,122 +15,104 @@ ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: v-kikozl
-ms.search.validFrom: 2018-11-1
-ms.dyn365.ops.version: 8.1.1
+ms.search.validFrom: 2019-1-16
+ms.dyn365.ops.version: 10
+ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
-ms.openlocfilehash: c852d095505abecbd44d29e9e7b53875e9069def
-ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377134"
 ---
-# <a name="fiscal-integration-for-retail-channel"></a>Steuerintegration für Einzelhandelskanal
+# <a name="overview-of-fiscal-integration-for-retail-channels"></a>Übersicht über die Steuerintegration für Retail Channels
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält einen Überblick der steuerlichen Integrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind. Die steuerliche Integrationsfunktionen sind ein Framework, das entwickelt wurde, um die lokalen Steuerrechte zu unterstützen, um im Einzelhandel Betrug zu verhindern. Typische Szenarien, die erfasst werden können, indem steuerliche Integration verwendet wird, umfassen Folgendes:
+## <a name="introduction"></a>Einführung
 
-- Das Drucken des Steuerbelegs und die Übergabe an den Debitor.
-- Die Übermittlung der Informationen von Verkäufen und die Rücklieferungen, die am POS für eine Fremddienstleistung erfolgt, die von der Behörde bereitgestellt wird.
-- Verwenden des Datenschutzes mit einer digitalen Signatur, autorisiert von der Behörde.
+Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind. Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Einzelhandelsverkäufen entsprechend lokalen Steuergesetzen zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird: 
 
-Dieses Thema erstellt Richtlinien zum Einrichten der steuerlichen Integration, sodass Benutzer die folgenden Aufgaben ausführen. 
+- Erfassen eines Einzelhandelsverkaufs auf einem steuerbezogenen Gerät, das mit einem Retail point of sale (POS) verbunden ist, z. B. einem Belegdrucker, und Drucken eines Steuerbelegs für den Kunden.
+- Senden Sie Informationen, die Verkäufen und Rücksendungen zugeordnet sind, die in Retail POS abgeschlossen werden, sicher an einen externen Webdienst, der von der Steuerbehörde betrieben wird.
+- Gewährleisten Sie die Unveränderbarkeit von Verkaufsbuchungsdaten durch digitale Signaturen.
 
-- Konfigurieren Sie steuerliche Verbindungen, welche steuerlichen Geräte oder Dienste sind, die für  Erfassungszwecke wie Speichern, digitale Signaturen und gesicherter Übermittlung von Steuerdaten verwendet werden.
-- Konfigurieren Sie den Dokumentanbieter, der eine Ausgabemethode und ein Algorithmus für steuerliche Dokumentgenerierung definiert.
-- Konfigurieren vom steuerlichen Registrierungsprozess, der eine Folge von Schritten und eine Gruppe von Verbindungen definiert, die in jedem Schritt verwendet werden.
-- Weisen Sie steuerliche Anmeldeprozesse zu POS-Funktionsprofilen hinzu.
-- Weisen Sie Verbindungen technischen Profilen zu, entweder den Hardwareprofilen (für die lokalen steuerlichen Verbindungen) oder den POS-Funktionsprofilen (für andere steuerliche Konnektortypen).
+Die Steuerintegrationsfunktionen in Retail sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Steuerintegrationsbeispiele, die grundlegende Einzelhandelsszenarien für bestimmte Länder/Regionen unterstützen und mit bestimmten steuerbezogenen Geräten oder Diensten verwendet werden können. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Retail-Komponenten und ist im Retail Software Development Kit (SDK) enthalten. Weitere Informationen zu Steuerintegrationsbeispielen, die im Retail SDK verfügbar sind, finden Sie unter [Steuerintegrationsbeispiele im Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informationen zur Installation und Verwendung des Retail SDK finden Sie unter [Retail SDK-Übersicht](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-## <a name="fiscal-integration-execution-flow"></a>Steuerlicher Integrationsausführungsfluss
-Im folgenden Szenario wird der allgemeine steuerliche Integrationsausführungsfluss angezeigt.
+Um andere Szenarien zu unterstützen, die nicht von einem Steuerintegrationsbeispiel unterstützt werden, um Retail POS in andere steuerbezogene Geräte oder Dienste zu integrieren, oder um Anforderungen anderer Länder/Regionen zu erfüllen, müssen Sie entweder ein vorhandenes Steuerintegrationsbeispiel erweitern oder ein neues Beispiel mithilfe eines vorhandenen Beispiels erstellen.
 
-1. Initialisierung des Steuerregistrierungsprozesses.
-  
-   Nach dem einige Aktivitäten ausgeführt wurden, bei denen die Steuererfassung erforderlich ist, wie nach einer Einzelhandelstransaktion, wird der Steuerreferenz Registrierungsprozess dem Funktionsprofil des laufenden POS zugeordnet.
+## <a name="fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices"></a>Steuerregistrierungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte
 
-1. Dient zum Suchen eines steuerlichen Konnektors.
-   
-   Für jeden steuerlichen Erfassungsschritt, der im steuerlichen Registrierungsprozess einbezogen wird, wird vom System die Liste von steuerlichen Verbindungen abgeglichen. Diese Verbindungen haben ein funktionales Profil, das in der angegebenen Konnektorgruppe enthalten ist, mit einer Liste von Verbindungen, die ein technisches Profil mit dem aktuellen Hardwareprofil enthalten (für einen Verbindungstyp, der nur **Lokal** ist) oder mit dem aktuellen POS_Funktionalitätsprofil (für andere Verbindungstypen).
-   
-1. Führen Sie die steuerliche Integration aus.
+Ein Steuerregistrierungsprozess in Retail POS kann aus einem oder mehreren Schritten bestehen. Jeder Schritt integriert die Steuerregistrierung bestimmter Einzelhandelstransaktionen oder -ereignisse in ein steuerbezogenes Gerät oder einen steuerbezogenen Dienst. Die folgenden Lösungskomponenten nehmen an der Steuerregistrierung in einem steuerbezogenen Gerät teil, das mit einer Hardwarestation verbunden ist:
 
-   Das System führt alle erforderlichen Aktivitäten aus, die für eine Assembly definiert werden, die mit dem gefundenen Konnektor verknüpft ist. Dieses wird entsprechend den Einstellungen des funktionalen und des technischen Profils gemacht, das im vorhergehenden Schritt für diesen Konnektor gefunden wurde.
+- **Commerce Runtime (CRT)-Erweiterung** – Diese Komponente serialisiert Einzelhandelstransaktions-/-ereignisdaten in einem Format, das auch für die Interaktion mit dem steuerbezogenen Gerät verwendet wird, analysiert Antworten vom steuerbezogenen Gerät und speichert die Antworten in der Kanaldatenbank. Die Erweiterung definiert auch die spezifischen Transaktionen und Ereignisse, die erfasst werden müssen. Diese Komponente wird häufig als *Steuerdokumentanbieter* bezeichnet.
+- **Hardwarestationserweiterung** – Diese Komponente Initialisiert die Kommunikation mit dem steuerbezogenen Gerät, sendet Anforderungen und leitet Befehle an das steuerbezogene Gerät auf Basis der Einzelhandelstransaktions-/-ereignisdaten, die aus dem Steuerdokument extrahiert werden, und empfängt Antworten vom steuerbezogenen Gerät. Diese Komponente wird häufig als *Steuerkonnektor* bezeichnet.
 
-## <a name="setup-needed-before-using-fiscal-integration"></a>Einstellung vor der Verwendung für steuerliche Integration erforderlich
-Vor der Verwendung für steuerliche Integrationsfunktionen müssen Sie die folgenden Einstellungen  definieren:
+Ein Steuerintegrationsbeispiel für ein steuerbezogenes Gerät enthält jeweils die CRT- und Hardwarestationserweiterungen für einen Steuerdokumentanbieter und Steuerkonnektor. Es enthält auch die folgenden Komponentenkonfigurationen:
 
-- Definieren Sie die Reihenfolge auf der Seite **Einzelhandelsparameter** für die steuerliche funktionale Profilnummer.
-  
-- Dient zum Definieren der Nummernkreise **Freigegebene Einzelhandelsparameter**Seite für die  folgenden Referenzen:
-  
-  - Nummer des technischen Steuerprofils
-  - Nummer der Steuerconnectorgruppe
-  - Registrierungsprozessnummer
+- **Steuerdokumentanbieter-Konfiguration** – Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Es enthält auch eine Datenzuordnung für Steuern und Zahlungsmethoden, um Daten aus Retail POS mit den Werten, die in der Firmware des steuerbezogenen Geräts vordefiniert werden, kompatibel zu machen.
+- **Steuerkonnektorkonfiguration** – Diese Konfiguration definiert die physische Kommunikation mit dem betreffenden steuerbezogenen Gerät.
 
-- Erstellen Sie **Steuerlicher Konnektor** in **Retail > Kanal einrichten > Steuerliche Integration > Steuerliche Verbindungen** oder Dienstleistungen, die Sie für steuerliche Integrationszwecke verwenden möchten.
+Ein Steuerregistrierungsprozess für ein bestimmtes POS-Register wird von einer entsprechenden Einstellung im POS-Funktionsprofil definiert. Weitere Informationen zum Konfigurieren eines Steuerregistrierungsprozesses, Hochladen von Steuerdokumentanbieter- und Steuerkonnektorkonfigurationen und Ändern ihrer Parameter finden Sie unter [Einrichten eines Steuerregistrierungsprozesses](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
--  Erstellen Sie einen **Steuerlichen Dokumentanbieter** in **Retail > Kanal richten > steuerliche Integration > steuerliche Dokumentanbieter** für alle steuerlichen Verbindungen. Datenenzuordnung gilt als einen Teil des steuerlichen Dokumentanbieters. Wenn Sie andere Datenenzuordnungen für den gleichen Konnektor einrichten (beispielsweise besondere Bestimmungen für ein Bundesland), sollten Sie verschiedene steuerliche Dokumentanbieter erstellen.
+Das folgende Beispiel zeigt einen typischen Steuerregistrierungs-Ausführungsfluss für ein steuerbezogenes Gerät. Der Fluss startet mit einem Ereignis im POS (beispielsweise dem Abschluss einer Verkaufsbuchung) und implementiert die folgende Schrittfolge:
 
-- Erstellen Sie **Funktionales Profil des Konnektors** in **Retail > Kanal richten > steuerliche Integration > funktionale Profile des Konnektors** für jeden steuerlichen Dokumentanbieter
-  - Wählen Sie einen Verbindungsnamen.
-  - Wählen Sie einen Dokumentenanbieter.
-  - Definieren Sie die Mehrwertsteuersatzeinstellungen auf der Registerkarte **Dienstleistung einstellen**.
-  - Geben Sie den MwSt-Zuordnungcode und die Zahlungsmitteltypzuordnung auf der Registerkarte **Datenenzuordnung** ein.
+1. Der POS fordert ein Steuerdokument von CRT an.
+2. CRT bestimmt, ob das aktuelle Ereignis eine Steuerregistrierung erfordert.
+3. Auf Grundlage der Steuerregistrierungsprozess-Einstellungen identifiziert CRT einen Steuerkonnektor und entsprechenden Steuerdokumentanbieter, der für die Steuerregistrierung verwendet werden soll.
+4. CRT führt den Steuerdokumentanbieter aus, der ein Steuerdokument generiert (beispielsweise ein XML-Dokument), das die Einzelhandelstransaktion oder das Einzelhandelsereignis darstellt.
+5. Der POS sendet das Steuerdokument, das CRT vorbereitet, an eine Hardwarestation.
+6. Die Hardwarestation führt den Steuerkonnektor aus, der das Steuerdokument verarbeitet und es an das steuerbezogene Gerät oder den steuerbezogenen Dienst kommuniziert.
+7. Der POS analysiert die Antwort vom steuerbezogenen Gerät oder Dienst, um zu bestimmen, ob die Steuerregistrierung erfolgreich war.
+8. CRT speichert die Antwort in der Kanaldatenbank.
 
-  #### <a name="examples"></a>Beispiele 
+![Lösungsschema](media/emea-fiscal-integration-solution.png "Lösungsschema")
 
-  |  | Format | Beispiel | 
-  |--------|--------|--------|
-  | MwSt-Satzeinstellungen | Wert: MwSt-Satz | 1 : 2000, 2 : 1800 |
-  | Zuordnung von MwSt.-Codes | MwSt-Code: Wert | vat20: 1, vat18: 2 |
-  | Zahlungsmitteltyp-Zuordnung | TenderTyp: Wert | Bargeld: 1, Karte : 2 |
+## <a name="error-handling"></a>Fehlerbehandlung
 
-- Erstellen Sie **Steuerliche Konnektorgruppen** in **Retail > Kanal einrichten > steuerliche Integration > steuerliche Konnektorgruppe**. Eine Konnektorgruppe ist eine Teilmenge funktionaler Profile, die mit steuerlichen Verbindungen verknüpft werden, um identische Funktionen auszuführen und in dem gleichen Zeitpunkt innerhalb eines steuerlichen Anmeldeprozesses verwendet zu werden.
+Das Steuerintegrationsframework bietet folgende Optionen, um Fehler bei der Steuerregistrierung zu behandeln:
 
-   - Hier können Sie funktionale Profile der Konnektorgruppe hinzufügen Klicken Sie der Seite **Hinzufügen** auf **Funktionale Profile** und wählen Sie eine Profilnummer aus.
-   - Wenn Sie die Nutzung des funktionalen Profils unterbrechen möchten, wählen Sie **Deaktivieren** und wählen **Ja** aus.. 
-   
-     Diese Änderung betrifft nur die aktuellen Konnektorgruppe. Sie können das selbe funktionale Profil in anderen Konnektorgruppen weiter nutzen.
+- **Wiederholen** – Operatoren können diese Option verwenden, wenn der Fehler schnell behoben werden kann, und die Steuerregistrierung erneut ausgeführt werden kann. Beispielsweise kann diese Option verwendet werden, falls das steuerbezogene Gerät nicht verbunden ist, im Belegdrucker kein Papier mehr vorhanden ist oder Papierstau im Belegdrucker herrscht.
+- **Abbrechen** – Mit dieser Option können Operatoren die Steuerregistrierung der aktuellen Transaktion oder des aktuellen Ereignisses verschieben, auch bei einem Fehler. Nachdem die Registrierung verschoben ist, kann der Operator am POS weiterarbeiten und jeden beliebigen Arbeitsgang abschließen, für den die Steuerregistrierung nicht erforderlich ist. Wenn ein Ereignis, das die Steuerregistrierung erfordert, am POS auftritt (beispielsweise wird eine neue Transaktion geöffnet), wird das Fehlerbehandlungsdialogfeld automatisch angezeigt, um den Operator zu benachrichtigen, dass die vorherige Transaktion nicht ordnungsgemäß erfasst wurde und um die Fehlerbehandlungsoptionen bereitzustellen.
+- **Überspringen** – Operatoren können diese Option verwenden, wenn die Steuerregistrierung unter bestimmten Bedingungen ausgelassen werden kann und regelmäßige Vorgänge am POS fortgesetzt werden können. Beispielsweise kann diese Option verwendet werden, wenn eine Verkaufsbuchung, bei der ein Fehler bei der Steuerregistrierung aufgetreten ist, in einer Papiererfassung erfasst werden kann.
+- **Als registriert markieren** – Operatoren können diese Option verwenden, wenn die Transaktion tatsächlich auf dem steuerbezogenen Gerät registriert wurde (z. B. wurde ein Steuerbeleg ausgedruckt), jedoch ein Fehler aufgetreten ist, als die Steuerantwort in der Kanaldatenbank gespeichert wurde.
 
-     >[!NOTE]
-     > Innerhalb einer Konnektorgruppe kann jeder steuerliche Konnektor nur ein funktionales Profil haben.
+> [!NOTE]
+> Die Optionen **Überspringen** und **Als registriert markieren** müssen im Steuerregistrierungsprozess aktiviert werden, bevor sie verwendet werden. Darüber hinaus müssen Operatoren entsprechende Berechtigungen gewährt werden.
 
-- Erstellen Sie ein **Technisches Profil des Konnektors** in **Retail > Kanal richten > steuerliche Integration > technische Profile des Konnektors** für jeden steuerlichen Konnektor.
-  - Wählen Sie einen Verbindungsnamen.
-  - Wählen Sie einen Konnektortyp aus: 
-      - **Lokal** - Legt diesen Typ für physische Geräte oder Bewerbungen fest, die auf einem lokalen Rechners eingerichtet wurden.
-      - **Intern** - Legte diesen Typ für steuerliche Geräte und Dienstleistungen fest, die mit Retail Server verbunden sind.
-      - **Extern** - Für externe steuerliche Dienste wie ein Webportal, das von der Steuerbehörde bereitgestellt wird.
-    
-  - Definieren Sie Einstellungen auf der Registerkarte **Verbindung**.
+Mit den Optionen **Überspringen** und **Als registriert markieren** können Infocodes bestimmte Informationen zum Fehler erfassen, z. B. den Grund für den Fehler oder eine Begründung für das Überspringen der Steuerregistrierung oder das Markieren der Transaktion als registriert. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
-      
- >[!NOTE]
- > Eine aktualisierte Version einer Konfiguration, die früher geladen wurde, wird für die funktionalen und technische Profile geladen. Wenn ein entsprechender Konnektor- oder ein Dokumentanbieter bereits verwendet wird, werden Sie benachrichtigt. Standardmäßig werden alle Änderungen, die manuell in den funktionalen und technische Profilen vorgenommen wurden, gespeichert. Um diese Profile dem Standardsatz von Parametern von einer Variante zu überschreiben, klicken Sie auf **Aktualisieren** **Funktionale Profile des Konnektors** **Technische Profile des Konnektors**.
- 
-- Erstellen Sie **Steuerlich Erfassungsprozesses** in **Retail > Kanal einrichten > Steuerliche Integration > Steuerliche Anmeldeprozesse** für jeden eindeutigen Prozess für die steuerliche Integration. Ein Registrierungsprozess wird durch den Nummernkreis der Erfassungsschritte und der Konnektorgruppe definiert, die in jedem Schritt verwendet werden. 
-  
-  - Fügen Sie Erfassungsschritte dem Prozess hinzu:
-      - Klicken Sie auf **Hinzufügen**.
-      - Wählen Sie einen Konnektortyp aus.
-      
-      >[!NOTE]
-      > Dieses Feld legt fest, an wo das System in einem technischen Profil für den Konnektor sucht, entweder in den Hardwareprofilen für Konnektortyp **Lokal** oder in POS-Funktionsprofilen für andere Steuerkonnektor-Typen.
-      
-   - Wählen Sie eine Konnektorgruppe aus.
-   
-     >[!NOTE]
-     > Klicken Sie **Überprüfen**, um die Integrität der Anmeldeprozessstruktur zu überprüfen. Es ist empfohlen, dass Überprüfungen in folgenden Fällen vorgenommen werden:
-       >- Für einen Neuzulassungsprozess, nachdem die Einstellungen einschließlich Bindung zu POS-Funktionsprofilen und -Hardwareprofilen abgeschlossen sind.
-       >- Nach den Aktualisierungen zu einem vorhandenen Registrierungsprozess.
+## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Speichern der Steuerantwort in der Steuertransaktion
 
--  Binden Sie Sie steuerlichen Anmeldeprozesse zu POS-Funktionsprofilen in **Retail > Kanal einrichten > POS einrichten > POS-Profile > -Funktionsprofile**.
-   - Klicken Sie **Bearbeiten** und wählen Sie **Nummer verarbeiten** auf der Registerkarte **Steuererfassungsprozess** aus.
-- Binden Sie Sie die technischen Profile des Konnektors an die Hardwareprofile in **Retail > Kanal einrichten > POS einrichten> POS-Profile > -Hardwareprofile**.
-   - Klicken Sie auf **Bearbeiten**, und klicken Sie auf **Neu** auf der Registerkarte **Steuerliches Technik-Profil**.
-   - Wählen Sie einen Konnektor für das technische Profil im Feld **Profilnummer** aus.
-   
-     >[!NOTE]
-     > Sie können mehrere technische Profile einem Hardwareprofil hinzufügen. Allerdings wird dieses nicht unterstützt, wenn einHardwareprofils mehr als eine Schnittmenge mit einer beliebigen Konnektorgruppe hat. Um falsche Einstellungen zu vermeiden, wird empfohlen dass Sie den Registrierungsprozess überprüfen nachdem Sie alle Hardwareprofile aktualisiert haben.
+Wenn die Steuerregistrierung einer Transaktion oder eines Ereignisses erfolgreich war, wird eine Steuertransaktion in der Kanaldatenbank erstellt und mit der ursprünglichen Transaktion oder dem ursprünglichen Ereignis verknüpft. Wenn die Option **Überspringen** oder **Als registriert markieren** für eine fehlgeschlagene Steuerregistrierung ausgewählt ist, werden diese Informationen in einer Steuertransaktion entsprechend gespeichert. Eine Steuertransaktion enthält die Steuerantwort vom steuerbezogenen Gerät oder Dienst. Wenn der Steuerregistrierungsprozess aus mehreren Schritten besteht, wird eine Steuertransaktion für die einzelnen Schritte des Prozesses erstellt, der zu einer erfolgreichen oder fehlgeschlagenen Registrierung geführt hat.
 
+Steuertransaktionen werden vom *P-Einzelvorgang* in die Retail Zentralverwaltung übertragen, zusammen mit den Einzelhandelstransaktionen. Im Inforegister **Steuertransaktionen** auf der Seite **Einzelhandelsgeschäftsbuchungen** können Sie die Steuertransaktionen anzeigen, die mit den Einzelhandelstransaktionen verknüpft sind.
+
+Eine Steuertransaktion speichert die folgenden Details:
+
+- Steuerregistrierungsprozess-Details (Prozess, Konnektorgruppe, Konnektor usw.). Sie speichert außerdem die Seriennummer des steuerbezogenen Geräts im Feld **Registernummer**, wenn diese Informationen in der Steuerantwort enthalten sind.
+- Der Status der Steuerregistrierung: **Abgeschlossen** für die erfolgreiche Registrierung, **Übersprungen**, wenn der Operator die Option **Überspringen** für eine fehlerhafte Registrierung ausgewählt hat, oder **Als registriert markiert**, wenn der Operator die Option **Als registriert markieren** ausgewählt hat.
+- Infocodetransaktionen im Zusammenhang mit einer ausgewählten Steuertransaktion. Um die Infocodetransaktionen anzuzeigen, wählen Sie im Inforegister **Steuertransaktionen** eine Steuertransaktionen aus, die den Status **Übersprungen** oder **Als registriert markiert** aufweist, und wählen Sie dann **Infocodetransaktionen** aus.
+
+## <a name="fiscal-texts-for-discounts"></a>Steuertexte für Rabatte
+
+Einige Länder/Regionen haben spezielle Anforderungen zu zusätzlichen Texten, die auf Steuerbelege gedruckt werden müssen, wenn verschiedene Arten von Rabatten angewendet werden. Mit den Steuerintegrationsfunktionen können Sie einen bestimmten Text für einen Rabatt einrichten, der nach einer Rabattposition auf einen Steuerbeleg gedruckt wird. Bei manuellen Rabatten können Sie einen Steuertext für den Infocode konfigurieren, der als **Produktrabatt**-Infocode im POS-Funktionsprofil angegeben ist. Weitere Informationen zum Einrichten von Steuertexten für Rabatte finden Sie unter [Einrichten von Steuertexten für Rabatte](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
+
+## <a name="printing-fiscal-x-and-fiscal-z-reports"></a>Drucken von Steuer X- und Steuer Z-Berichten
+
+Die Steuerintegrationsfunktionen unterstützen die Generierung von Tagesendeauszügen, die für das integrierte steuerbezogene Gerät oder den integrierten steuerbezogenen Dienst spezifisch sind:
+
+- Neue Schaltflächen, die die entsprechenden Vorgänge ausführen, sollten zum POS-Bildschirmlayout hinzugefügt werden. Weitere Informationen finden Sie unter [Einrichten von Steuer X/Z-Berichten vom POS](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
+- Im Steuerintegrationsbeispiel sollten diese Vorgänge mit den gewünschten Vorgängen des steuerbezogenen Geräts abgeglichen werden.
+
+## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Steuerintegrationsbeispiele im Retail SDK
+
+Die folgenden Steuerintegrationsbeispiele sind derzeit im Retail SDK verfügbar, das mit Retail veröffentlicht wird:
+
+- [Beispiel für Belegdruckerintegration für Italien](emea-ita-fpi-sample.md)
+- [Beispiel für Belegdruckerintegration für Polen](emea-pol-fpi-sample.md)
+
+Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügbar, nutzen derzeit jedoch nicht das Steuerintegrationsframework. Die Migration dieser Funktionen in das Steuerintegrationsframework ist für spätere Aktualisierungen geplant.
+
+- [Digitale Signatur für Frankreich](emea-fra-cash-registers.md)
+- [Digitale Signatur für Norwegen](emea-nor-cash-registers.md)
+- [Beispiel zur Integration der Kontrolleinheit für Schweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)

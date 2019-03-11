@@ -1,13 +1,13 @@
 ---
-title: "MwSt.-Rückerstattung in der Ausgabenverwaltung"
-description: "In diesem Thema wird erläutert, wie Sie Rückerstattungen auf gemeinsamen Mehrwertsteuer (VAT)- Buchungen erhalten."
+title: MwSt.-Rückerstattung in der Ausgabenverwaltung
+description: In diesem Thema wird erläutert, wie Sie Rückerstattungen auf gemeinsamen Mehrwertsteuer (VAT)- Buchungen erhalten.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvPerDiems
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bc9e533de40aa8fe8ddfe422cfe0f4078a360c7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: d1c9357f8f51e1a87aebeb8f802dbe3b5fdd5aa0
-ms.contentlocale: de-de
-ms.lasthandoff: 03/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359565"
 ---
-
 # <a name="vat-recovery-in-expense-management"></a>MwSt.-Rückerstattung in der Ausgabenverwaltung
 
 [!include [banner](../includes/banner.md)]
@@ -68,11 +67,10 @@ Wenn Arnie die Papierbelege von Nancy erhält, gleicht er die Papierbelege mit d
 
 ## <a name="send-vat-recovery-data-to-the-third-party-vendor-to-file-international-recovery-returns"></a>Daten über die Mehrwertsteuerbeitreibung werden an den Drittanbieter gesendet, um die Rückgabebeträge zu erfassen, die aus der Beitreibung der Steuern von internationalen Unternehmen resultieren.
 
-Wenn Arnie bereit ist, die Daten aus der Spesenabrechnung an den Drittanbieter zu senden, der die Rückerstattungen der **Mehrwertsteuerbeitreibungen** angemeldet, öffnet er das Formular . Arnie filtert das Formular, damit nur die Spesenabrechnungen angezeigt werden, die als **Bereit für Beitreibung** markiert sind. Anschließend klickt Arnie auf **Datei** > &gt; **Nach Excel exportieren**. Die Mehrwertsteuerinformationen aus den Spesenabrechnungen werden in ein Microsoft Office Excel-Arbeitsblatt exportiert. Arnie übermittelt das Arbeitsblatt an den Drittanbieter und informiert diesen, dass die Papierbelege per Kurierdienst gesendet wurden.
+Wenn Arnie bereit ist, die Daten aus der Spesenabrechnung an den Drittanbieter zu senden, der die Rückerstattungen der **Mehrwertsteuerbeitreibungen** angemeldet, öffnet er das Formular . Arnie filtert das Formular, damit nur die Spesenabrechnungen angezeigt werden, die als **Bereit für Beitreibung** markiert sind. Anschließend klickt Arnie auf **Datei** > &gt; **Nach Excel exportieren**. Die Mehrwertsteuerinformationen aus den Spesenabrechnungen werden in ein Microsoft Excel-Arbeitsblatt exportiert. Arnie übermittelt das Arbeitsblatt an den Drittanbieter und informiert diesen, dass die Papierbelege per Kurierdienst gesendet wurden.
 
 ## <a name="process-expenses-for-domestic-vat-recovery"></a>Verarbeiten von Ausgaben für die Beitreibung von inländischer Mehrwertsteuer
 
 Arnie muss überprüfen, ob die Spesenabrechnungsbuchungen auf die Mehrwertsteuerbeitreibung angerechnet werden können, und ob die digitalen Belege an die Abrechnungen angefügt werden. Um die Verarbeitung von anrechenbaren Ausgaben für die Beitreibung inländischer Steuern zu beginnen, öffnet Arnie das Formular **Ausgaben-Steuerbeitreibung** und wählt die zu überprüfende Spesenabrechnung aus. Sie überprüft, ob die Belege im Namen des Unternehmens und nicht des Mitarbeiters ausgestellt wurden. Die MwSt-Rückerstattung muss im Name des Unternehmens sein. Arnie überprüft anschließend, ob die richtige Mehrwertsteuergruppe und die richtigen Artikel-Mehrwertsteuercodes angewendet wurden.
 
 Wenn Arnie die Papierbelege erhält, ändert er den Status der Spesenabrechnung in **Bereit für Beitreibung** Er kann dann die Rückerstattung bei der entsprechenden Steuerbehörde einreichen. In diesem Fall handelt es sich in den USA um den Internal Revenue Service (IRS).
-

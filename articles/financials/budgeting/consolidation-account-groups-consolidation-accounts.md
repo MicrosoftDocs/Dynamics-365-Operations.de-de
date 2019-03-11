@@ -1,13 +1,13 @@
 ---
-title: "Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten"
-description: "Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzlichen Konsolidierungskonten und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden."
+title: Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten
+description: Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden.
 author: aprilolson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: f1c463ee54512b07f5e45c4df995aefed6110cb0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 60486002b520fdf347ed2537cefa0a45e06d6271
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366396"
 ---
-
 # <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Erstellen von Konsolidierungskontengruppen und zusätzlicher Konsolidierungskonten
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzlichen Konsolidierungskonten und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden.
+Dieses Thema enthält Informationen zu Konsolidierungskontogruppen und zusätzliche Konsolidierungskontos und erläutert, wie sie in Microsoft Dynamics 365 for Finance and Operations verwendet werden.
 
-<a name="consolidation-account-groups"></a>Konsolidierungskontogruppen
+<a name="consolidation-account-groups"></a>Konsolidierungskontengruppen
 ----------------------------
 
 Mit Konsolidierungskontogruppen können Sie Gruppen von Konten erstellen, die Sie verwenden möchten, um Daten konsolidieren zu können. Meistens stellt eine Konsolidierungskontogruppe einen von Behörden vorgegebenen Kontenplan dar oder führt Konten in einer Gruppe zusammen, die vom Hauptsitz des Unternehmens definiert wird. Sie finden die Konsolidierungskontogruppen im Bereich **Einstellungen** im Modul **Konsolidierungen**. Wenn Sie eine neue Gruppe hinzufügen, geben Sie eine eindeutige Kennung für die Kontengruppe und einen Namen ein.
@@ -52,7 +51,6 @@ Wenn Sie mit dem Erstellen der Konsolidierungskontogruppen und der zusätzlichen
 
 
 Weitere Informationen finden Sie unter [Konsolidierungsgruppen und zusätzliche Konsolidierungskonten erstellen](../general-ledger/tasks/create-consolidation-groups.md) 
-
 
 
 

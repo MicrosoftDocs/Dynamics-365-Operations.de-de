@@ -1,13 +1,13 @@
 ---
 title: Kreditbrief und Importinkasso
-description: "Dieser Artikel enthält allgemeine Informationen über Kreditbrief und Importinkasso. Beide Arten von Bankdokumenten werden häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden."
+description: Dieser Artikel enthält allgemeine Informationen über Kreditbrief und Importinkasso. Beide Arten von Bankdokumenten werden häufig für den Einkauf und Verkauf im internationalen Warenverkehr verwendet werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2b5deef65cc4af2fdfee6549660527007c3bed3a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ebabff4d467df54b2e79485ba3a16344435140e6
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323041"
 ---
-
 # <a name="letters-of-credit-and-import-collections"></a>Kreditbrief und Importinkasso
 
 [!include [banner](../includes/banner.md)]
@@ -52,7 +51,6 @@ Ein Kreditbrief kann entweder **widerrufbar** oder **unwiderruflich** sein. Die 
 Ein Importinkasso stellt eine Vereinbarung zwischen der Bank und dem Exporteur (Verkäufer) dar, in der die Bank zustimmt, die Versandunterlagen an den internationalen Importeur (Einkäufer) zu liefern. Die Bank muss die Versandunterlagen bei Erhalt der Zahlung für die gelieferten Waren in bar oder als unterschriebenen Wechsel aushändigen. 
 
 Einem Importinkasso hilft, die Zahlung für den Verkäufer sicherzustellen, wenn der Einkäufer die Versandunterlagen und somit die importierten Waren entgegennimmt.
-
 
 
 

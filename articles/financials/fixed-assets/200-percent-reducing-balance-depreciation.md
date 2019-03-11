@@ -1,13 +1,13 @@
 ---
 title: Degressiven Abschreibung von 200 Prozent
-description: "Dieser Artikel gibt eine Übersicht die 200 Prozent Reduktionssaldomethode der Abschreibung."
+description: Dieser Artikel gibt eine Übersicht die 200 Prozent Reduktionssaldomethode der Abschreibung.
 author: saraschi2
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ec51f9e12e31e81c56fab9e82d0fc18d45beb5e6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 24f677cd3b416c6301a664629cb73e3cbae9f457
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322719"
 ---
-
 # <a name="200-percent-reducing-balance-depreciation"></a>Degressiven Abschreibung von 200 Prozent
 
 [!include [banner](../includes/banner.md)]
@@ -78,17 +77,16 @@ Wenn **Steuerlich** als Abschreibungsjahr ausgewählt wird, stehen im Feld **Per
 | Nutzungsdauer (Jahre)             | 5      |
 | Jährlicher Abschreibungsprozentsatz | 40 %    |
 
-Bei der Abschreibungsmethode "200 % degressiv" werden 200 Prozent durch die Anzahl der Jahre der Nutzungsdauer dividiert. Der sich ergebende Prozentsatz wird mit dem Nettobuchwert der Anlage multipliziert, um den Abschreibungsbetrag für das Jahr zu ermitteln.
+Bei der Abschreibungsmethode "200 % degressiv" werden 200 Prozent durch die Anzahl der Jahre der Nutzungsdauer dividiert. Der sich ergebende Prozentsatz wird mit dem Nettobuchwert der Anlage multipliziert, um den Abschreibungsbetrag für das Jahr zu ermitteln.
 
 | Zeitraum | Berechnung des jährlichen Abschreibungsbetrags | Buchwert             | Nettobuchwert am Ende des Jahres |
 |--------|-----------------------------------------------|------------------------|---------------------------------------|
-| Jahr 1 | (11.000 – 1.000) × 40% = 4.000                | 11.000 – 4.000 = 7.000 | 11.000 – 1.000 – 4.000 = 6.000        |
+| Jahr 1 | (11.000 – 1.000) × 40% = 4.000                | 11.000 – 4.000 = 7.000 | 11.000 – 1.000 – 4.000 = 6.000        |
 | Jahr 2 | 6.000 × 40% = 2.400                           | 7.000 – 2.400 = 4.600  | 6.000 – 2.400 = 3.600                 |
 | Jahr 3 | 3.600 × 40% = 1.440                           | 4.600 – 1.440 = 3.160  | 3.600 – 1.440 = 2.160                 |
 
 > [!NOTE] 
-> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "200% degressiv" berechnet wird, geringer ausfällt, als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
-
+> Hinweis: Wenn der Betrag, der mithilfe der Abschreibungsmethode "200 % degressiv" berechnet wird, geringer ausfällt als der Betrag, der mithilfe der Methode "Linear" berechnet würde, gibt es eine Umrechnung zur linearen Methode für die verbleibende Nutzungsdauer.
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Startseite für die Lagerverwaltung"
-description: "In diesem Thema wird eine Übersicht über die Bestandsverwaltung angezeigt."
+title: Startseite für die Lagerverwaltung
+description: In diesem Thema wird eine Übersicht über die Bestandsverwaltung angezeigt.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventParameters
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5376c6c18c2d7d48d3ee253e8818e0c868a52145
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 01b51b3442ca2a924cec2e894c3840c90989791c
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364924"
 ---
-
 # <a name="inventory-management"></a>Lagerverwaltung 
 
 [!include [banner](../includes/banner.md)]
@@ -49,16 +48,15 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
+Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neuen Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="inventory-accounting"></a>Bestandsbuchhaltung 
 Weiteres finden Sie unter [Bestandsbuchhaltung im Kostenmanagement](../cost-management/inventory-close.md) Sie unter.
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Herstellungs- und Lieferkettenverwaltung - Blogs
-Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Bestandsverwaltung unter [Dynamics AX – Team für Produktionsforschung und Entwicklung – Blog](https://blogs.msdn.microsoft.com/axmfg) [Lieferkettenverwaltung im Dynamics AX Forschungs- und Entwicklungsteam-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm)
+Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Bestandsverwaltung und zu anderen Lösungen unter [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management im Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Aufgabenleitfäden
 Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operations. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche **Hilfe**.
-
 
 

@@ -1,13 +1,13 @@
 ---
 title: Zahlungsmethoden in Callcentern
-description: "Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Microsoft Dynamics 365 for Retail verwendet werden können."
+description: Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Microsoft Dynamics 365 for Retail verwendet werden können.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 0b86388efab113af605d62c6ad76c8169d9c4643
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355379"
 ---
-
 # <a name="payment-methods-in-call-centers"></a>Zahlungsmethoden in Callcentern
 
 [!include [banner](includes/banner.md)]
@@ -54,4 +53,3 @@ Während Zahlungsmethoden definiert werden, sollten sie mit einem Sachkonto oder
 Für die Preiserstattung-Szenarien, die verarbeitet werden, verwendet das Callcenter auch einige der Zahlungsmethoden, die im Modul "Debitoren" definiert werden. Um diese Zahlungsmethoden zu konfigurieren, gehen Sie zu **Retail** \> **Kanaleinstellung** \> **Callcentereinstellung** \> **Callcenterrückerstattungsmethoden**. Sie müssen diese Konfiguration ausführen, um Rückerstattungsschecks an Kunden zu verarbeiten. Wenn beispielsweise ein Kunde, der ursprünglich für einen Auftrag bezahlt wird, indem er Bargeld oder einen Scheck nutzt, der Benutzer ihm einen Rückerstattungsscheck über das Kreditorenkonto senden soll. In diesem Fall müssen das Bargeld und die Schecks im Callcenter der korrekte Zahlungsmethode des Debitors zugeordnet werden, um sicherzustellen, dass die Preiserstattung ordnungsgemäß verarbeitet wird.
 
 Darüber hinaus wenn ein Benutzer einer Rücklieferung als Callcenterbenutzer in Retail verarbeitet, aber für die Rücklieferung für einen ursprüngliches Verkauf keine Verknüpfung erfolgen kann, muss die **Rückzahlungs**-Methode in den Callcenterparametern definiert werden. Gehen Sie zu **Retail** \> **Kanaleinstellung** \> **Callcentereinstellung** \> **Callcenterparameter**, und klicken Sie dann auf der Registerkarte **RMA/Return**, im Feld **Zahlungsmethode**, und überprüfen, ob eine Zahlungsmethode definiert wird. Die Zahlungsmethode ist die Zahlungsmethode, die für Rückerstattungen verwendet wird. Normalerweise wird sie entweder als Scheck- oder Debitorenkontomethode definiert.
-

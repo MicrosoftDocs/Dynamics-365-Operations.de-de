@@ -1,13 +1,13 @@
---- 
-title: "Visuelle Profile für Verkaufsstellen (POS) erstellen"
-description: "Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen visuellen Verkaufsstellen (POS)-Profils."
+---
+title: Visuelle Profile für Verkaufsstellen (POS) erstellen
+description: Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen visuellen Verkaufsstellen (POS)-Profils.
 author: jashanno
 manager: AnnBe
 ms.date: 12/05/2015
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations, Retail
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
 ms.openlocfilehash: 0234512e037d8818ce2282959cfd0763b41b9429
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358139"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>Visuelle Profile für Verkaufsstellen (POS) erstellen
 
@@ -47,5 +47,4 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen v
 16. Fordern Sie ein Popup für die Bildkennung an.
 17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 18. Klicken Sie auf "Speichern".
-
 

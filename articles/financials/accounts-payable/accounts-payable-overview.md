@@ -1,13 +1,13 @@
 ---
 title: Kreditoren konfigurieren
-description: "In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditorenkonten in Microsoft Dynamics 365 for Finance and Operations einzurichten. Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten."
+description: In diesem Artikel werden die Seiten beschrieben, die Sie verwenden, um die grundlegenden und optionalen Funktionen für Kreditorenkonten in Microsoft Dynamics 365 for Finance and Operations einzurichten. Er beschreibt zudem die Einrichtungsschritte, die Sie durchführen müssen, bevor Sie damit beginnen, die Kreditoren einzurichten.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6a832a30870f77578503bae6eea17ad1d0881d91
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 60313da23fdbd5a06b71c7c91a236165f8f189de
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326698"
 ---
-
 # <a name="configure-accounts-payable"></a>Kreditoren konfigurieren
 
 [!include [banner](../includes/banner.md)]
@@ -144,7 +143,6 @@ Die Seiten für zusätzliche Einstellungen sind nach Funktionen geordnet.
 **Bargeld- und Bankverwaltung**
 
 -   Richten Sie auf der Seite "Zahlungszweckcodes" den Code für die Zentralbank ein.
-
 
 
 

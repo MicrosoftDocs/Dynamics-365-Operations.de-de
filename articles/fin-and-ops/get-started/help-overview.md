@@ -1,13 +1,13 @@
 ---
 title: Finance and Operations-Hilfesystem
-description: "Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems."
+description: Dieses Thema enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems.
 author: margoc
 manager: AnnBe
 ms.date: 11/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,28 +18,27 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350733"
 ---
-
 # <a name="finance-and-operations-help-system"></a>Finance and Operations-Hilfesystem
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems.
+Dieses Thema enthält einen Überblick über die Komponenten des Microsoft Dynamics 365 for Finance and Operations-Hilfesystems.
 
 > [!NOTE]
-> Die folgenden Produkte sind sehr ähnlich: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Folglich wird in den Themen, die in erster Linie Retail gewidmet sind, der Produktname Dynamics 365 for Retail verwendet. In Themen, die in erster Linie Talent gewidmet sind, wird der Produktname Dynamics 365 for Talent verwendet und in Themen, die das Kernprodukt behandeln, wird der Produktname Dynamics 365 for Finance and Operations verwendet. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Die folgenden drei Produkte sind eng miteinander verknüpft: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, Dynamics 365 for Talent Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Daraus ergibt sich, dass in Themen, die in erster Linie für Retail gelten, der Produktname Dynamics 365 for Retailverwendet wird; Themen, die sich in erster Linie Talent widmen verwenden den Produktnamen Dynamics 365 for Talent; und Themen, die in erster Linie dem Kernprodukt zugeordnet sind, verwenden den Produktnamen Dynamics 365 for Finance and Operations. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 Das Hilfesystem wird von folgenden Produkten gemeinsam verwendet:
 
 - Dynamics 365 for Finance and Operations
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
 
 Finance and Operations umfasst ein vollständig neues Hilfesystem, das auf zwei Hauptkomponenten basiert:
 
@@ -60,7 +59,7 @@ Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operatio
 - **Zugriff auf aktuellsten Inhalt**- Die Seite ist eine schnellere und flexiblere Methode, Produktdokumentationen zu erstellen, zu liefern und zu aktualisieren. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.
 - **Inhalte, die von den Experten geschrieben wurden**- Die Seite bietet eine umfangreichere Zusammenstellung von Produktdokumentationen, die von Community-Mitgliedern, sowohl innerhalb als auch außerhalb von Microsoft, weiterentwickelt werden können.
 - **Zugriff auf unterschiedliche Arten von Inhalten** – Über die Site können Sie schnell auf unterschiedliche Arten von Inhalten von Finance and Operations zugreifen, wie z.B. Aufgabenleitfäden, Videos und Artikel.
-- **Inhalte, die Ihre Geschäftsprozesse unterstützen**- Die Seite beinhaltet Geschäftsprozess-fokussierten Inhalt, der den Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services (LCS) nutzt.
+- **Inhalte, die Ihre Geschäftsprozesse unterstützen** – Die Site beinhaltet Geschäftsprozess-fokussierten Inhalt, der den Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services (LCS) nutzt.
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Suche auf docs.microsoft.com
 
@@ -78,7 +77,7 @@ Sie können Hilfe für andere Dynamics 365 Produkte erhalten, indem Sie danach s
 
 ### <a name="use-an-rss-feed"></a>Verwenden eines RSS-Feed
 
-Um ein RSS-Feed aller Aktualisierungen des Unified Operations-Inhalts zu abonnieren, verwenden Sie den folgenden Link von einem Browser aus, der RSS-Feeds unterstützt, wie beispielsweise Internet Explorer, oder einen RSS-Feedmanager:
+Um einen RSS-Feed aller Aktualisierungen des Unified Operations-Inhalts zu abonnieren, verwenden Sie den folgenden Link von einem Browser aus, der RSS-Feeds unterstützt, wie beispielsweise Internet Explorer, oder einen RSS-Feedmanager:
 
 [RSS-Feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
@@ -158,7 +157,7 @@ Gehen Sie auf der Seite **Systemparameter** folgendermaßen vor:
 2. Wählen Sie das Projekt Lifecycle Services, um eine Verbindung herzustellen.
 3. Wählen Sie BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.
 
-    - Für Finance and Operations wählen Sie für Microsoft-Inhalt die QPC vereinheitlichte Bibliothek für Microsoft Dynamics 365 for Finance and Operations, Februar 2017 aus.
+    - Für Finance and Operations wählen Sie für Microsoft-Inhalt die QPC Unified-Bibliothek für Microsoft Dynamics 365 for Finance and Operations, Februar 2017 aus.
     - Für Retail wird im Juli eine Bibliothek veröffentlicht.
     - Für Talent muss keine Bibliothek ausgewählt werden – die Verbindung zur richtigen Bibliothek wird für Sie eingerichtet.
 
@@ -194,10 +193,9 @@ In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein
 |------------------------------------------------------------------------------------------------|-------------|
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hosts oder Links zu allen Produktdokumentationen für Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Die kostehlose Microsoft e-Learning-Site. |
-| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Bietet einen Cloud-basierten Kooperationsbereich, den Debitoren und Partner verwenden können, um Dynamics 365 for Finance and Operations-Projekte von Presales bis zur Implementierung und den Arbeitsgängen zu verwalten. Diese Site ist in alle Phasen einer Implementierung hilfreich. |
+| [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Bietet einen Cloud-basierten Kooperationsbereich, den Debitoren und deren Partner verwenden können, um Dynamics 365 for Finance and Operations-Projekte von Presales zur Implementierung und für Arbeitsgänge zu verwalten. Diese Site ist in alle Phasen einer Implementierung hilfreich. |
 | [Support-Blog](http://aka.ms/AXSupportBlog)                                                    | Hält Tipps und Tricks bereit, die vom Dynamics 365 for Finance and Operations-Support-Team gepostet werden. |
 | [Docs.microsoft.com/previous Versionen](https://docs.microsoft.com/previous-versions/dynamics/) | Hostet Inhalt aus früheren Versionen. |
 | [Dynamics-Community](https://community.dynamics.com/)                                          | Hostet Blogs, Foren und Videos. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Stellt Auswertungen und Verkaufsinformationen bereit. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\*                                  | Hostet mehrere Trainingsressourcen für Finance and Operations, herunterladbare Berichte und Whitepapers und ist die primäre Site für Dienstleistungs-Planhalter. Möglicherweise wird ein Dienstleistungsplan benötigt, um auf einige Ressourcen auf der Website zuzugreifen. |
-

@@ -1,13 +1,13 @@
 ---
 title: Automatischer Ausgleich und Priorisierung
-description: "In diesem Artikel wird beschrieben, wie Buchungen ausgeglichen werden, wenn Sie \"Automatischer Ausgleich\" auf der Seite \"Debitorenparameter\" auswählen. Es wird ausserdem erläutert, wie der automatische Ausgleich in Kombination mit der Zahlungspriorität verwendet werden kann."
+description: In diesem Artikel wird beschrieben, wie Buchungen ausgeglichen werden, wenn Sie "Automatischer Ausgleich" auf der Seite "Debitorenparameter" auswählen. Es wird ausserdem erläutert, wie der automatische Ausgleich in Kombination mit der Zahlungspriorität verwendet werden kann.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 775ce10cdba5e38fbb5fc058c6df297143229f79
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "318970"
 ---
-
 # <a name="automatic-settlement-and-prioritization"></a>Automatischer Ausgleich und Priorisierung
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,7 @@ Die Beispiele von Ausgleichungen weiter unten in diesem Artikel basieren auf den
 |---------------|-------------|--------|---------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rechnung 1     | 15. August   | 100,00 | 2%14, Netto 30        | 29. August          |                                                                                                                                                                                               |
 | Rechnung 2     | 1. September | 250,00 | 2%14, Netto 30        | 15. September       |                                                                                                                                                                                               |
-| Rechnung 3     | 15. Oktober  | 500,00 | 2% 14/Netto 30        | 29. Oktober         |                                                                                                                                                                                               |
+| Rechnung 3     | Oktober 15  | 500,00 | 2% 14/Netto 30        | 29. Oktober         |                                                                                                                                                                                               |
 | Zinsrechnung | 15. Oktober  | 7:00   |                     |                    | Die Zinsrechnung ist für Rechnung 1 und 2. Der Betrag wird als 2 Prozent-Zinsen auf Beträge berechnet, die 30 Tage oder länger überfällig sind. Beispiel: 0,02 × (100,00 + 250,00) = 7,00. |
 
 ## <a name="user-defined-settlement-priority"></a>Benutzerdefinierte Ausgleichspriorität
@@ -79,7 +78,6 @@ Wenn keine benutzerdefinierte Ausgleichspriorität vorhanden ist, werden Buchung
 | Rechnung 2     | 1. September 2015   | 10002   | 250,00                         | 250,00           | 0,00    | USD      |
 | Rechnung 3     | 15. Oktober 2015 |         | 500,00                         | 350,00           | 150,00  | USD      |
 | Zinsrechnung | 15. Oktober 2015 |         | 7:00                           | 0,00             | 0,00    | USD      |
-
 
 
 

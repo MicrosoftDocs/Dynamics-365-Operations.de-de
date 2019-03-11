@@ -1,13 +1,13 @@
 ---
 title: Feinterminierung
-description: "Dieser Artikel enthält Informationen zur Einzelvorgangsterminierung, die ein ausführlicheres Formular der Planung der Grobterminierung ist. Sie können die Feinterminierung verwenden, um Einzelvorgänge oder Bestellungen zu planen und die Fertigungsumgebung zu steuern."
+description: Dieser Artikel enthält Informationen zur Einzelvorgangsterminierung, die ein ausführlicheres Formular der Planung der Grobterminierung ist. Sie können die Feinterminierung verwenden, um Einzelvorgänge oder Bestellungen zu planen und die Fertigungsumgebung zu steuern.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d506a6fbeb7e88dc6b1709203bc0822b1f4dc0f8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8162797256e221192dc3e1a12aa145e28d5bc0f5
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339532"
 ---
-
 # <a name="job-scheduling"></a>Feinterminierung
 
 [!include [banner](../includes/banner.md)]
@@ -75,7 +74,6 @@ Ressourcen werden über die Feinterminierung Einzelvorgängen zugewiesen. Sie k�
 
 ## <a name="resource-efficiency"></a>Ressourceneffizienz
 Bei der Feinterminierung werden die für die Ressourcen angegebenen Effizienzgrade berücksichtigt. Mithilfe des Effizienzgrads wird die für eine Ressource reservierte Zeit entweder verringert oder erhöht. Dies wirkt sich zugleich entsprechend auf die Durchlaufzeit aus. Die folgende Formel wird für die Berechnung verwendet: Terminierungszeit = Zeit × 100 ÷ Effizienzgrad. In dieser Formel umfasst *Zeit* sowohl die Fertigungszeit als auch die Rüstzeit.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Berechnen einer Stückliste mithilfe einer Struktur mit einfacher Ebene (Februar 2016)"
-description: "Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, indem eine Auflösung mit einer einzelnen Ebene verwendet wird, die auf dem Nachkalkulationsbogen beruht."
+---
+title: Berechnen einer Stückliste mithilfe einer Struktur mit einfacher Ebene (Februar 2016)
+description: Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, indem eine Auflösung mit einer einzelnen Ebene verwendet wird, die auf dem Nachkalkulationsbogen beruht.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: f74f8e4efc4474693f0a5b543c1300c3b64ecda0
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361589"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>Berechnen einer Stückliste mithilfe einer Struktur mit einfacher Ebene (Februar 2016)
 
@@ -43,5 +43,4 @@ Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, i
 8. Klicken Sie auf Berechnungsdetails anzeigen
     * Sie müssen möglicherweise auf die Auslassungspunkte (...) klicken, um diese Option im Hauptmenü anzuzeigen.    Hier ist die Zusammenstellung der Kosten:   •    10 ist von ARTIKEL_A, 10 % von ARTIKEL_B, 10 % von BOM_2 berechnet. In diesem Fall gibt es keine Details für BOM_2, da sie als Standardkosten von 10 eingegeben wurde, aber es erfolgte nicht durch Berechnung.  •  7 ist von der Rüstzeit abgeleitet, welche konstante Kosten sind und zusätzliche 7 sind vom Laufzeitvorgang (Prozess) abgeleitet.  •   Es gibt auch andere Beträge, die den indirekten Kosten entsprechen.  
 9. @SysTaskRecorder:_RequestClose
-
 

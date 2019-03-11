@@ -1,13 +1,13 @@
---- 
+---
 title: Intercompany-Projektrechnungsstellung konfigurieren
 description: Diese Prozedur zeigt, wie die Projektfakturierung zwischen zwei Unternehmen in Ihrer Organisation eingerichtet wird.
 author: KimANelson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendTable, InterCompanyTradingRelationSetupVendor, SysDataAreaSelectLookup, ProjParameters, ProjPosting, ProjTransferPrice
 audience: Application User
 ms.reviewer: twheeloc
@@ -17,12 +17,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2fe06978d3a1c41a1133a568cca61df05b49d235
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4de7257ed5e9c9c08ec6cc423c29739a541926d5
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352757"
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Intercompany-Projektrechnungsstellung konfigurieren
 
@@ -67,5 +67,4 @@ Diese Prozedur zeigt, wie die Projektfakturierung zwischen zwei Unternehmen in I
 35. Wählen Sie im Feld „Verrechnungspreismodell” eine Option aus.
 36. Geben Sie im Feld „Preisgestaltung” eine Zahl ein.
 37. Klicken Sie auf "Speichern".
-
 

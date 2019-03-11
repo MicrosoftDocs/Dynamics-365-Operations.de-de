@@ -1,13 +1,13 @@
---- 
-title: "Neue Einzelvorgänge definieren"
+---
+title: Neue Einzelvorgänge definieren
 description: Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: abb85b1e8d9bc7386bf2d2f059b78faff9933f5c
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347927"
 ---
 # <a name="define-new-jobs"></a>Neue Einzelvorgänge definieren
 
@@ -57,7 +57,7 @@ Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle. Sie wird 
 21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 23. Schalten Sie die Erweiterung des Abschnitts "Qualifikationen" ein/aus.
-    * Beachten Sie, dass die Felder in den Inforegistern "Qualifikationen", "Ausbildung" und "Bescheinigungen" leer sind. Nachdem die Informationen aus einer Stellenvorlage kopiert wurden, werden die Informationen in diesen Feldern in einem Einzelschritt eingegeben.   
+    * Beachten Sie, dass die Felder in den Inforegistern "Qualifikationen", "Ausbildung" und "Bescheinigungen" leer sind. Nachdem die Informationen aus einer Stellenvorlage kopiert wurden, werden die Informationen in diesen Feldern in einem Einzelschritt eingegeben.   
 24. Klicken Sie auf "Speichern".
 25. Klicken Sie auf "Kopieren aus".
 26. Klicken Sie auf "Aus Vorlage kopieren".
@@ -70,5 +70,4 @@ Diese Aufgabe konzentriert sich auf die Erstellung einer neuen Stelle. Sie wird 
 32. Schalten Sie die Erweiterung des Abschnitts "Bescheinigungen" ein/aus.
 33. Schalten Sie die Erweiterung des Abschnitts "Ausbildung" ein/aus.
 34. Klicken Sie auf "Speichern".
-
 

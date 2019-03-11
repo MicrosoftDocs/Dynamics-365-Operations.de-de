@@ -1,13 +1,13 @@
 ---
 title: Angebotsanforderungen
-description: "Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern."
+description: Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 9b840f5511f6a0df0e9ce3db4be69a0ab4ec3261
-ms.openlocfilehash: 8d7b07027443d1ca3894ccb7ed7f3cf49a4dc3e3
-ms.contentlocale: de-de
-ms.lasthandoff: 06/21/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351285"
 ---
-
 # <a name="requests-for-quotation-rfqs"></a>Angebotsanforderungen
 
 [!include [banner](../includes/banner.md)]
@@ -49,7 +48,7 @@ Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanfo
 
 Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** (**Senden und Veröffentlichen** für den öffentlichen Sektor) in der  Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
 
-Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, eingeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
+Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Microsoft Dynamics 365 for Finance and Operationseingegeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
 
 Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem sie übermittelt wurde, können Sie die Angebotsanforderung an Kreditoren erneut senden, wenn Sie mit der Verwendung der beiden Zusatzaktivitäten fertig sind: Erstellen und Abschließen.+
 
@@ -58,7 +57,7 @@ Wenn Sie Angebote per E-Mail erhalten, müssen Sie diese Angebote auf der Seite 
 Wenn eine zweite Iteration von einer Antwort für einen bestimmten Kreditor erforderlich ist, klicken Sie auf **Zurück** auf der Seite **Antwort auf Angebotsanforderung**. Die Aktion „Zurück” generiert eine neue Erfassung und einen Bericht, der gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.
 
 > [!NOTE]
-> Der Name der Seite **Angebotsanforderung** hat geändert. In den früheren Versionen von Microsoft Dynamics 365 for Finance and Operations wird die Seite **Angebotsanforderung-Antwort** genannt.
+> Der Name der Seite **Angebotsanforderung** hat geändert. In den früheren Versionen von Dynamics 365 for Finance and Operations wird diese Seite **Angebotsanforderung-Antwort** bezeichnet.
 
 Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf die Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtbewertungen werden in der Angebotsanforderung angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen** vergleichen. Auf dieser Seite können Sie auch **Antwortdaten vergleichen**, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.
 
@@ -268,5 +267,4 @@ Im Beispiel unten sehen Sie den niedrigsten und höchsten Status in der Angebots
 |------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|----------------------------------------------|-----------------------------------------------|
 | Nehmen Sie eines derAngebote an. (oder mindestens eine Position ist erforderlich) |                          Eingegangen                           |                           Angenommen                           |                    Eingegangen                    |                    Angenommen                     |                   Eingegangen                   |                   Angenommen                    |
 |           Lehnen Sie alle anderen Angebote ab.           |                          Verweigert                           |                           Angenommen                           |                    Verweigert                    |                    Angenommen                     |                   Verweigert                   |                   Akzeptiert                    |
-
 

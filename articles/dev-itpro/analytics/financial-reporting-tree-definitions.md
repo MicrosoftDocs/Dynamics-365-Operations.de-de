@@ -1,13 +1,13 @@
 ---
 title: Berichtsstruktur-Definitionen in Finanzberichten
-description: "Dieser Artikel enthält Informationen zu Berichtsstruktur-Definitionen. Eine Berichtsstruktur-Definition ist eine Berichtkomponente oder ein Baustein, die/der Sie dabei unterstützt, die Struktur und die Hierarchie Ihrer Organisation zu definieren."
+description: Dieser Artikel enthält Informationen zu Berichtsstruktur-Definitionen. Eine Berichtsstruktur-Definition ist eine Berichtkomponente oder ein Baustein, die/der Sie dabei unterstützt, die Struktur und die Hierarchie Ihrer Organisation zu definieren.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316946"
 ---
-
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Berichtsstruktur-Definitionen in Finanzberichten
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,7 @@ Die Berichtstruktur-Definition enthält die Spalten, die in der folgenden Tabell
 
 | Berichtsbaumstrukturspalte | Beschreibung |
 |-----------------------|-------------|
-| Unternehmen               | Der Name des Unternehmens für die Berichtserstellungseinheit. Der **@ANY**, der normalerweise nur der zusammengefassten Ebene zugeordnete ist, ermöglicht es allen Unternehmen, die Berichtsbaumstruktur zu verwenden. Allen untergeordneten Verzweigungen ist ein Unternehmen zugewiesen. |
+| Unternehmen               | Der Unternehmensname für die Berichtseinheit. Der **@ANY**-Wert, der normalerweise nur auf der Zusammenfassungsebene zugewiesen wird, ermöglicht die Verwendung der Berichtsbaumstruktur für alle Unternehmen. Allen untergeordneten Verzweigungen ist ein Unternehmen zugewiesen. |
 | Einheitenname             | Der Code, der diese Berichtserstellungseinheit in der grafischen Berichtsbaumstruktur identifiziert. Stellen Sie sicher, dass ein konsistentes und eindeutiges Kodierungssystem festgelegt ist, das für den Benutzer leicht verständlich ist. |
 | Einheitenbeschreibung      | Der Berichtseinheitentitel wird in der Kopf- oder Fußzeile des Berichts angezeigt, wenn Sie **UnitDesc** als Code auf der Registerkarte **Kopf- und Fußzeilen** eingeben. Der Titel wird in der Berichtszeilenbeschreibung angezeigt, wenn Sie **UnitDesc** in der Zelle **Beschreibung** der Zeilendefinition eingeben. |
 | Dimensionen            | Eine Berichtserstellungseinheit, die Informationen direkt aus den Finanzdaten bezieht. Sie definiert den logische Standort und die Längen für das Konto und die zugehörigen Segmente. Jede Berichtseinheitszeile muss eine Dimension in dieser Spalte enthalten. Sie können eine Dimension auch in einer zusammengefassten Einheitszeile festlegen (z. B. für die Ausgaben, die dieser Einheit direkt zugeordnet sind). Wenn Sie eine Dimension in einer zusammengefassten Einheitszeile eingeben, sollten Konten, die in den untergeordneten Einheiten verwendet werden nicht in den untergeordneten Einheiten verwendet werden. Andernfalls könnten Beträge dupliziert werden. |
@@ -166,9 +165,9 @@ Sie können den Zugriff bestimmter Benutzer und Gruppen auf einer Berichtseinhei
 3. Wählen Sie im Dialogfeld **Einheitssicherheit** einen Namen aus, und klicken Sie dann auf **Entfernen**.
 4. Klicken Sie auf **OK**.
 
-### <a name="link-to-reports"></a>Berichtverknüpfung
+### <a name="link-toreports"></a>Berichtverknüpfung
 
-Nachdem Sie in der Zeilendefinition eine **Bericht**-Spalte erstellt und den Bericht angegeben haben, der in den Bericht einbezogen werden soll, müssen Sie die Berichtstruktur mit der verknüpften Spalte und der Berichtsinformation aktualisieren. Ein Bericht kann in jede Einheit in der Berichtstruktur importiert werden.
+Nachdem Sie in der Zeilendefinition eine **Bericht**-Spalte erstellt und den Bericht angegeben haben, der in den Bericht einbezogen werden soll, müssen Sie die Berichtsbaumstruktur mit der verknüpften Spalte und der Berichtsinformation aktualisieren. Ein Bericht kann in jede Einheit in der Berichtstruktur importiert werden.
 
 ### <a name="identify-the-report-in-a-reporting-tree"></a>Identifizieren des Berichts in einer Berichtstruktur
 
@@ -222,4 +221,3 @@ Die folgenden Beispiele zeigen mögliche Informationen an, die in einer Berichts
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Finanzberichterstellung](financial-reporting-intro.md)
-

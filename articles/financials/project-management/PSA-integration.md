@@ -1,13 +1,13 @@
 ---
 title: Project Service Automation
-description: "Dieses Thema enthält Informationen über die Project Service Automation-zu-Finance and Operations-Integrationslösung. Diese Integrationslösung verwendet die Datenintegrationsfunktion, um Daten über Instanzen hinweg von Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Project Service Automation über Common Data Service zu synchronisieren."
+description: Dieses Thema enthält Informationen über die Project Service Automation-zu-Finance and Operations-Integrationslösung. Diese Integrationslösung nutzt die Datenintegrationsfunktion, um Daten über Instanzen von Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Project Service Automation über Common Data Service zu synchronisieren.
 author: KimANelson
 manager: AnnBe
 ms.date: 06/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -17,26 +17,25 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 841ea53f754f61c2930e77fdafc85eac72f47d7a
 ms.openlocfilehash: 4b1d2ae69899a2937d47f6547ee4ba72b2d1ece4
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335691"
 ---
-
 # <a name="project-service-automation"></a>Project Service Automation
 
 [!include[banner](../includes/banner.md)]
 
-Die Project Service Automation-zu-Finance and Operations-Integrationslösung nutzt die Datenintegrationsfunktion, um Daten über Instanzen hinweg von Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Project Service Automation über Common Data Service zu synchronisieren. Die Integrationsvorlagen, die mit der Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Projekten, Projektverträgen, Projektvertragspositionen, Projektvertragspositions-Meilensteinen, Projektaufgaben, Ausgabenbuchungskategorien, Stundenvorkalkulationen und Ausgabenvorkalkulationen von Project Service Automation zu Finance and Operations.
+Die Integrationslösung Project Service Automation to Finance and Operations nutzt die Datenintegrationsfunktion, um Daten über Instanzen von Microsoft Dynamics 365 for Finance and Operations und Microsoft Dynamics 365 for Project Service Automation über Common Data Service zu synchronisieren. Die Integrationsvorlagen, die mit der Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Projekten, Projektverträgen, Projektvertragspositionen, Projektvertragspositions-Meilensteinen, Projektaufgaben, Ausgabenbuchungskategorien, Stundenvorkalkulationen und Ausgabenvorkalkulationen von Project Service Automation zu Finance and Operations.
 
 > [!NOTE]
-> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.0 verwenden, nachdem Sie KB 4132657 und 4132660 KB installiert haben, sind Sie in der Lage, die Vorlagen zu verwenden, um Projektaufgaben, Ausgabentransaktionskategorien, geschätzte Stunden, geschätzte Ausgaben und Ist-Werte zu integrieren und die Funktionalitätssperre zu konfigurieren. Wenn Sie die Buchhaltungsverteilungen zurücksetzen müssen, wird empfohlen, dass Sie auch 4131710 KB einrichten.
+> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.0 verwenden und KB 4132657 und 4132660 KB einrichten, sind Sie in der Lage, die Vorlagen zu verwenden, um Projektaufgaben, Ausgabentransaktionskategorien, geschätzte Stunden, geschätzte Ausgaben und aktuelle Kosten zu integrieren und die Funktionalitätssperre zu konfigurieren. Wenn Sie die Buchhaltungsverteilungen zurücksetzen müssen, wird empfohlen, dass Sie auch 4131710 KB einrichten.
 > - Wenn Sie Finance and Operations 7.3.0 verwenden, müssen Sie KB 4074835 installieren. Dadurch wird es Ihnen dann ermöglicht, Festpreisprojekte zu integrieren.
 > - Wenn Sie Finance and Operations 7.3.0 verwenden und Gebührenbuchungen aus Project Service Automation übernehmen, müssen Sie KB 4345320 installieren, um diese Gebühren in der Projektrechnung einzuschließen.
-> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Version 8.0, verwenden, werden Sie dazu in der Lage sein, Projektaufgabenintegration, Ausgabenbuchungskategorien, Stundenvorkalkulationen, Ausgabenvorkalkulationen und Funktionssperrung zu verwenden.
-> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations, Version 8.0.1 oder höher, verwenden, werden Sie dazu in der Lage sein, Ist-Werte zu synchronisieren.
+> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations Version 8.0 verwenden, sind Sie in der Lage, Projektaufgaben-Integration, Ausgabenbuchungskategorien, Stundenschätzungen, Ausgabenenschätzungen und Funktionenssperre zu verwenden.
+> - Wenn Sie Microsoft Dynamics 365 for Finance and Operations Version 8.0.1 oder höher verwenden, sind Sie in der Lage, Ist-Werte zu synchronisieren.
 
 Bevor Sie Project Service Automation mit Finance and Operations integrieren können, müssen Sie auch die Project Service Automation mit Finance and Operations integrieren. Weitere Informationen finden Sie unter [Project Service Automation-Integrationsparameter](PSA-parameters.md).
 
@@ -63,17 +62,16 @@ Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Projec
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemanforderungen für Finance and Operations
 
-Um die Project Service Automation zu Finance and Operations Integrationslösung zu verwenden, müssen Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition mit 7.3 Plattformaktualisierung 12 oder später einrichten.
+Um die Project Service Automation zu Finance and Operations Integrationslösung zu verwenden, müssen Sie Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 mit Plattformaktualisierung 12 oder höher einrichten.
 
 ## <a name="system-requirements-for-project-service-automation"></a>Systemanforderungen für Project Service Automation
 
 Um die Project Service Automation zu Finance and Operations-Integrationslösung zu verwenden, müssen Sie die folgenden Komponenten installieren:
 
-- Microsoft Dynamics 365 for Project Service Automation, Version 9.0.0.0 oder höher.
-- Interessent zu Bargeld-Lösung für Microsoft Dynamics 365 for Sales, Version 1.14.0.0 (v14) oder höher.
-- Project Service Automation-zu-Finance and Operations-Lösung für Microsoft Dynamics 365 for Project Service Automation, Version 1.0.0.0 oder höher.
+- Microsoft Dynamics 365 for Project Service Automation Version 9.0.0.0 oder höher
+- Prospect to Cash-Lösung für Microsoft Dynamics 365 for Sales, Version 1.14.0.0 (v14) oder höher.
+- Project Service Automation to Finance and Operations Integrationslösung für Microsoft Dynamics 365 for Project Service Automation Version1.0.0.0 oder höher
 
 ## <a name="install-the-project-service-automation-to-finance-and-operations-integration-solution-in-your-project-service-automation-instance"></a>Installieren Sie die Project Service Automation to Finance and Operations Integrationslösung in Project Service Automation Instanz
 
 Laden Sie die Project Service Automation-zu-Finance and Operations-Integrationslösung von [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=57016) herunter, und befolgen Sie die Anweisungen, die in der Lösung enthalten sind.
-

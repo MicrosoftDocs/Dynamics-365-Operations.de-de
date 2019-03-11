@@ -1,13 +1,13 @@
 ---
-title: "Unternehmensverzeichnis für mobilen Arbeitsbereich"
-description: "Dieses Thema enthält Informationen über den mobilen Arbeitsbereich \"Unternehmensverzeichnis\", mit dem Benutzer andere Mitarbeiter in ihrer Organisation anzeigen und Kontakt mit ihnen aufnehmen können."
+title: Unternehmensverzeichnis für mobilen Arbeitsbereich
+description: Dieses Thema enthält Informationen über den mobilen Arbeitsbereich "Unternehmensverzeichnis", mit dem Benutzer andere Mitarbeiter in ihrer Organisation anzeigen und Kontakt mit ihnen aufnehmen können.
 author: jcart1106
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Operations, Talent
@@ -15,23 +15,22 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
 ms.openlocfilehash: 527d40452bcf52875e3f7b04d328110147417072
-ms.contentlocale: de-de
-ms.lasthandoff: 08/29/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308620"
 ---
-
 # <a name="company-directory-mobile-workspace"></a>Unternehmensverzeichnis für mobilen Arbeitsbereich
 
 [!include [banner](../includes/banner.md)]
 
 Dieses Thema enthält Informationen zum **Unternehmensverzeichnis** im mobilen Arbeitsbereich. Dieser Arbeitsbereich ermöglicht Benutzern das Anzeigen von Kontakten und Mitarbeitern in der Organisation.
 
-Dieser mobile Arbeitsbereich kann mit der Mobil-App für Microsoft Dynamics 365 für Unified Operations verwendet werden.
+Dieser mobile Arbeitsbereich kann mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 Der mobile Arbeitsbereich **Unternehmensverzeichnis** ermöglicht Benutzern, folgende Aufgaben auszuführen:
 
 - Zeigen Sie eine Liste der Mitarbeiter in der Organisation an.
@@ -54,11 +53,11 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 <tr class="odd">
 <td>Eines der folgenden Produkte muss in der Organisation bereitgestellt werden:
 <ul><li>Microsoft Dynamics 365 for Finance and Operations</li>
-<li>Microsoft Dynamics 365 for Talent</li>
+<li>Microsoft Dynamics 365 for Talent</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Wenn Finance und Operations nicht bereits in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in Ihrer Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
+<td>Wenn Finance and Operations nicht bereits in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
 </td>
 </tr>
 <tr class="even">
@@ -72,7 +71,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
 
--   [Für Androide-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 ## <a name="sign-in-to-the-mobile-app"></a>Bei der mobile App anmelden
@@ -91,4 +90,3 @@ Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und i
 1.  Wählen Sie in der mobilen App den Arbeitsbereich **Unternehmensverzeichnis** aus.
 2.  Geben Sie im Feld **Suchen** den Vornamen, den Nachnamen, den Titel oder die Abteilung des Mitarbeiters ein, um die Suche zu starten.
 3.  Wählen Sie einen Mitarbeiter aus. Die Seite **Mitarbeiterprofil** wird angezeigt. Die Informationen auf dieser Seite umfassen den Vornamen, Nachnamen, Titel und die Abteilung des Mitarbeiters.
-

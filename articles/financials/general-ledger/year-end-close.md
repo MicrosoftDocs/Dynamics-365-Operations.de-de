@@ -1,13 +1,13 @@
 ---
 title: Jahresabschluss
-description: "In diesem Thema werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben."
+description: In diesem Thema werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
 author: kweekley
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9ec2316dd259cd12a5cab187b08dbd17ca100572
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf9d0a6ab0fcf7d6f5a31813d68f0bd452ce1019
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347881"
 ---
-
 # <a name="year-end-close"></a>Jahresabschluss
 
 [!include [banner](../includes/banner.md)]
@@ -86,7 +85,6 @@ Wenn Sie einen vorherigen Jahresabschluss für das ausgewählte Geschäftsjahr s
 Der Jahresabschlussprozess wird standardmäßig im Stapelverarbeitungsmodus ausgeführt. Es hat sich bewährt, den Prozess im Stapelverarbeitungsmodus auszuführen, damit der Benutzer zu anderen Aktivitäten zurückkehren kann. Nach Abschluss des Jahresabschlussprozesses wird das Feld **Datum des letzten Jahresabschlusses** mit dem Sitzungsdatum aktualisiert.
 
 Weitere Informationen erhalten Sie unter [Abschluss des Hauptbuchs am Ende der Periode.](close-general-ledger-at-period-end.md) und [Geschäftsjahr beenden](tasks/close-fiscal-year.md).
-
 
 
 

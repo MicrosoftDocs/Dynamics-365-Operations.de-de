@@ -1,13 +1,13 @@
 ---
 title: Infocodes und Infocodegruppen
-description: "Dieser Artikel enthält einen Überblick über Infocodes, Infocodegruppen und wie sie verwendet werden."
+description: Dieser Artikel enthält einen Überblick über Infocodes, Infocodegruppen und wie sie verwendet werden.
 author: mugunthanm
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailInfocodeTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340820"
 ---
-
 # <a name="info-codes-and-info-code-groups"></a>Infocodes und Infocodegruppen
 
 [!include [banner](includes/banner.md)]
@@ -43,7 +42,7 @@ Infocodes bieten eine Methode, um Daten an einem Point-of-Sale (POS) Register zu
 
 ## <a name="info-codes-group"></a>Infocodegruppe
 
-In Dynamics 365 for Retail können Sie Gruppen für Infocodes anlegen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
+In Dynamics 365 for Retail können Sie Gruppen von Infocodes erstellen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
 
 - Definieren Sie weniger Infocodes und verwenden Sie diese leicht erneut. Infocodes, die in den Infocodegruppen enthalten sind, besitzen keine vordefinierten Abhängigkeiten von anderen Infocodes. Sie können den gleichen Infocode in mehreren Infocodegruppen einfügen und dann Priorisierung verwenden, um die gleichen Infocodes in der Reihenfolge darzustellen, der in einem bestimmten Fall sinnvoll ist.
 - Verknüpfen Sie Infocodes so mit anderen Infocodes oder Infocodegruppen, um Informationen über ein Produkt oder eine Transaktion zu sammeln, ohne einen separaten Infocode oder verknüpften Infocode für jedes Szenario zu definieren.
@@ -57,4 +56,3 @@ In früheren Versionen von , können Sie Linkinformationenscodes so verknüpfen,
 **Beispiel 2: Infocodes mit Infocodegruppen verknüpfen**
 
 Wenn Sie bestimmte Produkte verkaufen, beispielsweise mobile Geräte, möchten Sie immer einen Satz spezifische Informationen, beispielsweise Telefonnummer, Mobilgerätekennung (MEID) und Seriennummer, erfassen. Jedoch möchten Sie auch unterschiedliche Informationen für ein Tablet gegenüber einem Mobiltelefon erfassen. Sie können eine Infocodegruppe einrichten, die Aufforderungen für die Telefonnummer, MEID und die Seriennummer umfasst und dann die Infocodegruppe mit einem einzelnen Infocode verknüpfen. Wenn der produktspezifische Infocode ausgelöst wurde, kann als Nächstes die Infocodegruppe aktiviert werden, um es Ihnen zu ermöglichen, die allgemeinen Daten zu sammeln, ohne mehrere Sätze von verknüpften Infocodes für jedes Gerät zu definieren.
-

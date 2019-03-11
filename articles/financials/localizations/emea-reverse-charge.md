@@ -1,13 +1,13 @@
 ---
 title: Verlagerung der Steuerschuld
-description: "In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder und Saudi-Arabien eingerichtet wird."
+description: In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder und Saudi-Arabien eingerichtet wird.
 author: epodkolz
 manager: AnnBe
 ms.date: 04/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 64518e72dd66961108ff905981cd0405355ed130
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370400"
 ---
-
 # <a name="reverse-charge-vat"></a>Verlagerung der Steuerschuld
 
 
@@ -115,4 +114,3 @@ Wenn eine Einkaufsrechnung mit Verlagerung der Steuerschuld gebucht wird, werden
 Im folgenden Bildschirmfoto hat eine Buchung die Steuerart **Vorsteuer** und die andere Buchung weist die Steuerart **Mehrwertsteuer** auf. 
 
 ![Gebuchte Mehrwertsteuer](media/apac-sau-posted-sales-tax.png)
-

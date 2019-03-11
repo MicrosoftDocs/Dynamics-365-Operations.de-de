@@ -1,13 +1,13 @@
 ---
-title: "Produktionsauftragsstatus zurücksetzen"
-description: "In diesem Thema wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen."
+title: Produktionsauftragsstatus zurücksetzen
+description: In diesem Thema wird beschrieben, wie sie den Produktionsauftragsstatus zurücksetzen.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ProdParmStatusDecrease
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7ca5a62b4509f0c7e49da94128e72eae5f35829e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4761e44b6bbc93ebf4a395948f42c2a73013ecb9
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367316"
 ---
-
 # <a name="reverse-the-production-order-status"></a>Produktionsauftragsstatus zurücksetzen
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Wenn Sie den Status eines Produktionsauftrags von **Freigegeben** auf **Eingepla
 
 ## <a name="from-started-to-released"></a>Von "Gestartet" auf "Freigegeben"
 Wenn Sie den Status eines Produktionsauftrags von **Gestartet** auf **Freigegeben** zurücksetzen, werden alle Artikel, die als fertig gemeldet wurden, ebenfalls zurückgesetzt. Wenn Material entnommen wurde bzw. eingehende und ausgehende Lieferungen an die Produktion erfolgt sind, werden diese Einstellungen ebenfalls zurückgesetzt. Das Feld **Rückstandsstatus** in den Stücklistenpositionen des Produktionsauftrags ändert sich von **Abgeschlossen** in **Materialverbrauch**. Wenn Zeit erfasst wurde oder Mengen als für die Arbeitsgänge im Produktionsarbeitsplan fertig gemeldet wurden, werden diese Einstellungen zurückgesetzt. Das Feld **Rückstandsstatus** ändert sich von **Abgeschlossen** in **Arbeitsplanrückmeldung** im Produktionsarbeitsplan. Die Einstellungen für alle Artikel, die als in Bearbeitung oder als Ressource in Fertigung gebucht sind, werden ebenfalls zurückgesetzt. Auf der Seite **Produktionsauftragsdetails** werden Felder zurückgesetzt, die eine Menge anzeigen, die gestartet oder als fertig gemeldet wurde. Die Datumsangaben für diese Buchungen werden auch zurückgesetzt.
-
 
 
 

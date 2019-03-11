@@ -1,36 +1,35 @@
 ---
-title: "Aufträge aus einer anderen Filiale mithilfe der Funktion „Belastung übermitteln” versenden"
+title: Aufträge aus einer anderen Filiale mithilfe der Funktion „Belastung übermitteln” versenden
 description: In diesem Thema wird beschrieben die Funktion Belastung senden.
 author: ashishmsft
 manager: AnnBe
 ms.date: 10/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: e5351086c56d13ef98937aec066be00cdf88fd37
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354068"
 ---
-
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>Aufträge aus einer anderen Filiale mithilfe der Funktion „Belastung übermitteln” versenden
 
 [!include [banner](includes/banner.md)]
 
-Bei der Belastung übermitteln Funktion in Dynamics 365 for Retail, können Debitorenaufträge in einen Shops platziert und aus einem anderen Shop versendet werden.
+Bei der "Belastung übermitteln"-Funktion in Dynamics 365 for Retail können Debitorenaufträge in einem Shop platziert und aus einem anderen Shop versendet werden.
 
 Debitorenaufträge im Verkaufsstellen (POS)-Client unterstützen mehrere Erfüllungsoptionen. Einige Beispiele von Erfüllungsoptionen enthalten:
 
@@ -43,4 +42,3 @@ Die Belastung senden Funktion verwendet die folgenden POS-Vorgänge: Versand all
 Die Möglichkeit, Versand zu"-Adressen auszuwählen bleibt unverändert.
 
 Die Versandmethoden, die verwendet werden können, um die Auftragsposition zu decken, basieren auf der Konfiguration mit gültigen Lieferarten für Produkte und Adressen. Da die Regeln, die von Lieferarten gültig sind, nur im Retail Zentralverwaltung (HQ) hat, der POS-Kunde ermöglicht einem Echtzeitanruf die gültigen Lieferarten für eine Schiffsposition abrufen verwaltet werden.
-

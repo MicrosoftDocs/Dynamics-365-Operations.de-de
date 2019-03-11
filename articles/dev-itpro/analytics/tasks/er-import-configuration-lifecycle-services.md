@@ -1,13 +1,13 @@
---- 
+---
 title: ER Import einer Konfiguration von Lifecycle Services
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle \"Entwickler für elektronische Berichterstellung\" eine neue Konfiguration für \"Elektronische Berichterstellung (ER)\" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann."
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" eine neue Konfiguration für "Elektronische Berichterstellung (ER)" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 036d7e7e3f79e0945d6fef866a30edd41e688c07
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337255"
 ---
-
 # <a name="er-import-a-configuration-from-lifecycle-services"></a>ER Import einer Konfiguration von Lifecycle Services
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
@@ -70,5 +69,4 @@ In diesem Beispiel wählen Sie die gewünschte Version der ER-Konfiguration und 
 11. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
     * Wählen Sie die Version dieser Konfiguration aus, die den Status "Freigegeben" hat.  
     * Beachten Sie, dass die freigegebene Version 1 der ausgewählten Datenmodellkonfiguration jetzt verfügbar ist.  
-
 

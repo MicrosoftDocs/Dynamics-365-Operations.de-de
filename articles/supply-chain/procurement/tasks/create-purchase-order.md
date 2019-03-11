@@ -1,13 +1,13 @@
---- 
+---
 title: Eine Bestellung erstellen
 description: Diese Prozedur zeigt Ihnen, wie Sie eine Bestellung manuell erstellen.
 author: FrankDahl
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 50bf9927626a2a78a5f007b0b73d338585bbf9ab
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 27ed15e6d9a376c4203e5446d056f221bd3eb730
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330907"
 ---
 # <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
 
@@ -75,5 +75,4 @@ Diese Prozedur zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist ty
     * Dieses Dialogfeld zeigt die Summen für den gesamten Auftrag an.  
     * Das Feld "Auswahl" ermöglicht es Ihnen, die Grundlage zu ändern, auf der Summen berechnet werden. So können Sie beispielsweise auswählen, dass die "Menge im Produktzugang" Summen anzeigt, die dem Betrag des Produkts/der Produkte zugeordnet ist/sind, die eingegangen sind, oder Sie können auswählen, dass "Bestellte Menge" die Menge der Produkte anzeigt, die bestellt wurden.  
 2. Klicken Sie auf "OK".
-
 

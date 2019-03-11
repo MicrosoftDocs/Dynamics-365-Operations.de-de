@@ -1,13 +1,13 @@
 ---
-title: "SEPA-Direktbelastungsüberblick"
-description: "Der einheitliche Euro-Zahlungsverkehrsraum (SEPA) wird von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inland gelten, unabhängig vom Land/Region, wo die Person, Geschäfte, oder Organisation und die Bank sich befinden. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen."
+title: SEPA-Direktbelastungsüberblick
+description: Der einheitliche Euro-Zahlungsverkehrsraum (SEPA) wird von der Europäischen Kommission eingerichtet und schreibt vor, dass alle elektronischen Zahlungen als Inland gelten, unabhängig vom Land/Region, wo die Person, Geschäfte, oder Organisation und die Bank sich befinden. Es gibt keine Differenz zwischen nationalen und grenzüberschreitenden Zahlungen. Zu SEPA zählen die 28 Mitgliedsstaaten der Europäischen Union (EU) sowie Island, Liechtenstein, Norwegen, die Schweiz, Monaco und San Marino. SEPA hilft dabei, einen gemeinsamen Markt für Zahlungsbuchungen innerhalb des europäischen Wirtschaftsraums (EEA) zu bilden. Letztlich wird von SEPA erwartet, die Anzahl von Zahlungsformaten zu reduzieren, mit denen Banken, Unternehmen und Personen arbeiten müssen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 23c418c6412e4bd300616eed4577e2b1d3f3d181
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fb55f4b0b06019891c2e490eda837cfad882e6db
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359197"
 ---
-
 # <a name="sepa-direct-debit-overview"></a>SEPA-Direktbelastungsüberblick
 
 [!include [banner](../includes/banner.md)]
@@ -80,7 +79,6 @@ Sie können Dateien für elektronische Zahlung für SEPA-Direktbelastungen in de
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>Wie arbeiten Rückerstattungen und Rücklieferungen mit der SEPA-Direktbelastung?
 Unter beiden SEPA-Direktbelastungsschemen besitzen Debitoren bestimmte Rechte für Rückerstattungen. Der Debitor darf, ohne einen Grund dafür geben zu müssen, alle autorisierten Transaktionen während einer achtwöchigen Periode nach dem Fälligkeitsdatum zurückrufen. Im Falle der nicht autorisierten Transaktionen wird die Periode zu 13 Monate nach dem Fälligkeitsdatum erweitert. Rückbuchungen sämtlicher Zahlungen, die gemacht wurden, werden manuell vorgenommen, indem die Schaltfläche „Zahlung stornieren“ auf der Seite „Debitorenbuchungen“ verwendet wird.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Finanzberichte generieren
-description: "Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten."
+description: Dieses Thema enthält allgemeine Informationen zun Generieren von Finanzberichten.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
-ms.contentlocale: de-de
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340889"
 ---
-
 # <a name="generate-financial-reports"></a>Finanzberichte generieren
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,7 @@ Wenn Sie einen Bericht generieren, werden die Optionen verwendet, die Sie auf de
 
 ## <a name="generate-a-financial-report"></a>Finanzbericht generieren
 
-Um einen Finanzbericht mit Microsoft Dynamics 365 for Finance and Operations zu erstellen, gehen Sie zu **Hauptbuch**\>**Abfragen und Berichte**\>**Finanzberichte**.
+Um einen Finanzbericht mit Microsoft Dynamics 365 for Finance and Operationszu generieren, gehen Sie zu **Hauptbuch** \> **Abfragen und Berichte** \> **Finanzberichte**.
 
 - Wählen Sie einen Bericht, um den Bericht zu erstellen und klicken Sie auf **Erstellen**.
 - Fügen Sie das Feld**Daten berichten**und klicken sie auf **OK**.
@@ -115,7 +114,7 @@ Fehlende Konten werden anhand der höchsten und niedrigsten Werte einer Zeilende
 > [!TIP]
 > Zu Überprüfungszwecken sollte dieser Vorgang vor dem Generieren monatlicher Berichte und beim Erstellen neuer Bausteine durchgeführt werden.
 
-Bei Berichten mit Wertebereichen ist es weniger wahrscheinlich, dass Konten fehlen. Sofern möglich, verwenden Sie Bereiche im Baustein, um neue Konten nach dem Erstellen mit einzuschließen. Wird eine Berichtsdefinition für @ANY Unternehmen festgelegt, können Sie sich bei einem bestimmten Unternehmen anmelden und eine Analyse fehlender Konten für dieses Unternehmen ausführen.
+Bei Berichten mit Wertebereichen ist es weniger wahrscheinlich, dass Konten fehlen. Verwenden Sie, wenn möglich, Bereiche im Baustein, um neue Konten bei deren Erstellung zu integrieren. Wenn eine Berichtsdefinition auf @ANY Unternehmen eingestellt ist, können Sie sich bei einem bestimmten Unternehmen anmelden und für dieses Unternehmen eine Analyse für fehlende Konten durchführen.
 
 > [!NOTE]
 > Wurde ein neues Unternehmen hinzugefügt, müssen Sie das neue Unternehmen den Berichtstrukturen in allen vorhandenen Berichten hinzufügen, sonst wird das Unternehmen nicht in die Analyse fehlender Konten einbezogen.
@@ -158,4 +157,3 @@ Wenn Sie eine Analyse für fehlende Konten ausführen, sind die folgenden Tasten
 [Finanzberichterstellung](financial-reporting-intro.md)
 
 [Schnittstelle „Berichts-Designer“](report-designer-interface.md)
-

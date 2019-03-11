@@ -1,13 +1,13 @@
 ---
 title: Seite mit Debitorenbuchungsliste
-description: "Dieses Thema enthält Informationen zur Kundentransaktionslistenseite für Microsoft Dynamics 365 for Finance and Operations."
+description: Dieses Thema enthält Informationen zur Debitorenbuchungslistenseite für Microsoft Dynamics 365 for Finance and Operations.
 author: mikefalkner
 manager: aolson
 ms.date: 08/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: 8.0.4
+ms.openlocfilehash: b9936a66cc8c8abb24601dae91dcfca77e4f58a4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c6502a6fb0ceaed75fd5bb6ec5b2f13db1879eea
-ms.openlocfilehash: 1b359939c867ba0a0c14859c83f0560afe6ba5be
-ms.contentlocale: de-de
-ms.lasthandoff: 10/12/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341694"
 ---
-
 # <a name="customer-transactions-list-page"></a>Seite mit Debitorenbuchungsliste
 
 [!include [banner](../includes/banner.md)]
@@ -40,10 +39,10 @@ Die Registerkarte **Ausgleiche anzeigen** im Aktivitätsbereich bietet schnellen
 
 4. Im Dialogfeld können verschiedene Funktionen ausführen. Wählen Sie einen oder mehrere Belege aus und wählen Sie dann eine der folgenden Schaltflächen:
 
-    - **Zeigt zugehörige an** – Zeig alle Zahlungserfassungsbuchungen, die in der Zahlungserfassung erstellt wurden, die dem ausgewählten Dokument zugeordnet sind. Darüber hinaus werden alle Ausgleiche, die Zahlungen zugeordnet werden, angezeigt. Während Sie verwandte Zahlungen anzeigen, ändert die Bezeichnung dieser Schaltfläche zu **Ausgleiche anzeigen**. Wählen Sie **Ausgleiche anzeigen**, um nur die Buchungen anzuzeigen, die angezeigt wurden, als Sie  das Dialogfeld **Ausgleiche anzeigen** geöffnet haben.
+    - **Zugehöriges anzeigen** – Zeigt alle Zahlungserfassungstransaktionen und allgemeinen Erfassungstransaktionen für den Debitor an, die in den Erfassungen erstellt wurden, in denen die in der Liste angezeigten Dokumente erstellt wurden. Wenn zum Beispiel eine Zahlung angezeigt wird, werden alle Zahlungen in der Zahlungserfassung, in der sie erstellt wurde, angezeigt. Wenn eine Rechnung oder Zahlung angezeigt wird und in einer allgemeinen Erfassung erstellt wurde, werden alle Dokumente in der allgemeinen Erfassung, in der sie erstellt wurde, angezeigt. Darüber hinaus werden alle Ausgleiche in Zusammenhang mit Dokumentenlisten angezeigt. Während Sie verwandte Zahlungen anzeigen, ändert die Bezeichnung dieser Schaltfläche zu **Ausgleiche anzeigen**. Wählen Sie **Ausgleiche anzeigen**, um nur die Buchungen anzuzeigen, die angezeigt wurden, als Sie  das Dialogfeld **Ausgleiche anzeigen** geöffnet haben.
     - **Verlauf anzeigen** – Zeit den Ausgleichsverlauf für die Belege an. Klicken Sie auf **Schließen**, um die Dialogfelder zu schließen.
     - **Buchhaltung anzeigen** - Alle Belege anzeigen, die zu den ausgewählten Dokumenten gehören. Klicken Sie auf **Schließen**, um die Dialogfelder zu schließen.
-    - **Exportieren** – Exportiert die ausgewählten Belege in Microsoft Excel.
+    - **Exportieren** – Exportiert die ausgewählten Belege in Microsoft Excel.
     - **Ausgleichen von Transaktionen** – Diese Schaltfläche wird angezeigt, wenn das ursprüngliche Dokument, das ausgewählt wurde, nicht vollständig ausgeglichen wurde. Wenn Sie diese Schaltfläche auswählen, wird das Dialogfeld **Transaktion ausgleichen** angezeigt, in dem Sie Buchungen für den Ausgleich auswählen können.
     - **Ausgleich rückgängig machen** – Diese Schaltfläche wird nur angezeigt, wenn das ursprünglich ausgewählte Dokument vollständig ausgeglichen wurde. Wenn Sie diese Schaltfläche auswählen wird das Dialogfeld **Ausgleiche rückgängig machen** angezeigt, in dem Sie die Ausgleiche rückgängig machen können, die für das Dokument ausgeführt wurden.
 
@@ -98,4 +97,3 @@ Jedes Feld hat Auswirkungen auf eine andere Buchung, wenn Sie sie bearbeiten:
 - **Bearbeiten Sie die Skontobedingungen** - Die Skonti werden basierend auf dem Grunddatum und den Skontobedingungen geändert.
 
 Um die Bearbeitung der Zahlungseinstellungen abzuschließen wählen Sie **Schließen**, um die Änderungen zu speichern.
-

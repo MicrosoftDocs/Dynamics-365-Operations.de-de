@@ -1,13 +1,13 @@
 ---
-title: "Aufheben, Wiedererheben oder Stornieren von Zinsgebühren"
-description: "In diesem Artikel wird beschrieben, wie Belastungen für Zinsen und Gebühren erlassen, erfasst und umgekehrt werden."
+title: Aufheben, Wiedererheben oder Stornieren von Zinsgebühren
+description: In diesem Artikel wird beschrieben, wie Belastungen für Zinsen und Gebühren erlassen, erfasst und umgekehrt werden.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustInterestJourList
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cfeab6f393b63b25d595067de3eb90fc899c508b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ae4a84f0e2823d1e7686696eae72e050a320e3f1
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319085"
 ---
-
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Aufheben, Wiedererheben oder Stornieren von Zinsgebühren
 
 [!include [banner](../includes/banner.md)]
@@ -93,7 +92,6 @@ Sie können Zinsbuchungen stornieren, indem Sie die Schaltfläche **Buchungszins
 Sie können den detaillierten Verlauf der Anpassungen anzeigen, die für Zinsrechnungen vorgenommen wurden, zum Beispiel den Benutzer, von dem die Anpassung eingegeben wurde, den Typ der Anpassung, den Betrag und den Zeitpunkt, zu dem die Anpassung eingegeben wurde. Zum Beispiel möchten Sie vor dem Erstellen einer neuen Zinsrechnung die vorherigen Anpassungen anzeigen, die für eine Zinsrechnung eingegeben wurden. 
 
 Sie können Zinsbuchungen stornieren, indem Sie die Schaltfläche **Verlauf** auf der Registerkarte **Mahnen** der Seite **Debitor** verwenden.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Ausgabenrichtlinien definieren
-description: "Sie können Ausgabenrichtlinien definieren, die ihre Arbeitskräfte einhalten müssen, wenn sie in Microsoft Dynamics 365 for Finance and Operations Spesenabrechnungen und Reiseanforderungen eingeben und übermitteln."
+description: In Microsoft Dynamics 365 for Finance and Operations können Richtlinien festgelegt werden, an die sich die Mitarbeiter beim Eingeben und Einreichen von Spesenabrechnungen und Reiseanforderungen zu halten haben.
 author: saraschi2
 manager: AnnBe
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicyListPage, TrvPolicyRule
 audience: Application User
 ms.reviewer: shylaw
@@ -16,14 +16,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 04eaff110fea021ddee32be650be540894eb703b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3b2a28fe6acf03e52c292048a797ce997f58bcce
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "342430"
 ---
-
 # <a name="expense-policies"></a>Ausgabenrichtlinien
 
 [!include [banner](../includes/banner.md)]
@@ -49,4 +48,3 @@ Sie können drei Arten von Richtlinien definieren:
   und New York City können während der Hauptreisezeit besonders teuer sein. Sie können eine Flugkostenregel definieren, die die      
   Flugkosten nach New York City auf einen Betrag von DKK 5000 festlegt und Sie können angeben, das diese Regeln zwischen 15. März und      
   15. September gilt.
-

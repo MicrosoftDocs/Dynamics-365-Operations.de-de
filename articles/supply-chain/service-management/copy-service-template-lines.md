@@ -1,31 +1,30 @@
 ---
 title: Kopieren von Servicevorlagenpositionen
-description: "Vorlageninformationen können entweder in eine Servicevereinbarung oder in einen Serviceauftrag kopiert werden."
+description: Vorlageninformationen können entweder in eine Servicevereinbarung oder in einen Serviceauftrag kopiert werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 02/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 533fe7fbecb8878a7f9ddf527c33dd68b53ec698
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 5424442b6698b589a55611296d3f404af7707a0b
-ms.openlocfilehash: 791b97cea9f45eff41b99a9d09f399ad1e431af9
-ms.contentlocale: de-de
-ms.lasthandoff: 02/27/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326123"
 ---
-
 # <a name="copy-service-templates-lines"></a>Kopieren von Servicevorlagenpositionen 
 
 [!include [banner](../includes/banner.md)]
@@ -59,6 +58,5 @@ Die Servicevorlagenpositionen werden zusammen mit den zugeordneten Serviceobjekt
 ## <a name="related-topics"></a>Verwandte Themen
 
 [Servicevorlagen](service-template.md)
-
 
 

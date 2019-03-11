@@ -1,13 +1,13 @@
 ---
 title: Vor dem Kauf
-description: "Schrittweise Anleitung, die Sie anwenden, wenn Sie überlegen, Dynamics 365 for Finance and Operations zu kaufen."
+description: Schrittweise Anleitungen, die Sie anwenden sollten, wenn Sie überlegen, Dynamics 365 for Finance and Operations zu kaufen.
 author: kfend
 manager: AnnBe
 ms.date: 01/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -16,19 +16,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.translationtype: HT
-ms.sourcegitcommit: 8166047a768c47219855c55a1008f3dd24cd5344
 ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345466"
 ---
-
 # <a name="before-you-buy"></a>Vor dem Einkauf
 
 [!include [banner](../includes/banner.md)]
 
-Einführung in Dynamics 365 for Finance and Operations? Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie Finance and Operations noch auswerten oder einen Kauf tätigen wollen.
+Neuheiten bei Dynamics 365 for Finance and Operations Wir haben eine Schritt-für-Schritt-Anleitung zusammengestellt, egal, ob Sie Finance and Operations noch auswerten oder einen Kauf tätigen wollen.
 
 ## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Schritt 1: Probieren Sie Finance and Operations 30 Tage lang kostenlos aus
 
@@ -36,12 +35,12 @@ Sie können sich einfach per E-Mail für einen 30-tägigen kostenlosen Test von 
 
 ## <a name="step-two-choose-a-deployment-option"></a>Schritt 2: Auswahl einer Bereitstellungsoption
 
-Jetzt können Sie Microsoft Dynamics 365 for Finance and Operations in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
+Sie können Microsoft Dynamics 365 for Finance and Operations jetzt in der Cloud oder lokal bereitstellen. Cloud-Bereitstellungen bieten einen vollständig von Microsoft verwalteten ERP-Service, während lokale Bereitstellungen lokal im Rechenzentrum des Kunden bereitgestellt werden.
 
 Folgende Überlegungen müssen vorgenommen werden, wenn Sie lokal als Bereitstellungsoption auswählen:
 
 - Gesetzliche Anforderungen und Konformitätsanforderungen, die in den [Cloudzertifizierungen](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities) nicht verfügbar sind
-- Nicht verbundener Geschäftsprozess mit erforderlicher zweitweiliger Internetkonnektivität, um auf Microsoft Dynamics Lifecycle Services (LCS) für die Anwendungslebenszyklus-Verwaltung zuzugreifen
+- Nicht verbundener Geschäftsprozess mit erforderlicher zeitweiliger Internetkonnektivität, um auf Microsoft Dynamics Lifecycle Services (LCS) für die Anwendungslebenszyklus-Verwaltung zuzugreifen
 - [Funktionen, die in lokalen Bereitstellungen aktuell nicht implementiert sind](features-not-implemented-on-prem.md)
 - [Minimale Infrastrukturanforderungen](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
@@ -79,7 +78,7 @@ Ein Anbieter von Microsoft Cloud-Lösungen kann eng mit Ihnen zusammenarbeiten, 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Erwerb über einen Dynamics-Partner (lokal)
 
-Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für den lokalen Betrieb zu erwerben. Weitere Informationen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations (lokal)](purchase-on-premises.md)
+Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für den lokalen Betrieb zu erwerben. Weitere Informationen finden Sie unter [Dynamics 365 for Finance and Operations (lokal) kaufen](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Wählen Sie Ihre Supportoption
 
@@ -96,5 +95,4 @@ Microsoft-FastTrack für Dynamics 365 ist unser Kundenerfolgsservice, der Ihnen 
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Falls Sie ein Upgrade von Dynamics AX 2012 vornehmen oder von AX 2009 migrieren
 
-Wenn Sie ein Kunde sind, der ein Upgrade von Microsoft Dynamics AX 2012 durchführt oder von Microsoft Dynamics AX 2009 migrieren, sind Sie möglicherweise zu einem langfristigeren Test berechtigt. Weitere Informationen erhalten Sie vom <daxcf@microsoft.com>.
-
+Wenn Sie ein Kunde sind, der ein Upgrade von Microsoft Dynamics AX 2012 durchführt oder von Microsoft Dynamics AX 2009 migriert, sind Sie möglicherweise zu einem längerfristigen Test berechtigt. Weitere Informationen erhalten Sie vom <daxcf@microsoft.com>.

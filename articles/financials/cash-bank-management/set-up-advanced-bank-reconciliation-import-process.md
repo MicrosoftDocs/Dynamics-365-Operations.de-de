@@ -1,13 +1,13 @@
 ---
 title: Einrichten des erweiterten Bankabstimmungsimportprozesses
-description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieser Artikel erläutert die Einrichtung der Importfunktion für Ihre Bankauszüge."
+description: Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieser Artikel erläutert die Einrichtung der Importfunktion für Ihre Bankauszüge.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankStatementFormat
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7a04517de6e7695cd27bbc6e6a825e1ccaac7306
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "334564"
 ---
-
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Einrichten des erweiterten Bankabstimmungsimportprozesses
 
 [!include [banner](../includes/banner.md)]
@@ -35,7 +34,7 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszü
 Die Einrichtung des Bankabstimmungsimports variiert je nach Format des elektronischen Bankauszugs. Finance and Operations unterstützt standardmäßig drei Bankauszugsformate: ISO20022 MT940 und BAI2.
 
 ## <a name="sample-files"></a>Beispieldateien
-Für alle drei Formate benötigen Sie Dateien, die den elektronischen Bankauszug aus dem ursprünglichen Format in ein Format übersetzen, das Finance and Operations nutzen kann. Sie finden die erforderlichen Ressourcendateien unter dem Knoten **Ressourcen** im Anwendungs-Explorer-in Microsoft Visual Studio. Kopieren Sie sie an einen einzelnen Speicherort, damit Sie sie während des Installationsvorgangs leichter hochladen können.
+Für alle drei Formate benötigen Sie Dateien, die den elektronischen Bankauszug aus dem ursprünglichen Format in ein Format übersetzen, das Finance and Operations nutzen kann. Sie finden die erforderlichen Ressourcendateien unter dem Knoten **Ressourcen** im Anwendungs-Explorer in Microsoft Visual Studio. Kopieren Sie sie an einen einzelnen Speicherort, damit Sie sie während des Installationsvorgangs leichter hochladen können.
 
 | Ressourcenname                                           | Dateiname                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -176,7 +175,6 @@ Der letzte Schritt ist das Überprüfen des Imports der Bankauszüge.
 8.  Klicken Sie auf **OK**.
 
 Wenn der Import erfolgreich ist, erhalten Sie eine Meldung, die besagt, dass das Auszug importiert wurde. Wenn der Import nicht erfolgreich war, finden Sie den Einzelvorgang im **Datenmanagement**-Arbeitsbereich im Abschnitt **Einzelvorgangshistorie**. Klicken Sie auf **Ausführungsdetails** des Einzelvorgangs, um die Seite **Ausführungszusammenfassung** zu öffnen. Klicken Sie auf **Ausführungsprotokoll anzeigen**, um die Importfehler anzuzeigen.
-
 
 
 

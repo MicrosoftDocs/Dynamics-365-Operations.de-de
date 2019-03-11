@@ -1,13 +1,13 @@
---- 
+---
 title: Auslastungen und Lieferungen mithilfe der Ladungsplanungsworkbench planen
-description: "Im folgenden Verfahren wird gezeigt, wie der Auslastungsplanungswerktisch verwendet wird, um eine Auslastung für einen Auftrag zu erstellen."
+description: Im folgenden Verfahren wird gezeigt, wie der Auslastungsplanungswerktisch verwendet wird, um eine Auslastung für einen Auftrag zu erstellen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1927cff48beb30f934bd066c32ab48dfb9d06f74
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f840a4c15305af5f55451ae7f1cec2da25e685a4
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343902"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Auslastungen und Lieferungen mithilfe der Ladungsplanungsworkbench planen
 
@@ -65,5 +65,4 @@ Im folgenden Verfahren wird gezeigt, wie der Auslastungsplanungswerktisch verwen
 5. Klicken Sie auf Zuweisen.
 6. Schließen Sie die Seite.
 7. Schließen Sie die Seite.
-
 

@@ -1,14 +1,14 @@
 ---
 title: Einzelhandelspreisverwaltung
-description: "In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 für Retail behandelt."
+description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 for Retail behandelt.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 04/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -17,19 +17,18 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362141"
 ---
-
-# <a name="retail-sales-price-management"></a>Einzelhandelspreisverwaltung
+# <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Prozesse für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 für Retail behandelt. Es bezieht sich auf die Konzepte, die an diesem Prozess beteiligt sind, und auf die Auswirkungen der verschiedenen Konfigurationsoptionen für Verkaufspreise.
+Dieses Thema enthält Informationen über den Prozess der Berichterstellung und Verwaltung von Verkaufspreisen in Microsoft Dynamics 365 for Retail. Es bezieht sich auf die Konzepte, die an diesem Prozess beteiligt sind, und auf die Auswirkungen der verschiedenen Konfigurationsoptionen für Verkaufspreise.
 
 ## <a name="terminology"></a>Terminologie
 
@@ -54,7 +53,7 @@ Die folgende Abbildung zeigt, wie Preisgruppen verwendet werden. In dieser Grafi
 
 Wenn Sie Preisgruppen erstellen, sollten Sie eine Gruppe des Uniform Preises für mehrere Arten von Kleinentitäten nicht verwenden. Andernfalls kann es schwierig sein zu ermitteln, warum ein bestimmter Preis oder ein Rabatt auf eine Buchung angewendet wird.
 
-Während die einen ausgestrichene Linie in der Abbildung darstellt, unterstützt Retail die zentrale Funktionen Microsoft Dynamics 365 einer Preisgruppe, die direkt auf einen Debitor festgelegt wird. Jedoch in diesem Fall erhalten Sie nur Handelsvereinbarungen. Falls Sie benutzerdefinierte Preise anwenden möchten, sollten Sie nicht festgelegte Preisgruppen direkt für den Debitor definieren. Stattdessen können Sie Zuordnungen verwenden.
+Wie die rot gestrichelte Linie in der Abbildung zeigt, unterstützt Retail die zentralen Microsoft Dynamics 365-Funktionen einer Preisgruppe, die direkt auf einen Kunden festgelegt wird. Jedoch in diesem Fall erhalten Sie nur Handelsvereinbarungen. Falls Sie benutzerdefinierte Preise anwenden möchten, sollten Sie nicht festgelegte Preisgruppen direkt für den Debitor definieren. Stattdessen können Sie Zuordnungen verwenden.
 
 Die folgenden Abschnitte enthalten weitere Informationen zur Kleinentitäten, die Sie verwenden können, wenn Preise festgelegt werden, wenn eindeutige Preisgruppen verwendet werden. Die Variante von Preisen und Rabatten für alle diese Entitäten ist ein Prozess in zwei Schritten. Diese Schritte können in jedem Auftrag vorgenommen werden. Allerdings besteht die logische Reihenfolge darinm, Preisgruppen auf die Entitäten zuerst festzulegen, da dieser Schritt nicht wahrscheinlich eine einmalige Einstellung ist, die bei der Implementierung geleistet wird. Anschließend wenn Preise und Rabatte erstellt werden, können Sie Preisgruppen die auf diesen Preisen und Rabatten basieren, einzeln festlegen.
 
@@ -67,7 +66,7 @@ Im Einzelhandel ist es sehr typisch, verschiedene Preise in verschiedenen Kanäl
 
 ### <a name="affiliations"></a>Zugehörigkeiten
 
-Bei einer Definition einer allgemeinen Zugehörigkeit ist ein Link die Zuordnung zu einer Gruppe. In Retail sind Zuordnungen Gruppen von Debitoren. Zuordnungen sind ein Teil viel flexibleres Tool für Debitorenpreiskalkulation und -Rabatte als das zentrale Microsoft Dynamics 365 Konzept von Debitorengruppen und Rabattgruppen. Zuerst kann eine Zugehörigkeit für beide Preise und Rabatte verwendet werden, während Nicht-Einzelhandelpreiskalkulation eine andere Gruppe für jeden Typ Rabatt und Preis ist. Danach kann ein Debitor mehrere Zuordnungen haben, jedoch kann nur eine Nicht-Einzelhandelpreiskalkulationsgruppe dem jeweiligen Typ angehören. Schließlich obwohl Zuordnungen verwendet werden, damit sie einem Debitor zugeordnet sind, müssen beide nicht zwangsläufig zugeordnet sein. Eine ad hoc Zugehörigkeit kann für die anonyme Debitoren am POS verwendet werden. Ein typisches Beispiel eines anonymen Zugehörigkeitsrabatts  ist ein Senior- oder Studierenderrabatt, wobei der Kunde einen Rabatt erhält, der momentan durch die Auswahl einer Gruppenmitgliedschaftskarte anzeigt wird.
+Bei einer Definition einer allgemeinen Zugehörigkeit ist ein Link die Zuordnung zu einer Gruppe. In Retail sind Zuordnungen Gruppen von Debitoren. Zuordnungen sind ein wesentlich flexibleres Tool für Kundenpreiskalkulation und -Rabatte als das Microsoft Dynamics 365 Kernkonzept von Debitorengruppen und Rabattgruppen. Zuerst kann eine Zugehörigkeit für beide Preise und Rabatte verwendet werden, während Nicht-Einzelhandelpreiskalkulation eine andere Gruppe für jeden Typ Rabatt und Preis ist. Danach kann ein Debitor mehrere Zuordnungen haben, jedoch kann nur eine Nicht-Einzelhandelpreiskalkulationsgruppe dem jeweiligen Typ angehören. Schließlich obwohl Zuordnungen verwendet werden, damit sie einem Debitor zugeordnet sind, müssen beide nicht zwangsläufig zugeordnet sein. Eine ad hoc Zugehörigkeit kann für die anonyme Debitoren am POS verwendet werden. Ein typisches Beispiel eines anonymen Zugehörigkeitsrabatts  ist ein Senior- oder Studierenderrabatt, wobei der Kunde einen Rabatt erhält, der momentan durch die Auswahl einer Gruppenmitgliedschaftskarte anzeigt wird.
 
 Obwohl Zuordnungen am häufigsten Rabatten zugeordnet sind, können diese auch verwendet werden, um verschiedene Preisgestaltung festzulegen. Wenn beispielsweise ein Einzelhändler für einen Mitarbeiter verkauft, sollte der der Verkaufspreis ändern, anstatt einen Rabatt zu übernehmen in den normalen Preis. Ein anderes Beispiel ist, ein Einzelhändler, der Einzelkunden und Firmenkunden Preise der Firmenkunden auf Grundlage der Einkaufsvolumen anbietet. Zuordnungen aktivieren diese beiden Szenarien.
 
@@ -81,7 +80,7 @@ Ein Treueprogramm hat zusätzliche Funktionen mit Ausnahme von Preisen und Rabat
 
 ### <a name="catalogs"></a>Kataloge
 
-Einige Einzelhändler werden die physischen oder virtuellen Kataloge nutzen und diese Preise für fokussierte Debitorengruppen festlegen. Im Rahmen des Geschäftsmodells zum zielgruppenorientierten Marketing zu einem Katalog können diese differenzielle Einzelhändler Preise auf ihren verschiedenen Katalogen festlegen. Microsoft Dynamics 365 unterstützt diese Funktion und lassen Sie Katalog spezifische Rabatte und -Preise definieren, wie Sie Kanal spezifische oder  Zugehörigkeitbs spezifische Rabatte definieren können. Wenn Sie einen Katalog ändern, können Sie Preisgruppen dem Katalog, als Sie zuordnen können sie einem Kanal, einer Zugehörigkeit oder einem Treueprogramm zuordnen.
+Einige Einzelhändler werden die physischen oder virtuellen Kataloge nutzen und diese Preise für fokussierte Debitorengruppen festlegen. Im Rahmen des Geschäftsmodells zum zielgruppenorientierten Marketing zu einem Katalog können diese differenzielle Einzelhändler Preise auf ihren verschiedenen Katalogen festlegen. Microsoft Dynamics 365 unterstützt diese Funktion und erlaubt Ihnen, katalogspezifische Rabatte und -Preise zu definieren, ebenso wie kanalspezifische oder zuordnungsspezifische Rabatte. Wenn Sie einen Katalog ändern, können Sie Preisgruppen dem Katalog, als Sie zuordnen können sie einem Kanal, einer Zugehörigkeit oder einem Treueprogramm zuordnen.
 
 ### <a name="best-practices-for-price-groups"></a>Optimale Verfahren für Preisgruppen
 
@@ -133,7 +132,7 @@ In Microsoft Dynamics 365 können Sie den Preis eines Produkts an drei Stellen f
 - In einer Verkaufspreis-Handelsvereinbarung
 - In einer Preisregulierung
 
-Der Handelsvereinbarungs-Basispreis und der Basispreis sind Teil des zentralen Microsoft Dynamics 365, und sind verfügbar, wenn keine Einzelhandel verwenden. Die Preisregulierungsfunktionen sind nur im Einzelhandel verfügbar. Der nächste Abschnitt enthält weitere Informationen zu diesen Optionen für das Einrichten von Preisen und beschreibt, wie die Optionen zusammenarbeiten.
+Der Handelsvereinbarungs-Basispreis und der Basispreis sind Teil des zentralen Microsoft Dynamics 365 und sind verfügbar, wenn Sie nicht Einzelhandel verwenden. Die Preisregulierungsfunktionen sind nur im Einzelhandel verfügbar. Der nächste Abschnitt enthält weitere Informationen zu diesen Optionen für das Einrichten von Preisen und beschreibt, wie die Optionen zusammenarbeiten.
 
 ## <a name="setting-prices"></a>Preisfestlegung
 
@@ -202,17 +201,17 @@ Um die Preise von verschiedenen Produkten und von verschiedenen Produktkategorie
 
 ## <a name="best-practices"></a>Optimale Verfahren
 
-Microsoft SQL Server Express ist für Kanaldatenbanken aufgrund der häufig Kosten (Geben Sie die freie). Beachten Sie, dass SQL Server Express Hardwareeinschränkungen und Grenzen auf Datenvolumen hat. Wenn Sie nicht ordnungsgemäß planen, können Sie die Datengrößenbeschränkungen von SQL Server Express schnell erreichen. Diese Überlegung gilt nicht nur der Preiskalkulation sondern auch auf andere Bereiche des Produkts auf. Nachfolgend sind einige Verfahren, die Ihnen beim Erfüllen der Auflagen, Größe zu reduzieren bei Ihren Daten, helfen kann:
+Microsoft SQL Server Express wird häufig für Kanaldatenbanken verwendet, um Kosten einzusparen (kostenlos). Beachten Sie, dass SQL Server Express Hardwareeinschränkungen und Grenzen auf Datenvolumen hat. Wenn Sie nicht ordnungsgemäß planen, können Sie die Datengrößenbeschränkungen von SQL Server Express schnell erreichen. Diese Überlegung gilt nicht nur der Preiskalkulation sondern auch auf andere Bereiche des Produkts auf. Nachfolgend sind einige Verfahren, die Ihnen beim Erfüllen der Auflagen, Größe zu reduzieren bei Ihren Daten, helfen kann:
 
 - Wenn Sie Handelsvereinbarungen verwenden, sollten Sie die alten Handelsvereinbarungen ablaufen lassen, indem Sie ein Enddatum festlegen. Im Laufe der Zeit hilft dieser Ansatz, die Anzahl der Handelsvereinbarungen zu reduzieren, die in den Kanaldatenbanken aufbewahrt werden. Er hilft zudem, die Datenmenge zu verringern, von denen der Herstellkostenkalkulationsalgorithmus mit arbeiten muss.
-- Wenn die Preise sich mit Nebenproduktvarianten unterscheiden, nehmen Sie den Produktbasispreis der allgemeinsten Variante. Nutzen Sie dann nur Handelsvereinbarungen für verschiedene Preise, die Ausnahmen sind. Durch diesen Ansatz können Sie die Anzahl der Handelsvereinbarungsdatensätze reduzieren. Da es so einfach ist, Daten in Microsoft Dynamics 365 importieren, sind Sie möglicherweise versucht, Handelsvereinbarung für jede Variante jedes Produkts zu importieren. Allerdings kann dieser Ansatz dazu führen, viele Handelsvereinbarungen zu produzieren, die denselben Wert besitzen. Daher kann die Größe der Daten leicht erhöht werden.
+- Wenn die Preise sich mit Nebenproduktvarianten unterscheiden, nehmen Sie den Produktbasispreis der allgemeinsten Variante. Nutzen Sie dann nur Handelsvereinbarungen für verschiedene Preise, die Ausnahmen sind. Durch diesen Ansatz können Sie die Anzahl der Handelsvereinbarungsdatensätze reduzieren. Da es so einfach ist, Daten in Microsoft Dynamics 365 zu importieren, könnten Sie versucht sein, für jede Variante jedes Produkts eine Handelsvereinbarung zu importieren. Allerdings kann dieser Ansatz dazu führen, viele Handelsvereinbarungen zu produzieren, die denselben Wert besitzen. Daher kann die Größe der Daten leicht erhöht werden.
 - Einzelhandel verarbeitet Varianten spezifische Preise von dem mit den meisten Angaben zu dem mit den wenigsten Angaben. Wenn eine Produktdimension den Preis nicht beeinträchtigt, müssen Sie keine Handelsvereinbarungen definieren. Beispielsweise ist ein Produkt in drei Farben und vier Größen verfügbar, aber der Preis unterscheidet sich von Größe zu Größe. Wenn eine Handelsvereinbarung für jede Variante definieren wird, erstellen Sie 12 Datensätze. Stattdessen können Sie eine Handelsvereinbarung nur für jede Kombination von Größe definieren und das Farbdimensionsleerzeichen lassen. In diesem Fall erstellen Sie nur vier Datensätze.
 
     Falls nicht jeder Wert einer Dimension einen anderen Preis erzeugt, können Sie eine Handelsvereinbarung für den Produktmaster definieren und alle Produktdimensionen lassen. Definieren Sie dann eine separate Handelsvereinbarung für jeden Dimensionswert, der einen anderen Preis erzeugt. Wenn beispielsweise die XXL-Größe einen höheren Preis hat, aber für alle anderen Größen haben Sie denselben Preis, müssen Sie nur zwei Handelsvereinbarungen haben: eine für den Produktmaster und eine für die XXL-Größe.
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Preise, die Preise für Steuer enthalten und solche, die keine Steuer enthalten
 
-Wenn Sie Verkaufspreise in Microsoft Dynamics 365 festlegen, definiueren Sie nicht, ob der Preiswert den Sie festlegen, Mehrwersteuer einschließt oder nicht. Der Wert ist nur der Preis. Allerdings können Sie mit der Einstellung **Preis enthält Mehrwertsteuer** Einzelhandelskanälen so konfigurieren, sodass sie entweder Steuer von Preisen einbeziehen oder ausschließen. Diese Einstellung wird für den Kanal festgelegt und kann auch in einem bestimmten Unternehmen ändern.
+Wenn Sie Verkaufspreise in Microsoft Dynamics 365 festlegen, definieren Sie nicht, ob der Preis den Sie festlegen, Mehrwersteuer einschließt oder nicht. Der Wert ist nur der Preis. Allerdings können Sie mit der Einstellung **Preis enthält Mehrwertsteuer** Einzelhandelskanälen so konfigurieren, sodass sie entweder Steuer von Preisen einbeziehen oder ausschließen. Diese Einstellung wird für den Kanal festgelegt und kann auch in einem bestimmten Unternehmen ändern.
 
 Wenn Sie mit den Arten der inklusiven und exklusive Steuern arbeiten, ist es für Sie für Preise ordnungsgemäß außerordentlich wichtig, da der Gesamtbetrag, der vom Debitor bezahlt wird, ändert, wenn die Einstellung **Preis enthält Mehrwertsteuer** im Kanal geändert wird.
 
@@ -232,4 +231,3 @@ Das Einzelhandelsmodul unterstützt zudem **nur** die folgenden Preiskalkulation
 
 - Der Preis wird auf Grundlage der Produktdimensionen im Auftrag der verschiedenen Preis von der spezifischsten Preisvariante bis zur am wenigsten spezifischen Preisvariante im Produktmaster-Preis festgelegt. Ein Preis, der festgelegt wird, indem zwei Produktdimensionen verwendet werden (beispielsweise Gesamtlayout, Farbe und Größe), die vor einem Preis verwendet werden, der festgelegt wird, indem nur eine Produktdimension verwendet wird (beispielsweise Gesamtlayout, Größe).
 - Dieselbe Preisgruppe kann verwendet werden, um Preiskalkulation und Rabatte zu steuern.
-

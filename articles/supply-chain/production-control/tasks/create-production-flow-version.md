@@ -1,13 +1,13 @@
---- 
+---
 title: Eine Produktionsflussversion erstellen
 description: Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9a76e5bb6f63f793e4644c2ccf70cef21785ff10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 8903e618a35e66742b5c2ebcb5b6f0da3853fcaf
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "320672"
 ---
 # <a name="create-a-production-flow-version"></a>Eine Produktionsflussversion erstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Für diese Prozedur müssen die Produktionsparameter für Lean Manufacturing und die Messungseinheiten der Klasse "Zeit" definiert werden. Sie müssen auch einen Wertstrom und eine Produktionsgruppe definieren. Weitere Informationen zu Produktionsflüssen und Aktivitäten im Lean Manufacturing, finden Sie im Whitepaper Lean Manufactoring für Microsoft Dynamics AX. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Für diese Prozedur müssen die Produktionsparameter für Lean Manufacturing und die Messungseinheiten der Klasse "Zeit" definiert werden. Sie müssen auch einen Wertstrom und eine Produktionsgruppe definieren. Weitere Informationen zu Produktionsflüssen und Aktivitäten im Lean Manufacturing finden Sie in den Whitepapers zu Lean Manufacturing für Microsoft Dynamics AX. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
 
 ## <a name="create-a-production-flow"></a>Einen Produktionsfluss erstellen
@@ -63,5 +63,4 @@ Ziel dieser Prozedur ist es, eine neue Produktionsflussversion zu erstellen. Fü
 12. Geben Sie im Feld "Periode für tatsächliche Zykluszeit (Tage)" eine Zahl an.
     * Geben Sie die Anzahl von Tagen der Periode für tatsächliche Zykluszeit an. Die Periode für tatsächliche Zykluszeit ist die Anzahl der Tage, in denen Einzelvorgänge ab der tatsächlichen Minute rückwärts erfasst werden, um die tatsächliche Zykluszeit zu berechnen. Der Wert kann jederzeit geändert werden und wird nur für die Berechnung der tatsächlichen Zykluszeiten verwendet.  
 13. Klicken Sie auf "Speichern".
-
 

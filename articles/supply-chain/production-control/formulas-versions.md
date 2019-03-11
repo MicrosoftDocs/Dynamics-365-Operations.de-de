@@ -1,32 +1,31 @@
 ---
 title: Formeln und Formelversionen
-description: "Dieses Thema enthält Informationen zu Formeln und Formelversionen. Eine Formel definiert die Materialien, die Substanz und die Ergebnisse eines bestimmten Prozesses in einem der Fertigungsverarbeitung. Formeln werden verwendet, um in der Fertigungsverarbeitung Produkte zu planen und zu erzeugen."
+description: Dieses Thema enthält Informationen zu Formeln und Formelversionen. Eine Formel definiert die Materialien, die Substanz und die Ergebnisse eines bestimmten Prozesses in einem der Fertigungsverarbeitung. Formeln werden verwendet, um in der Fertigungsverarbeitung Produkte zu planen und zu erzeugen.
 author: cvocph
 manager: AnnBe
 ms.date: 09/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bbffc298ff5d2442092f8f0c987b7e79a7934a84
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4475695b1a00213ab7e3b5060fd38cc71883d2bd
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350112"
 ---
-
 # <a name="formulas-and-formula-versions"></a>Formeln und Formelversionen
 
 [!include [banner](../includes/banner.md)]
@@ -72,4 +71,3 @@ Die Funktion Skalierbar ist nur verfügbar, wenn nur alle Artikelkomponenten in 
 
 ## <a name="use-step-consumption"></a>Verbrauch pro Serie
 Schrittverbrauch beseitigt die Menge auf der **Formelposition**,den Sie für eine Substanz eingeben müssen. Stattdessen wird der  Schrittverbrauch konfiguriert, sodass dieser den **Von Serie**Wert und eine **Menge** besitzt. Auf Basis der Chargenauftragsmenge werden die Informationen aus dem Schritt pro Serie, der die Menge befriedigt, ausgewählt Schrittverbrauch ist hilfreich, wenn der Verbrauchssatz nicht linear in Bezug auf die Chargenauftraggröße ist und die Anforderung nur erhöht, wenn ein bestimmter Mengenschwellenwert erfüllt wird. Um diese Funktion für eine neue Formel, unter der Gruppe **Verbrauchsberechnung** zu aktivieren,ändern Sie die Formeleinstellung für den betreffenden Inhaltsstoff von **Standard** auf **Schritt** Sie können dieser Verbrauchsmethode auf der Registerkarte**Einstellungen** auf der Seite **Formelposition** anzeigen.
-

@@ -1,13 +1,13 @@
 ---
-title: "Zusätzliche Anschaffungsabschreibung"
-description: "In diesem Artikel wird beschrieben, wie die Abschreibung für zusätzliche Anschaffungen in Deutschland berechnet wird und gibt ein Beispiel. Anschaffungregulierungen für Anlagen müssen so kalkuliert werden, als ob die Regulierungen am ersten Tag des Geschäftsjahres vorgenommen wurden, unabhängig davon, wann die Regulierungsbuchungen tatsächlich erstellt wurden."
+title: Zusätzliche Anschaffungsabschreibung
+description: In diesem Artikel wird beschrieben, wie die Abschreibung für zusätzliche Anschaffungen in Deutschland berechnet wird und gibt ein Beispiel. Anschaffungregulierungen für Anlagen müssen so kalkuliert werden, als ob die Regulierungen am ersten Tag des Geschäftsjahres vorgenommen wurden, unabhängig davon, wann die Regulierungsbuchungen tatsächlich erstellt wurden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetAcquisitionMethod, AssetDepreciationProfile
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 09ba17d3ac28b630f6193284019b5cd0c9f1ece7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2280dbc1eaf072cb1655104bdb224d983625148d
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370327"
 ---
-
 # <a name="additional-acquisition-depreciation"></a>Zusätzliche Anschaffungsabschreibung
 
 [!include [banner](../includes/banner.md)]
@@ -43,7 +42,6 @@ Im Jahre 2015 erwarb Ihre Organisation eine Anlage für 60.000. Ihre Organisatio
 | März 2016    | 1.000                                                           | 250 für Januar, 250 für Februar und 250 für März              | 1,750                     |
 | April 2016    | 1.000                                                           | 250                                                               | 1,250                     |
 | Mai 2016      | 1.000                                                           | 250                                                               | 1,250                     |
-
 
 
 

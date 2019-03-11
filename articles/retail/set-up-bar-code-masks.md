@@ -5,9 +5,9 @@ author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: d3527807650061804212abf67e536c17078aabf9
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "340613"
 ---
-
 # <a name="set-up-bar-code-masks"></a>Einrichten von Strichcodemasken
 
 [!include [banner](includes/banner.md)]
@@ -51,7 +50,7 @@ Strichcodemasken werden verwendet, um Strichcodes erstellen und Strichcodes schn
 | Mitarbeiter         | Gibt Strichcodesegment für die Mitarbeiterkennung an, für die Anmeldung des Strichcodes POS verwendet wird. |
 | Debitor         | Gibt das Debitorkennungssegment an. |
 | Dateneintrag       | *Nicht implementiert* |
-| Rabattcode    | *Abgeschrieben* ab Dynamics 365 for Retail, Frühling 2017. Früher: Gibt den Skontocode für einen Strichcode an, der verwendet wird, um dem Rabatt eine Verkaufsstellenbuchung .hinzuzufügen |
+| Rabattcode    | *Veraltet* ab Dynamics 365 for Retail Frühjahr 2017 Version. Früher: Gibt den Skontocode für einen Strichcode an, der verwendet wird, um dem Rabatt eine Verkaufsstellenbuchung .hinzuzufügen |
 | Couponcode      | Legt den Couponcode für einen Strichcode fest, das verwendet wird, um dem Rabatt einen Kleinauftrag hinzuzufügen. Dies hat den Skontocode ersetzt. |
 | Geschenkkarte        | Gibt eine Geschenkkartennummer beim Abgang oder Zahlung per Geschenkkarte an. |
 | Treuekarte     | Fügt einen Debitor mit Kundentreue der Buchung hinzu und kann beim Zahlen nach Treue verwendet werden. |
@@ -84,4 +83,3 @@ Strichcodemasken müssen den Strichcodes zugewiesen werden, bevor sie verwendet 
 5. Klicken Sie auf **Speichern**.
 
 Die kann nun Strichcodemaske verwendet werden, ob Strichcodes für Produkte erstellen. Die oben genannten Schritte sind Beispiele dazu, wie von Strichcodemasken für Produkte erstellt, doch sie werden auch, wie Strichcodemasken für alle anderen Strichcodetypen unterstützten erstellt. Strichcodemasken, Arten und Länge soll Verwendung in Ihrer Umgebung bestimmten angepasst werden.
-

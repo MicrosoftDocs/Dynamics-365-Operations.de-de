@@ -1,13 +1,13 @@
 ---
 title: Lohn auf Basis von Erfassungen
-description: "In diesem Thema wird erläutert, wie Lohn auf der Grundlage der Erfassungen von Arbeitskräften berechnet wird."
+description: In diesem Thema wird erläutert, wie Lohn auf der Grundlage der Erfassungen von Arbeitskräften berechnet wird.
 author: johanhoffmann
 manager: AnnBe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
+ms.openlocfilehash: f36c411ce24dfd8cceacda3d4659ec9a98fd5aa9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "321109"
 ---
-
 # <a name="pay-based-on-registrations"></a>Lohn auf Basis von Erfassungen
 
 [!include [banner](../includes/banner.md)]
@@ -600,4 +599,3 @@ Wenn die Arbeitskraft nicht zur Arbeit kommt an einen Arbeitstag und keine gepla
 - Automatisches Einfügen von Abwesenheit
 
 Wenn die täglichen Erfassungen für eine Arbeitskraft berechnet werden, die für Gleitzeiten aktiviert ist, wird der Abwesenheitscode, der im Feld **Automatische Einfügung von Gleitzeit-** angegeben ist, als Standardabwesenheitscode verwendet. Wenn die Arbeitskraft nicht für Gleitzeiten aktiviert ist, wird der Abwesenheitscode, der im Feld **Automatische Einfügungsabwesenheit** angegeben ist, verwendet. Wenn ein Unternehmen einer Kombination von Arbeitskräften hat, die für Gleitzeiten und Arbeitskräfte aktiviert werden, die nicht für Gleitzeiten aktiviert sind, müssen beide Parameter eingerichtet werden.
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Erstellen eines neuen Produktlebenszyklus-Status
 description: Diese Prozedur zeigt, wie ein neuer Produktlebenszyklus-Status erstellt wird.
 author: cvocph
 manager: AnnBe
 ms.date: 12/05/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6e3293caa905eacaebc757a57ec5b104629b6a8d
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 74606b1378e94e8a6945a408520c8b68648970d8
-ms.openlocfilehash: e675c954769e07b7d0bd7a8d1fd1d66d4270d908
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "322397"
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Erstellen eines neuen Produktlebenszyklus-Status
 
@@ -34,5 +34,4 @@ Diese Prozedur zeigt, wie ein neuer Produktlebenszyklus-Status erstellt wird. Ei
 2. Klicken Sie auf "Neu".
 3. Geben Sie im Feld „Status” einen Wert ein.
 4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-
 

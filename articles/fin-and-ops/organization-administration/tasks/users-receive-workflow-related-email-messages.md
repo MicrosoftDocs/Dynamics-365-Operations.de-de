@@ -1,13 +1,13 @@
---- 
-title: "Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erhalten."
-description: "Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu senden, wenn workflowbezogene Ereignisse auftreten."
+---
+title: Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erhalten.
+description: Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu senden, wenn workflowbezogene Ereignisse auftreten.
 author: jasongre
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysUserManagement, SysUserSetup
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6800d02878123388611d35760123d0215e9d539f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 1ff7de584631563939104c87b00fdc26bdb1a3cb
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344592"
 ---
 # <a name="enable-users-to-receive-workflow-related-email-messages"></a>Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erhalten.
 
@@ -39,5 +39,4 @@ Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu sende
     * Wenn der Benutzer Benachrichtigungen im Microsoft -Client erhalten soll, aktivieren Sie das Kontrollkästchen „Benachrichtigungen per E-Mail senden”.  
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
-
 

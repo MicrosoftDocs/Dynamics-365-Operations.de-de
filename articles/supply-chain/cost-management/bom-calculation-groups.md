@@ -1,13 +1,13 @@
 ---
-title: "Stücklistenkalkulationsgruppen"
-description: "Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite \"Herstellkostenkalkulation\" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation."
+title: Stücklistenkalkulationsgruppen
+description: Dieser Artikel enthält Informationen zu Herstellungskostenkalkulationsgruppen und wie man sie einrichtet. Um eine Herstellkostenkalkulation auszuführen, müssen Sie entweder Berechnungsgruppen einrichten und sie einzelnen Artikeln zuweisen oder eine Standardberechnungsgruppe festlegen. Die Berechnungseinstellungen einer Berechnungsgruppe dienen dann auf der Seite "Herstellkostenkalkulation" als Standardwerte zum Zeitpunkt der Herstellkostenkalkulation.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 55bca29016e06b6ed71c0f1a4aa412401976ebdd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d1bc67038c6080bb96d524a549deddbc8d4e0b
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362877"
 ---
-
 # <a name="bom-calculations-groups"></a>Stücklistenkalkulationsgruppen
 
 [!include [banner](../includes/banner.md)]
@@ -96,7 +95,6 @@ Eine Herstellkostenkalkulation generiert Warnmeldungen. Sie können Warnungen zu
 -   Kennzeichnung, wenn von dem Artikel in einer Stücklistenposition der gewünschte Rentabilitätsprozentwert nicht erreicht wird
 
 Sie können mehrere Herstellkostenkalkulationsgruppen je nach Bedarf an Variationen für Warnmeldungen definieren. So kann beispielsweise bereits eine einzelne Herstellkostenkalkulationsgruppe mit Warnbedingungen für eine aktive Stückliste, für eine Nullmenge bei einer Komponente sowie für den Kostenwert "0" (Null) bei einer Komponente ausreichend sein. Beim Starten einer Herstellkostenkalkulation können die Warnbedingungen, die der Herstellkostenkalkulationsgruppe zugeordnet sind, optional außer Kraft gesetzt werden. Sie können auch Warnbedingung hinzufügen oder entfernen. So kann beispielsweise die Warnbedingung für einen aktiven Arbeitsplan entfernt werden, wenn in einer bestimmten Situation keine Arbeitsplandaten vorliegen. **Hinweis:** Zeit und Anwesenheit enthält eine **Berechnungsgruppen**-Seite, jedoch besitzt diese Seite keine Beziehung zu den Herstellkostenkalkulationsgruppen. Arbeitskräfte können in Zeit und Anwesenheit Berechnungsgruppen zugewiesen werden, die die Gruppierung von Arbeitskräften widerspiegeln, die dem gleichen Supervisor oder Manager zugeordnet sind. Die Berechnung der Erfassungen von Arbeitskräften kann entweder automatisch erfolgen oder manuell von einem Supervisor oder Manager vorgenommen werden.
-
 
 
 

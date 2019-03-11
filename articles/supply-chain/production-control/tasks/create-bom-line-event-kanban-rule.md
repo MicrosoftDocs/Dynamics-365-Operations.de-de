@@ -1,13 +1,13 @@
---- 
-title: "Kanban-Regel für ein Stücklistenpositionsereignis erstellen"
-description: "Diese Aufgabe konzentriert sich auf die Einstellungen, die zum Erstellen einer Ereignis-Kanban-Regel erforderlich sind, um die Beschaffung für Produktions-Stücklistenpositionen in einer gemischten schlanken und klassischen Produktionsumgebung sicherzustellen."
+---
+title: Kanban-Regel für ein Stücklistenpositionsereignis erstellen
+description: Diese Aufgabe konzentriert sich auf die Einstellungen, die zum Erstellen einer Ereignis-Kanban-Regel erforderlich sind, um die Beschaffung für Produktions-Stücklistenpositionen in einer gemischten schlanken und klassischen Produktionsumgebung sicherzustellen.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 82a4252548fd030f2a044436ff607da5125d2854
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 452cc5cf6060b71f91ad43e39e756dc23d759448
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337094"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Kanban-Regel für ein Stücklistenpositionsereignis erstellen
 
@@ -82,5 +82,4 @@ Diese Aufgabe konzentriert sich auf die Einstellungen, die zum Erstellen einer E
 8. Markieren Sie in der Liste die ausgewählte Zeile.
     * Beachten Sie das Kanban, das erstellt wird, um M0001 für den vorkalkulierten Produktionsauftrag zu liefern.  
     * Dies ist der letzte Schritt!  
-
 

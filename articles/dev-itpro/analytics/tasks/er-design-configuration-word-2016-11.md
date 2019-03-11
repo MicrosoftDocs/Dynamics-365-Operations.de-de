@@ -1,13 +1,13 @@
---- 
+---
 title: EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
-description: "In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Elektronische Berichterstellungs-Formate zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann."
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Formate für die elektronische Berichterstellung zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: dc47d44285af4c720d2f450d11fb1004ef461d0f
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "362348"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Elektronische Berichterstellungs-(ER)-Formate zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
+In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Formate für die elektronische Berichterstellung (EB) zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
 
 Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen. Im Voraus müssen Sie auch die folgenden Vorlagen für den Beispielbericht herunterladen und lokal speichern:
 
@@ -35,7 +35,7 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenlei
 - [Begrenzte Vorlage eines Zahlungsberichtes](https://go.microsoft.com/fwlink/?linkid=862266)
 
 
-Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Diese Prozedur ist eine Funktion, für die in Microsoft Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Wählen Sie die vorhandene ER-Berichtskonfiguration aus
@@ -99,5 +99,4 @@ Diese Prozedur ist eine Funktion, die in Microsoft Dynamics 365 for Operations, 
 16. Klicken Sie auf "OK".
 17. Klicken Sie auf "OK".
     * Analysieren Sie das generierte Ergebnis. Beachten Sie, dass die erstellte Ausgabe im Word-Format dargestellt wird und die Details der verarbeiteten Zahlungen enthält.  
-
 

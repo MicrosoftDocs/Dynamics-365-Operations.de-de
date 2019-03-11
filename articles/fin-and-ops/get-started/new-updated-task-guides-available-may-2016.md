@@ -1,13 +1,13 @@
 ---
-title: "Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)"
-description: "Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (Mai 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht."
+title: Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)
+description: Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden, die für die Microsoft APQC Unified-Bibliothek (Mai 2016 – alle Sprachen) für Microsoft Dynamics AX veröffentlicht wurden, auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,32 +17,31 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: cf12f2dfb62645fc5d6886ef429441c48982d484
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341349"
 ---
-
 # <a name="new-or-updated-task-guides-may-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (Mai 2016 -- alle Sprachen) für Microsoft Dynamics AX auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht. 
+Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden, die für die Microsoft APQC Unified-Bibliothek (Mai 2016 – alle Sprachen) für Microsoft Dynamics AX veröffentlicht wurden, auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht. 
 
-## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 - alle Sprachen)
+## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 – alle Sprachen)
 
-Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisierung der Hilfe von Microsoft Dynamics AX können 2016 und Microsoft Dynamics AX Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden für die Hilfe bei dem Microsoft Dynamics AX-Update vom Mai 2016 und der Microsoft Dynamics AX-Version vom Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
 
 > [!NOTE]
-> :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass die Aufgabe für diesen Geschäftsprozess für Dynamics AX 2016 (Mai 2016) erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
+> :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für das Dynamics AX-Update vom Mai 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktion
 
 | BPM-Zeile                                                                 | Land/Region                    |
 |--------------------------------------------------------------------------|-----------------------------------|
-| Einrichten der elektronischen OIOUBL-Rechnungsstellung                                       | Dänemark                           |
+| Elektronische OIOUBL-Rechnungsstellung einrichten                                       | Dänemark                           |
 | EUR-00002 Generieren Sie eine EU-Intrastat-Meldung                           | Europa                            |
 | EUR-00002 Übertragen Sie Transaktionen an den Intrastat                         | Europa                            |
 | FR-00004 Aktualisieren Sie die Zahlungsmethode für Debitoren                            | Europa                            |
@@ -195,4 +194,3 @@ Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden zur Aktualisi
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
-

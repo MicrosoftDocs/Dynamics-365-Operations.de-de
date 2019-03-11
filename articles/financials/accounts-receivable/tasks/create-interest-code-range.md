@@ -1,13 +1,13 @@
---- 
+---
 title: Einen Zinscode mit einem Bereich erstellen
-description: "Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlage einen Wertebereich zu berechnen."
+description: Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlage einen Wertebereich zu berechnen.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: Interest, CustInterestRange
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 2d76ae320ee43a473b64afe311876cc94b953b20
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 05ca41dd5d660e9f0ef72ee5bd49d800645081a5
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367638"
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Einen Zinscode mit einem Bereich erstellen
 
@@ -51,5 +51,4 @@ Zinscodes können eingerichtet werden, um verschiedene Zinsbeträge auf Grundlag
 20. Geben Sie beim nächsten Von-Wert 7 ein. Dies ist der nächste Monat, für den Sie den neuen Zinsbetrag berechnen.
 21. Geben Sie den Zinssatz pro Monat in Prozent ein, der verwendet wird, um die Zinsen im Monat 7 zu berechnen. In unserem Beispiel ist das 2,5.
 22. Klicken Sie auf "Schließen", um die Einrichtung abzuschließen.
-
 

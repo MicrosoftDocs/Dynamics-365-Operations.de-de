@@ -1,13 +1,13 @@
 ---
 title: Gesamtkostenzuteilungsmethode
-description: "Dieser Artikel zeigt die Richtlinien für die Verwendung der Gesamtkostenzuteilung auf. Gesamtkostenzuteilung ist eine Methode zur Berechnung der Kosten zwischen dem Hauptformelartikel für einen Chargenauftrag und den Kuppelprodukten, die für die Formel definiert werden."
+description: Dieser Artikel zeigt die Richtlinien für die Verwendung der Gesamtkostenzuteilung auf. Gesamtkostenzuteilung ist eine Methode zur Berechnung der Kosten zwischen dem Hauptformelartikel für einen Chargenauftrag und den Kuppelprodukten, die für die Formel definiert werden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cda1c5251b81a3bb73d4d8703d7c3fa1ab4e9c16
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341579"
 ---
-
 # <a name="total-cost-allocation-method"></a>Gesamtkostenzuteilungsmethode
 
 [!include [banner](../includes/banner.md)]
@@ -61,7 +60,6 @@ Das Feld **Nebenproduktkostenzuweisung** auf der Seite **Kuppelprodukte** ist ei
 -   **Prozent** ─ Der Einstandsbetrag wird als Prozentsatz der Gesamtkosten der Rohmaterialien berechnet, die bei der Produktion verbraucht werden. Der Prozentsatz, der für die Berechnung der Quellensteuer verwendet wird, wird im Feld eingegeben.
 -   **Pro Serie** ─ Der Einstandsbetrag wird als Betrag pro Standardchargengröße des Produktionsauftrags berechnet. Dieser Betrag ist unabhängig von der gemeldeten Menge in der Produktion. Der Betrag, der für die Berechnung verwendet wird, wird im Feld eingegeben.
 -   **Nach Menge** ─ Der Einstandsbetrag wird als Betrag pro gemeldeter Menge des Formelartikels in der Produktion berechnet. Der Betrag, der für die Berechnung verwendet wird, wird im Feld eingegeben.
-
 
 
 

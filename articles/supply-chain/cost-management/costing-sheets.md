@@ -1,13 +1,13 @@
 ---
-title: "Nachkalkulationsbögen"
-description: "Durch die Einrichtung des Nachkalkulationsbogens werden zwei Ziele verfolgt: Zum einen wird das Format definiert, das zum Anzeigen von Wareneinsatzinformationen für einen produzierten Artikel oder einen Produktionsauftrag verwendet wird. Die formatierte Anzeige wird als Nachkalkulationsbogen bezeichnet. Zum anderen wird die Grundlage für die Berechnung indirekter Kosten definiert. Die Einstellungen des Nachkalkulationsbogens basieren auf der Kostengruppenfunktion für die Informationsanzeige sowie für die Berechungsformeln für indirekte Kosten. In diesem Artikel werden die beiden Ziele des Nachkalkulationsbogens beschrieben:"
+title: Nachkalkulationsbögen
+description: 'Durch die Einrichtung des Nachkalkulationsbogens werden zwei Ziele verfolgt: Zum einen wird das Format definiert, das zum Anzeigen von Wareneinsatzinformationen für einen produzierten Artikel oder einen Produktionsauftrag verwendet wird. Die formatierte Anzeige wird als Nachkalkulationsbogen bezeichnet. Zum anderen wird die Grundlage für die Berechnung indirekter Kosten definiert. Die Einstellungen des Nachkalkulationsbogens basieren auf der Kostengruppenfunktion für die Informationsanzeige sowie für die Berechungsformeln für indirekte Kosten. In diesem Artikel werden die beiden Ziele des Nachkalkulationsbogens beschrieben:'
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CostSheetDesigner
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1421049adb86916202ad6f7ee748c8525fd55fa8
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3988bd478cfad791b5d4c73d28a86c9cfb68288f
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312760"
 ---
-
 # <a name="costing-sheets"></a>Nachkalkulationsbögen
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Anhand zweier Sperrrichtlinien für Nachkalkulationsversionen wird bestimmt, ob 
 Nach dem Definieren des Formats für den Nachkalkulationsbogen sowie nach den Berechnungen für indirekte Kosten müssen die Informationen in einem separaten Schritt geprüft und gespeichert werden. Bei dem Nachkalkulationsbogen handelt es sich um ein unternehmensweites Format zur einheitlichen Anzeige der Wareneinsatzinformationen. 
 
 Der Nachkalkulationsbogen wird als Teil der Seite **Artikelkosten berechnen** angezeigt. Dieses Formular wird für den Datensatz mit berechneten Kosten eines produzierten Artikels auf der Seite **Artikelpreis** oder für einen Datensatz mit auftragsspezifischen Berechnungen auf der Seite **Ergebnisse der Herstellkostenkalkulation** aufgerufen. Der Nachkalkulationsbogen kann auch als Teil der der Seite **Preiskalkulations** für einen Produktionsauftrag angezeigt.
-
 
 
 

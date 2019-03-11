@@ -1,13 +1,13 @@
 ---
 title: Spaltendefinitionen in Finanzberichten
-description: "Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden."
+description: Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356345"
 ---
-
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,7 @@ Eine Spaltendefinition kann zwei bis 255 Spalten enthalten.
 Eine Spaltendefinition enthält die folgenden Informationen:
 
 - Eine Spalte der Zeilendefinitionsbeschreibungen
-- Betragsspalten, die Daten aus den Finanzdaten, einem Microsoft Excel-Arbeitsblatt oder Berechnungen an anderen Daten in der Spaltendefinition enthalten
+- Betragsspalten, die Daten aus den Finanzdaten, einem Microsoft Excel-Arbeitsblatt oder Berechnungen anhand anderer Daten in der Spaltendefinition enthalten
 - Formatierungsspalten
 - Attributspalten
 
@@ -171,28 +170,28 @@ Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften 
 
 ### <a name="create-an-automatically-generated-header"></a>Erstellen einer automatisch generierten Überschrift
 
-Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD** und **WKS**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in Groß- und Kleinbuchstaben angezeigt. In einem Standardkalenderjahr  löst **@CalMonthLong** Monat **7** zu **Juli** auf. Wenn der Name des Monats groß geschrieben werden soll(beispielsweise **JULI**), geben Sie den Autotextcode im Feld **Spaltenüberschriftentext** ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes und Text kombinieren. Geben Sie zum Beispiel den folgenden Überschriftstext ein: **Periode@FiscalPeriod-@FiscalYear ab @StartDate bis @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
+Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD** und **WKS**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in gemischter Groß- und Kleinschreibung angezeigt. In einem Standardkalenderjahr z. B., löst **@CalMonthLong** Monat zu **7** zu **Juli** auf. Wenn Sie möchten, dass der Monat in Großbuchstaben angezeigt wird (z. B. **JULI**), geben Sie den AutoText-Code im Feld **Spaltenüberschriftstext** in Großbuchstaben ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes mit Text kombinieren. Geben Sie beispielsweise den folgenden Überschrifttext ein: **Periode @ FiscalPeriod-@FiscalYear von @StartDate zu @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
 
 > [!NOTE]
-> Das Format einiger Teile des Texts, wie das lange Datum, hängen von Ihren regionalen Einstellungen auf dem Finance and Operations-Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren Autotext-Optionen für Spaltenüberschriften aufgeführt.
+> Das Format einiger Teile des Texts, wie das lange Datum, hängen von Ihren regionalen Einstellungen auf dem Finance and Operations-Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren AutoText-Optionen für Spaltenüberschriften aufgelistet.
 
 
-| Autotext-Option und -Code                | Beschreibung |
+| AutoText-Option und -Code                | Beschreibung |
 |-----------------------------------------|-------------|
-| Name des Monats (@CalMonthLong)              | Druckt den Namen des aktuellen Monats in der Spaltenüberschrift. Wenn Sie sich entscheiden, die Beträge im Bericht auf Tausend, Millionen oder Milliarden zu runden, oder wenn Sie die Spaltenbreite im Bericht auf weniger als neun Zeichen festlegen, wird der Name des Monats auf die ersten drei Zeichen gekürzt. |
-| Abgekürzter Monatsname (@CalMonthShort) | Druckt den abgekürzte Monatsnamen für den ausgewählten Finanzzeitraum. |
-| Periodenzahl (@FiscalPeriod)           | Druckt das numerische Formular des Finanzzeitraums, der für diese Spalte gekennzeichnet ist, aus. Wenn die Spalte mehrere Perioden umfasst, wird die letzte Periode im Bereich gedruckt. |
-| Periodenbeschreibung (@FiscalPeriodName)  | Druckt die Finanzzeitraumbeschreibung, die in den Finanzdaten identifiziert wird, aus. |
-| Geschäftsjahr (@FiscalYear)               | Druckt das Geschäftsjahr für die Spalte in der numerischen Formular aus. |
-| Kalenderjahr (@CalYear)                | Druckt das Kalenderjahr für die Spalte in der numerischen Formular aus. |
-| Startdatum (@StartDate)                 | Druckt das Startdatum für die Spalte aus. |
-| Enddatum (@EndDate)                     | Druckt das Enddatum für die Spalte aus. |
-| Einheitsname der Struktur (@UnitName)         | Wenn Sie eine Spalte auf eine bestimmten Einheit der Berichtsbaumstruktur einschränken, drucken Sie den Einheitsnamen in der Spaltenüberschrift aus. |
-| Einheitenbeschreibung (@UnitDesc)            | Wenn Sie eine Spalte auf eine bestimmten Einheit der Berichtsbaumstruktur einschränken, drucken Sie die Einheitsbeschreibung in der Spaltenüberschrift aus. |
-| Buchcode (@BookCode)                   | Druckt den Buchcode, der in der Spalte angegeben wird, aus. |
-| Leerzeile (@Blank)                     | Fügt eine Leerzeile in der Spaltenüberschrift ein. |
+| Monatsname (@CalMonthLong)              | Drucken Sie den Namen des aktuellen Monats in der Spaltenüberschrift aus. Wenn Sie die Beträge im Bericht auf Tausend, Millionen oder Milliarden runden oder die Spaltenbreite im Bericht auf weniger als neun Zeichen festlegen, wird der Monatsname mit den ersten drei Zeichen abgekürzt. |
+| Abgekürzter Monatsname (@CalMonthShort) | Drucken Sie den abgekürzten Monatsnamen für den ausgewählten Buchhaltungszeitraum aus. |
+| Zeitraumnummer (@FiscalPeriod)           | Drucken Sie die numerische Form des Buchhaltungszeitraums für diese Spalte aus. Wenn die Spalte mehrere Zeiträume umfasst, wird der letzte Zeitraum im Bereich ausgegeben. |
+| Zeitraumbeschreibung (@FiscalPeriodName)  | Drucken Sie die Beschreibung des Buchhaltungszeitraums für die Finanzdaten aus. |
+| Geschäftsjahr (@FiscalYear)               | Drucken Sie das Geschäftsjahr für die Spalte in numerischer Form aus. |
+| Kalenderjahr (@CalYear)                | Drucken Sie das Kalenderjahr für die Spalte in numerischer Form aus. |
+| Startdatum (@StartDate)                 | Drucken Sie das Startdatum für die Spalte aus. |
+| Enddatum (@EndDate)                     | Drucken Sie das Enddatum für die Spalte aus. |
+| Einheitsname aus Struktur (@UnitName)         | Druckt den Einheitsnamen in der Spaltenüberschrift, wenn Sie eine Spalte auf eine bestimmte Einheit der Berichtsbaumstruktur einschränken. |
+| Einheitenbeschreibung (@UnitDesc)            | Druckt die Einheitsbeschreibung in der Spaltenüberschrift, wenn Sie eine Spalte auf eine bestimmte Einheit der Berichtsbaumstruktur einschränken. |
+| Buchcode (@BookCode)                   | Druckt den in der Spalte angegebenen Buchcode. |
+| Leerzeile (@Blank)                     | Fügen Sie eine leere Zeile in die Spaltenüberschrift ein. |
 
-### <a name="create-a-conditional-spanning-header"></a>Erstellen einer bedingten verbreiteten Überschrift
+### <a name="create-a-conditional-spanning-header"></a>Erstellen einer Kopfzeile für bedingte Aufteilung
 
 Kopfzeilen für bedingte Aufteilung können basierend auf Daten für spezifische Zeiträume mehrere Spalten umfassen. Wenn Sie beispielsweise über einen Budgetbericht für das Geschäftsjahr verfügen und die tatsächlichen Budgets vergangener Monate mit den voraussichtlichen Budgets für künftige Monate anzeigen möchten, können Sie eine Kopfzeile für bedingte Aufteilung verwenden, um die Kopfzeile des Berichts automatisch zu aktualisieren. Beachten Sie beim Erstellen einer Kopfzeile für bedingte Aufteilung Folgendes:
 
@@ -216,13 +215,13 @@ Kopfzeilen für bedingte Aufteilung können basierend auf Daten für spezifische
 Phyllis erstellt einen Bericht für eine dynamische Sechs-Monats-Prognose. Das Wort "Istwert" soll über die Spalten mit Istdaten gedruckt werden, und das Wort "Budget" soll über die Spalten mit Prognosen für das Budget gedruckt werden. Jeden Monat, den der Bericht ausgeführt wird, gibt es eine Istwert-Spalte mehr und eine Budget-Spalte weniger. Phyllis könnte die Spaltendefinition jedes Mal, wenn der Bericht erstellt wird, manuell ändern und die Kopfzeilen anpassen. Sie möchte jedoch Zeit und Arbeit sparen und erstellt Kopfzeilen für bedingte Aufteilung, von denen automatisch bei jeder Ausführung des Berichts Kopfzeilen über den entsprechenden Spalten erstellt werden. Phyllis öffnet den Berichts-Designer, klickt im Navigationsbereich auf **Spaltendefinition** und öffnet die Spaltendefinition für den Bericht. Sie gibt die folgenden Informationen ein. Der Basiszeitraum in der Berichtsdefinition ist 4.
 
 
-|                     |  A:   | Mrd             | C:             | S             | E:             | Fr             | G:             | H:             | I             | J             | K             | L             | Mo             |
+|                     |  A   | B             | C             | D             | E             | F             | G             | H             | I             | J             | K             | L             | M             |
 |---------------------|------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|
-| Kopfzeile 1            |      | Tatsächlich        | Budget        |               |               |               |               |               |               |               |               |               |               |
-| Kopfzeile 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
-| Kopfzeile 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
-| Spaltentyp         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Buchcode/Attribute |      | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    |
+| Überschrift 1            |      | Istwert        | Budget        |               |               |               |               |               |               |               |               |               |               |
+| Überschrift 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
+| Überschrift 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
+| Spaltentyp         | BESCHR | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
+| Buchcode/Attribut |      | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    | ISTWERT        | BUDGET2012    |
 | Geschäftsjahr         |      | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          | BASE          |
 | Zeitraum              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
 | Abgedeckte Zeiträume     |      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      | PERIODIC      |
@@ -519,7 +518,7 @@ Sie können eine beliebige Kombination von alphanumerischen Zeichen für genaue 
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatieren eines Berichts für mehrere Währungen in einer Spaltendefinition
 
-In einem Bericht mit mehreren Währungen können Beträge in der natürlichen Währung (lokal), in der funktionalen Währung (Standard) oder in der Berichtswährung angezeigt werden. Die funktionale Währung eines Unternehmens wird im Microsoft Dynamics ERP-System definiert. Verwechseln Sie diese ERP-Einstellung nicht mit den Optionen für die regionale Einstellung des Betriebssystems, in denen Sie die Währungssymbole auswählen können, die standardmäßig in Berichten verwendet werden. Die folgenden währungsbezogenen Zellen sind in der Spaltendefinition verfügbar:
+In einem Bericht mit mehreren Währungen können Beträge in der natürlichen Währung (lokal), in der funktionalen Währung (Standard) oder in der Berichtswährung angezeigt werden. Die funktionale Währung eines Unternehmens wird im Microsoft Dynamics ERP-System definiert. Verwechseln Sie diese ERP-Einstellung nicht mit den Optionen für die regionale Einstellung des Betriebssystems, in denen Sie die Währungssymbole auswählen können, die standardmäßig in Berichten verwendet werden. Die folgenden währungsbezogenen Zellen sind in der Spaltendefinition verfügbar:
 
 - **Währungs-Anzeige** – Geben Sie die Art der Währung an (natürliche oder funktionale Währung oder Berichtswährung), in dem die Buchungen angezeigt werden. Diese Funktion wird manchmal auch als Währungsumrechnung bezeichnet. Hierbei handelt es sich um die Möglichkeit, Berichte für Hauptbuchbeträge in einer Währung zu erstellen, bei der es sich möglicherweise nicht um die funktionale Währung des Unternehmens und auch nicht um die Währung handelt, in der die Transaktion eingegeben wurde.
 - **Währungsfilter** - Geben Sie einen Währungsfilter an. Nur Transaktionen, die in der ausgewählten Währung eingegeben werden, werden im Bericht angezeigt.
@@ -612,4 +611,3 @@ Sie können den Betrag in einer Spalte durch eine angegebene Anzahl von Zeiträu
 [Zeilendefinitionen in der Finanzberichterstellung](row-definitions-financial-reporting.md)
 
 [Erweiterte Formatierungsoptionen in der Finanzberichterstellung](advanced-formatting-options-financial-reporting.md)
-

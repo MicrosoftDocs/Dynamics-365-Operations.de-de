@@ -1,13 +1,13 @@
 ---
 title: Gewichteter Durchschnitt (Datum)
-description: "Das Datum für gewichteten Durchschnitt ist ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Dabei werden Lagerabgänge mit dem durchschnittlichen Wert der Artikel bewertet, die an den einzelnen Tagen in der Lagerabschlussperiode im Lager entgegengenommen werden."
+description: Das Datum für gewichteten Durchschnitt ist ein auf dem Prinzip des gewichteten Durchschnitts basierendes Lagermodell. Dabei werden Lagerabgänge mit dem durchschnittlichen Wert der Artikel bewertet, die an den einzelnen Tagen in der Lagerabschlussperiode im Lager entgegengenommen werden.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 9963c17d8ac1854a42cac2a0e19615f13e8cc006
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a258c7d6314546262a3f9d07d06da5cad797d99b
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355402"
 ---
-
 # <a name="weighted-average-date"></a>Gewichteter Durchschnitt (Datum)
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +40,7 @@ Wenn sich an oder vor dem Datum nur ein Zugang ereignet hat, müssen Sie den Dur
 
 Die folgende Formel wird verwendet, um den gewichteten Durchschnitts nach folgender Formel zu berechnen: 
 
-Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
+Gewichteter Durchschnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q*n* × P*n*\]) ÷ (Q1 + Q2 + Q*n*) 
 
 Während des Lagerabschlusses wird die Berechnung innerhalb der Abschlussperiode täglich ausgeführt (siehe folgende Grafik). 
 
@@ -54,7 +53,7 @@ Lagerbuchungen für Lagerabgänge – einschließlich Aufträge, Lagererfassunge
 
 Bei einem Ausgleich handelt es sich um Lagerabschlussbuchungen zur Anpassung der Abgänge an den korrekten gewichteten Durchschnitt des Abschlussdatums. 
 
-**Hinweis:** Weitere Informationen zum Ausgleichen finden Sie im Artikel zum Lagerabschluss. In den folgenden Beispielen werden die Auswirkungen der Verwendung des gewichteten Durchschnitts anhand von fünf Konfigurationen veranschaulicht:
+**Hinweis**: Weitere Informationen zum Ausgleichen finden Sie im Artikel zum Lagerabschluss. In den folgenden Beispielen werden die Auswirkungen der Verwendung des gewichteten Durchschnitts anhand von fünf Konfigurationen veranschaulicht:
 
 -   Direkter Ausgleich für das Datum des gewichteten Durchschnitts, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird
 -   Zusammengefasster Ausgleich für das Datum des gewichteten Durchschnitts, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird
@@ -195,7 +194,6 @@ Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmä�
 -   Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Sequenz der Lagerbuchungen auf der Zeitachse angegeben.
 -   Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
 -   Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch gestrichelte rote Pfeile dargestellt, die diagonal von einem Zugang zu einem Abgang verlaufen.
-
 
 
 

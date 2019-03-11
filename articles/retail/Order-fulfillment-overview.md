@@ -1,13 +1,13 @@
 ---
-title: "Filialauftragserfüllung"
-description: "Dieses Thema enthält eine Übersicht über die Filialauftragserfüllung."
+title: Filialauftragserfüllung
+description: Dieses Thema enthält eine Übersicht über die Filialauftragserfüllung.
 author: rubencdelgado
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
@@ -16,15 +16,14 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "363682"
 ---
-
 # <a name="store-order-fulfillment"></a>Filialauftragserfüllung
 
 [!include [banner](includes/banner.md)]
@@ -123,7 +122,7 @@ Auftragspositionen können jederzeit verpackt werden, nachdem die Auftragspositi
 - **Resultierender Status:** Verpackt oder teilweise verpackt
 - **Resultierender Backoffice-Status:** Geliefert oder teilweise geliefert
 
-Bei dieser Aktivität werden Positionen als verpackt oder teilweise verpackt markiert, und ein Lieferschein wird ausgedruckt. Ein Lieferschein kann gedruckt werden, um die Produkte zu überprüfen, die zusammen verpackt wurden. Das Lieferscheinformat wird in Dynamics 365 for Retail konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Bei dieser Aktivität werden Positionen als verpackt oder teilweise verpackt markiert, und ein Lieferschein wird ausgedruckt. Ein Lieferschein kann gedruckt werden, um die Produkte zu überprüfen, die zusammen verpackt wurden. Das Lieferschein wird in Dynamics 365 for Retail konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Aktivität: Als verpackt markieren**
 
@@ -219,4 +218,3 @@ Auftragserfüllung in der Verkaufsstelle umfasst Filterung, sodass der Benutzer 
 - Erstellungsdatum
 - Lieferdatum
 - Wareneingangsdatum
-

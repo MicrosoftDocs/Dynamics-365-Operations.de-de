@@ -1,13 +1,13 @@
 ---
 title: Projektplanungen und -budgets
-description: "Microsoft Dynamics 365 for Finance and Operations enthält zwei Möglichkeiten Projektplanungen und Projektbudgets zum Verwalten und Steuern Ihrer Projekte."
+description: Microsoft Dynamics 365 for Finance and Operations bietet Projektplanungen und Projektbudgets zur Verwaltung und Kontrolle Ihrer Projekte.
 author: KimANelson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 530a2717427c540d80509c4862e6fb8ea7c5694a
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "310391"
 ---
-
 # <a name="project-forecasts-and-budgets"></a>Projektplanungen und -budgets
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations enthält zwei Möglichkeiten, um Projektplanungen und Projektbudgets Ihrer Projekte zu verwalten und zu steuern. 
+Microsoft Dynamics 365 for Finance and Operations bietet zwei Möglichkeiten, um Projekte zu verwalten und kontrollieren: Projektplanungen und Projektbudgets. 
 
 Sie können die Projektplanung verwenden, wenn die Organisation operativ ausgerichtet ist und der Schwerpunkt auf Umsatzerlösen und Kosten liegt, die aus speziellen Transaktionen stammen. Verwenden Sie die Projektbudgetierung, wenn sich die Organisation eher auf Finanzbeträge konzentriert. 
 
@@ -80,7 +79,6 @@ Projektbudgets werden automatisch zwei Planzahlenmodellen zugeordnet, eines für
 Planzahlenmodelle bestehen aus einer Einzelebenen-Hierarchie. Daher muss jede Projektplanung muss einem Planzahlenmodell zugeordnet sein.
 
 Wenn Sie die Projektplanung verwenden, können Sie Modelle als Teilmodelle festlegen und damit. So können Sie Planungen nach Abteilung, Zeitperiode oder Region erstellen. Es ist z. B. möglich, ein Planzahlenmodell für ein Jahr und anschließend Teilmodelle für die Regionalplanungen "Nordosten", "Südosten", "Nordwesten" und "Südwesten" zu erstellen, die von den Regionsleitern übermittelt werden. Sie können in verfügbaren Berichten unterschiedliche Optionen auswählen, sodass Informationen nach der Gesamtplanung oder nach Teilmodellen angezeigt werden können.
-
 
 
 

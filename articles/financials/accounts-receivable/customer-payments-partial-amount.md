@@ -1,13 +1,13 @@
 ---
-title: "Debitorenzahlungen für einen Teilbetrag"
-description: "Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig."
+title: Debitorenzahlungen für einen Teilbetrag
+description: Es kann vorkommen, dass Debitoren eine Zahlung leisten, die geringer als der in der Rechnung gestellte Betrag ist. In diesem Artikel werden die verschiedenen Möglichkeiten der Vorgehensweise in einer solchen Situation beschrieben. Die zur Verfügung stehenden Optionen sind von den jeweiligen Geschäftsanforderungen und der Konfiguration abhängig.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 510fda7bf35e459e0da5595b083e041bb708c873
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
-ms.contentlocale: de-de
-ms.lasthandoff: 01/17/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "341372"
 ---
-
 # <a name="customer-payments-for-a-partial-amount"></a>Debitorenzahlungen für einen Teilbetrag
 
 [!include [banner](../includes/banner.md)]
@@ -61,4 +60,3 @@ Debitoren machen möglicherweise eine Teilzahlung, in der der verbleibende Betra
 
 
 Weitere Informationen finden Sie unter [Überfällige Debitorenzahlungen](tasks/deposit-customer-payments.md).
-

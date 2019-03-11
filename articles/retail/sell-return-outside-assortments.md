@@ -1,31 +1,30 @@
 ---
-title: "Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind"
-description: "Mit Dynamics 365 for Retail können Sie Produkte außerhalb der Sortimente verkaufen und zurückgeben."
+title: Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind
+description: Mit Dynamics 365 for Retail können Sie Produkte außerhalb eines Sortiments verkaufen und zurückgeben.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352297"
 ---
-
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind
 
 [!include [banner](includes/banner.md)]
@@ -38,7 +37,7 @@ Nachfolgend sind einige typische Szenarios:
 + Ein Einzelhändler führt nicht bestimmte Produkte im Shop oder hat diese nicht an Lager, aber das Produkt ist in einer anderen Filiale verfügbar. Der Mitarbeiter der Filiale kann dem Kunden helfen, das Produkt in einer anderen Filiale zu suchen, diese dem Einkaufskorb hinzuzufügen, sie Auszuchecken und die Versandmethode auszuwählen.
 + Ein Einzelhändler verfügt über eine Vielzahl von Shops in einem bestimmten Ort oder einem Postleitzahlkreis und möchte die Debitoren nicht dazu zwingen, die Produkte demselben Shop zurückzusenden, in dem sie bestellt wurden. Stattdessen können Debitoren Produkten an einem beliebigen Shop zurücksenden.
 
-Das sind allgemeine Szenarien für Einzelhändler, die in Dynamics 365 for Retail zur Verfügung stehen. Mit Retail kénnen Sie:
+Diese allgemeine Szenarien sind in Dynamics 365 for Retail für Einzelhändler verfügbar. Mit Retail kénnen Sie:
 
 + Produkte in anderen Filialen suchen.
 + Alle vorhandenen Produkte suchen.
@@ -47,4 +46,3 @@ Das sind allgemeine Szenarien für Einzelhändler, die in Dynamics 365 for Retai
 + Produkte im aktuellen Shops oder in einer anderen Filiale abholen.
 + Eine Bestellung in der aktuellen Filiale oder in einer anderen Filiale stornieren.
 + Einen Auftrag mit oder ohne Beleg in der aktuellen Filiale oder in einer anderen Filiale zurückgeben.
-

@@ -1,37 +1,36 @@
 ---
-title: "Arbeitsaufträge von Finance and Operations mit Field Service synchronisieren"
-description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegende Aufgabe, die verwendet wird, um Aufträge mit Projektnummer aus Microsoft Dynamics 365 for Field Service mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren."
+title: Arbeitsaufträge mit Projekt von Field Service zu Finance and Operations synchronisieren
+description: Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Microsoft Dynamics 365 for Field Service mit Aufträgen in Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 12/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
+ms.openlocfilehash: 6b61411a5a235e2d0aad8bb25ae4a3bfcf1248d1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
-ms.openlocfilehash: f5bd6b8c554688d0d1b2bfd93a34a60a95412bf3
-ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329849"
 ---
-
 # <a name="synchronize-work-orders-with-project-from-field-service-to-finance-and-operations"></a>Arbeitsaufträge mit Projekt von Field Service zu Finance and Operations synchronisieren
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erläutert die Vorlagen und die zugrunde liegende Aufgabe, die verwendet wird, um Aufträge mit Projektnummer aus Microsoft Dynamics 365 for Field Service mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+Dieses Thema erläutert die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Arbeitsaufträge in Microsoft Dynamics 365 for Field Service mit Aufträgen in Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 
 [![Synchronisierung von Geschäftsprozessen zwischen Finance and Operations und Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)
 
@@ -76,4 +75,3 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="work-orders-with-project-field-service-to-finance-and-operations-workorderservice"></a>Arbeitsaufträge mit Projekct (Field Service zu Finance and Operations): WorkOrderService
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSWOP4.png)](./media/FSWOP4.png)
-

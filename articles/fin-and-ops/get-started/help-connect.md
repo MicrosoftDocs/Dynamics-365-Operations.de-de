@@ -1,13 +1,13 @@
 ---
 title: Verbinden des Hilfesystems
-description: "Dieses Thema beschreibt die Komponenten des Hilfesystems für Microsoft Dynamics 365 for Finance and Operation und enthält einen Überblick, wie sie verbunden und benutzerdefinierte Hilfen erstellt werden können."
+description: Dieses Thema beschreibt die Komponenten des Hilfe-Systems für Microsoft Dynamics 365 for Finance and Operations und bietet einen Überblick, wie sie verbunden werden, und eine Zusammenfassung, wie benutzerdefinierte Hilfe erstellt werden kann.
 author: margoc
 manager: AnnBe
 ms.date: 11/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 673b01648127fe1d19fb3c75c4d6812c4f22c761
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317728"
 ---
-
 # <a name="connect-the-help-system"></a>Verbinden des Hilfesystems
 
 [!include [banner](../includes/banner.md)]
@@ -102,4 +101,3 @@ Microsoft hat ein Whitepaper und einen Beispielcode bereitgestellt, die beschrei
 [Über zur Aufgabenaufzeichnung](../../dev-itpro/user-interface/task-recorder.md)
 
 [Wie Sie Aufgabenaufzeichnungen zu Dokumentations- und Schulungszwecken erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)
-

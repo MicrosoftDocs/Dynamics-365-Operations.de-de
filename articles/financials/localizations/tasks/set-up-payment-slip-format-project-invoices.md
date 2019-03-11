@@ -1,13 +1,13 @@
---- 
-title: "Zahlungsbelegformats für Projektrechnungen einrichten"
-description: "Unternehmen fügen Rechnungen in der Regel gedruckte Zahlungsbelege bei, um Debitoren zu unterstützen und einen Zahlungsnachweis für Buchungen und den Ausgleich von Konten zur Verfügung zu haben."
+---
+title: Zahlungsbelegformats für Projektrechnungen einrichten
+description: Unternehmen fügen Rechnungen in der Regel gedruckte Zahlungsbelege bei, um Debitoren zu unterstützen und einen Zahlungsnachweis für Buchungen und den Ausgleich von Konten zur Verfügung zu haben.
 author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: OMLegalEntity, CustFormletterParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b365585e884749bb73f8ba9054e446f210e10f37
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 9700571110a1b488e250dd8ee7b8c5c8f15cbc01
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "345604"
 ---
 # <a name="set-up-payment-slip-format-for-project-invoices"></a>Zahlungsbelegformats für Projektrechnungen einrichten
 
@@ -65,5 +65,4 @@ Diese Funktion ist für juristische Personen verfügbar, deren primäre Adresse 
     * Keiner – Keinen Zahlungsbeleg drucken. Wählen Sie diese Option aus, wenn die Währung des Zahlungsbetrags nicht Dänische Kronen (DKK) ist.   FIK 751 - Drucken Sie einen FIK 751 Zahlungsbeleg, wenn Sie den Zahlungsbetrag und das Fälligkeitsdatum manuell auf den Zahlungsbeleg schreiben möchten.   FIK 752 - Drucken Sie einen FIK 752 Zahlungsbeleg, wenn Sie einen vom Computer generierten Zahlungsbeleg mit einem vorgedruckten Zahlungsbetrag und einem Fälligkeitsdatum verwenden möchten.  
 16. Klicken Sie auf "Speichern".
 17. Schließen Sie die Seite.
-
 

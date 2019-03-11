@@ -1,13 +1,13 @@
---- 
-title: "Übersicht Kreditorenzahlung"
-description: "Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die verwendet werden, um die Kreditorenzahlungen, umfasst, wie ein Zahlungsvorschlag oder manuell erfolgt eine einmalige Zahlung zu erstellen verwendet."
+---
+title: Übersicht Kreditorenzahlung
+description: Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die verwendet werden, um die Kreditorenzahlungen, umfasst, wie ein Zahlungsvorschlag oder manuell erfolgt eine einmalige Zahlung zu erstellen verwendet.
 author: kweekley
 manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d892366a11edcd92f34f37b3e855631820ba816b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: cafd499e849570cae7b7f58bf2d487a7ac0093e6
-ms.openlocfilehash: e9a94231f755ff23bb442d62e90daff8f2d1f4fb
-ms.contentlocale: de-de
-ms.lasthandoff: 10/30/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359956"
 ---
 # <a name="vendor-payment-overview"></a>Übersicht Kreditorenzahlung
 
@@ -76,5 +76,4 @@ Dieses Aufgabenhandbuch läuft Sie nach den verschiedenen Methoden durch, die ve
 32. Klicken Sie auf "OK".
 33. Klicken Sie zum Generieren der Zahlungen auf OK.
 34. Klicken Sie auf Buchen, wenn alle Zahlungen genehmigt und generiert werden. 
-
 

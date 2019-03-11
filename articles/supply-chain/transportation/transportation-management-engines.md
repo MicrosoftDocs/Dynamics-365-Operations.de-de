@@ -1,13 +1,13 @@
 ---
 title: Transportverwaltungsmodule
-description: "Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten."
+description: Transportverwaltungsmodule definieren die Logik, die verwendet wird, um Transportsätze in der Transportverwaltung zu generieren und zu verarbeiten.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dff811723e25952b4c5af20262010ff4b910be7f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361129"
 ---
-
 # <a name="transportation-management-engines"></a>Transportverwaltungsmodule
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Die folgende Tabelle zeigt die Transportverwaltungsmodule, die in Microsoft Dyna
 | Transportverwaltungsmodul | Beschreibung                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Satzmodul**                  | Berechnet Sätze.                                                                                                                                                                                                                                                                                                           |
-| **Allgemeines Modul**               | Einfache Hilfsmodule, die von anderen Modulen verwendet werden, die keine Daten aus Microsoft Dynamics 365 for Finance and  Operations benötigen, beispielsweise ein Umlagenmodul. Umlagenmodule werden verwendet, um die Endkosten des Transports für bestimmte Aufträge und Positionen zu reduzieren, basierend auf Dimensionen wie Volumen und Gewicht. |
+| **Allgemeines Modul**               | Einfache Hilfsmodule, die von anderen Modulen verwendet werden, die keine Daten aus Microsoft Dynamics 365 for Finance and Operations benötigen, beispielsweise ein Umlagenmodul. Umlagenmodule werden verwendet, um die Endkosten des Transports für bestimmte Aufträge und Positionen zu reduzieren, basierend auf Dimensionen wie Volumen und Gewicht. |
 | **Kilometerleistungsmodul**               | Berechnet die Transportentfernung.                                                                                                                                                                                                                                                                                     |
 | **Transitzeitmodul**          | Berechnet die Zeit, die erforderlich ist, um vom Start- zum Zielort zu gelangen.                                                                                                                                                                                                                                       |
 | **Zonenmodul**                  | Berechnet die Zone basierend auf der aktuellen Adresse und berechnet die Anzahl der Zonen, die durchquert werden müssen, um von Adresse A nach Adresse B zu gelangen.                                                                                                                                                                    |
@@ -63,8 +62,8 @@ In den meisten Fällen können Sie auf die Schaltfläche **Parameter** in den Ei
 |          Parameter           |                                                                                  Beschreibung                                                                                  |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  <em>RateBaseAssigner</em>   | Der .NET-Typ, der die Satz-Basiszuweisungsdaten für ein bestimmtes Schema interpretiert. Die Syntax des Parameterwerts besteht aus zwei Segmenten, getrennt durch einen senkrechten Strich ( |
-|  <em>MileageEngineCode</em>  |                       Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                        |
-| <em>ApportionmentEngine</em> |                        Allgemeiner Modulcode, der das Umlagenmodul in der Microsoft Dynamics 365 for Finance and Operations Datenbank kennzeichnet.                        |
+|  <em>MileageEngineCode</em>  |                       Code des Kilometerleistungsmoduls, der den Datensatz des Kilometerleistungsmoduls in der Microsoft Dynamics 365 for Finance and Operations-Datenbank kennzeichnet.                        |
+| <em>Umlagenmodul</em> |                        Code des allgemeinen Moduls, der den Datensatz des Umlagenmoduls in der Microsoft Dynamics 365 for Finance and Operations-Datenbank kennzeichnet.                        |
 
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Wie werden Metadaten in den Transportverwaltungsmodulen verwendet?
 ----------------------------------------------------------
@@ -90,7 +89,7 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | **Zonenmodul**                                | Erfordert Metadaten, die direkt auf dem Zonenmaster eingerichtet werden.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transitzeitmodul** und **Kilometerleistungsmodul** | Ruft die Metadaten direkt aus dem Formular für die Konfigurationseinrichtung des Kilometerleistungsmoduls ab.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Beispiel für Metadaten für ein Tarifmodul** Das Transportverwaltungsmodul erfordert die Kennung der Ursprungsadresse, des Zielstaats und des Ziellands/der Zielregion sowie des Ausgangs-und Endpunkts der Lieferung. Wenn Sie diese Anforderungen verwenden, würden die Metadaten wie die Daten in der folgenden Tabelle aussehen. Die Tabelle enthält auch Informationen zum Typ der Eingabedaten, der erforderlich ist.
+  **Beispiel für Metadaten für ein Tarifmodul** Das Transportverwaltungsmodul erfordert die Kennung der Ursprungsadresse, des Zielstaats und des Ziellands/der Zielregion sowie des Ausgangs-und Endpunkts der Lieferung. Wenn Sie diese Anforderungen verwenden, würden die Metadaten wie die Daten in der folgenden Tabelle aussehen. Die Tabelle enthält auch Informationen zum Typ der Eingabedaten, der erforderlich ist.
 -   Definieren Sie diese Informationen unter **Transportverwaltung** &gt; **Einstellungen** auf der Seite **Satzbasistyp**.
 
 | Sequenz | Name                          | Feldtyp | Datentyp | Suchtyp    | Obligatorisch |
@@ -100,7 +99,6 @@ Metadaten für Transportverwaltungsmodule werden für die verschiedenen Arten vo
 | 3        | Zielstartpostleitzahl | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 4        | Zielendepostleitzahl   | Zuweisung | Zeichenfolge    | Postleitzahl    | Ausgewählt  |
 | 5        | Zielland           | Zuweisung | Zeichenfolge    | Land/Region |           |
-
 
 
 

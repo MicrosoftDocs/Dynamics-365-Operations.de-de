@@ -1,13 +1,13 @@
 ---
-title: "Überblick über die erweiterte Bankabstimmung"
-description: "In diesem Artikel wird der Fluss für den erweiterten Bankabstimmungsprozess beschrieben. Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren, die aus Bankbuchungen automatisch abgestimmt werden können."
+title: Überblick über die erweiterte Bankabstimmung
+description: In diesem Artikel wird der Fluss für den erweiterten Bankabstimmungsprozess beschrieben. Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren, die aus Bankbuchungen automatisch abgestimmt werden können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationMatchRule
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5c6cec76ebc8328f221ecb6c30ae93716bd9bfe9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ff59250b836a73986848109ce48f843fed1d71a9
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358208"
 ---
-
 # <a name="advanced-bank-reconciliation-overview"></a>Überblick über die erweiterte Bankabstimmung
 
 [!include [banner](../includes/banner.md)]
@@ -40,14 +39,13 @@ Mit der erweiterten Bankabstimmungsfunktion können Sie Bankauszüge importieren
     -   Die Funktionen können in jedes beliebige Format erweitert werden.
 
 2.  Richten Sie einen Nummernkreis ein, der für erweiterte Bankabstimmung verwendet wird, und definieren Sie die Abgleichsregeln für Bankabstimmung.
-    -   Eine Abstimmmungsregel ist eine Gruppe von Kriterien, die verwendet werden, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations  Banktransaktionspositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.
+    -   Eine Abstimmungsübereinstimmungsregel ist eine Gruppe von Kriterien, die verwendet werden, um Bankauszugspositionen und Microsoft Dynamics 365 for Finance and Operations-Bankdokumentpositionen während des Abstimmungsvorgangs zu filtern. Abhängig von Ihrer Geschäftspraktik können Sie mehrere Übereinstimmungsregel einrichten, die Ihren Abstimmungsprozess automatisieren und optimieren.
 
 3.  Stimmen Sie Bankauszüge mit Finance and Operations Banktransaktionen ab.
     -   Führen Sie den automatischen Abgleich und die Erstellung von Abstimmungserfassungen aus.
     -   Zeigen Sie Bankauszüge und Finance and Operations-Banktransaktionen parallel an.
     -   Buchen Sie Finance and Operations-Banktransaktionen automatisch, wenn sie auf einem Bankauszug aber nicht in Finance and Operations angezeigt werden.
     -   Generieren eines Abstimmungsauszugs
-
 
 
 

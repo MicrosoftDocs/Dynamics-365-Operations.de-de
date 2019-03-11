@@ -1,13 +1,13 @@
 ---
-title: "Übersicht zum Abschreibungsbuchupgrade"
-description: "In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind."
+title: Übersicht zum Abschreibungsbuchupgrade
+description: 'In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind.'
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 805f6ab1cd1d0996e685278cc997f532213c76c3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e95fa9dd15dfe5e6b26de61b5dbc1a9a6c0d768d
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "359312"
 ---
-
 # <a name="depreciation-book-upgrade-overview"></a>Übersicht zum Abschreibungsbuchupgrade
 
 [!include [banner](../includes/banner.md)]
 
-In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als ein Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind. 
+In älteren Versionen gab es zwei Bewertungskonzepte für Anlagen: Wertmodelle und Abschreibungsbücher. In Microsoft Dynamics 365 for Operations (1611) wurden die Wertmodellfunktionalität und die Abschreibungsbuchfunktionalität zu einem einzigen Konzept zusammengeführt, das als Buch bekannt ist. Dieses Thema bietet mehrere Dinge, die für das Upgrade zu berücksichtigen sind. 
 
 Durch den Upgradeprozess werden Ihre vorhandenen Einstellungen und alle Ihre vorhandenen Transaktionen zur neuen Buchstruktur verschoben. Wertmodelle bleiben, wie sie zurzeit sind, als Buch, das zum Hauptbuch bucht. Abschreibungsbücher werden zu einem Buch verschoben, bei dem die Option **Ins Hauptbuch buchen** auf **Nein** festgelegt ist. Abschreibungsbuch-Erfassungsnamen werden zu einem Hauptbuch-Erfassungsnamen verschoben, bei dem die Buchungsebene auf **Keine** festgelegt ist. Abschreibungsbuchtransaktionen werden auf eine Anlagenbuchung verschoben. 
 
@@ -70,7 +69,7 @@ Die Parameter befinden sich am Anfang der Klasse  ReleaseUpdateDB70\_FixedAssetJ
 
 *//Wenn der vorhandene Nummernkreisansatz verwendet wird, geben Sie den bestehenden Nummernsequenzcode ein* 
  *//Beleg-Zuweisung geht Zeile-für-Zeile für bestehende Nummernsequenzen.* const str = NumberSequenceExistingCode ''; *//Geben Sie den Umfang des vorhandenen Nummernkreiscode an* 
-**//true, wenn der Nummernkreis der angegebenen Anzahl geteilt wird* 
+ *//true, wenn der Nummernkreis der angegebenen Anzahl geteilt wird* 
  *//false wenn der angegebene Nummernkreis pro Unternehmen ist* 
  *// Der vom System definierte Nummernkreis wird verwendet, wenn ein Nummernkreiscode mit dem angegebenen Bereich nicht gefunden wird.* const boolean NumberSequenceExistingIsShared = true; 
 
@@ -81,7 +80,6 @@ Wenn der vom System generierte Nummernkreisansatz Option verwendet wird (1), nut
 Wenn der Ansatz mit dem benutzerdefinierten vorhandenen Nummernkreis verwendet wird (Option 2), überprüft das Datenupgrade, ob der Nummernkreis mit dem angegebenen Bereich in der Datenbank für jede Partition sowie ein Unternehmen mit Abschreibungsbuchbuchungen vorhanden ist. Ist dies der Fall, wird die Aktualisierung den Prozess Zeile-für-Zeile verarbeiten verwenden, um die Belegnummern zuzuweisen, wie durch den Nummernkreis im Nummernkreisframeworks angegeben. Wenn der Nummernkreis nicht in dem angegebenen Bereich vorhanden ist, wird die Aktualisierung des Nummernkreisansatz systemdefiniert erfolgen, um die Belegnummernserie zuzuweisen und es erstellt einen neuen Nummernkreis mit angegebenen Standardparametern für die Zuweisung.
 
 Bei jedem dieser Ansätze verwendet das Datenupgradeskript auch den Nummernkreis für das Feld **Belegreihen** bei den neuen Hauptbuch-Erfassungsnamen, der für die vorherigen Abschreibungsbuch-Erfassungsnamen erstellt wurde.
-
 
 
 

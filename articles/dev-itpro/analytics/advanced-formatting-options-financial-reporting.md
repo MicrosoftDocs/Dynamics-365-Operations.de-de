@@ -1,13 +1,13 @@
 ---
 title: Erweiterte Formatierungsoptionen in der Finanzberichterstellung
-description: "Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar."
+description: Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "335576"
 ---
-
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 
 [!include [banner](../includes/banner.md)]
@@ -192,7 +191,7 @@ Eine Berechnungsformel ist eine Zeilendefinition und kann die Operatoren **+**, 
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatoren in einer Berechnungsformel
 
-Eine Berechnungsformel verwendet komplexere Operatoren als eine Zeilengesamtformel. Sie können jedoch die Operatoren **\*** und **/** zusammen mit den zusätzlichen Operatoren zum Multiplizieren (\*) und Dividieren (/) von Summen verwenden. Um einen Bereich oder eine Summe in einer Berechnungsformel zu verwenden, müssen Sie das At-Zeichen (@) vor dem Zeilencode verwenden, es sei denn, Sie nutzen eine Spalte in der Zeilendefinition. Um beispielsweise den Betrag in Zeile 100 dem Betrag in Zeile 330 hinzuzufügen, können Sie die **Zeilengesamtformel 100+330**  oder die Berechnungsformel **@100+@330**verwenden.
+Eine Berechnungsformel verwendet komplexere Operatoren als eine Zeilengesamtformel. Sie können jedoch die Operatoren **\*** und **/** zusammen mit den zusätzlichen Operatoren zum Multiplizieren (\*) und Dividieren (/) von Summen verwenden. Um einen Bereich oder eine Summe in einer Berechnungsformel zu verwenden, müssen Sie das At-Zeichen (@) vor dem Zeilencode verwenden, es sei denn, Sie nutzen eine Spalte in der Zeilendefinition. Um beispielsweise den Betrag in Zeile 100 dem Betrag in Zeile 330 hinzuzufügen, können Sie die Zeilengesamtformel **100+330** oder die Berechnungsformel **@100+@330** verwenden.
 
 > [!NOTE]
 > Sie müssen ein At-Zeichen(@) vor jedem Zeilencode verwenden, den Sie in einer Berechnungsformel verwenden. Andernfalls wird die Zahl als absoluter Betrag gelesen. Beispielsweise fügt die Formel **@100+330** dem Betrag in Zeile 100 330 EUR hinzu. Wenn Sie eine Spalte in einer Berechnungsformel referenzieren, ist ein At-Zeichen (@) nicht erforderlich.
@@ -209,11 +208,11 @@ In diesem Beispiel bedeutet die Berechnungsformel **@100+@330**, dass der Betrag
 
 | Zeilencode | Beschreibung                 | Formatcode | Verwandte Formeln/Zeilen/Einheiten | Drucksteuerung | Zeilenmodifizierer | Mit Finanzdimensionen verknüpfen |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Barmittel am Periodenanfang |             |                            | NP            | BB//           | +Konto=\[1100:1110\]       |
-| 370      | Barmittel am Jahresanfang   | CAL         | @100+@330                  | NP            |              |                              |
-| 400      | Barmittel am Periodenanfang | TOT         | 340+370                    |               |              |                              |
+| 340      | Mittel am Anfang der Periode |             |                            | ND            | BB           | +Konto=\[1100:1110\]       |
+| 370      | Mittel zu Jahresbeginn   | CAL         | @100+@330                  | ND            |              |                              |
+| 400      | Mittel am Anfang der Periode | TOT         | 340+370                    |               |              |                              |
 
-Wenn die Zeile in einer Zeilendefinition den Formatcode **CAL** hat und Sie geben eine mathematische Berechnung in die Zelle **Verwandte Formeln/Zeilen/Einheiten** ein, müssen Sie auch den Buchstaben der zugeordneten Spalte und Zeile im Bericht eingeben. Geben Sie **A.120** ein, um Spalte "A", Zeile 120 anzugeben. Sie können auch ein @-Zeichen verwenden, um alle Spalten anzugeben. Geben Sie **@120** ein, um alle Spalten in Zeile 120 anzugeben. Mathematische Berechnungen, die nicht über einen Spaltenbuchstaben oder ein @-Zeichens erfolgen werden als reelle Zahl angesehen.
+Wenn die Zeile in einer Zeilendefinition den Formatcode **CAL** hat und Sie geben eine mathematische Berechnung in die Zelle **Verwandte Formeln/Zeilen/Einheiten** ein, müssen Sie auch den Buchstaben der zugeordneten Spalte und Zeile im Bericht eingeben. Geben Sie **A.120** ein, um Spalte "A", Zeile 120 anzugeben. Sie können auch ein @-Zeichen verwenden, um alle Spalten anzugeben. Geben Sie z. B. **@120** ein, um alle Spalten in Zeile 120 anzugeben. Mathematische Berechnungen, die nicht über einen Spaltenbuchstaben oder ein @-Zeichens erfolgen werden als reelle Zahl angesehen.
 
 > [!NOTE]
 > Wenn Sie einen Bezeichungszeilencode nutzen, um eine Zeile zu referenzieren, müssen Sie einen Punkt (.) als Trennzeichen zwischen dem Spaltenbuchstaben und der Bezeichnung verwenden (beispielsweise **A.GROSS\_MARGIN/A.SALES**). Wenn Sie ein At-Zeichen (@) verwenden, ist kein Trennzeichen erforderlich (beispielsweise **@GROSS\_MARGIN/@SALES**).
@@ -267,21 +266,21 @@ Der Begriff **Perioden** in einer **IF**-Anweisung gibt die Anzahl der Perioden 
 Die Formeln **THEN** und **ELSE** können eine beliebige gültige Berechnung sein, von sehr einfachen Wertzuweisungen bis hin zu komplexen Formeln. Beispielsweise bedeutet die Anweisung **IF A.200&gt;0 THEN A=B.200** "wenn der Wert in der Zelle in Spalte A der Zeile 200 größer ist als 0 (Null), übertrage den Wert der Zelle in Spalte B der Zeile 200 in die Zelle in Spalte A der aktuellen Zeile“. Die vorangehende **IF/THEN**-Anweisung trägt einen Wert in eine Spalte der aktuellen Zeile ein. Sie können jedoch ein At-Zeichen (@) entweder in true/false-Anweisungen oder die Formel eingeben, um alle Spalten darzustellen. Nachfolgend einige andere Beispiele, die in den folgenden Abschnitten beschrieben werden:
 
 - **IF A.200 &gt;0 THEN B.200**: Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus der Zelle B.200 in jede Spalte der aktuellen Zeile platziert.
-- **IF A.200 &gt;0 THEN @200**: Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus jeder Zelle in Zeile 200 in die entsprechende Spalte in der aktuellen Zeile platziert.
+- **IF A.200 &gt;0 THEN @200**: Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus jeder Spalte in Zeile 200 in die entsprechende Spalte in der aktuellen Zeile platziert.
 - **IF @200 &gt;0 THEN @200**: Wenn der Wert in Zeile 200 der aktuellen Spalte positiv ist, wird der Wert von Zeile 200 in die gleiche Spalte in der aktuellen Zeile platziert.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Beschränken einer Berechnung auf eine Berichtseinheit in einer Zeilendefinition
 
-Um eine Berechnung auf eine einzelne Berichtseinheit in einer Berichtsbaumstruktur zu beschränken, sodass der resultierende Betrag nicht in einer Einheit auf höherer Ebene zusammengefasst ist, verwenden Sie den**@Unit** Code unter **Related Formulas/Rows/Units** @Unit-Code in den Zellen Verwandte Formeln/Zeilen/Einheiten in der Zeilendefinition. Der **@Unit** -Code wird in der Spalte B der Berichtsbaumstruktur **Einheitenname**aufgeführt. Wenn Sie den **@Unit**-Code verwenden, wird für die Werte kein Rollup durchgeführt, aber die Berechnung wird auf allen Ebenen aus der Berichtsbaumstruktur ausgewertet.
+Um eine Berechnung auf eine einzelne Berichtseinheit in einer Berichtsbaumstruktur zu beschränken, sodass der resultierende Betrag nicht in einer Einheit auf höherer Ebene zusammengefasst ist, verwenden Sie den **@Unit**-Code in den Zellen **Verwandte Formeln/Zeilen/Einheiten** in der Zeilendefinition. Der **@Unit**-Code wird in der Spalte B der Berichtsbaumstruktur **Einheitenname** aufgeführt. Wenn Sie den Code **@Unit** verwenden, wird für die Werte kein Rollup durchgeführt, aber die Berechnung wird auf allen Ebenen aus der Berichtsbaumstruktur ausgewertet.
 
 > [!NOTE]
 > Zur Verwendung dieser Funktion, muss eine Berichtsbaumstruktur zu einer Zeilendefinition zugeordnet sein.
 
 Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verweisen. Die Berechnung wird in der Zelle **Verwandte Formeln/Zeilen/Einheiten** der Zeilendefinition und der Finanzdatentypeinschränkung erfasst. Die Berechnung muss eine bedingte Berechnung verwenden, die mit einer **IF @Unit**-Konstruktion beginnt. Beispiel: IF @Unit(SALES) THEN @100 ELSE 0. Diese Berechnung enthält die Beträge aus Zeile 100 in jeder Spalte des Berichts, aber nur für die Verkaufseinheit. Wenn mehrere Einheiten SALES benannt sind, wird der Betrag in jeder dieser Einheiten angezeigt. Darüber hinaus kann Zeile 100 eine Finanzdatenzeile sein und kann als NP (kein Druck) definiert werden. In diesem Fall wird das Anzeigen des Betrags in allen Einheiten der Struktur verhindert. Sie können den Betrag auf eine einzelne Spalte des Berichts beschränken, beispielsweise Spalte H, indem Sie eine Spalteneinschränkung nutzen, um den Wert nur in dieser Spalte des Berichts zu drucken. Sie können auch **OR**-Kombinationen in eine **IF**-Anweisung einschließen. Beispiel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Sie können eine Einheit in einer Berechnungstypeinschränkung auf verschiedenen Wegen angeben:
 
-- Geben Sie einen Einheitsnamen ein, um Einheiten mit einzubeziehen, die übereinstimmen. Beispiel: **IF @Unit(SALES)** ermöglicht die Berechnung für jede Einheit namens SALES, auch wenn es mehrere SALES-Einheiten (Verkaufseinheiten) in der Berichtsbaumstruktur gibt.
-- Geben Sie den Unternehmens- und Einheitsnamen ein, um die Berechnung auf bestimmte Einheiten in einem bestimmten Unternehmen zu beschränken. Beispiel: Geben Sie IF  **IF @Unit(ACME:SALES**) ein, um die Berechnung auf Verkaufseinheiten im Unternehmen ACME zu beschränken.
-- Geben Sie den vollständigen Hierarchiecode aus der Berichtsbaumstruktur ein, um die Berechnung auf eine bestimmte Einheit einzuschränken. Geben Sie beispielsweise **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**.ein.
+- Geben Sie einen Einheitsnamen ein, um Einheiten mit einzubeziehen, die übereinstimmen. Beispiel: **IF @UNIT(SALES)** ermöglicht die Berechnung für jede Einheit namens SALES, auch wenn es mehrere SALES-Einheiten (Verkaufseinheiten) in der Berichtsbaumstruktur gibt.
+- Geben Sie den Unternehmens- und Einheitsnamen ein, um die Berechnung auf bestimmte Einheiten in einem bestimmten Unternehmen zu beschränken. Beispiel: Geben Sie **IF @Unit(ACME:SALES** ein, um die Berechnung auf Verkaufseinheiten im Unternehmen ACME zu beschränken.
+- Geben Sie den vollständigen Hierarchiecode aus der Berichtsbaumstruktur ein, um die Berechnung auf eine bestimmte Einheit zu beschränken. Geben Sie beispielsweise **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)** ein.
 
 > [!NOTE]
 > Um den vollständigen Hierarchiecode anzuzeigen, klicken Sie mit der rechten Maustaste in die Berichtsbaumstrukturdefinition, und wählen Sie dann **Berichtseinheitsidentifizierer (H-Code) kopieren** aus.
@@ -298,4 +297,3 @@ Eine **IF/THEN/ELSE**-Anweisung ermöglicht, dass eine Berechnung von den Ergebn
 
 > [!NOTE]
 > Sie können die Ergebnisse einer Berechnung in keine andere Spalte einfügen. Die Ergebnisse müssen in der Spalte sein, die die Formel enthält.
-

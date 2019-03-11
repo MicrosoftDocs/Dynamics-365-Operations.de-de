@@ -1,13 +1,13 @@
 ---
-title: "Überblick über Bestellungen"
-description: "Dieser Artikel enthält allgemeine Informationen zu Bestellungen (POs) und Links zu Artikeln zu den verschiedenen Phasen die eine Bestellung durchläuft."
+title: Überblick über Bestellungen
+description: Dieser Artikel enthält allgemeine Informationen zu Bestellungen (POs) und Links zu Artikeln zu den verschiedenen Phasen die eine Bestellung durchläuft.
 author: FrankDahl
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: b86e934a0ac25b1fe77a3359b74e707fb372ae6b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: d01ef1c496c7c79795d9d740ee755e84434dfdf1
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338980"
 ---
-
 # <a name="purchase-order-overview"></a>Überblick über Bestellungen
 
 [!include [banner](../includes/banner.md)]
@@ -92,7 +91,6 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
 [Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
-
 
 
 

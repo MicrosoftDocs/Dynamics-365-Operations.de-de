@@ -1,13 +1,13 @@
 ---
 title: Finanzberichterstellung
-description: "In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfähigkeiten verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen."
+description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 author: aprilolson
 manager: AnnBe
 ms.date: 09/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
 ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.contentlocale: de-de
-ms.lasthandoff: 09/27/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "316969"
 ---
-
 # <a name="financial-reporting"></a>Finanzberichterstellung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfähigkeiten verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
+In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 
 <a name="accessing-financial-reporting"></a>Finanzberichterstellung nutzen
 -----------------------------
@@ -118,11 +117,10 @@ Wenn Sie auf das Menü **Finanzberichterstellung** klicken, wird die Liste der s
 Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** anklicken im Aktivitätsbereich. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste enthält nur Berichte, die für das Unternehmen erstellt wurden, das Sie in Finance and Operations verwenden. 
 
 > [!NOTE] 
-> Der Computer, auf den Sie den Berichts-Designer-Client herunterladen, muss Version 4.6.2 von Microsoft .NET Framework installiert haben. Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345) Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie den privaten Browser verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Sie können auch einen Bericht ändern, der in der Finanzberichtsliste erscheint. Wenn der Bereich um den Berichtsnamen aktiviert ist, klicken Sie im Aktivitätsbereich auf **Bearbeiten**. Das Berichtsdesigner-Programm startet.
+> Der Computer, auf dem Sie den Berichts-Designer-Client herunterladen, muss Version 4.6.2 von Microsoft .NET Framework installiert haben. Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie den privaten Browser verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Sie können auch einen Bericht ändern, der in der Finanzberichtsliste erscheint. Wenn der Bereich um den Berichtsnamen aktiviert ist, klicken Sie im Aktivitätsbereich auf **Bearbeiten**. Das Berichtsdesigner-Programm startet.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Finanzberichte anzeigen](view-financial-reports.md)
-
 
 
 

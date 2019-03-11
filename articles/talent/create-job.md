@@ -1,13 +1,13 @@
 ---
 title: Komponenten einer Stelle einrichten
-description: "In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können."
+description: In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können.
 author: rschloma
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
 audience: Application User
 ms.author: rschloma
@@ -18,19 +18,17 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 48787d1eb662322c726698573b27023ae9eed56f
+ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: b40b81fc24086e73b54cfe0cb5e6a81ec5838ab5
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "377158"
 ---
-
 # <a name="set-up-the-components-of-a-job"></a>Komponenten einer Stelle einrichten
 
 [!include [banner](includes/banner.md)]
 
-[!include [retail name](includes/retail-name.md)]
 
 In diesem Thema werden die Begriffselemente, die ein Einzelvorgang enthalten kann beschriben und es enthält Beispiele dafür, wie die Elemente in der Organisation verwendet werden können. 
 
@@ -74,8 +72,8 @@ Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreibe
 <tr class="odd">
 <td>Verkaufsleiter</td>
 <td><ul>
-<li><strong>Leistungsbeurteilung</strong> – Überprüfung der Arbeitsleistung jedes Verkäufers.</li>
-<li><strong>Abwesenheitsüberprüfung</strong> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers.</li>
+<li><strong>Leistungsbeurteilung</strong> – Überprüfung der Arbeitsleistung jedes Verkäufers.</li>
+<li><strong>ABS-Überprüfung</strong> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -92,4 +90,3 @@ Verwenden Sie Zuständigkeitsbereiche, um die Arbeitsrollen, Prozesse und Produk
 
 ## <a name="steps-for-creating-a-job"></a>Schritte zum Erstellen einer Stelle
 Im Thema [Definieren neuer Stellen](../fin-and-ops/hr/tasks/define-new-jobs.md) finden Sie die detaillierte Prozedur zum Erstellen einer neuen Stelle. 
-

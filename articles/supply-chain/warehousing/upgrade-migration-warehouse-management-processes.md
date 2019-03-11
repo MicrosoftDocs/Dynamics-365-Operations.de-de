@@ -1,13 +1,13 @@
 ---
-title: Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
-description: "Dieses Thema bietet eine Übersicht über Optionen für die Produkt- und Lagerverwaltungsmigration."
+title: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+description: Dieses Thema bietet eine Übersicht über Optionen für die Produkt- und Lagerverwaltungsmigration.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
 ms.reviewer: josaw
@@ -18,20 +18,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e0ff3a22b89ce22096198d2e1dd1ea9ed10239a9
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "324467"
 ---
-
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
 
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gibt einen Überblick über den Prozess des Upgrades von Microsoft Dynamics AX 2012 R3 mit dem WMSII-Modul auf Microsoft Dynamics 365 for Finance and Operations.
+Dieses Thema enthält einen Überblick der Aktualisierung von Microsoft Dynamics AX R3 2012 bereit und führt das WMSII-Modul, in Microsoft Dynamics 365 for Finance and Operationsaus.
 
 Finance and Operations unterstützt nicht mehr bestehende **WMSII**-Modul von Microsoft Dynamics AX 2012. Stattdessen können Sie das Modul **Lagerortverwaltung** verwenden. Im WMSII-Modul konnten die Bestandsdimensionen Standort und Paletten-ID für die Finanzbestandsaufnahme ausgewählt werden, jedoch kann die Bestandsdimension Paletten-ID nicht für die Finanzbestandsaufnahme im Bereich Finanzen und Betrieb verwendet werden.
 
@@ -84,4 +83,3 @@ Bevor Sie freigegebene Produkte im Modul **Lagerortverwaltung** verwenden könne
 6.  Auf der Seite **Ändern Sie Lagerdimensionsgruppe für Artikel** können Sie die die Artikelnummern, Lagerdimensionsgruppen und die Einheitnummernkreisgruppen hinzufügen. Sie können dieses Schritts direkt auf der Seite ausführen, indem Sie die Microsoft Office-Integration verwenden oder indem Sie in den Datenentitätsprozess [Datenverwaltung](../../dev-itpro/data-entities/data-entities.md) verwenden.
 7.  Überprüfen Sie die vorgeschlagenen Änderungen. Als Teil des Validierungsprozesses treten verschiedene Prüfungen der Datenintegrität auf. Als Teil eines längeren Aktualisierungsprozesses können möglicherweise Probleme auftreten, die auf der Quellimplementierung angepasst werden müssen. In diesem Fall ist eine zusätzliche Datenaktualisierung erforderlich.
 8.  Änderung verarbeiten. Eine Aktualisierung aller Lagerungsdimensionen kann einige Zeit in Anspruch nehmen. Sie können den Fortschritt überwachen, indem Sie die Stapelverarbeitungsauftragaufgaben verwenden.
-

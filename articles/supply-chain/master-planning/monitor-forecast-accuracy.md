@@ -1,13 +1,13 @@
 ---
-title: "Überwachen der Planungsgenauigkeit"
-description: "In diesem Artikel werden die Typen der Planungsgenauigkeit beschrieben, die Microsoft Dynamics 365 Finance and Operations berechnet, und es wird beschrieben, wie Sie die Genauigkeitswerte anzeigen können."
+title: Überwachen der Planungsgenauigkeit
+description: In diesem Artikel werden die Typen der Planungsgenauigkeit beschrieben, die Microsoft Dynamics 365 for Finance and Operations berechnet, und es wird erklärt, wie Sie die Genauigkeitswerte anzeigen können.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ReqDemPlanForecastDetails
 audience: Application User
 ms.reviewer: josaw
@@ -19,19 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d7070c15f9ee23cfdba871af68d1fc5954735651
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 1f54251b6f6937c59293bd44a0fc27272ffd3d55
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356414"
 ---
-
 # <a name="monitor-forecast-accuracy"></a>Überwachen der Planungsgenauigkeit
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel werden die Typen der Planungsgenauigkeit beschrieben, die Microsoft Dynamics 365 Finance and Operations berechnet, und es wird beschrieben, wie Sie die Genauigkeitswerte anzeigen können.
+In diesem Artikel werden die Typen der Planungsgenauigkeit beschrieben, die Microsoft Dynamics 365 for Finance and Operations berechnet, und es wird erklärt, wie Sie die Genauigkeitswerte anzeigen können.
 
 Finance and Operations berechnet die folgenden Typen der Planungsgenauigkeit:
 
@@ -47,7 +46,6 @@ Finance and Operations berechnet die folgenden Typen der Planungsgenauigkeit:
 [Autorisieren der angepassten Planung](authorize-adjusted-forecast.md)
 
 [Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.](remove-historical-outliers-calculating-demand-forecast.md)
-
 
 
 

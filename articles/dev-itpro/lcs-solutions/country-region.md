@@ -1,13 +1,13 @@
 ---
 title: Lokalisierung und rechtliche Funktionen
-description: "Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität erfahren können."
+description: Dieses Thema enthält eine Liste mit Ressourcen, durch die Sie mehr über länder-/regionsspezifische Funktionalität erfahren können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 09/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a8207af4dc9d5059d487bda97959eff559b7ca06
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
-ms.openlocfilehash: e74ad4442e1b6851812f889e79f2fb09060fb87a
-ms.contentlocale: de-de
-ms.lasthandoff: 10/01/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302343"
 ---
-
 # <a name="localization-and-regulatory-features"></a>Lokalisierung und rechtliche Funktionen
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations umfasst Funktionen für die im [Handbuch für Produktlokalisierung und Übersetzungsverfügbarkeit](https://aka.ms/ax-availabilityguide) dokumentierten Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
+Microsoft Dynamics 365 for Finance and Operations umfasst Funktionen für die im [Handbuch für Produktlokalisierung und Übersetzungsverfügbarkeit](https://aka.ms/dynamics_365_international_availability_deck) angegebenen Länder/Regionen. Diese Funktionalität wird auf Grundlage der primären Adresse der aktiven juristischen Person aktiviert. 
 
 Dieses Thema enthält eine Liste mit Ressourcen, die Ihnen Folgendes erleichtern: 
 - Sich weiter über entwicklungsland- und regionsspezifische Lösungen informieren
@@ -45,10 +44,11 @@ Die folgenden Ressourcen enthalten Tipps und Hinweise für Entwickler und ISVs, 
 -   [Lokalisierungsfunktionen klassifizieren](classify-localization-features.md)
 -   [Ländercodes – ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates-and-communication"></a>Lokalisierungsupdates und -kommunikation
+## <a name="regulatory-updates-and-communication"></a>Rechtliche Updates und Kommunikation
 Die folgenden Ressourcen enthalten Informationen zu geplanten und neuen Lokalisierungsfunktionen. 
 
-### <a name="localization-updates"></a>Lokalisierungsupdates
+### <a name="regulatory-updates"></a>Updates zu rechtlichen Bestimmungen
+-   [Updates zu rechtlichen Bestimmungen](../../financials/localizations/regulatory-updates.md)
 -   [Lokalisierungsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Wöchentliche Aktualisierung)
 -   [LCS-Problemsuche](../lifecycle-services/issue-search-lcs.md) (Tägliche Aktualisierung)
 
@@ -74,7 +74,7 @@ Das Tool für die „Elektronische Berichterstellung“ (ER) ermöglicht es Ihne
 ## <a name="task-guides"></a>Aufgabenleitfäden
 Aufgabenleitfäden sind im Produkthilfebereich verfügbar und enthalten eine angeleitete exemplarische Vorgehensweise für wichtige Geschäftsprozesse. Sie können einen Aufgabenleitfaden öffnen, um die Schritte eines Geschäftsprozesses zu lesen, oder Sie können einen Aufgabenleitfaden wiedergeben, um durch einen Geschäftsprozess geführt zu werden und Daten einzugeben.
 
-Weitere Aufgabenleitfäden finden Sie, indem Sie zu einer Seite in Microsoft Dynamics 365 for Finance and Operations navigieren und auf "Hilfe" klicken. Aufgabenleitfäden, die die Seite verwenden, werden im Hilfebereich aufgeführt. Sie können den Hilfebereich auch verwenden, um anhand von Titeln nach Aufgabenleitfäden zu suchen.
+Weitere Aufgabenleitfäden finden Sie, indem Sie zu einer Seite in Microsoft Dynamics 365 for Finance and Operations navigieren und auf „Hilfe“ klicken. Aufgabenleitfäden, die die Seite verwenden, werden im Hilfebereich aufgeführt. Sie können den Hilfebereich auch verwenden, um anhand von Titeln nach Aufgabenleitfäden zu suchen.
 
 Weitere Informationen finden Sie unter [Aufgabenleitfäden](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
@@ -118,7 +118,6 @@ Weitere Informationen finden Sie unter [Aufgabenleitfäden](../../fin-and-ops/ge
         - [Vereinigte Staaten](../../financials/localizations/united-states.md)
     :::column-end:::
 :::row-end:::
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Kreditorenzusammenarbeit mit externen Kreditoren
-description: "In diesem Thema wird erklärt, wie Einkaufsvertreter mit externen Keditoren kooperieren können, um Informationen über Bestellungen und Lieferbestand auszutauschen."
+description: In diesem Thema wird erklärt, wie Einkaufsvertreter mit externen Keditoren kooperieren können, um Informationen über Bestellungen und Lieferbestand auszutauschen.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
 audience: Application User
 ms.reviewer: josaw
@@ -18,19 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350020"
 ---
-
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
 [!include [banner](../includes/banner.md)]
 
-Das Modul **Kreditorenzusammenarbeit** richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Finance and Operations haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Thema wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
+Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Finance and Operations haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Thema wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
 
 Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
 
@@ -260,4 +259,3 @@ Der Benutzer, der Parameter für den Angebotsanforderungsprozess einrichtet, kan
 - %Erstellungsdatum%
 
 Wenn eine Ergänzung erforderlich ist und übermittelt wird, nachdem die Angebotsanforderung gesendet wurde, wird die Angebotsanforderung an alle eingeladenen Kreditoren erneut übermittelt. Das veröffentlichte Dokument wird auch auf der Seite **Offene veröffentlichte Angebotsanforderungen** aktualisiert.
-

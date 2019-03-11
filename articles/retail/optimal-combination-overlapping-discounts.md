@@ -1,13 +1,13 @@
 ---
-title: "Ermittelt die optimale Kombination von überlappenden Rabatten"
-description: "Wenn Rabatte überlappen, müssen Sie die Kombination von Rabatten überlappenden bestimmen, die Buchungssumme niedrigsten oder höchsten den Rechnungsrabatt erzeugen. Wenn der Rabattbetrag gemäß dem Preis der gekauften Produkte schwankt, wie bei üblichen Aktionen wie „kaufen 1 günstiger erhalten“ (BOGO), wird dieser Prozess ein Thema der kombinatorischen Optimierung."
+title: Ermittelt die optimale Kombination von überlappenden Rabatten
+description: Wenn Rabatte überlappen, müssen Sie die Kombination von Rabatten überlappenden bestimmen, die Buchungssumme niedrigsten oder höchsten den Rechnungsrabatt erzeugen. Wenn der Rabattbetrag gemäß dem Preis der gekauften Produkte schwankt, wie bei üblichen Aktionen wie „kaufen 1 günstiger erhalten“ (BOGO), wird dieser Prozess ein Thema der kombinatorischen Optimierung.
 author: kfend
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: eebb532071e7c6bae7cfae93bfe795e79bb16c63
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "360692"
 ---
-
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Ermittelt die optimale Kombination von überlappenden Rabatten
 
 [!include [banner](includes/banner.md)]
 
 Wenn Rabatte überlappen, müssen Sie die Kombination von Rabatten überlappenden bestimmen, die Buchungssumme niedrigsten oder höchsten den Rechnungsrabatt erzeugen. Wenn der Rabattbetrag gemäß dem Preis der gekauften Produkte schwankt, wie bei üblichen Aktionen wie „kaufen 1 günstiger erhalten“ (BOGO), wird dieser Prozess ein Thema der kombinatorischen Optimierung.
 
-Dieser Artikel gilt für Microsoft Dynamics AX 2012 R3 mit KB 3105973 (freigegeben am 2. November 2015) oder höher und Microsoft Dynamics 365 for Retail. Damit die Kombination sich überschneidender Rabatte zeitnah angewendet werden kann, haben wir eine Methode zum Anwenden sich überschneidender Rabatte eingeführt. Es erhalten diese neue Methode angezeigt **Schwellenwertklassifizierung**. Die Schwellenwertklassifizierung wird verwendet, wenn die Zeit, die erforderlich ist, um die möglichen Kombinationen von sich überschneidenden Rabatten zu bewerten, einen Schwellenwert überschreitet, der auf der Seite **Einzelhandelsparameter** konfigurierbar ist. In der Schwellenwertklassifizierungsmethode wird ein Wert für jeden überlappenden Rabatt berechnet, indem der Wert des Rabatts auf den freigegebenen Produkten verwendet. Die überlappenden Rabatte werden dann dem höchsten relativen Wert der niedrigste relativen Wert angewendet. Einzelheiten über die neue Methode, lesen Sie den Abschnitt "Schwellenwert", später in diesem Artikel. Schwellenwertklassifizierung wird nicht verwendet, wenn Skontobeträgen für das Produkt nicht durch unterschiedliche Produkt in der Buchung betroffen sind. Beispielsweise kann diese Methode nicht für zwei einfache Rabatte oder einen einfachen Rabatt und einen einzelnen Produktmengenrabatt verwendet.
+Dieser Artikel gilt für Microsoft Dynamics AX 2012 R3 mit KB 3105973 (veröffentlicht am 2. November 2015) oder höher und für Microsoft Dynamics 365 for Retail. Damit die Kombination sich überschneidender Rabatte zeitnah angewendet werden kann, haben wir eine Methode zum Anwenden sich überschneidender Rabatte eingeführt. Es erhalten diese neue Methode angezeigt **Schwellenwertklassifizierung**. Die Schwellenwertklassifizierung wird verwendet, wenn die Zeit, die erforderlich ist, um die möglichen Kombinationen von sich überschneidenden Rabatten zu bewerten, einen Schwellenwert überschreitet, der auf der Seite **Einzelhandelsparameter** konfigurierbar ist. In der Schwellenwertklassifizierungsmethode wird ein Wert für jeden überlappenden Rabatt berechnet, indem der Wert des Rabatts auf den freigegebenen Produkten verwendet. Die überlappenden Rabatte werden dann dem höchsten relativen Wert der niedrigste relativen Wert angewendet. Einzelheiten über die neue Methode, lesen Sie den Abschnitt "Schwellenwert", später in diesem Artikel. Schwellenwertklassifizierung wird nicht verwendet, wenn Skontobeträgen für das Produkt nicht durch unterschiedliche Produkt in der Buchung betroffen sind. Beispielsweise kann diese Methode nicht für zwei einfache Rabatte oder einen einfachen Rabatt und einen einzelnen Produktmengenrabatt verwendet.
 
 ## <a name="discount-examples"></a>Rabattbeispiele
 
@@ -85,4 +84,3 @@ Um den Abgang einer exponential zunehmenden Anzahl von Kombinationen die Behebun
 ![Überlappende Rabattkombination 06](./media/overlapping-discount-combo-06.jpg)
 
 Nachdem der Schwellenwert eines jeden Rabatts auf einem freigegebenen Produktsatz berechnet wurde, werden die Rabatte auf die freigegebenen Produkten angewendet, und zwar in der Reihenfolge vom höchsten Schwellenwert bis zu niedrigsten Schwellenwert. Bei dieser Methode werden alle restlichen Rabattmöglichkeiten nicht jedes Mal verglichen, nachdem eine einzelne AOS-Instanz einen Rabatt angewendet wurde. Stattdessen werden einmal verglichen überlappenden die Rabatte angewendet und dann im Auftrag. Keine weiteren Vergleiche durchgeführt werden. Sie können den Schwellenwert konfigurieren, die der auf der Schwellenwertmethode **Rabatt** Registerkarte der **Einzelhandelsparameter** Seite zu wechseln. Die akzeptierte Zeit, den Rechnungsrabatt zu berechnen variiert zu Einzelhandel. Allerdings liegt diese Zeit im Allgemeinen im Bereich der zehnten Millisekunden auf einer Sekunde.
-

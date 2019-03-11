@@ -1,31 +1,30 @@
 ---
 title: Erstellen, Genehmigen und Unterschreiben von Angeboten
-description: "In diesem Themas wird ausgeführt, wie Sie ein Angebot für einen Kandidaten mit Dynamics 365 for Talent erstellen, genehmigen und signieren."
+description: In diesem Thema wird ausgeführt, wie Sie ein Angebot für einen Kandidaten mit Dynamics 365 for Talent erstellen, genehmigen und signieren.
 author: josaw
 manager: AnnBe
 ms.date: 12/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent, Core
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
 ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.contentlocale: de-de
-ms.lasthandoff: 12/07/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304571"
 ---
-
 # <a name="creating-approving-and-signing-offers"></a>Erstellen, Genehmigen und Unterschreiben von Angeboten
 
 [!include[banner](../includes/banner.md)]
@@ -149,4 +148,3 @@ Ein Angebot kann von einem Kandidaten jederzeit aus verschiedenen Gründen zurü
 ## <a name="closing-an-offer"></a>Angebotsabschluss 
 
 Wenn ein Angebot angenommen, abgelehnt oder zurückgezogen wurde, ohne dass weitere Aktionen erforderlich sind, können Sie das Angebot schließen, damit keine weitere Änderungen an diesem Angebotspaket vorgenommen werden können.
-

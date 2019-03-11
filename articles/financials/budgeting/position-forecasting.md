@@ -1,13 +1,13 @@
 ---
 title: Positionsplanung
-description: "Ausgaben, die Arbeitskräften zugeordnet sind, machen häufig einem Großteil der Kosten einer Organisation aus. Mit der Positionsplanung können Sie diese Ausgaben planen und in die Planung von Budgets einbeziehen."
+description: Ausgaben, die Arbeitskräften zugeordnet sind, machen häufig einem Großteil der Kosten einer Organisation aus. Mit der Positionsplanung können Sie diese Ausgaben planen und in die Planung von Budgets einbeziehen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: HcmPositionForecast
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bcd7363ba50f1c3a20d9823333df65eab9868d67
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "356161"
 ---
-
 # <a name="position-forecasting"></a>Positionsplanung
 
 [!include [banner](../includes/banner.md)]
@@ -216,7 +215,6 @@ Für den Generierungs- und Auswahlprozess bestimmt das Startdatum für die Posit
 Budgetplanpositionen zeigen die Quelle der Budgetbeträge an (die Planungspositionsnummer), werden jedoch nicht verknüpft. Daher werden Änderungen an der Planungsposition nicht in der Budgetplanposition angezeigt, und Änderungen an der Budgetplanposition werden in der Planungsposition angezeigt. Wenn Sie eine Planungsposition ändern und die Aktualisierungen in einen Budgetplan aufgenommen werden soll, müssen Sie die Planungsposition erneut in den Plan aufnehmen. Allerdings müssen Sie berücksichtigen, dass dieser Prozess alle Positionen entfernt, in denen diese Planungsposition zugewiesen ist. Daher werden die Änderungen, die Sie an diesen Positionen vorgenommen haben, entfernt. 
 
 Um festzustellen, in welche Budgetpläne eine Planungsposition eingefügt wurde, können Sie in den Bericht **Planpositionen nach Budgetplan** generieren. Alternativ können Sie in der Prognoseposition die Infobox **Zugeordnete Budgetpläne** öffnen, um die Pläne anzuzeigen.
-
 
 
 

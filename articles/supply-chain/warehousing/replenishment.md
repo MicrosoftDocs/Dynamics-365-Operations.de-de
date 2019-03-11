@@ -1,13 +1,13 @@
 ---
 title: Wiederbeschaffung
-description: "Dieser Artikel beschreibt die Wiederbeschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind."
+description: Dieser Artikel beschreibt die Wiederbeschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind.
 author: Mirzaab
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 37a5509b6161caffa8f3ab65f1fd8378966c2c30
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
-ms.contentlocale: de-de
-ms.lasthandoff: 04/13/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344523"
 ---
-
 # <a name="replenishment"></a>Wiederbeschaffung
 
 [!include [banner](../includes/banner.md)]
@@ -56,7 +55,7 @@ Bedarfswiederbeschaffung wird für Aufträge, Umlagerungsaufträge, Produktionsa
 ## <a name="minmax-replenishment"></a>Min./Max.-Auffüllung
 In der Min./Max.-Auffüllung wird der Bestand so aufgefüllt, dass er zwischen den minimalen und maximalen Grenzen liegt, die eingerichtet wurden. In der Regel erfolgt dieser Vorgang einmal täglich, um sicherzustellen, dass alle Entnahmeorte maximal gefüllt sind, ehe die Entnahme beginnt. 
 
-Die Mindest- und Höchstbeträge sind in einer Wiederbeschaffungsvorlage festgelegt. Viele andere Einstellungen in der Vorlage ähneln den Einstellungen in Vorlagen, die in der Wellenbedarfsbeschaffung verwendeten werden. Die Vorlage sollte eine Position für jeden Artikel und Lagerplatz enthalten. Wenn Sie die Wiederbeschaffung über einen Batchauftrag ausführen, bewertet Microsoft Dynamics 365 for Finance and Operations, ob die Wiederbeschaffung erforderlich ist, indem die Reihenfolge verwendet wird, in der die Positionen angeordnet sind. 
+Die Mindest- und Höchstbeträge sind in einer Wiederbeschaffungsvorlage festgelegt. Viele andere Einstellungen in der Vorlage ähneln den Einstellungen in Vorlagen, die in der Wellenbedarfsbeschaffung verwendeten werden. Die Vorlage sollte eine Position für jeden Artikel und Lagerplatz enthalten. Wenn Sie die Wiederbeschaffung über einen Stapelverarbeitungsauftrag ausführen, bewertet Microsoft Dynamics 365 for Finance and Operations, ob die Wiederbeschaffung in der Reihenfolge erforderlich ist, in der die Positionen zusammengefasst sind. 
 
 Beachten Sie, dass die Min./Max.-Auffüllungsstrategie keine leere Stelle auffüllen kann, bis der Lagerplatz als fester Lagerort für den Artikel festgelegt ist. Wenn der Lagerplatz, der aufgefüllt werden muss, kein fester Lagerort ist, kann das System nicht ermitteln, welcher Artikel aufgefüllt werden soll. Daher wird zumindest ein gewisser Lagerbestand benötigt, bevor die Wiederbeschaffung stattfinden kann.
 
@@ -77,5 +76,4 @@ Anstatt den Bedarf am Ende eines Zuteilungsprozesses zu bestimmen und die Wieder
 |    Lagerplatzprofile    |                                                                                                        Lagerplatzprofile sind erforderlich, um Lagerplätze zu erstellen.                                                                                                        |
 |   Lagerplatzrichtlinien   |                                                       Lagerplatzrichtlinien sind erforderlich, um die Arbeit zu den Lagerplätzen zu leiten, an denen eine Wiederbeschaffung benötigt wird und zu Lagerplätzen, aus denen der Bestand stammt.                                                        |
 |     Arbeitsvorlagen      |                                                   Arbeitsvorlagen des Typs <strong>Wiederbeschaffung</strong> sind erforderlich, um Wiederbeschaffungsarbeit zu erstellen, damit der Bestand an die gewünschten Lagerplätze verschoben werden kann.                                                    |
-
 

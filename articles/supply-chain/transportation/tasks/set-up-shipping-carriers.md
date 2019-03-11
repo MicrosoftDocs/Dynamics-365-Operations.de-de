@@ -1,13 +1,13 @@
---- 
+---
 title: Einrichten von Spediteuren
-description: "In diesem Verfahren wird gezeigt, wie einen Spediteur eingerichtet wird und Details wie Dienst, Lieferart, Transportzahlungsmittel, Transporteinschränkungen und Versandsatz definiert werden."
+description: In diesem Verfahren wird gezeigt, wie einen Spediteur eingerichtet wird und Details wie Dienst, Lieferart, Transportzahlungsmittel, Transporteinschränkungen und Versandsatz definiert werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 6c5ac13d17c97f20ee79e7faf57c570f02158424
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e27be049bebd63c9266029b8981874417a9f0a8c
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314485"
 ---
 # <a name="set-up-shipping-carriers"></a>Einrichten von Spediteuren
 
@@ -94,5 +94,4 @@ In diesem Verfahren wird gezeigt, wie einen Spediteur eingerichtet wird und Deta
 18. Klicken Sie im Feld "Transitzeitmodul" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 19. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 20. Klicken Sie auf "Speichern".
-
 

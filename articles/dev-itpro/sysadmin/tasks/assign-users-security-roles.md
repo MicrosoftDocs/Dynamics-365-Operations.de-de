@@ -1,13 +1,13 @@
---- 
-title: Weisen Sie Benutzer zu Sicherheitsrollen zu
-description: Wenn Sie auf Microsoft Dynamics 365 for Finance and Operations, Enterprise edition zugreifen, muss der Benutzer einer Sicherheitsrollen zugewiesen werden.
+---
+title: Zuweisen von Benutzern zu Sicherheitsrollen
+description: Für den Zugriff auf Microsoft Dynamics 365 for Finance and Operations Enterprise Edition müssen Benutzer Sicherheitsrollen zugewiesen werden.
 author: maertenm
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
 ms.reviewer: margoc
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 551048af26f46d334c562d1968963aed262a5e03
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349951"
 ---
-# <a name="assign-users-to-security-roles"></a>Weisen Sie Benutzer zu Sicherheitsrollen zu
+# <a name="assign-users-to-security-roles"></a>Zuweisen von Benutzern zu Sicherheitsrollen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Wenn Sie auf Microsoft Dynamics 365 for Finance and Operations, Enterprise edition zugreifen, muss der Benutzer einer Sicherheitsrollen zugewiesen werden. Diese Prozedur zeigt, wie Systemadministratoren Benutzer automatisch zu Rollen zuweisen können, basierend auf Geschäftsdaten. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+Für den Zugriff auf Microsoft Dynamics 365 for Finance and Operations Enterprise Edition müssen Benutzer Sicherheitsrollen zugewiesen werden. Diese Prozedur zeigt, wie Systemadministratoren Benutzer automatisch zu Rollen zuweisen können, basierend auf Geschäftsdaten. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Weisen Sie Benutzer automatisch Rollen zu
@@ -52,5 +52,4 @@ Wenn Sie auf Microsoft Dynamics 365 for Finance and Operations, Enterprise editi
     * Wählen Sie einen Benutzer aus.  
 6. Klicken Sie auf "Von Rolle ausschließen".
     * Klicken Sie auf "Von Rolle ausschließen", um die ausgewählten Benutzer von der Rolle auszuschließen. Um Ausschlüsse zu entfernen, wählen Sie die Benutzer aus, für die Sie Ausschlüsse entfernen möchten, und klicken Sie dann auf "Status zurücksetzen". Wenn Sie einen Ausschluss entfernen, indem Sie den Status des Benutzers zurücksetzen, wird die Rolle des Benutzers erneut automatisch zugewiesen. Allerdings wird der Benutzer nicht sofort der Rolle zugewiesen oder von der Rolle ausgeschlossen, wenn Sie den Status zurücksetzen. Stattdessen wird der Benutzer entweder der Rolle zugewiesen oder von der Rolle entfernt, und zwar das nächste Mal, wenn die Regeln für automatische Rollenzuweisung ausgeführt werden.  
-
 

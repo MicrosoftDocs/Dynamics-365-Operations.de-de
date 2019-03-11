@@ -1,13 +1,13 @@
 ---
-title: "Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes"
-description: "Dieser Artikel beschreibt die Optionen des Felds \"Berechnungsmethoden\" für Mehrwertsteuercodes und wie die Mehrwertsteuer für Intervalle und gesamte Beträge berechnet wird."
+title: Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
+description: Dieser Artikel beschreibt die Optionen des Felds "Berechnungsmethoden" für Mehrwertsteuercodes und wie die Mehrwertsteuer für Intervalle und gesamte Beträge berechnet wird.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxData, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: d16ea19a6d3cfea325281f301e0502bb051381d9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6ac0e2abcb5dce58ad16737a0ef689ceaeb50c44
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "344063"
 ---
-
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
 
 [!include [banner](../includes/banner.md)]
@@ -88,7 +87,6 @@ Die Mehrwertsteuer wird aus der Summe der Steuerbeträge gebildet, die für die 
 
 
 Weitere Informationen erhalten Sie unter [Bestimmen von Mehrwertsteuersteuersätzen auf Grundlage der Felder Berechnungsgrundlage und Berechnungsmethode](marginal-base-field.md).
-
 
 
 

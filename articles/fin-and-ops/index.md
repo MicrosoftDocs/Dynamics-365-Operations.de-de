@@ -1,13 +1,13 @@
 ---
-title: "Dokumentation zu Microsoft Dynamics 365 for Finance and Operations"
-description: "Dokumentation zu Microsoft Dynamics 365 for Finance and Operations."
+title: Microsoft Dynamics 365 for Finance and Operations-Dokumentation
+description: Dokumentation für Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
 ms.date: 08/30/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
@@ -17,21 +17,20 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302313"
 ---
-
-# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation zu Microsoft Dynamics 365 for Finance and Operations
+# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations-Dokumentation
 
 [!include [banner](includes/banner.md)]
 
 Erfahren Sie, wie Sie Microsoft Dynamics 365 for Finance and Operations erfolgreich in Ihrem Unternehmen einsetzen können. Dazu dienen die Ressourcen unten, in denen Sie ausgezeichneten Inhalt für Endbenutzer, Entwickler und IT-Fachkräfte finden. 
 
-Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dynamics 365 for Retail sowie Microsoft Dynamics 365 for Talent. 
+Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Microsoft Dynamics 365 for Retail und Microsoft Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -43,7 +42,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <tr class="odd">
 <td>
 <h3><a href="get-started/before-you-buy.md">Vor dem Einkauf</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Anmelden für ein Vorschauabonnement</a></p>
+<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Für ein Vorschauabonnement anmelden</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Eine Bereitstellungsoption wählen</a></p>
  <p><a href="get-started/purchase-on-premises.md">Finance and Operations (lokal) kaufen</a></p>
 
@@ -54,7 +53,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 
 <h3><a href="../financials/index.md">Finanzverwaltung</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
-<p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitorenkonten</a></p>
+<p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitoren</a></p>
 <p><a href="../financials/budgeting/budgeting-overview.md">Budgetierung</a></p>
 <p><a href="../financials/cash-bank-management/cash-bank-management.md">Bargeld- und Bankverwaltung</a></p>
 <p><a href="../financials/general-ledger/audit-policy-rules.md">Konformität</a></p>
@@ -66,7 +65,7 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale gesetzliche Besonderheiten</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Personalverwaltung</a></h3>
-<p><a href="../talent/manage-benefit-program.md">Vorteile</a></p>
+<p><a href="../talent/manage-benefit-program.md">Vergütungen</a></p>
 <p><a href="../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
 <p><a href="../talent/questionnaires.md">Fragebogen</a></p>
 <p><a href="hr/manage-recruiting-process.md">Personalbeschaffung</a></p>
@@ -115,14 +114,14 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 </td>
 <td>
 <h3>Zugehörige Produkte</h3>
-<h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
+<h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Callcenter</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Kanaleinrichtung und -verwaltung</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS und Cloud POS</p>
 <p><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail-Entwicklung und -Verwaltung</p>
 
-<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Vorteile</a></p>
+<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
+<p><a href="../talent/manage-benefit-program.md">Vergütungen</a></p>
 <p><a href="../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
 <p><a href="../talent/questionnaires.md">Fragebogen</a></p>
 
@@ -131,4 +130,3 @@ Ein Großteil dieses Inhalts gilt auch für zugehörige Produkte: Microsoft Dyna
 
 </tbody>
 </table>
-

@@ -1,13 +1,13 @@
---- 
+---
 title: Erstellen von Einkaufsrichtlinien
-description: "Diese Prozedur zeigt Ihnen, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten."
+description: Diese Prozedur zeigt Ihnen, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten.
 author: mkirknel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 3bd4d6f8625c91f2190e994f04cbec4548272f04
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c2b3a66443394f5bfbe51b6685513281025d68fd
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "312898"
 ---
 # <a name="create-purchasing-policies"></a>Erstellen von Einkaufsrichtlinien
 
@@ -58,5 +58,4 @@ Diese Prozedur zeigt Ihnen, wie Einkaufsrichtlinien so erstellt werden, dass sie
     * Jetzt können Sie andere Richtlinienregeln für die Einkaufsrichtlinie haben.   Beachten Sie, dass ein Richtlinienregeltyp keine sich überschneidenden Regeln haben kann, die gleichzeitig innerhalb einer einzelnen Beschaffungsrichtlinie aktiv sind.  
 5. Schließen Sie die Seite.
 6. Schließen Sie die Seite.
-
 

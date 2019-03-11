@@ -1,13 +1,13 @@
---- 
+---
 title: Positionen einrichten
 description: Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisationshierarchie.
 author: DarinKramer
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart, HcmAllWorkersListPart, HcmPosition, HcmPositionNewPosition, HcmJobLookup, HcmPositionReportsToDialog, HcmPositionLookup, FinancialDimensionDefaultTemplatesLookup, DimensionLookup
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 5d69e6b926a047888a162dae1cdc870718d8f945
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "337876"
 ---
 # <a name="set-up-positions"></a>Positionen einrichten
 
@@ -66,5 +66,4 @@ Positionen ist ein wichtiges Element der untergeordneten Ebene einer Organisatio
 29. Geben Sie im Feld "Verteilungsvorlage" einen Wert ein, oder wählen Sie einen Wert aus.
 30. Geben Sie im Feld "Abteilung" einen Wert ein, oder wählen Sie einen Wert aus.
 31. Klicken Sie auf "Speichern".
-
 

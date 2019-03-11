@@ -1,13 +1,13 @@
 ---
 title: Spesenverwaltung
-description: "Die Spesenverwaltung ermöglicht das Erstellen eines integrierten Workflows zum Speichern von Informationen zu Zahlungsmethoden, zum Importieren von Kreditkartenbuchungen sowie zum Überwachen der monetären Ausgaben, die von den Mitarbeitern dem Unternehmen gegenüber als Spesen geltend gemacht werden."
+description: Die Spesenverwaltung ermöglicht das Erstellen eines integrierten Workflows zum Speichern von Informationen zu Zahlungsmethoden, zum Importieren von Kreditkartenbuchungen sowie zum Überwachen der monetären Ausgaben, die von den Mitarbeitern dem Unternehmen gegenüber als Spesen geltend gemacht werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TrvExpenseWorkspace
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1cd637f1b74056db89520b762255d03afa3855ba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 1e075a7f114efdea1d9cc62cf302eaaba63c7ba0
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "313404"
 ---
-
 # <a name="expense-management"></a>Spesenverwaltung
 
 [!include [banner](../includes/banner.md)]
@@ -38,7 +37,7 @@ Die Spesenverwaltung ermöglicht das Erstellen eines integrierten Workflows zum 
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden. 
+Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neuen Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden. 
 
 #### <a name="blogs"></a>Blogs
 
@@ -53,8 +52,7 @@ Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operat
 
 #### <a name="videos"></a>Videos
 
-Sehen Sie in den Videos zu Hilfe + Anleitungen nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
-
+Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
 
 
 

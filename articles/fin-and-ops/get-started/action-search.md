@@ -1,13 +1,13 @@
 ---
-title: "Aktivitätssuche"
-description: "Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 Finance and for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen."
+title: Aktivitätssuche
+description: Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 for Finance and Operations. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 author: jasongre
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 960c715c487fbda5d93630327f07380e6d8fbd3c
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "317498"
 ---
-
 # <a name="action-search"></a>Aktivitätssuche
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 Finance and for Operations.. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
+Dieser Artikel beschreibt die Aktivitätssuchfunktion in Microsoft Dynamics 365 for Finance and Operations. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen.
 
 ## <a name="introduction"></a>Einführung
 
-Seiten in Microsoft Dynamics 365 for Finance and Operations enthalten hauptsächlich Befehle zu Aktivitätsbereiche, sowohl dem Standardaktivitätsbereich am Anfang einer Seite als auch den Symbolleisten, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen konnte mit einer Tippfunktion schnell auf jede Schaltfläche im Aktivitätsbereich zugegriffen werden, indem Sie die Taste ALT und eine Reihe von Buchstaben drückten.
+Die Seiten in Microsoft Dynamics 365 for Finance and Operations enthalten hauptsächlich Befehle in Aktivitätsbereichen, sowohl im Standardaktivitätsbereich am Anfang einer Seite als auch auf den Symbolleisten, die in verschiedenen Bereichen der Seite angezeigt werden. In den Vorgängerversionen konnte mit einer Tippfunktion schnell auf jede Schaltfläche im Aktivitätsbereich zugegriffen werden, indem Sie die Taste ALT und eine Reihe von Buchstaben drückten.
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 

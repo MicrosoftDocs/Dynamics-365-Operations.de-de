@@ -1,13 +1,13 @@
 ---
-title: "Voraussetzungen für eine Standardkostenumrechnung"
-description: "In diesem Thema werden die Aufgaben erörtert, die vor einer Standardkostenumrechnungen ausgeführt werden müssen."
+title: Voraussetzungen für eine Standardkostenumrechnung
+description: In diesem Thema werden die Aufgaben erörtert, die vor einer Standardkostenumrechnungen ausgeführt werden müssen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 955191a32165a32c455d0dba7424a82eb2559399
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 65844bd78363dc6638b16b3fd4ca163a3fde6a23
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "351929"
 ---
-
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Voraussetzungen für eine Standardkostenumrechnung
 
 [!include [banner](../includes/banner.md)]
@@ -50,7 +49,6 @@ Führen Sie die folgenden Schritte aus, bevor Sie eine Standardkostenumrechnung 
 
         Eine aktive Kostenaufschlüsselung bedeutet, dass bei der Aktivierung der Kosten eines produzierten Artikels die Kostengruppensegmentierung im Kostendatensatz des Artikels gespeichert wird. Wenn Sie im Feld **Kostenaufschlüsselung** keinen Wert angeben, findet für Standardkostenartikel keine Verwaltung der Kostengruppensegmentierung statt. Mit anderen Worten: Die Standardkosten eines produzierten Artikels werden als einzelner Betrag ohne Kostengruppensegmentierung berechnet und verwaltet, und die Kostenbeiträge produzierter Komponenten werden in einem einzelnen Betrag zusammengefasst.
     -   Wählen Sie mithilfe des Felds **Abweichungen vom Standard** die Option "Zusammengefasst" oder "Pro Kostengruppe" aus. Durch Auswahl von "Pro Kostengruppe" werden Einkaufspreisabweichungen und Produktionsabweichungen nach Kostengruppe aufgeschlüsselt. Dadurch können auch die vier Arten von Produktionsabweichungen (Losgröße, Menge, Preis und Ersatzabweichung) unterschieden werden. Bei Auswahl von "Zusammengefasst" sind keine Abweichungen nach Kostengruppe ersichtlich, und auch die Erkennung der vier Arten von Produktionsabweichungen ist nicht möglich, da lediglich eine zusammengefasste Produktionsabweichung angezeigt wird. Die Richtlinie für Abweichungen vom Standard ist unabhängig von der Richtlinie für die Kostenaufschlüsselung. Anders ausgedrückt: Auch wenn bei Auswahl von Abweichungen nach Kostengruppe keine Kostenaufschlüsselungsrichtlinie ausgewählt wurde, werden die Produktionsabweichungen nach Kostengruppe dennoch erfasst.
-
 
 
 

@@ -1,13 +1,13 @@
 ---
-title: "Startseite für die Organisationsverwaltung"
-description: "Auf dieser Seite wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 Finance and Operations in Ihrer Organisation unterstützen."
+title: Startseite für die Organisationsverwaltung
+description: in diesme Thema wird auf Ressourcen verwiesen, die Sie bei der Verwendung von Microsoft Dynamics 365 for Finance and Operations in Ihrer Organisation unterstützen.
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 0a693529b55b66eb940f8215a336d5c4ae0acedd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332816"
 ---
-
 # <a name="organization-administration-home-page"></a>Startseite für die Organisationsverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird auf Inhalt verwiesen, mit dessen Hilfe Poweruser und Administratoren Microsoft Dynamics 365 for Finance and Operations konfigurieren können. Dieser Inhalt hilft, das System so zu konfigurieren, dass es für Ihre Organisation und die Geschäfte effektiv läuft.
+Dieses Thema verweist auf Inhalte, die Poweruser und Administratoren dabei unterstützen, Microsoft Dynamics 365 for Finance and Operationszu konfigurieren. Dieser Inhalt hilft, das System so zu konfigurieren, dass es für Ihre Organisation und die Geschäfte effektiv läuft.
 
 Ein Großteil des Inhalts, der hier aufgeführt wird, gilt für die Funktionen im Modul **Verwaltung ud**. Jedoch gibt es einige Aufgaben wie die Erstellung und Verwendung einer Datensatzvorlage, die in einem beliebigen Modul ausgeführt werden, um Ihre Organisation zu unterstützen, problemlos zu laufen.
 
@@ -103,4 +102,3 @@ Mithilfe von Datensatzvorlagen können Sie Datensätze schneller erstellt werden
 - [Dokumentverwaltung konfigurieren](configure-document-management.md)
 - [E-Mail konfigurieren und senden](configure-email.md)
 - [Datums-/Uhrzeitdaten und Zeitzonen](date-time-zones.md)
-

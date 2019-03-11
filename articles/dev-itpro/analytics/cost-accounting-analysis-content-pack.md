@@ -1,13 +1,13 @@
 ---
-title: Kostenrechnungsanalyse Power BI Inhalt
-description: "In diesem Thema wird beschrieben, was im Buchhaltungsanalyse Power Bl enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen."
+title: Power BI-Inhalt zur Kostenrechnungsanalyse
+description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kostenrechnungsanalyse enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: d0b563044843157940f456b07479bbd6006a42f9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347444"
 ---
-
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostenrechnungsanalyse Power BI Inhalt
+# <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-Inhalt zur Kostenrechnungsanalyse
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, was im **Buchhaltungsanalyse** Microsoft Power Bl-Inhalt enthalten ist. Es wird erläutert, wie Sie auf die Power Bl-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
+In diesem Thema wird beschrieben, was im Microsoft Power BI-Inhalt zur **Kostenrechnungsanalyse** enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen, und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet wurden, um den Inhalt zu erstellen.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der **Kostenrechnungsanalyse**-Power BI-Inhalt dient den Kostencontrollern oder all jenen, die für die Ausführung der Kostensteuerung in einer Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus dem **Kostenrechnungs**-Modul und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat.
+Der Power BI-Inhalt zur **Kostenrechnungsanalyse** dient Kostencontrollern oder all jenen, die für die Ausführung der Kostensteuerung in einer Organisation verantwortlich sind. Er umfasst die Schlüsselindikatoren, wie Kosten, Größe und Verrechnungssatz von Istkosten, Budgetkost und flexible Budgetkosten. Er verwendet Buchungsdaten aus dem **Kostenrechnungs**-Modul und stellt eine gesamte Ansicht von Kosten für die gesamte Organisation in einer Berichtswährung bereit. Manager können die Daten nach Kostenträger filtern, um die Kostensteuerung der Organisationseinheiten vorzunehmen, selbst wenn die Organisation mehrere juristische Personen hat.
 
 Da der **Kostenrechnungsanalyse**-Inhalt Abweichungen zwischen den Istkosten und den budgetierten Kosten hervorhebt, können Manager über die positiven und negativen Trends für ihre Einsatzkräfte informiert werden. Manager können zu den Kostenfaktorhierarchien oder den einzelnen Kostenfaktoren Detailinformationen anzeigen. Auf diese Weise können Manager einen detaillierten Einblick erhalten, wie Kostenabweichungen aufgetreten sind, und anschließend wirksame Maßnahmen ausführen.
 
@@ -41,10 +40,10 @@ Der **Kostenrechnungsanalyse**-Inhalt ermöglicht es Buchhaltern, Kosten zu anal
 
 Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](../../financials/cost-accounting/cost-accounting-home-page.md).
 
-Durch das Festlegen der  Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den **Kostenrechnungsanalyse** Power BI Inhalt geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenbuchhaltung für Power BI einrichten](setup-security-cost-accounting-content-pack.md)..
+Durch das Festlegen der Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den Power BI-Inhalt zur **Kostenrechnungsanalyse** geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenrechnungsinhalt für Power BI einrichten](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Zugreifen au Power BI Inhalt
-Sie finden die  **Kostenbuchhaltungsanalyse** Power BI Inhalt in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie Power BI-Inhalte herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
+Sie finden den Power BI-Inhalt zur **Kostenbuchhaltungsanalyse** in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -53,8 +52,8 @@ Stellen Sie sicher, dass Sie den **Kostenrechnungsanalyse**-Inhalt herunterladen
 > [!NOTE]
 > KB 4011327 ist eine Voraussetzung für diesen Power BI-Inhalt Nach der Anmeldung an LCS können Sie hier unter <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327> auf die KB zugreifen.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metrik, die im Power BI Inhalt enthalten ist
-Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im **Kostenbuchhaltungsanalyse** Power Bl Inhalt.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriken, die im Power BI-Inhalt enthalten sind
+Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Metriken, die als Diagramme, Kacheln und Tabellen visuell dargestellt werden. Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Power BI-Inhalt zur **Kostenrechnungsanalyse**.
 
 | Berichtsseiten                      | Diagramm                                                                                                                         | Kachel                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
@@ -75,7 +74,7 @@ Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Me
 |                                  | Istkosten nach Kostenelementhierarchie und Kostenobjektdimensions-Mitgliedsname                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die zwecks Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt zur **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
 
 Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
 
@@ -127,4 +126,3 @@ Die folgenden wichtigen Dimensionen werden als Filter verwendet, um die aggregie
 | Steuerkalender                   | Kalender, Beschreibung des Kalenders                                                                                       |
 | Geschäftsjahr                       | Kalenderjahr                                                                                                        |
 | Finanzzeiträume                     | Kalenderperioden                                                                                                 |
-

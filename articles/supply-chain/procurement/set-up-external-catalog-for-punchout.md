@@ -1,13 +1,13 @@
 ---
-title: "Externen Katalog für PunchOut eProcurement einrichten"
-description: "In diesem Thema wird die Verwendung eines externen Katalogs oder des Punchoutkatalogs beschrieben, um Angebotsinformationen von einem Kreditor zu erhalten und einer Bestellanforderung hinzuzufügen."
+title: Externen Katalog für PunchOut eProcurement einrichten
+description: In diesem Thema wird die Verwendung eines externen Katalogs oder des Punchoutkatalogs beschrieben, um Angebotsinformationen von einem Kreditor zu erhalten und einer Bestellanforderung hinzuzufügen.
 author: mkirknel
 manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bc3879492f230b9477c6e5efd2edc8e1e4aca0a2
+ms.sourcegitcommit: 2ebea3cbddfa0a5ef0e0fd13d3693da6152bc288
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "368167"
 ---
-
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Externen Katalog für PunchOut eProcurement einrichten
 
 [!include [banner](../includes/banner.md)]
@@ -55,16 +54,17 @@ Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingib
 Dieser Abschnitt spezifiziert Informationen zur Aufgabe 4 im vorherigen Abschnitt.
 
 1. Geben Sie einen Namen und eine Beschreibung für den externen Katalog des Lieferanten ein. Der Name, den Sie eingeben, wird im Einkaufskorb, der den externen Katalog darstellt, dem Mitarbeiter angezeigt, der eine Bestellanforderung erstellt. Mitarbeiter können auf den Einkaufskorb klicken, um den Katalog auf der externen Lieferantenkatalogseite zu öffnen.
-2. Hier können Sie ein Bild hinzufügen, indem Sie die Aktivität **Bild für externen Katalog** verwenden. Das Bild erscheint im Einkaufskorb, der den externen Katalog darstellt und wird dem Mitarbeiter angezeigt, der eine Bestellanforderung erstellt. Beachten Sie, dass die Breite und Höhe des Bilds gleich sein müssen. Andernfalls wird das Bild nicht ordnungsgemäß angezeigt.
+2. Hier können Sie ein Bild hinzufügen, indem Sie die Aktivität  **Bild für externen Katalog** verwenden. Das Bild erscheint im Einkaufskorb, der den externen Katalog darstellt und wird dem Mitarbeiter angezeigt, der eine Bestellanforderung erstellt. Beachten Sie, dass die Breite und Höhe des Bilds gleich sein müssen. Andernfalls wird das Bild nicht ordnungsgemäß angezeigt.
 3. Wählen Sie aus, ob auf der Website die externe Katalogwebsite des Kreditors im selben Browserfenster erscheinen soll, in dem der Mitarbeiter die Anforderung erstellt hat oder ob sie in einem neuen Fenster geöffnet wird.
 4. Wählen Sie den Lieferant für den Katalog aus. In der Liste **Juristische Personen** gibt es eine Zeile für jede juristische Person, in der der Kreditor eingerichtet wurde. Um Benutzer zu erlauben, Produkte direkt aus dem Lieferantenkatalog von gewissen juristischen Personen zu bestellen aber nicht von allen, können Sie die Schaltfläche **Zugriff sperren** oder **Zugriff ermöglichen** für jede juristische Person verwenden, für den der Katalog verfügbar oder nicht verfügbar sein soll.
 5. Geben Sie im Feld **Standardvervall (Tage)** ein, wie viele Tage ein Angebot gültig ist und beim externen Kreditor erworben werden kann. Wird ein Angebot erstellt und von der externen Katalogwebsite des Kreditors abgerufen, gilt das Angebot ab dem aktuellen Systemdatum und bleibt für die in diesem Feld eingegebene Anzahl an Tagen gültig.
-6. Klicken Sie auf die Schaltfläche **Hinzufügen**, um die Zuordnung der Beschaffungskategorien dem externen Katalog zu starten. Wählen Sie anschließend aus der Kategorieliste eine Kategorie aus. Die Liste der Kategorien ist eine Obermenge der Beschaffungskategorien, die dem Lieferant in allen juristischen Personen zugeordnet wurde, die für den Kreditor eingerichtet werden.
+6. Klicken Sie auf die Schaltfläche **Hinzufügen**, um die Zuordnung der Beschaffungskategorien dem externen Katalog zu starten.Wählen Sie anschließend aus der Kategorieliste eine Kategorie aus. Die Liste der Kategorien ist eine Obermenge der Beschaffungskategorien, die dem Lieferant in allen juristischen Personen zugeordnet wurde, die für den Kreditor eingerichtet werden.
 [!NOTE]
-Beschaffungspolitische Richtlinien werden verwendet, um den Zugriff zu den Kategorien für die kaufende juristische Person oder Empfangsorganisationseinheit zuzulassen oder einzuschränken. Punchout auf einem externen Katalog setzt voraus, dass der Zugriff mit mindestens einer Beschaffungskategorien zulässig ist, die dem Katalog zugeordnet ist.
+Beschaffungspolitische Richtlinien werden verwendet, um den Zugriff zu den Kategorien für die kaufende juristische Person oder Empfangsorganisationseinheit zuzulassen oder einzuschränken.Punchout auf einem externen Katalog setzt voraus, dass der Zugriff mit mindestens einer Beschaffungskategorien zulässig ist, die dem Katalog zugeordnet ist.
 7. Richten Sie die cXML Einstellungs-Anforderungsnachricht ein, die an den Kreditor gesendet wird. Das automatisch generierte Nachrichtenformat ist die Mindest-Vorlage, die erforderlich ist, um eine Sitzung zu starten. Geben Sie Werte für die Markierungen aus.
 
-Sie könnne jederzeit die vom System generierte Nachrichtenvorlage erneut laden, indem Sie auf **Nachrichtenformat wiederherstellen** klicken. Beachten Sie, dass, wenn Sie das Nachrichtenformat wiederherstellen, die aktuelle Meldung durch die automatisch generierte Nachricht ersetzt wird, die leere Markierungen hat.
+Sie könnne jederzeit die vom System generierte Nachrichtenvorlage erneut laden, indem Sie auf **Nachrichtenformat wiederherstellen** klicken. 
+Beachten Sie, dass, wenn Sie das Nachrichtenformat wiederherstellen, die aktuelle Meldung durch die automatisch generierte Nachricht ersetzt wird, die leere Markierungen hat.
 
 ### <a name="cxml-setup-message"></a>cXML Nachricht einrichten
 Unten finden Sie eine Beschreibung der Tags, die in der Vorlage enthalten sind:
@@ -88,7 +88,7 @@ Ihr Kreditor kann eine Anforderung für den Erhalt eines äußeren Elements in d
 Weitere Informationen zu den CXML-Protokollen finden Sie unter http://cxml.org/.
 
 ## <a name="post-back-message"></a>Nachricht zurückbuchen
-Die zurückgebuchte Nachricht ist die Meldung, die der Kreditor erhält, wenn der Benutzer sich von der externen Website abmeldet und zu Finance and Operations zurückkehrt. Rückmeldungsnachrichten können nicht konfiguriert werden. Die Meldungen basieren auf den cXML Protokolldefinition. Hierbei gelten die Informationen, die Teil der Rückmeldungsnachricht werden können, die auf einer Bestellanforderungsposition basieren:
+Die zurückgebuchte Nachricht ist die Meldung, die der Kreditor erhält, wenn der Benutzer sich von der externen Website abmeldet und zu Finance and Operations zurückkehrt. Rückmeldungsnachrichten können nicht konfiguriert werden. Die Meldungen basieren auf den cXML Protokolldefinition.Hierbei gelten die Informationen, die Teil der Rückmeldungsnachricht werden können, die auf einer Bestellanforderungsposition basieren:
 
 | Meldung vom Kreditor empfangen | Kopiert die Bestellanforderungsposition nach Finance and Operations|
 |------------------------------|----------------------------------------------------------|
@@ -106,5 +106,4 @@ Die zurückgebuchte Nachricht ist die Meldung, die der Kreditor erhält, wenn de
 Löschen eines externen Katalogs mit der Löschaktion auf der Seite.
 
 Wenn ein Produkt aus dem externen Lieferantenkatalog angefordert wurde, kann der externe Lieferantenkatalog nicht gelöscht werden. Stattdessen wird der Status des externen Lieferantenkatalogs auf "Inaktiv" gesetzt. Wenn Sie den Zugriff auf die Katalogwebsite des externen Lieferanten entfernen möchten, ändern Sie den Status des externen Katalogs auf "Inaktiv".
-
 

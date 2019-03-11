@@ -1,13 +1,13 @@
 ---
 title: Reservieren von Lagermengen
-description: "In diesem Thema werden die verschiedenen Optionen beschrieben, die für die Reservierung von Bestand verfügbar sind."
+description: In diesem Thema werden die verschiedenen Optionen beschrieben, die für die Reservierung von Bestand verfügbar sind.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 89441ee4c799e2d1215fbd82e0490d7168e2aa1b
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c351618f4d710062dd8f369c5319cdce79f7339
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "365453"
 ---
-
 # <a name="reserve-inventory-quantities"></a>Reservieren von Lagermengen
 
 [!include [banner](../includes/banner.md)]
@@ -58,7 +57,7 @@ Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlin
 | Artikelverkaufsreservierung  | Bestimmt, ob die Artikelreservierung manuell oder automatisch erfolgt. Wenn eine Reservierung automatisch erfolgt, wird der Bestand reserviert, wenn Auftragspositionen erstellt werden. Es ist möglich, Reservierungen auf der Artikelnummerenebene für Stücklisten **Automatisch** oder für die einzelnen Elemente einer Stückliste**Auflösung** zu machen. Der Standardwert wird aus den für **Artikelvertriebsreservierung** **Debitorparametern** übernommen werden. Auf dieser Seite wird der Wert im Reservierungsfeld im **Abschnitt** **Vertriebsstandardwerte** in der Registerkarte **Allgemeines** festgelegt. |
 | Auswahl derselben Charge    | Mit der Reservierung derselben Charge können Sie Bestand für eine Auftragsposition aus einer einzelnen Lagercharge reservieren. Wenn Sie diese Option verwenden möchten, müssen Sie die Option **Bedarf konsolidieren** auch auf **Ja** festlegen. Darüber hinaus gibt es weitere Einstellungen, die die für die Lagerdimensionsgruppe und Rückverfolgungsangabengruppe erforderlich sind. Weitere Informationen finden Sie unter[Reservierung derselben Charge für einen Auftrag](../sales-marketing/reserve-same-batch-sales-order.md).                                                          |
 | Bedarf konsolidieren | Diese Option ist mit der Option **Auswahl derselben Charge** ähnlich und konsolidiert den Bestand, der für Auftragspositionen reserviert ist, in einer einzelnen Anforderung.                                                                                                                                                                                                                                                                                                                                                                                      |
-| FEFO-datumsgesteuert    | Mit dieser Option können Sie den Chargen reservieren, die nahe dem Ablaufdatum oder dem Mindesthaltbarkeitsdatum sind. Zudem müssen Sie das Feld **Kommissionierungskriterien** einrichten, um entweder **Ablaufdatum oder****Mindesthaltbarkeitsdatum** auszuwählen.                                                                                                                                                                                                                                                                                                                              |
+| FEFO-datumsgesteuert    | Mit dieser Option können Sie den Chargen reservieren, die nahe dem Ablaufdatum oder dem Mindesthaltbarkeitsdatum sind. Zudem müssen Sie das Feld **Kommissionierungskriterien** einrichten, um entweder **Ablaufdatum oder** **Mindesthaltbarkeitsdatum** auszuwählen.                                                                                                                                                                                                                                                                                                                              |
 
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Beispiel für "FIFO-Datumsgesteuert" und "Rückwärts ab Versanddatum"
 
@@ -84,4 +83,3 @@ Es gibt zwei Möglichkeiten, die Reservierungen **im Bestand und in Lagerortverw
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Bestandreservierungsrichtlinien auf der Produktionsparameterseite
 
 Der Wert des Feldes **Reservierung** auf der Registerkarte **Allgemeines** auf der Seite **Produktionsparameter** ist abhängig vom Standardpunkt im Produktionsprozess, für den Lagerbestand reserviert werden soll. So kann zum Beispiel Bestand reserviert werden, wenn Arbeit eingeplant wird oder wenn Arbeit gestartet wird.
-

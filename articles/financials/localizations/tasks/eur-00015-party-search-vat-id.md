@@ -1,13 +1,13 @@
---- 
+---
 title: EUR-00015 Suche nach Partei per MwSt.-Kennung
-description: "Dieses Verfahren zeigt, wie Sie eine Parteiensuche mithilfe einer Erfassungskennung durchführen."
+description: Dieses Verfahren zeigt, wie Sie eine Parteiensuche mithilfe einer Erfassungskennung durchführen.
 author: v-oloski
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartyTable, DirPartTaxRegistrationSearch
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: ec36ead402882c1022811b7b398a03c6325ef7c0
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370358"
 ---
 # <a name="eur-00015-party-search-using-vat-id"></a>EUR-00015 Suche nach Partei per MwSt.-Kennung
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/14/2018
 
 Dieses Verfahren zeigt, wie Sie eine Parteiensuche mithilfe einer Erfassungskennung durchführen. Bevor Sie dieses Verfahren ausführen können, müssen Sie MwSt.-IDs einrichten und sämtliche MwSt.-IDs für Debitoren, Kreditoren oder juristischen Personen eingeben.
 
-Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Prozedur wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse einer juristischen Person in Deutschland erstellt. Diese Vorgehensweise ist für einen Kreditor-Manager oder einen Debitor-Manager vorgesehen. Diese Prozedur ist eine Funktion, die in Dynamics 365 for Operations, Version 1611 hinzugefügt wurde.
+Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Prozedur wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse einer juristischen Person in Deutschland erstellt. Diese Vorgehensweise ist für einen Kreditor-Manager oder einen Debitor-Manager vorgesehen. Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
 1. Wechseln Sie zu Organisationsverwaltung > Globales Adressbuch > Globales Adressbuch.
 2. Klicken Sie auf "Registrierungskennungssuche".
@@ -41,5 +41,4 @@ Diese Prozedur gilt für alle europäischen Länder/Regionen. Diese Prozedur wur
 6. Geben Sie im Feld "Registrierungsnummer" einen Wert ein.
 7. Klicken Sie auf "Suchen".
     * Alle Parteien mit dieser Erfassungskennung werden angezeigt.  
-
 

@@ -1,29 +1,29 @@
 ---
-title: "Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung"
-description: "In diesem Thema wird erläutert, wie Sie einen Austausch für eine Rücklieferung im Microsoft Dynamics 365 for Retail konfigurieren."
+title: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
+description: In diesem Thema wird erläutert, wie Sie einen Austausch für eine Rücklieferung im Microsoft Dynamics 365 for Retail konfigurieren.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
+ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 3331b984693c58c6ee8c49b98ed7d3a8df5b79ff
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 45b628376a483d3d639e5c018dd93570ed8ce7af
-ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302319"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
 
@@ -37,7 +37,7 @@ Allerdings wurden Funktionen hinzugefügt, die Szenarien unterstützen, in denen
 
 Gehen Sie folgendermaßen vor, um das System so zu konfigurieren, dass Umtausch mit Rücklieferungen unterstützt wird.
 
-1. Gehen Sie zu **Einzelhandel \> Zentralverwaltungseinrichtung \> Parameter \> Einzelhandelsparameter**. Legen Sie im Inforegister **Kundenaufträge** die Option **Rücklieferungen als Aufträge verarbeiten** auf **Ja** fest.
+1. Gehen Sie zu **Einzelhandel \> Zentralverwaltungseinrichtung \> Parameter \> Retail-Parameter**. Legen Sie im Inforegister **Kundenaufträge** die Option **Rücklieferungen als Aufträge verarbeiten** auf **Ja** fest.
 2. Führen Sie den Auftrag **Globaler Konfigurationsverteilungszeitplan** (**1110**) aus.
 
 ## <a name="make-an-exchange"></a>Durchführen eines Umtauschs
@@ -51,4 +51,3 @@ Zur besseren Übersicht über die unterschiedlichen Mengen für den Einkaufskorb
 - **Einzahlung angewendet** – Der Einzahlungsbetrag, der in einer Transaktion verwendet wird, wenn der Benutzer einen Kundenauftrag auswählt. Wenn die Einzahlung nicht überschrieben wird und eine Einzahlung von 10 Prozent konfiguriert wurde, beläuft sich der Betrag in diesem Feld auf 90 Prozent des Gesamtbetrags des Kundenauftrags.
 - **Betrag ausführen** – Der Gesamtbetrag für Positionen, in denen die Lieferart bei der Erstellung oder Bearbeitung des Kundenauftrags oder bei einem Umtausch eines Kundenauftrags auf **Ausführen** festgelegt wurde. Der Betrag in diesem Feld enthält die Steuern und Belastungen.
 - **Rückgabebetrag** – Der Gesamtbetrag für Positionen, die negative Mengen für den Kundenauftragsumtausch haben. Der Betrag in diesem Feld enthält die Steuern und Belastungen.
-

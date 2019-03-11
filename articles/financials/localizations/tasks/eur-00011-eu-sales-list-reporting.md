@@ -1,13 +1,13 @@
---- 
+---
 title: EUR-00011 Zusammenfassende Meldung einrichten
-description: "Diese Aufgabe führt Sie durch einen Überblick über die Voraussetzungen, die für zusammenfassende Meldungen erforderlich sind."
+description: Diese Aufgabe führt Sie durch einen Überblick über die Voraussetzungen, die für zusammenfassende Meldungen erforderlich sind.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, SysQueryForm, SysQueryFieldLookUp,  TaxTable, TaxGroup, TaxItemGroup, TaxCountryRegionParameters, TaxVATNumTable, IntrastatParameters, CustTable, DirPartyQuickCreateForm
 audience: Application User
 ms.reviewer: shylaw
@@ -16,18 +16,18 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: aef1d19aabb7937fcd961a9657b8ca65c064b0b1
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370330"
 ---
 # <a name="eur-00011-set-up-eu-sales-list-reporting"></a>EUR-00011 Zusammenfassende Meldung einrichten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Aufgabe führt Sie durch einen Überblick über die Voraussetzungen, die für zusammenfassende Meldungen erforderlich sind. Weitere Informationen über zusammenfassende Meldungen, einschließlich erforderliche Voraussetzungen, finden Sie in der Hilfe von Dynamics 365 for Finance and Operations Help.
+Diese Aufgabe führt Sie durch einen Überblick über die Voraussetzungen, die für zusammenfassende Meldungen erforderlich sind. Weitere Informationen über zusammenfassende Meldungen, einschließlich erforderliche Voraussetzungen, finden Sie in der Hilfe von Dynamics 365 for Finance and Operations..
 
 Diese Aufgabe gilt für alle europäischen Länder/Regionen. Das Handbuch wurde mithilfe des Demodatenunternehmens DEMF und folglich Deutschland als Exemplarinlandsland/region erstellt. Das Handbuch verwendet ebenfalls Portugal als Exemplar EU-Land/Region.
 
@@ -128,5 +128,4 @@ Diese Aufgaben richten sich an Systemadministratoren.
 7. Wählen Sie im Feld "USt-IdNr." die Zeichenfolge "PT12345".
 8. Geben Sie im Feld "Land/Region" "PRT" ein.
 9. Klicken Sie auf "Speichern".
-
 

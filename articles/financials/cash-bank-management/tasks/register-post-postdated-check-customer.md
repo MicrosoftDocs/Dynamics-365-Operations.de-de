@@ -1,13 +1,13 @@
---- 
-title: "Einen vordatierten Scheck für einen Debitor erfassen und buchen"
-description: "Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben."
+---
+title: Einen vordatierten Scheck für einen Debitor erfassen und buchen
+description: Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben.
 author: kweekley
 manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 131e4f364c62d03b95fb4b77f472828b9483d5e1
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 621ad64c06a6cebff90e888ac89bba922052cf35
-ms.openlocfilehash: f75dea40d0cc77c851569608f18229339ed30af9
-ms.contentlocale: de-de
-ms.lasthandoff: 10/26/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "347375"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Einen vordatierten Scheck für einen Debitor erfassen und buchen
 
@@ -49,5 +49,4 @@ Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem D
     * Geben Sie die Details der Bank auf dem vordatierten Scheck ein.  
 15. Klicken Sie auf "Buchen".
 16. Schließen Sie die Seite.
-
 

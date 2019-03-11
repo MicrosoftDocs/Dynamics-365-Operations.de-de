@@ -1,13 +1,13 @@
 ---
 title: Verwalten Sie Lohnarbeit in der Produktion
-description: "In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Microsoft Dynamics 365 for Finance and Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden."
+description: In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Microsoft Dynamics 365 for Finance and Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "326583"
 ---
-
 # <a name="manage-subcontracting-work-in-production"></a>Verwalten Sie Lohnarbeit in der Produktion
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,6 @@ Halbfertigprodukte sind die Ausnahme von dieser Regel. Um Halbfertigprodukte zu 
 **Hinweis:** Ein Produktionsarbeitsplan für einen einzelnen Produktionsauftrag kann mehrere Standorte nicht verteilen. Diese Regel gilt auch für gleichzeitig die Fremdarbeit zu. Daher müssen die Lagerorte, die Kreditor-verwalteten die Schaltfläche Positionen darstellen, im gleichen Standort wie interne die Ressourcen definiert sind, die im Arbeitsplan verwendet werden. Obwohl Produktionsflüsse Standorte verteilen können, können sie nicht Datentransporthalbzeuge von einem Standort an anderen, da der Arbeitsgang eine Änderung des Kontexts Kosten vorgesehen.  
 
 In der Regel werden der Ausgangslagerort und der Speicherort einer von Ressourcengruppe Artikel direkt zum Lagerort und Speicherort des nächsten Schritt des Arbeitsgangs im Arbeitsplan oder im Produktionsfluss zugewiesen. Diese Einstellung ermöglicht, den Betrag der berichterstellung Einzelvorgangs, die oder fungiert, der zusätzliche Arbeitsgänge der Nummer zu reduzieren Übergangs, die modelliert werden müssen.
-
 
 
 

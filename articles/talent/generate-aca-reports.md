@@ -1,13 +1,13 @@
 ---
 title: Affordable Care Act-(ACA)-Berichte erstellen
-description: "Funktion ist verfügbar, um Arbeitgeber zu unterstützten, die Informationen erfassen müssen, die auf den Formularen 1095-B und 1095-C aufgrund des Abschnitts \"Employer Mandate \" im Affordable Care Act gemeldet wurden. Hinweis: Diese Funktionalität ist nur für juristische Personen in den USA aktiviert."
+description: 'Funktion ist verfügbar, um Arbeitgeber zu unterstützten, die Informationen erfassen müssen, die auf den Formularen 1095-B und 1095-C aufgrund des Abschnitts "Employer Mandate " im Affordable Care Act gemeldet wurden. Hinweis: Diese Funktionalität ist nur für juristische Personen in den USA aktiviert.'
 author: kherr75
 manager: AnnBe
 ms.date: 12/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: rschloma
 ms.search.scope: Core, Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: f1456b91d6fc29ec65d0e9382d3f5f7682a8b516
 ms.openlocfilehash: 0ea2824093d33b9f233cd992399de22198bfc27a
-ms.contentlocale: de-de
-ms.lasthandoff: 12/17/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304520"
 ---
 # <a name="generate-affordable-care-act-aca-reports"></a>Affordable Care Act-(ACA)-Berichte erstellen
 
@@ -70,4 +70,3 @@ Sie können Mitarbeiterlisten exportieren, die mithilfe einer der Filteroptionen
 Wenn Sie abgedeckte Personen angegeben müssen, da Sie als Arbeitgeber eigenversicherte Disposition bereitstellen, können Sie auch alle Unterhaltsberechtigten anzeigen, die unter Vorteilsplänen gedeckt werden, die als **ACA meldepflichtig** markiert wurden. Wählen Sie dazu die Aktion "Abdeckung für Unterhaltsberechtigte anzeigen" auf der Aktivitätsbereichsleiste aus.
 
 **Hinweis:** Nur Leistungen, deren Plan als **ACA meldepflichtig** markiert wurde, werden im Abfragefenster angezeigt.
-

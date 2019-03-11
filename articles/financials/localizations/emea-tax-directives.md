@@ -1,13 +1,13 @@
 ---
-title: "Steuerrichtlinien für Europa"
-description: "Sie können angeben, um eine Erläuterung von Mehrwertsteuercodes auf Verkaufs- und Projektrechnungen einzubeziehen. Sie können Referenznummern in Verkaufsrechnungen, Freitextrechnungen und Projektrechnungen drucken."
+title: Steuerrichtlinien für Europa
+description: Sie können angeben, um eine Erläuterung von Mehrwertsteuercodes auf Verkaufs- und Projektrechnungen einzubeziehen. Sie können Referenznummern in Verkaufsrechnungen, Freitextrechnungen und Projektrechnungen drucken.
 author: epodkolz
 manager: AnnBe
 ms.date: 05/12/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -15,14 +15,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
+ms.openlocfilehash: 42861a66b44d6156341bf2d4d895a4bf35295ee6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 1a2d4531e13d158dd8b93d9b9e94a17a8f94c50a
-ms.contentlocale: de-de
-ms.lasthandoff: 03/05/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370326"
 ---
-
 # <a name="tax-directives-for-europe"></a>Steuerrichtlinien für Europa
 
 [!include [banner](../includes/banner.md)]
@@ -31,5 +30,4 @@ Die EU-Direktive bietet Bestimmungen, die von allen Mitgliedsstaaten befolgt wer
 
 - Um eine Beschreibung der Mehrwertsteuercodes auf einer Verkaufsrechnung, Freitextrechnung oder einem Projektrechnungsbericht zu drucken, richten Sie den Referenztext der Steuer-Direktive auf den Mehrwertsteuercodes ein.
 - Für Gutschriften werden die Nummer und das Datum der ursprünglichen Rechnung zusammen mit dem Grund für die Berichtigung gedruckt.
-
 

@@ -1,13 +1,13 @@
---- 
+---
 title: " Einen Auszug für ein Einzelhandelsgeschäft erstellen, berechnen und buchen"
-description: "Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop."
+description: Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailChannelOperationsWorkspace, RetailStatementTable
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 33ebb28196baa9ae944dbd124274b05cb587fea4
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "354390"
 ---
 # <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a> Einen Auszug für ein Einzelhandelsgeschäft erstellen, berechnen und buchen
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop. Es gibt auch Batchaufträge, die für die gleichen Aufgaben konfiguriert werden können. Die Schritte zum Konfigurieren und Ausführen der Batchaufträge werden in anderen Themen behandelt. Um dieses Verfahren abzuschließen, müssen Buchungen enthalten sein, die in POS abgeschlossen und dann in Dynamics AX gezogen wurden. Für diese Aufzeichnung wird das Demo-Datenunternehmen USRT verwendet. Diese Verfahren bezieht sich möglicherweise auf Microsoft Dynamics AX. Beachten Sie, dass Microsoft Dynamics AX nun als Microsoft Dynamics 365 for Operations. bezeichnet wird.
+Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop. Es gibt auch Batchaufträge, die für die gleichen Aufgaben konfiguriert werden können. Die Schritte zum Konfigurieren und Ausführen der Batchaufträge werden in anderen Themen behandelt. Um dieses Verfahren abzuschließen, müssen Transaktionen enthalten sein, die in POS abgeschlossen und dann in Dynamics AX einbezogen wurden. Für diese Aufzeichnung wird das Demo-Datenunternehmen USRT verwendet. Dieses Verfahren bezieht sich möglicherweise auf Microsoft Dynamics AX. Beachten Sie, dass Dynamics AX nun als Microsoft Dynamics 365 for Operations bezeichnet wird.
 
 1. Gehen Sie zu Alle Arbeitsbereiche >.. > Finanzdaten für den Einzelhandelsshop.
 2. Klicken Sie auf "Neuer Auszug".
@@ -47,5 +47,4 @@ Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erst
 10. Klicken Sie auf "Schließen".
 11. Navigieren Sie zu Einzelhandel und Handel > Kanäle > Finanzdaten für den Einzelhandelsshop.
 12. Klicken Sie auf die Registerkarte "Gebuchte Auszüge".
-
 

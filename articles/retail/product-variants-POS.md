@@ -1,32 +1,31 @@
 ---
 title: Lagersuche in der Verkaufsstelle (POS)
-description: "In diesem Thema werden die Optionen beschrieben, die für die Anzeige von Lagerbestandsinformationen in der Verkaufsstelle (POS) verfügbar sind."
+description: In diesem Thema werden die Optionen beschrieben, die für die Anzeige von Lagerbestandsinformationen in der Verkaufsstelle (POS) verfügbar sind.
 author: ashishmsft
 manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.translationtype: HT
-ms.sourcegitcommit: 190d0b59ad2e232b33b3c0d1700cbaf95c45aeca
 ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.contentlocale: de-de
-ms.lasthandoff: 01/04/2019
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "314416"
 ---
-
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersuche in der Verkaufsstelle (POS)
 
 [!include [banner](includes/banner.md)]
@@ -116,4 +115,3 @@ Die folgende Tabelle enthält weitere Informationen über die zusätzlichen Akti
 | Verfügbarkeit         | Zeigen Sie die VfZ-Informationen für die ausgewählte Variantenkombination für den ausgewählten Lagerplatz an. |
 | Alle Lagerplätze anzeigen   | Wechseln Sie zur standardmäßigen Lagersuchansicht und heben Sie Bestandsverfügbarkeitsinformationen für die Artikelvariante für alle Filialen in der Filiallokatorgruppe und auch in Verteilungszentren des Typs **Standard/Standard** hervor. |
 | Produktdetails anzeigen | Leiten Sie den Benutzer zur Seite **Produktdetails** des zugeordneten Produktmasters um. |
-

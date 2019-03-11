@@ -1,13 +1,13 @@
 ---
 title: Frachtverkehrsrouten mit mehreren Zwischenstopps planen
-description: Dieser Artikel beschreibt die verschiedenen Elemente zur Planung von Transportrouten in Microsoft Dynamics 365 for Finance and Operations.
+description: Dieser Artikel beschreibt die verschiedenen Elemente zur Planung von Transportrouten in Dynamics 365 for Finance and Operations.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 36cb454477c0d296246c061d2573954a81c9efd7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 16255e812773ed35c0e34ec26a8a689ea09632bd
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328308"
 ---
-
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Frachtverkehrsrouten mit mehreren Zwischenstopps planen
 
 [!include [banner](../includes/banner.md)]
@@ -51,7 +50,6 @@ Eine geplante Route ist ein vordefinierter Routenplan, der über einen Zeitplan 
 
 ## <a name="load-building-workbench"></a>Ladungserstellungsworkbench
 Die Seite Ladungserstellungsworkbench verwendet die Adressen und Lieferdaten aus Aufträgen und die verfügbaren geplanten Routen, um eine Ladung vorzuschlagen. Standardmäßig werden die Werte der Route über die Arbeitsfläche eingegeben. Allerdings können Sie ein "Von"-Datum auswählen, das vor dem "Von"-Datum der Route liegt. Wenn eine Ladung vorgeschlagen wird, werden die Lieferadresse und das Lieferdatum für alle offenen Auftrage überprüft. Wenn die Postleitzahl der Lieferadresse der Postleitzahl eines Hubs im Routenplan entspricht, und wenn das Lieferdatum innerhalb des in den Kriterien gewählten Bereichs liegt, wird der Auftrag für die Ladung vorgeschlagen. Die Kapazität der Ladungsvorlage wird ebenfalls berücksichtigt. Es wird immer nur eine Ladung vorgeschlagen. Wenn Sie einen Auftrag haben, der nicht einbezogen ist, möchten Sie möglicherweise eine andere Ladungsvorlage verwenden (z. B. eine Ladungsvorlage für einen größeren LKW oder Container) oder eine zusätzliche Lieferung planen.
-
 
 
 

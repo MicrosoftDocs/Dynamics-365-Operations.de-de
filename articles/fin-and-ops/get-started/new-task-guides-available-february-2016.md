@@ -1,13 +1,13 @@
 ---
-title: "Neuer Aufgabenleitfaden verfügbar (Februar 2016)"
-description: "Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurde, die (Februar 2016) APQC vereinheitlichte Bibliothek für Microsoft Dynamics 365 for Operations und (Februar 2016) Erste Schritte."
+title: Neuer Aufgabenleitfaden verfügbar (Februar 2016)
+description: Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden.  Die Bibliotheken, die veröffentlicht wurden, enthalten die (Februar 2016) APQC Unified-Bibliothek für Microsoft Dynamics 365 for Operations und (Februar 2016) Erste Schritte.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Operations
@@ -17,23 +17,22 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 87384bae08e3fa78ef3deb3830583b16b9d9d6ac
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "366442"
 ---
-
 # <a name="new-task-guides-february-2016"></a>Neuer Aufgabenleitfaden verfügbar (Februar 2016)
 
 [!include [banner](../includes/banner.md)]
 
-Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden. Die Bibliotheken, die veröffentlicht wurden, enthalten (Februar 2016) die APQC Unified-Bibliothek für Microsoft Dynamics AX und (Februar 2016) Erste Schritte.
+Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibliotheken seit Februar 2016 freigegeben wurden. Die Bibliotheken, die veröffentlicht wurden, enthalten die (Februar 2016) APQC Unified-Bibliothek für Microsoft Dynamics AX und (Februar 2016) Erste Schritte.
 
-## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Februar 2016)
+## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der (Februar 2016) APQC Unified-Bibliothek für Microsoft Dynamics AX
 
-Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die Nutzung von Dynamics AX 7.0.0. Wenn Sie lokalisierte Versionen von Aufgabenleitfäden benötigen, finden Sie diese in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016). Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die (Februar 2016) APQC Unified-Bibliothek enthält Aufgabenleitfäden für die Hilfe bei der Dynamics AX 7.0.0-Version. Wenn Sie lokalisierte Versionen von Aufgabenleitfäden benötigen, finden Sie diese in der (Mai 2016) APQC Unified-Bibliothek für Microsoft Dynamics AX. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kreditorenkonten
 
@@ -647,4 +646,3 @@ Die APQC Unified-Bibliothek (Februar 2016) enthält Aufgabeleitfäden für die N
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden (November 2016)](new-task-guides-november-2016.md)
-

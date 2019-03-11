@@ -1,13 +1,13 @@
---- 
-title: "Artikel für einen für erweitertes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren"
-description: "Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie die erweiterten Lagerungsvorgänge verwenden."
+---
+title: Artikel für einen für erweitertes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+description: Dieses Verfahren zeigt Ihnen an, wie Artikel mithilfe der Wareneingangserfassung erfasst werden, wenn Sie die erweiterten Lagerungsvorgänge verwenden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 392884d2a87c10a5f38bf6f51967f879c68c1ca6
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 050d1fcbc59d9bb3253bfed2433987285423b334
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "355494"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Artikel für einen für erweitertes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
 
@@ -75,5 +75,4 @@ Notieren Sie die Nummer der Bestellung die Sie erstellen, und notieren Sie auch 
 4. Klicken Sie auf "OK".
     * Nachdem Sie auf "OK" geklickt haben, überprüfen Sie die Statusleiste. Es sollte eine Nachricht geben, die darauf hinweist, dass der Vorgang abgeschlossen wurde.  
 5. Schließen Sie die Seite.
-
 

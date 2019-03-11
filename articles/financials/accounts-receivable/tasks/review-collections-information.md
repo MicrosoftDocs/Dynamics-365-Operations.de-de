@@ -1,13 +1,13 @@
---- 
-title: "Inkassoinformationen überprüfen"
-description: "Diese Prozedur zeigt Ihnen, wie Sie Inkassoinformationen sowie verschiedene Einrichtungsoptionen und Inkassobuchungen prüfen können."
+---
+title: Inkassoinformationen überprüfen
+description: Diese Prozedur zeigt Ihnen, wie Sie Inkassoinformationen sowie verschiedene Einrichtungsoptionen und Inkassobuchungen prüfen können.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 44d89d2bacc8f301a19bfd09d229809d492a55fb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: eb0866505702ec5d047b6c8f3f0657aae787bedc
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "349100"
 ---
 # <a name="review-collections-information"></a>Inkassoinformationen überprüfen
 
@@ -110,7 +110,7 @@ Diese Prozedur zeigt Ihnen, wie Sie Inkassoinformationen sowie verschiedene Einr
     * Wählen Sie eine Zahlungsfristdefinition aus. Standardmäßig wird die Zahlungsfristdefinition angezeigt, die der Fälligkeitsmomentaufnahme für den Debitor zugeordnet ist. Die Zahlungsfristdefinition bestimmt, welche Zahlungsfristen und Beträge in den Infoboxen "Saldenrückblick" und "Kreditinformationen" angezeigt werden.  
     * Öffnen Sie ein Menü mit den folgenden Optionen: Unternehmen - Beträge in den Infoboxen "Saldenrückblick" und "Kreditinformationen" in der Buchhaltungswährung der juristischen Person anzeigen.    Debitor - Beträge in den Infoboxen "Saldenrückblick" und "Kreditinformationen" in der Währung des Debitors anzeigen.  
     * Wählen Sie mindestens eine juristische Person in der Fälligkeitsmomentaufnahme des Debitors aus, für die Sie Informationen anzeigen möchten. In der Liste werden die juristischen Personen angezeigt, die beim Erstellen der Fälligkeitsmomentaufnahme ausgewählt wurden.  
-    * Zeigt die Aufstellung des Debitors im Microsoft Excel-Format an. Sie können ein Startdatum für den Buchungsbereich auswählen, der in der Aufstellung enthalten sein soll, und festlegen, ob nur offene oder sowohl offene als auch ausgeglichene Buchungen eingeschlossen werden. Wenn die Fälligkeitsmomentaufnahme Informationen für mehrere juristische Personen enthält, werden Buchungen für alle enthaltenen juristischen Personen angezeigt.  
+    * Zeigen Sie die Debitorenaufstellungen im Microsoft Excel-Format an. Sie können ein Startdatum für den Buchungsbereich auswählen, der in der Aufstellung enthalten sein soll, und festlegen, ob nur offene oder sowohl offene als auch ausgeglichene Buchungen eingeschlossen werden. Wenn die Fälligkeitsmomentaufnahme Informationen für mehrere juristische Personen enthält, werden Buchungen für alle enthaltenen juristischen Personen angezeigt.  
     * Öffnen Sie das Formular "Dokumente", in dem Sie Dokumente oder Hinweise erstellen oder anzeigen können.  
 7. Klicken Sie im Aktivitätsbereich auf "Kommunikation".
     * Öffnen Sie Outlook, sodass Sie eine E-Mail an den im Feld "Kontakt" angegebenen Kontakt senden können. Wenn kein Inkassokontakt angegeben ist, wird die primäre Adresse für den Debitor verwendet. Falls kein Primärkontakt angegeben ist, werden E-Mails an die erste Adresse im Formular "Kontakte" gesendet. Die ausgewählten Buchungen werden als Anlage hinzugefügt. Bei der Anlage handelt es sich um eine Excel-Datei mit drei Arbeitsblättern. Im Formular "Debitorenkontenparameter" kann eine E-Mail-Vorlage für Nachrichten an Debitorenkontakte festgelegt werden.  
@@ -131,5 +131,4 @@ Diese Prozedur zeigt Ihnen, wie Sie Inkassoinformationen sowie verschiedene Einr
     * Wählen Sie eine Inkassoanfrage aus, die dem Debitor zugewiesen ist, oder lassen Sie dieses Feld leer. Wenn eine Anfrage ausgewählt wird, werden in diesem Formular nur Buchungen und Aktivitäten angezeigt, die der Anfrage zugeordnet sind.  
 8. Klicken Sie auf "Liste anzeigen".
     * Wählen Sie ein Debitorenkonto aus, oder übernehmen Sie den Standardeintrag. Hier wird standardmäßig das Debitorenkonto angezeigt, das auf der Listenseite oder in dem Formular ausgewählt ist, über die bzw. das dieses Formular geöffnet wurde. Wenn Sie das Formular über eine Listenseite geöffnet haben, enthält die Liste die Debitoren, die in dem auf der Listenseite verwendeten Debitorenpool enthalten sind.  
-
 

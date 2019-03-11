@@ -1,13 +1,13 @@
---- 
+---
 title: Deutsche Protokolldateikonfiguration importieren
 description: Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden.
 author: mrolecki
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: shylaw
@@ -16,12 +16,12 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: b68f443df87bcd39b018c63c796bb4ccdd7afd82
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370316"
 ---
 # <a name="import-german-audit-file-configuration"></a>Deutsche Protokolldateikonfiguration importieren
 
@@ -41,5 +41,4 @@ Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Pr
 9. Klicken Sie auf Übernehmen.
 10. Klicken Sie auf Import.
 11. Klicken Sie auf "Ja".
-
 

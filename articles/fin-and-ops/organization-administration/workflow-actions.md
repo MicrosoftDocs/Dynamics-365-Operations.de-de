@@ -1,13 +1,13 @@
 ---
-title: "Aktivitäten in Workflow-Genehmigungsprozessen"
-description: "Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann."
+title: Aktivitäten in Workflow-Genehmigungsprozessen
+description: Dieser Artikel beschreibt die Aktivitäten, die jeder Teilnehmer an einen Workflowgenehmigungsprozess ausführen kann.
 author: sericks007
 manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 3ee5334c87b2b0acae2afa6882feca63e3b9cc8e
 ms.openlocfilehash: 829ee16b8fd72a0808a657419524487d9c1b3123
-ms.contentlocale: de-de
-ms.lasthandoff: 12/18/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361750"
 ---
-
 # <a name="actions-in-workflow-approval-processes"></a>Aktivitäten in Workflow-Genehmigungsprozessen
 
 [!include [banner](../includes/banner.md)]
@@ -143,4 +142,3 @@ Fordert eine genehmigende Person Änderungen an einem Dokument an, wird es an de
 Beispielsweise hat Steffen eine Spesenabrechnung in Höhe von 12.000 Euro übermittelt, und dieses Dokument ist Saskia zugewiesen. Wenn Saskia eine Änderung anfordert, wird die Spesenabrechnung an Steffen zurückgesendet.
 
 Steffen kann die Spesenabrechnung erneut übermitteln. Er kann zuerst die angeforderten Änderungen vornehmen, oder er kann die Originalversion der Abrechnung erneut übermitteln. Übermittelt Steffen die Spesenabrechnung erneut, wird sie zur Genehmigung an Frank gesendet, da Frank die erste genehmigende Person im Genehmigungsprozess ist.
-

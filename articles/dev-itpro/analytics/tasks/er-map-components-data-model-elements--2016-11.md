@@ -1,13 +1,13 @@
---- 
+---
 title: ER Zuordnen von Komponenten des erstellten Formats zu Datenmodellelementen (November 2016)
-description: "Die folgende Prozedur zeigt, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Datenmodellelemente Komponenten der erstellten Elektronischen Berichterstellungs-(ER)-Konfiguration zuordnen kann, die ein elektronisches Dokumentformat für die Zahlungsgeschäftsdomäne definiert."
+description: Die folgende Prozedur zeigt, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder der Rolle „Entwickler für elektronische Berichterstellung” Datenmodellelemente Komponenten der erstellten Elektronischen Berichterstellungs-(ER)-Konfiguration zuordnen kann, die ein elektronisches Dokumentformat für die Zahlungsgeschäftsdomäne definiert.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
 ms.reviewer: kfend
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: a24ef0e091379f14a163a6385be988143a1ec608
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323547"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Zuordnen von Komponenten des erstellten Formats zu Datenmodellelementen (November 2016)
 
@@ -113,5 +113,4 @@ Die folgende Prozedur zeigt, wie ein Benutzer entweder in der Rolle „Systemadm
 ## <a name="restrict-access-to-created-format-from-companies"></a>Einschränken des Zugriffs auf erstelltes Format von Unternehmen
 1. Erweitern Sie den Abschnitt „ISO-Land-/Regionencode”.
     * Jeder Formatzugriff kann beschränkt werden, indem bestimmte Länder/Regionen angibt, in denen ein Format anwendbar ist. Wenn die Länder-/Regionenliste für ein bestimmtes Format leer ist, kann dieses Format in einem beliebigen Unternehmen verwendet werden. Wenn mehrere ISO-Länder-/Regionscodes in die Länder-/Regionenliste eingefügt werden, kann dieses Format nur in Unternehmen verwendet werden, wenn die primäre Adresse sich in dem Land/der Region befindet.  
-
 

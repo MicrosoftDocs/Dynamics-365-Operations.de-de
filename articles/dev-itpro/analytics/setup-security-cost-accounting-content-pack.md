@@ -1,13 +1,13 @@
 ---
-title: "Aufstellungssicherheit für Kostenrechnungsinhalt für Power BI Inhalt"
-description: "In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft-Power BI umsetzen können. Diese Funktion stellt sicher, dass Benutzer nur Power BI-Daten sehen, für die Ihnen Zugriff erteilt werden."
+title: Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten
+description: In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft Power BI umsetzen können. Diese Funktion stellt sicher, dass Benutzer nur Power BI-Daten sehen, für die Ihnen Zugriff erteilt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,25 +17,24 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
 ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
-ms.contentlocale: de-de
-ms.lasthandoff: 08/13/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "352872"
 ---
-
-# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Aufstellungssicherheit für Kostenrechnungsinhalt für Power BI Inhalt
+# <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft-Power BI umsetzen können. Diese Funktion stellt sicher, dass Benutzer nur Power BI-Daten sehen, für die Ihnen Zugriff erteilt werden.
+In diesem Thema wird erläutert, wie Sie Zugriffebenensicherheit in der Kostenrechnung auf Positionsebene in Microsoft Power BI umsetzen können. Diese Funktion stellt sicher, dass Benutzer nur Power BI-Daten sehen, für die Ihnen Zugriff erteilt werden.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
-Der **Kostenrechnungsanalyse** Microsoft-Power BI-Inhalt verwendet die Power BI-Sicherheit auf Positionsebene, um die Zugriffsrechte eines Benutzers zu beschränken. Sicherheit basiert auf der Zugriffebenenorganisationshierarchie, die in den Kostenrechnungsparametern eingerichtet wird. Weitere Informationen zum **Kostenrechnungsanalyse** Power BI-Inhalt finden Sie in [Kostenrechnungsanalyse für Power BI-Inhalt](cost-accounting-analysis-content-pack.md).
+Der **Kostenrechnungsanalyse** Microsoft Power BI-Inhalt verwendet die Power BI Sicherheit auf Positionsebene, um die Zugriffsrechte eines Benutzers zu beschränken. Sicherheit basiert auf der Zugriffebenenorganisationshierarchie, die in den Kostenrechnungsparametern eingerichtet wird. Weitere Informationen zum **Kostenrechnungsanalyse** Power BI-Inhalt finden Sie in [Kostenrechnungsanalyse für Power BI-Inhalt](cost-accounting-analysis-content-pack.md).
 
-## <a name="setup"></a>Einstellung
+## <a name="setup"></a>Einstellungen
 Um die Zugriffebenensicherheit für Power BI zu nutzen, muss der Eigentümer der Power BI-Inhalte die folgenden Schritte ausführen.
 
 > [!NOTE]
@@ -55,14 +54,13 @@ Um die Zugriffebenensicherheit für Power BI zu nutzen, muss der Eigentümer der
 Benutzer, die zur Rolle **Kostenträgercontroller** hinzugefügt werden, finden nur die Daten, um die ihnen zulässig sind, um festzustellen, entsprechend der Definition im Formular Kostenrechnungs-Zugriffebenenorganisationshierarchie.
 
 > [!NOTE]
-> Sicherheit auf Positionsebene gilt für Kacheln zu und von Berichten in Microsoft Dynamics 365 for Finance and Operations, die Power BI eingebettet werden.
+> Sicherheit auf Positionsebene gilt für Kacheln zu und Berichte in Microsoft Dynamics 365 for Finance and Operations die von Power BI eingebettet werden.
 
 ## <a name="updating-security"></a>Sicherheit aktualisieren
-Wenn Aktualisierungen der Zugriffebenensicherheit in der Kostenrechnung erstellt werden und Sie Power BI diese Aktualisierungen anzeigen lassen möchten, müssen Sie den Entitätsspeicher für den **Kostenrechnungsanalyse** Power BI-Inhalte aktualisieren. Nachdem Sie die Entitätsspeicheraktualisierung von Finance and Operations ausgeführt haben, müssen Sie die Artefakte auf PowerBI.com aktualisieren. Weitere Informationen zur Entitätsspeicheraktualisierung,finden Sie unter [Entitätsspeicher aktualisieren](power-bi-integration-entity-store.md#update-entity-store). Der Eigentümer des **Kostenrechnungsanalyse** Power Bi-Inhalts muss eine Entitätsspeicheraktualisierung auch erforderlich, wenn neue Benutzer Zugriff der Organisationshierarchie gewährt werden. Zudem muss der Eigentümer die neuen Benutzer der **Kostenträgercontroller** für PowerBI.com hinzufügen, um Sicherheit auf Positionsebene für sie angewendet wird.
+Wenn Aktualisierungen der Zugriffebenensicherheit in der Kostenrechnung erstellt werden und Sie Power BI diese Aktualisierungen anzeigen lassen möchten, müssen Sie den Entitätsspeicher für den **Kostenrechnungsanalyse** Power BI-Inhalte aktualisieren. Nachdem Sie die Entitätsspeicheraktualisierung von Finance and Operations ausgeführt haben, müssen Sie die Artefakte auf PowerBI.com aktualisieren. Weitere Informationen zur Entitätsspeicheraktualisierung,finden Sie unter [Entitätsspeicher aktualisieren](power-bi-integration-entity-store.md#update-entity-store). Der Eigentümer des **Kostenrechnungsanalyse** Power BI-Inhalts muss eine Entitätsspeicheraktualisierung auch erforderlich, wenn neue Benutzer Zugriff der Organisationshierarchie gewährt werden. Zudem muss der Eigentümer die neuen Benutzer der **Kostenträgercontroller** für PowerBI.com hinzufügen, um Sicherheit auf Positionsebene für sie angewendet wird.
 
 ## <a name="disabling-security"></a>Deaktivieren von Sicherheit
 Es wird davon ausgegangen, dass Ihre Organisation möchte den Datenzugriff einschränken. Wenn aus einem bestimmten Grund Sicherheitsparameter deaktiviert werden, die bei der Kostenrechnung ausführen, Eigentümer muss der Benutzer der **Kostenbuchhalter** Rolle in Power BI stattdessen hinzufügen. Wenn Sie die Sicherheit von einem aktivierten Status zu einem deaktivierten Zustand ändern, wird empfohlen, Benutzer von der **Kostenträgercontroller** Rolle zu entfernen. Und umgekehrt, falls Sie die Sicherheit erneut aktivieren. Benutzer können Rollen beiden gehören. Gemeinsamer Zugriff ist beider Rollen gemeinsam. Im Fall eines **Kostenrechnungsanalyse** Power BI-Inhalts, Benutzer, die gemeinsamen Zugriff erhalten, haben Zugriff die uneingeschränkte Daten. Wenn Sie möchten, das der Zugriff eingeschränkt ist, müssen Benutzer nur der **Kostenträgercontroller** Rolle zugewiesen werden. Diese Sicherheitsupdates auf Positionsebene sind sofort wirksam. Betroffene Benutzer können ihre Browser aktualisieren.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Weitere Informationen über die Sicherheit auf Positionsebene in Power BI finden Sie unter [Sicherheit für Ihr Modell in Power BI verwalten](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-

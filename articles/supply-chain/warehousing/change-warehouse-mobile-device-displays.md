@@ -1,13 +1,13 @@
 ---
-title: "Seite \"Anzeigeeinstellungen für das mobile Gerät für das Lager\""
-description: "In diesem Thema wird beschrieben, wie die Darstellung einer Anzeige eines Mobilgeräts eingerichtet wird, und wie Tastenkombinationen den Steuerelementen, beispielsweise Schaltflächen zugeordnet werden."
+title: Seite "Anzeigeeinstellungen für das mobile Gerät für das Lager"
+description: In diesem Thema wird beschrieben, wie die Darstellung einer Anzeige eines Mobilgeräts eingerichtet wird, und wie Tastenkombinationen den Steuerelementen, beispielsweise Schaltflächen zugeordnet werden.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WHSRFColor, WHSRFColorPicker, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16f332da00d2230ecb4cebc526b6456314564e55
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "328032"
 ---
-
 # <a name="warehouse-mobile-device-display-settings"></a>Seite "Anzeigeeinstellungen für das mobile Gerät für das Lager"
 
 [!include [banner](../includes/banner.md)]
@@ -101,7 +100,6 @@ Sie können mehr als einen Ausdruck in der gleichen Datei angeben. Jeder Ausdruc
 --------
 
 [Konfigurieren von mobilen Geräten für Lagerarbeiten](configure-mobile-devices-warehouse.md)
-
 
 
 

@@ -1,13 +1,13 @@
 ---
 title: Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
-description: "In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können. Schließlich können Entwickler diese Benachrichtigungen auf Arbeitsgänge mit Ausnahme von Auftragserfüllungsarbeitsgängen erweitern."
+description: In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können. Schließlich können Entwickler diese Benachrichtigungen auf Arbeitsgänge mit Ausnahme von Auftragserfüllungsarbeitsgängen erweitern.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 03/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.dyn365.ops.version: ''
 ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "361336"
 ---
-
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 
 [!include [banner](includes/banner.md)]
 
-In der heutigen, modernen Retailumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. Mit Microsoft Dynamics 365 for Retail mit Anwendung Update 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
+In der heutigen, modernen Retailumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. In Microsoft Dynamics 365 for Retail mit dem Anwendungsupdate 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
 
 So kann das System Auftragserfüllungsarbeitsgänge nur für Benachrichtigungen anzeigen. Da jedoch das Framework entwickelt wurde, um erweiterbar werden, sind alle Entwickler in der Lage, einen Benachrichtigungshandler für einen Arbeitsgang zu verfassen und die Benachrichtigungen für diesen Arbeitsgang im POS angezeigt.
 
@@ -72,4 +71,3 @@ Die folgende Abbildung zeigt die Inhaltseinstellungen, die im Schaltflächenrast
 Die folgende Abbildung zeigt die Auswirkungen der Auswahl **Oben rechts** versus **Mitte** im Feld **Inhalts-Ausrichtung** für Schaltflächen für verschiedene Mengen an.
 
 ![Live Inalt auf POS-Schaltfläche](./media/ButtonsWithLiveContent.png "Live Inalt auf POS-Schaltfläche")
-

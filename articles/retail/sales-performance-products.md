@@ -1,13 +1,13 @@
 ---
 title: Verkaufsleistung nach Produkt
-description: "Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen."
+description: Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe Microsoft Dynamics 365 for Retail prüfen.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-retail
-ms.technology: 
+ms.technology: ''
 ms.search.form: SysOperationsTemplateForm
 audience: Application User
 ms.reviewer: josaw
@@ -19,21 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.openlocfilehash: 059474a780f849d6e1920703c1f717a9adaa2617
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2d40f51208503fe9d2dadca455bb0531bbe519a4
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "343971"
 ---
-
 # <a name="assess-sales-performance-by-product"></a>Verkaufsleistung nach Produkt
 
 [!include [banner](includes/banner.md)]
 
-Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe von Microsoft Dynamics 365 for Retail prüfen.
+Sie können die Rentabilität für die 10 wichtigsten Produkte mithilfe Microsoft Dynamics 365 for Retail prüfen.
 
-Im Rahmen von Microsoft Dynamics 365 for Retail können Benutzer die Rentabilität für die wichtigsten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage eines der folgenden Kriterien überprüfen:
+Im Rahmen von Dynamics 365 for Retail können Benutzer auch die Rentabilität der wichtigsten Produkte (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage einer der folgenden Kriterien überprüfen:
 
 - Verkaufsbetrag
 - Menge
@@ -45,4 +44,3 @@ Für diese Bewertung können Sie den vordefinierten **Bericht über Top-Produkte
 - **Einzelhandelsshopleitung**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopleitung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
 - **Kategorie- und Produktverwaltungs**-Arbeitsbereich &gt; **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsshopverwaltung** &gt; **Berichte** &gt; **Bericht über Top-Produkte**
 - **Abfragen und Berichte**-Abschnitt &gt; **Einzelhandel** &gt; **Abfragen und Berichte** &gt; **Umsatzberichte** &gt; **Bericht über Top-Produkte**
-

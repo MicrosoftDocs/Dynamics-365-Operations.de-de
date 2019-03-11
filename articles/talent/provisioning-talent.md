@@ -1,13 +1,13 @@
 ---
 title: Talent bereitstellen
-description: "Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Umgebung für Microsoft Dynamics 365 for Talent."
+description: Dieses Thema führt Sie durch den Prozess des Bereitstellens einer neuen Umgebung für Dynamics 365 for Talent.
 author: rschloma
 manager: AnnBe
 ms.date: 09/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.translationtype: HT
-ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
 ms.openlocfilehash: 6fb41a8c1ff4ce95bab5b169256955f244e66071
-ms.contentlocale: de-de
-ms.lasthandoff: 11/01/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304574"
 ---
 # <a name="provision-talent"></a>Talent bereitstellen
 
@@ -38,7 +38,7 @@ Um Kreditbriefen für die Talent Umgebung zu verwalten, müssen Sie ein LCS-Proj
 1. Melden Sie sich an bei [Kreditbriefen](https://lcs.dynamics.com/Logon/Index), indem Sie das Konto verwenden, das Sie verwenden, um Talent zu abonnieren.
 2. Wählen Sie das Pluszeichen (**+**) aus, um ein Projekt zu erstellen.
 3. Wählen Sie **Microsoft Dynamics 365 for Talent** als den Produktnamen und die Produktversion aus.
-4. Wählen Sie die Methode **Dynamics 365 for Talent** aus.
+4. Wählen Sie die **Dynamics 365 for Talent**-Methodik.
 5. Wählen Sie **Erstellen** aus.
 
 Informationen darüber, wie Sie mit Talent beginnen, finden Sie unter der **Talent**-Methodik, die Sie im neuen Projekt erstellt haben. Nachdem Sie abschließend das Projekt erstellen, ergänzen Sie die folgende Bestimmungen für Ihre Talent Umgebung.
@@ -47,7 +47,7 @@ Informationen darüber, wie Sie mit Talent beginnen, finden Sie unter der **Tale
 Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung bereitstellen.
 
 1. In Ihrem LCS-Projekt wählen Sie die Kachel **Talent App-Verwaltung** aus.
-2. Talent wird immer in einer Microsoft PowerApps Umgebung bereitgestellt, um PowerApps Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt "PowerApps-Umgebung" dieses Themas", bevor Sie fortfahren. Wenn Sie noch keine PowerApps-Umgebung haben, wählen in Sie in LCS Umgebung verwalten oder navigieren Sie zum PowerApps-Administratorcenter. Folgen Sie dann den Schritten [PowerApps-Umgebung erstellen](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
+2. Talent wird immer in einer Microsoft PowerApps-Umgebung bereitgestellt, um PowerApps Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt "PowerApps-Umgebung" dieses Themas", bevor Sie fortfahren. Wenn Sie noch keine PowerApps-Umgebung haben, wählen in Sie in LCS Umgebung verwalten oder navigieren Sie zum PowerApps-Administratorcenter. Folgen Sie dann den Schritten [PowerApps-Umgebung erstellen](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 
     > [!NOTE]
     > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz PowerApps P2 zugewiesen werden. Wenn Ihre Organisation keine PowerApps Lizenz P2 hat, können Sie dies aus Ihrem CSP oder über abrufen [PowerApps-Preiskalkulationsseite](https://powerapps.microsoft.com/en-us/pricing/).
@@ -79,7 +79,7 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Um
  
    **Standard-Power-App-Umgebung**, Obwohl jeder Mandant automatisch mit einer Standard-PowerApps-Umgebung ausgestattet ist, empfehlen wir, dass Sie ihn nicht mit Talent verwenden, da alle Mandantenbenutzer Zugriff auf die PowerApps-Umgebung haben und unbeabsichtigt produktive Daten beim Testen und Untersuchen von PowerApps oder Flow Integration beeinträchtigen können.
    
-   <strong>Testumgebung</strong> Umgebungen mit einem Namen wie 'TestDrive – alias@domain' werden mit einer 60 tägigen Ablaufperiode erstellt und sind nach dieser Frist abgelaufen und Ihre Umgebung wird automatisch entfernt.
+   <strong>Testumgebung</strong> Umgebungen mit einem Namen wie 'TestDrive – alias@domain’ werden mit einer 60 tägigen Ablaufperiode erstellt und sind nach dieser Frist abgelaufen und Ihre Umgebung wird automatisch entfernt.
    
    **Nicht unterstützte Regionen** Talent wird derzeitnur in folgenden Regionen unterstützt: Europa Australien und USA.
   
@@ -87,5 +87,4 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Um
  
 ## <a name="grant-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren
 Standardmäßig besitzt nur der globale Administrator, von dem Enterprise Portal installiert wurde, Zugriff auf diese Anwendung. Allerdings muss zusätzliche Bewerbungsbenutzern explizit Zugriff gewährt werden. Um Zugriff zu gewähren, wählen Sie [Benutzer hinzufügen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) und [weisen die entsprechenden Rollen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) in der Personalverwaltungsumgebung zu. Der globale Administrator, der Talent eingesetzt hat, muss auch die Anwendungen Attract und Onboard starten, um die Initialisierung abzuschließen und den Zugriff für andere Mieter zu ermöglichen.  Bis dies geschieht, können andere Benutzer nicht auf Attract- und Onboard-Anwendungen zugreifen und erhalten Zugriffsverletzungsfehler.
-
 

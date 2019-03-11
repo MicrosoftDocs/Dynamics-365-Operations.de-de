@@ -1,13 +1,13 @@
 ---
-title: "Lagerplätze für Lagerbestand"
-description: "Lagerplätze für Lagerbestand werden mit grundlegendem Warehousing (WMS I) verwendet , um zu bestimmen, wo Artikel in einem WMS I-Lagerort gelagert und entnommen werden."
+title: Lagerplätze für Lagerbestand
+description: Lagerplätze für Lagerbestand werden mit grundlegendem Warehousing (WMS I) verwendet , um zu bestimmen, wo Artikel in einem WMS I-Lagerort gelagert und entnommen werden.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: WMSLocation
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 789272e1ee02c7f5dbab4e325cefe56425a3d1a7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 11be82682fc870cb21959d9e531ff8bf67993fa3
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350802"
 ---
-
 # <a name="inventory-locations"></a>Lagerplätze für Lagerbestand
 
 [!include [banner](../includes/banner.md)]
@@ -67,4 +66,3 @@ Es ist möglich, Lagerplätze von einem Lagerort an einen anderen zu kopieren un
 --------
 
 [Ein neues Lagerlayout erstellen (Aufgabenleitfaden)](tasks/create-new-warehouse-layout.md)
-

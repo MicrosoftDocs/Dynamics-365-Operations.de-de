@@ -1,13 +1,13 @@
 ---
-title: "MwSt-Berichterstattung für Europa"
-description: "Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung des Mehrwertsteuer-Auszugs für einige europäische Länder."
+title: MwSt-Berichterstattung für Europa
+description: Dieses Thema enthält allgemeine Informationen zum Einrichten und Generierung des Mehrwertsteuer-Auszugs für einige europäische Länder.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 5c5cd61c45eb7cbc6f040f054a99d9a54e1ee854
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370362"
 ---
-
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
 [!include [banner](../includes/banner.md)]
@@ -273,7 +272,6 @@ Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber d
 | Litauen      | [MwSt-Berichtdetail für Litauen](emea-ltu-vat-statement-details.md)         |
 | Niederlande    |                                                                                 |
 | Schweden         |                                                                                 |
-
 
 
 

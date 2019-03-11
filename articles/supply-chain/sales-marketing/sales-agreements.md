@@ -1,13 +1,13 @@
 ---
-title: "Kaufverträge"
-description: "Dieses Thema enthält Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen."
+title: Kaufverträge
+description: Dieses Thema enthält Informationen zu Kaufverträgen. Durch einen Kaufvertrag verpflichtet sich der Debitor, Produkte in einer bestimmten Menge oder für einen bestimmten Preis über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Sonderpreise und Rabatte zustehen.
 author: omulvad
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: josaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f4ab396d06383e3d6fc7bfab2e01f1afe4aa8fc4
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4db47f445fe820e65389799ddcb6ea4a99949178
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "309517"
 ---
-
 # <a name="sales-agreements"></a>Kaufverträge
 
 [!include [banner](../includes/banner.md)]
@@ -100,7 +99,7 @@ Wenn Sie einen Auftrag gegen einen Kaufvertrag erstellt haben (freigegeben), kö
 | Menge                                                          | Wenn die von Ihnen angegebene Menge die Menge überschreitet, die in einer Kaufvertragsposition mit aktiviertem Kontrollkästchen **Maximum wird erzwungen** angegeben ist, wird ein Dialogfeld zum Speichern der geänderten Menge angezeigt: Klicken Sie auf **Ja**, um die Verknüpfung mit der Kaufvertragsposition zu entfernen und den Preis neu zu berechnen. Klicken Sie auf **Nein**, um die Verknüpfung mit der Kaufvertragsposition ohne erneute Berechnung des Preises zu entfernen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Rückgabe eines Artikels, der aus einem Kaufvertrag bestellt wurde
-Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Microsoft Dynamics 365 for Finance and Operations die zugehörige Kaufvertragszusage suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
+Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Microsoft Dynamics 365 for Finance and Operations die zugehörigen Kaufvertragszusagen suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
 
 Wenn Sie die Menge der zurückgegebenen Artikel nicht aus der Kaufvertragszusage abgezogen werden soll, können Sie das **Verknüpfung entfernen**-Steuerelements auf der Seite **Rücklieferung** verwenden, um die Verknüpfung zwischen der Rücklieferung und dem Kaufvertragszusage zu entfernen. Wenn Sie den Link später neu einrichten müssen, klicken Sie auf **Verknüpfung erstellen**.  
 
@@ -111,7 +110,6 @@ In bestimmten Situationen, in den Aufträge indirekt erstellt werden (beispielsw
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Finanzdimensionen in Kaufverträgen
 Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen eines Kaufvertrags kopieren. Sie können die Dimensionen bei einem Vereinbarungskopf oder -Vereinbarungsposition jederzeit ändern. In diesem Fall werden die Dimensionen automatisch auf den Freigabenkopf oder die Freigabenposition von Freigabeaufträgen kopiert.
-
 
 
 

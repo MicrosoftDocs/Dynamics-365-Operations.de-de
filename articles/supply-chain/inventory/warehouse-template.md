@@ -1,32 +1,31 @@
 ---
 title: Einrichten eines Lagerorts mithilfe einer Lagerortkonfigurationsvorlage
-description: "In diesem Thema wird erklärt, wie ein Lagerort mithilfe einer Lagerortkonfigurationsvorlage eingerichtet wird."
+description: In diesem Thema wird erklärt, wie ein Lagerort mithilfe einer Lagerortkonfigurationsvorlage eingerichtet wird.
 author: perlynne
 manager: AnnBe
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+ms.dyn365.ops.version: 7.2999999999999998
+ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: e952a2f988645ccff7617817262cbf0e90bfd8ab
-ms.contentlocale: de-de
-ms.lasthandoff: 05/23/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "338060"
 ---
-
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Einrichten eines Lagerorts mithilfe einer Lagerortkonfigurationsvorlage
 
 [!include [banner](../includes/banner.md)]
@@ -94,9 +93,8 @@ Sie können eine ZIP-Datei für das Datenpaket herunterladen. Diese Datei beinha
 
 Das Protokoll **Ansichtsausführung** enthält detaillierte Informationen zu jeder Datenentität, die importiert wird. Sie können die Stagingdatenansicht verwenden, um schnell zu den Zieldaten zu gelangen. Auf diese Weise können Sie sehen, wie die importierten Daten auf den zugeordneten Seiten in der Anwendung aussehen. Wenn Sie die Standarddatenvorlagen verwenden, funktioniert die Importsequenz für jede Datenentität in der vordefinierten Weise, um sicherzustellen, dass alle abhängigen Daten zuerst importiert werden. Wenn benutzerdefinierte Datenentitäten Teil des Projekts sind, müssen Sie sicherstellen, dass die korrekte Reihenfolge definiert wird. Weitere Informationen finden Sie unter [Konfigurieren von Datenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Weitere Informationen zum Nutzen von Lagerortvorlagen zum Kopieren der Konfiguration eines Lagerorts aus einem Unternehmen in ein neues Unternehmen in der gleichen Instanz zu kopieren, finden Sie in diesem 3-minütigen Video auf YouTube: [Verwenden von Lagerortvorlagen, um die Konfiguration in Microsoft Dynamics 365 for Finance and Operations zu kopieren](https://www.youtube.com/watch?v=K2WIfFlqJYs).
+Weitere Informationen zum Ändern der Lagerortvorlage, um die Konfiguration eines Lagerorts aus einem Unternehmen in ein neues Unternehmen in der gleichen Instanz zu kopieren, sehen Sie sich dieses 3-minütige YouTube Video an: [Verwenden von Lagerortvorlagen, um die Konfiguration in Microsoft Dynamics 365 for Finance and Operations zu kopieren](https://www.youtube.com/watch?v=K2WIfFlqJYs)
 
 ## <a name="related-topic"></a>Verwandtes Thema
 
 [Konfigurationsdatenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md)
-

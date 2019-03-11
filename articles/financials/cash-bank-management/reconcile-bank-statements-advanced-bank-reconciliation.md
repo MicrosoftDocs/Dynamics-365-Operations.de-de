@@ -1,13 +1,13 @@
 ---
 title: Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
-description: "Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess."
+description: Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 for Finance and Operations automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 93b311d541ab588be82e6704dbe9ae3e43deabba
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "364970"
 ---
-
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 
 [!include [banner](../includes/banner.md)]
@@ -94,7 +93,6 @@ Nach Abschluss des Abstimmungsprozesses sollten Sie das Bankabstimmungsarbeitsbl
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Buchen neuer Transaktionen, die der Abstimmung zugeordnet sind
 Bankauszugsbuchungen, die Sie auf dem Abstimmungsarbeitsblatt als **Neu** gekennzeichnet haben, werden über die Seite **Bankauszug** gebucht. Auf der Seite **Bankauszug** wählen Sie Auszugskennung, um die Abstimmungsdetails anzuzeigen. Im **Buchhaltung**-Menü können Sie die Optionen **Verteilung anzeigen** und **Buchung anzeigen** nutzen, um die Details hinter den neuen Transaktionen und die zugeordneten Hauptbucheinträge anzuzeigen. Wählen Sie die Option **Buchen**, um die Bankauszugspositionen zu buchen, die im Hauptbuch als **Neu** markiert sind. Beachten Sie, dass die Buchung nur einmal pro Bankauszug durchgeführt werden kann.
-
 
 
 

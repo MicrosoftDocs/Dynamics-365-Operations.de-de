@@ -1,13 +1,13 @@
 ---
 title: Abschreibungsmethoden und -konventionen
-description: "Dieser Artikel gibt einen Überblick über die Abschreibungskonventionen und Abschreibungsmethoden, die von Microsoft Dynamics 365 for Finance and Operations unterstützt werden."
+description: Dieser Artikel gibt einen Überblick über die Abschreibungskonventionen und Abschreibungsmethoden, die von Microsoft Dynamics 365 for Finance and Operations unterstützt werden.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetDepreciationProfile, AssetGroupBookSetup, AssetGroupDepBookSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: be8e05a386178b9172a906109e015269dc72b32e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f545b0a9abbd7c797afead67917cf80f4cbe0dae
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331114"
 ---
-
 # <a name="depreciation-methods-and-conventions"></a>Abschreibungsmethoden und -konventionen
 
 [!include [banner](../includes/banner.md)]
@@ -89,7 +88,6 @@ Die folgenden Abschreibungsmethoden stehen zur Auswahl.
 [Degressiven Abschreibung von 175 Prozent](175-percent-reducing-balance-depreciation.md)
 
 [Degressiven Abschreibung von 200 Prozent](200-percent-reducing-balance-depreciation.md)
-
 
 
 

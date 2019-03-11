@@ -1,13 +1,13 @@
 ---
-title: "Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung"
-description: "Dieses Thema enthält Informationen zum gemischten Planungsmodus."
+title: 'Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung'
+description: Dieses Thema enthält Informationen zum gemischten Planungsmodus.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
 audience: Application User
 ms.reviewer: josaw
@@ -19,14 +19,13 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8e6a896b2a073e189b956ef189f63908f08606ed
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "358231"
 ---
-
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Mischplanung: Kombinieren Sie eigenständige, Prozess- und Lean-Beschaffung
 
 [!include [banner](../includes/banner.md)]
@@ -67,7 +66,6 @@ Für Arbeit, die unabhängig von einer Lieferrichtlinie ist, müssen Sie nicht I
 
 ## <a name="process-manufacturing--the-production-type"></a>Prozessfertigung – Der Produktionstyp
 Für vollständige Flexibilität im gemischten Modus, empfiehlt es sich, Produktionstyp Stücklisten für alle Produkte verwenden. Sie können Kanbans, Produktionsaufträge, Umlagerungsaufträge oder Bestellungen Anschließend können, ein Produkt zu liefern. Für Fertigungsverarbeitung muss der Produktionstyp **Formel**, **Kuppelprodukt**, **Nebenprodukt** oder **Planungsartikel** verwendet werden. Kanbans und Produktionsaufträge können nicht für diese Produktionstypen verwendet werden.
-
 
 
 

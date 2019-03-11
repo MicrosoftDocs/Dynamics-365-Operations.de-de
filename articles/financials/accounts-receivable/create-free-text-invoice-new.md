@@ -1,13 +1,13 @@
---- 
+---
 title: Freitextrechnungen erstellen
-description: "In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden."
+description: In diesem Thema wird erläutert, wie Freitextrechnungen erstellt werden.
 author: mikefalkner
 manager: AnnBe
 ms.date: 08/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Operations
@@ -15,14 +15,13 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.translationtype: HT
-ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
 ms.openlocfilehash: f6ee6fda0b52b8af7c253b7d22e470345a8a421f
-ms.contentlocale: de-de
-ms.lasthandoff: 09/05/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332241"
 ---
-
 # <a name="create-free-text-invoices"></a>Freitextrechnungen erstellen
 
 [!include [banner](../includes/banner.md)]
@@ -86,4 +85,3 @@ Anschließend können Sie die Informationen nach Bedarf bearbeiten.
 Sie können eine Freitext-Rechnung von einer Vorlage erstellen. Wenn Sie **Neu von Vorlage** aus der **Rechnungs**registerkarte auswählen, können Sie einen Vorlagennamen gür die neue Freitextrechnung auswählen. Sie können die Standardwerte wie die Zahlungsbedingungen und die Zahlungsmethode der Zahlung auch auswählen oder die Werte verwenden, , die mit der Vorlage gespeichert wurden.
 
 Eine neue Freitextrechnung wird erstellt und Sie können die Werte in dieser Rechnung bearbeiten.
-

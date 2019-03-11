@@ -1,48 +1,47 @@
 ---
 title: Bestandsumlagerungen und Regulierungen von Field Service mit Finance and Operations synchronisieren
-description: "Dieses Thema erläutert die Vorlagen und die zugrunde liegende Aufgabe, die verwendet wird, um Produkte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren."
+description: In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsanpassungen und Übertragungen von Microsoft Dynamics 365 for Finance and Operations auf Microsoft Dynamics 365 for Field Service verwendet werden.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 01/14/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
-ms.search.industry: 
+ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
+ms.openlocfilehash: aa54945cea5821da163e1f6ea1747ac29b31a3ce
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 8c6cb481f1a3fe48d329c5936118d8df88a4175b
-ms.openlocfilehash: 79a1cfac3fa94223cc9af73e758ce95fd47065c9
-ms.contentlocale: de-de
-ms.lasthandoff: 12/20/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308367"
 ---
-
 # <a name="synchronize-inventory-adjustments-from-field-service-to-finance-and-operations"></a>Bestandsumlagerungen und Regulierungen von Field Service mit Finance and Operations synchronisieren
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema erläutert die Vorlagen und die zugrunde liegende Aufgabe, die verwendet wird, um Produkte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
+In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsanpassungen und Übertragungen von Microsoft Dynamics 365 for Finance and Operations auf Microsoft Dynamics 365 for Field Service verwendet werden.
 
 [![Synchronisierung von Geschäftsprozessen zwischen Finance and Operations und Field Service](./media/FSTransAdjOW.png)](./media/FSTransAdjOW.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
-Die folgende Vorlage und die zugrunde liegende Aufgabe, die verwendet wird, um Produkte aus Microsoft Dynamics 365 for Field Service mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Bestandsanpassungen und Übertragungen von Microsoft Dynamics 365 for Field Service auf Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 
-**Name der Vorlage in der Datenintegration:**
+**Vorlagen in der Datenintegration**
 - Bestandanpassung (Field Service zu Finance and Operations)
 - Bestandübertragung (Field Service zu Finance and Operations)
 
-**Namen der Aufgaben im Datenintegrationsprojekt:**
+**Aufgaben im Datenintegrationsprojekt**
 - Lagerbestandsregulierungen
 - Lagerumlagerungen
 
@@ -53,20 +52,20 @@ Die folgende Vorlage und die zugrunde liegende Aufgabe, die verwendet wird, um P
 | msdyn_inventoryadjustmentproducts | Kopfzeilen und Positionen zur CDS-Bestandsübertragungserfassung   |
 
 ## <a name="entity-flow"></a>Entitätsfluss
-Die Lagerregulierungen und Übertragungen, die im Field Service vorgenommen werden, Synchronisieren mit Finance and Operations, wenn der **Beitragsstatus** von erstellt auf buchen geändert wird. Wenn dies eroflt, wird die Regulierung oder der Umlagerungsauftrag gesperrt und wird schreibgeschützt, da  Regulierungen und Überträge in Finance and Operations gebucht werden können und deshalb nicht geändert werden können.
-In Finance and Operations können Sie eine Stapelverarbeitung einrichten, die die Übergangslagererfassungen automatisch bucht, die bei der Integration generiert werden. Voraussetzung finden Sie unten, wie der Stapelverarbeitungsauftrag ausgeführt wird.
+Bestandsanpassungen und Umbuchungen in Field Service werden mit Finance and Operations synchronisiert, nachdem sich der **Buchungsstatus** von **Erstellt** auf **Gebucht** geändert hat. In diesem Fall wird die Anpassung oder der Transportauftrag gesperrt und wird schreibgeschützt. Dies bedeutet, dass Korrekturen und Umbuchungen in Finance and Operations gebucht werden können, aber nicht geändert werden können. In Finance and Operations können Sie einen Batch-Job einrichten, um die bei der Integration erzeugten Korrekturen und Transferbestandsjournale automatisch zu buchen. In den folgenden Voraussetzungen erfahren Sie, wie Sie den Batch-Job aktivieren können.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung 
-Das Feld Lagereinheit wurde der Produktentität hinzugefügt. Dieses Feld ist erforderlich, da Sales und Bestandeinheit nicht unbedingt gleich ist in Operations und für den Lagerort-Bestand in Operations benötigne wir die Lagereinheit.
-Wenn Sie das Produkt in einem Lagerregulierungs-Produkt für beide Lagerregulierungen und Umlagerungen festsetzen, ruft die Einheit aus dem Produkt-Bestand den Produktwert ab. Wenn ein Wert vorhanden ist, wird das Einheitsfeld im Feld Lagerregulierungs-Produkt gesperrt
+Das Feld **Bestandseinheit** wurde der **Produktentität** hinzugefügt. Dieses Feld wird benötigt, da die Verkaufs- und Lagereinheit in Finance and Operations nicht immer gleich ist und die Lagereinheit für den Lagerbestand in Finance and Operations benötigt wird.
+Wenn Sie das Produkt auf einem Bestandskorrekturprodukt sowohl für Bestandskorrekturen als auch für Bestandsumlagerungen einstellen, wird die Einheit aus dem Bestandsproduktwert geholt. Wenn ein Wert gefunden wird, wird das Feld **Einheit** für das Bestandskorrekturprodukt gesperrt.
 
-Das Beitrags-Statusfeld wurde der Lagerregulierungsentität und der Umlagerungsentität hinzugefügt. Dieses Feld dient als Filter und wird verwendet, wenn eine Niedrigerbewertung oder eine Übertragung mit Vorgängen gesendet wird. Das Feld wird als Standard auf erstellt (1) festgelegt und wird dann nicht von Operations übernommen. Wenn Sie eine Änderung machen, wird diese auf gebucht (2) an Operations gesendet, aber Sie können dann nichts mehr in der Regulierung anpassen oder Übertragen oder neue Zeilen hinzufügen.
-Das Nummernsequenzfeld wurde der Bestand-Produktentität hinzugefügt. Dieses Feld ermöglicht der Integration, eine eindeutige Nummer zuzuweisen, damit die Integration weiss, wann sie erstellen und wann aktualisieren muss. Wenn Sie das Lagerregulierungs-Produkt zuerst erstellen, erstellt sie ein neuer Datensatz in der P2C-AutoWertentität, um den Präfix Nummernkreis und den verwendeten Präfix zu verwalten.
+Das Feld **Buchungsstatus** wurde sowohl bei der **Bestandskorrektureinheit** als auch bei der **Bestandsumlagerungseinheit** hinzugefügt. Dieses Feld wird als Filter verwendet, wenn eine Anpassung oder Übertragung an Finance and Operations gesendet wird. Der Standard für dieses Feld ist Erstellt (1), es wird jedoch nicht an Finance and Operations gesendet. Wenn Sie den Wert auf Gebucht (2) aktualisieren, wird er an Finance and Operations gesendet, aber danach können Sie die Anpassung nicht mehr ändern, übertragen oder neue Zeilen hinzufügen.
+
+Die Entität **Bestandskorrekturprodukt** wurde um das Feld **Nummernfolge** erweitert. Dieses Feld stellt sicher, dass die Integration eine eindeutige Nummer hat, damit die Integration den Abgleich erstellen und aktualisieren kann. Wenn Sie Ihr erstes Bestandsanpassungsprodukt erstellen, erstellt es einen neuen Datensatz in der Entität **P2C AutoNumber**, um die Nummernkreise und das verwendete Präfix zu pflegen.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
-### <a name="in-finance-and-operations"></a>In Finance and Operations
-Die Integrationslagererfassungen, die bei der Integration generiert werden, können mit einem Stapelverarbeitungslauf automatisch gebucht werden. Diese wird aktiviert von: Lagerverwaltung > periodische Aufgaben > CD-Integration > Beitragsintegrationslagererfassungen
+### <a name="finance-and-operations"></a>Finance and Operations
+Die Integrationslagererfassungen, die bei der Integration generiert werden, können mit einem Stapelverarbeitungslauf automatisch gebucht werden. Diese wird aktiviert von: **Lagerverwaltung > periodische Aufgaben > CD-Integration > Beitragsintegrationslagererfassungen**
 
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
@@ -80,4 +79,3 @@ Die folgenden Abbildungen zeigen die Vorlagenzuordnung in Datenintegration.
 ### <a name="inventory-transfer-field-service-to-finance-and-operations-inventory-transfer"></a>Bestandandübertragung (Field Service zu Finance and Operations): Bestandübertragung
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSTrans1.png)](./media/FSTrans1.png)
-

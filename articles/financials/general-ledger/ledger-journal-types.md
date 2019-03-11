@@ -1,13 +1,13 @@
 ---
 title: Sachkonto-Erfassungstypen
-description: "In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können."
+description: In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: shylaw
@@ -18,21 +18,20 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
 ms.openlocfilehash: fff557d20a230922b5512aea9e49aa9993a694dd
-ms.contentlocale: de-de
-ms.lasthandoff: 10/16/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "308666"
 ---
-
 # <a name="ledger-journal-types"></a>Sachkonto-Erfassungstypen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie überall in Microsoft Dynamics 365 for Finance and Operations verwenden können.
+In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfassungen einrichten können. Verwenden Sie die Seite **Erfassungsnamen**, um Erfassungen einzurichten, die Sie für Microsoft Dynamics 365 for Finance and Operations verwenden können.
 
-| Journaltyp                      | Kostenträger                       | Transaktionen auf dieser Seite eingeben                                |
+| Journaltyp                      | Zweck                       | Transaktionen auf dieser Seite eingeben                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
 | Zuweisung                        | Erstellen Sie Zuweisungsbuchungen in einer Zuordnungserfassung. Vor der Erstellung einer Zuordnungserfassung muss die Zuordnungsregel auf der Seite **Sachkonto-Zuordnungsregel** erstellt werden.      | Zuordnungsanforderung verarbeiten             |
 | Genehmigung                          | Buchen Sie Kreditorenrechnungen, die für die entsprechenden Sachkonten genehmigt wurden.  | Rechnungsgenehmigungs-Erfassung                                       |
@@ -64,7 +63,6 @@ In diesem Thema werden die Erfassungstypen beschrieben, die Sie für Finanzerfas
 | Buchung der Kreditorenrechnung          | Buchen von Kreditorenrechnungen, die in einer Erfassung sind.                                                                                                                                                                                                                                                                                                                 | Rechnungserfassung                                                |
 | Kreditor zieht erneut Solawechsel     | Erneutes Ziehen eines Solawechsels, der zuvor von der Bank der Organisation eingelöst wurde.                                                                                                                                                                                                                                                                      | Erfassung zum erneuten Ziehen von Solawechseln                                 |
 | Kreditor gleicht Solawechsel aus     | Erstellen von Buchungen für vom Kreditor ausgeglichene Solawechsel.                                                                                                                                                                                                                                                                                                          | Erfassung zum Ausgleich von Solawechseln                                 |
-
 
 
 

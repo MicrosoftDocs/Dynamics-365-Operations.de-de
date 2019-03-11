@@ -3,32 +3,32 @@ title: Einrichten der Angebotsverwaltung
 description: In diesem Thema wird beschrieben, wie Angebote in Talent eingerichtet werden.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/04/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
+ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
 ms.translationtype: HT
-ms.sourcegitcommit: be66d9f95551066bb8bc25445c652d4fa59066d4
-ms.openlocfilehash: bb90f0a3c87c64a74ca63610105abfeb8223900a
-ms.contentlocale: de-de
-ms.lasthandoff: 12/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "376506"
 ---
 # <a name="set-up-offer-management"></a>Einrichten der Angebotsverwaltung 
 
 [!include [banner](includes/banner.md)]
 
-Wenn ein Kandidat auf die Angebotphase in Dynamics 365 for Talent verschoben werden soll: Attract, Sie müssen sicherstellen, dass die Angebote für den Kandidaten schnell nach Bedarf erstellt werden, genehmigt sind und den Kandidaten gesendet werden können. Da die meisten Angebote standardmäßig sind, können Sie aus wiederverwendbaren Vorlagen erstellt werden. In Attract werden alle Angebote in ein Angebotspaket verschoben, das eine Zusammenstellung eines oder mehrerer Angebotsunterlagen ist. 
+Wenn ein Kandidat auf die Angebotsphase in Dynamics 365 for Talent: Attract verschoben wird, müssen Sie sicherstellen, dass die Angebote für den Kandidaten schnell nach Bedarf erstellt, genehmigt und dem Kandidaten gesendet werden können. Da die meisten Angebote standardmäßig sind, können Sie aus wiederverwendbaren Vorlagen erstellt werden. In Attract werden alle Angebote in ein Angebotspaket verschoben, das eine Zusammenstellung eines oder mehrerer Angebotsunterlagen ist. 
 
 Dieses Thema führt alle Schritte auf, denen ein Attract-Administrator folgen würde, um verschiedene Angebotpaketvorlagen als Teil der Angebotsverwaltung einzurichten in Attract. Benutzer mit Nicht-Administrator-Rollen haben keinen Zugriff zu diesen Funktionen.
 
@@ -80,7 +80,7 @@ Um die Datenregeln für die CSV-Datei zu erstellen, gehen Sie folgendermaßen vo
 
 1.  Um einen Bereichswert hochzuladen, machen Sie Spalten 3 und 4 für **Jährliches Gehalt**. Um einen bestimmten Wert anstelle eines Bereichs hochladen, lassen Sie nur Spalte 3**Jährliches Gehalt**.
 
-1.  Aktualisieren Sie die Microsoft Excel-Dateien auf Grundlage der notwendigen Rollen.
+1.  Füllen Sie die Microsoft Excel-Dateien auf Grundlage der notwendigen Rollen auf.
 
 1.  Sicherstellen, dass jede Zeile eine eindeutige Kombination aller Werte ist, die zusammengestellt werden.
 
@@ -203,5 +203,7 @@ Es gibt verschiedene Teile des Angeboterstellungsprozesses, der von einem Attrac
 
     - ESign - Dies ist die Standardeinstellung, wo der Benutzer ein Angebot signieren kann, indem er Namen und Initialen eingibt.
 
-Weitere Informationen zu den Angeboterstellungsprozessund  finden Sie unter [Erstellen, genehmigen und unterzeichnen von Angeboten ](./creating-offers.md).
+>[!NOTE]
+> Für Adobe Sign-Lizenzen und eine kostenlose Testversion siehe [Link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html)
 
+Weitere Informationen zu den Angeboterstellungsprozessund  finden Sie unter [Erstellen, genehmigen und unterzeichnen von Angeboten ](./creating-offers.md).

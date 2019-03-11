@@ -1,13 +1,13 @@
 ---
-title: "Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich"
-description: "Dieses Thema enthält Informationen für Benutzer von juristischen Personen in Österreich zu der Abschreibung von zusätzlichen Anschaffungen, wenn die Abschreibungskonvention für das Halbjahr für die Anlagenabschreibung verwendet wird."
+title: Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
+description: Dieses Thema enthält Informationen für Benutzer von juristischen Personen in Österreich zu der Abschreibung von zusätzlichen Anschaffungen, wenn die Abschreibungskonvention für das Halbjahr für die Anlagenabschreibung verwendet wird.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBook, AssetDepreciationProfile, AssetParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Austria
 ms.author: sndray
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
+ms.openlocfilehash: e1099fabfb85be6005bbfe8ef978f08c74cbe79e
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 554c564e2dafdc025c7c1d3b2c02c07f8bdf8791
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "370322"
 ---
-
 # <a name="half-year-depreciation-on-additional-acquisitions-for-austria"></a>Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich
 
 [!include [banner](../includes/banner.md)]
@@ -46,7 +45,6 @@ Bei juristischen Personen in Österreich werden die Abschreibung für zusätzlic
 
 ## <a name="half-year-depreciation-on-additional-acquisitions-calculation"></a>Halbjährliche Abschreibung auf sonstige Anschaffungsberechnung
 Wenn das Kontrollkästchen **Wenden Sie bestimmte Regeln zur Abschreibung des Halbjahr an** und das Kontrollkästchen **Automatisch Abschreibungsregulierungsbeträge mit Abgang erstellen** aktiviert ist, wird der Abschreibungsregulierungsausgleichsbetrag für Anlagen mit  Abschreibungsmethode **Verbleibende lineare Nutzungsdauer)** **Halbjahr (Jahresanfang)**, die verwendet wird, automatisch mit dem Abgang gebucht, der gemäß den Konventionsregeln des Halbjahr berechnet wird.
-
 
 
 

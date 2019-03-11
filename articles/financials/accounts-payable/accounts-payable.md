@@ -1,13 +1,13 @@
 ---
-title: "Startseite für Kreditorenkonten"
-description: "Dieses Thema enthält eine Übersicht über die Kreditorenkonten."
+title: Startseite für Kreditorenkonten
+description: Dieses Thema enthält eine Übersicht über die Kreditorenkonten.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
+ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7bc09cbd108949b37ea1b2207fc3e0c6961abf4b
-ms.contentlocale: de-de
-ms.lasthandoff: 02/07/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "302323"
 ---
-
 # <a name="accounts-payable-home-page"></a>Startseite für Kreditorenkonten
 
 [!include [banner](../includes/banner.md)]
@@ -40,7 +39,7 @@ Sie können Kreditorenrechnungen manuell eingeben oder elektronisch über eine D
 
 ## <a name="set-up-accounts-payable"></a>Einrichten von Kreditorenkonten
 
-Richten Sie Kreditorengruppen, Kreditoren, Buchungsprofile, verschiedene Zahlungsoptionen sowie Parameter zu Kreditoren, Gebühren, Lieferungen und Ziele, Solawechsel und andere Typen von Kreditorenkontendaten ein. 
+Richten Sie Kreditorengruppen, Kreditorenkonten, Buchungsprofile, verschiedene Zahlungsoptionen sowie Parameter zu Kreditorenkonten, Gebühren, Lieferungen und Ziele, Solawechsel und andere Typen von Kreditorenkontendaten ein. 
 
 [Kreditorenkonten konfigurieren](accounts-payable-overview.md)
 
@@ -50,7 +49,7 @@ Richten Sie Kreditorengruppen, Kreditoren, Buchungsprofile, verschiedene Zahlung
 
 ## <a name="configure-vendor-invoices"></a>Kreditorenrechnungen konfigurieren
 
-Verwenden Sie Kreditorenkonten, um Rechnungen und Aufwendungen an Kreditoren zu verfolgen.
+Verwenden Sie Kreditorenkonten, um Rechnungen und Aufwendungen an Kreditorenkonten zu verfolgen.
 
 [Kreditorenkonten-Rechnungsabgleich](accounts-payable-invoice-matching.md)
 
@@ -128,9 +127,9 @@ Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics
 
 #### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen zu Kreditorenkonten und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
-Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/) finden Sie viele Beiträge zu Kreditorenkonten. Auch wenn einige dieser Beiträge für die ältere Version von Kreditorenkonten verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
+Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/) finden Sie viele Beiträge zu „Kreditorenkonten”. Auch wenn einige dieser Beiträge für die ältere Version von Kreditorenkonten verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
@@ -139,8 +138,7 @@ Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operat
 
 #### <a name="videos"></a>Videos
 
-Sehen Sie in den Videos zu Hilfe + Anleitungen nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
-
+Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
 
 
 

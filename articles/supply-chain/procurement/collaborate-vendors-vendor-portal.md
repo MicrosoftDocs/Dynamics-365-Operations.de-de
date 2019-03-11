@@ -1,13 +1,13 @@
 ---
 title: Zusammenarbeit mit Kreditoren mithilfe des Kreditorenportals
-description: "In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX."
+description: In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 und Mai 2016 von Dynamics AX.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: josaw
@@ -18,28 +18,27 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 07fbc5fea1fd44769a29bcc40297ffd02812a1e5
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "339877"
 ---
-
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeit mit Kreditoren mithilfe des Kreditorenportals
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 &amp; und Mai 2016 von Dynamics AX.
+In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 und Mai 2016 von Dynamics AX.
 
-Die Informationen in diesem Thema betreffen nur die Versionen Februar 2016 und Mai 2016 von Microsoft Dynamics AX. Die Kreditorenportalfunktion wurde durch die erweiterte Kreditorenzusammenarbeitfunktion in Dynamics 365 for Operations Version 1611 ersetzt. Weitere Informationen über die neue Kreditorenzusammenarbeitsfunktion finden Sie unter [Nutzung der Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)  
+Die Informationen in diesem Thema betreffen nur die Versionen Februar 2016 und Mai 2016 von Microsoft Dynamics AX. Die Kreditorenportalfunktion wurde durch die erweiterte Kreditorenzusammenarbeitsfunktion in Dynamics 365 for Operations Version 1611 ersetzt. Weitere Informationen über die neue Kreditorenzusammenarbeitsfunktion finden Sie unter [Nutzung der Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)  
 
-Das Kreditorenportal wendet sich an Kreditoren, die über keine EDI-Iintegration (Electronic Data Interchange) mit Microsoft Dynamics AX für den Austausch von Bestellungsinformationen (PO) verfügen. Das Portal ermöglicht Einkaufsvertretern, eine PO an den Kreditor zu senden und die Antwort „Bestätigt“ oder „Abgelehnt“ direkt in Dynamicx AX zu erhalten.  
+Das Kreditorenportal wendet sich an Kreditoren, die über keine EDI-Integration (Electronic Data Interchange) mit Microsoft Dynamics AX für den Austausch von Bestellungsinformationen (PO) verfügen. Das Portal ermöglicht Einkaufsvertretern, eine PO an den Kreditor zu senden und die Antwort „Bestätigt“ oder „Abgelehnt“ direkt in Dynamics AX zu erhalten.  
 
 Der Prozess kann so konfiguriert werden, dass eine Bestätigung vom Kreditor automatisch den Auftrag bestätigt. Das bedeutet, dass die Weiterverfolgung nur gelegentlich erforderlich ist, wenn ein Auftrag abgelehnt oder die Bestätigung des Kreditors als Antwort erfasst wird, der Status der Bestellung jedoch aufgrund eines Problems im Bestätigungsprozess nicht auf **Bestätigt** aktualisiert wird.
 
 ## <a name="po-confirmation-and-rejection"></a>Bestellbestätigung und -Ablehnung
-PO werden in Dynamics AX vorbereitet. Wenn Sie eine Bestellung haben, die den Status **Genehmigt** aufweist, senden Sie sie an den Kreditor, indem Sie eine Bestätigungsanforderung generieren. Wenn Sie die Aufmerksamkeit des Kreditors auf die neue Bestellung lenken möchten, können Sie die Bestellung auch per E-Mail senden, indem Sie das Druckverwaltungssystem verwenden. Die Bestellung wird im Kreditorenportal angezeigt, mit einer Option, über die der Kreditor sie genehmigen oder ablehnen kann. Der Kreditor kann auch Kommentare hinzufügen, um Informationen wie Änderungen an der Bestellung mitzuteilen.  
+POs werden in Dynamics AX vorbereitet. Wenn Sie eine Bestellung haben, die den Status **Genehmigt** aufweist, senden Sie sie an den Kreditor, indem Sie eine Bestätigungsanforderung generieren. Wenn Sie die Aufmerksamkeit des Kreditors auf die neue Bestellung lenken möchten, können Sie die Bestellung auch per E-Mail senden, indem Sie das Druckverwaltungssystem verwenden. Die Bestellung wird im Kreditorenportal angezeigt, mit einer Option, über die der Kreditor sie genehmigen oder ablehnen kann. Der Kreditor kann auch Kommentare hinzufügen, um Informationen wie Änderungen an der Bestellung mitzuteilen.  
 
 Im Kreditorenportal kann der Kreditor Auftragspositionen sehen. Diese Positionen umfassen Informationen wie die externe Produktnummer, die Dimensionen, die Preisangaben, Menge, das Lieferdatum und die Lieferadresse. Der Kreditor kann einen Bericht generieren, um die Bestellinformationen anzuzeigen. Dieser enthält auch den Gesamtpreis. Belastungen, die für den Kreditor relevant sind, werden angezeigt, wenn der Kreditor auf die Schaltfläche **Belastungen** im Kopf oder in den Positionen klickt. Kreditoren können Bestellinformationen in ihr eigenes System importieren, indem die Funktion **Nach Excel exportieren** verwenden.  
 
@@ -63,7 +62,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 
 | Aktion                                                   | Status und Version                                                                                    |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Die ursprüngliche Version der Bestellung wird in Dynamics AX erstellt. | Der Status ist **Genehmigt**.                                                                           |
+| Die ursprüngliche Version der PO wird in Dynamics AX erstellt. | Der Status ist **Genehmigt**.                                                                           |
 | Die Bestellung wird an das Kreditorenportal gesendet.                     | Eine Version wird im Kreditorenportal erfasst, und der Status wird in **Externe Prüfung** geändert.    |
 | Sie nehmen einige Änderungen vor, die vom Kreditor gefordert werden.  | Der Status wird zurückgeändert in **Genehmigt**.                                                            |
 | Sie senden die neue Version der Bestellung an das Kreditorenportal. | Eine neue Version wird im Kreditorenportal erfasst, und der Status wird in **Externe Prüfung** geändert. |
@@ -88,7 +87,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 
 |                                                    Aktion                                                     |                                                                                                                                                                                                                      Status und Version                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           Die ursprüngliche Version der Bestellung wird in Dynamics AX erstellt.                            |                                                                                                                                                                                                            Der Kopfstatus ist <strong>Entwurf</strong>.                                                                                                                                                                                                             |
+|                           Die ursprüngliche Version der PO wird in Dynamics AX erstellt.                            |                                                                                                                                                                                                            Der Kopfstatus ist <strong>Entwurf</strong>.                                                                                                                                                                                                             |
 | Die Bestellung wird zum Genehmigungsprozess übermittelt. (Dies ist ein interner Prozess, an dem der Kreditor nicht beteiligt ist.) |                                                                                                                        Der Status wird von in <strong>Entwurf</strong> auf <strong>Wird überprüft</strong> und <strong>Genehmigung</strong> geändert, wenn die Bestellung nicht bei der Genehmigungsprozedur abgelehnt wird. Die genehmigte Bestellung wird als eine Version erfasst.                                                                                                                        |
 |                                      Die Bestellung wird an das Kreditorenportal gesendet.                                      |                                                                                                                                                                      Die Version wird im Kreditorenportal erfasst, und der Status wird in <strong>Externe Prüfung</strong> geändert.                                                                                                                                                                       |
 |                            Sie nehmen einige Änderungen vor, die vom Kreditor gefordert werden.                            |                                                                                                                                                                                                    Der Status wird zurückgeändert in <strong>Entwurf</strong>.                                                                                                                                                                                                     |
@@ -102,7 +101,6 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 [Konfigurieren der Sicherheit für Kreditorenportalbenutzer](configure-security-vendor-portal-users.md)
 
 [Arbeitsbereich für Kreditor-Kooperationsrechungen](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
-
 
 
 

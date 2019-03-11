@@ -5,9 +5,9 @@ author: sericks007
 manager: AnnBe
 ms.date: 12/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 48e2eea2cc986edc49d5192945c3d913c3bb9756
-ms.openlocfilehash: 8a3405c434e402af68e59950f1e4d1a31cbf2813
-ms.contentlocale: de-de
-ms.lasthandoff: 12/04/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "329251"
 ---
-
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema beschreibt Funktionen, die bei Dynamics 365 for Finance and Operations entfernt wurden oder dafür veraltet sind.
+In diesem Thema werden die Funktionen beschrieben, die für Dynamics 365 for Finance and Operations entfernt wurden oder veraltet sind.
 
 - Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
 - Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
@@ -37,7 +36,7 @@ Dieses Thema beschreibt Funktionen, die bei Dynamics 365 for Finance and Operati
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 > [!Note]
-> Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations, Enterprise Edition mit Plattformupdate 8, wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
+> Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations mit Plattformupdate 8 wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
 
 > [!Note]
 > Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
@@ -64,7 +63,7 @@ Funktion für das Konfigurieren von .txt und .xml-Datei-Formaten für Meldungen.
 | **Ersetzt durch eine andere Funktion?**   | Ja. |
 | **Betroffene Produktbereiche**         | Hauptbuch |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations mit 8.1 mit Plattformupdate 20. |
 
 ### <a name="financial-reports-generator-for-russia"></a>Finanzberichtsgenerator für Russland
 Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerberichte und um Daten in XLS- und DOC-Berichtsvorlagen zu exportieren. Funktionale Teile: Exportieren von Daten in XLS- und DOC-Berichtsvorlagen, Abfragen, feste Erfordernisse, werden entfernt. 
@@ -75,7 +74,7 @@ Ein Tool, für die Einrichtung der Datenerfassung für Buchhaltungs- und Steuerb
 | **Ersetzt durch eine andere Funktion?**   | Ja. Finanzberichtseinstellungsbenutzeroberfläche soll zum Einrichten von Datenerfassungsregeln nach Steuerregister Hauptbuchkonten verwendet werden. Datenexpot in verschiedenen Dateitypen, feste Erfordernisse und Abfrage ähnliche Datenerfassungsregeln sollten in der elektronischen Berichterstellung konfiguriert werden. |
 | **Betroffene Produktbereiche**         | Hauptbuch. |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations mit 8.1 mit Plattformupdate 20. |
 
 ### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration mit externen Anbietern zum Senden der elektronischen Berichterstellung nach Kommunikationswegen für Russland
 Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das weitere Versenden an offizielle Anbieter von elektronischer Berichterstellung exportiert sowie den Status zurück importiert.
@@ -86,7 +85,7 @@ Funktion, die Karteien generierte elektronische Meldungen zum Ordner für das we
 | **Ersetzt durch eine andere Funktion?**   | Ja.  |
 | **Betroffene Produktbereiche**         | Hauptbuch, Steuer |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations mit 8.1 mit Plattformupdate 20. |
 
 
 ### <a name="profit-tax-register-wizard"></a>Gewinnsteuerregister-Assistent
@@ -94,11 +93,11 @@ Funktion zum Erstellen von Vorlagen für neue Gewinnsteuerregister. Diese Funkti
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Funktion ist nicht mit dem Dynamics 365 for Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
+| **Grund für veralteten Zustand/Entfernung** | Die Funktion ist nicht mit dem Dynamics 365 for Finance and Operations-Erweiterbarkeitsmodell kompatibel. |
 | **Ersetzt durch eine andere Funktion?**   | Nr. |
-| **Betroffene Produktbereiche**         | MwSt. |
+| **Betroffene Produktbereiche**         | Steuerl. Buchung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Entfernt von Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20. |
+| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations mit 8.1 mit Plattformupdate 20. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0 mit Plattformupdate 15
@@ -115,7 +114,7 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 | **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
 | **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
 | **Bereitstellungsoption**              | Alle                                                                                      |
-| **Status**                         |Entfernt ab 15. Februar 2018. Dies hat einen Einfluss auf Kunden, die Dynamics 365 for Operations 1611 und höher ausführen.  |
+| **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Operations 1611 und höher.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Erweiterung der Liste der elektronischen Berichterstellungsfunktionen (ER)
 Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-Generator zu verwenden (weitere Informationen finden Sie unter [Erweiterung der Liste elektronischer Berichterstellungsfunktionen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) wird nicht mehr unterstützt. Aufgrund von Änderungen der ER-APIs, wurde die API zum Aufruf integrierter Funktionen vom ER-Ausrucks-Generator intern und kann nicht mehr erweitert werden.
@@ -126,7 +125,7 @@ Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-G
 | **Ersetzt durch eine andere Funktion?**   | Keiner. Sobald eine neue integrierte Funktion benötigt wird, muss eine neue Erweiterungsanforderung an das ER-Frameworkteam gerichtet werden.<br><br>Als vorübergehende Arbeit während die angeforderte Funktion vom ER-Team entwickelt wird, kann die erforderliche Logik als Methode einer benutzerdefinierten Anwendungsklasse programmiert werden. Auf diese Methode kann in einem ER-Ausdruck als Eigenschaft der hinzugefügten ER-Datenquelle des Typs **Anwendung\Klasse** zugegriffen werden, die sich auf diese benutzerdefinierte Anwendungsklasse bezieht.  |
 | **Betroffene Produktbereiche**         | Framework für elektronische Berichterstellung                                                      |
 | **Bereitstellungsoption**              | Alle                                                                                      |
-| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations, Enterprise-Edition 7.3.    |
+| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.    |
 
 ### <a name="inventory-by-item-group-and-inventory-by-inventory-dimension-aging-reports"></a>Bestand nach Artikelgruppe und Bestand nach Fälligkeitsberichten für Lagerungsdimension
 
@@ -140,13 +139,13 @@ Diese beiden Berichte werden nicht mehr in Finance and Operations unterstützt. 
 | **Bereitstellungsoption**        | Alle|
 | **Status**                       | Veraltet: Die Menüoptionen für die beiden Berichte sind in Version 7.3 entfernt worden. Allerdings bleibt der Code für die Berichte im Produkt bestehen. Es ist geplant, den Code in einer zukünftigen Version zu entfernen. |
 
-### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-Inhaltspakete auf AppSource
-Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel-Leistung** die auf [Microsoft AppSource](https://appsource.microsoft.com) veröffentlicht wurden, sind infolge von Produktupdates in Microsoft Power BI veraltet. Die Systemverwaltungsformulare, die verwendet werden, um diese Inhaltspakete in PowerBI.com bereitzustellen, werden auch in Finance and Operations veraltet.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI-Inhaltspakete verfügbar für AppSource
+Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [Microsoft AppSource](https://appsource.microsoft.com)-Site verfügbar sind, sind infolge von Produktupdates in Microsoft Power BI veraltet. Die Systemverwaltungsformulare, die verwendet werden, um diese Inhaltspakete in PowerBI.com bereitzustellen, werden auch in Finance and Operations veraltet.
 
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Produktupdates in Microsoft Power BI. |
-| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenmanagement**, **Finanzleistung** und **Retail Channel-Leistung**-Packs, die auf der Site [AppSource](https://appsource.microsoft.com) zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die eine Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu analytischen Anwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersetzt durch eine andere Funktion?**   | Die Inhaltspakete **Kostenverwaltung**, **Finanzleistung** und **Retail Channel Performance**, die auf der [AppSource](https://appsource.microsoft.com)-Site zur Verfügung stehen, werden durch Analyseanwendungen ersetzt, die Lösungsintegrationen auf der Datenbankebene zulassen. Weitere Informationen zu Analyseanwendungen finden Sie unter [Eingebettetes Power BI in Arbeitsbereichen](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Betroffene Produktbereiche**         | Kostenverwaltung, Finanzen und Einzelhandel                                                                                               |
 | **Bereitstellungsoption**              | Nur Cloud (Integration mit PowerBI.com wird in lokalen Bereitstellungen nicht unterstützt.)                                                                                                            |
 | **Status**                         | Veraltet: Zielzeitrahmen für die Funktionalitätsentfernung ist das zweite Quartal 2018.    |
@@ -220,10 +219,10 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 | **Ersetzt durch eine andere Funktion?**   | Nr. Ab Frühling 2018 planen wir, diese Funktion zurückzubringen, um einen neuen Empfehlungs-Service zu nutzen.   |
 | **Betroffene Produktbereiche**         | Personalisierte Produktempfehlungen in POS.                                                    |
 | **Bereitstellungsoption**              | Alle                                                                                      |
-| **Status**                         |Entfernt ab 15. Februar 2018. Dies hat einen Einfluss auf Kunden, die Dynamics 365 for Retail 7.2 und höher ausführen. |
+| **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Retail 7.2 und höher. |
 
 
-## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition, Juli 2017, mit Plattformupdate 8
+## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition Juli 2017 mit Plattformupdate 8
 
 ### <a name="currency-conversion-for-accounting-and-reporting-currencies"></a>Währungskonvertierung für Buchhaltungs- und Berichtswährungen
 
@@ -244,7 +243,7 @@ Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – W
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Doppelte Funktionen.       |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einrichtung und Voraussetzungen finden Sie unter [Microsoft Dynamics 365 for Finance and Operations - Warehousing einrichten und konfigurieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Einrichten und Konfigurieren von Microsoft Dynamics 365 for Finance and Operations – Lagerorte](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app). |
 | **Betroffene Produktbereiche**         | Lagerortverwaltung und Transportverwaltung     |
 | **Bereitstellungsoption**              | Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war.               |
 | **Status**                         | Veraltet: Zielzeitrahmen für das Entfernen der Funktion ist Q4 2019.   |
@@ -342,7 +341,7 @@ EDIFACT-DIRDEB Zahlungsformat für Zahlungsinkasso (Direktbelastung).
 
 ### <a name="edivat-for-belgium"></a>EDIVAT für Belgien
 
-EDIVAT ist ein veralteter belgischer Standard für elektronische Meldungen über sicheren Mailverkehr. Microsoft Dynamics AX 2012 bewahrt die schreibgeschützte Lösung, um auf die historische Daten zuzugreifen.
+EDIVAT ist ein veralteter belgischer Standard für elektronische Meldungen über sicheren Mailverkehr. Microsoft Dynamics AX 2012 behält die schreibgeschützte Lösung bei, um auf die historische Daten zuzugreifen.
 
 |   |  |
 |------------|--------------------|
@@ -573,8 +572,8 @@ Zwei Formate für den Export von Zahlungen werden für Finnland verfügbar. LM02
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Lösung Lagerortverwaltung II (WMS II), die im Modul **Inventurverwaltung** verfügbar war, dupliziert die Funktionalität, die im Modul **Lagerortverwaltung** enthalten ist, die in Microsoft Dynamics AX 2012 R3 enthalten war.                                                                         |
-| **Ersetzt durch eine andere Funktion?**   | Das **Lagerortverwaltungsmodul**, das in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 und Microsoft Dynamics AX 2012 R3 CU9 freigegeben wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
+| **Grund für veralteten Zustand/Entfernung** | Die Lagerortverwaltung II, die im Modul **Lagerverwaltung** verfügbar war, dupliziert Funktionen im Modul **Lagerortverwaltung**, das in Microsoft Dynamics AX 2012 R3 veröffentlicht wurde.                                                                         |
+| **Ersetzt durch eine andere Funktion?**   | Das Modul **Lagerortverwaltung**, das in AX 2012 R3, Microsoft Dynamics AX 2012 R3 CU8 und Dynamics AX 2012 R3 CU9 veröffentlicht wurde, ersetzt die Funktionen der Lagerortverwaltung II. Das neue Modul hat fortschrittlichere Funktionen sowie flexiblere Lagerortverwaltungsprozesse als jene, die in den Funktionen der Lagerortverwaltung II angeboten werden. |
 | **Betroffene Produktbereiche**         | Bestandsverwaltung, Verkauf und Marketing, Beschaffung   |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611.    |
 
@@ -595,7 +594,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Leistungsverwaltung wurde in Microsoft Dynamics 365 for Finance and Operations vollständig neu gestaltet.     |
+| **Grund für veralteten Zustand/Entfernung** | Die Leistungsverwaltung wurde in Microsoft Dynamics 365 for Finance and Operations komplett überarbeitet.     |
 | **Ersetzt durch eine andere Funktion?**   | Die neu entworfene Leistungsverwaltungsfunktion gibt mehr Kontrolle über den Inhalt der Ziele, die Messungen, die verwendet werden, um den Fortschritt zu verfolgen, und die Zuordnung der Begleitunterlagen. Ziele können als Vorlagen gespeichert werden und anschließend wieder verwendet werden. Diese Funktion kann Ihnen helfen, zusätzliche Ziele für Ihre Mitarbeiter schneller einzurichten. |
 | **Betroffene Produktbereiche**         | Human Capital Management                 |
 | **Status**                         | Entfernt ab Dynamics 365 for Operations Version 1611. |
@@ -674,7 +673,7 @@ Diese mobile Anwendung ermöglicht dem Benutzer die Prüfung von wichtigen Gesch
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktion wurde durch eine andere Funktion ersetzt.   |
-| **Ersetzt durch eine andere Funktion?**   | Das Inhaltspack "Finanzielle Leistung überwachen" für Microsoft Power BI umfasst entscheidende Finanzmetriken, die zuvor im Business Analyzer verfügbar waren. |
+| **Ersetzt durch eine andere Funktion?**   | Das Inhaltspaket "Finanzielle Leistung überwachen" für Microsoft Power BI umfasst entscheidende Finanzmetriken, die zuvor im Business Analyzer verfügbar waren. |
 | **Betroffene Produktbereiche**         | Hauptbuch      |
 | **Status**                         | Veraltet: Die Verwendung des Business Analyzer wurde veraltet.    |
 
@@ -685,7 +684,7 @@ Die Einrichtung von Geschäftsstatistikabfragen kann das Analysieren der Leistun
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Ein veralteter Ansatz für Business Intelligence (BI), geringe Kundennutzung und ein begrenzter Funktionsumfang |
-| **Ersetzt durch eine andere Funktion?**   | Neue BI-Lösung für die aktuelle Version von Dynamics AX                                      |
+| **Ersetzt durch eine andere Funktion?**   | Neue BI-Lösungen für die aktuelle Version von Dynamics AX                                      |
 | **Betroffene Produktbereiche**         | Beschaffung, Kreditorenkonten, Vertrieb und Marketing, Debitorenkonten         |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                               |
 
@@ -713,14 +712,14 @@ Das Compliance Center war eine Enterprise Portal-Website für die Verwaltung der
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Fehlender Einsatz durch die Kunden. Microsoft SharePoint umfasst die gleiche Fähigkeit, die im Compliance Center verfügbar war. |
+| **Grund für veralteten Zustand/Entfernung** | Fehlender Einsatz durch die Kunden. Microsoft SharePoint umfasst die gleichen Funktionen, die im Compliance Center verfügbar waren. |
 | **Ersetzt durch eine andere Funktion?**   | Nr.   |
 | **Betroffene Produktbereiche**         | Konformität und interne Kontrollen  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.    |
 
 ### <a name="connector-for-microsoft-dynamics"></a>Connector für Microsoft Dynamics
 
-Dieses Tool wurde verwendet, um Schlüsseldaten von Microsoft Dynamics CRM mit Microsoft Dynamics ERP-Anwendungen zu integrieren.
+Dieses Tool wurde verwendet, um Schlüsseldaten aus Microsoft Dynamics CRM in Microsoft Dynamics ERP-Anwendungen zu integrieren.
 
 |   |  |
 |------------|--------------------|
@@ -734,7 +733,7 @@ Dieses Tool wurde verwendet, um Schlüsseldaten von Microsoft Dynamics CRM mit M
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Doppelte Funktionen |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Seit AX 2012 ist diese Funktion durch die konsolidierte Chargenauftragsfunktion ersetzt worden. Dieser Funktionsumfang umfasst die konsolidierte verfügbare Ansicht. |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Seit AX 2012 ist diese Funktion durch die konsolidierte Chargenauftragsfunktion ersetzt worden. Dieser Funktionsumfang umfasst die konsolidierte verfügbare Ansicht. |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung, -Produktionssteuerung, Lagerverwaltung, Vertrieb und Marketing  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0. |
 
@@ -771,7 +770,7 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Microsoft Dyn
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service(PaaS) Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Finance and Operations behandelt werden können. |
+| **Grund für veralteten Zustand/Entfernung** | Datenpartitionen wurden in Microsoft Dynamics AX 2012 R2 eingeführt, um Datenisolation zu ermöglichen. In einem häufigen Szenario verfügt ein Unternehmen über Tochtergesellschaften und die Daten einer Tochtergesellschaft sollen einer anderen nicht angezeigt werden, obwohl beide Tochterunternehmen von derselben IT-Abteilung verwaltet werden. Zusätzliche Skripts und Verwaltungsaufwand im gesamten Programm sind jedoch erforderlich, um neue Partitionen zu erstellen und mit Daten zu füllen und Partitionsdaten sichern. In der Cloud, in der wir über Platform-as-a-Service (PaaS)-Datenbankdienste (Microsoft Azure SQL-Datenbank) verfügen, ist es sehr viel effizienter, eine Datenbank als Isolationscontainer zu verwenden, als Isolationen im Programm durchzuführen. Egal, ob eine Datenpartitionierung für Tochterunternehmen, mehrere Mandanten oder nur zur Skalierung benötigt wird, glauben wir, dass die Szenarien besser über mehrere Datenbanken oder mehrere Instanzen von Finance and Operations behandelt werden können. |
 | **Ersetzt durch eine andere Funktion?**   | Debitoren, die Datenpartitionen verwenden, müssen mehrere Instanzen von Finance and Operations verwenden, wenn die Datenbankebenentrennung ein kritisches Problem ist.    |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
@@ -779,11 +778,11 @@ Datenpartitionen enthalten eine logische Trennung von Daten in der Microsoft Dyn
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Datenbank- und Dateifreigabespeicher für Anhänge
 
-Microsoft Dynamics AX 2012 ließ die Speicherung von Anhängen in der Datenbank und in Dateifreigaben zu. Beide Optionen werden nicht mehr unterstützt.
+Microsoft Dynamics AX 2012 erlaubte die Speicherung von Anhängen in der Datenbank und in Dateifreigaben. Beide Optionen werden nicht mehr unterstützt.
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff nur über Client-Formulare von Dynamics 365 for Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
+| **Grund für veralteten Zustand/Entfernung** | Der Dateifreigabespeicher wird nicht mehr unterstützt, weil in der Cloud gehostete Umgebungen nicht mit lokalen Dateifreigaben kommunizieren können. Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt. Azure Blob-Speicher ist äquivalent zur Speicherung in der Datenbank, weil der Zugriff auf Dokumente nur über Client-Formulare von Dynamics 365 for Finance and Operations möglich ist. Auf diese Weise entsteht der zusätzliche Vorteil, dass Speicher bereitgestellt wird, der sich nicht negativ auf die Leistung der Datenbank auswirkt. Blob-Speicher ist der Standardspeichermechanismus für die Dokumentenverwaltung und funktioniert unmittelbar. |
 | **Ersetzt durch eine andere Funktion?**   | Der Datenbankspeicher wurde zugunsten von Azure Blob-Speicher eingestellt.   |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.   |
@@ -801,20 +800,20 @@ Microsoft Dynamics AX 2012 ließ die Speicherung von Anhängen in der Datenbank 
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Der Dynamics AX-Client wurde neu gestaltet, um die Benutzererfahrung über mehrere Plattformen und Geräten zu verbessern.                      |
+| **Grund für veralteten Zustand/Entfernung** | Der Dynamics AX-Client wurde neu gestaltet, um die Benutzererfahrung über mehrere Plattformen und Geräte zu verbessern.                      |
 | **Ersetzt durch eine andere Funktion?**   | Der neue Webclient basiert auf den Desktop-Formularmetadaten und -Programmiermodell, die geändert wurden, um eine umfangreiche Internet-Plattform bereitzustellen. |
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.   |
 
 ### <a name="direct-database-connection"></a>Direkte Datenbankverbindung
 
-In Dynamics AX 2012 R3, konnte sich Retail Modern POS direkt mit dem Kanal DB in ähnlicher Weise mit dem Enterprise POS verbinden. Dies war zusätzlich zur Standardkommunikationsmethode von Retail Modern POS über den Retail Server.
+In Dynamics AX 2012 R3 konnte sich Retail Modern POS direkt mit der Kanal-DB verbinden, ähnlich wie beim Enterprise POS. Dies war zusätzlich zur Standardkommunikationsmethode von Retail Modern POS über den Retail Server.
 
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Direkte Datenbankkonnektivität erforderte ein geringeres Sicherheitsprotokolle und wurde hauptsächlich verwendet, um den höchsten Leistungsstandard zu erreichen. Aufgrund der Leistung und der Sicherheitserweiterungen, die in Finance and Operations aufgetreten sind, führen diese Funktionen nun zu mehr Problemen, als sie lösen. |
 | **Ersetzt durch eine andere Funktion?**   | Nr. Nur Standard Retail Server Kommunikation wird nun unterstützt.  |
-| **Betroffene Produktbereiche**         | Kanal DB/Retail Modern POS   |
+| **Betroffene Produktbereiche**         | Kanal-DB/Retail Modern POS   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.  |
 
 ### <a name="dutch-swift-mt940"></a>Niederländisches SWIFT MT940
@@ -860,7 +859,7 @@ Diese Funktionen stellten die eXtensible Business Reporting Language (XBRL)-Ausg
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | ActiveX und die Managed Host-Steuerelemente basieren auf dem veralteten Desktopclient. |
-| **Ersetzt durch eine andere Funktion?**   | Das Framework für erweiterbare Steuerelemente basiert auf HTML, CSS und JavaScript und dient als Steuerelement in der Microsoft Visual Studio-Umgebung. |
+| **Ersetzt durch eine andere Funktion?**   | Das Framework für erweiterbare Steuerelemente unterstützt die Erstellung neuer Steuerelemente, die auf HTML, CSS und JavaScript basieren, und dient als erstklassiges Steuerelement in der Microsoft Visual Studio-Toolumgebung. |
 | **Betroffene Produktbereiche**         | Alle Module     |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.       |
 
@@ -873,7 +872,7 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 | **Grund für veralteten Zustand/Entfernung** | Es ist kein Formular vorhanden, um die resultierende Testtransaktionsdatei zu verwalten und anzuzeigen, wenn sie mithilfe einer Charge generiert wurde. |
 | **Ersetzt durch eine andere Funktion?**   | Testtransaktionen können weiterhin generiert werden, und der Benutzer hat die Kontrolle über den Speicherort der Datei.   |
 | **Betroffene Produktbereiche**         | Debitorenkonten, Kreditorenkonten, Bargeld- und Bankverwaltung  |
-| **Status**                         | Entfernt ab Dynamics AX 7.0.    |
+| **Status**                         | Entfernt ab AX 7.0.    |
 
 ### <a name="german-dtaus-payment-export-and-account-statement-import-totals-and-transactions"></a>Deutscher DTAUS-Zahlungsexport und Kontoauszugsimport (Summen und Buchungen)
 
@@ -917,8 +916,8 @@ Berichte mit den folgenden Menüoptionen wurden entfernt: **Zusammengefasste Zwi
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Microsoft SQL Server Reporting Services (SSRS)-Finanzberichte wurden durch nach Management Reporter-Funktionen und -Standardberichte ersetzt. |
-| **Ersetzt durch eine andere Funktion?**   | Management Reporter (**Finanzberichterstellung** in der aktuellen Version von Dynamics AX)    |
+| **Grund für veralteten Zustand/Entfernung** | Microsoft SQL Server Reporting Services (SSRS)-Finanzberichte wurden durch Management Reporter-Funktionen und -Standardberichte ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Management Reporter (bezeichnet als **Finanzberichterstellung** in der aktuellen Version von AX)    |
 | **Betroffene Produktbereiche**         | Hauptbuch   |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.   |
 
@@ -980,7 +979,7 @@ Microsoft Dynamics AX 2012 verwaltete die nicht realisierte Vorsteuer (MwSt.), i
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Diese Funktion wurde von der Microsoft Exchange Server-Integration ersetzt. |
+| **Grund für veralteten Zustand/Entfernung** | Diese Funktion wurde durch die Microsoft Exchange Server-Integration ersetzt. |
 | **Ersetzt durch eine andere Funktion?**   | Ja                                                                            |
 | **Betroffene Produktbereiche**         | Vertrieb und Marketing                                                            |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                 |
@@ -1002,7 +1001,7 @@ Der Produktgenerator wurde zur dynamischen Konfiguration von Artikel aus einem A
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Der Produktgenerator zeigte X++-Code für die Endbenutzern an und wird in der aktuelle Version von Dynamics AX nicht unterstützt. Es ist entfernt wurden, um doppelten Wartungsaufwand durch Überschneidung einer beträchtlichen Codebases zu vermeiden.  |
+| **Grund für veralteten Zustand/Entfernung** | Der Produktgenerator zeigte X++-Code für die Endbenutzer an und wird in der aktuellen Version von Dynamics AX nicht unterstützt. Es ist entfernt wurden, um doppelten Wartungsaufwand durch Überschneidung einer beträchtlichen Codebases zu vermeiden.  |
 | **Ersetzt durch eine andere Funktion?**   | Ja. Die einschränkungsbasierte Konfiguration wurde in Dynamics AX 2012 eingeführt, wo bereits angekündigt wurde, dass der Produkt-Generator in zukünftigen Versionen veraltet sein wird. Die Technologie der einschränkungsbasierten Konfiguration wird bei den Produktmastern ausgewählt, um die Konfiguration zu aktivieren. Weitere Informationen finden Sie unter [Erstellen eines Produktkonfigurationsmodells](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model). |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung, Vertrieb und Marketing  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.      |
@@ -1013,7 +1012,7 @@ Dies ist die App für Tabletgeräte, auf denen Windows 8.1 RT und Windows 8.1 Pr
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Mit dem Wechsel zu einem webbasierten Client ist es möglich, ähnliche Funktionen durch den systemeigenen Dynamics AX 7.0-Client bereitzustellen. Das Einzelvorgangslisten-Gerät stellt eine Produktionsbenutzer-Oberfläche bereit, die für Toucheingabe- und Tabletformularfaktoren optimiert ist. |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Das Einzelvorgangslisten-Gerät, das ein systemeigener Bestandteil von Microsoft Dynamics AX 7.0 ist.                                                                           |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Das Einzelvorgangslisten-Gerät, das ein systemeigener Bestandteil von Dynamics AX 7.0 ist.                                                                           |
 | **Betroffene Produktbereiche**         | Produktionssteuerung                                                |
 | **Status**                         | Veraltet: Ein Datum für die Entfernung aus dem Microsoft Store ist für diese Funktion noch nicht festgelegt worden.                                                |
 
@@ -1024,14 +1023,14 @@ Mit dieser Funktion können Sie den Namen einer der drei Standardproduktdimensio
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die aktuelle Version von Dynamics AX unterstützt Beschriftungsänderungen zur Laufzeit nicht. |
+| **Grund für veralteten Zustand/Entfernung** | Die aktuelle Version von Dynamics AX unterstützt keine Beschriftungsänderungen zur Laufzeit. |
 | **Ersetzt durch eine andere Funktion?**   | Nr.                                                                            |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung                                                |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.                                                |
 
 ### <a name="retail-server-connectivity-using-http"></a>Retail Serververbindung mithilfe von HTTP
 
-In Dynamics AX 2012 R3, könnte der Retail Server mithilfe der HTTP-Kommunikation arbeiten (nicht-gesichert). Dies war zusätzlich zur Standardkommunikation mithilfe HTTPS.
+In Dynamics AX 2012 R3 konnte der Retail Server mithilfe der HTTP-Kommunikation arbeiten (ungesichert). Dies war zusätzlich zur Standardkommunikation mithilfe HTTPS.
 
 |   |  |
 |------------|--------------------|
@@ -1064,7 +1063,7 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Die Microsoft Azure-Infrastruktur, die durch Dynamics AX verwendet wird, hat neue Funktionen, die stattdessen verwendet werden können (beispielsweise Azure-Sites). |
+| **Grund für veralteten Zustand/Entfernung** | Die Microsoft Azure-Infrastruktur, die von Dynamics AX verwendet wird, hat neue Funktionen, die stattdessen verwendet werden können (beispielsweise Azure-Sites). |
 | **Ersetzt durch eine andere Funktion?**   | Nr.   |
 | **Betroffene Produktbereiche**         | Personalverwaltungs-Pesonalbeschaffung, Anfragenverwaltung, Angebotsanforderungen, Kreditorenerfassung, kooperative Arbeitsbereiche für Verkaufschancen und Kampagnen  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.    |
@@ -1124,8 +1123,7 @@ Die bereitgestellte Funktionen der Windows 8-Tablet-App für Speseneintrag und G
 |                                                 |                                                                                                          |
 |-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
 | <strong>Grund für veralteten Zustand/Entfernung</strong> |                         Die Funktion wurde durch eine andere Funktion ersetzt.                         |
-|  <strong>Ersetzt durch eine andere Funktion?</strong>  | Management Reporter (<strong>Finanzberichterstellung</strong> in der aktuellen Version von Dynamics AX) |
+|  <strong>Ersetzt durch eine andere Funktion?</strong>  | Management Reporter (bezeichnet als <strong>Finanzberichterstellung</strong> in der aktuellen Version von AX) |
 |     <strong>Betroffene Produktbereiche</strong>     |                                              Hauptbuch                                              |
 |             <strong>Status</strong>             |                                      Entfernt ab Dynamics AX 2012                                      |
-
 

@@ -1,13 +1,13 @@
---- 
-title: "Gehalts-/Vergütungsstruktur und -plan entwickeln"
-description: "Diese Aufgabe führt Schritt für Schritt durch den Prozess der Erstellung eines \"Festen Vergütungsplans\" und ermöglicht es Mitarbeitern, in dem Plan durch Berechtigungsregeln registriert zu werden."
+---
+title: Gehalts-/Vergütungsstruktur und -plan entwickeln
+description: Diese Aufgabe führt Schritt für Schritt durch den Prozess der Erstellung eines "Festen Vergütungsplans" und ermöglicht es Mitarbeitern, in dem Plan durch Berechtigungsregeln registriert zu werden.
 author: kherr75
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
 ms.reviewer: rschloma
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: 28d044cedbcc9f483a4deb7739aef0f8e3abf9ec
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "332770"
 ---
 # <a name="develop-salarycompensation-structure-and-plan"></a>Gehalts-/Vergütungsstruktur und -plan entwickeln
 
@@ -74,5 +74,4 @@ Diese Aufgabe führt Schritt für Schritt durch den Prozess der Erstellung eines
     * Wählen Sie die Kriterien aus, die ein Mitarbeiter erfüllen muss, um für den Vergütungsplan berechtigt zu sein. Kriterien können eine Abteilung, einen Gewerkschaft, einen Lagerplatz (Kompensationsregion), eine Stelle, eine Funktion, einen Stellentyp oder eine Vergütungsstufe enthalten. Der Mitarbeiter muss alle angegebenen Kriterien erfüllen, um für den Vergütungsplan berechtigt zu sein. Wenn keine Kriterien angegebenen wurden, sind alle Mitarbeiter für den Vergütungsplan berechtigt. Wenn ein Mitarbeiter nicht die Kriterien erfüllt, die in der Berechtigungsregel angegeben sind oder eine Berechtigungsregel nicht für einen Vergütungsplan festgelegt wurde, wird der Vergütungsplan nicht in der Suche angezeigt, wenn ein "Fester Vergütungsdatensatz" für einen Mitarbeiter erstellt wird.  
 7. Schließen Sie die Seite.
 8. Schließen Sie die Seite.
-
 

@@ -5,9 +5,9 @@ author: NickSelin
 manager: AnnBe
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-platform
-ms.technology: 
+ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
 ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "331275"
 ---
-
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
 [!include [banner](../includes/banner.md)]
@@ -36,7 +35,7 @@ In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronische
 
 EB unterstützt den Formeldesigner. Daher können Sie zum Zeitpunkt des Entwurfs Ausdrücke konfigurieren, die für folgende Aufgaben zur Laufzeit verwendet werden können:
 
-- Transformieren Sie Daten, die aus einer Datenbank von Microsoft Dynamics 365 for Finance and Operations empfangen wurden, und in ein EB-Datenmodell eingegeben werden sollen, das als Datenquelle für EB-Formate entworfen wurde. (Diese Transformationen können beispielsweise Filterung, Gruppierung und Datentypkonvertierung umfassen.)
+- Transformation Sie Daten, die von einer Microsoft Dynamics 365 for Finance and Operations-Datenbank empfangen werden und in ein EB-Datenmodell eingegeben werden sollen, das so konzipiert wurde, dass es als Datenquelle für EB-Formate dient. (Diese Transformationen können beispielsweise Filterung, Gruppierung und Datentypkonvertierung umfassen.)
 - Formatieren Sie Daten, die an ein generierendes elektronisches Dokument in Übereinstimmung mit dem Layout und den Bedingungen eines spezifischen EB-Formats übermittelt werden müssen. (Die Formatierung kann beispielsweise in Übereinstimmung mit der angeforderten Sprache oder Kultur oder der Codierung erfolgen).
 - Steuern Sie den Prozess der Erstellung elektronischer Dokumente. (Die Ausdrücke können beispielsweise die Ausgabe bestimmter Elemente des Formats aktivieren oder deaktivieren, abhängig von der Verarbeitung von Daten. Sie können auch den Dokumenterstellungsprozess unterbrechen oder Nachrichten an Benutzer auslösen.)
 
@@ -465,9 +464,9 @@ Sie definieren die folgende Datenquelle in der Zuordnung eines Projekt-Planzahle
 
 Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, List.Value)** konfiguriert ist, gibt er **WAHR** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
 
-**(("B" =" a") oder ("B" = "B") oder ("B" = "C"))**, wobei **("B" = "B")** ist gleich **WAHR**
+**(("B" =" a") oder ("B" = "B") oder ("B" = "C"")**, wobei **("B" = "B")** ist gleich **WAHR**
 
-Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, LINKS (List.Value, 0))** konfiguriert ist, gibt er **FALSCH** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
+Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, LINKS (List.Value, 0)))** konfiguriert ist, gibt er **FALSCH** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
 
 **("B" = "")**, das nicht gleich **WAHR** ist
 
@@ -626,7 +625,7 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <li>Finance and Operations-Beschriftung SYS18389, die den folgenden Text hat:
 <ul>
 <li><strong>Für die EN-US-Sprache:</strong> &quot;Debitor %1 wird beendet für %2.&quot;</li>
-<li><strong>Für deutsche Sprache:</strong> &quot;Debitor "%1 "wird für %2 gesperrt.&quot;</li>
+<li><strong>Für deutsche Sprache:</strong> &quot;Debitor '%1' wird für %2 gesperrt.&quot;</li>
 </ul></li>
 </ul>
 <p>Hier die Formel, die gestaltet werden kann:</p>
@@ -692,7 +691,7 @@ Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>F
 <tr>
 <td>JSONVALUE (id, path)</td>
 <td>Analysieren Sie Daten im JavaScript Object Notation (JSON)-Format, auf die über den angegebenen Pfad zugegriffen wird, um einen Skalarwert zu extrahieren, der auf der angegebenen ID basiert.</td>
-<td>Die Datenquelle <strong>$JsonField</strong> enthält folgende Daten in JSON-Format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Für diese Datenquelle gibt </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> den Wert <strong>7.3.1234.1</strong> des Datentyps <strong>String</strong> zurück.</td>
+<td>Die Datenquelle <strong>$JsonField</strong> enthält folgende Daten im JSON-Format: <strong>{&quot;BuildNumber&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. Für diese Datenquelle gibt </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> den Wert <strong>7.3.1234.1</strong> des Datentyps <strong>String</strong> zurück.</td>
 </tr>
 </tbody>
 </table>
@@ -731,7 +730,7 @@ Wenn diese Datenquellen definiert sind, können Sie einen Ausdruck wie <strong>F
 | FA\_BALANCE (Anlagencode, Wertmodellcode, Berichtsjahr, Meldedatum) | Gibt den vorbereiteten Datencontainer des Anlagensaldos zurück. Das Berichterstellungsjahr muss als Wert der Aufzählung **AssetYear** in Finance and Operations angegeben werden. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** gibt den vorbereiteten Datencontainer von Salden für Anlage **"COMP-000001"** zurück, der das Wertmodell **"Current"** zum aktuellen Finance and Operations-Sitzungsdatum hat. |
 | TABLENAME2ID (Zeichenfolge) | Gibt eine ganzzahlige Darstellung einer Tabellenkennung für den angegebenen Tabellennamen zurück. | **TABLENAME2ID ("Intrastat")** gibt **1510** zurück. |
 | ISVALIDCHARACTERISO7064 (Zeichenfolge) | Gibt den booleschen Wert **WAHR** zurück, wenn die angegebene Zeichenfolge eine gültige internationale Bankkontonummer (IBAN) darstellt. Gibt anderenfalls den booleschen Wert **FALSCH** zurück. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** gibt **WAHR** zurück. **ISVALIDCHARACTERISO7064 ("AT61")** gibt **FALSCH** zurück. |
-| NUMSEQVALUE (Nummernkreiscode, "Bereich, Umfangs-ID) | Gibt den neuen, generierten Wert eines Nummernkreises basierend auf dem Nummernkreiscode der angegebenen Anzahl, der Bereich und die Bereichs-ID zurück. Der Bereich muss als Wert der Option **ERExpressionNumberSequenceScopeType** (**Gemeinsam genutzt**, **Juristische Person** oder **Unternehmen**) angegeben werden. Für den Bereich **Gemeinsam genutzt** geben Sie eine Nullkette als die Bereichs-ID an. Für **Unternehmen** und **Juristische Person** Bereiche geben Sie den Unternehmenscode als die Bereichs-ID an. Für **Unternehmen** und **Juristische Person** Bereiche wenn Sie eine Nullkette als die Bereichs-ID angeben, wird der aktuelle Unternehmenscode verwendet. | Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:<ul><li>**enumScope** (**Dynamics 365 for Operations enumeration** Typ), der sich auf die  **ERExpressionNumberSequenceScopeType** Enumeration bezieht.</li><li>Typ **NumSeq** (**Berechnetes Feld** Typ), das den gewünschten Ausdruck **NUMSEQVALUE ("Gen \_1 ", enumScope.Company, "")** enthält</li></ul>Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des **Gen \_1** Nummernkreis zurückgegeben, der für das Unternehmen konfiguriert wurde, der den Kontext liefe, unter dem das ER-Format ausgeführt wird. |
+| NUMSEQVALUE (Nummernkreiscode, "Bereich, Umfangs-ID) | Gibt den neuen, generierten Wert eines Nummernkreises basierend auf dem Nummernkreiscode der angegebenen Anzahl, der Bereich und die Bereichs-ID zurück. Der Bereich muss als Wert der Option **ERExpressionNumberSequenceScopeType** (**Gemeinsam genutzt**, **Juristische Person** oder **Unternehmen**) angegeben werden. Für den Bereich **Gemeinsam genutzt** geben Sie eine Nullkette als die Bereichs-ID an. Für **Unternehmen** und **Juristische Person** Bereiche geben Sie den Unternehmenscode als die Bereichs-ID an. Für **Unternehmen** und **Juristische Person** Bereiche wenn Sie eine Nullkette als die Bereichs-ID angeben, wird der aktuelle Unternehmenscode verwendet. | Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:<ul><li>**enumScope** (**Dynamics 365 for Operations-Enumeration**-Typ), der sich auf die **ERExpressionNumberSequenceScopeType**-Enumeration bezieht.</li><li>Typ **NumSeq** (**Berechnetes Feld** Typ), das den gewünschten Ausdruck **NUMSEQVALUE ("Gen \_1 ", enumScope.Company, "")** enthält</li></ul>Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des **Gen \_1** Nummernkreis zurückgegeben, der für das Unternehmen konfiguriert wurde, der den Kontext liefe, unter dem das ER-Format ausgeführt wird. |
 | NUMSEQVALUE (Nummernkreiscode) | Gibt den neuen generierten Wert eines Nummernkreises zurück, basierend auf dem angegebenen Nummernkreis, dem Bereich **Unternehmen** und (als die Bereichs-ID) den Code des Unternehmens, das den Kontext enthält, unter dem das ER-Format ausgeführt wird. | Sie definieren die folgende Datenquelle in der Zuordnung: **Num Seq** (**Berechneter Feld** Typ). Diese Datenquelle enthält den Suchbegriff **NUMSEQVALUE ("Gene\_1")**. Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des **Gen \_1** Nummernkreis zurückgegeben, der für das Unternehmen konfiguriert wurde, der den Kontext liefe, unter dem das ER-Format ausgeführt wird. |
 | NUMSEQVALUE (Nummernkreiscode RecordID) | Gibt den neuen, generierten Wert eines Nummernkreises basierend auf dem Nummernkreiscode der angegebenen RecordID zurück. | Die folgenden Datenquellen definieren Sie in Ihrer Modellzuordnung:<ul><li>**LedgerParms** (**Tabellen**-Typ), der auf die LedgerParameters-Tabelle verweist</li><li>**NumSeq** (**Berechneter Feld** Typ), das den gewünschten Ausdruck **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)** enthält</li></ul>Wenn die Datenquelle **NumSeq** aufgerufen wird, wird er dem generierten neuen Wert des Gen 1 Nummernkreis zurückgegeben, der für die Hauptbuch-Parameter für das Unternehmen konfiguriert wurde, der den Kontext liefert, unter dem das ER-Format ausgeführt wird. Dieser Nummernkreis kennzeichnet eindeutige Erfassungen und fungiert als eine Chargennummer, die die Buchungen zusammen verknüpft. |
 
@@ -743,4 +742,3 @@ ER ermöglicht es Ihnen, die Liste von Funktionen zu verlängern, die in ER-Ausd
 
 - [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
 - [Erweitert die Liste der elektronischen Berichtsfunktion (ER)](general-electronic-reporting-formulas-list-extension.md)
-

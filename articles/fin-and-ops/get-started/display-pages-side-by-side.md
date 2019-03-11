@@ -1,13 +1,13 @@
 ---
-title: "Seiten mithilfe der Funktion „In neuem Fenster öffnen” nebeneinander anzeigen"
-description: In diesem Artikel wird beschrieben wie Bildseiten in Microsoft Dynamics 365 for Finance and Operations parallel angezeigt werden.
+title: Seiten mithilfe der Funktion „In neuem Fenster öffnen” nebeneinander anzeigen
+description: In diesem Artikel wird beschrieben, wie Bildseiten in Microsoft Dynamics 365 for Finance and Operations parallel angezeigt werden.
 author: aneesmsft
 manager: AnnBe
 ms.date: 09/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,19 +17,18 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: df9b091735a4971446c5b5d0e054076260040683
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "330171"
 ---
-
-# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Seiten mithilfe der Funktion „In neuem Fenster öffnen” nebeneinander anzeigen
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Seiten mithilfe des Symbols „In neuem Fenster öffnen” nebeneinander anzeigen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben wie Bildseiten in Microsoft Dynamics 365 for Finance and Operations parallel angezeigt werden.
+In diesem Artikel wird beschrieben, wie Bildseiten in Microsoft Dynamics 365 for Finance and Operations parallel angezeigt werden.
 
 Microsoft Dynamics 365 for Finance and Operations unterstützt Sie beim effizienten Ausführen von Aufgaben. In einigen Fällen möchten Sie vielleicht mehrere Seiten nebeneinander anzeigen, um Aufgaben schnell abzuschließen. Beispielsweise möchten Sie Positionen in mehreren Erfassung prüfen oder eingeben. In der Regel müssen Sie zu diesem Zweck zwischen der Seite, die eine Liste der Erfassungen anzeigt und der Seite, die die Positionen für eine bestimmte Erfassung angibt, hin und her wechseln. Wenn Sie jedoch die Funktion **In neuem Fenster öffnen** aktivieren, können Sie diese parallelen Seiten anzeigen und Ihre Aufgaben schneller ausführen.
 
@@ -50,4 +49,3 @@ Vor der Verwendung der Funktion **In neuem Fenster öffnen** sollten Sie den Pop
 Die Funktion **In neuem Fenster öffnen** ist nur verfügbar, wenn es mehr als eine Seite gibt, die im Fenster geöffnet ist. Zudem schließt sich das Popupfenster automatisch, wenn es keine offene Seiten gibt (das heißt, wenn die letzte Seite in diesem Fenster geschlossen ist). Finance and Operations schließt offene Seiten auch dann, wenn Sie in einen anderen Bereich in der Anwendung navigieren. Wenn Sie geöffnete Popupfenster haben und in einen anderen Bereich in der Anwendung navigieren, werden die Popupfenster automatisch geschlossen, da die Seiten in diesen Dialogfeldern vom System geschlossen wurden.
 
 In der oberen Leiste in den Popupfenstern werden Informationen zum Unternehmen, in dem die Seite in geöffnet wurde, angezeigt und sind schreibgeschützt. Die Popupfenster beruhen auch auf dem Hauptbrowserfenster von Finance and Operations. Wenn das Hauptfenster geschlossen oder aktualisiert wird, werden alle offenen Popupfenster schreibgeschützt. Das bedeutet, dass die Informationen in diesen Dialogfeldern noch angezeigt werden können, aber Sie nicht in der Lage sind, mit ihnen zu interagieren.
-

@@ -1,31 +1,31 @@
 ---
-title: "Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (24. September 2018)"
-description: "In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind."
+title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (24. September 2018)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
-ms.search.form: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Talent
-ms.custom: 
-ms.assetid: 
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Talent
-ms.translationtype: HT
-ms.sourcegitcommit: 94950fbe5c1aad3dfbd3de59d1bcb47337ff68ea
 ms.openlocfilehash: aeb75fe4c775b9003c6429de536498f495224098
-ms.contentlocale: de-de
-ms.lasthandoff: 09/24/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "304537"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-24-2018"></a>Neuheiten oder Änderungen in Dynamics 365 for Talent Core HR (24. September 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-24-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (24. September 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,3 @@ Diese Version enthält eine Reihe zusätzlicher Fehlerkorrekturen.
 ## <a name="known-issue"></a>Bekannte Probleme
 
 -   **Abgang:**, Wenn einer Arbeitskraft ein neuer Anhang hinzugefügt wird, werden die Schaltflächen **Neu** und **Bearbeiten** abgeblendet. **Problemumgehung:**, Bevor die Anhangsseite geöffnet wird, überprüfen Sie, dass die Infoboxen **Arbeitskraft** geschlossen werden. Wenn die Infoboxen geschlossen werden, wenn die **Arbeitskraft**-Seite geladen wird, werden die Anhangschaltflächen aktiviert. (Dieses Problem wird in der folgenden Plattformaktualisierung korrigiert.)
-

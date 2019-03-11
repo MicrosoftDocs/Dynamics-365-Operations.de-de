@@ -1,13 +1,13 @@
 ---
 title: Vorzeitige Abschreibung
-description: "Dieser Artikel enthält eine Übersicht der Bonusabschreibungsfunktionalität."
+description: Dieser Artikel enthält eine Übersicht der Bonusabschreibungsfunktionalität.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: AssetBonus
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5e05c0c195ddb948547ae008d050686bbcdc6ed3
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 48d50cbba648beb9831e186cd160853abe79c4e4
-ms.contentlocale: de-de
-ms.lasthandoff: 11/03/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323317"
 ---
-
 # <a name="bonus-depreciation"></a>Vorzeitige Abschreibung
 
 [!include [banner](../includes/banner.md)]
@@ -63,7 +62,6 @@ Wenn die vorzeitige Abschreibung unter Verwendung des Vorschlagsprozesses berech
 Sie können eine unbegrenzte Anzahl von Datensätzen für die vorzeitige Abschreibung erstellen. Nach deren Zuordnung zu einem Anlagengruppen-Abschreibungsbuch werden sie auf das Anlagenabschreibungsbuch angewendet. 
 
 Die vorzeitige Abschreibung wird als Prozentsatz oder als fester Wert eingegeben. Beim Buchen von Abschreibungsvorschlägen werden Buchungen für die vorzeitige Abschreibung im Abschreibungsbuch getrennt von Abschreibungsbuchungen erfasst.
-
 
 
 

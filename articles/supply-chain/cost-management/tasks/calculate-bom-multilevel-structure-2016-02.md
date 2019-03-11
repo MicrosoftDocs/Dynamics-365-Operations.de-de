@@ -1,13 +1,13 @@
---- 
-title: "Berechnen einer Stückliste mithilfe einer Struktur mit mehreren Ebenen (Februar 2016)"
-description: "Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, indem eine Auflösung mit mehreren Ebene verwendet wird, die auf dem Nachkalkulationsbogen beruht."
+---
+title: Berechnen einer Stückliste mithilfe einer Struktur mit mehreren Ebenen (Februar 2016)
+description: Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, indem eine Auflösung mit mehreren Ebene verwendet wird, die auf dem Nachkalkulationsbogen beruht.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventItemPrice, BOMCalcDialog, BOMCalcTrans
 audience: Application User
 ms.reviewer: shylaw
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
 ms.openlocfilehash: fcc1248d64145c10f1c67bfac49c053e99dc1598
-ms.contentlocale: de-de
-ms.lasthandoff: 09/14/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "323363"
 ---
 # <a name="calculate-a-bom-by-using-a-multilevel-structure-february-2016"></a>Berechnen einer Stückliste mithilfe einer Struktur mit mehreren Ebenen (Februar 2016)
 
@@ -48,5 +48,4 @@ Diese Prozedur zeigt, wie die Kosten eines fertigen Produkts berechnet werden, i
     * Wenn Sie „Mehrfach” auswählen, werden die Kosten gemäß der Anordnung von BOM_2 klassifiziert, wobei 10 von der M1-Kostengruppe (ITEM_C) abgeleitet ist und 15,60 von der Produktion, wobei die Kostengruppe L2 beträgt. Indirekte Kosten variieren auch.  
 11. Schließen Sie die Seite.
 12. Schließen Sie die Seite.
-
 

@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren eines Ausgleichs
-description: "Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieses Thema beschreibt die Parameter, die für den Ausgleich sowohl der Kreditorenkonten als auch der Debitoren verwendet werden."
+description: Wie und wann Transaktionen ausgeglichen werden, können komplexe Themen sein; daher ist es wichtig, dass Sie den Vorgang verstehen und die Parameter für Ihre geschäftlichen Anforderungen korrekt definieren. Dieses Thema beschreibt die Parameter, die für den Ausgleich sowohl der Kreditorenkonten als auch der Debitoren verwendet werden.
 author: kweekley
 manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: HT
-ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
-ms.contentlocale: de-de
-ms.lasthandoff: 08/08/2018
-
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "319269"
 ---
-
 # <a name="configure-settlement"></a>Konfigurieren eines Ausgleichs
 
 [!include [banner](../includes/banner.md)]
@@ -68,4 +67,3 @@ Um zusätzliche Buchhaltungseinträge, Soll und Haben in dem selben Sachkonto zu
 
 -   Organisationen verwenden oft feste Dimensionen, um eine Finanzdimension, die nicht benötigt wird, mit Null zu füllen. Dies ist in der Regel der Fall bei Bilanzkonten, wie z.B. Debitoren/Kreditorenkonten. Kontostrukturen können verwendet werden, um Finanzdimension nicht zu verfolgen, die typischerweise mit Null gefüllt sind.  Sie können die Finanzdimensionen für die Bilanzkonten entfernen, so dass Sie keine festen Dimensionen verwenden müssen.
 -   Wenn Ihr Unternehmen auf dem Debitoren-/Kreditorenhauptkonto feste Dimensionen benötigt, finden Sie eine Möglichkeit, die feste Dimension auf die Zahlung vorzuschlagen, so dass der Wert der festen Dimension auf der Kreditorenbuchung für die Zahlung gespeichert wird. Dadurch kann das System das Debitoren-/Kreditorenhauptkonto unter Berücksichtigung der festen Dimensionswerte rekonstruieren. Der Wert der festen Dimension kann entweder als Standard für den Kreditor oder den Erfassungsnamen für die Zahlungserfassung definiert werden.
-

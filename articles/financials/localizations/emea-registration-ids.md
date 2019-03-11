@@ -5,9 +5,9 @@ author: ShylaThompson
 manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: shylaw
@@ -17,14 +17,13 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
+ms.openlocfilehash: 7b663b9a72afdd3c2e2dcf503152f02e0b7861fd
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 978c6c6f2a3de803f252e93040d2d7eb2bc4a793
-ms.contentlocale: de-de
-ms.lasthandoff: 03/26/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "350503"
 ---
-
 # <a name="registration-ids"></a>Registrierungskennungen
 
 [!include [banner](../includes/banner.md)]
@@ -55,7 +54,7 @@ Erfassungskategorie ist die Land/Regionskennung, die für Länder/Regionen für 
 |-----------------------|----------------|
 | Registrierungstyp     | Das Land/Region des Erfassungstyps|
 | Beschränkt auf         | Der Typ der Einschränkung, die auf den Steuererfassungstyp gilt: Keine, Organisation, Person.|
-| Registrierungskategorie | …Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der in Microsoft Dynamics 365 for Finance and Operations unterstützten Kategorien finden Sie unten. |
+| Registrierungskategorie | …Die eindeutige Erfassungskennung genehmigt für die Verwendung im Land. Die vollständige Liste der in Microsoft Dynamics 365 for Finance and Operations unterstützten Kategorien befindet sich unten. |
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Geben die Erfassung-ID für globale Adressbuchdatensätze ein
 
@@ -80,28 +79,28 @@ Das globale Adressbuch (GAB) in Microsoft Finance and Operations enthält konsol
 Suche für Parteidatensätze auf einer Erfassungskennung ist in die Steuerformulare verfügbar, die für die Partei, zur juristischen Person, den Kreditor, z Debitor und der Arbeitskraft zugeordnet werden. Klicken Sie auf **Erfassung ID-Suche**, um die Seite **Erfassung ID-Suchkriterien** zu öffnen. Definieren Sie die Suchkriterien und klicken Sie auf **Suchen**. Im System werden die ausgewählten Datensätze aus dem globalen Adressbuch zugeordnet und die Typen des Parteidatensatzes angezeigt.
 
 ## <a name="supported-registration-categories"></a>Unterstützte Registrierungskategorien
-In der folgenden Tabelle werden die unterstützten Erfassungstypen in Finance and Operations aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für IDs Erfassung vertraut sind, ordnet diese Tabelle auch diese Felder in Finance and Operations Registrationskategorien zu.
+In der folgenden Tabelle werden die unterstützten Erfassungstypen in Finance and Operations aufgeführt. Wenn Sie mit den Microsoft Dynamics AX 2012-Feldern für Registrierungskennungen vertraut sind: Diese Tabelle ordnet diese Felder auch den Registrierungskategorien von Finance and Operations zu.
 
-| Finance and Operations-Erfassungskategorie         |Land/Region  | Dynamics AX 2012 Begriff/Feld|
+| Finance and Operations-Erfassungskategorie         |Land/Region  | Dynamics AX 2012 – Begriff/Feld|
 |---------------------------------------------------------------|---------------------|---------------------------------|
-| MwSt.-Kennung                                                        | Alle Länder der Europäischen Union (EU)|  Steuernummer (Gesetzgebungstyp in STEUER-ID AX 2012 R3)|
-| Enterprise-ID (COID)                                          | Belgien, Tschechische Republik, Estland, Ungarn, Lettland, Litauen, Polen, Schweiz | Unternehmensnummer (EnterpriseNumber) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Registrationsnummer (RegNum\_W) Unternehmenscode (EnterpriseCode) Registrationsnummer (RegNum\_W) UID (Gesetzgebungstyp UID in AX 2012 R3) |
+| MwSt.-Kennung                                                        | Alle Länder der Europäischen Union (EU)|  Umsatzsteuernummer (Gesetzgebungstyp STEUER-ID in AX 2012 R3)|
+| Enterprise-ID (COID)                                          | Belgien, Tschechische Republik, Estland, Ungarn, Lettland, Litauen, Polen, Schweiz | Unternehmensnummer (EnterpriseNumber) Registrierungsnummer (RegNum\_W) Registrierungsnummer (RegNum\_W) Registrierungsnummer (RegNum\_W) Registrierungsnummer (RegNum\_W) Unternehmenscode (EnterpriseCode) Registrierungsnummer (RegNum\_W) UID (Gesetzgebungstyp UID in AX 2012 R3) |
 | Zweigstellenkennung                                                     | Belgien            | Zweigstellennummer (BranchNumber)|
 | (Spisová-značka Registrierungsnummer, ausgebende Behörde, Abschnitt) | Tschechische Republik     | Einsatznummer (CommercialRegisterInsetNumber). Im Handelsregister CommercialRegister) Abschnitt des Handelsregisters (CommercialRegisterSection )|
 | Zolldebitorkennung                                           | Finnland | Zolldebitorennummer (CustomsCustomerNumber\_FI)|
-| INN                                                           | Russische Föderation| INN (Gesetzgebungstyp in INN AX 2012 R3)|
-| RRC                                                           | Russische Föderation| RRC (Gesetzgebungstyp in RRC AX 2012 R3)|
-| OKDP                                                          | Russische Föderation| OKDP (Gesetzgebungstyp in OKDP AX 2012 R3)|
-| OKPO                                                          | Russische Föderation| OKPO (Gesetzgebungstyp in OKPO AX 2012 R3)|
-| RCOAD                                                         | Russische Föderation| RCOAD (Gesetzgebungstyp in RCOAD AX 2012 R3)|
-| OGRN                                                          | Russische Föderation| OGRN (Gesetzgebungstyp in OGRN AX 2012 R3) |
-| SNILS                                                         | Russische Föderation| SNILS (Gesetzgebungstyp in SNILS AX 2012 R3)|
-| CIFTS                                                         | Russische Föderation| CIFTS (Gesetzgebungstyp in CIFTS AX 2012 R3)|
+| INN                                                           | Russische Föderation| INN (Gesetzgebungstyp INN in AX 2012 R3)|
+| RRC                                                           | Russische Föderation| RRC (Gesetzgebungstyp RRC in AX 2012 R3)|
+| OKDP                                                          | Russische Föderation| OKDP (Gesetzgebungstyp OKDP in AX 2012 R3)|
+| OKPO                                                          | Russische Föderation| OKPO (Gesetzgebungstyp OKPO in AX 2012 R3)|
+| RCOAD                                                         | Russische Föderation| RCOAD (Gesetzgebungstyp RCOAD in AX 2012 R3)|
+| OGRN                                                          | Russische Föderation| OGRN (Gesetzgebungstyp OGRN in AX 2012 R3) |
+| SNILS                                                         | Russische Föderation| SNILS (Gesetzgebungstyp SNILS in AX 2012 R3)|
+| CIFTS                                                         | Russische Föderation| CIFTS (Gesetzgebungstyp CIFTS in AX 2012 R3)|
 | Ausweis                                                      | Spanien             | Ausweis|
 | Offizielles Ausweisdokument                              | Spanien             | Offizielles Ausweisdokument|
 | Wohnsitzbescheinigung                                         | Spanien             | Wohnsitzbescheinigung|
 | Anderes Ausweisdokument                                 | Spanien             | Anderes Ausweisdokument|
-| Nicht gezählt                                                  | Spanien             | Nicht in AX 2012 R3 verfügbar|
+| Nicht erfasst                                                  | Spanien             | Nicht in AX 2012 R3 verfügbar|
 
 
 Weitere Informationen zum Zuordnen von Erfaassungskennungen einschließlich erforderliche Voraussetzungen, finden Sie in den folgenden Aufgabenaufzeichnungen für Mehrwertsteuer-IDs in den Lebenszyklus-Dienstleistungen (LCS):
@@ -109,7 +108,6 @@ Weitere Informationen zum Zuordnen von Erfaassungskennungen einschließlich erfo
 -   Einrichten der MwSt Kennung
 -   MwSt-Registrierungs-ID des der Kreditors
 -    Suche nach Partei per MwSt.-Kennung
-
 
 
 

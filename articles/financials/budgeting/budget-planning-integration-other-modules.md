@@ -1,13 +1,13 @@
 ---
 title: Budgetplanungsintegration in andere Module
-description: "Budgetpläne können aus mehreren unterschiedlichen Ressourcen generiert werden. Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für alle Ressourcen."
+description: Budgetpläne können aus mehreren unterschiedlichen Ressourcen generiert werden. Die grundlegenden Elemente für den periodischen Prozess sind die gleichen für alle Ressourcen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: shylaw
@@ -18,14 +18,13 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 97c33a222d31e690d2a395f972c0ddc4b89e8fdb
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
-ms.contentlocale: de-de
-ms.lasthandoff: 05/08/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "353033"
 ---
-
 # <a name="budget-planning-integration-with-other-modules"></a>Budgetplanungsintegration in andere Module
 
 [!include [banner](../includes/banner.md)]
@@ -145,7 +144,6 @@ Wählen Sie eine Position aus, und klicken Sie auf die Schaltfläche **Budgetpla
 Verwenden Sie die Schaltflächen **Beschaffungsplanung** und **Bedarfsplanung**, um diese Abfragen auszuführen. In beiden Fällen sucht die Abfrage nach Planungspositionen, die die Budgetplanpositionen erstellt haben könnten. 
 
 Zusätzliche Berichte, die verfügbar sind, sind zum Beispiel **Planpositionen nach Budgetplan**. Dieser Bericht ist insbesondere dann hilfreich, wenn Sie feststellen möchten, ob eine Position korrekt zu den Budgetplänen zugewiesen wurde.
-
 
 
 

@@ -1,13 +1,13 @@
---- 
-title: "Geschäftsjahr abschließen"
-description: "Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein neues Geschäftsjahr übertragen."
+---
+title: Geschäftsjahr abschließen
+description: Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein neues Geschäftsjahr übertragen.
 author: aprilolson
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-ax-applications
-ms.technology: 
+ms.technology: ''
 ms.search.form: LedgerParameters, LedgerFiscalCloseGroup, LedgerFiscalCloseAddLedger, SysLookupMultiSelectGrid, LedgerFiscalCloseRunGroup
 audience: Application User
 ms.reviewer: twheeloc
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 628b084dbcc85c3f7c08f209bdb325a110554ad9
+ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 4f2f1f1206f3cb3534ef93923d4945bb63814514
-ms.contentlocale: de-de
-ms.lasthandoff: 09/29/2017
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "367914"
 ---
 # <a name="close-the-fiscal-year"></a>Geschäftsjahr abschließen
 
@@ -67,5 +67,4 @@ Dieses Verfahren führt Sie durch den Jahresabschlussprozess, der Salden in ein 
 23. Die Standardwerte für den als Stapelverarbeitung auszuführenden Jahresabschluss.
     * Es ist eine bewährte Verfahrensweise für Prozesse mit langer Laufzeit diese im Stapelverarbeitungsmodus auszuführen. Dies ist in der Regel einer dieser Prozesse. Daher wird er standardmäßig im Stapelbearbeitungsmodus ausgeführt.  
 24. Klicken Sie auf "OK".
-
 
