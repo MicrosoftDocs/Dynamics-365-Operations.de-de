@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 45b628376a483d3d639e5c018dd93570ed8ce7af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
+ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302319"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379923"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
 
 [!include [banner](includes/banner.md)]
 
-In älteren Versionen von Microsoft Dynamics 365 for Retail werden Rücklieferungen für Kundenaufträge mithilfe des Rücklieferungsdokuments in Retail Zentralverwaltung verarbeitet. Doch das Rücklieferungsdokument kann auch ausschließlich für die Bearbeitung von Produkten verwendet werden, die zurückgegeben werden. Die zurückgelieferten Produkte werden durch eine negative Menge in den Rücklieferungspositionen angegeben. Dagegen wird im Umsatz eine positive Menge angegeben. Das Rücklieferungsdokument unterstützt jedoch keine positiven Mengen. Aufgrund dieser Einschränkung wurden in früheren Versionen von Retail keine Szenarien unterstützt, in denen Produktumtauschaktivitäten mithilfe des Rücklieferungsdokuments durchgeführt wurden.
+In älteren Versionen von Microsoft Dynamics 365 for Retail werden Rücklieferungen für Kundenaufträge mithilfe des Rücklieferungsdokuments in Retail Headquarters verarbeitet. Doch das Rücklieferungsdokument kann auch ausschließlich für die Bearbeitung von Produkten verwendet werden, die zurückgegeben werden. Die zurückgelieferten Produkte werden durch eine negative Menge in den Rücklieferungspositionen angegeben. Dagegen wird im Umsatz eine positive Menge angegeben. Das Rücklieferungsdokument unterstützt jedoch keine positiven Mengen. Aufgrund dieser Einschränkung wurden in früheren Versionen von Retail keine Szenarien unterstützt, in denen Produktumtauschaktivitäten mithilfe des Rücklieferungsdokuments durchgeführt wurden.
 
 Allerdings wurden Funktionen hinzugefügt, die Szenarien unterstützen, in denen der Umtausch mithilfe von Rücklieferungen erfolgt. Retail verwendet nun das Auftragsdokument anstelle des Rücklieferungsdokuments, um die Transaktionsarten zu verarbeiten.
 
@@ -44,7 +44,7 @@ Gehen Sie folgendermaßen vor, um das System so zu konfigurieren, dass Umtausch 
 
 Wenn das System wie im vorigen Abschnitt beschrieben konfiguriert ist, wählt der Verkaufsstellen (POS)-Benutzer immer noch einen Auftrag oder eine Verkaufsrechnung aus, um eine Rücklieferung zu verarbeiten. Dies hat sich seit den vorherigen Versionen von Retail nicht geändert. Wenn jedoch die Rückgabeartikel in den Einkaufskorb gelegt wurden, kann der Benutzer dem Einkaufskorb neue Auftragspositionen hinzuzufügen.
 
-Für diese neuen Auftragspositionen muss der Benutzer alle Attribute definieren, die für die Verarbeitung von Kundenauftragsposition erforderlich sind. Diese Attribute enthalten die Lieferarten und den Erfüllungsstandort. Die Zahlung, die für die Transaktion fällig ist, ist der Nettobetrag der Rücklieferungspositionen und Auftragspositionen. Erfolgt die Zahlung für die Transaktion, wir die Rücklieferung in Retail Zentralverwaltung als Auftragsdokument gebucht, und das System erstellt sofort eine Rechnung für die Rückgabepositionen.
+Für diese neuen Auftragspositionen muss der Benutzer alle Attribute definieren, die für die Verarbeitung von Kundenauftragsposition erforderlich sind. Diese Attribute enthalten die Lieferarten und den Erfüllungsstandort. Die Zahlung, die für die Transaktion fällig ist, ist der Nettobetrag der Rücklieferungspositionen und Auftragspositionen. Erfolgt die Zahlung für die Transaktion, wir die Rücklieferung in Retail Headquarters als Auftragsdokument gebucht, und das System erstellt sofort eine Rechnung für die Rückgabepositionen.
 
 Zur besseren Übersicht über die unterschiedlichen Mengen für den Einkaufskorb wurden dem Einkaufskorb drei neue Betragsfelder hinzugefügt. Mithilfe des Bildschirmdesigners können Sie diese neuen Felder in der POS-Benutzeroberfläche (UI) bereitstellen.
 

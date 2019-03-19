@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Willkommen bei Dynamics 365 for Talent
-description: Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement.
+description: 'Talent rationalisiert viele routinemäßige Protokollierungsaufgaben und automatisiert zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Diese Prozesse umfassen das Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement.'
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-365-talent
-ms.technology: ''
+ms.technology: null
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, Operations, Talent
+ms.search.scope: 'Core, Operations, Talent'
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302309"
+ms.search.validFrom: '2016-02-28'
+ms.dyn365.ops.version: 'AX 7.0.0, Talent July 2017 update'
 ---
+
 # <a name="welcome-to-dynamics-365-for-talent"></a>Willkommen bei Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
@@ -79,7 +75,7 @@ Sie können Pläne einrichten, um effektiv und ausgewogen Vergütungen sowie Obj
 
 ## <a name="develop-and-train-employees"></a>Mitarbeiter fördern und schulen
 
-Um Ihre Mitarbeiter bei Ihren Karrierezielen zu unterstützen und dabei gleichzeitig wesentlichen Geschäftsbedürfnissen zu entsprechen, können Sie Ziele einrichten, Leistungsüberprüfungen erstellen und Feedback protokollieren. Um Mitarbeiter dabei zu unterstützen, notwendige Fertigkeiten zu erwerben, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Tagesordnungen, Protokolle und Sitzungen einrichten, bevor Sie einem Kurs einen Kursleiter zuweisen oder jemanden für einen Kurs anmelden. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
+Um Ihren Mitarbeitern beim Erreichen ihrer Karriereziele bei wichtigen Geschäftsanforderungen zu helfen, können Sie Ziele einrichten, Leistungsbeurteilungen erstellen und Feedback nachverfolgen. Um Mitarbeitern zu helfen, die benötigten Fähigkeiten zu entwickeln, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Agenden, Verläufe und Sitzungen einrichten, bevor Sie einen Kursleiter einem Kurs zuweisen oder jemanden für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
 -   [Leistungsverwaltung](performance-management-overview.md)
 -   [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](skills.md)

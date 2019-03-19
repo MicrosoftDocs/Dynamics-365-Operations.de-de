@@ -5,6 +5,10 @@ items:
   items:
   - name: Neuerungen und Änderungen
     href: get-started/whats-new.md
+  - name: Vorschaufunktionen in Dynamics 365 for Retail 10.0.1
+    href: get-started/whats-new-10-0-1.md
+  - name: Neuigkeiten und Änderungen in Dynamics 365 for Retail (April 2019)
+    href: get-started/april-whats-new.md
   - name: Vor dem Erwerb von Retail
     href: get-started/before-you-buy.md
   - name: Für ein Vorschauabonnement anmelden
@@ -109,7 +113,11 @@ items:
   - name: Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
     href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
 - name: Erweiterte automatische Omni-Channel-Belastungen
-  href: omni-auto-charges.md
+  items:
+  - name: Erweiterte Auto-Belastungen konfigurieren und verwenden
+    href: omni-auto-charges.md
+  - name: Verrechnung und Gruppierung von Kopf-Auto-Belastungen
+    href: pro-rate-charges-matching-lines.md
 - name: Callcenter
   items:
   - name: Callcenter-Vertriebsfunktionen
@@ -387,7 +395,7 @@ items:
     - name: Kassenfunktionen
       href: localizations/emea-swe-cash-registers.md
     - name: Beispiel zur Retail POS-Integration mit Kontrolleinheiten
-      href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+      href: localizations/retail-sdk-control-unit-sample.md
 - name: Retail-Aufgaben
   items:
   - name: Ein Produkt erstellen
@@ -408,7 +416,7 @@ items:
     href: tasks/configure-machine-learning-product-recommendations.md
   - name: Erstellen von Geräten und deren Zuordnung zu Kassen
     href: tasks/create-associate-device.md
-  - name: Erstellen von Hardwarestationen
+  - name: Erstellen von Hardware Stations
     href: tasks/create-associate-hardware-station.md
   - name: Erstellen von POS-Kassen
     href: tasks/create-associate-registers.md
@@ -442,7 +450,7 @@ items:
     href: tasks/design-relationships-between-organizational-units.md
   - name: Sortimente verwalten
     href: tasks/manage-assortments-2016-11.md
-  - name: Herunterladen von Hardwarestationen per Self-Service
+  - name: Herunterladen von Hardware Stations per Self-Service
     href: tasks/perform-self-service-download-hardware-station.md
   - name: Online-Verkäufe und -Zahlungen buchen
     href: tasks/posting-online-sales-payments.md
@@ -489,7 +497,7 @@ items:
       href: dev-itpro/retail-store-scale-unit-configuration-installation.md
     - name: Retail Modern POS – Konfiguration und Installation
       href: retail-modern-pos-device-activation.md
-    - name: Verwalten von Retail-Konten und Geräten von der Retail Zentralverwaltung aus
+    - name: Verwalten von Retail-Konten und Geräten von der Retail Headquarters aus
       href: set-up-activation-accounts-validate-devices-hq.md
     - name: Retail POS-Geräteaktivierung
       href: dev-itpro/retail-device-activation.md
@@ -553,7 +561,9 @@ items:
       href: dev-itpro/hybridApp.md
     - name: Überschreiben des POS-Anforderungshandlers
       href: dev-itpro/pos-handler.md
-  - name: Hardwarestation und Erweiterbarkeit
+    - name: Verpackungsinformationen zu POS-Erweiterungen anzeigen
+      href: view-pos-extension-package-details.md
+  - name: Hardware Station und Erweiterbarkeit
     href: dev-itpro/hardware-station-extensibility.md
   - name: Retail Server-Erweiterbarkeit
     items:
@@ -659,9 +669,9 @@ items:
     items:
     - name: Treueerweiterung
       href: dev-itpro/retail-sdk/loyalty-extension-sample.md
-ms.openlocfilehash: 1f86096b0572f0309afa04e086d53294a7a8f4fa
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 0d6ec0ba8723f81c21d735be455e35d8f1b62187
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377250"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791637"

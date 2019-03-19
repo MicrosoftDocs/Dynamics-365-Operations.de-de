@@ -3,7 +3,7 @@ title: Startseite für Kreditorenkonten
 description: Dieses Thema enthält eine Übersicht über die Kreditorenkonten.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/18/2017
+ms.date: 02/15/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 6cc7ee98b3fabb774339dd1fc027d38d00d8b31f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: f1acf2bade2bb279a35fdf4689bbbcc49e64101f
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302323"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403284"
 ---
 # <a name="accounts-payable-home-page"></a>Startseite für Kreditorenkonten
 
@@ -123,15 +123,17 @@ Unter den folgenden Themen finden Sie Informationen zum Verwalten von Ausgleiche
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden. 
+Lesen Sie die [Microsoft Dynamics 365-Versionshinweise](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
 
 #### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/) finden Sie viele Beiträge zu „Kreditorenkonten”. Auch wenn einige dieser Beiträge für die ältere Version von Kreditorenkonten verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
+Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
+
+#### <a name="community-blogs"></a>Communityblogs
+
+[Enthält Informationen zur Verwaltung von Verbindlichkeiten in Dynamics 365 for Finance and Operations](https://financefunction.tech/2019/02/15/how-to-manage-payables-in-dynamics-365-for-finance-and-operations)
 
 #### <a name="task-guides"></a>Aufgabenleitfäden
 Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operations. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe”.
