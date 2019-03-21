@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 982b72b3fd71d58038218e007f9f3790874ceddc
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: 262d301262189ec1ba40577e962eeee2ccff0da3
+ms.sourcegitcommit: 39c17fe619b075f56e8baffd087a830fc2fb8022
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377204"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791567"
 ---
 # <a name="whats-new-or-changed"></a>Neuerungen und Änderungen
 
@@ -53,10 +53,16 @@ Diese Tabelle enthält die wichtigsten Versionen der Anwendung. Monatscloudaktua
 <tbody>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>10.0.1</td>
+<td>10.0.51</td>
+<td>2019. April</td>
+<td><a href="whats-new-changed-10-0-1.md">Vorschaufunktionen in Dynamics 365 for Finance and Operations, Version 10.0.1 (April 2019)</a></td>
+</tr><tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0</td>
 <td>10.0.8</td>
 <td>2019. April</td>
-<td><a href="whats-new-changed-10.md">Neuerungen oder Änderungen in Dynamics 365 for Finance and Operations Version 10.0 (10.0. April 2019)</a></td>
+<td><a href="whats-new-changed-10-0-1.md">Neuigkeiten oder Änderungen in Finance and Operations, Version 10.0 (April 2019) </a></td>
 </tr>
 <tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
@@ -145,6 +151,12 @@ Diese Tabelle enthält die wichtigsten Versionen der Anwendung. Monatscloudaktua
 </thead>
 <tbody>
 <tr>
+<td>Microsoft Dynamics 365 for Finance and Operations</td>
+<td>Plattformupdate 25</td>
+<td>7.0.5222</td>
+<td>2019. April</td>
+<td><a href="whats-new-platform-25.md">Vorschaufunktionen in Dynamics 365 for Finance and Operations platform update 25 (April 2019)</a></td>
+</tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattformupdate 24</td>
 <td>7.0.5179</td>

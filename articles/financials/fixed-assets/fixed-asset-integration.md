@@ -3,7 +3,7 @@ title: Integration von Anlagevermögen
 description: Anlagen können in die Module "Hauptbuch", "Bestandsverwaltung", "Debitoren" und "Kreditoren" integriert werden. Darüber hinaus können Anlagen auch für die Integration in Bestellungen eingerichtet werden.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5d33de3af05668bc9aedc94894b12d16daf78e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2023d68a1455c6bb5ec569b6ae19fc3268f8769d
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336979"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778154"
 ---
 # <a name="fixed-assets-integration"></a>Integration von Anlagevermögen
 
@@ -41,7 +41,7 @@ Auf der Seite**Anlagenbuchungsprofile** definieren Sie die Hauptkonten, in denen
 ## <a name="inventory-management"></a>Lagerverwaltung
 In der Lagererfassung für Anlagen können Sie die Anschaffung von Anlagen eingeben, die die juristische Person für sich erstellt oder erzeugt hat. Sie können dann Lagerartikel entweder als Anschaffung oder als Teil einer Anschaffung an Anlagen übertragen. 
 
-Die Anschaffung von Anlagen kann auch mithilfe von Bestellungen erfolgen. Wenn Bestellungen Lagerartikel enthalten, die als Anlagen festgelegt sind, wird durch die Einstellung der Option **Anlagenanschaffung aus Einkauf zulassen** auf der Seite **Anlagenparameter** bestimmt, ob für die Anlage bei der Buchung der Rechnung eine Anschaffung gebucht wird. Die Auswirkungen, den die Anschaffung von Anlagen auf Lager hat, hängt von der Konfiguration der juristischen Person ab. 
+Die Anschaffung von Anlagen kann auch mithilfe von Bestellungen erfolgen. Wenn Bestellungen Lagerartikel enthalten, die als Anlagen festgelegt sind, wird durch die Einstellung der Option **Anlagenanschaffung aus Einkauf zulassen** auf der Seite **Anlagenparameter** bestimmt, ob für die Anlage bei der Buchung der Rechnung eine Anschaffung gebucht wird. Eine Einkaufsposition erstellt eine Anlage, unabhängig von der Menge. Die Auswirkungen, den die Anschaffung von Anlagen auf Lager hat, hängt von der Konfiguration der juristischen Person ab. 
 
 Entwickelt sich ein Lagerartikel zu einer Anlagenanschaffung entweder über die Lagererfassung, eine Bestellung oder einen Anschaffungsvorschlag, wird eine Wertmodellanschaffungsbuchung für die Anlage erstellt. Umfasst eine Wertmodellanschaffung ein abgeleitetes Abschreibungsbuch, wird darüber hinaus im Abschreibungsbuch eine Anschaffungsbuchung erstellt. 
 

@@ -3,7 +3,7 @@ title: Steuerkalender, Geschäftsjahre und Finanzzeiträume
 description: Dieser Artikel behandelt Steuerkalender, Geschäftsjahre und Perioden und erläutert, wie diese für juristische Personen, Anlagen und die Budgetierung verwendet werden.
 author: aprilolson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 360695ddfbcf1eab62dd5087e1b5bb34ccaf7c7f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 01f8f939079d55d5a75d1a4b1fd718bf2a3f9700
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361658"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778200"
 ---
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Steuerkalender, Geschäftsjahre und Finanzzeiträume
 
@@ -43,7 +43,7 @@ Eine Abschlussperiode wird verwendet, um getrennte Hauptbuchbuchungen nutzen zu 
 Wählen Sie beim Erstellen einer Abschlussperiode eine Periode aus, die den Status Offen sowie die gewünschten Daten aufweist. Die neue Abschlussperiode kopiert das Start- und Enddatum aus der vorhandenen Periode. Die ursprüngliche Periode bleibt dabei erhalten. Angenommen, Sie wählen Periode 12 aus, wobei es sich um die letzte Periode des Geschäftsjahrs mit den Daten 1. August bis 31. August handelt. Sie geben einen Namen für die Abschlussperiode ein, z. B. Abschluss. Nach der Erstellung der neuen Abschlussperiode verfügen Sie über die ursprüngliche Periode und die Abschlussperiode. Beide weisen das Startdatum 1. August und das Enddatum 31. August auf.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Auswählen von Steuerkalendern für Sachkonten, Anlagen und Budgetzyklen
-Steuerkalender werden mit Anlagenabschreibung, Finanzbuchungen und Budgetzyklen verwendet. Wenn Sie einen Steuerkalender erstellen, können Sie ihn für mehrere Zwecke verwenden. Sie können einen Steuerkalender für ein Wertmodell oder ein Abschreibungsbuch auswählen, um ihn als Anlagenkalender festzulegen. Sie können einen Steuerkalender für ein Sachkonto auswählen, um ihn als Sachkontokalender zu verwenden. Außerdem kann ein Steuerkalender für einen Budgetzyklus ausgewählt werden, um ihn als Budgetkalender zu verwenden. Für alle diese Kategorien kann der gleiche Steuerkalender verwendet werden.
+Steuerkalender werden mit Anlagenabschreibung, Finanzbuchungen und Budgetzyklen verwendet. Wenn Sie einen Steuerkalender erstellen, können Sie ihn für mehrere Zwecke verwenden. Sie können einen Steuerkalender für ein Anlagenbuch auswählen, um ihn als Anlagenkalender festzulegen. Sie können einen Steuerkalender für ein Sachkonto auswählen, um ihn als Sachkontokalender zu verwenden. Außerdem kann ein Steuerkalender für einen Budgetzyklus ausgewählt werden, um ihn als Budgetkalender zu verwenden. Für alle diese Kategorien kann der gleiche Steuerkalender verwendet werden.
 
 ### <a name="select-a-fiscal-calendar-for-your-legal-entity"></a>Auswählen eines Steuerkalenders für die juristische Person
 
@@ -51,7 +51,7 @@ Wählen Sie den Steuerkalender aus, den Sie für das Sachkonto für die juristis
 
 ### <a name="select-a-fiscal-calendar-for-fixed-assets"></a>Auswählen eines Steuerkalenders für Anlagen
 
-Sie können einen Steuerkalender für ein Wertmodell oder ein Abschreibungsbuch auswählen. Der betreffende Steuerkalender wird für die Anlagen verwendet, für die auch das ausgewählte Wertmodell oder Abschreibungsbuch verwendet wird. Sie können jeden auf der Seite "Steuerkalender" definierten Steuerkalender auswählen.
+Sie können einen Steuerkalender für ein Anlagenbuch auswählen. Der betreffende Steuerkalender wird für die Anlagen verwendet, für die auch das ausgewählte Anlagenbuch verwendet wird. Sie können jeden auf der Seite "Steuerkalender" definierten Steuerkalender auswählen.
 
 ### <a name="define-budget-cycle-time-spans"></a>Definieren von Zeitspannen für Budgetzyklen
 

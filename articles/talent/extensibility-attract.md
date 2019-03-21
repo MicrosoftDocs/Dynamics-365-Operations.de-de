@@ -3,7 +3,7 @@ title: Erweiterbarkeit in Attract
 description: In diesem Thema wird beschrieben, wie Sie die Microsoft Dynamics 365 for Talent - Attract-Anwendung erweitern können, indem Sie die Microsoft Power-Plattform verwenden.
 author: josaw
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,18 +18,41 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d9e1dd3a67c5f64b5d05f0f171226085138e0b44
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304503"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789650"
 ---
 # <a name="extensibility-in-attract"></a>Erweiterbarkeit in Attract
 
 [!include[banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Talent basiert auf der Common Data Service (CDS) for Apps-Plattform und kann auf verschiedene Weise erweitert werden, indem die Microsoft Power-Plattform und die Funktionen verwendet werden, die von Common Data Service for Apps angeboten werden. Aus diesem Grund können Sie das System konfigurieren und anpassen, indem Sie Microsoft PowerApps und Microsoft Flow verwenden. Sie können auch eine zusätzliche Personen-Analyse erhalten, indem Sie Microsoft Power BI verwenden. Der Einstellungsprozess wird darüber hinaus durch neue benutzerdefinierte Aktivitäten, wie die PowerApps- und Webinhalt-Aktivitäten, noch flexibler als bisher. Wenn Sie diese Aktivitäten verwenden, können Sie den Einstellungsprozess auf Ihre Geschäftsanforderungen und -Prozesse anpassen und sicherstellen, dass das Einstellungsteam und die Kandidaten eine nahtlose angepasste Erfahrung haben.
+
+## <a name="extending-option-sets-in-attract"></a>Erweitern von Optionsätzen in Attract
+
+Ein **Optionssatz** (Auswahlliste) ist ein Feldtyp, der in eine Entität einbezogen werden kann. Er definiert einen Satz von Optionen. Wenn ein Optionssatz in einem Formular angezeigt wird, verwendet er ein Dropdownlistensteuerelement.  In Attract gibt es mehrere Felder, die Optionssätze sind.  Wir führen Funktion zur Erweiterung der Optionssätze ein und beginnen mit dem Feld "Ablehnungsgrund", dem Feld "Beschäftigungstyp" und dem Feld "Dienstalter".   Außerdem können lokalisierte Anzeigenbeschriftungen für die von Ihnen hinzugefügten Optionen hinzufügen.  Weitere Informationen finden Sie über den folgenden Link: [Anpassen von Optionssatzbeschriftungen](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+
+> [!NOTE]
+> Die Funktion zur Stellenausschreibung auf LinkedIn erfordert die Nutzung der Felder **Beschäftigungstyp** und **Dienstaltertyp** auf der Seite **Stellendetails**. Die Standardwerte in den Feldern werden von LinkedIn unterstützt und angezeigt, wenn die Stelle gebucht wird. Wenn Sie also Stellen in LinkedIn veröffentlichen und die vorhandenen Optionssatzwerte für diese Felder ändern, wird die Stelle noch veröffentlicht, aber LinkedIn zeigt keine benutzerdefinierten Werte für **Beschäftigungstyp** und **Dienstaltertyp**.  
+
+Im Folgenden werden die Schritte aufgeführt, mit denen das Felds **Ablehnungsgrund** mit den passenden Werten für Ihr Unternehmen aktualisiert werden kann.  
+
+1. Wenn Sie den **Ablehnungsgrund**-Optionssatz verlängern möchten, navigieren Sie zur [PowerApps-Administrator-Website.](Https://admin.powerapps.microsoft.com)
+2. Sie werden möglicherweise aufgefordert, sich in Ihrem Konto anzumelden. Geben Sie Ihre aus Benutzer-ID- und Kennwort betehenden Anmeldeinformationen aus, die Sie verwenden, um sich in Dynamics365 und/oder in Office365 anzumelden, und klicken Sie dann auf **Weiter**.
+3. In der Registerkarte **Umgebungen** wählen die Umgebung, die Sie verwalten möchten, und doppelklicken Sie darauf, um zur Registerkarte **Details** zu gelangen.
+4. In der Registerkarte **Details** wählen Sie **Dynamics 365-Verwaltungscenter** aus.
+5. Wählen Sie die Instanz aus, die Sie ändern möchten, und wählen Sie **Öffnen** aus.
+6. Navigieren Sie zu **Einstellungen** und dann zu **Anpassungen**, und wählen Sie **System anpassen** aus.
+7. Suchen Sie nach der Entität, für die Sie den Optionssatz verlängert möchten, indem Sie **Entitäten** auswählen und die Gruppe erweitern. In diesem Beispiel ist es die **Bewerbungsentität**.
+8. Wechseln Sie zum Feld, für das Sie den Optionssatz verlängert möchten, indem Sie die Option **Felder** auswählen. In diesem Beispiel ist es **msdyn_rejectionreason**. Doppelklicken Sie auf das Feld.
+9. Wählen Sie im Feld **Optionssatz** die Option **Bearbeiten** aus.
+10. Wählen Sie das **+**-Feld aus.
+11. Geben Sie eine **Beschriftung** ein.  (Diese muss ein eindeutiger Wert sein – keine Duplikate).
+12. Wählen Sie **Speichern**.
+13. Wählen Sie am oberen Seitenrand **Veröffentlichen** aus.
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Nutzen Sie die Microsoft Power Platform 
 

@@ -1,9 +1,9 @@
 ---
 title: Finanzberichte anzeigen
-description: Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
+description: Dieses Thema beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 author: kweekley
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a939ce2f43645963392363fc6452f8bc55bd963
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
+ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312944"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "791440"
 ---
 # <a name="view-financial-reports"></a>Finanzberichte anzeigen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
+Dieses Thema beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 
 <a name="financial-reporting-overview"></a>Überblick über die Finanzberichterstellung
 ----------------------------
@@ -67,18 +67,15 @@ Ein Finanzbericht kann jederzeit in jeder Währung angezeigt werden. Um einen Be
 ## <a name="display-a-summarized-view-of-the-financial-report"></a>Anzeigen einer zusammengefassten Ansicht des Finanzberichts
 Ein Finanzbericht kann Detailpositionen und zusammengefasste Positionen enthalten. Detailpositionen sind Positionen, die Hauptkonten oder Dimensionen enthalten. Zusammengefasste Positionen sind Beschreibungs-, Gesamt- und Berechnungspositionen. Um nur die zusammengefassten Positionen eines Berichts anzuzeigen, klicken Sie auf **Anzeigen** und dann auf **Nur zusammengefasste Positionen**. Der Bericht wird reduziert, und es werden nur die zusammengefassten Positionen angezeigt. Um die Detailpositionen zusammen mit den zusammengefassten Positionen anzuzeigen, klicken Sie auf **Anzeigen** und dann erneut auf **Nur zusammengefasste Positionen**.
 
-## <a name="open-a-financial-report-from-a-previous-month"></a>Öffnen eines Finanzberichts für einen vorherigen Monat
-Sie können Berichte für den aktuellen Monat oder für ältere Monate anzeigen, ohne den Bericht erneut zu generieren. Wenn Sie den Bericht für einen vorherigen Monat öffnen möchten, klicken Sie auf **Anzeigen** und anschließend auf **Vorherige Berichte**. Eine Liste der vorherigen Monate, für die der Bericht generiert wurde, wird angezeigt. Erweitern Sie den Monat, für den Sie den Bericht anzeigen möchten, wählen Sie das Datum aus, und klicken Sie anschließend auf **OK**. Der Bericht für den vorherigen Monat wird angezeigt. Um zum Bericht für den aktuellen Monat zurückzukehren, klicken Sie auf **Abbrechen**.
-
 ## <a name="print-a-financial-report"></a>Drucken eines Finanzberichts
-Um einen Finanzbericht zu drucken, klicken Sie im Aktivitätsbereich auf **Drucken**. Führen Sie dann einen oder mehrere dieser Schritte aus, um die Druckoptionen festzulegen:
+Das Drucken eines Finanzberichts erstellt eine PDF-Datei, die dann manuell gedruckt werden kann. Um einen druckbaren Finanzbericht zu erstellen, klicken Sie im Aktivitätsbereich auf **Drucken**. Führen Sie dann einen oder mehrere der folgenden Schritte aus, um die Druckoptionen festzulegen:
 
 -   Um die verschiedenen Detailebenen im gedruckten Bericht einzubeziehen, legen Sie den Schieberegler auf **Ja** oder **Nein** fest. Wenn ein Bericht eine Berichterstellungsstruktur verwendet, können Sie festlegen, ob alle Berichterstellungseinheiten oder nur die aktuelle Berichterstellungseinheit einbezogen werden sollen.
 -   Um die Seitengröße festzulegen, wählen Sie eine Seitengröße in der Liste aus.
 -   Um das Seitenlayout festzulegen, wählen Sie ein Layout in der Liste aus. Wenn der Berichtsinhalt an die ausgewählte Breite angepasst werden soll, legen Sie den Schieberegler auf **Ja** fest.
 -   Um die Seitenränder festzulegen, geben Sie die Größe der Ränder für oben, unten, links und rechts in Zoll an.
 
-Wenn Sie die Druckoptionen festgelegt haben, klicken Sie auf **Drucken**, um den Bericht zu drucken. Wenn Sie den Bericht doch nicht drucken möchten, klicken Sie stattdessen auf **Abbrechen**. Es wird eine Vorschau des gedruckten Berichts angezeigt. Sie können auswählen, an welchen Drucker der Bericht gesendet wird, und Sie können auch die Druckoptionen anpassen.
+Nachdem Sie die Druckoptionen festgelegt haben, klicken Sie auf **Drucken**, um fortzufahren. Sie werden aufgefordert, anzugeben, ob Sie die Datei herunterladen oder in OneDrive oder auf SharePoint speichern möchten. Wenn Sie doch noch nicht fortfahren möchten, klicken Sie stattdessen auf **Abbrechen**. Sobald Sie fortfahren, wird der Bericht auf dem Server gerendert und Sie werden aufgefordert, den Bericht im PDF-Format herunterzuladen. Sie können den Bericht nun in Ihrem PDF-Viewer anzeigen, den Drucker auswählen, an den der Bericht gesendet werden soll, und alle anderen Druckoptionen anpassen.
 
 ## <a name="export-a-financial-report"></a>Exportieren eines Finanzberichts
 Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **Exportieren**. Der Bericht wird in Microsoft Excel exportiert, und Ihr Browser fordert Sie auf, die exportierte Datei zu öffnen oder zu speichern. Die im Berichtsentwurf definierten Exporteinstellungen werden auf den exportierten Bericht angewendet.    
@@ -86,7 +83,7 @@ Um einen Finanzbericht zu exportieren, klicken Sie im Aktivitätsbereich auf **E
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Finanzberichterstellung für Microsoft Dynamics AX](../../dev-itpro/analytics/financial-reporting-intro.md)
+[Finanzberichterstellung](../../dev-itpro/analytics/financial-reporting-intro.md)
 
 
 

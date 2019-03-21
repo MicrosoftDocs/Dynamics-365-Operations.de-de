@@ -3,7 +3,7 @@ title: Erstellen, Genehmigen und Unterschreiben von Angeboten
 description: In diesem Thema wird ausgeführt, wie Sie ein Angebot für einen Kandidaten mit Dynamics 365 for Talent erstellen, genehmigen und signieren.
 author: josaw
 manager: AnnBe
-ms.date: 12/07/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: f189df052ef299a2cca1d92065a7a4d377d25399
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 5ad7ce1e089d2a8b5c52e7cd01bb3d89070004b1
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304571"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768904"
 ---
 # <a name="creating-approving-and-signing-offers"></a>Erstellen, Genehmigen und Unterschreiben von Angeboten
 
@@ -104,15 +104,20 @@ Sie können mehrere Aktivitäten ausführen, bevor Sie dem Kandidaten das Angebo
 
 -  Es kann weitere Dokumente geben, die Sie in das Angebotsaufnahmeverfahren einbeziehen möchten. Sie haben die Möglichkeit den erforderlichen Dokumenttyp aufzuführen.
 
-- E-Unterschriftenoption: Wenn Adobe Sign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller mit ihrer Adobe Sign Lizenz verbinden. Es gibt zwei Möglichkeiten, dazu. Gehen Sie zu Benutzer **Einstellungen** in **Angebot**, **Verbindungen** und verbinden Sie mit **Adobe Sign**. Alternativ werden Sie aufgefordert, das Senden-Angebot zum Kandidatenbildschirm herzustellen, wenn die Verbindung nicht bereits anhand der Benutzereinstellungen eingerichtet wurde. 
+- e-Signature-Option: Es gibt zwei Möglichkeiten, eine Verbindung mit dem e-Signature-Anbieter Ihrer Wahl herzustellen. Gehen Sie zu **Benutzereinstellungen** in **Angebot** unter **Verbindungen** und stellen Sie eine Verbindung mit **Adobe Sign** oder **DocuSign** her. Alternativ werden Sie aufgefordert, eine Verbindung mit der Seite **Angebot an den Kandidaten senden** herzustellen, wenn die Verbindung nicht bereits anhand der Benutzereinstellungen eingerichtet wurde. Das Konto für die elektronische Signaturmuss nur einmal verbunden werden. Die gleiche Benutzerlizenz wird für alle zukünftigen Angebotpakete verwendet, die vom gleichen Benutzer gesendet werden. 
 
-> [!NOTE]
-> Benutzer müssen ihr Adobe Sign Konto nur einmal verbinden. Die gleiche Benutzerlizenz wird für alle zukünftigen Angebotpakete verwendet, die vom gleichen Benutzer gesendet werden. 
+### <a name="adobe-sign"></a>Adobe Sign
+Wenn Adobe Sign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller in diesem Schritt mit ihrer Adobe Sign Lizenz verbinden. 
+
+### <a name="docusign"></a>DocuSign
+Wenn DocuSign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller mit ihrer DocuSign Lizenz verbinden. Einmal angemeldet werden das Standardkonto und die dem DocuSign-Profile des Benutzers zugeordneten Berechtigungen mit Talent Attract verbunden. 
 
 -  Sie können die E-Mail-Vorlage anzeigen und nach Bedarf bearbeiten.
 
 Wenn das Angebot bereit ist und Sie auf **An Kandidaten senden** klicken, erhält der Kandidat eine E-Mail, dass ein Angebot zur Prüfung vorliegt.
 
+>[!NOTE]
+> Wenn Sie Adobe Sign oder DocuSign verwenden und Sie bemerken einen Fehler beim Versand des Angebots an den Kandidaten, versuchen Sie das Benutzerkonto der Elektronischen Signatur in den **Benutzereinstellungen** zu trennen und erneut zu verbinden. Wenn das Problem weiterhin besteht, wenden Sie sich über den Link **Problem melden** an unseren Support.
 
 ## <a name="candidates-actions-after-receiving-an-offer"></a>Die Aktivitäten des Kandidaten nach Erhalt eines Angebots
 

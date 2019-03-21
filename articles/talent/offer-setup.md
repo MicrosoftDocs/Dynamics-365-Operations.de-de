@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa6c8c80870dd7bd06498c7571ba8a110be85c86
-ms.sourcegitcommit: 3b12ff5ca81650ae666ff443b0bc998182f3931e
+ms.openlocfilehash: 43cf13d96e345747e06541267d820e17de7c1763
+ms.sourcegitcommit: ea17d2e35c24a141c20ab429897eebf9fa186f61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "376506"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768881"
 ---
 # <a name="set-up-offer-management"></a>Einrichten der Angebotsverwaltung 
 
@@ -199,11 +199,11 @@ Es gibt verschiedene Teile des Angeboterstellungsprozesses, der von einem Attrac
 - **Angeboterfahrung des Kandidaten** - Als Administrator, können Sie auswählen, ob alle Angebote ein Ablaufdatum haben, und falls ja, wofür das Standardgegenkonto für das Ablaufdatum sein soll. Sie können auch konfigurieren, ob Kandidaten ein Angebot ablehnen können.
 
 - **E-Unterschriften** - Als Administrator, können Sie die Methode auswählen, die auch Kandidaten verwenden können, um Angebote zu signieren.
-    - Adobe Sign- alle Angebotpakete werden auf Adobe Sign übermittelt und unterzeichnet. Jeder Angebotersteller, der die Angebotanforderungen veröffentlicht, muss eine Adobe Sign Lizenz haben, um sich mit Attract zu verbinden. 
+    - Adobe Sign- alle Angebotpakete werden auf Adobe Sign übermittelt und unterzeichnet. Jeder Angebotersteller, der die Angebotanforderungen veröffentlicht, muss ein Adobe Sign-Konto haben, um sich mit Attract zu verbinden. Für Adobe Sign-Lizenzen und eine kostenlose Testversion siehe [Link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html)
 
+    - DocuSign - alle Angebotpakete werden auf DocuSign übermittelt und unterzeichnet. Jeder Angebotersteller, der die Angebotanforderungen veröffentlicht, muss ein DocuSign-Konto haben, um sich mit Attract zu verbinden. 
+    
     - ESign - Dies ist die Standardeinstellung, wo der Benutzer ein Angebot signieren kann, indem er Namen und Initialen eingibt.
 
->[!NOTE]
-> Für Adobe Sign-Lizenzen und eine kostenlose Testversion siehe [Link](https://acrobat.adobe.com/us/en/business/integrations/microsoft-dynamics-365-for-talent.html)
 
 Weitere Informationen zu den Angeboterstellungsprozessund  finden Sie unter [Erstellen, genehmigen und unterzeichnen von Angeboten ](./creating-offers.md).

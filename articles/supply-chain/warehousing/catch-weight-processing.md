@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5161860e3b1c5b0ae795d109159268be085ec5af
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
+ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334058"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "777271"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
-[!include [preview banner](../../includes/preview-banner.md)]
+
 [!include [banner](../includes/banner.md)]
 
-**Funktionsbereitstellung**
+## <a name="feature-exposure"></a>Funktionsbereitstellung
 
 Um die Lagerortverwaltung für die Artikelgewichtsproduktverarbeitung zu verwenden, müssen Sie einen Lizenzkonfigurationsschlüssel verwenden, um die Funktionen zu aktivieren. (Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**. Erweitern Sie dann auf der Registerkarte **Konfigurationsschlüssel** die Option **Art \> Lagerort- und Transportverwaltung**, und aktivieren Sie das Kontrollkästchen für **Artikelgewicht für Lagerort**).
 
 > [!NOTE]
-> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht**-Lizenzkonfigurationsschlüssel müssen ebenfalls aktiviert werden.
+> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden.
 
 Nachdem der Lizenzkonfigurationsschlüssel aktiviert ist, können Sie beim Erstellen eines freigegebenen Produkts **Artikelgewicht** auswählen. Sie können das freigegebene Produkt auch einer Lagerdimensionsgruppe zuordnen, für die der **Lagerortverwaltungsprozesse verwenden**-Parameter ausgewählt ist.
 

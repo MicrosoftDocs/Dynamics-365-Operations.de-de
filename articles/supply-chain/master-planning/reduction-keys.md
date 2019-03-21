@@ -3,7 +3,7 @@ title: Planzahlenverrechnungsschlüssel
 description: Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e62431a1fdbeb81dda68297f034ee00adece079
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
+ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "364809"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "770915"
 ---
 # <a name="reduction-keys"></a>Planzahlenverrechnungsschlüssel
 
@@ -98,6 +98,7 @@ In den meisten Fällen werden Systeme so eingerichtet, das Buchungen Bedarfsplan
 
    In dieser Planung gibt es keinen klaren Zeitraum zwischen den Planungsdaten. Zwischen der ersten und zweiten Datumsangabe besteht eine viertägige Spanne und zwischen der zweiten und dritten Datumsangabe besteht eine siebentägige Spanne. Diese verschiedenen Spannen sind die dynamischen Perioden.
 2. Erstellen Sie Auftragspositionen wie folgt:
+
    | Datum                             | Auftragsmenge |
    |----------------------------------|----------------------|
    | 15. Dezember Im Jahr zuvor | 500                  |

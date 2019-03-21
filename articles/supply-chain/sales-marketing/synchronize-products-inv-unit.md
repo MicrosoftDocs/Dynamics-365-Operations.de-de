@@ -3,7 +3,7 @@ title: Produkte mit Lagereinheit aus Finance and Operations mit Field Service sy
 description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgabe, die verwendet werden, um die Produkte mit Bestandseinheit aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5d3767c1a499f3d888d8fc2ce06c2837442e39f0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 8e421be79fde6103be6344040b6ae6cda0626c5a
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "359243"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836301"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-finance-and-operations-to-field-service"></a>Produkte mit Lagereinheit aus Finance and Operations mit Field Service synchronisieren
 
@@ -34,9 +34,11 @@ Dieses Thema beschreibt die Vorlagen und die zugrunde liegende Aufgabe, die verw
 
 [![Synchronisierung von Geschäftsprozessen zwischen Finance and Operations und Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
-Die verwendete Vorlage **Field Service-Produkte (Finance and Operations nach Field Service)** basiert auf der Vorlage **Produkte (Finance and Operations nach Sales) – Direkt** aus Interessenten zu Bargeld. Weitere Informationen finden Sie unter [Produkte (Finance and Operations nach Sales) – Direkt](products-template-mapping-direct.md).
+Die verwendete Vorlage **Field Service Produkte mit Bestandeinheit (Finance and Operations mit Field Service)** basiert auf der Vorlage **Field Service-Produkte (Finance and Operations zu Field Service)**. Weitere Informationen finden Sie unter [Field Service-Produkte (Finance and Operations zu Field Service)](field-service-product.md).
 
-In diesem Thema wird nur der Unterschied zwischen den Vorlagen **Field Service-Produkte (Finance and Operations nach Field Service)** und **Produkte (Finance and Operations nach Sales) – Direkt** beschrieben.
+In diesem Thema werden nur die Unterschiede zwischen den zwei Vorlagen beschrieben: 
+- **Field Service Produkte mit Lagereinheit (Finance and Operations zu Sales)**
+- **Field Service-Produkte (Finance and Operations zu Field Service)** 
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 

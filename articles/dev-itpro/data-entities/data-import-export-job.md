@@ -3,7 +3,7 @@ title: Einzelvorgänge für Datenimport und -export
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 08/28/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
+ms.sourcegitcommit: 7b438a94b59ab52518e03b22217cb48e41fbeb71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "360209"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "834659"
 ---
 # <a name="data-import-and-export-jobs"></a>Einzelvorgänge für Datenimport und -export
 
@@ -128,6 +128,9 @@ Einer Stelle kann durch Rollen, Benutzer und juristischen Person gleichzeitig ge
 
 ## <a name="run-the-import-or-export-job"></a>Führt den Import- oder Exportvorgang aus
 Sie können einen Einzelvorgang gleichzeitig aktivieren, indem Sie **Importieren** **Exportieren** auswählen, nachdem Sie den Einzelvorgang definiert haben. Um einen sich wiederholenden Auftrag einzurichten, wählen Sie **Erstellen eines sich wiederholenden Dateneneinzelvorgangs** aus.
+
+[!NOTE]
+Ein Import- oder Exportvorgang kann asynchron ausgeführt werden, indem Sie die Schalfläche **Importieren** oder **Exportieren** auswählen. Bei einer asynchronen Ausfüghrung wird das asynchrone Framework in Finance and Operations verwendet, das sich vom Stapelverarbeitungsframework unterscheidet. Wie auch das Stapelverarbeitungsframework kann das asynchrone Framework allerdings auch eine Drosselung erfahren, wodurch der Einzelvorgang nicht sofort ausgeführt wird. Die Einzelvorgänge können durch Auswahl von **Jetzt importieren** oder **Jetzt exportieren** synchron ausgeführt werden. Dadurch wird der Einzelvorgang sofort gestartet. Das ist hilfreich, wenn die asynchrone oder Stapelverarbeitung aufgrund von Drosselung nicht sartet. Die Einzelvorgänge können auch in einem Stapel ausgeführt werden, indem Sie die Option **In Stapel ausführen** auswählen. Stapelressoucen sind von Drosselung betroffen. Der Einzelvorgang zur Stapelverarbeitung startet also möglicherweise nicht sofort. Die asynchrone Option ist hilfreich, um die Stapelzeitplaung zu verstehen, wenn Benutzer direkt mit der Benutzeroberfläche interagieren und es sich nicht um Power-Nutzer handelt. Die Verwendung einer Charge ist eine Option, wenn große Mengen exportiert oder importiert werden müssen. Chargensaufträge können geplant wurden, sodass sie in einer bestimmte Chargengruppe ausgeführt werden. Dies bietet von einer Lastenausgleichsperspektive aus betrachtet eine bessere Steuerung. Wenn asynchrone und Chargen beide augrund von hoher Ressourcennutzung auf dem System gedrosselt werden, kann das Problem durch Verwendung der synchronen Version von Import/Export sofort umgangen werden. Die synchrone Option beginnt sofort und sperrt die Benutzeroberfläche, da sie synchron ausgeführt wird. Das Browserfenster muss offen bleiben, wenn die synchone Operation ausgeführt wird.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Überprüfen Sie, ob der Einzelvorgang wie erwartet ausgeführt wurde
 Die Einzelvorgangshistorie ist zur Problembehebung und Untersuchung auf Import- und Exporteinzelvorgängen verfügbar. Historische Einzelvorgangsausführungen werden nach Perioden sortiert.

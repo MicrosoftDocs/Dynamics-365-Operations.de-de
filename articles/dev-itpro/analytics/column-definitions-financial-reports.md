@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e92d50828f6511329401b43154895da1244788cd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
+ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356345"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "832147"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
@@ -62,7 +62,7 @@ Eine Spaltendefinition kann zwei bis 255 Spalten enthalten.
 Eine Spaltendefinition enthält die folgenden Informationen:
 
 - Eine Spalte der Zeilendefinitionsbeschreibungen
-- Betragsspalten, die Daten aus den Finanzdaten, einem Microsoft Excel-Arbeitsblatt oder Berechnungen anhand anderer Daten in der Spaltendefinition enthalten
+- Betragsspalten, die Daten aus den Finanzdaten oder Berechnungen anhand anderer Daten in der Spaltendefinition enthalten
 - Formatierungsspalten
 - Attributspalten
 
@@ -170,7 +170,7 @@ Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften 
 
 ### <a name="create-an-automatically-generated-header"></a>Erstellen einer automatisch generierten Überschrift
 
-Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD** und **WKS**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in gemischter Groß- und Kleinschreibung angezeigt. In einem Standardkalenderjahr z. B., löst **@CalMonthLong** Monat zu **7** zu **Juli** auf. Wenn Sie möchten, dass der Monat in Großbuchstaben angezeigt wird (z. B. **JULI**), geben Sie den AutoText-Code im Feld **Spaltenüberschriftstext** in Großbuchstaben ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes mit Text kombinieren. Geben Sie beispielsweise den folgenden Überschrifttext ein: **Periode @ FiscalPeriod-@FiscalYear von @StartDate zu @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
+Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in gemischter Groß- und Kleinschreibung angezeigt. In einem Standardkalenderjahr z. B., löst **@CalMonthLong** Monat zu **7** zu **Juli** auf. Wenn Sie möchten, dass der Monat in Großbuchstaben angezeigt wird (z. B. **JULI**), geben Sie den AutoText-Code im Feld **Spaltenüberschriftstext** in Großbuchstaben ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes mit Text kombinieren. Geben Sie beispielsweise den folgenden Überschrifttext ein: **Periode @ FiscalPeriod-@FiscalYear von @StartDate zu @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
 
 > [!NOTE]
 > Das Format einiger Teile des Texts, wie das lange Datum, hängen von Ihren regionalen Einstellungen auf dem Finance and Operations-Server ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren AutoText-Optionen für Spaltenüberschriften aufgelistet.
@@ -291,7 +291,7 @@ Die Zelle **Zusätzliche Leerzeichen vor Spalte** gibt die Breite des Trennzeich
 1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
 2. Geben Sie in Zelle **Zusätzliche Leerzeichen vor Spalte** die Anzahl der Stellen an, die zwischen Spalten eingefügt werden soll.
 
-### <a name="specify-a-currency"></a>Angeben einer Währung
+### <a name="specify-a-format-currency-override"></a>Angeben einer Währungsaußerkraftsetzung
 
 Die Zelle **Format/Währungsaußerkraftsetzung** gibt die Formatierung der Dezimalstelle, der Währung und der Prozentsatzbeträge in der Spalte an. Diese Formatierung setzt alle Formatierungen außer Kraft, die in der Berichtsdefinition oder im System angegeben sind.
 
@@ -361,7 +361,7 @@ Der Typ der Informationen, die jede Spalte in einem Bericht umfasst, wird vom We
     <tbody>
     <tr>
     <td>FD</td>
-    <td>Zeigen Sie Finanzdaten oder Daten aus einem Excel-Arbeitsblatt an, wenn Sie in der Zeilendefinition eine Spalte <strong>Verknüpfen mit Finanzdimensionen</strong> oder <strong>Verknüpfen mit Arbeitsblatt</strong> verwenden. Wenn Sie den Spaltentyp <strong>FD</strong> auswählen, werden die Standardeinstellungen automatisch in den folgenden Zeilen festgelegt: <ul>
+    <td>Zeigen Sie Finanzdaten an, wenn Sie eine <strong>Link zu Finanzdimensionen</strong>-Spalte in der Zeilendefinition verwenden. Wenn Sie den Spaltentyp <strong>FD</strong> auswählen, werden die Standardeinstellungen automatisch in den folgenden Zeilen festgelegt: <ul>
     <li><strong>Buchcode/Attributkategorie:</strong> ISTWERT</li>
     <li><strong>Buchcode/Attributkategorie:</strong> ISTWERT</li>
     <li><strong>Geschäftsjahr:</strong> BASE</li>
@@ -394,14 +394,6 @@ Diese Standardeinstellungen können geändert werden.</td>
     <tr>
     <td>SEITE</td>
     <td>Fügen Sie einen vertikalen Seitenumbruch in den Bericht ein. Die Spalten rechts neben der <strong>SEITE</strong>-Spalte werden auf einer anderen Seite angezeigt.</td>
-    </tr>
-    <tr>
-    <td>AB</td>
-    <td>Zeigen Sie Daten an, die aus einem Excel-Arbeitsblatt abgerufen werden. Wenn Sie den Spaltentyp <strong>AB</strong> auswählen, werden die Standardeinstellungen automatisch in den folgenden Zeilen festgelegt: <ul>
-    <li><strong>Geschäftsjahr:</strong> PERIODIC</li>
-    <li><strong>Zeitraum:</strong> BASE</li>
-    </ul>
-Diese Standardeinstellungen können geändert werden.</td>
     </tr>
     <tr>
     <td>ATTR</td>
@@ -518,13 +510,13 @@ Sie können eine beliebige Kombination von alphanumerischen Zeichen für genaue 
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatieren eines Berichts für mehrere Währungen in einer Spaltendefinition
 
-In einem Bericht mit mehreren Währungen können Beträge in der natürlichen Währung (lokal), in der funktionalen Währung (Standard) oder in der Berichtswährung angezeigt werden. Die funktionale Währung eines Unternehmens wird im Microsoft Dynamics ERP-System definiert. Verwechseln Sie diese ERP-Einstellung nicht mit den Optionen für die regionale Einstellung des Betriebssystems, in denen Sie die Währungssymbole auswählen können, die standardmäßig in Berichten verwendet werden. Die folgenden währungsbezogenen Zellen sind in der Spaltendefinition verfügbar:
+In einem Bericht mit mehreren Währungen können Beträge in der Buchhaltungswährung des Sachkontos, den Berichten des Sachkontos, der ursprünglichen Buchungswährung oder der umgerechneten Berichtswährung angezeigt werden. Die Kontowährung eines Unternehmens wird in der Sachkontoeinrichtung definiert. Verwechseln Sie diese Einstellung nicht mit den Optionen für die regionale Einstellung des Betriebssystems, in denen Sie die Währungssymbole auswählen können, die standardmäßig in Berichten verwendet werden. Die folgenden währungsbezogenen Zellen sind in der Spaltendefinition verfügbar:
 
-- **Währungs-Anzeige** – Geben Sie die Art der Währung an (natürliche oder funktionale Währung oder Berichtswährung), in dem die Buchungen angezeigt werden. Diese Funktion wird manchmal auch als Währungsumrechnung bezeichnet. Hierbei handelt es sich um die Möglichkeit, Berichte für Hauptbuchbeträge in einer Währung zu erstellen, bei der es sich möglicherweise nicht um die funktionale Währung des Unternehmens und auch nicht um die Währung handelt, in der die Transaktion eingegeben wurde.
+- **Währungs-Anzeige** – Geben Sie die Art der Währung an (Konto-, Berichts-, Transaktions- oder umgerechnete Berichtswährung), in der die Buchungen angezeigt werden. Die Umrechnung in eine Berichtswährungsfunktion wird gelegentlich als Währungsumrechnung bezeichnet. Hierbei handelt es sich um die Möglichkeit, Berichte für Hauptbuchbeträge in einer Währung zu erstellen, bei der es sich möglicherweise nicht um die funktionale oder Berichtswährung des Unternehmens und auch nicht um die Währung handelt, in der die Transaktion eingegeben wurde.
 - **Währungsfilter** - Geben Sie einen Währungsfilter an. Nur Transaktionen, die in der ausgewählten Währung eingegeben werden, werden im Bericht angezeigt.
 
-> [!NOTE]
-> Um Berichte zu erstellen, die mehrere Währungen verwenden, müssen Sie das Kontrollkästchen **Alle Berichtswährungen einschließen** auf der Registerkarte **Bericht** der Berichtsdefinition auswählen. Gehen Sie folgendermaßen vor, um die funktionale Währung eines Unternehmens festzulegen.
+> 
+Gehen Sie folgendermaßen vor, um die Buchungswährung eines Unternehmens festzulegen.
 
 1. Klicken Sie im Berichts-Designer im Menü **Unternehmen** auf **Unternehmen**.
 2. Wählen Sie im Dialogfeld **Unternehmen** ein Unternehmen aus, und klicken Sie anschließend auf **Anzeigen**.
@@ -533,20 +525,18 @@ In einem Bericht mit mehreren Währungen können Beträge in der natürlichen W�
 #### <a name="specify-the-currency-on-a-multiple-currency-report"></a>Angeben der Währung in einem Bericht mit mehreren Währungen
 
 1. Öffnen Sie die zu ändernde Spaltendefinition im Berichts-Designer.
-2. Doppelklicken Sie auf die Zelle **Wähungsanzeige** in der entsprechenden **FD**-Spalte, und wählen Sie dann die Option für das Anzeigen von Währungsinformationen aus: **Natürlich/ursprüngliche Währung**, **Funktionale Währung aus Unternehmensinformationen** oder die Berichtswährung.
+2. Doppelklicken Sie auf die Zelle **Wähungsanzeige** in der entsprechenden **FD**-Spalte, und wählen Sie dann die Option für das Anzeigen von Währungsinformationen aus: **Sachkontowährung**, **Sachkontobericht**, Transaktionswährung oder wählen Sie die Umrechnung in eine andere Berichtswährung aus.
 3. Doppelklicken Sie auf die Zelle **Währungsfilter** in der entsprechenden **FD**-Spalte, und wählen Sie dann den entsprechenden Währungscode in der Liste aus. Es werden nur Transaktionen im Bericht angezeigt, die in dieser Währung eingegeben werden.
 
-> [!NOTE]
-> Die Optionen, die hier beschriebenen werden, hängen vom ERP-System ab. Weitere Informationen finden Sie in der Dokumentation des [Microsoft ERP-Systems](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Beispiel für Währungsanzeige und Währungsfilterzellen
 
 Phyllis hat die folgende Auswahl für die Währung in der Spaltendefinition getroffen:
 
 - **Währungsfilter:** Yen
-- **Währungsanzeige:**-Funktional (US-Dollar)
+- **Währungsanzeige:** Buchungswährung des Sachkontos (US-Dollar)
 
-Basierend auf dem von Phyllis ausgewählten Währungsfilter enthält der Bericht nur Transaktionen, die in japanischen Yen (JPY) eingegeben wurden. Basierend auf ihrer ausgewählten Währungsanzeige zeigt der Bericht diese Transaktionen in der funktionalen Währung US-Dollar (USD) an.
+Basierend auf dem von Phyllis ausgewählten Währungsfilter enthält der Bericht nur Transaktionen, die in japanischen Yen (JPY) eingegeben wurden. Basierend auf ihrer ausgewählten Währungsanzeige zeigt der Bericht diese Transaktionen in der Buchungswährung US-Dollar (USD) an.
 
 #### <a name="currency-filter-and-currency-display-combinations"></a>Kombinationen aus Währungsfilter und Währungsanzeige
 
@@ -555,10 +545,10 @@ In der folgenden Tabelle werden die Berichtsergebnisse aufgelistet, die aufgrund
 
 | Zelle Währungsanzeige                        | Zelle Währungsfilter | Berichtsergebnis |
 |----------------------------------------------|----------------------|---------------|
-| Natürliche/ursprüngliche Währung                 | **YEN**              | **Y6.000** - Das Ergebnis zeigt nur Buchungen an, die in JPY eingegeben wurden. |
-| Funktionale Währung aus Unternehmensinformationen | **YEN**              |**$60** - Das Ergebnis zeigt nur die Transaktionen, die in JPY eingegeben wurden zeigt diese Transaktionen in USD an.<blockquote>[!NOTE] Der Wechselkurs ist ungefähr 100 JPY pro USD.</blockquote> |
-| Funktionale Währung aus Unternehmensinformationen | Leer                | **$2.310**  - Das Ergebnis zeigt alle Daten in der funktionalen Währung an, die unter Unternehmensdaten angegeben ist.<blockquote>[!NOTE] Dieser Betrag ist die Summe aller Buchungen in der funktionalen Währung.</blockquote> |
-| Natürliche/ursprüngliche Währung                 | Leer                | **$2.250** - Das Ergebnis zeigt alle Beträge in der Währung an, in der die Transaktion ausgeführt wurde. |
+| Buchungswährung                 | **YEN**              | **Y6.000** - Das Ergebnis zeigt nur Buchungen an, die in JPY eingegeben wurden. |
+| Buchhaltungswährung des Sachkontos | **YEN**              |**$60** - Das Ergebnis zeigt nur die Transaktionen, die in JPY eingegeben wurden zeigt diese Transaktionen in USD an.<blockquote>[!NOTE] Der Wechselkurs ist ungefähr 100 JPY pro USD.</blockquote> |
+| Buchhaltungswährung des Sachkontos | Leer                | **$2.310** - Das Ergebnis zeigt alle Daten in der Buchungswährung an, die im Sachkonto angegeben sind.<blockquote>[!NOTE] Dieser Betrag ist die Summe aller Buchungen in der Buchungswährung.</blockquote> |
+| Buchungswährung                 | Leer                | **$2.250** - Das Ergebnis zeigt alle Beträge in der Währung an, in der die Transaktion ausgeführt wurde. Das bedeutet, dass die Summe errechnet sich aus den Beträgen verschiedener Währungen. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Berechnungsspalte in einer Spaltendefinition
 
