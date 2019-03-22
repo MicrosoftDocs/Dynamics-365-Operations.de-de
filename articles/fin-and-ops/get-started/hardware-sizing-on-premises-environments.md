@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: d277bc4c4c815317bade8a04b9111232fb707086
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
+ms.sourcegitcommit: 21bbdac152e0cbb0576df9d5e6e90283175834ef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "340728"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "768413"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
@@ -86,7 +86,7 @@ Um die Größenanforderungen zu verstehen, müssen Sie das Spitzenvolumen der Tr
     - Verwendung zusätzlicher Funktionalität, wie beispielsweise Datenbankprotokolle und Alarme. Extrem viele Datenbankanmeldungen reduzieren den Durchsatz pro Stunde pro Kern weiter unter 3K-Leitungen.
     - Komplexität der Datenzusammensetzung – Der Durchsatz ändert sich abhängig davon, ob eine einfache Kontentabelle verwendet wird, oder eine sehr detaillierte Kontentabelle (als Beispiel).
     - Transaktionscharakterisierung.
-    - 2 GB bis 4 GB Speicher für jeden Kern.
+    - 2 GB bis 16 GB Speicher für jeden Kern.
     - Zusatzdatenbanken auf dem DB-Server, wie beispielsweise Management Reporter- und SSRS-Datenbanken.
     - Temporäre DB = 15 % der DB-Größe, mit so vielen Dateien wie physischen Prozessoren.
     - SAN-Größe und Durchsatz basierend auf dem gesamten parallelen Transaktionsvolumen/der gesamten parallel stattfindenden Nutzung.

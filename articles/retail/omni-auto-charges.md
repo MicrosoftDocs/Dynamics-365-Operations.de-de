@@ -3,7 +3,7 @@ title: Erweiterte automatische Omni-Channel-Belastungen
 description: In diesem Thema wird die Fähigkeit für das Verwalten zusätzlicher Auftragszuschläge für Retail Channel-Aufträge mithilfe der erweiterten Auto-Belastungen-Funktionen beschrieben.
 author: hhaines
 manager: annbe
-ms.date: 01/22/2019
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a980ae9571fb47522d3966dc172b2343641b827e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b63a1bb8791ab3f0c71a2fd03677e7d0bf71e62
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345558"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789770"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erweiterten Auto-Belastungen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
@@ -49,7 +48,7 @@ Auf der Seite **Retail \> Zentralverwaltungseinrichtung \>-Parameter \> Retail-P
 
 ![Erweiterte Auto-Belastungen-Parameter](media/advancedchargesparameter.png)
 
-Wenn erweiterte Auto-Belastungen aktiviert sind, werden die Benutzer beim Erstellen eines Alles versenden- oder Auswahl versenden-Kundenauftrags länger aufgefordert, manuell eine Versandgebühr am POS-Terminal einzugeben. POS-Auftragszuschläge werden systematisch berechnet und der POS-Transaktion hinzugefügt (falls eine entsprechende Auto-Belastungstabelle gefunden wird, die dem Kriterium der zu erstellenden Bestellung entspricht). Benutzer können auch Kopf- oder Positionsebenengebühren durch neu hinzugefügte POS-Vorgänge, die den Layouts der POS-Bildschirme hinzugefügt werden können, manuell hinzufügen oder pflegen.  
+Wenn erweiterte Auto-Belastungen aktiviert sind, werden die Benutzer beim Erstellen eines Alles versenden- oder Auswahl versenden-Kundenauftrags nicht mehr aufgefordert, manuell eine Versandgebühr am POS-Terminal einzugeben. POS-Auftragszuschläge werden systematisch berechnet und der POS-Transaktion hinzugefügt (falls eine entsprechende Auto-Belastungstabelle gefunden wird, die dem Kriterium der zu erstellenden Bestellung entspricht). Benutzer können auch Kopf- oder Positionsebenengebühren durch neu hinzugefügte POS-Vorgänge, die den Layouts der POS-Bildschirme hinzugefügt werden können, manuell hinzufügen oder pflegen.  
 
 Wenn erweiterte Auto-Belastungen aktiviert sind, werden die vorhandenen **Retail-Parameter** für **Code für Versandgebühren** und **Rückerstattung der Versandgebühren** nicht mehr verwendet. Diese Parameter sind nur zutreffend, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** auf **Nein** festgelegt ist.
 
@@ -67,6 +66,8 @@ Die neuen Vorgänge lauten wie folgt.
 - **143 - Belastungen neu berechnen** - Verwenden Sie diesen Vorgang, um eine vollständige Neuberechnung der Belastungen für die Verkaufstransaktion durchzuführen. Alle zuvor vom Benutzer überschriebenen Auto-Belastungen werden basierend auf der aktuellen Warenkorbkonfiguration neu berechnet.  
 
 Wie bei allen POS-Vorgängen können Sicherheitskonfigurationen vorgenommen werden, die eine Genehmigung des Managers erfordern, um den Vorgang auszuführen.
+
+Beachten Sie unbedingt, dass die oben aufgeführten POS-Vorgänge auch dann dem POS-Layout hinzugefügt werden können, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** deaktiviert ist. In diesem Szenario erhalten Organisationen die zusätzliche Vorteile, dass sie manuell hinzugefügte Belastungen anzeigen und mithilfe der Operation **Belastungen verwalten** bearbeiten können. Benutzer können auch die Operationen **Kopfzuschläge hinzufügen** und **Belastungen pro Position hinzufügen** für POS-Transaktionen auch dann verwenden, wenn **Erweiterte Auto-Belstungen verwenden** deaktiviert ist. Die Operation **Belastungen neu berechnen** bietet weniger Funktionen, wenn sie bei deaktiviertem **Erweiterte Auto-Belastungen verwenden** verwendet wird. In diesem Szeanrio würde nichts neu berechnet und alle manuell der Transaktion hinzugefügten Belastungen würden einfach auf 0,00 US-Dollar zurückgesetzt.
 
 ## <a name="use-case-examples"></a>Anwendungsbeispiele
 In diesem Abschnitt werden Anwendungsbeispiele vorgestellt, die Ihnen helfen sollen, die Konfiguration und Verwendung von Auto-Belastungen und sonstigen Gebühren im Rahmen von Retail Channel-Bestellungen zu verstehen. Diese Beispiele veranschaulichen das Verhalten der Anwendung, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** aktiviert wurde.
@@ -207,3 +208,7 @@ Es wird empfohlen, dass das Unternehmen auch Freitextfelder in die Fußzeile des
 ### <a name="preventing-charges-from-being-calculated-until-the-pos-order-is-completed"></a>Verhindern, dass Belastungen berechnet werden, bis der POS-Auftrag abgeschlossen ist.
 
 Einige Unternehmen ziehen es möglicherweise vor, zu warten, bis der Benutzer alle Verkaufspositionen zur POS-Transaktion hinzugefügt hat, bevor sie Belastungen berechnen. Um zu verhindern, dass Belastungen berechnet werden, wenn Artikel zur POS-Transaktion hinzugefügt werden, aktivieren Sie den Parameter **Manuelle Belastungsberechnung** im vom Shop verwendeten **Funktionsprofil**. Wenn Sie diesen Parameter aktivieren, muss der POS-Benutzer den Vorgang **Summen berechnen** verwenden, wenn er die Produkte zur POS-Transaktion hinzugefügt hat. Der Vorgang **Summen berechnen** löst dann die Berechnung der Auto-Belastungen für den Auftragskopf oder die entsprechenden Positionen aus.
+
+### <a name="charges-override-reports"></a>Belastungen setzen Berichte außer Kraft
+
+Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transaktion manuell eine Belastung hnzufügen, sind diese Daten zur Überprüfung im Bericht **Historie für Belastungsüberschreibung** verfügbar. Auf den Bericht kann über **Retail \> Abfragen und Berichte \> Historie für Belastungsüberschreibung** zugegriffen werden.  Beachten Sie unbedingt, dass die für diesen Bericht erforderlichen Daten durch die "P"-Verteilungs-Zeitplaneinzelvorgänge aus der Kanaldatenbank in die Hauptniederlassung importiert werden. Daher sind Informationen zu Überschreibungen, die soeben im POS ausgeführt wurden, möglicherweise nicht sofort in diesem Bericht verfügbar, bis dieser Einzelvorgang die Transaktionsdaten des Stores zur Hauptniederlassung hochgeladen hat. 

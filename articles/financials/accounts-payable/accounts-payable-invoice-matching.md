@@ -3,7 +3,7 @@ title: Kreditorenrechnungsabgleich
 description: Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11cc2d4ddbd30ff4d010f6b34119a7ad96d5aecb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6d1582d268be759cd1f1686c9e80f6cf7eeb2da8
+ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310276"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "389932"
 ---
 # <a name="accounts-payable-invoice-matching"></a>Kreditorenrechnungsabgleich
 
@@ -49,7 +49,7 @@ Die folgenden Arten von Kreditorenrechnungsabgleich können verwendet werden:
 
 Beim zweiseitigen und beim dreiseitigen Abgleich werden Preisinformationen stets nach dem Einheitspreis abgeglichen. Sie können diese Abgleichsrichtlinien für einen Abgleich der Preisinformationen nach dem Preissumme konfigurieren.
 -   Nettostückpreis-Abgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettostückpreises jeder Rechnungsposition mit dem entsprechenden Nettostückpreis der Bestellung abgeglichen. Der Nettostückpreis ergibt sich aus der folgenden Formel: Nettobetrag der Position / die Menge der Position.
--   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: (Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte.
+-   Preissummenabgleich – Die Preisinformationen beim zweiseitigen oder dreiseitigen Abgleich werden durch einen Vergleich des Nettobetrags (Preissumme) jeder Rechnungsposition mit dem entsprechenden Nettobetrag der Bestellung abgeglichen. Der Nettobetrag ergibt sich aus der folgenden Formel: *(Einheitspreis \* Positionsmenge) + Positionszuschläge - Positionsrabatte*. Bei einem Abgleich der Preissummen nach Prozentsatz vergleicht das System Werte mithilfe der Transaktionswährung. Bei einem Abgleich der Preissummen nach Menge vergleicht das System die Werte mithilfe der Buchungswährung.
 
 Rechnungsabgleichsberechnungen werden in der Regel ausgeführt, wenn Kreditorenrechnungen auf der Seite "Kreditorenrechnung" bearbeitet werden. Alternativ kann der Rechnungsabgleich bei Bedarf ausgeführt werden, falls erforderlich. Der Rechnungsabgleich bei Bedarf wird für die juristischen Person über "Rechnungskopfstatus automatisch aktualisieren" auf der Seite "Kreditorenkontenparameter" in der Registerkarte "Rechnungsprüfung" durchgeführt. Der Rechnungsabgleich kann auch im Rahmen eines Rechnungsprüfungsprozesses erfolgen. Sie können die Ergebnisse eines Rechnungsabgleichs auf der Seite "Kreditorenrechnung" und den zugehörigen Rechnungsabgleichseiten anzeigen.
 
@@ -131,7 +131,7 @@ Die Bestellung enthält die folgende Position:
 |-------------|----------|------------|------------|
 | USB-Laufwerk   | 1.000    | 10,00      | 10.000,00  |
 
-Drei Rechnungen werden wie in der folgenden Tabelle dargestellt eingegeben. Rechnung 3 stellt eine Abweichung beim Rechnungsabgleich dar, da die Abweichung von 1.800,00 EUR den Toleranzbetrag der Einkaufspreissumme von 500,00 EUR übersteigt. Beim Preissummenabgleich schließt der Rechnungsnettobetrag alle bereits gebuchten Rechnungen zusätzlich zur aktuell bearbeiteten Rechnung ein.
+Drei Rechnungen werden wie in der folgenden Tabelle dargestellt eingegeben. Rechnung 3 stellt eine Abweichung beim Rechnungsabgleich dar, da die Abweichung von 1.880,00 EUR den Toleranzbetrag der Einkaufspreissumme von 500,00 EUR übersteigt. Beim Preissummenabgleich schließt der Rechnungsnettobetrag alle bereits gebuchten Rechnungen zusätzlich zur aktuell bearbeiteten Rechnung ein.
 
 | Artikelnummer          | Menge | Preis je Einheit | Nettobetrag | Preisabgleich | Preissummenabgleich |
 |----------------------|----------|------------|------------|-------------|-------------------|

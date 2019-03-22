@@ -1,98 +1,114 @@
 ---
-title: Karrierestandortsfunktionen in Attract
-description: "Dieser Artikel gibt eine Übersicht über die Funktionen der Karriereseite für Kandidaten in Microsoft Dynamics 365 for Talent - Attract. Es wird auch beschrieben, wie diese Funktionen eingerichtet werden."
-author: josaw
+title: Funktionen der Website mit Stellenangeboten in Attract
+description: Dieses Thema bietet einen Überblick über die Funktionen der Website mit Stellenangeboten für Kandidaten in Attract.
+author: josaw1
 manager: AnnBe
-ms.date: 10/18/2018
+ms.date: 02/12/2019
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: 
+ms.technology: ''
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Talent
-ms.custom: 
-ms.assetid: 
+ms.search.scope: Talent, Core
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
-ms.search.validFrom: 2018-10-18
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: josaw
+ms.search.validFrom: 2019-02-12
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
+ms.openlocfilehash: 087ab4034a1e601e7f3514c77d56ef54b0c5c52d
+ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
 ms.translationtype: HT
-ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
-ms.openlocfilehash: 452e3e92ea32ab5f1e3720ab81ff2f7ea18b2a06
-ms.contentlocale: de-de
-ms.lasthandoff: 10/22/2018
-
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "389964"
 ---
-# <a name="career-site-functionality-in-attract"></a>Karrierestandortsfunktionen in Attract
+# <a name="career-site-functionality-in-attract"></a>Funktionen der Website mit Stellenangeboten in Attract
 
-[!include [banner](includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
-Dieser Artikel gibt eine Übersicht über die Funktionen der Karriereseite für Kandidaten in Microsoft Dynamics 365 for Talent: Attract. Es wird auch beschrieben, wie diese Funktionen eingerichtet werden.
+Dieses Thema bietet einen Überblick über die Funktionen der Website mit Stellenangeboten für Kandidaten in Microsoft Dynamics 365 for Talent: Attract. Es wird auch beschrieben, wie diese Funktionen eingerichtet werden.
 
-## <a name="overview"></a>Übersicht
+Attract bietet eine Website mit Stellenangeboten für jede Umgebung in einem Mandanten. Wenn beispielsweise eine Organisation über eine Entwicklungsumgebung und einer Testumgebung verfügt, wird eine Website mit Stellenangeboten für die Entwicklungsumgebung und eine weitere für die der Testumgebung bereitgestellt. Jede Website mit Stellenangeboten ist vollständig isoliert und verfügt über einen eigenen Authentifizierungsmechanismus. Stellen- und Kandidatenprofile werden zwischen Websites mit Stellenangeboten nicht freigegeben.
 
-Attract eine Karriereseite für jede Umgebung in einem Mandanten bietet. Wenn beispielsweise eine Organisation über eine Entwicklungsumgebung und einer Testumgebung verfügt, wird eine Karriereseite für die Entwicklungsumgebung und eine weitere für die der Testumgebung bereitgestellt. Jede Karriereseite ist **vollständig isoliert** und verfügt über einen eigenen Authentifizierungsmechanismus. Stellen- und Kandidatenprofile werden zwischen Karriereseiten nicht freigegeben.
-
-Standardmäßig ist die Karriereseite öffentlich. Daher können Kandidaten alle Stellen anzeigen, die als extern markiert werden, ohne sich anmelden zu müssen. Allerdings ist für alle weiteren Aktivitäten erforderlich, dass die Kandidaten sich anmelden.
+Standardmäßig ist die Website mit Stellenangeboten öffentlich. Daher können Kandidaten alle Stellen anzeigen, die als extern markiert werden, ohne sich anmelden zu müssen. Allerdings ist für alle weiteren Aktivitäten erforderlich, dass die Kandidaten sich anmelden.
 
 ## <a name="career-site-management"></a>Verwaltung der Website mit Stellenangeboten
 
-Die folgenden Elemente einer Karriereseite werden durch Einstellungen gesteuert:
+Um die Werte für die folgenden Elemente festzulegen, melden Sie sich als Administrator in Attract an, wählen Sie im Menü **Einstellungen** (Zahnradsymbol) die Option **Administratorcenter** und anschließend die Registerkarte **Unternehmensdaten** aus.
 
-- **Organisationsname:** Der Organisationsname wird auf der Navigationsleiste oben auf der Karriereseite angezeigt. Wenn sie den Organisationsnamen auswählen, gelangen Kandidaten auf eine Seite, auf der alle offenen Stellen aufgeführt werden.
-- **Organisationslogo:** Ein Bild des Organisationslogos wird oben links der Karriereseite angezeigt. Wenn sie das Logobild auswählen, gelangen Kandidaten auf eine Seite, auf der alle offenen Stellen aufgeführt werden.
+-   **Organisationsname** - Der Organisationsname wird auf der Navigationsleiste oben auf der Website mit Stellenangeboten angezeigt. Wenn sie den Organisationsnamen auswählen, gelangen Kandidaten auf eine Seite, auf der alle offenen Stellen aufgeführt werden.
 
-Um die Werte für den Organisationsnamen und das Logo festzulegen, melden Sie sich als Administrator in Attract an, wählen Sie im Menü **Einstellungen** (Zahnradsymbol) die Option **Administratorcenter** und anschließend die Registerkarte **Unternehmensdaten** aus.
+-   **Organisationslogo** - Ein Bild des Organisationslogos wird oben links der Website mit Stellenangeboten angezeigt. Wenn sie das Logobild auswählen, gelangen Kandidaten auf eine Seite, auf der alle offenen Stellen aufgeführt werden.
 
-> [!NOTE]
-> Das Logobild, das auf der Karriereseite angezeigt wird, weist eine feste Höhe von 20 Pixeln (px) auf. Das Bild, das Sie im Administratorcenter hinzufügen, wird passend skaliert. Daher kann sich die Breite abhängig vom Bild ändern.
+    >   [!NOTE] 
+    >   Das Logobild, das auf der Website mit Stellenangeboten angezeigt wird, weist eine feste Höhe von 20 Pixeln (px) auf. Das Bild, das Sie im Administratorcenter hinzufügen, wird passend skaliert. Daher kann sich die Breite abhängig vom Bild ändern.
+ 
+Um die Werte für die folgenden Elemente festzulegen, melden Sie sich als Administrator in Attract an, wählen Sie im Menü **Einstellungen** die Option **Administratorcenter** und anschließend die Registerkarte **Verwaltung der Website mit Stellenangeboten** aus.
 
-## <a name="career-site-url"></a>URL der Karriereseite
+-   **Suchmaschinen-Optimierung** - Wenn die Option aktiviert ist, können alle auf der Attract-Website mit Stellenangeboten veröffentlichten Stellen über öffentliche Suchmaschinen wie Bing und Google gesucht werden.
 
-Wenn Sie zum ersten Mal [eine externe Stelle veröffentlichen](./Creating-jobs-Attract.md#postings) können Sie den **Bewerben**-Link aus der Attract-Anwendung kopieren. Die URL für diesen Link hat folgendes Format: `https://jobs.talent.dynamics.com/jobs/<company_name>/<environment_number>/<job_number>/apply`
+    >   [!NOTE] 
+    >   Es kann zu einer Verzögerung zwischen der Aktivierung dieser Einstellung und dem Erscheinend der Suchergebnisse kommen, je nach der verwendeten Suchmaschine.
+         
+## <a name="career-site-urls"></a>ULRs der Website mit Stellenangeboten
 
-Die URL der Karriereseite ist eine Teilzeichenfolge der **Bewerben**-URL. Sie besteht aus allem bis zum Unternehmensnamen. Daher lautet die URL der Karriereseite der vorherigen **Bewerben**-URL`https://jobs.talent.dynamics.com/jobs/<company_name>/`
+Die folgende Liste enthält die häufig verwendetn URLs der Website mit Stellenangeboten und die Methode für den Zugriff.
+
+-   **URL der Startseite der Webiste mit Stellenangeboten** - Um die URL der Startseite der Website mit Stellenangeboten anzuzeigen, menden Sie sich in Attract als ein Administrator an, wählen Sie **Administratorcenter** im Menü **Einstellungen** aus und wählen Sie anschließend die Registerkarte **Verwaltung der Website mit Stellenangeboten** aus.
+
+-   **Bewerbungs-URL einzelner Stellenausschreibungen** - Wenn Sie zum ersten Mal eine [externe Stelle veröffentlichen](Creating-jobs-Attract.md#postings), können Sie den **Bewerben**-Link aus der Attract-Anwendung kopieren. Die URL für diesen Link hat folgendes Format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+
+-   **Bewerbungs-URL einzelner Stellenausschreibungen** - Die URL der Stellenausschreibung ist eine Teilzeichenfole der Bewerbungs-URL. Sie besteht aus allem bis zur Stellennummer. Daher lautet die URL der Stellenausschreibung der vorherige Bewerbungs-URL wie folgt: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 
 ## <a name="authentication-options"></a>Authentifizierungsoptionen
 
-Kandidaten haben folgende Anmeldungsoptionen bei einer Attract-Karriereseite:
+Kandidaten haben folgende Anmeldungsoptionen bei einer Attract-Website mit Stellenangeboten:
 
-- Persönliches Konto:
+-   Persönliches Konto:
 
-    - LinkedIn
-    - Microsoft
-    - Google
-    - Facebook
+    -   LinkedIn
 
-- Geschäfts- oder Schulkonto:
+    -   Microsoft
 
-    - Microsoft Azure Active Directory (Azure AD)
+    -   Google
+
+    -   Facebook
+
+-   Geschäfts- oder Schulkonto:
+
+    -   Microsoft Azure Active Directory (Azure AD)
 
 Azure AD-Anmeldung ist nur für interne Kandidaten vorgesehen. Daher funktioniert sie nur bei internen Kandidaten, die ihre Azure AD-Unternehmensanmeldeinformationen verwenden. Ein Kandidat z. B., der derzeit ein Mitarbeiter von Contoso Ltd ist, möchte sich auf eine Stelle im nicht zugehörigen Unternehmen, Alpine Ski House bewerben. In diesem Fall wird die Anmeldung fehlschlagen, wenn der Mitarbeiter versucht, seine Azure AD-Anmeldeinformationen von Contoso Ltd zu verwenden.
 
 ## <a name="create-and-maintain-a-profile"></a>Erstellen und Verwalten eines Profils
 
-Nachdem sich Kandidaten in der Karriereseite angemeldet haben, können sie in der Navigationsleiste oben auf der Seite **Eigenes Profil** auswählen, um ihr Profil zu erstellen und zu verwalten. Das Profil enthält persönliche Informationen, Informationen zur Berufserfahrung, Ausbildungsdetails, Dokumente, Links und Informationen zu Qualifikationen. Nachdem ein Profil erstellt wurde, kann es zur Bewerbung auf Stellen verwendet werden, an denen der Kandidat interessiert ist. Profile helfen Attract außerdem dabei, Kandidaten die richtigen Stellen zu empfehlen.
+Nachdem sich Kandidaten in der Website mit Stellenangeboten angemeldet haben, können sie in der Navigationsleiste oben auf der Seite **Eigenes Profil** auswählen, um ihr Profil zu erstellen und zu verwalten.
+Das Profil enthält persönliche Informationen, Informationen zur Berufserfahrung, Ausbildungsdetails, Dokumente, Links und Informationen zu Qualifikationen. Nachdem ein Profil erstellt wurde, kann es zur Bewerbung auf Stellen verwendet werden, an denen der Kandidat interessiert ist. Profile helfen Attract außerdem dabei, Kandidaten die richtigen Stellen zu empfehlen.
+
+>   [!NOTE]
+>   Wenn ein Kandidat eine E-Mail-Kennung verwendet, um sich über einen der Authentifizierungsanbieter in anzumelden, die oben aufgeführt sind, wird diese E-Mail-Kennung standardmäßig an die Kontakte-E-Mail-Jennung, weitergeleitet, die dem Profil zugeordnet ist. Allerdings kann die letztere jederzeit geändert werden und ist völlig von der vorherigen unabhängig. Attract wird immer die Kontakt-E-Mail-Kennung verwenden, um die jede E-Mail-Kommunikation Ihrem Profil zuzuordnen.
 
 ## <a name="find-the-right-job"></a>Die richtige Stelle finden
 
 Auf der Stellenlistenseite können Kandidaten nach einer bestimmten Stelle suchen, indem sie Suchbegriffe eingeben. Die Suchfunktion sucht nach den Suchbegriffen in Stellentiteln und Stellenbeschreibungen und zeigt relevante Stellen als Ergebnis an. Kandidaten können die Ergebnisse jederzeit basierend auf dem Arbeitsort oder der Stellenfunktion filtern.
 
-Kandidaten können auf der Karriereseite zudem einen Reihe empfohlener Stellen anzeigen. Die Stellen, die einem Kandidaten empfohlen werden, basierend auf den vergangenen Bewerbungen, dem Profil und den Lebensläufen des Kandidaten.
+Kandidaten können auf der Website mit Stellenangeboten zudem einen Reihe empfohlener Stellen anzeigen. Die Stellen, die einem Kandidaten empfohlen werden, basierend auf den vergangenen Bewerbungen, dem Profil und den Lebensläufen des Kandidaten.
 
-> [!NOTE]
-> Stellenempfehlungen werden nur angezeigt, wenn mindestens 10 Stellen auf der Karriereseite veröffentlicht wurden und der Kandidat sein Profil vollständig ausgefüllt hat.
+>   [!NOTE] 
+>   Stellenempfehlungen werden nur angezeigt, wenn mindestens 10 Stellen auf der Website mit Stellenangeboten veröffentlicht wurden und der Kandidat ein Profil vollständig ausgefüllt hat.
 
 ## <a name="apply-for-jobs"></a>Bewerben um Stellen
 
-Nachdem Kandidaten die richtige Stelle gefunden haben, können sie sich bewerben, indem sie die Schaltfläche **Bewerben** auf der Stellendetailseite verwenden. An diesem Punkt können Kandidaten entweder ein nagelneues Profil erstellen oder die vorhandenen Informationen in ihrem Profil überprüfen. Kandidaten können bei Bedarf auch einen Lebenslauf hochladen und die Stellenbewerbung dann senden.
+Nachdem Kandidaten die richtige Stelle gefunden haben, können sie sich bewerben, indem sie die Schaltfläche **Bewerben** auf der Seite **Stellendetails** verwenden. An diesem Punkt können Kandidaten entweder ein neues Profil erstellen oder die vorhandenen Informationen in ihrem Profil überprüfen.
+Kandidaten können bei Bedarf auch einen Lebenslauf hochladen und die Stellenbewerbung dann senden.
 
 ## <a name="check-application-status"></a>Den Bewerbungsstatus prüfen
 
-Nachdem sich Kandidaten auf mindestens eine Stelle beworben haben, können Sie in der Navigationsleiste oben auf der Seite **Bewerben** auswählen, um ihre offenen und geschlossenen Bewerbungen anzuzeigen. Wenn Kandidaten eine ihrer Bewerbungen öffnen, sehen sie die aktuelle Phase sowie alle ausstehenden Aktionselemente, die sie durchführen müssen. Wenn ein Kandidat beispielsweise potenzielle Datumsangaben für ein persönliches Bewerbungsgespräch bereitstellen muss, zeigt die Seite seine Optionen an.
+Nachdem sich Kandidaten auf mindestens eine Stelle beworben haben, können Sie in der Navigationsleiste oben auf der Seite **Bewerben** auswählen, um ihre offenen und geschlossenen Bewerbungen anzuzeigen. Wenn Kandidaten eine ihrer Bewerbungen öffnen, sehen sie die aktuelle Phase sowie alle ausstehenden Aktionselemente, die sie durchführen müssen. Wenn ein Kandidat beispielsweise potenzielle Datumsangaben für ein persönliches Bewerbungsgespräch bereitstellen muss, zeigt die Seite die verfügbaren Optionen an.
 
 ## <a name="internal-jobs"></a>Interne Stellen
 
-Derzeit werden Stellen, die als intern markiert und auf der Attract-Karriereseite veröffentlicht werden, dort nicht angezeigt. Sie sind nur direkt über die **Bewerben**-URL verfügbar, die aus der Attract-Anwendung kopiert werden kann.
-
+Derzeit werden Stellen, die als intern markiert und auf der Attract-Website mit Stellenangeboten veröffentlicht werden, dort nicht angezeigt. Sie sind nur direkt über die **Bewerben**-URL verfügbar, die aus der Attract-Anwendung kopiert werden kann.

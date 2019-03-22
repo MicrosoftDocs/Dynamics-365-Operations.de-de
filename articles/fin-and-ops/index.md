@@ -1,29 +1,25 @@
 ---
+# required metadata
 title: Microsoft Dynamics 365 for Finance and Operations-Dokumentation
 description: Dokumentation für Microsoft Dynamics 365 for Finance and Operations.
 author: margoc
 manager: AnnBe
-ms.date: 08/30/2018
+ms.date: 03/08/2019
 ms.topic: index-page
-ms.prod: ''
+ms.prod: null
 ms.service: dynamics-ax-applications
-ms.technology: ''
+ms.technology: null
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: 'Core, Operations'
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: '2016-02-28'
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b9921883d952ebc42eff9f678bb300d8304e379
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302313"
 ---
+
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations-Dokumentation
 
 [!include [banner](includes/banner.md)]
@@ -44,16 +40,30 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Microsoft
 <h3><a href="get-started/before-you-buy.md">Vor dem Einkauf</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Für ein Vorschauabonnement anmelden</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Eine Bereitstellungsoption wählen</a></p>
- <p><a href="get-started/purchase-on-premises.md">Finance and Operations (lokal) kaufen</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Finance and Operations (on-premises) kaufen</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementierungslebenszyklus</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Onboarding eines Projekts</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten der Liveschaltung</a></p>
 
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Dienstupdates für eine Version</a></h3>
+<p><a href="get-started/one-version.md">FAQ zu Dienstupdates für eine Version</a></p>
+<p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software-Lebenszyklusrichtlinie: Cloud</a></p>
+<p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software-Lebenszyklusrichtlinie: On-Premises</a></p>
+<p><a href="get-started/public-preview-releases.md">Standardrelease- und First Release-Dienstupdates</a></p>
+<p><a href="get-started/whats-new-changed.md">Neuerungen und Änderungen</a></p>
+<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, Updates und Hotfixes</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Anwenden von Updates auf Cloudumgebungen</a></p>
+<p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Dienstupdates konfigurieren</a></p>
+<p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Dienstupdates anhalten</a></p>
+<p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Benachrichtigungen zu Dienstupdates erhalten</a></p>
+<p><a href="../dev-itpro/data-entities/data-task-automation.md">Datenaufgabenautomatisierung</a></p>
+<p><a href="../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md">Regression Suite Automation Tool</a></p>
+
 <h3><a href="../financials/index.md">Finanzverwaltung</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
-<p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitoren</a></p>
+<p><a href="../financials/accounts-receivable/accounts-receivable.md">Debitorenkonten</a></p>
 <p><a href="../financials/budgeting/budgeting-overview.md">Budgetierung</a></p>
 <p><a href="../financials/cash-bank-management/cash-bank-management.md">Bargeld- und Bankverwaltung</a></p>
 <p><a href="../financials/general-ledger/audit-policy-rules.md">Konformität</a></p>
@@ -71,6 +81,8 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Microsoft
 <p><a href="hr/manage-recruiting-process.md">Personalbeschaffung</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">US-Lohn</a></p>
 
+</td>
+<td>
 <h3><a href="../supply-chain/index.md">Lieferkettenverwaltung</a></h3>
 <p><a href="../supply-chain/cost-management/costing-sheets.md">Kostenverwaltung</a></p>
 <p><a href="../supply-chain/inventory/inventory-home-page.md">Lagerverwaltung</a></p>
@@ -82,8 +94,7 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Microsoft
 <p><a href="../supply-chain/transportation/transportation-management-overview.md">Transportverwaltung</a></p>
 <p><a href="../supply-chain/warehousing/warehouse-configuration.md">Lagerortverwaltung</a></p>
 
-</td>
-<td>
+
 <h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
 <p><a href="../dev-itpro/analytics/analytics.md">Analysen</a></p>
  <p><a href="../dev-itpro/analytics/document-reporting-services.md">Geschäftsdokumente</a></p>

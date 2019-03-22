@@ -1,9 +1,9 @@
 ---
 title: Ändern von Zeilendefinitionszellen
-description: Dieser Artikel beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden.
+description: Dieses Thema beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6193d70c53ee09a28aa8763cb625b315ec180b95
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
+ms.sourcegitcommit: eb24b63b10c4d06f7550bba9fbd1910ba2719b0a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "323639"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "379663"
 ---
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden.
+Dieses Thema beschreibt die Informationen, die für jede Zelle in einer Zeilendefinition eines Finanzberichts benötigt werden und erläutert, wie diese Informationen eingegeben werden.
 
 ## <a name="specify-a-row-code-in-a-row-definition"></a>Angeben eines Zeilencodes in einer Zeilendefinition
 
@@ -386,17 +386,15 @@ Sie können eine Zeile auf einen vorhandenen Buchcode einschränken. Die Spalten
 Einige Kontoführungssysteme unterstützen Konto- und Buchungsattribute in den Finanzdaten. Diese Attribute funktionieren wie virtuelle Kontosegmente und können zusätzliche Informationen zu Konto oder Buchung enthalten. Diese zusätzlichen Informationen könnten Kontokennungen, Chargenkennungen, Postleitzahlen oder andere Attribute sein. Wenn Ihr Kontoführungssystem Attribute unterstützt, können Sie Kontoattribute oder Buchungsattribute als Zeilenmodifizierer in der Zeilendefinition verwenden. Informationen über das Außerkraftsetzen von Zeileninformationen finden Sie im Bereich "Spaltendefinition außer Kraft setzen" weiter oben in diesem Artikel.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Zelle „Verknüpfung mit Finanzdimensionen“ angeben
-Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte. Sie können aber anstelle von oder zusätzlich zu Segment- oder Dimensionswerten auch Zellen in einem Microsoft Excel-Arbeitsblatt angeben. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Mit Finanzdimensionen verknüpfen**.
+Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den Finanzdaten, die in jeder Zeile eines Berichts einbezogen werden sollen. Diese Zelle enthält Dimensionswerte. Um das Dialogfeld **Dimensionen** zu öffnen, doppelklicken Sie auf die Zelle **Mit Finanzdimensionen verknüpfen**.
 
 > [!NOTE]
 > Berichts-Designer kann keine Konten, Dimensionen oder Felder aus dem Microsoft Dynamics ERP-System auswählen, die eines der folgenden reservierten Zeichen enthalten: &, \*, \[, \], {, oder }. Wenn Sie Informationen für eine Zeile angeben möchten, die bereits in der Zeilendefinition enthalten ist, fügen Sie die Informationen in der Zelle **Verknüpfen mit Finanzdimensionen** hinzu. Um neue Zeilen hinzuzufügen, die mit Finanzdaten verknüpfen, verwenden Sie das Dialogfeld **Zeilen einfügen aus**, um neue Zeilen in der Berichtsdefinition zu erstellen. Die Spaltenüberschrift ändert sich, je nachdem, wie die Spalte konfiguriert wird (siehe folgende Tabelle).
 
 | Ausgewählter Linktyp       | Beschreibung in der Linkspalte |
 |----------------------------------|----------------------------------------------------|
-| Finanzdimensionen             | Verknüpfen mit Finanzdimensionen                       |
-| Externes Arbeitsblatt               | Verknüpfen mit Arbeitsblatt                                  |
-| Finanzdimensionen + Arbeitsblatt | Verknüpfen mit Finanzdimensionen + Arbeitsblatt           |
-| Management Reporter-Bericht starten       | Management Reporter-Bericht starten                         |
+| Finanzdimensionen             | Mit Finanzdimensionen verknüpfen                       |
+| Berichtsarbeitsblatt                 | Bericht der Finanzberichterstellung                         |
 
 ### <a name="specify-a-dimension-or-range"></a>Angeben einer Dimension oder eines Bereichs
 

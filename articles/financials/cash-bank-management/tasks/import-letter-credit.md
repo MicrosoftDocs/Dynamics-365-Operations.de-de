@@ -3,7 +3,7 @@ title: Importkreditbrief importieren
 description: Diese Prozedur zeigt Ihnen, wie Sie einen Kreditbrief importieren.
 author: kweekley
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c1768494182a79d7a33044498c1e768e61d937d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3d5539fbd17c880d8bbadd47444c9cc53fce039c
+ms.sourcegitcommit: 0c1deb100d0bf6dacd14b328968bbc7a9d92583a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313565"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "771230"
 ---
 # <a name="import-letter-of-credit"></a>Importkreditbrief importieren
 
@@ -111,8 +111,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 1. Wechseln Sie zu "Bargeld- und Bankverwaltung" > "Kreditbrief" > "Importkreditbrief und Importinkasso".
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-    * Überprüfen Sie den Importkreditbriefstatus.    
-    *   
+    * Überprüfen Sie den Importkreditbriefstatus.     
 4. Schließen Sie die Seite.
 5. Schließen Sie die Seite.
 

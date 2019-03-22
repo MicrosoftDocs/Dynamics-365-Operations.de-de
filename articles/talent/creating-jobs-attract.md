@@ -3,7 +3,7 @@ title: Erstellen, Genehmigen und Buchen von Aufträgen in Attract
 description: In diesem Thema werden die Elemente einer Stelle in Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
 author: josaw
 manager: AnnBe
-ms.date: 12/21/2018
+ms.date: 02/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: josaw
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c5daa4050d63303f1ac10c24901e5b1182cb62b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
+ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304549"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "772810"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Erstellen, Genehmigen und Buchen von Aufträgen in Attract
 
@@ -76,8 +76,23 @@ Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt 
 
 Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. 
 
+Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit.
+
+Weitere Informationen zu Stellenausschreibungen finden Sie unter [Funktionen für Karriereseiten in Attract](career-site.md).
+
 > [!NOTE]
-> Es gibt drei wichtige die für den Stellenausschreibungsprozess für LinkedIn zu beachten sind.
+> Die Stellenausschreibungsfunktionen sind nur mit dem umfassenden Add-On für Neueinstellungen für Attract verfügbar.
+
+### <a name="posting-jobs-to-linkedin"></a>Veröffentlichen von Stellen bei LinkedIn 
+
+Bevor Sie eine Stelle von Attract in LinkedIn veröffentlichen, muss der Administrator die LinkedIn-Unternehmenskennung und in den LinkedIn-Unternehmensnamen in den **Administratoreinstellungen** hinzufügen. Die LinkedIn-Unternehmenskennung ist erforderlich, um sicherzustellen, dass Ihre von Attract veröffentlichten Stellen der richtigen Unternehmensseite zugeordnet werden.
+
+Ihre LinkedIn-Unternehmenskennung ist eine Zeichenfolge aus Nummern, mit der Ihr Unternehmen innerhalb von LinkedIn eindeutig identifiziert wird. Weitere Informationen dazu, wie Sie nach der LinkedIn-Unternehmenskennung suchen, finden Sie auf der [LinkedIn-Website](https://aka.ms/findID).
+
+Zum Aktualisieren Ihres LinkedIn-Unternehmen wählen Sie im Menü  **Einstellungen**  (Das Zahnradsymbol) die Option  **Administratorcenter** aus, und wählen Sie dann die  **LinkedIn-Integration** Registerkarte aus. Im Abschnitt **Verbinden mit LinkedIn** geben Sie den LinkedIn-Unternehmensnamen und die -Unternehmenskennung ein. Speichern Sie dann die Einstellungen.
+
+> [!NOTE]
+> Es gibt vier wichtige die für den Stellenausschreibungsprozess für LinkedIn zu beachten sind.
 > 1. Die Stellen, die in LinkedIn erfasst werden, sind als Stellen mit "begrenzten Listen" erfasst. Begrenzte Listeneinzelvorgänge können nicht auf verschiedenen LinkedIn-Site vermarktet werden.  Wenn Sie limitierte Listenaufträge aus Attract in LinkedImn buchen, sollten Sie mit LinkedIn arbeiten um "Stellen-Zusammenfassung" zu aktivieren. Lesen Sie sich bitte die Links umten und kontaktieren Sie den Support von LinkedIn für weitere Details.
 >
 >    [" Begrenzte Listen mit erstklassige freie Stellen für Stellen-Zusammenfassung](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
@@ -90,14 +105,10 @@ Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Person
 >
 >    Wenn Sie Probleme nach diesem Schritt haben, wenden Sie sich bitte an den LinkedIn-Support. 
 > 
+> 1. Die Stellen, die in LinkedIn veröffentlicht werden, werden auf der laufenden LinkedIn-Website angezeigt. Es gibt keine Testumgebung für das Veröffentlichen von Stellen in LinkedIn. 
+>
 > 1. Es wird möglicherweise bis zu 24 Stunden dauern, bis die die erfassten Stellen auf LinkedIn für Kandidaten in LinkedIn ersichtlich sind aufgrund des aktuellen LinkedIn-Stapelverarbeitungs-Buchungsprozesses.
 
-Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit.
-
-Weitere Informationen zu Stellenausschreibungen finden Sie unter [Funktionen für Karriereseiten in Attract](./career-site.md).
-
-> [!NOTE]
-> Die Stellenausschreibungsfunktionen sind nur mit dem umfassenden Add-On für Neueinstellungen für Attract verfügbar.
 
 ## <a name="activate"></a>Aktivieren
 

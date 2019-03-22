@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 303d67c0b662e6c21cebb5aa10ed28555459522e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 98ec7d9a57cc39c22a31c025754c83dc1a95139e
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "302341"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403377"
 ---
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
@@ -96,13 +96,11 @@ Akzeptieren Sie unterschiedliche Zahlungstypen von Debitoren, wie Wechsel, Barge
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden. 
+Lesen Sie den [Microsoft Dynamics 365-Produktplan](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
 
 #### <a name="blogs"></a>Blogs
 
-Meinungen, Neuigkeiten und weitere Informationen zu „Debitoren” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/) finden Sie viele Beiträge zu „Debitoren”. Einige dieser Beiträge wurden zwar für die vorherige Version von „Debitoren” verfasst, aber die gleichen Konzepte treffen noch immer zu. und auch die Prozeduren sind in der aktuellen Version ähnlich.
+Meinungen, Neuigkeiten und weitere Informationen zu „Debitorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 

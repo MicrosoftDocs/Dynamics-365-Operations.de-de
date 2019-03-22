@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2dc977e3c53b1f15b41b095f586861b67c973a6d
-ms.sourcegitcommit: 68df883200b5c477ea1799cc28d3ef467cd29202
+ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
+ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "377134"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "773276"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Übersicht über die Steuerintegration für Retail Channels
 
@@ -30,7 +30,7 @@ ms.locfileid: "377134"
 
 ## <a name="introduction"></a>Einführung
 
-Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind. Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Einzelhandelsverkäufen entsprechend lokalen Steuergesetzen zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird: 
+Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind. Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Einzelhandelsverkäufen entsprechend lokalen Steuergesetzen zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird:
 
 - Erfassen eines Einzelhandelsverkaufs auf einem steuerbezogenen Gerät, das mit einem Retail point of sale (POS) verbunden ist, z. B. einem Belegdrucker, und Drucken eines Steuerbelegs für den Kunden.
 - Senden Sie Informationen, die Verkäufen und Rücksendungen zugeordnet sind, die in Retail POS abgeschlossen werden, sicher an einen externen Webdienst, der von der Steuerbehörde betrieben wird.
@@ -87,6 +87,7 @@ Wenn die Steuerregistrierung einer Transaktion oder eines Ereignisses erfolgreic
 
 Steuertransaktionen werden vom *P-Einzelvorgang* in die Retail Zentralverwaltung übertragen, zusammen mit den Einzelhandelstransaktionen. Im Inforegister **Steuertransaktionen** auf der Seite **Einzelhandelsgeschäftsbuchungen** können Sie die Steuertransaktionen anzeigen, die mit den Einzelhandelstransaktionen verknüpft sind.
 
+
 Eine Steuertransaktion speichert die folgenden Details:
 
 - Steuerregistrierungsprozess-Details (Prozess, Konnektorgruppe, Konnektor usw.). Sie speichert außerdem die Seriennummer des steuerbezogenen Geräts im Feld **Registernummer**, wenn diese Informationen in der Steuerantwort enthalten sind.
@@ -115,4 +116,5 @@ Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügb
 
 - [Digitale Signatur für Frankreich](emea-fra-cash-registers.md)
 - [Digitale Signatur für Norwegen](emea-nor-cash-registers.md)
-- [Beispiel zur Integration der Kontrolleinheit für Schweden](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+- [Beispiel zur Integration der Kontrolleinheit für Schweden](./retail-sdk-control-unit-sample.md)
+

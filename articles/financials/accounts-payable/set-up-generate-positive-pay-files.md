@@ -1,9 +1,9 @@
 ---
 title: Einrichten und Generieren von Dateien für positive Zahlungen
-description: In diesem Artikel wird beschrieben, wie positiven Lohndateien eingerichtet und positive Lohndateien generiert werden.
+description: In diesem Thema wird beschrieben, wie positive Lohnzahlungen eingerichtet und positive Lohndateien generiert werden.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a15669c477223b922d8892d675eaa1df2563714
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dbc512c6d214dc8cf2527ac23103529111896ec5
+ms.sourcegitcommit: 065d9fab832b6bcc88c00dc78ac1ae854c762ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346087"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "778177"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Einrichten und Generieren von Dateien für positive Zahlungen
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie positiven Lohndateien eingerichtet und positive Lohndateien generiert werden. 
+In diesem Thema wird beschrieben, wie positive Lohnzahlungen eingerichtet und positive Lohndateien generiert werden. 
 
 Sie können positiven Lohn verwenden, um eine elektronische Liste mit Schecks zu generieren, die für die Bank bereitgestellt wird. Wenn der Scheck der Bank präsentiert wird, vergleicht die Bank den Scheck mit der Liste der Schecks. Wenn der Originalscheck mit einem Scheck in der Liste übereinstimmt, löscht die Bank den Scheck. Wenn der Scheck mit keinem Scheck iin der Liste übereinstimmt, hält die Bank den Scheck zur Prüfung zurück.
 
@@ -94,7 +94,7 @@ Dateien für positive Zahlungen werden über Datenentitäten erstellt. Bevor Sie
           <xsl:value-of select="'
     '" />
           <!--Header End-->
-          <xsl:for-each select="Document/BankPositivePayExportEntity">
+          <xsl:for-each select="Document/BANKPOSITIVEPAYEXPORTENTITY">
             <!--Cheque Detail begin-->
             <xsl:value-of select='RECIPIENTACCOUNTNUM/text()'/>
             <xsl:value-of select="','" />

@@ -3,7 +3,7 @@ title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/28/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1fa38002377fac24a5f3e25bd5924ecb23fec70a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
+ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313588"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "789868"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -69,7 +69,7 @@ Die Benutzererfahrung bei der lokalen Produktsuche ist jetzt benutzerfreundliche
 
 ## <a name="customer-search"></a>Debitorensuche
 
-Die Debitorensuche wird verwendet, um Debitoren für verschiedene Zwecke zu suchen. So möchten Kassierer möglicherweise den Wunschzettel oder die Kaufhistorie eines Debitors anzeigen oder den Debitor zu einer Transaktion hinzufügen. Bei Suchen mit mehreren Suchbegriffen gibt der Debitorensuchalgorithmus alle Debitoren zurück, die mit einem der Suchbegriffe übereinstimmen. Allerdings werden die Debitoren, die den meisten Suchbegriffen entsprechen, oben in den Ergebnissen angezeigt. Dieses Verfahren ist identisch mit dem anderer Suchmaschinen. Sie zeigen als erstes die Ergebnisse, die den am meisten gesuchten Begriffen entsprechen, und anschließend die Ergebnisse, die teilweise mit dem Suchbegriffen übereinstimmen. Dies hilft Kassierern in Situationen, in denen Sie mehrere Suchbegriffe in Ihre Suche einschließen, aber ein Suchbegriff einen Rechtschreibfehler aufweist.
+Die Debitorensuche wird verwendet, um Debitoren für verschiedene Zwecke zu suchen. So möchten Kassierer möglicherweise den Wunschzettel oder die Kaufhistorie eines Debitors anzeigen oder den Debitor zu einer Transaktion hinzufügen. Der Suchenalgorithmus gleicht die Suchbegriffe mit den Werten ab, die in den folgenden Debitoreneigenschaften vorhanden sind: Name, E-Mail, Telefon, Treuekartennummer, Adresse und Kontonummer. Darunter bietet die Nameneigenschaft die beste Flexibilität bei Suchen mit mehreren Stichworten, da der Algorithmus alle Debitoren zurückgibt, die einem beliebigen der gefundenen Suchbegriffe entsprechen. Die Debitoren, die den meisten Suchbegriffen entsprechen, werden oben in den Ergebnissen angezeigt. Dieses Verhalten unterstützt Kassierer in Situationen, in denen sie eine Suche durch Eingabe des vollständigen Namens durchführen, und Nachname sowie Vorname bei der ursprünglichen Dateneingabe vertauscht wurden. Aus Leistungsgründen behalten alle anderen Eigenschaften die Reihenfolge der die Suchbegriffe allerdings bei. Wenn die Suchbegriffe der Reihenfolge der gespeicherten Daten also nicht entsprechen, werden kanne Ergebnisse zurückgegeben.
 
 Standardmäßig wird eine Debitorensuche in den Debitorenadressbüchern durchgeführt, die mit dem Shop verknüpft sind. Diese Form der Suche wird als *lokale Debitorensuche* bezeichnet. Allerdings können Mitarbeiter auch global nach Debitoren suchen. Sie können also auch in den Shops des Unternehmens und in allen anderen juristischen Personen eine Suche durchführen. Diese Form der Suche wird als *Remote-Debitorensuche* bezeichnet.
 

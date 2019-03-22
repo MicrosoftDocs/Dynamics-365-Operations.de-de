@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 12/10/2018
+ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f4413573f2e269e5a523940fbb841358e178d10
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a4dc8f11cfef7c0f42c62c42cd984438a3e119a5
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329251"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836347"
 ---
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
@@ -35,11 +35,77 @@ In diesem Thema werden die Funktionen beschrieben, die für Dynamics 365 for Fin
 
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
-> [!Note]
+> [!NOTE]
 > Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations mit Plattformupdate 8 wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
 
-> [!Note]
+> [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
+
+## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 mit Plattformupdate 25
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.1 mit Plattformaktualisierung 25 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Standardrelease- und First Release-Dienstupdates](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+### <a name="deprecated-apis-and-potential-breaking-changes"></a>Veraltete APIs und mögliche wichtige Änderungen
+
+#### <a name="deriving-from-internal-classes-is-deprecated"></a>Das Ableiten von internen Klassen ist veraltet
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | In den Vorgängerversionen von Plattformaktualisierung 25 war es möglich, eine Klasse oder Tabelle zu erstellen, die von einer internen Klasse/Tabelle abgeleitet wurde, die in einem anderen Modul/Paket definiert wurde. Dies ist keine sicher Programmierpraxis. Ab Plattformaktualisierung 25 zeigt der Kompiler eine Warnmeldung, wenn Sie dies versuchen.|
+| **Ersetzt durch eine andere Funktion?**   | Die Warnung wird einer bevorstehenden Plattformaktualisierung durch einen Fehler ersetzt. Diese Änderung ist zur Laufzeit abwärtskompatibel. Das bedeutet, dass Sie dies bei Ausführung von Plattformaktualisierung 25 oder höher in einer beliebigen Sandbox oder Produktionsumgebung bereitstellen können, ohne benutzerdefinierten Code zu ändern. Diese Änderung betrifft nur Entwicklungs- und Kompilierzeit. |
+| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools. |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet - Die Warnung wird in einer bevorstehenden Plattformaktualisierung zu einem Kompilierfehler. |
+
+#### <a name="overriding-internal-methods-is-deprecated"></a>Außerkraftsetzen von internen Methoden ist veraltet
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | In den Vorgängerversionen von Plattformaktualisierung 25 war es möglich, eine interne Methode in einer abgeleiteten Klasse außerkraft zu setzen, die in einem anderen Modul/Paket definiert wurde. Dies ist keine sicher Programmierpraxis. Ab Plattformaktualisierung 25 zeigt der Kompiler eine Warnmeldung, wenn Sie dies versuchen.|
+| **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird einer bevorstehenden Plattformaktualisierung durch einen Kompelierfehler ersetzt. Diese Änderung ist zur Laufzeit abwärtskompatibel. Das bedeutet, dass Sie dies bei Ausführung von Plattformaktualisierung 25 oder höher in einer beliebigen Sandbox oder Produktionsumgebung bereitstellen können, ohne benutzerdefinierten Code zu ändern. Diese Änderung betrifft nur Entwicklungs- und Kompilierzeit. |
+| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools. |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet - Die Warnung wird in einer bevorstehenden Plattformaktualisierung zu einem Kompilierfehler. |
+
+## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 mit Plattformupdate 23
+
+### <a name="print-to-screen-functionality"></a>Funktion zur Ausgabe auf dem Bildschirm
+Debitoren können die **Importieren**-Aktivität verwenden, die vom Report Viewer-Steuerelement bereitgestellt wird, um Dokumente herunterzuladen, die von Finance and Operations-Anwendungen erstellt werden. Diese HTML-basierte Präsentation des Berichts bietet Benutzern eine nicht paganierte Vorschau des Dokuments.
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die nicht-paganierte Art der HTML-basierten Vorschauerfahrung ist den letztlich von Finance and Operations erstellten physischen Dokumenten **nicht** treu. Wenn wir PDF vollständig als das Standardformat für Geschäftsvorgänge nutzen, können wir die Benutzeroptionen für das Interagieren mit Bewerbungsberichten drastisch vereinfachen und den Dokumentrenderingprozess optimieren. |
+| **Ersetzt durch eine andere Funktion?**   | Ab jetzt gelten PDF-Dokumente als das Standardformat für Berichte von Finance and Operations.   |
+| **Betroffene Produktbereiche**         | Diese Änderung wirkt sich **nicht** auf die Debitorenszenarien aus, in denen Berichte elektronisch verteilt oder direkt an den Druckern gesendet werden.    |
+| **Bereitstellungsoption**              | Alle  |
+| **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. Die Funktion zum automatischen Download von Bewerbungsberichten auf den Browser als PDF-Dokumente ist für die Plattformaktualisierung im Mai 2019 geplant. <br><br>**Wichtig:** Vorhandene Debitoren, die auf die Funktion zur Ausgabe auf dem Bildschirm angewiesen sind, sollten sich vor der Aktualisierung auf Plattformupdate 26 an den [Support](../lifecycle-services/lcs-support.md) wenden. |
+
+### <a name="client-kpi-controls"></a>Steuerelemente der Client-KPI
+Integrierte Key Performance Indicators (KPIs) können in Visual Studio von einem Entwickler modelliert und vom Endbenutzer weiter angepasst werden.
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die nativen Steuerelemente des Clients, die,verwendet werden, um KPIs zu definieren, haben geringe Debitorenaufnahme und sind auf einen Entwickler angewiesen, um nachverfolgbare Metriken hinzuzufügen. |
+| **Ersetzt durch eine andere Funktion?**   | PowerBI.com- Service erbringt Weltklasse-Werkzeugbestückung zum Definieren und Verwalten von KPIs, basierend auf Daten aus externen Quellen.  In einer bevorstehenden Version planen wir, Ihnen die Einbettung von Lösungen zu ermöglichen, die auf PowerBI.com in Anwendungsarbeitsbereichen gehostet werden.   |
+| **Betroffene Produktbereiche**         | Diese Aktualisierung verhindert, dass Entwickler neue KPI-Seuerelemente in Visual Studio Designer einführen.    |
+| **Bereitstellungsoption**              | Alle  |
+| **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
+
+### <a name="deprecated-apis-and-future-breaking-changes"></a>Veraltete APIs und künfige wichtige Änderungen
+
+#### <a name="field-groups-containing-invalid-field-references"></a>Feldgruppen mit ungültigen Feldreferenzen
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Es ist möglich, dass Tabellenmetadatendefinitionen über Feldgruppen verfügen, die ungültige Feldreferenzen enthalten. Dieses Problem wird derzeit als eine *Compilerwarnung* statt als *Fehler* kategorisiert, d. h., die zur Bereitstellung geeignete Paketerstellung und die Bereitstellung können erfolge, ohne dass, das Problem beheben werden muss. Bei einer BEreitstellung kann dies dieses zu Laufzeitfehlern bei der Finanzberichterstellung und bei SQL Server Reporting Services (SSRS) führen. So beheben Sie dieses Problem:<br><br>1. Entfernen Sie die ungültige Feldreferenz aus der Tabellenfeldgruppendefinition.<br><br>2. Neu kompilieren.<br><br>3. Stellen Sie sicher, dass alle Warnungen oder Fehler behoben werden. |
+| **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird in Zukunft durch einen Kompelierfehler ersetzt.  |
+| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools. |
+| **Bereitstellungsoption**              | Alle. |
+| **Status**                         | Veraltet - Die Warnung wird in Zukunft zu einem Kompilierungsfehler. Wir arbeiten derzeit an Plattformaktualisierung 30. |
+
+#### <a name="complete-list"></a>Vollständige Liste
+Wenn Sie auf die gesamte Liste der veralteten APIs zuzugreifen möchten, finden Siediese unter [Veralten von Methoden und Metadatenelementen](deprecation-deletion-apis.md).
 
 ## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1 mit Plattformupdate 20
 
@@ -52,7 +118,7 @@ Der synchrone Übergangsmodus wird im Hauptbuchparameter nicht mehr weitergefüh
 | **Ersetzt durch eine andere Funktion?**   | Asynchrone und geplanten Charge sind Optionen, die anstatt Synchron verwendet werden können.   |
 | **Betroffene Produktbereiche**         | Hauptbuch, Kreditoren, Debitoren, Beschaffung, Ausgaben    |
 | **Bereitstellungsoption**              | Alle  |
-| **Status**                         | Veraltet: - Zielzeitrahmen für die Entfernung der Funktionalität ist Version 10.0.|
+| **Status**                         | Veraltet: Zielzeitrahmen für die Entfernung der Funktionalität ist Version 10.0.|
 
 ### <a name="electronic-reporting-for-russia"></a>Elektronisches Berichtsformat für Russland
 Funktion für das Konfigurieren von .txt und .xml-Datei-Formaten für Meldungen. 

@@ -35,12 +35,6 @@ items:
     - name: Neuerungen und Änderungen
       href: get-started/whats-new-changed.md
       items:
-      - name: FAQ zu Dienstupdates für eine Version
-        href: get-started/one-version.md
-      - name: Software-Lebenszyklusrichtlinie und Cloudfreigaben
-        href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-      - name: Software-Lebenszyklusrichtlinie und lokale Freigaben
-        href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
       - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
         href: get-started/mainstream-support-ax-2009-2012.md
       - name: Entfernte oder veraltete Funktionen
@@ -49,10 +43,14 @@ items:
         href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
       - name: In lokalen Bereitstellungen nicht implementierte Funktionen
         href: get-started/features-not-implemented-on-prem.md
+      - name: Vorschaufunktionen in Finance and Operations, Version 10.0.1 (April 2019)
+        href: get-started/whats-new-changed-10-0-1.md
       - name: Finance and Operations, Version 10.0 (April 2019)
         href: get-started/whats-new-changed-10.md
       - name: Finance and Operations, Version 8.1.3 (Januar 2019)
         href: get-started/whats-new-changed-8-1-3.md
+      - name: Vorschaufunktionen in Finance and Operations, platform update 25 (April 2019)
+        href: get-started/whats-new-platform-25.md
       - name: Platform update 24 (März 2019)
         href: get-started/whats-new-platform-update-24.md
       - name: Platform update 23 (Januar 2019)
@@ -67,19 +65,19 @@ items:
         href: get-started/whats-new-changed-8-1-October-2018.md
       - name: Platform update 21 (November 2018)
         href: get-started/whats-new-platform-update-21.md
-      - name: Platform Update 20 (September 2018)
+      - name: Platform update 20 (September 2018)
         href: get-started/whats-new-platform-update-20.md
       - name: Finance and Operations, Version 8.0 (April 2018)
         href: get-started/whats-new-changed-8-0-April-2018.md
       - name: Platform update 15 (März 2018)
         href: get-started/whats-new-platform-update-15.md
-      - name: Lokale Bereitstellungen von Finance and Operations, Enterprise Edition 7.2 mit Platform update 12, März 2018
+      - name: Lokale Bereitstellungen von Finance and Operations, Enterprise Edition 7.2 mit platform update 12, März 2018
         href: get-started/whats-new-LBD-PU12-App72.md
       - name: Finance and Operations, Enterprise Edition 7.3
         href: get-started/whats-new-application-7.3-update.md
       - name: Platform update 12 (November 2017)
         href: get-started/whats-new-platform-update-12.md
-      - name: Platform Update 11 (Oktober 2017)
+      - name: Platform update 11 (Oktober 2017)
         href: get-started/whats-new-platform-update-11.md
       - name: Platform update 10 (August 2017)
         href: get-started/whats-new-platform-update-10.md
@@ -202,6 +200,29 @@ items:
       href: get-started/move-lcs-implementation-project-tenant.md
     - name: Mehrere LCS-Projekte und -Produktionsumgebungen auf einem einzelnen Azure AD-Mandanten
       href: get-started/implement-multiple-projects-aad-tenant.md
+  - name: Dienstupdates für eine Version
+    href: ../dev-itpro/lifecycle-services/oneversion-overview.md
+    items:
+    - name: FAQ zu Dienstupdates für eine Version
+      href: get-started/one-version.md
+    - name: Software-Lebenszyklusrichtlinie – Cloud
+      href: ../dev-itpro/migration-upgrade/versions-update-policy.md
+    - name: Software-Lebenszyklusrichtlinie – lokal
+      href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md
+    - name: Standardrelease- und First Release-Dienstupdates
+      href: get-started/public-preview-releases.md
+    - name: Anwenden von Updates auf Cloudumgebungen
+      href: ../dev-itpro/deployment/apply-deployable-package-system.md
+    - name: Dienstupdates konfigurieren
+      href: ../dev-itpro/lifecycle-services/configure-service-updates.md
+    - name: Dienstupdates anhalten
+      href: ../dev-itpro/lifecycle-services/pause-service-updates.md
+    - name: Benachrichtigungen zu Dienstupdates erhalten
+      href: ../dev-itpro/lifecycle-services/notifications-service-updates.md
+    - name: Datenaufgabenautomatisierung
+      href: ../dev-itpro/data-entities/data-task-automation.md
+    - name: Regression Suite Automation Tool
+      href: ../dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
   - name: Geschäftsereignisse
     href: ../dev-itpro/business-events/home-page.md
     items:
@@ -401,7 +422,7 @@ items:
             href: ../supply-chain/sales-marketing/synchronize-project-list.md
           - name: Lagerorte von Finance and Operations mit Field Service synchronisieren
             href: ../supply-chain/sales-marketing/synchronize-warehouse.md
-          - name: Arbeitsaufträge von Finance and Operations mit Field Service synchronisieren
+          - name: Arbeitsaufträge mit Projekt von Field Service mit Finance and Operations synchronisieren
             href: ../supply-chain/sales-marketing/synchronize-work-orders.md
         - name: Konfigurieren von Project Service Automation-Integration
           href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
@@ -601,7 +622,7 @@ items:
           href: ../financials/accounts-payable/vendor-payments-partial-amount.md
         - name: Seite mit Kreditorenbuchungsliste
           href: ../financials/accounts-payable/vendor-transaction-list-page.md
-    - name: Debitoren
+    - name: Debitorenkonten
       href: ../financials/accounts-receivable/accounts-receivable.md
       items:
       - name: Kredit und Inkasso bei Debitoren
@@ -1416,6 +1437,8 @@ items:
           href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
         - name: NF-e-Parameter für steuerliche Einrichtung einrichten
           href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+      - name: SPED ECD
+        href: ../financials/localizations/latam-bra-sped-ecd.md
       - name: SPED-Reinf-Steuerauszug
         href: ../financials/localizations/latam-bra-sped-reinf.md
       - name: Parameter für juristische Personen
@@ -2236,6 +2259,8 @@ items:
           href: ../financials/localizations/rus-sales-books-purchase-books.md
       - name: Anlagen
         items:
+        - name: Anlagen einrichten
+          href: ../financials/localizations/rus-set-up-fixed-assets.md
         - name: Erwerben und Inbetriebnehmen von Anlagen
           href: ../financials/localizations/rus-fixed-asset-acquisition.md
         - name: Erfassen des Erwerbs von Anlagen
@@ -2266,6 +2291,18 @@ items:
           href: ../financials/localizations/rus-bonus-depreciation.md
         - name: Berechnen der Abschreibung
           href: ../financials/localizations/rus-depreciation-calculation.md
+      - name: Debitoren- und Kreditorenkonto
+        items:
+        - name: Rechnungen für Zahlung
+          href: ../financials/localizations/rus-invoice-payment.md
+        - name: Einrichten der Dimensionssteuerung bei Ausgleichen
+          href: ../financials/localizations/rus-transactions-settlement-date.md
+        - name: Cashflowverwaltung
+          href: ../financials/localizations/rus-cash-flow.md
+      - name: Berichterstellung
+        items:
+        - name: Finanzberichterstellung
+          href: ../financials/localizations/rus-financial-reports.md
       - name: Unternehmensbereiche
         href: ../financials/localizations/rus-company-divisions.md
       - name: Einrichten von Wechselkursen für Währungsbuchungen
@@ -2280,8 +2317,10 @@ items:
         href: ../financials/localizations/rus-invoice-payment.md
       - name: Finanzberichterstellung
         href: ../financials/localizations/rus-financial-reports.md
-      - name: Erstellen eines Einkaufsbuchs
-        href: ../financials/localizations/rus-sales-books-purchase-books.md
+      - name: Buchhaltungsberichte im elektronischen Format
+        href: ../financials/localizations/rus-accounting-reporting.md
+      - name: Cashflowverwaltung
+        href: ../financials/localizations/rus-cash-flow.md
     - name: Saudi-Arabien
       href: ../financials/localizations/saudi-arabia.md
       items:
@@ -2367,6 +2406,8 @@ items:
         href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
       - name: Mehrwertsteuergruppen für die Verlagerung der Steuerschuld festlegen
         href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+      - name: Digitale Steuer für MwSt.
+        href: ../financials/localizations/emea-gbr-mtd-vat-integration.md
     - name: Vereinigte Staaten
       href: ../financials/localizations/united-states.md
       items:
@@ -2827,6 +2868,8 @@ items:
           href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
         - name: Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3
           href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
+        - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
+          href: ../dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/fin-and-ops/toc.json
     - name: Eingebettete Analyselösungen
       items:
       - name: Eingebettetes Power BI in Arbeitsbereichen
@@ -3281,6 +3324,8 @@ items:
         href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
       - name: Bericht zu Workflowtypen
         href: organization-administration/workflow-types-report.md
+      - name: Workflow-FAQs
+        href: organization-administration/workflow-FAQ.md
     - name: Warnungen
       href: get-started/alerts-overview.md
       items:
@@ -3799,8 +3844,6 @@ items:
         href: ../supply-chain/sales-marketing/tasks/enter-sales-agreements.md
       - name: Kaufverträge erfüllen
         href: ../supply-chain/sales-marketing/tasks/fulfill-sales-agreements.md
-      - name: Eine neue Handelsvereinbarung erstellen
-        href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
       - name: Debitorenrückvergütungen generieren und verarbeiten
         href: ../supply-chain/sales-marketing/tasks/process-customer-rebates.md
       - name: Zahlungsnachlässe verarbeiten
@@ -3827,6 +3870,8 @@ items:
         href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
     - name: Handelsvergütung
       href: ../supply-chain/sales-marketing/trade-allowance.md
+    - name: Eine neue Handelsvereinbarung erstellen
+      href: ../supply-chain/sales-marketing/tasks/create-new-trade-agreement.md
   - name: Serviceverwaltung
     href: ../supply-chain/service-management/service-management-home-page.md
     items:
@@ -4241,9 +4286,9 @@ items:
   href: ../dev-itpro/toc.yml
 - name: Dynamics 365 for Retail
   href: ../retail/toc.yml
-ms.openlocfilehash: cb58a9f8fa8305a3d8b956804ef74bef86ca04b9
-ms.sourcegitcommit: 7e0097bdd835e04521bffbce2fd802e6381dde0d
+ms.openlocfilehash: a1c64fd645063db11c632b34e8e0b934c97f2251
+ms.sourcegitcommit: d9ed934a142b88340d268fd2bd3753475a3712b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "376917"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "836395"

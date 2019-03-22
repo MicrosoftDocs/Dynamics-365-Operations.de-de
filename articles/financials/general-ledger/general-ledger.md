@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afebcc88ad1c087d5f1dabaac56f694534cf98
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 0b6683107f4b2dbe36af78749612ce950ea19582
+ms.sourcegitcommit: afab5269613d1d1dfd79cd39370b747dee13d3fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363360"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "403236"
 ---
 # <a name="general-ledger"></a>Hauptbuch 
 
@@ -53,21 +53,19 @@ Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerb
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-### <a name="whats-new"></a>Neuigkeiten
+#### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Wechseln Sie zu [Versionshinweise](https://docs.microsoft.com/en-us/business-applications-release-notes/), um festzustellen, welche der neuen Funktionalität freigegeben wurden. 
+Wechseln Sie zu [Microsoft Dynamics 365 Versionshinweise](https://go.microsoft.com/fwlink/?linkid=2010158), um festzustellen, welche der neuen Funktionalität geplant sind. 
+
+#### <a name="blogs"></a>Blogs
+
+Sie finden Meinungen, Nachrichten und andere Informationen im [Microsoft Dynamics  365-Blog](https://community.dynamics.com/365/financeandoperations/b/financials) und im [Microsoft Dynamics 365 Finance and Operations-Finanzblog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
+
+Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
 ### <a name="videos"></a>Videos
 
 Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.
-
-### <a name="blogs"></a>Blogs
-
-Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
-
-Im [Microsoft Dynamics AX-Produktteamblog](https://blogs.msdn.microsoft.com/dax/) finden Sie viele Beiträge zum Hauptbuch. Auch wenn einige dieser Beiträge für die ältere Version vom Hauptbuch verfasst wurden, gelten die gleichen Konzepte noch und die Prozeduren sind in der aktuellen Version ebenfalls vergleichbar.
-
-Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
 #### <a name="community-blogs"></a>Communityblogs
 

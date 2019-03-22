@@ -3,7 +3,7 @@ title: Solver-Strategie für Produktkonfiguration
 description: In diesem Thema wird beschrieben, wie Sie die Solver-Strategie verwenden können, um die Leistung der Produktkonfiguration zu verbessern.
 author: cvocph
 manager: AnnBe
-ms.date: 01/02/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0abb9313ec62cfdfe3bf7c810e2143dcf502bf9
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
+ms.sourcegitcommit: 0ceee30a60468a01db6f5b3526dcb9c6abc9d4dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351147"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "403915"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Solver-Strategie für Produktkonfiguration
 
@@ -62,8 +62,8 @@ Die folgende Tabelle enthält Empfehlungen zur Verwendung der Solver-Strategie i
 | Solver-Strategie      | Verwenden der Strategie in diesem Szenario |
 |----------------------|-----------------------------------|
 | Standard              | Die **Standard**-Strategie wurde optimiert, um eine Lösung für Modelle zu bieten, die von Tabelleneinschränkungen abhängen. Kundenimplementierungsstudien haben gezeigt, dass diese Strategie die effizienteste Strategie in Szenarien ist, in denen Tabelleneinschränkungen in großem Umfang verwendet werden. |
-| Minimaldomäne zuerst | Die Strategien **Minimaldomäne zuerst** und **Oben-nach-unten** sind eng verwandt. Kundenimplementierungsstudien haben gezeigt, dass die Strategie **Oben-nach-unten**, die in CU8 eingeführt wurde, leistungsfähiger ist, als die Strategie **Minimaldomäne zuerst**. Allerdings wird die Strategie **Minimaldomäne zuerst** zwecks Abwärtskompatibilität im Produkt beibehalten. Beide diese Solver-Strategien haben sich bei der Lösung von Modellen, die mehrere arithemtische Ausdrücke enthalten, bei denen keine Tabelleneinschränkungen verwendet werden, als effizienter erwiesen. Jedoch ist in einigen Fällen die Strategie **Standard** leistungsfähiger als diese beiden Strategien. Daher denken Sie daran, jede Strategie auszuprobieren. |
-| Von oben nach unten             | Die Strategien **Minimaldomäne zuerst** und **Oben-nach-unten** sind eng verwandt. Kundenimplementierungsstudien haben gezeigt, dass die Strategie **Oben-nach-unten**, die in CU8 eingeführt wurde, leistungsfähiger ist, als die Strategie **Minimaldomäne zuerst**. Allerdings wird die Strategie **Minimaldomäne zuerst** zwecks Abwärtskompatibilität im Produkt beibehalten. Beide diese Solver-Strategien haben sich bei der Lösung von Modellen, die mehrere arithemtische Ausdrücke enthalten, bei denen keine Tabelleneinschränkungen verwendet werden, als effizienter erwiesen. Jedoch ist in einigen Fällen die Strategie **Standard** leistungsfähiger als diese beiden Strategien. Daher denken Sie daran, jede Strategie auszuprobieren. |
+| Minimaldomänen zuerst | Die Strategien **Minimaldomänen zuerst** und **Von oben nach unten** sind eng verwandt. Kundenimplementierungsstudien haben gezeigt, dass die Strategie **Von oben nach unten** leistungsfähiger ist, als die Strategie **Minimaldomänen zuerst**. Allerdings wird die Strategie **Minimaldomänen zuerst** zwecks Abwärtskompatibilität im Produkt beibehalten. Beide diese Solver-Strategien haben sich bei der Lösung von Modellen, die mehrere arithemtische Ausdrücke enthalten, bei denen keine Tabelleneinschränkungen verwendet werden, als effizienter erwiesen. Jedoch ist in einigen Fällen die Strategie **Standard** leistungsfähiger als diese beiden Strategien. Daher denken Sie daran, jede Strategie auszuprobieren. |
+| Von oben nach unten             | Die Strategien **Minimaldomänen zuerst** und **Von oben nach unten** sind eng verwandt. Kundenimplementierungsstudien haben gezeigt, dass die Strategie **Von oben nach unten** leistungsfähiger ist, als die Strategie **Minimaldomänen zuerst**. Allerdings wird die Strategie **Minimaldomänen zuerst** zwecks Abwärtskompatibilität im Produkt beibehalten. Beide diese Solver-Strategien haben sich bei der Lösung von Modellen, die mehrere arithemtische Ausdrücke enthalten, bei denen keine Tabelleneinschränkungen verwendet werden, als effizienter erwiesen. Jedoch ist in einigen Fällen die Strategie **Standard** leistungsfähiger als diese beiden Strategien. Daher denken Sie daran, jede Strategie auszuprobieren. |
 | Z3                   | Es wird empfohlen, die Strategie **Z3** als standardmäßige Solver-Strategie zu verwenden. Wenn Sie Bedenken hinsichtlich Leistung oder Skalierbarkeit haben, können Sie die anderen Strategien prüfen. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
