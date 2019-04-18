@@ -107,9 +107,6 @@
           "dynamics-finance-operations"
         ]
       },
-        "feedback_product_url": {
-          "retail/**/*.md": "https://ideas.dynamics.com"
-        },
        "searchScope": {
           "talent/**.md": [
             "Dynamics 365",
