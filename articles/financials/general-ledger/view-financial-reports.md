@@ -3,7 +3,7 @@ title: Finanzberichte anzeigen
 description: Dieses Thema beschreibt, wie Finanzberichte in Microsoft Dynamics 365 for Finance and Operations angezeigt und durchsucht werden. Er enthält Informationen zu den verschiedenen Optionen, die Sie auf Finanzberichte anwenden können, um das Erscheinungsbild und die Daten, die die Berichte enthalten, zu ändern.
 author: kweekley
 manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ecdd2dd9d1eff0af358a458171ce151c9c14c71c
-ms.sourcegitcommit: 78bd8119b9fe967ba4d0adaacaf2d2227e567a91
+ms.openlocfilehash: 0ba92ab4f751758c4adf26885ebb7b2c5290ecac
+ms.sourcegitcommit: 1e8dfa62989dbd7601bafdc933558f6bea1638ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "791440"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "894587"
 ---
 # <a name="view-financial-reports"></a>Finanzberichte anzeigen
 
@@ -46,12 +46,11 @@ Finanzberichte können mehrere Detailebenen enthalten. Die Finanzebene ist die e
 Wenn es sich um Budgetdaten handelt, können Sie die Budgetkontoeinträge öffnen. Um eine der Ebenen im Bericht zu schließen und zum Ausgangspunkt zurückzukehren, können Sie entweder die ESC-Taste drücken oder auf die Schaltfläche **Schließen** (**X**) oben rechts klicken.
 
 ## <a name="change-report-options"></a>Ändern von Berichtsoptionen
-Sie können das Berichtsdatum ändern, Attributs- und Dimensionsfilter anwenden oder das Budgetszenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** ändern. Klicken Sie im Aktivitätsbereich auf **Berichtsoptionen**, und führen Sie anschließend einen oder mehrere dieser Schritte aus:
+Sie können Attributs- und Dimensionsfilter anwenden oder das Budgetszenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** ändern. Klicken Sie im Aktivitätsbereich auf **Berichtsoptionen**, und führen Sie anschließend einen oder mehrere dieser Schritte aus:
 
--   Um die Basisperiode und das Basisjahr eines Berichts zu ändern, wählen Sie eine Basisperiode und ein Basisjahr aus, und klicken Sie anschließend auf **OK**.
 -   Um Attributfilter auf einen Bericht anzuwenden, wählen Sie **Einen Attributfilter hinzufügen** aus. Wählen Sie das Attribut aus, geben Sie den Attributwert ein, und klicken Sie auf **OK**. Wenn Sie beispielsweise das Attribut **Kontokategorie** auswählen, geben Sie **VERKAUF** als Attributwert ein. Um einen Attributfilter zu entfernen, klicken Sie auf **Löschen**.
 -   Um Dimensionsfilter auf einen Bericht anzuwenden, wählen Sie **Dimensionsfilter hinzufügen** aus. Wählen Sie die Dimension aus, und geben Sie anschließend entweder die Dimensionskennung ein oder wählen Sie die Dimension aus der Liste aus. Um einen Dimensionsfilter zu entfernen, klicken Sie auf **Löschen**.
--   Um das Szenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** zu ändern, wählen Sie ein neues Szenario aus, und klicken Sie anschließend auf **OK**. Wenn das ausgewählte Szenario für ein anderes Jahr gilt, müssen Sie das Basisjahr aktualisieren. Wenn beispielsweise das aktuelle Szenario für FJ2015 gilt und Sie ein neues Szenario auswählen, das für FJ2016 gilt, sollten Sie das Basisjahr in **2016** ändern.
+-   Um das Szenario in einem Bericht vom Typ **Istwert im Vergleich zu Budget** zu ändern, wählen Sie ein neues Szenario aus, und klicken Sie anschließend auf **OK**. Wenn das ausgewählte Szenario für ein anderes Geschäftsjahr ist, werden keine Ergebnisse zurückgegeben. Wenn beispielsweise ein Bericht für FY2015 generiert wird und das aktuelle Szenario für FY2015 ist und das neue ausgewählte Szenario für FY2016 ist, werden keine Ergebnisse zurückgegeben. Wenn ein neues Szenario für einen anderen Geschäftsjahres benötigt wird, generieren Sie eine neue Version des Berichts für das Geschäftsjahr, das dem Szenario zugeordnet ist.
 
 Wenn Sie auf **OK** klicken, werden alle Optionen, die Sie ausgewählt haben, auf den Bericht angewendet. Wenn Sie die ausgewählten Optionen doch nicht anwenden möchten, klicken Sie auf **Abbrechen**.
 

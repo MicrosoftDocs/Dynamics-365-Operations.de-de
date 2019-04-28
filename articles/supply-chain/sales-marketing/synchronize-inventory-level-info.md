@@ -3,7 +3,7 @@ title: Lagerebeneninformationen aus Finance and Operations mit Field Service syn
 description: In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsinformationen von Microsoft Dynamics 365 for Finance and Operations auf Microsoft Dynamics 365 for Field Service verwendet werden.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b81694f1ed56d8542de46203ac5faf5fae2b6645
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 6b2bdf1ca6f6ae43cd85c8a1353ee8305052761d
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "356782"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842555"
 ---
 # <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Lagerebeneninformationen aus Finance and Operations mit Field Service synchronisieren 
 
@@ -44,8 +44,8 @@ Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Be
 - Produktbestand
 
 Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von  Bestandlisten erfolgen kann:
-- Projekte (Finance and Operations zu Field Service) 
-- Field Service Produkte mit Lagereinheit (Finance and Operations zu Sales) 
+- Lagerorte (Finance and Operations zu Field Service) 
+- Field Service Produkte mit Bestand (Finance and Operations zu Sales) 
 
 ## <a name="entity-set"></a>Entitätssatz
 
@@ -80,6 +80,6 @@ Wenden Sie Filter mit der erweiterten Abfrage und Filterung an, um zu steuern, d
 
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
-### <a name="product-inventory-finance-and-operations-to-field-service-product-inventory"></a>Produktbestand (Finance and Operations zu Field Service): Produktbestand
+### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Produktbestand (Finance and Operations zu Field Service): Produktbestand
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

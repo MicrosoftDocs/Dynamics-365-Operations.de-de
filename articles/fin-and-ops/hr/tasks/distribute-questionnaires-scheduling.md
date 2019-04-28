@@ -1,7 +1,7 @@
 ---
 title: Einen Fragebogen mithilfe des Zeitplans verteilen
 description: Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungsteilnehmer zu planen und zu verteilen.
-author: kherr75
+author: andreabichsel
 manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kherr
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b66389a7d63c51f059a39495b8c7fbd325ef41e8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a6887deb01ade2c5b8cef88294eace65e9300eb9
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "322190"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "855585"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Einen Fragebogen mithilfe des Zeitplans verteilen
 
@@ -45,7 +45,7 @@ Die Fragebogenplanung ermöglicht es Ihnen, Fragebögen für mehrere Befragungst
 10. Geben Sie im Feld "Betreff" einen Wert ein.
     * Beispiel: Fragebogen verfügbar  
 11. Geben Sie im Textfeld den Textkörper der E-Mail ein. Beachten Sie, das die Variable nur zum Ersetzen von Werten im System verwendet werden kann.
-    * Beispiel:    Lieber %P%, melden Sie sich in Dynamics AX, Employee Self Service an, um den Belegschafts-Statusfragebogen auszufüllen.  Contoso  
+    * Beispiel:   Lieber %P%, melden Sie sich in Employee Self Service an, um den Belegschafts-Statusfragebogen auszufüllen.  Contoso  
 12. Klicken Sie auf "Speichern".
 
 ## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a>Verwenden Sie die Einrichtungsdetails, um die zu beantwortenden Fragebögen sowie alle Abfragen für Auswahl der Antwortenden auszuwählen.

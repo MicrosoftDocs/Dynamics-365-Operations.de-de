@@ -1,7 +1,7 @@
 ---
 title: Personalverwaltung
 description: Personalverwaltungen rationalisieren viele routinemäßige Protokollierungsaufgaben und automatisieren zahlreiche Prozesse, die das Personal Ihrer Organisation betreffen. Darüber hinaus bieten sie einen Rahmen für Personalverwaltungsmitarbeiter, um die Bereiche, für die sie zuständig sind, zu verwalten. Diese Bereiche umfassen das Beschaffen und Halten von Mitarbeitern, die Verwaltung der Vergütungen, die Schulung, Leistungsüberprüfungen und das Änderungsmanagement.
-author: rschloma
+author: andreabichsel
 manager: AnnBe
 ms.date: 11/01/2017
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: faf9b9a70d959719f381ec5171e4fb96af208478
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c8b743e667413dfc263fe640b4c6c7350e887142
+ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "341763"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "859804"
 ---
 # <a name="human-resources"></a>Personalverwaltung
 
@@ -45,7 +45,7 @@ Sie können „Personalverwaltung” verwenden, um diese Aufgaben abzuschließen
 
 Bei Ihrer Arbeit in der Personalverwaltung entscheiden Sie über die Strukturierung Ihrer Organisation mithilfe von Elementen wie Abteilungen, Stellen und Positionen. Diese gehören zu den grundlegenden Elementen, die Sie in der Personalverwaltung konfigurieren. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
-- [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](../../talent/departments-jobs-positions.md)
+- [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](../../talent/departments-jobs-positions.md)
 - [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](../../talent/set-up-company-specific-hr-parameters.md)
 - [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](../../talent/set-up-hr-parameters-across-legal-entities.md)
 
@@ -64,7 +64,7 @@ Nachdem Sie Mitarbeiter eingestellt haben, können Sie Pläne einrichten, um eff
 
 ## <a name="develop-and-train-employees"></a>Mitarbeiter fördern und schulen
 
-Um Ihren Mitarbeiter beim Erreichen ihrer Karriereziele beim Liefern wichtigen Geschäftsanforderungen zu helfen, können Sie Ziele einrichten, Leistungsbeurteilungen erstellen und Rückmeldung verfolgen. Um Mitarbeitern zu helfen, die benötigten Fähigkeiten zu entwickeln, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Agendas, Verläufe und Sitzungen einrichten, bevor Sie einen Kursleiter einem Kurs zuweisen oder jemanden für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
+Um Ihren Mitarbeiter beim Erreichen ihrer Karriereziele beim Liefern wichtigen Geschäftsanforderungen zu helfen, können Sie Ziele einrichten, Leistungsbeurteilungen erstellen und Rückmeldung verfolgen. Um Mitarbeitern zu helfen, die benötigten Fähigkeiten zu entwickeln, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Agenden, Verläufe und Sitzungen einrichten, bevor Sie einen Kursleiter einem Kurs zuweisen oder jemanden für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
 - [Leistungsverwaltung](../../talent/performance-management-overview.md)
 - [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](../../talent/skills.md)

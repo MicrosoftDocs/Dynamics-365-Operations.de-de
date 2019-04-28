@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 03/05/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ced22a144e57b624ceacb8bb5c3032218db3a0eb
-ms.sourcegitcommit: bacec397ee48ac583596be156c87ead474ee07df
+ms.openlocfilehash: d4082464dafebfcadd02425081f5f9b5716af01a
+ms.sourcegitcommit: 118cd383a327519a266dfe27720b12e9bbfbac14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "777271"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "946432"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -75,8 +75,8 @@ Die Artikelgewichtsartikel-Handhabungsrichtlinie definiert zwei primäre Lageror
 
 Sie können definieren, wann das Gewicht für die Verkaufs- und Umlagerungsauftragsverarbeitung erfasst wird. Das Gewicht kann bei einem der folgenden Prozesse erfasst werden:
 
-- **Entnahme** – Das Gewicht wird bei den Anfangs-Entnahmearbeitspositionen bei der Auftragsarbeit erfasst.
-- **Verpackung** – Das Gewicht wird bei der manuellen Verpackung erfasst. (Sie müssen die Artikel an eine Verpackungsstation senden.)
+- **Entnahme** – Das Gewicht wird bei den Anfangs-Entnahmearbeitspositionen bei der Auftragsarbeit erfasst.
+- **Verpackung** – Das Gewicht wird bei der manuellen Verpackung erfasst. (Sie müssen die Artikel an eine Verpackungsstation senden.)
 
 Wenn das tatsächliche Gewicht an der Verpackungsstation während des Containerverpackungsprozesses erfasst wird, werden die Lagerarbeiter nicht aufgefordert, das Gewicht bei der Entnahmearbeit zu erfassen. Stattdessen wird das Durchschnittsgewicht des physischen Bestands als Gewicht des für den Verpackungsbereich entnommenen Bestands verwendet.
 
@@ -84,8 +84,8 @@ Bei internen Lagerortverwaltungsprozessen wie Inventur- wie und Regulierungskor
 
 Sie können auch definieren, wie das Gewicht erfasst wird. In einem der beiden Hauptflüsse, werden Artikelgewichtsmarkierungen nachverfolgt und verwendet, um das Gewicht zu erfassen. In dem anderen Fluss werden Artikelgewichtsmarkierungen nicht nachverfolgt.
 
-- **Ja** – Der Artikel verwendet Artikelgewichtsmarkierungen. Jede Markierungsnummer stellt eine Artikelgewichtseinheit (Box) dar, und ein Gewicht und andere Informationen werden der Markierung zugeordnet. Für ausgehende Verarbeitungen wird das Gewicht, das der Markierung zugeordnet ist, verwendet.
-- **Nein** – Der Artikel verwendet keine Artikelgewichtsmarkierungen. Die Ein- und Ausgangswiegeprozesse basieren auf dem tatsächlichen Gewicht, das bei jedem Prozess erfasst wird.
+- **Ja** – Der Artikel verwendet Artikelgewichtsmarkierungen. Jede Markierungsnummer stellt eine Artikelgewichtseinheit (Box) dar, und ein Gewicht und andere Informationen werden der Markierung zugeordnet. Für ausgehende Verarbeitungen wird das Gewicht, das der Markierung zugeordnet ist, verwendet.
+- **Nein** – Der Artikel verwendet keine Artikelgewichtsmarkierungen. Die Ein- und Ausgangswiegeprozesse basieren auf dem tatsächlichen Gewicht, das bei jedem Prozess erfasst wird.
 
 Der Prozess zur Nachverfolgung von Artikelgewichtsmarkierungen kann für Artikel verwendet werden, deren Gewicht sich während des Lagerungszeitraums nicht verändert. Das Gewicht wird nur beim Eingangslagerort-Prozess erfasst. Während des Ausgangsprozesses werden die Artikelgewichtsmarkierungen nur gescannt, und das jeweilige Gewicht, das den Markierungen zugeordnet wird, wird für die Ausgangstransaktionsverarbeitung verwendet.
 
@@ -97,7 +97,9 @@ Beispielsweise ist **Box** die Artikelgewichteinheit, und Sie erhalten eine Pale
 
 Wenn die Artikelgewichtsmarkierungs-Nachverfolgung nicht verwendet wird, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
 
-Für die Methoden zur Erfassung des ausgehenden Gewichts können Sie definieren, ob das Wiegen für jede Artikelgewichtseinheit erfolgt (d. h. pro Box), oder ob das Gewicht auf Basis der entnommenen Menge erfasst wird (z. B. drei Boxen). Beachten Sie, dass für den Produktionsauftragspositions-Entnahmeprozess das Durchschnittsgewicht verwendet wird, wenn die Option **Nicht erfasst** verwendet wird.
+Für die Methoden zur Erfassung des ausgehenden Gewichts können Sie definieren, ob das Wiegen für jede Artikelgewichtseinheit erfolgt (d. h. pro Box), oder ob das Gewicht auf Basis der entnommenen Menge erfasst wird (z. B. drei Boxen). Beachten Sie, dass für die Entnahme der Produktionsauftragsposition und für interne Verschiebungsprozesse das Durchschnittsgewicht verwendet wird, wenn die Option **Nicht erfasst** verwendet wird.
+
+Um die Entnahmevorgänge bei der Lagerortverwaltung so einzuschränken, dass keine Gewichte erfasst werden, die zu Artikelgewichtgewinn-/ oder Verlustregulierungen führen, kann die Methode der Ausgangsgewichtsabweichung verwendet werden.
 
 ## <a name="supported-scenarios"></a>Unterstützte Szenarien
 
@@ -121,14 +123,12 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
  
 ### <a name="order-processing"></a>Auftragsverarbeitung
 
-- Die Intercompany-Auftragsverarbeitung wird nicht unterstützt.
 - Die Erstellung des Versand-Avis (ASN/Verpackungsstrukturen) unterstützt keine Gewichtsinformationen.
 - Die Auftragsmenge muss basierend auf der Artikelgewichtseinheit verwaltet werden.
  
 ### <a name="inbound-warehouse-processing"></a>Eingangslagerortverarbeitung
 
 - Das Empfangen von Ladungsträgern setzt voraus, dass Gewichte während der Registrierung zugeordnet werden, da die Gewichtsinformationen nicht als Teil des Versand-Avis unterstützt werden. Wenn Artikelgewichtsmarkierungs-Prozesse verwendet werden, muss die Markierungsnummer manuell pro Artikelgewichtseinheit zugewiesen werden.
-- Der Empfang gemischter Ladungsträger wird für Artikelgewichtsprodukte nicht unterstützt.
  
 ### <a name="inventory-and-warehouse-operations"></a>Bestands- und Lagerortbetrieb
 
@@ -169,7 +169,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
  
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andere Einschränkungen und Verhaltensweisen für die Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
-- Wenn Artikelgewichtsmarkierungen als Teil der Lagerort-App-Verarbeitung erfasst werden, kann der Benutzer diesen Prozess nicht im Workflow abbrechen.
 - Während der Entnahmeprozesse, in denen der Benutzer nicht aufgefordert wird, Rückverfolgungsangaben zu identifizieren, erfolgt die Gewichts-Zuweisung basierend auf dem Durchschnittsgewicht. Dieses Verhalten tritt auf, wenn z. B. eine Kombination von Rückverfolgungsangaben am gleichen Lagerplatz verwendet wird, und, nachdem ein Benutzer die Entnahme verarbeitet hat, nur ein Rückverfolgungsangabewert am Lagerplatz verbleibt.
 - Wenn der Bestand für ein Artikelgewichtsprodukt reserviert wird, das für Lagerortverwaltungsprozesse konfiguriert ist, erfolgt die Reservierung auf Grundlage des Mindestgewichts, das definiert wird, auch wenn diese Menge die letzte verfügbare Handhabungsmenge ist. Dieses Verhalten unterscheidet sich vom Verhalten für Artikel, die nicht für Lagerortverwaltungsprozesse konfiguriert sind.
 - Prozesse, die das Gewicht als Teil der Kapazitätsberechnungen verwenden (Wellenschwellenwerte, maximale Arbeitspausen, Container-Höchstwerte, Lagerplatzladekapazitäten usw.), verwenden nicht das tatsächliche Gewicht des Bestands. Stattdessen basieren die Prozesse auf dem physischen Handhabungsgewicht, das für das Produkt definiert wird.
@@ -193,3 +192,5 @@ Derzeit werden die Funktionen für Artikelgewichtsmarkierungen nur als Teil der 
 - Wenn Container neu geöffnet werden.
 - Wenn Formelprodukte mithilfe der Lagerort-App als fertig gemeldet werden.
 - Wenn Transportladungen mithilfe der Lagerort-App verarbeitet werden.
+
+Eine Artikelgewichtsmarkierung kann entweder mithilfe eines Lagerort-App-Prozesses erstellt werden, manuell im Formular erstellt werden oder mithilfe eines Datenentitätsprozesses erstellt werden. Wenn eine Artikelgewichtsmarkierung einer eingehenden Quelldokumentposition zugeordnet wird, wie z. B. Bestellposition, wird die Markierung registriert. Wenn die Position für ausgehende Verarbeitungen verwendet wird. Die Markierung wird als versendet aktualisiert.

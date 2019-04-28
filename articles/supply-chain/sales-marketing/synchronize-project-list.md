@@ -3,7 +3,7 @@ title: Projektliste von Finance and Operations mit Field Service synchronisieren
 description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Projekte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Field Service zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 01/14/2019
+ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: b5aeb4c3925994d7488e8e113e88b9d06ee6b350
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: ea5c188891bb97ba73d2d022e86bbff50897381b
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312507"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842603"
 ---
 # <a name="synchronize-project-list-from-finance-and-operations-to-field-service"></a>Projektliste von Finance and Operations mit Field Service synchronisieren
 
@@ -38,13 +38,13 @@ Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die ve
 Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um die Synchronisation von Projekten von Microsoft Dynamics 365 for Finance and Operations nach Microsoft Dynamics 365 for Field Service durchzuführen.
 
 **Vorlagen in der Datenintegration**
-- Projekte (Finance and Operations zu Field Service)
+- Projects (Finance and Operations zu Field Service)
 
 **Aufgaben im Datenintegrationsprojekt**
 - Projekte
 
 Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von  Projektlisten erfolgen kann:
-- Konten (Sales zu Finance and Operations) 
+- Konten (Sales nach Finance and Operations) 
 
 ## <a name="entity-set"></a>Entitätssatz
 | Field Service           | Finance and Operations  |
@@ -64,6 +64,6 @@ Die Entität ruft **Externes Projekt** alle Projekte von der erhaltenen Finanzie
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
 
-### <a name="projects-finance-and-operations-to-field-service-projects"></a>Projekte (Finance and Operations zu Field Service): Projekte
+### <a name="projects-fin-and-ops-to-field-service-projects"></a>Projects (Finance and Operations zu Field Service): Projects
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSProject1.png)](./media/FSProject1.png)

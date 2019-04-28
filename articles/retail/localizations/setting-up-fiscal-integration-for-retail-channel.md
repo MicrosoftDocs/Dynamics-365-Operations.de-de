@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 685340141ed35f4a2b57742328c69d3bbf9a73d2
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773326"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "898976"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Steuerintegration für Retail Channel einrichten
 
@@ -60,7 +60,7 @@ Vor der Verwendung der Steuerintegrationsfunktionen müssen Sie die folgenden Ei
 2. Laden Sie Konfigurationen der Steuerkonnectoren und Steuerdokumentanbieter hoch.
 
     Ein Steuerdokumentanbieter ist für die Erstellung von Steuerdokumente verantwortlich, die Einzelhandelstransaktionen und Ereignisse darstellen, die am POS in einem Format registriert sind, das auch für die Interaktion mit einem steuerbezogenen Gerät oder Dienst verwendet wird. So kann beispielsweise ein Steuerdokumentanbieter eine Darstellung eines Steuerbelegs in einem XML-Format erzeugen.
-    
+
     Ein Steuerkonnektor ist für die Kommunikation mit einem steuerbezogenen Gerät oder Dienst verantwortlich. So kann beispielsweise ein Steuerkonnektor einen Steuerbeleg, den ein Steuerdokumentanbieter in einem XML-Format erstellt hat, an einen Belegdrucker senden. Genauere Informationen zu Ateuerintegrationskomponenten finden Sie unter [Steuerregistrierungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
     1. Laden Sie auf der Seite **Steuerkonnektoren** (**Retail \> Kanaleinstellungen \> Steuerintegration \> Steuerkonnektoren**) eine XML-Konfiguration für jedes Gerät oder jeden Dienst hoch, den Sie für Zwecke der Steuerintegration verwenden möchten.
@@ -150,7 +150,7 @@ Vor der Verwendung der Steuerintegrationsfunktionen müssen Sie die folgenden Ei
     - Nachdem Sie Änderungen an einem bestehenden Steuerregistrierungsprozess vorgenommen haben, können diese Änderungen dazu führen, dass zur Laufzeit ein anderer Steuerkonnektor ausgewählt wird (z.B. wenn Sie die Konnektorgruppe für einen Schritt des Steuerregistrierungsprozesses ändern, ein Konnektorfunktionsprofil in einer Konnektorgruppe aktivieren oder ein neues Konnektorfunktionsprofil zu einer Konnektorgruppe hinzufügen).
     - Nachdem Sie Änderungen in der Zuordnung der technischen Profile des Konnektors in Hardwareprofilen vorgenommen haben.
 
-8. Führen Sie auf der Seite **Distributionszeitplan** die Aufträge **1070** und **1090** aus, um Daten in die Kanaldatenbank zu übertragen.
+8. Führen Sie auf der Seite **Distributionsplan** die Aufträge **1070** und **1090** aus, um Daten in die Kanaldatenbank zu übertragen.
 
 ## <a name="set-up-fiscal-texts-for-discounts"></a>Steuertexte für Rabatte einrichten
 
@@ -185,8 +185,12 @@ Die Optionen für die Fehlerbehandlung, die in der Steuerintegration zur Verfüg
 
     - **Überspringen erlauben** - Dieser Parameter aktiviert die Option **Überspringen** im Dialogfenster zur Fehlerbehandlung.
     - **Als registriert markieren erlauben** - Dieser Parameter aktiviert die Option **Als registriert markieren** im Dialogfenster zur Fehlerbehandlung.
+    - **Bei Fehler fortsetzen** – Wenn dieser Parameter aktiviert ist, kann der steuerlichen Registrierungsprozess im POS-Register fortgesetzt werden, wenn bei der Transaktion einer Steuererfassung oder eines Ereignisses ein Fehler auftritt. Um die Steuererfassung der nächsten Transaktion oder des Ereignisses sonst auszuführen, muss der Mitarbeiter die fehlerhafte Steuererfassung erneut ausführen, sie überspringen, oder die Buchung oder das Ereignis als erfasst markieren. Weitere Informationen finden Sie unter [Optionale Steuererfassung](fiscal-integration-for-retail-channel.md#optional-fiscal-registration).
 
-2. Die Optionen **Überspringen** und **Als registriert markieren** im Dialogfenster zur Fehlerbehandlung benötigen die **Überspringen oder als registriert markieren erlauben zulassen** Berechtigung. Aktivieren Sie daher auf der Seite **Berechtigungsgruppen** (**Retail \> Mitarbeiter \> Berechtigungsgruppen**) die **Überspringen oder als registriert markieren** -Berechtigung .
+    > [!NOTE]
+    > Wenn der Parameter **Bei Fehler fortsetzen** aktiviert wird, sind die Parameter **überspringen zulassen** und **als erfasst markieren** automatisch deaktiviert.
+
+2. Die Optionen **Überspringen** und **Als registriert markieren** im Dialogfenster zur Fehlerbehandlung benötigen die Berechtigung **überspringen oder als registriert markiert zulassen**. Aktivieren Sie daher auf der Seite **Berechtigungsgruppen** (**Retail \> Mitarbeiter \> Berechtigungsgruppen**) die Berechtigung **Registrierung oder als registriert markieren**.
 3. Die Optionen **Überspringen** und **Als registriert markieren** ermöglichen es den Operatoren, zusätzliche Informationen einzugeben, wenn die Steuerregistrierung fehlschlägt. Um diese Funktionalität zur Verfügung zu stellen, sollten Sie die **Überspringen** und **Als registriert markieren** Infocodes auf einer Steuerkonnektorgruppe angeben. Die von den Bedienern eingegebenen Informationen werden dann als Infocodetransaktion gespeichert, die mit dem Steuertransaktion verknüpft ist. Weitere Informationen zu Infocodes, finden Sie unter [Infocodes und Infocodegruppen](../info-codes-retail.md).
 
     > [!NOTE]
@@ -200,6 +204,8 @@ Die Optionen für die Fehlerbehandlung, die in der Steuerintegration zur Verfüg
     > - **Steuerdokument** - Ein obligatorisches Dokument, das erfolgreich registriert werden sollte (z.B. ein Steuerbeleg).
     > - **Nicht-steuerliches Dokument** – Ein ergänzender Beleg für die Transaktion oder das Ereignis (z.B. ein Geschenkgutschein).
 
+4. Wenn der Mitarbeiter in der Lage sein muss, den aktuellen Arbeitsgang zu verarbeiten (beispielsweise Erstellung oder Abschluss einer Transaktion), nachdem ein Integritätsprüfungsfehler auftritt, sollten Sie die Berechtigung **Überspringen des Integritätsprüfungsfehler zulassen** auf der Seite **Berechtigungsgruppen** (**Einzelhandel \> Mitarbeiter \> Berechtigungsgruppen**) aktivieren. Weitere Informationen zur Integritätsprüfungsprozedur finden Sie unter[Steuerliche Erfassungsintegritätsprüfung](fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+
 ## <a name="set-up-fiscal-xz-reports-from-the-pos"></a>Einrichten von steuerlichen X/Z-Berichten von der POS aus
 
 Um die Ausführung von X/Z-Berichten aus der POS heraus zu ermöglichen, sollten Sie einem POS-Layout neue Schaltflächen hinzufügen.
@@ -211,3 +217,12 @@ Um die Ausführung von X/Z-Berichten aus der POS heraus zu ermöglichen, sollten
     3. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche **Steuer Z drucken** fest.
     4. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Änderungen in die Kanaldatenbank zu übertragen.
 
+## <a name="enable-manual-execution-of-postponed-fiscal-registration"></a>Aktivieren Sie die manuelle Ausführung der verschobenen steuerlichen Erfassung.
+
+Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktivieren, können Sie einer Schaltfläche ein neues POS-Layout hinzufügen.
+
+- Befolgen Sie auf der Seite **Schaltflächenraster** die Anweisungen in [Hinzufügen einer benutzerdefinierten Schaltfläche zum POS-Layout in der Retail Zentralverwaltung](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), um den Designer zu installieren und ein POS-Layout zu aktualisieren.
+
+    1. Wählen Sie das zu aktualisierende Layout aus.
+    2. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche  auf**Steuererlicher Registrierungsprozess abschliessen**
+    3. Führen Sie auf der Seite **Distributionszeitplan** den Auftrag **1090** aus, um Ihre Änderungen in die Kanaldatenbank zu übertragen.

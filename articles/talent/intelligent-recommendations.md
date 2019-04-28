@@ -1,29 +1,29 @@
 ---
 title: Praktische Empfehlungen
 description: In diesem Thema wird erläutert, wie die Lernfähigkeit einer Maschine verwendet werden kann, um Empfehlungen für Stellen und Stellen-Bewerber bereitzustellen.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c6225a311f5ba0b65b45092a1f626b9d6aff3f5e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304533"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896556"
 ---
 # <a name="intelligent-recommendations"></a>Praktische Empfehlungen
 
@@ -32,8 +32,9 @@ ms.locfileid: "304533"
 Lernfähigkeit einer Maschine kann Personalbeschaffungsmitarbeitern und Vorgesetzten helfen, mögliche Top-Kandidaten für eine Stelle zu identifizieren. Sie kann auch Interessenten helfen, die Position zu finden, die am besten zu ihrem Profil und ihren Interessen passt. Während diese Funktion verwendet werden und Feedback gegeben wird, verbessern sich Empfehlungen.
 
 > [!NOTE] 
-> - Die intelligente Empfehlungsfunktion sind nur mit dem umfassenden Add-On für Neueinstellungen verfügbar.
-> - Um die Kandidaten- und Stellenempfehlungsfunktionen zu aktivieren, muss ein Administrator die Vorschauoptionen aktivieren. Im Administratorcenter in der Registerkarte **Funktionsverwaltung** stellen Sie sicher, dass die Option **Vorschau** auf **Aktiviert** festgelegt ist. Überprüfen Sie dann, ob die einzelnen Optionen **Kandidatenempfehlung** und **Stellenempfehlung** auf **Aktiviert** festgelegt ist.
+> - Die intelligente Empfehlungsfunktion sind nur mit dem [umfassenden Add-On für Neueinstellungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) verfügbar.
+> - Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe der **Administratoreinstellungen** in Attract. Setzen Sie **Kandidatenempfehlung**, **Einzelvorgangsempfehlung** und **Interessentenempfehlung** auf **Aktiviert** fest. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+
 
 ## <a name="candidate-recommendations"></a>Kandidatenempfehlungen
 
@@ -43,4 +44,15 @@ Für jeden möglichen empfohlenen Kandidaten können Sie **Kandidat anzeigen** a
 
 ## <a name="job-recommendations"></a>Stellenempfehlungen 
 
-Wenn ein potenziellen Mitarbeiter die Karriereseite verwendet, um sich für einen Stelle zu bewerben, werden andere offene Stellen in der Organisation angezeigt. Diese Empfehlungen basieren auf früheren Bewerbungen des Interessenten der auf seiner Zusammenfassung oder seinem Kandidatenprofil. Daher helfen Stellenempfehlungen Interessenten, schnell die Stellen zu finden, die am besten für sie passen. Stellenempfehlungen werden für die Interessenten bereitgestellt, wenn mehr als zehn Stellen in der Karriere-Site vorhanden sind. Interessenten können die Details einer Stellenausschreibung von der Empfehlungskarte aus öffnen. Sie können Rückmeldungen zu einer Empfehlung geben, um künftige Empfehlungen zu verbessern.
+Wenn ein potenzieller Mitarbeiter die Karriereseite verwendet, um sich für einen Stelle zu bewerben, empfiehlt Attract andere offene Stellen in der Organisation. Diese Empfehlungen basieren auf früheren Bewerbungen und dem Lebenslauf oder dem Kandidatenprofil des Interessenten. Daher helfen Stellenempfehlungen Interessenten, schnell die Stellen zu finden, die am besten für sie passen. Stellenempfehlungen werden für die Interessenten bereitgestellt, wenn mehr als zehn Stellen in der Karriere-Site vorhanden sind. Interessenten können die Details einer Stellenausschreibung von der Empfehlungskarte aus öffnen. Sie können Rückmeldungen zu einer Empfehlung geben, um künftige Empfehlungen zu verbessern.
+
+## <a name="prospect-recommendations"></a>Interessentenempfehlungen 
+
+Wenn eine neue Position verfügbar wird, kann das Suchen durch alle vergangenen Bewerber und das ganze Talentnetzwerk einige Zeit in Anspruch nehmen. Damit Attract Ihnen helfen kannn, dies zu tun, können Sie die intelligente Lernfähigkeit der Maschinealgorithmen verwenden. Das bedeutet, dass Attract alle Kandidaten anschaut und vorschlägt, wer gut zu der von Ihnen erstellten Stelle passt. Um diese Empfehlungen anzuzeigen, aktivieren Sie die Phase **Interessent** für den Einzelvorgang. Er kann möglicherweise bis zu einer Minute dauern, bis Attract die gesamte Kandidatendatenbank gescannt hat, um Empfehlungen vorzunehmen.
+
+Die Empfehlungen erscheinen als Karten auf der Registerkarte **Interessenten** einer beliebigen Stelle, für die Phase **Interessent** aktiviert ist. Diese Karten führt alle Fähigkeiten im Profil des Interessenten und alle Ausbildungsqualifikationsinformationen auf. Wenn Sie einer Empfehlung suchen, die Sie arbeitet, können Sie als Interessent den Kandidaten für diesen Einzelvorgang hinzufügen.
+
+> [!NOTE]
+> Falls Sie neu mit Attract arbeiten, müssen Sie warten, bis Sie 10 oder mehr Bewerber haben, die vollständige Profile oder Zusammenfassungen haben, bevor Sie diese Funktion verwenden können.
+
+Um mögliche Konflikte in den Empfehlungen zu vermeiden, scannt Attract nur Kandidatenprofile nach Fähigkeiten, Qualifikationen und anderen Suchbegriffen, die mit der Stellenbeschreibung übereinstimmen. Darüber hinaus entfernt Attract persönlich identifizierbare Informationen von Kandidatenprofilen vor der Bewertung.

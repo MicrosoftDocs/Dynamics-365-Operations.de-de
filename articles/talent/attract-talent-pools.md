@@ -1,29 +1,29 @@
 ---
 title: Kandidaten mithilfe von Talentpools sourcen
 description: In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools eingerichtet werden.
-author: ''
+author: andreabichsel
 manager: AnnBe
-ms.date: 10/22/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: cac68799ee5b6e2c8f864acf6d1677a7213b4aaf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304517"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949343"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Kandidaten mithilfe von Talentpools sourcen
 
@@ -34,7 +34,7 @@ Personalbeschaffungsmitarbeiter und Einstellungsmanager können ihre Kandidaten 
 
 ## <a name="create-and-share-a-talent-pool"></a>Erstellen und Freigeben eines Talentpools
 
-Jeder Benutzer mit der Administratorrolle Personalvermittler, Einstellungsmanager oder Attract-Administrator können Talentpools erstellen. Der Besitzer eines Talentpools kann diesen Pool auch für andere Benutzer freigeben, damit Benutzergruppen, insbesondere Personalbeschaffungsmitarbeiter einen gemeinsamen Kandidatenpool berücksichtigen können.
+Jeder Benutzer mit der Administratorrolle Personalbeschaffungsmitarbeiter, Einstellungsmanager oder Attract-Administrator kann Talentpools erstellen. Der Besitzer eines Talentpools kann diesen Pool auch für andere Benutzer freigeben, damit Benutzergruppen, insbesondere Personalbeschaffungsmitarbeiter einen gemeinsamen Kandidatenpool berücksichtigen können.
 
 Beteiligte in einem Talentpool können die Kandidatenliste dieses Pools anzeigen. Sie können dem Pool auch Kandidaten hinzufügen oder daraus entfernen.
 
@@ -44,7 +44,7 @@ Führen Sie die folgenden Schritte aus, um einen Talentpool zu erstellen und fre
 
     Die Registerkarte **Eigene Talentpools** zeigt alle Talentpools, auf die Sie Zugriff haben, und Details zu jedem an. Die Details umfassen den Eigentümer des Pools und die darin enthaltene Anzahl von Kandidaten.
 
-1. Oben rechts wählen Sie **+ Neu** aus, um das Dialogfeld **Talentpool erstellen** zu öffnen.
+1. Oben rechts auf der Seite wählen Sie **Neu** aus, um das Dialogfeld **Talentpool erstellen** zu öffnen.
 1. Geben Sie einen eindeutigen Namen für den Talentpool ein.
 1. Um dem Pool Personen als Beteiligte hinzuzufügen suchen Sie mit der Personenauswahl nach deren Namen und fügen Sie sie der Liste hinzu. Sie können einen Talentpool nur für Benutzer mit der Rolle "Personalvermittler", "Einstellungsmanager" oder "Attract-Administrator" erstellen.
 1. Wählen Sie **Hinzufügen** aus, um den Talentpool zu erstellen.
@@ -70,7 +70,7 @@ Der Besitzer und die Beteiligten dieses Talentpools können dem Talentpool Kandi
 
     - Wenn Sie einen internen Kandidaten hinzuzufügen möchten, können Sie über die E-Mail-Adresse nach der Person suchen. Nach einer erfolgreichen Suche wird die E-Mail-Adresse des Kandidaten, der Vorname und der Nachnamen ausgefüllt. Wenn Ihnen der Lebenslauf des Kandidaten oder zugehörigen Dokumente vorliegen, können Sie an diesem Punkt hochladen. Wählen Sie dann **Hinzufügen** aus, um den Kandidaten dem Talentpool hinzuzufügen.
     - Um einen externen Kandidaten manuell hinzuzufügen, geben Sie hier seine E-Mail-Adresse, den Vornamen und den Nachnamen ein. Wenn Ihnen der Lebenslauf des Kandidaten oder zugehörigen Dokumente vorliegen, können Sie an diesem Punkt hochladen. Wählen Sie dann **Hinzufügen** aus, um den Kandidaten dem Talentpool hinzuzufügen.
-    - Um mehrere Kandidaten hinzuzufügen, wählen Sie die Registerkarte **Über Excel**aus. Sie können dann die entsprechende Microsoft Excel-Vorlage herunterladen, die Details des Kandidaten eingeben, das Excel-Arbeitsblatt speichern und es zur Anwendung hochladen.
+    - Um mehrere Kandidaten hinzuzufügen, wählen Sie die Registerkarte **Über Excel** aus. Sie können dann die entsprechende Microsoft Excel-Vorlage herunterladen, die Details des Kandidaten eingeben, das Excel-Arbeitsblatt speichern und es zur Anwendung hochladen.
 
         Bei Fehlern im Arbeitsblatt erhalten Sie in Meldungen darüber informiert. Sie können die Fehler dann korrigieren und es anschließend erneut versuchen, das Arbeitsblatt hochzuladen. Wenn keine Fehler mehr gefunden werden, wählen Sie **Hinzufügen** aus, um das Arbeitsblatt hochzuladen. Das Arbeitsblatt wird im Hintergrund verarbeitet, und Sie werden benachrichtigt, wenn alle Kandidaten dem Talentpool hinzugefügt wurden.
 
@@ -78,26 +78,35 @@ Der Besitzer und die Beteiligten dieses Talentpools können dem Talentpool Kandi
 
 ## <a name="search-and-view-candidate-profiles"></a>Suchen und Anzeigen von Kandidatenprofilen
 
-Benutzer eines Talentpools können das Profil eines Kandidaten, seine LinkedIn-Informationen, zugehörige Dokumente oder den gesamten Bewerbungsverlauf des Kandidaten anzeigen. Sie können auch die gesamte Kandidatendatenbank nach jedem Kandidaten durchsuchen, der sich je auf eine Stelle in der Organisation beworben hat, oder der je einem Talentpool hinzugefügt wurde.
+> [!NOTE] 
+> Diese Funktion befindet sich derzeit in der Vorschau. Wenn Sie sie ausprobieren möchten, müssen Sie [sie in den Attract-Administratoreinstellungen aktivieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) auf. 
 
-1. Mithilfe des Suchfelds oben auf der Registerkarte **Eigene Talentpools** können Sie die gesamte Kandidatendatenbank durchsuchen.
-1. Suchen Sie unter verschiedenen Profilattributen. Wählen Sie die Suchattributkategorie aus, erstellen Sie eine Suchanfrage und wählen Sie dann die Schaltfläche mit dem Pfeil nach rechts (**-\>**) aus, um die Suche ausführen.
+Mit Talentpools können Sie das Profil eines Kandidaten, seine LinkedIn-Informationen, zugehörige Dokumente und den Bewerbungsverlauf des Kandidaten anzeigen. Sie können die gesamte Datenbank aller Kandidaten durchsuchen, die irgendeinem Talentpool hinzugefügt wurden, einschließlich geschlossener und aktiver Bewerber.
 
-    Sie können Kandidaten nach ihren Namen, den Organisation für die sie arbeiten, den Fähigkeiten, für die Sie markiert wurden, ihren Ausbildungsverlauf, ihre aktuelle Position oder ihren akademischen Grad suchen, sofern diese Informationen in ihrem Profil enthalten sind.
+>[!NOTE]
+> Wenn Sie neue Kandidaten oder Bewerber hinzufügen, kann es bei den neuen Hinzufügungen bis zu 15 Minuten dauern, bis sie für die Suche indiziert sind.
 
-    Sie können eine Suchanfrage erstellen, bei der zwei oder mehr dieser Attribute als Kriterien verwendet werden. Kombinieren Sie die Kriterien, indem Sie einen **und**-Operator verwenden.
+Bei einer verbesserten Sucherfahrung können Sie alle Kandidatendokumente durchsuchen und nach Silbermedallienträgern, Quellen, Qualifikationen, Ausbildung und mehr filtern. In früheren Versionen mussten Sie die Entität angeben, die Sie durchsuchen wollten. Attract kann jetzt alle kandidatenbezogenen Felder durchsuchen und die Ergebnisse in einer Rangfolge anzeigen.
 
-    Werden Kandidaten Ihrer Suchanfrage entsprechen, werden sie in den Suchergebnissen aufgeführt.
+1. Um eine neue Suche durch die Kandidatendatenbank zu starten, geben Sie den Text, nach dem Sie suchen möchten, in das Suchfeld unter der Registerkarte **Talentpools** ein. 
 
-1. Um die Ergebnisse einzugrenzen, können die Suche oben aktualisieren indem Sie das obere Suchfeld verwenden.
+Sie können den Namen des Kandidaten oder irgendwelche Attribute eingeben, nach denen Sie suchen. Um Attribute zu trennen, verwenden Sie ein Leerzeichen.
 
-    Alternativ können Sie die Liste der intelligente Filter auf der rechten Seite verwenden. Diese intelligenten Filter werden dynamisch basierend auf den Suchergebnissen einbezogen.
+Sie können Ihre Ergebnisse entweder eingrenzen, indem Sie Ihre Suchabfrage ändern oder indem Sie die intelligenten Filter auf der linken Seite der Seite verwenden.
 
-    Die Suchergebnisse zeigen die ersten 20 Fähigkeiten, Schulen, die Organisation usw., die in der Kandidatenliste am häufigsten gefunden werden. Sie können weitere Filter für jeden dieser Attribute hinzufügen, um die Suchergebnisse weiter einzuschränken.
+Die Suchergebnisse zeigen Hervorhebungen für die verschiedenen Attribute an, die mit Ihrer Suchabfrage übereinstimmen. Wählen Sie irgendeinen Kandidaten aus, an dem Sie Interesse haben, um sein Profil anzuzeigen.
 
-1. Nachdem Sie einen Kandidaten identifiziert haben, wählen Sie die Zeile für diesen Kandidaten aus, um sein Profil anzuzeigen.
+### <a name="syntax-highlights"></a>Syntax-Hervorhebungen 
 
-Alle Benutzer verfügen über eine allgemeine Ansicht der Kandidatenprofile. Wählen Sie die Zeile für einen Kandidaten in einem Satz aus Suchergebnissen oder einem Talentpool aus, um sein Profil anzeigen. Die Registerkarte **Profil** enthält alle Informationen zu Qualifikationen, Arbeitserfahrung und Ausbildung, die der Kandidat im Karriereportal aktualisiert hat.
+| Bediener | Nutzung                                                      | Beispiel              |
+|----------|------------------------------------------------------------|----------------------|
+| \*       | Suchen nach Teilzeichenfolgen; kann verwendet werden, um alle Datensätze zurückzugeben | Eingabe: Mi\* <br></br> Ergebnis: Alle Datensätze, die Felder enthalten, die mit „Mi” beginnen, wie Microsoft, Mikrosysteme, „Mitte einer Stadt – dort ansässige Unternehmen” oder Middleton beginnen <br></br>Eingabe: \* <br></br> Ergebnis: Alle Datensätze in der Datenbank |
+| “”       | Suchen nach einer exakten Übereinstimmung                                | Eingabe: „Microsoft” <br></br> Ergebnis: Alle Datensätze, die „Microsoft” enthalten                    |
+
+>[!WARNING]
+> Deaktivieren Sie nicht die Relevanzsuche für Ihre Common Data Service-Instanz. Dadurch wird die Suchfunktion in Attract deaktiviert.
+
+Alle Benutzer verfügen über eine allgemeine Ansicht der Kandidatenprofile. Die Registerkarte **Profil** enthält alle Informationen zu Qualifikationen, Arbeitserfahrung und Ausbildung, die der Kandidat im Karriereportal als Teil seiner Bewerbungen angegeben hat.
 
 - Sie können die Kontaktdetails für den Kandidaten anzeigen. Sie können die Informationen bei Bedarf auch bearbeiten oder aktualisieren, indem Sie die Schaltfläche **Details bearbeiten** verwenden.
 
@@ -117,7 +126,7 @@ Sie können Kandidaten aus Suchergebnissen oder aus einem Talentpool an eine bel
 
 1. Suchen Sie mit der Suchoption nach dem Kandidaten und öffnen Sie sein Profil. Alternativ öffnen Sie den Talentpool in der Registerkarte **Eigene Talentpools**, suchen den Kandidaten in Ihrem Talentpool und öffnen sein Profil.
 
-1. Auf der Profilseite des Kandidaten wählen Sie oben rechts **+ Zur Stelle hinzufügen** aus. 
+1. Auf der Profilseite des Kandidaten wählen Sie oben rechts **Zur Stelle hinzufügen** aus. 
      
      Eine Liste der Stellen, deren Einstellungsteam Sie als Personalbeschaffungsmitarbeiter oder Einstellungsmanager angehören, wird angezeigt.
 

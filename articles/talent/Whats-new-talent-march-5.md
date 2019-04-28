@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e6b490a696dc0a00c47e56f57373f330d0e53dde
-ms.sourcegitcommit: 479b8cda7e411830bf1f579fab3692c980dcf850
+ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "782881"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949804"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (5. März 2019)
 
@@ -35,7 +35,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Talent entweder neu od
 
 ### <a name="extending-option-sets-in-attract"></a>Erweitern von Optionsätzen in Attract
 
-In Attract gibt es mehrere Felder, die Optionssätze im Common Data Service (CDS) sind. Neue Funktionen zur Erweiterung der Optionssätze eingeführt, beginnend mit dem Begründungsfeld **Ablehnung**, Feld **Beschäftigungstyp** und dem Feld **Dienstaltertyp**.
+In Attract gibt es mehrere Felder, die Optionssätze in Common Data Service sind. Neue Funktionen zur Erweiterung der Optionssätze eingeführt, beginnend mit dem Begründungsfeld **Ablehnung**, Feld **Beschäftigungstyp** und dem Feld **Dienstaltertyp**.
 
 > [!IMPORTANT]
 > Die Funktion zur Stellenausschreibung auf LinkedIn erfordert die Nutzung der Felder **Beschäftigungstyp** und **Dienstaltertyp** auf der Seite **Stellendetails**. Die Standardwerte in den Feldern werden von LinkedIn unterstützt und angezeigt, wenn die Stelle gebucht wird. Wenn Sie Stellen in LinkedIn veröffentlichen und die vorhandenen Optionssatzwerte für diese Felder ändern, wird die Stelle noch veröffentlicht, aber LinkedIn zeigt keine benutzerdefinierten Werte für **Beschäftigungstyp** und **Dienstaltertyp**.
@@ -70,8 +70,8 @@ Mit dieser Änderung werden die Lohnfelder bei Änderungsanfragen an den vorhand
 ### <a name="other-miscellaneous-bug-fixes"></a>Verschiedene andere Fehlerkorrekturen
 Es gibt weitere kleinere Fehlerkorrekturen in dieser Version.
 
-### <a name="upgrade-to-cds-for-apps"></a>Upgrade auf CDS für Apps
-Die Fristen für das Upgrade auf CDS für Apps kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter [Upgrade auf Common Data Service für Apps](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
+Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Bald verfügbar
 

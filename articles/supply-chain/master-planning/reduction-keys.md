@@ -1,6 +1,6 @@
 ---
-title: Planzahlenverrechnungsschlüssel
-description: Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
+title: Planzahlenverrechnungsschlüssel vorhersagen
+description: Dieses Thema enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 02/28/2019
@@ -19,52 +19,83 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7457aca4ca4d5188bafb497d3052276cfc154ad1
-ms.sourcegitcommit: 704d273485dcdc25c97a222bc0ef0695aad334d2
+ms.openlocfilehash: b915570145a48db7a182b9fce34e1544e3600107
+ms.sourcegitcommit: a95ccf4cee8757c5fb2442a2aaeb45b1e33b6492
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "770915"
+ms.lasthandoff: 04/14/2019
+ms.locfileid: "993043"
 ---
-# <a name="reduction-keys"></a>Planzahlenverrechnungsschlüssel
+# <a name="method-used-to-reduce-forecast-requirements"></a>Methode zur Reduzierung des Planungsbedarfs
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
+Dieses Thema enthält Informationen zu den unterschiedlichen Methoden, die verwendet werden, um die Planungsanforderungen zu reduzieren. Es enthält Beispiele der Ergebnisse der einzelnen Methoden. Es wird auch erklärt, wie Planzahlenverrechnungsschlüsselerstellt, eingerichtet und verwendet werden. Einige Methoden nutzen einen Planzahlenverrechnungsschlüssel, um die Planungsanforderungen zu reduzieren.
 
-<a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Beispiel 1: Prozent - Planzahlenverrechnungsschlüssel-Planungsverringerungsprinzip
----------------------------------------------------------------
+## <a name="methods-that-are-used-to-reduce-forecast-requirements"></a>Methoden, die zur Reduzierung der Planungsanforderungen verwendet werden
+
+Wenn Sie eine Planung in einem Produktprogrammplan integrieren, können Sie auswählen, wie der Planungsbedarf verringert wird, wenn der tatsächliche Bedarf enthalten ist.
+
+Wenn Sie eine Planung in einem Produktprogrammplan einschließen und die Methode auswählen die verwendet wird, um den Planungsbedarfe zu reduzieren, gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**. Im Feld **Planzahlenmodell** wählen Sie Planzahlenmodell. Im Feld **Methode, die verwendet wird, um den Planungsbedarf zu reduzieren** wählen Sie eine Methode aus. Die folgenden Optionen sind verfügbar:
+
+- Keiner
+- Prozent – Planzahlenverrechnungsschlüssel
+- Transaktionen – Planzahlenverrechnungsschlüssel
+- Transaktionen – dynamische Periode
+
+Die folgenden Abschnitte enthalten mehr Informationen zu den einzelnen Optionen.
+
+### <a name="none"></a>Keiner
+
+Wenn Sie **Keine** auswählen, wird der Planungsbedarf während des Produktprogrammplanungslaufs nicht verringert. In diesem Fall erstellt die Produktprogrammplanung geplante Bestellungen, um den geplanten Bedarf (Planungsbedarf) zu erfüllen. Diese Bestellvorschläge halten sich an die vorgeschlagene Menge, unabhängig von anderen Bedarfstypen. Wenn beispielsweise Aufträge platziert werden, erstellt die Produktprogrammplanung zusätzliche Bestellvorschläge, um die Aufträge zu erfüllen. Die Menge des Planungsbedarf wird nicht verringert.
+
+### <a name="percent--reduction-key"></a>Prozent – Planzahlenverrechnungsschlüssel
+
+Wenn Sie **Prozent - Planzahlenverrechnungsschlüssel** auswählen, wird die Prognoseanforderung verringert, und zwar gemäß den vom Planzahlenverrechnungsschlüssel definierten Prozentsätzen und Perioden. In diesem Fall erstellt die Produktprogrammplanung Bestellvorschläge, bei denen die Menge in jeder Periode als geplante Menge × Planzahlenverrechnungsschlüssel berechnet wird. Wenn andere Bedarfstypen vorhanden sind, erstellt die Produktprogrammplanung Bestellvorschläge, um den Bedarf zu liefern.
+
+#### <a name="example-percent--reduction-key"></a>Beispiel: Prozent – Planzahlenverrechnungsschlüssel
 
 Dieses Beispiel verdeutlicht, wie ein Planzahlenverrechnungsschlüssel den Bedarf der Bedarfsplanung verringert, und zwar gemäß den vom Planzahlenverrechnungsschlüssel definierten Prozentsätzen und Perioden.
 
-1. Wählen Sie auf der Seite **Planzahlenverrechnungsschlüssel** die folgenden Positionen.
+Bei diesem Beispiel integrieren Sie die folgende Bedarfsplanung in einem Produktprogrammplan.
 
-   | Rückgeld | Einheit  | Prozentsatz |
-   |--------|-------|---------|
-   |   1    | Monat |   100   |
-   |   2    | Monat |   75    |
-   |   3    | Monat |   50    |
-   |   4    | Monat |   25    |
+| Monat    | Bedarfsplanung |
+|----------|-----------------|
+| Januar  | 1.000           |
+| Februar | 1.000           |
+| März    | 1.000           |
+| April    | 1.000           |
 
+Wählen Sie auf der Seite **Planzahlenverrechnungsschlüssel** die folgenden Positionen.
 
-2. Verknüpfen Sie den Planzahlenverrechnungsschlüssel mit der Deckungsgruppe des Artikels.
-3. Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Prozent - Planzahlenverrechnungsschlüssel** aus.
-4. Erstellen Sie eine Bedarfsplanung von 1000 Stück pro Monat.
+| Änderung | Einheit  | Prozentsatz |
+|--------|-------|---------|
+| 1      | Monat | 100     |
+| 2      | Monat | 75      |
+| 3      | Monat | 50      |
+| 4      | Monat | 25      |
 
-Wird der Umsatzplanungslauf am 1. Januar ausgeführt, wird der Bedarf der Bedarfsplanung entsprechend den Prozentwerten verbraucht, die Sie auf der Seite **Planzahlenverrechnungsschlüssel** angegeben haben. Die folgenden Bedarfsmengen werden in den Produktprogrammplan übertragen.
+Sie weisen den Planzahlenverrechnungsschlüssel der Deckungsgruppe des Artikels zu. Auf der Seite **Produktprogrammpläne** im Feld **Verwendete Methode, um den Planungsbedarfe zu reduzieren** wählen Sie **Prozent - Planzahlenverrechnungsschlüssel** aus.
 
-| Monat                | Erforderliche Stückzahl |
-|----------------------|---------------------------|
-| Januar              | 0                         |
-| Februar             | 250                       |
-| März                | 500                       |
-| April                | 750                       |
-| Mai - Dezember | 1.000                     |
+Wenn Sie die Umsatzplanungslauf am 1. Januar ausführen, wird die Bedarfsplanung entsprechend den Prozentwerten verbraucht, die Sie auf der Seite **Planzahlenverrechnungsschlüssel** angegeben haben. Die folgenden Bedarfsmengen werden in den Produktprogrammplan übertragen.
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Beispiel 2: Buchungen - Planzahlenverrechnungsschlüssel-Planungsverringerungsprinzip
+| Monat                | Geplante Bestellmenge. | Herstellkostenkalkulation    |
+|----------------------|------------------------|----------------|
+| Januar              | 0                      | = 0% × 1,000   |
+| Februar             | 250                    | = 25% × 1,000  |
+| März                | 500                    | = 50% × 1,000  |
+| April                | 750                    | = 75% × 1,000  |
+| Mai - Dezember | 1.000                  | = 100% × 1,000 |
+
+### <a name="transactions--reduction-key"></a>Transaktionen – Planzahlenverrechnungsschlüssel
+
+Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** wählen wird der Planungsbedarf um die Transaktion reduziert, die während der im Planzahlenverrechnungsschlüssel definierten Zeitperioden stattfinden.
+
+#### <a name="example-transactions--reduction-key"></a>Beispiel: Transaktionen – Planzahlenverrechnungsschlüssel
+
 Dieses Beispiel verdeutlicht, wie tatsächliche Aufträge, die in den vom Planzahlenverrechnungsschlüssel definierten Perioden anfallen, den Bedarf der Bedarfsplanung verringern.
 
--   Auf der **Produktprogrammpläne**-Seite im Feld **Reduktionsprinzip** wählen Sie **Buchungen - Planzahlenverrechnungsschlüssel** aus.
+Für dieses Beispiel wählen Sie auf der Seite **Produktprogrammpläne** im Feld **Verwendete Methode, um den Planungsbedarfe zu reduzieren** **Transaktion - Planzahlenverrechnungsschlüssel** aus.
 
 Am 1. Januar lagen die folgenden Aufträge vor.
 
@@ -75,7 +106,7 @@ Am 1. Januar lagen die folgenden Aufträge vor.
 | März    | 451                      |
 | April    | 119                      |
 
-Unter Verwendung derselben Bedarfsplanung von 1000 Stück pro Monat werden die folgenden Bedarfsmengen in den Produktprogrammplan übertragen:
+Wenn Sie die selbe Bedarfsplanung von 1000 Stück pro Monat verwenden, die im vorherigen Beispiel verwendet wurde, werden die folgenden Bedarfsmengen in den Produktprogrammplan übertragen.
 
 | Monat                | Erforderliche Stückzahl |
 |----------------------|---------------------------|
@@ -85,56 +116,114 @@ Unter Verwendung derselben Bedarfsplanung von 1000 Stück pro Monat werden die f
 | April                | 881                       |
 | Mai - Dezember | 1.000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Beispiel 3: Buchungen - dynamische Periode Planungsverringerungsprinzip
-In den meisten Fällen werden Systeme so eingerichtet, das Buchungen Bedarfsplanung innerhalb bestimmter Prognoseperioden reduzieren (Wochen, Monate usw.). Die Perioden werden im Planzahlenverrechnungsschlüssel definiert. Jedoch können die Zeit zwischen zwei Bedarfsplanungspositionen auch eine Periode *implizieren*.
+### <a name="transactions--dynamic-period"></a>Transaktionen – dynamische Periode
 
-1. Erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.
+Wenn Sie **Transaktion - dynamische Periode** auswählen, wird der Planungsbedarf durch die tatsächlichen Auftragsbuchungen verringert, die während der dynamischen Periode stattfinden. Die dynamische Periode erstreckt sich über die aktuellen Planungsdaten und endet beim Beginn der nächsten Planung. In diesem Fall erstellt die Produktprogrammplanung geplante Bestellungen, um den geplanten Bedarf (Planungsbedarf) zu erfüllen. Wenn die tatsächlichen Auftragstransaktionen erteilt werden, werden die Planungsbedarfe reduziert. Die tatsächlichen Transaktionen verbrauchen Teil des Planungsbedarfs.
 
-   | Datum       | Bedarfsplanung |
-   |------------|-----------------|
-   | 1. Januar  | 1.000           |
-   | 5. Januar  | 500             |
-   | 12. Januar | 1.000           |
+Wenn diese Option verwendet wird, tritt das folgende Verhalten auf:
 
-   In dieser Planung gibt es keinen klaren Zeitraum zwischen den Planungsdaten. Zwischen der ersten und zweiten Datumsangabe besteht eine viertägige Spanne und zwischen der zweiten und dritten Datumsangabe besteht eine siebentägige Spanne. Diese verschiedenen Spannen sind die dynamischen Perioden.
-2. Erstellen Sie Auftragspositionen wie folgt:
+- Planzahlenverrechnungsschlüssel sind nicht erforderlich oder werde nicht verwendet. 
+- Wenn die Planung vollständig verringert wird, wird der Planungsbedarf für die aktuelle Planung 0 (null).
+- Wenn keine zukünftige Planung vorhanden ist, wird der Planungsbedarf der letzten eingegebenen Planung verringert.
+- Planungszeiträume sind in der Berechnung der Planungsverringerung enthalten.
+- Positive Tage sind in der Berechnung der Planungsverringerung enthalten.
+- Wenn die tatsächlichen Auftragsbuchungen größer sind als der geplante Bedarf, werden die verbleibenden Buchungen nicht in die nächste Planungsperiode vorgetragen.
 
-   | Datum                             | Auftragsmenge |
-   |----------------------------------|----------------------|
-   | 15. Dezember Im Jahr zuvor | 500                  |
-   | 3. Januar                        | 100                  |
-   | 10. Januar                       | 200                  |
+#### <a name="example-1-transactions--dynamic-period"></a>Beispiel 1: Transaktion – dynamische Periode
 
-Die Planung wird wie folgt reduziert:
+Hier ein einfaches Beispiel, das anzeigt, wie die Methode **Transaktionen - dynamische Periode** funktioniert.
 
--   Der erste Auftrag liegt nicht innerhalb einer Periode. Damit sich keine Planung.
--   Der zweite Auftrag liegt zwischen dem 1. Januar und dem 5. Januar. Damit reduziert er die Planung für den 1. Januar um 100.
--   Der dritte Auftrag liegt zwischen dem 5. Januar und dem 12. Januar. Damit reduziert er die Planung für den 5. Januar um 200.
+Bei diesem Beispiel integrieren Sie die folgende Bedarfsplanung in einem Produktprogrammplan.
 
-Der nächste Bestellvorschlag wird zur Erfüllung der Planung erstellt.
+| Datum       | Bedarfsplanung |
+|------------|-----------------|
+| 1. Januar  | 1.000           |
+| Februar 1 | 500             |
 
-| Bedarfsplanungsdatum | Verringerte Menge |
-|----------------------|------------------|
-| 1. Januar            | 900              |
-| 5. Januar            | 300              |
-| 12. Januar           | 1.000            |
+Sie erstellen auch die folgenden Aufträge.
 
-Hier eine Zusammenfassung der **Buchungen - dynamische Periode**-Verringerung:
+| Datum        | Auftragsmenge |
+|-------------|----------------------|
+| 15. Januar  | 500                  |
+| Februar 15 | 100                  |
 
--   Der Planungsbedarf wird durch die tatsächlichen Auftragsbuchungen verringert, die während der dynamischen Periode stattfinden. Die dynamische Periode erstreckt sich über die aktuellen Planungsdaten und endet beim Beginn der nächsten Planung.
--   Für diese Methode wird kein Planzahlenverrechnungsschlüssel verwendet.
--   Wenn diese Option verwendet wird, tritt das folgende Verhalten auf:
-    -   Wenn die Planung vollständig verringert wird, wird der Planungsbedarf für die aktuelle Planung 0.
-    -   Wenn keine zukünftige Planung vorhanden ist, wird der Planungsbedarf der letzten eingegebenen Planung verringert.
-    -   Planungszeiträume sind in der Berechnung der Planungsverringerung enthalten.
-    -   Positive Tage sind in der Berechnung der Planungsverringerung enthalten.
-    -   Wenn die tatsächlichen Auftragsbuchungen größer sind als der geplante Bedarf, werden die verbleibenden Buchungen nicht in die nächste Planungsperiode vorgetragen.
+In diesem Fall werden die folgenden Aufträge erstellt.
 
+| Bedarfsplanungsdatum | Leistung | Erläuterung                           |
+|--------------------- |----------|---------------------------------------|
+| 1. Januar            | 800      | Planungsanforderungen verringern (= 1,000 – 200) |
+| 15. Januar           | 200      | Auftragsanforderungen             |
+| Februar 1           | 600      | Planungsanforderungen verringern (= 1,000 – 400) |
+| Februar 15          | 400      | Auftragsanforderungen             |
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+#### <a name="example-2-transactions--dynamic-period"></a>Beispiel 2: Transaktion – dynamische Periode
+
+In den meisten Fällen werden Systeme so eingerichtet, das Transaktionen die Bedarfsplanung innerhalb bestimmter Prognoseperioden reduzieren: Wochen, Monate usw. Die Perioden werden im Planzahlenverrechnungsschlüssel definiert. Jedoch können die Zeit zwischen zwei Bedarfsplanungspositionen auch eine Periode *implizieren*.
+
+In diesem Beispiel erstellen Sie eine Bedarfsplanung für die folgenden Datumsangaben und Mengen.
+
+| Datum       | Bedarfsplanung |
+|------------|-----------------|
+| 1. Januar  | 1.000           |
+| 5. Januar  | 500             |
+| 12. Januar | 1.000           |
+
+Beachten Sie, dass es in dieser Planung keine klare Periode zwischen den Planungsdatumsangaben gibt. Zwischen dem ersten und dem zweiten Datum besteht eine viertägige Spanne und zwischen dem zweiten und dem dritten Datum liegt eine siebentägige Spanne. Diese Zeitspannen sind die dynamischen Perioden.
+
+Sie erstellen auch die folgenden Auftragspositionen.
+
+| Datum                             | Auftragsmenge |
+|----------------------------------|----------------------|
+| 15. Dezember Im Jahr zuvor | 500                  |
+| 3. Januar                        | 100                  |
+| 10. Januar                       | 200                  |
+
+In diesem Fall wird die Planung auf folgende Weise reduziert:
+
+- Weil der erste Auftrag nicht innerhalb einer Periode liegt, wird die Planung nicht reduziert.
+- Weil der zweite Auftrag liegt zwischen dem 1. Januar und dem 5. Januar liegt, wird die Planung für den 1. Januar um 100 reduziert.
+- Weil der dritte Auftrag zwischen dem 5. Januar und dem 12. Januar liegt, wird die Planung für den 5. Januar um 200 reduziert.
+
+Deshalb werden die folgenden Aufträge erstellt.
+
+| Bedarfsplanungsdatum             | Leistung | Erläuterung                                                         |
+|----------------------------------|----------|---------------------------------------------------------------------|
+| 15. Dezember Im Jahr zuvor | 500      | Auftragsanforderungen                                            |
+| 1. Januar                        | 900      | Planungsbedarfperiode vom 1. Januar bis zum 5. Januar (= 1.000 - 100 ) |
+| 3. Januar                        | 100      | Auftragsanforderungen                                            |
+| 5. Januar                        | 300      | Planungsbedarfperiode vom 5. Januar bis zum 10. Januar (= 500 - 200 )  |
+| 12. Januar                       | 1.000    | Planungsbedarfperiode vom 12. Januar bis zum Ende                      |
+
+## <a name="create-and-set-up-a-forecast-reduction-key"></a>Erstellen und Einrichten eines Planzahlenverrechnungsschlüssels
+
+Ein Planungsverrechnungsschlüssel wird in den Formularen **Transaktionen - Planzahlenverrechnungsschlüssel** und **Prozentplanzahlenverrechnungsschlüssel**-Methoden zum Reduzieren des Planungsbedarfes verwendet. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssel zu erstellen und einzurichten.
+
+1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Abdeckung \> Planzahlenverrechnungsschlüssel**.
+2. Klicken Sie auf **Neu** oder drücken Sie **STRG+N**, um einen neuen Planzahlenverrechnungsschlüssel zu erstellen.
+3. Im Feld **Planzahlenverrechnungsschlüssel** geben Sie eine eindeutige Kennung für den Planzahlenverrechnungsschlüssel ein. Geben Sie im Feld  **Namen** einen Namen ein. 
+4. Hier können Sie die Perioden sowie die Planzahlenverrechnungsschlüsselprozentsatz in jeder Periode eingeben:
+
+    - Das Feld **Gültigkeitsdatum** gibt das Datum der Erstellung der Periode an. Wenn die Option **Gültigkeitsdatum verwenden** auf **Ja** gesetzt ist, beginnt die Periode am Gültigkeitsdatum. Wenn Sie auf **Nein** festgelegt ist, beginnt der Periodenanfang an dem Tag, an dem die Produktprogrammplanung ausgeführt wird.
+    - Hier können Sie die Perioden definieren, in denen die geplante Planzahlenverrechnung ausgeführt werden soll.
+    - Während einer bestimmten Periode geben Sie den Prozentsatz ein, um den der Planungsbedarf reduziert werden soll. Bei einem positiven Wert wird der Bedarf verringert, bei einem negativen Wert wird er erhöht.
+
+## <a name="use-a-reduction-key"></a>Verwenden eines Planzahlenverrechnungsschlüssels
+
+Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewiesen werden. Gehen Sie folgendermaßen vor, um einen Planzahlenverrechnungsschlüssels eines Artikels der Dispositionssteuerungsgruppe zuzuweisen.
+
+1. Gehen Sie zu **Produktprogrammplanung \> Einstellungen \> Planungshorizont \> Dispositionssteuerungsgruppen**
+2. Wählen Sie im Feld **Planzahlenverrechnungsschlüssel** auf der Registerkarte **Andere**den Planzahlenverrechnungsschlüssel aus, der der Deckungsgruppe zugewiesen werden soll. Der Planzahlenverrechnungsschlüssel gilt dann für die Artikel, die zur Deckungsgruppe gehören.
+3. Wenn der Planzahlenverrechnungsschlüsse eine Reduktion während der Produktprogrammplanung verwendet werden soll, müssen Sie diese Einstellungen in der Absatzplanung oder in den Einstellungen der Produktprogrammplanung definieren. Gehen Sie zu den folgenden Standorten:
+
+    - Produktprogrammpläne \>Einstellungen \>Pläne \> Absatzplanungen
+    - Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne
+
+4. Auf der Seite **Absatzpläne** oder **Produktprogrammpläne** auf dem Inforegister **Allgemeine** im Feld **Methode, um die Planungsbedarfe zu reduzieren**, wählen Sie entweder **Prozent - Planzahlenverrechnungsschlüssel** oder **Transaktionen - Planzahlenverrechnungsschlüssel** aus.
+
+## <a name="reduce-a-forecast-by-transactions"></a>Reduzieren einer Planung durch Transaktionen
+
+Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioen - dynamische Periode** als Methode für das Reduzieren von Planungsbedarfen aktivieren, können Sie angeben, welche Transaktionen die Planung verringert. Auf der Seite **Freigegebene Produkte** auf dem Inforegister **Sonstiges**, im Feld **Planungswert verringern um**, wählen Sie **Alle Transaktionen** wenn alle Transaktionen die Planung verringernn sollen oder **Aufträge**, wenn nur Aufträge die Planung verringern sollen.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Produktprogrammpläne](master-plans.md)
-
-
-
