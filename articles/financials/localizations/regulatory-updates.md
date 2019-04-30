@@ -3,7 +3,7 @@ title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen rechtlichen Updates für Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 02/19/2019
+ms.date: 04/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3beeb77819661de3f6b55766a1f8a5bd1fe023ba
-ms.sourcegitcommit: f6fc90585632918d9357a384b27028f2aebe9b5a
+ms.openlocfilehash: 0bd72bb5bebed84c092142b2b18f8fbbc3d4f711
+ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "832100"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "992835"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -28,12 +28,18 @@ ms.locfileid: "832100"
 
 In diesem Thema werden die rechtlichen Aktualisierungen aufgelistet, die für die Freigabe in Microsoft Dynamics 365 for Finance and Operations unterstützten Lokalisierungen geplant sind. Lieferzeitpläne können sich ändern, und die geplante Funktionalität kann sich ändern oder nicht freigegeben werden. Weitere Informationen finden Sie unter [Microsoft-Richtlinie](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Rechtliche Aktualisierungen unterscheiden sich von den rechtlichen Funktionen. Informationen zu geplanten oder freigegebenen rechtlichen Funktionen finden Sie in den folgenden Ressourcen.
+Gesetzlich Aktualisierungen sind Funktionen, die implementiert werden, um die neue oder geänderte landesspezifische Gesetzgebung zu unterstützen. Informationen zu geplanten und freigegebenen landesspezifischen Funktionen finden Sie in den folgenden Ressourcen:
 
-- [Dynamics 365 und Power-Platform Veröffentlichungshinweise](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Dynamics 365 und Power Platform Versionenhinweise](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Neuheiten in Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
 
-Wenn ein Monat in der Spalte Datum verwendet wird, ist geplant, dass die rechtliche Aktualisierung irgendwann innerhalb dieses Monats erfolgt. Der Liefertermin kann an einem beliebigen Tag innerhalb dieses Monats liegen, nicht nur am ersten Tag des Monats.
+Microsoft bemüht sich, neue gesetzliche Vorgaben so früh wie möglich zu implementieren. Das tatsächliche Lieferdatum hängt vom Gesetzesankündigungstag, der Verfügbarkeit der Anforderungsdetails  von den lokalen Behörden, der Verfügbarkeit der Prüfungstools und von der Größe und von der Komplexität der Änderung ab. 
+
+Wir planen, gesetzliche Aktualisierungen in Aktualisierungen mit einem Versions-Services bereitzustellen, damit Debitoren pünktlich aktualisieren können und am Durchführungsdatum (für buchungsbezogene gesetzliche Aktualisierungen) oder für die erste  erforderliche Berichterstattungsfrist (für die gesetzlichen Aktualisierungen mit der Berichterstellung) bereit sind. Debitoren und Partner können die neuen gesetzlich notwendigen Aktualisierungen in der Vorschau des Frühen Annahme-Programms (PEAP) anzeigen.
+
+Im Fall von späten Ankündigungsdatumsangaben, später Verfügbarkeit von Anforderungsdetails oder von Prüfungswerkzeugen oder außergewöhnlich großen und komplexen Änderungen ist es möglicherweise nicht möglich, eine gesetzliche Aktualisierung über den  allgemeinen Verfügbarkeitstermin einer Monatsaktualisierung bereitzustellen. In diesen Fällen wird die gesetzliche Aktualisierung als Hotfixes für gewisse verfügbare Monatsaktualisierungen versendet.
+
+Die aktuellsten gesetzlichen Aktualisierungspläne finden Sie in der folgenden Tabelle. 
 
 |Geplantes Freigabedatum|Version freigeben|Land|Regulatorisches Update|
 |--------------------|---------------|-------|-------|
@@ -47,7 +53,9 @@ Wenn ein Monat in der Spalte Datum verwendet wird, ist geplant, dass die rechtli
 |      2019. April          |   10.0.1      |    Vereinigtes Königreich     |[MwSt.-Abrechnungsübermittlungsänderungen (Digitale Steuer)](emea-gbr-mtd-vat-integration.md)    |    
 |      2019. April          |   10.0.1      |    Brasilien     |NF-e Neu NT 2018.005         |
 |      2019. April          |   10.0.1      |    Russische Föderation     |Mehrwertsteuererklärungsformat ändert sich ab 2019         |
-|      2019. April          |   10.0.1      |    Russische Föderation     |Änderungen des Mehrwertsteuererklärungsformats ab 2019 (Vertriebs- und Wareneingangsbuchformate)  |
+|      2019. April          |   10.0.1      |    Russische Föderation     |Änderungen des Mehrwertsteuererklärungsformats ab 2019 (Vertriebs- und Wareneingangsbuch) 
+|      Mai 2019            |   10.0.2      | Brasilien      |   SPED ECD Layout 7   |
+
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - Alle geplanten und freigegebenen regulatorischen Updates finden Sie unter [Lifecycle Service - Problemsuche](https://lcs.dynamics.com/Logon/Index) (Anmeldung erforderlich).

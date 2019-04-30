@@ -1,25 +1,25 @@
 ---
 title: Gesprächsplanung und -rückmeldung
 description: Dieses Thema enthält Informationen zu Gesprächsplanungs- und -rückmeldungsaktivitäten in Attract.
-author: ''
+author: hasrivas
 manager: AnnBe
-ms.date: 02/01/2019
+ms.date: 04/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
-ms.author: hasrivas
-ms.openlocfilehash: 7bc5a66bb221cb0ab2c69fcb1013ed48a7c664a6
-ms.sourcegitcommit: 1e32d78868098fd76124bb41363f15c4ec3ea15a
+ms.author: shielas
+ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "374905"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "989936"
 ---
 # <a name="interview-scheduling-and-feedback"></a>Gesprächsplanung und -rückmeldung
 
@@ -28,6 +28,8 @@ ms.locfileid: "374905"
 ## <a name="scheduler-activity"></a>Planungsaktivität
 
 Die Planungsaktivität ist optional und enthält zwei Komponenten: Kandidatenverfügbarkeitsanforderung und Zeitplan. Mit der Kandidatenverfügbarkeitskomponente können Sie E-Mail verwenden, um die Verfügbarkeit des Kandidaten anzufordern. Die Zeitplankomponente bietet die Möglichkeit, Gespräche mit dem Kandidaten und dem Einstellungsteam zu planen.
+
+Um die Planungsaktivität so einzurichten, dass Sie die Kandidaten einbeziehen oder einschränken können, wählen Sie einen Wert im Feld**Planung** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Planungsrunde auslassen möchten, können Sie die Zeitplanaktivität nur externen Kandidaten zuweisen, indem Sie das Feld **Planung** auf  **Externe Kandidaten** festlegen.
 
 ### <a name="candidate-availability-request"></a>Kandidatenverfügbarkeitsanforderung
 
@@ -54,7 +56,7 @@ Es gibt die mehrere Konfigurationen, die für den Gesprächsplaner verfügbar si
 
 2. Wählen Sie die Gesprächsdauer für jedes Gesprächsereignis aus, und klicken Sie dann auf **OK**, um die Erstellung des Zeitplans zu starten.
 
-    Wenn **Empfehlungen** ausgewählt werden, werden Vorschläge angezeigt und das Gesprächsraster wird voraufgefüllt. Sie sind dann in der Lage, die aktuelle Kalenderverfügbarkeit aller ausgewählten Gesprächsleiter anzuzeigen. Darüber hinaus können Sie den Kalender des Kandidaten anzeigen, wenn sie ein interner Kandidat sind.
+    Wenn **Empfehlungen** ausgewählt werden, werden Vorschläge angezeigt und das Gesprächsraster wird voraufgefüllt. Sie sind dann in der Lage, die aktuelle Kalenderverfügbarkeit aller ausgewählten Gesprächsleiter anzuzeigen. Darüber hinaus können Sie den Kalender des Kandidaten anzeigen, wenn sie ein interner Kandidat sind. Für die Befragungspersonen und internen Kandidaten können Sie ihre gebuchten Zeiten, ihre Arbeitszeiten und ihre Abwesenheiten anzeigen und auch identifizieren, ob sie im Kalender bestimmte Zeiten markiert haben, an denen sie anderswo areiten. 
 
 3. Wenn keine Vorschläge verfügbar sind, klicken Sie in der Spalte **Gesprächsleiter** auf einen Zeitrahmen, geben Sie den Gesprächstitel und die Details an, und füllen Sie ggf. Informationen zum Ort auf. Falls gewünscht, können Sie den **Skype for Business**-Link für das Gespräch einbeziehen.
 
@@ -73,19 +75,30 @@ Es gibt die mehrere Konfigurationen, die für den Gesprächsplaner verfügbar si
 
     Gesprächsleiterantworten werden erfasst und in Attract angezeigt. Wenn ein Gesprächsleiter die Einladung ablehnt, werden Sie benachrichtigt, um eine Änderung vorzunehmen. Um ihre Antwort in der Rasteransicht **Planer** anzuzeigen, klicken Sie auf das Blasen-Symbol.
 
-[![Attract-Personalbeschafferansicht einer Gesprächsleiterantwort](./media/schedule-interviewer-response.png)](./media/schedule-interviewer-response.png)
+[![Attract-Personalbeschafferansicht einer Gesprächsleiterantwort](./media/schedule-interviewer-response2.png)](./media/schedule-interviewer-response2.png)
 
 7. Wenn der Gesprächszeitplan für den Kandidaten freigegeben werden kann, klicken Sie auf **Zum Kandidaten senden** Sie können die Gesprächsleiternamen und -zeitrahmen für den Kandidaten ausblenden oder anzeigen.
 
-8. Wählen Sie eine E-Mailvorlage aus und senden Sie die Gesprächszusammenfassung an den Kandidaten. Der Kandidat kann diese Informationen in seiner E-Mail sowie im Kandidatenportal anzeigen.
+8. Wählen Sie eine E-Mail-Vorlage aus und senden Sie die Gesprächszusammenfassung an den Kandidaten. Der Kandidat kann diese Informationen in seiner E-Mail sowie im Kandidatenportal anzeigen.
     
 >[!NOTE] 
 > Die Kalenderverfügbarkeit eines Kandidaten wird nur dann angezeigt, wenn der Kandidat intern ist. Ebenso können nur interne Kandidaten verwendet werden, um Gesprächszeitplanempfehlungen zu erweitern. Derzeit erhalten Kandidaten (extern oder intern) keine E-Mail-Besprechungseinladung. Stattdessen erhält der Kandidat nur eine Zusammenfassung der Gespräche.
 
-## <a name="feedback-activity"></a>Feedback-Aktivität
+Kandidaten erhalten eine E-Mail, die das Interview zusammenfasst. Die E-Mails enthalten eine .ics-Datei, die in ihrer persönlichen Kalendern gespeichert werden kann, um einfach darauf zugreifen und die Benachrichtigungen anzeigen zu können.
 
-Die Rückmeldungsaktivität einer Stellenvorlage ist optional. Diese Aktivität ermöglicht es Gesprächsteilnehmern, Empfehlungen oder Feedback-Kommentare für einen Bewerber einzugeben. Wenn das Feld **Feedbackteilnehmer von Einstellungsteam erben** ausgewählt ist, werden der Personalbeschaffer, der zukünftige Vorgesetzte und die Gesprächsleiter automatisch in der Rückmeldungs-Aktivität eingegeben. Organisationen können Gesprächsleitern erlauben, Feedback anderer Personen anzuzeigen, bevor sie ihr eigenes Feedback senden. Organisationen können Gesprächsleitern auch erlauben, ihr Feedback nach dem Senden zu bearbeiten. Gesprächsleiter werden daran erinnert, Rückmeldungen für die Gespräche zu senden, die sie vor kurzem auf Basis der Voreinstellungskonfiguration als Teil der Stellenvorlage geführt haben. Der zukünftige Vorgesetzte oder ein Personalbeschaffer für die Stelle kann einen Gesprächsleiter auch manuell daran erinnern, Feedback zu senden.
+>[!TIP] 
+> Falls Sie den Gesprächsplan den Kandidaten erneut senden, erhalten diese einen anderen .ics-Dateianhang. Es wird empfohlen, die E-Mail-Vorlagen für die Gesprächszusammenfassung des Kandidaten zu aktualisieren, um sicherzustellen, dass Kandidaten das zuvor hinzugefügte Gesprächsereignis löschen und keine Duplikate im Kalender sehen. 
+
+## <a name="feedback-activity"></a>Feedbackaktivität
+
+Die Rückmeldungsaktivität einer Stellenvorlage ist optional. Diese Aktivität ermöglicht es Gesprächsteilnehmern, Empfehlungen oder Feedback-Kommentare für einen Bewerber einzugeben. 
+
+Um die Kandidaten zum Abgeben von Feedback einzubeziehen oder einzuschränken, wählen Sie einen Wert im Feld **Wer sollte der Befragungspersonen Rückmeldung geben** aus.  Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Planung überspringen möchten, legen Sie das Feld auf**Wer sollte der Befragungspersonen Rückmeldung geben** auf **Externe Kandidaten** fest.
+
+Wenn Sie das Feld **Feedbackteilnehmer von Einstellungsteam erben** ausgewählt habent, werden der Personalbeschaffer, der zukünftige Vorgesetzte und die Gesprächsleiter automatisch in der Rückmeldungs-Aktivität eingegeben. Organisationen können Gesprächsleitern erlauben, Feedback anderer Personen anzuzeigen, bevor sie ihr eigenes Feedback senden. Organisationen können Gesprächsleitern auch erlauben, ihr Feedback nach dem Senden zu bearbeiten. Gesprächsleiter werden daran erinnert, Rückmeldungen für die Gespräche zu senden, die sie vor kurzem auf Basis der Voreinstellungskonfiguration als Teil der Stellenvorlage geführt haben. Der zukünftige Vorgesetzte oder ein Personalbeschaffer für die Stelle kann einen Gesprächsleiter auch manuell daran erinnern, Feedback zu senden.
 
 ## <a name="interview-activity"></a>Gesprächsaktivität
 
-Die Gesprächsaktivität ist eine optionale Aktivität mit drei Komponenten: Kandidatenverfügbarkeitsanforderung, Zeitplan und Rückmeldung. Verwenden Sie die Gesprächsaktivität in der Stellenvorlage, wenn Sie alle Kandidatenverfügbarkeitsanforderungen, Zeitpläne und Rückmeldungen im Rahmen des Prozesses statt einzeln im Rahmen des Einstellungsprozesses verwenden möchten.
+Die Gesprächsaktivität ist eine optionale Aktivität mit drei Komponenten: **Kandidatenverfügbarkeitsanforderung**,**Zeitplan** und **Rückmeldung**. Verwenden Sie die Gesprächsaktivität in der Stellenvorlage, wenn Sie die gesamte Kandidatenverfügbarkeitsanforderung, den Zeitplan und die Rückmeldung als Teil des Prozesses einbeziehen möchten, anstatt sie einzeln als Teil des Einrichtungsprozesses zu verwenden.
+
+Um Kandidaten einzubeziehen oder zu beschränken, die befragt werden sollen, wählen Sie einen Wert im Feld **Wen befragen Sie** aus. Die verfügbaren Optionen sind **Alle Kandidaten**, **Externe Kandidaten** und **Interne Kandidaten**. Wenn Sie zum Beispiel interne Kandidaten in der ersten Runde der Befragung überspringen möchten, legen Sie das Feld auf**Wen befragen Sie** auf **Externe Kandidaten** fest.

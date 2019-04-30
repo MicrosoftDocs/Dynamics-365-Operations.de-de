@@ -1,9 +1,9 @@
 ---
 title: Überblick über Kreditorenrechnungen
 description: Dieser Artikel enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 03/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
-ms.author: shpandey
+ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e563688b46c556ffbf46f9d20d9b9f248d26e02c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 1d7cec48b1e01d308cfc67260ac82a50a8d76844
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "329757"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975801"
 ---
 # <a name="vendor-invoices-overview"></a>Überblick über Kreditorenrechnungen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dieser Artikel enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren. 
 
-<a name="vendor-invoices"></a>Kreditorenrechnungen
----------------
+## <a name="vendor-invoices"></a>Kreditorenrechnungen
 
 Eine Kreditorenrechnung für eine Bestellung ist eine Rechnung, die produziert wird, wenn Produkte oder Dienstleistungen gemäß einer vom Kreditor getätigten Bestellung zugestellt wurden. Die Kreditorenrechnung enthält eine Kopfzeile und eine oder mehrere Positionen für Artikel oder Dienstleistungen. Mit der Kreditorenrechnung wird der Zyklus aus Bestellung, Produktempfang und Kreditorenrechnung abgeschlossen. 
 
@@ -79,8 +79,15 @@ Weitere Informationen finden Sie unter [Eingang von Kreditorenrechnungen erfasse
 
 Mehrere Rechnungen können zur gleichen Zeit bearbeitet und gleichzeitig gebucht werden. Wenn Sie mehrere Rechnungen erstellen müssen, verwenden Sie die Seite **Ausstehende Kreditorenrechnungen**. Wenn sie mehrere Kreditorenrechnungen buchen und drucken müssen, verwenden Sie die Seite "Rechnungsgenehmigungserfassung". Wenn Sie die Rechnungsgenehmigungserfassung verwenden, muss mindestens ein Produktzugang der Bestellung und eine Rechnung für die Bestellung in einem Rechnungsbuch gebucht sein. Die Finanzdaten für die Rechnung stammen aus der im Register gebuchten Rechnung.
 
+## <a name="recovering-vendor-invoices-that-are-in-use"></a>Wiederherstellen von Kreditorenrechnungen, die verwendet werden
 
-Weitere Informationen finden Sie unter ''.
+Während eine Kreditorenrechnung verwendet wird, kann sie von keinem anderen Benutzer bearbeitet werden. Allerdings könnte der Zustand einer Rechnung auch anzeigen, dass die Rechnung verwendet wird, auch wenn diese nicht aktiv bearbeitet wird. Beispielsweise antwortet die Anwendung möglicherweise nicht mehr, weil die Rechnung bearbeitet wurde, oder weil ein Benutzer möglicherweise versehentlich die Rechnung in der Anwendung offen gelassen hat.
+
+Sie können die Seite **Kreditorenrechnung wiederherstellen** verwenden, um Kreditorenrechnungen wiederherzustellen oder freizugeben, die mehr als vier Stunden verwendet wurden, sodass sie bearbeitet werden können. Sie können diese Seite in der Navigation **Periodische Aufgabe** oder eine Kachel im Feld **Kreditorenrechnungseintrag** im Arbeitsbereich öffnen. Nachdem die Rechnung wiederhergestellt ist, wird sie zur Verarbeitung auf der Seite **Kreditorenrechnung** verfügbar.
+
+Auf die Seite **Wiederherstellen von Kreditorenrechnungen** kann nur zugegriffen werden, wenn die Sicherheitsberechtigung und die Rechte für das **Wiederherstellen der Kreditorenrechnungen in Bearbeitung** Ihnen zugewiesen wurde. Zudem muss der Parameter **Zulassen der Kreditorenrechnungswiederherstellung** auf der Seite **Kreditorenkontenparameter** aktiviert werden.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
  - [Kreditorenrechnungsrichtlinien einrichten](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 

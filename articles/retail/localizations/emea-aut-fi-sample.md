@@ -17,180 +17,469 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 1278b9f631b61d115a092df4191c0dd7688d3df1
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 692afd9dc6302ceda0e61b1b42affd775b9a3ac9
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773367"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950347"
 ---
-# <a name="fiscal-registration-service-integration-sample-for-austria"></a>Beispiel der Steuerregistrierungsserviceintegration für Österreich
+# <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema betrifft Dynamics 365 for Retail und Dynamics 365 for Finance and Operations. 
+## <a name="introduction"></a>Einführung
 
-Die Microsoft Dynamics 365 for Retail-Funktionen für Österreich umfassen ein Beispiel der Integration von POS mit einem externen Steuerregistrierungsservice, um die lokalen steuerlichen Anforderungen von Kassen in Österreich abzudecken. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronic Fiscal Register)](http://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](http://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Das Beispiel wird in Form eines Quellcodes bereitgestellt und ist Teil der Retail SDK.
-Microsoft liefert keine Hardware oder Software oder Dokumentation von EFSTA. Informationen dazu, wie Sie die EFR-Lösung erhalten und betreiben erhalten Sie von [EFSTA](http://efsta.org/kontakt/).
+Um die lokalen steuerlichen Anforderungen für Kassen in Österreich zu erfüllen, umfassen die Microsoft Dynamics 365 for Retail-Funktionen für Österreich eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](http://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](http://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardare station aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 
-BEISPIELCODE-HINWEIS
+Microsoft gibt keine Hardware, Software oder Dokumentation von EFSTA aus frei. Um Informationen darüber zu erhalten, wie Sie die EFR-Lösung beziehen und betreiben, wenden Sie sich an [EFSTA](http://efsta.org/kontakt/).
 
-DIESER BEISPIELCODE WIRD IM IST-ZUSTAND ZUR VERFÜGUNG GESTELLT. MICROSOFT ÜBERNIMMT KEINE GARANTIEN, WEDER AUSDRÜCKLICH NOCH ANGEDEUTET ZUR EIGNUNG FÜR EINEN BESTIMMTEN ZWECK, ZUR RICHTIGKEIT ODER VOLLSTÄNDIGKEIT VON ANTWORTEN, VON ERGEBNISSEN ODER BEDINGUNGEN DER HANDELSÜBLICHKEIT. DAS RISIKO DER VERWENDUNG ODER DER ERGEBNISSE BEI DER VERWENDUNG DIESES BEISPIELCODES LIEGT VOLLSTÄNDIG BEIM BENUTZER.
-TECHNISCHER SUPPORT WIRD NICHT BEREITGESTELLT. DIESER CODE DARF NICHT WEITERGEGEBEN WERDEN, ES SEI ES DENN, ES LIEGT EIN LIZENZVERTRAG MIT MICROSOFT VOR, DER IHNEN DIES GESTATTET.
-
-## <a name="overview"></a>Übersicht
-
-Informationen zu allgemeinen POS-Szenarien und Funktionen, die für Debitoren in allen Ländern oder Regionen verfügbar sind, finden Sie in der [Microsoft Dynamics 365 for Retail Dokumentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
-
-### <a name="integration-retail-pos-with-the-efr"></a>Integration von Retail POS in das EFR
-
-Retail enthält ein Beispiel für die Integration von POS mit spezifischem zertifizierten Steuerregistrierungsservice für Österreich. Es wird angenommen, dass der Service auf einem Computer in der Client-Infrastruktur gehostet wird und mit der POS-Hardwarestation gekoppelt ist. Das Beispiel wird als POS-Quellcode, Hardwarestation und Handelslaufzeiterweiterungen implementiert, und ist im Retail Software Development Kit (SDK) verfügbar.
-
-
-### <a name="austria-specific-pos-scenarios-and-features"></a>POS-Szenarien und Funktionen spezifisch für Österreich
+## <a name="scenarios"></a>Szenarien
 
 Die folgenden Szenarien werden im Beispiel für die Integration des Steuerregistrierungsservice für Österreich abgedeckt:
-   - Registrierung der Bargeldbuchungen in der Steuerkasse (EFR):
-      - Senden von detaillierten Buchungsdaten (Verkaufspositionsinformationen, Rabatte, Zahlungen, Steuern) an den Steuerregistrierungsservice;
-      - Erfassen einer Antwort vom Steuerregistrierungsservice einschließlich einer digitalen Anmeldung und einem Link zur registrierten Transaktion;
-      - Aufdrucken der Bonsteuergruppendaten und verweis auf die registrierte Transaktion in der Steuerregistersoftware als ein QR-Code.
-  - Registrierung der Einlagen in der Steuerkasse (EFR) als eine bargeldlose Transaktion:
-      - Ausstellen einer Geschenkkarte;
-      - Erfassung der Debitorenkontoeinlage
-      - Registrierung der Auftragseinlage.
-  - Registrierung von POS-bezogenen Ereignissen oder Transaktionen bei der Steuerkasse (EFR) als eine bargeldlose Transaktion:
-      - Schicht öffnen/schließen
-      - Anfangsbetrag / Bareinlage / Zahlungsmittel entfernen;
-      - Preisüberschreibung;
-      - MwSt.-Überschreibung;
-      - Bonkopie drucken;
-      - Kassenlade öffnen;
-      - X-Bericht drucken;
-      - Z-Bericht drucken;
-  - Erweiterung für Abrechnungen am Tagesende (X- und Z-Steuerberichte) durch spezifische Felder für Österreich:  
-      - Gesamtanzahl der verkaufen Artikel, Produkte oder Dienstleistungen, die an den Debitor geliefert wurden;
-      - Nach Steuersätzen aufgeschlüsselte Verkäufe;
-      - Aufschlüsselung von Erträgen nach Kassierer-/Kassenoperator;
-      - Buchungen für Buchungsstornierungen ausgeführt, Preisrabatte, Retouren, negativer Umsatz, um die tägliche Verkäufe verringert werden;
-      - Nullverkäufe (Geschenke)
-  - Fehlerbehebung einschließlich der folgenden Optionen:
-      - Wiederholen der Steuerregistrierung, wenn möglich; z. B., wenn der Steuerregistrierungsservice nicht verfügbar ist;
-      - Überspringen der Steuerregistrierung, einschließlich der Informationscodes, um den Grund des Fehlers und zusätzliche Informationen zu erfassen;
-      - Integritätsprüfung des Steuerregistrierungsservice, vor der Buchung von Buchungsdaten in Dynamics 365 HQ.
 
-## <a name="setting-up-retail-for-austria"></a>Einrichten von Retail für Österreich
+- Registrierung der Bargeldbuchungen im Steuererfassungsdienst:
 
-In diesem Abschnitt werden die Retail-Einstellungen beschrieben, die für Österreich spezifisch und empfohlen sind. Weitere Informationen zum Einrichten von Retail finden Sie in der [Microsoft Dynamics 365 for Retail-Dokumentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/index).
+    - Senden Sie detaillierte Buchungsdaten zum Steuererfassungsdienst. Diese Daten beinhalten Informationen zu Verkaufspositionen sowie Informationen über Rabatte, Zahlungen und Steuern.
+    - Erfassen Sie eine Antwort vom Steuererfassungsdienst. Diese Antwort beinhaltet eine digitale Signatur und einen Link zur erfassten Buchung.
+    - Erfassen Sie Steuern und ordnen Sie diese den Steuercodes des Erfassungsdiensts zu.
+    - Drucken Sie den QR-Code für eine erfasste Buchung auf den Beleg.
 
-Um die Österreich-spezifischen Retail-Funktionen zu verwenden, müssen Sie diese Aufgaben ausführen:
-- Legen Sie das Feld **Land/Region** in der primären Adresse der juristischen Person auf AUT (Österreich) fest;
-- Legen Sie das Feld **ISO-Code** im POS-Funktionsprofil der einzelnen Shops in Österreich auf AT (Österreich) fest.
+- Die Erfassung von Geschenkkartenvorgängen und Debitoreneinzahlungen als Sachbuchungen im Steuererfassungsdienst.
 
-Spezifische Einstellungen für Österreich können in zwei Gruppen eingeteilt werden:
-- Allgemeine Einstellungen
-- EFS-spezifische Einstellungen
+    - Stellen Sie eine Geschenkkarte aus oder laden Sie sie mit Geld auf.
+    - Erfassen Sie eine Debitorenkonto-Einzahlung.
+    - Erfassen Sie eine Debitorenauftragseinzahlung.
 
-### <a name="general-settings"></a>Allgemeine Einstellungen
+- Die Erfassung von Sachbuchungen und Ereignissen im Steuererfassungsdienst:
 
-Sie müssen die folgenden allgemeinen Einstellungen für Österreich angeben:
-1. Richten Sie die folgenden Parameter für Mehrwertsteuer entsprechend der Anforderungen für Österreich ein:
-    - Mehrwertsteuercodes;
-    - Mehrwertsteuergruppen;
-    - Artikel-Mehrwertsteuergruppen;
-    - Mehrwertsteuereinstellungen in Artikeln (Artikel-Mehrwertsteuergruppen für Verkauf).
+    - Schlicht öffnen und Schicht schließen
+    - Anfangsbetrag, Bareinlage und Zahlungsmittelentfernung
+    - Preisüberschreibung
+    - MwSt.-Überschreibung
+    - Belegkopie drucken
+    - Kassenlade öffnen
+    - X-Bericht drucken
+    - Z-Bericht drucken
 
-Weitere Informationen dazu, wie die Mehrwertsteuer in Microsoft Dynamics 365 for Finance and Operations und in Retail eingerichtet und verwendet wird, finden Sie unter [Mehrwertsteuerüberblick](https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+- Drucken von Tagesendabrechnungen (X/Z-Berichte) die spezifische Felder für Österreich enthalten:
 
-2. Aktualisieren Sie auf der Seite **Alle Einzelhandelsgeschäfte** die Details der Einzelhandelsgeschäfte. Legen Sie genauer die folgenden Parameter fest:
-    - Legen Sie im Feld **Mehrwertsteuergruppe** die Mehrwertsteuergruppe fest, die für Verkäufe an den Standardeinzelhändlerkunden verwendet werden soll.
-    - Aktivieren Sie das Kontrollkästchen **Preise inkl. Mehrwertsteuer**
-    - Legen Sie das Feld **Shopname** fest, damit der Unternehmensnamen enthalten ist. Durch diese Änderung wird sichergestellt, dass der Unternehmensname auf dem Verkaufsbeleg erscheint. Alternativ können Sie den Unternehmensnamen im Verkaufsbonlayout als Freiformattext hinzufügen.
-    - Legen Sie das Feld **Steueridentifikationsnummer** fest, damit die Unternehmenskennnummer enthalten ist. Durch diese Änderung wird sichergestellt, dass die Identifikationsnummer auf dem Verkaufsbeleg erscheint. Alternativ können Sie die Identifikationsnummer im Verkaufsbonlayout als Freiformattext hinzufügen.
+    - Gesamtanzahl von Produkten oder Dienstleistungen, die an Debitoren geliefert wurden
+    - Aufschlüsselung von Verkäufen nach Steuersatz
+    - Aufschlüsselung von Zahlungen nach Kassierer-/Kassenoperator
+    - Preisrabatte und Retouren, die Tagesumsatz verringern
+    - Nullverkäufe (Geschenke)
 
-3. POS-Funktionsprofile einrichten:
-    - Richten Sie im Inforegister **Bonnummerierung** die Belegnummerierung ein. 
-    - Erstellen oder Aktualisieren Sie die Datensätzen für die Belegbuchungstypen **Verkauf**, **Auftrag** und **Retoure**.
+- Fehlerbehebung, wie beispielsweise die folgenden Optionen:
 
-4. Nehmen Sie die erforderlichen Änderungen an den **Bonlayouts** vor:
-    - Ändern Sie den Wert des Felds **Druckverhalten** für das Bonlayout auf **Immer drucken**.
-    - Im Bonlayoutdesigner nehmen Sie diese Änderungen vor:
-        - Fügen Sie mindestens die folgenden Felder dem **Kopfzeile**-Abschnitt des Bonlayouts hinzu:
-            - Ändern Sie die Felder **Shopname** und **Steueridentifikationsnummer**, sodass der Unternehmensname und die Identitätsnummer auf den Bons gedruckt werden. Alternativ können Sie den Unternehmensnamen und die Identitätsnummer im Vertriebszugangslayout als Freiformattext hinzufügen.
-            - **Shopadresse**, **Datum**, **Zeit 24 h**, **Bonnummer** und **Registernummer**
-    - Fügen Sie dem Abschnitt **Positionen** des Bonlayouts mindestens das folgende Feld hinzu: **Artikelname**, **Mge**, **Gesamtpreis mit Steuer**.
-    - Fügen Sie mindestens die folgenden Felder dem **Fußzeile**-Abschnitt des Bonlayouts hinzu:
-        - Ändern Sie Steuerfelder, damit die Bonsteuerbeträge für jeden Steuersatz gedruckt werden. Beispiel: Fügen Sie die Felder **Steuerkennung**, den **Steuersatz** und die **Steuerbeträge** einer Position des Layouts hinzu.
-        - Ändern Sie die Zahlungsfelder, damit die Zahlungsbeträge für jede Zahlungsmethode gedruckt werden. Beispiel: Fügen Sie die Felder **Name des Zahlungsmittels** und **Betrag des Zahlungsmittels** einer Position des Layouts hinzu.
+    - Versuchen Sie die Steuererfassung erneut, falls ein Neuversuch möglich ist, wie z. B. wenn der Steuererfassungsdienst nicht verfügbar ist, nicht bereit ist oder nicht reagiert.
+    - Verschieben Sie die Steuererfassung.
+    - Überspringen Sie Steuererfassung, oder markieren Sie die Buchung als erfasst, und schließen Sie Infocodes ein, um den Grund für den Fehler und zusätzliche Informationen zu erfassen.
+    - Überprüfen Sie die Verfügbarkeit des Steuererfassungsdiensts, bevor eine neue Verkaufsbuchung geöffnet wird oder eine Verkaufsbuchung abgeschlossen wird.
 
-### <a name="efrspecific-settings"></a>EFS-spezifische Einstellungen
+### <a name="default-data-mapping"></a>Standarddatenzuordnung
 
-Bevor Sie mit der Definition EFR-spezifischer Einstellungen beginnen, achten Sie bitte darauf, dass alle Schritte der **Bereitstellungsrichtlinien für Kassen für Österreich** ausgeführt wurden.
+Die folgende Standarddatenzuordnung ist in der Steuerbeleganbieter-Konfiguration enthalten, die als Teil des Steuerintegrationsbeispiels bereitgestellt wird:
 
-1. Konfigurieren Sie die Mehrwertsteuersatzzuordnung: **Mehrwertsteuersatzzuordnung** ist als Teil des Steuerintegrationsbeispiels im **Funktionales Profil des Steuer-Connectors** enthalten:
+- Mehrwertsteuer-(MwSt.)-Satzzuordnung:
 
-    A: 20,00; B: 10,00; C: 13,00; D: 0,00; E: 19,00; F: 7,00
+    *A: 20,00; B: 10,00; C: 13,00; D: 0,00; E: 19,00; F: 7,00*
 
-Überprüfen Sie die Standardzuordnungswerte und korrigieren Sie ihn falls erforderlich.
+### <a name="gift-cards"></a>Geschenkkarten
 
-2. Richten Sie den Steuergruppencode zum Drucken auf den Bon ein: Zum Drucken des Steuergruppencodes auf dem Bon (zum Beispiel "A", "B") muss das Feld **Code drucken** für Mehrwertsteuer im Formular **Mehrwertsteuercodes** ausgefüllt werden.
+Das Steuererfassungsdienst-Integrationsbeispiel implementiert die folgenden Regeln bezüglich Geschenkkarten:
 
-3. Konfigurieren Sie benutzerdefinierte Felder, damit sie in den Bonlayouts für Verkaufsbons verwendet werden können: Sie können die Sprachtext- und benutzerdefinierte Felder konfigurieren, die in den POS-Bonlayouts verwendet werden. Das Standardunternehmen des Benutzers, der die Boneinrichtung erstellt, sollte die gleiche juristische Person sein, in dem die Sprachtexteinstellung erstellt wird. Alternativ sollten dieselben Sprachtexte im Standardunternehmen des Benutzers und in der juristischen Person des Shops verwendet werden, für den das Setup erstellt wird.
+- Schließen Sie Verkaufspositionen aus, die sich auf die Vorgänge *Geschenkkarte ausstellen* und *Zu Geschenkkarte hinzufügen* aus einer Bargeldbuchung beziehen. Anstatt diese Positionen als Teil einer Bargeldbuchung zu erfassen, erfassen Sie sie als getrennte Sachbuchung im Steuererfassungsdienst.
+- Drucken Sie keine Steuergruppenaufschlüsselung und keinen QR-Code auf einen Beleg, wenn der Beleg nur aus Geschenkkartenpositionen besteht.
+- Drucken Sie den Gesamtbetrag von Geschenkkarten, die in einer Buchung getrennt vom Bargeldbuchungsbetrag auf dem Beleg ausgestellt oder erneut belastet wurden.
+- Speichern Sie berechnete Zahlungsregulierungspositionen in der Kanaldatenbank mit einem Verweis auf eine entsprechende Steuerbuchung.
+- Zahlung per Geschenkkarte wird als eine normale Zahlung betrachtet.
 
-Fügen Sie auf der Seite **Sprachentext** die folgenden Datensätze für die Beschriftungen der benutzerdefinierten Felder für Bonlayouts hinzu. Beachten Sie, dass Sprach-ID, Textkennung und Textwerte, die in der Tabelle dargestellt werden, nur Beispiele sind. Sie können sie ändern, damit sie Ihre Anforderungen erfüllen. Allerdings müssen die Textkennungswerte, die Sie verwenden, eindeutig sein und größer oder gleich 900001 sein.
+### <a name="customer-deposits-and-customer-order-deposits"></a>Debitoreneinzahlungen und Debitorenauftragseinzahlungen
+
+Das Integrationsbeispiel des Steuererfassungsdiensts implementiert die folgenden Regeln in Bezug auf Debitoreneinzahlungen und Debitorenauftragseinzahlungen:
+
+- Erfassen Sie eine Sachbuchung, wenn eine Buchung eine Debitoreneinzahlung ist.
+- Erfassen Sie eine Bargeldbuchung, wenn eine Buchung nur eine Debitorenauftragseinzalung oder eine Debitoren-Auftragseinzahlungsrückerstattung enthält.
+- Ziehen Sie den Debitorenauftragseinzahlungsbetrag von den Zahlungspositionen ab, wenn ein hybrider Kundenauftrag erstellt wird.
+- Speichern Sie berechnete Zahlungsregulierungspositionen in der Kanaldatenbank mit einem Verweis auf eine Steuerbuchung für einen hybriden Debitorenauftrag.
+
+### <a name="limitations-of-the-sample"></a>Einschränkungen des Beispiels
+
+Der Steuererfassungsdienst unterstützt nur Szenarien, bei denen die Mehrwertsteuer im Preis enthalten ist. Daher muss die Option **Preis in Mehrwertsteuer enthalten** auf **Ja** sowohl für Einzelhandelsgeschäfte als auch Debitoren festgelegt werden.
+
+## <a name="set-up-retail-for-austria"></a>Retail für Österreich einrichten
+
+In diesem Abschnitt werden die Retail-Einstellungen beschrieben, die für Österreich spezifisch und empfohlen sind. Weitere Informationen zum Einrichten von Retail finden Sie in der [Microsoft Dynamics 365 for Retail-Dokumentation](../index.md).
+
+Um die Österreich-spezifischen Retail-Funktionen zu verwenden, müssen Sie die folgenden Einstellungen angeben:
+
+- Legen Sie in der primären Adresse der juristischen Person das Feld **Land/Region** auf **AUT** (Österreich) fest.
+- Legen Sie im POS-Funktionsprofil jedes einzelnen Einzelhandelsgeschäfts in Österreich das Feld **ISO-Code** auf **AT** (Österreich) fest.
+
+Sie müssen auch die folgenden Einstellungen für Österreich angeben. Beachten Sie, dass Sie entsprechende Verteilungseinzelvorgänge ausführen müssen, nachdem Sie die Einrichtung abschließen.
+
+### <a name="set-up-vat-per-austrian-requirements"></a>MwSt. nach österreichischen Anforderungen einrichten
+
+Sie müssen Mehrwertsteuercodes, Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen erstellen. Sie müssen auch Mehrwertsteuerinformationen für Produkte und Dienstleistungen einrichten. Weitere Informationen dazu, wie die Mehrwertsteuer in Microsoft Dynamics 365 for Finance and Operations und in Retail eingerichtet und verwendet wird, finden Sie unter [Mehrwertsteuerüberblick](../../financials/general-ledger/indirect-taxes-overview.md).
+
+Auf Verkaufsbelegen können Sie einen abgekürzten Code für einen Mehrwertsteuercode drucken (beispielsweise „A” oder „B”). Um diese Funktionalität verfügbar zu machen, legen Sie das Feld **Code drucken** auf der Seite **Mehrwertsteuercodes** fest.
+
+### <a name="set-up-retail-stores"></a>Einzelhandelsgeschäfte einrichten
+
+Aktualisieren Sie auf der Seite **Alle Einzelhandelsgeschäfte** die Details der Einzelhandelsgeschäfte. Legen Sie genauer die folgenden Parameter fest:
+
+- Geben Sie im Feld **Mehrwertsteuergruppe** die Mehrwertsteuergruppe an, die für Verkäufe an den Standard-Einzelhändlerdebitoren verwendet werden soll.
+- Legen Sie die Option **Preis enthält Mehrwertsteuersatz** auf **Ja** fest.
+- Legen Sie das Feld **Name** auf den Unternehmensnamen fest. Durch diese Änderung wird sichergestellt, dass der Unternehmensname auf dem Verkaufsbeleg erscheint. Alternativ können Sie den Unternehmensnamen im Verkaufsbeleglayout als Freiformtext hinzufügen.
+- Legen Sie das Feld **Steuernummer (TIN)** auf die Unternehmenskennnummer fest. Durch diese Änderung wird sichergestellt, dass die Identifikationsnummer auf dem Verkaufsbeleg erscheint. Alternativ können Sie Unternehmenskennnummer dem Verkaufsbeleglayout als Freiformtext hinzufügen.
+
+### <a name="set-up-functionality-profiles"></a>Einrichten von Funktionsprofilen
+
+POS-Funktionsprofile einrichten:
+
+- Richten Sie im Inforegister **Belegnummerierung** die Belegnummerierung ein, indem Sie Datensätzen für die Belegbuchungstypen **Verkauf**, **Auftrag** und **Retoure** erstellen oder aktualisieren.
+
+### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Konfigurieren Sie benutzerdefinierte Felder, damit sie in Belegformate für Verkaufsbelege verwendet werden können
+
+Sie können den Sprachtext und die benutzerdefinierten Felder konfigurieren, die in den POS-Belegformaten verwendet werden. Das Standardunternehmen des Benutzers, der die Boneinrichtung erstellt, sollte die gleiche juristische Person sein, in dem die Sprachtexteinstellung erstellt wird. Alternativ sollten dieselben Sprachtexte im Standardunternehmen des Benutzers und in der juristischen Person des Shops verwendet werden, für den das Setup erstellt wird.
+
+Fügen Sie auf der Seite **Sprachentext** die folgenden Datensätze für die Beschriftungen der benutzerdefinierten Felder für Bonlayouts hinzu. Beachten Sie, dass **Sprachen-ID**, **Text-ID** und **Text**-Werte, die in der Tabelle angezeigt werden, nur Beispiele sind. Sie können sie ändern, damit sie Ihre Anforderungen erfüllen. Allerdings müssen die **Text-ID**-Werte, die Sie verwenden, eindeutig sein und gleich oder größer als 900001 sein.
 
 Fügen Sie dem Abschnitt **POS** des **Sprachentext** aus der Tabelle die folgenden POS-Beschriftungen hinzu:
 
 | Sprachkennung | Textkennung | Text                      |
 |-------------|---------|---------------------------|
-| en-US       | 103174  | QR-Code                   |
-| en-US       | 103175  | Forlaufende Nummer         |
-| en-US       | 103176  | Einzelhandelsdruckcode für Steuer     |
-| en-US       | 103177  | Gesamt (Umsatz)             |
-| en-US       | 103178  | Gesamte Steuern (Umsatz)         |
-| en-US       | 103179  | Gesamte enthaltene Steuern (Umsatz) |
-| en-US       | 103180  | Steuerbetrag (Umsatz)        |
-| en-US       | 103181  | Steuergrundlage (Umsatz)         |
-
-Hinweis: Datensätze von **Sprachentext** müssen dem aktuellen Unternehmen und dem DAT-Unternehmen hinzugefügt werden.
+| en-US       | 900001  | QR-Code                   |
+| en-US       | 900002  | Forlaufende Nummer         |
+| en-US       | 900003  | Einzelhandelsdruckcode für Steuer     |
+| en-US       | 900004  | Gesamt (Umsatz)             |
+| en-US       | 900005  | Gesamte Steuern (Umsatz)         |
+| en-US       | 900006  | Gesamte enthaltene Steuern (Umsatz) |
+| en-US       | 900007  | Steuerbetrag (Umsatz)        |
+| en-US       | 900008  | Steuergrundlage (Umsatz)         |
 
 Fügen Sie auf der Seite **Benutzerdefinierte Felder** die folgenden Datensätze für die benutzerdefinierten Felder für Bonlayouts hinzu. Beachten Sie, dass die Werte für **Textkennung Titel** den Werten **Textkennung** entsprechen müssen, die Sie auf der Seite **Sprachentext** angegeben haben:
 
 | Name                 | Typ    | Textkennung Titel |
 |----------------------|---------|-----------------|
-| QRCODE               | Zugang | 103174          |
-| CONTINUOUSNUMBER     | Zugang | 103175          |
-| RETAILPRINTCODE      | Zugang | 103176          |
-| SALESTOTAL           | Zugang | 103177          |
-| SALESTOTALTAX        | Zugang | 103178          |
-| SALESTOTALINCLUDETAX | Zugang | 103179          |
-| SALESTAXAMOUNT       | Zugang | 103180          |
-| SALESTAXBASIS        | Zugang | 103181          |
+| QRCODE               | Zugang | 900001          |
+| CONTINUOUSNUMBER     | Zugang | 900002          |
+| RETAILPRINTCODE      | Zugang | 900003          |
+| SALESTOTAL           | Zugang | 900004          |
+| SALESTOTALTAX        | Zugang | 900005          |
+| SALESTOTALINCLUDETAX | Zugang | 900006          |
+| SALESTAXAMOUNT       | Zugang | 900007          |
+| SALESTAXBASIS        | Zugang | 900008          |
 
-4. Bonformate konfigurieren
+### <a name="configure-receipt-formats"></a>Bonformate konfigurieren
 
-In **Designer für Bonformat** fügen Sie die folgenden benutzerdefinierten Felder den entsprechenden Bonabschnitten hinzu. Beachten Sie, dass die Feldnamen den Sprachtexten entsprechen, die Sie im vorherigen Abschnitt definiert haben.
+Ändern Sie für jedes erforderliche Belegformat den Wert des Felds **Druckverhalten** auf **Immer drucken**.
 
-   **Kopfzeile**: Fortlaufende Nummer. Dieses Feld zeigt die Nummer der Bargeldbuchungen in der Steuerregistrierung;
-      
-   **Positionen**: Einzelhandelsdruckcode für Steuer. Dieses Feld zeigt den Code entsprechend der Steuergruppe;
-      
-   **Fußzeile**: Feldergruppe **Gesamtzahl Verkäufe**: Summe (Umsatz) -; Gesamtbuchungsbetrag ohne Steuersumme; gesamte enthaltene Steuer (Umsatz) -; gesamter Buchungsbetrag mit Steuersumme; gesamte Steuern (Umsatz); Transaktionssteuersumme.    
-      **Steueraufschlüsselung** (sollte eine separate Position sein): Besteuerungsgrundlage (Umsatz) - Gesamtbargeldbuchungsbetrag (ohne Steuern) ausgenommen Einlagen, Vorauszahlungen und Geschenkkarten; Steuerbetrag (Umsatz) - gesamter Steuerbetrag für Bargeschäfte ohne Einzahlungen, der Vorauszahlungen und Geschenkkarten; Summe enthaltener Steuer (Umsatz) - Gesamtbargeldbuchungsbetrag (mit Steuern) ausgenommen Einlagen, Vorauszahlungen und Geschenkkarten; Einzelhandelsdruckcode für Steuer - der Code entsprechend der Mehrwertsteuergruppe.        
-      **QR-Code**: QR-Code - Verweis auf das registrierte Bargeschäft in Form eines QR-Codes.
-      
-5. Aktualisieren Sie POS-Berechtigungsgruppen und individuelle Berechtigungseinstellungen für Shoparbeitskräfte. Damit Arbeitskräfte, die der Berechtigungsgruppe zugewiesen sind, die Steuerregistrierung überspringen können, aktivieren Sie das Kontrollkästchen **Überspringen der Steuerregistrierung zulassen** (nicht empfohlen). 
+In Designer für Bonformat fügen Sie die folgenden benutzerdefinierten Felder den entsprechenden Bonabschnitten hinzu. Beachten Sie, dass die Feldnamen den Sprachtexten entsprechen, die Sie im vorherigen Abschnitt definiert haben.
 
-### <a name="handling-gift-cards"></a>Behandeln von Geschenkkarten
-Das Integrationsbeispiel des Steuerregistrierungsservice implementiert die folgenden Regeln zu Geschenkkarten:
-  - Schließen Sie die Auftragspositionen, die sich auf die Vorgänge "Geschekkarte ausgeben" oder "Zu Geschenkkarte hinzufügen" aus der Registrierungsmeldung für Bargeldtransaktionen aus. Diese Vorgänge werden durch separate Meldungen als bargeldlose Vorgänge registriert.
-  - Drucken Sie keine Steuergruppenaufschlüsselung und keinen QR-Code auf einen Bon, wenn er nur aus Geschenkkartenpositionen besteht.
-  - Der Gesamtbetrag der ausgestellten oder aufgeladenen Geschenkkarten und ein Bargeldbuchungsbetrag werden auf dem Bon separat gedruckt.
-  - Zahlung per Geschenkkarte wird als eine normale Zahlung betrachtet.
+- **Kopfzeile:** Fügen Sie die folgenden Felder hinzu:
 
-### <a name="handling-customer-deposits-and-customer-order-deposits"></a>Handhabung von Debitoreneinlagen und Debitorenauftragseinlagen
-Das Integrationsbeispiel der Steuerregistrierung implementiert die folgenden Regeln in Bezug auf Debitorenkontoeinlagen und Debitorenauftragseinlagen:
-  - Eine bargeldlose Transaktion wird registriert, wenn eine POS-Transaktion eine Debitoreneinlage ist.
-  - Eine bargeldlose Transaktion wird registriert, wenn einer POS-Transaktion nur eine Auftragseinzahlung oder eine Auftragseinzahlungsrückerstattung enthält.
-  - Drucken Sie die zuvor gezahlte Einzahlung in einem Steuerbeleg für eine Debitorenauftragsabholung.
-  - Ziehen Sie den Debitorenauftragseinzahlungsbetrag von den Zahlungspositionen ab, wenn ein hybrider Kundenauftrag erstellt wird.
-  - Speichern Sie berechnete Zahlungsregulierungspositionen in der Kanal-DB mit einem Verweis auf eine Steuertransaktion für einen hybriden Auftrag.
+    - Die Felder **Shopname** und **Steueridentifikationsnummer**, die zum Drucken des Unternehmensnamens und der Identitätsnummer auf Belegen verwendet werden. Alternativ können Sie den Unternehmensnamen und die Identitätsnummer im Layout als Freiformtext hinzufügen.
+    - **Shopadresse**, **Datum**, **Zeit 24 h**, **Bonnummer** und **Registernummer**
+    - Felder **Fortlaufende Zahl**, um die Nummer der Bargeldbuchungen im Steuererfassungsdienst zu identifizieren.
+
+- **Positionen:** Fügen Sie die folgenden Felder hinzu:
+
+    - **Artikelname**.
+    - **Menge**.
+    - **Gesamtpreis mit USt.**.
+    - **Steuereinzelhandels-Druckcode**, der verwendet wird, um den abgekürzten Code zu drucken, der dem Mehrwertsteuercode entspricht, der für den Artikel gilt.
+
+- **Fußzeile:** Fügen Sie die folgenden Felder hinzu:
+
+    - Ändern Sie die Zahlungsfelder, damit die Zahlungsbeträge für jede Zahlungsmethode gedruckt werden. Beispiel: Fügen Sie die Felder **Name des Zahlungsmittels** und **Betrag des Zahlungsmittels** einer Position des Layouts hinzu.
+    - **Verkaufssumme**-Feldgruppe:
+
+        - Feld **Summe (Verkauf)**, das verwendet wird, um den Gesamt-Barverkaufsbetrag des Belegs zu drucken. Der Betrag enthält keine Steuer. Vorauszahlungen und Geschenkkartenvorgänge werden ausgeschlossen.
+        - Feld **Summe einschließlich Steuer (Verkauf)**, das verwendet wird, um den Gesamt-Barverkaufsbetrag des Belegs zu drucken. Der Betrag enthält Steuer. Vorauszahlungen und Geschenkkartenvorgänge werden ausgeschlossen.
+        - Feld **Gesamtsteuer (Verkauf)**, das verwendet wird, um den Gesamtsteuerbetrag für Barverkäufe des Belegs zu drucken. Vorauszahlungen und Geschenkkartenvorgänge werden ausgeschlossen.
+
+    - **Steueraufschlüsselung**-Feldgruppe. Die Felder in dieser Feldgruppe müssen in einer separaten Position gedruckt werden.
+
+        - Feld **Steuerkennung**, das ein Standardfeld ist, das den Druck einer Mehrwertsteuerzusammenfassung für jeden Mehrwertsteuercode aktiviert. Das Feld muss einer neuen Position hinzugefügt werden.
+        - **Steuerprozentsatz**-Feld, das ein Standardfeld ist, das zum Drucken des tatsächlichen Steuersatzes für den Mehrwertsteuercode verwendet wird.
+        - Feld **Steuerbasis (Verkauf)**, das verwendet wird, um den Gesamtbarverkaufsbetrag für den Mehrwertsteuercode des Belegs zu drucken. Vorauszahlungen und Geschenkkartenvorgänge werden ausgeschlossen.
+        - Feld **Steuerbetrag (Verkauf)**, das verwendet wird, um den Steuerbetrag für Barverkäufe des Belegs für den Mehrwertsteuercode zu drucken.
+        - Feld **Steuereinzelhandels-Druckcode**, das verwendet wird, um den abgekürzten Code zu drucken, der dem Mehrwertsteuercode entspricht.
+
+    - Feld **QR-Code**, das verwendet wird, um den Verweis auf die erfasste Bargeldbuchung in der Form eines QR-Codes zu drucken.
+
+Weitere Informationen zum Arbeiten mit Belegformaten finden Sie unter [Belegvorlagen und Drucken](../receipt-templates-printing.md).
+
+### <a name="configure-fiscal-integration"></a>Steuerintegration konfigurieren
+
+Schließen Sie die Steuerintegrationseinrichtungsschritte ab, wie beschrieben in [Steuerintegration für Retail Channels einrichten](setting-up-fiscal-integration-for-retail-channel.md):
+
+- [Richten Sie einen Steuererfassungsprozesses ein](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Beachten Sie auch die Einstellungen für den Steuererfassungsprozess, die [für dieses Steuererfassungsdienst-Integrationsbeispiel spezifisch sind](#set-up-the-registration-process).
+- [Legen Sie Einstellungen zur Fehlerbehandlung fest](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+- [Aktivieren Sie manuelle Ausführung der verschobenen steuerlichen Erfassung](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+## <a name="deployment-guidelines-for-cash-registers-for-austria"></a>Bereitstellungsrichtlinien für Kassen für Österreich
+
+Das Steuererfassungsdienst-Integrationsbeispiel für Österreich ist Teil des Retail SDK. Informationen zur Installation und Verwendung des Retail SDK finden Sie in der [Retail SDK-Dokumentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+
+Dieses Beispiel besteht aus Erweiterungen für das CRT, Hardware station und POS. Um dieses Beispiel auszuführen, müssen Sie das CRT, Hardware station und POS-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps, bei dem noch keine Dateien geändert wurden.
+
+Gehen Sie folgendermaßen vor, um eine Entwicklungsumgebung einzurichten, damit Sie das Beispiel testen und erweitern können.
+
+### <a name="enable-commerce-runtime-extensions"></a>Commerce-Laufzeiterweiterungen aktivieren
+
+Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die folgenden Prozeduren abzuschließen, öffnen Sie die CRT-Lösung **CommerceRuntimeSamples.sln**, unter **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+
+#### <a name="documentproviderefrsample-component"></a>DocumentProvider.EFRSample-Komponente
+
+1. Suchen Sie das Projekt **Runtime.Extensions.DocumentProvider.EFRSample**, und erstellen Sie es.
+2. Im Ordner **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** suchen Sie die Assembly-Datei **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll**.
+3. Kopieren Sie die CRT-Assemblydatei in den CRT-Erweiterungsordner:
+
+    - **Retail Server:** Kopieren Sie die Assembly in den Ordner **\\bin\\ext** unter dem Microsoft Internet Information Services (IIS) Retail Server-Websitespeicherort.
+    - **Lokales CRT in Modern POS:** Kopieren Sie die Assembly in den Ordner **\\ext** unter dem lokalen CRT-Client-Broker-Speicherort.
+
+4. Suchen Sie die Erweiterungskonfigurationsdatei für CRT:
+
+    - **Retail Server:** Die Datei hat den Namen **commerceruntime.ext.config**, und sie befindet sich im Ordner **bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
+    - **Lokales CRT auf Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Client-Broker-Speicherort.
+
+5. Erfassen Sie die CRT-Änderung in der Erweiterungskonfigurationsdatei.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
+    ```
+
+#### <a name="documentproviderdatamodelefr-component"></a>DocumentProvider.DataModelEFR-Komponente
+
+1. Suchen Sie das Projekt **Runtime.Extensions.DocumentProvider.DataModelEFR**, und erstellen Sie es.
+2. Im Ordner **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** suchen Sie die Assembly-Datei **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll**.
+3. Kopieren Sie die CRT-Assemblydatei in den CRT-Erweiterungsordner:
+
+    - **Retail Server:** Kopieren Sie die Assembly in den Ordner **\\bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
+    - **Lokales CRT in Modern POS:** Kopieren Sie die Assembly in den Ordner **\\ext** unter dem lokalen CRT-Client-Broker-Speicherort.
+
+4. Suchen Sie die Erweiterungskonfigurationsdatei für CRT:
+
+    - **Retail Server:** Die Datei hat den Namen **commerceruntime.ext.config**, und sie befindet sich im Ordner **bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
+    - **Lokales CRT auf Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Client-Broker-Speicherort.
+
+5. Erfassen Sie die CRT-Änderung in der Erweiterungskonfigurationsdatei.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+    ```
+
+#### <a name="update-extension-configuration-file"></a>Erweiterungskonfigurationsdatei aktualisieren
+
+1. Suchen Sie die Erweiterungskonfigurationsdatei für CRT:
+
+    - **Retail Server:** Die Datei hat den Namen **commerceruntime.ext.config**, und sie befindet sich im Ordner **bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
+    - **Lokales CRT auf Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Client-Broker-Speicherort.
+
+2. Erfassen Sie die CRT-Änderung in der Erweiterungskonfigurationsdatei.
+
+    ``` xml
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsAustria" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
+    ```
+
+### <a name="enable-hardware-station-extensions"></a>Hardware station-Erweiterungen aktivieren
+
+Die Hardware station-Erweiterungskomponenten sind in den Hardware station-Beispielen enthalten. Um die folgenden Prozeduren abzuschließen, öffnen Sie die Lösung, **HardwareStationSamples.sln.sln**, unter **RetailSdk\\SampleExtensions\\HardwareStation**.
+
+#### <a name="efrsample-component"></a>EFRSample-Komponente
+
+1. Suchen Sie das Projekt **HardwareStation.Extension.EFRSample**, und erstellen Sie es.
+2. Im Ordner **Extension.EFRSample\\bin\\Debug** suchen Sie folgende Dateien:
+
+    - Die **Contoso.Commerce.HardwareStation.EFRSample.dll**-Assembly
+    - Die **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll**-Assembly
+
+3. Kopieren Sie die Assembly-Dateien in den Hardware stations-Erweiterungsordner:
+
+    - **Freigegebene Hardware station:** Kopieren Sie die Dateien in den Ordner **Lagerfach** unter dem IIS Hardware stations-Websitespeicherort.
+    - **Dedizierte Hardware station auf Modern POS:** Kopieren Sie die Dateien zum Modern POS-Client-Broker-Speicherort.
+
+4. Suchen Sie die Erweiterungskonfigurationsdatei für die Erweiterungen der Hardware station. Die Datei hat den Namen **HardwareStation.Extension.config**.
+
+    - **Freigegebene Hardware station:** Die Datei befindet sich unter dem IIS Hardware station-Websitespeicherort.
+    - **Dedizierte Hardware station auf Modern POS:** Die Datei befindet sich unter dem Modern POS-Client-Broker-Speicherort.
+
+5. Fügen Sie die folgende Position zum Abschnitt **Anordnung** der Konfigurationsdatei hinzu.
+
+    ``` xml
+    <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample.dll" />
+    ```
+
+### <a name="enable-modern-pos-extension-components"></a>Modern POS-Erweiterungskomponenten aktivieren
+
+1. Öffnen Sie die Lösung unter **RetailSdk\\POS\\ModernPOS.sln**, und stellen Sie sicher, dass sie fehlerfrei kompiliert werden kann. Außerdem stellen Sie sicher, dass Sie Modern POS von Microsoft Visual Studio aus ausführen können, indem Sie den Befehl **Run** verwenden.
+
+    > [!NOTE]
+    > Modern POS darf nicht angepasst werden. Sie müssen die Benutzerkontensteuerung (UAC) aktivieren, und Sie müssen zuvor installierte Instanzen von Modern POS bei Bedarf deinstallieren.
+
+2. Aktivieren Sie das Laden der Instanzen, indem Sie die folgenden Zeilen in **extensions.json** hinzufügen.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.AT"
+            }
+        ]
+    }
+    ```
+
+    > [!NOTE]
+    > Weitere Informationen und Beispiele, die zeigen, wie Quellcodeordner einbezogen werden und das Laden von Erweiterungen ermöglicht wird, finden Sie in den Anleitungen in der readme.md-Datei im Projekt **Pos.Extensions**.
+
+3. Erstellen Sie die Lösung neu.
+4. Führen Sie Modern POS im Debugger aus, und testen Sie die Funktionen.
+
+### <a name="enable-cloud-pos-extension-components"></a>Cloud POS-Erweiterungskomponenten aktivieren
+
+1. Öffnen Sie die Lösung unter **RetailSdk\\POS\\CloudPOS.sln**, und stellen Sie sicher, dass sie fehlerfrei kompiliert werden kann.
+2. Aktivieren Sie das Laden der Instanzen, indem Sie die folgenden Zeilen in **extensions.json** hinzufügen.
+
+    ``` json
+    {
+        "extensionPackages": [
+            {
+                "baseUrl": "Microsoft/AuditEvent.AT"
+            }
+        ]
+    }
+    ```
+
+    > [!NOTE]
+    > Weitere Informationen und Beispiele, die zeigen, wie Quellcodeordner einbezogen werden und das Laden von Erweiterungen ermöglicht wird, finden Sie in den Anleitungen in der readme.md-Datei im Projekt **Pos.Extensions**.
+
+3. Erstellen Sie die Lösung neu.
+4. Führen Sie Lösung aus, indem Sie den Befehl **Run** verwenden, und folgen Sie den Schritten im Retail SDK-Handbuch.
+
+### <a name="set-up-the-registration-process"></a>Den Erfassungsprozess einrichten
+
+Um den Erfassungsprozess zu aktivieren, führen Sie diese Schritte aus, um Retail Headquarters einzurichten. Weitere Informationen finden [Ein Steuererfassungsprozess einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+
+1. Gehen Sie zu **Einzelhandel \> Zentralverwaltungseinrichtung \> Parameter \> Freigegebene Retail-Parameter**. Auf der Registerkarte **Allgemein** legen Sie die Option **Steuerintegration aktivieren** auf **Ja** fest.
+2. Gehen Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Steuerkonnektoren**, und laden Sie die Konnektorkonfiguration. Der Dateispeicherort ist **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
+3. Wechseln Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Steuerdokumentanbieter**, und laden Sie die Dokumentanbieterkonfigurationen. Die Konfigurationsdateien befinden sich unter **RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration**:
+
+    - DocumentProviderEFRSampleAustria.xml
+    - DocumentProviderNonFiscalEFRSampleAustria.xml
+
+4. Wechseln Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Konnektorfunktionsprofile**. Erstellen Sie zwei Konnektorfunktionsprofile, eines für jeden Dokumentanbieter, den Sie zuvor geladen haben, und wählen Sie den Konnektor aus, den Sie zuvor geladen haben. Aktualisieren Sie die Datenzuordnungseinstellungen nach Bedarf.
+5. Wechseln Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Technische Konnektorprofile**. Erstellen Sie ein neues technisches Konnektorprofil, und wählen Sie den Konnektor aus, den Sie vorher geladen haben. Aktualisieren Sie die Verbindungseinstellungen nach Bedarf.
+6. Wechseln Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Steuerkonnektorgruppen**. Erstellen Sie zwei neue Steuerkonnektorgruppen, eine für jedes Konnektorfunktionsprofil, das Sie vorher erstellt haben.
+7. Wechseln Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Steuererfassungsprozesse**. Erstellen Sie einen neuen Steuererfassungsprozess, zwei Steuererfassungsprozess-Schritte, und wählen Sie die Steuerkonnektorgruppen aus, die Sie vorher erstellt haben.
+8. Wechseln Sie zu **Retail \> Channel-Einstellungen \> POS-Einstellungen \> POS-Profile \> Funktionsprofile**. Wählen Sie ein Funktionsprofil aus, das mit dem Einzelhandelsgeschäft verbunden ist, wo der Erfassungsprozess aktiviert werden soll. Im Inforegister **Steuererfassungsprozess** aktivieren Sie den Steuererfassungsprozess, den Sie vorher erstellt haben. Um die Erfassung von nicht-steuerlichen Ereignisse im POS zu ermöglichen, legen Sie im Inforegister **Funktionen** unter **POS** die Option **Überwachen** auf **Ja** fest.
+9. Wechseln Sie zu **Retail \> Channel-Einstellungen \> POS-Einstellungen \> POS-Profile \> Hardwareprofile**. Wählen Sie ein Hardwareprofil aus, das mit der Hardware station verknüpft ist, mit der der Belegdrucker verbunden wird. Im Inforegister **Peripheriegeräte für die Steuerverwaltung** aktivieren Sie das technische Konnektorprofil, das Sie vorher erstellt haben.
+10. Öffnen Sie den Vertriebsplan (**Retail \> Retail IT \> Vertriebsplan**), und wählen Sie Einzelvorgänge **1070** und **1090** aus, um Daten zur Kanaldatenbank zu übertragen.
+
+### <a name="production-environment"></a>Produktionsumgebung
+
+Die vorherige Prozedur aktiviert die Erweiterungen, die Komponenten des Steuererfassungsdienst-Integrationsbeispiels sind. Darüber hinaus müssen Sie diese Schritte ausführen, um bereitstellbare Pakete zu erstellen, die Retail-Komponenten enthalten, und diese Pakete in einer Produktionsumgebung anzuwenden.
+
+1. Nehmen Sie die folgenden Änderungen in den Paketkonfigurationsdateien unter dem Ordner **RetailSdk\\Assets** vor:
+
+    - In den Konfigurationsdateien **commerceruntime.ext.config** und **CommerceRuntime.MPOSOffline.Ext.config** fügen Sie die folgenden Positionen zum Abschnitt **Anordnung** hinzu.
+
+        ``` xml 
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsAustria" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventAustria" />
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsAustria" />
+        ```
+
+    - In der Konfigurationsdatei **HardwareStation.Extension.config** fügen Sie die folgende Position dem Abschnitt **Anordnung** hinzu.
+
+        ``` xml
+        <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
+        ```
+
+2. Nehmen Sie die folgenden Änderungen in der Paketanpassungs-Konfigurationsdatei **BuildTools\\Customization.settings** vor:
+
+    - Fügen Sie die folgenden Zeilen hinzu, um die CRT-Erweiterungen in die bereitstellbaren Paketen einzuschließen.
+
+        ``` xml
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
+        <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
+        ```
+
+    - Fügen Sie die folgende Zeilen hinzu, um die Hardware station-Erweiterung in die bereitstellbaren Pakete einzuschließen.
+
+        ``` xml
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+        ```
+
+3. Starten Sie die MSBuild-Eingabeaufforderung für Visual Studio-Hilfsprogramm und führen Sie **msbuild** unter dem Ordner Retail SDK aus, um bereitstellbare Pakete zu erstellen.
+4. Übernehmen Sie die Pakete über Microsoft Dynamics Lifecycle Services (LCS) oder manuell. Weitere Informationen finden Sie unter [Bereitstellbare Einzelhandelspakete erstellen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+5. Schließen Sie alle erforderlichen Setupaufgaben ab, die im Abschnitt [Retail für Österreich einrichten](#set-up-retail-for-austria) beschrieben sind.
+
+## <a name="design-of-extensions"></a>Entwurf von Erweiterungen
+
+### <a name="commerce-runtime-extension-design"></a>Commerce-Laufzeiterweiterungsentwurf
+
+Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter dienstspezifische Dokumente erzeugt und Antworten aus dem Steuererfassungsdienst handhabt.
+
+Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**.
+
+Genauere Informationen zum Entwurf der Steuerintegrationslösung finden Sie unter [Steuererfassungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+
+#### <a name="request-handler"></a>Anforderungshandler
+    
+Es gibt zwei Anforderungshandler für Dokumentanbieter:
+
+- **DocumentProviderEFRFiscalAUT** – Dieser Handler wird verwendet, um Steuerdokumente für den Steuererfassungsdienst zu erstellen.
+- **DocumentProviderEFRNonFiscalAUT** – Dieser Handler wird verwendet, um Steuerdokumente für den Steuererfassungsdienst zu erstellen.
+
+Diese Handler werden von der Oberfläche **INamedRequestHandler** geerbt. Die Methode **HandlerName** ist für die Rückgabe des Namens des Handlers zuständig. Der Handlername sollte mit dem Name des Konnektordokumentanbieters übereinstimmen, der in Retail Headquarters angegeben ist.
+
+Der Konnektor unterstützt die folgenden Anforderungen:
+
+- **GetFiscalDocumentDocumentProviderRequest** – Diese Anforderung enthält Informationen darüber, welches Dokument generiert werden soll. Sie gibt ein dienstspezifisches Dokument zurück, dass im Steuererfassungsdienst erfasst werden soll.
+- **GetNonFiscalDocumentDocumentProviderRequest** – Diese Anforderung enthält Informationen darüber, welches nicht-steuerliche Dokument generiert werden soll. Sie gibt ein dienstspezifisches Dokument zurück, dass im Steuererfassungsdienst erfasst werden soll.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – Diese Anforderung gibt die Liste der Ereignisse zurück, die Sie abonnieren können. Aktuell werden die folgenden Ereignisse unterstützt: Vertrieb, Drucken von X-Bericht, Drucken von Z-Bericht, Debitorenkonto-Einzahlungen, Debitorenauftragseinzahlungen, Überwachungsereignisse und Nicht-Vertriebsbuchungen.
+- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – Diese Anforderung gibt die Antwort vom Steuererfassungsdienst zurück. Diese Antwort wird serialisiert, um eine Zeichenfolge zu bilden, sodass sie bereit zum Speichern ist.
+
+#### <a name="configuration"></a>Variante
+
+Die Konfigurationsdateien befinden sich im Ordner **Konfiguration** des Erweiterungsprojekts:
+
+- **DocumentProviderFiscalEFRSampleAustria** – Für Steuerdokumente.
+- **DocumentProviderNonFiscalEFRSampleAustria** – Für nicht-steuerliche Dokumente.
+
+Der Zweck dieser Dateien ist es, Einstellungen zu aktivieren, damit der Dokumentanbieter von Retail Headquarters aus konfiguriert werden kann. Das Dateiformat wird mit den Anforderungen für die Steuerintegrationskonfiguration ausgerichtet. Die folgende Einstellung wird hinzugefügt:
+
+- Zuordnung von MwSt.-Sätzen
+
+### <a name="hardware-station-extension-design"></a>Hardware station-Erweiterungsentwurf
+
+Der Zweck der Erweiterung, die ein Steuerkonnektor ist, ist die Kommunikation mit dem Steuererfassungsdienst.
+
+Die Hardware station-Erweiterung ist **HardwareStation.Extension.EFRSample**. Die Hardware station-Erweiterung verwendet das HTTP-Protokoll, um Dokumente, die die CRT-Erweiterung generiert, zum Steuererfassungsdienst zu übermitteln. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
+
+#### <a name="request-handler"></a>Anforderungshandler
+
+Der Anforderungshandler **EFRHandler** ist der Einstiegspunkt für die Handhabung von Anforderungen an den Steuererfassungsdienst.
+
+Der Handler wird von der Oberfläche **INamedRequestHandler** geerbt. Die Methode **HandlerName** ist für die Rückgabe des Namens des Handlers zuständig. Der Handlername sollte mit dem Name des Steuerkonnektors übereinstimmen, der in Retail Headquarters angegeben ist.
+
+Der Konnektor unterstützt die folgenden Anforderungen:
+
+- **SubmitDocumentFiscalDeviceRequest** – Diese Anforderung sendet Dokumente an den Steuererfassungsdienst und gibt eine Antwort von ihm zurück.
+- **IsReadyFiscalDeviceRequest** – Diese Anforderung wird für eine Integritätsprüfung des Steuererfassungsdiensts verwendet.
+- **InitializeFiscalDeviceRequest** – Diese Anforderung wird für Initialisierung des Steuererfassungsdiensts verwendet.
+
+#### <a name="configuration"></a>Variante
+
+Die Konfigurationsdatei befindet sich im Ordner **Konfiguration** des Erweiterungsprojekts. Der Zweck dieser Datei ist es, Einstellungen zu aktivieren, damit der Steuerkonnektor von Retail Headquarters aus konfiguriert werden kann. Das Dateiformat wird mit den Anforderungen für die Steuerintegrationskonfiguration ausgerichtet. Die folgenden Einstellungen werden hinzugefügt:
+
+- **Endpunktadresse** – Die URL des Steuererfassungsdiensts.
+- **Zeitlimit** – Die Zeitdauer in Millisekunden, die der Treiber auf eine Antwort vom Steuererfassungsdienst wartet.

@@ -1,46 +1,46 @@
 ---
 title: Erweiterbarkeit in Attract
 description: In diesem Thema wird beschrieben, wie Sie die Microsoft Dynamics 365 for Talent - Attract-Anwendung erweitern können, indem Sie die Microsoft Power-Plattform verwenden.
-author: josaw
+author: andreabichsel
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichsew
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: rschloma
+ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c77c64070cb82180441f4b629b6884981b9b81d2
-ms.sourcegitcommit: 0bd0215d0735ed47b1b8af93a80bcdbf7ca2cc49
+ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "789650"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949965"
 ---
 # <a name="extensibility-in-attract"></a>Erweiterbarkeit in Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent basiert auf der Common Data Service (CDS) for Apps-Plattform und kann auf verschiedene Weise erweitert werden, indem die Microsoft Power-Plattform und die Funktionen verwendet werden, die von Common Data Service for Apps angeboten werden. Aus diesem Grund können Sie das System konfigurieren und anpassen, indem Sie Microsoft PowerApps und Microsoft Flow verwenden. Sie können auch eine zusätzliche Personen-Analyse erhalten, indem Sie Microsoft Power BI verwenden. Der Einstellungsprozess wird darüber hinaus durch neue benutzerdefinierte Aktivitäten, wie die PowerApps- und Webinhalt-Aktivitäten, noch flexibler als bisher. Wenn Sie diese Aktivitäten verwenden, können Sie den Einstellungsprozess auf Ihre Geschäftsanforderungen und -Prozesse anpassen und sicherstellen, dass das Einstellungsteam und die Kandidaten eine nahtlose angepasste Erfahrung haben.
+Microsoft Dynamics 365 for Talent ist über die Common Data Service Plattform gebaut und kann auf verschiedene Weise erweitert werden, indem die Microsoft Power Platform  und Funktionen verwendet werden, die Common Data Service anbietet. Aus diesem Grund können Sie das System konfigurieren und anpassen, indem Sie Microsoft PowerApps und Microsoft Flow verwenden. Sie können auch eine zusätzliche Personen-Analyse erhalten, indem Sie Microsoft Power BI verwenden. Der Einstellungsprozess wird darüber hinaus durch neue benutzerdefinierte Aktivitäten, wie die PowerApps- und Webinhalt-Aktivitäten, noch flexibler als bisher. Wenn Sie diese Aktivitäten verwenden, können Sie den Einstellungsprozess auf Ihre Geschäftsanforderungen und -Prozesse anpassen und sicherstellen, dass das Einstellungsteam und die Kandidaten eine nahtlose angepasste Erfahrung haben.
 
 ## <a name="extending-option-sets-in-attract"></a>Erweitern von Optionsätzen in Attract
 
-Ein **Optionssatz** (Auswahlliste) ist ein Feldtyp, der in eine Entität einbezogen werden kann. Er definiert einen Satz von Optionen. Wenn ein Optionssatz in einem Formular angezeigt wird, verwendet er ein Dropdownlistensteuerelement.  In Attract gibt es mehrere Felder, die Optionssätze sind.  Wir führen Funktion zur Erweiterung der Optionssätze ein und beginnen mit dem Feld "Ablehnungsgrund", dem Feld "Beschäftigungstyp" und dem Feld "Dienstalter".   Außerdem können lokalisierte Anzeigenbeschriftungen für die von Ihnen hinzugefügten Optionen hinzufügen.  Weitere Informationen finden Sie über den folgenden Link: [Anpassen von Optionssatzbeschriftungen](https://docs.microsoft.com/en-us/poweapps/developer/common-data-service/customize-labels-suport-multiple-languages)
+Ein **Optionssatz** (Auswahlliste) ist ein Feldtyp, der in eine Entität einbezogen werden kann. Er definiert einen Satz von Optionen. Wenn ein Optionssatz in einem Formular angezeigt wird, verwendet er ein Dropdownlistensteuerelement.  In Attract gibt es mehrere Felder, die Optionssätze sind.  Wir führen Funktion zur Erweiterung der Optionssätze ein und beginnen mit dem Feld "Ablehnungsgrund", dem Feld "Beschäftigungstyp" und dem Feld "Dienstalter".   Außerdem können lokalisierte Anzeigenbeschriftungen für die von Ihnen hinzugefügten Optionen hinzufügen. Weitere Informationen finden Sie unter [Beschriftungen der Option anpassen](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Die Funktion zur Stellenausschreibung auf LinkedIn erfordert die Nutzung der Felder **Beschäftigungstyp** und **Dienstaltertyp** auf der Seite **Stellendetails**. Die Standardwerte in den Feldern werden von LinkedIn unterstützt und angezeigt, wenn die Stelle gebucht wird. Wenn Sie also Stellen in LinkedIn veröffentlichen und die vorhandenen Optionssatzwerte für diese Felder ändern, wird die Stelle noch veröffentlicht, aber LinkedIn zeigt keine benutzerdefinierten Werte für **Beschäftigungstyp** und **Dienstaltertyp**.  
 
 Im Folgenden werden die Schritte aufgeführt, mit denen das Felds **Ablehnungsgrund** mit den passenden Werten für Ihr Unternehmen aktualisiert werden kann.  
 
-1. Wenn Sie den **Ablehnungsgrund**-Optionssatz verlängern möchten, navigieren Sie zur [PowerApps-Administrator-Website.](Https://admin.powerapps.microsoft.com)
+1. Wenn Sie den **Ablehnungsgrund**-Optionssatz verlängern möchten, navigieren Sie zur [PowerApps-Administrator-Website](https://admin.powerapps.com).
 2. Sie werden möglicherweise aufgefordert, sich in Ihrem Konto anzumelden. Geben Sie Ihre aus Benutzer-ID- und Kennwort betehenden Anmeldeinformationen aus, die Sie verwenden, um sich in Dynamics365 und/oder in Office365 anzumelden, und klicken Sie dann auf **Weiter**.
 3. In der Registerkarte **Umgebungen** wählen die Umgebung, die Sie verwalten möchten, und doppelklicken Sie darauf, um zur Registerkarte **Details** zu gelangen.
 4. In der Registerkarte **Details** wählen Sie **Dynamics 365-Verwaltungscenter** aus.
@@ -56,7 +56,7 @@ Im Folgenden werden die Schritte aufgeführt, mit denen das Felds **Ablehnungsgr
 
 ## <a name="take-advantage-of-the-microsoft-power-platform"></a>Nutzen Sie die Microsoft Power Platform 
 
-Da sich alle Attract-Daten in Common Data Service for Apps befinden, können Sie Tools der Microsoft Power-Plattform verwenden, um Ihre Geschäftsanforderungen in Attract zu integrieren.
+Da sich alle Attract-Daten in Common Data Service befinden, können Sie Tools der Microsoft Power Platform verwenden, um Ihre Geschäftsanforderungen in Attract zu integrieren.
 
 ### <a name="powerapps"></a>PowerApps
 
@@ -66,7 +66,7 @@ So können Sie z. B. Hochschulkarrieremessen für Personalbeschaffer erleichter
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Sie können Microsoft Flow verwenden, um automatisierte Workflows zu erstellen, die auf Attract-Daten basieren. Sie können leicht eine Verbindung mit Hunderten beliebter Apps und Dienstleistungen herstellen, ohne Code schreiben zu müssen. Durch Erstellen von Flüssen, die mit den Attract-Entitäten für Stelle, Kandidat und Bewerbung in Common Data Service for Apps interagieren, können Sie verschiedene Aktionen automatisieren. Wenn ein Kandidat beispielsweise ein Angebot akzeptiert, kann eine Benachrichtigung an ein Onboarding-Team gesendet, oder die Neuigkeiten können auf Twitter angekündigt werden. Weitere Informationen zu Flüssen finden Sie in der [Microsoft Flow-Dokumentation](https://docs.microsoft.com/en-us/flow/).
+Sie können Microsoft Flow verwenden, um automatisierte Workflows zu erstellen, die auf Attract-Daten basieren. Sie können leicht eine Verbindung mit Hunderten beliebter Apps und Dienstleistungen herstellen, ohne Code schreiben zu müssen. Durch Erstellen von Flüssen, die mit den Attract Stelle, Kandidat und Bewerbung in Common Data Service interagieren, können Sie verschiedene Aktionen automatisieren. Wenn ein Kandidat beispielsweise ein Angebot akzeptiert, kann eine Benachrichtigung an ein Onboarding-Team gesendet, oder die Neuigkeiten können auf Twitter angekündigt werden. Weitere Informationen zu Flüssen finden Sie in der [Microsoft Flow-Dokumentation](https://docs.microsoft.com/en-us/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
@@ -78,14 +78,14 @@ Sie können benutzerdefinierte Aktivitäten, wie die PowerApps-Apps und Web-Inha
 
 #### <a name="powerapps-activity"></a>PowerApps-Aktivität 
 
-Die PowerApps-Aktivität ermöglicht es dem Ersteller einer Stelle oder Stellenprozessvorlage, eine PowerApps-App im Einstellungsfluss einzubetten. Nachdem Sie die App erstellt und veröffentlicht haben, können Sie die App-ID in den Aktivitätskonfigurationen eingeben. Durch Verwendung einer PowerApps-App können Sie Daten in Common Data Service for Apps lesen und schreiben. Sie können die App sogar mit einem Flow verknüpfen. Beispielsweise verfügen Sie über eine App, die Personalbeschaffer verwenden, um ein Formular auszufüllen, während sie Telefongespräche tätigen. In diesem Fall können Sie die App einem Flow verknüpfen, der bewertet, ob ein Bewerber im Stellenbewerbungsprozess voranschreitet. Dieser Aktivitätstyp kann nur von Mitgliedern des Einstellungsteams angezeigt werden. Weitere Informationen dazu, wie die PowerApps-Aktivität konfiguriert wird, finden Sie unter [Aktivitäten in Attract](./activities-attract.md).
+Die PowerApps-Aktivität ermöglicht es dem Ersteller einer Stelle oder Stellenprozessvorlage, eine PowerApps-App im Einstellungsfluss einzubetten. Nachdem Sie die App erstellt und veröffentlicht haben, können Sie die App-ID in den Aktivitätskonfigurationen eingeben. Durch Verwendung einer PowerApps App können Sie Daten in Common Data Service for Apps lesen und schreiben. Sie können die App sogar mit einem Flow verknüpfen. Beispielsweise verfügen Sie über eine App, die Personalbeschaffer verwenden, um ein Formular auszufüllen, während sie Telefongespräche tätigen. In diesem Fall können Sie die App einem Flow verknüpfen, der bewertet, ob ein Bewerber im Stellenbewerbungsprozess voranschreitet. Dieser Aktivitätstyp kann nur von Mitgliedern des Einstellungsteams angezeigt werden. Weitere Informationen dazu, wie die PowerApps-Aktivität konfiguriert wird, finden Sie unter [Aktivitäten in Attract](./activities-attract.md).
 
 > [!NOTE]
 > Die PowerApps-Aktivität ist nur mit dem umfassenden Add-On für Neueinstellungen verfügbar.
 
 #### <a name="web-content-iframe-activity"></a>Webinhalt (iframe)-Aktivität
 
-Die Webinhalts (iframe)-Aktivität erlaubt es Ihnen, eine benutzerdefinierte Internetlösung einzubetten, die Sie im Einstellungsprozess oder Kandidatenportal erstellt haben. Sie können Daten direkt aus Common Data Service for Apps lesen und schreiben. Sie können die Lösung auch anpassen, sodass sie Flüsse auslöst oder Microsoft Azure-Funktionen nutzt. Weitere Informationen dazu, wie die Webinhalt-Aktivität konfiguriert wird, finden Sie unter [Aktivitäten in Attract](./activities-attract.md).
+Die Webinhalts (iframe)-Aktivität erlaubt es Ihnen, eine benutzerdefinierte Internetlösung einzubetten, die Sie im Einstellungsprozess oder Kandidatenportal erstellt haben. Sie können Daten direkt aus Common Data Service lesen und schreiben. Sie können die Lösung auch anpassen, sodass sie Flüsse auslöst oder Microsoft Azure-Funktionen nutzt. Weitere Informationen dazu, wie die Webinhalt-Aktivität konfiguriert wird, finden Sie unter [Aktivitäten in Attract](./activities-attract.md).
 
 > [!NOTE]
 > Die Webinhalt-Aktivität ist nur mit dem umfassenden Add-On für Neueinstellungen verfügbar.

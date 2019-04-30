@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9354e0dbf8bed9383a9dfcc383a2c9db57457dd0
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
+ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353815"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "842721"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -93,7 +93,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 614 | Debitorenauftrag bearbeiten | Rufen Sie den ausgewählten Auftrag zurück, damit er am Point-of-Sale geändert werden kann. | Nr. | Nr. | Nr. | Nr. | Nr. |
 | 615 | Angebot bearbeiten | Rufen Sie das ausgewählte Angebot zurück, damit es am Point-of-Sale geändert werden kann. | Nr. | Nr. | Nr. | Nr. | Nr. |
 | 518 | Aufwandskonten | Dient zum Erfassen des Geldes, das der Geldlade für gelegentliche Ausgaben entnommen wird. | Ja | Ja | Ja | Ja | Nr. |
-| 919 | Erweiterte Anmeldung | Weisen Sie Berechtigungen zum Anmelden hinzu oder entfernen Sie sie, indem Sie einen Strichcode scannen oder indem Sie eine Karte durch ein Lesegerät ziehen. | Ja | Ja | Ja | Nr. | Nr. |
+| 919 | Erweiterte Anmeldung | Weisen Sie Berechtigungen zum Anmelden hinzu oder entfernen Sie sie, indem Sie einen Strichcode scannen oder indem Sie eine Karte durch ein Lesegerät ziehen. | Ja | Ja | Ja | Ja | Nein |
 | 1201 | Mittelzugang | Dieser Arbeitsgang ermöglicht dem Benutzer, zusätzliches Geld der aktuellen Schicht oder Kassenlade hinzufügen. | Ja | Ja | Ja | Ja | Nr. |
 | 1218 | Entsperren von Peripheriegerät erzwingen | Das System verwendet diesen Arbeitsgang intern, um die Sperrung der POS-Peripheriegeräte aufzuheben. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 520 | Geschenkkartensaldo | Zeigt den Saldo einer Geschenkkarte an. | Ja | Ja | Nr. | Nr. | Nr. |

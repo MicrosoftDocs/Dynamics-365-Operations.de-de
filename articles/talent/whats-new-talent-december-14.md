@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7d2866923efd7f115ad5290f35ed4fcac5e47573
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "304452"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "949850"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (14. Dezember 2018)
 
@@ -65,7 +65,7 @@ Mit dieser Änderung werden Schalttage nun Power BI unterstützt.
 
 ### <a name="integration-between-core-hr-and-attract"></a>Integration zwischen Core HR und Atract
 
-Eine Änderung wird vorgenommen, um die Integration zwischen Core HR und Attract im Bezug zu Kandidaten, die angestellt werden, zu aktualisieren. Damit angestellte Kandidaten im **Personalführung** Arbeitsbereich angezeigt werden, werden die folgenden CDS für Apps (CDS 2.0) verwendet:
+Eine Änderung wird vorgenommen, um die Integration zwischen Core HR und Attract im Bezug zu Kandidaten, die angestellt werden, zu aktualisieren. Damit angestellte Kandidaten im **Personalführung** Arbeitsbereich angezeigt werden, werden die folgenden Common Data Service Entitäten verwendet:
 
 StellenBewerbung
 - Status-Grund muss auf Angebot akzeptiert festgelegt werden 
@@ -139,7 +139,7 @@ Die Arbeiter zu Arbeiteraufgaben benötigt die folgenden aktualisierte Zuordnung
 
 Das Geschlechtsfeld muss auch aktualisiert werden. Wählen Sie den Zuordnungstyp **F-N**(Funktion) für Geschlecht aus und aktualisieren Sie die folgenden Wertzuordnungen.
 
-| CDS-Wert                   | Finance and Operations Wert                     |
+| Common Data Service Wert                   | Finance and Operations Wert                     |
 | ----------------------------|--------------------------------------------------|
 | 75440000                    | Männl.                                             |
 | 75440001                    | Weibl.                                           |

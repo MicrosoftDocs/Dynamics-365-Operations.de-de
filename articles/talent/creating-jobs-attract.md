@@ -1,30 +1,30 @@
 ---
 title: Erstellen, Genehmigen und Buchen von Aufträgen in Attract
 description: In diesem Thema werden die Elemente einer Stelle in Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
-author: josaw
+author: hasrivas
 manager: AnnBe
-ms.date: 02/26/2019
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: josaw
+ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 2f7e0ec7d33579f213909ff9ad911d26800c2b76
-ms.sourcegitcommit: ceef0ee77ffc245e57637e2ea84e1a71a214b3d7
+ms.openlocfilehash: 1e76572c1a843fe7abd515333d5b7cb03b91eb11
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "772810"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "969348"
 ---
 # <a name="create-approve-and-post-jobs-in-attract"></a>Erstellen, Genehmigen und Buchen von Aufträgen in Attract
 
@@ -44,7 +44,7 @@ Die Registerkarte **Stellendetails** enthält Details zu den Zuständigkeiten un
 
 Standardmäßig wird das Feld **Anzahl der offenen Stellen** auf **1** festgelegt. Allerdings kann der Wert geändert werden. Wenn ein Angebot für eine Stelle vorbereitet wurde, wird der Wert im Feldes **Anzahl der offenen Stellen** verringert.
 
-Wenn Positionsverwaltung im Administrator-Center aktiviert wurde, ist die **Positionen aktualisieren**-Suche verfügbar. Diese Suche liest die JobPositions-Entität im Common Data Service for Apps und gibt eine Liste der Positionen zurück, die für die Stelle ausgewählt werden können. Wenn die Anzahl der Positionen, die Sie auswählen, die Anzahl offener Stellen überschreitet, erhalten Sie eine Warnung. Sie erhalten auch dann eine Warnung, wenn eine Position in mehreren Stellen verwendet wird.
+Wenn Positionsverwaltung im Administrator-Center aktiviert wurde, ist die **Positionen aktualisieren**-Suche verfügbar. Diese Suche liest die JobPositions-Entität in Common Data Service und gibt eine Liste von Positionen zurück, die für die Stelle ausgewählt werden können. Wenn die Anzahl der Positionen, die Sie auswählen, die Anzahl offener Stellen überschreitet, erhalten Sie eine Warnung. Sie erhalten auch dann eine Warnung, wenn eine Position in mehreren Stellen verwendet wird.
 
 > [!NOTE]
 > Positionsverwaltung ist im Unternehmen mit dem umfassenden Add-On für Neueinstellungen verfügbar.
@@ -74,9 +74,7 @@ Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt 
 
 ## <a name="postings"></a>Buchungen
 
-Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. 
-
-Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit.
+Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit. Wenn eine Stelle nur als intern veröffentlicht wird, benötigen Kandidaten ein AAD-Konto, um die Stelle anzuzeigen und sich auf sie zu bewerben. Wenn die Stelle als öffentlich aufgeführt ist, können Kandidaten mithilfe aller Authentifizierungsoptionen Stellen anzeigen und sich auf sie bewerben. 
 
 Weitere Informationen zu Stellenausschreibungen finden Sie unter [Funktionen für Karriereseiten in Attract](career-site.md).
 
@@ -89,15 +87,15 @@ Bevor Sie eine Stelle von Attract in LinkedIn veröffentlichen, muss der Adminis
 
 Ihre LinkedIn-Unternehmenskennung ist eine Zeichenfolge aus Nummern, mit der Ihr Unternehmen innerhalb von LinkedIn eindeutig identifiziert wird. Weitere Informationen dazu, wie Sie nach der LinkedIn-Unternehmenskennung suchen, finden Sie auf der [LinkedIn-Website](https://aka.ms/findID).
 
-Zum Aktualisieren Ihres LinkedIn-Unternehmen wählen Sie im Menü  **Einstellungen**  (Das Zahnradsymbol) die Option  **Administratorcenter** aus, und wählen Sie dann die  **LinkedIn-Integration** Registerkarte aus. Im Abschnitt **Verbinden mit LinkedIn** geben Sie den LinkedIn-Unternehmensnamen und die -Unternehmenskennung ein. Speichern Sie dann die Einstellungen.
+Zum Aktualisieren Ihres LinkedIn-Unternehmen wählen Sie im Menü **Einstellungen** (Das Zahnradsymbol) die Option **Administratorcenter** aus, und wählen Sie dann die **LinkedIn-Integration** Registerkarte aus. Im Abschnitt **Verbinden mit LinkedIn** geben Sie den LinkedIn-Unternehmensnamen und die -Unternehmenskennung ein. Speichern Sie dann die Einstellungen.
 
 > [!NOTE]
 > Es gibt vier wichtige die für den Stellenausschreibungsprozess für LinkedIn zu beachten sind.
-> 1. Die Stellen, die in LinkedIn erfasst werden, sind als Stellen mit "begrenzten Listen" erfasst. Begrenzte Listeneinzelvorgänge können nicht auf verschiedenen LinkedIn-Site vermarktet werden.  Wenn Sie limitierte Listenaufträge aus Attract in LinkedImn buchen, sollten Sie mit LinkedIn arbeiten um "Stellen-Zusammenfassung" zu aktivieren. Lesen Sie sich bitte die Links umten und kontaktieren Sie den Support von LinkedIn für weitere Details.
+> 1. Die Stellen, die in LinkedIn erfasst werden, sind als Stellen mit "begrenzten Listen" erfasst. Begrenzte Listeneinzelvorgänge können nicht auf verschiedenen LinkedIn-Site vermarktet werden. Wenn Sie limitierte Listenaufträge aus Attract in LinkedImn buchen, sollten Sie mit LinkedIn arbeiten um "Stellen-Zusammenfassung" zu aktivieren. Lesen Sie sich bitte die Links umten und kontaktieren Sie den Support von LinkedIn für weitere Details.
 >
 >    [" Begrenzte Listen mit erstklassige freie Stellen für Stellen-Zusammenfassung](https://www.linkedin.com/help/recruiter/answer/79049/limited-listings-vs-premium-job-slots-for-job-wrapping)
 >
->    [ Stellen-Zusammenfassung FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
+>    [Stellen-Zusammenfassung FAQ](https://www.linkedin.com/help/recruiter/answer/79050/job-wrapping-frequently-asked-questions)
 >
 > 1. Wenn Sie Stellen in LinkedIn buchen, vergleicht Attract die Microsoft 365 Organisationsnamen mit der Stelle. LinkedIn verknüpft die Einzelvorgänge für ein Unternehmen auf der LinkedIn-Seite basierend auf dem Organisationsnamen, der erfolgreich verlaufen ist. Wenn Ihre Stelle für das falsche Unternehmen auf LinkedIn aufgeführt wird, überprüfen Sie, ob Ihre Microsoft 365 Organisationsname mit dem Unternehmensnamen auf LinkedIn übereinstimmt.  
 >
@@ -137,9 +135,14 @@ Nachdem eine Stelle gespeichert wurde, kann sie zur Genehmigung übermittelt wer
 
 In der Stellenliste können Sie die Stellenstatus filtern.
 
-Genehmigungen können an jeden Microsoft Azure Active Directory (Azure AD)-Benutzer im Unternehmen gesendet werden. Die Genehmigungen werden parallel an alle Personen gesendet, die als Genehmiger aufgeführt werden. Nachdem eine Stelle genehmigt wurde, kann sie aktiviert werden.
+Genehmigungen können an jeden Microsoft Azure Active Directory (Azure AD)-Benutzer im Unternehmen gesendet werden. Die Genehmigungen werden parallel an alle Personen gesendet, die als Genehmiger aufgeführt werden. Alle genehmigenden Personen müssen die Stelle genehmigen, bevor sie weiter vorwärts verschoben werden kann. Wenn eine einzelne genehmigende Person die Stelle ablehnt, wird die Stelle einen Status **Abgelehnt** anzeigen. Nachdem eine Stelle genehmigt wurde, kann sie aktiviert werden.
 
-Die Personen, die als Genehmiger aufgeführt werden, erhalten eine Benachrichtigung in Attract, um sie zu darüber zu informieren, dass ein Element genehmigt werden muss. Ein Genehmigungselement wird auch im Bereich **Ihnen zugewiesen** im Dashboard angezeigt. Nachdem jemand eine Stelle akzeptiert oder genehmigt, erhält das Einstellungsteam eine Benachrichtigung. Schließlich erhält das Einstellungsteam eine Benachrichtigung, wenn die Stelle genehmigt wird.
+Wenn ein Benutzer die Stelle bearbeitet, nachdem sie genehmigt, aber nicht aktiviert wurde, wird der Stellenstatus auf **Entwurf** zurückgesetzt, und die Stelle muss erneut zur Genehmigung übermittelt werden. Nachdem eine genehmigte Stelle aktiviert wurde, können Sie diese nicht bearbeiten.
+
+Die Personen, die als genehmigende Personen aufgeführt werden, erhalten eine Benachrichtigung in Attract sowie eine E-Mail, um sie zu darüber zu informieren, dass ein Element genehmigt werden muss.  In der E-Mail können genehmigende Personen auf den Link klicken, um die Stelle zu öffnen, die Details zu überprüfen, und entweder genehmigen oder ablehnen. Nachdem der Status der Stelle auf **Genehmigt** oder **Abgelehnt** festgelegt ist, wird der Antragsteller in Attract benachrichtigt, dass er eine E-Mail erhalten wird. Die genehmigenden Personen erhalten auch eine Erinnerungs-E-Mail, wenn sie nicht auf die Genehmigungsanforderung innerhalb von 24 Stunden geantwortet haben.
+
+> [!NOTE]
+> Sie können benutzerdefinierte E-Mail-Vorlagen für Genehmigungs-E-Mails erstellen. Weitere Informationen finden Sie unter [E-Mail-Vorlagen erstellen und verwalten](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/email-templates).
 
 ## <a name="create-a-job"></a>Stelle erstellen
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c6fcc93cfed35d73ae749856f33857ba84dbfd82
-ms.sourcegitcommit: 70aeb93612ccd45ee88c605a1a4b87c469e3ff57
+ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "773276"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "950403"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Übersicht über die Steuerintegration für Retail Channels
 
@@ -81,12 +81,37 @@ Das Steuerintegrationsframework bietet folgende Optionen, um Fehler bei der Steu
 
 Mit den Optionen **Überspringen** und **Als registriert markieren** können Infocodes bestimmte Informationen zum Fehler erfassen, z. B. den Grund für den Fehler oder eine Begründung für das Überspringen der Steuerregistrierung oder das Markieren der Transaktion als registriert. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
+### <a name="optional-fiscal-registration"></a>Optionale Steuerregistrierung
+
+Steuerliche Erfassung ist möglicherweise erforderlich für einige Vorgänge aber für andere optional. Beispielsweise kann die Steuererfassung von regulärenr Verkäufen und Rücklieferungen zwingend sein, aber die steuerliche Erfassung, die sich auf Debitoreneinzahlungen bezieht ist optional. In diesem Fall sollte die fehlende steuerliche Erfassung eines Verkaufs andere Aufträge sperren, wenn aber die steuerliche Erfassung einer Debitoreneinzahlung nicht abgeschlosse ist, sollten andere Aufträge nicht gesperrt werden. Um die erforderlichen und optionalen Arbeitsgänge zu unterscheiden, sollten Sie sie durch verschiedene Dokumentanbieter abwickeln und separate Schritte für den steuerlichen Erfassungsprozesses für diese Anbieter einrichten. Der Parameter muss **Bei Fehler fortsetzen** für einen Schritt aktiviert werden, der der optionalen steuerlichen Erfassung zugeordnet ist. Weitere Informationen zum Einrichten von Fehlerbehandlungsparametern finden Sie unter [Festlegen von Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
+### <a name="manually-running-fiscal-registration"></a>Steuerliche Erfassung manuell ausführen
+
+Wenn die Buchung einer Steuererfassung oder einess Ereignisses nach einem Fehler (beispielsweise wenn der Operator **Abbrechen** im Fehlerbehandlungsdialogfeld gewählt hat) verschoben wurde, können Sie die steuerliche Erfassung manuell überprüfen, indem Sie einen entsprechenden Arbeitsgang aufrufen. Weitere Details finden Sie unter [Manuelle Ausführung der verschobenen steuerlichen Erfassung aktivieren](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+
+### <a name="fiscal-registration-health-check"></a>Steuerliche Erfassungsintegritätsprüfung
+
+Die Integritätsprüfungsprozedur für die steuerliche Registrierungen überprüft die Verfügbarkeit des steuerlichen Geräts oder der Dienstleistung, wenn bestimmte Ereignisse auftreten. Wenn die steuerliche Erfassung gerade nicht abgeschlossen werden kann, wird der Mitarbeiter im Voraus benachrichtigt.
+
+Der POS führt die Integritätsprüfung aus, wenn die folgenden Ereignisse auftreten:
+
+- Eine neue Transaktion wird geöffnet.
+- Eine ausgesetzte Transaktion wird zurückgerufen.
+- Ein Verkaufs- oder eine Rücklieferungstransaktion ist abgeschlossen.
+
+Wenn die Integritätsprüfung fehlschlägt, wird im POS das Integritätsprüfungsdialogfeld angezeigt. Dieses Dialogfeld enthält die folgenden Schaltflächen:
+
+- **OK** – Mit dieser Schaltfläch kann der Mitarbeiter einen Integritätsprüfungsfehler ignorieren und den Arbeitsgang weiter verarbeiten. Mitarbeiter können diese Schaltfläche nur auswählen, wenn die Berechtigung **integritätsprüfungsfehler überspringen zulassen**  aktiviert ist.
+- **Abbrechen** – Wenn der Mitarbeiter diese Schaltfläche auswählt, bricht der POS die letzte Aktion ab (beispielsweise wird ein Artikel der neuen Transaktlion nicht hinzugefügt).
+
+> [!NOTE]
+> Die Integritätsprüfung wird nur ausgeführt, wenn der aktuelle Arbeitsgang eine Steuererfassung erfordert und wenn der Parameter **Bei Fehler fortsetzen** für den aktuellen Schritt des steuerlichen Anmeldeprozesses deaktiviert wird. Weitere Informationen finden Sie unter[Fehlerbehandlungseinstellungen](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+
 ## <a name="storing-fiscal-response-in-fiscal-transaction"></a>Speichern der Steuerantwort in der Steuertransaktion
 
 Wenn die Steuerregistrierung einer Transaktion oder eines Ereignisses erfolgreich war, wird eine Steuertransaktion in der Kanaldatenbank erstellt und mit der ursprünglichen Transaktion oder dem ursprünglichen Ereignis verknüpft. Wenn die Option **Überspringen** oder **Als registriert markieren** für eine fehlgeschlagene Steuerregistrierung ausgewählt ist, werden diese Informationen in einer Steuertransaktion entsprechend gespeichert. Eine Steuertransaktion enthält die Steuerantwort vom steuerbezogenen Gerät oder Dienst. Wenn der Steuerregistrierungsprozess aus mehreren Schritten besteht, wird eine Steuertransaktion für die einzelnen Schritte des Prozesses erstellt, der zu einer erfolgreichen oder fehlgeschlagenen Registrierung geführt hat.
 
-Steuertransaktionen werden vom *P-Einzelvorgang* in die Retail Zentralverwaltung übertragen, zusammen mit den Einzelhandelstransaktionen. Im Inforegister **Steuertransaktionen** auf der Seite **Einzelhandelsgeschäftsbuchungen** können Sie die Steuertransaktionen anzeigen, die mit den Einzelhandelstransaktionen verknüpft sind.
-
+Steuertransaktionen werden vom Retail Headquarters durch den *P-Einzelvorgang* zusammen mit der Einzelhandels-Transaktion übertragen. Im Inforegister **Steuertransaktionen** auf der Seite **Einzelhandelsgeschäftsbuchungen** können Sie die Steuertransaktionen anzeigen, die mit den Einzelhandelstransaktionen verknüpft sind.
 
 Eine Steuertransaktion speichert die folgenden Details:
 
@@ -111,10 +136,11 @@ Die folgenden Steuerintegrationsbeispiele sind derzeit im Retail SDK verfügbar,
 
 - [Beispiel für Belegdruckerintegration für Italien](emea-ita-fpi-sample.md)
 - [Beispiel für Belegdruckerintegration für Polen](emea-pol-fpi-sample.md)
+- [Integrationsbeispiel für Steuererfassungsdienst für Österreich](emea-aut-fi-sample.md)
+- [Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik](emea-cze-fi-sample.md)
 
 Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügbar, nutzen derzeit jedoch nicht das Steuerintegrationsframework. Die Migration dieser Funktionen in das Steuerintegrationsframework ist für spätere Aktualisierungen geplant.
 
 - [Digitale Signatur für Frankreich](emea-fra-cash-registers.md)
 - [Digitale Signatur für Norwegen](emea-nor-cash-registers.md)
 - [Beispiel zur Integration der Kontrolleinheit für Schweden](./retail-sdk-control-unit-sample.md)
-

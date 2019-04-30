@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 for Finance and Operations personalisieren können.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53aff09746b92372bb38908a526942ebe9bb4c52
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
+ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "363475"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "975850"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 for Finance and Operations personalisieren können.
 
@@ -47,6 +48,8 @@ Die Seite **Benutzeroptionen** enthält mehrere systemweite Einstellungen für d
 - **Einstellungen** – Wählen Sie Standardwerte, die bei jedem Planungslauf verwendet werden, die Sie in Finance and Operations öffnen. Diese Werte umfassen das Unternehmen, die erste Seite und die Standardansicht/den Bearbeitungsmodus. (Anzeigen/Bearbeitungsmodus der bestimmt, ob eine Seite zum Anzeigen gesperrt ist oder diese zum Bearbeiten jedes Mal geöffnet wird, wenn Sie es öffnen.) Diese Registerkarte enthält Optionen für die Sprache, die Zeitzone und das Datum, die Uhrzeit und das Zahlenformat. Und schließlich enthält die Registerkarte unterschiedliche Einstellungen von Version zu Version.
 - **Konto** - Verwenden, um Benutzer-ID und andere Konten bezogene Optionen anzugeben.
 - **Workflow** – Wählen Sie workflowbezogene Optionen aus.
+
+Neben der Bearbeitung der Benutzereinstellungen können Sie Ihre Nutzungsdaten und Personalisierungen und anzeigen und auch löschen, indem Sie auf die Schaltfläche**Nutzungsdaten** klicken. Wenn Sie die Anwendung verwenden, werden viele Ihrer Einstellungen gespeichert, damit die Nutzung des Systems beim nächsten Mal für Sie einfacher wird. Die Registerkarte **Benutzereinstellungen** bietet Ihnen insbesondere die Möglichkeit, persönliche Änderungen anzeigen und verwalten, die Sie im System zu Seiten vorgenommen haben. Funktionslegenden, die neue Funktionen im Fertigprodukt vorstellen (verfügbar im Plattformaktualisierung 26), können auf der Registerkarte auch zurückgesetzt werden, damit Sie erneut über früher angetroffene Funktionen informiert werden.  
 
 ## <a name="implicit-personalizations"></a>Implizite Personalisierungen
 
@@ -160,7 +163,7 @@ Benutzer mit Administratorrechten können Personalisierungen auch für andere Be
 
 - **Anwenden** - Sie können eine Personalisierung für einen oder mehrere Benutzer auswählen. Um eine Personalisierung für einen oder mehrere Benutzer anzuwenden, wählen Sie zuerst eine Rolle und Benutzer aus, die diese Rolle besitzen. Wählen Sie anschließend eine vorhandene Personalisierung aus, um die ausgewählten Benutzer zu übernehmen oder importieren Sie eine Personalisierung. Die Personalisierung wird geprüft und auf alle ausgewählten Benutzer angewendet, wenn diese die ausgewählte Seite das nächste Mal öffnen.
 - **Löschen** – Sie können eine Seiten- oder Arbeitsbereichspersonalisierung für einen oder mehrere Benutzer löschen. Wählen Sie eine Seite oder einen Arbeitsbereich aus, um die Liste der Benutzer zu sehen, die diese Seite personalisiert haben. Anschließend wählen Sie die Benutzer, die für diese deaktivierte Seite oder Arbeitsbereich aus und wählen Sie **Löschen** aus. Alle Personalisierungen, die die ausgewählten Benutzer auf die ausgewählte Seite oder den ausgewählten Arbeitsbereich angewendet haben, werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden. Wenn eine Personalisierung für die Seite oder den Arbeitsbereich gespeichert wurde, dann kann die Personalisierung neu importiert werden.
-- **Manager pro Benutzer** – Wählen Sie einen Benutzer aus, um die Liste der Seiten anzuzeigen, die personalisiert wurde. Sie können dann die Möglichkeit aktivieren oder deaktivieren, um zu bestimmen, ob der ausgewählte Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer.
+- **Manager pro Benutzer** – Wählen Sie einen Benutzer aus, um die Liste der Seiten anzuzeigen, die der Benutzer personalisiert hat. Sie können dann die Möglichkeit aktivieren oder deaktivieren, um zu bestimmen, ob der ausgewählte Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer. Darüber hinaus können Sie Funktionslegenden für den ausgewählten Benutzer zurücksetzen, um alle zuvor geschlossenen Popupfenster, die neue Fähigkeiten vorstellten, erneut beim nächste Mal anzuzeigen, damit der Benutzer diese Funktionen kennen.   
 - **System** – Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. In diesem Fall werden keine Personalisierungen gelöscht. Alle Seiten werden derzeit für ihre Standardannahhme für alle Benutzer zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder auf die Seiten der Benutzer angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Personalisierung von Lagerungsdimensionen

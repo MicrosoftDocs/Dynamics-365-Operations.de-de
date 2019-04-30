@@ -3,7 +3,7 @@ title: Arbeitsplan und Arbeitsgänge
 description: Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 417fd960a43ad3fd023ea0c4a17be735b69743de
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
+ms.sourcegitcommit: dc90d56050d7353930d048476451542cce147e37
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "333345"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "850667"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -59,11 +59,10 @@ Wenn Sie die komplexeren Arbeitsplan-Netzwerke in den Produktionssteuerungsparam
 
 [![Arbeitsplan-Netzwerk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
-**Hinweise:**
-
--   Jeder Arbeitsgang kann nur einen Folgeaktivitätsarbeitsgang haben, und der ganze Arbeitsplan muss in einem einzigen Arbeitsgang beendet werden.
--   Es gibt keine Garantie, dass mehrere Arbeitsgänge, die den gleichen Folgeaktivitätsarbeitsgang haben (z. B. Arbeitsgänge 30 und 40 in der vorhergehenden Abbildung)tatsächlich parallel ausgeführt werden. Die Verfügbarkeit und die Kapazität von Ressourcen kann Einschränkungen auf den Weg der Planung von Arbeitsgängen verursachen.
--   Sie können 0 (null) nicht als Arbeitsgangnummer verwenden. Die Nummer und reserviert und wird verwendet, um anzugeben, dass der letzte Arbeitsgang im Arbeitsplan keine Folgeaktivitätsarbeitsgang hat.
+> [!NOTE]
+> -   Jeder Arbeitsgang kann nur einen Folgeaktivitätsarbeitsgang haben, und der gesamte Arbeitsplan muss in einem einzigen Arbeitsgang beendet werden.
+> -   Dies gibt keine Garantie, dass mehrere Arbeitsgänge, die den gleichen Folgeaktivitätsarbeitsgang haben (z. B. Arbeitsgänge 30 und 40 in der vorhergehenden Abbildung)tatsächlich parallel ausgeführt werden. Die Verfügbarkeit und die Kapazität von Ressourcen kann Einschränkungen auf den Weg der Planung von Arbeitsgängen verursachen.
+> -   Sie können 0 (null) nicht als Arbeitsgangnummer verwenden. Die Nummer und reserviert und wird verwendet, um anzugeben, dass der letzte Arbeitsgang im Arbeitsplan keine Folgeaktivitätsarbeitsgang hat.
 
 ### <a name="parallel-operations"></a>Parallele Arbeitsgänge
 
@@ -122,7 +121,8 @@ Sie können auch angeben, dass in einer Arbeitsgangzuordnung ein Standort besteh
 
 Arbeitsgangzuordnungen bietet viel Flexibilität, wenn Sie die Arbeitspläne definieren. Darüber senkt die Möglichkeit Standardeigenschaften zu definieren die Menge der zu verwaltenden Masterdaten. Allerdings bedeutet diese Flexibilität auch, dass Sie den Kontext berücksichtigen müssen, über den Sie eine Arbeitsgangzuordnung ändern.  
 
-**Hinweis**: Da die betrieblichen Eigenschaften in Arbeitsgangzuordnungen pro Arbeitsgang und Arbeitsplan gespeichert werden, haben alle Instanzen desselben Arbeitsgangs (beispielsweise Montage) dieselbe Rüstzeit, Bearbeitungszeit, Ressourcenanforderungen, usw. Wenn zwei Auftreten eines Arbeitsgangs im gleichen Arbeitsplan auftreten, aber unterschiedliche Bearbeitungszeiten haben,müssen Sie zwei eindeutige Arbeitsgänge, wie Assembly1 und Assembly2 erstellen.
+> [!NOTE]
+> Da die betrieblichen Eigenschaften in Arbeitsgangzuordnungen für jeden Arbeitsgang und Arbeitsplan gespeichert werden, haben alle Instanzen desselben Arbeitsgangs (beispielsweise Montage) dieselbe Rüstzeit, Bearbeitungszeit undRessourcenanforderungen. Wenn zwei Begebenheiten eines Arbeitsgangs im gleichen Arbeitsplan auftreten, aber unterschiedliche Bearbeitungszeiten haben, müssen Sie zwei eindeutige Arbeitsgänge, wie Assembly1 und Assembly2 erstellen.
 
 ### <a name="modifying-product-specific-routes"></a>Ändern der produktspezifischen Arbeitspläne
 
@@ -132,7 +132,8 @@ Auf der Seite **Arbeitsplan** können Sie die betrieblichen Eigenschaften des Ar
 
 Sie können einen Arbeitsgang auch manuell erstellen, die für einen Arbeitsplan und ein freigegebenes Produkt bestimmt ist, indem die **Kopieren und Bearbeiten** Beziehung Funktion verwenden.  
 
-**Hinweis:** Wenn Sie einen neuen Arbeitsgang für einen Arbeitsplan auf der Seite **Arbeitsplan** hinzufügen, wird einer Arbeitsgangzuordnung nur für das aktuelle freigegebene Produkt erstellt. Wenn der Arbeitsplan verwendet wird, um andere freigegebene Produkte zu produzieren, besteht keine entsprechende Arbeitsgangzuordnung für freigegebene Produkte und der Arbeitsplan kann für diese freigegebene Produkte nicht mehr verwendet werden.
+> [!NOTE]
+> Wenn Sie einen neuen Arbeitsgang für einen Arbeitsplan auf der Seite **Arbeitsplan** hinzufügen, wird einer Arbeitsgangzuordnung nur für das aktuelle freigegebene Produkt erstellt. Wenn der Arbeitsplan verwendet wird, um andere freigegebene Produkte zu produzieren, besteht keine entsprechende Arbeitsgangzuordnung für freigegebene Produkte und der Arbeitsplan kann für diese freigegebene Produkte nicht mehr verwendet werden.
 
 ### <a name="maintaining-operation-relations-per-route"></a>Verwalten von Arbeitsgangzuordnungen pro Arbeitsplan
 
@@ -228,17 +229,32 @@ Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der R
 -   **Charge** – Eine Chargenkapazität wird berechnet, indem die Informationen aus der Arbeitsgangzuordnung verwendet werden. Die Anzahl von Chargen und daher die Bearbeitungszeit können auf Basis der Auftragsmenge dann berechnet werden.
 -   **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
 
+### <a name="set-up-route-groups"></a>Arbeitsplangruppen einrichten
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+Sie können die Arbeitsplangruppen und die Einstellungen für den Stellentyp unter **Produktionssteuerung > Einrichten > Arbeitspläne > Arbeitsplangruppen** definieren. Für jeden Plan/Stellentyp in der Arbeitsplangruppe können Sie die folgenden Optionen aktivieren oder deaktivieren:
 
-[Stücklisten und Formeln](bill-of-material-bom.md)
+- **Aktivierung** - Wählen Sie diese Option, um die Berechnungen und die Planung für den ausgewählten Stellentyp zu aktivieren und Stellenfeedback zu erhalten, wenn Sie die Stellenplanung ausführen. Sie müssen diese Option aktivieren, um den Stellentyp zu aktivieren, und anschließend wählen Sie die verbleibenden Optionen für diesen Stellentyp aus. Wenn die Aktivierung nicht ausgewählt ist, wird dieser Stellentyp nicht aktiviert, unabhängig von der Auswahl der anderen Optionen. 
+- **Stellenverwaltung** - Wählen Sie diese Option, um den Stellentyp in der Stellenverwaltung einzubeziehen, wenn Sie die Stellenplanung ausführen. 
+- **Arbeitszeit** - Wählen Sie diese Option, um den Stellentyp gemäß dem Arbeitszeitkalender zu planen, der für die betriebliche Ressource definiert ist, sonst verwenden Sie den gregorianischen Kalender. Arbeitszeit kann entweder über den gregorianischen Kalender oder über die festgelegte Arbeitszeit geplant werden. Wenn Sie diese Option auswählen, ist die Planung auf Grundlage des definierten Arbeitszeitkalender. Außerdem wird der Einzelvorgang des Einzelvorgangstyps vom Einzahlungen auf das Datum geplant, das als Startdatum des Einzelvorgangs definiert ist.
+- **Kapazität** - Wählen Sie diese Option, um Kapazität für den Stellentyp zu reservieren, wenn Sie die Stellenplanung ausführen. Wenn Sie diese Option auswählen wird die Kapazität für den ausgewählten Jobtyp reserviert. Dadurch erhalten Sie einen Überblick darüber, welche Joptypen in jeder Arbeitsganggruppenverwendung die betrieblichen Ressourcen verwendet. Beispielsweise In einer Situation, in der Trockenarbeitsgänge Engpassressourcen sind, müssen diese Ressourcen ls Engpässe angegeben werden. Trocknende Arbeitsgänge, die den Wartezeit-Einzelvorgangstypen zugewiesen werden, reservieren Trockenarbeitsgänge. 
 
-[Kostenkategorien in Produktionsrouting](../cost-management/cost-categories-used-production-routings.md)
+Für jeden der Stellentypen müssen Sie zunächst aktivieren oder deaktivieren. Wenn deaktiviert, wird keine der anderen Einrichtungen (Stellenverwaltung, Arbeitszeit und Kapazität) berücksichtigt, da der Stellentyp nicht aktiv ist. 
 
-[Ressourcenfähigkeiten](resource-capabilities.md)
+Unter den Stellentypen finden Sie Überschneidungen. Überschneidungen lassen verschiedene Einzelvorgänge zu, die gleichzeitig ausgeführt werden. Wenn Einzelvorgänge überlappend sind, können die Ressourcen verwendet werden, können aber nicht für bestimmte Einzelvorgänge reserviert werden.
+Wenn für Aktivierung für das Überschneiden ausgewählt wird, hat der Rest Einstellungen (Stellenverwaltung, Arbeitszeit und Kapazität) keine Auswirkungen in der Arbeitsplangruppe. 
 
-[Elektronische Signatur – Überblick](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
+> [!NOTE]
+> Wenn Sie Versionen aktualisieren, werden möglicherweise folgende Fehler angezeigt: **"CRL Fehler aufgetreten, während das Planungsmodul aufgerufen wird"**. Wenn Sie diesen Fehler erhalten, gehen Sie zur Seite **Arbeitsplangruppen**. Löschen Sie für alle Arbeitspläne, in denen Sie **Überlappen** aktiviert haben, die Option **Stellenverwaltung** **Arbeitszeit** und **Kapazität**. 
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Stücklisten und Formeln](bill-of-material-bom.md)
+
+- [Kostenkategorien in Produktionsrouting](../cost-management/cost-categories-used-production-routings.md)
+
+- [Ressourcenfähigkeiten](resource-capabilities.md)
+
+- [Elektronische Signatur – Überblick](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 

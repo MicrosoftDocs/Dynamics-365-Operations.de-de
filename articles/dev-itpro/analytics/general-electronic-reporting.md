@@ -3,14 +3,14 @@ title: Elektronische Berichterstellung (ER, Elektronic Reporting)
 description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/01/2017
+ms.date: 03/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e619b24fc790399452d6233b2d04987357d87186
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
+ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "310805"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "902959"
 ---
 # <a name="electronic-reporting-er"></a>Elektronische Berichterstellung (ER, Elektronic Reporting)
 
@@ -163,21 +163,33 @@ Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenlei
 
 #### <a name="repository"></a>Repository
 
-Ein ER-Repository speichert ER-Konfigurationen. Vier Typen von EB-Repositorys werden derzeit unterstützt: **Betriebliche Ressourcen**, **LCS-Projekt (LCS)**, **Dateisystem** und **Gesetzliche Konfigurationsdienste (RCS)**.
+Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repositorys werden derzeit unterstützt: 
 
-Ein **Operations-Ressourcen**-Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter als Teil der Finance and Operations-Lösung freigibt. Diese Konfigurationen können in die aktuelle Finance and Operations-Instanz importiert und für die elektronische Berichtserstellung verwendet werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden.
+- Gemeinsame LCS-Bibliothek
+- LCS-Projekt
+- Systemdatei
+- Regulatory Configuration Services (RCS)
+- Betriebliche Ressourcen
+
+
+Ein **LCS-freigegebene Bibliothek** Repository bietet Zugriff auf die Liste der Konfigurationen innerhalb der freigegebenen Anlagebibilothek in den Lifecycle Services (LCS). Dieser Typ von ER-Repository kann nur für den Microsoft-Anbieter erfasst werden. Von der Bibliothek LCS-freigegebener Anlage können Sie die neuesten Versionen von ER-Konfigurationen in die aktuelle Finance and Operations Instanz importieren.
 
 Ein **LCS-Projekt**-Repository bietet Zugriff auf die Konfigurationsliste eines bestimmten LCS-Projekts (LCS-Projektanlagenbibliothek), das in dem Repository-Registrierungsstadium ausgewählt wurde. ER ermöglicht Ihnen, freigegebene Konfigurationen von der aktuellen Finance and Operations-Instanz in ein spezifisches **LCS-Projekt**-Repository hochzuladen. Sie können auch Konfigurationen aus einem **LCS-Projekt**-Repository in die aktuelle Finance and Operations-Instanz importieren.
 
-Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Finance and Operations-Instanz importieren. Beachten Sie, dass auf diesen Repositorytyp in die folgenden Dynamics 365 for Finance and Operations-Umgebungen zugegriffen werden kann:
-- in der Cloud gehostete Umgebungen, die für Entwicklungszwecke bereitgestellt werden (enthalten Testmodelle eingeschlossener Suiten)
-- lokal bereitgestellte Umgebungen (lokal oder lokale Geschäftsdatenbereitstellung (LBD))
+Ein **Dateisystem**-Repository bietet Zugriff auf die Liste von Konfigurationen, die sich als XML-Dateien im speziellen Ordner des lokalen Dateisystems des Computer befinden, auf dem der AOS-Dienst gehostet wird. Obligatorischer Ordner wird in der Repositoryregistrierungsphase ausgewählt. Sie können Konfigurationen aus einem **Dateisystem**-Repository in die aktuelle Finance and Operations-Instanz importieren. 
 
-Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen importieren](./electronic-reporting-import-ger-configurations.md) für weitere Details dazu.
+Beachten Sie, dass auf diesen Repositorytyp in die folgenden Dynamics 365 for Finance and Operations-Umgebungen zugegriffen werden kann:
 
-Ein **RCS-Instanz**-Repository bietet Zugriff auf die Konfigurationsliste einer bestimmten RCS-Instanz, die in der Repository-Registrierungsphase ausgewählt wurde. Mithilfe von EB können Sie abgeschlossene oder geteilte Konfigurationen aus der ausgewählten RCS-Instanz in die aktuelle Finance and Operations-Instanz importieren und sie können für die elektronische Berichterstellung verwendet werden.
+- Cloud gehostete Umgebungen, die für Entwicklungszwecke bereitgestellt werden (enthalten Testmodelle eingeschlossener Suiten)
+- Lokal bereitgestellte Umgebungen (on-premises)
 
-Besuchen Sie die Seite [Elektronische Berichterstellungs-(EB)-Konfigurationen aus Gesetzlichen Konfigurationsdiensten (RCS) importieren](./rcs-download-configurations.md) für weitere Details dazu.
+Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) importieren](./electronic-reporting-import-ger-configurations.md).
+
+Ein **RCS-Instanz**-Repository bietet Zugriff auf die Konfigurationsliste einer bestimmten RCS-Instanz, die in der Repository-Registrierungsphase ausgewählt wurde. Mithilfe von EB können Sie abgeschlossene oder geteilte Konfigurationen aus der ausgewählten RCS-Instanz in die aktuelle Finance and Operations-Instanz importieren, damit Sie sie für die elektronische Berichterstellung verwenden können.
+
+Weitere Informationen unter [Importieren von elektronischen Berichtstellungskonfigurationen (ER) aus den Regulatory Configuration Services (RCS)](./rcs-download-configurations.md).
+
+Ein **Betrieblichees Ressourcen**Repository bietet Zugriff auf die Liste der Konfigurationen, die Microsoft als ER-Konfigurationsanbieter bereitstellt, die ursprünglich als Teil der Finance and Operations Lösung freigegeben wurden. Diese Konfigurationen können in die aktuelle Finance and Operations Instanz importiert und für die elektronische Berichtserstellung verwendet werden oder als Muster-Aufgabenleitfaden abgespielt werden. Sie können auch für zusätzliche Lokalisierungen und Anpassungen verwendet werden. Beachten Sie, dass die neuesten Versionen, die von der Microsoft ER Konfigurationen bereitgestellt werden, von der Bibliothek der LCS-freigegebenen  Anlagen importiert werden müssen, indem das ER-Repository entsprechend verwendet wird.
 
 Benötigte **LCS-Projekt**-, **Dateisystem**- und **Gesetzliche Konfigurationsdienste (RCS)**-Repositorys können einzeln für jeden Konfigurationsanbieter der aktuellen Finance and Operations-Instanz registriert werden. Jedes Repository kann für einen bestimmten Konfigurationsanbieter dediziert werden.
 
@@ -377,6 +389,5 @@ ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Lokalisierungsanforderungen – Erstellen einer elektronischen Berichtskonfiguration](electronic-reporting-configuration.md)
-
-[Verwalten des Lebenszyklus der elektronischen Berichterstellung](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Lokalisierungsanforderungen – Erstellen einer elektronischen Berichtskonfiguration](electronic-reporting-configuration.md)
+- [Verwalten des Lebenszyklus der elektronischen Berichterstellung](general-electronic-reporting-manage-configuration-lifecycle.md)

@@ -1,7 +1,7 @@
 ---
 title: Kreditorenrechnungsabgleich
 description: Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs.
-author: ShivamPandey-msft
+author: abruer
 manager: AnnBe
 ms.date: 02/13/2019
 ms.topic: article
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d1582d268be759cd1f1686c9e80f6cf7eeb2da8
-ms.sourcegitcommit: 1ee613a88edddab036d145f27f19d071a4b8ad24
+ms.openlocfilehash: 74a1f7e16064a954bb22dc233a77bf28747f7f11
+ms.sourcegitcommit: dd1e1636d351a15f9c1b6808bea359417a9bd690
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "389932"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "896947"
 ---
 # <a name="accounts-payable-invoice-matching"></a>Kreditorenrechnungsabgleich
 
