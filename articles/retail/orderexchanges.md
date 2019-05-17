@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: ca4562fafa33b3512f0a5e246b15545fcf53e834
+ms.openlocfilehash: 5a0a6a060a1b4a4d5a80c797f61b212a828d2f04
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "379923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1517074"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
 
@@ -44,7 +44,7 @@ Gehen Sie folgendermaßen vor, um das System so zu konfigurieren, dass Umtausch 
 
 Wenn das System wie im vorigen Abschnitt beschrieben konfiguriert ist, wählt der Verkaufsstellen (POS)-Benutzer immer noch einen Auftrag oder eine Verkaufsrechnung aus, um eine Rücklieferung zu verarbeiten. Dies hat sich seit den vorherigen Versionen von Retail nicht geändert. Wenn jedoch die Rückgabeartikel in den Einkaufskorb gelegt wurden, kann der Benutzer dem Einkaufskorb neue Auftragspositionen hinzuzufügen.
 
-Für diese neuen Auftragspositionen muss der Benutzer alle Attribute definieren, die für die Verarbeitung von Kundenauftragsposition erforderlich sind. Diese Attribute enthalten die Lieferarten und den Erfüllungsstandort. Die Zahlung, die für die Transaktion fällig ist, ist der Nettobetrag der Rücklieferungspositionen und Auftragspositionen. Erfolgt die Zahlung für die Transaktion, wir die Rücklieferung in Retail Headquarters als Auftragsdokument gebucht, und das System erstellt sofort eine Rechnung für die Rückgabepositionen.
+Für diese neuen Auftragspositionen muss der Benutzer alle Attribute definieren, die für die Verarbeitung von Kundenauftragsposition erforderlich sind. Diese Attribute enthalten die Lieferarten und den Erfüllungsstandort. Die Zahlung, die für die Transaktion fällig ist, ist der Nettobetrag der Rücklieferungspositionen und Auftragspositionen. Erfolgt die Zahlung für die Transaktion, wird die Rücklieferung in Retail Headquarters als Auftragsdokument gebucht, und das System erstellt sofort eine Rechnung für die Rückgabepositionen.
 
 Zur besseren Übersicht über die unterschiedlichen Mengen für den Einkaufskorb wurden dem Einkaufskorb drei neue Betragsfelder hinzugefügt. Mithilfe des Bildschirmdesigners können Sie diese neuen Felder in der POS-Benutzeroberfläche (UI) bereitstellen.
 
