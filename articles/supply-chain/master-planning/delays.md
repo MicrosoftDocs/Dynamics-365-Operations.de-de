@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c26fedf15118a304469604527c33a25871356be
-ms.sourcegitcommit: 8eac5eee94bb32143df44c82a2dfdbe903967af8
+ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "878309"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1522288"
 ---
 # <a name="delays"></a>Verzögerungen
 
@@ -42,7 +42,8 @@ Sie können konfigurieren, wie Verzögerungen für eine Dispositionssteuerungsgr
 
 Auf der Seite **Parameter für Produktprogrammplanung** können Sie die Startzeit für die Berechnung von Verzögerungen festlegen. Wenn ein Auftrag nach dieser Zeit erfüllt wird, addiert das System einen Tag Verzögerung zum Verzögerungsdatum des Auftrags hinzu. 
 
-> [!HINWEIS} In früheren Versionen waren berechnete Verzögerungen als *Verfügbarkeitsmeldungen* bekannt, das verzögerte Datum als *Verfügbarkeitsdatum*, und eine verzögerte Buchung war als *eine Buchung mit Erfüllung in der Zukunft* bekannt.
+> [!NOTE]
+> In früheren Versionen waren berechnete Verzögerungen als *Verfügbarkeitsmeldungen* bekannt, das verzögerte Datum als *Verfügbarkeitsdatum*, und eine verzögerte Buchung war als eine *Transaktio mit Erfüllung in der Zukunft* bekannt.
 
 ## <a name="desired-date"></a>Gewünschtes Datum
 

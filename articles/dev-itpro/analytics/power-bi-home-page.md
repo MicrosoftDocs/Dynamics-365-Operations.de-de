@@ -1,6 +1,6 @@
 ---
 title: PowerBI.com-Lösungsstartseite
-description: Dieses Thema führt Power BI.com Lösungen auf, die verfügbar sind, und weist auf Ressourcen hin, die weitere Informationen enthalten.
+description: Dieses Thema führt PowerBI.com Lösungen auf, die verfügbar sind, und weist auf Ressourcen hin, die weitere Informationen enthalten.
 author: sericks007
 manager: AnnBe
 ms.date: 05/08/2018
@@ -19,11 +19,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 64b1c09b781b7bdbaf01a374e321b8dd9418f3da
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "316693"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1551693"
 ---
 # <a name="powerbicom-solutions-home-page"></a>PowerBI.com-Lösungsstartseite
 

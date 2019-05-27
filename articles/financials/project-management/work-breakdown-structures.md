@@ -19,11 +19,11 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: df4bc39f8df80580261102941712622ed59262bd
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "358898"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572349"
 ---
 # <a name="work-breakdown-structures"></a>Projektstrukturpläne
 
@@ -39,7 +39,7 @@ Der erforderliche Genauigkeit in einem PSP hängt vom Ebene der Genauigkeit ab, 
 
 Projekte in Branchen wie Medien und Werbung, Software und IT-Infrastruktur sind recht ähnlich. Die Produktivität hängt von der Erfahrung und der Kompetenz der Person ab, die die Aufgabe ausführen wird. Daher verwenden diese Branchen einen PSP, um eine Näherung der Größe eines Projekts abzurufen statt den Status des Projekts detailliert zu verfolgen. 
 
-Das Einrichten eines PSP ist ein intensiver Prozess, der normalerweise über eine lange Zeitspanne geleistet wird und der die Zusammenarbeit und Informationen einer breiten Palette von Personen erfordert. In diesem Thema wird beschrieben, wie Sie PSP-Erweiterungen in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Bedingungen für die Vorkalkulationen und Nachverfolgung zu erfüllen.
+Das Einrichten eines PSP ist ein intensiver Prozess, der normalerweise über eine lange Zeitspanne geleistet wird und der die Zusammenarbeit und Informationen einer breiten Palette von Personen erfordert. In diesem Thema wird beschrieben, wie Sie PSP-Erweiterungen in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Bedingungen für die Vorkalkulationen und Nachverfolgung zu erfüllen.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Voraussetzungen für die Erstellung eines PSP
 Um einen PSP zu erstellen, müssen Sie in der Lage sein, einen Arbeitsplan zu erstellen und die Kosten der Arbeit zu bewerten.
@@ -105,7 +105,7 @@ So können Sie die PSP-Nummerierung zurzeit nicht anpassen.
 Die Zeitplankalkulation ist normalerweise der zweiten Schritt, wenn Sie den PSP erstellen. Als optimale Methode sollten Sie die Zeitplankalkulation abschließen, nachdem Sie die Aufgaben erstellt haben. Die **Projektstrukturplan**-Seite in Finance and Operations verfügt über zwei Abschnitte. Der obere Bereich ist für die Zeitplankalkulation bewirken und der untere Bereich enthält eine Registerkarte **Vorkalkulierte Kosten und Umsatzerlöse**, die für die Kostenschätzung verwendet wird. 
 **Aufgabenabhängigkeiten** In einem PSP können Sie eine Vorgängerbeziehung zwischen Aufgaben erstellen. Wenn Sie Aufgaben eine Vorgängeraufgabe zuweisen, kann sie nur dann starten, wenn alle Vorgängeraufgaben ausgeführt wurden. Das geplante Startdatum der Aufgabe wird automatisch zum spätestmöglichen Datum aller ihrer Vorgänger festgelegt. 
 
-**Aufgabenplanung in Microsoft Dynamics 365 for Finance and Operations** Die folgenden Faktoren bestimmen die Planung von Blattknotenaufgaben:
+**Aufgabenplanung in Microsoft Dynamics 365 for Finance and Operations** Die folgenden Faktoren bestimmen die Planung von Blattknotenaufgaben:
 
 -   Vorherige Aktivitäten
 -   Aufwand
