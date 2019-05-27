@@ -17,39 +17,39 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 953a3cffc356ab44163944318e7e7d542a113112
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559338"
 ---
-# <a name="setup-method-of-payment-for-iso20022-direct-debit"></a><span data-ttu-id="ae548-103">Zahlungsmethode für ISO20022-Direktbelastungen einrichten</span><span class="sxs-lookup"><span data-stu-id="ae548-103">Setup method of payment for ISO20022 direct debit</span></span>
+# <a name="setup-method-of-payment-for-iso20022-direct-debit"></a><span data-ttu-id="0f24a-103">Zahlungsmethode für ISO20022-Direktbelastungen einrichten</span><span class="sxs-lookup"><span data-stu-id="0f24a-103">Setup method of payment for ISO20022 direct debit</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ae548-104">Dieses Verfahren zeigt, wie ISO20022-Direktbelastung für die Debitorenzahlungsmethode Banküberweisung oder einen anderen Zahlungstyp über eine elektronischen Berichterstellung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="ae548-104">This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting.</span></span> 
+<span data-ttu-id="0f24a-104">Dieses Verfahren zeigt, wie ISO20022-Direktbelastung für die Debitorenzahlungsmethode Banküberweisung oder einen anderen Zahlungstyp über eine elektronischen Berichterstellung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="0f24a-104">This procedure shows how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting.</span></span> 
 
 
 
-<span data-ttu-id="ae548-105">Bevor Sie diese Aufgabe abschließen, müssen Sie Exportformatkonfigurations- und Zahlungskonteneinstellung eingerichtet haben.</span><span class="sxs-lookup"><span data-stu-id="ae548-105">Before you complete this task, you must set up export format configurations and payment accounts.</span></span>
+<span data-ttu-id="0f24a-105">Bevor Sie diese Aufgabe abschließen, müssen Sie Exportformatkonfigurations- und Zahlungskonteneinstellung eingerichtet haben.</span><span class="sxs-lookup"><span data-stu-id="0f24a-105">Before you complete this task, you must set up export format configurations and payment accounts.</span></span>
 
 
 
-<span data-ttu-id="ae548-106">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="ae548-106">This procedure was created using the demo data company DEMF.</span></span>
+<span data-ttu-id="0f24a-106">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="0f24a-106">This procedure was created using the demo data company DEMF.</span></span>
 
 
 
-<span data-ttu-id="ae548-107">Dies ist die dritte von sechs Aufgaben, die das Verfahren für Debitorenzahlungen über elektronischen Berichterstellungskonfigurationen zeigen.</span><span class="sxs-lookup"><span data-stu-id="ae548-107">This is the third of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
+<span data-ttu-id="0f24a-107">Dies ist die dritte von sechs Aufgaben, die das Verfahren für Debitorenzahlungen über elektronischen Berichterstellungskonfigurationen zeigen.</span><span class="sxs-lookup"><span data-stu-id="0f24a-107">This is the third of five procedures that demonstrate the customer payment process using electronic reporting configurations.</span></span>
 
-1. <span data-ttu-id="ae548-108">Wechseln Sie zu "Debitoren" > "Zahlungseinstellungen" > "Zahlungsmethoden".</span><span class="sxs-lookup"><span data-stu-id="ae548-108">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
-2. <span data-ttu-id="ae548-109">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="ae548-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="ae548-110">Filtern Sie beispielsweise im Feld "Zahlungsmethode" mit dem Wert "ELEKTRONISCH".</span><span class="sxs-lookup"><span data-stu-id="ae548-110">For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</span></span>
-3. <span data-ttu-id="ae548-111">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="ae548-111">Click Edit.</span></span>
-4. <span data-ttu-id="ae548-112">Geben Sie im Feld "Zahlungskonto" die Werte "DEMF OPER" an.</span><span class="sxs-lookup"><span data-stu-id="ae548-112">In the Payment account field, specify the values 'DEMF OPER'.</span></span>
-5. <span data-ttu-id="ae548-113">Erweitern Sie den Abschnitt 'Dateiformate'.</span><span class="sxs-lookup"><span data-stu-id="ae548-113">Expand the File formats section.</span></span>
-6. <span data-ttu-id="ae548-114">Wählen Sie "Ja" im Feld "Generische elektronische Berichterstellung" aus.</span><span class="sxs-lookup"><span data-stu-id="ae548-114">Select Yes in the Generic electronic reporting field.</span></span>
-7. <span data-ttu-id="ae548-115">Wählen Sie im Feld "Formatkonfiguration exportieren" einen Wert aus oder geben Sie ihn ein.</span><span class="sxs-lookup"><span data-stu-id="ae548-115">In the Export format configuration field, enter or select a value.</span></span>
-    * <span data-ttu-id="ae548-116">Wählen Sie in der Liste "ISO20022 Direktbelastung (DE)" aus.</span><span class="sxs-lookup"><span data-stu-id="ae548-116">In the list, select ISO20022 Direct debit (DE).</span></span>  <span data-ttu-id="ae548-117">Wenn die Liste leer ist, bedeutet dies, dass es keine importierte und aktive Debitorenzahlungs-Exportformatkonfiguration gibt.</span><span class="sxs-lookup"><span data-stu-id="ae548-117">If the list is empty, the customer payment export format configuration has not been imported and active.</span></span>  
-8. <span data-ttu-id="ae548-118">Wählen Sie "Ja" im Feld "Mandat anfordern" aus.</span><span class="sxs-lookup"><span data-stu-id="ae548-118">Select Yes in the Require mandate field.</span></span>
-    * <span data-ttu-id="ae548-119">Wählen Sie den Parameter "Mandat anfordern" für Debitorenzahlungsformate, die Vollmachtsinformationen in der Zahlungsnachricht benötigen, wie SEPA-Direktbelastung.</span><span class="sxs-lookup"><span data-stu-id="ae548-119">Select the Require mandate parameter for customer payment formats, which require including mandate information in the payment message, like SEPA direct debit.</span></span>  
-9. <span data-ttu-id="ae548-120">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ae548-120">Click Save.</span></span>
+1. <span data-ttu-id="0f24a-108">Wechseln Sie zu "Debitoren" > "Zahlungseinstellungen" > "Zahlungsmethoden".</span><span class="sxs-lookup"><span data-stu-id="0f24a-108">Go to Accounts receivable > Payments setup > Methods of payment.</span></span>
+2. <span data-ttu-id="0f24a-109">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="0f24a-109">Use the Quick Filter to find records.</span></span> <span data-ttu-id="0f24a-110">Filtern Sie beispielsweise im Feld "Zahlungsmethode" mit dem Wert "ELEKTRONISCH".</span><span class="sxs-lookup"><span data-stu-id="0f24a-110">For example, filter on the Method of payment field with a value of 'ELECTRONIC'.</span></span>
+3. <span data-ttu-id="0f24a-111">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="0f24a-111">Click Edit.</span></span>
+4. <span data-ttu-id="0f24a-112">Geben Sie im Feld "Zahlungskonto" die Werte "DEMF OPER" an.</span><span class="sxs-lookup"><span data-stu-id="0f24a-112">In the Payment account field, specify the values 'DEMF OPER'.</span></span>
+5. <span data-ttu-id="0f24a-113">Erweitern Sie den Abschnitt 'Dateiformate'.</span><span class="sxs-lookup"><span data-stu-id="0f24a-113">Expand the File formats section.</span></span>
+6. <span data-ttu-id="0f24a-114">Wählen Sie "Ja" im Feld "Generische elektronische Berichterstellung" aus.</span><span class="sxs-lookup"><span data-stu-id="0f24a-114">Select Yes in the Generic electronic reporting field.</span></span>
+7. <span data-ttu-id="0f24a-115">Wählen Sie im Feld "Formatkonfiguration exportieren" einen Wert aus oder geben Sie ihn ein.</span><span class="sxs-lookup"><span data-stu-id="0f24a-115">In the Export format configuration field, enter or select a value.</span></span>
+    * <span data-ttu-id="0f24a-116">Wählen Sie in der Liste "ISO20022 Direktbelastung (DE)" aus.</span><span class="sxs-lookup"><span data-stu-id="0f24a-116">In the list, select ISO20022 Direct debit (DE).</span></span>  <span data-ttu-id="0f24a-117">Wenn die Liste leer ist, bedeutet dies, dass es keine importierte und aktive Debitorenzahlungs-Exportformatkonfiguration gibt.</span><span class="sxs-lookup"><span data-stu-id="0f24a-117">If the list is empty, the customer payment export format configuration has not been imported and active.</span></span>  
+8. <span data-ttu-id="0f24a-118">Wählen Sie "Ja" im Feld "Mandat anfordern" aus.</span><span class="sxs-lookup"><span data-stu-id="0f24a-118">Select Yes in the Require mandate field.</span></span>
+    * <span data-ttu-id="0f24a-119">Wählen Sie den Parameter "Mandat anfordern" für Debitorenzahlungsformate, die Vollmachtsinformationen in der Zahlungsnachricht benötigen, wie SEPA-Direktbelastung.</span><span class="sxs-lookup"><span data-stu-id="0f24a-119">Select the Require mandate parameter for customer payment formats, which require including mandate information in the payment message, like SEPA direct debit.</span></span>  
+9. <span data-ttu-id="0f24a-120">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="0f24a-120">Click Save.</span></span>
 

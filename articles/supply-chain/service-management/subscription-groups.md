@@ -19,38 +19,38 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 75fd373908fad29f7f604ff6642753ba731775c8
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361037"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1562579"
 ---
-# <a name="subscription-groups"></a><span data-ttu-id="10297-103">Dauerauftragsgruppen</span><span class="sxs-lookup"><span data-stu-id="10297-103">Subscription groups</span></span>    
+# <a name="subscription-groups"></a><span data-ttu-id="5a88e-103">Dauerauftragsgruppen</span><span class="sxs-lookup"><span data-stu-id="5a88e-103">Subscription groups</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="10297-104">Die folgenden Informationen werden für alle Daueraufträge verwendet und für die jeweilige Dauerauftragsgruppe definiert:</span><span class="sxs-lookup"><span data-stu-id="10297-104">Subscriptions share the following information, which is defined for the subscription group:</span></span>
+<span data-ttu-id="5a88e-104">Die folgenden Informationen werden für alle Daueraufträge verwendet und für die jeweilige Dauerauftragsgruppe definiert:</span><span class="sxs-lookup"><span data-stu-id="5a88e-104">Subscriptions share the following information, which is defined for the subscription group:</span></span>
 
-  - <span data-ttu-id="10297-105">Der Nummernkreiscode für den Dauerauftrag (sofern vorhanden).</span><span class="sxs-lookup"><span data-stu-id="10297-105">Number sequence code for the subscription, if any.</span></span>
+  - <span data-ttu-id="5a88e-105">Der Nummernkreiscode für den Dauerauftrag (sofern vorhanden).</span><span class="sxs-lookup"><span data-stu-id="5a88e-105">Number sequence code for the subscription, if any.</span></span>
 
-  - <span data-ttu-id="10297-106">Der Rechnungsstellungszeitraum, für den Dauerauftragsbuchungen erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="10297-106">The invoicing period for which subscription transactions are created.</span></span> <span data-ttu-id="10297-107">Wird der Zeitraumcode für **Rechnungsstellung** im Formular **Dauerauftragsgruppen** beispielsweise auf **Vierteljährlich** festgelegt, werden die Buchungen für alle Daueraufträge, die der Dauerauftragsgruppe zugeordnet sind, vierteljährlich erstellt.</span><span class="sxs-lookup"><span data-stu-id="10297-107">For example, if the **Invoicing** period code in the **Subscription groups** form is set to **Quarterly**, transactions for all subscriptions that are attached to the subscription group are created on a quarterly basis.</span></span>
+  - <span data-ttu-id="5a88e-106">Der Rechnungsstellungszeitraum, für den Dauerauftragsbuchungen erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="5a88e-106">The invoicing period for which subscription transactions are created.</span></span> <span data-ttu-id="5a88e-107">Wird der Zeitraumcode für **Rechnungsstellung** im Formular **Dauerauftragsgruppen** beispielsweise auf **Vierteljährlich** festgelegt, werden die Buchungen für alle Daueraufträge, die der Dauerauftragsgruppe zugeordnet sind, vierteljährlich erstellt.</span><span class="sxs-lookup"><span data-stu-id="5a88e-107">For example, if the **Invoicing** period code in the **Subscription groups** form is set to **Quarterly**, transactions for all subscriptions that are attached to the subscription group are created on a quarterly basis.</span></span>
 
-  - <span data-ttu-id="10297-108">Abgrenzungshäufigkeit des Dauerauftrags (sofern verwendet).</span><span class="sxs-lookup"><span data-stu-id="10297-108">How frequently the subscription is to be accrued, if at all.</span></span>
+  - <span data-ttu-id="5a88e-108">Abgrenzungshäufigkeit des Dauerauftrags (sofern verwendet).</span><span class="sxs-lookup"><span data-stu-id="5a88e-108">How frequently the subscription is to be accrued, if at all.</span></span>
 
-<span data-ttu-id="10297-109">Darüber hinaus können für alle der Dauerauftragsgruppe zugeordneten Daueraufträge die folgenden Aufgaben ausgeführt werden:</span><span class="sxs-lookup"><span data-stu-id="10297-109">You can also complete the following tasks for all subscriptions that are attached to the subscription group:</span></span>
+<span data-ttu-id="5a88e-109">Darüber hinaus können für alle der Dauerauftragsgruppe zugeordneten Daueraufträge die folgenden Aufgaben ausgeführt werden:</span><span class="sxs-lookup"><span data-stu-id="5a88e-109">You can also complete the following tasks for all subscriptions that are attached to the subscription group:</span></span>
 
-  - <span data-ttu-id="10297-110">Dauerauftragsbuchungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="10297-110">Create subscription transactions.</span></span>
+  - <span data-ttu-id="5a88e-110">Dauerauftragsbuchungen erstellen.</span><span class="sxs-lookup"><span data-stu-id="5a88e-110">Create subscription transactions.</span></span>
 
-  - <span data-ttu-id="10297-111">Aktualisieren des Basispreises oder des Index für Daueraufträge.</span><span class="sxs-lookup"><span data-stu-id="10297-111">Update the base price or the index for the subscriptions.</span></span>
+  - <span data-ttu-id="5a88e-111">Aktualisieren des Basispreises oder des Index für Daueraufträge.</span><span class="sxs-lookup"><span data-stu-id="5a88e-111">Update the base price or the index for the subscriptions.</span></span>
 
-  - <span data-ttu-id="10297-112">Buchen antizipierter Umsatzerlöse für Dauerauftragsbuchungen.</span><span class="sxs-lookup"><span data-stu-id="10297-112">Post accrued revenue for subscription transactions.</span></span>
+  - <span data-ttu-id="5a88e-112">Buchen antizipierter Umsatzerlöse für Dauerauftragsbuchungen.</span><span class="sxs-lookup"><span data-stu-id="5a88e-112">Post accrued revenue for subscription transactions.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="10297-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="10297-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5a88e-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5a88e-113">See also</span></span>
 
-<span data-ttu-id="10297-114">[Formular "Dauerauftragsgruppen"](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="10297-114">[Subscription groups (form)](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))</span></span>
+<span data-ttu-id="5a88e-114">[Formular "Dauerauftragsgruppen"](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="5a88e-114">[Subscription groups (form)](https://technet.microsoft.com/en-us/library/aa553150\(v=ax.60\))</span></span>
 
-[<span data-ttu-id="10297-115">Dauerauftragsgruppen einrichten</span><span class="sxs-lookup"><span data-stu-id="10297-115">Set up subscription groups</span></span>](set-up-subscription-groups.md)
+[<span data-ttu-id="5a88e-115">Dauerauftragsgruppen einrichten</span><span class="sxs-lookup"><span data-stu-id="5a88e-115">Set up subscription groups</span></span>](set-up-subscription-groups.md)
 
   
 

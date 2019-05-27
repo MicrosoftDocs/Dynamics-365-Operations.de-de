@@ -18,38 +18,38 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: a01290b3e2810aa1762f2230e8d01d219d6b10bf
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "328193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1554919"
 ---
-# <a name="configure-conditional-decisions-in-a-workflow"></a><span data-ttu-id="f9181-103">Konfigurieren von bedingten Entscheidungen in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="f9181-103">Configure conditional decisions in a workflow</span></span>
+# <a name="configure-conditional-decisions-in-a-workflow"></a><span data-ttu-id="34743-103">Konfigurieren von bedingten Entscheidungen in einem Workflow</span><span class="sxs-lookup"><span data-stu-id="34743-103">Configure conditional decisions in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f9181-104">Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="f9181-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
+<span data-ttu-id="34743-104">Verwenden Sie die folgenden Verfahren, um die Eigenschaften der bedingten Entscheidung zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="34743-104">Use the following procedure to configure the properties of a conditional decision.</span></span>
 
-<span data-ttu-id="f9181-105">Eine bedingte Entscheidung ist ein Punkt, an dem ein Workflow sich in zwei Verzweigungen gabelt.</span><span class="sxs-lookup"><span data-stu-id="f9181-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="f9181-106">Klicken Sie zum Konfigurieren einer bedingten Entscheidung im Workflow-Editor mit der rechten Maustaste auf die bedingte Entscheidung, und klicken Sie dann auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f9181-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
+<span data-ttu-id="34743-105">Eine bedingte Entscheidung ist ein Punkt, an dem ein Workflow sich in zwei Verzweigungen gabelt.</span><span class="sxs-lookup"><span data-stu-id="34743-105">A conditional decision is a point at which a workflow divides into two branches.</span></span> <span data-ttu-id="34743-106">Klicken Sie zum Konfigurieren einer bedingten Entscheidung im Workflow-Editor mit der rechten Maustaste auf die bedingte Entscheidung, und klicken Sie dann auf **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="34743-106">To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.</span></span>
 
-## <a name="name-a-decision"></a><span data-ttu-id="f9181-107">Name einer Entscheidung</span><span class="sxs-lookup"><span data-stu-id="f9181-107">Name a decision</span></span>
+## <a name="name-a-decision"></a><span data-ttu-id="34743-107">Name einer Entscheidung</span><span class="sxs-lookup"><span data-stu-id="34743-107">Name a decision</span></span>
 
-<span data-ttu-id="f9181-108">Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung einzugeben.</span><span class="sxs-lookup"><span data-stu-id="f9181-108">Follow these steps to enter a name for a conditional decision.</span></span>
+<span data-ttu-id="34743-108">Gehen Sie folgendermaßen vor, um einen Namen für die bedingte Entscheidung einzugeben.</span><span class="sxs-lookup"><span data-stu-id="34743-108">Follow these steps to enter a name for a conditional decision.</span></span>
 
-1. <span data-ttu-id="f9181-109">Klicken Sie im linken Bereich auf **Grundeinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="f9181-109">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="f9181-110">Geben Sie im Feld **Name** einen eindeutigen Namen für die bedingte Entscheidung ein.</span><span class="sxs-lookup"><span data-stu-id="f9181-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
+1. <span data-ttu-id="34743-109">Klicken Sie im linken Bereich auf **Grundeinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="34743-109">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="34743-110">Geben Sie im Feld **Name** einen eindeutigen Namen für die bedingte Entscheidung ein.</span><span class="sxs-lookup"><span data-stu-id="34743-110">In the **Name** field, enter a unique name for the conditional decision.</span></span>
 
-## <a name="set-conditions"></a><span data-ttu-id="f9181-111">Festlegen von Bedingungen</span><span class="sxs-lookup"><span data-stu-id="f9181-111">Set conditions</span></span>
+## <a name="set-conditions"></a><span data-ttu-id="34743-111">Festlegen von Bedingungen</span><span class="sxs-lookup"><span data-stu-id="34743-111">Set conditions</span></span>
 
-<span data-ttu-id="f9181-112">Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="f9181-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
+<span data-ttu-id="34743-112">Das System bestimmt durch Überprüfen, ob das übermittelte Dokument bestimmten Bedingungen entspricht, welche Verzweigung verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="34743-112">The system determines which branch is used by evaluating the submitted document to determine whether it meets specific conditions.</span></span>
 
-1. <span data-ttu-id="f9181-113">Klicken Sie im linken Bereich auf **Grundeinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="f9181-113">In the left pane, click **Basic Settings**.</span></span>
-2. <span data-ttu-id="f9181-114">Klicken Sie auf **Bedingung hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="f9181-114">Click **Add condition**.</span></span>
-3. <span data-ttu-id="f9181-115">Geben Sie eine Bedingung ein.</span><span class="sxs-lookup"><span data-stu-id="f9181-115">Enter a condition.</span></span>
-4. <span data-ttu-id="f9181-116">Geben Sie ggf. zusätzliche Bedingungen ein.</span><span class="sxs-lookup"><span data-stu-id="f9181-116">Enter additional conditions, if they are required.</span></span>
-5. <span data-ttu-id="f9181-117">Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:</span><span class="sxs-lookup"><span data-stu-id="f9181-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
+1. <span data-ttu-id="34743-113">Klicken Sie im linken Bereich auf **Grundeinstellungen**.</span><span class="sxs-lookup"><span data-stu-id="34743-113">In the left pane, click **Basic Settings**.</span></span>
+2. <span data-ttu-id="34743-114">Klicken Sie auf **Bedingung hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="34743-114">Click **Add condition**.</span></span>
+3. <span data-ttu-id="34743-115">Geben Sie eine Bedingung ein.</span><span class="sxs-lookup"><span data-stu-id="34743-115">Enter a condition.</span></span>
+4. <span data-ttu-id="34743-116">Geben Sie ggf. zusätzliche Bedingungen ein.</span><span class="sxs-lookup"><span data-stu-id="34743-116">Enter additional conditions, if they are required.</span></span>
+5. <span data-ttu-id="34743-117">Führen Sie folgende Schritte aus, um die korrekte Konfiguration der eingegebenen Bedingungen zu überprüfen:</span><span class="sxs-lookup"><span data-stu-id="34743-117">To verify that the conditions that you entered are configured correctly, complete the following steps:</span></span>
 
-    1. <span data-ttu-id="f9181-118">Klicken Sie auf **Test**, um das Formular **Workflow-Bedingungen testen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f9181-118">Click **Test** to open the **Test workflow condition** form.</span></span>
-    2. <span data-ttu-id="f9181-119">Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.</span><span class="sxs-lookup"><span data-stu-id="f9181-119">Select a record in the **Validate condition** area of the form.</span></span>
-    3. <span data-ttu-id="f9181-120">Klicken Sie auf **Test**.</span><span class="sxs-lookup"><span data-stu-id="f9181-120">Click **Test**.</span></span> <span data-ttu-id="f9181-121">Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.</span><span class="sxs-lookup"><span data-stu-id="f9181-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
-    4. <span data-ttu-id="f9181-122">Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="f9181-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>
+    1. <span data-ttu-id="34743-118">Klicken Sie auf **Test**, um das Formular **Workflow-Bedingungen testen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="34743-118">Click **Test** to open the **Test workflow condition** form.</span></span>
+    2. <span data-ttu-id="34743-119">Wählen Sie im Bereich **Bedingung überprüfen** des Formulars einen Datensatz aus.</span><span class="sxs-lookup"><span data-stu-id="34743-119">Select a record in the **Validate condition** area of the form.</span></span>
+    3. <span data-ttu-id="34743-120">Klicken Sie auf **Test**.</span><span class="sxs-lookup"><span data-stu-id="34743-120">Click **Test**.</span></span> <span data-ttu-id="34743-121">Der Datensatz wird ausgewertet, um zu bestimmen, ob er den festgelegten Bedingungen entspricht.</span><span class="sxs-lookup"><span data-stu-id="34743-121">The system evaluates the record to determine whether it meets the conditions that you defined.</span></span>
+    4. <span data-ttu-id="34743-122">Klicken Sie auf **OK** oder **Abbrechen**, um zum Formular **Eigenschaften** zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="34743-122">Click **OK** or **Cancel** to return to the **Properties** form.</span></span>

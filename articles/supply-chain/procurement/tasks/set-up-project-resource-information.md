@@ -18,37 +18,37 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 180b806a80d373626c3f3a2bb43a3049a43618d1
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346777"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559580"
 ---
-# <a name="set-up-project-resource-information"></a><span data-ttu-id="692be-103">Projektressourceninformationen einrichten</span><span class="sxs-lookup"><span data-stu-id="692be-103">Set up project resource information</span></span>
+# <a name="set-up-project-resource-information"></a><span data-ttu-id="6e745-103">Projektressourceninformationen einrichten</span><span class="sxs-lookup"><span data-stu-id="6e745-103">Set up project resource information</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="692be-104">Diese Prozedur zeigt Ihnen an, wie eine Projektressource eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="692be-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="692be-105">Diese Aufgabe verwendet das USMF-Dataset.</span><span class="sxs-lookup"><span data-stu-id="692be-105">This task uses the USMF data set.</span></span>
+<span data-ttu-id="6e745-104">Diese Prozedur zeigt Ihnen an, wie eine Projektressource eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="6e745-104">This procedure shows how to set up a project resource.</span></span> <span data-ttu-id="6e745-105">Diese Aufgabe verwendet das USMF-Dataset.</span><span class="sxs-lookup"><span data-stu-id="6e745-105">This task uses the USMF data set.</span></span>
 
-1. <span data-ttu-id="692be-106">Wechseln Sie zu „Projektverwaltung und -buchhaltung” > „Projektressourcen” Y „Ressourcenliste”.</span><span class="sxs-lookup"><span data-stu-id="692be-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
-2. <span data-ttu-id="692be-107">Klicken Sie auf „Neue Ressource”.</span><span class="sxs-lookup"><span data-stu-id="692be-107">Click New resource.</span></span>
-3. <span data-ttu-id="692be-108">Geben Sie im Feld 'Arbeitskraft' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="692be-108">In the Worker field, enter or select a value.</span></span>
-4. <span data-ttu-id="692be-109">Geben Sie im Feld "Kalender" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="692be-109">In the Calendar field, enter or select a value.</span></span>
-5. <span data-ttu-id="692be-110">Geben Sie im Feld „Periodencode” einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="692be-110">In the Period code field, enter or select a value.</span></span>
-6. <span data-ttu-id="692be-111">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="692be-111">Click Create.</span></span>
-7. <span data-ttu-id="692be-112">Klicken Sie auf „Einstandspreise”.</span><span class="sxs-lookup"><span data-stu-id="692be-112">Click Cost prices.</span></span>
-8. <span data-ttu-id="692be-113">Klicken Sie auf „Einstandspreis – Stunde”.</span><span class="sxs-lookup"><span data-stu-id="692be-113">Click Cost price - hour.</span></span>
-9. <span data-ttu-id="692be-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="692be-114">Click New.</span></span>
-10. <span data-ttu-id="692be-115">Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="692be-115">In the Effective date field, enter a date.</span></span>
-11. <span data-ttu-id="692be-116">Geben Sie im Feld "Kostenpreis" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="692be-116">In the Cost price field, enter a number.</span></span>
-12. <span data-ttu-id="692be-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="692be-117">Click Save.</span></span>
-13. <span data-ttu-id="692be-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="692be-118">Close the page.</span></span>
-14. <span data-ttu-id="692be-119">Klicken Sie auf „Verkaufspreise”.</span><span class="sxs-lookup"><span data-stu-id="692be-119">Click Sales prices.</span></span>
-15. <span data-ttu-id="692be-120">Klicken Sie auf „Verkaufspreis – Stunde”.</span><span class="sxs-lookup"><span data-stu-id="692be-120">Click Sales price - hour.</span></span>
-16. <span data-ttu-id="692be-121">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="692be-121">Click New.</span></span>
-17. <span data-ttu-id="692be-122">Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="692be-122">In the Effective date field, enter a date.</span></span>
-18. <span data-ttu-id="692be-123">Geben Sie im Feld „Preisgestaltung” eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="692be-123">In the Pricing field, enter a number.</span></span>
-19. <span data-ttu-id="692be-124">Wählen Sie im Feld "Gültig für" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="692be-124">In the Valid for field, select an option.</span></span>
-20. <span data-ttu-id="692be-125">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="692be-125">Click Save.</span></span>
-21. <span data-ttu-id="692be-126">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="692be-126">Close the page.</span></span>
+1. <span data-ttu-id="6e745-106">Wechseln Sie zu „Projektverwaltung und -buchhaltung” > „Projektressourcen” Y „Ressourcenliste”.</span><span class="sxs-lookup"><span data-stu-id="6e745-106">Go to Project management and accounting > Project resources > Resources list.</span></span>
+2. <span data-ttu-id="6e745-107">Klicken Sie auf „Neue Ressource”.</span><span class="sxs-lookup"><span data-stu-id="6e745-107">Click New resource.</span></span>
+3. <span data-ttu-id="6e745-108">Geben Sie im Feld 'Arbeitskraft' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6e745-108">In the Worker field, enter or select a value.</span></span>
+4. <span data-ttu-id="6e745-109">Geben Sie im Feld "Kalender" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6e745-109">In the Calendar field, enter or select a value.</span></span>
+5. <span data-ttu-id="6e745-110">Geben Sie im Feld „Periodencode” einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6e745-110">In the Period code field, enter or select a value.</span></span>
+6. <span data-ttu-id="6e745-111">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="6e745-111">Click Create.</span></span>
+7. <span data-ttu-id="6e745-112">Klicken Sie auf „Einstandspreise”.</span><span class="sxs-lookup"><span data-stu-id="6e745-112">Click Cost prices.</span></span>
+8. <span data-ttu-id="6e745-113">Klicken Sie auf „Einstandspreis – Stunde”.</span><span class="sxs-lookup"><span data-stu-id="6e745-113">Click Cost price - hour.</span></span>
+9. <span data-ttu-id="6e745-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="6e745-114">Click New.</span></span>
+10. <span data-ttu-id="6e745-115">Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="6e745-115">In the Effective date field, enter a date.</span></span>
+11. <span data-ttu-id="6e745-116">Geben Sie im Feld "Kostenpreis" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="6e745-116">In the Cost price field, enter a number.</span></span>
+12. <span data-ttu-id="6e745-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="6e745-117">Click Save.</span></span>
+13. <span data-ttu-id="6e745-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="6e745-118">Close the page.</span></span>
+14. <span data-ttu-id="6e745-119">Klicken Sie auf „Verkaufspreise”.</span><span class="sxs-lookup"><span data-stu-id="6e745-119">Click Sales prices.</span></span>
+15. <span data-ttu-id="6e745-120">Klicken Sie auf „Verkaufspreis – Stunde”.</span><span class="sxs-lookup"><span data-stu-id="6e745-120">Click Sales price - hour.</span></span>
+16. <span data-ttu-id="6e745-121">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="6e745-121">Click New.</span></span>
+17. <span data-ttu-id="6e745-122">Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="6e745-122">In the Effective date field, enter a date.</span></span>
+18. <span data-ttu-id="6e745-123">Geben Sie im Feld „Preisgestaltung” eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="6e745-123">In the Pricing field, enter a number.</span></span>
+19. <span data-ttu-id="6e745-124">Wählen Sie im Feld "Gültig für" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="6e745-124">In the Valid for field, select an option.</span></span>
+20. <span data-ttu-id="6e745-125">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="6e745-125">Click Save.</span></span>
+21. <span data-ttu-id="6e745-126">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="6e745-126">Close the page.</span></span>
 

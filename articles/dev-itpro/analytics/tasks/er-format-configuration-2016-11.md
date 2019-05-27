@@ -17,145 +17,145 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 582e1a2baee805fe6770465edc7958954f638f1c
-ms.sourcegitcommit: 29e19b6d91e5761178627ef2051f3385f5d7cfe5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "377548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544770"
 ---
-# <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="5d316-103">ER Erstellen eine Formatkonfiguration (November 2016)</span><span class="sxs-lookup"><span data-stu-id="5d316-103">ER Create a format configuration (November 2016)</span></span>
+# <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="487e8-103">ER Erstellen eine Formatkonfiguration (November 2016)</span><span class="sxs-lookup"><span data-stu-id="487e8-103">ER Create a format configuration (November 2016)</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="5d316-104">In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Format-Konfiguration für elektronische Berichterstellung (ER) erstellen kann.</span><span class="sxs-lookup"><span data-stu-id="5d316-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER).</span></span> <span data-ttu-id="5d316-105">Diese Formatkonfiguration definiert das Format von elektronischen Dokumenten, die für die Verarbeitung von Zahlungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="5d316-105">This format configuration will define the format of electronic documents that are used for processing payments.</span></span> <span data-ttu-id="5d316-106">In diesem Beispiel erstellen Sie eine Formatkonfiguration für das Beispielunternehmen Litware, Inc. Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in der Prozedur "Modell für ausgewählte Datenquellen zuweisen abschließen".</span><span class="sxs-lookup"><span data-stu-id="5d316-106">In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Map model to selected datasources” procedure.</span></span>
+<span data-ttu-id="487e8-104">In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Format-Konfiguration für elektronische Berichterstellung (ER) erstellen kann.</span><span class="sxs-lookup"><span data-stu-id="487e8-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER).</span></span> <span data-ttu-id="487e8-105">Diese Formatkonfiguration definiert das Format von elektronischen Dokumenten, die für die Verarbeitung von Zahlungen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="487e8-105">This format configuration will define the format of electronic documents that are used for processing payments.</span></span> <span data-ttu-id="487e8-106">In diesem Beispiel erstellen Sie eine Formatkonfiguration für das Beispielunternehmen Litware, Inc. Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in der Prozedur "Modell für ausgewählte Datenquellen zuweisen abschließen".</span><span class="sxs-lookup"><span data-stu-id="487e8-106">In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the “Map model to selected datasources” procedure.</span></span>
 
 
-## <a name="create-a-new-format-configuration"></a><span data-ttu-id="5d316-107">Dient zum Erstellen einer neuen Format-Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="5d316-107">Create a new format configuration</span></span>
-1. <span data-ttu-id="5d316-108">Wechseln Sie zu **Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung**.</span><span class="sxs-lookup"><span data-stu-id="5d316-108">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
-2. <span data-ttu-id="5d316-109">Klicken Sie auf **Berichterstellungskonfigurationen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-109">Click **Reporting configurations**.</span></span>
-3. <span data-ttu-id="5d316-110">Wählen Sie **Zahlungen (vereinfachtes Modell)** in der Struktur aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-110">In the tree, select **Payments (simplified model)**.</span></span>
-4. <span data-ttu-id="5d316-111">Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5d316-111">Click **Create configuration** to open the drop dialog.</span></span>
+## <a name="create-a-new-format-configuration"></a><span data-ttu-id="487e8-107">Dient zum Erstellen einer neuen Format-Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="487e8-107">Create a new format configuration</span></span>
+1. <span data-ttu-id="487e8-108">Wechseln Sie zu **Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung**.</span><span class="sxs-lookup"><span data-stu-id="487e8-108">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
+2. <span data-ttu-id="487e8-109">Klicken Sie auf **Berichterstellungskonfigurationen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-109">Click **Reporting configurations**.</span></span>
+3. <span data-ttu-id="487e8-110">Wählen Sie **Zahlungen (vereinfachtes Modell)** in der Struktur aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-110">In the tree, select **Payments (simplified model)**.</span></span>
+4. <span data-ttu-id="487e8-111">Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="487e8-111">Click **Create configuration** to open the drop dialog.</span></span>
 
  > [!NOTE]
- > <span data-ttu-id="5d316-112">Wenn **Konfiguration erstellen** nicht angezeigt wird, müssen Sie den Entwurfsmodus der Seite **Elektronische Berichterstellungsparameter** aktivieren.</span><span class="sxs-lookup"><span data-stu-id="5d316-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
+ > <span data-ttu-id="487e8-112">Wenn **Konfiguration erstellen** nicht angezeigt wird, müssen Sie den Entwurfsmodus der Seite **Elektronische Berichterstellungsparameter** aktivieren.</span><span class="sxs-lookup"><span data-stu-id="487e8-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
  
-5. <span data-ttu-id="5d316-113">Im **neuen** Feld geben Sie **Format auf Grundlage Datenmodell PaymentModel** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
-6. <span data-ttu-id="5d316-114">Geben Sie im Feld **Name** **BACS (Großbritannien fiktiv)** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
-7. <span data-ttu-id="5d316-115">Geben Sie im Feld **Beschreibung** den Typ **BACS-Kreditorenzahlungsformat (Großbritannien fiktiv**en Namens)" ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
-    * <span data-ttu-id="5d316-116">Der aktive Konfigurationsanbieter wird automatisch hier eingegeben.</span><span class="sxs-lookup"><span data-stu-id="5d316-116">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="5d316-117">Dieser Anbieter ist in der Lage, diese Konfiguration verwalten.</span><span class="sxs-lookup"><span data-stu-id="5d316-117">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="5d316-118">Andere Anbieter können diese Konfiguration verwenden, werden jedoch nicht in der Lage sein, sie zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="5d316-118">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
-    * <span data-ttu-id="5d316-119">Ein spezielles Format elektronischer Dokumente kann definiert werden.</span><span class="sxs-lookup"><span data-stu-id="5d316-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="5d316-120">Lassen Sie das Feld leer, wenn Sie ein Format zur Laufzeit auswählen möchten.</span><span class="sxs-lookup"><span data-stu-id="5d316-120">Leave this field blank if you want to select a format at run-time.</span></span>  
-8. <span data-ttu-id="5d316-121">Geben Sie im Feld **Datenmodelldefinition** einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-121">In the **Data model definition** field, enter or select a value.</span></span>
-9. <span data-ttu-id="5d316-122">Klicken Sie auf **Konfiguration erstellen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-122">Click **Create configuration**.</span></span> <span data-ttu-id="5d316-123">Ein neuer Konfiguration wurde erstellt.</span><span class="sxs-lookup"><span data-stu-id="5d316-123">A new configuration has been created.</span></span> <span data-ttu-id="5d316-124">Die Entwurfsversion kann verwendet werden, um das Designformat für die Verwaltung von elektronischen Dokumenten zu speichern.</span><span class="sxs-lookup"><span data-stu-id="5d316-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
+5. <span data-ttu-id="487e8-113">Im **neuen** Feld geben Sie **Format auf Grundlage Datenmodell PaymentModel** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
+6. <span data-ttu-id="487e8-114">Geben Sie im Feld **Name** **BACS (Großbritannien fiktiv)** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
+7. <span data-ttu-id="487e8-115">Geben Sie im Feld **Beschreibung** den Typ **BACS-Kreditorenzahlungsformat (Großbritannien fiktiv**en Namens)" ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
+    * <span data-ttu-id="487e8-116">Der aktive Konfigurationsanbieter wird automatisch hier eingegeben.</span><span class="sxs-lookup"><span data-stu-id="487e8-116">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="487e8-117">Dieser Anbieter ist in der Lage, diese Konfiguration verwalten.</span><span class="sxs-lookup"><span data-stu-id="487e8-117">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="487e8-118">Andere Anbieter können diese Konfiguration verwenden, werden jedoch nicht in der Lage sein, sie zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="487e8-118">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+    * <span data-ttu-id="487e8-119">Ein spezielles Format elektronischer Dokumente kann definiert werden.</span><span class="sxs-lookup"><span data-stu-id="487e8-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="487e8-120">Lassen Sie das Feld leer, wenn Sie ein Format zur Laufzeit auswählen möchten.</span><span class="sxs-lookup"><span data-stu-id="487e8-120">Leave this field blank if you want to select a format at run-time.</span></span>  
+8. <span data-ttu-id="487e8-121">Geben Sie im Feld **Datenmodelldefinition** einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-121">In the **Data model definition** field, enter or select a value.</span></span>
+9. <span data-ttu-id="487e8-122">Klicken Sie auf **Konfiguration erstellen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-122">Click **Create configuration**.</span></span> <span data-ttu-id="487e8-123">Ein neuer Konfiguration wurde erstellt.</span><span class="sxs-lookup"><span data-stu-id="487e8-123">A new configuration has been created.</span></span> <span data-ttu-id="487e8-124">Die Entwurfsversion kann verwendet werden, um das Designformat für die Verwaltung von elektronischen Dokumenten zu speichern.</span><span class="sxs-lookup"><span data-stu-id="487e8-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
 
-## <a name="design-the-format-of-an-electronic-document"></a><span data-ttu-id="5d316-125">Entwerfen Sie Format elektronischer Dokumente</span><span class="sxs-lookup"><span data-stu-id="5d316-125">Design the format of an electronic document</span></span>
-1. <span data-ttu-id="5d316-126">Klicken Sie auf **Designer**.</span><span class="sxs-lookup"><span data-stu-id="5d316-126">Click **Designer**.</span></span>
-2. <span data-ttu-id="5d316-127">Klicken Sie auf **Stamm hinzufügen**, um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5d316-127">Click **Add root** to open the drop dialog.</span></span>
-3. <span data-ttu-id="5d316-128">Wählen Sie in der Struktur **Common\File** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-128">In the tree, select **Common\File**.</span></span>
-4. <span data-ttu-id="5d316-129">Geben Sie im Feld **Name** **Xml** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-129">In the **Name** field, type **Xml**.</span></span>
-5. <span data-ttu-id="5d316-130">Geben Sie im Feld **Kodierung** **UTF-8** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-130">In the **Encoding** field, type **UTF-8**.</span></span>
-6. <span data-ttu-id="5d316-131">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-131">Click **OK**.</span></span>
-7. <span data-ttu-id="5d316-132">Klicken Sie auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-132">Click **Add**.</span></span>
-8. <span data-ttu-id="5d316-133">Wählen Sie in der Struktur den Knoten **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="5d316-133">In the tree, select **XML\Element**.</span></span>
-9. <span data-ttu-id="5d316-134">Geben Sie im Feld **Name** **Nachricht** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-134">In the **Name** field, type **Message**.</span></span>
-10. <span data-ttu-id="5d316-135">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-135">Click **OK**.</span></span>
-11. <span data-ttu-id="5d316-136">Wählen Sie in der Struktur **XML\Nachricht** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-136">In the tree, select **Xml\Message**.</span></span>
-12. <span data-ttu-id="5d316-137">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-137">Click **Add Element**.</span></span>
-13. <span data-ttu-id="5d316-138">Geben Sie im Feld **Name** **ProcessingDate** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-138">In the **Name** field, type **ProcessingDate**.</span></span>
-14. <span data-ttu-id="5d316-139">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-139">Click **OK**.</span></span>
-15. <span data-ttu-id="5d316-140">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-140">Click **Add Element**.</span></span>
-16. <span data-ttu-id="5d316-141">Geben Sie im Feld Name **MessageId** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-141">In the Name field, type **MessageId**.</span></span>
-17. <span data-ttu-id="5d316-142">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-142">Click **OK**.</span></span>
-18. <span data-ttu-id="5d316-143">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-143">Click **Add Element**.</span></span>
-19. <span data-ttu-id="5d316-144">Geben Sie im Feld **Name** **Zahlungen** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-144">In the **Name** field, type **Payments**.</span></span>
-20. <span data-ttu-id="5d316-145">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-145">Click **OK**.</span></span>
-21. <span data-ttu-id="5d316-146">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-146">In the tree, select **Xml\Message\Payments**.</span></span>
-22. <span data-ttu-id="5d316-147">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-147">Click **Add Element**.</span></span>
-23. <span data-ttu-id="5d316-148">Geben Sie im Feld **Name** **Item** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-148">In the **Name** field, type **Item**.</span></span>
-24. <span data-ttu-id="5d316-149">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-149">Click **OK**.</span></span>
-25. <span data-ttu-id="5d316-150">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-150">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-26. <span data-ttu-id="5d316-151">Klicken Sie auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-151">Click **Add**.</span></span>
-27. <span data-ttu-id="5d316-152">Wählen Sie in der Struktur **XML\Attribute** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-152">In the tree, select **XML\Attribute**.</span></span>
-28. <span data-ttu-id="5d316-153">Geben Sie im Feld Name **Id** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-153">In the Name field, type **Id**.</span></span>
-29. <span data-ttu-id="5d316-154">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-154">Click **OK**.</span></span>
-30. <span data-ttu-id="5d316-155">Klicken Sie auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-155">Click **Add**.</span></span>
-31. <span data-ttu-id="5d316-156">Wählen Sie in der Struktur den Knoten **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="5d316-156">In the tree, select **XML\Element**.</span></span>
-32. <span data-ttu-id="5d316-157">Geben Sie im Feld Name **Lieferant** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-157">In the Name field, type **Vendor**.</span></span>
-33. <span data-ttu-id="5d316-158">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-158">Click **OK**.</span></span>
-34. <span data-ttu-id="5d316-159">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-159">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
-35. <span data-ttu-id="5d316-160">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-160">Click **Add Element**.</span></span>
-36. <span data-ttu-id="5d316-161">Geben Sie im Feld "Typ" **Name** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-161">In the Name field, type **Name**.</span></span>
-37. <span data-ttu-id="5d316-162">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-162">Click **OK**.</span></span>
-38. <span data-ttu-id="5d316-163">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-163">Click **Add Element**.</span></span>
-39. <span data-ttu-id="5d316-164">Geben Sie im Feld **Name** **Bank** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-164">In the **Name** field, type **Bank**.</span></span>
-40. <span data-ttu-id="5d316-165">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-165">Click **OK**.</span></span>
-41. <span data-ttu-id="5d316-166">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Bank** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-166">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank**.</span></span>
-42. <span data-ttu-id="5d316-167">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-167">Click **Add Element**.</span></span>
-43. <span data-ttu-id="5d316-168">Geben Sie im Feld **Name** **RoutingNumber** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-168">In the **Name** field, type **RoutingNumber**.</span></span>
-44. <span data-ttu-id="5d316-169">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-169">Click **OK**.</span></span>
-45. <span data-ttu-id="5d316-170">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-170">Click **Add Element**.</span></span>
-46. <span data-ttu-id="5d316-171">Geben Sie im Feld **Name** **AccountNumber** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-171">In the **Name** field, type **AccountNumber**.</span></span>
-47. <span data-ttu-id="5d316-172">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-172">Click **OK**.</span></span>
-48. <span data-ttu-id="5d316-173">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-173">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
-49. <span data-ttu-id="5d316-174">Klicken Sie auf **Kopieren**.</span><span class="sxs-lookup"><span data-stu-id="5d316-174">Click **Copy**.</span></span>
-50. <span data-ttu-id="5d316-175">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-175">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-51. <span data-ttu-id="5d316-176">Klicken Sie auf **Einfügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-176">Click **Paste**.</span></span>
-52. <span data-ttu-id="5d316-177">Geben Sie im Feld **Name** **Zahler** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-177">In the **Name** field, type **Payer**.</span></span>
-53. <span data-ttu-id="5d316-178">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-178">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-54. <span data-ttu-id="5d316-179">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-179">Click **Add Element**.</span></span>
-55. <span data-ttu-id="5d316-180">Geben Sie im Feld **Name** **Währung** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-180">In the **Name** field, type **Currency**.</span></span>
-56. <span data-ttu-id="5d316-181">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-181">Click **OK**.</span></span>
-57. <span data-ttu-id="5d316-182">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-182">Click **Add Element**.</span></span>
-58. <span data-ttu-id="5d316-183">Geben Sie im Feld **Name** **Beschreibung** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-183">In the **Name** field, type **Description**.</span></span>
-59. <span data-ttu-id="5d316-184">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-184">Click **OK**.</span></span>
-60. <span data-ttu-id="5d316-185">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-185">Click **Add Element**.</span></span>
-61. <span data-ttu-id="5d316-186">Geben Sie im Feld Typ **TransDate** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-186">In the Name field, type **TransDate**.</span></span>
-62. <span data-ttu-id="5d316-187">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-187">Click **OK**.</span></span>
-63. <span data-ttu-id="5d316-188">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-188">Click **Add Element**.</span></span>
-64. <span data-ttu-id="5d316-189">Geben Sie im Feld Namen **Betrag** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-189">In the Name field, type **Amount**.</span></span>
-65. <span data-ttu-id="5d316-190">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-190">Click **OK**.</span></span>
+## <a name="design-the-format-of-an-electronic-document"></a><span data-ttu-id="487e8-125">Entwerfen Sie Format elektronischer Dokumente</span><span class="sxs-lookup"><span data-stu-id="487e8-125">Design the format of an electronic document</span></span>
+1. <span data-ttu-id="487e8-126">Klicken Sie auf **Designer**.</span><span class="sxs-lookup"><span data-stu-id="487e8-126">Click **Designer**.</span></span>
+2. <span data-ttu-id="487e8-127">Klicken Sie auf **Stamm hinzufügen**, um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="487e8-127">Click **Add root** to open the drop dialog.</span></span>
+3. <span data-ttu-id="487e8-128">Wählen Sie in der Struktur **Common\File** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-128">In the tree, select **Common\File**.</span></span>
+4. <span data-ttu-id="487e8-129">Geben Sie im Feld **Name** **Xml** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-129">In the **Name** field, type **Xml**.</span></span>
+5. <span data-ttu-id="487e8-130">Geben Sie im Feld **Kodierung** **UTF-8** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-130">In the **Encoding** field, type **UTF-8**.</span></span>
+6. <span data-ttu-id="487e8-131">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-131">Click **OK**.</span></span>
+7. <span data-ttu-id="487e8-132">Klicken Sie auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-132">Click **Add**.</span></span>
+8. <span data-ttu-id="487e8-133">Wählen Sie in der Struktur den Knoten **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="487e8-133">In the tree, select **XML\Element**.</span></span>
+9. <span data-ttu-id="487e8-134">Geben Sie im Feld **Name** **Nachricht** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-134">In the **Name** field, type **Message**.</span></span>
+10. <span data-ttu-id="487e8-135">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-135">Click **OK**.</span></span>
+11. <span data-ttu-id="487e8-136">Wählen Sie in der Struktur **XML\Nachricht** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-136">In the tree, select **Xml\Message**.</span></span>
+12. <span data-ttu-id="487e8-137">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-137">Click **Add Element**.</span></span>
+13. <span data-ttu-id="487e8-138">Geben Sie im Feld **Name** **ProcessingDate** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-138">In the **Name** field, type **ProcessingDate**.</span></span>
+14. <span data-ttu-id="487e8-139">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-139">Click **OK**.</span></span>
+15. <span data-ttu-id="487e8-140">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-140">Click **Add Element**.</span></span>
+16. <span data-ttu-id="487e8-141">Geben Sie im Feld Name **MessageId** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-141">In the Name field, type **MessageId**.</span></span>
+17. <span data-ttu-id="487e8-142">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-142">Click **OK**.</span></span>
+18. <span data-ttu-id="487e8-143">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-143">Click **Add Element**.</span></span>
+19. <span data-ttu-id="487e8-144">Geben Sie im Feld **Name** **Zahlungen** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-144">In the **Name** field, type **Payments**.</span></span>
+20. <span data-ttu-id="487e8-145">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-145">Click **OK**.</span></span>
+21. <span data-ttu-id="487e8-146">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-146">In the tree, select **Xml\Message\Payments**.</span></span>
+22. <span data-ttu-id="487e8-147">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-147">Click **Add Element**.</span></span>
+23. <span data-ttu-id="487e8-148">Geben Sie im Feld **Name** **Item** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-148">In the **Name** field, type **Item**.</span></span>
+24. <span data-ttu-id="487e8-149">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-149">Click **OK**.</span></span>
+25. <span data-ttu-id="487e8-150">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-150">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+26. <span data-ttu-id="487e8-151">Klicken Sie auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-151">Click **Add**.</span></span>
+27. <span data-ttu-id="487e8-152">Wählen Sie in der Struktur **XML\Attribute** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-152">In the tree, select **XML\Attribute**.</span></span>
+28. <span data-ttu-id="487e8-153">Geben Sie im Feld Name **Id** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-153">In the Name field, type **Id**.</span></span>
+29. <span data-ttu-id="487e8-154">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-154">Click **OK**.</span></span>
+30. <span data-ttu-id="487e8-155">Klicken Sie auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-155">Click **Add**.</span></span>
+31. <span data-ttu-id="487e8-156">Wählen Sie in der Struktur den Knoten **XML\Element**.</span><span class="sxs-lookup"><span data-stu-id="487e8-156">In the tree, select **XML\Element**.</span></span>
+32. <span data-ttu-id="487e8-157">Geben Sie im Feld Name **Lieferant** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-157">In the Name field, type **Vendor**.</span></span>
+33. <span data-ttu-id="487e8-158">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-158">Click **OK**.</span></span>
+34. <span data-ttu-id="487e8-159">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-159">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
+35. <span data-ttu-id="487e8-160">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-160">Click **Add Element**.</span></span>
+36. <span data-ttu-id="487e8-161">Geben Sie im Feld "Typ" **Name** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-161">In the Name field, type **Name**.</span></span>
+37. <span data-ttu-id="487e8-162">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-162">Click **OK**.</span></span>
+38. <span data-ttu-id="487e8-163">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-163">Click **Add Element**.</span></span>
+39. <span data-ttu-id="487e8-164">Geben Sie im Feld **Name** **Bank** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-164">In the **Name** field, type **Bank**.</span></span>
+40. <span data-ttu-id="487e8-165">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-165">Click **OK**.</span></span>
+41. <span data-ttu-id="487e8-166">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Bank** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-166">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank**.</span></span>
+42. <span data-ttu-id="487e8-167">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-167">Click **Add Element**.</span></span>
+43. <span data-ttu-id="487e8-168">Geben Sie im Feld **Name** **RoutingNumber** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-168">In the **Name** field, type **RoutingNumber**.</span></span>
+44. <span data-ttu-id="487e8-169">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-169">Click **OK**.</span></span>
+45. <span data-ttu-id="487e8-170">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-170">Click **Add Element**.</span></span>
+46. <span data-ttu-id="487e8-171">Geben Sie im Feld **Name** **AccountNumber** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-171">In the **Name** field, type **AccountNumber**.</span></span>
+47. <span data-ttu-id="487e8-172">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-172">Click **OK**.</span></span>
+48. <span data-ttu-id="487e8-173">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-173">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
+49. <span data-ttu-id="487e8-174">Klicken Sie auf **Kopieren**.</span><span class="sxs-lookup"><span data-stu-id="487e8-174">Click **Copy**.</span></span>
+50. <span data-ttu-id="487e8-175">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-175">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+51. <span data-ttu-id="487e8-176">Klicken Sie auf **Einfügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-176">Click **Paste**.</span></span>
+52. <span data-ttu-id="487e8-177">Geben Sie im Feld **Name** **Zahler** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-177">In the **Name** field, type **Payer**.</span></span>
+53. <span data-ttu-id="487e8-178">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-178">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+54. <span data-ttu-id="487e8-179">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-179">Click **Add Element**.</span></span>
+55. <span data-ttu-id="487e8-180">Geben Sie im Feld **Name** **Währung** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-180">In the **Name** field, type **Currency**.</span></span>
+56. <span data-ttu-id="487e8-181">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-181">Click **OK**.</span></span>
+57. <span data-ttu-id="487e8-182">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-182">Click **Add Element**.</span></span>
+58. <span data-ttu-id="487e8-183">Geben Sie im Feld **Name** **Beschreibung** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-183">In the **Name** field, type **Description**.</span></span>
+59. <span data-ttu-id="487e8-184">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-184">Click **OK**.</span></span>
+60. <span data-ttu-id="487e8-185">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-185">Click **Add Element**.</span></span>
+61. <span data-ttu-id="487e8-186">Geben Sie im Feld Typ **TransDate** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-186">In the Name field, type **TransDate**.</span></span>
+62. <span data-ttu-id="487e8-187">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-187">Click **OK**.</span></span>
+63. <span data-ttu-id="487e8-188">Klicken Sie auf **Element hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-188">Click **Add Element**.</span></span>
+64. <span data-ttu-id="487e8-189">Geben Sie im Feld Namen **Betrag** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-189">In the Name field, type **Amount**.</span></span>
+65. <span data-ttu-id="487e8-190">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-190">Click **OK**.</span></span>
 
-## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a><span data-ttu-id="5d316-191">Bereiten Sie Formatkomponenten für das Zuordnen zu den Datenmodellelementen vor</span><span class="sxs-lookup"><span data-stu-id="5d316-191">Prepare format components for mapping to data model elements</span></span>
-1. <span data-ttu-id="5d316-192">Wählen Sie in der Struktur **XML\Nachricht\ProcessingDate** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-192">In the tree, select **Xml\Message\ProcessingDate**.</span></span>
-2. <span data-ttu-id="5d316-193">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-193">Click **Add** to open the drop dialog.</span></span>
-3. <span data-ttu-id="5d316-194">Wählen Sie in der Struktur **Text\DateTime** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-194">In the tree, select **Text\DateTime**.</span></span>
-4. <span data-ttu-id="5d316-195">Geben Sie im Feld **Format** **yyyy-MM-dd** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-195">In the **Format** field, type **yyyy-MM-dd**.</span></span>
-5. <span data-ttu-id="5d316-196">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-196">Click **OK**.</span></span>
-6. <span data-ttu-id="5d316-197">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\TransDate** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-197">In the tree, select **Xml\Message\Payments\Item\TransDate**.</span></span>
-7. <span data-ttu-id="5d316-198">Klicken Sie auf **DateTime hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-198">Click **Add DateTime**.</span></span>
-8. <span data-ttu-id="5d316-199">Geben Sie im Feld **Format** **yyyy-MM-dd** ein.</span><span class="sxs-lookup"><span data-stu-id="5d316-199">In the **Format** field, type **yyyy-MM-dd**.</span></span>
-9. <span data-ttu-id="5d316-200">Wählen Sie im Feld **DateTime**-Typ die Option **Date** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-200">In the **DateTime** type field, select **Date**.</span></span>
-10. <span data-ttu-id="5d316-201">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-201">Click **OK**.</span></span>
-11. <span data-ttu-id="5d316-202">Wählen Sie in der Struktur **XML\Nachricht\MessageId** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-202">In the tree, select **Xml\Message\MessageId**.</span></span>
-12. <span data-ttu-id="5d316-203">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-203">Click **Add** to open the drop dialog.</span></span>
-13. <span data-ttu-id="5d316-204">Wählen Sie in der Struktur **Text\String** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-204">In the tree, select **Text\String**.</span></span>
-14. <span data-ttu-id="5d316-205">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-205">Click **OK**.</span></span>
-15. <span data-ttu-id="5d316-206">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Name** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-206">In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.</span></span>
-16. <span data-ttu-id="5d316-207">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-207">Click **Add String**.</span></span>
-17. <span data-ttu-id="5d316-208">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-208">Click **OK**.</span></span>
-18. <span data-ttu-id="5d316-209">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Bank\RoutingNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-209">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.</span></span>
-19. <span data-ttu-id="5d316-210">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-210">Click **Add String**.</span></span>
-20. <span data-ttu-id="5d316-211">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-211">Click **OK**.</span></span>
-21. <span data-ttu-id="5d316-212">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Bank\AccountNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-212">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.</span></span>
-22. <span data-ttu-id="5d316-213">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-213">Click **Add String**.</span></span>
-23. <span data-ttu-id="5d316-214">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-214">Click **OK**.</span></span>
-24. <span data-ttu-id="5d316-215">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Zahlender\Name** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-215">In the tree, select **Xml\Message\Payments\Item\Payer\Name**.</span></span>
-25. <span data-ttu-id="5d316-216">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-216">Click **Add String**.</span></span>
-26. <span data-ttu-id="5d316-217">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-217">Click **OK**.</span></span>
-27. <span data-ttu-id="5d316-218">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Zahlender\Bank\RoutingNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-218">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.</span></span>
-28. <span data-ttu-id="5d316-219">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-219">Click **Add String**.</span></span>
-29. <span data-ttu-id="5d316-220">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-220">Click **OK**.</span></span>
-30. <span data-ttu-id="5d316-221">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Zahlender\Bank\AccountNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-221">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.</span></span>
-31. <span data-ttu-id="5d316-222">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-222">Click **Add String**.</span></span>
-32. <span data-ttu-id="5d316-223">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-223">Click **OK**.</span></span>
-33. <span data-ttu-id="5d316-224">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Währung** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-224">In the tree, select **Xml\Message\Payments\Item\Currency**.</span></span>
-34. <span data-ttu-id="5d316-225">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-225">Click **Add String**.</span></span>
-35. <span data-ttu-id="5d316-226">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-226">Click **OK**.</span></span>
-36. <span data-ttu-id="5d316-227">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Beschreibung** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-227">In the tree, select **Xml\Message\Payments\Item\Description**.</span></span>
-37. <span data-ttu-id="5d316-228">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-228">Click **Add String**.</span></span>
-38. <span data-ttu-id="5d316-229">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-229">Click **OK**.</span></span>
-39. <span data-ttu-id="5d316-230">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Betrag** aus.</span><span class="sxs-lookup"><span data-stu-id="5d316-230">In the tree, select **Xml\Message\Payments\Item\Amount**.</span></span>
-40. <span data-ttu-id="5d316-231">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="5d316-231">Click **Add String**.</span></span>
-41. <span data-ttu-id="5d316-232">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="5d316-232">Click **OK**.</span></span>
-42. <span data-ttu-id="5d316-233">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="5d316-233">Click **Save**.</span></span>
-43. <span data-ttu-id="5d316-234">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="5d316-234">Close the page.</span></span>
+## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a><span data-ttu-id="487e8-191">Bereiten Sie Formatkomponenten für das Zuordnen zu den Datenmodellelementen vor</span><span class="sxs-lookup"><span data-stu-id="487e8-191">Prepare format components for mapping to data model elements</span></span>
+1. <span data-ttu-id="487e8-192">Wählen Sie in der Struktur **XML\Nachricht\ProcessingDate** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-192">In the tree, select **Xml\Message\ProcessingDate**.</span></span>
+2. <span data-ttu-id="487e8-193">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-193">Click **Add** to open the drop dialog.</span></span>
+3. <span data-ttu-id="487e8-194">Wählen Sie in der Struktur **Text\DateTime** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-194">In the tree, select **Text\DateTime**.</span></span>
+4. <span data-ttu-id="487e8-195">Geben Sie im Feld **Format** **yyyy-MM-dd** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-195">In the **Format** field, type **yyyy-MM-dd**.</span></span>
+5. <span data-ttu-id="487e8-196">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-196">Click **OK**.</span></span>
+6. <span data-ttu-id="487e8-197">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\TransDate** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-197">In the tree, select **Xml\Message\Payments\Item\TransDate**.</span></span>
+7. <span data-ttu-id="487e8-198">Klicken Sie auf **DateTime hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-198">Click **Add DateTime**.</span></span>
+8. <span data-ttu-id="487e8-199">Geben Sie im Feld **Format** **yyyy-MM-dd** ein.</span><span class="sxs-lookup"><span data-stu-id="487e8-199">In the **Format** field, type **yyyy-MM-dd**.</span></span>
+9. <span data-ttu-id="487e8-200">Wählen Sie im Feld **DateTime**-Typ die Option **Date** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-200">In the **DateTime** type field, select **Date**.</span></span>
+10. <span data-ttu-id="487e8-201">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-201">Click **OK**.</span></span>
+11. <span data-ttu-id="487e8-202">Wählen Sie in der Struktur **XML\Nachricht\MessageId** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-202">In the tree, select **Xml\Message\MessageId**.</span></span>
+12. <span data-ttu-id="487e8-203">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-203">Click **Add** to open the drop dialog.</span></span>
+13. <span data-ttu-id="487e8-204">Wählen Sie in der Struktur **Text\String** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-204">In the tree, select **Text\String**.</span></span>
+14. <span data-ttu-id="487e8-205">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-205">Click **OK**.</span></span>
+15. <span data-ttu-id="487e8-206">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Name** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-206">In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.</span></span>
+16. <span data-ttu-id="487e8-207">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-207">Click **Add String**.</span></span>
+17. <span data-ttu-id="487e8-208">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-208">Click **OK**.</span></span>
+18. <span data-ttu-id="487e8-209">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Bank\RoutingNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-209">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.</span></span>
+19. <span data-ttu-id="487e8-210">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-210">Click **Add String**.</span></span>
+20. <span data-ttu-id="487e8-211">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-211">Click **OK**.</span></span>
+21. <span data-ttu-id="487e8-212">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Kreditor\Bank\AccountNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-212">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.</span></span>
+22. <span data-ttu-id="487e8-213">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-213">Click **Add String**.</span></span>
+23. <span data-ttu-id="487e8-214">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-214">Click **OK**.</span></span>
+24. <span data-ttu-id="487e8-215">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Zahlender\Name** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-215">In the tree, select **Xml\Message\Payments\Item\Payer\Name**.</span></span>
+25. <span data-ttu-id="487e8-216">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-216">Click **Add String**.</span></span>
+26. <span data-ttu-id="487e8-217">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-217">Click **OK**.</span></span>
+27. <span data-ttu-id="487e8-218">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Zahlender\Bank\RoutingNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-218">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.</span></span>
+28. <span data-ttu-id="487e8-219">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-219">Click **Add String**.</span></span>
+29. <span data-ttu-id="487e8-220">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-220">Click **OK**.</span></span>
+30. <span data-ttu-id="487e8-221">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Zahlender\Bank\AccountNumber** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-221">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.</span></span>
+31. <span data-ttu-id="487e8-222">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-222">Click **Add String**.</span></span>
+32. <span data-ttu-id="487e8-223">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-223">Click **OK**.</span></span>
+33. <span data-ttu-id="487e8-224">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Währung** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-224">In the tree, select **Xml\Message\Payments\Item\Currency**.</span></span>
+34. <span data-ttu-id="487e8-225">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-225">Click **Add String**.</span></span>
+35. <span data-ttu-id="487e8-226">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-226">Click **OK**.</span></span>
+36. <span data-ttu-id="487e8-227">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Beschreibung** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-227">In the tree, select **Xml\Message\Payments\Item\Description**.</span></span>
+37. <span data-ttu-id="487e8-228">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-228">Click **Add String**.</span></span>
+38. <span data-ttu-id="487e8-229">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-229">Click **OK**.</span></span>
+39. <span data-ttu-id="487e8-230">Wählen Sie in der Struktur **XML\Nachricht\Zahlungen\Artikel\Betrag** aus.</span><span class="sxs-lookup"><span data-stu-id="487e8-230">In the tree, select **Xml\Message\Payments\Item\Amount**.</span></span>
+40. <span data-ttu-id="487e8-231">Klicken Sie auf **Zeichenfolge hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="487e8-231">Click **Add String**.</span></span>
+41. <span data-ttu-id="487e8-232">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="487e8-232">Click **OK**.</span></span>
+42. <span data-ttu-id="487e8-233">Klicken Sie auf **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="487e8-233">Click **Save**.</span></span>
+43. <span data-ttu-id="487e8-234">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="487e8-234">Close the page.</span></span>
 

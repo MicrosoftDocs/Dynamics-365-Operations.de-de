@@ -19,42 +19,42 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 215b10cc0733c1beab52fa39e09c83d40a6297a3
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "352573"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1557429"
 ---
-# <a name="reassign-activities"></a><span data-ttu-id="329dd-103">Erneutes Zuordnen von Aktivitäten</span><span class="sxs-lookup"><span data-stu-id="329dd-103">Reassign activities</span></span> 
+# <a name="reassign-activities"></a><span data-ttu-id="3e58f-103">Erneutes Zuordnen von Aktivitäten</span><span class="sxs-lookup"><span data-stu-id="3e58f-103">Reassign activities</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="329dd-104">In diesem Thema wird beschrieben, wie Serviceaktivitäten einer Arbeitskraft einer anderen Arbeitskraft neu zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="329dd-104">This topic describes how to reassign service activities from one worker to another worker.</span></span> <span data-ttu-id="329dd-105">Sie können Serviceaktivitäten einer Arbeitskraft einer anderen Arbeitskraft neu zuweisen, auch wenn die Arbeitskräfte unterschiedlichen Versandteams zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="329dd-105">You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.</span></span>
+<span data-ttu-id="3e58f-104">In diesem Thema wird beschrieben, wie Serviceaktivitäten einer Arbeitskraft einer anderen Arbeitskraft neu zugewiesen werden.</span><span class="sxs-lookup"><span data-stu-id="3e58f-104">This topic describes how to reassign service activities from one worker to another worker.</span></span> <span data-ttu-id="3e58f-105">Sie können Serviceaktivitäten einer Arbeitskraft einer anderen Arbeitskraft neu zuweisen, auch wenn die Arbeitskräfte unterschiedlichen Versandteams zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="3e58f-105">You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.</span></span>
 
-<span data-ttu-id="329dd-106">Gehen Sie folgendermaßen vor, um eine Aktivität einer anderen Arbeitskraft neu zuzuweisen:</span><span class="sxs-lookup"><span data-stu-id="329dd-106">Use the following steps to reassign an activity to another worker:</span></span>
+<span data-ttu-id="3e58f-106">Gehen Sie folgendermaßen vor, um eine Aktivität einer anderen Arbeitskraft neu zuzuweisen:</span><span class="sxs-lookup"><span data-stu-id="3e58f-106">Use the following steps to reassign an activity to another worker:</span></span>
 
-1.  <span data-ttu-id="329dd-107">Klicken Sie auf **Serviceverwaltung** \> **Periodisch** \> **Einsatzplanung**.</span><span class="sxs-lookup"><span data-stu-id="329dd-107">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
+1.  <span data-ttu-id="3e58f-107">Klicken Sie auf **Serviceverwaltung** \> **Periodisch** \> **Einsatzplanung**.</span><span class="sxs-lookup"><span data-stu-id="3e58f-107">Click **Service management** \> **Periodic** \> **Dispatch board**.</span></span>
 
-2.  <span data-ttu-id="329dd-108">Geben Sie in den Feldern **Von Datum** und **Bis Datum** Daten ein, um den Zeitraum zu definieren, für den Aktivitäten angezeigt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="329dd-108">In the **From date** and **To date** fields, enter dates to define the time period to view activities for.</span></span>
+2.  <span data-ttu-id="3e58f-108">Geben Sie in den Feldern **Von Datum** und **Bis Datum** Daten ein, um den Zeitraum zu definieren, für den Aktivitäten angezeigt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="3e58f-108">In the **From date** and **To date** fields, enter dates to define the time period to view activities for.</span></span>
 
-3.  <span data-ttu-id="329dd-109">Wählen Sie aus, ob abgeschlossene Aktivitäten und Versandinformationen für zugehörige Teams anzeigen möchten, und klicken Sie anschließend auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="329dd-109">Select whether to view closed activities and dispatch information for related teams, and then click **OK**.</span></span>
+3.  <span data-ttu-id="3e58f-109">Wählen Sie aus, ob abgeschlossene Aktivitäten und Versandinformationen für zugehörige Teams anzeigen möchten, und klicken Sie anschließend auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="3e58f-109">Select whether to view closed activities and dispatch information for related teams, and then click **OK**.</span></span>
 
-4.  <span data-ttu-id="329dd-110">Klicken Sie im Formular **Einsatzplanung** auf **Erweitert**, um nur das Gantt-Diagramm im oberen Bereich der Seite anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="329dd-110">In the **Dispatch board** form, click **Advanced** to display only the Gantt chart at the top of the page.</span></span> <span data-ttu-id="329dd-111">Klicken Sie auf **Einfach**, um das Gantt-Diagramm und die Registerkarten im Formular anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="329dd-111">Click **Simple** to display the Gantt chart and the tabs in the form.</span></span>
+4.  <span data-ttu-id="3e58f-110">Klicken Sie im Formular **Einsatzplanung** auf **Erweitert**, um nur das Gantt-Diagramm im oberen Bereich der Seite anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="3e58f-110">In the **Dispatch board** form, click **Advanced** to display only the Gantt chart at the top of the page.</span></span> <span data-ttu-id="3e58f-111">Klicken Sie auf **Einfach**, um das Gantt-Diagramm und die Registerkarten im Formular anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="3e58f-111">Click **Simple** to display the Gantt chart and the tabs in the form.</span></span>
 
-5.  <span data-ttu-id="329dd-112">Erweitern Sie die einzelnen Listen der Versandteams.</span><span class="sxs-lookup"><span data-stu-id="329dd-112">Expand each dispatch team list.</span></span>
+5.  <span data-ttu-id="3e58f-112">Erweitern Sie die einzelnen Listen der Versandteams.</span><span class="sxs-lookup"><span data-stu-id="3e58f-112">Expand each dispatch team list.</span></span>
 
-6.  <span data-ttu-id="329dd-113">Befolgen Sie einen der folgenden Schritte, um eine Aktivität neu zuzuweisen:</span><span class="sxs-lookup"><span data-stu-id="329dd-113">Use either of the following steps to reassign an activity:</span></span>
+6.  <span data-ttu-id="3e58f-113">Befolgen Sie einen der folgenden Schritte, um eine Aktivität neu zuzuweisen:</span><span class="sxs-lookup"><span data-stu-id="3e58f-113">Use either of the following steps to reassign an activity:</span></span>
     
-      - <span data-ttu-id="329dd-114">Wählen Sie eine farbcodierte Grafik aus, die die Serviceaktivität, die neu zugewiesen wird, darstellt.</span><span class="sxs-lookup"><span data-stu-id="329dd-114">Select a color-coded graphic that represents the service activity to reassign.</span></span> <span data-ttu-id="329dd-115">Drücken Sie die UMSCHALTTASTE, und verschieben Sie dann die farbcodierte Grafik in die Zeile für einen anderen Mitarbeiter.</span><span class="sxs-lookup"><span data-stu-id="329dd-115">Press the SHIFT key, and then move the color-coded graphic to the row for another employee.</span></span>
+      - <span data-ttu-id="3e58f-114">Wählen Sie eine farbcodierte Grafik aus, die die Serviceaktivität, die neu zugewiesen wird, darstellt.</span><span class="sxs-lookup"><span data-stu-id="3e58f-114">Select a color-coded graphic that represents the service activity to reassign.</span></span> <span data-ttu-id="3e58f-115">Drücken Sie die UMSCHALTTASTE, und verschieben Sie dann die farbcodierte Grafik in die Zeile für einen anderen Mitarbeiter.</span><span class="sxs-lookup"><span data-stu-id="3e58f-115">Press the SHIFT key, and then move the color-coded graphic to the row for another employee.</span></span>
     
-      - <span data-ttu-id="329dd-116">Wählen Sie auf der Registerkarte **Alle**, der Registerkarte **Team**, der Registerkarte **Nicht im Einsatz** oder der Registerkarte **Zugehörig** im Feld **Arbeitskraft** den Namen der Arbeitskraft aus, die die aktuelle Arbeitskraft für die Aktivität ersetzt.</span><span class="sxs-lookup"><span data-stu-id="329dd-116">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.</span></span>
+      - <span data-ttu-id="3e58f-116">Wählen Sie auf der Registerkarte **Alle**, der Registerkarte **Team**, der Registerkarte **Nicht im Einsatz** oder der Registerkarte **Zugehörig** im Feld **Arbeitskraft** den Namen der Arbeitskraft aus, die die aktuelle Arbeitskraft für die Aktivität ersetzt.</span><span class="sxs-lookup"><span data-stu-id="3e58f-116">On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="329dd-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="329dd-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3e58f-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3e58f-117">See also</span></span>
 
-[<span data-ttu-id="329dd-118">Serviceaktivitäten</span><span class="sxs-lookup"><span data-stu-id="329dd-118">Service activities</span></span>](service-activities.md)
+[<span data-ttu-id="3e58f-118">Serviceaktivitäten</span><span class="sxs-lookup"><span data-stu-id="3e58f-118">Service activities</span></span>](service-activities.md)
 
-[<span data-ttu-id="329dd-119">Einsatzplanung</span><span class="sxs-lookup"><span data-stu-id="329dd-119">Dispatch board</span></span>](dispatch-board.md)
+[<span data-ttu-id="3e58f-119">Einsatzplanung</span><span class="sxs-lookup"><span data-stu-id="3e58f-119">Dispatch board</span></span>](dispatch-board.md)
 
 
 
