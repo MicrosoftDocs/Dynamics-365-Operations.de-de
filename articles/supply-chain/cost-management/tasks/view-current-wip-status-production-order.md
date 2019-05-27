@@ -18,23 +18,23 @@ ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 2b35f8927082c70b53702c7ac7c866c05cfc1fde
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "332494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1563065"
 ---
-# <a name="view-current-wip-status-on-a-production-order"></a><span data-ttu-id="8465c-103">Aktuellen RIF-Status eines Produktionsauftrags anzeigen</span><span class="sxs-lookup"><span data-stu-id="8465c-103">View current WIP status on a production order</span></span>
+# <a name="view-current-wip-status-on-a-production-order"></a><span data-ttu-id="9d62a-103">Aktuellen RIF-Status eines Produktionsauftrags anzeigen</span><span class="sxs-lookup"><span data-stu-id="9d62a-103">View current WIP status on a production order</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="8465c-104">Diese Prozedur zeigt, wie eine RIF-Aufstellung auf einem Produktionsauftrag angezeigt werden soll.</span><span class="sxs-lookup"><span data-stu-id="8465c-104">This procedure shows how to view WIP statement on a production order.</span></span> <span data-ttu-id="8465c-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="8465c-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="8465c-106">Diese Prozedur ist für den Kostencontroller vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="8465c-106">This procedure is intended for the cost controller.</span></span>
+<span data-ttu-id="9d62a-104">Diese Prozedur zeigt, wie eine RIF-Aufstellung auf einem Produktionsauftrag angezeigt werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d62a-104">This procedure shows how to view WIP statement on a production order.</span></span> <span data-ttu-id="9d62a-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="9d62a-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="9d62a-106">Diese Prozedur ist für den Kostencontroller vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="9d62a-106">This procedure is intended for the cost controller.</span></span>
 
-1. <span data-ttu-id="8465c-107">Klicken Sie auf "Kostenverwaltung".</span><span class="sxs-lookup"><span data-stu-id="8465c-107">Click Cost administration.</span></span>
-2. <span data-ttu-id="8465c-108">Klicken Sie auf Produktionsaufträge.</span><span class="sxs-lookup"><span data-stu-id="8465c-108">Click Production orders.</span></span>
-3. <span data-ttu-id="8465c-109">Verwenden Sie den Schnellfilter, um im Feld "Produktion" nach dem Wert 'p000153' zu filtern.</span><span class="sxs-lookup"><span data-stu-id="8465c-109">Use the Quick Filter to filter on the Production field with a value of 'p000153'.</span></span>
-4. <span data-ttu-id="8465c-110">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="8465c-110">On the Action Pane, click Manage costs.</span></span>
-5. <span data-ttu-id="8465c-111">Klicken Sie auf "RIF-Aufstellung für Produktion".</span><span class="sxs-lookup"><span data-stu-id="8465c-111">Click Production WIP statement.</span></span>
-6. <span data-ttu-id="8465c-112">Legen Sie das Datum "01-12-2012" im Feld "Von Datum" fest.</span><span class="sxs-lookup"><span data-stu-id="8465c-112">In the From date field, set the date to '2012-12-01'.</span></span>
-7. <span data-ttu-id="8465c-113">Legen Sie das Datum "31-12-2012" im Feld "Bis Datum" fest.</span><span class="sxs-lookup"><span data-stu-id="8465c-113">In the To date field, set the date to '2012-12-31'.</span></span>
+1. <span data-ttu-id="9d62a-107">Klicken Sie auf "Kostenverwaltung".</span><span class="sxs-lookup"><span data-stu-id="9d62a-107">Click Cost administration.</span></span>
+2. <span data-ttu-id="9d62a-108">Klicken Sie auf Produktionsaufträge.</span><span class="sxs-lookup"><span data-stu-id="9d62a-108">Click Production orders.</span></span>
+3. <span data-ttu-id="9d62a-109">Verwenden Sie den Schnellfilter, um im Feld "Produktion" nach dem Wert 'p000153' zu filtern.</span><span class="sxs-lookup"><span data-stu-id="9d62a-109">Use the Quick Filter to filter on the Production field with a value of 'p000153'.</span></span>
+4. <span data-ttu-id="9d62a-110">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="9d62a-110">On the Action Pane, click Manage costs.</span></span>
+5. <span data-ttu-id="9d62a-111">Klicken Sie auf "RIF-Aufstellung für Produktion".</span><span class="sxs-lookup"><span data-stu-id="9d62a-111">Click Production WIP statement.</span></span>
+6. <span data-ttu-id="9d62a-112">Legen Sie das Datum "01-12-2012" im Feld "Von Datum" fest.</span><span class="sxs-lookup"><span data-stu-id="9d62a-112">In the From date field, set the date to '2012-12-01'.</span></span>
+7. <span data-ttu-id="9d62a-113">Legen Sie das Datum "31-12-2012" im Feld "Bis Datum" fest.</span><span class="sxs-lookup"><span data-stu-id="9d62a-113">In the To date field, set the date to '2012-12-31'.</span></span>
 
