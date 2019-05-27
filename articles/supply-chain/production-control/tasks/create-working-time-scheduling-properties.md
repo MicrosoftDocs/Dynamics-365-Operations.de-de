@@ -18,29 +18,29 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 699ba33a766f5bbb6c03a41821a3eb809e3a3e55
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "351009"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1569170"
 ---
-# <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="e9ad5-103">Arbeitszeit-Planungseigenschaften erstellen</span><span class="sxs-lookup"><span data-stu-id="e9ad5-103">Create working time scheduling properties</span></span>
+# <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="1960a-103">Arbeitszeit-Planungseigenschaften erstellen</span><span class="sxs-lookup"><span data-stu-id="1960a-103">Create working time scheduling properties</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="e9ad5-104">Arbeitszeitplanungseigenschaften werden verwendet, um Arbeitszeitintervalle zu kategorisieren und die Einstellungen zu definieren, die Bediener berücksichtigen müssen.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-104">Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account.</span></span> <span data-ttu-id="e9ad5-105">Diese Prozedur zeigt, wie eine Arbeitszeitplanungseigenschaft und zugeordnete Eigenschaftswerte definiert werden.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-105">This procedure shows how to define a working time scheduling property and associated property values.</span></span> <span data-ttu-id="e9ad5-106">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
+<span data-ttu-id="1960a-104">Arbeitszeitplanungseigenschaften werden verwendet, um Arbeitszeitintervalle zu kategorisieren und die Einstellungen zu definieren, die Bediener berücksichtigen müssen.</span><span class="sxs-lookup"><span data-stu-id="1960a-104">Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account.</span></span> <span data-ttu-id="1960a-105">Diese Prozedur zeigt, wie eine Arbeitszeitplanungseigenschaft und zugeordnete Eigenschaftswerte definiert werden.</span><span class="sxs-lookup"><span data-stu-id="1960a-105">This procedure shows how to define a working time scheduling property and associated property values.</span></span> <span data-ttu-id="1960a-106">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="1960a-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. <span data-ttu-id="e9ad5-107">Wechseln Sie zu "Alle Arbeitsbereiche" > "Ressourcenlebenszyklusverwaltung".</span><span class="sxs-lookup"><span data-stu-id="e9ad5-107">Go to All workspaces > Resource lifecycle management.</span></span>
-2. <span data-ttu-id="e9ad5-108">Klicken Sie auf Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-108">Click Properties.</span></span>
+1. <span data-ttu-id="1960a-107">Wechseln Sie zu "Alle Arbeitsbereiche" > "Ressourcenlebenszyklusverwaltung".</span><span class="sxs-lookup"><span data-stu-id="1960a-107">Go to All workspaces > Resource lifecycle management.</span></span>
+2. <span data-ttu-id="1960a-108">Klicken Sie auf Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="1960a-108">Click Properties.</span></span>
 
-## <a name="create-property"></a><span data-ttu-id="e9ad5-109">Eigenschaft erstellen</span><span class="sxs-lookup"><span data-stu-id="e9ad5-109">Create property</span></span>
-1. <span data-ttu-id="e9ad5-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e9ad5-110">Click New.</span></span>
-2. <span data-ttu-id="e9ad5-111">Geben Sie im Feld "Eigenschaft" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-111">In the Property field, type a value.</span></span>
-3. <span data-ttu-id="e9ad5-112">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-112">In the Name field, type a value.</span></span>
+## <a name="create-property"></a><span data-ttu-id="1960a-109">Eigenschaft erstellen</span><span class="sxs-lookup"><span data-stu-id="1960a-109">Create property</span></span>
+1. <span data-ttu-id="1960a-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="1960a-110">Click New.</span></span>
+2. <span data-ttu-id="1960a-111">Geben Sie im Feld "Eigenschaft" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1960a-111">In the Property field, type a value.</span></span>
+3. <span data-ttu-id="1960a-112">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1960a-112">In the Name field, type a value.</span></span>
 
-## <a name="create-property-values"></a><span data-ttu-id="e9ad5-113">Eigenschaftswerte erstellen</span><span class="sxs-lookup"><span data-stu-id="e9ad5-113">Create property values</span></span>
-1. <span data-ttu-id="e9ad5-114">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-114">In the list, mark the selected row.</span></span>
-2. <span data-ttu-id="e9ad5-115">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-115">In the Name field, type a value.</span></span>
-3. <span data-ttu-id="e9ad5-116">Geben Sie im Feld "Wert" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e9ad5-116">In the Value field, type a value.</span></span>
-4. <span data-ttu-id="e9ad5-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="e9ad5-117">Click Save.</span></span>
+## <a name="create-property-values"></a><span data-ttu-id="1960a-113">Eigenschaftswerte erstellen</span><span class="sxs-lookup"><span data-stu-id="1960a-113">Create property values</span></span>
+1. <span data-ttu-id="1960a-114">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="1960a-114">In the list, mark the selected row.</span></span>
+2. <span data-ttu-id="1960a-115">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1960a-115">In the Name field, type a value.</span></span>
+3. <span data-ttu-id="1960a-116">Geben Sie im Feld "Wert" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1960a-116">In the Value field, type a value.</span></span>
+4. <span data-ttu-id="1960a-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="1960a-117">Click Save.</span></span>
 

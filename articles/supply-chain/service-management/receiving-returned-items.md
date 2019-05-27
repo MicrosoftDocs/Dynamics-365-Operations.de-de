@@ -19,28 +19,28 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: d46f2b16c475cda9b99c1ba084538de47ec3dc7c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365798"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1570105"
 ---
-# <a name="receive-returned-items"></a><span data-ttu-id="28e98-103">Zurückgegebene Artikel empfangen</span><span class="sxs-lookup"><span data-stu-id="28e98-103">Receive returned items</span></span> 
+# <a name="receive-returned-items"></a><span data-ttu-id="3984d-103">Zurückgegebene Artikel empfangen</span><span class="sxs-lookup"><span data-stu-id="3984d-103">Receive returned items</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="28e98-104">Wenn eine Rücklieferung eingeht, gleichen Sie sie mit einer Rücklieferung ab, die bereits erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="28e98-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
+<span data-ttu-id="3984d-104">Wenn eine Rücklieferung eingeht, gleichen Sie sie mit einer Rücklieferung ab, die bereits erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="3984d-104">When a return shipment arrives, you match it to a return order that has already been created.</span></span>
 
-<span data-ttu-id="28e98-105">Je nach Unternehmensrichtlinie können die Artikel in der Rücklieferung in Quarantäne zur zusätzliches Prüfung versetzt werden, oder sie können in den Bestand zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="28e98-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
+<span data-ttu-id="3984d-105">Je nach Unternehmensrichtlinie können die Artikel in der Rücklieferung in Quarantäne zur zusätzliches Prüfung versetzt werden, oder sie können in den Bestand zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="3984d-105">Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="28e98-106">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="28e98-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3984d-106">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3984d-106">See also</span></span>
 
-[<span data-ttu-id="28e98-107">Erfassen des Empfangs zurückgelieferter Artikel</span><span class="sxs-lookup"><span data-stu-id="28e98-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
+[<span data-ttu-id="3984d-107">Erfassen des Empfangs zurückgelieferter Artikel</span><span class="sxs-lookup"><span data-stu-id="3984d-107">Register the receipt of returned items</span></span>](register-the-receipt-of-returned-items.md)
 
-[<span data-ttu-id="28e98-108">Buchen der Wareneingangserfassung für zurückgelieferte Produkte</span><span class="sxs-lookup"><span data-stu-id="28e98-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
+[<span data-ttu-id="3984d-108">Buchen der Wareneingangserfassung für zurückgelieferte Produkte</span><span class="sxs-lookup"><span data-stu-id="3984d-108">Post arrival journal for returned products</span></span>](post-arrival-journal-for-returned-products.md)
 
-[<span data-ttu-id="28e98-109">Prüfen von zurückgelieferten Artikeln</span><span class="sxs-lookup"><span data-stu-id="28e98-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
+[<span data-ttu-id="3984d-109">Prüfen von zurückgelieferten Artikeln</span><span class="sxs-lookup"><span data-stu-id="3984d-109">Take returned items through inspection</span></span>](take-returned-items-through-inspection.md)
 
   
 

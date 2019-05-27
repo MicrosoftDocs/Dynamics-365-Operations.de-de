@@ -17,54 +17,54 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: fb49f5f3f8a5a788cb4c6d1be69534ba808e3675
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346823"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568419"
 ---
-# <a name="create-a-hierarchy-of-product-classification"></a><span data-ttu-id="0b54b-103">Eine Hierarchie zur Produktklassifizierung erstellen</span><span class="sxs-lookup"><span data-stu-id="0b54b-103">Create a hierarchy of product classification</span></span>
+# <a name="create-a-hierarchy-of-product-classification"></a><span data-ttu-id="3392a-103">Eine Hierarchie zur Produktklassifizierung erstellen</span><span class="sxs-lookup"><span data-stu-id="3392a-103">Create a hierarchy of product classification</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="0b54b-104">Im folgenden Verfahren, wie eine neue Kategoriehierarchie erstellt und einen Warencodehierarchietyp zuweist.</span><span class="sxs-lookup"><span data-stu-id="0b54b-104">This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type.</span></span> <span data-ttu-id="0b54b-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="0b54b-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="0b54b-106">Diese Prozedur ist für die Kategorie-Lagerverwaltung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="0b54b-106">This procedure is intended for the category manager.</span></span>
+<span data-ttu-id="3392a-104">Im folgenden Verfahren, wie eine neue Kategoriehierarchie erstellt und einen Warencodehierarchietyp zuweist.</span><span class="sxs-lookup"><span data-stu-id="3392a-104">This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type.</span></span> <span data-ttu-id="3392a-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="3392a-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="3392a-106">Diese Prozedur ist für die Kategorie-Lagerverwaltung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="3392a-106">This procedure is intended for the category manager.</span></span>
 
 
-## <a name="create-the-new-category-hierarchy"></a><span data-ttu-id="0b54b-107">Neue Kategoriehierarchie erstellen</span><span class="sxs-lookup"><span data-stu-id="0b54b-107">Create the new category hierarchy</span></span>
-1. <span data-ttu-id="0b54b-108">Wechseln Sie zu "Produktinformationsverwaltung" > "Einrichtung" > "Kategorien und Attribute" > "Kategorienhierarchie".</span><span class="sxs-lookup"><span data-stu-id="0b54b-108">Go to Product information management > Setup > Categories and attributes > Category hierarchies.</span></span>
-2. <span data-ttu-id="0b54b-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="0b54b-109">Click New.</span></span>
-3. <span data-ttu-id="0b54b-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-110">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="0b54b-111">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="0b54b-112">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="0b54b-112">Click Create.</span></span>
+## <a name="create-the-new-category-hierarchy"></a><span data-ttu-id="3392a-107">Neue Kategoriehierarchie erstellen</span><span class="sxs-lookup"><span data-stu-id="3392a-107">Create the new category hierarchy</span></span>
+1. <span data-ttu-id="3392a-108">Wechseln Sie zu "Produktinformationsverwaltung" > "Einrichtung" > "Kategorien und Attribute" > "Kategorienhierarchie".</span><span class="sxs-lookup"><span data-stu-id="3392a-108">Go to Product information management > Setup > Categories and attributes > Category hierarchies.</span></span>
+2. <span data-ttu-id="3392a-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="3392a-109">Click New.</span></span>
+3. <span data-ttu-id="3392a-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="3392a-111">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="3392a-112">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="3392a-112">Click Create.</span></span>
 
-## <a name="build-the-hierarchy"></a><span data-ttu-id="0b54b-113">Erstellen Sie die Hierarchie an</span><span class="sxs-lookup"><span data-stu-id="0b54b-113">Build the hierarchy</span></span>
-1. <span data-ttu-id="0b54b-114">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="0b54b-114">Click New category node.</span></span>
-2. <span data-ttu-id="0b54b-115">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-115">In the Name field, type a value.</span></span>
-3. <span data-ttu-id="0b54b-116">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-116">In the Code field, type a value.</span></span>
-4. <span data-ttu-id="0b54b-117">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-117">In the Friendly name field, type a value.</span></span>
-5. <span data-ttu-id="0b54b-118">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="0b54b-118">Click New category node.</span></span>
-6. <span data-ttu-id="0b54b-119">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-119">In the Name field, type a value.</span></span>
-7. <span data-ttu-id="0b54b-120">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-120">In the Code field, type a value.</span></span>
-8. <span data-ttu-id="0b54b-121">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-121">In the Friendly name field, type a value.</span></span>
-9. <span data-ttu-id="0b54b-122">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="0b54b-122">Click New category node.</span></span>
-10. <span data-ttu-id="0b54b-123">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-123">In the Name field, type a value.</span></span>
-11. <span data-ttu-id="0b54b-124">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-124">In the Code field, type a value.</span></span>
-12. <span data-ttu-id="0b54b-125">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-125">In the Friendly name field, type a value.</span></span>
-13. <span data-ttu-id="0b54b-126">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="0b54b-126">Click New category node.</span></span>
-14. <span data-ttu-id="0b54b-127">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-127">In the Name field, type a value.</span></span>
-15. <span data-ttu-id="0b54b-128">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-128">In the Code field, type a value.</span></span>
-16. <span data-ttu-id="0b54b-129">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0b54b-129">In the Friendly name field, type a value.</span></span>
-17. <span data-ttu-id="0b54b-130">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="0b54b-130">Close the page.</span></span>
+## <a name="build-the-hierarchy"></a><span data-ttu-id="3392a-113">Erstellen Sie die Hierarchie an</span><span class="sxs-lookup"><span data-stu-id="3392a-113">Build the hierarchy</span></span>
+1. <span data-ttu-id="3392a-114">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="3392a-114">Click New category node.</span></span>
+2. <span data-ttu-id="3392a-115">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-115">In the Name field, type a value.</span></span>
+3. <span data-ttu-id="3392a-116">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-116">In the Code field, type a value.</span></span>
+4. <span data-ttu-id="3392a-117">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-117">In the Friendly name field, type a value.</span></span>
+5. <span data-ttu-id="3392a-118">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="3392a-118">Click New category node.</span></span>
+6. <span data-ttu-id="3392a-119">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-119">In the Name field, type a value.</span></span>
+7. <span data-ttu-id="3392a-120">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-120">In the Code field, type a value.</span></span>
+8. <span data-ttu-id="3392a-121">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-121">In the Friendly name field, type a value.</span></span>
+9. <span data-ttu-id="3392a-122">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="3392a-122">Click New category node.</span></span>
+10. <span data-ttu-id="3392a-123">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-123">In the Name field, type a value.</span></span>
+11. <span data-ttu-id="3392a-124">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-124">In the Code field, type a value.</span></span>
+12. <span data-ttu-id="3392a-125">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-125">In the Friendly name field, type a value.</span></span>
+13. <span data-ttu-id="3392a-126">Klicken Sie auf Neuer Kategorieknoten.</span><span class="sxs-lookup"><span data-stu-id="3392a-126">Click New category node.</span></span>
+14. <span data-ttu-id="3392a-127">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-127">In the Name field, type a value.</span></span>
+15. <span data-ttu-id="3392a-128">Geben Sie im Feld Code einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-128">In the Code field, type a value.</span></span>
+16. <span data-ttu-id="3392a-129">Geben Sie im Feld "Anzeigename" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="3392a-129">In the Friendly name field, type a value.</span></span>
+17. <span data-ttu-id="3392a-130">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="3392a-130">Close the page.</span></span>
 
-## <a name="classify-the-hierarchy"></a><span data-ttu-id="0b54b-131">Klassifizieren Sie die Hierarchie</span><span class="sxs-lookup"><span data-stu-id="0b54b-131">Classify the hierarchy</span></span>
-1. <span data-ttu-id="0b54b-132">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="0b54b-132">In the list, find and select the desired record.</span></span>
-2. <span data-ttu-id="0b54b-133">Klicken Sie im Aktivitätsbereich auf die Registerkarte Kategorie.</span><span class="sxs-lookup"><span data-stu-id="0b54b-133">On the Action Pane, click Category hierarchy.</span></span>
-3. <span data-ttu-id="0b54b-134">Hierarchietyp zuordnen</span><span class="sxs-lookup"><span data-stu-id="0b54b-134">Click Associate hierarchy type.</span></span>
-4. <span data-ttu-id="0b54b-135">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="0b54b-135">Click New.</span></span>
-5. <span data-ttu-id="0b54b-136">Wählen Sie im Feld "Kategorie-Typ" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="0b54b-136">In the Category hierarchy type field, select an option.</span></span>
-    * <span data-ttu-id="0b54b-137">Wählen Sie den Warencodekategoriehierarchietyp für Produktklassifizierung aus.</span><span class="sxs-lookup"><span data-stu-id="0b54b-137">Select the Commodity code category hierarchy type for product classification.</span></span>  
-6. <span data-ttu-id="0b54b-138">Klicken Sie im Feld Kategorie-Typ auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="0b54b-138">In the Category hierarchy field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="0b54b-139">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="0b54b-139">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="0b54b-140">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="0b54b-140">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="0b54b-141">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="0b54b-141">Close the page.</span></span>
+## <a name="classify-the-hierarchy"></a><span data-ttu-id="3392a-131">Klassifizieren Sie die Hierarchie</span><span class="sxs-lookup"><span data-stu-id="3392a-131">Classify the hierarchy</span></span>
+1. <span data-ttu-id="3392a-132">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="3392a-132">In the list, find and select the desired record.</span></span>
+2. <span data-ttu-id="3392a-133">Klicken Sie im Aktivitätsbereich auf die Registerkarte Kategorie.</span><span class="sxs-lookup"><span data-stu-id="3392a-133">On the Action Pane, click Category hierarchy.</span></span>
+3. <span data-ttu-id="3392a-134">Hierarchietyp zuordnen</span><span class="sxs-lookup"><span data-stu-id="3392a-134">Click Associate hierarchy type.</span></span>
+4. <span data-ttu-id="3392a-135">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="3392a-135">Click New.</span></span>
+5. <span data-ttu-id="3392a-136">Wählen Sie im Feld "Kategorie-Typ" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="3392a-136">In the Category hierarchy type field, select an option.</span></span>
+    * <span data-ttu-id="3392a-137">Wählen Sie den Warencodekategoriehierarchietyp für Produktklassifizierung aus.</span><span class="sxs-lookup"><span data-stu-id="3392a-137">Select the Commodity code category hierarchy type for product classification.</span></span>  
+6. <span data-ttu-id="3392a-138">Klicken Sie im Feld Kategorie-Typ auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="3392a-138">In the Category hierarchy field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="3392a-139">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="3392a-139">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="3392a-140">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="3392a-140">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="3392a-141">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="3392a-141">Close the page.</span></span>
 
