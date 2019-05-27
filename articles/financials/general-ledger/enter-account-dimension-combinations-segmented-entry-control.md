@@ -19,21 +19,21 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: c9addb2897bac68115a38f0239764ab65af2378c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "315658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572464"
 ---
-# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="b7cdf-104">Eingeben von Konto- und Dimensionskombinationen (segmentierte Eintragssteuerung)</span><span class="sxs-lookup"><span data-stu-id="b7cdf-104">Enter account and dimension combinations (segmented entry control)</span></span>
+# <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a><span data-ttu-id="21aa5-104">Eingeben von Konto- und Dimensionskombinationen (segmentierte Eintragssteuerung)</span><span class="sxs-lookup"><span data-stu-id="21aa5-104">Enter account and dimension combinations (segmented entry control)</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b7cdf-105">In diesem Artikel wird beschrieben, wie Konto- und Dimensions-Kombinationen oder Sachkonten eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="b7cdf-106">Die Eintragserfahrung wird häufig als segmentiertes Eintragssteuerelement bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-106">The entry experience is often referred to as segmented entry control.</span></span>
+<span data-ttu-id="21aa5-105">In diesem Artikel wird beschrieben, wie Konto- und Dimensions-Kombinationen oder Sachkonten eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="21aa5-105">This article describes how to enter account and dimension combinations or ledger accounts.</span></span> <span data-ttu-id="21aa5-106">Die Eintragserfahrung wird häufig als segmentiertes Eintragssteuerelement bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="21aa5-106">The entry experience is often referred to as segmented entry control.</span></span>
 
-<span data-ttu-id="b7cdf-107">Benutzer geben Konto- und Dimensionskombinationen auf verschiedenen Seiten ein, z. B. auf Seiten für die allgemeine Erfassung, Budgetierung und Buchungsdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-107">Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions.</span></span> <span data-ttu-id="b7cdf-108">Die gültigen Konto- und Dimensionskombinationen hängen von den dem Sachkonto zugewiesenen Kontostrukturen und den erweiterten Regeln ab, die den Kontostrukturen zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-108">The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures.</span></span> <span data-ttu-id="b7cdf-109">Wenn Benutzer eine Kombination eingeben, können sie entweder die Werttypen manuell eingeben oder die vielfältigen Suchfunktionen nutzen.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-109">When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience.</span></span> <span data-ttu-id="b7cdf-110">Wenn Sie das Feld eingeben, können Sie mit der Eingabe beginnen und es wird nach dem Wert und der Beschreibung gesucht.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-110">When you enter the field, you can start to type and it will search the value and the description.</span></span> <span data-ttu-id="b7cdf-111">Wenn Sie z. B. Typ 180 eingeben wird ein Wert gesucht, der mit dieser Kontokombination beginnt.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-111">For example, if you type 180 it will search any value that begins with that number combination.</span></span> <span data-ttu-id="b7cdf-112">Oder Sie können Bargeld eingeben und es wird jeder beliebige Wert gesucht, der eine Beschreibung hat, die mit "Bar" beginnt.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-112">Or you may type Cash and it will search any value that has a description that begins with Cash.</span></span> <span data-ttu-id="b7cdf-113">Sie können einen Platzhalter, wie \*Bargeld oder \*180 eingeben, um den Wert oder die Beschreibung zu suchen, die das Kriterium enthalten.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-113">You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria.</span></span> 
+<span data-ttu-id="21aa5-107">Benutzer geben Konto- und Dimensionskombinationen auf verschiedenen Seiten ein, z. B. auf Seiten für die allgemeine Erfassung, Budgetierung und Buchungsdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="21aa5-107">Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions.</span></span> <span data-ttu-id="21aa5-108">Die gültigen Konto- und Dimensionskombinationen hängen von den dem Sachkonto zugewiesenen Kontostrukturen und den erweiterten Regeln ab, die den Kontostrukturen zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="21aa5-108">The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures.</span></span> <span data-ttu-id="21aa5-109">Wenn Benutzer eine Kombination eingeben, können sie entweder die Werttypen manuell eingeben oder die vielfältigen Suchfunktionen nutzen.</span><span class="sxs-lookup"><span data-stu-id="21aa5-109">When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience.</span></span> <span data-ttu-id="21aa5-110">Wenn Sie das Feld eingeben, können Sie mit der Eingabe beginnen und es wird nach dem Wert und der Beschreibung gesucht.</span><span class="sxs-lookup"><span data-stu-id="21aa5-110">When you enter the field, you can start to type and it will search the value and the description.</span></span> <span data-ttu-id="21aa5-111">Wenn Sie z. B. Typ 180 eingeben wird ein Wert gesucht, der mit dieser Kontokombination beginnt.</span><span class="sxs-lookup"><span data-stu-id="21aa5-111">For example, if you type 180 it will search any value that begins with that number combination.</span></span> <span data-ttu-id="21aa5-112">Oder Sie können Bargeld eingeben und es wird jeder beliebige Wert gesucht, der eine Beschreibung hat, die mit "Bar" beginnt.</span><span class="sxs-lookup"><span data-stu-id="21aa5-112">Or you may type Cash and it will search any value that has a description that begins with Cash.</span></span> <span data-ttu-id="21aa5-113">Sie können einen Platzhalter, wie \*Bargeld oder \*180 eingeben, um den Wert oder die Beschreibung zu suchen, die das Kriterium enthalten.</span><span class="sxs-lookup"><span data-stu-id="21aa5-113">You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria.</span></span> 
 
-<span data-ttu-id="b7cdf-114">In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwendet werden können, wenn die Suche geschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-114">The following table describes the keyboard shortcuts that can be used when the lookup is closed.</span></span>
+<span data-ttu-id="21aa5-114">In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwendet werden können, wenn die Suche geschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="21aa5-114">The following table describes the keyboard shortcuts that can be used when the lookup is closed.</span></span>
 
 <table>
 <colgroup>
@@ -42,31 +42,31 @@ ms.locfileid: "315658"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="b7cdf-115">Tastenkombination</span><span class="sxs-lookup"><span data-stu-id="b7cdf-115">Keyboard shortcut</span></span></th>
-<th><span data-ttu-id="b7cdf-116">Aktion</span><span class="sxs-lookup"><span data-stu-id="b7cdf-116">Action</span></span></th>
+<th><span data-ttu-id="21aa5-115">Tastenkombination</span><span class="sxs-lookup"><span data-stu-id="21aa5-115">Keyboard shortcut</span></span></th>
+<th><span data-ttu-id="21aa5-116">Aktion</span><span class="sxs-lookup"><span data-stu-id="21aa5-116">Action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="b7cdf-117">ALT+NACH-UNTEN-TASTE</span><span class="sxs-lookup"><span data-stu-id="b7cdf-117">Alt+Down Arrow</span></span></td>
-<td><span data-ttu-id="b7cdf-118">Öffnet die Suche.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-118">Open the lookup.</span></span> <span data-ttu-id="b7cdf-119">Wenn Sie ein zweites Mal die Kombination ALT+NACH-UNTEN-TASTE drücken, wechselt der Fokus zu den Segmenten im Flyout.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-119">If you press Alt+Down Arrow a second time, the focus moves to the segments in the flyout.</span></span></td>
+<td><span data-ttu-id="21aa5-117">ALT+NACH-UNTEN-TASTE</span><span class="sxs-lookup"><span data-stu-id="21aa5-117">Alt+Down Arrow</span></span></td>
+<td><span data-ttu-id="21aa5-118">Öffnet die Suche.</span><span class="sxs-lookup"><span data-stu-id="21aa5-118">Open the lookup.</span></span> <span data-ttu-id="21aa5-119">Wenn Sie ein zweites Mal die Kombination ALT+NACH-UNTEN-TASTE drücken, wechselt der Fokus zu den Segmenten im Flyout.</span><span class="sxs-lookup"><span data-stu-id="21aa5-119">If you press Alt+Down Arrow a second time, the focus moves to the segments in the flyout.</span></span></td>
 </tr>
 <tr class="even">
 <td><ul>
-<li><span data-ttu-id="b7cdf-120">EINGABETASTE und UMSCHALT+EINGABETASTE</span><span class="sxs-lookup"><span data-stu-id="b7cdf-120">Enter and Shift+Enter</span></span></li>
-<li><span data-ttu-id="b7cdf-121">Trennzeichen für Kontenplan</span><span class="sxs-lookup"><span data-stu-id="b7cdf-121">Chart of accounts delimiter</span></span></li>
-<li><span data-ttu-id="b7cdf-122">NACH-RECHTS-TASTE und NACH-LINKS-TASTE</span><span class="sxs-lookup"><span data-stu-id="b7cdf-122">Right Arrow and Left Arrow</span></span></li>
+<li><span data-ttu-id="21aa5-120">EINGABETASTE und UMSCHALT+EINGABETASTE</span><span class="sxs-lookup"><span data-stu-id="21aa5-120">Enter and Shift+Enter</span></span></li>
+<li><span data-ttu-id="21aa5-121">Trennzeichen für Kontenplan</span><span class="sxs-lookup"><span data-stu-id="21aa5-121">Chart of accounts delimiter</span></span></li>
+<li><span data-ttu-id="21aa5-122">NACH-RECHTS-TASTE und NACH-LINKS-TASTE</span><span class="sxs-lookup"><span data-stu-id="21aa5-122">Right Arrow and Left Arrow</span></span></li>
 </ul></td>
-<td><span data-ttu-id="b7cdf-123">Wechselt zum nächsten bzw. vorhergehenden Segment.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-123">Move to the next or previous segment.</span></span></td>
+<td><span data-ttu-id="21aa5-123">Wechselt zum nächsten bzw. vorhergehenden Segment.</span><span class="sxs-lookup"><span data-stu-id="21aa5-123">Move to the next or previous segment.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="b7cdf-124">Registerkarte</span><span class="sxs-lookup"><span data-stu-id="b7cdf-124">Tab</span></span></td>
-<td><span data-ttu-id="b7cdf-125">Wechselt zum nächsten Feld im Raster.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-125">Move to the next field in the grid.</span></span></td>
+<td><span data-ttu-id="21aa5-124">Registerkarte</span><span class="sxs-lookup"><span data-stu-id="21aa5-124">Tab</span></span></td>
+<td><span data-ttu-id="21aa5-125">Wechselt zum nächsten Feld im Raster.</span><span class="sxs-lookup"><span data-stu-id="21aa5-125">Move to the next field in the grid.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-<span data-ttu-id="b7cdf-126">In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwendet werden können, wenn die Suche geöffnet ist.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-126">The following table describes the keyboard shortcuts that can be used when the lookup is open.</span></span>
+<span data-ttu-id="21aa5-126">In der folgenden Tabelle werden die Tastenkombinationen beschrieben, die verwendet werden können, wenn die Suche geöffnet ist.</span><span class="sxs-lookup"><span data-stu-id="21aa5-126">The following table describes the keyboard shortcuts that can be used when the lookup is open.</span></span>
 
 <table>
 <colgroup>
@@ -75,37 +75,37 @@ ms.locfileid: "315658"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="b7cdf-127">Tastenkombination</span><span class="sxs-lookup"><span data-stu-id="b7cdf-127">Keyboard shortcut</span></span></th>
-<th><span data-ttu-id="b7cdf-128">Aktion</span><span class="sxs-lookup"><span data-stu-id="b7cdf-128">Action</span></span></th>
+<th><span data-ttu-id="21aa5-127">Tastenkombination</span><span class="sxs-lookup"><span data-stu-id="21aa5-127">Keyboard shortcut</span></span></th>
+<th><span data-ttu-id="21aa5-128">Aktion</span><span class="sxs-lookup"><span data-stu-id="21aa5-128">Action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="b7cdf-129">ESC</span><span class="sxs-lookup"><span data-stu-id="b7cdf-129">Esc</span></span></td>
-<td><span data-ttu-id="b7cdf-130">Schließt die Suche.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-130">Close the lookup.</span></span></td>
+<td><span data-ttu-id="21aa5-129">ESC</span><span class="sxs-lookup"><span data-stu-id="21aa5-129">Esc</span></span></td>
+<td><span data-ttu-id="21aa5-130">Schließt die Suche.</span><span class="sxs-lookup"><span data-stu-id="21aa5-130">Close the lookup.</span></span></td>
 </tr>
 <tr class="even">
 <td><ul>
-<li><span data-ttu-id="b7cdf-131">NACH-OBEN-TASTE und NACH-UNTEN-TASTE</span><span class="sxs-lookup"><span data-stu-id="b7cdf-131">Up Arrow and Down Arrow</span></span></li>
-<li><span data-ttu-id="b7cdf-132">BILD-AUF und BILD-AB</span><span class="sxs-lookup"><span data-stu-id="b7cdf-132">Page Up and Page Down</span></span></li>
-<li><span data-ttu-id="b7cdf-133">POS1 und ENDE-TASTE</span><span class="sxs-lookup"><span data-stu-id="b7cdf-133">Home and End</span></span></li>
+<li><span data-ttu-id="21aa5-131">NACH-OBEN-TASTE und NACH-UNTEN-TASTE</span><span class="sxs-lookup"><span data-stu-id="21aa5-131">Up Arrow and Down Arrow</span></span></li>
+<li><span data-ttu-id="21aa5-132">BILD-AUF und BILD-AB</span><span class="sxs-lookup"><span data-stu-id="21aa5-132">Page Up and Page Down</span></span></li>
+<li><span data-ttu-id="21aa5-133">POS1 und ENDE-TASTE</span><span class="sxs-lookup"><span data-stu-id="21aa5-133">Home and End</span></span></li>
 </ul></td>
-<td><span data-ttu-id="b7cdf-134">Wechselt zum vorherigen bzw. nächsten Wert in den Listen, zur vorherigen bzw. nächsten Gruppe von Werten oder zum ersten bzw. letzten Element in der Suche.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-134">Move to the previous or next value in the lists, to the previous or next group of values, or to the first or last element in the lookup.</span></span></td>
+<td><span data-ttu-id="21aa5-134">Wechselt zum vorherigen bzw. nächsten Wert in den Listen, zur vorherigen bzw. nächsten Gruppe von Werten oder zum ersten bzw. letzten Element in der Suche.</span><span class="sxs-lookup"><span data-stu-id="21aa5-134">Move to the previous or next value in the lists, to the previous or next group of values, or to the first or last element in the lookup.</span></span></td>
 </tr>
 <tr class="odd">
 <td><ul>
-<li><span data-ttu-id="b7cdf-135">Trennzeichen für Kontenplan</span><span class="sxs-lookup"><span data-stu-id="b7cdf-135">Chart of accounts delimiter</span></span></li>
-<li><span data-ttu-id="b7cdf-136">NACH-RECHTS-TASTE und NACH-LINKS-TASTE</span><span class="sxs-lookup"><span data-stu-id="b7cdf-136">Right Arrow and Left Arrow</span></span></li>
+<li><span data-ttu-id="21aa5-135">Trennzeichen für Kontenplan</span><span class="sxs-lookup"><span data-stu-id="21aa5-135">Chart of accounts delimiter</span></span></li>
+<li><span data-ttu-id="21aa5-136">NACH-RECHTS-TASTE und NACH-LINKS-TASTE</span><span class="sxs-lookup"><span data-stu-id="21aa5-136">Right Arrow and Left Arrow</span></span></li>
 </ul></td>
-<td><span data-ttu-id="b7cdf-137">Wechselt zum nächsten bzw. vorhergehenden Segment.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-137">Move to the next or previous segment.</span></span></td>
+<td><span data-ttu-id="21aa5-137">Wechselt zum nächsten bzw. vorhergehenden Segment.</span><span class="sxs-lookup"><span data-stu-id="21aa5-137">Move to the next or previous segment.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="b7cdf-138">Registerkarte</span><span class="sxs-lookup"><span data-stu-id="b7cdf-138">Tab</span></span></td>
-<td><span data-ttu-id="b7cdf-139">Wechselt zum nächsten Feld im Raster.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-139">Move to the next field in the grid.</span></span></td>
+<td><span data-ttu-id="21aa5-138">Registerkarte</span><span class="sxs-lookup"><span data-stu-id="21aa5-138">Tab</span></span></td>
+<td><span data-ttu-id="21aa5-139">Wechselt zum nächsten Feld im Raster.</span><span class="sxs-lookup"><span data-stu-id="21aa5-139">Move to the next field in the grid.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="b7cdf-140">Alt+W</span><span class="sxs-lookup"><span data-stu-id="b7cdf-140">Alt+W</span></span></td>
-<td><span data-ttu-id="b7cdf-141">Wechselt zwischen <strong>Alle anzeigen</strong> und <strong>Gültige anzeigen</strong>.</span><span class="sxs-lookup"><span data-stu-id="b7cdf-141">Switch between <strong>Show all</strong> and <strong>Show valid</strong>.</span></span></td>
+<td><span data-ttu-id="21aa5-140">Alt+W</span><span class="sxs-lookup"><span data-stu-id="21aa5-140">Alt+W</span></span></td>
+<td><span data-ttu-id="21aa5-141">Wechselt zwischen <strong>Alle anzeigen</strong> und <strong>Gültige anzeigen</strong>.</span><span class="sxs-lookup"><span data-stu-id="21aa5-141">Switch between <strong>Show all</strong> and <strong>Show valid</strong>.</span></span></td>
 </tr>
 </tbody>
 </table>

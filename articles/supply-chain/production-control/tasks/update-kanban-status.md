@@ -18,33 +18,33 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 1d069414829518c8c952a0e7a74cd0ae4f24c450
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "346271"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1571380"
 ---
-# <a name="update-kanban-status"></a><span data-ttu-id="ca040-103">Kanban-Status aktualisieren</span><span class="sxs-lookup"><span data-stu-id="ca040-103">Update kanban status</span></span>
+# <a name="update-kanban-status"></a><span data-ttu-id="ae485-103">Kanban-Status aktualisieren</span><span class="sxs-lookup"><span data-stu-id="ae485-103">Update kanban status</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ca040-104">Wenn ein Kanban versehentlich geleert wird, oder ein empfangener Kanban geleert werden muss, müssen Sie den Kanbanstatus aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="ca040-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="ca040-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="ca040-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ca040-106">Diese Prozedur ist für den Filialleiter vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="ca040-106">This procedure is intended for the shop supervisor.</span></span>
+<span data-ttu-id="ae485-104">Wenn ein Kanban versehentlich geleert wird, oder ein empfangener Kanban geleert werden muss, müssen Sie den Kanbanstatus aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="ae485-104">When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status.</span></span> <span data-ttu-id="ae485-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="ae485-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="ae485-106">Diese Prozedur ist für den Filialleiter vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="ae485-106">This procedure is intended for the shop supervisor.</span></span>
 
 
-## <a name="find-the-kanban"></a><span data-ttu-id="ca040-107">Suchen Sie den Kanban.</span><span class="sxs-lookup"><span data-stu-id="ca040-107">Find the kanban.</span></span>
-1. <span data-ttu-id="ca040-108">Wechseln Sie zu "Produktionssteuerung" > "Kanban" > "Kanbans".</span><span class="sxs-lookup"><span data-stu-id="ca040-108">Go to Production control > Kanban > Kanbans.</span></span>
-2. <span data-ttu-id="ca040-109">Öffnen Sie den Spaltenfilter "Status der Handhabungseinheit".</span><span class="sxs-lookup"><span data-stu-id="ca040-109">Open Handling unit status column filter.</span></span>
-3. <span data-ttu-id="ca040-110">Auf 'Löschen' klicken</span><span class="sxs-lookup"><span data-stu-id="ca040-110">Click Clear.</span></span>
-    * <span data-ttu-id="ca040-111">Dies setzt die Filter zurück.</span><span class="sxs-lookup"><span data-stu-id="ca040-111">This resets the filters.</span></span>  
-4. <span data-ttu-id="ca040-112">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="ca040-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="ca040-113">Filtern Sie beispielsweise nach dem Feld "Kartennummer" mit dem Wert "000149".</span><span class="sxs-lookup"><span data-stu-id="ca040-113">For example, filter on the Card number field with a value of '000149'.</span></span>
+## <a name="find-the-kanban"></a><span data-ttu-id="ae485-107">Suchen Sie den Kanban.</span><span class="sxs-lookup"><span data-stu-id="ae485-107">Find the kanban.</span></span>
+1. <span data-ttu-id="ae485-108">Wechseln Sie zu "Produktionssteuerung" > "Kanban" > "Kanbans".</span><span class="sxs-lookup"><span data-stu-id="ae485-108">Go to Production control > Kanban > Kanbans.</span></span>
+2. <span data-ttu-id="ae485-109">Öffnen Sie den Spaltenfilter "Status der Handhabungseinheit".</span><span class="sxs-lookup"><span data-stu-id="ae485-109">Open Handling unit status column filter.</span></span>
+3. <span data-ttu-id="ae485-110">Auf 'Löschen' klicken</span><span class="sxs-lookup"><span data-stu-id="ae485-110">Click Clear.</span></span>
+    * <span data-ttu-id="ae485-111">Dies setzt die Filter zurück.</span><span class="sxs-lookup"><span data-stu-id="ae485-111">This resets the filters.</span></span>  
+4. <span data-ttu-id="ae485-112">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="ae485-112">Use the Quick Filter to find records.</span></span> <span data-ttu-id="ae485-113">Filtern Sie beispielsweise nach dem Feld "Kartennummer" mit dem Wert "000149".</span><span class="sxs-lookup"><span data-stu-id="ae485-113">For example, filter on the Card number field with a value of '000149'.</span></span>
 
-## <a name="change-emptied-status-to-received-status"></a><span data-ttu-id="ca040-114">Ändern Sie den Status "Geleert" zum Status "Eingegangen".</span><span class="sxs-lookup"><span data-stu-id="ca040-114">Change emptied status to received status</span></span>
-1. <span data-ttu-id="ca040-115">Klicken Sie auf "Leere Handhabungseinheit zurücksetzen".</span><span class="sxs-lookup"><span data-stu-id="ca040-115">Click Reverse empty handling unit.</span></span>
-2. <span data-ttu-id="ca040-116">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ca040-116">Click OK.</span></span>
-    * <span data-ttu-id="ca040-117">Beachten Sie, dass der "Status der Handhabungseinheit" den Wert "Eingegangen" hat.</span><span class="sxs-lookup"><span data-stu-id="ca040-117">Notice that the Handling unit status is Received.</span></span>  
+## <a name="change-emptied-status-to-received-status"></a><span data-ttu-id="ae485-114">Ändern Sie den Status "Geleert" zum Status "Eingegangen".</span><span class="sxs-lookup"><span data-stu-id="ae485-114">Change emptied status to received status</span></span>
+1. <span data-ttu-id="ae485-115">Klicken Sie auf "Leere Handhabungseinheit zurücksetzen".</span><span class="sxs-lookup"><span data-stu-id="ae485-115">Click Reverse empty handling unit.</span></span>
+2. <span data-ttu-id="ae485-116">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="ae485-116">Click OK.</span></span>
+    * <span data-ttu-id="ae485-117">Beachten Sie, dass der "Status der Handhabungseinheit" den Wert "Eingegangen" hat.</span><span class="sxs-lookup"><span data-stu-id="ae485-117">Notice that the Handling unit status is Received.</span></span>  
 
-## <a name="change-received-status-to-emptied-status"></a><span data-ttu-id="ca040-118">Ändern Sie den Status "Eingegangen" zum Status "Geleert".</span><span class="sxs-lookup"><span data-stu-id="ca040-118">Change received status to emptied status</span></span>
-1. <span data-ttu-id="ca040-119">Klicken Sie auf "Kanban leeren".</span><span class="sxs-lookup"><span data-stu-id="ca040-119">Click Empty kanban.</span></span>
-2. <span data-ttu-id="ca040-120">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ca040-120">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="ca040-121">Beachten Sie, dass die "Handhabungseinheit" den Status "Geleert" hat.</span><span class="sxs-lookup"><span data-stu-id="ca040-121">Notice that the Handling unit status is Emptied.</span></span>  
+## <a name="change-received-status-to-emptied-status"></a><span data-ttu-id="ae485-118">Ändern Sie den Status "Eingegangen" zum Status "Geleert".</span><span class="sxs-lookup"><span data-stu-id="ae485-118">Change received status to emptied status</span></span>
+1. <span data-ttu-id="ae485-119">Klicken Sie auf "Kanban leeren".</span><span class="sxs-lookup"><span data-stu-id="ae485-119">Click Empty kanban.</span></span>
+2. <span data-ttu-id="ae485-120">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ae485-120">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="ae485-121">Beachten Sie, dass die "Handhabungseinheit" den Status "Geleert" hat.</span><span class="sxs-lookup"><span data-stu-id="ae485-121">Notice that the Handling unit status is Emptied.</span></span>  
 
