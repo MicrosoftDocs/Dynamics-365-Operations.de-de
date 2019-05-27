@@ -15,12 +15,12 @@ ms.search.region: Austria
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f7ae1baf4c79b7938fcf666e43e8e71087a4f64
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: b34fc66029eb89f314287ba6ecbad73b44bb5bab
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370348"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537759"
 ---
 # <a name="tax-reimbursement-documents-for-hungary"></a>Steuerrückerstattungsdokumente für Ungarn
 
