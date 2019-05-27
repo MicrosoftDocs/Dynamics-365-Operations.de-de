@@ -3,7 +3,7 @@ title: Einkaufs- und Ausgabenanalyse Power BI-Inhalt
 description: In diesem Thema wird beschrieben, was in den Inhalten der Einkaufs- und Ausgabenanalyse Power BI enthalten ist. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet werden.
 author: FrankDahl
 manager: AnnBe
-ms.date: 12/18/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 069c4dc21959ab603ba6ca3da0ac68ef20325265
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3206573022c0f843b07a468987a112ca6ac435ef
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "313841"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527716"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Einkaufs- und Ausgabenanalyse Power BI-Inhalt
 
@@ -33,7 +33,7 @@ In diesem Thema wird beschrieben, was in den Inhalten der **Einkaufs- und Ausgab
 
 ## <a name="overview"></a>Übersicht
 
-Der **Einkaufs- und Ausgabenanalyse** Power BI-Inhalt wurde entworfen, um Einkaufsleiter und Manager zu unterstützen, die für Budgets verantwortlich sind und ein Auge auf die Einkaufausgaben haben. Manager können Einkaufsausgaben wie folgt analysieren:
+Der **Einkaufs- und Ausgabenanalyse** Power BI-Inhalt wurde entworfen, um Einkaufsleiter und Manager zu unterstützen, die für Budgets verantwortlich sind und die Einkaufausgaben nachverfolgen. Manager können Einkaufsausgaben wie folgt analysieren:
 
 - Einkauf des laufenden Jahres (nach Kreditorengruppen- und Personenkreditoren Beschaffungskategorie, und Einzelprodukte und Standort des Kreditors)
 - Jährliche Einkaufänderung (nach Kreditorengruppe und Beschaffungskategorie)
@@ -44,88 +44,88 @@ Es verwendet Transaktionsdaten und stellt eine Gesamtübersicht zu unternehmensw
 Der **Einkaufs- und Ausgabenanalyse** Power BI-Inhalt wird auf der **Einkaufsausgabenanalyse**-Seit angezeigt (**Beschaffung** \> **Abfragen und Berichte** \> **Einkaufleistungsanalyse** \> **Einkaufs- und Ausgabenanalyse**).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Metriken, die im Power BI-Inhalt enthalten sind
-Der **Einkaufs- und Ausgabenanalyse** Power BI-Inhalt enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. Die folgende Liste bietet eine Übersicht über die Visualisierungen.
+Der **Einkaufs- und Ausgabenanalyse** Power BI-Inhalt enthält einen Bericht, der aus einem Satz Metriken besteht. Diese Metrik werden als Diagramme, Kacheln und Tabellen visuell dargestellt. 
 
-<table>
-<thead>
-<tr>
-<th>Berichtsseiten</th>
-<th>Diagramme</th>
-<th>Kacheln</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Einkauf pro Kreditor</td>
-<td><ul>
-<li>Top 10 Kreditoren nach Einkauf (gestapeltes Balkendiagramm)</li>
-<li>Gesamte Bestellung nach Kreditorengruppe/Land/Name (Kreisdiagramm)</li>
-<li>Gesamte Einkauf nach Kreditorengruppe/Land/Name (Spaltendiagramm)</li>
-<li>Durchschnittlicher Einkauf nach Kreditorengruppe/Land/Name (Spaltendiagramm)</li>
-</ul></td>
-<td><ul>
-<li>Gesamter Einkauf</li>
-<li>YOY-Einkaufzunahme</li>
-<li>Kreditoren insgesamt</li>
-<li>Summe aktive Kreditoren</li>
-</ul></td>
-</tr>
-<tr>
-<td>Einkaufs nach Produkt</td>
-<td><ul>
-<li>Bestellung nach Beschaffungskategorie Produktnamen (Tortendiagramm)</li>
-<li>Gesamteinkauf nach Beschaffungskategorie Produktnamen (Tortendiagramm)</li>
-<li>Top 10 Produkte nach Einkauf (gestapeltes Balkendiagramm)</li>
-</ul></td>
-<td><ul>
-<li>Produkte gesamt</li>
-<li>Gesamtanzahl der aktiven Produkte und Gesamtprozentsatz der Produkte</li>
-<li>Zahl der Produkte, die zu 80% Einkauf betragen</li>
-</ul></td>
-</tr>
-<tr>
-<td>Einkaufsbericht nach Zeitraum*</td>
-<td><ul>
-<li>Einkauf nach Monat/Tag (Spaltendiagramm)</li>
-<li>Kumulative Abweichung des Einkaufs YOY (Wasserfalldiagramm)</li>
-<li>Gesamte Zunahme des Einkaufs YOY (Spaltendiagramm)</li>
-<li>Beschaffungsauszug (Matrix)</li>
-</ul></td>
-<td><ul>
-<li>YOY-Einkaufzunahme</li>
-<li>YOY-Einkaufzunahme %</li>
-</ul></td>
-</tr>
-<tr>
-<td>Einkauf pro Kreditorstandort</td>
-<td><ul>
-<li>Einkauf nach Ort</li>
-<li>YOY-Einkaufzunahme %</li>
-<li>Einkauf nach Land</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Einkaufausgabenanalyse nach Zeit</td>
-<td><ul>
-<li>Einkauf aktuelles Jahr nach Monat/Tag (Liniendiagramm)</li>
-<li>Einkauf aktuelles und letztes Jahr (Linien und Spaltendiagramm)</li>
-</ul></td>
-<td></td>
-</tr>
-<tr>
-<td>Einkaufausgabenanalyse nach Kreditor</td>
-<td><ul>
-<li>Top 10 % der Bestellung (Trichter)</li>
-<li>Top 10-Kreditoren mit erhöhtem Ausgaben YOY</li>
-<li>Top 10-Kreditoren mit verringerten Ausgaben YOY</li>
-</ul></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+Die folgenden Abschnitte bieten eine Übersicht über die Visualisierungen.
 
-\*Einkauf dieser und letzten Jahr und Wachstum nach Beschaffungskategorie.
+### <a name="purchase-by-vendor-report-page"></a>Berichtsseite „Einkauf nach Kreditor“
+**Diagramme**
+- Top 10 Kreditoren nach Einkauf (gestapeltes Balkendiagramm)
+- Gesamte Bestellung nach Kreditorengruppe/Land/Name (Kreisdiagramm)
+- Gesamte Einkauf nach Kreditorengruppe/Land/Name (Spaltendiagramm)
+- Durchschnittlicher Einkauf nach Kreditorengruppe/Land/Name (Spaltendiagramm)
+
+**Kacheln**
+- Gesamter Einkauf
+- YOY-Einkaufzunahme
+- Kreditoren insgesamt
+- Summe aktive Kreditoren
+
+**Beispiel**
+<img src="media/spend1.PNG" alt="Purchase by vendor">
+
+### <a name="purchase-by-product-report-page"></a>Berichtsseite „Einkauf nach Produkt“
+
+**Diagramme**
+- Bestellung nach Beschaffungskategorie Produktnamen (Tortendiagramm)
+- Gesamteinkauf nach Beschaffungskategorie Produktnamen (Tortendiagramm)
+- Top 10 Produkte nach Einkauf (gestapeltes Balkendiagramm)
+
+**Kacheln**
+- Produkte gesamt</li>
+- Gesamtanzahl der aktiven Produkte und Gesamtprozentsatz der Produkte
+- Zahl der Produkte, die zu 80% Einkauf betragen
+
+**Beispiel**
+
+
+<img src="media/purchaseByProduct.PNG" alt="Purchase by Product">
+
+### <a name="purchase-by-period-report-page"></a>Berichtsseite „Einkauf nach Zeitraum“
+Diese Seite zeigt Einkäufe dieser und des letzten Jahres und den Wachstum nach Beschaffungskategorie.
+
+**Diagramme** 
+- Einkauf nach Monat/Tag (Spaltendiagramm)
+- Kumulative Abweichung des Einkaufs YOY (Wasserfalldiagramm)
+- Gesamte Zunahme des Einkaufs YOY (Spaltendiagramm)
+- Beschaffungsauszug (Matrix)
+
+**Kacheln**
+- YOY-Einkaufzunahme
+- YOY-Einkaufzunahme %
+
+**Beispiel**
+<img src="media/purchaseByPeriod.PNG" alt="Purchase by Period">
+
+### <a name="purchase-by-vendor-location-report-page"></a>Berichtsseite „Einkauf nach Kreditorstandort“
+
+**Diagramme**
+- Einkauf nach Ort
+- YOY-Einkaufzunahme %
+- Einkauf nach Land
+
+**Beispiel**
+<img src="media/purchByVendorLocation.PNG" alt="Purchase by Vendor Location">
+
+### <a name="purchase-spend-analysis-by-time-report-page"></a>Berichtsseite „Einkaufausgabenanalyse nach Zeit“
+
+**Diagramme** 
+- Einkauf aktuelles Jahr nach Monat/Tag (Liniendiagramm)
+- Einkauf aktuelles und letztes Jahr (Linien und Spaltendiagramm)
+
+**Beispiel**
+<img src="media/PurchByTIme.PNG" alt="Purchase by Time">
+
+### <a name="purchase-spend-analysis-by-vendor-report-page"></a>Berichtsseite „Einkaufausgabenanalyse nach Kreditor“
+
+**Diagramme** 
+- Top 10 % der Bestellung (Trichter)
+- Top 10-Kreditoren mit erhöhtem Ausgaben YOY
+- Top 10-Kreditoren mit verringerten Ausgaben YOY
+
+**Beispiel** 
+<img src="media/PurchSpendAnalysisByVendor.PNG" alt="Purchase spend by vendor">
+
 
 ## <a name="data-model-and-entities"></a>Datenmodell und Entitäten
 Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt im **Einkaufs- und Ausgabenanalyse** Power BI-Inhalt auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).

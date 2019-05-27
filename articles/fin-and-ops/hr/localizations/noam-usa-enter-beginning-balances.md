@@ -3,13 +3,13 @@ title: Eingeben von Lohnanfangssalden
 description: In diesem Thema werden die Schritte zum Eingeben für Anfangssalden für Einkommenscodes, Abzüge, Vergütungen und Steuern beschrieben. Diese Informationen sind für Partner hilfreich, um Daten für eine neue Lohnimplementierung von einem anderen System zu migrieren oder transferieren.
 author: kherr75
 manager: AnnBe
-ms.date: 07/01/2017
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: anbichse
 ms.search.scope: Core, Operations
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e7bdfca55e1bdaba0b5ebdf55b46744e584ab2c
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e4bb8f565f5bf5630a7c5f8602b96e569692bc7c
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "312990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1507983"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Eingeben von Lohnanfangssalden
 
@@ -70,8 +70,8 @@ Dieser Schritt erstellt manuell eine Lohnabrechnung für jede einzelne Arbeitskr
     | Feld            | Wert       |
     |------------------|-------------|
     | Einkommenscode    | Regulärer Lohn |
-    | Leistung         | 1,00        |
-    | Satz             | 30.000      |
+    | Leistung         | 1.00        |
+    | Satz             | 30,000      |
     | Positionsdetails-Registerkarte |             |
     | Manuell           | (markiert)    |
 

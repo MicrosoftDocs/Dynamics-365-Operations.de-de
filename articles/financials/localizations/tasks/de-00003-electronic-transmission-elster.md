@@ -16,12 +16,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 927b283f160d8bd1a6b89c40da05bb7a542eb232
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 47d0d3639099d2f86eff652b77c45b894a8ecc51
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "370335"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1537749"
 ---
 # <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a>DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 
@@ -45,7 +45,7 @@ Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbeh�
 5. Elektronische Steuerzertifikate anklicken
 6. Klicken Sie auf "Neu".
 7. Geben Sie im Feld "Gruppenkennung" einen Wert ein oder wählen Sie einen Wert aus.
-    * Sie sollten Bescheinigungen nach Microsoft Management Console zunächst einrichten und Anzeigenamen zuweisen, die in diesen Schritten verwendet werden.  In MMC für private Bescheinigung "in den Bescheinigungen/zu persönliche /Certificates", fahren rechten Mausklick.  Im Kontextmenü klicken Sie auf Alle Aufgaben > auf Importieren…. Gewähren Sie Leseberechtigungen der Bescheinigung für den Benutzer, der die Übermittlung ausführt.  In MMC klicken Sie auf der Bescheinigung mit der rechten Maustaste, und verwenden Sie alle Aufgaben/Verwalten von private Schlüssel - Wählen Sie den Benutzer aus und fügen Sie Leseberechtigung hinzu.  Für Steuerbehördenbescheinigung MMC-Rechtsklick "vertraute im Stammzertifikats-" Import " Coala2019.pem.cer".  
+    * Sie sollten Bescheinigungen nach Microsoft Management Console zunächst einrichten und Anzeigenamen zuweisen, die in diesen Schritten verwendet werden.  In MMC für private Bescheinigung "in den Bescheinigungen/zu persönliche /Certificates", fahren rechten Mausklick.  Im Kontextmenü klicken Sie auf Alle Aufgaben > auf Importieren…. Gewähren Sie Leseberechtigungen der Bescheinigung für den Benutzer, der die Übermittlung ausführt.  In MMC klicken Sie auf der Bescheinigung mit der rechten Maustaste, und verwenden Sie alle Aufgaben/Verwalten von private Schlüssel - Wählen Sie den Benutzer aus und fügen Sie Leseberechtigung hinzu.  Für Steuerbehördenbescheinigung klicken Sie in MMC mit der rechten Maustaste auf "Vertrauenswürdige Stammzertifizierungsstelle" Importieren Sie "Coala2019.pem.cer".  
 8. Geben Sie im Feld Wert einen Referenztyp ein.
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.

@@ -3,7 +3,7 @@ title: Doppelte Währung
 description: Dieses Thema enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 for Finance and Operations verwendet.
 author: kweekley
 manager: AnnBe
-ms.date: 10/10/2018
+ms.date: 05/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8de178ec80f7408d657e746b633703f386c8e02d
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 3665ec1cb15fc63e5707a4721699872fe81424a0
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "330309"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1532247"
 ---
 # <a name="dual-currency"></a>Doppelte Währung
 
@@ -61,6 +61,9 @@ Für verschiedene Berichte und Abfragen wurde auch Logik hinzugefügt, um die Be
 ## <a name="financial-journals"></a>Finanzerfassungen
 
 Für Finanzerfassungen, wie allgemeine Erfassung und die Kreditorenrechnungserfassung, wurden aktualisiert, sodass diese zusätzliche Informationen zu der Berichtswährung enthalten. Summen für den Beleg und die Erfassung werden jetzt in der Berichtswährung angezeigt. Darüber hinaus werden Informationen zum Wechselkurs der Berichtswährung nun auf der Registerkarte **Allgemeines** der Erfassungspositionen angezeigt. Daher können Sie den Wechselkurs der Berichtswährung überschreiben, wenn Sie Buchungen eingeben.
+
+## <a name="vendor-invoices-sales-orders-and-sales-agreements"></a>Lieferantenrechnungen, Aufträge und Kaufverträge
+Kreditorenrechnungen, Aufträge und Kaufverträgen wurden aktualisiert, um festen Wechselkurs für die Berichtswährung einzubeziehen. Ein fester Wechselkurs kann für die Buchhaltungswährung und Berichtswährung definiert werden, wenn die Buchungswährung anders ist. Wenn die Buchhaltungswährung und die Berichtswährung übereinstimmen, wird der feste Wechselkurs synchron gehalten, indem der feste Wechselkurs der Buchhaltungswährung als Berichtswährung verwendet wird. Der feste Wechselkurs für die Berichtswährung kann nicht für diese Konfiguration geändert werden. Wenn die Buchhaltungswährung und die Berichtswährung unterschiedlich sind, kann ein fester Wechselkurs während demm Transaktionseintrag für die Buchhaltungswährung und die Berichtswährung definiert werden. Wenn die Berichtswährung für das Sachkonto nicht festgelegt wurde, ist das Feld **Fester Wechselkurs für Berichtswährung** nicht aktiviert und es wird keine Berichtswährungsbetrag berechnet.
 
 ## <a name="module-changes"></a>Moduländerungen
 

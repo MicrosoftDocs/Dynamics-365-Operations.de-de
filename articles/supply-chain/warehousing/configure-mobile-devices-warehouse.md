@@ -3,7 +3,7 @@ title: Mobile Geräte für Lagerarbeiten einrichten
 description: In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 09/28/2018
+ms.date: 04/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1536548"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
@@ -412,8 +412,6 @@ In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei 
 
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
-
-[Anzeigeeinstellungen für mobile Geräte für das Lager](change-warehouse-mobile-device-displays.md)
 
 [Einrichtung eines Menüeintrags für mobile Geräte, um Bestellungen bearbeiten zu können (Aufgabenleitfaden)](tasks/set-up-mobile-device-menu.md)
 

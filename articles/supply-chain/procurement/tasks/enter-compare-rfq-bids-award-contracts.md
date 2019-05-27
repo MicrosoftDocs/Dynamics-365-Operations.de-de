@@ -1,9 +1,9 @@
 ---
 title: Geben Sie Angebotsanforderungsangebote ein, vergleichen Sie diese und erteilen Sie Verträge
-description: Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung eingeben, Angebote bewerten und vergleichen und dann einem der Händler das Angebot erteilen.
+description: Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung (RFQ) eingeben, Angebote bewerten und vergleichen und dann mit einem der Händler einen Vertrag machen.
 author: mkirknel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/26/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,104 +16,130 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cd4876acfebcc9595abb358cfc9b355e93041d6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 45ddab03810b331bcd8965f6a2ba699ffb138910
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "349997"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1533351"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Geben Sie Angebotsanforderungsangebote ein, vergleichen Sie diese und erteilen Sie Verträge
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung eingeben, Angebote bewerten und vergleichen und dann einem der Händler das Angebot erteilen. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Bevor Sie beginnen, müssen Sie eine Angebotsanforderung mit zwei Positionen haben, die mindestens zwei Händlern gesendet wurde. Sie können die Prozedur "Erstellen einer Angebotsanforderung" als Voraussetzung ausführen, um diese zu erstellen. Sie müssen Bewertungskriterien eingerichtet haben, bevor Sie diese Prozedur ausführen können.
+Diese Prozedur zeigt Ihnen an, wie Sie Antworten auf eine Angebotsanforderung (RFQ) eingeben, Angebote, die Sie erhalten, bewerten und vergleichen und dann mit einem der Händler, der ein Angebot abgegeben hat, einen Vertrag machen. Sie können diese Prozedur im Demodatunternehmen **USMF** verwenden.
 
+Bevor Sie diese Prozedur beginnen, müssen Sie eine Angebotsanforderung (RFQ) mit zwei Positionen haben, die mindestens zwei Händlern gesendet wurde. Um diese Angebotsanforderung zu erstellen, führen Sie die Prozedur [Erstellen einer Angebotsanforderung](create-request-quotation.md) aus. Die Bewertungskriterien müssen ebenfalls eingerichtet sein, bevor Sie diese Prozedur ausführen können.
 
-## <a name="enter-a-reply-from-a-vendor"></a>Geben Sie eine Antwort von einem Händler ein
-1. Wechseln Sie zu "Beschaffung" > "Angebotsanforderungen" > "Alle Angebotsanforderungen".
-2. Wählen Sie eine Angebotsanforderung aus, die den Status " Versendet" hat und klicken Sie auf den Link auf der "Angebotsanforderungs-Anfragenummer".
-    * Die Angebotsanforderung sollte zu mindestens 2 Händlern gesendet worden sein.  
-3. Klicken Sie auf "Kopfzeile", um zur Liste von Händlern zu wechseln.
-4. Wählen Sie den Händler aus, für den Sie eine Antwort auf die Angebotsanforderung eingeben möchten.
-5. Klicken Sie auf "Antwort eingeben".
-6. Klicken Sie im Aktivitätsbereich auf "Antworten".
-7. Klicken Sie auf "Daten in Antwort kopieren".
-    * Diese Aktivität kopiert ausgewählte Daten beispielsweise die Menge aus der Angebotsanforderungsanfrage in die Antwort auf die Angebotsanforderung. Alternativ können Sie diese Aktivität überspringen und alle Antwortfelder manuell ausfüllen, wenn Sie die Antwort bearbeiten.  
-8. Klicken Sie auf "Bearbeiten".
-9. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
-10. Wählen Sie die andere Angebotsposition aus.
-11. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
+Sie können das Angebot entweder als Lieferant oder als Beschaffungsspezialist eingeben. Weitere Informationen finden Sie unter [Kreditorenzusammenarbeit einrichten und verwalten](../set-up-maintain-vendor-collaboration.md).
 
-## <a name="score-the-bid"></a>Bewerten Sie das Angebot
-1. Klicken Sie auf "Kopfzeile", um zur Bewertung des Angebots zu wechseln.
-2. Erweitern Sie den Abschnitt "Angebotsbewertung".
-3. Geben Sie im Feld "Bewertung" eine Zahl für eines der Bewertungskriterien ein.
-    * Wenn Sie auf einen der Bewertungskriterien zeigen, zeigt eine QuickInfo den Bereich an, innerhalb dem Sie bewerten müssen. In dieser Demo können Sie eine Zahl zwischen 1 und 5 jedem beliebigen der Kriterien hinzufügen.  
-4. Wählen Sie ein anderes Bewertungskriterium aus.
-5. Geben Sie im Feld "Bewertung" eine Zahl ein.
-6. Erweitern Sie den Abschnitt "Fragebögen".
-    * Wenn die Angebotsanforderungsanfrage einen Fragebogen hat, der an die Händler gesendet wurde, können Sie deren Antworten im Bereich "Fragebogen" eingeben.  
-7. Schließen Sie die Seite.
+## <a name="enter-a-reply-as-a-vendor"></a>Geben Sie eine Antwort als Lieferant ein
 
-## <a name="enter-a-reply-for-another-vendor"></a>Geben Sie eine Antwort für einen anderen Händler ein
-1. Wählen Sie den nächsten Händler aus, indem Sie den Händler deaktivieren, für den Sie soeben die Antwort eingegeben haben, und wählen Sie dann die Zeile für den nächsten Händler aus.
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie auf "Antwort eingeben".
-4. Klicken Sie auf "Daten in Antwort kopieren".
-5. Klicken Sie auf "Bearbeiten".
-6. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
-7. Wählen Sie die andere Angebotsposition aus.
-8. Geben Sie im Feld "Preis je Einheit" eine Zahl ein.
+1. Wählen Sie auf dem Dashboard **Bieten als Lieferant** aus.
+2. In der **Neue Angebotseinladungen** Liste finden Sie Angebotsanforderung, die soeben übermittelt wurde. Wählen Sie die Angebotsanforderung aus, um zu prüfen, was angefordert wurde.
+3. Wählen Sie **Angebotsanforderungsanhänge** aus, um alle Anhänge zu überprüfen, die hinzugefügt wurden.
+4. Wählen Sie **Angebot**, um die Felder zu bearbeiten. Beachten Sie, dass das Feld **Angebotsfortschritt** auf **Kreditor aktualisiert** festgelegt ist.
+5. Im Kopf und den Positionen geben Sie die entsprechenden Werte von der Angebotsantwort ein.
+6. Wenn irgendwelche Anhänge dem Angebot hinzugefügt werden sollen, wählen Sie **Anhänge für Angebote**.
+7. Wählen Sie die Registerkarte **Führende Artikel für Angebote**, um anzuzeigen, ob alle Dokumente erforderlich sind.
+8. Wählen Sie das Inforegister**Ergänzungen**, um anzuzeigen, ob die Angebotsanforderung ergänzt wurde.
+9. Wählen Sie im Inforegister **Fragebogen** aus. Sämtliche Fragebögen, die hier angezeigt werden, müssen beantwortet werden.
+10. Wählen Sie das Inforegister **Positionsdetails** aus, um ausführlichere Informationen zur Position anzuzeigen.
+11. Wählen Sie **Angebotsanforderung zurücksetzen** nur, wenn Sie die Werte zurücksetzen müssen, die in den ursprünglichen Angebotsanforderungswerten eingegeben wurden.
+12. Sie können das Angebot jederzeit speichern und später weiter verarbeiten, vorausgesetzt, dass das Ablaufdatum und die Zeit noch  nicht überschritten wurde. In diesem Fall fiden Sie das Angebot in der Liste **Angebot in Bearbeitung** im Arbeitsbereich **Lieferantenangebot**.
+13. Wenn das Angebot sum Senden bereit ist, wählen sie **Übermitteln** aus. Wenn Sie kein Angebot unterbreiten möchten, wählen Sie **Ablehnen** aus.
 
-## <a name="score-the-second-bid"></a>Bewerten Sie das zweite Angebot
-1. Klicken Sie auf "Kopfzeile", um zur Bewertung des Angebots zu wechseln.
-2. Geben Sie im Feld "Bewertung" eine Zahl ein.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-4. Geben Sie im Feld "Bewertung" eine Zahl ein.
+    Gesendete Angebote sind in der Liste **Gesendete Angebote** im Arbeitsbereich**Lieferantenangebote** verfügbar.
+
+14. Nachdem das Angebot gesendet ist, können Sie es jederzeit vor dem Ablaufdatum und der Zeit jederzeit erneut aufrufen. Beachten Sie, dass, wenn ein Angebot erneut aufgerufen wird, eas als nicht übermittelt betrachtet wird.
+
+    Wenn das Angebot von der Beschaffungsabteilung angenommen oder abgelehnt wird, erscheint es entweder als **Zugesprochene Angebote** oder **Verlorene Angebote** im Arbeitsbereich**Lieferantenangebote**.
+
+## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Geben Sie eine Antwort eines Lieferanten als Beschaffungsspezialist ein
+
+1. Überprüfen Sie, ob die Berechtigung, Lieferantenangebote zu bearbeiten eingerichtet ist. Gehen Sie zu **Beschaffung und Ursproung\> Einstellungen \> Beschaffungs- und Ursprungsparameter**. Auf der Registerkarte **Angebotsanforderungen** legen Sie die Option **Einkäufer kann Liederantenangebot bearbeiten** auf **Ja** fest.
+2. Wechseln Sie zu **Beschaffung und Ursprung \>Angebotsanforderungen \> Alle Angebotsanforderungen**.
+3. Wählen Sie eine Angebotsanforderung aus, die den Status **Versendet** hat und klicken Sie auf den Link im Feld **Angebotsanforderungs-Anfragenummer**.
+4. Wählen Sie **Antworten verwalten**. Die Seite, die erscheint, zeigt eine Angebotsanforderung für jeden Lieferanten, der eingeladen wurde, ein Angebot abzugeben.
+5. Wählen Sie eine Angebotsanforderung aus, auf die nicht geantwortet wurde. (Das Feld **Antwortsfortschritt** muss auf **Nicht gestartet** festgelegt werden.)
+6. Wählen Sie **Bearbeiten \> Angebotsanforderung bearbeiten** aus.
+
+    Die Seite **Angebotsanforderungsantwort** wird angezeigt. Als Beschaffungsspezialist können Sie nun im Namen des Lieferanten die Antwort eingeben. Beachten Sie, dass das Feld **Angebotsfortschritt** auf **Lieferant aktualisiert** festgelegt ist.
+
+7. Angebotsdaten eingeben. Klicken Sie abschließend auf **übermitteln**.
+
+## <a name="score-the-bids"></a>Bewerten Sie die Angebote
+
+1. Auf der Seite **Alle Angebotsanforderungen** wählen Sie die Angebotsanforderungsfall aus, für den Sie Antwortpunkte geben  wollen.
+2. Wählen Sie **Antworten verwalten**.
+3. Wählen Sie die Antwort für die Bewertung aus.
+4. Wählen Sie **Kopfzeile**, damit Sie die Auswertung für das Angebot sehen.
+5. Geben Sie im Inforegister **Angebotsbwertung**eine Zahl im Feld **Bewertung** für die Bewertungskriterien ein.
+
+    Wenn Sie mit der Maus über ein Bewertungskriterium fahren, zeigt die QuickInfo den Bereich an, innerhalb dem Sie bewerten müssen. In dieser Demo können Sie eine Zahl zwischen 1 und 5 für jedes beliebige Bewertungskriterium einfügen.
+
+6. Wiederholen Sie Schritt 5 für ein anderes Auswertungskriterium.
+7. Wenn die Angebotsanforderungsanfrage einen Fragebogen hat, der an die Lieferanten gesendet wurde, können Sie deren Antworten im Bereich **Fragebogen** eingeben.
+8. Schließen Sie die Seite.
+9. Wiederholen Sie die Schritte 1 bis 8 für alle anderen Angebote.
 
 ## <a name="compare-the-replies"></a>Vergleichen Sie die Angebote
-1. Klicken Sie im Aktivitätsbereich auf "Allgemein".
-2. Klicken Sie auf "Antworten vergleichen".
-3. Geben Sie im Feld "Rang" eine Zahl ein.
-    * Auf dieser Seite werden die Angebote mit dem Kopf und den Positionen angezeigt sowie die Gesamtbewertung auf Kopfzeilenebene. Sie können die Positionen vergleichen, indem Sie im Raster sortieren, damit vergleichbare Positionen nebeneinander sind. Die Informationen enthalten außerdem: Menge: Die vom Händler angegebene Menge. Dies muss nicht mit der Menge, die in der Angebotsanforderung angegeben ist, übereinstimmen.   Nettobetrag: Der von einem Händler angegebene Preis für die Artikel in der Position, nach Abzug aller Rabatte.   Abweichung: Die Anzahl der Tage, um die das Lieferdatum im Angebotskopf oder der Angebotsposition vom angeforderten Lieferdatum im Angebotsanforderungskopf oder der Angebotsanforderungsposition abweicht.   Sie können einen Rang für jedes Angebot eingeben.  
-4. Wählen Sie die Kopfzeilenposition für das andere Angebot aus, dem Sie einen Rang zuweisen möchten.
-5. Geben Sie im Feld "Rang" eine Zahl ein.
-6. Klicken Sie auf "Speichern".
+
+1. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Allgemein**, und wählen Sie **Antworten vergleichen** aus.
+2. Geben Sie im Feld **Rang** eine Zahl ein.
+
+    Auf dieser Seite werden die Angebote mit dem Kopf und den Positionen angezeigt und auch die Gesamtbewertung auf Kopfzeilenebene. Sie können die Positionen vergleichen, indem Sie sie im Raster sortieren, damit vergleichbare Positionen nebeneinander angezeigt werden. In diesem Thema sind die folgenden Infromationen ebenfalls enthalten:
+
+    - **Menge** – Die von einem Lieferanten angegebene Menge. Diese Menge muss nicht mit der Menge übereinstimmen, die in der Angebotsanforderung angegeben ist.
+    - **Nettobetrag** – Der Preis, der ein Lieferant für den Arkel in der Position angibt, abzüglich allfällige Rabatte.
+    - **Abweichung** – Die Anzahl der Tage, um die das Lieferdatum im Angebotskopf oder der Angebotsposition vom angeforderten Lieferdatum im Angebotsanforderungskopf oder der Angebotsanforderungsposition abweicht. Sie können einen Rang für jedes Angebot eingeben.
+
+3. Wählen Sie die Kopfzeilenposition für das andere Angebot aus, dem Sie einen Rang zuweisen möchten.
+4. Geben Sie im Feld **Rang** eine Zahl ein.
+5. Wählen Sie **Speichern**.
 
 ## <a name="reject-a-bid"></a>Lehnen Sie ein Angebot ab
+
 1. Wählen Sie die Kopfzeilenposition für das Angebot aus, das Sie ablehnen möchten.
-    * Sie können ein Angebot oder Positionen innerhalb eines Angebots auf einmal annehmen, ablehnen oder zurückgeben.  
-2. Wählen Sie das Kontrollkästchen "Markieren" aus.
-    * Wenn Sie das Kontrollkästchen "Markieren" im Kopf des Angebots aktivieren, dann werden alle Positionen ebenfalls markiert. Sie können auch wählen, eine Untergruppe der Positionen innerhalb des Angebots zu markieren, um diese abzulehnen oder anzunehmen. Es ist möglich, das Angebot eines Händlers für manche Positionen einer Angebotsanforderung anzunehmen und dann andere Angebotsanforderungspositionen einem anderen Händler zu erteilen. Sie müssen dies jedoch in zwei Schritten ausführen, mit einem Schritt auf einmal. Wenn alternative Positionen vorhanden sind, können Sie entweder die Original-Angebotsposition oder deren Alternative, aber nicht beides akzeptieren.  
-3. Klicken Sie auf "Ablehnen".
-4. Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".
-5. Geben Sie im Feld "Ablehnungsgrund" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Der Grund für die Ablehnung wird auf der Antwort gespeichert.  
-6. Klicken Sie auf "OK".
-7. Klicken Sie auf "OK".
-8. Schließen Sie die Seite.
-9. Schließen Sie die Seite.
-10. Aktualisieren Sie die Seite.
+
+    Sie können ein Angebot oder die Positionen innerhalb eines Angebots nur einmal annehmen, ablehnen oder zurückgeben.
+
+2. Wählen Sie das Kontrollkästchen **Markieren** aus.
+
+    Wenn Sie das Kontrollkästchen **Markieren** im Kopf des Angebots aktivieren, dann werden alle Positionen ebenfalls markiert. Um nur einige der Positionen im Angebot abzulehnen oder zu akzeptieren, können Sie einfach nur diese Positionen markieren. Zusätzlich können Sie ein Angebot des Lieferanten für einige Positionen einer Angebotsanforderung akzeptieren, und dann andere Angebotsanforderungspositionen an einen anderen Lieferanten vergeben. Allerdings müssen Sie ein Angebot nach dem andern ausführen.
+
+    Wenn alternative Positionen vorhanden sind, können Sie entweder die Original-Angebotsposition oder deren Alternative, aber nicht beide akzeptieren.
+
+3. Wählen Sie **Ablehnen** aus.
+4. Wählen Sie **Parameter**, und dann **Ablehnungsgrund** im Feld und geben Sie den Grund für die Ablehnung des Angebots aus oder wählen Sie diesen aus.
+
+    Der Grund wird in der Antwort gespeichert.
+
+5. Wählen Sie **OK**.
+6. Wählen Sie **OK**.
 
 ## <a name="accept-a-bid"></a>Nehmen Sie ein Angebot an
-1. Wählen Sie das Angebot aus, das Sie annehmen möchten aus und klicken Sie dann auf den Link im Feld "Angebotsanforderung".
-2. Klicken Sie im Aktivitätsbereich auf "Antworten".
-3. Klicken Sie auf "Annehmen".
-    * Wenn Sie bestimmte Positionen markiert haben und nicht andere, dann wird die Annahmeaktivität nur die markierten Positionen umfassen. Wenn Sie alle Positionen zum Angebot annehmen möchten, dann müssen Sie die Positionen nicht markieren.  
-4. Klicken Sie zum Öffnen des Dropdown-Dialogfeldformulars auf "Parameter".
-    * Dies ermöglicht es Ihnen, einen Grund für die Annahme des Angebots zu erfassen. Der Grund wird im Angebot gespeichert.  
-5. Geben Sie im Feld "Annahmegrund" einen Wert ein, oder wählen Sie einen Wert aus.
-6. Klicken Sie auf "OK".
-7. Klicken Sie auf "OK".
-    * Wenn Sie auf "OK" klicken, wird dadurch eine Bestellung auf Grundlage der Positionen generiert, die in der Angebotsanforderungsannahme enthalten sind. Wenn es weitere Angebote gibt, die nicht verarbeitet wurden (angenommen, abgelehnt oder zurückgegeben), wird das System Sie dazu auffordern, die verbleibenden Angebote abzulehnen.  
 
-## <a name="view-the-purchase-order-thats-been-generated"></a>Zeigen Sie die Bestellung an, die erstellt wurde
-1. Klicken Sie im Aktivitätsbereich auf "Allgemein".
-2. Klicken Sie auf "Bestellung".
-    * Hier können Sie die Bestellung anzeigen, die generiert wurde, als Sie das Angebot angenommen haben.  
-3. Schließen Sie die Seite.
-4. Schließen Sie die Seite.
-5. Schließen Sie die Seite.
-6. Schließen Sie die Seite.
+1. Wählen Sie das Angebot aus, das Sie annehmen möchten und klicken Sie dann auf den Link im Feld **Angebotsanforderung**.
 
+    Wenn Sie auf der Seite **Antworten auf Angebotsanforderung vergleichen** sind, dannist das markierte Angebot im Fokus das Angebot, das das System während der Akzeptierungsaktivität in Erwägung zieht. Sie können Positionen nur von einem Angeobt gleichzeitig akzeptieren.
+
+2. Klicken Sie im Aktivitätsbereich auf **Antworten**.
+3. Wählen Sie **Akzeptieren** aus.
+
+    Wenn Sie nur bestimmte Positionen markieren, enthält die Angenommeneaktivität nur die Positionen. Wenn Sie alle Positionen zum Angebot annehmen möchten, dann müssen Sie die Positionen nicht markieren.
+
+4. Wählen Sie **Parameter**, und dann **Akzeptierungsgrund** im Feld und geben Sie den Grund für die Akzeptierung des Angebots aus oder wählen Sie diesen aus.
+
+    Der Grund wird im Angebot gespeichert.
+
+5. Wählen Sie **OK**.
+6. Wählen Sie **OK**.
+
+    Wenn Sie auf **OK** klicken, wird dadurch eine Bestellung auf Grundlage der Positionen generiert, die in der Angebotsanforderungsannahme enthalten sind. Wenn es weitere Angebote gibt, die nicht verarbeitet wurden (angenommen, abgelehnt oder zurückgegeben), wird das System Sie dazu auffordern, alle verbleibenden Angebote abzulehnen.
+
+## <a name="view-the-purchase-order-that-is-generated"></a>Zeigen Sie die Bestellung an, die dazu erstellt wurde
+
+- Klicken Sie im Aktivitätsbereich auf die Registerkarte **Allgemein**, und wählen Sie **Bestellung** aus.
+
+    Die Seite, die angezeigt wird, zeigt die Bestellung an, die generiert wurde, als Sie das Angebot angenommen haben.

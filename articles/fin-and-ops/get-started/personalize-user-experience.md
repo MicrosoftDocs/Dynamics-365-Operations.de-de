@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 for Finance and Operations personalisieren können.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 04/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 517e1dfa19433f19ebeb9d0a50a124002ca46a24
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "975850"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1528843"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -75,7 +75,7 @@ Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vorne
 
 Darüber hinaus sind die Typen der grundlegendsten expliziten Personalisierung verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese  Methode der Personalisierung auswählen, wird das Eigenschaftenfenster des Elements angezeigt.
 
-[![Personalisieren der Eigenschaften eines Elements](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
+[![Personalisieren der Eigenschaften eines Elements](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
 
 Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hinsicht zu personalisieren:
 
@@ -91,7 +91,7 @@ Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abh�
 
 Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keinen anderen Mechanismen (z. B.  Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Benutzereinstellungen** verwenden. Um die Symbolleiste **Benutzereinstellungen** zu öffnen, wählen Sie **Personalisieren Sie dieses Formular** im Fenster Eigenschaften eines Elements aus. Sie können **Personalisieren Sie dieses Formular** in der Gruppe **Anpassen** auf der Registerkarte **Optionen** des Aktivitätsbereichs jeder Seite auch auswählen.
 
-[![Personalisierungssymbolleiste](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+[![Personalisierungssymbolleiste](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigieren auf de Seite
 
