@@ -20,11 +20,11 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.openlocfilehash: a74a1275f08e3dba60a1002a102e143eb37fcd9a
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "345995"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1548553"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Aufgabenaufzeichnung und Hilfe für Retail Modern POS (MPOS) und Cloud POS
 
@@ -34,11 +34,11 @@ In diesem Thema wird beschrieben, wie Aufgabenaufzeichnung in Retail Modern POS 
 
 ## <a name="overview"></a>Übersicht
 
-Aufgabenaufzeichnung in Retail Modern POS oder Cloud POS ist eine neue Lösung, die mit einem Fokus auf hoher Reaktionsfähigkeit erstellt wurde. Sie bietet eine flexible Anwendungsprogrammierschnittstelle (API) zur Erweiterbarkeit und nahtlosen Integration mit Debitoren von Geschäftsprozessaufzeichnungen. Darüber hinaus ist die Integration der Aufgabenaufzeichnung im Tool Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) vorverlegt worden. Daher können Benutzer weiterhin erweiterte Geschäftsprozessdiagramm aus Aufzeichnungen erstellen, um ihre Anwendungen zu analysieren und zu entwerfen.
+Aufgabenaufzeichnung in Retail Modern POS oder Cloud POS ist eine neue Lösung, die mit einem Fokus auf hoher Reaktionsfähigkeit erstellt wurde. Sie bietet eine flexible Anwendungsprogrammierschnittstelle (API) zur Erweiterbarkeit und nahtlosen Integration mit Debitoren von Geschäftsprozessaufzeichnungen. Darüber hinaus ist die Integration der Aufgabenaufzeichnung im Tool Geschäftsprozessmodellierer (BPM) in Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) vorverlegt worden. Daher können Benutzer weiterhin erweiterte Geschäftsprozessdiagramm aus Aufzeichnungen erstellen, um ihre Anwendungen zu analysieren und zu entwerfen.
 
 ## <a name="architecture"></a>Architektur
 
-Aufgabenaufzeichnung kann Benutzeraktionen im Client mit exakter Genauigkeit erfassen. Jedes Steuerelement ist so instrumentiert, dass es die Aufgabenaufzeichnung über die Ausführung einer Benutzeraktion benachrichtigt. Das Steuerelement benachrichtigt die Aufgabenaufzeichnung, dass ein Ereignis aufgetreten ist und übermittelt alle relevanten Informationen über die entsprechende Benutzeraktion in Echtzeit. Aus diesen Informationen kann die Aufgabenaufzeichnung den Typ der Benutzeraktion erfassen (wie beispielsweise das Klicken auf eine Schaltfläche, die Werteingabe oder Navigation) und sämtliche Daten, die mit dieser Benutzeraktion zusammenhängen (wie der Wert und Typ der Eingabedaten, der Formularkontext oder der Datensatzkontext). Aufgabenaufzeichnung behält die Informationen mit genügend Details bei, um zu gewährleisten, dass durch eine Wiedergabe der Aufzeichnung die aufgezeichneten Aktionen genauso ausgeführt werden können, wie der Benutzer sie ausführte. (Die Wiedergabefunktion ist bei Retail Modern POS oder Cloud POS noch nicht implementiert worden.)
+Aufgabenaufzeichnung kann Benutzeraktionen im Client mit exakter Genauigkeit erfassen. Jedes Steuerelement ist so instrumentiert, dass es die Aufgabenaufzeichnung über die Ausführung einer Benutzeraktion benachrichtigt. Das Steuerelement benachrichtigt die Aufgabenaufzeichnung, dass ein Ereignis aufgetreten ist und übermittelt alle relevanten Informationen über die entsprechende Benutzeraktion in Echtzeit. Aus diesen Informationen kann die Aufgabenaufzeichnung den Typ der Benutzeraktion erfassen (wie beispielsweise das Klicken auf eine Schaltfläche, die Werteingabe oder Navigation) und sämtliche Daten, die mit dieser Benutzeraktion zusammenhängen (wie der Wert und Typ der Eingabedaten, der Formularkontext oder der Datensatzkontext). Aufgabenaufzeichnung behält die Informationen mit genügend Details bei, um zu gewährleisten, dass durch eine Wiedergabe der Aufzeichnung die aufgezeichneten Aktionen genauso ausgeführt werden können, wie der Benutzer sie ausführte. (Die Wiedergabefunktion ist bei Retail Modern POS oder Cloud POS noch nicht implementiert worden.)
 
 ## <a name="basic-configuration"></a>Basiskonfiguration
 

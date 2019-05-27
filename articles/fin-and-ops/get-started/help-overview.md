@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23bf579c1a4a315d0c12f848a71f89fc297c8625
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
+ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "350733"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1538955"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations-Hilfesystem
 
@@ -90,8 +90,6 @@ Wir freuen uns über Kundenfeedback. Sie können entweder kommentieren oder Änd
 Wenn Sie zu Fragen oder Feedback zu einem Thema haben, lassen Sie uns stattdessen einen Kommentar am unteren Seitenrand.
 
 1. Klicken Sie auf **Feedback**, um zu den Kommentaren am unteren Seitenrand zu gelangen, und klicken Sie anschließend entweder auf **Produktfeedback** oder **Anmelden, um Dokumentationsfeedback zu senden**.
-
-    ![Feedback](./media/comments.png)
 
 2. Beginnen Sie damit, Ihre Kommentare einzugeben, und klicken Sie dann auf **Feedback senden**.
 

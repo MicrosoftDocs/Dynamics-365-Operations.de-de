@@ -1,6 +1,6 @@
 ---
 title: Budgetierungsüberblick
-description: Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 for Finance and Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
+description: Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 for Finance and Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Microsoft Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,17 +19,17 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 01b7970119b9abb26570c19162e159dd05496168
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "332310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559740"
 ---
 # <a name="budgeting-overview"></a>Budgetierungsüberblick 
 
 [!include [banner](../includes/banner.md)]
 
-Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 for Finance and Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
+Fast jedes Unternehmen, das Finanzverhältnisfunktionen in Microsoft Dynamics 365 for Finance and Operations verwendet, muss Berichte erstellen können, die das Budget und den Ist-Status aufzeigen. In diesem Artikel wird beschrieben , wie die Mindstkonfiguration sein muss, um Budgets in Microsoft Dynamics 365 for Finance and Operations zu erstellen oder diese aus einem Programm einer Drittpartei hochzuladen.
 
 <a name="overview"></a>Überblick
 --------

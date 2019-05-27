@@ -19,11 +19,11 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.openlocfilehash: 00219f21076af60f8e2f16ca365b1138bb279400
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "316946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553878"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Berichtsstruktur-Definitionen in Finanzberichten
 
@@ -202,7 +202,7 @@ Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Berichtseinheite
 
 [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
-Die resultierende Berichtstruktur-Definition ist nach Geschäftseinheit, dann nach Kostenstelle und dann nach Abteilung sortiert. Die Dimension für die fünfte Berichtseinheit ist **Unternehmenseinhet = \[[001]\] Kostenstelle =\[\], Abteilung = \[[022]\]**, und identifiziert eine Berichtseinheit für Konten die spezifisch für die Unternehmenseinheit 001 und Abteilung 022 sind.
+Die resultierende Berichtstruktur-Definition ist nach Geschäftseinheit, dann nach Kostenstelle und dann nach Abteilung sortiert. Die Dimension für die fünfte Berichtseinheit ist **Unternehmenseinhet = \[001\] Kostenstelle =\[\], Abteilung = \[022\]**, und identifiziert eine Berichtseinheit für Konten die spezifisch für die Unternehmenseinheit 001 und Abteilung 022 sind.
 
 [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 

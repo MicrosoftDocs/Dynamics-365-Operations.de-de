@@ -1,9 +1,9 @@
 ---
-title: Ausgleichsüberblick
-description: Dieser Artikel enthält allgemeine Informationen zum Ausgleichsprozess. Er beschreibt die Buchungstypen, die ausgeglichen werden können, wann und wie Buchungen ausgeglichen werden und die Ergebnisse des Ausgleichsprozesses.
+title: Übersicht über Ausgleiche
+description: Dieses Thema enthält allgemeine Informationen zum Ausgleichsprozess. Er beschreibt die Buchungstypen, die ausgeglichen werden können, wann und wie Buchungen ausgeglichen werden und die Ergebnisse des Ausgleichsprozesses.
 author: kweekley
 manager: AnnBe
-ms.date: 12/06/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9b82c6afa2812344ff8200e227ee8c5f2451584f
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e13bdcdcf6dac68a95e6c2759a66bc59013464cb
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "338290"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539966"
 ---
-# <a name="settlement-overview"></a>Ausgleichsüberblick
+# <a name="settlement-overview"></a>Übersicht über Ausgleiche
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel enthält allgemeine Informationen zum Ausgleichsprozess. Er beschreibt die Buchungstypen, die ausgeglichen werden können, wann und wie Buchungen ausgeglichen werden und die Ergebnisse des Ausgleichsprozesses.
+Dieses Thema enthält allgemeine Informationen zum Ausgleichsprozess. Er beschreibt die Buchungstypen, die ausgeglichen werden können, wann und wie Buchungen ausgeglichen werden und die Ergebnisse des Ausgleichsprozesses.
 
 Während des Ausgleichs werden die Buchungen in einem Dokument für Buchungen in einem anderen Dokument übernommen, um den Saldo jedes Dokuments zu erhöhen oder zu verringern. Beispielsweise kann eine Zahlung einer Rechnung angewendet werden. Verschiedene Buchungsarten können, zu unterschiedlichen Zeiten und durch verschiedene Methoden ausgeglichen werden. Ausgleich kann auch veranlassen, dass neue Buchungen generiert werden.
 
@@ -40,7 +40,7 @@ Ausgleich innerhalb von Kreditoren und Debitoren kann zwischen allen Buchungsart
 Buchungen können zum Zeitpunkt des Zahlungseintrags ausgeglichen werden. Wenn Sie beispielsweise eine Zahlung an einen Kreditor leisten, wählen Sie in der Regel die Rechnungen aus, die gezahlt werden sollen. Durch Auswahl von Rechnungen, aktivieren Sie ihn für Ausgleich für die Zahlung. Wenn Zahlungsbearbeiter des Debitoren eine Debitorenzahlung erfassen, können sie die entsprechenden Rechnungen für den Ausgleich basierend auf den Informationen markieren, die in der Zahlung des Debitors enthalten sind. Die Seite **Buchungen ausgleichen** wird verwendet, um Buchungen für den Ausgleich zu markieren. Diese Seite kann aus jeder ungebuchten Rechnung oder Zahlung geöffnet werden. Wenn die Transaktion gebucht wird, wird auch der Ausgleich gebucht. Buchungen können auch ausgeglichen werden, nachdem sie gebucht sind. Sie können eine Debitorenzahlung eingeben und buchen, ohne sie mit beliebigen Rechnungen auszugleichen. Allerdings müssen Sie möglicherweise erst entsprechende Informationen einholen, um sicherzustellen, dass die Zahlung für die richtige Rechnung ausgeglichen wird. Die Seite **Buchungen ausgleichen** kann über die Seite **Alle Debitoren** oder **Alle Kreditoren** bzw. die Seite **Buchungen** für jeden Debitor oder Kreditor geöffnet werden. Sie können gebuchte Vorauszahlungen auch für eine Rechnung reservieren, indem Sie die Zahlung für den Ausgleich mit einer Bestellung oder eines Auftrags markieren. In diesem Fall hat die Zahlung noch offene Saldo, er kann jedoch nicht mit einer anderen Rechnung ausgeglichen werden. Die Zahlung wird automatisch anhand die Rechnung ausgeglichen, die von der Bestellung oder dem Auftrag erstellt wird.
 
 ## <a name="how-to-settle-transactions"></a>Verfahrensweise für den Ausgleich von Buchungen
-Buchungen können manuell oder automatisch oder mit einer Kombination aus beiden Methoden ausgeglichen werden. Die Auswahl einer Zahlungsmethode hängt von Geschäftsprozessen ab, die durch die Einrichtung des Ausgleichs in den Kreditorenparametern und Debitorenparametern implementiert werden. Sie können Kreditorenzahlungen und Debitorendirektbelastungszahlungen erstellen, indem Sie einen Zahlungsvorschlag verwenden, der verwendet wird, um Rechnungen auszuwählen, die gezahlt werden sollen. Der Zahlungsvorschlag wird manuell initiiert, Microsoft Dynamics 365 for Finance and Operations markiert jedoch automatisch die ausgewählten Rechnungen zum Ausgleich, wenn die Zahlungen erstellt werden. Wenn Zahlungen manuell erstellt werden, können Sie die Seite **Buchungen ausgleichen** verwenden, um Rechnungen für den Ausgleich auszuwählen. Sie können die Rechnungen manuell auswählen oder die Option **Nach Priorität markieren** verwenden, um die Rechnungen automatisch für den Ausgleich zu markieren. Die Option **Nach Priorität markieren** steht nur für Debitoren zur Verfügung. Um diese Option zu aktivieren, verwenden Sie die Seite **Ausgleichspriorität** in den Debitorenparametern. Wenn ein Zahlungsbearbeiter eine Zahlung eingibt, aber diese Zahlung nicht ausgleicht, bevor sie oder er sie bucht, kann die Zahlung automatisch ausgeglichen werden. Sie können den automatischen Ausgleich in den Debitorparametern und in den Kreditorparametern aktivieren. Wenn Sie ein automatischer Ausgleich verwenden, können Sie den vordefinierten Ausgleichsauftrag verwenden, oder Sie können eigene Ausgleichsprioritätenauftrag in den Debitorparametern definieren. Diese Funktion steht nur für Debitoren zur Verfügung.
+Buchungen können manuell oder automatisch oder mit einer Kombination aus beiden Methoden ausgeglichen werden. Die Auswahl einer Zahlungsmethode hängt von Geschäftsprozessen ab, die durch die Einrichtung des Ausgleichs in den Kreditorenparametern und Debitorenparametern implementiert werden. Sie können Kreditorenzahlungen und Debitorendirektbelastungszahlungen erstellen, indem Sie einen Zahlungsvorschlag verwenden, der verwendet wird, um Rechnungen auszuwählen, die gezahlt werden sollen. Der Zahlungsvorschlag wird manuell initiiert, Dynamics 365 for Finance and Operations und markiert automatisch die ausgewählten Rechnungen zum Ausgleich, wenn die Zahlungen erstellt werden. Wenn Zahlungen manuell erstellt werden, können Sie die Seite **Buchungen ausgleichen** verwenden, um Rechnungen für den Ausgleich auszuwählen. Sie können die Rechnungen manuell auswählen oder die Option **Nach Priorität markieren** verwenden, um die Rechnungen automatisch für den Ausgleich zu markieren. Die Option **Nach Priorität markieren** steht nur für Debitoren zur Verfügung. Um diese Option zu aktivieren, verwenden Sie die Seite **Ausgleichspriorität** in den Debitorenparametern. Wenn ein Zahlungsbearbeiter eine Zahlung eingibt, aber diese Zahlung nicht ausgleicht, bevor sie gebucht ist, kann die Zahlung automatisch ausgeglichen werden. Sie können den automatischen Ausgleich in den Debitorparametern und in den Kreditorparametern aktivieren. Der automatische Ausgleich gleicht Buchungen innerhalb derselben juristischen Person und nicht in mehreren juristischen Personen aus. Wenn Sie ein automatischer Ausgleich verwenden, können Sie den vordefinierten Ausgleichsauftrag verwenden, oder Sie können eigene Ausgleichsprioritätenauftrag in den Debitorparametern definieren. Diese Funktion steht nur für Debitoren zur Verfügung.
 
 ## <a name="results-of-settlement"></a>Ergebnisse des Ausgleichs
 Wenn Buchungen ausgeglichen werden, wird der offene Saldo jeder Buchung bei Bedarf erhöht oder verringert. In einem typischen Szenario, in dem eine Rechnung und eine Zahlung ausgeglichen werden, wird der Status und der Saldo jeder Buchung gemäß den folgenden Regeln aktualisiert:

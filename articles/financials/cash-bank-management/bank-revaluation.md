@@ -3,7 +3,7 @@ title: Bank – Neubewertung der Fremdwährung
 description: In diesem Thema erhalten Sie einen Überblick über den Prozess der Neubewertung der Fremdwährung – Bank. Es umfasst Informationen zum Setup, dem Ausführen des Prozesses, der Berechnung für den Prozess und von Rückbuchungen von Neubewertungsbuchungen.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/27/2019
+ms.date: 04/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mikefalkner
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3aed5a6c12e8dd39956f906f922bfbed1b8fb680
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: 4ec9814a4a35a1b3ba7ba05a04b53e5b150f4a04
+ms.sourcegitcommit: be447fc81bc874982bc0185fcb4d87d99bd742c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "976661"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538631"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – Neubewertung der Fremdwährung
 
@@ -52,7 +52,7 @@ Sie müssen die Funktion „Neubewertung der Fremdwährung – Bank” aktiviere
 3. Auf der Registerkarte **Nummernkreise** fügen Sie einen Nummernkreis für die Neubewertung der Fremdwährung hinzu.
 4. Aktualisieren Sie den Browser, um **Neubewertung der Fremdwährung** im Abschnitt **Periodische Aufgaben** auf der Bereichsseite anzuzeigen.
 
-Sie müssen die Funktion für jede juristische Person aktivieren, die die Neubewertung der Fremdwährung verwendet.
+Sie müssen die Funktion für jede juristische Person aktivieren, die die Neubewertung der Fremdwährung verwendet. Wenn Sie der Rolle Systemadministrator oder Funktionsrolle zugewiesen werden, können Sie diesen Schritt entfernen, indem Sie die Funktion **Aktivieren der Bankneubewertung ohne einen Parameter** im Arbeitsbereich **Funktionsverwaltung** aktivieren.
 
 > [!NOTE]
 > Wenn Ihre juristische Person einen russischen, polnischen oder ungarischen Länder-/Regionscode verwendet, können Sie bereits „Neubewertung der Fremdwährung – Bank” vornehmen. Sie können die Neubewertung der Fremdwährung nicht verwenden, die von anderen Ländern oder Regionen verwendet wird.

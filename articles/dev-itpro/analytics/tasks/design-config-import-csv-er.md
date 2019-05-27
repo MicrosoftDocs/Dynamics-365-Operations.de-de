@@ -16,11 +16,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.openlocfilehash: 8d3ea3d797de154979eae112658cf05d1914feeb
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "365223"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1544931"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>EB-Konfigurationen entwerfen, um Daten aus externen CSV-Dateien zu importieren
 
@@ -82,8 +82,8 @@ Sie müssen auch die folgenden Dateien herunterladen und lokal speichern: (https
     * Beachten Sie, dass das Element Stamm\Position\Typen\Datensatz\CountryCode des Typs ZEICHENFOLGE so konfiguriert wurde, dass es die Option „Null eins” im Feld „Multiplizität” hat. Bei dieser Einstellung wird der Wert des Felds CountryCode in der Analyseposition als optional betrachtet.   
 11. Wählen Sie in der Struktur „Eingehend: Datei\Stamm: Nummernkreis\Position: Nummernkreis 1..* Typen: Anfrage\Datensatz: Nummernkreis 1..1 (,)Hinweis: Nummernkreis 1..1 (,)” aus.
     * Beachten Sie, dass das Element Stamm\Position\Typen\Datensatz\Hinweis des Typs NUMMERNKREIS so konfiguriert wurde, dass es die Option „Alle” im Feld „Angebotsanwendung” sowie ein doppeltes Anführungszeichen im Feld „Anführungszeichen” hat. Dies bedeutet, dass alle Felder dieses Positionstyps in der Analysedatei (beschrieben durch die geschachtelten Elemente: Text des Typs ZEICHENFOLGE) als in doppelte Anführungszeichen eingeschlossen betrachtet werden.  
-12. Wählen Sie in der Struktur „Eingehend: Datei\Stamm: Nummernkreis\Position: Nummernkreis 1..* Typen: Anfrage\nicht analysiert: Nummernkreis 1..1 ” aus.
-    * Das Element „Stamm\Position\Typen\nicht analysiert” des Typs NUMMERNKREIS wurde so konfiguriert, dass es die Buchungspositionen für die Struktur analysiert, die nicht mit der oben beschriebenen Struktur im übergeordneten Element ANFRAGE übereinstimmt.   
+12. Wählen Sie in der Struktur „Eingehend: Datei\Stamm: Nummernkreis\Position: Nummernkreis 1..* Typen: Anfrage\Nicht analysiert: Nummernkreis 1..1 ” aus.
+    * Das Element „Stamm\Position\Typen\Nicht analysiert” des Typs NUMMERNKREIS wurde so konfiguriert, dass es die Buchungspositionen für die Struktur analysiert, die nicht mit der oben beschriebenen Struktur im übergeordneten Element ANFRAGE übereinstimmt.   
 
 ## <a name="review-the-setting-of-the-format-mapping-to-the-data-model"></a>Die Einstellung der Formatzuordnung zum Datenmodell überprüfen
 1. Klicken Sie auf „Format zu Modell zuordnen”.
