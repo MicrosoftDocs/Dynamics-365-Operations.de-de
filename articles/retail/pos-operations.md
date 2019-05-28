@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 85708c7197a71e6ad9b814e2e63d62122c8890f6
-ms.sourcegitcommit: a6d385db6636ef2b7fb6b24d37a2160c8d5a3c0f
+ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "842721"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505095"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -70,7 +70,9 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 106 | Menge löschen | Setzt die Menge auf der momentan ausgewählten Position auf **1** zurück. | Ja | Ja | Nr. | Ja | Nr. |
 | 640 | Verkäufer für Position löschen | Entfernt die Provisionsverkaufsgruppe (Verkaufsrepräsentanten) von der derzeit ausgewählten Position. | Ja | Ja | Nr. | Ja | Nr. |
 | 121 | Verkäufer löschen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
-| 1055 | Schicht schließen | Schließt die aktuelle Schicht, Drucken eines Z-Berichts und meldet den Benutzer aus dem System ab. | Ja | Ja | Ja | Nr. | Nr. |
+| 1055 | Schicht schließen | Schließt die aktuelle Schicht, Drucken eines Z-Berichts und meldet den Benutzer aus dem System ab. | Ja | Ja | Ja | Nein | Nein |
+| 139 | Transaktion einbeziehen | Fordert Benutzer dazu auf, eine Zahlungsmethode auswählen | Ja | Ja | Nein | Ja | Nein |
+| 620 | Kundenauftrag erstellen | POS-Buchung in einen Debitor-Auftrag umwandeln | Ja | Ja | Nein | Ja\* | Nein |
 | 925 | Bankscheck kopieren | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Ja |
 | 620 | Debitorenauftrag erstellen | POS-Buchung in einen Debitor-Auftrag umwandeln | Ja | Ja | Nr. | Ja\* | Nr. |
 | 621 | Angebot erstellen | POS-Buchung in ein Vertriebsangebot umwandeln | Ja | Ja | Nr. | Ja\* | Nr. |

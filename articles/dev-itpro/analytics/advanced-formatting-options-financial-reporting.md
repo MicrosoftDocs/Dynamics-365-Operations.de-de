@@ -1,16 +1,16 @@
 ---
 title: Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 description: Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar.
-author: ShylaThompson
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 106571
 ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8c95f3bfc33730fcf03bd65cd1e66ec104f1e236
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 70f69fdad3d9186886190c62fba08af06d2a24d6
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "335576"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1502564"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 
@@ -41,6 +41,7 @@ In der folgenden Tabelle finden Sie die erweiterten Formatierungsfunktionen, die
 | Spalteneinschränkung         | Die Spalteneinschränkung in der Zeilendefinition ist für das Ausblenden von Werten sinnvoll, die nur für einige Zeilen des Berichts relevant sind. Wenn Prozentrechnungen über eine Zeile ausgeführt werden, verhindert die Spalteneinschränkung, dass gesamte Spalten oder andere Spalten gedruckt werden, wenn diese Zahlen nicht relevant sind. |
 | Spaltenumbruch               | Sie können Spaltenumbrüche zu einer Zeilendefinition hinzufügen, um Berichtsinformationen nebeneinander anzuzeigen. Sie können mehrere Spaltenumbrüche zu einer einzelnen Zeilendefinition hinzufügen. Die Spaltenüberschriften werden nach dem Spaltenumbruch oben über jeder Spalte wiederholt. Kommentare für einen Bericht werden zwischen den Spaltenumbrüchen angezeigt. |
 | IF/THEN/ELSE-Anweisung     | Sie können Berechnungen in einer Zeilendefinition oder Spaltendefinition ändern. |
+| Verwenden Sie einfache Anführungszeichen (") und ein kaufmännisches Und-Zeichen (&) für Dimensionswerte | Sie könen Dimensionswerte einschließlich das kaufännische Und-Zeichens für Berichtsentwürfe verwenden. |
 
 ## <a name="advanced-cell-placement"></a>Erweiterte Zellenplatzierung
 Erweiterte Zellenplatzierung oder *Erzwingen* betrifft die Platzierung von bestimmten Werten in bestimmten Zellen. Beispielsweise wird das Erzwingen häufig verwendet, um den korrekten Saldo in einer Cashflowaufstellung zu verschieben. Sie können das Erzwingen für folgende Zwecke verwenden:
@@ -297,3 +298,9 @@ Eine **IF/THEN/ELSE**-Anweisung ermöglicht, dass eine Berechnung von den Ergebn
 
 > [!NOTE]
 > Sie können die Ergebnisse einer Berechnung in keine andere Spalte einfügen. Die Ergebnisse müssen in der Spalte sein, die die Formel enthält.
+
+#### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Verwenden Sie einfache Anführungszeichen (") und ein kaufmännisches Und-Zeichen (&) in einer Zeile, Spalte oder Struktur
+
+Sie können Berichte mithilfe von Dimensionswerten entwerfen, die ein kaufmännisches Und-Zeichen (&) enthalten. 
+
+Innerhalb eines beliebigen Feld **Link zur Finanzdimension** können Sie einen Wert wie beispielsweise **GuV** eingeben. Das Einschließen von einfachen Anführungszeichen ('') auf beiden Seiten des Dimensionswert gibt an, dass Sie den Literalwert verwenden, wie beispielsweise das Einschließen des kaufmännischen Und-Zeichens (&). 

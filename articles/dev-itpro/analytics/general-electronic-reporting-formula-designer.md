@@ -3,7 +3,7 @@ title: Formeldesigner in der elektronischen Berichterstellung (EB)
 description: In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird.
 author: NickSelin
 manager: AnnBe
-ms.date: 10/03/2018
+ms.date: 05/14/2014
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "331275"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541267"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -439,6 +439,11 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <td>FILTER (Liste, Bedingungen)</td>
 <td>Gibt die angegebene Liste zurück, nachdem die Abfrage geändert wurde, um nach der angegebenen Bedingung zu filtern. Diese Funktion unterscheidet sich von der Funktion <strong>WO</strong>, da die angegebene Bedingung auf jede beliebige EB-Datenquelle des Typs <strong>Tabellendatensätze</strong> auf Datenbankebene angewendet wird. Die Liste und die Bedingung können definiert werden, indem Tabellen und Relationen verwendet werden.</td>
 <td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als ER-Datenquelle konfiguriert ist, die auf die Tabelle VendTable verweist, und wenn <strong>parmVendorBankGroup</strong> als ER-Datenquelle konfiguriert ist, die einen Wert des Datentyps <strong><Zeichenfolge</strong> zurückgibt, liefert <strong>FILTER (Vendor.&lt;Relations'.VendBankAccount, Vendor.&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste nur der Kreditorenkonten, die zu einer bestimmten Bankengruppe gehören.</td>
+</tr>
+<tr>
+<td>INDEX (Liste, Index)</td>
+<td>Diese Funktion gibt einen Datensatz zurück, der von einem bestimmten numerischen Index in der Liste ausgewählt wird. Eine Ausnahme wird ausgelöst, wenn der Index außerhalb des Bereichs der Datensätze in der Liste liegt.</td>
+<td>Wenn Sie die Datenquelle <strong>DS</strong> für den Typ <strong>Berechnetes Feld</strong> eingeben und der den Ausdruck <strong>SPLIT („A|B|C“, „|“), 2)</strong> enthält, gibt der Ausdruck <strong>DS.Value</strong> den Textwert „B“ zurück. Der Ausdruck <strong>INDEX (SPLIT („A|B|C“, „|“), 2).Value</strong> gibt außerdem den Textwert „B“ zurück.</td>
 </tr>
 </tbody>
 </table>

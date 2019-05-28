@@ -3,7 +3,7 @@ title: Konfigurationsschlüssel und Datenentitäten
 description: In diesem Thema wird die Beziehung zwischen Konfigurationsschlüsseln und Datenentitäten in Microsoft Dynamics 365 for Finance and Operations beschrieben.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 01/01/2018
+ms.date: 05/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 8d07a0572e56e97d42c0e1b841905f828edc6f51
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: bf2bdd2eaf406750c885a151aa09468df8a5f4b7
+ms.sourcegitcommit: fd3db9f2052c76a5d906b9ec23cb16222452a362
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "336473"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "1539943"
 ---
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsschlüssel und Datenentitäten
 
@@ -42,7 +42,7 @@ Konfigurationsschlüssel können einem oder allen folgenden Artefakten zugewiese
 
 In der folgenden Tabelle wird zusammengefasst, wie Konfigurationsschlüsselwerte zu verschiedenen Artefakten, die einem Objekt zugrunde liegen, das erwartete Verhalten des Objekts ändern.
 
-| Konfigurationsschlüsseleinstellung zu Datenentität | Konfigurationsschlüsseleinstellung zu Tabelle | Konfigurationsschlüsseleinstellung zu Tabellenfeld | Konfigurationsschlüssel zu Datenentitätsfeld | Erwartetes Verhalten |
+| Konfigurationsschlüsseleinstellung für Datenentität | Konfigurationsschlüsseleinstellung zu Tabelle | Konfigurationsschlüsseleinstellung zu Tabellenfeld | Konfigurationsschlüssel zu Datenentitätsfeld | Erwartetes Verhalten |
 |-----------------------------------------|------------------------------------|------------------------------------------|----------------------------------------|------------------|
 | Deaktiviert                                | Nicht bewertet                      | Nicht bewertet                            | Nicht bewertet                          | Wenn der Konfigurationsschlüssel für die Datenentität deaktiviert ist, ist die Datenentität nicht funktionsbereit. Es spielt keine Rolle, ob die Konfigurationsschlüssel in den zugrunde liegenden Tabellen und Feldern aktiviert oder deaktiviert sind. |
 | Aktiviert                                 | Deaktiviert                           | Nicht bewertet                            | Nicht bewertet                          | Wenn der Konfigurationsschlüssel für eine Datenentität aktiviert ist, wird vom Datenverwaltungsframework der Konfigurationsschlüssel für jede der zugrunde liegenden Tabellen überprüft. Wenn der Konfigurationsschlüssel für eine Tabelle deaktiviert ist, ist diese Tabelle in der Datenentität für die funktionale Verwendung nicht verfügbar. Wenn der Konfigurationsschlüssel einer Tabelle deaktiviert ist, werden die Tabellen- und Datenentitätskonfigurationsschlüsseleinstellungen nicht ausgewertet. Wenn bei der primären Tabelle in der Entität ihr Konfigurationsschlüssel deaktiviert ist, verhält sich das System so, als ob der Konfigurationsschlüssel der Entität deaktiviert wäre. |
@@ -86,7 +86,7 @@ Mithilfe der Konfigurationsschlüsselmetadaten, die während der Entitätsaktual
 - Wenn der Benutzer eine Vorlage in ein Datenprojekt lädt
 - Wenn ein vorhandenes Datenprojekt geladen wird
 - Wenn eine Vorlage in ein Datenprojekt geladen wird
-- Bevor der Export-/Importeinzelvorgang ausgeführt wird (Charge, Nicht-Charge, wiederkehrend, Odata)
+- Bevor der Export-/Importvorgang ausgeführt wird (Charge, Nicht-Charge, wiederkehrend, Odata)
 - Wenn der Benutzer eine Zuordnung generiert
 - Wenn der Benutzer Felder in die Zuordnungsbenutzeroberfläche zuordnet
 - Wenn der Benutzer nur „importierbare Felder” hinzufügt

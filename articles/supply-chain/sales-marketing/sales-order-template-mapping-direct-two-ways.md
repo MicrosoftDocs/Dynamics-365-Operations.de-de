@@ -3,7 +3,7 @@ title: Synchronisieren von Aufträgen direkt zwischen Sales und Finance and Oper
 description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Synchronisierung von Auträgen direkt aus Microsoft Dynamics 365 for Sales mit Microsoft Dynamics 365 for Finance and Operations auszuführen.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/11/2018
+ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 985a5a908308bc2268b80e8eef7117fdd6d54af6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: a427bff3cd07adbf4d3d81f98bdf7f85a194730b
+ms.sourcegitcommit: 3f02d8a874d1696cbf21d100f1ad205c57224e4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "339118"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "1539113"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-finance-and-operations"></a>Aufträge direkt zwischen Sales und Finance and Operations synchronisieren
 
@@ -146,6 +146,16 @@ Vor dem Synchronisieren von Aufträgen müssen die Systeme mit den folgenden Ein
 ### <a name="setup-in-finance-and-operations"></a>Einrichtung in Finance and Operations
 
 - Gehen Sie zu &gt; **Vertrieb und Marketing** **Periodische Aufgaben** &gt; **Berechnen Sie wünschenswert**, und richten Sie sie, dass sie als Stapelverarbeitungslauf ausgeführt wird. Legen sie Option **Berechnen Sie Summen für Aufträge** auf **Ja** fest. Diese Einstellung ist wichtig, da nur Aufträge, bei denen Auftragssummen berechnet wurden, werden mit Sales synchronisiert. Die Häufigkeit des Stapelverarbeitungsauftrags sollte sich an der Häufigkeit der Auftragssynchronisierung orientieren.
+
+Wenn Sie auch Arbeitsauftragsintegration verwenden, müssen Sie die Auftragsgrundlage einrichten. Die Auftragsgrundlage wird verwendet, um zwischen Aufträgen in Finance and Operations zu unterscheiden, die aus Arbeitsaufträgen in Field Service erstellt wurden. Wenn ein Auftrag eine Auftragsgrundlage des Typs **Arbeitsauftragsintegration** hat, wird das Feld **Externer Arbeitsauftragsstatus** im Auftragskopf angezeigt. Darüber hinaus wird durch die Auftragsgrundlage sichergestellt, dass Aufträge, die aus Arbeitsaufträgen in Field Service erstellt wurden, während der Auftragssynchronisierung von Finance and Operations mit Field Service herausgefiltert werden.
+
+1. Wechseln Sie zu **Vertrieb und Marketing** \> **Setup** \> **Aufträge** \> **Auftragsgrundlage**.
+2. Wählen Sie **Neu** aus, um einen neuen Auftragsgrundlage zu erstellen.
+3. Geben Sie im Feld **Auftragsgrundlage** einen Namen für den Auftragsgrundlage ein, wie beispielsweise **SalesOrder**.
+4. Geben Sie im Feld **Beschreibung** eine Beschreibung ein, wie beispielsweise **Auftrag aus Verkauf**.
+5. Aktivieren Sie das Kontrollkästchen **Ursprungstypzuweisung**.
+6. Legen Sie das Feld **Auftragsgrundlagentyp** auf **Auftragsintegration** fest.
+7. Wählen Sie **Speichern**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-fin-and-ops---direct-data-integration-project"></a>Einstellungen in Aufträgen (Sales zu Finance and Operations) - direktes Datenenintegrationsprojekt
 

@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 5724ba62bfb2c6e75ae895dc9285966c25f387a2
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "344799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1553816"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten
 
@@ -39,7 +39,7 @@ Die elektronische Berichterstellung (EB) ist ein Modul, das gesetzlich vorgeschr
 
     - Identifizieren Sie die erforderlichen Datenquellen, die in diesem Dokument angezeigt werden können.
 
-        - Zugrundeliegende Dynamics 365 for Finance and Operations-Daten (Datentabellen, Datenentitäten usw.)
+        - Zugrundeliegende Microsoft Dynamics 365 for Finance and Operations-Daten (Datentabellen, Datenentitäten usw.)
         - Prozessspezifische Eigenschaften (Ausführungsdatum und Zeit, Zeitzone)
         - Benutzereingabeparameter (definiert nach Endbenutzer bei Laufzeit).
 

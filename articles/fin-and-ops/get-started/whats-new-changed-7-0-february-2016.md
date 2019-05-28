@@ -18,11 +18,11 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "334886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1561809"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -119,7 +119,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 | Compile Common Intermediate Language (CIL) für alle Funktionen. | X++ wird zu p-Code kompiliert. | Der nagelneue X++-Compiler generiert CIL für alle Funktionen. CIL ist die Intermediate-Language, die bereits von anderen .NET-basierten Sprachen verwendet wird. | CIL ist schneller, kann Klassen in verwalteten Dynamic Link Librarys (DLLs) effizienter referenzieren und kann auf einer größere Toolbasis von .NET-Hilfsprogrammen ausgeführt werden. |
 | Im Microsoft Dynamics AX-Client sind BI-Berichte und -Visualisierungen eingebettet. | Nicht verfügbar | Erstellen Sie die intuitive und flüssige Visualisierungen. | Sie ermöglichen bessere Entscheidungen auf Grundlage von BI. |
 | Integration in Microsoft Office. | Nicht verfügbar | Neue Funktionen umfassen die Excel-Datenkonnektor-Anwendung, die **Arbeitsmappen-Designer**-Seite, die Export-API und die Dokumentverwaltung. | Sie können Produktivitätslösungen für die Endbenutzer erstellen. |
-| Automatisieren Sie Builds, Tests und Bereitstellungen. | Teilweise verfügbar | Stellen Sie die Entwicklertopologie über die "Developer and Build"-VM bereit. Konfigurieren Sie die Build-WM für die automatische Erkennung und den Build von Module aus Visual Studio Online (VSO) und für Tests. C\#- und X++-Modulkompilierung und -Referenzen werden unterstützt. | Es erhöht die Entwicklerproduktivität, indem es die Kosten und den Aufwand für das Testen und die Validierung verringert. |
+| Automatisieren Sie Builds, Tests und Bereitstellungen. | Teilweise verfügbar | Stellen Sie die Entwicklertopologie über die "Developer and Build"-VM bereit. Konfigurieren Sie die Build-WM für die automatische Erkennung und das Erstellen von Modulen aus Visual Studio Online (VSO) und führen Sie Tests aus. C\#- und X++-Modulkompilierung und -Referenzen werden unterstützt. | Es erhöht die Entwicklerproduktivität, indem es die Kosten und den Aufwand für das Testen und die Validierung verringert. |
 | Anpassen mit Overlays und Erweiterungen. | Erweiterungen sind nicht verfügbar. | Die aktuelle Version von Dynamics AX-hat ein neues Anpassungsmodell. | Sie können Quellcode und Metadaten von Modellelementen anpassen, die von Microsoft oder von Drittanbietern bereitgestellt werden. |
 | Erstellen Sie neue Steuerelemente und Benutzeroberflächenelemente, indem Sie X++ und ein modernes Internet-Framework verwenden. | Benutzerdefinierte Steuerelemente basieren auf externen Frameworks wie Microsoft ActiveX und Windows Presentation Foundation (WPF). | Es ist einfacher, Steuerelemente in der aktuellen Version zu erstellen. Das X++-Framework kann für das Anwendungsverhalten und die Geschäftslogik verwendet werden, und ein HTML/JavaScript-basierter Client ermöglicht moderne Visualisierungen. | Ihre Steuerelemente können so konzipiert werden, das sie wie die vordefinierten Dynamics AX-Steuerelemente aussehen und sich auch so verhalten. |
 | Prüfen und Anpassen der Leistung mit neuen Tools. | PerfSDK, Datenerweiterungs-Toolkit, Ablaufverfolgungsparser-Webanwendung und PerfTimer sind nicht verfügbar. | PerfSDK, Datenerweiterungs-Toolkit, Ablaufverfolgungsparser-Webanwendung und PerfTimer sind neu. | Mit dem Software Development Kit (SDK) können Sie alle wichtigen Geschäftsprozesse für die Leistung und einem Einzelbenutzer- und, falls zutreffend, einen Mehrbenutzen Testlauf testen und überprüfen. Mit dem Datenerweiterungs-Toolkit können Sie alle Leistungstests ausweiten, die Masterdaten und buchungsbezogenen Daten korrekt erweitern müssen. Mit dem Ablaufverfolgungs-Parser können Sie einen Einzelbenutzerleistungstest oder eine Mehrbenutzerlauf überprüfen. Mit PerfTimer können Sie sehen, ob eine Abfrage oder ein bestimmter Methodenaufruf ein Performanceproblem verursacht. Daher müssen Sie keine Verfolgung vornehmen und alles einzeln analysieren. |
@@ -733,7 +733,7 @@ Die Einzelhandel-Server und Datenverwaltung bietet Kunden und Unternehmen die M�
 <td>Er bietet gehostete und skalierbare E-Commerce-Dienste, die mit Onlineshops von Drittanbietern verwendet werden können.</td>
 </tr>
 <tr>
-<td>Verschieben Sie Daten zwischen dem Microsoft Dynamics AXBack-Office und Kanälen, indem Commerce Data Exchangeverwenden.</td>
+<td>Verschieben Sie Daten zwischen dem Microsoft Dynamics AX Back-Office und Kanälen, indem Commerce Data Exchange verwenden.</td>
 <td>Commerce Data Exchange ist ein System, das Daten zwischen Microsoft Dynamics AX und den Handelskanälen wie Online-Shops oder Filialen überträgt. Weitere Informationen finden Sie unter <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Es besteht eine funktionale Parität mit Microsoft Dynamics AX 2012 CU8. Beachten Sie jedoch die folgenden Details:
 <ul>

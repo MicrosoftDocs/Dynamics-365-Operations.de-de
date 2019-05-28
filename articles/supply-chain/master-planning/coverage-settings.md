@@ -1,6 +1,6 @@
 ---
-title: Dispositionseinstellungen
-description: Diese Deckungseinstellungen werden beim Produktprogrammplanungslauf zum Berechnen des Artikelbedarfs verwendet.
+title: Deckungseinstellungen
+description: Dieses Thema enthält Informationen zur Behandlung von Deckungseinstellungen, die beim Produktprogrammplanungslauf verwendet wird, um den Artikelbedarf zu berechnen.
 author: roxanadiaconu
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,39 +19,37 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 50f47394a4d4e95b4e158ea42a630d9e6e91f05b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
+ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "322558"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "1538893"
 ---
-# <a name="coverage-settings"></a>Dispositionseinstellungen
+# <a name="coverage-settings"></a>Deckungseinstellungen
 
 [!include [banner](../includes/banner.md)]
 
-Diese Deckungseinstellungen werden beim Produktprogrammplanungslauf zum Berechnen des Artikelbedarfs verwendet. 
+Diese Deckungseinstellungen werden beim Produktprogrammplanungslauf zum Berechnen des Artikelbedarfs verwendet.
 
 Sie können Deckungseinstellungen auf verschiedene Arten angeben:
 
--   Angeben von Dispositionseinstellungen für eine Dispositionsgruppe. Sie haben die Möglichkeit zum Erstellen einer Deckungsgruppe mit Einstellungen für alle Produkte, die mit der Deckungsgruppe verknüpft sind. Klicken Sie auf **Masterplan &gt; Einrichten &gt; Abdeckung &gt; Abdeckungsgruppen**, um eine Abdeckungsgruppe zu erstellen. Sie können eine Deckungsgruppe mit einem Produkt verknüpfen. Wenn der Link für einen bestimmten Standort, Lagerort oder eine Produktdimension bestimmt ist, verwenden Sie auf der Seite **Artikeldeckung** das Feld **Dispositionssteuerungsgruppe**. Wenn es ein generischer Link ist, verwenden Sie unabhängig von den Produktdimensionen die **Dispositionssteuerungsgruppe** auf dem Inforegister **Plan** der Seite **Produktdetails**. Wenn Sie eine Dispositionssteuerungsgruppe nicht mit einem Produkt verknüpfen, verwendet der Produktprogrammplan nicht die **Allgemeine Dispositionssteuerungsgruppe**, die auf der Seite **Produktprogrammplanungsparameter** als Standard angegeben ist.
+- Angeben von Dispositionseinstellungen für eine Dispositionsgruppe.
 
--   Angeben der Dispositionseinstellungen für ein Produkt. Sie haben die Möglichkeit zum Erstellen von Deckungseinstellungen für ein bestimmtes Produkt. Klicken Sie auf **Produktinformationsverwaltung &gt; Produkte &gt; Freigegebene Produkte**. Wählen Sie das Produkt im **Aktivitätenbereich**, in der Registerkarte **Plan** in der **Abdeckungsgruppe**, klicken Sie auf **Artikelabdeckung**, um die Seite **Artikelabdeckung** zu öffnen. Ist das Produkt bereits mit einer Dispositionsgruppe verknüpft, können die Einstellungen der Deckungsgruppe mithilfe des Felds **Überschreiben** überschrieben werden. Die Dispositionseinstellungen auf der Seite **Artikeldeckung** haben Vorrang vor den Einstellungen auf der Seite **Dispositionssteuerungsgruppe**.
+    Sie haben die Möglichkeit zum Erstellen einer Deckungsgruppe mit Einstellungen für alle Produkte, die mit der Deckungsgruppe verknüpft sind. Um eine Abdeckungsgruppe zu erstellen, gehen Sie zu **Masterplan &gt; Einrichten &gt; Abdeckung &gt; Abdeckungsgruppen**. Sie können eine Deckungsgruppe mit einem Produkt verknüpfen. Wenn der Link für einen bestimmten Standort, Lagerort oder eine Produktdimension bestimmt ist, verwenden Sie auf der Seite **Artikeldeckung** das Feld **Dispositionssteuerungsgruppe**. Wenn es ein generischer Link ist, verwenden Sie unabhängig von den Produktdimensionen das Feld **Dispositionssteuerungsgruppe** auf dem Inforegister **Plan** der Seite **Produktdetails**. Entsprechend dem Standard und wenn Sie keine Dispositionssteuerungsgruppe mit einem Produktplan verküpfen, indem Sie die allgemeine Dispositionssteuerungsgruppe der Seite **Produktprogrammplanungsparameter** als Standard angegeben ist.
 
-<!-- -->
+- Angeben der Dispositionseinstellungen für ein Produkt.
 
--   Angeben der Deckungseinstellungen für ein Produkt mithilfe eines Assistenten. Bei dem Assistenten handelt es sich um eine schrittweise Anleitung zum Einrichten der primären Artikeldeckungsparameter. Klicken Sie auf der Seite **Artikeldeckung** auf **Assistent**, um den **Artikeldeckungs-Assistent** zu öffnen.
+    Sie haben die Möglichkeit zum Erstellen von Deckungseinstellungen für ein bestimmtes Produkt. Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**. Wählen Sie das Produkt und dann im Aktivitätenbereich in der Registerkarte **Plan** in der Gruppe**Abdeckung** und wählen Sie **Artikelabdeckung**, um die Seite **Artikelabdeckung** zu öffnen. Ist das Produkt bereits mit einer Dispositionsgruppe verknüpft, können die Einstellungen der Deckungsgruppe mithilfe des Felds **Überschreiben** überschrieben werden. Die Dispositionseinstellungen auf der Seite **Artikeldeckung** haben Vorrang vor den Einstellungen auf der Seite **Dispositionssteuerungsgruppe**.
 
-<!-- -->
+- Angeben der Deckungseinstellungen für ein Produkt mithilfe eines Assistenten.
 
-- Angeben von Deckungseinstellungen für eine Dimensionsgruppe. Klicken Sie auf **Produktinformationsverwaltung &gt;Allgemein &gt; Freigegebene Produkte**. Klicken Sie auf der Seite **Details für freigegebene Produkte** auf der Registerkarte **Allgemein** in der Gruppe **Administration** auf den Link **Lagerdimensionsgruppe**. Wählen Sie auf der Seite **Lagerdimensionsgruppe** das Feld **Disposition nach Dimensionen** aus, um die Deckungseinstellungen für eine Dimension in der Lagerdimensionsgruppe zu erstellen. Für jede Produktdimension, wie Konfiguration, Farbe, Größe, Stil, muss das Feld **Abdeckungsplan nach Dimensionn**  ausgewählt sein.
+    Der Assistent führt Sie schrittweise durch den Prozess zum Einrichten der zentralen Artikeldeckungsparameter. Klicken Sie auf der Seite **Artikeldeckung** unter Aktivitätsbereich auf **Assistent**, um den **Artikelabdeckungs-Assistent** zu öffnen.
 
+- Angeben von Deckungseinstellungen für eine Dimensionsgruppe.
 
+    Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**. Klicken Sie auf der Seite **Details für freigegebene Produkte** auf der Registerkarte **Allgemein** in der Gruppe **Administration** auf den Link **Lagerdimensionsgruppe**. Wählen Sie auf der Seite **Lagerdimensionsgruppen** das Kontrollkästchen **Abdeckungsplan nach Dimensionen** aus, um die Deckungseinstellungen für eine Dimension in der Lagerdimensionsgruppe zu erstellen. Das Feld **Abdeckungsplan nach Dimensionn**  muss ausgewählt sein für alle Produktdimensionen wie Konfiguration, Farbe, Größe und Stil .
 
-<a name="additional-resources"></a>Zusätzliche Ressourcen
---------
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Produktprogrammpläne](master-plans.md)
-
-
-

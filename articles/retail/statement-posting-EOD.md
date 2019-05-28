@@ -3,7 +3,7 @@ title: Verbesserungen der Auszugsbuchungsfunktionalität
 description: In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden.
 author: josaw1
 manager: AnnBe
-ms.date: 04/26/2016
+ms.date: 05/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e8c5466a68fa87326c46a4e36bf7399be1279c6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321431"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "1541290"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
@@ -43,9 +43,9 @@ Finance and Operations umfasst die folgenden Validierungen, die sich auf diese K
 - Für alle Operationen, die während des Lebenszyklus einer Anweisung durchgeführt werden (Anlegen, Berechnen, Löschen, Buchen usw.), müssen dieselben Konfigurationsschlüssel verwendet werden. Beispielsweise können Sie keine Anweisung erstellen und berechnen, während die **Einzelhandelsaufstellungen (Vorversion)** Konfigurationsschlüssel eingeschaltet ist, und dann versuchen, die gleiche Anweisung zu posten, während die **Einzelhandelsauszug** Konfigurationsschlüssel eingeschaltet ist.
 
 > [!NOTE]
-> Wir empfehlen die Verwendung des Konfigurationsschlüssels **Einzelhandelsauszug** für die verbesserte Auszugsbuchung, es sei denn, Sie haben zwingende Gründe, stattdessen den Konfigurationsschlüssel **Einzelhandelsaufstellungen (Vorversion)** zu verwenden. Microsoft wird weiterhin in die neue und verbesserte Funktion zur Kontoauszugsbuchung investieren, und es ist wichtig, dass Sie so schnell wie möglich darauf umsteigen, um davon zu profitieren. Die Funktion zur Verbuchung von Vorversion-Auszägen wird in einem zukünftigen Release veraltet sein.
+> Wir empfehlen die Verwendung des Konfigurationsschlüssels **Einzelhandelsauszug** für die verbesserte Auszugsbuchung, es sei denn, Sie haben zwingende Gründe, stattdessen den Konfigurationsschlüssel **Einzelhandelsaufstellungen (Vorversion)** zu verwenden. Microsoft wird weiterhin in die neue und verbesserte Funktion zur Kontoauszugsbuchung investieren, und es ist wichtig, dass Sie so schnell wie möglich darauf umsteigen, um davon zu profitieren. Die Funktion zur Verbuchung von Vorversion-Auszügen ist ab Version 8.0 veraltet.
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
 Als Teil der Verbesserungen der Auszugsbuchungsfunktion wurden drei neue Parameter auf dem Inforegister **Aufstellung** auf der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** eingeführt:
 
@@ -56,11 +56,15 @@ Als Teil der Verbesserungen der Auszugsbuchungsfunktion wurden drei neue Paramet
 
 - **Deaktivieren der Zählung erforderlich** - Wenn diese Option auf **Ja** gesetzt ist, wird der Buchungsprozess für eine Auszug fortgesetzt, auch wenn die Differenz zwischen dem gezählten Betrag und dem Transaktionsbetrag auf dem Auszug außerhalb der Schwelle liegt, die auf der FastTab **Inforegister** für Einzelhandelsgeschäfte definiert ist.
 
-Zusätzlich wurde das Feld **Maximale Anzahl paralleler Auszugsbuchungen** auf dem Inforegister **Stapelverarbeitung** eingeführt. Dieses Feld definiert die Anzahl der Stapelaufgaben, die gleichzeitig ausgeführt werden sollen. Derzeit müssen Sie den Wert dieses Feldes manuell setzen.
+Darüber hinaus wurden die folgenden Parameter auf dem Inforegister **Stapelverarbeitung** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** eingerführt: 
 
-Auch mit dem neuen Buchungsprozess, ist es erforderlich, ein **Geschenkkartenprodukt** im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festzulegen. Dies gilt auch, wenn keine Geschenkkarten von der Organisation verwendet werden.
+- **Maximale Anzahl von parallelen Auszugsbuchungen** - Dieses Feld definiert die Anzahl der Stapelverarbeitungsaufgaben, die verwendet werden, um mehrere Aufstellungen zu buchen. 
+- **Maximaler Thread für die Auftragsverarbeitung pro Abrechnung** - Dieses Feld stellt die maximale Anzahl der Threads dar, die vom Stapelverarbeitungsauftrag für die Abrechnungsbuchung verwendet wird, um Aufträge für eine einzelne Abrechnung zu erstellen und zu fakturieren. Die Gesamtanzahl der Threads, die vom Abrechnungsbuchungsprozess verwendet werden, wird auf Grundlage des Werts in diesem Parameter multipliziert mit dem Wert im Parameter **Maximale Anzahl von parallelen Abrechnungsbuchungen** berechnet. Wird der Wert dieses Parameters zu hoch festgelegt, kann dies die Leistung des Abrechnungsbuchungsprozesses negativ beeinflussen.
+- **Maximale Buchungspositionen in der Aggregierung** - Dieses Feld definiert die Anzahl von Transaktionspositionen, die in einer einzelnen zusammengefassten Transaktion eingeschlossen sind, bevor eine neue erstellt wird. Aggregierte Transaktionen werden auf Grundlage unterschiedlicher Aggregationskriterien erstellt, beispielsweise Debitor, Geschäftsdatum oder Finanzdimensionen. Beachten Sie unbedingt, dass die Positionen einer einzelnen Einzelhandelstransaktion nicht auf unterschiedliche aggregierte Buchungen aufgeteilt werden. Das bedeutet, dass es eine Möglichkeit gibt, dass die Anzahl der Positionen in eine zusammengefassten Transaktion etwas höher oder nidriger liegt, je nach solchen Faktoren wie Anzahl der eindeutig identifizierbare Produkte.
+- **Maximale Anzahl von Threads zum Überprüfen der Storetransaktionen** - Dieses Feld definiert die Anzahl der Threads, die verwendet werden, um Einzelhandelstransaktionen zu überprüfen. Die Überprüfung von Einzelhandelstransaktionen ist ein obligatorischer Schritt, der ausgeführt werden muss, bevor die Transaktionen in die Aufstellungen einbezogen werden können. Sie müssen auch ein **Geschenkkartenprodukt** im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festlegen. Dies muss auch definiert werden, wen Geschenkkarten nicht von der Organisation verwendet werden.
 
-Beachten Sie, daß alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die für Einzelhandelsgeschäfte und auf der Seite **Einzelhandelsparameter** definiert sind, auf die verbesserte Auszugsbuchung anwendbar sind.
+> [!NOTE]
+> Alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die für Einzelhandelsgeschäfte und auf der Seite **Einzelhandelsparameter** definiert sind, sind auf die verbesserte Auszugsbuchung anwendbar.
 
 ## <a name="processing"></a>Bearbeitung
 

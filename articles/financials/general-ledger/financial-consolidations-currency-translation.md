@@ -17,11 +17,11 @@ ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
 ms.openlocfilehash: 8427d53bac3216d362b2bf8983a847f069351b3b
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353999"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1559971"
 ---
 # <a name="financial-consolidations-and-currency-translation"></a>Finanzielle Konsolidierungen und Währungsumrechnung
 
@@ -114,7 +114,7 @@ Die Exportunternehmensaldi-Funktionalität funktioniert wie das Onlinetool für 
 Um Intercompany-Transaktionen zu löschen, können Sie eine Löschungsregel definieren. Sie können auch einen manuellen Löschungseintrag in einem Unternehmen vornehmen, der als  Unternehmen mit Löschungseintrag aktiviert ist. Wird eine Löschungsregel erstellt, haben Sie zwei Möglichkeiten für die Löschungsmethode: **Nettoveränderung** und **Fest**.
 
 ### <a name="set-up-elimination-rules"></a>Sie können Löschungsregeln einrichten.
-Wenn wir Löschungsregeln in Dynamics 365 for Finance and Operations einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell für Löschungszwecke erstellen. Die meisten Debitoren nennen diese Finanzdefinion **Handelspartner** oder ähnlich. Wenn Sie sich entscheiden, eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, dass Sie Hauptkonten anzeigen, die nur für Intercompany-Buchungen bestimmt sind.
+Wenn wir Löschungsregeln in Microsoft Dynamics 365 for Finance and Operations einrichten, empfehlen wir, dass Sie eine Finanzdimension speziell für Löschungszwecke erstellen. Die meisten Debitoren nennen diese Finanzdefinion **Handelspartner** oder ähnlich. Wenn Sie sich entscheiden, eine Finanzdimension nicht zu verwenden, müssen Sie darauf achten, dass Sie Hauptkonten anzeigen, die nur für Intercompany-Buchungen bestimmt sind.
 
 Die Einstellung für die Löschungen wird im Bereich **Einrichten** im **Konsolidierungs**moduls gefunden. Nachdem Sie eine Beschreibung für die Regel eingeben haben, müssen Sie das Unternehmen wählen, zu dem die Löschungserfassung gebucht wird. Dies sollte ein Unternehmen sein, das **Für finanziellen Löschungsprozess verwenden** in den Einstellungen für die juristische Person ausgewählt wurde.
 

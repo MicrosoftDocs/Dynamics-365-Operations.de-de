@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7201397cd839048465ee0cd8e97c267ab8cbfeb7
-ms.sourcegitcommit: 073257c2ec810e3599c1aad5a493bc9f16ffc30d
+ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "992882"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1527670"
 ---
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
@@ -66,26 +66,6 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Ab April 2020 wird die verbesserte „gehört zu”-Funktionalität zum Standardverhalten ohne einen Mechanismus, um zum Vorgängerverhalten zurückzukehren. |
-
-### <a name="deriving-from-internal-classes-is-deprecated"></a>Das Ableiten von internen Klassen ist veraltet
-
-|   |  |
-|------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Vor Plattformupdate 25 war es möglich, eine Klasse oder Tabelle zu erstellen, die von einer internen Klasse/Tabelle abgeleitet wurde, die in einem anderen Modul/Paket definiert wurde. Dies ist keine sicher Programmierpraxis. Ab Plattformupdate 25 zeigt der Compiler eine Warnung an. |
-| **Ersetzt durch eine andere Funktion?**   | Die Compilerwarnung wird durch einen Fehler im Plattformupdate 26 ersetzt. Diese Änderung ist zur Laufzeit abwärtskompatibel. Das bedeutet, dass Plattformupdate 25 oder neuer in einer beliebigen Sandbox oder Produktionsumgebung bereitgestellt werden kann, ohne benutzerdefinierten Code zu ändern. Diese Änderung betrifft nur Entwicklungs- und Kompilierzeit.|
-| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
-| **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Die Warnung wird zu einem Kompilierungsfehler im Plattformupdate 26. |
-
-### <a name="overriding-internal-methods-is-deprecated"></a>Außerkraftsetzen von internen Methoden ist veraltet
-
-|   |  |
-|------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Vor Plattformupdate 25 war es möglich, eine interne Methode in einer abgeleiteten Klasse außer Kraft zu setzen, die in einem anderen Modul/Paket definiert wurde. Dies ist keine sicher Programmierpraxis. Ab Plattformupdate 25 zeigt der Compiler eine Warnung an. |
-| **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird durch einen Kompilierungsfehler im Plattformupdate 26 ersetzt. Diese Änderung ist zur Laufzeit abwärtskompatibel. Das bedeutet, dass Plattformupdate 25 oder neuer in einer beliebigen Sandbox oder Produktionsumgebung bereitgestellt werden kann, ohne benutzerdefinierten Code zu ändern. Diese Änderung betrifft nur Entwicklungs- und Kompilierzeit. |
-| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
-| **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Die Warnung wird zu einem Kompilierungsfehler im Plattformupdate 26. |
 
 ### <a name="parameter-to-enable-sales-orders-with-multiple-project-contract-funding-sources"></a>Parameter, um Aufträge mit mehreren Projektvertrags-Finanzierungsquellen zu aktivieren
 Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der Projektvertrag mehrere Finanzierungsquellen hat und bei der Einstellung **Projektverwaltungsparameter** die Option **Aufträge für Projekt mit mehreren Finanzierungsquellen zulassen** aktiviert ist. Standardmäßig ist dieser Parameter nicht aktiviert. 

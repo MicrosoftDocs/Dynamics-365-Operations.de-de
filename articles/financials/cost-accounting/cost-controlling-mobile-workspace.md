@@ -18,11 +18,11 @@ ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: b6cdb69f32de2118e685c149605d50b78105c098
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "317567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1565764"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobiler Arbeitsbereich für die Kostensteuerung
 
@@ -40,7 +40,7 @@ Zum Beispiel empfängt ein Mitarbeiter eine Einladung zu einer internationalen K
 ### <a name="data-security"></a>Datensicherheit
 Die Daten im mobilen Arbeitsbereich **Kostensteuerung** werden mit Anmeldeinformationen geschützt. Ein Kostenstellenmanager kann nur Daten für seine eigene Kostenstelle sehen. Die Zugriffsebenensicherheit wird im Modul **Kostenrechnung** verwaltet.
 
-Buchhalter definieren den mobilen Arbeitsbereich **Kostensteuerung** im Modul **Buchhaltungskosten**. Nachdem der Arbeitsbereich auf der App veröffentlicht ist, ist er in der mobilen App für Dynamics 365 for Operations verfügbar. Dadurch wird sichergestellt, dass alle Kostenstellenmanager in der gleichen Organisation Daten im selben Format sehen.
+Buchhalter definieren den mobilen Arbeitsbereich **Kostensteuerung** im Modul **Buchhaltungskosten**. Nachdem der Arbeitsbereich auf der App veröffentlicht ist, ist er in der mobilen App für Microsoft Dynamics 365 for Operations verfügbar. Dadurch wird sichergestellt, dass alle Kostenstellenmanager in der gleichen Organisation Daten im selben Format sehen.
 
 ### <a name="actions-views-and-links"></a>Aktivitäten, Ansichten und Links
 Der mobile Arbeitsbereich **Kostensteuerung** bietet folgende Aktivitäten, Ansichten und Links:

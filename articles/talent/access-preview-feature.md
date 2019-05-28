@@ -1,12 +1,12 @@
 ---
 title: Auf Vorschaufunktionen in Talent zugreifen
 description: In diesem Thema wird beschrieben, wie ein Administrator die Vorschaufunktionen aktivieren kann, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind.
-author: andreabichsel
+author: tracykeya
 manager: AnnBe
-ms.date: 04/17/2018
+ms.date: 04/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,15 +15,15 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: trkeya
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 060a36185641d5bb7912631b7c857c5c4331c8b7
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
+ms.openlocfilehash: 72e2a3c62c7aab0f5cf8900c540a22d91be00609
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856323"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518124"
 ---
 # <a name="access-preview-features-in-talent"></a>Auf Vorschaufunktionen in Talent zugreifen
 
@@ -72,6 +72,7 @@ Sie können die Einstellung **Vorschaufunktionen** im Microsoft Dynamics 365 for
 
 - **Bewerber bewerben** - Sowohl interne als auch externe Bewerber können sich jetzt direkt über die Stellenseite auf der Karriereseite bewerben.
 - **Angebotsverwaltung** - Benutzer können jetzt Angebotsschreiben aus Vorlagen erstellen, die Platzhalter enthalten. Wenn die Kandidaten in die Angebotsphase eintreten, können Personalvermittler und Einstellungsmanager das Angebots-Tool verwenden, um das formelle Angebot eines Kandidaten über Vorlagen vorzubereiten, das Angebot zur internen Genehmigung zu senden und schließlich das Angebot an den Kandidaten zur Unterzeichnung zu senden. Viele neue Funktionen werden im Laufe der Zeit dem Angebots-Tool hinzugefügt, und die Vorschaufunktion wird mit diesen Funktionen aktualisiert, sobald wir bereit sind, sie zur Vorschau freizugeben.
+- **[Analytische Berichte](analytic-reports.md)** – Einstellungsteams können Schlüsselindikatoren für eine einzelne Stellenanalyse oder als aggregierte Metrik für alle Stellen im Analyse-Hub anzeigen.
 
 ### <a name="core-hr"></a>Zentrale Personalverwaltung
 

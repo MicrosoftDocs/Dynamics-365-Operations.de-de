@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 20a7781486c6e0612c27af02a1bccbc48c55a932
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: c5cfe92b8733a0a6d76e074cc31eec3f3935b512
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "353792"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530867"
 ---
 # <a name="define-financial-dimensions"></a>Finanzdimensionen definieren
 
@@ -32,8 +32,8 @@ Dieser Aufgabenleitfaden veranschaulicht das Hinzufügen einer Finanzdimension u
 
 ## <a name="create-an-entity-backed-financial-dimension"></a>Erstellen einer Finanzdimension auf Basis einer Entität
 1. Wechseln Sie zu Hauptbuch >; Kontenplan > Dimensionen > Finanzdimensionen.
-2. Klicken Sie auf "Neu".
-3. Wählen Sie im Feld "Benutzerwerte von" eine vom System definierte Entität aus, auf der die Finanzdimension basieren soll. 
+2. Klicken Sie auf Neu.
+3. Wählen Sie im Formularfeld "Benutzerwerte" eine vom System definierte Entität aus, auf der die Finanzdimension basieren soll. 
 4. Geben Sie im Feld "Dimensionsname" einen Wert ein, um die Finanzdimension zu beschreiben.
     * Der Name kann vom der im System definierte Entität abweichen. Er kann jedoch keine Leerzeichen und Sonderzeichen enthalten.  
 5. Klicken Sie auf Aktivieren.
@@ -46,8 +46,8 @@ Dieser Aufgabenleitfaden veranschaulicht das Hinzufügen einer Finanzdimension u
 
 ## <a name="create-a-custom-financial-dimension"></a>Erstellen einer benutzerdefinierten Finanzdimension
 1. Schließen Sie die Seite.
-2. Klicken Sie auf "Neu".
-3. Wählen Sie eine Option im Feld <Custom dimension> aus.
+2. Klicken Sie auf Neu.
+3. Wählen Sie im Feld "Werte verwenden aus" die Option "Benutzerdefinierte Dimension".
 4. Geben Sie im Feld "Dimensionsname" einen Wert ein, um die Finanzdimension zu beschreiben.
     * Der Name darf keine Leerzeichen oder Sonderzeichen enthalten.  
     * Sie können auch eine Kontenmaske angeben. Sie beschränkt die Menge und die Art von Informationen, die für Dimensionswerte eingegeben werden können.   

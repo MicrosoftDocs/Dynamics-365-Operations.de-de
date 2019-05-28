@@ -1,9 +1,9 @@
 ---
 title: Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
-description: In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können. Schließlich können Entwickler diese Benachrichtigungen auf Arbeitsgänge mit Ausnahme von Auftragserfüllungsarbeitsgängen erweitern.
+description: In diesem Thema wird beschrieben, wie Auftragsbenachrichtigungen in der Verkaufsstelle und im Benachrichtigungsframework aktiviert werden, die für andere Arbeitsgänge erweitert werden können.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/13/2018
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 41f16d13051f6095bdb04af1586ec06fe0ce93f6
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.openlocfilehash: e7aceed380f6722353574470d6dee75ebe105c18
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "361336"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1530269"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 
@@ -67,6 +67,10 @@ POS-Schaltflächen können jetzt eine Anzahl anzeigen, damit Arbeitskräfte einf
 Die folgende Abbildung zeigt die Inhaltseinstellungen, die im Schaltflächenrasterdesigner angezeigt werden.
 
 ![Live-Inhaltseinstellungen im Schaltflächenrasterdesigner](./media/ButtonGridDesigner.png "Live-Inhaltseinstellungen im Schaltflächenrasterdesigner")
+
+Um die Benachrichtigungsanzahl auf einer Schaltfläche anzuzeigen, müssen Sie sicherstellen, dass das korrekte Bildschirmlayout aktualisiert wird. Um das Bildschirmlayout zu bestimmen, das vom POS verwendet wird, wählen Sie das Symbol **Einstellungen** in der oberen rechten Ecke aus und beachten Sie die **Bildschirmlayoutkennung** und die **Layoutlösung**. Wechseln Sie jetzt mithilfe des Edge-Browsers zur Seite **Bildschirmlayout** in Dynamics 365 for Finance and Operations, suchen Sie die oben identifizierte **Bildschirmlayoutkennung** und **Layoutauflösung** und aktivieren Sie das Kontrollkästchen **Liveinhalt aktivieren**. Wechseln Sie zu **Retail > IT (Einzelhandel) > Vertriebsplan** und aktivieren Sie den Einzelvorgang 1090 (Register), um   Layoutänderungen zu synchronisieren. 
+
+![Suchen Sie das von POS verwendete Bildschirmlayout](./media/Choose_screen_layout.png "Suchen Sie das von POS verwendete Bildschirmlayout")
 
 Die folgende Abbildung zeigt die Auswirkungen der Auswahl **Oben rechts** versus **Mitte** im Feld **Inhalts-Ausrichtung** für Schaltflächen für verschiedene Mengen an.
 

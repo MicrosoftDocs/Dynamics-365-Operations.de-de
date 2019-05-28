@@ -19,11 +19,11 @@ ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ef587b9fcb4f14715a4c830e8a3de8ebe21a71ed
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "347191"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1572997"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>Einrichten einer Vorlage für Objekte am Kundenstandort 
 

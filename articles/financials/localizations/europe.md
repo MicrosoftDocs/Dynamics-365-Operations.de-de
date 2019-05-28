@@ -16,11 +16,11 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
-ms.sourcegitcommit: 0f530e5f72a40f383868957a6b5cb0e446e4c795
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "321730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1545461"
 ---
 # <a name="europe"></a>Europa 
 
@@ -75,7 +75,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [EU-Gelangensbestätigung erhalten](tasks/eur-00012-receive-eu-entry-certificate.md)
 - [Registrierungskennungen](emea-registration-ids.md)
 - [Verlagerung der Steuerschuld](emea-reverse-charge.md)
-- [SEPA-Kreditübertragungsüberblick](../accounts-payable/sepa-credit-transfer.md)
+- [SEPA-Kreditübertragungsübersicht](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Einrichten der Debitoren- und Kreditorenvergütung](emea-compensation-customer-vendor-transactions.md)
 - [Zusammenfassende Meldung einrichten](tasks/eur-00011-eu-sales-list-reporting.md)
@@ -90,7 +90,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
   - [MwSt.-Wechselkurse](emea-vat-exchange-rate.md)
   - [MwSt.-Abstimmungsbericht](tasks/eur-00018-vat-reconciliation-report.md)
   - [MwSt.-Register-Buchungen für Osteuropa](emea-vat-register-transactions.md)
-  - [VAT-Berichterstattung](emea-vat-reporting.md)
+  - [MwSt.-Berichterstellung](emea-vat-reporting.md)
   - [Mehrwertsteuererklärung erstellen und übermitteln](tasks/create-submit-vat-report.md)
   - [Buchungen zum Ausgleich anzeigen](emea-transactions-settlement-form.md)
 

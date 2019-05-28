@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: bc544211891c19104b2b3cb704b55a074784d608
-ms.sourcegitcommit: b95bc0f81bd3bb3d9ec4c61f64f93b5c2bef9e05
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "902959"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1505983"
 ---
 # <a name="electronic-reporting-er"></a>Elektronische Berichterstellung (ER, Elektronic Reporting)
 
@@ -204,7 +204,7 @@ Um sich mit den Details dieses Szenarios vertraut zu machen, geben Sie den Aufga
 
 ### <a name="translating-data-model-content"></a>Übersetzen von Datenmodellinhalten
 
-Ein Datenmodellinhalt (Etiketten und Beschreibungen) kann in andere Sprachen übersetzt werden, die von Dynamics 365 for Finance and Operations unterstützt werden. Sie möchten möglicherweise Datenmodellinhalte aus folgenden Gründen übersetzen:
+Ein Datenmodellinhalt (Etiketten und Beschreibungen) kann in andere Sprachen übersetzt werden, die von Microsoft Dynamics 365 for Finance and Operations unterstützt werden. Sie möchten möglicherweise Datenmodellinhalte aus folgenden Gründen übersetzen:
 
 - Um Inhalte für fremdsprachige Formatdesigner, die das Datenmodell zur Datenzuordnung von Formatkomponenten verwenden, zur Entwurfszeit verständlicher zu machen.
 - Um Inhalte zur Laufzeit benutzerfreundlicher zu machen, indem Befehle und Hilfen für Laufzeitparameter sowie konfigurierte Prüfungsnachrichten (Fehler und Warnungen) in der bevorzugten Sprache des angemeldeten Benutzers angezeigt werden.

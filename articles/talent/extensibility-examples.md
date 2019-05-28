@@ -3,14 +3,14 @@ title: Talent mit PowerApps und Microsoft Flow erweitern – Beispielsszenarien
 description: In diesem Thema werden einige Beispiele von Erweiterbarkeitsszenarien für Microsoft Dynamics 365 for Talent beschrieben, die Microsoft PowerApps und Microsoft Flow verwenden.
 author: negudava
 manager: Annbe
-ms.date: 03/04/2018
+ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
 ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent;Core;Experience Apps
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0aa3578047b9397682a7039d0dbcc05cc1b167e4
-ms.sourcegitcommit: 9796d022a8abf5c07abcdee6852ee34f06d2eb57
+ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "949919"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518066"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Talent mit PowerApps und Microsoft Flow erweitern – Beispielsszenarien
 
@@ -101,7 +101,21 @@ Diese Vorlage kann auch erweitert werden, sodass sie für ein beliebiges Szenari
 
 Um die Vorlage **Fluss – SharePoint Integration**herunterzuladen, gehen Sie zu [Fluss SharePoint Integration ](https://go.microsoft.com/fwlink/?linkid=2082109) im Microsoft Download Center.
 
+## <a name="admin-console-to-manage-talent-pools"></a>Administratorkonsole, um Talentpools zu verwalten
 
+Bei der Aktivierung von Integration in LinkedIn, erstellt Attract automatisch einen LinkedIn-Talentpool. Wenn ein Personalvermittler InMail über LinkedIn mit einem Rekruten austauscht, erstellt Attract ein Profil für den Rekruten und dieser wird ein Mitglied im LinkedIn-Talentpool. Diese PowerApps-App ist für die Neuanordnung von Kandidaten in Talentpools auf Grundlage ihrer Fähigkeiten nützlich.
+
+Führen Sie diese PowerApps-App als eine Administratorkonsole aus, um die folgenden Aufgaben auszuführen:
+
+- Kandidaten in einem Talentpool aufführen
+- Kandidaten einem Talentpool hinzufügen und daraus entfernen
+- Kandidaten von einem Talentpool zu einem anderen verschieben
+- Bestimmen, ob Kandidaten bereits Teil eines Talentpools sind, bevor Sie verschoben werden
+- Überprüfen der Fähigkeiten von Kandidaten, bevor sie in andere Talentpools verschoben werden
+
+Diese PowerApps-App verwendet n:n-Beziehungen, sodass Sie diese App als Vorlage für andere Szenarien verwenden können, in denen Sie Datensätze mit n:n-Beziehungen extrahieren müssen.
+
+Zum herunterladen der Vorlage **Administratorkonsole zum Verwalten von Talentpools** wechseln Sie zu [Administratorkonsole zum Verwalten von Talentpools](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) im Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

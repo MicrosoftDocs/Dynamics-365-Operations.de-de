@@ -3,7 +3,7 @@ title: Systemanforderungen und Updaterichtlinie für Talent
 description: In diesem Thema sind die Anforderungen für Dynamics 365 for Talent aufgeführt. Außerdem wird die Updaterichtlinie kurz dargestellt.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 2389f00b22ec3b5284eeffb2c015533b7a3d13e0
-ms.sourcegitcommit: 608e68b603afef9eb98d8fb25e90109c2473ef87
+ms.openlocfilehash: ea8b7485b142245a359648a2a85d2a3e2a6d6629
+ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "856300"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "1518097"
 ---
 # <a name="talent-system-requirements-and-update-policy"></a>Systemanforderungen und Updaterichtlinie für Talent
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema sind die Anforderungen für Microsoft Dynamics 365 for Talent aufgeführt. Außerdem wird die Updaterichtlinie kurz dargestellt.
+In diesem Thema werden die Anforderungen für Microsoft Dynamics 365 for Talent einschließlich Attract, Onboard, and Core HR beschrieben. Es werden auch die Länder und Regionen beschrieben, in denen Talent verfügbar ist, außerdem werden Informationen zu Sprachen und zur Lokalisierung für Talentdaten bereitgestellt. Zusätzlich bietet dieses Thema die Aktualisierungsrichtlinie für Talent bereit.
 
 ## <a name="supported-web-browsers"></a>Unterstützte Webbrowser
 
@@ -57,8 +57,17 @@ Um die neueste Version für jeden Webbrowser zu suchen, wechseln Sie zur Website
 * Zum Ausführen von Microsoft Excel- und Word-Add-Ins muss Microsoft Office 2016 für Windows oder Mac installiert sein. Genauere Informationen zu Versionsanforderungen erhalten Sie unter [Fehlerbehebung bei Office-Integration](../dev-itpro/office-integration/office-integration-troubleshooting.md "Fehlerbehebung bei Office-Integration").
 * Um Dokumente anzuzeigen, die über die Funktionen für einen Export nach Excel oder einen Export nach Word erzeugt wurden, muss Microsoft Office 2007 oder höher installiert sein.
 
+## <a name="regional-availability-languages-and-localization"></a>Regionale Verfügbarkeit, Sprachen und Lokalisierung
+
+Sie können eine PDF-Datei der Länder, Regionen der und der von Talent unterstützten Sprachen unter [Internationale Verfügbarkeit von Microsoft Dynamics 365](https://docs.microsoft.com/dynamics365/get-started/availability) herunterladen. 
+
+> [!NOTE]
+> Auch wenn die Benutzeroberfläche in andere Sprachen lokalisiert ist, werden alle Benutzerdaten in der Sprache gespeichert, in der sie eingegeben wurden. Sie können E-Mails und Vorlagen in anderen Sprachen erstellen, aber Daten wie Planungsinformationen sind derzeit nur auf Englisch verfügbar.
+
+Wenn Sie Entwickler sind, der an dem Erstellen länder- oder regionsspezifischer Anpassungen interessiert ist, oder an der Erstellung einer Lösung für ein Land oder eine Region, die derzeit nicht von Microsoft unterstützt wird, finden weitere Informationen unter [Globalisierung](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
 ## <a name="update-policy"></a>Updaterichtlinie
 
 Microsoft Dynamics 365 for Talent wird als Cloud-Angebot gewartet. Aktualisierungen von Dynamics 365 for Talent sind fortlaufend und werden automatisch von Microsoft angewendet.
 
-Aktualisierungen werden auf einen normalen Rhythmus freigegeben, Aktualisierungen erfolgen in allen Umgebungen.  Dynamics 365 for Talent wird entsprechend dem [Microsoft Support Lifecycle Richtlinie](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecyle") unterstützt, die einen konsistenten und voraussehbaren Leitfaden für die Produktverfügbarkeit bieten.
+Aktualisierungen werden in regelmäßigen Abständen veröffentlicht und erfolgen in allen Umgebungen. Dynamics 365 for Talent wird entsprechend dem [Microsoft Support Lifecycle Richtlinie](https://support.microsoft.com/en-us/gp/lifecycle#gp/OSSLpolicy "Microsoft Support Lifecyle") unterstützt, die einen konsistenten und voraussehbaren Leitfaden für die Produktverfügbarkeit bieten.
