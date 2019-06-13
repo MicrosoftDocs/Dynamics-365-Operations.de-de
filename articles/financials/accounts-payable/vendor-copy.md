@@ -1,67 +1,192 @@
----
-title: Kreditoren unter Verwendung gemeinsamer Nummernkreise kopieren
-description: In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Kreditor unter Beibehaltung der gleichen Kreditorenkennung zu einer anderen juristischen Person zu kopieren.
-author: mikefalkner
-manager: aolson
-ms.date: 08/24/2018
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: VendTable
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Global
-ms.author: mikefalkner
-ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 14e361b38f417ee7017981f564eac1b12c93b9f5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508875"
----
-# <a name="copy-vendors-by-using-shared-number-sequences"></a><span data-ttu-id="5ed41-103">Kreditoren unter Verwendung gemeinsamer Nummernkreise kopieren</span><span class="sxs-lookup"><span data-stu-id="5ed41-103">Copy vendors by using shared number sequences</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="5ed41-104">Sie können gemeinsame Nummernkreise verwenden, um Kreditorenkennungen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="5ed41-104">You can use shared number sequences to assign vendor IDs.</span></span> <span data-ttu-id="5ed41-105">Über gemeinsame Nummernkreise können Sie auch Kreditoren von einer juristischen Person zu einer anderen juristischen Person kopieren, während jedoch die gleiche Kreditorenkennung in beiden juristischen Personen verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="5ed41-105">Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.</span></span>
-
-## <a name="setup"></a><span data-ttu-id="5ed41-106">Setup</span><span class="sxs-lookup"><span data-stu-id="5ed41-106">Setup</span></span>
-
-<span data-ttu-id="5ed41-107">Die Funktion wird aktiviert, wenn Sie einen gemeinsamen Nummernkreis verwenden, um Kreditorenkennungen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="5ed41-107">The feature is activated when you use a shared number sequence to assign vendor IDs.</span></span> <span data-ttu-id="5ed41-108">Sie müssen den gleichen Nummernkreis bei jeder juristischen Person verwenden, in die Sie einen Kreditoren kopieren möchten.</span><span class="sxs-lookup"><span data-stu-id="5ed41-108">You must use the same number sequence in every legal entity that you want to copy a vendor to.</span></span> <span data-ttu-id="5ed41-109">Sie ändern den Kreditorennummernkreis auf der Seite **Kreditorenparameter** für jede juristische Person.</span><span class="sxs-lookup"><span data-stu-id="5ed41-109">You change the vendor number sequence on the **Accounts payable parameters** page for each legal entity.</span></span> <span data-ttu-id="5ed41-110">Wählen Sie **Kreditorenkonten** \> **Setup** \> **Kreditorenkontenparameter** und dann die Registerkarte **Nummernkreise** aus.</span><span class="sxs-lookup"><span data-stu-id="5ed41-110">Select **Accounts payable** \> **Setup** \> **Accounts payable parameters**, and then select the **Number sequences** tab.</span></span>
-
-<span data-ttu-id="5ed41-111">Sie können Kreditorennummernkreise auch für jede Kreditorengruppe einrichten.</span><span class="sxs-lookup"><span data-stu-id="5ed41-111">You can also set up vendor number sequences for each vendor group.</span></span> <span data-ttu-id="5ed41-112">Diese Nummernkreise müssen ebenfalls freigegeben sein.</span><span class="sxs-lookup"><span data-stu-id="5ed41-112">These number sequences must also be shared.</span></span> <span data-ttu-id="5ed41-113">Der Nummernkreis für eine Kreditorengruppe wird zuerst verwendet.</span><span class="sxs-lookup"><span data-stu-id="5ed41-113">The number sequence for a vendor group is used first.</span></span> <span data-ttu-id="5ed41-114">Wenn für eine Kreditorengruppe kein Nummernkreis angegeben ist, wird der Nummernkreis verwendet, der auf der Seite **Kreditorenparameter** angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="5ed41-114">If no number sequence is specified for a vendor group, the number sequence that is specified on the **Accounts payable parameters** page is used.</span></span>
-
-<span data-ttu-id="5ed41-115">Sie können Kreditoren auch zwischen juristischen Personen kopieren, wenn Sie manuelle Kreditorenkennungen verwenden.</span><span class="sxs-lookup"><span data-stu-id="5ed41-115">You can also copy vendors between legal entities if you use manual vendor IDs.</span></span> <span data-ttu-id="5ed41-116">Wenn Sie jedoch versuchen, einen Kreditor in eine juristische Person zu kopieren, in der die Kreditorenkennung bereits vorhanden ist, wird der Kopiervorgang nicht gestartet.</span><span class="sxs-lookup"><span data-stu-id="5ed41-116">However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process won't be started.</span></span>
-
-## <a name="copy-a-vendor"></a><span data-ttu-id="5ed41-117">Kopieren von Kreditoren</span><span class="sxs-lookup"><span data-stu-id="5ed41-117">Copy a vendor</span></span>
-
-<span data-ttu-id="5ed41-118">Um einen Kreditor zu kopieren, wählen Sie auf der Listenseite **Alle Kreditoren** die Option **Neu** aus. Die Seite **Alle Kreditoren, neuer Datensatz** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-118">To copy a vendor, select **New** on the **All vendors** list page to open the **All vendors, new record** page.</span></span> <span data-ttu-id="5ed41-119">Beachten Sie, dass die neue Kreditorenkennung nicht sofort zugewiesen wird.</span><span class="sxs-lookup"><span data-stu-id="5ed41-119">Notice that the new vendor ID isn't assigned immediately.</span></span> <span data-ttu-id="5ed41-120">Dieses Verhalten unterscheidet sich vom Verhalten der Vorgängerversionen von Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="5ed41-120">This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="5ed41-121">Da Sie die Kreditorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="5ed41-121">Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use.</span></span> <span data-ttu-id="5ed41-122">Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Kreditor zu erstellen oder einen Kreditor zu kopieren.</span><span class="sxs-lookup"><span data-stu-id="5ed41-122">Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor.</span></span> <span data-ttu-id="5ed41-123">Daher wird die Kreditorkennung erst zugewiesen, wenn Sie unten auf der Seite **Speichern** auswählen.</span><span class="sxs-lookup"><span data-stu-id="5ed41-123">Therefore, the vendor ID isn't assigned until you select **Save** at the bottom of the page.</span></span>
-
-<span data-ttu-id="5ed41-124">Wenn Sie einen neuen Kreditor erstellen, können Sie alle Felder weiter füllen, wie Sie es gewohnt sind.</span><span class="sxs-lookup"><span data-stu-id="5ed41-124">If you're creating a new vendor, you can continue to fill in all the fields as you usually do.</span></span> <span data-ttu-id="5ed41-125">Wenn Sie fertig sind und **Speichern** auswählen, werden Sie feststellen, dass die Kreditorenkennung automatisch zugewiesen wurde.</span><span class="sxs-lookup"><span data-stu-id="5ed41-125">When you've finished, and you select **Save**, you will see that the vendor ID was assigned automatically.</span></span> <span data-ttu-id="5ed41-126">Bei manuellen Nummernkreisen sehen Sie, dass Ihre manuelle Kreditorenkennung verwendet wurde.</span><span class="sxs-lookup"><span data-stu-id="5ed41-126">Alternatively, for manual number sequences, you will see that your manual vendor ID was used.</span></span>
-
-<span data-ttu-id="5ed41-127">Um einen Kreditor zu kopieren, geben Sie im Feld **Name** mindestens ein Zeichen für den Kreditor ein, den Sie suchen.</span><span class="sxs-lookup"><span data-stu-id="5ed41-127">To copy a vendor, in the **Name** field, enter one or more characters that represent the vendor that you're looking for.</span></span> <span data-ttu-id="5ed41-128">In einem Suchdialogfeld wird eine Liste der Parteien angezeigt, die möglicherweise den Kreditor darstellen, den Sie suchen.</span><span class="sxs-lookup"><span data-stu-id="5ed41-128">A search dialog box shows a list of parties that might represent the vendor that you're looking for.</span></span> <span data-ttu-id="5ed41-129">Wenn Sie eine der Parteien auswählen, werden auf der rechten Seite des Dialogfelds zusätzliche Informationen angezeigt:</span><span class="sxs-lookup"><span data-stu-id="5ed41-129">When you select one of the parties, additional information appears on the right side of the dialog box:</span></span>
-
-- <span data-ttu-id="5ed41-130">Die Registerkarte **Allgemein** enthält die Telefonnummer und Adresse der Partei.</span><span class="sxs-lookup"><span data-stu-id="5ed41-130">The **General** tab shows the party's phone number and address.</span></span>
-- <span data-ttu-id="5ed41-131">Die Registerkarte **Rollen** enthält die Rollen, die die ausgewählte Partei haben kann, sowie die juristische Person, in der sie die jeweilige Rolle innehat.</span><span class="sxs-lookup"><span data-stu-id="5ed41-131">The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.</span></span>
-- <span data-ttu-id="5ed41-132">Die Registerkarte **Steuerregistrierungskennung** zeigt die Steuerregistrierungskennungen an, der die Partei zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="5ed41-132">**Tax registration ID** tab shows the tax registration IDs that are assigned to the party.</span></span>
-
-<span data-ttu-id="5ed41-133">Sie können eine Partei nur kopieren, wenn sie eine Kreditorenrolle hat und wenn sie diese Rolle in einer juristischen Person innehat, die nicht die aktuelle juristische Person ist.</span><span class="sxs-lookup"><span data-stu-id="5ed41-133">You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="5ed41-134">Wenn Sie eine Partei finden, die diese Kriterien erfüllt, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="5ed41-134">When you find a party that meets these criteria, follow these steps.</span></span>
-
-1. <span data-ttu-id="5ed41-135">Die Option **Kreditor kopieren** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-135">A **Copy vendor** option appears.</span></span> <span data-ttu-id="5ed41-136">Standardmäßig ist diese Option auf **Nein** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-136">By default, this option is set to **No**.</span></span> <span data-ttu-id="5ed41-137">Um den Kreditor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="5ed41-137">To copy the vendor to the current legal entity, set the option to **Yes**.</span></span> 
-2. <span data-ttu-id="5ed41-138">Das Feld **Juristische Person** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-138">A **Legal entity** field appears.</span></span> <span data-ttu-id="5ed41-139">Wählen Sie die juristische Person aus, von der der Kreditor kopiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="5ed41-139">Select the legal entity to copy the vendor from.</span></span> <span data-ttu-id="5ed41-140">Wenn der Kreditor in nur einer juristischen Person vorhanden ist, wird das Feld standardmäßig auf diese juristische Person festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-140">If the vendor exists in only one legal entity, the field is set to that legal entity by default.</span></span>
-3. <span data-ttu-id="5ed41-141">Wählen Sie **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="5ed41-141">Select **Select**.</span></span> <span data-ttu-id="5ed41-142">Der neue Kreditor wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-142">The new vendor is created.</span></span>
-
-## <a name="validation"></a><span data-ttu-id="5ed41-143">Überprüfung</span><span class="sxs-lookup"><span data-stu-id="5ed41-143">Validation</span></span>
-
-<span data-ttu-id="5ed41-144">Wenn Sie einen Kreditor kopieren, versucht das System, die neuen Kreditordaten zu speichern.</span><span class="sxs-lookup"><span data-stu-id="5ed41-144">When you copy a vendor, the system tries to save the new vendor information.</span></span> <span data-ttu-id="5ed41-145">Es werden Überprüfungen durchgeführt, um sicherzustellen, dass die kopierten Daten korrekt sind.</span><span class="sxs-lookup"><span data-stu-id="5ed41-145">Validations are run to verify that the data that was copied is good.</span></span> <span data-ttu-id="5ed41-146">Sie erhalten für jede Prüfung, die fehlschlägt, eine Fehlermeldung.</span><span class="sxs-lookup"><span data-stu-id="5ed41-146">You receive an error message for every validation that fails.</span></span> <span data-ttu-id="5ed41-147">In den Fehlermeldungen wird erklärt, welche Informationen aktualisiert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="5ed41-147">The error messages explain what information must be updated.</span></span> <span data-ttu-id="5ed41-148">Die Kopie des Kreditors kann erst gespeichert werden, wenn alle Fehler korrigiert wurden.</span><span class="sxs-lookup"><span data-stu-id="5ed41-148">The copy of the vendor can't be saved until you fix all the validation errors.</span></span>
-
-## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a><span data-ttu-id="5ed41-149">Kreditor unter Verwendung der Umsatzsteuernummer-Suchfunktion kopieren</span><span class="sxs-lookup"><span data-stu-id="5ed41-149">Copy a vendor by using the Tax exempt number search feature</span></span>
-
-<span data-ttu-id="5ed41-150">Sie können Kreditoren auch kopieren, indem Sie die Suchfunktion der Umsatzsteuernummer verwenden, die sich in der Gruppe **Registrierung** auf der Registerkarte **Kreditor** im Aktivitätsbereich der Seite **Alle Kreditoren** befindet.</span><span class="sxs-lookup"><span data-stu-id="5ed41-150">You can also copy vendors by using the Tax exempt number search feature that is in the **Registration** group on the **Vendor** tab on the Action Pane of the **All vendors** page.</span></span> <span data-ttu-id="5ed41-151">Das Dialogfeld mit der **Umsatzsteuernummernsuche** zeigt die Umsatzsteuernummern, die Kreditorenkennung, den Kreditorennamen und die juristische Person an, in der die Umsatzsteuernummer verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="5ed41-151">The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used.</span></span> <span data-ttu-id="5ed41-152">Sie können einen Kreditoren nur kopieren, wenn er sich in einer juristischen Person befindet, die nicht die aktuelle juristische Person ist.</span><span class="sxs-lookup"><span data-stu-id="5ed41-152">You can copy a vendor only if it's in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="5ed41-153">Nachdem Sie einen Kreditor ausgewählt haben, der dieses Kriterium erfüllt, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="5ed41-153">After you select a vendor that meets this criterion, follow these steps.</span></span>
-
-1. <span data-ttu-id="5ed41-154">Die Option **Kreditor kopieren** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-154">A **Copy vendor** option appears.</span></span> <span data-ttu-id="5ed41-155">Standardmäßig ist diese Option auf **Nein** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-155">By default, this option is set to **No**.</span></span> <span data-ttu-id="5ed41-156">Um den Kreditor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="5ed41-156">To copy the vendor to the current legal entity, set the option to **Yes**.</span></span>
-2. <span data-ttu-id="5ed41-157">Wählen Sie **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="5ed41-157">Select **Select**.</span></span> <span data-ttu-id="5ed41-158">Der neue Kreditor wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="5ed41-158">The new vendor is created.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="vendor-copy.md" target-language="de-DE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>vendor-copy.deb9a6.0c492cd76fc9742aa4cff8fe588541cb2c6f1863.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>0c492cd76fc9742aa4cff8fe588541cb2c6f1863</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\accounts-payable\vendor-copy.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Copy vendors by using shared number sequences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditoren unter Verwendung gemeinsamer Nummernkreise kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to use shared number sequences to copy a vendor to another legal entity but keep the same vendor ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Kreditor unter Beibehaltung der gleichen Kreditorenkennung zu einer anderen juristischen Person zu kopieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Copy vendors by using shared number sequences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditoren unter Verwendung gemeinsamer Nummernkreise kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>You can use shared number sequences to assign vendor IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können gemeinsame Nummernkreise verwenden, um Kreditorenkennungen zuzuweisen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Über gemeinsame Nummernkreise können Sie auch Kreditoren von einer juristischen Person zu einer anderen juristischen Person kopieren, während jedoch die gleiche Kreditorenkennung in beiden juristischen Personen verwendet wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Setup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The feature is activated when you use a shared number sequence to assign vendor IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Funktion wird aktiviert, wenn Sie einen gemeinsamen Nummernkreis verwenden, um Kreditorenkennungen zuzuweisen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>You must use the same number sequence in every legal entity that you want to copy a vendor to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie müssen den gleichen Nummernkreis bei jeder juristischen Person verwenden, in die Sie einen Kreditoren kopieren möchten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>You change the vendor number sequence on the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page for each legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie ändern den Kreditorennummernkreis auf der Seite <bpt id="p1">**</bpt>Kreditorenparameter<ept id="p1">**</ept> für jede juristische Person.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Select <bpt id="p1">**</bpt>Accounts payable<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Accounts payable parameters<ept id="p3">**</ept>, and then select the <bpt id="p4">**</bpt>Number sequences<ept id="p4">**</ept> tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Kreditorenkonten<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Kreditorenkontenparameter<ept id="p3">**</ept> und dann die Registerkarte <bpt id="p4">**</bpt>Nummernkreise<ept id="p4">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>You can also set up vendor number sequences for each vendor group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Kreditorennummernkreise auch für jede Kreditorengruppe einrichten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>These number sequences must also be shared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Nummernkreise müssen ebenfalls freigegeben sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The number sequence for a vendor group is used first.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Nummernkreis für eine Kreditorengruppe wird zuerst verwendet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>If no number sequence is specified for a vendor group, the number sequence that is specified on the <bpt id="p1">**</bpt>Accounts payable parameters<ept id="p1">**</ept> page is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn für eine Kreditorengruppe kein Nummernkreis angegeben ist, wird der Nummernkreis verwendet, der auf der Seite <bpt id="p1">**</bpt>Kreditorenparameter<ept id="p1">**</ept> angegeben ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>You can also copy vendors between legal entities if you use manual vendor IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Kreditoren auch zwischen juristischen Personen kopieren, wenn Sie manuelle Kreditorenkennungen verwenden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>However, if you try to copy a vendor to a legal entity where the vendor ID already exists, the copy process won't be started.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie jedoch versuchen, einen Kreditor in eine juristische Person zu kopieren, in der die Kreditorenkennung bereits vorhanden ist, wird der Kopiervorgang nicht gestartet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Copy a vendor</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kopieren von Kreditoren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>To copy a vendor, select <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>All vendors<ept id="p2">**</ept> list page to open the <bpt id="p3">**</bpt>All vendors, new record<ept id="p3">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um einen Kreditor zu kopieren, wählen Sie auf der Listenseite <bpt id="p3">**</bpt>Alle Kreditoren<ept id="p3">**</ept> die Option <bpt id="p1">**</bpt>Neu<ept id="p1">**</ept> aus. Die Seite <bpt id="p2">**</bpt>Alle Kreditoren, neuer Datensatz<ept id="p2">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Notice that the new vendor ID isn't assigned immediately.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beachten Sie, dass die neue Kreditorenkennung nicht sofort zugewiesen wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieses Verhalten unterscheidet sich vom Verhalten der Vorgängerversionen von Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Because you haven't yet selected the vendor group, the system can't determine the correct number sequence to use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Da Sie die Kreditorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Additionally, it can't determine whether you're trying to create a new vendor or copy a vendor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Kreditor zu erstellen oder einen Kreditor zu kopieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Therefore, the vendor ID isn't assigned until you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> at the bottom of the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daher wird die Kreditorkennung erst zugewiesen, wenn Sie unten auf der Seite <bpt id="p1">**</bpt>Speichern<ept id="p1">**</ept> auswählen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>If you're creating a new vendor, you can continue to fill in all the fields as you usually do.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie einen neuen Kreditor erstellen, können Sie alle Felder weiter füllen, wie Sie es gewohnt sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>When you've finished, and you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, you will see that the vendor ID was assigned automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie fertig sind und <bpt id="p1">**</bpt>Speichern<ept id="p1">**</ept> auswählen, werden Sie feststellen, dass die Kreditorenkennung automatisch zugewiesen wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Alternatively, for manual number sequences, you will see that your manual vendor ID was used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bei manuellen Nummernkreisen sehen Sie, dass Ihre manuelle Kreditorenkennung verwendet wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>To copy a vendor, in the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter one or more characters that represent the vendor that you're looking for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um einen Kreditor zu kopieren, geben Sie im Feld <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> mindestens ein Zeichen für den Kreditor ein, den Sie suchen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>A search dialog box shows a list of parties that might represent the vendor that you're looking for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In einem Suchdialogfeld wird eine Liste der Parteien angezeigt, die möglicherweise den Kreditor darstellen, den Sie suchen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>When you select one of the parties, additional information appears on the right side of the dialog box:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie eine der Parteien auswählen, werden auf der rechten Seite des Dialogfelds zusätzliche Informationen angezeigt:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab shows the party's phone number and address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Registerkarte <bpt id="p1">**</bpt>Allgemein<ept id="p1">**</ept> enthält die Telefonnummer und Adresse der Partei.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The <bpt id="p1">**</bpt>Roles<ept id="p1">**</ept> tab shows the roles that the selected party can have and the legal entity where it has each role.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Registerkarte <bpt id="p1">**</bpt>Rollen<ept id="p1">**</ept> enthält die Rollen, die die ausgewählte Partei haben kann, sowie die juristische Person, in der sie die jeweilige Rolle innehat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">**</bpt>Tax registration ID<ept id="p1">**</ept> tab shows the tax registration IDs that are assigned to the party.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Registerkarte <bpt id="p1">**</bpt>Steuerregistrierungskennung<ept id="p1">**</ept> zeigt die Steuerregistrierungskennungen an, der die Partei zugewiesen sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>You can copy a party only if it has a vendor role, and if it has that role in a legal entity that isn't the current legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können eine Partei nur kopieren, wenn sie eine Kreditorenrolle hat und wenn sie diese Rolle in einer juristischen Person innehat, die nicht die aktuelle juristische Person ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>When you find a party that meets these criteria, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie eine Partei finden, die diese Kriterien erfüllt, führen Sie die folgenden Schritte aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>A <bpt id="p1">**</bpt>Copy vendor<ept id="p1">**</ept> option appears.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Option <bpt id="p1">**</bpt>Kreditor kopieren<ept id="p1">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardmäßig ist diese Option auf <bpt id="p1">**</bpt>Nein<ept id="p1">**</ept> festgelegt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>To copy the vendor to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um den Kreditor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> fest.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>A <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> field appears.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Feld <bpt id="p1">**</bpt>Juristische Person<ept id="p1">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Select the legal entity to copy the vendor from.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie die juristische Person aus, von der der Kreditor kopiert werden soll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>If the vendor exists in only one legal entity, the field is set to that legal entity by default.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn der Kreditor in nur einer juristischen Person vorhanden ist, wird das Feld standardmäßig auf diese juristische Person festgelegt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Auswählen<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>The new vendor is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der neue Kreditor wird erstellt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Validation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>When you copy a vendor, the system tries to save the new vendor information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie einen Kreditor kopieren, versucht das System, die neuen Kreditordaten zu speichern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Validations are run to verify that the data that was copied is good.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es werden Überprüfungen durchgeführt, um sicherzustellen, dass die kopierten Daten korrekt sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>You receive an error message for every validation that fails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie erhalten für jede Prüfung, die fehlschlägt, eine Fehlermeldung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>The error messages explain what information must be updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den Fehlermeldungen wird erklärt, welche Informationen aktualisiert werden müssen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The copy of the vendor can't be saved until you fix all the validation errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Kopie des Kreditors kann erst gespeichert werden, wenn alle Fehler korrigiert wurden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Copy a vendor by using the Tax exempt number search feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditor unter Verwendung der Umsatzsteuernummer-Suchfunktion kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>You can also copy vendors by using the Tax exempt number search feature that is in the <bpt id="p1">**</bpt>Registration<ept id="p1">**</ept> group on the <bpt id="p2">**</bpt>Vendor<ept id="p2">**</ept> tab on the Action Pane of the <bpt id="p3">**</bpt>All vendors<ept id="p3">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Kreditoren auch kopieren, indem Sie die Suchfunktion der Umsatzsteuernummer verwenden, die sich in der Gruppe <bpt id="p1">**</bpt>Registrierung<ept id="p1">**</ept> auf der Registerkarte <bpt id="p2">**</bpt>Kreditor<ept id="p2">**</ept> im Aktivitätsbereich der Seite <bpt id="p3">**</bpt>Alle Kreditoren<ept id="p3">**</ept> befindet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The <bpt id="p1">**</bpt>Tax exempt number search<ept id="p1">**</ept> dialog box that appears shows tax exempt numbers, the vendor ID, the vendor name, and the legal entity where the tax exempt ID is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Dialogfeld mit der <bpt id="p1">**</bpt>Umsatzsteuernummernsuche<ept id="p1">**</ept> zeigt die Umsatzsteuernummern, die Kreditorenkennung, den Kreditorennamen und die juristische Person an, in der die Umsatzsteuernummer verwendet wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>You can copy a vendor only if it's in a legal entity that isn't the current legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können einen Kreditoren nur kopieren, wenn er sich in einer juristischen Person befindet, die nicht die aktuelle juristische Person ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>After you select a vendor that meets this criterion, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nachdem Sie einen Kreditor ausgewählt haben, der dieses Kriterium erfüllt, führen Sie die folgenden Schritte aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>A <bpt id="p1">**</bpt>Copy vendor<ept id="p1">**</ept> option appears.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Option <bpt id="p1">**</bpt>Kreditor kopieren<ept id="p1">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardmäßig ist diese Option auf <bpt id="p1">**</bpt>Nein<ept id="p1">**</ept> festgelegt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>To copy the vendor to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um den Kreditor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> fest.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Auswählen<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The new vendor is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der neue Kreditor wird erstellt.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

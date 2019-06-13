@@ -1,67 +1,192 @@
----
-title: Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren
-description: In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Debitor unter Beibehaltung der gleichen Debitorkennung zu einer anderen juristischen Person zu kopieren.
-author: mikefalkner
-manager: aolson
-ms.date: 08/31/2018
-ms.topic: index-page
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: CustTable
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Global
-ms.author: mikefalkner
-ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a92110cdbe58e2dbb913596ba08780ac3a6b50a7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507054"
----
-# <a name="copy-customers-by-using-shared-number-sequences"></a><span data-ttu-id="f74cc-103">Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren</span><span class="sxs-lookup"><span data-stu-id="f74cc-103">Copy customers by using shared number sequences</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="f74cc-104">Sie können gemeinsame Nummernkreise verwenden, um Debitorkennungen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-104">You can use shared number sequences to assign customer IDs.</span></span> <span data-ttu-id="f74cc-105">Über gemeinsame Nummernkreise können Sie auch Debitoren von einer juristischen Person zu einer anderen juristischen Person kopieren, während jedoch die gleiche Debitorkennung in beiden juristischen Personen verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="f74cc-105">Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.</span></span>
-
-## <a name="setup"></a><span data-ttu-id="f74cc-106">Setup</span><span class="sxs-lookup"><span data-stu-id="f74cc-106">Setup</span></span>
-
-<span data-ttu-id="f74cc-107">Die Funktion wird aktiviert, wenn Sie einen gemeinsamen Nummernkreis verwenden, um Debitorkennungen zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-107">The feature is activated when you use a shared number sequence to assign customer IDs.</span></span> <span data-ttu-id="f74cc-108">Sie müssen den gleichen Nummernkreis bei jeder juristischen Person verwenden, in die Sie einen Debitor kopieren möchten.</span><span class="sxs-lookup"><span data-stu-id="f74cc-108">You must use the same number sequence in every legal entity that you want to copy a customer to.</span></span> <span data-ttu-id="f74cc-109">Sie ändern den Debitorennummernkreis auf der Seite **Debitorenparameter** für jede juristische Person.</span><span class="sxs-lookup"><span data-stu-id="f74cc-109">You change the customer number sequence on the **Accounts receivable parameters** page for each legal entity.</span></span> <span data-ttu-id="f74cc-110">Wählen Sie **Debitoren** \> **Parameter** und dann die Registerkarte **Nummernkreise** aus.</span><span class="sxs-lookup"><span data-stu-id="f74cc-110">Select **Accounts receivable** \> **Parameters**, and then select the **Number sequences** tab.</span></span>
-
-<span data-ttu-id="f74cc-111">Sie können Debitorennummernkreise für jede Debitorengruppe einrichten.</span><span class="sxs-lookup"><span data-stu-id="f74cc-111">You can also set up customer number sequences for each customer group.</span></span> <span data-ttu-id="f74cc-112">Diese Nummernkreise müssen ebenfalls freigegeben sein.</span><span class="sxs-lookup"><span data-stu-id="f74cc-112">These number sequences must also be shared.</span></span> <span data-ttu-id="f74cc-113">Der Nummernkreis für eine Debitorengruppe wird zuerst verwendet.</span><span class="sxs-lookup"><span data-stu-id="f74cc-113">The number sequence for a customer group is used first.</span></span> <span data-ttu-id="f74cc-114">Wenn für eine Debitorengruppe kein Nummernkreis angegeben ist, wird der Nummernkreis verwendet, der auf der Seite **Debitorenparameter** angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="f74cc-114">If no number sequence is specified for a customer group, the number sequence that is specified on the **Accounts receivable parameters** page is used.</span></span>
-
-<span data-ttu-id="f74cc-115">Sie können Debitoren auch zwischen juristischen Personen kopieren, wenn Sie manuelle Debitorkennungen verwenden.</span><span class="sxs-lookup"><span data-stu-id="f74cc-115">You can also copy customers between legal entities if you use manual customer IDs.</span></span> <span data-ttu-id="f74cc-116">Wenn Sie jedoch versuchen, einen Debitoren zu einer juristischen Person zu kopieren, in der die Debitorkennung bereits vorhanden ist, wird der Kopiervorgang nicht gestartet.</span><span class="sxs-lookup"><span data-stu-id="f74cc-116">However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process won't be started.</span></span>
-
-## <a name="copy-a-customer"></a><span data-ttu-id="f74cc-117">Debitor kopieren</span><span class="sxs-lookup"><span data-stu-id="f74cc-117">Copy a customer</span></span>
-
-<span data-ttu-id="f74cc-118">Um einen Debitoren zu kopieren, wählen Sie **Neu** auf der Listenseite **Alle Debitoren**, um das Dialogfeld **Debitor erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-118">To copy a customer, select **New** on the **All customers** list page to open the **Create customer** dialog box.</span></span> <span data-ttu-id="f74cc-119">Sie sehen, dass die neue Debitorkennung nicht sofort zugewiesen wird.</span><span class="sxs-lookup"><span data-stu-id="f74cc-119">Notice that the new customer ID isn't assigned immediately.</span></span> <span data-ttu-id="f74cc-120">Dieses Verhalten unterscheidet sich vom Verhalten der Vorgängerversionen von Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="f74cc-120">This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="f74cc-121">Da Sie die Debitorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="f74cc-121">Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use.</span></span> <span data-ttu-id="f74cc-122">Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Debitor zu erstellen oder einen Debitor zu kopieren.</span><span class="sxs-lookup"><span data-stu-id="f74cc-122">Additionally, it can't determine whether you're trying to create a new customer or copy a customer.</span></span> <span data-ttu-id="f74cc-123">Daher wird die Debitorkennung erst zugewiesen, wenn Sie unten im Dialogfeld **Speichern** auswählen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-123">Therefore, the customer ID isn't assigned until you select **Save** at the bottom of the dialog box.</span></span>
-
-<span data-ttu-id="f74cc-124">Wenn Sie einen neuen Debitor erstellen, können Sie alle Felder weiter füllen, wie Sie es gewohnt sind.</span><span class="sxs-lookup"><span data-stu-id="f74cc-124">If you're creating a new customer, you can continue to fill in all the fields as you usually do.</span></span> <span data-ttu-id="f74cc-125">Wenn Sie fertig sind und **Speichern** auswählen, werden Sie feststellen, dass die Debitorkennung automatisch zugewiesen wurde.</span><span class="sxs-lookup"><span data-stu-id="f74cc-125">When you've finished, and you select **Save**, you will see that the customer ID was assigned automatically.</span></span> <span data-ttu-id="f74cc-126">Bei manuellen Nummernkreisen sehen Sie, dass Ihre manuelle Debitorkennung verwendet wurde.</span><span class="sxs-lookup"><span data-stu-id="f74cc-126">Alternatively, for manual number sequences, you will see that your manual customer ID was used.</span></span>
-
-<span data-ttu-id="f74cc-127">Um einen Debitor zu kopieren, geben Sie im Feld **Name** mindestens ein Zeichen für den Debitor ein, den Sie suchen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-127">To copy a customer, in the **Name** field, enter one or more characters that represent the customer that you're looking for.</span></span> <span data-ttu-id="f74cc-128">In einem Suchdialogfeld wird eine Liste der Parteien angezeigt, die möglicherweise den Debitor darstellen, den Sie suchen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-128">A search dialog box shows a list of parties that might represent the customer that you're looking for.</span></span> <span data-ttu-id="f74cc-129">Wenn Sie eine der Parteien auswählen, werden auf der rechten Seite des Dialogfelds zusätzliche Informationen angezeigt:</span><span class="sxs-lookup"><span data-stu-id="f74cc-129">When you select one of the parties, additional information appears on the right side of the dialog box:</span></span>
-
-- <span data-ttu-id="f74cc-130">Die Registerkarte **Allgemein** enthält die Telefonnummer und Adresse der Partei.</span><span class="sxs-lookup"><span data-stu-id="f74cc-130">The **General** tab shows the party's phone number and address.</span></span>
-- <span data-ttu-id="f74cc-131">Die Registerkarte **Rollen** enthält die Rollen, die die ausgewählte Partei haben kann, sowie die juristische Person, in der sie die jeweilige Rolle innehat.</span><span class="sxs-lookup"><span data-stu-id="f74cc-131">The **Roles** tab shows the roles that the selected party can have and the legal entity where it has each role.</span></span>
-- <span data-ttu-id="f74cc-132">Die Registerkarte **Steuerregistrierungskennung** zeigt die Steuerregistrierungskennungen an, der die Partei zugewiesen sind.</span><span class="sxs-lookup"><span data-stu-id="f74cc-132">**Tax registration ID** tab shows the tax registration IDs that are assigned to the party.</span></span>
-
-<span data-ttu-id="f74cc-133">Sie können eine Partei nur kopieren, wenn sie eine Debitorenrolle hat und wenn sie diese Rolle in einer juristischen Person innehat, die nicht die aktuelle juristische Person ist.</span><span class="sxs-lookup"><span data-stu-id="f74cc-133">You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="f74cc-134">Wenn Sie eine Partei finden, die diese Kriterien erfüllt, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="f74cc-134">When you find a party that meets these criteria, follow these steps.</span></span>
-
-1. <span data-ttu-id="f74cc-135">Die Option **Debitor kopieren** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-135">A **Copy customer** option appears.</span></span> <span data-ttu-id="f74cc-136">Standardmäßig ist diese Option auf **Nein** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-136">By default, this option is set to **No**.</span></span> <span data-ttu-id="f74cc-137">Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="f74cc-137">To copy the customer to the current legal entity, set the option to **Yes**.</span></span> 
-2. <span data-ttu-id="f74cc-138">Das Feld **Juristische Person** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-138">A **Legal entity** field appears.</span></span> <span data-ttu-id="f74cc-139">Wählen Sie die juristische Person aus, von der der Debitor kopiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="f74cc-139">Select the legal entity to copy the customer from.</span></span> <span data-ttu-id="f74cc-140">Wenn der Debitor in nur einer juristischen Person vorhanden ist, wird das Feld standardmäßig auf diese juristische Person festgelegt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-140">If the customer exists in only one legal entity, the field is set to that legal entity by default.</span></span>
-3. <span data-ttu-id="f74cc-141">Wählen Sie **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="f74cc-141">Select **Select**.</span></span> <span data-ttu-id="f74cc-142">Der neue Debitor wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-142">The new customer is created.</span></span>
-
-## <a name="validation"></a><span data-ttu-id="f74cc-143">Überprüfung</span><span class="sxs-lookup"><span data-stu-id="f74cc-143">Validation</span></span>
-
-<span data-ttu-id="f74cc-144">Wenn Sie einen Debitor kopieren, versucht das System, die neuen Debitordaten zu speichern.</span><span class="sxs-lookup"><span data-stu-id="f74cc-144">When you copy a customer, the system tries to save the new customer information.</span></span> <span data-ttu-id="f74cc-145">Es werden Überprüfungen durchgeführt, um sicherzustellen, dass die kopierten Daten korrekt sind.</span><span class="sxs-lookup"><span data-stu-id="f74cc-145">Validations are run to verify that the data that was copied is good.</span></span> <span data-ttu-id="f74cc-146">Sie erhalten für jede Prüfung, die fehlschlägt, eine Fehlermeldung.</span><span class="sxs-lookup"><span data-stu-id="f74cc-146">You receive an error message for every validation that fails.</span></span> <span data-ttu-id="f74cc-147">In den Fehlermeldungen wird erklärt, welche Informationen aktualisiert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="f74cc-147">The error messages explain what information must be updated.</span></span> <span data-ttu-id="f74cc-148">Die Kopie des Debitors kann erst gespeichert werden, wenn alle Fehler korrigiert wurden.</span><span class="sxs-lookup"><span data-stu-id="f74cc-148">The copy of the customer can't be saved until you fix all the validation errors.</span></span>
-
-## <a name="copy-a-customer-by-using-tax-exempt-number-search-feature"></a><span data-ttu-id="f74cc-149">Debitor unter Verwendung der Umsatzsteuernummer-Suchfunktion kopieren</span><span class="sxs-lookup"><span data-stu-id="f74cc-149">Copy a customer by using tax exempt number search feature</span></span>
-
-<span data-ttu-id="f74cc-150">Sie können Debitoren auch kopieren, indem Sie die Umsatzsteuernummer-Suchfunktion verwenden, die sich in der Gruppe **Registrierung** auf der Registerkarte **Debitor** im Aktivitätsbereich der Seite **Alle Debitoren** befindet.</span><span class="sxs-lookup"><span data-stu-id="f74cc-150">You can also copy customers by using the Tax exempt number search feature that is in the **Registration** group on the **Customer** tab on the Action Pane of the **All customers** page.</span></span> <span data-ttu-id="f74cc-151">Das Dialogfeld mit der **Umsatzsteuernummernsuche** zeigt die Umsatzsteuernummern, die Debitorkennung, den Debitorennamen und die juristische Person an, in der die Umsatzsteuernummer verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="f74cc-151">The **Tax exempt number search** dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used.</span></span> <span data-ttu-id="f74cc-152">Sie können einen Debitoren nur kopieren, wenn er sich in einer juristischen Person befindet, die nicht die aktuelle juristische Person ist.</span><span class="sxs-lookup"><span data-stu-id="f74cc-152">You can copy a customer only if it's in a legal entity that isn't the current legal entity.</span></span> <span data-ttu-id="f74cc-153">Nachdem Sie einen Debitor ausgewählt haben, der dieses Kriterium erfüllt, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="f74cc-153">After you select a customer that meets this criterion, follow these steps.</span></span>
-
-1. <span data-ttu-id="f74cc-154">Die Option **Debitor kopieren** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-154">A **Copy customer** option appears.</span></span> <span data-ttu-id="f74cc-155">Standardmäßig ist diese Option auf **Nein** festgelegt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-155">By default, this option is set to **No**.</span></span> <span data-ttu-id="f74cc-156">Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="f74cc-156">To copy the customer to the current legal entity, set the option to **Yes**.</span></span> 
-2. <span data-ttu-id="f74cc-157">Wählen Sie **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="f74cc-157">Select **Select**.</span></span> <span data-ttu-id="f74cc-158">Der neue Debitor wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="f74cc-158">The new customer is created.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="copy-customer.md" target-language="de-DE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>copy-customer.99fcbb.7a1e6c6e3a995ad745522d58960e850d72c2ee57.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>7a1e6c6e3a995ad745522d58960e850d72c2ee57</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\accounts-receivable\copy-customer.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Copy customers by using shared number sequences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic explains how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Thema wird erläutert, wie Sie gemeinsame Nummernkreise verwenden, um einen Debitor unter Beibehaltung der gleichen Debitorkennung zu einer anderen juristischen Person zu kopieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Copy customers by using shared number sequences</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>You can use shared number sequences to assign customer IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können gemeinsame Nummernkreise verwenden, um Debitorkennungen zuzuweisen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Shared number sequences also let you copy customers from one legal entity to another legal entity but use the same customer IDs in both legal entities.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Über gemeinsame Nummernkreise können Sie auch Debitoren von einer juristischen Person zu einer anderen juristischen Person kopieren, während jedoch die gleiche Debitorkennung in beiden juristischen Personen verwendet wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Setup</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>The feature is activated when you use a shared number sequence to assign customer IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Funktion wird aktiviert, wenn Sie einen gemeinsamen Nummernkreis verwenden, um Debitorkennungen zuzuweisen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>You must use the same number sequence in every legal entity that you want to copy a customer to.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie müssen den gleichen Nummernkreis bei jeder juristischen Person verwenden, in die Sie einen Debitor kopieren möchten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>You change the customer number sequence on the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page for each legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie ändern den Debitorennummernkreis auf der Seite <bpt id="p1">**</bpt>Debitorenparameter<ept id="p1">**</ept> für jede juristische Person.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Parameters<ept id="p2">**</ept>, and then select the <bpt id="p3">**</bpt>Number sequences<ept id="p3">**</ept> tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Parameter<ept id="p2">**</ept> und dann die Registerkarte <bpt id="p3">**</bpt>Nummernkreise<ept id="p3">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>You can also set up customer number sequences for each customer group.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Debitorennummernkreise für jede Debitorengruppe einrichten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>These number sequences must also be shared.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Nummernkreise müssen ebenfalls freigegeben sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>The number sequence for a customer group is used first.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Nummernkreis für eine Debitorengruppe wird zuerst verwendet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>If no number sequence is specified for a customer group, the number sequence that is specified on the <bpt id="p1">**</bpt>Accounts receivable parameters<ept id="p1">**</ept> page is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn für eine Debitorengruppe kein Nummernkreis angegeben ist, wird der Nummernkreis verwendet, der auf der Seite <bpt id="p1">**</bpt>Debitorenparameter<ept id="p1">**</ept> angegeben ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>You can also copy customers between legal entities if you use manual customer IDs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Debitoren auch zwischen juristischen Personen kopieren, wenn Sie manuelle Debitorkennungen verwenden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>However, if you try to copy a customer to a legal entity where the customer ID already exists, the copy process won't be started.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie jedoch versuchen, einen Debitoren zu einer juristischen Person zu kopieren, in der die Debitorkennung bereits vorhanden ist, wird der Kopiervorgang nicht gestartet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Copy a customer</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitor kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>To copy a customer, select <bpt id="p1">**</bpt>New<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>All customers<ept id="p2">**</ept> list page to open the <bpt id="p3">**</bpt>Create customer<ept id="p3">**</ept> dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um einen Debitoren zu kopieren, wählen Sie <bpt id="p1">**</bpt>Neu<ept id="p1">**</ept> auf der Listenseite <bpt id="p2">**</bpt>Alle Debitoren<ept id="p2">**</ept>, um das Dialogfeld <bpt id="p3">**</bpt>Debitor erstellen<ept id="p3">**</ept> zu öffnen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Notice that the new customer ID isn't assigned immediately.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sehen, dass die neue Debitorkennung nicht sofort zugewiesen wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>This behavior differs from the behavior in previous versions of Microsoft Dynamics 365 for Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieses Verhalten unterscheidet sich vom Verhalten der Vorgängerversionen von Microsoft Dynamics 365 for Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Because you haven't yet selected the customer group, the system can't determine the correct number sequence to use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Da Sie die Debitorengruppe noch nicht ausgewählt haben, kann das System nicht den richtigen Nummernkreis ermitteln, der verwendet werden soll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Additionally, it can't determine whether you're trying to create a new customer or copy a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Darüber hinaus kann es nicht feststellen, ob Sie versuchen, einen neuen Debitor zu erstellen oder einen Debitor zu kopieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Therefore, the customer ID isn't assigned until you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> at the bottom of the dialog box.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daher wird die Debitorkennung erst zugewiesen, wenn Sie unten im Dialogfeld <bpt id="p1">**</bpt>Speichern<ept id="p1">**</ept> auswählen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>If you're creating a new customer, you can continue to fill in all the fields as you usually do.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie einen neuen Debitor erstellen, können Sie alle Felder weiter füllen, wie Sie es gewohnt sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>When you've finished, and you select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>, you will see that the customer ID was assigned automatically.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie fertig sind und <bpt id="p1">**</bpt>Speichern<ept id="p1">**</ept> auswählen, werden Sie feststellen, dass die Debitorkennung automatisch zugewiesen wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Alternatively, for manual number sequences, you will see that your manual customer ID was used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bei manuellen Nummernkreisen sehen Sie, dass Ihre manuelle Debitorkennung verwendet wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>To copy a customer, in the <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> field, enter one or more characters that represent the customer that you're looking for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um einen Debitor zu kopieren, geben Sie im Feld <bpt id="p1">**</bpt>Name<ept id="p1">**</ept> mindestens ein Zeichen für den Debitor ein, den Sie suchen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>A search dialog box shows a list of parties that might represent the customer that you're looking for.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In einem Suchdialogfeld wird eine Liste der Parteien angezeigt, die möglicherweise den Debitor darstellen, den Sie suchen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>When you select one of the parties, additional information appears on the right side of the dialog box:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie eine der Parteien auswählen, werden auf der rechten Seite des Dialogfelds zusätzliche Informationen angezeigt:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>The <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab shows the party's phone number and address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Registerkarte <bpt id="p1">**</bpt>Allgemein<ept id="p1">**</ept> enthält die Telefonnummer und Adresse der Partei.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>The <bpt id="p1">**</bpt>Roles<ept id="p1">**</ept> tab shows the roles that the selected party can have and the legal entity where it has each role.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Registerkarte <bpt id="p1">**</bpt>Rollen<ept id="p1">**</ept> enthält die Rollen, die die ausgewählte Partei haben kann, sowie die juristische Person, in der sie die jeweilige Rolle innehat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source><bpt id="p1">**</bpt>Tax registration ID<ept id="p1">**</ept> tab shows the tax registration IDs that are assigned to the party.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Registerkarte <bpt id="p1">**</bpt>Steuerregistrierungskennung<ept id="p1">**</ept> zeigt die Steuerregistrierungskennungen an, der die Partei zugewiesen sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>You can copy a party only if it has a customer role, and if it has that role in a legal entity that isn't the current legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können eine Partei nur kopieren, wenn sie eine Debitorenrolle hat und wenn sie diese Rolle in einer juristischen Person innehat, die nicht die aktuelle juristische Person ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>When you find a party that meets these criteria, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie eine Partei finden, die diese Kriterien erfüllt, führen Sie die folgenden Schritte aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>A <bpt id="p1">**</bpt>Copy customer<ept id="p1">**</ept> option appears.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Option <bpt id="p1">**</bpt>Debitor kopieren<ept id="p1">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardmäßig ist diese Option auf <bpt id="p1">**</bpt>Nein<ept id="p1">**</ept> festgelegt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>To copy the customer to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> fest.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>A <bpt id="p1">**</bpt>Legal entity<ept id="p1">**</ept> field appears.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Feld <bpt id="p1">**</bpt>Juristische Person<ept id="p1">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>Select the legal entity to copy the customer from.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie die juristische Person aus, von der der Debitor kopiert werden soll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>If the customer exists in only one legal entity, the field is set to that legal entity by default.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn der Debitor in nur einer juristischen Person vorhanden ist, wird das Feld standardmäßig auf diese juristische Person festgelegt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Auswählen<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>The new customer is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der neue Debitor wird erstellt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Validation</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>When you copy a customer, the system tries to save the new customer information.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie einen Debitor kopieren, versucht das System, die neuen Debitordaten zu speichern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Validations are run to verify that the data that was copied is good.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es werden Überprüfungen durchgeführt, um sicherzustellen, dass die kopierten Daten korrekt sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>You receive an error message for every validation that fails.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie erhalten für jede Prüfung, die fehlschlägt, eine Fehlermeldung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>The error messages explain what information must be updated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den Fehlermeldungen wird erklärt, welche Informationen aktualisiert werden müssen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The copy of the customer can't be saved until you fix all the validation errors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Kopie des Debitors kann erst gespeichert werden, wenn alle Fehler korrigiert wurden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Copy a customer by using tax exempt number search feature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitor unter Verwendung der Umsatzsteuernummer-Suchfunktion kopieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>You can also copy customers by using the Tax exempt number search feature that is in the <bpt id="p1">**</bpt>Registration<ept id="p1">**</ept> group on the <bpt id="p2">**</bpt>Customer<ept id="p2">**</ept> tab on the Action Pane of the <bpt id="p3">**</bpt>All customers<ept id="p3">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Debitoren auch kopieren, indem Sie die Umsatzsteuernummer-Suchfunktion verwenden, die sich in der Gruppe <bpt id="p1">**</bpt>Registrierung<ept id="p1">**</ept> auf der Registerkarte <bpt id="p2">**</bpt>Debitor<ept id="p2">**</ept> im Aktivitätsbereich der Seite <bpt id="p3">**</bpt>Alle Debitoren<ept id="p3">**</ept> befindet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>The <bpt id="p1">**</bpt>Tax exempt number search<ept id="p1">**</ept> dialog box that appears shows tax exempt numbers, the customer ID, the customer name, and the legal entity where the tax exempt ID is used.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Dialogfeld mit der <bpt id="p1">**</bpt>Umsatzsteuernummernsuche<ept id="p1">**</ept> zeigt die Umsatzsteuernummern, die Debitorkennung, den Debitorennamen und die juristische Person an, in der die Umsatzsteuernummer verwendet wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>You can copy a customer only if it's in a legal entity that isn't the current legal entity.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können einen Debitoren nur kopieren, wenn er sich in einer juristischen Person befindet, die nicht die aktuelle juristische Person ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>After you select a customer that meets this criterion, follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nachdem Sie einen Debitor ausgewählt haben, der dieses Kriterium erfüllt, führen Sie die folgenden Schritte aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>A <bpt id="p1">**</bpt>Copy customer<ept id="p1">**</ept> option appears.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Option <bpt id="p1">**</bpt>Debitor kopieren<ept id="p1">**</ept> wird angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>By default, this option is set to <bpt id="p1">**</bpt>No<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardmäßig ist diese Option auf <bpt id="p1">**</bpt>Nein<ept id="p1">**</ept> festgelegt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>To copy the customer to the current legal entity, set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um den Debitor zur aktuellen juristischen Person zu kopieren, legen Sie die Option auf <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> fest.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Select <bpt id="p1">**</bpt>Select<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Auswählen<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>The new customer is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der neue Debitor wird erstellt.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
