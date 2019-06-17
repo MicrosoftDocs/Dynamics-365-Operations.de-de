@@ -1,144 +1,330 @@
----
-title: Anforderungen an die Hardwarekalkulation für lokale Umgebungen
-description: Dieses Thema listet die Anforderungen an die Hardwarekalkulation für eine lokale Umgebung auf.
-author: kfend
-manager: AnnBe
-ms.date: 06/23/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
-audience: Application User, Developer, IT Pro
-ms.reviewer: kfend
-ms.search.scope: Core, Operations
-ms.custom: 55651
-ms.assetid: ''
-ms.search.region: Global
-ms.author: chwolf
-ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: e11742c62ea8d10f391ed2d417024f9c80e39591
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561997"
----
-# <a name="hardware-sizing-requirements-for-on-premises-environments"></a><span data-ttu-id="8ceed-103">Anforderungen an die Hardwarekalkulation für lokale Umgebungen</span><span class="sxs-lookup"><span data-stu-id="8ceed-103">Hardware sizing requirements for on-premises environments</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="8ceed-104">Bevor Sie mit der Hardware- und Infrastrukturkalkulation für eine lokale Umgebung beginnen, machen Sie sich mit den [Systemanforderungen](system-requirements.md) und den [Anweisungen für die Einrichtung und Bereitstellung](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) vertraut, um die zugrundeliegende Infrastruktur wirklich zu verstehen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-104">Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the [System requirements](system-requirements.md) and [Setup and deployment instructions](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) to gain a solid understanding off the underlying infrastructure.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8ceed-105">Achten Sie auf die optimalen Leistungsverfahren für die Systemeinrichtung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-105">Pay close attention to the system setup best practices for optimum performance.</span></span>
-
-<span data-ttu-id="8ceed-106">Nachdem Sie die Dokumentation gelesen haben, können Sie damit beginnen, das Volumen Ihrer transaktionalen und parallel arbeitenden Benutzer zu schätzen und Ihre Umgebung basierend auf dem durchschnittlichen Kerndurchsatz auszulegen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-106">After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.</span></span>
-
-## <a name="factors-that-affect-sizing"></a><span data-ttu-id="8ceed-107">Faktoren, die sich auf die Kalkulation auswirken</span><span class="sxs-lookup"><span data-stu-id="8ceed-107">Factors that affect sizing</span></span>
-
-<span data-ttu-id="8ceed-108">Alle in der folgenden Abbildungen gezeigten Faktoren wirken sich auf die Kalkulation aus.</span><span class="sxs-lookup"><span data-stu-id="8ceed-108">All the factors shown in the following illustration contribute to sizing.</span></span> <span data-ttu-id="8ceed-109">Je detailliertere Informationen erfasst werden, desto genauer können Sie die Kalkulation durchführen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-109">The more detailed information that is collected, the more precisely you can determine sizing.</span></span> <span data-ttu-id="8ceed-110">Eine Hardwarekalkulation ohne zugrundeliegende Daten wird sehr wahrscheinlich unpräzise sein.</span><span class="sxs-lookup"><span data-stu-id="8ceed-110">Hardware sizing, without supporting data, is likely to be inaccurate.</span></span> <span data-ttu-id="8ceed-111">Die absolute Mindestanforderung im Hinblick auf die benötigten Daten ist die Spitzentransaktionsleitungslast pro Stunde.</span><span class="sxs-lookup"><span data-stu-id="8ceed-111">The absolute minimum requirement for necessary data is the peak transaction line load per hour.</span></span>
-
-<span data-ttu-id="8ceed-112">[![Hardwarekalkulation für lokale Umgebungen](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</span><span class="sxs-lookup"><span data-stu-id="8ceed-112">[![Hardware sizing for on-premises environments](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</span></span>
-
-<span data-ttu-id="8ceed-113">Von links nach rechts betrachtet, ist der erste und wichtigste Faktor, den Sie brauchen, um eine präzise geschätzte Kalkulation durchzuführen, ein Transaktionsprofil oder eine Transaktionscharakterisierung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-113">Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization.</span></span> <span data-ttu-id="8ceed-114">Es ist wichtig, immer das Spitzentransaktionsvolumen pro Stunde zu ermitteln.</span><span class="sxs-lookup"><span data-stu-id="8ceed-114">It's important to always find the peak transactional volume per hour.</span></span> <span data-ttu-id="8ceed-115">Wenn es mehrere Spitzenintervalle gibt, müssen diese Intervalle präzise definiert werden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-115">If there are multiple peak periods, then these periods need to be accurately defined.</span></span>
-
-<span data-ttu-id="8ceed-116">Genau wie die Last, die sich auf Ihre Infrastruktur auswirkt, müsse Sie auch die folgenden Faktoren genau verstehen:</span><span class="sxs-lookup"><span data-stu-id="8ceed-116">As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:</span></span>
-
-- <span data-ttu-id="8ceed-117">**Transaktionen** – Typische Transaktionen haben über den Tag/die Woche bestimmte Spitzen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-117">**Transactions** – Typically transactions have certain peaks throughout the day/week.</span></span> <span data-ttu-id="8ceed-118">Dies hängt hauptsächlich vom Transaktionstyp ab.</span><span class="sxs-lookup"><span data-stu-id="8ceed-118">This mostly depends on the transaction type.</span></span> <span data-ttu-id="8ceed-119">Zeit- und Speseneinträge weisen normalerweise einmal pro Woche Spitzen auf, während Vertriebsauftragseinträge häufig gruppiert über eine Integration oder während des Tages nacheinander eintreffen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-119">Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.</span></span>
-- <span data-ttu-id="8ceed-120">**Anzahl der parallel arbeitenden Benutzer** – Die Anzahl parallel arbeitender Benutzer ist der zweitwichtigste Faktor für die Größenauslegung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-120">**Number of concurrent users** – The number of concurrent users is the second most important sizing factor.</span></span> <span data-ttu-id="8ceed-121">Basierend auf der Anzahl parallel arbeitender Benutzer ist keine zuverlässige Größenschätzung möglich. Wenn Ihnen nur diese Daten zur Verfügung stehen, schätzen Sie vorläufig und wiederholen die Schätzung, sobald Ihnen mehr Daten zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-121">You cannot reliably get sizing estimates based on the number of concurrent users, so if this is the only data you have available, estimate an approximate number, and then revisit this when you have more data.</span></span> <span data-ttu-id="8ceed-122">Eine präzise Definition parallel arbeitender Benutzer bedeutet:</span><span class="sxs-lookup"><span data-stu-id="8ceed-122">An accurate concurrent user definition means that:</span></span>
-
-    - <span data-ttu-id="8ceed-123">Benannte Benutzer sind keine parallel arbeitenden Benutzer.</span><span class="sxs-lookup"><span data-stu-id="8ceed-123">Named users are not concurrent users.</span></span>
-    - <span data-ttu-id="8ceed-124">Parallel arbeitende Benutzer sind immer eine Untermenge der benannten Benutzer.</span><span class="sxs-lookup"><span data-stu-id="8ceed-124">Concurrent users are always a subset of named users.</span></span> 
-    - <span data-ttu-id="8ceed-125">Die Spitzenarbeitslast definiert die maximale Parallelität für die Größenauslegung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-125">Peak workload defines the maximum concurrency for sizing.</span></span>
-
-    <span data-ttu-id="8ceed-126">Kriterien für parallel arbeitende Benutzer sind, dass die Benutzer alle folgenden Kriterien erfüllen:</span><span class="sxs-lookup"><span data-stu-id="8ceed-126">Criteria for concurrent users is that the user meets all the following criteria:</span></span>
-
-    - <span data-ttu-id="8ceed-127">Angemeldet.</span><span class="sxs-lookup"><span data-stu-id="8ceed-127">Logged on.</span></span>
-    - <span data-ttu-id="8ceed-128">Bearbeitung von Transaktionen/Abfragen während der Zeit der Zählung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-128">Working transactions/inquiries at the time of counting.</span></span>
-    - <span data-ttu-id="8ceed-129">Keine untätige Sitzung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-129">Not an idle session.</span></span>
-
-- <span data-ttu-id="8ceed-130">**Datenzusammensetzung** – Dabei geht es hauptsächlich darum, wie Ihr System eingerichtet und konfiguriert wird.</span><span class="sxs-lookup"><span data-stu-id="8ceed-130">**Data composition** – This is mostly about how your system will be set up and configured.</span></span> <span data-ttu-id="8ceed-131">Beispielsweise, wie viele juristische Entitäten Sie haben, wie viele Artikel, wie viele BOM-Ebenen, und wie komplex Ihr Sicherheitssystem ist.</span><span class="sxs-lookup"><span data-stu-id="8ceed-131">For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be.</span></span> <span data-ttu-id="8ceed-132">Jeder dieser Faktoren kann sich leicht auf die Leistung auswirken, sie können also durch eine geschickte Auswahl der Infrastruktur kompensiert werden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-132">Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.</span></span>
-- <span data-ttu-id="8ceed-133">**Erweiterungen** – Anpassungen können einfach oder komplex sein.</span><span class="sxs-lookup"><span data-stu-id="8ceed-133">**Extensions** – Customizations can be simple or complex.</span></span> <span data-ttu-id="8ceed-134">Die Anzahl der Anpassungen sowie ihre jeweilige Komplexität und Nutzung wirkt sich unterschiedlich auf die Größe der benötigten Infrastruktur aus.</span><span class="sxs-lookup"><span data-stu-id="8ceed-134">The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed.</span></span> <span data-ttu-id="8ceed-135">Für komplexe Anpassungen wird empfohlen, Leistungsauswertungen durchzuführen. Dabei soll nicht nur ihre Effizienz getestet werden, sondern sie sollen auch dazu beitragen, die Anforderungen im Hinblick auf die Infrastruktur besser zu verstehen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-135">For complex customizations, it's advised to conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs.</span></span> <span data-ttu-id="8ceed-136">Das ist vor allem dann kritisch, wenn die Erweiterungen nicht unter Anwendung der optimalen Verfahren für Leistung und Skalierbarkeit codiert wurden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-136">This is even more critical when the extensions are not coded according to best practices for performance and scalability.</span></span>
-- <span data-ttu-id="8ceed-137">**Berichterstellung und Analyse** – Diese Faktoren umfassen häufig umfangreiche Abfragen der verschiedenen Datenbanken in den Datenbanksystemen von Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="8ceed-137">**Reporting and analytics** – These factors typically include running heavy queries against the various databases in the Finance and Operations database systems.</span></span> <span data-ttu-id="8ceed-138">Diese Kenntnis und die Reduzierung der Häufigkeit, in der umfangreiche Berichte erstellt werden, hilft Ihnen, den Einfluss zu erkennen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-138">Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.</span></span>
-- <span data-ttu-id="8ceed-139">**Lösungen von Drittanbietern** – Für diese Lösungen, wie ISVs, gelten dieselben Auswirkungen und Empfehlungen wie für Erweiterungen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-139">**Third-party solutions** – These solutions, like ISVs, have the same implications and recommendations as extensions.</span></span>
-
-## <a name="sizing-your-finance-and-operations-environment"></a><span data-ttu-id="8ceed-140">Größenauslegung Ihrer Finance and Operations-Umgebung</span><span class="sxs-lookup"><span data-stu-id="8ceed-140">Sizing your Finance and Operations environment</span></span>
-
-<span data-ttu-id="8ceed-141">Um die Größenanforderungen zu verstehen, müssen Sie das Spitzenvolumen der Transaktionen kennen, die Sie verarbeiten müssen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-141">To understand your sizing requirements, you need to know the peak volume of transactions that you need to process.</span></span> <span data-ttu-id="8ceed-142">Die meisten Hilfssysteme, wie beispielsweise Management Reporter oder SSRS, sind weniger kritisch für den Betrieb.</span><span class="sxs-lookup"><span data-stu-id="8ceed-142">Most auxiliary systems, like Management Reporter or SSRS, are less mission critical.</span></span> <span data-ttu-id="8ceed-143">Aus diesem Grund konzentriert sich dieses Dokument hauptsächlich auf AOS und SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8ceed-143">As a result, this document focuses mostly on AOS and SQL Server.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8ceed-144">Im Allgemeinen sollten die Schichten nach dem Prinzip N+1 ausgelegt werden. Wenn Sie also drei AOS schätzen, sollten Sie ein viertes AOS bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-144">In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS.</span></span> <span data-ttu-id="8ceed-145">Die Datenbankschicht sollte so eingerichtet werden, dass sie immer verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="8ceed-145">The database tier should be set up in an Always On highly-available setup.</span></span>
-
-## <a name="sql-server-oltp"></a><span data-ttu-id="8ceed-146">SQL Server (OLTP)</span><span class="sxs-lookup"><span data-stu-id="8ceed-146">SQL Server (OLTP)</span></span>
-
-### <a name="sizing"></a><span data-ttu-id="8ceed-147">Größenauslegung</span><span class="sxs-lookup"><span data-stu-id="8ceed-147">Sizing</span></span>
-
-- <span data-ttu-id="8ceed-148">3K- bis 15K-Transaktionsleitungen pro Stunde pro Kern auf dem DB-Server.</span><span class="sxs-lookup"><span data-stu-id="8ceed-148">3K to 15K transaction lines per hour per core on DB server.</span></span>
-- <span data-ttu-id="8ceed-149">Typisches AOS/SQL-Kern-Verhältnis von 3:1 für den primären SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8ceed-149">Typical AOS-to-SQL core ratio 3:1 for the primary SQL Server.</span></span> <span data-ttu-id="8ceed-150">Abhängig von der gewählten Konfiguration für höchste Verfügbarkeit sind zusätzliche Kerne erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8ceed-150">Additional cores are required based on the chosen high availability configuration.</span></span>
-
-    - <span data-ttu-id="8ceed-151">Die Verarbeitung sehr datenbankintensiver Operationen kann dies auf 2:1 vermindern.</span><span class="sxs-lookup"><span data-stu-id="8ceed-151">Processing database-heavy operations may regress this to 2:1.</span></span>
-
-- <span data-ttu-id="8ceed-152">Die folgenden Faktoren beeinflussen die Variationen:</span><span class="sxs-lookup"><span data-stu-id="8ceed-152">The following factors influence variations:</span></span>
-
-    - <span data-ttu-id="8ceed-153">Verwendete Parametereinstellungen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-153">Parameter settings in use.</span></span>
-    - <span data-ttu-id="8ceed-154">Erweiterungsniveaus.</span><span class="sxs-lookup"><span data-stu-id="8ceed-154">Levels of extensions.</span></span>
-    - <span data-ttu-id="8ceed-155">Verwendung zusätzlicher Funktionalität, wie beispielsweise Datenbankprotokolle und Alarme.</span><span class="sxs-lookup"><span data-stu-id="8ceed-155">Usage of additional functionality, such as database log and alerts.</span></span> <span data-ttu-id="8ceed-156">Extrem viele Datenbankanmeldungen reduzieren den Durchsatz pro Stunde pro Kern weiter unter 3K-Leitungen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-156">Extreme database logging will further reduce throughput per hour per core below 3K lines.</span></span>
-    - <span data-ttu-id="8ceed-157">Komplexität der Datenzusammensetzung – Der Durchsatz ändert sich abhängig davon, ob eine einfache Kontentabelle verwendet wird, oder eine sehr detaillierte Kontentabelle (als Beispiel).</span><span class="sxs-lookup"><span data-stu-id="8ceed-157">Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example).</span></span>
-    - <span data-ttu-id="8ceed-158">Transaktionscharakterisierung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-158">Transaction characterization.</span></span>
-    - <span data-ttu-id="8ceed-159">2 GB bis 16 GB Speicher für jeden Kern.</span><span class="sxs-lookup"><span data-stu-id="8ceed-159">2 GB to 16 GB memory for each core.</span></span>
-    - <span data-ttu-id="8ceed-160">Zusatzdatenbanken auf dem DB-Server, wie beispielsweise Management Reporter- und SSRS-Datenbanken.</span><span class="sxs-lookup"><span data-stu-id="8ceed-160">Auxiliary databases on DB server such as Management reporter and SSRS databases.</span></span>
-    - <span data-ttu-id="8ceed-161">Temporäre DB = 15 % der DB-Größe, mit so vielen Dateien wie physischen Prozessoren.</span><span class="sxs-lookup"><span data-stu-id="8ceed-161">Temp DB = 15% of DB size, with as many files as physical processors.</span></span>
-    - <span data-ttu-id="8ceed-162">SAN-Größe und Durchsatz basierend auf dem gesamten parallelen Transaktionsvolumen/der gesamten parallel stattfindenden Nutzung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-162">SAN size and throughput based on total concurrent transaction volume/usage.</span></span>
-
-### <a name="high-availability"></a><span data-ttu-id="8ceed-163">Höchste Verfügbarkeit</span><span class="sxs-lookup"><span data-stu-id="8ceed-163">High availability</span></span>
-
-<span data-ttu-id="8ceed-164">Wir empfehlen, SQL Server immer in einer Cluster- oder Mirroring-Einrichtung zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-164">We recommend always utilizing SQL Server in either a cluster or mirroring setup.</span></span> <span data-ttu-id="8ceed-165">Der zweite SQL-Knoten sollte dieselbe Anzahl an Kernen haben wie der primäre Knoten.</span><span class="sxs-lookup"><span data-stu-id="8ceed-165">The second SQL node should have the same number of cores as the primary node.</span></span>
-
-### <a name="active-directory-federation-services-ad-fs"></a><span data-ttu-id="8ceed-166">Active Directory Federation Services (AD FS)</span><span class="sxs-lookup"><span data-stu-id="8ceed-166">Active Directory Federation Services (AD FS)</span></span>
-
-<span data-ttu-id="8ceed-167">Weitere Informationen zur Größenauslegung von AD FS finden Sie in der [Dokumentation für die AD FS Server-Kapazität](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).</span><span class="sxs-lookup"><span data-stu-id="8ceed-167">For AD FS sizing, see the [AD FS Server Capacity documentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).</span></span>
-
-<span data-ttu-id="8ceed-168">Für die Planung der Instanzenanzahl in Ihrer Bereitstellung steht ein [Tabellenkalkulationsblatt](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) für die Größenauslegung zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="8ceed-168">A [sizing spreadsheet](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) is available for planning the number of instances in your deployment.</span></span>
-
-## <a name="aos-online-and-batch"></a><span data-ttu-id="8ceed-169">AOS (Online und Batch)</span><span class="sxs-lookup"><span data-stu-id="8ceed-169">AOS (Online and batch)</span></span>
-
-### <a name="sizing"></a><span data-ttu-id="8ceed-170">Größenauslegung</span><span class="sxs-lookup"><span data-stu-id="8ceed-170">Sizing</span></span>
-
-- <span data-ttu-id="8ceed-171">Größenauslegung nach Transaktionsvolumen/Nutzung</span><span class="sxs-lookup"><span data-stu-id="8ceed-171">Sizing by transaction volume/usage</span></span>
-
-    - <span data-ttu-id="8ceed-172">2K- bis 6K-Leitungen pro Kern</span><span class="sxs-lookup"><span data-stu-id="8ceed-172">2K to 6K lines per core</span></span>
-    - <span data-ttu-id="8ceed-173">16 GB pro Instanz</span><span class="sxs-lookup"><span data-stu-id="8ceed-173">16 GB per instance</span></span>
-    - <span data-ttu-id="8ceed-174">Standardgehäuse – 4 bis 24 Kerne</span><span class="sxs-lookup"><span data-stu-id="8ceed-174">Standard box – 4 to 24 cores</span></span>
-    - <span data-ttu-id="8ceed-175">10 bis 15 Unternehmensbenutzer pro Kern</span><span class="sxs-lookup"><span data-stu-id="8ceed-175">10 to 15 Enterprise users per core</span></span>
-    - <span data-ttu-id="8ceed-176">15 bis 25 Aktivitätsbenutzer pro Kern</span><span class="sxs-lookup"><span data-stu-id="8ceed-176">15 to 25 Activity users per core</span></span>
-    - <span data-ttu-id="8ceed-177">25 bis 50 Teammitglieder pro Kern</span><span class="sxs-lookup"><span data-stu-id="8ceed-177">25 to 50 Team members per core</span></span>
-
-- <span data-ttu-id="8ceed-178">Stapel</span><span class="sxs-lookup"><span data-stu-id="8ceed-178">Batch</span></span>
-
-    - <span data-ttu-id="8ceed-179">1 bis 4 Batch-Threads pro Kern</span><span class="sxs-lookup"><span data-stu-id="8ceed-179">1 to 4 batch threads per core</span></span>
-    - <span data-ttu-id="8ceed-180">Größe basierend auf der Charakterisierung des Batch-Fensters</span><span class="sxs-lookup"><span data-stu-id="8ceed-180">Size based on batch window characterization</span></span>
-
-- <span data-ttu-id="8ceed-181">Beachten Sie, dass AOS, Datenverwaltung und Batch auf dem Service Fabric dieselbe Rolle einnehmen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-181">Note that the AOS, Data Management, and Batch are on the same role in the Service Fabric.</span></span> <span data-ttu-id="8ceed-182">Sie müssen die Größe auf die Kombination der drei Arbeitslasten auslegen, und nicht separat dafür, wie in Microsoft Dynamics AX 2012.</span><span class="sxs-lookup"><span data-stu-id="8ceed-182">You need to size for these three workloads combined, and not separate these like in Microsoft Dynamics AX 2012.</span></span>
-- <span data-ttu-id="8ceed-183">Hier gelten dieselben Variabilitätsfaktoren für SQL Server.</span><span class="sxs-lookup"><span data-stu-id="8ceed-183">The same variability factors for SQL Server apply here.</span></span>
-
-### <a name="high-availability"></a><span data-ttu-id="8ceed-184">Höchste Verfügbarkeit</span><span class="sxs-lookup"><span data-stu-id="8ceed-184">High availability</span></span>
-
-- <span data-ttu-id="8ceed-185">Stellen Sie sicher, dass Ihnen mindestens 1 bis 2 weitere AOS zur Verfügung stehen, als Ihre Schätzung vorgibt.</span><span class="sxs-lookup"><span data-stu-id="8ceed-185">Ensure that you have at least 1 to 2 more AOS available than you estimate.</span></span>
-- <span data-ttu-id="8ceed-186">Stellen Sie sicher, dass Ihnen mindestens 3 bis 4 virtuelle Hosts zur Verfügung stehen.</span><span class="sxs-lookup"><span data-stu-id="8ceed-186">Ensure that you have at least 3 to 4 virtual hosts available.</span></span>
-
-## <a name="management-reporter"></a><span data-ttu-id="8ceed-187">Management Reporter</span><span class="sxs-lookup"><span data-stu-id="8ceed-187">Management reporter</span></span>
-
-<span data-ttu-id="8ceed-188">Größtenteils sollten die empfohlenen Mindestanforderungen mit zwei Knoten ausreichend gut funktionieren, wenn keine extensive Nutzung stattfindet.</span><span class="sxs-lookup"><span data-stu-id="8ceed-188">In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well.</span></span> <span data-ttu-id="8ceed-189">Sie brauchen nur in Fällen mit sehr starker Nutzung mehr als zwei Knoten.</span><span class="sxs-lookup"><span data-stu-id="8ceed-189">Only in cases where there is heavy use will you need more than two nodes.</span></span> <span data-ttu-id="8ceed-190">Bitte führen Sie eine Skalierung nach Bedarf durch.</span><span class="sxs-lookup"><span data-stu-id="8ceed-190">Please scale as needed.</span></span>
-
-## <a name="sql-server-reporting-services"></a><span data-ttu-id="8ceed-191">SQL Server Reporting Services</span><span class="sxs-lookup"><span data-stu-id="8ceed-191">SQL Server Reporting Services</span></span>
-
-<span data-ttu-id="8ceed-192">Für die allgemeine Verfügbarkeit kann nur ein SSRS-Knoten bereitgestellt werden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-192">For the general availability release, only one SSRS node can be deployed.</span></span> <span data-ttu-id="8ceed-193">Überwachen Sie Ihren SSRS-Knoten beim Test und erhöhen Sie die Anzahl der Kerne für SSRS bei Bedarf.</span><span class="sxs-lookup"><span data-stu-id="8ceed-193">Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis.</span></span> <span data-ttu-id="8ceed-194">Stellen Sie sicher, dass Ihnen auf einem virtuellen Host, der nicht die SSRS VM ist, ein vorkonfigurierter sekundärer Knoten zur Verfügung steht.</span><span class="sxs-lookup"><span data-stu-id="8ceed-194">Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM.</span></span> <span data-ttu-id="8ceed-195">Das ist wichtig, falls es Probleme mit der virtuellen Maschine gibt, auf der SSRS oder der virtuelle Host untergebracht sind.</span><span class="sxs-lookup"><span data-stu-id="8ceed-195">This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host.</span></span> <span data-ttu-id="8ceed-196">In diesem Fall müssten sie ersetzt werden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-196">If this the case, they would need to be replaced.</span></span>
-
-## <a name="environment-orchestrator"></a><span data-ttu-id="8ceed-197">Environment Orchestrator</span><span class="sxs-lookup"><span data-stu-id="8ceed-197">Environment Orchestrator</span></span>
-
-<span data-ttu-id="8ceed-198">Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS.</span><span class="sxs-lookup"><span data-stu-id="8ceed-198">The Orchestrator service is the service that manages your deployment and the related communication with LCS.</span></span> <span data-ttu-id="8ceed-199">Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs.</span><span class="sxs-lookup"><span data-stu-id="8ceed-199">This service is deployed as the primary Service Fabric service and requires at least three VMs.</span></span> <span data-ttu-id="8ceed-200">Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices.</span><span class="sxs-lookup"><span data-stu-id="8ceed-200">This service is co-located with the Service Fabric orchestration services.</span></span> <span data-ttu-id="8ceed-201">Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="8ceed-201">This and should be sized to the peak load of the cluster.</span></span> <span data-ttu-id="8ceed-202">Weitere Informationen finden Sie unter [Aspekte zur Service Fabric-Clusterkapazitätsplanung](/azure/service-fabric/service-fabric-cluster-capacity).</span><span class="sxs-lookup"><span data-stu-id="8ceed-202">For more information, see [Service Fabric cluster capacity planning considerations](/azure/service-fabric/service-fabric-cluster-capacity).</span></span>
-
-## <a name="virtualization-and-oversubscription"></a><span data-ttu-id="8ceed-203">Virtualisierung und Überabonnement</span><span class="sxs-lookup"><span data-stu-id="8ceed-203">Virtualization and oversubscription</span></span>
-
-<span data-ttu-id="8ceed-204">Aufgabenkritische Services wie AOS sollten auf virtuellen Hosts mit speziell dafür vorgesehenen Ressourcen untergebracht werden, wie beispielsweise Kerne, Speicher und Festplatten.</span><span class="sxs-lookup"><span data-stu-id="8ceed-204">Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.</span></span>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="hardware-sizing-on-premises-environments.md" target-language="de-DE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>hardware-sizing-on-premises-environments.e242d0.4832a056a99e0f7521e022982b7db7b16d7064a3.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>4832a056a99e0f7521e022982b7db7b16d7064a3</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\fin-and-ops\get-started\hardware-sizing-on-premises-environments.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Hardware sizing requirements for on-premises environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anforderungen an die Hardwarekalkulation für lokale Umgebungen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic lists the hardware sizing requirements for an on-premises environment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieses Thema listet die Anforderungen an die Hardwarekalkulation für eine lokale Umgebung auf.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Hardware sizing requirements for on-premises environments</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anforderungen an die Hardwarekalkulation für lokale Umgebungen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Before you begin the hardware and infrastructure sizing process for an on-premises environment, familiarize yourself with the <bpt id="p1">[</bpt>System requirements<ept id="p1">](system-requirements.md)</ept> and <bpt id="p2">[</bpt>Setup and deployment instructions<ept id="p2">](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)</ept> to gain a solid understanding off the underlying infrastructure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bevor Sie mit der Hardware- und Infrastrukturkalkulation für eine lokale Umgebung beginnen, machen Sie sich mit den <bpt id="p1">[</bpt>Systemanforderungen<ept id="p1">](system-requirements.md)</ept> und den <bpt id="p2">[</bpt>Anweisungen für die Einrichtung und Bereitstellung<ept id="p2">](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md)</ept> vertraut, um die zugrundeliegende Infrastruktur wirklich zu verstehen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Pay close attention to the system setup best practices for optimum performance.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Achten Sie auf die optimalen Leistungsverfahren für die Systemeinrichtung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>After you have reviewed the documentation, you can start the process of estimating your transactional and concurrent user volume and sizing your environment based on the average core throughput.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nachdem Sie die Dokumentation gelesen haben, können Sie damit beginnen, das Volumen Ihrer transaktionalen und parallel arbeitenden Benutzer zu schätzen und Ihre Umgebung basierend auf dem durchschnittlichen Kerndurchsatz auszulegen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>Factors that affect sizing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Faktoren, die sich auf die Kalkulation auswirken</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>All the factors shown in the following illustration contribute to sizing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Alle in der folgenden Abbildungen gezeigten Faktoren wirken sich auf die Kalkulation aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>The more detailed information that is collected, the more precisely you can determine sizing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Je detailliertere Informationen erfasst werden, desto genauer können Sie die Kalkulation durchführen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Hardware sizing, without supporting data, is likely to be inaccurate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eine Hardwarekalkulation ohne zugrundeliegende Daten wird sehr wahrscheinlich unpräzise sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The absolute minimum requirement for necessary data is the peak transaction line load per hour.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die absolute Mindestanforderung im Hinblick auf die benötigten Daten ist die Spitzentransaktionsleitungslast pro Stunde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>Hardware sizing for on-premises environments<ept id="p1">](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Hardwarekalkulation für lokale Umgebungen<ept id="p1">](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Viewed from left to right, the first and most important factor needed to accurately estimate sizing is a transaction profile or a transaction characterization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Von links nach rechts betrachtet, ist der erste und wichtigste Faktor, den Sie brauchen, um eine präzise geschätzte Kalkulation durchzuführen, ein Transaktionsprofil oder eine Transaktionscharakterisierung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>It's important to always find the peak transactional volume per hour.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es ist wichtig, immer das Spitzentransaktionsvolumen pro Stunde zu ermitteln.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>If there are multiple peak periods, then these periods need to be accurately defined.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn es mehrere Spitzenintervalle gibt, müssen diese Intervalle präzise definiert werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>As you understand the load that impacts your infrastructure, you also need to understand more detail about these factors:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Genau wie die Last, die sich auf Ihre Infrastruktur auswirkt, müsse Sie auch die folgenden Faktoren genau verstehen:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Transactions<ept id="p1">**</ept> – Typically transactions have certain peaks throughout the day/week.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Transaktionen<ept id="p1">**</ept> – Typische Transaktionen haben über den Tag/die Woche bestimmte Spitzen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>This mostly depends on the transaction type.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dies hängt hauptsächlich vom Transaktionstyp ab.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Time and expense entries usually show peaks once per week, whereas Sales order entries often come in bulk via integration or trickle in during the day.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeit- und Speseneinträge weisen normalerweise einmal pro Woche Spitzen auf, während Vertriebsauftragseinträge häufig gruppiert über eine Integration oder während des Tages nacheinander eintreffen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">**</bpt>Number of concurrent users<ept id="p1">**</ept> – The number of concurrent users is the second most important sizing factor.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Anzahl der parallel arbeitenden Benutzer<ept id="p1">**</ept> – Die Anzahl parallel arbeitender Benutzer ist der zweitwichtigste Faktor für die Größenauslegung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>You cannot reliably get sizing estimates based on the number of concurrent users, so if this is the only data you have available, estimate an approximate number, and then revisit this when you have more data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Basierend auf der Anzahl parallel arbeitender Benutzer ist keine zuverlässige Größenschätzung möglich. Wenn Ihnen nur diese Daten zur Verfügung stehen, schätzen Sie vorläufig und wiederholen die Schätzung, sobald Ihnen mehr Daten zur Verfügung stehen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>An accurate concurrent user definition means that:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eine präzise Definition parallel arbeitender Benutzer bedeutet:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Named users are not concurrent users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Benannte Benutzer sind keine parallel arbeitenden Benutzer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Concurrent users are always a subset of named users.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Parallel arbeitende Benutzer sind immer eine Untermenge der benannten Benutzer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Peak workload defines the maximum concurrency for sizing.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Spitzenarbeitslast definiert die maximale Parallelität für die Größenauslegung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Criteria for concurrent users is that the user meets all the following criteria:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kriterien für parallel arbeitende Benutzer sind, dass die Benutzer alle folgenden Kriterien erfüllen:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Logged on.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Angemeldet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Working transactions/inquiries at the time of counting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bearbeitung von Transaktionen/Abfragen während der Zeit der Zählung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Not an idle session.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Keine untätige Sitzung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Data composition<ept id="p1">**</ept> – This is mostly about how your system will be set up and configured.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Datenzusammensetzung<ept id="p1">**</ept> – Dabei geht es hauptsächlich darum, wie Ihr System eingerichtet und konfiguriert wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>For example, how many legal entities you will have, how many items, how many BOM levels, and how complex your security setup will be.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beispielsweise, wie viele juristische Entitäten Sie haben, wie viele Artikel, wie viele BOM-Ebenen, und wie komplex Ihr Sicherheitssystem ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Each of those factors may have a small impact on performance, so these factors can be offset by using smart choices when it comes to infrastructure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jeder dieser Faktoren kann sich leicht auf die Leistung auswirken, sie können also durch eine geschickte Auswahl der Infrastruktur kompensiert werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source><bpt id="p1">**</bpt>Extensions<ept id="p1">**</ept> – Customizations can be simple or complex.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Erweiterungen<ept id="p1">**</ept> – Anpassungen können einfach oder komplex sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>The number of customizations and the nature of complexity and usage has a varied impact on the size of the infrastructure needed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Anzahl der Anpassungen sowie ihre jeweilige Komplexität und Nutzung wirkt sich unterschiedlich auf die Größe der benötigten Infrastruktur aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>For complex customizations, it's advised to conduct performance evaluations to ensure that they are not only tested for efficiency but also help understand the infrastructure needs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für komplexe Anpassungen wird empfohlen, Leistungsauswertungen durchzuführen. Dabei soll nicht nur ihre Effizienz getestet werden, sondern sie sollen auch dazu beitragen, die Anforderungen im Hinblick auf die Infrastruktur besser zu verstehen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>This is even more critical when the extensions are not coded according to best practices for performance and scalability.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das ist vor allem dann kritisch, wenn die Erweiterungen nicht unter Anwendung der optimalen Verfahren für Leistung und Skalierbarkeit codiert wurden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source><bpt id="p1">**</bpt>Reporting and analytics<ept id="p1">**</ept> – These factors typically include running heavy queries against the various databases in the Finance and Operations database systems.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Berichterstellung und Analyse<ept id="p1">**</ept> – Diese Faktoren umfassen häufig umfangreiche Abfragen der verschiedenen Datenbanken in den Datenbanksystemen von Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Understanding and reducing the frequency when expensive reports run will help you understand the impact of them.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Kenntnis und die Reduzierung der Häufigkeit, in der umfangreiche Berichte erstellt werden, hilft Ihnen, den Einfluss zu erkennen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">**</bpt>Third-party solutions<ept id="p1">**</ept> – These solutions, like ISVs, have the same implications and recommendations as extensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Lösungen von Drittanbietern<ept id="p1">**</ept> – Für diese Lösungen, wie ISVs, gelten dieselben Auswirkungen und Empfehlungen wie für Erweiterungen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Sizing your Finance and Operations environment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Größenauslegung Ihrer Finance and Operations-Umgebung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>To understand your sizing requirements, you need to know the peak volume of transactions that you need to process.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um die Größenanforderungen zu verstehen, müssen Sie das Spitzenvolumen der Transaktionen kennen, die Sie verarbeiten müssen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Most auxiliary systems, like Management Reporter or SSRS, are less mission critical.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die meisten Hilfssysteme, wie beispielsweise Management Reporter oder SSRS, sind weniger kritisch für den Betrieb.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>As a result, this document focuses mostly on AOS and SQL Server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aus diesem Grund konzentriert sich dieses Dokument hauptsächlich auf AOS und SQL Server.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In general, the compute tiers scale out and should be set up in an N+1 fashion, meaning if you estimate three AOS, add a fourth AOS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Im Allgemeinen sollten die Schichten nach dem Prinzip N+1 ausgelegt werden. Wenn Sie also drei AOS schätzen, sollten Sie ein viertes AOS bereitstellen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>The database tier should be set up in an Always On highly-available setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Datenbankschicht sollte so eingerichtet werden, dass sie immer verfügbar ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>SQL Server (OLTP)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server (OLTP)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Sizing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Größenauslegung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>3K to 15K transaction lines per hour per core on DB server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3K- bis 15K-Transaktionsleitungen pro Stunde pro Kern auf dem DB-Server.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Typical AOS-to-SQL core ratio 3:1 for the primary SQL Server.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typisches AOS/SQL-Kern-Verhältnis von 3:1 für den primären SQL Server.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Additional cores are required based on the chosen high availability configuration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Abhängig von der gewählten Konfiguration für höchste Verfügbarkeit sind zusätzliche Kerne erforderlich.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Processing database-heavy operations may regress this to 2:1.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Verarbeitung sehr datenbankintensiver Operationen kann dies auf 2:1 vermindern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>The following factors influence variations:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die folgenden Faktoren beeinflussen die Variationen:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Parameter settings in use.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verwendete Parametereinstellungen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Levels of extensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erweiterungsniveaus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Usage of additional functionality, such as database log and alerts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verwendung zusätzlicher Funktionalität, wie beispielsweise Datenbankprotokolle und Alarme.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Extreme database logging will further reduce throughput per hour per core below 3K lines.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Extrem viele Datenbankanmeldungen reduzieren den Durchsatz pro Stunde pro Kern weiter unter 3K-Leitungen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Complexity of data composition – A simple chart of accounts versus a detailed fine-grained chart of accounts has implications on throughput (as an example).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Komplexität der Datenzusammensetzung – Der Durchsatz ändert sich abhängig davon, ob eine einfache Kontentabelle verwendet wird, oder eine sehr detaillierte Kontentabelle (als Beispiel).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source>Transaction characterization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Transaktionscharakterisierung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source>2 GB to 16 GB memory for each core.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2 GB bis 16 GB Speicher für jeden Kern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>Auxiliary databases on DB server such as Management reporter and SSRS databases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zusatzdatenbanken auf dem DB-Server, wie beispielsweise Management Reporter- und SSRS-Datenbanken.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>Temp DB = 15% of DB size, with as many files as physical processors.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Temporäre DB = 15 % der DB-Größe, mit so vielen Dateien wie physischen Prozessoren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>SAN size and throughput based on total concurrent transaction volume/usage.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SAN-Größe und Durchsatz basierend auf dem gesamten parallelen Transaktionsvolumen/der gesamten parallel stattfindenden Nutzung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>High availability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Höchste Verfügbarkeit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>We recommend always utilizing SQL Server in either a cluster or mirroring setup.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wir empfehlen, SQL Server immer in einer Cluster- oder Mirroring-Einrichtung zu verwenden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source>The second SQL node should have the same number of cores as the primary node.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der zweite SQL-Knoten sollte dieselbe Anzahl an Kernen haben wie der primäre Knoten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>Active Directory Federation Services (AD FS)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Active Directory Federation Services (AD FS)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>For AD FS sizing, see the <bpt id="p1">[</bpt>AD FS Server Capacity documentation<ept id="p1">](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen zur Größenauslegung von AD FS finden Sie in der <bpt id="p1">[</bpt>Dokumentation für die AD FS Server-Kapazität<ept id="p1">](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source>A <bpt id="p1">[</bpt>sizing spreadsheet<ept id="p1">](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)</ept> is available for planning the number of instances in your deployment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für die Planung der Instanzenanzahl in Ihrer Bereitstellung steht ein <bpt id="p1">[</bpt>Tabellenkalkulationsblatt<ept id="p1">](https://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx)</ept> für die Größenauslegung zur Verfügung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>AOS (Online and batch)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">AOS (Online und Batch)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Sizing</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Größenauslegung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>Sizing by transaction volume/usage</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Größenauslegung nach Transaktionsvolumen/Nutzung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>2K to 6K lines per core</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2K- bis 6K-Leitungen pro Kern</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>16 GB per instance</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">16 GB pro Instanz</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>Standard box – 4 to 24 cores</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardgehäuse – 4 bis 24 Kerne</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>10 to 15 Enterprise users per core</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10 bis 15 Unternehmensbenutzer pro Kern</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>15 to 25 Activity users per core</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15 bis 25 Aktivitätsbenutzer pro Kern</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>25 to 50 Team members per core</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">25 bis 50 Teammitglieder pro Kern</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source>Batch</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stapel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source>1 to 4 batch threads per core</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1 bis 4 Batch-Threads pro Kern</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Size based on batch window characterization</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Größe basierend auf der Charakterisierung des Batch-Fensters</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>Note that the AOS, Data Management, and Batch are on the same role in the Service Fabric.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beachten Sie, dass AOS, Datenverwaltung und Batch auf dem Service Fabric dieselbe Rolle einnehmen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>You need to size for these three workloads combined, and not separate these like in Microsoft Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie müssen die Größe auf die Kombination der drei Arbeitslasten auslegen, und nicht separat dafür, wie in Microsoft Dynamics AX 2012.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>The same variability factors for SQL Server apply here.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hier gelten dieselben Variabilitätsfaktoren für SQL Server.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>High availability</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Höchste Verfügbarkeit</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>Ensure that you have at least 1 to 2 more AOS available than you estimate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stellen Sie sicher, dass Ihnen mindestens 1 bis 2 weitere AOS zur Verfügung stehen, als Ihre Schätzung vorgibt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Ensure that you have at least 3 to 4 virtual hosts available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stellen Sie sicher, dass Ihnen mindestens 3 bis 4 virtuelle Hosts zur Verfügung stehen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Management reporter</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Management Reporter</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>In most cases, unless used extensively, the recommended minimum requirements using two nodes should work well.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Größtenteils sollten die empfohlenen Mindestanforderungen mit zwei Knoten ausreichend gut funktionieren, wenn keine extensive Nutzung stattfindet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Only in cases where there is heavy use will you need more than two nodes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie brauchen nur in Fällen mit sehr starker Nutzung mehr als zwei Knoten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Please scale as needed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bitte führen Sie eine Skalierung nach Bedarf durch.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>SQL Server Reporting Services</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SQL Server Reporting Services</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>For the general availability release, only one SSRS node can be deployed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für die allgemeine Verfügbarkeit kann nur ein SSRS-Knoten bereitgestellt werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>Monitor your SSRS node while testing and increase the number of cores available for SSRS on a need basis.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überwachen Sie Ihren SSRS-Knoten beim Test und erhöhen Sie die Anzahl der Kerne für SSRS bei Bedarf.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Make sure that you have a preconfigured secondary node available on a virtual host that is different than the SSRS VM.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Stellen Sie sicher, dass Ihnen auf einem virtuellen Host, der nicht die SSRS VM ist, ein vorkonfigurierter sekundärer Knoten zur Verfügung steht.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>This is important if there is an issue with the virtual machine that hosts SSRS or the virtual host.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das ist wichtig, falls es Probleme mit der virtuellen Maschine gibt, auf der SSRS oder der virtuelle Host untergebracht sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>If this the case, they would need to be replaced.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Fall müssten sie ersetzt werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>Environment Orchestrator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Environment Orchestrator</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>The Orchestrator service is the service that manages your deployment and the related communication with LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>This service is deployed as the primary Service Fabric service and requires at least three VMs.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>This service is co-located with the Service Fabric orchestration services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>This and should be sized to the peak load of the cluster.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>For more information, see <bpt id="p1">[</bpt>Service Fabric cluster capacity planning considerations<ept id="p1">](/azure/service-fabric/service-fabric-cluster-capacity)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Aspekte zur Service Fabric-Clusterkapazitätsplanung<ept id="p1">](/azure/service-fabric/service-fabric-cluster-capacity)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Virtualization and oversubscription</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Virtualisierung und Überabonnement</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>Mission critical services like the AOS should be hosted on Virtual hosts that have dedicated resources – cores, memory, and disk.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aufgabenkritische Services wie AOS sollten auf virtuellen Hosts mit speziell dafür vorgesehenen Ressourcen untergebracht werden, wie beispielsweise Kerne, Speicher und Festplatten.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,351 +1,822 @@
----
-title: Integration von steuerlichem Dienst (ESR)
-description: Dieses Thema enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik.
-author: Anasyash
-manager: AnnBe
-ms.date: 01/17/2018
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: CashRegister_W
-audience: Application user
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Czech Republic
-ms.author: Anasyash
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8b51220b9fdfec0d99eae3245893d43fc7d846f4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537760"
----
-# <a name="fiscal-service-esr-integration"></a><span data-ttu-id="d522b-103">Integration von steuerlichem Dienst (ESR)</span><span class="sxs-lookup"><span data-stu-id="d522b-103">Fiscal service (ESR) integration</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="d522b-104">In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-104">In Austria, all cash payments should be signed by an external device or service, and they should be securely stored.</span></span> <span data-ttu-id="d522b-105">In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-105">In the Czech Republic, all cash payments should be sent to the government portal for a fiscal signature.</span></span> <span data-ttu-id="d522b-106">In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.</span><span class="sxs-lookup"><span data-stu-id="d522b-106">In both countries, a cash receipt should be issued where the signature is printed.</span></span>
-
-<span data-ttu-id="d522b-107">Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Microsoft Dynamics 365 for Finance and Operations Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.</span><span class="sxs-lookup"><span data-stu-id="d522b-107">To support these country-specific requirements, Microsoft Dynamics 365 for Finance and Operations, lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries or regions.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="d522b-108">Es wird vorausgesetzt, dass der steuerliche Dienst des Drittanbieters alle anderen landesspezifischen gesetzlichen Anforderungen bezüglich registrierter Transaktionen erfüllt.</span><span class="sxs-lookup"><span data-stu-id="d522b-108">It's assumed that the third-party fiscal service meets all other country-specific legal requirements about registered transactions.</span></span> <span data-ttu-id="d522b-109">Sie sind für die ordnungsgemäße Einrichtung und Verwaltung des steuerlichen Diensts verantwortlich.</span><span class="sxs-lookup"><span data-stu-id="d522b-109">You're responsible for correctly setting up and administering the fiscal service.</span></span>
-
-## <a name="available-configurations"></a><span data-ttu-id="d522b-110">Verfügbare Konfigurationen</span><span class="sxs-lookup"><span data-stu-id="d522b-110">Available configurations</span></span>
-
-<span data-ttu-id="d522b-111">Die Formate des Barbelegs, die XML-Anforderung des steuerlichen Diensts und die XML-Antwort vom steuerlichen Dienst werden als Konfigurationen zur elektronischen Berichterstellung (EB) konfiguriert, die in der Bibliothek freigegebener Anlagen in Microsoft Dynamics Lifecycle Services (LCS) gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-111">The formats of the cash receipt, the XML request to the fiscal service, and the XML response from the fiscal service are configured as Electronic reporting (ER) configurations that are stored in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS).</span></span> <span data-ttu-id="d522b-112">Die folgenden Konfigurationen sind verfügbar.</span><span class="sxs-lookup"><span data-stu-id="d522b-112">The following configurations are available.</span></span>
-
-| <span data-ttu-id="d522b-113">Konfigurationsname</span><span class="sxs-lookup"><span data-stu-id="d522b-113">Configuration name</span></span> | <span data-ttu-id="d522b-114">Konfigurationsbeschreibung</span><span class="sxs-lookup"><span data-stu-id="d522b-114">Configuration description</span></span> | <span data-ttu-id="d522b-115">Kommentar</span><span class="sxs-lookup"><span data-stu-id="d522b-115">Comment</span></span> | <span data-ttu-id="d522b-116">EB-Konfigurationsdatei in der LCS-Bibliothek freigegebener Anlagen</span><span class="sxs-lookup"><span data-stu-id="d522b-116">ER configuration file in the LCS Shared asset library</span></span> |
-|---|---|---|---|
-| <span data-ttu-id="d522b-117">**Barbelegmodell**</span><span class="sxs-lookup"><span data-stu-id="d522b-117">**Cash Receipt Model**</span></span> | | <span data-ttu-id="d522b-118">**Datenmodell für das Barbelegformat**</span><span class="sxs-lookup"><span data-stu-id="d522b-118">**Data model for the cash receipt format**</span></span> | <span data-ttu-id="d522b-119">**Barbeleg Model.version.1.xml**</span><span class="sxs-lookup"><span data-stu-id="d522b-119">**Cash Receipt Model.version.1.xml**</span></span> |
-| <span data-ttu-id="d522b-120">Barbelegformat</span><span class="sxs-lookup"><span data-stu-id="d522b-120">Cash Receipt Format</span></span> | | <span data-ttu-id="d522b-121">Grundlegendes Format für einen Barbeleg</span><span class="sxs-lookup"><span data-stu-id="d522b-121">Basic format for a cash receipt</span></span> | <span data-ttu-id="d522b-122">Barbeleg Format.version.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-122">Cash Receipt Format.version.1.1.xml</span></span> |
-| <span data-ttu-id="d522b-123">Barbelegformat (AT)</span><span class="sxs-lookup"><span data-stu-id="d522b-123">Cash Receipt Format (AT)</span></span> | | <span data-ttu-id="d522b-124">Format für ein Barbeleg in Österreich (Dieses Format enthält einen Quick Response Code \[QR-Code\])</span><span class="sxs-lookup"><span data-stu-id="d522b-124">Format for a cash receipt in Austria (This format includes a Quick Response Code \[QR code\].)</span></span> | <span data-ttu-id="d522b-125">Barbelegformat (AT).version.1.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-125">Cash Receipt Format (AT).version.1.1.1.xml</span></span> |
-| <span data-ttu-id="d522b-126">Barbelegformat (CZ)</span><span class="sxs-lookup"><span data-stu-id="d522b-126">Cash Receipt Format (CZ)</span></span> | | <span data-ttu-id="d522b-127">Format für einen Barbeleg in der Tschechischen Republik (Dieses Format enthält die ID der Geschäftsräumlichkeiten \[BP\].)</span><span class="sxs-lookup"><span data-stu-id="d522b-127">Format for a cash receipt in the Czech Republic (This format includes the Business Premises \[BP\] ID.)</span></span> | <span data-ttu-id="d522b-128">Barbelegformat (CZ).version.1.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-128">Cash Receipt Format (CZ).version.1.1.1.xml</span></span> |
-| <span data-ttu-id="d522b-129">**Kassenmodell**</span><span class="sxs-lookup"><span data-stu-id="d522b-129">**Cash Register Model**</span></span> | | <span data-ttu-id="d522b-130">**Datenmodell für Kassenintegration**</span><span class="sxs-lookup"><span data-stu-id="d522b-130">**Data model for cash register integration**</span></span> | <span data-ttu-id="d522b-131">**Kasse Model.version.1.xml**</span><span class="sxs-lookup"><span data-stu-id="d522b-131">**Cash Register Model.version.1.xml**</span></span> |
-| <span data-ttu-id="d522b-132">ESR-Anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="d522b-132">ESR Request example</span></span> | <span data-ttu-id="d522b-133">Beispiel einer einfachen Beleganforderung (ESR) gemäß der European Fiscal Standards Association (EFSTA)</span><span class="sxs-lookup"><span data-stu-id="d522b-133">Example of a European Fiscal Standards Association (EFSTA) Simple Receipt (ESR) Request</span></span> | <span data-ttu-id="d522b-134">Grundformat für eine Beispiel-XML-Anforderung an den steuerlichen Dienst der EFSTA (Dieses Format kann in Österreich verwendet werden.)</span><span class="sxs-lookup"><span data-stu-id="d522b-134">Basic format for a sample XML request to the EFSTA fiscal service (This format can be used in Austria.)</span></span> | <span data-ttu-id="d522b-135">ESR-Anforderung example.version.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-135">ESR Request example.version.1.1.xml</span></span> |
-| <span data-ttu-id="d522b-136">ESR-Anforderungsbeispiel (CZ)</span><span class="sxs-lookup"><span data-stu-id="d522b-136">ESR Request example (CZ)</span></span> | <span data-ttu-id="d522b-137">Beispiel einer ESR-Anforderung für die Tschechische Republik</span><span class="sxs-lookup"><span data-stu-id="d522b-137">Example of an ESR Request for the Czech Republic</span></span> | <span data-ttu-id="d522b-138">Format für eine Beispiel-XML-Anforderung an den steuerlichen Dienst der EFSTA in der Tschechischen Republik</span><span class="sxs-lookup"><span data-stu-id="d522b-138">Format for a sample XML request to the EFSTA fiscal service in the Czech Republic</span></span> | <span data-ttu-id="d522b-139">ESR-Anforderungsbeispiel (CZ).version.1.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-139">ESR Request example (CZ).version.1.1.1.xml</span></span> |
-| <span data-ttu-id="d522b-140">ESR-Antwortbeispiel</span><span class="sxs-lookup"><span data-stu-id="d522b-140">ESR Response example</span></span> | <span data-ttu-id="d522b-141">Beispiel einer ESR-Antwort</span><span class="sxs-lookup"><span data-stu-id="d522b-141">Example of an ESR Response</span></span> | <span data-ttu-id="d522b-142">Grundformat für eine Beispiel-XML-Antwort an den steuerlichen Dienst der EFSTA (Dieses Format kann in Österreich verwendet werden.)</span><span class="sxs-lookup"><span data-stu-id="d522b-142">Basic format for a sample XML response to the EFSTA fiscal service (This format can be used in Austria.)</span></span> | <span data-ttu-id="d522b-143">ESR-Antwort example.version.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-143">ESR Response example.version.1.1.xml</span></span> |
-| <span data-ttu-id="d522b-144">ESR-Antwortbeispiel (CZ)</span><span class="sxs-lookup"><span data-stu-id="d522b-144">ESR Response example (CZ)</span></span> | <span data-ttu-id="d522b-145">Beispiel einer ESR-Antwort für die Tschechische Republik</span><span class="sxs-lookup"><span data-stu-id="d522b-145">Example of an ESR Response for the Czech Republic</span></span> | <span data-ttu-id="d522b-146">Format für eine Beispiel-XML-Antwort an den steuerlichen Dienst der EFSTA in der Tschechischen Republik</span><span class="sxs-lookup"><span data-stu-id="d522b-146">Format for a sample XML response to the EFSTA fiscal service in the Czech Republic</span></span> | <span data-ttu-id="d522b-147">ESR-Antwortbeispiel (CZ).version.1.1.1.xml</span><span class="sxs-lookup"><span data-stu-id="d522b-147">ESR Response example (CZ).version.1.1.1.xml</span></span> |
-
-## <a name="setup"></a><span data-ttu-id="d522b-148">Einrichten</span><span class="sxs-lookup"><span data-stu-id="d522b-148">Setup</span></span>
-
-### <a name="cash-registers"></a><span data-ttu-id="d522b-149">Kassen</span><span class="sxs-lookup"><span data-stu-id="d522b-149">Cash registers</span></span>
-
-<span data-ttu-id="d522b-150">Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kommuniziert.</span><span class="sxs-lookup"><span data-stu-id="d522b-150">Every cash register must be set up to communicate with the fiscal service.</span></span> <span data-ttu-id="d522b-151">Sie können Kassen auf der Seite **Kassen** (**Debitoren** &gt; **Setup** &gt; **Kassen** &gt; **Kassen**) einrichten.</span><span class="sxs-lookup"><span data-stu-id="d522b-151">You can set up cash registers on the **Cash registers** page (**Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash registers**).</span></span> <span data-ttu-id="d522b-152">In der folgenden Tabelle werden weitere Informationen über die Einrichtung beschrieben, die erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-152">The following table gives more information about the setup that is required.</span></span>
-
-<table>
-<thead>
-<tr>
-<th><span data-ttu-id="d522b-153">Einrichten</span><span class="sxs-lookup"><span data-stu-id="d522b-153">Setup</span></span></th>
-<th><span data-ttu-id="d522b-154">Details</span><span class="sxs-lookup"><span data-stu-id="d522b-154">Details</span></span></th>
-<th><span data-ttu-id="d522b-155">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="d522b-155">More information</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span data-ttu-id="d522b-156">Kasseneinstellungen</span><span class="sxs-lookup"><span data-stu-id="d522b-156">Cash register settings</span></span></td>
-<td><span data-ttu-id="d522b-157">Geben Sie die URL der Kasse, den Namen der Instanz von Microsoft Azure Key Vault und den Klassennamen an.</span><span class="sxs-lookup"><span data-stu-id="d522b-157">Specify the URL of the cash register, the name of the instance of Microsoft Azure Key Vault, and the class name.</span></span></td>
-<td><ul>
-<li><span data-ttu-id="d522b-158"><strong>Kassen-URL</strong> – Geben Sie die URL des steuerlichen Diensts ein.</span><span class="sxs-lookup"><span data-stu-id="d522b-158"><strong>Cash register URL</strong> – Enter the URL of the fiscal service.</span></span>
-<blockquote>[!WARNING]<br><span data-ttu-id="d522b-159">Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft.</span><span class="sxs-lookup"><span data-stu-id="d522b-159">Third-party services or other services that you configure here don&#39;t require certification, and they might not meet Microsoft privacy standards.</span></span> <span data-ttu-id="d522b-160">Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet.</span><span class="sxs-lookup"><span data-stu-id="d522b-160">You should review each service&#39;s privacy documentation and work with each service provider to learn more about the level of compliance that each service provides.</span></span> <span data-ttu-id="d522b-161">Sie sind dafür verantwortlich, sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen.</span><span class="sxs-lookup"><span data-stu-id="d522b-161">You&#39;re responsible for making sure that these services meet your security-related, privacy-related, and legal standards.</span></span> <span data-ttu-id="d522b-162">Sie tragen das Risiko der Verwendung dieser Dienste.</span><span class="sxs-lookup"><span data-stu-id="d522b-162">You bear the risk of using these services.</span></span> <span data-ttu-id="d522b-163">Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen.</span><span class="sxs-lookup"><span data-stu-id="d522b-163">Microsoft gives no express warranties, guarantees, or conditions.</span></span> <span data-ttu-id="d522b-164">Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</span><span class="sxs-lookup"><span data-stu-id="d522b-164">We strongly recommend that you use only services that provide secure and authorized connections (that is, services that use the HTTPS protocol).</span></span></blockquote>
-</li>
-<li><span data-ttu-id="d522b-165"><strong>Key Vault-Name</strong> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters).</span><span class="sxs-lookup"><span data-stu-id="d522b-165"><strong>Key Vault name</strong> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (Finance and Operations and the third-party fiscal service).</span></span> <span data-ttu-id="d522b-166">In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-166">In this field, select the name of the Azure Key Vault instance where the Finance and Operations certificate is stored.</span></span> <span data-ttu-id="d522b-167">Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Einen Azure Key Vault-Client einrichten</a>.</span><span class="sxs-lookup"><span data-stu-id="d522b-167">For more information, see <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Setting up Azure Key Vault Client</a>.</span></span></li>
-<li><span data-ttu-id="d522b-168"><strong>Klassenname</strong> – Wählen Sie die Klasse aus, in der Eigenschaften der Integration mit dem steuerlichen Dienst implementiert werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-168"><strong>Class name</strong> – Select the class where specifics of the integration with the fiscal service are implemented.</span></span> <span data-ttu-id="d522b-169">Die verfügbare Klasse ist <strong>CashRegisterProcessingEFSTA_W</strong>.</span><span class="sxs-lookup"><span data-stu-id="d522b-169">The available class is <strong>CashRegisterProcessingEFSTA_W</strong>.</span></span></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-170">Varianten</span><span class="sxs-lookup"><span data-stu-id="d522b-170">Configurations</span></span></td>
-<td><span data-ttu-id="d522b-171">Wählen Sie für jede Kasse die EB-Formate aus, die verwendet werden müssen, um Belege auszudrucken, Anforderungen an den steuerlichen Dienst zu senden und Antworten vom steuerlichen Dienst zu empfangen.</span><span class="sxs-lookup"><span data-stu-id="d522b-171">For each cash register, select the ER formats to use to print receipts, send requests to the fiscal service, and receive responses from the fiscal service.</span></span> <span data-ttu-id="d522b-172">Die EB-Formate, die Sie auswählen, müssen für die primäre Adresse der juristischen Person geeignet sein.</span><span class="sxs-lookup"><span data-stu-id="d522b-172">The ER formats that you select must be appropriate for the legal entity&#39;s primary address.</span></span></td>
-<td><span data-ttu-id="d522b-173">Für das Belegformat wählen Sie beispielsweise <strong>Barbelegformat (AT)</strong> für Österreich und <strong>Barbelegformat (CZ)</strong> für die Tschechische Republik aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-173">For example, for the receipt format, select <strong>Cash receipt format (AT)</strong> for Austria and <strong>Cash receipt format (CZ)</strong> for the Czech Republic.</span></span>
-
-<span data-ttu-id="d522b-174">Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische Formate von LCS herunterladen.</span><span class="sxs-lookup"><span data-stu-id="d522b-174">If you can't find a format in the list, you can download recent electronic formats from LCS.</span></span> <span data-ttu-id="d522b-175">Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Elektronische Berichtskonfigurationen aus Lifecycle Service herunterladen</a>.</span><span class="sxs-lookup"><span data-stu-id="d522b-175">For more information, see <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs">Download Electronic reporting configurations from Lifecycle Service</a>.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-176">Kassenzertifikatseinstellungen</span><span class="sxs-lookup"><span data-stu-id="d522b-176">Cash register certificate settings</span></span></td>
-<td><span data-ttu-id="d522b-177">Aktivieren Sie die Verwendung selbstsignierter Zertifikate.</span><span class="sxs-lookup"><span data-stu-id="d522b-177">Enable usage of self-signed certificates.</span></span></td>
-<td>
-<ul>
-<li><span data-ttu-id="d522b-178"><strong>Verwenden eines selbstsignierten Zertifikats</strong> – Legen Sie diese Option auf <strong>Ja</strong> fest, wenn Sie ein selbstgeneriertes, selbstsigniertes Zertifikat verwenden, das sie nicht der Liste vertrauenswürdiger Zertifikate hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="d522b-178"><strong>Use a self-signed certificate</strong> – Set this option to <strong>Yes</strong> if you will use a self-generated, self-signed certificate that you can&#39;t add to the list of trusted certificates.</span></span></li>
-<li><span data-ttu-id="d522b-179"><strong>Kassenzertifikats-Fingerabdruck</strong> – Geben Sie den Fingerabdruck des selbst signierten Zertifikats ein, das in einem steuerlichen Dienst gespeichert ist und das verwendet wird, um das Zertifikat des steuerlichen Diensts zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="d522b-179"><strong>Cash register certificate thumbprint</strong> – Enter the thumbprint of the self-signed certificate that is stored in a fiscal service, and that will be used to validate the fiscal service certificate.</span></span></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-### <a name="cash-register-locations"></a><span data-ttu-id="d522b-180">Kassenstandorte</span><span class="sxs-lookup"><span data-stu-id="d522b-180">Cash register locations</span></span>
-
-<span data-ttu-id="d522b-181">Sie können Standorte von Kassen auf der Seite **Kassenstandorte** (**Debitoren** &gt; **Setup** &gt; **Kassen** &gt; **Kassenstandorte**) einrichten.</span><span class="sxs-lookup"><span data-stu-id="d522b-181">You can set up the locations of cash registers on the **Cash register locations** page (**Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash register locations**).</span></span>
-
-#### <a name="prerequisites-for-the-czech-republic"></a><span data-ttu-id="d522b-182">Voraussetzungen für die Tschechische Republik</span><span class="sxs-lookup"><span data-stu-id="d522b-182">Prerequisites for the Czech Republic</span></span>
-
-<span data-ttu-id="d522b-183">Bevor Sie Kassenstandorte für eine juristische Person einrichten, deren primäre Adresse in der Tschechischen Republik liegt, müssen Sie diese Schritte befolgen.</span><span class="sxs-lookup"><span data-stu-id="d522b-183">Before you set up cash register locations for a legal entity that has its primary address in the Czech Republic, you must follow these steps.</span></span>
-
-1. <span data-ttu-id="d522b-184">Erstellen Sie einen Steuerregistrierungstyp für die Geschäftsraumkennung, indem Sie **Organisationsverwaltung** &gt; **Globales Adressbuch** &gt; **Registrierungstypen** &gt; **Registrierungstypen** auswählen.</span><span class="sxs-lookup"><span data-stu-id="d522b-184">Create a tax registration type for the BP ID by selecting **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**.</span></span>
-
-    <span data-ttu-id="d522b-185">Dieser Registrierungstyp sollte auf **Organisation** eingeschränkt werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-185">This registration type should be restricted to **Organization**.</span></span>
-
-2. <span data-ttu-id="d522b-186">Ordnen Sie den Registrierungstyp der Registrierungskategorie **Geschäftsraumkennung** zu:</span><span class="sxs-lookup"><span data-stu-id="d522b-186">Associate the registration type with the **Business Premise ID** registration category:</span></span>
-
-    1. <span data-ttu-id="d522b-187">Wählen Sie **Organisationsverwaltung** &gt; **Globales Adressbuch** &gt; **Registrierungstypen** &gt; **Registrierungskategorien** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-187">Select **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration categories**.</span></span>
-    2. <span data-ttu-id="d522b-188">Wählen Sie den Registrierungstyp aus, den Sie zuvor erstellt haben, und wählen Sie anschließend im Feld **Registrierungskategorie** die **Geschäftsraumkennung** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-188">Select the registration type that you created earlier, and then, in the **Registration category** field, select **Business Premise ID**.</span></span>
-
-3. <span data-ttu-id="d522b-189">Ordnen Sie die Geschäftsraumkennung der Organisationseinheitsadresse der Organisationseinheit zu, die für den Kassenstandort verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="d522b-189">Associate the BP ID with the operating unit address of the operating unit that will be used for the cash register location.</span></span>
-
-    1. <span data-ttu-id="d522b-190">Wählen Sie **Organisationsverwaltung** &gt; **Gemeinsam** &gt; **Organisationen** &gt; **Interne Organisationen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-190">Select **Organization administration** &gt; **Common** &gt; **Organizations** &gt; **Internal organizations**.</span></span>
-    2. <span data-ttu-id="d522b-191">Wählen Sie die Organisation aus, die der Geschäftsraumkennung zuzuordnen ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-191">Select the organization to associate with the BP ID.</span></span>
-    3. <span data-ttu-id="d522b-192">Wählen Sie im Inforegister **Adressen** die Option **Weitere Optionen** &gt; **Erweitert** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-192">On the **Addresses** FastTab, select **More options** &gt; **Advanced**.</span></span>
-    4. <span data-ttu-id="d522b-193">Wählen Sie im Inforegister **Registrierungskennung** die Option **Hinzufügen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-193">On the **Registration ID** FastTab, select **Add**.</span></span>
-    5. <span data-ttu-id="d522b-194">Wählen Sie den Registrierungstyp aus, den Sie zuvor erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="d522b-194">Select the registration type that you created earlier.</span></span>
-    6. <span data-ttu-id="d522b-195">Geben Sie die Registrierungsnummer ein.</span><span class="sxs-lookup"><span data-stu-id="d522b-195">Enter the registration number.</span></span>
-
-### <a name="create-cash-register-terminals"></a><span data-ttu-id="d522b-196">Kassenterminals erstellen</span><span class="sxs-lookup"><span data-stu-id="d522b-196">Create cash register terminals</span></span>
-
-<span data-ttu-id="d522b-197">Sie können die Kassenterminals erstellen, die für den Standort verfügbar sind, und anschließend weisen Sie die Kasse dem Terminal hinzu, auf der Seite **Kassenterminals** (**Debitoren** &gt; **Setup** &gt; **Kassen** &gt; **Kassenterminals**).</span><span class="sxs-lookup"><span data-stu-id="d522b-197">You can create the cash register terminals that will be available for the location, and then assign the cash register to the terminal, on the **Cash register terminals** page (**Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash register terminals**).</span></span>
-
-### <a name="assign-the-user-to-a-person"></a><span data-ttu-id="d522b-198">Den Benutzer einer Person zuweisen</span><span class="sxs-lookup"><span data-stu-id="d522b-198">Assign the user to a person</span></span>
-
-<span data-ttu-id="d522b-199">Der Benutzer, der als Bargeldoperator fungiert und der Bargeldtransaktionen protokollieren darf, die in der Kasse registriert sind, muss einer Person zugewiesen sein.</span><span class="sxs-lookup"><span data-stu-id="d522b-199">The user who will act as a cash operator, and who will be allowed to log cash transactions that are registered in the cash register, must be assigned to a person.</span></span> <span data-ttu-id="d522b-200">Sie können einen Benutzer einer Person zuweisen, indem Sie **Systemverwaltung** &gt; **Benutzer** auswählen.</span><span class="sxs-lookup"><span data-stu-id="d522b-200">You can assign a user to a person by selecting **System administration** &gt; **Users**.</span></span>
-
-### <a name="set-up-cash-register-operators"></a><span data-ttu-id="d522b-201">Kassenbediener einrichten</span><span class="sxs-lookup"><span data-stu-id="d522b-201">Set up cash register operators</span></span>
-
-<span data-ttu-id="d522b-202">Sie können Kassenoperatoren einrichten, diese dem Kassenstandort zuweisen, und ein Standardterminal zuweisen, indem Sie **Debitoren** &gt; **Setup** &gt; **Kasse** &gt; **Kassenoperatoren** auswählen.</span><span class="sxs-lookup"><span data-stu-id="d522b-202">You can set up cash register operators, assign them to the cash register location, and assign a default terminal by selecting **Accounts receivable** &gt; **Setup** &gt; **Cash register** &gt; **Cash register operators**.</span></span>
-
-### <a name="set-up-methods-of-payment-that-require-fiscal-registration"></a><span data-ttu-id="d522b-203">Zahlungsmethoden einrichten, für die eine steuerliche Registrierung erforderlich ist</span><span class="sxs-lookup"><span data-stu-id="d522b-203">Set up methods of payment that require fiscal registration</span></span>
-
-<span data-ttu-id="d522b-204">Sie können Zahlungsmethoden einrichten, die in einer Kasse registriert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="d522b-204">You can set up methods of payment that must be registered in a cash register.</span></span> <span data-ttu-id="d522b-205">Wählen Sie **Debitoren** &gt; **Setup** &gt; **Kassen** &gt; **Kassenzahlungsmethoden** aus, und legen Sie dann die folgenden Felder fest.</span><span class="sxs-lookup"><span data-stu-id="d522b-205">Select **Accounts receivable** &gt; **Setup** &gt; **Cash registers** &gt; **Cash register methods of payment**, and then set the following fields.</span></span>
-
-| <span data-ttu-id="d522b-206">Feld</span><span class="sxs-lookup"><span data-stu-id="d522b-206">Field</span></span> | <span data-ttu-id="d522b-207">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d522b-207">Description</span></span> |
-|---|---|
-| <span data-ttu-id="d522b-208">Zahlungsmethode</span><span class="sxs-lookup"><span data-stu-id="d522b-208">Method of payment</span></span> | <span data-ttu-id="d522b-209">Wählen Sie eine Zahlungsmethode aus, die in der Kasse registriert werden muss und dem steuerlichen Dienst gesendet werden muss.</span><span class="sxs-lookup"><span data-stu-id="d522b-209">Select a method of payment that must be registered in the cash register and sent to the fiscal service.</span></span> |
-| <span data-ttu-id="d522b-210">Kassensteuerbetrag</span><span class="sxs-lookup"><span data-stu-id="d522b-210">Register tax amount</span></span> | <span data-ttu-id="d522b-211">Aktivieren Sie das Kontrollkästchen, um anzugeben, dass die Steuerbeträge, die dem Barzahlungsbetrag zugeordnet sind, im steuerlichen Dienst registriert werden müssen.</span><span class="sxs-lookup"><span data-stu-id="d522b-211">Select the check box to indicate that the tax amounts that are related to a cash payment amount must be registered in the fiscal service.</span></span> |
-
-#### <a name="important-notices"></a><span data-ttu-id="d522b-212">Wichtige Hinweise</span><span class="sxs-lookup"><span data-stu-id="d522b-212">Important notices</span></span>
-
-<span data-ttu-id="d522b-213">In den folgenden Szenarios können die Steuerbeträge, die dem Zahlungsbetrag zugeordnet sind, zuverlässig anhand der gebuchten Transaktionen identifiziert werden:</span><span class="sxs-lookup"><span data-stu-id="d522b-213">In the following scenarios, the tax amounts that are related to the payment amount can be reliably identified from the posted transactions:</span></span>
-
-- <span data-ttu-id="d522b-214">Für die Barzahlung, die automatisch gebucht wird, wenn eine Rechnung für Zahlung bei Lieferung (Zahlungsbedingungen für Zahlung bei Lieferung) gebucht wird.</span><span class="sxs-lookup"><span data-stu-id="d522b-214">For the cash payment that is automatically posted when a cash on delivery (COD) invoice (COD terms of payment) is posted.</span></span> <span data-ttu-id="d522b-215">In diesem Fall sind Steuerbeträge, die übermittelt werden, gleich den Steuerbeträgen, die durch eine Rechnungsbuchung erzeugt werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-215">In this case, tax amounts that are sent are equal to the tax amounts that are produced by an invoice posting.</span></span>
-- <span data-ttu-id="d522b-216">Für die Bargeldvorauszahlung, die manuell aus der Debitorenzahlungserfassung gebucht wird, wenn Mehrwertsteuerbeträge aus der Zahlungserfassung berechnet und gebucht werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-216">For the cash prepayment that is manually posted from the Customer payment journal, when sales tax amounts are calculated and posted from the payment journal.</span></span> <span data-ttu-id="d522b-217">(Steuerbeträge, die aus einer Vorauszahlung gebucht werden, werden immer gesendet, unabhängig von der Einstellung des Kontrollkästchens **Steuerbetrag registrieren**.)</span><span class="sxs-lookup"><span data-stu-id="d522b-217">(Tax amounts that are posted from a prepayment are always sent, regardless of the setting of the **Register tax amount** check box.)</span></span>
-
-<span data-ttu-id="d522b-218">Sie sollten sich bei der lokalen Steuerbehörden erkundigen, um die Anforderungen für die Registrierung von Steuerbeträgen zu identifizieren, die einer Barzahlung in der Kasse zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="d522b-218">You should consult the local tax authority to identify the requirements for registering tax amounts that are related to a cash payment in the cash register.</span></span> <span data-ttu-id="d522b-219">Sie sollten Zahlungsmethoden bei Bedarf auch aufteilen.</span><span class="sxs-lookup"><span data-stu-id="d522b-219">You should split methods of payment as required.</span></span>
-
-<span data-ttu-id="d522b-220">In den folgenden Szenarios können die Steuerbeträge, die dem Zahlungsbetrag zugeordnet sind, nicht zuverlässig anhand der gebuchten Transaktionen identifiziert werden:</span><span class="sxs-lookup"><span data-stu-id="d522b-220">In the following scenarios, the tax amounts that are related to the payment amount can't be reliably identified from the posted transactions:</span></span>
-
-- <span data-ttu-id="d522b-221">Für die Barzahlung, die manuell aus der Debitorenzahlungserfassung gebucht wird und gegenüber der zuvor gebuchten Rechnung beglichen wird, die einen gebuchten Steuerbetrag enthält.</span><span class="sxs-lookup"><span data-stu-id="d522b-221">For the cash payment that is manually posted from the Customer payment journal and settled against the previously posted invoice that contains a posted tax amount.</span></span>
-
-<span data-ttu-id="d522b-222">Wenn die Kassenzahlungsmethode konfiguriert wird, um Steuerbeträge zu erfassen, berechnet eine bestimmte Betragverteilungslogik ungefähre Steuerbeträge, basierend auf dem Zahlungsbetrag in diesem Szenario.</span><span class="sxs-lookup"><span data-stu-id="d522b-222">If the Cash register method of payment is configured to register tax amounts, a specific amount distribution logic calculates approximate tax amounts, based on the payment amount, in this scenario.</span></span>
-
-<span data-ttu-id="d522b-223">In diesen Szenarien werden die korrekten Steuerbeträge nur in der gebuchten Rechnung dargestellt, die beglichen ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-223">In these scenarios, the correct tax amounts are presented only in the posted invoice that is settled.</span></span> <span data-ttu-id="d522b-224">Erkundigen Sie sich bei der lokalen Steuerbehörden, um die korrekte Methode zum Übermitteln der fakturierten Steuerbeträge für Steuerbehördenüberprüfungen für diese Szenarien zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="d522b-224">Consult the local tax authority to identify the correct method for submitting the invoiced tax amounts to tax authority checks for these scenarios.</span></span>
-
-### <a name="create-terms-of-payment-for-a-cod-scenario"></a><span data-ttu-id="d522b-225">Erstellen von Zahlungsbedingungen für ein Szenario mit Zahlung bei Lieferung</span><span class="sxs-lookup"><span data-stu-id="d522b-225">Create terms of payment for a COD scenario</span></span>
-
-<span data-ttu-id="d522b-226">Wenn eine Barzahlung empfangen werden kann, wenn eine Rechnung gebucht wird, können Sie Zahlungsbedingungen erstellen, die die Zahlungsmethode **Zahlung bei Lieferung** haben.</span><span class="sxs-lookup"><span data-stu-id="d522b-226">If a cash payment can be received when an invoice is posted, you can create terms of payment that have the **Cash on delivery** payment method.</span></span> <span data-ttu-id="d522b-227">Wählen Sie **Debitoren** &gt; **Zahlung** &gt; **Zahlungsbedingungen** aus, und legen Sie dann die folgenden Felder fest.</span><span class="sxs-lookup"><span data-stu-id="d522b-227">Select **Account receivables** &gt; **Payment** &gt; **Terms of payment**, and then set the following fields.</span></span>
-
-| <span data-ttu-id="d522b-228">Feld</span><span class="sxs-lookup"><span data-stu-id="d522b-228">Field</span></span> | <span data-ttu-id="d522b-229">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d522b-229">Description</span></span> |
-|---|---|
-| <span data-ttu-id="d522b-230">Zahlungsart</span><span class="sxs-lookup"><span data-stu-id="d522b-230">Payment method</span></span> | <span data-ttu-id="d522b-231">Wählen Sie **Zahlung bei Lieferung** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-231">Select **COD**.</span></span> |
-| <span data-ttu-id="d522b-232">Barzahlung</span><span class="sxs-lookup"><span data-stu-id="d522b-232">Cash payment</span></span> | <span data-ttu-id="d522b-233">Legen Sie die Option auf **Ja** fest, um eine automatische Zahlungstransaktion zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="d522b-233">Set the option to **Yes** to create an automatic payment transaction.</span></span> |
-| <span data-ttu-id="d522b-234">Bargeld</span><span class="sxs-lookup"><span data-stu-id="d522b-234">Cash</span></span> | <span data-ttu-id="d522b-235">Wählen Sie das Hauptbuchkonto aus, das verwendet wird, um Barzahlungen zu buchen, die automatisch generiert werden.</span><span class="sxs-lookup"><span data-stu-id="d522b-235">Select the general ledger account that is used to post cash payments that are automatically generated.</span></span> |
-
-## <a name="example"></a><span data-ttu-id="d522b-236">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d522b-236">Example</span></span>
-
-<span data-ttu-id="d522b-237">In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäftsprozesse geführt, und es wird der steuerliche Dienst [EFSTA Fiscal Register (EFR)](http://public.efsta.net/efr/) als Beispiel verwendet:</span><span class="sxs-lookup"><span data-stu-id="d522b-237">This section walks you through the following business processes and uses the [EFSTA Fiscal Register (EFR)](http://public.efsta.net/efr/) fiscal service as an example:</span></span>
-
-- <span data-ttu-id="d522b-238">Nachdem Sie eine Barzahlung buchen, für die die Registrierung ansteht, wird eine Kassentransaktion erstellt, die zu signierende Daten hat.</span><span class="sxs-lookup"><span data-stu-id="d522b-238">After you post a cash payment that is liable for registration, a cash register transaction that has data that must be signed is created.</span></span> <span data-ttu-id="d522b-239">Diese Transaktion wird dann im angegebenen XML-Format an den steuerlichen Dienst zur Registrierung übermittelt.</span><span class="sxs-lookup"><span data-stu-id="d522b-239">This transaction is then sent, in the specified XML format, to the fiscal service for registration.</span></span>
-- <span data-ttu-id="d522b-240">Sie empfangen eine Antwort vom steuerlichen Dienst.</span><span class="sxs-lookup"><span data-stu-id="d522b-240">You receive a response from the fiscal service.</span></span> <span data-ttu-id="d522b-241">Diese Antwort hat eine Signatur und Steuercodes, die der steuerliche Dienst gemäß landes-/regionenspezifischer Regeln generiert.</span><span class="sxs-lookup"><span data-stu-id="d522b-241">This response has a signature and fiscal codes that the fiscal service generates according to country/region-specific rules.</span></span> <span data-ttu-id="d522b-242">Diese Antwort wird in einer steuerlichen Kassentransaktion gespeichert.</span><span class="sxs-lookup"><span data-stu-id="d522b-242">This response is stored in the cash register fiscal transaction.</span></span>
-- <span data-ttu-id="d522b-243">Der Barbeleg wird gedruckt.</span><span class="sxs-lookup"><span data-stu-id="d522b-243">The cash receipt is printed.</span></span> <span data-ttu-id="d522b-244">Dieser Beleg umfasst die Buchungsdaten, Signaturen und Steuercodes.</span><span class="sxs-lookup"><span data-stu-id="d522b-244">This receipt includes the transaction data, signatures, and fiscal codes.</span></span>
-
-### <a name="register-an-automatically-posted-cod-payment-for-a-free-text-invoice-and-print-a-cash-receipt"></a><span data-ttu-id="d522b-245">Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Freitextrechnung und Drucken eines Barbelegs</span><span class="sxs-lookup"><span data-stu-id="d522b-245">Register an automatically posted COD payment for a free text invoice and print a cash receipt</span></span>
-
-1. <span data-ttu-id="d522b-246">Wählen Sie **Debitoren** &gt; **Freitextrechnungen** &gt; **Alle Freitextrechnungen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-246">Select **Accounts receivable** &gt; **Free text invoices** &gt; **All free text invoices**.</span></span>
-2. <span data-ttu-id="d522b-247">Dient zum Erstellen einer Freitextrechnung.</span><span class="sxs-lookup"><span data-stu-id="d522b-247">Create a free text invoice.</span></span> <span data-ttu-id="d522b-248">Weitere Informationen finden Sie unter [Erstellen einer Freitextrechnung](../accounts-receivable/create-free-text-invoice-new.md).</span><span class="sxs-lookup"><span data-stu-id="d522b-248">For more information, see [Create a free text invoice](../accounts-receivable/create-free-text-invoice-new.md).</span></span> 
-3. <span data-ttu-id="d522b-249">Wählen Sie im Inforegister **Zahlung** eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-249">On the **Payment** FastTab, select a method of payment that is set up as a method of payment for the cash register.</span></span>
-4. <span data-ttu-id="d522b-250">Wählen Sie Zahlungsbedingungen aus, die für die Zahlung bei Lieferung eingerichtet sind.</span><span class="sxs-lookup"><span data-stu-id="d522b-250">Select terms of payment that are set up for COD.</span></span>
-5. <span data-ttu-id="d522b-251">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-251">Select **Post**.</span></span>
-6. <span data-ttu-id="d522b-252">Folgen Sie im Dialogfeld **Freitextrechnung buchen** diesen Schritten:</span><span class="sxs-lookup"><span data-stu-id="d522b-252">In the **Post free text invoice** dialog box, follow these steps:</span></span>
-
-    1. <span data-ttu-id="d522b-253">Aktivieren Sie im Inforegister **Parameter** das Kontrollkästchen **Beleg drucken**, damit ein Barbeleg gedruckt wird, nachdem die Rechnung gebucht wurde.</span><span class="sxs-lookup"><span data-stu-id="d522b-253">On the **Parameters** FastTab, select the **Print receipt** check box to print a cash receipt after the invoice is posted.</span></span>
-    2. <span data-ttu-id="d522b-254">Überprüfen Sie im Inforegister **Kasse** den Standort, das Terminal, die Kasse und die Operatorcodes.</span><span class="sxs-lookup"><span data-stu-id="d522b-254">On the **Cash register** FastTab, review the location, terminal, cash register, and operator codes.</span></span> <span data-ttu-id="d522b-255">Der Terminalcode wird automatisch aus dem Feld **Standardkassenterminal** auf der Seite **Kassenoperatoren** eingegeben.</span><span class="sxs-lookup"><span data-stu-id="d522b-255">The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page.</span></span> <span data-ttu-id="d522b-256">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-256">Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.</span></span>
-    3. <span data-ttu-id="d522b-257">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="d522b-257">Select **OK**.</span></span>
-
-7. <span data-ttu-id="d522b-258">Überprüfen Sie den Barbeleg, der für die gebuchte Rechnung generiert ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-258">Review the cash receipt that is generated for the posted invoice.</span></span> <span data-ttu-id="d522b-259">Standardmäßig ist der generierte Barbeleg als Datei verfügbar.</span><span class="sxs-lookup"><span data-stu-id="d522b-259">By default, the generated cash receipt is available as a file.</span></span> <span data-ttu-id="d522b-260">Informationen dazu, wie andere Ziele eingerichtet werden, die Sie für Barbelege verwenden können, finden Sie unter [Ziele für die elektronische Berichterstellung](../../dev-itpro/analytics/electronic-reporting-destinations.md).</span><span class="sxs-lookup"><span data-stu-id="d522b-260">For information about how to set up other destinations that you can use for cash receipts, see [Electronic Reporting Destinations](../../dev-itpro/analytics/electronic-reporting-destinations.md).</span></span>
-
-
-### <a name="register-an-automatically-posted-cod-payment-for-a-sales-order-invoice-and-print-a-cash-receipt"></a><span data-ttu-id="d522b-261">Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Auftragsrechnung und Drucken eines Barbelegs</span><span class="sxs-lookup"><span data-stu-id="d522b-261">Register an automatically posted COD payment for a sales order invoice and print a cash receipt</span></span>
-
-1. <span data-ttu-id="d522b-262">Wählen Sie **Debitoren** &gt; **Aufträge** &gt; **Alle Aufträge** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-262">Select **Accounts receivable** &gt; **Orders** &gt; **All sales orders**.</span></span>
-2. <span data-ttu-id="d522b-263">Erstellen Sie einen Auftrag.</span><span class="sxs-lookup"><span data-stu-id="d522b-263">Create a sales order.</span></span> <span data-ttu-id="d522b-264">Weitere Informationen finden Sie unter [Einen Auftrag erstellen](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).</span><span class="sxs-lookup"><span data-stu-id="d522b-264">For more information, see [Create a sales order](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).</span></span>
-3. <span data-ttu-id="d522b-265">Wählen Sie im Inforegister **Preis und Rabatt** eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-265">On the **Price and discount** FastTab, select a method of payment that is set up as a method of payment for the cash register.</span></span>
-4. <span data-ttu-id="d522b-266">Wählen Sie im Feld **Zahlung** die Zahlungsbedingungen aus, die für Zahlung bei Lieferung eingerichtet sind.</span><span class="sxs-lookup"><span data-stu-id="d522b-266">In the **Payment** field, select terms of payment that are set up for COD.</span></span>
-5. <span data-ttu-id="d522b-267">Wählen Sie **Rechnung** &gt; **Rechnung** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-267">Select **Invoice** &gt; **Invoice**.</span></span>
-6. <span data-ttu-id="d522b-268">Legen Sie im Inforegister **Parameter** die Option **Beleg drucken** auf **Ja** fest, damit ein Barbeleg gedruckt wird, nachdem die Rechnung gebucht wurde.</span><span class="sxs-lookup"><span data-stu-id="d522b-268">On the **Parameters** FastTab,set the **Print receipt** option to **Yes** to print a cash receipt after the invoice is posted.</span></span>
-7. <span data-ttu-id="d522b-269">Überprüfen Sie im Inforegister **Kasse** den Standort, das Terminal, die Kasse und die Operatorcodes.</span><span class="sxs-lookup"><span data-stu-id="d522b-269">On the **Cash register** FastTab, review the location, terminal, cash register, and operator codes.</span></span> <span data-ttu-id="d522b-270">Ändern Sie die Informationen nach Bedarf.</span><span class="sxs-lookup"><span data-stu-id="d522b-270">Modify the information as you require.</span></span> <span data-ttu-id="d522b-271">Der Terminalcode wird automatisch aus dem Feld **Standardkassenterminal** auf der Seite **Kassenoperatoren** eingegeben.</span><span class="sxs-lookup"><span data-stu-id="d522b-271">The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page.</span></span> <span data-ttu-id="d522b-272">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-272">Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.</span></span>
-
-### <a name="register-a-customer-payment-from-the-customer-payment-journal-and-print-a-cash-receipt"></a><span data-ttu-id="d522b-273">Registrieren einer Debitorenzahlung aus der Debitorenzahlungserfassung und Drucken eines Barbelegs</span><span class="sxs-lookup"><span data-stu-id="d522b-273">Register a customer payment from the Customer payment journal and print a cash receipt</span></span>
-
-1. <span data-ttu-id="d522b-274">Wählen Sie **Debitoren** &gt; **Erfassungen** &gt; **Zahlungen** &gt; **Zahlungserfassung** aus, um die Debitorenzahlungserfassung zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d522b-274">Select **Accounts receivables** &gt; **Journals** &gt; **Payments** &gt; **Payment journal** to open the Customer payment journal.</span></span> <span data-ttu-id="d522b-275">(Alternativ wählen Sie **Hauptbuch** &gt; **Erfassungen** &gt; **Allgemeine Erfassung** aus, um die allgemeine Erfassung zu öffnen.)</span><span class="sxs-lookup"><span data-stu-id="d522b-275">(Alternatively, select **General ledger** &gt; **Journals** &gt; **General journal** to open the General journal.)</span></span>
-2. <span data-ttu-id="d522b-276">Erstellen Sie die Erfassungspositionen, die eine Debitorenbarzahlung haben.</span><span class="sxs-lookup"><span data-stu-id="d522b-276">Create the journal lines that have a customer cash payment.</span></span>
-3. <span data-ttu-id="d522b-277">Wählen Sie auf der Registerkarte **Zahlung** eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-277">On the **Payment** tab, select a method of payment that is set up as a method of payment for the cash register.</span></span>
-4. <span data-ttu-id="d522b-278">Aktivieren Sie das Kontrollkästchen **Erfassungsbeleg für Vorauszahlung**, wenn die Zahlung eine Vorauszahlung ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-278">Select the **Prepayment journal voucher** check box if the payment is a prepayment.</span></span>
-5. <span data-ttu-id="d522b-279">Überprüfen Sie auf der Registerkarte **Zahlung** den Standort, das Terminal, die Kasse und die Operatorcodes.</span><span class="sxs-lookup"><span data-stu-id="d522b-279">On the **Payment** tab, review the location, terminal, cash register, and operator codes.</span></span> <span data-ttu-id="d522b-280">Ändern Sie die Informationen nach Bedarf.</span><span class="sxs-lookup"><span data-stu-id="d522b-280">Modify the information as you require.</span></span> <span data-ttu-id="d522b-281">Der Terminalcode wird automatisch aus dem Feld **Standardkassenterminal** auf der Seite **Kassenoperatoren** eingegeben.</span><span class="sxs-lookup"><span data-stu-id="d522b-281">The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page.</span></span> <span data-ttu-id="d522b-282">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-282">Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.</span></span>
-6. <span data-ttu-id="d522b-283">Wählen Sie **Buchen** &gt; **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-283">Select **Post** &gt; **Post**.</span></span>
-7. <span data-ttu-id="d522b-284">Wählen Sie **Drucken** &gt; **Barbeleg** aus, um einen Beleg zu drucken, der Steuercodes enthält.</span><span class="sxs-lookup"><span data-stu-id="d522b-284">Select **Print** &gt; **Cash receipt** to print a receipt that includes fiscal codes.</span></span>
-
-### <a name="register-a-customer-payment-from-the-slip-journal-and-print-a-cash-order-that-includes-cash-receipt-information-czech-republic-only"></a><span data-ttu-id="d522b-285">Registrieren einer Debitorenzahlung aus der Belegerfassung und Drucken eines Barauftrags, der Barbeleginformationen enthält (nur Tschechische Republik)</span><span class="sxs-lookup"><span data-stu-id="d522b-285">Register a customer payment from the Slip journal and print a cash order that includes cash receipt information (Czech Republic only)</span></span>
-
-1. <span data-ttu-id="d522b-286">Wählen Sie **Bargeld- und Bankverwaltung** &gt; **Erfassungen** &gt; **Belegerfassung** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-286">Select **Cash and bank management** &gt; **Journals** &gt; **Slip journal**.</span></span>
-2. <span data-ttu-id="d522b-287">Erstellen Sie die Erfassungspositionen, die eine Debitorenbarzahlung haben.</span><span class="sxs-lookup"><span data-stu-id="d522b-287">Create the journal lines that have a customer cash payment.</span></span>
-3. <span data-ttu-id="d522b-288">Überprüfen Sie auf der Registerkarte **Zahlung** die Felder im Abschnitt **Kasse**.</span><span class="sxs-lookup"><span data-stu-id="d522b-288">On the **Payment** tab, review the fields in the **Cash register** section.</span></span> <span data-ttu-id="d522b-289">Der Terminalcode wird automatisch aus dem Feld **Standardkassenterminal** auf der Seite **Kassenoperatoren** eingegeben.</span><span class="sxs-lookup"><span data-stu-id="d522b-289">The terminal code is automatically filled from the **Default cash register terminal** field on the **Cash register operators** page.</span></span> <span data-ttu-id="d522b-290">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde.</span><span class="sxs-lookup"><span data-stu-id="d522b-290">Change the terminal code only if the cash payment was received at a different cash register terminal.</span></span> 
-4. <span data-ttu-id="d522b-291">Wählen Sie **Dokumentgenehmigung** &gt; **Genehmigen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-291">Select **Documents approval** &gt; **Approve**.</span></span> <span data-ttu-id="d522b-292">Die Barauftragsnummer, die der Zahlung zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-292">The cash order number is assigned to the payment.</span></span>
-5. <span data-ttu-id="d522b-293">Wählen Sie **Buchen** &gt; **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-293">Select **Post** &gt; **Post**.</span></span>
-6. <span data-ttu-id="d522b-294">Wählen Sie **Drucken** &gt; **Barauftrag** aus, um einen Barauftrag zu drucken, der Steuercodes enthält.</span><span class="sxs-lookup"><span data-stu-id="d522b-294">Select **Print** &gt; **Cash order** to print a cash order that includes fiscal codes.</span></span>
-
-### <a name="cancel-a-payment"></a><span data-ttu-id="d522b-295">Zahlung stornieren</span><span class="sxs-lookup"><span data-stu-id="d522b-295">Cancel a payment</span></span>
-
-<span data-ttu-id="d522b-296">Wenn eine Barbelegnummer für eine Zahlung in der Kasse registriert wurde und Sie dann die Zahlung stornieren, wird eine neue Barbelegnummer in derselben Kasse erfasst.</span><span class="sxs-lookup"><span data-stu-id="d522b-296">If a cash receipt number has been registered for a payment in the cash register, and you then cancel the payment, a new cash receipt number is registered in the same cash register.</span></span> <span data-ttu-id="d522b-297">Der Zahlungsstornierungsbarbeleg enthält genau dieselben Mengen wie der ursprüngliche Beleg, aber die Beträge haben ein negatives Vorzeichen.</span><span class="sxs-lookup"><span data-stu-id="d522b-297">The payment cancellation cash receipt includes all the same amounts as the original receipt, but the amounts have a negative sign.</span></span>
-
-1. <span data-ttu-id="d522b-298">Öffnen Sie die Seite **Kundentransaktionen**:</span><span class="sxs-lookup"><span data-stu-id="d522b-298">Open the **Customer transactions** page:</span></span>
-
-    1. <span data-ttu-id="d522b-299">Wählen Sie **Debitoren** &gt; **Kunden** &gt; **Alle Kunden** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-299">Select **Accounts receivable** &gt; **Customers** &gt; **All Customers**.</span></span>
-    2. <span data-ttu-id="d522b-300">Wählen Sie einen Debitor aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-300">Select a customer.</span></span>
-    3. <span data-ttu-id="d522b-301">Wählen Sie im Aktivitätsbereich **Kunde** &gt; **Transaktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-301">On the Action Pane, select **Customer** &gt; **Transactions**.</span></span>
-
-2. <span data-ttu-id="d522b-302">Wählen Sie die zu stornierende Zahlungstransaktion.</span><span class="sxs-lookup"><span data-stu-id="d522b-302">Select the payment transaction to reverse.</span></span>
-3. <span data-ttu-id="d522b-303">Wählen Sie **Stornieren** &gt; **Zahlung stornieren** aus.</span><span class="sxs-lookup"><span data-stu-id="d522b-303">Select **Reverse** &gt; **Cancel payment**.</span></span>
-3. <span data-ttu-id="d522b-304">Geben Sie die erforderlichen Informationen ein, und wählen Sie dann **OK** aus, um die Zahlungsstornierungstransaktion zu erstellen und zur Seite **Kundentransaktionen** zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="d522b-304">Enter the required information, and then select **OK** to create the payment cancellation transaction and return to the **Customer transactions** page.</span></span>
-4. <span data-ttu-id="d522b-305">Wählen Sie die neue Zahlungsstornierungstransaktion aus, und wählen Sie anschließend **Drucken** &gt; **Barbeleg** aus, um einen Barbeleg zu drucken, der Steuercodes enthält.</span><span class="sxs-lookup"><span data-stu-id="d522b-305">Select the new payment cancellation transaction, and then select **Print** &gt; **Cash receipt** to print a cash receipt that includes fiscal codes.</span></span>
-
-### <a name="review-cash-register-fiscal-transactions-and-resend-a-transaction-to-the-cash-register"></a><span data-ttu-id="d522b-306">Überprüfen Sie die Kassensteuerbuchungen und übermitteln Sie erneut eine Buchung an die Kasse</span><span class="sxs-lookup"><span data-stu-id="d522b-306">Review cash register fiscal transactions and resend a transaction to the cash register</span></span>
-
-<span data-ttu-id="d522b-307">Sie können die Barzahlungen überprüfen, die registriert wurden, und Sie können auch das Barbelegoriginal oder eine Kopie des Barbelegs erneut drucken, indem Sie **Drucken** unter **Debitoren** &gt; **Anfragen** &gt; **Kassensteuerbuchungen** auswählen.</span><span class="sxs-lookup"><span data-stu-id="d522b-307">You can review the cash payments that have been registered, and also reprint Cash receipt original or a copu of Cash receipt, by selecting **Print** at the **Accounts receivable** &gt; **Inquires** &gt; **Cash register fiscal transactions**.</span></span>
-
-<span data-ttu-id="d522b-308">Das Gesetz beschreibt Ausnahmeszenarien, die der steuerliche Dienst richtig handhaben soll.</span><span class="sxs-lookup"><span data-stu-id="d522b-308">The law describes exception scenarios that the fiscal service should correctly handle.</span></span> <span data-ttu-id="d522b-309">Wenn eine Barzahlung aus irgendeinem Grund, der nicht mit einem dieser Ausnahmeszenarien zusammenhängt, nicht erfolgreich registriert wurde, wird eine Fehlermeldung angezeigt, nachdem Sie eine Barzahlung buchen.</span><span class="sxs-lookup"><span data-stu-id="d522b-309">If a cash payment wasn't successfully registered for a reason that isn't related to one of those exception scenarios, you will receive an error message after you post a cash payment.</span></span> <span data-ttu-id="d522b-310">Die Kassentransaktion, die den Status **Erstellt** hat, wird auf der Seite **Steuerbezogene Kassenbuchungen** verfügbar sein.</span><span class="sxs-lookup"><span data-stu-id="d522b-310">The cash register transaction that has a status of **Created** will be available on the **Cash register fiscal transactions** page.</span></span> <span data-ttu-id="d522b-311">Sie müssen die Probleme beheben und die Bartransaktionen, die für die Kasse erstellt werden, manuell erneut senden.</span><span class="sxs-lookup"><span data-stu-id="d522b-311">You must fix the issues and manually resend the cash transactions that are created to the cash register.</span></span> <span data-ttu-id="d522b-312">Andernfalls kann ein Barbeleg nicht gedruckt werden, der Steuercodes enthält.</span><span class="sxs-lookup"><span data-stu-id="d522b-312">Otherwise, you can't print a cash receipt that includes fiscal codes.</span></span> <span data-ttu-id="d522b-313">Wenn eine Barzahlung ordnungsgemäß registriert ist, hat sie den Status **Registriert**.</span><span class="sxs-lookup"><span data-stu-id="d522b-313">When a cash payment is correctly registered, it has a status of **Registered**.</span></span>
-
-<span data-ttu-id="d522b-314">In der folgenden Tabelle werden die Felder für Kassenzahlungsbuchungen beschrieben.</span><span class="sxs-lookup"><span data-stu-id="d522b-314">The following table describes the fields for cash register payment transactions.</span></span>
-
-<table>
-<thead>
-<tr>
-<th><span data-ttu-id="d522b-315">Feld</span><span class="sxs-lookup"><span data-stu-id="d522b-315">Field</span></span></th>
-<th><span data-ttu-id="d522b-316">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d522b-316">Description</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span data-ttu-id="d522b-317">Kasse</span><span class="sxs-lookup"><span data-stu-id="d522b-317">Cash register</span></span></td>
-<td><span data-ttu-id="d522b-318">Die Kennung der Kasse.</span><span class="sxs-lookup"><span data-stu-id="d522b-318">The ID of the cash register.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-319">Buchungskennung</span><span class="sxs-lookup"><span data-stu-id="d522b-319">Transaction ID</span></span></td>
-<td><span data-ttu-id="d522b-320">Die Kennung der Transaktion in der Kasse.</span><span class="sxs-lookup"><span data-stu-id="d522b-320">The ID of the transaction in the cash register.</span></span> <span data-ttu-id="d522b-321">Dieser Wert wird aus dem steuerlichen Dienst empfangen.</span><span class="sxs-lookup"><span data-stu-id="d522b-321">This value is received from the fiscal service.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-322">Kassen-URL</span><span class="sxs-lookup"><span data-stu-id="d522b-322">Cash register URL</span></span></td>
-<td><span data-ttu-id="d522b-323">Die URL des Ortes, in dem sich der steuerliche Dienst befindet.</span><span class="sxs-lookup"><span data-stu-id="d522b-323">The URL of the place where the fiscal service is located.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-324">Status</span><span class="sxs-lookup"><span data-stu-id="d522b-324">Status</span></span></td>
-<td><span data-ttu-id="d522b-325">Der Status der Buchung.</span><span class="sxs-lookup"><span data-stu-id="d522b-325">The status of the transaction.</span></span> <span data-ttu-id="d522b-326">Folgende Werte werden verwendet:</span><span class="sxs-lookup"><span data-stu-id="d522b-326">The following values are used:</span></span>
-<ul>
-<li><span data-ttu-id="d522b-327"><strong>Erstellt</strong> – Die Zahlungstransaktion ist gebucht, aber nicht registriert worden.</span><span class="sxs-lookup"><span data-stu-id="d522b-327"><strong>Created</strong> – The payment transaction has been posted but hasn&#39;t been registered.</span></span></li>
-<li><span data-ttu-id="d522b-328"><strong>Registriert</strong> – Die Zahlungstransaktion ist gebucht und registriert worden.</span><span class="sxs-lookup"><span data-stu-id="d522b-328"><strong>Registered</strong> – The payment transaction has been posted and registered.</span></span> <span data-ttu-id="d522b-329">(Somit haben Sie die Zahlungstransaktion an den steuerlichen Dienst übermittelt, und Sie haben eine Antwort empfangen, die Steuercodes enthält.)</span><span class="sxs-lookup"><span data-stu-id="d522b-329">(In other words, you&#39;ve sent the payment transaction to the fiscal service, and you&#39;ve received a response that includes fiscal codes.)</span></span></li>
-</ul></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-330">(CZ/Tschechische Republik) Offline</span><span class="sxs-lookup"><span data-stu-id="d522b-330">(CZ/Czech Republic) Offline</span></span></td>
-<td><span data-ttu-id="d522b-331">Ein Indikator, dass die Bartransaktion offline registriert wurde (zugelassene Ausnahme) und ein PKP (Unterzeichnungscode) empfangen wurde.</span><span class="sxs-lookup"><span data-stu-id="d522b-331">An indicator that the cash transaction was registered offline (allowed exception), and a PKP (signature code) was received.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-332">Terminal</span><span class="sxs-lookup"><span data-stu-id="d522b-332">Terminal</span></span></td>
-<td><span data-ttu-id="d522b-333">Der Code des Kassenterminals.</span><span class="sxs-lookup"><span data-stu-id="d522b-333">The code of the cash register terminal.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-334">Operator</span><span class="sxs-lookup"><span data-stu-id="d522b-334">Operator</span></span></td>
-<td><span data-ttu-id="d522b-335">Der Code des Kassenoperators.</span><span class="sxs-lookup"><span data-stu-id="d522b-335">The code of the cash register operator.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-336">Beleg</span><span class="sxs-lookup"><span data-stu-id="d522b-336">Voucher</span></span></td>
-<td><span data-ttu-id="d522b-337">Die Belegnummer der gebuchten Bartransaktion.</span><span class="sxs-lookup"><span data-stu-id="d522b-337">The voucher number of the posted cash transaction.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-338">Termin</span><span class="sxs-lookup"><span data-stu-id="d522b-338">Date</span></span></td>
-<td><span data-ttu-id="d522b-339">Das Datum der Buchung.</span><span class="sxs-lookup"><span data-stu-id="d522b-339">The date of the transaction.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-340">Belegsnummer</span><span class="sxs-lookup"><span data-stu-id="d522b-340">Receipt number</span></span></td>
-<td><span data-ttu-id="d522b-341">Die Nummer des Barbelegs.</span><span class="sxs-lookup"><span data-stu-id="d522b-341">The number of the cash receipt.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-342">Datum und Uhrzeit der Buchung</span><span class="sxs-lookup"><span data-stu-id="d522b-342">Transaction date and time</span></span></td>
-<td><span data-ttu-id="d522b-343">Datum und Uhrzeit der registrierten Transaktion.</span><span class="sxs-lookup"><span data-stu-id="d522b-343">The date and time of the registered transaction.</span></span> <span data-ttu-id="d522b-344">Dieser Wert wird aus dem steuerlichen Dienst empfangen.</span><span class="sxs-lookup"><span data-stu-id="d522b-344">This value is received from the fiscal service.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-345">Belegsbetrag</span><span class="sxs-lookup"><span data-stu-id="d522b-345">Receipt amount</span></span></td>
-<td><span data-ttu-id="d522b-346">Der Zahlungsbetrag.</span><span class="sxs-lookup"><span data-stu-id="d522b-346">The payment amount.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-347">Währung</span><span class="sxs-lookup"><span data-stu-id="d522b-347">Currency</span></span></td>
-<td><span data-ttu-id="d522b-348">Die Währung der Zahlung.</span><span class="sxs-lookup"><span data-stu-id="d522b-348">The currency of the payment.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-349">Name</span><span class="sxs-lookup"><span data-stu-id="d522b-349">Name</span></span></td>
-<td><span data-ttu-id="d522b-350">Der Name des Steuercodes, der vom steuerlichen Dienst empfangen ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-350">The name of the fiscal code that is received from the fiscal service.</span></span> <span data-ttu-id="d522b-351">Folgende Werte können verwendet werden:</span><span class="sxs-lookup"><span data-stu-id="d522b-351">The following values can be used:</span></span>
-<ul>
-<li><span data-ttu-id="d522b-352"><strong>Info</strong> – Zusätzliche Informationen</span><span class="sxs-lookup"><span data-stu-id="d522b-352"><strong>Info</strong> – Additional information</span></span></li>
-<li><span data-ttu-id="d522b-353">(AT/Österreich) <strong>Code</strong> – Signatur</span><span class="sxs-lookup"><span data-stu-id="d522b-353">(AT/Austria) <strong>Code</strong> – Signature</span></span></li>
-<li><span data-ttu-id="d522b-354">(AT/Österreich) <strong>Link</strong> – Link, der von Signatur abhängt</span><span class="sxs-lookup"><span data-stu-id="d522b-354">(AT/Austria) <strong>Link</strong> – Signature-dependent link</span></span></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-355">Beschriftung</span><span class="sxs-lookup"><span data-stu-id="d522b-355">Label</span></span></td>
-<td><span data-ttu-id="d522b-356">Die Bezeichnung des Steuercodes, der vom steuerlichen Dienst empfangen ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-356">The label of the fiscal code that is received from the fiscal service.</span></span> <span data-ttu-id="d522b-357">Folgende Werte können verwendet werden:</span><span class="sxs-lookup"><span data-stu-id="d522b-357">The following values can be used:</span></span>
-<ul>
-<li><span data-ttu-id="d522b-358">(CZ/Tschechische Republik) <strong>FIK</strong> – Steuerlicher Kennungscode</span><span class="sxs-lookup"><span data-stu-id="d522b-358">(CZ/Czech Republic) <strong>FIK</strong> – Fiscal identification code</span></span></li>
-<li><span data-ttu-id="d522b-359">(CZ/Tschechische Republik) <strong>BKP</strong> – Sicherheitscode</span><span class="sxs-lookup"><span data-stu-id="d522b-359">(CZ/Czech Republic) <strong>BKP</strong> – Security code</span></span></li>
-<li><span data-ttu-id="d522b-360">(CZ/Tschechische Republik) <strong>PKP</strong> – Unterzeichnungscode (Dieser Code wird im Fall einer Offlineregistrierung zurückgegeben.)</span><span class="sxs-lookup"><span data-stu-id="d522b-360">(CZ/Czech Republic) <strong>PKP</strong> – Signature code (This code is returned in the event of offline registration.)</span></span></li>
-</ul>
-</td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-361">Wert</span><span class="sxs-lookup"><span data-stu-id="d522b-361">Value</span></span></td>
-<td><span data-ttu-id="d522b-362">Der Wert des Steuercodes, der vom steuerlichen Dienst empfangen ist.</span><span class="sxs-lookup"><span data-stu-id="d522b-362">The value of the fiscal code that is received from the fiscal service.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-363">Wert</span><span class="sxs-lookup"><span data-stu-id="d522b-363">Value</span></span></td>
-<td><span data-ttu-id="d522b-364">Der Prozentsatz der registrierten Steuer.</span><span class="sxs-lookup"><span data-stu-id="d522b-364">The percentage of registered tax.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-365">Mehrwertsteuerbetrag</span><span class="sxs-lookup"><span data-stu-id="d522b-365">Sales tax amount</span></span></td>
-<td><span data-ttu-id="d522b-366">Der Betrag der registrierten Steuer.</span><span class="sxs-lookup"><span data-stu-id="d522b-366">The amount of registered tax.</span></span></td>
-</tr>
-<tr>
-<td><span data-ttu-id="d522b-367">Bruttobetrag</span><span class="sxs-lookup"><span data-stu-id="d522b-367">Gross amount</span></span></td>
-<td><span data-ttu-id="d522b-368">Der Betrag der registrierten Zahlung.</span><span class="sxs-lookup"><span data-stu-id="d522b-368">The amount of the registered payment.</span></span></td>
-</tr>
-</tbody>
-</table>
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="emea-fiscal-service-integration.md" target-language="de-DE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>emea-fiscal-service-integration.18f8e4.f10413ce36b895a32ec0133887c43da42fcddbeb.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>f10413ce36b895a32ec0133887c43da42fcddbeb</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-fiscal-service-integration.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Fiscal service (ESR) integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integration von steuerlichem Dienst (ESR)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This topic provides information about the fiscal service integration for Austria and the Czech Republic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieses Thema enthält Informationen zur Integration eines steuerlichen Diensts für Österreich und die Tschechische Republik.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>Fiscal service (ESR) integration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Integration von steuerlichem Dienst (ESR)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>In Austria, all cash payments should be signed by an external device or service, and they should be securely stored.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In Österreich sollten alle Barzahlungen durch ein externes Gerät oder einen externen Dienst signiert werden, und sie sollten sicher gespeichert werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>In the Czech Republic, all cash payments should be sent to the government portal for a fiscal signature.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In der Tschechischen Republik sollten alle Barzahlungen an das Behördenportal für eine steuerliche Signatur übermittelt werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>In both countries, a cash receipt should be issued where the signature is printed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In beiden Ländern sollte ein Barbeleg ausgestellt werden, auf dem die Signatur, bzw. Unterschrift gedruckt wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To support these country-specific requirements, Microsoft Dynamics 365 for Finance and Operations, lets you integrate with a third-party fiscal service that complies with specific requirements for cash payment control in various countries or regions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um diese landesspezifischen Anforderungen zu unterstützen, ermöglicht Microsoft Dynamics 365 for Finance and Operations Ihnen, eine Integration mit dem steuerlichen Dienst eines Drittanbieters herzustellen, der bestimmte Anforderungen für die Barzahlungskontrolle in verschiedenen Ländern oder Regionen erfüllt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>It's assumed that the third-party fiscal service meets all other country-specific legal requirements about registered transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es wird vorausgesetzt, dass der steuerliche Dienst des Drittanbieters alle anderen landesspezifischen gesetzlichen Anforderungen bezüglich registrierter Transaktionen erfüllt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>You're responsible for correctly setting up and administering the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sind für die ordnungsgemäße Einrichtung und Verwaltung des steuerlichen Diensts verantwortlich.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Available configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verfügbare Konfigurationen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>The formats of the cash receipt, the XML request to the fiscal service, and the XML response from the fiscal service are configured as Electronic reporting (ER) configurations that are stored in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Formate des Barbelegs, die XML-Anforderung des steuerlichen Diensts und die XML-Antwort vom steuerlichen Dienst werden als Konfigurationen zur elektronischen Berichterstellung (EB) konfiguriert, die in der Bibliothek freigegebener Anlagen in Microsoft Dynamics Lifecycle Services (LCS) gespeichert werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>The following configurations are available.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die folgenden Konfigurationen sind verfügbar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Configuration name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurationsname</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Configuration description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konfigurationsbeschreibung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Comment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kommentar</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>ER configuration file in the LCS Shared asset library</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EB-Konfigurationsdatei in der LCS-Bibliothek freigegebener Anlagen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source><bpt id="p1">**</bpt>Cash Receipt Model<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Barbelegmodell<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source><bpt id="p1">**</bpt>Data model for the cash receipt format<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Datenmodell für das Barbelegformat<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source><bpt id="p1">**</bpt>Cash Receipt Model.version.1.xml<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Barbeleg Model.version.1.xml<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>Cash Receipt Format</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barbelegformat</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>Basic format for a cash receipt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundlegendes Format für einen Barbeleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Cash Receipt Format.version.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barbeleg Format.version.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Cash Receipt Format (AT)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barbelegformat (AT)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Format for a cash receipt in Austria (This format includes a Quick Response Code <ph id="ph1">\[</ph>QR code<ph id="ph2">\]</ph>.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Format für ein Barbeleg in Österreich (Dieses Format enthält einen Quick Response Code <ph id="ph1">\[</ph>QR-Code<ph id="ph2">\]</ph>)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>Cash Receipt Format (AT).version.1.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barbelegformat (AT).version.1.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Cash Receipt Format (CZ)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barbelegformat (CZ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Format for a cash receipt in the Czech Republic (This format includes the Business Premises <ph id="ph1">\[</ph>BP<ph id="ph2">\]</ph> ID.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Format für einen Barbeleg in der Tschechischen Republik (Dieses Format enthält die ID der Geschäftsräumlichkeiten <ph id="ph1">\[</ph>BP<ph id="ph2">\]</ph>.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Cash Receipt Format (CZ).version.1.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barbelegformat (CZ).version.1.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source><bpt id="p1">**</bpt>Cash Register Model<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kassenmodell<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source><bpt id="p1">**</bpt>Data model for cash register integration<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Datenmodell für Kassenintegration<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source><bpt id="p1">**</bpt>Cash Register Model.version.1.xml<ept id="p1">**</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Kasse Model.version.1.xml<ept id="p1">**</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>ESR Request example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Anforderungsbeispiel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Example of a European Fiscal Standards Association (EFSTA) Simple Receipt (ESR) Request</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beispiel einer einfachen Beleganforderung (ESR) gemäß der European Fiscal Standards Association (EFSTA)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Basic format for a sample XML request to the EFSTA fiscal service (This format can be used in Austria.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundformat für eine Beispiel-XML-Anforderung an den steuerlichen Dienst der EFSTA (Dieses Format kann in Österreich verwendet werden.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>ESR Request example.version.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Anforderung example.version.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>ESR Request example (CZ)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Anforderungsbeispiel (CZ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Example of an ESR Request for the Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beispiel einer ESR-Anforderung für die Tschechische Republik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Format for a sample XML request to the EFSTA fiscal service in the Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Format für eine Beispiel-XML-Anforderung an den steuerlichen Dienst der EFSTA in der Tschechischen Republik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>ESR Request example (CZ).version.1.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Anforderungsbeispiel (CZ).version.1.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>ESR Response example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Antwortbeispiel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Example of an ESR Response</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beispiel einer ESR-Antwort</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>Basic format for a sample XML response to the EFSTA fiscal service (This format can be used in Austria.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundformat für eine Beispiel-XML-Antwort an den steuerlichen Dienst der EFSTA (Dieses Format kann in Österreich verwendet werden.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>ESR Response example.version.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Antwort example.version.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>ESR Response example (CZ)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Antwortbeispiel (CZ)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Example of an ESR Response for the Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beispiel einer ESR-Antwort für die Tschechische Republik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Format for a sample XML response to the EFSTA fiscal service in the Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Format für eine Beispiel-XML-Antwort an den steuerlichen Dienst der EFSTA in der Tschechischen Republik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>ESR Response example (CZ).version.1.1.1.xml</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ESR-Antwortbeispiel (CZ).version.1.1.1.xml</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Einrichten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Cash registers</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Every cash register must be set up to communicate with the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kommuniziert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>You can set up cash registers on the <bpt id="p1">**</bpt>Cash registers<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Accounts receivable<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Cash registers<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Cash registers<ept id="p5">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Kassen auf der Seite <bpt id="p1">**</bpt>Kassen<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Debitoren<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Kassen<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Kassen<ept id="p5">**</ept>) einrichten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>The following table gives more information about the setup that is required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In der folgenden Tabelle werden weitere Informationen über die Einrichtung beschrieben, die erforderlich ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Setup</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Einrichten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Details</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Details</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>More information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Cash register settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kasseneinstellungen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Specify the URL of the cash register, the name of the instance of Microsoft Azure Key Vault, and the class name.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Geben Sie die URL der Kasse, den Namen der Instanz von Microsoft Azure Key Vault und den Klassennamen an.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Cash register URL<ept id="p1">&lt;/strong&gt;</ept> – Enter the URL of the fiscal service.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kassen-URL<ept id="p1">&lt;/strong&gt;</ept> – Geben Sie die URL des steuerlichen Diensts ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Warning:<ept id="p1">&lt;/strong&gt;</ept> Third-party services or other services that you configure here don&amp;#39;t require certification, and they might not meet Microsoft privacy standards.</source><target logoport:matchpercent="93" state="translated" state-qualifier="fuzzy-match"><bpt id="p1">&lt;strong&gt;</bpt>Warnung:<ept id="p1">&lt;/strong&gt;</ept> Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source>You should review each service&amp;#39;s privacy documentation and work with each service provider to learn more about the level of compliance that each service provides.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source>You&amp;#39;re responsible for making sure that these services meet your security-related, privacy-related, and legal standards.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sind dafür verantwortlich, sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source>You bear the risk of using these services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie tragen das Risiko der Verwendung dieser Dienste.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source>Microsoft gives no express warranties, guarantees, or conditions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="164">
+          <source>We strongly recommend that you use only services that provide secure and authorized connections (that is, services that use the HTTPS protocol).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="165">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Key Vault name<ept id="p1">&lt;/strong&gt;</ept> – If the fiscal service is accessible at a secure connection (that is, the URL starts with https://), you should set up certificates and store them correctly on both sides (Finance and Operations and the third-party fiscal service).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Key Vault-Name<ept id="p1">&lt;/strong&gt;</ept> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="166">
+          <source>In this field, select the name of the Azure Key Vault instance where the Finance and Operations certificate is stored.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="167">
+          <source>For more information, see <bpt id="p1">&lt;a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client"&gt;</bpt>Setting up Azure Key Vault Client<ept id="p1">&lt;/a&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen finden Sie unter <bpt id="p1">&lt;a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client"&gt;</bpt>Einen Azure Key Vault-Client einrichten<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="168">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Class name<ept id="p1">&lt;/strong&gt;</ept> – Select the class where specifics of the integration with the fiscal service are implemented.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Klassenname<ept id="p1">&lt;/strong&gt;</ept> – Wählen Sie die Klasse aus, in der Eigenschaften der Integration mit dem steuerlichen Dienst implementiert werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="169">
+          <source>The available class is <bpt id="p1">&lt;strong&gt;</bpt>CashRegisterProcessingEFSTA_W<ept id="p1">&lt;/strong&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die verfügbare Klasse ist <bpt id="p1">&lt;strong&gt;</bpt>CashRegisterProcessingEFSTA_W<ept id="p1">&lt;/strong&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="170">
+          <source>Configurations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Varianten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="171">
+          <source>For each cash register, select the ER formats to use to print receipts, send requests to the fiscal service, and receive responses from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie für jede Kasse die EB-Formate aus, die verwendet werden müssen, um Belege auszudrucken, Anforderungen an den steuerlichen Dienst zu senden und Antworten vom steuerlichen Dienst zu empfangen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="172">
+          <source>The ER formats that you select must be appropriate for the legal entity&amp;#39;s primary address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die EB-Formate, die Sie auswählen, müssen für die primäre Adresse der juristischen Person geeignet sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="173">
+          <source>For example, for the receipt format, select <bpt id="p1">&lt;strong&gt;</bpt>Cash receipt format (AT)<ept id="p1">&lt;/strong&gt;</ept> for Austria and <bpt id="p2">&lt;strong&gt;</bpt>Cash receipt format (CZ)<ept id="p2">&lt;/strong&gt;</ept> for the Czech Republic.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für das Belegformat wählen Sie beispielsweise <bpt id="p1">&lt;strong&gt;</bpt>Barbelegformat (AT)<ept id="p1">&lt;/strong&gt;</ept> für Österreich und <bpt id="p2">&lt;strong&gt;</bpt>Barbelegformat (CZ)<ept id="p2">&lt;/strong&gt;</ept> für die Tschechische Republik aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="174">
+          <source>If you can't find a format in the list, you can download recent electronic formats from LCS.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie kein Format in der Liste finden, können Sie aktuelle elektronische Formate von LCS herunterladen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="175">
+          <source>For more information, see <bpt id="p1">&lt;a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs"&gt;</bpt>Download Electronic reporting configurations from Lifecycle Service<ept id="p1">&lt;/a&gt;</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen finden Sie unter <bpt id="p1">&lt;a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs"&gt;</bpt>Elektronische Berichtskonfigurationen aus Lifecycle Service herunterladen<ept id="p1">&lt;/a&gt;</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="176">
+          <source>Cash register certificate settings</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassenzertifikatseinstellungen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="177">
+          <source>Enable usage of self-signed certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie die Verwendung selbstsignierter Zertifikate.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="178">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Use a self-signed certificate<ept id="p1">&lt;/strong&gt;</ept> – Set this option to <bpt id="p2">&lt;strong&gt;</bpt>Yes<ept id="p2">&lt;/strong&gt;</ept> if you will use a self-generated, self-signed certificate that you can&amp;#39;t add to the list of trusted certificates.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Verwenden eines selbstsignierten Zertifikats<ept id="p1">&lt;/strong&gt;</ept> – Legen Sie diese Option auf <bpt id="p2">&lt;strong&gt;</bpt>Ja<ept id="p2">&lt;/strong&gt;</ept> fest, wenn Sie ein selbstgeneriertes, selbstsigniertes Zertifikat verwenden, das sie nicht der Liste vertrauenswürdiger Zertifikate hinzufügen können.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="179">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Cash register certificate thumbprint<ept id="p1">&lt;/strong&gt;</ept> – Enter the thumbprint of the self-signed certificate that is stored in a fiscal service, and that will be used to validate the fiscal service certificate.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Kassenzertifikats-Fingerabdruck<ept id="p1">&lt;/strong&gt;</ept> – Geben Sie den Fingerabdruck des selbst signierten Zertifikats ein, das in einem steuerlichen Dienst gespeichert ist und das verwendet wird, um das Zertifikat des steuerlichen Diensts zu überprüfen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="180">
+          <source>Cash register locations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassenstandorte</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="181">
+          <source>You can set up the locations of cash registers on the <bpt id="p1">**</bpt>Cash register locations<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Accounts receivable<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Cash registers<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Cash register locations<ept id="p5">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Standorte von Kassen auf der Seite <bpt id="p1">**</bpt>Kassenstandorte<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Debitoren<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Kassen<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Kassenstandorte<ept id="p5">**</ept>) einrichten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="182">
+          <source>Prerequisites for the Czech Republic</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Voraussetzungen für die Tschechische Republik</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="183">
+          <source>Before you set up cash register locations for a legal entity that has its primary address in the Czech Republic, you must follow these steps.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bevor Sie Kassenstandorte für eine juristische Person einrichten, deren primäre Adresse in der Tschechischen Republik liegt, müssen Sie diese Schritte befolgen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="184">
+          <source>Create a tax registration type for the BP ID by selecting <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Global address book<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Registration types<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Registration types<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erstellen Sie einen Steuerregistrierungstyp für die Geschäftsraumkennung, indem Sie <bpt id="p1">**</bpt>Organisationsverwaltung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Globales Adressbuch<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Registrierungstypen<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Registrierungstypen<ept id="p4">**</ept> auswählen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="185">
+          <source>This registration type should be restricted to <bpt id="p1">**</bpt>Organization<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Registrierungstyp sollte auf <bpt id="p1">**</bpt>Organisation<ept id="p1">**</ept> eingeschränkt werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="186">
+          <source>Associate the registration type with the <bpt id="p1">**</bpt>Business Premise ID<ept id="p1">**</ept> registration category:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ordnen Sie den Registrierungstyp der Registrierungskategorie <bpt id="p1">**</bpt>Geschäftsraumkennung<ept id="p1">**</ept> zu:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="187">
+          <source>Select <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Global address book<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Registration types<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Registration categories<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Organisationsverwaltung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Globales Adressbuch<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Registrierungstypen<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Registrierungskategorien<ept id="p4">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="188">
+          <source>Select the registration type that you created earlier, and then, in the <bpt id="p1">**</bpt>Registration category<ept id="p1">**</ept> field, select <bpt id="p2">**</bpt>Business Premise ID<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie den Registrierungstyp aus, den Sie zuvor erstellt haben, und wählen Sie anschließend im Feld <bpt id="p1">**</bpt>Registrierungskategorie<ept id="p1">**</ept> die <bpt id="p2">**</bpt>Geschäftsraumkennung<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="189">
+          <source>Associate the BP ID with the operating unit address of the operating unit that will be used for the cash register location.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ordnen Sie die Geschäftsraumkennung der Organisationseinheitsadresse der Organisationseinheit zu, die für den Kassenstandort verwendet wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="190">
+          <source>Select <bpt id="p1">**</bpt>Organization administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Common<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Organizations<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Internal organizations<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Organisationsverwaltung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Gemeinsam<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Organisationen<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Interne Organisationen<ept id="p4">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="191">
+          <source>Select the organization to associate with the BP ID.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie die Organisation aus, die der Geschäftsraumkennung zuzuordnen ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="192">
+          <source>On the <bpt id="p1">**</bpt>Addresses<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>More options<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Advanced<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Inforegister <bpt id="p1">**</bpt>Adressen<ept id="p1">**</ept> die Option <bpt id="p2">**</bpt>Weitere Optionen<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Erweitert<ept id="p3">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="193">
+          <source>On the <bpt id="p1">**</bpt>Registration ID<ept id="p1">**</ept> FastTab, select <bpt id="p2">**</bpt>Add<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Inforegister <bpt id="p1">**</bpt>Registrierungskennung<ept id="p1">**</ept> die Option <bpt id="p2">**</bpt>Hinzufügen<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="194">
+          <source>Select the registration type that you created earlier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie den Registrierungstyp aus, den Sie zuvor erstellt haben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="195">
+          <source>Enter the registration number.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie die Registrierungsnummer ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="196">
+          <source>Create cash register terminals</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassenterminals erstellen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="197">
+          <source>You can create the cash register terminals that will be available for the location, and then assign the cash register to the terminal, on the <bpt id="p1">**</bpt>Cash register terminals<ept id="p1">**</ept> page (<bpt id="p2">**</bpt>Accounts receivable<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Cash registers<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Cash register terminals<ept id="p5">**</ept>).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können die Kassenterminals erstellen, die für den Standort verfügbar sind, und anschließend weisen Sie die Kasse dem Terminal hinzu, auf der Seite <bpt id="p1">**</bpt>Kassenterminals<ept id="p1">**</ept> (<bpt id="p2">**</bpt>Debitoren<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Setup<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Kassen<ept id="p4">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p5">**</bpt>Kassenterminals<ept id="p5">**</ept>).</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="198">
+          <source>Assign the user to a person</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Den Benutzer einer Person zuweisen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="199">
+          <source>The user who will act as a cash operator, and who will be allowed to log cash transactions that are registered in the cash register, must be assigned to a person.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Benutzer, der als Bargeldoperator fungiert und der Bargeldtransaktionen protokollieren darf, die in der Kasse registriert sind, muss einer Person zugewiesen sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="200">
+          <source>You can assign a user to a person by selecting <bpt id="p1">**</bpt>System administration<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Users<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können einen Benutzer einer Person zuweisen, indem Sie <bpt id="p1">**</bpt>Systemverwaltung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Benutzer<ept id="p2">**</ept> auswählen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="201">
+          <source>Set up cash register operators</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassenbediener einrichten</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="202">
+          <source>You can set up cash register operators, assign them to the cash register location, and assign a default terminal by selecting <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Cash register<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Cash register operators<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Kassenoperatoren einrichten, diese dem Kassenstandort zuweisen, und ein Standardterminal zuweisen, indem Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kasse<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Kassenoperatoren<ept id="p4">**</ept> auswählen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="203">
+          <source>Set up methods of payment that require fiscal registration</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zahlungsmethoden einrichten, für die eine steuerliche Registrierung erforderlich ist</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="204">
+          <source>You can set up methods of payment that must be registered in a cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Zahlungsmethoden einrichten, die in einer Kasse registriert werden müssen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="205">
+          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Cash registers<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Cash register methods of payment<ept id="p4">**</ept>, and then set the following fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Setup<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Kassen<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Kassenzahlungsmethoden<ept id="p4">**</ept> aus, und legen Sie dann die folgenden Felder fest.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="206">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feld</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="207">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="208">
+          <source>Method of payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zahlungsmethode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="209">
+          <source>Select a method of payment that must be registered in the cash register and sent to the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie eine Zahlungsmethode aus, die in der Kasse registriert werden muss und dem steuerlichen Dienst gesendet werden muss.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="210">
+          <source>Register tax amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassensteuerbetrag</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="211">
+          <source>Select the check box to indicate that the tax amounts that are related to a cash payment amount must be registered in the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie das Kontrollkästchen, um anzugeben, dass die Steuerbeträge, die dem Barzahlungsbetrag zugeordnet sind, im steuerlichen Dienst registriert werden müssen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="212">
+          <source>Important notices</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wichtige Hinweise</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="213">
+          <source>In the following scenarios, the tax amounts that are related to the payment amount can be reliably identified from the posted transactions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Szenarios können die Steuerbeträge, die dem Zahlungsbetrag zugeordnet sind, zuverlässig anhand der gebuchten Transaktionen identifiziert werden:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="214">
+          <source>For the cash payment that is automatically posted when a cash on delivery (COD) invoice (COD terms of payment) is posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für die Barzahlung, die automatisch gebucht wird, wenn eine Rechnung für Zahlung bei Lieferung (Zahlungsbedingungen für Zahlung bei Lieferung) gebucht wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="215">
+          <source>In this case, tax amounts that are sent are equal to the tax amounts that are produced by an invoice posting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Fall sind Steuerbeträge, die übermittelt werden, gleich den Steuerbeträgen, die durch eine Rechnungsbuchung erzeugt werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="216">
+          <source>For the cash prepayment that is manually posted from the Customer payment journal, when sales tax amounts are calculated and posted from the payment journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für die Bargeldvorauszahlung, die manuell aus der Debitorenzahlungserfassung gebucht wird, wenn Mehrwertsteuerbeträge aus der Zahlungserfassung berechnet und gebucht werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="217">
+          <source>(Tax amounts that are posted from a prepayment are always sent, regardless of the setting of the <bpt id="p1">**</bpt>Register tax amount<ept id="p1">**</ept> check box.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Steuerbeträge, die aus einer Vorauszahlung gebucht werden, werden immer gesendet, unabhängig von der Einstellung des Kontrollkästchens <bpt id="p1">**</bpt>Steuerbetrag registrieren<ept id="p1">**</ept>.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="218">
+          <source>You should consult the local tax authority to identify the requirements for registering tax amounts that are related to a cash payment in the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sollten sich bei der lokalen Steuerbehörden erkundigen, um die Anforderungen für die Registrierung von Steuerbeträgen zu identifizieren, die einer Barzahlung in der Kasse zugeordnet sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="219">
+          <source>You should split methods of payment as required.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sollten Zahlungsmethoden bei Bedarf auch aufteilen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="220">
+          <source>In the following scenarios, the tax amounts that are related to the payment amount can't be reliably identified from the posted transactions:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Szenarios können die Steuerbeträge, die dem Zahlungsbetrag zugeordnet sind, nicht zuverlässig anhand der gebuchten Transaktionen identifiziert werden:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="221">
+          <source>For the cash payment that is manually posted from the Customer payment journal and settled against the previously posted invoice that contains a posted tax amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für die Barzahlung, die manuell aus der Debitorenzahlungserfassung gebucht wird und gegenüber der zuvor gebuchten Rechnung beglichen wird, die einen gebuchten Steuerbetrag enthält.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="222">
+          <source>If the Cash register method of payment is configured to register tax amounts, a specific amount distribution logic calculates approximate tax amounts, based on the payment amount, in this scenario.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn die Kassenzahlungsmethode konfiguriert wird, um Steuerbeträge zu erfassen, berechnet eine bestimmte Betragverteilungslogik ungefähre Steuerbeträge, basierend auf dem Zahlungsbetrag in diesem Szenario.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="223">
+          <source>In these scenarios, the correct tax amounts are presented only in the posted invoice that is settled.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesen Szenarien werden die korrekten Steuerbeträge nur in der gebuchten Rechnung dargestellt, die beglichen ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="224">
+          <source>Consult the local tax authority to identify the correct method for submitting the invoiced tax amounts to tax authority checks for these scenarios.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erkundigen Sie sich bei der lokalen Steuerbehörden, um die korrekte Methode zum Übermitteln der fakturierten Steuerbeträge für Steuerbehördenüberprüfungen für diese Szenarien zu identifizieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="225">
+          <source>Create terms of payment for a COD scenario</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erstellen von Zahlungsbedingungen für ein Szenario mit Zahlung bei Lieferung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="226">
+          <source>If a cash payment can be received when an invoice is posted, you can create terms of payment that have the <bpt id="p1">**</bpt>Cash on delivery<ept id="p1">**</ept> payment method.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn eine Barzahlung empfangen werden kann, wenn eine Rechnung gebucht wird, können Sie Zahlungsbedingungen erstellen, die die Zahlungsmethode <bpt id="p1">**</bpt>Zahlung bei Lieferung<ept id="p1">**</ept> haben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="227">
+          <source>Select <bpt id="p1">**</bpt>Account receivables<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Payment<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Terms of payment<ept id="p3">**</ept>, and then set the following fields.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zahlung<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Zahlungsbedingungen<ept id="p3">**</ept> aus, und legen Sie dann die folgenden Felder fest.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="228">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feld</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="229">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="230">
+          <source>Payment method</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zahlungsart</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="231">
+          <source>Select <bpt id="p1">**</bpt>COD<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Zahlung bei Lieferung<ept id="p1">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="232">
+          <source>Cash payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Barzahlung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="233">
+          <source>Set the option to <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> to create an automatic payment transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legen Sie die Option auf <bpt id="p1">**</bpt>Ja<ept id="p1">**</ept> fest, um eine automatische Zahlungstransaktion zu erstellen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="234">
+          <source>Cash</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bargeld</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="235">
+          <source>Select the general ledger account that is used to post cash payments that are automatically generated.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie das Hauptbuchkonto aus, das verwendet wird, um Barzahlungen zu buchen, die automatisch generiert werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="236">
+          <source>Example</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beispiel</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="237">
+          <source>This section walks you through the following business processes and uses the <bpt id="p1">[</bpt>EFSTA Fiscal Register (EFR)<ept id="p1">](https://public.efsta.net/efr/)</ept> fiscal service as an example:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäftsprozesse geführt, und es wird der steuerliche Dienst <bpt id="p1">[</bpt>EFSTA Fiscal Register (EFR)<ept id="p1">](https://public.efsta.net/efr/)</ept> als Beispiel verwendet:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="238">
+          <source>After you post a cash payment that is liable for registration, a cash register transaction that has data that must be signed is created.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nachdem Sie eine Barzahlung buchen, für die die Registrierung ansteht, wird eine Kassentransaktion erstellt, die zu signierende Daten hat.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="239">
+          <source>This transaction is then sent, in the specified XML format, to the fiscal service for registration.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Transaktion wird dann im angegebenen XML-Format an den steuerlichen Dienst zur Registrierung übermittelt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="240">
+          <source>You receive a response from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie empfangen eine Antwort vom steuerlichen Dienst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="241">
+          <source>This response has a signature and fiscal codes that the fiscal service generates according to country/region-specific rules.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Antwort hat eine Signatur und Steuercodes, die der steuerliche Dienst gemäß landes-/regionenspezifischer Regeln generiert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="242">
+          <source>This response is stored in the cash register fiscal transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Antwort wird in einer steuerlichen Kassentransaktion gespeichert.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="243">
+          <source>The cash receipt is printed.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Barbeleg wird gedruckt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="244">
+          <source>This receipt includes the transaction data, signatures, and fiscal codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Beleg umfasst die Buchungsdaten, Signaturen und Steuercodes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="245">
+          <source>Register an automatically posted COD payment for a free text invoice and print a cash receipt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Freitextrechnung und Drucken eines Barbelegs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="246">
+          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Free text invoices<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All free text invoices<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Freitextrechnungen<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Alle Freitextrechnungen<ept id="p3">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="247">
+          <source>Create a free text invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dient zum Erstellen einer Freitextrechnung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="248">
+          <source>For more information, see <bpt id="p1">[</bpt>Create a free text invoice<ept id="p1">](../accounts-receivable/create-free-text-invoice-new.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Erstellen einer Freitextrechnung<ept id="p1">](../accounts-receivable/create-free-text-invoice-new.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="249">
+          <source>On the <bpt id="p1">**</bpt>Payment<ept id="p1">**</ept> FastTab, select a method of payment that is set up as a method of payment for the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Inforegister <bpt id="p1">**</bpt>Zahlung<ept id="p1">**</ept> eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="250">
+          <source>Select terms of payment that are set up for COD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie Zahlungsbedingungen aus, die für die Zahlung bei Lieferung eingerichtet sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="251">
+          <source>Select <bpt id="p1">**</bpt>Post<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Buchen<ept id="p1">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="252">
+          <source>In the <bpt id="p1">**</bpt>Post free text invoice<ept id="p1">**</ept> dialog box, follow these steps:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folgen Sie im Dialogfeld <bpt id="p1">**</bpt>Freitextrechnung buchen<ept id="p1">**</ept> diesen Schritten:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="253">
+          <source>On the <bpt id="p1">**</bpt>Parameters<ept id="p1">**</ept> FastTab, select the <bpt id="p2">**</bpt>Print receipt<ept id="p2">**</ept> check box to print a cash receipt after the invoice is posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie im Inforegister <bpt id="p1">**</bpt>Parameter<ept id="p1">**</ept> das Kontrollkästchen <bpt id="p2">**</bpt>Beleg drucken<ept id="p2">**</ept>, damit ein Barbeleg gedruckt wird, nachdem die Rechnung gebucht wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="254">
+          <source>On the <bpt id="p1">**</bpt>Cash register<ept id="p1">**</ept> FastTab, review the location, terminal, cash register, and operator codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie im Inforegister <bpt id="p1">**</bpt>Kasse<ept id="p1">**</ept> den Standort, das Terminal, die Kasse und die Operatorcodes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="255">
+          <source>The terminal code is automatically filled from the <bpt id="p1">**</bpt>Default cash register terminal<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Cash register operators<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Terminalcode wird automatisch aus dem Feld <bpt id="p1">**</bpt>Standardkassenterminal<ept id="p1">**</ept> auf der Seite <bpt id="p2">**</bpt>Kassenoperatoren<ept id="p2">**</ept> eingegeben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="256">
+          <source>Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="257">
+          <source>Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="258">
+          <source>Review the cash receipt that is generated for the posted invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie den Barbeleg, der für die gebuchte Rechnung generiert ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="259">
+          <source>By default, the generated cash receipt is available as a file.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Standardmäßig ist der generierte Barbeleg als Datei verfügbar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="260">
+          <source>For information about how to set up other destinations that you can use for cash receipts, see <bpt id="p1">[</bpt>Electronic Reporting Destinations<ept id="p1">](../../dev-itpro/analytics/electronic-reporting-destinations.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Informationen dazu, wie andere Ziele eingerichtet werden, die Sie für Barbelege verwenden können, finden Sie unter <bpt id="p1">[</bpt>Ziele für die elektronische Berichterstellung<ept id="p1">](../../dev-itpro/analytics/electronic-reporting-destinations.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="261">
+          <source>Register an automatically posted COD payment for a sales order invoice and print a cash receipt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Auftragsrechnung und Drucken eines Barbelegs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="262">
+          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Orders<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All sales orders<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Aufträge<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Alle Aufträge<ept id="p3">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="263">
+          <source>Create a sales order.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erstellen Sie einen Auftrag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="264">
+          <source>For more information, see <bpt id="p1">[</bpt>Create a sales order<ept id="p1">](../../supply-chain/sales-marketing/tasks/create-sales-orders.md)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen finden Sie unter <bpt id="p1">[</bpt>Einen Auftrag erstellen<ept id="p1">](../../supply-chain/sales-marketing/tasks/create-sales-orders.md)</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="265">
+          <source>On the <bpt id="p1">**</bpt>Price and discount<ept id="p1">**</ept> FastTab, select a method of payment that is set up as a method of payment for the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Inforegister <bpt id="p1">**</bpt>Preis und Rabatt<ept id="p1">**</ept> eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="266">
+          <source>In the <bpt id="p1">**</bpt>Payment<ept id="p1">**</ept> field, select terms of payment that are set up for COD.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Feld <bpt id="p1">**</bpt>Zahlung<ept id="p1">**</ept> die Zahlungsbedingungen aus, die für Zahlung bei Lieferung eingerichtet sind.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="267">
+          <source>Select <bpt id="p1">**</bpt>Invoice<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Invoice<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Rechnung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Rechnung<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="268">
+          <source>On the <bpt id="p1">**</bpt>Parameters<ept id="p1">**</ept> FastTab,set the <bpt id="p2">**</bpt>Print receipt<ept id="p2">**</ept> option to <bpt id="p3">**</bpt>Yes<ept id="p3">**</ept> to print a cash receipt after the invoice is posted.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Legen Sie im Inforegister <bpt id="p1">**</bpt>Parameter<ept id="p1">**</ept> die Option <bpt id="p2">**</bpt>Beleg drucken<ept id="p2">**</ept> auf <bpt id="p3">**</bpt>Ja<ept id="p3">**</ept> fest, damit ein Barbeleg gedruckt wird, nachdem die Rechnung gebucht wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="269">
+          <source>On the <bpt id="p1">**</bpt>Cash register<ept id="p1">**</ept> FastTab, review the location, terminal, cash register, and operator codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie im Inforegister <bpt id="p1">**</bpt>Kasse<ept id="p1">**</ept> den Standort, das Terminal, die Kasse und die Operatorcodes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="270">
+          <source>Modify the information as you require.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ändern Sie die Informationen nach Bedarf.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="271">
+          <source>The terminal code is automatically filled from the <bpt id="p1">**</bpt>Default cash register terminal<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Cash register operators<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Terminalcode wird automatisch aus dem Feld <bpt id="p1">**</bpt>Standardkassenterminal<ept id="p1">**</ept> auf der Seite <bpt id="p2">**</bpt>Kassenoperatoren<ept id="p2">**</ept> eingegeben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="272">
+          <source>Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="273">
+          <source>Register a customer payment from the Customer payment journal and print a cash receipt</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrieren einer Debitorenzahlung aus der Debitorenzahlungserfassung und Drucken eines Barbelegs</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="274">
+          <source>Select <bpt id="p1">**</bpt>Accounts receivables<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Journals<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Payments<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Payment journal<ept id="p4">**</ept> to open the Customer payment journal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Erfassungen<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Zahlungen<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Zahlungserfassung<ept id="p4">**</ept> aus, um die Debitorenzahlungserfassung zu öffnen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="275">
+          <source>(Alternatively, select <bpt id="p1">**</bpt>General ledger<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Journals<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>General journal<ept id="p3">**</ept> to open the General journal.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Alternativ wählen Sie <bpt id="p1">**</bpt>Hauptbuch<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Erfassungen<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Allgemeine Erfassung<ept id="p3">**</ept> aus, um die allgemeine Erfassung zu öffnen.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="276">
+          <source>Create the journal lines that have a customer cash payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erstellen Sie die Erfassungspositionen, die eine Debitorenbarzahlung haben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="277">
+          <source>On the <bpt id="p1">**</bpt>Payment<ept id="p1">**</ept> tab, select a method of payment that is set up as a method of payment for the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie auf der Registerkarte <bpt id="p1">**</bpt>Zahlung<ept id="p1">**</ept> eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="278">
+          <source>Select the <bpt id="p1">**</bpt>Prepayment journal voucher<ept id="p1">**</ept> check box if the payment is a prepayment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie das Kontrollkästchen <bpt id="p1">**</bpt>Erfassungsbeleg für Vorauszahlung<ept id="p1">**</ept>, wenn die Zahlung eine Vorauszahlung ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="279">
+          <source>On the <bpt id="p1">**</bpt>Payment<ept id="p1">**</ept> tab, review the location, terminal, cash register, and operator codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie auf der Registerkarte <bpt id="p1">**</bpt>Zahlung<ept id="p1">**</ept> den Standort, das Terminal, die Kasse und die Operatorcodes.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="280">
+          <source>Modify the information as you require.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ändern Sie die Informationen nach Bedarf.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="281">
+          <source>The terminal code is automatically filled from the <bpt id="p1">**</bpt>Default cash register terminal<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Cash register operators<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Terminalcode wird automatisch aus dem Feld <bpt id="p1">**</bpt>Standardkassenterminal<ept id="p1">**</ept> auf der Seite <bpt id="p2">**</bpt>Kassenoperatoren<ept id="p2">**</ept> eingegeben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="282">
+          <source>Change the terminal code only if the cash payment is received at a different cash register terminal that is available for the current operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde, die für den aktuellen Operator verfügbar ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="283">
+          <source>Select <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Post<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Buchen<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Buchen<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="284">
+          <source>Select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Cash receipt<ept id="p2">**</ept> to print a receipt that includes fiscal codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Drucken<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Barbeleg<ept id="p2">**</ept> aus, um einen Beleg zu drucken, der Steuercodes enthält.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="285">
+          <source>Register a customer payment from the Slip journal and print a cash order that includes cash receipt information (Czech Republic only)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Registrieren einer Debitorenzahlung aus der Belegerfassung und Drucken eines Barauftrags, der Barbeleginformationen enthält (nur Tschechische Republik)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="286">
+          <source>Select <bpt id="p1">**</bpt>Cash and bank management<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Journals<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Slip journal<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Bargeld- und Bankverwaltung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Erfassungen<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Belegerfassung<ept id="p3">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="287">
+          <source>Create the journal lines that have a customer cash payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erstellen Sie die Erfassungspositionen, die eine Debitorenbarzahlung haben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="288">
+          <source>On the <bpt id="p1">**</bpt>Payment<ept id="p1">**</ept> tab, review the fields in the <bpt id="p2">**</bpt>Cash register<ept id="p2">**</ept> section.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie auf der Registerkarte <bpt id="p1">**</bpt>Zahlung<ept id="p1">**</ept> die Felder im Abschnitt <bpt id="p2">**</bpt>Kasse<ept id="p2">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="289">
+          <source>The terminal code is automatically filled from the <bpt id="p1">**</bpt>Default cash register terminal<ept id="p1">**</ept> field on the <bpt id="p2">**</bpt>Cash register operators<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Terminalcode wird automatisch aus dem Feld <bpt id="p1">**</bpt>Standardkassenterminal<ept id="p1">**</ept> auf der Seite <bpt id="p2">**</bpt>Kassenoperatoren<ept id="p2">**</ept> eingegeben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="290">
+          <source>Change the terminal code only if the cash payment was received at a different cash register terminal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ändern Sie den Terminalcode nur, wenn die Barzahlung an einem anderen Kassenterminal empfangen wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="291">
+          <source>Select <bpt id="p1">**</bpt>Documents approval<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Approve<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Dokumentgenehmigung<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Genehmigen<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="292">
+          <source>The cash order number is assigned to the payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Barauftragsnummer, die der Zahlung zugewiesen ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="293">
+          <source>Select <bpt id="p1">**</bpt>Post<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Post<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Buchen<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Buchen<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="294">
+          <source>Select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Cash order<ept id="p2">**</ept> to print a cash order that includes fiscal codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Drucken<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Barauftrag<ept id="p2">**</ept> aus, um einen Barauftrag zu drucken, der Steuercodes enthält.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="295">
+          <source>Cancel a payment</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zahlung stornieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="296">
+          <source>If a cash receipt number has been registered for a payment in the cash register, and you then cancel the payment, a new cash receipt number is registered in the same cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn eine Barbelegnummer für eine Zahlung in der Kasse registriert wurde und Sie dann die Zahlung stornieren, wird eine neue Barbelegnummer in derselben Kasse erfasst.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="297">
+          <source>The payment cancellation cash receipt includes all the same amounts as the original receipt, but the amounts have a negative sign.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Zahlungsstornierungsbarbeleg enthält genau dieselben Mengen wie der ursprüngliche Beleg, aber die Beträge haben ein negatives Vorzeichen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="298">
+          <source>Open the <bpt id="p1">**</bpt>Customer transactions<ept id="p1">**</ept> page:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Öffnen Sie die Seite <bpt id="p1">**</bpt>Kundentransaktionen<ept id="p1">**</ept>:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="299">
+          <source>Select <bpt id="p1">**</bpt>Accounts receivable<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Customers<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>All Customers<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Debitoren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Kunden<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Alle Kunden<ept id="p3">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="300">
+          <source>Select a customer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie einen Debitor aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="301">
+          <source>On the Action Pane, select <bpt id="p1">**</bpt>Customer<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Transactions<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Aktivitätsbereich <bpt id="p1">**</bpt>Kunde<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Transaktionen<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="302">
+          <source>Select the payment transaction to reverse.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie die zu stornierende Zahlungstransaktion.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="303">
+          <source>Select <bpt id="p1">**</bpt>Reverse<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Cancel payment<ept id="p2">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie <bpt id="p1">**</bpt>Stornieren<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Zahlung stornieren<ept id="p2">**</ept> aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="304">
+          <source>Enter the required information, and then select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to create the payment cancellation transaction and return to the <bpt id="p2">**</bpt>Customer transactions<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie die erforderlichen Informationen ein, und wählen Sie dann <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> aus, um die Zahlungsstornierungstransaktion zu erstellen und zur Seite <bpt id="p2">**</bpt>Kundentransaktionen<ept id="p2">**</ept> zurückzukehren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="305">
+          <source>Select the new payment cancellation transaction, and then select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Cash receipt<ept id="p2">**</ept> to print a cash receipt that includes fiscal codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie die neue Zahlungsstornierungstransaktion aus, und wählen Sie anschließend <bpt id="p1">**</bpt>Drucken<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Barbeleg<ept id="p2">**</ept> aus, um einen Barbeleg zu drucken, der Steuercodes enthält.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="306">
+          <source>Review cash register fiscal transactions and resend a transaction to the cash register</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie die Kassensteuerbuchungen und übermitteln Sie erneut eine Buchung an die Kasse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="307">
+          <source>You can review the cash payments that have been registered, and also reprint Cash receipt original or a copu of Cash receipt, by selecting <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> at the <bpt id="p2">**</bpt>Accounts receivable<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Inquires<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Cash register fiscal transactions<ept id="p4">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können die Barzahlungen überprüfen, die registriert wurden, und Sie können auch das Barbelegoriginal oder eine Kopie des Barbelegs erneut drucken, indem Sie <bpt id="p1">**</bpt>Drucken<ept id="p1">**</ept> unter <bpt id="p2">**</bpt>Debitoren<ept id="p2">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p3">**</bpt>Anfragen<ept id="p3">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p4">**</bpt>Kassensteuerbuchungen<ept id="p4">**</ept> auswählen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="308">
+          <source>The law describes exception scenarios that the fiscal service should correctly handle.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Gesetz beschreibt Ausnahmeszenarien, die der steuerliche Dienst richtig handhaben soll.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="309">
+          <source>If a cash payment wasn't successfully registered for a reason that isn't related to one of those exception scenarios, you will receive an error message after you post a cash payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn eine Barzahlung aus irgendeinem Grund, der nicht mit einem dieser Ausnahmeszenarien zusammenhängt, nicht erfolgreich registriert wurde, wird eine Fehlermeldung angezeigt, nachdem Sie eine Barzahlung buchen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="310">
+          <source>The cash register transaction that has a status of <bpt id="p1">**</bpt>Created<ept id="p1">**</ept> will be available on the <bpt id="p2">**</bpt>Cash register fiscal transactions<ept id="p2">**</ept> page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Kassentransaktion, die den Status <bpt id="p1">**</bpt>Erstellt<ept id="p1">**</ept> hat, wird auf der Seite <bpt id="p2">**</bpt>Steuerbezogene Kassenbuchungen<ept id="p2">**</ept> verfügbar sein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="311">
+          <source>You must fix the issues and manually resend the cash transactions that are created to the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie müssen die Probleme beheben und die Bartransaktionen, die für die Kasse erstellt werden, manuell erneut senden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="312">
+          <source>Otherwise, you can't print a cash receipt that includes fiscal codes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Andernfalls kann ein Barbeleg nicht gedruckt werden, der Steuercodes enthält.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="313">
+          <source>When a cash payment is correctly registered, it has a status of <bpt id="p1">**</bpt>Registered<ept id="p1">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn eine Barzahlung ordnungsgemäß registriert ist, hat sie den Status <bpt id="p1">**</bpt>Registriert<ept id="p1">**</ept>.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="314">
+          <source>The following table describes the fields for cash register payment transactions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In der folgenden Tabelle werden die Felder für Kassenzahlungsbuchungen beschrieben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="315">
+          <source>Field</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feld</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="316">
+          <source>Description</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="317">
+          <source>Cash register</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kasse</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="318">
+          <source>The ID of the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Kennung der Kasse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="319">
+          <source>Transaction ID</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungskennung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="320">
+          <source>The ID of the transaction in the cash register.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Kennung der Transaktion in der Kasse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="321">
+          <source>This value is received from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Wert wird aus dem steuerlichen Dienst empfangen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="322">
+          <source>Cash register URL</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kassen-URL</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="323">
+          <source>The URL of the place where the fiscal service is located.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die URL des Ortes, in dem sich der steuerliche Dienst befindet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="324">
+          <source>Status</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Status</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="325">
+          <source>The status of the transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Status der Buchung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="326">
+          <source>The following values are used:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folgende Werte werden verwendet:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="327">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Created<ept id="p1">&lt;/strong&gt;</ept> – The payment transaction has been posted but hasn&amp;#39;t been registered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Erstellt<ept id="p1">&lt;/strong&gt;</ept> – Die Zahlungstransaktion ist gebucht, aber nicht registriert worden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="328">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Registered<ept id="p1">&lt;/strong&gt;</ept> – The payment transaction has been posted and registered.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Registriert<ept id="p1">&lt;/strong&gt;</ept> – Die Zahlungstransaktion ist gebucht und registriert worden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="329">
+          <source>(In other words, you&amp;#39;ve sent the payment transaction to the fiscal service, and you&amp;#39;ve received a response that includes fiscal codes.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(Somit haben Sie die Zahlungstransaktion an den steuerlichen Dienst übermittelt, und Sie haben eine Antwort empfangen, die Steuercodes enthält.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="330">
+          <source>(CZ/Czech Republic) Offline</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZ/Tschechische Republik) Offline</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="331">
+          <source>An indicator that the cash transaction was registered offline (allowed exception), and a PKP (signature code) was received.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ein Indikator, dass die Bartransaktion offline registriert wurde (zugelassene Ausnahme) und ein PKP (Unterzeichnungscode) empfangen wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="332">
+          <source>Terminal</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Terminal</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="333">
+          <source>The code of the cash register terminal.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Code des Kassenterminals.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="334">
+          <source>Operator</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Operator</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="335">
+          <source>The code of the cash register operator.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Code des Kassenoperators.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="336">
+          <source>Voucher</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beleg</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="337">
+          <source>The voucher number of the posted cash transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Belegnummer der gebuchten Bartransaktion.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="338">
+          <source>Date</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Termin</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="339">
+          <source>The date of the transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Datum der Buchung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="340">
+          <source>Receipt number</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belegsnummer</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="341">
+          <source>The number of the cash receipt.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Nummer des Barbelegs.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="342">
+          <source>Transaction date and time</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum und Uhrzeit der Buchung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="343">
+          <source>The date and time of the registered transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum und Uhrzeit der registrierten Transaktion.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="344">
+          <source>This value is received from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Wert wird aus dem steuerlichen Dienst empfangen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="345">
+          <source>Receipt amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belegsbetrag</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="346">
+          <source>The payment amount.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Zahlungsbetrag.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="347">
+          <source>Currency</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="348">
+          <source>The currency of the payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Währung der Zahlung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="349">
+          <source>Name</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Name</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="350">
+          <source>The name of the fiscal code that is received from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Name des Steuercodes, der vom steuerlichen Dienst empfangen ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="351">
+          <source>The following values can be used:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folgende Werte können verwendet werden:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="352">
+          <source><bpt id="p1">&lt;strong&gt;</bpt>Info<ept id="p1">&lt;/strong&gt;</ept> – Additional information</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">&lt;strong&gt;</bpt>Info<ept id="p1">&lt;/strong&gt;</ept> – Zusätzliche Informationen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="353">
+          <source>(AT/Austria) <bpt id="p1">&lt;strong&gt;</bpt>Code<ept id="p1">&lt;/strong&gt;</ept> – Signature</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(AT/Österreich) <bpt id="p1">&lt;strong&gt;</bpt>Code<ept id="p1">&lt;/strong&gt;</ept> – Signatur</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="354">
+          <source>(AT/Austria) <bpt id="p1">&lt;strong&gt;</bpt>Link<ept id="p1">&lt;/strong&gt;</ept> – Signature-dependent link</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(AT/Österreich) <bpt id="p1">&lt;strong&gt;</bpt>Link<ept id="p1">&lt;/strong&gt;</ept> – Link, der von Signatur abhängt</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="355">
+          <source>Label</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschriftung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="356">
+          <source>The label of the fiscal code that is received from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Bezeichnung des Steuercodes, der vom steuerlichen Dienst empfangen ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="357">
+          <source>The following values can be used:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Folgende Werte können verwendet werden:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="358">
+          <source>(CZ/Czech Republic) <bpt id="p1">&lt;strong&gt;</bpt>FIK<ept id="p1">&lt;/strong&gt;</ept> – Fiscal identification code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZ/Tschechische Republik) <bpt id="p1">&lt;strong&gt;</bpt>FIK<ept id="p1">&lt;/strong&gt;</ept> – Steuerlicher Kennungscode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="359">
+          <source>(CZ/Czech Republic) <bpt id="p1">&lt;strong&gt;</bpt>BKP<ept id="p1">&lt;/strong&gt;</ept> – Security code</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZ/Tschechische Republik) <bpt id="p1">&lt;strong&gt;</bpt>BKP<ept id="p1">&lt;/strong&gt;</ept> – Sicherheitscode</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="360">
+          <source>(CZ/Czech Republic) <bpt id="p1">&lt;strong&gt;</bpt>PKP<ept id="p1">&lt;/strong&gt;</ept> – Signature code (This code is returned in the event of offline registration.)</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">(CZ/Tschechische Republik) <bpt id="p1">&lt;strong&gt;</bpt>PKP<ept id="p1">&lt;/strong&gt;</ept> – Unterzeichnungscode (Dieser Code wird im Fall einer Offlineregistrierung zurückgegeben.)</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="361">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="362">
+          <source>The value of the fiscal code that is received from the fiscal service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Wert des Steuercodes, der vom steuerlichen Dienst empfangen ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="363">
+          <source>Value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="364">
+          <source>The percentage of registered tax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Prozentsatz der registrierten Steuer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="365">
+          <source>Sales tax amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mehrwertsteuerbetrag</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="366">
+          <source>The amount of registered tax.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Betrag der registrierten Steuer.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="367">
+          <source>Gross amount</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bruttobetrag</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="368">
+          <source>The amount of the registered payment.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Der Betrag der registrierten Zahlung.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

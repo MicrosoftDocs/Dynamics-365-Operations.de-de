@@ -1,92 +1,207 @@
----
-title: Bedarfsplanung – Überblick
-description: Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und abhängigen Bedarf an jedem Entkopplungspunkt für Kundenaufträge vorauszusagen. Die Reduzierungsregeln der erweiterten Bedarfsplanung stellen eine ideale Lösung für die Massenanpassung bereit.
-author: roxanadiaconu
-manager: AnnBe
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ReqDemPlanCreateForecastDialog
-audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations
-ms.custom: 72004
-ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.author: roxanad
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a645ee6f7e6085abc6e872d490b078f512c15aa1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552368"
----
-# <a name="demand-forecasting-overview"></a><span data-ttu-id="24309-104">Bedarfsplanung – Überblick</span><span class="sxs-lookup"><span data-stu-id="24309-104">Demand forecasting overview</span></span>
-
-[!include [banner](../includes/banner.md)]
-
-<span data-ttu-id="24309-105">Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und abhängigen Bedarf an jedem Entkopplungspunkt für Kundenaufträge vorauszusagen.</span><span class="sxs-lookup"><span data-stu-id="24309-105">Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.</span></span> <span data-ttu-id="24309-106">Die Reduzierungsregeln der erweiterten Bedarfsplanung stellen eine ideale Lösung für die Massenanpassung bereit.</span><span class="sxs-lookup"><span data-stu-id="24309-106">The enhanced demand forecast reduction rules provide an ideal solution for mass customization.</span></span>
-
-<span data-ttu-id="24309-107">Um die Grundplanung zu generieren, wird eine Zusammenfassung mit historischen Transaktionen an einen Microsoft Azure Machine Learning-Dienst übergeben, der auf Azure gehostet wird.</span><span class="sxs-lookup"><span data-stu-id="24309-107">To generate the baseline forecast, a summary of historical transactions is passed to a Microsoft Azure Machine Learning service that is hosted on Azure.</span></span> <span data-ttu-id="24309-108">Da dieser Dienst nicht unter Benutzern freigegeben wird, kann er problemlos angepasst werden, um den branchenspezifischen Anforderungen zu entsprechen.</span><span class="sxs-lookup"><span data-stu-id="24309-108">Because this service isn't shared among users, it can easily be customized to meet industry-specific requirements.</span></span> <span data-ttu-id="24309-109">Sie können Finance and Operations verwenden, um die Planung zu visualisieren, die Planung anzupassen und KPIs (Key Performance Indicators) zur Planungsgenauigkeit anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="24309-109">You can use Finance and Operations to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.</span></span>
-
-## <a name="key-features-of-demand-forecasting"></a><span data-ttu-id="24309-110">Wichtigste Funktionen der Bedarfsplanung</span><span class="sxs-lookup"><span data-stu-id="24309-110">Key features of demand forecasting</span></span>
-<span data-ttu-id="24309-111">Nachfolgend sind einige der Hauptmerkmale der Bedarfsplanung aufgeführt:</span><span class="sxs-lookup"><span data-stu-id="24309-111">Here are some of the main features of demand forecasting:</span></span>
-
--   <span data-ttu-id="24309-112">Eine statistische Grundplanung generieren, die auf historischen Daten basiert</span><span class="sxs-lookup"><span data-stu-id="24309-112">Generate a statistical baseline forecast that is based on historical data.</span></span>
--   <span data-ttu-id="24309-113">Einen dynamischen Satz von Planungsdimensionen verwenden</span><span class="sxs-lookup"><span data-stu-id="24309-113">Use a dynamic set of forecast dimensions.</span></span>
--   <span data-ttu-id="24309-114">Bedarfstrends, Zuverlässigkeitsintervalle und Regulierungen der Planung visualisieren</span><span class="sxs-lookup"><span data-stu-id="24309-114">Visualize demand trends, confidence intervals, and adjustments of the forecast.</span></span>
--   <span data-ttu-id="24309-115">Die angepasste Planung für die Verwendung in Planungsprozessen autorisieren</span><span class="sxs-lookup"><span data-stu-id="24309-115">Authorize the adjusted forecast to be used in planning processes.</span></span>
--   <span data-ttu-id="24309-116">Ausreißer entfernen</span><span class="sxs-lookup"><span data-stu-id="24309-116">Remove outliers.</span></span>
--   <span data-ttu-id="24309-117">Messungen für die Planungsgenauigkeit erstellen</span><span class="sxs-lookup"><span data-stu-id="24309-117">Create measurements of forecast accuracy.</span></span>
-
-## <a name="major-themes-in-demand-forecasting"></a><span data-ttu-id="24309-118">Wichtige Themen der Bedarfsplanung</span><span class="sxs-lookup"><span data-stu-id="24309-118">Major themes in demand forecasting</span></span>
-<span data-ttu-id="24309-119">Drei wichtige Themen wurden in die Bedarfsplanung implementiert:</span><span class="sxs-lookup"><span data-stu-id="24309-119">Three major themes are implemented in demand forecasting:</span></span>
-
--   <span data-ttu-id="24309-120">**Modularität** - Die Bedarfsplanung ist modular und einfach zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="24309-120">**Modularity** – Demand forecasting is modular and easy to configure.</span></span> <span data-ttu-id="24309-121">Sie können die Funktionalität aktivieren und deaktivieren, indem Sie den Konfigurationsschlüssel unter **Art** &gt; **Bestandsprognose** &gt; **Bedarfsplanung** ändern.</span><span class="sxs-lookup"><span data-stu-id="24309-121">You can turn the functionality on and off by changing the configuration key at **Trade** &gt; **Inventory forecast** &gt; **Demand forecasting**.</span></span>
--   <span data-ttu-id="24309-122">**Wiederverwendung des Microsoft-Stapels** – Microsoft hat die Machine Learning-Plattform im Februar 2015 veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="24309-122">**Reuse of the Microsoft stack** – Microsoft launched the Machine Learning platform in February 2015.</span></span> <span data-ttu-id="24309-123">Machine Learning ist jetzt Teil der Microsoft Cortana Analytics Suite und kann schnell und einfach vorbestimmte erstellt Analyseexperimente, wie Bedarfsvorkalkulationsexperimente über Algorithmen in R oder Python und eine einfache Drag & Drop-Schnittstelle verwendet.</span><span class="sxs-lookup"><span data-stu-id="24309-123">Machine Learning, which is now part of the Microsoft Cortana Analytics Suite, lets you quickly and easily create predictive analysis experiments, such as demand estimation experiments, by using algorithms R or Python programming languages and a simple drag-and-drop interface.</span></span>
-    -   <span data-ttu-id="24309-124">Sie können die Finance and Operations-Bedarfsplanungsexperimente herunterladen, sie ändern und an Ihre geschäftlichen Anforderungen anpassen, sie als Webdienst auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.</span><span class="sxs-lookup"><span data-stu-id="24309-124">You can download the Finance and Operations Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts.</span></span> <span data-ttu-id="24309-125">Die Experimente sind zum Download verfügbar, wenn Sie ein Finance and Operations-Abonnement für einen Produktionsplaner als Benutzer auf Unternehmensebene besitzen.</span><span class="sxs-lookup"><span data-stu-id="24309-125">The experiments are available for download if you've purchased a Finance and Operations subscription for a production planner as enterprise level user.</span></span>
-    -   <span data-ttu-id="24309-126">Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen.</span><span class="sxs-lookup"><span data-stu-id="24309-126">You can download any of the currently available demand prediction experiments from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/).</span></span> <span data-ttu-id="24309-127">Während die Finance and Operations-Bedarfsplanungsexperimente automatisch mit Finance and Operations integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen.</span><span class="sxs-lookup"><span data-stu-id="24309-127">Whereas the Finance and Operations Demand forecasting experiments are automatically integrated with Finance and Operations, customers and partners must handle the integration of experiments that they download from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/).</span></span> <span data-ttu-id="24309-128">Daher sind Experimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) nicht so einfach zu verwenden wie die Finance and Operations-Bedarfsplanungsexperimente.</span><span class="sxs-lookup"><span data-stu-id="24309-128">Therefore, experiments from the [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) aren't as straightforward to use as the Finance and Operations Demand forecasting experiments.</span></span> <span data-ttu-id="24309-129">Sie müssen den Code der Experimente ändern, sodass sie die Finance and Operations-API verwenden können.</span><span class="sxs-lookup"><span data-stu-id="24309-129">You must modify the code of the experiments so that they use the Finance and Operations application programming interface (API).</span></span>
-    -   <span data-ttu-id="24309-130">Sie können eigene Experimente in Microsoft Azure Machine Learning Studio erstellen, als Dienste auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.</span><span class="sxs-lookup"><span data-stu-id="24309-130">You can create your own experiments in Microsoft Azure Machine Learning Studio, publish them as services on Azure, and use them to generate demand forecasts.</span></span>
-    -   <span data-ttu-id="24309-131">Wenn Sie keine hohe Leistung benötigen oder wenn Sie keine großen Datenmengen verarbeiten müssen, können Sie die kostenlose Machine Learning-Schicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="24309-131">If you don’t require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier.</span></span> <span data-ttu-id="24309-132">Es wird empfohlen, dass Sie immer über diese Schicht beginnen, besonders während der Implementierungs- und Testphasen.</span><span class="sxs-lookup"><span data-stu-id="24309-132">We recommend that you always start from this tier, especially during implementation and testing phases.</span></span> <span data-ttu-id="24309-133">Wenn Sie höhere Leistung und zusätzlichen Speicherplatz benötigen, können Sie die Standardschicht von Machine Learning verwenden.</span><span class="sxs-lookup"><span data-stu-id="24309-133">If you require higher performance and additional storage, you can use the Machine Learning standard tier.</span></span> <span data-ttu-id="24309-134">Diese Schicht erfordert ein Azure-Abonnement und beinhaltet zusätzliche Kosten.</span><span class="sxs-lookup"><span data-stu-id="24309-134">This tier requires an Azure subscription and involves additional costs.</span></span> <span data-ttu-id="24309-135">Details zu den Kosten von Machine Learning finden Sie unter <http://aka.ms/machine-learning-price-info>.</span><span class="sxs-lookup"><span data-stu-id="24309-135">For details about Machine Learning pricing, see <http://aka.ms/machine-learning-price-info>.</span></span>
--   <span data-ttu-id="24309-136">**Planungsverringerung an jedem Entkopplungspunkt** – Die Bedarfsplanung in Finance and Operations baut auf dieser Funktionalität auf, mit der Sie abhängigen und unabhängigen Bedarf an jedem Entkopplungspunkt planen können.</span><span class="sxs-lookup"><span data-stu-id="24309-136">**Forecast reduction at any decoupling point** – Demand forecasting in Finance and Operations builds on this functionality, which lets you forecast both dependent and independent demand at any decoupling point.</span></span>
-
-## <a name="basic-flow-in-demand-forecasting"></a><span data-ttu-id="24309-137">Grundlegender Ablauf in der Bedarfsplanung</span><span class="sxs-lookup"><span data-stu-id="24309-137">Basic flow in demand forecasting</span></span>
-<span data-ttu-id="24309-138">Das folgende Diagramm zeigt den grundlegenden Ablauf in der Bedarfsplanung.</span><span class="sxs-lookup"><span data-stu-id="24309-138">The following diagram shows the basic flow in demand forecasting.</span></span> 
-
-<span data-ttu-id="24309-139">[![Einführung in die Bedarfsplanung](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)</span><span class="sxs-lookup"><span data-stu-id="24309-139">[![demand forecasting introduction diagram](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)</span></span>
-
-<span data-ttu-id="24309-140">Die Erstellung der Bedarfsplanung beginnt in Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="24309-140">Demand forecast generation starts in Finance and Operations.</span></span> <span data-ttu-id="24309-141">Historische transaktionsbezogene Daten aus der Finance and Operations-Transaktionsdatenbank werden gesammelt und in einer Stagingtabelle angezeigt.</span><span class="sxs-lookup"><span data-stu-id="24309-141">Historical transactional data from the Finance and Operations transactional database is gathered and populates a staging table.</span></span> <span data-ttu-id="24309-142">Diese Staging-Tabelle wird später an den Machine Learning-Service übergeben.</span><span class="sxs-lookup"><span data-stu-id="24309-142">This staging table is later fed to a Machine Learning service.</span></span> <span data-ttu-id="24309-143">Durch minimale Anpassungen können Sie verschiedene Datenquellen mit der Stagingtabelle verbinden.</span><span class="sxs-lookup"><span data-stu-id="24309-143">By performing minimal customization, you can plug various data sources into the staging table.</span></span> <span data-ttu-id="24309-144">Die Datenquellen können Microsoft Excel-Dateien, kommagetrennte Wert (CSV)-Dateien und Daten von Microsoft Dynamics AX 2009 und Microsoft Dynamics AX 2012 einschließen.</span><span class="sxs-lookup"><span data-stu-id="24309-144">The data sources can include Microsoft Excel files, comma-separated value (CSV) files, and data from Microsoft Dynamics AX 2009 and Microsoft Dynamics AX 2012.</span></span> <span data-ttu-id="24309-145">Sie können deshalb Bedarfsplanungen generieren, die historische Daten entscheiden, die von mehreren Systemen beschränkt wird.</span><span class="sxs-lookup"><span data-stu-id="24309-145">Therefore, you can generate demand forecasts that consider historical data that is spread among multiple systems.</span></span> <span data-ttu-id="24309-146">Allerdings müssen die Masterdaten, wie Artikelnamen und Maßeinheiten, in den unterschiedlichen Datenquellen übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="24309-146">However, the master data, such as item names and units of measure, must be the same across the various data sources.</span></span>
-
-<span data-ttu-id="24309-147">Wenn Sie die Machine Learning-Experimente der Finance and Operations-Bedarfsplanung verwenden, prüfen diese fünf Planungsmethoden für Zeitserien auf die beste Eignung, um eine Grundplanung zu berechnen.</span><span class="sxs-lookup"><span data-stu-id="24309-147">If you use the Finance and Operations Demand forecasting Machine Learning experiments, they look for a best fit among five time series forecasting methods to calculate a baseline forecast.</span></span> <span data-ttu-id="24309-148">Die Parameter für diese Planungsmethode werden in Finance and Operations verwaltet.</span><span class="sxs-lookup"><span data-stu-id="24309-148">The parameters for these forecasting methods are managed in Finance and Operations.</span></span> 
-
-<span data-ttu-id="24309-149">Die Planungen, die historischen Daten und Änderungen, die an den Bedarfsplanungen in den vorherigen Iterationen vorgenommen wurden, sind dann in Finance and Operations verfügbar.</span><span class="sxs-lookup"><span data-stu-id="24309-149">The forecasts, historical data, and any changes that were made to the demand forecasts in previous iterations are then available in Finance and Operations.</span></span> 
-
-<span data-ttu-id="24309-150">Sie können Finance and Operations verwenden, um die Grundplanungen zu visualisieren und zu ändern.</span><span class="sxs-lookup"><span data-stu-id="24309-150">You can use Finance and Operations to visualize and modify the baseline forecasts.</span></span> <span data-ttu-id="24309-151">Manuelle Regulierungen müssen autorisiert werden, bevor die Planungen für die Planung verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="24309-151">Manual adjustments must be authorized before the forecasts can be used for planning.</span></span>
-
-## <a name="limitations"></a><span data-ttu-id="24309-152">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="24309-152">Limitations</span></span>
-<span data-ttu-id="24309-153">Die Bedarfsplanung in Finance and Operations ist ein Tool, das Kunden in der Fertigungsindustrie hilft, Planungsprozesse zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="24309-153">Demand forecasting in Finance and Operations is a tool that helps customers in the manufacturing industry create forecasting processes.</span></span> <span data-ttu-id="24309-154">Es bietet der Kernfunktionen von einer Bedarfsplanungslösung anzeigen und soll, sodass einfacher erweitert werden kann.</span><span class="sxs-lookup"><span data-stu-id="24309-154">It offers the core functionality of a demand forecasting solution and is designed so that it can easily be extended.</span></span> <span data-ttu-id="24309-155">Bedarfsplanung möglicherweise nicht die Anzahl, die für Debitoren in Branchen verwendet, beispielsweise Einzelhandel Großhandel, Warehousing, Transport oder anderen freiberuflichen Dienstleistungen abgeglichen wird.</span><span class="sxs-lookup"><span data-stu-id="24309-155">Demand forecasting might not be the best fit for customers in industries such as retail, wholesale, warehousing, transportation, or other professional services.</span></span>
-
-<a name="additional-resources"></a><span data-ttu-id="24309-156">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="24309-156">Additional resources</span></span>
---------
-
-[<span data-ttu-id="24309-157">Einrichten einer Bedarfsplanung</span><span class="sxs-lookup"><span data-stu-id="24309-157">Demand forecasting setup</span></span>](demand-forecasting-setup.md)
-
-[<span data-ttu-id="24309-158">Generieren einer statistischen Grundplanung</span><span class="sxs-lookup"><span data-stu-id="24309-158">Generating a statistical baseline forecast</span></span>](generate-statistical-baseline-forecast.md)
-
-[<span data-ttu-id="24309-159">Manuelle Anpassungen an die Grundplanung</span><span class="sxs-lookup"><span data-stu-id="24309-159">Making manual adjustments to the baseline forecast</span></span>](manual-adjustments-baseline-forecast.md)
-
-[<span data-ttu-id="24309-160">Autorisieren der angepassten Planung</span><span class="sxs-lookup"><span data-stu-id="24309-160">Authorizing the adjusted forecast</span></span>](authorize-adjusted-forecast.md)
-
-[<span data-ttu-id="24309-161">Überwachen der Planungsgenauigkeit</span><span class="sxs-lookup"><span data-stu-id="24309-161">Monitoring forecast accuracy</span></span>](monitor-forecast-accuracy.md)
-
-[<span data-ttu-id="24309-162">Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.</span><span class="sxs-lookup"><span data-stu-id="24309-162">Remove outliers from historical transaction data when calculating a demand forecast</span></span>](remove-historical-outliers-calculating-demand-forecast.md)
-
-[<span data-ttu-id="24309-163">Bedarfsplanungsfunktionen erweitern</span><span class="sxs-lookup"><span data-stu-id="24309-163">Extend the demand forecasting functionality</span></span>](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="introduction-demand-forecasting.md" target-language="de-DE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>introduction-demand-forecasting.9075b2.b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>b71fde2d1b56b237dec2a08d3bd27e8ba6c35fef</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>574d4dda83dcab94728a3d35fc53ee7e2b90feb0</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/22/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\supply-chain\master-planning\introduction-demand-forecasting.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>Demand forecasting overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bedarfsplanung – Überblick</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und abhängigen Bedarf an jedem Entkopplungspunkt für Kundenaufträge vorauszusagen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
+          <source>The enhanced demand forecast reduction rules provide an ideal solution for mass customization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Reduzierungsregeln der erweiterten Bedarfsplanung stellen eine ideale Lösung für die Massenanpassung bereit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>Demand forecasting overview</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bedarfsplanung – Überblick</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und abhängigen Bedarf an jedem Entkopplungspunkt für Kundenaufträge vorauszusagen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>The enhanced demand forecast reduction rules provide an ideal solution for mass customization.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Reduzierungsregeln der erweiterten Bedarfsplanung stellen eine ideale Lösung für die Massenanpassung bereit.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>To generate the baseline forecast, a summary of historical transactions is passed to a Microsoft Azure Machine Learning service that is hosted on Azure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Um die Grundplanung zu generieren, wird eine Zusammenfassung mit historischen Transaktionen an einen Microsoft Azure Machine Learning-Dienst übergeben, der auf Azure gehostet wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>Because this service isn't shared among users, it can easily be customized to meet industry-specific requirements.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Da dieser Dienst nicht unter Benutzern freigegeben wird, kann er problemlos angepasst werden, um den branchenspezifischen Anforderungen zu entsprechen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>You can use Finance and Operations to visualize the forecast, adjust the forecast, and view key performance indicators (KPIs) about forecast accuracy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Finance and Operations verwenden, um die Planung zu visualisieren, die Planung anzupassen und KPIs (Key Performance Indicators) zur Planungsgenauigkeit anzuzeigen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>Key features of demand forecasting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wichtigste Funktionen der Bedarfsplanung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Here are some of the main features of demand forecasting:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nachfolgend sind einige der Hauptmerkmale der Bedarfsplanung aufgeführt:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>Generate a statistical baseline forecast that is based on historical data.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eine statistische Grundplanung generieren, die auf historischen Daten basiert</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>Use a dynamic set of forecast dimensions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Einen dynamischen Satz von Planungsdimensionen verwenden</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Visualize demand trends, confidence intervals, and adjustments of the forecast.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bedarfstrends, Zuverlässigkeitsintervalle und Regulierungen der Planung visualisieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Authorize the adjusted forecast to be used in planning processes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die angepasste Planung für die Verwendung in Planungsprozessen autorisieren</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Remove outliers.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ausreißer entfernen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>Create measurements of forecast accuracy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Messungen für die Planungsgenauigkeit erstellen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>Major themes in demand forecasting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wichtige Themen der Bedarfsplanung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Three major themes are implemented in demand forecasting:</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Drei wichtige Themen wurden in die Bedarfsplanung implementiert:</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source><bpt id="p1">**</bpt>Modularity<ept id="p1">**</ept> – Demand forecasting is modular and easy to configure.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Modularität<ept id="p1">**</ept> - Die Bedarfsplanung ist modular und einfach zu konfigurieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>You can turn the functionality on and off by changing the configuration key at <bpt id="p1">**</bpt>Trade<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Inventory forecast<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Demand forecasting<ept id="p3">**</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können die Funktionalität aktivieren und deaktivieren, indem Sie den Konfigurationsschlüssel unter <bpt id="p1">**</bpt>Art<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Bestandsprognose<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Bedarfsplanung<ept id="p3">**</ept> ändern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source><bpt id="p1">**</bpt>Reuse of the Microsoft stack<ept id="p1">**</ept> – Microsoft launched the Machine Learning platform in February 2015.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Wiederverwendung des Microsoft-Stapels<ept id="p1">**</ept> – Microsoft hat die Machine Learning-Plattform im Februar 2015 veröffentlicht.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>Machine Learning, which is now part of the Microsoft Cortana Analytics Suite, lets you quickly and easily create predictive analysis experiments, such as demand estimation experiments, by using algorithms R or Python programming languages and a simple drag-and-drop interface.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Machine Learning ist jetzt Teil der Microsoft Cortana Analytics Suite und kann schnell und einfach vorbestimmte erstellt Analyseexperimente, wie Bedarfsvorkalkulationsexperimente über Algorithmen in R oder Python und eine einfache Drag &amp; Drop-Schnittstelle verwendet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>You can download the Finance and Operations Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können die Finance and Operations-Bedarfsplanungsexperimente herunterladen, sie ändern und an Ihre geschäftlichen Anforderungen anpassen, sie als Webdienst auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>The experiments are available for download if you've purchased a Finance and Operations subscription for a production planner as enterprise level user.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Experimente sind zum Download verfügbar, wenn Sie ein Finance and Operations-Abonnement für einen Produktionsplaner als Benutzer auf Unternehmensebene besitzen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>You can download any of the currently available demand prediction experiments from the <bpt id="p1">[</bpt>Cortana Analytics Gallery<ept id="p1">](https://gallery.cortanaanalytics.com/)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem <bpt id="p1">[</bpt>Cortana Analytics-Katalog<ept id="p1">](https://gallery.cortanaanalytics.com/)</ept> herunterladen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Whereas the Finance and Operations Demand forecasting experiments are automatically integrated with Finance and Operations, customers and partners must handle the integration of experiments that they download from the <bpt id="p1">[</bpt>Cortana Analytics Gallery<ept id="p1">](https://gallery.cortanaanalytics.com/)</ept>.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Während die Finance and Operations-Bedarfsplanungsexperimente automatisch mit Finance and Operations integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem <bpt id="p1">[</bpt>Cortana Analytics-Katalog<ept id="p1">](https://gallery.cortanaanalytics.com/)</ept> herunterladen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>Therefore, experiments from the <bpt id="p1">[</bpt>Cortana Analytics Gallery<ept id="p1">](https://gallery.cortanaanalytics.com/)</ept> aren't as straightforward to use as the Finance and Operations Demand forecasting experiments.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Daher sind Experimente aus dem <bpt id="p1">[</bpt>Cortana Analytics-Katalog<ept id="p1">](https://gallery.cortanaanalytics.com/)</ept> nicht so einfach zu verwenden wie die Finance and Operations-Bedarfsplanungsexperimente.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>You must modify the code of the experiments so that they use the Finance and Operations application programming interface (API).</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie müssen den Code der Experimente ändern, sodass sie die Finance and Operations-API verwenden können.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>You can create your own experiments in Microsoft Azure Machine Learning Studio, publish them as services on Azure, and use them to generate demand forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können eigene Experimente in Microsoft Azure Machine Learning Studio erstellen, als Dienste auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>If you don’t require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie keine hohe Leistung benötigen oder wenn Sie keine großen Datenmengen verarbeiten müssen, können Sie die kostenlose Machine Learning-Schicht verwenden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>We recommend that you always start from this tier, especially during implementation and testing phases.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es wird empfohlen, dass Sie immer über diese Schicht beginnen, besonders während der Implementierungs- und Testphasen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>If you require higher performance and additional storage, you can use the Machine Learning standard tier.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie höhere Leistung und zusätzlichen Speicherplatz benötigen, können Sie die Standardschicht von Machine Learning verwenden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>This tier requires an Azure subscription and involves additional costs.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm">Diese Schicht erfordert ein Azure-Abonnement und beinhaltet zusätzliche Kosten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>For details about Machine Learning pricing, see <bpt id="p1">[</bpt>Machine Learning Studio pricing<ept id="p1">](https://aka.ms/machine-learning-price-info)</ept>.</source><target logoport:matchpercent="78" state="translated" state-qualifier="fuzzy-match">Einzelheiten zur den Machine Learning-Preisen finden Sie unter <bpt id="p1">[</bpt>Machine Learning Studio-Preise<ept id="p1">](https://aka.ms/machine-learning-price-info)</ept>.</target>
+        </trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source><bpt id="p1">**</bpt>Forecast reduction at any decoupling point<ept id="p1">**</ept> – Demand forecasting in Finance and Operations builds on this functionality, which lets you forecast both dependent and independent demand at any decoupling point.</source>
+        <target logoport:matchpercent="100" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">**</bpt>Planungsverringerung an jedem Entkopplungspunkt<ept id="p1">**</ept> – Die Bedarfsplanung in Finance and Operations baut auf dieser Funktionalität auf, mit der Sie abhängigen und unabhängigen Bedarf an jedem Entkopplungspunkt planen können.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>Basic flow in demand forecasting</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundlegender Ablauf in der Bedarfsplanung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>The following diagram shows the basic flow in demand forecasting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das folgende Diagramm zeigt den grundlegenden Ablauf in der Bedarfsplanung.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source><bpt id="p1">[</bpt><ph id="ph1">![</ph>demand forecasting introduction diagram<ept id="p1">](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt><ph id="ph1">![</ph>Einführung in die Bedarfsplanung<ept id="p1">](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Demand forecast generation starts in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Erstellung der Bedarfsplanung beginnt in Finance and Operations.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>Historical transactional data from the Finance and Operations transactional database is gathered and populates a staging table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Historische transaktionsbezogene Daten aus der Finance and Operations-Transaktionsdatenbank werden gesammelt und in einer Stagingtabelle angezeigt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>This staging table is later fed to a Machine Learning service.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Staging-Tabelle wird später an den Machine Learning-Service übergeben.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>By performing minimal customization, you can plug various data sources into the staging table.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Durch minimale Anpassungen können Sie verschiedene Datenquellen mit der Stagingtabelle verbinden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>The data sources can include Microsoft Excel files, comma-separated value (CSV) files, and data from Microsoft Dynamics AX 2009 and Microsoft Dynamics AX 2012.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Datenquellen können Microsoft Excel-Dateien, kommagetrennte Wert (CSV)-Dateien und Daten von Microsoft Dynamics AX 2009 und Microsoft Dynamics AX 2012 einschließen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Therefore, you can generate demand forecasts that consider historical data that is spread among multiple systems.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können deshalb Bedarfsplanungen generieren, die historische Daten entscheiden, die von mehreren Systemen beschränkt wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>However, the master data, such as item names and units of measure, must be the same across the various data sources.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Allerdings müssen die Masterdaten, wie Artikelnamen und Maßeinheiten, in den unterschiedlichen Datenquellen übereinstimmen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>If you use the Finance and Operations Demand forecasting Machine Learning experiments, they look for a best fit among five time series forecasting methods to calculate a baseline forecast.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wenn Sie die Machine Learning-Experimente der Finance and Operations-Bedarfsplanung verwenden, prüfen diese fünf Planungsmethoden für Zeitserien auf die beste Eignung, um eine Grundplanung zu berechnen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>The parameters for these forecasting methods are managed in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Parameter für diese Planungsmethode werden in Finance and Operations verwaltet.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>The forecasts, historical data, and any changes that were made to the demand forecasts in previous iterations are then available in Finance and Operations.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Planungen, die historischen Daten und Änderungen, die an den Bedarfsplanungen in den vorherigen Iterationen vorgenommen wurden, sind dann in Finance and Operations verfügbar.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>You can use Finance and Operations to visualize and modify the baseline forecasts.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können Finance and Operations verwenden, um die Grundplanungen zu visualisieren und zu ändern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Manual adjustments must be authorized before the forecasts can be used for planning.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Manuelle Regulierungen müssen autorisiert werden, bevor die Planungen für die Planung verwendet werden können.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Limitations</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Einschränkungen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Demand forecasting in Finance and Operations is a tool that helps customers in the manufacturing industry create forecasting processes.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Bedarfsplanung in Finance and Operations ist ein Tool, das Kunden in der Fertigungsindustrie hilft, Planungsprozesse zu erstellen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>It offers the core functionality of a demand forecasting solution and is designed so that it can easily be extended.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Es bietet der Kernfunktionen von einer Bedarfsplanungslösung anzeigen und soll, sodass einfacher erweitert werden kann.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Demand forecasting might not be the best fit for customers in industries such as retail, wholesale, warehousing, transportation, or other professional services.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bedarfsplanung möglicherweise nicht die Anzahl, die für Debitoren in Branchen verwendet, beispielsweise Einzelhandel Großhandel, Warehousing, Transport oder anderen freiberuflichen Dienstleistungen abgeglichen wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Additional resources</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zusätzliche Ressourcen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source><bpt id="p1">[</bpt>Demand forecasting setup<ept id="p1">](demand-forecasting-setup.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Einrichten einer Bedarfsplanung<ept id="p1">](demand-forecasting-setup.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="158">
+          <source><bpt id="p1">[</bpt>Generating a statistical baseline forecast<ept id="p1">](generate-statistical-baseline-forecast.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Generieren einer statistischen Grundplanung<ept id="p1">](generate-statistical-baseline-forecast.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="159">
+          <source><bpt id="p1">[</bpt>Making manual adjustments to the baseline forecast<ept id="p1">](manual-adjustments-baseline-forecast.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Manuelle Anpassungen an die Grundplanung<ept id="p1">](manual-adjustments-baseline-forecast.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="160">
+          <source><bpt id="p1">[</bpt>Authorizing the adjusted forecast<ept id="p1">](authorize-adjusted-forecast.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Autorisieren der angepassten Planung<ept id="p1">](authorize-adjusted-forecast.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="161">
+          <source><bpt id="p1">[</bpt>Monitoring forecast accuracy<ept id="p1">](monitor-forecast-accuracy.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Überwachen der Planungsgenauigkeit<ept id="p1">](monitor-forecast-accuracy.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="162">
+          <source><bpt id="p1">[</bpt>Remove outliers from historical transaction data when calculating a demand forecast<ept id="p1">](remove-historical-outliers-calculating-demand-forecast.md)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.<ept id="p1">](remove-historical-outliers-calculating-demand-forecast.md)</ept></target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="163">
+          <source><bpt id="p1">[</bpt>Extend the demand forecasting functionality<ept id="p1">](https://www.youtube.com/watch?v=4OIKIXLiNjI&amp;feature=youtu.be)</ept></source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Bedarfsplanungsfunktionen erweitern<ept id="p1">](https://www.youtube.com/watch?v=4OIKIXLiNjI&amp;feature=youtu.be)</ept></target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

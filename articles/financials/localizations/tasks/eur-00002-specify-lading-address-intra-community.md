@@ -1,75 +1,189 @@
----
-title: EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung
-description: Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.
-author: v-oloski
-manager: AnnBe
-ms.date: 08/29/2018
-ms.topic: business-process
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, TransportationDocument, LogisticsPostalAddress, SysLookupMultiSelectGrid,  VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, Intrastat, SysQueryForm
-audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-ms.author: v-oloski
-ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71f93d0ebc660199710d4bbfaff27eb7754a81da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537741"
----
-# <a name="eur-00002-specifying-a-lading-address-for-an-intra-community-transaction"></a><span data-ttu-id="75931-103">EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung</span><span class="sxs-lookup"><span data-stu-id="75931-103">EUR-00002 Specifying a lading address for an intra-community transaction</span></span>
-
-[!include [task guide banner](../../includes/task-guide-banner.md)]
-
-<span data-ttu-id="75931-104">Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="75931-104">This procedure shows how to specify a lading address for an intra-community trade transaction.</span></span> <span data-ttu-id="75931-105">Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse.</span><span class="sxs-lookup"><span data-stu-id="75931-105">For example, a Germany company orders items from a vendor with a German business address.</span></span> <span data-ttu-id="75931-106">Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort.</span><span class="sxs-lookup"><span data-stu-id="75931-106">This vendor has a warehouse in Italy and ships the items from there.</span></span> <span data-ttu-id="75931-107">Die Lieferung muss in Intrastat gemeldet werden.</span><span class="sxs-lookup"><span data-stu-id="75931-107">This delivery must be reported in the Intrastat.</span></span> <span data-ttu-id="75931-108">Dasselbe Verhalten gilt für Debitorenrücklieferungen.</span><span class="sxs-lookup"><span data-stu-id="75931-108">The same behavior is valid for customer returns.</span></span>
-<span data-ttu-id="75931-109">Diese Prozedur gilt für alle europäischen Länder/Regionen.</span><span class="sxs-lookup"><span data-stu-id="75931-109">This procedure applies to all European countries/regions.</span></span> <span data-ttu-id="75931-110">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt.</span><span class="sxs-lookup"><span data-stu-id="75931-110">The task was created using the demo data company DEMF with a primary address in Germany.</span></span> <span data-ttu-id="75931-111">Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="75931-111">Before you can complete this procedure, you must configure Intrastat reporting.</span></span> <span data-ttu-id="75931-112">Diese Prozedur ist für Buchhalter vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="75931-112">This procedure is intended for accountants.</span></span> <span data-ttu-id="75931-113">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="75931-113">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
-
-1. <span data-ttu-id="75931-114">Wechseln Sie zu "Kreditoren" > "Bestellungen" > "Alle Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="75931-114">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="75931-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="75931-115">Click New.</span></span>
-3. <span data-ttu-id="75931-116">Wert eingeben oder auswählen</span><span class="sxs-lookup"><span data-stu-id="75931-116">Enter or select a value</span></span>
-    * <span data-ttu-id="75931-117">Wählen Sie z. B. DE-001 aus.</span><span class="sxs-lookup"><span data-stu-id="75931-117">For example, select DE-001.</span></span> <span data-ttu-id="75931-118">Dieser Kreditor hat eine deutsche Geschäftsadresse.</span><span class="sxs-lookup"><span data-stu-id="75931-118">This vendor has a German business address.</span></span>  
-4. <span data-ttu-id="75931-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="75931-119">Click OK.</span></span>
-5. <span data-ttu-id="75931-120">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="75931-120">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="75931-121">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie den Wert "D0001" aus.</span><span class="sxs-lookup"><span data-stu-id="75931-121">In the Item number field, enter or select a value D0001.</span></span>
-7. <span data-ttu-id="75931-122">Klicken Sie auf Speichern.</span><span class="sxs-lookup"><span data-stu-id="75931-122">Click Save.</span></span>
-8. <span data-ttu-id="75931-123">Klicken Sie im Aktivitätsbereich auf "Entgegennehmen".</span><span class="sxs-lookup"><span data-stu-id="75931-123">On the Action Pane, click Receive.</span></span>
-9. <span data-ttu-id="75931-124">Klicken Sie auf Transportdetails.</span><span class="sxs-lookup"><span data-stu-id="75931-124">Click Transportation details.</span></span>
-10. <span data-ttu-id="75931-125">Geben Sie im Feld "Beladungsdatum und -uhrzeit" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="75931-125">In the Loading date and time field, enter a date and time.</span></span>
-11. <span data-ttu-id="75931-126">Klicken Sie auf "Adresse hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="75931-126">Click Add address.</span></span>
-12. <span data-ttu-id="75931-127">Klicken Sie auf "Neu" und erstellen Sie eine neue Adresse mit dem Zweck "Beladen".</span><span class="sxs-lookup"><span data-stu-id="75931-127">Click New and create new address with purpose Lading.</span></span>
-13. <span data-ttu-id="75931-128">Geben Sie im Feld "Name oder Beschreibung" "Italienisch" ein.</span><span class="sxs-lookup"><span data-stu-id="75931-128">In the Name or description field, type 'Italian'.</span></span>
-14. <span data-ttu-id="75931-129">Wählen Sie "Beladung" als Wert aus.</span><span class="sxs-lookup"><span data-stu-id="75931-129">Select Lading as the value.</span></span>
-    * <span data-ttu-id="75931-130">Beachten Sie, das der Adresszweck "Beladen" muss.</span><span class="sxs-lookup"><span data-stu-id="75931-130">Note that that address purpose must be Lading.</span></span>  
-15. <span data-ttu-id="75931-131">Wählen Sie im Feld Name/Region "ITA" aus oder geben Sie einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="75931-131">In the Country/region field, enter or select a value ITA.</span></span>
-16. <span data-ttu-id="75931-132">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="75931-132">Click Save.</span></span>
-17. <span data-ttu-id="75931-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="75931-133">Close the page.</span></span>
-18. <span data-ttu-id="75931-134">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="75931-134">Click Save.</span></span>
-    * <span data-ttu-id="75931-135">Überprüfen Sie, ob die Beladungsadresse korrekt ist.</span><span class="sxs-lookup"><span data-stu-id="75931-135">Verify that the lading address is correct.</span></span>  
-19. <span data-ttu-id="75931-136">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="75931-136">Close the page.</span></span>
-20. <span data-ttu-id="75931-137">Klicken Sie im Aktivitätsbereich auf "Einkauf".</span><span class="sxs-lookup"><span data-stu-id="75931-137">On the Action Pane, click Purchase.</span></span>
-21. <span data-ttu-id="75931-138">Klicken Sie auf "Bestätigen".</span><span class="sxs-lookup"><span data-stu-id="75931-138">Click Confirm.</span></span>
-22. <span data-ttu-id="75931-139">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="75931-139">On the Action Pane, click Invoice.</span></span>
-23. <span data-ttu-id="75931-140">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="75931-140">Click Invoice.</span></span>
-24. <span data-ttu-id="75931-141">Geben Sie im Feld "Zahl" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="75931-141">In the Number field, type a value.</span></span>
-25. <span data-ttu-id="75931-142">Geben Sie in das Feld "Rechnungsdatum" ein Datum ein.</span><span class="sxs-lookup"><span data-stu-id="75931-142">In the Invoice date field, enter a date.</span></span>
-26. <span data-ttu-id="75931-143">Klicken Sie auf "Standard von: Menge im Produktzugang", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="75931-143">Click Default from: Product receipt quantity to open the drop dialog.</span></span>
-27. <span data-ttu-id="75931-144">Wählen Sie im Feld "Standardmenge für Positionen" "Menge im Produktzugang" aus.</span><span class="sxs-lookup"><span data-stu-id="75931-144">In the Default quantity for lines field, select 'Ordered quantity'.</span></span>
-28. <span data-ttu-id="75931-145">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="75931-145">Click OK.</span></span>
-29. <span data-ttu-id="75931-146">Klicken Sie auf Transportdetails.</span><span class="sxs-lookup"><span data-stu-id="75931-146">Click Transportation details.</span></span>
-    * <span data-ttu-id="75931-147">Überprüfen Sie, dass Waren aus Italien versendet wurden.</span><span class="sxs-lookup"><span data-stu-id="75931-147">Verify that goods were shipped from Italy.</span></span> <span data-ttu-id="75931-148">Bei Bedarf können Sie die Ladungsdetails bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="75931-148">If necessary, you can edit the lading details.</span></span>  
-30. <span data-ttu-id="75931-149">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="75931-149">Close the page.</span></span>
-31. <span data-ttu-id="75931-150">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="75931-150">Click Post.</span></span>
-32. <span data-ttu-id="75931-151">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="75931-151">Close the page.</span></span>
-33. <span data-ttu-id="75931-152">Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Intrastat".</span><span class="sxs-lookup"><span data-stu-id="75931-152">Go to Tax > Declarations > Foreign trade > Intrastat.</span></span>
-34. <span data-ttu-id="75931-153">Klicken Sie auf Übertragen.</span><span class="sxs-lookup"><span data-stu-id="75931-153">Click Transfer.</span></span>
-35. <span data-ttu-id="75931-154">Wählen Sie "Ja" im Feld "Kreditorenrechnung" aus.</span><span class="sxs-lookup"><span data-stu-id="75931-154">Select Yes in the Vendor invoice field.</span></span>
-36. <span data-ttu-id="75931-155">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="75931-155">Click OK.</span></span>
-37. <span data-ttu-id="75931-156">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="75931-156">Click the General tab.</span></span>
-    * <span data-ttu-id="75931-157">Suchen Sie eine neu erstellte Position und vergewissern Sie sich, dass der Absender die Waren aus Italien liefert.</span><span class="sxs-lookup"><span data-stu-id="75931-157">Find a newly created line and verify that the sender shipped the goods from Italy.</span></span>  
-
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="eur-00002-specify-lading-address-intra-community.md" target-language="de-DE">
+    <header>
+      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
+      <xliffext:skl_file_name>eur-00002-specify-lading-address-intra-community.11a8c5.4db22444bee1590770a47ca5946941b530ae85ce.skl</xliffext:skl_file_name>
+      <xliffext:version>1.2</xliffext:version>
+      <xliffext:ms.openlocfilehash>4db22444bee1590770a47ca5946941b530ae85ce</xliffext:ms.openlocfilehash>
+      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
+      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
+      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00002-specify-lading-address-intra-community.md</xliffext:ms.openlocfilepath>
+    </header>
+    <body>
+      <group extype="content" id="content">
+        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
+          <source>EUR-00002 Specifying a lading address for an intra-community transaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
+          <source>This procedure shows how to specify a lading address for an intra-community trade transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="103">
+          <source>EUR-00002 Specifying a lading address for an intra-community transaction</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00002 - Angeben einer Ladungsadresse für eine Innergemeinschaftliche Buchung</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="104">
+          <source>This procedure shows how to specify a lading address for an intra-community trade transaction.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieses Verfahren zeigt, wie eine Ladungsadresse für eine innergemeinschaftliche Handelsbuchung festgelegt wird.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="105">
+          <source>For example, a Germany company orders items from a vendor with a German business address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zum Beispiel ein deutsches Unternehmens bestellt Artikel von einem Kreditor mit einer deutschen Geschäftsadresse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="106">
+          <source>This vendor has a warehouse in Italy and ships the items from there.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Kreditor hat einen Lagerort in Italien und liefert die Artikel von dort.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="107">
+          <source>This delivery must be reported in the Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Lieferung muss in Intrastat gemeldet werden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="108">
+          <source>The same behavior is valid for customer returns.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dasselbe Verhalten gilt für Debitorenrücklieferungen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="109">
+          <source>This procedure applies to all European countries/regions.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur gilt für alle europäischen Länder/Regionen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="110">
+          <source>The task was created using the demo data company DEMF with a primary address in Germany.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF mit der primären Adresse in Deutschland erstellt.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="111">
+          <source>Before you can complete this procedure, you must configure Intrastat reporting.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bevor Sie dieses Verfahren ausführen können, müssen Sie Intrastat-Berichte konfigurieren.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="112">
+          <source>This procedure is intended for accountants.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur ist für Buchhalter vorgesehen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="113">
+          <source>This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="114">
+          <source>Go to Accounts payable &gt; Purchase orders &gt; All purchase orders.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Kreditoren" &gt; "Bestellungen" &gt; "Alle Bestellungen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="115">
+          <source>Click New.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Neu".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="116">
+          <source>Enter or select a value</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert eingeben oder auswählen</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="117">
+          <source>For example, select DE-001.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie z. B. DE-001 aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="118">
+          <source>This vendor has a German business address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dieser Kreditor hat eine deutsche Geschäftsadresse.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="119">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="120">
+          <source>In the list, mark the selected row.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markieren Sie in der Liste die ausgewählte Zeile.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="121">
+          <source>In the Item number field, enter or select a value D0001.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie den Wert "D0001" aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="122">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Speichern.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="123">
+          <source>On the Action Pane, click Receive.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Entgegennehmen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="124">
+          <source>Click Transportation details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Transportdetails.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="125">
+          <source>In the Loading date and time field, enter a date and time.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Beladungsdatum und -uhrzeit" ein Datum und eine Uhrzeit ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="126">
+          <source>Click Add address.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Adresse hinzufügen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="127">
+          <source>Click New and create new address with purpose Lading.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Neu" und erstellen Sie eine neue Adresse mit dem Zweck "Beladen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="128">
+          <source>In the Name or description field, type 'Italian'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Name oder Beschreibung" "Italienisch" ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="129">
+          <source>Select Lading as the value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie "Beladung" als Wert aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="130">
+          <source>Note that that address purpose must be Lading.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beachten Sie, das der Adresszweck "Beladen" muss.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="131">
+          <source>In the Country/region field, enter or select a value ITA.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Feld Name/Region "ITA" aus oder geben Sie einen Wert ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="132">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="133">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="134">
+          <source>Click Save.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="135">
+          <source>Verify that the lading address is correct.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie, ob die Beladungsadresse korrekt ist.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="136">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="137">
+          <source>On the Action Pane, click Purchase.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Einkauf".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="138">
+          <source>Click Confirm.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Bestätigen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="139">
+          <source>On the Action Pane, click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Rechnung".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="140">
+          <source>Click Invoice.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Rechnung".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="141">
+          <source>In the Number field, type a value.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Zahl" einen Wert ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="142">
+          <source>In the Invoice date field, enter a date.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie in das Feld "Rechnungsdatum" ein Datum ein.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="143">
+          <source>Click Default from: Product receipt quantity to open the drop dialog.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Standard von: Menge im Produktzugang", um das Ablagedialogfeld zu öffnen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="144">
+          <source>In the Default quantity for lines field, select 'Ordered quantity'.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Feld "Standardmenge für Positionen" "Menge im Produktzugang" aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="145">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="146">
+          <source>Click Transportation details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Transportdetails.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="147">
+          <source>Verify that goods were shipped from Italy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie, dass Waren aus Italien versendet wurden.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="148">
+          <source>If necessary, you can edit the lading details.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bei Bedarf können Sie die Ladungsdetails bearbeiten.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="149">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="150">
+          <source>Click Post.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Buchen".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="151">
+          <source>Close the page.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="152">
+          <source>Go to Tax &gt; Declarations &gt; Foreign trade &gt; Intrastat.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Steuer" &gt; "Meldungen" &gt; "Außenhandel" &gt; "Intrastat".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="153">
+          <source>Click Transfer.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Übertragen.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="154">
+          <source>Select Yes in the Vendor invoice field.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie "Ja" im Feld "Kreditorenrechnung" aus.</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="155">
+          <source>Click OK.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="156">
+          <source>Click the General tab.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf die Registerkarte "Allgemein".</target></trans-unit>
+        <trans-unit xml:space="preserve" translate="yes" id="157">
+          <source>Find a newly created line and verify that the sender shipped the goods from Italy.</source>
+        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suchen Sie eine neu erstellte Position und vergewissern Sie sich, dass der Absender die Waren aus Italien liefert.</target></trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
