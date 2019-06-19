@@ -1,204 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00012-issue-eu-entry-certificate.md" target-language="de-DE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00012-issue-eu-entry-certificate.2f67ef.5a566b1d25064e3fccc8953dc883aa63bd16a301.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>5a566b1d25064e3fccc8953dc883aa63bd16a301</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00012-issue-eu-entry-certificate.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00012 Issue an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Ausstellen einer EU-Gelangensbestätigung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00012 Issue an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Ausstellen einer EU-Gelangensbestätigung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This procedure was created using the demo data company DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Enable entry certificate management</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verwaltung der Gelangensbestätigung aktivieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Go to Accounts receivable &gt; Setup &gt; Accounts receivable parameters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Kreditoren" &gt; "Einstellung" &gt; "Kreditorenparameter".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Click the Shipments tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf die Registerkarte ''.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Expand the Entry certificate section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erweitern Sie den Eintragsbescheinigungsabschnitt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select Yes in the Enable entry certificate management field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Select Yes in the Enable entry certificate issuing field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click the Number sequences tab.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf die Registerkarte "Nummernkreis".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>In the list, find and select Entry certificate row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>In the Number sequence code field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Ursprüngliche Rechnungsnummer" einen Wert ein, oder wählen Sie einen Wert aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Set up a customer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Einrichten einer Debitorenvorauszahlung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Go to Accounts receivable &gt; Customers &gt; All customers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Debitoren" &gt; "Debitoren" &gt; "Alle Debitoren".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Use the Quick Filter to find records.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>For example, filter on the Account field with a value of 'DE-015'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtern Sie beispielsweise im Feld "Konto" mit dem Wert "DE-015".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Open customer account details.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Details des Debitorenkontos öffnen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Bearbeiten.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Expand the Invoice and delivery section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erweitern Sie den Rechnungs- und Lieferungsabschnitt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Select Yes in the Entry certificate required field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Select Yes in the Issue entry certificate field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Create an EU entry certificate automatically</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erhalt einer EU-Gelangensbestätigung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Go to Accounts receivable &gt; Orders &gt; All sales orders.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Debitoren" &gt; "Aufträge" &gt; "Alle Aufträge".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Neu".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>In the Customer account field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Debitorenkonto" einen Wert ein oder wählen Sie einen Wert aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>In the Item number field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>On the Action Pane, click Pick and pack.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Entnehmen und verpacken".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>Click Post packing slip.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Lieferschein buchen".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Expand the Parameters section.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erweitern Sie den Abschnitt "Parameter".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>In the Quantity field, select 'All'.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Feld "Menge" die Option "Alle" aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Clear the Issue entry certificate check box.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aktivieren Sie dieses Kontrollkästchen, um Gelangensbestätigungen auszustellen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>An entry certificate can be issued during packing slip posting or during order invoicing.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eine Eintragsbescheinigung kann während der Lieferscheinbuchung oder während der Auftragsrechnungsstellung ausgegeben werden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Leave the Issue entry certificate checkbox unchecked to issue it later.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Verlassen Sie das Abgangseintrags-Bescheinigungskontrollkästchen deaktiviert, um ihn später auszugeben.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Überprüfen Sie, ob die Eintragsbescheinigung Buchungszeitpunkt und Abgangseintrags-Bescheinigungskontrollkästchen im Überblicksabschnitt markiert sind.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>You can also select the Print entry certificate check box to allow printing of the certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können das Druckseintrags-Bescheinigungskontrollkästchen auch auswählen, um das Drucken der Bescheinigung zu ermöglichen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>Click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>Click View issued entry certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ausgestellte Gelangensbestätigungen anzeigen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Click Print.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Drucken.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>Click Change status.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Status ändern".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>In the New status field, select an option.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie im Feld Status eine Option aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Create an EU entry certificate manually</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erhalt einer EU-Gelangensbestätigung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>Click Create entry certificate.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gelangensbestätigung erstellen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>Click OK.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "OK".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>On the Action Pane, click Invoice.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Aktivitätsbereich auf "Rechnung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Click View issued entry certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ausgestellte Gelangensbestätigungen anzeigen</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00012 Ausstellen einer EU-Gelangensbestätigung
+description: Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 5a566b1d25064e3fccc8953dc883aa63bd16a301
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566775"
+---
+# <a name="eur-00012-issue-an-eu-entry-certificate"></a><span data-ttu-id="48ddc-103">EUR-00012 Ausstellen einer EU-Gelangensbestätigung</span><span class="sxs-lookup"><span data-stu-id="48ddc-103">EUR-00012 Issue an EU entry certificate</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="48ddc-104">Diese Prozedur läuft Sie durch das Aktivieren einer EU-Eintragsbescheinigung nach und konfiguriert ein Debitorenkonto, um Eintragsbescheinigungen zu verwenden und eine Bescheinigung auszustellen.</span><span class="sxs-lookup"><span data-stu-id="48ddc-104">This procedure walks you through enabling an EU entry certificate, configuring a customer account to use entry certificates and issue a certificate.</span></span> <span data-ttu-id="48ddc-105">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="48ddc-105">This procedure was created using the demo data company DEMF.</span></span>
+
+
+## <a name="enable-entry-certificate-management"></a><span data-ttu-id="48ddc-106">Verwaltung der Gelangensbestätigung aktivieren</span><span class="sxs-lookup"><span data-stu-id="48ddc-106">Enable entry certificate management</span></span>
+1. <span data-ttu-id="48ddc-107">Wechseln Sie zu "Kreditoren" > "Einstellung" > "Kreditorenparameter".</span><span class="sxs-lookup"><span data-stu-id="48ddc-107">Go to Accounts receivable > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="48ddc-108">Klicken Sie auf die Registerkarte ''.</span><span class="sxs-lookup"><span data-stu-id="48ddc-108">Click the Shipments tab.</span></span>
+3. <span data-ttu-id="48ddc-109">Erweitern Sie den Eintragsbescheinigungsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="48ddc-109">Expand the Entry certificate section.</span></span>
+4. <span data-ttu-id="48ddc-110">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</span><span class="sxs-lookup"><span data-stu-id="48ddc-110">Select Yes in the Enable entry certificate management field.</span></span>
+5. <span data-ttu-id="48ddc-111">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</span><span class="sxs-lookup"><span data-stu-id="48ddc-111">Select Yes in the Enable entry certificate issuing field.</span></span>
+6. <span data-ttu-id="48ddc-112">Klicken Sie auf die Registerkarte "Nummernkreis".</span><span class="sxs-lookup"><span data-stu-id="48ddc-112">Click the Number sequences tab.</span></span>
+7. <span data-ttu-id="48ddc-113">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="48ddc-113">In the list, find and select Entry certificate row.</span></span>
+8. <span data-ttu-id="48ddc-114">Geben Sie im Feld "Ursprüngliche Rechnungsnummer" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="48ddc-114">In the Number sequence code field, enter or select a value.</span></span>
+
+## <a name="set-up-a-customer"></a><span data-ttu-id="48ddc-115">Einrichten einer Debitorenvorauszahlung</span><span class="sxs-lookup"><span data-stu-id="48ddc-115">Set up a customer</span></span>
+1. <span data-ttu-id="48ddc-116">Wechseln Sie zu "Debitoren" > "Debitoren" > "Alle Debitoren".</span><span class="sxs-lookup"><span data-stu-id="48ddc-116">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="48ddc-117">Verwenden Sie den Schnellfilter, um Datensätze zu suchen.</span><span class="sxs-lookup"><span data-stu-id="48ddc-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="48ddc-118">Filtern Sie beispielsweise im Feld "Konto" mit dem Wert "DE-015".</span><span class="sxs-lookup"><span data-stu-id="48ddc-118">For example, filter on the Account field with a value of 'DE-015'.</span></span>
+3. <span data-ttu-id="48ddc-119">Die Details des Debitorenkontos öffnen.</span><span class="sxs-lookup"><span data-stu-id="48ddc-119">Open customer account details.</span></span>
+4. <span data-ttu-id="48ddc-120">Klicken Sie auf Bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="48ddc-120">Click Edit.</span></span>
+5. <span data-ttu-id="48ddc-121">Erweitern Sie den Rechnungs- und Lieferungsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="48ddc-121">Expand the Invoice and delivery section.</span></span>
+6. <span data-ttu-id="48ddc-122">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</span><span class="sxs-lookup"><span data-stu-id="48ddc-122">Select Yes in the Entry certificate required field.</span></span>
+7. <span data-ttu-id="48ddc-123">Aktivieren Sie dieses Kontrollkästchen, um die Verwaltung der Gelangensbestätigung zu aktivieren</span><span class="sxs-lookup"><span data-stu-id="48ddc-123">Select Yes in the Issue entry certificate field.</span></span>
+8. <span data-ttu-id="48ddc-124">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="48ddc-124">Click Save.</span></span>
+
+## <a name="create-an-eu-entry-certificate-automatically"></a><span data-ttu-id="48ddc-125">Erhalt einer EU-Gelangensbestätigung</span><span class="sxs-lookup"><span data-stu-id="48ddc-125">Create an EU entry certificate automatically</span></span>
+1. <span data-ttu-id="48ddc-126">Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".</span><span class="sxs-lookup"><span data-stu-id="48ddc-126">Go to Accounts receivable > Orders > All sales orders.</span></span>
+2. <span data-ttu-id="48ddc-127">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="48ddc-127">Click New.</span></span>
+3. <span data-ttu-id="48ddc-128">Geben Sie im Feld "Debitorenkonto" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="48ddc-128">In the Customer account field, enter or select a value.</span></span>
+4. <span data-ttu-id="48ddc-129">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-129">Click OK.</span></span>
+5. <span data-ttu-id="48ddc-130">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="48ddc-130">In the Item number field, enter or select a value.</span></span>
+6. <span data-ttu-id="48ddc-131">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="48ddc-131">Click Save.</span></span>
+7. <span data-ttu-id="48ddc-132">Klicken Sie im Aktivitätsbereich auf "Entnehmen und verpacken".</span><span class="sxs-lookup"><span data-stu-id="48ddc-132">On the Action Pane, click Pick and pack.</span></span>
+8. <span data-ttu-id="48ddc-133">Klicken Sie auf "Lieferschein buchen".</span><span class="sxs-lookup"><span data-stu-id="48ddc-133">Click Post packing slip.</span></span>
+9. <span data-ttu-id="48ddc-134">Erweitern Sie den Abschnitt "Parameter".</span><span class="sxs-lookup"><span data-stu-id="48ddc-134">Expand the Parameters section.</span></span>
+10. <span data-ttu-id="48ddc-135">Wählen Sie im Feld "Menge" die Option "Alle" aus.</span><span class="sxs-lookup"><span data-stu-id="48ddc-135">In the Quantity field, select 'All'.</span></span>
+11. <span data-ttu-id="48ddc-136">Aktivieren Sie dieses Kontrollkästchen, um Gelangensbestätigungen auszustellen</span><span class="sxs-lookup"><span data-stu-id="48ddc-136">Clear the Issue entry certificate check box.</span></span>
+    * <span data-ttu-id="48ddc-137">Eine Eintragsbescheinigung kann während der Lieferscheinbuchung oder während der Auftragsrechnungsstellung ausgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="48ddc-137">An entry certificate can be issued during packing slip posting or during order invoicing.</span></span> <span data-ttu-id="48ddc-138">Verlassen Sie das Abgangseintrags-Bescheinigungskontrollkästchen deaktiviert, um ihn später auszugeben.</span><span class="sxs-lookup"><span data-stu-id="48ddc-138">Leave the Issue entry certificate checkbox unchecked to issue it later.</span></span>  
+12. <span data-ttu-id="48ddc-139">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-139">Click OK.</span></span>
+13. <span data-ttu-id="48ddc-140">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-140">Click OK.</span></span>
+14. <span data-ttu-id="48ddc-141">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-141">On the Action Pane, click Invoice.</span></span>
+15. <span data-ttu-id="48ddc-142">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-142">Click Invoice.</span></span>
+    * <span data-ttu-id="48ddc-143">Überprüfen Sie, ob die Eintragsbescheinigung Buchungszeitpunkt und Abgangseintrags-Bescheinigungskontrollkästchen im Überblicksabschnitt markiert sind.</span><span class="sxs-lookup"><span data-stu-id="48ddc-143">Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.</span></span>  <span data-ttu-id="48ddc-144">Sie können das Druckseintrags-Bescheinigungskontrollkästchen auch auswählen, um das Drucken der Bescheinigung zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="48ddc-144">You can also select the Print entry certificate check box to allow printing of the certificate.</span></span>  
+16. <span data-ttu-id="48ddc-145">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-145">Click OK.</span></span>
+17. <span data-ttu-id="48ddc-146">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-146">Click OK.</span></span>
+18. <span data-ttu-id="48ddc-147">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-147">On the Action Pane, click Invoice.</span></span>
+19. <span data-ttu-id="48ddc-148">Klicken Sie auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-148">Click Invoice.</span></span>
+20. <span data-ttu-id="48ddc-149">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-149">On the Action Pane, click Invoice.</span></span>
+21. <span data-ttu-id="48ddc-150">Ausgestellte Gelangensbestätigungen anzeigen</span><span class="sxs-lookup"><span data-stu-id="48ddc-150">Click View issued entry certificates.</span></span>
+22. <span data-ttu-id="48ddc-151">Klicken Sie auf Drucken.</span><span class="sxs-lookup"><span data-stu-id="48ddc-151">Click Print.</span></span>
+23. <span data-ttu-id="48ddc-152">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="48ddc-152">Close the page.</span></span>
+24. <span data-ttu-id="48ddc-153">Klicken Sie auf "Status ändern".</span><span class="sxs-lookup"><span data-stu-id="48ddc-153">Click Change status.</span></span>
+25. <span data-ttu-id="48ddc-154">Wählen Sie im Feld Status eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="48ddc-154">In the New status field, select an option.</span></span>
+26. <span data-ttu-id="48ddc-155">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-155">Click OK.</span></span>
+27. <span data-ttu-id="48ddc-156">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="48ddc-156">Close the page.</span></span>
+
+## <a name="create-an-eu-entry-certificate-manually"></a><span data-ttu-id="48ddc-157">Erhalt einer EU-Gelangensbestätigung</span><span class="sxs-lookup"><span data-stu-id="48ddc-157">Create an EU entry certificate manually</span></span>
+1. <span data-ttu-id="48ddc-158">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-158">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="48ddc-159">Gelangensbestätigung erstellen</span><span class="sxs-lookup"><span data-stu-id="48ddc-159">Click Create entry certificate.</span></span>
+3. <span data-ttu-id="48ddc-160">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="48ddc-160">Click OK.</span></span>
+4. <span data-ttu-id="48ddc-161">Klicken Sie im Aktivitätsbereich auf "Rechnung".</span><span class="sxs-lookup"><span data-stu-id="48ddc-161">On the Action Pane, click Invoice.</span></span>
+5. <span data-ttu-id="48ddc-162">Ausgestellte Gelangensbestätigungen anzeigen</span><span class="sxs-lookup"><span data-stu-id="48ddc-162">Click View issued entry certificates.</span></span>
+

@@ -1,1848 +1,224 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:tilt="urn:logoport:xliffeditor:tilt-non-translatables:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="emea-deu-gdpdu-audit-data-export.md" target-language="de-DE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>emea-deu-gdpdu-audit-data-export.5f7144.83dbe295e53cf024628b7a0293772d4945a203b5.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>83dbe295e53cf024628b7a0293772d4945a203b5</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\emea-deu-gdpdu-audit-data-export.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>German audit file (GDPdU/GoBD)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deutsche Protokolldatei (GDPdU/GoBD)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103" restype="x-metadata">
-          <source>This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations supports the GDPdU/GoBD audit file requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104" restype="x-metadata">
-          <source>It also shows the tables that are set up as examples in the electronic reporting configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>German audit file (GDPdU/GoBD)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deutsche Protokolldatei (GDPdU/GoBD)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations supports the GDPdU/GoBD audit file requirements.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>It also shows the tables that are set up as examples in the electronic reporting configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Companies in Germany and some other countries/regions are legally required to export data for all transactions and master data from a fiscal year, and to provide this data to auditors within a reasonable time.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, Daten für alle Buchungen und Masterdaten aus einem Geschäftsjahr zu exportieren und diese Daten den Wirtschaftsprüfern innerhalb eines angemessenen Zeitraums bereitzustellen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>The data must be collected in a specific file format, so that it can be imported to the auditor’s audit environment.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Daten müssen in einem bestimmten Dateiformat gesammelt werden, damit sie in die Auditumgebung des Wirtschaftsprüfers importiert werden können.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>This procedure is controlled by tax authorities.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Vorgehensweise wird von den Steuerbehörden gesteuert.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>The data that must be exported depends on the requirements for an audit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Die Daten, die exportiert werden müssen, hängen von den Anforderungen für ein Audit ab.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>For example, a typical set of exported data includes the following master data and transaction tables:</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zum Beispiel umfasst ein typischer Satz an exportierten Daten die folgenden Masterdaten und Buchungstabellen:</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Main accounts</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hauptkonten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>Ledger transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sachkontobuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Tax codes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Steuercodes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Tax transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Steuerbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Customer master data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundenmasterdaten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>Customer transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitorenbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>Vendor master data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditorenmasterdaten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>Vendor transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditorenbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Item master data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Artikelmasterdaten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Item transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Artikelbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Fixed assets master data</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anlagenmasterdaten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>Fixed assets transactions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Anlagenbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>In the current version of Finance and Operations, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In der aktuellen Version von Finance and Operations werden Funktionen, die dem Benutzer das Exportieren der erforderlichen Daten ermöglichen, als GDPdU-spezifische elektronische Berichterstellungskonfigurationen implementiert.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Aufgabenleitfäden, die zeigen, wie GDPdU-spezifische Konfigurationen importiert werden, eine andere Tabellengruppe für den Export hinzugefügt wird und der Export ausführt wird, sind ebenfalls verfügbar.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Table groups and table definitions</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Tabellengruppen und Tabellendefinitionen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>The following sections list the tables that are set up as examples in the <bpt id="p1">**</bpt>German audit file<ept id="p1">**</ept> electronic reporting data model configuration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Abschnitten werden die Tabellen aufgelistet, die als Beispiele in der <bpt id="p1">**</bpt>Deutschen Protokolldatei<ept id="p1">**</ept>der elektronischen Datenmodellkonfiguration eingerichtet sind.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="130">
-          <source>You can use these tables out of the box to export the data.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können diese Tabellen standardmäßig verwenden, um die Daten zu exportieren.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="131">
-          <source>You can also customize existing table groups and extend the list of supported table groups in the configuration of the <bpt id="p1">**</bpt>German audit file<ept id="p1">**</ept> electronic reporting data model.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können auch vorhandene Tabellengruppen anpassen und die Liste der unterstützten Tabellengruppen in der Konfiguration der <bpt id="p1">**</bpt>Deutschen Protokolldatei<ept id="p1">**</ept> des elektronischen Berichterstellungsdatenmodells erweitern.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="132">
-          <source>General ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Hauptbuch</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="133">
-          <source>The following tables show the General leger data structure definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Tabellen werden die allgemeinen Sachdatenstrukturdefinitionen angezeigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="134">
-          <source>Sachkonten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sachkonten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="135">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="136">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="137">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="138">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="139">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="140">
-          <source>SACHKONTONUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTONUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="141">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="142">
-          <source>Nummer des Sachkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer des Sachkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="143">
-          <source>MainAccount/MainAccountId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/MainAccountId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="144">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="145">
-          <source>SACHKONTONAME</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTONAME</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="146">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="147">
-          <source>Bezeichnung des Sachkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Bezeichnung des Sachkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="148">
-          <source>MainAccount/Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/Name</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="149">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="150">
-          <source>SACHKONTOTYP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTOTYP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="151">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="152">
-          <source>Typ des Sachkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Typ des Sachkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="153">
-          <source>MainAccount/Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/Type</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="154">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="155">
-          <source>SACHKONTOSPERRE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTOSPERRE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="156">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="157">
-          <source>Gesperrt für manuelle Buchungen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gesperrt für manuelle Buchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="158">
-          <source>MainAccount/isBlockedForManualEntry()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/isBlockedForManualEntry()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="159">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="160">
-          <source>SACHKONTOEXCLUSIVBENUTZER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTOEXCLUSIVBENUTZER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="161">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="162">
-          <source>Exklusiver Benutzer dieses Sachkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Exklusiver Benutzer dieses Sachkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="163">
-          <source>MainAccount/UserInfoId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/UserInfoId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="164">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="165">
-          <source>SACHKONTOBENUTZUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTOBENUTZUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="166">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="167">
-          <source>Einstellung für einzelnen Benutzer des Sachkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Einstellung für einzelnen Benutzer des Sachkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="168">
-          <source>MainAccount/ValidateUser</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/ValidateUser</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="169">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="170">
-          <source>KONTENART</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KONTENART</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="171">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="172">
-          <source>Kontenart</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontenart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="173">
-          <source>MainAccount/Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MainAccount/Type</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="174">
-          <source>Sachkontobuchungen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sachkontobuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="175">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="176">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="177">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="178">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="179">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="180">
-          <source>SACHKONTONUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTONUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="181">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="182">
-          <source>Nummer des Sachkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer des Sachkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="183">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="184">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="185">
-          <source>STEUERBUCHUNGSREFERENZ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STEUERBUCHUNGSREFERENZ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="186">
-          <source>Numerisch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Numerisch</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="187">
-          <source>Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="188">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/RecId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/RecId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="189">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="190">
-          <source>PERIODENCODE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODENCODE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="191">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="192">
-          <source>Periodencode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Periodencode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="193">
-          <source>$GeneralJournalEntry/$FiscalCalendarPeriod/Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$FiscalCalendarPeriod/Type</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="194">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="195">
-          <source>PERIODENZUGEHORIGKEIT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PERIODENZUGEHORIGKEIT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="196">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="197">
-          <source>Vortrag, Normal oder Abschlussbuchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Vortrag, Normal oder Abschlussbuchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="198">
-          <source>$GeneralJournalEntry/$FiscalCalendarPeriod/Type</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$FiscalCalendarPeriod/Type</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="199">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="200">
-          <source>BUCHUNGSTYP</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSTYP</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="201">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="202">
-          <source>Buchungstyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungstyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="203">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/PostingType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/PostingType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="204">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="205">
-          <source>KORREKTUR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KORREKTUR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="206">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="207">
-          <source>Korrektur</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Korrektur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="208">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCorrection</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCorrection</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="209">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="210">
-          <source>HABENBUCHUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HABENBUCHUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="211">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="212">
-          <source>Habenbuchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Habenbuchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="213">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCredit</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCredit</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="214">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="215">
-          <source>BUCHUNGSBETRAG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSBETRAG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="216">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="217">
-          <source>Betrag der Buchung in Buchungswährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betrag der Buchung in Buchungswährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="218">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="219">
-          <source>9</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="220">
-          <source>BUCHUNGSWAHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWAHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="221">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="222">
-          <source>Währung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="223">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="224">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="225">
-          <source>BUCHUNGSWERT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWERT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="226">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="227">
-          <source>Wert der Buchung in Firmenwährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert der Buchung in Firmenwährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="228">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/AccountingCurrencyAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/AccountingCurrencyAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="229">
-          <source>11</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="230">
-          <source>BUCHUNGSTEXT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSTEXT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="231">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="232">
-          <source>Text zur Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Text der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="233">
-          <source>$GeneralJournalEntry/$GeneralJournalAccountEntry/Text</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$GeneralJournalAccountEntry/Text</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="234">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="235">
-          <source>BUCHUNGSDATUM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSDATUM</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="236">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="237">
-          <source>Datum der Wertstellung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum der Wertstellung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="238">
-          <source>$GeneralJournalEntry/AccountingDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/AccountingDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="239">
-          <source>13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="240">
-          <source>BUCHUNGSNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="241">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="242">
-          <source>Interne Belegnummer der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Interne Belegnummer der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="243">
-          <source>$GeneralJournalEntry/SubledgerVoucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/SubledgerVoucher</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="244">
-          <source>14</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">14</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="245">
-          <source>BELEGDATUM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGDATUM</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="246">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="247">
-          <source>Datum des Belegs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum des Belegs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="248">
-          <source>$GeneralJournalEntry/DocumentDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/DocumentDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="249">
-          <source>15</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="250">
-          <source>BELEGNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="251">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="252">
-          <source>Externe Belegnummer der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Externe Belegnummer der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="253">
-          <source>$GeneralJournalEntry/DocumentNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/DocumentNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="254">
-          <source>16</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">16</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="255">
-          <source>SPEZIALBUCHUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SPEZIALBUCHUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="256">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="257">
-          <source>0-Steuerbil.; andere Buchungsebene: int. Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">0-Steuerbil.; andere Buchungsebene: int. Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="258">
-          <source>$GeneralJournalEntry/PostingLayer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/PostingLayer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="259">
-          <source>17</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">17</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="260">
-          <source>ERFASSUNGSNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ERFASSUNGSNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="261">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="262">
-          <source>Nummer der Erfassung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer der Erfassung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="263">
-          <source>$GeneralJournalEntry/$JournalizingJournal</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$JournalizingJournal</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="264">
-          <source>18</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">18</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="265">
-          <source>JOURNALZEILE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">JOURNALZEILE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="266">
-          <source>Numerisch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Numerisch</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="267">
-          <source>Zeile des Journals</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeile des Journals</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="268">
-          <source>$GeneralJournalEntry/$JournalizingSeqNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/$JournalizingSeqNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="269">
-          <source>19</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">19</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="270">
-          <source>GEGENKONTO</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GEGENKONTO</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="271">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="272">
-          <source>Nummer des Gegenkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer des Gegenkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="273">
-          <source>$GeneralJournalEntry/RecId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/RecId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="274">
-          <source>20</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">20</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="275">
-          <source>DOKUMENT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DOKUMENT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="276">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="277">
-          <source>Dokument</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Dokument</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="278">
-          <source>$GeneralJournalEntry/DocumentNumber</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$GeneralJournalEntry/DocumentNumber</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="279">
-          <source>Tax ledger</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Steuersachkonto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="280">
-          <source>The following tables show the Tax data structure definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen angezeigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="281">
-          <source>Umsatzsteuercodes</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umsatzsteuercodes</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="282">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="283">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="284">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="285">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="286">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="287">
-          <source>BUCHUNGSGRUNDLAGE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSGRUNDLAGE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="288">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="289">
-          <source>Buchungsgrundlage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungsgrundlage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="290">
-          <source>TaxData/$TaxTable/TaxBase</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxData/$TaxTable/TaxBase</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="291">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="292">
-          <source>NAME</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">NAME</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="293">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="294">
-          <source>Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Name</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="295">
-          <source>TaxData/$TaxTable/TaxName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxData/$TaxTable/TaxName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="296">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="297">
-          <source>PROZENTSATZ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PROZENTSATZ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="298">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="299">
-          <source>Prozentsatz</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prozentsatz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="300">
-          <source>TaxData/TaxValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxData/TaxValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="301">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="302">
-          <source>GULTIGAB</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GULTIGAB</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="303">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="304">
-          <source>Gültig ab</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gültig ab</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="305">
-          <source>TaxData/TaxFromDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxData/TaxFromDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="306">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="307">
-          <source>GULTIGBIS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GULTIGBIS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="308">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="309">
-          <source>Gültig bis</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gültig bis</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="310">
-          <source>TaxData/TaxToDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxData/TaxToDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="311">
-          <source>MehrwertsteuerGruppen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MehrwertsteuerGruppen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="312">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="313">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="314">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="315">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="316">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="317">
-          <source>BESCHREIBUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BESCHREIBUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="318">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="319">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="320">
-          <source>TaxGroupData/$TaxGroupHeading/TaxGroupName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxGroupData/$TaxGroupHeading/TaxGroupName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="321">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="322">
-          <source>MEHRWERTSTEUERGRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MEHRWERTSTEUERGRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="323">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="324">
-          <source>Mehrwertsteuergruppe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mehrwertsteuergruppe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="325">
-          <source>TaxGroupData/TaxGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxGroupData/TaxGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="326">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="327">
-          <source>MWST<ph id="ph1">\_</ph>AUF<ph id="ph2">\_</ph>SKONTO<ph id="ph3">\_</ph>STORNIEREN</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWST<ph id="ph1">\_</ph>AUF<ph id="ph2">\_</ph>SKONTO<ph id="ph3">\_</ph>STORNIEREN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="328">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="329">
-          <source>MWSt auf Skonto stornieren</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWSt auf Skonto stornieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="330">
-          <source>TaxGroupData/$TaxGroupHeading/TaxReverseOnCashDisc</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxGroupData/$TaxGroupHeading/TaxReverseOnCashDisc</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="331">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="332">
-          <source>MWST<ph id="ph1">\_</ph>CODE<ph id="ph2">\_</ph>NAME</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWST<ph id="ph1">\_</ph>CODE<ph id="ph2">\_</ph>NAME</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="333">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="334">
-          <source>MWSt Code Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWSt Code Name</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="335">
-          <source>TaxGroupData/$TaxTable/TaxName</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxGroupData/$TaxTable/TaxName</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="336">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="337">
-          <source>MEHRWERTSTEUERCODE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MEHRWERTSTEUERCODE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="338">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="339">
-          <source>Mehrwertsteuercode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Mehrwertsteuercode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="340">
-          <source>TaxGroupData/TaxCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxGroupData/TaxCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="341">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="342">
-          <source>ERWERBSSTEUER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ERWERBSSTEUER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="343">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="344">
-          <source>Erwerbssteuer</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Erwerbssteuer</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="345">
-          <source>TaxGroupData/UseTax</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">TaxGroupData/UseTax</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="346">
-          <source>Umsatzsteuerbuchungen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Umsatzsteuerbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="347">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="348">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="349">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="350">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="351">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="352">
-          <source>STEUERART</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STEUERART</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="353">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="354">
-          <source>Beschreibung der Steuerart</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung der Steuerart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="355">
-          <source>$TaxTrans/taxName()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/taxName()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="356">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="357">
-          <source>STEUERBUCHUNGSREFERENZ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STEUERBUCHUNGSREFERENZ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="358">
-          <source>Numerisch</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Numerisch</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="359">
-          <source>Gibt es hierzu eine MWST-Buchung?</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gibt es hierzu eine MWST-Buchung?</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="360">
-          <source>- lfd Nr.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">- lfd Nr.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="361">
-          <source>$TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="362">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="363">
-          <source>MWST<ph id="ph1">\_</ph>CODE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CODE<ph id="ph1">\_</ph> MWST</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="364">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="365">
-          <source>MWST Bezeichung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWST Bezeichung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="366">
-          <source>$TaxTrans/TaxCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="367">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="368">
-          <source>WERTSTELLUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WERTSTELLUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="369">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="370">
-          <source>Datum der Wertstellung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum der Wertstellung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="371">
-          <source>$TaxTrans/TransDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TransDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="372">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="373">
-          <source>BELEGNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="374">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="375">
-          <source>Interne Nummer des Buchungsbelegs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Interne Nummer des Buchungsbelegs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="376">
-          <source>$TaxTrans/Voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/Voucher</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="377">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="378">
-          <source>BUCHUNGSWAHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWAHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="379">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="380">
-          <source>Währung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="381">
-          <source>$TaxTrans/CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="382">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="383">
-          <source>BUCHUNGSBETRAG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSBETRAG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="384">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="385">
-          <source>Betrag der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betrag der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="386">
-          <source>$TaxTrans/TaxAmountCur</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxAmountCur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="387">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="388">
-          <source>BUCHUNGSWERT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWERT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="389">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="390">
-          <source>Wert der Buchung in Firmenwährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert der Buchung in Firmenwährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="391">
-          <source>$TaxTrans/TaxAmount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxAmount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="392">
-          <source>9</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="393">
-          <source>QUELLE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">QUELLE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="394">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="395">
-          <source>Quelle</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Quelle</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="396">
-          <source>$TaxTrans/Source</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/Source</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="397">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="398">
-          <source>BUCHUNGSGRUNDLAGE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSGRUNDLAGE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="399">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="400">
-          <source>Buchungsgrundlage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungsgrundlage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="401">
-          <source>$TaxTrans/TaxDirection</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxDirection</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="402">
-          <source>11</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="403">
-          <source>BELEGWAHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGWAHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="404">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="405">
-          <source>Belegwährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Belegwährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="406">
-          <source>$TaxTrans/SourceCurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/SourceCurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="407">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="408">
-          <source>GRUNDLAGE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">GRUNDLAGE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="409">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="410">
-          <source>Grundlage</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Grundlage</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="411">
-          <source>$TaxTrans/SourceBaseAmountCur</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/SourceBaseAmountCur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="412">
-          <source>13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="413">
-          <source>PROZENTSATZ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">PROZENTSATZ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="414">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="415">
-          <source>Prozentsatz</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Prozentsatz</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="416">
-          <source>$TaxTrans/TaxValue</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxValue</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="417">
-          <source>14</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">14</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="418">
-          <source>MWST<ph id="ph1">\_</ph>GRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWST<ph id="ph1">\_</ph>GRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="419">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="420">
-          <source>MwSt Gruppe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MwSt Gruppe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="421">
-          <source>$TaxTrans/TaxGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="422">
-          <source>15</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">15</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="423">
-          <source>KONTO<ph id="ph1">\_</ph>MWST<ph id="ph2">\_</ph>AUSGABEN</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KONTO<ph id="ph1">\_</ph>MWST<ph id="ph2">\_</ph>AUSGABEN</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="424">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="425">
-          <source>Konto MwSt Ausgaben</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Konto MwSt Ausgaben</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="426">
-          <source>$TaxTrans/accountName()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/accountName()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="427">
-          <source>16</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">16</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="428">
-          <source>SACHKONTO</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">SACHKONTO</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="429">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="430">
-          <source>Sachkonto</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sachkonto</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="431">
-          <source>$TaxTrans/accountNameOperational()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/accountNameOperational()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="432">
-          <source>17</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">17</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="433">
-          <source>ARTIKEL<ph id="ph1">\_</ph>MWST<ph id="ph2">\_</ph>GRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">ARTIKEL<ph id="ph1">\_</ph>MWST<ph id="ph2">\_</ph>GRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="434">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="435">
-          <source>Artikel-Mehrwertsteuergruppe</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Artikel-Mehrwertsteuergruppe</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="436">
-          <source>$TaxTrans/TaxItemGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$TaxTrans/TaxItemGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="437">
-          <source>Accounts receivable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Debitoren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="438">
-          <source>The following tables show the Accounts receivable data structure definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Tabellen werden die allgemeinen Debitorendatenstrukturdefinitionen angezeigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="439">
-          <source>Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="440">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="441">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="442">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="443">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="444">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="445">
-          <source>KUNDENKONTONUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENKONTONUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="446">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="447">
-          <source>Nummer des Kundenkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer des Kundenkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="448">
-          <source>CustTable/AccountNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/AccountNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="449">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="450">
-          <source>KUNDENUSTIDNR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENUSTIDNR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="451">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="452">
-          <source>USt-IdNr des Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">USt-IdNr des Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="453">
-          <source>CustTable/getVatNumPrimaryRegistrationNumber()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/getVatNumPrimaryRegistrationNumber()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="454">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="455">
-          <source>KUNDENSTRASSE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENSTRASSE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="456">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="457">
-          <source>Straße des Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Straße des Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="458">
-          <source>CustTable/$Party/$LogisticsPostalAddress/Street</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/$Party/$LogisticsPostalAddress/Street</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="459">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="460">
-          <source>KUNDENPLZ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENPLZ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="461">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="462">
-          <source>Postleitzahl des Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Postleitzahl des Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="463">
-          <source>CustTable/$Party/$LogisticsPostalAddress/ZipCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/$Party/$LogisticsPostalAddress/ZipCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="464">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="465">
-          <source>KUNDENORT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENORT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="466">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="467">
-          <source>Ort des Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ort des Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="468">
-          <source>CustTable/$Party/$LogisticsPostalAddress/City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/$Party/$LogisticsPostalAddress/City</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="469">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="470">
-          <source>KUNDENSTAAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENSTAAT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="471">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="472">
-          <source>Staat des Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Staat des Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="473">
-          <source>CustTable/$Party/$LogisticsPostalAddress/CountryRegionId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/$Party/$LogisticsPostalAddress/CountryRegionId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="474">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="475">
-          <source>KUNDENNAME</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENNAME</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="476">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="477">
-          <source>Name des Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Name des Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="478">
-          <source>CustTable/$Party/Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/$Party/Name</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="479">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="480">
-          <source>KUNDENGRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENGRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="481">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="482">
-          <source>Gruppe, der der Kunde zugeordnet ist</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gruppe, der der Kunde zugeordnet ist</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="483">
-          <source>CustTable/CustGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/CustGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="484">
-          <source>9</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="485">
-          <source>KUNDENEIGENEKONTONR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENEIGENEKONTONR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="486">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="487">
-          <source>Eigene Kontonummer beim Kunden</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Eigene Kontonummer beim Kunden</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="488">
-          <source>CustTable/OurAccountNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/OurAccountNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="489">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="490">
-          <source>KUNDENLIEFERANTENNR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENLIEFERANTENNR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="491">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="492">
-          <source>Lieferantenkonto bei uns</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lieferantenkonto bei uns</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="493">
-          <source>CustTable/VendAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/VendAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="494">
-          <source>11</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="495">
-          <source>KUNDENRECHNUNGSKONTO</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENRECHNUNGSKONTO</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="496">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="497">
-          <source>Kundenkonto für Rechnungen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundenkonto für Rechnungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="498">
-          <source>CustTable/InvoiceAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/InvoiceAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="499">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="500">
-          <source>MWST<ph id="ph1">\_</ph>GRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWST<ph id="ph1">\_</ph>GRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="501">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="502">
-          <source>MWSt Gruppe - Inland / EU / Drittland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWSt Gruppe - Inland / EU / Drittland</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="503">
-          <source>CustTable/TaxGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/TaxGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="504">
-          <source>13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="505">
-          <source>WÄHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WÄHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="506">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="507">
-          <source>Währung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="508">
-          <source>CustTable/Currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTable/Currency</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="509">
-          <source>Kundenbuchungen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kundenbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="510">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="511">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="512">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="513">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="514">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="515">
-          <source>KUNDENKONTONUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">KUNDENKONTONUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="516">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="517">
-          <source>Kontonummer des Kundenkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kontonummer des Kundenkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="518">
-          <source>$CustTrans/AccountNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/AccountNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="519">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="520">
-          <source>BUCHUNGSNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="521">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="522">
-          <source>Interne Belegnummer der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Interne Belegnummer der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="523">
-          <source>$CustTrans/Voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/Voucher</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="524">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="525">
-          <source>BUCHUNGSDATUM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSDATUM</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="526">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="527">
-          <source>Wertstellung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wertstellung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="528">
-          <source>$CustTrans/TransDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/TransDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="529">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="530">
-          <source>BELEGNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="531">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="532">
-          <source>Externe Belegnummer der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Externe Belegnummer der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="533">
-          <source>$CustTrans/DocumentNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">CustTrans/DocumentNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="534">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="535">
-          <source>BELEGDATUM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGDATUM</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="536">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="537">
-          <source>Datum des externen Belegs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum des externen Belegs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="538">
-          <source>$CustTrans/DocumentDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/DocumentDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="539">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="540">
-          <source>BUCHUNGSTEXT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSTEXT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="541">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="542">
-          <source>Buchungstext der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungstext der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="543">
-          <source>$CustTrans/Txt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/Txt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="544">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="545">
-          <source>BUCHUNGSBETRAG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSBETRAG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="546">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="547">
-          <source>Betrag der Buchung in Buchungswährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betrag der Buchung in Buchungswährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="548">
-          <source>$CustTrans/AmountCur</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/AmountCur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="549">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="550">
-          <source>BUCHUNGSWAHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWAHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="551">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="552">
-          <source>Währung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="553">
-          <source>$CustTrans/CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="554">
-          <source>9</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="555">
-          <source>BUCHUNGSWERT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWERT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="556">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="557">
-          <source>Wert der Buchung in Firmenwährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert der Buchung in Firmenwährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="558">
-          <source>$CustTrans/AmountMST</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/AmountMST</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="559">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="560">
-          <source>LETZTER<ph id="ph1">\_</ph>AUSGLEICHSBELEG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LETZTER<ph id="ph1">\_</ph>AUSGLEICHSBELEG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="561">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="562">
-          <source>Letzter Ausgleichsbeleg</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Letzter Ausgleichsbeleg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="563">
-          <source>$CustTrans/LastSettleVoucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/LastSettleVoucher</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="564">
-          <source>11</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="565">
-          <source>LETZTER<ph id="ph1">\_</ph>AUSGLEICH</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LETZTER<ph id="ph1">\_</ph>AUSGLEICH</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="566">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="567">
-          <source>Letzter Ausgleich</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Letzter Ausgleich</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="568">
-          <source>$CustTrans/LastSettleDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/LastSettleDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="569">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="570">
-          <source>BUCHUNGSART</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSART</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="571">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="572">
-          <source>Buchungsart</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungsart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="573">
-          <source>$CustTrans/TransType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$CustTrans/TransType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="574">
-          <source>Accounts payable</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Kreditorenkonten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="575">
-          <source>The following tables show the Accounts payable data structure definitions.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefinitionen angezeigt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="576">
-          <source>Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="577">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="578">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="579">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="580">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="581">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="582">
-          <source>LIEFERANTENKONTONUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENKONTONUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="583">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="584">
-          <source>Nummer des Lieferantenkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer des Lieferantenkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="585">
-          <source>VendTable/AccountNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/AccountNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="586">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="587">
-          <source>LIEFERANTENUSTIDNR</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENUSTIDNR</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="588">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="589">
-          <source>USt-IdNr des Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">USt-IdNr des Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="590">
-          <source>VendTableVendTable/getVatNumPrimaryRegistrationNumber()</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTableVendTable/getVatNumPrimaryRegistrationNumber()</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="591">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="592">
-          <source>LIEFERANTENSTRASSE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENSTRASSE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="593">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="594">
-          <source>Straße des Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Straße des Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="595">
-          <source>VendTable/$Party/$LogisticsPostalAddress/Street</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/$Party/$LogisticsPostalAddress/Street</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="596">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="597">
-          <source>LIEFERANTENPLZ</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENPLZ</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="598">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="599">
-          <source>Postleitzahl des Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Postleitzahl des Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="600">
-          <source>VendTable/$Party/$LogisticsPostalAddress/ZipCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/$Party/$LogisticsPostalAddress/ZipCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="601">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="602">
-          <source>LIEFERANTENORT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENORT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="603">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="604">
-          <source>Ort des Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Ort des Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="605">
-          <source>VendTable/$Party/$LogisticsPostalAddress/City</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/$Party/$LogisticsPostalAddress/City</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="606">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="607">
-          <source>LIEFERANTENSTAAT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENSTAAT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="608">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="609">
-          <source>Staat des Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Staat des Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="610">
-          <source>VendTable/$Party/$LogisticsPostalAddress/CountryRegionId</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/$Party/$LogisticsPostalAddress/CountryRegionId</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="611">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="612">
-          <source>LIEFERANTENNAME</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENNAME</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="613">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="614">
-          <source>Name des Lieferanten</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Name des Lieferanten</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="615">
-          <source>VendTable/$Party/Name</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/$Party/Name</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="616">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="617">
-          <source>LIEFERANTENGRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENGRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="618">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="619">
-          <source>Gruppe, der der Lieferant zugeordnet ist</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Gruppe, der der Lieferant zugeordnet ist</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="620">
-          <source>VendTable/VendGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/VendGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="621">
-          <source>9</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="622">
-          <source>LIEFERANTENRECHNUNGSKONTO</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENRECHNUNGSKONTO</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="623">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="624">
-          <source>Lieferantenkonto für Rechnungsstellung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lieferantenkonto für Rechnungsstellung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="625">
-          <source>VendTable/InvoiceAccount</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/InvoiceAccount</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="626">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="627">
-          <source>MWST<ph id="ph1">\_</ph>GRUPPE</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWST<ph id="ph1">\_</ph>GRUPPE</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="628">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="629">
-          <source>MWSt Gruppe - Inland / EU / Drittland</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">MWSt Gruppe - Inland / EU / Drittland</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="630">
-          <source>VendTable/TaxGroup</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/TaxGroup</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="631">
-          <source>11</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="632">
-          <source>WAHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">WAHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="633">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="634">
-          <source>Währung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="635">
-          <source>VendTable/Currency</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">VendTable/Currency</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="636">
-          <source>Lieferantenbuchungen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Lieferantenbuchungen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="637">
-          <source>Feldname</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldname</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="638">
-          <source>Feldtyp</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Feldtyp</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="639">
-          <source>Beschreibung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Beschreibung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="640">
-          <source>Electronic Reporting Data Source Path</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronischer Berichterstellungs-Datenquellen-Pfad</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="641">
-          <source>1</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">1</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="642">
-          <source>LIEFERANTENKONTONUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LIEFERANTENKONTONUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="643">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="644">
-          <source>Nummer des Lieferantenkontos</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Nummer des Lieferantenkontos</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="645">
-          <source>$VendTrans/AccountNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/AccountNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="646">
-          <source>2</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">2</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="647">
-          <source>BUCHUNGSNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="648">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="649">
-          <source>Interne Belegnummer der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Interne Belegnummer der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="650">
-          <source>$VendTrans/Voucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/Voucher</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="651">
-          <source>3</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">3</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="652">
-          <source>BUCHUNGSDATUM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSDATUM</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="653">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="654">
-          <source>Wertstellung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wertstellung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="655">
-          <source>$VendTrans/TransDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/TransDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="656">
-          <source>4</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">4</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="657">
-          <source>BELEGNUMMER</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGNUMMER</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="658">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="659">
-          <source>Externe Belegnummer der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Externe Belegnummer der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="660">
-          <source>$VendTrans/DocumentNum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/DocumentNum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="661">
-          <source>5</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">5</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="662">
-          <source>BELEGDATUM</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BELEGDATUM</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="663">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="664">
-          <source>Datum des externen Belegs</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum des externen Belegs</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="665">
-          <source>$VendTrans/DocumentDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/DocumentDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="666">
-          <source>6</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">6</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="667">
-          <source>BUCHUNGSTEXT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSTEXT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="668">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="669">
-          <source>Buchungstext der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungstext der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="670">
-          <source>$VendTrans/Txt</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/Txt</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="671">
-          <source>7</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">7</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="672">
-          <source>BUCHUNGSBETRAG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSBETRAG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="673">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="674">
-          <source>Betrag der Buchung in Buchungswährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Betrag der Buchung in Buchungswährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="675">
-          <source>$VendTrans/AmountCur</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/AmountCur</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="676">
-          <source>8</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">8</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="677">
-          <source>BUCHUNGSWAHRUNG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWAHRUNG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="678">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="679">
-          <source>Währung der Buchung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Währung der Buchung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="680">
-          <source>$VendTrans/CurrencyCode</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/CurrencyCode</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="681">
-          <source>9</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">9</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="682">
-          <source>BUCHUNGSWERT</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSWERT</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="683">
-          <source>Num(2Dez)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Num(2Dez)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="684">
-          <source>Wert der Buchung in Firmenwährung</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wert der Buchung in Firmenwährung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="685">
-          <source>$VendTrans/AmountMST</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/AmountMST</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="686">
-          <source>10</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">10</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="687">
-          <source>LETZTER<ph id="ph1">\_</ph>AUSGLEICHSBELEG</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LETZTER<ph id="ph1">\_</ph>AUSGLEICHSBELEG</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="688">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="689">
-          <source>Letzter Ausgleichsbeleg</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Letzter Ausgleichsbeleg</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="690">
-          <source>$VendTrans/LastSettleVoucher</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/LastSettleVoucher</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="691">
-          <source>11</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">11</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="692">
-          <source>LETZTER<ph id="ph1">\_</ph>AUSGLEICH</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">LETZTER<ph id="ph1">\_</ph>AUSGLEICH</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="693">
-          <source>Datum</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Datum</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="694">
-          <source>Letzter Ausgleich</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Letzter Ausgleich</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="695">
-          <source>$VendTrans/LastSettleDate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/LastSettleDate</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="696">
-          <source>12</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">12</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="697">
-          <source>BUCHUNGSART</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">BUCHUNGSART</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="698">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="699">
-          <source>Buchungsart</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Buchungsart</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="700">
-          <source>$VendTrans/TransType</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/TransType</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="701">
-          <source>13</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">13</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="702">
-          <source>STATUS</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">STATUS</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="703">
-          <source>Zeichen</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Zeichen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="704">
-          <source>Status</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Status</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="705">
-          <source>$VendTrans/Approved</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">$VendTrans/Approved</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="706">
-          <source>Additional information</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="707">
-          <source><bpt id="p1">[</bpt>Electronic Reporting overview<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Überblick über die elektronische Berichterstellung<ept id="p1">](../../dev-itpro/analytics/general-electronic-reporting.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="708">
-          <source><bpt id="p1">[</bpt>Import the audit file configuration<ept id="p1">](./tasks/import-german-audit-file-configuration.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Protokolldateikonfiguration importieren<ept id="p1">](./tasks/import-german-audit-file-configuration.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="709">
-          <source><bpt id="p1">[</bpt>Customize the audit file configuration<ept id="p1">](./tasks/customize-german-audit-file-configuration.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Protokolldateikonfiguration anpassen<ept id="p1">](./tasks/customize-german-audit-file-configuration.md)</ept></target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="710">
-          <source><bpt id="p1">[</bpt>Generate the audit file<ept id="p1">](./tasks/german-audit-file.md)</ept></source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm"><bpt id="p1">[</bpt>Protokolldatei generieren<ept id="p1">](./tasks/german-audit-file.md)</ept></target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Deutsche Protokolldatei (GDPdU/GoBD)
+description: Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
+author: mrolecki
+manager: AnnBe
+ms.date: 11/29/2017
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ERWorkspace
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.custom: 59201
+ms.search.region: Austria, Germany
+ms.author: mrolecki
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 83dbe295e53cf024628b7a0293772d4945a203b5
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1549548"
+---
+# <a name="german-audit-file-gdpdugobd"></a><span data-ttu-id="f4a5b-105">Deutsche Protokolldatei (GDPdU/GoBD)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-105">German audit file (GDPdU/GoBD)</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+<span data-ttu-id="f4a5b-106">Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-106">Companies in Germany and some other countries/regions are legally required to provide an export of financial data in a machine-readable form.</span></span> <span data-ttu-id="f4a5b-107">In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 for Finance and Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-107">This article describes how the current version of Microsoft Dynamics 365 for Finance and Operations supports the GDPdU/GoBD audit file requirements.</span></span> <span data-ttu-id="f4a5b-108">Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-108">It also shows the tables that are set up as examples in the electronic reporting configurations.</span></span>
+
+<span data-ttu-id="f4a5b-109">Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, Daten für alle Buchungen und Masterdaten aus einem Geschäftsjahr zu exportieren und diese Daten den Wirtschaftsprüfern innerhalb eines angemessenen Zeitraums bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-109">Companies in Germany and some other countries/regions are legally required to export data for all transactions and master data from a fiscal year, and to provide this data to auditors within a reasonable time.</span></span> <span data-ttu-id="f4a5b-110">Die Daten müssen in einem bestimmten Dateiformat gesammelt werden, damit sie in die Auditumgebung des Wirtschaftsprüfers importiert werden können.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-110">The data must be collected in a specific file format, so that it can be imported to the auditor’s audit environment.</span></span> <span data-ttu-id="f4a5b-111">Diese Vorgehensweise wird von den Steuerbehörden gesteuert.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-111">This procedure is controlled by tax authorities.</span></span> <span data-ttu-id="f4a5b-112">Die Daten, die exportiert werden müssen, hängen von den Anforderungen für ein Audit ab.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-112">The data that must be exported depends on the requirements for an audit.</span></span> <span data-ttu-id="f4a5b-113">Zum Beispiel umfasst ein typischer Satz an exportierten Daten die folgenden Masterdaten und Buchungstabellen:</span><span class="sxs-lookup"><span data-stu-id="f4a5b-113">For example, a typical set of exported data includes the following master data and transaction tables:</span></span>
+
+-   <span data-ttu-id="f4a5b-114">Hauptkonten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-114">Main accounts</span></span>
+-   <span data-ttu-id="f4a5b-115">Sachkontobuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-115">Ledger transactions</span></span>
+-   <span data-ttu-id="f4a5b-116">Steuercodes</span><span class="sxs-lookup"><span data-stu-id="f4a5b-116">Tax codes</span></span>
+-   <span data-ttu-id="f4a5b-117">Steuerbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-117">Tax transactions</span></span>
+-   <span data-ttu-id="f4a5b-118">Kundenmasterdaten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-118">Customer master data</span></span>
+-   <span data-ttu-id="f4a5b-119">Debitorenbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-119">Customer transactions</span></span>
+-   <span data-ttu-id="f4a5b-120">Kreditorenmasterdaten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-120">Vendor master data</span></span>
+-   <span data-ttu-id="f4a5b-121">Kreditorenbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-121">Vendor transactions</span></span>
+-   <span data-ttu-id="f4a5b-122">Artikelmasterdaten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-122">Item master data</span></span>
+-   <span data-ttu-id="f4a5b-123">Artikelbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-123">Item transactions</span></span>
+-   <span data-ttu-id="f4a5b-124">Anlagenmasterdaten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-124">Fixed assets master data</span></span>
+-   <span data-ttu-id="f4a5b-125">Anlagenbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-125">Fixed assets transactions</span></span>
+
+<span data-ttu-id="f4a5b-126">In der aktuellen Version von Finance and Operations werden Funktionen, die dem Benutzer das Exportieren der erforderlichen Daten ermöglichen, als GDPdU-spezifische elektronische Berichterstellungskonfigurationen implementiert.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-126">In the current version of Finance and Operations, functionality that lets the user export the required data is implemented as GDPdU-specific electronic reporting configurations.</span></span> <span data-ttu-id="f4a5b-127">Aufgabenleitfäden, die zeigen, wie GDPdU-spezifische Konfigurationen importiert werden, eine andere Tabellengruppe für den Export hinzugefügt wird und der Export ausführt wird, sind ebenfalls verfügbar.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-127">Task guides are also available that show how to import GDPdU-specific configurations, add another table group for export, and perform the export.</span></span>
+
+## <a name="table-groups-and-table-definitions"></a><span data-ttu-id="f4a5b-128">Tabellengruppen und Tabellendefinitionen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-128">Table groups and table definitions</span></span>
+<span data-ttu-id="f4a5b-129">In den folgenden Abschnitten werden die Tabellen aufgelistet, die als Beispiele in der **Deutschen Protokolldatei**der elektronischen Datenmodellkonfiguration eingerichtet sind.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-129">The following sections list the tables that are set up as examples in the **German audit file** electronic reporting data model configuration.</span></span> <span data-ttu-id="f4a5b-130">Sie können diese Tabellen standardmäßig verwenden, um die Daten zu exportieren.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-130">You can use these tables out of the box to export the data.</span></span> <span data-ttu-id="f4a5b-131">Sie können auch vorhandene Tabellengruppen anpassen und die Liste der unterstützten Tabellengruppen in der Konfiguration der **Deutschen Protokolldatei** des elektronischen Berichterstellungsdatenmodells erweitern.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-131">You can also customize existing table groups and extend the list of supported table groups in the configuration of the **German audit file** electronic reporting data model.</span></span>
+
+### <a name="general-ledger"></a><span data-ttu-id="f4a5b-132">Hauptbuch</span><span class="sxs-lookup"><span data-stu-id="f4a5b-132">General ledger</span></span>
+
+<span data-ttu-id="f4a5b-133">In den folgenden Tabellen werden die allgemeinen Sachdatenstrukturdefinitionen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-133">The following tables show the General leger data structure definitions.</span></span>
+
+#### <a name="sachkonten"></a><span data-ttu-id="f4a5b-134">Sachkonten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-134">Sachkonten</span></span>
+
+|     | <span data-ttu-id="f4a5b-135">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-135">Feldname</span></span>                  | <span data-ttu-id="f4a5b-136">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-136">Feldtyp</span></span> | <span data-ttu-id="f4a5b-137">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-137">Beschreibung</span></span>                                      | <span data-ttu-id="f4a5b-138">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-138">Electronic Reporting Data Source Path</span></span> |
+|-----|---------------------------|---------|---------------------------------------------------|------------------------------------------------------------|
+| <span data-ttu-id="f4a5b-139">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-139">1</span></span>   | <span data-ttu-id="f4a5b-140">SACHKONTONUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-140">SACHKONTONUMMER</span></span>           | <span data-ttu-id="f4a5b-141">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-141">Zeichen</span></span> | <span data-ttu-id="f4a5b-142">Nummer des Sachkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-142">Nummer des Sachkontos</span></span>                             | <span data-ttu-id="f4a5b-143">MainAccount/MainAccountId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-143">MainAccount/MainAccountId</span></span>                                  |
+| <span data-ttu-id="f4a5b-144">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-144">2</span></span>   | <span data-ttu-id="f4a5b-145">SACHKONTONAME</span><span class="sxs-lookup"><span data-stu-id="f4a5b-145">SACHKONTONAME</span></span>             | <span data-ttu-id="f4a5b-146">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-146">Zeichen</span></span> | <span data-ttu-id="f4a5b-147">Bezeichnung des Sachkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-147">Bezeichnung des Sachkontos</span></span>                        | <span data-ttu-id="f4a5b-148">MainAccount/Name</span><span class="sxs-lookup"><span data-stu-id="f4a5b-148">MainAccount/Name</span></span>                                           |
+| <span data-ttu-id="f4a5b-149">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-149">3</span></span>   | <span data-ttu-id="f4a5b-150">SACHKONTOTYP</span><span class="sxs-lookup"><span data-stu-id="f4a5b-150">SACHKONTOTYP</span></span>              | <span data-ttu-id="f4a5b-151">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-151">Zeichen</span></span> | <span data-ttu-id="f4a5b-152">Typ des Sachkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-152">Typ des Sachkontos</span></span>                                | <span data-ttu-id="f4a5b-153">MainAccount/Type</span><span class="sxs-lookup"><span data-stu-id="f4a5b-153">MainAccount/Type</span></span>                                           |
+| <span data-ttu-id="f4a5b-154">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-154">4</span></span>   | <span data-ttu-id="f4a5b-155">SACHKONTOSPERRE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-155">SACHKONTOSPERRE</span></span>           | <span data-ttu-id="f4a5b-156">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-156">Zeichen</span></span> | <span data-ttu-id="f4a5b-157">Gesperrt für manuelle Buchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-157">Gesperrt für manuelle Buchungen</span></span>                   | <span data-ttu-id="f4a5b-158">MainAccount/isBlockedForManualEntry()</span><span class="sxs-lookup"><span data-stu-id="f4a5b-158">MainAccount/isBlockedForManualEntry()</span></span>                      |
+| <span data-ttu-id="f4a5b-159">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-159">5</span></span>   | <span data-ttu-id="f4a5b-160">SACHKONTOEXCLUSIVBENUTZER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-160">SACHKONTOEXCLUSIVBENUTZER</span></span> | <span data-ttu-id="f4a5b-161">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-161">Zeichen</span></span> | <span data-ttu-id="f4a5b-162">Exklusiver Benutzer dieses Sachkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-162">Exklusiver Benutzer dieses Sachkontos</span></span>             | <span data-ttu-id="f4a5b-163">MainAccount/UserInfoId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-163">MainAccount/UserInfoId</span></span>                                     |
+| <span data-ttu-id="f4a5b-164">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-164">6</span></span>   | <span data-ttu-id="f4a5b-165">SACHKONTOBENUTZUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-165">SACHKONTOBENUTZUNG</span></span>        | <span data-ttu-id="f4a5b-166">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-166">Zeichen</span></span> | <span data-ttu-id="f4a5b-167">Einstellung für einzelnen Benutzer des Sachkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-167">Einstellung für einzelnen Benutzer des Sachkontos</span></span> | <span data-ttu-id="f4a5b-168">MainAccount/ValidateUser</span><span class="sxs-lookup"><span data-stu-id="f4a5b-168">MainAccount/ValidateUser</span></span>                                   |
+| <span data-ttu-id="f4a5b-169">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-169">7</span></span>   | <span data-ttu-id="f4a5b-170">KONTENART</span><span class="sxs-lookup"><span data-stu-id="f4a5b-170">KONTENART</span></span>                 | <span data-ttu-id="f4a5b-171">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-171">Zeichen</span></span> | <span data-ttu-id="f4a5b-172">Kontenart</span><span class="sxs-lookup"><span data-stu-id="f4a5b-172">Kontenart</span></span>                                         | <span data-ttu-id="f4a5b-173">MainAccount/Type</span><span class="sxs-lookup"><span data-stu-id="f4a5b-173">MainAccount/Type</span></span>                                           |
+
+#### <a name="sachkontobuchungen"></a><span data-ttu-id="f4a5b-174">Sachkontobuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-174">Sachkontobuchungen</span></span>
+
+|     | <span data-ttu-id="f4a5b-175">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-175">Feldname</span></span>               | <span data-ttu-id="f4a5b-176">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-176">Feldtyp</span></span>   | <span data-ttu-id="f4a5b-177">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-177">Beschreibung</span></span>                                      | <span data-ttu-id="f4a5b-178">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-178">Electronic Reporting Data Source Path</span></span>                                             |
+|-----|------------------------|-----------|---------------------------------------------------|-----------------------------------------------------------------------------------|
+| <span data-ttu-id="f4a5b-179">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-179">1</span></span>   | <span data-ttu-id="f4a5b-180">SACHKONTONUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-180">SACHKONTONUMMER</span></span>        | <span data-ttu-id="f4a5b-181">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-181">Zeichen</span></span>   | <span data-ttu-id="f4a5b-182">Nummer des Sachkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-182">Nummer des Sachkontos</span></span>                             | <span data-ttu-id="f4a5b-183">$GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue</span><span class="sxs-lookup"><span data-stu-id="f4a5b-183">$GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue</span></span>    |
+| <span data-ttu-id="f4a5b-184">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-184">2</span></span>   | <span data-ttu-id="f4a5b-185">STEUERBUCHUNGSREFERENZ</span><span class="sxs-lookup"><span data-stu-id="f4a5b-185">STEUERBUCHUNGSREFERENZ</span></span> | <span data-ttu-id="f4a5b-186">Numerisch</span><span class="sxs-lookup"><span data-stu-id="f4a5b-186">Numerisch</span></span> | <span data-ttu-id="f4a5b-187">Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr</span><span class="sxs-lookup"><span data-stu-id="f4a5b-187">Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr</span></span> | <span data-ttu-id="f4a5b-188">$GeneralJournalEntry/$GeneralJournalAccountEntry/RecId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-188">$GeneralJournalEntry/$GeneralJournalAccountEntry/RecId</span></span>                            |
+| <span data-ttu-id="f4a5b-189">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-189">3</span></span>   | <span data-ttu-id="f4a5b-190">PERIODENCODE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-190">PERIODENCODE</span></span>           | <span data-ttu-id="f4a5b-191">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-191">Zeichen</span></span>   | <span data-ttu-id="f4a5b-192">Periodencode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-192">Periodencode</span></span>                                      | <span data-ttu-id="f4a5b-193">$GeneralJournalEntry/$FiscalCalendarPeriod/Type</span><span class="sxs-lookup"><span data-stu-id="f4a5b-193">$GeneralJournalEntry/$FiscalCalendarPeriod/Type</span></span>                                   |
+| <span data-ttu-id="f4a5b-194">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-194">4</span></span>   | <span data-ttu-id="f4a5b-195">PERIODENZUGEHORIGKEIT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-195">PERIODENZUGEHORIGKEIT</span></span>  | <span data-ttu-id="f4a5b-196">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-196">Zeichen</span></span>   | <span data-ttu-id="f4a5b-197">Vortrag, Normal oder Abschlussbuchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-197">Vortrag, Normal oder Abschlussbuchung</span></span>             | <span data-ttu-id="f4a5b-198">$GeneralJournalEntry/$FiscalCalendarPeriod/Type</span><span class="sxs-lookup"><span data-stu-id="f4a5b-198">$GeneralJournalEntry/$FiscalCalendarPeriod/Type</span></span>                                   |
+| <span data-ttu-id="f4a5b-199">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-199">5</span></span>   | <span data-ttu-id="f4a5b-200">BUCHUNGSTYP</span><span class="sxs-lookup"><span data-stu-id="f4a5b-200">BUCHUNGSTYP</span></span>            | <span data-ttu-id="f4a5b-201">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-201">Zeichen</span></span>   | <span data-ttu-id="f4a5b-202">Buchungstyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-202">Buchungstyp</span></span>                                       | <span data-ttu-id="f4a5b-203">$GeneralJournalEntry/$GeneralJournalAccountEntry/PostingType</span><span class="sxs-lookup"><span data-stu-id="f4a5b-203">$GeneralJournalEntry/$GeneralJournalAccountEntry/PostingType</span></span>                      |
+| <span data-ttu-id="f4a5b-204">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-204">6</span></span>   | <span data-ttu-id="f4a5b-205">KORREKTUR</span><span class="sxs-lookup"><span data-stu-id="f4a5b-205">KORREKTUR</span></span>              | <span data-ttu-id="f4a5b-206">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-206">Zeichen</span></span>   | <span data-ttu-id="f4a5b-207">Korrektur</span><span class="sxs-lookup"><span data-stu-id="f4a5b-207">Korrektur</span></span>                                         | <span data-ttu-id="f4a5b-208">$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCorrection</span><span class="sxs-lookup"><span data-stu-id="f4a5b-208">$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCorrection</span></span>                     |
+| <span data-ttu-id="f4a5b-209">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-209">7</span></span>   | <span data-ttu-id="f4a5b-210">HABENBUCHUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-210">HABENBUCHUNG</span></span>           | <span data-ttu-id="f4a5b-211">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-211">Zeichen</span></span>   | <span data-ttu-id="f4a5b-212">Habenbuchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-212">Habenbuchung</span></span>                                      | <span data-ttu-id="f4a5b-213">$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCredit</span><span class="sxs-lookup"><span data-stu-id="f4a5b-213">$GeneralJournalEntry/$GeneralJournalAccountEntry/IsCredit</span></span>                         |
+| <span data-ttu-id="f4a5b-214">8</span><span class="sxs-lookup"><span data-stu-id="f4a5b-214">8</span></span>   | <span data-ttu-id="f4a5b-215">BUCHUNGSBETRAG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-215">BUCHUNGSBETRAG</span></span>         | <span data-ttu-id="f4a5b-216">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-216">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-217">Betrag der Buchung in Buchungswährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-217">Betrag der Buchung in Buchungswährung</span></span>             | <span data-ttu-id="f4a5b-218">$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyAmount</span><span class="sxs-lookup"><span data-stu-id="f4a5b-218">$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyAmount</span></span>        |
+| <span data-ttu-id="f4a5b-219">9</span><span class="sxs-lookup"><span data-stu-id="f4a5b-219">9</span></span>   | <span data-ttu-id="f4a5b-220">BUCHUNGSWAHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-220">BUCHUNGSWAHRUNG</span></span>        | <span data-ttu-id="f4a5b-221">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-221">Zeichen</span></span>   | <span data-ttu-id="f4a5b-222">Währung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-222">Währung der Buchung</span></span>                               | <span data-ttu-id="f4a5b-223">$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-223">$GeneralJournalEntry/$GeneralJournalAccountEntry/TransactionCurrencyCode</span></span>          |
+| <span data-ttu-id="f4a5b-224">10</span><span class="sxs-lookup"><span data-stu-id="f4a5b-224">10</span></span>  | <span data-ttu-id="f4a5b-225">BUCHUNGSWERT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-225">BUCHUNGSWERT</span></span>           | <span data-ttu-id="f4a5b-226">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-226">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-227">Wert der Buchung in Firmenwährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-227">Wert der Buchung in Firmenwährung</span></span>                 | <span data-ttu-id="f4a5b-228">$GeneralJournalEntry/$GeneralJournalAccountEntry/AccountingCurrencyAmount</span><span class="sxs-lookup"><span data-stu-id="f4a5b-228">$GeneralJournalEntry/$GeneralJournalAccountEntry/AccountingCurrencyAmount</span></span>         |
+| <span data-ttu-id="f4a5b-229">11</span><span class="sxs-lookup"><span data-stu-id="f4a5b-229">11</span></span>  | <span data-ttu-id="f4a5b-230">BUCHUNGSTEXT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-230">BUCHUNGSTEXT</span></span>           | <span data-ttu-id="f4a5b-231">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-231">Zeichen</span></span>   | <span data-ttu-id="f4a5b-232">Text der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-232">Text zur Buchung</span></span>                                  | <span data-ttu-id="f4a5b-233">$GeneralJournalEntry/$GeneralJournalAccountEntry/Text</span><span class="sxs-lookup"><span data-stu-id="f4a5b-233">$GeneralJournalEntry/$GeneralJournalAccountEntry/Text</span></span>                                           |
+| <span data-ttu-id="f4a5b-234">12</span><span class="sxs-lookup"><span data-stu-id="f4a5b-234">12</span></span>  | <span data-ttu-id="f4a5b-235">BUCHUNGSDATUM</span><span class="sxs-lookup"><span data-stu-id="f4a5b-235">BUCHUNGSDATUM</span></span>          | <span data-ttu-id="f4a5b-236">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-236">Datum</span></span>     | <span data-ttu-id="f4a5b-237">Datum der Wertstellung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-237">Datum der Wertstellung</span></span>                            | <span data-ttu-id="f4a5b-238">$GeneralJournalEntry/AccountingDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-238">$GeneralJournalEntry/AccountingDate</span></span>                                 |
+| <span data-ttu-id="f4a5b-239">13</span><span class="sxs-lookup"><span data-stu-id="f4a5b-239">13</span></span>  | <span data-ttu-id="f4a5b-240">BUCHUNGSNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-240">BUCHUNGSNUMMER</span></span>         | <span data-ttu-id="f4a5b-241">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-241">Zeichen</span></span>   | <span data-ttu-id="f4a5b-242">Interne Belegnummer der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-242">Interne Belegnummer der Buchung</span></span>                   | <span data-ttu-id="f4a5b-243">$GeneralJournalEntry/SubledgerVoucher</span><span class="sxs-lookup"><span data-stu-id="f4a5b-243">$GeneralJournalEntry/SubledgerVoucher</span></span>                               |
+| <span data-ttu-id="f4a5b-244">14</span><span class="sxs-lookup"><span data-stu-id="f4a5b-244">14</span></span>  | <span data-ttu-id="f4a5b-245">BELEGDATUM</span><span class="sxs-lookup"><span data-stu-id="f4a5b-245">BELEGDATUM</span></span>             | <span data-ttu-id="f4a5b-246">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-246">Datum</span></span>     | <span data-ttu-id="f4a5b-247">Datum des Belegs</span><span class="sxs-lookup"><span data-stu-id="f4a5b-247">Datum des Belegs</span></span>                                  | <span data-ttu-id="f4a5b-248">$GeneralJournalEntry/DocumentDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-248">$GeneralJournalEntry/DocumentDate</span></span>                                   |
+| <span data-ttu-id="f4a5b-249">15</span><span class="sxs-lookup"><span data-stu-id="f4a5b-249">15</span></span>  | <span data-ttu-id="f4a5b-250">BELEGNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-250">BELEGNUMMER</span></span>            | <span data-ttu-id="f4a5b-251">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-251">Zeichen</span></span>   | <span data-ttu-id="f4a5b-252">Externe Belegnummer der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-252">Externe Belegnummer der Buchung</span></span>                   | <span data-ttu-id="f4a5b-253">$GeneralJournalEntry/DocumentNumber</span><span class="sxs-lookup"><span data-stu-id="f4a5b-253">$GeneralJournalEntry/DocumentNumber</span></span>                                 |
+| <span data-ttu-id="f4a5b-254">16</span><span class="sxs-lookup"><span data-stu-id="f4a5b-254">16</span></span>  | <span data-ttu-id="f4a5b-255">SPEZIALBUCHUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-255">SPEZIALBUCHUNG</span></span>         | <span data-ttu-id="f4a5b-256">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-256">Zeichen</span></span>   | <span data-ttu-id="f4a5b-257">0-Steuerbil.; andere Buchungsebene: int. Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-257">0-Steuerbil.; andere Buchungsebene: int. Buchung</span></span>  | <span data-ttu-id="f4a5b-258">$GeneralJournalEntry/PostingLayer</span><span class="sxs-lookup"><span data-stu-id="f4a5b-258">$GeneralJournalEntry/PostingLayer</span></span>                                   |
+| <span data-ttu-id="f4a5b-259">17</span><span class="sxs-lookup"><span data-stu-id="f4a5b-259">17</span></span>  | <span data-ttu-id="f4a5b-260">ERFASSUNGSNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-260">ERFASSUNGSNUMMER</span></span>       | <span data-ttu-id="f4a5b-261">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-261">Zeichen</span></span>   | <span data-ttu-id="f4a5b-262">Nummer der Erfassung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-262">Nummer der Erfassung</span></span>                              | <span data-ttu-id="f4a5b-263">$GeneralJournalEntry/$JournalizingJournal</span><span class="sxs-lookup"><span data-stu-id="f4a5b-263">$GeneralJournalEntry/$JournalizingJournal</span></span>                                        |
+| <span data-ttu-id="f4a5b-264">18</span><span class="sxs-lookup"><span data-stu-id="f4a5b-264">18</span></span>  | <span data-ttu-id="f4a5b-265">JOURNALZEILE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-265">JOURNALZEILE</span></span>           | <span data-ttu-id="f4a5b-266">Numerisch</span><span class="sxs-lookup"><span data-stu-id="f4a5b-266">Numerisch</span></span> | <span data-ttu-id="f4a5b-267">Zeile des Journals</span><span class="sxs-lookup"><span data-stu-id="f4a5b-267">Zeile des Journals</span></span>                                | <span data-ttu-id="f4a5b-268">$GeneralJournalEntry/$JournalizingSeqNumber</span><span class="sxs-lookup"><span data-stu-id="f4a5b-268">$GeneralJournalEntry/$JournalizingSeqNumber</span></span>                                 |
+| <span data-ttu-id="f4a5b-269">19</span><span class="sxs-lookup"><span data-stu-id="f4a5b-269">19</span></span>  | <span data-ttu-id="f4a5b-270">GEGENKONTO</span><span class="sxs-lookup"><span data-stu-id="f4a5b-270">GEGENKONTO</span></span>             | <span data-ttu-id="f4a5b-271">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-271">Zeichen</span></span>   | <span data-ttu-id="f4a5b-272">Nummer des Gegenkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-272">Nummer des Gegenkontos</span></span>                            | <span data-ttu-id="f4a5b-273">$GeneralJournalEntry/RecId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-273">$GeneralJournalEntry/RecId</span></span>                                          |
+| <span data-ttu-id="f4a5b-274">20</span><span class="sxs-lookup"><span data-stu-id="f4a5b-274">20</span></span>  | <span data-ttu-id="f4a5b-275">DOKUMENT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-275">DOKUMENT</span></span>               | <span data-ttu-id="f4a5b-276">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-276">Zeichen</span></span>   | <span data-ttu-id="f4a5b-277">Dokument</span><span class="sxs-lookup"><span data-stu-id="f4a5b-277">Dokument</span></span>                                          | <span data-ttu-id="f4a5b-278">$GeneralJournalEntry/DocumentNumber</span><span class="sxs-lookup"><span data-stu-id="f4a5b-278">$GeneralJournalEntry/DocumentNumber</span></span>                                 |
+
+### <a name="tax-ledger"></a><span data-ttu-id="f4a5b-279">Steuersachkonto</span><span class="sxs-lookup"><span data-stu-id="f4a5b-279">Tax ledger</span></span>
+
+<span data-ttu-id="f4a5b-280">In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-280">The following tables show the Tax data structure definitions.</span></span>
+
+#### <a name="umsatzsteuercodes"></a><span data-ttu-id="f4a5b-281">Umsatzsteuercodes</span><span class="sxs-lookup"><span data-stu-id="f4a5b-281">Umsatzsteuercodes</span></span>
+
+|     | <span data-ttu-id="f4a5b-282">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-282">Feldname</span></span>          | <span data-ttu-id="f4a5b-283">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-283">Feldtyp</span></span>   | <span data-ttu-id="f4a5b-284">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-284">Beschreibung</span></span>      | <span data-ttu-id="f4a5b-285">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-285">Electronic Reporting Data Source Path</span></span>|
+|-----|-------------------|-----------|-------------------|-------------------------------------------------------------------------|
+| <span data-ttu-id="f4a5b-286">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-286">1</span></span>   | <span data-ttu-id="f4a5b-287">BUCHUNGSGRUNDLAGE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-287">BUCHUNGSGRUNDLAGE</span></span> | <span data-ttu-id="f4a5b-288">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-288">Zeichen</span></span>   | <span data-ttu-id="f4a5b-289">Buchungsgrundlage</span><span class="sxs-lookup"><span data-stu-id="f4a5b-289">Buchungsgrundlage</span></span> | <span data-ttu-id="f4a5b-290">TaxData/$TaxTable/TaxBase</span><span class="sxs-lookup"><span data-stu-id="f4a5b-290">TaxData/$TaxTable/TaxBase</span></span>                             |
+| <span data-ttu-id="f4a5b-291">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-291">2</span></span>   | <span data-ttu-id="f4a5b-292">NAME</span><span class="sxs-lookup"><span data-stu-id="f4a5b-292">NAME</span></span>              | <span data-ttu-id="f4a5b-293">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-293">Zeichen</span></span>   | <span data-ttu-id="f4a5b-294">Name</span><span class="sxs-lookup"><span data-stu-id="f4a5b-294">Name</span></span>              | <span data-ttu-id="f4a5b-295">TaxData/$TaxTable/TaxName</span><span class="sxs-lookup"><span data-stu-id="f4a5b-295">TaxData/$TaxTable/TaxName</span></span>                             |
+| <span data-ttu-id="f4a5b-296">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-296">3</span></span>   | <span data-ttu-id="f4a5b-297">PROZENTSATZ</span><span class="sxs-lookup"><span data-stu-id="f4a5b-297">PROZENTSATZ</span></span>       | <span data-ttu-id="f4a5b-298">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-298">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-299">Prozentsatz</span><span class="sxs-lookup"><span data-stu-id="f4a5b-299">Prozentsatz</span></span>       | <span data-ttu-id="f4a5b-300">TaxData/TaxValue</span><span class="sxs-lookup"><span data-stu-id="f4a5b-300">TaxData/TaxValue</span></span>                            |
+| <span data-ttu-id="f4a5b-301">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-301">4</span></span>   | <span data-ttu-id="f4a5b-302">GULTIGAB</span><span class="sxs-lookup"><span data-stu-id="f4a5b-302">GULTIGAB</span></span>          | <span data-ttu-id="f4a5b-303">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-303">Datum</span></span>     | <span data-ttu-id="f4a5b-304">Gültig ab</span><span class="sxs-lookup"><span data-stu-id="f4a5b-304">Gültig ab</span></span>         | <span data-ttu-id="f4a5b-305">TaxData/TaxFromDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-305">TaxData/TaxFromDate</span></span>                         |
+| <span data-ttu-id="f4a5b-306">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-306">5</span></span>   | <span data-ttu-id="f4a5b-307">GULTIGBIS</span><span class="sxs-lookup"><span data-stu-id="f4a5b-307">GULTIGBIS</span></span>         | <span data-ttu-id="f4a5b-308">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-308">Datum</span></span>     | <span data-ttu-id="f4a5b-309">Gültig bis</span><span class="sxs-lookup"><span data-stu-id="f4a5b-309">Gültig bis</span></span>        | <span data-ttu-id="f4a5b-310">TaxData/TaxToDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-310">TaxData/TaxToDate</span></span>                           |
+
+#### <a name="mehrwertsteuergruppen"></a><span data-ttu-id="f4a5b-311">MehrwertsteuerGruppen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-311">MehrwertsteuerGruppen</span></span>
+
+|     | <span data-ttu-id="f4a5b-312">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-312">Feldname</span></span>                      | <span data-ttu-id="f4a5b-313">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-313">Feldtyp</span></span> | <span data-ttu-id="f4a5b-314">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-314">Beschreibung</span></span>               | <span data-ttu-id="f4a5b-315">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-315">Electronic Reporting Data Source Path</span></span> |
+|-----|-------------------------------|---------|----------------------------|-------------------------------------------------|
+| <span data-ttu-id="f4a5b-316">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-316">1</span></span>   | <span data-ttu-id="f4a5b-317">BESCHREIBUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-317">BESCHREIBUNG</span></span>                  | <span data-ttu-id="f4a5b-318">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-318">Zeichen</span></span> | <span data-ttu-id="f4a5b-319">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-319">Beschreibung</span></span>               | <span data-ttu-id="f4a5b-320">TaxGroupData/$TaxGroupHeading/TaxGroupName</span><span class="sxs-lookup"><span data-stu-id="f4a5b-320">TaxGroupData/$TaxGroupHeading/TaxGroupName</span></span>     |
+| <span data-ttu-id="f4a5b-321">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-321">2</span></span>   | <span data-ttu-id="f4a5b-322">MEHRWERTSTEUERGRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-322">MEHRWERTSTEUERGRUPPE</span></span>          | <span data-ttu-id="f4a5b-323">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-323">Zeichen</span></span> | <span data-ttu-id="f4a5b-324">Mehrwertsteuergruppe</span><span class="sxs-lookup"><span data-stu-id="f4a5b-324">Mehrwertsteuergruppe</span></span>       | <span data-ttu-id="f4a5b-325">TaxGroupData/TaxGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-325">TaxGroupData/TaxGroup</span></span>       |
+| <span data-ttu-id="f4a5b-326">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-326">3</span></span>   | <span data-ttu-id="f4a5b-327">MWST\_AUF\_SKONTO\_STORNIEREN</span><span class="sxs-lookup"><span data-stu-id="f4a5b-327">MWST\_AUF\_SKONTO\_STORNIEREN</span></span> | <span data-ttu-id="f4a5b-328">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-328">Zeichen</span></span> | <span data-ttu-id="f4a5b-329">MWSt auf Skonto stornieren</span><span class="sxs-lookup"><span data-stu-id="f4a5b-329">MWSt auf Skonto stornieren</span></span> | <span data-ttu-id="f4a5b-330">TaxGroupData/$TaxGroupHeading/TaxReverseOnCashDisc</span><span class="sxs-lookup"><span data-stu-id="f4a5b-330">TaxGroupData/$TaxGroupHeading/TaxReverseOnCashDisc</span></span>   |
+| <span data-ttu-id="f4a5b-331">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-331">4</span></span>   | <span data-ttu-id="f4a5b-332">MWST\_CODE\_NAME</span><span class="sxs-lookup"><span data-stu-id="f4a5b-332">MWST\_CODE\_NAME</span></span>              | <span data-ttu-id="f4a5b-333">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-333">Zeichen</span></span> | <span data-ttu-id="f4a5b-334">MWSt Code Name</span><span class="sxs-lookup"><span data-stu-id="f4a5b-334">MWSt Code Name</span></span>             | <span data-ttu-id="f4a5b-335">TaxGroupData/$TaxTable/TaxName</span><span class="sxs-lookup"><span data-stu-id="f4a5b-335">TaxGroupData/$TaxTable/TaxName</span></span>  |
+| <span data-ttu-id="f4a5b-336">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-336">5</span></span>   | <span data-ttu-id="f4a5b-337">MEHRWERTSTEUERCODE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-337">MEHRWERTSTEUERCODE</span></span>            | <span data-ttu-id="f4a5b-338">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-338">Zeichen</span></span> | <span data-ttu-id="f4a5b-339">Mehrwertsteuercode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-339">Mehrwertsteuercode</span></span>         | <span data-ttu-id="f4a5b-340">TaxGroupData/TaxCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-340">TaxGroupData/TaxCode</span></span>    |
+| <span data-ttu-id="f4a5b-341">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-341">6</span></span>   | <span data-ttu-id="f4a5b-342">ERWERBSSTEUER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-342">ERWERBSSTEUER</span></span>                 | <span data-ttu-id="f4a5b-343">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-343">Zeichen</span></span> | <span data-ttu-id="f4a5b-344">Erwerbssteuer</span><span class="sxs-lookup"><span data-stu-id="f4a5b-344">Erwerbssteuer</span></span>              | <span data-ttu-id="f4a5b-345">TaxGroupData/UseTax</span><span class="sxs-lookup"><span data-stu-id="f4a5b-345">TaxGroupData/UseTax</span></span>       |
+
+#### <a name="umsatzsteuerbuchungen"></a><span data-ttu-id="f4a5b-346">Umsatzsteuerbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-346">Umsatzsteuerbuchungen</span></span>
+
+|     | <span data-ttu-id="f4a5b-347">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-347">Feldname</span></span>               | <span data-ttu-id="f4a5b-348">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-348">Feldtyp</span></span>   | <span data-ttu-id="f4a5b-349">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-349">Beschreibung</span></span>                                | <span data-ttu-id="f4a5b-350">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-350">Electronic Reporting Data Source Path</span></span> |
+|-----|------------------------|-----------|---------------------------------------------|--------------------------------------|
+| <span data-ttu-id="f4a5b-351">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-351">1</span></span>   | <span data-ttu-id="f4a5b-352">STEUERART</span><span class="sxs-lookup"><span data-stu-id="f4a5b-352">STEUERART</span></span>              | <span data-ttu-id="f4a5b-353">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-353">Zeichen</span></span>   | <span data-ttu-id="f4a5b-354">Beschreibung der Steuerart</span><span class="sxs-lookup"><span data-stu-id="f4a5b-354">Beschreibung der Steuerart</span></span>                  | <span data-ttu-id="f4a5b-355">$TaxTrans/taxName()</span><span class="sxs-lookup"><span data-stu-id="f4a5b-355">$TaxTrans/taxName()</span></span>                                      |
+| <span data-ttu-id="f4a5b-356">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-356">2</span></span>   | <span data-ttu-id="f4a5b-357">STEUERBUCHUNGSREFERENZ</span><span class="sxs-lookup"><span data-stu-id="f4a5b-357">STEUERBUCHUNGSREFERENZ</span></span> | <span data-ttu-id="f4a5b-358">Numerisch</span><span class="sxs-lookup"><span data-stu-id="f4a5b-358">Numerisch</span></span> | <span data-ttu-id="f4a5b-359">Gibt es hierzu eine MWST-Buchung?</span><span class="sxs-lookup"><span data-stu-id="f4a5b-359">Gibt es hierzu eine MWST-Buchung?</span></span> <span data-ttu-id="f4a5b-360">- lfd Nr.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-360">- lfd Nr.</span></span> | <span data-ttu-id="f4a5b-361">$TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-361">$TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId</span></span>                                          |
+| <span data-ttu-id="f4a5b-362">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-362">3</span></span>   | <span data-ttu-id="f4a5b-363">CODE\_ MWST</span><span class="sxs-lookup"><span data-stu-id="f4a5b-363">MWST\_CODE</span></span>             | <span data-ttu-id="f4a5b-364">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-364">Zeichen</span></span>   | <span data-ttu-id="f4a5b-365">MWST Bezeichung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-365">MWST Bezeichung</span></span>                             | <span data-ttu-id="f4a5b-366">$TaxTrans/TaxCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-366">$TaxTrans/TaxCode</span></span>                                        |
+| <span data-ttu-id="f4a5b-367">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-367">4</span></span>   | <span data-ttu-id="f4a5b-368">WERTSTELLUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-368">WERTSTELLUNG</span></span>           | <span data-ttu-id="f4a5b-369">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-369">Datum</span></span>     | <span data-ttu-id="f4a5b-370">Datum der Wertstellung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-370">Datum der Wertstellung der Buchung</span></span>          | <span data-ttu-id="f4a5b-371">$TaxTrans/TransDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-371">$TaxTrans/TransDate</span></span>                                      |
+| <span data-ttu-id="f4a5b-372">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-372">5</span></span>   | <span data-ttu-id="f4a5b-373">BELEGNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-373">BELEGNUMMER</span></span>            | <span data-ttu-id="f4a5b-374">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-374">Zeichen</span></span>   | <span data-ttu-id="f4a5b-375">Interne Nummer des Buchungsbelegs</span><span class="sxs-lookup"><span data-stu-id="f4a5b-375">Interne Nummer des Buchungsbelegs</span></span>           | <span data-ttu-id="f4a5b-376">$TaxTrans/Voucher</span><span class="sxs-lookup"><span data-stu-id="f4a5b-376">$TaxTrans/Voucher</span></span>                                        |
+| <span data-ttu-id="f4a5b-377">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-377">6</span></span>   | <span data-ttu-id="f4a5b-378">BUCHUNGSWAHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-378">BUCHUNGSWAHRUNG</span></span>        | <span data-ttu-id="f4a5b-379">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-379">Zeichen</span></span>   | <span data-ttu-id="f4a5b-380">Währung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-380">Währung der Buchung</span></span>                         | <span data-ttu-id="f4a5b-381">$TaxTrans/CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-381">$TaxTrans/CurrencyCode</span></span>                                   |
+| <span data-ttu-id="f4a5b-382">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-382">7</span></span>   | <span data-ttu-id="f4a5b-383">BUCHUNGSBETRAG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-383">BUCHUNGSBETRAG</span></span>         | <span data-ttu-id="f4a5b-384">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-384">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-385">Betrag der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-385">Betrag der Buchung</span></span>                          | <span data-ttu-id="f4a5b-386">$TaxTrans/TaxAmountCur</span><span class="sxs-lookup"><span data-stu-id="f4a5b-386">$TaxTrans/TaxAmountCur</span></span>                                   |
+| <span data-ttu-id="f4a5b-387">8</span><span class="sxs-lookup"><span data-stu-id="f4a5b-387">8</span></span>   | <span data-ttu-id="f4a5b-388">BUCHUNGSWERT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-388">BUCHUNGSWERT</span></span>           | <span data-ttu-id="f4a5b-389">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-389">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-390">Wert der Buchung in Firmenwährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-390">Wert der Buchung in Firmenwährung</span></span>           | <span data-ttu-id="f4a5b-391">$TaxTrans/TaxAmount</span><span class="sxs-lookup"><span data-stu-id="f4a5b-391">$TaxTrans/TaxAmount</span></span>                                      |
+| <span data-ttu-id="f4a5b-392">9</span><span class="sxs-lookup"><span data-stu-id="f4a5b-392">9</span></span>   | <span data-ttu-id="f4a5b-393">QUELLE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-393">QUELLE</span></span>                 | <span data-ttu-id="f4a5b-394">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-394">Zeichen</span></span>   | <span data-ttu-id="f4a5b-395">Quelle</span><span class="sxs-lookup"><span data-stu-id="f4a5b-395">Quelle</span></span>                                      | <span data-ttu-id="f4a5b-396">$TaxTrans/Source</span><span class="sxs-lookup"><span data-stu-id="f4a5b-396">$TaxTrans/Source</span></span>                                         |
+| <span data-ttu-id="f4a5b-397">10</span><span class="sxs-lookup"><span data-stu-id="f4a5b-397">10</span></span>  | <span data-ttu-id="f4a5b-398">BUCHUNGSGRUNDLAGE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-398">BUCHUNGSGRUNDLAGE</span></span>      | <span data-ttu-id="f4a5b-399">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-399">Zeichen</span></span>   | <span data-ttu-id="f4a5b-400">Buchungsgrundlage</span><span class="sxs-lookup"><span data-stu-id="f4a5b-400">Buchungsgrundlage</span></span>                           | <span data-ttu-id="f4a5b-401">$TaxTrans/TaxDirection</span><span class="sxs-lookup"><span data-stu-id="f4a5b-401">$TaxTrans/TaxDirection</span></span>                                   |
+| <span data-ttu-id="f4a5b-402">11</span><span class="sxs-lookup"><span data-stu-id="f4a5b-402">11</span></span>  | <span data-ttu-id="f4a5b-403">BELEGWAHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-403">BELEGWAHRUNG</span></span>           | <span data-ttu-id="f4a5b-404">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-404">Zeichen</span></span>   | <span data-ttu-id="f4a5b-405">Belegwährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-405">Belegwährung</span></span>                                | <span data-ttu-id="f4a5b-406">$TaxTrans/SourceCurrencyCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-406">$TaxTrans/SourceCurrencyCode</span></span>                             |
+| <span data-ttu-id="f4a5b-407">12</span><span class="sxs-lookup"><span data-stu-id="f4a5b-407">12</span></span>  | <span data-ttu-id="f4a5b-408">GRUNDLAGE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-408">GRUNDLAGE</span></span>              | <span data-ttu-id="f4a5b-409">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-409">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-410">Grundlage</span><span class="sxs-lookup"><span data-stu-id="f4a5b-410">Grundlage</span></span>                                   | <span data-ttu-id="f4a5b-411">$TaxTrans/SourceBaseAmountCur</span><span class="sxs-lookup"><span data-stu-id="f4a5b-411">$TaxTrans/SourceBaseAmountCur</span></span>                            |
+| <span data-ttu-id="f4a5b-412">13</span><span class="sxs-lookup"><span data-stu-id="f4a5b-412">13</span></span>  | <span data-ttu-id="f4a5b-413">PROZENTSATZ</span><span class="sxs-lookup"><span data-stu-id="f4a5b-413">PROZENTSATZ</span></span>            | <span data-ttu-id="f4a5b-414">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-414">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-415">Prozentsatz</span><span class="sxs-lookup"><span data-stu-id="f4a5b-415">Prozentsatz</span></span>                                 | <span data-ttu-id="f4a5b-416">$TaxTrans/TaxValue</span><span class="sxs-lookup"><span data-stu-id="f4a5b-416">$TaxTrans/TaxValue</span></span>                                       |
+| <span data-ttu-id="f4a5b-417">14</span><span class="sxs-lookup"><span data-stu-id="f4a5b-417">14</span></span>  | <span data-ttu-id="f4a5b-418">MWST\_GRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-418">MWST\_GRUPPE</span></span>           | <span data-ttu-id="f4a5b-419">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-419">Zeichen</span></span>   | <span data-ttu-id="f4a5b-420">MwSt Gruppe</span><span class="sxs-lookup"><span data-stu-id="f4a5b-420">MwSt Gruppe</span></span>                                 | <span data-ttu-id="f4a5b-421">$TaxTrans/TaxGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-421">$TaxTrans/TaxGroup</span></span>                                       |
+| <span data-ttu-id="f4a5b-422">15</span><span class="sxs-lookup"><span data-stu-id="f4a5b-422">15</span></span>  | <span data-ttu-id="f4a5b-423">KONTO\_MWST\_AUSGABEN</span><span class="sxs-lookup"><span data-stu-id="f4a5b-423">KONTO\_MWST\_AUSGABEN</span></span>  | <span data-ttu-id="f4a5b-424">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-424">Zeichen</span></span>   | <span data-ttu-id="f4a5b-425">Konto MwSt Ausgaben</span><span class="sxs-lookup"><span data-stu-id="f4a5b-425">Konto MwSt Ausgaben</span></span>                         | <span data-ttu-id="f4a5b-426">$TaxTrans/accountName()</span><span class="sxs-lookup"><span data-stu-id="f4a5b-426">$TaxTrans/accountName()</span></span>                           |
+| <span data-ttu-id="f4a5b-427">16</span><span class="sxs-lookup"><span data-stu-id="f4a5b-427">16</span></span>  | <span data-ttu-id="f4a5b-428">SACHKONTO</span><span class="sxs-lookup"><span data-stu-id="f4a5b-428">SACHKONTO</span></span>              | <span data-ttu-id="f4a5b-429">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-429">Zeichen</span></span>   | <span data-ttu-id="f4a5b-430">Sachkonto</span><span class="sxs-lookup"><span data-stu-id="f4a5b-430">Sachkonto</span></span>                                   | <span data-ttu-id="f4a5b-431">$TaxTrans/accountNameOperational()</span><span class="sxs-lookup"><span data-stu-id="f4a5b-431">$TaxTrans/accountNameOperational()</span></span>                         |
+| <span data-ttu-id="f4a5b-432">17</span><span class="sxs-lookup"><span data-stu-id="f4a5b-432">17</span></span>  | <span data-ttu-id="f4a5b-433">ARTIKEL\_MWST\_GRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-433">ARTIKEL\_MWST\_GRUPPE</span></span>  | <span data-ttu-id="f4a5b-434">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-434">Zeichen</span></span>   | <span data-ttu-id="f4a5b-435">Artikel-Mehrwertsteuergruppe</span><span class="sxs-lookup"><span data-stu-id="f4a5b-435">Artikel-Mehrwertsteuergruppe</span></span>                | <span data-ttu-id="f4a5b-436">$TaxTrans/TaxItemGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-436">$TaxTrans/TaxItemGroup</span></span>                                   |
+
+### <a name="accounts-receivable"></a><span data-ttu-id="f4a5b-437">Debitoren</span><span class="sxs-lookup"><span data-stu-id="f4a5b-437">Accounts receivable</span></span>
+
+<span data-ttu-id="f4a5b-438">In den folgenden Tabellen werden die allgemeinen Debitorendatenstrukturdefinitionen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-438">The following tables show the Accounts receivable data structure definitions.</span></span>
+
+#### <a name="kunden"></a><span data-ttu-id="f4a5b-439">Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-439">Kunden</span></span>
+
+|     | <span data-ttu-id="f4a5b-440">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-440">Feldname</span></span>             | <span data-ttu-id="f4a5b-441">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-441">Feldtyp</span></span> | <span data-ttu-id="f4a5b-442">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-442">Beschreibung</span></span>                          | <span data-ttu-id="f4a5b-443">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-443">Electronic Reporting Data Source Path</span></span>|
+|-----|----------------------|---------|---------------------------------------|--------------------------------------|
+| <span data-ttu-id="f4a5b-444">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-444">1</span></span>   | <span data-ttu-id="f4a5b-445">KUNDENKONTONUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-445">KUNDENKONTONUMMER</span></span>    | <span data-ttu-id="f4a5b-446">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-446">Zeichen</span></span> | <span data-ttu-id="f4a5b-447">Nummer des Kundenkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-447">Nummer des Kundenkontos</span></span>               | <span data-ttu-id="f4a5b-448">CustTable/AccountNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-448">CustTable/AccountNum</span></span>                                     |
+| <span data-ttu-id="f4a5b-449">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-449">2</span></span>   | <span data-ttu-id="f4a5b-450">KUNDENUSTIDNR</span><span class="sxs-lookup"><span data-stu-id="f4a5b-450">KUNDENUSTIDNR</span></span>        | <span data-ttu-id="f4a5b-451">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-451">Zeichen</span></span> | <span data-ttu-id="f4a5b-452">USt-IdNr des Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-452">USt-IdNr des Kunden</span></span>                   | <span data-ttu-id="f4a5b-453">CustTable/getVatNumPrimaryRegistrationNumber()</span><span class="sxs-lookup"><span data-stu-id="f4a5b-453">CustTable/getVatNumPrimaryRegistrationNumber()</span></span>                                         |
+| <span data-ttu-id="f4a5b-454">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-454">3</span></span>   | <span data-ttu-id="f4a5b-455">KUNDENSTRASSE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-455">KUNDENSTRASSE</span></span>        | <span data-ttu-id="f4a5b-456">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-456">Zeichen</span></span> | <span data-ttu-id="f4a5b-457">Straße des Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-457">Straße des Kunden</span></span>                     | <span data-ttu-id="f4a5b-458">CustTable/$Party/$LogisticsPostalAddress/Street</span><span class="sxs-lookup"><span data-stu-id="f4a5b-458">CustTable/$Party/$LogisticsPostalAddress/Street</span></span>                                         |
+| <span data-ttu-id="f4a5b-459">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-459">4</span></span>   | <span data-ttu-id="f4a5b-460">KUNDENPLZ</span><span class="sxs-lookup"><span data-stu-id="f4a5b-460">KUNDENPLZ</span></span>            | <span data-ttu-id="f4a5b-461">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-461">Zeichen</span></span> | <span data-ttu-id="f4a5b-462">Postleitzahl des Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-462">Postleitzahl des Kunden</span></span>               | <span data-ttu-id="f4a5b-463">CustTable/$Party/$LogisticsPostalAddress/ZipCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-463">CustTable/$Party/$LogisticsPostalAddress/ZipCode</span></span>                                        |
+| <span data-ttu-id="f4a5b-464">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-464">5</span></span>   | <span data-ttu-id="f4a5b-465">KUNDENORT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-465">KUNDENORT</span></span>            | <span data-ttu-id="f4a5b-466">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-466">Zeichen</span></span> | <span data-ttu-id="f4a5b-467">Ort des Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-467">Ort des Kunden</span></span>                        | <span data-ttu-id="f4a5b-468">CustTable/$Party/$LogisticsPostalAddress/City</span><span class="sxs-lookup"><span data-stu-id="f4a5b-468">CustTable/$Party/$LogisticsPostalAddress/City</span></span>                                           |
+| <span data-ttu-id="f4a5b-469">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-469">6</span></span>   | <span data-ttu-id="f4a5b-470">KUNDENSTAAT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-470">KUNDENSTAAT</span></span>          | <span data-ttu-id="f4a5b-471">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-471">Zeichen</span></span> | <span data-ttu-id="f4a5b-472">Staat des Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-472">Staat des Kunden</span></span>                      | <span data-ttu-id="f4a5b-473">CustTable/$Party/$LogisticsPostalAddress/CountryRegionId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-473">CustTable/$Party/$LogisticsPostalAddress/CountryRegionId</span></span>                                |
+| <span data-ttu-id="f4a5b-474">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-474">7</span></span>   | <span data-ttu-id="f4a5b-475">KUNDENNAME</span><span class="sxs-lookup"><span data-stu-id="f4a5b-475">KUNDENNAME</span></span>           | <span data-ttu-id="f4a5b-476">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-476">Zeichen</span></span> | <span data-ttu-id="f4a5b-477">Name des Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-477">Name des Kunden</span></span>                       | <span data-ttu-id="f4a5b-478">CustTable/$Party/Name</span><span class="sxs-lookup"><span data-stu-id="f4a5b-478">CustTable/$Party/Name</span></span>                                           |
+| <span data-ttu-id="f4a5b-479">8</span><span class="sxs-lookup"><span data-stu-id="f4a5b-479">8</span></span>   | <span data-ttu-id="f4a5b-480">KUNDENGRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-480">KUNDENGRUPPE</span></span>         | <span data-ttu-id="f4a5b-481">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-481">Zeichen</span></span> | <span data-ttu-id="f4a5b-482">Gruppe, der der Kunde zugeordnet ist</span><span class="sxs-lookup"><span data-stu-id="f4a5b-482">Gruppe, der der Kunde zugeordnet ist</span></span>  | <span data-ttu-id="f4a5b-483">CustTable/CustGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-483">CustTable/CustGroup</span></span>                                      |
+| <span data-ttu-id="f4a5b-484">9</span><span class="sxs-lookup"><span data-stu-id="f4a5b-484">9</span></span>   | <span data-ttu-id="f4a5b-485">KUNDENEIGENEKONTONR</span><span class="sxs-lookup"><span data-stu-id="f4a5b-485">KUNDENEIGENEKONTONR</span></span>  | <span data-ttu-id="f4a5b-486">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-486">Zeichen</span></span> | <span data-ttu-id="f4a5b-487">Eigene Kontonummer beim Kunden</span><span class="sxs-lookup"><span data-stu-id="f4a5b-487">Eigene Kontonummer beim Kunden</span></span>        | <span data-ttu-id="f4a5b-488">CustTable/OurAccountNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-488">CustTable/OurAccountNum</span></span>                                  |
+| <span data-ttu-id="f4a5b-489">10</span><span class="sxs-lookup"><span data-stu-id="f4a5b-489">10</span></span>  | <span data-ttu-id="f4a5b-490">KUNDENLIEFERANTENNR</span><span class="sxs-lookup"><span data-stu-id="f4a5b-490">KUNDENLIEFERANTENNR</span></span>  | <span data-ttu-id="f4a5b-491">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-491">Zeichen</span></span> | <span data-ttu-id="f4a5b-492">Lieferantenkonto bei uns</span><span class="sxs-lookup"><span data-stu-id="f4a5b-492">Lieferantenkonto bei uns</span></span>              | <span data-ttu-id="f4a5b-493">CustTable/VendAccount</span><span class="sxs-lookup"><span data-stu-id="f4a5b-493">CustTable/VendAccount</span></span>                                    |
+| <span data-ttu-id="f4a5b-494">11</span><span class="sxs-lookup"><span data-stu-id="f4a5b-494">11</span></span>  | <span data-ttu-id="f4a5b-495">KUNDENRECHNUNGSKONTO</span><span class="sxs-lookup"><span data-stu-id="f4a5b-495">KUNDENRECHNUNGSKONTO</span></span> | <span data-ttu-id="f4a5b-496">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-496">Zeichen</span></span> | <span data-ttu-id="f4a5b-497">Kundenkonto für Rechnungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-497">Kundenkonto für Rechnungen</span></span>            | <span data-ttu-id="f4a5b-498">CustTable/InvoiceAccount</span><span class="sxs-lookup"><span data-stu-id="f4a5b-498">CustTable/InvoiceAccount</span></span>                                 |
+| <span data-ttu-id="f4a5b-499">12</span><span class="sxs-lookup"><span data-stu-id="f4a5b-499">12</span></span>  | <span data-ttu-id="f4a5b-500">MWST\_GRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-500">MWST\_GRUPPE</span></span>         | <span data-ttu-id="f4a5b-501">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-501">Zeichen</span></span> | <span data-ttu-id="f4a5b-502">MWSt Gruppe - Inland / EU / Drittland</span><span class="sxs-lookup"><span data-stu-id="f4a5b-502">MWSt Gruppe - Inland / EU / Drittland</span></span> | <span data-ttu-id="f4a5b-503">CustTable/TaxGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-503">CustTable/TaxGroup</span></span>                                       |
+| <span data-ttu-id="f4a5b-504">13</span><span class="sxs-lookup"><span data-stu-id="f4a5b-504">13</span></span>  | <span data-ttu-id="f4a5b-505">WÄHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-505">WÄHRUNG</span></span>              | <span data-ttu-id="f4a5b-506">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-506">Zeichen</span></span> | <span data-ttu-id="f4a5b-507">Währung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-507">Währung</span></span>                               | <span data-ttu-id="f4a5b-508">CustTable/Currency</span><span class="sxs-lookup"><span data-stu-id="f4a5b-508">CustTable/Currency</span></span>                                       |
+
+#### <a name="kundenbuchungen"></a><span data-ttu-id="f4a5b-509">Kundenbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-509">Kundenbuchungen</span></span>
+
+|     | <span data-ttu-id="f4a5b-510">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-510">Feldname</span></span>                 | <span data-ttu-id="f4a5b-511">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-511">Feldtyp</span></span>   | <span data-ttu-id="f4a5b-512">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-512">Beschreibung</span></span>                          | <span data-ttu-id="f4a5b-513">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-513">Electronic Reporting Data Source Path</span></span> |
+|-----|--------------------------|-----------|---------------------------------------|-----------------------------------------------------------------------------------|
+| <span data-ttu-id="f4a5b-514">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-514">1</span></span>   | <span data-ttu-id="f4a5b-515">KUNDENKONTONUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-515">KUNDENKONTONUMMER</span></span>        | <span data-ttu-id="f4a5b-516">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-516">Zeichen</span></span>   | <span data-ttu-id="f4a5b-517">Kontonummer des Kundenkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-517">Kontonummer des Kundenkontos</span></span>          | <span data-ttu-id="f4a5b-518">$CustTrans/AccountNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-518">$CustTrans/AccountNum</span></span>                                     |
+| <span data-ttu-id="f4a5b-519">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-519">2</span></span>   | <span data-ttu-id="f4a5b-520">BUCHUNGSNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-520">BUCHUNGSNUMMER</span></span>           | <span data-ttu-id="f4a5b-521">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-521">Zeichen</span></span>   | <span data-ttu-id="f4a5b-522">Interne Belegnummer der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-522">Interne Belegnummer der Buchung</span></span>       | <span data-ttu-id="f4a5b-523">$CustTrans/Voucher</span><span class="sxs-lookup"><span data-stu-id="f4a5b-523">$CustTrans/Voucher</span></span>                                        |
+| <span data-ttu-id="f4a5b-524">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-524">3</span></span>   | <span data-ttu-id="f4a5b-525">BUCHUNGSDATUM</span><span class="sxs-lookup"><span data-stu-id="f4a5b-525">BUCHUNGSDATUM</span></span>            | <span data-ttu-id="f4a5b-526">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-526">Datum</span></span>     | <span data-ttu-id="f4a5b-527">Wertstellung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-527">Wertstellung der Buchung</span></span>              | <span data-ttu-id="f4a5b-528">$CustTrans/TransDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-528">$CustTrans/TransDate</span></span>                                      |
+| <span data-ttu-id="f4a5b-529">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-529">4</span></span>   | <span data-ttu-id="f4a5b-530">BELEGNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-530">BELEGNUMMER</span></span>              | <span data-ttu-id="f4a5b-531">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-531">Zeichen</span></span>   | <span data-ttu-id="f4a5b-532">Externe Belegnummer der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-532">Externe Belegnummer der Buchung</span></span>       | <span data-ttu-id="f4a5b-533">CustTrans/DocumentNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-533">$CustTrans/DocumentNum</span></span>                                    |
+| <span data-ttu-id="f4a5b-534">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-534">5</span></span>   | <span data-ttu-id="f4a5b-535">BELEGDATUM</span><span class="sxs-lookup"><span data-stu-id="f4a5b-535">BELEGDATUM</span></span>               | <span data-ttu-id="f4a5b-536">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-536">Datum</span></span>     | <span data-ttu-id="f4a5b-537">Datum des externen Belegs</span><span class="sxs-lookup"><span data-stu-id="f4a5b-537">Datum des externen Belegs</span></span>             | <span data-ttu-id="f4a5b-538">$CustTrans/DocumentDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-538">$CustTrans/DocumentDate</span></span>                                   |
+| <span data-ttu-id="f4a5b-539">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-539">6</span></span>   | <span data-ttu-id="f4a5b-540">BUCHUNGSTEXT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-540">BUCHUNGSTEXT</span></span>             | <span data-ttu-id="f4a5b-541">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-541">Zeichen</span></span>   | <span data-ttu-id="f4a5b-542">Buchungstext der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-542">Buchungstext der Buchung</span></span>              | <span data-ttu-id="f4a5b-543">$CustTrans/Txt</span><span class="sxs-lookup"><span data-stu-id="f4a5b-543">$CustTrans/Txt</span></span>                                            |
+| <span data-ttu-id="f4a5b-544">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-544">7</span></span>   | <span data-ttu-id="f4a5b-545">BUCHUNGSBETRAG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-545">BUCHUNGSBETRAG</span></span>           | <span data-ttu-id="f4a5b-546">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-546">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-547">Betrag der Buchung in Buchungswährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-547">Betrag der Buchung in Buchungswährung</span></span> | <span data-ttu-id="f4a5b-548">$CustTrans/AmountCur</span><span class="sxs-lookup"><span data-stu-id="f4a5b-548">$CustTrans/AmountCur</span></span>                                      |
+| <span data-ttu-id="f4a5b-549">8</span><span class="sxs-lookup"><span data-stu-id="f4a5b-549">8</span></span>   | <span data-ttu-id="f4a5b-550">BUCHUNGSWAHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-550">BUCHUNGSWAHRUNG</span></span>          | <span data-ttu-id="f4a5b-551">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-551">Zeichen</span></span>   | <span data-ttu-id="f4a5b-552">Währung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-552">Währung der Buchung</span></span>                   | <span data-ttu-id="f4a5b-553">$CustTrans/CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-553">$CustTrans/CurrencyCode</span></span>                                   |
+| <span data-ttu-id="f4a5b-554">9</span><span class="sxs-lookup"><span data-stu-id="f4a5b-554">9</span></span>   | <span data-ttu-id="f4a5b-555">BUCHUNGSWERT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-555">BUCHUNGSWERT</span></span>             | <span data-ttu-id="f4a5b-556">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-556">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-557">Wert der Buchung in Firmenwährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-557">Wert der Buchung in Firmenwährung</span></span>     | <span data-ttu-id="f4a5b-558">$CustTrans/AmountMST</span><span class="sxs-lookup"><span data-stu-id="f4a5b-558">$CustTrans/AmountMST</span></span>                                      |
+| <span data-ttu-id="f4a5b-559">10</span><span class="sxs-lookup"><span data-stu-id="f4a5b-559">10</span></span>  | <span data-ttu-id="f4a5b-560">LETZTER\_AUSGLEICHSBELEG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-560">LETZTER\_AUSGLEICHSBELEG</span></span> | <span data-ttu-id="f4a5b-561">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-561">Zeichen</span></span>   | <span data-ttu-id="f4a5b-562">Letzter Ausgleichsbeleg</span><span class="sxs-lookup"><span data-stu-id="f4a5b-562">Letzter Ausgleichsbeleg</span></span>               | <span data-ttu-id="f4a5b-563">$CustTrans/LastSettleVoucher</span><span class="sxs-lookup"><span data-stu-id="f4a5b-563">$CustTrans/LastSettleVoucher</span></span>                              |
+| <span data-ttu-id="f4a5b-564">11</span><span class="sxs-lookup"><span data-stu-id="f4a5b-564">11</span></span>  | <span data-ttu-id="f4a5b-565">LETZTER\_AUSGLEICH</span><span class="sxs-lookup"><span data-stu-id="f4a5b-565">LETZTER\_AUSGLEICH</span></span>       | <span data-ttu-id="f4a5b-566">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-566">Datum</span></span>     | <span data-ttu-id="f4a5b-567">Letzter Ausgleich</span><span class="sxs-lookup"><span data-stu-id="f4a5b-567">Letzter Ausgleich</span></span>                     | <span data-ttu-id="f4a5b-568">$CustTrans/LastSettleDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-568">$CustTrans/LastSettleDate</span></span>                                 |
+| <span data-ttu-id="f4a5b-569">12</span><span class="sxs-lookup"><span data-stu-id="f4a5b-569">12</span></span>  | <span data-ttu-id="f4a5b-570">BUCHUNGSART</span><span class="sxs-lookup"><span data-stu-id="f4a5b-570">BUCHUNGSART</span></span>              | <span data-ttu-id="f4a5b-571">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-571">Zeichen</span></span>   | <span data-ttu-id="f4a5b-572">Buchungsart</span><span class="sxs-lookup"><span data-stu-id="f4a5b-572">Buchungsart</span></span>                           | <span data-ttu-id="f4a5b-573">$CustTrans/TransType</span><span class="sxs-lookup"><span data-stu-id="f4a5b-573">$CustTrans/TransType</span></span>                                      |
+
+### <a name="accounts-payable"></a><span data-ttu-id="f4a5b-574">Kreditorenkonten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-574">Accounts payable</span></span>
+
+<span data-ttu-id="f4a5b-575">In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefinitionen angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f4a5b-575">The following tables show the Accounts payable data structure definitions.</span></span>
+
+#### <a name="lieferanten"></a><span data-ttu-id="f4a5b-576">Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-576">Lieferanten</span></span>
+
+|     | <span data-ttu-id="f4a5b-577">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-577">Feldname</span></span>                  | <span data-ttu-id="f4a5b-578">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-578">Feldtyp</span></span> | <span data-ttu-id="f4a5b-579">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-579">Beschreibung</span></span>                             | <span data-ttu-id="f4a5b-580">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-580">Electronic Reporting Data Source Path</span></span> |
+|-----|---------------------------|---------|------------------------------------------|------------------------------------------------------------------------------------|
+| <span data-ttu-id="f4a5b-581">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-581">1</span></span>   | <span data-ttu-id="f4a5b-582">LIEFERANTENKONTONUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-582">LIEFERANTENKONTONUMMER</span></span>    | <span data-ttu-id="f4a5b-583">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-583">Zeichen</span></span> | <span data-ttu-id="f4a5b-584">Nummer des Lieferantenkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-584">Nummer des Lieferantenkontos</span></span>             | <span data-ttu-id="f4a5b-585">VendTable/AccountNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-585">VendTable/AccountNum</span></span>                                     |
+| <span data-ttu-id="f4a5b-586">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-586">2</span></span>   | <span data-ttu-id="f4a5b-587">LIEFERANTENUSTIDNR</span><span class="sxs-lookup"><span data-stu-id="f4a5b-587">LIEFERANTENUSTIDNR</span></span>        | <span data-ttu-id="f4a5b-588">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-588">Zeichen</span></span> | <span data-ttu-id="f4a5b-589">USt-IdNr des Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-589">USt-IdNr des Lieferanten</span></span>                 | <span data-ttu-id="f4a5b-590">VendTableVendTable/getVatNumPrimaryRegistrationNumber()</span><span class="sxs-lookup"><span data-stu-id="f4a5b-590">VendTableVendTable/getVatNumPrimaryRegistrationNumber()</span></span>                                         |
+| <span data-ttu-id="f4a5b-591">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-591">3</span></span>   | <span data-ttu-id="f4a5b-592">LIEFERANTENSTRASSE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-592">LIEFERANTENSTRASSE</span></span>        | <span data-ttu-id="f4a5b-593">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-593">Zeichen</span></span> | <span data-ttu-id="f4a5b-594">Straße des Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-594">Straße des Lieferanten</span></span>                   | <span data-ttu-id="f4a5b-595">VendTable/$Party/$LogisticsPostalAddress/Street</span><span class="sxs-lookup"><span data-stu-id="f4a5b-595">VendTable/$Party/$LogisticsPostalAddress/Street</span></span>                                         |
+| <span data-ttu-id="f4a5b-596">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-596">4</span></span>   | <span data-ttu-id="f4a5b-597">LIEFERANTENPLZ</span><span class="sxs-lookup"><span data-stu-id="f4a5b-597">LIEFERANTENPLZ</span></span>            | <span data-ttu-id="f4a5b-598">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-598">Zeichen</span></span> | <span data-ttu-id="f4a5b-599">Postleitzahl des Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-599">Postleitzahl des Lieferanten</span></span>             | <span data-ttu-id="f4a5b-600">VendTable/$Party/$LogisticsPostalAddress/ZipCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-600">VendTable/$Party/$LogisticsPostalAddress/ZipCode</span></span>                                        |
+| <span data-ttu-id="f4a5b-601">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-601">5</span></span>   | <span data-ttu-id="f4a5b-602">LIEFERANTENORT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-602">LIEFERANTENORT</span></span>            | <span data-ttu-id="f4a5b-603">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-603">Zeichen</span></span> | <span data-ttu-id="f4a5b-604">Ort des Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-604">Ort des Lieferanten</span></span>                      | <span data-ttu-id="f4a5b-605">VendTable/$Party/$LogisticsPostalAddress/City</span><span class="sxs-lookup"><span data-stu-id="f4a5b-605">VendTable/$Party/$LogisticsPostalAddress/City</span></span>                                           |
+| <span data-ttu-id="f4a5b-606">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-606">6</span></span>   | <span data-ttu-id="f4a5b-607">LIEFERANTENSTAAT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-607">LIEFERANTENSTAAT</span></span>          | <span data-ttu-id="f4a5b-608">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-608">Zeichen</span></span> | <span data-ttu-id="f4a5b-609">Staat des Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-609">Staat des Lieferanten</span></span>                    | <span data-ttu-id="f4a5b-610">VendTable/$Party/$LogisticsPostalAddress/CountryRegionId</span><span class="sxs-lookup"><span data-stu-id="f4a5b-610">VendTable/$Party/$LogisticsPostalAddress/CountryRegionId</span></span>                                |
+| <span data-ttu-id="f4a5b-611">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-611">7</span></span>   | <span data-ttu-id="f4a5b-612">LIEFERANTENNAME</span><span class="sxs-lookup"><span data-stu-id="f4a5b-612">LIEFERANTENNAME</span></span>           | <span data-ttu-id="f4a5b-613">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-613">Zeichen</span></span> | <span data-ttu-id="f4a5b-614">Name des Lieferanten</span><span class="sxs-lookup"><span data-stu-id="f4a5b-614">Name des Lieferanten</span></span>                     | <span data-ttu-id="f4a5b-615">VendTable/$Party/Name</span><span class="sxs-lookup"><span data-stu-id="f4a5b-615">VendTable/$Party/Name</span></span>                                           |
+| <span data-ttu-id="f4a5b-616">8</span><span class="sxs-lookup"><span data-stu-id="f4a5b-616">8</span></span>   | <span data-ttu-id="f4a5b-617">LIEFERANTENGRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-617">LIEFERANTENGRUPPE</span></span>         | <span data-ttu-id="f4a5b-618">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-618">Zeichen</span></span> | <span data-ttu-id="f4a5b-619">Gruppe, der der Lieferant zugeordnet ist</span><span class="sxs-lookup"><span data-stu-id="f4a5b-619">Gruppe, der der Lieferant zugeordnet ist</span></span> | <span data-ttu-id="f4a5b-620">VendTable/VendGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-620">VendTable/VendGroup</span></span>                                      |
+| <span data-ttu-id="f4a5b-621">9</span><span class="sxs-lookup"><span data-stu-id="f4a5b-621">9</span></span>   | <span data-ttu-id="f4a5b-622">LIEFERANTENRECHNUNGSKONTO</span><span class="sxs-lookup"><span data-stu-id="f4a5b-622">LIEFERANTENRECHNUNGSKONTO</span></span> | <span data-ttu-id="f4a5b-623">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-623">Zeichen</span></span> | <span data-ttu-id="f4a5b-624">Lieferantenkonto für Rechnungsstellung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-624">Lieferantenkonto für Rechnungsstellung</span></span>   | <span data-ttu-id="f4a5b-625">VendTable/InvoiceAccount</span><span class="sxs-lookup"><span data-stu-id="f4a5b-625">VendTable/InvoiceAccount</span></span>                                 |
+| <span data-ttu-id="f4a5b-626">10</span><span class="sxs-lookup"><span data-stu-id="f4a5b-626">10</span></span>  | <span data-ttu-id="f4a5b-627">MWST\_GRUPPE</span><span class="sxs-lookup"><span data-stu-id="f4a5b-627">MWST\_GRUPPE</span></span>              | <span data-ttu-id="f4a5b-628">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-628">Zeichen</span></span> | <span data-ttu-id="f4a5b-629">MWSt Gruppe - Inland / EU / Drittland</span><span class="sxs-lookup"><span data-stu-id="f4a5b-629">MWSt Gruppe - Inland / EU / Drittland</span></span>    | <span data-ttu-id="f4a5b-630">VendTable/TaxGroup</span><span class="sxs-lookup"><span data-stu-id="f4a5b-630">VendTable/TaxGroup</span></span>                                       |
+| <span data-ttu-id="f4a5b-631">11</span><span class="sxs-lookup"><span data-stu-id="f4a5b-631">11</span></span>  | <span data-ttu-id="f4a5b-632">WAHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-632">WAHRUNG</span></span>                   | <span data-ttu-id="f4a5b-633">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-633">Zeichen</span></span> | <span data-ttu-id="f4a5b-634">Währung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-634">Währung</span></span>                                  | <span data-ttu-id="f4a5b-635">VendTable/Currency</span><span class="sxs-lookup"><span data-stu-id="f4a5b-635">VendTable/Currency</span></span>                                       |
+
+#### <a name="lieferantenbuchungen"></a><span data-ttu-id="f4a5b-636">Lieferantenbuchungen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-636">Lieferantenbuchungen</span></span>
+
+|     | <span data-ttu-id="f4a5b-637">Feldname</span><span class="sxs-lookup"><span data-stu-id="f4a5b-637">Feldname</span></span>                 | <span data-ttu-id="f4a5b-638">Feldtyp</span><span class="sxs-lookup"><span data-stu-id="f4a5b-638">Feldtyp</span></span>   | <span data-ttu-id="f4a5b-639">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-639">Beschreibung</span></span>                          | <span data-ttu-id="f4a5b-640">Elektronischer Berichterstellungs-Datenquellen-Pfad</span><span class="sxs-lookup"><span data-stu-id="f4a5b-640">Electronic Reporting Data Source Path</span></span> |
+|-----|--------------------------|-----------|---------------------------------------|-------------------------------------------------------------------------------------|
+| <span data-ttu-id="f4a5b-641">1</span><span class="sxs-lookup"><span data-stu-id="f4a5b-641">1</span></span>   | <span data-ttu-id="f4a5b-642">LIEFERANTENKONTONUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-642">LIEFERANTENKONTONUMMER</span></span>   | <span data-ttu-id="f4a5b-643">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-643">Zeichen</span></span>   | <span data-ttu-id="f4a5b-644">Nummer des Lieferantenkontos</span><span class="sxs-lookup"><span data-stu-id="f4a5b-644">Nummer des Lieferantenkontos</span></span>          | <span data-ttu-id="f4a5b-645">$VendTrans/AccountNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-645">$VendTrans/AccountNum</span></span>                                     |
+| <span data-ttu-id="f4a5b-646">2</span><span class="sxs-lookup"><span data-stu-id="f4a5b-646">2</span></span>   | <span data-ttu-id="f4a5b-647">BUCHUNGSNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-647">BUCHUNGSNUMMER</span></span>           | <span data-ttu-id="f4a5b-648">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-648">Zeichen</span></span>   | <span data-ttu-id="f4a5b-649">Interne Belegnummer der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-649">Interne Belegnummer der Buchung</span></span>       | <span data-ttu-id="f4a5b-650">$VendTrans/Voucher</span><span class="sxs-lookup"><span data-stu-id="f4a5b-650">$VendTrans/Voucher</span></span>                                        |
+| <span data-ttu-id="f4a5b-651">3</span><span class="sxs-lookup"><span data-stu-id="f4a5b-651">3</span></span>   | <span data-ttu-id="f4a5b-652">BUCHUNGSDATUM</span><span class="sxs-lookup"><span data-stu-id="f4a5b-652">BUCHUNGSDATUM</span></span>            | <span data-ttu-id="f4a5b-653">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-653">Datum</span></span>     | <span data-ttu-id="f4a5b-654">Wertstellung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-654">Wertstellung der Buchung</span></span>              | <span data-ttu-id="f4a5b-655">$VendTrans/TransDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-655">$VendTrans/TransDate</span></span>                                      |
+| <span data-ttu-id="f4a5b-656">4</span><span class="sxs-lookup"><span data-stu-id="f4a5b-656">4</span></span>   | <span data-ttu-id="f4a5b-657">BELEGNUMMER</span><span class="sxs-lookup"><span data-stu-id="f4a5b-657">BELEGNUMMER</span></span>              | <span data-ttu-id="f4a5b-658">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-658">Zeichen</span></span>   | <span data-ttu-id="f4a5b-659">Externe Belegnummer der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-659">Externe Belegnummer der Buchung</span></span>       | <span data-ttu-id="f4a5b-660">$VendTrans/DocumentNum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-660">$VendTrans/DocumentNum</span></span>                                    |
+| <span data-ttu-id="f4a5b-661">5</span><span class="sxs-lookup"><span data-stu-id="f4a5b-661">5</span></span>   | <span data-ttu-id="f4a5b-662">BELEGDATUM</span><span class="sxs-lookup"><span data-stu-id="f4a5b-662">BELEGDATUM</span></span>               | <span data-ttu-id="f4a5b-663">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-663">Datum</span></span>     | <span data-ttu-id="f4a5b-664">Datum des externen Belegs</span><span class="sxs-lookup"><span data-stu-id="f4a5b-664">Datum des externen Belegs</span></span>             | <span data-ttu-id="f4a5b-665">$VendTrans/DocumentDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-665">$VendTrans/DocumentDate</span></span>                                   |
+| <span data-ttu-id="f4a5b-666">6</span><span class="sxs-lookup"><span data-stu-id="f4a5b-666">6</span></span>   | <span data-ttu-id="f4a5b-667">BUCHUNGSTEXT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-667">BUCHUNGSTEXT</span></span>             | <span data-ttu-id="f4a5b-668">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-668">Zeichen</span></span>   | <span data-ttu-id="f4a5b-669">Buchungstext der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-669">Buchungstext der Buchung</span></span>              | <span data-ttu-id="f4a5b-670">$VendTrans/Txt</span><span class="sxs-lookup"><span data-stu-id="f4a5b-670">$VendTrans/Txt</span></span>                                            |
+| <span data-ttu-id="f4a5b-671">7</span><span class="sxs-lookup"><span data-stu-id="f4a5b-671">7</span></span>   | <span data-ttu-id="f4a5b-672">BUCHUNGSBETRAG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-672">BUCHUNGSBETRAG</span></span>           | <span data-ttu-id="f4a5b-673">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-673">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-674">Betrag der Buchung in Buchungswährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-674">Betrag der Buchung in Buchungswährung</span></span> | <span data-ttu-id="f4a5b-675">$VendTrans/AmountCur</span><span class="sxs-lookup"><span data-stu-id="f4a5b-675">$VendTrans/AmountCur</span></span>                                      |
+| <span data-ttu-id="f4a5b-676">8</span><span class="sxs-lookup"><span data-stu-id="f4a5b-676">8</span></span>   | <span data-ttu-id="f4a5b-677">BUCHUNGSWAHRUNG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-677">BUCHUNGSWAHRUNG</span></span>          | <span data-ttu-id="f4a5b-678">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-678">Zeichen</span></span>   | <span data-ttu-id="f4a5b-679">Währung der Buchung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-679">Währung der Buchung</span></span>                   | <span data-ttu-id="f4a5b-680">$VendTrans/CurrencyCode</span><span class="sxs-lookup"><span data-stu-id="f4a5b-680">$VendTrans/CurrencyCode</span></span>                                   |
+| <span data-ttu-id="f4a5b-681">9</span><span class="sxs-lookup"><span data-stu-id="f4a5b-681">9</span></span>   | <span data-ttu-id="f4a5b-682">BUCHUNGSWERT</span><span class="sxs-lookup"><span data-stu-id="f4a5b-682">BUCHUNGSWERT</span></span>             | <span data-ttu-id="f4a5b-683">Num(2Dez)</span><span class="sxs-lookup"><span data-stu-id="f4a5b-683">Num(2Dez)</span></span> | <span data-ttu-id="f4a5b-684">Wert der Buchung in Firmenwährung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-684">Wert der Buchung in Firmenwährung</span></span>     | <span data-ttu-id="f4a5b-685">$VendTrans/AmountMST</span><span class="sxs-lookup"><span data-stu-id="f4a5b-685">$VendTrans/AmountMST</span></span>                                      |
+| <span data-ttu-id="f4a5b-686">10</span><span class="sxs-lookup"><span data-stu-id="f4a5b-686">10</span></span>  | <span data-ttu-id="f4a5b-687">LETZTER\_AUSGLEICHSBELEG</span><span class="sxs-lookup"><span data-stu-id="f4a5b-687">LETZTER\_AUSGLEICHSBELEG</span></span> | <span data-ttu-id="f4a5b-688">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-688">Zeichen</span></span>   | <span data-ttu-id="f4a5b-689">Letzter Ausgleichsbeleg</span><span class="sxs-lookup"><span data-stu-id="f4a5b-689">Letzter Ausgleichsbeleg</span></span>               | <span data-ttu-id="f4a5b-690">$VendTrans/LastSettleVoucher</span><span class="sxs-lookup"><span data-stu-id="f4a5b-690">$VendTrans/LastSettleVoucher</span></span>                              |
+| <span data-ttu-id="f4a5b-691">11</span><span class="sxs-lookup"><span data-stu-id="f4a5b-691">11</span></span>  | <span data-ttu-id="f4a5b-692">LETZTER\_AUSGLEICH</span><span class="sxs-lookup"><span data-stu-id="f4a5b-692">LETZTER\_AUSGLEICH</span></span>       | <span data-ttu-id="f4a5b-693">Datum</span><span class="sxs-lookup"><span data-stu-id="f4a5b-693">Datum</span></span>     | <span data-ttu-id="f4a5b-694">Letzter Ausgleich</span><span class="sxs-lookup"><span data-stu-id="f4a5b-694">Letzter Ausgleich</span></span>                     | <span data-ttu-id="f4a5b-695">$VendTrans/LastSettleDate</span><span class="sxs-lookup"><span data-stu-id="f4a5b-695">$VendTrans/LastSettleDate</span></span>                                 |
+| <span data-ttu-id="f4a5b-696">12</span><span class="sxs-lookup"><span data-stu-id="f4a5b-696">12</span></span>  | <span data-ttu-id="f4a5b-697">BUCHUNGSART</span><span class="sxs-lookup"><span data-stu-id="f4a5b-697">BUCHUNGSART</span></span>              | <span data-ttu-id="f4a5b-698">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-698">Zeichen</span></span>   | <span data-ttu-id="f4a5b-699">Buchungsart</span><span class="sxs-lookup"><span data-stu-id="f4a5b-699">Buchungsart</span></span>                           | <span data-ttu-id="f4a5b-700">$VendTrans/TransType</span><span class="sxs-lookup"><span data-stu-id="f4a5b-700">$VendTrans/TransType</span></span>                                      |
+| <span data-ttu-id="f4a5b-701">13</span><span class="sxs-lookup"><span data-stu-id="f4a5b-701">13</span></span>  | <span data-ttu-id="f4a5b-702">STATUS</span><span class="sxs-lookup"><span data-stu-id="f4a5b-702">STATUS</span></span>                   | <span data-ttu-id="f4a5b-703">Zeichen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-703">Zeichen</span></span>   | <span data-ttu-id="f4a5b-704">Status</span><span class="sxs-lookup"><span data-stu-id="f4a5b-704">Status</span></span>                                | <span data-ttu-id="f4a5b-705">$VendTrans/Approved</span><span class="sxs-lookup"><span data-stu-id="f4a5b-705">$VendTrans/Approved</span></span>                                       |
+
+
+## <a name="additional-information"></a><span data-ttu-id="f4a5b-706">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-706">Additional information</span></span>
+
+- [<span data-ttu-id="f4a5b-707">Überblick über die elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="f4a5b-707">Electronic Reporting overview</span></span>](../../dev-itpro/analytics/general-electronic-reporting.md)
+- [<span data-ttu-id="f4a5b-708">Protokolldateikonfiguration importieren</span><span class="sxs-lookup"><span data-stu-id="f4a5b-708">Import the audit file configuration</span></span>](./tasks/import-german-audit-file-configuration.md)
+- [<span data-ttu-id="f4a5b-709">Protokolldateikonfiguration anpassen</span><span class="sxs-lookup"><span data-stu-id="f4a5b-709">Customize the audit file configuration</span></span>](./tasks/customize-german-audit-file-configuration.md)
+- [<span data-ttu-id="f4a5b-710">Protokolldatei generieren</span><span class="sxs-lookup"><span data-stu-id="f4a5b-710">Generate the audit file</span></span>](./tasks/german-audit-file.md)
