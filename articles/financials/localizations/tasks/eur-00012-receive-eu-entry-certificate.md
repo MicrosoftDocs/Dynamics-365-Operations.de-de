@@ -1,57 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="eur-00012-receive-eu-entry-certificate.md" target-language="de-DE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>eur-00012-receive-eu-entry-certificate.b0206c.cbcf6d8dc71b833b3d90e72e7ef6c9d438241640.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>cbcf6d8dc71b833b3d90e72e7ef6c9d438241640</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\eur-00012-receive-eu-entry-certificate.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>EUR-00012 Receive an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Erhalt einer EU-Gelangensbestätigung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>EUR-00012 Receive an EU entry certificate</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">EUR-00012 Erhalt einer EU-Gelangensbestätigung</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through registering an EU entry certificate issued by a third-party and received from your customer.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>The demo data company used to create this procedure is DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Go to Accounts receivable &gt; Inquiries and reports &gt; Entry certificate journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Debitoren" &gt; "Abfragen und Berichte" &gt; "Gelangensbestätigungserfassung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Neu".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>In the Entry certificate field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Zertifizierungstyp" einen Wert ein.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In the Customer account field, click the drop-down button to open the lookup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie im Feld "Debitorenkonto" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>In the list, click the link in the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Attach additional information to the journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Weitere Informationen zur Identifikation der Charge.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>For example, attach a scanned image of the EU Entry certificate to the journal.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">So fügen Sie ein gescanntes Bild der EU-Eintragsbescheinigung der Erfassung pflegen.</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: EUR-00012 Erhalt einer EU-Gelangensbestätigung
+description: Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: CustEntryCertificateJour_W
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: cbcf6d8dc71b833b3d90e72e7ef6c9d438241640
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1566705"
+---
+# <a name="eur-00012-receive-an-eu-entry-certificate"></a>EUR-00012 Erhalt einer EU-Gelangensbestätigung
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+Diese Prozedur läuft Sie durch das Erfassen einer EU-Eintragsbescheinigung durch, die von einem Fremdhersteller ausgestellt und von Ihrem Debitor empfangen wurde.
+
+
+
+Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.
+
+1. Wechseln Sie zu "Debitoren" > "Abfragen und Berichte" > "Gelangensbestätigungserfassung".
+2. Klicken Sie auf "Neu".
+3. Geben Sie im Feld "Zertifizierungstyp" einen Wert ein.
+4. Klicken Sie im Feld "Debitorenkonto" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+6. Klicken Sie auf "Speichern".
+    * Weitere Informationen zur Identifikation der Charge.  
+    * So fügen Sie ein gescanntes Bild der EU-Eintragsbescheinigung der Erfassung pflegen.  
+
