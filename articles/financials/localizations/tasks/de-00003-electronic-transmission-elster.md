@@ -1,105 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="de-00003-electronic-transmission-elster.md" target-language="de-DE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>de-00003-electronic-transmission-elster.718e29.927b283f160d8bd1a6b89c40da05bb7a542eb232.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>927b283f160d8bd1a6b89c40da05bb7a542eb232</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\de-00003-electronic-transmission-elster.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>DE-00003 Electronic transmission of VAT declaration (ELSTER)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure walks you through setting electronic tax declaration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>DE-00003 Electronic transmission of VAT declaration (ELSTER)</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure walks you through setting electronic tax declaration.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This procedure was created using the demo data company DEMF.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>This functionality is available for legal entities whose primary address is in Germany.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Funktion ist für juristische Personen verfügbar, deren primäre Adresse sich in Deutschland befindet.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>You should have a valid user certificate (like test-soft-pse.pfx) and a Tax authority certificate (Coala2019.pem.cer) before you can complete this procedure.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbehördenbescheinigung (Coala2019.pem.cer) verwenden bevor Sie dieses Verfahren ausführen können.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Go to Tax &gt; Setup &gt; Sales tax &gt; Electronic tax declaration setup.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu "Steuer" &gt; "Einstellungen" &gt; "Mehrwertsteuer" &gt; "Einrichtung der elektronischen Steuererklärung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>Click Edit.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Bearbeiten".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Select Yes in the Authentication field.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wählen Sie "Ja" im Feld "Authentifizierung".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>In the Format mapping field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>As a prerequisite you should upload from LCS Elster configuration (model and format) for Generic electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wie eine Komponente, die Sie von Konfiguration Kreditbriefen Elster (Modell und Stil) für generische elektronische Berichterstellung hochladen sollen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Click Electronic tax certificates.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Elektronische Steuerzertifikate anklicken</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Click New.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Neu".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>In the User ID field, enter or select a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld "Gruppenkennung" einen Wert ein oder wählen Sie einen Wert aus.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>You should first install certificates through Microsoft Management Console and assign friendly names that will be used in these steps.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie sollten Bescheinigungen nach Microsoft Management Console zunächst einrichten und Anzeigenamen zuweisen, die in diesen Schritten verwendet werden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>In MMC for private certificate go to “Certificates / Personal /Certificates”, right mouse click.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In MMC für private Bescheinigung "in den Bescheinigungen/zu persönliche /Certificates", fahren rechten Mausklick.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>In the context menu click All Tasks &gt; Import....  Grant read permissions to the certificate for the user who is doing the submission.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Im Kontextmenü klicken Sie auf Alle Aufgaben &gt; auf Importieren…. Gewähren Sie Leseberechtigungen der Bescheinigung für den Benutzer, der die Übermittlung ausführt.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="119">
-          <source>In MMC Right click on the certificate and use All Tasks/Manage Private Keys – select the user and add read permission.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">In MMC klicken Sie auf der Bescheinigung mit der rechten Maustaste, und verwenden Sie alle Aufgaben/Verwalten von private Schlüssel - Wählen Sie den Benutzer aus und fügen Sie Leseberechtigung hinzu.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="120">
-          <source>For Tax authority certificate in MMC right-click “Trusted Root Certificate Authorities”  Import "Coala2019.pem.cer".</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Für Steuerbehördenbescheinigung klicken Sie in MMC mit der rechten Maustaste auf "Vertrauenswürdige Stammzertifizierungsstelle" Importieren Sie "Coala2019.pem.cer".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="121">
-          <source>In the Certificates reference field, type a value.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Geben Sie im Feld Wert einen Referenztyp ein.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="122">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="123">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="124">
-          <source>Click HTTP servers.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf HTTP-Server.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="125">
-          <source>HTTP url addresses are provided by the authority and can be changed by the authority.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">HTTP-URL-Adressen werden aus der Behörde bereitgestellt und können von der Behörde geändert werden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="126">
-          <source>Microsoft provides default addresses that are used by the system randomly.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Microsoft stellt Standardadressen, die vom System zufällig verwendet werden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="127">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="128">
-          <source>Close the page.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Schließen Sie die Seite.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="129">
-          <source>Click Save.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Speichern".</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
+description: Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.
+author: EvgenyPopovMBS
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Germany
+ms.author: epopov
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 927b283f160d8bd1a6b89c40da05bb7a542eb232
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568813"
+---
+# <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a><span data-ttu-id="48584-103">DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)</span><span class="sxs-lookup"><span data-stu-id="48584-103">DE-00003 Electronic transmission of VAT declaration (ELSTER)</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="48584-104">Diese Prozedur läuft Sie nach elektronischer Steuererklärung durch.</span><span class="sxs-lookup"><span data-stu-id="48584-104">This procedure walks you through setting electronic tax declaration.</span></span>
+
+<span data-ttu-id="48584-105">Diese Prozedur wurde mit dem Demodatenunternehmen DEMF erstellt.</span><span class="sxs-lookup"><span data-stu-id="48584-105">This procedure was created using the demo data company DEMF.</span></span> 
+
+<span data-ttu-id="48584-106">Diese Funktion ist für juristische Personen verfügbar, deren primäre Adresse sich in Deutschland befindet.</span><span class="sxs-lookup"><span data-stu-id="48584-106">This functionality is available for legal entities whose primary address is in Germany.</span></span>
+
+<span data-ttu-id="48584-107">Sie sollten ein gültiges Zertifikat (wie test-soft-pse.pfx) und eine Steuerbehördenbescheinigung (Coala2019.pem.cer) verwenden bevor Sie dieses Verfahren ausführen können.</span><span class="sxs-lookup"><span data-stu-id="48584-107">You should have a valid user certificate (like test-soft-pse.pfx) and a Tax authority certificate (Coala2019.pem.cer) before you can complete this procedure.</span></span>
+
+
+
+1. <span data-ttu-id="48584-108">Wechseln Sie zu "Steuer" > "Einstellungen" > "Mehrwertsteuer" > "Einrichtung der elektronischen Steuererklärung".</span><span class="sxs-lookup"><span data-stu-id="48584-108">Go to Tax > Setup > Sales tax > Electronic tax declaration setup.</span></span>
+2. <span data-ttu-id="48584-109">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="48584-109">Click Edit.</span></span>
+3. <span data-ttu-id="48584-110">Wählen Sie "Ja" im Feld "Authentifizierung".</span><span class="sxs-lookup"><span data-stu-id="48584-110">Select Yes in the Authentication field.</span></span>
+4. <span data-ttu-id="48584-111">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="48584-111">In the Format mapping field, enter or select a value.</span></span>
+    * <span data-ttu-id="48584-112">Wie eine Komponente, die Sie von Konfiguration Kreditbriefen Elster (Modell und Stil) für generische elektronische Berichterstellung hochladen sollen.</span><span class="sxs-lookup"><span data-stu-id="48584-112">As a prerequisite you should upload from LCS Elster configuration (model and format) for Generic electronic reporting.</span></span>  
+5. <span data-ttu-id="48584-113">Elektronische Steuerzertifikate anklicken</span><span class="sxs-lookup"><span data-stu-id="48584-113">Click Electronic tax certificates.</span></span>
+6. <span data-ttu-id="48584-114">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="48584-114">Click New.</span></span>
+7. <span data-ttu-id="48584-115">Geben Sie im Feld "Gruppenkennung" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="48584-115">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="48584-116">Sie sollten Bescheinigungen nach Microsoft Management Console zunächst einrichten und Anzeigenamen zuweisen, die in diesen Schritten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="48584-116">You should first install certificates through Microsoft Management Console and assign friendly names that will be used in these steps.</span></span>  <span data-ttu-id="48584-117">In MMC für private Bescheinigung "in den Bescheinigungen/zu persönliche /Certificates", fahren rechten Mausklick.</span><span class="sxs-lookup"><span data-stu-id="48584-117">In MMC for private certificate go to “Certificates / Personal /Certificates”, right mouse click.</span></span>  <span data-ttu-id="48584-118">Im Kontextmenü klicken Sie auf Alle Aufgaben > auf Importieren…. Gewähren Sie Leseberechtigungen der Bescheinigung für den Benutzer, der die Übermittlung ausführt.</span><span class="sxs-lookup"><span data-stu-id="48584-118">In the context menu click All Tasks > Import....  Grant read permissions to the certificate for the user who is doing the submission.</span></span>  <span data-ttu-id="48584-119">In MMC klicken Sie auf der Bescheinigung mit der rechten Maustaste, und verwenden Sie alle Aufgaben/Verwalten von private Schlüssel - Wählen Sie den Benutzer aus und fügen Sie Leseberechtigung hinzu.</span><span class="sxs-lookup"><span data-stu-id="48584-119">In MMC Right click on the certificate and use All Tasks/Manage Private Keys – select the user and add read permission.</span></span>  <span data-ttu-id="48584-120">Für Steuerbehördenbescheinigung klicken Sie in MMC mit der rechten Maustaste auf "Vertrauenswürdige Stammzertifizierungsstelle" Importieren Sie "Coala2019.pem.cer".</span><span class="sxs-lookup"><span data-stu-id="48584-120">For Tax authority certificate in MMC right-click “Trusted Root Certificate Authorities”  Import "Coala2019.pem.cer".</span></span>  
+8. <span data-ttu-id="48584-121">Geben Sie im Feld Wert einen Referenztyp ein.</span><span class="sxs-lookup"><span data-stu-id="48584-121">In the Certificates reference field, type a value.</span></span>
+9. <span data-ttu-id="48584-122">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="48584-122">Click Save.</span></span>
+10. <span data-ttu-id="48584-123">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="48584-123">Close the page.</span></span>
+11. <span data-ttu-id="48584-124">Klicken Sie auf HTTP-Server.</span><span class="sxs-lookup"><span data-stu-id="48584-124">Click HTTP servers.</span></span>
+    * <span data-ttu-id="48584-125">HTTP-URL-Adressen werden aus der Behörde bereitgestellt und können von der Behörde geändert werden.</span><span class="sxs-lookup"><span data-stu-id="48584-125">HTTP url addresses are provided by the authority and can be changed by the authority.</span></span> <span data-ttu-id="48584-126">Microsoft stellt Standardadressen, die vom System zufällig verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="48584-126">Microsoft provides default addresses that are used by the system randomly.</span></span>  
+12. <span data-ttu-id="48584-127">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="48584-127">Click Save.</span></span>
+13. <span data-ttu-id="48584-128">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="48584-128">Close the page.</span></span>
+14. <span data-ttu-id="48584-129">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="48584-129">Click Save.</span></span>
+
