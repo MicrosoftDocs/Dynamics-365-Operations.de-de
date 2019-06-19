@@ -1,72 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xliff xmlns:logoport="urn:logoport:xliffeditor:xliff-extras:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xliffext="urn:microsoft:content:schema:xliffextensions" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="import-german-audit-file-configuration.md" target-language="de-DE">
-    <header>
-      <tool tool-company="Microsoft" tool-version="1.0-7889195" tool-name="mdxliff" tool-id="mdxliff"/>
-      <xliffext:skl_file_name>import-german-audit-file-configuration.2bacbd.b68f443df87bcd39b018c63c796bb4ccdd7afd82.skl</xliffext:skl_file_name>
-      <xliffext:version>1.2</xliffext:version>
-      <xliffext:ms.openlocfilehash>b68f443df87bcd39b018c63c796bb4ccdd7afd82</xliffext:ms.openlocfilehash>
-      <xliffext:ms.sourcegitcommit>9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b</xliffext:ms.sourcegitcommit>
-      <xliffext:ms.lasthandoff>05/15/2019</xliffext:ms.lasthandoff>
-      <xliffext:ms.openlocfilepath>articles\financials\localizations\tasks\import-german-audit-file-configuration.md</xliffext:ms.openlocfilepath>
-    </header>
-    <body>
-      <group extype="content" id="content">
-        <trans-unit xml:space="preserve" translate="yes" id="101" restype="x-metadata">
-          <source>Import German audit file configuration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deutsche Protokolldateikonfiguration importieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="102" restype="x-metadata">
-          <source>This procedure shows how to import the German audit file electronic reporting data model and format configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="103">
-          <source>Import German audit file configuration</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Deutsche Protokolldateikonfiguration importieren</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="104">
-          <source>This procedure shows how to import the German audit file electronic reporting data model and format configurations.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="105">
-          <source>This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deutschland" als Land/Region für die primäre Adresse für die juristischen Person.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="106">
-          <source>Go to Organization administration &gt; Workspaces &gt; Electronic reporting.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Wechseln Sie zu Organisationsverwaltung &gt; Arbeitsbereiche &gt; Elektronische Berichterstellung.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="107">
-          <source>In the list, mark the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markieren Sie in der Liste die ausgewählte Zeile.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="108">
-          <source>Click Set active.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Als aktiv festlegen"</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="109">
-          <source>In the list, mark the selected row.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Markieren Sie in der Liste die ausgewählte Zeile.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="110">
-          <source>Click Repositories.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Repositorys.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="111">
-          <source>Click Open.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Öffnen".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="112">
-          <source>Click Show filters.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Filter anzeigen".</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="113">
-          <source>Add filter</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filter hinzufügen</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="114">
-          <source>Filter to find the configuration in the list.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Filtern Sie die Liste um die Konfiguration zu suchen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="115">
-          <source>You can also search for 'German audit file output' to narrow down the list of results.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Sie können auch nach "Deutsche Ausgabeprotokolldatei" suchen, um die Ergebnisliste einzugrenzen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="116">
-          <source>Click Apply.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Übernehmen.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="117">
-          <source>Click Import.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf Import.</target></trans-unit>
-        <trans-unit xml:space="preserve" translate="yes" id="118">
-          <source>Click Yes.</source>
-        <target logoport:matchpercent="101" state="translated" state-qualifier="leveraged-tm">Klicken Sie auf "Ja".</target></trans-unit>
-      </group>
-    </body>
-  </file>
-</xliff>
+---
+title: Deutsche Protokolldateikonfiguration importieren
+description: Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden.
+author: mrolecki
+manager: AnnBe
+ms.date: 08/29/2018
+ms.topic: business-process
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
+audience: Application User
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
+ms.search.region: Germany
+ms.author: mrolecki
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: b68f443df87bcd39b018c63c796bb4ccdd7afd82
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1573385"
+---
+# <a name="import-german-audit-file-configuration"></a><span data-ttu-id="78043-103">Deutsche Protokolldateikonfiguration importieren</span><span class="sxs-lookup"><span data-stu-id="78043-103">Import German audit file configuration</span></span>
+
+[!include [task guide banner](../../includes/task-guide-banner.md)]
+
+<span data-ttu-id="78043-104">Im folgenden Verfahren zeigt, wie das Berichterstellungsdatenmodell "Deutsche Protokolldatei" und Formatkonfigurationen importiert werden.</span><span class="sxs-lookup"><span data-stu-id="78043-104">This procedure shows how to import the German audit file electronic reporting data model and format configurations.</span></span> <span data-ttu-id="78043-105">Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deutschland" als Land/Region für die primäre Adresse für die juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="78043-105">This procedure was created using the demo data company DEMF with Germany as the country/region of legal entity primary address.</span></span>
+
+1. <span data-ttu-id="78043-106">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="78043-106">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="78043-107">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="78043-107">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="78043-108">Klicken Sie auf "Als aktiv festlegen"</span><span class="sxs-lookup"><span data-stu-id="78043-108">Click Set active.</span></span>
+4. <span data-ttu-id="78043-109">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="78043-109">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="78043-110">Klicken Sie auf Repositorys.</span><span class="sxs-lookup"><span data-stu-id="78043-110">Click Repositories.</span></span>
+6. <span data-ttu-id="78043-111">Klicken Sie auf "Öffnen".</span><span class="sxs-lookup"><span data-stu-id="78043-111">Click Open.</span></span>
+7. <span data-ttu-id="78043-112">Klicken Sie auf "Filter anzeigen".</span><span class="sxs-lookup"><span data-stu-id="78043-112">Click Show filters.</span></span>
+8. <span data-ttu-id="78043-113">Filter hinzufügen</span><span class="sxs-lookup"><span data-stu-id="78043-113">Add filter</span></span>
+    * <span data-ttu-id="78043-114">Filtern Sie die Liste um die Konfiguration zu suchen.</span><span class="sxs-lookup"><span data-stu-id="78043-114">Filter to find the configuration in the list.</span></span> <span data-ttu-id="78043-115">Sie können auch nach "Deutsche Ausgabeprotokolldatei" suchen, um die Ergebnisliste einzugrenzen.</span><span class="sxs-lookup"><span data-stu-id="78043-115">You can also search for 'German audit file output' to narrow down the list of results.</span></span>  
+9. <span data-ttu-id="78043-116">Klicken Sie auf Übernehmen.</span><span class="sxs-lookup"><span data-stu-id="78043-116">Click Apply.</span></span>
+10. <span data-ttu-id="78043-117">Klicken Sie auf Import.</span><span class="sxs-lookup"><span data-stu-id="78043-117">Click Import.</span></span>
+11. <span data-ttu-id="78043-118">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="78043-118">Click Yes.</span></span>
+
