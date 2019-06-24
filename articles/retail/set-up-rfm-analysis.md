@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4314c81823940ce3192da23dfdf777e8ebf781f2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c7cb79fa82b579bee01e51cb635597cc5f711a98
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553044"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606825"
 ---
 # <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Einrichten von Aktualitäts-, Häufigkeits- und Finanzanalyse (RFM)
 
@@ -46,9 +46,9 @@ So verfügt beispielsweise Ihre Organisation ein Bewertungssystem mit einer Skal
 
 Wenn Ihre Organisation für die Bewertung eine Aggregatzahl verwendet, werden die einzelnen Bewertungen zusammengezählt. Für das gleiche Beispiel hat der Debitor eine Bewertung von 13 (5 + 3 + 5).
 
-## <a name="to-set-up-rfm-analysis-for-the-customers-in-your-organization"></a>So wird eine Analyse des Modus mit eingeschränkter Funktionalität (RFM) für die Kunden in Ihrer Organisation eingerichtet.
+## <a name="set-up-rfm-analysis-for-the-customers-in-your-organization"></a>Einrichten der Analyse des Modus mit eingeschränkter Funktionalität - RFM - für Kunden in Ihrer Organisation
 
-1. Wechseln Sie zu **Callcenter**\>**Periodisch**\>**RFM-Analyse**.
+1. Wechseln Sie zu **Callcenter** \> **Periodisch** \> **RFM-Analyse**.
 2. Auf der Seite **RFM-Analyse** wählen Sie **Neu** aus. Geben Sie im Feld **RFM-Definition** einen Namen für die RFM-Definition ein. Beispielsweise können Sie die Definition RFM-A nennen.
 3. Geben Sie ein Startdatum und ein Enddatum für diese RFM-Definition ein.
 4. Führen Sie auf dem Inforegister **Allgemein** die folgenden Schritte aus:
@@ -93,7 +93,7 @@ Die RFM-Punktzahl wird in der Gruppe **Auftragshistorie** auf der rechten Seite 
 
 Verwenden Sie diese Prozedur, um die Historie eines RFM-Analysedatendsatzes anzuzeigen oder zu löschen.
 
-1. Wechseln Sie zu **Callcenter**\>**Periodisch**\>**RFM-Analyse**.
+1. Wechseln Sie zu **Callcenter** \> **Periodisch** \> **RFM-Analyse**.
 2. Wählen Sie auf der Seite **RFM-Analyse** den anzuzeigenden Datensatz aus.
 3. Um die Historie des Datensatzes anzuzeigen, wählen Sie das Inforegister **Historie**.
 4. Um die Historie des Datensatzes zu löschen, wählen Sie **Historie löschen** aus.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 040505f567b9db1a5987e4ada38d46f919440c96
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 151b8936a46a1945e98bfe0ed040ca50c93db4b0
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544448"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595439"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
 
@@ -36,7 +36,7 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
 
 ## <a name="select-format-configuration-for-customization"></a>Wählen Sie Formatkonfiguration zur Anpassung aus
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * In diesem Beispiel dient das Beispielunternehmen Litware, Inc. (http://www.litware.com) als ein Konfigurationsanbieter, der Formatkonfigurationen für elektronische Zahlungen für ein bestimmtes Land unterstützt.    Musterunternehmen Proseware, Inc. (http://www.proseware.com) fungiert als Kunde der Formatkonfiguration, die Litware, Inc. bereitstellt. Proseware, Inc. verwendet Formate in bestimmten Regionen dieses Landes.  
+    * In diesem Beispiel dient das Beispielunternehmen Litware, Inc. (https://www.litware.com) als ein Konfigurationsanbieter, der Formatkonfigurationen für elektronische Zahlungen für ein bestimmtes Land unterstützt.    Musterunternehmen Proseware, Inc. (http://www.proseware.com) fungiert als Kunde der Formatkonfiguration, die Litware, Inc. bereitstellt. Proseware, Inc. verwendet Formate in bestimmten Regionen dieses Landes.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
 3. Klicken Sie auf "Filter anzeigen".
 4. Wenden Sie die nachfolgenden Filter an: Geben Sie einen Filterwert für „BACS (Großbritannien fiktive Namen)” im Feld „Name” unter Verwendung des Filteroperators „beginnt mit” ein

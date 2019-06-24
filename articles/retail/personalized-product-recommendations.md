@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6706cbb7630aeb230bc9eb1c187397897c9de68
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c73bc10332329e81986a259969f8fe34b57f4ee6
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559557"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607002"
 ---
 # <a name="personalized-product-recommendations"></a>Personalisierte Produktempfehlungen
 
@@ -44,7 +44,7 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
     - Wenn ein Shopmitarbeiter eine **Produktdetails** Seite besucht, wenn er auf die vorherigen Buchungen über verschiedene Kanälen schaut, schlägt das Empfehlungsmodul zusätzliche Artikel vor, die wahrscheinlich zusammen eingekauft werden.
     - Falls der Shopmitarbeiter einen Kunden der Buchung hinzufügt und dann eine **Produktdetails** Seite besucht, stellt das Empfehlungsmodul personalisierte Empfehlungen mithilfe der Buchungshistorie des Kunden zur Verfügung.
 
-    [![proddetails](./media/proddetails.png)](./media/proddetails.png)
+    [![Empfehlungen zur Produktdetailseite](./media/proddetails.png)](./media/proddetails.png)
 
 2. Auf der **Transaktionen** Seite:
 
@@ -54,13 +54,11 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
     > [!NOTE]
     > Zum Anzeigen von Empfehlungen auf der Seite **Buchung** muss der Einzelhändler das Bildschirmlayout in Dynamics 365 for Retail aktualisieren. Das Steuerelement **Empfehlungen** muss auf der Seite **Buchung** abgelegt werden.
 
-    [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Empfehlungen auf de Seite „Transaktion“](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3. Auf der **Kundendetails** Seite:
+3. Auf der Seite **Kundendetails** schlägt das Empfehlungsmodul Artikel auf Basis der Benutzerkennung und von Artikeln in der Wunschliste des Kunden vor.
 
-    - Das Empfehlungsmodul schlägt Artikel auf Basis der Benutzerkennung und von Artikeln in der Wunschliste vor.
-
-    [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
+    [![Empfehlungen auf der Seite „Kundendetails“](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
 ## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurieren Sie Dynamics 365 for Retail, um POS-Empfehlungen zu aktivieren
 
@@ -83,12 +81,12 @@ Wenn Sie die **Entitätsspeicher** Entität aktualisieren, finden folgenden Akti
 Wenn Sie **Empfehlungen aktivieren** aktivieren und die Konfigurationseinzelvorgänge aktivieren, werden folgenden Aktionen ausgeführt.
 
 - Anmeldeinformationen und ID für das Modell werden der API entnommen und in der operationalen Datenbank von Dynamics 365 for Retail, in der web.config für AOS und auch auf dem Retail-Server gespeichert.
-- Model-Anmeldeinformationen und - kennung werden für CRT bereitgestellt, so dass Anforderungen für Produktempfehlungen aus Cloud POS und MPOS im onlinemodus durchgeführt werden können.
+- Modell-Anmeldeinformationen und -kennung werden für CRT bereitgestellt, so dass Anforderungen von Produktempfehlungen aus Cloud POS und MPOS im Onlinemodus durchgeführt werden können.
 
 ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Beheben Sie Probleme, wo Sie Produktempfehlungen bereits aktiviert haben
 
-- Navigieren Sie zu **Retail-Parameter** \> **Maschinen lernen** \> **Produktempfehlungen deaktivieren** und  **globalen Konfigurationsauftrag \[1110\]** ausführen. Wenn Sie nicht in der Lage sind, die Registerkarte **Lernfähigkeit einer Maschine** zu suchen, wenden Sie sich bitte an den Dynamics Support.
-- Wenn Sie die**Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch.
+- Navigieren Sie zu **Retail-Parameter** \> **Maschinen lernen** \> **Produktempfehlungen deaktivieren** und **globalen Konfigurationsauftrag \[1110\]** ausführen. Wenn Sie nicht in der Lage sind, die Registerkarte **Lernfähigkeit einer Maschine** zu suchen, wenden Sie sich bitte an den Dynamics Support.
+- Wenn Sie die **Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

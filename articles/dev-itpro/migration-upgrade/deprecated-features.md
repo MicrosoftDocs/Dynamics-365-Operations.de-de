@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 04/12/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7afe26b535ca2578d2db17f676c3cae4bafc355f
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1527670"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620644"
 ---
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
@@ -38,8 +38,35 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 > [!NOTE]
 > Ab der Version von Juli 2017 von Dynamics 365 for Finance and Operations mit Plattformupdate 8 wird der Typ der Bereitstellungen bei jeder entfernten oder veralteten Funktion angegeben. Alle vorherigen Versionen, die in diesem Thema erwähnt wurden, haben nur Cloudbereitstellungen unterstützt.
 
-> [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
+
+## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+
+### <a name="france-fec-accounting-data-export-in-xml"></a>Frankreich: FEC-Buchhaltungsdatenexport in XML
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Ersetzt durch TXT-Format, ist die **Französische FEC-Protokolldatei** über **Hauptbuch** \> **Periodische Aufgaben** \> **Datenexport** verfügbar.
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Hauptbuch |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet. Zielzeitrahmen für die Entfernung der Funktionalität ist Juli 2020. |
+
+=======
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="legacy-navigation-bar"></a>Vorgängernavigationsleiste
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 24 wurde eine neu formatierte Navigationsleiste eingeführt, die eine Suchfunktion enthält. |
+| **Betroffene Produktbereiche**         | Webclient |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Ab April 2020 ist die Vorgängernavigationsleiste nicht mehr verfügbar. Bis dahin können Kunden die Vorgängernavigationsleiste über die Seite **Client-Leistungsoptionen** wiederherstellen. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 mit Plattformupdate 26

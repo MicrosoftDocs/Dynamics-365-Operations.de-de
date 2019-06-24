@@ -3,7 +3,7 @@ title: Videos für Finance and Operations
 description: Diese Seite listet von Microsoft erstellte "How-to"- und Tech-Talk-Videos zu Dynamics 365 for Finance and Operations auf, die auf YouTube und anderen Websites verfügbar sind.
 author: josaw1
 manager: AnnBe
-ms.date: 05/11/2018
+ms.date: 05/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 7675ae79cb1155919f95c7f2ff1d3d72628ab731
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1b828382f9f81d796fcfaef0e9c7dc9450a97992
+ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561667"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1591547"
 ---
 # <a name="videos-for-finance-and-operations"></a>Videos für Finance and Operations
 
@@ -50,7 +50,7 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 - [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Aufbau eines Entwicklungszweiges und Erstellung](https://www.youtube.com/watch?v=qXLd-NMx9OY)
 - [Einrichten einer Entwicklungsmaschine](https://www.youtube.com/watch?v=cqp9MetfiyM)
-- [Azure DevOps Integration mit Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
+- [Azure DevOps-Integration in Lifecycle Services](https://www.youtube.com/watch?v=0QyyyUp1zHQ&t=1s)
 
 #### <a name="explore-the-user-interface"></a>Die Benutzeroberfläche erkunden
 
@@ -63,6 +63,7 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 - [Mobiler Arbeitsbereich für die Kostensteuerung](https://youtu.be/imsuTg8rUVk)
 - [Erste Schritte mit Kostenrechnung](https://youtu.be/1pUDtJQZ8FU)
 - [Für Kostenanalyse Excel verwenden](https://youtu.be/-HKHYdClvx8)
+- [Ausgabenfunktionalität](https://youtu.be/Ocy-MsTvEE0)
 
 #### <a name="intelligence"></a>Intelligence
 
@@ -185,7 +186,7 @@ Videos sind nach Funktionen geordnet, also scrollen Sie nach unten, um die gesam
 - [AX 2009 Migrationswerkzeuge (DYN306PAL2)](https://infopedia.eventbuilder.com/event?eventid=u3g7s0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [AX 2012 auf Dynamics 365 for Operations Upgrade (VIR817PAL2)](https://infopedia.eventbuilder.com/event?eventid=t9e9e5&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 - [Upgrade von 7.0 (RTW)/7.1 (Release 1611) auf 7.2 (Juli 2017) (DYN338PAL2)](https://infopedia.eventbuilder.com/event?eventid=q0w9p0&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
-- [Einrichten von Azure DevOps (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
+- [Azure DevOps-Setup (VIR782PAL)](https://infopedia.eventbuilder.com/event?eventid=g9f8g1&source=Dynamics_365_for_Operations_-_FastTrack_Tech_Talks)
 
 #### <a name="warehouse-management"></a>Lagerortverwaltung
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17697677e0264c98088d5803e867e78ff3fdb5de
-ms.sourcegitcommit: 86d48d077589470bd1ea23b9c6fe01835088b6ae
+ms.openlocfilehash: 7c74ff55e0a9a81c058de802d70365d13d34c8ff
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1538955"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595638"
 ---
 # <a name="finance-and-operations-help-system"></a>Finance and Operations-Hilfesystem
 
@@ -192,7 +192,7 @@ In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein
 | [Docs.microsoft.com](/dynamics365/)                                                            | Hosts oder Links zu allen Produktdokumentationen für Dynamics 365. |
 | [Microsoft Learn](https://docs.microsoft.com/learn/)                                           | Die kostehlose Microsoft e-Learning-Site. |
 | [Lifecycle Services](https://lcs.dynamics.com/)\*                                              | Bietet einen Cloud-basierten Kooperationsbereich, den Debitoren und deren Partner verwenden können, um Dynamics 365 for Finance and Operations-Projekte von Presales zur Implementierung und für Arbeitsgänge zu verwalten. Diese Site ist in alle Phasen einer Implementierung hilfreich. |
-| [Support-Blog](http://aka.ms/AXSupportBlog)                                                    | Hält Tipps und Tricks bereit, die vom Dynamics 365 for Finance and Operations-Support-Team gepostet werden. |
+| [Support-Blog](https://aka.ms/AXSupportBlog)                                                    | Hält Tipps und Tricks bereit, die vom Dynamics 365 for Finance and Operations-Support-Team gepostet werden. |
 | [Docs.microsoft.com/previous Versionen](https://docs.microsoft.com/previous-versions/dynamics/) | Hostet Inhalt aus früheren Versionen. |
 | [Dynamics-Community](https://community.dynamics.com/)                                          | Hostet Blogs, Foren und Videos. |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/dynamics365/home)                       | Stellt Auswertungen und Verkaufsinformationen bereit. |

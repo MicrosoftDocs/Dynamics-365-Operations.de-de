@@ -16,16 +16,16 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 02880edda6c34c24f8dad8cc8cbeafe215f46896
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541290"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1606963"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, welche Verbesserungen der Auszugsbuchungsfunktion vorgenommen wurden. Verbesserungen Diese sind in Microsoft Dynamics 365 for Finance and Operations 7.3.2 verfügbar.
 
@@ -58,10 +58,10 @@ Als Teil der Verbesserungen der Auszugsbuchungsfunktion wurden drei neue Paramet
 
 Darüber hinaus wurden die folgenden Parameter auf dem Inforegister **Stapelverarbeitung** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** eingerführt: 
 
-- **Maximale Anzahl von parallelen Auszugsbuchungen** - Dieses Feld definiert die Anzahl der Stapelverarbeitungsaufgaben, die verwendet werden, um mehrere Aufstellungen zu buchen. 
-- **Maximaler Thread für die Auftragsverarbeitung pro Abrechnung** - Dieses Feld stellt die maximale Anzahl der Threads dar, die vom Stapelverarbeitungsauftrag für die Abrechnungsbuchung verwendet wird, um Aufträge für eine einzelne Abrechnung zu erstellen und zu fakturieren. Die Gesamtanzahl der Threads, die vom Abrechnungsbuchungsprozess verwendet werden, wird auf Grundlage des Werts in diesem Parameter multipliziert mit dem Wert im Parameter **Maximale Anzahl von parallelen Abrechnungsbuchungen** berechnet. Wird der Wert dieses Parameters zu hoch festgelegt, kann dies die Leistung des Abrechnungsbuchungsprozesses negativ beeinflussen.
-- **Maximale Buchungspositionen in der Aggregierung** - Dieses Feld definiert die Anzahl von Transaktionspositionen, die in einer einzelnen zusammengefassten Transaktion eingeschlossen sind, bevor eine neue erstellt wird. Aggregierte Transaktionen werden auf Grundlage unterschiedlicher Aggregationskriterien erstellt, beispielsweise Debitor, Geschäftsdatum oder Finanzdimensionen. Beachten Sie unbedingt, dass die Positionen einer einzelnen Einzelhandelstransaktion nicht auf unterschiedliche aggregierte Buchungen aufgeteilt werden. Das bedeutet, dass es eine Möglichkeit gibt, dass die Anzahl der Positionen in eine zusammengefassten Transaktion etwas höher oder nidriger liegt, je nach solchen Faktoren wie Anzahl der eindeutig identifizierbare Produkte.
-- **Maximale Anzahl von Threads zum Überprüfen der Storetransaktionen** - Dieses Feld definiert die Anzahl der Threads, die verwendet werden, um Einzelhandelstransaktionen zu überprüfen. Die Überprüfung von Einzelhandelstransaktionen ist ein obligatorischer Schritt, der ausgeführt werden muss, bevor die Transaktionen in die Aufstellungen einbezogen werden können. Sie müssen auch ein **Geschenkkartenprodukt** im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festlegen. Dies muss auch definiert werden, wen Geschenkkarten nicht von der Organisation verwendet werden.
+- **Maximale Anzahl von parallelen Auszugsbuchungen** – Dieses Feld definiert die Anzahl der Stapelverarbeitungsaufgaben, die verwendet werden, um mehrere Aufstellungen zu buchen. 
+- **Maximaler Thread für die Auftragsverarbeitung pro Abrechnung** – Dieses Feld stellt die maximale Anzahl der Threads dar, die vom Batchauftrag für die Abrechnungsbuchung verwendet wird, um Aufträge für eine einzelne Abrechnung zu erstellen und zu fakturieren. Die Gesamtanzahl der Threads, die vom Abrechnungsbuchungsprozess verwendet werden, wird auf Grundlage des Werts in diesem Parameter multipliziert mit dem Wert im Parameter **Maximale Anzahl von parallelen Abrechnungsbuchungen** berechnet. Wird der Wert dieses Parameters zu hoch festgelegt, kann dies die Leistung des Abrechnungsbuchungsprozesses negativ beeinflussen.
+- **Maximale Buchungspositionen in der Aggregierung** – Dieses Feld definiert die Anzahl von Transaktionspositionen, die in einer einzelnen zusammengefassten Transaktion eingeschlossen sind, bevor eine neue erstellt wird. Aggregierte Transaktionen werden auf Grundlage unterschiedlicher Aggregationskriterien erstellt, beispielsweise Debitor, Geschäftsdatum oder Finanzdimensionen. Beachten Sie unbedingt, dass die Positionen einer einzelnen Einzelhandelstransaktion nicht auf unterschiedliche aggregierte Buchungen aufgeteilt werden. Das bedeutet, dass es eine Möglichkeit gibt, dass die Anzahl der Positionen in eine zusammengefassten Transaktion etwas höher oder nidriger liegt, je nach solchen Faktoren wie Anzahl der eindeutig identifizierbare Produkte.
+- **Maximale Anzahl von Threads zum Überprüfen der Ladengeschäftstransaktionen** – Dieses Feld definiert die Anzahl der Threads, die verwendet werden, um Einzelhandelstransaktionen zu überprüfen. Die Überprüfung von Einzelhandelstransaktionen ist ein obligatorischer Schritt, der ausgeführt werden muss, bevor die Transaktionen in die Aufstellungen einbezogen werden können. Sie müssen auch ein **Geschenkkartenprodukt** im Inforegister **Geschenkkarte** in der Registerkarte **Buchung** der Seite **Einzelhandelsparameter** festlegen. Dies muss auch definiert werden, wen Geschenkkarten nicht von der Organisation verwendet werden.
 
 > [!NOTE]
 > Alle Einstellungen und Parameter, die sich auf Auszugsbuchungen beziehen und die für Einzelhandelsgeschäfte und auf der Seite **Einzelhandelsparameter** definiert sind, sind auf die verbesserte Auszugsbuchung anwendbar.

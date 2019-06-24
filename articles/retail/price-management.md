@@ -3,7 +3,7 @@ title: Einzelhandelspreisverwaltung
 description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Microsoft Dynamics 365 for Retail behandelt.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 04/20/2018
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28a095588bd3c312a2d1c4b83e668487a209077f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afa553fd0562b306f720f2a30c7f901db7ad1b3a
+ms.sourcegitcommit: 0fbfb9b0ab78c804f3931a083028d2ce313d6521
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549398"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "1594069"
 ---
 # <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
@@ -39,7 +39,7 @@ Die folgenden Begriffe werden in diesem Thema erläutert.
 | Preis | Der einzelne Einheitenbetrag, der ein Produkt in einem Verkaufsstellen (POS)- Client oder einem Auftrag verkauft. In diesem Thema bezieht sich *Preis* immer den Verkaufspreis, nicht des Lagerpreises oder den Einstandspreis an. |
 | Basispreis | Der Preis, der im Feld **Preis** auf einen gemeinsam verwendete Produktdimensionsgruppe festgelegt wird. |
 | Preisgestaltung für Handelsvereinbarung | Der Preis, der auf ein Produkt oder eine Variante festgelegt wird, indem eine Handelsvereinbarung des Typs **Preis (Verkauf)** verwendet wird. |
-| Bester Preis | Wenn mehr als ein Preis oder Rabatt auf ein Produkt angewendet wird, der kleinste oder Preisbetrag und/oder der größte Rabattbetrag, der den niedrigsten Nettobetrag produziert, den der Debitor bezahlen muss, wird angewendet. In diesem Thema gilt das Konzept des besten Preises immer als der beste "Preis". Dieser beste Preis unterscheidet sich vom und sollte nicht mit dem **Besten Preis**Optionswert für einen Rabattmodus verwechselt werden. |
+| Bester Preis | Wenn mehr als ein Preis oder Rabatt auf ein Produkt angewendet wird, der kleinste oder Preisbetrag und/oder der größte Rabattbetrag, der den niedrigsten Nettobetrag produziert, den der Debitor bezahlen muss, wird angewendet. In diesem Thema gilt das Konzept des besten Preises immer als der beste "Preis". Dieser beste Preis unterscheidet sich vom und sollte nicht mit dem **Besten Preis** Optionswert für einen Rabattmodus verwechselt werden. |
 
 ## <a name="price-groups"></a>Preisgruppen
 
@@ -66,13 +66,13 @@ Im Einzelhandel ist es sehr typisch, verschiedene Preise in verschiedenen Kanäl
 
 ### <a name="affiliations"></a>Zugehörigkeiten
 
-Bei einer Definition einer allgemeinen Zugehörigkeit ist ein Link die Zuordnung zu einer Gruppe. In Retail sind Zuordnungen Gruppen von Debitoren. Zuordnungen sind ein wesentlich flexibleres Tool für Kundenpreiskalkulation und -Rabatte als das Microsoft Dynamics 365 Kernkonzept von Debitorengruppen und Rabattgruppen. Zuerst kann eine Zugehörigkeit für beide Preise und Rabatte verwendet werden, während Nicht-Einzelhandelpreiskalkulation eine andere Gruppe für jeden Typ Rabatt und Preis ist. Danach kann ein Debitor mehrere Zuordnungen haben, jedoch kann nur eine Nicht-Einzelhandelpreiskalkulationsgruppe dem jeweiligen Typ angehören. Schließlich obwohl Zuordnungen verwendet werden, damit sie einem Debitor zugeordnet sind, müssen beide nicht zwangsläufig zugeordnet sein. Eine ad hoc Zugehörigkeit kann für die anonyme Debitoren am POS verwendet werden. Ein typisches Beispiel eines anonymen Zugehörigkeitsrabatts  ist ein Senior- oder Studierenderrabatt, wobei der Kunde einen Rabatt erhält, der momentan durch die Auswahl einer Gruppenmitgliedschaftskarte anzeigt wird.
+Bei einer Definition einer allgemeinen Zugehörigkeit ist ein Link die Zuordnung zu einer Gruppe. In Retail sind Zuordnungen Gruppen von Debitoren. Zuordnungen sind ein wesentlich flexibleres Tool für Kundenpreiskalkulation und -Rabatte als das Microsoft Dynamics 365 Kernkonzept von Debitorengruppen und Rabattgruppen. Zuerst kann eine Zugehörigkeit für beide Preise und Rabatte verwendet werden, während Nicht-Einzelhandelpreiskalkulation eine andere Gruppe für jeden Typ Rabatt und Preis ist. Danach kann ein Debitor mehrere Zuordnungen haben, jedoch kann nur eine Nicht-Einzelhandelpreiskalkulationsgruppe dem jeweiligen Typ angehören. Schließlich obwohl Zuordnungen verwendet werden, damit sie einem Debitor zugeordnet sind, müssen beide nicht zwangsläufig zugeordnet sein. Eine ad hoc Zugehörigkeit kann für die anonyme Debitoren am POS verwendet werden. Ein typisches Beispiel eines anonymen Zugehörigkeitsrabatts ist ein Senior- oder Studierenderrabatt, wobei der Kunde einen Rabatt erhält, der momentan durch die Auswahl einer Gruppenmitgliedschaftskarte anzeigt wird.
 
 Obwohl Zuordnungen am häufigsten Rabatten zugeordnet sind, können diese auch verwendet werden, um verschiedene Preisgestaltung festzulegen. Wenn beispielsweise ein Einzelhändler für einen Mitarbeiter verkauft, sollte der der Verkaufspreis ändern, anstatt einen Rabatt zu übernehmen in den normalen Preis. Ein anderes Beispiel ist, ein Einzelhändler, der Einzelkunden und Firmenkunden Preise der Firmenkunden auf Grundlage der Einkaufsvolumen anbietet. Zuordnungen aktivieren diese beiden Szenarien.
 
 ### <a name="loyalty-programs"></a>Treueprogramme
 
-Hinsichtlich Preise und Rabatte sind Treueprogramme im Allgemeinen derzeit eine Zugehörigkeit, die einen bestimmten Namen hat. Preise und Rabatte können für ein Treueprogramm festgelegt werden, während sie derzeit für eine Zugehörigkeit festgelegt werden können. Allerdings unterscheidet sich die Möglichkeit, dass Kunden Loyalitätspreiskalkulation während einer Buchung oder eines Auftrags zugewiesen wird, von der  Methode, mit der sie Zugehörigkeitspreiskalkulation abrufen. Debitoren können die angegebenen Treuepreis abrufen, wenn eine Treuekart einer Buchung hinzugefügt wird. Wenn eine Treuekarte einer Buchung hinzugefügt wird, wird das Treueprogramm auch hinzugefügt. Das Treueprogramm aktiviert dann Sonderpreise und Rabatte.
+Hinsichtlich Preise und Rabatte sind Treueprogramme im Allgemeinen derzeit eine Zugehörigkeit, die einen bestimmten Namen hat. Preise und Rabatte können für ein Treueprogramm festgelegt werden, während sie derzeit für eine Zugehörigkeit festgelegt werden können. Allerdings unterscheidet sich die Möglichkeit, dass Kunden Loyalitätspreiskalkulation während einer Buchung oder eines Auftrags zugewiesen wird, von der Methode, mit der sie Zugehörigkeitspreiskalkulation abrufen. Debitoren können die angegebenen Treuepreis abrufen, wenn eine Treuekart einer Buchung hinzugefügt wird. Wenn eine Treuekarte einer Buchung hinzugefügt wird, wird das Treueprogramm auch hinzugefügt. Das Treueprogramm aktiviert dann Sonderpreise und Rabatte.
 
 Ein Treueprogramm kann mehrere Ebenen besitzen, und Rabatte können sich für verschiedene Ebenen unterscheiden. Auf diese Weise können Einzelhändler rasch Debitoren größere Belohnungen geben, ohne dass diese Debitoren in einer speziellen Gruppe manuell zugeordnet werden müssen.
 
@@ -110,9 +110,9 @@ Ein nationaler Einzelhändler legt die meisten Preise pro Region fest, und besit
 
 In vorliegenden Beispiel schauen wir die Region Nordosten an. Shop 1 ist in Boston, und Shop 2 ist in Manhattan. Für den Boston-Shop werden zwei Preisgruppen mit dem Kanal verknüpft: Nordosten und Shop 1. Für den Manhatten-Shop werden drei Preisgruppen mit dem Kanal verknüpft: Nordosten, NYC und Shop 2.
 
-Der Einzelhändler legt zwei Preisprioritäten fest: Hohe Kosten besitzen eine Prioritätsnummer von 5, und Shop-Preise hat eine Prioritätsnummer von 10. (Bedenken Sie, dass standardmäßig die Preiskalkulationspriorität 0 \[Null\]und ein Preis oder Rabatt eine  höhere Nummer hat, bevor ein Preis oder einen Rabatt verwendet wird, der eine niedrigere Prioritätsnummer hat). Für die Nordostpreisgruppe wird die Preiskalkulationspriorität am Standardwert  **0** (Null) sein. Für die NYC-Preisgruppe wird die Preiskalkulationspriorität auf **5** festgelegt, da New York ein Markt mit hohen Kosten ist. Für die Shop 1 und Shop 2 Preisgruppen, wird die Preiskalkulationspriorität auf **10** festgelegt.
+Der Einzelhändler legt zwei Preisprioritäten fest: Hohe Kosten besitzen eine Prioritätsnummer von 5, und Shop-Preise hat eine Prioritätsnummer von 10. (Bedenken Sie, dass standardmäßig die Preiskalkulationspriorität 0 \[Null\]und ein Preis oder Rabatt eine höhere Nummer hat, bevor ein Preis oder einen Rabatt verwendet wird, der eine niedrigere Prioritätsnummer hat). Für die Nordostpreisgruppe wird die Preiskalkulationspriorität am Standardwert **0** (Null) sein. Für die NYC-Preisgruppe wird die Preiskalkulationspriorität auf **5** festgelegt, da New York ein Markt mit hohen Kosten ist. Für die Shop 1 und Shop 2 Preisgruppen, wird die Preiskalkulationspriorität auf **10** festgelegt.
 
-Zwei Produkte, die der Einzelhändler als  Produkt 1 verkauft, eine Ware T-Shirt und ein Produkt 2, makrenspezifische Jeans.
+Zwei Produkte, die der Einzelhändler als Produkt 1 verkauft, eine Ware T-Shirt und ein Produkt 2, makrenspezifische Jeans.
 
 | Produkt | Preise Nordosten | NYS Preis: | Shoppreise |
 |---|---|---|---|
@@ -122,7 +122,7 @@ Zwei Produkte, die der Einzelhändler als  Produkt 1 verkauft, eine Ware T-Shirt
 Das T-Shirt verkauft sich für denselben Preis (das heißt, $15) in den Boston- und Manhattan-Shops, da nur ein Preis in der Nordostpreisgruppe festgelegt wurde, die beide Kanäle verknüpft. Die modischen Jeans verkaufen sich im Boston-Shop für $50, weil dies der einzige verfügbare Preis im Shop ist. Jedoch im Manhattan-Shop, stehen zwei Preise zu Verfügung: $50 und $70. Da die Preiskalkulationspriorität von 5 für die NYC-Preisgruppe höher ist als die Preiskalkulationspriorität von 0 (null )für die Nordostpreisgruppe ist, wird der Preis im POS-System als Rollup für beide Artikel bezeichnet.
 
 > [!NOTE]
-> Für jede Preiskalkulationspriorität ist ein vollständiger Durchlauf für die Verkaufslogik des Einzelhandelspreismoduls erforderlich. Um die Leistung der Rabattberechnung der Preis und Rapatte zu verwalten, sollten Sie  Preiskalkulationsprioritäten kaum verwenden.
+> Für jede Preiskalkulationspriorität ist ein vollständiger Durchlauf für die Verkaufslogik des Einzelhandelspreismoduls erforderlich. Um die Leistung der Rabattberechnung der Preis und Rapatte zu verwalten, sollten Sie Preiskalkulationsprioritäten kaum verwenden.
 
 ## <a name="types-of-prices"></a>Arten von Preisen
 
@@ -150,7 +150,7 @@ Obgleich die Preiseinheit kein allgemeines Kleinszenario ist, unterstützt es da
 
 Mit der Handelsvereinbarungserfassung verwenden, können Sie Handelsvereinbarungen für jedes Produkt erstellen. In Microsoft Dynamics 365 gibt es drei Debitorenumfänge für Handelsvereinbarungen: **Tabelle**, **Gruppe** und **Alle**. Der Debitorenumfang bestimmt die Debitoren, die eine bestimmte Verkaufspreis-Handelsvereinbarung gilt.
 
-Eine Handelsvereinbarung zu Verkaufspreisen **Tabelle** gilt für einen einzelnen Debitor, der direkt in der Handelsvereinbarung festgelegt ist. Dieses Szenario ist kein typisches Einzelhandels-Konsumenten-Szenario  (B2C). Wenn es der Fall ist, verwendet das Einzelhandelspreismodul Handelsvereinbarungen **Tabelle**, wenn der Preis bestimmt wird.
+Eine Handelsvereinbarung zu Verkaufspreisen **Tabelle** gilt für einen einzelnen Debitor, der direkt in der Handelsvereinbarung festgelegt ist. Dieses Szenario ist kein typisches Einzelhandels-Konsumenten-Szenario (B2C). Wenn es der Fall ist, verwendet das Einzelhandelspreismodul Handelsvereinbarungen **Tabelle**, wenn der Preis bestimmt wird.
 
 Eine Handelsvereinbarung zu Verkaufspreisen **Gruppe** ist der Typ, der mit Kleinfunktionen häufig an das benutztesten ist. Außerhalb des Einzelhandels sind **Gruppe** Handelsvereinbarungen für eine einfache Debitorengruppe. Allerdings ist im Einzelhandel das Konzept einer Debitorengruppe erweitert worden, damit er eine allgemeine Einzelhandelspreisgruppe ist. Bei einer Preisgruppe kann einem Einzelhandelskanal, einer Zugehörigkeit, einem Treueprogramm oder einem Katalog zugeordnet werden. Detaillierte Informationen zu Preisgruppen finden Sie im Abschnitt "Preisgruppen" oben in diesem Thema.
 
@@ -159,13 +159,13 @@ Eine Handelsvereinbarung zu Verkaufspreisen **Gruppe** ist der Typ, der mit Klei
 
 ### <a name="price-adjustment"></a>Preisregulierung
 
-Wie der Name sagt, steht er für eine Preisregulierung und wird verwendet, um den Preis zu ändern, der entweder für die Gruppe direkt oder durch eine Handelsvereinbarung festgelegt wurde. Eine Preisregulierung kann verwendet werden, um nur den Preis zu senken, nicht zu erhöhen. Eine Preisregulierung ist der empfohlene Weg für Einzelhändler, um Nachverfolgen zu erstellen und  Preisabschläge für seine Produkte über die Zeit zu verwalten.
+Wie der Name sagt, steht er für eine Preisregulierung und wird verwendet, um den Preis zu ändern, der entweder für die Gruppe direkt oder durch eine Handelsvereinbarung festgelegt wurde. Eine Preisregulierung kann verwendet werden, um nur den Preis zu senken, nicht zu erhöhen. Eine Preisregulierung ist der empfohlene Weg für Einzelhändler, um Nachverfolgen zu erstellen und Preisabschläge für seine Produkte über die Zeit zu verwalten.
 
 Es gibt drei Typen Preisregulierungen: Prozentsatz, der Betrag und der Preis. Eine Preisregulierung des Prozentsatzes des Importprozesses oder Betrags auf dem Typ wird immer in einer Verkaufstransaktion angewendet. Es wird jedoch eine Preisregulierung des Preistyps angewendet, wenn der angepasste Preis kleiner ist als der Preis, der festgelegt wurde, indem der Handelsvereinbarungs-Preis oder der Basispreis erfasst wird. Wenn der Preis, der in eine Preisregulierung festgelegt ist, höher ist als der nicht angepasste Preis, wird die Preisregulierung nicht verwendet.
 
 ## <a name="determining-price-for-a-product-in-a-transaction"></a>Bestimmen des Preises für ein Produkt in einer Buchung
 
-Die Berechnung des Preises und des Rabatts in einer Buchung verwendet das Prinzip des besten Findens  für den besten Preis für den Debitor. Entsprechend dieses Prinzip, wenn mehr als ein Preis gefunden wird, wird der niedrigste Preis verwendet. Darüber hinaus wird die Kombination von Rabatten, die den größten Rabattbetrag für die gesamte Buchung erzeugt, verwendet. In einigen Fällen muss ein kleinerer Rabatt auf einem einzelnen Produkt verwendet werden, sodass zusätzliche Rabatte für andere Produkte in der Buchung angewendet werden können.
+Die Berechnung des Preises und des Rabatts in einer Buchung verwendet das Prinzip des besten Findens für den besten Preis für den Debitor. Entsprechend dieses Prinzip, wenn mehr als ein Preis gefunden wird, wird der niedrigste Preis verwendet. Darüber hinaus wird die Kombination von Rabatten, die den größten Rabattbetrag für die gesamte Buchung erzeugt, verwendet. In einigen Fällen muss ein kleinerer Rabatt auf einem einzelnen Produkt verwendet werden, sodass zusätzliche Rabatte für andere Produkte in der Buchung angewendet werden können.
 
 Die einzige Ausnahme des Prinzips für den besten Preis für den Debitor fungiert in eine Option für wenig teure Rabatte des Angebots-Sortiments. Diese Option ermöglicht wenig-teure Rabatte, die den Einzelhändler bevorzugen, wenn Produkte ausgewählt und gruppiert werden. Wenn eine Buchung mehr Produkte enthält, als benötigt werden, um einen Anspruch auf den günstigsten Rabatt zu erlangen, wählt das Einzelhandelspreismodul die Produkte aus, die einen möglichen Skontobetrag für den Debitor erstellen.
 
@@ -231,3 +231,9 @@ Das Einzelhandelsmodul unterstützt zudem **nur** die folgenden Preiskalkulation
 
 - Der Preis wird auf Grundlage der Produktdimensionen im Auftrag der verschiedenen Preis von der spezifischsten Preisvariante bis zur am wenigsten spezifischen Preisvariante im Produktmaster-Preis festgelegt. Ein Preis, der festgelegt wird, indem zwei Produktdimensionen verwendet werden (beispielsweise Gesamtlayout, Farbe und Größe), die vor einem Preis verwendet werden, der festgelegt wird, indem nur eine Produktdimension verwendet wird (beispielsweise Gesamtlayout, Größe).
 - Dieselbe Preisgruppe kann verwendet werden, um Preiskalkulation und Rabatte zu steuern.
+
+## <a name="pricing-api-enhancements"></a>Preisberechnung für API-Erweiterungen
+
+Der Preis ist einer der wichtigsten Faktoren, die bei der Einkaufsentscheidung vieler Kunden entscheidend sind. Viele Kunden vergleichen Preise auf verschiedenen Websites, bevor sie einen Kauf tätigen. Zur Sicherstellung dass sie konkurrenzfähige Preise bereitstellen, behalten Einzelhändler ihre Konkurrenten genau im Blick und führen oft Verkaufsförderungsmaßnahmen durch. Um diese Einzelhändler bei ihrer Kundengewinnung zu unterstützen, ist es sehr wichtig, dass die Produktsuche, die Funktion fürs Durchsuchen und die Seite für Produktdetails die genauesten Preise anzeigen.
+
+In einer bevorstehenden Version von Retail, wird die Anwendungsprogrammierungsschnittstelle (API) **GetActivePrices** Preise zurückgeben, die einfache Rabatte enthalten (z. B. Einzelpositionsrabatte, die nicht von anderen Artikeln im Warenkorb abhängen). Auf diese Weise sind die Preise, die angezeigt werden, dem tatsächlichen Betrag ziemlich nahe, den Kunden für Artikel bezahlen werden. Diese API wird alle Typen einfacher Rabatte umfassen: zugehörigkeitsbasierte, treuebasierte, katalogbasierte sowie kanalbasierte Rabatte. Darüber hinaus wird die API die Namen und Gültigkeitsinformationen für die angewendeten Rabatte zurückgeben, sodass Einzelhändler eine ausführlichere Beschreibung des Preises bereitstellen können und einen Eindruck der Dringlichkeit vermitteln können, wenn die Gültigkeit des Rabatts bald abläuft.

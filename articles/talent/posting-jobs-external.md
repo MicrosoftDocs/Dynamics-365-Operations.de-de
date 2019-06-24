@@ -3,7 +3,7 @@ title: Stellen aus Attract auf externen Karrierewebsites veröffentlichen
 description: In diesem Thema wird erläutert, wie Dynamics 365 for Talent - Attract verwendet wird, um Stelle auf externe Stellenportalen zu veröffentlichen
 author: pganapmsft
 manager: AnnBe
-ms.date: 03/20/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: eca599ad189edae29ef2de496196b08799a5e745
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9c27d1810a89ed7d7a7745e41c5f118dbdfe5dda
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518093"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590481"
 ---
 # <a name="post-jobs-to-external-career-sites-from-attract"></a>Stellen aus Attract auf externen Karrierewebsites veröffentlichen
 
@@ -36,6 +36,7 @@ Bevor Stellen in Broadbean gebucht werden können, müssen Sie die Broadbean-Int
 
 > [!NOTE]
 > - Um Stellen an externen Standorten zu buchen, müssen Sie das [Umfassende Einstellungsadd-on](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) haben.
+> - Um Stellen bei Broadbean über Attract zu veröffentlichen, müssen Sie ein Broadbean-Abonnement haben.
 > - Diese Funktion befindet sich derzeit in der Vorschau. Wenn Sie sie ausprobieren möchten, müssen Sie [sie in den Attract-Administratoreinstellungen aktivieren](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) auf.
 
 ### <a name="configure-broadbean-integration"></a>Broadbean-Integration konfigurieren
@@ -79,7 +80,7 @@ Nachdem Broadbean die Veröffentlichung erfolgreich abgeschlossen hat, zeigt der
 Nachdem Sie eine Stelle in Broadbean veröffentlich haben, können Sie diese über Attract ansehen.
 
 1. Öffnen Sie in Attract die Stelle, die Sie in Broadbean anzeigen möchten.
-2. Im Abschnitt **Stelle** wählen Sie die Ellipsenschaltfläche (**...**), die Broadbean entspricht und wählen Sie  dann **Ansicht** aus.
+2. Im Abschnitt **Stelle** wählen Sie die Ellipsenschaltfläche (**...**), die Broadbean entspricht und wählen Sie dann **Ansicht** aus.
 
 Die Broadbean Stellenausschreibung wird in einem neuen Fenster angezeigt.
 
@@ -94,7 +95,7 @@ Sie können eine Broadbean Stellenausschreibung auf zwei Arten aktualisieren.
 - oder -
 
 1. Öffnen Sie in Attract die Stelle, die Sie in Broadbean anzeigen möchten.
-2. Im Abschnitt **Stelle** wählen Sie die Ellipsenschaltfläche (**...**), die Broadbean entspricht und wählen Sie  dann **Ansicht** aus.
+2. Im Abschnitt **Stelle** wählen Sie die Ellipsenschaltfläche (**...**), die Broadbean entspricht und wählen Sie dann **Ansicht** aus.
 3. Im Fenster Broadbean bearbeiten Sie die Stellendetails und veröffentlichen die Stelle erneut. Die Stellendetails in Attract sind unverändert.
 
 ### <a name="remove-a-broadbean-job-posting"></a>Entfernen einer Broadbean Stellenausschreibung
@@ -102,7 +103,7 @@ Sie können eine Broadbean Stellenausschreibung auf zwei Arten aktualisieren.
 Sie können eine Stellenausschreibung aus Broadbean wieder entfernen.
 
 1. In Attract öffnen Sie die Stelle, die Sie entfernen möchten.
-2. Im Abschnitt **Stelle** wählen Sie die Ellipsenschaltfläche (**...**), die Broadbean entspricht und wählen Sie  dann **Stelle entfernen** aus.
+2. Im Abschnitt **Stelle** wählen Sie die Ellipsenschaltfläche (**...**), die Broadbean entspricht und wählen Sie dann **Stelle entfernen** aus.
 
 Nachdem Broadbean die Stelle entfernt hat, hat das Broadbean Element in Attact eine Schaltfläche **Jetzt veröffentlichen**. Das Vorhandensein dieser Schaltfläche gibt an, dass die Stelle entfernt wurde und erneut gebucht werden kann.
 

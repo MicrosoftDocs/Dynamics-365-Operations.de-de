@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc02d51cedc7f732601c77c0ba5b473272fbccb4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
+ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "1541267"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "1592659"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -443,7 +443,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>INDEX (Liste, Index)</td>
 <td>Diese Funktion gibt einen Datensatz zurück, der von einem bestimmten numerischen Index in der Liste ausgewählt wird. Eine Ausnahme wird ausgelöst, wenn der Index außerhalb des Bereichs der Datensätze in der Liste liegt.</td>
-<td>Wenn Sie die Datenquelle <strong>DS</strong> für den Typ <strong>Berechnetes Feld</strong> eingeben und der den Ausdruck <strong>SPLIT („A|B|C“, „|“), 2)</strong> enthält, gibt der Ausdruck <strong>DS.Value</strong> den Textwert „B“ zurück. Der Ausdruck <strong>INDEX (SPLIT („A|B|C“, „|“), 2).Value</strong> gibt außerdem den Textwert „B“ zurück.</td>
+<td>Wenn Sie die Datenquelle <strong>DS</strong> für den Typ <strong>Berechnetes Feld</strong> eingeben und dieser den Ausdruck <strong>SPLIT („A|B|C“, „|“), 2</strong> enthält, gibt der Ausdruck <strong>DS.Value</strong> den Textwert „B“ zurück. Der Ausdruck <strong>INDEX (SPLIT („A|B|C“, „|“), 2).Value</strong> gibt außerdem den Textwert „B“ zurück.</td>
 </tr>
 </tbody>
 </table>
@@ -457,7 +457,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 | NICHT (Bedingung) | Geben Sie den umgekehrten logischen Wert der angegebenen Bedingung zurück. | **NICHT (WAHR=)** gibt **FALSCH** zurück. |
 | AND (condition 1\[, condition 2, …\]) | Gibt **WAHR** zurück, wenn *alle* angegebenen Bedingungen erfüllt sind. Andernfalls wird **FALSCH** zurückgegeben. | **UND (1=1, "a " = "a")** gibt **WAHR** zurück. **UND (1=2, "a " = "a")** gibt **FALSCH** zurück. |
 | OR (condition 1\[, condition 2, …\]) | Gibt **FALSCH** zurück, wenn *alle* angegebenen Bedingungen falsch sind. Gibt **WAHR** zurück, wenn *eine* angegebenen Bedingungen erfüllt ist. | **ODER (1=2, "a " = "a")** gibt **WAHR** zurück. |
-| VALUEIN (Eingabe, Liste, Listenelementausdruck) | Bestimmen, ob die Eingabemit  einem angegebenen Wert eines Artikels in der angegebenen Liste übereinstimmt. Rückhol-__ent_dict_UI wenn die **WAHR** Eingabe das Ergebnis aus den angegebenen Ausdruck für mindestens einen Datensatz ausführen übereinstimmt. Andernfalls wird **FALSCH** zurückgegeben. Der Parameter **Eingabe** stellt den Pfad eines Datenquellenelements dar. Der Wert dieses Elements, der abgeglichen wird. Der Parameter **Liste** stellt den Pfad eines Datenquellenelements des Rekordlistentyps als Liste von Datensätzen dar, die einen Ausdruck enthält. Der Wert dieses Elements wird mit der angegebenen Eingabe verglichen. Das **Listenelementausdruck**-Argument stellt einen Ausdruck dar, der entweder zu einem Feld zeigt oder ein einzelnes Feld der Liste enthält, die zum Abgleich verwendet werden soll. | Beispiele hierzu finden Sie in [Beispiele: VALUEIN (Eingabe, Liste, Listenelementausdruck)](#examples-valuein-input-list-list-item-expression) Abschnitten wie folgt. |
+| VALUEIN (Eingabe, Liste, Listenelementausdruck) | Bestimmen, ob die Eingabemit einem angegebenen Wert eines Artikels in der angegebenen Liste übereinstimmt. Rückhol-__ent_dict_UI wenn die **WAHR** Eingabe das Ergebnis aus den angegebenen Ausdruck für mindestens einen Datensatz ausführen übereinstimmt. Andernfalls wird **FALSCH** zurückgegeben. Der Parameter **Eingabe** stellt den Pfad eines Datenquellenelements dar. Der Wert dieses Elements, der abgeglichen wird. Der Parameter **Liste** stellt den Pfad eines Datenquellenelements des Rekordlistentyps als Liste von Datensätzen dar, die einen Ausdruck enthält. Der Wert dieses Elements wird mit der angegebenen Eingabe verglichen. Das **Listenelementausdruck**-Argument stellt einen Ausdruck dar, der entweder zu einem Feld zeigt oder ein einzelnes Feld der Liste enthält, die zum Abgleich verwendet werden soll. | Beispiele hierzu finden Sie in [Beispiele: VALUEIN (Eingabe, Liste, Listenelementausdruck)](#examples-valuein-input-list-list-item-expression) Abschnitten wie folgt. |
 
 #### <a name="examples-valuein-input-list-list-item-expression"></a>Beispiele: VALUEIN (Eingabe, Liste, Listenelementausdruck)
 Im Allgemeinen wird die Funktion **VALUEIN** zu einem Satz **ODER** Bedingungen umgerechnet:
@@ -475,9 +475,9 @@ Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, 
 
 **("B" = "")**, das nicht gleich **WAHR** ist
 
-Beachten Sie, ob der obere Grenzwert für die Anzahl der Zeichen im Text beispielsweise eine Bedingung mit 32.768 Zeichen ist. Daher sollten Sie keine Datenquellen erstellen, die möglicherweise zur Laufzeit diesen Grenzwert überschreiten. Wenn das Unterzeichnungslimit überschritten wird, wird die Anwendung nicht mehr ausgeführt und eine Ausnahme ausgelöst. Beispielsweise kann diese Situation erfolgen, wenn die Datenquelle als**WO (List1, VALUEIN (List1.ID, List2, List2.ID)** konfiguriert wird, und die **List1** und **List2** Listen enthalten eine große Anzahl von Datensätzen.
+Beachten Sie, ob der obere Grenzwert für die Anzahl der Zeichen im Text beispielsweise eine Bedingung mit 32.768 Zeichen ist. Daher sollten Sie keine Datenquellen erstellen, die möglicherweise zur Laufzeit diesen Grenzwert überschreiten. Wenn das Unterzeichnungslimit überschritten wird, wird die Anwendung nicht mehr ausgeführt und eine Ausnahme ausgelöst. Beispielsweise kann diese Situation erfolgen, wenn die Datenquelle als **WO (List1, VALUEIN (List1.ID, List2, List2.ID)** konfiguriert wird, und die **List1** und **List2** Listen enthalten eine große Anzahl von Datensätzen.
 
-In einigen Fällen wird die Funktion **VALUEIN** zu einem Datenbankauszug übersetzt, indem  **EXISTIERT VERKNÜPFUNG** verwendet wird. Dieses Verhalten ist der Fall, wenn die Funktion **FILTER** verwendet wird und die folgenden Bedingungen erfüllt sind:
+In einigen Fällen wird die Funktion **VALUEIN** zu einem Datenbankauszug übersetzt, indem **EXISTIERT VERKNÜPFUNG** verwendet wird. Dieses Verhalten ist der Fall, wenn die Funktion **FILTER** verwendet wird und die folgenden Bedingungen erfüllt sind:
 
 - Die Option **BITTEN SIE UM ABFRAGE** wird für die Datenquelle der Funktion **VALUEIN** deaktiviert, die die Liste von Datenträgen bezieht. (Es werden keine zusätzliche Bedingungen auf diese Datenquelle zur Bearbeitungszeit angewendet).
 - Es werden keine eingebetteten Ausdrücke für die Datenquelle der Funktion **VALUEIN** konfiguriert, die sich auf die Liste von Datenträgen bezieht.

@@ -3,7 +3,7 @@ title: Erstellen Sie Onlinekanal und definieren Sie Kanalattribute
 description: Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen Online Kanals und dessen Hinzufügen zur Organisationshierarchie.
 author: jashanno
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/04/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e066e9901a97bd5b72815a7af472247ef519ecb9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4547731d7e3bc56b1ba5e0a35ff4746c6c0e9863
+ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569520"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1618295"
 ---
 # <a name="create-online-channel-and-define-channel-attributes"></a>Erstellen Sie Onlinekanal und definieren Sie Kanalattribute
 
@@ -60,4 +60,10 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen O
 9. Klicken Sie auf "Veröffentlichen", um das Ablagedialogfeld zu öffnen.
 10. Geben Sie im Feld "Gültigkeitsdatum" ein Datum und eine Uhrzeit ein.
 11. Klicken Sie auf "Veröffentlichen".
+
+## <a name="configure-orders-for-near-realtime-notification"></a>Konfigurieren von Aufträgen für die Benachrichtigung beinahe in Echtzeit
+1. Gehen Sie zu Einzelhandel > Zentralverwaltungseinrichtung > Parameter > Retail-Parameter.
+2. Legen Sie „Echtzeitdienst für eCommerce-Auftragserstellung verwenden“ auf „Ja“ fest.
+3. Führen Sie den Verteilungszeitplan 1070 aus, um Änderungen an der Kanaldatenbank zu synchronisieren. 
+
 

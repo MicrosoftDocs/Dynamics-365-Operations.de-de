@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13a27c2fec2a2b226e9ae8d5b8f9a61e8b79ceb0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a4b1cd7a02cdf4c650af50199f4425eb53cef0a8
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1544908"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595394"
 ---
 # <a name="create-configuration-providers-and-mark-them-as-active"></a>Konfigurationsanbieter erstellen und sie als aktiv markieren
 
@@ -34,11 +34,11 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
 2. Klicken Sie auf "Konfigurationsanbieter".
 3. Klicken Sie auf "Neu".
-    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc. (http://www.litware.com) besteht.  
+    * Ein Anbieterdatensatz ist nach Name und URL eindeutig. Überprüfen Sie den Inhalt dieser Seite und lassen Sie diese Prozedur aus, wenn bereits ein Datensatz für Litware, Inc. (https://www.litware.com) besteht.  
 4. Geben Sie im Feld "Name" "Litware, Inc." ein.
     * Litware, Inc.  
-5. Geben Sie im Feld „Internetadresse” „http://www.litware.com” ein.
-    * http://www.litware.com  
+5. Geben Sie im Feld „Internetadresse” „https://www.litware.com” ein.
+    * https://www.litware.com  
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
 

@@ -17,12 +17,12 @@ ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d17d8a98f80b10641baf9d74625feb75a0c4a7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bc931e17092a772d3a87c84533fe50d54249c962
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513157"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1568812"
 ---
 # <a name="german-journal-list-report"></a>Bericht "Deutsches Journal"
 

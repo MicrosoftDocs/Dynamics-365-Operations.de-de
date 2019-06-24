@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: 'Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen – FAQs'
           href: sysadmin/VMs-no-admin-access.md
-        - name: Umbenennen lokaler Umgebungen für den Zugriff auf Azure DevOps
+        - name: Umbenennen lokaler Umgebungen für den Zugriff Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Entwicklungssystemanforderungen
           href: dev-tools/development-system-requirements.md
@@ -227,8 +227,9 @@
             - name: X-Klassen
               href: dev-ref/x-classes.md
     - name: Erweiterbarkeit
-      href: extensibility/extensibility-home-page.md
       items:
+        - name: Startseite für Erweiterbarkeit
+          href: extensibility/extensibility-home-page.md
         - name: Einführung und erste Schritte
           items:
             - name: Plan für Anwendungserweiterbarkeit
@@ -243,38 +244,40 @@
               href: extensibility/customize-model-elements-extensions.md
             - name: Anpassen durch Erweiterungen und Überlagerung
               href: extensibility/customization-overlayering-extensions.md
-        - name: Neuigkeiten
+        - name: Neuerungen
           items:
-            - name: Erweiterbarkeitsänderungen im Juli 2017
-              href: extensibility/changes-july-2017.md
-            - name: Erweiterbarkeitsänderungen in Version 7.3
-              href: extensibility/extensibility-changes-73.md
-            - name: Erweiterbarkeitsänderungen in Version 8.0
-              href: extensibility/changes-80.md
-            - name: Erweiterbarkeitsänderungen in Version 8.0.1
-              href: extensibility/extensibility-changes-801.md
-            - name: Erweiterbarkeitsänderungen in Version 8.0.2
-              href: extensibility/extensibility-changes-802.md
-            - name: Erweiterbarkeitsänderungen in Version 8.0.3
-              href: extensibility/extensibility-changes-803.md
-            - name: "Änderungen an der Erweiterbarkeit in Version\_8.0.4"
-              href: extensibility/extensibility-changes-804.md
+            - name: Neuerungen oder Änderungen bei der Erweiterbarkeit
+              href: extensibility/extensibility-new.md
+            - name: Änderungen an der Erweiterbarkeit in Version 10.0.3
+              href: extensibility/extensibility-changes-10-3.md
+            - name: Änderungen an der Erweiterbarkeit in Version 10.0.2
+              href: extensibility/extensibility-changes-10-2.md
+            - name: Änderungen an der Erweiterbarkeit in Version 10.0.1
+              href: extensibility/extensibility-changes-10-1.md
+            - name: Änderungen an der Erweiterbarkeit in Version 10.0
+              href: extensibility/extensibility-changes-10.md
+            - name: Änderungen an der Erweiterbarkeit in Version 8.1.3
+              href: extensibility/extensibility-changes-813.md
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1.2"
+              href: extensibility/extensibility-changes-812.md
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.1.1"
+              href: extensibility/extensibility-changes-811.md
             - name: "Änderungen an der Erweiterbarkeit in Version\_8.1"
               href: extensibility/extensibility-changes-81.md
-            - name: "Erweiterbarkeitsänderungen in Version\_8.1.1"
-              href: extensibility/extensibility-changes-811.md
-            - name: "Erweiterbarkeitsänderungen in Version\_8.1.2"
-              href: extensibility/extensibility-changes-812.md
-            - name: Erweiterbarkeitsänderungen in Version 8.1.3
-              href: extensibility/extensibility-changes-813.md
-            - name: Erweiterbarkeitsänderungen in Version 10.0
-              href: extensibility/extensibility-changes-10.md
-            - name: Erweiterbarkeitsänderungen in Version 10.0.1
-              href: extensibility/extensibility-changes-10-1.md
-            - name: Erweiterbarkeitsänderungen in Version 10.0.2
-              href: extensibility/extensibility-changes-10-2.md
-            - name: Erweiterbarkeitsänderungen in Version 10.0.3
-              href: extensibility/extensibility-changes-10-3.md
+            - name: "Änderungen an der Erweiterbarkeit in Version\_8.0.4"
+              href: extensibility/extensibility-changes-804.md
+            - name: Änderungen an der Erweiterbarkeit in Version 8.0.3
+              href: extensibility/extensibility-changes-803.md
+            - name: Änderungen an der Erweiterbarkeit in Version 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Änderungen an der Erweiterbarkeit in Version 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Änderungen an der Erweiterbarkeit in Version 8.0
+              href: extensibility/changes-80.md
+            - name: Änderungen an der Erweiterbarkeit in Version 7.3
+              href: extensibility/extensibility-changes-73.md
+            - name: Änderungen an der Erweiterbarkeit im Juli 2017
+              href: extensibility/changes-july-2017.md
         - name: Grundlagen
           items:
             - name: Tiefgreifende Anpassungen
@@ -359,10 +362,16 @@
               href: extensibility/breaking-changes.md
     - name: Leistung
       items:
-        - name: Abläufe mithilfe des Trace parser verfolgen
+        - name: Abläufe mithilfe des Ablaufverfolgungs-Parsers verfolgen
           href: perf-test/trace-trace-tutorial.md
-        - name: Leistungs-SDK und Mehrbenutzertests mittels Visual Studio Online
-          href: perf-test/perfsdk-tutorial.md
+        - name: Einzelbenutzertests mit Aufgabenaufzeichnung und Leistungs-SDK
+          href: perf-test/single-user-test-perf-sdk.md
+        - name: Mehrfachbenutzertests mit dem Leistungs-SDK und einem lokalen Testcontroller
+          href: perf-test/multi-user-testing-local-test-controller.md
+        - name: Mehrfachbenutzertests mit Leistungs-SDK und Azure DevOps
+          href: perf-test/multi-user-testing-perfsdk-azuredevops.md
+        - name: Handbuch zur Problembehandlung für Einzel- oder Mehrfachbenutzertests mit Leistungs-SDK
+          href: perf-test/troubleshoot-perf-sdk-user-testing.md
         - name: Leistungs-SDK und Mehrbenutzertests in lokalen Umgebungen
           href: perf-test/perfsdk-tutorial-lbd.md
         - name: Mithilfe des Trace-Parsers Probleme diagnostizieren und Leistungsprobleme analysieren
@@ -922,6 +931,8 @@
           href: financial/create-exchange-rate-providers.md
         - name: Erstellen von Wechselkursanbietern in Finance and Operations Version 8.0
           href: financial/create-exchange-rate-8.md
+    - name: 'Ausgleichen von Buchungen mithilfe CustTrans::settleTransaction'
+      href: financial/settletransact-obsolete.md
 - name: Lieferkettenentwicklung
   items:
     - name: Anleitung zur Entwicklung von Gantt-Steuerelementen
@@ -1074,7 +1085,7 @@
     - name: Codemigration und Aktualisierung
       href: migration-upgrade/code-migration-home-page.md
       items:
-        - name: Migrieren von Code vorbereiten
+        - name: Vorbereiten der Codemigration
           href: migration-upgrade/prepare-migration.md
         - name: Konfigurieren der Azure DevOps-Zuordnung
           href: migration-upgrade/configure-vso-solution.md
@@ -1203,7 +1214,7 @@
           href: lifecycle-services/lcs-works-lcs.md
         - name: LCS für Partner
           href: lifecycle-services/getting-started-lcs.md
-        - name: Neuigkeiten
+        - name: Neuerungen
           href: lifecycle-services/whats-new-lcs.md
         - name: Bekannte Probleme
           href: lifecycle-services/known-issues.md
@@ -1234,7 +1245,7 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: Arbeiten mit Aktivitätsdiagrammen in BPM-Bibliotheken
       href: lifecycle-services/using-activity-diagrams.md
-    - name: Synchronisieren der BPM-Bibliotheken mit Azure DevOps
+    - name: Synchronisieren von BPM-Bibliotheken mit Azure DevOps
       href: lifecycle-services/synchronize-bpm-vsts.md
     - name: Erstellen von Benutzerakzeptanz-Testbibliotheken mithilfe von Aufgabenleitfäden und BPMs
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md

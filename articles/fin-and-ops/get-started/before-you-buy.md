@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7aed6895d526011e353eef7b85e4e2f096a25e5a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: dc34ca33d2844eaedfa1734fe6d7c7f2ef4a622d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546828"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595684"
 ---
 # <a name="before-you-buy"></a>Vor dem Einkauf
 
@@ -63,7 +63,7 @@ Es gibt zwei Möglichkeiten, ein Abonnement für eine lokale Bereitstellung zu k
 
 ### <a name="buy-through-volume-licensing"></a>Erwerb durch eine Volumenlizenzierung
 
-Wenn Ihre Organisation mehr als 250 Dynamics 365-Benutzer hat, interessieren Sie sich möglicherweise für den Erwerb einer [Volumenlizenzierungsvereinbarung](https://www.microsoft.com/en-us/Licensing/product-licensing/dynamics365).
+Wenn Ihre Organisation mehr als 250 Dynamics 365-Benutzer hat, interessieren Sie sich möglicherweise für den Erwerb einer [Volumenlizenzierungsvereinbarung](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
 Bei der Volumenlizenzierung steht Finance and Operations zur Verfügung über:
 
@@ -87,7 +87,7 @@ Microsoft stellt flexiblen, branchenführenden Support, Dienstleistungen und Res
 Weitere Informationen:
 
 - [Dynamics 365 Support](https://www.microsoft.com/dynamics365/support)
-- [Schnellstartübersicht für Microsoft Dynamics Cloud Service Support Benefits](http://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
+- [Schnellstartübersicht für Microsoft Dynamics Cloud Service Support Benefits](https://go.microsoft.com/fwlink/?LinkId=530335) (PDF)
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Schritt 4: Planen der Bereitstellung und Informationen über FastTrack
 

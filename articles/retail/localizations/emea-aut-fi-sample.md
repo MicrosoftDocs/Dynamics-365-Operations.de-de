@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 692afd9dc6302ceda0e61b1b42affd775b9a3ac9
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ee4ae3f9037d975855aa970a052a36ec90257e1d
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537735"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595304"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
@@ -30,9 +30,9 @@ ms.locfileid: "1537735"
 
 ## <a name="introduction"></a>Einführung
 
-Um die lokalen steuerlichen Anforderungen für Kassen in Österreich zu erfüllen, umfassen die Microsoft Dynamics 365 for Retail-Funktionen für Österreich eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](http://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](http://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardare station aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
+Um die lokalen steuerlichen Anforderungen für Kassen in Österreich zu erfüllen, umfassen die Microsoft Dynamics 365 for Retail-Funktionen für Österreich eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](https://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardare station aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 
-Microsoft gibt keine Hardware, Software oder Dokumentation von EFSTA aus frei. Um Informationen darüber zu erhalten, wie Sie die EFR-Lösung beziehen und betreiben, wenden Sie sich an [EFSTA](http://efsta.org/kontakt/).
+Microsoft gibt keine Hardware, Software oder Dokumentation von EFSTA aus frei. Um Informationen darüber zu erhalten, wie Sie die EFR-Lösung beziehen und betreiben, wenden Sie sich an [EFSTA](https://efsta.org/kontakt/).
 
 ## <a name="scenarios"></a>Szenarien
 
@@ -224,27 +224,27 @@ Schließen Sie die Steuerintegrationseinrichtungsschritte ab, wie beschrieben in
 
 Das Steuererfassungsdienst-Integrationsbeispiel für Österreich ist Teil des Retail SDK. Informationen zur Installation und Verwendung des Retail SDK finden Sie in der [Retail SDK-Dokumentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-Dieses Beispiel besteht aus Erweiterungen für das CRT, Hardware station und POS. Um dieses Beispiel auszuführen, müssen Sie das CRT, Hardware station und POS-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps, bei dem noch keine Dateien geändert wurden.
+Dieses Beispiel besteht aus Erweiterungen für CRT, Hardwarestation und POS. Um dieses Beispiel auszuführen, müssen Sie CRT, Hardwarestation und POS-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps, bei dem noch keine Dateien geändert wurden.
 
 Gehen Sie folgendermaßen vor, um eine Entwicklungsumgebung einzurichten, damit Sie das Beispiel testen und erweitern können.
 
 ### <a name="enable-commerce-runtime-extensions"></a>Commerce-Laufzeiterweiterungen aktivieren
 
-Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die folgenden Prozeduren abzuschließen, öffnen Sie die CRT-Lösung **CommerceRuntimeSamples.sln**, unter **RetailSdk\\SampleExtensions\\CommerceRuntime**.
+Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die folgenden Prozeduren abzuschließen, öffnen Sie die CRT-Lösung, **CommerceRuntimeSamples.sln**, unter **RetailSdk\\SampleExtensions\\CommerceRuntime**.
 
 #### <a name="documentproviderefrsample-component"></a>DocumentProvider.EFRSample-Komponente
 
 1. Suchen Sie das Projekt **Runtime.Extensions.DocumentProvider.EFRSample**, und erstellen Sie es.
 2. Im Ordner **Runtime.Extensions.DocumentProvider.EFRSample\\bin\\Debug** suchen Sie die Assembly-Datei **Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll**.
-3. Kopieren Sie die CRT-Assemblydatei in den CRT-Erweiterungsordner:
+3. Kopieren Sie die Assemblydatei in den CRT-Erweiterungsordner:
 
     - **Retail Server:** Kopieren Sie die Assembly in den Ordner **\\bin\\ext** unter dem Microsoft Internet Information Services (IIS) Retail Server-Websitespeicherort.
-    - **Lokales CRT in Modern POS:** Kopieren Sie die Assembly in den Ordner **\\ext** unter dem lokalen CRT-Client-Broker-Speicherort.
+    - **Lokales CRT i Modern POS:** Kopieren Sie die Assembly in den Ordner **\\ext** unter dem lokalen CRT-Clientbroker-Speicherort.
 
 4. Suchen Sie die Erweiterungskonfigurationsdatei für CRT:
 
     - **Retail Server:** Die Datei hat den Namen **commerceruntime.ext.config**, und sie befindet sich im Ordner **bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
-    - **Lokales CRT auf Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Client-Broker-Speicherort.
+    - **Lokales CRT in Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Clientbroker-Speicherort.
 
 5. Erfassen Sie die CRT-Änderung in der Erweiterungskonfigurationsdatei.
 
@@ -256,15 +256,15 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
 
 1. Suchen Sie das Projekt **Runtime.Extensions.DocumentProvider.DataModelEFR**, und erstellen Sie es.
 2. Im Ordner **Runtime.Extensions.DocumentProvider.DataModelEFR\\bin\\Debug** suchen Sie die Assembly-Datei **Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll**.
-3. Kopieren Sie die CRT-Assemblydatei in den CRT-Erweiterungsordner:
+3. Kopieren Sie die Assemblydatei in den CRT-Erweiterungsordner:
 
     - **Retail Server:** Kopieren Sie die Assembly in den Ordner **\\bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
-    - **Lokales CRT in Modern POS:** Kopieren Sie die Assembly in den Ordner **\\ext** unter dem lokalen CRT-Client-Broker-Speicherort.
+    - **Lokales CRT i Modern POS:** Kopieren Sie die Assembly in den Ordner **\\ext** unter dem lokalen CRT-Clientbroker-Speicherort.
 
 4. Suchen Sie die Erweiterungskonfigurationsdatei für CRT:
 
     - **Retail Server:** Die Datei hat den Namen **commerceruntime.ext.config**, und sie befindet sich im Ordner **bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
-    - **Lokales CRT auf Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Client-Broker-Speicherort.
+    - **Lokales CRT in Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Clientbroker-Speicherort.
 
 5. Erfassen Sie die CRT-Änderung in der Erweiterungskonfigurationsdatei.
 
@@ -277,7 +277,7 @@ Die CRT-Erweiterungskomponenten sind in den CRT-Beispielen enthalten. Um die fol
 1. Suchen Sie die Erweiterungskonfigurationsdatei für CRT:
 
     - **Retail Server:** Die Datei hat den Namen **commerceruntime.ext.config**, und sie befindet sich im Ordner **bin\\ext** unter dem IIS Retail Server-Websitespeicherort.
-    - **Lokales CRT auf Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Client-Broker-Speicherort.
+    - **Lokales CRT in Modern POS:** Die Datei hat den Namen **CommerceRuntime.MPOSOffline.Ext.config**, und sie befindet sich unter dem lokalen CRT-Clientbroker-Speicherort.
 
 2. Erfassen Sie die CRT-Änderung in der Erweiterungskonfigurationsdatei.
 
@@ -463,7 +463,7 @@ Der Zweck dieser Dateien ist es, Einstellungen zu aktivieren, damit der Dokument
 
 Der Zweck der Erweiterung, die ein Steuerkonnektor ist, ist die Kommunikation mit dem Steuererfassungsdienst.
 
-Die Hardware station-Erweiterung ist **HardwareStation.Extension.EFRSample**. Die Hardware station-Erweiterung verwendet das HTTP-Protokoll, um Dokumente, die die CRT-Erweiterung generiert, zum Steuererfassungsdienst zu übermitteln. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
+Die Hardware station-Erweiterung ist **HardwareStation.Extension.EFRSample**. Die Hardwarestation-Erweiterung verwendet das HTTP-Protokoll, um Dokumente, die die CRT-Erweiterung generiert, zum Steuererfassungsdienst zu übermitteln. Sie handhabt auch die Antworten, die vom Steuererfassungsdienst empfangen werden.
 
 #### <a name="request-handler"></a>Anforderungshandler
 

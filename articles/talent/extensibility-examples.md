@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c113b0f4ab2c8e44d00fcfca3f0a6ca828a854ae
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518066"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577794"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Talent mit PowerApps und Microsoft Flow erweitern – Beispielsszenarien
 
@@ -115,7 +115,7 @@ Führen Sie diese PowerApps-App als eine Administratorkonsole aus, um die folgen
 
 Diese PowerApps-App verwendet n:n-Beziehungen, sodass Sie diese App als Vorlage für andere Szenarien verwenden können, in denen Sie Datensätze mit n:n-Beziehungen extrahieren müssen.
 
-Zum herunterladen der Vorlage **Administratorkonsole zum Verwalten von Talentpools** wechseln Sie zu [Administratorkonsole zum Verwalten von Talentpools](http://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) im Microsoft Download Center.
+Zum herunterladen der Vorlage **Administratorkonsole zum Verwalten von Talentpools** wechseln Sie zu [Administratorkonsole zum Verwalten von Talentpools](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) im Microsoft Download Center.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

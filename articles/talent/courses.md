@@ -68,10 +68,10 @@ In der folgenden Tabelle werden die drei Einstellungstypen für Kurse aufgeführ
 </tr>
 <tr class="odd">
 <td><strong>Agenda und Sitzung</strong></td>
-<td>Wählen Sie diesen Typ für komplexere Kurse aus. Sie können etwa den Kursplan in Verläufe und Sitzungen unterteilen.
+<td>Wählen Sie diesen Typ für komplexere Kurse aus. Sie können etwa den Kursplan in Pfade und Sitzungen unterteilen.
 <ul>
-<li><strong>Verlauf</strong> - Verläufe sind bestimmte Fachgebiete für einen Kurs.</li>
-<li><strong>Sitzungen</strong> – Sitzungen unterteilen Verläufe und können bestimmte Prozesse oder Techniken abdecken, die für jeden Verlauf relevant sind.</li>
+<li><strong>Pfad</strong> – Pfade sind bestimmte Fachgebiete für einen Kurs.</li>
+<li><strong>Sitzungen</strong> – Sitzungen unterteilen Pfade und können bestimmte Prozesse oder Techniken abdecken, die für jeden Verlauf relevant sind.</li>
 </ul></td>
 </tr>
 </tbody>

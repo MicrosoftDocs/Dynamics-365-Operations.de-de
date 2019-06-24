@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdd8acea22fb3298d1d0e7ccce0ca42c1427fe80
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5fb6b23d11ab263ed158a0a4476f77ed22b5084
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561809"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595661"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -45,11 +45,11 @@ In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics AX 
 <tr>
 <td>Ein kurzer Überblick zum Lagersaldo, Ressource in Fertigung (RIF) und zum Lagerzufluss und -abfluss während des ausgewählten Geschäftsjahres.</td>
 <td>Nicht zutreffend</td>
-<td>Der Arbeitsbereich <strong> Kostenverwaltung</strong> enthält einen Abschnitt, in dem die Lageraufstellung oder die RIF-Lageraufstellung während des ausgewählten Finanzzeitraums dargestellt wird. Der Aufstellung basiert auf einem Datensatz-Cache, der standardmäßig alle 24 Stunden aktualisiert wird. Daten-Cache kann so konfiguriert werden, das Benutzer ihn manuell für Berichte in Echtzeit aktualisieren können. Die <strong>Datenaktualisierungsstatuskarte</strong> im <strong>Kostenadministration</strong>-Arbeitsbereich zeigt, wann der Cache zuletzt aktualisiert wurde.</td>
+<td>Der Arbeitsbereich <strong>Kostenverwaltung</strong> enthält einen Abschnitt, in dem die Lageraufstellung oder die RIF-Lageraufstellung während des ausgewählten Finanzzeitraums dargestellt wird. Der Aufstellung basiert auf einem Datensatz-Cache, der standardmäßig alle 24 Stunden aktualisiert wird. Daten-Cache kann so konfiguriert werden, das Benutzer ihn manuell für Berichte in Echtzeit aktualisieren können. Die <strong>Datenaktualisierungsstatuskarte</strong> im <strong>Kostenadministration</strong>-Arbeitsbereich zeigt, wann der Cache zuletzt aktualisiert wurde.</td>
 <td>Kostencontroller interessieren sich dafür, ob sich der Lageraufstellungs- oder RIF-Lageraufstellungsaldo mit der Zeit erhöht oder verringert. Durch die Klassifizierung betrieblicher Ereignisse im Auszug kann der Kostencontroller einen Überblick über den Bestandsfluss abrufen. Wenn das Lager oder das RIF-Lager nach Standardkosten evaluiert wird, kann auch die gesamte erfasste Abweichung betrachtet werden.</td>
 </tr>
 <tr>
-<td>Verwenden Sie das<strong> Kostenmanagement</strong>-Modul.</td>
+<td>Verwenden Sie das <strong>Kostenmanagement</strong>-Modul.</td>
 <td>Nicht zutreffend</td>
 <td>Die Kostenverwaltung wird als Domänenbereich eingeführt. Kostenabhängige Konfiguration und Informationen auf die Lagerverwaltung, die Produktionssteuerung und die Kreditoren verteilt.</td>
 <td>Da alle Aufgaben, die zum Kostenmanagement gehören, in einem Modul zentralisiert werden, ist es für Kostencontroller leichter, das System zu verwalten.</td>
@@ -516,7 +516,7 @@ Es wurden keine neuen Funktionen hinzugefügt.
 </tr>
 <tr>
 <td>(EU) Mengen in zusätzlichen Maßeinheiten für Intrastat über Einheitkonvertierungseinstellungen berichten.</td>
-<td>Intrastat-Warencodes hat ein Textfeld für zusätzliche Einheiten. Die <strong> Produkt</strong>-karte hat ein Feld für die Menge der zusätzlichen Einheiten in Kilogramm.</td>
+<td>Intrastat-Warencodes hat ein Textfeld für zusätzliche Einheiten. Die <strong>Produkt</strong>-karte hat ein Feld für die Menge der zusätzlichen Einheiten in Kilogramm.</td>
 <td>Zusätzliche Einheiten für Intrastat Warencodes werden aus der Einheitenliste ausgewählt. Die Menge der zusätzlichen Einheiten wird über die Konvertierungseinstellungen berechnet.</td>
 <td>Dies vereinheitlicht den Ansatz zur erneuten Berechnung von Buchung für weitere Einheiten.</td>
 </tr>
@@ -600,7 +600,7 @@ Ein über Microsoft Azure gehostetes Retail HQ bietet eine zentralisierte Verwal
 <li>Sortimentslebenszyklusnachverfolgung.</li>
 <li>Verwalten von freigegebenen Produkten.</li>
 </ul>
-Der <strong>Produktpreise und -rabatte </strong>-Arbeitsbereich ermöglicht die folgenden Funktionen:
+Der <strong>Produktpreise und -rabatte</strong>-Arbeitsbereich ermöglicht die folgenden Funktionen:
 <ul>
 <li>Verwalten von Preisen und Rabatten für einen angegebenen Kanal und eine Kategorie.</li>
 <li>Verwalten von Kategoriepreisregeln.</li>
@@ -640,8 +640,8 @@ Der <strong>Katalogverwaltung</strong>-Arbeitsbereich ermöglicht die folgenden 
 <li>Nachverfolgen des Schichtstatus für einen bestimmte Shopgruppe oder einen Shop.</li>
 <li>Direkt Validieren und Herunterladen der MPOS-Programminstallation in den Filialen.</li>
 <li>Drucken von Berichten und der Zugriff die entsprechenden Seiten.</li>
-</ul>Der 
-<strong>Finanzdaten für den Einzelhandelsshop</strong>-Arbeitsbereich ermöglicht die folgenden Aufgaben:
+</ul>Der Finanzdaten für den 
+<strong>Einzelhandelsshop</strong>-Arbeitsbereich ermöglicht die folgenden Aufgaben:
 <ul>
 <li>Erstellen, Kalkulieren und Buchen von Aufstellungen für einen bestimmten Kanal.</li>
 <li>Planen von Stapelverarbeitungsaufträgen zur Aktualisierung des Lagers und zur Kalkulation und Buchung von Aufstellungen.</li>
@@ -721,7 +721,7 @@ Die Einzelhandel-Server und Datenverwaltung bietet Kunden und Unternehmen die M�
 </thead>
 <tbody>
 <tr>
-<td>Verbindung mit einer Commerce-Laufzeit-Datenbank (CRT), die Daten für den Kanal über CRT-Dienste speichert.</td>
+<td>Stellen Sie eine Verbindung mit einer Commerce Runtime-(CRT)-Datenbank her, die Geschäftsdaten für den Kanal mithilfe von CRT-Diensten speichert.</td>
 <td>OData V3 wird unterstützt.</td>
 <td>OData V4 wird unterstützt.</td>
 <td>Kann dafür sorgen, dass der Kunde die aktuellen OData-Standards nutzt. Sorgt außerdem für eine robuste Mehrkanalerfahrung, indem es den Vertrieb über die Kanäle (im Shop, mobil und online) integriert.</td>
@@ -971,7 +971,7 @@ Es gibt eine verbesserte "low-touch" Clientkomponenteninstallation über die Sel
 </tr>
 <tr>
 <td>Überwachen des Status des Systems, und Diagnose von Fehlern und Problemen</td>
-<td>Diese Funktionen erfordern <a href="http://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack für Microsoft Dynamics AX 2012 R3 CU8 Retail.</a></td>
+<td>Diese Funktionen erfordern <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 Management Pack für Microsoft Dynamics AX 2012 R3 CU8 Retail.</a></td>
 <td>Überwachen sowie Diagnose für Einhelhandel-Komponenten ist jetzt über das Dashboard in <strong>Betriebseinblick</strong> in LCS verfügbar.</td>
 <td>Das <strong>Betriebseinblick</strong>-Dashboard ist ein Cloud-basiertes Überwachungsportal, das die Installation der System Center Operations Manager (SCOM)-Infrastruktur überflüssig macht.</td>
 </tr>
@@ -999,7 +999,7 @@ Es gibt eine verbesserte "low-touch" Clientkomponenteninstallation über die Sel
 <tr>
 <td>Hier können Sie einen kurzen Überblick über Lieferalternativen für zugesagte Aufträge abrufen.</td>
 <td>Wenn die Produktverfügbarkeit eingeschränkt ist, und das angeforderte Lieferdatum des Kunden für eine oder mehrere Produkte im Auftrag nicht erfüllt werden kann, wird die Einhaltung der Lieferzusagen problematisch. Um Alternativen zu suchen um das angeforderte Lieferdatum des Kunden einzuhalten, oder dem Kunden eine akzeptable und zuverlässige Lösung anzubieten, muss der Auftragsbearbeiter möglicherweise mehrere Formulare öffnen. Jedes stellt nur einen Teil der erforderlichen Informationen bereit. Ein Formular zeigt die verfügbare Menge standortübergreifend an, ein anderes zeigt die verfügbare Menge in der Intercompany-Einstellung an, ein drittes Formular bietet die Möglickeit, das früheste Verfügbarkeitsdatum für einen Standort/Variante zu berechnen und ein viertes zeigt Lieferbestellungen. Daher sind die Benutzer nicht sicher, ob sie alle relevanten Optionen berücksichtigt haben. Die Benutzer fühlen sich nicht sicher, da zahlreiche Unterbrechungen während des Lieferzusageablaufs auftreten (z. B. das Öffnen und Schließen von Seiten und Abrufen von Optionen und Informationen).</td>
-<td>Auf Grundlage die vorhandenen Algorithmen für die Berechnung des Lieferdatums bietet die Seite <strong>Lieferungsalternativen </strong> mehr Benutzerfreundlichkeit bei Lieferzusagen:
+<td>Auf Grundlage die vorhandenen Algorithmen für die Berechnung des Lieferdatums bietet die Seite <strong>Lieferungsalternativen</strong> mehr Benutzerfreundlichkeit bei Lieferzusagen:
 <ul>
 <li>Sie konsolidiert relevante Informationen aus mehreren Formularen an einem Ort.</li>
 <li>Sie bietet "einsatzbereite" alternative Lieferungspakete, wie eine Kombination aus Standort/Lagerort/Variante/Transportmodus auf Basis der schnellsten Lieferung (frühestes verfügbares Datum), aus denen der Benutzer wählen kann.</li>

@@ -3,7 +3,7 @@ title: Praktische Empfehlungen
 description: In diesem Thema wird erläutert, wie die Lernfähigkeit einer Maschine verwendet werden kann, um Empfehlungen für Stellen und Stellen-Bewerber bereitzustellen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: fb31b413cfe3cd168bbb12ce6070325ff5f736da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
+ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518069"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620619"
 ---
 # <a name="intelligent-recommendations"></a>Praktische Empfehlungen
 
@@ -33,12 +33,12 @@ Lernfähigkeit einer Maschine kann Personalbeschaffungsmitarbeitern und Vorgeset
 
 > [!NOTE] 
 > - Die intelligente Empfehlungsfunktion sind nur mit dem [umfassenden Add-On für Neueinstellungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) verfügbar.
-> - Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe der **Administratoreinstellungen** in Attract. Setzen Sie **Kandidatenempfehlung**, **Einzelvorgangsempfehlung** und **Interessentenempfehlung** auf **Aktiviert** fest. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature). 
+> - Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe des **Admin Center** in Attract. Setzen Sie **Kandidatenempfehlung**, **Einzelvorgangsempfehlung** und **Interessentenempfehlung** auf **Aktiviert** fest. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Kandidatenempfehlungen
 
-Da Stellenausschreibungen möglicherweise Hunderte von Bewerbern anziehen, kann es schwierig sein für Personalbeschaffer und Manager, die Kandidaten zu finden, die mit den Fähigkeiten und den Qualifikationen am besten für die Position passen. Durch Analysieren der Wechselbeziehung zwischen der Stellenbeschreibung und Bedürfnissen und Daten von den Zusammenfassungen und Profilen, kann  die Lernfähigkeit einer Maschine dazu verwendet werden, um Kandidatenempfehlungen zu erzeugen. Kandidatenempfehlungen können Personalbeschaffungsmitarbeitern und Managern helfen, die besten Talente zu identifizieren und sie dabei unterstützten, die Interview-Phase schneller zu durchlaufen. Für jede Stellef, für die es mehr als zehn Kandidaten oder Interessenten gibt, die Zusammenfassungen oder vollständige Profile haben, erscheinen die Kandidaten oder Interessenten, die den Anforderungen der Stelle am besten entsprechen, oben im Abschnitt **Zu berücksichtigende Bewerber** auf der Seite **Stelle**.
+Da Stellenausschreibungen möglicherweise Hunderte von Bewerbern anziehen, kann es schwierig sein für Personalbeschaffer und Manager, die Kandidaten zu finden, die mit den Fähigkeiten und den Qualifikationen am besten für die Position passen. Durch Analysieren der Wechselbeziehung zwischen der Stellenbeschreibung und Bedürfnissen und Daten von den Zusammenfassungen und Profilen, kann die Lernfähigkeit einer Maschine dazu verwendet werden, um Kandidatenempfehlungen zu erzeugen. Kandidatenempfehlungen können Personalbeschaffungsmitarbeitern und Managern helfen, die besten Talente zu identifizieren und sie dabei unterstützten, die Interview-Phase schneller zu durchlaufen. Für jede Stellef, für die es mehr als zehn Kandidaten oder Interessenten gibt, die Zusammenfassungen oder vollständige Profile haben, erscheinen die Kandidaten oder Interessenten, die den Anforderungen der Stelle am besten entsprechen, oben im Abschnitt **Zu berücksichtigende Bewerber** auf der Seite **Stelle**.
 
 Für jeden möglichen empfohlenen Kandidaten können Sie **Kandidat anzeigen** auf der Kandidatenkarte auswählen, um das Profil des Kandidaten zu überprüfen und Aktivitäten hinsichtlich der Bewerbung auszuführen. Sie können die Schaltfläche (**...**) nutzen,um das Profil des Kandidaten auf einer neuen Registerkarte zu öffnen. Sie können die Schaltfläche auch verwenden, um Rückmeldungen zu den Empfehlungen zu geben. Auf diese Weise können Sie das Empfehlungsmodul abstimmen, um in Zukunft die Empfehlungen zu verbessern. Sämtliche Empfehlungen, die nicht passen, werden vom Abschnitt **Zu berücksichtigende Kandidaten** entfernt, wenn Sie die Seite **Stelle** aktualisieren. Sie können die Rückmeldungskarte verwenden, um anzugeben, warum die Empfehlung nicht sinnvoll ist.
 

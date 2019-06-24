@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14f2c6eb3baf0de65de3b72e10b42b03a8c6b21a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6e295456838ca0195a472518b5979dfdc7819f74
+ms.sourcegitcommit: 19859d8566a8c7840066b2c10c6b08b67f1b83f4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536709"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "1617972"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview banner](../includes/pivate-preview-banner.md)]
+[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Funktionsbereitstellung
@@ -138,10 +138,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 - Das manuelle Erstellen von Quarantäneaufträgen wird für Artikelgewichtsprodukte nicht unterstützt.
 - Das manuelle Umlagern von Bestand, der einer Arbeit zugeordnet ist, wird für Artikelgewichtsprodukte nicht unterstützt.
 - Die Konsolidierung von Ladungsträgern wird für Artikelgewichtsprodukte nicht unterstützt.
-- Änderungen am Lagerort-Bestandsstatus als Teil einer regelmäßigen Aufgabe werden für Artikelgewichtsprodukte nicht unterstützt.
-- Änderungen am Bestandsstatus, die von einer Abfrage definiert werden, werden für Artikelgewichtsprodukte nicht unterstützt. (Änderungen dem Qualitätsprüfungsauftrags-Bestandsstatus werden ebenfalls nicht unterstützt.)
-- Für Artikelgewichtsprodukte kann der Bestandsstatus nicht auf der Seite **Verfügbarer Lagerbestand nach Lagerplatz** geändert werden.
-- Für Artikelgewichtsprodukte kann der Bestandsstatus nicht als Teil der Lagerort-App-Umlagerungsarbeit geändert werden.
 - Ladungsträgerladungen zur Initialisierung des Lagerortbestands werden nicht für Artikelgewichtsprodukte unterstützt.
 - Chargenausgleichprozesse werden nicht für Artikelgewichtsprodukte unterstützt.
 - Die Handhabung von negativem physischem Bestand wird nicht für Artikelgewichtsprodukte unterstützt.
@@ -151,7 +147,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 
 - Die Funktionen zur Clusterkommissionierung werden nicht für Artikelgewichtsprodukte unterstützt.
 - Entnahme- und Verpackungs-Lagerortverarbeitungen werden für Artikelgewichtsprodukte nicht unterstützt.
-- Für Artikelgewichtsprodukte kann die Arbeit nicht auf der Seite **Arbeit** ausgeführt werden.
 - Für Artikelgewichtsprodukte kann Arbeit, die in einer Arbeitsvorlage definiert ist, automatisch ausgeführt werden.
 - Die Funktionen zur Stornierung von Arbeit werden nicht für Artikelgewichtsprodukte unterstützt.
 - Für Artikelgewichtsprodukte wird die manuelle Verpackungsstationsverarbeitung, bei der Arbeit nach dem Schließen von Containern erstellt wird, nicht unterstützt.
@@ -163,7 +158,7 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 - Die Kanban-Funktionen werden nicht für Artikelgewichtsprodukte unterstützt.
 - Für Artikelgewichtsprodukte können Seriennummern nicht vor dem Verbrauch registriert werden.
 - Die Funktionen zur Stornierung von Ladungsträgern werden nicht für Artikelgewichtsprodukte unterstützt.
-- Für Artikelgewichtsprodukte kann die Fertigmeldung nach Seriennummer registriert werden.
+- Für Artikelgewichtsprodukte kann die Fertigmeldung nicht nach Seriennummer registriert werden.
 
 ### <a name="transportation-management-processing"></a>Transportverwaltungsverarbeitung
 

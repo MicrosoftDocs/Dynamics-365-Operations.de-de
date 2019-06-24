@@ -3,7 +3,7 @@ title: Bildschirmlayouts für die Verkaufsstelle (POS)
 description: Dieses Thema enthält Informationen zu Bildschirmlayouts für Microsoft Dynamics 365 for Retail-Verkaufsstellen (POS)-Umgebungen.
 author: jblucher
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 91d6e34c25710716788542dabb3bd7d935b2d4ab
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e9536563ce7ddfc4aef54ae05267316ea8139263
+ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549427"
+ms.lasthandoff: 05/27/2019
+ms.locfileid: "1607036"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Bildschirmlayouts für die Verkaufsstelle (POS)
 
@@ -51,6 +51,7 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 - **Thema** - Sie können zwischen den hellen oder dunklen Anwendungsdesigns auswählen. Das Thema betrifft die gewünschten Schrift- und Hintergrundfarben in der Anwendung.
 - **Akzentfarbe** - Die Akzentfarbe wird im POS verwendet, um bestimmte Sichtelemente wie Kacheln, Befehlsschaltflächen oder Links zu unterscheiden oder hervorzuheben. Diese Elemente sind in der Regel aktiv.
 - **Kopffarbe** – Sie können die Farbe der Kopfzeile konfigurieren, um die Brandingbedingungen des Einzelhändlers zu erfüllen. Diese Funktion ist nur in Microsoft Dynamics 365 for Retail, Version 1611 verfügbar.
+- **Datum/Uhrzeit anzeigen** – Bei Aktivierung werden aktuelles Datum und aktuelle Uhrzeit in der POS-Kopfzeile angezeigt.
 - **Anmeldungs-Hintergrund** - Sie können ein Hintergrundbild für die Bildschirm-Anmeldung angeben. Die Dateigröße von Hintergrundbildern sollte so gering wie möglich gehalten werden, da das Speichern und Hochladen großer Dateien Auswirkungen auf das Anwendungsverhalten und die Leistung haben kann.
 - **Anwendungshintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Für den Anmelde-Hintergrund sollte die Dateigröße so gering wie möglich gehalten werden.
 

@@ -3,7 +3,7 @@ title: Kontostrukturen konfigurieren
 description: Dieses Thema enthält Informationen zu Kontostrukturen und Finanzdimensionen.
 author: aprilolson
 manager: AnnBe
-ms.date: 05/21/2018
+ms.date: 06/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0665f5aec2a0809ecb383c1d4adf4c2072c9569
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5fbd4b34d09b4ba8e1d34234c8e32268bba18778
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552003"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617295"
 ---
 # <a name="configure-account-structures"></a>Kontostrukturen konfigurieren
 
@@ -70,6 +70,16 @@ Der Abschnitt **Details zu zulässigem Wert** führt Sie durch das Erstellen von
 
 [![Werte zulassen](./media/account.png)](./media/account.png) 
 
+Zulässige Werte werden standardmäßig auf einer Erfassungs- oder Buchhaltungsverteilungseintrags-Seite angezeigt, wenn gemäß der Kontostruktureinrichtung keine anderen möglichen Werte gibt, die ausgewählt werden können
+
+Dies ist ein Beispiel der **Gewinn- und Verlust-Kontostruktur**.
+
+|Hauptkonto          | Unternehmenseinheit    |Abteilung          | Kostenstelle    |
+|----------------------|-----------|----------------------|-----------|
+|400000..999999 | 002 | 022 | 014 |
+
+Beim Eingeben einer Erfassung und dem Auswählen eines Kontos im Gewinn- und Verlustbereich, führt die Auswahl von Unternehmenseinheit „002“ dazu, dass Werte 022 und 014 standardmäßig in der Kontosteuerung angezeigt werden. Dieses Verhalten tritt auch auf der Buchhaltungsverteilungsseite auf. 
+
 ## <a name="more-than-7-criteria-needed"></a>Mehr als 7 Kriterien erforderlich
 
 Wenn Sie mehr als 7 Kriterien benötigen, können Sie diese in der nächsten Zeile hinzufügen. Bei der Arbeit im Abschnitt **Details zu zulässigem Wert** werden Sie feststellen, dass das Kriterium **+Neue hinzufügen** nach Eingabe des siebten Kriteriums nicht mehr aktiv ist. Dies ist auf viele Faktoren zurückzuführen, wie zum Beispiel: 
@@ -79,8 +89,6 @@ Wenn Sie mehr als 7 Kriterien benötigen, können Sie diese in der nächsten Zei
  - Benutzerfreundlichkeit  
  
 Um weitere Kriterien hinzuzufügen, klicken Sie auf **Duplizieren im Segment** und **Details zu zulässigem Wert**. Dies kopiert die Kriterien an eine neue Position. Sie können dann den Abschnitt **Details zu zulässigem Wert** überschreiben oder ändern.
-
-(LINK ZUM VIDEO, DAS ERSTELLT WIRD)
 
 ## <a name="best-practices"></a>Optimale Verfahren
 Bei der Einrichtung Ihrer Kontostruktur gibt es einige bewährte Methoden, die Sie befolgen können. Dies ist jedoch nur eine Orientierungshilfe, so dass eine ganzheitliche Diskussion über Ihr Unternehmen, Ihren Wachstumsplan und Ihren Wartungsplan als Teil dieser Diskussion betrachtet werden sollte.

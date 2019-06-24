@@ -3,7 +3,7 @@ title: Finanzberichterstellung
 description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance and Operations auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 author: aprilolson
 manager: AnnBe
-ms.date: 09/26/2018
+ms.date: 05/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b8d3630e60fb2f1a8ca7e3610bbb4fcd32c17dec
+ms.sourcegitcommit: 06c8dc5bc4e1c41f68e1cda141d61529768be958
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550304"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1594959"
 ---
 # <a name="financial-reporting"></a>Finanzberichterstellung
 
@@ -37,9 +37,9 @@ In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 for Finance a
 Sie können das Menü **Finanzberichterstellung** an den folgenden Stellen in Finance and Operations nutzen:
 
 -   **Hauptbuch** &gt; **Abfragen und Berichte**
--   **Planung** &gt; **Anfragen und Berichte**  &gt; **Grundlegende Planung**
--   **Planung** &gt; **Anfragen und Berichte**  &gt; **Grundlegende Planung**
--   **Planung** &gt; **Anfragen und Berichte**  &gt; **Grundlegende Steuerung**
+-   **Planung** &gt; **Anfragen und Berichte** &gt; **Grundlegende Planung**
+-   **Planung** &gt; **Anfragen und Berichte** &gt; **Grundlegende Planung**
+-   **Planung** &gt; **Anfragen und Berichte** &gt; **Grundlegende Steuerung**
 -   Konsolidierungen
 
 Um Finanzberichte für eine juristische Person zu erstellen und zu generieren, müssen Sie die folgenden Informationen für diese juristische Person einrichten:
@@ -64,7 +64,7 @@ Die Finanzberichtsfunktionen stehen Benutzern zur Verfügung, denen die entsprec
 
 | Rechtebezeichnung                       | Beschreibung                                                             | AOT-Name                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
-| Finanzberichtssicherheit verwalten | Finanzberichtssicherheit verwalten und Verwaltungsaufgaben ausführen. | FinancialReportsSecurityMaintain |
+| Finanzberichtssicherheit verwalten | Finanzberichtssicherheit verwalten und Verwaltungsaufgaben ausführen. | FinancialReportsSecuritySystemMaintain |
 | Finanzberichte verwalten            | Finanzberichte entwerfen und verwalten.                                  | FinancialReportsMaintainReports  |
 | Finanzberichte generieren            | Finanzberichte generieren und aktualisieren.                                 | FinancialReportsGenerateReports  |
 | Finanzberichte anzeigen                | Finanzberichte anzeigen.                                                 | FinancialReportsView             |

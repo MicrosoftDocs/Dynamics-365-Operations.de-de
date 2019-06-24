@@ -3,7 +3,7 @@ title: Überblick über mobile Projektanwendungen
 description: Dieses Thema enthält allgemeine Informationen zur zeitbezogenen Bewerbungen für Microsoft Dynamics 365, die auf einem mobilen Gerät verfügbar sind.
 author: KimANelson
 manager: AnnBe
-ms.date: 04/08/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 5b0560a8be32962f94b24754458fb2cf714a15c8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 22ccc70e242ffc9a487720c6a25fa6c5b8d78073
+ms.sourcegitcommit: 2d4b10fb5d3d0fbe518acdd921ebdd1bdc1d135e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1529970"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "1608137"
 ---
 # <a name="project-mobile-applications-overview"></a>Überblick über mobile Projektanwendungen
 
@@ -45,4 +45,4 @@ Meine Arbeitszeitnachweise (optimiert für Mobile) und Arbeitszeitnachweise für
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-Weitere Informationen finden Sie unter[Microsoft Dynamics 365 Project Timesheet mobile Anwendung](project-timesheet.md) [Project Timesheet]( project-time-entry-mobile-workspace.md) und [Project Timesheet auf einem mobilen Gerät](Mobile-timesheets.md).
+Weitere Informationen finden Sie unter [Microsoft Dynamics 365 Project Timesheet – mobile Anwendung](project-timesheet.md), [Projektarbeitszeittabellen auf einem mobilen Gerät]( project-time-entry-mobile-workspace.md), [Projektarbeitszeittabellen auf einem mobilen Gerät](Mobile-timesheets.md) und [Implementieren benutzerdefinierter Felder für die mobile Project Timesheet-App](custom-fields-mobile.md).

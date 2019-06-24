@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3522dba481f3a1fb51be17d26041276831f6df1e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 98ec7d9a57cc39c22a31c025754c83dc1a95139e
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1512120"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547255"
 ---
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
@@ -46,7 +46,7 @@ Mithilfe von „Debitoren” lassen sich alle Debitorenrechnungen und eingehende
     :::column:::
         - [Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Debitorenbuchungsprofile](customer-posting-profiles.md)
-        - [Einstellungen, Autorisierung und Erfassung von Kreditkarten](credit-card-authorizations.md)
+        - [Einrichten, Genehmigen und Erfassen von Kreditkarten](credit-card-authorizations.md)
         - [Erstellen einer Debitorenrechnung](configure-customer-invoices.md)
         - [Einrichten und Verarbeiten von Serienrechnungen](set-up-process-recurring-invoices.md)
         - [Eine Freitextrechnung berichtigen](correct-free-text-invoice.md)

@@ -2,15 +2,15 @@
   href: index.md
 - name: Erste Schritte
   items:
-    - name: Neuigkeiten oder Änderungen
+    - name: Neuerungen oder Änderungen
       href: get-started/whats-new.md
     - name: Vorschaufunktionen in Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
-    - name: Vorschaufunktionen in Dynamics 365 for Retail 10.0.2
+    - name: Neuerungen oder Änderungen in Dynamics 365 for Retail 10.0.2
       href: get-started/whats-new-10-0-2.md
-    - name: Neuigkeiten oder Änderungen in Dynamics 365 for Retail 10.0.1
+    - name: Neuerungen oder Änderungen in Dynamics 365 for Retail 10.0.1
       href: get-started/whats-new-10-0-1.md
-    - name: Neuigkeiten und Änderungen in Dynamics 365 for Retail (April 2019)
+    - name: Neuerungen und Änderungen in Dynamics 365 for Retail (April 2019)
       href: get-started/april-whats-new.md
     - name: Vor dem Erwerb von Retail
       href: get-started/before-you-buy.md
@@ -47,31 +47,37 @@
       href: ../fin-and-ops/get-started/move-lcs-implementation-project-tenant.md
     - name: Implementieren mehrerer LCS-Projekte und -Produktionsumgebungen auf dem gleichen Azure Active Directory-Mandanten
       href: ../fin-and-ops/get-started/implement-multiple-projects-aad-tenant.md
-    - name: Finance and Operations Retail-Projekte implementieren
+    - name: Implementieren von Finance and Operations Retail-Projekten
       href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
-    - name: 'Neue Umgebungen, Azure DevOps und Verzweigungen für Retail-Projekte einrichten'
+    - name: 'Einrichten neue Umgebungen, Azure DevOps und Verzweigungen für Retail-Projekte'
       href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
-    - name: Aktualisieren des Codes und der Umgebung für Retail-Projekte
+    - name: Aktualisieren von Code und Umgebungen für Retail-Projekte
       href: dev-itpro/updating-environments.md
     - name: Testen auf Leistungsprobleme
       href: dev-itpro/retail-implementation-testing-performance.md
 - name: Verteilte Auftragsverwaltung (DOM)
-  href: dom.md
+  items:
+    - name: Überblick über DOM
+      href: dom.md
+    - name: Kostenkonfiguration
+      href: cost.md
 - name: Zahlungen
   items:
     - name: Zahlungsmethoden
       href: payment-methods.md
-    - name: 'Einstellungen, Autorisierung und Erfassung von Kreditkarten'
+    - name: 'Kreditkarten einrichten, genehmigen und erfassen'
       href: ../financials/accounts-receivable/credit-card-authorizations.md
-    - name: Konfigurieren von Bargeld-Denominationen für den POS
+    - name: Bargeld-Denominationen für den POS konfigurieren
       href: cash-denominations.md
     - name: Connector für Adyen-Zahlungen für Dynamics 365
       href: dev-itpro/adyen-connector.md
-    - name: Einrichten von Szenarien für die Rechnungszahlung
+    - name: Online-Zahlungsinstrumente mit dem Adyen Connector speichern
+      href: dev-itpro/adyen-connector-listPI.md
+    - name: Szenarien für die Rechnungszahlung einrichten
       href: payinvoice.md
     - name: FAQs zu Zahlungen
       href: dev-itpro/payments-retail.md
-    - name: Vorbeugung doppelter Zahlungen
+    - name: Doppelte Zahlungen vermeiden
       href: duplicate-payment-protection.md
 - name: Bestellungen
   items:
@@ -95,7 +101,9 @@
       href: tasks/create-calculate-post-statement-retail-store.md
     - name: Verbesserungen der Auszugsbuchungsfunktionen
       href: statement-posting-EOD.md
-    - name: 'Konfigurieren der Retail-Parameter, die Auswirkungen auf Einzelhandelsaufstellungen haben'
+    - name: Verbesserte Handhabung von Artikeln mit Chargenverfolgung
+      href: batch.md
+    - name: 'Retail-Parameter konfigurieren, die Auswirkungen auf Einzelhandelsaufstellungen haben'
       href: tasks/parameter-configurations-retail-statements.md
     - name: 'Konfigurieren der Zahlungsmethodeneinstellungen, die Auswirkungen auf Einzelhandelsaufstellungen haben'
       href: tasks/payment-configurations-retail-statements.md
@@ -115,9 +123,11 @@
       href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
     - name: Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
       href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Überblick über Omni-Channel-Zahlungen
+  href: omni-channel-payments.md
 - name: Erweiterte automatische Omni-Channel-Belastungen
   items:
-    - name: Erweiterte Auto-Belastungen konfigurieren und verwenden
+    - name: Konfigurieren und Verwenden erweiterter automatischer Belastungen
       href: omni-auto-charges.md
     - name: Kopfzuschläge auf übereinstimmende Verkaufspositionen aufteilen
       href: pro-rate-charges-matching-lines.md
@@ -159,15 +169,17 @@
       href: MPOS-or-CPOS.md
     - name: Online- und Offline-POS-Vorgänge
       href: pos-operations.md
-    - name: Geräteaktivierung mit benutzerdefiniertem Retail Modern POS
+    - name: Geräteaktivierung eines benutzerdefinierten Retail MPOS
       href: dev-itpro/retail-POS-activation-changes.md
     - name: Bildschirmlayouts für Demodaten in MPOS und Cloud POS
       href: demo-data.md
     - name: Produkt- und Debitorensuche im POS
       href: POS-search-improvements.md
+    - name: Verbesserungen bei der Kassenbuchführung
+      href: cash-mgmt.md
     - name: Bestandssuche im POS
       href: product-variants-POS.md
-    - name: Transaktionen im POS anhalten und fortsetzen
+    - name: Anhalten und Fortsetzen von Transaktionen im POS
       href: pos-suspend-recall-transactions.md
     - name: Hardwareperipheriegeräte
       items:
@@ -590,19 +602,19 @@
           href: dev-itpro/extend-metadata.md
         - name: Abrufen des CRT-Service im Offlinemodus
           href: dev-itpro/call-crt-service-offline.md
-    - name: Commerce runtime (CRT)-Erweiterbarkeit
+    - name: Erweiterbarkeit von Commerce Runtime (CRT)
       items:
-        - name: CRT-Architektur und -Konfiguration
+        - name: Architektur und Konfiguration von CRT
           href: dev-itpro/commerce-runtime-overview.md
         - name: CRT-Services
           href: dev-itpro/crt-services.md
-        - name: CRT- und Retail Server-Erweiterbarkeit
+        - name: Erweiterbarkeit von CRT und Retail Server
           href: dev-itpro/commerce-runtime-extensibility.md
-        - name: Kundenpräferenzdaten zu Kanaldatenbanken hinzufügen
+        - name: Hinzufügen der Kundenpräferenzdaten zu Kanaldatenbanken
           href: dev-itpro/add-customer-preference-channel.md
         - name: Hinzufügen von Eigenschaften zu Aufträgen
           href: dev-itpro/add-properties-sales-order.md
-        - name: CRT-Erweiterbarkeit und -Auslöser
+        - name: Erweiterbarkeit und Auslöser von CRT
           href: dev-itpro/commerce-runtime-extensibility-trigger.md
         - name: Sperren von Transaktionen mithilfe von Auslösern
           href: dev-itpro/trigger-example-blocking-transaction.md

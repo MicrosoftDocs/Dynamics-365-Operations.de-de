@@ -16,12 +16,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 8b51220b9fdfec0d99eae3245893d43fc7d846f4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f10413ce36b895a32ec0133887c43da42fcddbeb
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537760"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595574"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
@@ -70,7 +70,7 @@ Jede Kasse muss so eingerichtet werden, dass sie mit dem steuerlichen Dienst kom
 <td>Geben Sie die URL der Kasse, den Namen der Instanz von Microsoft Azure Key Vault und den Klassennamen an.</td>
 <td><ul>
 <li><strong>Kassen-URL</strong> – Geben Sie die URL des steuerlichen Diensts ein.
-<blockquote>[!WARNING]<br>Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft. Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet. Sie sind dafür verantwortlich, sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen. Sie tragen das Risiko der Verwendung dieser Dienste. Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen. Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</blockquote>
+<p><strong>Warnung:</strong> Drittanbieterdienste oder andere Dienste, die Sie hier konfigurieren, benötigen keine Zertifizierung, und sie erfüllen möglicherweise nicht die Datenschutzstandards von Microsoft. Sie sollten die Datenschutzdokumentation jedes Diensts überprüfen und mit jedem Dienstanbieter zusammenarbeiten, um mehr über die Konformitätsstufe zu erfahren, die jeder Dienst bietet. Sie sind dafür verantwortlich, sicherzustellen, dass diese Dienste ihre sicherheitsbezogenen, datenschutzbezogenen und gesetzlichen Standards erfüllen. Sie tragen das Risiko der Verwendung dieser Dienste. Microsoft gewährt keine ausdrücklichen Gewährleistungen, Garantien oder Bedingungen. Es wird dringend empfohlen, dass Sie nur Diensten verwenden, die sichere und autorisierte Verbindungen verwenden (das heißt, Dienste, die das HTTPS-Protokoll verwenden).</p>
 </li>
 <li><strong>Key Vault-Name</strong> – Wenn auf den steuerlichen Dienst über eine sichere Verbindung zugegriffen werden kann (dass heißt, die URL beginnt mit https://), sollten Sie Zertifikate einrichten und sie korrekt auf beiden Seiten speichern (Finance and Operations und beim steuerlichen Dienst des Drittanbieters). In diesem Feld wählen Sie den Namen der Azure Key Vault-Instanz aus, in der das Finance and Operations-Zertifikat gespeichert ist. Weitere Informationen finden Sie unter <a href="https://support.microsoft.com/help/4040305/setting-up-a-key-vault-client">Einen Azure Key Vault-Client einrichten</a>.</li>
 <li><strong>Klassenname</strong> – Wählen Sie die Klasse aus, in der Eigenschaften der Integration mit dem steuerlichen Dienst implementiert werden. Die verfügbare Klasse ist <strong>CashRegisterProcessingEFSTA_W</strong>.</li>
@@ -173,7 +173,7 @@ Wenn eine Barzahlung empfangen werden kann, wenn eine Rechnung gebucht wird, kö
 
 ## <a name="example"></a>Beispiel
 
-In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäftsprozesse geführt, und es wird der steuerliche Dienst [EFSTA Fiscal Register (EFR)](http://public.efsta.net/efr/) als Beispiel verwendet:
+In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäftsprozesse geführt, und es wird der steuerliche Dienst [EFSTA Fiscal Register (EFR)](https://public.efsta.net/efr/) als Beispiel verwendet:
 
 - Nachdem Sie eine Barzahlung buchen, für die die Registrierung ansteht, wird eine Kassentransaktion erstellt, die zu signierende Daten hat. Diese Transaktion wird dann im angegebenen XML-Format an den steuerlichen Dienst zur Registrierung übermittelt.
 - Sie empfangen eine Antwort vom steuerlichen Dienst. Diese Antwort hat eine Signatur und Steuercodes, die der steuerliche Dienst gemäß landes-/regionenspezifischer Regeln generiert. Diese Antwort wird in einer steuerlichen Kassentransaktion gespeichert.

@@ -1,9 +1,9 @@
 ---
 title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 for Finance and Operations personalisieren können.
-author: TLeforMicrosoft
+author: jasongre
 manager: AnnBe
-ms.date: 04/24/2019
+ms.date: 05/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,20 +15,19 @@ ms.search.scope: Core, Operations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c96c58b8c3331fcadb3e5c9b25dfef3b1b4cbc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
+ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1528843"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "1620013"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 for Finance and Operations personalisieren können.
 
@@ -49,14 +48,14 @@ Die Seite **Benutzeroptionen** enthält mehrere systemweite Einstellungen für d
 - **Konto** - Verwenden, um Benutzer-ID und andere Konten bezogene Optionen anzugeben.
 - **Workflow** – Wählen Sie workflowbezogene Optionen aus.
 
-Neben der Bearbeitung der Benutzereinstellungen können Sie Ihre Nutzungsdaten und Personalisierungen und anzeigen und auch löschen, indem Sie auf die Schaltfläche**Nutzungsdaten** klicken. Wenn Sie die Anwendung verwenden, werden viele Ihrer Einstellungen gespeichert, damit die Nutzung des Systems beim nächsten Mal für Sie einfacher wird. Die Registerkarte **Benutzereinstellungen** bietet Ihnen insbesondere die Möglichkeit, persönliche Änderungen anzeigen und verwalten, die Sie im System zu Seiten vorgenommen haben. Funktionslegenden, die neue Funktionen im Fertigprodukt vorstellen (verfügbar im Plattformaktualisierung 26), können auf der Registerkarte auch zurückgesetzt werden, damit Sie erneut über früher angetroffene Funktionen informiert werden.  
+Neben der Bearbeitung der Benutzereinstellungen können Sie Ihre Nutzungsdaten und Personalisierungen und anzeigen und auch löschen, indem Sie auf die Schaltfläche **Nutzungsdaten** klicken. Wenn Sie die Anwendung verwenden, werden viele Ihrer Einstellungen gespeichert, damit die Nutzung des Systems beim nächsten Mal für Sie einfacher wird. Die Registerkarte **Benutzereinstellungen** bietet Ihnen insbesondere die Möglichkeit, persönliche Änderungen anzeigen und verwalten, die Sie im System zu Seiten vorgenommen haben. Funktionslegenden, die neue Funktionen im Fertigprodukt vorstellen (verfügbar im Plattformaktualisierung 26), können auf der Registerkarte auch zurückgesetzt werden, damit Sie erneut über früher angetroffene Funktionen informiert werden.  
 
 ## <a name="implicit-personalizations"></a>Implizite Personalisierungen
 
 Implizite Personalisierungen sind die Personalisierungen, die Sie ausführen, indem Sie einfach mit bestimmten Steuerelementen interagieren, die sich an ihren aktuell sichtbaren Status erinnern.
 
 - **Rasterspalten:** - Sie können die Breite einer Spalte in einer Liste anpassen, indem Sie die Größenänderungsleiste links oder rechts des Spaltenkopfs auswählen und sie nach links oder rechts auf die gewünschte Breite schieben. Finance and Operations speichert die Breite, die Sie festlegen,m in einer Spalte. Dann wird die Breite dieser Spalte auf jedes Mal auf diese Größe angepasst, wenn Sie die Seite öffnen, die dieses Raster enthält.
-- **Inforegister** –  Einige Seiten haben erweiterbare Abschnitte, die als *Inforegister* bezeichnet werden. Finance and Operations speichert Informationen über die Inforegister, die Sie erweitert und reduziert haben. Anschließend wird jedes Mal, wenn Sie zu einer Seite zurückkehren, das gleiche Inforegister erweitert oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da Finance and Operations diese Informationen für das Inforegister erst abruft, wenn das Inforegister erweitert wird. Wie später in diesem Thema erläutert, können Sie den Auftrag auf dem Inforegister einer Seite auch ändern.
+- **Inforegister** – Einige Seiten haben erweiterbare Abschnitte, die als *Inforegister* bezeichnet werden. Finance and Operations speichert Informationen über die Inforegister, die Sie erweitert und reduziert haben. Anschließend wird jedes Mal, wenn Sie zu einer Seite zurückkehren, das gleiche Inforegister erweitert oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da Finance and Operations diese Informationen für das Inforegister erst abruft, wenn das Inforegister erweitert wird. Wie später in diesem Thema erläutert, können Sie den Auftrag auf dem Inforegister einer Seite auch ändern.
 - **Infoboxen** - Einige Seiten haben einen Abschnitt, der als *Infoboxbereich* bezeichnet wird. Dieser Bereich enthält schreibgeschützte Informationen zum aktuellen Betreff der Seite. Jedem Abschnitt im Infoboxbereich wird als *Infobox* bezeichnet. Sie können den gesamten Infoboxbereich ausblenden oder anzeigen, und Sie können auch einzelne Infoboxen erweitern oder reduzieren. Finance and Operations speichert Ihre Einstellungen. Anschließend wird jedes Mal, wenn Sie zur Seite zurückkehren, der Status des Infoboxbereichs und die einzelnen Infoboxen, basierend auf Ihrer letzten Interaktion mit der Seite wiederhergestellt. In einigen Fällen verbessert das Reduzieren einer Infobox die Leistung, da Finance and Operations diese Informationen für die Infobox erst abruft, wenn die Infobox erweitert wird.
 - **Aktivitätsbereiche** – *Aktivitätsbereich* Wird meistens oben an den meisten Seiten angezeigt. Der Aktivitätsbereich enthält Schaltflächen für viele der Aktivitäten, die auf der aktuellen Seite ausgeführt werden können. Diese Schaltflächen werden häufig auf Registerkarten zusammengefasst. Sie können den gesamten Aktivitätsbereich öffnen, oder Sie können ihn standardmäßig reduzieren lassen. Wenn Sie das nächste Mal die Seite öffnen, stellt Finance and Operations den fixierten Status des Aktivitätsbereichs wieder her. Wenn der fixiertes Aktivitätsbereich offen ist, zeigt Finance and Operations auch die Registerkarte der Aktivitäten an, die Sie zuletzt verwendet haben.
 - **QuickFilters** – *QuickFilter* erscheint oberhalb vieler Raster. Mit QuickFilter können Sie Raster filtern, basierend auf einer Spalte, die Sie auswählen. Finance and Operations speichert die Spalte, die Sie gefiltert haben. Wenn Sie das nächste Mal die Seite öffnen, die dieses Raster enthält, ist der Raster in derselben Spalte gefiltert. Sie können jedoch dann den Raster auf einer anderen Spalte filtern.
@@ -71,11 +70,11 @@ Verschiedene Personen und Unternehmen haben eine unterschiedliche Perspektive au
 
 Ein Kontextmenü enthält mehrere Möglichkeiten, explizit einer Seite zu ändern, um den Anforderungen und Bedürfnissen Ihres Unternehmens zu entsprechen. (Wird auch als *Rechtsklickmenü* oder *Kontextmenü* bezeichnet).
 
-Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vornehmen können, sind direkt als Optionen für ein Kontextmenü verfügbar. Zum Beispiel ist es ab Platform Upate 17 möglich,  um eine Spalte in einem Raster ein- oder auszublenden, auf eine Rasterspaltenüberschrift mit der rechten Maustaste zu klicken. Wählen Sie dann **Hinzufügen von Spalten** oder **Ausblenden der Spalte** aus.
+Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vornehmen können, sind direkt als Optionen für ein Kontextmenü verfügbar. Zum Beispiel ist es ab Platform Upate 17 möglich, um eine Spalte in einem Raster ein- oder auszublenden, auf eine Rasterspaltenüberschrift mit der rechten Maustaste zu klicken. Wählen Sie dann **Hinzufügen von Spalten** oder **Ausblenden der Spalte** aus.
 
-Darüber hinaus sind die Typen der grundlegendsten expliziten Personalisierung verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese  Methode der Personalisierung auswählen, wird das Eigenschaftenfenster des Elements angezeigt.
+Darüber hinaus sind die Typen der grundlegendsten expliziten Personalisierung verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese Methode der Personalisierung auswählen, wird das Eigenschaftenfenster des Elements angezeigt.
 
-[![Personalisieren der Eigenschaften eines Elements](./media/personalization-element-properties.png)](./media/personalization-element-properties.png)
+![Personalisieren der Eigenschaften eines Elements](./media/personalization-element-properties.png)
 
 Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hinsicht zu personalisieren:
 
@@ -89,7 +88,7 @@ Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abh�
 
 ### <a name="the-personalization-toolbar"></a>Personalisierungssymbolleiste
 
-Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keinen anderen Mechanismen (z. B.  Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Benutzereinstellungen** verwenden. Um die Symbolleiste **Benutzereinstellungen** zu öffnen, wählen Sie **Personalisieren Sie dieses Formular** im Fenster Eigenschaften eines Elements aus. Sie können **Personalisieren Sie dieses Formular** in der Gruppe **Anpassen** auf der Registerkarte **Optionen** des Aktivitätsbereichs jeder Seite auch auswählen.
+Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keinen anderen Mechanismen (z. B. Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Benutzereinstellungen** verwenden. Um die Symbolleiste **Benutzereinstellungen** zu öffnen, wählen Sie **Personalisieren Sie dieses Formular** im Fenster Eigenschaften eines Elements aus. Sie können **Personalisieren Sie dieses Formular** in der Gruppe **Anpassen** auf der Registerkarte **Optionen** des Aktivitätsbereichs jeder Seite auch auswählen.
 
 [![Personalisierungssymbolleiste](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
@@ -97,9 +96,9 @@ Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten
 
 Ihre Fähigkeit, auf der Seite zu navigieren, während die **Personalisierungssymbolleiste** geöffnet ist, hängt von der Plattformversion ab, die Sie ausführen.
 
-- Vor Plattformaktualisierung 19 ist die Seite schreibgeschützt, während die Symbolleiste **Benutzereinstellungen** geöffnet ist (Sie können keine nichts eingeben) und ist nicht interaktiv (Sie können nur die sichtbaren Elemente auf der Seite ändern). Wenn Sie Änderungen zu den Elementen in einem reduzierten Bereich oder auf einer anderen Registerkarte vornehmen möchten, müssen Sie die Symbolleiste **Benutzereinstellungen** schließen,  einen Bereich erweitern oder zu einer gewünschten Registerkarte wechseln, und dann die Symbolleiste  **Benutzereinstellungen** erneut öffnen.
+- Vor Plattformaktualisierung 19 ist die Seite schreibgeschützt, während die Symbolleiste **Benutzereinstellungen** geöffnet ist (Sie können keine nichts eingeben) und ist nicht interaktiv (Sie können nur die sichtbaren Elemente auf der Seite ändern). Wenn Sie Änderungen zu den Elementen in einem reduzierten Bereich oder auf einer anderen Registerkarte vornehmen möchten, müssen Sie die Symbolleiste **Benutzereinstellungen** schließen, einen Bereich erweitern oder zu einer gewünschten Registerkarte wechseln, und dann die Symbolleiste **Benutzereinstellungen** erneut öffnen.
 
-- Ab Plattformaktualisierung 19, wenn die Symbolleiste **Benutzereinstellungen** geöffnet ist, ist die Seite immer noch schreibgeschützt, ist jedoch interaktiver. Sie können insbesondere den Infoboxbereich erweitern oder reduzieren, Registerkarten wechseln und Bereiche erweitern oder reduzieren, während die Symbolleiste **Benutzereinstellungen** gleich geöffnet ist, wie  dies normalerweise bei einer Seite der Fall ist. Um eine Personalisierungsänderung auf einen reduzierten Bereich oder eine Registerkarte anzuwenden (z. B. ein Inforegister ausblenden), starten Sie die Schaltfläche neben der der reduzierte Bereich oder die Registerkarte angezeigt, wenn sie Tastaturfokus erhält oder wenn Sie darüber fahren.
+- Ab Plattformaktualisierung 19, wenn die Symbolleiste **Benutzereinstellungen** geöffnet ist, ist die Seite immer noch schreibgeschützt, ist jedoch interaktiver. Sie können insbesondere den Infoboxbereich erweitern oder reduzieren, Registerkarten wechseln und Bereiche erweitern oder reduzieren, während die Symbolleiste **Benutzereinstellungen** gleich geöffnet ist, wie dies normalerweise bei einer Seite der Fall ist. Um eine Personalisierungsänderung auf einen reduzierten Bereich oder eine Registerkarte anzuwenden (z. B. ein Inforegister ausblenden), starten Sie die Schaltfläche neben der der reduzierte Bereich oder die Registerkarte angezeigt, wenn sie Tastaturfokus erhält oder wenn Sie darüber fahren.
 
 #### <a name="personalization-tools"></a>Personalisierungswerkzeuge
 
@@ -109,7 +108,7 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 - Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. (Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben.) Wählen Sie das Tool **Umlagern** aus, und aktivieren Sie anschließend das Element aus, um es zu verschieben. Wenn Sie ein Element auswählen, überprüft Finance and Operations die Seite um zu bestimmen, wohin das Element verschoben werden kann. Es erstellt dann eine Serie "Abstiegszonen." Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
 - Wählen Sie das Tool **Ausblenden**, um ein Element auf der Seite auszublenden. Wählen Sie das Tool **Verbergen** aus, und wählen Sie anschließend das Element aus, um es zu verbergen. Wenn Sie das Tool **Ausblenden** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können sie dann einblenden. Wählen Sie das Tool **Auswählen**, um zu sehen, wie die Seite aussehen wird, wenn die ausgewählten Elementen ausgeblendet sind.
 
-    - Ab Plattformaktualisierung 18 können Sie Pflichtfelder  und Abschnitte ausblenden, die Pflichtfelder enthalten. Dast gibt einem Benutzer die Möglichkeit, eine vereinfachte Erfahrung zu erstellen, in der die von der Geschäftslogik als Standard gekennzeichneten Pflichtfelder nicht angezeigt werden. Ausgeblendete Pflichtfelder werden auch vorübergehend sichtbar gemacht, wenn sie leer sind, wenn eine Speicherung versucht wird.
+    - Ab Plattformaktualisierung 18 können Sie Pflichtfelder und Abschnitte ausblenden, die Pflichtfelder enthalten. Dast gibt einem Benutzer die Möglichkeit, eine vereinfachte Erfahrung zu erstellen, in der die von der Geschäftslogik als Standard gekennzeichneten Pflichtfelder nicht angezeigt werden. Ausgeblendete Pflichtfelder werden auch vorübergehend sichtbar gemacht, wenn sie leer sind, wenn eine Speicherung versucht wird.
 
 - Verwenden Sie das Tool **Zusammenfassung**, wenn ein Element im Inforegister Zusammenfassungsbereich angezeigt werden sollen. Das Tool „Zusammenfassung“ gilt nur für Felder, die innerhalb eines Inforegisterabschnitts enthalten sind. Wenn Sie das Tool **Zusammenfassung** auswählen, werden alle Felder, die ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder aus der Inforegisterzusammenfassung entfernen, indem Sie die Felder auswählen.
 - Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie das Tool **Ausblenden** auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können sie Teil von der Tabulatorsequenz erneut erstellen.
@@ -123,9 +122,9 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 
     - Wählen Sie **Löschen**, um die Seite zu dem Standard zurückzusetzen, installiertes Bundesland zurückzusetzen. Alle Personalisierungen auf der aktuellen Seite sind deaktiviert. Es gibt keine rückgängig gemachte Aktion. Daher verwenden Sie diese Option, wenn Sie sicher sind, dass Sie die Seite zurücksetzen möchten.
     - Wählen Sie **Importieren**, um eine Personalisierung aus einer Personalisierungsdatei zu verwenden, die Sie oder eine andere Person zuvor für diese Seite erstellt haben. Alle Ihre aktuellen Personalisierungen für die Seite werden von der Personalisierungen aus der ausgewählten Datei ersetzt.
-    - Wählen Sie **Exportieren**, um die Personalisierungen für die Seite in einer Datei zu speichern. Sie können hre Personalisierungen mit  anderen Benutzern teilen. Diese Benutzer müssen nur die Datei importieren, die für Ihre Personalisierungen die Seite enthält.
+    - Wählen Sie **Exportieren**, um die Personalisierungen für die Seite in einer Datei zu speichern. Sie können hre Personalisierungen mit anderen Benutzern teilen. Diese Benutzer müssen nur die Datei importieren, die für Ihre Personalisierungen die Seite enthält.
 
-- Wählen Sie die Schaltfläche **Schließen**, um die Symbolleiste **Personalisieren**zu schließen und den vorherigen interaktiven Status zurückzuversetzen.
+- Wählen Sie die Schaltfläche **Schließen**, um die Symbolleiste **Personalisieren** zu schließen und den vorherigen interaktiven Status zurückzuversetzen.
 
 Wenn die Symbolleiste **Personalisierungen** verwendet wird, sind Speichervorgänge implizit. Ihre Personalisierungen werden wirksam, sobald Sie diese erstellen, und Sie müssen eine Schaltfläche **Speichern** nicht auswählen. Manchmal finden Sie ein Schlosssymbol neben einem Element, wenn Sie ein Tool auswählen. Dieses Symbol zeigt an, dass Sie die Elementeigenschaften nicht ändern können, die dem ausgewählten Tool zugeordnet sind, da sich die vorgenommenen Änderungen auf den Eigenschaften verhindern, dass die Seite ordnungsgemäß funktioniert.
 
@@ -152,7 +151,7 @@ Das Dashboard ist oftmals die erste Seite, die beim Öffnen von Finance and Oper
 Um das Dashboard zu personalisieren, klicken Sie auf eine beliebige Kachel mit der rechten Maustaste, und wählen Sie dann das **Anpassen**-Eigenschaftenfenster, um die Kachel zu öffnen.
 
 - Wenn Sie die ausgewählten Kachel ausblenden oder umbenennen möchten, können Sie diese Änderung direkt im Eigenschaftenfenster vornehmen.
-- Wenn Sie die Kacheln im Arbeitsbereich neu anordnen möchten, wählen Sie **Dieses Formular personalisieren** im Eigenschaftenfenster aus, um die **Personalisierungs**symbolleiste zu öffnen. Sie können das Tool **Umlagern** verwenden, um die Kacheln anzuordnen.
+- Wenn Sie die Kacheln im Arbeitsbereich neu anordnen möchten, wählen Sie **Dieses Formular personalisieren** im Eigenschaftenfenster aus, um die Symbolleiste **Personalisierung** zu öffnen. Sie können das Tool **Umlagern** verwenden, um die Kacheln anzuordnen.
 - Wenn Sie eine neue Arbeitsbereichskachel erstellen möchten, wählen Sie im Eigenschaftenfenster **Arbeitsbereich hinzufügen** aus. Eine neue Arbeitsbereichkachel wird am unteren Rand das Dashboard erstellt. Sie können diese neue Arbeitsbereichkachel umbenennen, wenn Sie dies wünschen. Sie können, Kacheln, Listen und auch Links dem Arbeitsbereich hinzufügen wie im Abschnitt [Hinzufügen von Kacheln, Listen oder Links zu Arbeitsbereichen](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace) beschrieben.
 
 ## <a name="administration-of-personalization"></a>Verwalten der Personalisierung
@@ -172,4 +171,4 @@ Wenn Sie die Einstellungen der Lagerungsdimensionen auf einer Seite personalisie
 
 Die **Dimensionsanzeigeeinstellungen** gelten für alle Seiten und diese Einstellungen setzen alle personalisierten Lagerdimensionsfelder einer individuellen Seite außer Kraft.
 
-Wenn Sie wie im vorhergehenden Beispiel nicht möchten, dass die Spalte für die Chargennummerenlagerungsdimension erscheint, müssen Sie die die Dimension als Teil der Tabelle  **Anzeigendimensionen** deaktivieren. Schließlich wird diese Änderung nicht nur auf einer bestimmten Seite jedoch über allen Seiten gelten.
+Wenn Sie wie im vorhergehenden Beispiel nicht möchten, dass die Spalte für die Chargennummerenlagerungsdimension erscheint, müssen Sie die die Dimension als Teil der Tabelle **Anzeigendimensionen** deaktivieren. Schließlich wird diese Änderung nicht nur auf einer bestimmten Seite jedoch über allen Seiten gelten.

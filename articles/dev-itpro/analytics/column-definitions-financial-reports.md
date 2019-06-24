@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 872e7c833416f0f7d9aa0c55aadf72aec65ddaab
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: bb08833cca843c370e2c845bce56d6f5a8b5f2ed
+ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1502729"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "1595338"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
@@ -120,7 +120,7 @@ In der folgenden Tabelle werden die Spalteneinschränkungscodes beschrieben.
 | ADJ                     | Schränken Sie die Beträge in der Spalte auf Zeitraumberichtigungsbeträge (falls verfügbar) ein. |
 | XAD                     | Schränken Sie die Beträge in der Spalte so ein, dass Zeitraumberichtigungsbeträge (falls verfügbar) ausgeschlossen werden. |
 | PT                      | Schränken Sie die Beträge in der Spalte so ein, sodass nur gebuchte Posten enthalten sind, wenn diese verfügbar sind. |
-| UPT                     | Schränken Sie die Beträge in der Spalte so ein, sodass nur nicht gebuchte Posten enthalten sind, wenn diese verfügbar sind.<blockquote>[!NOTE] Nicht gebuchte Posten werden nicht von allen Datenanbietern unterstützt. Weitere Informationen finden Sie im <a href='http://go.microsoft.com/fwlink/?LinkID=162565'>Datenintegrationshandbuch</a> für Ihr Microsoft Dynamics ERP-System.</blockquote> |
+| UPT                     | Beschränken Sie die Beträge in der Spalte, sodass nur nicht gebuchte Transaktionen enthalten sind, wenn diese Transaktionen verfügbar sind.<p><strong>Hinweis:</strong> Nicht alle Daten unterstützen nicht gebuchte Transaktionen. Weitere Informationen finden Sie im <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>Datenintegrationshandbuch</a> für Ihr Microsoft Dynamics ERP-System.</p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Einschränken einer Spalte auf eine Berichtseinheit
 
@@ -310,7 +310,7 @@ Die Zelle **Drucksteuerung** kann Codes enthalten, die die Anzeige oder die Druc
 | Drucksteuerungscode | Bedeutung                                     | Beschreibung |
 |--------------------|-------------------------------------------------|-------------|
 | ND                 | Nicht druckbar                                     | Schließen Sie die Beträge in dieser Spalte vom Drucken im Bericht und von Berechnungen aus. Wenn eine nicht druckbare Spalte in einer Berechnung enthalten sein soll, verweisen Sie direkt in der Berechnungsformel auf die Spalte. Beispielsweise ist die nicht druckbare Spalte C in der folgenden Berechnung enthalten: **B+C+D**. Allerdings ist die nicht druckbare Spalte C nicht in der folgenden Berechnung enthalten: **B:D**. |
-| XCR                | Vorzeichen in Spalte ändern, wenn der typische Saldo der Zeile ein Habenwert ist | Erstellen Sie ein Budget oder einen Vergleichsbericht, in der bzw. dem eine ungünstige Abweichung (z. B. ein Umsatzdefizit oder eine Kostenüberschreitung) immer negativ ist. Wenden Sie diesen Code auf einer **CALC**-Spalte an, um das Vorzeichen des Spaltenbetrags umzukehren, wenn der typische Saldo einer gegebenen Zeile ein Habenposten ist (wie von einem **C** in der Spalte **Normaler Saldo** der Zeilendefinition gekennzeichnet).<blockquote>[!NOTE] Geben Sie für <strong>TOT</strong>-Zeilen und </strong>CAL</strong>-Zeilen, die typischerweise einen Habensaldo aufweisen, <strong>C</strong> in der <strong>Standardsaldo</strong>-Spalte in der Zeilendefinition ein.</blockquote> |
+| XCR                | Vorzeichen in Spalte ändern, wenn der typische Saldo der Zeile ein Habenwert ist | Erstellen Sie ein Budget oder einen Vergleichsbericht, in der bzw. dem eine ungünstige Abweichung (z. B. ein Umsatzdefizit oder eine Kostenüberschreitung) immer negativ ist. Wenden Sie diesen Code auf einer **CALC**-Spalte an, um das Vorzeichen des Spaltenbetrags umzukehren, wenn der typische Saldo einer gegebenen Zeile ein Habenposten ist (wie von einem **C** in der Spalte **Normaler Saldo** der Zeilendefinition gekennzeichnet).<p><strong>Hinweis:</strong> Achten Sie bei <strong>TOT</strong>-Zeilen und </strong>CAL</strong>-Zeilen, die üblicherweise ein Habensaldo enthalten, darauf, ein <strong>C</strong> in der Spalte <strong>Normaler Saldo</strong> in der Zeilendefinition einzugeben.</p> |
 | X0                 | Spalte unterdrücken, wenn nur Nullen oder keine Daten enthalten sind          | Schließen Sie eine **FD**-Spalte aus dem Bericht aus, wenn alle Zellen in dieser Spalte entweder leer sind oder Nullen enthalten. |
 | RU                 | Runden unterdrücken                               | Verhindern Sie, dass die Beträge in dieser Spalte gerundet werden. |
 | XR                 | Rollup unterdrücken                                 | Unterdrücken Sie ein Rollup. Wenn für den Bericht eine Berichtsbaumstruktur verwendet wird, wird für die Beträge in dieser Spalte kein Rollup in nachfolgende übergeordnete Knoten ausgeführt. |
@@ -546,8 +546,8 @@ In der folgenden Tabelle werden die Berichtsergebnisse aufgelistet, die aufgrund
 | Zelle Währungsanzeige                        | Zelle Währungsfilter | Berichtsergebnis |
 |----------------------------------------------|----------------------|---------------|
 | Buchungswährung                 | **YEN**              | **Y6.000** - Das Ergebnis zeigt nur Buchungen an, die in JPY eingegeben wurden. |
-| Buchhaltungswährung des Sachkontos | **YEN**              |**$60** - Das Ergebnis zeigt nur die Transaktionen, die in JPY eingegeben wurden zeigt diese Transaktionen in USD an.<blockquote>[!NOTE] Der Wechselkurs ist ungefähr 100 JPY pro USD.</blockquote> |
-| Buchhaltungswährung des Sachkontos | Leer                | **$2.310** - Das Ergebnis zeigt alle Daten in der Buchungswährung an, die im Sachkonto angegeben sind.<blockquote>[!NOTE] Dieser Betrag ist die Summe aller Buchungen in der Buchungswährung.</blockquote> |
+| Buchhaltungswährung des Sachkontos | **YEN**              |**$60** - Das Ergebnis zeigt nur die Transaktionen, die in JPY eingegeben wurden zeigt diese Transaktionen in USD an.<p><strong>Hinweis:</strong> Der Wechselkurs ist ungefähr 100 JPY pro USD.</p> |
+| Buchhaltungswährung des Sachkontos | Leer                | **$2.310** - Das Ergebnis zeigt alle Daten in der Buchungswährung an, die im Sachkonto angegeben sind.<p><strong>Hinweis:</strong> Dieser Betrag ist die Summe aller Transaktionen in der Buchhaltungswährung.</p> |
 | Buchungswährung                 | Leer                | **$2.250** - Das Ergebnis zeigt alle Beträge in der Währung an, in der die Transaktion ausgeführt wurde. Das bedeutet, dass die Summe errechnet sich aus den Beträgen verschiedener Währungen. |
 
 ### <a name="calculation-column-in-a-column-definition"></a>Berechnungsspalte in einer Spaltendefinition
@@ -565,7 +565,7 @@ Zum Addieren, Subtrahieren, Multiplizieren oder Teilen von Spalten geben Sie die
 |----------|---------------------|-------------|
 | +        | A+C                 | Addieren Sie den Betrag in Spalte A zum Betrag in der Spalte C. |
 | :        | A:C A:C-D           | Addieren Sie einen Bereich aufeinanderfolgender Spalten. Beispielsweise addiert die **A:C**-Formel die Summen der Spalten A bis C, und die Formel **A:C-D** addiert die Summen der Spalten A bis C und subtrahiert anschließend den Betrag in der Spalte D. |
-| -        | A-C                 | Subtrahieren Sie den Betrag in Spalte C vom Betrag in Spalte A.<blockquote>[!NOTE] Sie können auch das Minuszeichen (-) verwenden, um die Zeichen in einer Spalte umzukehren. Verwenden Sie beispielsweise <strong>- A+B</strong>, um den umgekehrten Betrag in Spalte A zum Betrag in der Spalte B zu addieren.</blockquote> |
+| -        | A-C                 | Subtrahieren Sie den Betrag in Spalte C vom Betrag in Spalte A.<p><strong>Hinweis:</strong> Sie können auch das Minuszeichen (-) verwenden, um die Vorzeichen in einer Spalte umzukehren. Verwenden Sie beispielsweise <strong>- A+B</strong>, um den umgekehrten Betrag in Spalte A zum Betrag in der Spalte B zu addieren.</p> |
 | \*       | A\*C                | Multiplizieren Sie den Betrag in Spalte A mit dem Betrag in der Spalte C. |
 | /        | A/C                 | Dividieren Sie den Betrag in Spalte A durch den Betrag in der Spalte C. |
 

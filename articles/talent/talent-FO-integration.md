@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 438c2b5689e450b9aae9c55168993f2ee84be4d5
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
+ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518135"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "1617342"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Integration von Dynamics 365 for Talent zu Dynamics 365 for Finance and Operations – FAQ
 
@@ -46,7 +46,7 @@ Finanzdimension sind derzeit nicht in Common Data Service enthalten und gehören
 
 Für Daten, die sich in Finance and Operations befinden, aber nicht im Talent vorhanden sind, verbinden Sie die beiden Systeme miteinander, indem Sie **Links in Talent konfigurieren**. Weitere Informationen zur Konfiguration der Verknüpfungen zwischen Talent und Finance and Operations finden Sie unter [Was ist neu oder geändert in Dynamics 365 for Talent Core HR (31. Oktober 2018)](whats-new-talent-october-31.md).
 
-![](media/MapFinancialDimensions.png)
+![Finanzdimensionen zuordnen](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Manchmal, wenn ich Mitarbeiter importiere, gehen sie in inaktive Mitarbeiter im Finance and Operations. Warum?
 
@@ -60,14 +60,14 @@ Die Datensynchronisation erfolgt nach dem Ausführungsplan. Die Integration nimm
 
 Mit der Verwendung der "Erweiterten Suche" können Sie Quelldaten filtern und umgestalten, bevor Sie sie an das Ziel übergeben.
 
-![](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Erweiterte Abfrage – aktive Arbeitskräfte](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kann ich angeben, welche Felder für eine bestimmte Einheit an Finance and Operations gesendet werden sollen?
 
 Felder können der Integrationsaufgabe hinzugefügt oder entfernt werden. Nicht alle Datenfelder, die in der Entität Common Data Service vorhanden sind, werden aus Core HR gefüllt.
 Zusätzliche Daten können über PowerApps gefüllt werden.
 
-![](media/SpecifyFieldsIncludedInIntegration.png)
+![Felder einer Integrationsaufgabe hinzufügen oder von dieser entfernen](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-talent-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Ich habe die Integration als Batch-Job eingerichtet, aber Talent hat die Verbindung zum Zielsystem verloren. Wie kann ich den gleichen Satz von Änderungen an das Zielsystem senden?
 

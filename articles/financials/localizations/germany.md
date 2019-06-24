@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 28321fd242b17d8494412d1391d6460a6b8b2016
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 5e007e120693018e6b5b2b0f9e958b3e91844525
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1513024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1558724"
 ---
 # <a name="germany"></a>Deutschland
 

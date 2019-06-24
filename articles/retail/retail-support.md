@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 3d437b16e96d53216032f1f31df3d4c0ba63e117
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567975"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577843"
 ---
 # <a name="get-support-for-dynamics-365-for-retail"></a>Anfordern von Support zu Dynamics 365 for Retail
 
@@ -52,7 +52,7 @@ Um Unterstützung für Retail zu erhalten, verwenden Sie die Ressourcen in der f
 </tr>
 <tr>
 <td>Verwenden Sie das Problemsuchetool.</td>
-<td>In<a href="https://lcs.dynamics.com/">LCS</a> können Sie die Problemsuche verwenden, um Microsoft Wissensartikel, Hotfixes und Problemumgehungen für gemeldete Probleme in Retail zu finden. Sie können sehen, welche gemeldeten Probleme in einem bestimmten Funktionsbereich korrigiert werden oder schon korrigiert wurden. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs">Problemsuche (Lifecycle Services, LCS)</a>.</td>
+<td>In <a href="https://lcs.dynamics.com/">LCS</a> können Sie die Problemsuche verwenden, um Microsoft Wissensartikel, Hotfixes und Problemumgehungen für gemeldete Probleme in Retail zu finden. Sie können sehen, welche gemeldeten Probleme in einem bestimmten Funktionsbereich korrigiert werden oder schon korrigiert wurden. Weitere Informationen finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/issue-search-lcs">Problemsuche (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
 <td>Nutzen Sie das in der Cloud bereitgestellte Supporttool.</td>
@@ -61,7 +61,7 @@ Um Unterstützung für Retail zu erhalten, verwenden Sie die Ressourcen in der f
 <li>Wählen Sie auf der Registerkarte <strong>Aktives Problem</strong> und klicken Sie auf <strong>An Microsoft übermitteln</strong>.</li>
 <li>Klicken Sie auf die Registerkarte <strong>An Microsoft übermittelt</strong> und klicken Sie auf <strong>Neues Problem übermitteln</strong>, um das Problem zu senden.</li>
 </ul>
-<blockquote>[!NOTE] Microsoft Premier Kunden und Partners können auch Premier-Supporttickets mit dem Schritt oben senden.</blockquote>
+<p><strong>Hinweis:</strong> Microsoft Premier-Kunden und -Partner können auch Premier-Supporttickets mit dem Schritt oben senden.</p>
 </td>
 </tr>
 <tr>
@@ -84,4 +84,4 @@ Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf Cus
 </tbody>
 </table>
 
-Weitere Informationen zu Microsoft Dynamics-Supportangeboten finden Sie unter [Microsoft Dynamics-Onlinesupport](https://dynamics.microsoft.com/en-us/support/).
+Weitere Informationen zu Microsoft Dynamics-Supportangeboten finden Sie unter [Microsoft Dynamics-Onlinesupport](https://dynamics.microsoft.com/support/).

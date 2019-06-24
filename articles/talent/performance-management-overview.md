@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1954b691d84b0aa8710da621af21415c6c116539
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
+ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518081"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1590504"
 ---
 # <a name="performance-management"></a>Leistungsverwaltung
 
@@ -109,7 +109,7 @@ Sie können Leistungserfassungselemente anzeigen, die sich auf die Beurteilung b
 
 ### <a name="ratings"></a>Bewertungen
 
-Sie können für jedes Ziel und jede Kompetenz, die Gegenstand der Beurteilung sind, eine Bewertung hinzufügen. Sie können die Bewertungsmodelle für jede Beurteilung definieren. Die Standardeinstellungen für Bewertungen befinden sich auf der Seite **Personalverwaltungsparameter** unter **Leistung**.
+Sie können für jedes Ziel und jede Kompetenz, die Gegenstand der Beurteilung sind, eine Bewertung hinzufügen. Sie können die Bewertungsmodelle für jede Beurteilung definieren. Die Standardeinstellungen für Bewertungen befinden sich auf der Seite **Gemeinsam verwendete Parameter der Personalverwaltung** unter **Leistung**.
 
 ### <a name="sign-offs"></a>Abzeichnungen
 
@@ -125,7 +125,7 @@ Sie können ein Dokument im Bereich **Anhänge** auf der Seite **Überprüfungen
 Sie können den Workflow für die Arbeitskraftüberprüfung verwenden, um die Genehmigung einer Beurteilung zu steuern. Sie können auch festlegen, dass der automatisierte Workflow übersprungen wird, und Sie können den Status der Beurteilung manuell ändern. So können Sie einfachere Dokumente wie zum Beispiel Einzelbeurteilungen erstellen, ohne den Workflowprozess zu verwenden. Der Zugriff auf eine Beurteilung wird durch den Status der Beurteilung gesteuert.
 
 1.  Wenn die Beurteilung erstellt wird, erhält sie den Status **Nicht gestartet**. Die Beurteilung kann von jedem Benutzer bearbeitet werden.
-2.  Wenn der Mitarbeiter auf die Schaltfläche **Überprüfung beginnen** geklickt hat, erhält die Beurteilung den Status**In Bearbeitung**. Der Mitarbeiter fügt dann Inhalt hinzu. An diesem Punkt kann der Vorgesetzte das Beurteilungsdokument nicht mehr anzeigen.
+2.  Wenn der Mitarbeiter auf die Schaltfläche **Überprüfung beginnen** geklickt hat, erhält die Beurteilung den Status **In Bearbeitung**. Der Mitarbeiter fügt dann Inhalt hinzu. An diesem Punkt kann der Vorgesetzte das Beurteilungsdokument nicht mehr anzeigen.
 3.  Der Status des Mitarbeiters wechselt zu **Bereit für Überprüfung**.
 4.  Der Vorgesetzte kann Kommentare und Bewertungen hinzufügen. Zu diesem Zeitpunkt kann nur der Vorgesetzte die Beurteilung anzeigen.
 5.  Der Vorgesetzte ändert den Status zu **Abschlussüberprüfung**, damit sowohl der Mitarbeiter als auch der Vorgesetzte die Beurteilung anzeigen und erörtern können. Sie können in den Parametern angeben, ob die Beurteilung nun bearbeitet werden kann. Dieser Schritt ist auch optional. Der Vorgesetzte kann auch einfach die Beurteilung für den Mitarbeiter freigeben und sie abschließend als **Abgeschlossen** markieren.

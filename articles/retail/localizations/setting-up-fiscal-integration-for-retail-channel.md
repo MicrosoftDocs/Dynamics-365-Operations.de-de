@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 060075757dec64e83c46498380a920d580ac09e4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
+ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1525324"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "1577899"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Steuerintegration für Retail Channel einrichten
 
@@ -88,7 +88,7 @@ Vor der Verwendung der Steuerintegrationsfunktionen müssen Sie die folgenden Ei
         Sie können die Datenenzuordnungsparameter in ein funktionales Profil des Konnektors ändern. Um die Standardparameter wiederherzustellen, die in der Konfiguration des Steuerdokumentanbieters definiert sind, wählen Sie **Aktualisierung**.
 
         **Beispiele**
-    
+
         |   | Formate | Beispiel |
         |---|--------|---------|
         | **MwSt-Satzeinstellungen** | Wert: MwSt-Satz | 1 : 2000, 2 : 1800 |
@@ -111,7 +111,7 @@ Vor der Verwendung der Steuerintegrationsfunktionen müssen Sie die folgenden Ei
 4. Erstellen Sie Steuerkonnektorgruppen.
 
     Eine Steuerkonnektorgruppe ist eine Teilmenge funktionaler Profile des Konnektors, die mit steuerlichen Verbindungen verknüpft werden, um identische Funktionen auszuführen und im gleichen Schritt innerhalb eines Steuerregistrierungsprozesses verwendet zu werden. Wenn beispielsweise mehrere Modelle eines Belegdruckers in einer Filiale verwendet werden können, können Steuerkonnektoren für diese Belegdrucker in einer Steuerkonnektorengruppe kombiniert werden.
-    
+
     1. Auf der Seite **Steuerconnectorgruppe** (**Retail \> Kanaleinstellung \> Steuerintegration \> Steuekonnektorgruppen**), erstellen Sie eine neue Steuerconnectorgruppe.
     2. Hier können Sie funktionale Profile der Konnektorgruppe hinzufügen Klicken Sie auf der Seite **Funktionale Profile** auf **Hinzufügen** und wählen Sie eine Profilnummer aus. jeder Steuerkonnektor innerhalb einer Konnektorgruppe kann nur ein funktionales Profil haben.
     3. Wenn Sie die Nutzung des funktionalen Profils unterbrechen möchten, stellen Sie die Option **Deaktivieren** auf **Ja** ein. Diese Änderung betrifft nur die aktuelle Konnektorgruppe. Sie können das selbe funktionale Profil in anderen Konnektorgruppen weiter nutzen.
@@ -119,7 +119,7 @@ Vor der Verwendung der Steuerintegrationsfunktionen müssen Sie die folgenden Ei
 5. Erstellen eines Steuerregistrierungsprozesses.
 
     Ein Steuerregistrierungsprozess wird durch den Nummernkreis der Erfassungsschritte und der Konnektorgruppe definiert, die für jeden Schritt verwendet werden.
-    
+
     1. Erstellen Sie auf der Seite **Steuerregistrierungsprozess** (**Retail \> Kanal einrichten \> Steuerintegration \> Steuerregistrierungsprozesse**) für jeden eindeutigen Prozess der Steuerintegration einen neuen Datensatz.
     2. Fügen Sie Erfassungsschritte dem Prozess hinzu:
 
@@ -145,7 +145,7 @@ Vor der Verwendung der Steuerintegrationsfunktionen müssen Sie die folgenden Ei
 7. Wählen Sie auf der Seite **Steuerregistrierungsprozess** (**Retail \> Kanaleinrichtung \> Steuerintegration \> Steuerregistrierungsprozesse**) **Prüfen**, um den steuerlichen Registrierungsprozess zu validieren.
 
     Es wird empfohlen, diese Art der Überprüfung in den folgenden Fällen ausführen:
-    
+
     - Nachdem Sie alle Einstellungen für einen neuen Registrierungsprozess vorgenommen haben, auch wenn Sie Registrierungsprozesse POS-Funktionsprofilen und Hardwareprofilen zuordnen.
     - Nachdem Sie Änderungen an einem bestehenden Steuerregistrierungsprozess vorgenommen haben, können diese Änderungen dazu führen, dass zur Laufzeit ein anderer Steuerkonnektor ausgewählt wird (z.B. wenn Sie die Konnektorgruppe für einen Schritt des Steuerregistrierungsprozesses ändern, ein Konnektorfunktionsprofil in einer Konnektorgruppe aktivieren oder ein neues Konnektorfunktionsprofil zu einer Konnektorgruppe hinzufügen).
     - Nachdem Sie Änderungen in der Zuordnung der technischen Profile des Konnektors in Hardwareprofilen vorgenommen haben.

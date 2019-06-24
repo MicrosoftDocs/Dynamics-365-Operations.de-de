@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Szenarien für die Rechnungszahlung
+title: Szenarien für die Rechnungszahlung einrichten
 description: In diesem Thema wird beschrieben, wie Sie Dynamics 365 for Retail so konfigurieren, dass verschiedene Szenarien in Bezug auf Rechnungszahlungen unterstützt werden.
 author: josaw1
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 158d8ca8a97c473e940f76dd3f35cecc4e9dd7f4
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b7132dc9b3c78fa04fcfc38ea72b5678ad08deb2
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1517071"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1564969"
 ---
-# <a name="set-up-pay-invoice-scenarios"></a>Einrichten von Szenarien für die Rechnungszahlung
+# <a name="set-up-pay-invoice-scenarios"></a>Szenarien für die Rechnungszahlung einrichten
 
 [!include [banner](includes/banner.md)]
 

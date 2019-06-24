@@ -15,12 +15,12 @@ ms.search.region: Austria
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1c532d10aa82a57d11eb2f2a7d7252a0f475cacd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 7d0042357e2afebf7bcc39b0f55dd4e0cfd2221a
+ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1537761"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "1547899"
 ---
 # <a name="austria"></a>Österreich
 
