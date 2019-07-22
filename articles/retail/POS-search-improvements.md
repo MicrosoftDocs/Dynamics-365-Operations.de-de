@@ -3,7 +3,7 @@ title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Microsoft Dynamics 365 for Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: a1593445af41cba30bdc35933302d0873e313585
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1530775"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625641"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -40,7 +40,7 @@ Standardmäßig werden Produktsuchen im Filialsortiment ausgeführt. Diese Form 
 Auf der Seite **Katalog ändern** können Mitarbeiter jeden beliebigen Shop auswählen oder Shop-übergreifend nach Produkten suchen.
 
 ![Ändern des Katalogs](./media/Changecatalog.png "Ändern des Katalogs")
- 
+
 Bei der lokalen Produktsuche wird in den folgenden Produkteigenschaften gesucht:
 
 - Produktnummer
@@ -55,7 +55,7 @@ Bei der lokalen Produktsuche wird in den folgenden Produkteigenschaften gesucht:
 Die Benutzererfahrung bei der lokalen Produktsuche ist jetzt benutzerfreundlicher. Folgende Verbesserungen wurden vorgenommen:
 
 - Produkt- und Debitorendropdownmenüs wurden zur Suchleiste hinzugefügt, sodass Mitarbeiter vor einer Suche entweder **Produkt** oder **Debitor** auswählen können. Standardmäßig ist **Produkt** ausgewählt, wie in der folgenden Abbildung gezeigt.
-- Für Suchen mit mehreren Schlüsselwörtern (also Suchen mit Suchbegriffen) können Einzelhändler konfigurieren, ob die Suchergebnisse Ergebnisse enthalten, die mit *irgendeinem* Suchbegriff oder mit *allen* Suchbegriffen übereinstimmen. Diese Einstellung ist im POS-Funktionsprofil in einer neuen Gruppe namens **Produktsuche** verfügbar. Die Standardeinstellung ist **Alle beliebigen Suchbegriffe abgleichen**. Diese Einstellung ist auch die empfohlene Einstellung. Wenn die Einstellung **Jeden beliebigen Suchbegriff abgleichen** verwendet wird, werden alle Produkte, die vollständige oder teilweise mit einem oder mehreren Suchbegriffen übereinstimmen als Ergebnisse zurückgegeben. Diese Ergebnisse werden automatisch in aufsteigender Reihenfolge von Produkten sortiert, die die meisten Schlüsselwortübereinstimmungen haben (vollständig oder teilweise).
+- Für Suchen mit mehreren Schlüsselwörtern (also Suchen mit Suchbegriffen) können Einzelhändler konfigurieren, ob die Suchergebnisse Ergebnisse enthalten, die mit *irgendeinem* Suchbegriff oder mit *allen* Suchbegriffen übereinstimmen. Die Einstellung für diese Funktion ist im POS-Funktionsprofil in einer neuen Gruppe namens **Produktsuche** verfügbar. Die Standardeinstellung ist **Alle beliebigen Suchbegriffe abgleichen**. Diese Einstellung ist auch die empfohlene Einstellung. Wenn die Einstellung **Jeden beliebigen Suchbegriff abgleichen** verwendet wird, werden alle Produkte, die vollständige oder teilweise mit einem oder mehreren Suchbegriffen übereinstimmen als Ergebnisse zurückgegeben. Diese Ergebnisse werden automatisch in aufsteigender Reihenfolge von Produkten sortiert, die die meisten Schlüsselwortübereinstimmungen haben (vollständig oder teilweise).
 
     Die Einstellung **Alle Suchbegriffe abgleichen** gibt nur die Produkte zurück, die mit allen Suchbegriffen (ganz oder teilweise) übereinstimmen. Diese Einstellung ist bei langen Produktnamen hilfreich und wenn Mitarbeiter nur begrenzte Produkte in den Sucherergebnissen haben möchten. Für diesen Suchtyp gelten jedoch zwei Einschränkungen:
 
@@ -65,11 +65,20 @@ Die Benutzererfahrung bei der lokalen Produktsuche ist jetzt benutzerfreundliche
 - Einzelhändler können die Produktsuche nun so konfigurieren, dass Suchvorschläge angezeigt werden, wenn Produktnamen eingegeben werden. Eine neue Einstellung für diese Funktion ist im POS-Funktionsprofil in einer Gruppe namens **Produktsuche** verfügbar. Die Einstellung hat die Bezeichnung **Beim Eingeben Vorschläge anzeigen**. Diese Funktion ermöglicht Mitarbeitern, schnell das gesuchte Produkt zu finden, da sie nicht den ganzen Namen eingeben müssen.
 - Der Produktsuchalgorithmus sucht nun auch in der **Suchbegriff**-Eigenschaft des Produkts nach den Suchbegriffen.
 
-    ![Produktvorschläge](./media/Productsuggestions.png "Produktvorschläge")
+![Produktvorschläge](./media/Productsuggestions.png "Produktvorschläge")
 
 ## <a name="customer-search"></a>Debitorensuche
 
-Die Debitorensuche wird verwendet, um Debitoren für verschiedene Zwecke zu suchen. So möchten Kassierer möglicherweise den Wunschzettel oder die Kaufhistorie eines Debitors anzeigen oder den Debitor zu einer Transaktion hinzufügen. Der Suchenalgorithmus gleicht die Suchbegriffe mit den Werten ab, die in den folgenden Debitoreneigenschaften vorhanden sind: Name, E-Mail, Telefon, Treuekartennummer, Adresse und Kontonummer. Darunter bietet die Nameneigenschaft die beste Flexibilität bei Suchen mit mehreren Stichworten, da der Algorithmus alle Debitoren zurückgibt, die einem beliebigen der gefundenen Suchbegriffe entsprechen. Die Debitoren, die den meisten Suchbegriffen entsprechen, werden oben in den Ergebnissen angezeigt. Dieses Verhalten unterstützt Kassierer in Situationen, in denen sie eine Suche durch Eingabe des vollständigen Namens durchführen, und Nachname sowie Vorname bei der ursprünglichen Dateneingabe vertauscht wurden. Aus Leistungsgründen behalten alle anderen Eigenschaften die Reihenfolge der die Suchbegriffe allerdings bei. Wenn die Suchbegriffe der Reihenfolge der gespeicherten Daten also nicht entsprechen, werden kanne Ergebnisse zurückgegeben.
+Die Debitorensuche wird verwendet, um Debitoren für verschiedene Zwecke zu suchen. So möchten Kassierer möglicherweise den Wunschzettel oder die Kaufhistorie eines Debitors anzeigen oder den Debitor zu einer Transaktion hinzufügen. Der Suchenalgorithmus passt die Suchbegriffe mit den Werten an, die in den folgenden Debitoreneigenschaften vorhanden sind:
+
+- Name
+- E-Mail-Adresse
+- Telefonnummer
+- Treuekartennummer
+- Anschrift
+- Kontonummer
+
+Durch diesen Eigenschaften enthält der Name die besonders Flexibilität für Mehrfach-Schlüsselwortsuchen, da der Algorithmus alle Debitoren zurückgibt, die mit einem gefundenen Suchbegriff übereinstimmen. Die Debitoren, die den meisten Suchbegriffen entsprechen, oben in den Ergebnissen angezeigt. Dieses Verhalten unterstützt Kassierer in Situationen, in denen sie eine Suche durch Eingabe des vollständigen Namens durchführen, und Nachname sowie Vorname bei der ursprünglichen Dateneingabe vertauscht wurden. Aus Leistungsgründen behalten alle anderen Eigenschaften die Reihenfolge der Suchbegriffe bei. Wenn der Auftrag per Suchbegriffe nicht dem Auftrag entspricht, der die Daten speichert, werden keine Ergebnisse zurückgegeben.
 
 Standardmäßig wird eine Debitorensuche in den Debitorenadressbüchern durchgeführt, die mit dem Shop verknüpft sind. Diese Form der Suche wird als *lokale Debitorensuche* bezeichnet. Allerdings können Mitarbeiter auch global nach Debitoren suchen. Sie können also auch in den Shops des Unternehmens und in allen anderen juristischen Personen eine Suche durchführen. Diese Form der Suche wird als *Remote-Debitorensuche* bezeichnet.
 
@@ -86,7 +95,7 @@ Bei einer Remote-Debitorensuche wird die Debitorenkennung nicht für Debitoren a
 
 Suchen, die auf der Telefonnummer basieren, sind vereinfacht worden. Diese Suchen ignorieren nun Sonderzeichen, wie Leerzeichen, Bindestriche und Klammern, die möglicherweise hinzugefügt wurden, wenn der Debitor erstellt wurde. Daher müssen Kassierer sich keine Sorgen über das Telefonnummernformat machen, wenn sie suchen. Sie können auch nach Debitoren suchen, indem sie eine unvollständige Telefonnummer eingeben. Wenn eine Telefonnummer Sonderzeichen enthält, kann sie auch gefunden werden, indem nach den Zahlen gesucht wird, die nach den Sonderzeichen angezeigt werden. Wurde beispielsweise die Telefonnummer eines Debitors in der Form **123-456-7890** eingegeben, kann ein Kassierer nach dem Debitor suchen, indem er **123**, **456**, **7890** oder **1234567890** eingibt oder indem er nur die ersten Zahlen einer Telefonnummer eingibt.
 
-Die herkömmliche Debitorensuche kann zeitaufwendig sein, da sie über mehrere Felder hinweg sucht. Stattdessen können Kassierer jetzt in einer einzigen benutzerdefinierten Eigenschaft, wie Name, E-Mail-Adresse oder Telefonnummer suchen. Die Eigenschaften, die der Debitorensuchalgorithmus verwendet, werden zusammen als *Debitorensuchkriterien* bezeichnet. Der Systemadministrator kann einfach ein oder mehrere Kriterien als Verknüpfungen konfigurieren, die in der POS angezeigt werden. Da die Suche auf ein einziges Kriterium eingeschränkt ist, werden nur die relevanten Suchergebnisse angezeigt, und die Leistung ist viel besser, als die Leistung bei einer standardmäßigen Debitorensuche. Die folgende Abbildung zeigt die Debitorensuchverknüpfungen in POS an.
+Die herkömmliche Debitorensuche kann zeitaufwendig sein, da sie über mehrere Felder hinweg sucht. Stattdessen können Kassierer jetzt in einer einzelnen benutzerdefinierten Eigenschaft, wie Name, E-Mail-Adresse oder Telefonnummer suchen. Die Eigenschaften, die der Debitorensuchalgorithmus verwendet, werden zusammen als *Debitorensuchkriterien* bezeichnet. Der Systemadministrator kann einfach ein oder mehrere Kriterien als Verknüpfungen konfigurieren, die in der POS angezeigt werden. Da die Suche auf ein einziges Kriterium eingeschränkt ist, werden nur die relevanten Suchergebnisse angezeigt, und die Leistung ist viel besser, als die Leistung bei einer standardmäßigen Debitorensuche. Die folgende Abbildung zeigt die Debitorensuchverknüpfungen in POS an.
 
 ![Debitorensuchverknüpfungen](./media/SearchShortcutsPOS.png "Debitorensuchverknüpfungen")
 
@@ -101,3 +110,7 @@ Das Feld **Reihenfolge anzeigen** bestimmt die Reihenfolge, in der Verknüpfunge
 
 > [!NOTE]
 > Eine benutzerdefinierte Eigenschaft, die der Enumeration hinzugefügt wird, wirkt sich nicht den standardmäßigen Debitorensuchenalgorithmus aus. Das bedeutet, dass der Debitorensuchalgorithmus nicht in der Debitoreneigenschaft suchen wird. Benutzer können nur eine benutzerdefinierte Eigenschaft für Suchvorgänge verwenden, wenn diese benutzerdefinierte Eigenschaft als Verknüpfung hinzugefügt ist oder wenn der Standardsuchenalgorithmus überschrieben wird.
+
+In einer bevorstehenden Veröffentlichung von Microsoft Dynamics 365 for Retail sind Einzelhändler in der Lage, den Standard-Debitorensuchmodus in POS auf **alle Shops durchsuchen** festzulegen. Diese Konfiguration kann in Szenarios hilfreich sein, bei denen Debitoren, die außerhalb POS erstellt wurden, umgehend gefunden werden müssen (zum Beispiel selbst bevor der Verteilungseinzelvorgang ausgeführt wird). Eine neue Option **Standarddebitoren-Suchmodus** ist im POS-Funktionsprofil verfügbar. Legen Sie diese auf **Aktiviert** fest, um den Standardsuchmodus auf **Alle Shops durchsuchen** festzulegen. Jeder Debitorensuchenversuch macht dann einen Echtzeitanruf an den Hauptsitz.
+
+Um unerwartete Leistungsabgänge zu verhindern, ist diese nach Konfiguration hinter einer Flight-Markierung verborgen, die lautet**CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** Um die Einstellungen **Standarddebitoren-Suchenmodus** der Benutzerschnittstelle anzuzeigen, sollte der Einzelhändler ein Supportticket für die Benutzerakzeptanztests (UAT) und die Produktumgebung erstellen. Nachdem das Ticket empfangen wurde, arbeitet das Technikteam bei dem Einzelhändler, um sicherzustellen, dass der Einzelhändler Tests in der Nicht-Produktionsumgebung durchführt, um die Leistung zu ermitteln und alle Optimierungen zu implementieren, die erforderlich sind.

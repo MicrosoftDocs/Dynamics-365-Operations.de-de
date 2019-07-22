@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9daba2449b6a20634c13117cedb6b63fcc8ee674
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620644"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624906"
 ---
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
@@ -40,7 +40,10 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
 
-## <a name="dynamics-365-for-finance-and-operations-1004"></a>Dynamics 365 for Finance and Operations 10.0.4 
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28
+
+> [!IMPORTANT]
+> Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Frankreich: FEC-Buchhaltungsdatenexport in XML
 
@@ -52,17 +55,12 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet. Zielzeitrahmen für die Entfernung der Funktionalität ist Juli 2020. |
 
-=======
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-navigation-bar"></a>Vorgängernavigationsleiste
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/updatednavbar).
+| **Grund für veralteten Zustand/Entfernung** | Kopfzeilenausrichtung an anderen Dynamics- und Office-Produkten. Weitere Informationen finden Sie unter [Aktualisierte Navigationsleiste, die an der Office-Kopfzeile ausgerichtet ist](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Ersetzt durch eine andere Funktion?**   | Ab Plattformupdate 24 wurde eine neu formatierte Navigationsleiste eingeführt, die eine Suchfunktion enthält. |
 | **Betroffene Produktbereiche**         | Webclient |
 | **Bereitstellungsoption**              | Alle |
@@ -71,8 +69,6 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ## <a name="dynamics-365-for-finance-and-operations-1002-with-platform-update-26"></a>Dynamics 365 for Finance and Operations 10.0.2 mit Plattformupdate 26
 
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.2 mit Plattformupdate 26 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="legacy-default-action-behavior"></a>Vorgänger-Standardaktivitätsverhalten
 
@@ -116,9 +112,6 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | **Status**                         | Veraltet: Zielzeitrahmen für die Entfernung der Funktionalität ist April 2020. |
 
 ## <a name="dynamics-365-for-finance-and-operations-1001-with-platform-update-25"></a>Dynamics 365 for Finance and Operations 10.0.1 mit Plattformupdate 25
-
-> [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.1 mit Plattformupdate 25 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
 
 ### <a name="deprecated-apis-and-potential-breaking-changes"></a>Veraltete APIs und mögliche wichtige Änderungen
 
@@ -755,7 +748,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integration mit AIF, AxD und AxBC
 
-In Application Integration Framework (AIF), können Daten mit externen Systemen über Geschäftslogik ausgetauscht werden, die als Dienst verfügbar gemacht wird. Dynamics AX verfügt über Dienste, die auf Dokumenten und .NET Business Connector (AxBC) basieren. Ein Dokument wird über XML erstellt. Das XML umfasst Kopfinformationen, die hinzugefügt werden, um eine *Meldung* zu erstellen, die zu oder aus Dynamics AX übertragen werden kann. Beispiele zu Dokumenten sind Aufträge und Bestellungen. Fast jede Entität, z. B. ein Debitor, kann über Dokument dargestellt werden. Dienste, die auf Dokumenten basieren, verwenden die Klassen **Axd \<Document\>**.
+In Application Integration Framework (AIF), können Daten mit externen Systemen über Geschäftslogik ausgetauscht werden, die als Dienst verfügbar gemacht wird. Dynamics AX verfügt über Dienste, die auf Dokumenten und .NET Business Connector (AxBC) basieren. Ein Dokument wird über XML erstellt. Das XML umfasst Kopfinformationen, die hinzugefügt werden, um eine *Meldung* zu erstellen, die zu oder aus Dynamics AX übertragen werden kann. Beispiele zu Dokumenten sind Aufträge und Bestellungen. Fast jede Entität, z. B. ein Debitor, kann über Dokument dargestellt werden. Dienste, die auf Dokumenten basieren, verwenden die Klassen **Axd \<Dokument\>**.
 
 |   |  |
 |------------|--------------------|

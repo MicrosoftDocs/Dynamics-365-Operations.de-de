@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9fa49d0b3553ae70547aeea19d14bc6e6e08983
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
+ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577928"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624811"
 ---
 # <a name="retail-peripherals"></a>Einzelhandelsperipheriegeräte
 
@@ -156,13 +156,13 @@ Der **Windows** Einheitentyp wird nur für Drucker verwendet. Wenn ein Windows-D
 
 ### <a name="network"></a>Netzwerk
 
-Netzwerk-Kassenladen, -Bondrucker und -Zahlungsterminals können über ein Netzwerk verwendet werden, entweder direkt über die Hardwarestation die prozessübergreifenden Kommunikationen (Interprocess Communications, IPK), der in die Modern POS für Windows-Anwendung integriert ist oder von der IIS-Hardwarestation für andere Modern POS-Clients erstellt wird.
+Netzwerk-Kassenladen, -Bondrucker und -Zahlungsterminals können über ein Netzwerk verwendet werden, entweder direkt über die Hardwarestation die prozessübergreifenden Kommunikationen (Interprocess Communications, IPK), der in die Modern POS für Android Anwendung integriert  oder von der IIS-Hardwarestation für andere Modern POS-Clients erstellt wird.
 
 ## <a name="hardware-station-deployment-options"></a>Hardware Station-Bereitstellungsoptionen
 
 ### <a name="ipc-built-in"></a>IPC (Integriert)
 
-Die Interprocess Communications (IPC) Hardwarestation ist in das Modern POS-Programm für Windows integriert. Um die IPC-Hardwarestation zu verwenden, weisen Sie ein Hardwareprofils zu einer Register zu, die die Modern POS Windows-Anwendung verwendet. Erstellen Sie dann eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird. Wenn Sie Modern POS starten, ist die IPC-Hardwarestation aktiv, und die POS-Peripheriegeräte, die konfiguriert wurden, sind bereit. Wenn Sie zeitweise nicht auf die lokale Hardware aus irgendeinem Grund benötigen, verwenden Sie den **Verwalten von Hardwarestationen** Arbeitsgang, um die Hardwarestationsfunktionen zu deaktivieren. Modern POS kann die IPC-Hardwarestation auch verwenden, um mit direkt verbunden Netzwerkperipheriegeräte zu kommunizieren.
+Die Interprocess Communications (IPC) Hardwarestation ist in das Modern POS-Programm für Windows und Modern POS für Android Anwendung integriert. Um die IPC-Hardwarestation zu verwenden, weisen Sie ein Hardwareprofils zu einer Register zu, die die Modern POS Windows-Anwendung verwendet. Erstellen Sie dann eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird. Wenn Sie Modern POS starten, ist die IPC-Hardwarestation aktiv, und die POS-Peripheriegeräte, die konfiguriert wurden, sind bereit. Wenn Sie zeitweise nicht auf die lokale Hardware aus irgendeinem Grund benötigen, verwenden Sie den **Verwalten von Hardwarestationen** Arbeitsgang, um die Hardwarestationsfunktionen zu deaktivieren. Modern POS kann die IPC-Hardwarestation auch verwenden, um mit direkt verbunden Netzwerkperipheriegeräte zu kommunizieren.
 
 ### <a name="iis"></a>IIS
 
@@ -190,7 +190,11 @@ Die Netzwerkbezeichnung für Geräte im Hardwareprofil sorgt dafür, das Kassenl
 
 Sie können IP-Adressen für Netzwerkperipheriegeräte in zwei Stellen angeben. Wenn der Modern POS Windows-Client einen individuellen Satz Netzwerkperipheriegeräte verwendet, sollten Sie die IP-Adressen diese für Geräte festlegen, indem Sie die **IP-Konfiguration** Option im Aktivitätsbereich für die Register verwenden. Bei der Netzwerkgeräten, die unter POS-Registern freigegeben werden, kann ein Hardwareprofil, dem Netzwerkgeräte zugewiesen werden, direkt auf eine freigegebene Hardwarestation zugeordnet werden. Um IP-Adressen zuzuweisen, wählen Sie die Hardwarestation auf der Seite **Einzelhandelsgeschäfte** aus, und verwenden Sie dann die **IP-Konfiguration** im **Hardwarestationen** Abschnitt, um den Netzwerkgeräten anzugeben die dieser Hardwarestation zugewiesen werden. Für Hardwarestationen, die nur Netzwerkgeräte haben, müssen Sie die Hardwarestation selbst nicht bereitstellen. In diesem Fall ist die Hardwarestation nur erforderlich, , um über das Netzwerk adressierbare Geräte entsprechend ihrem Standort im auf Shop zu gruppieren.
 
-#### <a name="cloud-pos-modern-pos-for-ios-and-modern-pos-for-android"></a>Cloud POS, Modern POS für iOS und Modern POS für Android
+#### <a name="modern-pos-for-android"></a>Modern POS für Android
+
+Ab Dynamics 365 for Retail-Version 8.1.3 wird das Modern POS für Android Anwendung eine integrierte IPC Hardwarestation enthalten. Diese Hardwarestation unterstützt die Kommunikation mit Netzwerkdruckern und Zahlungskonnektoren. Weitere Informationen finden Sie unter [Hybride-App für Android Docs-Artikel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+
+#### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS und Modern POS für iOS
 
 Die Logik für physisch verbundene und über das Netzwerk-adressierbaren Peripheriegeräte ist in der Hardwarestation enthalten. Daher muss für alle POS-Clients außer Modern POS für Windows eine IIS-Hardwarestation bereitgestellt und aktiv sein, damit das POS mit Peripheriegeräten kommunizieren kann, unabhängig davon, ob diese die Kommunikation an Peripheriegeräte geht, die physisch mit einer Hardwarestation verbunden sind, oder über das Netzwerk verbunden sind.
 
@@ -222,9 +226,9 @@ Die folgende Tabelle zeigt die Topologien und die Bereitstellungsszenarien an di
 | Kunde      | IPC-Hardwarestation | IIS-Hardwarestation |
 |-------------|----------------------|----------------------|
 | Windows-App | Ja                  | Ja                  |
-| Cloud POS   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| Cloud POS   | Nein                   | Ja                  |
+| Android     | Ja                  | Ja                  |
+| iOS         | Nein                   | Ja                  |
 
 ### <a name="network-peripherals"></a>Netzwerkperipheriegeräte
 
@@ -233,9 +237,9 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 | Kunde      | IPC-Hardwarestation | IIS-Hardwarestation |
 |-------------|----------------------|----------------------|
 | Windows-App | Ja                  | Ja                  |
-| Cloud POS   | Nr.                   | Ja                  |
-| Android     | Nr.                   | Ja                  |
-| iOS         | Nr.                   | Ja                  |
+| Cloud POS   | Nein                   | Ja                  |
+| Android     | Ja                  | Ja                  |
+| iOS         | Nein                   | Ja                  |
 
 ## <a name="supported-device-types-by-hardware-station-type"></a>Unterstützte Gerätetypen nach Hardwarestationstyp
 
@@ -661,14 +665,15 @@ Die folgenden Peripheriegeräte wurden getestet, indem die IPC-Hardwarestation v
 
 #### <a name="printer"></a>Drucker
 
-| Hersteller | Modell    | Schnittstelle | Kommentare                |
-|--------------|----------|-----------|-------------------------|
-| Epson        | Tm-T88IV | OPOS      |                         |
-| Epson        | TM-T88V  | OPOS      |                         |
-| Star         | TSP650II | OPOS      |                         |
-| Star         | TSP650II | Benutzerdefiniert    | Per Netzwerk verbunden   |
-| Star         | mPOP     | OPOS      | Angeschlossen per Bluetooth |
-| HP           | F7M67AA  | OPOS      | USB             |
+| Hersteller | Modell      | Schnittstelle | Kommentare                |
+|--------------|------------|-----------|-------------------------|
+| Epson        | Tm-T88IV   | OPOS      |                         |
+| Epson        | TM-T88V    | OPOS      |                         |
+| Epson        | ePOS-Druck | Benutzerdefiniert    | Per Netzwerk verbunden   |
+| Star         | TSP650II   | OPOS      |                         |
+| Star         | TSP650II   | Benutzerdefiniert    | Per Netzwerk verbunden   |
+| Star         | mPOP       | OPOS      | Angeschlossen per Bluetooth |
+| HP           | F7M67AA    | OPOS      | USB             |
 
 #### <a name="bar-code-scanner"></a>Strichcodescanner
 
@@ -688,11 +693,12 @@ Die folgenden Peripheriegeräte wurden getestet, indem die IPC-Hardwarestation v
 
 #### <a name="payment-terminal"></a>Zahlungsterminal
 
-| Hersteller | Modell | Schnittstelle | Kommentare                                                                       |
-|--------------|-------|-----------|--------------------------------------------------------------------------------|
-| Equinox      | L5300 | Benutzerdefiniert    | Erfordert Anpassung des Zahlungskonnektors                                |
-| VeriFone     | MX925 | Benutzerdefiniert    | Erfordert Anpassung des Zahlungskonnektors; Netzwerk verbunden und USB |
-| VeriFone     | MX915 | Benutzerdefiniert    | Erfordert Anpassung des Zahlungskonnektors; Netzwerk verbunden und USB |
+| Hersteller | Modell        | Schnittstelle | Kommentare                                                                       |
+|--------------|--------------|-----------|--------------------------------------------------------------------------------|
+| Equinox      | L5300        | Benutzerdefiniert    | Erfordert Anpassung des Zahlungskonnektors                                |
+| VeriFone     | MX925        | Benutzerdefiniert    | Erfordert Anpassung des Zahlungskonnektors; Netzwerk verbunden und USB |
+| VeriFone     | MX915        | Benutzerdefiniert    | Erfordert Anpassung des Zahlungskonnektors; Netzwerk verbunden und USB |
+| Verifone     | Kommentare anzeigen | Adyen     | Der Adyen-Konnektor unterstützt alle aufgelisteten Geräte [hier](https://www.adyen.com/pos-payments/terminals) |
 
 #### <a name="cash-drawer"></a>Kassenlade
 

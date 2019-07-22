@@ -3,7 +3,7 @@ title: Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 description: Dieses Thema enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Microsoft Dynamics 365 for Retail. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
 author: jblucher
 manager: AnnBe
-ms.date: 10/12/2017
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 44a2ec48f868c803c80c8df8eb809bc2254e63da
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
+ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505095"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625664"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -159,10 +159,10 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 114 | Retourenbuchung | Zurückrufen einer vorherigen Buchung anhand der Bonnummer, um einige oder alle Produkte zurückzugeben. | Ja | Ja | Ja | Ja§ | Nr. |
 | 1211 | Ablage in Tresor | Führt eine Ablage im Tresor durch, um Geld aus dem Register in einen Tresor einzuschließen. | Ja | Ja | Ja | Ja | Nr. |
 | 516 | Verkaufsrechnung | Dieser Arbeitsgang ermöglicht dem Debitor, Zahlungen für die ausgewählte Rechnung vorzunehmen. | Ja | Ja | Nr. | Nr. | Nr. |
-| 502 | Verkäufer | Dieser Arbeitsgang ermöglicht dem Benutzer, den **Sales Erfasser**-Wert in einem Auftrag für Kundenaufträge am Point-of-Sale festzulegen. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 2000 | Zeitplanverwaltung | Dieser Arbeitsgang erlaubt Benutzern, Mitarbeiterzeitpläne zu erstellen, zu ändern oder anzuzeigen. | Ja | Ja | Ja | Nr. | Nr. |
-| 2001 | Zeitplananforderungen | Dieser Arbeitsgang erlaubt Benutzern das Anfordern von Freizeit, das Austauschen von Schichten oder das Anbieten von Schichten an andere Mitarbeiter. | Ja | Ja | Ja | Nr. | Nr. |
-| 622 | Aufträge durchsuchen | Dieser Arbeitsgang erlaubt Benutzern, POS-Schaltflächen vorzukonfigurieren, um Suchen nach Kategorie oder Artikel, Debitor auszuführen. | Ja | Ja | Ja | Ja | Nr. |
+| 502 | Verkäufer | Dieser Arbeitsgang ermöglicht dem Benutzer, den **Sales Erfasser**-Wert in einem Auftrag für Kundenaufträge am Point-of-Sale festzulegen. | Ja | Ja | Nein | Ja\* | Nein |
+| 2000 | Zeitplanverwaltung | Dieser Vorgang wird noch nicht unterstützt. | Ja | Ja | Ja | Nein | Nein |
+| 2001 | Zeitplananforderungen | Dieser Vorgang wird noch nicht unterstützt. | Ja | Ja | Ja | Nein | Nein |
+| 622 | Durchsuchen | Dieser Arbeitsgang erlaubt Benutzern, POS-Schaltflächen vorzukonfigurieren, um Suchen nach Kategorie oder Artikel, Debitor auszuführen. | Ja | Ja | Ja | Ja | Nr. |
 | 1213 | Versandadresse suchen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 709 | Hardwarestation auswählen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine Hardwarestation in einer Liste der verfügbaren Hardwarestationen auszuwählen. | Ja | Ja | Ja | Ja | Nr. |
 | 637 | Standardverkäufer für Buchung festlegen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine der freigegebenen Provisionsverkaufsgruppen (Verkaufsripse) als der Standardvertriebsmitarbeiter für Positionen auszuwählen, die zu einem späteren Zeitpunkt hinzugefügt werden. | Ja | Ja | Nr. | Ja | Nr. |

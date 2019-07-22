@@ -3,7 +3,7 @@ title: Zuweisen von Benutzern zu Sicherheitsrollen
 description: Für den Zugriff auf Microsoft Dynamics 365 for Finance and Operations Enterprise Edition müssen Benutzer Sicherheitsrollen zugewiesen werden.
 author: maertenm
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55cb085bb5170aa4894a2240a12f6ca451b922fb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ab9f2f5ea07ae1d616c48dffa8810b966f7dbb2f
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556708"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711130"
 ---
 # <a name="assign-users-to-security-roles"></a>Zuweisen von Benutzern zu Sicherheitsrollen
 
@@ -31,25 +31,20 @@ Für den Zugriff auf Microsoft Dynamics 365 for Finance and Operations Enterpris
 
 
 ## <a name="automatically-assign-users-to-roles"></a>Weisen Sie Benutzer automatisch Rollen zu
-1. Wechseln Sie zu "Systemverwaltung"  "Sicherheit"  "Benutzer zu Rollen zuweisen".
-2. In der Struktur wählen Sie "Supervisor Buchhaltung" aus.
-    * Wählen Sie die Rolle aus, für die Sie die Regel konfigurieren möchten. In diesem Beispiel wählen Sie "Supervisor Buchhaltung" aus.  
-3. Klicken Sie auf "Regel hinzufügen", um das Ablagedialogfeld zu öffnen.
-4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Abfrage aus, die für diese Regel zu verwenden ist.  
-5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-6. (Zum Bearbeiten klicken)
-    * Bearbeiten Sie die Abfrage nach Bedarf.  
-7. Klicken Sie auf "OK".
+1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Benutzer zu Rollen zuweisen**.
+2. In der Struktur wählen Sie "Supervisor Buchhaltung" aus. Wählen Sie die Rolle aus, für die Sie die Regel konfigurieren möchten. In diesem Beispiel wählen Sie "Supervisor Buchhaltung" aus. 
+3. Klicken Sie auf **Regel hinzufügen**, um das Ablagedialogfeld zu öffnen.
+4. In der Liste **Eine Abfrage auswählen** den gewünschten Datensatz suchen und auswählen. Wählen Sie die Abfrage aus, die für diese Regel zu verwenden ist.  
+5. Klicken Sie in der Liste **Mitgliederregelname** auf den Link in der ausgewählten Zeile.
+6. Klicken Sie auf **Abtrage bearbeiten**. Bearbeiten Sie die Abfrage nach Bedarf.  
+7. Klicken Sie auf **OK**.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Schließen Sie Benutzer von der automatischen Rollenzuweisung aus
 1. Schließen Sie die Seite.
-2. Wechseln Sie zu "Systemverwaltung"  "Sicherheit"  "Benutzer zu Rollen zuweisen".
-3. In der Struktur wählen Sie "Supervisor Buchhaltung" aus.
-    * Wählen Sie hier eine Rolle aus. Wählen Sie für dieses Beispiel "Supervisor Buchhaltung" aus.  
-4. Klicken Sie auf "Benutzer manuell zuweisen/ausschließen".
-5. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Wählen Sie einen Benutzer aus.  
-6. Klicken Sie auf "Von Rolle ausschließen".
-    * Klicken Sie auf "Von Rolle ausschließen", um die ausgewählten Benutzer von der Rolle auszuschließen. Um Ausschlüsse zu entfernen, wählen Sie die Benutzer aus, für die Sie Ausschlüsse entfernen möchten, und klicken Sie dann auf "Status zurücksetzen". Wenn Sie einen Ausschluss entfernen, indem Sie den Status des Benutzers zurücksetzen, wird die Rolle des Benutzers erneut automatisch zugewiesen. Allerdings wird der Benutzer nicht sofort der Rolle zugewiesen oder von der Rolle ausgeschlossen, wenn Sie den Status zurücksetzen. Stattdessen wird der Benutzer entweder der Rolle zugewiesen oder von der Rolle entfernt, und zwar das nächste Mal, wenn die Regeln für automatische Rollenzuweisung ausgeführt werden.  
-
+2. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Sicherheit > Benutzer zu Rollen zuweisen**.
+3. In der Struktur wählen Sie "Supervisor Buchhaltung" aus. Wählen Sie hier eine Rolle aus. Wählen Sie für dieses Beispiel "Supervisor Buchhaltung" aus.  
+4. Im Menü **Der Rolle zugewiesene Benutzer** wählen Sie **Benutzer manuell zuweisen/ausschließen** aus.
+5. Markieren Sie in der Liste **Benutzer der Rolle zuweisen oder davon ausschließen** die ausgewählte Zeile. Wählen Sie einen Benutzer aus.  
+6. Wählen Sie im **Aktivitätsbereich** die Option **Von Rolle ausschließen** aus.
+    
+    Klicken Sie auf **Von Rolle ausschließen**, um die ausgewählten Benutzer von der Rolle auszuschließen. Um Ausschlüsse zu entfernen, wählen Sie die Benutzer aus, für die Sie Ausschlüsse entfernen möchten, und klicken Sie dann auf **Status zurücksetzen**. Wenn Sie einen Ausschluss entfernen, indem Sie den Status des Benutzers zurücksetzen, wird die Rolle des Benutzers erneut automatisch zugewiesen. Allerdings wird der Benutzer nicht sofort der Rolle zugewiesen oder von der Rolle ausgeschlossen, wenn Sie den Status zurücksetzen. Stattdessen wird der Benutzer entweder der Rolle zugewiesen oder von der Rolle entfernt, und zwar das nächste Mal, wenn die Regeln für automatische Rollenzuweisung ausgeführt werden.  

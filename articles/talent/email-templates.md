@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: b88ba4386dbf3513d75990acca1c07fa6f0dc9b0
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1c7c017cce26b6b250d899bba891d6823b40c282
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518103"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729725"
 ---
 # <a name="email-templates"></a>E-Mail-Vorlagen
 [!include[banner](../includes/banner.md)]
 
-Mithilfe der E-Mail-Vorlagen-Bibliothek können Administratoren ein einheitliches Design und Branding für alle E-Mails erstellen, die von Microsoft Dynamics 365 for Talent: Attract gesendet werden. Administratoren können auch eine Sammlung von E-Mail-Inhaltsvorlagen zusammenstellen, die von anderen E-Mail-Nutzern verwendet werden können. Das Einstellungsteam kann diese Vorlagen in ihrem Workflow verwenden, um E-Mail-Nachrichten effizienter zu senden. Einige E-Mails werden in Attract so konfiguriert, dass sie automatisch gesendet werden, und der Administrator kann die Email-Vorlagen-Bibliothek verwenden, um den Inhalt für die E-Mails anzupassen.
+Mithilfe der E-Mail-Vorlagen-Bibliothek können Administratoren ein einheitliches Design und Branding für alle E-Mails erstellen, die von Microsoft Dynamics 365 for Talent: Attract und Offer gesendet werden. Administratoren können auch eine Sammlung von E-Mail-Inhaltsvorlagen zusammenstellen, die von anderen E-Mail-Nutzern verwendet werden können. Das Einstellungsteam kann diese Vorlagen in ihrem Workflow verwenden, um E-Mail-Nachrichten effizienter zu senden. Einige E-Mails werden so konfiguriert, dass sie automatisch gesendet werden, und der Administrator kann die Email-Vorlagen-Bibliothek verwenden, um den Inhalt für die E-Mails anzupassen.
 
 > [!NOTE]
 > Um E-Mail-Vorlagen zu verwenden, muss die Organisation das Verständliche Einstellungsadd-on haben.
@@ -37,7 +37,7 @@ Mithilfe der E-Mail-Vorlagen-Bibliothek können Administratoren ein einheitliche
 
 Um ein konsistentes Branding für die gesamte E-Mail-Kommunikation zu erstellen, muss der Administrator erst die globalen Kopf- und Fußzeilen für alle E-Mail-Vorlagen festlegen. Im Administratorcenter kann der Administrator auf der Registerkarte **Email-Vorlagen-Einstellungen** im Abschnitt **Kopfzeile** ein Bild hochladen, das bei allen E-Mails als Kopfzeile oder Banner verwendet werden soll. Das Bild kann ein Firmenlogo, ein Briefkopf oder jedes andere Repräsentativbild sein. Es wird empfohlen, dass die Breite zwischen 25 und 800 Pixel beträgt und die Höhe zwischen 25 und 150 Pixel, da diese Abmessungen für die meisten E-Mail-Clients wie Microsoft Outlook optimal sind. Das Bild muss eine JPEG-, JPG-, PNG- oder SVG-Datei sein, und die Dateigröße muss kleiner als 1 Megabyte (MB) sein. Nachdem ein Bild hochgeladen wurde, wird eine Vorschau der Kopfzeile generiert und angezeigt. Wenn das Kopfzeilenbild entfernt oder ersetzt werden muss, kann der Administrator die Option **Entfernen** über der Vorschau verwenden.
 
-Im Abschnitt **Fußzeile** kann der Administrator Links zur Kommunikations-Datenschutzrichtlinie den Bedingungen des Unternehmens bereitstellen. Diese Links werden in eine Fußzeile integriert, die automatisch generiert wird. Eine Vorschau der Fußzeile wird dann angezeigt.
+Im Abschnitt **Fußzeile** kann der Administrator Links zur Kommunikations-Datenschutzrichtlinie den Bedingungen des Unternehmens bereitstellen. Diese Links werden in eine Fußzeile integriert, die automatisch generiert wird. Eine Vorschau der Fußzeile wird dann angezeigt. Der Administrator kann auch eine bestimmte Sprache auswählen, in der E-Mail-Fußzeilen als Teil aller E-Mail-Nachrichten gesendet werden. Die gleiche Sprachenkonfiguration wird auch zum Zusammenfügen der Tabelle der Gesprächsszusammenfassung verwendet. 
 
 Vergewissern Sie sich, dass Sie die Änderungen speichern, bevor Sie das Administratorcenter schließen.
 
@@ -46,7 +46,7 @@ Vergewissern Sie sich, dass Sie die Änderungen speichern, bevor Sie das Adminis
 
 ## <a name="email-template-library"></a>E-Mail-Vorlagenbibliothek 
 
-Nachdem die globalen Vorlagenkonfigurationen eingerichtet sind, kann der Administrator damit beginnen, Vorlagen für alle E-Mails zu erstellen und zusammenzustellen, die über Attract gesendet werden. Die Email-Vorlagenbibliothek ist nur für Administratoren verfügbar. Um die Bibliothek zu öffnen, wählen Sie im Hauptnavigationsmenü die Registerkarte **E-Mail-Vorlagen** aus. Die Bibliothek wird nach den unterschiedlichen Aktivitäten in Attract kategorisiert, für die E-Mails gesendet werden müssen, z. B. "Planung", "Bewertung" und "Joberstellung". Der Administrator kann eine beliebige Kategorie auswählen, um alle E-Mail-Typen anzuzeigen, die der Aktivität zugeordnet sind. Wählen Sie beispielsweise **Planung** aus, um die verschiedenen E-Mail-Typen anzuzeigen, die während des Planungsprozesses gesendet werden, und alle Vorlagen, die für jeden E-Mail-Typ verfügbar sind. Jeder Unterabschnitt in einer Kategorie stellt einen E-Mail-Typ dar.
+Nachdem die globalen Vorlagenkonfigurationen eingerichtet sind, kann der Administrator damit beginnen, Vorlagen für alle E-Mails zu erstellen und zusammenzustellen, die über Attract und Offer gesendet werden. Die Email-Vorlagenbibliothek ist nur für Administratoren verfügbar. Um die Bibliothek zu öffnen, wählen Sie im Hauptnavigationsmenü die Registerkarte **E-Mail-Vorlagen** aus. Die Bibliothek wird nach den unterschiedlichen Aktivitäten in Attract kategorisiert, für die E-Mails gesendet werden müssen, z. B. „Planung“, „Bewertung“, „Joberstellung“ und „Angebot“. Der Administrator kann eine beliebige Kategorie auswählen, um alle E-Mail-Typen anzuzeigen, die der Aktivität zugeordnet sind. Wählen Sie beispielsweise **Planung** aus, um die verschiedenen E-Mail-Typen anzuzeigen, die während des Planungsprozesses gesendet werden, und alle Vorlagen, die für jeden E-Mail-Typ verfügbar sind. Jeder Unterabschnitt in einer Kategorie stellt einen E-Mail-Typ dar.
 
 Eine E-Mail-Typen können mehrere Empfänger haben. In der Kategorie **Planung** beispielsweise, werden die E-Mails, die gesendet werden, wenn die Gesprächsplanzusammenfassung benötigt wird, an Kandidaten und Gesprächsleiter gesendet. Jeder Abschnitt enthält zwei Hauptspalten: **Vorlagentitel** und **Empfänger**. Jede Zeile in einem Abschnitt enthält eine einzelne Vorlage für einen E-Mail-Typ. Zuerst wird ein Schlosssymbol in der Zeile für jede Vorlage angezeigt. Dieses Symbol gibt an, dass die Vorlage die Standardvorlage ist, der von Attract bereitgestellt wird, und dass sie nicht gelöscht werden kann. Für jede Vorlage kann der Administrator die Ellipsenschaltfläche (**…**) verwenden, um die Vorlage zu duplizieren, als eine Standardvorlage festzulegen oder sie zu löschen. Wenn eine Vorlage als Standardvorlage festgelegt wird, kann eine der beiden Verhaltensweisen auftreten. Das Verhalten wird durch die Kennkarte(n) angegeben, die in der Zeile für die Vorlage angezeigt werden:
 

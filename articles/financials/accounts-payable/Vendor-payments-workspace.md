@@ -3,7 +3,7 @@ title: Arbeitsbereich für Kreditorenzahlungen
 description: Dieses Thema enthält Informationen zum Arbeitsbereich für Kreditorenzahlungen. Im Arbeitsbereich für Kreditorenzahlungen werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen.
 author: abruer
 manager: AnnBe
-ms.date: 05/09/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 789acd3f403e322ec00388ca8184ccd30c3ea436
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6f5ffe65b2f9be7423f1fe420594c936e15550fb
+ms.sourcegitcommit: 6f0e5bf82a5f61bab52c3cf4c82849fae5c5d50b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1509221"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702934"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeitsbereich für Kreditorenzahlungen
 
 [!include [banner](../includes/banner.md)]
 
 Im Arbeitsbereich für **Kreditorenzahlungen** werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen. Der Arbeitsbereich umfasst eine Ansicht **meine Arbeit** und eine Seite **Analyse**. Die Ansicht **Meine Arbeit** zeigt zusammenfassende Kacheln, Lieferantentransaktionsrater und zugehörige Kreditoreninformationen. Die Seite **Analyse** verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Lieferantenzahlungen anzuzeigen.
+
+## <a name="setup-needed-to-view-power-bi-content"></a>Einrichtung erforderlich, um Power BI-Inhalt anzuzeigen
+
+Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen Elementen **Lieferantenzahlungen** Power BI angezeigt werden.
+1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
+2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen. 
+2. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
+3. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **VendPaymentBIMeasure** Aggregatmessung zu aktualisieren. 
 
 ## <a name="my-work-view"></a>Ansicht "Meine Arbeit"
 

@@ -3,7 +3,7 @@ title: Neuheiten und Änderungen
 description: Diese Seite weist auf Themen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Finance and Operations zu erlernen.
 author: josaw1
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: bc13efe11f383157338ccd6b2ae378ee1f92a698
-ms.sourcegitcommit: bbc9aa0d6b94a942e1f4d5b038601509dcc87937
+ms.openlocfilehash: 42c31195a0b1a785afadfefc33f5cf7e1a6fce1f
+ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1619191"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "1632004"
 ---
 # <a name="whats-new-or-changed"></a>Neuerungen und Änderungen
 
@@ -63,7 +63,7 @@ Diese Tabelle enthält die wichtigsten Versionen der Anwendung. Monatscloudaktua
 <td>10.0.3</td>
 <td>10.0.107</td>
 <td>2019. Juni</td>
-<td><a href="whats-new-changed-10-0-3.md">Vorschaufunktionen in Dynamics 365 for Finance and Operations, Version 10.0.3 (Juni 2019)</a></td>
+<td><a href="whats-new-changed-10-0-3.md">Neuerungen oder Änderungen in Dynamics 365 for Finance and Operations Version 10.0.3 (Juni 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>10.0.2</td>
@@ -183,7 +183,7 @@ Diese Tabelle enthält die wichtigsten Versionen der Anwendung. Monatscloudaktua
 <td>Plattformupdate 27</td>
 <td>7.0.5286</td>
 <td>2019. Juni</td>
-<td><a href="whats-new-platform-update-27.md">Vorschaufunktionen in Dynamics 365 for Finance and Operations platform update 27 (Juni 2019)</a></td>
+<td><a href="whats-new-platform-update-27.md">Neuheiten und Änderungen in Dynamics 365 for Finance and Operations Plattformupdate 27 (Juni 2019)</a></td>
 </tr><tr>
 <td>Microsoft Dynamics 365 for Finance and Operations</td>
 <td>Plattformupdate 26</td>

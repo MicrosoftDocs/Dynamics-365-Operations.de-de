@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 03edb5d626f221863f45804ce84168692c2bd1f3
-ms.sourcegitcommit: 3c4e59f55af2eafb3adbae3bb0091e4f6caacc8b
+ms.openlocfilehash: c249df697553cd42eccd59d3f2c3f5f083ead1cb
+ms.sourcegitcommit: 15154b0aa86110ce5fad6f63e6763103a676a1d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576920"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624606"
 ---
 # <a name="provision-talent"></a>Talent bereitstellen
 
@@ -48,6 +48,8 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
 
 1. In Ihrem LCS-Projekt wählen Sie die Kachel **Talent App-Verwaltung** aus.
 2. Geben Sie an, ob dies eine Sandkasten- oder Produktionsinstanz von Talent ist. Frühe Vorschaufunktionen sind möglicherweise in Sandkasteninstanzen verfügbar, um frühes Feedback und Testen zu ermöglichen. 
+    > [!NOTE]
+    > Der Talentinstanztyp ist von dem Instanztyp der PowerApps Umgebung getrennt, die Sie im PowerApps Admin Center festlegen
 3. Wählen Sie die Option **Demo-Daten einbeziehen**, wenn Sie möchten, dass Ihre Umgebung den gleichen Demo-Datensatz enthält, der auch in der Talent Test Drive Erfahrung verwendet wird. Dies ist vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollte niemals für Produktionsumgebungen verwendet werden.  Beachten Sie, dass Sie diese Option nach der ersten Bereitstellung auswählen müssen. Sie können eine vorhandene Bereitstellung später nicht aktualisieren.
 4. Talent wird immer in einer Microsoft PowerApps-Umgebung bereitgestellt, um PowerApps Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt "PowerApps-Umgebung" dieses Themas", bevor Sie fortfahren. Wenn Sie noch keine PowerApps-Umgebung haben, wählen Sie Umgebung verwalten in LCS oder navigieren zum PowerApps-Administratorcenter. Folgen Sie dann den Schritten [PowerApps-Umgebung erstellen](https://docs.microsoft.com/en-us/powerapps/administrator/create-environment).
 

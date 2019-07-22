@@ -3,7 +3,7 @@ title: Die Lohnintegration zwischen Talent und Dayforce konfigurieren
 description: In diesem Thema wird erläutert, wie Sie die Integration zwischen Microsoft Dynamics 365 for Talent und Ceridian Dayforce konfigurieren, damit Sie den Zahlungslauf verarbeiten können.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/26/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9a88bf61dbb12520b555ceb7363b1c646d95386e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518044"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702817"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Lohnintegration zwischen Talent und Dayforce konfigurieren
 
@@ -54,6 +54,16 @@ Weitere Informationen zu Azure-Speicherkonten und Azure Storage-Verbindungszeich
 
 - [Über Azure-Speicherkonten](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
 - [Azure Storage-Verbindungszeichenfolgen konfigurieren](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+
+### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technische Details, wenn Lohnintegration aktiviert ist
+
+Die Aktivierung von Lohnintegration hat zwei primäre Auswirkungen:
+
+- Ein Datenexportprojekt namens „Lohnintegrationsexport“ wird erstellt. Dieses Projekt enthält die Entitäten und Felder, die für die Lohnintegration erforderlich sind. Um das Projekt zu überprüfen, wechseln Sie zu **Systemverwaltung**, wählen Sie die Kachel **Datenverwaltung** aus, und öffnen Sie anschließend das Datenprojekt aus der Projektliste.
+- Dieser Stapelverarbeitungsauftrag führt das Datenexportprojekt aus, verschlüsselt das Datenpaket und überträgt die Datenenpaketdatei auf den SFTP-Endpunkt, der auf dem Bildschirm **Integrationskonfiguration** konfiguriert wird.
+
+> [!NOTE]
+> Das Datenpaket, das zum SFTP-Endpunkt übertragen wird, wird mit einem Schlüssel verschlüsselt, für das Paket eindeutig ist. Der Schlüssel befindet sich in einer Azure Key Vault, auf den nur durch Ceridian zugegriffen werden kann. Es ist nicht möglich, die Datenpaketinhalte zu entschlüsseln und zu überprüfen. Wenn Sie den Inhalt des Datenpakets überprüfen möchten, müssen Sie das Datenprojekt „Lohnintegrationsexport“ manuell exportieren, herunterladen und dann öffnen. Beim manuellen Export wird keine Verschlüsselung angewendet oder das Paket übertragen.
 
 ## <a name="configure-your-data"></a>Ihre Daten konfigurieren 
 

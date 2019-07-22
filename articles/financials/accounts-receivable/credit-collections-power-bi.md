@@ -3,7 +3,7 @@ title: Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kredit und Inkassoverwaltung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547231"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702771"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 
@@ -42,7 +42,17 @@ Alle Beträge werden in der Systemwährung angezeigt. Sie können die Systemwäh
 
 Standardmäßig wird die Kredit- und Inkassodaten für das aktuelle Unternehmen angezeigt. Um die Daten für alle Unternehmen anzuzeigen, weisen Sie der Rolle die Berechtigung **CustCollectionsBICrossCompany** zu.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Einrichtung erforderlich, um Power BI-Inhalt anzuzeigen
+
+Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen Elementen **Debitorenkredit und Inkassos** Power BI angezeigt werden.
+
+1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
+2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto** und legen Sie **Buchhaltungswährung** und **Wechselkurstyp** fest.
+3. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
+4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **CustCollectionsBIMeasurements**-Aggregatmessung zu aktualisieren.
+
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
+
 Der Power BI-Inhalt zur **Kredit- und Inkassoverwaltung** wird im Arbeitsbereich **Debitorenkredit und Inkasso** angezeigt.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
@@ -63,28 +73,3 @@ Der Power BI-Inhalt zu **CustCollectionsBICrossCompany** umfasst einen Bericht, 
 | Mahnschreiben         | <ul><li>Sammlungscodebeträge</li><li>Details zu Sammlungscodebeträgen</li><li>Mahnschreibenbetrag pro Unternehmen</li><li>Mahnschreibenbetrag pro Debitorengruppe</li><li>Mahnschreibenbetrag nach Region</li></ul> |
 
 Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Sie können auch die Funktionen zum Export zugrunde liegender Daten verwenden, um die zugrunde liegenden Daten zu exportieren, die in einer Visualisierung zusammengefasst sind.
-
-## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-
-Die folgenden Daten werden verwendet, um den Bericht im Power BI-Inhalt zur **Kredit- und Inkassoverwaltung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](../../dev-itpro/analytics/power-bi-integration-entity-store.md).
-
-
-|                   Entität                    |      Zentrale aggregierte Messungen      |             Datenquelle              |                           Feld                            |                                    Beschreibung                                     |
-|---------------------------------------------|--------------------------------------|--------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------|
-| CustCollectionsBIActivitiesAverageCloseTime | NumOfActivities, AveragecClosedTime  |            smmActivities             | AverageOfChildren (AverageClosedTime) Count(ActivityNumber) |     Die Anzahl der abgeschlossenen Aktivitäten und die Durchschnittszeit zum Schließen der Aktivitäten.     |
-|       CustCollectionsBIActivitiesOpen       |            ActivityNumber            |            smmActivities             |                   Count(ActivityNumber)                    |                           Die Anzahl der offenen Aktivitäten.                            |
-|        CustCollectionsBIAgedBalances        |             AgedBalances             |  CustCollectionsBIAgedBalancesView   |                 Sum(SystemCurrencyBalance)                 |                             Die Summe der Saldenrückblicke.                              |
-|        CustCollectionsBIBalancesDue         |         SystemCurrencyAmount         |   CustCollectionsBIBalanceDueView    |                 Sum(SystemCurrencyAmount)                  |                           Die Beträge, die überfällig sind.                            |
-|    CustCollectionsBICaseAverageCloseTIme    |  NumOfCases, CaseAverageClosedTime   |      CustCollectionsCaseDetail       | AverageOfChildren(CaseAverageClosedTime) Count(NumOfCases) |        Die Anzahl der abgeschlossenen Fälle und die Durchschnittszeit zum Schließen dieser Fälle.        |
-|         CustCollectionsBICasesOpen          |                CaseId                |      CustCollectionsCaseDetail       |                       Count(CaseId)                        |                              Die Anzahl der offenen Fälle.                              |
-|      CustCollectionsBICollectionLetter      |         CollectionLetterNum          |       CustCollectionLetterJour       |                 Count(CollectionLetterNum)                 |                       Die Anzahl der offenen Mahnschreiben.                        |
-|   CustCollectionsBICollectionLetterAmount   |       CollectionLetterAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                     Der Saldo der gebuchten Mahnschreiben.                      |
-|      CustCollectionsBICollectionStatus      |       CollectionStatusAmounts        | CustCollectionsBIAccountsReceivables |                 Sum(SystemCurrencyAmount)                  |                Der Saldo der Buchungen mit Inkassostatus.                 |
-|           CustCollectionsBICredit           | CreditExposed, AmountOverCreditLimit |     CustCollectionsBICreditView      |       Sum(CreditExposed), Sum(AmountOverCreditLimit)       | Die Summe der Kreditrisiken und Beträge, die Debitoren über dem Kreditlimit sind. |
-|         CustCollectionsBICustOnHold         |               Gesperrt                |      CustCollectionsBICustTable      |                       Count(Blocked)                       |                     Die Anzahl der Debitoren, die gesperrt sind.                      |
-|            CustCollectionsBIDSO             |                DSO30                 |       CustCollectionsBIDSOView       |                  AverageOfChildren(DSO30)                  |                        Tage ausstehender Verkäufe für 30 Tage.                         |
-|      CustCollectionsBIExpectedPayment       |           ExpectedPayment            | CustCollectionsBIExpectedPaymentView |                 Sum(SystemCurrencyAmounts)                 |                 Die Summe der erwarteten Zahlungen innerhalb des nächsten Jahrs.                 |
-|        CustCollectionsBIInterestNote        |             InterestNote             |           CustInterestJour           |                    Count(InterestNote)                     |                Die Anzahl der erstellten Zinsrechnungen.                |
-|        CustCollectionsBISalesOnHold         |               SalesId                |              SalesTable              |                       Count(SalesId)                       |                 Die Anzahl der gesamten Aufträge, die gesperrt sind.                 |
-|          CustCollectionsBIWriteOff          |            WriteOffAmount            |    CustCollectionsBIWriteOffView     |                 Sum(SystemCurrencyAmount)                  |                Die Gesamtanzahl der Buchungen, die abgeschrieben wurden.                 |
-

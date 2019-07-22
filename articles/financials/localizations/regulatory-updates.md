@@ -3,7 +3,7 @@ title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen rechtlichen Updates für Microsoft Dynamics 365 for Finance and Operations.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/16/2019
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 8b79dd65c38d878303a75490721a3c7e6f1c6d09
-ms.sourcegitcommit: d153bde74651400118bbd37b69ff5e7e161f1db7
+ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "1593342"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624310"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -66,6 +66,13 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 |      Ausstehend            |   10.0.3      | Polen     |   SAF-Rechnungen (JPK_FA) v.2 ab 1. Juli 2019  |
 |      Ausstehend            |   10.0.3      | Brasilien   |   ICMS-Steuerdokumentregulierungen aktivieren Tabelle 5.2   |
 |      Ausstehend            |   10.0.3      | Brasilien    |   NF-e-Verordnung 54.308/18 (RS)   |
+  | Ausstehend            |   10.0.4      | Brasilien    |   Eingehendes Steuerdokument 66   |
+   | Ausstehend            |   10.0.4      | Brasilien    |   NF-e und NFC-e - Lösung 13/2019 und Verordnung SUCIEF 55/2019- - RJ neue Bedingungen für ausgenommen Tags-Ausgaben in NF-e.   |
+   | Ausstehend            |   10.0.4      | Indien   |   Anzeige des Ortes der Lieferung und des Bundeslandes in der GST-Steuer-Rechnung  |
+   | Ausstehend            |   10.0.4      | Mexiko   |  DIOT-Drittanbietermeldung - Änderungen im Layout 2019   |
+   | Ausstehend            |   10.0.4      | Brasilien    |   NF-e ICMS-ST -  Verordnung CAT 42/18 für SP Status - CAT 42/18
+   | Ausstehend            |   10.0.4      | Brasilien    |   NF-e-Verordnung 54.308/18 - RS NF   |
+   
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

@@ -3,7 +3,7 @@ title: Eine neue Handelsvereinbarung erstellen
 description: Dieses Verfahren zeigt Ihnen an, wie eine Handelsvereinbarung erstellt, in der Sie einen Verkaufspreis der neuen Produktdimensionsgruppen erfassen, den Sie mit einem bestimmten Debitor aktualisiert haben.
 author: omulvad
 manager: AnnBe
-ms.date: 11/16/2018
+ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e132cd20437b7929e81fcaa123d70bb57fb320c8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e42383b237a60d41d3b4e09ffbbe1c1bb5ebbfd7
+ms.sourcegitcommit: 33e98f89294086334fe9c0a350abb6a52ef9dacb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549266"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "1711200"
 ---
 # <a name="create-a-new-trade-agreement"></a>Eine neue Handelsvereinbarung erstellen
 
@@ -30,40 +30,43 @@ Dieses Verfahren zeigt Ihnen an, wie eine Handelsvereinbarung erstellt, in der S
 
 
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Erstellen und buchen einer neuen Handelsvereinbarungs-Erfassung.
-1. Wechseln Sie zu Vertrieb und Marketing > Preise und Rabatte > Handelsvereinbarungserfassungen.
-2. Klicken Sie auf "Neu".
-3. Klicken Sie im Feld "Name" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+1. Wechseln Sie zu **Navigationsbereich > Module > Verrieb und Marketing > Preise und Rabatte > Handelsvereinbarungserfassungen**.
+2. Klicken Sie auf **Neu**.
+3. Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-6. Klicken Sie auf "Positionen".
-7. Wählen Sie im Feld Kontocode die Option Tabelle aus.
-    * In diesem Beispiel aktualisieren Sie den Preis für einen bestimmten Debitor, dem Durchschnitt Sie Tabelle auswählen muss. Wenn Sie den Listenpreis des Produkts aktualisierten, geben Sie alle aktivieren, damit der neue Preis für alle Debitoren gültig ist. Wenn Sie Preise unter verschiedenen Debitorensegmenten unterschieden, dann geben Sie Gruppe auswählen. Um Gruppe festzulegen, muss Debitorenpreisgruppen eingerichtet haben.  
-8. Klicken Sie im Feld Konto-Auswahl auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Wählen Sie im Feld Artikelcode "Tabelle" aus.
-    * Wenn Sie eine Handelsvereinbarung vom Typ "Preis (Verkauf)" eingegeben werden, müssen Sie "Tabelle" im Feld Artikelcode nur auswählen. Dies ist, da ein Preis ein absoluter Wert ist und nicht gleiche für alle oder eine Gruppe Produkte werden kann.  
-11. Klicken Sie im Feld Artikelrelation auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-12. In der Liste wählen Sie das Produkt aus, das Sie in die Vereinbarung aufnehmen wollen.
-    * Notieren Sie, an dem Produkt Sie ausgewählt haben.  
-13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-14. Geben Sie in das Von-Feld eine Minimalmenge ein.
-    * Wenn der Debitor eine Menge bestellen muss, bevor sie für den neuen Preis qualifiziert sind, dann können Sie Anforderung, diese Menge hier anzugeben.  
-    * Geben Sie einen Wert im Feld, um die maximale Menge anzugeben, zu der der Preis der Vereinbarung nicht gültig ist. Wenn Sie Angebotspreise und Rabatte auf Grundlage mehrere Mengenpausen, dann jede Mengenklammer als Paar der minimalen und maximalen Menge in " " und"" zu aus den Feldern bzw. angeben.  
-15. Geben Sie einen Preis in das Feld "Betrag in Währung" ein.
-16. In das Feld Von Datum, geben Sie ein Datum ein, ab dem diese Vereinbarung gilt.
-17. Klicken Sie auf "Speichern".
-18. Klicken Sie auf "Überprüfen".
-19. Klicken Sie auf Ausgewählte Positionen überprüfen.
-20. Klicken Sie auf "OK".
-21. Klicken Sie auf "Buchen".
-22. Klicken Sie auf "OK".
+5. Klicken Sie im **Aktivitätsbereich** auf **Zeilen**.
+6. Wählen Sie im Feld **Kontocode** die Option „Tabelle“ aus.
+    
+    In diesem Beispiel aktualisieren Sie den Preis für einen bestimmten Debitor, dem Durchschnitt Sie Tabelle auswählen muss. Wenn Sie den Listenpreis des Produkts aktualisierten, wählen Sie „Alle“ aus, damit der neue Preis für alle Debitoren gültig ist. Wenn Sie Preise unter verschiedenen Debitorensegmenten unterschieden, dann geben Sie Gruppe auswählen. Um Gruppe festzulegen, muss Debitorenpreisgruppen eingerichtet haben.  
+
+7. Klicken Sie im Feld **Konto-Auswahl** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+9. Wählen Sie im Feld **Artikelcode** „Tabelle“ aus.
+    
+    Wenn Sie eine Handelsvereinbarung vom Typ „Preis (Verkauf)“ eingeben, müssen Sie nur „Tabelle“ im Feld **Artikelcode** auswählen. Dies ist, da ein Preis ein absoluter Wert ist und nicht gleiche für alle oder eine Gruppe Produkte werden kann.
+    
+10. Klicken Sie im Feld **Artikelrelation** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+11. In der Liste wählen Sie das Produkt aus, das Sie in die Vereinbarung aufnehmen wollen. Notieren Sie, an dem Produkt Sie ausgewählt haben.  
+12. Geben Sie in das **Von**-Feld eine Minimalmenge ein.
+    - Wenn der Debitor eine Mindestmenge bestellen muss, bevor er sich für den neuen Preis qualifiziert, dann können Sie diese Menge hier angeben.  
+    - Geben Sie einen Wert im **Bis**-Feld ein, um die maximale Menge anzugeben, bis zu der der Preis der Vereinbarung nicht gültig ist. Wenn Sie Preise und Rabatte auf Grundlage mehrerer Mengennachlässe anbieten, dann geben Sie jeden Mengennachlass als Paar der minimalen und maximalen Menge in den **Von**- und **Bis**-Feldern an.
+13. Geben Sie einen Preis in das Feld **Betrag in Währung** ein.
+14. Geben Sie im Abschnitt **Details** im Feld **Von Datum** ein Datum ein, ab dem diese Vereinbarung gilt.
+15. Klicken Sie auf **Speichern**.
+16. Klicken Sie auf **Überprüfen**.
+17. Klicken Sie auf **Ausgewählte Positionen überprüfen.**
+18. Klicken Sie auf **OK**.
+19. Klicken Sie auf **Buchen**.
+20. Klicken Sie auf **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Handelsvereinbarungen für ein Produkt anzeigen
-1. Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".
+1. Wechseln Sie zu **Navigationsbereich > Module > Produktinformationsverwaltung > Produkte > Freigegebene Produkte**.
 2. Wählen Sie in der Liste suchen Sie und wählen Sie das Produkt aus, dessen Preis Sie derzeit aktualisiert haben.
-3. Klicken Sie im Aktivitätsbereich auf "Verkaufen".
-4. Klicken Sie auf Handelsvereinbarungen anzeigen.
-    * Prüfen Sie die Details der Preishandelsvereinbarung, soeben erstellt haben.    
+3. Klicken Sie im **Aktivitätsbereich** auf **Verkaufen**.
+4. Klicken Sie auf **Handelsvereinbarungen** anzeigen.
+    
+    Prüfen Sie die Details der Preishandelsvereinbarung, soeben erstellt haben.    
+
 5. Schließen Sie die Seite.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

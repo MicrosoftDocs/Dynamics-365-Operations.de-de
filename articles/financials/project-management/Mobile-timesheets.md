@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: April 2018 update
-ms.openlocfilehash: 96ad2af40ffb68649dca7a90d5ae14cd64b43ce9
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7eff0ce166785cb777fbf58ecf08ca8915be5af
+ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557328"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624883"
 ---
-# <a name="project-timesheets-on-a-mobile-device"></a>Projekt-Arbeitszeitnachweise auf einem mobilen Gerät
+# <a name="project-timesheets-on-a-mobile-device"></a>Projektarbeitszeitnachweise auf einem mobilen Gerät
 
 [!include [banner](../includes/banner.md)]
-
-# <a name="overview"></a>Überblick
 
 **Meine Arbeitszeitnachweise (optimiert für mobile Geräte)** ermöglicht es Mitarbeitern, Projekt-Arbeitszeitnachweise zu erstellen, um ihre Stunden für ein bestimmtes Projekt auf einem mobilen Gerät zu erfassen. Mitarbeiter können einen neuen Arbeitszeitnachweis erstellen oder Daten aus einem vorhandenen Arbeitszeitnachweis kopieren, um eine schnelle und genaue Zeiteingabe zu gewährleisten. Wenn Sie als Stellvertreter ausgewählt werden, können Sie außerdem Arbeitszeitnachweise für eine andere Arbeitskraft eingeben. Die App ermöglicht es Mitarbeitern, nach Projekt, Ressource oder Genehmigungsstatus zu filtern, um einen Arbeitszeitnachweis schnell zu finden und auszuwählen. Sie befähigt auch Mitarbeiter dazu, Favoriten zu speichern, wodurch Projekt- und Aktvitätsinformationen auf dem Arbeitszeitnachweis gespeichert werden. Die gespeicherten Favoriten können verwendet werden, um zukünftige Arbeitszeitnachweise zu erstellen, wodurch der Zeiteingabeprozess beschleunigt wird. Die Bearbeitung und Anzeige von Finanzdimensionsinformationen von der mobilen App aus wird nicht unterstützt. **Meine Arbeitszeitnachweise (optimiert für Mobile Geräte)** sind über den Webbrowser auf Ihrem mobilen Gerät zugänglich.
 
@@ -35,8 +33,7 @@ ms.locfileid: "1557328"
 Diese mobile Anwendung ist für iPhone mit Dynamics 365 for Finance and Operations Plattformupdate 15 kompatibel.
 Android wird mit dem Plattformupdate 16 kompatibel sein, sobald es verfügbar ist.
 
-<a name="create-a-project-timesheet-on-your-mobile-device"></a>Erstellen eines Projekt-Arbeitszeitnachweises auf ihrem mobilen Gerät
-------------------------------------------------
+## <a name="create-a-project-timesheet-on-your-mobile-device"></a>Erstellen eines Projekt-Arbeitszeitnachweises auf ihrem mobilen Gerät
 
 1.  Beachten Sie die Dynamics 365-URL für die Seite **Projektverwaltung und Buchhaltung** \> **Arbeitszeitnachweise** \> **Meine Arbeitszeitnachweise (optimiert für mobile Geräte)**.
 

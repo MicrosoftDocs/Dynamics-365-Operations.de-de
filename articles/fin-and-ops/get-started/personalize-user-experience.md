@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie Microsoft Dynamics 365 for Finance and Operations personalisieren können.
 author: jasongre
 manager: AnnBe
-ms.date: 05/17/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67ba1a95299de09c74e2fa2808cb63f61acf5862
-ms.sourcegitcommit: c576b81dc3c93c09fb08fb0ba0c19f417360c5ab
+ms.openlocfilehash: 51c4cbbba36ed4c93fbbba907031023060d51495
+ms.sourcegitcommit: 0273905ceb371ba17d3a37d690e1f568aa968b4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620013"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625010"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -169,6 +169,6 @@ Benutzer mit Administratorrechten können Personalisierungen auch für andere Be
 
 Wenn Sie die Einstellungen der Lagerungsdimensionen auf einer Seite personalisieren, beachten Sie die Einstellungen, die erstellt wurden, indem Sie die Option **Anzeigendimension** nutzen. So verwenden Sie die Personalisierung, um eine Spalte für die Chargennummerenlagerungsdimension auszublenden, doch die Spalte erscheint das nächste Mal, wenn die Seite geöffnet wird. Dieses Verhalten tritt auf, da die Einstellungen die Lagerungsdimensionsspalten **Dimensionenanzeige** steuern, die angezeigt werden.
 
-Die **Dimensionsanzeigeeinstellungen** gelten für alle Seiten und diese Einstellungen setzen alle personalisierten Lagerdimensionsfelder einer individuellen Seite außer Kraft.
+Die **Dimensionsanzeigeeinstellungen** gelten für alle Seiten und diese Einstellungen setzen alle personalisierten Lagerdimensionsfelder jeder individuellen Seite außer Kraft.
 
-Wenn Sie wie im vorhergehenden Beispiel nicht möchten, dass die Spalte für die Chargennummerenlagerungsdimension erscheint, müssen Sie die die Dimension als Teil der Tabelle **Anzeigendimensionen** deaktivieren. Schließlich wird diese Änderung nicht nur auf einer bestimmten Seite jedoch über allen Seiten gelten.
+Wenn Sie wie im vorhergehenden Beispiel nicht möchten, dass die Spalte für die Chargennummerenlagerungsdimension auf einer Seite erscheint, müssen Sie die Dimension als Teil der Tabelle **Anzeigendimensionen** für diese Seite deaktivieren.
