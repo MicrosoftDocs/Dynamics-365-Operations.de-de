@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85d2370353520ee588dfe2aedf9998d707f0eda6
-ms.sourcegitcommit: 97ed74889a09ef385f6ecbab69e84a05ff42ee41
+ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
+ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "1592659"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "1625871"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -471,7 +471,7 @@ Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, 
 
 **(("B" =" a") oder ("B" = "B") oder ("B" = "C"")**, wobei **("B" = "B")** ist gleich **WAHR**
 
-Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, LINKS (List.Value, 0)))** konfiguriert ist, gibt er **FALSCH** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
+Wenn eine Datenquelle aufgerufen wird, die als Ausdruck **VALUEIN ("B", "Liste, LINKS (List.Value, 0))** konfiguriert ist, gibt er **FALSCH** zurück. In diesem Fall wird die Funktion **VALUEIN** zu einem Satz der folgenden Bedingungen umgerechnet:
 
 **("B" = "")**, das nicht gleich **WAHR** ist
 
@@ -651,6 +651,11 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 <td>ZAHLENFORMAT (Zahl, Format)</td>
 <td>Gibt eine Zeichenfolgendarstellung der angegebenen Zahl im angegebenen Format zurück. (Informationen zum die unterstützten Formaten, finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">Standard</a> und <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">Custom</a>.) Im Kontext, dass diese Funktion ausgeführt wird, bestimmt die Kultur, die den Formatnummern verwendet wird.</td>
 <td>Für EN-US Kultur <strong>ZAHLENFORMAT (0.45, &quot;p&quot;)</strong> gibt <strong>&quot;45,00 %&quot;</strong> zurück. <strong>ZAHLENFORMAT (10,45, &quot;#&quot;)</strong> gibt <strong>&quot;10&quot;</strong> zurück.</td>
+</tr>
+<tr>
+<td>ZAHLENFORMAT (Zahl, Format, Kultur)</td>
+<td>Gibt eine Zeichenfolgedarstellung der angegebenen Zahl im angegebenen Format und Kultur zurück. (Informationen zu unterstützten Formaten, finden Sie unter <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">Standard</a> und <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">Benutzerdefiniert</a>.).</td>
+<td><strong>ZAHLENFORMAT (10/3, „F2“, „de“)</strong> gibt <strong>3,33</strong> zurück, <strong>ZAHLENFORMAT (10/3, „F2“, „en-us“)</strong> gibt hingegen <strong>3.33</strong> zurück.</td>
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (Nummer, Sprache, Währung, Drucktwährungsnamenmarkierung, Dezimaltrennzeichen)</td>

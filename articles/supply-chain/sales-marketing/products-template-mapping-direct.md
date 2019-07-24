@@ -3,7 +3,7 @@ title: Produkte direkt von Finance and Operations mit Produkten in Sales synchro
 description: Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Produkte aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Sales zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2018
+ms.date: 06/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: feb9fbc066162e2caa9fc5dbaeec2c063ae23060
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff284585a2eb4c5cf55d2e3a3e0f317d1fb218bb
+ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572603"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "1624334"
 ---
 # <a name="synchronize-products-directly-from-finance-and-operations-to-products-in-sales"></a>Produkte direkt von Finance and Operations mit Produkten in Sales synchronisieren
 
@@ -43,7 +43,7 @@ Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, 
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
-Um auf die verfügbaren Vorlagen zuzugreifen, öffnen Sie [PowerApps-Administrator-Center](https://preview.admin.powerapps.com/dataintegration). Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen.
+Um auf die verfügbaren Vorlagen zuzugreifen, öffnen Sie [PowerApps-Administrator-Center](https://admin.powerapps.com/dataintegration). Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen.
 
 Die folgenden Vorlagen und grundlegenden Aufgaben werden für die Synchronisierung von Konten aus Sales für Kunden in Finance and Operations verwendet:
 

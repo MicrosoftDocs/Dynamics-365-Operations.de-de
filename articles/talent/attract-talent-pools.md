@@ -3,7 +3,7 @@ title: Kandidaten mithilfe von Talentpools sourcen
 description: In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools eingerichtet werden.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/02/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 13b5e3091a4bcdbf1bfbe077ffb04ec8d08a0911
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
+ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518049"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "1711293"
 ---
 # <a name="source-candidates-by-using-talent-pools"></a>Kandidaten mithilfe von Talentpools sourcen
 
@@ -110,15 +110,16 @@ Alle Benutzer verfügen über eine allgemeine Ansicht der Kandidatenprofile. Die
 
 - Sie können die Kontaktdetails für den Kandidaten anzeigen. Sie können die Informationen bei Bedarf auch bearbeiten oder aktualisieren, indem Sie die Schaltfläche **Details bearbeiten** verwenden.
 
-- Sie können mehr Markierungen für Qualifikationen hinzufügen, die bei der Identifizierung der Qualifikationen eines Kandidaten helfen.
-
 - Sie können den gesamten Bewerbungsverlauf des Kandidaten anzeigen. Sie können alle Stellen, auf die sich der Kandidat in Ihrer Organisation beworben hat, und den Status dieser Bewerbungen anzeigen. Wenn Sie Teil eines Einstellungsteams für eine Stelle sind, können Sie **Ansicht** auswählen, um sich die Bewerbung im Detail anzusehen.
 
-- Die Registerkarte **Dokumente** zeigt sämtliche Dokumente, die vom Kandidaten von seinem Profil oder bei Bewerbungen hinzugefügt hat. Diese Registerkarte kann verwendet werden, um die Lebensläufe, Anschreiben, Portfolioarbeit usw. eines Kandidaten zu verwalten. Mithilfe dieser Registerkarte können Sie auch Dokumente hinzufügen.
+- Die Registerkarte **Dokumente** zeigt sämtliche Dokumente, die vom Kandidaten von seinem Profil oder bei Bewerbungen hinzugefügt hat. Mit dieser Registerkarte können Sie die Lebensläufe, Anschreiben, Portfolioarbeit usw. eines Kandidaten verwalten. Mithilfe dieser Registerkarte können Sie auch Dokumente hinzufügen.
 
     Zum Anzeigen eines Dokuments wählen Sie den Dokumentnamen aus der Dokumentenliste aus. Sie können Microsoft Word-Dokumente der Bewerbung anzeigen, indem Sie Microsoft Office 365 verwenden. Sie können die Dokumente auch auf Ihren lokalen Computer herunterladen, indem Sie die Option **Herunterladen** für jedes Dokument verwenden.
 
 - Die Registerkarte **LinkedIn** enthält die LinkedIn-Informationen des Kandidaten. Um diese Registerkarte zu verwenden, müssen Sie Ihr LinkedIn-Konto in den Benutzereinstellungen verbinden, und die LinkedIn Recruiter-Verbindung muss hergestellt werden. Weitere Informationen finden Sie unter [Beschaffung mit LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+
+> [!NOTE]
+> Nur Kandidaten können deren Qualifikationen, Ausbildungsverlauf und Berufserfahrung aktualisieren.
 
 ## <a name="add-candidates-from-a-talent-pool-to-a-job"></a>Hinzufügen von Kandidaten aus einem Talentpool zu einer Stelle
 

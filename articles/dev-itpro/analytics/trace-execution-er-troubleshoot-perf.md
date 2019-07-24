@@ -3,7 +3,7 @@ title: Ausführung des EB-Formats nachverfolgen, um Leistungsprobleme zu behande
 description: Dieses Thema bietet Informationen darüber, wie die Leistungsnachverfolgungsfunktion in der Elektronischen Berichterstellung (EB) verwendet werden kann, um Leistungsprobleme zu behandeln.
 author: NickSelin
 manager: AnnBe
-ms.date: 05/08/2019
+ms.date: 06/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: aa71db2752889bc905c22bab1cf2fa46d7ee07c7
-ms.sourcegitcommit: 67d00b95952faf0db580d341249d4e50be59119c
+ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
+ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1576545"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "1703874"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -346,3 +346,29 @@ Wenn Sie eine dieser Versionen von Finance and Operations verwenden, können Sie
 Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung zu generieren.
 
 Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Diese Datei beinhaltet die Leistungsnachverfolgung im PerfView-Format. Sie können dann das PerfView-Leistungsanalysetool verwenden, um die Details der EB-Formatausführung zu analysieren.
+
+![Verfolgt die Informationen für das ausgeführte ER-Format in PerfView nach](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+
+## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Nutzen Sie externe Tools, um eine Ausführungsablaufverfolgung zu prüfen, die Datenbankabfragen enthält
+
+Aufgrund der Verbesserungen, die vorgenommen wurden, zeigt die Leistungsablaufverfolgung, die in PerfView-Format nun generiert wird, weitere Informationen zur ER-Formatausführung an. In Microsoft Dynamics 365 for Finance and Operations Version 10.0.4 (Juli 2019), kann diese Ablaufverfolgung Details der durchgeführten SQL-Abfragen der Anwendungsdatenbank enthalten.
+
+### <a name="configure-user-parameters"></a>Benutzerparameter konfigurieren
+
+1. In Finance and Operations gehen Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
+2. Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
+3. Im Dialogfeld **Benutzerparameter** im Abschnitt **Ausführungsnachverfolgung** führen Sie die folgenden Parameter aus:
+
+    - Wählen Sie im Feld **Ausführungsablaufverfolgungsformat** **PerfView XML** aus.
+    - Legen Sie die Option **Sammeln Sie Abfragestatistik** auf **Ja** fest.
+    - Legen Sie die Option **Abfrage nachverfolgen** auf **Ja** fest.
+
+    ![Benutzerparameter-Dialogfeld in Finance and Operations](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+
+### <a name="run-the-er-format"></a>Das EB-Format ausführen
+
+Wiederholen Sie die Schritte im Abschnitt [Das EB-Format ausführen](#run-format) weiter oben in diesem Thema, um eine neue Leistungsnachverfolgung zu generieren.
+
+Beachten Sie, dass der Webbrowser eine ZIP-Datei zum Herunterladen anbietet. Diese Datei beinhaltet die Leistungsnachverfolgung im PerfView-Format. Sie können dann das PerfView-Leistungsanalysetool verwenden, um die Details der EB-Formatausführung zu analysieren. Diese Ablaufverfolgung umfasst jetzt die Details von SQL-Datenbankzugriff bei der Ausführung des ER-Formats.
+
+![Verfolgt die Informationen für das ausgeführte ER-Format in PerfView nach](./media/GER-PerfTrace2-PerfViewTrace2.PNG)

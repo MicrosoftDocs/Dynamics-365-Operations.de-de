@@ -3,7 +3,7 @@ title: Power BI-Inhalt – Bargeldübersicht
 description: In diesem Thema wird der Inhalt des Power BI-Bargeldüberblicks beschrieben. Es wird beschrieben, wie auf die Berichte, die im Inhalt enthalten sind, zugegriffen wird und es werden Informationen zum Datenmodell und den Entitäten bereitgestellt, die zum Erstellen des Inhalts verwendet wurden.
 author: saraschi2
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5dccb5c5c6c336607603dfc7a935c039e5ac4aa5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
+ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568916"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "1702794"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-Inhalt – Bargeldübersicht
 
@@ -33,6 +33,17 @@ In diesem Thema wird der Inhalt vom Microsoft Power BI-**Bargeldüberblick** bes
 
 Der Power BI-**Bargeldüberblick** wurde für Personen erstellt, die in ihrer Organisation für das Bargeld zuständig sind. Der Power BI-**Bargeldüberblick** ermöglicht die Sichtbarkeit des Cashflows. Es enthält auch Planungen, die Sie beim Treffen besserer Entscheidungen unterstützen, und daher den Status Ihres Cashflows verbessern. Sie können die Bargeld nach juristischer Person, Währung und Bankkonto analysieren, um ein besseres Verständnis für Überschüsse und Defizite zu erhalten.
 
+## <a name="setup-needed-to-view-power-bi-content"></a>Einrichtung erforderlich, um Power BI-Inhalt anzuzeigen
+
+Die folgende Einrichtung muss abgeschlossen werden, damit Daten in den Grafiken **Bargeldüberblick** und **Bankwesen** Power BI angezeigt werden.
+
+1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
+2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen.
+2. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung sowie der Buchhaltungswährung und den Bankwährungen. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
+3. Konfigurieren Sie die Cashflow-Planung und führen Sie sie aus. Weitere Informationen dazu, wie Cashflow-Planung eingerichtet wird, finden Sie unter <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+">Cashflow-Planung</a>. 
+4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **LedgerCovLiquidityMeasurement**-Aggregatmessung zu aktualisieren.
+
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 
 Berichte vom Inhalt vom Power BI-**Bargeldüberblick** werden in den Arbeitsbereichen **Bargeldüberblick** und **Bankverwaltung** angezeigt.
@@ -42,6 +53,7 @@ Um die Bargeld-Planungsberichte mit Daten anzuzeigen, müssen Sie zuerst die Pla
 Für Demonstrationszwecke können Sie Demodaten für die Bargeld-Planung unter Verwendung der Seite **Daten generieren** im Demodatenmodul hinzufügen.  Dieses Skript fügt Daten in die Bargeld-Planungstabellen ein, um schnell die für Berichte benötigten Informationen bereitzustellen.  Dieses Modul steht nur zur Verfügung, wenn Sie das Demo-Datenpaket-Modell in der Umgebung bereitgestellt haben. 
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Berichte, die im Power BI-Inhalt enthalten sind
+
 Die folgende Tabelle enthält Details zur Metrik, die sich auf jeder Berichtsseite im Inhalt vom Power BI-**Bargeldüberblick** befinden.
 
 | Bericht                                | Inhalt |
@@ -67,5 +79,3 @@ Die folgende Tabelle zeigt die Entitäten, auf denen der Inhalt vom Power BI-**B
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Zusammengefasste Bargeldzu- und -abflüsse und -saldo mithilfe der Buchhaltungswährung jedes Unternehmens |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Zusammengefasste Bargeldzu- und -abflüsse und -saldo mithilfe der Systemwährung für alle Unternehmen |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Zusammengefasster und Nettobuchungsbetrag und -saldo von Währungen anhand der Buchungswährung |
-
-

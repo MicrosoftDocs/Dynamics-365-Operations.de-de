@@ -997,6 +997,8 @@
               href: deployment/deploy-retail-onprem.md
         - name: Entwickeln und Bereitstellen benutzerdefinierter Modelle für lokale Umgebungen
           href: deployment/develop-deploy-custom-models-on-premises.md
+        - name: PowerBI.com-Integration mit lokalen Umgebungen
+          href: analytics/entity-store-on-prem.md
         - name: Konfigurieren von Reverseproxys für lokale Umgebungen
           href: deployment/onprem-reverseproxy.md
         - name: Updates auf eine lokale Bereitstellung anwenden
@@ -1013,6 +1015,8 @@
           href: user-interface/client-disconnected.md
         - name: Problembehandlung lokaler Bereitstellungen
           href: deployment/troubleshoot-on-prem.md
+        - name: Zertifikatrotation
+          href: deployment/certificate-rotation-on-prem.md
     - name: Benutzerdefinierten Code erstellen
       items:
         - name: Erstellen von bereitstellbaren Modellpaketen

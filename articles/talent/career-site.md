@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: a56f162ccc6b6099fd62e0cb7e10076368d8e653
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: e51fb00536884d2b3815c05a0968714d8b9326f2
+ms.sourcegitcommit: a6b32be10b6eb6340f8f68261bf62d0202c03dd1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518127"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "1729702"
 ---
 # <a name="career-site-functionality-in-attract"></a>Funktionen der Website mit Stellenangeboten in Attract
 
@@ -48,11 +48,14 @@ Um die Werte für die folgenden Elemente festzulegen, melden Sie sich als Admini
  
 Um die Werte für die folgenden Elemente festzulegen, melden Sie sich als Administrator in Attract an, wählen Sie im Menü **Einstellungen** die Option **Administratorcenter** und anschließend die Registerkarte **Verwaltung der Website mit Stellenangeboten** aus.
 
--   **Suchmaschinen-Optimierung** - Wenn die Option aktiviert ist, können alle auf der Attract-Website mit Stellenangeboten veröffentlichten Stellen über öffentliche Suchmaschinen wie Bing und Google gesucht werden.
+-   **Suchmaschinen-Optimierung** - Wenn die Option aktiviert ist, können alle auf der Attract-Website mit Stellenangeboten veröffentlichten Stellen über öffentliche Suchmaschinen wie Bing und Google gesucht werden. 
 
     > [!NOTE] 
     > Es kann zu einer Verzögerung zwischen der Aktivierung dieser Einstellung und dem Erscheinend der Suchergebnisse kommen, je nach der verwendeten Suchmaschine.
-         
+    
+-   **Geschäftsbedingungen** - Sofern aktiviert müssen alle Kandidaten, die sich auf eine Stelle bewerben, den AGB der Organisation zustimmen. Der Attract-Administrator kann eine eigenen Zustimmungstext und den Link zu der AGB- Seite konfigurieren. 
+
+        
 ## <a name="career-site-urls"></a>ULRs der Website mit Stellenangeboten
 
 Die folgende Liste enthält die häufig verwendetn URLs der Website mit Stellenangeboten und die Methode für den Zugriff.

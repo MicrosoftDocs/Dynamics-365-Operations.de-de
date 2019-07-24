@@ -3,7 +3,7 @@ title: Grobterminierung
 description: Dieses Thema enthält allgemeine Informationen zur Grobterminierung. Diese Grobplanung wird häufig verwendet, wenn eine allgemeine Schätzung der Dauer des Produktionsprozesses benötigt wird.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 298c07346427a949ffa544e66eb6b01995dadc38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
+ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560257"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "1691461"
 ---
 # <a name="operations-scheduling"></a>Grobterminierung
 
@@ -67,6 +67,9 @@ Durch die Grobterminierung wird auch der Master-Produktprogrammplan gesteuert, d
 -   **Bestandsproduktionen** – Geplante, freigegebene oder gestartete Produkte
 -   **Materialverfügbarkeit** – Bestand, Unterproduktion, Lieferanten und Kreditoren
 -   **Kapazitätsverfügbarkeit** – Ressourcen, die für die Produktion erforderlich sind
+
+> [!NOTE]
+> Wenn Sie mehrfädige Produktprogrammplanung und Grobterminierung verwenden, wird die begrenzte Kapazität nicht berücksichtigt. 
 
 ## <a name="cancellations"></a>Stornierungen
 Wenn Sie die Grobterminierung ausführen, können Sie bestimmte Teile des Arbeitsplans stornieren. Dazu zählen die Wartezeit, die Rüstzeit, die Bearbeitungszeit, die Überschneidungszeit und die Transportzeiten.

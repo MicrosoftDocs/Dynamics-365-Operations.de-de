@@ -3,7 +3,7 @@ title: Überblick über Kreditorenrechnungen
 description: Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
 author: abruer
 manager: AnnBe
-ms.date: 06/04/2019
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b57c18b5b2cf690111511e4c5a92d51fc23dd68c
-ms.sourcegitcommit: 901ec3b360303bb8b4d9a9dcfecc6d75d7f844a0
+ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
+ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1618272"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "1625078"
 ---
 # <a name="vendor-invoices-overview"></a>Überblick über Kreditorenrechnungen
 
@@ -91,13 +91,6 @@ Sie können die Seite **Kreditorenrechnung wiederherstellen** verwenden, um Kred
 
 Auf die Seite **Wiederherstellen von Kreditorenrechnungen** kann nur zugegriffen werden, wenn die Sicherheitsberechtigung und die Rechte für das **Wiederherstellen der Kreditorenrechnungen in Bearbeitung** Ihnen zugewiesen wurde. Zudem muss der Parameter **Zulassen der Kreditorenrechnungswiederherstellung** auf der Seite **Kreditorenkontenparameter** aktiviert werden.
 
-## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Zurücksetzen des Workflowstatus für Kreditorenrechnungen von „Nicht behebbar“ zu „Entwurf“
-
-Eine Workflowinstanz, die aufgrund eines nicht behebbaren Fehlers beendet wurde, hat ein Workflowstatus **Nicht behebbar**. Wenn der Status eines Kreditorenrechnungsworkflows **Nicht behebbar** ist, können Sie ihn auf **Entwurf** zurücksetzen. Sie können dann die Kreditorenrechnung bearbeiten. Diese Funktion ist verfügbar, wenn der Parameter **Entwurfsstatus für den Kreditorenrechnungs-Workflow zurücksetzen** auf der Seite **Funktionsverwaltung** aktiviert ist.
-
-Sie können die Seite **Kreditorenrechnungsworkflow-Status** verwenden, um den Workflowstatus auf **Entwurf** zurückzusetzen. Sie können diese Seite über die Navigation **Periodische Aufgabe** öffnen. Die Seite zeigt alle Kreditorenrechnungen an, die den Workflowstatus **Nicht behebbar** in der aktuellen juristischen Personen haben. Sie zeigt außerdem den Benutzer an, der jede Rechnung an den Workflow und den Rechnungsbezeichner übermittelt hat und stellt einen Link zur Workflowhistorie bereit. Um den Workflowstatus auf **Entwurf** zurückzusetzen, markieren Sie mindestens eine Rechnung und wählen Sie dann **Auf Entwurf aktualisieren** aus. Nachdem der Workflowstatus auf **Entwurf** zurückgesetzt ist, wird er zur Verarbeitung auf der Seite **Kreditorenrechnung** verfügbar.
-
-Sie können auf die Seite **Workflowstatus der Kreditorenrechnungen zurücksetzen** nur zugreifen, wenn die Sicherheitsberechtigung **Status für Kreditorenrechnungsworkflow verwalten** und das Recht **Status des Kreditorenrechnungsworkflows zurücksetzen** Ihnen zugewiesen sind.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
