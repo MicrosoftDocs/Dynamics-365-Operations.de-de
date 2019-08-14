@@ -106,10 +106,28 @@
           items:
             - name: Sprachreferenz für X++
               href: dev-ref/xpp-language-reference.md
-            - name: X++-Variablen und -Datentypen
-              href: dev-ref/xpp-variables-data-types.md
-            - name: 'X++-Anweisungen, -Schleifen und -Ausnahmebehandlung'
-              href: dev-ref/xpp-statements-loops.md
+            - name: Variablen und Datentypen
+              items:
+                - name: Variablen
+                  href: dev-ref/xpp-variables-data-types.md
+                - name: Primitive Datentypen
+                  href: dev-ref/xpp-data-primitive.md
+                - name: Zusammengesetzte Datentypen
+                  href: dev-ref/xpp-data-composite.md
+                - name: Auflistungsklassen
+                  href: dev-ref/xpp-data-collection.md
+                - name: Erweiterte Datentypen
+                  href: dev-ref/xpp-data-edt.md
+            - name: 'Anweisungen, Schleifen und Ausnahmebehandlung'
+              items:
+                - name: 'Kommentare, Verwendung und Druck'
+                  href: dev-ref/xpp-statements-loops.md
+                - name: Bedingungsanweisungen
+                  href: dev-ref/xpp-conditional.md
+                - name: Schleifenanweisungen
+                  href: dev-ref/xpp-loops.md
+                - name: Ausnahmenbehandlung
+                  href: dev-ref/xpp-exceptions.md
             - name: SQL-Verbindungsfehler X++-Ausnahme
               href: dev-ref/sql-connection-error.md
             - name: X++-Operatoren
@@ -120,6 +138,8 @@
               href: dev-ref/xpp-classes-methods.md
             - name: X++-Datenauswahl und -änderung
               href: dev-ref/xpp-data-query.md
+            - name: Datenzugriff mithilfe der SysDa-API
+              href: dev-ref/sysda.md
             - name: X++-Makros
               href: dev-ref/xpp-macros.md
             - name: X++-Attributklassen
@@ -438,6 +458,10 @@
           href: user-interface/page-layout.md
         - name: Dynamics-Symbolschriftart
           href: user-interface/symbol-font.md
+        - name: Gespeicherte Ansichten
+          href: ../fin-and-ops/get-started/saved-views.md
+        - name: 'Buildformulare, die gespeicherte Ansichten vollständig verwenden'
+          href: user-interface/understanding-saved-views.md
         - name: Testformulare mit benutzerdefinierten Mustern
           href: user-interface/testing-forms-custom-patterns.md
         - name: 'Erstellen von gemeinsam nutzbaren, sicheren URLs (Deep-Links)'
@@ -496,7 +520,7 @@
           href: user-interface/messaging-api-center-bar-details.md
         - name: 'Nachrichtencenter, Statusleiste und Nachrichtendetails-FAQ'
           href: user-interface/messaging-user.md
-    - name: Primäre Formularmusterrichtlinien
+    - name: Formularmusterrichtlinien
       items:
         - name: Formularmuster zum Migrieren von Formularen
           href: user-interface/select-form-pattern.md
@@ -967,7 +991,7 @@
           href: deployment/expressroute.md
         - name: Finance and Operations-Architektur
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
-        - name: Anwenden von Updates auf Cloudumgebungen
+        - name: Updates auf Cloudumgebungen anwenden
           href: deployment/apply-deployable-package-system.md
         - name: Updates und Erweiterungen auf in der Cloud gehostete Retail Channel-Komponenten anwenden
           href: deployment/Update-retail-channel.md
@@ -1129,9 +1153,9 @@
           href: migration-upgrade/on-prem-upgrade.md
     - name: Hotfixes
       items:
-        - name: Hotfixes von Lifecycle Services herunterladen
+        - name: Updates von Lifecycle Services erhalten
           href: migration-upgrade/download-hotfix-lcs.md
-        - name: Anwenden von Updates auf Cloudumgebungen
+        - name: Updates auf Cloudumgebungen anwenden
           href: deployment/apply-deployable-package-system.md
         - name: Installieren von Metadaten-Hotfixes in der Entwicklungsumgebung
           href: migration-upgrade/install-metadata-hotfix-package.md
@@ -1162,6 +1186,8 @@
       href: sysadmin/pre-configured-system-accounts.md
     - name: B2B-Benutzer nach Azure AD exportieren
       href: sysadmin/implement-b2b.md
+    - name: Sitzungsleerlauftimeout festlegen
+      href: sysadmin/session-idle-timeout.md
     - name: Rollenbasierte Sicherheit
       href: sysadmin/role-based-security.md
       items:
@@ -1310,7 +1336,9 @@
   items:
     - name: Erhalten Sie Support für Finance and Operations und Lifecycle Services
       href: lifecycle-services/lcs-support.md
-    - name: 'Anfordern von Support für Finance and Operations, bearbeitet von 21Vianet in China'
+    - name: Supportübersicht für Dynamics 365
+      href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+    - name: 'Support für Finance and Operations erhalten, bearbeitet von 21Vianet in China'
       href: lifecycle-services/21vianet-support.md
     - name: Beantragen Sie ein Premier Support-Ticket
       href: lifecycle-services/premier-support.md

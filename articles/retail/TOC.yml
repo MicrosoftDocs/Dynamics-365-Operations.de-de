@@ -2,8 +2,10 @@
   href: index.md
 - name: Erste Schritte
   items:
-    - name: Neuerungen und Änderungen
+    - name: Neuerungen oder Änderungen
       href: get-started/whats-new.md
+    - name: Vorschaufunktionen in Dynamics 365 for Retail 10.0.5
+      href: get-started/whats-new-10-0-5.md
     - name: Neuerungen oder Änderungen in Dynamics 365 for Retail 10.0.3
       href: get-started/whats-new-10-0-3.md
     - name: Neuerungen oder Änderungen in Dynamics 365 for Retail 10.0.2
@@ -257,6 +259,8 @@
       href: Notifications-POS.md
 - name: Retouren
   items:
+    - name: Verknüpfte Rückerstattungen
+      href: dev-itpro/linked-refunds.md
     - name: 'Verkauf und Rückgabe von Produkten, die nicht im Sortiment eines Shops enthalten sind'
       href: sell-return-outside-assortments.md
     - name: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
