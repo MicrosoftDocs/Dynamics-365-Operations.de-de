@@ -8,6 +8,12 @@
         - name: Neuerungen oder Änderungen in Talent
           href: whats-new.md
           items:
+            - name: "23.\_Juli\_2019"
+              href: whats-new-talent-july-24-2019.md
+            - name: "16.\_Juli\_2019"
+              href: whats-new-talent-july-16-2019.md
+            - name: "9.\_Juli\_2019"
+              href: whats-new-talent-july-9-2019.md
             - name: "2.\_Juli\_2019"
               href: whats-new-talent-july-2-2019.md
             - name: "25.\_Juni\_2019"
@@ -102,9 +108,7 @@
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Core HR und Common Data Service
           href: CoreHREntities.md
-        - name: Zugreifen auf Vorschaufunktionen
-          href: access-preview-feature.md
-        - name: Anfordern von Support für Talent
+        - name: Support für Talent anfordern
           href: talent-support.md
     - name: Ausstatten Ihrer Organisation mit Attract
       items:
@@ -112,53 +116,73 @@
           href: attract-comprehensive-hiring.md
         - name: Funktionen und Leistungsspektrum von Attract
           href: attract-overview.md
-        - name: LinkedIn-FAQ
-          href: attract-linkedin-faq.md
-        - name: Konfigurieren von E-Mail-Einstellungen
-          href: attract-configure-email-settings.md
-        - name: Erstellen einer Prozessvorlage in Attract
-          href: Process-templates-Attract.md
+        - name: Häufig gestellte Fragen
+          items:
+            - name: LinkedIn-Integration-FAQs
+              href: attract-linkedin-faq.md
+        - name: Systemeinstellungen konfigurieren
+          items:
+            - name: Unternehmensdaten konfigurieren
+              href: admin-settings-attract.md
+            - name: Benutzerberechtigungen festlegen
+              href: security-attract.md
+            - name: Funktionen verwalten
+              href: access-preview-feature.md
+            - name: Website mit Stellenangeboten einrichten
+              href: career-site.md
+            - name: Broadbean-Integration aktivieren
+              href: attract-admin-job-board-settings.md
+            - name: E-Mail-Einstellungen konfigurieren
+              href: attract-configure-email-settings.md
+            - name: LinkedIn-Integration einrichten
+              href: attract-admin-linkedin.md
+        - name: Einstellungsprozess erstellen
+          items:
+            - name: Prozessvorlage erstellen
+              href: process-templates-attract.md
+            - name: Aktivitäten im Einstellungsprozess
+              href: activities-attract.md
+            - name: E-Mail-Vorlagen
+              href: email-templates.md
+            - name: Analytische Berichte verwenden
+              href: analytic-reports.md
         - name: Stellenausschreibungen verfassen und veröffentlichen
-          href: Creating-jobs-Attract.md
-        - name: Einrichten von Integration mit LinkedIn
-          href: attract-admin-linkedin.md
-        - name: Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Attract
-          href: attract-post-jobs-to-linkedin.md
-        - name: Veröffentlichen von Stellenausschreibungen auf Broadbean mit Attract
-          href: posting-jobs-external.md
-        - name: Rekrutieren von Kandidaten mithilfe von Talentpools
-          href: attract-talent-pools.md
-        - name: Kandidaten mithilfe von LinkedIn Recruiter anwerben
-          href: attract-linkedin-recruiter.md
-        - name: Aktivitäten im Einstellungsprozess
-          href: activities-attract.md
-        - name: Planung und Feedback von Gesprächen
-          href: interview-scheduling-feedback.md
+          items:
+            - name: Eine Stelle erstellen
+              href: creating-jobs-attract.md
+            - name: Ausschreibungen auf LinkedIn veröffentlichen
+              href: attract-post-jobs-to-linkedin.md
+            - name: Stellen auf Broadbean veröffentlichen
+              href: posting-jobs-external.md
+            - name: Eine Stelle schließen
+              href: attract-close-job.md
+        - name: Kandidaten anwerben
+          items:
+            - name: Kandidaten mithilfe von Talentpools anwerben
+              href: attract-talent-pools.md
+            - name: Kandidaten mithilfe von LinkedIn Recruiter anwerben
+              href: attract-linkedin-recruiter.md
+            - name: Kandidatenquellen nachverfolgen
+              href: source-tracking.md
+            - name: Praktische Empfehlungen
+              href: Intelligent-Recommendations.md
+        - name: Bewerbergespräche einrichten
+          items:
+            - name: Planung und Feedback von Bewerbergesprächen
+              href: interview-scheduling-feedback.md
+        - name: Ein Angebot unterbreiten
+          items:
+            - name: Angebotsverwaltung einrichten
+              href: offer-setup.md
+            - name: 'Angebote erstellen, genehmigen und unterzeichnen'
+              href: creating-offers.md
         - name: Erweiterbarkeit in Attract
           href: extensibility-attract.md
-        - name: Funktionen der Website mit Stellenangeboten in Attract
-          href: career-site.md
-        - name: Einrichten der Angebotsverwaltung
-          href: offer-setup.md
-        - name: 'Erstellen, Genehmigen und Unterzeichnen von Angeboten'
-          href: creating-offers.md
-        - name: E-Mail-Vorlagen
-          href: email-templates.md
-        - name: Sicherheit und Rollenverwaltung in Attract
-          href: security-attract.md
-        - name: Administratoreinstellungen in Attract
-          href: Admin-Settings-Attract.md
-        - name: Praktische Empfehlungen
-          href: Intelligent-Recommendations.md
-        - name: Nachverfolgen von Quellen bzgl. Kandidatenprofile und Anwendungen
-          href: source-tracking.md
-        - name: Gewinnen von Einblicken in den Einstellungsprozess anhand analytischer Berichte
-          href: analytic-reports.md
     - name: Neue Mitarbeiter mit Onboard willkommen heißen
       items:
         - name: Erste Schritte mit Onboard
           href: create-onboarding-experience.md
-        - name: Einrichten der Onbaord-App
+        - name: Onboard-App einrichten
           href: onboard-get-app.md
         - name: Erstellen und versenden eines Onboarding-Leitfadens
           href: onboard-create-guide.md
@@ -186,11 +210,13 @@
               href: set-up-hr-parameters-across-legal-entities.md
             - name: Unternehmensspezifische Personalverwaltungsparameter einrichten
               href: set-up-company-specific-hr-parameters.md
+            - name: Datums- und Zeitfelder in Talent
+              href: date-time-fields-in-talent.md
             - name: FAQs zu Personalaktivitäten
               href: personnel-actions-faq.md
-            - name: Formalisieren der Geschäftsprozesse
+            - name: Geschäftsprozesse formalisieren
               href: formalize-business-processes.md
-            - name: Verwenden von Workflows zum Verwalten von Mitarbeiterinformationen
+            - name: Workflows zum Verwalten von Mitarbeiterinformationen verwenden
               href: workflow-manage-employee-information.md
             - name: Einrichten von Nummernkreisen
               items:
@@ -265,7 +291,7 @@
               items:
                 - name: Überblick über Warnungen
                   href: ../fin-and-ops/get-started/alerts-overview.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Erstellen von Warnregeln
+                - name: Warnregeln erstellen
                   href: ../fin-and-ops/get-started/create-alerts.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Stapelverarbeitung von Warnungen
                   href: ../fin-and-ops/get-started/alerts-managing.md?toc=/dynamics365/unified-operations/talent/toc.json
