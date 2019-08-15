@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 1fc894206f9d90fce1e2eab292ac241e9d943e23
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
+ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617319"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "1790420"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenzprüfung für Einzelhandelstransaktionen
 
@@ -50,6 +50,7 @@ Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die K
 - **Debitorenkonto**: Überprüft, dass das Debitorenkonto in den Einzelhandelstransaktionstabellen in den HQ-Debitorenmasterdaten vorhanden ist.
 - **Positionsanzahl**: Prüft, ob die Positionsanzahl, wie in der Tabelle in der Transaktionskopfzeile angegeben, mit der Anzahl der Positionen in den Verkaufstransaktionstabellen übereinstimmt.
 - **Preis enthält Steuern**: Prüft, ob der Parameter **Preis enthält Steuern** über alle Transaktionspositionen konsistent ist.
+- **Zahlungsbetrag**: Prüft, ob die Zahlungsdatensätze dem Zahlungsbetrag im Kopf entsprechen.
 - **Bruttobetrag**: Prüft, ob der Bruttobetrag in der Kopfzeile mit der Summe der Nettobeträge der Positionen zuzüglich des Steuerbetrags identisch ist.
 - **Nettobetrag**: Prüft, ob der Nettobetrag in der Kopfzeile mit der Summe der Nettobeträge der Positionen identisch ist.
 - **Unter-/Überzahlung**: Prüft, ob die Differenz zwischen dem Bruttobetrag in der Kopfzeile und dem Zahlungsbetrag nicht die maximale Unter- bzw. Überzahlungskonfiguration übersteigt.
@@ -58,6 +59,7 @@ Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die K
 - **Geschenkkartenartikel**: Retail unterstützt nicht die Rückgabe von Geschenkkartenartikeln. Allerdings kann der Wert einer Geschenkkarte bar ausgezahlt werden. Bei allen Geschenkkartenartikeln, die anstelle einer Barauszahlungsposition als Rückgabeposition verarbeitet werden, schlägt der Auszugsbuchungsprozess fehl. Bei der Validierung von Geschenkkartenartikeln wird sichergestellt, dass die einzigen Rückgabepositionsartikel der Geschenkkarte in den Einzelhandelstransaktionstabellen Barauszahlungspositionen sind.
 - **Negativer Preis**: Überprüft, dass es keine Transaktionspositionen mit negativen Preisen gibt.
 - **Artikel und Variante**: Prüft, ob Artikel und Varianten aus den Transaktionspositionen in der Masterdatei mit Artikeln und Varianten vorhanden sind.
+- **Steuerbetrag**: Prüft, ob die Steuerdatensätze den Steuerbeträgen in den Positionen entsprechen. 
 
 ## <a name="set-up-the-consistency-checker"></a>Konsistenzprüfung einrichten
 

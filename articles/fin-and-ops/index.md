@@ -1,7 +1,7 @@
 ---
 title: Microsoft Dynamics 365 for Finance and Operations-Dokumentation
 description: Dokumentation für Microsoft Dynamics 365 for Finance and Operations.
-author: margoc
+author: robinarh
 manager: AnnBe
 ms.date: 04/11/2019
 ms.topic: index-page
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: margoc
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4547a0c8d43584e4cb8981e0a055c514c184f6dd
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3f29d8c74c0e7a4384f8e071d0b9babe5c5f630c
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1507588"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856304"
 ---
 # <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Microsoft Dynamics 365 for Finance and Operations-Dokumentation
 
@@ -56,9 +56,9 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Microsoft
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software-Lebenszyklusrichtlinie: Cloud</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software-Lebenszyklusrichtlinie: On-Premises</a></p>
 <p><a href="get-started/public-preview-releases.md">Standardrelease- und First Release-Dienstupdates</a></p>
-<p><a href="get-started/whats-new-changed.md">Neuerungen und Änderungen</a></p>
+<p><a href="get-started/whats-new-changed.md">Neuerungen oder Änderungen</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, Updates und Hotfixes</a></p>
-<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Anwenden von Updates auf Cloudumgebungen</a></p>
+<p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Updates auf Cloudumgebungen anwenden</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Dienstupdates konfigurieren</a></p>
 <p><a href="../dev-itpro/lifecycle-services/pause-service-updates.md">Dienstupdates anhalten</a></p>
 <p><a href="../dev-itpro/lifecycle-services/notifications-service-updates.md">Benachrichtigungen zu Dienstupdates erhalten</a></p>
