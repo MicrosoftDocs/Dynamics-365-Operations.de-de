@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a262b5200c8071bec78ff6d3ed7976d4b2057ea
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 560a5346e33e1b98a7513b6d7c033fe35458f63a
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570971"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834149"
 ---
 # <a name="budget-planning-overview"></a>Budgetplanung (Überblick)
 
@@ -154,6 +154,8 @@ Für das Beispielschema sollten Sie Spalten für die Vertriebs-, -Vertrags- und 
 [![Spalten](./media/columns.png)](./media/columns.png) 
 
 Sie legen auch fest, ob jedes Layoutelement (Spalte) bearbeitbar ist und ob es in einer beliebigen Arbeitsblattvorlage verfügbar ist, die für dieses Layout erstellt wird. Im Layout, das im Beispielschema für die Vorkalkulationsphase verwendet wird, sind die Planungsspalten bearbeitbar, während die Spalten für Verkauf und Vertrag des Vorjahres schreibgeschützt sind.
+
+[!Note] Standardmäßig sind Sie auf 36 Spalten begrenzt, es sei denn, Sie erweitern die Budgetplanung mit den Schritten unter [Budgetplanungslayout erweitern](./extending-budget-planning-layout.md).
 
 ### <a name="templates"></a>Vorlagen
 

@@ -1,72 +1,70 @@
 ---
 title: Eine Arbeitskraft konfigurieren, die das mobile Einzelvorgangsgerät verwendet
-description: Dieses Verfahren zeigt Ihnen an, wie Sie richtigen Rollen zu einem Benutzerkonto einer Arbeitskraft zuzuordnen und dann die Arbeitskraft für Fertigungsbereichregistrierungen aktivieren.
+description: In diesem Thema wird erklärt, wie Sie dem Benutzerkonto einer Arbeitskraft die richtigen Rollen zuweisen und dann die Arbeitskraft für Fertigungsbereichregistrierungen aktivieren.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1bb4d806810660e55ef13a9ff21c07e0ce194496
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a6e45ea8fdbe30436badd88d4972fda970755275
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571357"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835772"
 ---
 # <a name="configure-a-worker-using-the-mobile-job-device"></a>Eine Arbeitskraft konfigurieren, die das mobile Einzelvorgangsgerät verwendet
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Dieses Verfahren zeigt Ihnen an, wie Sie richtigen Rollen zu einem Benutzerkonto einer Arbeitskraft zuzuordnen und dann die Arbeitskraft für Fertigungsbereichregistrierungen aktivieren.
+In diesem Thema wird erklärt, wie Sie dem Benutzerkonto einer Arbeitskraft die richtigen Rollen zuweisen und dann die Arbeitskraft für Fertigungsbereichregistrierungen aktivieren.
 
+## <a name="verify-that-a-worker-is-assigned-a-certain-role"></a>Überprüfen, ob einer Arbeitskraft eine bestimmte Rolle zugewiesen ist
 
-## <a name="assign-roles-to-user-account"></a>Zuweisen von Rollen zum Benutzerkonto
-1. Wechseln Sie zu "Systemverwaltung" > "Benutzer" > "Benutzer".
-2. Verwenden Sie den Schnellfilter, um nach dem Namen einer Arbeitskraft zu filtern, deren Benutzerkonto der Rolle Maschinist zugeordnet ist. In den Beispieldaten wäre der Name "Shannon".
-3. Markieren Sie den Benutzerkontodatensatz.
-4. Klicken Sie in der Liste auf den Link "Name" in der ausgewählten Zeile, um die Details des Benutzerkontos anzuzeigen.
-5. Wählen Sie in der Struktur "Rollen\Maschinist" aus.
-6. Schließen Sie die Seite "Benutzerkontodetails".
-7. Schließen Sie die Seite.
+Bei diesem Beispiel sollen Sie überprüfen, ob dem Benutzer „SHANNON“ die Maschinistenrolle zugewiesen ist, bevor Sie das Arbeitskraftkonto konfigurieren.
 
-## <a name="configure-worker-account"></a>Konfigurieren von Arbeitskräftekonten
-1. Wechseln Sie zu "Personalverwaltung" > "Arbeitskräfte" > "Arbeitskräfte".
-2. Verwenden Sie den Schnellfilter, um nach dem Namen einer Arbeitskraft zu filtern, deren Benutzerkonto der Rolle Maschinist zugeordnet ist. In den Beispieldaten wäre der Name "Shannon".
-3. Markieren Sie den Benutzerkontodatensatz.
-4. Klicken Sie in der Liste auf den Link "Name" in der ausgewählten Zeile, um die Details des Benutzerkontos anzuzeigen.
-5. Klicken Sie auf die Registerkarte "Anstellung".
-6. Erweitern Sie das Zeiterfassungs-Inforegister und klicken auf "In Erfassungsterminals aktivieren".
-7. Klicken Sie auf "In Erfassungsterminals aktivieren".
-8. Geben Sie im Feld "Berechnungsgruppe" einen Wert ein oder wählen Sie einen Wert aus.
-9. Geben Sie im Feld "Standardberechnungsgruppe" einen Wert ein oder wählen Sie einen Wert aus.
-10. Geben Sie im Feld "Genehmigungsgruppe" einen Wert ein oder wählen Sie einen Wert aus.
-11. Geben Sie im Feld "Standardprofil" einen Wert ein, oder wählen Sie einen Wert aus.
-12. Geben Sie im Feld "Profilgruppe" einen Wert ein oder wählen Sie einen Wert aus.
-13. Klicken Sie auf "OK".
-14. Klicken Sie auf "Bearbeiten", um eine Nummer auf der Kennkarte für die neue Zeiterfassungsarbeitskraft einzugeben.
-15. Geben Sie im Feld "Kennkartenkennung" einen Wert ein.
-16. Klicken Sie auf Speichern.
-17. Verwenden Sie das Tastenkürzel SaveRecord.
-18. Schließen Sie die Seite "Arbeitskräftedetails".
-19. Schließen Sie die Seite.
+1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Benutzer > Benutzer**.
+2. Suche im Schnellfilter nach einem Benutzer. Geben Sie für dieses Beispiel `shannon` ein.
+3. Wählen Sie den Link in der Spalte **Benutzerkennung** des Benutzerkontos aus, das angezeigt wird.
+4. Wählen Sie in der Struktur **Benutzerrollen** den Eintrag **Rollen> Maschinist** aus.
+5. Schließen Sie die Seiten **Benutzerdetails** und **Benutzer**, um zur Startseite zurückzukehren.
 
-## <a name="assign-worker-to-device-group"></a>Zuweisen von Arbeitskräften zu Gerätegruppen
-1. Wechseln Sie zu "Produktionssteuerung" > "Einrichtung" > "Fertigungssteuerung" > "Einzelvorgangsliste für Geräte konfigurieren".
-2. Klicken Sie auf Hinzufügen.
-3. Markieren Sie in der Liste die ausgewählte Zeile.
-4. Klicken Sie auf "OK".
-5. Klicken Sie auf "Bearbeiten".
-6. Im Feld "Produktionseinheits" können Sie den standardmäßigen Filter für die Arbeitskraft festlegen. Dadurch wird sichergestellt, dass nur Produktions-Einzelvorgänge für die ausgewählte Produktionseinheit angezeigt werden, wenn die Arbeitskraft sich beim Gerät anmeldet.
+## <a name="configure-worker-account"></a>Arbeitskräftekonten konfigurieren
+1. Wechseln Sie zu **Navigationsbereich > Module > Personalverwaltung > Arbeitskräfte > Arbeitskräfte**.
+2. Suche im Schnellfilter nach einem Benutzer. Geben Sie für dieses Beispiel `shannon` ein.
+3. Wählen Sie den Link in der Spalte **Name** des Benutzerkontos aus, das angezeigt wird.
+4. Wählen Sie die Registerkarte **Zeiterfassung** aus.
+5. Wählen Sie **In Erfassungsterminals aktivieren** aus.
+6. Geben Sie in den folgenden Feldern Werte ein, oder wählen Sie Werte aus:  
+
+    - **Berechnungsgruppe**  
+    - **Standardberechnungsgruppe**  
+    - **Genehmigungsgruppe**  
+    - **Standardprofil**  
+    - **Profilgruppe**  
+
+7. Wählen Sie **OK**.
+8. Wählen Sie **Bearbeiten** aus, um eine Kennkartennummer für die neue Zeiterfassungsarbeitskraft einzugeben. Geben Sie im Feld **Kennkartenkennung** einen Wert ein.
+9. Wählen Sie **Speichern**.
+10. Schließen Sie die Seiten **Details zur Arbeitskraft** und **Arbeitskräfte**.
+
+## <a name="assign-worker-to-device-group"></a>Arbeitskräfte zu Gerätegruppen zuweisen
+1. Wechseln Sie zu **Produktionssteuerung > Einstellungen > Fertigungssteuerung > Einzelvorgangsliste für Geräte konfigurieren**.
+2. Wählen Sie **Hinzufügen** aus.
+3. Wählen Sie in der Liste die gewünschte Arbeitskraft aus. Wählen Sie für dieses Beispiel **SHANNON** aus.
+4. Wählen Sie **OK**.
+5. Wählen Sie **Bearbeiten** aus.
+6. Im Feld **Produktionseinheit** können Sie den Standardfilter für die Arbeitskraft festlegen. Dadurch wird sichergestellt, dass nur Produktions-Einzelvorgänge für die ausgewählte Produktionseinheit angezeigt werden, wenn die Arbeitskraft sich beim Gerät anmeldet. Geben Sie den gewünschten Wert ein.
 7. Schließen Sie die Seite.
 

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eda7744a6365b4c3a884342a429c2340e5a13d66
-ms.sourcegitcommit: 7feb5d279adedd44f038195ce0f5e1c27d374049
+ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624811"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742632"
 ---
 # <a name="retail-peripherals"></a>Einzelhandelsperipheriegeräte
 
@@ -192,7 +192,7 @@ Sie können IP-Adressen für Netzwerkperipheriegeräte in zwei Stellen angeben. 
 
 #### <a name="modern-pos-for-android"></a>Modern POS für Android
 
-Ab Dynamics 365 for Retail-Version 8.1.3 wird das Modern POS für Android Anwendung eine integrierte IPC Hardwarestation enthalten. Diese Hardwarestation unterstützt die Kommunikation mit Netzwerkdruckern und Zahlungskonnektoren. Weitere Informationen finden Sie unter [Hybride-App für Android Docs-Artikel](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Ab Dynamics 365 for Retail-Version 8.1.3 wird das Modern POS für Android Anwendung eine integrierte IPC Hardwarestation enthalten. Diese Hardwarestation unterstützt die Kommunikation mit Netzwerkdruckern und Zahlungskonnektoren. Weitere Informationen finden Sie unter [Hybride-App für Android Docs-Artikel](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS und Modern POS für iOS
 
@@ -541,7 +541,7 @@ Diese Konfiguration ist die typischste Konfiguration für die traditionelle, fes
 
 4. Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**.
 5. Wählen Sie den Verteilungszeitplan **1090** aus, um das neue Hardwareprofil zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
-6. Wählen Sie den Verteilungszeitplan **1040** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
+6. Wählen Sie den Verteilungszeitplan **1070** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 7. Installieren und aktivieren von Modern POS für Windows.
 8. Starten Sie Modern POS für Windows, und starten Sie die zugeordneten Peripheriegeräte zu verwenden.
 

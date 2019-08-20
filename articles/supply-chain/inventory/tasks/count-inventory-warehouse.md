@@ -1,72 +1,58 @@
 ---
 title: Bestand an einem Lagerort zählen
-description: Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerinventurerfassung, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen.
+description: In diesem Thema wird der Prozess der Erstellung und Buchung einer Lagerinventurerfassung beschrieben, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c0bbfe8f86d27f81b0d577ed89dfa34ebcf3f18
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a0909625f31d15fe6b1387ff9ab7fd5d9a9135f4
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549899"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1836446"
 ---
 # <a name="count-inventory-in-a-warehouse"></a>Bestand an einem Lagerort zählen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur führt Sie durch die einzelnen Schritte der Erstellung und des Buchens einer Lagerinventurerfassung, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen. Die Prozedur ist auf die Funktion "Grundlegendes Warehousing", die sich im Inventurverwaltungsmodul befindet, anwendbar. Jedoch nicht auf die Warehousing-Funktion, die im Lagerortverwaltungsmodul verfügbar ist. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie eigene Daten verwenden, sollten Sie sicherstellen, dass Sie Produkte und Lagerplatzeinstellung eingerichtet haben und dass Sie eine Lagererfassung für Inventurerfassungen erstellt haben. Die Lagerinventur wird in der Regel von einem Lagerortmitarbeiter ausgeführt.
+In diesem Thema wird der Prozess der Erstellung und Buchung einer Lagerinventurerfassung beschrieben, um einen bestimmten Artikel in einem Lagerplatz am Lagerort zu zählen. Die Prozedur ist auf die Funktion "Grundlegendes Warehousing", die sich im Inventurverwaltungsmodul befindet, anwendbar. Jedoch nicht auf die Warehousing-Funktion, die im Lagerortverwaltungsmodul verfügbar ist. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie eigene Daten verwenden, sollten Sie sicherstellen, dass Sie Produkte und Lagerplatzeinstellung eingerichtet haben und dass Sie eine Lagererfassung für Inventurerfassungen erstellt haben. Die Lagerinventur wird in der Regel von einem Lagerortmitarbeiter ausgeführt.
 
 
 ## <a name="create-an-inventory-counting-journal"></a>Lagerinventurerfassung erstellen
-1. Wechseln Sie zu "Lagerverwaltung" Wechseln Sie zu "Lagerverwaltung" > "Erfassungseinträge" > "Artikelinventur" > "Artikel"
-2. Klicken Sie auf "Neu".
-3. Klicken Sie im Feld "Name" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Klicken Sie in der Liste auf die Lagerinventurerfassung, die Sie verwenden möchten.
-    * Einige andere Felder werden basierend auf den Einstellungen der Lagerinventurerfassung ausgefüllt, die Sie auswählen.  
-5. Klicken Sie im Feld "Arbeitskraft" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Wählen Sie in der Liste die Arbeitskraft aus, die Sie verwenden möchten.
-7. Klicken Sie auf Auswählen.
-8. Klicken Sie auf "OK".
+1. Wechseln Sie zu **Navigationsbereich > Module > Lagerverwaltung > Journaleinträge > Artikelinventur > Inventur**.
+2. Wählen Sie **Neu** aus.
+3. Wählen Sie im Feld **Name** aus der Dropdownliste den Namen der Lagerinventurerfassung aus, die Sie verwenden möchten. Einige andere Felder werden basierend auf den Einstellungen der Lagerinventurerfassung ausgefüllt, die Sie auswählen.  
+4. Klicken Sie im Feld **Arbeitskraft** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+5. **Wählen Sie** in der Liste die Arbeitskraft aus, die Sie verwenden möchten.
+6. Wählen Sie **OK**.
 
 ## <a name="create-journal-lines"></a>Erfassungspositionen erstellen
-1. Klicken Sie auf "Neu".
-2. Klicken Sie im Feld "Artikelnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wenn Sie das Demodatenunternehmen USMF verwenden, geben Sie "A0001" ein.  
-4. Klicken Sie im Feld "Standort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wenn Sie das Demodatenunternehmen USMF verwenden, geben Sie den Standort "2" ein.  
-6. Klicken Sie im Feld "Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wenn Sie das Demodatenunternehmen USMF verwenden, geben Sie den Lagerort "24" ein.  
-8. Klicken Sie im Feld "Lagerplatz" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wenn Sie das Demodatenunternehmen USMF verwenden, geben Sie den Lagerplatz "BULK-001" ein.  
-10. Geben Sie im Feld "Gezählt" eine Zahl ein.
-    * Wenn Sie eine Anzahl eingeben, die von der Zahl im Feld "Am Lager" angezeigt wird, wird das Mengenfeld aktualisiert, um die Abweichung anzuzeigen.  
-11. Klicken Sie auf "Speichern".
+1. Wählen Sie **Neu** aus.
+2. Wählen Sie im Feld **Artikelnummer** den gewünschten Datensatz aus der Dropdown-Liste aus. Wenn Sie das Demodatenunternehmen USMF verwenden, wählen Sie **A0001** aus.  
+3. Wählen Sie im Feld **Standort** den gewünschten Datensatz aus der Dropdown-Liste aus. Wenn Sie das Demodatenunternehmen USMF verwenden, wählen Sie den Standort **2** aus.
+4. Wählen Sie im Feld **Lagerort** den gewünschten Datensatz aus der Dropdown-Liste aus. Wenn Sie das Demodatenunternehmen USMF verwenden, wählen Sie den Lagerort **24** aus.  
+5. Wählen Sie im Feld **Standort** den gewünschten Datensatz aus der Dropdown-Liste aus. Wenn Sie das Demodatenunternehmen USMF verwenden, wählen Sie den Standort **BULK-001** aus.  
+6. Geben Sie im Feld "Gezählt" eine Zahl ein. Wenn Sie eine Anzahl eingeben, die von der Zahl im Feld **Am Lager** abweicht, wird das Feld **Menge** aktualisiert, um die Abweichung anzuzeigen.  
+7. Wählen Sie **Speichern**.
 
 ## <a name="post-the-inventory-counting-journal"></a>Lagerinventurerfassung buchen
-1. Klicken Sie auf "Buchen".
-    * Wenn Sie eine Lagerinventurerfassung buchen und der gezählte Betrag unterscheidet sich vom Betrag, der im Feld "Am Lager" gemeldet ist, wird ein Lagerzugang oder Abgang gebucht, der Lagerbestand und der Lagerwert werden geändert, und Sachkontobuchungen werden generiert.  
-2. Klicken Sie auf "OK".
+1. Wählen Sie **Buchen** aus. Wenn Sie eine Lagerinventurerfassung buchen und die gezählte Menge sich von der Menge unterscheidet, die im Feld **Am Lager** gemeldet ist, wird ein Lagerzugang oder -abgang gebucht, der Lagerbestand und der Lagerwert werden geändert, und Sachkontobuchungen werden generiert.
+2. Wählen Sie **OK**.
 
 ## <a name="view-inventory-transactions"></a>Lagerbuchungen anzeigen
-1. Klicken Sie auf Lager.
-2. Klicken Sie auf "Transaktionen".
-    * Hier können Sie alle zugehörigen Transaktionen finden, die erstellt werden, wenn Sie die Lagerinventurerfassung buchen.   
+1. Wählen Sie **Bestand** aus.
+2. Wählen Sie **Buchungen** aus. Hier können Sie alle zugehörigen Transaktionen finden, die erstellt werden, wenn Sie die Lagerinventurerfassung buchen.   
 

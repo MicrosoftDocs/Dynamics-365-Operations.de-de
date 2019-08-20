@@ -3,7 +3,7 @@ title: Konfigurieren und Aktivieren eines Einzelvorgangs, um Auszüge zu buchen
 description: Diese Prozedur führt Sie Schritt für Schritt durch das Konfigurieren und Ausführen eines wiederkehrenden Batchauftrags zum Buchen von Auszügen für einen ausgewählten Shop oder eine Gruppe von Shops.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 676216d90c50c0d3fa1a839cab7a734e624708ba
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a24014f7e1b925e0fdb20b91bcc9594feb8f4c5c
+ms.sourcegitcommit: fc40279d0e56f8a43c601bca6265fdde4c8c4c7e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550115"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "1792247"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Konfigurieren und Aktivieren eines Einzelvorgangs, um Auszüge zu buchen
 
@@ -31,11 +31,12 @@ ms.locfileid: "1550115"
 Diese Prozedur führt Sie Schritt für Schritt durch das Konfigurieren und Ausführen eines wiederkehrenden Batchauftrags zum Buchen von Auszügen für einen ausgewählten Shop oder eine Gruppe von Shops. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
 1. Gehen Sie zu Alle Arbeitsbereiche >.. > Finanzdaten für den Einzelhandelsshop.
-2. Klicken Sie auf "Auszüge buchen".
+2. Klicken Sie auf „Aufstellungen in Charge buchen“.
     * Wählen Sie eine Organisationshierarchie und anschließend in der Organisationsknotenstruktur einen einzelnen Shop oder einen Knoten aus. Wählen Sie einen Knoten aus, wenn Sie den Batchauftrag für eine Gruppe von Shops erstellen möchten.  
     * Klicken Sie auf den Pfeil, um die Auswahl hinzuzufügen.  
-3. Klicken Sie auf die Registerkarte "Im Hintergrund ausführen".
+3. Klicken Sie auf die Registerkarte „Im Hintergrund ausführen“. ![Im Hintergrund ausführen](../dev-itpro/media/runbackground.png "Im Hintergrund ausführen") 
 4. Aktivieren oder deaktivieren Sie das Kontrollkästchen ''Stapelverarbeitung".
+![Stapelverarbeitung](../dev-itpro/media/batchprocessing.png "Stapelverarbeitung und Wiederholung") 
 5. Klicken Sie auf "Wiederholung".
 6. Geben Sie im Feld "Startdatum" ein Datum ein.
 7. Geben Sie im Startzeit-Feld eine Zeit ein.

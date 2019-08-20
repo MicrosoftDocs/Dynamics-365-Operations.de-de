@@ -1,88 +1,75 @@
 ---
 title: Kreditorenrechnungsrichtlinien einrichten
-description: Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen.
+description: In diesem Thema wird erläutert, wie Kreditorenrechnungsrichtlinien in Dynamics 365 for Finance and Operations eingerichtet werden.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b424eee7c91ef1085c98828c0d5e5cf674717a81
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 328aafd16496fdbb963c9aa40a5c13005be7a382
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559663"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842808"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Kreditorenrechnungsrichtlinien einrichten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen. Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird. 
+In diesem Thema wird erläutert, wie Kreditorenrechnungsrichtlinien in Dynamics 365 for Finance and Operations eingerichtet werden. Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen. Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird. 
 
-Kreditorenrechnungsrichtlinien werden nicht auf Rechnungen angewendet, die im Rechnungsbuch oder in einer Rechnungserfassung erstellt wurden. 
-
-Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite "Kreditorenkontenparameter" eingerichtet.
-
-Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen. Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde.
+- Kreditorenrechnungsrichtlinien werden nicht auf Rechnungen angewendet, die im Rechnungsbuch oder in einer Rechnungserfassung erstellt wurden.  
+- Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite "Kreditorenkontenparameter" eingerichtet.  
+- Für diese Erfassung wird das Demo-Unternehmen USMF verwendet. Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen. Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Vorbereitung zum Erstellen von Kreditorenrechnungsrichtlinien
-1. Wechseln Sie zu Kreditoren > Einstellung > Kreditorenparameter.
-2. Klicken Sie auf die Registerkarte "Rechnungsprüfung".
-3. Aktivieren oder deaktivieren Sie das Kontrollkästchen "Rechnungskopfstatus automatisch aktualisieren".
-4. Klicken Sie auf "OK".
-5. Wählen Sie im Feld "Rechnung mit Abweichungen buchen" eine Option aus.
+1. Wechseln Sie zu **Navigationsbereich > Module > Kreditoren > Einstellung > Kreditorenkontenparameter**.
+2. Wählen Sie die Registerkarte**Rechnungsprüfung**.
+3. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Rechnungskopfstatus automatisch aktualisieren**.
+4. Wählen Sie **OK**.
+5. Wählen Sie im Feld **Rechnung mit Abweichungen buchen** eine Option aus.
 6. Schließen Sie die Seite.
-7. Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungsrichtlinien".
-8. Klicken Sie auf "Parameter".
-9. Klicken Sie auf die Schaltfläche "Hinzufügen."
-10. Schließen Sie die Seite.
+7. Wechseln Sie zu **Navigationsbereich > Module > Kreditoren > Richtlinieneinstellungen > Richtlinien für Kreditorenrechnung**.
+8. Wählen Sie **Parameter** aus.
+9. Wählen Sie **Hinzufügen** aus.
+10. Schließen Sie die Seite, um zur Startseite zurückzukehren.
 
 ## <a name="create-policy-rule-types-for-vendor-invoices"></a>Erstellen von Richtlinienregeltypen für Kreditorenrechnungen
-1. Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungs-Richtlinienregeltypen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Regelname" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Klicken Sie im Feld "Abfragename" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie auf "Speichern".
-9. Schließen Sie die Seite.
+1. Wechseln Sie zu **Navigationsbereich > Module > Kreditoren > Richtlinieneinstellungen > Richtlinienregeltypen für Kreditorenrechnungen**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie in den Feldern **Regelname** und **Beschreibung** Werte ein.
+4. Wählen Sie im Feld **Abfragename** die Dropdown-Schaltfläche aus, um die Suche zu öffnen, und wählen Sie dann den gewünschten Datensatz aus.
+5. Wählen Sie **Speichern**.
+6. Schließen Sie die Seite, um zur Startseite zurückzukehren.
 
 ## <a name="define-a-vendor-invoice-policy"></a>Definieren einer Kreditorenrechnungsrichtlinie
-1. Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungsrichtlinien".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Erweitern oder reduzieren Sie den Abschnitt "Richtlinienorganisationen".
-6. Wählen Sie in der Struktur "Contoso Unterhaltungsanlagen USA" aus.
-7. Klicken Sie auf Hinzufügen.
-8. Erweitern oder reduzieren Sie den Abschnitt "Richtlinienregeln".
-9. Klicken Sie auf "Richtlinienregel erstellen".
-10. Geben Sie im Feld "Richtlinienregel" einen Wert ein.
-11. Klicken Sie auf "Filter".
-12. Klicken Sie auf Hinzufügen.
-13. Markieren Sie in der Liste die ausgewählte Zeile.
-14. Klicken Sie im Feld "Tabelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-15. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-16. Klicken Sie im Feld "Abgeleitete Tabelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-18. Klicken Sie im Feld "Feld" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-19. Geben Sie im Feld "Feld" einen Wert ein.
-20. Schließen Sie die Seite.
-21. Geben Sie im Feld "Kriterien" einen Wert ein.
-22. Klicken Sie auf "OK".
-23. Klicken Sie auf "OK".
-24. Schließen Sie die Seite.
-25. Schließen Sie die Seite.
+1. Wechseln Sie zu **Navigationsbereich > Module > Kreditoren > Richtlinieneinstellungen > Richtlinien für Kreditorenrechnung**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie in den Feldern **Name** und **Beschreibung** Werte ein.
+4. Erweitern oder reduzieren Sie den Abschnitt **Richtlinienorganisationen**.
+5. Wählen Sie in der Struktur **Contoso Unterhaltungsanlagen USA** aus.
+6. Wählen Sie **Hinzufügen** aus.
+7. Erweitern oder reduzieren Sie den Abschnitt **Richtlinienregeln**.
+8. Wählen Sie **Richtlinienregel erstellen** aus.
+9. Geben Sie im Feld **Beschreibung der Richtlinienregel** einen Wert ein.
+10. Wählen Sie **Filter** aus.
+11. Wählen Sie **Hinzufügen** aus. Wählen Sie den gewünschten Datensatz aus.
+12. Wählen Sie in den Feldern **Tabelle**, **Abgeleitete Tabelle** und **Feld** Optionen aus den Dropdownmenüs aus, oder geben Sie Werte ein..
+13. Schließen Sie die Seite.
+14. Geben Sie im Feld **Kriterien** einen Wert ein.
+15. Wählen Sie **OK**.
+16. Wählen Sie **OK**.
+17. Schließen Sie die Seiten, um zur Startseite zurückzukehren.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dc7c721af4b25e1586e546392518648110a3fb6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ed17e968debf47d7d212a945975ae1cfaccdff4
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562299"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743234"
 ---
 # <a name="service-order-item-requirements"></a>Artikelbedarf für Serviceauftrag   
 
@@ -68,5 +68,5 @@ Wurde für einen Serviceauftrag ein Artikelbedarf erstellt, kann der Serviceauft
 
 ## <a name="see-also"></a>Siehe auch
 
-[Formular "Artikelbedarf"](https://technet.microsoft.com/en-us/library/aa552021\(v=ax.60\))
+[Formular "Artikelbedarf"](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 714715ccfbdd57e4450c301f5302e008c0c136b1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6a904529dccbe392793d0d108335b623bb1ed8b2
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572001"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742538"
 ---
 # <a name="requests-for-quotation-rfqs"></a>Angebotsanforderungen
 
@@ -48,7 +48,7 @@ Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanfo
 
 Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** (**Senden und Veröffentlichen** für den öffentlichen Sektor) in der  Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
 
-Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Microsoft Dynamics 365 for Finance and Operationseingegeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
+Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Microsoft Dynamics 365 for Finance and Operationseingegeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
 
 Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem sie übermittelt wurde, können Sie die Angebotsanforderung an Kreditoren erneut senden, wenn Sie mit der Verwendung der beiden Zusatzaktivitäten fertig sind: Erstellen und Abschließen.+
 
@@ -179,7 +179,7 @@ Wenn Sie den Ergänzungsprozess konfigurieren, sodass er einschränkender ist, b
 
 Wenn Sie den Ergänzungsprozess so konfigurieren, dass er weniger einschränkend ist, müssen Sie nicht **Erstellen** auswählen, bevor Sie die Felder auf einer Angebotsanforderungsanfrage ändern können, die bereits übermittelt wurde. Sie müssen allerdings einen Ergänzungshinweis zur Angebotsanforderung manuell hinzufügen und die Anfrage erneut senden. Beachten Sie, dass dieser Ansatz nur verwendet werden kann, wenn keine der Antworten (Angebote) verarbeitet wurden. Wenn Sie eine Antwort eingegeben haben und sie sich im Status **Eingegangen** befindet, ist die Schaltfläche **Senden** nicht verfügbar. In diesem Fall müssen Sie **Erstellen** und anschließend **Abschließen** auswählen, wie Sie es in einem einschränkenderen Prozess erfolgen muss. Die Antwort wird dann zurückgesetzt, um die Änderungen an der Angebotsanforderungsanfrage widerzuspiegeln.
 
-Wenn Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, um Angebote einzugeben, müssen Sie immer den Ergänzungsprozess verwenden, um Kreditoren zu Änderungen an der Angebotsanforderungsanfrage zu informieren. Mithilfe diesem Prozess wird die Situation verhindert, in der Kreditoren Angebote auf eine veraltete Angebotsanforderungsanfrage abgeben, während sich ihr Angebot in Bearbeitung befindet. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors)
+Wenn Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, um Angebote einzugeben, müssen Sie immer den Ergänzungsprozess verwenden, um Kreditoren zu Änderungen an der Angebotsanforderungsanfrage zu informieren. Mithilfe diesem Prozess wird die Situation verhindert, in der Kreditoren Angebote auf eine veraltete Angebotsanforderungsanfrage abgeben, während sich ihr Angebot in Bearbeitung befindet. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors)
 
 Wenn Sie weitere Kreditoren dazu einladen möchten, Angebote zu unterbreiten, und keine Änderungen an der Angebotsanforderungsanfrage vorgenommen wurden, können Sie die Schaltfläche **Senden** verwenden. Die Kreditoren, die Sie hinzugefügt haben, werden auf der Seite **Senden** angezeigt und erhalten die E-Mail-Einladung.
 

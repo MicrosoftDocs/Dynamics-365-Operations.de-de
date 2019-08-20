@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8457182fee49e28256f2a1102ba77b2b4e89d5b2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fad076ae61da4845b65518f75747fec791b3b78c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548695"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848422"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-Inhalt zur Kompensation
 
@@ -45,7 +45,7 @@ Die Berichte, die im Power BI-Inhalt zur **Kompensation** enthalten sind, haben 
 | Stellenlohnanalyse      | Höchster und niedrigster stündlicher und Gehaltslohn, höchster und niedrigster Lohn und Vollzeit- und Teilzeitpositionen |
 | Vergütungsplananalyse | Mitarbeiterregistrierung nach ausgewählten Vorteilen |
 
-Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die folgenden Daten werden verwendet, um die Berichte im Power BI-Inhalt zur **Kompensation** zu füllen. Diese Tabelle zeigt die Entitäten, auf denen der Inhalt basiert.

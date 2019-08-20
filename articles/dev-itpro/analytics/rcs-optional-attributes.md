@@ -1,5 +1,5 @@
 ---
-title: Bereiten Sie anwendungsspezifische Metadaten für RCS und ER vor
+title: Import von Dateien im XML-Format mit optionalen Attributen
 description: Dieses Thema enthält Informationen zum Entwurf von ER-Formaten, die XML-Attributen angeben, um eingehende elektronische Dokumente im XML-Format zu analysieren.
 author: NickSelin
 manager: AnnBe
@@ -10,20 +10,20 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner
 audience: Application User, Developer, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a6fc1e54444584895aa75ae91d39143f27e34d8
-ms.sourcegitcommit: d0fa7eb2166a30314205e7f70bbeaff6fbd5fb55
+ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "1726574"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849994"
 ---
-# <a name="prepare-application-specific-metadata-for-rcs-and-er"></a>Bereiten Sie anwendungsspezifische Metadaten für RCS und ER vor
+# <a name="import-files-in-xml-format-with-optional-attributes"></a>Import von Dateien im XML-Format mit optionalen Attributen
 
 Sie können Elektronische Berichterstellung (ER)-Formate entwerfen, um eingehende Dokumente im XML-Format zu generieren. Bestimmte Attribute von XML-Elementen können in entworfenem ER-Format als optional angegeben werden. Es ermöglicht Ihnen, eingehende Dateien mit und ohne diese XML-Attribute korrekt zu bearbeiten. Sie können den Inhalt aus diesen Dateien dann verwenden, um Anwendungsdaten zu aktualisieren.
 
@@ -97,11 +97,11 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 5.  Klicken Sie auf **Speichern**.
 6.  Klicken Sie auf **Designer**.
 7.  Erweitern Sie in der Struktur **Format**.
-8.  In der Struktur erweitern Sie **Format \rroot: XML-Element Stammverzeichnis (Stamm)**.
-9.  Wählen Sie in der Strukturdarstellung **\root: XML Element(root)\dokument: XML Element 1.* (dokument)**.
+8.  Erweitern Sie in der Struktur **format\root: XML Element(root)**.
+9.  Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
 10. Klicken Sie auf **Binden**.
-11. Erweitern Sie in der Struktur**format\root: XML Element(root)\dokument: XML Element 1..* (dokument)**.
-12. Wählen Sie in der Strukturdarstellung **\root: XML Element(root)\dokument: XML Element 1.* (dokument)\id**.
+11. Erweitern Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+12. Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
 13. Erweitern Sie in der Struktur **Liste = format.root.dokument**.
 14. Wählen Sie in der Struktur **Liste = format.root.dokument\code**.
 15. Klicken Sie auf **Binden**.

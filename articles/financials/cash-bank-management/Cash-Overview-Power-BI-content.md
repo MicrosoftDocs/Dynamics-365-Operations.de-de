@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bff0b1b0a68eccec1cebf130bc40ec3e6d88c3a9
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702794"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1842688"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-Inhalt – Bargeldübersicht
 
@@ -40,7 +40,7 @@ Die folgende Einrichtung muss abgeschlossen werden, damit Daten in den Grafiken 
 1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
 2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen.
 2. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung sowie der Buchhaltungswährung und den Bankwährungen. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-3. Konfigurieren Sie die Cashflow-Planung und führen Sie sie aus. Weitere Informationen dazu, wie Cashflow-Planung eingerichtet wird, finden Sie unter <a href="https://docs.microsoft.com/en-us/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
+3. Konfigurieren Sie die Cashflow-Planung und führen Sie sie aus. Weitere Informationen dazu, wie Cashflow-Planung eingerichtet wird, finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
 ">Cashflow-Planung</a>. 
 4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **LedgerCovLiquidityMeasurement**-Aggregatmessung zu aktualisieren.
 

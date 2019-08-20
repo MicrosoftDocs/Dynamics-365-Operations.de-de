@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: fccbedea611228cc57531c89406f72a6664153c7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3d570aceee6b449c39b30defaebc4983b54f283e
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554391"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741134"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobiler Arbeitsbereich für mein Team
 
@@ -57,7 +57,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Wenn Finance and Operations nicht bereits in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/en-us/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
+<td>Wenn Finance and Operations nicht bereits in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
 </td>
 </tr>
 <tr class="even">
