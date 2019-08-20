@@ -10,32 +10,32 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9754c46010e7bbdb2edef0d6e68162f344bb1257
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 39450b5aef2fb7b57492a52011f4b0db9dc8ff2e
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570410"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1845041"
 ---
-# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="aec0b-103">Berechnung zu einem Produktkonfigurationsmodell hinzufügen</span><span class="sxs-lookup"><span data-stu-id="aec0b-103">Add a calculation to a product configuration model</span></span>
+# <a name="add-a-calculation-to-a-product-configuration-model"></a><span data-ttu-id="11831-103">Berechnung zu einem Produktkonfigurationsmodell hinzufügen</span><span class="sxs-lookup"><span data-stu-id="11831-103">Add a calculation to a product configuration model</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="aec0b-104">Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produktkonfigurationsmodell hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="aec0b-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="aec0b-105">Darin wird angezeigt, wie Sie einen logischen Ausdruck unter Verwendung des "If"-Operators erstellen können, um eine Lautsprecherhöhe bis 10 für weiße Lautsprecher und 15 für alle anderen Gehäusefarben festzulegen.</span><span class="sxs-lookup"><span data-stu-id="aec0b-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="aec0b-106">Das Verfahren verwendet die Komponente "High end speaker" im Vorführungsunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="aec0b-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
+<span data-ttu-id="11831-104">Im folgenden Verfahren sehen Sie, wie Sie einen neuen Berechnung zu einem Produktkonfigurationsmodell hinzufügen können.</span><span class="sxs-lookup"><span data-stu-id="11831-104">This procedure shows how to add a new calculation to a product configuration model.</span></span> <span data-ttu-id="11831-105">Darin wird angezeigt, wie Sie einen logischen Ausdruck unter Verwendung des "If"-Operators erstellen können, um eine Lautsprecherhöhe bis 10 für weiße Lautsprecher und 15 für alle anderen Gehäusefarben festzulegen.</span><span class="sxs-lookup"><span data-stu-id="11831-105">It shows how you can create a logical expression using the "If" operator to set a speaker height to 10 for white speakers and 15 for all other cabinet finishes.</span></span> <span data-ttu-id="11831-106">Das Verfahren verwendet die Komponente "High end speaker" im Vorführungsunternehmen USMF.</span><span class="sxs-lookup"><span data-stu-id="11831-106">The procedure uses the High end speaker component in the demo company USMF.</span></span>
 
 
-## <a name="add-a-calculation"></a><span data-ttu-id="aec0b-107">Eine Berechnung hinzufügen</span><span class="sxs-lookup"><span data-stu-id="aec0b-107">Add a calculation</span></span>
+## <a name="add-a-calculation"></a><span data-ttu-id="11831-107">Eine Berechnung hinzufügen</span><span class="sxs-lookup"><span data-stu-id="11831-107">Add a calculation</span></span>
 
-## <a name="create-calculation-expression"></a><span data-ttu-id="aec0b-108">Berechnungsausdruck erstellen</span><span class="sxs-lookup"><span data-stu-id="aec0b-108">Create calculation expression</span></span>
-1. <span data-ttu-id="aec0b-109">Klicken Sie auf "Ausdruck bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="aec0b-109">Click Edit expression.</span></span>
-2. <span data-ttu-id="aec0b-110">Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.</span><span class="sxs-lookup"><span data-stu-id="aec0b-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
-3. <span data-ttu-id="aec0b-111">Klicken Sie auf "Überprüfen".</span><span class="sxs-lookup"><span data-stu-id="aec0b-111">Click Validate.</span></span>
-4. <span data-ttu-id="aec0b-112">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="aec0b-112">Click Close.</span></span>
-5. <span data-ttu-id="aec0b-113">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="aec0b-113">Click OK.</span></span>
+## <a name="create-calculation-expression"></a><span data-ttu-id="11831-108">Berechnungsausdruck erstellen</span><span class="sxs-lookup"><span data-stu-id="11831-108">Create calculation expression</span></span>
+1. <span data-ttu-id="11831-109">Klicken Sie auf "Ausdruck bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="11831-109">Click Edit expression.</span></span>
+2. <span data-ttu-id="11831-110">Geben Sie im Feld "ConstraintBody" "If[CabinetFinish== "White", 10, 15]" ein.</span><span class="sxs-lookup"><span data-stu-id="11831-110">In the ConstraintBody field, enter 'If[CabinetFinish=="White", 10, 15]'.</span></span>
+3. <span data-ttu-id="11831-111">Klicken Sie auf "Überprüfen".</span><span class="sxs-lookup"><span data-stu-id="11831-111">Click Validate.</span></span>
+4. <span data-ttu-id="11831-112">Klicken Sie auf "Schließen".</span><span class="sxs-lookup"><span data-stu-id="11831-112">Click Close.</span></span>
+5. <span data-ttu-id="11831-113">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="11831-113">Click OK.</span></span>
 

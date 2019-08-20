@@ -1,0 +1,73 @@
+---
+title: Datenintegration zwischen Finance and Operations und Common Data Service nahezu in Echtzeit
+description: Dieser Artikel enthält eine Übersicht über die Integration zwischen Microsoft Dynamics 365 for Finance and Operations und Common Data Service.
+author: RamaKrishnamoorthy
+manager: AnnBe
+ms.date: 07/15/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User, IT Pro
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: global
+ms.search.industry: ''
+ms.author: ramasri
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2019-07-15
+ms.openlocfilehash: aa614c8e6a79a3f7a4f8f2f99f1f1bd1a67ac921
+ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "1797227"
+---
+# <a name="near-real-time-data-integration-between-finance-and-operations-and-common-data-service"></a><span data-ttu-id="5610e-103">Datenintegration zwischen Finance and Operations und Common Data Service nahezu in Echtzeit</span><span class="sxs-lookup"><span data-stu-id="5610e-103">Near-real-time data integration between Finance and Operations and Common Data Service</span></span>
+
+[!include [banner](../includes/banner.md)]
+
+[!include [preview](../includes/preview-banner.md)]
+
+<span data-ttu-id="5610e-104">In der derzeitigen digitalen Welt verwenden Geschäftsökosysteme die Microsoft Dynamics 365-Suite als Ganzes.</span><span class="sxs-lookup"><span data-stu-id="5610e-104">In the current digital world, business ecosystems use the Microsoft Dynamics 365 suite as a whole.</span></span> <span data-ttu-id="5610e-105">Da die Daten von Personen, Kunden, Arbeitsgängen und IoT-Geräten (Internet of Things) in eine Quelle fließen, gibt es eine Möglichkeit für digitale Rückmeldungsschleifen.</span><span class="sxs-lookup"><span data-stu-id="5610e-105">Because data from people, customers, operations, and Internet of Things (IoT) devices flows into one source, there is an opportunity for digital feedback loops.</span></span> <span data-ttu-id="5610e-106">Um dies zu erreichen, ist die Integration zwischen Dynamics 365 for Finance and Operations und Dynamics 365 for Customer Engagement-Anwendungen unerlässlich.</span><span class="sxs-lookup"><span data-stu-id="5610e-106">To achieve this experience, integration between Dynamics 365 for Finance and Operations and Dynamics 365 for Customer Engagement applications is essential.</span></span> <span data-ttu-id="5610e-107">Customer Engagement-Anwendungen basieren auf Common Data Service.</span><span class="sxs-lookup"><span data-stu-id="5610e-107">Customer Engagement applications are built on top of Common Data Service.</span></span> <span data-ttu-id="5610e-108">Durch die Integration zwischen Finance and Operations-Daten mit Common Data Service können Customer Engagement-Anwendungen kohärent und fließend mit Finance and Operations kommunizieren.</span><span class="sxs-lookup"><span data-stu-id="5610e-108">Integration between Finance and Operations data with Common Data Service lets Customer Engagement applications communicate coherently and fluently with Finance and Operations.</span></span>
+
+<span data-ttu-id="5610e-109">Finance and Operations und Common Data Service bieten eine Datensynchronisierung zwischen Finance and Operations and Customer Engagement-Anwendungen über ein Framework für duales Schreiben nahezu in Echtzeit.</span><span class="sxs-lookup"><span data-stu-id="5610e-109">Finance and Operations and Common Data Service provide near-real-time data synchronization between Finance and Operations and Customer Engagement applications via a dual-write framework.</span></span> <span data-ttu-id="5610e-110">Die Deckung ist breit und umfasst 28 Oberflächenbereiche von Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="5610e-110">The coverage is broad and spans 28 surface areas of Finance and Operations.</span></span> <span data-ttu-id="5610e-111">Die Zielsetzung besteht darin, „eine Dynamics 365“-Benutzererfahrung über nahtlose Datenflüssen bereitzustellen, durch die Unternehmensprozesse über Anwendungen hinweg verbunden werden.</span><span class="sxs-lookup"><span data-stu-id="5610e-111">The goal is to provide a "One Dynamics 365" user experience through seamless data flows that connect business processes across applications.</span></span>
+
+![Übersicht über die Architektur](media/dual-write-overview.jpg)
+
+<span data-ttu-id="5610e-113">Die folgenden Wertvorschläge stehen für Debitoren zur Verfügung:</span><span class="sxs-lookup"><span data-stu-id="5610e-113">The following value propositions are available for customers:</span></span>
+
++ [<span data-ttu-id="5610e-114">Organisationshierarchie in Common Data Service</span><span class="sxs-lookup"><span data-stu-id="5610e-114">Organization hierarchy in Common Data Service</span></span>](dual-write-organization.md)
++ [<span data-ttu-id="5610e-115">Unternehmenskonzept in Common Data Service</span><span class="sxs-lookup"><span data-stu-id="5610e-115">Company concept in Common Data Service</span></span>](dual-write-company.md)
++ [<span data-ttu-id="5610e-116">Integrierte Masterdaten von Debitoren</span><span class="sxs-lookup"><span data-stu-id="5610e-116">Integrated customer master</span></span>](dual-write-customer.md)
++ [<span data-ttu-id="5610e-117">Integrierte Masterdaten von Kreditoren</span><span class="sxs-lookup"><span data-stu-id="5610e-117">Integrated vendor master</span></span>](dual-write-vendor.md)
++ <span data-ttu-id="5610e-118">Einheitlicher Produktmaster</span><span class="sxs-lookup"><span data-stu-id="5610e-118">Unified product master</span></span>
+
+## <a name="system-requirements"></a><span data-ttu-id="5610e-119">Systemanforderungen</span><span class="sxs-lookup"><span data-stu-id="5610e-119">System requirements</span></span>
+
+<span data-ttu-id="5610e-120">Synchrone, bidirektionale Datenflüsse nahezu in Echtzeit erfordern die folgenden Versionen:</span><span class="sxs-lookup"><span data-stu-id="5610e-120">Synchronous, bidirectional, near-real-time data flows require the following versions:</span></span>
+
++ <span data-ttu-id="5610e-121">Microsoft Dynamics 365 for Finance and Operations-Version 10.0.4 (Juli 2019) mit Plattformaktualisierung 28 oder höher</span><span class="sxs-lookup"><span data-stu-id="5610e-121">Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (July 2019) with Platform update 28, or later</span></span>
++ <span data-ttu-id="5610e-122">Microsoft Dynamics 365 for Customer Engagement, Plattformversion 9.1 (4.2) oder höher</span><span class="sxs-lookup"><span data-stu-id="5610e-122">Microsoft Dynamics 365 for Customer Engagement, Platform version 9.1 (4.2) or later</span></span>
+
+## <a name="setup-instructions"></a><span data-ttu-id="5610e-123">Setupanweisungen</span><span class="sxs-lookup"><span data-stu-id="5610e-123">Setup instructions</span></span>
+
+<span data-ttu-id="5610e-124">Führen Sie die folgenden Schritte aus, um die Integration zwischen Finance and Operations und Common Data Service einzurichten.</span><span class="sxs-lookup"><span data-stu-id="5610e-124">Follow these steps to set up integration between Finance and Operations and Common Data Service.</span></span>
+    
+1. <span data-ttu-id="5610e-125">Informationen zur Einrichtung des Systems zum dualen Schreibens finden Sie im [Schritt-für-Schritt-Handbuch](https://aka.ms/dualwrite-docs) zur Ankündigung der Vorschau des dualen Schreibens.</span><span class="sxs-lookup"><span data-stu-id="5610e-125">For the setup of the dual-write system, see the [step-by-step guide](https://aka.ms/dualwrite-docs) on Announcing Dual Write Preview.</span></span>
+2. <span data-ttu-id="5610e-126">Laden Sie die Lösung aus der Yammer-Gruppe [Finance and Operations-, Common Data Service- und Customer Engagement-Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) herunter und installieren Sie sie.</span><span class="sxs-lookup"><span data-stu-id="5610e-126">Download and install the solution from the [Finance and Operations, Common Data Service, and Customer Engagement Integration](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=66052096) Yammer group.</span></span> <span data-ttu-id="5610e-127">Das Paket beinhaltet fünf Lösungen:</span><span class="sxs-lookup"><span data-stu-id="5610e-127">The package contains five solutions:</span></span>
+
+    + <span data-ttu-id="5610e-128">Dynamics365Company</span><span class="sxs-lookup"><span data-stu-id="5610e-128">Dynamics365Company</span></span>
+    + <span data-ttu-id="5610e-129">CurrencyExchangeRates</span><span class="sxs-lookup"><span data-stu-id="5610e-129">CurrencyExchangeRates</span></span>
+    + <span data-ttu-id="5610e-130">Dynamics365FinanceAndOperationsCommon</span><span class="sxs-lookup"><span data-stu-id="5610e-130">Dynamics365FinanceAndOperationsCommon</span></span>
+    + <span data-ttu-id="5610e-131">Dynamics365FinanceCommon</span><span class="sxs-lookup"><span data-stu-id="5610e-131">Dynamics365FinanceCommon</span></span>
+    + <span data-ttu-id="5610e-132">Dynamics365SupplyChainCommon</span><span class="sxs-lookup"><span data-stu-id="5610e-132">Dynamics365SupplyChainCommon</span></span>
+
+3. <span data-ttu-id="5610e-133">Befolgen Sie die Ausführungsreihenfolge für die [Synchronisierung der ersten Referenzdaten](dual-write-initial.md).</span><span class="sxs-lookup"><span data-stu-id="5610e-133">Follow the execution order for [synchronizing initial reference data](dual-write-initial.md).</span></span>
+4. <span data-ttu-id="5610e-134">Wenn Sie Probleme bei der Synchronisierung des dualen Schreibens feststellen, lesen Sie die Informationen im [Handbuch zur Problembehandlung für die Datenintegration](dual-write-troubleshooting.md).</span><span class="sxs-lookup"><span data-stu-id="5610e-134">If you encounter dual-write synchronization issues, see the [Troubleshooting guide for data integration](dual-write-troubleshooting.md).</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="5610e-135">Duales Schreiben und [Prospect to cash](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) können nicht parallel ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="5610e-135">You can’t run dual-write and [Prospect to cash](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/accounts-template-mapping-direct) side-by-side.</span></span> <span data-ttu-id="5610e-136">Wenn Sie die Prospect to cash-Lösung ausführen, müssen Sie sie deinstallieren.</span><span class="sxs-lookup"><span data-stu-id="5610e-136">If you're running the Prospect to cash solution, you must uninstall it.</span></span> <span data-ttu-id="5610e-137">Sie müssen auch die Vorlagen des dualen Schreibens für Debitor und Kreditor deaktivieren, die Teil der Prospect to cash-Lösung sind.</span><span class="sxs-lookup"><span data-stu-id="5610e-137">You must also disable the customer and vendor dual-write templates that are part of the Prospect to cash solution.</span></span>

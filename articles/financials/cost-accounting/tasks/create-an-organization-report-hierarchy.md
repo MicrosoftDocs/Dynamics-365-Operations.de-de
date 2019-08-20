@@ -9,89 +9,89 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a06a67f851e4a73df90f999683d5ea27f38e66
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5684c710b8e167a4a39f106eb3c0fd77e3011dbd
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543932"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841344"
 ---
-# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="ccc4b-103">Eine Organisationsberichtshierarchie erstellen</span><span class="sxs-lookup"><span data-stu-id="ccc4b-103">Create an organization report hierarchy</span></span>
+# <a name="create-an-organization-report-hierarchy"></a><span data-ttu-id="01a1a-103">Eine Organisationsberichtshierarchie erstellen</span><span class="sxs-lookup"><span data-stu-id="01a1a-103">Create an organization report hierarchy</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="ccc4b-104">Gehen Sie folgendermaßen vor, um eine Berichtshierarchie für Organisationsberichterstellung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="ccc4b-105">Der Zweck dieser Buchung ist, Sie durch die Dimensionshierarchie zu führen, sodass Sie den Vorgang fortsetzen können, bis die gesamte Organisationsberichterstellungsstruktur erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="ccc4b-106">Für diese Aufzeichnung wird das Demo-Datenunternehmen USP2 verwendet.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-106">This recording uses the USP2 demo data company.</span></span>
+<span data-ttu-id="01a1a-104">Gehen Sie folgendermaßen vor, um eine Berichtshierarchie für Organisationsberichterstellung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="01a1a-104">Use this procedure to create a report hierarchy for organization reporting.</span></span> <span data-ttu-id="01a1a-105">Der Zweck dieser Buchung ist, Sie durch die Dimensionshierarchie zu führen, sodass Sie den Vorgang fortsetzen können, bis die gesamte Organisationsberichterstellungsstruktur erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="01a1a-105">The purpose of this recording is to guide you through the dimension hierarchy so that you can continue until the whole organization reporting structure is created.</span></span> <span data-ttu-id="01a1a-106">Für diese Aufzeichnung wird das Demo-Datenunternehmen USP2 verwendet.</span><span class="sxs-lookup"><span data-stu-id="01a1a-106">This recording uses the USP2 demo data company.</span></span>
 
-1. <span data-ttu-id="ccc4b-107">Wechseln Sie zu Kostenrechnung > Dimensionen > Dimensionshierarchien.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
-2. <span data-ttu-id="ccc4b-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-108">Click New.</span></span>
-3. <span data-ttu-id="ccc4b-109">Wählen Sie im Feld HierarchyTypeComboBox Dimensionsklassifizierungs-Hierarchie aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
-    * <span data-ttu-id="ccc4b-110">Wählen Sie Dimensionsklassifizierungs-Hierarchie aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="ccc4b-111">Der Typ Dimensionsklassifizierungshierarchie wird zur Regeldefinition und zu Berichterstellungszwecken verwendet.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="ccc4b-112">Er unterstützt alle Dimensionen, wie Kostenobjekte, Kostenelemente und statistischen Dimensionen.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
-4. <span data-ttu-id="ccc4b-113">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-113">Click Create.</span></span>
-5. <span data-ttu-id="ccc4b-114">Geben Sie im Feld "Hierarchiename den Typ Organisation USP2 ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
-6. <span data-ttu-id="ccc4b-115">Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-115">In the Dimension field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccc4b-116">Wählen Sie Kostenstellen.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-116">Select Cost centers.</span></span>  
-7. <span data-ttu-id="ccc4b-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-117">Click Save.</span></span>
-8. <span data-ttu-id="ccc4b-118">Klicken Sie auf "Hierarchie anzeigen".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-118">Click View hierarchy.</span></span>
-9. <span data-ttu-id="ccc4b-119">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-119">Click New.</span></span>
-10. <span data-ttu-id="ccc4b-120">Geben Sie im Feld Knotennamen den Typ CEO ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-120">In the Node name field, type 'CEO'.</span></span>
-11. <span data-ttu-id="ccc4b-121">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-121">Click Save.</span></span>
-12. <span data-ttu-id="ccc4b-122">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-122">Click New.</span></span>
-13. <span data-ttu-id="ccc4b-123">Geben Sie im Feld Knotennamen den Typ CEO ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-123">In the Node name field, type 'CEO cost centers'.</span></span>
-14. <span data-ttu-id="ccc4b-124">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-124">Click Save.</span></span>
-15. <span data-ttu-id="ccc4b-125">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-125">Click New.</span></span>
-16. <span data-ttu-id="ccc4b-126">Geben Sie im Feld Knotennamen den Typ CEO ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-126">In the Node name field, type 'Region East'.</span></span>
-17. <span data-ttu-id="ccc4b-127">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-127">Click Save.</span></span>
-18. <span data-ttu-id="ccc4b-128">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-128">Click New.</span></span>
-19. <span data-ttu-id="ccc4b-129">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-129">In the list, mark the selected row.</span></span>
-20. <span data-ttu-id="ccc4b-130">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-130">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccc4b-131">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-131">Select the dimension member that corresponds to the node.</span></span>  
-21. <span data-ttu-id="ccc4b-132">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-132">Click Save.</span></span>
-22. <span data-ttu-id="ccc4b-133">Wählen Sie in der Strukturdarstellung Oganisation USP2\CEO\CEO Kostenstellen</span><span class="sxs-lookup"><span data-stu-id="ccc4b-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
-23. <span data-ttu-id="ccc4b-134">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-134">Click New.</span></span>
-24. <span data-ttu-id="ccc4b-135">Geben Sie im Feld Knotennamen den Typ Region West ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-135">In the Node name field, type 'Region West'.</span></span>
-25. <span data-ttu-id="ccc4b-136">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-136">Click Save.</span></span>
-26. <span data-ttu-id="ccc4b-137">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-137">Click New.</span></span>
-27. <span data-ttu-id="ccc4b-138">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-138">In the list, mark the selected row.</span></span>
-28. <span data-ttu-id="ccc4b-139">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-139">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccc4b-140">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-140">Select the dimension member that corresponds to the node.</span></span>  
-29. <span data-ttu-id="ccc4b-141">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-141">Click Save.</span></span>
-30. <span data-ttu-id="ccc4b-142">Wählen Sie in der Struktur Organisation USP2\CEO ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
-31. <span data-ttu-id="ccc4b-143">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-143">Click New.</span></span>
-32. <span data-ttu-id="ccc4b-144">Geben Sie im Feld Knotennamen den Typ CFO Kostenstellen ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-144">In the Node name field, type 'CFO cost centers'.</span></span>
-33. <span data-ttu-id="ccc4b-145">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-145">Click Save.</span></span>
-34. <span data-ttu-id="ccc4b-146">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-146">Click New.</span></span>
-35. <span data-ttu-id="ccc4b-147">Geben Sie im Feld Knotennamen den Typ Marketing-Kampagne ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-147">In the Node name field, type 'Marketing campa'.</span></span>
-36. <span data-ttu-id="ccc4b-148">Geben Sie im Feld Knotennamen den Typ Marketing-Kampagne ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-148">In the Node name field, type 'Marketing campaign'.</span></span>
-37. <span data-ttu-id="ccc4b-149">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-149">Click Save.</span></span>
-38. <span data-ttu-id="ccc4b-150">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-150">Click New.</span></span>
-39. <span data-ttu-id="ccc4b-151">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-151">In the list, mark the selected row.</span></span>
-40. <span data-ttu-id="ccc4b-152">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-152">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccc4b-153">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-153">Select the dimension member that corresponds to the node.</span></span>  
-41. <span data-ttu-id="ccc4b-154">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-154">Click Save.</span></span>
-42. <span data-ttu-id="ccc4b-155">Wählen Sie in der Strukturdarstellung "Organisation USP2\CEO\CFO Kostenstellen".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-155">In the tree, select 'Organization USP2\CEO\CFO cost centers'.</span></span>
-43. <span data-ttu-id="ccc4b-156">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-156">Click New.</span></span>
-44. <span data-ttu-id="ccc4b-157">Geben Sie im Feld Knotennamen den Typ Handelsmesse  ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-157">In the Node name field, type 'Trade shows'.</span></span>
-45. <span data-ttu-id="ccc4b-158">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-158">Click Save.</span></span>
-46. <span data-ttu-id="ccc4b-159">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-159">Click New.</span></span>
-47. <span data-ttu-id="ccc4b-160">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-160">In the list, mark the selected row.</span></span>
-48. <span data-ttu-id="ccc4b-161">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-161">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccc4b-162">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-162">Select the dimension member that corresponds to the node.</span></span>  
-49. <span data-ttu-id="ccc4b-163">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-163">Click Save.</span></span>
-50. <span data-ttu-id="ccc4b-164">Wählen Sie in der Struktur Organisation USP2\CEO ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
-51. <span data-ttu-id="ccc4b-165">Geben Sie im Feld Knotennamen den Typ CIO Kostenstellen ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-165">In the Node name field, type 'CIO cost centers'.</span></span>
-52. <span data-ttu-id="ccc4b-166">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-166">Click Save.</span></span>
-53. <span data-ttu-id="ccc4b-167">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-167">Click New.</span></span>
-54. <span data-ttu-id="ccc4b-168">Geben Sie im Feld Knotennamen den Typ Callcenters ein.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-168">In the Node name field, type 'Call centers'.</span></span>
-55. <span data-ttu-id="ccc4b-169">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-169">Click Save.</span></span>
-56. <span data-ttu-id="ccc4b-170">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-170">Click New.</span></span>
-57. <span data-ttu-id="ccc4b-171">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-171">In the list, mark the selected row.</span></span>
-58. <span data-ttu-id="ccc4b-172">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-172">In the From dimension member field, enter or select a value.</span></span>
-    * <span data-ttu-id="ccc4b-173">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="ccc4b-173">Select the dimension member that corresponds to the node.</span></span>  
-59. <span data-ttu-id="ccc4b-174">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="ccc4b-174">Click Save.</span></span>
+1. <span data-ttu-id="01a1a-107">Wechseln Sie zu Kostenrechnung > Dimensionen > Dimensionshierarchien.</span><span class="sxs-lookup"><span data-stu-id="01a1a-107">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="01a1a-108">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-108">Click New.</span></span>
+3. <span data-ttu-id="01a1a-109">Wählen Sie im Feld HierarchyTypeComboBox Dimensionsklassifizierungs-Hierarchie aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-109">In the HierarchyTypeComboBox field, select 'Dimension classification hierarchy'.</span></span>
+    * <span data-ttu-id="01a1a-110">Wählen Sie Dimensionsklassifizierungs-Hierarchie aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-110">Select Dimension classification hierarchy.</span></span> <span data-ttu-id="01a1a-111">Der Typ Dimensionsklassifizierungshierarchie wird zur Regeldefinition und zu Berichterstellungszwecken verwendet.</span><span class="sxs-lookup"><span data-stu-id="01a1a-111">The Dimension classification hierarchy type is used to define rules and for reporting purposes.</span></span> <span data-ttu-id="01a1a-112">Er unterstützt alle Dimensionen, wie Kostenobjekte, Kostenelemente und statistischen Dimensionen.</span><span class="sxs-lookup"><span data-stu-id="01a1a-112">It supports all dimensions, such as cost objects, cost elements, and statistical dimensions.</span></span>  
+4. <span data-ttu-id="01a1a-113">Klicken Sie auf "Erstellen".</span><span class="sxs-lookup"><span data-stu-id="01a1a-113">Click Create.</span></span>
+5. <span data-ttu-id="01a1a-114">Geben Sie im Feld "Hierarchiename den Typ Organisation USP2 ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-114">In the Dimension hierarchy name field, type 'Oganization USP2'.</span></span>
+6. <span data-ttu-id="01a1a-115">Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-115">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="01a1a-116">Wählen Sie Kostenstellen.</span><span class="sxs-lookup"><span data-stu-id="01a1a-116">Select Cost centers.</span></span>  
+7. <span data-ttu-id="01a1a-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-117">Click Save.</span></span>
+8. <span data-ttu-id="01a1a-118">Klicken Sie auf "Hierarchie anzeigen".</span><span class="sxs-lookup"><span data-stu-id="01a1a-118">Click View hierarchy.</span></span>
+9. <span data-ttu-id="01a1a-119">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-119">Click New.</span></span>
+10. <span data-ttu-id="01a1a-120">Geben Sie im Feld Knotennamen den Typ CEO ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-120">In the Node name field, type 'CEO'.</span></span>
+11. <span data-ttu-id="01a1a-121">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-121">Click Save.</span></span>
+12. <span data-ttu-id="01a1a-122">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-122">Click New.</span></span>
+13. <span data-ttu-id="01a1a-123">Geben Sie im Feld Knotennamen den Typ CEO ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-123">In the Node name field, type 'CEO cost centers'.</span></span>
+14. <span data-ttu-id="01a1a-124">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-124">Click Save.</span></span>
+15. <span data-ttu-id="01a1a-125">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-125">Click New.</span></span>
+16. <span data-ttu-id="01a1a-126">Geben Sie im Feld Knotennamen den Typ CEO ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-126">In the Node name field, type 'Region East'.</span></span>
+17. <span data-ttu-id="01a1a-127">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-127">Click Save.</span></span>
+18. <span data-ttu-id="01a1a-128">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-128">Click New.</span></span>
+19. <span data-ttu-id="01a1a-129">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="01a1a-129">In the list, mark the selected row.</span></span>
+20. <span data-ttu-id="01a1a-130">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-130">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="01a1a-131">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="01a1a-131">Select the dimension member that corresponds to the node.</span></span>  
+21. <span data-ttu-id="01a1a-132">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-132">Click Save.</span></span>
+22. <span data-ttu-id="01a1a-133">Wählen Sie in der Strukturdarstellung Oganisation USP2\CEO\CEO Kostenstellen</span><span class="sxs-lookup"><span data-stu-id="01a1a-133">In the tree, select 'Oganization USP2\CEO\CEO cost centers'.</span></span>
+23. <span data-ttu-id="01a1a-134">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-134">Click New.</span></span>
+24. <span data-ttu-id="01a1a-135">Geben Sie im Feld Knotennamen den Typ Region West ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-135">In the Node name field, type 'Region West'.</span></span>
+25. <span data-ttu-id="01a1a-136">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-136">Click Save.</span></span>
+26. <span data-ttu-id="01a1a-137">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-137">Click New.</span></span>
+27. <span data-ttu-id="01a1a-138">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="01a1a-138">In the list, mark the selected row.</span></span>
+28. <span data-ttu-id="01a1a-139">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-139">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="01a1a-140">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="01a1a-140">Select the dimension member that corresponds to the node.</span></span>  
+29. <span data-ttu-id="01a1a-141">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-141">Click Save.</span></span>
+30. <span data-ttu-id="01a1a-142">Wählen Sie in der Struktur Organisation USP2\CEO ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-142">In the tree, select 'Oganization USP2\CEO'.</span></span>
+31. <span data-ttu-id="01a1a-143">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-143">Click New.</span></span>
+32. <span data-ttu-id="01a1a-144">Geben Sie im Feld Knotennamen den Typ CFO Kostenstellen ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-144">In the Node name field, type 'CFO cost centers'.</span></span>
+33. <span data-ttu-id="01a1a-145">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-145">Click Save.</span></span>
+34. <span data-ttu-id="01a1a-146">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-146">Click New.</span></span>
+35. <span data-ttu-id="01a1a-147">Geben Sie im Feld Knotennamen den Typ Marketing-Kampagne ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-147">In the Node name field, type 'Marketing campa'.</span></span>
+36. <span data-ttu-id="01a1a-148">Geben Sie im Feld Knotennamen den Typ Marketing-Kampagne ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-148">In the Node name field, type 'Marketing campaign'.</span></span>
+37. <span data-ttu-id="01a1a-149">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-149">Click Save.</span></span>
+38. <span data-ttu-id="01a1a-150">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-150">Click New.</span></span>
+39. <span data-ttu-id="01a1a-151">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="01a1a-151">In the list, mark the selected row.</span></span>
+40. <span data-ttu-id="01a1a-152">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-152">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="01a1a-153">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="01a1a-153">Select the dimension member that corresponds to the node.</span></span>  
+41. <span data-ttu-id="01a1a-154">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-154">Click Save.</span></span>
+42. <span data-ttu-id="01a1a-155">Wählen Sie in der Strukturdarstellung "Organisation USP2\CEO\CFO Kostenstellen".</span><span class="sxs-lookup"><span data-stu-id="01a1a-155">In the tree, select 'Organization USP2\CEO\CFO cost centers'.</span></span>
+43. <span data-ttu-id="01a1a-156">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-156">Click New.</span></span>
+44. <span data-ttu-id="01a1a-157">Geben Sie im Feld Knotennamen den Typ Handelsmesse  ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-157">In the Node name field, type 'Trade shows'.</span></span>
+45. <span data-ttu-id="01a1a-158">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-158">Click Save.</span></span>
+46. <span data-ttu-id="01a1a-159">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-159">Click New.</span></span>
+47. <span data-ttu-id="01a1a-160">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="01a1a-160">In the list, mark the selected row.</span></span>
+48. <span data-ttu-id="01a1a-161">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-161">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="01a1a-162">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="01a1a-162">Select the dimension member that corresponds to the node.</span></span>  
+49. <span data-ttu-id="01a1a-163">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-163">Click Save.</span></span>
+50. <span data-ttu-id="01a1a-164">Wählen Sie in der Struktur Organisation USP2\CEO ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-164">In the tree, select 'Oganization USP2\CEO'.</span></span>
+51. <span data-ttu-id="01a1a-165">Geben Sie im Feld Knotennamen den Typ CIO Kostenstellen ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-165">In the Node name field, type 'CIO cost centers'.</span></span>
+52. <span data-ttu-id="01a1a-166">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-166">Click Save.</span></span>
+53. <span data-ttu-id="01a1a-167">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-167">Click New.</span></span>
+54. <span data-ttu-id="01a1a-168">Geben Sie im Feld Knotennamen den Typ Callcenters ein.</span><span class="sxs-lookup"><span data-stu-id="01a1a-168">In the Node name field, type 'Call centers'.</span></span>
+55. <span data-ttu-id="01a1a-169">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-169">Click Save.</span></span>
+56. <span data-ttu-id="01a1a-170">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="01a1a-170">Click New.</span></span>
+57. <span data-ttu-id="01a1a-171">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="01a1a-171">In the list, mark the selected row.</span></span>
+58. <span data-ttu-id="01a1a-172">Geben Sie im Feld "Von Dimensionsmitglied" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="01a1a-172">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="01a1a-173">Wählen Sie das Dimensionsmitglied aus, das dem Knoten entspricht.</span><span class="sxs-lookup"><span data-stu-id="01a1a-173">Select the dimension member that corresponds to the node.</span></span>  
+59. <span data-ttu-id="01a1a-174">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="01a1a-174">Click Save.</span></span>
 

@@ -9,34 +9,34 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: roschlom
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 296d74a9ca68758d43be1c46acdba7d13d99e9d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 77583232ee69819ea9ba28dd101326341d61c42d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543700"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841200"
 ---
-# <a name="define-cost-control-units"></a><span data-ttu-id="21b4a-103">Kostenkontrolleinheiten definieren</span><span class="sxs-lookup"><span data-stu-id="21b4a-103">Define cost control units</span></span>
+# <a name="define-cost-control-units"></a><span data-ttu-id="bdfce-103">Kostenkontrolleinheiten definieren</span><span class="sxs-lookup"><span data-stu-id="bdfce-103">Define cost control units</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="21b4a-104">Dieses Verfahren zeigt, wie Kostenkontrollesteuereinheiten im Kostenrechnungssachkonto definiert werden.</span><span class="sxs-lookup"><span data-stu-id="21b4a-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="21b4a-105">Wählen Sie die Kostenobjektdimension für die Elemente aus, bei denen Sie eine Kostensteuerung durchführen möchten.</span><span class="sxs-lookup"><span data-stu-id="21b4a-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="21b4a-106">Die Kostenträgerdimensionsmitglieder werden im Kostenträger der Kostenkontrollesteuereinheiten umgewandelt.</span><span class="sxs-lookup"><span data-stu-id="21b4a-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="21b4a-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USP2.</span><span class="sxs-lookup"><span data-stu-id="21b4a-107">The demo data company used to create this procedure is USP2.</span></span>
+<span data-ttu-id="bdfce-104">Dieses Verfahren zeigt, wie Kostenkontrollesteuereinheiten im Kostenrechnungssachkonto definiert werden.</span><span class="sxs-lookup"><span data-stu-id="bdfce-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="bdfce-105">Wählen Sie die Kostenobjektdimension für die Elemente aus, bei denen Sie eine Kostensteuerung durchführen möchten.</span><span class="sxs-lookup"><span data-stu-id="bdfce-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="bdfce-106">Die Kostenträgerdimensionsmitglieder werden im Kostenträger der Kostenkontrollesteuereinheiten umgewandelt.</span><span class="sxs-lookup"><span data-stu-id="bdfce-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="bdfce-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USP2.</span><span class="sxs-lookup"><span data-stu-id="bdfce-107">The demo data company used to create this procedure is USP2.</span></span>
 
-1. <span data-ttu-id="21b4a-108">Wechseln Sie zu Kostenbuchhaltung > Sachkontoeinstellung > Kostenbuchhaltungs-Sachkonto .</span><span class="sxs-lookup"><span data-stu-id="21b4a-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
-2. <span data-ttu-id="21b4a-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="21b4a-109">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="21b4a-110">Klicken Sie Kontrolleinheiten an.</span><span class="sxs-lookup"><span data-stu-id="21b4a-110">Click Control units.</span></span>
-4. <span data-ttu-id="21b4a-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="21b4a-111">Click New.</span></span>
-5. <span data-ttu-id="21b4a-112">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="21b4a-112">In the Name field, type a value.</span></span>
-6. <span data-ttu-id="21b4a-113">Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="21b4a-113">In the Dimension field, enter or select a value.</span></span>
-7. <span data-ttu-id="21b4a-114">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="21b4a-114">Click Save.</span></span>
-8. <span data-ttu-id="21b4a-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="21b4a-115">Click New.</span></span>
-9. <span data-ttu-id="21b4a-116">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="21b4a-116">In the Name field, type a value.</span></span>
-10. <span data-ttu-id="21b4a-117">Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="21b4a-117">In the Dimension field, enter or select a value.</span></span>
-11. <span data-ttu-id="21b4a-118">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="21b4a-118">Click Save.</span></span>
+1. <span data-ttu-id="bdfce-108">Wechseln Sie zu Kostenbuchhaltung > Sachkontoeinstellung > Kostenbuchhaltungs-Sachkonto .</span><span class="sxs-lookup"><span data-stu-id="bdfce-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="bdfce-109">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="bdfce-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="bdfce-110">Klicken Sie Kontrolleinheiten an.</span><span class="sxs-lookup"><span data-stu-id="bdfce-110">Click Control units.</span></span>
+4. <span data-ttu-id="bdfce-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="bdfce-111">Click New.</span></span>
+5. <span data-ttu-id="bdfce-112">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="bdfce-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="bdfce-113">Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="bdfce-113">In the Dimension field, enter or select a value.</span></span>
+7. <span data-ttu-id="bdfce-114">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="bdfce-114">Click Save.</span></span>
+8. <span data-ttu-id="bdfce-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="bdfce-115">Click New.</span></span>
+9. <span data-ttu-id="bdfce-116">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="bdfce-116">In the Name field, type a value.</span></span>
+10. <span data-ttu-id="bdfce-117">Geben Sie im Feld Dimension einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="bdfce-117">In the Dimension field, enter or select a value.</span></span>
+11. <span data-ttu-id="bdfce-118">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="bdfce-118">Click Save.</span></span>
 

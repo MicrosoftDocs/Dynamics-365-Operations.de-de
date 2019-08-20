@@ -10,45 +10,45 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendPostDatedChecks, LedgerJournalTable, LedgerJournalTransDaily, LedgerTransVoucher
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e46b419ab613425ae2d758f80105ac94f1ec5cc2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6d935ec24d97ca76a088cbe41d57c12c6e8a6689
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565971"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841824"
 ---
-# <a name="settle-a-postdated-check-for-a-vendor"></a><span data-ttu-id="093eb-103">Ausgleichen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="093eb-103">Settle a postdated check for a vendor</span></span>
+# <a name="settle-a-postdated-check-for-a-vendor"></a><span data-ttu-id="737e4-103">Ausgleichen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="737e4-103">Settle a postdated check for a vendor</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="093eb-104">Gleichen Sie einen vordatierten Scheck aus, der an einen Kreditor ausgestellt wurde, wenn die Bank die Scheckbuchung ausgeglichen hat, nachdem der Scheck überfällig war und von der Bank verrechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="093eb-104">Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank.</span></span> 
+<span data-ttu-id="737e4-104">Gleichen Sie einen vordatierten Scheck aus, der an einen Kreditor ausgestellt wurde, wenn die Bank die Scheckbuchung ausgeglichen hat, nachdem der Scheck überfällig war und von der Bank verrechnet wurde.</span><span class="sxs-lookup"><span data-stu-id="737e4-104">Settle a postdated check issued to a vendor when the bank has cleared the check transaction after the check has been overdue and cleared by the bank.</span></span> 
 
-<span data-ttu-id="093eb-105">Schließen Sie folgende Prozeduren ab, bevor Sie diese starten:</span><span class="sxs-lookup"><span data-stu-id="093eb-105">Complete the following procedures before you start this one.</span></span>
+<span data-ttu-id="737e4-105">Schließen Sie folgende Prozeduren ab, bevor Sie diese starten:</span><span class="sxs-lookup"><span data-stu-id="737e4-105">Complete the following procedures before you start this one.</span></span>
 
-1) <span data-ttu-id="093eb-106">Einrichten von vordatierten Schecks</span><span class="sxs-lookup"><span data-stu-id="093eb-106">Set up postdated checks</span></span>
+1) <span data-ttu-id="737e4-106">Einrichten von vordatierten Schecks</span><span class="sxs-lookup"><span data-stu-id="737e4-106">Set up postdated checks</span></span>
 
-2) <span data-ttu-id="093eb-107">Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="093eb-107">Register and post a postdated check for a vendor</span></span>
+2) <span data-ttu-id="737e4-107">Erfassen und Buchen eines vordatierten Schecks für einen Kreditor</span><span class="sxs-lookup"><span data-stu-id="737e4-107">Register and post a postdated check for a vendor</span></span>
 
 
 
-<span data-ttu-id="093eb-108">Die Rolle dieser Prozedur ist "Finanzverwalter".</span><span class="sxs-lookup"><span data-stu-id="093eb-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="093eb-109">Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="093eb-109">This procedure uses the USMF demo company.</span></span>
+<span data-ttu-id="737e4-108">Die Rolle dieser Prozedur ist "Finanzverwalter".</span><span class="sxs-lookup"><span data-stu-id="737e4-108">The role of this procedure is Treasurer.</span></span> <span data-ttu-id="737e4-109">Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="737e4-109">This procedure uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="093eb-110">Wechseln Sie zu Kreditoren > Zahlungen > Vordatierte Schecks von Händler.</span><span class="sxs-lookup"><span data-stu-id="093eb-110">Go to Accounts payable > Payments > Vendor postdated checks.</span></span>
-2. <span data-ttu-id="093eb-111">Klicken Sie auf "Ausgleichen".</span><span class="sxs-lookup"><span data-stu-id="093eb-111">Click Settle.</span></span>
-3. <span data-ttu-id="093eb-112">Klicken Sie auf Verrechnungsposten ausgleichen.</span><span class="sxs-lookup"><span data-stu-id="093eb-112">Click Settle clearing entries.</span></span>
-    * <span data-ttu-id="093eb-113">Das Kreditorenkonto für Scheck-Transaktionen ausgleichen.</span><span class="sxs-lookup"><span data-stu-id="093eb-113">Settle the vendor account for the check transaction.</span></span>  
-4. <span data-ttu-id="093eb-114">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="093eb-114">Close the page.</span></span>
-5. <span data-ttu-id="093eb-115">Wechseln Sie zu "Hauptbuch" > "Journaleinträge" > "Allgemeine Erfassungen".</span><span class="sxs-lookup"><span data-stu-id="093eb-115">Go to General ledger > Journal entries > General journals.</span></span>
-6. <span data-ttu-id="093eb-116">Wählen Sie im Feld "Anzeigen" die Option "Alle" aus.</span><span class="sxs-lookup"><span data-stu-id="093eb-116">In the Show field, select 'All'.</span></span>
-7. <span data-ttu-id="093eb-117">Aktivieren oder deaktivieren Sie das vom Benutzer erstellte Kontrollkästchen Nur Anzeigen.</span><span class="sxs-lookup"><span data-stu-id="093eb-117">Select or clear the Show user-created only check box.</span></span>
-8. <span data-ttu-id="093eb-118">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="093eb-118">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="093eb-119">Klicken Sie auf Positionen.</span><span class="sxs-lookup"><span data-stu-id="093eb-119">Click Lines.</span></span>
-10. <span data-ttu-id="093eb-120">Klicken Sie auf Beleg.</span><span class="sxs-lookup"><span data-stu-id="093eb-120">Click Voucher.</span></span>
-11. <span data-ttu-id="093eb-121">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="093eb-121">Close the page.</span></span>
+1. <span data-ttu-id="737e4-110">Wechseln Sie zu Kreditoren > Zahlungen > Vordatierte Schecks von Händler.</span><span class="sxs-lookup"><span data-stu-id="737e4-110">Go to Accounts payable > Payments > Vendor postdated checks.</span></span>
+2. <span data-ttu-id="737e4-111">Klicken Sie auf "Ausgleichen".</span><span class="sxs-lookup"><span data-stu-id="737e4-111">Click Settle.</span></span>
+3. <span data-ttu-id="737e4-112">Klicken Sie auf Verrechnungsposten ausgleichen.</span><span class="sxs-lookup"><span data-stu-id="737e4-112">Click Settle clearing entries.</span></span>
+    * <span data-ttu-id="737e4-113">Das Kreditorenkonto für Scheck-Transaktionen ausgleichen.</span><span class="sxs-lookup"><span data-stu-id="737e4-113">Settle the vendor account for the check transaction.</span></span>  
+4. <span data-ttu-id="737e4-114">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="737e4-114">Close the page.</span></span>
+5. <span data-ttu-id="737e4-115">Wechseln Sie zu "Hauptbuch" > "Journaleinträge" > "Allgemeine Erfassungen".</span><span class="sxs-lookup"><span data-stu-id="737e4-115">Go to General ledger > Journal entries > General journals.</span></span>
+6. <span data-ttu-id="737e4-116">Wählen Sie im Feld "Anzeigen" die Option "Alle" aus.</span><span class="sxs-lookup"><span data-stu-id="737e4-116">In the Show field, select 'All'.</span></span>
+7. <span data-ttu-id="737e4-117">Aktivieren oder deaktivieren Sie das vom Benutzer erstellte Kontrollkästchen Nur Anzeigen.</span><span class="sxs-lookup"><span data-stu-id="737e4-117">Select or clear the Show user-created only check box.</span></span>
+8. <span data-ttu-id="737e4-118">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="737e4-118">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="737e4-119">Klicken Sie auf Positionen.</span><span class="sxs-lookup"><span data-stu-id="737e4-119">Click Lines.</span></span>
+10. <span data-ttu-id="737e4-120">Klicken Sie auf Beleg.</span><span class="sxs-lookup"><span data-stu-id="737e4-120">Click Voucher.</span></span>
+11. <span data-ttu-id="737e4-121">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="737e4-121">Close the page.</span></span>
 

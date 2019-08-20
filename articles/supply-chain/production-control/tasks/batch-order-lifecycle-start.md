@@ -10,85 +10,85 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdBOM, PmfProdCoBy, ProdParmCostEstimation, ProdCalcTrans, ProdParmRelease, ProdSchedule, ProdRouteJob, ProdParmStartUp, ProdJournalTransBOM, ProdJournalTransRoute
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: josaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6484c1954ff4cc600938adb07b5384f1edce8bf7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7a1803822bebf58a3370afe8c5dc9f519c65917d
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545901"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1843816"
 ---
-# <a name="batch-order-lifecycle-from-create-to-start"></a><span data-ttu-id="b7b7c-103">Chargenauftragslebenszyklus von der Erstellung bis zum Start</span><span class="sxs-lookup"><span data-stu-id="b7b7c-103">Batch order lifecycle from create to start</span></span>
+# <a name="batch-order-lifecycle-from-create-to-start"></a><span data-ttu-id="a7f15-103">Chargenauftragslebenszyklus von der Erstellung bis zum Start</span><span class="sxs-lookup"><span data-stu-id="a7f15-103">Batch order lifecycle from create to start</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b7b7c-104">Diese Prozedur führt Sie durch den ersten Teils des Lebenszyklus eines Chargenauftrags.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-104">This procedure takes you through the first part of the life cycle of a batch order.</span></span>
+<span data-ttu-id="a7f15-104">Diese Prozedur führt Sie durch den ersten Teils des Lebenszyklus eines Chargenauftrags.</span><span class="sxs-lookup"><span data-stu-id="a7f15-104">This procedure takes you through the first part of the life cycle of a batch order.</span></span>
 
-<span data-ttu-id="b7b7c-105">Von der Erstellung, über die Vorkalkulation und vom Produktionseinzelvorgang zum tatsächlichen Beginn eines Chargenauftrages.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-105">From creation, cost estimation, and over production job scheduling to the actual start of a batch order.</span></span>
-
-
-
-<span data-ttu-id="b7b7c-106">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-106">The demo data company used to create this procedure is USMF.</span></span> 
+<span data-ttu-id="a7f15-105">Von der Erstellung, über die Vorkalkulation und vom Produktionseinzelvorgang zum tatsächlichen Beginn eines Chargenauftrages.</span><span class="sxs-lookup"><span data-stu-id="a7f15-105">From creation, cost estimation, and over production job scheduling to the actual start of a batch order.</span></span>
 
 
 
-<span data-ttu-id="b7b7c-107">Die Voraussetzungen für die Ausführung der Prozedur mit einem anderen Dataset sind ein freigegebenes Produkt mit einer aktiven Formel und Arbeitsplanversion.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-107">The prerequisites for running the procedure with another dataset are a released product with an active formula and route version.</span></span>
+<span data-ttu-id="a7f15-106">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="a7f15-106">The demo data company used to create this procedure is USMF.</span></span> 
 
 
-## <a name="create-a-batch-order"></a><span data-ttu-id="b7b7c-108">Erstellen eines Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="b7b7c-108">Create a batch order</span></span>
-1. <span data-ttu-id="b7b7c-109">Welchsen Sie zu "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-109">Go to All production orders.</span></span>
-2. <span data-ttu-id="b7b7c-110">Klicken Sie auf "Neuer Chargenauftrag".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-110">Click New batch order.</span></span>
-3. <span data-ttu-id="b7b7c-111">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-111">In the Item number field, enter or select a value.</span></span>
-4. <span data-ttu-id="b7b7c-112">Klicken Sie auf Erstellen.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-112">Click Create.</span></span>
-5. <span data-ttu-id="b7b7c-113">Verwenden Sie den Schnellfilter, um im Feld "Produktion" nach dem Wert "b" zu filtern.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-113">Use the Quick Filter to filter on the Production field with a value of 'b'.</span></span>
 
-## <a name="view-production-formula-and-expected-co-products"></a><span data-ttu-id="b7b7c-114">Anzeigen von Produktionsformel und erwarteten Kuppelprodukten</span><span class="sxs-lookup"><span data-stu-id="b7b7c-114">View production formula and expected co-products</span></span>
-1. <span data-ttu-id="b7b7c-115">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-115">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="b7b7c-116">Klicken Sie auf Formel.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-116">Click Formula.</span></span>
-3. <span data-ttu-id="b7b7c-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-117">Close the page.</span></span>
-4. <span data-ttu-id="b7b7c-118">Klicken Sie auf Kuppelprodukte.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-118">Click Co-products.</span></span>
-5. <span data-ttu-id="b7b7c-119">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-119">Close the page.</span></span>
+<span data-ttu-id="a7f15-107">Die Voraussetzungen für die Ausführung der Prozedur mit einem anderen Dataset sind ein freigegebenes Produkt mit einer aktiven Formel und Arbeitsplanversion.</span><span class="sxs-lookup"><span data-stu-id="a7f15-107">The prerequisites for running the procedure with another dataset are a released product with an active formula and route version.</span></span>
 
-## <a name="estimate-the-batch-order"></a><span data-ttu-id="b7b7c-120">Vorkalkulation des Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="b7b7c-120">Estimate the batch order</span></span>
-1. <span data-ttu-id="b7b7c-121">Klicken Sie auf "Vorkalkulation".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-121">Click Estimate.</span></span>
-2. <span data-ttu-id="b7b7c-122">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-122">Click OK.</span></span>
-3. <span data-ttu-id="b7b7c-123">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-123">On the Action Pane, click Manage costs.</span></span>
-4. <span data-ttu-id="b7b7c-124">Klicken Sie auf Berechnungsdetails anzeigen</span><span class="sxs-lookup"><span data-stu-id="b7b7c-124">Click View calculation details.</span></span>
-5. <span data-ttu-id="b7b7c-125">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-125">Close the page.</span></span>
 
-## <a name="release-the-batch-order"></a><span data-ttu-id="b7b7c-126">Freigeben des Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="b7b7c-126">Release the batch order</span></span>
-1. <span data-ttu-id="b7b7c-127">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-127">On the Action Pane, click Production order.</span></span>
-2. <span data-ttu-id="b7b7c-128">Klicken Sie auf "Freigabe".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-128">Click Release.</span></span>
-3. <span data-ttu-id="b7b7c-129">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-129">Click OK.</span></span>
+## <a name="create-a-batch-order"></a><span data-ttu-id="a7f15-108">Erstellen eines Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="a7f15-108">Create a batch order</span></span>
+1. <span data-ttu-id="a7f15-109">Welchsen Sie zu "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="a7f15-109">Go to All production orders.</span></span>
+2. <span data-ttu-id="a7f15-110">Klicken Sie auf "Neuer Chargenauftrag".</span><span class="sxs-lookup"><span data-stu-id="a7f15-110">Click New batch order.</span></span>
+3. <span data-ttu-id="a7f15-111">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="a7f15-111">In the Item number field, enter or select a value.</span></span>
+4. <span data-ttu-id="a7f15-112">Klicken Sie auf Erstellen.</span><span class="sxs-lookup"><span data-stu-id="a7f15-112">Click Create.</span></span>
+5. <span data-ttu-id="a7f15-113">Verwenden Sie den Schnellfilter, um im Feld "Produktion" nach dem Wert "b" zu filtern.</span><span class="sxs-lookup"><span data-stu-id="a7f15-113">Use the Quick Filter to filter on the Production field with a value of 'b'.</span></span>
 
-## <a name="schedule-production-jobs"></a><span data-ttu-id="b7b7c-130">Planen von Produktionseinzelvorgängen</span><span class="sxs-lookup"><span data-stu-id="b7b7c-130">Schedule production jobs</span></span>
-1. <span data-ttu-id="b7b7c-131">Klicken Sie im Aktivitätsbereich auf "Zeitplan".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-131">On the Action Pane, click Schedule.</span></span>
-2. <span data-ttu-id="b7b7c-132">Klicken Sie auf Einzelvorgänge planen.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-132">Click Schedule jobs.</span></span>
-3. <span data-ttu-id="b7b7c-133">Wählen Sie "Nein" im Feld "Begrenzte Kapazität" aus.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-133">Select No in the Finite capacity field.</span></span>
-4. <span data-ttu-id="b7b7c-134">Wählen Sie "Nein" im Feld "Begrenztes Material" aus.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-134">Select No in the Finite material field.</span></span>
-5. <span data-ttu-id="b7b7c-135">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-135">Click OK.</span></span>
-6. <span data-ttu-id="b7b7c-136">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-136">On the Action Pane, click Production order.</span></span>
-7. <span data-ttu-id="b7b7c-137">Klicken Sie auf "Alle Einzelvorgänge".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-137">Click All jobs.</span></span>
-8. <span data-ttu-id="b7b7c-138">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-138">Close the page.</span></span>
+## <a name="view-production-formula-and-expected-co-products"></a><span data-ttu-id="a7f15-114">Anzeigen von Produktionsformel und erwarteten Kuppelprodukten</span><span class="sxs-lookup"><span data-stu-id="a7f15-114">View production formula and expected co-products</span></span>
+1. <span data-ttu-id="a7f15-115">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="a7f15-115">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="a7f15-116">Klicken Sie auf Formel.</span><span class="sxs-lookup"><span data-stu-id="a7f15-116">Click Formula.</span></span>
+3. <span data-ttu-id="a7f15-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-117">Close the page.</span></span>
+4. <span data-ttu-id="a7f15-118">Klicken Sie auf Kuppelprodukte.</span><span class="sxs-lookup"><span data-stu-id="a7f15-118">Click Co-products.</span></span>
+5. <span data-ttu-id="a7f15-119">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-119">Close the page.</span></span>
 
-## <a name="start-the-batch-order"></a><span data-ttu-id="b7b7c-139">Starten des Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="b7b7c-139">Start the batch order</span></span>
-1. <span data-ttu-id="b7b7c-140">Klicken Sie auf "Start".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-140">Click Start.</span></span>
-2. <span data-ttu-id="b7b7c-141">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-141">Click the General tab.</span></span>
-3. <span data-ttu-id="b7b7c-142">Wählen Sie im Feld "Kommissionierliste jetzt buchen" die Antwort "Nein" aus.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-142">Select No in the Post picking list now field.</span></span>
-4. <span data-ttu-id="b7b7c-143">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-143">Click OK.</span></span>
-5. <span data-ttu-id="b7b7c-144">Klicken Sie im Aktivitätsbereich auf "Anzeigen".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-144">On the Action Pane, click View.</span></span>
-6. <span data-ttu-id="b7b7c-145">Klicken Sie auf "Kommissionierliste".</span><span class="sxs-lookup"><span data-stu-id="b7b7c-145">Click Picking list.</span></span>
-7. <span data-ttu-id="b7b7c-146">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-146">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="b7b7c-147">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-147">Close the page.</span></span>
-9. <span data-ttu-id="b7b7c-148">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-148">Close the page.</span></span>
-10. <span data-ttu-id="b7b7c-149">Klicken Sie auf Arbeitsplanliste.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-149">Click Route card.</span></span>
-11. <span data-ttu-id="b7b7c-150">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-150">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="b7b7c-151">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-151">Close the page.</span></span>
-13. <span data-ttu-id="b7b7c-152">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b7b7c-152">Close the page.</span></span>
+## <a name="estimate-the-batch-order"></a><span data-ttu-id="a7f15-120">Vorkalkulation des Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="a7f15-120">Estimate the batch order</span></span>
+1. <span data-ttu-id="a7f15-121">Klicken Sie auf "Vorkalkulation".</span><span class="sxs-lookup"><span data-stu-id="a7f15-121">Click Estimate.</span></span>
+2. <span data-ttu-id="a7f15-122">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a7f15-122">Click OK.</span></span>
+3. <span data-ttu-id="a7f15-123">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="a7f15-123">On the Action Pane, click Manage costs.</span></span>
+4. <span data-ttu-id="a7f15-124">Klicken Sie auf Berechnungsdetails anzeigen</span><span class="sxs-lookup"><span data-stu-id="a7f15-124">Click View calculation details.</span></span>
+5. <span data-ttu-id="a7f15-125">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-125">Close the page.</span></span>
+
+## <a name="release-the-batch-order"></a><span data-ttu-id="a7f15-126">Freigeben des Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="a7f15-126">Release the batch order</span></span>
+1. <span data-ttu-id="a7f15-127">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="a7f15-127">On the Action Pane, click Production order.</span></span>
+2. <span data-ttu-id="a7f15-128">Klicken Sie auf "Freigabe".</span><span class="sxs-lookup"><span data-stu-id="a7f15-128">Click Release.</span></span>
+3. <span data-ttu-id="a7f15-129">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a7f15-129">Click OK.</span></span>
+
+## <a name="schedule-production-jobs"></a><span data-ttu-id="a7f15-130">Planen von Produktionseinzelvorgängen</span><span class="sxs-lookup"><span data-stu-id="a7f15-130">Schedule production jobs</span></span>
+1. <span data-ttu-id="a7f15-131">Klicken Sie im Aktivitätsbereich auf "Zeitplan".</span><span class="sxs-lookup"><span data-stu-id="a7f15-131">On the Action Pane, click Schedule.</span></span>
+2. <span data-ttu-id="a7f15-132">Klicken Sie auf Einzelvorgänge planen.</span><span class="sxs-lookup"><span data-stu-id="a7f15-132">Click Schedule jobs.</span></span>
+3. <span data-ttu-id="a7f15-133">Wählen Sie "Nein" im Feld "Begrenzte Kapazität" aus.</span><span class="sxs-lookup"><span data-stu-id="a7f15-133">Select No in the Finite capacity field.</span></span>
+4. <span data-ttu-id="a7f15-134">Wählen Sie "Nein" im Feld "Begrenztes Material" aus.</span><span class="sxs-lookup"><span data-stu-id="a7f15-134">Select No in the Finite material field.</span></span>
+5. <span data-ttu-id="a7f15-135">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a7f15-135">Click OK.</span></span>
+6. <span data-ttu-id="a7f15-136">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="a7f15-136">On the Action Pane, click Production order.</span></span>
+7. <span data-ttu-id="a7f15-137">Klicken Sie auf "Alle Einzelvorgänge".</span><span class="sxs-lookup"><span data-stu-id="a7f15-137">Click All jobs.</span></span>
+8. <span data-ttu-id="a7f15-138">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-138">Close the page.</span></span>
+
+## <a name="start-the-batch-order"></a><span data-ttu-id="a7f15-139">Starten des Chargenauftrags</span><span class="sxs-lookup"><span data-stu-id="a7f15-139">Start the batch order</span></span>
+1. <span data-ttu-id="a7f15-140">Klicken Sie auf "Start".</span><span class="sxs-lookup"><span data-stu-id="a7f15-140">Click Start.</span></span>
+2. <span data-ttu-id="a7f15-141">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="a7f15-141">Click the General tab.</span></span>
+3. <span data-ttu-id="a7f15-142">Wählen Sie im Feld "Kommissionierliste jetzt buchen" die Antwort "Nein" aus.</span><span class="sxs-lookup"><span data-stu-id="a7f15-142">Select No in the Post picking list now field.</span></span>
+4. <span data-ttu-id="a7f15-143">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="a7f15-143">Click OK.</span></span>
+5. <span data-ttu-id="a7f15-144">Klicken Sie im Aktivitätsbereich auf "Anzeigen".</span><span class="sxs-lookup"><span data-stu-id="a7f15-144">On the Action Pane, click View.</span></span>
+6. <span data-ttu-id="a7f15-145">Klicken Sie auf "Kommissionierliste".</span><span class="sxs-lookup"><span data-stu-id="a7f15-145">Click Picking list.</span></span>
+7. <span data-ttu-id="a7f15-146">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="a7f15-146">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="a7f15-147">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-147">Close the page.</span></span>
+9. <span data-ttu-id="a7f15-148">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-148">Close the page.</span></span>
+10. <span data-ttu-id="a7f15-149">Klicken Sie auf Arbeitsplanliste.</span><span class="sxs-lookup"><span data-stu-id="a7f15-149">Click Route card.</span></span>
+11. <span data-ttu-id="a7f15-150">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="a7f15-150">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="a7f15-151">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-151">Close the page.</span></span>
+13. <span data-ttu-id="a7f15-152">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="a7f15-152">Close the page.</span></span>
 

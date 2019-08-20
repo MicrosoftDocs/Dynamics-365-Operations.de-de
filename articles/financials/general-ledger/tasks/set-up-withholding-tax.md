@@ -1,53 +1,51 @@
 ---
 title: Quellensteuer einrichten
-description: Die Quellensteuer ist eine Steuer für Kreditoren, bei der keine Mehrwertsteuerbuchungen entstehen.
+description: In diesem Thema wird erläutert, wie die Quellensteuer eingerichtet wird.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/11/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 382b6332665af2491563960a75d498a4f007aba8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 10e7018c79e54841d0729636b08ad475a94d20d5
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562787"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1834733"
 ---
-# <a name="set-up-withholding-tax"></a><span data-ttu-id="365ec-103">Quellensteuer einrichten</span><span class="sxs-lookup"><span data-stu-id="365ec-103">Set up withholding tax</span></span>
+# <a name="set-up-withholding-tax"></a><span data-ttu-id="21e53-103">Quellensteuer einrichten</span><span class="sxs-lookup"><span data-stu-id="21e53-103">Set up withholding tax</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="365ec-104">Die Quellensteuer ist eine Steuer für Kreditoren, bei der keine Mehrwertsteuerbuchungen entstehen.</span><span class="sxs-lookup"><span data-stu-id="365ec-104">Withholding tax is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="365ec-105">Die Quellensteuer, die für Kreditorenzahlungen berechnet wird, ist eine Verbindlichkeit.</span><span class="sxs-lookup"><span data-stu-id="365ec-105">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="365ec-106">Daher sind nur Bilanz- oder Verbindlichkeitskonten gültige Kontenarten für das Buchen der Quellensteuer.</span><span class="sxs-lookup"><span data-stu-id="365ec-106">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="365ec-107">Diese Aufgabenanleitung veranschaulicht, wie die Quellensteuer eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="365ec-107">This task guide demonstrates how to set up withholding tax.</span></span>
+<span data-ttu-id="21e53-104">In diesem Thema wird erläutert, wie die Quellensteuer eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="21e53-104">This topic explains how to set up withholding tax.</span></span> <span data-ttu-id="21e53-105">Die *Quellensteuer* ist eine Steuer für Kreditoren, bei der keine Mehrwertsteuerbuchungen entstehen.</span><span class="sxs-lookup"><span data-stu-id="21e53-105">*Withholding tax* is a tax on vendors that does not create sales tax transactions.</span></span> <span data-ttu-id="21e53-106">Die Quellensteuer, die für Kreditorenzahlungen berechnet wird, ist eine Verbindlichkeit.</span><span class="sxs-lookup"><span data-stu-id="21e53-106">Withholding tax that is calculated on vendor payments is a liability.</span></span> <span data-ttu-id="21e53-107">Daher sind nur Bilanz- oder Verbindlichkeitskonten gültige Kontenarten für das Buchen der Quellensteuer.</span><span class="sxs-lookup"><span data-stu-id="21e53-107">Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax.</span></span> <span data-ttu-id="21e53-108">Diese Aufgabenanleitung veranschaulicht, wie die Quellensteuer eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="21e53-108">This task guide demonstrates how to set up withholding tax.</span></span>
 
-1. <span data-ttu-id="365ec-108">Wechseln Sie zu "Steuer" Wechseln Sie zu Steuer > Indirekte Steuern > Quellensteuer > Quellensteuercodes.</span><span class="sxs-lookup"><span data-stu-id="365ec-108">Go to Tax > Indirect taxes > Withholding tax > Withholding tax codes.</span></span>
-2. <span data-ttu-id="365ec-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="365ec-109">Click New.</span></span>
-3. <span data-ttu-id="365ec-110">Geben Sie im Feld "Quellensteuercode" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="365ec-110">In the Withholding tax code field, type a value.</span></span>
-4. <span data-ttu-id="365ec-111">Geben Sie im Feld "Quellensteuername" den Namen des Quellensteuercodes ein.</span><span class="sxs-lookup"><span data-stu-id="365ec-111">In the Withholding tax name field, enter the name of the withholding tax code.</span></span>
-5. <span data-ttu-id="365ec-112">Wählen Sie im Feld "Hauptkonto" das Hauptkonto zum Buchen der Quellensteuervebindlichkeiten aus.</span><span class="sxs-lookup"><span data-stu-id="365ec-112">In the Main account field, select the main account for posting the withholding tax liability.</span></span>
-6. <span data-ttu-id="365ec-113">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="365ec-113">Click Save.</span></span>
-7. <span data-ttu-id="365ec-114">Klicken Sie auf "Werte".</span><span class="sxs-lookup"><span data-stu-id="365ec-114">Click Values.</span></span>
-8. <span data-ttu-id="365ec-115">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="365ec-115">In the list, mark the selected row.</span></span>
-9. <span data-ttu-id="365ec-116">Geben Sie im Feld "Wert" einen Prozentsatz ein, der für die Berechnung der Quellensteuer verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="365ec-116">In the Value field, enter a percentage used for the calculation of the withholding tax.</span></span>
-10. <span data-ttu-id="365ec-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="365ec-117">Click Save.</span></span>
-11. <span data-ttu-id="365ec-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="365ec-118">Close the page.</span></span>
-12. <span data-ttu-id="365ec-119">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="365ec-119">Click Save.</span></span>
-13. <span data-ttu-id="365ec-120">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="365ec-120">Close the page.</span></span>
-14. <span data-ttu-id="365ec-121">Wechseln Sie zu "Steuer" > "Indirekte Steuern" > "Quellensteuer" > "Quellensteuerngruppen".</span><span class="sxs-lookup"><span data-stu-id="365ec-121">Go to Tax > Indirect taxes > Withholding tax > Withholding tax groups.</span></span>
-15. <span data-ttu-id="365ec-122">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="365ec-122">Click New.</span></span>
-16. <span data-ttu-id="365ec-123">Geben Sie im Feld "Quellensteuergruppe" den Bezeichner der Quellensteuergruppe ein.</span><span class="sxs-lookup"><span data-stu-id="365ec-123">In the Withholding tax group field, enter the identifier of the withholding tax group.</span></span>
-17. <span data-ttu-id="365ec-124">Geben Sie im Feld "Beschreibung" den Namen Quellensteuergruppe ein.</span><span class="sxs-lookup"><span data-stu-id="365ec-124">In the Description field, enter the name of the withholding tax group.</span></span>
-18. <span data-ttu-id="365ec-125">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="365ec-125">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="365ec-126">Wählen Sie im Feld "Quellensteuercode" den Quellensteuercode aus.</span><span class="sxs-lookup"><span data-stu-id="365ec-126">In the Withholding tax code field, select the withholding tax code.</span></span>
-20. <span data-ttu-id="365ec-127">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="365ec-127">In the list, click the link in the selected row.</span></span>
-21. <span data-ttu-id="365ec-128">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="365ec-128">Click Save.</span></span>
+1. <span data-ttu-id="21e53-109">Wechseln Sie zu **Navigationsbereich > Module > Steuer > Indirekte Steuern > Quellensteuer > Quellensteuercodes**.</span><span class="sxs-lookup"><span data-stu-id="21e53-109">Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax codes**.</span></span>
+2. <span data-ttu-id="21e53-110">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="21e53-110">Select **New**.</span></span>
+3. <span data-ttu-id="21e53-111">Geben Sie im Feld **Quellensteuercode** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="21e53-111">In the **Withholding tax code** field, type a value.</span></span>
+4. <span data-ttu-id="21e53-112">Geben Sie im Feld **Quellensteuername** den Namen des Quellensteuercodes ein.</span><span class="sxs-lookup"><span data-stu-id="21e53-112">In the **Withholding tax name** field, enter the name of the withholding tax code.</span></span>
+5. <span data-ttu-id="21e53-113">Wählen Sie im Feld **Hauptkonto** das Hauptkonto zum Buchen der Quellensteuerverbindlichkeiten aus.</span><span class="sxs-lookup"><span data-stu-id="21e53-113">In the **Main account** field, select the main account for posting the withholding tax liability.</span></span>
+6. <span data-ttu-id="21e53-114">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="21e53-114">Select **Save**.</span></span>
+7. <span data-ttu-id="21e53-115">Wählen Sie **Werte** aus, und markieren Sie den gewünschten Datensatz in der Liste.</span><span class="sxs-lookup"><span data-stu-id="21e53-115">Select **Values** and mark the desired record in the list.</span></span>
+8. <span data-ttu-id="21e53-116">Geben Sie im Feld **Wert** einen Prozentsatz ein, der für die Berechnung der Quellensteuer verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="21e53-116">In the **Value** field, enter a percentage used for the calculation of the withholding tax.</span></span>
+9. <span data-ttu-id="21e53-117">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="21e53-117">Select **Save**.</span></span>
+10. <span data-ttu-id="21e53-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="21e53-118">Close the page.</span></span>
+11. <span data-ttu-id="21e53-119">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="21e53-119">Select **Save**.</span></span>
+12. <span data-ttu-id="21e53-120">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="21e53-120">Close the page.</span></span>
+13. <span data-ttu-id="21e53-121">Wechseln Sie zu **Navigationsbereich > Module > Steuer > Indirekte Steuern > Quellensteuer > Quellensteuergruppen**.</span><span class="sxs-lookup"><span data-stu-id="21e53-121">Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax groups**.</span></span>
+14. <span data-ttu-id="21e53-122">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="21e53-122">Select **New**.</span></span>
+15. <span data-ttu-id="21e53-123">Geben Sie im Feld **Quellensteuergruppe** den Bezeichner der Quellensteuergruppe ein.</span><span class="sxs-lookup"><span data-stu-id="21e53-123">In the **Withholding tax group** field, enter the identifier of the withholding tax group.</span></span>
+16. <span data-ttu-id="21e53-124">Geben Sie im Feld **Beschreibung** den Namen der Quellensteuergruppe ein.</span><span class="sxs-lookup"><span data-stu-id="21e53-124">In the **Description** field, enter the name of the withholding tax group.</span></span>
+17. <span data-ttu-id="21e53-125">Wählen Sie im Feld **Quellensteuercode** den Quellensteuercode aus.</span><span class="sxs-lookup"><span data-stu-id="21e53-125">In the **Withholding tax code** field, select the withholding tax code.</span></span>
+18. <span data-ttu-id="21e53-126">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="21e53-126">Select **Save**.</span></span>
+19. <span data-ttu-id="21e53-127">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="21e53-127">Close the page.</span></span>
 
