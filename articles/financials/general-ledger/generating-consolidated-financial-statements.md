@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 76e675373212195cbe3f6cf43d128b2104f92fc6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557730"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863699"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 
@@ -49,11 +49,11 @@ Wie der konsolidierte Bericht in der folgenden Abbildung zeigt, können Sie jede
 
 Sie können auch eine mehrstufige Berichtsbaumstruktur erstellen, die so viele Ebenen umfasst, wie Sie benötigen. Die folgende Abbildung zeigt eine mehrstufige Berichtsbaumstruktur-Definition, die Zusammenfassungen nach weltweiter Funktion aufweist.
 
-![Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Region](./media/multilevel-reporting-tree-definition-roll-ups%20-worldwide-region.png "Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Region")
+![Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Region")
 
 Die folgende Abbildung zeigt eine mehrstufige Berichtsbaumstruktur-Definition, die Zusammenfassungen nach Funktion aufweist.
 
-![Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Funktion](./media/multilevel-reporting-tree-definition-roll-ups%20-by-function.png "Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Funktion")
+![Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Funktion")
 
 ### <a name="viewing-companies-side-by-side"></a>Unternehmen nebeneinander anzeigen
 Zahlreiche Debitoren bevorzugen Berichte, in denen Unternehmen nebeneinander angezeigt werden, und in denen eine Spalte das konsolidierte Gesamtergebnis zeigt. Dieses Format ist einfach zu erreichen, nachdem Sie die Berichtsbaumstruktur erstellt haben. Hierbei gelten die allgemeinen Schritte, um Unternehmen in konsolidierten Finanzaufstellungen nebeneinander anzuzeigen.
@@ -98,7 +98,7 @@ Geben Sie in der Berichtsbaumstruktur-Definition den Anteil der Eigentümerschaf
 > [!NOTE]
 > Sie können diesen Anteil der Eigentümerschaft auf jede Berichtseinheit anwenden, nicht nur auf Unternehmensebene. 
 
-![Verwenden des Berichtsstruktur-Definitionsanteils](./media/Using-reporting%20tree-definition-percentage.png "Verwenden des Berichtsstruktur-Definitionsanteils")
+![Verwenden des Berichtsstruktur-Definitionsanteils](./media/Using-reporting-tree-definition-percentage.png "Verwenden des Berichtsstruktur-Definitionsanteils")
 
 Wenn der Bericht generiert wird, zeigt der Bericht für Contoso Deutschland 100 Prozent des Verkaufsbetrags und 80 Prozent des Betrags wird der konsolidierten Ebene für Verkäufe zugewiesen und zusammengefasst.
 

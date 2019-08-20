@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d6f6e94fd8e7ddf92e89fedfab09ef0684505819
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 318c6edc03153e02c2c4f23b07f33e8d6ebe9737
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551836"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863723"
 ---
 # <a name="modify-row-definition-cells"></a>Ändern von Zeilendefinitionszellen
 
@@ -402,7 +402,7 @@ Die Zelle **Mit Finanzdimensionen verknüpfen** enthält Verknüpfungen zu den F
 2. Doppelklicken Sie auf eine Zelle in der Spalte **Verknüpfen mit Finanzdimensionen**.
 3. Doppelklicken Sie im Dialogfeld **Dimensionen** auf eine Zelle unter dem Dimensionsnamen.
 4. Wählen Sie im Dialogfeld für die Dimension **Einzelwert oder Bereich** aus.
-5. Geben Sie im Feld **Von** die erste Dimension ein, oder klicken Sie auf ![Durchsuchen](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
+5. Geben Sie im Feld **Von** die erste Dimension ein, oder klicken Sie auf ![Durchsuchen](media/browse.gif "Durchsuchen"), um nach verfügbaren Dimensionen zu suchen. Um einen Bereich von Dimensionen eingeben, geben Sie die Enddimension im Feld **Bis** ein.
 6. Klicken Sie auf **OK**, um das Dialogfeld für die Dimension zu schließen. Im Dialogfeld **Dimensionen** wird die aktualisierte Dimension oder der Bereich angezeigt.
 7. Klicken Sie auf **OK**, um das Dialogfelds **Dimensionen** zu schließen.
 
@@ -479,7 +479,7 @@ In der folgenden Tabelle werden die Felder im Dialogfeld **Dimensionen** beschri
 
 | Element                | Beschreibung |
 |---------------------|-------------|
-| Einzeln oder Bereich | Geben Sie im Feld **Von** den Namen eines Kontos ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** ![Durchsuchen](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Durchsuchen"), um das Konto zu suchen. Um einen Bereich auswählen, geben Sie einen Wert in das Feld **Bis** ein, oder wählen Sie einen Wert aus. |
+| Einzeln oder Bereich | Geben Sie im Feld **Von** den Namen eines Kontos ein, oder klicken Sie auf die Schaltfläche **Durchsuchen** ![Durchsuchen](media/browse.gif "Durchsuchen"), um das Konto zu suchen. Um einen Bereich auswählen, geben Sie einen Wert in das Feld **Bis** ein, oder wählen Sie einen Wert aus. |
 | Dimensionswertsatz | Geben Sie im Feld **Name** den Namen eines Dimensionswertsatzes ein. Um einen Satz, zu erstellen, zu ändern, zu kopieren oder zu löschen, klicken Sie auf **Dimensionswertsätze verwalten**. Das **Formel**-Feld wird mit der Formel aus der Zelle **Mit Finanzdimensionen verknüpfen** für diesen Dimensionswertsatz aufgefüllt, der in der Zeilendefinition festgelegt ist. |
 | Summe Konten   | Geben Sie im Feld **Name** eine Dimension der Summenkonten ein oder suchen Sie danach. Das **Formel**-Feld wird mit der Formel in der Zelle **Mit Finanzdimensionen verknüpfen** für diesen Summenkonto aufgefüllt, das in der Berichtsdefinition festgelegt ist. |
 
