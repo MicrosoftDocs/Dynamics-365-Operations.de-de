@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ba01fe7ad3e4326e8ab52b78220d3ba79e94af7c
-ms.sourcegitcommit: 51dc11919fcb2324482b48cc4ce4484945ade803
+ms.openlocfilehash: a33212acce6bf53b1077e54b9556e4d5e933519c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624310"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849331"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -59,19 +59,22 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 |      2019. April          |   10.0.1      |    Russische Föderation     |Änderungen bei der Transportsteuererklärung ab 2019  |
 |      2019. April            |   10.0.1      | Ungarn      |  Ungarn: Online-Fakturierung v.1.1 2019 in Microsoft Dynamics 365 for Finance and Operations  |
 |      Mai 2019            |   10.0.2      | Brasilien      |   SPED ECD Layout 7   |
-|      Ausstehend            |   10.0.3      | Brasilien      |   NF-e neues NT 2018.005 - v.1.20   |
-|      Ausstehend            |   10.0.3      | Brasilien      |   SPED ECD Layout 7   |
-|      Ausstehend            |   10.0.3      | Brasilien      |   SPED ECF – Layout 5 für 2019   |
-|      Ausstehend            |   10.0.3      | Litauen    |   i.SAF-Bericht ermöglicht es Benutzern, System-Mehrwertsteuercodes in Zuordnung zu gesetzlichen Steuercodes zu definieren    |
-|      Ausstehend            |   10.0.3      | Polen     |   SAF-Rechnungen (JPK_FA) v.2 ab 1. Juli 2019  |
-|      Ausstehend            |   10.0.3      | Brasilien   |   ICMS-Steuerdokumentregulierungen aktivieren Tabelle 5.2   |
-|      Ausstehend            |   10.0.3      | Brasilien    |   NF-e-Verordnung 54.308/18 (RS)   |
-  | Ausstehend            |   10.0.4      | Brasilien    |   Eingehendes Steuerdokument 66   |
-   | Ausstehend            |   10.0.4      | Brasilien    |   NF-e und NFC-e - Lösung 13/2019 und Verordnung SUCIEF 55/2019- - RJ neue Bedingungen für ausgenommen Tags-Ausgaben in NF-e.   |
-   | Ausstehend            |   10.0.4      | Indien   |   Anzeige des Ortes der Lieferung und des Bundeslandes in der GST-Steuer-Rechnung  |
-   | Ausstehend            |   10.0.4      | Mexiko   |  DIOT-Drittanbietermeldung - Änderungen im Layout 2019   |
-   | Ausstehend            |   10.0.4      | Brasilien    |   NF-e ICMS-ST -  Verordnung CAT 42/18 für SP Status - CAT 42/18
-   | Ausstehend            |   10.0.4      | Brasilien    |   NF-e-Verordnung 54.308/18 - RS NF   |
+|      2019. Juni            |   10.0.3      | Brasilien      |   NF-e neues NT 2018.005 - v.1.20   |
+|      2019. Juni            |   10.0.3      | Brasilien      |   SPED ECD Layout 7   |
+|      2019. Juni            |   10.0.3      | Brasilien      |   SPED ECF – Layout 5 für 2019   |
+|      2019. Juni            |   10.0.3      | Litauen    |   i.SAF-Bericht ermöglicht es Benutzern, System-Mehrwertsteuercodes in Zuordnung zu gesetzlichen Steuercodes zu definieren    |
+|      2019. Juni            |   10.0.3      | Polen     |   SAF-Rechnungen (JPK_FA) v.2 ab 1. Juli 2019  |
+|      2019. Juni            |   10.0.3      | Brasilien   |   ICMS-Steuerdokumentregulierungen aktivieren Tabelle 5.2   |
+|      2019. Juni            |   10.0.3      | Brasilien    |   NF-e-Verordnung 54.308/18 (RS)   |
+  | Juli 2019            |   10.0.4      | Brasilien    |   Eingehendes Steuerdokument 66   |
+   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e und NFC-e - Lösung 13/2019 und Verordnung SUCIEF 55/2019- - RJ neue Bedingungen für ausgenommen Tags-Ausgaben in NF-e.   |
+   | Juli 2019            |   10.0.4      | Indien   |   Anzeige des Ortes der Lieferung und des Bundeslandes in der GST-Steuer-Rechnung  |
+   | Juli 2019            |   10.0.4      | Mexiko   |  DIOT-Drittanbietermeldung - Änderungen im Layout 2019   |
+   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e ICMS-ST -  Verordnung CAT 42/18 für SP Status - CAT 42/18
+   | Juli 2019            |   10.0.4      | Brasilien    |   NF-e-Verordnung 54.308/18 - RS NF   |
+       | Ausstehend            |   10.0.5      | Brasilien    |   Sped Beiträge praktische Anleitung 1.31. neuer Leitfaden   |
+         | Ausstehend            |   10.0.5      | Brasilien    |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.00   |
+          | Ausstehend            |   10.0.5      | Spanien    |   Validierungsregeln ändern sich ab dem 1. Oktober 2019   |
    
 
 

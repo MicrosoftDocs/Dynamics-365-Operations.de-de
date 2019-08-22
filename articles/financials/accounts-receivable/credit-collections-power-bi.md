@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f6b1c9338670a2f2f26ecbef1d349171457e1ac
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702771"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1835141"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 
@@ -72,4 +72,4 @@ Der Power BI-Inhalt zu **CustCollectionsBICrossCompany** umfasst einen Bericht, 
 | Inkassostatus          | <ul><li>Strittig</li><li>Zahlungszusage nicht eingehalten</li><li>Zahlungszusage</li><li>Inkassostatussetails</li><li>Inkassostatusbeträge</li><li>Offene Anfragen</li><li>Offene Aktivitäten</li></ul> |
 | Mahnschreiben         | <ul><li>Sammlungscodebeträge</li><li>Details zu Sammlungscodebeträgen</li><li>Mahnschreibenbetrag pro Unternehmen</li><li>Mahnschreibenbetrag pro Debitorengruppe</li><li>Mahnschreibenbetrag nach Region</li></ul> |
 
-Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Sie können auch die Funktionen zum Export zugrunde liegender Daten verwenden, um die zugrunde liegenden Daten zu exportieren, die in einer Visualisierung zusammengefasst sind.
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Sie können auch die Funktionen zum Export zugrunde liegender Daten verwenden, um die zugrunde liegenden Daten zu exportieren, die in einer Visualisierung zusammengefasst sind.

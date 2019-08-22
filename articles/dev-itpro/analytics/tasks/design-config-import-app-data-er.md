@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e5f826afa141c0851a963b33e40c58513e60a07
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 23004930d2377a3d647435b53b6809cd500f44ac
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551482"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741354"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>EB-Konfigurationen entwerfen, um eingehende Dokumente zu analysieren
 
@@ -30,7 +30,7 @@ Diese Prozedur zeigt, wie elektronische Berichterstellungskonfigurationen (EB) e
 
 Diese Prozedur wird für Benutzer erstellt, die die Rolle des Systemadministrators oder des Entwicklers für elektronische Berichterstellung haben, die ihnen zugewiesen sind. 
 
-Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. Bevor Sie beginnen, laden Sie die im Thema „Eingehende Dokumente analysieren, um Anwendungsdaten zu aktualisieren” aufgelisteten Dateien herunter und speichern Sie diese (https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Die Dateien sind: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
+Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. Bevor Sie beginnen, laden Sie die im Thema „Eingehende Dokumente analysieren, um Anwendungsdaten zu aktualisieren” aufgelisteten Dateien herunter und speichern Sie diese (https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/parse-incoming-electronic-documents). Die Dateien sind: EFSTA model.xml, EFSTA format.xml, Response1.xml, Response2.xml, Response3.xml, Response4.xml.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
     * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  

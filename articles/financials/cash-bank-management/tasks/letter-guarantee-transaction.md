@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Reasons, SalesTableListPage, SalesCreateOrder, SalesTable, BankLGRequestForm, BankLGRequestFormRequest, BankLGGuarantee, BankLGFormSubmitToBank, BankDocumentAgreementLineLookup, BankLGFormReceiveFromBank, LedgerJournalTable, LedgerJournalTransDaily, BankLGRequestFormGiveToBeneficiary, BankLGFormGiveToBeneficiary, BankLGRequestFormIncreaseValue, BankLGFormIncreaseValue, BankLGRequestFormLiquidate, BankLGFormLiquidate
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dc6ee178121fae05d538f5103919442d91e65eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ff105bdefff2ea93c853d590c77391653f50a4dc
+ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566109"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "1841992"
 ---
 # <a name="letter-of-guarantee-transaction"></a>Bankgarantiebuchung
 
@@ -61,7 +61,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 15. Geben Sie im Feld "Angefordertes Lieferdatum" ein Datum ein.
 16. Geben Sie im Feld "Bestätigtes Versanddatum" ein Datum ein.
 
-## <a name="process-letter-of-guaranteerequest"></a>letter of guarantee_Request verarbeiten
+## <a name="process-letter-of-guarantee_request"></a>letter of guarantee_Request verarbeiten
 1. Klicken Sie im Aktivitätsbereich auf Verwalten.
 2. Klicken Sie "Garantiebrief".
 3. Klicken Sie im Aktivitätsbereich auf Garantiebrief.
@@ -73,7 +73,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 9. Klicken Sie auf "OK".
 10. Schließen Sie die Seite.
 
-## <a name="process-letter-of-guaranteesubmit-to-bank"></a>letter of guarantee_Submit to bank verarbeiten
+## <a name="process-letter-of-guarantee_submit-to-bank"></a>letter of guarantee_Submit to bank verarbeiten
 1. Wechseln Sie zu "Bargeld- und Bankverwaltung" > "Garantiebriefe" > "Garantiebriefe".
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie auf "An Bank übermitteln", um das Dialogfeld zu öffnen.
@@ -81,7 +81,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 6. Klicken Sie auf "OK".
 
-## <a name="process-letter-of-guaranteereceive-from-bank"></a>letter of guarantee_Receive from bank verarbeiten
+## <a name="process-letter-of-guarantee_receive-from-bank"></a>letter of guarantee_Receive from bank verarbeiten
 1. Klicken Sie auf "Von Bank empfangen", um das Dialogfeld zu öffnen.
 2. Geben Sie im Feld "Banknummer" einen Wert ein.
     * Überprüfen Sie die Werte in den berechneten Gewinnspannen- und Ausgabenfeldern.  
@@ -93,7 +93,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
     * Überprüfen Sie die Buchung der Erfassungseinträge.  
 7. Schließen Sie die Seite.
 
-## <a name="process-letter-of-guaranteegive-to-beneficiary"></a>letter of guarantee_Give to beneficiary verarbeiten
+## <a name="process-letter-of-guarantee_give-to-beneficiary"></a>letter of guarantee_Give to beneficiary verarbeiten
 1. Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 3. Klicken Sie im Aktivitätsbereich auf Verwalten.
@@ -108,7 +108,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 12. Erweitern Sie den Abschnitt "Aktionen".
     * Überprüfen Sie den "An Begünstigten übergeben" Datensatz.  
 
-## <a name="process-letter-of-guaranteeincrease-value"></a>letter of guarantee_Increase value verarbeiten
+## <a name="process-letter-of-guarantee_increase-value"></a>letter of guarantee_Increase value verarbeiten
 1. Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 3. Klicken Sie im Aktivitätsbereich auf Verwalten.
@@ -128,7 +128,7 @@ Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 16. Klicken Sie auf "Positionen".
     * Überprüfen Sie die gebuchten Erfassungseinträge.  
 
-## <a name="process-letter-of-guaranteeliquidate"></a>letter of guarantee_Liquidate verarbeiten
+## <a name="process-letter-of-guarantee_liquidate"></a>letter of guarantee_Liquidate verarbeiten
 1. Wechseln Sie zu "Debitoren" > "Aufträge" > "Alle Aufträge".
 2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 3. Klicken Sie im Aktivitätsbereich auf Verwalten.

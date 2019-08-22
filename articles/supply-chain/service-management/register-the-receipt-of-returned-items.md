@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2be628d312e623e8ea6d92eb5edce12334190d9e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 08a40d7e95ffb17a096f759b332e77aeaf96ffd6
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571074"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742250"
 ---
 # <a name="register-the-receipt-of-returned-items"></a>Erfassen des Empfangs zurückgelieferter Artikel 
 
@@ -108,7 +108,7 @@ Alternativ zur **Verwendung des Formulars** können Sie das Formular **Erfassung
 
 ## <a name="see-also"></a>Siehe auch
 
-[Formular "Wareneingangsübersicht"](https://technet.microsoft.com/en-us/library/hh227654\(v=ax.60\))
+[Formular "Wareneingangsübersicht"](https://technet.microsoft.com/library/hh227654\(v=ax.60\))
 
   
 

@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffe6e41ef99ca7e5ca8f9a67b26b69151026f35
-ms.sourcegitcommit: a237fc58ddb94ff798fac70feaf1431e00080489
+ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "1624906"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863382"
 ---
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
@@ -40,10 +40,32 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > Detaillierte Informationen über Objekte in Finance and Operations finden Sie in den [Berichten der technischen Referenz](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die unterschiedlichen Versionen dieser Berichte vergleichen, um über Objekte zu erfahren, die in jeder Version von Finance and Operations geändert oder entfernt wurden.
 
-## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28
+## <a name="dynamics-365-for-finance-and-operations-1005-with-platform-update-29"></a>Dynamics 365 for Finance and Operations 10.0.5 mit Plattformupdate 29
 
 > [!IMPORTANT]
-> Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
+> Dynamics 365 for Finance and Operations 10.0.5 mit Plattformupdate 29 ist für bestimmte Benutzer als Teil einer Vorschauversion verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-and-ops/get-started/public-preview-releases.md).
+
+### <a name="us-payroll-tax-updates"></a>Aktualisierungen der US-Lohnsteuer
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Steueraktualisierungen für die US-Gehaltsabrechnung werden aufgrund der niedrigen Verwendung und aufgrund von erweiterten Funktionen, die nun über strategische Integrationen angeboten werden, eingestellt.  |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Lohnabrechnung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Ab 1. Oktober 2021 werden Steueraktualisierungen für Kunden der US-Gehaltsabrechnung nicht mehr angeboten. Die Funktionalität bleibt zwar im Produkt bestehen, wird jedoch nicht mehr durch Erweiterungen auf dem neuesten Stand gehalten. Eventuelle Produktfehler von Fall zu Fall bewertet. Weitere Informationen finden Sie unter [Steueraktualisierungen, die für die US-Gehaltsabrechnung nicht mehr angeboten werden Microsoft Dynamics 365 for Finance and Operations](https://aka.ms/financepayrollfaq). |
+
+
+### <a name="data-management-staging-clean-up"></a>Datenverwaltung – Stagingbereinigung
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Erfüllt nicht die zentralen Voraussetzungen, die für die Planung einer regelmäßigen Bereinigung erforderlich sind. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, es wird die Bereinigungsfunktion für den Auftragsverlauf hinzugefügt, um die Anforderungen verschiedener Szenarien ganzheitlich zu erfüllen. |
+| **Betroffene Produktbereiche**         | Datenverwaltung |
+| **Bereitstellungsoption**              | Alle  |
+| **Status**                         | Veraltet: Der anvisierte Zeitrahmen für die Entfernung der Funktionalität ist Dezember 2020. |
+
+## <a name="dynamics-365-for-finance-and-operations-1004-with-platform-update-28"></a>Dynamics 365 for Finance and Operations 10.0.4 mit Plattformupdate 28
 
 ### <a name="france-fec-accounting-data-export-in-xml"></a>Frankreich: FEC-Buchhaltungsdatenexport in XML
 
@@ -1235,7 +1257,7 @@ Sites Services lassen Sie Websites erstellen, die Ihre Geschäftsprozesse mit de
 
 ### <a name="virtual-company-accounts"></a>Virtuelle Unternehmenskonten
 
-Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. Die virtuelle Unternehmensfunktion ermöglicht es Benutzern, Tabellen einzurichten, die für eine Gruppe von Unternehmen freigegeben werden könnten. Eine Beschreibung der Funktion finden Sie unter [Unternehmenskonten und virtuelle Unternehmenskonten](https://msdn.microsoft.com/en-us/library/aa834382(v=ax.10).aspx). Die Funktion arbeitet, indem sie Tabellen in Sammlungen gruppiert die virtuellen Unternehmen zugewiesen werden (Gruppen von "tatsächlichen" Unternehmen). Abfragen werden erstellt, sodass alle Unternehmen im virtuellen Unternehmen auf die Daten in Tabellen der zugeordneten Tabellensammlungen zugreifen können.
+Die virtuelle Unternehmensfunktion wird nicht mehr in Dynamics AX unterstützt. Die virtuelle Unternehmensfunktion ermöglicht es Benutzern, Tabellen einzurichten, die für eine Gruppe von Unternehmen freigegeben werden könnten. Eine Beschreibung der Funktion finden Sie unter [Unternehmenskonten und virtuelle Unternehmenskonten](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Die Funktion arbeitet, indem sie Tabellen in Sammlungen gruppiert die virtuellen Unternehmen zugewiesen werden (Gruppen von "tatsächlichen" Unternehmen). Abfragen werden erstellt, sodass alle Unternehmen im virtuellen Unternehmen auf die Daten in Tabellen der zugeordneten Tabellensammlungen zugreifen können.
 
 |   |  | 
 |------------|--------------------|

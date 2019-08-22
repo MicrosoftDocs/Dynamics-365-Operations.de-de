@@ -1,6 +1,6 @@
 ---
-title: " Einen Auszug für ein Einzelhandelsgeschäft erstellen, berechnen und buchen"
-description: Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop.
+title: Auszüge für ein Einzelhandelsgeschäft erstellen, berechnen und buchen
+description: Dieses Thema führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop.
 author: jashanno
 manager: AnnBe
 ms.date: 08/29/2018
@@ -17,34 +17,34 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9ea30e7e008bfcce77a7ee2f4d7d01a6cf1ababc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 693d1821779d5f7af95b900daa3bb7a2c38a6354
+ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548323"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "1755522"
 ---
-# <a name="create-calculate-and-post-a-statement-for-a-retail-store"></a> Einen Auszug für ein Einzelhandelsgeschäft erstellen, berechnen und buchen
+# <a name="create-calculate-and-post-statements-for-a-retail-store"></a>Auszüge für ein Einzelhandelsgeschäft erstellen, berechnen und buchen
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Diese Prozedur führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop. Es gibt auch Batchaufträge, die für die gleichen Aufgaben konfiguriert werden können. Die Schritte zum Konfigurieren und Ausführen der Batchaufträge werden in anderen Themen behandelt. Um dieses Verfahren abzuschließen, müssen Transaktionen enthalten sein, die in POS abgeschlossen und dann in Dynamics AX einbezogen wurden. Für diese Aufzeichnung wird das Demo-Datenunternehmen USRT verwendet. Dieses Verfahren bezieht sich möglicherweise auf Microsoft Dynamics AX. Beachten Sie, dass Dynamics AX nun als Microsoft Dynamics 365 for Operations bezeichnet wird.
+Dieses Thema führt Sie Schritt für Schritt durch manuelle Verfahren zum Erstellen, Berechnen und Buchen eines Auszugs für einen Shop. Es gibt auch Batchaufträge, die für die gleichen Aufgaben konfiguriert werden können. Die Schritte zum Konfigurieren und Ausführen der Batchaufträge werden in anderen Themen behandelt. Um diese Prozedur abzuschließen, müssen Buchungen in POS abgeschlossen und dann in Dynamics 365 for Finance and Operations einbezogen worden sein. Für diese Aufzeichnung wird das Demo-Datenunternehmen USRT verwendet.
 
-1. Gehen Sie zu Alle Arbeitsbereiche >.. > Finanzdaten für den Einzelhandelsshop.
-2. Klicken Sie auf "Neuer Auszug".
-3. Klicken Sie im Feld "Shopnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-5. Klicken Sie auf "OK".
-    * Die Einstellungsgruppe hat die Einstellungen, mit denen gesteuert wird, welche Buchungen im Auszug enthalten sind und wie sie in Auszugspositionen gruppiert werden. Sie können die Einstellungsgruppe öffnen und diese Einstellungen ändern, oder Sie können die Standards verwenden.  
-    * Das Auszugsmethodenfeld definiert, wie die Auszugspositionen gruppiert werden.  
-    * Wählen Sie einen Mitarbeiter oder ein Register aus, wenn Sie einen Auszug nur für den bestimmten Mitarbeiter oder das bestimmte Register berechnen möchten.  
-6. Wählen Sie im Feld "Abschlussmethode" eine Option aus.
-7. Klicken Sie auf "Auszug berechnen".
-8. Klicken Sie auf "Ja".
-    * Nachdem der Auszug berechnet wurde, sollte es Positionen geben, die mit Gesamtbeträgen für jede verwendete Zahlungsmethode und Auszugsmethode erstellt wurden.  
-    * Geben Sie einen gezählten Betrag in jeder Position ein, wenn er eingegeben oder aktualisiert werden muss. Das gezählte Feld wird mit Beträgen von den Kassenstürzen aufgefüllt, die in POS geleistet werden.  
-9. Klicken Sie auf "Auszug buchen".
-10. Klicken Sie auf "Schließen".
-11. Navigieren Sie zu Einzelhandel und Handel > Kanäle > Finanzdaten für den Einzelhandelsshop.
-12. Klicken Sie auf die Registerkarte "Gebuchte Auszüge".
+1. Wählen Sie **Finanzdaten für den Einzelhandelsshop** auf der Startseite aus.
+2. Wählen Sie **Neuer Auszug** aus.
+3. Wählen Sie im Feld **Shopnummer** eine Option in der Dropdownliste aus.
+4. Wählen Sie **OK**.
+5. Die **Einstellungs** gruppe hat die Einstellungen, mit denen gesteuert wird, welche Buchungen im Auszug enthalten sind und wie sie in Auszugspositionen gruppiert werden. Sie können die **Einstellungs** gruppe öffnen und diese Einstellungen ändern, oder Sie können die Standardwerte verwenden.  
+    - Das Feld **Auszugsmethode** definiert, wie die Auszugspositionen gruppiert werden.  
+    - Wählen Sie im Feld **Personal/Register** einen Mitarbeiter oder ein Register aus, wenn Sie einen Auszug nur für den bestimmten Mitarbeiter oder das bestimmte Register berechnen möchten.  
+6. Wählen Sie im Feld **Abschlussmethode** eine Option aus.
+7. Wählen Sie im Aktivitätsbereich **Auszug berechnen** aus.
+8. Wählen Sie **Ja** aus.
+    - Nachdem der Auszug berechnet wurde, sollte es Positionen geben, die mit Gesamtbeträgen für jede verwendete Zahlungsmethode und Auszugsmethode erstellt wurden.  
+    - Geben Sie einen gezählten Betrag in jeder Position ein, wenn er eingegeben oder aktualisiert werden muss. Das gezählte Feld wird mit Beträgen von den Kassenstürzen aufgefüllt, die in POS geleistet werden.  
+9. Wählen Sie im Aktivitätsbereich **Auszug buchen** aus.
+10. Wählen Sie **Schließen** aus.
+11. Schließen Sie den Bereich.
+12. Wählen Sie **Finanzdaten für den Einzelhandelsshop** auf der Startseite aus.
+13. Wählen Sie die Registerkarte **Gebuchte Auszüge** aus.
 

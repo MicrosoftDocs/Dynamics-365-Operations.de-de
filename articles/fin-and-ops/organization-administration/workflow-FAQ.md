@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adcc9bbc422a3fddfd51d248daf95c0da6d4c9bb
-ms.sourcegitcommit: 8cf77e9171d6cad8ae6c8bfad9e4f9a46fef6d23
+ms.openlocfilehash: 7ca04433937d0d7a16b450f190cd3814533e270d
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "1688999"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741055"
 ---
 # <a name="workflow-faq"></a>Workflow-FAQs
 
@@ -48,6 +48,6 @@ Nachfolgend sind einige wesentliche Konzepte, um Warnungen für Workflows zu bea
     - In einer zukünftigen Aktualisierung werden wir die Aktivitätscenternachricht hinzufügen, damit Benutzer einem Workflow-Arbeitselement zugewiesen werden. 
 - Benachrichtigungen Workflows hinzufügen
     - Aktivitätscenternachrichten können für bestimmte Benutzer erstellt werden, wie eine Nachricht, die von einem früheren Workflow in X++ erstellt wurden.
-    - [Workflows haben Geschäftsereignisse](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), dass der Debitor Trigger-Flüsse nutzen kann, die Benachrichtigungen haben, nach denen Sie suchen.   
+    - [Workflows haben Geschäftsereignisse](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), dass der Debitor Trigger-Flüsse nutzen kann, die Benachrichtigungen haben, nach denen Sie suchen.   
 
-Wenn ein Benutzer nicht die korrekte Benachrichtigung des Aktivitätscenter abrufen kann, wenn sie einer Arbeitsaufgabe für den Arbeitsplan zugeordnet wird, dann verwenden Sie [Workflow-Geschäftsereignisse](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) mit Microsoft Flow, um zusätzliche oder unterschiedliche Benachrichtigungen bereitzustellen.
+Wenn ein Benutzer nicht die korrekte Benachrichtigung des Aktivitätscenter abrufen kann, wenn sie einer Arbeitsaufgabe für den Arbeitsplan zugeordnet wird, dann verwenden Sie [Workflow-Geschäftsereignisse](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) mit Microsoft Flow, um zusätzliche oder unterschiedliche Benachrichtigungen bereitzustellen.

@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b68f443df87bcd39b018c63c796bb4ccdd7afd82
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a2a2db43ccd6374bde30f1823d98534de4830f06
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1573385"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852656"
 ---
 # <a name="import-german-audit-file-configuration"></a>Deutsche Protokolldateikonfiguration importieren
 

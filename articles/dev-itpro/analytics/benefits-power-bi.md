@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmBenefitWorkspace
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e704c27d7cea658be6fa06cc078488b0d5a3b0dc
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548765"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848494"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-Inhalt zu Vergütungen
 
@@ -43,7 +43,7 @@ Die Berichte, die im Power BI-Inhalt zu **Vergütungen** enthalten sind, haben D
 | Überblick der Vorteils-Registrierung | Die meisten und am wenigsten registrierten Pläne, Registrierung durch Mitarbeitergruppe und ausgewählte Vorteilsplanoptionen |
 | Mitarbeitervergütungen           | Mitarbeiterregistrierung nach ausgewählten Vorteilen                                                        |
 
-Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 Die folgenden Daten werden verwendet, um die Berichte im Power BI-Inhalt zu **Vergütungen** zu füllen. Diese Tabelle zeigt die Entitäten, auf denen der Inhalt basiert.

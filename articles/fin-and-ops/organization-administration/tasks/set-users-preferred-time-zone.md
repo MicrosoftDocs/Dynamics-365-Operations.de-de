@@ -1,9 +1,9 @@
 ---
-title: Festlegen der bevorzugten Zeitzone eines Benutzers
-description: Die folgende Prozedur erklärt, wie ein Benutzer in der Rolle „Systemadministrator” die Zeitzone für einen Benutzer festlegen kann.
+title: Die bevorzugte Zeitzone eines Benutzers festlegen
+description: In diesem Thema wird erklärt, wie ein Benutzer in der Rolle „Systemadministrator“ die Zeitzone für einen Benutzer festlegen kann.
 author: pvillads
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,24 +16,23 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5eac00d5054296921c3f22004f8c8e710727afc
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d6dc521fe4fc7ea901c882abad47d5fc899e0326
+ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560520"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "1738810"
 ---
-# <a name="set-a-users-preferred-time-zone"></a>Festlegen der bevorzugten Zeitzone eines Benutzers
+# <a name="set-a-users-preferred-time-zone"></a>Die bevorzugte Zeitzone eines Benutzers festlegen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Die folgende Prozedur erklärt, wie ein Benutzer in der Rolle „Systemadministrator” die Zeitzone für einen Benutzer festlegen kann.
+Im folgenden Thema wird erklärt, wie ein Benutzer in der Rolle „Systemadministrator“ die Zeitzone für einen Benutzer festlegen kann.
 
-1. Wechseln Sie zu "Systemverwaltung" > "Benutzer" > "Benutzer".
+1. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Benutzer > Benutzer**.
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-4. Klicken Sie auf "Benutzeroptionen".
-5. Klicken Sie auf die Registerkarte "Einstellungen".
-6. Wählen Sie im Feld „Zeitzone” eine Option aus.
-7. Klicken Sie auf "Speichern".
+3. Wählen Sie **Benutzeroptionen** aus.
+4. Wählen Sie die Registerkarte **Voreinstellungen** aus.
+5. Wählen Sie im Feld **Zeitzone** eine Option in der Dropdownliste aus.
+6. Wählen Sie **Speichern**.
 

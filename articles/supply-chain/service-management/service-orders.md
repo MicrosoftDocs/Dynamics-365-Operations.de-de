@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4da0b965f3719bc16b5a73538df111ff6df071be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b4d347556d25831bb3f9175e8606e0b41d98bdd8
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555357"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743247"
 ---
 # <a name="service-orders"></a>Serviceaufträge   
 
@@ -76,7 +76,7 @@ Einer der für Januar generierten Serviceaufträge wird nicht mehr benötigt, da
 
 ## <a name="post-from-projects"></a>Buchen vom Modul "Projekt" aus
 
-Am Ende jeder Woche möchte der Disponent alle Serviceaufträge buchen, die einem bestimmten Projekt zugeordnet sind. Daher sucht er das entsprechende Projekt im Formular **Projekte** und bucht die Serviceaufträge, die abgeschlossen wurden. Weitere Informationen finden Sie unter [Klassenformular "Serviceaufträge buchen"](https://technet.microsoft.com/en-us/library/aa574685\(v=ax.60\)).
+Am Ende jeder Woche möchte der Disponent alle Serviceaufträge buchen, die einem bestimmten Projekt zugeordnet sind. Daher sucht er das entsprechende Projekt im Formular **Projekte** und bucht die Serviceaufträge, die abgeschlossen wurden. Weitere Informationen finden Sie unter [Klassenformular "Serviceaufträge buchen"](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Serviceaufträge löschen
 
@@ -84,7 +84,7 @@ In der zweiten Jahreshälfte teilt Ihnen Ihr Debitor mit, dass die Servicebesuch
 
 ## <a name="see-also"></a>Siehe auch
 
-[Formular "Serviceaufträge"](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Formular "Serviceaufträge"](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

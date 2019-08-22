@@ -3,25 +3,25 @@ title: Mehrwertsteuer-Ausgleichsperioden einrichten
 description: Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen über die Periodenintervalle für die die Mehrwertsteuer gemeldet und abgeführt werden muss.
 author: twheeloc
 manager: AnnBe
-ms.date: 10/15/2018
+ms.date: 08/05/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569585"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862987"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Mehrwertsteuer-Ausgleichsperioden einrichten
 
@@ -50,6 +50,8 @@ Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 12. Geben Sie die Anzahl der Periodenintervalleinheiten pro Periode ein. So verfügt beispielsweise ein Quartal über 3 Monate.
 13. Aktivieren oder deaktivieren Sie das Kontrollkästchen "Stapelverarbeitung für die Mehrwertsteuerabrechnung verwenden".
     * Der Abrechnungsprozess für den Abrechnungszeitraum kann als Batchauftrag im Hintergrund verarbeitet werden. Das wird für eine große Zahl von Steuertransaktionen innerhalb eines Periodenintervalls empfohlen.  
+    > [!NOTE]
+    > Derzeit wird dies in Österreich, Belgien, Spanien, Italien, Japan und den Niederlanden nicht unterstützt.
 14. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen Generieren von Steuerausgleichsbuchungen verhindern.
     * Standardmäßig generiert das System Offsetsteuerbuchungen während des Ausgleichsprozesses, die  Performanceprobleme verursachen können,  wenn es viele Steuerbuchungen innerhalb eines Periodenintervalls gibt. Aktivieren bzw. deaktivieren Sie dieses Kontrollkästchen, um Steuerausgleichsbuchungen erstellen zu verhindern.
 15. Erweitern Sie die Registerkarte "Periodenintervalle".

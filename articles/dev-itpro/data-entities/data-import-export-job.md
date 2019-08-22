@@ -3,28 +3,29 @@ title: Einzelvorgänge für Datenimport und -export
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 03/11/2019
+ms.date: 07/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceb2dfa37b53af83c4faedffa5b312d654c44593
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505793"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862903"
 ---
 # <a name="data-import-and-export-jobs"></a>Einzelvorgänge für Datenimport und -export
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Um Datenimport- und Datenexporteinzelvorgänge in Microsoft Dynamics 365 for Finance and Operations zu erstellen und zu verwalten, verwenden Sie den Arbeitsbereich **Datenverwaltung** workspace. Standardmäßig der Datenimport und der Exportvorgang eine für jede Stagingtabelle Entität in der Zieldatenbank erstellt. Mit Stagingtabellen können Sie Daten prüfen, bereinigen oder konvertieren, bevor Sie diese verschieben.
 
@@ -129,8 +130,8 @@ Einer Stelle kann durch Rollen, Benutzer und juristischen Person gleichzeitig ge
 ## <a name="run-the-import-or-export-job"></a>Führt den Import- oder Exportvorgang aus
 Sie können einen Einzelvorgang gleichzeitig aktivieren, indem Sie **Importieren** **Exportieren** auswählen, nachdem Sie den Einzelvorgang definiert haben. Um einen sich wiederholenden Auftrag einzurichten, wählen Sie **Erstellen eines sich wiederholenden Dateneneinzelvorgangs** aus.
 
-[!NOTE]
-Ein Import- oder Exportvorgang kann asynchron ausgeführt werden, indem Sie die Schalfläche **Importieren** oder **Exportieren** auswählen. Bei einer asynchronen Ausfüghrung wird das asynchrone Framework in Finance and Operations verwendet, das sich vom Stapelverarbeitungsframework unterscheidet. Wie auch das Stapelverarbeitungsframework kann das asynchrone Framework allerdings auch eine Drosselung erfahren, wodurch der Einzelvorgang nicht sofort ausgeführt wird. Die Einzelvorgänge können durch Auswahl von **Jetzt importieren** oder **Jetzt exportieren** synchron ausgeführt werden. Dadurch wird der Einzelvorgang sofort gestartet. Das ist hilfreich, wenn die asynchrone oder Stapelverarbeitung aufgrund von Drosselung nicht sartet. Die Einzelvorgänge können auch in einem Stapel ausgeführt werden, indem Sie die Option **In Stapel ausführen** auswählen. Stapelressoucen sind von Drosselung betroffen. Der Einzelvorgang zur Stapelverarbeitung startet also möglicherweise nicht sofort. Die asynchrone Option ist hilfreich, um die Stapelzeitplaung zu verstehen, wenn Benutzer direkt mit der Benutzeroberfläche interagieren und es sich nicht um Power-Nutzer handelt. Die Verwendung einer Charge ist eine Option, wenn große Mengen exportiert oder importiert werden müssen. Chargensaufträge können geplant wurden, sodass sie in einer bestimmte Chargengruppe ausgeführt werden. Dies bietet von einer Lastenausgleichsperspektive aus betrachtet eine bessere Steuerung. Wenn asynchrone und Chargen beide augrund von hoher Ressourcennutzung auf dem System gedrosselt werden, kann das Problem durch Verwendung der synchronen Version von Import/Export sofort umgangen werden. Die synchrone Option beginnt sofort und sperrt die Benutzeroberfläche, da sie synchron ausgeführt wird. Das Browserfenster muss offen bleiben, wenn die synchone Operation ausgeführt wird.
+> [!NOTE]
+> Ein Import- oder Exportvorgang kann asynchron ausgeführt werden, indem Sie die Schalfläche **Importieren** oder **Exportieren** auswählen. Bei einer asynchronen Ausfüghrung wird das asynchrone Framework in Finance and Operations verwendet, das sich vom Stapelverarbeitungsframework unterscheidet. Wie auch das Stapelverarbeitungsframework kann das asynchrone Framework allerdings auch eine Drosselung erfahren, wodurch der Einzelvorgang nicht sofort ausgeführt wird. Die Einzelvorgänge können durch Auswahl von **Jetzt importieren** oder **Jetzt exportieren** synchron ausgeführt werden. Dadurch wird der Einzelvorgang sofort gestartet. Das ist hilfreich, wenn die asynchrone oder Stapelverarbeitung aufgrund von Drosselung nicht sartet. Die Einzelvorgänge können auch in einem Stapel ausgeführt werden, indem Sie die Option **In Stapel ausführen** auswählen. Stapelressoucen sind von Drosselung betroffen. Der Einzelvorgang zur Stapelverarbeitung startet also möglicherweise nicht sofort. Die asynchrone Option ist hilfreich, um die Stapelzeitplaung zu verstehen, wenn Benutzer direkt mit der Benutzeroberfläche interagieren und es sich nicht um Power-Nutzer handelt. Die Verwendung einer Charge ist eine Option, wenn große Mengen exportiert oder importiert werden müssen. Chargensaufträge können geplant wurden, sodass sie in einer bestimmte Chargengruppe ausgeführt werden. Dies bietet von einer Lastenausgleichsperspektive aus betrachtet eine bessere Steuerung. Wenn asynchrone und Chargen beide augrund von hoher Ressourcennutzung auf dem System gedrosselt werden, kann das Problem durch Verwendung der synchronen Version von Import/Export sofort umgangen werden. Die synchrone Option beginnt sofort und sperrt die Benutzeroberfläche, da sie synchron ausgeführt wird. Das Browserfenster muss offen bleiben, wenn die synchone Operation ausgeführt wird.
 
 ## <a name="validate-that-the-job-ran-as-expected"></a>Überprüfen Sie, ob der Einzelvorgang wie erwartet ausgeführt wurde
 Die Einzelvorgangshistorie ist zur Problembehebung und Untersuchung auf Import- und Exporteinzelvorgängen verfügbar. Historische Einzelvorgangsausführungen werden nach Perioden sortiert.
@@ -145,7 +146,7 @@ Jede Einzelvorgangsausführung enthält die folgenden Details:
 Ausführungsdetails zeigt den Status der einzelnen Datenentitäten an, die den Einzelvorgang verarbeitet. Daher können Sie die folgenden Informationen schnell suchen:
 
 - Welche Entitäten verarbeitet wurden
-- Für eine Entität, wie viele Datensätze erfolgreich verarbeitet wurden und wie viele Prüfung nicht erfolgreich waren
+- Für eine Entität, wie viele Datensätze erfolgreich verarbeitet wurden und wie viele nicht erfolgreich waren
 - Die Stagingdatensätze für jede Entität
 
 Sie können die Stagingdaten in Einzelvorgängen einer Datei für den Export herunterladen, oder Sie können sie als Paket für Import- und Exporteinzelvorgänge herunterladen.
@@ -153,6 +154,8 @@ Sie können die Stagingdaten in Einzelvorgängen einer Datei für den Export her
 Aus den Ausführungsdetails können Sie auch das Ausführungsprotokoll öffnen.
 
 ## <a name="clean-up-the-staging-tables"></a>Bereinigen der Tabellen
+Mit Plattformupdate 29 wurde diese Funktion eingestellt. Sie wird durch eine neue Version der Bereinigungsfunktion für den Auftragsverlauf ersetzt, die nachstehend erläutert wird.
+
 Sie können Tabellen bereinigen, indem Sie die Funktion **Bereinigen der Tabellen** im **Datenverwaltung** Arbeitsbereich verwenden. Sie können folgende Optionen verwenden, um auszuwählen, welche Datensätze gelöscht werden sollen, aus den Stagingtabellen:
 
 - **Entität** – Wenn nur eine Entität angegeben wurde, werden alle Datensätze ab dieser Stagingtabellen Entität gelöscht. Wählen Sie diese Option aus, um alle Daten für die Entität zu allen Datenprojekten und allen Einzelvorgängen zu bereinigen.
@@ -160,3 +163,37 @@ Sie können Tabellen bereinigen, indem Sie die Funktion **Bereinigen der Tabelle
 - **Datenprojekte** – Wenn nur ein Datenprojekt aktiviert ist, werden alle Datensätze für alle Entitäten und zu allen Einzelvorgängen für das ausgewählte Datenprojekt gelöscht.
 
 Sie können auch die Optionen kombinieren, um den Datensatz einzuschränken, der gelöscht werden soll.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Bereinigung des Auftragsverlaufs (verfügbar ab Plattformupdate 29)
+
+Die Funktion zur Bereinigung des Auftragsverlaufs in der Datenverwaltung muss verwendet werden, um eine regelmäßige Bereinigung des Ausführungsverlaufs einzuplanen. Diese Funktion ersetzt die vorherige Bereinigungsfunktion für Stagingtabellen, die ab sofort nicht mehr bereitgestellt wird. Die folgenden Tabellen werden durch den Bereinigungsprozess bereinigt.
+
+-   Alle Stagingtabellen
+
+-   DMFSTAGINGVALIDATIONLOG
+
+-   DMFSTAGINGEXECUTIONERRORS
+
+-   DMFSTAGINGLOGDETAIL
+
+-   DMFSTAGINGLOG
+
+-   DMFDEFINITIONGROUPEXECUTIONHISTORY
+
+-   DMFEXECUTION
+
+-   DMFDEFINITIONGROUPEXECUTION
+
+Die Funktion ist unter **Datenverwaltung \> Bereinigung des Auftragsverlaufs** verfügbar.
+
+### <a name="scheduling-parameters"></a>Planungsparameter
+
+Wenn Sie den Bereinigungsprozess planen, müssen die folgenden Parameter angegeben werden, um die Bereinigungskriterien zu definieren.
+
+-   **Anzahl der Tage zur Beibehaltung des Verlaufs** – Diese Einstellung wird verwendet, um den Umfang des beizubehaltenden Ausführungsverlaufs zu steuern. Wird in Anzahl Tagen angegeben. Wenn der Bereinigungsauftrag als wiederkehrender Batchauftrag geplant wird, funktioniert diese Einstellung wie ein sich fortlaufend bewegendes Fenster, das heißt, der Verlauf wird für die angegebene Anzahl von Tagen unverändert gelassen, während der Rest gelöscht wird. Der Standardwert ist 7 Tage.
+
+-   **Anzahl der Stunden für die Ausführung des Auftrags** – Je nach Umfang des zu bereinigenden Verlaufs kann die gesamte Ausführungszeit für den Bereinigungsauftrag von wenigen Minuten bis zu ein paar Stunden variieren. Da die Bereinigung der genannten Tabellen erfolgen muss, wenn keine andere Datenverwaltungsaktivität im System ausgeführt wird, muss sichergestellt werden, dass der Bereinigungsauftrag vor dem Beginn der Geschäftsaktivitäten ausgeführt und beendet wird.
+
+    Eine maximale Ausführungszeit kann durch Festlegen eines Höchstlimits für die Anzahl der Stunden angegeben werden, die der Auftrag unter Verwendung dieser Einstellung ausgeführt werden muss. Die Bereinigungslogik geht chronologisch eine Auftragsausführungskennung nach der anderen durch. Dabei wird die älteste bei der Bereinigung des entsprechenden Ausführungsverlaufs zuerst berücksichtigt. Sie endet mit der Verarbeitung neuer Ausführungskennungen für die Bereinigung, wenn die verbleibende Ausführungsdauer innerhalb der letzten 10 % des angegebenen Zeitraums liegt. In einigen Fällen wird der Bereinigungsauftrag erwartungsgemäß über die angegebene Höchstzeit fortgesetzt. Dies hängt weitestgehend von der Anzahl der Datensätze ab, die für die aktuelle Ausführungskennung zu löschen sind, die gestartet wurde, bevor der Schwellenwert von 10 % erreicht wurde. Die Bereinigung, die gestartet wurde, muss abgeschlossen werden, um die Datenintegrität sicherzustellen. Dies bedeutet, dass die Bereinigung auch dann fortgesetzt wird, denn das angegebene Limit überschritten wurde. Wenn der Vorgang abgeschlossen ist, werden keine neuen Ausführungskennungen verarbeitet und der Bereinigungsauftrag wird abgeschlossen. Der verbleibende Ausführungsverlauf, der aufgrund unzureichender Ausführungszeit nicht bereinigt wurde, wird das nächste Mal verarbeitet, wenn der Bereinigungsauftrag eingeplant wird. Der Standard- und Mindestwert für diese Einstellung ist 2 Stunden.
+
+-   **Wiederkehrender Stapel** – Der Bereinigungsauftrag kann als einmalige, manuelle Ausführung ausgeführt oder für eine wiederkehrende Ausführung in Stapeln eingeplant werden. Der Stapel kann mithilfe der Einstellungen **Im Hintergrund ausführen** geplant werden. Dies ist die Standardstapeleinstellung.

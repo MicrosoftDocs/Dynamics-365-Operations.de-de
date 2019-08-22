@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxElectronicDeclarationSetup, TaxElectronicCertificates, TaxElectronicHTTPServer
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 927b283f160d8bd1a6b89c40da05bb7a542eb232
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 162b64fc42e78d84147149ef79bfefcba1159b28
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568813"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1848886"
 ---
 # <a name="de-00003-electronic-transmission-of-vat-declaration-elster"></a>DE-00003 Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 

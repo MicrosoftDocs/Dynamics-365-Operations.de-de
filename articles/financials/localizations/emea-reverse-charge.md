@@ -1,26 +1,26 @@
 ---
 title: Verlagerung der Steuerschuld
-description: In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder und Saudi-Arabien eingerichtet wird.
+description: In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder, Saudi-Arabien und Singapur eingerichtet wird.
 author: epodkolz
 manager: AnnBe
-ms.date: 04/05/2017
+ms.date: 07/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 26f7f3f11408cac387c58a5345b566ac50ed426f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571170"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852422"
 ---
 # <a name="reverse-charge-vat"></a>Verlagerung der Steuerschuld
 
@@ -28,7 +28,7 @@ ms.locfileid: "1571170"
 [!include [banner](../includes/banner.md)]
 
 
-In diesem Thema wird ein allgemeiner Ansatz zum Einrichten der Verlagerung der Steuerschuld für europäischer Länder und Saudi-Arabien beschrieben.
+In diesem Thema wird ein allgemeiner Ansatz zum Einrichten der Verlagerung der Steuerschuld für Saudi-Arabien, Singapur und europäische Länder beschrieben.
 
 Die Verlagerung der Steuerschuld ist ein Steuerschema, das die Zuständigkeit für die Buchhaltung und das Melden der Mehrwertsteuer vom Verkäufer auf den Einkäufer von Waren und/oder Dienstleistungen verschiebt. Daher melden Empfänger von Waren und/oder Dienstleistungen sowohl die Ausgangssteuer (in der Rolle eines Verkäufers) als auch die Vorsteuer (in der Rolle des Einkäufers) in ihrer MwSt.-Abrechnung.
 

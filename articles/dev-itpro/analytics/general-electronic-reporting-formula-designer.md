@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f8461f851f6f54def8a04d0f2548961b9a1ca4d
-ms.sourcegitcommit: ce84a1faeda6013ef6a90038d811a72f375b604e
+ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625871"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849508"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -215,12 +215,12 @@ Die folgenden Tabellen beschreiben die Datenmanipulationsfunktion, die Sie verwe
 | HEUTE () | Gibt das aktuelle Finance and Operations-Anwendungs-Serverdatum und die Zeit als ein Datumswert zurück. | |
 | NULLDATE () | Gibt einen **Null**-Datumswert zurück. | |
 | NULLDATETIME () | Gibt einen **Null**-Datums-/Uhrzeitwert zurück. | |
-| DATETIMEFORMAT "datetime, Format) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format. (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** gibt das laufende Finance and Operations-Anwendungsserverdatum, 24. Dezember 2015, als **"24-12-2015"** basierend auf dem angegebenen benutzerdefinierten Format zurück. |
-| DATETIMEFORMAT "datetime, Format, Kultur) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format und [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** gibt das aktuelle Finance and Operations Anwendungsserverdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
+| DATETIMEFORMAT "datetime, Format) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format. (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** gibt das laufende Finance and Operations-Anwendungsserverdatum, 24. Dezember 2015, als **"24-12-2015"** basierend auf dem angegebenen benutzerdefinierten Format zurück. |
+| DATETIMEFORMAT "datetime, Format, Kultur) | Konvertiert den angegebenen Datums-/Uhrzeitwert in eine Zeichenfolge im angegebenen Format und [Kultur](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "d", "de")** gibt das aktuelle Finance and Operations Anwendungsserverdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
 | SESSIONTODAY () | Gibt das aktuelle Finance and Operations-Sitzungsdatum als Datumswert zurück. | |
 | SESSIONNOW () | Gibt das aktuelle Finance and Operations-Sitzungsdatum und -uhrzeit als ein Datums-/Uhrzeitwert zurück. | |
 | DATENFORMAT (Datum, Format) | Gibt eine Zeichenfolgendarstellung des angegebenen Datums im angegebenen Format zurück. | **DATEFORMAT (SESSIONTODAY (), "dd-MM-yyyy")** gibt das aktuelle Finance and Operations-Sitzungsdatum, 24. Dezember 2015, als **"24-12-2015"** basierend auf dem angegebenen benutzerdefinierten Format zurück. |
-| DATENFORMAT (Datum, Format, Kultur) | Konvertieren Sie den angegebenen Datumswert in eine Zeichenfolge im angegebenen Format und der entsprechenden [Kultur](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** gibt das aktuelle Finance and Operations-Sitzungsdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
+| DATENFORMAT (Datum, Format, Kultur) | Konvertieren Sie den angegebenen Datumswert in eine Zeichenfolge im angegebenen Format und der entsprechenden [Kultur](https://msdn.microsoft.com/goglobal/bb896001.aspx). (Informationen zu unterstützten Formaten, finden Sie unter [Standard](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) und [Benutzerdefiniert](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** gibt das aktuelle Finance and Operations-Sitzungsdatum, 24. Dezember 2015, als **"24.12.2015"** basierend auf der ausgewählten deutschen Kultur zurück. |
 | DAYOFYEAR (Datum) | Gibt eine ganzzahlige Darstellung der Anzahl von Tagen zwischen dem 1. Januar dem angegebenen Datum zurück. | **DAYOFYEAR (DATEVALUE ("01-03-2016", "dd-MM-yyyy"))** gibt **61** zurück. **DAYOFYEAR (DATEVALUE ("01-01-2016", "dd-MM-yyyy"))** gibt **1** zurück. |
 | DAYS (date 1, date 2) | Gibt die Anzahl der Tage zwischen dem ersten angegebenen Datum und dem zweiten angegebenen Datum zurück. Gibt einen positiven Wert zurück, wenn das erste Datum nach dem zweiten Datum liegt, gibt **0** (null) zurück, wenn das erste Datum gleich dem zweiten Datum ist oder gibt einen negativen Wert zurück, wenn das erste Datum vor dem zweiten Datum liegt. | **DAYS (TODAY (), DATEVALUE( DATETIMEFORMAT( ADDDAYS(NOW(), 1), "yyyyMMdd"), "yyyyMMdd"))** gibt **-1** zurück. |
 
@@ -649,12 +649,12 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 </tr>
 <tr>
 <td>ZAHLENFORMAT (Zahl, Format)</td>
-<td>Gibt eine Zeichenfolgendarstellung der angegebenen Zahl im angegebenen Format zurück. (Informationen zum die unterstützten Formaten, finden Sie unter <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">Standard</a> und <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">Custom</a>.) Im Kontext, dass diese Funktion ausgeführt wird, bestimmt die Kultur, die den Formatnummern verwendet wird.</td>
+<td>Gibt eine Zeichenfolgendarstellung der angegebenen Zahl im angegebenen Format zurück. (Informationen zum die unterstützten Formaten, finden Sie unter <a href="https://msdn.microsoft.com/library/dwhawy9k(v=vs.110).aspx">Standard</a> und <a href="https://msdn.microsoft.com/library/0c899ak8(v=vs.110).aspx">Custom</a>.) Im Kontext, dass diese Funktion ausgeführt wird, bestimmt die Kultur, die den Formatnummern verwendet wird.</td>
 <td>Für EN-US Kultur <strong>ZAHLENFORMAT (0.45, &quot;p&quot;)</strong> gibt <strong>&quot;45,00 %&quot;</strong> zurück. <strong>ZAHLENFORMAT (10,45, &quot;#&quot;)</strong> gibt <strong>&quot;10&quot;</strong> zurück.</td>
 </tr>
 <tr>
 <td>ZAHLENFORMAT (Zahl, Format, Kultur)</td>
-<td>Gibt eine Zeichenfolgedarstellung der angegebenen Zahl im angegebenen Format und Kultur zurück. (Informationen zu unterstützten Formaten, finden Sie unter <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings">Standard</a> und <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">Benutzerdefiniert</a>.).</td>
+<td>Gibt eine Zeichenfolgedarstellung der angegebenen Zahl im angegebenen Format und Kultur zurück. (Informationen zu unterstützten Formaten, finden Sie unter <a href="https://docs.microsoft.com/dotnet/standard/base-types/standard-numeric-format-strings">Standard</a> und <a href="https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings">Benutzerdefiniert</a>.).</td>
 <td><strong>ZAHLENFORMAT (10/3, „F2“, „de“)</strong> gibt <strong>3,33</strong> zurück, <strong>ZAHLENFORMAT (10/3, „F2“, „en-us“)</strong> gibt hingegen <strong>3.33</strong> zurück.</td>
 </tr>
 <tr>

@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kfend
 ms.search.scope: Core, Operations, Talent
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6b934b87cb5098641fba8c5b9214a0b2b6cde40d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2e13b43812e0d6f8b50cb3fcf65f277afbe9e806
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552860"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1849762"
 ---
 # <a name="employee-development-power-bi-content"></a>Power BI-Inhalt zur Mitarbeiterentwicklung
 
@@ -41,7 +41,7 @@ Die Berichte, die im Power BI-Inhalt zur **Mitarbeiterentwicklung** enthalten si
 | Leistungsbewertungsanalyse   | Mitarbeiter nach der niedrigsten und höchsten Bewertung nach Stelle, Mitarbeiterbewertungen für Abteilung, Mitarbeiter nach Bewertung nach Positionstyp sowie die niedrigsten und höchsten Bewertungen nach Position |
 | Mitarbeiterleistungsanalyse | Mitarbeiterbewertungen für ausgewählten Bewertung nach Vorgesetztem |
 
-Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Die Diagramme und die Kacheln auf allen diesen Berichten können gefiltert und an das Dashboard geheftet werden. Weitere Informationen dazu, wie Sie in Power BI filtern und anheften, finden Sie unter [Erstellen und Konfigurieren eines Dashboard](https://powerbi.microsoft.com/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 

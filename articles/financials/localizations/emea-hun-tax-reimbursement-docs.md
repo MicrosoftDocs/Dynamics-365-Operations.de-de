@@ -9,18 +9,18 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.search.region: Austria
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f7ae1baf4c79b7938fcf666e43e8e71087a4f64
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fb87d4c0455a6c34d12a5cebd0a1d614f41fc07e
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1545475"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852485"
 ---
 # <a name="tax-reimbursement-documents-for-hungary"></a>Steuerrückerstattungsdokumente für Ungarn
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e78d0a82d3ca66a6912ea1a9517296ca241edf1c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559037"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742931"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations – Lagerorte scannen
 
@@ -36,7 +36,7 @@ Damit Sie diese Funktion verwenden können, müssen Sie 1.2.0.0 Version des Ware
 ## <a name="setup"></a>Einrichten
 In der Anzeige der Warehousing-Anwendung können Sie auswählen, ob die Kamera für Scannen von Strichcodes verwendet wird. Wenn Sie **Verwenden Sie die Kamera als Scanner** aktivieren, können Sie die Kamera auf jedem Eingabefeld verwenden, bei dem der bevorzugte Eingabemodus auf **Scannen** festgelegt ist. 
 
-Um zu steuern, ob ein Eingabefeld gescannt werden soll, legen Sie auf der Seite **Lagerort-App-Feldnamen** in Dynamics 365 for Finance and Operations **Bevorzugter Eingabemodus** auf **Scannen** fest. Wenn diese Option aktiviert ist, kann eine Kamera für das Scannen in der Warehousing-App verwendet werden. Informationen darüber, wie Sie App-Feldnamen im Warehousing konfigurieren, finden Sie unter [Konfigurieren Sie App-Feldnamen in der Warehousing-App](https://docs.microsoft.com/en-us/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+Um zu steuern, ob ein Eingabefeld gescannt werden soll, legen Sie auf der Seite **Lagerort-App-Feldnamen** in Dynamics 365 for Finance and Operations **Bevorzugter Eingabemodus** auf **Scannen** fest. Wenn diese Option aktiviert ist, kann eine Kamera für das Scannen in der Warehousing-App verwendet werden. Informationen darüber, wie Sie App-Feldnamen im Warehousing konfigurieren, finden Sie unter [Konfigurieren Sie App-Feldnamen in der Warehousing-App](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Unterstützte Strichcodeformate
 Die Formate der allgemeinsten Strichcodes einschließlich Code 128 Code 39, Codes 93, EAN-8, EAN-13, UPC-A und QR unterstützt. 

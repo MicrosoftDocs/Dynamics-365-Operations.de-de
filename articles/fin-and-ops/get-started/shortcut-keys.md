@@ -3,7 +3,7 @@ title: Tastenkombinationen
 description: In Dynamics 365 for Finance and Operations stehen die folgenden Tastenkombinationen zur Verfügung.
 author: jasongre
 manager: AnnBe
-ms.date: 12/12/2017
+ms.date: 07/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 497fdb303abb9fe94caa1ebc03da005b88a40e4b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 95a6b6bd70c4a5bb684c605d364a28b85ed4e120
+ms.sourcegitcommit: d88d3d504e85c5bf6f6e9dc842488a2b644261cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561832"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1780057"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -138,9 +138,13 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Einen Bereich von Zeilen dem ausgewählten Satz hinzufügen<blockquote>[!NOTE] Diese Verknüpfung gilt nur für Szenarien mit Mehrfachauswahl.</blockquote>         | UMSCHALT+KLICK                     |
 | Zur nächsten/vorherigen Seite mit Daten wechseln                                                                                   | BILD-AUF / BILD-AB             |
 | Am unteren Ende des Rasters eine neue Zeile erstellen                                                                             | NACH-UNTEN-TASTE (von der letzten Zeile)  |
-| Alle Zeilen auswählen oder löschen                                                                                               | STRG+UMSCHALT+M                    |
 | Zum ersten Datensatz wechseln                                                                                               | STRG+POS1                       |
 | Zum letzten Datensatz wechseln                                                                                                | STRG+ENDE                        |
+| Alle Zeilen auswählen oder löschen                                                                                               | STRG+UMSCHALT+M                    |
+| Zur ersten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, F                    |
+| Zur nächsten markieren Zeile wechseln                                                                                            | ALT+UMSCHALT+M, L                    |
+| Zur vorherigen markieren Zeile wechseln                                                                                        | ALT+UMSCHALT+M, P                    |
+| Zur letzten markierten Zeile wechseln                                                                                           | ALT+UMSCHALT+M, N                    |
 | Die Standardaktivität in einem Raster ausführen<blockquote>[!NOTE] Die Tastenkombination wird aktiviert, wenn der Fokus auf einer Zelle liegt, die einen Link enthält und alle Zellen in dieser Spalte Links haben</blockquote> | EINGABETASTE                           |
 | Fokus zwischen ausgewählter Zeile und Kopfzeile umschalten                                                               | ALT+UMSCHALT+H                     |
 | Die aktuelle Spalte vergrößern/verkleinern (mit Fokus in der Kopfzeile)                                                  | NACH-RECHTS-TASTE / NACH-LINKS-TASTE        |

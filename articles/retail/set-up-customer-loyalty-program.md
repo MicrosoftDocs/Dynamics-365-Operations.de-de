@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 94f8cf5b5753c530c42327e251a2102b876c1c8a
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
+ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606871"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1863771"
 ---
 # <a name="loyalty-overview"></a>Überblick über die Loyalität
 
@@ -83,15 +83,15 @@ Einzelhandel hat neue Loyalitätsfunktionen als Teil der Freigabe vom Oktober 20
     > [!NOTE]
     > Die Einnahmeregeln innerhalb eines Treueschemas sind zusätzlich. Wenn Sie beispielsweise eine Regel erstellen, einem Mitglied der Stufe Gold 10 Punkte für jeden US-Dollar zu geben und Sie auch eine Regel für einen Debitor mit Zugehörigkeit "Veteran" erstellen, bei dem er 5 Punkte für jeden US-Dollar erhält, dann würde ein Veteran, der gleichzeitig den Status Gold hat, für 1 US-Dollar 15 Punkte erhalten, da sich der Debitor für beide Positionen qualifiziert. Wenn der Veteran-Debitor kein Mitglied mit Gold-Status ist, dann würde er 5 Punkte für jeden US-Dollar erhalten. Wenn Sie die Änderungen in den Kanälen widerzuspiegeln, aktivieren Sie die **Prozesstreueschemen** und **1050** (Loyalitätsinformationen) Einzelvorgänge.
     
-    ![Erträge basieren auf Zugehörigkeit](./media/Affiliation%20based%20earning.png "Ertärge basierend auf Zugehörigkeit")
+    ![Erträge basieren auf Zugehörigkeit](./media/Affiliation-based-earning.png "Ertärge basierend auf Zugehörigkeit")
 
 - Einzelhändler habeb oftmals Sonderpreise für eine bestimmte Debitorengruppe, für die sie die Treueprogramme nicht anwenden möchten. Beispielsweise Großhändler oder Mitarbeiter, die speziellen Preise und keine Treuepunkte erhalten. Allgemein werden "Zuordnungen" verwendet, um besondere Preise für diese Kundengruppen bereitzustellen. Um bestimmte Debitorengruppen vom Erwerb von Treuepunkten auszuschliessen. kann der Einzelhändler mindestens eine Zuordnungen unter **Ausgeschlossene Zuordnungen** im Bereich Treueschemas angeben. So können Debitoren, die von einer Zuordnung ausgeschlossenen und bestehende Treuprogrammmitglieder sind, keine Treuepunkte für Ihre Einkäufe verdienen. Wenn Sie die Änderungen in den Kanälen widerzuspiegeln, aktivieren Sie die **Prozesstreueschemen** und **1050** (Loyalitätsinformationen) Einzelvorgänge.
 
-    ![Ausgeschlossene Zuordnungen](./media/Excluded%20affiliations.png "Zuordnungen vom Erwerben von Treuepunkten ausschliessen")
+    ![Ausgeschlossene Zuordnungen](./media/Excluded-affiliations.png "Zuordnungen vom Erwerben von Treuepunkten ausschliessen")
     
 - Einzelhändler können Treuekartennummern in den Kanälen generieren. Vor der Aktualisierung im Oktober 2018 konnten Einzelhändler physische Treuekarten verwenden oder eine Treuekarte mithilfe einiger eindeutiger Debitoreninformationen wie Telefonnummer generieren. Zum Aktivieren der automatischen Erstellung von Treuekarten in den Ladengeschäften aktivieren Sie **Generieren Sie Treuekartennummer** im Funktionsprofil, das dem Shop zugeordnet ist. Für Online Kanäle können Einzelhändler das IssueLoyaltyCard API verwenden, um Treuekarten für Debitoren zu verwenden. Einzelhändler können entweder eine Treuekartennummer zu diesem API eingeben, das verwendet wird, um die Treuekarte zu generieren, oder das System verwendet den Treuekartenummernkreis in Dynamics 365 for Retail. Wenn der Nummernkreis nicht vorhanden ist, und der Einzelhändler keine Treuekartennummer beim Anrufe des API bereitstellt, wird ein Fehler angezeigt.
 
-    ![Treuekarte erstellen](./media/Generate%20loyalty%20card.png "Erstellt automatisch Treuekartennummer")
+    ![Treuekarte erstellen](./media/Generate-loyalty-card.png "Erstellt automatisch Treuekartennummer")
 
 - Erworbene und eingelöste Treuepunkte werden nun für jede Buchung und alle Aufträge für die Verkaufsposition gespeichert, sodass der gleiche Betrag rückerstattet oder zurückgenommen werden kann bei vollständigen oder teilweisen Rücklieferungen Darüber hinaus bietet die Sichtbarkeit für Punkte auf der Verkaufspositionsebene die Funktion für Callcenterbenutzer, Debitorenfragen zu der Anzahl gewonnenen oder ausgegebenen Punkten pro Position zu beantworten. Vor dieser Änderung wurden Belohnungspunkte immer bei Rücklieferungen neu berechnet, was zu einem anderen als der ursprüngliche Betrag ergab, wenn die Einnahme- oder Einlösungsregeln geändert wurden, und auch die Callcenterbenutzer hatten auf der Punktaufschlüsselung nicht die Sichtbarkeit. Die Punkte können mit dem Formular **Kartenbuchungen** für jede Treuekarte angezeigt werden. Um diese Funktion zu aktivieren, aktivieren Sie die Konfiguration **Treuepunkte pro Auftragsposition buchen** unter der Registerkarte **Freigegebene Einzelhandelsparameter** \> **Allgemein**.
 
@@ -100,26 +100,26 @@ Einzelhandel hat neue Loyalitätsfunktionen als Teil der Freigabe vom Oktober 20
 
 - Einzelhändler können die betreffende Periode für jeden Belohnungspunkt nun definieren. Eine betreffende Periodenkonfiguration definiert die Dauer vom Erwerbungsdatum, nachdem die Treuepunkte für die Debitoren zur Verfügung stehen. Nicht übertragene Punkte können in der Spalte **Nicht übertragene Punkte** auf der Seite **Treuekarten** angezeigt werden. Darüber hinaus können Einzelhändler die maximalen Treuepunkte pro Treuekarte definieren. Dieses Feld kann verwendet werden, um die Auswirkung des Treuepunktebetrugs zu reduzieren. Wenn die maximalen Prämienpunkte erreicht wurden, kann der Benutzer keine Punkte mehr erwerben. Der Einzelhändler kann entscheiden, solche Karten zu sperren, bis der potenzielle Betrug untersucht wurde. Wenn der Einzelhändler den Betrug bestätigt, kann der Einzelhändler die Treuekarte für den Debitor sperren und den Debitor auch als gesperrt markieren. Klicken Sie hierfür auf die Eigenschft **Debitor für Treuepunkteregistrierung sperren** und wählen Sie **Ja** unter **Alle Debitoren** auf dem Inforegister **Einzelhandel**. Den gesperrten Debitoren kann nun keine Treuekarte mehr in einem der Kanäle ausgestellt werden.
 
-    ![Übertragen und maximal vergebende Punkte](./media/Vesting%20and%20maximum%20reward%20points.png "Definieren Sie die Übertragung und die maximale Anzahl Punkte")
+    ![Übertragen und maximal vergebende Punkte](./media/Vesting-and-maximum-reward-points.png "Definieren Sie die Übertragung und die maximale Anzahl Punkte")
 
 - Zuordnungen werden verwendet, um bestimmte Preise und Rabatte bereitzustellen, aber es gibt gewisse Zuordnungen, die der Einzelhändler seinen Kunden nicht anzeigen möchten. Beispielsweise wird eine Zugehörigkeit mit dem Titel "Debitor mit hohen Ausgaben" nicht von allen Kunden gut aufgenommen. Darüber hinaus gibt es bestimmte Zuordnungen, die nicht im Shop verwaltet werden sollen, beispielsweise Mitarbeiter, weil Sie nicht möchten, dass die Kassierer entscheiden, wer ein Mitarbeiter ist und so Mitarbeiter-basierte Rabatte gewährt. Einzelhändler können die Zuordnungen nun auswählen, die in den Einzelhandelskanälen ausgeblendet werden sollen. Die Zuordnungen, die als **Ausblenden in den Kanälen** markiert sind, können nicht am POS angezeigt, hinzugefügt oder entfernt werden. Allerdings werden die Preise und Rabatte, die der Zugehörigkeit zugeordnet werden, noch zu den Produkten zugeordnet.
 
-    ![Zugehörigkeit verbergen](./media/Hide%20affiliations.png "Zugehörigkeit in Kanälen verbergen")
+    ![Zugehörigkeit verbergen](./media/Hide-affiliations.png "Zugehörigkeit in Kanälen verbergen")
     
 - Callcenterbenutzer können die Aktivitäten nun für einen Debitor mithilfe der Treuekarteinformationen einfacher suchen und zu den Treuekarten- und Treuekartenbuchungsseiten des Debitors von der Seite **Kundendienst** aus navigieren.
 
-    ![Kundendienst](./media/Customer%20service.png "Treuekarteninformationen für den Kunden finden")
+    ![Kundendienst](./media/Customer-service.png "Treuekarteninformationen für den Kunden finden")
     
 - Wenn eine Treuekarte beeinträchtigt wird, muss eine Ersatzkarte generiert werden und die vorhandenen Punkte in die neue Karte übertragen werden. Der Ersetzungskartenfluss ist in dieser Version vereinfacht worden. Darüber hinaus können Debitoren einen Teil oder alle Treuepunkte Freunden oder Familie schenken. Wenn Punkte übertragen werden, werden Punkte-Regulierungseinträge für jede Treuekarte erstellt. Die Ersetzungskarte und die Saldoübertragungsfunktionen können über die Seite **Treuekarten** aufgerufen werden.
 
-    ![Punkte ersetzen und übertragen](./media/Replace%20and%20transfer%20points.png "Treuekarte ersetze oder Saldo übertragen")
+    ![Punkte ersetzen und übertragen](./media/Replace-and-transfer-points.png "Treuekarte ersetze oder Saldo übertragen")
     
 - Einzelhändler können die Effizienz eines Kanals erfassen, um bestimmten Debitoren in einem Treueprogramm zu registrieren. Die Registrierungsquelle für die Treuekarten wird nun gespeichert, sodass dieser Einzelhändler Berichte zu diesen Daten ausführen kann. Die Registrierungsquelle wird automatisch für alle ausgegebenen Treuekarten von MPOS/CPOS oder von den E-Commerce-Kanälen aufgezeichnet. Bei den Treuekarten, die von der Backofficebewerbung ausgestellt werden, kann der Callcenterbenutzer entsprechend einen Kanal auswählen.
 - In den früheren Versionen konnten Einzelhänder MPOS/CPOS nutzen, um Treuepunkte für Debitoren in einem Shop als Zahlung zu leisten. Allerdings konnte in diesen Programmen der Kassier den Währungswertbetrag nicht anzeigen, der für die aktuelle Buchung angewendet werden kannm weil der Treusaldo in Treupunkten angezeigt wird. Der Kassierer musste die Punkte mit der Währungskonvertierung umrechnen, bevor er die Punkte als Zahlung annehmen konnte. In der aktuellen Version nachdem Positionen der Transaktion hinzugefügt wurden, kann der Kassierer den Betrag sehen, den die Treuepunkte für die aktuelle Transaktion abdecken. Dadurch können gewisse oder alle Treuepunkte einfacher für die Transaktion angewendet werden. Darüber hinaus kann der Kassierer die Punkte anzeigen, die in die nächste 30 Tage ablaufen werden, sodass er den Debitor motivieren kann, die verfallenden Punkte fürr diese Transaktion zu verwenden.
 
-    ![Punkte, die vom Treusaldo abgedeckt werden](./media/Points%20covered%20by%20loyalty%20balance.png "Zeigt Saldo, der von Treupunkten abgedeckt ist")
+    ![Punkte, die vom Treusaldo abgedeckt werden](./media/Points-covered-by-loyalty-balance.png "Zeigt Saldo, der von Treupunkten abgedeckt ist")
 
-    ![Verfallende Punkte](./media/Expiring%20points.png "Verfallende Punkte anzeigen")
+    ![Verfallende Punkte](./media/Expiring-points.png "Verfallende Punkte anzeigen")
 
 - Mit der Version 8.1.3 haben wir die Option "Zahlen nach Treue" im Callcenterkanal aktiviert. Um diese Option zu aktivieren, erstellen Sie einen Kundentreue-Zahlungsmitteltyp und ordnen Sie ihn dem Callcenter zu. 
 

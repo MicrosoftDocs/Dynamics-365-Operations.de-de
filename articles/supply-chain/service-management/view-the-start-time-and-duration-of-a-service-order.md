@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbf109c32811089a1a864e6279eee911c7825146
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b0a2407c3ac045ecb2a83af13f56a15930822aed
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553322"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1743002"
 ---
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>Anzeigen der Startzeit und der Dauer eines Serviceauftrags 
 
@@ -54,7 +54,7 @@ Darüber hinaus kann angezeigt werden, wann die Zeiterfassung für einen Service
 
 ## <a name="see-also"></a>Siehe auch
 
-[Formular "Serviceaufträge"](https://technet.microsoft.com/en-us/library/aa554361\(v=ax.60\))
+[Formular "Serviceaufträge"](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

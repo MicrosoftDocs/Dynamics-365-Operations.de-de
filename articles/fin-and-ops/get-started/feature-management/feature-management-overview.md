@@ -3,7 +3,7 @@ title: Überblick über die Funktionsverwaltung
 description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
 author: mikefalkner
 manager: AnnBe
-ms.date: 06/14/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,17 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: d6aea8651c00b975cf158492e38bb147e908bc56
-ms.sourcegitcommit: 672c94704e9a2b0ec7ee3c111d4ceb1bb8597969
+ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "1632052"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1862937"
 ---
 # <a name="feature-management-overview"></a>Überblick über die Funktionsverwaltung
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 Funktionen werden in jeder Version von Microsoft Dynamics 365 for Finance and Operations hinzugefügt und aktualisiert. Die Funktionsverwaltungserfahrung bietet einen Arbeitsbereich, in dem Sie eine Liste mit Funktionen anzeigen können, die in jede Version geliefert wurden. Standardmäßig sind neue Funktionen ausgeschaltet. Sie können den Arbeitsbereich verwenden, um sie zu aktivieren und die Dokumentation für sie anzuzeigen.
 
@@ -38,7 +39,7 @@ Sie können den Arbeitsbereich **Funktionsverwaltung** öffnen, indem Sie die en
 Die Funktionsliste für Positionsdetails enthält die folgenden Informationen:
 
 - **Funktionsname** – Eine Beschreibung der Funktion, die hinzugefügt wurde.
-- **Aktivierter Status** – Ein Symbol gibt an, ob eine Funktion aktiviert wurde (Häkchen), nicht aktiviert ist (leer), zur Aktivierung geplant ist (Uhr) oder obligatorisch aktiviert ist (Schloss). Die Einstellung, die hier angezeigt wird, wird für alle juristischen Personen verwendet. Beachten Sie, dass auch bei Aktivierung einer Funktion diese nach wie vor über die Sicherheit gesteuert wird. Daher ist die Funktion nur für Benutzer verfügbar, die auf der Grundlage ihrer Sicherheitsrolle Zugriff darauf haben. Sie ist ebenfalls nur in juristischen Personen verfügbar, auf die der Benutzer Zugriff hat.
+- **Aktivierter Status** – Ein Symbol gibt an, ob eine Funktion aktiviert wurde (Häkchen), nicht aktiviert ist (leer), zur Aktivierung geplant ist (Uhr), obligatorisch aktiviert ist (Schloss), Aufmerksamkeit erfordert, bevor Sie sie aktivieren (Warnung), oder nicht aktiviert werden kann (X). Die Einstellung, die angezeigt wird, wird für alle juristischen Personen verwendet. Beachten Sie, dass auch bei Aktivierung einer Funktion diese nach wie vor über die Sicherheit gesteuert wird. Daher ist die Funktion nur für Benutzer verfügbar, die auf der Grundlage ihrer Sicherheitsrolle Zugriff darauf haben. Sie ist ebenfalls nur in juristischen Personen verfügbar, auf die der Benutzer Zugriff hat.
 - **Aktivieren des Datums** – Das Datum, an dem die Funktion aktiviert wurde für das die Aktivierung geplant ist.
 - **Funktion hinzugefügt** – Das Datum, an dem die Funktion für Ihre Umgebung hinzugefügt wurde. Dieses Datum wird automatisch eingegeben, wenn Sie Ihre Umgebung beim monatlichen Versionszyklus aktualisieren.
 - **Modul** – Das Modul, das von der neuen Funktion betroffen ist.
@@ -59,6 +60,10 @@ Wenn eine Funktion nicht aktiviert wurde, wird eine **Jetzt Aktivieren**-Schaltf
 - Wählen Sie die Funktion aus, die Sie aktivieren möchten, und wählen Sie dann im Detailbereich **Jetzt Aktivieren** aus. Die Funktion ist aktiviert.
 
 Einige Funktionen können nicht deaktiviert werden, nachdem Sie diese aktiviert haben. Wenn die Funktion, die Sie zu aktivieren versuchen, nicht deaktiviert werden kann, erhalten Sie eine Warnung. An diesem Punkt können Sie **Abbrechen** auswählen, um den Vorgang abzubrechen und die Funktion deaktiviert lassen. Wenn Sie allerdings **Aktivieren** auswählen und die Funktion aktivieren, können Sie sie später nicht mehr deaktivieren.
+
+Bei einigen Funktionen wird eine Meldung angezeigt, die weitere Informationen bereitstellt, bevor Sie die Funktion aktivieren. Diese Funktionen sind mit einem gelben Warnsymbol gekennzeichnet. Sie sollten die zusätzlichen Information sorgfältig lesen, um besser zu verstehen, was geschieht, wenn die Funktion aktiviert ist. Allerdings können Sie immer noch **Aktivieren** auswählen, um die Funktion zu aktivieren.
+
+Bei einigen Funktionen wird eine Meldung angezeigt, dass die Funktion erst aktiviert werden kann, wenn eine Aktion unternommen wird. Diese Funktionen sind mit einem roten X-Symbol gekennzeichnet. Sie müssen erst die in der Beschreibung erläuterten Aktionen ausführen, bevor die Funktion aktiviert werden kann. Wenn Sie zum Beispiel eine Funktion erst verwenden können, wenn ein Konfigurationsschlüssel deaktiviert wurde, müssen Sie zuerst den Konfigurationsschlüssel deaktivieren und dann zur Funktionsverwaltung zurückkehren, um die Funktion zu aktivieren.
 
 Nach der Aktivierung einer Funktion wird eine Meldung unterhalb des Links **Mehr erfahren** im Detailbereich angezeigt. Diese Nachricht gibt entweder an, dass die Funktion aktiviert ist oder gibt das Datum an, wann die Funktion zur Aktivierung geplant ist. Sie wird jedes Mal angezeigt, wenn Sie die Funktion in der Funktionsliste auswählen.
 
@@ -84,12 +89,28 @@ Nach der Deaktivierung einer Funktion wird eine Meldung unterhalb des Links **Me
 
 Manchmal wird eine wichtige Funktion bereitgestellt, die automatisch aktiviert werden muss, wenn Sie eine Aktualisierung ausführen. Diese Funktionalität wird automatisch am Datum aktiviert, das im Feld **Aktivierungsdatum** angegeben ist. Für diese Funktionen wird eine Meldung unterhalb des Links **Mehr erfahren** im Detailbereich angezeigt. Diese Nachricht gibt entweder an, dass die Funktion aktiviert ist oder gibt das Datum an, wann die Funktion aktiviert wird. Sie wird jedes Mal angezeigt, wenn Sie die Funktion in der Funktionsliste auswählen.
 
+## <a name="enable-all-features"></a>Alle Funktionen aktivieren
+
+Standardmäßig sind alle Funktionen, die Ihrer Umgebung hinzugefügt werden deaktiviert. Sie können alle Funktionen aktivieren, indem Sie die Schaltfläche **Alle aktivieren** auswählen. 
+
+Wenn Sie **Alle aktivieren** auswählen, wird eine Option angezeigt, bei der Sie die folgenden Informationen angeben müssen:
+- Eine Liste aller Funktionen, die eine Bestätigung erfordern, bevor sie aktiviert werden können. Wenn Sie die Funktionen in der Liste aktivieren möchten, wählen Sie **Ja** für die Schaltfläche **Funktionen aktivieren, die eine Bestätigung erfordern** aus.
+- Eine Liste aller Funktionen wird angezeigt, die nicht aktiviert werden können. Diese Funktionen werden nicht aktiviert.
+
+Alle Funktionen, die aktiviert werden können, werden aktiviert. Wenn bereits geplant ist, dass eine Funktion in der Zukunft aktiviert wird, ändert sich der Zeitplan nicht. 
+
 ## <a name="turn-on-all-features-automatically"></a>Alle Funktionen automatisch aktivieren
 
 Standardmäßig sind alle Funktionen, die Ihrer Umgebung hinzugefügt werden deaktiviert, es sei denn, es handelt sich um erforderliche Funktionen. Wenn Sie jedoch automatisch alle neuen Funktionen aktivieren möchten, können Sie die Dropdownliste unter dem Arbeitsbereichtitel verwenden, um zu ändern, was geschieht, wenn neue Fähigkeiten hinzugefügt werden.
 
 - Wählen Sie **Alle neuen Funktionen sind standardmäßig aktiviert**, um automatisch alle neuen Funktionen zu aktivieren, die Ihrer Umgebung hinzugefügt werden.
 - Wählen Sie **Alle neuen Funktionen sind standardmäßig deaktiviert**, um automatisch alle neuen Funktionen zu deaktivieren, die Ihrer Umgebung hinzugefügt werden.
+
+Wenn Sie alle Funktionen automatisch aktivieren, werden dadurch alle Features aktiviert, die aktiviert würden, wenn Sie auf die Schaltfläche **Alle aktivieren** klicken. Die Funktionen, die eine Bestätigung erfordern, oder die Features, die erst nach einer Aktion aktiviert werden können, werden nicht aktiviert.
+
+## <a name="check-for-updates"></a>Nach Updates suchen
+
+Funktionen werden nach jeder Aktualisierung zu Ihrer Umgebung hinzugefügt. Sie können jedoch auch manuell auf Updates prüfen, indem Sie auf die Schaltfläche **Nach Updates suchen** klicken. Alle Funktionen, die dem System nach dem Update hinzugefügt wurden, werden der Liste mit Funktionen hinzugefügt. Wenn beispielsweise eine Flight-Funktion nach einer Veröffentlichung aktiviert wird, können Sie nach Updates suchen, und die Funktion wird dann Ihrer Liste hinzugefügt.
 
 ## <a name="assigning-roles"></a>Zuweisen von Rollen
 

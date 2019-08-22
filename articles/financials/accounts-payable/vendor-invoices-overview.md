@@ -3,14 +3,14 @@ title: Überblick über Kreditorenrechnungen
 description: Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
 author: abruer
 manager: AnnBe
-ms.date: 06/11/2019
+ms.date: 07/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d02eee989e5bebd1cad0b1392ec19aaa918d9db5
-ms.sourcegitcommit: f9444077022a6c678090d02d0f9d4ec0e54b7ca9
+ms.openlocfilehash: c69291214796847af7169cf261865860998f0d27
+ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "1625078"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863322"
 ---
 # <a name="vendor-invoices-overview"></a>Überblick über Kreditorenrechnungen
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
 
@@ -90,6 +90,13 @@ Während eine Kreditorenrechnung verwendet wird, kann sie von keinem anderen Ben
 Sie können die Seite **Kreditorenrechnung wiederherstellen** verwenden, um Kreditorenrechnungen wiederherzustellen oder freizugeben, die mehr als vier Stunden verwendet wurden, sodass sie bearbeitet werden können. Sie können diese Seite in der Navigation **Periodische Aufgabe** oder eine Kachel im Feld **Kreditorenrechnungseintrag** im Arbeitsbereich öffnen. Nachdem die Rechnung wiederhergestellt ist, wird sie zur Verarbeitung auf der Seite **Kreditorenrechnung** verfügbar.
 
 Auf die Seite **Wiederherstellen von Kreditorenrechnungen** kann nur zugegriffen werden, wenn die Sicherheitsberechtigung und die Rechte für das **Wiederherstellen der Kreditorenrechnungen in Bearbeitung** Ihnen zugewiesen wurde. Zudem muss der Parameter **Zulassen der Kreditorenrechnungswiederherstellung** auf der Seite **Kreditorenkontenparameter** aktiviert werden.
+
+## <a name="resetting-the-workflow-status-for-vendor-invoices-from-unrecoverable-to-draft"></a>Zurücksetzen des Workflowstatus für Kreditorenrechnungen von „Nicht behebbar“ zu „Entwurf“
+
+Eine Workflowinstanz, die aufgrund eines nicht behebbaren Fehlers beendet wurde, hat ein Workflowstatus **Nicht behebbar**. Wenn der Status eines Kreditorenrechnungsworkflows **Nicht behebbar** ist, können Sie ihn auf **Entwurf** zurücksetzen, indem Sie **Rückruf** auswählen. Sie können dann die Kreditorenrechnung bearbeiten. Diese Funktion ist verfügbar, wenn der Parameter **Entwurfsstatus für den Kreditorenrechnungs-Workflow zurücksetzen** auf der Seite **Funktionsverwaltung** aktiviert ist.
+
+Sie können die Seite **Workflowhistorie** verwenden, um den Workflowstatus auf **Entwurf** zurückzusetzen. Sie können diese Seite über **Kreditorenrechnung** oder die Navigation **Allgemein > Abfragen > Workflow** öffnen. Um den Workflowstatus auf **Entwurf** zurückzusetzen, wählen Sie **Rückruf** aus. Sie können den Workflowstatus auch auf „Entwurf“ zurücksetzen, indem Sie die Aktivität **Rückruf** auf der Seite **Kreditorenrechnung** oder **Ausstehende Kreditorenrechnungen** auswählen. Nachdem der Workflowstatus auf **Entwurf** zurückgesetzt ist, wird er zur Verarbeitung auf der Seite **Kreditorenrechnung** verfügbar.
+
 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

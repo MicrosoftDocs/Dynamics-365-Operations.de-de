@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 28871
 ms.search.region: Germany
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b0960688fc5f6b37d5e80079c389ea5d18b2766
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b57f6e7d6183f0bb0c592c9520be982f9958bc2c
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568711"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852280"
 ---
 # <a name="print-a-separate-label-for-credit-memos-that-originate-from-sales"></a>Eine separate Beschriftung für die Gutschriften, die vom Vertrieb stammen, drucken
 

@@ -19,19 +19,19 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 5363c64cd1a475f0047c079d9166718ddc765f02
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fbc75702c9db1e877addc4605dcb444c344dfa5c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562360"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742446"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-finance-and-operations"></a>Kontakte direkt von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator) vertraut sein.
+> Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
 
 Dieses Thema beschreibt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um die Entitäten „Kontakt (Kontakte)” und „Kontakt (Debitoren)” direkt aus Microsoft Dynamics 365 for Sales mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
 

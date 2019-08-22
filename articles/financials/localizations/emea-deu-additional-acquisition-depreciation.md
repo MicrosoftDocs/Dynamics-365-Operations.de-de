@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetAcquisitionMethod, AssetDepreciationProfile
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: 12791
 ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09ba17d3ac28b630f6193284019b5cd0c9f1ece7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f020c2b9a92a032f4c339de811d8c7bb11b30f58
+ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558841"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "1852296"
 ---
 # <a name="additional-acquisition-depreciation"></a>Zusätzliche Anschaffungsabschreibung
 

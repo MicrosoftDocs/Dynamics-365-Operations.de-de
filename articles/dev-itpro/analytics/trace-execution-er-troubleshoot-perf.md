@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 55f3fd95a87bcf62824021ebfbf3bcd11af6013f
-ms.sourcegitcommit: f6581bab16225a027f4fbfad25fdef45bd286489
+ms.openlocfilehash: 7ec16bea1e4f7685f95178f848ba7348a06c31f3
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "1703874"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741502"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Ausführung von EB-Formaten nachverfolgen, um Leistungsprobleme zu behandeln
 
@@ -104,7 +104,7 @@ Gehen Sie davon aus, dass Sie das Entwerfen der ersten Version der EB-Lösung be
 ### <a id='import-configuration'></a>Importieren einer EB-Konfiguration aus RCS nach Finance and Operations
 
 1. Bei Finance and Operations-Instanz anmelden.
-2. Für dieses Tutorial importieren Sie Konfigurationen aus Ihrer RCS-Instanz (wo Sie Ihre EB-Komponenten entwerfen) in Ihre Finance and Operations-Instanz (wo Sie sie testen und schließlich benutzen). Daher müssen Sie sicherstellen, dass alle erforderlichen Artefakte vorbereitet wurden. Anweisungen finden Sie unter der Prozedur [Importieren von elektronischen Berichtstellungskonfigurationen (EB) aus Regulatory Configuration Services (RCS)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. Für dieses Tutorial importieren Sie Konfigurationen aus Ihrer RCS-Instanz (wo Sie Ihre EB-Komponenten entwerfen) in Ihre Finance and Operations-Instanz (wo Sie sie testen und schließlich benutzen). Daher müssen Sie sicherstellen, dass alle erforderlichen Artefakte vorbereitet wurden. Anweisungen finden Sie unter der Prozedur [Importieren von elektronischen Berichtstellungskonfigurationen (EB) aus Regulatory Configuration Services (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
 3. Gehen Sie folgendermaßen vor, um die Konfigurationen von RCS nach Finance and Operations zu importieren:
 
     1. Im Arbeitsbereich **Elektronische Berichterstellung** in der Kachel für den Konfigurationsanbieter **Litware, Inc.** wählen Sie **Repositorys** aus.

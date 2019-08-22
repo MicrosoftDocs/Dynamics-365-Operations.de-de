@@ -3,13 +3,12 @@ title: Gespeicherte Ansichten
 description: In diesem Thema wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
 manager: AnnBe
-ms.date: 06/05/2019
+ms.date: 08/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Core, Operations
@@ -17,17 +16,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: ea2f2dbd615480bb76e1d04a106ae69bf6f45f4b
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: 9d19987a44c467381828acb81b6161601268d84f
+ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620777"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "1863059"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
 [!include [banner](../includes/banner.md)]
-[!include [private preview banner](../includes/private-preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Einführung
 Die Personalisierung spielt eine wichtige Rolle und erlaubt es Benutzern und Organisationen können,  die Benutzerfreundlichkeit in Microsoft Dynamics 365 for Finance and Operations zu optimieren, um ihren Anforderungen zu entsprechen. Weitere Details über die Personalisierung, finden Sie unter [Personalisieren Sie die Benutzerfreundlichkeit](personalize-user-experience.md).
@@ -49,13 +48,13 @@ Es gibt zwei Größenvarianten der Ansichts-Auswahl:
 
 -   **Große Ansichts-Auswahl**: Seiten, die prominent eine Liste haben, verfügen über eine größere Ansichts-Auswahl aus mehreren Gründen. Am wichtigsten ist, dass die größere Anzeigen-Auswahl die Seiten angezeigt, bei denen die Ansicht benutzerdefinierte Filter enthalten kann. Da Filter in der Ansicht enthalten sind, garantiert die größere Anzeigen-Auswahl auch, dass die Ansichtsnamen häufig die beste Beschreibung der Angaben enthalten, die auf dem Bildschirm angezeigt werden und die Erwartung ist, dass Benutzer häufiger auf diesen Seitentypen zwischen Ansichten wechseln.  
  
--   **Kleine Ansichts-Auswahlen**: Alle anderen ganzseitigen Formulare beinhalten eine kleinere Ansichts-Auswahl, die neben der Seitenbeschriftung angezeigt wird. Ansichten auf diesen Seiten enthalten Personalisierungen (und keine benutzerdefinierte Filter). Auf diesen Seiten umfasst die Formularbeschriftung oder der Datensatztitel häufig die wichtigsten Informationen oben im Formular. Das kleinere Format gibt auch eine niedrigere erwartete Häufigkeit für das Wechseln auf diesen Seiten. 
+-   **Kleine Ansichts-Auswahlen**: Alle anderen ganzseitigen Formulare (mit Ausnahme von Arbeitsbereichen und des Dashboards) beinhalten eine kleinere Ansichts-Auswahl, die neben der Seitenbeschriftung angezeigt wird. Ansichten auf diesen Seiten enthalten Personalisierungen (und keine benutzerdefinierte Filter). Auf diesen Seiten umfasst die Formularbeschriftung oder der Datensatztitel häufig die wichtigsten Informationen oben im Formular. Das kleinere Format gibt auch eine niedrigere erwartete Häufigkeit für das Wechseln auf diesen Seiten. 
  
 Wenn Sie im Feld Ansichtsnamen klicken, wird die Ansichts-Auswahl geöffnet und zeigt die Liste der verfügbaren Ansichten für diese Seite an
 
 -    **Klassische Ansicht**: Die klassische Ansicht ist die Standardansicht der Seite ohne explizite übernommenen Personalisierungen.  
 -    **Persönliche Ansichten**: Die Ansichten ohne Vorhängeschlösser stellen Ihre persönlichen Ansichten dar. Dies sind Ansichten, die Sie entweder erstellt haben oder die IHnen ein Administrator zugewiesen hat.  
--    **Gesperrte Ansichten**: Einiges Ansichten (wie die klassische Ansicht und Ansichten, die für Ihre Rolle veröffentlicht sind) verwenden ein Vorhängeschloss neben der Eingabe im Formular und zeigen an, dass Sie diese Ansichten nicht bearbeiten können. Allerdings werden implizite Personalisierungen um die Seitenverwendung automatisch gespeichert, beispielsweise zum Ändern der Breite einer Rasterspalte oder zum Erweitern oder Reduzieren des Inforegisters. Sie können eine persönliche Ansicht basierend auf einer gesperrten Ansicht mithilfe der Aktivität **Eine Kopie speichern** erstellen, wenn Sie Personalisierungsrechte haben.
+-    **Gesperrte Ansichten**: Einiges Ansichten (wie die klassische Ansicht und Ansichten, die für Ihre Rolle veröffentlicht sind) verwenden ein Vorhängeschloss neben der Eingabe im Formular und zeigen an, dass Sie diese Ansichten nicht bearbeiten können. Allerdings werden implizite Personalisierungen, die die Seitenverwendung widerspiegeln, automatisch gespeichert, beispielsweise zum Ändern der Breite einer Rasterspalte oder zum Erweitern oder Reduzieren des Inforegisters. Sie können eine persönliche Ansicht basierend auf einer gesperrten Ansicht mithilfe der Aktivität **Eine Kopie speichern** erstellen, wenn Sie Personalisierungsrechte haben.
 -    **Neue Ansichten**: Veröffentlichte Ansichten, die noch nicht geöffnet wurden, werden mit einem Funken auf der linken Seite des Ansichtsnamens abgegrenzt.  
 
 Um zu einer anderen Ansicht zu wechseln, öffnen Sie die Ansichts-Auswahl und wählen Sie die Ansicht aus, die Sie laden möchten. 
@@ -75,7 +74,7 @@ Wenn Sie die diese Änderungen speichern möchten, führen Sie die folgenden Sch
      3.    Wählen Sie **Speichern**.
 
 ## <a name="changing-the-default-view"></a>Die Standardansicht ändern
-Die Standardansicht ist die Anzeige, die das System versucht zu öffnen, wenn Sie zur Seite navigieren. Sie sollten dieses auf die Anzeige festlegen, die Sie voraussichtlich oft verwenden werden.  
+Die Standardansicht ist die Anzeige, die das System versucht zu öffnen, wenn Sie zur Seite navigieren. Sie sollten dieses auf die Anzeige festlegen, die Sie voraussichtlich am häufigsten verwenden werden.  
 
 Um die Standardansicht für eine Seite zu ändern, führen Sie die folgenden Schritte aus: 
 1.  Wechseln Sie zur Ansicht, die Sie standardmäßig verwenden. 
@@ -100,14 +99,14 @@ Sämtliche Änderungen, die an diesem Dialogfeld vorgenommen werden, treten in K
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Verwalten von Personalisierungen auf Organisationsebene mit Ansichten
 Um die Verbesserungen beim Verwalten von Personalisierungen auf Organisationsebene zu verstehen, betrachten wir zuerste, wie die Verwaltung der Personalisierung vor diesen Ansichten gearbeitet hat.  
 
-Ohne Ansichten würden Administratoren einen Satz Personalisierungen für eine Seite für einen Benutzer, eine Benutzergruppe oder für Benutzer verwenden, die das Personalisierungsformular nutzen. Wenn diese Benutzer Personalisierungsrechte hatten, werden die Personalisierungen dieser Seite angewendet. Allerdings gab es keine Möglichkeit, weitere Benutzer daran zu hindern, die Seite weiter zu personalisieren, was bedeutete, dass die Organisation nicht sicherstellen konnte, dass die Benutzer eine konsistente Benutzeroberfläche hatten. Wenn diese Benutzern keine Personalisierungsrechte haben, werden die Personalisierungen, die Ihnen von einem Administrator zugewiesen wurden, nicht geladen. Wenn neue Benutzer bei einer Organisation angestellt wurden, müssen Administratoren manuell die erforderlichen Personalisierungen für den Benutzer laden. Es gab keinen automatischen Mechanismus für das Angeben bestimmter Personalisierungen, die für diesen Benutzer verfügbar sein sollten.
+Ohne Ansichten würden Administratoren einen Satz Personalisierungen für eine Seite über die Seite „Personalisierung“ auf einen Benutzer oder eine Benutzergruppe anwenden. Wenn diese Benutzer Personalisierungsrechte hatten, werden die Personalisierungen dieser Seite angewendet. Allerdings gab es keine Möglichkeit, weitere Benutzer daran zu hindern, die Seite weiter zu personalisieren, was bedeutete, dass die Organisation nicht sicherstellen konnte, dass die Benutzer eine konsistente Benutzeroberfläche hatten. Wenn diese Benutzern keine Personalisierungsrechte haben, werden die Personalisierungen, die Ihnen von einem Administrator zugewiesen wurden, nicht geladen. Wenn neue Benutzer bei einer Organisation angestellt wurden, müssen Administratoren manuell die erforderlichen Personalisierungen für den Benutzer laden. Es gab keinen automatischen Mechanismus, um anzugeben, dass ein bestimmter Satz Personalisierungen für Benutzer in dieser Rolle verfügbar sein sollte.
 
 Mit der gespeicherten Ansichtsfunktion wird die organisatorische Verwaltung von Personalisierungen viel einfacher, primär aufgrund der Möglichkeit, Ansichten für Sicherheitsrollen zu veröffentlichen. Nachdem eine Ansicht veröffentlich wurde, kann jeder Benutzer mit der Rolle diese Ansicht anzeigen und nutzen, unabhängig von der Möglichkeit des Benutzers, diese zu personalisieren. Während jeden Benutzer eine Kopie der veröffentlichten Ansicht hat, in der die Seitenverwendung (implizite Personalisierungen) automatisch angewendet wird, kann kein Benutzer Personalisierungen explizite speichern oder Aktualisierungen für die Abfrage der veröffentlichten Ansicht speichern (d.h., dass veröffentlichte Ansichten gesperrt sind). Wenn neue Benutzer eine Rolle zugewiesen erhalten, die in der Ansicht veröffentlicht ist, sehen sie automatisch die Ansichten, die ihren Rollen zugewiesen sind, ohne jegliche Aktivität vom Administrator. Ebenso wenn sich die Rollen eines Benutzers in der Organisation ändern, sind die Ansichten, die der alten Rolle zugeordnet sind, nicht mehr verfügbar ohne eine erneute Aktivität vom Administrator. Aktualisierungen an einer veröffentlichten Ansicht können einfach an Benutzern verteilt werden, indem die Ansicht zu den entsprechenden Sicherheitsrollen erneut veröffentlicht wird.
 
 Dies Veröffentlichungsfunktion ermöglicht es Organisationen, Unternehmensstandardansichten zu definieren, die für ihr Geschäft für Benutzer in bestimmten Sicherheitsrollen optimiert werden.  
 
 ## <a name="publishing-views"></a>Veröffentlichte Ansichten
-Während des Veröffentlichungsprozesses können Ansichten an mindestens einer Sicherheitsrolle zugewiesen werden und das heißt, dass jeder Benutzer mit der Rolle in der Lage ist, auf diese Ansicht zuzugreifen und diese zu verwenden, obwohl sie die Ansicht nicht bearbeiten können. Aktuell besitzen nur Systemadministratoren Rechte für die Aktivität **Veröffentlichen** im Ansichtsauswahl-Dropdownmenü.  
+Während des Veröffentlichungsprozesses können Ansichten an mindestens einer Sicherheitsrolle zugewiesen werden und das heißt, dass jeder Benutzer mit der Rolle in der Lage ist, auf diese Ansicht zuzugreifen und diese zu verwenden, obwohl sie die Ansicht nicht bearbeiten können. Derzeit besitzen nur Systemadministratoren Rechte für die Aktivität **Veröffentlichen** im Dropdownmenü der Ansichts-Auswahl, aber in einer zukünftigen Aktualisierung wird eine neue Sicherheitsrolle verfügbar sein, um anderen vertrauenswürdigen Benutzern Veröffentlichungsrechte zu gewähren.  
 
 Führen Sie folgende Schritte aus, um eine Ansicht zu veröffentlichen. 
 1.  Erstellen und Speichern einer persönlichen Kopie der Ansicht, die veröffentlicht werden soll. 
@@ -150,14 +149,19 @@ Sämtliche Änderungen, die an diesem Dialogfeld vorgenommen werden, treten in K
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Wie aktiviere ich gespeicherte Ansichten im meine Umgebung? 
-Um gespeicherte Ansichten zu aktivieren, muss ein Systemadministrator folgende Schritte ausführen: 
-1.  Gehen Sie zur Seite **Benutzereinstellungen** mithilfe der Navigationssuche. 
-2.  Die Registerkarte **Einstellungen** auswählen.
-3.  Legen Sie die Option **Gespeicherte Ansicht aktiveren** auf **Ja** fest.
+Um gespeicherte Ansichten zu aktivieren, während sich die Funktion in der Vorschau befindet, führen die unten aufgeführten Schritte aus: 
 
-Nachdem diese Funktion aktiviert ist, beginnen alle nachfolgenden Benutzersitzungen mit den aktivierten Ansichten.  
+1.  **Flight aktivieren**: Führen Sie die folgende SQL-Anweisung aus: 
 
-Beachten Sie, dass, wenn die Personalisierung für die Umgebung deaktiviert wird, Ansichten aktiviert werden, wenn Sie die oben genannten Schritte ausführen. Dies liegt daran, dass die Ansichtsfunktion auf dem Personalisierungsuntersystem erstellt wird.
+    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('Dynamics.AX.Application.CLISavedViewsEnableFeature', 1, 0, 5637144576);`
+
+2.  **Funktion suchen**: Navigieren Sie zum Arbeitsbereich **Funktionsverwaltung**. Wenn **Gespeicherte Ansichten** nicht in der Liste angezeigt wird, wählen Sie die Schaltfläche **Nach Updates suchen** aus.   
+
+3.  **Funktion aktivieren**: Suchen Sie die Funktion **Gespeicherte Ansichten** in der Liste mit Funktionen, und klicken Sie auf die Schaltfläche **Jetzt aktivieren** im Detailbereich.
+
+Alle folgenden Benutzersitzungen beginnen mit aktivierten gespeicherten Ansichten.  
+
+Beachten Sie, dass, wenn die Personalisierung für die Umgebung deaktiviert ist, Ansichten deaktiviert werden, wenn Sie die oben genannten Schritte ausführen. Dies liegt daran, dass die Ansichtsfunktion auf dem Personalisierungsuntersystem erstellt wird.
 
 ### <a name="what-happens-to-existing-personalizations-when-views-are-enabled"></a>Was passiert an vorhandenen Personalisierungen, wenn Ansichten aktiviert werden? 
 Wenn Ansichten aktiviert sind, werden alle vorhandenen Personalisierungen für einen Benutzer und ein Formular in eine neue Ansicht namens **Meine Ansicht** gespeichert, die automatisch als Standardansicht festgelegt wird. Damit wird sichergestellt, dass es eine konsistente Benutzerfreundlichkeit gibt bevor und nachdem Ansichten aktiviert werden, mit Ausnahme des Ansichtsauswahlteuerelements, das auf Formularen angezeigt wird.  
@@ -166,7 +170,7 @@ Wenn Ansichten aktiviert sind, werden alle vorhandenen Personalisierungen für e
 Ansichten sind auf den meisten jedoch nicht auf allen Seiten in Finance and Operations verfügbar. Im Speziellen sind Ansichten in allen Ganzseitenseiten ausgenommen Dashboards und Arbeitsbereiche verfügbar. Nicht-Voll-Bildschirmseiten, die Dialogfelder, Drop-Down-Dialogfelder, Suchen, erweiterte Vorschauen unterstützen aktuell ebenfalls keine Ansichten. Ansichtenunterstützung für zusätzliche Seitentypen wie Arbeitsbereiche und Dialogfelder werden für eine zukünftige Aktualisierung berücksichtigt werden.   
 
 ### <a name="who-is-allowed-to-publish-views"></a>Wer kann Ansichten veröffentlichen?
-Momentan sind Systemadministratoren die einzigen Benutzer, die über die Rechte verfügen, Ansichten zu veröffentlichen.  Eine neue Sicherheitsrolle ist geplant, die Debitoren mehr Flexibilität geben soll, wer veröffentlichen kann.  
+Momentan sind Systemadministratoren die einzigen Benutzer, die über die Rechte verfügen, Ansichten zu veröffentlichen.  Eine neue Sicherheitsrolle ist für ein zukünftiges Update geplant, die Debitoren mehr Flexibilität geben soll, wer veröffentlichen kann.  
 
 ### <a name="why-am-i-not-able-to-save-filters-with-this-view"></a>Warum kann ich keine Filter in dieser Ansicht speichern? 
 Es gibt mehrere Gründe, warum ein Filter ggf. nicht zum Speichern in einer Ansicht angezeigt wird: 
@@ -179,4 +183,4 @@ Es gibt mehrere Gründe, warum ein Filter ggf. nicht zum Speichern in einer Ansi
      
   Sie sollten durch eine Informationsmeldung benachrichtigt werden, wenn die Ansicht geladen wird. Sie können auch prüfen, indem Sie zu dieser Ansicht wechseln, nachdem die Seite geladen wird, damit sollte die Ansichtsabfrage unabhängig ausgeführt werden.  
 
-- Die gewünschte Seite wird nicht ordnungsgemäß unterstützt, da sie möglicherweise die Ansichtsabfrage vollständig ignoriert. Melden Sie solche Instanzen über den Mechanismus **Rückmeldung**. Um zur Rückmeldungsseite zu gelangen, klicken Sie auf **Hilfe und Support** und anschließend auf **Rückmeldung**.  
+- Die gewünschte Seite unterstützt Ansichten möglicherweise nicht ordnungsgemäß, da sie die Ansichtsabfrage eventuell vollständig ignoriert oder mit einer temporären Tabelle arbeitet, deren Daten nicht persistent sind. 
