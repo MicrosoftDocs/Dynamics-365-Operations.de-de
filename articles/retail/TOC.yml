@@ -26,9 +26,10 @@
       href: retail-support.md
     - name: FAQ zu Dienstupdates für eine Version
       href: ../fin-and-ops/get-started/one-version.md
-- name: Grundlagen des Implementierungslebenszyklus
-  href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
+- name: Implementierung der Lebenszyklusverwaltung
   items:
+    - name: Implementierung der Lebenszyklusverwaltung – Startseite
+      href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
     - name: Microsoft FastTrack for Dynamics 365
       href: ../fin-and-ops/get-started/fasttrack-dynamics-365-overview.md
     - name: Onboarding
@@ -161,10 +162,12 @@
       href: assortments.md
     - name: Onlineshops einrichten
       href: online-stores.md
-    - name: Eine Retail Hardware station konfigurieren und installieren
+    - name: Eine Retail Hardware Station konfigurieren und installieren
       href: retail-hardware-station-configuration-installation.md
     - name: Zeit und Anwesenheit in Retail
       href: retail-time-attendance.md
+    - name: Erstellen und Ändern von Ladenöffnungszeiten
+      href: dev-itpro/store-hours.md
 - name: 'Moderne Verkaufsstellen (Modern Point of Sale, MPOS) und Cloud POS'
   items:
     - name: Zwischen MPOS und Cloud POS wählen
@@ -317,8 +320,10 @@
       href: create-manage-attributes.md
     - name: Einzelhandelsprodukte einrichten
       href: set-up-retail-products.md
-    - name: Verwalten von Retail-Produktkategorien und Produkten
+    - name: Verwalten von Einzelhandelsproduktkategorien und ‑produkten
       href: category-management-product-creation.md
+    - name: Ändern Sie die Sortierreihenfolge für Verkaufentitäten
+      href: custom-order-categories-nav-retail-prod-hierarchy.md
     - name: Produktdimensionen
       href: ../supply-chain/pim/product-dimensions.md
     - name: Strichcodes einrichten
@@ -499,9 +504,10 @@
       href: tasks/use-continuity-program.md
     - name: Konfigurieren von Arbeitskräften im Einzelhandel
       href: tasks/worker.md
-- name: Einzelhandelsentwicklung und Verwaltung
-  href: dev-itpro/dev-retail-home-page.md
+- name: Retail-Entwicklung und ‑Verwaltung
   items:
+    - name: Retail für IT-Experten und Entwickler
+      href: dev-itpro/dev-retail-home-page.md
     - name: Architektur
       items:
         - name: Retail Komponenten
@@ -596,8 +602,10 @@
           href: dev-itpro/pos-handler.md
         - name: Verpackungsinformationen zu POS-Erweiterungen anzeigen
           href: dev-itpro/view-pos-extension-package-details.md
-    - name: Hardware Station und Erweiterbarkeit
+    - name: Hardware-Station und Erweiterbarkeit
       href: dev-itpro/hardware-station-extensibility.md
+    - name: Integrieren Sie POS mit einem neuen Hardwaregerät
+      href: dev-itpro/hardware-device-extension.md
     - name: Retail Server-Erweiterbarkeit
       items:
         - name: Retail Server-OData-Controller erweitern
@@ -652,14 +660,15 @@
           href: dev-itpro/create-windows-installer-payment-connector.md
         - name: Verwenden von Zahlungsdaten
           href: payment-connector-data-fields.md
-        - name: Vorbeugung doppelter Zahlungen für Zahlungsconnector aktivieren
+        - name: Aktivierung von duplizierterm Zahlungsschutz für den Zahlungsverbinder
           href: dev-itpro/duplicate-payment-protection.md
     - name: Retail SDK
-      href: dev-itpro/retail-sdk/retail-sdk-overview.md
       items:
+        - name: Retail-SDK-Architektur
+          href: dev-itpro/retail-sdk/retail-sdk-overview.md
         - name: Anstehende Änderungen im Retail SDK
           href: dev-itpro/UpcomingSDKChanges.md
-        - name: Zusammenführen der Buildsysteme für Retail und Finance and Operations
+        - name: Zusammenführen der Systeme für Retail und Finance and Operations
           href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
         - name: "Retail\_SDK-Erweiterbarkeitsbeispiele"
           href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
@@ -667,9 +676,8 @@
           href: dev-itpro/retail-sdk/retail-sdk-packaging.md
         - name: Retail SDK-Beispiele
           href: dev-itpro/retail-sdk/retail-sdk-samples.md
-          items:
-            - name: Erweiterungspunkte für Lieferscheine
-              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Erweiterungspunkte für Lieferscheine
+          href: dev-itpro/extensions-shipping-carrier-integration.md
         - name: Kanaldatenbankerweiterungen
           href: dev-itpro/channel-db-extensions.md
         - name: Aktivieren benutzerdefinierter CDX-Synchronisierung per Erweiterung
