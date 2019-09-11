@@ -1,9 +1,9 @@
 ---
 title: Rechnungsdaten mit dem Rechnungspool in das Kreditorensystem eingeben
-description: Diese Aufgabenanleitung zeigt Ihnen, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen.
+description: In diesem Thema wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen.
 author: abruer
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,66 +15,56 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6b870613512a8f4a5c19a0a05cd72b35ea32861b
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: f7d72c1d98100d1313109e8b5e55df02e2163174
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843216"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867701"
 ---
-# <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a><span data-ttu-id="b1205-103">Rechnungsdaten mit dem Rechnungspool in das Kreditorensystem eingeben</span><span class="sxs-lookup"><span data-stu-id="b1205-103">Key invoice data into the AP system using invoice pool</span></span>
+# <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a><span data-ttu-id="b89e5-103">Rechnungsdaten mit dem Rechnungspool in das Kreditorensystem eingeben</span><span class="sxs-lookup"><span data-stu-id="b89e5-103">Key invoice data into the AP system using invoice pool</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="b1205-104">Diese Aufgabenanleitung zeigt Ihnen, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b1205-104">This task guide will show you how to use the invoice register to create invoices.</span></span>  <span data-ttu-id="b1205-105">Nehmen Sie anschließend den Rechnungspool, um die Rechnung mit einer Bestellung abzugleichen und die Ausgaben auf der Kreditorenrechnungsseite abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="b1205-105">Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.</span></span>
+<span data-ttu-id="b89e5-104">In diesem Thema wird beschrieben, wie das Rechnungsbuch verwendet wird, um Rechnungen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-104">This topic describes how to use the invoice register to create invoices.</span></span> <span data-ttu-id="b89e5-105">Nehmen Sie anschließend den Rechnungspool, um die Rechnung mit einer Bestellung abzugleichen und die Ausgaben auf der Kreditorenrechnungsseite abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-105">Then use the invoice pool to match the invoice to a purchase order and finalize the expense in the vendor invoice page.</span></span>
 
 
-## <a name="create-a-purchase-order"></a><span data-ttu-id="b1205-106">Eine Bestellung erstellen</span><span class="sxs-lookup"><span data-stu-id="b1205-106">Create a purchase order</span></span>
-1. <span data-ttu-id="b1205-107">Wechseln Sie zu "Kreditoren" > "Bestellungen" > "Bestellungen".</span><span class="sxs-lookup"><span data-stu-id="b1205-107">Go to Accounts payable > Purchase orders > Purchase orders.</span></span>
-2. <span data-ttu-id="b1205-108">Klicken Sie auf "Neu", um eine neue Bestellung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b1205-108">Click New to create a purchase order.</span></span>
-3. <span data-ttu-id="b1205-109">Klicken Sie im Feld "Kreditorenkonto" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b1205-109">In the Vendor account field, click the drop down button to open the lookup.</span></span>
-4. <span data-ttu-id="b1205-110">Wählen Sie in der Liste einen Händler aus.</span><span class="sxs-lookup"><span data-stu-id="b1205-110">Select the vendor from the list.</span></span> <span data-ttu-id="b1205-111">Beispielsweise Händler 1001.</span><span class="sxs-lookup"><span data-stu-id="b1205-111">For example, vendor 1001.</span></span>
-5. <span data-ttu-id="b1205-112">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="b1205-112">Click OK.</span></span>
-6. <span data-ttu-id="b1205-113">Klicken Sie im Feld "Artikelnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b1205-113">In the Item number field, click the drop down button to open the lookup.</span></span>
-7. <span data-ttu-id="b1205-114">Suchen Sie die Services-Artikelnummer in der Liste.</span><span class="sxs-lookup"><span data-stu-id="b1205-114">Find the services item number in the list.</span></span> <span data-ttu-id="b1205-115">Wählen Sie z. B. S0001 aus.</span><span class="sxs-lookup"><span data-stu-id="b1205-115">For example, select S0001.</span></span>
-8. <span data-ttu-id="b1205-116">Klicken Sie auf die Artikelnummer und wählen Sie diese aus.</span><span class="sxs-lookup"><span data-stu-id="b1205-116">Click on the item number and select it.</span></span>
-    * <span data-ttu-id="b1205-117">Der Nettobetrag ist 75,00.</span><span class="sxs-lookup"><span data-stu-id="b1205-117">The net amount is 75.00.</span></span>  <span data-ttu-id="b1205-118">Der ist der Betrag, den wir auf der Rechnung erwarten.</span><span class="sxs-lookup"><span data-stu-id="b1205-118">That is the amount that we will expect on the invoice.</span></span>  
-9. <span data-ttu-id="b1205-119">Klicken Sie im Aktivitätsbereich auf "Einkauf".</span><span class="sxs-lookup"><span data-stu-id="b1205-119">On the action pane, click Purchase.</span></span>
-10. <span data-ttu-id="b1205-120">Klicken Sie auf "Bestätigen".</span><span class="sxs-lookup"><span data-stu-id="b1205-120">Click Confirm.</span></span>
+## <a name="create-a-purchase-order"></a><span data-ttu-id="b89e5-106">Eine Bestellung erstellen</span><span class="sxs-lookup"><span data-stu-id="b89e5-106">Create a purchase order</span></span>
+1. <span data-ttu-id="b89e5-107">Wechseln Sie im Navigationsbereich zu **Module > Kreditorenkonten > Bestellungen > Bestellungen**.</span><span class="sxs-lookup"><span data-stu-id="b89e5-107">In the navigation pane, go to **Modules > Accounts payable > Purchase orders > Purchase orders**.</span></span>
+2. <span data-ttu-id="b89e5-108">Klicken Sie auf **Neu** , um eine neue Bestellung zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-108">Select **New** to create a purchase order.</span></span>
+3. <span data-ttu-id="b89e5-109">Wählen Sie im Feld **Kreditorenkonto** einen Lieferant aus der Dropdownliste, um eine Option auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-109">In the **Vendor account** field, select a vendor for the drop-down list.</span></span> <span data-ttu-id="b89e5-110">Wählen Sie z. B. Händler **1001** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-110">For example, select vendor **1001**.</span></span>
+4. <span data-ttu-id="b89e5-111">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="b89e5-111">Select **OK**.</span></span>
+5. <span data-ttu-id="b89e5-112">Wählen Sie im Feld **Artikelnummer** die Services-Artikelnummer aus der Dropdown-Liste aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-112">In the **Item number** field, select the services item number in the drop-down list.</span></span> <span data-ttu-id="b89e5-113">Wählen Sie z. B. **S0001** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-113">For example, select **S0001**.</span></span> <span data-ttu-id="b89e5-114">Der Nettobetrag ist 75,00.</span><span class="sxs-lookup"><span data-stu-id="b89e5-114">The net amount is 75.00.</span></span>  <span data-ttu-id="b89e5-115">Der ist der Betrag, den wir auf der Rechnung erwarten.</span><span class="sxs-lookup"><span data-stu-id="b89e5-115">That is the amount that we will expect on the invoice.</span></span>  
+6. <span data-ttu-id="b89e5-116">Wählen Sie im Aktivitätsbereich **Einkauf** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-116">On the action pane, select **Purchase**.</span></span>
+7. <span data-ttu-id="b89e5-117">Wählen Sie **Bestätigen** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-117">Select **Confirm**.</span></span>
 
-## <a name="create-and-post-and-invoice"></a><span data-ttu-id="b1205-121">Erstellen und buchen und fakturieren</span><span class="sxs-lookup"><span data-stu-id="b1205-121">Create and post and invoice</span></span>
-1. <span data-ttu-id="b1205-122">Wechseln Sie zu "Kreditoren" > "Rechnungen" > "Rechnungsregister".</span><span class="sxs-lookup"><span data-stu-id="b1205-122">Go to Accounts payable > Invoices > Invoice register.</span></span>
-2. <span data-ttu-id="b1205-123">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b1205-123">Click New.</span></span>
-3. <span data-ttu-id="b1205-124">Öffnen Sie die Suche, um den Namen des Rechnungsregisters auswählen, das Sie verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="b1205-124">Open the lookup to select the name of the invoice register that you want to use.</span></span>
-4. <span data-ttu-id="b1205-125">Wählen Sie den Namen des Rechnungsregisters aus, den Sie benutzen möchten.</span><span class="sxs-lookup"><span data-stu-id="b1205-125">Select the name of the invoice register that you want to use.</span></span>
-5. <span data-ttu-id="b1205-126">Klicken Sie auf "Positionen", um das Register zu öffnen und Ausgabenpositionen einzugeben.</span><span class="sxs-lookup"><span data-stu-id="b1205-126">Click on Lines to open the register and enter expense lines.</span></span>
-6. <span data-ttu-id="b1205-127">Wählen Sie in der Suche einen Händler aus.</span><span class="sxs-lookup"><span data-stu-id="b1205-127">In the lookup, select a vendor.</span></span> <span data-ttu-id="b1205-128">Beispielsweise klicken Sie auf Händler 1001.</span><span class="sxs-lookup"><span data-stu-id="b1205-128">For example, click on vendor 1001.</span></span>
-7. <span data-ttu-id="b1205-129">Geben Sie im Feld "Rechnung" die Rechnungsnummer ein.</span><span class="sxs-lookup"><span data-stu-id="b1205-129">In the Invoice field, enter the invoice number.</span></span>
-8. <span data-ttu-id="b1205-130">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b1205-130">In the Description field, type a value.</span></span>
-9. <span data-ttu-id="b1205-131">Geben Sie im Feld "Kredit" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b1205-131">In the Credit field, enter a number.</span></span>
-10. <span data-ttu-id="b1205-132">Klicken Sie im Feld "Bestellung" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b1205-132">In the Purchase order field, click the drop down button to open the lookup.</span></span>
-11. <span data-ttu-id="b1205-133">Wählen Sie die Bestellung aus, die Sie zuvor erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="b1205-133">Select the purchase order that you created earlier.</span></span>
-12. <span data-ttu-id="b1205-134">Klicken Sie im Feld "Genehmigt von" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="b1205-134">In the Approved by field, click the drop down button to open the lookup.</span></span>
-13. <span data-ttu-id="b1205-135">Heben Sie eine genehmigende Person hervor und klicken Sie auf "Auswählen", um die genehmigende Person auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="b1205-135">Highlight an approver and click Select to select that approver.</span></span>
-14. <span data-ttu-id="b1205-136">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="b1205-136">Click Post.</span></span>
-15. <span data-ttu-id="b1205-137">Schließt das Formular.</span><span class="sxs-lookup"><span data-stu-id="b1205-137">Close the form.</span></span>
-16. <span data-ttu-id="b1205-138">Schließt das Formular.</span><span class="sxs-lookup"><span data-stu-id="b1205-138">Close the form.</span></span>
+## <a name="create-and-post-and-invoice"></a><span data-ttu-id="b89e5-118">Erstellen und buchen und fakturieren</span><span class="sxs-lookup"><span data-stu-id="b89e5-118">Create and post and invoice</span></span>
+1. <span data-ttu-id="b89e5-119">Wechseln Sie im Navigationsbereich zu **Module > Kreditoren > Rechnungen > Rechnungserfassung**.</span><span class="sxs-lookup"><span data-stu-id="b89e5-119">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice register**.</span></span>
+2. <span data-ttu-id="b89e5-120">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-120">Select **New**.</span></span>
+3. <span data-ttu-id="b89e5-121">Öffnen Sie die Suche, um den Namen des Rechnungsregisters auswählen, das Sie verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="b89e5-121">Open the lookup to select the name of the invoice register that you want to use.</span></span>
+4. <span data-ttu-id="b89e5-122">Wählen Sie den Namen des Rechnungsregisters aus, den Sie benutzen möchten.</span><span class="sxs-lookup"><span data-stu-id="b89e5-122">Select the name of the invoice register that you want to use.</span></span>
+5. <span data-ttu-id="b89e5-123">Klicken Sie auf **Positionen**, um das Register zu öffnen und Ausgabenpositionen einzugeben.</span><span class="sxs-lookup"><span data-stu-id="b89e5-123">Select **Lines** to open the register and enter expense lines.</span></span>
+6. <span data-ttu-id="b89e5-124">Wählen Sie in der Suche einen Händler aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-124">In the lookup, select a vendor.</span></span> <span data-ttu-id="b89e5-125">Wählen Sie z. B. Händler **1001** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-125">For example, select vendor **1001**.</span></span>
+7. <span data-ttu-id="b89e5-126">Geben Sie im Feld **Rechnung** die Rechnungsnummer ein.</span><span class="sxs-lookup"><span data-stu-id="b89e5-126">In the **Invoice** field, enter the invoice number.</span></span>
+8. <span data-ttu-id="b89e5-127">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b89e5-127">In the **Description** field, type a value.</span></span>
+9. <span data-ttu-id="b89e5-128">Geben Sie im Feld **Kredit** eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="b89e5-128">In the **Credit** field, enter a number.</span></span>
+10. <span data-ttu-id="b89e5-129">Öffnen Sie im Feld **Bestellung** die Dropdownliste, um die Bestellung auszuwählen, die Sie eben erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="b89e5-129">In the **Purchase order** field, open the drop-down list to select the purchase order that you created earlier.</span></span>
+11. <span data-ttu-id="b89e5-130">Markieren Sie im Feld **Genehmigt von** einen Genehmiger in der Dropdownliste und klicken Sie **Auswählen**, um diesen auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-130">In the **Approved by** field, highlight an approver in the drop-down list and click **Select** to select that approver.</span></span>
+12. <span data-ttu-id="b89e5-131">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-131">Select **Post**.</span></span>
 
-## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a><span data-ttu-id="b1205-139">Öffnen einer Rechnung aus dem Pool und Abgleichen mit einer Bestellung, um den Rechnungsprozess abzuschließen</span><span class="sxs-lookup"><span data-stu-id="b1205-139">Open an invoice from the pool and match it to a purchase order to complete the invoice process</span></span>
-1. <span data-ttu-id="b1205-140">Wechseln Sie zu "Kreditoren" > "Rechnungen" > "Rechnungspool".</span><span class="sxs-lookup"><span data-stu-id="b1205-140">Go to Accounts payable > Invoices > Invoice pool.</span></span>
-2. <span data-ttu-id="b1205-141">Klicken Sie auf "Bestellung", um eine Kreditorenrechnung aus der Rechnung im Pool zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b1205-141">Click Purchase order to create a vendor invoice from the invoice in the pool.</span></span>
-3. <span data-ttu-id="b1205-142">Wählen Sie die Rechnung aus, die Sie prüfen möchten.</span><span class="sxs-lookup"><span data-stu-id="b1205-142">Select the invoice that you want to review.</span></span>
-4. <span data-ttu-id="b1205-143">Klicken Sie auf "Abgleichstatus", um den Abgleich abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="b1205-143">Click Update match status to complete the matching.</span></span>
-5. <span data-ttu-id="b1205-144">Klicken Sie im Aktivitätsbereich auf "Optionen".</span><span class="sxs-lookup"><span data-stu-id="b1205-144">On the action pane, click Options.</span></span>
-6. <span data-ttu-id="b1205-145">Klicken Sie auf "Ansicht ändern".</span><span class="sxs-lookup"><span data-stu-id="b1205-145">Click Change view.</span></span>
-7. <span data-ttu-id="b1205-146">Klicken Sie auf "Rasteransicht".</span><span class="sxs-lookup"><span data-stu-id="b1205-146">Click Grid view.</span></span>
-8. <span data-ttu-id="b1205-147">Klicken Sie auf "Buchen".</span><span class="sxs-lookup"><span data-stu-id="b1205-147">Click Post.</span></span>
-9. <span data-ttu-id="b1205-148">Schließt das Formular.</span><span class="sxs-lookup"><span data-stu-id="b1205-148">Close the form.</span></span>
-10. <span data-ttu-id="b1205-149">Wechseln Sie zu "Kreditoren" > "Kreditoren" > "Kreditoren".</span><span class="sxs-lookup"><span data-stu-id="b1205-149">Go to Accounts payable > Vendors > Vendors.</span></span>
-11. <span data-ttu-id="b1205-150">Wählen Sie den Händler aus, der auf der Bestellung war.</span><span class="sxs-lookup"><span data-stu-id="b1205-150">Select the vendor that was on the purchase order.</span></span> <span data-ttu-id="b1205-151">Wählen Sie z. B. Händler 1001 aus.</span><span class="sxs-lookup"><span data-stu-id="b1205-151">For example, select vendor 1001.</span></span>
-12. <span data-ttu-id="b1205-152">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="b1205-152">In the list, click the link in the selected row.</span></span>
-13. <span data-ttu-id="b1205-153">Klicken Sie im Aktivitätsbereich auf "Händler".</span><span class="sxs-lookup"><span data-stu-id="b1205-153">On the action pane, click Vendor.</span></span>
-14. <span data-ttu-id="b1205-154">Klicken Sie auf "Transaktionen".</span><span class="sxs-lookup"><span data-stu-id="b1205-154">Click Transactions.</span></span>
-15. <span data-ttu-id="b1205-155">Wählen Sie die Rechnung aus, die Sie erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="b1205-155">Select the invoice that you created.</span></span>
-    * <span data-ttu-id="b1205-156">Die Rechnungsbuchabgrenzung wurde storniert und auf das entsprechende Ausgabenkonto gebucht.</span><span class="sxs-lookup"><span data-stu-id="b1205-156">The invoice register accrual was reversed and posted to the appropriate expense account.</span></span>  
+## <a name="open-an-invoice-from-the-pool-and-match-it-to-a-purchase-order-to-complete-the-invoice-process"></a><span data-ttu-id="b89e5-132">Öffnen einer Rechnung aus dem Pool und Abgleichen mit einer Bestellung, um den Rechnungsprozess abzuschließen</span><span class="sxs-lookup"><span data-stu-id="b89e5-132">Open an invoice from the pool and match it to a purchase order to complete the invoice process</span></span>
+1. <span data-ttu-id="b89e5-133">Wechseln Sie im Navigationsbereich zu **Module > Kreditorenkonten > Rechnungen > Rechnungspool**.</span><span class="sxs-lookup"><span data-stu-id="b89e5-133">In the navigation pane, go to **Modules > Accounts payable > Invoices > Invoice pool**.</span></span>
+2. <span data-ttu-id="b89e5-134">Klicken Sie auf **Bestellung**, um eine Kreditorenrechnung aus der Rechnung im Pool zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-134">Select **Purchase order** to create a vendor invoice from the invoice in the pool.</span></span>
+3. <span data-ttu-id="b89e5-135">Wählen Sie die Rechnung aus, die Sie prüfen möchten.</span><span class="sxs-lookup"><span data-stu-id="b89e5-135">Select the invoice that you want to review.</span></span>
+4. <span data-ttu-id="b89e5-136">Klicken Sie auf **Abgleichstatus**, um den Abgleich abzuschließen.</span><span class="sxs-lookup"><span data-stu-id="b89e5-136">Select **Update match status** to complete the matching.</span></span>
+5. <span data-ttu-id="b89e5-137">Wählen Sie im Aktivitätsbereich **Optionen** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-137">On the action pane, select **Options**.</span></span>
+6. <span data-ttu-id="b89e5-138">Wählen Sie **Ansicht wechseln** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-138">Select **Change view**.</span></span>
+7. <span data-ttu-id="b89e5-139">Wählen SIe **Rasteransicht** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-139">Select **Grid view**.</span></span>
+8. <span data-ttu-id="b89e5-140">Wählen Sie **Buchen** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-140">Select **Post**.</span></span>
+9. <span data-ttu-id="b89e5-141">Schließt das Formular.</span><span class="sxs-lookup"><span data-stu-id="b89e5-141">Close the form.</span></span>
+10. <span data-ttu-id="b89e5-142">Wechseln Sie im Navigationsbereich zu **Module > Kreditorenkonten > Kreditoren > Kreditoren**.</span><span class="sxs-lookup"><span data-stu-id="b89e5-142">In the navigation pane, go to **Modules > Accounts payable > Vendors > Vendors**.</span></span>
+11. <span data-ttu-id="b89e5-143">Wählen Sie den Händler aus, der auf der Bestellung war.</span><span class="sxs-lookup"><span data-stu-id="b89e5-143">Select the vendor that was on the purchase order.</span></span> <span data-ttu-id="b89e5-144">Wählen Sie z. B. Händler **1001** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-144">For example, select vendor **1001**.</span></span>
+12. <span data-ttu-id="b89e5-145">Wählen Sie im Aktivitätsbereich **Kreditoren** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-145">On the action pane, select **Vendor**.</span></span>
+13. <span data-ttu-id="b89e5-146">Wählen Sie **Buchungen** aus.</span><span class="sxs-lookup"><span data-stu-id="b89e5-146">Select **Transactions**.</span></span>
+14. <span data-ttu-id="b89e5-147">Wählen Sie die Rechnung aus, die Sie erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="b89e5-147">Select the invoice that you created.</span></span> <span data-ttu-id="b89e5-148">Die Rechnungsbuchabgrenzung wurde storniert und auf das entsprechende Ausgabenkonto gebucht.</span><span class="sxs-lookup"><span data-stu-id="b89e5-148">The invoice register accrual was reversed and posted to the appropriate expense account.</span></span>  
 

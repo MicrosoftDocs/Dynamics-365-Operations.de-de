@@ -19,50 +19,55 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b74bc2d3133af7e87663a4e6bafb8780e0a6a66f
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 1473c3bad55734d5f83ee3e4c1654921b872f3bb
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797297"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873127"
 ---
-# <a name="execution-order-for-initial-sychronization-of-finance-and-operations-and-common-data-service"></a><span data-ttu-id="a0c43-103">Ausführungsreihenfolge der Erstsynchronisierung für Finance and Operations und Common Data Service</span><span class="sxs-lookup"><span data-stu-id="a0c43-103">Execution order for initial sychronization of Finance and Operations and Common Data Service</span></span>
+# <a name="execution-order-for-initial-synchronization-of-finance-and-operations-and-common-data-service"></a><span data-ttu-id="5e60f-103">Ausführungsreihenfolge der Erstsynchronisierung für Finance and Operations und Common Data Service</span><span class="sxs-lookup"><span data-stu-id="5e60f-103">Execution order for initial synchronization of Finance and Operations and Common Data Service</span></span>
 
-<span data-ttu-id="a0c43-104">Bevor Sie die Datenintegration verwenden, müssen Sie die anfänglichen Daten erstellen, die für Debitoren, Kreditoren und Kontakte erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="a0c43-104">Before you use data integration, you must create the initial data required for customers, vendors and contacts.</span></span> <span data-ttu-id="a0c43-105">Wenn Sie beispielsweise ein neues Element **Kreditorengruppe** erstellen und seine **Zahlungsbedingungen** als **Net30** festlegen möchten, müssen Sie vor dem Erstellen der **Kreditorengruppe** sicherstellen, dass **Net30** sowohl in Finance and Operations als auch in Common Data Service vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="a0c43-105">For example, if you want to create a new **Vendor group** item and set its **Terms of Payment** as **Net30**, then before you attempt to create the **Vendor group** item you need to make sure that **Net30** exists in both Finance and Operations and Common Data Service.</span></span> <span data-ttu-id="a0c43-106">(Bald wird eine Funktion für eine Dualschreibplattform namens **Initial Sync** veröffentlicht. Diese führt eine einmalige Datensynchronisierung zwischen Finance and Operations und Common Data Service im Rahmen der dualen Schreibeinrichtung durch.)</span><span class="sxs-lookup"><span data-stu-id="a0c43-106">(In the future, we will release a  dual-write platform functionality called **Initial Sync**. It will do a one-time data synchronization between Finance and Operations and Common Data Service as part of the dual-write setup.)</span></span>
+[!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a0c43-107">Tipps: Wir veröffentlichen eine Dualschreibzuordnung für alle Referenzdaten einschließlich **Zahlungsbedingungen**.</span><span class="sxs-lookup"><span data-stu-id="a0c43-107">Tips: We are releasing a dual-write map for all reference data including **Terms of Payment** (Payment Terms).</span></span> <span data-ttu-id="a0c43-108">Wenn Sie die anfänglichen Daten bereits in einem System haben, kann ein kleiner Updatevorgang in einem Datensatz einen Dualschreibvorgang in diesem Datensatz auslösen.</span><span class="sxs-lookup"><span data-stu-id="a0c43-108">If you already have the initial data in one system, a small update operation on a record can trigger dual-write on that record.</span></span> 
+[!include [preview](../includes/preview-banner.md)]
 
-<span data-ttu-id="a0c43-109">Sie müssen die folgende Prioritätsreihenfolge beachten und sicherstellen, dass die anfänglichen Daten sowohl in Finance and Operations als auch in Common Data Service verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="a0c43-109">You must follow the following order of precedence and make sure that the initial data is available on both Finance and Operations and Common Data Service.</span></span>   
+<span data-ttu-id="5e60f-104">Bevor Sie die Datenintegration verwenden, müssen Sie die anfänglichen Daten erstellen, die für Debitoren, Kreditoren und Kontakte erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="5e60f-104">Before you use data integration, you must create the initial data that is required for customers, vendors, and contacts.</span></span> <span data-ttu-id="5e60f-105">Angenommen, Sie möchten einen neuen **Kreditorengruppe**-Artikel erstellen und seinen **Zahlungsbedingungen**-Wert auf **Net30** festlegen.</span><span class="sxs-lookup"><span data-stu-id="5e60f-105">For example, you want to create a new **Vendor group** item and set its **Terms of Payment** value to **Net30**.</span></span> <span data-ttu-id="5e60f-106">In diesem Fall müssen Sie, bevor Sie versuchen, den **Kreditorengruppe**-Artikel zu erstellen, überprüfen, ob **Net30** in Microsoft Dynamics 365 for Finance and Operations und Common Data Service vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="5e60f-106">In this case, before you try to create the **Vendor group** item, you must make sure that **Net30** exists in both Microsoft Dynamics 365 for Finance and Operations and Common Data Service.</span></span> <span data-ttu-id="5e60f-107">(Bald wird eine Funktion für eine Dualschreibplattform namens Initial Sync von Microsoft veröffentlicht. Diese führt eine einmalige Datensynchronisierung zwischen Finance and Operations und Common Data Service im Rahmen der dualen Schreibeinrichtung durch.)</span><span class="sxs-lookup"><span data-stu-id="5e60f-107">(In the future, Microsoft will release dual-write platform functionality that is named Initial Sync. This functionality will do a one-time data synchronization between Finance and Operations and Common Data Service as part of the dual-write setup.)</span></span>
 
-## <a name="vendor"></a><span data-ttu-id="a0c43-110">Lieferant</span><span class="sxs-lookup"><span data-stu-id="a0c43-110">Vendor</span></span>
+> [!TIP]
+> <span data-ttu-id="5e60f-108">Microsoft veröffentlicht eine Dualschreibzuordnung für alle Referenzdaten einschließlich **Zahlungsbedingungen**.</span><span class="sxs-lookup"><span data-stu-id="5e60f-108">Microsoft is releasing a dual-write map for all reference data, including **Terms of Payment** (payment terms).</span></span> <span data-ttu-id="5e60f-109">Wenn Sie die anfänglichen Daten bereits in einem System haben, kann ein kleiner Updatevorgang in einem Datensatz einen Dualschreibvorgang in diesem Datensatz auslösen.</span><span class="sxs-lookup"><span data-stu-id="5e60f-109">If you already have the initial data in one system, a small update operation on a record can trigger dual-write on that record.</span></span>
 
-<span data-ttu-id="a0c43-111">Die Ausführungsreihenfolge für Kreditor ist:</span><span class="sxs-lookup"><span data-stu-id="a0c43-111">The order of execution for Vendor is:</span></span>
+<span data-ttu-id="5e60f-110">Sie müssen die folgende Prioritätsreihenfolge beachten und sicherstellen, dass die anfänglichen Daten sowohl in Finance and Operations als auch in Common Data Service verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="5e60f-110">You must follow the following order of precedence and make sure that the initial data is available in both Finance and Operations and Common Data Service.</span></span>
 
-```
-Vendor Group
-    Terms of payment
-        Payment day & lines
-        Payment schedule
-Vendor payment method
-```
+## <a name="vendor"></a><span data-ttu-id="5e60f-111">Lieferant</span><span class="sxs-lookup"><span data-stu-id="5e60f-111">Vendor</span></span>
 
-## <a name="customer-organization"></a><span data-ttu-id="a0c43-112">Debitor (Organisation)</span><span class="sxs-lookup"><span data-stu-id="a0c43-112">Customer (Organization)</span></span>
+<span data-ttu-id="5e60f-112">Hier die Reihenfolge der Ausführung für die **Kreditor**-Entität:</span><span class="sxs-lookup"><span data-stu-id="5e60f-112">Here is the order of execution for the **Vendor** entity:</span></span>
 
-<span data-ttu-id="a0c43-113">Die Ausführungsreihenfolge für Debitor ist:</span><span class="sxs-lookup"><span data-stu-id="a0c43-113">The order of execution for Customer is:</span></span>
+1. <span data-ttu-id="5e60f-113">Kreditorengruppe</span><span class="sxs-lookup"><span data-stu-id="5e60f-113">Vendor group</span></span>
 
-```
-Customer Group
-    Terms of payment
-        Payment day & lines
-        Payment 
-Customer payment method
-```
+    1. <span data-ttu-id="5e60f-114">Zahlungsbedingungen</span><span class="sxs-lookup"><span data-stu-id="5e60f-114">Terms of payment</span></span>
 
-## <a name="contact-person"></a><span data-ttu-id="a0c43-114">Kontakt (Person)</span><span class="sxs-lookup"><span data-stu-id="a0c43-114">Contact (Person)</span></span>
+        1. <span data-ttu-id="5e60f-115">Zahlungstag und -positionen</span><span class="sxs-lookup"><span data-stu-id="5e60f-115">Payment day and lines</span></span>
+        2. <span data-ttu-id="5e60f-116">Zahlungszeitplan</span><span class="sxs-lookup"><span data-stu-id="5e60f-116">Payment schedule</span></span>
 
-<span data-ttu-id="a0c43-115">Die Ausführungsreihenfolge für Kontakt ist:</span><span class="sxs-lookup"><span data-stu-id="a0c43-115">The order of execution for Contact is:</span></span>
+2. <span data-ttu-id="5e60f-117">Kreditorzahlungsmethode</span><span class="sxs-lookup"><span data-stu-id="5e60f-117">Vendor payment method</span></span>
 
-```
-Customer
-Vendor               
-```
+## <a name="customer-organization"></a><span data-ttu-id="5e60f-118">Debitor (Organisation)</span><span class="sxs-lookup"><span data-stu-id="5e60f-118">Customer (Organization)</span></span>
+
+<span data-ttu-id="5e60f-119">Hier die Reihenfolge der Ausführung für die **Debitor**-Entität:</span><span class="sxs-lookup"><span data-stu-id="5e60f-119">Here is the order of execution for the **Customer** entity:</span></span>
+
+1. <span data-ttu-id="5e60f-120">Debitorengruppe</span><span class="sxs-lookup"><span data-stu-id="5e60f-120">Customer group</span></span>
+
+    1. <span data-ttu-id="5e60f-121">Zahlungsbedingungen</span><span class="sxs-lookup"><span data-stu-id="5e60f-121">Terms of payment</span></span>
+
+        1. <span data-ttu-id="5e60f-122">Zahlungstag und -positionen</span><span class="sxs-lookup"><span data-stu-id="5e60f-122">Payment day and lines</span></span>
+        2. <span data-ttu-id="5e60f-123">Zahlung</span><span class="sxs-lookup"><span data-stu-id="5e60f-123">Payment</span></span> 
+
+2. <span data-ttu-id="5e60f-124">Zahlungsmethode für Debitoren</span><span class="sxs-lookup"><span data-stu-id="5e60f-124">Customer payment method</span></span>
+
+## <a name="contact-person"></a><span data-ttu-id="5e60f-125">Kontakt (Person)</span><span class="sxs-lookup"><span data-stu-id="5e60f-125">Contact (Person)</span></span>
+
+<span data-ttu-id="5e60f-126">Hier die Reihenfolge der Ausführung für die **Kontakt**-Entität:</span><span class="sxs-lookup"><span data-stu-id="5e60f-126">Here is the order of execution for the **Contact** entity:</span></span>
+
+1. <span data-ttu-id="5e60f-127">Debitor</span><span class="sxs-lookup"><span data-stu-id="5e60f-127">Customer</span></span>
+2. <span data-ttu-id="5e60f-128">Lieferant</span><span class="sxs-lookup"><span data-stu-id="5e60f-128">Vendor</span></span>
