@@ -1,9 +1,9 @@
 ---
 title: Übereinstimmung erstellen und verarbeiten
-description: Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen.
+description: Dieses Thema erklärt, wie Sie die Qualitätsmangelverwaltung auf Basis eines vorhandenen Qualitätsprüfungsauftrags ausführen.
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,65 +16,54 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e9cf42f80ef7a4c9c5f68a308386db5835c8f2e
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572810"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916644"
 ---
-# <a name="create-and-process-a-conformance"></a><span data-ttu-id="7d98d-103">Übereinstimmung erstellen und verarbeiten</span><span class="sxs-lookup"><span data-stu-id="7d98d-103">Create and process a conformance</span></span>
+# <a name="create-and-process-a-conformance"></a><span data-ttu-id="4847e-103">Übereinstimmung erstellen und verarbeiten</span><span class="sxs-lookup"><span data-stu-id="4847e-103">Create and process a conformance</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="7d98d-104">Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-104">Use this procedure to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="7d98d-105">Sie können diese Buchung im USMF-Vorführungsunternehmen ausführen und können die vorgeschlagenen Werte verwenden.</span><span class="sxs-lookup"><span data-stu-id="7d98d-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="7d98d-106">Normalerweise wird diese Prozedur aus einem Qualitätssekretär ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="7d98d-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="7d98d-107">Als erforderliches folgenden Schaltern "überprüfen die Qualität von Waren" Aufgabenerfassen aus.</span><span class="sxs-lookup"><span data-stu-id="7d98d-107">As a prerequisite, run the “Inspect the quality of goods” task recording.</span></span> <span data-ttu-id="7d98d-108">Um die Genehmigung einer Nichtübereinstimmung zu verarbeiten, muss der Benutzer der das Aufgabenerfassen ausführt einen "Name Wert besitzen, der auf der Benutzerseite zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="7d98d-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="7d98d-109">Um die Hinweisdokumente verwenden zu können, muss der Benutzer Handhabung von Dokumenten verfügen aktiviert in den Benutzeroptionen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
+<span data-ttu-id="4847e-104">Dieses Thema erklärt, wie Sie die Qualitätsmangelverwaltung auf Basis eines vorhandenen Qualitätsprüfungsauftrags ausführen.</span><span class="sxs-lookup"><span data-stu-id="4847e-104">This topic explains how to perform nonconformance management, based on an existing quality order.</span></span> <span data-ttu-id="4847e-105">Sie können diese Buchung im USMF-Vorführungsunternehmen ausführen und können die vorgeschlagenen Werte verwenden.</span><span class="sxs-lookup"><span data-stu-id="4847e-105">You can run this recording in the USMF demo company and can use the suggested values.</span></span> <span data-ttu-id="4847e-106">Normalerweise wird diese Prozedur aus einem Qualitätssekretär ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="4847e-106">Typically, this procedure is performed by a quality clerk.</span></span>  <span data-ttu-id="4847e-107">Als Voraussetzung müssen Sie die Anweisungen in [Qualität der Waren inspizieren](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) befolgen.</span><span class="sxs-lookup"><span data-stu-id="4847e-107">As a prerequisite, complete the instructions in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md).</span></span> <span data-ttu-id="4847e-108">Um die Genehmigung einer Nichtübereinstimmung zu verarbeiten, muss der Benutzer der das Aufgabenerfassen ausführt einen "Name Wert besitzen, der auf der Benutzerseite zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="4847e-108">To process the approval of a nonconformance, the user who runs the task recording must have a “Name” value assigned on the Users page.</span></span> <span data-ttu-id="4847e-109">Um die Hinweisdokumente verwenden zu können, muss der Benutzer Handhabung von Dokumenten verfügen aktiviert in den Benutzeroptionen.</span><span class="sxs-lookup"><span data-stu-id="4847e-109">To use the document notes, the user must also have Document handling activated in the user options.</span></span>
 
 
-## <a name="select-a-quality-order"></a><span data-ttu-id="7d98d-110">Wählen Sie einen Qualitätsprüfungsauftrag aus.</span><span class="sxs-lookup"><span data-stu-id="7d98d-110">Select a quality order</span></span>
-1. <span data-ttu-id="7d98d-111">Qualitätsprüfungsaufträge (Formular) anzeigen</span><span class="sxs-lookup"><span data-stu-id="7d98d-111">Go to Quality orders.</span></span>
-2. <span data-ttu-id="7d98d-112">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="7d98d-112">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="7d98d-113">Wählen Sie den Qualitätsprüfungsauftrag, der vom "überprüfen die Qualität von Waren" Aufgabenerfassen erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="7d98d-113">Select the quality order that was created from the "Inspect the quality of goods" task recording.</span></span>  
+## <a name="select-a-quality-order"></a><span data-ttu-id="4847e-110">Wählen Sie einen Qualitätsprüfungsauftrag aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-110">Select a quality order</span></span>
+1. <span data-ttu-id="4847e-111">Wechseln Sie im Navigationsbereich zu **Module > Lagerverwaltung > Periodische Aufgaben > Qualitätsmanagement > Qualitätsprüfungsaufträge**.</span><span class="sxs-lookup"><span data-stu-id="4847e-111">In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.</span></span>
+2. <span data-ttu-id="4847e-112">Wählen Sie in der Liste den Qualitätsprüfungsauftrag aus, der in [Qualität der Waren inspizieren](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="4847e-112">In the list, select the quality order that was created in [Inspect the quality of goods](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md).</span></span>  
 
-## <a name="create-a-nonconformance"></a><span data-ttu-id="7d98d-114">Erstellen einer Nichtübereinstimmung</span><span class="sxs-lookup"><span data-stu-id="7d98d-114">Create a nonconformance</span></span>
-1. <span data-ttu-id="7d98d-115">Klicken Sie auf Abfragen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-115">Click Inquiries.</span></span>
-2. <span data-ttu-id="7d98d-116">Nichtübereinstimmungen klicken</span><span class="sxs-lookup"><span data-stu-id="7d98d-116">Click Non conformances.</span></span>
-3. <span data-ttu-id="7d98d-117">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="7d98d-117">Click New.</span></span>
-4. <span data-ttu-id="7d98d-118">Klicken Sie im Feld "Problemtyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-118">In the Problem type field, click the drop-down button to open the lookup.</span></span>
-    * <span data-ttu-id="7d98d-119">Wählen Sie das Problem aus, wenn während der Inspektionsprozesses gefunden wurde.</span><span class="sxs-lookup"><span data-stu-id="7d98d-119">Select the problem that was found during the inspection process.</span></span>  
-5. <span data-ttu-id="7d98d-120">Klicken Sie im Feld "Problemtyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-120">In the Problem type field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="7d98d-121">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="7d98d-121">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="7d98d-122">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="7d98d-122">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="7d98d-123">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="7d98d-123">Click OK.</span></span>
+## <a name="create-a-nonconformance"></a><span data-ttu-id="4847e-113">Erstellen einer Nichtübereinstimmung</span><span class="sxs-lookup"><span data-stu-id="4847e-113">Create a nonconformance</span></span>
+1. <span data-ttu-id="4847e-114">Wählen Sie im Aktivitätsbereich **Abfragen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-114">In the action pane, select **Inquiries**.</span></span>
+2. <span data-ttu-id="4847e-115">Wählen Sie **Nichtübereinstimmungen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-115">Select **Non conformances**.</span></span>
+3. <span data-ttu-id="4847e-116">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-116">Select **New**.</span></span>
+4. <span data-ttu-id="4847e-117">Wählen Sie im Dropdownmenü des Feldes **Problemtyp**, das Problem aus, das während des Prüfprozesses gefunden wurde.</span><span class="sxs-lookup"><span data-stu-id="4847e-117">In the drop-down menu of the **Problem type** field, select the problem that was found during the inspection process.</span></span>  
+5. <span data-ttu-id="4847e-118">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="4847e-118">Select **OK**.</span></span>
 
-## <a name="approvereject-a-nonconformance"></a><span data-ttu-id="7d98d-124">Qualitätsmangeldatensätze genehmigen</span><span class="sxs-lookup"><span data-stu-id="7d98d-124">Approve/reject a nonconformance</span></span>
-1. <span data-ttu-id="7d98d-125">Klicken Sie auf Funktionen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-125">Click Functions.</span></span>
-2. <span data-ttu-id="7d98d-126">Die Nichtübereinstimmung genehmigen</span><span class="sxs-lookup"><span data-stu-id="7d98d-126">Click Approve non conformance.</span></span>
-    * <span data-ttu-id="7d98d-127">In vorliegenden Beispiel genehmigen Sie den Qualitätsmangel.</span><span class="sxs-lookup"><span data-stu-id="7d98d-127">For this example, approve the nonconformance.</span></span> <span data-ttu-id="7d98d-128">Genehmigte Qualitätsmängel können mit zugehörigen Arbeitsgängen zugeordnet werden, um Arbeit, die als Teil in der erfassenden zu erfassen Qualitätsmangelbehandlung und ausgeführt werden, wie in dieser Aufgabe, die Verarbeitung der Korrekturbehandlung.</span><span class="sxs-lookup"><span data-stu-id="7d98d-128">Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this task recording, the processing of correction handling.</span></span>  
-3. <span data-ttu-id="7d98d-129">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="7d98d-129">Click Yes.</span></span>
+## <a name="approvereject-a-nonconformance"></a><span data-ttu-id="4847e-119">Qualitätsmangeldatensätze genehmigen</span><span class="sxs-lookup"><span data-stu-id="4847e-119">Approve/reject a nonconformance</span></span>
+1. <span data-ttu-id="4847e-120">Wählen Sie **Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-120">Select **Functions**.</span></span>
+2. <span data-ttu-id="4847e-121">Wählen Sie **Nichtübereinstimmung genehmigen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-121">Select **Approve non conformance**.</span></span> <span data-ttu-id="4847e-122">In vorliegenden Beispiel genehmigen Sie den Qualitätsmangel.</span><span class="sxs-lookup"><span data-stu-id="4847e-122">For this example, approve the nonconformance.</span></span> <span data-ttu-id="4847e-123">Genehmigte Qualitätsmängel können zugehörigen Arbeitsgängen zugeordnet werden, um Arbeit, die als Teil der Qualitätsmangelbehandlung ausgeführt wird, und, wie in diesem Thema, der Verarbeitung der Korrekturbehandlung, erfasst wird.</span><span class="sxs-lookup"><span data-stu-id="4847e-123">Approved nonconformances can be associated with related operations to record work that is done as part of the nonconformance handling and, as in this topic, the processing of correction handling.</span></span>  
+3. <span data-ttu-id="4847e-124">Wählen Sie **Ja** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-124">Select **Yes**.</span></span>
 
-## <a name="create-a-correction-action"></a><span data-ttu-id="7d98d-130">Korrektur erstellen</span><span class="sxs-lookup"><span data-stu-id="7d98d-130">Create a correction action</span></span>
-1. <span data-ttu-id="7d98d-131">Korrekturen anklicken</span><span class="sxs-lookup"><span data-stu-id="7d98d-131">Click Corrections.</span></span>
-2. <span data-ttu-id="7d98d-132">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="7d98d-132">Click New.</span></span>
-3. <span data-ttu-id="7d98d-133">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="7d98d-133">In the list, mark the selected row.</span></span>
-4. <span data-ttu-id="7d98d-134">Klicken Sie im Feld "Personalnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-134">In the Personnel number field, click the drop-down button to open the lookup.</span></span>
-5. <span data-ttu-id="7d98d-135">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="7d98d-135">In the list, click the link in the selected row.</span></span>
-6. <span data-ttu-id="7d98d-136">Klicken Sie auf Auswählen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-136">Click Select.</span></span>
-7. <span data-ttu-id="7d98d-137">Klicken Sie auf Anhänge.</span><span class="sxs-lookup"><span data-stu-id="7d98d-137">Click Attach.</span></span>
-    * <span data-ttu-id="7d98d-138">Erstellen Sie einen Hinweis zur Korrektur.</span><span class="sxs-lookup"><span data-stu-id="7d98d-138">Create a note about the correction.</span></span> <span data-ttu-id="7d98d-139">In vorliegenden Beispiel ist die Aktivität, mit dem Kreditor in Verbindung mit Ihnen aufzunehmen, um den Qualitätsmangelfall zu erläutern.</span><span class="sxs-lookup"><span data-stu-id="7d98d-139">For this example, the action is to contact the vendor to discuss the nonconformance case.</span></span>  
-8. <span data-ttu-id="7d98d-140">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="7d98d-140">Click New.</span></span>
-9. <span data-ttu-id="7d98d-141">Klicken Sie auf Hinweis.</span><span class="sxs-lookup"><span data-stu-id="7d98d-141">Click Note.</span></span>
-    * <span data-ttu-id="7d98d-142">Beachten Sie, dass, abhängig von der Berichteinstellungen, verschiedene Dokumenttypen in den Berichten gedruckt werden können, die der Nichtübereinstimmung verwaltung zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="7d98d-142">Note that, depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.</span></span>  
-10. <span data-ttu-id="7d98d-143">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="7d98d-143">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="7d98d-144">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="7d98d-144">Close the page.</span></span>
+## <a name="create-a-correction-action"></a><span data-ttu-id="4847e-125">Korrektur erstellen</span><span class="sxs-lookup"><span data-stu-id="4847e-125">Create a correction action</span></span>
+1. <span data-ttu-id="4847e-126">Wählen Sie **Veränderungen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-126">Select **Corrections**.</span></span>
+2. <span data-ttu-id="4847e-127">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-127">Select **New**.</span></span>
+3. <span data-ttu-id="4847e-128">Wählen Sie im Feld **Personalnummer** der neuen Zeile den gewünschten Datensatz aus dem Dropdownmenü aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-128">In the **Personnel number** field of the new row, select the desired record from the drop down menu.</span></span>
+4. <span data-ttu-id="4847e-129">Klicken Sie auf **Auswählen**.</span><span class="sxs-lookup"><span data-stu-id="4847e-129">Click **Select**.</span></span>
+5. <span data-ttu-id="4847e-130">Wählen Sie **Zuordnen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-130">Select **Attach**.</span></span> <span data-ttu-id="4847e-131">Erstellen Sie einen Hinweis zur Korrektur.</span><span class="sxs-lookup"><span data-stu-id="4847e-131">Create a note about the correction.</span></span> <span data-ttu-id="4847e-132">In vorliegenden Beispiel ist die Aktivität, mit dem Kreditor in Verbindung mit Ihnen aufzunehmen, um den Qualitätsmangelfall zu erläutern.</span><span class="sxs-lookup"><span data-stu-id="4847e-132">For this example, the action is to contact the vendor to discuss the nonconformance case.</span></span>  
+6. <span data-ttu-id="4847e-133">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-133">Select **New**.</span></span>
+7. <span data-ttu-id="4847e-134">Wählen Sie **Hinweis** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-134">Select **Note**.</span></span> <span data-ttu-id="4847e-135">Abhängig von den Berichteinstellungen können verschiedene Dokumenttypen in den Berichten gedruckt werden, die der Qualitätsmangelverwaltung zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="4847e-135">Depending on the report setup, different document types can be printed on the reports that are related to nonconformance management.</span></span>  
+8. <span data-ttu-id="4847e-136">Geben Sie im Feld **Beschreibung** einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4847e-136">In the **Description** field, type a value.</span></span>
+9. <span data-ttu-id="4847e-137">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4847e-137">Close the page.</span></span>
 
-## <a name="maintain-a-correction"></a><span data-ttu-id="7d98d-145">Korrekturen verwalten</span><span class="sxs-lookup"><span data-stu-id="7d98d-145">Maintain a correction</span></span>
-1. <span data-ttu-id="7d98d-146">Klicken Sie auf "Abgeschlossen".</span><span class="sxs-lookup"><span data-stu-id="7d98d-146">Click Mark complete.</span></span>
-2. <span data-ttu-id="7d98d-147">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="7d98d-147">Click OK.</span></span>
-3. <span data-ttu-id="7d98d-148">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="7d98d-148">Close the page.</span></span>
+## <a name="maintain-a-correction"></a><span data-ttu-id="4847e-138">Korrekturen verwalten</span><span class="sxs-lookup"><span data-stu-id="4847e-138">Maintain a correction</span></span>
+1. <span data-ttu-id="4847e-139">Wählen Sie **Als abgeschlossen markieren** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-139">Select **Mark complete**.</span></span>
+2. <span data-ttu-id="4847e-140">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="4847e-140">Select **OK**.</span></span>
+3. <span data-ttu-id="4847e-141">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4847e-141">Close the page.</span></span>
 
-## <a name="close-a-nonconformance"></a><span data-ttu-id="7d98d-149">Qualitätsmangel schließen</span><span class="sxs-lookup"><span data-stu-id="7d98d-149">Close a nonconformance</span></span>
-1. <span data-ttu-id="7d98d-150">Klicken Sie auf Funktionen.</span><span class="sxs-lookup"><span data-stu-id="7d98d-150">Click Functions.</span></span>
-2. <span data-ttu-id="7d98d-151">Qualitätsmangel schließen</span><span class="sxs-lookup"><span data-stu-id="7d98d-151">Click Close non conformance.</span></span>
-3. <span data-ttu-id="7d98d-152">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="7d98d-152">Click Yes.</span></span>
-4. <span data-ttu-id="7d98d-153">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="7d98d-153">Close the page.</span></span>
-5. <span data-ttu-id="7d98d-154">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="7d98d-154">Close the page.</span></span>
+## <a name="close-a-nonconformance"></a><span data-ttu-id="4847e-142">Qualitätsmangel schließen</span><span class="sxs-lookup"><span data-stu-id="4847e-142">Close a nonconformance</span></span>
+1. <span data-ttu-id="4847e-143">Wählen Sie **Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-143">Select **Functions**.</span></span>
+2. <span data-ttu-id="4847e-144">Wählen Sie **Qualitätsmangel schließen** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-144">Select **Close non conformance**.</span></span>
+3. <span data-ttu-id="4847e-145">Wählen Sie **Ja** aus.</span><span class="sxs-lookup"><span data-stu-id="4847e-145">Select **Yes**.</span></span>
+4. <span data-ttu-id="4847e-146">Schließen Sie die Seiten.</span><span class="sxs-lookup"><span data-stu-id="4847e-146">Close the pages.</span></span>
