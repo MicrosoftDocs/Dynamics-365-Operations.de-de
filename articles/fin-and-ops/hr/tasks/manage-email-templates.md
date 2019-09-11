@@ -1,9 +1,9 @@
 ---
 title: E-Mail-Vorlagen verwalten
-description: Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeichen in einem neuen Dokument übertragen und in Vorlagen verwenden, die Sie bei der Kommunikation mit Bewerbern und Kandidaten unterstützen.
+description: In diesem Thema wird erläutert, wie Sie E-Mail-Vorlagen verwalten.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4667d0506c5ae6bea87b982c7feebab8963797a6
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3ecfa720dfa9b3ed6ee15ec68498d2a46612a9ae
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1508032"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867486"
 ---
 # <a name="manage-email-templates"></a>E-Mail-Vorlagen verwalten
 
@@ -31,23 +31,20 @@ Sie können Informationen aus der Datenbank Ihrer Organisation in die Lesezeiche
 
 
 ## <a name="select-which-bookmarks-to-use-in-your-email-templates"></a>Auswählen der Lesezeichen für die E-Mail-Vorlagen
-1. Wechseln Sie zu "Lesezeichen für Bewerber".
+1. Gehen Sie im Navigationsbereich zu **Module > Human Resources > Recruitment > Communication > Application bookmarks**.
 2. Suchen Sie in der Liste die gewünschten Korrespondenzaktivität, und wählen Sie sie aus.
-3. Klicken Sie auf "Bearbeiten".
-4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Felder aus, die Sie in einer E-Mail-Vorlage für die ausgewählte Korrespondenzaktivität verwenden möchten, und verschieben Sie sie in die Lesezeichenfelder.  
+3. Wählen Sie **Bearbeiten** aus.
+4. Wählen Sie die Felder aus, die Sie in einer E-Mail-Vorlage für die ausgewählte Korrespondenzaktivität verwenden möchten, und verschieben Sie sie in die Lesezeichenfelder.  
 5. Schließen Sie die Seite.
 
-## <a name="create-an-email-template"></a>Erstellen einer E-Mail-Vorlage
-1. Wechseln Sie zu "Personalverwaltung" > "Personalbeschaffung" > "Kommunikation" > "E-Mail-Vorlagen für Bewerber".
-2. Klicken Sie auf "Neu".
-3. Wählen Sie im Feld "Korrespondenzaktivität" "Gespräch" aus.
-    * Wählen Sie die Korrespondenzaktivität aus, die Lesezeichen enthält, die für diese Art der E-Mail-Kommunikation verwendet wird.  
-4. Geben Sie im Feld "E-Mail-Vorlage" einen Wert ein.
-5. Geben Sie im Feld "Betreff" einen Wert ein.
-6. Geben Sie im Feld "Text" einen Wert ein.
+## <a name="create-an-email-template"></a>E-Mail-Vorlage erstellen
+1. Gehen Sie im Navigationsbereich zu **Module > Personal > Personalwesen > Personalbeschaffung > Kommunikation > Vorlagen für Bewerbungs-E-Mails**.
+2. Wählen Sie **Neu** aus.
+3. Wählen Sie im Feld **Korrespondenzaktion** **Interview**. Wählen Sie die Korrespondenzaktivität aus, die Lesezeichen enthält, die für diese Art der E-Mail-Kommunikation verwendet wird.  
+4. Geben Sie in das Feld **E-Mail-Vorlage** einen Wert ein.
+5. Geben Sie in das Feld **Subjekt** einen Wert ein.
+6. Geben Sie im Feld **Text** einen Wert ein.
 7. Suchen Sie in der Liste das gewünschte Lesezeichenfeld, und wählen Sie es aus.
 8. Setzen Sie die Eingabe der E-Mail-Nachricht fort, und fügen Sie die Lesezeichenfelder an den gewünschten Positionen ein.
-    * Setzen Sie die Eingabe der E-Mail-Nachricht fort, und fügen Sie die Lesezeichenfelder an den gewünschten Positionen ein.  
-9. Klicken Sie auf "Speichern".
+9. Wählen Sie **Speichern**.
 

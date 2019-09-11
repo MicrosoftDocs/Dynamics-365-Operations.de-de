@@ -1,9 +1,9 @@
 ---
 title: Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung
-description: Diese Prozedur zeigt an, wie ein Menüelement "Mobiles Gerät" eingerichtet wird.
+description: In diesem Thema wird gezeigt, wie Sie einen Menüpunkt für mobile Endgeräte einrichten.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,68 +17,55 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 707fc9c798da8eac30cc9f56c158be3d96b271d6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c1c922d16b46e26031e5f80886e4e4e8f08bcdaf
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847110"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916865"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Richten Sie eine Menüoption des mobilen Geräts für das Abschließen der Arbeit von Typ Bestellung
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt an, wie ein Menüelement "Mobiles Gerät" eingerichtet wird. In diesem Beispiel wird das Menüelement für die Ausführung der Arbeit von Typ "Bestellung" verwendet. Die Arbeitsklasse, die dem Menüelement zugeordnet wird, bestimmt, welche Arbeit gültig ist. Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Normalerweise wird diese Prozedur von einem Lagerortleiter ausgeführt.
+In diesem Thema wird gezeigt, wie Sie einen Menüpunkt für mobile Endgeräte einrichten. In diesem Beispiel wird das Menüelement für die Ausführung der Arbeit von Typ "Bestellung" verwendet. Die Arbeitsklasse, die dem Menüelement zugeordnet wird, bestimmt, welche Arbeit gültig ist. Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Normalerweise wird diese Prozedur von einem Lagerortleiter ausgeführt.
 
 
 ## <a name="create-a-mobile-device-menu-item"></a>Erstellen eines Menüelements für ein mobiles Geräts
-1. Wechseln Sie zu "Menüelemente des mobilen Geräts".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Menüoptionsname" einen Wert ein.
-    * Geben Sie einen eindeutigen Wert ein. So können beispielsweise "POMove" eingeben. Beachten Sie den Wert. Sie benötigen ihn später.  
-4. Geben Sie im Feld "Titel" einen Wert ein.
-    * Dies ist der Titel, der im mobilen Gerät angezeigt wird. So können beispielsweise "PO Move" eingeben.  
-5. Wählen Sie im Feld "Modus" "Arbeit"aus.
-6. Wählen Sie "Ja" im Feld "Vorhandene Arbeit verwenden".
-    * Dieses Menüelement für das mobile Gerät wird zur Durchführung von vorhandenen Aufgaben verwendet. Daher müssen Sie diesen Wert auf "Ja" festlegen.  
-    * Das Feld "Bestandsstatus anzeigen" bestimmt, ob der Lagerstatus des verfügbaren Lagerbestands für den Lagermitarbeiter auf dem mobilen Gerät angezeigt wird.  
-7. Wählen Sie im Feld "Geleitet von" "Systemgruppierung" aus.
-    * Wenn Sie etwas im Feld "Geleitet von" auswählen, werden zusätzliche Felder im Abschnitt "Allgemein" auf dieser Seite angezeigt. Die Felder, die angezeigt werden, sind davon abhängig, was Sie ausgewählt haben. Bei Auswahl von Systemgruppierung werden zwei neue Felder hinzugefügt. Diese werden unten erläutert.  
-8. Wählen Sie im Feld "Systemgruppierung" die Option "WorkPoolId" aus.
-    * Wenn Lagermitarbeiter dieses Menüelement öffnen, werden sie aufgefordert, eine Arbeitspoolkennung zu scannen. Alle Arbeitsaufträge mit dieser Arbeitspoolkennung und offene Arbeitsauftragspositionen der zu diesem Menüelement hinzugefügten Arbeitsklassen werden an den Benutzer übertragen.  
-9. Geben Sie im Feld "Systemgruppierungsbezeichnung" einen Wert ein.
-    * Dies ist der Text, der dem Benutzer des mobilen Geräts angezeigt wird. So können beispielsweise "Work pool" eingeben.  
-10. Wählen Sie "Ja" im Feld "Kennzeichen bei Einlagerung überschreiben" aus.
-    * Mit dieser Option können Lagermitarbeiter den Ziel-Ladungsträger überschreiben, wenn Artikel auf einem über Ladungsträger gesteuerten Lagerplatz abgelegt werden.  
-11. Wählen Sie "Ja "im Feld "Gruppeneinlagerung" aus.
-    * Wenn alle Einlagerungspositionen des Arbeitsauftrags den selben Lagerplatz haben, erhält der Benutzer eine kombinierte Einlagerungsanweisung für alle Positionen  
-    * Überwachungsvorlagenkennung: Eine Arbeitsüberwachungsvorlage ermöglicht es ihnen anzugeben, dass der Arbeitsvorgang für ein Menüelement unterbrochen werden soll damit ein anderer Vorgang durchgeführt werden kann. Wenn beispielsweise dieses Menüelement für eingehende Arbeit ist, kann die Auditvorlage vorschreiben, dass die Arbeitskraft die Temperatur prüft. Der Zeitpunkt, zu dem der Prozess unterbrochen wird, wird auf der Auditvorlage angegeben und kann beispielsweise dann sein, wenn Arbeit gestartet oder abgeschlossen wird oder wenn sich der Status ändert.  
-12. Erweitern Sie den Abschnitt "Arbeitsklassen".
-13. Klicken Sie auf "Neu".
-14. Geben Sie im Feld "Arbeitsklassen-ID" die Bezeichnung "Bestellung" ein.
-    * Der Arbeitspool schränkt die Arbeit ein, für die das Menüelement verwendet werden kann. In diesem Fall wird es für offenen Arbeitsauftragspositionen verwendet, die die Arbeitsklassenkennung "Einkauf" haben.  
-15. Klicken Sie auf "Speichern".
+1. Gehen Sie zu **Menüeinträge für mobile Geräte**, indem Sie sie in der Suchleiste eingeben.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Menüoptionsname** einen Wert ein. Geben Sie einen eindeutigen Wert ein. Sie können z.B. `POMove` eingeben. Beachten Sie den Wert. Sie benötigen ihn später.  
+4. Geben Sie im Feld **Titel** einen Wert ein. Dies ist der Titel, der im mobilen Gerät angezeigt wird. Sie können z.B. `PO Move` eingeben.  
+5. Wählen Sie im Feld **Modus** **Arbeit**.
+6. Wählen Sie **Ja** im Feld **Vorhandene Arbeit verwenden**.
+    - Dieses Menüelement für das mobile Gerät wird zur Durchführung von vorhandenen Aufgaben verwendet. Daher müssen Sie diesen Wert auf **Ja** setzen.  
+    - Das Feld **Bestandsstatus anzeigen** legt fest, ob der Bestandsstatus des verfügbaren Bestands dem Lagerarbeiter auf dem mobilen Gerät angezeigt wird.  
+7. Wählen Sie im Feld **Gerichtet von** **Systemgruppierung**. Wenn Sie im Feld **Gerichtet von** etwas auswählen, erscheinen zusätzliche Felder im Abschnitt **Allgemein** auf dieser Seite. Die Felder, die angezeigt werden, sind davon abhängig, was Sie ausgewählt haben. Wenn Sie **Systemgruppierung** wählen, werden zwei neue Felder hinzugefügt. Diese werden unten erläutert.  
+8. Wählen Sie im Feld **Systemgruppierung** **WorkPoolId**. Wenn Lagermitarbeiter dieses Menüelement öffnen, werden sie aufgefordert, eine Arbeitspoolkennung zu scannen. Alle Arbeitsaufträge mit dieser Arbeitspoolkennung und offene Arbeitsauftragspositionen der zu diesem Menüelement hinzugefügten Arbeitsklassen werden an den Benutzer übertragen.  
+9. Geben Sie im Feld **Systemgruppierungsbeschriftung** einen Wert ein. Dies ist der Text, der dem Benutzer des mobilen Geräts angezeigt wird. Sie können beispielsweise **Arbeitsplatz** eingeben.  
+10. Wählen Sie **Ja** im Feld **Override Kennzeichen während der Eingabe**. Mit dieser Option können Lagermitarbeiter den Ziel-Ladungsträger überschreiben, wenn Artikel auf einem über Ladungsträger gesteuerten Lagerplatz abgelegt werden.  
+11. Wählen Sie **Ja** im Feld **Gruppe einlagern**.
+    - Wenn alle Einlagerungspositionen des Arbeitsauftrags den selben Lagerplatz haben, erhält der Benutzer eine kombinierte Einlagerungsanweisung für alle Positionen 
+    - Überwachungsvorlagenkennung: Eine Arbeitsüberwachungsvorlage ermöglicht es ihnen anzugeben, dass der Arbeitsvorgang für ein Menüelement unterbrochen werden soll damit ein anderer Vorgang durchgeführt werden kann. Wenn beispielsweise dieses Menüelement für eingehende Arbeit ist, kann die Auditvorlage vorschreiben, dass die Arbeitskraft die Temperatur prüft. Der Zeitpunkt, zu dem der Prozess unterbrochen wird, wird auf der Auditvorlage angegeben und kann beispielsweise dann sein, wenn Arbeit gestartet oder abgeschlossen wird oder wenn sich der Status ändert.  
+12. Erweitern Sie den Abschnitt **Arbeitsklassen**.
+13. Wählen Sie **Neu** aus.
+14. Geben Sie im Feld **Arbeitsklassen-ID** `Purchase` ein. Der Arbeitspool schränkt die Arbeit ein, für die das Menüelement verwendet werden kann. In diesem Fall wird es für offenen Arbeitsauftragspositionen verwendet, die die Arbeitsklassenkennung "Einkauf" haben.  
+15. Wählen Sie **Speichern**.
 
 ## <a name="set-up-work-confirmation"></a>Arbeitsbestätigung einrichten
-1. Klicken Sie auf "Einrichtung Arbeitsbestätigung".
-2. Wählen Sie im Feld "Arbeitstyp" die Option "Entnahme" aus.
-3. Aktivieren Sie das Kontrollkästchen "Automatisch bestätigen".
-    * Die Arbeitsanweisung mit dem Arbeitstyp "Entnahme" wird automatisch bestätigt. Diese Anweisung wird dem Benutzer nicht angezeigt.  
-4. Klicken Sie auf "Neu".
-5. Wählen Sie im Feld "Arbeitstyp" die Option "Entnahme" aus.
-6. Aktivieren Sie das Kontrollkästchen "Lagerplatzbestätigung".
-    * Der Lagermitarbeiter wird beim Ablegen des Artikels aufgefordert, einen Bestätigungsscan des Lagerortes durchzuführen.  
-7. Klicken Sie auf "Speichern".
-8. Schließen Sie die Seite.
-9. Schließen Sie die Seite.
+1. Wählen Sie **Einstellung der Arbeitsbestätigung**.
+2. Wählen Sie im Feld **Arbeitsart** **Auswahl**.
+3. Aktivieren Sie das Kontrollkästchen **Automatische Bestätigung**. Die Arbeitsanweisung mit dem Arbeitstyp "Entnahme" wird automatisch bestätigt. Diese Anweisung wird dem Benutzer nicht angezeigt.  
+4. Wählen Sie **Neu** aus.
+5. Wählen Sie im Feld **Arbeitstyp** die Option 'Einlagern'.
+6. Aktivieren Sie das Kontrollkästchen **Standortbestätigung**. Der Lagermitarbeiter wird beim Ablegen des Artikels aufgefordert, einen Bestätigungsscan des Lagerortes durchzuführen.  
+7. Wählen Sie **Speichern**.
 
 ## <a name="add-the-menu-item-to-a-mobile-device-menu"></a>Hinzufügen der Menüoption zu einem mobilen Gerät
-1. Wechseln Sie zu "Menü für mobiles Gerät".
-2. Klicken Sie auf "Bearbeiten".
-3. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Name" mit dem Wert "eingehend".
-    * Sie suchen das Menü, dass Sie für eingehende Menüelemente verwendet haben. In USMF heißt es "Inbound".  
-4. Wählen Sie in der Struktur "ein Wert".
-5. Klicken Sie auf den Pfeil nach rechts.
-6. Klicken Sie auf "Speichern".
+1. Gehen Sie zum Menü **Mobiles Gerät**, indem Sie es in der Suchleiste eingeben.
+2. Wählen Sie **Bearbeiten** aus.
+3. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise nach dem Feld **Name** mit dem Wert **Eingang**. Sie suchen das Menü, dass Sie für eingehende Menüelemente verwendet haben. In USMF heißt dies **Eingang**.  
+4. Wählen Sie im Baum **einen Wert**.
+5. Wählen Sie den Pfeil, der nach rechts zeigt.
+6. Wählen Sie **Speichern**.
 7. Schließen Sie die Seite.
-

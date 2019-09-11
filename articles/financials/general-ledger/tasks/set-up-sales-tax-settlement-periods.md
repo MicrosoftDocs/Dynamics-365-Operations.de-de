@@ -1,6 +1,6 @@
 ---
 title: Mehrwertsteuer-Ausgleichsperioden einrichten
-description: Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen über die Periodenintervalle für die die Mehrwertsteuer gemeldet und abgeführt werden muss.
+description: In diesem Abschnitt wird erläutert, wie Sie unter Dynamics 365 for Finance and Operations Umsatzsteuerverrechnungsperioden einrichten.
 author: twheeloc
 manager: AnnBe
 ms.date: 08/05/2019
@@ -16,50 +16,38 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8304d9e8997a5d31740ee1203aa4bf0603014056
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6fb8488335579ed463d4db235b991e97c39d6f4d
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862987"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867414"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Mehrwertsteuer-Ausgleichsperioden einrichten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen über die Periodenintervalle für die die Mehrwertsteuer gemeldet und abgeführt werden muss. Ein Abrechnungsprozess kann für einen Abrechnungszeitraum für ein bestimmtes Datumsintervall ausgeführt werden. Alle Steuercodes, die dem Abrechnungszeitraum zugeordnet sind, werden ausgeglichen. Je nach den Einstellungen der zugehörigen "Mehrwertsteuerbehörde", werden die Steuerverbindlichkeiten entweder zu einem Kreditor oder auf ein "Hauptbuchkonto" gebucht.
-
-
+In diesem Abschnitt wird erläutert, wie Sie unter Dynamics 365 for Finance and Operations Umsatzsteuerverrechnungsperioden einrichten. Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen über die Periodenintervalle für die die Mehrwertsteuer gemeldet und abgeführt werden muss. Ein Abrechnungsprozess kann für einen Abrechnungszeitraum für ein bestimmtes Datumsintervall ausgeführt werden. Alle Steuercodes, die dem Abrechnungszeitraum zugeordnet sind, werden ausgeglichen. Je nach den Einstellungen der zugehörigen "Mehrwertsteuerbehörde", werden die Steuerverbindlichkeiten entweder zu einem Kreditor oder auf ein "Hauptbuchkonto" gebucht.
 
 Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
-
-
-1. Wechseln Sie zu "Steuer" Wechseln Sie zu "Steuer" > "Indirekte Steuern" > "Mehrwertsteuer" > "Mehrwertsteuer-Abrechnungszeiträume".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Abrechnungszeitraum" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Wählen Sie im Feld "Behörde" die Mehrwertsteuerbehörde aus, die der Empfänger der Berichte und der Zahlungen in Verbindung mit dem Abrechnungszeitraum ist.
+1. Gehen Sie im Navigationsbereich zu **Module > Steuer > Indirekte Steuern > Umsatzsteuer > Umsatzsteuer > Umsatzsteuerabrechnungsperioden**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Abrechnungszeitraum** einen Wert ein.
+4. Geben Sie im Feld **Beschreibung** einen Wert ein.
+5. Wählen Sie im Feld **Berechtigung** die Umsatzsteuerbehörde, die die Berichte und die Zahlungen erhält, die für den Abrechnungszeitraum angelegt werden.
 6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie im Feld "Zahlungsbedingungen" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die zugehörige Mehrwertsteuerbehörde kann als Kreditor eingerichtet werden und die "Mehrwertsteuerabrechnung" erstellt eine offene Kreditorenrechnung. Die "Zahlungsbedingungen" definieren das "Fälligkeitsdatum" für die offene Kreditorenrechnung.  
-9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-11. Wählen Sie einen Typ für die Abrechnungszeitraumintervalle aus.
-12. Geben Sie die Anzahl der Periodenintervalleinheiten pro Periode ein. So verfügt beispielsweise ein Quartal über 3 Monate.
-13. Aktivieren oder deaktivieren Sie das Kontrollkästchen "Stapelverarbeitung für die Mehrwertsteuerabrechnung verwenden".
-    * Der Abrechnungsprozess für den Abrechnungszeitraum kann als Batchauftrag im Hintergrund verarbeitet werden. Das wird für eine große Zahl von Steuertransaktionen innerhalb eines Periodenintervalls empfohlen.  
+7. Wählen Sie im Feld **Zahlungsbedingungen** den gewünschten Datensatz im Dropdown-Menü aus. Die zugehörige Mehrwertsteuerbehörde kann als Kreditor eingerichtet werden und die "Mehrwertsteuerabrechnung" erstellt eine offene Kreditorenrechnung. Die "Zahlungsbedingungen" definieren das "Fälligkeitsdatum" für die offene Kreditorenrechnung.  
+8. Wählen Sie einen Typ für die Abrechnungszeitraumintervalle aus.
+9. Geben Sie die Anzahl der Periodenintervalleinheiten pro Periode ein. So verfügt beispielsweise ein Quartal über 3 Monate.
+10. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Batchverarbeitung für Umsatzsteuerabrechnung verwenden**. Der Abrechnungsprozess für den Abrechnungszeitraum kann als Batchauftrag im Hintergrund verarbeitet werden. Das wird für eine große Zahl von Steuertransaktionen innerhalb eines Periodenintervalls empfohlen.  
     > [!NOTE]
     > Derzeit wird dies in Österreich, Belgien, Spanien, Italien, Japan und den Niederlanden nicht unterstützt.
-14. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen Generieren von Steuerausgleichsbuchungen verhindern.
-    * Standardmäßig generiert das System Offsetsteuerbuchungen während des Ausgleichsprozesses, die  Performanceprobleme verursachen können,  wenn es viele Steuerbuchungen innerhalb eines Periodenintervalls gibt. Aktivieren bzw. deaktivieren Sie dieses Kontrollkästchen, um Steuerausgleichsbuchungen erstellen zu verhindern.
-15. Erweitern Sie die Registerkarte "Periodenintervalle".
-16. Klicken Sie auf Hinzufügen.
-17. Markieren Sie in der Liste die ausgewählte Zeile.
-18. Geben Sie in das Feld "Von Datum" ein Datum ein.
-19. Geben Sie in das Feld "Bis Datum" ein Datum ein.
-20. Klicken Sie auf "Neues Periodenintervall".
-    * Sobald das erste Periodenintervall eingegeben wurde, können neue Perioden automatisch erstellt werden. Sie können nach Bedarf zurückkehren und neue Periodenintervalle hinzufügen.  
-21. Schließen Sie die Seite.
+11. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Verrechnung von Steuertransaktionen verhindern**. Standardmäßig generiert das System Offsetsteuerbuchungen während des Ausgleichsprozesses, die  Performanceprobleme verursachen können,  wenn es viele Steuerbuchungen innerhalb eines Periodenintervalls gibt. Aktivieren bzw. deaktivieren Sie dieses Kontrollkästchen, um Steuerausgleichsbuchungen erstellen zu verhindern.
+12. Erweitern Sie die Registerkarte **Periodenintervalle**.
+13. Wählen Sie **Hinzufügen** aus.
+14. Geben Sie in der neuen Zeile im Feld **Ab Datum** ein Datum ein.
+15. Geben Sie im Feld **Bis Datum** ein Datum ein.
+16. Wählen Sie **Neues Periodenintervall**. Sobald das erste Periodenintervall eingegeben wurde, können neue Perioden automatisch erstellt werden. Sie können nach Bedarf zurückkehren und neue Periodenintervalle hinzufügen.  
+17. Schließen Sie die Seite.
 

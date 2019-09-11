@@ -1,9 +1,9 @@
 ---
-title: Erstellen von Abgrenzungsschemata
-description: Dieser Aufgabenleitfaden führt Sie durch die Erstellung eines Abgrenzungsschemas.
+title: Abgrenzungsschemata erstellen
+description: In diesem Thema wird erläutert, wie Sie ein Abgrenzungsschema erstellen.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,30 +16,28 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0ae55000a5cf1593d057d940dc3dbbf9e5cb3f3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e8f8cf8546187ae1c65d4966887e1c5842dff431
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834883"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867558"
 ---
-# <a name="create-accrual-schemes"></a>Erstellen von Abgrenzungsschemata
+# <a name="create-accrual-schemes"></a>Abgrenzungsschemata erstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Dieser Aufgabenleitfaden führt Sie durch die Erstellung eines Abgrenzungsschemas. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
+In diesem Thema wird erläutert, wie Sie ein Abgrenzungsschema erstellen. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
-1. Wechseln Sie zu "Hauptbuch" > "Journaleinrichtung" > "Abgrenzungsschemas".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Abgrenzungskennung" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung des Abgrenzungsschemas" eine Beschreibung ein.
-5. Geben Sie im Feld "Soll" die gewünschten Werte an.
-    * Das Hauptkonto ersetzt das Sollhauptkonto auf der Erfassungsbelegposition und es wird auch für die Rückbuchung der Stundung auf Grundlage die Sachkontoabgrenzungsbuchungen verwendet.  
-6. Geben Sie im Feld "Haben" die gewünschten Werte an.
-    * Das Hauptkonto ersetzt das Habenhauptkonto auf der Erfassungsbelegposition und es wird auch für die Rückbuchung der Stundung auf Grundlage die Sachkontoabgrenzungsbuchungen verwendet.  
-7. Wählen Sie im Feld "Beleg", wie der spezifischen Beleg festgelegt werden soll, wenn die Buchungen gebucht werden.
-8. Geben Sie im Feld "Beschreibung" einen Wert ein, um die Buchungen zu beschreiben, die gebucht werden.
-9. Wählen Sie im Feld "Periodenhäufigkeit" aus, wie häufig die Buchungen erfolgen sollen.
-10. Geben Sie im Feld "Anzahl der Vorkommen nach Periode" eine Zahl ein.
-11. Wählen Sie im Feld "Transaktionen buchen" wann die Buchungen gebucht werden sollen (z. b. monatlich).
+1. Wechseln Sie zu **Navigationsbereich > Module > Hauptbuch > Erfassungseinstellungen > Abgrenzungsschemata**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Abgrenzungskennung** einen Wert ein.
+4. Geben Sie im Feld **Beschreibung des Abgrenzungsschemas** einen Wert ein.
+5. Geben Sie im Feld **Soll** die gewünschten Werte an. Das Hauptkonto ersetzt das Sollhauptkonto auf der Erfassungsbelegposition und es wird auch für die Rückbuchung der Stundung auf Grundlage die Sachkontoabgrenzungsbuchungen verwendet.  
+6. Geben Sie im Feld **Haben** die gewünschten Werte an. Das Hauptkonto ersetzt das Habenhauptkonto auf der Erfassungsbelegposition und es wird auch für die Rückbuchung der Stundung auf Grundlage die Sachkontoabgrenzungsbuchungen verwendet.  
+7. Wählen Sie im Feld **Beleg** aus, wie der spezifischen Beleg festgelegt werden soll, wenn die Buchungen gebucht werden.
+8. Geben Sie im Feld **Beschreibung** einen Wert ein, um die Buchungen zu beschreiben, die gebucht werden.
+9. Wählen Sie im Feld **Periodenhäufigkeit** aus, wie häufig die Buchungen erfolgen sollen.
+10. Geben Sie im Feld **Anzahl der Vorkommen nach Periode** eine Zahl ein.
+11. Wählen Sie im Feld **Transaktionen buchen** aus, wann die Buchungen gebucht werden sollen (z. B. **Monatlich**).
 

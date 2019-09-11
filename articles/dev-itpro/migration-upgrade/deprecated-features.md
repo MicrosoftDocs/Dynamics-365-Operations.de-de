@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen.
 author: sericks007
 manager: AnnBe
-ms.date: 07/30/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c8cc578ce2f8928fcdbe0210c9151e8979bc2e9
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 4aad4f2cf42b72256b5c4727bfd145d16af033ed
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863382"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867100"
 ---
 # <a name="removed-or-deprecated-features"></a>Entfernte oder veraltete Funktionen
 
@@ -157,6 +157,17 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Die Warnung wird zu einem Kompilierungsfehler im Plattformupdate 26. |
+
+## <a name="dynamics-365-for-finance-and-operations-1000-with-platform-update-24"></a>Dynamics 365 for Finance and Operations 10.0.0 mit Plattformupdate 24
+
+### <a name="renaming-released-products"></a>Freigegebene Produkte umbenennen 
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Wenn Sie die Funktion **Primärschlüssel umbenennen** verwenden, um das ItemId eines freigegebenen Produkts zu ändern, werden nur direkte Fremdschlüsselreferenzen aktualisiert. Alle anderen Referenzen zum freigegebenen Produkt, wie von Produktionsaufträgen, behalten die alte ItemId bei. Daher kann es inkonsistente Daten geben, die die Geschäftsprozesse letztlich blockieren. |
+| **Ersetzt durch eine andere Funktion?**   | Nr. |
+| **Betroffene Produktbereiche**         | Produktinformationsverwaltung |
+| **Bereitstellungsoption**              | Alle  |
+| **Status**                         | Entfernt ab Dynamics 365 for Finance and Operations mit 10.0.0 mit Plattformupdate 24. In Ausnahmefällen, z. B. zum Wiederherstellen von einem früheren Umbenennen des Primärschlüssels eines freigegebenen Produkts, ist es möglich, Microsoft aufzufordern, diese Einschränkung für den Primärschlüssel-Umbenennungsvorgang für freigegebene Produkte vorübergehend zu entfernen. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-813-with-platform-update-23"></a>Dynamics 365 for Finance and Operations 8.1.3 mit Plattformupdate 23

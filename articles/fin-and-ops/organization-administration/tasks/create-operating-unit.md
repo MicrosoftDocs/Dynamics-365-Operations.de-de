@@ -3,7 +3,7 @@ title: Organisationseinheit erstellen
 description: Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle über wirtschaftliche Ressourcen und Betriebsprozesse in einem Unternehmen aufzuteilen.
 author: sericks007
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef03329cfe477256cfbe1dde1dc18df52137286f
-ms.sourcegitcommit: cb63259ad8fa5649ff12bc4a7f195bd1e40bd968
+ms.openlocfilehash: 164b347e1c929f60762793799a500a7203f0f72f
+ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755568"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "1874902"
 ---
 # <a name="create-an-operating-unit"></a>Organisationseinheit erstellen
 
@@ -40,5 +40,5 @@ Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle �
     + Geben Sie Adressinformationen wie die Straße und Hausnummer, die Postleitzahl und den Ort ein. Klicken Sie auf **Hinzufügen**, um einen neuen Adressdatensatz einzugeben, oder auf „Bearbeiten“, um einen vorhandenen Adressdatensatz zu ändern.   
     + Erweitern Sie ggf. den Abschnitt **Kontaktinformationen**.  
     + Geben Sie Informationen zu den Kommunikationsmethoden ein, beispielsweise E-Mail-Adressen, URLs und Telefonnummern. Klicken Sie auf Neu, um einen neuen Kommunikationsdatensatz einzugeben. Klicken Sie auf **Weitere Optionen > Erweitert**, um einen vorhandenen Kommunikationsdatensatz zu ändern.   
-6. Klicken Sie auf **Speichern**.
-
+6. Optional ändern Sie die **Nummer der Organisationseinheit**, sofern erforderlich. Beachten Sie, dass diese Nummer ein eindeutiger Bezeichner für den entsprechenden Datensatz **Partei** ist und nicht das Gleiche wie eine andere Organisationseinheit sein kann.
+7. Wählen Sie **Speichern**.

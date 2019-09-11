@@ -2,8 +2,8 @@
 title: Formeldesigner in der elektronischen Berichterstellung (EB)
 description: In diesem Artikel wird beschrieben, wie den Formel-Designer in der elektronischen Berichterstattung (ER) verwendet wird.
 author: NickSelin
-manager: AnnBe
-ms.date: 05/14/2014
+manager: kfend
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 690dd1f83cb345d3dac67eef059ad890f03afb01
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 1f6caa6afd0ce36340caf237c1acca0ea343824f
+ms.sourcegitcommit: 4ff8c2c2f3705d8045df66f2c4393253e05b49ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849508"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864293"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner in der elektronischen Berichterstellung (EB)
 
@@ -113,6 +113,33 @@ Der EB-Formeldesigner wird auch verwendet, um einen Dateinamen für ein generier
 - Ein Ausdruck aktiviert (durch Rückgabe von **WAHR**) den Dateierstellungsprozess für Chargen, die mindestens einen Datensatz beinhalten.
 
 [![Dateisteuerelement](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+
+### <a name="documents-content-control"></a>Inhaltskontrolle von Dokumenten
+
+Der EB-Formeldesigner kann verwendet werden, um Ausdrücke zu konfigurieren, die steuern, welche Daten zur Laufzeit in generierten elektronischen Dokumenten platziert werden. Die Ausdrücke können die Ausgabe bestimmter Elemente des Formats aktivieren oder deaktivieren, je nach Verarbeitungsdaten und konfigurierter Logik. Dieser Ausdruck kann für ein einzelnes Formatelement im Feld **Aktiviert** auf der Registerkarte **Zuordnung** auf der Seite **Arbeitsgangsdesigner** als logische Bedingung eingegeben werden, die den **Booleschen** Wert zurückgibt:
+
+-   Wenn **Wahr** zurückgegeben wird, wird das aktuelle Formatelement ausgeführt.
+-   Wenn **Falsch** zurückgegeben wird, wird das aktuelle Formatelement übersprungen.
+
+Die folgende Abbildung zeigt Ausdrücke dieser Art (ein Beispiel ist die Version **11.12.11** der von Microsoft bereitgestellten **ISO20022 Credit Transfer (NO)** Formatkonfiguration). Die **XMLHeader** Formatkomponente wird konfiguriert, um die Struktur der Banküberweisungsnachricht, nach den Nachrichtenstandards XML ISO 20022 ein. Die **XMLHeader/CstmrCdtTrfInitn/PmtInf/CdtTrfTxInf/RmtInf/Ustrd Dokument** Formatkomponente wird konfiguriert, um die generierte Nachricht, das **Ustrd** XML-Element, zu ergänzen und die Überweisungsinformationen in einem unstrukturierten Format als Text der folgenden XML-Elemente zu platzieren:
+
+-   Die Komponente **PaymentNotes** wird verwendet, um den Text von Zahlungshinweisen auszugeben.
+-   Die Komponente **DelimitedSequence** gibt kommagetrennte Rechnungsnummern aus, die zur Abrechnung der aktuellen Überweisung verwendet werden.
+
+[![Arbeitsgangsdesigner](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+
+> [!NOTE]
+> Die **PaymentNotes** und **DelimitedSequence** Komponenten werden mithilfe eines Fragezeichens gekennzeichnet. Das bedeutet, dass die Verwendung beider Komponenten bedingt ist, basierend auf den folgenden Kriterien:
+
+-   Der für die Komponente **PaymentNote** definierte Ausdruck **@.PaymentsNotes<>„“** ermöglicht (durch Rückgabe von **WAHR**) die Auffüllung an das **Ustrd** XML-Element, den Text von Zahlungshinweisen, wenn dieser Text für die aktuelle Überweisung nicht leer ist.
+
+[![Arbeitsgangsdesigner](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+
+-   Der für die Komponente **DelimitedSequence** definierte Ausdruck **@.PaymentsNotes=„“** ermöglicht (durch Rückgabe von **WAHR**) die Auffüllung an das **Ustrd**-XML-Element, getrennt durch Komma-Rechnungsnummern, die zur Abrechnung der aktuellen Überweisung verwendet werden, wenn der Text der Zahlungsanzeigen für diese Überweisung leer ist.
+
+[![Arbeitsgangsdesigner](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+
+Basierend auf dieser Einstellung enthält die erzeugte Nachricht für jede Debitorenzahlung, **Ustrd** XML-Element, entweder den Text von Verwendungszwecken oder, wenn dieser Text leer ist, den Text getrennt durch Komma-Rechnungsnummern, die zur Begleichung dieser Zahlung verwendet werden.
 
 ### <a name="basic-syntax"></a>Grundlegende Syntax
 
@@ -438,7 +465,7 @@ IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 <tr>
 <td>FILTER (Liste, Bedingungen)</td>
 <td>Gibt die angegebene Liste zurück, nachdem die Abfrage geändert wurde, um nach der angegebenen Bedingung zu filtern. Diese Funktion unterscheidet sich von der Funktion <strong>WO</strong>, da die angegebene Bedingung auf jede beliebige EB-Datenquelle des Typs <strong>Tabellendatensätze</strong> auf Datenbankebene angewendet wird. Die Liste und die Bedingung können definiert werden, indem Tabellen und Relationen verwendet werden.</td>
-<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als ER-Datenquelle konfiguriert ist, die auf die Tabelle VendTable verweist, und wenn <strong>parmVendorBankGroup</strong> als ER-Datenquelle konfiguriert ist, die einen Wert des Datentyps <strong><Zeichenfolge</strong> zurückgibt, liefert <strong>FILTER (Vendor.&lt;Relations'.VendBankAccount, Vendor.&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste nur der Kreditorenkonten, die zu einer bestimmten Bankengruppe gehören.</td>
+<td>Wenn <strong>Lieferant</strong> als EB-Datenquelle konfiguriert wurde, die sich auf die Tabelle „VendTable” bezieht, gibt <strong>FILTER (Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> eine Liste von ausschließlich den Lieferanten zurück, die zur Lieferantengruppe 40 gehören. Wenn <strong>Kreditor</strong> als ER-Datenquelle konfiguriert ist, die auf die Tabelle VendTable verweist, und wenn <strong>parmVendorBankGroup</strong> als ER-Datenquelle konfiguriert ist, die einen Wert des Datentyps <strong>Zeichenfolge</strong> zurückgibt, liefert <strong>FILTER (Vendor.&lt;Relations'.VendBankAccount, Vendor.&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> eine Liste nur der Kreditorenkonten, die zu einer bestimmten Bankengruppe gehören.</td>
 </tr>
 <tr>
 <td>INDEX (Liste, Index)</td>

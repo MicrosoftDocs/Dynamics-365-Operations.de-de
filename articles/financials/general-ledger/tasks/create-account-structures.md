@@ -3,7 +3,7 @@ title: Kontostrukturen erstellen
 description: Dieser Aufgabenleitfaden führt Sie durch die Erstellung einer Kontostruktur.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2183f88356fc8094781af147bf079c4e53ffb2b4
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8b100d5da6ec26dc386c0c6cb0793245531eb0d8
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846702"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916229"
 ---
 # <a name="create-account-structures"></a>Kontostrukturen erstellen
 
@@ -29,56 +29,35 @@ ms.locfileid: "1846702"
 
 Dieser Aufgabenleitfaden führt Sie durch die Erstellung einer Kontostruktur. Bei den Schritten wird das Demodatunternehmen USMF verwendet.
 
-1. Wechseln Sie zu Hauptbuch > Kontenplan > Strukturen > Kontostrukturen konfigurieren.
-2. Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.
-3. Im Feld "Kontostruktur" geben Sie einen Namen ein, um den Zweck der Kontostruktur zu beschreiben.
-4. Geben Sie im Feld "Beschreibung" eine Beschreibung ein, um den Zweck der Kontostruktur zu beschreiben.
-5. Klicken Sie auf Erstellen.
-6. Klicken Sie auf "Segment hinzufügen".
-7. Wählen Sie in er Liste "Dimensionen" die Dimension aus, um der Kontostruktur hinzuzufügen.
-8. Klicken Sie auf "Segment hinzufügen".
-9. Klicken Sie auf "Segment hinzufügen".
-10. Wählen Sie in er Liste "Dimensionen" die Dimension aus, um der Kontostruktur hinzuzufügen.
-11. Klicken Sie auf "Segment hinzufügen".
-12. Klicken Sie auf "Segment hinzufügen".
-13. Wählen Sie in er Liste "Dimensionen" die Dimension aus, um der Kontostruktur hinzuzufügen.
-14. Klicken Sie auf "Segment hinzufügen".
-15. Wählen Sie im Raster das Segment aus, um die zulässigen Werte zu bearbeiten.
-    * Beispielsweise klicken Sie in "Hauptkonto".  
-16. Wählen Sie im Feld "Operator" eine Option aus (z. B., "liegt zwischen" und "schließt ein").
-17. Geben Sie im Feld "Wert" einen Wert ein.
-    * Beispiel: 600000.  
-18. Geben Sie im Feld "bis" einen Wert ein.
-    * Beispiel: 699999.  
-19. Klicken Sie auf Übernehmen.
-20. Wählen Sie im Raster das Segment aus, um die zulässigen Werte zu bearbeiten.
-    * Beispiel: "Abteilung".  
-21. Wählen Sie im Feld "Operator" eine Option aus (z. B., "liegt zwischen" und "schließt ein").
-22. Geben Sie im Feld "Wert" einen Wert ein.
-    * Beispiel: 022.  
-23. Geben Sie im Feld "bis" einen Wert ein.
-    * Beispiel: 031.  
-24. Klicken Sie auf "Neue Kriterien hinzufügen".
-25. Wählen Sie im Feld "Operator" eine Option aus (z. B., "liegt zwischen" und "schließt ein").
-26. Geben Sie im Feld "Wert" einen Wert ein.
-    * Beispiel: 033.  
-27. Geben Sie im Feld "bis" einen Wert ein.
-    * Beispiel: 034.  
-28. Klicken Sie auf Übernehmen.
-29. Wählen Sie im Raster das Segment aus, um die zulässigen Werte zu bearbeiten.
-    * Beispiel: "Kostenstelle".  
-30. Geben Sie im Feld "CostCenter" einen Wert ein.
-    * Beispiel: 007..021.  
-31. Klicken Sie auf Hinzufügen.
-32. Geben Sie im Feld "MainAccount" einen Wert ein.
-    * Beispiel: 600000..699999  
-33. Wählen Sie im Raster das Segment aus, um die zulässigen Werte zu bearbeiten.
-    * Beispiel: "Abteilung".  
-34. Geben Sie im Feld "Abteilung" einen Wert ein.
-    * Beispiel: 032.  
-35. Geben Sie im Feld "CostCenter" einen Wert ein.
-    * Beispiel: 086.  
-36. Klicken Sie auf "Überprüfen".
-37. Klicken Sie auf Aktivieren.
-38. Klicken Sie auf Aktivieren.
+1. Gehen Sie zu **Navigationsbereich > Module > Hauptbuch > Kontenplan > Strukturen > Kontostrukturen konfigurieren**.
+2. Klicken Sie im **Aktivitätsbereich** auf **Neu**, um das Dropdown-Dialogfeld zu öffnen.
+3. Im Feld **Kontostruktur** geben Sie einen Namen ein, um den Zweck der Kontostruktur zu beschreiben.
+4. Geben Sie im Feld **Beschreibung** eine Beschreibung ein, um den Zweck der Kontostruktur zu beschreiben.
+5. Klicken Sie auf **Erstellen**.
+6. Klicken Sie in **Segmente und zulässige Werte** auf **Segment hinzufügen**.
+7. Wählen Sie in er Liste „Dimensionen“ die Dimension aus, um sie der Kontostruktur hinzuzufügen.
+8. Am Ende der Liste klicken Sie auf **Segment hinzufügen**.
+9. Wiederholen Sie die Schritte 6 bis 9 nach Bedarf.
+10. Wählen Sie im Abschnitt **Details zu zulässigem Wert** das Segment aus, um die zulässigen Werte zu bearbeiten.
+    Beispielsweise klicken Sie auf das Feld **Hauptkonto**.  
+11. Wählen Sie im Feld **Operator** eine Option aus (z. B. „liegt zwischen“ und „schließt ein“).
+12. Geben Sie im Feld **Wert** einen Wert ein. Beispiel: 600000.  
+13. Geben Sie im Feld **Bis** einen Wert ein. Beispiel: 699999.  
+14. Im Abschnitt **Details zu zulässigem Wert** klicken Sie auf **Übernehmen**.
+15. Wiederholen Sie die Schritte 10 bis 15 nach Bedarf.  
+16. Im Abschnitt **Details zu zulässigem Wert** klicken Sie auf **Neue Kriterien hinzufügen**.
+17. Wählen Sie im Feld "Operator" eine Option aus (z. B., "liegt zwischen" und "schließt ein").
+18. Geben Sie im Feld **Wert** einen Wert ein. Beispiel: 033.  
+19. Geben Sie im Feld **Bis** einen Wert ein. Beispiel: 034.  
+20. Klicken Sie auf **Übernehmen**.
+21. Wählen Sie im Raster das Segment aus, um die zulässigen Werte zu bearbeiten. Beispiel: "Kostenstelle".  
+22. Geben Sie im **CostCenter-Feld** einen Wert ein. Beispiel: 007..021.  
+23. Klicken Sie in **Segmente und zulässige Werte** auf **Hinzufügen**.
+24. Geben Sie im Feld **MainAccount** einen Wert ein. Beispiel: 600000..699999  
+25. Wählen Sie im Raster das Segment aus, um die zulässigen Werte zu bearbeiten. Beispiel: "Abteilung".  
+26. Geben Sie im Feld "Abteilung" einen Wert ein. Beispiel: 032.  
+27. Geben Sie im Feld "CostCenter" einen Wert ein. Beispiel: 086.  
+28. Klicken Sie im **Aktivitätsbereich** auf **Überprüfen**.
+29. Klicken Sie im **Aktivitätsbereich** auf **Aktivieren**.
+30. Klicken Sie auf **Aktivieren**.
 

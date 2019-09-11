@@ -1,9 +1,9 @@
 ---
-title: Elektronische Berichterstellung (ER, Elektronic Reporting)
+title: Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
 description: Diese Thema bietet eine Übersicht zum elektronischen Berichterstellungstool. Es umfasst Informationen über wesentliche Konzepte, vom ER unterstützte Szenarien und eine Liste der Formate, die im Rahmen der Lösung entwickelt und veröffentlicht wurden.
 author: NickSelin
 manager: AnnBe
-ms.date: 03/25/2019
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9504af391656e2515d34d18a15fab74f1698fa2
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 73a8f44d75c9a6778cfa4c547b4b32dbebcad825
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849484"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864717"
 ---
-# <a name="electronic-reporting-er"></a>Elektronische Berichterstellung (ER, Elektronic Reporting)
+# <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
 
 [!include [banner](../includes/banner.md)]
 
