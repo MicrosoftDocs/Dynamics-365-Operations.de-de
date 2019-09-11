@@ -3,7 +3,7 @@ title: Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
 description: Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verfügbarer Lagerbestand durch andere ausgehende Quelldokumente mithilfe der Sperrung von Lagerbestand reserviert wird.
 author: perlynne
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 845d517ad10245df3b208874df61e235c199c7fe
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: b2485eaf31226b11106895074ae0ad95e561777b
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836399"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916598"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
 
@@ -32,28 +32,23 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 
 
 ## <a name="create-an-inventory-blocking"></a>Erstellen einer Sperrung von Lagerbestand
-1. Wechseln Sie zu "Lagerverwaltung" > "Periodische Aufgaben" > "Sperrung von Lagerbestand".
-2. Klicken Sie auf "Neu".
-3. Klicken Sie im Feld "Artikelnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Wählen Sie in der Liste den Artikel aus. 
-    * Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie Artikel M9201 auswählen.  
-5. Geben Sie im Feld "Menge" eine Zahl ein.
-    * Wenn Sie Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.  
-6. Schalten Sie die Erweiterung des Abschnitts "Lagerungsdimensionen" ein/aus.
-7. Klicken Sie im Feld "Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wenn Sie Artikel M9201 verwenden, können Sie Warehouse 51 auswählen.  
-9. Klicken Sie auf "Speichern".
+1. Wechseln Sie im **Navigationsbereich** zu **Module > Lagerverwaltung > Periodische Aufgaben > Sperrung von Lagerbestand**.
+2. Klicken Sie auf **Neu**.
+3. Klicken Sie im Feld **Artikelnummer** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+4. Wählen Sie in der Liste den Artikel aus. Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie Artikel M9201 auswählen.  
+5. Geben Sie im Feld **Menge** eine Zahl ein. Wenn Sie Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.
+6. Erweitern Sie das Inforegister **Lagerungsdimensionen**.
+7. Klicken Sie im Feld **Lagerort** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
+8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wenn Sie Artikel M9201 verwenden, können Sie Warehouse 51 auswählen.  
+9. Klicken Sie auf **Speichern**.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Aktualisieren Sie die Bedingungen der Sperrung von Lagerbestand
-1. Geben Sie im Feld "Menge" eine Zahl ein.
-    * Aktualisieren Sie das Felde "Lagermenge", um die zu sperrende Menge wiederzugeben.  
-2. Geben Sie im Feld "Erwartetes Datum" ein Datum ein.
-    * Sie sollten angeben, wann damit gerechnet wird, dass der gesperrte Bestand für die Reservierung verfügbar wird, indem Sie ein erwartetes Datum zuweisen. Wenn die Option "Erwartete Zugänge" für die Sperrung des Lagerbestands aktiviert ist (Standardeinstellung, wenn Sie manuell eine Sperrung erstellen), wird dieses Datum auf der erwarteten Buchung angezeigt.  
-3. Klicken Sie auf "Speichern".
+1. Geben Sie im Inforegister **Allgemein** im Feld **Menge** eine Nummer ein. Aktualisieren Sie das Felde "Lagermenge", um die zu sperrende Menge wiederzugeben.  
+2. Geben Sie im Feld **Erwartetes Datum** ein Datum ein. Sie sollten angeben, wann damit gerechnet wird, dass der gesperrte Bestand für die Reservierung verfügbar wird, indem Sie ein erwartetes Datum zuweisen. Wenn die Option "Erwartete Zugänge" für die Sperrung des Lagerbestands aktiviert ist (Standardeinstellung, wenn Sie manuell eine Sperrung erstellen), wird dieses Datum auf der erwarteten Buchung angezeigt.  
+3. Klicken Sie auf **Speichern**.
 
 ## <a name="remove-the-inventory-blocking"></a>Sperrung von Lagerbestand entfernen
-1. Klicken Sie auf Löschen.
-2. Klicken Sie auf "Ja".
+1. Klicken Sie im **Aktivitätsbereich** auf **Löschen**.
+2. Klicken Sie auf **Ja**.
 3. Schließen Sie die Seite.
 

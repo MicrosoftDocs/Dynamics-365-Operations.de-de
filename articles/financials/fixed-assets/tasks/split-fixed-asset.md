@@ -1,9 +1,9 @@
 ---
-title: Eine Anlage splitten
-description: In dieser Aufgabenanleitung wird ein Prozentanteil eines Anlagenbuches zu einem neuen Anlagenbuch aufgeteilt.
+title: Anlage teilen
+description: In diesem Abschnitt wird erläutert, wie Sie einen Prozentsatz eines Anlagenbuchs in ein neues Anlagenbuch aufteilen.
 author: saraschi2
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/06/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,46 +16,47 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8e5fdc8a7b326daca1fc0f0962c69bb8fb1ff64
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a4e001a6fdf390c6211ba85aa327b60dcdf16d9e
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839712"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867582"
 ---
-# <a name="split-a-fixed-asset"></a>Eine Anlage splitten
+# <a name="split-a-fixed-asset"></a>Anlage teilen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-In dieser Aufgabenanleitung wird ein Prozentanteil eines Anlagenbuches zu einem neuen Anlagenbuch aufgeteilt.  Dabei werden die "Buchhalterrolle" und die USMF-Demodaten verwendet.
+In diesem Abschnitt wird erläutert, wie Sie einen Prozentsatz eines Anlagenbuchs in ein neues Anlagenbuch aufteilen. Dabei werden die "Buchhalterrolle" und die USMF-Demodaten verwendet.
 
 
 ## <a name="create-a-new-fixed-asset"></a>Neue Anlage erstellen
-1. Wechseln Sie zu Anlagen > Anlagen > Anlagen.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Anlagengruppe" einen Wert ein oder wählen Sie einen Wert aus.
-4. Notieren Sie sich die Anlagennummer, die später im Teilungsprozess zu verwenden ist.
-5. Geben Sie im Feld "Name" einen Wert ein.
-6. Schließt das Formular.
+1. Wechseln Sie im Navigationsbereich zu **Module > Anlagen > Anlagen > Anlagen**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Anlagengruppe** einen Wert ein oder wählen Sie einen Wert aus. Notieren Sie sich die Anlagennummer, die später im Teilungsprozess zu verwenden ist.  
+4. Geben Sie im Feld **Name** einen Wert ein.
+5. Schließt das Formular.
 
-## <a name="split-a-fixed-asset"></a>Eine Anlage splitten
-1. Suchen Sie in der Liste die zu teilende Anlage und wählen Sie diese aus.
-2. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-3. Klicken Sie auf Bücher.
-    * Wählen Sie das Buch aus, um die neue Anlage aufzuteilen.  
-4. Klicken Sie auf Funktionen.
-5. Klicken Sie auf "Anlage aufteilen".
-6. Geben Sie im Feld "Zielanlage" einen Wert ein oder wählen Sie einen Wert aus.
-7. Klicken Sie im Feld An Buch auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-8. Geben Sie im Feld "Transaktionsdatum" ein Datum ein.
-9. Geben Sie im Feld "Prozent" eine Zahl ein.
-10. Geben Sie im Feld 'Journal' einen Wert ein, oder wählen Sie einen Wert aus.
-11. Klicken Sie auf "OK".
+## <a name="split-a-fixed-asset"></a>Anlage teilen
+1. Suchen und wählen Sie in der Liste die Verknüpfung der zu teilenden Anlage.
+2. Wählen Sie **Bücher**. Wählen Sie das Buch aus, um die neue Anlage aufzuteilen.  
+3. Wählen Sie **Funktionen**.
+4. Wählen Sie **Anlage teilen**.
+5. Geben Sie im Feld **Zu Anlage** einen Wert ein oder wählen Sie ihn aus.
+6. Wählen Sie im Feld **Zum Buch** die Dropdown-Schaltfläche, um die Suche zu öffnen.
+7. Geben Sie im Feld **Transaktionsdatum** ein Datum ein.
+8. Geben Sie im Feld **Prozent** eine Zahl ein.
+9. Geben Sie im Feld **Journalname** einen Wert ein oder wählen Sie ihn aus.
+10. Wählen Sie **OK**.
 
 ## <a name="post-the-journal-transaction"></a>Die Erfassungstransaktion buchen
-1. Wechseln Sie zu "Anlagen" > "Journaleinträge" > "Anlagenerfassung".
+1. Gehen Sie im Navigationsbereich zu **Module > Anlage > Journalbuchungen > Anlagenbuchhaltung**.
 2. Wählen Sie in der Liste die Erfassung aus, die mit dem Teilungsprozess erstellt wurde.
-3. Klicken Sie auf "Positionen".
-    * Überprüfen Sie die erstellten Erfassungspositionen.  Eine "Anschaffungsänderungstransaktion" wird für die ursprüngliche Anlage erstellt, um den Wert um den Prozentsatz zu verringern, der im Teilungsprozess angegeben wird.  Eine "Anschaffungstransaktion" wird für die neue Anlage für denselben Betrag erstellt.  
-4. Klicken Sie auf "Buchen".
+3. Wählen Sie **Positionen** aus.
+
+    - Überprüfen Sie die erstellten Erfassungspositionen.  
+    - Eine "Anschaffungsänderungstransaktion" wird für die ursprüngliche Anlage erstellt, um den Wert um den Prozentsatz zu verringern, der im Teilungsprozess angegeben wird.  
+    - Eine "Anschaffungstransaktion" wird für die neue Anlage für denselben Betrag erstellt.  
+
+4. Wählen Sie **Buchen** aus.
 

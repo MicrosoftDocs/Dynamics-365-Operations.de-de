@@ -1,9 +1,9 @@
 ---
-title: Nachkalkulationsversionen
+title: Nachkalkulationsversionen – Übersicht
 description: Dieser Artikel enthält Informationen zu Nachkalkulationsversionen, deren Verwaltung und die Datentypen, die Sie darin einschließen können. Der Hauptzweck einer Nachkalkulationsversion besteht in der Speicherung von Kostendatensätzen für Artikel sowie von Kostenkategorien und Berechnungsformeln für indirekte Kosten.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a73be45d183f3cbdc19efbb9ee29fa621a113c66
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 25d3abf177c1e420d1c97dc74891e1ac0d2c2546
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548161"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865519"
 ---
-# <a name="costing-versions"></a>Nachkalkulationsversionen
+# <a name="costing-versions-overview"></a>Nachkalkulationsversionen – Übersicht
 
 [!include [banner](../includes/banner.md)]
 

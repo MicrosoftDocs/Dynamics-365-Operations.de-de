@@ -1,9 +1,9 @@
 ---
-title: " POS-Berechtigungsgruppen erstellen"
-description: Diese Prozedur zeigt, wie eine POS-Berechtigungsgruppe erstellt wird.
+title: POS-Berechtigungsgruppen erstellen
+description: In diesem Thema wird erläutert, wie Sie eine POS-Berechtigungsgruppe erstellen.
 author: scott-tucker
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,41 +17,34 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b30c9a1d7fe4598695423ba700ebc88a794a49c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e6782c60aa659523775cc6c4eb1694430a4bf4f
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566363"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914797"
 ---
-# <a name="create-pos-permission-groups"></a> POS-Berechtigungsgruppen erstellen
+# <a name="create-pos-permission-groups"></a>POS-Berechtigungsgruppen erstellen
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt, wie eine POS-Berechtigungsgruppe erstellt wird. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Rolle "Bereichsleiter (Einzelhandel)" vorgesehen.
+In diesem Thema wird erläutert, wie Sie eine POS-Berechtigungsgruppe erstellen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Rolle "Bereichsleiter (Einzelhandel)" vorgesehen.
 
-1. Gehen Sie zu "Berechtigungsgruppen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "POS-Berechtigungsgruppenkennung" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Wählen Sie "Ja" im Feld "Zeiterfassungseinträge anzeigen" aus.
-    * Sie können verschiedene Berechtigungen für Ihre POS-Berechtigungsgruppe jetzt aktivieren oder deaktivieren. Bei einigen Berechtigungen können Sie einen Wert festlegen, der verwendet wird, wenn überprüft werden soll, ob der POS-Benutzer die Aktivität ausführen kann.  Dieses Aufgabenhandbuch ermöglicht einige Berechtigungen, die einem Kassierer zugeordnet werden können.  
-6. Wählen Sie "Ja" im Feld "Auftragserstellung zulassen" aus.
-7. Wählen Sie "Ja" im Feld "Auftragsbearbeitung zulassen" aus.
-8. Wählen Sie "Ja" im Feld "Auftragsabruf zulassen" aus.
-9. Wählen Sie "Ja" im Feld "Kennwortänderung zulassen" aus.
-10. Wählen Sie "Ja" im Feld "Blindschließen zulassen" aus.
-11. Klicken Sie auf "Speichern".
-    * Nachdem die Änderungen gespeichert sind, müssen Sie den Mitarbeiterverteilungszeitplan ausführen, um die Änderungen an Einzelhandelskanäle zu übertragen.  
-12. Schließen Sie die Seite.
-13. Gehen Sie zu "Einzelvorgänge".
-    * Danach weisen wir die POS-Berechtigungsgruppe einem Einzelvorgang zu.  
-14. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-15. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-16. Klicken Sie auf Bearbeiten.
-17. Erweitern Sie den Einzelvorgangsklassifizierungs-Abschnitt.
-18. Geben Sie im Feld "POS-Berechtigungsgruppe" einen Wert ein oder wählen Sie einen Wert aus.
-    * Alle Arbeitskräfte in Positionen für diesen Einzelvorgang werden die Einstellungen dieser POS-Berechtigungsgruppe verwenden, es sei denn, die POS-Berechtigungen dieser Arbeitskräfte wurden in ihrer Positionsebene überschrieben.  
-19. Klicken Sie auf "Speichern".
-    * Nachdem die Änderungen gespeichert sind, müssen Sie den Mitarbeiterverteilungszeitplan ausführen, um die Änderungen an Einzelhandelskanäle zu übertragen.  
+1. Wechseln Sie im Navigationsbereich zu **Module > Einzelhandel > Mitarbeiter > Berechtigungsgruppen**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **POS-Berechtigungsgruppenkennung** einen Wert ein.
+4. Geben Sie im Feld **Beschreibung** einen Wert ein.
+5. Wählen Sie **Ja** im Feld **Zeiterfassungseinträge anzeigen** aus. Sie können verschiedene Berechtigungen für Ihre POS-Berechtigungsgruppe jetzt aktivieren oder deaktivieren. Bei einigen Berechtigungen können Sie einen Wert festlegen, der verwendet wird, wenn überprüft werden soll, ob der POS-Benutzer die Aktivität ausführen kann. Dieses Aufgabenhandbuch ermöglicht einige Berechtigungen, die einem Kassierer zugeordnet werden können.  
+6. Wählen Sie **Ja** im Feld **Auftragserstellung zulassen** aus.
+7. Wählen Sie **Ja** im Feld **Auftragsbearbeitung zulassen** aus.
+8. Wählen Sie **Ja** im Feld **Auftragsabruf zulassen** aus.
+9. Wählen Sie **Ja** im Feld **Kennwortänderung zulassen** aus.
+10. Wählen Sie **Ja** im Feld **Blindschließen zulassen** aus.
+11. Wählen Sie **Speichern**. Nachdem die Änderungen gespeichert sind, müssen Sie den Mitarbeiterverteilungszeitplan ausführen, um die Änderungen an Einzelhandelskanäle zu übertragen. 
+12. Wechseln Sie im Navigationsbereich zu **Module > Personalverwaltung > Einzelvorgänge > Einzelvorgänge**.
+13. Danach weisen wir die POS-Berechtigungsgruppe einem Einzelvorgang zu. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+14. Wählen Sie **Bearbeiten** aus.
+15. Erweitern Sie den Abschnitt **Einzelvorgangsklassifizierung**.
+16. Geben Sie im Feld "POS-Berechtigungsgruppe" einen Wert ein oder wählen Sie einen Wert aus. Alle Arbeitskräfte in Positionen für diesen Einzelvorgang werden die Einstellungen dieser POS-Berechtigungsgruppe verwenden, es sei denn, die POS-Berechtigungen dieser Arbeitskräfte wurden in ihrer Positionsebene überschrieben.  
+17. Wählen Sie **Speichern**. Nachdem die Änderungen gespeichert sind, müssen Sie den Mitarbeiterverteilungszeitplan ausführen, um die Änderungen an Einzelhandelskanäle zu übertragen.  
 

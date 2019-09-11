@@ -1,9 +1,9 @@
 ---
 title: Eine Datensatzvorlage erstellen, um die Dateneingabe zu erleichtern
-description: Diese Prozedur zeigt, wie eine Datensatzvorlge erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen.
+description: Dieses Thema zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen.
 author: margoc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,37 +16,31 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3b2ba56b6146f2495fb6a53c3cef9f549b1ad837
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 08ee7d0f0ce7e92eaa85137dcd2761bfd702eb8c
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1848206"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1866927"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Eine Datensatzvorlage erstellen, um die Dateneingabe zu erleichtern
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt, wie eine Datensatzvorlge erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen. In dieser Prozedur erstellen Sie einen neuen Datensatz für neuen Laptops, die den Anlagen hinzugefügt werden sollen. Für diese Prozedur wird das Beispielunternehmen USMF verwendet.
+Dieses Thema zeigt, wie eine Datensatzvorlage erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen. In dieser Prozedur erstellen Sie einen neuen Datensatz für neuen Laptops, die den Anlagen hinzugefügt werden sollen. Für diese Prozedur wird das Beispielunternehmen USMF verwendet.
 
-1. Wechseln Sie zu Anlagen > Anlagen > Anlagen.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Anlagengruppe" einen Wert ein oder wählen Sie einen Wert aus.
-4. Geben Sie im Feld "Name" einen Wert ein.
-    * Geben Sie zum Beispiel „Laptop des potenziellen Firmenkunden” ein.  
-5. Geben Sie im Feld „Suchname” einen Wert ein.
-    * Geben Sie beispielsweise „Laptop” ein.  
-6. Erweitern Sie den Abschnitt „Technische Informationen”.
-7. Geben Sie im Feld „Marke” einen Wert ein.
-8. Geben Sie im Feld „Modell” einen Wert ein.
-9. Geben Sie im Feld „Modelljahr” einen Wert ein.
-10. Klicken Sie im Aktivitätsbereich auf "Optionen".
-11. Klicken Sie auf „Datensatzinfo”.
-12. Klicken Sie auf „Benutzervorlage”.
-13. Geben Sie im Feld "Name" einen Wert ein.
-    * Geben Sie zum Beispiel „Firmenlaptop” ein.  
-14. Geben Sie im Feld "Beschreibung" einen Wert ein.
-    * Geben Sie zum Beispiel „Firmenlaptop” ein.  
-15. Klicken Sie auf "OK".
-16. Klicken Sie auf "Schließen".
+1. Wechseln Sie im Navigationsbereich zu **Module > Anlagen > Anlagen > Anlagen**.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Anlagengruppe** einen Wert ein oder wählen Sie einen Wert aus.
+4. Geben Sie im Feld **Name** einen Wert ein. Geben Sie zum Beispiel **Laptop des potenziellen Firmenkunden** ein.  
+5. Geben Sie im Feld **Suchname** einen Wert ein. Geben Sie beispielsweise **Laptop** ein.  
+6. Erweitern Sie den Abschnitt **Technische Informationen**.
+7. Geben Sie in den Feldern **Hersteller**, **Modell** und **Modelljahr** jeweils Werte ein.
+8. Wählen Sie im Aktivitätsbereich **Optionen** aus.
+9. Wählen Sie **Datensatzinfo** aus.
+10. Wählen Sie **Benutzervorlage** aus.
+11. Geben Sie im Feld **Name** einen Wert ein.
+12. Geben Sie im Feld **Beschreibung** einen Wert ein.
+13. Wählen Sie **OK**.
+14. Wählen Sie **Schließen** aus.
 

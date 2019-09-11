@@ -3,7 +3,7 @@ title: Überblick über die Funktionsverwaltung
 description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
 author: mikefalkner
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 21eaf2fdcadf8fe9f91438a97a88cc3bddab8286
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: 6aeb5383520f799223d62420f6e0c1079c6c961f
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862937"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887110"
 ---
 # <a name="feature-management-overview"></a>Überblick über die Funktionsverwaltung
 
@@ -103,8 +103,9 @@ Alle Funktionen, die aktiviert werden können, werden aktiviert. Wenn bereits ge
 
 Standardmäßig sind alle Funktionen, die Ihrer Umgebung hinzugefügt werden deaktiviert, es sei denn, es handelt sich um erforderliche Funktionen. Wenn Sie jedoch automatisch alle neuen Funktionen aktivieren möchten, können Sie die Dropdownliste unter dem Arbeitsbereichtitel verwenden, um zu ändern, was geschieht, wenn neue Fähigkeiten hinzugefügt werden.
 
-- Wählen Sie **Alle neuen Funktionen sind standardmäßig aktiviert**, um automatisch alle neuen Funktionen zu aktivieren, die Ihrer Umgebung hinzugefügt werden.
-- Wählen Sie **Alle neuen Funktionen sind standardmäßig deaktiviert**, um automatisch alle neuen Funktionen zu deaktivieren, die Ihrer Umgebung hinzugefügt werden.
+- Wählen Sie **Neue Funktionen automatisch aktivieren** aus, um automatisch alle neuen Funktionen zu aktivieren, die Ihrer Umgebung hinzugefügt werden.
+- Wählen Sie **Neue Funktionen nicht automatisch aktivieren** aus, um standardmäßig alle neuen Funktionen zu deaktivieren, die Ihrer Umgebung hinzugefügt werden.
+
 
 Wenn Sie alle Funktionen automatisch aktivieren, werden dadurch alle Features aktiviert, die aktiviert würden, wenn Sie auf die Schaltfläche **Alle aktivieren** klicken. Die Funktionen, die eine Bestätigung erfordern, oder die Features, die erst nach einer Aktion aktiviert werden können, werden nicht aktiviert.
 

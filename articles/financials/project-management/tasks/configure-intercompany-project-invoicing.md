@@ -1,9 +1,9 @@
 ---
 title: Intercompany-Projektrechnungsstellung konfigurieren
-description: Diese Prozedur zeigt, wie die Projektfakturierung zwischen zwei Unternehmen in Ihrer Organisation eingerichtet wird.
+description: Dieses Thema zeigt, wie die Projektfakturierung zwischen zwei Unternehmen in Ihrer Organisation eingerichtet wird.
 author: KimANelson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,54 +17,50 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 53871db9223eef6ba78f2e327e60f45110891478
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c89b17c09a4f145b5a4ca9cdd127b4e635447d4b
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1838270"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867318"
 ---
 # <a name="configure-intercompany-project-invoicing"></a>Intercompany-Projektrechnungsstellung konfigurieren
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt, wie die Projektfakturierung zwischen zwei Unternehmen in Ihrer Organisation eingerichtet wird. Diese Aufgabe verwendet das USSI-Dataset.
+Dieses Thema zeigt, wie die Projektfakturierung zwischen zwei Unternehmen in Ihrer Organisation eingerichtet wird. Diese Aufgabe verwendet das USSI-Dataset.
 
-1. Gehen Sie zu "Kreditoren" > "Händler" > "Alle Händler".
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie im Aktivitätsbereich auf Allgemein.
-4. Klicken Sie auf „Intercompany”.
-5. Legen Sie „Aktiv” auf „Ja” fest, um den Intercompanyhandel zu aktivieren.
-6. Geben Sie im Feld „Debitorenunternehmen” einen Wert ein oder wählen Sie einen Wert aus.
-7. Geben Sie im Feld „Mein Konto” einen Wert ein oder wählen Sie einen Wert aus.
-8. Klicken Sie auf "Speichern".
-9. Schließen Sie die Seite.
-10. Schließen Sie die Seite.
-11. Wechseln Sie zu „Projektverwaltung und -buchhaltung” > „Setup”  „Projektverwaltungs- und -buchhaltungsparameter”.
-12. Klicken Sie auf die Registerkarte „Intercompany”.
-13. Bewegen Sie den Schieberegler auf „Ja”, um die Intercompany-Ressourcenplanung und -Arbeitszeittabellen zu aktivieren.
-14. Markieren Sie in der Liste die ausgewählte Zeile.
-15. Klicken Sie auf "Neu".
-16. Markieren Sie in der Liste die ausgewählte Zeile.
-17. Geben Sie im Feld „Leihende juristische Person” einen Wert ein, oder wählen Sie einen Wert aus.
-18. Aktivieren Sie das Kontrollkästchen „Umsatzerlös antizipieren”.
-19. Geben Sie im Feld „Standard-Arbeitszeittabellenkategorie” einen Wert ein oder wählen Sie einen Wert aus.
-20. Geben Sie im Feld „Standard-Ausgabenkategorie” einen Wert ein oder wählen Sie einen Wert aus.
-21. Klicken Sie auf "Speichern".
-22. Schließen Sie die Seite.
-23. Wechseln Sie zu „Projektverwaltung und -buchhaltung” > „Setup” > „Buchung” > „Sachkontobuchungseinstellungen”.
-24. Wählen Sie im Feld „Sachkontotypen” eine Option aus.
-25. Klicken Sie auf "Neu".
-26. Markieren Sie in der Liste die ausgewählte Zeile.
-27. Markieren Sie in der Liste die ausgewählte Zeile.
-28. Geben Sie im Feld "Hauptkonto" die gewünschten Werte an.
-29. Klicken Sie auf "Speichern".
-30. Schließen Sie die Seite.
-31. Wechseln Sie zu „Projektverwaltung und -buchhaltung” > „Setup” > „Preise” > „Verrechnungspreis”.
-32. Klicken Sie auf "Neu".
-33. Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.
-34. Geben Sie im Feld „Leihende juristische Person” einen Wert ein, oder wählen Sie einen Wert aus.
-35. Wählen Sie im Feld „Verrechnungspreismodell” eine Option aus.
-36. Geben Sie im Feld „Preisgestaltung” eine Zahl ein.
-37. Klicken Sie auf "Speichern".
+1. Wechseln Sie im Navigationsbereich zu **Module > Kreditorenkonten > Kreditoren > Alle Kreditoren**.
+2. In der Liste **Alle Kreditoren** suchen Sie den gewünschten Datensatz und wählen ihn aus.
+3. Wählen Sie im Aktivitätsbereich **Allgemein** aus.
+4. Wählen Sie **Intercompany** aus.
+5. Legen Sie **Aktiv** auf **Ja** fest, um den Intercompanyhandel zu aktivieren.
+6. Geben Sie im Feld **Debitorenunternehmen** einen Wert ein oder wählen Sie einen Wert aus.
+7. Geben Sie im Feld **Mein Konto** einen Wert ein oder wählen Sie einen Wert aus.
+8. Wählen Sie **Speichern**.
+9. Schließen Sie die Seiten, um zur Startseite zurückzukehren.
+10. Gehen Sie im Navigationsbereich zu **Module > Projektverwaltung und -verrechnung > Einrichtung > Projektverwaltungs- und -verrechnungsparameter**.
+11. Wählen Sie die Registerkarte **Intercompany** aus.
+12. Bewegen Sie den Schieberegler auf **Ja**, um die Intercompany-Ressourcenplanung und -Arbeitszeittabellen zu aktivieren.
+13. Markieren Sie in der Liste die ausgewählte Zeile.
+14. Wählen Sie **Neu** aus.
+15. Geben Sie im Feld **Leihende juristische Person** einen Wert ein, oder wählen Sie einen Wert aus.
+16. Aktivieren Sie das Kontrollkästchen **Umsatzerlös antizipieren**.
+17. Geben Sie im Feld **Standard-Arbeitszeittabellenkategorie** einen Wert ein oder wählen Sie einen Wert aus.
+18. Geben Sie im Feld **Standard-Ausgabenkategorie** einen Wert ein oder wählen Sie einen Wert aus.
+19. Wählen Sie **Speichern**.
+20. Schließen Sie die Seite.
+21. Wechseln Sie im Navigationsbereich zu **Module > Projektverwaltung und -verrechnung > Einstellungen > Buchung > Sachkontobuchungseinstellungen**.
+22. Wählen Sie im Feld **Sachkontotypen** eine Option aus.
+23. Wählen Sie **Neu** aus.
+24. Geben Sie im Feld **Hauptkonto** der neuen Zeile die gewünschten Werte an.
+25. Wählen Sie **Speichern**.
+26. Schließen Sie die Seite.
+27. Wechseln Sie im Navigationsbereich zu **Module > Projektverwaltung und -verrechnung > Einstellungen > Preise > Interner Verrechnungspreis**.
+28. Wählen Sie **Neu** aus.
+29. Geben Sie im Feld **Gültigkeitsdatum** ein Datum ein.
+30. Geben Sie im Feld **Leihende juristische Person** einen Wert ein, oder wählen Sie einen Wert aus.
+31. Wählen Sie im Feld **Verrechnungspreismodell** eine Option aus.
+32. Geben Sie im Feld **Preisgestaltung** eine Zahl ein.
+33. Wählen Sie **Speichern**.
 

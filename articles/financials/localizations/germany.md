@@ -1,9 +1,9 @@
 ---
-title: Deutschland
+title: Deutschland – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 for Finance and Operations-Funktionen, die für Deutschland spezifisch sind.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/19/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Germany
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: b0467e5c8d0c8ec9fea63cb49571254c8c76d7cf
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 8ebd18e994b85122f75bf1a9aa4b4f86f768e19a
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1852305"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865703"
 ---
-# <a name="germany"></a>Deutschland
+# <a name="germany-overview"></a>Deutschland – Übersicht
 
 [!include[banner](../includes/banner.md)]
 
