@@ -1,9 +1,9 @@
 ---
 title: Plan mit Einschränkungen erstellen
-description: Diese Prozedur zeigt, wie ein Plan erstellt wird, der sowohl Material- als auch Kapazitätsengpässe berücksichtigt.
+description: Dieses Thema zeigt, wie ein Plan erstellt wird, der sowohl Material- als auch Kapazitätsengpässe berücksichtigt.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,47 +16,40 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 72cddd58b7068e08cddf24df83da8da2f7af7168
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6b5d37de41fe68845cec3f2285aed2484ac117aa
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845292"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867172"
 ---
 # <a name="generate-a-constrained-plan"></a>Plan mit Einschränkungen erstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt, wie ein Plan erstellt wird, der sowohl Material- als auch Kapazitätsengpässe berücksichtigt. Der Plan stellt sicher, dass die Herstellung nicht beginnt, bevor das Material verfügbar ist und die Ressourcen nicht überbucht werden. 
+Dieses Thema zeigt, wie ein Plan erstellt wird, der sowohl Material- als auch Kapazitätsengpässe berücksichtigt. Der Plan stellt sicher, dass die Herstellung nicht beginnt, bevor das Material verfügbar ist und die Ressourcen nicht überbucht werden. 
 
 Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Prozedur ist für den Produktionsplaner vorgesehen.
 
 
 ## <a name="set-up-a-constrained-plan"></a>Einen eingeschränkten Plan einrichten
-1. Klicken Sie auf "Produktprogrammplanung".
-2. Klicken Sie auf "Produktprogrammpläne".
-3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Beispiel: StaticPlan  
-4. Wählen Sie "Ja" im Feld "Begrenzte Kapazität" aus.
-5. Geben Sie im Feld "Begrenzte Kapazität" den Wert "30" ein.
-6. Erweitern Sie die Planungszeiträume im Tage-Abschnitt.
-7. Wählen Sie "Ja" im Feld "Kapazität" aus.
-8. Geben Sie im Feld "Zeitraum für Kapazitätsplanung (Tage)" eine Zahl ein.
-    * Beispiel: 60  
-9. Wählen Sie "Ja" im Feld "Berechnete Verzögerungen" aus.
-10. Geben Sie im Feld "Planungszeitraum für Verzögerungen berechnen (Tage)" eine Zahl ein.
-    * Beispiel: 60  
-11. Erweitern Sie den Abschnitt "Berechnete Verzögerungen".
-12. Wählen Sie "Ja" im Feld "Die berechnete Verzögerung dem Bedarfsdatum hinzufügen".
-13. Wählen Sie "Ja" im Feld "Die berechnete Verzögerung dem Bedarfsdatum hinzufügen".
-14. Wählen Sie "Ja" im Feld "Die berechnete Verzögerung dem Bedarfsdatum hinzufügen".
-15. Schließen Sie die Seite.
+1. Auf der Startseite wählen Sie den Arbeitsbereich **Produktprogrammplanung** aus.
+2. Wählen Sie **Produktprogrammpläne** in der Liste mit Links ganz rechts im Arbeitsbereich aus.
+3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Beispiel: **StaticPlan**  
+4. Wählen Sie **Ja** im Feld **Begrenzte Kapazität** aus.
+5. Geben Sie im Feld **Planungszeitraum für begrenzte Kapazität** den Wert `30` ein.
+6. Erweitern Sie den Abschnitt **Planungszeitraum in Tagen**.
+7. Wählen Sie **Ja** im Feld **Kapazität** aus.
+8. Geben Sie im Feld **Zeitraum für Kapazitätsplanung (Tage)** eine Zahl ein. Beispiel: `60`  
+9. Wählen Sie **Ja** im Feld **Berechnete Verzögerungen** aus.
+10. Geben Sie im Feld **Planungszeitraum für Verzögerungen berechnen (Tage)** eine Zahl ein. Beispiel: `60` 
+11. Erweitern Sie den Abschnitt **Berechnete Verzögerungen**.
+12. Wählen Sie **Ja** in allen Feldern **Die berechnete Verzögerung dem Bedarfsdatum hinzufügen**.
+13. Schließen Sie die Seite.
 
 ## <a name="create-a-constrained-plan"></a>Einen Plan mit Einschränkungen erstellen
-1. Klicken Sie auf "Ausführen".
-2. Geben Sie im Feld "Produktprogrammplan" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie den Plan aus, für den Sie Einschränkungen eingerichtet haben.  
-3. Klicken Sie auf "OK".
-    * Dies kann einige Zeit in Anspruch nehmen.  
-4. Klicken Sie auf "Bestellvorschläge".
+1. Wählen Sie **Ausführen** aus.
+2. Geben Sie im Feld **Produktprogrammplan** den Plan ein oder wählen Sie den Plan aus, für den Sie Einschränkungen eingerichtet haben.  
+3. Wählen Sie **OK**.
+4. Wählen Sie **Bestellvorschläge** aus.
 

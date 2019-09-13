@@ -1,9 +1,9 @@
 ---
-title: Lagerortarbeitsrichtlinien
+title: Übersicht über Lagerarbeitsrichtlinien
 description: Lagerortarbeitsrichtlinien steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0710eac8daba7f51f6b5d1522476b812a130960d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567031"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865111"
 ---
-# <a name="warehouse-work-policies"></a>Lagerortarbeitsrichtlinien
+# <a name="warehouse-work-policies-overview"></a>Übersicht über Lagerarbeitsrichtlinien
 
 [!include [banner](../includes/banner.md)]
 

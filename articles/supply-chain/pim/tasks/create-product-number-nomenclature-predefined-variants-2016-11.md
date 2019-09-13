@@ -1,9 +1,9 @@
 ---
 title: Produktnummernbezeichnung für vordefinierte Produktvarianten erstellen
-description: Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Produktvarianten eingerichtet wird und sie der passenden Produktdimensionsgruppe zugeordnet werden kann.
+description: Dieses Thema erklärt, wie eine Produktnummernbezeichnung für vordefinierte Produktvarianten eingerichtet wird und der passenden Produktdimensionsgruppe zugeordnet werden kann.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,45 +16,45 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a2e61fd99cb80a1a9cc3d8e985fb0f14e3c2fc2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 5cf0efeac2851e6ead6fc5e15a016370dfa620bc
+ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844680"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "1914906"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Produktnummernbezeichnung für vordefinierte Produktvarianten erstellen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Verfahren zeigt, wie eine Produktnummerenbezeichnung für vordefinierte Produktvarianten eingerichtet wird und sie der passenden Produktdimensionsgruppe zugeordnet werden kann. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Die neue Produktnummernnomenklatur wird der Produktdimensionsgruppe Farbe und Größe zuweisen. Diese Aufgabe erfolgt in der Regel durch einen Produktdesigner.
+Dieses Thema erklärt, wie eine Produktnummernbezeichnung für vordefinierte Produktvarianten eingerichtet wird und der passenden Produktdimensionsgruppe zugeordnet werden kann. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Die neue Produktnummernnomenklatur wird der Produktdimensionsgruppe Farbe und Größe zuweisen. Diese Aufgabe erfolgt in der Regel durch einen Produktdesigner.
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Erstellen eine Produktnummerbezeichnung
-1. Klicken Sie auf "Produktvariantenmodell-Definition".
-2. Klicken Sie auf "Produktbezeichnung".
-3. Klicken Sie auf "Neu".
-4. Geben Sie im Feld Name einen Nomenklaturnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise ColorSize).
-5. Geben Sie im Feld "Beschreibung" einen Wert ein.
-6. Klicken Sie auf Hinzufügen.
-7. Klicken Sie auf "Produktmasternummer".
-8. Klicken Sie auf Hinzufügen.
-9. Klicken Sie auf Textkonstante.
-10. Geben Sie im Feld "Text" einen Wert ein.
-11. Klicken Sie auf Hinzufügen.
-12. Klicken Sie auf "Farbe".
-13. Klicken Sie auf Hinzufügen.
-14. Klicken Sie auf Textkonstante.
-15. Geben Sie im Feld "Text" einen Wert ein.
-16. Klicken Sie auf Hinzufügen.
-17. Klicken Sie auf Größe.
+1. Wählen Sie **Produktvariantenmodell-Definition** aus.
+2. Wählen Sie **Produktbezeichnung** aus.
+3. Wählen Sie **Neu** aus.
+4. Geben Sie im Feld **Name** einen Bezeichnungsnamen ein, der die Zielproduktdimensionsgruppe identifiziert (beispielsweise `ColorSize`).
+5. Geben Sie im Feld **Beschreibung** einen Wert ein.
+6. Wählen Sie **Hinzufügen** aus.
+7. Wählen Sie **Produktmaster**-Nummer aus.
+8. Wählen Sie **Hinzufügen** aus.
+9. Wählen Sie **Textkonstante** aus.
+10. Geben Sie im Feld **Text** einen Wert ein.
+11. Wählen Sie **Hinzufügen** aus.
+12. Wählen Sie **Farbe** aus.
+13. Wählen Sie **Hinzufügen** aus.
+14. Wählen Sie **Textkonstante** aus.
+15. Geben Sie im Feld **Text** einen Wert ein.
+16. Wählen Sie **Hinzufügen** aus.
+17. Wählen Sie **Größe** aus.
 18. Schließen Sie die Seite.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Zuweisen der Nomenklatur zu einem Produktmaster
-1. Klicken Sie auf "Produktdimensionsgruppen".
-2. Wählen Sie die Dimensionsgruppe "SizeCol".
-3. Klicken Sie auf Bearbeiten.
-4. Wählen Sie "Ja" im Feld "Bezeichnungen verwenden".
-5. Geben Sie im Feld "Produktvariantennummerbezeichnung" eine Bezeichnung ein oder wählen Sie eine aus.
+1. Wählen Sie **Produktdimensionsgruppen** aus.
+2. Wählen Sie die Gruppe **SizeCol-Produktdimension** aus.
+3. Wählen Sie **Bearbeiten** aus.
+4. Wählen Sie **Ja** im Feld **Bezeichnungen verwenden** aus.
+5. Geben Sie im Feld **Produktvariantennummerbezeichnung** einen Wert ein oder wählen Sie einen Wert aus.
 6. Schließen Sie die Seite.
 

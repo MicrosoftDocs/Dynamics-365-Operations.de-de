@@ -3,7 +3,7 @@ title: Nummernkreise einzeln einrichten
 description: In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten.
 author: sericks007
 manager: AnnBe
-ms.date: 07/09/2019
+ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 58e69b680c006c814e9408135b6947161ad7c4f3
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 818e641d19444e94a287134b68b25d52a05021d0
+ms.sourcegitcommit: 6ff2c25d859c435106192e07c9ef0a9067c1e8d0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738880"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "1886599"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Nummernkreise einzeln einrichten
 
@@ -33,7 +33,7 @@ In diesem Thema wird erläutert, wie Sie Nummernkreise einzeln einrichten. Numme
 2. Wählen Sie **Nummernkreis** aus.
 3. Geben Sie im Feld **Nummernkreiscode** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
-5. Wählen Sie auf dem Inforegister **Bereichsparameter** einen Bereich für den Nummernkreis aus, und wählen Sie Bereichswerte in der Dropdownliste aus. Mit dem Bereich wird definiert, welche Organisationen den Nummernkreis verwenden. Nummernkreise mit einem anderen Bereich als **Freigegeben** können Segmente enthalten, die ihrem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Weitere Informationen zu Bereichen finden Sie unter [Überblick über Nummernkreise](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/fin-and-ops/organization-administration/number-sequence-overview.md).  
+5. Wählen Sie auf dem Inforegister **Bereichsparameter** einen Bereich für den Nummernkreis aus, und wählen Sie Bereichswerte in der Dropdownliste aus. Mit dem Bereich wird definiert, welche Organisationen den Nummernkreis verwenden. Nummernkreise mit einem anderen Bereich als **Freigegeben** können Segmente enthalten, die ihrem Bereich entsprechen. Ein Nummernkreis mit dem Bereich **Juristische Person** kann beispielsweise ein Segment für juristische Personen enthalten. Weitere Informationen zu Bereichen finden Sie unter [Überblick über Nummernkreise](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
 6. Erweitern Sie den Abschnitt **Segmente**.
     - Definieren Sie das Format für den Nummernkreis, indem Sie Segmente hinzufügen, entfernen und neu anordnen.  
     - Nummernkreise aller Bereiche können *konstante Segmente* und *alphanumerische Segmente* enthalten. Konstante Segmente enthalten einen Satz alphanumerischer Zeichen, die sich nicht ändern. Fügen Sie mithilfe dieses Segmenttyps einen Bindestrich oder andere Trennzeichen zwischen Nummernkreissegmenten hinzu. Alphanumerische Segmente enthalten eine Kombination aus Nummernzeichen (#) und kaufmännischen Und-Zeichen (&). Diese Zeichen stellen Buchstaben und Zahlen dar, die jedes Mal schrittweise erhöht werden, wenn eine Nummer aus dem Nummernkreis verwendet wird. Verwenden Sie ein Nummernzeichen (#) zur Angabe inkrementeller Nummern und ein kaufmännisches Und-Zeichen zur Angabe inkrementeller Buchstaben. Mit dem Format `#####_2014` wird beispielsweise der Nummernkreis `00001_2014`, `00002_2014` usw. erstellt. Mindestens ein alphanumerisches Segment muss vorhanden sein. Bereichssegmente, z. B. ein Unternehmen oder eine juristische Person, sind nicht erforderlich. Doch wenn Sie keine Bereichssegmente in das Format einschließen, werden Nummern für die ausgewählte Referenz dennoch pro Bereich generiert.  

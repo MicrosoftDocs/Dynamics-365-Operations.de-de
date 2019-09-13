@@ -1,9 +1,9 @@
 ---
-title: " Parameterkonfigurationen für Einzelhandelsauszüge"
-description: Diese Prozedur zeigt Konfigurationen für Einzelhandelsparameter, die sich darauf auswirken, wie Einzelhandelsauszüge erstellt und gebucht werden.
+title: Retail-Parameter konfigurieren, die Auswirkungen auf Einzelhandelsaufstellungen haben
+description: In diesem Thema werden Konfigurationen für Retail-Parameter demonstriert, die sich darauf auswirken, wie Retail-Anweisungen erstellt und gebucht werden.
 author: josaw1
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,29 +17,29 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6dacd2b80ca0d51d81d2bdf5bc2636b47da621ee
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b9a0386a4d61395903e82d988244dd131c1febaf
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564292"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867270"
 ---
-# <a name="parameter-configurations-for-retail-statements"></a> Parameterkonfigurationen für Einzelhandelsauszüge
+# <a name="configure-retail-parameters-that-affect-retail-statements"></a>Retail-Parameter konfigurieren, die Auswirkungen auf Einzelhandelsaufstellungen haben
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Konfigurationen für Einzelhandelsparameter, die sich darauf auswirken, wie Einzelhandelsauszüge erstellt und gebucht werden. Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.
+In diesem Thema werden Konfigurationen für Retail-Parameter demonstriert, die sich darauf auswirken, wie Retail-Anweisungen erstellt und gebucht werden. Für diese Prozedur wird das Demo-Unternehmen USRT verwendet.
 
-1. Navigieren Sie zu "Einzelhandel und Handel" > "Hauptsitz einrichten" > "Parameter" > "Einzelhandelsparameter".
-2. Klicken Sie auf die Registerkarte "Buchung".
-    * Wählen Sie "Ja" aus, wenn Sie die periodischen Rabattbeträge speziell buchen möchten.  
-    * Wählen Sie "Standard" aus, um Standardkonten zu verwenden, oder "Periodisch", wenn Sie definieren möchten, welches Konto für jeden periodischen Rabatt zu verwenden ist.  
-    * Wählen Sie "Zusammenfassung" aus, wenn Bestandspositionen aggregiert werden sollen, wann immer möglich.  
-    * Wählen Sie "Ja" aus, wenn Rechnungen und Zahlungen als Teil des Auszugsbuchungsprozesses automatisch ausgeglichen werden sollen.  
-    * Wählen Sie "Ja" aus, wenn Ablage in Tresor-Buchungen aggregiert werden sollen.  
-    * Wählen Sie "Ja" aus, wenn Bankeinzahlungs-Buchungen aggregiert werden sollen.  
-    * Wählen Sie "Ja" aus, um eine Aggregation für Auszugsbuchung zu aktivieren.  
-    * Wählen Sie "Ja" aus, um Aufträge parallel zu erstellen und zu verarbeiten, wenn Aufstellungen gebucht werden.  
-    * Geben Sie die Höchstmenge der Aufträge ein, die in jeder Stapelverarbeitungsaufgabe bearbeitet werden sollen.  
-3. Klicken Sie auf "Speichern".
+1. Gehen Sie im Navigationsbereich zu **Module > Retail and Commerce > Hauptsitz-Setup > Parameter > Einzelhandelsparameter**.
+2. Wählen Sie die Registerkarte **Buchung**.
+    - Wählen Sie **Ja**, wenn Sie die periodischen Rabattbeträge gezielt buchen möchten.  
+    - Wählen Sie **Standard**, um Standardkonten zu verwenden, oder wählen Sie **Periodisch**, wenn Sie festlegen möchten, welches Konto für jeden periodischen Rabatt verwendet werden soll.  
+      - Wählen Sie **Zusammenfassung**, wenn die Bestandszeilen nach Möglichkeit aggregiert werden sollen.  
+      - Wählen Sie **Ja**, wenn Rechnungen und Zahlungen im Rahmen der Rechnungsbuchung automatisch abgerechnet werden sollen.  
+      - Wählen Sie **Ja**, wenn sichere Drop-Transaktionen aggregiert werden sollen.  
+      - Wählen Sie **Ja**, wenn Bank-Drop-Transaktionen aggregiert werden sollen.  
+      - Wählen Sie **Ja**, um die Aggregation für die Auszugsbuchung einzuschalten.  
+      - Wählen Sie **Ja**, um beim Buchen von Bescheinigungen Aufträge anzulegen und parallel zu bearbeiten.  
+      - Geben Sie die Höchstmenge der Aufträge ein, die in jeder Stapelverarbeitungsaufgabe bearbeitet werden sollen.  
+3. Wählen Sie **Speichern**.
 

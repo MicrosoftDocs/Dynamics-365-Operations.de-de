@@ -1,9 +1,9 @@
 ---
-title: Dokumentdruck
+title: Übersicht über den Dokumentendruck
 description: In Microsoft Dynamics 365 for Finance and Operations können Sie Dokumente drucken, indem Sie entweder einen lokalen Drucker oder ein mit dem Netzwerk verbundenes Gerät verwenden. Dieser Artikel gibt eine Übersicht, wie Dokumente gedruckt werden.
 author: TJVass
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc45865b55b4794202408ca19a0776440382fdd
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 779931a779cdb8fcbc8e85c3d6c2a4e123d8ec47
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1850070"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1864663"
 ---
-# <a name="document-printing"></a>Dokumentdruck
+# <a name="document-printing-overview"></a>Übersicht über den Dokumentendruck
 
 [!include [banner](../includes/banner.md)]
 

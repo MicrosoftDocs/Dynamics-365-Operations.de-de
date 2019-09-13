@@ -1,9 +1,9 @@
 ---
-title: Einrichten von Spediteuren
-description: In diesem Verfahren wird gezeigt, wie einen Spediteur eingerichtet wird und Details wie Dienst, Lieferart, Transportzahlungsmittel, Transporteinschränkungen und Versandsatz definiert werden.
+title: Spediteure einrichten
+description: In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie Service, Versandart, Transportausschreibung, Transportbeschränkungen und Frachtrate definieren.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,82 +16,59 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c5ac13d17c97f20ee79e7faf57c570f02158424
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7a43a99e10b915f1265be14f2442069dae3a22e5
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569101"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867026"
 ---
-# <a name="set-up-shipping-carriers"></a>Einrichten von Spediteuren
+# <a name="set-up-shipping-carriers"></a>Spediteure einrichten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-In diesem Verfahren wird gezeigt, wie einen Spediteur eingerichtet wird und Details wie Dienst, Lieferart, Transportzahlungsmittel, Transporteinschränkungen und Versandsatz definiert werden. Ein Transportkoordinator kann dann einen Spediteur einer ein- und ausgehenden Ladung zuweisen.
+In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie Service, Versandart, Transportausschreibung, Transportbeschränkungen und Frachtrate definieren. Ein Transportkoordinator kann dann einen Spediteur einer ein- und ausgehenden Ladung zuweisen.
 
 
 ## <a name="create-a-new-shipping-carrier"></a>Neuen Spediteur erstellen
-1. Wechseln Sie zu "Transportverwaltung" > "Einrichten" > "Spediteure" > "Spediteure".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Spediteur " einen Wert ein.
-4. Geben Sie im Feld "Name" einen Wert ein.
-5. Klicken Sie im Feld "Transportart" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+1. Gehen Sie zu **Navigationsbereich > Module > Transportmanagement > Einrichtung > Spediteur > Spediteur > Spediteur**.
+2. Wählen Sie **Neu** im Aktionsbereich.
+3. Geben Sie in das Feld **Spediteur** einen Wert ein.
+4. Geben Sie im Feld **Name** einen Wert ein.
+5. Wählen Sie im Feld **Modus** eine Option aus dem Dropdown-Menü aus.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>Füllen Sie die allgemeinen Informationen für den Spediteur aus
-1. Schalten Sie die Erweiterung des Abschnitts "Überblick" ein/aus.
-2. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen "Spediteur aktivieren".
-3. Klicken Sie im Feld "Händler" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie das Kreditorenkonto aus, das dem Spediteur zugeordnet werden soll.  
-4. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-6. Wählen Sie im Feld "Typ der Transportausschreibung" eine Option aus.
-    * Wählen Sie "Manuell" aus, um die Seite "Transportausschreibung" zu verwenden, oder wählen Sie "EDI" aus, um das Zahlungsmittel zu aktualisieren, indem Sie elektronischen Datenaustausch (Electronic Data Interchange, EDI) verwenden.  
-7. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen "Spediteursbewertung aktivieren".
+1. Schaltet die Erweiterung des Abschnitts **Übersicht** um.
+2. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Spediteur aktivieren**.
+3. Wählen Sie im Feld **Lieferantenkonto** eine Option aus dem Dropdown-Menü. Wählen Sie das Kreditorenkonto aus, das dem Spediteur zugeordnet werden soll.  
+4. Wählen Sie im Feld **Transportausschreibungstyp** eine Option aus. Wählen Sie **Manuell**, um die Seite Transportausschreibung zu verwenden, oder wählen Sie **EDI**, um die Ausschreibung über Electronic Data Interchange (EDI) zu aktualisieren.  
+5. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Spediteur-Rating aktivieren**.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>Erstellen Sie die erforderlichen Dienstleistungen für den Spediteur
-1. Schalten Sie die Erweiterung des Abschnitts "Dienstleistungen" ein/aus.
-2. Klicken Sie auf "Neu".
-3. Markieren Sie in der Liste die ausgewählte Zeile.
-4. Geben Sie im Feld "Spediteurdienstleistung " einen Wert ein.
-5. Geben Sie im Feld "Name" einen Wert ein.
-6. Klicken Sie im Feld "Transportmethode" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
+1. Schaltet die Erweiterung des Abschnitts **Dienste** um.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Spediteurservice** einen Wert ein.
+4. Geben Sie im Feld **Name** einen Wert ein.
+5. Wählen Sie im Feld **Transportmethode** eine Option aus dem Dropdown-Menü.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>Richten Sie die Adresse für den Spediteur ein (optional)
-1. Schalten Sie die Erweiterung des Abschnitts "Adressen" ein/aus.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name oder Beschreibung" einen Wert ein.
-4. Klicken Sie im Feld "Land/Region" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-6. Klicken Sie im Feld "Postleitzahl" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-9. Geben Sie im Feld "Straße" einen Wert ein.
-10. Klicken Sie auf "OK".
+1. Schaltet die Erweiterung des Abschnitts **Adressen** um.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie in das Feld **Name oder Beschreibung** einen Wert ein.
+4. Wählen Sie im Feld **Land/Region** eine Option aus dem Dropdown-Menü.
+5. Wählen Sie im Feld **ZIP/Postleitzahl** eine Option aus dem Dropdown-Menü.
+6. Geben Sie im Feld **Straße** einen Wert ein.
+7. Wählen Sie **OK**.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>Richten Sie das Bewertungsprofil für den Spediteur ein.
-1. Schalten Sie die Erweiterung des Abschnitts "Bewertungsprofile" ein/aus.
-2. Klicken Sie auf "Neu".
-3. Markieren Sie in der Liste die ausgewählte Zeile.
-4. Geben Sie im Feld "Bewertungsprofil" einen Wert ein.
-5. Geben Sie im Feld "Name" einen Wert ein.
-6. Klicken Sie im Feld "Standort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-8. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-9. Klicken Sie im Feld "Lagerort" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-10. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-11. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-12. Klicken Sie im Feld "Tarifmodul" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie das Tarifmodul aus, das in Übereinstimmung mit dem Vertrag steht, den Sie mit dem Spediteur haben.  
-13. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-14. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-15. Klicken Sie im Feld "Satzmaster" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-16. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-18. Klicken Sie im Feld "Transitzeitmodul" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-19. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-20. Klicken Sie auf "Speichern".
+1. Schaltet die Erweiterung des Abschnitts **Bewertungsprofile** ein.
+2. Wählen Sie **Neu** aus.
+3. Geben Sie im Feld **Bewertungsprofil** einen Wert ein.
+4. Geben Sie im Feld **Name** einen Wert ein.
+5. Wählen Sie im Feld **Lagerort** eine Option aus dem Dropdown-Menü.
+6. Wählen Sie im Feld **Lager** eine Option aus dem Dropdown-Menü.
+7. Wählen Sie im Feld **Rate-Engine** eine Option aus dem Dropdown-Menü aus. Wählen Sie das Tarifmodul aus, das in Übereinstimmung mit dem Vertrag steht, den Sie mit dem Spediteur haben.  
+8. Wählen Sie im Feld **Rate-Master** eine Option aus dem Dropdown-Menü.
+9. Wählen Sie im Feld **Transitzeit-Engine** eine Option aus dem Dropdown-Menü.
+10. Wählen Sie **Speichern**.
 

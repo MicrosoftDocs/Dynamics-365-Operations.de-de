@@ -19,50 +19,56 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ca62a6b3aa64ec2383ee3ded3b7bbf4650a41166
-ms.sourcegitcommit: efcc0dee8bde5f8f93f6291e7f059ad426843e57
+ms.openlocfilehash: 5e71729dafd2ad85a01b055363d1c7056b5558b2
+ms.sourcegitcommit: 3f05ede8b8acdf0550240a83a013e093b4ad043d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "1797274"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1873104"
 ---
 # <a name="troubleshooting-guide-for-data-integration"></a>Leitfaden zur Problembehandlung für die Datenintegration
 
-## <a name="enable-plugin-trace-in-common-data-service-and-check-the-dual-write-plugin-error-details"></a>Aktivieren der Plug-In-Ablaufverfolgung in Common Data Service und Überprüfen der Plug-In-Fehlerdetails für duales Schreiben
+## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Aktivieren der Plug-In-Ablaufverfolgungsprotokolle in Common Data Service und Überprüfen der Plug-In-Fehlerdetails für duales Schreiben
 
-Wenn Sie bei der Synchronisierung des dualen Schreibens ein Problem haben oder ein Fehler auftritt, können Sie die Fehler im Ablaufverfolgungsprotokoll überprüfen:
+[!include [banner](../includes/banner.md)]
 
-1. Bevor Sie die Fehler überprüfen können, müssen Sie die Plug-In-Ablaufverfolgung mithilfe der Anweisungen unter [Plug-In registrieren](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs) aktivieren. Jetzt können Sie die Fehler überprüfen.
-2. Melden Sie sich bei Dynamics 365 for Sales an.
-3. Klicken Sie auf das Einstellungssymbol (ein Zahnrad), und wählen Sie **Erweiterte Einstellungen** aus.
-4. Wählen Sie im Menü **Einstellungen** die Option **Anpassung > Plug-In-Ablaufverfolgungsprotokoll** aus.
-5. Klicken Sie auf den Typnamen **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin**, um die Fehlerdetails anzuzeigen.
+[!include [preview](../includes/preview-banner.md)]
 
-## <a name="check-dual-write-synchronization-errors-in-finance-and-operations"></a>Überprüfen von Synchronisierungsfehlern beim dualen Schreiben in Finance and Operations
+Sollte ein Problem oder Fehler bei der Synchronisierung des dualen Schreibens auftreten, führen Sie die folgenden Schritte aus, um die Fehler im Ablaufverfolgungsprotokoll zu überprüfen.
 
-Sie können die Fehler während des Testens überprüfen, indem Sie die folgenden Schritte ausführen:
+1. Bevor Sie die Fehler überprüfen können, müssen Sie Plug-In-Ablaufverfolgungsprotokolle aktivieren. Anweisungen finden Sie im Abschnitt „Ablaufverfolgungsprotokolle anzeigen“ im [Tutorial: Schreiben und Registrieren eines Plug-Ins](https://docs.microsoft.com/powerapps/developer/common-data-service/tutorial-write-plug-in#view-trace-logs).
 
-+ Melden Sie sich bei LifeCycle Services (LCS) an.
-+ Öffnet das LCS-Projekt, das Sie ausgewählt haben, um das Testing für das duale Schreiben durchzuführen.
-+ Gehen Sie zu den in der Cloud gehosteten Umgebungen.
-+ Stellen Sie über Remotedesktop eine Verbindung zum Finance and Operations-VM mithilfe des lokalen Kontos her, das in LCS angezeigt wird.
-+ Öffnen Sie die Ereignisanzeige. 
-+ Navigieren Sie zu **Anwendungs- und Dienstprotokolle > Microsoft > Dynamics > AX-DualWriteSync > Operativ**. Die Fehler und Details werden angezeigt.
+    Jetzt können Sie die Fehler überprüfen.
 
-## <a name="how-to-unlink-and-link-another-common-data-service-environment-from-finance-and-operations"></a>Vorgehensweise zum Herstellen und Aufhaben einer Verknüpfung zu einer anderen Common Data Service-Umgebung von Finance and Operations aus
+2. Melden Sie sich bei Microsoft Dynamics 365 for Sales an.
+3. Wählen Sie die Schaltfläche **Einstellungen** (das Zahnradsymbol) aus, und wählen Sie dann **Erweiterte Einstellungen** aus.
+4. Wählen Sie im Menü **Einstellungen** die Option **Anpassung \> Plug-In-Ablaufverfolgungsprotokoll**.
+5. Wählen Sie **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** als Typnamen aus, um die Fehlerdetails anzuzeigen.
 
-Sie können Links aktualisieren, indem Sie die folgenden Schritte ausführen:
+## <a name="inspect-dual-write-synchronization-errors-in-finance-and-operations"></a>Überprüfen von Synchronisierungsfehlern beim dualen Schreiben in Finance and Operations
 
-+ Navigieren Sie zur Finance and Operations-Umgebung.
-+ Öffnen Sie die Datenverwaltung.
-+ Klicken Sie auf **Verknüpfung zu CDS für Apps**.
-+ Wählen Sie alle ausgeführten Zuordnungen aus, und klicken Sie auf **Beenden**. 
-+ Wählen Sie alle Zuordnungen aus, und klicken Sie auf **Löschen**.
+Gehen Sie folgendermaßen vor, um während des Testens Fehler zu überprüfen.
+
+1. Melden Sie sich bei Microsoft Dynamics Lifecycle Services (LCS) an.
+2. Öffnen Sie das LCS-Projekt, wofür der Test für das duale Schreiben durchgeführt werden soll.
+3. Wählen Sie **In der Cloud gehostete Umgebungen** aus.
+4. Stellen Sie eine Remote Desktop-Verbindung mit dem virtuellen Dynamics 365 for Finance and Operations-Computer her, indem Sie lokales Konto verwenden, das in LCS angezeigt wird.
+5. Öffnen Sie die Ereignisanzeige. 
+6. Gehen Sie zu **Anwendungs- und Dienstprotokolle \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operativ**. Die Fehler und Details werden angezeigt.
+
+## <a name="unlink-one-common-data-service-environment-from-finance-and-operations-and-link-another-environment"></a>Aufheben einer Common Data Service-Umgebungs-Verknüpfung von Finance and Operations und Verknüpfung einer anderen Umgebung
+
+Um Verknüpfungen zu aktualisieren, führen Sie die folgenden Schritte aus:
+
+1. Gehen Sie zur Finance and Operations-Umgebung.
+2. Öffnen Sie die Datenverwaltung.
+3. Wählen Sie **Verknüpfung zu CDS für Apps** aus.
+4. Wählen Sie alle Zuordnungen aus, die ausgeführt werden, und wählen Sie dann **Beenden** aus.
+5. Wählen Sie alle Zuordnungen und dann **Löschen** aus.
 
     > [!NOTE]
-    > Die Option **Löschen** wird nicht angezeigt, wenn die Vorlage **CustomerV3-Account** ausgewählt wird. Heben Sie die Auswahl bei Bedarf auf. **CustomerV3-Account** ist eine ältere bereitgestellte Vorlage und funktioniert mit der Prospect to Cash-Lösung. Da es global veröffentlicht wird, wird es unter allen Vorlagen angezeigt.
+    > Die Option **Löschen** ist nicht verfügbar, wenn die Vorlage **CustomerV3-Account** ausgewählt wird. Heben Sie die Auswahl dieser Vorlage nach Bedarf auf. **CustomerV3-Account** ist eine ältere bereitgestellte Vorlage und funktioniert mit der Prospect to Cash-Lösung. Da es global veröffentlicht wird, wird es unter allen Vorlagen angezeigt.
 
-+ Klicken Sie auf **Verknüpfung für Umgebung aufheben**.
-+ Klicken Sie zur Bestätigung auf **Ja**.
-+ Um die neue Umgebung zu verknüpfen, führen Sie die Schritte unter [Installationsleitfaden](https://aka.ms/dualwrite-docs) aus.
-
+6. Wählen Sie **Verknüpfung für Umgebung aufheben** aus.
+7. Wählen Sie **Ja** aus, um den Vorgang zu bestätigen.
+8. Um die neue Umgebung zu verknüpfen, führen Sie die Schritte unter [Installationsleitfaden](https://aka.ms/dualwrite-docs) aus.

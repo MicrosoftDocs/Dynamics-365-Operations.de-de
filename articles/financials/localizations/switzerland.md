@@ -1,9 +1,9 @@
 ---
-title: Schweiz
+title: Übersicht Schweiz
 description: Dieses Thema bietet Links zu Microsoft Dynamics 365 for Finance and Operations-Dokumentationsressourcen für die Schweiz.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.search.region: Switzerland
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40972d848f057a0743fbc3fdfe74f6bccd28661b
-ms.sourcegitcommit: 16bfa0fd08feec1647829630401ce62ce2ffa1a4
+ms.openlocfilehash: 86122bf0a22d01db683c221bd13a08224d4f40ed
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1849187"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865645"
 ---
-# <a name="switzerland"></a>Schweiz 
+# <a name="switzerland-overview"></a>Übersicht Schweiz
 
 [!include [banner](../includes/banner.md)]
 

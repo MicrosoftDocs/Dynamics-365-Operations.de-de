@@ -1,9 +1,9 @@
 ---
 title: Übereinstimmung erstellen und verarbeiten
-description: Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen.
+description: Dieses Thema erklärt, wie Sie die Qualitätsmangelverwaltung auf Basis eines vorhandenen Qualitätsprüfungsauftrags ausführen.
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 08/07/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,65 +16,54 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16ed11bce92920fe8240fc85f706a2ac6ab0a04b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4e9cf42f80ef7a4c9c5f68a308386db5835c8f2e
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572810"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916644"
 ---
 # <a name="create-and-process-a-conformance"></a>Übereinstimmung erstellen und verarbeiten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Verwenden Sie dieses Verfahren, um Qualitätsmangelverwaltung, auf Basis eines vorhandenen Qualitätsprüfungsauftrag auszuführen. Sie können diese Buchung im USMF-Vorführungsunternehmen ausführen und können die vorgeschlagenen Werte verwenden. Normalerweise wird diese Prozedur aus einem Qualitätssekretär ausgeführt.  Als erforderliches folgenden Schaltern "überprüfen die Qualität von Waren" Aufgabenerfassen aus. Um die Genehmigung einer Nichtübereinstimmung zu verarbeiten, muss der Benutzer der das Aufgabenerfassen ausführt einen "Name Wert besitzen, der auf der Benutzerseite zugewiesen ist. Um die Hinweisdokumente verwenden zu können, muss der Benutzer Handhabung von Dokumenten verfügen aktiviert in den Benutzeroptionen.
+Dieses Thema erklärt, wie Sie die Qualitätsmangelverwaltung auf Basis eines vorhandenen Qualitätsprüfungsauftrags ausführen. Sie können diese Buchung im USMF-Vorführungsunternehmen ausführen und können die vorgeschlagenen Werte verwenden. Normalerweise wird diese Prozedur aus einem Qualitätssekretär ausgeführt.  Als Voraussetzung müssen Sie die Anweisungen in [Qualität der Waren inspizieren](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) befolgen. Um die Genehmigung einer Nichtübereinstimmung zu verarbeiten, muss der Benutzer der das Aufgabenerfassen ausführt einen "Name Wert besitzen, der auf der Benutzerseite zugewiesen ist. Um die Hinweisdokumente verwenden zu können, muss der Benutzer Handhabung von Dokumenten verfügen aktiviert in den Benutzeroptionen.
 
 
 ## <a name="select-a-quality-order"></a>Wählen Sie einen Qualitätsprüfungsauftrag aus.
-1. Qualitätsprüfungsaufträge (Formular) anzeigen
-2. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Wählen Sie den Qualitätsprüfungsauftrag, der vom "überprüfen die Qualität von Waren" Aufgabenerfassen erstellt wurde.  
+1. Wechseln Sie im Navigationsbereich zu **Module > Lagerverwaltung > Periodische Aufgaben > Qualitätsmanagement > Qualitätsprüfungsaufträge**.
+2. Wählen Sie in der Liste den Qualitätsprüfungsauftrag aus, der in [Qualität der Waren inspizieren](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/supply-chain/inventory/tasks/inspect-quality-goods.md) erstellt wurde.  
 
 ## <a name="create-a-nonconformance"></a>Erstellen einer Nichtübereinstimmung
-1. Klicken Sie auf Abfragen.
-2. Nichtübereinstimmungen klicken
-3. Klicken Sie auf "Neu".
-4. Klicken Sie im Feld "Problemtyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Wählen Sie das Problem aus, wenn während der Inspektionsprozesses gefunden wurde.  
-5. Klicken Sie im Feld "Problemtyp" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-8. Klicken Sie auf "OK".
+1. Wählen Sie im Aktivitätsbereich **Abfragen** aus.
+2. Wählen Sie **Nichtübereinstimmungen** aus.
+3. Wählen Sie **Neu** aus.
+4. Wählen Sie im Dropdownmenü des Feldes **Problemtyp**, das Problem aus, das während des Prüfprozesses gefunden wurde.  
+5. Wählen Sie **OK**.
 
 ## <a name="approvereject-a-nonconformance"></a>Qualitätsmangeldatensätze genehmigen
-1. Klicken Sie auf Funktionen.
-2. Die Nichtübereinstimmung genehmigen
-    * In vorliegenden Beispiel genehmigen Sie den Qualitätsmangel. Genehmigte Qualitätsmängel können mit zugehörigen Arbeitsgängen zugeordnet werden, um Arbeit, die als Teil in der erfassenden zu erfassen Qualitätsmangelbehandlung und ausgeführt werden, wie in dieser Aufgabe, die Verarbeitung der Korrekturbehandlung.  
-3. Klicken Sie auf "Ja".
+1. Wählen Sie **Funktionen** aus.
+2. Wählen Sie **Nichtübereinstimmung genehmigen** aus. In vorliegenden Beispiel genehmigen Sie den Qualitätsmangel. Genehmigte Qualitätsmängel können zugehörigen Arbeitsgängen zugeordnet werden, um Arbeit, die als Teil der Qualitätsmangelbehandlung ausgeführt wird, und, wie in diesem Thema, der Verarbeitung der Korrekturbehandlung, erfasst wird.  
+3. Wählen Sie **Ja** aus.
 
 ## <a name="create-a-correction-action"></a>Korrektur erstellen
-1. Korrekturen anklicken
-2. Klicken Sie auf "Neu".
-3. Markieren Sie in der Liste die ausgewählte Zeile.
-4. Klicken Sie im Feld "Personalnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-6. Klicken Sie auf Auswählen.
-7. Klicken Sie auf Anhänge.
-    * Erstellen Sie einen Hinweis zur Korrektur. In vorliegenden Beispiel ist die Aktivität, mit dem Kreditor in Verbindung mit Ihnen aufzunehmen, um den Qualitätsmangelfall zu erläutern.  
-8. Klicken Sie auf "Neu".
-9. Klicken Sie auf Hinweis.
-    * Beachten Sie, dass, abhängig von der Berichteinstellungen, verschiedene Dokumenttypen in den Berichten gedruckt werden können, die der Nichtübereinstimmung verwaltung zugeordnet sind.  
-10. Geben Sie im Feld "Beschreibung" einen Wert ein.
-11. Schließen Sie die Seite.
+1. Wählen Sie **Veränderungen** aus.
+2. Wählen Sie **Neu** aus.
+3. Wählen Sie im Feld **Personalnummer** der neuen Zeile den gewünschten Datensatz aus dem Dropdownmenü aus.
+4. Klicken Sie auf **Auswählen**.
+5. Wählen Sie **Zuordnen** aus. Erstellen Sie einen Hinweis zur Korrektur. In vorliegenden Beispiel ist die Aktivität, mit dem Kreditor in Verbindung mit Ihnen aufzunehmen, um den Qualitätsmangelfall zu erläutern.  
+6. Wählen Sie **Neu** aus.
+7. Wählen Sie **Hinweis** aus. Abhängig von den Berichteinstellungen können verschiedene Dokumenttypen in den Berichten gedruckt werden, die der Qualitätsmangelverwaltung zugeordnet sind.  
+8. Geben Sie im Feld **Beschreibung** einen Wert ein.
+9. Schließen Sie die Seite.
 
 ## <a name="maintain-a-correction"></a>Korrekturen verwalten
-1. Klicken Sie auf "Abgeschlossen".
-2. Klicken Sie auf "OK".
+1. Wählen Sie **Als abgeschlossen markieren** aus.
+2. Wählen Sie **OK**.
 3. Schließen Sie die Seite.
 
 ## <a name="close-a-nonconformance"></a>Qualitätsmangel schließen
-1. Klicken Sie auf Funktionen.
-2. Qualitätsmangel schließen
-3. Klicken Sie auf "Ja".
-4. Schließen Sie die Seite.
-5. Schließen Sie die Seite.
+1. Wählen Sie **Funktionen** aus.
+2. Wählen Sie **Qualitätsmangel schließen** aus.
+3. Wählen Sie **Ja** aus.
+4. Schließen Sie die Seiten.

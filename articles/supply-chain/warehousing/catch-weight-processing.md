@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 03/18/2019
+ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: ed588ea28bec3e734f9648c1fbd7551ab0b3cdda
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
+ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836112"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "1887134"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -136,7 +136,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 
 - Das manuelle Erstellen von Quarantäneaufträgen wird für Artikelgewichtsprodukte nicht unterstützt.
 - Das manuelle Umlagern von Bestand, der einer Arbeit zugeordnet ist, wird für Artikelgewichtsprodukte nicht unterstützt.
-- Die Konsolidierung von Ladungsträgern wird für Artikelgewichtsprodukte nicht unterstützt.
 - Ladungsträgerladungen zur Initialisierung des Lagerortbestands werden nicht für Artikelgewichtsprodukte unterstützt.
 - Chargenausgleichprozesse werden nicht für Artikelgewichtsprodukte unterstützt.
 - Die Handhabung von negativem physischem Bestand wird nicht für Artikelgewichtsprodukte unterstützt.
@@ -147,7 +146,6 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 - Die Funktionen zur Clusterkommissionierung werden nicht für Artikelgewichtsprodukte unterstützt.
 - Entnahme- und Verpackungs-Lagerortverarbeitungen werden für Artikelgewichtsprodukte nicht unterstützt.
 - Für Artikelgewichtsprodukte kann Arbeit, die in einer Arbeitsvorlage definiert ist, automatisch ausgeführt werden.
-- Die Funktionen zur Stornierung von Arbeit werden nicht für Artikelgewichtsprodukte unterstützt.
 - Für Artikelgewichtsprodukte wird die manuelle Verpackungsstationsverarbeitung, bei der Arbeit nach dem Schließen von Containern erstellt wird, nicht unterstützt.
 - Die Funktionen zum stückweisen Scannen werden nicht für Artikelgewichtsprodukte unterstützt.
  

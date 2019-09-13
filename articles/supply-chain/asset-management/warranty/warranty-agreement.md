@@ -1,0 +1,57 @@
+---
+title: Garantievereinbarungen
+description: In diesem Abschnitt werden die Garantievereinbarungen im Anlagenmanagement erläutert.
+author: josaw1
+manager: AnnBe
+ms.date: 08/30/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: mkirknel
+ms.search.validFrom: 2019-08-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: 71905d5b362c80d48b78210b59cacfb1e7899757
+ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "1874692"
+---
+# <a name="warranty-agreements"></a>Garantievereinbarungen
+
+[!include [banner](../../includes/banner.md)]
+
+[!include [banner](../../includes/preview-banner.md)]
+
+
+Im Anlagenmanagement können Sie Garantiebedingungen einrichten, die mit einer Anlage oder einer Anlagenart verknüpft werden können. Garantiebedingungen werden für einen bestimmten Zeitraum angelegt. Die Garantie kann so eingerichtet werden, dass sie eine vollständige oder teilweise Deckung bietet, und Sie können Bedingungen einrichten, die sich auf Stunden, Ausgaben und Artikel beziehen.
+
+Der erste Schritt besteht darin, alle Garantievereinbarungen mit Lieferanten zu erstellen, die Sie für Ihr Gerät haben. Anschließend hängen Sie Garantievereinbarungen an Anlagen oder Anlagenarten an. Gewährleistungsvereinbarungen des Lieferanten werden nur zu Informationszwecken verwendet. Wenn die Lieferantengarantie auf eine Anlage eingerichtet ist, sehen Sie die Garantiezeit auf der Anlage.
+
+## <a name="create-a-warranty-agreement"></a>Anlegen einer Garantievereinbarung
+
+Eine Garantievereinbarung kann mehrere Vertragszeilen umfassen, um die Garantie für Arbeitszeiten, Spesen und Artikel abzudecken.
+
+1. Wählen Sie **Anlagenmanagement** \> **Einrichtung** \> **Anlagen** \> **Garantie**.
+2. Wählen Sie **Neu**, um ein Produkt zu erstellen.
+3. Geben Sie im Feld **Garantie** eine Garantie-ID ein.
+4. Geben Sie im Feld **Name** eine Beschreibung ein.
+
+    Im Feld **Details** FastTab zeigt das Feld **Assets** die Anzahl der aktiven Anlagen, die die Garantievereinbarung nutzen.
+
+5. Führen Sie auf den Seiten **Stundengarantie** und **Einzelteilgarantie** FastTabs diese Schritte aus, um Zeilen hinzuzufügen, die in eine Garantievereinbarung aufgenommen werden sollten, die sich auf Stunden oder Artikel bezieht:
+
+    1. Wählen Sie **Zeile hinzufügen**, um der Garantie eine neue Bedingung hinzuzufügen. Eine fortlaufende Zeilennummer wird automatisch in das Feld **Zeile** eingetragen.
+    2. Wählen Sie im Feld **Periode** die Art der Garantiezeit aus.
+    3. Geben Sie im Feld **Intervall** eine Zahl ein. Dieses Feld definiert die Anzahl der Zeiträume, für die die Garantie gültig sein soll.
+    4. Geben Sie im Feld **Prozent** den Deckungsprozentsatz für die Garantiezeile ein. Der Prozentsatz gibt an, wie viel von Ihrem Unternehmen abgedeckt wird.
+
+![Abbildung 1](media/01-warranty.png)

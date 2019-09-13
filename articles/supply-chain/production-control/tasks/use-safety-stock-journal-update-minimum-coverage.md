@@ -3,7 +3,7 @@ title: Sicherheitsbestandserfassung verwenden, um die Mindestdeckung zu aktualis
 description: Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basierend auf früheren Transaktionen, und dann die Artikeldeckung mit dem Vorschlag aktualisiert.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3b2916d6d2f24579fd9795c0e0bc548b6c2b747
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 478dd85abebf76dd264e93bcbe3f218a0ff0a5a8
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835777"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916805"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Sicherheitsbestandserfassung verwenden, um die Mindestdeckung zu aktualisieren
 
@@ -32,47 +32,37 @@ Diese Prozedur zeigt, wie man die Vorschläge zur Mindestdeckung berechnet, basi
 
 
 ## <a name="create-a-new-safety-stock-journal-name"></a>Einen neuen Sicherheitsbestands-Erfassungsname erstellen
-1. Wechseln Sie zu Sicherheitsbestands-Erfassungsnamen.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name" die Bezeichnung "Material" ein.
-4. Geben Sie im Feld "Beschreibung" die Bezeichnung "Material" ein.
+1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Masterplanung > Einrichten > Sicherheitsbestand Journalnamen**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Name** den Text'Material' ein.
+4. Geben Sie im Feld **Beschreibung** den Text'Material' ein.
 5. Schließen Sie die Seite.
 
 ## <a name="create-a-safety-stock-journal"></a>Eine Sicherheitsbestandserfassung erstellen
-1. Wechseln Sie zu Sicherheitsbestandsberechnung.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Name" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie den Sicherheitsbestands-Erfassungsname aus, den Sie erstellt haben, zum Beispiel "Material".  
-4. Klicken Sie auf "Positionen erstellen".
-5. Geben Sie in das Feld "Von Datum" ein Datum ein.
-    * Legen Sie das Datum auf "02.01.2015" fest.  
-6. Geben Sie in das Feld "Bis Datum" ein Datum ein.
-    * Legen Sie das Datum auf "30.12.2015" fest.  
-7. Klicken Sie auf "OK".
-    * Dadurch werden Positionen für Dimensionen erstellt, die Bestandstransaktionen haben.  
+1. Gehen Sie im Navigationsbereich **Navigationsbereich** zu **Masterplanung > Masterplanung > Ausführen > Sicherheitsbestandsberechnung**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Name** einen Wert ein, oder wählen Sie einen Wert aus. Wählen Sie den Sicherheitsbestands-Erfassungsname aus, den Sie erstellt haben, zum Beispiel "Material".  
+4. Klicken Sie auf **Zeilen erstellen**.
+5. Geben Sie im Feld **Von Datum** ein Datum ein.  
+6. Geben Sie im Feld **Bis Datum** ein Datum ein.
+7. Klicken Sie auf **OK**. Dadurch werden Positionen für Dimensionen erstellt, die Bestandstransaktionen haben.  
 
 ## <a name="calculate-proposal"></a>Vorschlag ermitteln
-1. Klicken Sie auf "Vorschlag berechnen".
-2. Wählen Sie die Option "Durchschnittliche Abgänge während Lieferzeit verwenden".
-3. Legen Sie den Multiplikationsfaktor auf "10" fest.
-    * Der Faktor "Multiplizieren" wird verwendet, um den Vorschlag anzupassen. Weil Demodaten nur einige, wenige Transaktionen haben, müssen Sie den Faktor festlegen, um einen realistischen Vorschlag zu erhalten.  
-4. Klicken Sie auf "OK".
-    * Führen Sie einen Bildlauf nach unten durch, um M0002 und M0003 zu suchen. Zeigen Sie die Spalte "Berechnete Mindestmenge" an.   
+1. Klicken Sie auf **Angebotsberechnung**.
+2. Wählen Sie die Option **Durchschnittliches Problem während der Vorlaufzeit** verwenden.
+3. Setzen Sie **Multiplikationsfaktor** auf '10'. Der Faktor "Multiplizieren" wird verwendet, um den Vorschlag anzupassen. Weil Demodaten nur einige, wenige Transaktionen haben, müssen Sie den Faktor festlegen, um einen realistischen Vorschlag zu erhalten.  
+4. Klicken Sie auf **OK**. Führen Sie einen Bildlauf nach unten durch, um M0002 und M0003 zu suchen. Betrachten Sie die Spalte **Berechnetes Minimum** Menge.   
 
 ## <a name="update-minimum-quantity"></a>Mindestmenge aktualisieren
-1. Geben Sie im Feld "Neue Mindestmenge" eine Zahl ein.
-    * Aktualisieren Sie die "Neue Mindestmenge", damit sie dem Wert in der "Berechneten Mindestmenge" entspricht. Wenn das "Berechnete Minimum" null ist, können Sie den gewünschten zukünftigen Wert eingeben. Zum Beispiel können Sie die "Berechnete Mindestmenge" in diesem Feld für M0002 eingeben, die den Lagerort 12 hat.  
-2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Zum Beispiel können Sie M0002 auswählen, der Lagerort 12 hat.  
-3. Geben Sie im Feld "Neue Mindestmenge" eine Zahl ein.
-    * Aktualisieren Sie die "Neue Mindestmenge", damit sie dem Wert in der "Berechneten Mindestmenge" entspricht. Wenn das "Berechnete Minimum" null ist, können Sie den gewünschten zukünftigen Wert eingeben.  
+1. Geben Sie im Feld **Neue Mindestmenge** eine Zahl ein. Aktualisieren Sie die "Neue Mindestmenge", damit sie dem Wert in der "Berechneten Mindestmenge" entspricht. Wenn das "Berechnete Minimum" null ist, können Sie den gewünschten zukünftigen Wert eingeben. Zum Beispiel können Sie die "Berechnete Mindestmenge" in diesem Feld für M0002 eingeben, die den Lagerort 12 hat.  
+2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Zum Beispiel können Sie M0002 auswählen, der Lagerort 12 hat.  
+3. Geben Sie im Feld **Neue Mindestmenge** eine Zahl ein. Aktualisieren Sie die "Neue Mindestmenge", damit sie dem Wert in der "Berechneten Mindestmenge" entspricht. Wenn das "Berechnete Minimum" null ist, können Sie den gewünschten zukünftigen Wert eingeben.  
 
 ## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Buchen Sie die neue Mindestmenge und überprüfen Sie das Ergebnis
-1. Klicken Sie auf "Buchen".
-2. Klicken Sie auf "OK".
-3. Klicken Sie, um dem Link im Feld "Artikelnummer" zu folgen.
-4. Klicken Sie, um dem Link im Feld "Artikelnummer" zu folgen.
-5. Klicken Sie im Aktivitätsbereich auf "Plan".
-6. Klicken Sie auf "Artikeldeckung".
-    * Beachten Sie, dass die "Mindestmenge" mit der neuen Mindestmenge aus der Sicherheitsbestandserfassung aktualisiert wurde.  
+1. Klicken Sie auf **Buchen**.
+2. Klicken Sie auf **OK**.
+3. Klicken Sie hier, um dem Link im Feld **Artikelnummer** zu folgen.
+4. Klicken Sie hier, um dem Link im Feld **Artikelnummer** zu folgen.
+5. Klicken Sie im Aktionsbereich **Action Pane** auf Plan.
+6. Klicken Sie auf **Einzelteilabdeckung**. Beachten Sie, dass die **Mindestmenge** mit der neuen Mindestmenge aus dem Sicherheitsbestandsjournal aktualisiert wurde.  
 

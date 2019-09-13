@@ -3,7 +3,7 @@ title: Sachkontobuchungsgruppen für Mehrwertsteuer einrichten
 description: Die Mehrwertsteuer wird zu den Hauptkonten berechnet und gebucht, die in den "Sachkontobuchungsgruppen" angegeben werden.
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6de914b5ca08b360db0bdb1ccb185b208d8d8ca6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9cab2f427ed4f90021ed74da07527bc4b9378d97
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846294"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916113"
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Sachkontobuchungsgruppen für Mehrwertsteuer einrichten
 
@@ -29,23 +29,16 @@ ms.locfileid: "1846294"
 
 Die Mehrwertsteuer wird zu den Hauptkonten berechnet und gebucht, die in den "Sachkontobuchungsgruppen" angegeben werden. Sachkontobuchungsgruppen werden jedem einzelnen Mehrwertsteuercode zugeordnet. Sie können einzelne Sachkontobuchungsgruppen für jeden Mehrwertsteuercode einrichten, eine Sachkontobuchungsgruppe für alle Mehrwertsteuercodes verwenden oder mehrere Sachkontobuchungsgruppen den Mehrwertsteuercodes zuweisen. Für diese Erfassung wird das Demo-Unternehmen DEMF verwendet. 
 
-1. Wechseln Sie zu "Steuer" > "Einstellungen" > "Mehrwertsteuer" > "Sachkontenbuchungsgruppen".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Sachkontobuchungsgruppe" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Wählen Sie im Feld "Mehrwertsteuer" das Hauptkonto für ausgehende Mehrwertsteuern aus, die an die Steuerbehörde zu zahlen sind.
-    * Mehrwertsteuern werden im Namen der Steuerbehörde erhoben, wenn Sie steuerpflichtige Waren und Dienstleistungen verkaufen.  
-6. Wählen Sie im Feld "Vorsteuer" das Hauptkonto für eingehende Steuern aus, die von der Steuerbehörde empfangen werden.
-    * Händler erheben Steuern im Auftrag der Steuerbehörde, wenn Sie steuerpflichtige Waren und Dienstleistungen kaufen. Dieses Feld ist nicht verfügbar, wenn die Option "Mehrwertsteuerregeln anwenden" auf der Seite "Hauptbuchparameter" ausgewählt ist. Stattdessen werden an Händler gezahlte Mehrwertsteuerbeträge vom selben Konto abgebucht, wie der Einkauf.   
-7. Wählen Sie im Feld "Verbrauchssteuerausgaben" das Hauptkonto für das Buchen abzugsfähiger "Verbrauchssteuern" aus, die nicht eingefordert oder durch Händler der Steuerbehörde gemeldet werden, als Teil der Verlagerung der Steuerschuld GST/HST in der EU.
-    * Die Option "Verbrauchssteuer" muss für den "Mehrwertsteuercode" in der Gruppe "Mehrwertsteuer" ausgewählt werden, die in der Transaktion verwendet wird.  Dieses Feld ist nicht verfügbar, wenn die Option "Mehrwertsteuerregeln anwenden" auf der Seite "Hauptbuchparameter" ausgewählt ist.   
-8. Wählen Sie im Feld "Gegenkonto Verbrauchssteuer" das Hauptkonto für das Buchen eingehender Verbrauchssteuern aus, die an Steuerbehörden zu zahlen sind.
-    * Die Option "Verbrauchssteuer" muss im "Mehrwertsteuercode" in der Gruppe "Mehrwertsteuer" ausgewählt werden, um die "Verbrauchssteuer" zu buchen. Wenn die Option "Mehrwertsteuerregeln anwenden" unter den "Hauptbuchparametern" ausgewählt ist, wird die Gegenbuchung im Ausgabenkonto der Transaktion gebucht.   
-9. Wählen Sie im Feld "Ausgleichskonto" das Hauptkonto aus, zu dem der Nettosaldo der Sachkonten gebucht wird, der in den Feldern "Verbrauchssteuer" und "Mehrwertsteuer" angegeben ist.
-    * Der Saldo wird erstellt, wenn der "Einzelvorgang für die Abrechnung und Buchung der Mehrwertsteuer" ausgeführt wurde.  Wenn die "Steuerbehörde für den Abrechnungszeitraum" einem Kreditorenkonto zugeordnet ist, wird der Saldo stattdessen zum Kreditorenkonto gebucht.   
-10. Wählen Sie im Feld "Kreditorenskonto" das Hauptkonto aus, um Skonto für Mehrwertsteuercodes zu buchen, die dieser "Sachkontobuchungsgruppe" zugeordnet sind.
-    * Das ist optional und wenn kein Konto eingegeben wird, wird das Hauptkonto auf Skontobasis verwendet. Es kann hilfreich sein, verschiedene Konten pro Sachkontobuchungsgruppe zu verwenden, wenn Sie die Option zum Stornieren der Mehrwertsteuer auf Skonten bei "Mehrwertsteuergruppen" verwenden.  
-11. Wählen Sie im Feld "Debitorenskonto" das Hauptkonto aus, um Skonto für Mehrwertsteuercodes zu buchen, die dieser "Sachkontobuchungsgruppe" zugeordnet sind.
-    * Das ist optional und wenn kein Konto eingegeben wird, wird das Hauptkonto für die "Skontocodes" verwendet. Es kann hilfreich sein, verschiedene Konten pro Sachkontobuchungsgruppe zu verwenden, wenn Sie die Option zum Stornieren der Mehrwertsteuer auf Skonten bei "Mehrwertsteuergruppen" verwenden.  
-12. Klicken Sie auf "Speichern".
+1. Gehen Sie zu **Navigationsbereich > Module > Steuer > Einrichtung > Umsatzsteuer > Kontenbuchungsgruppen**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Kontenbuchungsgruppe** einen Wert ein.
+4. Geben Sie im Feld **Beschreibung** einen Wert ein.
+5. Wählen Sie im Feld **Verkaufssteuerverbindlichkeiten** das Hauptkonto für ausgehende Umsatzsteuern, die an die Steuerbehörde zu zahlen sind. Mehrwertsteuern werden im Namen der Steuerbehörde erhoben, wenn Sie steuerpflichtige Waren und Dienstleistungen verkaufen.  
+6. Wählen Sie im Feld **Verkaufsforderung** das Hauptkonto für eingehende Steuern, die von der Steuerbehörde erhalten werden. Händler erheben Steuern im Auftrag der Steuerbehörde, wenn Sie steuerpflichtige Waren und Dienstleistungen kaufen. Dieses Feld ist nicht verfügbar, wenn auf der Seite **Hauptbuchparameter** die Option Umsatzsteuerregeln anwenden markiert ist. Stattdessen werden an Händler gezahlte Mehrwertsteuerbeträge vom selben Konto abgebucht, wie der Einkauf.   
+7. Wählen Sie im Feld **Steueraufwand verwenden** das Hauptkonto für die Buchung von abzugsfähigen Nutzungssteuern, die von den Verkäufern im Rahmen der EU-Reversion GST/HST nicht in Anspruch genommen oder an die Steuerbehörde gemeldet werden. Die Option **Steuer verwenden** muss für das **Verkaufssteuerkennzeichen** im **Verkaufssteuerkennzeichen** ausgewählt werden, das in der Transaktion verwendet wird. Dieses Feld ist nicht verfügbar, wenn auf der Seite **Hauptbuchparameter** die Option **Umsatzsteuerregeln anwenden** markiert ist.   
+8. Wählen Sie im Feld **Verwendung der Steuerverbindlichkeiten** das Hauptkonto für die Buchung eingehender Verwendungssteuern, die an die Steuerbehörden zu zahlen sind. Die Option **Steuer verwenden** muss in der Option **Umsatzsteuerkennzeichen** in der Option **Umsatzsteuerkennzeichen** ausgewählt sein, um **Steuer verwenden** zu buchen. Wenn auf der Seite **Hauptbuchparameter** die Option **Verkaufssteuerregeln anwenden** ausgewählt ist, wird der Ausgleich auf das Aufwandskonto des Geschäfts gebucht.   
+9. Wählen Sie im Feld **Verrechnungskonto** das Hauptkonto aus, auf das der Nettosaldo der in den Feldern **Verwendungssteuerverbindlichkeiten** und **Verkaufssteuerforderungen** angegebenen Sachkonten gebucht werden soll. Der Saldo wird bei der Umsatzsteuerabrechnung und dem Buchungsjob erstellt.  Wenn die Steuerbehörde für den Abrechnungszeitraum einem Kreditorenkonto zugeordnet ist, wird der Saldo stattdessen auf das Kreditorenkonto gebucht.
+10. Wählen Sie im Feld **Lieferant Skonto** das Hauptkonto zum Buchen von Skonto für Umsatzsteuerkennzeichen, die dieser Ledger-Buchungsgruppe zugeordnet sind. Dies ist optional und wenn kein Konto eingegeben wird, wird das Hauptkonto unter **Skontoabzugscodes** verwendet. Es kann sinnvoll sein, unterschiedliche Konten pro **Ledger-Buchungsgruppe** zu verwenden, wenn Sie die Option Umsatzsteuer auf Skonto umgekehrt auf Umsatzsteuergruppen verwenden.  
+11. Wählen Sie im Feld **Kundenfallrabatt** das Hauptkonto zum Buchen von Skonto für **Verkaufssteuerkennzeichen**, das dieser **Sachkonto-Buchungsgruppe** zugeordnet ist. Dies ist optional und wenn kein Konto eingegeben wird, wird das Hauptkonto auf den **Skontoabzugscodes** verwendet. Es kann sinnvoll sein, unterschiedliche Konten pro **Sachkonto-Buchungsgruppe** zu verwenden, wenn Sie die Option Umsatzsteuer auf Skonto auf **Verkaufssteuergruppen** verwenden.  
+12. Klicken Sie auf **Speichern**.
 

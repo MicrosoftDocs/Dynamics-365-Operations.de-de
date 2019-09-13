@@ -3,7 +3,7 @@ title: Erfassungseinträge oder Buchungen anzeigen
 description: Dieses Verfahren führt Sie durch die Verwendung der "Belegtransaktionsabfrage", um nach Erfassungseinträgen oder Transaktionen zu suchen.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c93b581e22665b27c1b99503cc91c20ead14ac81
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8c72ea9b7b706e1dbd8e4261534f098589535886
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834683"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916183"
 ---
 # <a name="view-journal-entries-or-transactions"></a>Erfassungseinträge oder Buchungen anzeigen
 
@@ -29,19 +29,17 @@ ms.locfileid: "1834683"
 
 Dieses Verfahren führt Sie durch die Verwendung der "Belegtransaktionsabfrage", um nach Erfassungseinträgen oder Transaktionen zu suchen.
 
-1. Wechseln Sie zu "Hauptbuch" >; "Abfragen und Berichte" > "Belegtransaktionen".
+1. Gehen Sie zu **Navigationsbereich > Module > Hauptbuch > Anfragen und Berichte > Belegtransaktionen**.
 2. Wählen Sie das Feld aus, für das Sie ein Filterkriterium definieren wollen.
-3. Geben Sie die Filterkriterien für das ausgewählte Feld ein.
-    * Sie können einen einzelnen Wert oder einen Bereich filtern. Wenn Sie einen Bereich definiert, stellen Sie sicher, dass die richtige Syntax verwendet wird. Die Werte sollten durch einen doppelten Punkt getrennt sein (..).  
-4. Klicken Sie auf die Registerkarte "Verknüpfungen", um weitere Tabellen hinzufügen, aus denen Sie filtern.
-5. Wählen Sie in der Struktur "Tabellen \Allgemeiner Erfassungseintrag" aus.
-6. Klicken Sie auf "Tabellenverknüpfung hinzufügen".
-7. Klicken Sie auf Abbrechen, wenn Sie beschließen, eine zusätzliche Tabelle nicht hinzuzufügen.
-8. Klicken Sie auf die Registerkarte "Bereich".
-9. Klicken Sie zum Ausführen der Abfrage auf OK.
-10. Klicken Sie auf "Transaktionsgrundlage".
-    * Verschiedene Schaltflächen über dem Raster können verwendet werden, um zusätzliche Informationen zum Datensatz des ausgewählten Belegs zu ermitteln. Einige Schaltflächen sind möglicherweise nicht verfügbar, je nach der Buchungsart und den Merkmalen der Buchung.  
+3. Geben Sie die Filterkriterien für das ausgewählte Feld ein. Sie können einen einzelnen Wert oder einen Bereich filtern. Wenn Sie einen Bereich definiert, stellen Sie sicher, dass die richtige Syntax verwendet wird. Die Werte sollten durch einen doppelten Punkt getrennt sein (..).  
+4. Klicken Sie auf die Registerkarte **Joins**, um weitere Tabellen hinzuzufügen, aus denen gefiltert werden soll.
+5. Wählen Sie im Baum **Tabellen/Allgemeine Journalbuchung**.
+6. Klicken Sie auf **Tabellen-Join hinzufügen**.
+7. Klicken Sie auf **Abbrechen**, wenn Sie keine zusätzliche Tabelle hinzufügen möchten.
+8. Klicken Sie auf die Registerkarte **Bereich**.
+9. Klicken Sie zum Ausführen der Abfrage auf **OK**.
+10. Klicken Sie im Aktionsbereich auf **Transaktionsursprung**. Verschiedene Schaltflächen über dem Raster können verwendet werden, um zusätzliche Informationen zum Datensatz des ausgewählten Belegs zu ermitteln. Einige Schaltflächen sind möglicherweise nicht verfügbar, je nach der Buchungsart und den Merkmalen der Buchung.
 11. Schließen Sie die Seite.
-12. Klicken Sie auf Originaldokument.
+12. Klicken Sie im Aktionsbereich auf **Originaldokument**.
 13. Schließen Sie die Seite.
 

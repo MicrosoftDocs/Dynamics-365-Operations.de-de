@@ -3,7 +3,7 @@ title: Doppelte Währung
 description: Dieses Thema enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 for Finance and Operations verwendet.
 author: kweekley
 manager: AnnBe
-ms.date: 05/06/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,20 +16,31 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: dfd4c116552510ee42cd2f3e8a0f31100826b9d2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6d5128ea9daaf22ee962ca5fc70a05cba05c7edb
+ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1839400"
+ms.lasthandoff: 08/08/2019
+ms.locfileid: "1867510"
 ---
 # <a name="dual-currency"></a>Doppelte Währung
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Funktion, die in Microsoft Dynamics 365 for Finance and Operations Version 8.1 (Oktober 2018) eingeführt wurden, ermöglichen es, die Berichtswährung als zweite Buchhaltungswährung zu verwenden. Diese Funktion wird auch als *Doppelte Währung* bezeichnet. Die Änderungen für doppelte Währung können nicht durch einen Konfigurationsschlüssel oder einen Parameter deaktiviert werden. Da die Berichtswährung als zweite Buchhaltungswährung verwendet wird, änderte sich die Art, in der die Berichtswährung in der Buchungslogik berechnet wird.
 
-Darüber hinaus wurden verschiedene Module verbessert, um die Berichtswährung in verschiedenen Prozessen zu überwachen, zu melden und zu verwenden. Die betroffen Module sind **Hauptbuch**, **Finanzberichterstellung**, **Kreditoren**, **Debitoren**, **Bargeld- und Bankverwaltung** und **Anlagevermögen**. Nachdem einer Aktualisierung, müssen Sie bestimmte Schritte für Bargeld- und Bankverwaltung und Anlagen abschließen. Stellen Sie daher sicher, dass Sie die entsprechenden Themen sorgfältig lesen.
+Darüber hinaus wurden zahlreiche Module verbessert, um die Berichtswährung in verschiedenen Prozessen zu überwachen, zu melden und zu verwenden. Die Module, die betroffen sind, umfassen Folgendes:
+
+- Hauptbuch 
+- Finanzberichterstellung 
+- Kreditorenkonten
+- Debitorenkonten 
+- Bargeld- und Bankverwaltung 
+- Anlagen 
+- Konsolidierungen
+
+Nachdem einer Aktualisierung, müssen Sie bestimmte Schritte für Bargeld- und Bankverwaltung und Anlagen abschließen. Stellen Sie daher sicher, dass Sie die entsprechenden Abschnitte dieses Themas lesen und verstehen.
 
 ## <a name="posting-process"></a>Buchungsprozess
 
@@ -72,9 +83,10 @@ Folgende Module verwenden die Berichtswährung als zweite Buchhaltungswährung:
 - [Hauptbuch](#general-ledger)
 - [Finanzberichterstellung](#financial-reporting)
 - [Kreditorenkonten](#accounts-payable-and-accounts-receivable)
-- [Debitoren](#accounts-payable-and-accounts-receivable)
+- [Debitorenkonten](#accounts-payable-and-accounts-receivable)
 - [Bargeld- und Bankverwaltung](#cash-and-bank-management)
-- [Anlagevermögen](#fixed-assets)
+- [Anlagen](#fixed-assets)
+- [Konsolidierungen](#consolidations)
 
 ### <a name="general-ledger"></a>Hauptbuch
 
@@ -124,6 +136,8 @@ Zuvor verfolgte das Modul **Anlagen** keine Berichtswährungsbeträge für Trans
 Darüber hinaus wurden am Abschreibungsprozess größere Änderungen vorgenommen. Bei diesen Änderungen ist nach einer Aktualisierung Benutzeraktivität erforderlich. Es ist wichtig, dass Sie die folgenden Änderungen lesen und verstehen, auch wenn Sie noch keine Anlagen verwenden.
 
 - Die Methode, über die der Abschreibungsprozess den Berichtswährungsbetrag bestimmt, wurde geändert. Das folgende Szenario vergleicht, der Berichtswährungsbetrag für Abschreibungen zuvor bestimmt wurde und wie der Berichtswährungsbetrag nun bestimmt wird.
+
+
 
     **Abschreibungsszenario**
 
@@ -186,3 +200,13 @@ Darüber hinaus wurden am Abschreibungsprozess größere Änderungen vorgenommen
     - Wenn ein Abschreibungstransaktionstyp in die Anlagenerfassung eingegeben wird, werden die Berichtswährungsbeträge in den neue Spalten angezeigt. Diese Beträge können geändert werden.
     - Wenn die Buchhaltungswährung und Berichtswährungen im Sachkonto überein, werden die Beträge synchron gehalten. Wenn Sie den **Haben**-Betrag   ändern, wird der **Habenwert in Berichtswährung**-Betrag automatisch geändert, sodass er übereinstimmt.
     - Werden ein anderer Transaktionstyp in die Anlagenerfassung eingegeben wird, werden die Beträge **Sollwert in Berichtswährung** und **Habenwert in Berichtswährung** niemals angezeigt, weder vor noch nach der Buchung. Die Buchhaltungswährungs- und Berichtswährungsbeträge sind auf dem Beleg, der im Hauptbuch gebucht wird, weiterhin verfügbar.
+    
+### <a name="consolidations"></a>Konsolidierungen
+    
+Funktionen, die in Microsoft Dynamics 365 for Finance and Operations 10.0.5 Version (Oktober 2019) eingeführt wurden, aktivieren Funktionen durch die Funktionsverwaltung für erweiterte Flexibilität für die Konsolidierung und doppelte Währung. Um diese Funktionen zu aktivieren, gehen Sie zum **Funktionsverwaltung**-Arbeitsbereich und wählen Sie **Funktionen für doppelte Währung in der Hauptbuchkonsolidierung aktivieren** aus.
+
+In der Hauptbuchkonsolidierung wurde eine neue Option hinzugefügt, um entweder die Buchhaltungs- oder die Berichtswährungsbeträge von den Quellunternehmen zu konsolidieren. Wenn die Buchhaltungs- oder Berichtswährung mit der Buchhaltungs- oder Berichtswährung im Konsolidierungsunternehmen identisch ist, werden die Beträge direkt kopiert anstatt übersetzt.
+
+-  Sie können nun auswählen, ob die Buchhaltungswährung oder die Berichtswährung vom Quellunternehmen als die Buchungswährung im Konsolidierungsunternehmen verwendet wird.
+
+- Die Buchhaltungs- oder Berichtswährungsbeträge vom Quellunternehmen werden direkt in die Buchhaltungs- oder Berichtswährungsbeträge im Konsolidierungsunternehmen kopiert, wenn eine der Währungen übereinstimmt. Die Buchführungs- und Berichtswährungsbeträge im Konsolidierungsunternehmen werden mithilfe des Wechselkurses berechnet, wenn keine der Währungen übereinstimmt.

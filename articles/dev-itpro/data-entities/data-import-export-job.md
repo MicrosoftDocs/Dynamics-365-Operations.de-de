@@ -1,9 +1,9 @@
 ---
-title: Einzelvorgänge für Datenimport und -export
+title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b16966fe1c3a48d772c7c9982f8802119675255f
-ms.sourcegitcommit: d0fa8d0140fa81029527edb317623c1a7737c593
+ms.openlocfilehash: cbd8d305920262ed48c62f13aa86f903a6b16d0a
+ms.sourcegitcommit: e552111e148a80544a3468da60ea0464f02a658d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1862903"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "1875319"
 ---
-# <a name="data-import-and-export-jobs"></a>Einzelvorgänge für Datenimport und -export
+# <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -184,7 +184,7 @@ Die Funktion zur Bereinigung des Auftragsverlaufs in der Datenverwaltung muss ve
 
 -   DMFDEFINITIONGROUPEXECUTION
 
-Die Funktion ist unter **Datenverwaltung \> Bereinigung des Auftragsverlaufs** verfügbar.
+Die Funktionen müssen in der Funktionsverwaltung aktiviert werden und sind über **Datenverwaltung \> Bereinigung des Auftragsverlaufs** zugänglich.
 
 ### <a name="scheduling-parameters"></a>Planungsparameter
 

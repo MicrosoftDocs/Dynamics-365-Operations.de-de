@@ -1,9 +1,9 @@
 ---
-title: Vereinbarungen zum Servicelevel
+title: Übersicht über Service Level Agreements
 description: In einer SLA stimmt der Debitor einer Mindestantwortzeit zu, basierend auf der Zeit zwischen der Aufzeichnung des Problems durch das Serviceunternehmen bis zum Beheben des Problems.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/01/2018
+ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cffe3a7766502dd5d888a7a99a32150967911301
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 90915502100c6165838f7eb2ebc620c7b15e6ec8
+ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562625"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "1865920"
 ---
-# <a name="service-level-agreements"></a>Vereinbarungen zum Servicelevel        
+# <a name="service-level-agreements-overview"></a>Übersicht über Service Level Agreements       
 
 [!include [banner](../includes/banner.md)]
 

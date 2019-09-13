@@ -3,7 +3,7 @@ title: Gebuchte Erfassungseinträge journalisieren
 description: Diese Verfahren zeigt, wie gebuchte Journaleinträge journalisiert werden.
 author: aprilolson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbf7ee8063487303cd4c8d2b76a8b44bacc86193
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e20229ca910aa0d7d820434c22edf5a27030bba5
+ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1846390"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "1916252"
 ---
 # <a name="journalize-posted-journal-entries"></a>Gebuchte Erfassungseinträge journalisieren
 
@@ -29,16 +29,14 @@ ms.locfileid: "1846390"
 
 Diese Verfahren zeigt, wie gebuchte Journaleinträge journalisiert werden. Für diese Prozedur wird das Demo-Datenunternehmen USMF verwendet.
 
-1. Überprüfen Sie die Einstellungen für die Journalisierung unter Hauptbuch > Sachkontoeinrichtung > Hauptbuchparameter.
-2. Das Feld "Erweiterte Journalisierung" kann auf Ja oder Nein festgelegt werden. Bei Ja unterscheidet sich die Berichtsausgabe.
-3. Wählen Sie aus, ob die Periode abgeschlossen werden kann, wenn der journalisierende Prozess nicht ausgeführt wurde.
-    * Ist die Option auf "Ja" festgelegt ist, kann der Zeitraum nicht abgeschlossen werden, bis der Erfassungsprozess für diesen Zeitraum abgeschlossenen wurde.  
+1. Wechseln Sie im **Navigationsbereich** auf **Module > Hauptbuch > Sachkonto-Einstellungen > Hauptbuchparameter**.
+2. Das Feld **Erstellte Journale erweitern** kann auf Ja oder Nein festgelegt werden. Bei Ja unterscheidet sich die Berichtsausgabe.
+3. Wählen Sie aus, ob die Periode abgeschlossen werden kann, wenn der journalisierende Prozess nicht ausgeführt wurde. Ist die Option auf "Ja" festgelegt ist, kann der Zeitraum nicht abgeschlossen werden, bis der Erfassungsprozess für diesen Zeitraum abgeschlossenen wurde.  
 4. Schließen Sie die Seite.
-5. Wechseln Sie zu "Hauptbuch" > "Periodische Aufgaben" > "Journalisierung".
-6. Klicken Sie auf "Filter".
+5. Wechseln Sie im **Navigationsbereich** zu **Module > Hauptbuch > Periodische Aufgaben > Journalisierung**.
+6. Klicken Sie auf **Filter**.
 7. Markieren Sie die Zeile mit den Filterkriterien, die Sie definieren möchten.
-8. Geben Sie im Feld "Kriterien" einen Filterkriterien ein oder wählen Sie sie aus.
-9. Klicken Sie zum Schließen der Filterseite auf OK.
-10. Klicken Sie zum Starten des Journalisierungsprozesses auf "OK".
-    * Ein Bericht wird generiert, nachdem der Vorgang abgeschlossen ist.  
+8. Geben Sie im Feld **Kriterien** Filterkriterien ein oder wählen Sie sie aus.
+9. Klicken Sie zum Schließen der Filterseite auf **OK**.
+10. Klicken Sie zum Starten des Journalisierungsprozesses auf **OK**. Ein Bericht wird generiert, nachdem der Vorgang abgeschlossen ist.  
 
