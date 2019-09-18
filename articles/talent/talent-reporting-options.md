@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7e00a6e4fc01f72e1ef2347e08754997135215ed
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8e7348a515b08523c15aa8f74d5616a3daf645b7
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518104"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741797"
 ---
 # <a name="reporting-options-in-talent"></a>Berichtsoptionen in Talent
 
@@ -42,7 +42,7 @@ Der Benutzer kann die eingebetteten Microsoft Power BI-Berichte nicht anpassen.
 
 **Lösung**
 
-- Über die Core HR-Daten, die zu Common Data Service  fließt, kann über den PowerApps Common Data Service Konnektor zu Power BI Desktop berichtet werden. Beachten Sie, dass Common Data Service eine Untergruppe von Core HR-Daten enthält. Weitere Informationen zu Power BI und Dashboards, finden [Erstellen Power BI Berichte und PowerApps Dashboards mit Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi) Sie unter.
+- Über die Core HR-Daten, die zu Common Data Service  fließt, kann über den PowerApps Common Data Service Konnektor zu Power BI Desktop berichtet werden. Beachten Sie, dass Common Data Service eine Untergruppe von Core HR-Daten enthält. Weitere Informationen zu Power BI und Dashboards, finden [Erstellen Power BI Berichte und PowerApps Dashboards mit Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi) Sie unter.
 - Elektronische Berichterstellung (EB) ist für manche Berichte in Talent verfügbar. Kundengesteuerte Anpassungen können über die EB-Konfigurationsoptionen erfolgen.
 - Daten können nach Microsoft Excel oder Microsoft Word exportiert werden, indem die verschiedenen Datenentitäten verwendet werden, die Talent durch die Microsoft Office-Integration bereitstellt.
 

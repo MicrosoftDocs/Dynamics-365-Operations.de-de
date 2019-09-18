@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichsew
+ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 52790fbe500d9f55bc9cc86fba5d54f30b11e559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505863"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795219"
 ---
 # <a name="extensibility-in-attract"></a>Erweiterbarkeit in Attract
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 for Talent ist über die Common Data Service Plattform ge
 
 ## <a name="extending-option-sets-in-attract"></a>Erweitern von Optionsätzen in Attract
 
-Ein **Optionssatz** (Auswahlliste) ist ein Feldtyp, der in eine Entität einbezogen werden kann. Er definiert einen Satz von Optionen. Wenn ein Optionssatz in einem Formular angezeigt wird, verwendet er ein Dropdownlistensteuerelement.  In Attract gibt es mehrere Felder, die Optionssätze sind.  Wir führen Funktion zur Erweiterung der Optionssätze ein und beginnen mit dem Feld "Ablehnungsgrund", dem Feld "Beschäftigungstyp" und dem Feld "Dienstalter".   Außerdem können lokalisierte Anzeigenbeschriftungen für die von Ihnen hinzugefügten Optionen hinzufügen. Weitere Informationen finden Sie unter [Beschriftungen der Option anpassen](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
+Ein **Optionssatz** (Auswahlliste) ist ein Feldtyp, der in eine Entität einbezogen werden kann. Er definiert einen Satz von Optionen. Wenn ein Optionssatz in einem Formular angezeigt wird, verwendet er ein Dropdownlistensteuerelement.  In Attract gibt es mehrere Felder, die Optionssätze sind.  Wir führen Funktion zur Erweiterung der Optionssätze ein und beginnen mit dem Feld "Ablehnungsgrund", dem Feld "Beschäftigungstyp" und dem Feld "Dienstalter".   Außerdem können lokalisierte Anzeigenbeschriftungen für die von Ihnen hinzugefügten Optionen hinzufügen. Weitere Informationen finden Sie unter [Beschriftungen der Option anpassen](https://docs.microsoft.com/powerapps/developer/common-data-service/customize-labels-support-multiple-languages).
 
 > [!NOTE]
 > Die Funktion zur Stellenausschreibung auf LinkedIn erfordert die Nutzung der Felder **Beschäftigungstyp** und **Dienstaltertyp** auf der Seite **Stellendetails**. Die Standardwerte in den Feldern werden von LinkedIn unterstützt und angezeigt, wenn die Stelle gebucht wird. Wenn Sie also Stellen in LinkedIn veröffentlichen und die vorhandenen Optionssatzwerte für diese Felder ändern, wird die Stelle noch veröffentlicht, aber LinkedIn zeigt keine benutzerdefinierten Werte für **Beschäftigungstyp** und **Dienstaltertyp**.  
@@ -62,15 +62,15 @@ Da sich alle Attract-Daten in Common Data Service befinden, können Sie Tools de
 
 Sie können PowerApps verwenden, um leicht Apps zu erstellen, die eine Verbindung mit Ihren Attract-Daten herstellen und Ausdrücke wie die Ausdrücke in Microsoft Excel verwenden, um Logik hinzuzufügen. Apps, die Sie erstellen, indem Sie PowerApps verwenden, können im Internet und auf Apple iOS- und Google Android-Geräten ausgeführt werden.
 
-So können Sie z. B. Hochschulkarrieremessen für Personalbeschaffer erleichtern, indem Sie eine einfache App erstellen, mit der sie Lebensläufe scannen und Kandidaten einer Position in Attract zuweisen können. Alternativ können Sie eine App erstellen, mit der Sie die Compliance-Anforderungen Ihrer Organisation erfüllen. Weitere Informationen zu PowerApps und wie Sie es verwenden, um Apps zu erstellen, finden Sie unter [Daten in Common Data Service for Apps integrieren](https://docs.microsoft.com/en-us/powerapps).
+So können Sie z. B. Hochschulkarrieremessen für Personalbeschaffer erleichtern, indem Sie eine einfache App erstellen, mit der sie Lebensläufe scannen und Kandidaten einer Position in Attract zuweisen können. Alternativ können Sie eine App erstellen, mit der Sie die Compliance-Anforderungen Ihrer Organisation erfüllen. Weitere Informationen zu PowerApps und wie Sie es verwenden, um Apps zu erstellen, finden Sie unter [Daten in Common Data Service for Apps integrieren](https://docs.microsoft.com/powerapps).
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
-Sie können Microsoft Flow verwenden, um automatisierte Workflows zu erstellen, die auf Attract-Daten basieren. Sie können leicht eine Verbindung mit Hunderten beliebter Apps und Dienstleistungen herstellen, ohne Code schreiben zu müssen. Durch Erstellen von Flüssen, die mit den Attract Stelle, Kandidat und Bewerbung in Common Data Service interagieren, können Sie verschiedene Aktionen automatisieren. Wenn ein Kandidat beispielsweise ein Angebot akzeptiert, kann eine Benachrichtigung an ein Onboarding-Team gesendet, oder die Neuigkeiten können auf Twitter angekündigt werden. Weitere Informationen zu Flüssen finden Sie in der [Microsoft Flow-Dokumentation](https://docs.microsoft.com/en-us/flow/).
+Sie können Microsoft Flow verwenden, um automatisierte Workflows zu erstellen, die auf Attract-Daten basieren. Sie können leicht eine Verbindung mit Hunderten beliebter Apps und Dienstleistungen herstellen, ohne Code schreiben zu müssen. Durch Erstellen von Flüssen, die mit den Attract Stelle, Kandidat und Bewerbung in Common Data Service interagieren, können Sie verschiedene Aktionen automatisieren. Wenn ein Kandidat beispielsweise ein Angebot akzeptiert, kann eine Benachrichtigung an ein Onboarding-Team gesendet, oder die Neuigkeiten können auf Twitter angekündigt werden. Weitere Informationen zu Flüssen finden Sie in der [Microsoft Flow-Dokumentation](https://docs.microsoft.com/flow/).
 
 ### <a name="power-bi"></a>Power BI
 
-Mit Power BI können Sie benutzerdefinierte Berichte und Dashboards erstellen und anzeigen, die Ihnen einen tieferen Einblick in Ihre Attract-Daten geben. Weitere Informationen zu Power BI und zur Erstellung interaktiver Berichte und Dashboards finden Sie in der [Power BI-Dokumentation](https://docs.microsoft.com/en-us/power-bi/).
+Mit Power BI können Sie benutzerdefinierte Berichte und Dashboards erstellen und anzeigen, die Ihnen einen tieferen Einblick in Ihre Attract-Daten geben. Weitere Informationen zu Power BI und zur Erstellung interaktiver Berichte und Dashboards finden Sie in der [Power BI-Dokumentation](https://docs.microsoft.com/power-bi/).
 
 ### <a name="custom-activities"></a>Benutzerdefinierte Aktivitäten 
 

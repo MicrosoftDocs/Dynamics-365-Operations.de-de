@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: e4ad32ef71c87f52e59959d80c21ae7fcd6d6524
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518123"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741889"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (5. März 2019)
 
@@ -43,10 +43,10 @@ In Attract gibt es mehrere Felder, die Optionssätze in Common Data Service sind
 ## <a name="changes-in-onboarding"></a>Änderungen in Onboarding
 
 ### <a name="private-preview-for-onboard-teams"></a>Private Vorschau für Onboard-Teams
-Sie können jetzt in der gesamten Organisation Vorlagen gemeinsam nutzen und leicht zusammenarbeiten. Weitere Informationen finden Sie unter [Bewährte Verfahren in der Organisation mit Onboard-Teams gemeinsam verwenden](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
+Sie können jetzt in der gesamten Organisation Vorlagen gemeinsam nutzen und leicht zusammenarbeiten. Weitere Informationen finden Sie unter [Bewährte Verfahren in der Organisation mit Onboard-Teams gemeinsam verwenden](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/share-best-practices-teams).
 
 ### <a name="private-preview-for-assignee-placeholders"></a>Private Vorschau für Zuweisungsplatzhalter
-Sie können Ihren Vorlagen anreichern, indem Sie Aktivitäten zu Rollen anstelle von Personen zuweisen. Die Rollen werden dann zum Zeitpunkt der Handbucherstellung Personen zugewiesen. Weitere Informationen finden Sie unter [Optimieren der Handbuchverwaltung durch Zuweisung von Aktivitäten zu Rollen](https://docs.microsoft.com/en-us/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
+Sie können Ihren Vorlagen anreichern, indem Sie Aktivitäten zu Rollen anstelle von Personen zuweisen. Die Rollen werden dann zum Zeitpunkt der Handbucherstellung Personen zugewiesen. Weitere Informationen finden Sie unter [Optimieren der Handbuchverwaltung durch Zuweisung von Aktivitäten zu Rollen](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-talent/onboard/assign-activities-roles).
 
 ## <a name="changes-in-core-hr"></a>Core HR-Änderungen
 **Build 8.1.2178**
@@ -71,7 +71,7 @@ Mit dieser Änderung werden die Lohnfelder bei Änderungsanfragen an den vorhand
 Es gibt weitere kleinere Fehlerkorrekturen in dieser Version.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
@@ -79,4 +79,4 @@ Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Meld
 In vielen Organisationen können Vergütungs- und Vorteilsmanager nur auf bestimmte Vergütungsdatensätze zugreifen, wie z. B. für Führungskräfte oder regional-basierte Mitarbeiter. Mit dieser Änderung können Sie die Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Den festen und variablen Plänen können Sicherheitsrollen zugewiesen werden, die den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen bestimmen, wie Gehalts- oder Zulagedatensätze. Nur die Rollen mit Zugriff sind in der Lage, Vergütungen für solche Mitarbeiter zu verarbeiten.
 
 ###  <a name="platform-update-24"></a>Plattformupdate 24
-Weitere Details zu Platform update 24 finden Sie unter [Neues oder Änderungen in Finance and Operations platform update 24 (März 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Weitere Details zu Platform update 24 finden Sie unter [Neues oder Änderungen in Finance and Operations platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

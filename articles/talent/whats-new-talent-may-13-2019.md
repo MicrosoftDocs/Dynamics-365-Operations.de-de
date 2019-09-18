@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-13
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: dac453ee83492655b6681b9784af4712bf39fc2a
-ms.sourcegitcommit: 2bbc0eeca6826c529fb729b82d16f287c1ce05bb
+ms.openlocfilehash: ffeeb3e2f5279a84c4c060b04fe46836b778f6c5
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1591501"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856447"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-13-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (13. Mai 2019)
 
@@ -47,7 +47,7 @@ Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.22
 
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Geben Sie den Instanztyp an, wenn Sie Talent bereitstellen
 
-Wenn Sie eine neue Talent-Instanz bereitstellen, können Sie angeben, ob der Instanztyp **Produktion** oder **Sandkasten** lautet. Dies ermöglicht frühes Testen neuer Funktionen. Alle vorhandenen Talent-Instanzen werden zum Instanztyp **Produktion** aktualisiert. Wenn eine der vorhandenen Instanzen auf den Instanztyp **Sandbox** aktualisiert werden soll, wenden Sie sich an den [Support](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/talent-support), um die Änderungsanforderung zu initiieren.
+Wenn Sie eine neue Talent-Instanz bereitstellen, können Sie angeben, ob der Instanztyp **Produktion** oder **Sandkasten** lautet. Dies ermöglicht frühes Testen neuer Funktionen. Alle vorhandenen Talent-Instanzen werden zum Instanztyp **Produktion** aktualisiert. Wenn eine der vorhandenen Instanzen auf den Instanztyp **Sandbox** aktualisiert werden soll, wenden Sie sich an den [Support](https://docs.microsoft.com/dynamics365/unified-operations/talent/talent-support), um die Änderungsanforderung zu initiieren.
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service-Entitätssupport für benutzerdefinierte Felder
 

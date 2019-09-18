@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ece6a81c54ef1421284fc79ab82ed3e31a972255
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6fc27a4c137fef2f8d204d90366c316389da08e6
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518100"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741715"
 ---
 # <a name="user-can-access-core-hr-but-not-the-onboard-or-attract-app"></a>Benutzer kann auf Core HR, aber nicht auf die Onboard- oder Attract-Anwendung zugreifen
 
@@ -41,7 +41,7 @@ Benutzer B kann auf Core HR, aber nicht auf Talent zugreifen: Attract oder Talen
 
 Benutzer B müssen die Rechte zugewiesen werden, um die Microsoft PowerApps-Umgebung anzuzeigen, die Benutzer A während des Bereitstellungsprozesses erstellt hat.
 
-Informationen dazu finden Sie im Abschnitt „Zugriff auf die Umgebung gewähren” in [Talent bereitstellen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent).
+Informationen dazu finden Sie im Abschnitt „Zugriff auf die Umgebung gewähren” in [Talent bereitstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 **Langfristige Lösung**
 

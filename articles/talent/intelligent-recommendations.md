@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 301e3213fa0988faba83ee42b840646a20c70a98
-ms.sourcegitcommit: fcae2e7938d7dbd94b76b0948b084d90d5fc919c
+ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "1620619"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741751"
 ---
 # <a name="intelligent-recommendations"></a>Praktische Empfehlungen
 
@@ -32,7 +32,7 @@ ms.locfileid: "1620619"
 Lernfähigkeit einer Maschine kann Personalbeschaffungsmitarbeitern und Vorgesetzten helfen, mögliche Top-Kandidaten für eine Stelle zu identifizieren. Sie kann auch Interessenten helfen, die Position zu finden, die am besten zu ihrem Profil und ihren Interessen passt. Während diese Funktion verwendet werden und Feedback gegeben wird, verbessern sich Empfehlungen.
 
 > [!NOTE] 
-> - Die intelligente Empfehlungsfunktion sind nur mit dem [umfassenden Add-On für Neueinstellungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring) verfügbar.
+> - Die intelligente Empfehlungsfunktion sind nur mit dem [umfassenden Add-On für Neueinstellungen](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) verfügbar.
 > - Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe des **Admin Center** in Attract. Setzen Sie **Kandidatenempfehlung**, **Einzelvorgangsempfehlung** und **Interessentenempfehlung** auf **Aktiviert** fest. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](./access-preview-feature.md). 
 
 

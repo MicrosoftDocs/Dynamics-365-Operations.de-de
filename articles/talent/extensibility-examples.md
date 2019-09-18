@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a9ebfd1f2621b8ad65d7623c37b6851cc0b5cb54
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
+ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577794"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "1781441"
 ---
 # <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Talent mit PowerApps und Microsoft Flow erweitern – Beispielsszenarien
 
@@ -101,24 +101,15 @@ Diese Vorlage kann auch erweitert werden, sodass sie für ein beliebiges Szenari
 
 Um die Vorlage **Fluss – SharePoint Integration**herunterzuladen, gehen Sie zu [Fluss SharePoint Integration ](https://go.microsoft.com/fwlink/?linkid=2082109) im Microsoft Download Center.
 
-## <a name="admin-console-to-manage-talent-pools"></a>Administratorkonsole, um Talentpools zu verwalten
+## <a name="referral-app"></a>Bezugs-App
+Sie können die Empfehlungs-App verwenden, um Kandidaten einer freigegebene Talentschmiede hinzuzufügen. Der Empfehler kann **Vorname**, **Lastname**, **E-Mail** und **Linkedln-URL** eingeben, wenn er den Kandidaten übermittelt. Die Kandidatenquellenmetadaten werden dann mit den Informationen des Empfehlers ausgefüllt.
 
-Bei der Aktivierung von Integration in LinkedIn, erstellt Attract automatisch einen LinkedIn-Talentpool. Wenn ein Personalvermittler InMail über LinkedIn mit einem Rekruten austauscht, erstellt Attract ein Profil für den Rekruten und dieser wird ein Mitglied im LinkedIn-Talentpool. Diese PowerApps-App ist für die Neuanordnung von Kandidaten in Talentpools auf Grundlage ihrer Fähigkeiten nützlich.
+Sie können dieser App im Mitarbeiter-Self-Service (ESS) für das Übermitteln von Empfehlungen eingeben, oder Sie können sie als Verknüpfung im Unternehmensportal und als eigenständige App ausführen.
 
-Führen Sie diese PowerApps-App als eine Administratorkonsole aus, um die folgenden Aufgaben auszuführen:
-
-- Kandidaten in einem Talentpool aufführen
-- Kandidaten einem Talentpool hinzufügen und daraus entfernen
-- Kandidaten von einem Talentpool zu einem anderen verschieben
-- Bestimmen, ob Kandidaten bereits Teil eines Talentpools sind, bevor Sie verschoben werden
-- Überprüfen der Fähigkeiten von Kandidaten, bevor sie in andere Talentpools verschoben werden
-
-Diese PowerApps-App verwendet n:n-Beziehungen, sodass Sie diese App als Vorlage für andere Szenarien verwenden können, in denen Sie Datensätze mit n:n-Beziehungen extrahieren müssen.
-
-Zum herunterladen der Vorlage **Administratorkonsole zum Verwalten von Talentpools** wechseln Sie zu [Administratorkonsole zum Verwalten von Talentpools](https://www.microsoft.com/downloads/details.aspx?FamilyID=780a5eee-0e2a-4159-9a83-009f9ccdc469) im Microsoft Download Center.
+Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 for Talent Erweiterbarkeitslösung: Empfehlungs-App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Das Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
 
-[Migrieren der App zwischen Mandanten und Umgebung](https://docs.microsoft.com/en-us/power-platform/admin/environment-and-tenant-migration)
+[Migrieren der App zwischen Mandanten und Umgebung](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

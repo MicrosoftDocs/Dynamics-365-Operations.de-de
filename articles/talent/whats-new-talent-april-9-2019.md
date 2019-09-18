@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 25ef0d49c2600833aefa84d404e00c0c57cfbf52
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
+ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518061"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "1856423"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 for Talent (9. April, 2019)
 
@@ -37,10 +37,10 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Talen
 In Attract und Onboard erstellen Probleme, die von den Endbenutzer mithilfe der Funktion "Problem melden" erfasst werden, nun automatisch Support-Probleme im LCS Projekt des Debitors. Administratoren können anschließend die Probleme selektieren und bei Bedarf an Microsoft senden. Dies ist konsistent damit, wie Core HR Probleme von Endnutzern behandelt.
 
 ### <a name="relevance-search"></a>Relevanzsuche
-In den Talentpools können Sie nun die gesamte Kandidatendatenbank nach bestimmten Fähigkeiten, Namen oder Ausbildungshintergrund durchsuchen. Sie müssen nicht mehr angegeben, welchen Bereich des Profils des Kandidaten Sie durchsuchen möchten. Attract durchsucht das gesamte Profil und hebt alle Übereinstimmungen hervor. Attract sucht auch alle Dokumente, die für einen Kandidaten verfügbar sind und ordnet die Suchergebnisse logisch an. Darüber hinaus können Sie die Ergebnisse nach Quelle oder nach Silbermedaillengewinner filtern. Weitere Informationen finden Sie unter[Kanditatenprofile suchen und anzeigen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
+In den Talentpools können Sie nun die gesamte Kandidatendatenbank nach bestimmten Fähigkeiten, Namen oder Ausbildungshintergrund durchsuchen. Sie müssen nicht mehr angegeben, welchen Bereich des Profils des Kandidaten Sie durchsuchen möchten. Attract durchsucht das gesamte Profil und hebt alle Übereinstimmungen hervor. Attract sucht auch alle Dokumente, die für einen Kandidaten verfügbar sind und ordnet die Suchergebnisse logisch an. Darüber hinaus können Sie die Ergebnisse nach Quelle oder nach Silbermedaillengewinner filtern. Weitere Informationen finden Sie unter[Kanditatenprofile suchen und anzeigen](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-talent-pools#search-and-view-candidate-profiles).
 
 ### <a name="prospect-recommendations"></a>Interessentenempfehlungen
-Attract kann dabei unerstützen, die Suche für eine Stelle sofort zu starten, sobald Sie sie aktivieren, indem es intelligente Kandidatenempfehlungen aus der Kandidatendatenbank Ihrer Organisation vornimmt. Die Empfehlungen umfassen die identifizierten Qualifikationen und Ausbildungsinformationen beim Suchen nach relevanten Interessenten. Die Empfehlungen werden auf der Registerkarte **Interessenten** unter einer Stelle angezeigt, wenn sie diese für einen Stellenrekrutierungsprozess aktivieren. Weitere Informationen finden Sie unter [Interessenten-Empfehlungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
+Attract kann dabei unerstützen, die Suche für eine Stelle sofort zu starten, sobald Sie sie aktivieren, indem es intelligente Kandidatenempfehlungen aus der Kandidatendatenbank Ihrer Organisation vornimmt. Die Empfehlungen umfassen die identifizierten Qualifikationen und Ausbildungsinformationen beim Suchen nach relevanten Interessenten. Die Empfehlungen werden auf der Registerkarte **Interessenten** unter einer Stelle angezeigt, wenn sie diese für einen Stellenrekrutierungsprozess aktivieren. Weitere Informationen finden Sie unter [Interessenten-Empfehlungen](https://docs.microsoft.com/dynamics365/unified-operations/talent/intelligent-recommendations#prospect-recommendations).
 
 ### <a name="interviewer-availability-statuses"></a>Status über die Verfügbarkeit der Befragungspersonen
 Gesprächsplaner können bald  den Status**Abwesend, Arbeit an einem anderen Standort** sehen, um Zeiten zu planen, die für die Befragungspersonen möglicherweise besser passen.
