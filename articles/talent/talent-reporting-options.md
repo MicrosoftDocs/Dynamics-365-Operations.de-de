@@ -17,35 +17,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 7e00a6e4fc01f72e1ef2347e08754997135215ed
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 8e7348a515b08523c15aa8f74d5616a3daf645b7
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518104"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741797"
 ---
-# <a name="reporting-options-in-talent"></a><span data-ttu-id="64217-103">Berichtsoptionen in Talent</span><span class="sxs-lookup"><span data-stu-id="64217-103">Reporting options in Talent</span></span>
+# <a name="reporting-options-in-talent"></a><span data-ttu-id="bb390-103">Berichtsoptionen in Talent</span><span class="sxs-lookup"><span data-stu-id="bb390-103">Reporting options in Talent</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="64217-104">**Umgebungsdetails**</span><span class="sxs-lookup"><span data-stu-id="64217-104">**Environment details**</span></span>
+<span data-ttu-id="bb390-104">**Umgebungsdetails**</span><span class="sxs-lookup"><span data-stu-id="bb390-104">**Environment details**</span></span>
 
-<span data-ttu-id="64217-105">Dieses Problem gilt für alle Umgebungen.</span><span class="sxs-lookup"><span data-stu-id="64217-105">This issue applies to all environments.</span></span>
+<span data-ttu-id="bb390-105">Dieses Problem gilt für alle Umgebungen.</span><span class="sxs-lookup"><span data-stu-id="bb390-105">This issue applies to all environments.</span></span>
 
-<span data-ttu-id="64217-106">**Symptom**</span><span class="sxs-lookup"><span data-stu-id="64217-106">**Symptom**</span></span>
+<span data-ttu-id="bb390-106">**Symptom**</span><span class="sxs-lookup"><span data-stu-id="bb390-106">**Symptom**</span></span>
 
-<span data-ttu-id="64217-107">Der Kunde möchte Microsoft Dynamics 365 for Talent-Berichte anpassen oder neue Berichte erstellen.</span><span class="sxs-lookup"><span data-stu-id="64217-107">The customer wants to customize Microsoft Dynamics 365 for Talent reports or create new reports.</span></span>
+<span data-ttu-id="bb390-107">Der Kunde möchte Microsoft Dynamics 365 for Talent-Berichte anpassen oder neue Berichte erstellen.</span><span class="sxs-lookup"><span data-stu-id="bb390-107">The customer wants to customize Microsoft Dynamics 365 for Talent reports or create new reports.</span></span>
 
-<span data-ttu-id="64217-108">**Abgang**</span><span class="sxs-lookup"><span data-stu-id="64217-108">**Issue**</span></span>
+<span data-ttu-id="bb390-108">**Abgang**</span><span class="sxs-lookup"><span data-stu-id="bb390-108">**Issue**</span></span>
 
-<span data-ttu-id="64217-109">Der Benutzer kann die eingebetteten Microsoft Power BI-Berichte nicht anpassen.</span><span class="sxs-lookup"><span data-stu-id="64217-109">The user can't customize the embedded Microsoft Power BI reports.</span></span>
+<span data-ttu-id="bb390-109">Der Benutzer kann die eingebetteten Microsoft Power BI-Berichte nicht anpassen.</span><span class="sxs-lookup"><span data-stu-id="bb390-109">The user can't customize the embedded Microsoft Power BI reports.</span></span>
 
-<span data-ttu-id="64217-110">**Lösung**</span><span class="sxs-lookup"><span data-stu-id="64217-110">**Solution**</span></span>
+<span data-ttu-id="bb390-110">**Lösung**</span><span class="sxs-lookup"><span data-stu-id="bb390-110">**Solution**</span></span>
 
-- <span data-ttu-id="64217-111">Über die Core HR-Daten, die zu Common Data Service  fließt, kann über den PowerApps Common Data Service Konnektor zu Power BI Desktop berichtet werden.</span><span class="sxs-lookup"><span data-stu-id="64217-111">The Core HR data that flows to Common Data Service can be reported on via the PowerApps Common Data Service connector to Power BI Desktop.</span></span> <span data-ttu-id="64217-112">Beachten Sie, dass Common Data Service eine Untergruppe von Core HR-Daten enthält.</span><span class="sxs-lookup"><span data-stu-id="64217-112">Note that Common Data Service contains a subset of Core HR data.</span></span> <span data-ttu-id="64217-113">Weitere Informationen zu Power BI und Dashboards, finden [Erstellen Power BI Berichte und PowerApps Dashboards mit Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi) Sie unter.</span><span class="sxs-lookup"><span data-stu-id="64217-113">For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/en-us/blog/cdsconnectortopowerbi).</span></span>
-- <span data-ttu-id="64217-114">Elektronische Berichterstellung (EB) ist für manche Berichte in Talent verfügbar.</span><span class="sxs-lookup"><span data-stu-id="64217-114">Electronic reporting (ER) is available for some reports in Talent.</span></span> <span data-ttu-id="64217-115">Kundengesteuerte Anpassungen können über die EB-Konfigurationsoptionen erfolgen.</span><span class="sxs-lookup"><span data-stu-id="64217-115">Customer-driven customizations can be done via the ER configuration options.</span></span>
-- <span data-ttu-id="64217-116">Daten können nach Microsoft Excel oder Microsoft Word exportiert werden, indem die verschiedenen Datenentitäten verwendet werden, die Talent durch die Microsoft Office-Integration bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="64217-116">Data can be exported to Microsoft Excel or Microsoft Word by using the various data entities that Talent provides through the Microsoft Office integration.</span></span>
+- <span data-ttu-id="bb390-111">Über die Core HR-Daten, die zu Common Data Service  fließt, kann über den PowerApps Common Data Service Konnektor zu Power BI Desktop berichtet werden.</span><span class="sxs-lookup"><span data-stu-id="bb390-111">The Core HR data that flows to Common Data Service can be reported on via the PowerApps Common Data Service connector to Power BI Desktop.</span></span> <span data-ttu-id="bb390-112">Beachten Sie, dass Common Data Service eine Untergruppe von Core HR-Daten enthält.</span><span class="sxs-lookup"><span data-stu-id="bb390-112">Note that Common Data Service contains a subset of Core HR data.</span></span> <span data-ttu-id="bb390-113">Weitere Informationen zu Power BI und Dashboards, finden [Erstellen Power BI Berichte und PowerApps Dashboards mit Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi) Sie unter.</span><span class="sxs-lookup"><span data-stu-id="bb390-113">For more information about Power BI and dashboards, see [Create Power BI reports and dashboards with PowerApps Common Data Service](https://powerapps.microsoft.com/blog/cdsconnectortopowerbi).</span></span>
+- <span data-ttu-id="bb390-114">Elektronische Berichterstellung (EB) ist für manche Berichte in Talent verfügbar.</span><span class="sxs-lookup"><span data-stu-id="bb390-114">Electronic reporting (ER) is available for some reports in Talent.</span></span> <span data-ttu-id="bb390-115">Kundengesteuerte Anpassungen können über die EB-Konfigurationsoptionen erfolgen.</span><span class="sxs-lookup"><span data-stu-id="bb390-115">Customer-driven customizations can be done via the ER configuration options.</span></span>
+- <span data-ttu-id="bb390-116">Daten können nach Microsoft Excel oder Microsoft Word exportiert werden, indem die verschiedenen Datenentitäten verwendet werden, die Talent durch die Microsoft Office-Integration bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="bb390-116">Data can be exported to Microsoft Excel or Microsoft Word by using the various data entities that Talent provides through the Microsoft Office integration.</span></span>
 
-<span data-ttu-id="64217-117">**Langfristige Lösung**</span><span class="sxs-lookup"><span data-stu-id="64217-117">**Long-term solution**</span></span>
+<span data-ttu-id="bb390-117">**Langfristige Lösung**</span><span class="sxs-lookup"><span data-stu-id="bb390-117">**Long-term solution**</span></span>
 
-<span data-ttu-id="64217-118">Zusätzliche Power BI-Optionen werden verfügbar sein und mehr Daten und Entitäten werden Teil von Common Data Service  sein.</span><span class="sxs-lookup"><span data-stu-id="64217-118">Additional Power BI options will be available, and more data and entities will be part of Common Data Service.</span></span>
+<span data-ttu-id="bb390-118">Zusätzliche Power BI-Optionen werden verfügbar sein und mehr Daten und Entitäten werden Teil von Common Data Service  sein.</span><span class="sxs-lookup"><span data-stu-id="bb390-118">Additional Power BI options will be available, and more data and entities will be part of Common Data Service.</span></span>
