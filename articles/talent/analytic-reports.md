@@ -1,6 +1,6 @@
 ---
-title: Nutzen von analytischen Berichten für Einstellungsprozess-Einblicke
-description: Dieses Thema beschreibt die die analytischen Berichte in Attract
+title: Analytische Berichte in Microsoft Dynamics 365 for Talent - Attract nutzen
+description: In diesem Thema werden die möglichen analytischen Berichte für Einstellungsprozess-Einblicke in Microsoft Dynamics 365 for Talent - Attract beschrieben
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: 33ed6072a9ad99144fb96ad19389a57461324f71
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516559"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742887"
 ---
-# <a name="use-analytic-reports-for-hiring-process-insights"></a>Nutzen von analytischen Berichten für Einstellungsprozess-Einblicke
+# <a name="use-analytic-reports"></a>Analytische Berichte verwenden
 
 Analytische Berichte in Attract  ermöglichen eine  standardmäßige Lösung (OOTB) für die Gewinnen von Einblicken in den Einstellungsprozess. Verfügbare Funktionen umfassen:
 
@@ -81,8 +81,8 @@ Stellen-Analyse Berichte zeigen Daten für die ausgewählte Stelle. Analyse-Hub-
 
 ## <a name="cross-filter"></a>Übergreifende Filter
 
-Eine der tollen Funktionen von Power BI ist die Art, wie alle Grafiken auf einer Berichtsseite untereinander verbunden sind. Wenn Sie einen Datenpunkt auf einem der grafischen Elemente auswählen, ändern alle anderen grafischen Elemente auf der Seite, die diese Datenenänderung basierend auf dieser Auswahl enthalten. Mehr Informationen und ein Beispiel finden Sie unter [Wie Grafiken mit einem Filter in einem Power BI Bericht miteinander verbunden sind](https://docs.microsoft.com/en-us/power-bi/consumer/end-user-interactions)
+Eine der tollen Funktionen von Power BI ist die Art, wie alle Grafiken auf einer Berichtsseite untereinander verbunden sind. Wenn Sie einen Datenpunkt auf einem der grafischen Elemente auswählen, ändern alle anderen grafischen Elemente auf der Seite, die diese Datenenänderung basierend auf dieser Auswahl enthalten. Mehr Informationen und ein Beispiel finden Sie unter [Wie Grafiken mit einem Filter in einem Power BI Bericht miteinander verbunden sind](https://docs.microsoft.com/power-bi/consumer/end-user-interactions)
 
 ## <a name="export-to-excel"></a>Nach Excel exportieren
 
-Um Berichtsdaten in Excel anzuzeigen, können Sie auf das Optionsmenü (drei Punkte) in einer Grafik klicken und **Zugrunde liegende Daten exportieren** auswählen. Exportierte Daten werden als gefiltert exportiert und berücksichtigen die Benutzerberechtigungen in Attract. Weitere Informationen finden Sie unter [Exportieren von Daten aus Visualisierungen](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data).
+Um Berichtsdaten in Excel anzuzeigen, können Sie auf das Optionsmenü (drei Punkte) in einer Grafik klicken und **Zugrunde liegende Daten exportieren** auswählen. Exportierte Daten werden als gefiltert exportiert und berücksichtigen die Benutzerberechtigungen in Attract. Weitere Informationen finden Sie unter [Exportieren von Daten aus Visualisierungen](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).

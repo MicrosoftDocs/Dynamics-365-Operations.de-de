@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-01-22
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d5a2c61fc21578d1db4c1bf0c3dfaf0c7a93298c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: a9c2324321baf0a313b8b7aa9701909336b5c34b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518078"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742748"
 ---
 # <a name="azure-active-directory-users-not-found-in-people-picker"></a>Azure Active Directory-Benutzer wurden nicht in der Personenauswahl gefunden
 
@@ -36,9 +36,9 @@ Bestimmte gültige Benutzer in Microsoft Azure Active Directory (Azure AD) für 
 
 Bestimmte Benutzertypen werden derzeit in den Anwendungen Attract und Onboard nicht unterstützt. Stellen Sie sicher, dass der Benutzer kein Azure AD Business to Business (B2B) Gastbenutzer ist. Die Informationen zum "Benutzertyp" finden Sie im Azure Active Directory-Blade auf dem Azure-Portal.
 
-Weitere Informationen zu Azure B2B, finden Sie unter [Was ist der Gastbenutzerzugriff in Azure Active Directory B2B](https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b).
+Weitere Informationen zu Azure B2B, finden Sie unter [Was ist der Gastbenutzerzugriff in Azure Active Directory B2B](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b).
 
-Für Nicht-B2B-Benutzer gibt es bestimmte Benutzer, die möglicherweise eine unvollständige "Benutzertyp"-Eigenschaft auf dem **Benutzer**-Objekt haben. Dies kann mithilfe des Azure AD PowerShell-Moduls überprüft und korrigiert werden. Weitere Informationen finden Sie unter [Azure AD](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0).
+Für Nicht-B2B-Benutzer gibt es bestimmte Benutzer, die möglicherweise eine unvollständige "Benutzertyp"-Eigenschaft auf dem **Benutzer**-Objekt haben. Dies kann mithilfe des Azure AD PowerShell-Moduls überprüft und korrigiert werden. Weitere Informationen finden Sie unter [Azure AD](https://docs.microsoft.com/powershell/module/azuread/?view=azureadps-2.0).
 
 ## <a name="resolution"></a>Lösung
 

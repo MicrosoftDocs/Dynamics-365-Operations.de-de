@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4830c5d626e5e10972c81c3445eb54e4b6b00e6c
-ms.sourcegitcommit: 0400bfd66e98af50e64444a1c102575099a9312f
+ms.openlocfilehash: c541bac532e878c8493a60d95c05c9104d4b96e1
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "1539404"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741543"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-6-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (6. Mai 2019)
 
@@ -47,7 +47,7 @@ Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.22
 
 ### <a name="platform-update-26"></a>Plattformupdate 26
 
-Zusätzliche Details zur Plattformaktualisierung 26 finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 26 (May 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Zusätzliche Details zur Plattformaktualisierung 26 finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service-Entitätssupport für benutzerdefinierte Felder
 

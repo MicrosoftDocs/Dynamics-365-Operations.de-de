@@ -18,26 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: ebc82ada31d2803800358cd9aecfe389ada8f0dc
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 2cfa180f992a4f7a9b2e21e0fb3e0845c7546c94
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518116"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742714"
 ---
-# <a name="track-sources-for-candidate-profiles-and-applications"></a>Quellen für Kandidatenprofile und Anwendungen nachverfolgen 
+# <a name="track-candidate-sources"></a>Kandidatenquellen nachverfolgen
 
 [!include[banner](../includes/banner.md)]
 
 > [!NOTE] 
-> Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe der **Administratoreinstellungen** in Attract. Eine zukünftige Version enthält Quellnachverfolgungsberichte. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature).
+> Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe der **Administratoreinstellungen** in Attract. Eine zukünftige Version enthält Quellnachverfolgungsberichte. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature).
 
 Wenn Kandidaten sich für eine Stelle bewerben, wird Attract automatisch die Quelle der Bewerbung nachverfolgen und Sie mit wertvollen Informationen versorgen, damit Sie die Rekrutierungsanstrengungen konkret angehen können. Personalbeschaffungsmanager und zukünftige Vorgesetzte können eine Bewerbungsquelle wählen, während manuell ein Kandidat einem Stelen- oder Kandidatenpool hinzugefügt wird.
 
 Sie können die Bewerbungsquelle in den Bewerbungsaktivitätdetails auf der Registerkarte **Aktivität** sowie in der Bewerbungshistorie anzeigen, die unter **Profil** in den Talentpools bereitstehen. Sie können eine Kandidaten-Profilquelle in den Kandidatendetails in der Registerkarte **Profil** in der Bewerbung und in den Talentpools anzeigen.
 
 > [!NOTE] 
-> Sie finden Prozessvorlagen unter [Verständliches Add-On für Neueinstellungen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
+> Sie finden Prozessvorlagen unter [Verständliches Add-On für Neueinstellungen](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring).
 
 ## <a name="pre-configured-sources"></a>Quellen vorkonfigurieren
 
@@ -93,7 +93,7 @@ Die Standardquellliste enthält allgemeine Bewerbungsquellen. Einige Quelltypen 
 
 ## <a name="customize-the-source-list"></a>Passen Sie die Quellliste an 
 
-Sie können die Quellliste erweitern, um zusätzliche Bewerbungsquellen einzubeziehen. Um diese Liste anzupassen, folgen Sie den Anweisungen in [Optionsätze in Attract erweitern](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Bearbeiten Sie die Entität **TalentSource**, um zusätzliche Quellen einzubeziehen. 
+Sie können die Quellliste erweitern, um zusätzliche Bewerbungsquellen einzubeziehen. Um diese Liste anzupassen, folgen Sie den Anweisungen in [Optionsätze in Attract erweitern](https://docs.microsoft.com/dynamics365/unified-operations/talent/extensibility-attract#extending-option-sets-in-attract). Bearbeiten Sie die Entität **TalentSource**, um zusätzliche Quellen einzubeziehen. 
 
 Um negative Auswirkungen auf die Benutzeroberfläche (UI) zu vermeiden, bearbeiten oder löschen Sie nicht die  **TalentCategory** Aufzählungswerte (enum) (nicht Namen) aus folgenden Gründen:
 

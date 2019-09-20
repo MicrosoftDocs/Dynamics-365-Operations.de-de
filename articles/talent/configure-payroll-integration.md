@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 59234ef44ad22383ae5daf71d4b663c6183e6c05
-ms.sourcegitcommit: d599bc1fc60a010c2753ca547219ae21456b1df9
+ms.openlocfilehash: c26dfed9909b0dbd05fc18c206e5adc947feaef5
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "1702817"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742911"
 ---
 # <a name="configure-the-payroll-integration-between-talent-and-dayforce"></a>Lohnintegration zwischen Talent und Dayforce konfigurieren
 
@@ -52,8 +52,8 @@ Wenn die Integration aktiviert ist, werden Datenexportpaket und Dateien erstellt
 
 Weitere Informationen zu Azure-Speicherkonten und Azure Storage-Verbindungszeichenfolgen finden Sie in den folgenden Azure-Themen:
 
-- [Über Azure-Speicherkonten](https://docs.microsoft.com/en-us/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Azure Storage-Verbindungszeichenfolgen konfigurieren](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+- [Über Azure-Speicherkonten](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Azure Storage-Verbindungszeichenfolgen konfigurieren](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technische Details, wenn Lohnintegration aktiviert ist
 
@@ -123,10 +123,10 @@ Dayforce erstellt die folgenden Abzüge, basierend auf den Lohnauswirkungen, die
 
 Weitere Informationen darüber, wie Sie ein Vorteilsprogramm definieren und verwalten finden Sie in den folgenden Themen:
 
-- [Mitarbeitervergütungsprogramm bereitstellen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Neuen Vorteil erstellen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Vorteilsberechtigungsregeln und Richtlinien definieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Vorteile von Arbeitskräften registrieren und entfernen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Mitarbeitervergütungsprogramm bereitstellen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Neuen Vorteil erstellen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Vorteilsberechtigungsregeln und Richtlinien definieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Vorteile von Arbeitskräften registrieren und entfernen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Vergütung 
 
@@ -136,20 +136,20 @@ Dayforce verwendet Vergütungsinformationen, um einen Stunden- oder Jahressatz f
 
 Weitere Informationen zu Vergütungsplänen finden Sie in den folgenden Themen:
 
-- [Feste Vergütungspläne erstellen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Variable Vergütungspläne erstellen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Gehalts-/Vergütungsstruktur und -pläne entwickeln](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Vergütung verarbeiten](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/process-compensation)
-- [Vergütungsprozess definieren und Ergebnisse berechnen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Einen Mitarbeiters in einem Plan für eine feste Vergütung registrieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Einen Mitarbeiter in einem Plan für variable Vergütung registrieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Feste Vergütungspläne erstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Variable Vergütungspläne erstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Gehalts-/Vergütungsstruktur und -pläne entwickeln](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Vergütung verarbeiten](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Vergütungsprozess definieren und Ergebnisse berechnen](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Einen Mitarbeiters in einem Plan für eine feste Vergütung registrieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Einen Mitarbeiter in einem Plan für variable Vergütung registrieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Stellentyp 
 
 Eine Stelle ist eine Sammlung der Aufgaben und Zuständigkeiten, die für eine Person, die eine Tätigkeit ausführt, obligatorisch sind. Weitere Informationen finden Sie in folgenden Themen:
 
-- [Komponenten einer Stelle einrichten](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-job)
-- [Neue Einzelvorgänge definieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Komponenten einer Stelle einrichten](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Neue Einzelvorgänge definieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Positionen
 
@@ -173,8 +173,8 @@ Wenn mehrere Positionen in derselben Abteilung derselben Stelle zugeordnet sind,
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Positionen einrichten](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisieren der Belegschaft anhand von Abteilungen, Stellen und Positionen](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Positionen einrichten](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Abteilungen
 
@@ -182,8 +182,8 @@ Eine Abteilung ist eine Organisationseinheit, die eine Kategorie oder einen funk
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Eine Abteilung erstellen und der Abteilungshierarchie zuordnen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Neue Abteilungen definieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Eine Abteilung erstellen und der Abteilungshierarchie zuordnen](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Neue Abteilungen definieren](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lohnzyklen und Lohnperioden
 

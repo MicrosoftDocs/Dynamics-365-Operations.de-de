@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f27698c257301f52e5c77eaa8a04ca13a0315825
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518057"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742515"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (23. Januar 2019)
 
@@ -54,4 +54,4 @@ Wenn Sie die Stelle an einer Stelle ändern, werden die Stellenfelder standardm�
 Mit dieser Änderung wurden die Felder **Probezeit** und **Kalender** auf der Seite **Änderungen verwalten** hinzugefügt, um die Dateneingabe für zukünftige und ehemalige Mitarbeiter zu ermöglichen.
 
 ### <a name="platform-update-23"></a>Plattformupdate 23
-Kleinere Bugfixes wurden im Rahmen des Plattform-Updates 23 aufgenommen. Weitere Informationen finden Sie unter [Was ist neu oder geändert in Dynamics 365 for Finance and Operations Plattform-Update 23 (Januar 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+Kleinere Bugfixes wurden im Rahmen des Plattform-Updates 23 aufgenommen. Weitere Informationen finden Sie unter [Was ist neu oder geändert in Dynamics 365 for Finance and Operations Plattform-Update 23 (Januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

@@ -1,6 +1,6 @@
 ---
-title: Kandidaten mithilfe von Talentpools sourcen
-description: In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools eingerichtet werden.
+title: Kandidaten mithilfe von Talentpools in Microsoft Dynamics 365 for Talent - Attract anwerben
+description: In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools in Microsoft Dynamics 365 for Talent - Attract eingerichtet werden.
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/28/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: d2d680aa54e4610959c12bc1feef11ba8f30b0ca
-ms.sourcegitcommit: 40be0096af50e74d9946e382d3bbd2683bed1fc5
+ms.openlocfilehash: 98b93f69c4f4c8ca6c9a0fc2530578afed4b967c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "1711293"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1741866"
 ---
-# <a name="source-candidates-by-using-talent-pools"></a>Kandidaten mithilfe von Talentpools sourcen
+# <a name="source-candidates-with-talent-pools"></a>Kandidaten mithilfe von Talentpools anwerben
 
 [!include[banner](../includes/banner.md)]
 
@@ -79,7 +79,7 @@ Der Besitzer und die Beteiligten dieses Talentpools können dem Talentpool Kandi
 ## <a name="search-and-view-candidate-profiles"></a>Suchen und Anzeigen von Kandidatenprofilen
 
 > [!NOTE] 
-> Diese Funktion befindet sich derzeit in der Vorschau. Wenn Sie sie ausprobieren möchten, müssen Sie [sie in den Attract-Administratoreinstellungen aktivieren](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/access-preview-feature) auf. 
+> Diese Funktion befindet sich derzeit in der Vorschau. Wenn Sie sie ausprobieren möchten, müssen Sie [sie in den Attract-Administratoreinstellungen aktivieren](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) auf. 
 
 Mit Talentpools können Sie das Profil eines Kandidaten, seine LinkedIn-Informationen, zugehörige Dokumente und den Bewerbungsverlauf des Kandidaten anzeigen. Sie können die gesamte Datenbank aller Kandidaten durchsuchen, die irgendeinem Talentpool hinzugefügt wurden, einschließlich geschlossener und aktiver Bewerber.
 
@@ -116,7 +116,7 @@ Alle Benutzer verfügen über eine allgemeine Ansicht der Kandidatenprofile. Die
 
     Zum Anzeigen eines Dokuments wählen Sie den Dokumentnamen aus der Dokumentenliste aus. Sie können Microsoft Word-Dokumente der Bewerbung anzeigen, indem Sie Microsoft Office 365 verwenden. Sie können die Dokumente auch auf Ihren lokalen Computer herunterladen, indem Sie die Option **Herunterladen** für jedes Dokument verwenden.
 
-- Die Registerkarte **LinkedIn** enthält die LinkedIn-Informationen des Kandidaten. Um diese Registerkarte zu verwenden, müssen Sie Ihr LinkedIn-Konto in den Benutzereinstellungen verbinden, und die LinkedIn Recruiter-Verbindung muss hergestellt werden. Weitere Informationen finden Sie unter [Beschaffung mit LinkedIn Recruiter](./attract-linked-in-recruiter.md).
+- Die Registerkarte **LinkedIn** enthält die LinkedIn-Informationen des Kandidaten. Um diese Registerkarte zu verwenden, müssen Sie Ihr LinkedIn-Konto in den Benutzereinstellungen verbinden, und die LinkedIn Recruiter-Verbindung muss hergestellt werden. Weitere Informationen finden Sie unter [Beschaffung mit LinkedIn Recruiter](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Nur Kandidaten können deren Qualifikationen, Ausbildungsverlauf und Berufserfahrung aktualisieren.

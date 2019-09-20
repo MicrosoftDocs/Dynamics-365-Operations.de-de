@@ -10,7 +10,7 @@ ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: andreabichsel
+ms.reviewer: anbichse
 ms.search.scope: Talent
 ms.custom: ''
 ms.assetid: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8f488b0bf844fc04f07fedfa447073cdeabacc15
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f224114b132ae54dddb7766268c1fc5ec49e109d
+ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518059"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "1795243"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-2-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 for Talent (2. April, 2019)
 
@@ -57,13 +57,13 @@ In Attract und Onboard erstellen Probleme, die von den Endbenutzer mithilfe der 
 Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2216.
 
 ### <a name="platform-update-25"></a>Plattformupdate 25
-Weitere Informationen zur Plattformaktualisierung 25 finden Sie unter[Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 25 (April 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
+Weitere Informationen zur Plattformaktualisierung 25 finden Sie unter[Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 25 (April 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-25).
 
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Erweiterte Vergütungssicherheit (feste oder variable)
 In vielen Organisationen hat der Kompensations- und Vergütungsmanager nur Zugriff auf bestimmte Kompensationsdatensätze. Diese Datensätze enthalten möglicherweise Datensätze für Führungskräfte oder regionale Mitarbeiter. Diese Änderung gibt HR die Möglichkeit, Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation zu verwalten. Sie können den festen und variablen Vergütungsplänen Sicherheitsrollen zuweisen. Diese Sicherheitsrollen bestimmen den Zugriff auf Plänen und die zugehörigen Mitarbeiterdaten wie Gehalts- oder Bonusdatensätze, damit nur jene Rollen die Kompensation für Mitarbeitergruppen bearbeiten können.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen sehr schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/en-us/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen sehr schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Vorschau
 

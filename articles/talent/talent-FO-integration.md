@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: db542e4df79480624ff6e5ff1996ad930fc1564b
-ms.sourcegitcommit: aec1dcd44274e9b8d0770836598fde5533b7b569
+ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
+ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "1617342"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "1742707"
 ---
 # <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Integration von Dynamics 365 for Talent zu Dynamics 365 for Finance and Operations – FAQ
 
@@ -38,7 +38,7 @@ Für Attract und Onboard sind alle Daten nativ auf Common Data Service.
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kann ich eine neue Zuordnung erstellen, ohne die Vorlagen zu verwenden?
 
-Vorlagen sind der Ausgangspunkt. Sie können Ihre eigene Vorlage erstellen, aber bei der Erstellung eines Integrationsprojekts wird immer eine Vorlage benötigt. Weitere Informationen über Data Integrator (DI), Vorlagen und Projekte finden Sie unter [Daten in Common Data Service integrieren](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+Vorlagen sind der Ausgangspunkt. Sie können Ihre eigene Vorlage erstellen, aber bei der Erstellung eines Integrationsprojekts wird immer eine Vorlage benötigt. Weitere Informationen über Data Integrator (DI), Vorlagen und Projekte finden Sie unter [Daten in Common Data Service integrieren](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kann ich Finanzdimension für den Transfer zwischen Talent und Finance and Operations abbilden?
 
@@ -133,7 +133,7 @@ Die Integration in Finance and Operations ist ein zweistufiger Prozess. Stellen 
 
 Wenn die Daten nicht wie erwartet im Common Data Service angezeigt werden, überprüfen Sie, ob die Entität in der Integration unterstützt wird. Um zusätzliche Daten in Common Data Service aufzunehmen, ist eine Änderung auf der Microsoft-Seite erforderlich.
 
-Wenn die Entität unterstützt wird und die Daten im Common Data Service verfügbar sind, überprüfen Sie, ob die Zuordnung im Data Integrator korrekt ist. Wenn die Integrator-Zuordnung in Ordnung aussieht, überprüfen Sie, ob die Datenverwaltungsaufträge erfolgreich ausgeführt wurden. Bei der Ausführung der Batch-Jobs können Fehler auftreten. Weitere Informationen zur Datenverwaltung finden Sie unter [Datenverwaltung](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Wenn die Entität unterstützt wird und die Daten im Common Data Service verfügbar sind, überprüfen Sie, ob die Zuordnung im Data Integrator korrekt ist. Wenn die Integrator-Zuordnung in Ordnung aussieht, überprüfen Sie, ob die Datenverwaltungsaufträge erfolgreich ausgeführt wurden. Bei der Ausführung der Batch-Jobs können Fehler auftreten. Weitere Informationen zur Datenverwaltung finden Sie unter [Datenverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Die Adressen meiner Mitarbeiter sind nach dem Import in Finance and Operations falsch. Was soll ich tun?
 
@@ -145,7 +145,7 @@ Vergewissern Sie sich bei der Implementierung von Talent, dass die Zahlenreihenf
 
 Achten Sie beim Erstellen Ihrer Verbindungen darauf, dass Sie Dynamics 365 for Finance and Operations (aktuell in der Vorschau) und Common Data Service wählen.
 
-## <a name="when-syncing-employments-i-get-the-errors-companyinfofk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Bei der Synchronisation von Arbeitsverhältnissen erhalte ich die Fehlermeldung "CompanyInfo_FK existiert nicht" oder "Der Wert '12/31/2154 11:59:59 pm' im Feld 'Arbeitsenddatum' ist in der zugehörigen Tabelle 'Beschäftigung' nicht enthalten". Was soll ich tun?
+## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Bei der Synchronisation von Arbeitsverhältnissen erhalte ich die Fehlermeldung "CompanyInfo_FK existiert nicht" oder "Der Wert '12/31/2154 11:59:59 pm' im Feld 'Arbeitsenddatum' ist in der zugehörigen Tabelle 'Beschäftigung' nicht enthalten". Was soll ich tun?
 
 Stellen Sie sicher, dass Sie die Zuordnung zu den richtigen juristischen Personen vornehmen. Die Synchronisierung von juristischen Personen ist nicht Teil der Standardvorlage, so dass erwartet wird, dass jede juristische Person, die in Talent und Common Data Service vorhanden ist, auch in Finance and Operations vorhanden ist.
 Stellen Sie außerdem sicher, dass Sie die richtigen juristischen Personen für das zugehörige Verbindungsset auswählen.
@@ -160,12 +160,12 @@ Aktualisieren Sie die Dateneinheiten in Finance and Operations, indem Sie zu **D
 
 - Data Integrator (DI): 
 
-  - [Datenintegration in Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator)
+  - [Datenintegration in Common Data Service](https://docs.microsoft.com/powerapps/administrator/data-integrator)
 
-  - [Fehlermanagement und Fehlerbehebung des Datenintegrators](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator-error-management)
+  - [Fehlermanagement und Fehlerbehebung des Datenintegrators](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
 
-  - [Beantwortung von DSR-Anfragen nach systemseitig generierten Protokollen in PowerApps, Microsoft Flow und Common Data Service](https://docs.microsoft.com/en-us/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Beantwortung von DSR-Anfragen nach systemseitig generierten Protokollen in PowerApps, Microsoft Flow und Common Data Service](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Datenmanagement:
 
-  - [Datenverwaltung](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Datenverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
