@@ -1,0 +1,2396 @@
+- name: Dynamics 365 Supply Chain Management
+  items:
+    - name: Dynamics 365 Supply Chain Management
+      items:
+        - name: Dynamics 365 Supply Chain Management
+          href: index.md
+        - name: Erste Schritte
+          items:
+            - name: Vor dem Kauf
+              href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Anmelden für Vorschauabonnement
+              href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dienstupdates für eine Version
+              items:
+                - name: Dienstupdates für eine Version – Übersicht
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: FAQ zu Dienstupdates für eine Version
+                  href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Software-Lebenszyklusrichtlinie – Cloud
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Software-Lebenszyklusrichtlinie – lokal
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dienstupdateverfügbarkeit
+                  href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Updates auf Cloudumgebungen anwenden
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dienstupdates konfigurieren
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dienstupdates anhalten
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Benachrichtigungen zu Dienstupdates erhalten
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Datenaufgabenautomatisierung
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lieferung von ISV-Lösungen mithilfe von einer Version
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Benutzerakzeptanztests erstellen und automatisieren
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Demoumgebung bereitstellen
+              href: ../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Überlegungen zur Bereitstellung
+              items:
+                - name: Bereitstellungsoptionen
+                  href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Cloudbereitstellung
+                  href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systemanforderungen für Cloudbereitstellungen
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: On-Premises-Bereitstellung
+                  href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Systemanforderungen für On-Premises-Bereitstellungen
+                  href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations (On-Premises) kaufen
+                  href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurieren der Lagerung für lokale Bereitstellungen
+                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Finance and Operations-Apps, bearbeitet von 21Vianet in China'
+                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finance and Operations-Apps in Frankreich
+                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Neuerungen oder Änderungen
+              items:
+                - name: Neuerungen oder Änderungen – Startseite
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
+                - name: Vorschaufunktionen in Finance and Operations-Apps 10.0.6 (November 2019)
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Finance and Operations-Apps\_10.0.5 (Oktober\_2019)"
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Finance and Operations\_10.0.4 (Juli\_2019)"
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Finance and Operations, Enterprise Edition 7.3'
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Entfernte oder veraltete Funktionen
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: "Verschobene Funktionen von AX\_2012"
+                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nicht in On-Premises-Bereitstellungen implementierte Funktionen
+                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
+                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dokumentationsressourcen
+              items:
+                - name: Hilfesystem
+                  href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verbinden des Hilfesystems
+                  href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verbinden einer benutzerdefinierten Hilfe-Website
+                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anzeigen und Exportieren von Feldbeschreibungen
+                  href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aufgabenaufzeichnung
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
+                  href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Videos
+                  href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Glossar
+                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Schulungskatalog
+              items:
+                - name: Schulungskatalog – Startseite
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Entscheidungsträger im Unternehmen
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Geschäftliche Benutzer
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Implementierungsprojektmanager
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Administratoren
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Entwickler
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Partnerverkauf und -marketing
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funktionale Berater
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lösungsarchitekten
+                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Die Benutzeroberfläche erkunden
+              items:
+                - name: Benutzeroberflächenelemente
+                  href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Eingabehilfefunktionen
+                  href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funktionsverwaltung – Übersicht
+                  href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kunden-FAQs
+                  href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aktivitätssuche
+                  href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erweiterte Filter- und Abfragesyntax
+                  href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbeitsbereiche konfigurieren und filtern
+                  href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Seiten mithilfe des Symbols „In neuem Fenster öffnen” nebeneinander anzeigen
+                  href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Tastenkombinationen
+                  href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ändern der Banner- oder Logobilder für juristische Personen
+                  href: ../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Navigationssuche
+                  href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Die Benutzerumgebung personalisieren
+                  href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Gespeicherte Ansichten
+                  href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+                  href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
+                - name: PowerApps-Apps einbetten
+                  href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Informationen per Suchen finden
+                  href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ändern des Datums für eine Sitzung
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Die bevorzugte Zeitzone eines Benutzers festlegen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lifecycle Services verstehen
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/supply-chain/toc.json
+            - name: Implementierung der Lebenszyklusverwaltung
+              items:
+                - name: Implementierung der Lebenszyklusverwaltung – Startseite
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Architektur von Finance and Operations-Apps
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack for Finance and Operations
+                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Implementierungsprojekt aufnehmen
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Umgebungsplanung
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Liveschaltung vorbereiten
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
+                - name: FAQs live schalten
+                  href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Serviceanforderung senden
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'FAQs zu Abonnements, LCS-Projekten und Azure AD-Mandanten'
+                  href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verschieben von Umgebungen zwischen Rechenzentren
+                  href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verschieben von Lizenzen zwischen Vertragstypen
+                  href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verschieben von LCS-Implementierungsprojekten zu anderen Azure AD-Mandanten
+                  href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mehrere LCS-Projekte und ‑Produktionsumgebungen auf einem einzelnen Azure AD-Mandanten
+                  href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globalisierung
+          items:
+            - name: Globalisierungsressourcen
+              href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Updates zu rechtlichen Bestimmungen
+              href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Russische Föderation
+              items:
+                - name: Russland – Übersicht
+                  href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lager
+                  items:
+                    - name: Waren in Zustellung vom Kreditor
+                      href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Anlagenverwaltung
+          items:
+            - name: Überblick über die Anlagenverwaltung
+              href: asset-management/index.md
+              items:
+                - name: Funktionale Standorte und Anlagen
+                  href: asset-management/overview/functional-locations-and-objects.md
+                - name: Anlagen und Arbeitsaufträge
+                  href: asset-management/overview/objects-and-work-orders.md
+            - name: Einstellungen für funktionale Standorte
+              items:
+                - name: Lebenszyklusstatus funktionaler Standorte
+                  href: asset-management/setup-for-functional-locations/functional-location-stages.md
+                - name: Wartungsattributtypen
+                  href: asset-management/setup-for-functional-locations/functional-location-types.md
+                - name: Funktionale Standorttypen
+                  href: asset-management/setup-for-functional-locations/specification-types.md
+            - name: Funktionale Standorte
+              items:
+                - name: Einführung in funktionale Standorte
+                  href: asset-management/functional-locations/introduction-to-functional-locations.md
+                - name: Funktionale Standorte erstellen
+                  href: asset-management/functional-locations/create-functional-locations.md
+                - name: Anlagen an funktionalen Standorten installieren
+                  href: asset-management/functional-locations/install-objects-on-functional-locations.md
+            - name: Anlageneinrichtung
+              items:
+                - name: Anlagentypen
+                  href: asset-management/setup-for-objects/object-types.md
+                - name: Bedingungsbewertung
+                  href: asset-management/setup-for-objects/condition-assessment.md
+                - name: Anlagenhersteller und -modell
+                  href: asset-management/setup-for-objects/product-and-model.md
+                - name: Zähler
+                  href: asset-management/setup-for-objects/counters.md
+                - name: Anlagenverwaltungsparameter
+                  href: asset-management/setup-for-objects/enterprise-asset-management-parameters.md
+                - name: Anlagenlebenszyklusstatus
+                  href: asset-management/setup-for-objects/object-stages.md
+                - name: Anlagenservicelevel
+                  href: asset-management/setup-for-objects/object-priorities.md
+                - name: Kritische Anlagezustände
+                  href: asset-management/setup-for-objects/object-criticalities.md
+                - name: Anlagendokumente
+                  href: asset-management/setup-for-objects/object-documents.md
+                - name: Wartungsarbeiter und Arbeitskräftegruppen
+                  href: asset-management/setup-for-objects/workers-and-worker-groups.md
+            - name: Anlagen
+              items:
+                - name: Einführung in Anlagen
+                  href: asset-management/objects/introduction-to-objects.md
+                - name: Eine Anlage erstellen
+                  href: asset-management/objects/create-an-object.md
+                - name: Anlagen auf mehreren Ebenen
+                  href: asset-management/objects/multi-level-objects.md
+                - name: 'Anlagen verschieben, ersetzen und installieren'
+                  href: asset-management/objects/move-replace-and-install-objects.md
+                - name: Anlagen basierend auf Bestellungen erstellen
+                  href: asset-management/objects/create-objects-based-on-purchase-orders.md
+                - name: Anlagenstückliste
+                  href: /asset-management/objects/object-bom.md
+                - name: Anlagenereignisverlauf
+                  href: asset-management/objects/object-timeline.md
+                - name: Anlagenansicht
+                  href: asset-management/objects/object-view.md
+                - name: Anlagenattributübersicht
+                  href: asset-management/objects/object-specification-overview.md
+            - name: Einstellungen für Wartungsanfragen
+              items:
+                - name: Wartungsanfragen
+                  href: asset-management/setup-for-maintenance-requests/requests.md
+                - name: Wartungsanfrage-Lebenszyklusstatus
+                  href: asset-management/setup-for-maintenance-requests/request-stages.md
+                - name: Wartungsanfragentypen
+                  href: asset-management/setup-for-maintenance-requests/request-types.md
+                - name: Zuständige Wartungsarbeitskräfte
+                  href: asset-management/setup-for-maintenance-requests/responsible-workers.md
+            - name: Wartungsanfragen verwalten
+              items:
+                - name: Wartungsanfragen
+                  href: asset-management/manage-maintenance-requests/maintenance-request-overview.md
+                - name: Eine Wartungsanfrage erstellen
+                  href: asset-management/manage-maintenance-requests/create-a-maintenance-request.md
+                - name: Einen Arbeitsauftrag aus einer Wartungsanfrage erstellen
+                  href: asset-management/manage-maintenance-requests/create-work-order-from-a-maintenance-request.md
+                - name: Anlagendarlehen
+                  href: asset-management/manage-maintenance-requests/asset-loan.md
+                - name: Ein- und ausgehende Anlagen
+                  href: asset-management/manage-maintenance-requests/inbound-and-outbound-assets.md
+                - name: Wartungsanfrageberichte
+                  href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
+            - name: Einstellungen für Arbeitsaufträge
+              items:
+                - name: 'Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten'
+                  href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
+                - name: Lebenszyklusstatus von Arbeitsaufträgen
+                  href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
+                - name: Arbeitsauftragstypen
+                  href: asset-management/setup-for-work-orders/work-order-types.md
+                - name: Arbeitsauftrags-Projekteinstellungen
+                  href: asset-management/setup-for-work-orders/work-order-project-setup.md
+                - name: Servicelevel und Beschreibung
+                  href: asset-management/setup-for-work-orders/service-level-and-description.md
+                - name: Geplante Ausführung
+                  href: asset-management/setup-for-work-orders/scheduled-execution.md
+                - name: Fehlermanagement
+                  href: asset-management/setup-for-work-orders/fault-management.md
+            - name: Arbeitsaufträge
+              items:
+                - name: Einführung in Arbeitsaufträge
+                  href: asset-management/work-orders/introduction-to-work-orders.md
+                - name: Manuell erstellte Arbeitsaufträge
+                  href: asset-management/work-orders/manually-created-workorders.md
+                - name: Wartungsprognose
+                  href: asset-management/work-orders/maintenance-forecasts.md
+                - name: Beschaffung
+                  href: asset-management/work-orders/procurement.md
+                - name: Die manuelle Aktualisierung von Anlagenzählern
+                  href: asset-management/work-orders/manual-update-of-asset-counters.md
+                - name: Die automatische Aktualisierung von Anlagenzählern
+                  href: asset-management/work-orders/automatic-update-of-asset-counters.md
+                - name: Wartungsprüflisten
+                  href: asset-management/work-orders/maintenance-checklists.md
+                - name: Wartungsausfallzeit
+                  href: asset-management/work-orders/maintenance-downtime.md
+                - name: Fügen Sie Fehler zum Arbeitsauftrag hinzu
+                  href: asset-management/work-orders/add-fault-to-work-order.md
+                - name: Arbeitsauftragsbericht
+                  href: asset-management/work-orders/work-order-report.md
+                - name: Arbeitsauftragspools
+                  href: asset-management/work-orders/work-order-pools.md
+                - name: Aktive Wartungsaufträge für Arbeitsaufträge
+                  href: asset-management/work-orders/active-work-order-jobs-overview.md
+                - name: Anlagen und Anlagen
+                  href: asset-management/work-orders/work-orders-and-fixed-assets.md
+            - name: Integration in Projektverwaltung und Buchhaltung
+              items:
+                - name: 'Planungen, Arbeitsaufträge und Projekte'
+                  href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Vorbeugende und reaktive Wartung
+              items:
+                - name: Übersicht über die vorbeugende Instandhaltung
+                  href: asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md
+                - name: Wartungspläne
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
+                - name: Wartungspläne terminieren
+                  href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+                - name: Wartungsdurchgänge
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
+                - name: Wartungszeitplan
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule.md
+                - name: Kosten für Wartungszeitplan
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
+                - name: Arbeitsaufträge erstellen
+                  href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
+                - name: Wartungsausfallzeit
+                  href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
+            - name: Kapazitätsplanung
+              items:
+                - name: Kapazitätsauslastung berechnen
+                  href: asset-management/capacity-planning/calculate-capacity-load.md
+                - name: Artikelprognose berechnen
+                  href: asset-management/capacity-planning/calculate-item-forecast.md
+            - name: Terminierung des Arbeitsauftrags
+              items:
+                - name: Kalender und Terminierung von Wartungsarbeiter
+                  href: asset-management/work-order-scheduling/maintenance-worker-calendar-and-scheduling.md
+                - name: Bevorzugte Wartungsarbeiter
+                  href: asset-management/work-order-scheduling/preferred-maintenance-workers.md
+                - name: Arbeitsaufträge terminieren
+                  href: asset-management/work-order-scheduling/schedule-work-orders.md
+                - name: Arbeitsauftrag disponieren
+                  href: asset-management/work-order-scheduling/dispatch-work-order.md
+                - name: Arbeitsauftrag auf bestimmtes Datum und Uhrzeit festlegen
+                  href: asset-management/work-order-scheduling/schedule-work-order-on-specific-date-and-time.md
+                - name: Geplante Wartungsaufträge für Arbeitsaufträge
+                  href: asset-management/work-order-scheduling/scheduled-work-order-maintenance-jobs.md
+                - name: Berechnen der Kapazitätsauslastung für geplante Arbeitsaufträge
+                  href: asset-management/work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md
+            - name: Verbrauch
+              items:
+                - name: Verbrauch erfassen
+                  href: asset-management/consumption/register-consumption.md
+                - name: Verbrauchsberichte erstellen
+                  href: asset-management/consumption/create-consumption-reports.md
+            - name: Garantie
+              items:
+                - name: Garantievereinbarung
+                  href: asset-management/warranty/warranty-agreement.md
+                - name: Garantie auf Anlagen und Anlagentypen
+                  href: asset-management/warranty/warranty-on-assets-and-asset-types.md
+            - name: Wartungsbudgets
+              items:
+                - name: Wartungsbudgets
+                  href: asset-management/maintenance-budgets/create-maintenance-budget.md
+                - name: Wartungsbudgets aktualisieren
+                  href: asset-management/maintenance-budgets/update-maintenance-budget.md
+            - name: Controlling und Berichterstellung
+              items:
+                - name: Kosten- und Datenkontrolle
+                  href: asset-management/controlling-and-reporting/cost-and-date-control.md
+                - name: Arbeitsstundenkontrolle
+                  href: asset-management/controlling-and-reporting/work-hour-control.md
+                - name: Kostensteuerung für Anlagenfehler
+                  href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
+                - name: Anlagenfehleranalyse
+                  href: asset-management/controlling-and-reporting/asset-fault-analysis.md
+                - name: Anlagen-KPIs
+                  href: asset-management/controlling-and-reporting/asset-kpis.md
+                - name: Artikelverwendungsort
+                  href: asset-management/controlling-and-reporting/item-where-used.md
+                - name: Wartungsstatus
+                  href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Mobiler Arbeitsbereich für Anlagenverwaltung
+              href: asset-management/asset-management-mobile-workspace.md
+        - name: Datenverwaltung
+          items:
+            - name: Zielentitäten
+              href: asset-management/data-management/target-entities.md
+        - name: Kostenrechnung
+          items:
+            - name: Startseite für die Kostenrechnung
+              href: ../finance/cost-accounting/cost-accounting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenrechnungsterminologie
+              href: ../finance/cost-accounting/terms-cost-accounting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: 'Steuerkalender, Geschäftsjahre und Perioden'
+              href: ../finance/budgeting/fiscal-calendars-fiscal-years-periods.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finanzdimensionen
+              href: ../finance/general-ledger/financial-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Finanzdimensionen und Veröffentlichungen
+              href: ../finance/general-ledger/Default-dimensions.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hinzufügen von Finanzdimensionen zum CFO-Arbeitsbereich
+              href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kontostrukturen erstellen
+              href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Budgetierungsüberblick
+              href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimensionen erstellen und Dimensionsmitglieder importieren
+              href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenelementdimensionen
+              href: ../finance/cost-accounting/cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenelemente erstellen
+              href: ../finance/cost-accounting/tasks/create-cost-elements.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenträgerdimensionen
+              href: ../finance/cost-accounting/cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenobjekte erstellen
+              href: ../finance/cost-accounting/tasks/create-cost-objects.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenelement-Dimensionselemente einem allgemeinen Satz von Dimensionselementen zuordnen
+              href: ../finance/cost-accounting/map-cost-elements-dimension-members.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Kostenelementdimension zuordnen
+              href: ../finance/cost-accounting/tasks/map-cost-element-dimension.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Dimensionshierarchie
+              href: ../finance/cost-accounting/dimension-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Organisationsberichtshierarchie erstellen
+              href: ../finance/cost-accounting/tasks/create-an-organization-report-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zugriffsrechte eines Kostenobjekt-Controllers
+              href: ../finance/cost-accounting/access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zugriffsrechte für einen Kostenobjekt-Controller konfigurieren
+              href: ../finance/cost-accounting/tasks/configure-access-rights-cost-object-controller.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenkontrolleinheiten definieren
+              href: ../finance/cost-accounting/tasks/define-cost-control-units.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Ein Sachkonto der Kostenrechnung erstellen
+              href: ../finance/cost-accounting/tasks/create-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Statistische Dimensionselement und statistischen Maßnahmenanbieter-Vorlagen
+              href: ../finance/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zuteilungsbasen
+              href: ../finance/cost-accounting/allocation-bases.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Kostenzuweisungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
+              href: ../finance/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Kostenverhaltensrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
+              href: ../finance/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Kostenverteilungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
+              href: ../finance/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eine Kostenaufschlüsselungsrichtlinie erstellen
+              href: ../finance/cost-accounting/tasks/create-cost-rollup-policy.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Datenquelle für das Sachkonto der Kostenrechnung verwalten
+              href: ../finance/cost-accounting/tasks/manage-data-source-cost-accounting-ledger.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Quelldaten verarbeiten und nachverfolgen
+              href: ../finance/cost-accounting/tasks/process-trace-source-data.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Gemeinkostenberechnung
+              href: ../finance/cost-accounting/overhead-calculation.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung
+              href: ../finance/cost-accounting/cost-rollup.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Arbeitsbereich für Kostensteuerung konfigurieren
+              href: ../finance/cost-accounting/cost-control-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kostensteuerungs-Arbeitsbereichsparameter konfigurieren
+              href: ../finance/cost-accounting/tasks/configure-cost-control-workspace-parameters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Zugriffslistensicherheit und RLS in Microsoft Power BI verstehen
+              href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Inhaltspaket für Microsoft Power BI-Berichterstellung verwenden
+              href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Verwenden des Kostensteuerungsarbeitsbereichs bei der mobilen Nutzung von Finance and Operations
+              href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Kostenverwaltung
+          items:
+            - name: Kostenverwaltung – Startseite
+              href: cost-management/cost-management-home-page.md
+            - name: Voraussetzungen für Standardkosten
+              items:
+                - name: Voraussetzungen für Standardkosten – Übersicht
+                  href: cost-management/prerequisites-standard-costs.md
+                - name: Standardkostenumrechnung – Übersicht
+                  href: cost-management/standard-cost-conversion-overview.md
+                - name: Voraussetzung für eine Standardkostenumrechnung
+                  href: cost-management/prerequisites-standard-cost-conversion.md
+                - name: Standardkostenaktualisierungen verwalten
+                  href: cost-management/manage-standard-cost-updates.md
+                - name: Einschränkungen für eine Nachkalkulationsversion für Standardkosten
+                  href: cost-management/restrictions-costing-versions-standard-costs.md
+                - name: 'Daten, die in Herstellkostenkalkulationen mit Standardkosten verwendet werden'
+                  href: cost-management/information-used-bom-calculations-standard-costs.md
+                - name: Aktualisieren der Standardkosten in einer Produktionsumgebung
+                  href: cost-management/update-standard-costs-manufacturing-environment.md
+                - name: Aktualisieren der Standardkosten für einen neuen produzierten Artikel
+                  href: cost-management/update-standard-costs-new-manufactured-item.md
+                - name: Aktualisieren der Standardkosten in einer Umgebung ohne Produktion
+                  href: cost-management/update-standard-costs-non-manufacturing-environment.md
+                - name: Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel
+                  href: cost-management/prepare-maintain-standard-costs-manufactured-items.md
+            - name: Nachkalkulationsversionen
+              items:
+                - name: Nachkalkulationsversionen – Übersicht
+                  href: cost-management/costing-versions.md
+                - name: Nachkalkulationsbögen
+                  href: cost-management/costing-sheets.md
+                - name: Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
+                  href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+            - name: Bestandsbuchhaltung
+              items:
+                - name: Kostenobjekte
+                  href: cost-management/cost-object.md
+                - name: Kostenobjektsaldo anzeigen
+                  href: cost-management/tasks/view-cost-object-balance.md
+                - name: Lageraufstellung und KPI nach Kostenobjekt anzeigen
+                  href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
+                - name: Kosteneinträge
+                  href: cost-management/cost-entries.md
+                - name: Kosteneinträge für ein Kostenobjekt anzeigen
+                  href: cost-management/tasks/view-cost-entries-cost-object.md
+                - name: Kostengruppen
+                  href: cost-management/cost-groups.md
+                - name: FIFO mit physischem Wert und Markierung
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: Physischen Wert einbeziehen
+                  href: cost-management/include-physical-value.md
+                - name: Lagerobjektwerte
+                  href: cost-management/physical-quantity.md
+                - name: 'LIFO-Datum (LIFO, last in first out, zuletzt eingetroffenen - zuerst versendet) mit physischem Wert und Markierung'
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO mit physischem Wert und Markierung
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Flexibler Durchschnitt
+                  href: cost-management/moving-average.md
+                - name: Physische und finanzielle Updates
+                  href: cost-management/physical-financial-updates.md
+                - name: Laufender Durchschnittseinstandspreis
+                  href: cost-management/running-average-cost-price.md
+                - name: Nachverfolgen der laufenden Durchschnittskosten pro Lagerungsdimension
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: Gewichteter Durchschnitt (Datum)
+                  href: cost-management/weighted-average-date.md
+                - name: Gewichteter Durchschnitt mit physischem Wert und Markierung
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Lagerabschluss
+                  href: cost-management/inventory-close.md
+                - name: Regulieren der Einstandswerte für verfügbaren Bestand
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+            - name: Fertigungsbuchhaltung
+              items:
+                - name: Herstellkostenkalkulationen
+                  href: cost-management/bom-calculations.md
+                - name: Herstellkostenkalkulationsgruppen
+                  href: cost-management/bom-calculation-groups.md
+                - name: Nachkalkulation für Produktionskosten
+                  href: cost-management/backflush-costing.md
+                - name: Allgemeine Ursachen für Produktionsabweichungen
+                  href: cost-management/common-sources-of-production-variances.md
+                - name: Kostenkategorien in Produktionsrouting
+                  href: cost-management/cost-categories-used-production-routings.md
+                - name: Kostenkategorien in der Produktionssteuerung und in der Projektverwaltung und -buchhaltung
+                  href: cost-management/cost-categories-used-production-control-project-management-accounting.md
+                - name: Anzeigen von Belastungen für einen produzierten Artikel
+                  href: cost-management/charges-manufactured-item.md
+                - name: Kostenanalyse für Produktionsauftrag
+                  href: cost-management/production-order-cost-analysis.md
+                - name: Vorkalkulation für Produktionsauftrag
+                  href: /cost-management/production-order-cost-estimation.md
+                - name: Aktuellen RIF-Status eines Produktionsauftrags anzeigen
+                  href: cost-management/tasks/view-current-wip-status-production-order.md
+                - name: 'Aktive, vorkalkulierte und realisierte Kosten für einen Produktionsauftrag vergleichen'
+                  href: cost-management/tasks/compare-active-estimated-realized-costs.md
+                - name: Produktionsbuchungen
+                  href: cost-management/production-posting.md
+                - name: 'Produkte einrichten, die produziert oder beschafft werden können'
+                  href: cost-management/manufactured-items-treated-as-purchased-items.md
+                - name: Gesamtkostenzuteilungsmethode
+                  href: cost-management/methodology-total-cost-allocation.md
+                - name: Amortisierung konstanter Kosten für einen produzierten Artikel
+                  href: cost-management/amortize-constant-costs-manufactured-item.md
+            - name: Power BI-Inhaltspaket zur Kostenverwaltung
+              href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Intelligence
+          items:
+            - name: Nachrichtendienst – Startseite
+              href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Informationszugriff und Berichterstellung
+              href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Power BI Inhalt
+              items:
+                - name: Power BI Inhalt – Startseite
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ist-Wert im Vergleich mit Budget
+                  href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vergütungen
+                  href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bargeldübersicht
+                  href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: CFO – Übersicht
+                  href: ../fin-ops-core/dev-itpro/analytics/CFO-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompensation
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kompensationen und Vorteile
+                  href: ../fin-ops-core/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostenrechnungsanalyse
+                  items:
+                    - name: Inhalt zur Kostenrechnungsanalyse Power BI Inhalt
+                      href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Sicherheit für den Power BI Inhalt der Kostenrechnungsanalyse einrichten
+                      href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostenverwaltung
+                  href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kredit- und Inkassoverwaltung
+                  href: ../finance/accounts-receivable/credit-collections-power-bi.md
+                - name: Mitarbeiterkompetenzen und -entwicklung
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mitarbeiterentwicklung
+                  href: ../fin-ops-core/dev-itpro/analytics/employee-development-PBI.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI-Inhalt der Ausgabenverwaltung
+                  href: ../fin-ops-core/dev-itpro/analytics/expense-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finanzleistung
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-performance-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Finanzeinblicke
+                  href: ../fin-ops-core/dev-itpro/analytics/financial-insights.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anlagenverwaltung
+                  href: ../finance/fixed-assets/Fixed-asset-management-workspace.md
+                - name: Weiterbildung
+                  href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Organisationsschulungen
+                  href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Übungsleiter
+                  href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Produktionsleistung
+                  href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Einkaufs- und Ausgabenanalyse
+                  href: ../fin-ops-core/dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Personalbeschaffung
+                  href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Einzelhandelskanalleistung
+                  href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Umsatz- und Rentabilitätsleistung
+                  href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kreditorenzahlungen
+                  href: ../finance/accounts-payable/Vendor-payments-workspace.md
+                - name: Lagerortleistung
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Arbeitskraftkennzahlen
+                  href: ../fin-ops-core/dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Erstellung und Drucken von Dokumenten
+              items:
+                - name: Dokumenterstellungsservices – Übersicht
+                  href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurieren von SSRS für On-Premises-Bereitstellungen
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Drucken
+                  items:
+                    - name: Dokumentendruck – Übersicht
+                      href: ../fin-ops-core/dev-itpro/analytics/print-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Installieren des Dokument-Routing-Agent, um Netzwerkdruck zu aktivieren'
+                      href: ../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Dokumentweiterleitungsagent aktualisieren
+                      href: ../fin-ops-core/dev-itpro/analytics/upgrade-document-routing-agent.md
+                    - name: Netzwerkdruckergeräte in lokalen Umgebungen installieren
+                      href: ../fin-ops-core/dev-itpro/analytics/install-network-printer-onprem.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen'
+                      href: ../fin-ops-core/dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ausführen des Dokumentweiterleitungs-Agenten als Windows-Dienst
+                      href: ../fin-ops-core/dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verhindern Sie die Zeitüberschreitung lang ausgeführter Berichte
+                  href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verfügbare SQL Server Reporting Services-Berichte
+                  href: ../fin-ops-core/dev-itpro/analytics/SSRS-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Berichterstellungslösungen erstellen
+                  href: ../fin-ops-core/dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Berichtsentwurfsvorlagen installieren
+                  href: ../fin-ops-core/dev-itpro/analytics/install-modern-report-design-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anwendungssuiteberichte mithilfe von Erweiterungen anpassen
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anwendungssuite-Berichtsdatasets erweitern
+                  href: ../fin-ops-core/dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erweitern der Berichtsmenüoptionen zur Weiterleitung der Benutzernavigation
+                  href: ../fin-ops-core/dev-itpro/analytics/extend-report-menu-items.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen von benutzerdefinierten Geschäftsdokumenten
+                  href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vorschau von PDF-Dokumenten mit einem integrierten Viewer
+                  href: ../fin-ops-core/dev-itpro/analytics/preview-pdf-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronische Berichterstellung
+              items:
+                - name: Überblick über die elektronische Berichterstellung
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurationen
+                  items:
+                    - name: Erstellen von Konfigurationen
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vorbereiten von Komponenten der elektronischen Berichterstattungslösung
+                      items:
+                        - name: Domänenspezifische Datenmodelle entwerfen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Vorbereiten anwendungsspezifischer Metadaten
+                          items:
+                            - name: (ER) Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                            - name: (RCS) Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
+                              href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Definieren von Modellzuordnungen und Auswählen von Datenquellen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Datenmodelle ausgewählten Datenquellen zuordnen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Erstellen einer Formatkonfiguration
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Zuordnen der Formatkomponenten zu Datenmodellelementen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Testen der vorbereiteten ER-Lösung in der Zielanwendung
+                      items:
+                        - name: (ER) Importieren von Konfigurationen aus RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generieren elektronischer Dokumente für Zahlungen mithilfe einer Formatkonfiguration
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Formataktualisierung durch Verwendung einer neuen Format-Basisversion
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Formeldesigner in der elektronischen Berichterstellung
+                  href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER-Modellzuordnungen in separaten ER-Konfigurationen verwalten
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Datenmodelldefinitionen beim Erstellen von Formaten auswählen
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen von Berichten durch Hinzufügen von Inhalten als unformatierten XML-Code
+                  href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                - name: (ER) Unternehmensübergreifende Datenquellen in elektronischer Berichterstellung
+                  href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen von ER-Formaten zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten
+                  items:
+                    - name: (ER) Erstellen von Konfigurationen zum Generieren von Berichten im OpenXML-Format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: (ER) Erstellen von Konfigurationen zum Generieren von Berichten im Word-Format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Erstellen von Konfigurationen zum Ausfüllen von PDF-Vorlagen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Einbetten von Bildern und Formen
+                  items:
+                    - name: (ER) Einbetten von Bildern und Formen in zu generierenden Dokumenten
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Beispiel eingebetteter Bilder und Formen
+                      items:
+                        - name: Entwerfen von Konfigurationen zum Generieren von Berichten in Office-Formaten mit eingebetteten Bildern
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Überprüfen von Konfigurationen zum Generieren von Berichten in Office-Formaten mit eingebetteten Bildern
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Erstellen von Berichten in Office-Formaten mit eingebetteten Bildern
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Ändern von elektronisches Berichterstellungsformaten, indem Excel-Vorlagen erneut angewendet werden'
+                  href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Definieren der Abhängigkeit von ER-Konfigurationen von anderen Komponenten
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Entwerfen einer ER-Lösung zur Verwendung von Finanzdimensionen
+                  items:
+                    - name: Entwerfen von Datenmodellen zum Verwenden von Finanzdimensionen als Datenquellen
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Zuordnen von Modellen zum Verwenden von Finanzdimensionen als Datenquellen
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Entwerfen von Berichten zum Verwenden von Finanzdimensionen als Datenquellen
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Ausführen von Berichten, die Finanzdimensionen als Datenquellen verwenden'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Entwerfen von ER-Formaten zum Zählen und Summieren unter Verwendung der ausgegebenen Informationen
+                  items:
+                    - name: Erstellen von Formaten zum Zählen und Summieren
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Formaten zum Zählen und Summieren
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Verwenden von Berechnungen zum Generieren der Ausgabe für das Zählen und Summieren
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ausführen von Formaten zum Zählen und Summieren
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Excel-Berichten Spalten als horizontal erweiterbare Bereiche dynamisch hinzufügen
+                  items:
+                    - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche entwerfen
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ausführen von Formaten zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verwenden von Dokumentverwaltungsdateien in Formatausgaben
+                  items:
+                    - name: Datenmodelle zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben vorbereiten
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Datenmodelle zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben erweitern
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Formate zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben erstellen
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ausführen von Formaten zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ändern und Ausführen von Formaten zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aktualisieren von Anwendungsdaten mithilfe elektronischer Berichte
+                  items:
+                    - name: Generieren von elektronischen Dokumenten und Aktualisieren von Anwendungsdaten
+                      href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Importieren von Konfigurationen, um Dokumente mit Anwendungsdaten zu erstellen'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Entwerfen von Konfigurationen, um Dokumente mit Anwendungsdaten zu generieren'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Ändern von Modellen und Zuordnungen, um Dokumente mit Anwendungsdaten zu generieren'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Ändern von Formaten, um Dokumente mit Anwendungsdaten zu erstellen'
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Generieren von Dokumenten mit Anwendungsdaten
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Importieren von Daten aus eingehenden Dateien mithilfe von ER-Lösungen
+                  items:
+                    - name: Analysieren eingehender Dokumente im unterschiedlichen Formaten
+                      href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Datenimporten aus manuell ausgewählten Dateien
+                      items:
+                        - name: Erstellen von Konfigurationen zum Import von Daten aus externen XML-Dateien
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Datenimporten im Batch-Modus aus in SharePoint lokalisierten Dateien
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Import von Dateien im XML-Format
+                      items:
+                        - name: Import von Dateien im XML-Format mit optionalen Attributen
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurieren von ER-Formaten zum Import von Dateien im XML-Format mit optionalen Attributen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
+                - name: Teilen erstellter XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Unterstützung für Parameter bei Aufrufen von ER-Datenquellen mit berechneten Feldtypen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurationslebenszyklus
+                  items:
+                    - name: Verwalten des Konfigurationslebenszyklus
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Hochladen von Konfigurationen in Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importieren von Konfigurationen von Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Herunterladen von Konfigurationen von Lifecycle Services
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importieren von Konfigurationen
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Herunterladen von ER-Konfigurationen aus dem RCS-Repository
+                      items:
+                        - name: Herunterladen von ER-Konfigurationen aus dem RCS-Repository für den RCS-Typ
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Importieren von Konfigurationen aus RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Verwenden elektronischer Berichtslösungen in Finance and Operations
+                  items:
+                    - name: Konfigurieren des Framework
+                      items:
+                        - name: Konfigurieren des Rahmens für die elektronische Berichterstellung
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Sichern und Wiederherstellen von ER-Vorlagen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Erstellen von Konfigurationsanbietern und Markieren als aktiv
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Ziele
+                      items:
+                        - name: Zielübersicht
+                          href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurieren von Zielen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Generierte Berichte automatisch validieren
+                      items:
+                        - name: Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
+                          href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Automatisiertes Testen mit elektronischen Berichten
+                          href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Automatisieren von Geschäftsprozessen mithilfe elektronischer Berichtskonfigurationen
+                      items:
+                        - name: 'Konfigurieren elektronischer Berichterstattung, um Daten in Power BI einzubeziehen'
+                          href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Generieren druckbarer Freitextrechnungs-Formulare (FTI)
+                          href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Geschäftsdokumentverwaltung – Übersicht
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER-Framework API
+                  items:
+                    - name: Die Liste der elektronischen Berichterstellungsfunktionen erweitern
+                      href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Änderungen an der Framework-API für elektronische Berichterstellung für Application Update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Bestimmen eines benutzerdefinierten Speicherorts für generierte Dokumente
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Eingebettete Analyselösungen
+              items:
+                - name: Eingebettetes Power BI in Arbeitsbereichen
+                  href: ../fin-ops-core/dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Power BI Embedded-Integration
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-embedded-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: In analytische Arbeitsbereiche eingebettete Berichte anpassen
+                  href: ../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Personalisierungsoptionen mit PowerBI.com
+              items:
+                - name: Verfügbare Dienste und Funktionen über Power BI-Integration
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anheften von Power BI-Berichten an Arbeitsbereichen
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analytische Arbeitsbereiche von PowerBI.com auswählen
+                  href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Tools zum Erstellen und Erweitern von Lösungen
+              items:
+                - name: 'Analyse, aggregierte Messungen und KPI-Modellierung'
+                  href: ../fin-ops-core/dev-itpro/analytics/analytics.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analyseberichte mit Power BI Desktop erstellen
+                  href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Modellierung aggregierter Daten
+                  href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Hinzufügen von Finanzdimensionen zu aggregierenden Messungen
+                  href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
+                  href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Analysearbeitsbereiche und -berichte mit Power BI Embedded schützen
+                  href: ../fin-ops-core/dev-itpro/analytics/secure-analytical-workspaces.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Verwaltungstools für Poweruser
+              items:
+                - name: Power BI-Integration mit Entitätsspeicher
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Lösen von Problemen nach der Entitätsspeicherverwaltung
+                  href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
+                - name: Konfigurieren der Power BI-Integration für Arbeitsbereiche
+                  href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Eigene Datenbanken nutzen
+                  href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Lagerverwaltung
+          items:
+            - name: Bestandsverwaltung – Übersicht
+              href: inventory/inventory-home-page.md
+            - name: Wareneingang
+              items:
+                - name: Wareneingang – Übersicht
+                  href: inventory/arrival-overview.md
+                - name: Übersichtsprofil zum Wareneingang einrichten
+                  href: inventory/tasks/set-up-item-arrival-overview-profile.md
+            - name: Qualitätsmanagement
+              items:
+                - name: Qualitätsmanagement – Übersicht
+                  href: inventory/enable-quality-management.md
+                - name: Qualitätsmanagementprozesse
+                  href: inventory/quality-management-processes.md
+                - name: Qualitätsmangelverwaltung
+                  href: inventory/enable-nonconformance-management.md
+                - name: Voraussetzungen für Verwaltung einrichten
+                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
+                - name: Übereinstimmung erstellen und verarbeiten
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Quarantäneaufträge
+                  href: inventory/quarantine-orders.md
+                - name: Qualitätsprüfungsaufträge einrichten
+                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Qualität der Waren inspizieren
+                  href: inventory/tasks/inspect-quality-goods.md
+                - name: Sperrung von Lagerbestand
+                  href: inventory/inventory-blocking.md
+                - name: Sperrung von Lagerbestand erstellen und verwalten
+                  href: inventory/tasks/create-maintain-inventory-blocking.md
+            - name: Lagerbestandsvorgänge
+              items:
+                - name: Lagererfassungen
+                  href: inventory/inventory-journals.md
+                - name: Lagerplätze für Lagerbestand
+                  href: inventory/inventory-locations.md
+                - name: Bestandsstatus
+                  href: inventory/inventory-statuses.md
+                - name: Ein neues Lagerortlayout erstellen
+                  href: inventory/tasks/create-new-warehouse-layout.md
+                - name: Strichcodetypen verwalten
+                  href: inventory/tasks/maintain-barcode-types.md
+                - name: Überprüfung der Bestandsverfügbarkeit
+                  href: inventory/tasks/check-availability-stock.md
+                - name: Bestandswerte im Lagerort initialisieren
+                  href: inventory/tasks/initialize-stock-levels-warehouse.md
+                - name: Physischen Bestand im Lagerort übertragen
+                  href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
+                - name: Bestandswerte im Lagerort anpassen (grundlegendes Warehousing)
+                  href: inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md
+                - name: Markierungsinventur
+                  href: inventory/inventory-tag-counting.md
+                - name: Bestand an einem Lagerort zählen
+                  href: inventory/tasks/count-inventory-warehouse.md
+                - name: Lagerinventurprozesse definieren
+                  href: inventory/tasks/define-inventory-counting-processes.md
+                - name: Sendung einrichten
+                  href: inventory/consignment.md
+                - name: Besitz des Lagerbestands auf Grundlage des Produktionsbedarfs ändern
+                  href: inventory/tasks/change-ownership-consignment.md
+                - name: Unterlieferungs-Wiederbeschaffungsauftrag erstellen
+                  href: inventory/tasks/create-consignment-replenishment-order.md
+                - name: Lagerbestand mithilfe der Kreditorenkooperation überwachen
+                  href: inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md
+                - name: 'Verfolgen von Artikeln und Rohmaterialien im Bestand, in der Produktion und im Verkauf'
+                  href: inventory/trace-items-raw-materials-inventory-production-sales.md
+                - name: Artikel oder Rohmaterial nachverfolgen
+                  href: inventory/tasks/trace-item-or-raw-material.md
+                - name: Lagercharge zusammenführen
+                  href: inventory/merge-inventory-batches.md
+                - name: Bestandsnachverfolgungsinformationen korrigieren
+                  href: inventory/tasks/correct-inventory-tracking-information.md
+                - name: Seriennummer im Vertriebsprozess registrieren
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Mobiler Arbeitsbereich für Lagerbestand
+                  href: inventory/inventory-on-hand-mobile-workspace.md
+            - name: Ausgangsprozess
+              items:
+                - name: Ausgangsprozess – Übersicht
+                  href: inventory/outbound-process.md
+                - name: Reservieren von Bestandsmengen
+                  href: inventory/reserve-inventory-quantities.md
+                - name: Reservieren derselben Charge für einen Auftrag
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+            - name: Lagersteuerung
+              items:
+                - name: Lagerabschluss
+                  href: cost-management/inventory-close.md
+                - name: Laufender Durchschnittseinstandspreis
+                  href: cost-management/running-average-cost-price.md
+                - name: Regulieren des Einstandswerts für verfügbaren Lagerbestand
+                  href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Nachverfolgen der laufenden Durchschnittskosten pro Lagerungsdimension
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+        - name: Produktprogrammplanung
+          items:
+            - name: Hauptplanung – Startseite
+              href: master-planning/master-planning-home-page.md
+            - name: Hauptpläne
+              items:
+                - name: Hauptpläne – Übersicht
+                  href: master-planning/master-plans.md
+                - name: Hauptpläne einrichten
+                  href: master-planning/master-planning-setup.md
+                - name: Einrichtungs-Assistent für Hauptpläne
+                  href: master-planning/master-planning-setup-wizard.md
+                - name: Deckungseinstellungen
+                  href: master-planning/coverage-settings.md
+                - name: Dispositionsregeln für Artikel definieren
+                  href: master-planning/tasks/define-coverage-rules-items.md
+                - name: Plan mit Einschränkungen erstellen
+                  href: master-planning/tasks/constrained-plan.md
+                - name: Materialplan für Co-Produkte erstellen
+                  href: master-planning/tasks/create-material-plan-co-products.md
+                - name: Bestellvorschläge verwalten
+                  href: master-planning/maintain-planned-orders.md
+                - name: Sicherheitslagerbestandserfüllung für Artikel
+                  href: master-planning/safety-stock-replenishment.md
+                - name: Verzögerungen
+                  href: master-planning/delays.md
+                - name: Verwenden der Ablaufverfolgung für die Auflösung
+                  href: master-planning/trace-explosion.md
+                - name: Aktivitätsmeldungen
+                  href: master-planning/action-messages.md
+                - name: Einen Produktprogrammplanungslauf überwachen
+                  href: master-planning/tasks/monitor-master-planning-run.md
+                - name: Einen Zeitplan für einen Standort erstellen
+                  href: master-planning/tasks/create-schedule-site.md
+                - name: Einen Plan für einen Standort erstellen
+                  href: master-planning/tasks/create-plan-site.md
+                - name: Kalender und Produktprogrammplanung
+                  href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Leistungsverbesserungen der Produktprogrammplanung
+                  href: master-planning/master-planning-performance.md
+                - name: Hauptpläne und Funktion für mehrere Standorte
+                  items:
+                    - name: Hauptpläne und Funktion für mehrere Standorte – Übersicht
+                      href: master-planning/master-plan-multisite-functionality.md
+                    - name: 'Hauptplanung für Standortdeckung, Lagerort obligatorisch'
+                      href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+                    - name: 'Hauptplanung für Standortdeckung, Lagerort nicht obligatorisch'
+                      href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+                    - name: 'Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort obligatorisch'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+                    - name: 'Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort nicht obligatorisch'
+                      href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+                    - name: Die Stücklistenversion bestimmen
+                      href: master-planning/master-plan-bom-version-determined.md
+                    - name: Auflösung einer Stücklistenversion
+                      href: master-planning/master-plan-explosion-bom-version.md
+                - name: Negative und dynamisch negative Tage
+                  href: master-planning/more-about-dynamic-negative-days.md
+                - name: Intercompany-Plan erstellen
+                  href: master-planning/tasks/create-intercompany-plan.md
+                - name: Ausgehenden geplanten Intercompany-Bedarf anzeigen
+                  href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+                - name: Mit internen Lieferkettenkunden zusammenarbeiten
+                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+            - name: Bedarfsplanung
+              items:
+                - name: Bedarfsplanung – Übersicht
+                  href: master-planning/introduction-demand-forecasting.md
+                - name: Einrichten einer Bedarfsplanung
+                  href: master-planning/demand-forecasting-setup.md
+                - name: Verlaufsdaten für Bedarfsplanungen importieren
+                  href: master-planning/import-historical-data.md
+                - name: Eine statistische Grundplanung generieren
+                  href: master-planning/generate-statistical-baseline-forecast.md
+                - name: Manuelle Regulierung der Grundplanung vornehmen
+                  href: master-planning/manual-adjustments-baseline-forecast.md
+                - name: Eine angepasste Planung autorisieren
+                  href: master-planning/authorize-adjusted-forecast.md
+                - name: Planungsgenauigkeit überwachen
+                  href: master-planning/monitor-forecast-accuracy.md
+                - name: 'Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.'
+                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                - name: Planzahlenverrechnungsschlüssel
+                  href: master-planning/reduction-keys.md
+                - name: Erstellen einer Grundplanung
+                  href: master-planning/tasks/create-baseline-forecast.md
+                - name: Manuelles Ändern einer Bedarfsplanung
+                  href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Mobile App
+          items:
+            - name: Startseite der mobilen App
+              href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Mobile Arbeitsbereiche
+              items:
+                - name: Verfügbare mobile Arbeitsbereiche
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anlagenverwaltung
+                  href: asset-management/asset-management-mobile-workspace.md
+                - name: Unternehmensverzeichnis
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kostensteuerung
+                  href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Ausgabenverwaltung
+                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Verfügbarer Lagerbestand
+                  href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rechnungsgenehmigungen
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Mein Team
+                  href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Überblick über mobile Projektanwendungen
+                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Projektzeiteintrag
+                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Projekt-Arbeitszeitnachweis
+                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bestellungsgenehmigung
+                  href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Aufträge
+                  href: sales-marketing/sales-orders-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Kreditor-Kooperation
+                  href: procurement/vendor-collaboration-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Veröffentlichen mobiler Arbeitsbereiche
+              href: ../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Office-Integration
+          items:
+            - name: Office-Integration – Übersicht
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Lernprogramm zur Office-Integration
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Öffnen von Entitätsdaten in Excel und Aktualisieren mithilfe des Excel-Add-Ins
+              href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Verschaffen von „In Excel öffnen”-Erfahrungen
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Hinzufügen von Vorlagen zum Menü „Positionen in Excel öffnen”
+              href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Menü „In Microsoft Office öffnen“ anpassen
+              href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurieren und Senden von E-Mails
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: E-Mail-Umgebungen entwickeln
+              href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Problembehandlung bei der Office-Integration
+              href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Organisationsverwaltung
+          items:
+            - name: Organisationsverwaltung – Startseite
+              href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nummernsequenzen
+              items:
+                - name: Nummernsequenzen – Übersicht
+                  href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Nummernkreise einzeln einrichten
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Einrichten von Nummernsequenzen mit einem Assistenten
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Organisationen und Organisationshierarchien
+              items:
+                - name: Organisationen und Organisationshierarchien – Übersicht
+                  href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Planen Ihrer Organisationshierarchie
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen einer Organisationshierarchie
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen juristischer Personen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen von Organisationseinheiten
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Globales Adressbuch
+              items:
+                - name: Überblick über globale Adressbücher
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Planen für das globale Adressbuch und andere Adressbücher
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurieren des globalen Adressbuchs
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: FAQs zu Adressbüchern
+                  href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurieren von Adressbüchern
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Workflow-System
+              items:
+                - name: Workflowsystem – Übersicht
+                  href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Workflow-Systemarchitektur
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Workflow-Elemente
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Workflow-Aktivitäten
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen von Workflows
+                  items:
+                    - name: Erstellen von Workflows – Übersicht
+                      href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Workflow-Eigenschaften
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von manuellen Aufgaben
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von automatisierten Aufgaben
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Genehmigungsprozessen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Genehmigungsschritten
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von manuellen Entscheidungen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von bedingten Entscheidungen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von parallelen Aktivitäten
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Parallelzweigen
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurieren von Positionsworkflows
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurieren des Batchauftrags für die Workflowmeldungsverarbeitung als kritisch
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Delegieren von Arbeitsaufgaben in einem Workflow
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anzeigen der Workflowhistorie
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurieren des Systems zum Senden workflowbezogener E-Mail-Nachrichten an Benutzer
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Workflowtypen
+                  items:
+                    - name: Einen Workflowtyp erstellen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Prüfliste für Workflowtypen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Workflowkategorie erstellen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Abfrage für einen Workflowtyp erstellen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Einen neuen Workflowtyp erstellen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Eine Workflowdokumentenklasse erstellen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Eine SubmitToWorkflow-Klasse erstellen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Eine Workflow-Dokumentenklasse einem Workflow-Typ zuordnen
+                      href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Bericht zu Workflow-Typen
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Workflow-FAQs
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Warnungen
+              items:
+                - name: Überblick über Warnungen
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Warnregeln erstellen
+                  href: ../fin-ops-core/fin-ops/get-started/create-alerts.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Stapelverarbeitung von Warnungen
+                  href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Client-Warnungsbenachrichtigungen per E-Mail
+                  href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronische Signaturen
+              items:
+                - name: Elektronische Signatur – Übersicht
+                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Einrichten elektronischer Signaturen
+                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Anfragenverwaltung
+              items:
+                - name: Überblick über die Anfragenverwaltung
+                  href: ../fin-ops-core/fin-ops/organization-administration/cases.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'Planen von Anfragensicherheit, ‑prozessen und ‑kategorien'
+                  href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Datensatzvorlagen
+              items:
+                - name: Datensatzvorlagen – Übersicht
+                  href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Erstellen einer Datensatzvorlage
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Datensatzvorlage zum Erstellen eines neuen Datensatzes verwenden
+                  href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurieren der Dokumentverwaltung
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Konfigurieren und Senden von E-Mails
+              href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Datums-/Uhrzeitdaten und Zeitzonen
+              href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Beschaffung
+          items:
+            - name: Beschaffung – Übersicht
+              href: procurement/procurement-sourcing-overview.md
+            - name: Beschaffungs-Workflow
+              href: procurement/procurement-sourcing-workflows.md
+            - name: Beschaffungskataloge
+              items:
+                - name: Beschaffungskataloge – Übersicht
+                  href: procurement/procurement-catalogs.md
+                - name: Beschaffungskatalog erstellen
+                  href: procurement/tasks/create-procurement-catalog.md
+                - name: Beschaffungskategoriehierarchie einrichten
+                  href: procurement/tasks/set-up-procurement-category-hierarchy.md
+            - name: Bestellanforderungen
+              items:
+                - name: Bestellanforderung – Übersicht
+                  href: procurement/purchase-requisitions-overview.md
+                - name: Bestellanforderungs-Workflow
+                  href: procurement/purchase-requisitions-workflow.md
+            - name: Angebotsanforderungen
+              items:
+                - name: Angebotsanforderungen – Übersicht
+                  href: procurement/request-quotations.md
+                - name: Eine Angebotsanforderung erstellen
+                  href: procurement/tasks/create-request-quotation.md
+                - name: 'Eine Anforderung erstellen, die eine Angebotsanforderung verwendet'
+                  href: procurement/tasks/create-requisition-uses-rfq.md
+                - name: Eine Bewertungsmethode für Angebotsanforderungen erstellen
+                  href: procurement/tasks/create-scoring-method-rfqs.md
+                - name: Ausschreibungstypen und Bewertungskriterien für Angebotsanforderungen erstellen
+                  href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
+                  href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
+            - name: Bestellungen
+              items:
+                - name: Übersicht über Bestellungen
+                  href: procurement/purchase-order-overview.md
+                - name: Bestellungen genehmigen und bestätigen
+                  href: procurement/purchase-order-approval-confirmation.md
+                - name: Mobiler Arbeitsbereich für Bestellungsbestätigung
+                  href: procurement/purchase-order-mobile-workspace.md
+                - name: Den Warenzugang auf der Bestellung erfassen
+                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+            - name: Bestellungserstellung
+              items:
+                - name: Bestellungen manuell erstellen
+                  href: procurement/purchase-order-creation.md
+                - name: Eine Bestellung erstellen
+                  href: procurement/tasks/create-purchase-order.md
+                - name: Eine Bestellung mit einem Lieferzeitplan erstellen
+                  href: procurement/tasks/create-purchase-order-delivery-schedule.md
+                - name: Eine Bestellung für einen einmaligen Lieferanten erstellen
+                  href: procurement/tasks/create-purchase-order-one-time-supplier.md
+                - name: 'Einen Freigabeauftrag für den Einkauf erstellen, wenn Sie die Bestellung erstellen'
+                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
+                - name: Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen
+                  href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
+                - name: Einkaufsrücklieferung erstellen
+                  href: procurement/tasks/create-purchase-return-order.md
+                - name: Projektbestellung erstellen
+                  href: procurement/tasks/create-project-purchase-order.md
+                - name: Eine wiederholte Bestellung erstellen
+                  href: procurement/tasks/create-repeat-purchase-order.md
+                - name: Anforderung für Verbrauch erstellen
+                  href: procurement/tasks/create-requisition-consumption.md
+            - name: 'Preise, Rabatte und Rückvergütungen'
+              items:
+                - name: Einkaufsverträge
+                  href: procurement/purchase-agreements.md
+                - name: Kaufvertrag erstellen
+                  href: procurement/tasks/create-purchase-agreement.md
+                - name: Lieferantenrückvergütungen
+                  href: procurement/vendor-rebates.md
+            - name: Einkaufsrichtlinien
+              items:
+                - name: Einkaufsrichtlinien – Übersicht
+                  href: procurement/purchase-policies.md
+                - name: Einkaufsrichtlinien erstellen
+                  href: procurement/tasks/create-purchasing-policies.md
+                - name: Richtlinien für Beschaffungskategoriehierarchien einrichten
+                  href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+            - name: Produktzugänge und Rechnungsstellung
+              items:
+                - name: Produkteingang für Bestellungen
+                  href: procurement/product-receipt-against-purchase-orders.md
+                - name: Überblick über Kreditorenrechnungen
+                  href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Kreditorenverwaltung und Zusammenarbeit
+              items:
+                - name: Kreditorenzusammenarbeit einrichten und verwalten
+                  href: procurement/set-up-maintain-vendor-collaboration.md
+                - name: Benutzer für Kreditorenzusammenarbeit verwalten
+                  href: procurement/manage-vendor-collaboration-users.md
+                - name: Kreditorenkonten einrichten
+                  href: procurement/set-up-vendor-accounts.md
+                - name: Ein Kreditorenkonto erstellen
+                  href: procurement/tasks/create-vendor-account.md
+                - name: Ein Kreditorenbankkonto erstellen
+                  href: procurement/tasks/create-vendor-bank-account.md
+                - name: Kreditoren-Buchungsprofile
+                  href: ../finance/accounts-payable/vendor-posting-profiles.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurationen für Kreditorenanforderungen
+                  href: procurement/vendor-request-configurations.md
+                - name: Kreditoren-Onboarding
+                  href: procurement/vendor-onboarding.md
+                - name: Kreditorenzusammenarbeit mit externen Kreditoren
+                  href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Kreditorenzusammenarbeit mit Debitoren
+                  href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Lieferantenkataloge importieren
+                  href: procurement/vendor-catalogs-import.md
+                - name: Externen Katalog für PunchOut eProcurement einrichten
+                  href: procurement/set-up-external-catalog-for-punchout.md
+                - name: Externe Kataloge für PunchOut eProcurement verwenden
+                  href: procurement/use-external-catalogs-for-punchout.md
+                - name: Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
+                  href: procurement/vendor-collaboration-mobile-workspace.md
+                - name: Kreditoren für spezifische Beschaffungskategorien genehmigen
+                  href: procurement/tasks/approve-vendors-specific-procurement-categories.md
+                - name: Händler für bestimmte Produkte genehmigen
+                  href: procurement/tasks/approve-vendors-specific-products.md
+                - name: Nach Kreditoren suchen
+                  href: procurement/tasks/search-vendors.md
+                - name: Berechtigungen zum Bestellen von Produkten im Auftrag einer anderen Person einrichten
+                  href: procurement/tasks/set-up-permissions-ordering-products.md
+            - name: Beschaffungsaufgaben
+              items:
+                - name: Projektressourceninformationen einrichten
+                  href: procurement/tasks/set-up-project-resource-information.md
+                - name: Projektbudgets übermitteln und genehmigen
+                  href: procurement/tasks/submit-approve-project-budget.md
+                - name: Überarbeitungen des Projektbudgets übermitteln und genehmigen
+                  href: procurement/tasks/submit-approve-project-budget-revision.md
+        - name: Produktinformationsverwaltung
+          items:
+            - name: Produktinformationsübersicht
+              href: pim/product-information.md
+            - name: Produktinformationen
+              items:
+                - name: Produktbezeichner
+                  href: pim/product-identifiers.md
+                - name: Eine Hierarchie zur Produktklassifizierung erstellen
+                  href: pim/tasks/create-hierarchy-product-classification.md
+                - name: Produkt mithilfe der Kategoriehierarchien klassifizieren
+                  href: pim/tasks/classify-product-category-hierarchies.md
+                - name: Produktnummernbezeichnung
+                  href: pim/product-variant-identification-nomenclature.md
+                - name: Produktnummernbezeichnung für vordefinierte Produktvarianten erstellen
+                  href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
+                - name: Produktnummernbezeichnung für konfigurierte Produktvarianten erstellen
+                  href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
+                - name: Neues Produkt erstellen
+                  href: pim/tasks/create-new-product.md
+                - name: Produktmaster erstellen
+                  href: pim/tasks/create-product-master.md
+                - name: Vordefinierte Produktvarianten erstellen
+                  href: pim/tasks/create-predefined-product-variants.md
+                - name: Maßeinheitsumrechnungen für Produktvarianten
+                  href: pim/uom-conversion-per-product-variant.md
+                - name: Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen
+                  href: pim/tasks/create-released-product-single-company.md
+                - name: Status des Produktlebenszyklus
+                  items:
+                    - name: Status des Produktlebenszyklus – Übersicht
+                      href: pim/product-lifecycle.md
+                    - name: Neuen Status für Produktlebenszyklus erstellen
+                      href: pim/tasks/new-product-lifecycle-state.md
+                    - name: Status für Standardproduktlebenszyklus erstellen
+                      href: pim/tasks/default-product-lifecycle-state.md
+                    - name: Einem veröffentlichten Produktmaster einen Produktlebenszyklus-Status zuweisen
+                      href: pim/tasks/product-lifecycle-state-released-product-master.md
+                    - name: Einem veröffentlichten Produkt einen Produktlebenszyklus-Status zuweisen
+                      href: pim/tasks/product-lifecycle-state-released-product.md
+                    - name: Suchen von veralteten Produktvarianten
+                      href: pim/tasks/obsolete-product-variants.md
+                    - name: Produkte aus der Masterplanung ausschließen
+                      href: pim/tasks/exclude-products-master-planning.md
+                - name: Strichcode für ein Produkt erstellen
+                  href: pim/tasks/create-bar-code-product.md
+                - name: GTIN-Code für ein Produkt eingeben
+                  href: pim/tasks/enter-gtin-code-product.md
+                - name: Chargenattribute für ein Produkt erstellen
+                  href: pim/tasks/create-batch-attributes-product.md
+                - name: Ein Bild zu einem Produkt hinzufügen
+                  href: pim/tasks/add-image-product.md
+                - name: Übersetzung der Produktinformationen – FAQ
+                  href: pim/translations-product-related-information.md
+                - name: Bei Auftragserfassung nach Produkt suchen
+                  href: pim/search-products-product-variants.md
+                - name: Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
+                  href: production-control/default-order-settings.md
+                - name: Stücklisten und Formeln
+                  href: production-control/bill-of-material-bom.md
+                - name: Den Stücklistendesigner verwenden
+                  href: production-control/bom-designer-functionality.md
+                - name: Den Formeldesigner verwenden
+                  href: production-control/formula-designer.md
+                - name: Verschiedene Produkte zu Bestellungen unter Verwendung der verschiedenen Gewichte hinzufügen
+                  href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
+                - name: Auftrag für ein konfigurierbares Produkt erstellen
+                  href: pim/tasks/create-sales-order-configurable-product.md
+                - name: Verkaufspreisauswahlkriterien erstellen
+                  href: pim/tasks/create-sales-price-selection-criteria.md
+                - name: Eine Attribut-basierte Preiskalkulation für konfigurierbare Produkte einrichten
+                  href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
+                - name: Herstellkostenkalkulationen
+                  href: cost-management/bom-calculations.md
+            - name: Produktkonfiguration
+              items:
+                - name: Produktkonfiguration – Übersicht
+                  href: pim/build-product-configuration-model.md
+                - name: Dimensionsbasierte Konfiguration erstellen
+                  items:
+                    - name: Dimensionsbasierte Produktkonfigurationen – Übersicht
+                      href: pim/dimension-based-product-configuration.md
+                    - name: Produktdimension
+                      href: pim/product-dimensions.md
+                    - name: Dimensionsbasierten Produktmaster erstellen
+                      href: pim/tasks/create-dimension-based-product-master.md
+                    - name: Dimensionsbasierten Produktmaster veröffentlichen
+                      href: pim/tasks/release-dimension-based-product-master.md
+                    - name: Grundeinrichtung eines veröffentlichten Produktmasters abschließen
+                      href: pim/tasks/complete-basic-setup-released-product-master.md
+                    - name: Variantengruppen definieren
+                      href: pim/tasks/define-configuration-groups.md
+                    - name: Eine Stückliste für einen dimensionsbasierten Produktmaster erstellen
+                      href: pim/tasks/create-bill-materials-dimension-based-product-master.md
+                    - name: Variantenarbeitspläne definieren
+                      href: pim/tasks/define-configuration-route.md
+                    - name: Variantenregeln erstellen
+                      href: pim/tasks/create-configuration-rules.md
+                    - name: Dimensionsbasierte Konfigurationen erstellen
+                      href: pim/tasks/create-dimension-based-configurations.md
+                - name: Einschränkungsbasierte Konfiguration erstellen
+                  items:
+                    - name: Produktkonfigurationsmodell einrichten
+                      href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Berechnung für Produktkonfigurationsmodell – FAQ
+                      href: pim/calculate-product-configuration-models.md
+                    - name: Konfigurationsregel
+                      href: pim/configuration-rules.md
+                    - name: Ausdrucks- und Tabelleneinschränkung
+                      href: pim/expression-constraints-table-constraints-product-configuration-models.md
+                    - name: Solver-Strategie für Produktkonfiguration
+                      href: pim/solver-strategy-product-configuration.md
+                    - name: Produktkonfiguration wiederverwenden
+                      href: pim/reuse-product-configurations.md
+                    - name: Vom System und Benutzer definierte Tabelleneinschränkung
+                      href: pim/system-defined-user-defined-table-constraints.md
+                    - name: Produktmodellkomponenten erstellen
+                      href: pim/tasks/create-product-model-components.md
+                    - name: Produktkonfigurationsmodell erstellen
+                      href: pim/tasks/create-product-configuration-model.md
+                    - name: Einem Produktkonfigurationsmodell eine Ausdruckseinschränkung hinzufügen
+                      href: pim/tasks/add-expression-constraint-product-configuration-model.md
+                    - name: Berechnung zu einem Produktkonfigurationsmodell hinzufügen
+                      href: pim/tasks/add-calculation-product-configuration-model.md
+                    - name: Stückliste für ein Produktkonfigurationsmodell verwalten
+                      href: pim/tasks/maintain-bom-product-configuration-model.md
+                    - name: Arbeitsplan für ein Produktmodell verwalten
+                      href: pim/tasks/maintain-route-product-model.md
+                    - name: Ein Produktkonfigurationsmodell genehmigen
+                      href: pim/tasks/approve-product-configuration-model.md
+                    - name: Daten für Produktmodelle übertragen
+                      href: pim/tasks/transfer-data-product-models.md
+        - name: Produktionssteuerung
+          items:
+            - name: Produktionsprozess – Übersicht
+              href: production-control/production-process-overview.md
+            - name: 'Mischplanung: Diskrete Kombination von diskreten Prozessen und Lean-Sourcing'
+              href: production-control/mixed-mode-plan.md
+            - name: Fremdarbeit in Produktion verwalten
+              href: production-control/manage-subcontract-work-production.md
+            - name: Einzelfertigung
+              items:
+                - name: Produktionsmasterdaten verwalten
+                  items:
+                    - name: Anforderungen für Produktionseinstellungen
+                      href: production-control/production-set-up-requirements.md
+                    - name: Stücklisten und Formeln
+                      href: production-control/bill-of-material-bom.md
+                    - name: Funktionen des Stücklistendesigners
+                      href: production-control/bom-designer-functionality.md
+                    - name: Phantomartikel
+                      href: production-control/phantom-items.md
+                    - name: Herstellkostenkalkulationen
+                      href: cost-management/bom-calculations.md
+                    - name: Maßeinheit verwalten
+                      href: pim/tasks/manage-unit-measure.md
+                    - name: Produktionsparameter für Fertigungssteuerung
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Betriebliche Ressourcen
+                      href: production-control/operations-resources.md
+                    - name: Eine betriebliche Ressource erstellen
+                      href: production-control/tasks/create-operations-resource.md
+                    - name: Ressourcenfähigkeiten
+                      href: production-control/resource-capabilities.md
+                    - name: Ressourcenfähigkeiten definieren
+                      href: production-control/tasks/define-resource-capabilities.md
+                    - name: Arbeitspläne und Arbeitsgänge
+                      href: production-control/routes-operations.md
+                    - name: Lagerortarbeitsrichtlinien
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Arbeitszeit-Planungseigenschaften erstellen
+                      href: production-control/tasks/create-working-time-scheduling-properties.md
+                    - name: Schichtmodelle erstellen
+                      href: production-control/tasks/create-working-time-templates.md
+                    - name: Ressourcengruppe für einzelne Fertigung definieren
+                      href: production-control/tasks/define-discrete-manufacturing-resource-group.md
+                    - name: Eine vorhandene Aktivität zu einer Produktionsflussversion hinzufügen
+                      href: production-control/tasks/add-existing-activity-production-flow-version.md
+                    - name: Eine Produktionsflussversion deaktivieren
+                      href: production-control/tasks/deactivate-production-flow-version.md
+                    - name: Ablaufdatum für eine Produktionsflussversion definieren
+                      href: production-control/tasks/define-expiry-date-production-flow-version.md
+                    - name: Produktionsflussmodelle definieren
+                      href: production-control/tasks/define-production-flow-models.md
+                - name: Produktionsarbeitsgänge planen
+                  items:
+                    - name: Grobterminierung
+                      href: production-control/operations-scheduling.md
+                    - name: Feinterminierung
+                      href: production-control/job-scheduling.md
+                    - name: Verwenden eines Gantt-Diagramms für die Feinterminierung
+                      href: production-control/visual-scheduling-production.md
+                    - name: Grobterminierungsoptionen
+                      href: production-control/operation-scheduling-options.md
+                    - name: Einen Produktionsauftrag mit Vorgängen und Feinterminierung planen
+                      href: production-control/tasks/schedule-production-order-operations-job-scheduling.md
+                - name: Produktionseinzelvorgänge betreiben
+                  items:
+                    - name: Produktionsauftragslebenszyklus verwalten
+                      items:
+                        - name: Produktionsauftragslebenszyklus verwalten – Übersicht
+                          href: production-control/create-production-orders.md
+                        - name: Produktionsauftrag erstellen
+                          href: production-control/tasks/create-production-order.md
+                        - name: Produktionsauftrag vorkalkulieren
+                          href: production-control/tasks/estimate-production-order.md
+                        - name: Einen Produktionsauftrag planen
+                          href: production-control/tasks/schedule-production-order.md
+                        - name: Produktionsauftrag freigeben
+                          href: production-control/tasks/release-production-order.md
+                        - name: Einen Produktionsauftrag starten
+                          href: production-control/tasks/start-production-order.md
+                        - name: Einen Produktionsauftrag als abgeschlossen melden
+                          href: production-control/tasks/report-production-order-finished.md
+                        - name: Produktionsauftrag beenden
+                          href: production-control/tasks/end-production-order.md
+                    - name: Freigeben von Produktionsaufträgen
+                      href: production-control/release-production-orders.md
+                    - name: Fertigmeldung für Produktionsaufträge
+                      href: production-control/report-production-orders-as-finished.md
+                    - name: Als abgeschlossen an einen per Ladungsträger gesteuerten Lagerplatz melden
+                      href: production-control/report-finished-job-device.md
+                    - name: Den Produktionsauftragsstatus zurücksetzen
+                      href: production-control/reverse-production-order-status.md
+                    - name: Sichtbarkeit in Materialausnahmen
+                      href: production-control/improved-visibility-into-material-exceptions.md
+                    - name: Stückliste und Formelpositionen für den Lagerort freigeben
+                      href: production-control/releasing-bom-and-formula-lines-to-warehouse.md
+                    - name: Materialverbrauch mithilfe eines mobilen Geräts registrieren
+                      href: production-control/register-material-consumption-hand-held-device.md
+                    - name: Rohmaterialverbrauch über Stücklisten-Bezugsprinzip steuern
+                      href: production-control/flushing-principles.md
+                    - name: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Standort für den Produktions-Warenabgang für fertige Waren festlegen
+                      href: production-control/production-output-location.md
+                    - name: Fertigmeldung für Stücklisten
+                      href: production-control/report-boms-as-finished.md
+                    - name: Einem von einem Ladungsträger gesteuerten Lagerplatz als abgeschlossen melden
+                      href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
+                    - name: Status auf einem mobilen Einzelvorgangsgerät melden
+                      href: production-control/tasks/report-progress-mobile-job-device.md
+                    - name: 'Sicherheitsbestandserfassung verwenden, um die Mindestdeckung zu aktualisieren'
+                      href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
+                    - name: Materialersatz in der Fertigung
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrierung für Fertigungssteuerung
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Produktionsrückmeldung
+                      href: production-control/production-feedback.md
+                    - name: Lohnprozess für Zeit und Anwesenheit aktivieren
+                      href: production-control/tasks/payroll-process-time-attendance.md
+                    - name: 'Eine Arbeitskraft konfigurieren, die das mobile Einzelvorgangsgerät verwendet'
+                      href: production-control/tasks/worker-mobile-job-device.md
+                - name: Finanzdaten in der Produktion verwalten
+                  items:
+                    - name: Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Materialentnahme berechnen
+                      href: production-control/consumption.md
+                    - name: Produktionsbuchungen
+                      href: cost-management/production-posting.md
+                - name: Zeit- und Anwesenheitserfassung
+                  items:
+                    - name: Zeit- und Anwesenheitserfassung – Übersicht
+                      href: production-control/time-attendance-registrations.md
+                    - name: Lohn auf Basis von Erfassungen
+                      href: production-control/pay-based-on-registrations.md
+                    - name: Abwesenheitserfassung in Zeit und Anwesenheit
+                      href: production-control/absence-registration-in-time-and-attendance.md
+                    - name: Gleitzeitgruppen
+                      href: production-control/time-attendance-flex-groups.md
+            - name: Lean Manufacturing
+              items:
+                - name: Übersicht über Lean Manufacturing
+                  href: production-control/lean-manufacturing-overview.md
+                - name: Aktivitätsbasierte Fremdarbeit
+                  href: production-control/activity-based-subcontracting.md
+                - name: Produktionsmasterdaten verwalten
+                  items:
+                    - name: Eine Lean Organization modellieren
+                      href: production-control/lean-manufacturing-modeling-lean-organization.md
+                    - name: Betriebliche Ressourcen
+                      href: production-control/operations-resources.md
+                    - name: Lean Manufacturing-Arbeitsgruppe definieren
+                      href: production-control/tasks/define-lean-manufacturing-work-cells.md
+                    - name: Kanban-Planungsgruppen definieren
+                      href: production-control/tasks/define-lean-schedule-groups.md
+                - name: Kanban-Einzelvorgänge planen
+                  items:
+                    - name: Visuelle Zeitplanung für Lean Manufacturing
+                      href: production-control/visual-scheduling-lean-manufacturing.md
+                    - name: Kanban-Feinterminierung für Lean Manufacturing
+                      href: production-control/lean-manufacturing-kanban-job-scheduling.md
+                    - name: Feinterminierung
+                      href: production-control/job-scheduling.md
+                - name: Kanban-Einzelvorgänge betreiben
+                  items:
+                    - name: Unterstützung der Kanban-Übertragungskarte für Strichcodescanner
+                      href: production-control/kanban-transfer-board-support-barcode-scanner.md
+                    - name: Produktionsrückmeldung
+                      href: production-control/production-feedback.md
+                    - name: Eine Produktionsflussversion erstellen
+                      href: production-control/tasks/create-production-flow-version.md
+                    - name: Verarbeitungsaktivitäten für Lean Manufacturing erstellen
+                      href: production-control/tasks/create-process-activities-lean-manufacturing.md
+                    - name: Übertragungsaktivitäten für Lean Manufacturing erstellen
+                      href: production-control/tasks/create-transfer-activities-lean-manufacturing.md
+                    - name: Produktionsfluss und Version überprüfen
+                      href: production-control/tasks/validate-production-flow-version.md
+                    - name: Eine Produktionsflussversion aktivieren
+                      href: production-control/tasks/activate-production-flow-version.md
+                    - name: 'Aktivitätsrelation erstellen: Nachfolger'
+                      href: production-control/tasks/create-activity-relation-successor.md
+                    - name: Eine vorherige Aktivität zu einer Produktionsflussaktivität hinzufügen
+                      href: production-control/tasks/add-predecessor-production-flow-activity.md
+                    - name: Einen Wertstrom erstellen
+                      href: production-control/tasks/create-value-stream.md
+                    - name: Schlanker Bedarfsverursacher aus Aufträgen
+                      href: production-control/tasks/lean-pegging-sales-orders.md
+                    - name: Eine Fremdarbeitszelle für Lean Manufacturing erstellen
+                      href: production-control/tasks/create-subcontracted-work-cell-lean-manufacturing.md
+                    - name: Kanban-Mengen-Berechnungsrichtlinie zu einer Kanban-Regel hinzufügen
+                      href: production-control/tasks/add-kanban-quantity-calculation-policy-kanban-rule.md
+                    - name: Kanban-Mengenvorschläge berechnen
+                      href: production-control/tasks/calculate-kanban-quantity-suggestions.md
+                    - name: Kanban-Regeln für einen Prozesseinzelvorgang ändern
+                      href: production-control/tasks/change-kanban-rules-process-job.md
+                    - name: Kanban-Regel für ein Stücklistenpositionsereignis erstellen
+                      href: production-control/tasks/create-bom-line-event-kanban-rule.md
+                    - name: Kanban-Regel für feste Mengen für die Fertigung erstellen
+                      href: production-control/tasks/create-fixed-quantity-kanban-rule-manufacturing.md
+                    - name: Eine Kanban-Regel mithilfe eines Kanban-Positionsereignisses erstellen
+                      href: production-control/tasks/create-kanban-rule-kanban-line-event.md
+                    - name: Eine Kanban-Regel mithilfe eines Mindestbestandsereignisses erstellen
+                      href: production-control/tasks/create-kanban-rule-minimum-stock-event.md
+                    - name: Eine Kanban-Regel für mehrere Aktivitäten erstellen
+                      href: production-control/tasks/create-kanban-rule-multiple-activities.md
+                    - name: Neue Kanban-Regel durch Duplizieren einer vorhandenen Kanban-Regel erstellen
+                      href: production-control/tasks/create-new-kanban-rule-duplicating-existing-kanban-rule.md
+                    - name: Ersatz-Kanban-Regel erstellen
+                      href: production-control/tasks/create-replacement-kanban-rule.md
+                    - name: Kanban-Regel für ein Verkaufsereignis erstellen
+                      href: production-control/tasks/create-sales-event-kanban-rule.md
+                    - name: Neue Entnahme-Kanban-Regel erstellen
+                      href: production-control/tasks/create-withdrawal-kanban-rule.md
+                    - name: Kanban-Bearbeitungseinzelvorgänge durchführen
+                      href: production-control/tasks/execute-kanban-process-jobs.md
+                    - name: Geplante Kanban-Einzelvorgänge verschieben
+                      href: production-control/tasks/move-scheduled-kanban-jobs.md
+                    - name: 'Einen Kanban-Bearbeitungseinzelvorgang vorbereiten, wenn Materialien für die Arbeitsgruppe verfügbar sind'
+                      href: production-control/tasks/prepare-kanban-job-materials.md
+                    - name: 'Einen Kanban-Bearbeitungseinzelvorgang vorbereiten, wenn keine Materialien für die Arbeitsgruppe verfügbar sind'
+                      href: production-control/tasks/prepare-process-kanban-job-materials-not-available.md
+                    - name: Einen Kanban-Einzelvorgang aus der Planung entfernen
+                      href: production-control/tasks/remove-kanban-job-schedule.md
+                    - name: Kanban-Einzelvorgangsstatus zurücksetzen
+                      href: production-control/tasks/revert-kanban-job-status.md
+                    - name: Kanban-Einzelvorgänge planen
+                      href: production-control/tasks/schedule-kanban-jobs.md
+                    - name: Übergangsmaterialien mit Kanban-Einzelvorgängen
+                      href: production-control/tasks/transfer-materials-kanban-jobs.md
+                    - name: Kanban-Status aktualisieren
+                      href: production-control/tasks/update-kanban-status.md
+            - name: Prozessfertigung
+              items:
+                - name: Produktionsmasterdaten verwalten
+                  items:
+                    - name: Stücklisten und Formeln
+                      href: production-control/bill-of-material-bom.md
+                    - name: Formeln und Formelversionen
+                      href: production-control/formulas-versions.md
+                    - name: Betriebliche Ressourcen
+                      href: production-control/operations-resources.md
+                    - name: Ressourcenfähigkeiten
+                      href: production-control/resource-capabilities.md
+                    - name: Chargenattribute
+                      href: production-control/batch-attributes.md
+                    - name: Chargenausgleich
+                      href: production-control/batch-balancing.md
+                    - name: Artikelgewichtsproduktverarbeitung
+                      href: warehousing/catch-weight-processing.md
+                    - name: Eine Formel kopieren
+                      href: production-control/tasks/copy-formula.md
+                    - name: Kuppelprodukte aus einer vorhandenen Formel kopieren
+                      href: production-control/tasks/copy-co-products-existing-formula-version.md
+                    - name: Eine Formel durch Kopieren aus einer vorhandenen Formel erstellen
+                      href: production-control/tasks/create-formula-copying-existing-formula.md
+                    - name: Produktionsparameter für Fertigungssteuerung
+                      href: production-control/production-parameters-manufacturing-execution.md
+                    - name: Anforderungen für Produktionseinstellungen
+                      href: production-control/production-set-up-requirements.md
+                - name: Produktionsarbeitsgänge planen
+                  items:
+                    - name: Grobterminierung
+                      href: production-control/operations-scheduling.md
+                    - name: Grobterminierungsoptionen
+                      href: production-control/operation-scheduling-options.md
+                    - name: Feinterminierung
+                      href: production-control/job-scheduling.md
+                - name: Produktionseinzelvorgänge betreiben
+                  items:
+                    - name: Konsolidierte Chargenaufträge
+                      href: production-control/consolidated-batch-orders.md
+                    - name: Chargenauftragslebenszyklus von der Erstellung bis zum Start
+                      href: production-control/tasks/batch-order-lifecycle-start.md
+                    - name: Reihenfolge der Produktions-Einzelvorgänge für Prozessfertigung
+                      href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
+                    - name: Materialersatz in der Fertigung
+                      href: production-control/substitute-items-bom-lines.md
+                    - name: Registrierung für Fertigungssteuerung
+                      href: production-control/registration-manufacturing-execution.md
+                    - name: Produktionsrückmeldung
+                      href: production-control/production-feedback.md
+                    - name: Zeit- und Anwesenheitserfassung
+                      href: production-control/time-attendance-registrations.md
+                - name: Finanzdaten in der Produktion verwalten
+                  items:
+                    - name: Zeit zu Einzelvorgängen in einer Stapelverarbeitung zuteilen
+                      href: production-control/allocate-time-jobs-job-bundle.md
+                    - name: Materialentnahme berechnen
+                      href: production-control/consumption.md
+                    - name: Produktionsbuchungen
+                      href: cost-management/production-posting.md
+        - name: Vertrieb und Marketing
+          items:
+            - name: Vertrieb und Marketing – Übersicht
+              href: sales-marketing/overview-sales-marketing.md
+            - name: Aufträge
+              items:
+                - name: Lieferterminzusage
+                  href: sales-marketing/delivery-dates-available-promise-calculations.md
+                - name: Fristen für Auftragserfassung
+                  href: sales-marketing/order-entry-deadlines.md
+                - name: Alternative Lieferung
+                  href: sales-marketing/delivery-alternatives.md
+                - name: Direktlieferungen
+                  href: sales-marketing/direct-deliveries.md
+                - name: Lieferzeitpläne
+                  href: sales-marketing/delivery-schedules.md
+                - name: Lieferzeitplan erstellen
+                  href: sales-marketing/tasks/create-delivery-schedule.md
+                - name: Seriennummern im Vertriebsprozess
+                  href: sales-marketing/register-serial-numbers-sales-process.md
+                - name: Reservierungen von gleicher Charge
+                  href: sales-marketing/reserve-same-batch-sales-order.md
+                - name: Mobiler Arbeitsbereich für Aufträge
+                  href: sales-marketing/sales-orders-mobile-workspace.md
+                - name: Aufträge als Direktlieferungen versenden
+                  href: sales-marketing/tasks/ship-orders-direct-deliveries.md
+                - name: Aufträge ohne Lagerort liefern
+                  href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
+                - name: Erstellen einer Bestellung auf Grundlage eines Auftrags
+                  href: sales-marketing/tasks/create-purchase-order-sales-order.md
+                - name: Aufträge erstellen
+                  href: sales-marketing/tasks/create-sales-orders.md
+                - name: Auftragssperren verwalten
+                  href: sales-marketing/tasks/manage-order-holds.md
+                - name: Aufträge bestätigen
+                  href: sales-marketing/tasks/confirm-sales-orders.md
+            - name: Kaufverträge
+              items:
+                - name: Kaufverträge – Übersicht
+                  href: sales-marketing/sales-agreements.md
+                - name: Kaufverträge eingeben
+                  href: sales-marketing/tasks/enter-sales-agreements.md
+                - name: Kaufverträge erfüllen
+                  href: sales-marketing/tasks/fulfill-sales-agreements.md
+                - name: Kundenrückvergütungen generieren und verarbeiten
+                  href: sales-marketing/tasks/process-customer-rebates.md
+                - name: Zahlungsnachlässe verarbeiten
+                  href: sales-marketing/tasks/process-rebates-payment.md
+                - name: Anwendbare Preise und Rabatte nachschlagen
+                  href: sales-marketing/tasks/look-up-applicable-prices-discounts.md
+            - name: Verkaufsangebote
+              items:
+                - name: Preissimulation
+                  href: sales-marketing/price-simulation.md
+                - name: Massenerstellung von Verkaufsangeboten
+                  href: sales-marketing/tasks/mass-sales-quotations.md
+                - name: Verkaufsangebote erstellen und bearbeiten
+                  href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Retouren
+              items:
+                - name: Verkaufsretouren
+                  href: warehousing/sales-returns.md
+            - name: Provision
+              items:
+                - name: Umsatzprovisionen registrieren
+                  href: sales-marketing/tasks/register-sales-commissions.md
+                - name: Vertriebsprovisionsregeln festlegen
+                  href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Handelsvergütung
+              href: sales-marketing/trade-allowance.md
+            - name: Eine neue Handelsvereinbarung erstellen
+              href: sales-marketing/tasks/create-new-trade-agreement.md
+        - name: Serviceverwaltung
+          items:
+            - name: Servicemanagement – Übersicht
+              href: service-management/service-management-home-page.md
+            - name: Kundendienst einrichten
+              items:
+                - name: Servicevereinbarungen einrichten
+                  items:
+                    - name: Servicevereinbarungen – Übersicht
+                      href: service-management/service-agreement-groups.md
+                    - name: Erstellen von Servicevereinbarungen
+                      href: service-management/create-service-agreements.md
+                    - name: Serviceintervalle
+                      href: service-management/service-intervals.md
+                    - name: Einrichten von Serviceintervallen
+                      href: service-management/set-up-service-intervals.md
+                    - name: Zeitfenster
+                      href: service-management/time-windows.md
+                    - name: Erstellen von Zeitfenstern
+                      href: service-management/create-time-windows.md
+                    - name: Erstellen einer Servicevorlagengruppe
+                      href: service-management/create-service-template-group.md
+                - name: Serviceaufgaben einrichten
+                  items:
+                    - name: Serviceaufgaben – Übersicht
+                      href: service-management/service-tasks.md
+                    - name: Erstellen von Serviceaufgabenbeziehungen
+                      href: service-management/create-service-task-relations.md
+                - name: Serviceobjekte einrichten
+                  items:
+                    - name: Serviceobjekte – Übersicht
+                      href: service-management/service-objects.md
+                    - name: Erstellen von Serviceobjekten
+                      href: service-management/create-service-task-relations.md
+                    - name: Zuordnen von Lagerartikeln zu Serviceobjekten
+                      href: service-management/attach-inventory-items-service-objects.md
+                    - name: Serviceobjektgruppen
+                      href: service-management/service-object-groups.md
+                    - name: Einrichten einer Vorlage für Objekte am Kundenstandort
+                      href: service-management/set-up-template-to-represent-objects-at-customer-site.md
+                    - name: Serviceobjektbeziehungen
+                      href: service-management/service-object-relations.md
+                    - name: Erstellen von Serviceobjektbeziehungen
+                      href: service-management/create-service-object-relations.md
+                    - name: Vorlagenstücklisten
+                      href: service-management/template-boms.md
+                    - name: Erstellen einer Vorlagenstückliste
+                      href: service-management/create-template-bom.md
+                    - name: Zuordnen von Vorlagen zu Serviceobjekten
+                      href: service-management/attach-templates-service-objects.md
+                - name: Definieren von Ursachencodes für Serviceaufträge
+                  items:
+                    - name: Ursachencodes für Serviceaufträge
+                      href: service-management/reason-codes-service-orders.md
+                    - name: Serviceauftragsphasen
+                      href: service-management/service-order-stages.md
+                    - name: Einrichten von Serviceauftragsphasen
+                      href: service-management/set-up-service-order-stages.md
+                    - name: Erstellen von Ursachencodes
+                      href: service-management/create-reason-codes.md
+                - name: Servicevereinbarungen und Abonnements einrichten
+                  items:
+                    - name: Vereinbarungen zum Servicelevel – Übersicht
+                      href: service-management/service-level-agreements.md
+                    - name: Abonnementverkaufspreise
+                      href: service-management/subscription-sales-prices.md
+                    - name: Abonnementgruppen
+                      href: service-management/subscription-groups.md
+                    - name: Einrichten von Abonnementsgruppen
+                      href: service-management/set-up-subscription-groups.md
+                    - name: Phasenursachencodes verwenden
+                      href: service-management/use-stage-reason-codes.md
+                    - name: Integration von Servicevereinbarungen und Projekten
+                      href: service-management/integration-service-agreements-projects.md
+                - name: Einrichten der Reparaturverwaltung
+                  href: service-management/repair-management.md
+                - name: Einrichten von Kundenrücklieferungen.
+                  items:
+                    - name: Einrichten von Debitorenrücklieferungen – Übersicht
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Dispositionscodes einrichten
+                      href: service-management/set-up-disposition-codes.md
+                    - name: Einrichten von Codes für Rücklieferungsursachen
+                      href: service-management/set-up-return-reason-code.md
+                    - name: Angaben zur Entsorgung zurückgelieferter Artikel
+                      href: service-management/specify-how-to-dispose-of-returned-items.md
+            - name: Arbeiten mit Kundendienst
+              items:
+                - name: Arbeiten mit Kundendienst – Übersicht
+                  href: service-management/working-with-customer-service.md
+                - name: Erfüllen von Servicevereinbarungen
+                  items:
+                    - name: Erfüllen von Servicevereinbarungen – Übersicht
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Ausarbeiten und Festsetzen von Vereinbarungen
+                      items:
+                        - name: Ausarbeiten und Festsetzen von Serviceverträge – Übersicht
+                          href: service-management/service-agreements.md
+                        - name: Erstellen von Servicevereinbarungen
+                          href: service-management/create-service-agreements.md
+                        - name: Serviceabonnements
+                          href: service-management/service-subscriptions.md
+                        - name: Servicevorlagen
+                          href: service-management/service-template.md
+                        - name: Kopieren von Servicevorlagenpositionen
+                          href: service-management/copy-service-template-lines.md
+                    - name: Ändern der Phase eines Serviceauftrags
+                      href: service-management/change-service-order-stage.md
+                    - name: Aktualisieren und Auswerten von Vereinbarungen
+                      items:
+                        - name: Verwalten von Vorlagenstücklisten für Objektbeziehungen
+                          href: service-management/manage-template-boms-on-object-relations.md
+                        - name: Löschen einer Servicestückliste
+                          href: service-management/delete-service-bom.md
+                        - name: Indizierte Verkaufspreise
+                          href: service-management/indexed-sales-prices.md
+                        - name: Verringern der Tage für Dauerauftragsgebühren
+                          href: service-management/reduce-the-days-on-subscription-fees.md
+                        - name: Minderungstage – Beispiel
+                          href: service-management/reduction-days-example.md
+                        - name: Aktualisieren und Indizieren von Abonnementverkaufspreisen
+                          href: service-management/update-and-index-subscription-sales-prices.md
+                - name: Behandeln von Kundenabfragen
+                  items:
+                    - name: Erfüllen von Servicevereinbarungen – Übersicht
+                      href: service-management/fulfill-service-agreements-overview.md
+                    - name: Starten und Beenden der Zeitaufzeichnung für einen Serviceauftrag
+                      href: service-management/start-and-stop-time-recording-on-a-service-order.md
+                    - name: Anzeigen der Startzeit und der Dauer eines Serviceauftrags
+                      href: service-management/view-the-start-time-and-duration-of-a-service-order.md
+                    - name: Anzeigen von Phasenursachencodes
+                      href: service-management/view-stage-reason-codes.md
+                    - name: Anzeigen der Konformität mit Vereinbarungen zum Servicelevel
+                      href: service-management/view-compliance-with-service-level-agreements.md
+                - name: Autorisieren von Kundenrücklieferungen
+                  items:
+                    - name: Dispositionscodes und Rückgabeursachencodes
+                      href: service-management/disposition-and-return-reason-codes.md
+                    - name: Rücklieferungseinstandspreis und Rücklieferungsloskennung
+                      href: service-management/return-cost-price-and-return-lot-id.md
+                    - name: Stornieren einer Rücklieferung
+                      href: service-management/cancel-return-order.md
+                    - name: Erstellen eines Artikelersetzungsauftrags
+                      href: service-management/create-item-replacement-order.md
+                    - name: Löschen einer Rücklieferung
+                      href: service-management/delete-return-order.md
+                    - name: Übergeben von zurückgelieferten Artikeln zur Prüfung
+                      href: service-management/pass-returned-items-on-to-inspection.md
+                    - name: Buchen der Wareneingangserfassung für zurückgelieferte Produkte
+                      href: service-management/post-arrival-journal-for-returned-products.md
+                    - name: Empfangen von Teillieferungen zurückgelieferter Artikel
+                      href: service-management/receive-partial-deliveries-returned-items.md
+                    - name: Zurückgegebene Artikel empfangen
+                      href: service-management/receiving-returned-items.md
+                    - name: Erfassen des Empfangs zurückgelieferter Artikel
+                      href: service-management/register-the-receipt-of-returned-items.md
+                    - name: Prüfen von zurückgelieferten Artikeln
+                      href: service-management/take-returned-items-through-inspection.md
+                    - name: Lieferscheinaktualisierungen für Rücklieferungen
+                      href: service-management/packing-slip-updates-returns.md
+                    - name: Ausführen von Rechnungsaktualisierungen für Rücklieferungen
+                      href: service-management/perform-invoice-updates-for-returns.md
+                - name: Services bereitstellen
+                  items:
+                    - name: Planen und Zuteilen von Serviceaufträgen
+                      items:
+                        - name: Serviceaufträge
+                          href: service-management/service-orders.md
+                        - name: Automatisches Erstellen von Serviceaufträgen
+                          href: service-management/auto-create-service-orders.md
+                        - name: Interaktion zwischen Servicestatus und Statusfeld
+                          href: service-management/service-status-and-progress-field-interaction.md
+                        - name: Automatische Erstellung von Serviceaufträgen
+                          href: service-management/create-service-orders-automatically.md
+                        - name: Erstellen von Artikelbedarf für Serviceaufträge
+                          href: service-management/create-item-requirements-service-orders.md
+                        - name: Serviceauftrags-Artikelbedarf
+                          href: service-management/service-order-item-requirements.md
+                        - name: Dauerauftragsworkflow (Übersicht)
+                          href: service-management/subscription-workflow-overview.md
+                        - name: Serviceaufträge kombinieren
+                          href: service-management/combine-service-orders.md
+                        - name: Erstellen von Servicedaueraufträgen von einer Dauerauftragsgruppe aus
+                          href: service-management/create-service-subscriptions-from-subscription-group.md
+                        - name: Der Servicevereinbarung zugeordnetes Projekt
+                          href: service-management/project-attached-to-service-agreement.md
+                        - name: Erstellen von Servicedaueraufträgen von einem Projekt aus
+                          href: service-management/create-service-subscriptions-from-project.md
+                    - name: Versenden von Serviceaufträgen (Aktivitäten)
+                      items:
+                        - name: Serviceaktivitäten
+                          href: service-management/service-activities.md
+                        - name: Einsatzplanung
+                          href: service-management/dispatch-board.md
+                        - name: Einrichten von Serviceaktivitätstypen
+                          href: service-management/set-up-service-activity-types.md
+                        - name: Einrichten eines bevorzugten Technikers
+                          href: service-management/set-up-preferred-technician.md
+                        - name: Einsatzteams einrichten
+                          href: service-management/set-up-dispatch-teams.md
+                        - name: Priorisieren von Serviceaufträgen
+                          href: service-management/prioritize-service-orders.md
+                        - name: Anzeigen des Status von Serviceaufträgen
+                          href: service-management/view-the-status-of-service-orders.md
+                        - name: Überwachen von Serviceaktivitäten
+                          href: service-management/monitor-service-activities.md
+                        - name: Erneutes Zuordnen von Aktivitäten
+                          href: service-management/reassign-activities.md
+                        - name: Rückgängigmachen von Änderungen in einer Einsatzplanung
+                          href: service-management/reverse-changes-in-a-dispatch-board.md
+                        - name: Anzeigen von nicht versendeten Serviceaufträgen
+                          href: service-management/view-undispatched-service-orders.md
+                        - name: Ändern einer Servicestückliste
+                          href: service-management/modify-service-bom.md
+                    - name: Service bereitstellen
+                      items:
+                        - name: Gutschreiben von Dauerauftragsbuchungen
+                          href: service-management/credit-subscription-transactions.md
+                        - name: Dauerauftragsgebühren-Buchungen erstellen
+                          href: service-management/create-subscription-fee-transactions.md
+                        - name: Antizipieren von Daueraufträgen
+                          href: service-management/accruing-subscriptions.md
+                        - name: Serviceauftragspositionen verschieben
+                          href: service-management/move-service-order-lines.md
+                        - name: Serviceaufträge stornieren
+                          href: service-management/cancel-service-orders.md
+                        - name: Manuelles Erstellen von Serviceaufträgen
+                          href: service-management/create-service-orders-manually.md
+                        - name: Abgrenzen des Dauerauftragsumsatzerlöses
+                          href: service-management/accrue-subscription-revenue.md
+                        - name: Serviceaufträge löschen
+                          href: service-management/delete-service-orders.md
+                        - name: Transaktionen von Rechnungsabonnements
+                          href: service-management/invoice-subscription-transactions.md
+        - name: Transportverwaltung
+          items:
+            - name: Transportverwaltung – Aufgaben
+              href: transportation/transportation-management-overview.md
+            - name: Transportverwaltungsmodule
+              href: transportation/transportation-management-engines.md
+            - name: Erstellen eines neuen Transportverwaltungsmoduls
+              href: transportation/create-new-transportation-management-engine.md
+            - name: Brennstoffindex einem Spediteur als Zusatzgebühr zuordnen
+              href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
+            - name: Frachtbrief erstellen
+              href: transportation/create-bill-of-lading.md
+            - name: Frachttransportrouten planen
+              href: transportation/plan-freight-transportation-routes-multiple-stops.md
+            - name: Planen von Ladungen mit der Hubkonsolidierung
+              items:
+                - name: Planen von Ladungen mit der Hubkonsolidierung – Übersicht
+                  href: transportation/plan-loads-hub-consolidation.md
+                - name: Ladungen und Lieferungen mithilfe der Ladungsplanungs-Workbench planen
+                  href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+            - name: Containergewicht und -volumen bei Auslastung einschließen
+              href: transportation/include-container-weight-volume-on-load.md
+            - name: Fracht manuell abstimmen
+              href: transportation/tasks/reconcile-freight-manually.md
+            - name: Fracht abstimmen
+              href: transportation/reconcile-freight-transportation-management.md
+            - name: Ein- und Auschecken des Fahrers für einen Termin erfassen
+              href: transportation/tasks/register-driver-check-check-out-appointment.md
+            - name: Spediteur-Kraftstoffindex einrichten
+              href: transportation/tasks/set-up-carrier-fuel-index.md
+            - name: Transportausschreibung einrichten
+              href: transportation/tasks/set-up-transportation-tender.md
+            - name: Zusatzleistungszuweisungen einrichten
+              href: transportation/tasks/set-up-accessorial-assignments.md
+            - name: Termin für eine Auslastung einrichten
+              href: transportation/tasks/set-up-appointment-load.md
+            - name: Automatische Frachtabstimmung einrichten
+              href: transportation/tasks/set-up-automatic-freight-reconciliation.md
+            - name: Hub-Zusatzgebühren und Zusatzleistungsmaster einrichten
+              href: transportation/tasks/set-up-hub-accessorial-charges-accessorial-masters.md
+            - name: Satzmaster einrichten
+              href: transportation/tasks/set-up-rate-masters.md
+            - name: Spediteure einrichten
+              href: transportation/tasks/set-up-shipping-carriers.md
+            - name: Transporteinschränkungen für einen Artikel einrichten
+              href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Lagerortverwaltung
+          items:
+            - name: Lagerortverwaltung – Übersicht
+              href: warehousing/warehouse-management-overview.md
+            - name: Lagerortkonfiguration
+              items:
+                - name: Lagerortkonfiguration – Übersicht
+                  href: warehousing/warehouse-configuration.md
+                - name: Einen Lagerort mithilfe einer Lagerortkonfigurationsvorlage einrichten
+                  href: inventory/warehouse-template.md
+                - name: Arbeit mithilfe von Arbeitsvorlagen und Lagerplatzanweisungen steuern
+                  href: warehousing/control-warehouse-location-directives.md
+                - name: Wellenschrittcodes
+                  href: warehousing/wave-step-codes.md
+                - name: Wellenverarbeitung konfigurieren
+                  href: warehousing/tasks/configure-wave-processing.md
+                - name: Automatisches Aktualisieren von Lieferungen
+                  href: warehousing/auto-update-shipment.md
+                - name: Lagerplatzprofil erstellen
+                  href: warehousing/tasks/create-location-profile.md
+                - name: Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
+                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                - name: Auslastungsnutzung planen
+                  href: warehousing/schedule-load-utilization.md
+                - name: Arbeitsauslastungskapazität planen
+                  href: warehousing/schedule-workload-capacity.md
+                - name: Dispositionscodes einrichten
+                  href: warehousing/tasks/set-up-dispositions-codes.md
+                - name: Maßeinheit und Lagerrichtlinien
+                  href: warehousing/unit-measure-stocking-policies.md
+                - name: Power BI-Lagerortinhalt
+                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                - name: Systemgruppierung in einer offenen Arbeitsliste
+                  href: warehousing/system-group-on-open-work-list.md
+                - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Strichcodeunterstützung für Mobilgeräte
+                  href: warehousing/mobile-barcode-support.md
+                - name: Einrichten des Lagerorts für Umlagerungsaufträge
+                  href: warehousing/transfer-orders-warehouse.md
+            - name: Lagerortarbeitsrichtlinien
+              items:
+                - name: Lagerortarbeitsrichtlinien – Übersicht
+                  href: warehousing/warehouse-work-policies.md
+                - name: Lagerortarbeitsrichtlinien einrichten
+                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                - name: Bewegung von Bestand mit zugeordneter Arbeit in der Lagerortverwaltung
+                  href: warehousing/move-inventory-associated-work.md
+                - name: Eine Arbeitsklasse erstellen
+                  href: warehousing/tasks/create-work-class.md
+                - name: Verwalten der Lagerortarbeitskräfte
+                  href: warehousing/manage-warehouse-workers.md
+                - name: Verzögerte Verarbeitung der Lagerarbeit
+                  href: warehousing/deferred-put.md
+            - name: Teilweise Freigabe und teilweise Lieferung
+              items:
+                - name: Partielle Lieferung einer Datentransportauslastung
+                  href: warehousing/partial-shipping-of-transport-loads.md
+                - name: Chargenfreigabe von teilweise reservierten Umlagerungsaufträgen
+                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+            - name: Entnahme und Verpackung
+              items:
+                - name: Clusterkommissionierung einrichten
+                  href: warehousing/set-up-cluster-picking.md
+                - name: Verpacken in Container einrichten
+                  href: warehousing/tasks/set-up-containerization.md
+                - name: Chargen- und Kennzeichenbestätigung
+                  href: warehousing/batch-and-license-plate-confirmation.md
+                - name: Kennzeichenbeschriftungs-Druck aktivieren
+                  href: warehousing/tasks/license-plate-label-printing.md
+                - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
+                  href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Stückentnahmebestätigung
+                  href: warehousing/piece-picking-confirmation.md
+                - name: Verpackungsmaterialien und Gebühren
+                  href: warehousing/pack-materials-packing-material-fees.md
+                - name: Manuelle Verpackung einrichten (nur Februar und Mai 2016)
+                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                - name: Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten
+                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+            - name: Lagerinventur
+              items:
+                - name: Ursachencodes für Lagerinventuren anzeigen
+                  href: warehousing/reason-codes-for-counting-journals.md
+                - name: Lagerbestand sperren
+                  href: inventory/inventory-blocking.md
+                - name: Zykluszählung
+                  href: warehousing/cycle-counting.md
+                - name: Zykluszählung definieren
+                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                - name: Teilweise Lagerplatz-Zykluszählung
+                  href: warehousing/partial-location-cycle-counting.md
+                - name: Partiellen Lagerplatz-Zykluszählungsprozess definieren
+                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Lagererfassung
+                  href: inventory/inventory-journals.md
+                - name: Elektronische Adresse für Lagerbestand
+                  href: inventory/inventory-locations.md
+                - name: Bestandsstatus
+                  href: inventory/inventory-statuses.md
+                - name: Markierungsinventur
+                  href: inventory/inventory-tag-counting.md
+            - name: Wiederbeschaffung
+              items:
+                - name: Wiederbeschaffung – Übersicht
+                  href: warehousing/replenishment.md
+                - name: Sofortige Wiederbeschaffung
+                  href: warehousing/immediate-replenishment.md
+                - name: Wiederbeschaffung mit Entnahme-Kanbans
+                  href: warehousing/material-replenishment-withdrawal-kanban.md
+                - name: Einen Min-Max-Wiederbeschaffungsprozess einrichten
+                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                - name: Arbeitsvorlage für Bestellungen einrichten
+                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
+            - name: Einrichten und Konfigurieren der Lagerort-App
+              items:
+                - name: Installieren und Konfigurieren – Übersicht
+                  href: warehousing/install-configure-warehousing-app.md
+                - name: Feldnamen in Lagerort-App konfigurieren
+                  href: warehousing/configure-app-field-names-priorities-warehouse.md
+                - name: Mobile Geräte für Lagerarbeiten einrichten
+                  href: warehousing/configure-mobile-devices-warehouse.md
+                - name: Eine Menüoption des mobilen Geräts für das Abschließen der Arbeit in einer Bestellung einrichten
+                  href: warehousing/tasks/set-up-mobile-device-menu.md
+                - name: 'Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen'
+                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                - name: Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen
+                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
+                  href: warehousing/mixed-license-plate-receiving.md
+                - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
+                  href: warehousing/display-older-batches-within-warehouses.md
+                - name: Entnahme der ältesten Charge mit einem mobilen Gerät
+                  href: warehousing/pick-oldest-batch.md
+                - name: Verwenden des Prozessleitfadens
+                  href: warehousing/process-guide-framework.md
+            - name: Upgrade und Migration
+              items:
+                - name: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+                  href: warehousing/upgrade-migration-warehouse-management-processes.md
+            - name: Zugänge für die Erfassung und Einlagerung
+              items:
+                - name: Artikel für einen für erweitertes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+                  href: warehousing/tasks/register-items-advanced-warehousing.md
+                - name: Artikel für einen für grundlegendes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+                  href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Produkte vom empfangenden Lagerort Filialen zuordnen
+                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                - name: Lagerplatzdirektive für Bestellungseinlagerung einrichten
+                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                - name: Arbeitsvorlage für Bestellungen einrichten
+        - name: Supply Chain Management-Entwicklung
+          items:
+            - name: Anleitung zur Entwicklung von Gantt-Steuerelementen
+              href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Erstellen eines neuen Transportverwaltungsmoduls
+              href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
+    - name: Entwicklung und Administration für Finance and Operations-Apps
+      href: ../fin-ops-core/dev-itpro/index.md
+    - name: Dynamics 365 Finance
+      href: ../finance/index.md
+    - name: Dynamics 365 Retail
+      href: ../retail/index.md

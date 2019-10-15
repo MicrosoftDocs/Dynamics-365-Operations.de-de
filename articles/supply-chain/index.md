@@ -1,9 +1,9 @@
 ---
-title: Startseite für Lieferkettenverwaltung
-description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Lieferkettenverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations.
-author: ShylaThompson
+title: Supply Chain Management – Hilferessourcen
+description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
+author: josaw1
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 10/01/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 391f63fba2916b613f66bfd36cfbd3a052cbc8fe
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557591"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278323"
 ---
-# <a name="supply-chain-management-home-page"></a>Startseite für Lieferkettenverwaltung
+# <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management – Hilferessourcen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen für die Lieferkettenverwaltungsfunktionen in Microsoft Dynamics 365 for Finance and Operations. 
+Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen in Dynamics 365 Supply Chain Management. 
 
 ## <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 Besuchen Sie <a href="https://roadmap.dynamics.com/">Dynamics 365 – Produktplan</a>, um zu erfahren, welche neue Funktionen veröffentlicht werden und welche neue Funktionen gerade entwickelt werden. 
@@ -38,6 +38,7 @@ Besuchen Sie <a href="https://roadmap.dynamics.com/">Dynamics 365 – Produktpla
 
 Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
 
+- [Anlagenverwaltung](asset-management/index.md)
 - [Kostenrechnung](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Kostenverwaltung](cost-management/cost-management-home-page.md)  
 - [Lagerverwaltung](inventory/inventory-home-page.md)
@@ -49,6 +50,10 @@ Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erh
 - [Serviceverwaltung](service-management/service-management-home-page.md)
 - [Transportverwaltung](transportation/transportation-management-overview.md)
 - [Lagerortverwaltung](warehousing/warehouse-configuration.md)
+
+## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
+
+Weitere Informationen über Dynamics 365 Finance finden Sie auf der Seite [Dynamics 365 Finance – Hilferessourcen](../finance/index.md).
 
 ## <a name="videos"></a>Videos
 
@@ -113,6 +118,6 @@ Es gibt viele Themen zur Produktion und Lieferkettenverwaltung unter <a href="ht
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilität am von Microsoft Dynamics 365 for Finance and Operations verwalteten Lagerort</a>
 
 ## <a name="elearning-courses"></a>eLearning-Kurse
-Weitere Informationen zu Microsoft Dynamics 365 for Finance and Operations-Schulungen finden Sie im <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics-Lernportal</a>. (erfordert ein CustomerSource-Konto) 
+Weitere Informationen zu Dynamics 365-Schulungen finden Sie im <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics-Lernportal</a>. (erfordert ein CustomerSource-Konto) 
 
 

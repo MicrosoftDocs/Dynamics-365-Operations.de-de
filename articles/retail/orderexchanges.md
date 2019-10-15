@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
-description: In diesem Thema wird erläutert, wie Sie einen Austausch für eine Rücklieferung im Microsoft Dynamics 365 for Retail konfigurieren.
+description: In diesem Thema wird erläutert, wie Sie einen Austausch für eine Rücklieferung im Dynamics 365 Retail konfigurieren.
 author: josaw1
 manager: AnnBe
 ms.date: 11/12/2018
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 43571099727830e81c41416b6fe250dba398b3f8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3ce327a918159771df0acab276b1169d2ad77825
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561386"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025378"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
 
 [!include [banner](includes/banner.md)]
 
-In älteren Versionen von Microsoft Dynamics 365 for Retail werden Rücklieferungen für Kundenaufträge mithilfe des Rücklieferungsdokuments in Retail Headquarters verarbeitet. Doch das Rücklieferungsdokument kann auch ausschließlich für die Bearbeitung von Produkten verwendet werden, die zurückgegeben werden. Die zurückgelieferten Produkte werden durch eine negative Menge in den Rücklieferungspositionen angegeben. Dagegen wird im Umsatz eine positive Menge angegeben. Das Rücklieferungsdokument unterstützt jedoch keine positiven Mengen. Aufgrund dieser Einschränkung wurden in früheren Versionen von Retail keine Szenarien unterstützt, in denen Produktumtauschaktivitäten mithilfe des Rücklieferungsdokuments durchgeführt wurden.
+In älteren Versionen von Dynamics 365 Retail werden Rücklieferungen für Kundenaufträge mithilfe des Rücklieferungsdokuments in Retail Headquarters verarbeitet. Doch das Rücklieferungsdokument kann auch ausschließlich für die Bearbeitung von Produkten verwendet werden, die zurückgegeben werden. Die zurückgelieferten Produkte werden durch eine negative Menge in den Rücklieferungspositionen angegeben. Dagegen wird im Umsatz eine positive Menge angegeben. Das Rücklieferungsdokument unterstützt jedoch keine positiven Mengen. Aufgrund dieser Einschränkung wurden in früheren Versionen von Retail keine Szenarien unterstützt, in denen Produktumtauschaktivitäten mithilfe des Rücklieferungsdokuments durchgeführt wurden.
 
 Allerdings wurden Funktionen hinzugefügt, die Szenarien unterstützen, in denen der Umtausch mithilfe von Rücklieferungen erfolgt. Retail verwendet nun das Auftragsdokument anstelle des Rücklieferungsdokuments, um die Transaktionsarten zu verarbeiten.
 

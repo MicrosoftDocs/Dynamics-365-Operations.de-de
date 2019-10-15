@@ -1,6 +1,6 @@
 ---
 title: Kostenkonfiguration für die verteilte Auftragsverwaltung (DOM)
-description: Dieses Thema behandelt die Kostenkonfiguration für die Funktion zur verteilten Auftragsverwaltung (DOM) in Microsoft Dynamics 365 for Retail.
+description: Dieses Thema behandelt die Kostenkonfiguration für die Funktion zur verteilten Auftragsverwaltung (DOM) in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 12/05/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-12-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 80e7a033467c3d94d55f06daa05f99bd27e19a29
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: b5e3e1997f3d3b61b7b3c7486f5531e386293537
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606778"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019438"
 ---
 # <a name="cost-configuration-for-distributed-order-management-dom"></a>Kostenkonfiguration für die verteilte Auftragsverwaltung (DOM)
 
@@ -31,7 +31,7 @@ ms.locfileid: "1606778"
 
 Um den optimalen Standort zur Erledigung von Aufträgen zu ermitteln, berücksichtigen Organisationen mehrere Kostenkomponenten. Dazu gehören unter anderem Kosten für Versand, Bearbeitung und Verpackung. Anhand einer berechneten Kombination dieser Kosten wird der Erfüllungslagerplatz bestimmt.
 
-Bei der Verbesserung der Zuweisung von Aufträgen zu Erfüllungslagerplätzen durch die erste Iteration der verteilten Auftragsverwaltung (DOM) in Microsoft Dynamics 365 for Retail wurde nur die Entfernung als Faktor berücksichtigt. Auch wenn diese ggf. mit Kosten korreliert, ist sie nicht mit Kosten identisch. So kann ein Übernachtversand über dieselbe Entfernung mehr als ein Drei- oder Sieben-Tage-Versand kosten.
+Bei der Verbesserung der Zuweisung von Aufträgen zu Erfüllungslagerplätzen durch die erste Iteration der verteilten Auftragsverwaltung (DOM) in Dynamics 365 Retail wurde nur die Entfernung als Faktor berücksichtigt. Auch wenn diese ggf. mit Kosten korreliert, ist sie nicht mit Kosten identisch. So kann ein Übernachtversand über dieselbe Entfernung mehr als ein Drei- oder Sieben-Tage-Versand kosten.
 
 Mit der Funktion zur Kostenkonfiguration können Einzelhändler zusätzliche Kostenkomponenten anlegen und konfigurieren, die zur Ermittlung des besten Standortes zur Erfüllung von Auftragspositionen berechnet und berücksichtigt werden.
 
