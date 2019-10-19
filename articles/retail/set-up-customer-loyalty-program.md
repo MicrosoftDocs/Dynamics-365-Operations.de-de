@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Loyalität
-description: In diesem Thema werden die Loyalitätsfunktionen innerhalb von Microsoft Dynamics 365 for Retail und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
+description: In diesem Thema werden die Loyalitätsfunktionen innerhalb von Dynamics 365 Retail und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
 author: scott-tucker
 manager: AnnBe
 ms.date: 03/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c2a2347abddf03ed884dcfe68f645fde84c092a
-ms.sourcegitcommit: 9b4c3fff2f30006b7bb491ef6ffe89d41bcbfa11
+ms.openlocfilehash: 9fbb5d6db16e2e145c4970b5dd6417d9e99f78b2
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1863771"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250966"
 ---
 # <a name="loyalty-overview"></a>Überblick über die Loyalität
 
 [!include [banner](includes/banner.md)]
 
-Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Microsoft Dynamics 365 for Retail können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Einzelhandelskanal gelten. In diesem Thema werden die Loyalitätsfunktionen innerhalb von Microsoft Dynamics 365 for Retail und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
+Ein Treueprogramm kann dazu beitragen, die Debitorenloyalität durch die Belohnung der Debitoren für das Kaufen von Produkte in den Einzelhandelsgeschäften zu erhöhen. In Dynamics 365 Retail können Sie einfache oder komplexe Treueprogramme einrichten, die für alle juristischen Personen in einem beliebigen Einzelhandelskanal gelten. In diesem Thema werden die Loyalitätsfunktionen innerhalb von Retail und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
 
 Sie können Ihr Treueprogramm so einrichten, dass es die folgenden Optionen enthält.
 
@@ -42,7 +42,7 @@ Sie können Ihr Treueprogramm so einrichten, dass es die folgenden Optionen enth
 
 ## <a name="setting-up-loyalty-programs"></a>Einrichten von Treueprogrammen
 
-Sie müssen mehrere Komponenten einrichten, um die Treuefunktion in Dynamics 365 for Retail zu aktivieren. Das folgende Diagramm zeigt die Treuekomponenten und wie diese zueinander in Beziehung stehen.
+Sie müssen mehrere Komponenten einrichten, um die Treuefunktion in Retail zu aktivieren. Das folgende Diagramm zeigt die Treuekomponenten und wie diese zueinander in Beziehung stehen.
 
 ![Treuprogramm Einrichtungsprozessfluss](./media/loyaltyprocess.gif "Treueprogramm-Komponenten und wie sie zueinander zugeordnet sind")
 
@@ -69,9 +69,9 @@ In der folgenden Tabelle werden die Prozesse beschreiben, die ausgeführt werden
 
 | Prozessname                         | Beschreibung | Seitenname |
 |--------------------------------------|-------------|-----------|
-| 1050 (Treueinformationen)           | Führen Sie diesen Prozess aus, um die Treuekonfigurationsdaten von Dynamics 365 for Retail an die Einzelhandelsshops zu senden. Es wird empfohlen, diesen Vorgang für eine regelmäßige Ausführung zu planen, damit Loyalitätsdaten an allen Filialen gesendet werden. | Vertriebsplan |
+| 1050 (Treueinformationen)           | Führen Sie diesen Prozess aus, um die Treuekonfigurationsdaten von Retail an die Einzelhandelsshops zu senden. Es wird empfohlen, diesen Vorgang für eine regelmäßige Ausführung zu planen, damit Loyalitätsdaten an allen Filialen gesendet werden. | Vertriebsplan |
 | Treueschemas verarbeiten              | Führen Sie diesen Prozess aus, um Treueschemas den Einzelhandelskanälen zuzuordnen, denen das Treueschema zugewiesen ist. Dieser Vorgang kann so geplant werden, dass er als Stapelverarbeitungsvorgang ausgeführt wird. Sie müssen diesen Prozess ausführen, wenn Sie die Loyalitätskonfigurationsdaten (z. B. Treueschemas, Treueprogramme oder Treuebelohnungspunkte) ändern. | Treueschemas verarbeiten |
-| Offlinetreuebuchungen verarbeiten | Führen Sie diesen Prozess aus, um Treuekarten zu aktualisieren, damit sie Transaktionen einbeziehen, die offline verarbeitet wurden. Dieser Prozess gilt nur, wenn das **Offline verdienen**-Kontrollkästchen auf der Seite **Freigegebene Einzelhandelsparameter** aktiviert ist, damit Belohnungen offline erworben werden können. | Offlinetreuebuchungen verarbeiten |
+| Verdiente Treuepunkte in Batches buchen | Führen Sie diesen Prozess aus, um Treuekarten zu aktualisieren, damit sie Transaktionen einbeziehen, die offline verarbeitet wurden. Dieser Prozess gilt nur, wenn das **Verdiente Punkte in Batches buchen**-Kontrollkästchen auf der Seite **Freigegebene Einzelhandelsparameter** aktiviert ist, damit Belohnungen offline erworben werden können. | Verdiente Treuepunkte in Batches buchen |
 | Treuekartenebenen aktualisieren            | Führen Sie diesen Prozess aus, um die Einnahmenaktivität des Debitors mit den Stufenregeln für ein Treueprogramm zu vergleichen und um den Stufenstatus des Debitors zu aktualisieren. Dieser Prozess ist nur erforderlich, wenn Sie die Stufenregeln in den Treueprogrammen ändern und wenn Sie die aktualisierten Regeln rückwirkend auf die Treuekarten anwenden möchten, die bereits ausgestellt wurden. Dieser Prozess kann für einzelne Karten als Stapelverarbeitungsvorgang ausgeführt werden. | Treuekartenebenen aktualisieren |
 
 ## <a name="loyalty-enhancements"></a>Loyalitätserweiterungen
@@ -89,7 +89,7 @@ Einzelhandel hat neue Loyalitätsfunktionen als Teil der Freigabe vom Oktober 20
 
     ![Ausgeschlossene Zuordnungen](./media/Excluded-affiliations.png "Zuordnungen vom Erwerben von Treuepunkten ausschliessen")
     
-- Einzelhändler können Treuekartennummern in den Kanälen generieren. Vor der Aktualisierung im Oktober 2018 konnten Einzelhändler physische Treuekarten verwenden oder eine Treuekarte mithilfe einiger eindeutiger Debitoreninformationen wie Telefonnummer generieren. Zum Aktivieren der automatischen Erstellung von Treuekarten in den Ladengeschäften aktivieren Sie **Generieren Sie Treuekartennummer** im Funktionsprofil, das dem Shop zugeordnet ist. Für Online Kanäle können Einzelhändler das IssueLoyaltyCard API verwenden, um Treuekarten für Debitoren zu verwenden. Einzelhändler können entweder eine Treuekartennummer zu diesem API eingeben, das verwendet wird, um die Treuekarte zu generieren, oder das System verwendet den Treuekartenummernkreis in Dynamics 365 for Retail. Wenn der Nummernkreis nicht vorhanden ist, und der Einzelhändler keine Treuekartennummer beim Anrufe des API bereitstellt, wird ein Fehler angezeigt.
+- Einzelhändler können Treuekartennummern in den Kanälen generieren. Vor der Aktualisierung im Oktober 2018 konnten Einzelhändler physische Treuekarten verwenden oder eine Treuekarte mithilfe einiger eindeutiger Debitoreninformationen wie Telefonnummer generieren. Zum Aktivieren der automatischen Erstellung von Treuekarten in den Ladengeschäften aktivieren Sie **Generieren Sie Treuekartennummer** im Funktionsprofil, das dem Shop zugeordnet ist. Für Online Kanäle können Einzelhändler das IssueLoyaltyCard API verwenden, um Treuekarten für Debitoren zu verwenden. Einzelhändler können entweder eine Treuekartennummer zu diesem API eingeben, das verwendet wird, um die Treuekarte zu generieren, oder das System verwendet den Treuekartenummernkreis in Retail. Wenn der Nummernkreis nicht vorhanden ist, und der Einzelhändler keine Treuekartennummer beim Anrufe des API bereitstellt, wird ein Fehler angezeigt.
 
     ![Treuekarte erstellen](./media/Generate-loyalty-card.png "Erstellt automatisch Treuekartennummer")
 
@@ -137,7 +137,7 @@ Einzelhandel hat neue Loyalitätsfunktionen als Teil der Freigabe vom Oktober 20
     - Es ist eine Aktivität zu erkennen, die vergütet werden sollte.
     - Vergütung der entsprechenden Punkte.
 
-    Der erste Schritt ist extern zu Microsoft Dynamics 365 for Retail, wie z.B. das Twittern über die Marke oder das Liken der Marke auf Facebook. Nachdem diese Aktivität erkannt wurde, können die Händler die oben genannte Retail Server API aufrufen und Treuepunkte in Echtzeit vergeben. In solchen Szenarien ist ein Überprüfungsschritt nicht erforderlich, da eine Aktivität stattgefunden hat und entsprechende Punkte vergeben werden sollten. Es gibt jedoch Szenarien, in denen der Einzelhändler die Datensätze vor der Vergabe der Punkte überprüfen möchte. Beispielsweise bietet der Einzelhändler in der Filiale einen Workshop an, für den sich die Kunden auf der E-Commerce-Website oder einer anderen Anwendung zur Registrierung von Veranstaltungen anmelden. Allerdings sollten nur die teilnehmenden Kunden Treuepunkte sammeln. Für solche Szenarien haben wir mit dem Release 10.0 eine Dateneinheit mit dem Namen **Einzelhandelstreue andere Aktivitätstyp-Positionen** eingeführt. Diese Datenentität ermöglicht es den Einzelhändlern, entweder Datenimport/-export-Framework (DIXF) oder OData API zu verwenden, um die Aktivitäten aufzuzeichnen, die Kunden Treuepunkte verleihen sollen. Die Dateneinheit speichert die Aktivitäten in einer Erfassung mit dem Namen **Loyalitätspositionen für andere Aktivitäten**, das für Überprüfungs- und Änderungszwecke verwendet werden kann. Nach der Überprüfung der Daten kann der IT-Benutzer entweder die Aktivitätspositionen manuell buchen oder einen Einzelvorgang mit dem Namen **Andere Aktivitätstypen für Loyalitätspositionen verarbeiten** ausführen, der alle nicht gebuchten Aktivitätspositionen bucht und die Punkte auf der Grundlage der Ertragsregeln an die Kunden vergibt. In dem obigen Szenario ruft die Ereigniserfassungsanwendung OData API auf, um die Kundeninformationen an Dynamics 365 for Retail zu senden. Der IT-Anwender kann jedoch die Aktivitätspositionen nur für die Kunden buchen, die am Workshop teilgenommen haben, und die Aktivitätspositionen für die anderen Kunden löschen. 
+    Der erste Schritt ist extern zu Retail, wie z.B. das Twittern über die Marke oder das Liken der Marke auf Facebook. Nachdem diese Aktivität erkannt wurde, können die Händler die oben genannte Retail Server API aufrufen und Treuepunkte in Echtzeit vergeben. In solchen Szenarien ist ein Überprüfungsschritt nicht erforderlich, da eine Aktivität stattgefunden hat und entsprechende Punkte vergeben werden sollten. Es gibt jedoch Szenarien, in denen der Einzelhändler die Datensätze vor der Vergabe der Punkte überprüfen möchte. Beispielsweise bietet der Einzelhändler in der Filiale einen Workshop an, für den sich die Kunden auf der E-Commerce-Website oder einer anderen Anwendung zur Registrierung von Veranstaltungen anmelden. Allerdings sollten nur die teilnehmenden Kunden Treuepunkte sammeln. Für solche Szenarien haben wir mit dem Release 10.0 eine Dateneinheit mit dem Namen **Einzelhandelstreue andere Aktivitätstyp-Positionen** eingeführt. Diese Datenentität ermöglicht es den Einzelhändlern, entweder Datenimport/-export-Framework (DIXF) oder OData API zu verwenden, um die Aktivitäten aufzuzeichnen, die Kunden Treuepunkte verleihen sollen. Die Dateneinheit speichert die Aktivitäten in einer Erfassung mit dem Namen **Loyalitätspositionen für andere Aktivitäten**, das für Überprüfungs- und Änderungszwecke verwendet werden kann. Nach der Überprüfung der Daten kann der IT-Benutzer entweder die Aktivitätspositionen manuell buchen oder einen Einzelvorgang mit dem Namen **Andere Aktivitätstypen für Loyalitätspositionen verarbeiten** ausführen, der alle nicht gebuchten Aktivitätspositionen bucht und die Punkte auf der Grundlage der Ertragsregeln an die Kunden vergibt. In dem obigen Szenario ruft die Ereigniserfassungsanwendung OData API auf, um die Kundeninformationen an Dynamics 365 Retail zu senden. Der IT-Anwender kann jedoch die Aktivitätspositionen nur für die Kunden buchen, die am Workshop teilgenommen haben, und die Aktivitätspositionen für die anderen Kunden löschen. 
 
     > [!NOTE]
     > Derzeit zwingt das System die Benutzer, einen Nummernkreis für "andere Aktivitätstypen" einzurichten, aber dies wird in zukünftigen Versionen kein notwendiger Schritt sein. Um eine Nummernkreis einzurichten, gehen Sie zu **Freigegebene Einzelhandelsparameter** \> **Nummernkreise** und wählen Sie einen Nummernkreis für **Andere Aktivitätstyp-ID für Treue** aus.

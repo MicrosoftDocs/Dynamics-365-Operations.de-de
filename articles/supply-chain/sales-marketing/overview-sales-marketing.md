@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 10c8b548f2e295bf344459370ab6eecd577a0efb
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 5d55dfe26cd298372701aeb98a6aafc49977f381
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865992"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248630"
 ---
 # <a name="sales-and-marketing-overview"></a>Vertriebs- und Marketingübersicht
 
@@ -41,7 +41,7 @@ In Vertrieb und Marketing können die Erstkontakte mit potenziellen Kunden in un
 
 ### <a name="campaigns"></a>Kampagnen
 
-Eine Kampagne wird auf die Kontakte für Interessenten, potenzielle Kunden, Verkaufschancen und Debitoren ausgerichtet, die als Kampagnenteilnehmer ausgewählt wurden. In Microsoft Dynamics 365 for Finance and Operations können Sie verschiedene Kampagnentypen wie Telemarketing, Mailings und E-Mail-Kampagnen erstellen, um Ihr Kundenpotential zu maximieren. Wenn Ihre Kampagne fortschreitet und Sie positive Antworten erhalten, können Sie mit dem Verkaufsprozess bei den Empfängern beginnen, die positiv auf die Kampagne reagiert haben.
+Eine Kampagne wird auf die Kontakte für Interessenten, potenzielle Kunden, Verkaufschancen und Debitoren ausgerichtet, die als Kampagnenteilnehmer ausgewählt wurden. In Supply Chain Management können Sie verschiedene Kampagnentypen wie Telemarketing, Mailings und E-Mail-Kampagnen erstellen, um Ihr Kundenpotential zu maximieren. Wenn Ihre Kampagne fortschreitet und Sie positive Antworten erhalten, können Sie mit dem Verkaufsprozess bei den Empfängern beginnen, die positiv auf die Kampagne reagiert haben.
 
 ## <a name="sales"></a>Vertrieb
 Die Verkaufsfunktionalität wird verwendet, um Angebote zu erstellen, den weiteren und ergänzenden Verkauf an neue und vorhandene Kunden durchzuführen und um Aufträge und Rechnungen für Kunden zu erstellen. Im folgenden Ablaufdiagramm werden die Geschäftsprozesse für den Verkauf dargestellt. [![Geschäftsprozess für Verkauf](./media/sales01.jpg)](./media/sales01.jpg)

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 00ea121385d74b3f8992d34fb485a8232325ea3f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2e57a410c0c7a73d8ab9e14254fe107d5e5c10db
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835741"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251620"
 ---
 # <a name="sales-orders-mobile-workspace"></a>Aufträge, mobiler Arbeitsbereich
 
@@ -31,7 +31,7 @@ ms.locfileid: "1835741"
 
 Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Verkaufsaufträge**. Mit diesem Arbeitsbereich sind Sie jederzeit auf dem neuesten Stand hinsichtlich Ihrer Aufträge, jederzeit und überall. 
 
-Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Finance and Operations-Mobile-App verwendet werden.
 
 ## <a name="overview"></a>Übersicht
 Im Arbeitsbereich mobile **Verkaufsufträge** können Sie detaillierte Informationen zu den einzelnen Aufträgen anzeigen. Diese Informationen enthalten den Auftragsstatus, Kontaktinformationen für den Debitor und die Kontaktinformationen der Auftragsannahme. Der mobile Arbeitsbereich **Aufträge** enthält eine einzige Ansicht für die Aufträge. Sie können alle Aufträge nach Debitor anzeigen, oder zeigen Sie alle Aufträge oder Informationen über einen bestimmten Auftrag an. 
@@ -83,8 +83,8 @@ Zeigt Listen mit Aufträgen nach Debitor an.
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden 
-Wenn Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Aufträge** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management 
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Aufträge** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -120,7 +120,7 @@ Wenn Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher 
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

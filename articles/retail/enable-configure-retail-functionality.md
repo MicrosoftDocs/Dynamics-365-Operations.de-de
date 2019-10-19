@@ -1,6 +1,6 @@
 ---
 title: Startdaten in neuen Retail-Umgebungen initialisieren
-description: In diesem Artikel werden die Daten beschrieben, die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden.
+description: In diesem Artikel werden die Daten beschrieben, die im Rahmen des Initialisierungsprozesses für Dynamics 365 Retail erstellt werden.
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 52f0c52748958f0bebb6c40df01cfac10c0ed427
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 49b21d81437ebd7cc55076444ee71ae1143bfac0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556897"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025515"
 ---
 # <a name="initialize-seed-data-in-new-retail-environments"></a>Startwertdaten in Retail-Umgebungen initialisieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel werden die Daten beschrieben, die im Rahmen des Initialisierungsprozesses für Microsoft Dynamics 365 for Retail erstellt werden.
+In diesem Artikel werden die Daten beschrieben, die im Rahmen des Initialisierungsprozesses für Dynamics 365 Retail erstellt werden.
 
 Nachdem die Retail-Lösung über Microsoft Dynamics Lifecycle Services (LCS) bereitgestellt wurde, müssen Sie die Einzelhandelskonfiguration initialisieren, um die grundlegenden Konfigurationsdaten zu erstellen.
 
@@ -39,7 +39,7 @@ Nachdem die Retail-Lösung über Microsoft Dynamics Lifecycle Services (LCS) ber
 
 Um die Einzelhandelskonfiguration zu initialisieren, führen Sie die folgenden Schritte aus:
 
-1. Starten Sie den Dynamics 365 for Retail-Client.
+1. Starten Sie den Retail-Client.
 2. Klicken Sie auf **Einzelhandel** &gt; **Zentralverwaltungseinrichtun** &gt; **Parameter** &gt; **Einzelhandelsparamete**.
 3. Klicken Sie auf **Initialisieren**.
 
@@ -57,7 +57,7 @@ Durch die Initialisierung werden die folgenden Standardkonfigurationsdaten erste
 - Entitätsprüfungsvorlagen
 - Batchauftrag zum Löschen der Commerce Data Exchange-Sitzungshistorie
 
-Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Dynamics 365 for Retail-Datenbank aktiviert.
+Darüber hinaus ist das Protokollieren in Zusammenhang mit der Zahlungskartenindustrie (PCI) für die Retail-Datenbank aktiviert.
 
 > [!NOTE]
 > Es gibt eine Option, um das Einzelhandel-Steuerprogramm separat zu konfigurieren. Mit dieser Option können Sie die Einzelhandel-Steuerprogramm-Konfiguration auf die Standardeinstellungen zurücksetzen.

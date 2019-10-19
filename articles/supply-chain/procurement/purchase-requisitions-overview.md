@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f279474d4a1e2f76e810b0df80c8d91171352c17
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 0e571f5c83affa56c230e1f597e219eb60973225
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572024"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248876"
 ---
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
@@ -38,7 +38,7 @@ Nachdem eine Bestellanforderung genehmigt wurde, kann auf deren Grundlage eine B
 ## <a name="creating-purchase-requisitions"></a>Erstellen von Bestellanforderungen
 Sie können eine Bestellanforderung auf der Seite **Eigene Bestellanforderungen** erstellen und die Artikel und Dienstleistungen auswählen, die Sie benötigen. Sie können Artikel aus einem Beschaffungskatalog auswählen, den Ihre Organisation erstellt hat, oder Artikel anfordern, die nicht im Katalog enthalten sind, indem Sie eine Beschaffungskategorie auswählen und die Produktdetails eingeben.  
 
-Bevor Sie eine Bestellanforderung zur Prüfung übermitteln können, müssen in Microsoft Dynamics 365 for Finance and Operations Workflows konfiguriert sein. Sie verwenden einen Workflow, um eine Bestellanforderung vom Anfangsstatus **Entwurf** bis zum endgültigen Status **Genehmigt** durch den Prüfungsprozess zu leiten.
+Bevor Sie eine Bestellanforderung zur Prüfung übermitteln können, müssen Workflows konfiguriert sein. Sie verwenden einen Workflow, um eine Bestellanforderung vom Anfangsstatus **Entwurf** bis zum endgültigen Status **Genehmigt** durch den Prüfungsprozess zu leiten.
 
 ### <a name="purchase-requisition-statuses"></a>Bestellanforderungsstatus
 
@@ -141,7 +141,7 @@ In den Beschaffungsrichtlinien können Sie die Anforderungszwecke steuern, die v
 
 ### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Anforderungen, die Verbrauch als Zweck haben
 
-Eine Anforderung, die Verbrauch als Zweck hat, repräsentiert einen Bedarf für Artikel oder Dienstleistungen, die intern von Ihrer Organisation verwendet werden. Der Bedarf, der durch diese Art der Anforderung entsteht, wird immer durch eine Bestellung erfüllt. Wenn Microsoft Dynamics 365 for Finance and Operations zum automatischen Generieren von Bestellungen eingerichtet ist, werden Bestellungen erstellt, nachdem die Bestellanforderung genehmigt wurde.
+Eine Anforderung, die Verbrauch als Zweck hat, repräsentiert einen Bedarf für Artikel oder Dienstleistungen, die intern von Ihrer Organisation verwendet werden. Der Bedarf, der durch diese Art der Anforderung entsteht, wird immer durch eine Bestellung erfüllt. Wenn Supply Chain Management eingerichtet ist, um Bestellungen automatisch zu generieren, werden Bestellungen erstellt, nachdem die Bestellanforderung genehmigt wurde.
 
 ### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Anforderungen, die Auffüllung als Zweck haben
 

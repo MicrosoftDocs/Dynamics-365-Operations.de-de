@@ -1,6 +1,6 @@
 ---
 title: Bildschirmlayouts für Demodaten in Retail Modern POS (MPOS) und Cloud POS
-description: Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Microsoft Dynamics 365 for Retail festgelegt werden.
+description: Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Retail festgelegt werden.
 author: zlinster
 manager: AnnBe
 ms.date: 10/05/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: zlinster
 ms.search.validFrom: 2017-10-05
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 8fe0ea3e7715fcbebc3ed590c85ee399c6192584
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8c8d2fac82541b768f8e0a31049177bdc1262d44
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570643"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019323"
 ---
 # <a name="demo-data-screen-layouts-in-retail-modern-pos-mpos-and-cloud-pos"></a>Bildschirmlayouts für Demodaten in Retail Modern POS (MPOS) und Cloud POS
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Microsoft Dynamics 365 for Retail festgelegt werden.
+Dieses Thema enthält Informationen zu den Bildschirmlayouts, die in den Demodaten einbezogen sind, die für die Verkaufsstelle (POS)-Erfahrungen in Dynamics 365 Retail festgelegt werden.
 
 ## <a name="overview"></a>Übersicht
 
@@ -40,7 +40,7 @@ Die Beispielbildschirmlayouts, die mit Kleindemodaten einbezogen werden, enthalt
 
 ## <a name="anatomy-of-a-screen-layout-id"></a>Struktur einer Bildschirmlayout-ID
 
-Um Bildschirmlayouts in Retail zu suchen, gehen Sie zu **Retail** \> **Kanaleinstellung** \>**POS-Einstellung** \>**POS**\>**Bildschirmdarstellung**.
+Um Bildschirmlayouts zu suchen, gehen Sie zu **Retail** \> **Kanaleinstellung** \> **POS-Einstellung** \> **POS** \> **Bildschirmdarstellung**.
 
 ![Bildschirmlayoutseite in Retail](../retail/media/demo-screen-layouts-fig-2-1.png)
 
@@ -107,7 +107,7 @@ In der folgenden Tabelle werden die Layoutgrößen angezeigt, die aus für typis
 \* Diese zusätzliche Layoutgrößen sind nur in Adventure Works- und Fabrikam-Layouts verfügbar.
 
 > [!TIP]
-> POS wählt automatisch Layoutgrößen, basierend auf der nächsten Größe, für die die Bildschirmauflösung des aktuellen App-Fensters verfügbar ist. Um die Bildschirmlayout-ID- und -Layoutauflösung, die derzeit verwendet werden, in Retail Modern POS (MPOS) oder Retail Cloud POS (CPOS) zu finden, öffnen Sie die Seite **Einstellungen**, und durchsuchen Sie den Abschnitt **Sitzungsinformationen**. Sie können die aktuelle Fensterauflösung für die aktuelle Anwendung oder Browserrahmen finden. Nachdem Sie diese Informationen enthalten haben, können Sie die Quelle des Layoutinhalts in Retail finden, indem Sie zu **Kanaleinstellung** \> **POS**-\>**Einstellung**\>**POS**Bildschirmlayouts gehen.
+> POS wählt automatisch Layoutgrößen, basierend auf der nächsten Größe, für die die Bildschirmauflösung des aktuellen App-Fensters verfügbar ist. Um die Bildschirmlayout-ID- und -Layoutauflösung, die derzeit verwendet werden, in Retail Modern POS (MPOS) oder Retail Cloud POS (CPOS) zu finden, öffnen Sie die Seite **Einstellungen**, und durchsuchen Sie den Abschnitt **Sitzungsinformationen**. Sie können die aktuelle Fensterauflösung für die aktuelle Anwendung oder Browserrahmen finden. Nachdem Sie diese Informationen erhalten haben, können Sie die Quelle des Layoutinhalts finden, indem Sie zu **Kanaleinstellung** \> **POS-Einstellung** \> **POS** \> **Bildschirmlayouts** gehen.
 
 ![Bildschirmlayouts und Layoutlösungen/Größen in Retail und POS](../retail/media/demo-screen-layouts-fig-3-1.png)
 

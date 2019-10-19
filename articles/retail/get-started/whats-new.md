@@ -1,6 +1,6 @@
 ---
-title: Neuigkeiten oder Änderungen und Dynamics 365 for Retail
-description: Diese Seite weist auf Ressourcen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Retail zu erlernen.
+title: Neuigkeiten oder Änderungen und Dynamics 365 Retail
+description: Diese Seite weist auf Ressourcen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 Retail zu erlernen.
 author: sericks007
 manager: AnnBe
 ms.date: 10/20/2018
@@ -16,22 +16,22 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 23156e4f19beaf1bfe6ab9a66a326d55e7d85213
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: d0f89cc5ec0a0a1bb174a031aa9b6c059d608be4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845704"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025490"
 ---
-# <a name="whats-new-and-changed-in-dynamics-365-for-retail"></a>Neuigkeiten und Änderungen in Dynamics 365 for Retail
+# <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Neuigkeiten und Änderungen in Dynamics 365 Retail
 
 [!include [banner](../../includes/banner.md)]
 
-Diese Seite weist auf Ressourcen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 for Retail zu erlernen.
+Diese Seite weist auf Ressourcen hin, die Ihnen dabei helfen, alles über die neuen Funktionen in den aktuellsten Versionen von Microsoft Dynamics 365 Retail zu erlernen.
 
 [!include [release notes](../includes/release-notes.md)]
 
-## <a name="releases-of-dynamics-365-for-retail"></a>Versionen von Dynamics 365 for Retail
+## <a name="releases-of-dynamics-365-retail"></a>Versionen von Dynamics 365 Retail
 
 | Freigabe | Erstellungsnummer | Verfügbarkeit | Weitere Informationen |
 |---------|--------------|--------------|------------|

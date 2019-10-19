@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a11c5030f5641abb87830f5221ded5bb7ac038
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4a548d3536bbc0056ee22c07c464af062029da81
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560300"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250575"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Solver-Strategie für Produktkonfiguration
 
@@ -45,7 +45,7 @@ Das Solver-Strategiekonzept besteht aus den folgenden Strategien:
 
 Ein Produktkonfigurationsmodell kann als [Constraint-Satisfaction-Problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) formuliert werden. Microsoft Solver Foundation (MSF) bietet zwei Typen von Solver-Strategien, um die CSPs zu beheben, die von Produktkonfigurationsmodellen verwendet werden können. Diese Solver-Strategien hängen von [Heuristiken](https://techterms.com/definition/heuristic) ab, mit denen die Reihenfolge bestimmt wird, in der die Variablen der CSPs berücksichtigt werden, wenn das Problem behoben wird. Heuristiken können sich deutlich auf die Leistung auswirken, wenn ein Problem oder eine Klasse von Problemen gelöst wird.
 
-In Finance and Operations bestimmt die Solver-Strategie für Produktkonfigurationsmodelle, welcher Solver mit Heuristiken verwendet wird. Die Strategien **Standard**, **Minimaldomänen zuerst** und **Oben-nach-unten** verwenden die beiden Solver von MSF, wohingegen die Strategie **Z3** den Z3-Solver verwendet. 
+Die Solver-Strategie für Produktkonfigurationsmodelle bestimmt, welcher Solver mit Heuristiken verwendet wird. Die Strategien **Standard**, **Minimaldomänen zuerst** und **Oben-nach-unten** verwenden die beiden Solver von MSF, wohingegen die Strategie **Z3** den Z3-Solver verwendet. 
 
 Tatsächliche Kundenimplementierungsstudien haben gezeigt, dass eine Änderung der Solver-Strategie für ein Produktkonfigurationsmodell die Antwortzeit von Minuten in Millisekunden reduzieren kann. Daher lohnt sich der Aufwand, verschiedene Solver-Strategien auszuprobieren, um die effizienteste Strategie für Ihr Produktkonfigurationsmodell zu finden.
 

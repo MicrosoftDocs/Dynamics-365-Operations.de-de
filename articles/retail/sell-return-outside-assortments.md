@@ -1,6 +1,6 @@
 ---
 title: Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind
-description: Mit Dynamics 365 for Retail können Sie Produkte außerhalb eines Sortiments verkaufen und zurückgeben.
+description: Mit Dynamics 365 Retail können Sie Produkte außerhalb eines Sortiments verkaufen und zurückgeben.
 author: pdp1207
 manager: AnnBe
 ms.date: 05/24/2017
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 653a388de1a972fae488abd81f349d1b138fc716
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ae6bac983ddb4d4a217fe83c8f68c5a87ccd6a47
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567907"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024936"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Verkaufen und zurückgeben von Produkten, die Teil des Sortiments eines Shops sind
 
@@ -37,7 +37,7 @@ Nachfolgend sind einige typische Szenarios:
 + Ein Einzelhändler führt nicht bestimmte Produkte im Shop oder hat diese nicht an Lager, aber das Produkt ist in einer anderen Filiale verfügbar. Der Mitarbeiter der Filiale kann dem Kunden helfen, das Produkt in einer anderen Filiale zu suchen, diese dem Einkaufskorb hinzuzufügen, sie Auszuchecken und die Versandmethode auszuwählen.
 + Ein Einzelhändler verfügt über eine Vielzahl von Shops in einem bestimmten Ort oder einem Postleitzahlkreis und möchte die Debitoren nicht dazu zwingen, die Produkte demselben Shop zurückzusenden, in dem sie bestellt wurden. Stattdessen können Debitoren Produkten an einem beliebigen Shop zurücksenden.
 
-Diese allgemeine Szenarien sind in Dynamics 365 for Retail für Einzelhändler verfügbar. Mit Retail kénnen Sie:
+Diese allgemeine Szenarien sind in Retail für Einzelhändler verfügbar. Mit Retail kénnen Sie:
 
 + Produkte in anderen Filialen suchen.
 + Alle vorhandenen Produkte suchen.

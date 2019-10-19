@@ -1,6 +1,6 @@
 ---
 title: Sortimentsverwaltung
-description: In diesem Thema werden die grundlegende Begriffe der Sortimentsverwaltung in Microsoft Dynamics 365 for Retail erläutert und die Implementierungsüberlegungen für Ihr Projekt zur Verfügung gestellt.
+description: In diesem Thema werden die grundlegende Begriffe der Sortimentsverwaltung in Dynamics 365 Retail erläutert und die Implementierungsüberlegungen für Ihr Projekt zur Verfügung gestellt.
 author: jblucher
 manager: AnnBe
 ms.date: 03/12/2018
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: b4de2a97a19be6d4e52c43180e36baf7adf6a649
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4652641be0a1edaac919d36c7f127cd62c355a57
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558827"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025839"
 ---
 # <a name="assortment-management"></a>Sortimentsverwaltung
 
@@ -28,7 +28,7 @@ ms.locfileid: "1558827"
 
 ## <a name="overview"></a>Übersicht
 
-Microsoft Dynamics 365 for Retail stellt *Sortimente* bereit, mit denen Sie die Produktverfügbarkeit in Kanälen verwalten können. Sortimente bestimmen, welche Produkte für bestimmte Shops und für einen bestimmten Zeitraum verfügbar sind.
+Dynamics 365 Retail stellt *Sortimente* bereit, mit denen Sie die Produktverfügbarkeit in Kanälen verwalten können. Sortimente bestimmen, welche Produkte für bestimmte Shops und für einen bestimmten Zeitraum verfügbar sind.
 
 In Retail ist ein Sortiment eine Zuordnung eines oder mehrerer Kanäle oder Gruppen von Kanälen, wenn Organisationshierarchien verwendet werden (oder Gruppen von Produkten, wenn Kategoriehierarchien verwendet werden).
 

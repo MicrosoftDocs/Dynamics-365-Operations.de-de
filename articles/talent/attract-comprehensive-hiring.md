@@ -1,6 +1,6 @@
 ---
-title: Welche Version von Microsoft Dynamics 365 for Talent - Attract
-description: Dieses Thema enthält Informationen über die Funktionen in den verschiedenen Versionen von Microsoft Dynamics 365 for Talent - Attract.
+title: 'Welche Version von Microsoft Dynamics 365 Talent: Attract?'
+description: 'Dieses Thema enthält Informationen über die Funktionen in den verschiedenen Versionen von Microsoft Dynamics 365 Talent: Attract.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 04/04/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 59ab9f418c4d9039ca08a71de0dba0f96216aabb
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 59f3e78efa8801c81dccff2f45751b47fb30481f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739708"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009945"
 ---
 # <a name="which-version-of-attract"></a>Welche Version von Attract?
 
 [!include[banner](../includes/banner.md)]
 
-Die Version von Microsoft Dynamics 365 for Talent: Welches „Attract” für Sie das Richtige ist, hängt von der Größe und Bedürfnissen Ihrer Organisation ab. Die Grundversion von Attract bietet eine Untergruppe von Funktionen, die auf kleinere Teams oder Organisationen ausgerichtet sind, wobei der Einstellungsmanager der primäre Benutzer ist. Sie können damit beginnen, die Grundversion von Attract mit mindestens eine Lizenz zu verwenden.
+Welche Version von Microsoft Dynamics 365 Talent: Attract für Sie die Richtige ist, hängt von der Größe und den Bedürfnissen Ihrer Organisation ab. Die Grundversion von Attract bietet eine Untergruppe von Funktionen, die auf kleinere Teams oder Organisationen ausgerichtet sind, wobei der Einstellungsmanager der primäre Benutzer ist. Sie können damit beginnen, die Grundversion von Attract mit mindestens eine Lizenz zu verwenden.
 
 Attract mit dem Umfassenden Einstellungs-Add-On richtet sich an mittlere bis große Teams oder Organisationen, bei denen der Personalbeschaffungsmitarbeiter oder Talentspezialist der primäre Benutzer ist. Für das Umfassende Einstellungs-Add-On müssen Lizenzen über einen [Microsoft Dynamics 365-Partner](https://dynamics.microsoft.com/partners/find-a-partner/) erworben werden.
 

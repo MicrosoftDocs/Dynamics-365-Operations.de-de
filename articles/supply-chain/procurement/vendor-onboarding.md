@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5fda191a41300eea7f3036af54852857d8ff653d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548997"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250145"
 ---
 # <a name="onboard-vendors"></a>Kreditoren aufnehmen
 [!include [banner](../includes/banner.md)]
 
 ---
 
-Neue Kreditoren können als Kreditoren in Microsoft Dynamics 365 for Finance and Operations aufgenommen und registriert werden, basierend auf Informationen, die von einer Person gesammelt werden, die den Kreditor darstellt.
+Neue Kreditoren können als Kreditoren in Microsoft Dynamics 365 Supply Chain Management aufgenommen und registriert werden, basierend auf Informationen, die von einer Person gesammelt werden, die den Kreditor darstellt.
 
 Der Prozess besteht aus den folgenden Schritten, in denen verschiedene Rollen Aktivitäten im System ausführen.
 
 1. **OData zur Datenverwaltung** – Entitätsimport – Die ursprüngliche Anforderung ist die Registrierungsanforderung des künftigen Kreditors. Normalerweise kommt diese Anforderung von eine Quelle, wie von einer durch einen Debitor gehostete Website, die den anonymen Zugriff zulässt. Kreditoren können sich registrieren, indem sie grundlegende Informationen bereitstellen, wie z. B. Kreditorenname, Begründung, Organisationsnummer sowie Name und E-Mail-Adersse der Kontaktperson. Die Anforderungen werden über die Datenverwaltungsschnittstelle importiert.
-2. **Registrierungsanforderungen-Listenseite für künftigen Kreditor** – Auf Grundlage von Daten, die in der Registerierungsanforderung des künftigen Kreditors bereitgestellt werden, entscheidet ein Prokurist, ob der Kreditor aufgenommen werden soll. Der Prokurist zeigt die eingehende Anforderung auf der Listenseite **Registrierungsanforderungen des künftigen Kreditors** in Finance and Operations an.
+2. **Registrierungsanforderungen-Listenseite für künftigen Kreditor** – Auf Grundlage von Daten, die in der Registerierungsanforderung des künftigen Kreditors bereitgestellt werden, entscheidet ein Prokurist, ob der Kreditor aufgenommen werden soll. Der Prokurist zeigt die eingehende Anforderung auf der Listenseite **Registrierungsanforderungen des künftigen Kreditors** an.
 3. **Benutzerbereitstellungsworkflow** – Wenn ein Prokurist die Informationen in der eingehenden Anforderung überprüft hat und entschieden hat, mit dem Aufnahmeprozess fortzufahren, stellt der Anfoderungsbenutzerworkflow den neuen Benutzer bereit und sendet eine Einladungs-E-Mail, um die Kontaktperson als einen authentifizierten Benutzer von Microsoft Dynamics 365 zu akzeptieren.
-4. **Kreditorenregistrierungs-Assistent** – Die Kontaktperson des Kreditors meldet sich bei Finance and Operations an, indem sie das neue Benutzerkonto verwendet. Er oder sie führen einen Kreditorenregistrierungs-Assistenten abschließend aus, um Informationen, wie Adressen, Geschäftsdaten, Beschaffungskategorien und Fragebogenantworten bereitzustellen.
+4. **Kreditorenregistrierungs-Assistent** – Die Kontaktperson des Kreditors meldet sich an, indem sie das neue Benutzerkonto verwendet. Er oder sie führen einen Kreditorenregistrierungs-Assistenten abschließend aus, um Informationen, wie Adressen, Geschäftsdaten, Beschaffungskategorien und Fragebogenantworten bereitzustellen.
 5. **Genehmigungsworkflow** – Eine Kreditorenanforderung, die die Registrierungsinformationen enthält, wird erstellt. Die Kreditorenanforderung wird als Workflow übermittelt und zur Überprüfung und Genehmigung weitergeleitet.
 6. **Erstellung eines Kreditorenmasters und einer Benutzerrollenänderung** – Wenn die Kreditorenanforderung genehmigt wurde, wird ein Kreditorendatensatz erstellt. Dem Benutzerkonto der Kontaktperson des Kreditors wird entweder die Berechtigung zur Kreditorenzusammenarbeit gewährt, oder es wird deaktiviert.
 
@@ -45,14 +45,14 @@ In der folgenden Tabelle werden die Schritte und die Rollen angezeigt, die am Pr
 |--------------------------|---|---|---|---|---|---|
 | System                   | Die Anforderung für einen neuen Kreditor wird importiert. | | | | | Nachdem die Kreditorenanforderung angenommen wurde, wird der Kreditorendatensatz erstellt. |
 | Prokurist | | Starten Sie den Aufnahmeprozess. | | | Überprüfen Sie die Kreditorenanforderung, und nehmen Sie sie entweder an oder lehnen Sie sie ab. | |
-| Administrator            | | | Erstellen Sie einen Benutzer in Finance and Operations und Microsoft Azure. | | | |
+| Administrator            | | | Erstellen Sie einen Benutzer in Supply Chain Management und Microsoft Azure | | | |
 | Kontaktperson des Kreditors    | | | Senden Sie eine E-Mail an die Kontaktperson. | Erfassen Sie Kreditoreninformationen. | | |
 
-Für eine rasche Präsentation des Lieferanten-Onboardingprozesses schauen Sie das kurze YouTube video: [Onboard a new vendor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk}.
+Für eine schnelle Vorführung des Onboarding-Prozesses des Kreditors, schauen Sie sich dieses kurze YouTube-Video an: [Einen neuen Kreditor in Finance and Operations onboarden](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importieren der Registrierungsanforderung des künftigen Kreditors
 
-Die Registrierungsanforderung des künftigen Kreditors ist eine Entität in Finance and Operations. Sie können das System so einrichten, dass Daten über diese Entität importiert werden. 
+Die Registrierungsanforderung des künftigen Kreditors ist eine Entität in Supply Chain Management. Sie können das System so einrichten, dass Daten über diese Entität importiert werden. 
 
 In der folgenden Tabelle werden die Informationen angezeigt, die diese Entität enthält und die importiert werden können.
 
@@ -65,18 +65,18 @@ In der folgenden Tabelle werden die Informationen angezeigt, die diese Entität 
 | Vorname der Kontaktperson  | Der Vorname der Person, die eingeladen wird, um die Kreditoreninformationen zu erfassen. |
 | Zweiter Vorname der Kontaktperson | Der zweite Vorname der Person, die eingeladen wird, um die Kreditoreninformationen zu erfassen. |
 | Der Nachname der Kontaktperson   | Der Nachname der Person, die eingeladen wird, um die Kreditoreninformationen zu erfassen. |
-| E-Mail der Kontaktperson       | Die E-Mail-Adresse, die dazu verwendet wird, einen neuen Benutzer in Finance and Operations zu erstellen, der im Azure Active Directory (Azure AD)-Konto des Mandanten erfasst wird. |
+| E-Mail der Kontaktperson       | Die E-Mail-Adresse, die dazu verwendet wird, einen neuen Benutzer in Supply Chain Management zu erstellen, der im Azure Active Directory (Azure AD)-Konto des Mandanten erfasst wird. |
 | Übermittlungsdatum               | Das Datum, an dem die Anforderung in einem externen System erstellt wurde. |
-| Juristische Person                 | Die juristische Person, bei der der Kreditor anfragt, ein Kreditor zu werden. Dieser Wert muss ein Code für eine juristische Person sein, der in Finance and Operations erfasst wurde. Wenn kein Wert durch den Importprozess empfangen wird, wird ein Wert aus den Beschaffungsparametern angewendet. |
+| Juristische Person                 | Die juristische Person, bei der der Kreditor anfragt, ein Kreditor zu werden. Dieser Wert muss ein Code für eine juristische Person sein, der in Supply Chain Management erfasst wurde. Wenn kein Wert durch den Importprozess empfangen wird, wird ein Wert aus den Beschaffungsparametern angewendet. |
 | Kreditortyp                  | Der Kreditor kann entweder eine Organisation oder eine Person sein. Der Kreditortyp bestimmt, wie der Kreditor letztendlich erstellt wird. |
 
 Nachdem die Registrierungsanforderung des künftigen Kreditors importiert wurde, wird sie auf der Listenseite **Registrierungsanforderung des künftigen Kreditors** angezeigt. Von dieser Listenseite aus kann ein Prokurist den Benutzer einladen. Eine Benutzeranforderung zur Bereitstellung des Benutzers wird an einen Workflow übermittelt.
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Eine Anforderung eines künftigen Kreditorenbenutzers übermitteln
 
-Der Zweck der Anforderung für künftige Kreditorbenutzer liegt darin, die Person bereitzustellen, die die ursprüngliche Anforderung übermittelt hat, sodass er oder sie sich bei Finance and Operations mithilfe des E-Mail-Kontos anmelden kann, das in der Registrierungsanforderung für künftige Kreditoren bereitgestellt wird.
+Der Zweck der Anforderung für künftige Kreditorbenutzer liegt darin, die Person bereitzustellen, die die ursprüngliche Anforderung übermittelt hat, sodass er oder sie sich bei Supply Chain Management mithilfe des E-Mail-Kontos anmelden kann, das in der Registrierungsanforderung für künftige Kreditoren bereitgestellt wird.
 
-Die Anforderung des künftigen Kreditorenbenutzers wird durch den Benutzeranforderungsworkflow verarbeitet. Dieser Workflow kommuniziert durch die Azure AD B2B-Zusammenarbeit. Er erstellt einen Benutzer in Finance and Operations, der über die entsprechenden Sicherheitseinstellungen verfügt.
+Die Anforderung des künftigen Kreditorenbenutzers wird durch den Benutzeranforderungsworkflow verarbeitet. Dieser Workflow kommuniziert durch die Azure AD B2B-Zusammenarbeit. Er erstellt einen Benutzer in Supply Chain Management, der über die entsprechenden Sicherheitseinstellungen verfügt.
 
 Neue Benutzer, die eingerichtet werden, haben die folgenden Sicherheitsrollen:
 
@@ -89,7 +89,7 @@ Informationen zur Konfiguration der E-Mail und des Workflows im Allgemeinen find
 
 ## <a name="vendor-registration"></a>Kreditorenregistrierung
 
-Ein künftiger Kreditorbenutzer, der sich bei Finance and Operations anmeldet, sieht die erste Seite eines Kreditorenregistrierungs-Assistenten, wo er oder sie Kreditoreninformationen eingeben können.
+Ein künftiger Kreditorbenutzer, der sich bei Supply Chain Management anmeldet, sieht die erste Seite eines Kreditorenregistrierungs-Assistenten, wo er oder sie Kreditoreninformationen eingeben können.
 
 Der Assistent spiegelt die Konfiguration der Kreditorenanforderung wider. Das Land oder die Region, wo der Kreditor Geschäfte tätigt, bestimmt, welche Informationen im Assistenten angefordert werden und welche Informationen obligatorisch sind.
 
@@ -119,7 +119,7 @@ Kreditorenanforderungen sind auf der Seite **Kreditorenzusammenarbeits-Benutzera
 
 Eine Kreditorenanforderung enthält die Informationen, die der künftige Kreditorenbenutzer in den Kreditorenregistrierungs-Assistenten eingegeben hat.
 
-Die Anforderung ermöglicht es Ihnen, die Kreditoreninformationen zu überprüfen und zu entscheiden, ob der Kreditor ein registrierter Kreditor in Finance and Operations werden soll.
+Die Anforderung ermöglicht es Ihnen, die Kreditoreninformationen zu überprüfen und zu entscheiden, ob der Kreditor ein registrierter Kreditor in Supply Chain Management werden soll.
 
 Die Kreditorenanforderung sollte an einen Workflow übermittelt werden, und sie sollte an die relevanten Prüfer und genehmigenden Personen weitergeleitet werden. Grundlegende Informationen zum Einrichten von Workflows finden Sie unter [Beschaffung](procurement-sourcing-workflows.md).
 
@@ -141,7 +141,7 @@ Wenn eine Kreditorenanforderung genehmigt ist, wird ein Kreditorenkonto erstellt
 
 Bevor Sie eine Kreditorenanforderung genehigen, wählen Sie auf der Seite **Neuer Kreditor** im Inforegister **Allgemein** die Option **Kreditorengruppe** aus, um eine Kreditorengruppe auszuwählen.
 
-Wenn der künftige Kreditorenbenutzer Zugriff auf Finance and Operations als ein Kreditorenzusammenarbeitsbenutzer haben soll, der den Kreditor vertritt, legen Sie die Zugriffsberechtigung für die Kreditorenzusammenarbeit auf **Ja** fest. Um das Benutzerkonto zu deaktivieren, das der künftige Kreditor verwendet hat, um sich zu registrieren, legen Sie diese Berechtigung auf **Nein** fest.
+Wenn der künftige Kreditorenbenutzer Zugriff auf Supply Chain Management als ein Kreditorenzusammenarbeitsbenutzer haben soll, der den Kreditor vertritt, legen Sie die Zugriffsberechtigung für die Kreditorenzusammenarbeit auf **Ja** fest. Um das Benutzerkonto zu deaktivieren, das der künftige Kreditor verwendet hat, um sich zu registrieren, legen Sie diese Berechtigung auf **Nein** fest.
 
 Wenn die Zugriffsberechtigung für die Kreditorenzusammenarbeit auf **Ja** festgelegt ist, wenn die Kreditorenanforderung genehmigt ist, wird eine Anforderung übermittelt, um die Rollen des Benutzers zu ändern, sodass der Benutzer die Rollen hat, die für den Typ **Kreditor** in **Externe Rollen** definiert sind. Wenn diese Berechtigung auf **Nein** festgelegt ist, wenn die Kreditorenanforderung genehmigt ist, wird eine Anforderung übermittelt, den Benutzer zu deaktivieren. In diesem Fall muss der Workflow, um einer Benutzeranforderung zu deaktivieren, eingerichtet werden.
 

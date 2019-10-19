@@ -1,6 +1,6 @@
 ---
-title: Neuerungen und Änderungen in Dynamics 365 for Talent (25. Juni 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen und Änderungen in Dynamics 365 Talent (25. Juni 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/25/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-25
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 3c7a13373193a6af4033b4609f0c338c2c6128c6
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 56fadba6dc085f849953aa88cf28a2c83e265f40
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856352"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009029"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-25-2019"></a>Neuerungen und Änderungen in Dynamics 365 for Talent (25. Juni 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-25-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (25. Juni 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 

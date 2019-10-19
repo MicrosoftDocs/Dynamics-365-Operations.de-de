@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e86c2f8d1d5920198db74dc3b64f2393c5e13ff7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 46aa4378a5b106d5717e0c841f2f7c9d6629489e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555037"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251315"
 ---
 # <a name="register-serial-numbers-in-the-sales-process"></a>Seriennummern im Vertriebsprozess registrieren
 
@@ -34,9 +34,9 @@ ms.locfileid: "1555037"
 
 Dieses Thema erläutert, wie Sie Seriennummern auf Lieferscheinen oder Rechnungen während des Verkaufsprozesses erfassen können. Diese Funktion ist sinnvoll, wenn ein Unternehmen nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen möchte, aber keine Seriennummern von Zugang bis Abgang im Bestand verwalten muss.
 
-Viele Unternehmen möchten nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen und müssen keine Seriennummern von Zugang bis Abgang im Bestand verwalten. In diesen Szenarien ermöglicht Microsoft Dynamics 365 for Finance and Operations es Ihnen, die Seriennummern auf den Lieferscheinen oder Rechnungen zu erfassen, wenn Produkte verkauft werden. Wenn Produkte später zurückgesendet werden, können Sie jedes Produkt zu einer Rechnung nachverfolgen, um zu bestimmen, ob Sie das Produkt verkauft haben und ob die Service- oder Garantieverpflichtungen gültig sind.
+Viele Unternehmen möchten nur Seriennummern zu Dienstleistungs- und Garantiezwecken aufzeichnen und müssen keine Seriennummern von Zugang bis Abgang im Bestand verwalten. In diesen Szenarien können Sie die Seriennummern auf den Lieferscheinen oder Rechnungen erfassen, wenn Produkte verkauft werden. Wenn Produkte später zurückgesendet werden, können Sie jedes Produkt zu einer Rechnung nachverfolgen, um zu bestimmen, ob Sie das Produkt verkauft haben und ob die Service- oder Garantieverpflichtungen gültig sind.
 
-Sie müssen Seriennummern für den Verkaufsprozess aktivieren, indem Sie die Option **Aktiv im Verkaufsprozess** auf der Seite **Rückverfolgungsangabengruppen** auswählen. Folgende Ereignisse treten in Microsoft Dynamics 365 for Finance and Operations auf:
+Sie müssen Seriennummern für den Verkaufsprozess aktivieren, indem Sie die Option **Aktiv im Verkaufsprozess** auf der Seite **Rückverfolgungsangabengruppen** auswählen. Folgende Ereignisse treten anschließend in Supply Chain Management auf:
 -   Wählen Sie im Inforegister **Seriennummern** die Option **Seriennummernkontrolle** aus. Wenn diese Option ausgewählt ist, müssen Sie eine Seriennummer für jeden Artikel auf dem Lieferschein oder der Rechnung erfassen.
 -   Alle Auswahlen auf der Rückverfolgungsangabengruppe für Seriennummern werden deaktiviert, außer der Option **Leerer Abgang zulässig**. Sie können die Option **Leerer Abgang zulässig** auswählen, um die Seriennummernkontrolle zu überschreiben und zuzulasen, dass Produkte ohne Registrierung von Seriennummern verpackt und fakturiert werden.
 

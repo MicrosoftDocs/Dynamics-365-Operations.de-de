@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c9392263e8c113c541b64e8e79853520a13d11
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518042"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026255"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Fragebögen verteilen und planen
 
@@ -83,7 +83,7 @@ Sie können Planungstypen für einen Fragebogenzeitplan auf der Seite **Zeitplä
 
 Sie können Referenztypen verwenden, um Kriterien für die Auswahl von Befragungsteilnehmern einzugeben, wenn Sie einen Fragebogen terminieren. 
 
-Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten. Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 for Finance and Operations. Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird. 
+Verwenden Sie die **Referenztypen**-Seite, um Referenztypen für einen Fragebogen einzurichten. Jeder Referenztyp entspricht einer Tabelle in Microsoft Dynamics 365 Finance. Wenn Sie Zeitpläne für Fragebögen erstellen, können Sie einzelne Datensätze in der Tabelle oder einen Datensatzbereich angeben, denen bzw. dem der Fragebogen zugeordnet wird. 
 
 Wenn Sie beispielsweise die Tabelle Kurse auswählen, können Sie entscheiden, für welchen Kurs der Fragebogen verwendet werden soll. Wenn Sie einen Referenztyp für die Kurstabelle einrichten, sind einige Felder und Schaltflächen auf der Seite **Kurse** verfügbar.
 

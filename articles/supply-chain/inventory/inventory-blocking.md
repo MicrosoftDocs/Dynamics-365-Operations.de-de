@@ -1,6 +1,6 @@
 ---
 title: Sperrung von Lagerbestand
-description: Dieser Artikel gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Microsoft Dynamics 365 for Finance and Operations ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
+description: Dieses Thema gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Supply Chain Management ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
 author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb6291e2f012f148b247b747f84155b96cf09677
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fc8200380ac3aeb9e3b73f43212458660a15ade6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557475"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250805"
 ---
 # <a name="inventory-blocking"></a>Sperrung von Lagerbestand
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Microsoft Dynamics 365 for Finance and Operations ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
+Dieser Artikel gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Supply Chain Management ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
 
 Sie können Lagerartikel auf die folgenden Arten sperren:
 -   Manuell

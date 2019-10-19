@@ -1,6 +1,6 @@
 ---
-title: Schließt einen Stelle in Microsoft Dynamics für Talent 0 Attract
-description: In diesem Thema wird erläutert, wie eine Stelle in Microsoft Dynamics 365 for Talent - Attract geschlossen wird.
+title: 'Schließt einen Stelle in Microsoft Dynamics Talent: Attract'
+description: 'In diesem Thema wird erläutert, wie eine Stelle in Microsoft Dynamics 365 Talent: Attract geschlossen wird.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/10/2019
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2010-07-10
 ms.dyn365.ops.version: Talent 2019 Wave 1 update
-ms.openlocfilehash: ec1b4d1fcd02bad329030b37a491b52a7c9c0a30
-ms.sourcegitcommit: 42589141431a5f357804b7e9ea9c781d594ef09d
+ms.openlocfilehash: 632db42b12d0a442b8e1f35dbc784d252ffde399
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773539"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008615"
 ---
 # <a name="close-a-job"></a>Eine Stelle schließen
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Talent:  Attract können Sie eine Stelle entweder als **Stelle storniert** oder **Position besetzt** schließen. Sie können eine Stelle jederzeit löschen.
+In Microsoft Dynamics 365 Talent: Attract können Sie eine Stelle entweder als **Stelle storniert** oder **Position besetzt** schließen. Sie können eine Stelle jederzeit löschen.
 
 Wenn Sie angeben möchten, dass die Position besetzt wurde, muss ein Kandidat ein Angebot für die Stelle akzeptiert haben.
 

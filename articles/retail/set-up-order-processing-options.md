@@ -1,6 +1,6 @@
 ---
 title: Einrichten von Callcenterkanälen
-description: Die Themen dieses Abschnitts enthalten Informationen zum Verarbeiten von Bestellungen für Callcenter mit Microsoft Dynamics 365 for Retail.
+description: Die Themen dieses Abschnitts enthalten Informationen zum Verarbeiten von Bestellungen für Callcenter mit Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 04/16/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0bfbb763b8ded2a0ce90b66eb686379b1dc92a6d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 36491e4d2e63819ce637afb69744089d820c69b0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549358"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024820"
 ---
 # <a name="set-up-call-center-channels"></a>Einrichten von Callcenterkanälen
 
 [!include [banner](includes/banner.md)]
 
-Ein Unternehmen kann Callcenter-Kanäle in Microsoft Dynamics 365 for Retaildefinieren. Callcenterkanäle werden bei **Einzelhandel** \> **Messagingkanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert und sie sind für eine juristische Person bestimmt.
+Ein Unternehmen kann Callcenter-Kanäle in Dynamics 365 Retaildefinieren. Callcenterkanäle werden bei **Einzelhandel** \> **Messagingkanäle** \> **Callcenter** \> **Alle Callcenter** konfiguriert und sie sind für eine juristische Person bestimmt.
 
 Wenn ein neuer Callcenterkanal erstellt wird, wird er systematisch einer Organisationseinheitsnummer zugewiesen. Da Callcenter als Organisationseinheiten erstellt werden, können Benutzer den Callcenterkanal zu verschiedenen Kleinfunktionen, z. B. Sortimente, Katalogen und bestimmte Lieferarten verknüpfen.
 
@@ -76,6 +76,8 @@ Wenn Sie das Callcenterkanal definieren, müssen Sie Kanalbenutzer mit dem Callc
 
 Standardmäßig wird die Markierung **Retailverkauf** im Auftragskopf für alle Aufträge aktiviert, die Callcenterbenutzer erstellen. Hierbei können Aufträge vom Preis des Systems und Funktionen der verkaufsfördernden Maßnahmen profitieren.
 
-Benutzer, die nicht mit einer Callcenterkanalverwendung die von Microsoft Dynamics 365 for Finance and OperationsStandardauftragserfassungsfunktionen verknüpft werden. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
+
+Benutzer, die nicht mit einem Callcenterkanal verknüpft sind, verwenden die Standardauftragserfassungsfunktionen von Microsoft Dynamics 365 Finance. Aufträge, die diese Benutzer durch das Auftragseingabeformular eingeben, werden nicht als Retailaufträge systematisch identifiziert. Darüber hinaus sind diese Aufträge, die von diesen Benutzern eingegeben werden, nicht Auftragsabschlussregeln, Einzelhandelspreislogik oder anderen Auftragsprüfungen unterworfen, die in der Callcenterkanalkonfiguration oder im Systemparameter des Callcenters definiert werden können.
+
 
 Nachdem Sie die Konfiguration des Callcenters abgeschlossen und Kanalbenutzer definiert haben, um das gewünschte Systemverhalten sicherzustellen, überprüfen Sie, ob alle erforderlichen Callcenterparameter bei **Retail** \> **Kanaleinstellung** \> **Callcenter-Einstellung** \> **Callcenter-Parameter** definiert sind. Überprüfen Sie, ob auch zugehörige Nummernkreise definiert sind.

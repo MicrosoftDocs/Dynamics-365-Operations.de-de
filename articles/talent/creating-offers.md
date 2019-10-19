@@ -1,6 +1,6 @@
 ---
 title: Erstellen, Genehmigen und Unterschreiben von Angeboten
-description: In diesem Thema wird ausgeführt, wie Sie ein Angebot für einen Kandidaten mit Dynamics 365 for Talent erstellen, genehmigen und signieren.
+description: In diesem Thema wird ausgeführt, wie Sie ein Angebot für einen Kandidaten mit Dynamics 365 Talent erstellen, genehmigen und signieren.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/26/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-19
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8c5f95f1d3be22a73cc42cb3667b793490f2a136
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: b9ccd22e218137637cc0bbde0d4ad19a28591731
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739632"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008104"
 ---
 # <a name="create-approve-and-sign-offers"></a>Angebote erstellen, genehmigen und unterzeichnen
 
@@ -110,7 +110,7 @@ Sie können mehrere Aktivitäten ausführen, bevor Sie dem Kandidaten das Angebo
 Wenn Adobe Sign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller in diesem Schritt mit ihrer Adobe Sign Lizenz verbinden. 
 
 ### <a name="docusign"></a>DocuSign
-Wenn DocuSign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller mit ihrer DocuSign Lizenz verbinden. Einmal angemeldet werden das Standardkonto und die dem DocuSign-Profile des Benutzers zugeordneten Berechtigungen mit Talent Attract verbunden. 
+Wenn DocuSign als bevorzugte E-Unterschriftmethode ausgewählt wurde, müssen sich Angebotersteller mit ihrer DocuSign Lizenz verbinden. Einmal angemeldet werden das Standardkonto und die dem DocuSign-Profile des Benutzers zugeordneten Berechtigungen mit Talent: Attract verbunden. 
 
 -  Sie können die E-Mail-Vorlage anzeigen und nach Bedarf bearbeiten.
 

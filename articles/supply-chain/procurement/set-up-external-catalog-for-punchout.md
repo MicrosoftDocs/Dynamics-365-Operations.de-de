@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39baa331120d765543c3cf662ce53d2bcfe404ab
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: e9b6c3cb5b6bbc83604bee11a2472b2ad1136269
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595610"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249385"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Externen Katalog für PunchOut eProcurement einrichten
 
@@ -37,12 +37,12 @@ Um die Kommunikation einzurichten, muss Ihr Kreditor Informationen für Sie zur 
 
 ## <a name="setting-up-an-external-catalog"></a>Einrichten eines externen Katalogs
 
-Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingibt, ermöglichen, auf einer externen Website die Produkte auszuwählen. Die Produkte, die der Mitarbeiter im externen Katalog auswählen, werden zu Dynamics 365 for Finance and Operations mit aktuellen Preisangaben zurückgegeben und von hier können sie der Bestellanforderung hinzugefügt werden. Die Absicht ist es, Mitarbeiter nicht dazu zu berechtigen, einen Auftrag auf einer externen Website zu erteilen. Wird der externe Katalog eingerichtet, müssen Sie prüfen, ob der Zweck der Seite, die auf den externen Lieferantenkatalog zugreifen kann, so ist, dass Angebotsinformationen gesammelt werden und kein tatsächlicher Auftrag erteilt wird.
+Der externe Katalog sollte einem Mitarbeiter, der eine Bestellanforderung eingibt, ermöglichen, auf einer externen Website die Produkte auszuwählen. Die Produkte, die der Mitarbeiter im externen Katalog auswählen, werden mit aktuellen Preisangaben zurückgegeben und von hier können sie der Bestellanforderung hinzugefügt werden. Die Absicht ist es, Mitarbeiter nicht dazu zu berechtigen, einen Auftrag auf einer externen Website zu erteilen. Wird der externe Katalog eingerichtet, müssen Sie prüfen, ob der Zweck der Seite, die auf den externen Lieferantenkatalog zugreifen kann, so ist, dass Angebotsinformationen gesammelt werden und kein tatsächlicher Auftrag erteilt wird.
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Führen Sie zum Einrichten eines externen Lieferantenkatalogs die folgenden Aufgaben aus:
 
 1. Richten Sie eine Beschaffungskategoriehierarchie ein. Weitere Informationen finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](tasks/set-up-policies-procurement-category-hierarchies.md).
-2. Registrieren Sie den Kreditor im Bereich Finance and Operations. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Kreditor und den Kreditorkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren in Microsoft Dynamics 365, finden Sie unter [Verwalten Sie Kreditorenzusammenarbeitbenutzer](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestimmten Beschaffungskategorien zuweisen](tasks/approve-vendors-specific-procurement-categories.md).
+2. Registrieren von Kreditoren in Supply Chain Management. Bevor Sie Konfigurationen für den Zugriff auf einen externen Lieferantenkatalog einrichten können, müssen Sie zuerst den Kreditor und den Kreditorkontakt in Microsoft Dynamics 365 einrichten. Der externe Lieferantenkatalog muss auch der ausgewählten Beschaffungskategorie zugeordnet werden. Weitere Informationen zum Registrieren von Kreditoren finden Sie unter Benutzer [für Kreditorenzusammenarbeit verwalten](manage-vendor-collaboration-users.md). Informationen zum Einrichten einer Beschaffungskategoriehierarchie und zum Zuordnen der Warencodes zu einer Beschaffungskategorie finden Sie unter [Lieferanten bestimmten Beschaffungskategorien zuweisen](tasks/approve-vendors-specific-procurement-categories.md).
 3. Stellen Sie sicher, dass die Maßeinheiten und die Währung, die vom Lieferanten verwendet werden, eingerichtet werden. Informationen darüber, wie Sie eine Maßeinheit erstellen, finden Sie unter [Maßeinheit verwalten](../pim/tasks/manage-unit-measure.md).
 4. Konfigurieren Sie den externen Lieferantenkatalog anhand der Anforderungen an die externe Katalogwebsite des Kreditors. Genauere Informationen zu dieser Aufgabe finden Sie unter [Konfigurieren des externen Lieferantenkataloge](#configure-the-external-vendor-catalog).
 5. Testen Sie die Konfigurationen des externen Lieferantenkatalogs. Überprüfen Sie dabei, ob die Einstellungen funktionieren und Sie auf den Katalog zugreifen können. Verwenden Sie die Aktion **Einstellungen überprüfen**, um die angeforderte Nachricht aufzusetzen. Diese Nachricht soll Kreditorendie auf die externe Katalogwebsite leiten, die in einem Browserfenster geöffnet wird. Während der Prüfungs können Sie keine Artikel und Dienstleistungen beim Lieferanten bestellen. Zum Bestellen von Artikeln oder Dienstleistungen müssen Sie auf die Bestellanforderung des Lieferanten zugreifen.
@@ -90,9 +90,9 @@ Ihr Kreditor kann eine Anforderung für den Erhalt eines äußeren Elements in d
 Weitere Informationen zum cXML-Protokoll finden Sie unter der [cXML.org-Website](http://cxml.org/).
 
 ## <a name="post-back-message"></a>Nachricht zurückbuchen
-Die zurückgebuchte Nachricht ist die Meldung, die der Kreditor erhält, wenn der Benutzer sich von der externen Website abmeldet und zu Finance and Operations zurückkehrt. Rückmeldungsnachrichten können nicht konfiguriert werden. Die Meldungen basieren auf den cXML Protokolldefinition. Hierbei gelten die Informationen, die Teil der Rückmeldungsnachricht werden können, die auf einer Bestellanforderungsposition basieren:
+Die zurückgebuchte Nachricht ist die Meldung, die der Kreditor erhält, wenn der Benutzer sich von der externen Website abmeldet und zu Supply Chain Management zurückkehrt. Rückmeldungsnachrichten können nicht konfiguriert werden. Die Meldungen basieren auf den cXML Protokolldefinition. Hierbei gelten die Informationen, die Teil der Rückmeldungsnachricht werden können, die auf einer Bestellanforderungsposition basieren.
 
-| Meldung vom Kreditor empfangen | Kopiert die Bestellanforderungsposition nach Finance and Operations|
+| Meldung vom Kreditor empfangen | Zur Anforderungsposition kopiert|
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Leistung|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Externe Artikelkennung|

@@ -1,6 +1,6 @@
 ---
 title: Fremdarbeit
-description: Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Microsoft Dynamics 365 for Finance and Operationserstellen.
+description: Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Dynamics 365 Supply Chain Managementerstellen.
 author: christophernread
 manager: AnnBe
 ms.date: 09/28/2018
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 55b516f928eadea9b7ddbb1192db79f3ab7fa204
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d1d7adf91c246ecad574043cbb60ca260bb328
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568388"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249910"
 ---
 # <a name="subcontracting"></a>Fremdarbeit
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Microsoft Dynamics 365 for Finance and Operationserstellen. Der erste Teil dieses Themas beschreibt die Einstellungen der Daten. Der zweite Teil führt Sie durch die Schritte der exemplarischen Vorgehensweise.
+Dieses Thema können Sie eine, einschließlich Zulieferung exemplarischen Vorgehensweise der bei der Herstellung in Microsoft Dynamics 365 Supply Chain Management erstellen. Der erste Teil dieses Themas beschreibt die Einstellungen der Daten. Der zweite Teil führt Sie durch die Schritte der exemplarischen Vorgehensweise.
 
 ## <a name="target-audience"></a>Zielgruppe
 

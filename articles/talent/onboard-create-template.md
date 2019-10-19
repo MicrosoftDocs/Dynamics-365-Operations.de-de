@@ -1,6 +1,6 @@
 ---
-title: Erstellen Sie eine Onboarding-Vorlage, indem Sie Dynamics 365 for Talent - Onboard verwenden
-description: In diesem Thema wird erläutert, wie Sie die Dynamics 365 for Talent - Onboard App verwenden, um eine Vorlage für ein Onboarding-Handbuch für Ihre Neueinstellungen zu erstellen. Diese Aufgabe ist ein erster Schritt in einer Human Capital Management (HCM)-Einstellungsstrategie.
+title: Erstellen Sie eine Onboarding-Vorlage, indem Sie Dynamics 365 Talent - Onbaord verwenden
+description: In diesem Thema wird erläutert, wie Sie die Dynamics 365 Talent - Onboard verwenden, um eine Vorlage für ein Onboarding-Handbuch für Ihre Neueinstellungen zu erstellen. Diese Aufgabe ist ein erster Schritt in einer Human Capital Management (HCM)-Einstellungsstrategie.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c53c24b2913e3ca30cfc6491556b49d5d9230128
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 63f13380f3d2c31c4cc9009142f320ad8a41e8ee
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731485"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009876"
 ---
-# <a name="create-an-onboarding-template-by-using-dynamics-365-for-talent-onboard"></a>Erstellen Sie eine Onboarding-Vorlage, indem Sie Dynamics 365 for Talent. Onbaord verwenden
+# <a name="create-an-onboarding-template"></a>Erstellen einer Onboarding-Vorlage
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard enthält Vorlagen, die Ihnen helfen, eine Onboarding-Anleitung schnellstmöglich zu erstellen. Sie können eine oder mehrere der Vorlagen verwenden, oder Sie können eigene Vorlagen erstellen. Onboarding stellt Beispieltext für die Datenzusammenführung bereit, die Sie verwenden können, wenn Sie Ihre eigenen Vorlagen erstellen. Daher ist der Prozess einfach, wenn Sie von Grund auf neu starten.
+Microsoft Dynamics 365 Talent: Onboard enthält Vorlagen, die Ihnen helfen, eine Onboarding-Anleitung schnellstmöglich zu erstellen. Sie können eine oder mehrere der Vorlagen verwenden, oder Sie können eigene Vorlagen erstellen. Onboarding stellt Beispieltext für die Datenzusammenführung bereit, die Sie verwenden können, wenn Sie Ihre eigenen Vorlagen erstellen. Daher ist der Prozess einfach, wenn Sie von Grund auf neu starten.
 
 ## <a name="create-an-onboarding-template-from-an-existing-template"></a>Erstellen Sie eine Onboarding Vorlage aus einer vorhandenen Vorlage
 

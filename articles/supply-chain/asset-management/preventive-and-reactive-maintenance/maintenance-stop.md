@@ -3,7 +3,7 @@ title: Wartungsausfallzeit
 description: In diesem Thema wird die Ausfallzeit der Wartung im Asset Management erläutert.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,17 +16,16 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a831d56116c57b640993162473e74e5ce181f09c
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: c035f54e833b9bc25b4502901cf307213789b439
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875663"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922182"
 ---
 # <a name="maintenance-downtime"></a>Wartungsausfallzeit
-
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,12 +43,12 @@ Wenn Anlagen bei einer Ausfallregistrierung ausgewählt wurden, werden alle offe
 
 ## <a name="maintenance-downtime-activities"></a>Wartungsausfallaktivitäten
 
-Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten**, um eine Liste aller Wartungsausfallzeiten zu öffnen und einige der mit den Aktivitäten verbundenen Informationen anzuzeigen. Klicken Sie auf einen Link in der Spalte **Ausfallzeiten pflegen**, um die Detailansicht zu öffnen.
+Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten**, um eine Liste aller Wartungsausfallzeiten zu öffnen und einige der mit den Aktivitäten verbundenen Informationen anzuzeigen. Klicken Sie auf einen Link in der Spalte **Ausfallzeiten pflegen**, um die Detailansicht zu öffnen. Die folgende Abbildung zeigt ein Beispiel der Liste **Wartungsausfallaktivitäten**.
 
 ![Abbildung 1](media/19-preventive-maintenance.png)
 
 
-## <a name="create-a-maintenance-downtime-registration"></a>Erstellen einer Registrierung für Wartungsausfallzeiten
+## <a name="create-a-maintenance-downtime-activity"></a>Erstellen einer Wartungsausfallaktivität
 
 1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten** > **Alle Wartungsausfallzeiten** oder **Aktive Wartungsausfallzeiten**.
 
@@ -61,9 +60,11 @@ Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten*
 
 5. Klicken Sie auf dem **Wartungsausfallzeiten-Aktivitätsanlagen** FastTab **Zeile hinzufügen**, um Anlagen einzeln zur Ausfallaktivität hinzuzufügen.
 
-6. Klicken Sie auf **Speichern**, wenn alle Objekte hinzugefügt wurden.
+6. Klicken Sie auf **Speichern**, wenn alle Objekte hinzugefügt wurden. Die folgende Abbildung zeigt das Beispiel einer Wartungsausfallaktivität mit zugehörigen Anlagen und Wartungsaufträge angezeigt.
 
 7. Die Wartungsaufträge und offenen Wartungseinteilungen, die sich auf die ausgewählten Anlagen beziehen, werden auf den Zeilen **Ergebnis der Wartungsaufträge** und **Wartungseinteilungen** FastTabs angezeigt. Im Feld **Allgemein**FastTab > **Arbeitsaufträge**Gruppe > **Wartungsprognose Stunden**Feld und **Allgemein**FastTab > **Wartungsplan**Gruppe > **Wartungsprognose Stunden** sehen Sie die Gesamtzahl der prognostizierten Stunden für Wartungsaufträge und Wartungseinteilungen.
+
+Die folgende Abbildung zeigt ein Beispiel der Detailansicht **Wartungsausfallaktivitäten**.
 
 ![Abbildung 2](media/20-preventive-maintenance.png)
 
@@ -74,7 +75,7 @@ Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten*
 
 9. Bearbeiten Sie im Dialog **Kapazitätsbelastung berechnen** bei Bedarf Start- und Endzeiten und wählen Sie aus, ob Sie Arbeitsaufträge und Wartungspläne in die Kalkulation einbeziehen möchten. Über das Feld **Stufe** können Sie festlegen, wie detailliert die Kapazitätsberechnung bezüglich Technischer Standort erfolgen soll. Wenn Sie z.B. die Zahl „1“ in das Feld einfügen und eine mehrstufige Struktur des Technischen Standortes haben, werden alle Anlagen eines Technischen Standortes, die bei der Ausfallzeitaktivität der Wartung ausgewählt werden, auf der obersten Ebene angezeigt, so dass die Stunden einer Zeile von untergeordneten Technischen Standorten aufsummiert werden können. Wenn Sie in das Feld **Ebene** die Zahl „0“ eingeben, erhalten Sie ein detailliertes Ergebnis, das alle Kapazitätsbelastungszeilen auf allen Ebenen des Technischen Standorts anzeigt, auf denen sie sich befinden.
 
-10. Klicken Sie auf **OK**, um die Berechnung zu starten. Die Gesamtzahl der Stunden wird in der Übersicht **Kapazitätsbelastung** angezeigt. Klicken Sie auf der Registerkarte **Kapazitätsbelastung** > die Gruppen des Aktionsbereichs **Gruppieren nach...** auf die entsprechenden Schaltflächen, um einen detaillierteren Überblick über die Zuordnung der prognostizierten Stunden zu erhalten.
+10. Klicken Sie auf **OK**, um die Berechnung zu starten. Die Gesamtzahl der Stunden wird in der Übersicht **Kapazitätsbelastung** angezeigt. Klicken Sie auf der Registerkarte **Kapazitätsbelastung** > die Gruppen des Aktionsbereichs **Gruppieren nach...** auf die entsprechenden Schaltflächen, um einen detaillierteren Überblick über die Zuordnung der prognostizierten Stunden zu erhalten. In der folgende Abbildung wird die Ergebnisse einer **Kapazitätsauslastung** angezeigt.
 
 ![Abbildung 3](media/21-preventive-maintenance.png)
 
@@ -91,7 +92,7 @@ Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsausfallzeiten*
 
 15. Bearbeiten Sie im Dialog **Positionsprognose berechnen** bei Bedarf Start- und Endzeiten und wählen Sie aus, ob Sie Arbeitsaufträge und Wartungspläne in die Kalkulation einbeziehen möchten. Über das Feld **Stufe** können Sie festlegen, wie detailliert die Kapazitätsberechnung bezüglich Technischer Standort erfolgen soll. Wenn Sie z.B. die Zahl „1“ in das Feld einfügen und eine mehrstufige Struktur des Technischen Standortes haben, werden alle Anlagen eines Technischen Standortes, die bei der Ausfallzeitaktivität der Wartung ausgewählt werden, auf der obersten Ebene angezeigt, so dass die Stunden einer Zeile von untergeordneten Technischen Standorten aufsummiert werden können. Wenn Sie in das Feld **Ebene** die Zahl „0“ eingeben, erhalten Sie ein detailliertes Ergebnis, das alle Kapazitätsbelastungszeilen auf allen Ebenen des Technischen Standorts anzeigt, auf denen sie sich befinden.
 
-16. Klicken Sie auf **OK**, um die Berechnung zu starten. Die Gesamtzahl der Positionsprognosen wird in der Übersicht **Positionsprognose** angezeigt. Klicken Sie auf der Registerkarte **Einzelteilprognose** > die Gruppen des Aktionsbereichs **Gruppieren nach...** auf die entsprechenden Schaltflächen, um einen detaillierteren Überblick über die Zuordnung der prognostizierten Elemente zu erhalten.
+16. Klicken Sie auf **OK**, um die Berechnung zu starten. Die Gesamtzahl der Positionsprognosen wird in der Übersicht **Positionsprognose** angezeigt. Klicken Sie auf der Registerkarte **Einzelteilprognose** > die Gruppen des Aktionsbereichs **Gruppieren nach...** auf die entsprechenden Schaltflächen, um einen detaillierteren Überblick über die Zuordnung der prognostizierten Elemente zu erhalten. Die folgende Abbildung zeigt die Ergebnisse einer Berechnung für **Artikelplanung**.
 
 ![Abbildung 4](media/22-preventive-maintenance.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Veröffentlichen von Stellenausschreibungen auf LinkedIn von Microsoft Dynamics 365 for Talent - Attract
-description: In diesem Thema wird erläutert, wie Dynamics 365 for Talent - Attract verwendet wird, um Stellen auf LinkedIn zu veröffentlichen.
+title: 'Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Microsoft Dynamics 365 Talent: Attract'
+description: 'In diesem Thema wird erläutert, wie Dynamics 365 Talent: Attract verwendet wird, um Stellen auf LinkedIn zu veröffentlichen.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: f2109f5e90321598eb2317140eef6bcd86ab82f5
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 014202ca49e5bd6204d450b2a43c7372ed84ff33
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756175"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008242"
 ---
 # <a name="post-jobs-to-linkedin"></a>Ausschreibungen auf LinkedIn veröffentlichen
 
 [!include [banner](../includes/banner.md)]
 
-LinkedIn sit das größten Online-Berufsnetzwerk und ermöglicht Zugriff auf die besten Talente weltweit. Microsoft Dynamics 365 for Talent: Attract hilft Ihnen, die Talente zu finden, die Sie brauchen, indem Sie Ihre Stellen direkt von Attract in LinkedIn veröffentlichen.
+LinkedIn sit das größten Online-Berufsnetzwerk und ermöglicht Zugriff auf die besten Talente weltweit. Microsoft Dynamics 365 Talent: Attract hilft Ihnen, die Talente zu finden, die Sie brauchen, indem Sie Ihre Stellen direkt von Attract in LinkedIn veröffentlichen.
 
 Mit Attract können Sie begrenzte Listen auf LinkedIn ohne zusätzliche Kosten veröffentlichen. Diese Listen sind nur über die LinkedIn-Software-Partner wie Attract verfügbar. Sie werden nicht im Bereich **Karrieren** auf Ihrer LinkedIn-Seite des Unternehmens angezeigt, da hier nur kostenpflichtige Veröffentlichungen angezeigt werden. Sie werden aber angezeigt, wenn mögliche Kandidaten alle verfügbaren Stellen ansehen. Begrenzte Listen werden auch in LinkedIn-Jobsuchen angezeigt.
 

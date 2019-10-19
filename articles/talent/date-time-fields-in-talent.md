@@ -1,6 +1,6 @@
 ---
-title: Arbeiten mit Datum und Uhrzeit in Microsoft Dynamics 365 for Talent
-description: Verstehen, was zu erwarten ist, wenn Sie Datums- und Zeitfelder in Microsoft Dynamics 365 for Talent verwenden. Erhalten Sie Klarheit, was Sie erwartet, wenn Sie mit Datums- und Zeitdaten in einem Formular in Dynamics 365 for Talent interagieren als externe Quelle oder Common Data Service.
+title: Arbeiten mit Datum und Uhrzeit in Microsoft Dynamics 365 Talent
+description: Verstehen, was zu erwarten ist, wenn Sie Datums- und Zeitfelder in Microsoft Dynamics 365 Talent verwenden. Erhalten Sie Klarheit, was Sie erwartet, wenn Sie mit Datums- und Zeitdaten in einem Formular in Talent interagieren, als externe Quelle, oder in Common Data Service.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/24/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: b4c652992272ed1a5aecbb4c78f0d11f077149d1
-ms.sourcegitcommit: 46bded82aa072adfedcf443629c2adc69f512c09
+ms.openlocfilehash: 1a1d1a47bfe6bd58b1e1a0d4d46c2133f3bf48ad
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1791210"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2007966"
 ---
 # <a name="date-and-time-fields-in-talent"></a>Datums- und Zeitfelder in Talent
 
 [!include [banner](includes/banner.md)]
 
-**Datum und Uhrzeit** Felder sind ein grundlegendes Konzept in Dynamics 365 for Talent. Es ist wichtig, zu verstehen, wie **Datum und Uhrzeit** Daten in einem Dynamics 365 Formular, Common Data Service, und externen Quellen arbeiten.
+**Datum und Uhrzeit** Felder sind ein grundlegendes Konzept in Dynamics 365 Talent. Es ist wichtig, zu verstehen, wie **Datum und Uhrzeit** Daten in einem Dynamics 365 Formular, Common Data Service, und externen Quellen arbeiten.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>Differenz zwischen Datum sowie Datums- und Zeitfeld Datentypen verstehen
 

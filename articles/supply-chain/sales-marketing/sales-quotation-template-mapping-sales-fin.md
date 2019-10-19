@@ -1,6 +1,6 @@
 ---
-title: Angebotskopfzeilen und -positionen direkt von Sales zu Finance and Operations synchronisieren
-description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Verkaufsangebotskopfzeilen und -positionen direkt aus Microsoft Dynamics 365 for Sales mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+title: Verkaufsangebotskopfzeilen und ‑positionen direkt von Sales zu Supply Chain Management synchronisieren
+description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Verkaufsangebotskopfzeilen und -positionen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/25/2018
@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 0894f4728d3f1df21db130cd9e87d9881726e7fa
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: ddc81aa7ff462304cb6e22c919221217f7a1e019
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743370"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251246"
 ---
-# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-finance-and-operations"></a>Verkaufsangebotskopfzeilen und -positionen direkt von Sales mit Finance and Operations synchronisieren
+# <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Verkaufsangebotskopfzeilen und ‑positionen direkt von Sales zu Supply Chain Management synchronisieren
 
 [!include [banner](../includes/banner.md)]
 
-Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Verkaufsangebotskopfzeilen und -positionen direkt aus Microsoft Dynamics 365 for Sales mit Microsoft Dynamics 365 for Finance and Operations zu synchronisieren.
+Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Verkaufsangebotskopfzeilen und -positionen direkt aus Dynamics 365 Sales mit Dynamics 365 Supply Chain Management zu synchronisieren.
 
 > [!NOTE]
 > Damit Sie die Prospect to Cash-Lösung verwenden können, müssen Sie mit [Integration von Daten in Common Data Service for Apps](https://docs.microsoft.com/powerapps/administrator/data-integrator) vertraut sein.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
-Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Finance and Operations und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Finance and Operations und Sales synchronisiert werden.
+Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Supply Chain Management und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld“-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Supply Chain Management und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Supply Chain Management und Sales synchronisiert werden.
 
 [![Datenfluss in Interessent nach Bargeld](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="template-and-tasks"></a>Vorlage und Aufgaben
 
-Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Verkaufsangebotskopfzeilen und -positionen direkt von Sales mit Finance and Operations zu synchronisieren:
+Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Verkaufsangebotskopfzeilen und -positionen direkt von Sales mit Supply Chain Management zu synchronisieren:
 
-- **Name der Vorlage in der Datenintegration:** Verkaufsangebote (Sales zu Finance and Operations) - direkt
+- **Name der Vorlage in der Datenintegration:** Verkaufsangebote (Sales zu Supply Chain Management) - Direkt
 - **Namen der Aufgaben im Datenintegrationsprojekt:**
 
     - QuoteHeader
@@ -53,20 +53,20 @@ Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Ve
 
 Die folgenden Synchronisierungsaufgaben sind erforderlich, bevor die Synchronisierung von Verkaufsangebotskopfzeilen und -positionen erfolgen kann:
 
-- Produkte (Finance and Operations nach Sales) - Direkt
-- Konten (Sales nach Finance and Operations) - Direkt (wenn verwendet)
-- Kontakte nach Debitoren (Sales nach Finance and Operations) - Direkt (wenn verwendet)
+- Produkte (Supply Chain Management zu Sales) – Direkt
+- Konten (Sales zu Supply Chain Management) – Direkt (falls verwendet)
+- Kontakte zu Kunden (Sales zu Supply Chain Management) – Direkt (falls verwendet)
 
 ## <a name="entity-set"></a>Entitätssatz
 
-| Vertrieb        | Finance and Operations     |
+| Verk.        | Finance and Operations     |
 |--------------|----------------------------|
 | Angebote       | CDS-Verkaufsangebotskopf |
 | QuoteDetails | CDS-Verkaufsangebotspositionen  |
 
 ## <a name="entity-flow"></a>Entitätsfluss
 
-Verkaufsangebote werden in Sales erstellt und mit Finance and Operations synchronisiert.
+Verkaufsangebote werden in Sales erstellt und mit Supply Chain Management synchronisiert.
 
 Verkaufsangebote aus Sales werden nur synchronisiert, wenn folgende Bedingungen erfüllt sind:
 
@@ -75,13 +75,13 @@ Verkaufsangebote aus Sales werden nur synchronisiert, wenn folgende Bedingungen 
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Prospect to Cash-Lösung für Sales
 
-Das Feld **Verfügt nur über extern verwaltete Produkte** ist der Entität **Angebot** hinzugefügt worden, um stets nachzuverfolgen, ob das Verkaufsangebot vollständig aus extern verwalteten Produkten besteht. Wenn ein Verkaufsangebot nur aus extern verwalteten Produkten besteht, werden die Produkte in Finance and Operations verwaltet. Mit diesem Verhalten wird sichergestellt, dass Sie nicht versuchen, Verkaufsangebotspositionen mit Produkten zu synchronisieren, die in Finance and Operations unbekannt sind.
+Das Feld **Verfügt nur über extern verwaltete Produkte** ist der Entität **Angebot** hinzugefügt worden, um stets nachzuverfolgen, ob das Verkaufsangebot vollständig aus extern verwalteten Produkten besteht. Wenn ein Verkaufsangebot nur aus extern verwalteten Produkten besteht, werden die Produkte in Supply Chain Management verwaltet. Mit diesem Verhalten wird sichergestellt, dass Sie nicht versuchen, Verkaufsangebotspositionen mit Produkten zu synchronisieren, die in Supply Chain Management unbekannt sind.
 
 Alle Angebotsprodukte im Vertriebsangebot werden mit der Information **Verfügt nur über extern verwaltete Produkte** aus der Vertriebsangebotskopfzeile aktualisiert. Diese Informationen können im Feld **Angebot hat nur extern verwaltete Produkte** in der Entität **QuoteDetails** gefunden werden.
 
-Ein Rabatt kann zum Angebotsprodukt hinzugefügt werden wird anschließend mit Finance and Operations synchronisiert. Die Felder **Rabatt**, **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Finance and Operations gesteuert. Diese Einstellungen unterstützen aktuell nicht die Integrationszuordnung. Im aktuellen Entwurf werden die Felder **Preis**, **Rabatt**, **Belastung** und **Steuer** in Finance and Operations verwaltet und gehandhabt.
+Ein Rabatt kann zum Angebotsprodukt hinzugefügt werden wird anschließend mit Supply Chain Management synchronisiert. Die Felder **Rabatt**, **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einstellungen unterstützen aktuell nicht die Integrationszuordnung. Im aktuellen Entwurf werden die Felder **Preis**, **Rabatt**, **Belastung** und **Steuer** in Supply Chain Management verwaltet und gehandhabt.
 
-In Sales versieht die Lösung die folgenden Felder mit einem Schreibschutz, da die Werte nicht mit Finance and Operations synchronisiert werden:
+In Sales versieht die Lösung die folgenden Felder mit einem Schreibschutz, da die Werte nicht mit Supply Chain Management synchronisiert werden:
 
 - Schreibgeschützte Felder in de Verkaufsangebotskopfzeile: **Rabatt %**, **Rabatt** und **Frachtbetrag**
 - Schreibgeschützte Felder auf Angebotsprodukten: **Steuer**
@@ -111,20 +111,20 @@ Vor dem Synchronisieren von Verkaufsangeboten müssen die Systeme mit den folgen
 
 #### <a name="quoteline"></a>QuoteLine
 
-- Stellen Sie sicher, dass die erforderliche Wertzuordnung für **SalesUnitSymbol** in Finance and Operations vorhanden ist.
+- Stellen Sie sicher, dass die erforderliche Wertzuordnung für **SalesUnitSymbol** in Supply Chain Management vorhanden ist.
 - Überprüfen Sie, dass die obligatorischen Einheiten in Sales definiert sind.
 
     Ein Vorlagenwert, eine der Wertzuordnung ist, wird für **oumid.name** auf **SalesUnitSymbol** festgelegt.
 
-- Optional: Sie können die folgende Zuordnungen hinzufügen, um sicherzustellen, dass Verkaufsangebotspositionen nach Finance and Operations importiert werden, wenn es weder Standardinformationen vom Debitoren noch vom Produkt gibt:
+- Optional: Sie können die folgende Zuordnungen hinzufügen, um sicherzustellen, dass Verkaufsangebotspositionen nach Supply Chain Management importiert werden, wenn es weder Standardinformationen vom Debitoren noch vom Produkt gibt:
 
-    - **SiteId** – Ein Standort ist erforderlich, um in Finance and Operations Angebots- und Vertriebsauftragspositionen zu erstellen. Es gibt keinen Standardvorlagenwert für **SiteId**.
-    - **WarehouseId** – Ein Lager ist erforderlich, um in Finance and Operations Angebots- und Vertriebsauftragspositionen verarbeiten zu können. Es gibt keinen Standardvorlagenwert für **WarehouseId**.
+    - **SiteId** – Ein Standort ist erforderlich, um in Supply Chain Management Angebots- und Vertriebsauftragspositionen zu erstellen. Es gibt keinen Standardvorlagenwert für **SiteId**.
+    - **WarehouseId** – Ein Lager ist erforderlich, um in Supply Chain Management Angebots- und Vertriebsauftragspositionen verarbeiten zu können. Es gibt keinen Standardvorlagenwert für **WarehouseId**.
 
 ## <a name="template-mapping-in-data-integrator"></a>Vorlagenzuordnung im Datenintegrator
 
 > [!NOTE]
-> - Die Felder **Rabatt**, **Belastungen** und **Steuer** werden durch komplizierte Einstellungen in Finance and Operations gesteuert. Diese Einstellungen unterstützen aktuell nicht die Integrationszuordnung. Im aktuellen Entwurf werden die Felder **Preis**, **Rabatt**, **Belastung** und **Steuer** von Finance and Operations gehandhabt.
+> - Die Felder **Rabatt**, **Belastungen** und **Steuer** werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einstellungen unterstützen aktuell nicht die Integrationszuordnung. Im aktuellen Entwurf werden die Felder **Preis**, **Rabatt**, **Belastung** und **Steuer** von Supply Chain Management gehandhabt.
 > - Die Felder **Zahlungsbedingungen**, **Frachtkonditionen**, **Lieferbedingungen**, **Liefermethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Feldern zuzuordnen, müssen Sie eine Wertzuordnung einrichten, die spezifisch für die Daten in den Organisationen ist, zwischen denen die Entität synchronisiert wird.
 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Datenintegrator.

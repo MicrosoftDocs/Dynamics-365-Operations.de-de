@@ -1,6 +1,6 @@
 ---
 title: Lean Manufacturing Übersicht
-description: Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Dynamics 365 for Finance and Operations bereit.
+description: Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Dynamics 365 Supply Chain Management bereit.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,29 +19,29 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6db940548018c9d6bbb31891c21f7c334ba8956
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d338318d3f7a1b56fe98e5c093ccbe795bd8de44
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562391"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250071"
 ---
 # <a name="lean-manufacturing-overview"></a>Übersicht über Lean Manufacturing
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Microsoft Dynamics 365 for Finance and Operations bereit.
+Dieser Artikel stellt eine Übersicht und Beschreibung der Lean Manufacturing-Funktionen in Dynamics 365 Supply Chain Management bereit.
 
 Lean Manufacturing stellt Tools bereit, die Sie für die Modellierung schlanker Arbeitsgänge verwenden können. Diese Tools unterstützen und fördern die folgenden Konzepte und Geschäftsaktivitäten:
 -   Erstellen einer Grundlage für das Lean Manufacturing, indem Sie Produktions- und Logistikprozesse als Produktionsflüsse modellieren.
 -   Implementieren eines schlankes Pullsystems, indem Sie Kanbans verwenden, um Bedarfsanforderungen zu signalisieren.
 -   Überwachen und Verwalten von Kanban-Einzelvorgängen.
 
-Die Lean Manufacturing-Architektur in Finance and Operations besteht aus Produktionsflüssen, Aktivitäten und Kanban-Regeln. Diese Strukturen sind vollständig mit Finance and Operations-Prozessen integriert. Sie können Lean Manufacturing in einer gemischten Produktionsumgebung verwenden, in der verschiedene Lieferanten-, Produktions- und Beschaffungsstrategien kombiniert sind. Diese Strategien enthalten Produktionsaufträge, Chargenaufträge für die verarbeitende Industrie, Bestellungen und Umlagerungsaufträge.
+Die Lean Manufacturing-Architektur besteht aus Produktionsflüssen, Aktivitäten und Kanban-Regeln. Diese Strukturen sind vollständig mit Supply Chain Management-Prozessen integriert. Sie können Lean Manufacturing in einer gemischten Produktionsumgebung verwenden, in der verschiedene Lieferanten-, Produktions- und Beschaffungsstrategien kombiniert sind. Diese Strategien enthalten Produktionsaufträge, Chargenaufträge für die verarbeitende Industrie, Bestellungen und Umlagerungsaufträge.
 
 | **Wichtig**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sie können Finance and Operations verwenden, um die Implementierung von Lean Manufacturing mit Kanbans zu unterstützen. Die erfolgreiche Implementierung von schlanken Prinzipien ist jedoch von den internen Geschäftsprozessen abhängig, die Sie verwenden, und von den tatsächlichen Produktionsbedingungen und -umgebungen. |
+| Sie können Supply Chain Management verwenden, um die Implementierung von Lean Manufacturing mit Kanbans zu unterstützen. Die erfolgreiche Implementierung von schlanken Prinzipien ist jedoch von den internen Geschäftsprozessen abhängig, die Sie verwenden, und von den tatsächlichen Produktionsbedingungen und -umgebungen. |
 
 ## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a>Modellierung von Fertigungs- und Logistikprozessen als Produktionsflüssen
 Um die Grundlage für das Lean Manufacturing zu erstellen, modellieren Sie die Fertigungs- und Logistikprozesse als Produktionsflüsse. Diese Aktivität besteht aus den folgenden Aufgaben:
@@ -69,8 +69,8 @@ In der folgenden Liste werden die speziellen Kanban-Übersichten beschrieben:
 -   Kanban-Übersicht für Umlagerungseinzelvorgänge – Diese Übersicht stellt einen Überblick über die aktuellen Umlagerungseinzelvorgänge bereit. Sie können Entnahmelisten aktualisieren und erfassen, Umlagerungseinzelvorgänge starten und abschließen und andere Aufgaben ausführen.
 -   Kanban-Übersicht für Bearbeitungs-Einzelvorgänge – Diese Übersicht wurde entworfen, um den normalen Produktionsfluss zu unterstützen und einen Überblick über den aktuellen Status in einer oder mehreren Arbeitsgruppen zu geben. Mit dieser Übersicht können Kanbans priorisiert, entnommen oder produziert werden. Die Übersicht wurde auch entworfen, um Scannen von Strichcodes für die Berichterstellung von Kanbans zu unterstützen.
 
-## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanban-Einzelvorgänge und Integration in Finance and Operations-Prozesse
-Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchungen in Finance and Operations integriert.
+## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-Einzelvorgänge und Integration in Supply Chain Management-Prozesse
+Kanban-Einzelvorgänge sind vollständig in aktuelle Prozesse für Lagerbuchungen in Supply Chain Management integriert.
 -   Sie können Kommissionieraktivitäten ausführen, um Material aufzufüllen, das verwendet wird, um die Anforderungen von Kanban-Einzelvorgängen zu erfüllen.
 -   Sie können Kanban-Karten, Kanban-Karten im Umlauf und Entnahmelisten drucken, um die Verwendung von Kanbans zu unterstützen. Diese Dokumente werden verwendet, um Kanban-Einzelvorgänge am Lagerort und in der Produktion darzustellen, zu überwachen und zu erfassen.
 -   Sie können die Entnahme- und die Umlagerungsaktivitäten im Lager mittels Strichcodes erfassen.

@@ -1,6 +1,6 @@
 ---
 title: Erweiterbarkeit in Attract
-description: In diesem Thema wird beschrieben, wie Sie die Microsoft Dynamics 365 for Talent - Attract-Anwendung erweitern können, indem Sie die Microsoft Power-Plattform verwenden.
+description: In diesem Thema wird beschrieben, wie Sie Microsoft Dynamics 365 Talent - Attract erweitern können, indem Sie Microsoft Power Platform verwenden.
 author: andreabichsel
 manager: AnnBe
 ms.date: 03/18/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 9360ac52bd53dc473ca61a424f3be933bcf357d1
-ms.sourcegitcommit: ef08bf1258aefb525d56bf85ef19311be26ab94c
+ms.openlocfilehash: 5db954d8847c252bee1c8e50acae546852ae9b94
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "1795219"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026232"
 ---
 # <a name="extensibility-in-attract"></a>Erweiterbarkeit in Attract
 
 [!include[banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent ist über die Common Data Service Plattform gebaut und kann auf verschiedene Weise erweitert werden, indem die Microsoft Power Platform  und Funktionen verwendet werden, die Common Data Service anbietet. Aus diesem Grund können Sie das System konfigurieren und anpassen, indem Sie Microsoft PowerApps und Microsoft Flow verwenden. Sie können auch eine zusätzliche Personen-Analyse erhalten, indem Sie Microsoft Power BI verwenden. Der Einstellungsprozess wird darüber hinaus durch neue benutzerdefinierte Aktivitäten, wie die PowerApps- und Webinhalt-Aktivitäten, noch flexibler als bisher. Wenn Sie diese Aktivitäten verwenden, können Sie den Einstellungsprozess auf Ihre Geschäftsanforderungen und -Prozesse anpassen und sicherstellen, dass das Einstellungsteam und die Kandidaten eine nahtlose angepasste Erfahrung haben.
+Microsoft Dynamics 365 Talent ist über Common Data Service gebaut und kann auf verschiedene Weise erweitert werden, indem die Microsoft Power Platform und Funktionen verwendet werden, die Common Data Service anbietet. Aus diesem Grund können Sie das System konfigurieren und anpassen, indem Sie Microsoft PowerApps und Microsoft Flow verwenden. Sie können auch eine zusätzliche Personen-Analyse erhalten, indem Sie Microsoft Power BI verwenden. Der Einstellungsprozess wird darüber hinaus durch neue benutzerdefinierte Aktivitäten, wie die PowerApps- und Webinhalt-Aktivitäten, noch flexibler als bisher. Wenn Sie diese Aktivitäten verwenden, können Sie den Einstellungsprozess auf Ihre Geschäftsanforderungen und -Prozesse anpassen und sicherstellen, dass das Einstellungsteam und die Kandidaten eine nahtlose angepasste Erfahrung haben.
 
 ## <a name="extending-option-sets-in-attract"></a>Erweitern von Optionsätzen in Attract
 
@@ -54,7 +54,7 @@ Im Folgenden werden die Schritte aufgeführt, mit denen das Felds **Ablehnungsgr
 12. Wählen Sie **Speichern**.
 13. Wählen Sie am oberen Seitenrand **Veröffentlichen** aus.
 
-## <a name="take-advantage-of-the-microsoft-power-platform"></a>Nutzen Sie die Microsoft Power Platform 
+## <a name="take-advantage-of-the-microsoft-power-platform"></a>Nutzen Sie Microsoft Power Platform 
 
 Da sich alle Attract-Daten in Common Data Service befinden, können Sie Tools der Microsoft Power Platform verwenden, um Ihre Geschäftsanforderungen in Attract zu integrieren.
 
@@ -62,7 +62,7 @@ Da sich alle Attract-Daten in Common Data Service befinden, können Sie Tools de
 
 Sie können PowerApps verwenden, um leicht Apps zu erstellen, die eine Verbindung mit Ihren Attract-Daten herstellen und Ausdrücke wie die Ausdrücke in Microsoft Excel verwenden, um Logik hinzuzufügen. Apps, die Sie erstellen, indem Sie PowerApps verwenden, können im Internet und auf Apple iOS- und Google Android-Geräten ausgeführt werden.
 
-So können Sie z. B. Hochschulkarrieremessen für Personalbeschaffer erleichtern, indem Sie eine einfache App erstellen, mit der sie Lebensläufe scannen und Kandidaten einer Position in Attract zuweisen können. Alternativ können Sie eine App erstellen, mit der Sie die Compliance-Anforderungen Ihrer Organisation erfüllen. Weitere Informationen zu PowerApps und wie Sie es verwenden, um Apps zu erstellen, finden Sie unter [Daten in Common Data Service for Apps integrieren](https://docs.microsoft.com/powerapps).
+So können Sie z. B. Hochschulkarrieremessen für Personalbeschaffer erleichtern, indem Sie eine einfache App erstellen, mit der sie Lebensläufe scannen und Kandidaten einer Position in Attract zuweisen können. Alternativ können Sie eine App erstellen, mit der Sie die Compliance-Anforderungen Ihrer Organisation erfüllen. Weitere Informationen zu PowerApps und wie Sie es verwenden, um Apps zu erstellen, finden Sie unter [Daten in Common Data Service](https://docs.microsoft.com/powerapps) for Apps integrieren.
 
 ### <a name="microsoft-flow"></a>Microsoft Flow 
 
@@ -78,7 +78,7 @@ Sie können benutzerdefinierte Aktivitäten, wie die PowerApps-Apps und Web-Inha
 
 #### <a name="powerapps-activity"></a>PowerApps-Aktivität 
 
-Die PowerApps-Aktivität ermöglicht es dem Ersteller einer Stelle oder Stellenprozessvorlage, eine PowerApps-App im Einstellungsfluss einzubetten. Nachdem Sie die App erstellt und veröffentlicht haben, können Sie die App-ID in den Aktivitätskonfigurationen eingeben. Durch Verwendung einer PowerApps App können Sie Daten in Common Data Service for Apps lesen und schreiben. Sie können die App sogar mit einem Flow verknüpfen. Beispielsweise verfügen Sie über eine App, die Personalbeschaffer verwenden, um ein Formular auszufüllen, während sie Telefongespräche tätigen. In diesem Fall können Sie die App einem Flow verknüpfen, der bewertet, ob ein Bewerber im Stellenbewerbungsprozess voranschreitet. Dieser Aktivitätstyp kann nur von Mitgliedern des Einstellungsteams angezeigt werden. Weitere Informationen dazu, wie die PowerApps-Aktivität konfiguriert wird, finden Sie unter [Aktivitäten in Attract](./activities-attract.md).
+Die PowerApps-Aktivität ermöglicht es dem Ersteller einer Stelle oder Stellenprozessvorlage, eine PowerApps-App im Einstellungsfluss einzubetten. Nachdem Sie die App erstellt und veröffentlicht haben, können Sie die App-ID in den Aktivitätskonfigurationen eingeben. Durch Verwendung einer PowerApps-App können Sie Daten in Common Data Service for Apps lesen und schreiben. Sie können die App sogar mit einem Flow verknüpfen. Beispielsweise verfügen Sie über eine App, die Personalbeschaffer verwenden, um ein Formular auszufüllen, während sie Telefongespräche tätigen. In diesem Fall können Sie die App einem Flow verknüpfen, der bewertet, ob ein Bewerber im Stellenbewerbungsprozess voranschreitet. Dieser Aktivitätstyp kann nur von Mitgliedern des Einstellungsteams angezeigt werden. Weitere Informationen dazu, wie die PowerApps-Aktivität konfiguriert wird, finden Sie unter [Aktivitäten in Attract](./activities-attract.md).
 
 > [!NOTE]
 > Die PowerApps-Aktivität ist nur mit dem umfassenden Add-On für Neueinstellungen verfügbar.

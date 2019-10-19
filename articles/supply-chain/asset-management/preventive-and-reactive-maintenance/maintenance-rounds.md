@@ -3,7 +3,7 @@ title: Wartungsdurchgänge
 description: In diesem Thema werden Wartungsdurchgänge im Asset Management erläutert.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,22 +16,20 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a0ac4820d2efa37387382c2890e3ddc7dbc0878b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: eca732f245650c8e1f3dc976454536a0ab1ee117
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875669"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922021"
 ---
 # <a name="maintenance-rounds"></a>Wartungsdurchgänge
-
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [banner](../../includes/preview-banner.md)]
-
 
 In **Asset Management** können Sie für verschiedene Anlagen Wartungsdurchgänge anlegen, bei denen Sie eine ähnliche Aufgabe in regelmäßigen Abständen durchführen müssen. Zum Beispiel Schmierarbeiten oder Sicherheitsprüfungen, die an mehreren Maschinen innerhalb derselben Zeiträume durchgeführt werden müssen. Der erste Schritt ist die Erstellung eines Wartungsdurchgangs, der Anlagen einbezieht, die die gleiche Form von Wartungsarbeiten erfordern. Als nächstes planen Sie die Wartungsdurchgänge ein. Wenn Sie den Wartungsdurchgangsplan erstellt haben, sehen Sie alle Auftragsdatensätze, die sich auf die Runde beziehen, in **Alle Wartungszeitpläne**- und **Offene Wartungszeitpläne-Positionen**.
 
@@ -83,6 +81,8 @@ In **Asset Management** können Sie für verschiedene Anlagen Wartungsdurchgäng
 >[!NOTE]
 >Die Felder **Anlagen** und **Positionen** in der Gruppe **Details** auf dem Inforegister **Kopfzeile** zeigen die Gesamtzahl der Anlagen und Positionen, die sich auf den ausgewählten Wartungsdurchgang beziehen.
 
+Die folgende Abbildung zeigt das Beispiel einer Wartungsdurchführung mit drei Anlagen.
+
 ![Abbildung 1](media/13-preventive-maintenance.png)
 
 
@@ -106,6 +106,8 @@ Wenn Sie einen Wartungsdurchgang eingerichtet haben, führen Sie einen Zeitplana
 6. Klicken Sie auf **OK**.
 
 7. Sie können nun die Wartungsdurchgangsaufträge in **Anlagenverwaltung** > **Allgemein** > **Wartungszeitplan** > **Alle Wartungszeitpläne** oder **Wartungszeitplanpositionen öffnen** sehen. Wenn die terminierten Durchgänge an einen Arbeitsauftragspool angeschlossen sind, sehen Sie auch Wartungszeitplanpositionen in **Wartungszeitplanpools öffnen**. Wartungszeitplanpositionen, die aus einem Durchgang angelegt wurden, haben den Referenztyp „Wartungsdurchgänge“.
+
+Die zwei folgenden Abbildungen zeigen einen Zeitplaneinzelvorgang im Dialog **Wartungszeitplan anzeigen** und die Wartungsplanpositionen, die in **Alle Wartungszeitpläne** erstellt werden, die auf diesem Zeitplaneinzelvorgang basieren.
 
 ![Abbildung 2](media/14-preventive-maintenance.png)
 

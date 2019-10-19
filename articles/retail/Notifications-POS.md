@@ -17,18 +17,19 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6c813cfea9b570e8dfd5dbe7f3ca1f4ba8594420
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 57f4b58a11606a1193a1124a426c837ddfab9533
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577979"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023701"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Auftragsbenachrichtigungen in der Verkaufsstelle (POS) anzeigen
 
 [!include [banner](includes/banner.md)]
 
-In der heutigen, modernen Retailumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. In Microsoft Dynamics 365 for Retail mit dem Anwendungsupdate 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
+In der heutigen, modernen Retailumgebung werden Filialmitarbeitern verschiedene Aufgaben zugewiesen, wie Kunden zu helfen, Transaktionen einzugeben, Lagerbestände zu zählen und Aufträge in der Filiale entgegenzunehmen. Der Verkaufsstellen-(POS)-Client ermöglicht es den Mitarbeitern, diese Aufgaben und noch viel mehr auszuführen, alles in eine einzigen Anwendung. Bei den verschiedenen Aufgaben, die im Lauf des Tages auszuführen sind, müssen Mitarbeiter möglicherweise darüber benachrichtigt werden, wenn etwas Ihre Aufmerksamkeit erfordert. Das Benachrichtigungsframework in der POS löst dieses Problem, indem es Einzelhändlern ermöglicht, rollenbasierte Benachrichtigungen zu konfigurieren. In Dynamics 365 for Retail mit dem Anwendungsupdate 5 können diese Benachrichtigungen nur für POS-Arbeitsgänge konfiguriert werden.
+
 
 So kann das System Auftragserfüllungsarbeitsgänge nur für Benachrichtigungen anzeigen. Da jedoch das Framework entwickelt wurde, um erweiterbar werden, sind alle Entwickler in der Lage, einen Benachrichtigungshandler für einen Arbeitsgang zu verfassen und die Benachrichtigungen für diesen Arbeitsgang im POS angezeigt.
 
@@ -68,7 +69,8 @@ Die folgende Abbildung zeigt die Inhaltseinstellungen, die im Schaltflächenrast
 
 ![Live-Inhaltseinstellungen im Schaltflächenrasterdesigner](./media/ButtonGridDesigner.png "Live-Inhaltseinstellungen im Schaltflächenrasterdesigner")
 
-Um die Benachrichtigungsanzahl auf einer Schaltfläche anzuzeigen, müssen Sie sicherstellen, dass das korrekte Bildschirmlayout aktualisiert wird. Um das Bildschirmlayout zu bestimmen, das vom POS verwendet wird, wählen Sie das Symbol **Einstellungen** in der oberen rechten Ecke aus und beachten Sie die **Bildschirmlayoutkennung** und die **Layoutlösung**. Wechseln Sie jetzt mithilfe des Edge-Browsers zur Seite **Bildschirmlayout** in Dynamics 365 for Finance and Operations, suchen Sie die oben identifizierte **Bildschirmlayoutkennung** und **Layoutauflösung** und aktivieren Sie das Kontrollkästchen **Liveinhalt aktivieren**. Wechseln Sie zu **Einzelhandel \> IT (Einzelhandel) \> Vertriebsplan** und führen Sie den Einzelvorgang 1090 (Register) aus, um Layoutänderungen zu synchronisieren.
+Um die Benachrichtigungsanzahl auf einer Schaltfläche anzuzeigen, müssen Sie sicherstellen, dass das korrekte Bildschirmlayout aktualisiert wird. Um das Bildschirmlayout zu bestimmen, das vom POS verwendet wird, wählen Sie das Symbol **Einstellungen** in der oberen rechten Ecke aus und beachten Sie die **Bildschirmlayoutkennung** und die **Layoutlösung**. Wechseln Sie jetzt mithilfe des Edge-Browsers zur Seite **Bildschirmlayout**, suchen Sie die oben identifizierte **Bildschirmlayoutkennung** und **Layoutauflösung** und aktivieren Sie das Kontrollkästchen **Liveinhalt aktivieren**. Wechseln Sie zu **Einzelhandel \> IT (Einzelhandel) \> Vertriebsplan** und führen Sie den Einzelvorgang 1090 (Register) aus, um Layoutänderungen zu synchronisieren.
+
 
 ![Suchen Sie das von POS verwendete Bildschirmlayout](./media/Choose_screen_layout.png "Suchen Sie das von POS verwendete Bildschirmlayout ")
 

@@ -1,13 +1,13 @@
 ---
-title: Talent mit PowerApps und Microsoft Flow erweitern – Beispielsszenarien
-description: In diesem Thema werden einige Beispiele von Erweiterbarkeitsszenarien für Microsoft Dynamics 365 for Talent beschrieben, die Microsoft PowerApps und Microsoft Flow verwenden.
+title: Erweitern von Talent mit PowerApps und Microsoft Flow – Beispielfälle
+description: In diesem Thema werden einige Beispiele von Erweiterbarkeitsszenarien für Microsoft Dynamics 365 Talent beschrieben, die Microsoft PowerApps und Microsoft Flow verwenden.
 author: negudava
 manager: Annbe
 ms.date: 05/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
-ms.technology: Dynamics 365 for Talent;PowerApps;Flow;Common Data Service
+ms.technology: Dynamics 365 Talent;PowerApps;Flow;Common Data Service
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0b455a8194f58b41a349f004ceda8183c7ee3f7c
-ms.sourcegitcommit: 9f94eff93d29bc27352569824e00bbccc2f961b8
+ms.openlocfilehash: 7bc3a18327f2d32770176eddcb7200681f0fb0da
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "1781441"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008058"
 ---
-# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Talent mit PowerApps und Microsoft Flow erweitern – Beispielsszenarien
+# <a name="extend-talent-by-using-powerapps-and-microsoft-flow---example-scenarios"></a>Erweitern von Talent mit PowerApps und Microsoft Flow – Beispielfälle
 
-In diesem Thema werden einige Beispiele von Erweiterbarkeitsszenarien für Microsoft Dynamics 365 for Talent beschrieben, die Microsoft PowerApps und Microsoft Flow verwenden. Sie können das Lösungspaket importieren, das jedem Beispiel in der PowerApps-Umgebung zugeordnet ist. Sie können entweder die Pakete als Anleitung oder als Startpunkte zu den Werkzeugszenarien verwenden, die der Organisation zugeordnet sind.
+In diesem Thema werden einige Beispiele von Erweiterbarkeitsszenarien für Microsoft Dynamics 365 Talent beschrieben, die Microsoft PowerApps und Microsoft Flow verwenden. Sie können das Lösungspaket importieren, das jedem Beispiel in der PowerApps-Umgebung zugeordnet ist. Sie können entweder die Pakete als Anleitung oder als Startpunkte zu den Werkzeugszenarien verwenden, die der Organisation zugeordnet sind.
 
 > [!IMPORTANT]
 > Wenn Sie die Vorlagen und Apps verwenden möchten, die in diesem Thema als "wie vorliegend" beschrieben sind, müssen Sie diese unbedingt testen, um sicherzustellen, dass sie alle Szenarien beinhalten, die für Ihre Implementierung bestimmt sind.
@@ -36,7 +36,7 @@ In diesem Thema werden einige Beispiele von Erweiterbarkeitsszenarien für Micro
 ## <a name="prerequisites"></a>Voraussetzungen
 
 - Um Pakete zu importieren, müssen Benutzer die Berechtigung **Umgebungs-Hersteller** haben.
-- Um Apps zu exportierenden oder zu importierenen, müssen Benutzer eine Lizenz PowerApp Plans 2 oder eine Testlizenz PowerApps-Plan 2 haben.
+- Um Apps zu exportierenden oder zu importieren, müssen Benutzer eine Lizenz für PowerApps Plan 2 oder eine Testlizenz für PowerApps-Plan 2 haben.
 
 ## <a name="flow--form-connect"></a>Ablauf - Formular schließen
 
@@ -57,7 +57,7 @@ Um die Vorlage **Ablauf - Formular verbinden** und die benutzerdefinierte Entit�
 
 ## <a name="initiate-and-extract-parameters-passed-to-powerapps"></a>Parameter, die an Powerapps übergeben werden, auslösen und extrahieren
 
-Die Vorlag **An Powerapps übergebene Parameter einleiten und extrahieren** kann als Ausgangspunkt für alle PowerApps-Szenarien verwendet werden, die Attract spezfisch sind. Dies umfasst alle Standardparameter, die von Attract weitergegeben werden, wie beispielsweise **Stellenbewerbung**, **Kandidaten-ID** und **JobID**.
+Die Vorlage **An PowerApps übergebene Parameter einleiten und extrahieren** kann als Ausgangspunkt für alle PowerApps-Szenarien verwendet werden, die für Attract spezfisch sind. Dies umfasst alle Standardparameter, die von Attract weitergegeben werden, wie beispielsweise **Stellenbewerbung**, **Kandidaten-ID** und **JobID**.
 
 Diese Vorlage kann verwendet werden, um einen Kandidatenbewertungsbogen abzurufen, damit ein zukünftiger Vorgesetzter die Bewertung sehen kann, die ein Kandidat ausfüllte.
 
@@ -79,7 +79,7 @@ Die Vorlage **Fluss - E-Mail-Benachrichtigung** kann für E-Mail-Benachrichtigun
 
 Diese Vorlage kann erweitert werden, um Änderungen an der Kandidatenphase während des Rekrutierungsprozesses nachzuverfolgen und, Benachrichtigungen an das Einstellungsteam und die Kandidaten zu senden.
 
-Im Allgemeinen gilt für Entitäten, die in Common Data Service gespeichert werden,, dass Fluss eingerichtet werden kann, um Benachrichtigungen für Ereignisse zu versenden, die in Core HR Attract oder in Dynamics 365 Talent: Onboard auftreten.
+Im Allgemeinen gilt für Entitäten, die in Common Data Service gespeichert werden, dass Fluss eingerichtet werden kann, um Benachrichtigungen für Ereignisse zu versenden, die in Core HR Attract oder Onboard auftreten.
 
 Um die Vorlage **Flussf - E-Mail-Benachrichtigung** herunterzuladen gehen Sie zu [Fluss - E-Mail-Benachrichtigung](https://go.microsoft.com/fwlink/?linkid=2082103) im Microsoft Download Center.
 
@@ -106,7 +106,7 @@ Sie können die Empfehlungs-App verwenden, um Kandidaten einer freigegebene Tale
 
 Sie können dieser App im Mitarbeiter-Self-Service (ESS) für das Übermitteln von Empfehlungen eingeben, oder Sie können sie als Verknüpfung im Unternehmensportal und als eigenständige App ausführen.
 
-Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 for Talent Erweiterbarkeitslösung: Empfehlungs-App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
+Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 Talent Erweiterbarkeitslösung: Empfehlungs-App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

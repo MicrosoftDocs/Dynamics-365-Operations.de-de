@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent (26. März 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent (26. März 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/26/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24070d1efa3299c378d7a4a328531817a598d272
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741566"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023883"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-26-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (26. März 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (26. März 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Talent neu oder geändert wurden.
+In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -53,13 +53,13 @@ Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onbo
 
 ### <a name="custom-field-support-available-for-select-entities-in-common-data-service"></a>Der benutzerdefinierte Feldsupport ist für ausgewählte Entitäten in Common Data Service verfügbar 
 
-Die folgenden Entitäten Common Data Service unterstützen nun die Debitorenfelder, die in Dynamics 365 for Talent erstellt werden:
+Die folgenden Entitäten Common Data Service unterstützen nun die Debitorenfelder, die in Talent erstellt werden:
 
 - Arbeitskraft
 - Nationalität
 - Veteranenstatus
 - Sprachcode
-- Einzelvorgang
+- Auftrag
 - Stellentyp
 - Stellenfunktion
 - Position
@@ -72,7 +72,7 @@ Mit dieser Änderung zeigt die Beschäftigungsverlaufsseite nun Beschäftigungsz
 In dieser Aktualisierung werden feste Vergütungspläne nun angezeigt, wenn Benutzer aus Sicherheitsgründen vom Unternehmen eingeschränkt sind. Alle Sicherheitseinstellungen werden beachtet und feste Pläne werden die Unternehmen angezeigt, für die der Benutzer die Zugriffsberechtigung hat. 
 
 ### <a name="cant-delete-job-records-using-open-in-excel-option-in-talent"></a>Stellendatensätze können nicht mithilfe der Option Öffnen in Excel im Talent gelöscht werden
-Mit dieser Version können Sie nun Stellendatensätze entfernen, indem Sie die Option**In Excel öffnen** in Dynamics 365 for Talent verwenden.
+Mit dieser Version können Sie nun Stellendatensätze entfernen, indem Sie die Option **In Excel öffnen** in Talent verwenden.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
 Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
@@ -93,7 +93,7 @@ Organisationen brauchen ggf. bestimmte Ursachencodes für Sonderurlaubstypen, we
 In vielen Organisationen hat der Kompensations- und Vergütungsmanager nur Zugriff auf bestimmte Kompensationsdatensätze. Diese Datensätze sind möglicherweise für Führungskräfte oder regionale Mitarbeiter. Mit dieser Änderung kann HR Kompensationspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Sie können Sicherheitsrollen festen und variablen Plänen zuordnen, die den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen bestimmen, wie Gehalts- oder Zulagedatensätze. Nur die Rollen mit Zugriff sind in der Lage, Kompensationen für solche Mitarbeiter zu verarbeiten.
 
 ###  <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
-Mit der Plattformaktualisierung 25 können Benutzer die Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 
+Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 
 
 ### <a name="duplicate-employee-checks-user-interface-changes"></a>Duplizierte Mitarbeiter suchen: Schnittstellenänderungen
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, damit die Dateneingabe nicht unterbrochen wird.

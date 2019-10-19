@@ -1,6 +1,6 @@
 ---
 title: Überblick über die Anlagenverwaltung
-description: In diesem Thema wird die Funktion von Asset Management in Dynamics 365 for Finance and Operations beschrieben.
+description: In diesem Thema wird die Funktion von Asset Management in Dynamics 365 Supply Chain Management beschrieben.
 author: josaw1
 manager: AnnBe
 ms.date: 07/24/2019
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b8a619d787a2d43e843b574edf77b3153d53005
-ms.sourcegitcommit: 829b6dc145197cc565d40469f6a1522f8dccac9f
+ms.openlocfilehash: f98185fbabefedd2a545bd1c3e15b9e180363469
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "1788279"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024705"
 ---
 # <a name="asset-management-overview"></a>Überblick über die Anlagenverwaltung
 
@@ -32,7 +32,7 @@ ms.locfileid: "1788279"
 [!include [banner](../includes/preview-banner.md)]
 
 
-Asset Management ist ein erweitertes Modul für die Verwaltung von Anlagen und Wartungsaufgaben in Microsoft Dynamics 365 for Finance and Operations. Asset Management ist nahtlos in mehrere Module aus dem Bereich Finance and Operations integriert. 
+Asset Management ist ein erweitertes Modul für die Verwaltung von Anlagen und Wartungsaufgaben in Dynamics 365 Supply Chain Management. Asset Management ist nahtlos in mehrere Module aus dem Bereich Finance and Operations integriert. 
 
 Das folgende Bild ist eine Darstellung der Schnittstellen zu anderen Modulen im Bereich Finance and Operations.
 

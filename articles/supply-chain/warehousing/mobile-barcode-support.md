@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85afddb34f29e13e17f2b93bb2633183a78e31f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 462d35ebf1015ace032c523a4efe92bc7594ba3c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559807"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026932"
 ---
 # <a name="mobile-bar-code-support"></a>Strichcodeunterstützung für Mobilgeräte
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559807"
 Da Android ein Open Source-Projekt ist, kann jeder Hersteller von Hardware für Lager-Strichcode-Scanner ein Gerät erstellen, um das Android-Betriebssystem auszuführen. Ein Gerät ist nur Android-kompatibel, wenn es Apps ausführen kann, die für die Android-Ausführungsumgebung geschrieben wurden.
 Allerdings kann ein Hardwareanbieter Overlays für die Android-Version ändern und erstellen, die auf der Hardware ausgeführt wird. Microsoft kann keine Verantwortung übernehmen, um sicherzustellen, dass eine mobile Strichcodescan-App für Android mit der Strichcode-Scan-Hardware des Herstellers und der Android-Version kompatibel ist, die auf dieser ausgeführt wird. 
 
-Die Lagerort-App für Microsoft Dynamics 365 for Finance and Operations ist mit einer Auswahl von Android-aktivierten Geräten für Scannen von Strichcodes getestet worden. Diese Tests decken nur eine Auswahl der Geräte ab, die auf dem Markt verfügbar sind.
+Die Lagerort-App für Dynamics 365 Supply Chain Management - Warehousing-App ist mit einer Auswahl von Android-aktivierten Geräten für Scannen von Strichcodes getestet worden. Diese Tests decken nur eine Auswahl der Geräte ab, die auf dem Markt verfügbar sind.
 
 Ihnen als Kunden wird empfohlen, die mobile Strichcode-Scan-App auf ausgewählter Hardware zu testen, bevor Sie entscheiden, welche Hardware Sie kaufen möchten.
 

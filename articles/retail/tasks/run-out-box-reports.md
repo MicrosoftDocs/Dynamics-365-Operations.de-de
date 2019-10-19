@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b42f86fc243312d18654b1a048f9dffb29afd187
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: afd4509bc9bdff345e48a590a12cc84ae25aebb8
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1550069"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018431"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generieren und Ausführung von Fertigberichten
 
@@ -43,7 +43,7 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 5. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 6. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 7. Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\Central\Houston" aus.
-    * Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung   Organisationen > Organisationshierarchiezwecke und wählen Sie "Berichterstellung im Einzelhandel" aus. Aktivieren Sie unter "Zugewiesene Hierarchien" den Hierarchienamen, für den die Standard-Spalte aktiviert ist.      Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.     
+    * Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung > Organisationen > Organisationshierarchiezwecke und wählen Sie „Berichterstellung im Einzelhandel“ aus. Aktivieren Sie unter „Zugewiesene Hierarchien“ den Hierarchienamen, für den die Standard-Spalte aktiviert ist. Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.     
 8. Klicken Sie auf "OK".
 9. Wählen Sie im Feld "Ansicht" eine Option aus.
 10. Wählen Sie im Feld "Von" eine Option aus.
@@ -55,7 +55,7 @@ Das Demodatenunternehmen, das verwendet wird, um diese Aufzeichnung zu erstellen
 3. Geben Sie in das Feld "Bis Datum" ein Datum ein.
 4. Klicken Sie im Feld "Kanal" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 5. Wählen Sie in der Struktur "Contoso Retail\Contoso Retail USA\West\Seattle" aus.
-    * Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung   Organisationen > Organisationshierarchiezwecke und wählen Sie "Berichterstellung im Einzelhandel" aus. Aktivieren Sie unter "Zugewiesene Hierarchien" den Hierarchienamen, für den die Standard-Spalte aktiviert ist.      Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.     
+    * Hier wird die standardmäßige Einzelhandelsorganisationshierarchie für Einzelhandelsberichterstellungszwecke angezeigt.   Wechseln Sie zu Organisationsverwaltung > Organisationen > Organisationshierarchiezwecke und wählen Sie „Berichterstellung im Einzelhandel“ aus. Aktivieren Sie unter „Zugewiesene Hierarchien“ den Hierarchienamen, für den die Standard-Spalte aktiviert ist. Im Rahmen der Demodaten (für diese Aufgabenerfassung) ist "Einzelhandelsgeschäfte nach Region" die standardmäßige Organisationshierarchie für Einzelhandelsberichterstellungszwecke.     
 6. Klicken Sie auf "OK".
 7. Klicken Sie auf "OK".
 

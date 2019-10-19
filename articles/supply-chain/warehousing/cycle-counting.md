@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a76082a7aa375424e6f118744e2f63600a8cbda
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560659"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251522"
 ---
 # <a name="cycle-counting"></a>Permanente Inventur
 
@@ -34,7 +34,7 @@ In diesem Artikel wird beschrieben, wie Sie Zykluszählungen mit der Warehousing
 Zykluszählung ist ein Lagerortprozess, den Sie verwenden können, um Artikel des verfügbaren Lagerbestands zu überwachen. Der Zykluszählprozess kann in drei Schritten beschrieben werden:
 
 1.  **Erstellen von Zykluszählungsarbeit** Zykluszählungsarbeit wird automatisch auf Grundlage von Schwellenwertparametern für Artikel oder durch die Verwendung eines Zykluszählungsplans erstellt. Alternativ können Sie Zykluszählungsarbeit auch manuell erstellen, indem Sie die Artikel- oder Lagerortparameter auf der Seite **Zykluszählungsarbeit nach Artikel** oder **Zykluszählungsarbeit nach Lagerplatz** verwenden.
-2.  **Zykluszählung verarbeiten** Nachdem Sie Zykluszählungsarbeit erstellt haben, führen Sie die Zykluszählungsarbeit aus, indem Sie Artikel in einem Lagerort zählen und dann ein mobiles Gerät verwenden, um das Ergebnis in Microsoft Dynamics 365 for Finance and Operations einzugeben. Alternativ können Sie Artikel in einem Lagerort zählen ohne Zykluszählungsarbeit zu erstellen. Dieser Prozess wird als *Stichprobenzykluszählung* bezeichnet.
+2.  **Zykluszählung verarbeiten** Nachdem Sie Zykluszählungsarbeit erstellt haben, führen Sie die Zykluszählungsarbeit aus, indem Sie Artikel in einem Lagerort zählen und dann ein mobiles Gerät verwenden, um das Ergebnis in Dynamics 365 Supply Chain Management einzugeben. Alternativ können Sie Artikel in einem Lagerort zählen ohne Zykluszählungsarbeit zu erstellen. Dieser Prozess wird als *Stichprobenzykluszählung* bezeichnet.
 3.  **Beheben einer Differenz im gezählten Wert** – Nach einer Zykluszählung haben alle Artikel, die Unterschiede im gezählten Wert aufweisen, auf der Seite **Alle Arbeit** den Arbeitsstatus **Prüfung ausstehend**. Sie können diese Differenz auf der Seite **Ausstehende Prüfung der Zykluszählungsarbeit** beheben.
 
 Die folgende Abbildung zeigt den Zykluszählprozess. ![Prozessfluss für Zykluszählung](./media/performcyclecountinginawarehouselocation.jpg)
@@ -113,10 +113,10 @@ Ein Zykluszählungsplan terminieren, um Zykluszählungsarbeit umgehend oder rege
 Um Zykluszählungsarbeit manuell zu erstellen, können Sie die Seite **Zykluszählungsarbeit nach Artikel** oder **Zykluszählungsarbeit nach Lagerplatz** verwenden. Sie können die Höchstanzahl der zu erstellenden Zykluszählungen angeben. Wenn beispielsweise der Lagerortleiter einen Wert von **5** angibt, dann wird die Zyklusinventurarbeit für fünf Lagerplätze erstellt, auch wenn der Artikel in 10 verschiedenen Lagerplätzen vorhanden ist. Sie können auch eine Arbeitspool-ID auswählen, der die erstellen Zykluszählungsarbeit-IDs zugewiesen werden. Wenn eine Arbeitspool-ID für die Zykluszählung verarbeitet wird, werden die Zykluszählungsarbeit-IDs, die diesem Arbeitspool zugewiesen sind, als Gruppe verarbeitet.
 
 ## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Zykuszählung mithilfe eines mobilen Geräts ausführen
-Es gibt mehrere Möglichkeiten, die Zykluszählungsarbeit mittels Finance and Operations auf einem mobilen Gerät zu verarbeiten:
+Es gibt mehrere Möglichkeiten, die Zykluszählungsarbeit mittels Supply Chain Management auf einem mobilen Gerät zu verarbeiten:
 
 -   **Benutzergeleitet** – Die Arbeitskraft kann eine Zykluszählungsarbeit-ID angeben, die im Status **Offen** ist.
--   **Systemgeleitet** – Finance and Operations weist der Arbeitskraft eine Zykluszählungsarbeit-ID zu.
+-   **Systemgeleitet** – Supply Chain Management weist der Arbeitskraft eine Zykluszählungsarbeit-ID zu.
 -   **Zykluszählungs-Gruppierung** - Die Arbeitskraft kann Zykluszählungsarbeit-IDs gruppieren, die für einen bestimmten Lagerplatz, eine bestimmte Zone oder einen Arbeitspool spezifisch sind.
 -   **Stichprobenzykluszählung** – Die Arbeitskraft kann Artikel in einem Lagerortlagerplatz jederzeit zählen, ohne Zykluszählungsarbeit zu erstellen. Um eine Stichprobenzykluszählung in einem Lagerplatz auszuführen, gibt die Arbeitskraft die Lagerplatzkennung ein.
 

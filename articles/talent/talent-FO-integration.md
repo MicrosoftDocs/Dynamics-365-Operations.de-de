@@ -1,9 +1,9 @@
 ---
-title: Integration von Dynamics 365 for Talent zu Dynamics 365 for Finance and Operations – FAQ
-description: In diesem Thema wird erläutert, welche Daten in einer Talent und Finance and Operations Integration synchronisiert werden.
+title: Integration von Dynamics 365 Talent zu Dynamics 365 Finance – FAQ
+description: In diesem Thema wird erläutert, welche Daten in einer Talent- und Finance-Integration synchronisiert werden.
 author: andreabichsel
 manager: AnnBe
-ms.date: 01/09/2019
+ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: cb9e01316f4b154a3e9a73042eaf0492f016c46c
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 5bb855e6dd7ff236b7bda9e59e12ed8cc8ab9bc9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742707"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251013"
 ---
-# <a name="dynamics-365-for-talent-to-dynamics-365-for-finance-and-operations-integration-faq"></a>Integration von Dynamics 365 for Talent zu Dynamics 365 for Finance and Operations – FAQ
+# <a name="dynamics-365-talent-to-dynamics-365-finance-integration-faq"></a>Integration von Dynamics 365 Talent zu Dynamics 365 Finance – FAQ
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema beantwortet häufige Fragen darüber, welche Daten synchronisiert werden, wenn Dynamics 365 for Talent mit Dynamics 365 for Finance and Operations integriert ist.
+Dieses Thema beantwortet häufige Fragen darüber, welche Daten synchronisiert werden, wenn Dynamics 365 Talent mit Dynamics 365 Finance integriert ist.
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Sind alle Daten synchronisiert oder nur einige Dateneinheiten?
 
-Mit Core Human Resources (HR) wird eine Teilmenge der Daten synchronisiert. Eine Liste aller Entitäten finden Sie unter [Integration von Dynamics 365 for Talent zu Dynamics 365 for Finance and Operations](talent-financeandoperations-integration.md).
+Mit Core HR wird eine Teilmenge der Daten synchronisiert. Eine Liste aller Entitäten finden Sie unter [Integration von Dynamics 365 Talent zu Dynamics 365 Finance](talent-financeandoperations-integration.md).
 
 Für Attract und Onboard sind alle Daten nativ auf Common Data Service.
 
@@ -40,15 +40,15 @@ Für Attract und Onboard sind alle Daten nativ auf Common Data Service.
 
 Vorlagen sind der Ausgangspunkt. Sie können Ihre eigene Vorlage erstellen, aber bei der Erstellung eines Integrationsprojekts wird immer eine Vorlage benötigt. Weitere Informationen über Data Integrator (DI), Vorlagen und Projekte finden Sie unter [Daten in Common Data Service integrieren](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance-and-operations"></a>Kann ich Finanzdimension für den Transfer zwischen Talent und Finance and Operations abbilden?
+## <a name="can-i-map-financial-dimensions-to-transfer-between-talent-and-finance"></a>Kann ich Finanzdimension für den Transfer zwischen Talent und Finance abbilden?
 
 Finanzdimension sind derzeit nicht in Common Data Service enthalten und gehören daher nicht zur Standardvorlage. Diese Entität ist geplant, aber derzeit ist kein Release-Timeline verfügbar.
 
-Für Daten, die sich in Finance and Operations befinden, aber nicht im Talent vorhanden sind, verbinden Sie die beiden Systeme miteinander, indem Sie **Links in Talent konfigurieren**. Weitere Informationen zur Konfiguration der Verknüpfungen zwischen Talent und Finance and Operations finden Sie unter [Was ist neu oder geändert in Dynamics 365 for Talent Core HR (31. Oktober 2018)](whats-new-talent-october-31.md).
+Für Daten, die sich in Finance befinden, aber nicht im Talent vorhanden sind, verbinden Sie die beiden Systeme miteinander, indem Sie **Links in Talent konfigurieren**. Weitere Informationen zur Konfiguration der Verknüpfungen zwischen Talent und Finance finden Sie unter [Was ist neu oder geändert in Dynamics 365 Talent: Core HR (31. Oktober 2018)](whats-new-talent-october-31.md).
 
 ![Finanzdimensionen zuordnen](media/MapFinancialDimensions.png)
 
-## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-and-operations-why"></a>Manchmal, wenn ich Mitarbeiter importiere, gehen sie in inaktive Mitarbeiter im Finance and Operations. Warum?
+## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Manchmal, wenn ich Mitarbeiter importiere, gehen sie in inaktive Mitarbeiter in Finance. Warum?
 
 Dieser Fehler kann auftreten, wenn Mitarbeiter keinen aktiven Beschäftigungsdetailsatz in Talent haben. Um dies zu beheben, gehen Sie zu **Personalmanagement \> Mitarbeiter \> Beschäftigungshistorie \> Datumsmanager** und überprüfen Sie, ob ein aktiver Datensatz zur Beschäftigung vorhanden ist.
 
@@ -62,7 +62,7 @@ Mit der Verwendung der "Erweiterten Suche" können Sie Quelldaten filtern und um
 
 ![Erweiterte Abfrage – aktive Arbeitskräfte](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
-## <a name="can-i-specify-which-fields-to-send-to-finance-and-operations-for-a-specific-entity"></a>Kann ich angeben, welche Felder für eine bestimmte Einheit an Finance and Operations gesendet werden sollen?
+## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kann ich angeben, welche Felder für eine bestimmte Einheit an Finance gesendet werden sollen?
 
 Felder können der Integrationsaufgabe hinzugefügt oder entfernt werden. Nicht alle Datenfelder, die in der Entität Common Data Service vorhanden sind, werden aus Core HR gefüllt.
 Zusätzliche Daten können über PowerApps gefüllt werden.
@@ -75,7 +75,7 @@ Für die Ausnahmebehandlung ist keine spezielle Einrichtung erforderlich. Der Da
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Kann ich eine bidirektionale Integration einrichten?
 
-Nein, die Integration ist derzeit einseitig (Talent zu Finance and Operations). Es steht jedoch eine Standardvorlage zur Verfügung, um Daten aus Talent an Finance and Operations zu senden.
+Nein, die Integration ist derzeit einseitig (Talent zu Finance and Operations). Es steht jedoch eine Standardvorlage zur Verfügung, um Daten aus Talent an Finance zu senden.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Kann ich im Rahmen meiner Integration das Löschen von Datensätzen zulassen?
 
@@ -93,13 +93,13 @@ Wenn die Standardvorlage verwendet wird, werden die Integrationsschlüssel autom
 
 ## <a name="if-i-have-n-number-of-legal-entities-where-workers-have-employments-do-i-need-to-create-a-mapping-for-each-of-them"></a>Wenn ich eine N Anzahl von juristischen Personen habe, bei denen Arbeitnehmer beschäftigt sind, muss ich dann für jede von ihnen eine Zuordnung erstellen?
 
-Ja, für jede juristische Person in Finance and Operations benötigen Sie ein eigenes Integrationsprojekt in der Datenintegration.
+Ja, für jede juristische Person in Finance benötigen Sie ein eigenes Integrationsprojekt in der Datenintegration.
 
 ## <a name="i-need-to-transfer-data-that-is-not-part-of-the-default-template-provided-by-microsoft-can-i-do-this"></a>Ich muss Daten übertragen, die nicht Teil der von Microsoft bereitgestellten Standardvorlage sind. Kann ich das machen?
 
 Ja, Felder können der bestehenden Vorlage hinzugefügt oder entfernt werden. Die Vorlage kann modifiziert werden, um zusätzliche Daten aus anderen Common Data Service Entitäten aufzunehmen. Die Entität muss sich im Common Data Service befinden, damit sie in die Vorlage aufgenommen werden kann. 
 
-## <a name="i-just-created-new-finance-and-operations-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Ich habe gerade eine neue Finance and Operations und Talent Umgebung erstellt und erhalte die Fehlermeldung "Der Datenwert verletzt Integritätseinschränkungen". Warum?
+## <a name="i-just-created-new-finance-and-talent-environments-and-im-getting-the-error-the-data-value-violates-integrity-constraints-why"></a>Ich habe gerade eine neue Finance und Talent Umgebung erstellt und erhalte die Fehlermeldung „Der Datenwert verletzt Integritätseinschränkungen“. Warum?
 
 Gründe für diesen Fehler können sein:
 
@@ -109,9 +109,9 @@ Gründe für diesen Fehler können sein:
 
 ## <a name="if-there-are-execution-errors-and-the-employee-id-didnt-sync-how-do-i-find-the-history-job-which-has-the-failed-employee-record"></a>Wenn es Ausführungsfehler gibt und die Mitarbeiter-ID nicht synchronisiert wurde, wie finde ich den Verlaufsauftrag, der den fehlgeschlagenen Mitarbeiterdatensatz enthält?
 
-Data Integrator erstellt mehrere Projekte in Finance and Operations. Die Beziehung zwischen der Aufgabe des Datenintegrators und dem Finance and Operations-Projekt ist eins zu eins.
+Data Integrator erstellt mehrere Projekte in Finance. Die Beziehung zwischen der Aufgabe des Datenintegrators und dem Finance-Projekt ist eins zu eins.
 
-Verfolgen Sie die Zeit aus der Ausführungshistorie des Data Integrator und suchen Sie nach dem Index -1 Projekt in Finance and Operations. Wenn die Aufgabennummer in Data Integrator 9 ist, ist der Index in Finance and Operations 8.
+Verfolgen Sie die Zeit aus der Ausführungshistorie des Data Integrator und suchen Sie nach dem Index -1 Projekt in Finance. Wenn die Aufgabennummer in Data Integrator 9 ist, ist der Index in Finance 8.
 
 1. Erfassen Sie den Aufgabenindex aus dem Data Integrator (in diesem Beispiel ist es "9").
 
@@ -121,13 +121,13 @@ Verfolgen Sie die Zeit aus der Ausführungshistorie des Data Integrator und such
 
 ![Verfolgung der Ausführungszeit des Projekts](media/CaptureTimeOfExecution.png)
 
-3. In Finance and Operations, identifizieren Sie den Index - 1. In diesem Beispiel stimmt das Projekt mit dem Suffix "8" und der Ausführungszeit des Index "0" Projekts mit der Ausführungszeit in Schritt 2 überein.
+3. In Finance identifizieren Sie Index - 1. In diesem Beispiel stimmt das Projekt mit dem Suffix "8" und der Ausführungszeit des Index "0" Projekts mit der Ausführungszeit in Schritt 2 überein.
 
 ![Index identifizieren](media/IdentifyIndex.png)
 
-## <a name="after-integrating-talent-and-finance-and-operations-i-dont-see-my-talent-data-in-finance-and-operations-what-do-i-do"></a>Nach der Integration von Talent und Finance and Operations sehe ich meine Talent-Daten in Finance and Operations nicht mehr. Was soll ich tun?
+## <a name="after-integrating-talent-and-finance-i-dont-see-my-talent-data-in-finance-what-do-i-do"></a>Nach der Integration von Talent und Finance sehe ich meine Talent-Daten in Finance nicht mehr. Was soll ich tun?
 
-Die Integration in Finance and Operations ist ein zweistufiger Prozess. Stellen Sie zunächst sicher, dass die Talent-Daten aktualisiert und im Common Data Service verfügbar sind. Dies ist eine echtzeitnahe Synchronisation und kann in PowerApps überprüft werden, indem man sich die Daten innerhalb der Dateneinheiten ansieht.
+Die Integration in Finance ist ein zweistufiger Prozess. Stellen Sie zunächst sicher, dass die Talent-Daten aktualisiert und im Common Data Service verfügbar sind. Dies ist eine echtzeitnahe Synchronisation und kann in PowerApps überprüft werden, indem man sich die Daten innerhalb der Dateneinheiten ansieht.
 
 ![Daten im Common Data Service](media/DataInCDS.png)
 
@@ -135,24 +135,24 @@ Wenn die Daten nicht wie erwartet im Common Data Service angezeigt werden, über
 
 Wenn die Entität unterstützt wird und die Daten im Common Data Service verfügbar sind, überprüfen Sie, ob die Zuordnung im Data Integrator korrekt ist. Wenn die Integrator-Zuordnung in Ordnung aussieht, überprüfen Sie, ob die Datenverwaltungsaufträge erfolgreich ausgeführt wurden. Bei der Ausführung der Batch-Jobs können Fehler auftreten. Weitere Informationen zur Datenverwaltung finden Sie unter [Datenverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
 
-## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-and-operations-what-should-i-do"></a>Die Adressen meiner Mitarbeiter sind nach dem Import in Finance and Operations falsch. Was soll ich tun?
+## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Die Adressen meiner Mitarbeiter sind nach dem Import in Finance falsch. Was soll ich tun?
 
-Die Nummernfolge für die **Standort-ID** verwendet das gleiche Muster sowohl in Talent als auch in Finance and Operations. Die Nummernfolge muss auf beiden Seiten eindeutig sein, damit es bei der Integration von Daten aus Common Data Service in Finance and Operations zu keinen Adresskollisionen kommt.
+Die Nummernfolge für die **Standort-ID** verwendet das gleiche Muster sowohl in Talent als auch in Finance. Die Nummernfolge muss auf beiden Seiten eindeutig sein, damit es bei der Integration von Daten aus Common Data Service in Finance and Operations zu keinen Adresskollisionen kommt.
 
-Vergewissern Sie sich bei der Implementierung von Talent, dass die Zahlenreihenfolge in Talent und Finance and Operations nicht identisch sind. Stellen Sie sicher, dass nicht alle Zahlenreihen identisch sind, wenn Daten in beiden Systemen gepflegt werden können.
+Vergewissern Sie sich bei der Implementierung von Talent, dass die Zahlenreihenfolge in Talent und Finance nicht identisch sind. Stellen Sie sicher, dass nicht alle Zahlenreihen identisch sind, wenn Daten in beiden Systemen gepflegt werden können.
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Beim Erstellen meines Verbindungs-Sets kann ich die Verbindung in der Dropdown-Liste Verbindung nicht sehen. Was soll ich tun?
 
-Achten Sie beim Erstellen Ihrer Verbindungen darauf, dass Sie Dynamics 365 for Finance and Operations (aktuell in der Vorschau) und Common Data Service wählen.
+Achten Sie beim Erstellen Ihrer Verbindungen darauf, dass Sie Dynamics 365 Finance und Common Data Service wählen.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Bei der Synchronisation von Arbeitsverhältnissen erhalte ich die Fehlermeldung "CompanyInfo_FK existiert nicht" oder "Der Wert '12/31/2154 11:59:59 pm' im Feld 'Arbeitsenddatum' ist in der zugehörigen Tabelle 'Beschäftigung' nicht enthalten". Was soll ich tun?
 
-Stellen Sie sicher, dass Sie die Zuordnung zu den richtigen juristischen Personen vornehmen. Die Synchronisierung von juristischen Personen ist nicht Teil der Standardvorlage, so dass erwartet wird, dass jede juristische Person, die in Talent und Common Data Service vorhanden ist, auch in Finance and Operations vorhanden ist.
+Stellen Sie sicher, dass Sie die Zuordnung zu den richtigen juristischen Personen vornehmen. Die Synchronisierung von juristischen Personen ist nicht Teil der Standardvorlage, so dass erwartet wird, dass jede juristische Person, die in Talent und Common Data Service vorhanden ist, auch in Finance vorhanden ist.
 Stellen Sie außerdem sicher, dass Sie die richtigen juristischen Personen für das zugehörige Verbindungsset auswählen.
 
-## <a name="after-setting-up-my-project-the-field-mapping-for-finance-and-operations-appears-to-be-empty-what-should-i-do"></a>Nach der Einrichtung meines Projekts scheint die Feldzuordnung für Finance and Operations leer zu sein. Was soll ich tun?
+## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Nach der Einrichtung meines Projekts scheint die Feldzuordnung für Finance leer zu sein. Was soll ich tun?
 
-Aktualisieren Sie die Dateneinheiten in Finance and Operations, indem Sie zu **Datenmanagement \> Rahmenparameter \> Entitätseinstellungen \> Entitätsliste aktualisieren** gehen. Dies sollte einige Minuten dauern, dann sollten Sie diese Zuordnungen sehen. Dieses Problem tritt auf, wenn neue Projekte erstellt werden.
+Aktualisieren Sie die Dateneinheiten in Finance, indem Sie zu **Datenmanagement \> Rahmenparameter \> Entitätseinstellungen \> Entitätsliste aktualisieren** gehen. Dies sollte einige Minuten dauern, dann sollten Sie diese Zuordnungen sehen. Dieses Problem tritt auf, wenn neue Projekte erstellt werden.
 
 ![Fehlende Feldzuordnung](media/MissingFieldMapping.png)
 

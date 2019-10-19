@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: ee4ae3f9037d975855aa970a052a36ec90257e1d
-ms.sourcegitcommit: 574d4dda83dcab94728a3d35fc53ee7e2b90feb0
+ms.openlocfilehash: 0a10133952d1a161d265dd29e6a63b54de392417
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "1595304"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023377"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
@@ -30,7 +30,7 @@ ms.locfileid: "1595304"
 
 ## <a name="introduction"></a>Einführung
 
-Um die lokalen steuerlichen Anforderungen für Kassen in Österreich zu erfüllen, umfassen die Microsoft Dynamics 365 for Retail-Funktionen für Österreich eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](https://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardare station aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
+Um die lokalen steuerlichen Anforderungen für Kassen in Österreich zu erfüllen, umfassen die Dynamics 365 Retail-Funktionen für Österreich eine Beispielintegration der Verkaufsstelle (POS) in einen externen Steuerregistrierungsservice. Das Beispiel erweitert die [steuerliche Integrationsfunktionen](fiscal-integration-for-retail-channel.md). Es basiert auf der [EFR (Electronisches Fiskalregister)](https://efsta.org/sicherheitsloesungen/)-Lösung von [EFSTA](https://efsta.org/) und ermöglicht die Kommunikation mit dem EFR-Service über das HTTPS-Protokoll. Der EFR-Dienst sollte entweder in der Retail Hardware station oder auf einem separaten Computer gehostet werden, zu dem von der Hardare station aus eine Verbindung hergestellt werden kann. Das Beispiel wird in der Form eines Quellcodes bereitgestellt und ist Teil des Retail Software Development Kit (SDK).
 
 Microsoft gibt keine Hardware, Software oder Dokumentation von EFSTA aus frei. Um Informationen darüber zu erhalten, wie Sie die EFR-Lösung beziehen und betreiben, wenden Sie sich an [EFSTA](https://efsta.org/kontakt/).
 
@@ -121,7 +121,9 @@ Sie müssen auch die folgenden Einstellungen für Österreich angeben. Beachten 
 
 ### <a name="set-up-vat-per-austrian-requirements"></a>MwSt. nach österreichischen Anforderungen einrichten
 
-Sie müssen Mehrwertsteuercodes, Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen erstellen. Sie müssen auch Mehrwertsteuerinformationen für Produkte und Dienstleistungen einrichten. Weitere Informationen dazu, wie die Mehrwertsteuer in Microsoft Dynamics 365 for Finance and Operations und in Retail eingerichtet und verwendet wird, finden Sie unter [Mehrwertsteuerüberblick](../../financials/general-ledger/indirect-taxes-overview.md).
+
+Sie müssen Mehrwertsteuercodes, Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen erstellen. Sie müssen auch Mehrwertsteuerinformationen für Produkte und Dienstleistungen einrichten. Weitere Informationen dazu, wie die Mehrwertsteuer in eingerichtet und verwendet wird, finden Sie unter [Mehrwertsteuerüberblick](../../financials/general-ledger/indirect-taxes-overview.md).
+
 
 Auf Verkaufsbelegen können Sie einen abgekürzten Code für einen Mehrwertsteuercode drucken (beispielsweise „A” oder „B”). Um diese Funktionalität verfügbar zu machen, legen Sie das Feld **Code drucken** auf der Seite **Mehrwertsteuercodes** fest.
 

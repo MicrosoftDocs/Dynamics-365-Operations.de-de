@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2276f5296a77d620e0084c0247b1e25071fe029
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: bb5255236fc48132d4d68dc6f515f32e7ec71dae
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865279"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248841"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Übersicht über Angebotsanfragen (RFQs)
 
@@ -48,16 +48,13 @@ Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanfo
 
 Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** (**Senden und Veröffentlichen** für den öffentlichen Sektor) in der  Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
 
-Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Microsoft Dynamics 365 for Finance and Operationseingegeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
+Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Supply Chain Management eingeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
 
 Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem sie übermittelt wurde, können Sie die Angebotsanforderung an Kreditoren erneut senden, wenn Sie mit der Verwendung der beiden Zusatzaktivitäten fertig sind: Erstellen und Abschließen.+
 
 Wenn Sie Angebote per E-Mail erhalten, müssen Sie diese Angebote auf der Seite **Antworten auf Angebotsanforderung** eingeben.
 
 Wenn eine zweite Iteration von einer Antwort für einen bestimmten Kreditor erforderlich ist, klicken Sie auf **Zurück** auf der Seite **Antwort auf Angebotsanforderung**. Die Aktion „Zurück” generiert eine neue Erfassung und einen Bericht, der gemäß den Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.
-
-> [!NOTE]
-> Der Name der Seite **Angebotsanforderung** hat geändert. In den früheren Versionen von Dynamics 365 for Finance and Operations wird diese Seite **Angebotsanforderung-Antwort** bezeichnet.
 
 Wenn Sie Bewertungskriterien zu Ihrer Angebotsanforderungsanfrage hinzugefügt haben, hat die Antwort auf die Angebotsanforderung einen Bewertungsbereich, in dem Sie die Punktzahlen eingeben können. Die Gesamtbewertungen werden in der Angebotsanforderung angezeigt, wenn Sie die Antworten auf der Seite **Antworten vergleichen** vergleichen. Auf dieser Seite können Sie auch **Antwortdaten vergleichen**, wie beispielsweise den Positionspreis, das Lieferdatum und den Gesamtpreis.
 

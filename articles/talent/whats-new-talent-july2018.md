@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (Juli 2018)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR entweder neu oder geändert sind.
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/31/2018
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: c0867fcf6203c303a700723d8c190378f495dac0
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: ba06183f32e9a788432bae640d1997f2ffb127f1
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856256"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010221"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-july-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (Juli 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-july-2018"></a>Neuerungen und Änderungen in Dynamics 365 Talent: Core HR (Juli 2018)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
+In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent: Core HR entweder neu oder geändert sind.
 
 ## <a name="powerapps-personalization"></a>PowerApps-Personalisierung
 
-Microsoft Dynamics 365 for Talent - Integration mit dem Microsoft PowerApps Service. Mit PowerApps können sowohl Entwickler als auch nicht technische Benutzer benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Web erstellen, ohne Code schreiben zu müssen. Apps, die Sie, Ihre Organisation oder das breitere Ökosystem mithilfe von PowerApps entwickeln, können im Talent-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen. Beispielsweise erstellen Sie möglicherweise eine App, die Talent mit Informationen ergänzt, die von einem anderen System abgerufen werden.
+Talent unterstützt Integration mit dem Microsoft PowerApps-Service. Mit PowerApps können sowohl Entwickler als auch nicht technische Benutzer benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Web erstellen, ohne Code schreiben zu müssen. Apps, die Sie, Ihre Organisation oder das breitere Ökosystem mithilfe von PowerApps entwickeln, können im Talent-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen. Beispielsweise erstellen Sie möglicherweise eine App, die Talent mit Informationen ergänzt, die von einem anderen System abgerufen werden.
 
 Weitere Informationen finden Sie unter [PowerApps-Apps einbetten](../fin-and-ops/get-started/embed-power-apps.md).
 

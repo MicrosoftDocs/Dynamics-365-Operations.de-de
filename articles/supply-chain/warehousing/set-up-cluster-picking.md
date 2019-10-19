@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7adec850cfb473b0bfc9536dcb1ef1cfd74129a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 84b6d3c3caa09b9601701ca4ac1992b151c0b8d4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558999"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249749"
 ---
 [!include[banner](../includes/banner.md)]
 
@@ -34,7 +34,7 @@ In diesem Thema wird beschrieben, wie Arbeitskräften ermöglicht wird, ihre mob
 
 Nachdem Arbeitsaufträge für den Lagerort freigegeben sind, kann die Arbeitskraft ein mobiles Gerät verwenden, um die Aufträge einem Cluster zuzuweisen. Das Cluster organisiert die Entnahmerbeit für die Arbeitskraft. Wenn einem Cluster ein Arbeitsauftrag zugewiesen wird, muss die Arbeitskraft Clusterkommissionierung verwenden, um die Entnahmearbeit für den Auftrag auszuführen. Die Arbeitskraft kann anderen Entnahmemethoden nicht verwenden. Wenn einem Cluster ein Arbeitsauftrag versehentlich zugewiesen wird, muss die Arbeitskraft den Cluster unterbrechen und ihn anschließend neu erstellen.
 
-Bei Bedarf kann eine Arbeitskraft einen Cluster an eine andere Arbeitskraft weiterleiten. Dieses ändert den Clusterstatus zu Erfolgreich. Wenn die Arbeitskraft ein mobiles Gerät verwendet, um anzugeben, dass die Entnahme und die Entnahmearbeit abgeschlossen ist, müssen die Lieferung oder die Ladung im Dynamics 365 for Finance and Operations Client bestätigt werden.
+Bei Bedarf kann eine Arbeitskraft einen Cluster an eine andere Arbeitskraft weiterleiten. Dieses ändert den Clusterstatus zu Erfolgreich. Wenn die Arbeitskraft ein mobiles Gerät verwendet, um anzugeben, dass die Entnahme und die Entnahmearbeit abgeschlossen ist, müssen die Lieferung oder die Ladung im Client bestätigt werden.
 
 ## <a name="set-up-cluster-picking"></a>Clusterkommissionierung einrichten
 

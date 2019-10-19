@@ -1,6 +1,6 @@
 ---
 title: Verwalten Sie Lohnarbeit in der Produktion
-description: In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Microsoft Dynamics 365 for Finance and Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
+description: In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 author: cvocph
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41f13bf1b587cb802579cc3b27ef4eea70a0380
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ea2feccf9f74c0f035b8a46dc87eb41bdf85900a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569752"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023540"
 ---
 # <a name="manage-subcontracting-work-in-production"></a>Verwalten Sie Lohnarbeit in der Produktion
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Microsoft Dynamics 365 for Finance and Operations verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
+In diesem Thema wird erläutert, wie Fremdarbeitsdienste in Dynamics 365 Supply Chain Management verwaltet werden. Das bedeutet, wird dies, wie Produktions-Einzelvorgänge, die einer Ressource zugewiesen, von einem Kreditor verwaltet werden.
 
 In [Produktionsprozesse](production-process-overview.md) kann Arbeit nach Ressourcen ausgeführt werden, die von den Kreditoren zugeordnet oder verwaltet werden. Normalerweise werden Kreditorenbetriebsmittel der Ebene der periodischen Übernachfrage verwendet, die die verfügbare Kapazität der eigenen Ressourcen eines Unternehmens hinausreicht. Der Kreditor kann z auch in der Lage, Angaben [Ressourcenfunktionen](resource-capabilities.md) oder Ressourcen mit einem geringeren Preis anzubieten.  
 
@@ -40,7 +40,7 @@ Wenn Sie Arbeitsgänge oder Aktivitäten von unterliegt, sind jedoch betreffen a
 
 Bei internen Ressourcen wird ein Fixkostensatz normalerweise für eine Periode aufgeteilt. Durch Kontrast sind die Kosten der geregelten von Ressourcen auf dem Einkaufspreis des zugehörigen Service. Der als Service wird ein weiteres Produkt definiert und wird verwendet, um die Einkaufprozesse Beschaffungs- und für einen angegebenen Artikel von Arbeitsgang zu treiben.  
 
-Derzeit gibt es kein explizites Konzept für Halbfertigprodukte in Microsoft Dynamics 365 for Finance and Operations. Für einen Produktionsauftrag, der mehr als einen Arbeitsgang erforderlich, um Rohmaterial in ein Fertigprodukt umzuwandeln, wird das Endprodukt wieder dem Lager nur im letzten Arbeitsgang gebucht. Die, die Halbfertigprodukte das vorherige Arbeitsgangserzeugnis im in Fertigung (WIP) verwendet werden, doch sie werden nicht im Bestand gebucht oder nachverfolgt. Obgleich die Arbeitspläne und die Stücklisten (BOMs) in mehrere kleinere Einheiten, in Erhöhungen dieses Ansatzes Anzahl von Produkten, die in Stücklisten und Arbeitsplänen in aufteilbare, die verwaltet werden müssen.  
+Derzeit gibt es kein explizites Konzept für Halbfertigprodukte in Supply Chain Management. Für einen Produktionsauftrag, der mehr als einen Arbeitsgang erforderlich, um Rohmaterial in ein Fertigprodukt umzuwandeln, wird das Endprodukt wieder dem Lager nur im letzten Arbeitsgang gebucht. Die, die Halbfertigprodukte das vorherige Arbeitsgangserzeugnis im in Fertigung (WIP) verwendet werden, doch sie werden nicht im Bestand gebucht oder nachverfolgt. Obgleich die Arbeitspläne und die Stücklisten (BOMs) in mehrere kleinere Einheiten, in Erhöhungen dieses Ansatzes Anzahl von Produkten, die in Stücklisten und Arbeitsplänen in aufteilbare, die verwaltet werden müssen.  
 
 Es gibt zwei Methoden der Modellierung von Lohnarbeit für Produktionsarbeitsgänge. Methoden Diese unterscheiden sich auf die Methode, mit der der Fremdarbeitsprozess modelliert werden kann, die Halbfertigprodukte, wie die im Prozess angezeigt werden, und die Art, dass Kostenkontrolle verwaltet wird.
 

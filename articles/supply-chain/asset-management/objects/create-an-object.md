@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f15c6c5ccdcddebe7aa428cff48ca6e3b120d7f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: bd963caed7f49db5dd7550dd30c3f831318d2b7a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783293"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250897"
 ---
 # <a name="create-an-asset"></a>Eine Anlage erstellen
 
@@ -63,12 +63,12 @@ Die Felder **Leistungsebene** und **Risiko** beziehen sich auf die Arbeitsauftr�
 
 ## <a name="asset"></a>Anlage
 
-Sie können **Ressource** für die Anlage auswählen. Die Ressourcen-Auswahl bestimmt, welcher Kalender für die Arbeitsauftragsplanung verwendet wird. Ressourcen-Auswahl wird häufig für Anlagen verwendet. In Dynamics 365 for Finance and Operations werden Ressourcen und Ressourcengruppen in **Organisationsverwaltung** > **Ressourcen** > **Ressourcengruppen** oder **Ressourcen** eingerichtet.
+Sie können **Ressource** für die Anlage auswählen. Die Ressourcen-Auswahl bestimmt, welcher Kalender für die Arbeitsauftragsplanung verwendet wird. Ressourcen-Auswahl wird häufig für Anlagen verwendet. Ressourcen und Ressourcengruppen werden in **Organisationsverwaltung** > **Ressourcen** > **Ressourcengruppen** oder **Ressourcen** eingerichtet.
 
 Im Feld **Anlagennummer** können Sie eine Anlage auswählen, die der Anlage zugeordnet wird. Dies ist von Bedeutung, wenn Ihre Anlage einem Investitionsprojekt zugeordnet ist.
 
 - Wenn die Anlage einem Anlagevermögen zugeordnet ist, können Sie einen Arbeitsauftragstyp verwenden, der für den Arbeitsauftrag verwendet wird, der einem Investitionsprojekt zugeordnet wird. 
-- Informationen zu Anlagen für eine Anlage werden dem Modul **Anlagevermögen** in Dynamics 365 for Finance and Operations zugeordnet. Dies bedeutet, dass in **Anlagen** > **Anlagen** > **Anlagen** Sie eine Übersicht über die Anlagenverwaltungsprojekte erhalten, die einer Anlage zugeordnet werden, indem Sie die Anlage in der Liste auswählen und den Inhalt im Bereich **Zugehörige Informationen** > im Abschnitt **Zugeordnete Projekte** anzeigen.
+- Informationen zu Anlagen für eine Anlage werden dem Modul **Anlagevermögen** in Dynamics 365 Supply Chain Management zugeordnet. Dies bedeutet, dass in **Anlagen** > **Anlagen** > **Anlagen** Sie eine Übersicht über die Anlagenverwaltungsprojekte erhalten, die einer Anlage zugeordnet werden, indem Sie die Anlage in der Liste auswählen und den Inhalt im Bereich **Zugehörige Informationen** > im Abschnitt **Zugeordnete Projekte** anzeigen.
 
 
 ## <a name="details"></a>Detaildaten

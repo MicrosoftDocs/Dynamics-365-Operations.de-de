@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7ad3c3fd17e88f364be12c122e2f5c155b7b9064
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e600e1d2bb4bc1a49d55fb58b3e74fa7e13fc2af
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556436"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017896"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Schicht- und Kassenladenverwaltung
 
@@ -32,7 +32,7 @@ ms.locfileid: "1556436"
 
 In diesem Thema wird erläutert, wie Sie in der Retail-Verkaufsstelle (POS) Schichten einrichten und nutzen.
 
-In Microsoft Dynamics 365 for Retail wird der Begriff *Schicht* als die Sammlung von buchungsbezogenen POS-Daten und Aktivitäten zwischen zwei Punkten beschrieben. Für jede Schicht wurde der erwartete Geldbetrag mit dem Betrag verglichen, der gezählt und deklariert wurde.
+In Dynamics 365 Retail wird der Begriff *Schicht* als die Sammlung von buchungsbezogenen POS-Daten und Aktivitäten zwischen zwei Punkten beschrieben. Für jede Schicht wurde der erwartete Geldbetrag mit dem Betrag verglichen, der gezählt und deklariert wurde.
 
 Normalerweise sind Schichten zu Beginn des Werktages geöffnet. An diesem Punkt deklariert ein Benutzer den Anfangsbetrag, den die Kasse enthält. Verkaufsbuchungen werden anschließend den gesamten Tag lang ausgeführt. Schließlich wird am Ende des Tages die Kasse gezählt und die Abschlussbeträge werden deklariert. Die Schicht wurde geschlossen und ein Z-Bericht wird generiert. Der Z-Bericht gibt an, ob ein Überschuss oder Fehlbetrag vorliegt.
 
@@ -69,7 +69,7 @@ Damit geteilte Schichten in einem Geschäft verwendet werden können, muss die K
 
 ## <a name="shift-and-drawer-operations"></a>Schicht- und Kassenverwaltung
 
-Verschiedene Aktivitäten können ausgeführt werden, um den Status einer Schicht zu ändern oder um den Geldbetrag in der Kasse zu erhöhen oder zu verringern. Dieser Abschnitt beschreibt diese Schichtbetriebe für Microsoft Dynamics 365 for Retail Modern POS und Cloud POS.
+Verschiedene Aktivitäten können ausgeführt werden, um den Status einer Schicht zu ändern oder um den Geldbetrag in der Kasse zu erhöhen oder zu verringern. Dieser Abschnitt beschreibt diese Schichtbetriebe für Retail Modern POS und Cloud POS.
 
 ### <a name="open-shift"></a>Offene Schichten
 

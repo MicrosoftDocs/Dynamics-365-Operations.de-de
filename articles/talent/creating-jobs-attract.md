@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 351fd03f6a27073b850729e2eef5516556292225
-ms.sourcegitcommit: b24c36cdd3b6f6085447bf81cb034d13d5b081fe
+ms.openlocfilehash: 64871eb5f7175701cfe1c9fefcc04b9da488748b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "1773254"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008454"
 ---
 # <a name="create-a-job"></a>Eine Stelle erstellen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Elemente einer Stelle in Microsoft Dynamics 365 for Talent: Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
+In diesem Thema werden die Elemente einer Stelle in Microsoft Dynamics 365 Talent: Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
 
 ## <a name="job-creation"></a>Joberstellung
 
@@ -74,7 +74,7 @@ Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt 
 
 ## <a name="postings"></a>Buchungen
 
-Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Microsoft Dynamics 365 for Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit. Wenn eine Stelle nur als intern veröffentlicht wird, benötigen Kandidaten ein AAD-Konto, um die Stelle anzuzeigen und sich auf sie zu bewerben. Wenn die Stelle als öffentlich aufgeführt ist, können Kandidaten mithilfe aller Authentifizierungsoptionen Stellen anzeigen und sich auf sie bewerben. 
+Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Dynamics 365 Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit. Wenn eine Stelle nur als intern veröffentlicht wird, benötigen Kandidaten ein AAD-Konto, um die Stelle anzuzeigen und sich auf sie zu bewerben. Wenn die Stelle als öffentlich aufgeführt ist, können Kandidaten mithilfe aller Authentifizierungsoptionen Stellen anzeigen und sich auf sie bewerben. 
 
 Weitere Informationen zu Stellenausschreibungen finden Sie unter [Funktionen für Karriereseiten in Attract](career-site.md).
 

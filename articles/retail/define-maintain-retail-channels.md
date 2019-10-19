@@ -1,6 +1,6 @@
 ---
 title: Einzelhandelskanäle definieren und verwalten
-description: Dieses Thema bietet einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Microsoft Dynamics 365 for Retail als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
+description: Dieses Thema bietet einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Dynamics 365 Retail als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
 author: mugunthanm
 manager: AnnBe
 ms.date: 11/14/2017
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 53ba6cdb2378ce9011c6e7e3ce4e67c789adb1e6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560348"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019369"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Einzelhandelskanäle definieren und verwalten
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Microsoft Dynamics 365 for Retail als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
+Dieses Thema bietet einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Dynamics 365 Retail als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
 
-Dynamics 365 for Retail unterstützt mehrere Einzelhandelskanäle wie Onlineshops, Callcenter und physische Shops. Ein physischer Laden wird Einzelhandelsshop genannt. Jeder Einzelhandelsshop kann seine eigenen Zahlungsmethoden, Preisgruppen, POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten. Sie müssen alle Elemente für einen Shop einrichten, bevor Sie ihn erstellen. Nachdem Sie einen Einzelhandelsshop erstellt haben, weisen Sie die Produkte zu, die der Shop umfassen soll. Sie ordnen außerdem Mitarbeiter, Register und Debitoren der Filiale zu. Fügen Sie den neuen Shop schließlich zu einer Organisationshierarchie hinzu.
+Retail unterstützt mehrere Retail Channels, wie Onlineshops, Callcenter und physische Läden. Ein physischer Laden wird Einzelhandelsshop genannt. Jeder Einzelhandelsshop kann seine eigenen Zahlungsmethoden, Preisgruppen, POS-Register, Ein- und Ausgabenkonten und Mitarbeiter einrichten. Sie müssen alle Elemente für einen Shop einrichten, bevor Sie ihn erstellen. Nachdem Sie einen Einzelhandelsshop erstellt haben, weisen Sie die Produkte zu, die der Shop umfassen soll. Sie ordnen außerdem Mitarbeiter, Register und Debitoren der Filiale zu. Fügen Sie den neuen Shop schließlich zu einer Organisationshierarchie hinzu.
 
 ## <a name="setting-up-retail-stores"></a>Einrichten von Einzelhandelsgeschäften
 
-Bevor Sie einen Einzelhandelsshop in Dynamics 365 for Retail einrichten können, müssen Sie mehrere erforderliche Aufgaben ausführen. Sie können dann den Shop erstellen und Details hinzufügen.
+Bevor Sie einen Einzelhandelsshop in Retail einrichten können, müssen Sie mehrere erforderliche Aufgaben ausführen. Sie können dann den Shop erstellen und Details hinzufügen.
 
 ### <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -55,7 +55,7 @@ Bevor Sie einen Einzelhandelsshop einrichten können, müssen Sie die folgenden 
 11. Einrichten von Mitarbeitern.
 
     > [!NOTE]
-    > Sie müssen die entsprechenden Berechtigungen den Arbeitskräften zuweisen, sodass diese sich anmelden und Aufgaben mit dem Dynamics 365 for Retail für Retail POS-System ausführen können.
+    > Sie müssen die entsprechenden Berechtigungen den Arbeitskräften zuweisen, sodass diese sich anmelden und Aufgaben mit dem Retail POS-System ausführen können.
 
 12. Konfigurieren der Retail POS-Profile, um sie dem Shop zuzuweisen. Diese Aufgabe beinhaltet zahlreiche weitere Aufgaben, wie das Einrichten von Registern, Einrichten von Offlineprofilen, und das Einrichten von Bonformaten und Profilen.
 

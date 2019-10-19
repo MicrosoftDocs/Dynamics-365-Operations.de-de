@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a416bbb79be3f25998d3c0da8d231d0df808685
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 383c910b40199f2da863144c6dc85a579d0091e9
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875675"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024498"
 ---
 # <a name="maintenance-forecasts"></a>Wartungsprognose
 
@@ -104,7 +104,7 @@ Es gibt drei Möglichkeiten, Artikel zu einer Arbeitsauftrags-Wartungsprognose h
 
 ## <a name="automatic-update-of-work-order-forecasts"></a>utomatische Aktualisierung von Arbeitsauftragsprognosen
 
-Im Asset Management können Sie Änderungen an den Arbeitsauftragsprognosen für Stundenkosten, Artikelkosten und Ausgaben, die in anderen Modulen in Dynamics 365 for Finance and Operations aktualisiert wurden, automatisch aktualisieren. Auf diese Weise wird sichergestellt, dass in Ihren Arbeitsauftragsprognosen immer die aktuellen Einstandspreise verwendet werden. Es ist auch möglich, ähnliche Aktualisierungen für [Wartungsauftragstypprognosen](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) vorzunehmen.
+In der Anlagenverwaltung können Sie Änderungen an den Arbeitsauftragsprognosen für Stundenkosten, Artikelkosten und Ausgaben, die in anderen Modulen aktualisiert wurden, automatisch aktualisieren. Auf diese Weise wird sichergestellt, dass in Ihren Arbeitsauftragsprognosen immer die aktuellen Einstandspreise verwendet werden. Es ist auch möglich, ähnliche Aktualisierungen für [Wartungsauftragstypprognosen](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md) vorzunehmen.
 
 1. Klicken Sie auf **Anlagenverwaltungsparameter** > **Periodisch** > **Planung** > **Arbeitsauftragsplanung aktualisieren**.
 

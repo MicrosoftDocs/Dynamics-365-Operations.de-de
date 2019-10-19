@@ -1,6 +1,6 @@
 ---
 title: Talent-Umgebungen entfernen
-description: Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 for Talent.
+description: Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Talent.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/20/2017
@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 904c8eb1254a65e1627c33f14488a1a8e12f7c2b
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d608ee3ad90d23279557e5e9be4d398ffac3a266
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518089"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010614"
 ---
 # <a name="remove-talent-environments"></a>Talent-Umgebungen entfernen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 for Talent.
+Dieses Thema führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Talent.
 
 ## <a name="removing-a-test-drive-environment"></a>Entfernen einer Testversionsumgebung
 
 Talent-Testversionen werden mit einer 60-Tage-Ablaufrichtlinie bereitgestellt. Aber Eigentümer von Testumgebungen haben die Option, ihren Versuch früh zu beenden, indem Sie die folgenden Schritte ausführen. 
 
-1. [PowerApps-Administratorcenter](https://admin.businessplatform.microsoft.com/) öffnen.
+1. Zum [PowerApps Admin Center](https://admin.businessplatform.microsoft.com/) navigieren.
 2. Wählen Sie **Umgebungen** aus.
 3. Wählen Sie die Testversionsumgebung aus, die ein Benennungsmuster hat, das mit diesem vergleichbar ist: TestDrive - alias@domain
 4. Wählen Sie **Löschen** aus, und bestätigen Sie die Entscheidung. 
@@ -45,14 +45,14 @@ Die vorhandene Testversionsumgebung wird entfernt. Wenn sie entfernt wird, könn
 
 Für dieses Thema wird vorausgesetzt, dass Sie Talent über einen Cloud-Lösungsanbieter (CSP) oder eine Unternehmensarchitekturvereinbarung erworben haben. 
 
-Da eine einzelne Talent-Umgebung innerhalb einer einzelnen PowerApps-Umgebung „enthalten” ist, sind zwei Optionen zu bedenken. Die erste Option bezieht entfernt die gesamte PowerApps-Umgebung, die zweite Option entfernt nur Talent. Die erste Option wird bevorzugt, wenn Sie eine PowerApps-Umgebung speziell für den Zweck der Bereitstellung von Talent erstellt haben und wenn Sie gerade erst mit der Implementierung begonnen haben oder wenn Sie keine eingerichteten Integrationen haben. Die zweite Option ist passend, wenn Sie eine eingerichtete PowerApps-Umgebung haben, die mit aussagekräftigen Daten haben, die in PowerApps und Flows eingesetzt werden.
+Da eine einzelne Talent-Umgebung innerhalb einer einzelnen PowerApps-Umgebung „enthalten“ ist, sind zwei Optionen zu bedenken. Die erste Option bezieht entfernt die gesamte PowerApps-Umgebung, die zweite Option entfernt nur Talent. Die erste Option wird bevorzugt, wenn Sie eine PowerApps-Umgebung speziell für den Zweck der Bereitstellung von Talent erstellt haben und wenn Sie gerade erst mit der Implementierung begonnen haben oder wenn Sie keine eingerichteten Integrationen haben. Die zweite Option ist passend, wenn Sie eine eingerichtete PowerApps-Umgebung haben, die mit aussagekräftigen Daten haben, die in PowerApps und Flows eingesetzt werden.
 
 > [!Important]
 > Bevor Sie die PowerApps-Umgebung entfernen, stellen Sie sicher, dass sie nicht für Ihr Datenintegrationen außerhalb der Bereich des Talents verwendet wird. Standardmäßig kann die PowerApps-Umgebung nicht entfernt werden. 
 
 So entfernen Sie die gesamte PowerApps-Umgebung, einschließlich Talent und den zugeordneten Apps und Flows:
 
-1. [PowerApps-Administratorcenter](https://admin.businessplatform.microsoft.com/) öffnen.
+1. Zum [PowerApps Admin Center](https://admin.businessplatform.microsoft.com/) navigieren.
 2. Wählen Sie **Umgebungen** aus.
 3. Wählen Sie die zu entfernende Umgebung aus.
 4. Wählen Sie **Löschen** aus, und bestätigen Sie die Entscheidung. 

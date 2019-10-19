@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be5e512dcb23ce525439f11b7674cc35d7306159
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cd86bf525ae33f78fb472e6c333083592ff8a012
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570502"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024383"
 ---
 # <a name="inventory-statuses"></a>Bestandsstatus
 
@@ -42,7 +42,7 @@ Beispiele für Methoden zur Verwendung von Bestandsstatus:
 
 Ein Bestandsstatus ist eine der Dimensionen in der Lagerdimensionsgruppe. Bestandsstatus können als verfügbar oder nicht verfügbar kategorisiert werden, und Sie können den Parameter **Sperrung von Lagerbestand** verwenden, um Artikel zu sperren, die einen Bestandsstatus von "nicht verfügbar" haben. Artikel mit einem gesperrten Status gelten als physischer Bestand und können nicht für einen Produktionsauftrag, einen Auftrag, einen Umlagerungsauftrag oder für eine ausgehende Transaktion verwendet werden.
 
-Sie können Lagerortartikel, die den Bestandsstatus verfügbar oder nicht verfügbar aufweisen, für eingehende Arbeit verwenden. Sie erstellen beispielsweise einen verfügbaren Status namens **Bereit**, einen nicht verfügbaren Status namens **Beschädigt** und einen gesperrten Status namens **Gesperrt**. Wenn Sie eine Bestellung für empfangene oder zurückgelieferte Artikel erstellen und irgendwelche Artikel beschädigt sind, können Sie den Lagerstatus dieser Artikel auf der Bestellposition auf **Beschädigt** ändern. Nach Erhalt dieser Artikel wird der Status automatisch auf **Gesperrt** gesetzt. Wenn Sie die beschädigten Artikel mit einem mobilen Gerät scannen, kann Microsoft Dynamics 365 for Finance and Operations Lagerplatzdirektiven und Arbeitsvorlagen verwenden, um Informationen zu einem geeigneten Lagerplatz oder eine Reihe von Lagerplätzen anzeigen, wo Sie diese Artikel lagern können. Für zurückgelieferte Artikel wird der Seite **Lagerbuchungen** ein Abgangstyp **Reservierung** erstellt.
+Sie können Lagerortartikel, die den Bestandsstatus verfügbar oder nicht verfügbar aufweisen, für eingehende Arbeit verwenden. Sie erstellen beispielsweise einen verfügbaren Status namens **Bereit**, einen nicht verfügbaren Status namens **Beschädigt** und einen gesperrten Status namens **Gesperrt**. Wenn Sie eine Bestellung für empfangene oder zurückgelieferte Artikel erstellen und irgendwelche Artikel beschädigt sind, können Sie den Lagerstatus dieser Artikel auf der Bestellposition auf **Beschädigt** ändern. Nach Erhalt dieser Artikel wird der Status automatisch auf **Gesperrt** gesetzt. Wenn Sie die beschädigten Artikel mit einem mobilen Gerät scannen, kann Finance and Operations Lagerplatzdirektiven und Arbeitsvorlagen verwenden, um Informationen zu einem geeigneten Lagerplatz oder eine Reihe von Lagerplätzen anzeigen, wo Sie diese Artikel lagern können. Für zurückgelieferte Artikel wird der Seite **Lagerbuchungen** ein Abgangstyp **Reservierung** erstellt.
 
 Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Sie Artikel haben, die den Status **Beschädigt** aufweisen, und die Produktprogrammplan auf diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet, und der Bestand wird automatisch aufgefüllt.
 

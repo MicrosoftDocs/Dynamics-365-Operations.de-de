@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9aba1dabe3b2304c1f0dfd449982af1d4bc15d6b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742632"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025052"
 ---
 # <a name="retail-peripherals"></a>Einzelhandelsperipheriegeräte
 
@@ -116,9 +116,9 @@ Der Zahlungsgerätensupport wird durch den Zahlungskonnektor implementiert. Zahl
 
 ### <a name="opos"></a>OPOS
 
-Um die meisten Geräten mit Microsoft Dynamics 365 for Retail nutzen zu können, ist das branchenüblichen OLE POS für die primäre Einzelhandelsperipheriegerätplattform in Microsoft Dynamics 365 for Retail unterstützt. Der OLE für POS-Standard wurde vom National Retail Federation (NRF) erstellt, der branchenüblichen Kommunikationsprotokolle für Einzelhandlesperipheriegeräte erstellt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
+Um die meisten Geräten mit Retail nutzen zu können, ist das branchenüblichen OLE POS für die primäre Einzelhandelsperipheriegerätplattform unterstützt. Der OLE für POS-Standard wurde vom National Retail Federation (NRF) erstellt, der branchenüblichen Kommunikationsprotokolle für Einzelhandlesperipheriegeräte erstellt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
 
-- **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Mit den CCOs wird die POS-Komponente von Microsoft Dynamics 365 for Retail getestet. Die Tests stellen sichern, dass über Microsoft Dynamics 365 for Retail über OPOS viele Einheitentypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, um das für OPOS erstellt wird. Sie müssen jeden Einheitentyp nicht explizit testen.
+- **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Mit den CCOs wird die POS-Komponente von Retail getestet. Die Tests stellen sichern, dass Retail über OPOS viele Einheitentypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, um das für OPOS erstellt wird. Sie müssen jeden Einheitentyp nicht explizit testen.
 - **Serviceobjekt** – Das Serviceobjekt bietet die Kommunikation zwischen dem Steuerobjekt (CCO) und dem Gerät. Normalerweise wird das Serviceobjekt für ein Gerät von dem Gerätenhersteller bereitgestellt. Jedoch in bestimmten Fällen müssen Sie möglicherweise das Serviceobjekt von der Website des Herstellers herunterladen. Beispielsweise kann ein neueres Serviceobjekt verfügbar sein. Um die Adresse der Website des Herstellers suchen, prüfen Sie die Hardwaredokumentation.
 
 [![Steuerobjekt und -Serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
@@ -126,7 +126,7 @@ Um die meisten Geräten mit Microsoft Dynamics 365 for Retail nutzen zu können,
 Steuerobjekt- und Serviceobjekt-Unterstützung für die OPOS-Implementierung von Datenbanken für POS stellen sicher, dass die Gerätenhersteller und POS-Herausgeber der Standardspeicherposition ordnungsgemäß implementieren, und POS-Systemen unterstützte Geräte zusammenarbeiten können, wenn sie zuvor nicht zusammen getestet wurden.
 
 > [!NOTE]
-> OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Microsoft Dynamics 365 for Retail muss zunächst diesen Gerätetyp oder diese Klasse über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
+> OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Retail muss zunächst diesen Gerätetyp oder diese Klasse über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
 
 ### <a name="windows"></a>Windows
 
@@ -136,7 +136,7 @@ Bondruck am POS sind für OPOS optimiert. OPOS neigt zum schnelleren Drucken üb
 - Geräte, die mit dem Drucker verbunden sind ("Daisy-Chained") funktionieren möglicherweise nicht korrekt, wenn Windows-Treiber verwendet werden. Beispielsweise kann die Kassenlade vielleicht nicht geöffnet werden, oder der Registernbelegdrucker arbeitet nicht wie erwartet.
 - OPOS unterstützt außerdem eine umfangreiche Palette an Variablen, die für Einzelhandeldsbondrucker spezifisch sind (z. B. Papierschnitt oder Belegdrucken).
 
-Wenn OPOS-Steuerungen für Windows-Drucker verfügbar sind, sollte der Drucker trotzdem korrekt mit Microsoft Dynamics 365 for Retail funktionieren.
+Wenn OPOS-Steuerungen für Windows-Drucker verfügbar sind, sollte der Drucker trotzdem korrekt mit Retail funktionieren.
 
 ### <a name="universal-windows-platform"></a>Universal Windows Platform
 
@@ -192,7 +192,7 @@ Sie können IP-Adressen für Netzwerkperipheriegeräte in zwei Stellen angeben. 
 
 #### <a name="modern-pos-for-android"></a>Modern POS für Android
 
-Ab Dynamics 365 for Retail-Version 8.1.3 wird das Modern POS für Android Anwendung eine integrierte IPC Hardwarestation enthalten. Diese Hardwarestation unterstützt die Kommunikation mit Netzwerkdruckern und Zahlungskonnektoren. Weitere Informationen finden Sie unter [Hybride-App für Android Docs-Artikel](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
+Ab Retail-Version 8.1.3 wird die Modern POS for Android-Anwendung eine integrierte IPC Hardwarestation enthalten. Diese Hardwarestation unterstützt die Kommunikation mit Netzwerkdruckern und Zahlungskonnektoren. Weitere Informationen finden Sie unter [Hybride-App für Android Docs-Artikel](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/hybridapp#dedicated-hardware-station-support-for-the-hybrid-android-app). 
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS und Modern POS für iOS
 
@@ -526,7 +526,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 Weitere Informationen dazu, wie Sie Hardwareprofile erstellt finden Sie unter [Definieren und Verwalten von Kanal-Clients, einschließlich Registern und Hardwarestationen](define-maintain-channel-clients-registers-hw-stations.md).
 
 > [!NOTE]
-> Für Microsoft Dynamics 365 for Retail-Version 1611 wird das Hardware-Stationsprofil nicht mehr verwendet. Attribute, die Sie bereits im Vorfeld im Hardwarestationsprofil einrichten, sind jetzt Teil der Hardwarestation selbst.
+> Für Retail-Version 1611 wird das Hardware-Stationsprofil nicht mehr verwendet. Attribute, die Sie bereits im Vorfeld im Hardwarestationsprofil einrichten, sind jetzt Teil der Hardwarestation selbst.
 
 ### <a name="modern-pos-for-windows-with-an-ipc-built-in-hardware-station"></a>Modern POS für Windows mit einer IPC-Hardwarestation (integriert)
 

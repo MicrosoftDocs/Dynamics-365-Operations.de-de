@@ -1,6 +1,6 @@
 ---
 title: Attract Integration mit LinkedIn FAQ
-description: Dieses Thema beantwortet Fragen, die Sie möglicherweise zur Integration zwischen LinkedIn und Microsoft Dynamics 365 for Talent - Attract haben.
+description: 'Dieses Thema beantwortet Fragen, die Sie möglicherweise zur Integration zwischen LinkedIn und Microsoft Microsoft Dynamics 365 Talent: Attract haben.'
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: c49181fe7e9359fb9d7d43f479273080f90542f4
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: d66ebc01597f8038a38b46a9f1b70feaa5dc505e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756198"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008638"
 ---
 # <a name="linkedin-integration-faq"></a>LinkedIn-Integration-FAQs
 
 [!include [banner](includes/banner.md)]
 
-LinkedIn ist das größte Online-Berufsnetzwerk der Welt. Microsoft Dynamics für Talent: Attract integriert mit LinkedIn, um den Zugriff zu den besten Talenten weltweit zu geben. Mit Attract können Sie Stellen direkt in LinkedIn veröffentlichen und Sie können auch Kandidateninformationen direkt von LinkedIn in Attract ziehen.
+LinkedIn ist das größte Online-Berufsnetzwerk der Welt. Microsoft Dynamics Talent: Attract integriert mit LinkedIn, um den Zugriff zu den besten Talenten weltweit zu geben. Mit Attract können Sie Stellen direkt in LinkedIn veröffentlichen und Sie können auch Kandidateninformationen direkt von LinkedIn in Attract ziehen.
 
 ## <a name="for-recruiters-and-hiring-managers"></a>Für Personalverantwortliche und Personalbeschaffungsmitarbeiter
 

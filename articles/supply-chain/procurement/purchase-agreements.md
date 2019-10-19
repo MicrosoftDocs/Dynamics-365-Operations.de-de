@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7024104dfc76a33735199ad0871fe7ce29f8e011
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570387"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248928"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
@@ -78,7 +78,7 @@ Wenn Sie einen Kaufvertrag bestätigen, wird die aktuelle Version des Kauftrags 
 Wenn Sie eine Bestellung erstellen, können Sie einen Kaufvertrag für sie übernehmen. Informationen aus den Bedingungen für die Vereinbarung, wie die Zahlungsbedingungen, Lieferbedingungen und Lieferadresse, werden dann in den Kopf der Bestellung kopiert. Wenn die Bestellung eine oder mehrere Auftragspositionen für Produkte und Kategorien enthält, die im Kaufvertrag angegeben sind, werden die Preise und Rabatte aus dem Kaufvertrag für diese Positionen verwendet. Der Betrag oder die Menge in der Auftragsposition trägt zur Erfüllung der Zusage im Kaufvertrag bei. Die gleiche Bestellung kann sowohl Positionen enthalten, die mit keinem Kaufvertrag verknüpft sind, als auch Positionen, für die eine Zusage in einem Kaufvertrag besteht.  
 
 Sie können einen Kaufvertrag auswählen, wenn Sie eine Bestellung erstellen. Sie können einen Kaufvertrag nicht aktivieren, nachdem die Bestellung erstellt wurde.  
-In einigen Fällen, in denen Kaufverträge indirekt erstellt werden, können Sie steuern, ob Finance and Operations automatisch nach gültigen Kaufverträgen sucht. Dies kann beispielsweise ratsam sein, wenn Sie geplante Einkaufsbestellungen automatisch umwandeln oder Bestellungen erstellen, die auf Aufträgen basieren.
+In einigen Fällen, in denen Kaufverträge indirekt erstellt werden, können Sie steuern, ob Supply Chain Management automatisch nach gültigen Kaufverträgen sucht. Dies kann beispielsweise ratsam sein, wenn Sie geplante Einkaufsbestellungen automatisch umwandeln oder Bestellungen erstellen, die auf Aufträgen basieren.
 
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Kaufverträge und Intercompany-Handel
 Intercompany-Handelsbeziehungen können zwischen Kreditorenkonten und Debitorenkonten erstellt werden, die zu verschiedenen juristischen Personen gehören. Wenn ein Auftrag oder eine Bestellung für eine der Parteien erstellt wird, wird eine Intercompany-Auftragskette erstellt. In der Auftragskette werden der Auftrag und die Bestellung in den entsprechenden juristischen Personen erstellt.  

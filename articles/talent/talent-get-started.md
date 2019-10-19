@@ -17,24 +17,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 0993119de785d5e3826075778c018bdfa50071e2
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: ff9cfdff410001f08f920e3c05df6bc4ab1b77fd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518115"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024246"
 ---
 # <a name="get-started-with-talent"></a>Erste Schritte mit Talent
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Talent ist es einfach, die Benutzeroberflächen- und Satzoptionen zu ändern, um die Software für Ihre Anforderungen intuitiver zu machen. Dieses Thema enthält Links zu Themen, die Informationen angeben, wie die Benutzeroberfläche Ihren Einstellungen angepasst werden. Das Thema enthält auch Links zu Informationen, die Sie dabei unterstützen, Informationen im System effizient und genau zu suchen. 
+In Microsoft Dynamics 365 Talent ist es einfach, die Benutzeroberflächen- und Satzoptionen zu ändern, um die Software für Ihre Anforderungen intuitiver zu machen. Dieses Thema enthält Links zu Themen, die Informationen angeben, wie die Benutzeroberfläche Ihren Einstellungen angepasst werden. Das Thema enthält auch Links zu Informationen, die Sie dabei unterstützen, Informationen im System effizient und genau zu suchen. 
 
 > [!NOTE] 
-> Die folgenden drei Produkte sind eng miteinander verknüpft: Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, Dynamics 365 for Talent Alle drei Produkte weisen möglicherweise dieselbe Funktion auf. Daraus ergibt sich, dass in Themen, die in erster Linie für Retail gelten, der Produktname Dynamics 365 for Retailverwendet wird; Themen, die sich in erster Linie Talent widmen verwenden den Produktnamen Dynamics 365 for Talent; und Themen, die in erster Linie dem Kernprodukt zugeordnet sind, verwenden den Produktnamen Dynamics 365 for Finance and Operations. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
+> Die folgenden drei Produkte sind eng miteinander verknüpft: Dynamics 365 Finance, Dynamics 365 Retail, Dynamics 365 Talent Alle drei Produkte weisen möglicherweise dieselben Funktionen auf. Daraus ergibt sich, dass in Themen, die in erster Linie für Retail gelten, der Produktname Dynamics 365 Retailverwendet wird; Themen, die sich in erster Linie Talent widmen verwenden den Produktnamen Dynamics 365 Talent; und Themen, die in erster Linie dem Kernprodukt zugeordnet sind, verwenden den Produktnamen Dynamics 365 Finance. Themen, die für ein Produkt verfasst wurden, treffen möglicherweise auch auf die gleiche Funktion in einem ähnlichen Produkt zu.
 
 ## <a name="personalizing-talent"></a>Personalisieren von Talent 
-Die folgenden Themen enthalten Informationen dazu, wie viele Funktionen in Dynamics 365 for Talent eingerichtet werden, die es erleichtern, Ihre Arbeit zeitnah auszuführen. 
+Die folgenden Themen enthalten Informationen dazu, wie viele Funktionen in Talent eingerichtet werden, die es erleichtern, Ihre Arbeit zeitnah auszuführen. 
 
 -   [Personalisieren Sie die Benutzerfreundlichkeit](../fin-and-ops/get-started/personalize-user-experience.md) - In diesem Thema werden die verschiedenen Arten, in denen Sie Talent personalisieren und Bereiche der Produkts Suite genauer anpassen können.
 
@@ -51,7 +51,7 @@ Die folgenden Themen erläutern, wie Suchen verwendet werden, und die Such- und 
 
 -   [Erweiterte Filter- und Abfragesyntax](../fin-and-ops/get-started/advanced-filtering-query-options.md) - In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den "entspricht"-Operator im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
 
--   [Navigationssuche](../fin-and-ops/get-started/navigation-search.md) - In diesem Thema wird erläutert, wie Sie die Suchfunktion zur Suche verwenden, um auf der Seiten zu navigieren. Die Talent-Anwendung beinhaltet mehrere Bereiche und Seiten, um Sie dabei zu unterstützten, verschiedene Funktionen auszuführen. Um die Seiten rasch zu finden, die Sie mit Ihren Aufgaben durchführen müssen, verwenden Sie die Navigations-Suchfunktion. 
+-   [Navigationssuche](../fin-and-ops/get-started/navigation-search.md) - In diesem Thema wird erläutert, wie Sie die Suchfunktion zur Suche verwenden, um auf der Seiten zu navigieren. Talent beinhaltet mehrere Bereiche und Seiten, um Sie dabei zu unterstützten, verschiedene Funktionen auszuführen. Um die Seiten rasch zu finden, die Sie mit Ihren Aufgaben durchführen müssen, verwenden Sie die Navigations-Suchfunktion. 
 
 -   [Aktivitätssuche](../fin-and-ops/get-started/action-search.md) - In diesem Thema werden die Aktivitätssuchfunktionen beschrieben. Mit der Aktivitätssuche finden Sie Aktivitäten auf einer Seite und können diese ausführen. Die Seiten im Produkt enthalten hauptsächlich Befehle auf Aktivitätsbereichen, sowohl auf dem Standardaktivitätsbereich am Anfang einer Seite und auf den Symbolleisten wird, die in verschiedenen Bereichen der Seite angezeigt werden.
 
@@ -61,7 +61,7 @@ Die folgenden Themen erläutern, wie Suchen verwendet werden, und die Such- und 
 Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/#application=c6ae025f-e42a-e711-810d-3863bb363e80), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="blogs"></a>Blogs
-Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Dynamics 365 for Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
+Meinungen, Neuigkeiten und weitere Informationen zu „Kreditorenkonten” und anderen Lösungen finden Sie im [Dynamics 365 Talent](https://community.dynamics.com/enterprise/b/dynamics365fortalent). 
 
 ### <a name="videos"></a>Videos
 Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) verfügbar sind.

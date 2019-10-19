@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b3eeda217e00b33962561bcb2ee6185275f52fe2
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3b66369e57e006c9e2fe0a43e4b781c619a65c4a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556943"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025862"
 ---
 # <a name="store-order-fulfillment"></a>Filialauftragserfüllung
 
@@ -96,7 +96,7 @@ Nachdem ein Auftrag angenommen wurde, können Positionen als **Entnahme** ausgew
 
 Kommissionierlisten können in der Verkaufsstelle gedruckt werden, um die Arbeitskräfte dabei zu unterstützen, den Entnahmeprozess auszuführen. Eine gedruckte Kommissionierliste kann die Arbeitskraft bei sich tragen, die die Entnahme ausführt, und während die Produkte entnommen werden, markiert die Arbeitskraft sie manuell auf der Kommissionierliste als entnommen.
 
-Das Kommissionierlistenformat wird in Dynamics 365 for Retail konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Das Kommissionierlistenformat wird in Retail konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Wenn Positionen ausgewählt sind und eine Kommissionierliste für diese Positionen gedruckt wird, werden diese automatisch mit dem Status **Entnahme** aktualisiert.
 
@@ -105,7 +105,7 @@ Wenn Positionen ausgewählt sind und eine Kommissionierliste für diese Position
 - **Resultierender Status:** Entnommen oder teilweise entnommen
 - **Resultierender Backoffice-Status:** Entnommen oder teilweise entnommen
 
-Nachdem der physische Entnahmeprozess ausgeführt wurde, können Positionen als **Entnommen** markiert werden. Indem eine Position ausgewählt und sie als **Entnommen** markiert wird, wird ein Echtzeitaufruf zur Aktualisierung der Auftragsposition in Dynamics 365 for Retail ausgeführt. Nachdem die Position als **Entnommen** in der Verkaufsstelle markiert wurde, wird der Status im Backoffice auch auf **Entnommen** aktualisiert, und die Lagerbuchungen spiegeln wieder, dass die angegebene Menge abgezogen wurde.
+Nachdem der physische Entnahmeprozess ausgeführt wurde, können Positionen als **Entnommen** markiert werden. Indem eine Position ausgewählt und sie als **Entnommen** markiert wird, wird ein Echtzeitaufruf zur Aktualisierung der Auftragsposition ausgeführt. Nachdem die Position als **Entnommen** in der Verkaufsstelle markiert wurde, wird der Status im Backoffice auch auf **Entnommen** aktualisiert, und die Lagerbuchungen spiegeln wieder, dass die angegebene Menge abgezogen wurde.
 
 Wenn Aufträge im Zeitverlauf verarbeitet werden, können Teilmengen für eine bestimmte Position verarbeitet werden. Wenn eine Position ausgewählt wurde und die Aktivität **Als entnommen markieren** ausgeführt wird und die Menge größer als eins ist, wird der Benutzer bezüglich der Menge aufgefordert. Die zu entnehmende Restmenge wird automatisch ausgefüllt. Wenn weniger als die Restmenge angegeben wird, wird der Positionsstatus **Teilweise entnommen**. Wenn die Auftragsposition im Backoffice aktualisiert wird, spiegelt sie auch den Status „Teilweise Entnommen” wieder, und die vom Debitor eingegebene Menge wir für die Bestandsaktualisierung verwendet.
 
@@ -122,7 +122,7 @@ Auftragspositionen können jederzeit verpackt werden, nachdem die Auftragspositi
 - **Resultierender Status:** Verpackt oder teilweise verpackt
 - **Resultierender Backoffice-Status:** Geliefert oder teilweise geliefert
 
-Bei dieser Aktivität werden Positionen als verpackt oder teilweise verpackt markiert, und ein Lieferschein wird ausgedruckt. Ein Lieferschein kann gedruckt werden, um die Produkte zu überprüfen, die zusammen verpackt wurden. Das Lieferschein wird in Dynamics 365 for Retail konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
+Bei dieser Aktivität werden Positionen als verpackt oder teilweise verpackt markiert, und ein Lieferschein wird ausgedruckt. Ein Lieferschein kann gedruckt werden, um die Produkte zu überprüfen, die zusammen verpackt wurden. Das Lieferschein wird in Retail konfiguriert und dem Bonprofil hinzugefügt. Weitere Informationen zum Einrichten von Bonprofilen finden Sie unter [Bonvorlagen und Drucken](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Aktivität: Als verpackt markieren**
 

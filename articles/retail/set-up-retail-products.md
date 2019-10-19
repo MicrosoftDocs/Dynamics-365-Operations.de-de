@@ -1,6 +1,6 @@
 ---
 title: Einzelhandelsprodukte einrichten
-description: In diesem Artikel wird beschrieben, wie Einzelhandelsprodukte in Microsoft Dynamics 365 for Retail eingerichtet werden.
+description: In diesem Artikel wird beschrieben, wie Einzelhandelsprodukte in Dynamics 365 Retail eingerichtet werden.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,22 +19,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 991546424a95463315eaa73c2776d0defe66def5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 74fa3a87ac2993adca3edf003bbc39371ce8e289
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546257"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024774"
 ---
 # <a name="set-up-retail-products"></a>Einzelhandelsprodukte einrichten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Einzelhandelsprodukte in Microsoft Dynamics 365 for Retail eingerichtet werden.
+In diesem Artikel wird beschrieben, wie Einzelhandelsprodukte in Dynamics 365 Retail eingerichtet werden.
 
-Bevor Sie Produkte für den Wiederverkauf in Ihren Retail Channels anbieten können, müssen Sie die Produkte in Dynamics 365 for Retail erstellen und konfigurieren. Einzelhandel verwendet die Produktfunktionen in Dynamics 365 for Retail, um organisationsweite Produkte im Produktmaster zu erstellen. Sie können die Produkte erstellen, die Produkteigenschaften und Attribute definieren und die Produkte den Einzelhandelskategoriehierarchien zuweisen. Um die Produkte für Ihre Einzelhandelskanäle verfügbar zu machen und sie einem aktive Sortiment hinzuzufügen, müssen die Produkte für die juristischen Personen freigegeben werden, in denen sie verfügbar sind. Führen Sie zum Einrichten der Produkte, die Sie über Einzelhandelskanäle verkaufen, die folgenden Aufgaben aus:
+Bevor Sie Produkte für den Wiederverkauf in Ihren Retail Channels anbieten können, müssen Sie die Produkte in Dynamics 365 Retail erstellen und konfigurieren. Retail erstellt organisationsweit Produkte im Produktmaster. Sie können die Produkte erstellen, die Produkteigenschaften und Attribute definieren sowie die Produkte den Einzelhandelskategoriehierarchien zuweisen. Um die Produkte für Ihre Einzelhandelskanäle verfügbar zu machen und sie einem aktive Sortiment hinzuzufügen, müssen die Produkte für die juristischen Personen freigegeben werden, in denen sie verfügbar sind. Führen Sie zum Einrichten der Produkte, die Sie über Einzelhandelskanäle verkaufen, die folgenden Aufgaben aus:
 
-1. Definieren Sie eine Einzelhandelsprodukthierarchie. Wenn Sie die Kategoriehierarchiefunktionen in Dynamics 365 for Retail verwenden, können Sie Einzelhandelskategoriehierarchien definieren, um die Produkte, die Sie an die Einzelhandelskanäle vertreiben, zu gruppieren und zu kategorisieren. Benutzerdefinierte und Systemattribute können auf der Kategorieebene definiert werden. Daraufhin erben alle Produkte, die der Kategorie zugewiesen sind, diese Attribute. Mehrere Kategoriehierarchien können definiert werden, und jedes Produkt kann mehreren Hierarchien zugewiesen werden. In einer einzelnen Hierarchie kann ein Produkt jedoch nur einer Kategorie zugewiesen werden.
+1. Definieren Sie eine Einzelhandelsprodukthierarchie. Wenn Sie die Kategoriehierarchiefunktionen in Retail verwenden, können Sie Einzelhandelskategoriehierarchien definieren, um die Produkte, die Sie an die Einzelhandelskanäle vertreiben, zu gruppieren und zu kategorisieren. Benutzerdefinierte und Systemattribute können auf der Kategorieebene definiert werden. Daraufhin erben alle Produkte, die der Kategorie zugewiesen sind, diese Attribute. Mehrere Kategoriehierarchien können definiert werden, und jedes Produkt kann mehreren Hierarchien zugewiesen werden. In einer einzelnen Hierarchie kann ein Produkt jedoch nur einer Kategorie zugewiesen werden.
 2. Fügen Sie Produkte und Produktvarianten zum Produktmaster hinzu. Produkte, die dem Produktmaster hinzugefügt werden, stellen eine globale Liste von Produkten dar. Sie können Produkte manuell und einzeln hinzufügen, oder Sie können Produktdaten von Ihren Kreditoren importieren.
 3. Geben Sie die Produkte für juristische Personen frei. Nur Produkte, die für juristische Personen freigegeben wurden, können in Ihren Einzelhandelskanälen verfügbar gemacht werden. Wenn Sie ein Produkt erstmals definieren, definieren Sie das Produkt auf organisationsweiter Ebene. Sie können mindestens eine juristische Person auswählen, um das Produkt freigeben. Das Produkt wird dann in mehreren Einzelhandelskanälen in Ihrer Organisation verfügbar. Sie können diese Funktion verwenden, um ein Produkt einmal zu erstellen, Produktattribute und Eigenschaften an einer Stelle hinzuzufügen und zu aktualisieren, und das Produkt dann in Ihrer Organisation an die Einzelhandelskanäle zu vertreiben, in denen es verfügbar ist.
 4. Fügen Sie Produkte Sortimenten hinzu. Ein Sortiment stellt eine Sammlung von Produkten dar, die Sie in den Einzelhandelskanälen anbieten. Sie können ein oder mehrere Sortimente definieren, und jedes Produkt kann einem oder mehreren Sortimenten zugewiesen werden. Um Produkte den Einzelhandelskanälen zuzuweisen, weisen Sie die Sortimente diesen Einzelhandelskanälen zu. Wenn Sie ein Sortiment erstellen, können Sie Produkte hinzufügen, die noch nicht für eine juristische Person freigegeben wurden. Sie müssen die Produkte jedoch für eine juristische Person freigeben, bevor die Produkte in den Einzelhandelskanälen verfügbar gemacht werden.

@@ -1,6 +1,6 @@
 ---
-title: Lagerebeneninformationen aus Finance and Operations mit Field Service synchronisieren
-description: In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsinformationen von Microsoft Dynamics 365 for Finance and Operations auf Microsoft Dynamics 365 for Field Service verwendet werden.
+title: Lagerebeneninformationen aus Supply Chain Management mit Field Service synchronisieren
+description: In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsinformationen von Dynamics 365 Supply Chain Management auf Dynamics 365 Field Service verwendet werden.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 05/07/2019
@@ -19,37 +19,37 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 6b56eb545f87c31ef30d6a897f48539068583486
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: eefbfd1f8d7aa73cbb3330433b08efd889232818
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843432"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251200"
 ---
-# <a name="synchronize-inventory-level-information-from-finance-and-operations-to-field-service"></a>Lagerebeneninformationen aus Finance and Operations mit Field Service synchronisieren 
+# <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Lagerebeneninformationen aus Supply Chain Management mit Field Service synchronisieren 
 
 [!include[banner](../includes/banner.md)]
 
-In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsinformationen von Microsoft Dynamics 365 for Finance and Operations auf Microsoft Dynamics 365 for Field Service verwendet werden.
+In diesem Thema werden die Vorlagen und die zugrunde liegenden Aufgaben erläutert, die zur Synchronisierung von Bestandsinformationen von Dynamics 365 Supply Chain Management auf Dynamics 365 Field Service verwendet werden.
 
-[![Synchronisierung von Geschäftsprozessen zwischen Finance and Operations und Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Synchronisierung von Geschäftsprozessen zwischen Supply Chain Management und Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
-Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Bestandsdaten von Microsoft Dynamics 365 for Finance and Operations auf Microsoft Dynamics 365 for Field Service zu synchronisieren.
+Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um Bestandsdaten von Supply Chain Management auf Field Service zu synchronisieren.
 
 **Vorlagen in der Datenintegration**
-- Produktbestand (Finance and Operations zu Field Service)
+- Produktbestand (Supply Chain Management zu Field Service)
   
 **Aufgaben im Datenintegrationsprojekt**
 - Produktbestand
 
 Die folgende Synchronisierung ist erforderlich, bevor die Synchronisierung von  Bestandlisten erfolgen kann:
-- Lagerorte (Finance and Operations zu Field Service) 
-- Field Service Produkte mit Bestand (Finance and Operations zu Sales) 
+- Lagerorte (Supply Chain Management zu Field Service) 
+- Field Service-Produkte mit Bestand (Supply Chain Management zu Sales) 
 
 ## <a name="entity-set"></a>Entitätssatz
 
-| Field Service                      | Finance and Operations                 |
+| Field Service                      | Lieferkettenverwaltung                |
 |------------------------------------|----------------------------------------|
 | msdynce_externalproductinventories | Verfügbarer CDS-Lagerbestand nach Lagerort     |
 
@@ -61,17 +61,17 @@ Bestandebeneninformationen aus Finance and Operations mit Field Service für aus
 
 Diese Informationen werden pro freigegebenes Produkt für jeden Lagerort aufgezeichnet und synchronisiert auf Grundlage der Änderungsnachverfolgung, wenn der Lagerbestand ändert.
 
-Im Field Service erstellt die Integrationslösung Bestanderfassungen für das Delta, um die Stufen im Fielöd Service abzurufen, die den Stufen im Bereich Finance and Operations abzugleichen.
+In Field Service erstellt die Integrationslösung Bestanderfassungen für das Delta, um die Stufen Field Service abzurufen, die mit den Stufen in Supply Chain Management übereinstimmen.
 
-Finance and Operations dient als Master für die Bestandebenen. Daher ist es wichtig, die Integration für Arbeitsaufträge, Übertragungen und Regulierungen von Field Service zu Finance and Operations einzurichen, wenn diese Funktionen in Field Service zusammen mit dem Synchronisieren von Lagerbeständen von Finane and Operations verwendet werden.
+Supply Chain Management dient als Master für die Bestandebenen. Daher ist es wichtig, die Integration für Arbeitsaufträge, Übertragungen und Regulierungen von Field Service zu Supply Chain Management einzurichen, wenn diese Funktionen in Field Service zusammen mit dem Synchronisieren von Lagerbeständen von Supply Chain Management verwendet werden.
 
-Die Produkte und die Lagerorte, in denen Lagerbestände verwaltet werden von Finance and Operations können mit der erweiterten Abfrage und Filterung (Power-Abfrage) gesteuert werden.
+Die Produkte und die Lagerorte, in denen Lagerbestände verwaltet werden von Supply Chain Management können mit der erweiterten Abfrage und Filterung (Power-Abfrage) gesteuert werden.
 
 > [!NOTE]
-> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort im Bereich Finance and Operations mit den erweiterten Abfragen und Filterfunktionen dann zugeordnet werden soll. Diese Aufgabe wird in von Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Finance and Operations zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Finance and Operations. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [synchronisieren von Arbeitsaufträge in Field Service zu Arbeitsaufträgen, die mit Projekten in Finance and Operations verknüpft sind](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort in Supply Chain Management mit den erweiterten Abfragen und Filterfunktionen dann zugeordnet werden soll. Diese Aufgabe wird in von Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [Synchronisieren von Arbeitsaufträgen in Field Service zu Arbeitsaufträgen, die mit Projekten in Supply Chain Management verknüpft sind](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung
-Die **externe Produktbestandslistenentität** ist eine neue Entität, die nur für Back-End der Integration verwendet wird. Sie erhalten die Lagerbestandswerte von Finance and Operations in der Integdration und transformiert dann jene Werte manuell zur Bestanderfassung, welche dann die Bestandprodukte am Lagerort ändert.
+Die **externe Produktbestandslistenentität** ist eine neue Entität, die nur für Back-End der Integration verwendet wird. Sie erhalten die Lagerbestandswerte von Supply Chain Management in der Integdration und transformiert dann jene Werte manuell zur Bestanderfassung, welche dann die Bestandprodukte am Lagerort ändert.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 
@@ -84,10 +84,10 @@ Damit das Projekt funktioniert, müssen Sie sicherstellen, dass der Integrations
       - msdynce_warehouseid (Warehouse-Kennung)
       
 ### <a name="data-integration-project"></a>Datenenintegrationsprojekt
-Wenden Sie Filter mit der erweiterten Abfrage und Filterung an, um zu steuern, dass nur gewünschte Produkte und Lagerorte Lagerbestandsinformationen von Finance and Operations zu Field Service sendet.
+Wenden Sie Filter mit der erweiterten Abfrage und Filterung an, um zu steuern, dass nur gewünschte Produkte und Lagerorte Lagerbestandsinformationen von Supply Chain Management zu Field Service sendet.
 
 ## <a name="template-mapping-in-data-integration"></a>Vorlagenzuordnung in Datenintegration
 
-### <a name="product-inventory-fin-and-ops-to-field-service-product-inventory"></a>Produktbestand (Finance and Operations zu Field Service): Produktbestand
+### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktbestand (Supply Chain Management zu Field Service): Produktbestand
 
 [![Vorlagenzuordnung in Datenintegration](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)

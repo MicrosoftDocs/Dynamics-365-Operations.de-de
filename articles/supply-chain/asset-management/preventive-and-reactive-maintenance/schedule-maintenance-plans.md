@@ -3,7 +3,7 @@ title: Wartungspläne terminieren
 description: In diesem Abschnitt werden die Wartungspläne im Anlagenmanagement erläutert.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,14 +16,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b6e5bde83474fe8971e482af518f7cee23a2220
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 698888533bf503838f455585f61cc7afc7239b05
+ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875668"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "1922044"
 ---
 # <a name="schedule-maintenance-plans"></a>Wartungspläne terminieren
 
@@ -49,11 +49,11 @@ Die vorbeugende Wartungsplanung erzeugt Kalendereinträge auf Anlagen, basierend
 
 - Bezüglich der Terminierung von Wartungsplänen auf Technischen Standorten: Wenn Sie die Einrichtung von Anlagenarten, Herstellern und Modellen zu Wartungsplänen in **Alle Technischen Standorte** > **Wartungspläne**FastTab aktualisieren, nachdem Sie Wartungspläne terminiert haben, werden bestehende Wartungsplaneinträge zu diesem Technischen Standort automatisch gelöscht. Um neue Kalendereinträge anzulegen, die dem aktualisierten Wartungsplan auf dem Technischen Standort entsprechen, müssen Sie einen neuen Wartungsplanplan für diesen Technischen Standort erstellen. Weitere Informationen zur Einrichtung von Anlagentypen, Herstellern und Modellen auf Technischen Standorte finden Sie unter [Technische Standorte anlegen](../functional-locations/create-functional-locations.md).
 
->*Beispiel:* Sie möchten einen Wartungsplan für einen bestimmten Technischen Standort anlegen, d.h. alle Anlagen, die auf diesem Technischen Standort zu einem bestimmten Zeitpunkt angelegt wurden, werden bei der Terminierung des Wartungsplans berücksichtigt. In diesem Fall legen Sie einen Wartungsplan an und wählen den jeweiligen Technischen Standort aus, fügen aber keine Objekte in den Wartungsplan ein. Das Ergebnis ist, dass bei der Terminierung dieses Wartungsplans Wartungseinteilungen für alle Anlagen angelegt werden, die zu diesem Zeitpunkt mit dem Technischen Standort zusammenhängen.
+>*Beispiel:* Sie möchten einen Wartungsplan für einen bestimmten Technischen Standort anlegen, d.h. alle Anlagen, die auf diesem Technischen Standort zu einem bestimmten Zeitpunkt angelegt wurden, werden bei der Terminierung des Wartungsplans berücksichtigt. In diesem Fall legen Sie einen Wartungsplan an und wählen den jeweiligen Technischen Standort aus, fügen aber keine Anlagen in den Wartungsplan ein. Das Ergebnis ist, dass bei der Terminierung dieses Wartungsplans Wartungseinteilungen für alle Anlagen angelegt werden, die zu diesem Zeitpunkt mit dem Technischen Standort zusammenhängen.
 
 - Wenn Sie Änderungen an Anlagentypen, Herstellern und Modellen in **Anlagentypen** vornehmen, betreffen diese Änderungen nur neue Anlagen, die die aktualisierte Anlagenart verwenden. Lesen Sie mehr über die Einrichtung von Anlagen-Typen unter [Anlagen-Typen](../setup-for-objects/object-types.md).  
 
-5. Klicken Sie auf **OK**, um die Generierung von Wartungsplaneinträgen für Anlagen zu starten. Die erzeugten Einträge werden auf der Listenseite **Alle Wartungspläne** angezeigt.
+5. Klicken Sie auf **OK**, um die Generierung von Wartungsplaneinträgen für Anlagen zu starten. Die erzeugten Einträge werden auf der Listenseite **Alle Wartungspläne** angezeigt. Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Wartungspläne terminieren**.
 
 ![Abbildung 1](media/09-preventive-maintenance.png)
 
@@ -75,3 +75,4 @@ Die hier beschriebenen Beispiele zeigen, dass alle Zählerregistrierungen an ein
 ![Abbildung 3](media/11-preventive-maintenance.png)
 
 ![Abbildung 4](media/12-preventive-maintenance.png)
+

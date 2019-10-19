@@ -1,6 +1,6 @@
 ---
-title: Neuerungen und Änderungen in Dynamics 365 for Talent (20. August 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen und Änderungen in Dynamics 365 Talent (20. August 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 8/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f437dbbb786456cd335d5fb85e271d224e0a1383
-ms.sourcegitcommit: 4176c333ce3f88c5c68e95bd47e5791d32365dd2
+ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1918202"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024067"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-august-20-2019"></a>Neuerungen und Änderungen in Dynamics 365 for Talent (20. August 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (20. August 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Talent neu oder geändert wurden.
+In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -43,11 +43,11 @@ Ablehnungsgrund und - kommentare werden im der Registerkarte **Aktivität** für
 
 ## <a name="changes-in-onboard"></a>Änderungen in Onboard
 
-Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 for Talent: Onboard.
+Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Core HR-Änderungen
 
-Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 for Talent: Core HR. Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2429.
+Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Core HR. Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2429.
 
 ### <a name="in-preview"></a>Vorschau
 
@@ -69,6 +69,6 @@ Mit einer neuen Option können Manager die Leistung von ihren direkten Mitarbeit
 
 ### <a name="coming-soon"></a>Bald verfügbar
 
-#### <a name="platform-update-29"></a>Plattformupdate 29
+#### <a name="platform-update-29-for-finance-and-operations"></a>Platform update 29 für Finance and Operations
 
-Zusätzliche Details zur Plattformaktualisierung 29 finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 29 (Oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+Zusätzliche Details zu Platform update 29 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 Finance and Operations Plattformaktualisierung 29 (Oktober 2019)](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).

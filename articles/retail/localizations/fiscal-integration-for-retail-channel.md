@@ -1,6 +1,6 @@
 ---
 title: Übersicht über die Steuerintegration für Retail Channels
-description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind.
+description: Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Retail verfügbar sind.
 author: josaw
 manager: annbe
 ms.date: 02/01/2019
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c6092a7eba328048ef2f28188c42f33cb1f7136
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1516237"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025406"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Übersicht über die Steuerintegration für Retail Channels
 
@@ -30,13 +30,13 @@ ms.locfileid: "1516237"
 
 ## <a name="introduction"></a>Einführung
 
-Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Microsoft Dynamics 365 for Retail verfügbar sind. Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Einzelhandelsverkäufen entsprechend lokalen Steuergesetzen zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird:
+Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dynamics 365 Retail verfügbar sind. Die Steuerintegration enthält die Integration in unterschiedliche steuerbezogene Geräte und Dienste, die Benutzern die Steuerregistrierung von Einzelhandelsverkäufen entsprechend lokalen Steuergesetzen zur Verhinderung von Steuerhinterziehung im Einzelhandel ermöglicht. Nachfolgend einige typische Szenarien, die erfasst werden können, indem die Steuerintegration verwendet wird:
 
 - Erfassen eines Einzelhandelsverkaufs auf einem steuerbezogenen Gerät, das mit einem Retail point of sale (POS) verbunden ist, z. B. einem Belegdrucker, und Drucken eines Steuerbelegs für den Kunden.
 - Senden Sie Informationen, die Verkäufen und Rücksendungen zugeordnet sind, die in Retail POS abgeschlossen werden, sicher an einen externen Webdienst, der von der Steuerbehörde betrieben wird.
 - Gewährleisten Sie die Unveränderbarkeit von Verkaufsbuchungsdaten durch digitale Signaturen.
 
-Die Steuerintegrationsfunktionen in Retail sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Steuerintegrationsbeispiele, die grundlegende Einzelhandelsszenarien für bestimmte Länder/Regionen unterstützen und mit bestimmten steuerbezogenen Geräten oder Diensten verwendet werden können. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Retail-Komponenten und ist im Retail Software Development Kit (SDK) enthalten. Weitere Informationen zu Steuerintegrationsbeispielen, die im Retail SDK verfügbar sind, finden Sie unter [Steuerintegrationsbeispiele im Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informationen zur Installation und Verwendung des Retail SDK finden Sie unter [Retail SDK-Übersicht](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Steuerintegrationsbeispiele, die grundlegende Einzelhandelsszenarien für bestimmte Länder/Regionen unterstützen und mit bestimmten steuerbezogenen Geräten oder Diensten verwendet werden können. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Retail-Komponenten und ist im Software Development Kit (SDK) enthalten. Weitere Informationen zu Steuerintegrationsbeispielen finden Sie unter [Steuerintegrationsbeispiele im Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informationen zur Installation und Verwendung des Retail SDK finden Sie unter [Retail SDK-Übersicht](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Um andere Szenarien zu unterstützen, die nicht von einem Steuerintegrationsbeispiel unterstützt werden, um Retail POS in andere steuerbezogene Geräte oder Dienste zu integrieren, oder um Anforderungen anderer Länder/Regionen zu erfüllen, müssen Sie entweder ein vorhandenes Steuerintegrationsbeispiel erweitern oder ein neues Beispiel mithilfe eines vorhandenen Beispiels erstellen.
 
@@ -47,7 +47,7 @@ Ein Steuerregistrierungsprozess in Retail POS kann aus einem oder mehreren Schri
 - **Commerce Runtime (CRT)-Erweiterung** – Diese Komponente serialisiert Einzelhandelstransaktions-/-ereignisdaten in einem Format, das auch für die Interaktion mit dem steuerbezogenen Gerät verwendet wird, analysiert Antworten vom steuerbezogenen Gerät und speichert die Antworten in der Kanaldatenbank. Die Erweiterung definiert auch die spezifischen Transaktionen und Ereignisse, die erfasst werden müssen. Diese Komponente wird häufig als *Steuerdokumentanbieter* bezeichnet.
 - **Hardwarestationserweiterung** – Diese Komponente Initialisiert die Kommunikation mit dem steuerbezogenen Gerät, sendet Anforderungen und leitet Befehle an das steuerbezogene Gerät auf Basis der Einzelhandelstransaktions-/-ereignisdaten, die aus dem Steuerdokument extrahiert werden, und empfängt Antworten vom steuerbezogenen Gerät. Diese Komponente wird häufig als *Steuerkonnektor* bezeichnet.
 
-Ein Steuerintegrationsbeispiel für ein steuerbezogenes Gerät enthält jeweils die CRT- und Hardwarestationserweiterungen für einen Steuerdokumentanbieter und Steuerkonnektor. Es enthält auch die folgenden Komponentenkonfigurationen:
+Ein Steuerintegrationsbeispiel für ein steuerbezogenes Gerät enthält jeweils die CRT und Hardwarestationserweiterungen für einen Steuerdokumentanbieter und Steuerkonnektor. Es enthält auch die folgenden Komponentenkonfigurationen:
 
 - **Steuerdokumentanbieter-Konfiguration** – Diese Konfiguration definiert eine Ausgabemethode und ein Format für Steuerdokumente. Es enthält auch eine Datenzuordnung für Steuern und Zahlungsmethoden, um Daten aus Retail POS mit den Werten, die in der Firmware des steuerbezogenen Geräts vordefiniert werden, kompatibel zu machen.
 - **Steuerkonnektorkonfiguration** – Diese Konfiguration definiert die physische Kommunikation mit dem betreffenden steuerbezogenen Gerät.
@@ -132,9 +132,9 @@ Die Steuerintegrationsfunktionen unterstützen die Generierung von Tagesendeausz
 
 ## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Steuerintegrationsbeispiele im Retail SDK
 
-Die folgenden Steuerintegrationsbeispiele sind derzeit im Retail SDK verfügbar, das mit Retail veröffentlicht wird:
+Die folgenden Steuerintegrationsbeispiele sind derzeit im Retail SDK verfügbar:
 
-- [Beispiel für Belegdruckerintegration für Italien](emea-ita-fpi-sample.md)
+- [Beispiel für die Integration eines Belegdruckers für Italien](emea-ita-fpi-sample.md)
 - [Beispiel für Belegdruckerintegration für Polen](emea-pol-fpi-sample.md)
 - [Integrationsbeispiel für Steuererfassungsdienst für Österreich](emea-aut-fi-sample.md)
 - [Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik](emea-cze-fi-sample.md)

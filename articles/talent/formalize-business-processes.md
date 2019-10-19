@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 85950a1413cfd8745bb78a52eb9f7c81b8976605
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518073"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008370"
 ---
 # <a name="formalize-business-processes"></a>Geschäftsprozesse formalisieren
 
@@ -43,7 +43,7 @@ Für jeden Geschäftsprozess wird ein Prozesseinhaber definiert werden. Der Proz
 Ein Prozessbesitzer kann keine neuen Geschäftsprozesse oder Geschäftsprozessvorlagen erstellen oder aktive Geschäftsprozesse oder Geschäftsprozessvorlagen löschen.
 
 ## <a name="tasks"></a>Aufgaben
-Ein Geschäftsprozess enthält häufig mehrere Aufgaben. Einige Aufgaben, wie die Überprüfung interner Kursangebote, können in Microsoft Dynamics 365 for Talent[?] abgeschlossen werden. In diesem Fall ist eine Option im Feld **Aufgabenlink** ausgewählt. Andere Aufgaben beinhalten Formulare, die es erfordern, eine Website zu prüfenn oder auszufüllen. In diesem Fall wird das Feld **URL** auf **Aufgabenlink** ausgewählt, und die Webadresse kann eingegeben werden. Sie können URLs sowohl für externe als auch interne Websites in diesem Feld eingeben. Sie können auch Aufgaben für Aktivitäten erstellen, die Sie manuell ausführen, wie beispielsweise die Überprüfung der Barrierefreiheit aller Strukturen. In diesem Beispiel ist ein Aufgabenlink nicht erforderlich. Diese Flexibilität ermöglicht es Ihnen, mehrere Arten von Aufgaben in einem umfassenden Prozess nachzuverfolgen.
+Ein Geschäftsprozess enthält häufig mehrere Aufgaben. Einige Aufgaben, wie die Überprüfung interner Kursangebote, können in Microsoft Dynamics 365 Talent abgeschlossen werden. In diesem Fall ist eine Option im Feld **Aufgabenlink** ausgewählt. Andere Aufgaben beinhalten Formulare, die es erfordern, eine Website zu prüfenn oder auszufüllen. In diesem Fall wird das Feld **URL** auf **Aufgabenlink** ausgewählt, und die Webadresse kann eingegeben werden. Sie können URLs sowohl für externe als auch interne Websites in diesem Feld eingeben. Sie können auch Aufgaben für Aktivitäten erstellen, die Sie manuell ausführen, wie beispielsweise die Überprüfung der Barrierefreiheit aller Strukturen. In diesem Beispiel ist ein Aufgabenlink nicht erforderlich. Diese Flexibilität ermöglicht es Ihnen, mehrere Arten von Aufgaben in einem umfassenden Prozess nachzuverfolgen.
 
 Aufgaben können einer bestimmten Arbeitskraft oder einer Position zugewiesen werden. Beispielsweise ist der Vergütungsmanager immer die Person, die eine Prüfung von Versicherungsprämien vornehmen wird. Wenn Sie diese Aufgabe erstellen, wählen Sie die **Position** für den **Zuweisungstyp** aus, und wählen Sie dann **Leiter Vergütungen/Bezüge** aus der Liste **Position** aus. Wenn der Geschäftsprozess startet, wird die Aufgabe der Arbeitskraft zugewiesen, die sich in der Position **Leiter Vergütungen/Bezüge** befindet. Sie können auch eine Aufgabe einer bestimmten **Arbeitskraft** zuweisen, indem Sie im Feld **Zuweisungstyp** die Option „Arbeitskraft” auswählen und anschließend die entsprechende Person auswählen.
 

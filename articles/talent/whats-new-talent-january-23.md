@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (23. Januar 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (23. Januar 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 01/23/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-01-23
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4e492095d5269ec81c0c22145b7af356937c256b
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: f1983d5a58fb2e6b1984727e1d7b44803b94cdce
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742515"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023975"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-january-23-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (23. Januar 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-january-23-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent: Core HR (23. Januar 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -53,5 +53,5 @@ Wenn Sie die Stelle an einer Stelle ändern, werden die Stellenfelder standardm�
 ### <a name="probation-period-and-calendar-are-not-displayed-for-future-hired-employees"></a>Probezeit und Kalender werden für zukünftige eingestellte Mitarbeiter nicht angezeigt.
 Mit dieser Änderung wurden die Felder **Probezeit** und **Kalender** auf der Seite **Änderungen verwalten** hinzugefügt, um die Dateneingabe für zukünftige und ehemalige Mitarbeiter zu ermöglichen.
 
-### <a name="platform-update-23"></a>Plattformupdate 23
-Kleinere Bugfixes wurden im Rahmen des Plattform-Updates 23 aufgenommen. Weitere Informationen finden Sie unter [Was ist neu oder geändert in Dynamics 365 for Finance and Operations Plattform-Update 23 (Januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+### <a name="platform-update-23-for-finance-and-operations"></a>Platform update 23 für Finance and Operations
+Kleinere Bugfixes wurden im Rahmen des Plattform update 23 für Finance and Operations aufgenommen. Weitere Informationen finden Sie unter [Was ist neu oder geändert in Dynamics 365 Finance and Operations Plattform-Update 23 (Januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 

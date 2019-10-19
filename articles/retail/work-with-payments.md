@@ -1,6 +1,6 @@
 ---
 title: Zahlungsmethoden in Callcentern
-description: Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Microsoft Dynamics 365 for Retail verwendet werden können.
+description: Dieses Thema behandelt verschiedene Zahlungsmethoden, die in einem Callcenter in Dynamics 365 Retail verwendet werden können.
 author: josaw1
 manager: AnnBe
 ms.date: 03/28/2018
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 825ad4ba3e72e5b34c2ff29f36f88a518810ce49
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 551a3cc9c0def1c67ab930dbff7cd1c0d296bd21
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1571518"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018227"
 ---
 # <a name="payment-methods-in-call-centers"></a>Zahlungsmethoden in Callcentern
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Retail umfasst die Konfiguration des Callcenterkanals eine Einstellung, die mit **Aktivieren Sie Auftragsabschluss** bezeichnet wird. Diese Einstellung stellt sicher, dass alle Aufträge, die Benutzer des Kanals erstellen, zur Verarbeitung der Bestellung nur dann freigegeben wird, nachdem sie eine Vorauszahlung oder eine vor-autorisierte Bezahlung getätigt haben, die in der genehmigten Toleranz ist. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Callcenterbenutzer Zahlungen mit Aufträgen für die Debitoren eingeben, indem Sie die Funktionen des Callcenters der Zahlung verwenden möchten. Wenn die Einstellung deaktiviert ist, können die Callcenternutzer die Callcenterzahlung nicht nutzen, aber sie können die Vorauszahlungen für Aufträge trotzdem anwenden, indem die Standarddebitorfunktionen verwendet werden.
+In Dynamics 365 Retail umfasst die Konfiguration des Callcenterkanals eine Einstellung, die mit **Aktivieren Sie Auftragsabschluss** bezeichnet wird. Diese Einstellung stellt sicher, dass alle Aufträge, die Benutzer des Kanals erstellen, zur Verarbeitung der Bestellung nur dann freigegeben wird, nachdem sie eine Vorauszahlung oder eine vor-autorisierte Bezahlung getätigt haben, die in der genehmigten Toleranz ist. Wenn die Einstellung **Aktivieren Sie Auftragsabschluss** aktiviert ist, können Callcenterbenutzer Zahlungen mit Aufträgen für die Debitoren eingeben, indem Sie die Funktionen des Callcenters der Zahlung verwenden möchten. Wenn die Einstellung deaktiviert ist, können die Callcenternutzer die Callcenterzahlung nicht nutzen, aber sie können die Vorauszahlungen für Aufträge trotzdem anwenden, indem die Standarddebitorfunktionen verwendet werden.
 
 Im Rahmen von Kanalkonfigurationen kann ein Unternehmen die Zahlungsmethoden definieren, die für einen Callcenterkanal zulässig sind. Der Callcenterkanal verwendet die gleiche Zahlungsmethode, die für die Ladengeschäftskanäle definiert werden.
 

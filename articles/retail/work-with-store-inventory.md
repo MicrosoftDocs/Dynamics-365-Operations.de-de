@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 551a8408aa730bc1916f1c57b7cfd773966ce8bf
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c5da94e02b2381bbd058221567172cd428931c45
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606802"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024682"
 ---
 # <a name="store-inventory-management"></a>Bestandsverwaltung im Laden
 
 [!include [banner](includes/banner.md)]
 
-Bei der Arbeit mit dem Bestand in Dynamics 365 for Retail und der Verwendung der POS-Anwendung ist zu beachten, dass der POS nur begrenzte Unterstützung für Bestandsdimensionen und bestimmte Bestandsartikelarten bietet.
+Bei der Arbeit mit dem Bestand in Dynamics 365 Retail und der Verwendung der POS-Anwendung ist zu beachten, dass der POS nur begrenzte Unterstützung für Bestandsdimensionen und bestimmte Bestandsartikelarten bietet.
 
 Die POS-Lösung unterstützt die folgenden Artikelkonfigurationen nicht:
 
@@ -56,7 +56,7 @@ Die POS-Lösung bietet begrenzte Unterstützung für die folgenden Dimensionen. 
 
 ## <a name="purchase-orders"></a>Bestellungen
 
-Bestellungen werden in der Zentrale erstellt. Wenn ein Einzelhandelslagerort im Bestellkopf enthalten ist, kann der Auftrag im Shop mithilfe von Modern POS (MPOS) oder Cloud POS in Microsoft Dynamics 365 for Retail durch die Operation **Entnahme-/Empfangskennung** empfangen werden. Nachdem die in der Filiale eingehenden Mengen im Feld **Aktuelle Lieferung** im POS für das Bestellungsdokument eingegeben wurden, können sie lokal gespeichert oder zugesagt werden. Das lokale Speichern dieser Daten hat keine Auswirkungen auf den Lagerbestand. Es sollte nur gespeichert werden, wenn der Benutzer nicht bereit ist, den Empfang in der Hauptniederlassung zu buchen und nur eine Möglichkeit benötigt, die zuvor eingegebenen **Aktuelle Lieferung**-Daten vorübergehend zu speichern. Dies speichert die Daten der aktuellen Lieferung lokal auf der Kanaldatenbank des Benutzers. Nachdem das Dokument mit der Option **Zusagen** verarbeitet wurde, werden die **Aktuelle Lieferung**-Daten an die Hauptniederlassung gesendet und der Bestellungszugang wird gebucht. 
+Bestellungen werden in der Zentrale erstellt. Wenn ein Einzelhandelslagerort im Bestellkopf enthalten ist, kann der Auftrag im Shop mithilfe von Modern POS (MPOS) oder Cloud POS durch die Operation **Entnahme-/Empfangskennung** empfangen werden. Nachdem die in der Filiale eingehenden Mengen im Feld **Aktuelle Lieferung** im POS für das Bestellungsdokument eingegeben wurden, können sie lokal gespeichert oder zugesagt werden. Das lokale Speichern dieser Daten hat keine Auswirkungen auf den Lagerbestand. Es sollte nur gespeichert werden, wenn der Benutzer nicht bereit ist, den Empfang in der Hauptniederlassung zu buchen und nur eine Möglichkeit benötigt, die zuvor eingegebenen **Aktuelle Lieferung**-Daten vorübergehend zu speichern. Dies speichert die Daten der aktuellen Lieferung lokal auf der Kanaldatenbank des Benutzers. Nachdem das Dokument mit der Option **Zusagen** verarbeitet wurde, werden die **Aktuelle Lieferung**-Daten an die Hauptniederlassung gesendet und der Bestellungszugang wird gebucht. 
 
 ## <a name="transfer-orders"></a>Umlagerungsaufträge
 

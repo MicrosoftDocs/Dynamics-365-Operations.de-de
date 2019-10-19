@@ -1,6 +1,6 @@
 ---
 title: Callcenterkataloge
-description: Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Kataloge in Microsoft Dynamics 365 for Retail.
+description: Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Kataloge in Dynamics 365 Retail.
 author: josaw1
 manager: AnnBe
 ms.date: 05/15/2018
@@ -19,24 +19,24 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 65c1c3070aa48bf7a2016534071693716fabe831
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2ad50be1394daf5bffa6391d2f56340aad14120b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562740"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023658"
 ---
 # <a name="call-center-catalogs"></a>Callcenterkataloge
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Katalogfunktionen in Microsoft Dynamics 365 for Retail.
+Dieses Thema beschreibt die spezifische Funktionalität für Callcenter für Katalogfunktionen in Dynamics 365 Retail.
 
-Die Katalogfunktionen von Dynamics 365 for Retail können für verschiedene Zwecke genutzt werden. Ursprünglich wurden die Katalogfunktionen zur Unterstützung von E-Commerce-Integrationen von Drittanbietern entwickelt. Durch die Einrichtung des Katalogs konnten Unternehmen eine Gruppierung von Produkten und Attributen erstellen, die extern für die Nutzung durch eine E-Commerce-Lösung eines Drittanbieters veröffentlicht werden konnten.
+Die Katalogfunktionen in Retail können für verschiedene Zwecke genutzt werden. Ursprünglich wurden die Katalogfunktionen zur Unterstützung von E-Commerce-Integrationen von Drittanbietern entwickelt. Durch die Einrichtung des Katalogs konnten Unternehmen eine Gruppierung von Produkten und Attributen erstellen, die extern für die Nutzung durch eine E-Commerce-Lösung eines Drittanbieters veröffentlicht werden konnten.
 
-Als Dynamics 365 for Retail um die Unterstützung von Callcenter-Kanälen erweitert wurde, wurde das Katalogkonzept um zusätzliche Funktionen zur Unterstützung und Verwaltung von Funktionen im Zusammenhang mit herkömmlichen Direktmarketing-Katalogen erweitert. Ein Direct-to-Consumer-Unternehmen produziert oft gedruckte Kataloge, die dann an ein oder mehrere Kundensegmente verschickt werden. Diese Kataloge haben in der Regel spezifische Aktionen oder Angebote, die nur dann berücksichtigt werden, wenn der Kunde bei der Auftragserstellung einen Katalog-Identifikationscode angibt.
+Als Retail um die Unterstützung von Callcenter-Kanälen erweitert wurde, wurde das Katalogkonzept um zusätzliche Funktionen zur Unterstützung und Verwaltung von Funktionen im Zusammenhang mit herkömmlichen Direktmarketing-Katalogen erweitert. Ein Direct-to-Consumer-Unternehmen produziert oft gedruckte Kataloge, die dann an ein oder mehrere Kundensegmente verschickt werden. Diese Kataloge haben in der Regel spezifische Aktionen oder Angebote, die nur dann berücksichtigt werden, wenn der Kunde bei der Auftragserstellung einen Katalog-Identifikationscode angibt.
 
-Direct-to-Consumer-Marketing-Unternehmen sind sehr darauf ausgerichtet, die Reaktion auf diese Kataloge zu verfolgen, um sicherzustellen, dass die Kosten für die Produktion und den Versand gerechtfertigt sind. Um die Antwort zu verfolgen, wird traditionell ein Code auf die Rückseite des Katalogs gedruckt und dieser Code wird dann angefordert und angewendet, wenn der Katalogempfänger anruft, um eine Bestellung per Telefon aufzugeben (oder jetzt kann der Code traditionellerweise eingegeben werden, wenn der Kunde eine Bestellung online aufgibt). Während es verschiedene Branchenbegriffe gibt, die verwendet wurden, um diesen Katalogverfolgungscode zu identifizieren (einschließlich Schlüsselcode, Promo-Code, Katalogcode, Quellcode), bezeichnen wir den Code in Dynamics 365 for Retail als **Quellcode-ID**.
+Direct-to-Consumer-Marketing-Unternehmen sind sehr darauf ausgerichtet, die Reaktion auf diese Kataloge zu verfolgen, um sicherzustellen, dass die Kosten für die Produktion und den Versand gerechtfertigt sind. Um die Antwort zu verfolgen, wird traditionell ein Code auf die Rückseite des Katalogs gedruckt und dieser Code wird dann angefordert und angewendet, wenn der Katalogempfänger anruft, um eine Bestellung per Telefon aufzugeben (oder jetzt kann der Code traditionellerweise eingegeben werden, wenn der Kunde eine Bestellung online aufgibt). Während es verschiedene Branchenbegriffe gibt, die verwendet wurden, um diesen Katalogverfolgungscode zu identifizieren (einschließlich Schlüsselcode, Promo-Code, Katalogcode, Quellcode), bezeichnen wir den Code in Retail als **Quellcode-ID**.
 
 ## <a name="basic-catalog-setup"></a>Grundlegende Katalogeinrichtung
 
@@ -92,7 +92,7 @@ Wenn Sie die Produkte im Katalog konfigurieren, verwenden Sie die Aktivität **P
 
 ## <a name="catalog-requests"></a>Kataloganforderungen
 
-Da Kataloge in Dynamics 365 for Retail konfiguriert und veröffentlicht werden, kann die Funktion **Katalog senden** genutzt werden. Diese Funktion ist auf den Seiten **Kundensuche** und **Kundendienst** verfügbar. Nach der Auswahl eines Kundendatensatzes über **Kundensuche** oder während der Anzeige eines ausgewählten Kundenkontos über **Kundenservice** kann der Benutzer die Option **Katalog senden** auswählen, die ein Dialogfeld öffnet, in dem der Benutzer aus einer Liste aller veröffentlichten und aktiven Kataloge auswählen kann. Ein Benutzer kann einen Katalog und eine Menge sowie eine bestimmte Quellcodekennung zum Versenden auswählen. Wenn sie auf die Schaltfläche **Senden** klicken, wird eine Anforderung gespeichert, die dann durch Drucken des Berichts **Kataloganforderungen** verwaltet werden kann. Dieser Bericht wird gefunden, indem Sie zu **Retail**\>**Call Center Berichte**\>**Bericht 'Kataloganforderungen**' navigieren. Er listet alle Kataloganforderungen auf, einschließlich des Kundennamens und der Adressdaten des Kunden, der den Katalog angefordert hat. Dieser Report kann intern verwendet werden oder die Daten können an eine dritte Partei übermittelt werden, die externe Prozesse zur physischen Versendung des Katalogs an den Kunden unterstützt.
+Da Kataloge in Retail konfiguriert und veröffentlicht werden, kann die Funktion **Katalog senden** genutzt werden. Diese Funktion ist auf den Seiten **Kundensuche** und **Kundendienst** verfügbar. Nach der Auswahl eines Kundendatensatzes über **Kundensuche** oder während der Anzeige eines ausgewählten Kundenkontos über **Kundenservice** kann der Benutzer die Option **Katalog senden** auswählen, die ein Dialogfeld öffnet, in dem der Benutzer aus einer Liste aller veröffentlichten und aktiven Kataloge auswählen kann. Ein Benutzer kann einen Katalog und eine Menge sowie eine bestimmte Quellcodekennung zum Versenden auswählen. Wenn sie auf die Schaltfläche **Senden** klicken, wird eine Anforderung gespeichert, die dann durch Drucken des Berichts **Kataloganforderungen** verwaltet werden kann. Dieser Bericht wird gefunden, indem Sie zu **Retail**\>**Call Center Berichte**\>**Bericht 'Kataloganforderungen**' navigieren. Er listet alle Kataloganforderungen auf, einschließlich des Kundennamens und der Adressdaten des Kunden, der den Katalog angefordert hat. Dieser Report kann intern verwendet werden oder die Daten können an eine dritte Partei übermittelt werden, die externe Prozesse zur physischen Versendung des Katalogs an den Kunden unterstützt.
 
 ## <a name="additional-features"></a>Zusätzliche Funktionen
 

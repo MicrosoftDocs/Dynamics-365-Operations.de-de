@@ -1,6 +1,6 @@
 ---
 title: Kreditorenzusammenarbeit mit Debitoren
-description: In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um in Microsoft Dynamics 365 for Finance and Operations mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
+description: In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Bestellungen zu arbeiten und Lieferungsbestand zu überwachen.
 author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd3967da105b3cec4a722ee8e04fac13c798feec
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e968a57c09837a5cfa5a0476426a274021122959
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567583"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250120"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 for Finance and Operations zu arbeiten. Kreditoren können eine Serie von Geschäftsprozesse aus den folgenden Arbeitsbereichen ausführen:
+In diesem Thema wird beschrieben, wie Sie Kreditorenzusammenarbeit verwenden können, um mit Debitoren in Microsoft Dynamics 365 Supply Chain Management zu arbeiten. Kreditoren können eine Serie von Geschäftsprozesse aus den folgenden Arbeitsbereichen ausführen:
 
 - **Bestellungsbestätigung** – Überwachen von Bestellungen und auf sie antworten.
 - **Kreditorenangebotsabgabe** – Angebotsanforderungen anzeigen und durch Eingeben von Angeboten auf sie antworten.

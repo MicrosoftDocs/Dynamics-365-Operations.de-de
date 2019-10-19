@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b3247f693f5934b3fbf83b7b831c7ed221514cb
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 067d1085d9afa04cb76b78393a8a8b9834ce4d8c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783286"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250943"
 ---
 # <a name="maintenance-attribute-types"></a>Wartungsattributtypen
 
@@ -42,10 +42,10 @@ Die Attribute, die Sie einrichten können, variieren, je nach spezifischem Eleme
 
 ## <a name="create-attribute-types"></a>Erstellen von Attributtypen
 
-Sie können eigene Attributtypen erstellen. Darüber hinaus können Sie Produktdimensionen aus Microsoft Dynamics 365 for Finance and Operations auf die Seite **Attributtypen** übertragen.
+Sie können eigene Attributtypen erstellen. Darüber hinaus können Sie Produktdimensionen auf die Seite **Attributtypen** übertragen.
 
 1. Wählen Sie **Anlagenverwaltung** \> **Einstellungen** \> **Attributtypen** aus.
-2. Beim der erstmaligen Einrichtung von Attributtypen wählen Sie **Produktdimensionen erstellen** aus, um Standardproduktdimensionen von Finance and Operations automatisch zu übertragen.
+2. Beim der erstmaligen Einrichtung von Attributtypen wählen Sie **Produktdimensionen erstellen** aus, um Standardproduktdimensionen automatisch zu übertragen.
 3. Wählen Sie **Neu** aus, um einen neuen Attributtyp zu erstellen.
 4. Geben Sie im Feld **Attributtyp** einen Namen für den Attributtyp ein.
 5. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.

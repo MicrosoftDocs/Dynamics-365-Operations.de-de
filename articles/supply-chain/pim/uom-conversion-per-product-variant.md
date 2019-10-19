@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 36fc98c44625cce03945d76973de67021d53353e
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844368"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249447"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Maßeinheitsumrechnungen für Produktvarianten
 
@@ -90,6 +90,6 @@ Die freigegebenen Produktvarianten klein, mittel und groß haben dieselbe Einhei
 
 ### <a name="using-excel-to-update-the-unit-conversions"></a>Excel verwenden, um die Einheitenumrechnungen zu aktualisieren
 
-Wenn ein Produkt Produktvarianten mit viele unterschiedliche Einheitenumrechnungen hat, wird empfohlen, die Seite **Einheitenumrechnung** in ein Excel-Arbeitsblatt zu exportieren, die Umrechnung zu aktualisieren und diese dann anschließend wieder in Finance and Operations zu veröffentlichen.
+Wenn ein Produkt Produktvarianten mit viele unterschiedliche Einheitenumrechnungen hat, wird empfohlen, die Seite **Einheitenumrechnung** in ein Excel-Arbeitsblatt zu exportieren, die Umrechnung zu aktualisieren und diese dann anschließend wieder in Supply Chain Mangement zu veröffentlichen.
 
-Die Option in Excel zu exportieren und die Bearbeitung wieder zurück zu Finance and Operations zu exportieren, wird aktiviert im Menü **Öffnen in Microsoft Office** im Aktivitätsbereich auf der Seite **Einheitenumrechnung**.
+Die Option in Excel zu exportieren und die Bearbeitung wieder zurück zu Supply Chain Mangement zu exportieren, wird aktiviert im Menü **Öffnen in Microsoft Office** im Aktivitätsbereich auf der Seite **Einheitenumrechnung**.

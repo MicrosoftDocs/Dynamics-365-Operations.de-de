@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (17. September 2018)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (17. September 2018)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 09/17/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-09-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 213324f9074f88d9fdc8efdfa46bc3ed7817d1e8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 558c2cdb4addce54af937ff862535d65f1ebd602
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518110"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026031"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-september-17-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (17. September 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-september-17-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent: Core HR (17. September 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -37,13 +37,13 @@ In diesem Thema werden die Funktionen beschrieben, die in Core HR entweder neu o
 
 Ein neuer Abgrenzungstyp ist Absenzenplänen hinzugefügt worden. Der Abgrenzungszeitplan kann nun auf gearbeiteten Monaten oder Stunden basieren. Weitere Informationen finden Sie unter [Zeit basierend auf Freizeit auf Grundlage der gearbeiteten Stunden abgrenzen](leave-accrue-hours-worked.md).
 
-## <a name="platform-update-18"></a>Plattformupdate 18
+## <a name="platform-update-18-for-finance-and-operations"></a>Platform update 18 für Finance and Operations
 
-Plattformaktualisierung 18 ist nun Teil der Talentfreigabe. 
+Plattformaktualisierung 18 für Finance and Operations ist nun Teil der Talent-Version. 
 
 -   Erforderliche und andere Felder können über die Personalisierung ausgeblendet werden. Dast gibt einem Benutzer die Möglichkeit, eine vereinfachte Erfahrung zu erstellen, in der die von der Geschäftslogik als Standard gekennzeichneten Pflichtfelder nicht angezeigt werden. Ausgeblendete Pflichtfelder werden auch vorübergehend sichtbar gemacht, wenn sie leer sind, wenn eine Speichern versucht wird.
 
--   In Plattformaktualisierung 18 wird der Talentwebclient jetzt grafischen mit Microsoft Fluent Design.
+-   In Plattformaktualisierung 18 für Finance and Operations wird der Talent-Webclient jetzt grafisch an Microsoft Fluent Design angepasst.
 
     -   Wenn die Felder "im Lesemodus" sind, können Sie die bearbeitbaren Optionen in den Feldern bearbeiten, um in ein Formular zu wechseln, das Sie bearbeiten können.
 

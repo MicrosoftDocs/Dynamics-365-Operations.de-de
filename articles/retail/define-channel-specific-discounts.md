@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a136e245beaf8dfd8bcf19d49f8a355c8871cde7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a23176cefde1f4d119828c9b124750d6106a3bfa
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568067"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019346"
 ---
 # <a name="define-channel-specific-discounts"></a>Kanalspezifische Rabatte definieren
 
@@ -36,7 +36,7 @@ Einzelhändler legen häufig verschiedene Rabatte in verschiedenen Kanälen fest
 
 Einzelhändler legen häufig verschiedene Rabatte in verschiedenen Kanälen fest. Dies kann erfolgen, um die lokalen Marktbedingungen anzusprechenoder mit einem konkurrierenden Einzelhändler in den Wettbewerb zu treten..
 
-Microsoft Dynamics 365 for Retail verwendet Preisgruppen, um kanalspezifische Rabatte zu definieren. Preisgruppen können einer oder mehreren der folgenden Entitäten zugewiesen werden: Kanäle, Kataloge, Zugehörigkeiten und Treueprogramme. Dieser Artikel behandelt Kanäle. Aber die gleichen Konzepte gelten für Katalograbatte, Zugehörigkeitsrabatte und Treuerabatte.
+Retail verwendet Preisgruppen, um kanalspezifische Rabatte zu definieren. Preisgruppen können einer oder mehreren der folgenden Entitäten zugewiesen werden: Kanäle, Kataloge, Zugehörigkeiten und Treueprogramme. Dieser Artikel behandelt Kanäle. Aber die gleichen Konzepte gelten für Katalograbatte, Zugehörigkeitsrabatte und Treuerabatte.
 
 ## <a name="price-groups"></a>Preisgruppen
 

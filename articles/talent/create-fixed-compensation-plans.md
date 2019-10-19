@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 0a31ea7d1df33d3f42e95d5e1152f00687954b04
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3a6e7556705249296d4f5e5fb56f25b444f8f71a
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518046"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008150"
 ---
 # <a name="create-fixed-compensation-plans"></a>Erstellen von Plänen für feste Vergütung
 
@@ -31,7 +31,7 @@ ms.locfileid: "1518046"
 
 Feste Vergütung bezieht sich auf das reguläre Bruttogehalt oder den Lohn eines Mitarbeiters. In diesem Artikel werden die Komponenten beschrieben die eingerichtet werden müssen, bevor Sie einen festen Vergütungsplan erstellen und Mitarbeiter registrieren können.
 
-Für Ihre Mitarbeiter können feste Vergütungsbeträge berechnet werden, die auf Faktoren wie Leistung, Region und Budgeterweiterungen basieren. Microsoft Talent unterstützt die Kompensationsarten "Schritt", "Klasse" und "Bereich".
+Für Ihre Mitarbeiter können feste Vergütungsbeträge berechnet werden, die auf Faktoren wie Leistung, Region und Budgeterweiterungen basieren. Dynamics 365 Talent unterstützt die Kompensationsarten „Schritt“, „Klasse“ und „Bereich“.
 
 ## <a name="fixed-compensation-components"></a>Feste Vergütungskomponenten
 ### <a name="compensation-levels"></a>Vergütungsstufen

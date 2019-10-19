@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e6a2d428e433256339fff07f3805449a2604213
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 3336a3357578b25522e1ac457a48349f88b7318d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783285"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024567"
 ---
 # <a name="asset-management-parameters"></a>Anlagenverwaltungsparameter
 
@@ -33,7 +33,7 @@ ms.locfileid: "1783285"
 
 In der Anlageverwaltung müssen allgemeine Parameter in Bezug auf Arbeitsaufträge, Anlagen und Arbeitsauftragsplanung eingerichtet werden. In diesem Thema wird erläutert, wie diese eingerichtet werden. Wählen Sie **Anlageverwaltung** > **Einstellungen** > **Anlageverwaltungsparameter** aus, um das Formular zu öffnen.
 
-Die Schaltfläche **Daten-Assistenten erstellen** kann verwendet werden, um in die Einstellungsdaten für Test- oder Demodatenzwecke in einem Unternehmen in Dynamics 365 for Finance and Operations automatisch zu erstellen. Weitere Informationen finden Sie im Whitepaper „Einstellung von Test-Daten im Anlage-Management“, um zu erfahren, wie der Assistent verwendet wird.
+Die Schaltfläche **Daten-Assistenten erstellen** kann verwendet werden, um in die Einstellungsdaten für Test- oder Demodatenzwecke in einem Unternehmen in Dynamics 365 Supply Chain Management automatisch zu erstellen. Weitere Informationen finden Sie im Whitepaper „Einstellung von Test-Daten im Anlage-Management“, um zu erfahren, wie der Assistent verwendet wird.
 
 Link **Anlagen**
 
@@ -57,7 +57,7 @@ Link **Arbeitsaufträge**
 - Wählen Sie „Ja“ auf der Umschalttaste **Kopienfehler** aus, wenn Sie die Fehler automatisch kopieren möchten, die auf Arbeitsaufträgen zu zugehörigen Wartungsanforderungen erfasst werden.  
 - Im Feld **Ebene** definieren Sie die funktionale Lagerplatzebene, die automatisch für einen Arbeitsauftrag eingefügt wird, wenn alle zugehörigen Arbeitsauftragseinzelvorgänge auf den funktionalen gleichen Speicherort verweisen. Wenn nicht alle Arbeitsauftragseinzelvorgänge derselben funktionalen Position auf der definierten Ebene zugeordnet werden, wird das Feld  **Funktionaler Lagerplatz** auf dem Arbeitsauftrag leer gelassen. Beispiel: Wenn Sie die Nummer „1“ in diesem Feld eingeben, ist dies die höchste Ebene in der funktionalen Lagerplatzstruktur. Wenn Sie die Nummer „0“ in diesem Feld einfügen, haben Sie keine bestimmte funktionale Lagerplatzebene definiert, nur dass alle Arbeitsauftragsstellen eines Arbeitsauftrags dem gleichen Standort zugeordnet sein müssen, damit der Lagerplatz dem Arbeitsauftrag funktionale hinzugefügt werden kann.  
 - Die Erfassungen, die verwendet werden, wenn der Verbrauch in einem Arbeitsauftrag gebucht wird, kann auf dem Inforegister **Allgemein** in den Feldern **Stunde**, **Artikel** und **Ausgaben** ausgewählt werden.  
-- Wählen Sie im Feld **Produktsprachenquelle** die Sprache für die Produktnamen in Anlageverwaltungsberichten aus. Sie können die Sprache auswählen, die im Unternehmenskonto eingerichtet wird, für das der Benutzer derzeit Dynamics 365 for Finance and Operations angemeldet ist.  
+- Wählen Sie im Feld **Produktsprachenquelle** die Sprache für die Produktnamen in Anlageverwaltungsberichten aus. Sie können die im Unternehmenskonto oder die für den derzeit angemeldeten Benutzer eingerichtete Sprache auswählen.  
 - Wählen Sie „Ja“ auf der Umschalttaste **Echtzeitaktualisierung** aus, wenn Änderungen an den Einzelvorgangstypenstandards, Wartungsplänen und Wartungsdurchgängen automatisch aktualisiert werden sollen.
 > - Wenn Sie „Nein“ auswählen, erfolgen keine automatischen Aktualisierungen an Einzelvorgangstyp-Standards, Wartungsplänen und Wartungsdurchgängen in der Anlageverwaltung  
 > - Wählen Sie „Nein“ auf der Umschalttaste aus, wenn Sie große Datenmengen haben, die synchronisiert werden, beispielsweise viele Anlagen oder funktionale Standorte in Wartungsanlagen oder Wartungsplänen oder eine große Anzahl von Wartungsplänen oder -aufträgen.  
@@ -75,7 +75,7 @@ Link **Arbeitsaufträge**
 - **Produktprogrammplan** bezeieht sich auf die Ressourcen im Modul **Organisationsverwaltung**. Wenn Sie einen Produktprogrammplan in diesem Feld ausgewählt haben, sind Sie in der Lage, die Kapazitätsreservierungen zu sehen, die den Arbeitsaufträgen **Kapazitätsreservierungen** zugeordnet werden (**Organisationsverwaltung** > **Ressourcen** > **Ressourcen** > Ressource wählen > Registerkarte **Ressource** > Schaltfläche **Kapazitätsreservierungen**). Wenn Sie dieses Feld leer lassen, sehen Sie die Kapazitätsauslastung, die dem Arbeitsauftrag zugeordnet ist unter **Kapazitätsauslastung** (**Organisationsverwaltung** \>**Ressourcen** \> **Ressourcen** \> Ressource auswählen \> Registerkarte **Ressource** \> Schaltfläche **Kapazitätsauslastung**).  
 
 >[!NOTE]
->Die Auswahl zur Verwendung eines Produktprogrammplans im Modul **Asset-Management** und das zugehörige Formular, das verwendet wird, um einen Überblick der Kapazitätsreservierungen oder Kapazitätsauslastung abzurufen, ist eine Standard Dynamics 365 for Finance and Operations Einstellung. Abhängig von Ihren Einstellungen im Feld **Produktprogrammplan** sind Sie in der Lage, auf Kapazitätsinformationen entweder über **Kapazitätsreservierungen** oder **Kapazitätsauslastung** **Organisationsverwaltung** zuzugreifen. Es ist nicht möglich, eine Einstellung zu erstellen, in der die Kapazitätsreservierungen in beiden Ansichten dargestellt werden.  
+>Die Standardeinstellung ist die Auswahl zur Verwendung eines Produktprogrammplans im Modul **Anlagenverwaltung** und das zugehörige Formular, das verwendet wird, um einen Überblick der Kapazitätsreservierungen oder Kapazitätsauslastung abzurufen. Abhängig von Ihren Einstellungen im Feld **Produktprogrammplan** sind Sie in der Lage, auf Kapazitätsinformationen entweder über **Kapazitätsreservierungen** oder **Kapazitätsauslastung** **Organisationsverwaltung** zuzugreifen. Es ist nicht möglich, eine Einstellung zu erstellen, in der die Kapazitätsreservierungen in beiden Ansichten dargestellt werden.  
 
 Alle Felder, die in der Aufzählungszeichenliste unter beschrieben werden, beziehen sich alle auf die berechneten Bewertungsnoten, die verwendet werden, um die Arbeitsauftragspriorität während der Arbeitsauftragsplanung zu berechnen.
 

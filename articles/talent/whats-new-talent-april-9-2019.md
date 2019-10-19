@@ -1,6 +1,6 @@
 ---
-title: Neuigkeiten oder Änderungen in Dynamics 365 for Talent (9. April, 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuigkeiten oder Änderungen in Dynamics 365 Talent (9. April, 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/09/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-09
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4959f28e0768d43f90a664022c714a126c88e38d
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: 08f3f8150a120817618ee4d31197f3088c7483ab
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856423"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024090"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-9-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 for Talent (9. April, 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-9-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (9. April, 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Talent neu oder geändert wurden.
+In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -91,4 +91,4 @@ Nachverfolgung von Mitarbeiterfreizeit und Verständnis dafür, wie Freizeit ber
 Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben, und ein Status zeigt, wie viele Duplikate gefunden wurden. Sie können die zur Verfügung gestellte Verknüpfung aktivieren, um eine neue Seite zu öffnen, um zu prüfen, ob die gefundene Übereinstimmung verwendet werden soll. Das Duplikatsformular wird nicht automatisch geöffnet, damit die Dateneingabe nicht unterbrochen wird.
 
 ###  <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
-Mit der Plattformaktualisierung 25 können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 
+Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird. 

@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (14. Dezember 2018)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (14. Dezember 2018)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/14/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c2d209cac52665053b664a93bfb6c35e171b0948
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 36eb5722a7bd98c404fb6c8f5bde407ab38ec28d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518065"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024021"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-14-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (14. Dezember 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-14-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent: Core HR (14. Dezember 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -94,9 +94,9 @@ Wenn die Möglichkeit zur Planung freigegeben wird, ändert sich der angezeigte 
 
 ## <a name="known-issue"></a>Bekannte Probleme
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Prüffehler in der Integration mit Finance and Operations
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Prüffehler in der Integration mit Finance
 
-Die folgenden Probleme wurden für die aktuelle Vorlage für Integrierung von Talent mit Dynamics 365 for Finance and Operations identifiziert. Eine neue Vorlage wird bald veröffentlicht und für alle neuen Integrationsprojekten angewendet, die erstellt werden. Für vorhandene Integrationsprojekt können die Aufgabenzuordnungen aktualisiert werden. Weitere Informationen finden Sie in der aktualisierten Zuordnung. 
+Die folgenden Probleme wurden für die aktuelle Vorlage für Integrierung von Talent mit Dynamics 365 Finance identifiziert. Eine neue Vorlage wird bald veröffentlicht und für alle neuen Integrationsprojekten angewendet, die erstellt werden. Für vorhandene Integrationsprojekt können die Aufgabenzuordnungen aktualisiert werden. Weitere Informationen finden Sie in der aktualisierten Zuordnung. 
 
 >[!NOTE]
 > Die Stellenposition für die übergeordneten Arbeitsaufgabeaufgabenzuweisung integriert keine Daten. Dies ist ein Problem, das derzeit untersucht wird. Es gibt keine Problemumgehung in der aktuellen Zuordnung. 

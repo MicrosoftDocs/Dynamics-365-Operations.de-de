@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-15
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f03b7fa073c4e5338b7b5681ba7b8c9fe00a657b
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 95fe394d22f9fe81511c230a2cf7b8ddf00d896f
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875666"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250828"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Fertigungsaufträge und Abschreibungen
 
@@ -33,7 +33,7 @@ ms.locfileid: "1875666"
 [!include [banner](../../includes/preview-banner.md)]
 
 
-In der Anlagenbuchhaltung können Anlagen mit Anlagen verknüpft sein, und Sie können Arbeitsaufträge für diese Anlagen anlegen. Wenn Sie diese Funktionalität nutzen, können Sie sich im Modul **Projektverwaltung und Abrechnung** und im Modul **Anlage** in Dynamics 365 for Finance and Operations einen vollständigen Überblick über die Anlage, die zugehörigen Investitionsprojekte und die auf den Investitionsprojekten erfassten Kosten verschaffen.
+In der Anlagenbuchhaltung können Anlagen mit Anlagen verknüpft sein, und Sie können Arbeitsaufträge für diese Anlagen anlegen. Wenn Sie diese Funktionalität nutzen, können Sie sich im Modul **Projektverwaltung und Abrechnung** und im Modul **Anlage** einen vollständigen Überblick über die Anlage, die zugehörigen Investitionsprojekte und die auf den Investitionsprojekten erfassten Kosten verschaffen.
 
 >[!NOTE]
 >Das Feld **Anlagennummer** wird auf dem Arbeitsauftragsprojekt nur ausgefüllt, wenn als Projektart auf dem Arbeitsauftragsprojekt der Typ „Investition“ ausgewählt ist.

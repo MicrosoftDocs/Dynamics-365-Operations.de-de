@@ -1,5 +1,5 @@
 ---
-title: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+title: Aktualisieren Sie die Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Supply Chain Management
 description: Dieses Thema bietet eine Übersicht über Optionen für die Produkt- und Lagerverwaltungsmigration.
 author: perlynne
 manager: AnnBe
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 768d0bd16a41a3458b25606b74d606318d176ff0
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c3dcb75653743d0d135eda197c6330f3ee9c5383
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554045"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251430"
 ---
-# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+# <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Aktualisieren Sie die Lagerortverwaltung von Microsoft Dynamics AX 2012 auf Supply Chain Management 
 
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema enthält einen Überblick der Aktualisierung von Microsoft Dynamics AX R3 2012 bereit und führt das WMSII-Modul, in Microsoft Dynamics 365 for Finance and Operationsaus.
+Dieses Thema enthält einen Überblick der Aktualisierung von Microsoft Dynamics AX 2012 R3 mit WMSII-Modul auf Supply Chain Management.
 
-Finance and Operations unterstützt nicht mehr bestehende **WMSII**-Modul von Microsoft Dynamics AX 2012. Stattdessen können Sie das Modul **Lagerortverwaltung** verwenden. Im WMSII-Modul konnten die Bestandsdimensionen Standort und Paletten-ID für die Finanzbestandsaufnahme ausgewählt werden, jedoch kann die Bestandsdimension Paletten-ID nicht für die Finanzbestandsaufnahme im Bereich Finanzen und Betrieb verwendet werden.
+Supply Chain Management unterstützt nicht mehr bestehende **WMSII**-Module von Microsoft Dynamics AX 2012. Stattdessen können Sie das Modul **Lagerortverwaltung** verwenden. Im WMSII-Modul konnten die Bestandsdimensionen Standort und Paletten-ID für die Finanzbestandsaufnahme ausgewählt werden, jedoch kann die Bestandsdimension Paletten-ID nicht für die Finanzbestandsaufnahme in Supply Chain Management verwendet werden.
 
 Bei einem Upgrade werden alle Produkte, die einer Lagerdimensionsgruppe zugeordnet sind, die die Bestandsdimension Paletten-ID verwendet, identifiziert, als gesperrt gekennzeichnet und nicht zum Upgrade verarbeitet.
 
-## <a name="upgrading-to-finance-and-operations-when-ax-2012-r3-wmsii-is-used"></a>Aktualisierung auf Finance and Operations, wenn AX 2012 R3 WMSII verwendet wird
+## <a name="upgrading-to-supply-chain-management-when-ax-2012-r3-wmsii-is-used"></a>Aktualisierung auf Supply Chain Management, AX 2012 R3 WMSII verwendet wird
 Nach dem Upgrade können Sie eine Reihe von Optionen in der Gruppe **Lagerdimension ändern für Positionen** Formular verwenden, um Produkte, die während des Upgrades gesperrt wurden, zu entsperren und dann Transaktionen für diese Produkte zu bearbeiten.
 
-### <a name="enabling-items-in-finance-and-operations"></a>Artikel in Finance and Operations aktivieren
-Diese Änderung ist erforderlich, da die Artikelverfolgung im Bereich Finanzen und Betrieb Teil der Lagerverwaltungsprozesse ist. Für diesen Prozess müssen alle Lagerorte und die Lagerplätze einem Lagerplatzprofil zugeordnet werden. Wenn Sie Lagerverwaltungsprozesse verwenden möchten, müssen Sie Folgendes konfigurieren:
+### <a name="enabling-items-in-supply-chain-management"></a>Aktivieren von Artikeln in Supply Chain Management 
+Diese Änderung ist erforderlich, da die Artikelverfolgung in Supply Chain Management Teil der Lagerverwaltungsprozesse ist. Für diesen Prozess müssen alle Lagerorte und die Lagerplätze einem Lagerplatzprofil zugeordnet werden. Wenn Sie Lagerverwaltungsprozesse verwenden möchten, müssen Sie Folgendes konfigurieren:
 -   Alle bestehenden Lagerorte müssen für Lagerortverwaltungsprozesse aktiviert werden 
 -   Vorhandene freigegebene Produkte müssen einer Lagerdimensionsgruppe zugeordnet werden, die Lagerortverwaltungsprozesse verwendet. 
 

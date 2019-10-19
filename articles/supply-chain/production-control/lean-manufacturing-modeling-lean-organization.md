@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fe9a81f58423c3396493d0ea2c27bdea4eee102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 40664936382f5edcb3c1680aa4af245bdef539a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1560139"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250208"
 ---
 # <a name="modeling-a-lean-organization"></a>Modellierung einer Lean-Organisation
 
@@ -39,7 +39,7 @@ In den Produktionsszenarien, die auf Produktionsaufträgen basieren, wird Materi
 
 Um Lieferzeiten und überschüssigen Bestand zwischen den Ressourcen zu reduzieren, die von der Chargenproduktion verursacht werden, führt Lean Manufacturing Kanbanauffüllung und Supermärkte in der Fertigung und Lagerort-Wiederbeschaffung ein. Diese Funktionen unterbrechen normalerweise die Produktion von teilweise unabhängigec Kanbanzyklen. Die Auffüllung eines Kanbans für ein Halbfertigprodukt wird nicht mehr durch einen Auftrag für ein Fertigprodukt ausgelöst. 
 
-Um einen Produktions- und Kostenkontext für die verschiedenen Kanbanszenarien neu einzurichten, die in Microsoft Dynamics 365 for Finance and Operations vorgeschlagen werden, werden die aktivitätsbasierten Produktionsflüsse als Grundlage des Lean Manufacturing eingeführt. Alle Kanban-Regeln beziehen sich auf diese vordefinierte Struktur. Das aktivitätsbasierte Modell unterstützt die Einstellung umfassender Szenarien. Jedoch fügt dieses Modell keine Komplexität für die Fertigungsbereichsarbeitskräfte hinzu, da alle Szenarien die gleiche aktivitätsbasierte Benutzeroberfläche verwenden.
+Um einen Produktions- und Kostenkontext für die verschiedenen Kanbanszenarien neu einzurichten, die vorgeschlagen werden, werden die aktivitätsbasierten Produktionsflüsse als Grundlage des Lean Manufacturing eingeführt. Alle Kanban-Regeln beziehen sich auf diese vordefinierte Struktur. Das aktivitätsbasierte Modell unterstützt die Einstellung umfassender Szenarien. Jedoch fügt dieses Modell keine Komplexität für die Fertigungsbereichsarbeitskräfte hinzu, da alle Szenarien die gleiche aktivitätsbasierte Benutzeroberfläche verwenden.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halbfertigprodukte (Nicht-Stücklisten-Ebenen)
 Lean Manufacturing integriert Kanbans für inventarisierte Produkte und Halbfertigprodukte in einem einzigen Framework und bietet eine einheitliche Benutzerfreundlichkeit für alle Anfragen. Aufgrund dieser Architektur, müssen zusätzliche Stücklistenebenen nicht mehr erfasst werden, um die für Halbfertigprodukte zu verwendende Kanbans zu aktivieren. Diese Architektur hilft zudem dabei, Lagerbuchungen auf ein Minimum zu beschränken.
@@ -50,7 +50,7 @@ Die Verringerung von Chargengrößen auf den idealen Status eines Einzelstückfl
 ## <a name="value-streams-and-value-stream-mapping"></a>Wertströme und Wertstromzuordnung
 Die Architektur des Lean Manufacturing basiert auf den fünf Lean-Prinzipien von Womack und Jones: Kundenwert, Wertstrom, Fluss-Prinzip, Pull-Prinzip und Perfektion. Eine genehmigte Methode zum Implementieren von Lean Manufacturing-Lösungen in der physischen Welt der Fertigung ist die Wertstromzuordnung. Diese Methode wurde von Rother und Shook in deren Veröffentlichung "Learning to See" vom Lean Manufacturing Institute herausgegeben. 
 
-In Finance and Operations können die künftigen Wertströme als Produktionsflussversion modelliert werden. Alle Prozesse des Wertstroms werden als Verarbeitungsaktivitäten modelliert. Bewegungen oder Übertragungen können als Umlagerungsaktivitäten modelliert werden, wenn der Übergangsstatus erfasst werden muss oder wenn eine Integration für Bestandsentnahme oder konsolidierte Lieferungen erforderlich ist. 
+Es können die künftigen Status-Wertströme als Produktionsflussversion modelliert werden. Alle Prozesse des Wertstroms werden als Verarbeitungsaktivitäten modelliert. Bewegungen oder Übertragungen können als Umlagerungsaktivitäten modelliert werden, wenn der Übergangsstatus erfasst werden muss oder wenn eine Integration für Bestandsentnahme oder konsolidierte Lieferungen erforderlich ist. 
 
 Der Wertstrom selbst wird als Organisationseinheit modelliert. Daher kann der Wertstrom als Finanzdimension verwendet werden.
 

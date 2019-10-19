@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c219208c7ba5dd3686473d094658ab7f4c1b2b59
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 35ec47a13d9119c755702e019d09c76e1281b4a6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549312"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250213"
 ---
 # <a name="activity-based-subcontracting"></a>Aktivitätsbasierte Fremdarbeit
 
@@ -32,7 +32,7 @@ ms.locfileid: "1549312"
 
 In diesem Thema wird beschrieben wie Fremdarbeitsaktivitäten in einem Produktionsfluss für die Lean Manufacturing verwendet wird.
 
-In Microsoft Dynamics 365 for Finance and Operations gibt es zwei Ansätze für Fremdarbeit: Produktionsaufträge und Lean Manufacturing. Im Lean Manufacturing-Ansatz wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines Produktionsflusses verknüpft ist. Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Die Kostenbuchhaltung der Fremdarbeit wird vollständig in die Kostenlösung für Lean Manufacturing integriert.
+In Microsoft Dynamics 365 Supply Chain Management gibt es zwei Ansätze für Fremdarbeit: Produktionsaufträge und Lean Manufacturing. Im Lean Manufacturing-Ansatz wird die Fremdarbeit als Dienst modelliert, der mit einer Aktivität eines Produktionsflusses verknüpft ist. Ein spezieller Kostengruppentyp mit der Bezeichnung **Direktes Outsourcing** wurde eingeführt und die Fremdarbeitsdienstleistungen sind nicht mehr Teil einer Stückliste (BOM). Die Kostenbuchhaltung der Fremdarbeit wird vollständig in die Kostenlösung für Lean Manufacturing integriert.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflüsse, die durch Fremdarbeit ausgeführt werden
 Das Grundprinzip eines Produktionsflusses ändert nicht, wenn Aktivitäten weitergegeben werden. Material fließt noch zwischen Lagerplätzen, Prozeßaktivitäten konvertieren Material in Produkte und verschieben Aktivitäten, Material oder Produkte von einem Lagerplatz zu einem anderen. Sie können Lagerplätze und Fertigungszellen vom Kreditor verwalten lassen, indem Sie das Kreditorenkonto einem Lagerort oder einer Ressource einer Ressourcengruppe zuweisen.  
@@ -102,7 +102,7 @@ Menschen betrachten den Transport oft als unproduktive und denken, er habe keine
 
 Mit der aktivitätsbasierten Fremdarbeit im Lean Manufacturing können Sie Spediteure integrieren und Kreditoren bewegen, die Material und Produkte zwischen Lagerplätzen eines Produktionsflusses verschieben. Durch die Modellierung einer Umlagerungsaktivität können Sie einen Spediteur oder Kreditor zuweisen. Die Umlagerungsaktivitäten/der Einzelvorgang basiert auf einem Service und einer Rahmenbereinbarung, und Sie können Bestellungen und Zugangsempfehlungen auf Basis der tatsächlichen Umlagerungseinzelvorgänge erstellen. Diese Funktionen sind identisch wie die Funktionalität für die Weitervergabe von Prozessaktivitäten.  
 
-Daher unterstützt Finance and Operations jetzt BOM-Berechnungen, die Transportdienste, die Erstellung von Bestellungen, integrierte Zugangserfassung und die Integration von Transportdienstleistungskosten in die Produktionsflussnachkalkulation enthalten.
+Supply Chain Management unterstützt jetzt BOM-Berechnungen, die Transportdienste, die Erstellung von Bestellungen, integrierte Zugangserfassung und die Integration von Transportdienstleistungskosten in die Produktionsflussnachkalkulation enthalten.
 
 
 

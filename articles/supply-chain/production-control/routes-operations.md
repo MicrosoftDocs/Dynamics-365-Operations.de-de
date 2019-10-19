@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 961cc6fe5bd1bfbb0f5c9116024415a5d53f569e
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522196"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249961"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -35,7 +35,7 @@ Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
 <a name="overview"></a>Überblick
 --------
 
-Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Microsoft Dynamics 365 for Finance and Operations besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beischreiben:
+Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Finance and Operations besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beischreiben:
 
 -   **Arbeitsplan** – Ein Arbeitsplan definiert die Struktur des Produktionsprozesses. Das bedeutet, er definiert die Reihenfolge der Arbeitsgänge.
 -   **Arbeitsgang** – Ein Arbeitsgang gibt einen Schritt in einem benannten Arbeitsplan an (z. B. **Zusammenbau**). Der gleiche Vorgang kann in mehreren Arbeitsplänen auftreten und unterschiedliche Arbeitsgangnummern haben.
@@ -43,7 +43,7 @@ Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich i
 -   **Arbeitsplanversion** – Eine Arbeitsplanversion definiert den Arbeitsplan, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Arbeitsplanversionen ermöglichen das Wiederverwendet von Arbeitsplänen für Produkte oder Änderungen. Sie ermöglichen auch unterschiedliche Arbeitpläne, um die gleichen Produkte zu erzeugen. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie dem Standort oder der Menge, die produziert werden muss ab.
 
 ## <a name="routes"></a>Arbeitspläne
-Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Jeder Arbeitsgang wird eine Arbeitsgangnummer und einen Folgeaktivitätsarbeitsgang zugewiesen. Die Reihenfolge der Arbeitsgangsformularen eines Arbeitsplan-Netzwerks kann als Diagramm dargestellt werden, das ein oder mehrere Startpunkte und einen bestimmten Endpunkt hat. In Finance and Operations werden Arbeitspläne basierend auf dem Typ der Struktur unterschieden. Die zwei Typen der Arbeitspläne sind einfache Arbeitspläne und Arbeitsplan-Netzwerke. In den Produktionssteuerungsparametern können Sie angeben, ob nur einfache Arbeitspläne verwendet werden können oder ob die komplexeren Arbeitsplan-Netzwerke verwendet werden können.
+Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Jeder Arbeitsgang wird eine Arbeitsgangnummer und einen Folgeaktivitätsarbeitsgang zugewiesen. Die Reihenfolge der Arbeitsgangsformularen eines Arbeitsplan-Netzwerks kann als Diagramm dargestellt werden, das ein oder mehrere Startpunkte und einen bestimmten Endpunkt hat. In Supply Chain Management werden Arbeitspläne basierend auf dem Typ der Struktur unterschieden. Die zwei Typen der Arbeitspläne sind einfache Arbeitspläne und Arbeitsplan-Netzwerke. In den Produktionssteuerungsparametern können Sie angeben, ob nur einfache Arbeitspläne verwendet werden können oder ob die komplexeren Arbeitsplan-Netzwerke verwendet werden können.
 
 ### <a name="simple-routes"></a>Einfache Arbeitspläne
 
@@ -51,7 +51,7 @@ Ein einfacher Arbeitsplan ist fortlaufend, und es ist nur einen Startpunkt für 
 
 [![Einfache Arbeitspläne](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
-Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktivieren, generiert Finance and Operations automatisch die Arbeitsgangnummern (10, 20, 30 usw.), wenn Sie den Arbeitsplan definieren.
+Wenn Sie nur einfache Arbeitspläne in den Produktionssteuerungsparametern aktivieren, generiert Supply Chain Management automatisch die Arbeitsgangnummern (10, 20, 30 usw.), wenn Sie den Arbeitsplan definieren.
 
 ### <a name="route-networks"></a>Arbeitsplan-Netzwerke
 
@@ -85,7 +85,7 @@ Jeder Arbeitsplan kann separat genehmigt oder widerrufen werden. Beachten Sie, d
 Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan genehmigt, können Sie elektronische Signaturen für Genehmigung des Arbeitsplans anfordern. Benutzer müssen anschließend ihre Identität bestätigen, indem sie [elektronische Signaturen](../../fin-and-ops/organization-administration/electronic-signature-overview.md) verwenden.
 
 ## <a name="operations"></a>Operations
-Ein Arbeitsgang ist ein Schritt im Produktionsprozess. In Finance and Operations besitzt jeder Arbeitsgang eine Kennung und eine einfache Beschreibung. Die folgenden Tabellen zeigt typische Beispiele für Arbeitsgänge einer Maschinenwerkstatt.
+Ein Arbeitsgang ist ein Schritt im Produktionsprozess. Jeder Arbeitsgang besitzt eine Kennung und eine einfache Beschreibung. Die folgenden Tabellen zeigt typische Beispiele für Arbeitsgänge einer Maschinenwerkstatt.
 
 | Arbeitsgang  | Beschreibung        |
 |------------|--------------------|
@@ -126,7 +126,7 @@ Arbeitsgangzuordnungen bietet viel Flexibilität, wenn Sie die Arbeitspläne def
 
 ### <a name="modifying-product-specific-routes"></a>Ändern der produktspezifischen Arbeitspläne
 
-Wenn Sie die **Arbeitsplan** Seite über die **Freigegebene Produkte** Seite öffnen, werden die Arbeitsplanversionen angezeigt, die dem ausgewählten freigegebenen Produkt zugeordnet sind. In diesem Zusammenhang zeigt Finance and Operations für jeden Arbeitsgang die betrieblichen Eigenschaften aus der Arbeitsgangrelation, die am besten zu der Arbeitsplanversion passen. Beachten Sie, dass die Liste der Arbeitsgänge die **Artikelcode** und **Arbeitsplancode** Eigenschaften aus der Arbeitsgangzuordnung enthält. Daher kann bestimmt werden, welche Arbeitsgangzuordnung angezeigt wird.  
+Wenn Sie die **Arbeitsplan** Seite über die **Freigegebene Produkte** Seite öffnen, werden die Arbeitsplanversionen angezeigt, die dem ausgewählten freigegebenen Produkt zugeordnet sind. In diesem Zusammenhang zeigt Supply Chain Management für jeden Arbeitsgang die betrieblichen Eigenschaften aus der Arbeitsgangrelation, die am besten zu der Arbeitsplanversion passen. Beachten Sie, dass die Liste der Arbeitsgänge die **Artikelcode** und **Arbeitsplancode** Eigenschaften aus der Arbeitsgangzuordnung enthält. Daher kann bestimmt werden, welche Arbeitsgangzuordnung angezeigt wird.  
 
 Auf der Seite **Arbeitsplan** können Sie die betrieblichen Eigenschaften des Arbeitsgangs, wie die Bearbeitungszeit oder die Kostenkategorien, ändern. Die Änderungen werden für die Arbeitsgangzuordnung gespeichert, die über den Arbeitsplan und das freigegebene Produkt festgelegt sind, auf die in die aktuelle Arbeitsplanversion verwiesen wird. Wenn die Arbeitsgangzuordnung, die angezeigt wird, nicht für den Arbeitsplan und das freigegebene Produkt festgelegt ist, erstellt das System eine Kopie der Arbeitsgangzuordnung. Die Kopie *ist* für den Arbeitsplan und das freigegebene Produkt spezifisch. Änderungen betreffen daher keine anderen Arbeitspläne oder freigegebene Produkte. Um zu prüfen, welche der Arbeitsgangzuordnung auf der **Arbeitsplan** Seite geändert wird, beachten Sie die **Artikelcode** und **Arbeitsplancode** Felder.  
 
@@ -149,9 +149,9 @@ Wenn Ihr Unternehmen Standardarbeitsgänge verwendet und die Arbeitsgangparamete
 
 ### <a name="applying-operation-relations"></a>Arbeitsgangzuordnungen anwenden
 
-In einigen Fällen muss Finance and Operations die betrieblichen Eigenschaften für einen Arbeitsgang finden. Wenn beispielsweise eine Bestellung erstellt wird, müssen die betrieblichen Eigenschaften einzelner Arbeitsgänge von Arbeitsgangzuordnungen dem Produktionsarbeitsplan kopiert werden. In solchen Fällen sucht Finance and Operations die relevanten Arbeitsgangzuordnungen von der bestimmtesten Kombination bis zu unbestimmtesten Kombination.  
+In einigen Fällen muss Supply Chain Management die betrieblichen Eigenschaften für einen Arbeitsgang finden. Wenn beispielsweise eine Bestellung erstellt wird, müssen die betrieblichen Eigenschaften einzelner Arbeitsgänge von Arbeitsgangzuordnungen dem Produktionsarbeitsplan kopiert werden. In solchen Fällen sucht Supply Chain Management die relevanten Arbeitsgangzuordnungen von der bestimmtesten Kombination bis zu unbestimmtesten Kombination.  
 
-Wenn Finance and Operations nach der für ein freigegebenes Produkt relevantesten Arbeitsgangrelation sucht, wird eine Arbeitsgangrelation, die der Artikelkennung des freigegebenen Produkts entspricht gegenüber einer Arbeitsgangrelation bevorzugt, die mit der Artikelgruppenkennung übereinstimmt. Eine Arbeitsgangzuordnung, die der Artikelgruppenkennung entspricht, wird gegenüber der Standardarbeitsgangzuordnung bevorzugt. Die Suchreihenfolge wird in der folgenden Tabelle veranschaulicht:
+Wenn Supply Chain Management nach der für ein freigegebenes Produkt relevantesten Arbeitsgangrelation sucht, wird eine Arbeitsgangrelation, die der Artikelkennung des freigegebenen Produkts entspricht gegenüber einer Arbeitsgangrelation bevorzugt, die mit der Artikelgruppenkennung übereinstimmt. Eine Arbeitsgangzuordnung, die der Artikelgruppenkennung entspricht, wird gegenüber der Standardarbeitsgangzuordnung bevorzugt. Die Suchreihenfolge wird in der folgenden Tabelle veranschaulicht:
 
 1.  **Artikelcode**=**Tabelle** und **Artikelrelation**=&lt;Artikelkennung&gt;
 2.  **Artikelcode**=**Gruppe** und **Artikelrelation**=&lt;Artikelgruppenkennung&gt;
@@ -198,7 +198,7 @@ Abhängig von Ihren Geschäftsanforderungen könnten Sie den Aufwand reduzieren,
 
 ### <a name="making-routes-independent-of-resources"></a>Arbeitsplan unabhängiger von Ressourcen gestalten
 
-In vielen Systemen müssen die betriebliche Ressource oder Ressourcengruppen, die einen Arbeitsgang ausführen sollen, in einem im Arbeitsplan angegeben werden. In Finance and Operations können Sie Bedingungen definieren, die eine betriebliche Ressource erfüllen muss, um für den Arbeitsgang in Frage zu kommen. Daher muss die betriebliche Ressource oder Ressourcengruppe, die verwendet werden soll, nicht festgelegt werden, bis der Vorgang tatsächlich geplant ist. Diese Funktion ist besonders nützlich, wenn Sie zahlreiche Arbeitskräfte oder Maschinen zu einer Gruppe zusammenfassen, die denselben Arbeitsgang ausführen können.  
+In vielen Systemen müssen die betriebliche Ressource oder Ressourcengruppen, die einen Arbeitsgang ausführen sollen, in einem im Arbeitsplan angegeben werden. In Supply Chain Management können Sie Bedingungen definieren, die eine betriebliche Ressource erfüllen muss, um für den Arbeitsgang in Frage zu kommen. Daher muss die betriebliche Ressource oder Ressourcengruppe, die verwendet werden soll, nicht festgelegt werden, bis der Vorgang tatsächlich geplant ist. Diese Funktion ist besonders nützlich, wenn Sie zahlreiche Arbeitskräfte oder Maschinen zu einer Gruppe zusammenfassen, die denselben Arbeitsgang ausführen können.  
 
 Geben Sie beispielsweise an, dass ein Arbeitsgang eine betriebliche Ressource vom Typ **Maschine** erfordert, die eine **Stanzkraft** von 20 Tonnen hat. Das Planungsmodul löst diese Anforderungen in eine betriebliche Ressource oder Ressourcengruppe auf, wenn der Arbeitsgang geplant wird. Da Sie nur Anforderungen angeben können, anstatt den Vorgang mit einer bestimmten Maschine zu binden, sind Sie hiermit viel mehr Flexibel. Darüber hinaus ist die Verwaltung einfacher, wenn Ressourcen verschoben werden, oder neue Ressourcen hinzugefügt werden.  
 

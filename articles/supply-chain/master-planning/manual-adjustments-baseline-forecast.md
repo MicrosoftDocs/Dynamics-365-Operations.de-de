@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7c7d1fcaaeef7a01b43886e4d69458dbd942439
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556874"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250713"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuelle Anpassungen an der Grundplanung
 
@@ -71,7 +71,7 @@ Auf der Seite **Bedarfsplanungsdetails** werden die folgenden Informationen in g
 **Hinweise:**
 
 -   Das Zuverlässigkeitsintervall, das im Abschnitt **Planung** der Seite angezeigt wird, stellt die Differenz zwischen der Obergrenze des Zuverlässigkeitsintervalls und der Untergrenze des Zuverlässigkeitsintervalls dar. Um die Werte für den oberen und unteren Grenzwert anzuzeigen, bewegen Sie die Maus über das Diagramm im Abschnitt **Historische(r) Bedarf und Planung, grafisch**.
--   Wenn Sie den Microsoft Azure Machine Learning-Dienst der Finance and Operations-Bedarfsplanung verwenden, können Sie die Zuverlässigkeitsstufe angeben, die die generierte Planung haben soll. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
+-   Wenn Sie den Microsoft Azure Machine Learning-Dienst der Bedarfsplanung verwenden, können Sie die Zuverlässigkeitsstufe angeben, die die generierte Planung haben soll. Eine Zuverlässigkeitsintervall besteht aus einem Wertebereich, der eine gute Einschätzung der Bedarfsplanung ermöglicht. Eine Zuverlässigkeitsstufe von 95 % bedeutet beispielsweise, dass die Bedarfsplanung mit einer Chance von 5 % aus dem Intervallbereich der Zuverlässigkeit fällt.
 
 Sie können manuelle Anpassungen an der Planung auf der Seite **Bedarfsplanungsdetails** vornehmen, indem Sie die Werte in der Zeile **Planung** im Abschnitt **Planung** ändern.
 

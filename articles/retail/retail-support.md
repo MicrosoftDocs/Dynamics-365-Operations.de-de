@@ -1,6 +1,6 @@
 ---
-title: Anfordern von Support zu Dynamics 365 for Retail
-description: Dieser Artikel erklärt, wie Sie Hilfe zu Microsoft Dynamics 365 for Retail erhalten
+title: Anfordern von Support zu Dynamics 365 Retail
+description: Dieser Artikel erklärt, wie Sie Hilfe zu Microsoft Dynamics 365 Retail erhalten.
 author: josaw1
 manager: AnnBe
 ms.date: 09/18/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: Retail
-ms.openlocfilehash: 280a8de4b3a1f2eafa39caac562dff7c74ee0971
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 225b39bb03fa3bbd0b3c3a24e4eb09a114d01904
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577843"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025005"
 ---
-# <a name="get-support-for-dynamics-365-for-retail"></a>Anfordern von Support zu Dynamics 365 for Retail
+# <a name="get-support-for-dynamics-365-retail"></a>Anfordern von Support zu Dynamics 365 Retail
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel erklärt, wie Sie Hilfe zu Dynamics 365 for Retail erhalten.
+Dieser Artikel erklärt, wie Sie Hilfe zu Dynamics 365 Retail erhalten
 
 ## <a name="contact-support"></a>Kundendienst kontaktieren
 
@@ -48,7 +48,7 @@ Um Unterstützung für Retail zu erhalten, verwenden Sie die Ressourcen in der f
 <tbody>
 <tr>
 <td>Die Community fragen.</td>
-<td>Gehen Sie zur Communityseite <a href="https://community.dynamics.com/365/retail">Dynamics 365 for Retail</a>, um Hilfe auf Ihre Fragen von der Dynamics-Community zu erhalten.</td>
+<td>Gehen Sie zur Communityseite <a href="https://community.dynamics.com/365/retail">Dynamics 365 Retail</a>, um Hilfe auf Ihre Fragen von der Dynamics-Community zu erhalten.</td>
 </tr>
 <tr>
 <td>Verwenden Sie das Problemsuchetool.</td>
@@ -74,7 +74,7 @@ Um Unterstützung für Retail zu erhalten, verwenden Sie die Ressourcen in der f
 Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf CustomerSource, E-Learning, Suche, Wissensdatenbank, Dateidownload und Seiten- oder Systemfehler gehen Sie zu <a href="https://mbs2.microsoft.com/members/VoiceSupport/VoiceSupportInternal.aspx">Website-Support</a>.</td>
 </tr>
 <tr>
-<td>Hilfe zu Fragen mit Lizenzen für Retail oder Finance and Operations.</td>
+<td>Erhalten Sie Hilfe bei Fragen zur Talent-Lizenzierung.</td>
 <td>Kontaktieren Sie Ihren Partner, Großkonten-Wiederverkäufer (LAR) oder einen anderen Microsoft-Vertreter.</td>
 </tr>
 <tr>

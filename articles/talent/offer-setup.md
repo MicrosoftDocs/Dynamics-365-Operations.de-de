@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Angebotsverwaltung
-description: In diesem Thema wird beschrieben, wie Angebote in Talent eingerichtet werden.
+title: Angebotsverwaltung einrichten
+description: In diesem Thema wird beschrieben, wie Angebote in Microsoft Dynamics 365 Talent eingerichtet werden.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/04/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa0e5d30c06db16e105631e492af022acfcfd66
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 706766ba5133af03d00df99dba1c2a7b0405cd86
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518077"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010843"
 ---
-# <a name="set-up-offer-management"></a>Einrichten der Angebotsverwaltung 
+# <a name="set-up-offer-management"></a>Angebotsverwaltung einrichten 
 
 [!include [banner](includes/banner.md)]
 
-Wenn ein Kandidat auf die Angebotsphase in Dynamics 365 for Talent: Attract verschoben wird, müssen Sie sicherstellen, dass die Angebote für den Kandidaten schnell nach Bedarf erstellt, genehmigt und dem Kandidaten gesendet werden können. Da die meisten Angebote standardmäßig sind, können Sie aus wiederverwendbaren Vorlagen erstellt werden. In Attract werden alle Angebote in ein Angebotspaket verschoben, das eine Zusammenstellung eines oder mehrerer Angebotsunterlagen ist. 
+Wenn ein Kandidat auf die Angebotsphase in Dynamics 365 Talent: Attract verschoben wird, müssen Sie sicherstellen, dass die Angebote für den Kandidaten schnell nach Bedarf erstellt, genehmigt und dem Kandidaten gesendet werden können. Da die meisten Angebote standardmäßig sind, können Sie aus wiederverwendbaren Vorlagen erstellt werden. In Attract werden alle Angebote in ein Angebotspaket verschoben, das eine Zusammenstellung eines oder mehrerer Angebotsunterlagen ist. 
 
 Dieses Thema führt alle Schritte auf, denen ein Attract-Administrator folgen würde, um verschiedene Angebotpaketvorlagen als Teil der Angebotsverwaltung einzurichten in Attract. Benutzer mit Nicht-Administrator-Rollen haben keinen Zugriff zu diesen Funktionen.
 

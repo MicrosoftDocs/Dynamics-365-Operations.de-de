@@ -18,19 +18,19 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: cf81823de46da9a834f0214896b9e634989cac0e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9f85b1d1f0b1c2378dd3f278640d984c31923c35
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569775"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017873"
 ---
 # <a name="import-vendor-catalogs"></a>Lieferantenkataloge importieren
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Lieferantenkatalogimport
 
-In Microsoft Dynamics 365 for Finance and Operations können Einkäufer Kataloge erstellen und verwalten, die Unternehmensmitarbeiter beim Bestellen von Artikeln und Dienstleistungen für den internen Gebrauch verwenden können. Beim Erstellen eines Beschaffungskatalogs können Sie die Artikel und Dienstleistungen hinzufügen, die für Mitarbeiter verfügbar sein sollen, indem Sie entweder die Lieferantenkatalogdaten importieren oder die Lieferantenkatalogdaten manuell dem Produktmaster hinzufügen. 
+In Dynamics 365 Supply Chain Management können Einkäufer Kataloge erstellen und verwalten, die Unternehmensmitarbeiter beim Bestellen von Artikeln und Dienstleistungen für den internen Gebrauch verwenden können. Beim Erstellen eines Beschaffungskatalogs können Sie die Artikel und Dienstleistungen hinzufügen, die für Mitarbeiter verfügbar sein sollen, indem Sie entweder die Lieferantenkatalogdaten importieren oder die Lieferantenkatalogdaten manuell dem Produktmaster hinzufügen. 
 
 Sie können Katalogdaten hochladen, die von einem Kreditor vom Kunden Microsoft Dynamics 365 übermittelt werden.
 
@@ -52,7 +52,7 @@ Führen Sie zum Importieren der Lieferantenkatalogdaten die folgenden Aufgaben a
 
 6.  Laden Sie die CMR-Datei hoch.
 
-7.  Prüfen Sie die Produkte im Lieferantenkatalog, um sie entweder zu genehmigen oder abzulehnen. Die Produkte werden automatisch den Beschaffungskategorien in Dynamics 365 for Finance and Operationszugeordnet. 
+7.  Prüfen Sie die Produkte im Lieferantenkatalog, um sie entweder zu genehmigen oder abzulehnen. Die Produkte werden automatisch den Beschaffungskategorien zugeordnet. 
     
 Genehmigte Produkte werden dem Produktmaster hinzugefügt und für die ausgewählten juristischen Personen freigegeben. Nur genehmigte Produkte können dem Beschaffungskatalog hinzugefügt werden.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0369c1a4bbc893a86cf14bd59a2d28a7bbca15c
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fe8c4bc8f2efb06de4cb6fd727df93ba1a5d14bf
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1554643"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251341"
 ---
 # <a name="price-simulation"></a>Preissimulation
 
@@ -51,7 +51,7 @@ Gehen Sie beim Ausführen von Preissimulationen für Angebote mit Rabatten sorgf
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Rabatttypen in Handelsvereinbarungen
 
-Für die Handelsvereinbarungen in Microsoft Dynamics 365 for Finance and Operations stehen vier verschiedene Typen von Preisrabatten zur Auswahl. Diese Rabatte können für unterschiedliche Artikel, Debitoren oder Preisgruppen festgelegt sowie mithilfe eines Datums beschränkt werden. Zur Vermeidung von Berechnungsfehlern müssen beim Ausführen von Preissimulationen Handelsvereinbarungen berücksichtigt werden. Folgende vier Arten von Rabatten stehen in Handelsvereinbarungen zur Verfügung:
+Für die Handelsvereinbarungen in Supply Chain Management stehen vier verschiedene Typen von Preisrabatten zur Auswahl. Diese Rabatte können für unterschiedliche Artikel, Debitoren oder Preisgruppen festgelegt sowie mithilfe eines Datums beschränkt werden. Zur Vermeidung von Berechnungsfehlern müssen beim Ausführen von Preissimulationen Handelsvereinbarungen berücksichtigt werden. Folgende vier Arten von Rabatten stehen in Handelsvereinbarungen zur Verfügung:
 
 -   **Verkaufspreis** – Für Artikel können separate Verkaufspreise angegeben werden. Der korrekte Artikelverkaufspreis wird beim Erstellen der Angebotspositionen vom Programm gesucht und an die Angebotspositionen übertragen. Das bedeutet, dass die Preissimulation durch eine Handelsvereinbarung mit diesem Rabatttyp nicht beeinflusst wird. Der Verkaufspreis, der in der Angebotsposition verwendet wird, spiegelt die Handelsvereinbarung wider.
 -   **Positionsrabatt** – Es wird ein besonderer Artikelrabatt angegeben, der von der bestellten Menge abhängt. Die Positionsbeträge werden üblicherweise um den Positionsrabatt verringert, bevor eine Preissimulation ausgeführt wird. Das bedeutet, dass die Preissimulation durch eine Handelsvereinbarung mit diesem Rabatttyp beeinflusst wird.
