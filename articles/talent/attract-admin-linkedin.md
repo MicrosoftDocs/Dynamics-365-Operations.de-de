@@ -1,6 +1,6 @@
 ---
-title: Einrichten der Integration mit LinkedIn für AMicrosoft Dynamics 365 for Talent - Attract
-description: In diesem Thema wird erläutert, wie LinkedIn-Integration für Microsoft Dynamics 365 for Talent - Attract konfiguriert, sodass Sie einfach Stellen in LinkedIn von Attract veröffentlichen könne, sodass Ihre Einstellungsmanager Ihre Informationen mit dem LinkedIn-Profil eines Kandidaten synchronisieren können.
+title: 'Einrichten der Integration mit LinkedIn für AMicrosoft Dynamics 365 Talent: Attract'
+description: 'In diesem Thema wird erläutert, wie LinkedIn-Integration für Microsoft Dynamics 365 Talent: Attract konfiguriert, sodass Sie einfach Stellen in LinkedIn von Attract veröffentlichen könne, sodass Ihre Einstellungsmanager Ihre Informationen mit dem LinkedIn-Profil eines Kandidaten synchronisieren können.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 07/08/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 8e42ec7d0bb74089b4e915b5a30277401e694cf9
-ms.sourcegitcommit: c62756cb04549b2ff5de9b93d497e964a340335a
+ms.openlocfilehash: 6b86cafdf364f2de051f3d8ceab7413c2c13c3a5
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "1756221"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009968"
 ---
 # <a name="set-up-linkedin-integration"></a>LinkedIn-Integration einrichten
 
 [!include[banner](../includes/banner.md)]
 
-Helfen Sie Einstellungsmanagern und Vorgesetzten, die besten Talente anzuziehen, indem Sie LinkedIn-Integration mit Microsoft Dynamics 365 for Talent: Attract konfigurieren. Mit Attract können Sie Stellen direkt in LinkedIn veröffentlichen, dem größten professionellen Online Netzwerk,
+Helfen Sie Einstellungsmanagern und Vorgesetzten, die besten Talente anzuziehen, indem Sie LinkedIn-Integration mit Microsoft Dynamics 365 Talent: Attract  konfigurieren. Mit Attract können Sie Stellen direkt in LinkedIn veröffentlichen, dem größten professionellen Online Netzwerk,
 
 Stellen, die Sie in LinkedIn über Attract veröffentlichen, sind eingeschränkte Listen und werden ohne Zusatzkosten für Ihr Unternehmen bereitgestellt. Diese Listen sind nur über die LinkedIn-Software-Partner wie Attract verfügbar. Sie werden nicht im Bereich **Karrieren** auf Ihrer LinkedIn-Seite des Unternehmens angezeigt, da hier nur kostenpflichtige Veröffentlichungen angezeigt werden. Sie werden aber angezeigt, wenn mögliche Kandidaten alle verfügbaren Stellen ansehen. Begrenzte Listen werden auch in LinkedIn-Jobsuchen angezeigt.
 

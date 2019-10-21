@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie App-Feldnamen in der Warehousing-App
-description: In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Finance and Operations definiert und konfiguriert werden.
+description: In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,24 +19,24 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0162014189ed6bffb17e6718a67eecfd55c334a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1548928"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251084"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurieren Sie App-Feldnamen in der Warehousing-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Finance and Operations definiert und konfiguriert werden. 
+In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
 
-**Hinweis:** Dieser Artikel gilt für Funktionen im Modul "Lagerortverwaltung". Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Finance and Operations - Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Finance and Operations definiert und konfiguriert werden. Ausführliche Informationen dazu, wie die Verbindung zu Finance and Operations - Warehousing konfiguriert wird, finden Sie im Lernprogramm [Installieren und Konfigurieren von Finance and Operations - Warehousing](install-configure-warehousing-app.md).
+**Hinweis:** Dieser Artikel gilt für Funktionen im Modul "Lagerortverwaltung". Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zu Warehousing konfiguriert wird, finden Sie im Lernprogramm [Installieren und Konfigurieren von Warehousing](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 
-Wenn Sie Arbeitsgänge für Finance and Operations - Warehousing auf Ihrem mobilen Gerät nutzen, können Sie auf der Seite **Lagerort-App-Feldnamen** konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen. In einem neuen Unternehmen in Finance and Operations wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu, und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
+Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können Sie auf der Seite **Lagerort-App-Feldnamen** konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen. In einem neuen Unternehmen wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu, und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
 
 <table>
 <colgroup>
@@ -69,7 +69,7 @@ Wenn Sie Arbeitsgänge für Finance and Operations - Warehousing auf Ihrem mobil
 
 ## <a name="configure-warehouse-app-field-priority"></a>Feldpriorität in Lagerortanwendung konfigurieren
 
-Auf der Seite L **agerort-App-Feldpriorität** können Sie Feldnamen anderen Prioritätsgruppen zuweisen. Auf diese Weise ist es möglich, zu entscheiden, welche Informationen auf der Hauptaufgabenseite angezeigt werden sollen, wenn Lagerarbeiter Aufgaben mithilfe der App ausführen. We nn Sie auf **Standardeinstellungen erstellen** klicken, wird ein Standardsatz von Prioritätsgruppen generiert. Es ist möglich, beliebig viele Prioritätsgruppen zu erstellen, aber es werden nur drei Prioritätengruppen auf der Aufgabenseite angezeigt. Wenn Finance and Operations Metadaten an die App sendet, weist diese jedem der Felder eine relative Priorität abhängig von seiner Prioritätsstufe zu, und die App zeigt die ersten drei Prioritätengruppen an, die in den Metadaten auf der Aufgabenseite enthalten sind. Der Rest der überfließenden Metadaten wird auf einer sekundären Detailseite angezeigt. Die folgende Tabelle enthält ein Beispiel der fünf Prioritätengruppen.
+Auf der Seite L **agerort-App-Feldpriorität** können Sie Feldnamen anderen Prioritätsgruppen zuweisen. Auf diese Weise ist es möglich, zu entscheiden, welche Informationen auf der Hauptaufgabenseite angezeigt werden sollen, wenn Lagerarbeiter Aufgaben mithilfe der App ausführen. We nn Sie auf **Standardeinstellungen erstellen** klicken, wird ein Standardsatz von Prioritätsgruppen generiert. Es ist möglich, beliebig viele Prioritätsgruppen zu erstellen, aber es werden nur drei Prioritätengruppen auf der Aufgabenseite angezeigt. Wenn das System Metadaten an die App sendet, weist diese jedem der Felder eine relative Priorität abhängig von seiner Prioritätsstufe zu, und die App zeigt die ersten drei Prioritätengruppen an, die in den Metadaten auf der Aufgabenseite enthalten sind. Der Rest der überfließenden Metadaten wird auf einer sekundären Detailseite angezeigt. Die folgende Tabelle enthält ein Beispiel der fünf Prioritätengruppen.
 
 <table>
 <colgroup>
@@ -143,6 +143,3 @@ Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufg
 --------
 
 [Einrichten und Konfigurieren von Microsoft Dynamics 365 for Finance and Operations – Lagerorte](install-configure-warehousing-app.md)
-
-
-

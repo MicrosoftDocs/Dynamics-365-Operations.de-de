@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b7c36553c9ad5bf4b061285d617be85ce77d0fcd
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: e6d4e9a3ac5635e292b20eba60fe4f010562fdba
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552646"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250094"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
@@ -32,7 +32,7 @@ ms.locfileid: "1552646"
 
 [!include [retail name](../includes/retail-name.md)]
 
-Standardauftragseinstellungen in Microsoft Dynamics 365 for Finance and Operations definieren den Standort und Lagerort, aus dem Artikel bezogen oder an dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
+Standardauftragseinstellungen in Dynamics 365 Supply Chain Management definieren den Standort und Lagerort, aus dem Artikel bezogen oder an dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
 
 Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, wechseln Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; **wählen Sie ein freigegebenes Produkt aus** &gt; im Aktionsbereich **Plan** oder **Bestand verwalten**&gt;  **Auftragseinstellungen** &gt; **Standardauftragseinstellungen**.
 
@@ -74,7 +74,7 @@ Die Standardlagerauftragseinstellungen gelten auch beim Erstellen von:
 -   Geplante Produktionsaufträge
 
 ## <a name="full-definition-of-a-released-product"></a>Vollständige Definition eines freigegebenen Produkts
-Wenn Sie eine Buchung erstellen, müssen Sie die vollständigen Definition eines gemeinsamen Produkts auf der Position angeben, bevor Finance and Operations versucht, die Standardauftragseinstellungen zu identifizieren. Die vollständige Definition des freigegebenen Produkts bedeutet, dass alle aktiven Artikelnummer und Produktdimensionen, beispielsweise Konfiguration, Größe, Farbe, Stil und für die Buchung angegeben werden. Wenn Sie beispielsweise manuell eine Bestellposition für eine freigegebene Produktvariante erstellen, müssen Sie alle erforderlichen Produktdimensionen angeben, bevor der Standort, Lagerort, die Menge sowie die Lieferzeit standardmäßig in der Auftragsposition angezeigt werden. 
+Wenn Sie eine Buchung erstellen, müssen Sie die vollständige Definition eines veröffentlichten Produkts auf der Position angeben, damit Supply Chain Management versucht, die Standardauftragseinstellungen zu identifizieren. Die vollständige Definition des freigegebenen Produkts bedeutet, dass alle aktiven Artikelnummer und Produktdimensionen, beispielsweise Konfiguration, Größe, Farbe, Stil und für die Buchung angegeben werden. Wenn Sie beispielsweise manuell eine Bestellposition für eine freigegebene Produktvariante erstellen, müssen Sie alle erforderlichen Produktdimensionen angeben, bevor der Standort, Lagerort, die Menge sowie die Lieferzeit standardmäßig in der Auftragsposition angezeigt werden. 
 
 Nicht alle Standardauftrags-Einstellungsparameter werden angewendet, wenn Auftrags- oder Erfassungspositionen erstellt werden. Mengen und Lieferzeiten werden nur standardmäßig angezeigt, sofern zutreffend. Wenn beispielsweise eine Erfassungsposition gezählt wird, werden nur der Standort und der Lagerort standardmäßig angezeigt, wenn die Position erstellt wird. Es wird keine Standardmenge ober Überprüfung auf Mehrfachen und Minimums ausgeführt, wenn die Position erstellt oder die Erfassung gebucht wird. 
 
@@ -97,7 +97,7 @@ Für eindeutig identifizierbare, freigegebene Produkte können Sie allgemeine Au
 
 Um standortspezifische Auftragseinstellungen zu erstellen, klicken Sie auf **Neu**. Füllen Sie in der **Detailansicht** den Standort im Feld **Standort** unter &gt; **Einstellungen gültig für** aus. Füllen Sie in der **Rasteransicht** den Standort in der Spalte **Standort** aus. Die neue Regel ruft automatisch einen neuen Rangwert ab, der über null liegt. Sie so viele standortspezifische Regeln wie erforderlich erstellen und Sie können alle standortspezifischen Regeln demselben Rang zuweisen, um zu modellieren, dass sie gleich wichtig sind. 
 
-Wenn Sie sich in der **Detailansicht** befinden, können Sie die Übersicht der Regeln nicht erhalten, die für den Artikel erstellt wurden. Schalten Sie die Schaltfläche **Liste anzeigen/ausblenden** ein und aus, um Übersichtsinformationen anzuzeigen. Wenn eine Auftragsposition eines beliebigen Typs erstellt wird und für sie kein Standort bereitgestellt ist, sucht Finance and Operations nach einer Regel, bei der kein Standort angegeben ist. Dies kann dazu beitragen, einen Standardstandort in der Auftragsposition zu verwenden. Dieser Standort wird dann verwendet, um nach einer standortspezifischen Regel zu suchen, bei der möglicherweise ein Standardlagerort festgelegt wurde. Dieser Lagerort wird auf die Auftragsposition angewendet.
+Wenn Sie sich in der **Detailansicht** befinden, können Sie die Übersicht der Regeln nicht erhalten, die für den Artikel erstellt wurden. Schalten Sie die Schaltfläche **Liste anzeigen/ausblenden** ein und aus, um Übersichtsinformationen anzuzeigen. Wenn eine Auftragsposition eines beliebigen Typs erstellt wird und für sie kein Standort bereitgestellt ist, sucht Supply Chain Management nach einer Regel, bei der kein Standort angegeben ist. Dies kann dazu beitragen, einen Standardstandort in der Auftragsposition zu verwenden. Dieser Standort wird dann verwendet, um nach einer standortspezifischen Regel zu suchen, bei der möglicherweise ein Standardlagerort festgelegt wurde. Dieser Lagerort wird auf die Auftragsposition angewendet.
 
 ### <a name="specific-order-settings-for-product-dimension"></a>Spezifische Auftragseinstellungen für Produktdimension
 
@@ -134,7 +134,7 @@ Sie können die folgenden standardmäßigen Auftragseinstellungsregeln erstellen
 
 Die zwei Regeln für die Beendigung der alten Überarbeitungen haben dieselbe Bewertung, was bedeutet, dass sie gleich wichtig sind. Alle beide haben einen höheren Rang als die Regel für Konfiguration C1, was bedeutet, dass sie den Vorrang vor der Regel für Konfiguration C1 haben. 
 
-In diesem Beispiel wird die Anforderung für den Rang erklärt. Wenn eine Bestellung für Konfiguration C1 und Überprüfung R2 erstellt wird, wären bei fehlendem Rang die beiden Regeln, die für R2 und C1 definiert werden, mehrdeutig. Um die Mehrdeutigkeit aufzuheben, durchsucht Finance and Operations die Regeln in absteigender Rangreihenfolge und wendet die erste anwendbare Regel an. Im aktuellen Beispiel, wenn eine Bestellposition für Konfiguration C1 und Überarbeitung R2 erstellt wird, erhält der Benutzer eine Warnmeldung, dass der Artikel gesperrt ist und dass dies durch den Überarbeitungswert verursacht wird. Wenn die Regel für die Konfiguration größer wäre, als diejenige für die Überarbeitung, dann wäre die Erstellung einer Bestellposition für Konfiguration C1 und Überarbeitung R2 erfolgreich gewesen, und der Benutzer hätte keine Meldung "Artikel gesperrt" erhalten. 
+In diesem Beispiel wird die Anforderung für den Rang erklärt. Wenn eine Bestellung für Konfiguration C1 und Überprüfung R2 erstellt wird, wären bei fehlendem Rang die beiden Regeln, die für R2 und C1 definiert werden, mehrdeutig. Um die Mehrdeutigkeit aufzuheben, durchsucht Supply Chain Management die Regeln in absteigender Rangreihenfolge und wendet die erste anwendbare Regel an. Im aktuellen Beispiel, wenn eine Bestellposition für Konfiguration C1 und Überarbeitung R2 erstellt wird, erhält der Benutzer eine Warnmeldung, dass der Artikel gesperrt ist und dass dies durch den Überarbeitungswert verursacht wird. Wenn die Regel für die Konfiguration größer wäre, als diejenige für die Überarbeitung, dann wäre die Erstellung einer Bestellposition für Konfiguration C1 und Überarbeitung R2 erfolgreich gewesen, und der Benutzer hätte keine Meldung "Artikel gesperrt" erhalten. 
 
 Berücksichtigen Sie die folgenden standardmäßigen Auftragseinstellungsregeln.
 

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c9cd9197f395b69f65137a59392a4d83d692f6fa
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 6939ed56944ecafb29c1cadd2744b5746b19cb46
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572126"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023363"
 ---
 # <a name="info-codes-and-info-code-groups"></a>Infocodes und Infocodegruppen
 
@@ -42,7 +42,7 @@ Infocodes bieten eine Methode, um Daten an einem Point-of-Sale (POS) Register zu
 
 ## <a name="info-codes-group"></a>Infocodegruppe
 
-In Dynamics 365 for Retail können Sie Gruppen von Infocodes erstellen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
+In Retail können Sie Gruppen von Infocodes erstellen. Infocodegruppen fügen Flexibilität hinzu, indem Sie Ihnen ermöglichen, weniger Infocodes zu definieren und sie dann auf vielseitigere Arten zu verwenden. Infocodes können wie im Folgenden beschrieben verwendet werden:
 
 - Definieren Sie weniger Infocodes und verwenden Sie diese leicht erneut. Infocodes, die in den Infocodegruppen enthalten sind, besitzen keine vordefinierten Abhängigkeiten von anderen Infocodes. Sie können den gleichen Infocode in mehreren Infocodegruppen einfügen und dann Priorisierung verwenden, um die gleichen Infocodes in der Reihenfolge darzustellen, der in einem bestimmten Fall sinnvoll ist.
 - Verknüpfen Sie Infocodes so mit anderen Infocodes oder Infocodegruppen, um Informationen über ein Produkt oder eine Transaktion zu sammeln, ohne einen separaten Infocode oder verknüpften Infocode für jedes Szenario zu definieren.

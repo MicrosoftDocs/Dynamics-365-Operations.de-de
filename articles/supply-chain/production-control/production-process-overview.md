@@ -3,7 +3,7 @@ title: Produktionsprozessübersicht
 description: Dieser Artikel enthält eine Übersicht des Produktionsprozesse. Er beschreibt die verschiedenen Produktionsaufträge, Chargenaufträgen und Kanbans, von der Auftragserstellung bis zum Schließen der Finanzperiode.
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd529afa5d8117e01784ed267709e1ac8c43290d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5b586a02d79fbbee698f32ab2ace3f86e7262fa7
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546662"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250016"
 ---
 # <a name="production-process-overview"></a>Produktionsprozessübersicht
 
@@ -36,12 +36,12 @@ Die Produktion von Produkten, ein Prozess, der auch als Produktionslebenszyklus 
 
 Das Modul **Produktionssteuerung** wird mit anderen Modulen, wie **Produktinformationsverwaltung**, **Lagerverwaltung**, **Hauptbuch**, **Lagerortverwaltung**, **Projektverrechnung** und **Organisationsverwaltung** verknüpft. Diese Integration ermöglicht die reibungslose Weiterleitung von Informationen, die zum Fertigstellen der Artikelfertigung erforderlich sind.  
 
-Der Produktionsprozess wird in der Regel von den Kostenrechnungs- und Lagerbewertungsmethoden beeinflusst, die für einen bestimmten Produktionsprozess ausgewählt werden. Finance and Operations unterstützt sowohl die Methode für tatsächliche Kosten (First in, First out \[FIFO\]; Last in, First out \[LIFO\]; sich verschiebender Durchschnitt; sowie periodisch gewichteter Durchschnitt) als auch die Methode für Standardkosten. Lean Manufacturing wird auf der Grundlage des Prinzips der Nachkalkulation für Produktionskosten implementiert.  
+Der Produktionsprozess wird in der Regel von den Kostenrechnungs- und Lagerbewertungsmethoden beeinflusst, die für einen bestimmten Produktionsprozess ausgewählt werden. Supply Chain Management unterstützt sowohl die Methode für tatsächliche Kosten (First in, First out \[FIFO\]; Last in, First out \[LIFO\]; sich verschiebender Durchschnitt; sowie periodisch gewichteter Durchschnitt) als auch die Methode für Standardkosten. Lean Manufacturing wird auf der Grundlage des Prinzips der Nachkalkulation für Produktionskosten implementiert.  
 
 Die Auswahl der Kostenmessungsmethoden definiert auch die Anforderungen für die Berichterstellung zum Material- und Ressourcenverbrauch während des Produktionsprozesses. Normalerweise erfordern Methoden zu tatsächlichen Kosten eine genaue Berichterstellung auf Einzelvorgangsebene. Periodische Nachkalkulationsmethoden lassen hingegen eine weniger präzise Berichterstellung zum Material- und Ressourcenverbrauch zu.
 
 ## <a name="mixed-mode-manufacturing"></a>Fertigung im Mischbetrieb
-Verschiedene Produkte und Produktionstopologien erfordern die Anwendung von unterschiedlichen Auftragstypen. Finance and Operations kann die verschiedenen Auftragstypen in einem gemischten Modus übernehmen. In anderen Worten können alle anderen Auftragstypen während des Ende-zu-Ende-Prozesses der Herstellung eines fertigen Produkts auftreten.
+Verschiedene Produkte und Produktionstopologien erfordern die Anwendung von unterschiedlichen Auftragstypen. Supply Chain Management kann die verschiedenen Auftragstypen in einem gemischten Modus übernehmen. In anderen Worten können alle anderen Auftragstypen während des Ende-zu-Ende-Prozesses der Herstellung eines fertigen Produkts auftreten.
 
 -   **Produktionsauftrag** – Dies ist der klassische Auftragstyp, um ein bestimmtes Produkt oder Produktvariante in einer bestimmten Menge an einem bestimmten Datum zu produzieren. Produktionsaufträge basieren auf Stücklisten und Arbeitsplänen.
 -   **Chargenauftrag** – Dieser Auftragstyp wird für verarbeitende Industrien und diskrete Prozesse verwendet, bei denen die Herstellungsumwandlung auf einer Formel basiert, oder wobei die Co-Produkte und Nebenprodukte Endprodukte sein können, entweder zusätzlich zum oder statt des Hauptprodukts. Chargenauftrage verwenden Stücklisten und Arbeitspläne vom Typ **Formel**.

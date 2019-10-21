@@ -1,6 +1,6 @@
 ---
 title: Zwischen Retail Modern POS (MPOS) und Cloud POS wählen
-description: In diesem Thema werden die wesentlichen Unterschiede zwischen Retail Modern POS und Cloud POS erklärt. Außerdem werden verschiedene Faktoren beschrieben, die Einzelhändler, die Microsoft Dynamics 365 for Retail implementieren, bedenken müssen, um die beste Wahl für ihre Anforderungen zu treffen.
+description: In diesem Thema werden die wesentlichen Unterschiede zwischen Retail Modern POS und Cloud POS erklärt. Außerdem werden verschiedene Faktoren beschrieben, die Einzelhändler, die Dynamics 365 Retail implementieren, bedenken müssen, um die beste Wahl für ihre Anforderungen zu treffen.
 author: jblucher
 manager: AnnBe
 ms.date: 10/12/2017
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0b137a21a610a8bffc10b03067b429995e8e0662
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 69cf6d2b7a9bb09a848f2a0c870f5e7e59c61e91
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557013"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025908"
 ---
 # <a name="choose-between-retail-modern-pos-mpos-and-cloud-pos"></a>Zwischen Retail Modern POS (MPOS) und Cloud POS wählen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema gibt Implementierern zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Microsoft Dynamics 365 for Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
+Dieses Thema gibt Implementierern zusätzliche Hintergrundinformationen, Tipps und Orientierungshilfe für Faktoren, die sie berücksichtigen sollten, wenn sie Dynamics 365 Retail bereitstellen. Indem diese Anleitung überprüft und befolgt wird als Teil des Bereitstellungsprozesses, können Implementierer Abgänge vermeiden, die möglicherweise die Zufriedenheit oder Leistung der Benutzer beeinträchtigt hat.
 
 ## <a name="insights"></a>Einblicke
 
@@ -59,7 +59,7 @@ Obwohl MPOS und CPOS von der Komplexität identisch sind, gibt es mehrere wichti
 
 MPOS auf einem Windows-, iOS- oder Android-Gerät ist eine Anwendung, die auf dieses Gerät verpackt, eingerichtet und gewartet wird.
 
-- **Fenster** – Die MPOS für Windows-Anwendung enthält den gesamten Anwendungscode und die eingebette Handelsausführungszeit (CRT). 
+- **Windows** – Die MPOS für Windows-Anwendung enthält den gesamten Anwendungscode und die eingebette Commerce Runtime (CRT). 
 - **iOS/Android** – Auf diesen Plattformen dient die Anwendung als Host für den CPOS-Anwendungscode. Das bedeutet, der Anwendungscode stammt von dem CPOS-Server auf Microsoft Azure oder der Retail Store Scale Unit (RSSU). Weitere Informationen finden Sie unter [Retail Store Scale Unit-Überblick](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
@@ -78,7 +78,7 @@ Neben einer Plattform und einem Formularfaktor müssen Einzelhändler eine Berei
 
 #### <a name="retail-server"></a>Retail Server
 
-Der Retail Server ist eine Komponente, die das CRT hostet. Das gesamte CRT enthält die Geschäftslogik, die vom POS verwendet wird und es bietet Zugriff auf die Kanaldatenbank. Sobald sie online ist, nutzen alle POS-Kunden im Shop den Retail Server. Die Retail Server kann entweder in der Cloud oder im Shop RSSU bereitgestellt werden.
+Der Retail-Server ist eine Komponente, die das CRT hostet. Das gesamte CRT enthält die Geschäftslogik, die vom POS verwendet wird und es bietet Zugriff auf die Kanaldatenbank. Sobald sie online ist, nutzen alle POS-Kunden im Shop den Retail Server. Die Retail Server kann entweder in der Cloud oder im Shop RSSU bereitgestellt werden.
 
 #### <a name="offline-mode"></a>Offlinemodus
 

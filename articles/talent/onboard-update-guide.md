@@ -1,6 +1,6 @@
 ---
-title: Onboarding Anleitungen aktualisieren in Dynamics 365 for Talent - Onboard
-description: In diesem Thema wird erläutert, wie Onboarding Anleitungen in Microsoft Dynamics 365 for Talent - Onboard aktualisiert und wie Änderungen an den vorhandenen Anleitungen vorgenommen werden.
+title: Onboarding Anleitungen aktualisieren in Dynamics 365 Talent - Onboard
+description: In diesem Thema wird erläutert, wie Onboarding Anleitungen in Microsoft Dynamics 365 Talent - Onboard aktualisiert und wie Änderungen an den vorhandenen Anleitungen vorgenommen werden.
 author: andreabichsel
 manager: ''
 ms.date: 06/21/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-21
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d2be450685724510db2f0fd2af8545f8f40278e7
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: 6175061456a03228043ea13767845cf4b54d6b2e
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731484"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010728"
 ---
-# <a name="update-onboarding-guides-in-dynamics-365-for-talent-onboard"></a>Onboarding Anleitungen aktualisieren in Dynamics 365 for Talent: Onboard
+# <a name="update-onboarding-guides"></a>Onboarding Anleitungen aktualisieren
 
 [!include [banner](includes/banner.md)]
 
-Wenn Sie Änderungen an Onboarding Anleitungen vornehmen in Microsoft Dynamics 365 for Talent: Onboard, können sie aktualisiert werden und die Änderungen vornehmen, selbst wenn die Anleitungen bereits übermittelt wurden. Sie haben zwei Optionen zum Aktualisieren einer Onboarding Anleitung:
+Wenn Sie Änderungen an Onboarding Anleitungen vornehmen in Microsoft Dynamics 365 Talent: Onboard, können sie aktualisiert werden und die Änderungen vornehmen, selbst wenn die Anleitungen bereits übermittelt wurden. Sie haben zwei Optionen zum Aktualisieren einer Onboarding Anleitung:
 
 - Bearbeiten Sie die Onboarding Anleitung direkt, und speichern Sie die Änderungen.
 - Bearbeiten Sie die Onboarding Vorlage, und aktualisieren Sie dann die Änderungen per Push auf allen Onboarding Anleitungen, die daraus erstellt wurden.

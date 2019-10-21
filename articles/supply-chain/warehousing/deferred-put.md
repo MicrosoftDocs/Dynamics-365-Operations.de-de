@@ -1,6 +1,6 @@
 ---
 title: Verzögerte Verarbeitung der Lagerarbeit
-description: In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Einlagerungsvorgängen in Microsoft Dynamics 365 for Finance and Operations verfügbar machen.
+description: In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Einlagerungsvorgängen in Dynamics 365 Supply Chain Management verfügbar machen.
 author: josaw1
 manager: AnnBe
 ms.date: 06/17/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4905084f9bc28e55c307921280733c6acb80db86
-ms.sourcegitcommit: 299e20b59ebefa584ed46a13da3f1a7ff709e43c
+ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "1863585"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026920"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Verzögerte Verarbeitung der Lagerarbeit
 
@@ -29,7 +29,8 @@ ms.locfileid: "1863585"
 
 [!include [banner](../includes/pivate-preview-banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Lagerarbeiten in Microsoft Dynamics 365 for Finance and Operations verfügbar machen.
+In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Lagerarbeiten in Dynamics 365 Supply Chain Management verfügbar machen.
+
 
 Mit der verzögerten Verarbeitungsfunktion können Lagerarbeiter weiterhin andere Aufgaben erledigen, während im Hintergrund der Einlagerungsvorgang verarbeitet wird. Die verzögerte Verarbeitung ist hilfreich, wenn zahlreiche Arbeitspositionen verarbeitet werden müssen und die Arbeitskraft diese Arbeit asynchron verarbeiten lassen kann. Sie ist außerdem nützlich, wenn es beim Server zu spontanen oder ungeplanten Zunahmen bei der Verarbeitungszeit kommen kann und sich diese erhöhte Verarbeitungszeit auf die Produktivität des Benutzers auswirken kann.
 

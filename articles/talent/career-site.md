@@ -1,6 +1,6 @@
 ---
-title: Website mit Stellenangeboten einrichten in Microsoft Dynamics 365 for Talent - Attract
-description: Dieses Thema bietet einen Überblick über die Funktionen der Website mit Stellenangeboten für Kandidaten in Microsoft Dynamics 365 for Talent - Attract.
+title: Website mit Stellenangeboten einrichten in Microsoft Dynamics 365 Talent – Attract
+description: Dieses Thema bietet einen Überblick über die Funktionen der Website mit Stellenangeboten für Kandidaten in Microsoft Dynamics 365 Talent – Attract.
 author: hasrivas
 manager: AnnBe
 ms.date: 03/20/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2019-02-12
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
-ms.openlocfilehash: 32fb5e0c00b80653cf32f37a21f94aa448a20191
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: ec5fe31c6547b008b29e656729c35863d90bffc1
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739770"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026278"
 ---
 # <a name="set-up-your-career-site"></a>Website mit Stellenangeboten einrichten
 
 [!include[banner](../includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über die Funktionen der Website mit Stellenangeboten für Kandidaten in Microsoft Dynamics 365 for Talent: Attract. Es wird auch beschrieben, wie diese Funktionen eingerichtet werden.
+Dieses Thema bietet einen Überblick über die Funktionen der Website mit Stellenangeboten für Kandidaten in Microsoft Dynamics 365 Talent: Attract. Es wird auch beschrieben, wie diese Funktionen eingerichtet werden.
 
 Attract bietet eine Website mit Stellenangeboten für jede Umgebung in einem Mandanten. Wenn beispielsweise eine Organisation über eine Entwicklungsumgebung und einer Testumgebung verfügt, wird eine Website mit Stellenangeboten für die Entwicklungsumgebung und eine weitere für die der Testumgebung bereitgestellt. Jede Website mit Stellenangeboten ist vollständig isoliert und verfügt über einen eigenen Authentifizierungsmechanismus. Stellen- und Kandidatenprofile werden zwischen Websites mit Stellenangeboten nicht freigegeben.
 
@@ -62,7 +62,7 @@ Die folgende Liste enthält die häufig verwendetn URLs der Website mit Stellena
 
 -   **URL der Startseite der Webiste mit Stellenangeboten** - Um die URL der Startseite der Website mit Stellenangeboten anzuzeigen, menden Sie sich in Attract als ein Administrator an, wählen Sie **Administratorcenter** im Menü **Einstellungen** aus und wählen Sie anschließend die Registerkarte **Verwaltung der Website mit Stellenangeboten** aus.
 
--   **Bewerbungs-URL einzelner Stellenausschreibungen** - Wenn Sie zum ersten Mal eine [externe Stelle veröffentlichen](Creating-jobs-Attract.md#postings), können Sie den **Bewerben**-Link aus der Attract-Anwendung kopieren. Die URL für diesen Link hat folgendes Format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
+-   **Bewerbungs-URL einzelner Stellenausschreibungen** – Wenn Sie zum ersten Mal eine [externe Stelle veröffentlichen](Creating-jobs-Attract.md#postings), können Sie den **Bewerben**-Link aus Attract kopieren. Die URL für diesen Link hat folgendes Format: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>/apply](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e/apply)
 
 -   **Bewerbungs-URL einzelner Stellenausschreibungen** - Die URL der Stellenausschreibung ist eine Teilzeichenfole der Bewerbungs-URL. Sie besteht aus allem bis zur Stellennummer. Daher lautet die URL der Stellenausschreibung der vorherige Bewerbungs-URL wie folgt: [https://jobs.talent.dynamics.com/jobs/\<company_name\>/\<environment_number\>/\<job_number\>](https://jobs.talent.dynamics.com/jobs/%3ccompany_name%3e/%3cenvironment_number%3e/%3cjob_number%3e)
 

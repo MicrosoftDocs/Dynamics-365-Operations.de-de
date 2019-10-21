@@ -1,6 +1,6 @@
 ---
 title: Debitoren- und Produktrentabilität bewerten
-description: In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke in die Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Retail-Daten zu erhalten.
+description: In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke in die Rentabilität der Debitoren und Produkte basierend auf Ihrer Dynamics 365 Retail-Daten zu erhalten.
 author: ashishmsft
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,20 +19,20 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 28d4eeaa3fcae33f817690ad496b4b123a5838ce
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 5a9bebf948bd4602556f70a5a79690621a03261e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561363"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023589"
 ---
 # <a name="assess-customer-and-product-profitability"></a>Debitoren- und Produktrentabilität bewerten
 
 [!include [banner](includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke in die Rentabilität der Debitoren und Produkte basierend auf Ihrer Microsoft Dynamics 365 for Retail-Daten zu erhalten.
+In diesem Artikel wird beschrieben, wie Sie die Echtzeitanalyse und Analyse im Arbeitsspeicher verwenden können, um Einblicke in die Rentabilität der Debitoren und Produkte basierend auf Ihrer Dynamics 365 Retail-Daten zu erhalten.
 
-Im Rahmen von Dynamics 365 for Retail können Benutzer die Rentabilität für die wichtigsten Debitoren (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage einer der folgenden Kriterien überprüfen:
+Im Rahmen von Retail können Benutzer die Rentabilität für die wichtigsten Debitoren (10 bis 100) auf unterschiedlichen Ebenen der Organisationshierarchie auf Grundlage einer der folgenden Kriterien überprüfen:
 
 - Verkaufsbetrag
 - Menge

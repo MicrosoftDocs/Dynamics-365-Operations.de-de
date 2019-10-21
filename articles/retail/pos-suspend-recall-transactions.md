@@ -1,6 +1,6 @@
 ---
 title: Transaktionen in der Verkaufsstelle (POS) anhalten und fortsetzen
-description: In diesem Thema wird erläutert, wie Benutzer laufende Transaktionen aussetzen und sie später oder in einem anderen Register mit Microsoft Dynamics 365 for Retail wiederaufnehmen können.
+description: In diesem Thema wird erläutert, wie Benutzer laufende Transaktionen aussetzen und sie später oder in einem anderen Register mit Dynamics 365 Retail wiederaufnehmen können.
 author: jblucher
 manager: AnnBe
 ms.date: 11/27/2018
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ffb04609318c7de4b9ef729a8e03a7f9395806b8
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: efab3b793eb15e7feffb569492b5c36a2e9d6ec0
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569543"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025275"
 ---
 # <a name="suspend-and-resume-transactions-in-the-point-of-sale-pos"></a>Transaktionen in der Verkaufsstelle (POS) anhalten und fortsetzen
 

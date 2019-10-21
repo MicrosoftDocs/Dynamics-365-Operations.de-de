@@ -1,6 +1,6 @@
 ---
 title: Qualitätsmanagement-Übersicht
-description: In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
+description: In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Dynamics 365 Supply Chain Management verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 author: perlynne
 manager: AnnBe
 ms.date: 11/02/2017
@@ -19,24 +19,24 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1630d13437d7e930fdf32ed5fdc61fc62bc33817
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557499"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249578"
 ---
 # <a name="quality-management-overview"></a>Qualitätsmanagement-Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Microsoft Dynamics 365 for Finance and Operations verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
+In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Dynamics 365 Supply Chain Management verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 
-Das Qualitätsmanagement kann Ihnen dabei helfen, Abfertigungszeiten zu fehlerhaften Produkten zu verwalten (unabhängig vom Ursprung). Da Diagnosetypen mit der Korrekturberichterstellung verknüpft sind, kann Microsoft Dynamics 365 for Finance and Operations Aufgaben planen, um Probleme zu korrigieren und das erneute Auftreten zu verhindern.
+Das Qualitätsmanagement kann Ihnen dabei helfen, Abfertigungszeiten zu fehlerhaften Produkten zu verwalten (unabhängig vom Ursprung). Da Diagnosetypen mit der Korrekturberichterstellung verknüpft sind, kann Finance and Operations Aufgaben planen, um Probleme zu korrigieren und zu verhindern, dass sie erneut auftreten.
 
 Zusätzlich zu den Funktionen für die Verwaltung des Qualitätsmangels, umfasst das Qualitätsmanagement Funktionen für die Nachverfolgung von Problemen nach Problemtyp (auch interne Probleme) und zur Kennzeichnung von Lösungen als kurzzeitig oder langfristig. Die Statistiken zu Key Performance Indicators (KPIs) geben Einblick in den Verlauf von vorherigen Qualitätsmangelprobleme sowie zu Lösungen zu deren Korrektur. Sie können Verlaufsdaten verwenden, um die Effizienz vorheriger Qualitätsmaßnahmen zu prüfen und geeignete Maßnahmen für die Zukunft zu bestimmen.
 
-Wenn Sie eine Qualitätszuordnung festlegen, kann Finance and Operations Qualitätsprüfungsaufträge für verschiedene Geschäftsprozesse, Ereignisse und Bedingungen generieren. Die Qualitätszuordnung kann einen bestimmten Artikel, eine bestimmte Artikelgruppe oder alle Artikel enthalten.
+Wenn Sie eine Qualitätszuordnung festlegen, kann Supply Chain Management Qualitätsprüfungsaufträge für verschiedene Geschäftsprozesse, Ereignisse und Bedingungen generieren. Die Qualitätszuordnung kann einen bestimmten Artikel, eine bestimmte Artikelgruppe oder alle Artikel enthalten.
 
 ## <a name="examples-of-the-use-of-quality-management"></a>Beispiele für die Nutzung des Qualitätsmanagements
 Das Qualitätsmanagement ist flexibel und kann auf unterschiedliche Weise implementiert werden um die Bedingungen bestimmter Lieferkettenarbeitsgangstufen zu erfüllen. Die folgenden Beispiele zeigen die mögliche Verwendung dieser Funktionen:

@@ -1,6 +1,6 @@
 ---
 title: Strichcodes einrichten
-description: Dieser Artikel beschreibt, wie Sie die Strichcodes in Microsoft Dynamics 365 for Retail verwenden.
+description: Dieser Artikel beschreibt, wie Sie die Strichcodes in Dynamics 365 Retail verwenden.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 15d12abe32d3f5a47348016c67a4fb02d0a5d8e3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7a668f8b44c5f573957a91ab19a8b7fac7a95ba
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555466"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024889"
 ---
 # <a name="set-up-bar-codes"></a>Strichcodes einrichten
 
 [!include [banner](includes/banner.md)]
 
-Dieser Artikel beschreibt, wie Sie die Strichcodes in Microsoft Dynamics 365 for Retail verwenden.
+Dieser Artikel beschreibt, wie Sie die Strichcodes in Dynamics 365 Retail verwenden.
 
 Sie können mithilfe von Strichcodes Produkte erwerben und verkaufen, Produktvarianten nachverfolgen und Debitoren und Mitarbeiter einrichten. Sie können außerdem Strichcodes verwenden, um Coupons, Geschenkkarten und Gutschriften auszustellen und zu indossieren. Sie können Einzelhandelsprodukte entweder mit standardmäßigen Strichcodes oder mit benutzerdefinierten, firmeninternen Strichcodes einrichten. Produkte können mehrere Strichcodes aufweisen. Beispielsweise könnte ein Produkt mehrere Strichcodes haben, wenn es von verschiedenen Herstellern stammt oder wenn es über Varianten verfügt, hinsichtlich Größe, Stil oder Farbe. Strichcodes können das Gewicht oder den Preis des Produkts enthalten. Strichcodemasken sind Vorlagen, die verwendet werden, um Strichcodes zu erstellen.
 
 > [!NOTE]
-> Wenn Sie einen eindeutigen Strichcodes für jede Variantenkombination zuweisen, können Sie den Strichcode am Register scannen und vom Programm feststellen lassen, welche Variante des Produkts verkauft wird. Sie können außerdem Statistiken zu Verkäufen nach Varianten sammeln und anzeigen. Jede Größen-, Farb- und Stilgruppe kann einer eindeutigen Nummer zugewiesen werden, durch die diese Gruppe im Strichcode gekennzeichnet ist. Dynamics 365 for Retail verwendet die Strichcodemaske, um für jede Variantenkombination automatisch Strichcodes zu generieren. Diese Funktion kann hilfreich sein, wenn es viele Größen, Farben und Stile gibt, da die Anzahl der Kombinationen mit jedem zusätzlichen Variantencode erheblich zunimmt. Wird diese Funktion nicht verwendet, müssen die Strichcodes manuell jeder Kombination zugewiesen werden, die eine Produktvariante darstellt.
+> Wenn Sie einen eindeutigen Strichcodes für jede Variantenkombination zuweisen, können Sie den Strichcode am Register scannen und vom Programm feststellen lassen, welche Variante des Produkts verkauft wird. Sie können außerdem Statistiken zu Verkäufen nach Varianten sammeln und anzeigen. Jede Größen-, Farb- und Stilgruppe kann einer eindeutigen Nummer zugewiesen werden, durch die diese Gruppe im Strichcode gekennzeichnet ist. Retail verwendet die Strichcodemaske, um für jede Variantenkombination automatisch Strichcodes zu generieren. Diese Funktion kann hilfreich sein, wenn es viele Größen, Farben und Stile gibt, da die Anzahl der Kombinationen mit jedem zusätzlichen Variantencode erheblich zunimmt. Wird diese Funktion nicht verwendet, müssen die Strichcodes manuell jeder Kombination zugewiesen werden, die eine Produktvariante darstellt.
 
 Sie können Strichcodes manuell oder automatisch erstellen. Um Strichcodes zu erstellen, schließen Sie die folgenden Aufgaben im Auftrag ab, in dem sie aufgeführt sind.
 

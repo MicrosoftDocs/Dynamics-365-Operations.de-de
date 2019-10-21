@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 75a38b99fe0aee7d4dd386191be236e54097e867
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b7f5d61ade071e75d53d5036a47fea438d8afbe6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1561264"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249424"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Mobiler Arbeitsbereich für Bestellungsgenehmigung
 
@@ -35,13 +35,13 @@ Dieses Thema enthält Informationen zur **Bestellungsgenehmigung** im mobilen Ar
 ## <a name="overview"></a>Überblick 
 Bestellungen, die Genehmigungen erfordern, durchlaufen einen Genehmigungsworkflow. Der Workflow kann unterschiedliche Schritte umfassen, die erfordern, dass mindestens eine Person eine Maßnahme ergreift. Beispielsweise kann eine Person eine Aufgabe abschließen oder die Bestellung genehmigen. 
 
-Im Arbeitsbereich **mobile Bestellungsgenehmigung** können Sie Bestellungen vom mobilen Gerät anzeigen und beantworten. Im Arbeitsbereich können Sie die gleichen Workflowaktivitäten tätigen, die Sie vom Microsoft Dynamics 365 for Finance and Operations-Webclient aus tätigen können.
+Im Arbeitsbereich **mobile Bestellungsgenehmigung** können Sie Bestellungen vom mobilen Gerät anzeigen und beantworten. Im Arbeitsbereich können Sie die gleichen Workflowaktivitäten tätigen, die Sie vom Webclient aus tätigen können.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Die Voraussetzungen unterscheiden sich basierend auf der Version von Finance and Operations, die für Ihre Organisation bereitgestellt wurde.
+Die Voraussetzungen unterscheiden sich basierend auf der Version von Supply Chain Management, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden 
-Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Bestellungsgenehmigung** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management 
+Wenn Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen **Arbeitsbereich Bestellungsgenehmigung** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -75,7 +75,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Laden Sie die mobile App für Microsoft Dynamics 365 for Unified Operations herunter und installieren Sie diese:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 - [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

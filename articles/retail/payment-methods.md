@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 60f0a2e5fa2dc2bc37a04b159a4834a52117893d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 65b59e1cc215d582fdaf02ff4746fe2158ace76e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559603"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025355"
 ---
 # <a name="payment-methods"></a>Zahlungsmethoden
 
@@ -32,7 +32,7 @@ ms.locfileid: "1559603"
 
 Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten.
 
-Einzelhändler können für die von ihnen verkauften Produkte und angebotenen Dienstleistungen verschiedene Zahlungsformen akzeptieren. Obwohl die Barzahlung am häufigsten ist, können Einzelhändler Zahlungen auch in Form von Schecks, Kredikarten, Gutscheinen usw. entgegennehmen. Jeder vom Einzelhändler akzeptierte Zahlungstyp muss beim Einrichten des Systems in Dynamics 365 for Retail konfiguriert werden. In der folgenden Liste wird jeder Zahlungstyp beschrieben, der in Dynamics 365 for Retail eingerichtet werden kann:
+Einzelhändler können für die von ihnen verkauften Produkte und angebotenen Dienstleistungen verschiedene Zahlungsformen akzeptieren. Obwohl die Barzahlung am häufigsten ist, können Einzelhändler Zahlungen auch in Form von Schecks, Kredikarten, Gutscheinen usw. entgegennehmen. Jeder vom Einzelhändler akzeptierte Zahlungstyp muss beim Einrichten des Systems in Dynamics 365 Retail konfiguriert werden. In der folgenden Liste wird jeder Zahlungstyp beschrieben, der eingerichtet werden kann:
 
 - **Bargeld** – Geld in der physischen Form der Währung, z. B. Banknoten und Münzen. Die Währung kann entweder die Unternehmenswährung oder die im Shop gültige lokale Währung sein.
 - **Scheck** – Ein übertragbares Wertpapier, das eine Zahlungsanweisung an die angegebene Bank enthält, einen bestimmten Betrag in einer bestimmten Währung zu zahlen. Ein Scheck ist im Allgemeinen entweder für eine unbegrenzte Dauer oder sechs Monate nach dem Ausstellungsdatum gültig, sofern kein anderer Gültigkeitszeitraum angegeben ist. Dieser Zeitraum variiert und hängt von der Bank ab, bei der der Scheck gezogen wird. Es gibt verschiedene Arten von Schecks, z. B. Orderschecks, Blankoschecks, Inhaberschecks und Schecks für Einzahlungen auf das Konto des Begünstigten. Schecks können für jeden Shop als Zahlungsmethode eingerichtet werden. Schecks können in der Währung akzeptiert werden, die entweder auf Unternehmensebene oder Shopebene definiert ist. Damit Schecks in einem Shop als Zahlungsmittel akzeptiert werden können, müssen Schecks als Zahlungsmethode eingerichtet werden.

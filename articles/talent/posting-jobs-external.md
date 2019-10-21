@@ -1,6 +1,6 @@
 ---
-title: Stellen aus Attract auf externen Karrierewebsites veröffentlichen
-description: In diesem Thema wird erläutert, wie Dynamics 365 for Talent - Attract verwendet wird, um Stelle auf externe Stellenportalen zu veröffentlichen
+title: Veröffentlichen von Stellenangeboten aus Attract auf externen Websites mit Stellenangeboten
+description: In diesem Thema wird erläutert, wie Dynamics 365 Talent - Attract verwendet wird, um Stelle auf externe Stellenportalen zu veröffentlichen
 author: pganapmsft
 manager: AnnBe
 ms.date: 05/16/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-03-19
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 936ff85a4dabb715cb83b875a5c58c9fb7a0ac26
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 919cec773d5e57e8f5429e31872db7ed658e969b
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739816"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008081"
 ---
 # <a name="post-jobs-to-broadbean"></a>Stellen auf Broadbean veröffentlichen
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Attract hilft Ihnen, die Talente zu finden, die Sie brauchen, indem Sie Ihre Stellen direkt von Attract in Broadbean veröffentlichen. Nachdem Sie eine [Stelle erstellt haben](./creating-jobs-attract.md), müssen Sie nur auf eine Schaltfläche klicken, um die Stelle für alle möglichen Stellenbewerber auf Broadbean bereitzustellen.
+Microsoft Dynamics 365 Talent: Attract hilft Ihnen, die Talente zu finden, die Sie brauchen, indem Sie Ihre Stellen direkt von Attract in Broadbean veröffentlichen. Nachdem Sie eine [Stelle erstellt haben](./creating-jobs-attract.md), müssen Sie nur auf eine Schaltfläche klicken, um die Stelle für alle möglichen Stellenbewerber auf Broadbean bereitzustellen.
 
 Das Veröffentlichen von Stellen auf Broadbean erfordert eine entsprechende Broadbeanlizenz. Broadbean bietet verschiedene Produkte und Plänen an. Weitere Informationen zur Broadbeanlizenzierung und den Preise erhalten Sie, indem Sie [Broadbean kontaktieren](https://www.broadbean.com/contact-us/).
 

@@ -18,23 +18,23 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 65624ce5e668a506ae23b302559d8d0bf4141a12
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546708"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250196"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
 [!include [banner](../includes/banner.md)]
 
-Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 for Finance and Operations haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Thema wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
+Das **Kreditorenzusammenarbeit** Modul richtet sich an Kreditoren, die keine elektronische Datenaustausch-Integration (EDI) mit Microsoft Dynamics 365 Supply Chain Management haben. Es erlaubt es Kreditoren, mit Bestellungen, Rechnungen, Lieferbestandsinformationen und Angebotsanforderungen zu arbeiten, und es ermöglicht ihnen auch den Zugriff auf Teile ihrer Kreditorenmasterdaten. In diesem Thema wird erklärt, wie Sie mit externen Kreditoren zusammenarbeiten können, die die Kreditorenzusammenarbeitsschnittstelle verwenden, um mit Bestellungen, Angebotsanforderungen und Lieferbestand zu arbeiten. Außerdem wird erklärt, wie ein bestimmter Kreditor aktiviert wird, um Kreditorenzusammenarbeit zu verwenden, und wie die Anzeige der Informationen definiert wird, die alle Kreditoren sehen, wenn Sie auf eine Bestellung antworten.
 
 Weitere Informationen dazu, was externe Kreditoren in der Kreditorenzusammenarbeitschnittstelle tun können, finden Sie unter [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
 
 > [!NOTE]
-> Die Informationen zur Kreditorenzusammenarbeit in diesem Thema gelten nur für die aktuelle Version von Finance and Operations. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zum Modul **Kreditorenportal** finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
+> Die Informationen zur Kreditorenzusammenarbeit in diesem Thema gelten nur für die aktuelle Version von Supply Chain Management. In Microsoft Dynamics AX 7.0 (Februar 2016) und Microsoft Dynamics AX-Anwendungsversion 7.0.1 (Mai 2016) arbeiten Sie mit Kreditoren zusammen, indem Sie das Modul **Kreditorenportal** verwenden. Informationen zum Modul **Kreditorenportal** finden Sie unter [Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals](collaborate-vendors-vendor-portal.md).
 
 Weitere Informationen dazu, wie Kreditoren die Kreditorenzusammenarbeit in Rechnungsstellungsprozessen verwenden können, finden Sie unter [Kreditorenzusammenarbeit-Rechnungsstellungsarbeitsbereich](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md) Informationen darüber, wie neue Nutzer der Kreditorezusammenarbeit bereitgestellt werden, finden Sie unter [Kreditorenzusammenarbeitbenutzer verwalten](manage-vendor-collaboration-users.md).
 
@@ -51,7 +51,7 @@ Wenn Sie Nachrichten in mehr als einer Sprache hinzufügen müssen, erstellen Si
 
 ## <a name="setting-the-vendor-collaboration-options-for-a-specific-vendor"></a>Festlegen der Kreditorenzusammenarbeitsoptionen für einen bestimmten Kreditor
 
-Ein Administrator konfiguriert die allgemeinen Einstellungen für Kreditorenzusammenarbeit in Finance and Operations, wie die Sicherheitsrollen, die für alle Kreditoren verfügbar sind, mit denen Sie zusammenarbeiten. Es gibt jedoch auch Einstellungen, die für jedes Kreditorenkonto anders sein können. Sie sollten diese Einstellungen konfigurieren.
+Ein Administrator konfiguriert die allgemeinen Einstellungen für Kreditorenzusammenarbeit, wie die Sicherheitsrollen, die für alle Kreditoren verfügbar sind, mit denen Sie zusammenarbeiten. Es gibt jedoch auch Einstellungen, die für jedes Kreditorenkonto anders sein können. Sie sollten diese Einstellungen konfigurieren.
 
 - Kreditorenzusammenarbeit aktivieren.
 - Geben Sie an, ob der Kreditor Preisinformationen sehen soll.
@@ -71,7 +71,7 @@ Um Preisinformationen für Bestellungen über die Kreditorenzusammenarbeitschnit
 
 ### <a name="sending-a-po-to-a-vendor"></a>Eine Bestellung an einen Kreditor senden
 
-Bestellungen werden in Finance and Operations vorbereitet. Wenn eine Bestellung den Status **Genehmigt** hat, senden Sie sie an den Kreditor, indem Sie **Zur Bestätigung senden** auf der Seite **Bestellung** auswählen. Der Status der Bestellung wird dann auf **In externer Prüfung** geändert. Nachdem die Bestellung versendet wurde, kann der Kreditor diese auf der Seite **Bestellungen zur Prüfung** in der Kreditorenzusammenarbeitschnittstelle finden. Der Kreditor kann dann die Bestellung akzeptieren, ablehnen oder Änderungen vorschlagen. Der Kreditor kann auch Kommentare hinzufügen, um Informationen wie Änderungen an der Bestellung mitzuteilen. Wenn Sie die Aufmerksamkeit des Kreditors auf eine neue Bestellung lenken möchten, können Sie die Bestellung auch per E-Mail senden, indem Sie das Druckverwaltungssystem verwenden.
+Bestellungen werden in Supply Chain Management werden vorbereitet. Wenn eine Bestellung den Status **Genehmigt** hat, senden Sie sie an den Kreditor, indem Sie **Zur Bestätigung senden** auf der Seite **Bestellung** auswählen. Der Status der Bestellung wird dann auf **In externer Prüfung** geändert. Nachdem die Bestellung versendet wurde, kann der Kreditor diese auf der Seite **Bestellungen zur Prüfung** in der Kreditorenzusammenarbeitschnittstelle finden. Der Kreditor kann dann die Bestellung akzeptieren, ablehnen oder Änderungen vorschlagen. Der Kreditor kann auch Kommentare hinzufügen, um Informationen wie Änderungen an der Bestellung mitzuteilen. Wenn Sie die Aufmerksamkeit des Kreditors auf eine neue Bestellung lenken möchten, können Sie die Bestellung auch per E-Mail senden, indem Sie das Druckverwaltungssystem verwenden.
 
 ### <a name="confirmation-and-acceptance-of-a-po-by-a-vendor"></a>Bestätigung und Akzeptieren einer Bestellung durch einen Kreditor
 
@@ -92,13 +92,13 @@ Die folgende Tabelle zeigt den üblichen Informationsaustausch, abhängig von de
 </thead>
 <tbody>
 <tr class="even">
-<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, und Finance and Operations wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
+<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, und Supply Chain Management wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
 <td>Der Status einer Bestellstatus wird auf <strong>Bestätigt</strong> aktualisiert. Wenn der Auftrag aus einem bestimmten Grund nicht aktualisiert werden kann, wird die Antwort des Kreditors trotzdem als <strong>Akzeptiert</strong> erfasst, die Bestellung bleibt aber im Status <strong>In externer Prüfung</strong>. 
 
 Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In externer Prüfung</strong> hat, wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Diese Aktualisierung initiiert eine neue Version, die automatisch auf den Status <strong>Bestätigt</strong> festgelegt wird. Wenn die Bestellung bestätigt wird, wird sie in der Zusammenarbeitschnittstelle des Kreditors angezeigt.</td>
 </tr>
 <tr class="odd">
-<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, aber Finance and Operations wird nicht so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
+<td>Der Kreditor <strong>akzeptiert</strong> den Auftrag, aber Supply Chain Management wird so konfiguriert, dass Bestellungen, die der Kreditor akzeptiert, automatisch bestätigt werden.</td>
 <td>Die Antwort des Kreditors wird als <strong>Bestätigt</strong> erfasst, die Bestellung bleibt jedoch im Status <strong>Externe Prüfung</strong>.
 
 Die Bestellung, die an den Kreditor gesendet wurde und die den Status <strong>In externer Prüfung</strong> hat, wird mit bestätigtem Lieferdatum für die Positionen aktualisiert. Diese Aktualisierung initiiert eine neue Version, die automatisch auf den Status <strong>In externer Überprüfung</strong> festgelegt wird. Sie können anschließend die Bestellung manuell bestätigen.</td>
@@ -180,14 +180,14 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 
 | Aktion | Status und Version |
 |--------|--------------------|
-| Die ursprüngliche Version der Bestellung wird in Finance and Operations erstellt. | Der Status ist **Genehmigt**. |
+| Die ursprüngliche Version der Bestellung wird in Supply Chain Management erstellt. | Der Status ist **Genehmigt**. |
 | Die Bestellung wird an den Kreditor gesendet. | Eine Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert. |
 | Der Kreditor übermittelt eine Antwort **Angenommen mit Änderungen**. | Der Status ist weiterhin **In externer Prüfung**. |
 | Sie nehmen einige Änderungen vor, die vom Kreditor gefordert wurden. | Der Status wird zurückgeändert in **Genehmigt**. |
 | Sie senden die neue Version der Bestellung an den Kreditor. | Eine neue Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert. |
 | Der Kreditor genehmigt die neue Version der Bestellung. | Der Status ist weiterhin **In externer Prüfung,**, es sei denn, das Kreditorenkonto ist so konfiguriert, dass Bestellungen automatisch den Status **Bestätigt** erhalten, wenn der Keditor sie akzeptiert. |
 
-Kreditoren müssen eine Bestellung in der Kreditorenzusammenarbeitsschnittstelle nicht bestätigen. Sie können auch eine E-Mail senden oder ihre Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können den Auftrag dann manuell in Finance and Operations bestätigen. In diesem Fall erhalten Sie eine Warnung, die aussagt, dass der Auftrag gerade bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie als offener, bestätigter Auftrag ohne Antworten aufgeführt. Zu diesem Zeitpunkt hat der Kreditor nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.
+Kreditoren müssen eine Bestellung in der Kreditorenzusammenarbeitsschnittstelle nicht bestätigen. Sie können auch eine E-Mail senden oder ihre Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können anschließend den Auftrag manuell bestätigen. In diesem Fall erhalten Sie eine Warnung, die aussagt, dass der Auftrag gerade bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie als offener, bestätigter Auftrag ohne Antworten aufgeführt. Zu diesem Zeitpunkt hat der Kreditor nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.
 
 > [!NOTE]
 > Die Version der Bestellung, die anderen Prozessen in Finance and Operations zur Verfügung steht, ist immer die neueste Version, auch wenn diese Version noch nicht in der Kreditorenzusammenarbeitsschnittstelle erfasst wurde.
@@ -200,7 +200,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 
 | Vorgang | Status und Version |
 |--------|--------------------|
-| Die ursprüngliche Version der Bestellung wird in Finance and Operations erstellt. | Der Kopfstatus ist **Entwurf**. |
+| Die ursprüngliche Version der Bestellung wird in Supply Chain Management erstellt. | Der Kopfstatus ist **Entwurf**. |
 | Die Bestellung wird zum Genehmigungsprozess übermittelt. (Der Genehmigungsprozess ist ein interner Prozess, an dem der Kreditor nicht beteiligt ist.) | Der Status wird von in **Entwurf** auf **Wird überprüft** und **Genehmigung** geändert, wenn die Bestellung nicht bei der Genehmigungsprozedur abgelehnt wird. Die genehmigte Bestellung wird als eine Version erfasst. | 
 | Die Bestellung wird an den Kreditor gesendet. | Die Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert. |
 | Sie nehmen einige Änderungen vor, die der Kreditor verlangt hat, entweder manuell oder mithilfe der Aktivität **Bestellungsaktualisierung verarbeiten** auf der Antwort, um die Bestellung zu aktualisieren. | Der Status wird zurückgeändert in **Entwurf**. |
@@ -237,13 +237,13 @@ Dieser Abschnitt beschreibt die Interaktionen zwischen Debitoren und Kreditoren 
 
 ## <a name="public-sector-extensions"></a>Erweiterungen für den öffentlichen Sektor
 
-Für den öffentlichen Sektor ermöglicht die erweiterte Funktionalität, dass eine Angebotsanforderungsanfrage an Kreditoren gesendet und veröffentlicht wird. Wenn Sie eine Angebotsanforderung veröffentlichen, kann jeder, der die Informationen anfordert, die Arbeit anzeigen, die mit den meisten Bestimmungen des öffentlichen Sektors übereinstimmt. Alle verfügbare Arbeit wird auf der Listenseite **Offene veröffentlichte Angebotsanforderungen** angezeigt, und die stornierten, ausstehenden oder bewilligten Angebotsanforderungen können auf der Listenseite **Geschlossene veröffentlichtes Angebotsanforderungen** angezeigt werden. Diese Dokumente können auf einer Website außerhalb von Finance and Operations durch Integrationen mit den folgenden Datenentitäten ebenfalls angezeigt werden:
+Für den öffentlichen Sektor ermöglicht die erweiterte Funktionalität, dass eine Angebotsanforderungsanfrage an Kreditoren gesendet und veröffentlicht wird. Wenn Sie eine Angebotsanforderung veröffentlichen, kann jeder, der die Informationen anfordert, die Arbeit anzeigen, die mit den meisten Bestimmungen des öffentlichen Sektors übereinstimmt. Alle verfügbare Arbeit wird auf der Listenseite **Offene veröffentlichte Angebotsanforderungen** angezeigt, und die stornierten, ausstehenden oder bewilligten Angebotsanforderungen können auf der Listenseite **Geschlossene veröffentlichtes Angebotsanforderungen** angezeigt werden. Diese Dokumente können auf einer Website außerhalb von Supply Chain Management durch Integrationen mit den folgenden Datenentitäten ebenfalls angezeigt werden:
 
 - Veröffentlichte Angebotsanforderungen
 - Eintrag veröffentlichter Angebotsanforderungen
 - Kopfzeilenanlagen veröffentlichter Angebotsanforderungen
 
-Diese Entitäten ermöglichen es Personen, die keine bereitgestellten Benutzer in Finance and Operations sind, aber die anonymen Zugriff auf die externe Website haben, die verfügbare und geschlossene Arbeit anzuzeigen. Darüber hinaus ermöglicht es die erweiterte Funktionalität in **Übermitteln und veröffentlichen** dem Benutzer, der Parameter für den Angebotsanforderungsprozess festlegt, eine E-Mail-Vorlage zu definieren. Wenn der Prokurist dann die Angebotsanforderungsanfrage erstellt, muss er oder sie die E-Mail-Vorlage auswählen, um die erforderlichen Informationen an die Kreditoren zur Angebotsanforderungsanfrage zu senden. 
+Diese Entitäten ermöglichen es Personen, die keine bereitgestellten Benutzer in Supply Chain Management sind, aber die anonymen Zugriff auf die externe Website haben, die verfügbare und geschlossene Arbeit anzuzeigen. Darüber hinaus ermöglicht es die erweiterte Funktionalität in **Übermitteln und veröffentlichen** dem Benutzer, der Parameter für den Angebotsanforderungsprozess festlegt, eine E-Mail-Vorlage zu definieren. Wenn der Prokurist dann die Angebotsanforderungsanfrage erstellt, muss er oder sie die E-Mail-Vorlage auswählen, um die erforderlichen Informationen an die Kreditoren zur Angebotsanforderungsanfrage zu senden. 
 
 Der Benutzer, der Parameter für den Angebotsanforderungsprozess einrichtet, kann mehrere E-Mail-Vorlagen erstellen. Diese E-Mail-Vorlagen können sowohl statischen Text als auch die folgenden Ersetzungstoken enthalten. Die Token werden durch kontextabhängige Werte ersetzt, wenn eine E-Mail erstellt wird.
 

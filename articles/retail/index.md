@@ -1,6 +1,6 @@
 ---
-title: Willkommen bei Dynamics 365 for Retail
-description: Startseite für Dynamics 365 for Retail
+title: Dynamics 365 Retail – Hilferessourcen
+description: Startseite für Dynamics 365 Retail
 author: josaw1
 manager: AnnBe
 ms.date: 08/14/2019
@@ -18,23 +18,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22dc340ff5ea381dd2a335c8c81332d11d1257a0
-ms.sourcegitcommit: 315388bba3a766691e341f9f2a4fa7a091f2aa18
+ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "1874926"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278105"
 ---
-# <a name="welcome-to-dynamics-365-for-retail"></a>Willkommen bei Dynamics 365 for Retail
+# <a name="help-resources-for-dynamics-365-retail"></a>Dynamics 365 Retail – Hilferessourcen
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Retail ist eine End-to-End-Einzelhandelslösung, die einheitlichen Handel über alle Kanäle bietet. Sie umfasst Vertrieb, Mobilität, Nachrichtendienst und Produktivität und hilft Einzelhändlern und Arbeitern dabei, im Sinne von „Cloud-First, Mobile-First“ mehr zu erreichen. Retail bietet umfassenden technischen Support und bietet eine breite Palette von Geschäftsprozessen; es kann beispielsweise im Merchandising, im Lagerwesen und der Kanalverwaltung angewendet werden. Es bietet zudem umfassende Kundenerlebnisse an allen Berührungspunkten.
-
-> [!NOTE]
-> Dynamics 365 for Retail ist eng verwandt mit Dynamics 365 for Finance and Operations und Dynamics 365 for Talent. Alle drei Produkte weisen möglicherweise dieselben Funktionen auf. Daraus ergibt sich, dass in Themen, die in erster Linie für Retail gelten, der Produktname Microsoft Dynamics 365 for Retailverwendet wird; Themen, die sich in erster Linie dem Kernprodukt widmen (Finance and Operations) verwenden den Produktnamen Microsoft Dynamics 365 for Finance and Operations; und Themen, die in erster Linie der Personalverwaltung zugeordnet sind, verwenden den Produktnamen Dynamics 365 for Talent.
+Microsoft Dynamics 365 Retail ist eine End-to-End-Einzelhandelslösung, die einheitlichen Handel über alle Kanäle bietet. Sie umfasst Vertrieb, Mobilität, Nachrichtendienst und Produktivität und hilft Einzelhändlern und Arbeitern dabei, im Sinne von „Cloud-First, Mobile-First“ mehr zu erreichen. Retail bietet umfassenden technischen Support und bietet eine breite Palette von Geschäftsprozessen; es kann beispielsweise im Merchandising, im Lagerwesen und der Kanalverwaltung angewendet werden. Es bietet zudem umfassende Kundenerlebnisse an allen Berührungspunkten.
 
 Wählen Sie im linken Bereich einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
+
+## <a name="dynamics-365-commerce-preview"></a>Dynamics 365 Commerce (Vorschau)
+
+Dynamics 365 Commerce basiert auf den bewährten Funktionen von Dynamics 365 Retail und bietet eine umfangreiche Omnichannel-Lösung, die Back-Office-, Shop-, Callcenter- und digitale Umgebungen vereint. Commerce steht Kunden jetzt in der Vorschau zur Verfügung. Bestehende Dynamics 365 Retail-Kunden können ein Update auf Commerce durchführen, sobald die Lösung allgemein verfügbar ist.
+
+Weitere Informationen über Dynamics 365 Commerce finden Sie auf der Seite [Hilferessourcen für Dynamics 365 Commerce](../commerce/index.md).
 
 ## <a name="channel-management"></a>Kanalverwaltung
 
@@ -64,7 +67,7 @@ Retail ermöglicht die Überwachung von Verkaufs- und Margenleistung in Echtzeit
 
 ## <a name="merchandising"></a>Verkaufsförderung
 
-Bevor Sie Produkte für den Verkauf in Ihren Retail Channels anbieten können, müssen Sie die Produkte in Retail erstellen und konfigurieren. Sie können die Produkte erstellen, die Produkteigenschaften und Attribute definieren sowie die Produkte den Einzelhandelskategoriehierarchien zuweisen. Um die Produkte für Ihre Retail Channels verfügbar zu machen und sie einem aktiven Sortiment hinzuzufügen, müssen Sie die Produkte für die juristischen Personen freigeben, in denen sie verfügbar sind.
+Bevor Sie Produkte für den Verkauf in Ihren Einzelhandelskanälen anbieten können, müssen Sie die Produkte in Retail erstellen und konfigurieren. Sie können die Produkte erstellen, die Produkteigenschaften und Attribute definieren sowie die Produkte den Einzelhandelskategoriehierarchien zuweisen. Um die Produkte für Ihre Einzelhandelskanäle verfügbar zu machen und sie einem aktiven Sortiment hinzuzufügen, müssen Sie die Produkte für die juristischen Personen freigeben, in denen sie verfügbar sind.
 
 Sie können Preisregulierungen an Produkten vornehmen und zudem Rabatte einrichten, die auf einen Positionsartikel oder eine Transaktion beim POS, in einem Callcenterauftrag oder einem Onlineauftrag angewendet werden.
 
@@ -78,8 +81,8 @@ Sie richten mehrere Komponenten ein, um die Beziehungen innerhalb eines Geschäf
 
 Wenn Sie um die Anpassung Ihrer Umgebung gebeten wurden oder Sie für die Bereitstellung und Verwaltung Ihres Systems verantwortlich sind, finden Sie neben den eher allgemeinen Inhalten weitere, für Retail spezifische Informationen in den Inhalten für Entwickler und Systemadministratoren.
 
-- [Dynamics 365 for Retail für IT-Experten und Entwickler](dev-itpro/dev-retail-home-page.md)
-- [Entwicklung und Administration für Dynamics 365 for Finance and Operations](../dev-itpro/dev-tools/developer-home-page.md)
+- [Dynamics 365 Retail für IT-Experten und Entwickler](dev-itpro/dev-retail-home-page.md)
+- [Entwicklung und Administration für Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

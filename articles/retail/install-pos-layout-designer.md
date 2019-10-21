@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fc5b48b71816b662f016f4a2d909526da0595f4
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 98784c11c7393bb4c3e022d5bff4cca2daa1636e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572079"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025444"
 ---
 # <a name="install-the-retail-point-of-sale-pos-layout-designer"></a>Den Retail-Verkaufstellen-(POS)-Layout-Designer installieren
 
@@ -36,11 +36,11 @@ Der grafische Entwurf der Schnittstelle für MPOS oder Cloud-POS wird durch das 
 
 ## <a name="install-the-one-click-designer"></a>Installieren Sie den One-Click-Designer
 
-1. Verwenden Sie in Microsoft Dynamics 365 for Retail das Menü oben links, um zu **Einzelhandel** **und Handel** &gt; **Kanaleinstellung** &gt; **POS-Einstellung** &gt; **POS** &gt; **Bildschirmlayouts** zu navigieren.
+1. Verwenden Sie in Retail das Menü oben links, um zu **Einzelhandel** **und Handel** &gt; **Kanaleinstellung** &gt; **POS-Einstellung** &gt; **POS** &gt; **Bildschirmlayouts** zu navigieren.
 2. Wählen Sie ein beliebiges Layout, das einen Bewerbungstyp aus **Modern POS for Windows** oder **Cloud POS** hat und klicken Sie dann auf **Layout Designer**.
 3. Klicken Sie auf der Benachrichtigungsleiste, die unten im Internet Explorer-Fenster angezeigt wird, auf **Öffnen**, um den Ein-Klick-Designer zu installieren. (Die Benachrichtigungsleiste wird möglicherweise in anderen Browsern an einer anderen Stelle angezeigt.)
 4. Im Meldungsfeld **Anwendung ausführen - Sicherheitswarnung**, das angezeigt wird, klicken Sie auf **Ausführen**, um den Einzelhandel-Designerhost einzurichten. In der Statusleiste wird der Status des Installationsvorgangs angezeigt.
-5. Nachdem die Installation abgeschlossen ist, geben Sie auf der Seite **Anmelden** den Microsoft Dynamics 365 for Retail-Benutzernamen und das Kennwort ein, und klicken Sie auf **Anmelden**, um den Designer zu starten.
+5. Nachdem die Installation abgeschlossen ist, geben Sie auf der Seite **Anmelden** den Retail-Benutzernamen und das Kennwort ein, und klicken Sie auf **Anmelden**, um den Designer zu starten.
 6. Nachdem die Anmeldeinformationen validiert und der Designer gestartet wurde, können Sie damit beginnen, Ihr eigenes Layout zu entwerfen oder ein vorhandenes Layout zu ändern.
 
     [![Layout im One-Click Designer](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
@@ -52,11 +52,11 @@ Der grafische Entwurf der Schnittstelle für MPOS oder Cloud-POS wird durch das 
     **Lösungen:**
 
     - Stellen Sie im Internet Explorer sicher, dass die Popupblocker für diese Site deaktiviert sind. Klicken Sie auf **Einstellungen** &gt; **Optionen** &gt; **Datenschutz** &gt; **Popupblocker** suchen und ändern Sie die Einstellung, wenn eine Änderung erforderlich ist.
-    - Fügen Sie in Internet Explorer die Dynamics 365 for Retail-URL zu den vertrauenswürdigen Sites hinzu. Klicken Sie auf **Einstellungen** &gt; **Optionen** &gt; **Sicherheit** &gt; **Vertrauenswürdige Standorte** &gt; **Standorte** &gt; **Hinzufügen**..
+    - Fügen Sie in Internet Explorer die Retail-URL zu den vertrauenswürdigen Sites hinzu. Klicken Sie auf **Einstellungen** &gt; **Optionen** &gt; **Sicherheit** &gt; **Vertrauenswürdige Standorte** &gt; **Standorte** &gt; **Hinzufügen**..
 
 - Das Programm startet nicht und Sie werden aufgefordert, sich mit dem Kreditor in Verbindung zu setzen.
 
-    **Lösung:** Fügen Sie in Internet Explorer die Dynamics 365 for Retail-URL zu den vertrauenswürdigen Sites hinzu. Klicken Sie auf **Einstellungen** &gt; **Optionen** &gt; **Sicherheit** &gt; **Vertrauenswürdige Standorte** &gt; **Standorte** &gt; **Hinzufügen**..
+    **Lösung:** Fügen Sie in Internet Explorer die Retail-URL zu den vertrauenswürdigen Sites hinzu. Klicken Sie auf **Einstellungen** &gt; **Optionen** &gt; **Sicherheit** &gt; **Vertrauenswürdige Standorte** &gt; **Standorte** &gt; **Hinzufügen**..
 
 **Bekanntes Problem:** Der Designer funktioniert nicht ordnungsgemäß in Google Chrome und Mozilla Firefox-Browsern. Wir sind daran, dieses Problem zu beheben.
 

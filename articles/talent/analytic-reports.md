@@ -1,6 +1,6 @@
 ---
-title: Analytische Berichte in Microsoft Dynamics 365 for Talent - Attract nutzen
-description: In diesem Thema werden die möglichen analytischen Berichte für Einstellungsprozess-Einblicke in Microsoft Dynamics 365 for Talent - Attract beschrieben
+title: 'Analytische Berichte in Microsoft Dynamics 365 Talent: Attract nutzen'
+description: 'In diesem Thema werden die möglichen analytischen Berichte für Einstellungsprozess-Einblicke in Microsoft Dynamics 365 Talent: Attract beschrieben'
 author: fewatson
 manager: AnnBe
 ms.date: 04/30/2019
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: fewatson
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent April 2019 update
-ms.openlocfilehash: f69c45e885d789d05a081064f30ccd6ce6bfec52
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: be62fe9a5021cfa83a465d316b182c0a154c0c50
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742887"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2010008"
 ---
 # <a name="use-analytic-reports"></a>Analytische Berichte verwenden
 
-Analytische Berichte in Attract  ermöglichen eine  standardmäßige Lösung (OOTB) für die Gewinnen von Einblicken in den Einstellungsprozess. Verfügbare Funktionen umfassen:
+Analytische Berichte in Microsoft Dynamics 365 Talent: Attract ermöglichen eine standardmäßige Lösung (OOTB) für die Gewinnen von Einblicken in den Einstellungsprozess. Verfügbare Funktionen umfassen:
 
 - **Stellen-Analyse** – Klicken Sie auf die Registerkarte **Analyse**  innerhalb einer Stelle, um die Metrik des Bewerbers für die Stelle zu sehen.
 - **Analysehub:**  Klicken Sie auf **Analyse** auf der linken Navigation für die aggregierte Metrik innerhalb der Stellen.

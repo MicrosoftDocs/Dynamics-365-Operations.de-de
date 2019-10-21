@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 03e090633276cd264ad03f561ddb425a9816357e
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847504"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024636"
 ---
 # <a name="create-maintenance-requests"></a>Wartungsanfragen erstellen
 
@@ -41,7 +41,7 @@ Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Information
 2. Wählen Sie **Neu** aus.
 3. Wählen Sie im Dialogfeld **Anfrage erstellen** im Feld **Wartungsanfragetyp** den Typ der Wartungsanfrage aus. Ein Standardtyp wird vorgeschlagen.
 4. Geben Sie im Feld **Beschreibung** einen Namen oder einen Titel ein, der die Wartungsanfrage kurz beschreibt.
-5. Wählen Sie in den Feldern **Funktionaler Standort** und **Anlage** einen funktionalen Standort oder eine Anlage oder eine Kombination eines funktionalen Standorts und einer Anlage aus (je nach Anforderung). Sie können eine Wartungsanfrage erstellen, ohne eine Anlage auszuwählen, und die Anlage kann der Wartungsanfrage erst später hinzugefügt werden. Wenn der Wartungsarbeiter, der bei Microsoft Dynamics 365 for Finance and Operations angemeldet ist, einer Ressource zugeordnet ist, die zu einer Anlage gehört, wird das Feld **Anlage** automatisch festgelegt.
+5. Wählen Sie in den Feldern **Funktionaler Standort** und **Anlage** einen funktionalen Standort oder eine Anlage oder eine Kombination eines funktionalen Standorts und einer Anlage aus (je nach Anforderung). Sie können eine Wartungsanfrage erstellen, ohne eine Anlage auszuwählen, und die Anlage kann der Wartungsanfrage erst später hinzugefügt werden. Wenn der Wartungsarbeiter, der angemeldet ist, einer Ressource zugeordnet ist, die zu einer Anlage gehört, wird das Feld **Anlage** automatisch festgelegt.
 
     Wenn der ausgewählten Anlage bereits eine Wartungsanfrage zugeordnet ist, wird oben im Dialogfeld **Anfrage erstellen** eine Meldungsleiste angezeigt, Sie Ihnen die Kennung der Wartungsanfrage mitteilt. Eine Meldungsleiste informiert Sie auch darüber, wenn die Anlage von einer Garantievereinbarung abgedeckt ist.
 

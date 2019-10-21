@@ -1,6 +1,6 @@
 ---
 title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
-description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Microsoft Dynamics 365 for Retail.
+description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Dynamics 365 Retail.
 author: ShalabhjainMSFT
 manager: AnnBe
 ms.date: 06/10/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: b2f1d522a60721c746d03e477615265f9a8ba9a0
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: 60db9e9936f7728d76f5c7a0d0c31b33477c7c61
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625641"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023681"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -99,7 +99,10 @@ Die herkömmliche Debitorensuche kann zeitaufwendig sein, da sie über mehrere F
 
 ![Debitorensuchverknüpfungen](./media/SearchShortcutsPOS.png "Debitorensuchverknüpfungen")
 
-Um Suchkriterien als Verknüpfungen festzulegen, muss der Administrator die Seite **Einzelhandelsparameter** in Microsoft Dynamics 365 for Finance and Operations öffnen und dann auf der Registerkarte **POS-Suchkriterien** alle Kriterien auswählen, die als Verknüpfungen angezeigt werden sollen.
+
+
+Um Suchkriterien als Verknüpfungen festzulegen, muss der Administrator die Seite **Einzelhandelsparameter** in Microsoft Dynamics 365 Retail öffnen und dann auf der Registerkarte **POS-Suchkriterien** alle Kriterien auswählen, die als Verknüpfungen angezeigt werden sollen.
+
 
 ![Suchverknüpfungen konfigurieren](./media/ConfigureShortcutsAX.png "Suchverknüpfungen konfigurieren")
 
@@ -111,6 +114,6 @@ Das Feld **Reihenfolge anzeigen** bestimmt die Reihenfolge, in der Verknüpfunge
 > [!NOTE]
 > Eine benutzerdefinierte Eigenschaft, die der Enumeration hinzugefügt wird, wirkt sich nicht den standardmäßigen Debitorensuchenalgorithmus aus. Das bedeutet, dass der Debitorensuchalgorithmus nicht in der Debitoreneigenschaft suchen wird. Benutzer können nur eine benutzerdefinierte Eigenschaft für Suchvorgänge verwenden, wenn diese benutzerdefinierte Eigenschaft als Verknüpfung hinzugefügt ist oder wenn der Standardsuchenalgorithmus überschrieben wird.
 
-In einer bevorstehenden Veröffentlichung von Microsoft Dynamics 365 for Retail sind Einzelhändler in der Lage, den Standard-Debitorensuchmodus in POS auf **alle Shops durchsuchen** festzulegen. Diese Konfiguration kann in Szenarios hilfreich sein, bei denen Debitoren, die außerhalb POS erstellt wurden, umgehend gefunden werden müssen (zum Beispiel selbst bevor der Verteilungseinzelvorgang ausgeführt wird). Eine neue Option **Standarddebitoren-Suchmodus** ist im POS-Funktionsprofil verfügbar. Legen Sie diese auf **Aktiviert** fest, um den Standardsuchmodus auf **Alle Shops durchsuchen** festzulegen. Jeder Debitorensuchenversuch macht dann einen Echtzeitanruf an den Hauptsitz.
+In einer bevorstehenden Veröffentlichung von Retail sind Einzelhändler in der Lage, den Standard-Debitorensuchmodus in POS auf **Alle Shops durchsuchen** festzulegen. Diese Konfiguration kann in Szenarios hilfreich sein, bei denen Debitoren, die außerhalb POS erstellt wurden, umgehend gefunden werden müssen (zum Beispiel selbst bevor der Verteilungseinzelvorgang ausgeführt wird). Eine neue Option **Standarddebitoren-Suchmodus** ist im POS-Funktionsprofil verfügbar. Legen Sie diese auf **Aktiviert** fest, um den Standardsuchmodus auf **Alle Shops durchsuchen** festzulegen. Jeder Debitorensuchenversuch macht dann einen Echtzeitanruf an den Hauptsitz.
 
 Um unerwartete Leistungsabgänge zu verhindern, ist diese nach Konfiguration hinter einer Flight-Markierung verborgen, die lautet**CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** Um die Einstellungen **Standarddebitoren-Suchenmodus** der Benutzerschnittstelle anzuzeigen, sollte der Einzelhändler ein Supportticket für die Benutzerakzeptanztests (UAT) und die Produktumgebung erstellen. Nachdem das Ticket empfangen wurde, arbeitet das Technikteam bei dem Einzelhändler, um sicherzustellen, dass der Einzelhändler Tests in der Nicht-Produktionsumgebung durchführt, um die Leistung zu ermitteln und alle Optimierungen zu implementieren, die erforderlich sind.

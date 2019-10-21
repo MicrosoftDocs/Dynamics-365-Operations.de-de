@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a294327149cf46202fed8b63377ee77f13c11d5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1543582"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250690"
 ---
 # <a name="master-planning-home-page"></a>Startseite für die Produktprogrammplanung
 
@@ -74,7 +74,7 @@ Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics
 Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Produktprogrammplanung und zu anderen Lösungen im [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Aufgabenleitfäden
-Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb von Finance and Operations. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche **Hilfe**.
+Zusätzliche Hilfe steht über Aufgabenhandbücher zur Verfügung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche **Hilfe**.
 
 ### <a name="webinars"></a>Webinars
 [Azure Machine Learning Bedarfsplanungsstrategie nutzen](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)

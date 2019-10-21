@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent (6. Mai 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent (6. Mai 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 05/06/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c541bac532e878c8493a60d95c05c9104d4b96e1
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 6a4571abdb0e104af0a0657c75bf5a6b5764345a
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741543"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023860"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-may-6-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (6. Mai 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-may-6-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (6. Mai 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Talent neu oder geändert wurden.
+In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -45,9 +45,9 @@ Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onbo
 
 Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2282. Die Zahlen in Klammern in einigen Überschriften beziehen sich auf Supportnummern in Microsoft Dynamics Lifecycle Services (LCS).
 
-### <a name="platform-update-26"></a>Plattformupdate 26
+### <a name="platform-update-26-for-finance-and-operations"></a>Platform update 26 für Finance and Operations
 
-Zusätzliche Details zur Plattformaktualisierung 26 finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 26 (May 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
+Zusätzliche Details zu Platform update 26 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 Finance and Operations Plattformaktualisierung 26 (Mai 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-26). 
 
 ### <a name="common-data-service-entity-support-for-custom-fields"></a>Common Data Service-Entitätssupport für benutzerdefinierte Felder
 
@@ -67,7 +67,7 @@ Mit dieser Version können Sie jetzt die Finanzdimension mit **In Excel öffnen*
 
 ### <a name="worker-address-created-in-common-data-service-isnt-synced-to-talent-317555"></a>Die Arbeitskraftadresse, die in Common Data Service erstellt wurde, wird nicht mit Talent synchronisiert (317555)
 
-Mit dieser Änderung werden Adressen, die in Common Data Service erstellt werden, in Talent Core HR aktualisiert.
+Mit dieser Änderung werden Adressen, die in Common Data Service erstellt werden, in Talent: Core HR aktualisiert.
 
 
 ## <a name="in-preview"></a>Vorschau

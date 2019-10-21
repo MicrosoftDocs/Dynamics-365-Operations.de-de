@@ -1,9 +1,9 @@
 ---
 title: Ein Empfehlungssteuerelement des Transaktionsbildschirms auf POS-Geräten
 description: In diesem Thema wird beschrieben, wie Sie ein Empfehlungssteuerelement zum Transaktionsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Retail hinzufügen.
-author: ashishmsft
+author: bebeale
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 10/01/19
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,23 +19,22 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f17da3db6fbc19548544a0c6c090a0b6db093673
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: d646c8ba559ba3e8d2175911e76c57d25eff02ca
+ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606848"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "2278128"
 ---
 # <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Ein Empfehlungssteuerelement des Transaktionsbildschirms auf POS-Geräten
 
 [!include [banner](includes/banner.md)]
 
-> [!NOTE]
-> Wir entfernen die aktuelle Version des Produktempfehlungs-Service, da wir für diese Funktion einen besseren Algorithmus und neuere Einzelhandels-ausgerichtete Funktionen neu entwerfen. Weitere Informationen finden Sie unter [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features)
 
-In diesem Thema wird beschrieben, wie Sie ein Empfehlungssteuerelement zum Transaktionsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 for Retail hinzufügen.
+In diesem Thema wird beschrieben, wie Sie ein Empfehlungssteuerelement zum Transaktionsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 Retail hinzufügen. Weitere Informationen zu Produktempfehlungsfunktionen finden Sie im [Produktempfehlungsüberblick zur POS-Dokumentation.](product.md).
 
-Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft Dynamics 365 for Retail verwenden. *Empfehlungen* sind Artikel, die Ihre Kunden möglicherweise interessieren und zwar auf Basis der ihrer Einkaufshistorie, Artikel auf einem Wunschzettel und Artikel, die andere Kunden online und in der physische Filiale gekauft haben. Um Produktempfehlungen anzuzeigen, müssen Sie dem Buchungsbildschirm eine Steuerung mithilfe des Bildschirmlayoutdesigners hinzufügen.
+
+Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft Dynamics 365 Retail verwenden. Um Produktempfehlungen anzuzeigen, müssen Sie dem Buchungsbildschirm eine Steuerung mithilfe des Bildschirmlayoutdesigners hinzufügen. 
 
 ## <a name="open-layout-designer"></a>Layoutdesigner öffnen
 
@@ -45,6 +44,7 @@ Sie können Produktempfehlungen zu Ihrem POS-Gerät anzeigen, wenn Sie Microsoft
 4. Klicken Sie auf **Layout-Designer**
 5. Folgen Sie den Aufforderungen, um den Layout-Designer zu starten. Wenn Sie aufgefordert werden, die Anmeldeinformationen einzugeben, geben Sie die gleichen Anmeldeinformationen ein, die verwendet wurden, als die Seite **Bildschirmlayouts** ausgelöst wurde.
 6. Wenn Sie sich anmelden, erscheint eine Seite, ähnlich jener unten. Das Layout ist verschieden, abhängig von den Anpassungen, die für Ihre Filiale vorgenommen wurden.
+
 
     [![Layout-Designer](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
@@ -57,7 +57,9 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 
 ### <a name="make-recommendations-always-visible"></a>Empfehlungen immer sichtbar machen
 
+
 1. Reduzieren Sie die Höhe des Buchungspositionsdetailbereichs, so dass er die gleiche Höhe hat wie der Debitorenbereich links.
+
 
     [![Höhe des Buchungspositionsdetail-Bereichs reduziert](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
@@ -65,15 +67,18 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 
     [![Empfehlungssteuerelement dem Layout hinzugefügt](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
+
 3. Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
 4. Gehen Sie in Dynamics 365 for Retail zu **Einzelhandel** &gt; **IT für den Einzelhandel** &gt; **Vertriebszeitpläne**.
-5. Wählen Sie in der  **1090 Anmelden**
+5. Wählen Sie in der **1090 Anmelden**
 6. Klicken Sie auf **Jetzt ausführen**
+
 
 ### <a name="add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Eine Registerkarte "Empfehlungen" dem Schaltflächengitter auf der rechten Seite des Bildschirms hinzufügen
 
 1. Machen Sie einen Rechtsklick im Leerraum unter der letzten Registerkarte im Schaltflächenraster auf der rechten Seite.
-2.  **Anpasse** anklicken.
+
+2. Klicken Sie auf **Anpassen**.
 
     [![Anpassung – Registerkartensteuerelement-Dialogfeld](./media/pic-5.png)](./media/pic-5.png)
 
@@ -85,12 +90,14 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 
 6. Wählen Sie im Feld **Beschriftung** einen Namen für die Registerkarte "Empfehlungen". Zum Beispiel Tpy 'Empfohlene Produkte'.
 7. Wählen Sie im Feld **Fild** das Bild, das auf der Registerkarte angezeigt werden soll.
-8. Auf **OK** klicken. Die Registerkarte wird im neuen Schaltflächenraster angezeigt.
+8. Klicken Sie auf **OK**. Die Registerkarte wird im neuen Schaltflächenraster angezeigt.
 9. Klicken Sie auf **X**, um zu speichern und den Layout-Designer zu beenden.
 10. Gehen Sie in Dynamics 365 for Retail zu **Einzelhandel** &gt; **IT für den Einzelhandel** &gt; **Vertriebszeitpläne**.
-11. Wählen Sie in der  **1090 Anmelden**
+11. Wählen Sie in der **1090 Anmelden**
 12. Klicken Sie auf **Jetzt ausführen**
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Personalisierte Produktempfehlungsübersicht](personalized-product-recommendations.md)
+[Produktempfehlungen zu POS](product.md)
+
+[Produktempfehlungsübersicht](../commerce/product-recommendations.md)

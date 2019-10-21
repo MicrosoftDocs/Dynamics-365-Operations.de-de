@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6555086d6c86c17b501af9d4d8155e9c08a447
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 14b0661c4c1fa8f2bc197a8a3983b71d73199b2a
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1536548"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251545"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
@@ -163,7 +163,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </tr>
 <tr>
 <td>Bewegung durch Vorlage</td>
-<td>Verschieben Sie Artikel von einem Lagerplatz in einen anderen in einer halbautomatisierten Weise. Die Arbeitskraft wählt den Lagerplatz aus, von dem Artikel verschoben werden sollen, und Finance and Operations verwendet die Lagerplatzdirektive, um zu bestimmen, wohin die Artikel verschoben werden.</td>
+<td>Verschieben Sie Artikel von einem Lagerplatz in einen anderen in einer halbautomatisierten Weise. Die Arbeitskraft wählt den Lagerplatz aus, von dem Artikel verschoben werden sollen. Das System verwendet die Lagerplatzdirektive, um zu bestimmen, wohin die Artikel verschoben werden.</td>
 </tr>
 <tr>
 <td>Lagerortumlagerung</td>
@@ -207,12 +207,12 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 </thead>
 <tbody>
 <tr class="odd">
-<td>Keines</td>
+<td>Nichts</td>
 <td>Dieser Standardwert verarbeitet keine Arbeit.</td>
 </tr>
 <tr class="even">
 <td>Systemgeleitet</td>
-<td>Microsoft Dynamics 365 for Finance and Operations steuert den Typ der Arbeit, die einer Arbeitskraft zugewiesen wird, und die Reihenfolge, in der die Arbeitskraft die Arbeit ausführt. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>System-zugewiesene Arbeit</strong> klicken, um die Seite <strong>System-zugewiesene Sortierreihenfolge</strong> zu öffnen, in der Sie Sortierkriterien für die Arbeit einrichten können. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Arbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.</td>
+<td>Das Supply Chain Management steuert den Typ der Arbeit, die einer Arbeitskraft zugewiesen wird, und die Reihenfolge, in der die Arbeitskraft die Arbeit ausführt. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>System-zugewiesene Arbeit</strong> klicken, um die Seite <strong>System-zugewiesene Sortierreihenfolge</strong> zu öffnen, in der Sie Sortierkriterien für die Arbeit einrichten können. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Arbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.</td>
 </tr>
 <tr class="odd">
 <td>Benutzergeleitet</td>
@@ -224,7 +224,7 @@ Neben der Einrichtung der Menüelemente zum Erstellen von Lagerarbeit können Si
 </tr>
 <tr class="odd">
 <td>Systemgruppierung</td>
-<td>Microsoft Dynamics 365 for Finance and Operations gruppiert Arbeit für die Arbeitskraft basierend auf einem angegebenem Feld. Beispielsweise wird Entnahmearbeit gruppiert, wenn eine Arbeitskraft eine Lieferkennung, Ladungskennung oder einen beliebigen Wert scannt, der jede Arbeitseinheit verknüpfen kann. Wählen Sie diese Option auswählen, sind die folgenden Felder erforderlich:
+<td>Das Supply Chain Management gruppiert Arbeit für die Arbeitskraft basierend auf einem angegebenem Feld. Beispielsweise wird Entnahmearbeit gruppiert, wenn eine Arbeitskraft eine Lieferkennung, Ladungskennung oder einen beliebigen Wert scannt, der jede Arbeitseinheit verknüpfen kann. Wählen Sie diese Option auswählen, sind die folgenden Felder erforderlich:
 <ul>
 <li><strong>Systemgruppierungsfeld</strong> – Wählen Sie das Feld aus, das die Arbeitskraft scannt, um die Arbeit zu gruppieren.</li>
 <li><strong>Systemgruppierungsbezeichnung</strong> – Geben Sie Text ein, um die Arbeitskraft darüber zu informieren, was zu scannen ist, um die Arbeit zu gruppieren.</li>
@@ -245,7 +245,7 @@ Diese Option ist beispielsweise hilfreich, wenn mehrere Paletten für eine Ladun
 </tr>
 <tr class="even">
 <td>Permanente Inventur-Gruppierung</td>
-<td>Die Arbeitskraft wählt eine Zone, einen Arbeitspool oder einen Lagerplatz aus, und Microsoft Dynamics 365 for Finance and Operations weist Arbeit auf Grundlage der Auswahl zu. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>Permanente Inventur</strong> klicken, um zusätzliche Informationen anzuzeigen, und Sie können die Häufigkeit angeben, in der die Arbeitskraft die Inventur wiederholen muss, wenn ein Differenz gefunden wird.</td>
+<td>Die Arbeitskraft wählt eine Zone, einen Arbeitspool oder einen Lagerplatz aus, und das Supply Chain Management weist Arbeit auf Grundlage der Auswahl zu. Wenn Sie diese Option auswählen, können Sie im Aktivitätsbereich auf <strong>Permanente Inventur</strong> klicken, um zusätzliche Informationen anzuzeigen, und Sie können die Häufigkeit angeben, in der die Arbeitskraft die Inventur wiederholen muss, wenn ein Differenz gefunden wird.</td>
 </tr>
  <tr class="odd">
 <td>Transportladung</td>
@@ -333,7 +333,7 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Gruppeneinlagerung</td>
-<td>Aktivieren Sie diese Option, um die Entnahmearbeit zu gruppieren. Diese Option ist verfügbar, wenn die Arbeit entweder von der Arbeitskraft oder von Microsoft Dynamics 365 for Finance and Operations gruppiert wurde. Wenn die Arbeitskraft alle Entnahmearbeit in der Gruppe beendet hat, wird Entnahmearbeit für die gleiche Gruppe erstellt.</td>
+<td>Aktivieren Sie diese Option, um die Entnahmearbeit zu gruppieren. Diese Option ist verfügbar, wenn die Arbeit entweder von der Arbeitskraft oder vom Supply Chain Management gruppiert wurde. Wenn die Arbeitskraft alle Entnahmearbeit in der Gruppe beendet hat, wird Entnahmearbeit für die gleiche Gruppe erstellt.</td>
 </tr>
 <tr class="even">
 <td>Lagerregulierungstypen</td>
@@ -366,11 +366,11 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="even">
 <td>Systemgruppierungsfeld</td>
-<td>Wählen Sie das Feld aus, das bestimmt, wie Microsoft Dynamics 365 for Finance and Operations Entnahmearbeit für Arbeitskräfte gruppiert. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> auswählen, scannt die Arbeitskraft die Lieferkennung, um die Entnahmearbeit zu gruppieren. Alle Arbeit für die Lieferung wird dann der Arbeitskraft zugewiesen. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen außerdem Text im Feld <strong>Systemgruppierungsbezeichnung</strong> eingeben, um die Arbeitskraft darüber zu informieren, was zu scannen ist.</td>
+<td>Wählen Sie das Feld aus, das bestimmt, wie das Supply Chain Management Entnahmearbeit für Arbeitskräfte gruppiert. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> auswählen, scannt die Arbeitskraft die Lieferkennung, um die Entnahmearbeit zu gruppieren. Alle Arbeit für die Lieferung wird dann der Arbeitskraft zugewiesen. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen außerdem Text im Feld <strong>Systemgruppierungsbezeichnung</strong> eingeben, um die Arbeitskraft darüber zu informieren, was zu scannen ist.</td>
 </tr>
 <tr class="odd">
 <td>Systemgruppierungsbezeichnung</td>
-<td>Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit von Microsoft Dynamics 365 for Finance and Operations gruppiert wird. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie <strong>Lieferkennung</strong> in das Feld eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, nach dem im Feld <strong>Systemgruppierungsfeld</strong> gruppiert wird.</td>
+<td>Geben Sie den Text ein, der die Arbeitskraft darüber informiert, was zu scannen ist, wenn Entnahmearbeit vom Supply Chain Management gruppiert wird. Wenn Sie beispielsweise das Feld <strong>ShipmentId</strong> verwenden, um Entnahmearbeit nach Lieferung zu gruppieren, können Sie <strong>Lieferkennung</strong> in das Feld eingeben. Dieses Feld setzt voraus, dass Sie eine Menüoption erstellen, um vorhandene Arbeit zu nutzen, die vom System gruppiert wird. Sie müssen auch das Feld auswählen, nach dem im Feld <strong>Systemgruppierungsfeld</strong> gruppiert wird.</td>
 </tr>
 <tr class="even">
 <td>Standarddaten verwenden</td>
@@ -386,13 +386,13 @@ Diese Optionen werden in der folgenden Tabelle näher erläutert.
 </tr>
 <tr class="odd">
 <td>Arbeitsvorlagencode</td>
-<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist Microsoft Dynamics 365 for Finance and Operations eine Vorlage auf Grundlage von Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
+<td>Wählen Sie die Arbeitsvorlage aus, die die Arbeit für einen Prozess erstellt. Wenn Sie zum Beispiel einen Artikel für eine Bestellung erhalten, wird die Entnahmearbeit auf Grundlage der Arbeitsvorlage generiert. Wenn Sie keine Arbeitsvorlage auswählen, weist das Supply Chain Management eine Vorlage auf Grundlage von Abfragekriterien zu. Weitere Informationen zu Arbeitsvorlagen, finden Sie unter <a href="control-warehouse-location-directives.md">Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien</a>.</td>
 </tr>
 </tbody>
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Erfordern von Arbeitskräften, das Produkt, den Lagerplatz oder die Menge zu bestätigen, wenn sie Artikel entnehmen
-Sie können Arbeitsbestätigungen einrichten, die eine Arbeitskraft auffordern, ein mobiles Gerät zu verwenden, um den Lagerplatz oder die Menge zu erfassen, wenn Arbeit am Lagerort ausgeführt wird. Arbeitsbestätigungen helfen dabei, sicherzustellen, dass die Arbeitskraft am richtigen Lagerplatz ist oder die richtige Menge der Artikel bearbeitet. Sie können Microsoft Dynamics 365 for Finance and Operations auch aktivieren, um die Erfassung der Arbeitskraft automatisch zu bestätigen. Wenn Sie Autobestätigung aktivieren, können Sie keine Bestätigungen für Lagerplatz oder Menge anfordern. Arbeitsbestätigungen beinhalten auch Produkte und Produktvarianten. Darüber hinaus können Sie Bestätigungen erfassen, indem Sie einen Strichcode scannen. Um Produkte und Produktvarianten zu bestätigen, müssen Sie eine Kennung für das Produkt oder die Produktvariante eingeben. Diese Kennung kann eine Produktkennung, Produktsuchkennung, externe Kennung, GTIN oder ein Strichcode sein. Nachdem Sie die Kennung eingeben oder den Strichcode gescannt haben, werden die Dimensionen für die Produktvariante im mobilen Gerät angezeigt. 
+Sie können Arbeitsbestätigungen einrichten, die eine Arbeitskraft auffordern, ein mobiles Gerät zu verwenden, um den Lagerplatz oder die Menge zu erfassen, wenn Arbeit am Lagerort ausgeführt wird. Arbeitsbestätigungen helfen dabei, sicherzustellen, dass die Arbeitskraft am richtigen Lagerplatz ist oder die richtige Menge der Artikel bearbeitet. Sie können auch aktivieren, dass das Supply Chain Management die Registrierung der Arbeitskraft automatisch bestätigt. Wenn Sie Autobestätigung aktivieren, können Sie keine Bestätigungen für Lagerplatz oder Menge anfordern. Arbeitsbestätigungen beinhalten auch Produkte und Produktvarianten. Darüber hinaus können Sie Bestätigungen erfassen, indem Sie einen Strichcode scannen. Um Produkte und Produktvarianten zu bestätigen, müssen Sie eine Kennung für das Produkt oder die Produktvariante eingeben. Diese Kennung kann eine Produktkennung, Produktsuchkennung, externe Kennung, GTIN oder ein Strichcode sein. Nachdem Sie die Kennung eingeben oder den Strichcode gescannt haben, werden die Dimensionen für die Produktvariante im mobilen Gerät angezeigt. 
 
 In der folgenden Tabelle werden die verschiedenen Arbeitstypen beschrieben, bei denen Sie Arbeitsbestätigungen verwenden können.
 

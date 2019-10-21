@@ -1,2 +1,2 @@
 > [!NOTE]
-> Dieses Thema betrifft sowohl Dynamics 365 for Finance and Operations als auch Dynamics 365 for Retail. 
+> Dies Thema gilt für Finance, Supply Chain Management und Retail. 

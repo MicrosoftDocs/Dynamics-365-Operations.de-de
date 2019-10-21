@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 17016d015925cd31117231799b8741ffddb793f7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 3a6645bc55dfd4f03ce9872ff5017f1659b1f11c
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1562437"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017596"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Einrichten eines Lagerorts mithilfe einer Lagerortkonfigurationsvorlage
 
@@ -93,7 +93,7 @@ Sie können eine ZIP-Datei für das Datenpaket herunterladen. Diese Datei beinha
 
 Das Protokoll **Ansichtsausführung** enthält detaillierte Informationen zu jeder Datenentität, die importiert wird. Sie können die Stagingdatenansicht verwenden, um schnell zu den Zieldaten zu gelangen. Auf diese Weise können Sie sehen, wie die importierten Daten auf den zugeordneten Seiten in der Anwendung aussehen. Wenn Sie die Standarddatenvorlagen verwenden, funktioniert die Importsequenz für jede Datenentität in der vordefinierten Weise, um sicherzustellen, dass alle abhängigen Daten zuerst importiert werden. Wenn benutzerdefinierte Datenentitäten Teil des Projekts sind, müssen Sie sicherstellen, dass die korrekte Reihenfolge definiert wird. Weitere Informationen finden Sie unter [Konfigurieren von Datenvorlagen](../../dev-itpro/data-entities/configuration-data-templates.md).
 
-Weitere Informationen zum Ändern der Lagerortvorlage, um die Konfiguration eines Lagerorts aus einem Unternehmen in ein neues Unternehmen in der gleichen Instanz zu kopieren, sehen Sie sich dieses 3-minütige YouTube Video an: [Verwenden von Lagerortvorlagen, um die Konfiguration in Microsoft Dynamics 365 for Finance and Operations zu kopieren](https://www.youtube.com/watch?v=K2WIfFlqJYs)
+Weitere Informationen zum Ändern der Lagerortvorlage, um die Konfiguration eines Lagerorts aus einem Unternehmen in ein neues Unternehmen in der gleichen Instanz zu kopieren, sehen Sie sich dieses 3-minütige YouTube-Video an: [Verwenden von Lagerortvorlagen, um die Konfiguration in Finance and Operations zu kopieren](https://www.youtube.com/watch?v=K2WIfFlqJYs)
 
 ## <a name="related-topic"></a>Verwandtes Thema
 

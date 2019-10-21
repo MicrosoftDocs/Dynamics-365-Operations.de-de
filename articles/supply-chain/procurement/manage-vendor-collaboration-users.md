@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d0644372944b4c9d472ff738258665544fccbad4
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742469"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248956"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Benutzer für Kreditor-Kooperationen verwalten
 
@@ -31,7 +31,7 @@ ms.locfileid: "1742469"
 
 In diesem Thema wird beschrieben, wie Sie die Bereitstellung neuer Kreditorenzusammenarbeitsbenutzer anfordern können und wie neue Kreditorenzusammenarbeitkontakte hinzugefügt werden. 
 
-Die Kreditorenzusammenarbeitsschnittstelle in Microsoft Dynamics 365 for Finance and Operations zeigt Informationen zu Bestellungen, Rechnungen und Lieferbestand für externe Kreditoren an. Sie können neue Kreditorenzusammenarbeitkontakte erstellen und anfordern, dass neuen Benutzer bereitgestellt werden, wenn Sie als externer Kreditor mit der Sicherheitsrolle **Kreditorenadministrator (extern)** oder einer ähnlichen Berechtigung arbeiten. Sie können diese Aufgaben auch ausführen, wenn Sie als Beschaffungsspezialist arbeiten. In diesem Thema bezieht sich diese Rolle auf einen Beschaffungsspezialisten, der im Unternehmen arbeitet, das die Instanz von Finance and Operations besitzt. Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein externer Anbieter sind, finden Sie unter [Kreditoren mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Die Kreditorenzusammenarbeitsschnittstelle in Dynamics 365 Supply Chain Management zeigt Informationen zu Bestellungen, Rechnungen und Lieferbestand für externe Kreditoren an. Sie können neue Kreditorenzusammenarbeitkontakte erstellen und anfordern, dass neuen Benutzer bereitgestellt werden, wenn Sie als externer Kreditor mit der Sicherheitsrolle **Kreditorenadministrator (extern)** oder einer ähnlichen Berechtigung arbeiten. Sie können diese Aufgaben auch ausführen, wenn Sie als Beschaffungsspezialist arbeiten. In diesem Thema bezieht sich diese Rolle auf einen Beschaffungsspezialisten, der im Unternehmen arbeitet, das die Instanz von Supply Chain Management besitzt. Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein externer Anbieter sind, finden Sie unter [Kreditoren mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein Beschaffungsprofil sind, finden Sie unter [Kreditorenzusammenarbeit mit für externe Kreditoren](vendor-collaboration-work-external-vendors.md).
 
@@ -60,12 +60,12 @@ Wird eine Anforderung übermittelt, wird sie der **Kreditorenzusammenarbeit-Benu
 Bevor Sie anfordern können, dass ein neuer Benutzer bereitgestellt wird, muss diese Person als Kontakt für einen oder mehrere Kreditoren eingerichtet werden. Um eine Anfrage für einen neuen Kreditorenzusammenarbeitsbenutzer zu erstellen:
 
 1. Wählen die Seite **Alle Kontakte** und klicken Sie auf **Breitstellung Kreditorenbenutzer**.
-2. Hier geben Sie die E-Mail-Adresse des Benutzers ein. Diese Adresse wird vom Benutzer verwendet, um sich bei Finance and Operations anzumelden. Wenn die E-Mail-Adresse einer Domäne angehört, die als Mandant mit Microsoft Azure erfasst wurde, muss die E-Mail-Adresse ein vorhandenes Azure Active Directory (AAD) Konto sein, um den Bereitstellungsprozess erfolgreich abzuschließen. Wenn die E-Mail-Adresse keiner Domäne angehört, die mit Microsoft Azure erfasst wurde, wird ein AAD-Konto als Teil des Bereitstellungsprozesses erstellt und der neue Benutzer wird eine Einladungsmail erhalten. Verbraucher-E-Mail-Adressen mit Domänen wie @hotmail.com, @gmail.com oder @comcast.net können nicht dazu verwendet werden, um einen Finance and Operations-Benutzer zu erfassen.
+2. Hier geben Sie die E-Mail-Adresse des Benutzers ein. Diese Adresse wird von dem Benutzer verwendet, um sich in Supply Chain Management anzumelden. Wenn die E-Mail-Adresse einer Domäne angehört, die als Mandant mit Microsoft Azure erfasst wurde, muss die E-Mail-Adresse ein vorhandenes Azure Active Directory (AAD) Konto sein, um den Bereitstellungsprozess erfolgreich abzuschließen. Wenn die E-Mail-Adresse keiner Domäne angehört, die mit Microsoft Azure erfasst wurde, wird ein AAD-Konto als Teil des Bereitstellungsprozesses erstellt und der neue Benutzer wird eine Einladungsmail erhalten. Verbraucher-E-Mail-Adressen mit Domänen wie @hotmail.com, @gmail.com oder @comcast.net können nicht dazu verwendet werden, um einen Benutzer zu erfassen.
 3. Setzen Sie die Option **Kreditorenzusammenarbeitzugriff zulässig** auf **Ja** für alle juristischen Personen, auf die der Benutzer zugreifen muss.
 4. Wählen Sie im Abschnitt **Benutzerrollen zuweisen** das Kontrollkästen **Zuweisen** für die Sicherheitsrollen, die der neue Benutzer besitzen sollte.
 5. Klicken Sie auf **Absenden**.
 
-Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer in Finance and Operations erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Finance and Operations-Benutzer zuordnet. Weitere Informationen finden Sie unter [Was ist die Azure AD B2B-Zusammenarbeit?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+Wenn die Kreditorenbenutzeranforderung übermittelt wird, wird das Feld **Kreditorenzusammenarbeit erlaubt** für das ausgewählte Kreditorenkonto auf **Ja** festgelegt und es wird ein Benutzeranforderungsworkflow gestartet. Im Rahmen des Workflows wird ein neuer Benutzer erstellt und die Sicherheitsrollen zugewiesen. Darüber hinaus ist eine Azure B2B-Dienstleistung aktiviert, die die Interaktion mit dem Azure Portal initiiert und ein neues oder vorhandenes AAD-Konto dem Supply Chain Management-Benutzer zuordnet. Weitere Informationen finden Sie unter [Was ist die Azure AD B2B-Zusammenarbeit?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Benutzer deaktivieren
 

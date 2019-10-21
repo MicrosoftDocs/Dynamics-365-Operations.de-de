@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14801f3aa486da3af252695a3e2ccd58c0e9059
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 37378b85b90f91c74da717f0a25c1847ac0b1598
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865968"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251292"
 ---
 # <a name="sales-agreements-overview"></a>Übersicht über die Verkaufsvereinbarungen
 
@@ -55,7 +55,7 @@ Außerdem kann ein Vertrag den Debitor verpflichten, ein bestimmtes Produkt oder
 Positionen im gleichen Kaufvertrag können unterschiedliche Arten von Zusagen haben.
 
 ## <a name="pricing-terms-for-sales-agreements"></a>Preisgestaltungsbedingungen für Kaufverträge
-Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Bei einem Auftrag, der mit einem Kaufvertrag verknüpft ist, überschreiben die Preisstellungen aus dem Kaufvertrag alle anderen Preisstellungen, die auf Grundlage von Handelsvereinbarungen gelten. In der folgenden Tabelle werden die preisbezogene Felder beschrieben, die von jedem Zusagetyp betroffen sind. "Ja" legt fest, dass das Feld in einer Auftragsposition aktualisiert werden kann.
+Die Preisgestaltungsbedingungen können je nach Typ der Zusage variieren. Bei einem Auftrag, der mit einem Kaufvertrag verknüpft ist, überschreiben die Preisstellungen aus dem Kaufvertrag alle anderen Preisstellungen, die auf Grundlage von Handelsvereinbarungen gelten. In der folgenden Tabelle werden die preisbezogene Felder beschrieben, die von jedem Zusagetyp betroffen sind. „Ja“ legt fest, dass das Feld in einer Auftragsposition aktualisiert werden kann.
 
 | Zusagetyp                   | Preis je Einheit | Preiseinheit | Rabatt in Prozent | Skontobetrag |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -99,14 +99,14 @@ Wenn Sie einen Auftrag gegen einen Kaufvertrag erstellt haben (freigegeben), kö
 | Menge                                                          | Wenn die von Ihnen angegebene Menge die Menge überschreitet, die in einer Kaufvertragsposition mit aktiviertem Kontrollkästchen **Maximum wird erzwungen** angegeben ist, wird ein Dialogfeld zum Speichern der geänderten Menge angezeigt: Klicken Sie auf **Ja**, um die Verknüpfung mit der Kaufvertragsposition zu entfernen und den Preis neu zu berechnen. Klicken Sie auf **Nein**, um die Verknüpfung mit der Kaufvertragsposition ohne erneute Berechnung des Preises zu entfernen.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Rückgabe eines Artikels, der aus einem Kaufvertrag bestellt wurde
-Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Microsoft Dynamics 365 for Finance and Operations die zugehörigen Kaufvertragszusagen suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
+Wenn ein Kunde einen Produkt zurückgibt, das durch einen Kaufvertrag bestellt wurde, kann Supply Chain Management die zugehörige Kaufvertragszusage suchen und automatisch aktualisieren, um die Änderung in der Menge oder im Betrag widerzuspiegeln. Wenn Sie eine Rücklieferung basierend auf dem Originalauftrag erstellen, die mit einem Kaufvertrag verknüpft ist, richten Sie eine Beziehung zwischen der Kaufvertragszusage, der Auftragsposition und der Rücklieferungsrechnung ein.  
 
 Wenn Sie die Menge der zurückgegebenen Artikel nicht aus der Kaufvertragszusage abgezogen werden soll, können Sie das **Verknüpfung entfernen**-Steuerelements auf der Seite **Rücklieferung** verwenden, um die Verknüpfung zwischen der Rücklieferung und dem Kaufvertragszusage zu entfernen. Wenn Sie den Link später neu einrichten müssen, klicken Sie auf **Verknüpfung erstellen**.  
 
 **Hinweis:** Eine Rücklieferung kann mit nur einem Kaufvertrag verknüpft werden. Wenn Ihre Debitoren mehr als ein Produkt retourniert, das von mehr als einem Kaufvertrag bestellt wurde, müssen Sie eine neue Rücklieferung für jedes Produkt erstellen und eine Verbindung zum entsprechenden Rahmenbestellung erstellen.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatische Suche nach Kaufverträgen
-In bestimmten Situationen, in den Aufträge indirekt erstellt werden (beispielsweise, wenn Sie eine Gutschrift oder Intercompany-Aufträge erstellen), können Sie steuern, ob Microsoft Dynamics 365 for Finance and Operations automatisch nach gültigen Kaufverträgen sucht.
+In bestimmten Situationen, in den Aufträge indirekt erstellt werden (beispielsweise, wenn Sie eine Gutschrift oder Intercompany-Aufträge erstellen), können Sie steuern, ob das System automatisch nach gültigen Kaufverträgen sucht.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Finanzdimensionen in Kaufverträgen
 Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen eines Kaufvertrags kopieren. Sie können die Dimensionen bei einem Vereinbarungskopf oder -Vereinbarungsposition jederzeit ändern. In diesem Fall werden die Dimensionen automatisch auf den Freigabenkopf oder die Freigabenposition von Freigabeaufträgen kopiert.

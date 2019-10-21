@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dfeb393698431b1bbb0eb5069cc0930dc122374
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: b1f5658de1da8a0b6c36d99e4bb9cf401c09ad0b
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1559149"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249795"
 ---
 # <a name="sales-returns"></a>Retouren
 
@@ -31,7 +31,7 @@ ms.locfileid: "1559149"
 
 Die Themen dieses Abschnitts enthalten Informationen zu Rücklieferungen. Er umfasst Informationen zu einer Rücksendung und ihren Auswirkungen auf Nachkalkulations- und Lagerbestandmengen.
 
-Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nach Eingang der Kundenanfrage wird in Microsoft Dynamics 365 for Finance and Operations ein Rücklieferungsauftrag erstellt.
+Debitoren können Rückgabeartikel unterschiedlichen Gründen vornehmen. So kann ein Artikel fehlerhaft sein, oder er entsprach möglicherweise nicht den Erwartungen des Debitors. Die Rücklieferungen starten wenn Debitoren eine Artikelrückgabe anfordern. Nach Eingang der Kundenanfrage wird ein Rücklieferungsauftrag erstellt.
 
 ## <a name="return-order-process"></a>Rücklieferungsprozess
 Die folgende Abbildung bietet eine Übersicht über den Rücklieferungprozess.  
@@ -281,7 +281,7 @@ Dieses Szenario umfasst zwei Unternehmen in derselben Organisation, wie in der f
 
 ![Einfache Intercompany-Rücklieferung](./media/SalesReturn07.png)
 
-Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsauftrag im Käuferunternehmen erstellt wird, oder ein Debitorenrücklieferungsauftrag im verkaufenden Unternehmen erstellt wird. Finance and Operations erstellt den entsprechenden Auftrag im anderen Unternehmen und stellt sicher, dass die Kopf- und Positionsinformationen zum Kreditorenrücklieferungsauftrag die Einstellungen für den Debitorenrücklieferungsauftrag widerspiegeln. Der Rückgabeauftrag, der eingerichtet wird, kann die Referenz auf einen bestehende Debitorenrechnung entweder einbeziehen oder ignorieren (**Auftrag suchen**). Die Lieferscheinen und Rechnungen der beiden Aufträge können einzeln verarbeitet werden. Sie müssen beispielsweise einen Lieferschein für den Kreditorenrücklieferungsauftrag nicht generieren, bevor Sie den Lieferschein für den Debitorenrücklieferungsauftrag generieren.
+Die Auftragskette kann eingerichtet werden, wenn ein Kreditorenrücklieferungsauftrag im Käuferunternehmen erstellt wird, oder ein Debitorenrücklieferungsauftrag im verkaufenden Unternehmen erstellt wird. Der entsprechende Auftrag wird im anderen Unternehmen erstellt und stellt sicher, dass die Kopf- und Positionsinformationen zum Kreditorenrücklieferungsauftrag die Einstellungen für den Debitorenrücklieferungsauftrag widerspiegeln. Der Rückgabeauftrag, der eingerichtet wird, kann die Referenz auf einen bestehende Debitorenrechnung entweder einbeziehen oder ignorieren (**Auftrag suchen**). Die Lieferscheinen und Rechnungen der beiden Aufträge können einzeln verarbeitet werden. Sie müssen beispielsweise einen Lieferschein für den Kreditorenrücklieferungsauftrag nicht generieren, bevor Sie den Lieferschein für den Debitorenrücklieferungsauftrag generieren.
 
 ### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Direktlieferungslieferungsrücklieferungen unter drei Parteien
 

@@ -19,29 +19,29 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 07eea8fd7af4da611b4bd0c9340923f8894fab2c
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d9f36da025528272b1a95456acf597dd5d923819
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1526014"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025171"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Kopfzuschläge auf entsprechende Bestellpositionen aufteilen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen für Auto-Belastungen auf Gruppierungskopfebene und deren Aufteilung auf Einzelhandelsverkaufpositionen beschrieben. Diese Funktionen sind für Transaktionen verfügbar, die an der Verkaufsstelle in Microsoft Dynamics 365 for Retail in der Version 10.0.1 erstellt werden, und für Verkäufe, die in einem Callcenter in Microsoft Dynamics 365 for Retail in der Version 10.0. erstellt werden.
+In diesem Thema werden die Funktionen für Auto-Belastungen auf Gruppierungskopfebene und deren Aufteilung auf Einzelhandelsverkaufpositionen beschrieben. Diese Funktionen sind für Transaktionen verfügbar, die an der Verkaufsstelle in der Retail-Version 10.0.1 erstellt werden, und für Verkäufe, die in einem Callcenter in der Retail-Version 10.0. erstellt werden.
 
 Diese Funktion ist nur verfügbar, wenn die Funktion [erweiterte Auto-Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) aktiviert ist, indem Sie die Option **Einzelhandelsparameter** auf der Seite verwenden. Außerdem kann die Berechnungsmethode für erweiterte Auto-Belastungen nur auf Einzelhandelsverkaufaufträge angewendet werden, die von Einzelhandelskanälen erstellt wurden (am POS, einem Callcenter und über die Dynamics-E-Commerce-Plattform).
 
 Diese neuen Funktionen geben Organisationen mehr Flexibilität, indem Auto-Belastungen auf Kopfebene berechnet und auf Einzelhandels-Verkaufsbuchungen angewendet werden.
 
-In älteren Versionen von Microsoft Dynamics 365 for Retail als Version 10.0.1 werden Auto-Belastungen auf Kopfebene, die eine bestimmte Lieferartbeziehung haben, nur berechnet, wenn eine Übereinstimmung mit der Lieferart vorliegt, die im Auftragskopf definiert ist.
+In älteren Versionen von Retail als Version 10.0.1 werden Auto-Belastungen auf Kopfebene, die eine bestimmte Lieferartbeziehung haben, nur berechnet, wenn eine Übereinstimmung mit der Lieferart vorliegt, die im Auftragskopf definiert ist.
 
 Beispielsweise werden Auto-Belastungen auf Kopfebene für die Lieferarten **99** und **11** definiert. Ein Auftrag wird erstellt und Lieferart **99** wird im Auftragskopf definiert. Einige der Verkaufspositionen werden jedoch so eingerichtet, dass sie mit Lieferart **11** geliefert werden. In diesem Fall werden nur die Belastungen auf Kopfebene, die mit der Lieferart **99** verknüpft sind, für den Auftrag übernommen und berücksichtigt.
 
-In Dynamics 365 for Retail haben die Belastungen auf Kopfebene eine zusätzliche Funktion, mit der Sie eine [Konfiguration abgestufter Gebühren](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) festlegen können, die auf dem Auftragswert basiert. Wenn beispielsweise der Auftragswert zwischen €50,00 und €200,00 liegt, sollte eine Organisation Frachtkosten von €5,00 berechnen. Wenn der Auftragswert zwischen €200,01 und €500,00 liegt, könnten die Frachtkosten bei €4,00 liegen.
+In Retail haben die Belastungen auf Kopfebene eine zusätzliche Funktion, mit der Sie eine [Konfiguration abgestufter Gebühren](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) festlegen können, die auf dem Auftragswert basiert. Wenn beispielsweise der Auftragswert zwischen €50,00 und €200,00 liegt, sollte eine Organisation Frachtkosten von €5,00 berechnen. Wenn der Auftragswert zwischen €200,01 und €500,00 liegt, könnten die Frachtkosten bei €4,00 liegen.
 
 Einige Organisationen möchten die Vorteile der abgestuften Zuschlagsberechnung nutzen, die mit Belastungen auf Kopfebene bereitgestellt werden. In Szenarios mit gemischten Liefermodi sollte auch sichergetsllt werden, ob Belastungen, die berechnet wurden, auf der Übereinstimmung mit der Lieferart basieren, die für die einzelnen Auftragspositionen definiert ist.
 

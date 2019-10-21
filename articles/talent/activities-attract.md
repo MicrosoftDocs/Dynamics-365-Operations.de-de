@@ -1,6 +1,6 @@
 ---
-title: Aktivitäten im Einstellungsprozess in Microsoft Dynamics 365 for Talent - Attract
-description: Dieses Thema enthält Informationen zu den unterschiedlichen Aktivitätstypen, die im Einstellungsprozess verwendet werden können in Microsoft Dynamics 365 for Talent - Attract..
+title: 'Aktivitäten im Einstellungsprozess in Microsoft Dynamics 365 Talent: Attract'
+description: 'Dieses Thema enthält Informationen zu den unterschiedlichen Aktivitätstypen, die im Einstellungsprozess verwendet werden können in Microsoft Dynamics 365 Talent: Attract.'
 author: hasrivas
 manager: AnnBe
 ms.date: 05/28/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 4d52f3a384ad2a54986d1bd23baeefbaae30c9e2
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: 2e40250bb801f6222d16400b2698e5b0df47a404
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739713"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008684"
 ---
 # <a name="activities-in-hiring-processes"></a>Aktivitäten im Einstellungsprozess
 
 [!include[banner](../includes/banner.md)]
 
-Aktivitäten können als Teil des Einstellungsprozesses in Microsoft Dynamics 365 for Talent: Attract hinzugefügt werden. Aktivitäten können einer Prozessvorlage hinzugefügt werden, oder sie können in der Stelle direkt dem Einstellungsprozess hinzugefügt werden. Wenn eine Stelle definiert wird, wird eine Prozessvorlage ausgewählt, und die Aktivitäten, die in der Vorlage enthalten sind, werden auf die Stelle angewendet. Wenn die Vorlage nicht ausgewählt wird, wird die Standardvorlage verwendet. Der Einstellungsprozess kann für eine Stelle auch geändert werden, nachdem die Vorlage angewendet wurde.
+Aktivitäten können als Teil des Einstellungsprozesses in Microsoft Dynamics 365 Talent: Attract hinzugefügt werden. Aktivitäten können einer Prozessvorlage hinzugefügt werden, oder sie können in der Stelle direkt dem Einstellungsprozess hinzugefügt werden. Wenn eine Stelle definiert wird, wird eine Prozessvorlage ausgewählt, und die Aktivitäten, die in der Vorlage enthalten sind, werden auf die Stelle angewendet. Wenn die Vorlage nicht ausgewählt wird, wird die Standardvorlage verwendet. Der Einstellungsprozess kann für eine Stelle auch geändert werden, nachdem die Vorlage angewendet wurde.
 
 > [!NOTE] 
 > Prozessvorlagen sind mit dem umfassenden Add-On für Neueinstellungen verfügbar. Weitere Informationen finden Sie unter [Umfassende Einstellungs-Add-on-Funktionen für Attract](./attract-comprehensive-hiring.md).
@@ -53,7 +53,7 @@ Diese Aktivität besitzt drei Teile: Kandidatenverfügbarkeitsanforderung, Zeitp
 
 Die PowerApps-Aktivität ermöglicht es Ihnen, eine Microsoft PowerApps-App in Ihren Einstellungsprozess einzubetten. Die App kann für alle Bewerber, nur interne Bewerber, nur externe Bewerber oder keine Bewerber erforderlich gemacht werden. Wenn die App als erforderlich markiert wird, muss sie abgeschlossen werden, bevor die Phase gewechselt werden kann. Um als abgeschlossen zu gelten, muss das Feld **JobApplicationStatus** auf **Abgeschlossen** festgelegt sein. Dieses Feld befindet sich in der JobApplicationActivity-Entität, also muss die PowerApps-App dieses Feld aktualisieren, bevor die Phase erweitert werden kann. Wenn die App nicht als erforderlich markiert ist, ist die Aktivität ein optionaler Schritt und die Phase kann gewechselt werden, auch wenn die App nicht abgeschlossen ist.
 
-Um die PowerApps-Aktivität für den Einstellungsprozess zu speichern, müssen Sie eine PowerApps-ID eingeben. Um die PowerApps-ID zu suchen, wechseln Sie zu [PowerApps](https://web.powerapps.com), wählen **App** und dann **Details** aus.
+Um die PowerApps-Aktivität für den Einstellungsprozess zu speichern, müssen Sie eine PowerApps-ID eingeben. Um die PowerApps-ID zu suchen, wechseln Sie zu [PowerApps](https://web.powerapps.com), wählen**Apps** und dann **Details** aus.
 
 Standardmäßig steht die PowerApps-Aktivität dem zukünftigen Vorgesetzten, Personalbeschaffungsmitarbeiter und deren zugehörigen Stellvertretern zur Verfügung. Wenn Sie die Option **Hinzufügen von Teilnehmern für diese Aktivität zulassen** auswählen, können zusätzliche Teilnehmer aus dem Einstellungsteam für eine Anwendung hinzugefügt werden, die die PowerApps-Aktivität verwendet. Zum Beispiel hat eine Organisation eine PowerApps-App mit einer Bibliothek voller Gesprächsfragen für technische Rollen erstellt. Die Organisation sucht nun einen neuen Softwareentwickler und hat dem Einstellungsprozess die PowerApps-Aktivität für die Softwareentwicklerrolle hinzugefügt. Wenn die Option **Das Hinzufügen von Teilnehmern für diese Aktivität zulassen** ausgewählt ist, kann ein Personalbeschaffungsmitarbeiter oder ein zukünftiger Vorgesetzter, der sich einen Bewerber für die Softwareentwicklerrolle ansieht, der PowerApps-Aktivität Gesprächsleiter hinzufügen. Diese Personen können die App mit den Gesprächsfragen anzeigen.
 

@@ -1,6 +1,6 @@
 ---
-title: Erstellen und versenden eine Onboarding Anleitung mithilfe von Dynamics 365 for Talent - Onboard
-description: In diesem Thema wird erläutert, wie die Microsoft Dynamics 365 for Talent - Onboard App eine Vorlage für ein Onboarding-Handbuch für Ihre Neueinstellungen erstellt. Diese Aufgabe ist ein erster Schritt in einer Human Capital Management (HCM)-Einstellungsstrategie.
+title: Erstellen und versenden eines Onboarding-Leitfadens mithilfe von Dynamics 365 Talent - Onboard
+description: In diesem Thema wird erläutert, wie die Microsoft Dynamics 365 Talent - Onboard-App eine Vorlage für ein Onboarding-Handbuch für Ihre Neueinstellungen erstellt. Diese Aufgabe ist ein erster Schritt in einer Human Capital Management (HCM)-Einstellungsstrategie.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: de5d584e3b7edba2751aa0c83b0465df2c3e4f7d
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: e4dbfcc3b3fd611eea36109a516a7b9361a9f654
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731487"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009853"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-for-talent-onboard"></a>Erstellen und versenden eines Onboarding-Leitfadens mithilfe von Dynamics 365 for Talent: Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Erstellen und versenden eines Onboarding-Leitfadens
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard lässt Sie Onboarding Anleitungen von Vorlagen erstellen, die Sie selbst erstellt haben, von Vorlagen, die in einem Katalog verfügbar ist, oder von Grund auf neu.
+Microsoft Dynamics 365 Talent: Onboard lässt Sie Onboarding Anleitungen von Vorlagen erstellen, die Sie selbst erstellt haben, von Vorlagen, die in einem Katalog verfügbar ist, oder von Grund auf neu.
 
 Nachdem Sie ein Onboarding Handbuch erstellt haben, können Sie diese an einen neuen Mitarbeiter senden. Alternativ können Sie es an mehrere neue Mitarbeiter senden, die Sie in einer Microsoft Excel Datei angeben, die Sie von der Onboard-App herunterladen.
 

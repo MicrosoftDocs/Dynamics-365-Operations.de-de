@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 00ce4a31c0b0f466911658c79f6e32788273c127
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: a7168d13ef0b24d06aa28fbbc22bbb4e6093df24
+ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834001"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "1994909"
 ---
 # <a name="manage-order-holds"></a>Auftragssperren verwalten
 
@@ -33,45 +33,40 @@ Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen D
 
 
 ## <a name="set-up-order-holds"></a>Auftragssperren einrichten
-1. Wechseln Sie zu „Vertrieb und Marketing” > „Setup” > „Verkaufsaufträge” > „Auftragssperrcodes”.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld „Sperrcode” einen Wert ein.
-    * Geben Sie beispielsweise „Rückruf” ein.  
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-    * Beispielsweise „Auftrag gesperrt bis Kundenrückruf”.  
-    * Aktivieren Sie optional das Kontrollkästchen „Erfassungen entfernen”, um sämtliche physischen Erfassungen aus dem Auftrag zu entfernen, wenn dieser Sperrcode hinzugefügt wird.  
-5. Klicken Sie auf "Speichern".
+1. Wechseln Sie zu **Navigationsbereich > Module > Vertrieb und Marketing > Einrichtung > Aufträge > Auftragssperrcodes**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Sperrcode** einen Wert ein. Geben Sie beispielsweise „Rückruf” ein.  
+4. Geben Sie im Feld **Beschreibung** einen Wert ein.
+    - Beispielsweise „Auftrag gesperrt bis Kundenrückruf”.  
+    - Aktivieren Sie optional das Kontrollkästchen **Erfassungen entfernen**, um sämtliche physischen Erfassungen aus dem Auftrag zu entfernen, wenn dieser Sperrcode hinzugefügt wird.  
+5. Klicken Sie auf **Speichern**.
 
 ## <a name="place-order-on-hold"></a>Auftrag sperren
-1. Wechseln Sie zu "Vertrieb und Marketing" > "Aufträge" > "Alle Aufträge".
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Debitorenkonto" einen Wert ein oder wählen Sie einen Wert aus.
-4. Klicken Sie auf "OK".
-5. Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.
-6. Geben Sie im Feld "Menge" eine Zahl ein.
-7. Klicken Sie im Aktivitätsbereich auf "Auftrag".
-8. Klicken Sie auf „Auftragssperren”.
-9. Klicken Sie auf "Neu".
-10. Wählen Sie im Feld „Sperrcode” einen Code aus, den Sie in der vorherigen Teilaufgabe erstellt haben.
-11. Klicken Sie auf "Speichern".
+1. Wechseln Sie zu **Navigationsbereich > Module > Vertrieb und Marketing > Aufträge > Alle Aufträge**.
+2. Klicken Sie auf **Neu**.
+3. Geben Sie im Feld **Debitorenkonto** einen Wert ein oder wählen Sie einen Wert aus.
+4. Klicken Sie auf **OK**.
+5. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus.
+6. Geben Sie im Feld **Menge** eine Zahl ein.
+7. Klicken Sie im **Aktivitätsbereich** auf **Auftrag**.
+8. Klicken Sie auf **Auftragssperren**.
+9. Klicken Sie auf **Neu**.
+10. Wählen Sie im Feld **Sperrcode** einen Code aus, den Sie in der vorherigen Teilaufgabe erstellt haben.
+11. Klicken Sie auf **Speichern**.
 12. Schließen Sie die Seite.
-13. Wechseln Sie zu "Vertrieb und Marketing" > "Aufträge" > "Alle Aufträge".
-14. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Bei Aufträge, der derzeit gespert sind, sind die Felder „Nicht verarbeiten” und „Sperren” markiert.    
-15. Klicken Sie im Aktivitätsbereich auf "Entnehmen und verpacken".
+13. Wechseln Sie zu **Vertrieb und Marketing > Aufträge > Alle Aufträge**.
+14. Markieren Sie in der Liste die ausgewählte Zeile. Bei Aufträge, der derzeit gespert sind, sind die Felder „Nicht verarbeiten” und „Sperren” markiert.
+15. Klicken Sie im Aktivitätsbereich auf **Entnehmen und verpacken**.
 
 ## <a name="manage-order-holds"></a>Auftragssperren verwalten
-1. Wechseln Sie zu „Vertrieb und Marketing”  „Aufträge” > „Offene Bestellungen” > „Auftragsssperren”.
-    * Auftrag sperrt Seitenfunktionen als Workbench, wo Sie einen Überblick über alle aktuellen und verarbeiteten Sperren abrufen können sowie zugeordnete Verkaufsaufträge bearbeiten können.      
+1. Wechseln Sie zu **Vertrieb und Marketing > Aufträge > Offene Bestellungen > Auftragsssperren**. Die Seite **Auftragssperren** funktioniert als Workbench, wo Sie einen Überblick über alle aktuellen und verarbeiteten Sperren abrufen können sowie zugeordnete Verkaufsaufträge bearbeiten können.     
 2. Markieren Sie in der Liste die ausgewählte Zeile.
-3. Klicken Sie im Aktivitätsbereich auf „Sperre ausschecken”.
-4. Klicken Sie auf „Auschecken”.
-5. Heben Sie in der Liste die Markierung der ausgewählten Zeile auf.
-    * Das „Auschecken nach Feld” zeigt jetzt Ihre Benutzer-ID.   
-6. Klicken Sie auf „Auschchecken löschen”.
-7. Klicken Sie im Aktivitätsbereich auf „Sperre aufheben”.
-    * Wenn Sie bereit sind, die Sperre aufzuheben und die Verarbeitung des Auftrags bis zum nächsten Erfüllungsschritt zulassen, müssen Sie die Sperre aufheben. Wenn der Auftrag keine Änderungen erfordert, können Sie die Aktion „Sperren aufheben” ausführen. Allerdings können Sie die Aktion „Deaktivieren und ändern” verwenden, wenn bei der Aufhebung der Sperre der Auftrag aktualisiert werden muss.      
-    * Die Aktion „Deaktivieren und übermitteln” kann nur verwendet werden, wenn Sie Callsenterfunktionen verwenden.  
-8. Klicken Sie auf „Sperren aufhaben”.
-    * Die Sperre ist nun aus dem Auftrag deaktiviert worden und aus der Liste von aktiver Sperren entfernt worden. Um alle Sperren oder ihre Teilmengen nach einem spezifischen Status anzuzeigen, ändern Sie den Wert im Feld „Anzeigen”.     
+3. Klicken Sie im **Aktivitätsbereich** auf **Sperre ausschecken**.
+4. Klicken Sie auf **Auschecken**.
+5. Heben Sie in der Liste die Markierung der ausgewählten Zeile auf. Das **Auschecken nach Feld** zeigt jetzt Ihre Benutzer-ID.   
+6. Klicken Sie auf **Auschchecken löschen**.
+7. Klicken Sie im **Aktivitätsbereich** auf **Sperre aufheben**.
+    - Wenn Sie bereit sind, die Sperre aufzuheben und die Verarbeitung des Auftrags bis zum nächsten Erfüllungsschritt zulassen, müssen Sie die Sperre aufheben. Wenn der Auftrag keine Änderungen erfordert, können Sie die Aktion „Sperren aufheben” ausführen. Allerdings können Sie die Aktion „Deaktivieren und ändern” verwenden, wenn bei der Aufhebung der Sperre der Auftrag aktualisiert werden muss.      
+    - Die Aktion **Deaktivieren und übermitteln** kann nur verwendet werden, wenn Sie Callsenterfunktionen verwenden.  
+8. Klicken Sie auf **Sperren aufhaben**. Die Sperre ist nun aus dem Auftrag deaktiviert worden und aus der Liste von aktiver Sperren entfernt worden. Um alle Sperren oder ihre Teilmengen nach einem spezifischen Status anzuzeigen, ändern Sie den Wert im Feld „Anzeigen”.     
 

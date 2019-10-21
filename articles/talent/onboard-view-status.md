@@ -1,6 +1,6 @@
 ---
 title: Anzeigen des Status des Onboarding von Mitarbeitern und Ihrer Aufgaben
-description: In diesem Thema wird erläutert, wie die Microsoft Dynamics 365 for Talent - Onboard App verwendet wird, um zu verfolgen, woher Neueinstellungen in ihrem Onboarding Prozess sind.
+description: In diesem Thema wird erläutert, wie die Microsoft Dynamics 365 Talent-Onboard-App verwendet wird, um zu verfolgen, woher Neueinstellungen in ihrem Onboarding Prozess sind.
 author: andreabichsel
 manager: ''
 ms.date: 05/02/2019
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0e17c572b4d3b5cee3687b25fb340ad9f98247ed
-ms.sourcegitcommit: 9f762fa89c5b432667aa156c22d679a7f601952d
+ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "1731479"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009830"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Anzeigen des Status des Onboarding von Mitarbeitern und Ihrer Aufgaben
 
 [!include [banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent: Onboard lässt Sie den Status anzeigen, den Ihre Neueinstellungen in den Onboarding-Aktivitäten durchführen. Sie können alle Aufgaben auch anzeigen, die von Ihnen Oboarding Anleitungen zugewiesen wurden.
+Microsoft Dynamics 365 Talent: Onboard lässt Sie den Status anzeigen, den Ihre Neueinstellungen in den Onboarding-Aktivitäten durchführen. Sie können alle Aufgaben auch anzeigen, die von Ihnen Oboarding Anleitungen zugewiesen wurden.
 
 ## <a name="view-the-status-of-onboarding-employees"></a>Anzeigen des Status vom Onboarding von Mitarbeitern
 

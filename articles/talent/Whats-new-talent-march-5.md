@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent (5. März 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent (5. März 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 03/05/2019
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe24846ab98a75d474df045a62a72bfc41c64866
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741889"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026669"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-march-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (5. März 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (5. März 2019)
 
 [!include [banner](includes/banner.md)]
 
@@ -78,5 +78,5 @@ Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Meld
 ###  <a name="advanced-compensation-security-fixed-and-variable"></a>Erweiterte Vergütungssicherheit (feste oder variable)
 In vielen Organisationen können Vergütungs- und Vorteilsmanager nur auf bestimmte Vergütungsdatensätze zugreifen, wie z. B. für Führungskräfte oder regional-basierte Mitarbeiter. Mit dieser Änderung können Sie die Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Den festen und variablen Plänen können Sicherheitsrollen zugewiesen werden, die den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen bestimmen, wie Gehalts- oder Zulagedatensätze. Nur die Rollen mit Zugriff sind in der Lage, Vergütungen für solche Mitarbeiter zu verarbeiten.
 
-###  <a name="platform-update-24"></a>Plattformupdate 24
-Weitere Details zu Platform update 24 finden Sie unter [Neues oder Änderungen in Finance and Operations platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+###  <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 für Finance and Operations
+Weitere Details zu Platform update 24 für Finance and Operations finden Sie unter [Neues oder Änderungen in Finance and Operations platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).

@@ -19,18 +19,18 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 0a9e05fd2a08921d2718fc239afd56a957f80915
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 7476cf797685feb4c50e3cefef4c53ca37b82dff
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865111"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251407"
 ---
-# <a name="warehouse-work-policies-overview"></a>Übersicht über Lagerarbeitsrichtlinien
+# <a name="warehouse-work-policies-overview"></a>Lagerortarbeitsrichtlinien – Übersicht
 
 [!include [banner](../includes/banner.md)]
 
-Lagerortarbeitsrichtlinien in Microsoft Dynamics 365 for Finance and Operations steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
+Lagerortarbeitsrichtlinien steuern, ob Lagerortarbeit nach Lagerortprozesse in der Fertigung auf Grundlage Arbeitsauftragstyp, Lagerplatz für Lagerbestand und Produkt erstellt wird.
 
 Diese Arbeitsrichtlinie steuert, ob Lagerortarbeit für Lagerortprozesse in der Fertigung erstellt wird. Sie können die Arbeitsrichtlinie einrichten, indem Sie eine Kombination von **Arbeitsauftragstypen**, einen **Bestandslagerbestand** und ein **Produkt** verwenden. Beispielsweise wird Produkt L0101 dem Ausgangslagerplatz 001 als fertig gemeldet. Das Endprodukt wird später in einem anderen Produktionsauftrag an Ausgangslagerplatz 001 verbraucht. In diesem Fall können Sie eine Arbeitsrichtlinie einrichten, um zu verhindern, dass fertige eingelagerte Waren erstellt werden, wenn Sie Produkt L0101 dem Ausgangslagerort 001 als fertig melden. Die Arbeitsrichtlinie ist eine einzelne Entität, die durch die folgenden Informationen beschrieben werden kann:
 
@@ -223,7 +223,7 @@ SCHRITTE (25)
 <tr>
 <td></td>
 <td>15.</td>
-<td>Wählen Sie "Ja" im Feld "Fehler akzeptieren" aus.</td>
+<td>Wählen Sie „Ja“ im Feld "Fehler akzeptieren" aus.</td>
 </tr>
 <tr>
 <td></td>

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 68b285ba78a9bd654e7bfcfe8d4c6b0207346eab
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 05881b6e6e501ff3ac5a622d99fd1aaa311727a1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845593"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249516"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Verfügbarer Lagerbestand, mobiler Arbeitsbereich
 
@@ -31,7 +31,7 @@ ms.locfileid: "1845593"
 
 Dieses Thema enthält Informationen zum mobilen Arbeitsbereich **Lagerbestand**. Dieser Arbeitsbereich bietet Einblicke in reservierten und verfügbaren Bestand, jederzeit und überall.
 
-Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Finance and Operations-Mobile-App verwendet werden.
 
 ## <a name="overview"></a>Übersicht
 Normalerweise haben Unternehmen mehrere Lieferungen und mehrere Anzeigen des Lagers jeden Tag. Diese Bewegungen ändern ständig den Status des verfügbaren Lagerbestands. Der mobile Arbeitsbereich **Lagerbestand** zeigt den Status des unternehmensübergreifenden verfügbaren Lagerbestands, damit Sie die neuesten Einblicke in die Bestandsdaten auf dem mobilen Gerät Ihrer Wahl haben. Unabhängig davon, ob Sie am Lagerort, im Einkauf, im Verkauf, in der Produktion oder in der Verwaltung arbeiten oder andere Rollen haben, können jederzeit und überall den verfügbaren Lagerbestand ansehen. 
@@ -58,11 +58,11 @@ Speziell enthält der mobile Arbeitsbereich diese Funktionen:
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden 
-Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Verfügbarer Lagerbestand** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-finance-and-operations"></a>Voraussetzungen bei Verwendung von Finance and Operations 
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Verfügbarer Lagerbestand** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
-Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
+### <a name="prerequisites-if-you-use-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie mit Plattformupdate 3 oder höher verwenden 
+Wenn das Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
 
 <table>
 <thead>
@@ -96,7 +96,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

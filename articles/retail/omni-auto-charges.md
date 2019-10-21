@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 47829a6fcae37e03510929dc46b942455016df0b
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: 829fa771003de7759b237d4499aa038040b46a3f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577868"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018037"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
@@ -34,7 +34,7 @@ Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erw
 
 Wenn die erweiterten Auto-Belastungen-Funktionen aktiviert sind, können Bestellungen, die in jedem unterstützten Retail Channel (Verkaufsstelle (POS), Callcenter und online) erstellt wurden, die Vorteile der in der ERP-Anwendung definierten [Auto-Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) -Konfiguration nutzen, die in der ERP-Anwendung sowohl für Kopf- als auch Positionsebene bezogene Gebühren definiert werden.
 
-In Versionen vor Dynamics 365 for Retail-Version 10.0 [Automatische Belastung](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) sind die Konfigurationen nur für Bestellungen zugänglich, die in E-Commerce- und Call-Center-Kanälen erstellt wurden. In den Versionen 10.0 und höher können POS-erstellte Aufträge die Konfigurationen für automatische Belastungen nutzen. Auf diese Weise können der Verkaufstransaktion systematisch sonstige Zuschläge hinzugefügt werden.
+In Versionen vor Retail-Version 10.0 [Automatische Belastung](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) sind die Konfigurationen nur für Bestellungen zugänglich, die in E-Commerce- und Call-Center-Kanälen erstellt wurden. In den Versionen 10.0 und höher können POS-erstellte Aufträge die Konfigurationen für automatische Belastungen nutzen. Auf diese Weise können der Verkaufstransaktion systematisch sonstige Zuschläge hinzugefügt werden.
 
 Bei der Verwendung von Versionen vor Version 10.0 wird ein POS-Benutzer bei der Erstellung einer "Alles versenden"- oder "Auswahl versenden"-POS-Transaktion aufgefordert, manuell eine Versandgebühr einzugeben. Während die verschiedenen Belastungsfunktionen der Anwendung in Bezug darauf genutzt werden, wie die Belastungen in den Auftrag geschrieben werden, wird keine systematische Berechnung bereitgestellt – die Berechnung basiert auf der Eingabe des Benutzers, um den Wert der Belastungen zu bestimmen. Die Gebühren können nur als ein einziger "Versand"-bezogener Gebührencode hinzugefügt werden und können nach der Erstellung am POS nicht mehr einfach bearbeitet oder geändert werden.
 

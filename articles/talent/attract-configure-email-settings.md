@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von E-Mail-Einstellungen in Microsoft Dynamics 365 for Talent - Attract
-description: In diesem Thema wird erläutert, wie Einstellungen für E-Mail konfiguriert werden, die von Microsoft Dynamcis 365 für Talent - Attract gesendet werden.
+title: 'Konfigurieren von E-Mail-Einstellungen in Microsoft Dynamics 365 Talent: Attract'
+description: 'In diesem Thema wird erläutert, wie Einstellungen für E-Mail konfiguriert werden, die von Microsoft Dynamcis 365 Talent: Attract gesendet werden.'
 author: andreabichsel
 manager: AnnBe
 ms.date: 06/04/2019
@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: a8cf59064dd2f66ee50a0b0566aa712ba1f72dea
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: c891a36f01d36774bd921475fa5995d207cd2d51
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739494"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008661"
 ---
 # <a name="configure-email-settings"></a>E-Mail-Einstellungen konfigurieren
 
 [!include[banner](../includes/banner.md)]
 
-Ihre Marke etabliert die Vertrauen und hilft Ihnen eine Beziehung mit Kandidaten aufzubauen, bevor sie sich auf Ihre Positionen bewerben. Positives Markenbewusstsein zieht beste Talente an und erhöht die Loyalität bestehender Mitarbeiter. Microsoft Dynamics 365 for Talent: Mit Attract können Sie E-Mails so konfigurieren, dass sie der Marke Ihres Unternehmens entsprechen. Daher können Sie Bewerbern eine konsistente Erfahrung bei deren Fortschritt durch den Bewerbungsprozess bereitstellen.
+Ihre Marke etabliert die Vertrauen und hilft Ihnen eine Beziehung mit Kandidaten aufzubauen, bevor sie sich auf Ihre Positionen bewerben. Positives Markenbewusstsein zieht beste Talente an und erhöht die Loyalität bestehender Mitarbeiter. Mit Microsoft Dynamics 365 Talent: Attract können Sie E-Mails so konfigurieren, dass sie der Marke Ihres Unternehmens entsprechen. Daher können Sie Bewerbern eine konsistente Erfahrung bei deren Fortschritt durch den Bewerbungsprozess bereitstellen.
 
 Mit Attract können Sie diese Aktivitäten ausführen:
 

@@ -3,7 +3,7 @@ title: Deckungseinstellungen
 description: Dieses Thema enthält Informationen zur Behandlung von Deckungseinstellungen, die beim Produktprogrammplanungslauf verwendet wird, um den Artikelbedarf zu berechnen.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99e094a7131b6d3a299fc72abd0141529908ddd2
-ms.sourcegitcommit: 9e50bee6a67f0fe2fa6f86e02c7e8de16d0e2482
+ms.openlocfilehash: 3a63184852751bb65fb7e80d721f8c48fd847609
+ms.sourcegitcommit: edfd805356894710488ce07cb1c89313f448b222
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "1538893"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "1998970"
 ---
 # <a name="coverage-settings"></a>Deckungseinstellungen
 
@@ -50,6 +50,19 @@ Sie können Deckungseinstellungen auf verschiedene Arten angeben:
 
     Wechseln Sie zu **Produktinformationsverwaltung &gt; Produkte &gt;Freigegebene Produkte**. Klicken Sie auf der Seite **Details für freigegebene Produkte** auf der Registerkarte **Allgemein** in der Gruppe **Administration** auf den Link **Lagerdimensionsgruppe**. Wählen Sie auf der Seite **Lagerdimensionsgruppen** das Kontrollkästchen **Abdeckungsplan nach Dimensionen** aus, um die Deckungseinstellungen für eine Dimension in der Lagerdimensionsgruppe zu erstellen. Das Feld **Abdeckungsplan nach Dimensionn**  muss ausgewählt sein für alle Produktdimensionen wie Konfiguration, Farbe, Größe und Stil .
 
+
+## <a name="coverage-codes"></a>Abdeckungscodes
+
+Die Masterplanung kann so konfiguriert werden, dass verschiedene Wiederbeschaffungsmethoden verwendet werden. Die Wiederbeschaffungsmethoden oder Losgrößenanpassungsmethoden sind die Techniken, die vom System verwendet werden, um die Chargengröße für eingekaufte oder produzierte Artikel zu ermittlen. 
+
+Jeder Wiederbeschaffungsmethode wird eines der folgenden Dispositionsverfahren zugewiesen:
+
+- **Manuell** – Die Losgrößenanpassungsmethode, bei der das System keine Käufe, Umlagerungen oder Produktionsaufträge für den Artikel vorschlägt. Der Planer für den Artikel ist für die Erstellung der erforderlichen Aufträge für die Wiederbeschaffung des Artikels verantwortlich.
+- **Per Anforderung** – Die Losgrößenanpassungsmethode, bei der das System einen geplanten Kauf, eine Umlagerung oder einen Produktionsauftrag gemäß Anforderung für den Artikel erstellt. Dies wird im Allgemeinen für teure Artikel mit periodischem Bedarf verwendet.  
+- **Pro Periode** – Die Losgrößenanpassungsmethode, die den gesamten Bedarf für eine Periode in einen Auftrag für den Artikel kombiniert. Der Auftrag wird für den ersten Tag der Periode geplant und die Menge erfüllt die Nettoanforderungen für die festgelegte Periode. Die Periode beginnt mit der ersten Anforderung des Artikels und deckt die festgelegte Dauer ab. Die nächsten Periode beginnt mit den nächsten Anforderungen des Artikels.
+- **Min/Max** – Die Losgrößenanpassungsmethode, die die Wiederbeschaffung des Bestands bis zu einem bestimmten Level enthält, wenn die vorhergesagte Verfügbarkeit unter einem bestimmten Schwellenwert liegt. Die Wiederbeschaffungsmenge ist die Differenz zwischen dem maximalen Leven und dem Level der vorhergesagten Verfügbarkeit.
+
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Produktprogrammpläne](master-plans.md)
+[Hauptpläne](master-plans.md)

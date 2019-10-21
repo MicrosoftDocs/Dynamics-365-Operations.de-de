@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39d66bb9fd2e121b7ce842d869c2a0a0fa5fa8a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: a7acf4e5397ee7276b0f881f4859267371266de0
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553437"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249539"
 ---
 # <a name="inventory-journals"></a>Lagererfassungen
 
@@ -33,7 +33,7 @@ ms.locfileid: "1553437"
 
 In diesem Thema wird beschrieben, wie Sie Lagererfassungen verwenden können, um verschiedene Typen von physischen Bestandstransaktionen zu buchen.
 
-Die Bestandserfassungen in Microsoft Dynamics 365 for Finance and Operations werden verwendet, um physische Bestandstransaktionen unterschiedlicher Art wie Abgangs- und Zugangsbuchungen, Bestandsumlagerungen oder die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
+Die Lagererfassungen in Supply Chain Management werden verwendet, um physische Lagerbuchungen unterschiedlicher Arten, wie Abgangs-und Zugangsbuchungen Lagerumlagerungen, die Erstellung von Stücklisten (BOMs) zu buchen und zur Abstimmung des physischen Bestands. Alle diese Lagererfassungen werden auf ähnliche Weise verwendet, sie werden jedoch in verschiedene Arten unterteilt.
 
 ## <a name="types-of-inventory-journals"></a>Arten der Lagererfassung
 Die folgenden Lagererfassungstypen stehen zur Verfügung:
@@ -68,7 +68,7 @@ Bei der Fertigmeldung einer Stückliste, können Sie eine Stücklistenerfassung 
 
 ### <a name="item-arrival"></a>Wareneingang
 
-Sie können die Wareneingangserfassung verwenden, um die Erfassung von Artikelzugängen zu registrieren (beispielsweise aus Bestellungen). Eine Wareneingangserfassung kann im Rahmen der Eingangsverwaltung auf der Seite **Wareneingangsübersicht** erstellt werden, oder Sie können manuell einen Erfassungseintrag auf der Seite **Wareneingang** erstellen. Wenn Sie die Wareneingangserfassung aktivieren, um nach Entnahmeorte zu suchen, überprüft Finance and Operations die Lagerplätze für eingegangene Artikel und generiert Lagerplatzziele für die eingehenden Artikel, wenn es Platz findet.
+Sie können die Wareneingangserfassung verwenden, um die Erfassung von Artikelzugängen zu registrieren (beispielsweise aus Bestellungen). Eine Wareneingangserfassung kann im Rahmen der Eingangsverwaltung auf der Seite **Wareneingangsübersicht** erstellt werden, oder Sie können manuell einen Erfassungseintrag auf der Seite **Wareneingang** erstellen. Wenn Sie die Wareneingangserfassung aktivieren, um nach Entnahmeorte zu suchen, überprüft Supply Chain Management die Lagerplätze für eingegangene Artikel und generiert Lagerplatzziele für die eingehenden Artikel, wenn es Platz findet.
 
 ### <a name="production-input"></a>Produktions-Wareneingang
 
@@ -103,7 +103,7 @@ Datenentitäten unterstützen die folgenden Arten von Integrationsszenarien:
 Weitere Informationen finden Sie unter [Datenentitäten](../../dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
-> Nicht bei allen Bestandserfassungen ist OData aktiviert. Deshalb können Sie nicht den Excel-Datenkonnektor verwenden, damit Daten veröffentlicht, aktualisiert und zurück in Dynamics 365 for Finance and Operations importiert werden. 
+> Nicht bei allen Bestandserfassungen ist OData aktiviert. Deshalb können Sie nicht den Excel-Datenkonnektor verwenden, damit Daten veröffentlicht, aktualisiert und zurück in Supply Chain Management importiert werden. 
 
 Ein weiterer Unterschied zwischen den Erfassungsdatenentitäten ist die Fähigkeit, zusammengesetzte Entitäten zu verwenden, die sowohl die Kopfzeilen- als auch Positionsdaten enthalten. Aktuell können Sie die zusammengesetzten Entitäten verwenden für:
 -   Lagerregulierungserfassung

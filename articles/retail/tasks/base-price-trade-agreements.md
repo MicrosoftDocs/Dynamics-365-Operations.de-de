@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8138b6144cc6ba09834f2bfb61cc7334767307d6
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 45d3d962958d0487c9e65910a2dce24097a83773
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017757"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispreis und Handelsvereinbarungen
 
@@ -56,7 +56,7 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspez
 24. Klicken Sie auf **Handelsvereinbarungen erstellen**.
 25. Klicken Sie auf **Neu**.
 26. Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-27. Wählen Sie in der Liste "Einzelhandel'' aus. In den Demodaten hat das Journal "Einzelhandel" die standardmäßige Relation "Preis (Verkauf)". Das bedeutet, dass alle erstellten neuen Positionen standardmäßig auf Verkaufspreis-Handelsvereinbarungen festgelegt werden.  
+27. Wählen Sie in der Liste **Einzelhandel** aus. In den Demodaten hat das Journal **Einzelhandel** die standardmäßige Relation **Preis (Verkauf)**. Das bedeutet, dass alle erstellten neuen Positionen standardmäßig auf Verkaufspreis-Handelsvereinbarungen festgelegt werden.  
 28. Klicken Sie im **Aktivitätsbereich** auf **Positionen**.
 29. Wählen Sie im Feld **Kontocode** die Option „Gruppe“ aus.
 30. Klicken Sie im Feld **Konto-Auswahl** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.

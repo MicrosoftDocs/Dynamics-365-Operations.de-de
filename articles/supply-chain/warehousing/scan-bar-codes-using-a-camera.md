@@ -1,6 +1,6 @@
 ---
-title: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations – Lagerorte scannen
-description: In diesem Thema wird erläutert, wie Sie Dynamics 365 for Finance and Operations – Warehousing einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen.
+title: Strichcodes mithilfe einer Kamera in Dynamics 365 Supply Chain Management – Warehousing-App
+description: In diesem Thema wird erläutert, wie Sie die Dynamics 365 Supply Chain Management – Warehousing-App einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,26 +17,26 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 5ec9197c2e8b7970fcbf5ea42612c60f940bcae0
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742931"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251458"
 ---
-# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations – Lagerorte scannen
+# <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Strichcodes mithilfe einer Kamera in Dynamics 365 Supply Chain Management – Warehousing-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie Dynamics 365 for Finance and Operations – Warehousing einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen. 
+In diesem Thema wird erläutert, wie Sie die Dynamics 365 Supply Chain Management – Warehousing-App einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen. 
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
-Damit Sie diese Funktion verwenden können, müssen Sie 1.2.0.0 Version des Warehousings eingerichtet haben, und Ihr Gerät muss eine Kamera haben. Wenn Sie die App nach der Aktualisierung öffnen, werden Sie aufgefordert, Dynamics 365 for Finance and Operations – Warehousing zu erlauben, die Kamera zu verwenden. Wenn Ihr Gerät keine Kamera hat, wird keine entsprechende Meldung angezeigt, und Sie können die Kamera nicht als Scanner verwenden. 
+## <a name="prerequisites"></a>Voraussetzungen
+Damit Sie diese Funktion verwenden können, müssen Sie 1.2.0.0 Version der Warehousing-App eingerichtet haben, und Ihr Gerät muss eine Kamera haben. Wenn Sie die App nach der Aktualisierung öffnen, werden Sie aufgefordert, der App zu erlauben, die Kamera zu verwenden. Wenn Ihr Gerät keine Kamera hat, wird keine entsprechende Meldung angezeigt, und Sie können die Kamera nicht als Scanner verwenden. 
 
 ## <a name="setup"></a>Einrichten
 In der Anzeige der Warehousing-Anwendung können Sie auswählen, ob die Kamera für Scannen von Strichcodes verwendet wird. Wenn Sie **Verwenden Sie die Kamera als Scanner** aktivieren, können Sie die Kamera auf jedem Eingabefeld verwenden, bei dem der bevorzugte Eingabemodus auf **Scannen** festgelegt ist. 
 
-Um zu steuern, ob ein Eingabefeld gescannt werden soll, legen Sie auf der Seite **Lagerort-App-Feldnamen** in Dynamics 365 for Finance and Operations **Bevorzugter Eingabemodus** auf **Scannen** fest. Wenn diese Option aktiviert ist, kann eine Kamera für das Scannen in der Warehousing-App verwendet werden. Informationen darüber, wie Sie App-Feldnamen im Warehousing konfigurieren, finden Sie unter [Konfigurieren Sie App-Feldnamen in der Warehousing-App](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
+Um zu steuern, ob ein Eingabefeld gescannt werden soll, legen Sie auf der Seite **Feldnamen in Lagerortanwendung** **Bevorzugter Eingabemodus** auf **Scannen** fest. Wenn diese Option aktiviert ist, kann eine Kamera für das Scannen in der Warehousing-App verwendet werden. Informationen darüber, wie Sie App-Feldnamen im Warehousing konfigurieren, finden Sie unter [Konfigurieren Sie App-Feldnamen in der Warehousing-App](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse).
 
 ## <a name="supported-bar-code-formats"></a>Unterstützte Strichcodeformate
 Die Formate der allgemeinsten Strichcodes einschließlich Code 128 Code 39, Codes 93, EAN-8, EAN-13, UPC-A und QR unterstützt. 

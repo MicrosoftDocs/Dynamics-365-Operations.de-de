@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1ec1edb861619bae2ae3c211720b55e170b83ec9
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ec51c1a500b5c9ff2c363cfb69cc1d404e939df9
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916621"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250644"
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Eine Bedarfsplanung manuell ändern
 
@@ -41,5 +41,5 @@ Im folgenden Verfahren wird gezeigt, wie Sie die Planung für einen Artikel änd
 
 ## <a name="modify-the-forecast-in-excel"></a>Ändern der Planung in Excel
 1. Klicken Sie auf **Öffnen** in Microsoft Office.
-2. Klicken Sie auf **Bearbeiten der Bedarfsprognose** in Excel. In Excel können Sie Bedarfsplanungspositionen hinzufügen, löschen und bearbeiten. Wenn die Daten in Excel nicht angezeigt werden können, müssen Sie sich mit aktivierter Option "Angemeldet bleiben" in Microsoft Dynamics 365 for Finance and Operations Enterprise Edition anmelden und der Datenverbindungs-App vertrauen.  
+2. Klicken Sie auf **Bearbeiten der Bedarfsprognose** in Excel. In Excel können Sie Bedarfsplanungspositionen hinzufügen, löschen und bearbeiten. Wenn die Daten in Excel nicht angezeigt werden können, müssen Sie sich mit aktivierter Option „Angemeldet bleiben“ anmelden und der Datenverbindungs-App vertrauen.  
 

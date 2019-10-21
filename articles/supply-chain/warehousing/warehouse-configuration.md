@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471ab164d7bd2e85f5192c082a905f3c30de3d2b
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1866088"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026715"
 ---
 # <a name="warehouse-configuration-overview"></a>Übersicht über die Lagerkonfiguration
 
@@ -34,7 +34,7 @@ In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enth�
 **Hinweis:** Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
-Das Lagerortverwaltungssystem in Microsoft Dynamics 365 for Finance and Operations ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
+Das Lagerortverwaltungssystem in Finance and Operations ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
 
 -   Sie können Lagerbereiche mit hoher und niedriger Priorität für eine optimale Platzierung von Waren einrichten.
 -   Sie können Ihre Lagerorte in die Zonen aufteilen, um verschiedene Lageranforderungen, wie Temperaturanforderungen oder unterschiedliche Umschlagsgeschwindigkeiten, für Artikel zu berücksichtigen.

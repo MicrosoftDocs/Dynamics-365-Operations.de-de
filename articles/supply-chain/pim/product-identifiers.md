@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 58a32bd7f857e8173996cd4eb21f176bae508587
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1546224"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250598"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner 
 
@@ -36,13 +36,13 @@ Wenn Sie mit Produkten in der Produktion (BDE) oder in einem Lagerort in Microso
 
 ## <a name="unique-product-numberproduct-id"></a>Eindeutige Produktnummer/Produkt-ID
 
-In Microsoft Dynamics 365 for Finance and Operations der primäre Bezeichner für ein Produkt ist die Produktnummer (d.h. die eindeutige Produkt-ID). Diese Nummer kann automatisch durch einen Nummernkreis generiert werden, oder sie kann manuell einem Produkt zugeordnet werden. Für Produktvarianten können die Zahlen durch die Produktnomenklaturvorlage definiert werden.
+In Dynamics 365 Supply Chain Management der primäre Bezeichner für ein Produkt ist die Produktnummer (d.h. die eindeutige Produkt-ID). Diese Nummer kann automatisch durch einen Nummernkreis generiert werden, oder sie kann manuell einem Produkt zugeordnet werden. Für Produktvarianten können die Zahlen durch die Produktnomenklaturvorlage definiert werden.
 
-In vielen Fällen wird die Produktnummer ursprünglich nicht im Bereich Finance and Operations erstellt. Stattdessen ist es mit einem Produkt in einem Produktlebenszyklussystem (PLM) oder einem  Produktdatenverwaltungssystem (PDM) zugeordnet. In diesem Fall können Sie Datenentitäten verwenden, um die Produkte und Produktvarianten zu importieren. Finance and Operations wird dann die Zahlen in allen Arbeitsgängen verwenden.
+In vielen Fällen wird die Produktnummer ursprünglich nicht in Dynamics 365 Supply Chain Management erstellt. Stattdessen ist es mit einem Produkt in einem Produktlebenszyklussystem (PLM) oder einem  Produktdatenverwaltungssystem (PDM) zugeordnet. In diesem Fall können Sie Datenentitäten verwenden, um die Produkte und Produktvarianten zu importieren. Supply Chain Management verwendet dann die Zahlen in allen Arbeitsgängen.
 
-Wenn Sie Finance and Operations implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Eine gute Produktkennung ist maximal 15 Zeichen lang. Idealerweise hat diese weniger als 10 Zeichen und schließt nicht mehr als klassifizierende fünf Zeichen ein. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchbegriff ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
+Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Eine gute Produktkennung ist maximal 15 Zeichen lang. Idealerweise hat diese weniger als 10 Zeichen und schließt nicht mehr als klassifizierende fünf Zeichen ein. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchbegriff ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
 
-Wenn Sie den Common Data Service (CDS) verwenden, ist die Produktnummer in Finance and Operations auch die Produktnummer im CDS. Produktvarianten werden zu den CDS als eindeutig identifizierbare Produkte synchronisiert.
+Wenn Sie Common Data Service verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Common Data Service. Produktvarianten werden zu den Common Data Service als eindeutig identifizierbare Produkte synchronisiert.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikel- und Produktdimensionen
 
@@ -56,19 +56,19 @@ Darüber hinaus sind Sie in der Lage, auf der Produktnummer, den Produktnamen so
 
 ## <a name="product-name-and-description"></a>Geben Sie einen Namen und eine Beschreibung ein
 
-Der Produktname und -beschreibung sind die visuell lesbaren Bezeichner eines Produkts und können in vielen Sprachen verwaltet werden. Standardmäßig werden im Finance and Operations alle Produktinformationen  in der Standardunternehmensprache, nicht in der Sprache des Benutzers angezeigt. Allerdings werden übersetzte Produktnamen und Beschreibungen in der Kommunikation mit Debitoren und Kreditoren verwendet. Die Übersetzungen basieren auf dem Sprachcode der Debitoren- und Kreditorenkonten.
+Der Produktname und -beschreibung sind die visuell lesbaren Bezeichner eines Produkts und können in vielen Sprachen verwaltet werden. Standardmäßig werden in Supply Chain Management alle Produktinformationen in der Standardunternehmensprache, nicht in der Sprache des Benutzers angezeigt. Allerdings werden übersetzte Produktnamen und Beschreibungen in der Kommunikation mit Debitoren und Kreditoren verwendet. Die Übersetzungen basieren auf dem Sprachcode der Debitoren- und Kreditorenkonten.
 
 Für Produktvarianten können die Produktnamen durch die Produktnomenklaturvorlage definiert werden. Da es nicht erforderlich ist, das Produktnamen eindeutig sind, stellen Sie möglicherweise fest, dass mehrere Produkte, die denselben Namen haben.
 
 ## <a name="product-and-item-search-names"></a>Produkt- und Artikelsuchenamen
 
-Finance and Operations und bietet sekundären Arbeitsgänge einen Suchbegriff für Produkte sowie für Artikel anzeigen (freigegebene Produkte). Dieser Suchname muss nicht eindeutig sein, und er kann geändert werden, nachdem ein Produkt oder eine Produktvariante erstellt wurde. Es wird empfohlen, dass Sie den Suchnamen verwenden, um Produkte nach Kategorien zu suchen. Die Suchnamen ermöglichen Schnellsuchen, insbesondere in Verkaufs- und Einkaufsprozessen.
+Supply Chain Management und bietet sekundären Arbeitsgänge einen Suchbegriff für Produkte sowie für Artikel anzeigen (freigegebene Produkte). Dieser Suchname muss nicht eindeutig sein, und er kann geändert werden, nachdem ein Produkt oder eine Produktvariante erstellt wurde. Es wird empfohlen, dass Sie den Suchnamen verwenden, um Produkte nach Kategorien zu suchen. Die Suchnamen ermöglichen Schnellsuchen, insbesondere in Verkaufs- und Einkaufsprozessen.
 
 Der Suchname kann auch eine Debitoren- oder Kreditorenprodukt-ID oder irgendeine andere externe Produkt-ID enthalten, wenn diese externe ID das primäre Suchkriterium für ein Produkt ist.
 
 ## <a name="external-product-identifiers-customer-and-vendor-identifiers"></a>Externe Produktkennungen (Debitoren- und Kreditorenkennungen)
 
-Für freigegebene Produkte können Sie die Artikelnummern, die Artikelbeschreibungen und die Artikelnamen verwalten, die der Debitor oder Kreditor verwendet. Die Verweise werden auf externen Dokumenten angezeigt, wie Aufträgen, Bestellungen, Lieferscheinen und Rechnungen. In der aktuellen Version der erhaltenen Finanzierung und Arbeitsgänge werden die externen Verweise nicht auf Kernarbeitsgangsseiten angezeigt. Die einzige Ausnahme ist die Kreditorenartikelnummer. Diese Nummer wird im Dialogfeld **Produktinformationen** angezeigt, wenn ein Standardkreditor für das freigegebene Produkt definiert wird.
+Für freigegebene Produkte können Sie die Artikelnummern, die Artikelbeschreibungen und die Artikelnamen verwalten, die der Debitor oder Kreditor verwendet. Die Verweise werden auf externen Dokumenten angezeigt, wie Aufträgen, Bestellungen, Lieferscheinen und Rechnungen. In der aktuellen Version der erhaltenen Supply Chain Management werden die externen Verweise nicht auf Kernarbeitsgangsseiten angezeigt. Die einzige Ausnahme ist die Kreditorenartikelnummer. Diese Nummer wird im Dialogfeld **Produktinformationen** angezeigt, wenn ein Standardkreditor für das freigegebene Produkt definiert wird.
 
 Sie können die externen Produktbezeichner nach freigegebenem Produkt, freigegebener Produktvariante, Debitor oder Debitorengruppe oder Kreditor, bzw. Kreditorengruppe verwalten.
 
@@ -77,7 +77,7 @@ Sie können die externen Produktbezeichner nach freigegebenem Produkt, freigegeb
 - Klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
 - Für Verkäufer klicken Sie im Aktivitätsbereich auf der Registerkarte **Einkauf** in der Gruppe **Zugehörige Informationen** auf **Externe Artikelbeschreibung**.
 
-Auf der Seite **Externe Artikelbeschreibungen** können Sie die Artikelnummer des Debitors oder Kreditors einem freigegebenen Produkt zuordnen. Diese Zuordnung muss für jede juristische Person ausgeführt werden. Die folgenden Informationen können erfasst werden. Leider sind die Bezeichnungen in der aktuellen Version von Finance and Operations etwas irreführend. Allerdings können dieser Beschriftungen in einer künftigen Version geändert werden.
+Auf der Seite **Externe Artikelbeschreibungen** können Sie die Artikelnummer des Debitors oder Kreditors einem freigegebenen Produkt zuordnen. Diese Zuordnung muss für jede juristische Person ausgeführt werden. Die folgenden Informationen können erfasst werden. Leider sind die Bezeichnungen in der aktuellen Version von Supply Chain Management etwas irreführend. Allerdings können dieser Beschriftungen in einer künftigen Version geändert werden.
 
 | Feld | Einschließlich Debitoreninformationen | Entsprechende Kreditoreninformationen |
 |-------|------------------------------------|----------------------------------|
@@ -104,15 +104,15 @@ Um Strichcodes auf der Seite **Freigegebene Produkte** auf der Registerkarte **L
 
 Im E-Commerce ist es wichtig, dass alle Parteien eine gemeinsame Sprache finden und auf Produkte verweisen, indem ein gemeinsamer Satz an Bezeichner verwendet wird. Daher verlassen sich einige Branchen auf die [GTIN](https://www.gs1.org/id-keys/gtin), was ein globales Artikelnummernsystem ist, das von GS1 zur Verfügung gestellt wird.
 
-In Finance and Operations empfehlen wir, dass Sie GTIN als Strichcode behalten. Allerdings können Sie dies auch auf der Seite **Artikel - GTIN** warten. Um diese Seite auf der Seite **Freigegebene Produkte** auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Lagerort** zu öffnen, wählen Sie **GTIN-Codes** aus. Beachten Sie, dass das GTIN nicht als globale Nummer verwaltet wird. Stattdessen erfolgt die Verwaltung nach juristischen Personen.
+Es wird empfohlen, die GTIN als Strichcode zu behalten. Allerdings können Sie dies auch auf der Seite **Artikel - GTIN** warten. Um diese Seite auf der Seite **Freigegebene Produkte** auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Lagerort** zu öffnen, wählen Sie **GTIN-Codes** aus. Beachten Sie, dass das GTIN nicht als globale Nummer verwaltet wird. Stattdessen erfolgt die Verwaltung nach juristischen Personen.
 
-In Finance and Operations definieren Sie in den Verpackungsvarianten Lagerortarbeitsgänge mithilfe bestimmter Maßeinheiten. Beispielsweise könnte ein Artikel in Artikeln, in die Bündelungen von sechs, in Ablagen oder vollständigen Paletten gelagert werden. Eine bestimmte Maßeinheit wird für jede dieser Verpackungsvarianten definiert. Da die GTIN in der Regel der Verpackungseinheit eines Produkts zugeordnet wird, können Sie auf der Seite **Artikel - GTIN** mehrere GTIN-Codes pro Produkt und pro Maßeinheit verwalten. Allerdings kann der gleiche GTIN-Code nicht mehrmals für unterschiedliche Artikel oder Produktvarianten einer juristischen Person verwendet werden.
+In Supply Chain Management definieren Sie in den Verpackungsvarianten Lagerortarbeitsgänge mithilfe bestimmter Maßeinheiten. Beispielsweise könnte ein Artikel in Artikeln, in die Bündelungen von sechs, in Ablagen oder vollständigen Paletten gelagert werden. Eine bestimmte Maßeinheit wird für jede dieser Verpackungsvarianten definiert. Da die GTIN in der Regel der Verpackungseinheit eines Produkts zugeordnet wird, können Sie auf der Seite **Artikel - GTIN** mehrere GTIN-Codes pro Produkt und pro Maßeinheit verwalten. Allerdings kann der gleiche GTIN-Code nicht mehrmals für unterschiedliche Artikel oder Produktvarianten einer juristischen Person verwendet werden.
 
 Um **GTIN-Codes** auf der Seite **Freigegebene Produkte** auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Lagerort** zu verwalten, wählen Sie **GTIN** aus.
 
 ## <a name="external-codes"></a>Externe Codes
 
-Externe Codes können für viele Entitäten im Bereich Finance and Operations definiert werden. Beispielsweise können Sie externe Codes definieren, um Produkte und freigegebene Produkte zu identifizieren. Diese externen Codes können verwendet werden, um statistische Codes oder Steuercodes mit freigegebenen Produkten und freigegebenen Produktvarianten zuzuordnen. Externe Codes werden nach juristischer Person und Codetyp definiert. Sie müssen in Bezug auf juristische Person, Codetyp und Tabellenverweis eindeutig sein.
+Externe Codes können für viele Entitäten definiert werden. Beispielsweise können Sie externe Codes definieren, um Produkte und freigegebene Produkte zu identifizieren. Diese externen Codes können verwendet werden, um statistische Codes oder Steuercodes mit freigegebenen Produkten und freigegebenen Produktvarianten zuzuordnen. Externe Codes werden nach juristischer Person und Codetyp definiert. Sie müssen in Bezug auf juristische Person, Codetyp und Tabellenverweis eindeutig sein.
 
 Leider gibt es keine Standardfunktionalität, mit der Sie nach Produkten per externer Codes suchen können.
 
@@ -136,13 +136,13 @@ Leider gibt es keine Standardfunktionalität, mit der Sie nach Produkten per ext
 
 ### <a name="product-and-item-number-sequences"></a>Artikel- und Produktdimensionen
 
-In Finance and Operations können Sie zwei Nummernkreise definieren:
+Sie können zwei unterschiedliche Nummernkreise festlegen.
 
 - Der Nummernkreis **Produktnummer** für die globale Produktnummer
 - Der Nummernkreis **Artikelnummer** für die Artikelnummer pro juristische Person
 
 > [!NOTE]
-> Sie sollten die Artikelnummer nur als separaten Bezeichner verwenden, wenn Sie unterschiedliche juristische Personen aus verschiedenen Quellen migrieren, die verschiedene Nummerierungssysteme hatten. Sie sollten immer versuchen, einen Produktbezeichner zu verwenden, der für alle juristischen Personen eindeutig ist. Daher sollten Sie die Option **Manuell** auf **Ja** für den Nummernkreis **Artikelnummer** festlegen. Auf diese Weise folgt die Produktnummer der Artikelnummer bei der Erstellung. Wenn Finance and Operations nicht das führende System für neue Produktnummern ist, sollten Sie die Option **Manuell** auf **Ja** für **Artikelnummer** und **Produktnummer** Nummernkreise festlegen.
+> Sie sollten die Artikelnummer nur als separaten Bezeichner verwenden, wenn Sie unterschiedliche juristische Personen aus verschiedenen Quellen migrieren, die verschiedene Nummerierungssysteme hatten. Sie sollten immer versuchen, einen Produktbezeichner zu verwenden, der für alle juristischen Personen eindeutig ist. Daher sollten Sie die Option **Manuell** auf **Ja** für den Nummernkreis **Artikelnummer** festlegen. Auf diese Weise folgt die Produktnummer der Artikelnummer bei der Erstellung. Wenn Supply Chain Management nicht das führende System für neue Produktnummern ist, sollten Sie die Option **Manuell** auf **Ja** für **Artikelnummer** und **Produktnummer** Nummernkreise festlegen.
 
 Wenn Sie die Entität **Freigegebenes Produkt V2** verwenden, um Produkte zu erstellen, können mehrere Einstellungen sich darauf auswirken, wie die Nummernkreise verwendet werden, um die Produktnummer und Artikelnummer zu erstellen:
 

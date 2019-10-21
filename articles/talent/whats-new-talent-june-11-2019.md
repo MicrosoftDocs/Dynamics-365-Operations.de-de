@@ -1,6 +1,6 @@
 ---
-title: Neuerungen und Änderungen in Dynamics 365 for Talent (11. Juni 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen und Änderungen in Dynamics 365 Talent (11. Juni 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 06/11/2019
@@ -18,24 +18,24 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-06-11
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a1413ea43e852c78ede227b69c0f49c07944a872
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: b06dc0556bd1461573cd56abed602d72333a3f39
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741616"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023929"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-june-11-2019"></a>Neuerungen und Änderungen in Dynamics 365 for Talent (11. Juni 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-june-11-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (11. Juni 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
 ### <a name="search-engine-optimization-for-job-posts"></a>Suchmaschinenoptimierung für Stellenausschreibungen
 
-Nachdem Sie die **Suchmaschinen-Optimierung** im Dynamics 365 for Talent: Attract Admin Center aktiviert haben, informiert Attract die Google-Indizierungsanwendungsprogrammierschnittstelle (API), um die Webseite zu durchsuchen, wenn Sie eine neue Stelle aktivieren und veröffentlichen oder eine bestehende Stelle aktualisieren. Auf diese Weise wird die Stelle in den Suchergebnissen für Google und andere Suchmodule angezeigt.
+Nachdem Sie die **Suchmaschinen-Optimierung** im Dynamics 365 Talent: Attract Admin Center aktiviert haben, informiert Attract die Google-Indizierungsanwendungsprogrammierschnittstelle (API), um die Webseite zu durchsuchen, wenn Sie eine neue Stelle aktivieren und veröffentlichen oder eine bestehende Stelle aktualisieren. Auf diese Weise wird die Stelle in den Suchergebnissen für Google und andere Suchmodule angezeigt.
 
 Ebenso wird, sobald Sie eine Stelle verbergen, Attract die indezierende API informieren, dass die gelöschte Stelle nicht mehr in den Suchergebnissen angezeigt werden soll.
 
@@ -50,15 +50,15 @@ Genehmigungen werden im Abschnitt **Genehmigungen** im Dashboard angezeigt. Gene
 
 ## <a name="changes-in-onboard"></a>Änderungen in Onboard
 
-Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 for Talent: Onboard.
+Diese Version enthält kleinere Fehlerkorrekturen für Dynamics 365 Talent: Onboard.
 
 ## <a name="changes-in-core-hr"></a>Core HR-Änderungen
 
 Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.2337.
 
-### <a name="platform-update-27"></a>Plattformupdate 27
+### <a name="platform-update-27-for-finance-and-operations"></a>Platform update 27 für Finance and Operations
 
-Zusätzliche Details zur Plattformaktualisierung 27 finden Sie unter [Vorschaufunktionen in Dynamics 365 for Finance and Operations Plattformaktualisierung 27 (Juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
+Zusätzliche Details zu Platform update 27 für Finance and Operations finden Sie unter [Vorschaufunktionen in Dynamics 365 Finance and Operations Plattformaktualisierung 27 (Juni 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-27).
 
 ### <a name="feature-management-workspace-in-talent"></a>Funktionsverwaltungsarbeitsbereich im Talent
 

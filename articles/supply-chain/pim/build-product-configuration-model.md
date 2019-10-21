@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b50aa1df7a169e71d3e2e477bd1515d70cedccab
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865375"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249493"
 ---
 # <a name="product-configuration-overview"></a>Produktkonfiguration – Übersicht
 
@@ -60,6 +60,9 @@ Ein Produktkonfigurationsmodell besteht aus einer oder mehreren Komponenten, die
 
 Jede Komponente enthält eines oder mehrere Attribute, die dessen Eigenschaften identifizieren. Die Attribute sind das, was Benutzer beim Konfigurationsprozess auswählen. Attribute steuern Interkomponenten- und Intrakomponentenbeziehungen durch die Einbeziehung in den Einschränkungen oder in Berechnungen. Durch Bedingungen, die für die Stücklistenpositionen angewendet werden, können die Attribute verwendet werden, um zu ermitteln, aus welchen physischen Teilen das konfigurierte Produkt bestehen wird. Außerdem kann ein Attribut die Eigenschaft einer Stücklistenposition durch einen Zuordnungsmechanismus steuern. Ähnliche Funktionen sind für Arbeitsplan-Arbeitsgänge hinsichtlich Einbeziehung und Eigenschafteneinstellungen vorhanden.
 
+>[!NOTE]
+> Wenn Sie Attributtypen erstellen, vermeiden Sie es, eine hohe Anzahl von Werten für die Attributtypdomäne zu erstellen. Dies könnte die Geschwindigkeit des Produktkonfigurators verringern. 
+
 ### <a name="expression-constraints"></a>Ausdruckseinschränkungen
 
 Die Verwendung eines einschränkungsbasierten Produktkonfigurationsmodell bedeutet, dass einige Einschränkungen bestehen, wenn der Benutzer Werte für die verschiedenen Attribute auswählt. Solche Einschränkungen können als Ausdruckseinschränkungen implementiert werden, indem die OML (Optimization Modeling Language) verwendet wird. Alternativ kann eine Einschränkung in Form einer Tabelleneinschränkung implementiert werden.
@@ -70,7 +73,7 @@ Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefiniert
 
 Eine benutzerdefinierte Tabelleneinschränkung wird vom Benutzer erstellt. Der Benutzer wählt eine Kombination von Attributtypen aus, um die Spalten der Tabelle darzustellen und gibt dann Werte aus den Domänen der ausgewählten Attributtypen ein, um die Zeilen in der Tabelleneinschränkung zu bilden.  
 
-Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Microsoft Dynamics 365 for Finance and Operations-Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Finance and Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
+Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Finance and Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
 
 Eine Tabelleneinschränkung wird in einem Produktkonfigurationsmodell einbezogen, indem die Tabelleneinschränkungsdefinition verwiesen und die betreffenden Attribute im Modell zu den Spalten in der Tabelleneinschränkung zuordnet werden.
 

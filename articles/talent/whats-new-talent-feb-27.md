@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent (27. Februar 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent (27. Februar 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/27/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-02-27
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d8e6a02b43ad60e3a0c4382f98cb808066587da7
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: f175c6e60cf87c7dcbde0eaf35357130fa035712
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023998"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-february-27-2019"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent (27. Februar 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-february-27-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (27. Februar 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -77,9 +77,9 @@ Es gibt weitere kleinere Fehlerkorrekturen in dieser Version.
 
 In vielen Organisationen hat der Vergütungs- und Vorteilsmanager nur Zugriff auf bestimmte Kompensationsdatensätze. Diese Datensätze sind möglicherweise für Führungskräfte oder regionale Mitarbeiter. Mit dieser Änderung können Personalverwaltungsmitarbeiter Vergütungspläne für verschiedene Mitarbeitergruppen in der Organisation verwalten. Sicherheitsrollen, die festen und variablen Plänen zugewiesen werden können, legen den Zugriff auf die Pläne und die Mitarbeiterdaten in Verbindung mit den Plänen fest (wie z. B. Gehalts- oder Bonusdatensätze). Nur die Rollen mit festgelegtem Zugriff sind in der Lage, Vergütungen für solche Mitarbeiter zu verarbeiten.
 
-### <a name="platform-update-24"></a>Plattformupdate 24
+### <a name="platform-update-24-for-finance-and-operations"></a>Platform update 24 für Finance and Operations
 
-Weitere Informationen über Microsoft Dynamics 365 for Finance and Operations platform update 24 (März 2019) finden Sie unter [Vorschaufunktionen in Finance and Operations, platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
+Weitere Informationen über Platform update 24 für Microsoft Dynamics 365 Finance and Operations (März 2019) finden Sie unter [Vorschaufunktionen in Finance and Operations, platform update 24 (März 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-24).
 
 ### <a name="make-employee-fixed-compensation-available-for-future-position-assignments"></a>Feste Mitarbeitervergütung für zukünftige Positionszuweisungen verfügbar machen
 
@@ -87,10 +87,10 @@ Mitarbeiter werden üblicherweise mit einen zukünftigen Startdatum zu einer Org
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance-and-operations"></a>Änderungen an der Core HR-Integrationsvorlage (Talent Common Data Service  zu Finance and Operations)
+### <a name="changes-to-the-core-hr-integration-template-talent-common-data-service-to-finance"></a>Änderungen an der Core HR-Integrationsvorlage (Talent Common Data Service zu Finance)
 Die Vorlage für Core HR wurde in eine „erweiterte Abfragevorlage“ aktualisiert. Daher ist die erweiterte Abfrage standardmäßig für Projekte verfügbar, die mit dieser Vorlage erstellt werden. Darüber hinaus werden sämtliche Standardzuordnungsfunktionen nur im Editor für erweiterte Abfragen angezeigt. (Standardzuordnungsfunktionen werden als „FN“in den Zuordnungen angezeigt.)
 
-Weitere Informationen über Zuordnungsfehler finden Sie unter [Neuigkeiten oder Änderungen in Dynamics 365 for Talent Core HR (14. Dezember 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
+Weitere Informationen über Zuordnungsfehler finden Sie unter [Neuigkeiten oder Änderungen in Dynamics 365 Talent: Core HR (14. Dezember 2018)](https://docs.microsoft.com/dynamics365/unified-operations/talent/whats-new-talent-december-14).
 
 Um die neue Vorlage zu verwenden, erstellen Sie ein neues Projekt, und wählen Sie die neue Talent-Integrationsvorlage aus.
 

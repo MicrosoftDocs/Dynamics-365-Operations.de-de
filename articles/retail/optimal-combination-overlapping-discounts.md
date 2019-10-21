@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00d7457b13e6633c9285a1fc43b8f6dd60dae9ae
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 555098a7d11cb0b4c0f90357ff260598e80108f5
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2017919"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Ermittelt die optimale Kombination von überlappenden Rabatten
 
@@ -32,7 +32,7 @@ ms.locfileid: "1836531"
 
 Wenn Rabatte überlappen, müssen Sie die Kombination von Rabatten überlappenden bestimmen, die Buchungssumme niedrigsten oder höchsten den Rechnungsrabatt erzeugen. Wenn der Rabattbetrag gemäß dem Preis der gekauften Produkte schwankt, wie bei üblichen Aktionen wie „kaufen 1 günstiger erhalten“ (BOGO), wird dieser Prozess ein Thema der kombinatorischen Optimierung.
 
-Dieser Artikel gilt für Microsoft Dynamics AX 2012 R3 mit KB 3105973 (veröffentlicht am 2. November 2015) oder höher und für Microsoft Dynamics 365 for Retail. Damit die Kombination sich überschneidender Rabatte zeitnah angewendet werden kann, haben wir eine Methode zum Anwenden sich überschneidender Rabatte eingeführt. Es erhalten diese neue Methode angezeigt **Schwellenwertklassifizierung**. Die Schwellenwertklassifizierung wird verwendet, wenn die Zeit, die erforderlich ist, um die möglichen Kombinationen von sich überschneidenden Rabatten zu bewerten, einen Schwellenwert überschreitet, der auf der Seite **Einzelhandelsparameter** konfigurierbar ist. In der Schwellenwertklassifizierungsmethode wird ein Wert für jeden überlappenden Rabatt berechnet, indem der Wert des Rabatts auf den freigegebenen Produkten verwendet. Die überlappenden Rabatte werden dann dem höchsten relativen Wert der niedrigste relativen Wert angewendet. Einzelheiten über die neue Methode, lesen Sie den Abschnitt "Schwellenwert", später in diesem Artikel. Schwellenwertklassifizierung wird nicht verwendet, wenn Skontobeträgen für das Produkt nicht durch unterschiedliche Produkt in der Buchung betroffen sind. Beispielsweise kann diese Methode nicht für zwei einfache Rabatte oder einen einfachen Rabatt und einen einzelnen Produktmengenrabatt verwendet.
+Dieser Artikel gilt für Microsoft Dynamics AX 2012 R3 mit KB 3105973 (veröffentlicht am 2. November 2015) oder höher und für Dynamics 365 Retail. Damit die Kombination sich überschneidender Rabatte zeitnah angewendet werden kann, haben wir eine Methode zum Anwenden sich überschneidender Rabatte eingeführt. Es erhalten diese neue Methode angezeigt **Schwellenwertklassifizierung**. Die Schwellenwertklassifizierung wird verwendet, wenn die Zeit, die erforderlich ist, um die möglichen Kombinationen von sich überschneidenden Rabatten zu bewerten, einen Schwellenwert überschreitet, der auf der Seite **Einzelhandelsparameter** konfigurierbar ist. In der Schwellenwertklassifizierungsmethode wird ein Wert für jeden überlappenden Rabatt berechnet, indem der Wert des Rabatts auf den freigegebenen Produkten verwendet. Die überlappenden Rabatte werden dann dem höchsten relativen Wert der niedrigste relativen Wert angewendet. Einzelheiten über die neue Methode, lesen Sie den Abschnitt "Schwellenwert", später in diesem Artikel. Schwellenwertklassifizierung wird nicht verwendet, wenn Skontobeträgen für das Produkt nicht durch unterschiedliche Produkt in der Buchung betroffen sind. Beispielsweise kann diese Methode nicht für zwei einfache Rabatte oder einen einfachen Rabatt und einen einzelnen Produktmengenrabatt verwendet.
 
 ## <a name="discount-examples"></a>Rabattbeispiele
 

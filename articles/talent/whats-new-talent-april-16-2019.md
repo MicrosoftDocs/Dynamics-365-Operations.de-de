@@ -1,6 +1,6 @@
 ---
-title: Neuigkeiten oder Änderungen in Dynamics 365 for Talent (16. April, 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuigkeiten oder Änderungen in Dynamics 365 Talent (16. April, 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/16/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: adf8f470b00a565c62a27f857d490c6c000b21d8
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 0781a479ebf37334d8eba18ea6d69d7cfb9db9ea
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024136"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-16-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 for Talent (16. April, 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (16. April, 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 for Talent neu oder geändert wurden.
+In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent neu oder geändert wurden.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -47,11 +47,11 @@ Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.22
 
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Entitäten für Kompensationsregion, Kompensationsstufe, Vorteilsoption und Fähigkeitstypen in Common Data Service wurden aktualisiert, um Debitorenfeldsupport einzuschließen
 
-Mit dieser Version wurden diese Common Data Service-Entitäten aktualisiert, um die Möglichkeit abzudecken, dass ein benutzerdefiniertes Feld einbezogen wird, das über Talent (Core HR) eingeschlossen wird.
+Mit dieser Version wurden diese Common Data Service-Entitäten aktualisiert, um die Möglichkeit abzudecken, dass ein benutzerdefiniertes Feld einbezogen wird, das über Talent: Core HR eingeschlossen wird.
 
 ### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Neuer Common Data Service Entitätssupport für: Kompensationsübertragungsregeln, variable Kompensationsplan für variable Kompensation
 
-Mit dieser Version wurden Kompensationsübertragungsregeln, Plan für variable Kompensation und variable Kompensation in Common Data Service hinzugefügt. Diese Entitäten unterstützen auch die benutzerdefinierten Felder, die über Talent (Core HR) hinzugefügt werden.
+Mit dieser Version wurden Kompensationsübertragungsregeln, Plan für variable Kompensation und variable Kompensation in Common Data Service hinzugefügt. Diese Entitäten unterstützen auch die benutzerdefinierten Felder, die über Talent: Core HR hinzugefügt werden.
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI-Aktualisierungsproblem (314342)
 
@@ -95,6 +95,6 @@ Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben
 
 ### <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
 
-Mit der Plattformaktualisierung 25 können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
+Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
 
 

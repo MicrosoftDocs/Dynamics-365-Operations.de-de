@@ -1,6 +1,6 @@
 ---
 title: Verbesserungen bei der Bargeldverwaltung
-description: In diesem Thema werden die Verbesserungen bei der Bargeldverwaltung in POS für Dynamics 365 for Retail beschrieben.
+description: In diesem Thema werden die Verbesserungen bei der Bargeldverwaltung in POS für Dynamics 365 Retail beschrieben.
 author: anpurush
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 845cba3b536b0f800b7c7c4eecee46a068ca8cff
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 49d70a8d983bf3475e01f8fcb80d569b13568485
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1630052"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019530"
 ---
 # <a name="cash-management-improvements"></a>Verbesserungen bei der Bargeldverwaltung
 
@@ -32,9 +32,11 @@ ms.locfileid: "1630052"
 
 Bargeldverwaltung ist eine wesentliche Funktion für Einzelhändler in physischen Läden. Einzelhändler möchten, dass ihre Läden Systeme haben, die eine vollständige Nachverfolgbarkeit und Verantwortbarkeit bei Bargeld und dessen Bewegung über verschiedene Kassen und Kassierer in einem Laden hinweg ermöglichen. Sie müssen in der Lage sein, eventuelle Differenzen abzustimmen und die Verantwortlichkeit zu bestimmen.
 
-Microsoft Dynamics 365 for Retail verfügt über Bargeldverwaltungsfunktionen in seiner Verkaufsstellen-(POS)-Anwendung. In Versionen von Retail, die vor Version 10.0.3 liegen, ist die Bargeldverwaltungsfunktion nicht robust genug, um eine vollständige Nachverfolgbarkeit von Bargeldbewegungen in Läden zu ermöglichen. Obwohl Einzelhändler das Bargeld in einem Laden abstimmen können, können sie nicht präzise die Verantwortlichkeit bestimmen, sollte es zu Bargeldabweichungen kommen.
 
-In Microsoft Dynamics 365 for Retail, Version 10.0.3 und höher, erhalten Einzelhändler die Nachverfolgbarkeit für die Bargeldhandhabung. Als Teil dieser Nachverfolgbarkeit werden Einzelhändler dazu in der Lage sein, Geldschränke zu definieren, doppelseitige Bargeldtransaktionen durchzuführen und Bargeldverwaltungstransaktionen abzustimmen.
+Microsoft Dynamics 365 Retail verfügt über Bargeldverwaltungsfunktionen in seiner Verkaufsstellen-(POS)-Anwendung. In Versionen von Retail, die vor Version 10.0.3 liegen, ist die Bargeldverwaltungsfunktion nicht robust genug, um eine vollständige Nachverfolgbarkeit von Bargeldbewegungen in Läden zu ermöglichen. Obwohl Einzelhändler das Bargeld in einem Laden abstimmen können, können sie nicht präzise die Verantwortlichkeit bestimmen, sollte es zu Bargeldabweichungen kommen.
+
+
+In Retail, Version 10.0.3 und höher, erhalten Einzelhändler die Nachverfolgbarkeit für die Bargeldhandhabung. Als Teil dieser Nachverfolgbarkeit werden Einzelhändler dazu in der Lage sein, Geldschränke zu definieren, doppelseitige Bargeldtransaktionen durchzuführen und Bargeldverwaltungstransaktionen abzustimmen.
 
 ## <a name="set-up-traceability-and-define-safes"></a>Einrichten von Nachverfolgbarkeit und Definieren von Geldschränken
 

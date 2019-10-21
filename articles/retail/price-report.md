@@ -19,19 +19,19 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 72f4d248f3ac49bbfd8e5a7a12352d92b89bb0eb
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 4fb02bdeca2d71d84ebdddfd16d471a532823e42
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1564946"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025194"
 ---
 # <a name="retail-price-reports"></a>Einzelhandelspreisberichte
 
 [!include [banner](includes/banner.md)]
 
 
-Um ihren Kunden konkurrenzfähige Preise anbieten zu können, ändern die Einzelhändler oft die Preise der Produkte. Shopleiter wollen die Möglichkeit haben, auf aktuelle oder bevorstehende Preisänderungen leicht zuzugreifen, so dass sie für die benötigten Ressourcen planen können, um die in den Regalen der Filialen angezeigten Preisschilder zu aktualisieren. Mit der Version 10.0 von Dynamics 365 for Retail kann ein Shopleiter den Bericht **Preis** öffnen, indem er zu **Alle Einzelhandelsgeschäfte \> Shop \> Preisbericht** navigiert und die aktualisierten Preise für die mit dem Shop verbundenen Produkte anzeigt. 
+Um ihren Kunden konkurrenzfähige Preise anbieten zu können, ändern die Einzelhändler oft die Preise der Produkte. Shopleiter wollen die Möglichkeit haben, auf aktuelle oder bevorstehende Preisänderungen leicht zuzugreifen, so dass sie für die benötigten Ressourcen planen können, um die in den Regalen der Filialen angezeigten Preisschilder zu aktualisieren. Mit der Version 10.0 von Retail kann ein Shopleiter den Bericht **Preis** öffnen, indem er zu **Alle Einzelhandelsgeschäfte \> Shop \> Preisbericht** navigiert und die aktualisierten Preise für die mit dem Shop verbundenen Produkte anzeigt. 
 
 Um den Preisbericht zu aktivieren, muss der Parameter **Preisbericht für Einzelhandelsgeschäft aktivieren** aktiviert sein. Dieser Parameter befindet sich auf der Registerkarte **Einzelhandelsparameter \> Rabatte \> Sonstige**. Wenn Sie die Seite **Preisbericht** öffnen, wird ein Dialogfeld mit verschiedenen Konfigurationen angezeigt. Die verfügbaren Konfigurationen sind nachfolgend aufgeführt.
 

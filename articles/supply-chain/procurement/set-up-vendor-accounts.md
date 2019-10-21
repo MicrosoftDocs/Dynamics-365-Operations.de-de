@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7653b01a8d5b80d3026a04d9979906d9ddae5d27
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547674"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249390"
 ---
 # <a name="set-up-vendor-accounts"></a>Einrichten von Kreditorenkonten
 
@@ -60,13 +60,13 @@ Können Sie Kontakte für einen Kreditoren speichern. Diese Kontakte können dan
 
 Um Kontakte für einen Kreditor hinzuzufügen, klicken Sie auf der Seite **Alle Kreditoren** auf der Registerkarte **Kreditor** in der Gruppe **Einstellungen** auf **Kontakte** &gt; **Kontakte hinzufügen**.  
 
-Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können Sie auch Details einer anderen Person kopieren, die bereits in Microsoft Dynamics 365 for Finance and Operations registriert ist und die Informationen nach Bedarf bearbeiten.  
+Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können Sie auch Details einer anderen Person kopieren, die bereits in Supply Chain Management registriert ist und die Informationen nach Bedarf bearbeiten.  
 
 **Hinweis:** Einen Kontakt für einen Kreditor hinzuzufügen ist nicht das Gleiche, wie das Hinzufügen von Kontaktinformationen für diesen Kreditor . Obwohl Sie allgemeine Kontaktinformationen für einen Kreditor hinzugefügt haben, möchten Sie vielleicht auch bestimmte Personen, die Kontakte dieses Unternehmens sind und die ihre eigenen Kontaktinformationen haben, hinzufügen.  
 
 Sie können keinen Kontaktpersondatensatz löschen, wenn der Kontakt auf ein Dokument verweist. Stattdessen können Sie den Kontakt deaktivieren.  
 
-Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft Office 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Finance and Operations und Office 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
+Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft Office 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Supply Chain Management und Office 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditoren in verschiedenen juristischen Personen
 Wenn ein Kreditor für eine juristische Person in der Organisation erfasst ist und andere juristische Personen den gleichen Kreditor erfassen müssen, können Sie die Seite **Kreditor zu anderer juristischer Person hinzufügen** verwenden, um den Kreditor zu so konfigurieren, dass er Geschäfte mit einer anderen juristischen Person tätigen kann. Wählen Sie für den Kreditor in der ausgewählten juristischen Person eine Kreditorengruppe, eine Währung und einen Sperrstatus aus.  

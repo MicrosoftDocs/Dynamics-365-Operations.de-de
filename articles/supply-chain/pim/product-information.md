@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0ac817fc4e8329563e524cea967c8337262fe2c3
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f4e378bc0a72e05f940ae352ad0f1c0709d9d3a4
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563527"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2249470"
 ---
 # <a name="product-information-overview"></a>Produktinformationsübersicht
 
@@ -57,17 +57,17 @@ Ein Produkt wird hauptsächlich durch eine Produktnummer, einen Namen und eine B
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Vertrieb, Export und Import von Produktdaten
 
-Die Produktdefinition kann in Microsoft Dynamics 365 for Finance and Operationserstellt werden. Sie kann auch von der Produktlebenszyklusverwaltung (PLM), von der Produktdatenverwaltung (PDM) oder von Produktinformationsmanagement (PIM)-Systemen importiert werden. Werden mehrere Finance and Operations-Instanzen verwendet, ist eine Instanz in der Regel der Master der Produktdaten für alle anderen Instanzen. Dieser Ansatz wird von einem großen Satz an Datenentitäten unterstützt, der den Import und Export von Produktdefinitionsdaten von einer Instanz zu einer anderen ermöglicht.
+Die Produktdefinition kann in Supply Chain Management erstellt werden. Sie kann auch von der Produktlebenszyklusverwaltung (PLM), von der Produktdatenverwaltung (PDM) oder von Produktinformationsmanagement (PIM)-Systemen importiert werden. Werden mehrere Supply Chain Management-Instanzen verwendet, ist eine Instanz in der Regel der Master der Produktdaten für alle anderen Instanzen. Dieser Ansatz wird von einem großen Satz an Datenentitäten unterstützt, der den Import und Export von Produktdefinitionsdaten von einer Instanz zu einer anderen ermöglicht.
 
-Um die Verteilung von Produktdaten auf viele Instanzen zu unterstützen, ermöglicht Finance and Operations Ihnen die Nutzung des Common Data Service. Produktdefinitionen können von einer Finance and Operations-Instanz zu Common Data Service exportiert werden. Die Produktdefinitionen können dann verwendet werden, um andere Geschäftsanwendungen wie Microsoft Dynamics 365 for Sales mit Produktdaten zu versorgen.
+Um die Verteilung von Produktdaten auf viele Instanzen zu unterstützen, ermöglicht Supply Chain Management Ihnen die Nutzung des Common Data Service. Produktdefinitionen können von einer Supply Chain Management-Instanz zu Common Data Service exportiert werden. Die Produktdefinitionen können dann verwendet werden, um andere Geschäftsanwendungen wie Dynamics 365 Sales mit Produktdaten zu versorgen.
 
 Beachten Sie, dass sich in dynamischen und agilen Organisationen die Produktinformationsdaten täglich ändern. Deshalb ist die Verwaltung von genauen und tatsächlichen Produktdaten selbst ein kritischer Geschäftsprozess.
 
 ## <a name="product-masters-and-product-variants"></a>Produktmaster und Produktvarianten
 
-In einer agilen Welt, in der Produkte an die Kundenanforderungen schnell angepasst werden müssen, geben Produktdefinitionen einen Satz an Produkten dar anstelle von eindeutig identifizierbaren Produkten. In Microsoft Dynamics 365 for Finance and Operations werden diese generischen Produkte als *Produktmaster* bezeichnet. Produktmaster enthalten die Definition und die Regeln, die angeben, wie eindeutig identifizierbare Produkte in Geschäftsprozessen beschrieben sind uns sich verhalten. Auf Grundlage dieser Definitionen können eindeutig identifizierbare Produkte generiert werden. Diese eindeutig identifizierbare Produkte bezeichnet man als *Produktvarianten*.
+In einer agilen Welt, in der Produkte an die Kundenanforderungen schnell angepasst werden müssen, geben Produktdefinitionen einen Satz an Produkten dar anstelle von eindeutig identifizierbaren Produkten. In Supply Chain Management werden diese generischen Produkte als *Produktmaster* bezeichnet. Produktmaster enthalten die Definition und die Regeln, die angeben, wie eindeutig identifizierbare Produkte in Geschäftsprozessen beschrieben sind uns sich verhalten. Auf Grundlage dieser Definitionen können eindeutig identifizierbare Produkte generiert werden. Diese eindeutig identifizierbare Produkte bezeichnet man als *Produktvarianten*.
 
-In Finance and Operations wird ein Produktmaster einer Produktdimensionsgruppe und einer Konfigurationstechnologie zugeordnet, um die Geschäftsregeln anzugeben. Die Produktdimensionen (Farbe, Größe, Stil und Konfiguration) sind ein bestimmter Satz an Attributen, der in der Anwendung verwendet werden kann, um das Verhalten verwandter Produkte zu definieren und zu verfolgen. Diese Dimensionen helfen Benutzern bei der Suche nach Produkten und deren Identifizierung.
+Ein Produktmaster wird einer Produktdimensionsgruppe und einer Konfigurationstechnologie zugeordnet, um die Geschäftsregeln anzugeben. Die Produktdimensionen (Farbe, Größe, Stil und Konfiguration) sind ein bestimmter Satz an Attributen, der in der Anwendung verwendet werden kann, um das Verhalten verwandter Produkte zu definieren und zu verfolgen. Diese Dimensionen helfen Benutzern bei der Suche nach Produkten und deren Identifizierung.
 
 ## <a name="configuration-technologies"></a>Konfigurationstechnologien
 
@@ -77,7 +77,7 @@ Sie können zwischen drei Konfigurationstechnologien wählen:
 - Die dimensionsbasierte Konfiguration wird üblicherweise bei Fertigungsszenarien verwendet und ermöglicht Ihnen die Nutzung der Konfigurationsdimension in der Definition der Stücklisten (BOMs). Nachdem eine bestimmte Konfiguration ausgewählt ist, verwendet das System die Teilmenge der Stücklistenpositionen, die für diese Konfiguration für die Planung und Produktion gültig sind. Dieses Konzept ist auch als *globale Stückliste* bekannt, da eine gemeinsame Stückliste für alle Konfigurationen eines Produkts verwendet wird.
 - Die einschränkungsbasierte Konfiguration verwendet ein Produktkonfigurationsmodell, um alle möglichen Attribute und Komponenten zu beschreiben, die erforderlich sind, um alle möglichen Varianten eines Produkts in einem einzigen Modell zu beschreiben. Die Einschränkungen der Kombinationen von Attributen können über regelmäßige Ausdrücke oder tabellenbasierte Einschränkungen beschrieben werden. Konfigurationsmodelle und Konfiguratoren werden beim Produktinformationsmanagement wichtig und werden in allen Branchen eingesetzt.
 
-Wenn Sie die Implementierung von Finance and Operations planen, müssen Sie die richtige Konfigurationstechnologie für einen Geschäftsprozess auswählen. Ein Produkt kann nach der Implementierung nicht von einem Modell in ein anderes konvertiert werden.
+Wenn Sie die Implementierung von Supply Chain Management planen, müssen Sie die richtige Konfigurationstechnologie für einen Geschäftsprozess auswählen. Ein Produkt kann nach der Implementierung nicht von einem Modell in ein anderes konvertiert werden.
 
 ## <a name="product-variant-model-definition-workspace"></a>Produktvariantenmodell-Definition – Arbeitsbereich
 

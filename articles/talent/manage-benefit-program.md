@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 5c54e5fccd7ddc5f8f024e692bb46f4140134578
-ms.sourcegitcommit: 282f05635a7b933fe9bdda7a8187f322ed5ede17
+ms.openlocfilehash: a9a26450be97f655df8bc5983e4718341d40a2d6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "1755396"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009899"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definieren und verwalten eines Vorteilprogramms
 
@@ -51,7 +51,7 @@ Für jeden Vorteilstyp, wie Augen- oder Zahnmedizin, kann eine Organisation den 
 [![Vergütungsplan](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Berechtigung
-Viele Faktoren bestimmen die Eignung der Arbeitskraft für unterschiedliche Arten von Vorteil, die ein Arbeitgeber anbietet. Wenn Sie einen Vorteil in Microsoft Talant erstellen, können Sie den Typ der Berechtigung festlegen, der für diesen Vorteil gilt. 
+Viele Faktoren bestimmen die Eignung der Arbeitskraft für unterschiedliche Arten von Vorteil, die ein Arbeitgeber anbietet. Wenn Sie einen Vorteil in Dynamics 365 Talent erstellen, können Sie den Typ der Berechtigung festlegen, der für diesen Vorteil gilt. 
 
 Sie können einen Vorteilskatalogs für alle Arbeitskräfte erstellen. Beispiel sind Parkausweise, die einige Unternehmen allen Mitarbeitern als sonstiger Vorteil bereitstellen. Wenn Sie diesen Vorteil erstellen, legen Sie die Berechtigung auf **Alle Arbeitskräfte sind berechtigt** fest. 
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 00facce5913fb82f67c5844d74d29032735db707
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: d95429dde38a7a528b1c1d9036194a3bf8e6f986
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1506102"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2009444"
 ---
 # <a name="set-up-company-specific-human-resources-hr-parameters"></a>Unternehmensspezifische Personalverwaltungsparameter einrichten
 
@@ -34,7 +34,7 @@ Die Einstellungen einiger Personalverwaltungsparameter (HR) werden über Unterne
 Zwei Seiten werden verwendet, um Personalverwaltungsparameter (HR-Parameter) festzulegen. Für Parameter, die innerhalb des Unternehmens freigegeben werden, verwenden Sie die Seite **Freigegeben Parameter für Personalverwaltung**. Für Parameter, die unternehmensspezifisch sind (das heißt, die Einstellungen beziehen sich auf ein einzelnes Unternehmen), verwenden Sie die Seite **Personalverwaltungsparameter**. Auf der Seite **Personalverwaltungsparameter** sind die Einstellungen in sechs Registerkarten unterteilt:
 
 -   Allgemein
--   Personalbeschaffung - Dies ist nicht in Dynamics 365 for Talententhalten
+-   Personalbeschaffung - Dies ist nicht in Dynamics 365 Talententhalten
 -   Vergütung
 -   Nummernkreise
 -   Family and Medical Leave Act (FMLA)
@@ -49,7 +49,7 @@ Die Einstellungen auf der Registerkarte fest **Vergütung**, ob Benutzer müssen
 ### <a name="previously-released-functionality"></a>Bereits freigegebene Funktionen
 Die Einstellungen in der Registerkarte **Zahlensequenz** bestimmt die Sequenzen, die verwendet werden, um Elementen in der Personalverwaltung IDs zuzuweisen, wie Bewerbungen, Abwesenheitserfassungen, Vergütungsprozessergebnisse, Fallnummern, Kurse und Kursagenden. Um Nummernsequenzreferenzen und - codes zu verwalten, verwenden Sie die Seite **Nummernsequenzliste** (Klicken Sie **Organisationsverwaltung** &gt; **Nummernsequenzen** &gt; **Nummernsequenzen**) an.
 
-### <a name="if-youre-using-dynamics-365-for-talent"></a>Wenn Sie Dynamics 365 for Talent verwenden:
+### <a name="if-youre-using-dynamics-365-talent"></a>Wenn Sie Dynamics 365 Talent verwenden:
 Die Einstellungen in der Registerkarte **Zahlensequenz** bestimmt die Sequenzen, die verwendet werden, um Elementen in der Personalverwaltung IDs zuzuweisen, wie Bewerbungen, Abwesenheitserfassungen, Vergütungsprozessergebnisse, Fallnummern, Kurse und Kursagenden. Um Nummernsequenzreferenzen und - codes zu verwalten, verwenden Sie die Seite **Nummernsequenzliste** (Klicken Sie **Systemverwaltung** &gt; **Registerkarte Links** &gt; **Nummernsequenzen** &gt; **Nummernsequenzen**) an. 
 
 Die Einstellungen in der Registerkarte **FMLA** definieren, wie viele Stunden ein Mitarbeiter arbeiten muss, um von den FMLA-Vorteilen profitieren zu können, die erforderliche Beschäftigungslänge für die Berechtigung und das Anfangsdatum der Anstellung, das für die Bestimmung der Beschäftigungslänge verwendet wird. Die Einstellungen definieren auch die Anzahl der FMLA-Stunden, für die ein Mitarbeiter berechtigt ist und den FMLA-Urlaubkalender, der verwendet wird, um zu berechnen, wie viele FMLA-Stunden ein Angestellter verwendet hat. Die Registerkarte **FMLA** ist nur für die Unternehmen in den USA verfügbar. 

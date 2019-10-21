@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 523e51c705d76b6e8624887292395f8f239bcb65
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 14c6f3bae224540968d37de9effa4c430307975c
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570465"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250858"
 ---
 # <a name="quarantine-orders"></a>Quarantäneaufträge
 
@@ -34,7 +34,7 @@ In diesem Artikel wird beschrieben, wie Quarantäneaufträge zum Sperren von Bes
 Quarantäneaufträge können verwendet werden, um Bestand zu sperren. Beispielsweise empfiehlt es sich, Artikel aus Gründen der Qualitätskontrolle unter Quarantäne zu stellen. Bestand, der unter Quarantäne gestellt wurde, wird an einen Quarantänelagerort übertragen. **Hinweis:** Wenn Sie die erweiterten Lagerortverwaltungsprozesse (in der Lagerortverwaltung) verwenden, wir die Quarantäneauftragsverarbeitung nur für Rückholaufträge verwendet.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Verfügbare Lagerartikel unter Quarantäne stellen
-Wenn Sie Artikel unter Quarantäne stellen, können Sie die Quarantäneaufträge entweder manuell erstellen oder das System so einrichten, dass die Quarantäneaufträge automatisch erstellt werden. Um Quarantäneaufträge automatisch zu erstellen, wählen Sie die **Quarantäneverwaltung**-Option auf der **Richtlinien für Lagerbestand**-Registerkarte auf der **Lagersteuerungsgruppen**-Seite aus. Sie müssen außerdem im Feld **Quarantänelagerort** einen standardmäßigen Quarantänelagerort für den empfangenden Lagerort eingeben. Wenn der physisch verfügbare Lagerbestand in eine Bestellung oder einen Produktionsauftrag erfasst wird, werden Quarantäneelemente automatisch an einen Quarantänelagerort in Microsoft Dynamics 365 for Finance and Operations verschoben. Diese Verschiebung tritt auf, da der Status des Quarantäneauftrags in **Gestartet** geändert wird. Wenn Sie Quarantäneaufträge manuell erstellen, ist es nicht nötig anzufordern, dass der Artikel in der Artikelmodellgruppe für die Quarantäneverwaltung zugeordnet wird. Für diesen Vorgang müssen Sie den verfügbaren Lagerbestand, der unter Quarantäne gestellt werden soll, und den Quarantänelagerort angeben, der verwendet werden soll. Sie können den Quarantäneauftragsstatus verwenden, um die Planung des Vorgangs zu unterstützen.
+Wenn Sie Artikel unter Quarantäne stellen, können Sie die Quarantäneaufträge entweder manuell erstellen oder das System so einrichten, dass die Quarantäneaufträge automatisch erstellt werden. Um Quarantäneaufträge automatisch zu erstellen, wählen Sie die **Quarantäneverwaltung**-Option auf der **Richtlinien für Lagerbestand**-Registerkarte auf der **Lagersteuerungsgruppen**-Seite aus. Sie müssen außerdem im Feld **Quarantänelagerort** einen standardmäßigen Quarantänelagerort für den empfangenden Lagerort eingeben. Wenn der physisch verfügbare Lagerbestand in eine Bestellung oder einen Produktionsauftrag erfasst wird, werden Quarantäneelemente automatisch an einen Quarantänelagerort in Supply Chain Management verschoben. Diese Verschiebung tritt auf, da der Status des Quarantäneauftrags in **Gestartet** geändert wird. Wenn Sie Quarantäneaufträge manuell erstellen, ist es nicht nötig anzufordern, dass der Artikel in der Artikelmodellgruppe für die Quarantäneverwaltung zugeordnet wird. Für diesen Vorgang müssen Sie den verfügbaren Lagerbestand, der unter Quarantäne gestellt werden soll, und den Quarantänelagerort angeben, der verwendet werden soll. Sie können den Quarantäneauftragsstatus verwenden, um die Planung des Vorgangs zu unterstützen.
 
 ## <a name="quarantine-order-statuses"></a>Status des Quarantäneauftrags
 Quarantäneaufträge können folgende Status annehmen:

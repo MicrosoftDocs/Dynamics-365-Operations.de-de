@@ -1,6 +1,6 @@
 ---
 title: Einzelhandelshierarchien
-description: Dieser Artikel beschreibt Einzelhandelshierarchien in Microsoft Dynamics 365 for Retail.
+description: Dieser Artikel beschreibt Einzelhandelshierarchien in Dynamics 365 Retail.
 author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 198c8da336f3e225c5d6da2eb02c86581dc9b4d6
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb383c5bc5ad5d641db6f30e915ea43ba5980005
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568021"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025076"
 ---
 # <a name="retail-hierarchies"></a>Einzelhandelshierarchien
 
 [!include [banner](includes/banner.md)]
 
-Dieser Artikel beschreibt Einzelhandelshierarchien in Microsoft Dynamics 365 for Retail.
+Dieser Artikel beschreibt Einzelhandelshierarchien in Dynamics 365 Retail.
 
 Sie können eine Einzelhandelskategoriehierarchie erstellen, um die Produkte zu organisieren, die Sie über die Einzelhandelskanäle verkaufen. Sie können Einzelhandelsprodukthierarchien verwenden, um Produkte zu kategorisieren oder zu gruppieren. Sie können diese Produkte dann verwenden, um Produktsortimente und Debitortreueprogramme zu erstellen. Sie können auch Produktattribute und Eigenschaften zuweisen, eine Preisgestaltungsstruktur zuweisen, die Produkte in verkaufsfördernde Maßnahmen einschließen und die Produkte für Berichte verwenden. Sie können eine Einzelhandelskategoriehierarchie erstellen, um alle Produkte und Kategorien in der Organisation darzustellen, und diese Kategoriehierarchie anschließend für mehrere Zwecke verwenden. Alternativ können Sie mehrere Einzelhandelskategoriehierarchien zu bestimmten Zwecken, wie beispielsweise verkaufsfördernde Maßnahmen, erstellen. Wenn Sie eine Einzelhandelsprodukthierarchie erstellen, müssen Sie einen Kategoriehierarchietyp zuweisen, um den Zweck der Kategoriehierarchie zu kennzeichnen. Beispielsweise werden nur Produkthierarchien, die dem Typ **Einzelhandelsnavigationshierarchie** zugewiesen sind referenziert, wenn Sie Produkte nach der Kategorie online oder in POS suchen.
 

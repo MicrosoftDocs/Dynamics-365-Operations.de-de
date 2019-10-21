@@ -1,6 +1,6 @@
 ---
 title: Zeit- und Anwesenheitsverwaltung in Retail
-description: Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Microsoft Dynamics 365 for Retail unterstützt werden.
+description: Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Dynamics 365 Retail unterstützt werden.
 author: aamirallaqaband
 manager: AnnBe
 ms.date: 06/20/2017
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4c54909a02376a62a72a986e634649fa0ae54284
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: d541de550df41b7d4616492960bd4f2aae46d45e
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567952"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2024982"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>Zeit- und Anwesenheitsverwaltung in Retail
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Microsoft Dynamics 365 for Retail unterstützt werden.
+Dieses Thema beschreibt Szenarien, die für die Verwaltung von Zeit und Anwesenheit in Dynamics 365 Retail unterstützt werden.
 
 ## <a name="manage-worker-setup-and-scheduling"></a>Verwalten Sie Arbeitskrafteinstellung und Feinterminierung
 
@@ -125,7 +125,7 @@ Im POS:
 
 ## <a name="process-and-manage-time-registrations"></a>Verarbeiten und Verwalten von Zeit- und Anwesenheitserfassungen
 
-Ein Dynamics 365 for Retail-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu genehmigen und in die Lohnabrechnung zu übertragen.
+Ein Retail-Benutzer folgt dem Workflow, um Zeiterfassungen zu berechnen, zu genehmigen und in die Lohnabrechnung zu übertragen.
 
 ### <a name="primary-operations"></a>Primäre Vorgänge
 

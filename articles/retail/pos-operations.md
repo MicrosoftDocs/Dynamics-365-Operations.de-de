@@ -1,6 +1,6 @@
 ---
 title: Online- und Offlineverkaufsstellen-(POS)-Vorgänge
-description: Dieses Thema enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Microsoft Dynamics 365 for Retail. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
+description: Dieses Thema enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Dynamics 365 Retail. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
 author: jblucher
 manager: AnnBe
 ms.date: 05/21/2019
@@ -18,22 +18,22 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: e21f8677144c7293409e409082e8125c05f3a8fe
-ms.sourcegitcommit: 3d8c951898e05febc160515127c1bcc5de5882a1
+ms.openlocfilehash: fcb933438ec30ebe6d3b499b53e64c58ecec3626
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "1625664"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025309"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
 [!include [banner](includes/banner.md)]
 
-Die meisten Aktivitäten, die Benutzer in Verkaufsstelle (POS) vornehmen, gelten als Arbeitsgänge. Arbeitsgänge werden im Microsoft Dynamics 365 for Retail-Backoffice konfiguriert und verwaltet. Viele Arbeitsgänge können den Schaltflächen im POS-Schaltflächenraster hinzugefügt werden. Benutzer können die Schaltflächen dann auswählen, um Vorgänge aufzurufen und die Funktion auszuführen. Andere Arbeitsgänge sind Teil der Haupt-POS-Anwendung und Schaltflächen werden entweder von Bildschirm-Schaltflächen oder als Bestandteil anderer Workflows oder Prozessen aufgerufen.
+Die meisten Aktivitäten, die Benutzer in Verkaufsstelle (POS) vornehmen, gelten als Arbeitsgänge. Arbeitsgänge werden im Dynamics 365 Retail-Backoffice konfiguriert und verwaltet. Viele Arbeitsgänge können den Schaltflächen im POS-Schaltflächenraster hinzugefügt werden. Benutzer können die Schaltflächen dann auswählen, um Vorgänge aufzurufen und die Funktion auszuführen. Andere Arbeitsgänge sind Teil der Haupt-POS-Anwendung und Schaltflächen werden entweder von Bildschirm-Schaltflächen oder als Bestandteil anderer Workflows oder Prozessen aufgerufen.
 
-Die folgende Tabelle enthält Informationen zu den Arbeitsgängen, die in Retail Modern POS und Cloud POS für Dynamics 365 for Retail verfügbar sind. Die Tabelle gibt auch an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob POS im Offline-Modus verfügbar sind.
+Die folgende Tabelle enthält Informationen zu den Arbeitsgängen, die in Retail Modern POS und Cloud POS verfügbar sind. Die Tabelle gibt auch an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob POS im Offline-Modus verfügbar sind.
 
-Einige Arbeitsgänge sind derzeit nicht in Retail Modern POS oder Cloud POS für Dynamics 365 for Retail verfügbar. Einige dieser Arbeitsgänge sind jeder gebietsschemaspezifische Arbeitsgänge, die weitere Konfiguration und Erweiterungen erfordern. Auch einige Funktionen von Microsoft Dynamics AX 2012 werden derzeit nicht unterstützt.
+Einige Arbeitsgänge sind derzeit nicht in Retail Modern POS oder Cloud POS verfügbar. Einige dieser Arbeitsgänge sind jeder gebietsschemaspezifische Arbeitsgänge, die weitere Konfiguration und Erweiterungen erfordern. Auch einige Funktionen von Microsoft Dynamics AX 2012 werden derzeit nicht unterstützt.
 
 Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden können:
 
@@ -42,7 +42,7 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 - **Willkommen-Bildschirm** – Der Arbeitsgang kann aus POS-Schaltflächenrastern aufgerufen werden, die im Feld POS-Buchungs-Bildschirm konfiguriert werden.
 
 > [!NOTE]
-> Die Arbeitsgänge unten gelten für die neueste Version von Dynamics 365 for Retail. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
+> Die Arbeitsgänge unten gelten für die neueste Version von Retail. Einige Vorgänge haben sich möglicherweise geändert oder sind möglicherweise in früheren Versionen nicht verfügbar.
 
 | ID | Arbeitsgang | Beschreibung | Schaltflächenraster | Transaktionsbildschirm | Willkommensbildschirm | Verfügbar offline | Gebietsschemaspezifisch |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|

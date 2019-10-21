@@ -19,18 +19,19 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 7c722c311048258ce75170ac4276d397fe2828fe
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: c642e4f1b29ac21b6736e770c84f343e9265961d
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606894"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023635"
 ---
 # <a name="attributes-and-attribute-groups"></a>Attribute und Attributsgruppen
 
 [!include [banner](includes/banner.md)]
 
-*Attribute* enthalten eine weitere Möglichkeit, ein Produkt und dessen Eigenschaften nach benutzerdefinierte Felder (wie **Speichergröße**, **Festplattenkapazität**, **Ist der kompatible Energiestern**, usw.) zu beschreiben. Attribute können in Microsoft Dynamics 365 for Finance and Operations unterschiedlichen Retail-Entitäten zugeordnet werden, wie Produktkategorien und Einzelhandelskanälen, und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Retailkanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Retailkanalebene oder in einem Retailkatalog überschrieben werden.
+*Attribute* enthalten eine weitere Möglichkeit, ein Produkt und dessen Eigenschaften nach benutzerdefinierte Felder (wie **Speichergröße**, **Festplattenkapazität**, **Ist der kompatible Energiestern**, usw.) zu beschreiben. Attribute können unterschiedlichen Retail-Entitäten zugeordnet werden, wie Produktkategorien und Einzelhandelskanäle, und Standardwerte können für sie festgelegt werden. Produkte erben deren Attribute und Standardwerte für diese Attribute, wenn sie Produktkategorien oder Retailkanälen zugeordnet sind. Die Standardwerte können auf der Einzelproduktebene, Retailkanalebene oder in einem Retailkatalog überschrieben werden.
+
 
 So kann beispielsweise ein Fernsehprodukt folgende Attribute haben.
 
@@ -53,7 +54,7 @@ So kann beispielsweise ein Fernsehprodukt folgende Attribute haben.
 
 ## <a name="attributes-and-attribute-types"></a>Attribute und Attributtypen
 
-Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Finance and Operations unterstützen folgende Attributtypen:
+Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art von Daten, die für ein bestimmtes Attribut eingegeben werden können. Die folgenden Attributtypen werden unterstützt:
 
 - **Währung** – Dieser Attributtyp unterstützt Währungswerte. Er kann begrenzt (das heißt, er unterstüzt einen Wertebereich) oder offengelassen werden.
 - **DateTime** – Dieser Attributtyp unterstützt Datums- und Uhrzeitwerte. Es kann übersprungen oder offen gelassen werden.
@@ -63,9 +64,9 @@ Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art vo
 - **Boolesch** – Dieser Attributtyp unterstützt Binärwerte (**TRUE** oder **FALSE**).
 - **Referenz** – Dieser Typ bezieht andere Attribute.
 
-### <a name="set-up-attribute-types-in-finance-and-operations"></a>Einstellungsattributtypen im Bereich Finance and Operations
+### <a name="set-up-attribute-types"></a>Attributtypen einrichten
 
-1. Melden Sie sich beim Finance and Operations Backoffice Client als Einzelverkaufmanager an.
+1. Melden Sie sich beim Backoffice Client als Einzelverkaufmanager an.
 2. Wechseln Sie zu **Produktinformationsverwaltung** &gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt; **Attributtypen**.
 3. Erstellen Sie zwei **Text**-Attributtypen Typ, setzen Sie die Option **Feste Liste** auf **Ja** fest, und fügen Sie anschließend einer Werteliste hinzu:
 
@@ -74,7 +75,7 @@ Attribute basieren auf *Attributtypen*. Der Attributtyp identifiziert die Art vo
 
 ![Attributtypen](media/AttributeType.png)
 
-### <a name="set-up-an-attribute-in-finance-and-operations"></a>Einstellungsattributtypen im Bereich Finance and Operations
+### <a name="set-up-an-attribute"></a>Ein Attribut einrichten
 
 1. Melden Sie sich beim Backoffice Client als Einzelverkaufmanager an.
 2. Wechseln Sie zu **Produktinformationsverwaltung** &gt; **Einrichtung** &gt; **Kategorien und Attribute** &gt; **Attribute**.
@@ -101,13 +102,13 @@ Hierbei gelten die verbleibenden Attributmetadatumenoptionen auf der Seite **Att
 - Groß-/Kleinschreibung und Format ignorieren
 - Vollständige Übereinstimmung
 
-Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Finance and Operations den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
+Diese Optionen waren ursprünglich für die Verbesserung der Suchfunktion, die ursprünglich für das Onlinetool Schaufenster vorgesehen war. Obwohl Retail den Online-Storefront nicht umfasst, enthält dieses das eCommerce Publishing Software Development Kit (SDK). Debitoren können dieses SDK verwenden, um Produkte in einen Suchenindex ihrer Wahl zu sperren. Obgleich die Produktdaten importiert werden, sollten Kunden in der Lage sein, noch durchsuchbare Daten, Daten die abgerufen werden können etc. zu unterscheiden.. Auf diese Weise können sie den optimalen Index erstellen, um sicherzustellen, dass sie nur Attribute indexieren, *die ihrer Meinung nach* indiziert werden sollen.
 
 Informationen über den Zweck dieser verbleibenden Optionen finden Sie unter [Überblick über Suchschemas in SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
 
 ## <a name="filter-settings-for-attributes"></a>Attributfiltereinstellungen
 
-Filtereinstellungen für Attribute lassen Sie die Filter definieren, z. B für Attribute, die im Retail POS angezeigt werden. Um auf Filtereinstellungen für ein Attribut zuzugreifen wählen Sie auf der **Attribute** Seite im Bereich Finance and Operations das Attribut aus, und klicken Sie dann im Aktivitätsbereich auf **Filtereinstellungen**.
+Filtereinstellungen für Attribute lassen Sie die Filter definieren, z. B für Attribute, die im Retail POS angezeigt werden. Um auf Filtereinstellungen für ein Attribut zuzugreifen wählen Sie auf der Seite **Attribute** das Attribut aus, und klicken Sie dann im Aktivitätsbereich auf **Filtereinstellungen**.
 
 Die Seite **Filteranzeigeneinstellungen** enthält die folgenden Felder:
 
@@ -233,7 +234,7 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
     - Kanalspezifische Produktattribute
 
     > [!NOTE]
-    > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
+    > Wenn Produktmedien freigegebene und freigegebene Produktattribute erstellt werden, gelten sie für alle Retailprodukte.
 
 ![Katalog-Produktattributwertgruppen](media/CatalogProdAttrValues.png)
 
@@ -255,4 +256,4 @@ Die Standardwerte von Attributen können auf der Produktebene überschrieben wer
     - Kanalspezifische Produktattribute
 
     > [!NOTE]
-    > Wenn Produktmedien freigegebene und freigegebene Produktattribute im Bereich Finanzen und Arbeitsgängen erstellt werden, gelten sie für alle Retailprodukte.
+    > Wenn Produktmedien freigegebene und freigegebene Produktattribute erstellt werden, gelten sie für alle Retailprodukte.

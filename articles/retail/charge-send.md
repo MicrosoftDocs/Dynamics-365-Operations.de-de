@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: e5351086c56d13ef98937aec066be00cdf88fd37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 088f55e5605c99f69852b4d6811b5c5504f267a2
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553633"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2019461"
 ---
 # <a name="ship-orders-from-another-store-by-using-the-charge-send-feature"></a>Aufträge aus einer anderen Filiale mithilfe der Funktion „Belastung übermitteln” versenden
 
 [!include [banner](includes/banner.md)]
 
-Bei der "Belastung übermitteln"-Funktion in Dynamics 365 for Retail können Debitorenaufträge in einem Shop platziert und aus einem anderen Shop versendet werden.
+Bei der „Belastung übermitteln”-Funktion in Retail können Debitorenaufträge in einem Shop platziert und aus einem anderen Shop versendet werden.
 
 Debitorenaufträge im Verkaufsstellen (POS)-Client unterstützen mehrere Erfüllungsoptionen. Einige Beispiele von Erfüllungsoptionen enthalten:
 

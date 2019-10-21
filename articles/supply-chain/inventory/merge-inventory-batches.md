@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00ec888600dedbc740be0efc64cddf37c5c6f558
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 83d969fcc59af87da3921225974ebc2ae41d9fa1
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572833"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250989"
 ---
 # <a name="merge-inventory-batches"></a>Lagerchargen zusammenführen
 
@@ -89,7 +89,7 @@ Nein, können Sie nur Chargen zusammenführen, die die gleichen Standort- und La
 Nein, können Sie nur die gesamte Menge von Chargen zusammenführen. Die Chargenzusammenführungsfunktionen sind als eine Lagerbestandsfunktion und nicht als Produktionsfunktion vorgesehen.
 
 ## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Was ist, wenn die Chargen verschiedene Chargenattributwerte haben?
-Wenn Sie die Quellchargen auswählen, um sie in der zusammengeführten Charge zu kombinieren, überprüft Finance and Operations, ob alle Chargen die Merkmale oder Attributwerte aufweisen. Wenn ein Attributwert der gleiche ist, wird ein Wert für die zusammengeführte Charge vorgeschlagen. Dieser Wert kann geändert werden. Attributwerte, die nicht identisch sind, werden für die zusammengeführte Chargen nicht ausgefüllt, und Sie können diese Werte manuell eingeben. Wenn der Chargenattributtyp für den Attributwert eine ganze Zahl oder eine Bruchzahl ist und die Werte nicht identisch für alle Quellchargen sind, wird der Wert durch die Berechnung des gewichteten Durchschnitts ermittelt. Der berechnete Wert wird auf das nächsten Inkrement auf- oder abgerundet. Wenn der Wert für eine Quellcharge leer ist, werden die Charge und die Menge nicht in die Berechnung einbezogen. **Beispiel** Das folgende Beispiel zeigt eine Berechnung des gewichteten Durchschnitts für eine zusammengeführte Charge. Zwei der Quellchargen haben einen leerer Wert für einen Chargenattributtyp, der eine ganze Zahl ist. Folgendes Attribut wird den Quellchargen zugewiesen.
+Wenn Sie die Quellchargen auswählen, um sie in der zusammengeführten Charge zu kombinieren, überprüft Supply Chain Management, ob alle Chargen die Merkmale oder Attributwerte aufweisen. Wenn ein Attributwert der gleiche ist, wird ein Wert für die zusammengeführte Charge vorgeschlagen. Dieser Wert kann geändert werden. Attributwerte, die nicht identisch sind, werden für die zusammengeführte Chargen nicht ausgefüllt, und Sie können diese Werte manuell eingeben. Wenn der Chargenattributtyp für den Attributwert eine ganze Zahl oder eine Bruchzahl ist und die Werte nicht identisch für alle Quellchargen sind, wird der Wert durch die Berechnung des gewichteten Durchschnitts ermittelt. Der berechnete Wert wird auf das nächsten Inkrement auf- oder abgerundet. Wenn der Wert für eine Quellcharge leer ist, werden die Charge und die Menge nicht in die Berechnung einbezogen. **Beispiel** Das folgende Beispiel zeigt eine Berechnung des gewichteten Durchschnitts für eine zusammengeführte Charge. Zwei der Quellchargen haben einen leerer Wert für einen Chargenattributtyp, der eine ganze Zahl ist. Folgendes Attribut wird den Quellchargen zugewiesen.
 
 | Attribut | Minimum | Inkrement | Maximum |
 |-----------|---------|-----------|---------|

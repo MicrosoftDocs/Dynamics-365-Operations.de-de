@@ -1,6 +1,6 @@
 ---
 title: Konsistenzprüfung für Einzelhandelstransaktionen
-description: In diesem Thema werden die Funktionen der Konsistenzprüfung für Einzelhandelstransaktionen in Microsoft Dynamics 365 for Retail beschrieben.
+description: In diesem Thema werden die Funktionen der Konsistenzprüfung für Einzelhandelstransaktionen in Dynamics 365 Retail beschrieben.
 author: josaw1
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f94a674e021d4f23480433440cd239b851491d87
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790420"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2018413"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenzprüfung für Einzelhandelstransaktionen
 
@@ -31,9 +31,9 @@ ms.locfileid: "1790420"
 [!include [banner](includes/banner.md)]
 [!include [preview banner](includes/preview-banner.md)]
 
-In diesem Thema werden die in Version 8.1.3 von Microsoft Dynamics 365 for Finance and Operations eingeführten Funktionen der Konsistenzprüfung für Einzelhandelstransaktionen beschrieben. Die Konsistenzprüfung ermittelt und isoliert inkonsistente Transaktionen, bevor sie im Auszugsbuchungsprozess verarbeitet werden.
+In diesem Thema werden die Funktionen der Konsistenzprüfung für Einzelhandelstransaktionen beschrieben. Die Konsistenzprüfung ermittelt und isoliert inkonsistente Transaktionen, bevor sie im Auszugsbuchungsprozess verarbeitet werden.
 
-Wird ein Auszug in Microsoft Dynamics 365 for Retail gebucht, kann die Buchung aufgrund der inkonsistenten Daten in den Einzelhandelstransaktionstabellen fehlschlagen. Die Datenfehler können durch unvorhergesehene Probleme in der Verkaufsstellenanwendung oder durch Fehler beim Importieren von Buchungen aus POS-Systemen von Drittanbietern auftreten. Im Folgenden sind Beispiele für diese Inkonsistenzen aufgeführt: 
+Wenn eine Aufstellung in Retail gebucht wird, kann die Buchung aufgrund der inkonsistenten Daten in den Einzelhandelstransaktionstabellen fehlschlagen. Die Datenfehler können durch unvorhergesehene Probleme in der Verkaufsstellenanwendung oder durch Fehler beim Importieren von Buchungen aus POS-Systemen von Drittanbietern auftreten. Im Folgenden sind Beispiele für diese Inkonsistenzen aufgeführt: 
 
 - Der Transaktionsgesamtbetrag in der Kopftabelle entspricht nicht dem Transaktionsgesamtbetrag der Positionen.
 - Die Positionsanzahl in der Kopftabelle entspricht nicht der Anzahl von Positionen in der Transaktionstabelle.

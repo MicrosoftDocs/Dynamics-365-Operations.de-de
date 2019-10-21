@@ -1,6 +1,6 @@
 ---
-title: Verkaufsrechnungskopfzeilen und -positionen direkt von Finance and Operations mit Sales synchronisieren
-description: Dieses Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Rechnungskopfzeilen und -positionen direkt aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Sales zu synchronisieren.
+title: Rechnungskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren
+description: Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Rechnungskopfzeilen und -positionen direkt aus Dynamics 365 Supply Chain Management zu Dynamics 365 Sales zu synchronisieren.
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/26/2017
@@ -19,22 +19,22 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 70fc842463254b02d812447f93970a9da676057d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 94442eb11aac3faf8a412944617686853a12128d
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1552929"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2251660"
 ---
-# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Verkaufsrechnungskopfzeilen und -positionen direkt von Finance and Operations mit Sales synchronisieren
+# <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Rechnungskopfzeilen und ‑positionen aus Sales direkt von Finance and Operations synchronisieren
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Rechnungskopfzeilen und -positionen direkt aus Microsoft Dynamics 365 for Finance and Operations mit Microsoft Dynamics 365 for Sales zu synchronisieren.
+Das Thema erklärt die Vorlagen und die zugrunde liegenden Aufgaben, die verwendet werden, um Rechnungskopfzeilen und -positionen direkt aus Dynamics 365 Supply Chain Management zu Dynamics 365 Sales zu synchronisieren.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>Datenfluss in Interessent nach Bargeld
 
-Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Finance and Operations und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld”-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Finance and Operations und Sales synchronisiert werden.
+Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, um Daten über Instanzen von Supply Chain Management und Sales hinweg zu synchronisieren. Die „Interessent zu Bargeld“-Vorlagen, die über die Datenintegrationsfunktion verfügbar sind, ermöglichen den Fluss von Konten, Kontakten, Produkten, Verkaufsangeboten, Aufträgen und Verkaufsrechnungen zwischen Finance and Operations und Sales. Die folgende Abbildung zeigt, wie Daten zwischen Supply Chain Management und Sales synchronisiert werden.
 
 [![Datenfluss in Interessent nach Bargeld](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
@@ -52,30 +52,30 @@ Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um Rech
 
 Die folgenden Synchronisierungsaufgaben sind erforderlich, bevor die Synchronisierung von Rechnungskopfzeilen und -positionen erfolgen kann:
 
-- Produkte (Finance and Operations nach Sales) - Direkt
-- Konten (Sales nach Finance and Operations) - Direkt (wenn verwendet)
-- Kontakte (Sales nach Finance and Operations) - Direkt (wenn verwendet)
-- Auftragskopf und -positionen (Finance and Operations nach Sales) - Direkt
+- Produkte (Supply Chain Management zu Sales) – Direkt
+- Konten (Sales zu Supply Chain Management) – Direkt (falls verwendet)
+- Kontakte (Sales zu Supply Chain Management) – Direkt (falls verwendet)
+- Auftragskopf und -positionen (Supply Chain Management zu Sales) – Direkt
 
 ## <a name="entity-set"></a>Entitätssatz
 
-| Finance and Operations                               | Vertrieb          |
+| Lieferkettenverwaltung                              | Verk.          |
 |------------------------------------------------------|----------------|
 | Extern gepflegte Debitorenverkaufsrechnungs-Kopfzeilen | Rechnungen       |
 | Extern gepflegte Debitorenverkaufsrechnungs-Positionen   | InvoiceDetails |
 
 ## <a name="entity-flow"></a>Entitätsfluss
 
-Verkaufsrechnungen werden in Finance and Operations erstellt und mit Sales synchronisiert.
+Verkaufsrechnungen werden in Supply Chain Management erstellt und mit Sales synchronisiert.
 
 > [!NOTE]
-> Die Steuer für Belastungen auf dem Verkaufsrechnungskopf ist derzeit nicht in der Synchronisierung von Finance and Operations mit Sales enthalten. Sales unterstützt keine Steuerinformationen auf Kopfebene. Allerdings sind Steuern, die den Belastungen auf Positionsebene zugeordnet sind, in die Synchronisierung einbezogen.
+> Die Steuer für Belastungen auf dem Verkaufsrechnungskopf ist derzeit nicht in der Synchronisierung von Supply Chain Management mit Sales enthalten. Sales unterstützt keine Steuerinformationen auf Kopfebene. Allerdings sind Steuern, die den Belastungen auf Positionsebene zugeordnet sind, in die Synchronisierung einbezogen.
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Prospect to Cash-Lösung für Sales
 
 - Ein Feld **Rechnungsnummer** wurde zur Entität **Rechnung** hinzugefügt und wird auf der Seite angezeigt.
-- Die Schaltfläche **Rechnung erstellen** auf der Seite **Auftrag** ist ausgeblendet, da Rechnungen in Finance and Operations erstellt und mit Sales synchronisiert werden. Die Seite **Rechnung** kann nicht geändert werden, da Rechnungen über Finance and Operations synchronisiert werden.
-- Der **Auftragsstatus**-Wert wird automatisch in **Fakturiert** geändert, wenn die zugehörige Rechnung aus Finance and Operations mit Sales synchronisiert wurde. Darüber hinaus wird der Eigentümer des Auftrags, aufgrund dessen die Rechnung erstellt wurde, als Eigentümer der Rechnung zugewiesen. Daher kann der Besitzer des Auftrags die Rechnung anzeigen.
+- Die Schaltfläche **Rechnung erstellen** auf der Seite **Auftrag** ist ausgeblendet, da Rechnungen in Supply Chain Management erstellt und mit Sales synchronisiert werden. Die Seite **Rechnung** kann nicht geändert werden, da Rechnungen über Supply Chain Management synchronisiert werden.
+- Der **Auftragsstatus**-Wert wird automatisch in **Fakturiert** geändert, wenn die zugehörige Rechnung aus Supply Chain Management mit Sales synchronisiert wurde. Darüber hinaus wird der Eigentümer des Auftrags, aufgrund dessen die Rechnung erstellt wurde, als Eigentümer der Rechnung zugewiesen. Daher kann der Besitzer des Auftrags die Rechnung anzeigen.
 
 ## <a name="preconditions-and-mapping-setup"></a>Voraussetzungen und Einrichtung der Zuordnung
 
@@ -103,7 +103,7 @@ Gehen Sie zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen** > **Sa
 #### <a name="salesinvoiceline-task"></a>SalesInvoiceLine-Aufgabe
 
 - Vergewissern Sie sich, dass die erforderliche Zuordnung für **Maßeinheit** vorhanden ist.
-- tellen Sie sicher, dass die erforderliche Wertzuordnung für **SalesUnitSymbol** in Finance and Operations vorhanden ist.
+- Stellen Sie sicher, dass die erforderliche Wertzuordnung für **SalesUnitSymbol** in Supply Chain Management vorhanden ist.
 
     Ein Vorlagenwert, der eine Wertzuordnung hat, wird für **SalesUnitSymbol** als **Quantity\_UOM** definiert.
 
@@ -115,7 +115,7 @@ Gehen Sie zu **Einstellungen** > **Verwaltung** > **Systemeinstellungen** > **Sa
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Datenintegration. 
 
 > [!NOTE]
-> Die Zuordnung zeigt, welche Feldinformationen von Sales zu Finance and Operations synchronisiert werden.
+> Die Zuordnung zeigt, welche Feldinformationen von Sales zu Supply Chain Management synchronisiert werden.
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
@@ -129,18 +129,12 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Interessent zu Bargeld](prospect-to-cash.md)
+[Prospect-to-Cash](prospect-to-cash.md)
 
-[Konten von Sales direkt mit Debitoren in Finance and Operations synchronisieren](accounts-template-mapping-direct.md)
+[Konten direkt von Sales mit Konten in Supply Chain Management synchronisieren](accounts-template-mapping-direct.md)
 
-[Produkte direkt von Finance and Operations mit Produkten in Sales synchronisieren](products-template-mapping-direct.md)
+[Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren](products-template-mapping-direct.md)
 
-[Kontakte direkt von Sales mit Kontakten oder Debitoren in Finance and Operations synchronisieren](contacts-template-mapping-direct.md)
+[Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren](contacts-template-mapping-direct.md)
 
-[Auftragskopfzeilen und -positionen direkt von Finance and Operations mit Sales synchronisieren](sales-order-template-mapping-direct-two-ways.md)
-
-
-
-
-
-
+[Auftragskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-order-template-mapping-direct-two-ways.md)

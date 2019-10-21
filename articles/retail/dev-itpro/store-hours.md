@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 1b55b91246b22951f4e1d148f59444423e1d8a3d
-ms.sourcegitcommit: e54607a2c80bec4db05045825914f50947f6e31e
+ms.openlocfilehash: 811d499a3eb8133e5ffd29bb4ae6a0c57708accd
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1917511"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2023441"
 ---
 # <a name="create-and-update-store-hours"></a>Erstellen und Aktualisieren von Geschäftszeiten
 
@@ -36,7 +36,7 @@ Mehrere Geschäftszeiten können über verschiedene Kanäle konfiguriert werden.
 
 Wenn ein Kunde einen Abholauftrag für eine andere Filiale hat, kann der Kassierer einen Termin auswählen, an dem die Abholung in dieser Filiale verfügbar sein wird. Das Store Lookup liefert einen Verweis auf die Daten und Zeiten des Ladens. Der Kassierer kann ein Datum und einen Ort auswählen und einen Abholbeleg mit den Geschäftszeiten ausdrucken.
 
-Diese Funktionalität ist ab der Version Microsoft Dynamics 365 for Retail 8.1.2 verfügbar.
+Diese Funktionalität ist in Microsoft Dynamics 365 Retail ab Version 8.1.2 verfügbar.
 
 ## <a name="configure-store-hours"></a>Konfigurieren der Geschäftszeiten
 

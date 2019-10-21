@@ -1,6 +1,6 @@
 ---
-title: Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6. Dezember 2018)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent Core HR entweder neu oder geändert sind.
+title: Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (6. Dezember 2018)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent – Core HR entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 12/07/2018
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2018-12-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: f3d53440c5d19dd52fbab17305c3e99a73e570be
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: 73e0875c3e072bc29050a096888459c6e4bb1b7b
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742585"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025955"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-core-hr-december-6-2018"></a>Neuerungen oder Änderungen in Dynamics 365 for Talent Core HR (6. Dezember 2018)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-core-hr-december-6-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent: Core HR (6. Dezember 2018)
 
 [!include [banner](includes/banner.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "1742585"
 In diesem Thema werden die Funktionen beschrieben, die in Core HR entweder neu oder geändert sind.
 
 
-## <a name="platform-update-22"></a>Plattformupdate 22
+## <a name="platform-update-22-for-finance-and-operations"></a>Platform update 22 für Finance and Operations
 
 ### <a name="export-up-to-1-million-rows-to-excel"></a>Export nach 1 Mio. Zeilen in Excel
 
@@ -42,7 +42,7 @@ Der Export nach Excel kann nun konfiguriert werden, um Benutzern zu erlauben, bi
 
 ### <a name="restyled-personalization-toolbar"></a>Neue personalisierte Symbolleiste
 
-Die Personalisierungssymbolleiste in Plattformaktualisierung 22 erfolgte, um Benutzern zu unterstützen, problemlos eigene Erfahrungen in Talent anzupassen. Die folgenden Änderungen wurden vorgenommen: 
+Die Personalisierungssymbolleiste in Plattformaktualisierung 22 für Finance and Operations erfolgte, um Benutzern zu unterstützen, problemlos eigene Erfahrungen in Talent anzupassen. Die folgenden Änderungen wurden vorgenommen: 
 
 -  Der Name jedes Personalisierungstools wird nun zusammen mit einem Symbol angezeigt, das Benutzern Swift, das Tool unterstützt zu ermitteln, das, bestehen sie sind, zu verwenden.
 -  Die Beschreibung für die Nutzung des aktuellen Tool wird nun auch angezeigt,die Benutzern hilft zu veranschaulichen, wie die erforderlichen Personalisierungen erfolgt.  
@@ -50,19 +50,19 @@ Die Personalisierungssymbolleiste in Plattformaktualisierung 22 erfolgte, um Ben
 
 ### <a name="optimized-is-one-of-filtering-experience"></a>Optimiert die Filterungserfahrung „gehört zu“
 
-Der "Ist einer der" Filterungsoperatoren ist verfügbar für die meisten Felder, wenn die Filterbereich- und Rasterheaderdropdownlisten verwendet werden. Der Operator ermöglicht es Benutzern, dass ein Feld auf Grundlage mehrere Werte zu filtern ist. Eine neue und verbesserte Erfahrung für "ist eine vom Typ"  Operators ist in Plattformaktualisierung 22 verfügbar. Um mehr zu verfahren, gehen Sie zu [Optimierte Filterungserfahrung](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
+Der "Ist einer der" Filterungsoperatoren ist verfügbar für die meisten Felder, wenn die Filterbereich- und Rasterheaderdropdownlisten verwendet werden. Der Operator ermöglicht es Benutzern, dass ein Feld auf Grundlage mehrere Werte zu filtern ist. Eine neue und verbesserte Erfahrung für „ist eine vom Typ“-Operatoren ist in Plattformaktualisierung 22 für Finance and Operations verfügbar. Um mehr zu verfahren, gehen Sie zu [Optimierte Filterungserfahrung](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering).
 
 ### <a name="paste-lists-from-excel-into-filter-fields-with-the-is-one-of-operator"></a>Listen aus Excel in Felder mit " ist eine vom Typ" Operator zu kopieren
 
 Für unterschiedliche Aufgaben kann der Benutzer eine Liste von Werten in Excel haben, die diese verwenden möchten, um Daten im Talent zu filtern. Beispielsweise hat möglicherweise ein Personalverwaltungsbenutzer einen Satz von Mitarbeitern aus einem Bericht identifiziert, die zusätzliche Studien im System benötigen und es wäre für diese Nutzer ideal, die Liste direkt von Excel in ein Filterfeld in Talent zu kopieren.
 
-Mit der Plattformaktualisierung 22 erkennt die Funktion "ist eine von" im Filterbereich und der Spaltenrasterfilterung nun Listen, die von Excel kopiert werden, so dass diese dann direkt in ein Filterfeld eingefügt werden können. Dies umfasst eine Sammlung von Werten, die aus verschiedenen Zeilen und Spalten in Excel kopiert werden. Weitere Informationen über diese Funktion finden Sie unter [Listen aus Excel in Felder mit " ist eine vom" einzufügen](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
+Mit der Plattformaktualisierung 22 für Finance and Operations erkennt die Funktion „ist eine von“ im Filterbereich und der Spaltenrasterfilterung nun Listen, die von Excel kopiert werden, so dass diese dann direkt in ein Filterfeld eingefügt werden können. Dies umfasst eine Sammlung von Werten, die aus verschiedenen Zeilen und Spalten in Excel kopiert werden. Weitere Informationen über diese Funktion finden Sie unter [Listen aus Excel in Felder mit " ist eine vom" einzufügen](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/paste-filter-lists-from-excel).
 
 ## <a name="in-preview"></a>Vorschau
 
 ### <a name="configure-uk-payroll-integration-between-talent-and-dayforce"></a>GB-Lohnintegration zwischen Talent und Dayforce konfigurieren
 
-Die Integration zwischen Microsoft Dynamics 365 for Talent und Ceridian Dayforce ist in der Vorschau für Großbritannien verfügbar. Die folgenden Thema enthalten weitere Informationen [Konfigurieren Sie die Lohnintegration zwischen Talent und Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
+Die Integration zwischen Talent und Ceridian Dayforce ist in der Vorschau für Großbritannien verfügbar. Die folgenden Thema enthalten weitere Informationen [Konfigurieren Sie die Lohnintegration zwischen Talent und Dayforce](https://docs.microsoft.com/dynamics365/unified-operations/talent/configure-payroll-integration).
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
@@ -90,9 +90,9 @@ Zusätzliche Informationen werden angezeigt, wenn die Nummernkreise verwendet we
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-### <a name="mapping-errors-in-the-integration-with-finance-and-operations"></a>Prüffehler in der Integration mit Finance and Operations
+### <a name="mapping-errors-in-the-integration-with-finance"></a>Prüffehler in der Integration mit Finance
 
-Die folgenden Probleme wurden für die aktuelle Vorlage für Integrierung von Talent mit Finance and Operations identifiziert. Eine neue Vorlage wird bald veröffentlicht und für alle neuen Integrationsprojekten angewendet, die erstellt werden. Für vorhandene Integrationsprojekt können die Aufgabenzuordnungen aktualisiert werden. Weitere Informationen finden Sie in der aktualisierten Zuordnung. 
+Die folgenden Probleme wurden für die aktuelle Vorlage für Integrierung von Talent mit Finance identifiziert. Eine neue Vorlage wird bald veröffentlicht und für alle neuen Integrationsprojekten angewendet, die erstellt werden. Für vorhandene Integrationsprojekt können die Aufgabenzuordnungen aktualisiert werden. Weitere Informationen finden Sie in der aktualisierten Zuordnung. 
 
 >[!NOTE]
 > Die Stellenposition für die übergeordneten Arbeitsaufgabeaufgabenzuweisung integriert keine Daten. Dies ist ein Problem, das derzeit untersucht wird. Es gibt keine Problemumgehung in der aktuellen Zuordnung. 

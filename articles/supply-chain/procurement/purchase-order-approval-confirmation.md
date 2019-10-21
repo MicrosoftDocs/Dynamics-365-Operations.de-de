@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e274f52484d3fe1884152f155b6b7f0714f8842e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 58ff596314d348a465ba6ee23369f09e74d580eb
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572695"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2248870"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Bestellungen genehmigen und bestätigen
 
@@ -39,7 +39,7 @@ Nachdem eine Bestellung (PO) erstellt wurde, muss diese möglicherweise einen Ge
 ## <a name="approval-of-purchase-orders"></a>Genehmigung von Bestellungen
 PO ohne Änderungsmanagement haben den Status **Genehmigt** sobald sie erstellt wurden. POs mit Änderungsmanagement haben den Status **Entwurf** wenn sie erstellt werden. Eine Bestellungen, die durch Umwandeln von geplanten Bestellungen aus dem Produktprogrammplan erstellt wurden, haben, unabhängig von den Einstellungen der Änderungsverwaltung, den Status **Genehmigt**. Eine Bestellung erstellt Lagertransaktionen nur bei Erreichen des Status **Genehmigt**. Daher wird der Bestand nicht als verfügbar für Reservierung angezeigt oder markiert, bis die Bestellung akzeptiert wird.  
 
-Sie aktivieren das Änderungsmanagement für POs über die Option **Änderungsmanagement aktivieren** auf der Seite **Beschaffungsparameter**. Wenn das Änderungsmanagement aktiviert ist, müssen POs einen Genehmigungsworkflow durchlaufen, nachdem sie abgeschlossen wurden. Microsoft Dynamics 365 for Finance and Operations hat einen Workflow-Prozess-Editor, über den Sie einen Workflow für den Genehmigungsprozess definieren können. Dieser Workflow kann Regeln für automatische die Genehmigung, Regeln für die Zuweisung der Genehmigung von bestimmten POs und Regeln zur Eskalation eines Workflows mit länger ausstehender Genehmigung enthalten. Sie können den Änderungsmanagementprozess für alle Kreditoren oder für bestimmte Kreditoren aktivieren. Sie können den Prozess auch so einrichten, dass er für einzelne POs überschrieben werden kann.  
+Sie aktivieren das Änderungsmanagement für POs über die Option **Änderungsmanagement aktivieren** auf der Seite **Beschaffungsparameter**. Wenn das Änderungsmanagement aktiviert ist, müssen POs einen Genehmigungsworkflow durchlaufen, nachdem sie abgeschlossen wurden. Supply Chain Management hat einen Workflow-Prozess-Editor, über den Sie einen Workflow für den Genehmigungsprozess definieren können. Dieser Workflow kann Regeln für automatische die Genehmigung, Regeln für die Zuweisung der Genehmigung von bestimmten POs und Regeln zur Eskalation eines Workflows mit länger ausstehender Genehmigung enthalten. Sie können den Änderungsmanagementprozess für alle Kreditoren oder für bestimmte Kreditoren aktivieren. Sie können den Prozess auch so einrichten, dass er für einzelne POs überschrieben werden kann.  
 
 Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswerte (von **Entwurf** bis **Abgeschlossen**). Nachdem eine Bestellung genehmigt wurde, müssen Benutzer zur Bearbeitung die **Änderung anfordern**-Aktion nutzen.
 
@@ -55,7 +55,7 @@ Bei aktiviertem Änderungsmanagement durchlaufen POs sechs Genehmigungsstatuswer
 ## <a name="confirming-purchase-orders"></a>Bestellungen bestätigen
 POs mit dem Genehmigungsstatus **Genehmigt** können vor der Bestätigung weitere Schritte durchlaufen. Sie können beispielsweise eine Bestellungsanfrage an den Kreditor zu Preisen, Rabatten und Lieferdaten senden. In diesem Fall legen Sie die Bestellung mithilfe der **Einkaufsabfrage**-Aktion auf den Status **In externer Prüfung** fest.  
 
-Kreditoren, die für die Verwendung des Kreditorenportal eingerichtet sind, können Aufträge im Portal überprüfen und genehmigen oder ablehnen. Während dieser Überprüfung hat die Bestellung den Status **In externer Prüfung**. Der Kreditorenportal kann so konfiguriert werden, dass eine Bestätigung vom Kreditor automatisch den Auftrag in Finance and Operations bestätigt. Alternativ können Sie eine Bestellung nach Bestätigung des Kreditors manuell bestätigen. Wenn ein Kreditor eine Bestellung ablehnt, wird die Ablehnung zusammen mit dem Grund für die Ablehnung sowie Vorschlägen zu Änderungen empfangen. In diesem Fall bleibt der Status der Bestellung auf **In externer Prüfung**.  
+Kreditoren, die für die Verwendung des Kreditorenportal eingerichtet sind, können Aufträge im Portal überprüfen und genehmigen oder ablehnen. Während dieser Überprüfung hat die Bestellung den Status **In externer Prüfung**. Der Kreditorenportal kann so konfiguriert werden, dass eine Bestätigung vom Kreditor automatisch den Auftrag in Supply Chain Management bestätigt. Alternativ können Sie eine Bestellung nach Bestätigung des Kreditors manuell bestätigen. Wenn ein Kreditor eine Bestellung ablehnt, wird die Ablehnung zusammen mit dem Grund für die Ablehnung sowie Vorschlägen zu Änderungen empfangen. In diesem Fall bleibt der Status der Bestellung auf **In externer Prüfung**.  
 
 Es ist auch Option zur Generierung einer Proforma-Bestätigung einer Bestellung vor der eigentlichen Bestätigung verfügbar. Diese Option erstellt einfach einen Bericht, den Sie für den Kreditor freigeben können. Sie erstellt keine Erfassungsinformationen.  
 

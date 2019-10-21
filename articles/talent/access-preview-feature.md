@@ -1,6 +1,6 @@
 ---
-title: Auf Vorschaufunktionen in Microsoft Dynamics 365 for Talent zugreifen
-description: In diesem Thema wird beschrieben, wie ein Administrator die Vorschaufunktionen in Microsoft Dynamics 365 for Talent aktivieren kann, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind.
+title: Auf Vorschaufunktionen in Microsoft Dynamics 365 Talent zugreifen
+description: In diesem Thema wird beschrieben, wie ein Administrator die Vorschaufunktionen in Microsoft Dynamics 365 Talent aktivieren kann, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind.
 author: tracykeya
 manager: AnnBe
 ms.date: 05/30/2019
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 6a5aa8d6ea72ec3d3910edea291c4340ab607326
-ms.sourcegitcommit: 7c49475402632069685df714546770d30804af7f
+ms.openlocfilehash: e607c2ba4b544d60c97d98bd49b07d912d83ebc6
+ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "1739586"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "2008701"
 ---
 # <a name="manage-preview-features"></a>Vorschaufunktionen verwalten
 
 [!include[banner](../includes/banner.md)]
 
-Im Rahmen unseres kontinuierlichen Rollouts von Human Capital Management (HCM) Funktionen für Microsoft Dynamics 365 for Talent, wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Administratoren können Vorschaufunktionen in ihrer Umgebung sehen und nutzen. Diese Funktionen sind fast fertig für die allgemeine Verfügbarkeit und wurden ausgiebig getestet. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
+Im Rahmen unseres kontinuierlichen Rollouts von Human Capital Management (HCM) Funktionen für Microsoft Dynamics 365 Talent, wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Administratoren können Vorschaufunktionen in ihrer Umgebung sehen und nutzen. Diese Funktionen sind fast fertig für die allgemeine Verfügbarkeit und wurden ausgiebig getestet. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
 
-In diesem Thema wird beschrieben, wie Sie die Vorschaufunktionen aktivieren können, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind. Diese Liste wird aktualisiert, wenn die Funktionen zur allgemeinen Verfügbarkeit freigegeben werden und wenn neue Funktionen zur Vorschau freigegeben werden. Es erfolgt keine Benachrichtigung, wenn neue Funktionen zur Vorschau freigegeben werden. Die Benutzer werden nur beginnen, die Funktionen zu sehen. Weitere Informationen über neue Funktionen im Talent, finden Sie unter [Neuheiten oder Änderungen in Dynamics 365 for Talent](./whats-new.md) und [Dynamics 365 und Power Platform-Versionshinweise](https://docs.microsoft.com/business-applications-release-notes).
+In diesem Thema wird beschrieben, wie Sie die Vorschaufunktionen aktivieren können, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind. Diese Liste wird aktualisiert, wenn die Funktionen zur allgemeinen Verfügbarkeit freigegeben werden und wenn neue Funktionen zur Vorschau freigegeben werden. Es erfolgt keine Benachrichtigung, wenn neue Funktionen zur Vorschau freigegeben werden. Die Benutzer werden nur beginnen, die Funktionen zu sehen. Weitere Informationen über neue Funktionen im Talent, finden Sie unter [Neuheiten oder Änderungen in Dynamics 365 Talent](./whats-new.md) und [Dynamics 365 und Power Platform-Versionshinweise](https://docs.microsoft.com/business-applications-release-notes).
 
 ## <a name="enable-or-disable-preview-features"></a>Vorschaufunktionen aktivieren oder deaktivieren
 
@@ -40,9 +40,9 @@ Um auf Vorschaufunktionen zugreifen zu können, müssen Sie sie in Ihrer Umgebun
 > [!IMPORTANT]
 > Durch das Aktivieren der Einstellung **Vorschaufunktionen** aktivieren Sie Vorschaufunktionen für alle Benutzer in Ihrer Organisation, die sich in dieser Umgebung befinden. Wenn Sie die Einstellung deaktivieren, deaktivieren Sie die Vorschaufunktionen und machen sie für Ihre Benutzer unzugänglich. Die Vorschaufunktionen werden in Talent nur eingeschränkt unterstützt. Sie verwenden möglicherweise weniger Datenschutz- und Sicherheitsmaßnahmen und sind nicht in der Talent-Service-Level-Vereinbarung (SLA) enthalten. Sie sollten keine Vorschaufunktionen verwenden, um personenbezogene Daten (d. h. Informationen, die Sie identifizieren könnten) oder andere Daten zu verarbeiten, die gesetzlichen oder behördlichen Anforderungen unterliegen.
 
-### <a name="attract"></a>Anwerben
+### <a name="attract"></a>Attract
 
-1. Melden Sie sich bei Microsoft Dynamics 365 for Talent: Attract an.
+1. Melden Sie sich bei Microsoft Dynamics 365 Talent: Attract an.
 2. Wählen Sie im **Setup**-Menü (das Zahnradsymbol) in der oberen rechten Ecke **Admin Center**.
 3. Wählen Sie auf der Registerkarte **Funktion-Verwaltung** die Option neben **Vorschau-Funktion**, so dass sie blau wird und anzeigt **Ein**.
 
@@ -69,11 +69,11 @@ Um auf Vorschaufunktionen zugreifen zu können, müssen Sie sie in Ihrer Umgebun
 
 ### <a name="onboard"></a>Aufnehmen
 
-Keine Vorschaufunktionen sind derzeit für Microsoft Dynamics 365 for Talent verfügbar. Onboard.
+Keine Vorschaufunktionen sind derzeit für Microsoft Dynamics 365 Talent: Onboard verfügbar.
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktionen, die sich derzeit in der Vorschau befinden
 
-### <a name="attract"></a>Anwerben
+### <a name="attract"></a>Attract
 
 - [Kandidatenempfehlung](./intelligent-recommendations.md#candidate-recommendations) - Wenn es mehr als zehn Kandidaten oder Interessenten gibt, die Zusammenfassungen oder vollständige Profile haben, erscheinen die Kandidaten oder Interessenten, die den Anforderungen der Stelle am besten entsprechen, oben im Abschnitt **Zu berücksichtigende Bewerber** auf der Stellenseite.
 - [Stellenempfehlung](./intelligent-recommendations.md#job-recommendations) – Wenn mehr als zehn Stellen auf der Karrieresite veröffentlicht sind, stellt Attract Stellenempfehlungen für Interessenten bereit.

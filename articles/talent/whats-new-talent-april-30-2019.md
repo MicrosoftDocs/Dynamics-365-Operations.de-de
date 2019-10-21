@@ -1,6 +1,6 @@
 ---
-title: Neuigkeiten oder Änderungen in Dynamics 365 for Talent (30. April, 2019)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+title: Neuigkeiten oder Änderungen in Dynamics 365 Talent (30. April, 2019)
+description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
 ms.date: 04/30/2019
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 112146ac46193e37b33bf429dc5a359f8cfaca94
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 38158948dbcf8966edf49bcce5b1e5da7eddb8dc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1505372"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2026035"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-for-talent-april-30-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 for Talent (30. April, 2019)
+# <a name="whats-new-or-changed-in-dynamics-365-talent-april-30-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (30. April, 2019)
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 for Talent entweder neu oder geändert sind.
+In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 
 ## <a name="changes-in-attract"></a>Änderungen in Attract
 
@@ -100,4 +100,4 @@ Die Möglichkeit zum Nachverfolgen von Mitarbeiterfreizeit und ein Verständnis 
 
 ### <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
 
-Durch die Plattformaktualisierung 26 können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
+In Platform update 26 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.

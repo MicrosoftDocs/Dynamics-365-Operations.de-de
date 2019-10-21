@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 9e88a8b22b73aca5c2cee6984ecad3c62e597102
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 63cad6b2f7240bb14fe7a9237498c0140df77774
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567998"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025028"
 ---
 # <a name="retail-statements"></a>Einzelhandelsaufstellungen
 
 [!include [banner](includes/banner.md)]
 
-In Microsoft Dynamics 365 for Retail wird der Auszugsbuchungsprozess verwendet, um die Buchungen zu berücksichtigen, die in Cloud Point of Sale (POS) oder Modern POS (MPOS) erfolgen. Der Auszugsbuchungsprozess verwendet den Verteilungszeitplan, um einen Satz POS-Buchungen in den Headquarters (HQ)-Client einzubeziehen. Die Parameter, die auf den Seiten **Einzelhandelsparameter** und **Filialen** definiert werden, werden verwendet, um die Buchungen auszuwählen, die in einzelne Auszüge einbezogen werden.
+In Dynamics 365 Retail wird der Auszugsbuchungsprozess verwendet, um die Buchungen zu berücksichtigen, die in Cloud Point of Sale (POS) oder Modern POS (MPOS) erfolgen. Der Auszugsbuchungsprozess verwendet den Verteilungszeitplan, um einen Satz POS-Buchungen in den Headquarters (HQ)-Client einzubeziehen. Die Parameter, die auf den Seiten **Einzelhandelsparameter** und **Filialen** definiert werden, werden verwendet, um die Buchungen auszuwählen, die in einzelne Auszüge einbezogen werden.
 
 Das folgende Abbildung zeigt den Auszugsbuchungsprozess. In diesem Vorgang werden Buchungen, die im POS erfasst werden, an den Client gesendet, indem das Retail Steuerprogramm verwendet wird. Nachdem der Client die Buchungen erhält, können Sie den Buchungsauszug für die Filialen erstellen, berechnen und buchen.
 
@@ -85,6 +85,6 @@ Wenn das Kontrollkästchen **Als Arbeitstag buchen** für dieselbe Filiale deakt
 Wenn Sie einen Auzug buchen, werden Aufträge und Rechnungen für die Einzelhandelsverkäufe in der Aufstellung erstellt.
 
 - Cash-and-carry-Aufträge werden in einem Auftrag zusammengefasst und für den Standarddebitor fakturiert, der der Filiale zugewiesen ist.
-- Einzelhandelsverkäufe, für die ein Debitor zu der Buchung in Microsoft Dynamics 365 for Retail-POS hinzugefügt wurde, generieren für jeden einzelnen Debitor separate Aufträge und Rechnungen.
+- Einzelhandelsverkäufe, für die ein Debitor zu der Buchung in Retail POS hinzugefügt wurde, generieren für jeden einzelnen Debitor separate Aufträge und Rechnungen.
 
 Zahlungserfassungen werden automatisch für die Zahlungen in der Aufstellung erstellt, und der Lagerbestand wird für den POS-Speicher aktualisiert.

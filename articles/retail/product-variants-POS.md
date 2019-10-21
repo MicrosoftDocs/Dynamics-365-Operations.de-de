@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: cd2dc460c9e862503ebbf1942dcf998d67829d86
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 609f5f13f3af4a7621fe7ee152800dac4d68a9fc
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572048"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025148"
 ---
 # <a name="inventory-lookup-in-the-point-of-sale-pos"></a>Lagersuche in der Verkaufsstelle (POS)
 
@@ -52,7 +52,7 @@ Die Mengen **Reserviert** und **Bestellt** werden auch für jeden Lagerplatz ang
 Die Liste der Lagerplätze umfasst zwei Typen von Entitäten:
 
 - **Einzelhandelsfilialen** – In der Liste werden Filialen angezeigt, die mithilfe der Filiallokatorgruppe für die aktuelle Filiale in der Retail Zentralverwaltung konfiguriert werden.
-- **Verteilungszentren** – Verschiedene Typen von Verteilungszentren (beispielsweise Lagerorte) können in Microsoft Dynamics 365 for Retail konfiguriert werden. Allerdings zeigt die Liste nur Bestandsverfügbarkeitsinformationen für Verteilungszentren des Standardtyps **Standard** an.
+- **Verteilungszentren** – Verschiedene Typen von Verteilungszentren (beispielsweise Lagerorte) können in Retail konfiguriert werden. Allerdings zeigt die Liste nur Bestandsverfügbarkeitsinformationen für Verteilungszentren des Standardtyps **Standard** an.
 
     > [!NOTE]
     > Bestandsverfügbarkeitsinformationen wird nicht für Lagerorte der Typen **Zustellung**, **Quarantäne** und **Waren im Arbeitsplan** für die POS angezeigt.

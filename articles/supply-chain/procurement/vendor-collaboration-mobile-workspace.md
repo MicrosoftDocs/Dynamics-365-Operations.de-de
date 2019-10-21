@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: mkirknel
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 253ba0bd991e8db17940d3d4b9ade599800bf924
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2c2ba1f23cc068daf20474f05519c3c6865fd183
+ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843864"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "2250255"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
 
@@ -30,10 +30,10 @@ ms.locfileid: "1843864"
 
 Dieses Thema enthält Informationen zur **Lieferantenzusammenarbeit** im mobilen Arbeitsbereich. Dieser Arbeitsbereich hilft Kreditoren, auf dem neuesten Stand der Bestellungen zu sein, die ihnen zur Genehmigung gesendet wurden. Sie können auch Informationen zu neuen und aktualisierten Bestellungen und Kontakten anzeigen.
 
-Dieser mobile Arbeitsbereich soll mit der Microsoft Dynamics 365 for Unified Operations Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich soll mit der Finance and Operations-Mobile-App verwendet werden.
 
 ## <a name="overview"></a>Übersicht 
-Der Arbeitsbereich für die **Kreditor-Kooperation** hält Kreditoren über neue Bestellungen auf dem Laufenden, sodass diese neue Bestellungen im Webclient von Microsoft Dynamics 365 for Finance and Operations sehen und auf diese reagieren können. 
+Der Arbeitsbereich für die **Kreditor-Kooperation** hält Kreditoren über neue Bestellungen auf dem Laufenden, sodass diese neue Bestellungen im Webclient sehen und auf diese reagieren können. 
 
 >[!NOTE]
 > Der mobile Arbeitsbereich sollte als Ergänzung und nicht als Ersatz der Weboberfläche für die Kreditor-Kooperation eingesetzt werden. 
@@ -59,8 +59,8 @@ Der mobile Arbeitsbereich **Kreditorenzusammenarbeit** ermöglicht einem Kredito
 ## <a name="prerequisites"></a>Voraussetzungen
 Die Voraussetzungen unterscheiden sich basierend auf der Version von Microsoft Dynamics 365, die für Ihre Organisation bereitgestellt wurde.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Finance and Operationsverwenden 
-Wenn Microsoft Dynamics 365 for Finance and Operations für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-supply-chain-management"></a>Voraussetzungen, wenn Sie verwenden Supply Chain Management
+Wenn Supply Chain Management für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator den mobilen Arbeitsbereich **Kreditor-Kooperation** veröffentlichen. Anweisungen finden Sie unter [Einen mobilen Arbeitsbereich veröffentlichen](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Voraussetzungen, wenn Sie Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher verwenden
 Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 oder höher für Ihre Organisation bereitgestellt wurde, muss der Systemadministrator die folgenden Voraussetzungen erfüllen. 
@@ -104,7 +104,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 <li><a href="vendor-collaboration-work-external-vendors.md">Nutzen der Kreditor-Kooperation für die Zusammenarbeit mit externen Kreditoren</a></li>
 <li><a href="manage-vendor-collaboration-users.md">Benutzer für Kreditor-Kooperationen verwalten</a></li>
 <li><a href="set-up-maintain-vendor-collaboration.md">Kreditorenzusammenarbeit einrichten und verwalten</a></li>
-<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Verwenden der Kreditor-Kooperation für Kunden in Finance and Operations</a></li>
+<li><a href="vendor-collaboration-work-customers-dynamics-365-operations.md">Verwenden der Kreditor-Kooperation für Kunden in Supply Chain Managements</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -112,7 +112,7 @@ Wenn Microsoft Dynamics 365 for Operations Version 1611 mit Plattformupdate 3 od
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
 
-Laden Sie die mobile App für Dynamics 365 for Unified Operations herunter und installieren Sie diese:
+Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bd3596b6c78c5959ca289c73bcc5785eb770be39
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 449a1f574cd32860cbdc2e43f21be1d3d692768f
+ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1553552"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "2025101"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Coupons für Einzelhandelsverkäufe einrichten
 
@@ -37,10 +37,10 @@ Jeder Coupon wird einem Kleinrabatt zugeordnet. Die Preisgruppen, die dem Rabatt
 
 Im Grunde genommen sind Coupons zusätzliche Validierungen neben Einzelhandelsrabatten. Der Coupon stellt die Couponcodes und Strichcodes bereit, die erforderlich sind, zusammen mit den Datumsbereichen des Codes. Der Coupon enthält auch optionale Verwendungslimiten und von Kunden erforderliche Eigenschaften. Der Rabatt enthält den Satz von Produkten, für die der Coupon gültig sein soll. Die Preisgruppen für den Rabatt für die Gruppe von Debitoren, von Kanälen oder von Katalogen, für die der Coupon gültig sein soll.
 
-Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite in Microsoft Dynamics 365 for Retail aus.
+Um einen Coupon zu erstellen, stellen Sie den Rabatt und den Coupon getrennt her. Zum Verknüpfen wählen Sie den Rabatt auf der Couponseite in Retail aus.
 
 > [!NOTE]
-> Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Microsoft Dynamics 365 for Retail schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
+> Nachdem ein Coupon mit einem Rabatt verknüpft ist, sind einige Felder auf der Rabattseite in Retail schreibgeschützt, da sie durch die Einstellungen des Coupons verwaltet werden. Diese Felder enthalten die Felder für die Standarddatumsbereiche.
 
 ### <a name="limited-use-coupons"></a>Begrenzte Nutzung der Coupons
 
@@ -75,7 +75,7 @@ Bevor Sie einen Coupon einrichten können, müssen Sie den Couponstrichcode und 
 
 ## <a name="the-effect-of-partial-updates-on-coupons"></a>Die Auswirkungen von Teilausführungsaktualisierungen auf Coupons
 
-Couponfunktionen enthalten mehrere eindeutige Funktionen in Dynamics 365 for Retail. Microsoft Dynamics 365 for Retail Headquarters (HQ) und der Kanal können für einzelne Komponenten aktualisiert werden. Daher ist es wichtig, dass Sie beispielsweise wissen, wie einzelne Aktualisierungen die Couponfunktionen als ganzes beeinflussen.
+Couponfunktionen enthalten mehrere eindeutige Funktionen in Retail. Dynamics 365 Retail Headquarters (HQ) und der Kanal können für einzelne Komponenten aktualisiert werden. Daher ist es wichtig, dass Sie beispielsweise wissen, wie einzelne Aktualisierungen die Couponfunktionen als ganzes beeinflussen.
 
 - **HQ wird teilweise aktualisiert, wobei Retail Server und POS nicht aktualisiert werden.** In einer Hauptniederlassungsaktualisierung werden die Coupon- und Rabattseiten aktualisiert, und der Einzelhandelspreis wird ebenfalls aktualisiert. Wenn nur eine dieser zwei Komponenten aktualisiert wird, stimmen mehrere Seiten im Einzelhandel nicht mit den Herstellkostenkalkulationsdaten überein. Daher können unerwartete Rabattberechnungen oder möglicherweise Fehler während der Rabattberechnungen auftreten.
 - **HQ wird teilweise aktualisiert, wobei Retail Server und POS nicht aktualisiert werden (N-1).** Nicht alle Einzelhandelsgeschäfte können gleichzeitig aktualisiert werden und es empfiehlt sich, anschließend die Hauptniederlassung zu aktualisieren, bevor Sie Einzelhandelsgeschäfte aktualisieren. Im Szenario N-1 sind neue Funktionen, die den Coupons zugeordnet ist, nicht in den Filialen verfügbar, die noch nicht aktualisiert wurden. So führen die Couponfunktionen "Positionen ausschließen" ein. Wenn Sie "Position ausschließen" verwenden, werden in einer Filiale keine Rabatt angewendet, die nicht in einer früheren Version ausgeführt werden.
