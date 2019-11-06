@@ -6,7 +6,7 @@ Wenn Sie eine Datenbank von einer Umgebung in eine andere kopieren, müssen Sie 
 Bevor Sie fortfahren, müssen Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
 1. Wenn Sie auf die Version vom Juli 2017 (auch bekannt als 7.2) 7.2.11792.56024 aktualisieren, wenden Sie die folgenden X++-Hotfixes der Anwendung in der Zielumgebung an, bevor Sie die Aktualisierung der Daten in dieser Umgebung durchführen. Dadurch wird verhindert, dass während der Aktualisierung der Daten verschiedene Fehler auftreten:
 
-    - KB 4036156 – Upgrade der Retail-Unterversion – ‚Die Reihenfolge der Variantennummern ist nicht festgelegt.‘ Dieses Korrekturpaket enthält auch KB 4035399 und KB 4035751. Beachten Sie, dass Sie mindestens Plattform-Update 9 haben müssen, um dieses Paket verwenden zu können. Wenn Sie nicht sicher sind, installieren Sie die aktuellen Binärdateien.
+    - KB 4036156 – Upgrade der Retail-Unterversion – ‚Die Reihenfolge der Variantennummern ist nicht festgelegt.‘ Dieses Korrekturpaket enthält auch KB 4035399 und KB 4035751. Beachten Sie, dass Sie mindestens Platform Update 9 haben müssen, um dieses Paket verwenden zu können. Wenn Sie nicht sicher sind, installieren Sie die aktuellen Binärdateien.
     
 2. Wenn Sie von Microsoft Dynamics AX 2012 aktualisieren, installieren Sie die folgenden X++-Korrekturen der Anwendung in der Zielumgebung, bevor Sie die Daten aktualisieren:
     - KB 4033183 - Dynamics AX 2012 R2 oder Dynamics AX 2012 R3 Pre-CU8 Nicht-Retail-Upgrade schlägt fehl mit Objekt nicht gefunden für dbo.RETAILTILLLAYOUTZONE.

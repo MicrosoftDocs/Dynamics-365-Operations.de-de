@@ -42,6 +42,8 @@
               items:
                 - name: Bereitstellungsoptionen
                   href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vergleich von Cloud- und On-Premises-Funktionen
+                  href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Cloudbereitstellung
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemanforderungen für Cloudbereitstellungen
@@ -60,16 +62,20 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Neuerungen oder Änderungen
               items:
-                - name: Neuerungen oder Änderungen – Startseite
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md
-                - name: Vorschaufunktionen in Finance and Operations-Apps 10.0.6 (November 2019)
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md?toc=/dynamics365/supply-chain/toc.json
-                - name: "Finance and Operations-Apps\_10.0.5 (Oktober\_2019)"
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
-                - name: "Finance and Operations\_10.0.4 (Juli\_2019)"
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations, Enterprise Edition 7.3'
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Vorschau der Funktionen in Supply Chain Management Version 10.0.7 (Dezember 2019)
+                  href: get-started/whats-new-scm-10-0-7.md
+                - name: Supply Chain Management 10.0.6 (November 2019)
+                  href: get-started/whats-new-scm-10-0-6.md
+                - name: Neuerungen oder Änderungen in vorherigen Versionen
+                  items:
+                    - name: Neuerungen oder Änderungen in Finance and Operations – Startseite
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Finance and Operations-Apps\_10.0.5 (Oktober\_2019)"
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: "Finance and Operations\_10.0.4 (Juli\_2019)"
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Finance and Operations, Enterprise Edition 7.3'
+                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Entfernte oder veraltete Funktionen
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: "Verschobene Funktionen von AX\_2012"
@@ -1687,8 +1693,6 @@
                       href: production-control/register-material-consumption-hand-held-device.md
                     - name: Rohmaterialverbrauch über Stücklisten-Bezugsprinzip steuern
                       href: production-control/flushing-principles.md
-                    - name: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
-                      href: production-control/cross-docking-opportunities.md
                     - name: Standort für den Produktions-Warenabgang für fertige Waren festlegen
                       href: production-control/production-output-location.md
                     - name: Fertigmeldung für Stücklisten
@@ -2285,6 +2289,12 @@
                   href: warehousing/manage-warehouse-workers.md
                 - name: Verzögerte Verarbeitung der Lagerarbeit
                   href: warehousing/deferred-put.md
+            - name: Crossdocking
+              items:
+                - name: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
+                  href: production-control/cross-docking-opportunities.md
+                - name: Lieferung automatisch für Crossdocking freigeben
+                  href: warehousing/auto-release-shipment-for-cross-docking.md
             - name: Teilweise Freigabe und teilweise Lieferung
               items:
                 - name: Partielle Lieferung einer Datentransportauslastung
@@ -2311,6 +2321,8 @@
                   href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
                 - name: Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten
                   href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                - name: Stornieren von Lagerarbeit für die Ausnahmebehandlung
+                  href: warehousing/cancel-warehouse-work.md
             - name: Lagerinventur
               items:
                 - name: Ursachencodes für Lagerinventuren anzeigen

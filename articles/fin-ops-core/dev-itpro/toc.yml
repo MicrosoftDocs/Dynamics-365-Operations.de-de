@@ -1,12 +1,14 @@
-- name: Entwicklung und Administration für Finance and Operations
+- name: Entwicklung und Administration für Finance and Operations-Apps
   items:
-    - name: Entwicklung und Administration für Finance and Operations
+    - name: Entwicklung und Administration für Finance and Operations-Apps
       items:
-        - name: Entwicklung und Administration für Finance and Operations
+        - name: Entwicklung und Administration für Finance and Operations-Apps
           href: index.md
         - name: Neuerungen oder Änderungen
           items:
-            - name: Vorschaufunktionen in Platform update 30 (November 2019)
+            - name: Vorschaufunktionen in Platform update 31 (Januar 2020)
+              href: get-started/whats-new-platform-update-31.md
+            - name: Platform update 30 (November 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
             - name: "Platform update\_29 (Oktober 2019)"
               href: ../fin-ops/get-started/whats-new-platform-update-29.md
@@ -62,6 +64,8 @@
                   href: business-events/how-to/FormsPro.md
                 - name: Geschäftsereignisse und Azure Event Hubs
                   href: business-events/how-to/event-hub.md
+                - name: Geschäftsereignisse beim Finanzperiodenabschluss
+                  href: business-events/how-to/period-close.md
         - name: Continuous Delivery
           items:
             - name: Kontinuierliche Zustellung – Startseite
@@ -80,13 +84,13 @@
               href: data-entities/integration-overview.md
             - name: Datenintegrations-APIs
               items:
-                - name: Datenverwaltungspaket REST API
+                - name: Datenverwaltungspaket-REST-API
                   href: data-entities/data-management-api.md
                 - name: Dienstleistungsendpunkte
                   items:
-                    - name: Dienstleistungsendpunkte – Übersicht
+                    - name: Service-Endpunkte – Übersicht
                       href: data-entities/services-home-page.md
-                    - name: Problembehandlung bei Dienstleistungsauthentifizierung
+                    - name: Problembehandlung bei der Service-Authentifizierung
                       href: data-entities/troubleshoot-service-authentication.md
                 - name: OData
                   href: data-entities/odata.md
@@ -302,6 +306,26 @@
                   href: database/dbmovement-scenario-goldenconfig.md
                 - name: Zerstörungstests
                   href: database/dbmovement-scenario-destructivetests.md
+            - name: RESTful-API
+              items:
+                - name: Übersicht
+                  href: database/api/dbmovement-api-overview.md
+                - name: Versionierung und Unterstützung
+                  href: database/api/dbmovement-api-versioning-support.md
+                - name: Authentifizierung
+                  href: database/api/dbmovement-api-authentication.md
+                - name: Drosselung
+                  href: database/api/dbmovement-api-throttling.md
+                - name: Referenz
+                  items:
+                    - name: Referenz zur API (v1)
+                      href: database/api/v1/dbmovement-api-v1-overview.md
+                    - name: Auflisten von Datenbank-Backups
+                      href: database/api/v1/reference-list-backups.md
+                    - name: Erstellen von Datenbankaktualisierungen
+                      href: database/api/v1/reference-create-refresh.md
+                    - name: Arbeitsgang-/Aktivitätsstatus abrufen
+                      href: database/api/v1/reference-get-status.md
         - name: Demodaten
           items:
             - name: Demodaten – Übersicht
@@ -1213,7 +1237,7 @@
             - name: Erhalten Sie Support für Finance and Operations und Lifecycle Services
               href: lifecycle-services/lcs-support.md
             - name: Supportübersicht für Dynamics 365
-              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/dev-itpro/toc.json&bc=/dynamics365/unified-operations/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: 'Support für Finance and Operations erhalten, bearbeitet von 21Vianet in China'
               href: lifecycle-services/21vianet-support.md
             - name: Senden Sie Anfragen an das Dynamics Service-Technikteam

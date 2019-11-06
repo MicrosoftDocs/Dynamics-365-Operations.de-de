@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8bc9445bacc764bd0c70be4a55d621fc3f8fb270
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 510a36668bf131b48733e486a43f1d630ae9f3ea
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278323"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653693"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management – Hilferessourcen
 
@@ -39,7 +39,7 @@ Besuchen Sie <a href="https://roadmap.dynamics.com/">Dynamics 365 – Produktpla
 Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erhalten.
 
 - [Anlagenverwaltung](asset-management/index.md)
-- [Kostenrechnung](../financials/cost-accounting/cost-accounting-home-page.md)
+- [Kostenrechnung](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kostenverwaltung](cost-management/cost-management-home-page.md)  
 - [Lagerverwaltung](inventory/inventory-home-page.md)
 - [Produktprogrammplanung](master-planning/master-planning-home-page.md)
@@ -109,7 +109,7 @@ Diese technische Konferenz beschreibt die Produktfunktionalität für die älter
 -  [Transportverwaltung (TMS) im neuen Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogs
-Es gibt viele Themen zur Produktion und Lieferkettenverwaltung unter <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX – Team für Produktionsforschung und Entwicklung – Blog</a> sowie im <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Lieferkettenverwaltung im Dynamics AX Forschungs- und Entwicklungsteam-Blog</a>. Die meisten dieser Beiträge wurden für die ältere Version von Finance and Operations erstellt, aber die gleichen Konzepte gelten noch und die Prozeduren sind in der aktuellen Version vergleichbar. 
+Es gibt viele Themen zur Produktion und Lieferkettenverwaltung unter <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX – Team für Produktionsforschung und Entwicklung – Blog</a> sowie im <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Lieferkettenverwaltung im Dynamics AX Forschungs- und Entwicklungsteam-Blog</a>. Die meisten dieser Beiträge wurden für die ältere Version erstellt, aber die gleichen Konzepte gelten noch und die Prozeduren sind in der aktuellen Version vergleichbar. 
 
 ## <a name="white-papers"></a>Whitepapers
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktische Übungseinheiten zur Kostenrechnung</a> 

@@ -3,7 +3,7 @@ title: Verteilte Auftragsverwaltung (DOM)
 description: In diesem Thema wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Dynamics 365 Retail beschrieben.
 author: josaw1
 manager: AnnBe
-ms.date: 11/15/2018
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fee0d9257af86a734a60b469db3a006435f1d3d2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 0ebac1c3f9f79ee49ae11a121a4a0dd3bd456c8f
+ms.sourcegitcommit: bdbca89bd9b328c282ebfb681f75b8f1ed96e7a8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023418"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578483"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
@@ -94,6 +94,7 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
         - **Partielle Positionen erfüllen?** – Ist die Option auf **Ja** festgelegt, kann DOM nur eine Teilmenge in einer Auftragsposition erfüllen. Diese teilweise Erfüllung wird erreicht, indem die Auftragsposition aufgeteilt wird.
         - **Erfüllen von Auftrag nur von einem einzelnen Standort** – Wenn die Option auf **Ja** gesetzt ist, stellt DOM sicher, das alle Positionen eines Auftrags von einem einzigen Standort aus erfüllt werden.
 
+
         In der folgenden Tabelle ist aufgeführt, wie sich DOM verhält, wenn eine Kombination dieser Parameter definiert ist.
 
         |      | Partielle Aufträge erfüllen | Partielle Positionen erfüllen | Auftrag nur von einem Standort aus erfüllen | Beschreibung |
@@ -110,19 +111,22 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
 
         \* Wenn **Partielle Aufträge erfüllen** auf **Nein** festgelegt wird, wird **Partielle Positionen erfüllen** immer mit **Nein** berücksichtigt, unabhängig davon, wie dieses Feld tatsächlich festgelegt ist.
 
-    - **Regel für Erfüllungsstandort offline** – Mit dieser Regel können Organisationen einen Standort oder eine Standortgruppe für DOM als offline oder als nicht verfügbar angeben, damit dort keine Aufträge zur Erfüllung zugewiesen werden können.
+> [!NOTE]
+> In der Retail-Version 10.0.5 wurde der Parameter **Auftrag nur von einem Standort aus erfüllen** auf **Maximale Erfüllungsstandorte** geändert. Anstatt einem Benutzer die Möglichkeit zu geben, zu konfigurieren, ob Aufträge nur von einem Standort oder von so vielen Standorten wie möglich erfüllt werden können, können Benutzer nun festlegen, ob die Erfüllung von einem bestimmten Satz von Standorten (bis zu 5) oder von so vielen Standorten wie möglich erfolgen kann. Dies bietet mehr Flexibilität in Bezug auf die Anzahl der Standorte, an denen der Auftrag erfüllt werden kann.
+
+   - **Regel für Erfüllungsstandort offline** – Mit dieser Regel können Organisationen einen Standort oder eine Standortgruppe für DOM als offline oder als nicht verfügbar angeben, damit für diese Lagerorte keine Aufträge zur Erfüllung zugewiesen werden können.
     - **Regel für maximale Ablehnung** – Mit dieser Regel können Organisationen einen Schwellenwert für Ablehnungen definieren. Wenn der Schwellenwert erreicht wird, markiert der DOM-Prozessor einen Auftrag oder eine Auftragsposition als Ausnahme und schließt ihn oder sie durch Entfernen von späterer Bearbeitung aus.
 
         Wenn Auftragspositionen einem Standort zugewiesen sind, kann der Standort eine zugewiesene Auftragsposition ablehnen, da er aus bestimmten Gründen möglicherweise nicht in der Lage ist, die Position zu erfüllen. Abgelehnte Positionen werden als Ausnahme markiert und wieder in den Pool für die weitere Verarbeitung bei der nächsten Ausführung gestellt. Bei der nächsten Ausführung versucht DOM, die abgelehnte Position einem anderen Standort zuzuweisen. Der neue Standort kann die zugewiesene Auftragsposition auch ablehnen. Dieser Zyklus von Zuweisung und Ablehnung kann wiederholt ausgeführt werden. Wenn die Anzahl der Ablehnungen den definierten Schwellenwert erreicht, markiert DOM die Auftragsposition als permanente Ausnahme und wählt die Position nicht erneut für eine Zuweisung aus. DOM berücksichtigt die Auftragsposition nur dann wieder für eine erneute Zuweisung, wenn ein Benutzer den Status der Auftragsposition manuell zurücksetzt.
 
-    - **Regel für maximale Entfernung** – Mit dieser Regel können Organisationen die maximale Entfernung definieren, in der sich ein Standort oder eine Standortgruppe befinden kann, um den Auftrag zu erfüllen. Wenn Regeln für maximal überlappende Entfernungen für einen Standort definiert werden, wendet DOM die niedrigste maximale Entfernung an, die für diesen Standort definiert ist.
+   - **Regel für maximale Entfernung** – Mit dieser Regel können Organisationen die maximale Entfernung definieren, in der sich ein Standort oder eine Standortgruppe befinden kann, um den Auftrag zu erfüllen. Wenn Regeln für maximal überlappende Entfernungen für einen Standort definiert werden, wendet DOM die niedrigste maximale Entfernung an, die für diesen Standort definiert ist.
     - **Regel für maximale Auftragsanzahl** – Mit dieser Regel können Organisationen die maximale Anzahl von Aufträgen definieren, die ein Standort oder eine Standortgruppe an einem Kalendertags bearbeiten kann. Wird die maximale Anzahl von Aufträgen einem Standort für einen einzigen Tag zugewiesen, weist DOM diesem Standort für den Rest des Kalendertags keine weiteren Aufträge zu.
 
-    Nachfolgend sind einige der allgemeinen Attribute aufgeführt, die für alle vorhergehenden Regeltypen definiert werden können:
+   Nachfolgend sind einige der allgemeinen Attribute aufgeführt, die für alle vorhergehenden Regeltypen definiert werden können:
 
-    - **Startdatum** und **Enddatum** – Für jede Regel kann mit diesen Feldern ein Gültigkeitsdatum festgelegt werden.
-    - **Deaktiviert** – Nur Regeln, die in diesem Feld den Wert **Nein** haben, werden in einer DOM-Ausführung berücksichtigt.
-    - **Unbedingte Einschränkung** – Eine Regel kann als unbedingte oder nicht unbedingte Einschränkung definiert werden. Jede DOM-Ausführung durchläuft zwei Iterationen. In der ersten Iteration wird jede Regel als unbedingte Einschränkungsregel behandelt, unabhängig von der Einstellung dieses Feldes. Das bedeutet, dass jede Regel angewendet wird. Die einzige Ausnahme ist die Regel **Standortpriorität**. In der zweiten Iteration werden die Regeln entfernt, die nicht als unbedingte Einschränkungsregeln definiert wurden, und der Auftrag oder die Auftragspositionen, die bei Anwendung aller Regeln keinen Standorten zugewiesen wurden, werden nun Standorten zugewiesen.
+   - **Startdatum** und **Enddatum** – Für jede Regel kann mit diesen Feldern ein Gültigkeitsdatum festgelegt werden.
+   - **Deaktiviert** – Nur Regeln, die in diesem Feld den Wert **Nein** haben, werden in einer DOM-Ausführung berücksichtigt.
+   - **Unbedingte Einschränkung** – Eine Regel kann als unbedingte oder nicht unbedingte Einschränkung definiert werden. Jede DOM-Ausführung durchläuft zwei Iterationen. In der ersten Iteration wird jede Regel als unbedingte Einschränkungsregel behandelt, unabhängig von der Einstellung dieses Feldes. Das bedeutet, dass jede Regel angewendet wird. Die einzige Ausnahme ist die Regel **Standortpriorität**. In der zweiten Iteration werden die Regeln entfernt, die nicht als unbedingte Einschränkungsregeln definiert wurden, und der Auftrag oder die Auftragspositionen, die bei Anwendung aller Regeln keinen Standorten zugewiesen wurden, werden nun Standorten zugewiesen.
 
 10. Erfüllungsprofile werden verwendet, um eine Regelsammlung, juristische Personen, Auftragsursprünge und Lieferarten zu gruppieren. Jede DOM-Ausführung gilt für ein bestimmtes Erfüllungsprofil. Auf diese Weise können Organisationen eine Gruppe von Regeln für mehrere juristische Personen für Aufträge definieren und ausführen, die bestimmte Auftragsursprünge und -Lieferarten haben. Wenn ein anderer Regelsatz für andere Auftragsursprünge oder Lieferarten ausgeführt werden muss, können die Erfüllungsprofile entsprechend definiert werden. Gehen Sie zum Einrichten von Erfüllungsprofilen folgendermaßen vor:  
 
