@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f91faa03718830474e8e2a79015955bcad1d02e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6ecdece43b9d609e70e385dc5c3ec70b82f582ab
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249961"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653670"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -35,7 +35,7 @@ Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
 <a name="overview"></a>Überblick
 --------
 
-Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Finance and Operations besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beischreiben:
+Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Supply Chain Management besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beschreiben:
 
 -   **Arbeitsplan** – Ein Arbeitsplan definiert die Struktur des Produktionsprozesses. Das bedeutet, er definiert die Reihenfolge der Arbeitsgänge.
 -   **Arbeitsgang** – Ein Arbeitsgang gibt einen Schritt in einem benannten Arbeitsplan an (z. B. **Zusammenbau**). Der gleiche Vorgang kann in mehreren Arbeitsplänen auftreten und unterschiedliche Arbeitsgangnummern haben.

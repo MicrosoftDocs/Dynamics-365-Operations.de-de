@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11f784e4c17ad5b764cadd914f4959f4be160913
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: d4804d5f38fb65aa8ab3eafceccbbc6f52f2e81b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783287"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569937"
 ---
 # <a name="functional-location-lifecycle-states"></a>Lebenszyklusstatus funktionaler Standorte
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In diesem Thema wird beschrieben, wie funktionale Standort-Lebenszyklusstatus und Lebenszyklusmodelle in Asset Management eingerichtet werden. Funktionale Standort-Lebenszyklusstatus definieren die Status, die funktionale Standorte durchlaufen können, zum Beispiel „erstellt“, „aktiv“ und „beendet“. Sie können alle funktionalen Standorte unabhängig von deren Lebenszyklusstatus auf der Listenseite **Alle funktionalen Standorte** anzeigen. Sie können den Status eines funktionalen Standorts ändern, indem Sie ihn auf der Listenseite **Alle funktionalen Standorte** auswählen und dann **Status des funktionalen Standorts aktualisieren** auswählen.
 

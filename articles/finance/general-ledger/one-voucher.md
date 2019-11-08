@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 2b755dcfbcdf41ada0302fc04f527ce7c309f4bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186393"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553186"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
@@ -51,7 +51,7 @@ Die vorhandene Funktion für Finanzerfassungen (allgemeine Erfassung, Anlagenerf
 
 ## <a name="issues-with-one-voucher"></a>Abgänge mit einem Beleg
 
-Die Funktion „Ein Beleg” verursacht Probleme beim Ausgleich bei der Steuerberechnung, Stornierungs-Transaktion, Abstimmung eines untergeordneten Sachkontos mit dem Hauptbuch, der Finanzberichterstellung usw. (Weitere Informationen zu Problemen, die während des Ausgleichs auftreten können, finden Sie unter [Einzelne Belege mit mehreren Debitoren oder Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records).) Um ordnungsgemäß zu funktionieren und zu berichten, erfordern diese Verfahren und Berichte Transaktionsdetails. Obwohl mehrere Szenarios unter Umständen weiterhin korrekt sind, abhängig von den Einstellungen Ihrer Organisation, gibt es oftmals Abgänge, wenn mehrere Buchungen in einen Beleg eingegeben werden.
+Die Funktion „Ein Beleg” verursacht Probleme beim Ausgleich bei der Steuerberechnung, Stornierungs-Transaktion, Abstimmung eines untergeordneten Sachkontos mit dem Hauptbuch, der Finanzberichterstellung usw. (Weitere Informationen zu Problemen, die während des Ausgleichs auftreten können, finden Sie unter [Einzelne Belege mit mehreren Debitoren oder Kreditoren](https://docs.microsoft.com/dynamics365/finance/accounts-payable/single-voucher-multiple-customer-vendor-records).) Um ordnungsgemäß zu funktionieren und zu berichten, erfordern diese Verfahren und Berichte Transaktionsdetails. Obwohl mehrere Szenarios unter Umständen weiterhin korrekt sind, abhängig von den Einstellungen Ihrer Organisation, gibt es oftmals Abgänge, wenn mehrere Buchungen in einen Beleg eingegeben werden.
 
 Angenommen, Sie haben die folgenden mehrzeiligen Beleginformationen.
 

@@ -3,7 +3,7 @@ title: Manuell erstellte Arbeitsaufträge
 description: In diesem Thema wird erläutert, wie Sie im Anlagenmanagement Arbeitsaufträge manuell anlegen.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,131 +16,153 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 261448a134a7c1aacfbb4ea6f954ce03a63c23e2
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875671"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626246"
 ---
 # <a name="manually-created-work-orders"></a>Manuell erstellte Arbeitsaufträge
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
-
 
 Sie können Arbeitsaufträge auf zwei Arten manuell anlegen:
 
-- in **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**  
-- in **Alle Wartungsanforderungen** oder **Aktive Wartungsanforderungen** oder **Meine Wartungsanforderungen für Technische Standorte**.  
+- Auf der Seite **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** 
+- Auf der Seite **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** oder **Meine Wartungsanfragen für funktionale Standorte** 
 
 ## <a name="create-work-order"></a>Arbeitsauftrag erstellen
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
+1. Wählen Sie **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
-2. Klicken Sie auf die Schaltfläche **Neu**.
+2. Wählen Sie **Neu** aus.
 
-3. Wählen Sie in der Dropdown-Liste **Arbeitsauftrag erstellen** einen Arbeitsauftragstyp aus.
+3. Im Dialogfeld **Arbeitsauftrag erstellen** wählen Sie einen Arbeitsauftragstyp im Feld **Arbeitsauftragstyp** aus.
 
-4. Wählen Sie bei Bedarf eine Beschreibung aus.
+4. Wählen Sie bei Bedarf eine **Beschreibung** aus.
 
-5. Wählen Sie die Anlage für den Arbeitsauftrag sowie eine Wartungsauftragsart aus.
+5. Wählen Sie im Feld **Anlage** die Anlage aus.
 
 >[!NOTE]
->Wenn Sie eine Anlage auswählen, stehen Ihnen möglicherweise drei Registerkarten zur Verfügung: Die Registerkarte **Meine Anlagen** enthält Anlagen, die sich auf die Technischen Standorte beziehen, denen Sie (der im System angemeldete Mitarbeiter) zugeordnet werden können (eingerichtet unter [Wartungsarbeiter und Arbeitsgruppen](../setup-for-objects/workers-and-worker-groups.md)). Wenn in [Wartungsarbeiter und Arbeitsgruppen](../setup-for-objects/workers-and-worker-groups.md) keine Technischen Standorte für einen Mitarbeiter eingerichtet sind, ist die Registerkarte **Meine Anlagen** nicht sichtbar. Die Registerkarte **Aktive Anlagen** enthält eine Liste aller Anlagen mit dem Anlagenlebenszyklusstatus „Aktiv“. Die Registerkarte **Anlagenansicht** enthält eine Strukturansicht der funktionalen Standorte und Anlagen, die für diese Standorte installiert sind.
+>Wenn Sie eine Anlage auswählen, sind möglicherweise drei Registerkarten im Dropdown **Anlage** verfügbar: 
 
-6. Wählen Sie bei Bedarf **Wartungsauftragsartenvariante** und **Wechseln**.
+- **Aktive Anlagen** – Diese Registerkarte enthält eine Liste aller Anlagen mit dem Anlagenlebenszyklusstatus „Aktiv“. 
+- **Anlagenansicht** – Die Registerkarte enthält eine Strukturansicht der funktionalen Standorte und der Anlagen, die für diese Standorte installiert sind.
+- **Meine Anlagen** – Diese Registerkarte enthält Anlagen, die den funktionalen Standorten zugeordnet werden, denen Sie (die am System angemeldete Arbeitskraft) möglicherweise zugewiesen werden. (Informationen zum Einrichten siehe [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md).) Wenn keine funktionalen Standorte für eine Arbeitskraft unter [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md) eingerichtet werden, ist die Registerkarte **Meine Anlagen** nicht verfügbar. 
 
-7. Bei Bedarf können Sie den Servicegrad des Arbeitsauftrags im Feld **Service Level** ändern.
+6. Wählen Sie im Feld **Wartungsauftragstyp** den Wartungsauftragstyp für den Wartungsauftrag aus.
 
-8. Wählen Sie in den entsprechenden Feldern das erwartete Start- und Enddatum aus.
+7. Wählen Sie bei Bedarf **Wartungsauftragsartenvariante** und **Wechseln**.
 
-9. Klicken Sie auf **OK**, um einen neuen Arbeitsauftrag zu erstellen.
+8. Bei Bedarf können Sie den Servicegrad des Arbeitsauftrags im Feld **Service Level** ändern.
 
-10. Bearbeiten Sie den Arbeitsauftrag bei Bedarf unter **Alle Arbeitsaufträge**.
+9. Wählen Sie in den entsprechenden Feldern das **erwartete Startdatum**-und das **erwartete Enddatum** aus.
 
-- Unter **Alle Arbeitsaufträge** können Sie in der Detailansicht mehrere Anlagen zu einem Arbeitsauftrag hinzufügen, indem Sie Zeilen zu den Wartungsaufträgen **Arbeitsauftrag** FastTab hinzufügen. Auf einer Anlage können Sie nur die Wartungsjobtypen auswählen, die auf der für die Anlage ausgewählten Anlagenart definiert sind.  
-- Wenn Sie einen Anlagenservicegrad oder einen Kritisch-Wert geändert haben, nachdem Sie sie für einen Arbeitsauftrag verwendet haben (siehe [Anlagen-Service-Level](../setup-for-objects/object-priorities.md) und [Anlagenkritiken](../setup-for-objects/object-criticalities.md)), wird der Servicegrad oder die Kritizität auf dem Arbeitsauftrag nicht entsprechend aktualisiert.
-- Der kritische Wert eines Arbeitsauftrags wird jedes Mal neu berechnet, wenn eine Arbeitsauftragszeile auf dem Arbeitsauftrag hinzugefügt oder gelöscht wird.
-- Unter **Alle Arbeitsaufträge** Detailansicht > **Leiter** Ansicht > **Terminplan** FastTab können Sie in den Feldern **Verantwortliche Gruppe** oder **Verantwortliche** eine verantwortliche Wartungsgruppe oder einen verantwortlichen Instandhalter auswählen. Diese Einstellungen können geändert werden, solange der Arbeitsauftrag aktiv ist, z.B. wenn sich der Lebenszykluszustand des Arbeitsauftrags ändert. Die automatische Auswahl bei der Erstellung von Arbeitsaufträgen basiert auf dem Setup in **Verantwortliche Wartungsmitarbeiter**. Wenn Sie Arbeitsaufträge hinzufügen oder entfernen, nachdem Sie einen Arbeitsauftrag angelegt haben, und das Feld **Verantwortliche Gruppe** und das Feld **Verantwortliche** bei der Aktualisierung des Arbeitsauftrags leer sind, sucht die Anlagenverwaltung nach einer möglichen Übereinstimmung im Setup-Formular für eine verantwortliche Wartungsmitarbeitergruppe oder einen verantwortlichen Wartungsmitarbeiter. Wenn das Feld **Verantwortliche Gruppe** oder das Feld **Verantwortlicher** bei der Aktualisierung des Arbeitsauftrags bereits ausgefüllt ist, werden keine Änderungen vorgenommen. 
+10. Klicken Sie auf **OK**, um den Arbeitsauftrag zu erstellen.
 
-- Unter **Wartungsstatus** können Sie eine Kalkulation durchführen, um sich einen Überblick über die Auslastung der eingehenden und abgeschlossenen Arbeitsaufträge zu verschaffen.  
+11. Auf der Listenseite **Alle Arbeitsaufträge** können Sie den Arbeitsauftrag nach Bedarf bearbeiten.
 
-- Verwenden Sie auf der **Zeilendetails** FastTab die Felder **Breite** und **Länge**, um geografische Koordinaten für die im Arbeitsauftrag ausgewählte Anlage hinzuzufügen.  
+Beachten Sie die folgenden Punkte:
+
+- In der Detailansicht auf der Listenseite **Alle Arbeitsaufträge** können Sie mehrere Anlagen zu einem Arbeitsauftrag hinzufügen, indem Sie Positionen zu den Wartungsaufträgen im Inforegister **Wartungsaufträge für Arbeitsaufträge** hinzufügen. In einer Anlage können Sie nur die Wartungsauftragstypen auswählen, die für die für die Anlage ausgewählten Anlagenart definiert sind.  
+
+- Wenn Sie einen Anlagenservicelevel oder eine Anlagenkritikalität ändern, nachdem Sie die Anlage für einen Arbeitsauftrag verwendet haben, wird der Servicelevel oder die Kritikalität für den Arbeitsauftrag nicht entsprechend aktualisiert. Weitere Informationen zum Servicelevel und zu Anlagenzuständen finden Sie unter [Anlagenservicelevel](../setup-for-objects/object-priorities.md) und [Kritische Anlagezustände](../setup-for-objects/object-criticalities.md).
+
+- Die Kritikalität eines Arbeitsauftrags wird jedes Mal neu berechnet, wenn eine Arbeitsauftragseinzelvorgang zum Arbeitsauftrag hinzugefügt oder daraus gelöscht wird.
+
+- In der Detailansicht **Alle Arbeitsaufträge** > Ansicht **Leiter** > Inforegister **Terminplan** können Sie in den Feldern **Verantwortliche Gruppe** oder **Verantwortlich** eine verantwortliche Wartungsgruppe oder einen verantwortlichen Wartungsarbeiter auswählen. Diese Einstellungen können geändert werden, während der Arbeitsauftrag aktiv ist. Sie können geändert werden, wenn sich der Arbeitsauftragslebenszyklusstatus ändert. Die automatische Auswahl bei der Erstellung von Arbeitsaufträgen basiert auf dem Setup auf der Seite **Zuständige Wartungsarbeitskräfte**. Wenn Sie Arbeitsaufträge hinzufügen oder entfernen, nachdem Sie einen Arbeitsauftrag angelegt haben, und das Feld **Verantwortliche Gruppe** und das Feld **Verantwortlich** bei der Aktualisierung des Arbeitsauftrags leer sind, sucht die Anlagenverwaltung nach einer möglichen Übereinstimmung für eine verantwortliche Wartungsmitarbeitergruppe oder einen verantwortlichen Wartungsmitarbeiter auf der Einrichtungsseite. Wenn das Feld **Verantwortliche Gruppe** oder das Feld **Verantwortlich** bei der Aktualisierung des Arbeitsauftrags bereits ausgefüllt ist, werden keine Änderungen vorgenommen. Weitere Informationen über verantwortliche Wartungsarbeiter und Wartungsarbeitergruppen finden Sie unter [Zuständige Wartungsarbeitskräfte](../setup-for-maintenance-requests/responsible-workers.md).
+
+- Auf der Seite [Wartungsstatus](../controlling-and-reporting/maintenance-status.md) können Sie eine Kalkulation durchführen, um sich einen Überblick über die Auslastung der eingehenden und abgeschlossenen Arbeitsaufträge zu verschaffen.  
+
+- In der Detailansicht der Seite **Alle Arbeitsaufträge** auf dem Inforegister **Positionsdetails**, können Sie die Felder **Breite** und **Länge** verwenden, um geografische Koordinaten für die Anlage hinzuzufügen, die für den Arbeitsauftragseinzelvorgang aktiviert ist.  
+
 
 ## <a name="create-related-work-order"></a>Zugehörigen Arbeitsauftrag erstellen
 
-Sie können einen zugehörigen Arbeitsauftrag zu einem bestehenden Arbeitsauftrag anlegen, wenn Sie z.B. mit primären und sekundären Arbeitsaufträgen arbeiten möchten. Ein neuer Arbeitsauftrag basiert auf einem Arbeitsauftrag aus einem bestehenden Arbeitsauftrag.
+Sie können einen Arbeitsauftrag erstellen, der zu einem vorhandenen Arbeitsauftrag gehört. Diese Funktion ist z. B. hilfreich, wenn Sie mit primären und sekundären Arbeitsaufträgen arbeiten möchten. Ein neuer Arbeitsauftrag basiert auf einem Arbeitsauftrag aus einem bestehenden Arbeitsauftrag.
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
+1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
-2. Wählen Sie den Arbeitsauftrag aus, für den Sie einen zugehörigen Arbeitsauftrag erstellen möchten.
+2. Wählen Sie den zu erstellenden Arbeitsauftrag aus, für den ein zugehöriger Arbeitsauftrag erstellt werden soll.
 
-3. Klicken Sie auf **Verwandter Arbeitsauftrag**.
+3. Wählen Sie im Aktivitätsbereich, auf der Registerkarte **Arbeitsauftrag** in der Gruppe **Neu** die Option **Zugehöriger Arbeitsauftrag**.
 
-4. Wählen Sie im Dropdown-Menü **Verwandter Arbeitsauftrag erstellen** im Feld **Verwandter Arbeitsauftrag** den Arbeitsauftrag aus, für den Sie einen entsprechenden Arbeitsauftrag erstellen möchten.
+4. Wählen Sie im Dialogfeld **Zugehörigen Arbeitsauftrag erstellen** im Feld **Arbeitsauftragseinzelvorgang** den Arbeitsauftragseinzelvorgang aus, für den Sie einen zugehörigen Arbeitsauftrag erstellen möchten.
 
-5. Wählen Sie im Feld **Wartungsauftragsart** eine Wartungsauftragsart und ggf. eine zugehörige Variante der Wartungsauftragsart aus und handeln Sie in den Feldern **Wartungsauftragsart Variante** und **Wechseln**.
+5. Wählen Sie im Feld **Wartungsauftragstyp** den Wartungsauftragstyp aus.
 
-6. Wenn dies der erste zugehörige Arbeitsauftrag ist, den Sie erstellen, klicken Sie auf den Auswahlknopf **Neuer Arbeitsauftrag**.
+6. Wählen Sie in den Feldern **Wartungsauftragstypvariante** und **Art** nach Bedarf die Variante und Art aus, die sich auf den Wartungsauftragstyp beziehen.
 
-7. Wählen Sie in den entsprechenden Feldern einen **Arbeitsauftragstyp** und eine **Beschreibung**.
+7. Wenn dieser Arbeitsauftrag der erste zugehörige Arbeitsauftrag ist, der für den ausgewählten Arbeitsauftrag erstellt wurde, gehen Sie gemäß den folgenden Schritten vor:
+    1. Wählen Sie die Option **Neuer Arbeitsauftrag** aus.
+    2. Wählen Sie im Feld **Arbeitsauftragstyp** einen Arbeitsauftragstyp aus.
+    3. Geben Sie im Feld **Beschreibung** eine Beschreibung ein.
+    4. Ändern Sie bei Bedarf die Leistungsebene des Arbeitsauftrags im Feld **Leistungsebene**.
+    5. Wählen Sie in den Feldern **Erwartetes Anfangsdatum** und **Erwartetes Enddatum** das erwartete Start- und Enddatum aus.
+    6. Wählen Sie **OK**. Der neue zugehörige Arbeitsauftrag wird in der Listenseite **Alle Arbeitsaufträge** angezeigt.  
 
-8. Ändern Sie bei Bedarf den Servicegrad des Arbeitsauftrags im Feld **Servegrad**.
+8. Wenn der Arbeitsauftrag, für den Sie diesen zugehörigen Arbeitsauftrag erstellen, bereits zugehörige Arbeitsaufträge hat, führen Sie die folgenden Schritte aus, um einen Arbeitsauftragseinzelvorgang einem vorhandenen zugehörigen Arbeitsauftrag hinzuzufügen:
+    1. Wählen Sie die Option **Zu zugehörigem Arbeitsauftrag hinzufügen** aus.
+    2. Wähle Sie im Feld **Arbeitsauftrag** den zugehörigen Arbeitsauftrag aus, dem Sie einen neuen Arbeitsauftragseinzelvorgang hinzufügen möchten.
+    3. Ändern Sie bei Bedarf die Leistungsebene des Arbeitsauftrags im Feld **Leistungsebene**.
+    4. Ändern Sie in den Feldern **Erwartetes Anfangsdatum** und **Erwartetes Enddatum** das erwartete Start- und Enddatum nach Bedarf.
+    5. Wählen Sie **OK**. Der Arbeitsauftrag wird zu dem bestehenden zugehörigen Arbeitsauftrag hinzugefügt.
 
-9. Fügen Sie die erwarteten Start- und Enddaten in die entsprechenden Felder ein.
-
-10. Klicken Sie auf **OK**. Der neue zugehörige Arbeitsauftrag wird in der Liste **Alle Arbeitsaufträge** angezeigt.
-
-11. Wenn Sie einen zugehörigen Arbeitsauftrag auf einem Arbeitsauftrag anlegen, der bereits zugehörige Arbeitsaufträge hat, können Sie den Arbeitsauftrag zu einem bereits zugehörigen Arbeitsauftrag hinzufügen. Dies geschieht durch Anklicken des Optionsschalters **Zu zugehörigem Arbeitsauftrag hinzufügen** in Schritt 6. Dann wählen Sie den zugehörigen Arbeitsauftrag aus, dem Sie einen neuen Arbeitsauftrag hinzufügen möchten. Bearbeiten Sie bei Bedarf die Felder **Service Level**, **Erwarteter Start** und **Erwartetes Ende** und klicken Sie auf **OK**. Der Arbeitsauftrag wird zu dem bestehenden zugehörigen Arbeitsauftrag hinzugefügt.
-
+Die folgende Abbildung zeigt ein Beispiel für das Dialogfeld **Zugehörigen Arbeitsauftrag erstellen**.
 
 ![Abbildung 1](media/03-work-orders.png)
 
-**Hinweis:** Wenn Sie eine zugehörige Arbeitsauftragsmaske in **Anlagenmanagementparameter** > **Arbeitsaufträge**Link > **Verwandte Arbeitsauftragsmaske** eingerichtet haben, werden Arbeitsauftrags-IDs entsprechend dem Maskenaufbau erstellt. Wenn keine zugehörige Arbeitsauftragsmaske eingerichtet ist, wird die nächste verfügbare Arbeitsauftrags-ID für zugehörige Arbeitsaufträge verwendet.
+>[!NOTE]
+>Wenn Sie eine zugehörige Arbeitsauftragsmaske unter **Anlagenverwaltungsparameter** > **Arbeitsaufträge** > **Verwandte Arbeitsauftragsmaske** eingerichtet haben, werden Arbeitsauftrags-IDs entsprechend dem Maskenaufbau erstellt. Wenn keine zugehörige Arbeitsauftragsmaske eingerichtet ist, wird die nächste verfügbare Arbeitsauftrags-ID für zugehörige Arbeitsaufträge verwendet.
 
-## <a name="copy-work-order"></a>Arbeitsauftrag kopieren
+## <a name="copy-a-work-order"></a>Arbeitsauftrag kopieren
 
-Es ist möglich, schnell einen neuen Arbeitsauftrag aus einem bestehenden Arbeitsauftrag zu erstellen. Diese Art der Arbeit mit Arbeitsaufträgen unterscheidet sich von der Erstellung von Arbeitsaufträgen auf der Grundlage von Wartungsplänen. Dies ist z.B. sinnvoll, wenn Sie einen Arbeitsauftrag haben, der viele Arbeitsaufträge mit verschiedenen Aufträgen auf verschiedenen Anlagen enthält, die in regelmäßigen Abständen erledigt werden sollen.
+Es ist möglich, schnell einen neuen Arbeitsauftrag aus einem bestehenden Arbeitsauftrag zu erstellen. Diese Art der Arbeit mit Arbeitsaufträgen unterscheidet sich von der Erstellung von Arbeitsaufträgen auf der Grundlage von [Wartungsplänen](../preventive-and-reactive-maintenance/maintenance-plans.md). Dies ist z.B. sinnvoll, wenn Sie ein Arbeitsauftrag viele Arbeitsaufträge enthält, und verschiedene Einzelvorgänge auf verschiedenen Anlagen in regelmäßigen Abständen erledigt werden sollen.
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
+1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
 2. Wählen Sie den Arbeitsauftrag aus, aus dem Sie Inhalte kopieren möchten.
 
-3. Klicken Sie auf **Arbeitsauftrag kopieren**. Die Einrichtung des Arbeitsauftrags aus dem ausgewählten Arbeitsauftrag wird angezeigt. Bei Bedarf können Sie einige der Felder bearbeiten.
+3. Wählen Sie im Aktivitätsbereich > Registerkarte **Arbeitsauftrag** > Gruppe **Neu** die Option **Arbeitsauftrag kopieren**.
 
-4. Klicken Sie auf **OK**, um den neuen Arbeitsauftrag zu erstellen.
+4. Die Einrichtung des Arbeitsauftrags aus dem ausgewählten Arbeitsauftrag wird angezeigt. Bei Bedarf können Sie einige der Felder bearbeiten.
 
-5. Bearbeiten Sie den Arbeitsauftrag bei Bedarf unter **Alle Arbeitsaufträge**.
+5. Wählen Sie **OK** aus, um den neuen Arbeitsauftrag zu erstellen.
+
+6. Auf der Listenseite **Alle Arbeitsaufträge** können Sie den Arbeitsauftrag nach Bedarf bearbeiten.
 
 >[!NOTE]
->Wenn der neue Arbeitsauftrag erstellt wird, werden einige Informationen direkt aus dem bestehenden Arbeitsauftrag kopiert. Informationen zu Prognosen, Tools, Wartungschecklisten, Technischen Standorten, Adressen und Terminierung werden nicht kopiert, sondern aus dem aktuellen Setup im Anlagenmanagement initialisiert. Das bedeutet, dass, wenn Änderungen an diesen Daten vom Zeitpunkt der Erstellung des ersten Arbeitsauftrags bis zum Zeitpunkt der Erstellung einer Kopie des Arbeitsauftrags vorgenommen wurden, diese Änderungen in den neuen Arbeitsauftrag aufgenommen werden, den Sie angelegt haben. Beispiele sind Änderungen in den Prognosen oder aktualisierte Wartungschecklisten.
+>Wenn der neue Arbeitsauftrag erstellt wird, werden einige Informationen direkt aus dem bestehenden Arbeitsauftrag kopiert. Informationen über Planungen, Werkzeuge, Wartungsprüflisten, funktionale Standorte, Adressen und Zeitplanung werden nicht kopiert. Stattdessen werden sie über die aktuelle Einstellung in der Anlagenverwaltung initialisiert. Wenn diese Informationen zwischen dem Zeitpunkt geändert wurden, als erste Arbeitsauftrag erstellt wurde, und dem Zeitpunkt, zu dem Sie eine Kopie des Arbeitsauftrag erstellten, werden die Änderungen in den neuen Arbeitsauftrag einbezogen. Beispiele umfassen Änderungen an den Prognosen und Aktualisierungen von Wartungsprüflisten.
 
+In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag kopieren** angezeigt.
 
 ![Abbildung 2](media/04-work-orders.png)
 
 
-## <a name="create-work-order-based-on-a-maintenance-request"></a>Arbeitsauftrag basierend auf einer Wartungsanforderung anlegen
+## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Arbeitsauftrag basierend auf einer Wartungsanforderung anlegen
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Wartungsanforderungen** > **Alle Wartungsanforderungen** oder **Aktive Wartungsanforderungen**.
+1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Wartungsanfragen** > **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** aus.
 
-2. Wählen Sie die Wartungsanforderung aus, für die Sie einen Arbeitsauftrag anlegen möchten, und klicken Sie auf **Bearbeiten**.
+2. Wählen Sie die Wartungsanfrage aus, für die Sie einen Arbeitsauftrag anlegen möchten, und klicken Sie auf **Bearbeiten**.
 
-3. Klicken Sie unter **Alle Anfragen** auf **Arbeitsauftrag**.
+3. Wählen Sie im Aktivitätsbereich > Registerkarte **Wartungsanfrage** > Gruppe **Neu** die Option **Arbeitsauftrag**.
 
-4. Füllen Sie das Dropdown-Menü **Arbeitsauftrag** aus. Wenn in der Wartungsanforderung ein Wartungsauftrag ausgewählt wurde, können Sie beim Anlegen des Arbeitsauftrags bei Bedarf einen anderen Wartungsauftragstyp auswählen.
+4. Im Dialogfeld **Arbeitsauftrag** können Sie die Felder festlegen. Wenn in der Wartungsanfrage ein Wartungsauftrag ausgewählt wurde, können Sie beim Anlegen des Arbeitsauftrags bei Bedarf einen anderen Wartungsauftragstyp auswählen.
 
-5. Klicken Sie auf **OK**. Sie erhalten eine Meldung, die Sie darüber informiert, dass der Arbeitsauftrag angelegt wurde.
+5. Wählen Sie **OK**. Die Nachricht informiert Sie darüber, dass ein Arbeitsauftrag erstellt wurde.
 
-6. Wenn Sie sehen möchten, welche Arbeitsaufträge mit einer Wartungsanforderung verbunden sind, markieren Sie die Wartungsanforderung in den Listen **Alle Wartungsanforderungen** oder **Aktive Wartungsanforderungen** und klicken Sie auf die Schaltfläche **Arbeitsaufträge**.
+6. Wenn Sie sehen möchten, welche Arbeitsaufträge mit einer Wartungsanfrage verbunden sind, markieren Sie die Wartungsanfrage auf der Listenseite **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen**. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Wartungsanfrage** in der Gruppe **Ansicht** die Option **Arbeitsaufträge**.
 
+
+In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Arbeitsauftrag erstellen** angezeigt.
 
 ![Abbildung 3](media/05-work-orders.png)
 
 
 >[!NOTE]
->Arbeitsaufträge können auch automatisch erstellt werden, indem Wartungsplanjobs eingeplant werden, oder indem Wartungspläne oder Wartungsrunden auf einer Anlage „automatisch erstellt“ werden. Arbeitsaufträge, die aus Wartungsanforderungen in **Wartungsplan** erstellt wurden, werden mit den in den Wartungsanforderungen ausgewählten Wartungsauftragsarten erstellt.
+>Wenn Arbeitsaufträge automatisch erstellt werden sollen, können Sie Wartungsplanjobs planen oder festlegen, dass [Wartungspläne](../preventive-and-reactive-maintenance/maintenance-plans.md) oder [Wartungsrunden](../preventive-and-reactive-maintenance/maintenance-rounds.md) auf einer Anlage automatisch erstellt werden. Arbeitsaufträge, die aus Wartungsanfragen auf der Listenseite **Alle Wartungszeitpläne** erstellt wurden, weisen die in den Wartungsanfragen ausgewählten Wartungsauftragsarten auf.
 

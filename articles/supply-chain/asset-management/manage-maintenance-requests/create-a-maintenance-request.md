@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e97d96a5485f17d0abc7c2fc2f8c4fdf4bbd4bb4
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 7fc9ec2f6a9a8a11d824e4b5c13d5aa173541454
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024636"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571920"
 ---
 # <a name="create-maintenance-requests"></a>Wartungsanfragen erstellen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Wartungsanfragen können verwendet werden, wenn Wartungsarbeiter oder Produktionsarbeitskräfte bemerken, dass Maschinen eine Reparatur erfordern, die Reparaturarbeiten aber nicht sofort ausgeführt werden können.
 
@@ -55,7 +55,7 @@ Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Information
 11. Geben Sie im Feld **Hinweise** zusätzliche Hinweise ein, die erforderlich sind.
 12. Wählen Sie **OK**.
 
-![Abbildung 1](media/03-manage-maintenance-requests.png)
+![Wartungsanfrage erstellen](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Nachfolgende Verarbeitung von Wartungsanfragen
 
@@ -70,7 +70,7 @@ In der Detailansicht können Sie verschiedene Informationen aktualisieren. Nachf
 - Wählen Sie einen Wartungsauftragstyp aus. Wenn diese Information relevant ist, wählen Sie auch eine zugehörige Wartungsauftragsvariante und eine Facharbeit aus.
 - Geben Sie in den Feldern **Breitengrad** und **Längengrad** die geografischen Koordinaten ein. Sämtliche Koordinaten, die einer Wartungsanfrage hinzugefügt werden, werden automatisch an einen zugehörigen Arbeitsauftrag übertragen. 
 
-![Abbildung 2](media/04-manage-maintenance-requests.png)
+![Wartungsanfrage aktualisieren](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Wenn Sie bei der Erstellung einer Wartungsanfrage eine Anlage auswählen, können Sie der Anlage einen Fehler hinzufügen. Nachdem die Wartungsanfrage erstellt wurde, können Sie ggf. weitere Fehler hinzufügen. Um Fehler hinzuzufügen, wählen Sie auf der Seite **Alle Wartungsanfragen** die Option **Anlagenfehler** aus.

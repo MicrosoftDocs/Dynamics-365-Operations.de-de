@@ -3,35 +3,35 @@ title: Anlagentypen
 description: In diesem Thema wird erläutert, wie Sie in Anlagetypen in der Anlageverwaltung erstellen. Außerdem werden die Elemente beschrieben, die den Anlagentypen zugeordnet werden.
 author: josaw1
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
+ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 288dac77f9d999012ec930ef2bca5c0921c2955f
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.search.validFrom: 2019-09-30
+ms.dyn365.ops.version: 10.0.5
+ms.openlocfilehash: a19b8c40dd7d48b2d78723c4411f1699819c4026
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783298"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626084"
 ---
 # <a name="asset-types"></a>Anlagentypen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
-Dieses Thema erläutert, wie Sie Anlagetypen erstellen. Außerdem werden die Elemente beschrieben, die den Anlagentypen zugeordnet werden. Anlagentypen werden als allgemeinen Kategorien für Anlagen verwendet. Hierzu gehören CNC-Maschinen, Messausrüstung und Lkw-Motoren. Anlagentypen werden verwendet, um die Stellentypen zu verwalten (Wartungsanlagen), Anlagen-Lebenszyklusstatus, Anlageattribute, Bedingungsbewertungsvorlagen und Anlagemodelle, die als Anlage ausgewählt werden können. Wenn Sie eine Anlage erstellen, muss der Anlagetyp für angegeben.
+
+Dieses Thema erläutert, wie Sie Anlagetypen erstellen. Außerdem werden die Elemente beschrieben, die den Anlagentypen zugeordnet werden. Anlagentypen werden als allgemeinen Kategorien für Anlagen verwendet. Hierzu gehören CNC-Maschinen, Messausrüstung und Lkw-Motoren. Anlagentypen werden verwendet, um die Wartungsauftragstypen zu verwalten (Wartungsanlagen), Anlagen-Lebenszyklusstatus, Zähler, Anlageattribute, Bedingungsbewertungsvorlagen und Anlagemodelle, die als Anlage ausgewählt werden können. Wenn Sie eine Anlage erstellen, muss der Anlagetyp für angegeben.
 
 Für jeden Anlagentyp können Abweichungen der Anlagentypeinstellung erstellt werden. Wenn Sie beispielsweise einen Anlagentyp haben, der **„LKW“** ist, können Sie für diesen Anlagentyp Abweichungen für verschiedene Anlagenhersteller und Anlagenmodelle erstellen. Für jede Anlagentypeinstellung können Sie die erforderlichen Ersatzteile und Wartungspläne Ersatzteilen hinzufügen.
 
@@ -39,35 +39,35 @@ Zuerst richten Sie die erforderlichen Anlagentypen ein. Anschließend erstellen 
 
 ## <a name="create-an-asset-type"></a>Einen Anlagetyp erstellen
 
-1. Wählen Sie **Anlageverwaltung** \> **Einstellungen** \> **Anlagentypen** \> **Anlagentypen** aus.
+1. Wählen Sie **Anlageverwaltung** > **Einstellungen** > **Anlagentypen** > **Anlagentypen** aus.
 2. Wählen Sie **Neu**, um ein Anlagentyp zu erstellen.
 3. Im Feld **Anlagentyp** geben Sie eine Kennung für den Anlagentyp ein
 4. Geben Sie im Feld **Name** einen Namen ein.
 5. Wählen Sie ein Anlage-Lebenszyklusmodell im Feld **Anlage-Lebenszyklusmodell** aus. Weitere Informationen zu Anlagenlebenszyklus und Anlagenlebenszyklusmodelle, finden Sie unter [Anlagen-Lebenszyklusstatus](object-stages.md).
 6. Hier können Sie die Option **Summe** auf **Ja** festlegen, wenn die zusammengefassten Leistungskennzahlwerte (KPI) für Anlagen berechnet werden sollen, die diesen Anlagentyp haben.
 7. Wählen Sie **Speichern**.
-8. Wählen Sie im Inforegister **Stellentypen** die Stellentypen aus, die dem Anlagentyp zugeordnet werden sollen:
+8. Wählen Sie im Inforegister **Wartungsauftragstypen** die Wartungsauftragstypen aus, die mit dem Anlagentyp verknüpft sein sollen:
 
-    - Um einen Stellentyp auszuwählen wählen Sie ihn im Feld **Verbleibende Stellentypen** aus, und wählen Sie dann die Schaltfläche mit dem Pfeil nach rechts ![ Pfeil nach rechts](media/29-setup-for-objects.png), um ihn in den Bereich **ausgewählter Stellentyp** zu verschieben.
-    - Um alle verfügbaren Stellentypen auswählen, wählen Sie Schaltfläche ![alle Pfeil weiter](media/30-setup-for-objects.png) aus. Alle Stellentypen werden aus dem Feld **verbleibende Stellentypen** in das Feld **ausgewählte Stellentypen** übertragen.
-    - Um die Auswahl eines Stellentyps zu löschen, wählen Sie ihn im Feld **Ausgewählte Stellentypen** aus, und wählen Sie dann die Schaltfläche mit dem Pfeil nach links ![ Pfeil nach links](media/31-setup-for-objects.png), um ihn in den Bereich **Verbleibende Stellentypen** zu verschieben.
+    - Um einen Wartungsauftragstyp auszuwählen, wählen Sie ihn im Feld **Verbleibende Wartungsauftragstypen** aus, und wählen Sie dann die Schaltfläche mit dem Pfeil nach rechts ![Pfeil nach rechts](media/29-setup-for-objects.png), um ihn in den Bereich **Ausgewählter Wartungsauftragstyp** zu verschieben.
+    - Um alle verfügbaren Wartungsauftragstypen auswählen, wählen Sie Schaltfläche ![alle Pfeil weiter](media/30-setup-for-objects.png) aus. Alle Wartungsauftragstypen werden aus dem Feld **Verbleibende Wartungsauftragstypen** in das Feld **ausgewählte Wartungsauftragstypen** übertragen.
+    - Um die Auswahl eines Wartungsauftragstyps zu löschen, wählen Sie ihn im Feld **Ausgewählte Wartungsauftragstypen** aus, und wählen Sie dann die Schaltfläche mit dem Pfeil nach links ![Pfeil nach links](media/31-setup-for-objects.png), um ihn in den Bereich **Verbleibende Wartungsauftragstypen** zu verschieben.
 
-9. Sie können auch die Anlagemessungen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Anlagenmessungen** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Stellentypen, die in Schritt 8 beschrieben werden anwenden. Weitere Informationen zum Einrichten von Anlagenmessungen finden Sie unter[Anlagenmessungen verwalten](counters.md).
-10. Sie können auch die Attributtypen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Attributtypen** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Stellentypen anwenden, die in Schritt 8 beschrieben werden. Um dann die bevorzugten Reihenfolge der Attributtypen zu erstellen, wählen Sie im Feld **Attributtypen ausgewählt** den Attributtyp aus, und verwenden Sie die NACH-OBEN-TASTE und die NACH-UNTEN-TASTE, um sie zu verschieben. Die Sequenz der Attributtypen wird auf Anlagen angezeigt, die diesen Anlagentyp verwenden. Weitere Informationen zu Anlagenattributen finden Sie unter [Attributtypen verwalten](../setup-for-functional-locations/specification-types.md).
+9. Sie können auch die Zähler auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Zähler** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Weitere Informationen zum Einrichten von Zählern finden Sie unter [Zähler](counters.md).
+10. Sie können auch die Attributtypen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Attributtypen** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Um dann die bevorzugten Reihenfolge der Attributtypen zu erstellen, wählen Sie im Feld **Attributtypen ausgewählt** den Attributtyp aus, und verwenden Sie die NACH-OBEN-TASTE und die NACH-UNTEN-TASTE, um sie zu verschieben. Die Sequenz der Attributtypen wird auf Anlagen angezeigt, die diesen Anlagentyp verwenden. Weitere Informationen zu Anlagenattributen finden Sie unter [Attributtypen verwalten](../setup-for-functional-locations/specification-types.md).
 
     > [!NOTE]
     > Wenn Sie neue Attributtypen dem Inforegister**Attributtypen** hinzufügen, werden bestehende Anlagen automatisch mit diesen Informationen aktualisiert.
 
-11. Sie können auch die Bedingungsbewertungsvorlagen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Bedingungsbewertung** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Stellentypen anwenden, die in Schritt 8 beschrieben werden. Weitere Informationen zu Bedingungsbewertungsvorlagen und - erfassungen, finden Sie unter [Bedingungsbewertung](../setup-for-objects/condition-assessment.md)
+11. Sie können auch die Bedingungsbewertungsvorlagen auswählen, die dem Anlagentyp zugeordnet werden sollen. Auf dem Inforegister **Bedingungsbewertung** aktivieren Sie Ihre Auswahl, indem Sie die Methoden für Wartungsauftragstypen anwenden, die in Schritt 8 beschrieben werden. Weitere Informationen zu Bedingungsbewertungsvorlagen und - erfassungen, finden Sie unter [Bedingungsbewertung](../setup-for-objects/condition-assessment.md)
 12. Das Inforegister **Anlagenmodell** zeigt alle Kombinationen von Anlagenherstellern und die Modelle an, die im ausgewählten Anlagentyp eingerichtet werden. Um die Kombinationen anzuzeigen, die gemäß dem Hersteller aufgeteilt sind, wählen Sie **Anlagenmodell**, um die Seite **Anlagenmodell** zu öffnen.
 
     Auf der Seite **Anlagenmodell** können Sie Anlagenmodell-Anlagentyprelationen hinzufügen. Darüber hinaus können Sie auf der Seite **Anlagentypen** die Anlagenhersteller-Anlagen-Modellrelationen direkt einem Anlagentyp hinzufügen. Schließlich können Sie auf der Seite **Anlagenmodell** (**Anlagenverwaltung** \> **Einstellungen** \> **Anlagen** \> **Anlagenmodell**) die Anlagenhersteller-Anlagenmodell-Anlagentyprelationen neu erstellen. Daher gibt es drei Möglichkeiten, Anlagenhersteller-Anlagenmodell-Anlagentyprelationen einzurichten und zu bearbeiten. Alle verfügbaren Kombinationen werden aus unterschiedlichen Perspektiven dargestellt, und Sie können Ihre bevorzugte Eingangsstelle auswählen, wenn Sie mit der Einstellung arbeiten.
 
 > [!NOTE]
-> - Wenn Sie Anlagenmessungen für eine Anlage auswählen, wird die Auswahl automatisch aktualisiert auf der Seite **Anlagenmessungen**(**Anlagenverwaltung)** \> **Einstellungen** \> **Anlagen** \> **Anlagentypen** \> **Anlagenmessungen**.
-> - Die Felder im Abschnitt **Details** auf dem Inforegister **Allgemeines** zeigt die Anzahl für Stellentypen, Anlagenmessungen, Attribute usw. an, die im Feld ausgewählter Anlagentyp eingerichtet werden.
+> - Wenn Sie Zähler für einen Anlagentyp auswählen, werden die Auswahlen auf der Seite **Zähler** automatisch aktualisiert (**Anlagenverwaltung** > **Einstellungen** > **Anlagen** > **Anlagentypen** > **Zähler**).
+> - Die Felder im Abschnitt **Details** auf dem Inforegister **Allgemein** zeigt die Anzahl für Wartungsauftragstypen, Zähler, Attribute usw. an, die für den ausgewählten Anlagentyp eingerichtet werden.
 
-Normalerweise werden Arbeitsaufträge, die manuell erstellt werden, der Fehlerwartung zugeordnet, während Arbeitsaufträge, die automatisch erstellt werden, der vorbeugenden Verwaltung zugeordnet werden. Wenn Sie manuell Arbeitsaufträge erstellen, werden können nur die Stellentypen verwendet werden, die auf dem Inforegister **Stellentypen** der Seite **Anlagentypen** aktiviert sind. Allerdings können automatisch erstellte Arbeitsaufträge alle Stellentypen verwenden, die Sie auf der Seite **Stellentypen** (**Anlagenverwaltung** \> **Einstellungen** \> **Steellen** \> **Stellentypen**) erstellt haben.
+Normalerweise werden Arbeitsaufträge, die manuell erstellt werden, der Fehlerwartung zugeordnet, während Arbeitsaufträge, die automatisch erstellt werden, der vorbeugenden Verwaltung zugeordnet werden. Wenn Sie manuell Arbeitsaufträge erstellen, können nur die Wartungsauftragstypen verwendet werden, die auf dem Inforegister **Wartungsauftragstypen** der Seite **Anlagentypen** aktiviert sind. Allerdings können automatisch erstellte Arbeitsaufträge alle Wartungsauftragstypen verwenden, die Sie auf der Seite **Wartungsauftragstypen** (**Anlagenverwaltung** \> **Einstellungen** \> **Einzelvorgänge** \> **Wartungsauftragstypen**) erstellt haben.
 
 ## <a name="create-asset-type-setup-lines"></a>Erstellen von Positionen für Anlagetypen
 

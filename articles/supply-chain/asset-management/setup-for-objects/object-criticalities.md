@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660038060826ade9301e50143e49b53ba3fcd3ab
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: f96fcc7ebb8928c6d6b17b30465ad1625d9b5be4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783297"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571069"
 ---
-# <a name="asset-criticalities"></a>Kritische Anlagezustände
+# <a name="asset-criticality-types"></a>Typen kritischer Werte für Anlagen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In diesem Thema wird erläutert, was Typen kritischer Werte für Anlagen in Asset Management sind. Kritische Anlagenzustände beziehen sich auf Anlagen und werden an Arbeitsaufträge übertragen. Sie können in einem Arbeitsauftrag nicht geändert werden. Kritische Anlagenzustände werden verwendet, um den kritischen Zustand von Arbeitsaufträgen während der Planung zu berechnen. Sie werden also dazu verwendet, um das Ausmaß zu berechnen, in dem ein Wartungseinzelvorgang für eine Anlage sich auf die Produktionsplan und die Produktivität in Ihrem Unternehmen auswirkt. Weitere Informationen zu den Einstellungen, die sich auf die Berechnung von Bewertungsnoten für Arbeitsauftragsplanung beziehen, finden Sie unter [Anlagenverwaltungsparameter](../setup-for-objects/enterprise-asset-management-parameters.md).
 
@@ -43,7 +43,7 @@ Um kritische Anlagenzustände einzurichten, erstellen Sie zunächst die Typen de
 4. Geben Sie im Feld **Name** einen Namen für den Kritikalitätstyp ein.
 5. Geben Sie im Feld **Faktor** einen Faktor ein. Dieser Faktor wird bei der Berechnung der Arbeitsauftragsplanung verwendet, um den Kritikalitätsdatensatz zu bestimmen, der verwendet werden soll. (Es wird immer der Datensatz mit dem höchsten Faktor verwendet). Diese Einstellung ist relevant, wenn, wie in der folgenden Abbildung dargestellt, Kritikalitätspositionen erstellt werden, die den gleichen Kritikalitätswert haben.
 
-    ![Abbildung 1](media/23-setup-for-objects.png)
+    ![Seite „Typen kritischer Werte“](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Kritische Anlagenzustände einrichten
 

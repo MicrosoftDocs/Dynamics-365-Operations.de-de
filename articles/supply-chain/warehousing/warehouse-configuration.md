@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05f8a71dde998abccc75bc962636f9eb04d7e8c2
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026715"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653417"
 ---
 # <a name="warehouse-configuration-overview"></a>Übersicht über die Lagerkonfiguration
 
@@ -34,7 +34,7 @@ In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enth�
 **Hinweis:** Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
-Das Lagerortverwaltungssystem in Finance and Operations ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
+Das Lagerortverwaltungssystem in Supply Chain Management ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
 
 -   Sie können Lagerbereiche mit hoher und niedriger Priorität für eine optimale Platzierung von Waren einrichten.
 -   Sie können Ihre Lagerorte in die Zonen aufteilen, um verschiedene Lageranforderungen, wie Temperaturanforderungen oder unterschiedliche Umschlagsgeschwindigkeiten, für Artikel zu berücksichtigen.
@@ -42,7 +42,7 @@ Das Lagerortverwaltungssystem in Finance and Operations ermöglicht flexible Met
 -   Sie können Lagerplätze gruppieren, indem Sie die Einstellungen für physische Kapazitätsengspässe verwenden.
 -   Sie können basierend auf Regeln, die über Abfragen definiert werden, steuern, wie Artikel gelagert und entnommen werden.
 
-Um die Lagerortverwaltung in Finance and Operations zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden** aus.
+Um die Lagerortverwaltung in Supply Chain Management zu verwenden, müssen Sie einen Lagerort erstellen und diesen für die erweiterten oder spezialisierten Lagerortverwaltungsaktivitäten aktivieren. Wählen Sie auf der Seite **Lagerorte** die Option **Lagerortverwaltungsprozesse verwenden** aus.
 
 ### <a name="zone-groups-zones-location-types-and-locations"></a>Zonengruppen, Zonen, Lagerplatztypen und Lagerplätze
 
@@ -54,7 +54,7 @@ Im Rahmen des Prozesses zur Aktivierung eines Lagerortlayouts, müssen Sie Lager
 -   **Lagerplatztypen** - Eine logische oder physische Gruppierung von Lagerort-Lagerplätzen. So können Sie beispielsweise einen Lagerplatztyp für alle Bereitstellungslagerplätze erstellen. Erforderliche Einstellungen auf der Seite **Lagerverwaltungsparameter** steuern den Prozess des Definierens von Staginglagerplatztypen und endgültigen Einlieferungslagerplätzen.
 -   **Lagerplätze** - Die niedrigste Ebene der Lagerplatzinformationen. Lagerplätze werden verwendet, um zu nachzuverfolgen, wohin der verfügbare Lagerbestand in einem Lagerort gespeichert und entnommen wird.
 
-Die Entitäten, die Sie erstellen, um Ihr Lagerortlayout zu definieren, werden in Abfragen verwendet, die Sie in den Arbeitsvorlagen einrichten, um Arbeitsaufträge am Lagerort zu steuern. Wenn Sie die Zonen, Lagerplatztypen usw. definieren, bedenken Sie, dass verschiedene Bereiche am Lagerort für verschiedene Prozesse verwendet werden. Berücksichtigen Sie ausserdem Faktoren wie physische Merkmale eines bestimmten Bereichs. Beispielsweise könnte es Bereiche geben, in denen Sie nur einen bestimmten Gabelstapler verwenden können. Oder in Ihrem Unternehmen sind Produktion und Fertigerzeugnisse in einer Einrichtung, und Sie möchten in Finance and Operations einen einzelnen Lagerort erstellen und dann die beiden Arbeitsgänge trennen, indem Sie zwei Zonengruppen einrichten. Geben Sie den Entitäten beschreibende Namen, damit sie einfach zu identifizieren sind, wenn Sie sie in Vorlagenabfragen verwenden.
+Die Entitäten, die Sie erstellen, um Ihr Lagerortlayout zu definieren, werden in Abfragen verwendet, die Sie in den Arbeitsvorlagen einrichten, um Arbeitsaufträge am Lagerort zu steuern. Wenn Sie die Zonen, Lagerplatztypen usw. definieren, bedenken Sie, dass verschiedene Bereiche am Lagerort für verschiedene Prozesse verwendet werden. Berücksichtigen Sie ausserdem Faktoren wie physische Merkmale eines bestimmten Bereichs. Beispielsweise könnte es Bereiche geben, in denen Sie nur einen bestimmten Gabelstapler verwenden können. Oder in Ihrem Unternehmen sind Produktion und Fertigerzeugnisse in einer Einrichtung, und Sie möchten in Supply Chain Management einen einzelnen Lagerort erstellen und dann die beiden Arbeitsgänge trennen, indem Sie zwei Zonengruppen einrichten. Geben Sie den Entitäten beschreibende Namen, damit sie einfach zu identifizieren sind, wenn Sie sie in Vorlagenabfragen verwenden.
 
 ### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Lagerplatzbeschränkungen, Lagerplatzprofile und feste Entnahmeorte
 

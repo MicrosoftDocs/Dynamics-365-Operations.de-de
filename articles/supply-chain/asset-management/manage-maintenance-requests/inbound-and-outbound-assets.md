@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62998da7f541379296d5ac325ae29f24a42f9b7c
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847550"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571667"
 ---
 # <a name="inbound-and-outbound-assets"></a>Ein- und ausgehende Anlagen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Wenn Ihr Unternehmen Reparatur- oder Wartungsarbeiten für Anlagen ausführt, die von anderen Standorten oder Kunden entgegen genommen werden, kann Asset Management sowohl eingehende Anlagen nachverfolgen, die auf dem Weg zu Ihrem Unternehmen sind, als auch ausgehenden Anlagen, die zurückgegeben werden.
 
@@ -45,7 +45,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 3. Wählen Sie **Wartungsanforderungsstatus aktualisieren** aus.
 4. Wählen Sie **Eingehend** aus (oder einen anderen Lebenszyklusstatus, den Sie für eingehende Anlagen erstellt haben), und wählen Sie anschließend **OK**.
 
-![Abbildung 1](media/07-manage-maintenance-requests.png)
+![Erfassen von Anlagen als eingehend](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Erfassen von eingehenden Anlagen als empfangen
 
@@ -54,7 +54,7 @@ Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden A
 3. Wählen Sie **Anlagen entgegennehmen** aus.
 4. Geben Sie im Feld **Eingegangen** das Datum und die Uhrzeit ein. Wählen Sie dann **OK** aus. Der Datensatz wird von der Listenseite **Eingehende Anlagen** entfernt.
 
-![Abbildung 2](media/08-manage-maintenance-requests.png)
+![Erfassen von eingehenden Anlagen als empfangen](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Erfassen von Anlagen als ausgehend
 

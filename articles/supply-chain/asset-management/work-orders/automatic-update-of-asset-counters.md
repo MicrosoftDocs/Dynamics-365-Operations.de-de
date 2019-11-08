@@ -3,7 +3,7 @@ title: Die automatische Aktualisierung von Anlagenzählern
 description: In diesem Thema wird die automatische Aktualisierung von Anlagenzählern in Asset Management beschrieben.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,52 +16,57 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 97e6912cd37d6f82d8bf022141f04645a3364ee1
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: d51b9a7684e460d555632c3896e9dd8a4e10d92c
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875679"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626177"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Die automatische Aktualisierung von Anlagenzählern
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+Informationen zur manuellen Erfassung von Anlagenzählern finden Sie unter [Manuelle Aktualisierung der Anlagenzähler](../work-orders/manual-update-of-asset-counters.md). Informationen zum Einrichten von Anlagenzählern finden Sie unter [Zähler](../setup-for-objects/counters.md).
 
-Im vorherigen Abschnitt wurde die manuelle Erfassung von Anlagenzählern beschrieben. Das Einrichten von Anlagenzählern wird unter [Zähler](../setup-for-objects/counters.md) beschrieben.
+Zählerwerte können auch aus Produktionserfassungen automatisch aktualisiert werden, die auf Produktionsstunden oder Produktionsmenge basieren (d. h. der produzierten Menge). Die Aktualisierung wird auf der Seite **Anlagenzähler aktualisieren** ausgeführt. Sie können eine oder mehrere Anlagen aktualisieren, indem Sie den Parameter **Von Datum** festlegen. Dieser Parameter gibt das Startdatum für Produktionserfassungen an (Produktionsstunden oder Produktionsmengen). Das bedeutet, er gibt das Datum an, ab dem die Zählerwerte aktualisiert werden sollen.
 
-Zählerwerte können auch aus Produktionserfassungen automatisch aktualisiert werden, die auf Produktionsstunden oder Produktionsmenge basieren. Dies erfolgt unter **Anlagenzähler aktualisieren**. Sie können eine oder mehrere Anlagen aktualisieren, indem Sie den Parameter **Von Datum** einfügen. Dieser Parameter gibt das Startdatum für Produktionserfassungen (Stunden oder produzierte Menge) an, d. h. das Anfangsdatum, ab dem Zählerwerte aktualisiert werden sollen.
+Alle Anlagen, die einer Ressource zugeordnet sind *und* Anlagenzähler enthalten, die so eingerichtet wurden, das sie basierend auf den Produktionsstunden oder der Produktionsmenge aktualisiert werden, werden in einer automatischen Aktualisierung berücksichtigt. Neue Zählerwerte werden erstellt.
 
-Alle Anlagen, die einer Ressource zugeordnet sind *und* Anlagenzähler enthalten, die so eingerichtet wurden, das sie basierend auf der erzeugten Menge oder den Produktionsstunden aktualisiert werden, werden in einer automatischen Aktualisierung berücksichtigt und neue Zählerwerte werden erstellt.
+Für Zähler, die auf der Produktionsmenge basieren, umfasst die Anzahl sowohl die Gutmenge als auch die Ausschussmenge, die erfasst wurde. Wenn die Einheit, die für die Erfassung der Produktionsmenge verwendet wird, sich von der Einheit unterscheidet, die für den Zähler verwendet wird, wird die Menge konvertiert, um der Zählereinheit zu entsprechen.
 
-Bezüglich der Zähler, die auf der Produktionsmenge basieren, werden die Gutmenge sowie die erfasste Ausschussmenge in die Zählung einbezogen. Wenn die Einheit, die für die Erfassung der produzierten Menge verwendet wird, sich von der Einheit unterscheidet, die im Zähler verwendet wird, wird die Menge konvertiert, um der Zählereinheit zu entsprechen.
+Wie bereits angegeben können automatische Zähler aus Produktionserfassungen aktualisiert werden. Daher muss die Anlage, für die Sie automatisch Zähler aktualisieren möchten, einer Ressource (Maschine) zugeordnet werden. Bei produzierte Mengen oder Produktionsstunden für die Ressource erfasst wurden, können Sie die zugehörigen Anlagenzähler aktualisieren.
 
-Wie bereits angegeben können automatische Zähler aus Produktionserfassungen aktualisiert werden. Daher muss die Anlage, für die Sie automatisch Zähler aktualisieren möchten, einer Ressource (Maschine) zugeordnet werden. Die folgenden Beschreibungen bieten einen Überblick über die Einstellungen und die Verarbeitung von Produktionsaufträgen (im Modul **Produktionssteuerung**), das als Grundlage für die automatische Aktualisierung von Zählern für eine Anlage im Modul **Anlagenverwaltung** verwendet wird.
+1. Wählen Sie **Anlagenverwaltung** > **Periodisch** > **Anlagen** > **Anlagenzähler aktualisieren** aus.
 
-Bei produzierte Mengen oder Produktionsstunden für die Ressource erfasst wurden, können Sie die zugehörigen Anlagenzähler aktualisieren.
-
-1. Klicken Sie auf **Anlagenverwaltung** > **Periodisch** > **Anlagen** > **Anlagenzähler aktualisieren**.
-
-2. Wählen Sie das Startdatum der automatischen Aktualisierung im Feld **Von Datum** aus.
+2. Wählen Sie im Feld **Von Datum** das Startdatum der automatischen Aktualisierung aus.
 
 >[!NOTE]
 >Das Datum in diesem Feld ist das Datum „In Bearbeitung“ aus **Arbeitsplanbuchungen** (Feld **Produktionssteuerung** > **Abfragen und Berichte** > **Produktion** > **Arbeitsplanbuchungen** > **Physisches Datum**).
 
-3. Wenn Sie bestimmte Anlagen, Anlagentypen oder Ressourcen auswählen möchten, klicken Sie auf **Filtern** auf dem Inforegister **Einzuschließende Datensätze** und nehmen die zutreffende Auswahl vor.
+3. Auf dem Inforegister **Einzuschließende Datensätze** können Sie bestimmte Anlagen, Anlagentypen oder Ressourcen für die automatische Aktualisierung auswählen. Wählen Sie **Filtern** aus und treffen Sie die zutreffende Auswahl.
 
-4. Bei Bedarf können Sie die automatische Aktualisierung als Batchauftrag auf dem Inforegister **Im Hintergrund ausführen** einrichten.
+4. Im Inforegister **Im Hintergrund ausführen** können Sie die automatische Aktualisierung bei Bedarf als Batchauftrag einrichten.
+
+In der folgenden Abbildung wird ein Beispiel des Dialogfelds **Anlagenzähler aktualisieren** angezeigt.
 
 ![Abbildung 1](media/12-work-orders.png)
 
-5. Klicken Sie auf **OK**. Wenn die automatische Aktualisierung von Anlagenzählern erfolgt, können Sie die Zählererfassungen, die sich auf die Anlage beziehen, unter **Anlagenzähler** (**Anlagenverwaltung** > **Allgemein** > **Anlagen** > **Alle Anlagen** > Anlage auswählen > Schaltfläche **Zähler** auswählen).
+5. Wählen Sie **OK**. 
 
-Unter **Anlagenzählersummen** können Sie einen Überblick der letzten Erfassung abrufen, die für alle Zählertypen für alle Anlagen erstellt wurde. Klicken Sie auf **Anlagenverwaltung** > **Abfragen** > **Anlagen** > **Aggregierter Wert für Anlage**. Die Ansicht ist **Anlagenzähler** sehr ähnlich, aber Sie können in **Aggregierter Wert für Anlage** keine Erfassungen hinzufügen oder bearbeiten. Es ist nur für den Überblick.
+Wenn die automatische Aktualisierung von Anlagenzählern erfolgt ist, können Sie die Zählererfassungen anzeigen, die auf die Anlage auf der Seite **Anlagenzähler** bezogen sind. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Anlagen** > **Alle Anlagen** aus, wählen Sie die Anlage aus, und wählen Sie dann im Aktivitätsbereich auf der **Anlage**-Registerkarte in der Gruppe **Vorbeugend** **Zähler** aus.
+
+Auf der Seite **Aggregierter Wert für Anlage** können Sie einen Überblick der letzten Erfassung abrufen, die für alle Zählertypen für alle Anlagen erstellt wurde. Wählen Sie **Anlagenverwaltung** > **Abfragen** > **Anlagen** > **Aggregierter Wert für Anlage** aus. Diese Seite ähnelt der Seite **Anlagenzähler**, Sie können jedoch keine Erfassungen hinzufügen oder bearbeiten. Es ist nur für den Überblick.
+
+In der folgenden Abbildung wird ein Beispiel der Seite **Aggregierter Wert für Anlage** angezeigt.
 
 ![Abbildung 2](media/13-work-orders.png)
 
+Beachten Sie die folgenden Punkte:
 
-- Es ist trotzdem möglich, manuelle Zählerwerterfassungen für Zählertypen zu erstellen, die automatisch aktualisiert werden. Weitere Informationen finden Sie im Abschnitt „Die manuelle Aktualisierung von Anlagenzählern“.
-- Sie können Zähler einrichten, die sich auf einen anderen beziehen Zähler, was bedeutet, dass, wenn ein Zähler aktualisiert wird, zugehörige Zähler automatisch gleichzeitig aktualisiert werden. Informationen zum Einrichten der zugehörigen Zähler finden Sie unter [Zähler](../setup-for-objects/counters.md).
+- Es ist trotzdem möglich, manuelle Zählerwerterfassungen für Zählertypen zu erstellen, die automatisch aktualisiert werden. Weitere Informationen finden Sie unter [Manuelle Aktualisierung von Anlagenzählern](../work-orders/manual-update-of-asset-counters.md).
+
+- Sie können Zähler einrichten, die einem anderen Zähler zugeordnet werden. In diesem Fall, wenn ein Zähler aktualisiert wird, werden zugehörige Zähler automatisch gleichzeitig aktualisiert. Weitere Informationen zum Einrichten von zugehörigen Zählern finden Sie unter [Zähler](../setup-for-objects/counters.md).
+

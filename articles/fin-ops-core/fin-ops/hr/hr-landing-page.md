@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 828de71da3f16db9024b08c724eb784127b080dc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178027"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553162"
 ---
 # <a name="human-resources-overview"></a>Personalwesen – Übersicht
 
@@ -45,9 +45,9 @@ Sie können „Personalverwaltung” verwenden, um diese Aufgaben abzuschließen
 
 Bei Ihrer Arbeit in der Personalverwaltung entscheiden Sie über die Strukturierung Ihrer Organisation mithilfe von Elementen wie Abteilungen, Stellen und Positionen. Diese gehören zu den grundlegenden Elementen, die Sie in der Personalverwaltung konfigurieren. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
-- [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](../../talent/departments-jobs-positions.md)
-- [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](../../talent/set-up-company-specific-hr-parameters.md)
-- [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](../../talent/set-up-hr-parameters-across-legal-entities.md)
+- [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](../../../talent/departments-jobs-positions.md)
+- [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Beschaffen, Einstellen und Motivieren von Mitarbeitern
 
@@ -58,25 +58,25 @@ Personalbeschaffungsprojekte verwalten den Inhalt, der in Anzeigen für offene S
 
 Nachdem Sie Mitarbeiter eingestellt haben, können Sie Pläne einrichten, um effektiv und ausgewogen Vergütungen zu verwalten sowie Objekte, die Ihre Organisation den Mitarbeitern zur Verfügung stellt, wie z. B. Computer oder Telefone. Sie können feste und variable Vergütungspläne erstellen, sowie Regeln für den Vergütungsplan mit entsprechenden Kriterien für den Plan definieren.
 
-- [Vergütungspläne](../../talent/compensation-plans.md)
-- [Feste Vergütungspläne erstellen](../../talent/create-fixed-compensation-plans.md)
-- [Variable Vergütungspläne erstellen](../../talent/create-variable-compensation-plans.md)
+- [Vergütungspläne](../../../talent/compensation-plans.md)
+- [Feste Vergütungspläne erstellen](../../../talent/create-fixed-compensation-plans.md)
+- [Variable Vergütungspläne erstellen](../../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Mitarbeiter fördern und schulen
 
 Um Ihren Mitarbeiter beim Erreichen ihrer Karriereziele beim Liefern wichtigen Geschäftsanforderungen zu helfen, können Sie Ziele einrichten, Leistungsbeurteilungen erstellen und Rückmeldung verfolgen. Um Mitarbeitern zu helfen, die benötigten Fähigkeiten zu entwickeln, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Agenden, Verläufe und Sitzungen einrichten, bevor Sie einen Kursleiter einem Kurs zuweisen oder jemanden für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
-- [Leistungsverwaltung](../../talent/performance-management-overview.md)
-- [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](../../talent/skills.md)
-- [Verwalten von Schulung durch Kurse](../../talent/courses.md)
+- [Leistungsverwaltung](../../../talent/performance-management-overview.md)
+- [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](../../../talent/skills.md)
+- [Verwalten von Schulung durch Kurse](../../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Vergütungen erstellen und verwalten
 
 Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vergütungsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
 
-- [Ein Vergütungsprogramm verwalten](../../talent/manage-benefit-program.md)
-- [Vergütungsberechtigungsrichtlinien](../../talent/benefit-eligibility-policies.md)
-- [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](../../talent/loan-items.md)
+- [Ein Vergütungsprogramm verwalten](../../../talent/manage-benefit-program.md)
+- [Vergütungsberechtigungsrichtlinien](../../../talent/benefit-eligibility-policies.md)
+- [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
 
@@ -90,7 +90,7 @@ Microsoft Dynamics AX hilft Ihnen bei der Verwaltung einer sicheren Arbeitsumgeb
 
 Sie können Fragebögen entwerfen und verwalten, um Informationen für die verschiedensten Zwecke zu sammeln. Die Fragebogenfunktion ermöglicht das Entwerfen und Erstellen von Fragebögen. Wenn ein Fragebogen fertig ist, lassen Sie ihn allgemein oder innerhalb einer bestimmten Gruppe von Befragten ausfüllen. Nachdem die Teilnehmer ihre Antworten angegeben haben, überprüfen und analysieren Sie die Ergebnisse.
 
-- [Fragebögen](../../talent/questionnaires.md)
-- [Entwerfen eines Fragebogens](../../talent/design-questionnaires.md)
-- [Einen Fragebogen verteilen und ausfüllen](../../talent/distribute-questionnaires.md)
-- [Die Ergebnisse eines Fragebogens anzeigen und auswerten](../../talent/evaluate-questionnaire-results.md)
+- [Fragebögen](../../../talent/questionnaires.md)
+- [Entwerfen eines Fragebogens](../../../talent/design-questionnaires.md)
+- [Einen Fragebogen verteilen und ausfüllen](../../../talent/distribute-questionnaires.md)
+- [Die Ergebnisse eines Fragebogens anzeigen und auswerten](../../../talent/evaluate-questionnaire-results.md)

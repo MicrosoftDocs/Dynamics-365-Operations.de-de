@@ -1,9 +1,9 @@
 ---
-title: Neuerungen und Änderungen in Dynamics 365 Talent (31. Juli 2019)
+title: Neuerungen und Änderungen in Dynamics 365 Talent (30. Juli 2019)
 description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
-ms.date: 7/30/2019
+ms.date: 07/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 83f3339e6cea1448f5b257acf602fe5ca3449555
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 3676a0a1fa77285d0203e8e49725cb1c1b742d39
+ms.sourcegitcommit: 029c1882bef558b6a45843548e94ab8369ed9870
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010244"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2651710"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (30. Juli 2019)
 
@@ -57,7 +57,7 @@ Die Änderungen dieser Woche beheben ein Problem, bei dem nur Direktunterstellte
 
 ### <a name="fte-analysis-displaying-incorrect-fte-number"></a>FTE-Analyse, die falsche FTE-Nummer anzeigt
 
-**FTE-Analyse** ist auf der Registerkarte **Analyse** von **Personalführung** korrigiert worden.
+**FTE-Analyse** ist auf der Registerkarte **Analyse** für **Personalführung** korrigiert worden.
 
 ### <a name="final-comments-label-translation"></a>Abschließende Kommentarbeschriftungsübersetzung
 

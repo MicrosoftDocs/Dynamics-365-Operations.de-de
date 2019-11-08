@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b38fb087fb572362c27e747e7909060c55a242a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250196"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653601"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
@@ -190,7 +190,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 Kreditoren müssen eine Bestellung in der Kreditorenzusammenarbeitsschnittstelle nicht bestätigen. Sie können auch eine E-Mail senden oder ihre Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können anschließend den Auftrag manuell bestätigen. In diesem Fall erhalten Sie eine Warnung, die aussagt, dass der Auftrag gerade bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie als offener, bestätigter Auftrag ohne Antworten aufgeführt. Zu diesem Zeitpunkt hat der Kreditor nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.
 
 > [!NOTE]
-> Die Version der Bestellung, die anderen Prozessen in Finance and Operations zur Verfügung steht, ist immer die neueste Version, auch wenn diese Version noch nicht in der Kreditorenzusammenarbeitsschnittstelle erfasst wurde.
+> Die Version der Bestellung, die anderen Prozessen in Supply Chain Management zur Verfügung steht, ist immer die neueste Version, auch wenn diese Version noch nicht in der Kreditorenzusammenarbeitsschnittstelle erfasst wurde.
 
 ### <a name="versions-and-statuses-if-you-use-change-management"></a>Versionen und Status, wenn Sie das Änderungsmanagement verwenden
 

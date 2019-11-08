@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 94fb6720152cbf6aec58d2b8d9d02fc5343c05e2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b55a0b9e54eabdcdbd3f858cf3725b8fe833f65d
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251177"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653393"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Lagerorte von Supply Chain Management zu Field Service synchronisieren
 
@@ -52,14 +52,14 @@ Die folgende Vorlage und die zugrunde liegenden Aufgaben werden verwendet, um La
 Rechnungen, die aus einer Vereinbarung in Field Service erstellt werden, können mit Supply Chain Management über ein Common Data Service (CDS)-Datenintegrationsprojekt synchronisiert werden. Die gewünschten Lagerorte, die mit Field Service synchronisieren, können mit der Abfrage und der erweiterten Filterung im Projekt gesteuert werden. Lagerorte, die von Supply Chain Management synchronisieren, werden im Field Service **mit dem Feld erstellt und extern auf** **Ja** festgelegt und der Datensatz wird als schreibgeschützt erstellt.
 
 ## <a name="field-service-crm-solution"></a>Field Service CRM-Lösung
-Um die Integration zwischen Field Service und Finance and Operations zu unterstützen, sind zusätzliche Funktionen aus der Field Service CRM-Lösung erforderlich. In der Lösung wurde das Feld **Is Maintained Externally** zur Entität **Warehouse (msdyn_warehouses)** hinzugefügt. Dieses Feld dient zur Identifizierung, ob das Lager aus Supply Chain Management gehandhabt wird oder ob es nur in Field Service existiert. Zu den Einstellungen für dieses Feld gehören:
+Um die Integration zwischen Field Service und Supply Chain Management zu unterstützen, sind zusätzliche Funktionen aus der Field Service CRM-Lösung erforderlich. In der Lösung wurde das Feld **Is Maintained Externally** zur Entität **Warehouse (msdyn_warehouses)** hinzugefügt. Dieses Feld dient zur Identifizierung, ob das Lager aus Supply Chain Management gehandhabt wird oder ob es nur in Field Service existiert. Zu den Einstellungen für dieses Feld gehören:
 - **Ja** – Das Lager stammt aus Supply Chain Management und wird nicht in Sales bearbeitet.
 - **Nein** - Der Lagerort wurde direkt in Field Service eingegeben und wird hier verwaltet.
 
 Das Feld wird **Extern verwaltet** hilft, die Synchronisierung von Bestandebenen, Regulierunmgen, Überträgen und der Verwendung von Arbeitsaufträgen zu synchronisieren. Nur Lagerorte mit **Werden exern verwaltet** = **Ja** können verwendet werden, um direkt den gleichen Lagerort im anderen System zu synchronisieren. 
 
 > [!NOTE]
-> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort im Bereich Finance and Operations mit den erweiterten Abfragen und Filterfunktionen dann zugeordnet werden soll. Diese Aufgabe wird in von Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Finance and Operations zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Finance and Operations. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [synchronisieren von Arbeitsaufträge in Field Service zu Arbeitsaufträgen, die mit Projekten in Finance and Operations verknüpft sind](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
+> Es ist möglich, mehrere Lagerorte in Field Service zu erstellen (mit **wird extern verwaltet** = Nein) und diese zu einem bestimmten Lagerort mit den erweiterten Abfragen und Filterfunktionen zuzuordnen. Dies wird in Fällen verwendet, in denen Sie Field Service verwenden, um die detaillierte Bestandebene zu steuern und Supply Chain Management zu aktualisieren. In diesem Fall erhält Field Service keine Bestandebenenaktualisierung von Supply Chain Management. Siehe zusätzliche Informationen unter [Synchronisierung von Bestandanpassungen von Field Service zu Finance and Operations](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) und [synchronisieren von Arbeitsaufträge in Field Service zu Arbeitsaufträgen, die mit Projekten in Finance and Operations verknüpft sind](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).
 
 ## <a name="prerequisites-and-mapping-setup"></a>Voraussetzungen und Zuordnungseinrichtung
 ### <a name="data-integration-project"></a>Datenenintegrationsprojekt

@@ -18,19 +18,19 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 69d06ff649f4453df22d55062b43bcc8d4ecd763
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: f531f51d7f42f88e4da2d046e61313e9ada2b259
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874715"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569799"
 ---
 # <a name="work-order-lifecycle-states"></a>Lebenszykluszustände von Arbeitsaufträgen
 
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Arbeitsauftrags-Lebenszykluszustände definieren die Zustände, die ein Arbeitsauftrag durchlaufen kann. Beispiele sind **Erstellt**, **Planung**, **in Bearbeitung** und **Ende**. Lebenszykluszustände von Arbeitsaufträgen können manuell auf einem Arbeitsauftrag aktualisiert werden, oder sie können automatisch aktualisiert werden (z.B. bei der Arbeitsauftragsplanung).
 
@@ -38,7 +38,7 @@ Die für Ihre Arbeitsaufträge erforderlichen Lebenszykluszustände der Arbeitsa
 
 Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag** und **Terminplan** auf der Seite **Allgemein** FastTab des **Lebenszykluszustand des Arbeitsauftrags** (**Assetmanagement** \> **Setup** \> **Arbeitsaufträge** \> **Lebenszykluszustände**).
 
-![Abbildung 1](media/09-setup-for-work-orders.png)
+![Seite „Lebenszyklusstatus von Arbeitsaufträgen“](media/09-setup-for-work-orders.png)
 
 | Optionsname                   | Beschreibung |
 |-------------------------------|-------------|
@@ -96,7 +96,7 @@ Die folgende Tabelle beschreibt die Optionen in den Abschnitten **Arbeitsauftrag
     - Wenn die Option **Wartung Ausfallzeit** auf **Ja** für den Lebenszykluszustand gesetzt ist, in den ein Arbeitsauftrag aktualisiert wird, wird die Validierung der Wartungsstillstandszeit für die Anlage durchgeführt, die mit dem Arbeitsauftrag verknüpft ist. Wenn eine Wartungsstillstandsregistrierung durchgeführt wurde, es aber keine **Beendet**Registrierung gibt, wird eine Meldung angezeigt, wenn der Arbeitsauftrag in diesen Lebenszykluszustand aktualisiert wird.
     - Wenn die Standardprojektierung nicht alle Phasen umfasst, die Sie für Ihre Anlageverwaltungseinrichtung benötigen, können Sie benutzerdefinierte Projektphasen auf der Registerkarte **Projektphase** der Seite **Projektmanagement- und Abrechnungsparameter** einrichten. Die folgende Abbildung zeigt die Registerkarte **Projektphase** auf der Seite **Projektmanagement- und Abrechnungsparameter**.
 
-    ![Abbildung 2](media/10-setup-for-work-orders.png)
+    ![Seite „Projektphasen für verschiedene Projekttypen einrichten“](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Wenn der Lebenszykluszustand, in dem Sie einen Arbeitsauftrag aktualisieren, inaktiv ist, werden Journale, die sich auf den Arbeitsauftrag beziehen, aber noch nicht gebucht wurden, automatisch gelöscht. Dieses Verhalten trägt dazu bei, die automatische Bereinigung unbenutzter Daten zu gewährleisten. (Ein Lebenszykluszustand ist inaktiv, wenn die Option **Aktiv** dafür auf **Nein** auf der Seite **Allgemein** FastTab des Lebenszykluszustand **Arbeitsauftrag** gesetzt ist.)
@@ -114,7 +114,7 @@ Der Grund für die Verwendung von Typen ist, dass bei der Definition eines Typs,
 
 Die folgende Abbildung zeigt den Zusammenhang zwischen Arbeitsauftragsarten, Lebenszyklusmodellen und Lebenszykluszuständen.
 
-![Abbildung 3](media/11-setup-for-work-orders.png)
+![Vergleich der Seiten „Arbeitsauftrags-Phasenmodelle“ und „Arbeitsauftragstyp“](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Arbeitsauftrags-Phasenmodelle
 
@@ -138,4 +138,4 @@ Nachdem Sie die für Ihre Arbeitsaufträge erforderlichen Lebenszykluszustände 
 8. Wählen Sie im Feld **Ungeplanter Lebenszyklusstatus** den Lebenszyklusstatus, der für einen Arbeitsauftrag immer ausgewählt werden soll, wenn die Arbeitsvorbereitung gelöscht wird.
 9. Speichern Sie das Arbeitsauftrags-Lebenszyklusmodell.
 
-![Abbildung 4](media/15-setup-for-work-orders.png)
+![Seite „Arbeitsauftrags-Phasenmodelle“](media/15-setup-for-work-orders.png)

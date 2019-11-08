@@ -3,7 +3,7 @@ title: Spaltendefinitionen in Finanzberichten
 description: Dieser Artikel enthält Informationen zu Spaltendefinitionen. Eine Spaltendefinition ist eine Berichtkomponente oder ein Baustein, die den Inhalt jeder Spalte eines Berichts angibt. Wie auch Zeilendefinitionen können grundlegende Spaltendefinitionen in mehreren Berichten verwendet werden.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 76de08290058d43fbd1b4c0670db55ebcfbb8494
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 54e7d517e704b7162f3e091330a246386f0203ea
+ms.sourcegitcommit: d800613020d5548d100c8f240fb81bb6258a3646
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174304"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "2572640"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
@@ -170,7 +170,7 @@ Sie können das Dialogfeld **Spaltenüberschrift** verwenden, um Überschriften 
 
 ### <a name="create-an-automatically-generated-header"></a>Erstellen einer automatisch generierten Überschrift
 
-Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in gemischter Groß- und Kleinschreibung angezeigt. In einem Standardkalenderjahr z. B., löst **@CalMonthLong** Monat zu **7** zu **Juli** auf. Wenn Sie möchten, dass der Monat in Großbuchstaben angezeigt wird (z. B. **JULI**), geben Sie den AutoText-Code im Feld **Spaltenüberschriftstext** in Großbuchstaben ein. Geben Sie beispielsweise **@CALMONTHLONG** ein. Sie können Codes mit Text kombinieren. Geben Sie beispielsweise den folgenden Überschrifttext ein: **Periode @ FiscalPeriod-@FiscalYear von @StartDate zu @EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
+Der Bericht-Designer kann Spaltenüberschriften auf Grundlage von Autotextcodes automatisch generieren. AutoText-Codes sind Variablen, die bei jedem Generieren eines Berichts aktualisiert werden. Diese Codes können in jeder Spaltenüberschrift enthalten sein und geben Berichtsinformationen (z. B. Datum oder Zeitraumnummer) an, die variieren können. Daher können Sie eine Spaltendefinition für mehrere Berichtsdefinitionen, Zeiträume und Berichtsbaumstrukturen verwenden. Da Autotextcodes auf den Kalenderdaten aus den Detailzeilen der Spaltendefinition beruhen, werden sie nur für **CALC** und **FD**-Spalten unterstützt. Die Darstellung des AutoText-Codes in der Spaltenüberschriftszelle beeinflusst auch die Darstellung der Informationen im Bericht. Im Dialogfeld **Spaltenüberschrift** werden die Autotextcodes in Groß- und Kleinbuchstaben angezeigt. Daher wird der Text im Bericht in gemischter Groß- und Kleinschreibung angezeigt. Beispielsweise wird in einem standardmäßigen Kalenderjahr von **\@CalMonthLong** der Monat **7** zu **Juli** aufgelöst. Wenn Sie möchten, dass der Monat in Großbuchstaben angezeigt wird (z. B. **JULI**), geben Sie den AutoText-Code im Feld **Spaltenüberschriftstext** in Großbuchstaben ein. Geben Sie beispielsweise **\@CALMONTHLONG** ein. Sie können Codes mit Text kombinieren. Geben Sie beispielsweise den folgenden Überschrifttext ein: **Period \@FiscalPeriod-\@FiscalYear von \@StartDate zu \@EndDate**. Die Berichtsüberschrift, die generiert wird, ähnelt dem folgenden Text: **Periode 1-02 von 01/01/02 bis 01/31/02**.
 
 > [!NOTE]
 > Das Format von Teilen des Texts, wie z. B. ein langes Datum, hängt von den regionalen Einstellungen des Servers ab. Um diese Einstellungen zu ändern, klicken Sie auf die Schaltfläche **Start**, klicken Sie auf **Systemsteuerung**, und klicken Sie anschließend auf **Region und Sprache**. In der folgenden Tabelle werden die verfügbaren AutoText-Optionen für Spaltenüberschriften aufgelistet.

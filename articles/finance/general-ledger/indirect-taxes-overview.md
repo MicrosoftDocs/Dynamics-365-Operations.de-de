@@ -3,7 +3,7 @@ title: Mehrwertsteuerüberblick
 description: Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2741eb51f93f2f0b627dd8676629077b6df0f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
+ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186462"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2666829"
 ---
 # <a name="sales-tax-overview"></a>Mehrwertsteuerüberblick
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Dieser Artikel enthält eine Übersicht über das Mehrwertsteuersystem. Er erklärt die Elemente zur Einrichtung der Mehrwertsteuer und wie sie zusammenarbeiten.
 
@@ -94,5 +92,8 @@ In der Regel würden Sie 2.500 EUR im Juni an die Steuerbehörde überweisen mü
 
 Wenn Sie jedoch eine Mehrwertsteuer nach vereinnahmten Geldern anwenden, begleichen Sie die Steuer erst, wenn Sie die Zahlung vom Debitor am 30. Juli erhalten.
 
+### <a name="postdated-check"></a>Vordatierter Scheck
+
+Wenn Sie vordatierte Schecks als Zahlungsmethode verwenden, wenn die Zahlung erstellt wird, wird das Bankkonto nicht ausgeglichen. In einigen Ländern wird die Mehrwertsteuer zu 'realisierten' Verbindlichkeiten, wenn die Zahlung bei der Bank eingeht, was bedeutet, dass der vordatierte Scheck ausgeglichen wird. Sie können es aktivieren, indem Sie **Die bedingte Steuer realisieren, wenn vordatierte Schecks gezogen werden** in **Bargeld- und Bankverwaltung > Einstellungen > Bargeld- und Bankverwaltungsparameter > Vordatierte Schecks** auswählen.
 
 Weitere Informationen finden Sie unter [Einrichten der Quellensteuer](tasks/set-up-withholding-tax.md)

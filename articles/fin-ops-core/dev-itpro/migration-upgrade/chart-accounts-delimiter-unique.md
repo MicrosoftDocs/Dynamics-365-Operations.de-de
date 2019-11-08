@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines eindeutigen Trennzeichens ' für den Plan
+title: Erstellen eines eindeutigen Trennzeichens für den Kontenplan
 description: In diesem Thema wird erläutert, wie Sie nicht die gleichen Trennzeichen für den Kontenplan und die Dimensionswerte verwenden können. Sie müssen die Trennzeichenwerte nach dem Upgrade ändern.
 author: ryansandness
 manager: AnnBe
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 2622245c7ce7213665ab32f4020c282df28cb886
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 5861bcaa42f7bc5ec20916fe1a44418bdd9c2ffe
+ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248779"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2550907"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Erstellen eines eindeutigen Trennzeichens für den Kontenplan
 

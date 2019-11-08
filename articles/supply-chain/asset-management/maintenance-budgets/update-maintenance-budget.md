@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 486782968816cc585d9cf2d753f32e82f85e4f7e
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 8f3b771319eeb602a371500fdc69c68f88afe341
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874784"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571736"
 ---
 # <a name="update-maintenance-budgets"></a>Aktualisierung der Wartungsbudgets
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Auf der Seite **Wartungsbudgetzeilen** werden alle Budgetzeilen angezeigt, die für das Budget angelegt wurden, das auf der Seite **Wartungsbudgets** ausgewählt wurde. (Weitere Informationen finden Sie unter [Wartungsbudgets anlegen](create-maintenance-budget.md).) Sie können Wartungsbudgetpositionen neu berechnen und anpassen, bis das Wartungsbudget genehmigt ist. Nach Ablauf der Budgetperiode und der Buchung von Kosten im Anlagenmanagement können Sie die Budgetpositionen auch mit Istkosten aktualisieren.
 

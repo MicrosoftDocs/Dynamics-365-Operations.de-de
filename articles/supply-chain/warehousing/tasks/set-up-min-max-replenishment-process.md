@@ -3,7 +3,7 @@ title: Einen Min-Max-Auffüllungsprozess einrichten
 description: Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet.
 author: perlynne
 manager: AnnBe
-ms.date: 06/26/2019
+ms.date: 10/02/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef3c33125850662cfb0dfba6e6349ce32ceda0af
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
+ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924446"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "2559188"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Einen Min-Max-Auffüllungsprozess einrichten
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet. Wenn Lagerbestand unter der Untergrenze liegt, wird Arbeit erstellt, um den Lagerplatz aufzufüllen. Die Prozedur zeigt auch, wie feste Entnahmeorte verwendet werden, um die Lagerauffüllung zuzulassen, selbst wenn der Lagerbestand unter die Untergrenze sinkt und wie der Auffüllungsprozess aktiviert wird, um mithilfe eines Batchauftrags regelmäßig ausgeführt zu werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt. Sie können diese Prozedur im USMF-Demodatunternehmen ausführen, unter Verwendung der Beispielswerte in den Hinweisen, oder Sie können sie mit Ihren eigenen Daten ausführen. Wenn Sie Ihre eigenen Daten verwenden, stellen Sie sicher, dass Sie einen Lagerort haben, der für Lagerortverwaltungsprozesse aktiviert ist.
+Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet. Wenn Lagerbestand unter der Untergrenze liegt, wird Arbeit erstellt, um den Lagerplatz aufzufüllen. Die Prozedur zeigt auch, wie feste Entnahmeorte verwendet werden, um die Lagerauffüllung zuzulassen, selbst wenn der Lagerbestand unter die Untergrenze sinkt und wie der Auffüllungsprozess aktiviert wird, um mithilfe eines Batchauftrags regelmäßig ausgeführt zu werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt. Sie können diese Prozedur im USMF-Demodatunternehmen ausführen, unter Verwendung der Beispielswerte unten, oder Sie können sie mit Ihren eigenen Daten ausführen. Wenn Sie Ihre eigenen Daten verwenden, stellen Sie sicher, dass Sie einen Lagerort haben, der für Lagerortverwaltungsprozesse aktiviert ist.
 
 
 ## <a name="create-a-fixed-picking-location"></a>Erstellen Sie einen festen Entnahmeort
@@ -41,7 +41,7 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 7. Schließen Sie die Seite.
 
 ## <a name="create-a-replenishment-location-directive"></a>Erstellen Sie eine Auffüllungslagerplatz-Anweisung
-1. Wechseln Sie zu **Lagerortverwaltung > Einstellungen > Lagerortparameter**. Lagerplatzanweisungen werden verwendet, um zu bestimmen, von wo Artikel im Auffüllungsprozess entnommen werden sollen.
+1. Wechseln Sie zu **Lagerortverwaltung > Einstellungen > Lagerplatzrichtlinien**. Lagerplatzanweisungen werden verwendet, um zu bestimmen, von wo Artikel im Auffüllungsprozess entnommen werden sollen.
 2. Wählen Sie im Feld **Arbeitsauftragstyp** die Option „Wiederbeschaffung“ aus.
 3. Klicken Sie im **Aktivitätsbereich** auf **Neu**.
 4. Geben Sie im Feld **Name** einen Wert ein.

@@ -3,7 +3,7 @@ title: Erhalten Sie Support für Finance and Operations-Apps oder Lifecycle Serv
 description: In diesem Thema wird beschrieben, wie Sie Hilfe bei Finance and Operations-Apps oder Microsoft Dynamics Lifecycle Services (LCS) erhalten.
 author: kfend
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af4cbbd0f594b07e791d6ab7a5ac4dc58b97e1de
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: c36adc1f754c918a9fdf8410572f3199cdb63766
+ms.sourcegitcommit: e16b8c248fc2c2a60dc7b803320f942a35b443c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537049"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2577495"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Erhalten Sie Support für Finance and Operations-Apps oder Lifecycle Services (LCS)
 
@@ -91,5 +91,5 @@ Für technische Fragen im Zusammenhang mit der Anmeldung und den Zugriff auf Cus
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Anfordern von Support zu Dynamics 365 Retail](../../../retail/retail-support.md)
 - [Anfordern von Support zu Dynamics 365 Talent](../../../talent/talent-support.md)
-- Weitere Informationen zu Microsoft Dynamics-Supportangeboten finden Sie unter [Microsoft Dynamics-Onlinesupport](https://www.microsoft.com/dynamics/dynamics-online-support.aspx).
+- Weitere Informationen zu Microsoft Dynamics-Supportangeboten finden Sie unter [Verwalten der Supporterfahrungen für Finance and Operations-Apps](cloud-powered-support-lcs.md).
 

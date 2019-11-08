@@ -3,7 +3,7 @@ title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen rechtlichen Updates für Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/30/2019
+ms.date: 10/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc5a9669a9c6c298a4f9df52346b8a075ba177e0
-ms.sourcegitcommit: a4e1a28b4733f3356e5a2237c8ba5d93f9799391
+ms.openlocfilehash: adb88a5fb79b24a26aa2976464d3e838922322c6
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2517310"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653203"
 ---
 # <a name="regulatory-updates"></a>Updates zu rechtlichen Bestimmungen
 
@@ -28,9 +28,7 @@ ms.locfileid: "2517310"
 
 In diesem Thema werden die rechtlichen Aktualisierungen aufgelistet, die für von Dynamics 365 Finance unterstützten Lokalisierungen geplant sind und freigegeben werden. Lieferzeitpläne können sich ändern, und die geplante Funktionalität kann sich ändern oder nicht freigegeben werden. Weitere Informationen finden Sie unter [Microsoft-Richtlinie](https://go.microsoft.com/fwlink/p/?linkid=2007332). 
 
-Gesetzlich Aktualisierungen sind Funktionen, die implementiert werden, um die neue oder geänderte landesspezifische Gesetzgebung zu unterstützen. Weitere Informationen zu geplanten und freigegebenen landesspezifischen Funktionen finden Sie in den folgenden Ressourcen:
-- [Dynamics 365 und Power Platform Versionenhinweise](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Neuheiten in Microsoft Dynamics 365 for Finance and Operations](../../fin-and-ops/get-started/whats-new-changed.md)
+Gesetzlich Aktualisierungen sind Funktionen, die implementiert werden, um die neue oder geänderte landesspezifische Gesetzgebung zu unterstützen. Weitere Informationen zu geplanten und freigegebenen landesspezifischen Funktionen finden Sie in den [Dynamics 365- und Power Platform-Veröffentlichungshinweisen](https://docs.microsoft.com/business-applications-release-notes/index).
 
 Microsoft bemüht sich, neue gesetzliche Vorgaben so früh wie möglich zu implementieren. Das tatsächliche Lieferdatum hängt vom Gesetzesankündigungstag, der Verfügbarkeit der Anforderungsdetails von den lokalen Behörden, der Verfügbarkeit der Prüfungstools und von der Größe und von der Komplexität der Änderung ab.
 
@@ -44,13 +42,19 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 |Geplantes Freigabedatum|Version freigeben|Land|Regulatorisches Update|
 |--------------------|---------------|-------|-------|
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.10    |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.20    |
-|      August 2019          |   10.0.6(PEAP)      | Brasilien      |   DRCST-Meldung SC   |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF      | Brasilien     |   Neue Gesetzgebung wird vom RJ-Status in Bezug auf EFD-ICMS/IPI implementiert. Die Implementierung der Resolution 13/19 aus Rio de Janeiro (RJ) dient „speziellen Verfahren zur Entlastung     |
-|      August 2019          |   10.0.6(PEAP)      | Brasilien      |   Steuerauszug CAT 42/18    |
-|      August 2019          |   10.0.6(PEAP)      | Italien      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 vom 23. Oktober 2018 – Dynamics 365 for Finance and Operations v.10.0.6  |
-|      August 2019          |   10.0.6(PEAP), 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer    |
+|      November 2019          |   10.0.7(PEAP)      | Italien      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 ab dem 23. Oktober 2019: Vierteljährliche MwSt.-Mitteilung („Lipe 2018“)    |
+|      November 2019          |   10.0.7(PEAP)      | Italien      |   Retail – Verwalten von Debitoreninformationen in POS |
+|      November 2019          |   10.0.7(PEAP)      | Italien      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg | 
+|      November 2019          |   10.0.7(PEAP)      | Japan      |   Einführung der Änderung der Verbrauchsrate und der ermäßigten Steuer (Rechnungslayouts) | 
+|      November 2019          |   10.0.7(PEAP)      | Mexiko      |   Aktualisierung von Regel 2.7.2.9 – Mithilfe der Zeitzone der Postleitzahl der Einrichtung, die das CFDI-Dokument ausstellt | 
+|      November 2019          |   10.0.7(PEAP)      | Vereinigtes Königreich     |   Digitale Steuer – Berichtserstellung zu Mehrwertsteuerrückerstattung für die Unternehmen, die als MwSt-Gruppe innerhalb der gleichen Systemdatenbank v.10 melden | 
+|      November–August 2019          |   10.0.7(PEAP), 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.20    |
+|      November–August 2019          |   10.0.7(PEAP), 10.0.6      | Brasilien      |   DRCST-Meldung SC   |
+|      November–August 2019          |   10.0.7(PEAP), 10.0.6      | Italien      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 ab dem 23. Oktober 2018 – Dynamics 365 for Finance and Operations  |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Brasilien      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.10    |
+|      August 2019          |   10.0.6, 10.0.5HF      | Brasilien     |   Neue Gesetzgebung wird vom RJ-Status in Bezug auf EFD-ICMS/IPI implementiert. Die Implementierung der Resolution 13/19 aus Rio de Janeiro (RJ) dient „speziellen Verfahren zur Entlastung     |
+|      August 2019          |   10.0.6      | Brasilien      |   Steuerauszug CAT 42/18    |
+|      August 2019          |   10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      | Japan      |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer    |
 |      August-Juli 2019          |   10.0.5, 10.0.4HF, 10.0.3HF      | Spanien      |   Spanien: SII: Validierungsregeln ändern sich ab dem 1. Oktober 2019    |
 |      Juli 2019          |   10.0.5, 10.0.4HF, 10.0.2HF      | Brasilien      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.00  |
 |      Juli 2019          |   10.0.5      | Brasilien      |   Sped Beiträge praktische Anleitung 1.31. neuer Leitfaden    |
@@ -66,7 +70,7 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 |      2019. April          |   10.0.3, 10.0.2HF, 10.0.1HF      | Brasilien     |   SPED ECD Layout 7    |
 |      2019. April          |   10.0.3      | Brasilien      |   SPED ECF – Layout 5 für 2019    |
 |      2019. April          |   10.0.3      | Indien      |   Anpassung der Steuer in Zollwährung in BOE statt in Transaktionswährung    |
-|      2019. April          |   10.0.3      | Indien      |   Berechnung der Steuer in Zollwährung in BOE statt in Transaktionswährung)    |
+|      2019. April          |   10.0.3      | Indien      |   Berechnung der Steuer in Zollwährung in BOE statt in Transaktionswährung   |
 |      2019. April          |   10.0.3, 10.02HF, 10.0.1HF      | Indien      |   Änderung des IEC-Nummernformats    |
 |      2019. April          |   10.0.3      | Litauen      |   Litauen: i.SAF-Bericht ermöglicht es Benutzern, System-Mehrwertsteuercodes in Zuordnung zu gesetzlichen Steuercodes zu definieren)    |
 |      2019. April          |   10.0.3      | Polen      |   SAF-Rechnungen (JPK_FA) v.2 ab 1. vom Juli 2019    |

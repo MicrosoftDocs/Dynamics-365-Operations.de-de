@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 316e1e1f0db9343e414ddeafe9e00beac87b5b76
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f8e0e98cf1a953355515f9145483aed8cbaa2ad2
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249493"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653647"
 ---
 # <a name="product-configuration-overview"></a>Produktkonfiguration – Übersicht
 
@@ -73,7 +73,7 @@ Tabelleneinschränkungen können als benutzerdefinierte oder als systemdefiniert
 
 Eine benutzerdefinierte Tabelleneinschränkung wird vom Benutzer erstellt. Der Benutzer wählt eine Kombination von Attributtypen aus, um die Spalten der Tabelle darzustellen und gibt dann Werte aus den Domänen der ausgewählten Attributtypen ein, um die Zeilen in der Tabelleneinschränkung zu bilden.  
 
-Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Finance and Operations-Tabelle, die bei der Konfiguration vorhanden sind.  
+Eine systemdefinierte Tabelleneinschränkung wird definiert, indem ausgewählt wird, welche Tabelle als Referenz verwendet wird, und dann durch das Festlegen von Feldern aus dieser Tabelle, um die Spalten in der Einschränkung zu bilden. Die Zeilen der Tabelleneinschränkung sind die Zeilen der Supply Chain Management-Tabelle, die bei der Konfiguration vorhanden sind.  
 
 Eine Tabelleneinschränkung wird in einem Produktkonfigurationsmodell einbezogen, indem die Tabelleneinschränkungsdefinition verwiesen und die betreffenden Attribute im Modell zu den Spalten in der Tabelleneinschränkung zuordnet werden.
 

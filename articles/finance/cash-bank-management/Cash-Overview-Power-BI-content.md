@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 553a4a5d25e126923576569b48414c46aab991ec
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7621ca961288af81966e0ac883c6525f89960654
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177941"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553139"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-Inhalt – Bargeldübersicht
 
@@ -40,15 +40,14 @@ Die folgende Einrichtung muss abgeschlossen werden, damit Daten in den Grafiken 
 1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
 2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen.
 2. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung sowie der Buchhaltungswährung und den Bankwährungen. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-3. Konfigurieren Sie die Cashflow-Planung und führen Sie sie aus. Weitere Informationen dazu, wie Cashflow-Planung eingerichtet wird, finden Sie unter <a href="https://docs.microsoft.com/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting
-">Cashflow-Planung</a>. 
+3. Konfigurieren Sie die Cashflow-Planung und führen Sie sie aus. Weitere Informationen dazu, wie Cashflow-Planung eingerichtet wird, finden Sie unter [Cashflow-Planung](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
 4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **LedgerCovLiquidityMeasurement**-Aggregatmessung zu aktualisieren.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 
 Berichte vom Inhalt vom Power BI-**Bargeldüberblick** werden in den Arbeitsbereichen **Bargeldüberblick** und **Bankverwaltung** angezeigt.
 
-Um die Bargeld-Planungsberichte mit Daten anzuzeigen, müssen Sie zuerst die Planungsberechnung unter Verwendung der Funktion **Bargeld-Planungen berechnen** aus dem Bereich Bargeld- und Bankverwaltung durchführen.  Dies muss für jedes in die Planung aufgenommene Unternehmen stattfinden.  Anschließend müssen Sie die LedgerCovLiquidityMeasurement-Aggregatmessung auf der Seite **Entitätsspeicher** aktualisieren.  
+Um die Bargeld-Planungsberichte mit Daten anzuzeigen, müssen Sie zuerst die Planungsberechnung unter Verwendung der Funktion **Bargeld-Planungen berechnen** aus dem Bereich Bargeld- und Bankverwaltung durchführen. Dies muss für jedes in die Planung aufgenommene Unternehmen stattfinden.  Anschließend müssen Sie die LedgerCovLiquidityMeasurement-Aggregatmessung auf der Seite **Entitätsspeicher** aktualisieren.  
 
 Für Demonstrationszwecke können Sie Demodaten für die Bargeld-Planung unter Verwendung der Seite **Daten generieren** im Demodatenmodul hinzufügen.  Dieses Skript fügt Daten in die Bargeld-Planungstabellen ein, um schnell die für Berichte benötigten Informationen bereitzustellen.  Dieses Modul steht nur zur Verfügung, wenn Sie das Demo-Datenpaket-Modell in der Umgebung bereitgestellt haben. 
 

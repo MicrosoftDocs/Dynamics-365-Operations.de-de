@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f68e11a1cd14bc35282b957a4262cbecdd627b3b
-ms.sourcegitcommit: 2c73749779274e0b0abbcb4041bbc1df0fb6d6e4
+ms.openlocfilehash: 151db9ca8a121759e39b690ec296b36a18dc1729
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "1790498"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571161"
 ---
-# <a name="maintenance-request-states"></a>Wartungsanfrage-Lebenszyklusstatus
+# <a name="maintenance-request-lifecycle-states"></a>Wartungsanfrage-Lebenszyklusstatus
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Wartungsanfrage-Lebenszyklusstatus definieren die Phasen, die eine Anfrage durchlaufen kann. Hierzu gehören **Erstellt**, **Aktiv** und **Beendet**. Wenn eine Wartungsanfrage in einen Arbeitsauftrag konvertiert wird, sollte der Wartungsanfrage-Lebenszyklusstatus in **Beendet** oder **Geschlossen** aktualisiert werden, um anzugeben, dass die Wartungsanfrage nicht mehr aktiv ist. Auf der Listenseite **Alle Wartungsanfragen** sehen Sie alle Wartungsanfragen unabhängig von ihrem Lebenszyklusstatus.
@@ -51,7 +51,7 @@ Wartungsanfrage-Lebenszyklusstatus definieren die Phasen, die eine Anfrage durch
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfrage-Lebenszyklusstatus**.
 
-![Abbildung 1](media/02-setup-for-requests.png)
+![Seite „Wartungsanfrage-Lebenszyklusstatus“](media/02-setup-for-requests.png)
 
 > [!NOTE]
 > Wartungsanfrage-Lebenszyklusstatus, -Lebenszyklusstatusgruppen und -typen stehen mit Arbeitsauftrag-Lebenszyklusstatus, -Lebenszyklusstatusgruppen und -typen in Zusammenhang und werden genauso wie diese verwendet. 
@@ -80,4 +80,4 @@ Nachdem Sie die Lebenszyklusstatus erstellt haben, die für die Wartungsanfragen
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfrage-Lebenszyklusmodelle**.
 
-![Abbildung 2](media/06-setup-for-requests.png)
+![Seite „Wartungsanfrage-Lebenszyklusmodelle“](media/06-setup-for-requests.png)

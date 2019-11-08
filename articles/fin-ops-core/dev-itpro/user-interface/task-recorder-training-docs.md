@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbc8e4b942c3c5307d90bfd08a33a8b27c4352d2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249726"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658809"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
 
@@ -68,21 +68,21 @@ Ob Sie eine neue Aufgabenaufzeichnung erstellen oder Ihre Aufzeichnung einer Mic
 
 Dies ist der Bearbeitungsbereich, den Sie sehen, wenn Sie eine Anmerkung hinzufügen, während Sie die Aufzeichnung erstellen. Geben Sie eine Titelanmerkung im Feld **Titel** ein. 
 
-[![screen1](./media/screen1.png)](./media/screen1.png) 
+[![Bearbeitungsbereich mit Titelanmerkung](./media/screen1.png)](./media/screen1.png) 
 
 So sieht die Titelanmerkung in der "Blase" im Aufgabenleitfaden aus. 
 
-[![screen2](./media/screen2.png)](./media/screen2.png)
+[![Darstellung der Titelanmerkung im Aufgabenleitfaden](./media/screen2.png)](./media/screen2.png)
 
 -   **Hinweise:** Eine Hinweisanmerkung, die automatisch von der Aufgabenaufzeichnung generiert wurde, wird nach dem Text zum Schritt angezeigt. Im Aufgabenleitfaden wird sie nur angezeigt, wenn der Benutzer auf den Link **Mehr anzeigen** in der Aufgabenleitfadenblase klickt. Verwenden Sie diesen Typ der Anmerkung, um alles Wissenswerte zu beschreiben, das der Benutzer benötigt, um den Schritt abzuschließen.
 
 Dies ist der Bearbeitungsbereich, den Sie sehen, wenn Sie eine Anmerkung hinzufügen, während Sie die Aufzeichnung erstellen. Geben Sie eine Titelanmerkung im Feld **Anmerkung** ein. 
 
-[![screen3](./media/screen3.png)](./media/screen3.png) 
+[![Bearbeitungsbereich mit Anmerkung im Hinweisfeld](./media/screen3.png)](./media/screen3.png) 
 
 So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 
-[![screen4](./media/screen4.png)](./media/screen4.png)
+[![Darstellung der Hinweisanmerkung im Aufgabenleitfaden](./media/screen4.png)](./media/screen4.png)
 
 -   **Infoschritt**: Diese Anmerkungen werden mit einem Rechtsklick auf Steuerelement oder eine beliebige Stelle in einem Formular klicken &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen**. Infoschritte werden als nummerierte Schritte an jedem Punkt, den Sie einfügen, angezeigt, auch wenn in der Benutzeroberfläche keine Aktion aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird.Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorbereiten, Schritte zu beschreiben, die außerhalb der Anwendung abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperinks erstellen.).
 

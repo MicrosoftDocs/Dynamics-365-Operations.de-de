@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 02ea3affca727802b241f87b801e0742ac0aa41a
-ms.sourcegitcommit: 6476f27c8d3dced7c2e9a7344a4e378b51a1983e
+ms.openlocfilehash: 2d079c10331360c035ff800650ed3102c2cc3ad4
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "1922090"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569983"
 ---
 # <a name="preventive-maintenance-overview"></a>Übersicht über die vorbeugende Instandhaltung
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In diesem Thema wird die vorbeugende Instandhaltung im Asset Management erläutert. Vorbeugende Wartung ist eine Disziplin, die geplante Wartungsarbeiten beinhaltet, z.B. regelmäßige Wartung, Kalibrierung und Inspektionen. In **Anlagenmanagement** können Sie Wartungspläne erstellen und auf Anlagen und Technischen Standorten einrichten. Sie können auch Wartungsrunden zu Technischen Standorten einrichten. Wartungspläne für Anlagen sind unabhängig davon, wo die Anlage installiert ist, aktiv. Wartungspläne und Wartungsrunden am Technischen Standort sind für die aktuell am Standort installierten Anlagen aktiv. Anstatt Wartungspläne für Anlagen oder Wartungsrunden für Technische Standorte einzurichten, können Sie Wartungsrunden anlegen, die mehrere Anlagen umfassen, für die Sie verwandte Arten von Wartungsarbeiten in derselben Arbeitsroutine durchführen müssen. Wartungsrunden, die aus Anlagen angelegt werden - statt auf Technischen Standorten - bedeutet, dass Sie für eine Wartungsrunde mehrere Anlagen auswählen können, die nicht auf demselben Technischen Standort installiert sind.
 

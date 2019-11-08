@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aba85b63abc11c9f32023e8499a02728dfc86bd1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4d9a2f6efad6b8ddf3a445fe7831244e161c35d5
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188256"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578194"
 ---
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Einrichten des erweiterten Bankabstimmungsimportprozesses
 
@@ -36,7 +36,7 @@ Die Einrichtung des Bankabstimmungsimports variiert je nach Format des elektroni
 ## <a name="set-time-zone-preference"></a>Zeitzoneneinstellung festlegen
 Wenn Sie die Bankauszugsimporteinstellungen konfigurieren, kann es wichtig sein, die Zeitzone der Datum-Zeit-Daten in den Bankauszugsdateien zu berücksichtigen, die importiert werden. Standardmäßig wird davon ausgegangenm dass alle Datums- und Uhrzeitwerte bereits in Coordinated Universal Time (UTC) sind und damit keine Zeitzonenumrechnung angewendet wird, wenn Sie die Daten importieren. 
 
-Es gibt eine Option, um eine Zeitzone anzugeben, die für den Import von Daten verwendet wird. Diese Option ist im Feld **Zeitzoneneinstellung** für jede Seite **Quelldatenformatdetails** verfügbar (Inforegister **Datenverwaltungsarbeitsbereich > Datenquellen konfigurieren > Datenformat auswählen > Regionale Einstellungen**). Die Zeitzoneneinstellung, die Sie eingeben, wird auf alle Importe angewendet, die dieses Quelldatenformat verwenden. Sie können beliebig viele Datenquellenformate für das Importieren von Daten aus verschiedenen Zeitzonen nach Bedarf erstellen. Die Zeitzoneneinstellung sollte die lokale Zeitzone der Datums- und Uhrzeitdaten in der Importdatei sein. Die Zeitzoneneinstellung sollte die lokale Zeitzone der Datums- und Uhrzeitdaten in der Importdatei sein. 
+Es gibt eine Option, um eine Zeitzone anzugeben, die für den Import von Daten verwendet wird. Diese Option ist im Feld **Zeitzoneneinstellung** für jede Seite **Quelldatenformatdetails** verfügbar (Inforegister **Datenverwaltungsarbeitsbereich > Datenquellen konfigurieren > Datenformat auswählen > Regionale Einstellungen**). Die Zeitzoneneinstellung, die Sie eingeben, wird auf alle Importe angewendet, die dieses Quelldatenformat verwenden. Sie können beliebig viele Datenquellenformate für das Importieren von Daten aus verschiedenen Zeitzonen nach Bedarf erstellen.  
 
 Die Zeitzone kann nicht mit der Zeitzone des Benutzers oder des Unternehmens identisch sein, sodass Sie sicherstellen sollten, welche Zone die Datums- und Uhrzeitdaten verwenden. Es wird empfohlen, die folgenden Aspekte zu berücksichtigen, wenn Sie eine Zeitzoneneinstellung festlegen. 
 

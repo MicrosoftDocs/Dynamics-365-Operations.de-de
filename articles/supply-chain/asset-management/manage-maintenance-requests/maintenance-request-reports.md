@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5f1860907e3cc3c4830cc385771d5924c609ea6
-ms.sourcegitcommit: 871b76f8808a48d282f151144829323258ffc912
+ms.openlocfilehash: 0734416eccf149330b390cce897d2c254f6c698b
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1847527"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571621"
 ---
 # <a name="maintenance-request-reports"></a>Wartungsanfrageberichte
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management können Sie zwei Berichte generieren, die sich auf Wartungsanfragen beziehen. Ein Bericht zeigt Details an, während der andere Bericht eine Liste bereitstellt, die für die Planung und Nachverfolgung verwendet werden kann.
 
@@ -44,7 +44,7 @@ Der Bericht **Wartungsanfragedetails** zeigt verschiedene Informationen, die sic
 
 Die folgende Abbildung zeigt ein Beispiel für den Bericht **Wartungsanfragedetails**.
 
-![Abbildung 1](media/09-manage-maintenance-requests.png)
+![Wartungsanfrage-Detailbericht](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Erstellen eines Listenberichts zu Wartungsanfragen
 
@@ -57,4 +57,4 @@ Der Bericht **Wartungsanfragenliste** zeigt eine Liste aller Wartungsanfragen mi
 
 Die folgende Abbildung zeigt ein Beispiel für den Bericht **Wartungsanfragenliste** für alle aktiven Wartungsanfragen.
 
-![Abbildung 2](media/10-manage-maintenance-requests.png)
+![Wartungsanfrage-Listenbericht](media/10-manage-maintenance-requests.png)

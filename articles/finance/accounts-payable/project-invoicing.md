@@ -3,7 +3,7 @@ title: Projektrechnung
 description: Dieser Artikel enthält einen Überblick über die Projektrechnungsstellung für Zeit- und Materialprojekte und Festpreisprojekte. Er umfasst Informationen zu Rechnungsvorschlägen (vorläufige Rechnungen), Rechnungskontrolle, Akonto-Rechnungsstellung, Kreditorenrechnungsstellung und Gutschriften.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2017
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d91f6b1ccc3254e2c04d24c5f9bf2014c64e50
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
+ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177982"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "2658619"
 ---
 # <a name="project-invoicing"></a>Projektrechnung
 
@@ -55,6 +55,9 @@ Sie können Rechnungsvorschläge für folgende Buchungen erstellen:
 -   Beträge, die von Debitoren aus früheren Projektrechnungen einbehalten werden.
 -   Gutschriften
 -   Beträge, die Ihnen von einem Debitor bezahlt wurden, bevor ein Projekt gestartet wird.
+
+> [!NOTE]
+> Die Funktion **Sortieren nach Ressource in während der Erstellung eines Rechnungsvorschlags für Projekt aktivieren** ermöglicht dem Projektbuchhalter, die Projektbuchungen für die Berechnung nach Ressource zu sortieren, wenn er einen neuen Projektrechnungsvorschlag erstellt. Das Raster, das die verfügbaren Projektbuchungen anzeigt, hat ein gesondertes Feld für Ressourcen-ID und Ressource und ermöglicht dem Benutzer, nach Ressourcennamen zu filtern und zu sortieren. Diese Funktion ist standardmäßig deaktiviert und kann in **Arbeitsbereiche > Funktionsverwaltung** aktiviert werden. Bitten Sie Ihren Systemadministrator um Hilfe, um diese Funktion zu aktivieren.
 
 Sie können Gebührenbuchungen in einem Rechnungsvorschlag erstellen. Sie können den Verkaufspreis in Stunden-, Ausgaben-, Artikel- und Gebührenbuchungen auch ändern. Wenn Sie einen Rechnungsvorschlag buchen, werden die aktualisierten Preise und die Buchungen in den Projektberichten und der Buchungshistorie hinzugefügt. 
 

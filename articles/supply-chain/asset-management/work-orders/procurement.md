@@ -3,7 +3,7 @@ title: Beschaffung
 description: In diesem Thema wird die Beschaffung im Anlagenmanagement erläutert.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,85 +16,87 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1678dbe2432e4be46aebb40a12e73dfd695c3e77
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: ec14f645af5dfdb3e840624e4cec95c46cfbbc25
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875670"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626430"
 ---
 # <a name="procurement"></a>Beschaffung
 
-
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 Im Anlagenmanagement können Sie sich einen Überblick über Bestellanforderungen und Bestellungen zu Arbeitsaufträgen verschaffen. Es ist auch möglich, eine Bestellung oder eine Bestellanforderung aus einem Arbeitsauftrag heraus anzulegen.
 
-In der Liste **Arbeitsauftragsbestellung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellung**) sehen Sie eine Liste von Bestellanforderungen zu Arbeitsaufträgen.
+Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellanforderung**) wird eine Liste von Bestellanforderungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellanforderung** verwenden, um verschiedene Aktionen auszuführen:
 
-- Wählen Sie in der Liste **Arbeitsauftrag Bestellanforderung** einen Arbeitsauftrag aus und klicken Sie auf die Schaltfläche **Bestellanforderung**, um die zugehörige Bestellanforderung zu öffnen.  
-- Wählen Sie einen Arbeitsauftrag in der Liste **Arbeitsauftrag Bestellanforderung** aus und klicken Sie auf die Schaltfläche **Arbeitsauftrag**, um den zugehörigen Arbeitsauftrag zu öffnen.  
-- Wählen Sie einen Arbeitsauftrag in der Liste **Arbeitsauftrag Bestellanforderung** aus und klicken Sie auf die Schaltfläche **Position der Verwendung**, wenn Sie einen Überblick darüber erhalten möchten, wo der Artikel auf der ausgewählten Zeile im Asset Management in Bezug auf Anlagen, Standardwerte für Wartungsaufträge, Ersatzteile und Arbeitsaufträge verwendet wird. 
+- Um die verwandte Bestellanforderung zu öffnen, wählen Sie **Bestellanforderung** aus. 
+- Um den zugehörigen Arbeitsauftrag zu öffnen, wählen Sie **Arbeitsauftrag** aus.
+- Um einen Überblick darüber zu erhalten, wo der Artikel in der ausgewählten Position verwendet wird in Bezug auf Anlagen, Standardwerte für Wartungsauftragstypen, Ersatzteile und Arbeitsaufträge in Anlagenmanagement, wählen Sie die Option **Artikelverwendungsort** aus. Weitere Informationen über diesen Überblick finden Sie unter [Artikelverwendungsort](../controlling-and-reporting/item-where-used.md).
+
+In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbestellanforderung** angezeigt.
 
 ![Abbildung 1](media/08-work-orders.png)
 
 
-In der Liste **Arbeitsauftragsbestellung** (**Unternehmensanlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragbestellung**) sehen Sie eine Liste von Bestellungen zu Arbeitsaufträgen.
+Auf der Listenseite **Arbeitsauftragsbestellanforderung** (**Anlagenmanagement** > **Allgemein** > **Beschaffung** > **Arbeitsauftragsbestellung**) wird eine Liste von Bestellungen zu Arbeitsaufträgen angezeigt. Wenn Sie einen Arbeitsauftragseinzelvorgang auf dieser Seite auswählen, können Sie die Schaltflächen in der Gruppe **Anzeigen** auf der Registerkarte **Arbeitsauftragsbestellung** des Aktivitätsbereichs verwenden, um verschiedene Aktionen auszuführen:
 
-- Wählen Sie einen Arbeitsauftrag in der Liste **Arbeitsauftrag Bestellung** aus und klicken Sie auf die Schaltfläche **Bestellung**, um die zugehörige Bestellung zu öffnen.  
-- Wählen Sie einen Arbeitsauftrag in der Liste **Arbeitsauftrag bestellen** und klicken Sie auf die Schaltfläche **Arbeitsauftrag**, um den zugehörigen Arbeitsauftrag zu öffnen.  
-- Wählen Sie einen Arbeitsauftrag in der Bestellliste **Arbeitsauftrag** aus und klicken Sie auf die Schaltfläche **Verwendungsposition**, wenn Sie einen Überblick darüber erhalten möchten, wo der Artikel auf der ausgewählten Zeile im Anlagenmanagement in Bezug auf Anlagen, Wartungsauftragsartenvorgaben, Ersatzteile und Arbeitsaufträge verwendet wird. 
+- Um die zugehörige Bestellung zu öffnen, wählen Sie **Bestellung** aus. 
+- Um den zugehörigen Arbeitsauftrag zu öffnen, wählen Sie **Arbeitsauftrag** aus.
+- Um einen Überblick darüber zu erhalten, wo der Artikel in der ausgewählten Position verwendet wird in Bezug auf Anlagen, Standardwerte für Wartungsauftragstypen, Ersatzteile und Arbeitsaufträge in Anlagenmanagement, wählen Sie die Option **Artikelverwendungsort** aus. Weitere Informationen über diesen Überblick finden Sie unter [Artikelverwendungsort](../controlling-and-reporting/item-where-used.md).
+
+In der folgenden Abbildung wird ein Beispiel der Listenseite **Arbeitsauftragsbestellung** angezeigt.
 
 ![Abbildung 2](media/09-work-orders.png)
 
 
-In den oben gezeigten Listen ist in jeder Zeile rechts ein Symbol zur Lieferterminkontrolle angebracht. Wenn das Symbol ein Ausrufezeichen in einem roten Kreis anzeigt, bedeutet dies, dass sich die Lieferung auf die zugehörige Bestellanforderung oder Bestellung verzögern kann.
+Auf der Listenseite **Arbeitsauftragsbestellung** und der Listenseite **Arbeitsauftragsbestellanforderung** der Listenseite wird ein Symbol angezeigt, das zu dem Lieferdatumsteuerelement rechts neben jeder Position gehört. Wenn das Symbol ein Ausrufezeichen in einem roten Kreis anzeigt, bedeutet dies, dass sich die Lieferung der zugehörigen Bestellanforderung oder Bestellung verzögern kann.
 
-Auf einer Bestellanforderung finden Sie das Datum zur Berechnung der möglichen Verzögerung im Feld **Bestellanforderungen** Formular > **Bestellanforderungskopf** FastTab > **Bestelldatum**. Dieses Datum wird wie das Bestelldatum mit dem verfügbaren Datum auf dem Arbeitsauftrag oder Arbeitsauftrag verglichen.
+Bei einer Bestellung wird das Datum, das sich auf eine Bestellposition bezieht, verwendet, um eine mögliche Verzögerung zu berechnen. Um dieses Datum anzuzeigen, wählen Sie auf der Seite **Bestellung** die Bestellposition aus. Das Datum wird im Feld **Bestätigtes Lieferdatum** auf der Registerkarte **Einstellungen** des Inforegisters **Positionsdetails** angezeigt. Wenn das Feld **Bestätigtes Lieferdatum** nicht festgelegt wird, wird das Datum im Feld **Lieferdatum** auf dem Inforegister **Bestellkopf** für die Berechnung verwendet. Einer dieser Termine wird mit dem verfügbaren Datum auf dem Arbeitsauftrag oder dem Arbeitsauftragseinzelvorgang in der folgenden Reihenfolge verglichen:
 
-Auf einer Bestellung ist das Datum, das zur Berechnung einer möglichen Verzögerung herangezogen wird, das Datum, das sich auf die Bestellzeile bezieht, die im Feld **Bestellung**Formular > Bestellzeile auswählen > **Zeilendetails** FastTab > **Einrichtung** Registerkarte > **Bestätigtes Lieferdatum** angezeigt wird. Wenn dieses Feld nicht ausgefüllt ist, wird das Datum im Feld **Lieferdatum** auf dem **Kopf der Bestellung** FastTab verwendet. Eines dieser Termine wird mit dem verfügbaren Datum auf dem Arbeitsauftrag oder der Arbeitsaufgabe in der folgenden Reihenfolge verglichen:
+1. Iststartdatum auf dem Arbeitsauftrag  
 
-- Iststartdatum auf dem Arbeitsauftrag oder  
+2. Geplantes Startdatum für den zugehörigen Arbeitsauftragseinzelvorgang 
 
-- Geplantes Startdatum für den zugehörigen Arbeitsauftrag oder  
+3. Geplanter Starttermin auf dem Arbeitsauftrag 
 
-- Geplanter Starttermin auf dem Arbeitsauftrag oder  
+4. Erwartetes Startdatum auf dem Arbeitsauftrag 
 
-- Erwartetes Startdatum auf dem Arbeitsauftrag  
+Auf einer Bestellanforderung wird das Datum im Feld **Angefordertes Datum** auf dem Inforegister **Bestellanforderungskopf** der Seite **Bestellanforderungen** zur Berechnung einer möglichen Verzögerung verwendet. Das Datum in diesem Feld wird in derselben Reihenfolge mit dem verfügbaren Datum auf dem Arbeitsauftrag oder Arbeitsauftragseinzelvorgang verglichen, die auch für eine Bestellung verwendet wird.
 
 
-## <a name="create-purchase-order-from-a-work-order"></a>Bestellung aus einem Arbeitsauftrag anlegen
+## <a name="create-a-purchase-order-from-a-work-order"></a>Bestellung aus einem Arbeitsauftrag anlegen
 
-Unter **Alle Arbeitsaufträge** wählen Sie einen Arbeitsauftrag aus und legen eine zugehörige Bestellung oder eine Bestellanforderung an. Dies geschieht, um die Projektbeziehungen zwischen der Bestellung oder Bestellanforderung und dem Arbeitsauftrag sicherzustellen.
+Auf der Listenseite **Alle Arbeitsaufträge** können Sie einen Arbeitsauftragseinzelvorgang auswählen und dann eine zugehörige Bestellung oder eine zugehörige Bestellanforderung anlegen. Auf diese Weise können Sie sicherstellen, dass die Projektbeziehungen zwischen der Bestellung oder Bestellanforderung und dem Arbeitsauftrag bestehen.
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge**.
+1. Wählen Sie **Anlagenverwaltung** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** aus.
 
-2. Wählen Sie in der Liste **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** den Arbeitsauftrag aus, für den Sie eine Bestellung anlegen möchten, und klicken Sie auf **Bearbeiten**.
+2. Wählen Sie den Arbeitsauftrag aus, für den eine Bestellung erstellt werden soll, und wählen Sie dann **Bearbeiten** aus.
 
-3. Wählen Sie im Formular **Arbeitsauftrag** > **Arbeitsauftrag Wartungsaufträge** FastTab den Arbeitsauftrag aus, für den Sie die Bestellung anlegen möchten.
+3. Wählen Sie auf dem Inforegister **Wartungsaufträge für Arbeitsaufträge** den Arbeitsauftrag aus, für den Sie die Bestellung anlegen möchten.
 
-4. Klicken Sie auf **Einzelpostenaufgaben** > **Bestellauftrag aus Arbeitsauftrag**.
+4. Wählen Sie **Artikelaufgaben** > **Bestellung aus Arbeitsauftragseinzelvorgang**.
 
 5. Klicken Sie auf der Listenseite **Projektbestellungen** auf **Neu**.
 
 6. Legen Sie die Bestellung an.
 
 >[!NOTE]
->Das Anlegen einer Bestellanforderung ist nahezu identisch mit dem Anlegen einer Bestellung. Der einzige Unterschied besteht darin, dass Sie in der obigen Vorgehensweise in Schritt 2 in Schritt 2 auf **Positionsaufgaben** > **Bestellanforderung aus Arbeitsauftrag** klicken.
+>Um eine zugeordnete Bestellanforderung zu erstellen, führen Sie dieselben Schritte durch. Allerdings wählen Sie **Artikelaufgaben** > **Bestellanforderung aus Arbeitsauftragseinzelvorgang** in Schritt 4 aus.
+
 
 ## <a name="project-relation-between-work-order-and-purchase-order-or-purchase-requisition"></a>Projektbeziehung zwischen Arbeitsauftrag und Bestellung oder Bestellanforderung
 
-Eine Bestellzeile oder Bestellanforderungszeile ist über das Arbeitsauftragsprojekt und die zugehörige Projektvorgangsnummer mit einem Arbeitsauftrag verknüpft. Wenn Sie eine Bestellung oder Bestellanforderung aus einem Arbeitsauftrag heraus anlegen, ist die zugehörige Projektvorgangsnummer obligatorisch. Die Projektleistungsnummer wird automatisch in eine Bestellung oder Bestellanforderung eingefügt, wenn der zugehörige Arbeitsauftrag Arbeitsaufträge enthält, die alle den gleichen Wartungsjobtyp verwenden. Wenn die Arbeitsaufträge verschiedene Wartungsauftragsarten enthalten, muss die Nummer der Projektleistung manuell eingegeben werden.
+Eine Bestellzeile oder Bestellanforderungszeile ist über das Arbeitsauftragsprojekt und die zugehörige Projektvorgangsnummer mit einem Arbeitsauftrag verknüpft. Wenn Sie eine Bestellung oder Bestellanforderung aus einem Arbeitsauftrag heraus anlegen, ist die zugehörige Projektvorgangsnummer obligatorisch. Die Projektleistungsnummer wird automatisch in eine Bestellung oder Bestellanforderung eingegeben, wenn alle Arbeitsauftragseinzelvorgänge im zugehörigen Arbeitsauftrag den gleichen Wartungsauftragstyp verwenden. Sie müssen die Projektleistungsnummer manuell in eine Bestellung oder Bestellanforderung eingeben, wenn alle Arbeitsauftragseinzelvorgänge unterschiedliche Wartungsauftragstypen verwenden.
 
-Um die Vorgangsnummer zu einer Bestellzeile anzuzeigen oder einzufügen, öffnen Sie **Arbeitsauftrag Bestellung** > wählen Sie den Bestellsatz aus > klicken Sie auf die Bestellung in der Spalte **Bestellung** > **Zeilendetails** FastTab > **Projekt** Registerkarte > **Vorgangsnummer** Feld.
+Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu einer Bestellposition gehört, wählen Sie auf der Listenseite **Arbeitsauftragsbestellung** den Bestellungsdatensatz und dann in der Spalte **Bestellung** den Link für die Bestellung aus. Sie können das Feld **Aktivitätsnummer** auf der Registerkarte **Projekt** im Inforegister **Positionsdetails** finden.
 
+Die folgende Abbildung zeigt ein Beispiel der Seite **Bestellung** mit Fokus auf der **Aktivitätsnummer**.
 
 ![Abbildung 3](media/10-work-orders.png)
 
-
-Um die Leistungsnummer zu einer Bestellanforderungszeile eines Arbeitsauftrags anzuzeigen oder einzufügen, öffnen Sie **Bestellanforderung eines Arbeitsauftrags** > wählen Sie den Bestellanforderungssatz aus > klicken Sie auf die Bestellanforderung in der Spalte **Bestellanforderung** > **Zeilendetails** FastTab > **Projekt** Registerkarte > **Aktivitätsnummer** Feld.
+Um die Aktivitätsnummer einzugeben oder anzuzeigen, die zu der Bestellposition eines Arbeitsauftrags gehört, wählen Sie auf der Listenseite **Arbeitsauftragsbestellanforderung** den Bestellanforderungsdatensatz und dann in der Spalte **Bestellanforderung** den Link für die Bestellanforderung aus. Sie können das Feld **Aktivitätsnummer** auf der Registerkarte **Projekt** im Inforegister **Positionsdetails** finden.
 

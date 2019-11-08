@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f86f6475e5226443f5e4d43fb91acafe2afdbb9
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: aa2d50a976af7ee7dde5335f94336b995fdc2d11
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887387"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652056"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalender und Terminplanung für Wartungspersonal
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-Wenn Sie Arbeitsaufträge planen, erstellen Sie einen Zeitplan für Wartungspersonal, Werkzeuge und Anlagen. Um die Terminierung von Wartungspersonal durchzuführen, muss für jeden Wartungsmitarbeiter ein Kalender eingerichtet werden. Instandhalter sind mit einer Ressource verbunden, und Arbeitszeitkalender werden auf Ressourcen eingerichtet. Sie richten die Ressource und den Kalender für einen Mitarbeiter in **Anlagenmanagement** > **Setup** > **Workers** > **Workers** ein, was unter [Wartungsarbeiter und Arbeitsgruppen](../setup-for-objects/workers-and-worker-groups.md) beschrieben ist.
+Wenn Sie Arbeitsaufträge planen, erstellen Sie einen Zeitplan für Wartungspersonal, Werkzeuge und Anlagen. Um die Terminierung von Wartungspersonal durchzuführen, muss für jeden Wartungsarbeiter ein Kalender eingerichtet werden. Wartungsarbeiter sind mit einer Ressource verbunden, und Arbeitszeitkalender werden für Ressourcen eingerichtet. Sie richten die Ressource und den Kalender in **Anlagenmanagement** > **Einstellungen** > **Arbeitskräfte** > **Arbeitskräfte** ein, was unter [Wartungsarbeiter und Arbeitsgruppen](../setup-for-objects/workers-and-worker-groups.md) beschrieben ist.
 
 Der folgende Screenshot zeigt ein Beispiel für einen Instandhalter, der mit einer Ressource verwandt ist, die den Arbeitszeitkalender „Produktion“ verwendet.
 
