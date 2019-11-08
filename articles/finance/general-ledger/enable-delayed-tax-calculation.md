@@ -1,6 +1,6 @@
 ---
-title: Aktivieren der verzögerten Steuerberechnung in der Erfassung
-description: In diesem Thema wird erläutert, wie Sie die Funktion **Verzögerte Steuerberechnung in der Erfassung aktivieren** verwenden, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
+title: Aktivieren der verzögerten Steuerberechnung in Erfassungen
+description: In diesem Thema wird erläutert, wie Sie die Funktion Verzögerte Steuerberechnung aktivieren, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177871"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623520"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a><span data-ttu-id="db09a-103">Aktivieren der verzögerten Steuerberechnung in der Erfassung</span><span class="sxs-lookup"><span data-stu-id="db09a-103">Enable delayed tax calculation on journal</span></span>
+# <a name="enable-delayed-tax-calculation-on-journals"></a><span data-ttu-id="721ea-103">Aktivieren der verzögerten Steuerberechnung in Erfassungen</span><span class="sxs-lookup"><span data-stu-id="721ea-103">Enable delayed tax calculation on journals</span></span>
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-<span data-ttu-id="db09a-104">In diesem Thema wird erläutert, wie Sie die Funktion **Verzögerte Steuerberechnung in der Erfassung aktivieren** verwenden, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.</span><span class="sxs-lookup"><span data-stu-id="db09a-104">This topic explains how to use the **Enable delayed tax calculation on journal** feature to improve tax calculation performance when the volume of journal lines is huge.</span></span>
+<span data-ttu-id="721ea-104">In diesem Thema wird erläutert, wie Sie die Mehrwertsteuerberechnung in Erfassungen verzögern können.</span><span class="sxs-lookup"><span data-stu-id="721ea-104">This topic explains how you can delay sales tax calculation on journals.</span></span> <span data-ttu-id="721ea-105">Diese Funktion kann die Leistung von Steuerberechnungen verbessern, wenn viele Erfassungspositionen vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="721ea-105">This capability helps improve the performance of tax calculations when there are many journal lines.</span></span>
 
-<span data-ttu-id="db09a-105">Das aktuelle Mehrwertsteuerberechnungsverhalten in der Erfassung wird in Echtzeit ausgelöst, wenn der Benutzer steuerbezogene Felder wie Mehrwertsteuergruppe/Artikel-Mehrwertsteuergruppe aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="db09a-105">Current sales tax calculation behavior on journal is real-time triggered when user updates tax related fields, e.g. sales tax group/item sales tax group.</span></span> <span data-ttu-id="db09a-106">Jede Aktualisierung auf Erfassungspositionsebene berechnet den Steuerbetrag für alle Erfassungspositionen neu.</span><span class="sxs-lookup"><span data-stu-id="db09a-106">Any update at journal line level will re-calculate tax amount on all journal lines.</span></span> <span data-ttu-id="db09a-107">Dies ermöglicht ermöglicht dem Benutzer die Anzeige des in Echtzeit berechneten Steuerbetrags, kann jedoch auch zu Performanceproblemen führen, wenn die Anzahl der Erfassungspositionen groß ist.</span><span class="sxs-lookup"><span data-stu-id="db09a-107">It helps user to see real-time calculated tax amount but it could also bring performance issue if  the volume of journal lines is huge.</span></span>
+<span data-ttu-id="721ea-106">Standardmäßig werden Mehrwertsteuerbeträge in Erfassungspositionen berechnet, sobald steuerbezogene Felder aktualisiert werden.</span><span class="sxs-lookup"><span data-stu-id="721ea-106">By default, sales tax amounts on journal lines are calculated whenever tax-related fields are updated.</span></span> <span data-ttu-id="721ea-107">Diese Felder enthalten die Felder für Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen.</span><span class="sxs-lookup"><span data-stu-id="721ea-107">These fields include the fields for sales tax groups and item sales tax groups.</span></span> <span data-ttu-id="721ea-108">Jede Aktualisierung einer Erfassungsposition führt dazu, dass Steuerbeträge für alle Erfassungspositionen neu berechnet werden.</span><span class="sxs-lookup"><span data-stu-id="721ea-108">Any update to a journal line causes tax amounts to be recalculated for all journal lines.</span></span> <span data-ttu-id="721ea-109">Obwohl dieses Verhalten Benutzern hilft, Steuerbetragsberechnungen in Echtzeit anzuzeigen, kann es sich auch auf die Leistung auswirken, wenn die Anzahl der Erfassungspositionen sehr groß ist.</span><span class="sxs-lookup"><span data-stu-id="721ea-109">Although this behavior helps user see tax amounts calculated in real time, it can also affect performance if the number of journal lines is very large.</span></span>
 
-<span data-ttu-id="db09a-108">Diese Funktion ermöglicht das Verzögern der Steuerberechnung, um Performanceproblem zu beheben.</span><span class="sxs-lookup"><span data-stu-id="db09a-108">This feature provides an option to delay tax calculation to solve performance issue.</span></span> <span data-ttu-id="db09a-109">Wenn diese Funktion aktiviert ist, wird der Steuerbetrag nur dann berechnet, wenn Benutzer auf den Befehl „Mehrwertsteuer“ klickt oder die Erfassung bucht.</span><span class="sxs-lookup"><span data-stu-id="db09a-109">If this feature is turned on, tax amount will only be calculated when user clicks "Sales Tax" command or posts the journal.</span></span>
+<span data-ttu-id="721ea-110">Mit der Funktion Verzögerte Steuerberechnung können Sie die Steuerberechnung für Erfassungen verzögern und damit Leistungsprobleme beheben.</span><span class="sxs-lookup"><span data-stu-id="721ea-110">The Delayed tax calculation feature lets you delay tax calculation on journals and therefore helps fix performance issues.</span></span> <span data-ttu-id="721ea-111">Wenn diese Funktion aktiviert ist, werden Steuerbeträge nur dann berechnet, wenn ein Benutzer **Mehrwertsteuer** auswählt oder die Erfassung bucht.</span><span class="sxs-lookup"><span data-stu-id="721ea-111">When this feature is turned on, tax amounts are calculated only when a user selects **Sales Tax** or posts the journal.</span></span>
 
-<span data-ttu-id="db09a-110">Der Benutzer kann den Parameter auf drei Ebenen aktivieren/deaktivieren:</span><span class="sxs-lookup"><span data-stu-id="db09a-110">User can turn on/off the parameter at three levels:</span></span>
-- <span data-ttu-id="db09a-111">Nach juristischer Person</span><span class="sxs-lookup"><span data-stu-id="db09a-111">By legal entity</span></span>
-- <span data-ttu-id="db09a-112">Nach Erfassungsname</span><span class="sxs-lookup"><span data-stu-id="db09a-112">By journal name</span></span>
-- <span data-ttu-id="db09a-113">Nach Erfassungskopf</span><span class="sxs-lookup"><span data-stu-id="db09a-113">By journal header</span></span>
+<span data-ttu-id="721ea-112">Sie können die Berechnung der Mehrwertsteuer auf drei Ebenen verzögern:</span><span class="sxs-lookup"><span data-stu-id="721ea-112">You can delay the calculation of sales taxes at three levels:</span></span>
 
-<span data-ttu-id="db09a-114">Das System betrachtet den Parameterwert im Erfassungskopf als endgültig.</span><span class="sxs-lookup"><span data-stu-id="db09a-114">System will take the parameter value on journal header as final.</span></span> <span data-ttu-id="db09a-115">Der Parameterwert im Erfassungskopf wird standardmäßig aus dem Erfassungsnamen entnommen.</span><span class="sxs-lookup"><span data-stu-id="db09a-115">Parameter value on journal header will be defaulted from journal name.</span></span> <span data-ttu-id="db09a-116">Der Parameterwert im Erfassungsnamen wird standardmäßig aus dem Hauptbuchparameter entnommen, wenn der Erfassungsname erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="db09a-116">Parameter value on journal name will be defaulted from general ledger parameter when the journal name is created.</span></span>
+- <span data-ttu-id="721ea-113">Juristische Person</span><span class="sxs-lookup"><span data-stu-id="721ea-113">Legal entity</span></span>
+- <span data-ttu-id="721ea-114">Journal</span><span class="sxs-lookup"><span data-stu-id="721ea-114">Journal name</span></span>
+- <span data-ttu-id="721ea-115">Erfassungskopf</span><span class="sxs-lookup"><span data-stu-id="721ea-115">Journal header</span></span>
 
-<span data-ttu-id="db09a-117">Die Felder „Tatsächlicher Mehrwertsteuerbetrag“ und „Berechneter Mehrwertsteuerbetrag“ in der Erfassung werden ausgeblendet, wenn dieser Parameter aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="db09a-117">"Actual sales tax amount" and "Calculated sales tax amount" fields on journal will be hided if this parameter is turned on.</span></span> <span data-ttu-id="db09a-118">Auf diese Weise soll eine Verwirrung des Benutzers verhindert werden, da der Wert dieser beiden Felder immer 0 ist, bevor der Benutzer die Steuerberechnung auslöst.</span><span class="sxs-lookup"><span data-stu-id="db09a-118">The purpose is not to confuse user because the value of these two fields will always show 0 before user trigger the tax calculation.</span></span>
+<span data-ttu-id="721ea-116">Das System gibt der Einrichtung für den Erfassungskopf Vorrang.</span><span class="sxs-lookup"><span data-stu-id="721ea-116">The system gives priority to the setting for the journal header.</span></span> <span data-ttu-id="721ea-117">Standardmäßig wird diese Einstellung aus dem Journal übernommen.</span><span class="sxs-lookup"><span data-stu-id="721ea-117">By default, this setting is taken from the journal name.</span></span> <span data-ttu-id="721ea-118">Standardmäßig wird die Einstellung für das Journal aus der Einstellung auf der Seite **Hauptbuchparameter** übernommen, wenn das Journal erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="721ea-118">By default, the setting for the journal name is taken from the setting on the **General ledger parameters** page when the journal name is created.</span></span> <span data-ttu-id="721ea-119">In den folgenden Abschnitten wird erklärt, wie eine verzögerte Steuerberechnung für juristische Personen, Journale und Erfassungsköpfe aktiviert wird.</span><span class="sxs-lookup"><span data-stu-id="721ea-119">The following sections explain how to turn on delayed tax calculation for legal entities, journal names, and journal headers.</span></span>
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a><span data-ttu-id="db09a-119">Aktivieren der verzögerten Steuerberechnung nach juristischer Person</span><span class="sxs-lookup"><span data-stu-id="db09a-119">Enable delayed tax calculation by legal entity</span></span>
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a><span data-ttu-id="721ea-120">Aktivieren der verzögerten Steuerberechnung auf der Ebene der juristische Person</span><span class="sxs-lookup"><span data-stu-id="721ea-120">Turn on delayed tax calculation at the legal entity level</span></span>
 
-1. <span data-ttu-id="db09a-120">Wechseln Sie zu **Hauptbuch > Hauptbucheinstellungen > Hauptbuchparameter**.</span><span class="sxs-lookup"><span data-stu-id="db09a-120">Go to **General ledger > Ledger setup > General ledger parameters**</span></span>
-2. <span data-ttu-id="db09a-121">Klicken Sie auf die Registerkarte **Mehrwertsteuer**.</span><span class="sxs-lookup"><span data-stu-id="db09a-121">Click **Sales tax** tab</span></span>
-3. <span data-ttu-id="db09a-122">Suchen Sie unter **Allgemeines** den Parameter **Verzögerte Steuerberechnung**, und aktivieren/deaktivieren Sie ihn.</span><span class="sxs-lookup"><span data-stu-id="db09a-122">Under **General** fast tab, find parameter **Delayed tax calculation**, turn on/off it</span></span>
+1. <span data-ttu-id="721ea-121">Wechseln Sie zu **Hauptbuch \> Sachkonto-Einstellungen \> Hauptbuchparameter**.</span><span class="sxs-lookup"><span data-stu-id="721ea-121">Go to **General ledger \> Ledger setup \> General ledger parameters**.</span></span>
+2. <span data-ttu-id="721ea-122">Legen Sie auf der Registerkarte **Mehrwertsteuer** im Inforegister **Allgemein** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="721ea-122">On the **Sales tax** tab, on the **General** FastTab, set the **Delayed tax calculation** option to **Yes**.</span></span>
 
-![](media/delayed-tax-calculation-gl.png)
+![Hauptbuchparameter – Bild](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a><span data-ttu-id="721ea-124">Aktivieren der verzögerten Steuerberechnung auf der Ebene des Journals</span><span class="sxs-lookup"><span data-stu-id="721ea-124">Turn on delayed tax calculation at the journal name level</span></span>
 
+1. <span data-ttu-id="721ea-125">Wechseln Sie zu **Hauptbuch \> Erfassungseinstellungen \> Journale**.</span><span class="sxs-lookup"><span data-stu-id="721ea-125">Go to **General ledger \> Journal setup \> Journal names**.</span></span>
+2. <span data-ttu-id="721ea-126">Legen Sie im Inforegister **Allgemein** im Abschnitt **Mehrwertsteuer** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="721ea-126">On the **General** FastTab, in the **Sales tax** section, set the **Delayed tax calculation** option to **Yes**.</span></span>
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a><span data-ttu-id="db09a-123">Aktivieren der verzögerten Steuerberechnung nach Erfassungsname</span><span class="sxs-lookup"><span data-stu-id="db09a-123">Enable delayed tax calculation by journal name</span></span>
+![Journale – Bild](media/delayed-tax-calculation-journal-name.png)
 
-1. <span data-ttu-id="db09a-124">Wechseln Sie zu **Hauptbuch > Erfassung einrichten >Erfassungsnamen**.</span><span class="sxs-lookup"><span data-stu-id="db09a-124">Go to **General ledger > Journal setup > Journal names**</span></span>
-2. <span data-ttu-id="db09a-125">Suchen Sie unter **Allgemeines** den Parameter **Verzögerte Steuerberechnung**, und aktivieren/deaktivieren Sie ihn.</span><span class="sxs-lookup"><span data-stu-id="db09a-125">Under **General** fast tab, find parameter **Delayed tax calculation**, turn on/off it</span></span>
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a><span data-ttu-id="721ea-128">Aktivieren der verzögerten Steuerberechnung auf der Ebene des Erfassungskopfes</span><span class="sxs-lookup"><span data-stu-id="721ea-128">Turn on delayed tax calculation at the journal header level</span></span>
 
-![](media/delayed-tax-calculation-journal-name.png)
+1. <span data-ttu-id="721ea-129">Wechseln Sie zu **Hauptbuch \> Journaleinträge \> Allgemeine Erfassungen**.</span><span class="sxs-lookup"><span data-stu-id="721ea-129">Go to **General ledger \> Journal entries \> General journals**.</span></span>
+2. <span data-ttu-id="721ea-130">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="721ea-130">Select **New**.</span></span>
+3. <span data-ttu-id="721ea-131">Wählen Sie ein Journal aus.</span><span class="sxs-lookup"><span data-stu-id="721ea-131">Select a journal name.</span></span>
+4. <span data-ttu-id="721ea-132">Legen Sie auf der Registerkarte **Einstellungen** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="721ea-132">On the **Setup** tab, set the **Delayed tax calculation** option to **Yes**.</span></span>
 
-## <a name="enable-delayed-tax-calculation-by-journal"></a><span data-ttu-id="db09a-126">Aktivieren der verzögerten Steuerberechnung nach Erfassung</span><span class="sxs-lookup"><span data-stu-id="db09a-126">Enable delayed tax calculation by journal</span></span>
-
-1. <span data-ttu-id="db09a-127">Wechseln Sie zu **Hauptbuch > Erfassungseinträge > Allgemeine Erfassungen**.</span><span class="sxs-lookup"><span data-stu-id="db09a-127">Go to **General ledger > Journal entries > General journals**</span></span>
-2. <span data-ttu-id="db09a-128">Klicken Sie auf **Neu**.</span><span class="sxs-lookup"><span data-stu-id="db09a-128">Click **New**</span></span>
-3. <span data-ttu-id="db09a-129">Auswählen eines Erfassungsnamens</span><span class="sxs-lookup"><span data-stu-id="db09a-129">Select a journal name</span></span>
-4. <span data-ttu-id="db09a-130">Klicken Sie auf **Einstellungen**.</span><span class="sxs-lookup"><span data-stu-id="db09a-130">Click **Setup**</span></span>
-5. <span data-ttu-id="db09a-131">Suchen Sie den Paramater **Verzögerte Steuerberechnung**, und aktivieren/deaktivieren Sie ihn.</span><span class="sxs-lookup"><span data-stu-id="db09a-131">Find parameter **Delayed tax calculation**, turn on/off it</span></span>
-
-![](media/delayed-tax-calculation-journal-header.png)
+![Allgemeine Erfassung – Seitenbild](media/delayed-tax-calculation-journal-header.png)
