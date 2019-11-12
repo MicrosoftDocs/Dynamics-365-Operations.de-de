@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 29f9975d8270b3f79d0aac0c62609b4a9c71ae89
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 322e3ac6f7c37fffdd4d59ed86bccec10559f4b9
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874623"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569776"
 ---
 # <a name="work-order-project-setup"></a>Arbeitsauftrags-Projekteinstellungen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Im Modul **Anlagenmanagement** ist für jeden Arbeitsauftrag eine Projektbeziehung erforderlich. Mit dem Projekt, das mit einem Arbeitsauftrag verbunden ist, können Sie die Kosten für verschiedene Projekte im Zusammenhang mit dem Asset Management verfolgen, wie z.B. interne Instandhaltungsprojekte, Servicemanagementprojekte und Investitionsprojekte. 
 
@@ -72,7 +72,7 @@ Das Setup ermöglicht eine vollständige Integration mit dem Modul **Projektmana
 
     Standardmäßig ist das Startdatum das Datum, an dem Sie das Arbeitsauftragsprojekt zur Seite hinzufügen. Es wird durch das Feld **Gültig von** gesteuert, das standardmäßig ausgeblendet ist. Um das Feld **Gültig von** anzuzeigen, wählen Sie **Ansicht** \> **Alle**. Sie können dann das Feld **Gültig ab** zusammen mit dem Feld **Enddatum** verwenden, um eine begrenzte Gültigkeitsdauer für das Arbeitsauftragsprojekt festzulegen.
 
-    ![Abbildung 1](media/17-setup-for-work-orders.png)
+    ![Seite „Arbeitsauftrags-Projekteinstellungen“](media/17-setup-for-work-orders.png)
 
 6. Wählen Sie auf der Registerkarte **Projektgruppe** **Hinzufügen**.
 7. Wählen Sie im Feld **Arbeitsauftragstyp** einen Arbeitsauftragstyp aus.
@@ -80,7 +80,7 @@ Das Setup ermöglicht eine vollständige Integration mit dem Modul **Projektmana
 9. Wählen Sie im Feld **Projektgruppe** die Projektgruppe aus, die mit der Arbeitsauftragsart verknüpft sein soll. So könnte beispielsweise eine Arbeitsauftragsart mit dem Namen **Preventive Instandhaltung** einer Projektgruppe mit dem Namen **Prev Inst** oder **Intern** zugeordnet sein. Alternativ kann eine **Investition** Arbeitsauftragsart, die für Arbeitsaufträge verwendet wird, die sich auf Investitionen und Anlagen beziehen, einer Projektgruppe zugeordnet werden, die den Namen **Invest** oder **Investition** trägt.
 10. Wählen Sie **Speichern**.
 
-![Abbildung 2](media/18-setup-for-work-orders.png)
+![Seite „Arbeitsauftrags-Projekteinstellungen“, Arbeitsauftrag hinzufügen](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Jedes Mal, wenn eine Arbeitsauftragszeile erstellt wird, sucht das Asset Management nach einer Projektgruppe, die mit dem Arbeitsauftragsprojekt verknüpft sein soll. Die Suche basiert auf dem Setup, das in diesem Thema beschrieben wird. Jede Projektgruppe hat einen zugehörigen Projekttyp. Projektgruppen mit der Projektart **Zeit und Material** oder **Festpreis** sind nur für Anlagen gültig, die sich auf ein Kundenkonto beziehen.

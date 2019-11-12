@@ -1,6 +1,6 @@
 ---
-title: Einrichten und Konfigurieren der Lagerort-App - Übersicht
-description: In diesem Thema wird erläutert, wie Dynamics 365 Supply Chain Management – Lagerungs-App eingerichtet und konfiguriert werden.
+title: 'Einrichten und Konfigurieren der Warehousing-App: Übersicht'
+description: In diesem Thema wird erläutert, wie die Dynamics 365 for Finance and Operations Warehousing-App eingerichtet und konfiguriert wird.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 07/25/2019
@@ -19,14 +19,14 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b8eb8dee88d8664391d2dcf485dff9dee4722cac
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f629fffc5c424c244a25bb8faef0435814398ee1
+ms.sourcegitcommit: 4aac45c84b87f463b22b318f5f6f729f8d737090
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251499"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "2548967"
 ---
-# <a name="install-and-configure-the-warehousing-app-overview"></a>Einrichten und Konfigurieren der Lagerort-App - Übersicht
+# <a name="install-and-configure-the-warehousing-app-overview"></a>Einrichten und Konfigurieren der Warehousing-App: Übersicht
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "2251499"
 > In diesem Thema wird beschrieben, wie Lagerhaltung für Cloudbereitstellungen konfiguriert wird. Wenn Sie erfahren möchten, wie die Lagerhaltung für lokale Bereitstellungen konfiguriert wird, finden Sie Informationen unter [Lagerhaltung für lokale Bereitstellungen](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 
-In diesem Thema wird erläutert, wie Dynamics 365 Supply Chain Management – Lagerungs-App eingerichtet und konfiguriert werden.
+In diesem Thema wird erläutert, wie die Dynamics 365 for Finance and Operations Warehousing-App eingerichtet und konfiguriert wird.
 
 Die Lagerungs-App ist auf Google Play Store und Windows Store verfügbar. Für die aktuelle Version von Dynamics 365 Supply Chain Management wird die App als eigenständige Komponente bereitgestellt, die auf den Geräten für Lagerortarbeiten selbst bereitgestellt wird. Um die App zu verwenden, müssen Sie sie auf jedes Gerät herunterladen und konfigurieren und mit Ihrer Supply Chain Management-Umgebung verbinden. In diesem Thema wird beschrieben, wie App auf Ihren Geräten eingerichtet wird. Es wird auch gezeigt, wie der App konfiguriert wird, um sie mit Ihrer Supply Chain Management Umgebung zu verbinden.
 

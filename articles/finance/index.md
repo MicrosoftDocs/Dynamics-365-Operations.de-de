@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b48313e93573e3214de0ee02c4894b000dc18f67
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34af4cc05b6966b5f118c1dd2adbda288a0f3da1
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175938"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570124"
 ---
 # <a name="financial-management-home-page"></a>Finanzverwaltung – Startseite
 
@@ -69,4 +69,8 @@ Sehen Sie in den Videos nach, die jetzt im [YouTube-Kanal zu Microsoft Dynamics 
 ### <a name="countryregion-functionality"></a>Land/Region-Funktion
 
 Bestimmungen zu Land/Region wirken sich auf die Steuereinstellungen und andere Bereiche der Finanzverwaltung aus. Informationen zur länder-/regionenspezifischen Funktionalität finden Sie im Abschnitt [Lokalisierung und rechtliche Funktionen](../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json) unseres Hilfeinhalts.
+
+### <a name="additional-content"></a>Zusätzliche Inhalte
+
+Die Supply-Chain-Management-Funktionalität deckt Teile des Procure-to-Pay-Prozesses ab, der das Anfordern, Bestellen, Empfangen, Fakturieren und Bezahlen der Waren und Dienstleistungen umfasst, die Ihre Organisation kauft. Auf der [Supply Chain Management-Startseite](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) finden Sie Informationen über die Möglichkeiten zur Verwaltung von Einkäufen, der Lagerhaltung und der Fertigung. 
 

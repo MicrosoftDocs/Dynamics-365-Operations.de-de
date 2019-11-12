@@ -1,6 +1,6 @@
 ---
-title: Aktivieren der verzögerten Steuerberechnung in der Erfassung
-description: In diesem Thema wird erläutert, wie Sie die Funktion **Verzögerte Steuerberechnung in der Erfassung aktivieren** verwenden, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
+title: Aktivieren der verzögerten Steuerberechnung in Erfassungen
+description: In diesem Thema wird erläutert, wie Sie die Funktion Verzögerte Steuerberechnung aktivieren, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
 author: ericwang
 manager: Ann Beebe
 ms.date: 09/18/2019
@@ -18,55 +18,50 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 5a8ae30a007d3e2b8b7a9bc9eb7786f6e58246d0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e336be5468106007e1f5adf26bf272c88b8b413b
+ms.sourcegitcommit: bc9b65b73bf6443581c2869a9ecfd0675f0be566
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177871"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2623520"
 ---
-# <a name="enable-delayed-tax-calculation-on-journal"></a>Aktivieren der verzögerten Steuerberechnung in der Erfassung
+# <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivieren der verzögerten Steuerberechnung in Erfassungen
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Funktion **Verzögerte Steuerberechnung in der Erfassung aktivieren** verwenden, um die Leistung der Steuerberechnung zu verbessern, wenn die Anzahl der Erfassungspositionen groß ist.
+In diesem Thema wird erläutert, wie Sie die Mehrwertsteuerberechnung in Erfassungen verzögern können. Diese Funktion kann die Leistung von Steuerberechnungen verbessern, wenn viele Erfassungspositionen vorhanden sind.
 
-Das aktuelle Mehrwertsteuerberechnungsverhalten in der Erfassung wird in Echtzeit ausgelöst, wenn der Benutzer steuerbezogene Felder wie Mehrwertsteuergruppe/Artikel-Mehrwertsteuergruppe aktualisiert. Jede Aktualisierung auf Erfassungspositionsebene berechnet den Steuerbetrag für alle Erfassungspositionen neu. Dies ermöglicht ermöglicht dem Benutzer die Anzeige des in Echtzeit berechneten Steuerbetrags, kann jedoch auch zu Performanceproblemen führen, wenn die Anzahl der Erfassungspositionen groß ist.
+Standardmäßig werden Mehrwertsteuerbeträge in Erfassungspositionen berechnet, sobald steuerbezogene Felder aktualisiert werden. Diese Felder enthalten die Felder für Mehrwertsteuergruppen und Artikel-Mehrwertsteuergruppen. Jede Aktualisierung einer Erfassungsposition führt dazu, dass Steuerbeträge für alle Erfassungspositionen neu berechnet werden. Obwohl dieses Verhalten Benutzern hilft, Steuerbetragsberechnungen in Echtzeit anzuzeigen, kann es sich auch auf die Leistung auswirken, wenn die Anzahl der Erfassungspositionen sehr groß ist.
 
-Diese Funktion ermöglicht das Verzögern der Steuerberechnung, um Performanceproblem zu beheben. Wenn diese Funktion aktiviert ist, wird der Steuerbetrag nur dann berechnet, wenn Benutzer auf den Befehl „Mehrwertsteuer“ klickt oder die Erfassung bucht.
+Mit der Funktion Verzögerte Steuerberechnung können Sie die Steuerberechnung für Erfassungen verzögern und damit Leistungsprobleme beheben. Wenn diese Funktion aktiviert ist, werden Steuerbeträge nur dann berechnet, wenn ein Benutzer **Mehrwertsteuer** auswählt oder die Erfassung bucht.
 
-Der Benutzer kann den Parameter auf drei Ebenen aktivieren/deaktivieren:
-- Nach juristischer Person
-- Nach Erfassungsname
-- Nach Erfassungskopf
+Sie können die Berechnung der Mehrwertsteuer auf drei Ebenen verzögern:
 
-Das System betrachtet den Parameterwert im Erfassungskopf als endgültig. Der Parameterwert im Erfassungskopf wird standardmäßig aus dem Erfassungsnamen entnommen. Der Parameterwert im Erfassungsnamen wird standardmäßig aus dem Hauptbuchparameter entnommen, wenn der Erfassungsname erstellt wird.
+- Juristische Person
+- Journal
+- Erfassungskopf
 
-Die Felder „Tatsächlicher Mehrwertsteuerbetrag“ und „Berechneter Mehrwertsteuerbetrag“ in der Erfassung werden ausgeblendet, wenn dieser Parameter aktiviert ist. Auf diese Weise soll eine Verwirrung des Benutzers verhindert werden, da der Wert dieser beiden Felder immer 0 ist, bevor der Benutzer die Steuerberechnung auslöst.
+Das System gibt der Einrichtung für den Erfassungskopf Vorrang. Standardmäßig wird diese Einstellung aus dem Journal übernommen. Standardmäßig wird die Einstellung für das Journal aus der Einstellung auf der Seite **Hauptbuchparameter** übernommen, wenn das Journal erstellt wird. In den folgenden Abschnitten wird erklärt, wie eine verzögerte Steuerberechnung für juristische Personen, Journale und Erfassungsköpfe aktiviert wird.
 
-## <a name="enable-delayed-tax-calculation-by-legal-entity"></a>Aktivieren der verzögerten Steuerberechnung nach juristischer Person
+## <a name="turn-on-delayed-tax-calculation-at-the-legal-entity-level"></a>Aktivieren der verzögerten Steuerberechnung auf der Ebene der juristische Person
 
-1. Wechseln Sie zu **Hauptbuch > Hauptbucheinstellungen > Hauptbuchparameter**.
-2. Klicken Sie auf die Registerkarte **Mehrwertsteuer**.
-3. Suchen Sie unter **Allgemeines** den Parameter **Verzögerte Steuerberechnung**, und aktivieren/deaktivieren Sie ihn.
+1. Wechseln Sie zu **Hauptbuch \> Sachkonto-Einstellungen \> Hauptbuchparameter**.
+2. Legen Sie auf der Registerkarte **Mehrwertsteuer** im Inforegister **Allgemein** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.
 
-![](media/delayed-tax-calculation-gl.png)
+![Hauptbuchparameter – Bild](media/delayed-tax-calculation-gl.png)
 
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Aktivieren der verzögerten Steuerberechnung auf der Ebene des Journals
 
+1. Wechseln Sie zu **Hauptbuch \> Erfassungseinstellungen \> Journale**.
+2. Legen Sie im Inforegister **Allgemein** im Abschnitt **Mehrwertsteuer** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.
 
-## <a name="enable-delayed-tax-calculation-by-journal-name"></a>Aktivieren der verzögerten Steuerberechnung nach Erfassungsname
+![Journale – Bild](media/delayed-tax-calculation-journal-name.png)
 
-1. Wechseln Sie zu **Hauptbuch > Erfassung einrichten >Erfassungsnamen**.
-2. Suchen Sie unter **Allgemeines** den Parameter **Verzögerte Steuerberechnung**, und aktivieren/deaktivieren Sie ihn.
+## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Aktivieren der verzögerten Steuerberechnung auf der Ebene des Erfassungskopfes
 
-![](media/delayed-tax-calculation-journal-name.png)
+1. Wechseln Sie zu **Hauptbuch \> Journaleinträge \> Allgemeine Erfassungen**.
+2. Wählen Sie **Neu** aus.
+3. Wählen Sie ein Journal aus.
+4. Legen Sie auf der Registerkarte **Einstellungen** die Option **Verzögerte Steuerberechnung** auf **Ja** fest.
 
-## <a name="enable-delayed-tax-calculation-by-journal"></a>Aktivieren der verzögerten Steuerberechnung nach Erfassung
-
-1. Wechseln Sie zu **Hauptbuch > Erfassungseinträge > Allgemeine Erfassungen**.
-2. Klicken Sie auf **Neu**.
-3. Auswählen eines Erfassungsnamens
-4. Klicken Sie auf **Einstellungen**.
-5. Suchen Sie den Paramater **Verzögerte Steuerberechnung**, und aktivieren/deaktivieren Sie ihn.
-
-![](media/delayed-tax-calculation-journal-header.png)
+![Allgemeine Erfassung – Seitenbild](media/delayed-tax-calculation-journal-header.png)

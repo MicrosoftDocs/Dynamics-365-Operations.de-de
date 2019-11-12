@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5294325f67f0484b39194b5bd9784a2e612001a4
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: 05d1a38ab8de406a1615c474ffe39d231335fb67
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783284"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570052"
 ---
 # <a name="condition-assessment"></a>Bedingungsbewertung
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In diesem Thema wird erläutert, wie Sie eine Bedingungsbewertungsvorlage und -erfassung für eine Anlage in der Anlagenverwaltung erstellen. Eine Bedingungsbewertung wird in regelmäßigen Intervallen durchgeführt. Das vorrangige Ziel einer solchen Bewertung ist, Zustandsdaten für Anlagen zu erstellen und zu verwalten. Gesehen aus einer Perspektive der vorbeugenden Wartung ist es wichtig, zentrale Informationen zu überwachen, wie z. B. den aktuellen Zustand und die verbleibende Nutzungsdauer. Wenn Sie außerdem eine Bedingungsbewertung in regelmäßigen Intervallen ausführen, sind Sie in der Lage, die Bedingungen des Maschinenparks in Ihrer Fabrik zu überwachen und zu vergleichen.
 

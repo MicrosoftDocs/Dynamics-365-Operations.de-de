@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8c22137ad29bf947bc7a9e4c9a4d1332e03b1298
-ms.sourcegitcommit: e2fb0846fcc6298050a0ec82c302e5eb5254e0b5
+ms.openlocfilehash: 1e3fc0e8cb5c9a6cc7729dfbddd5d918a1d6bdb5
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2019
-ms.locfileid: "1606963"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653370"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Verbesserungen der Auszugsbuchungsfunktionalität
 
@@ -37,7 +37,7 @@ Standardmäßig ist das Programm beim Deployment von Finance and Operations 7.3.
 
 Wenn der neue Konfigurationsschlüssel **Einzelhandelsaufstellungen** eingeschaltet ist, steht ein neuer Menüpunkt mit dem Namen **Einzelhandelsaufstellungen** zur Verfügung. Mit diesem Menüeintrag können Sie Auszüge manuell erstellen, berechnen und buchen. Jede Auszug, der bei der Verwendung des Stapelbuchungsprozesses einen Fehler verursacht, ist ebenfalls über diesen Menüeintrag verfügbar. (Wenn der neue Konfigurationsschlüssel **Einzelhandelsaufstellungen (Vorversion)** eingeschaltet ist, steht ein neuer Menüpunkt mit dem Namen **Offene Aufstellungen** zur Verfügung.)
 
-Finance and Operations umfasst die folgenden Validierungen, die sich auf diese Konfigurationsschlüssel beziehen:
+Retail umfasst die folgenden Validierungen, die sich auf diese Konfigurationsschlüssel beziehen:
 
 - Beide Konfigurationsschlüssel können nicht gleichzeitig eingeschaltet werden.
 - Für alle Operationen, die während des Lebenszyklus einer Anweisung durchgeführt werden (Anlegen, Berechnen, Löschen, Buchen usw.), müssen dieselben Konfigurationsschlüssel verwendet werden. Beispielsweise können Sie keine Anweisung erstellen und berechnen, während die **Einzelhandelsaufstellungen (Vorversion)** Konfigurationsschlüssel eingeschaltet ist, und dann versuchen, die gleiche Anweisung zu posten, während die **Einzelhandelsauszug** Konfigurationsschlüssel eingeschaltet ist.

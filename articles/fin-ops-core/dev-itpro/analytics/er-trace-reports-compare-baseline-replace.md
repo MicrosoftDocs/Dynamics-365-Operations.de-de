@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a260be0f8659106907b26bf69bee3b33b09d0c24
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1e144e2623f3ddfafaee749bb334de40ef5aec1b
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181334"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578217"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
 
@@ -71,10 +71,7 @@ Der Grundwert wurde für das ausgewählte Format **Format zum erlernen der ER-Gr
 5. Geben Sie im Feld **Eingabe-Id** den Wert **1** ein.
 6. Legen Sie die Option **Erstellen von Grundwertdateien** auf **Ja** fest.
 7. Wählen Sie **OK**.
-
-    ![Dialogfeld für elektronische Berichtsparameter](media/GER-BaselineSample-FormatRunToMakeBaselineFile3.PNG "Screenshot des Dialogfelds für elektronische Berichtsparameter")
-
-8. Wählen Sie **Grundwerte** aus.
+8. Wählen Sie **Ausgangswerte** aus.
 
     ![Seite für die Formatgrundlage für elektronische Berichterstellung](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Screenshot der Formatgrundlagen für elektronische Berichterstellung")
 
@@ -140,9 +137,6 @@ Um die Schritte dieses Beispiels abzuschließen, müssen Sie zunächst die Schri
 
 1. Wählen Sie auf der Seite **Konfigurationen** auf dem Inforegister **Ersatz** die Option **Komponenten auswählen** aus.
 2. In der Formatkomponentenstruktur erweitern Sie den Knoten **Ausgabe**, erweitern Sie **Ausgabe \\Dokument** und aktivieren Sie anschließend das Kontrollkästchen für **Ausgabe \\Dokument\\ProcessingDateTime**.
-
-    ![Dialogfeld „Komponenten auswählen“](media/GER-BaselineSample-SelectComponentForBindingReplacement.PNG "Screenshot des Dialogfelds „Komponenten auswählen“")
-
 3. Wählen Sie **OK**.
 
 ![Seite für die Formatgrundlage für elektronische Berichterstellung](media/GER-BaselineSample-AddBaseline4.PNG "Screenshot der Formatgrundlagen für elektronische Berichterstellung")
@@ -162,19 +156,14 @@ Durch das Festlegen bestimmter ER-Parameter können Sie Benachrichtigungen unter
 1. Wählen Sie auf der Seite **Konfigurationen** im Aktivitätsbereich auf der Registerkarte **Konfigurationen** die Option **Benutzerparameter** aus.
 2. Legen Sie die Option **Ausgangswertwarnungen unterdrücken** auf **Ja** fest, und wählen Sie dann **OK** aus.
 
-![Benutzerparameterdialogfeld](media/GER-BaselineSample-ERUserParameters1.png "Screenshot des Benutzerparameterdialogfelds")
-
 ### <a name="review-the-generated-baseline-file"></a>Überprüfen Sie die erstellte Ausgangswertdatei
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Wählen Sie **Ausgangswerte** aus.
 3. Wählen Sie **Anhänge** aus.
-
-    ![Anhangseite](media/GER-BaselineSample-AttachedBaselineFile.PNG "Screenshot der Anhangseite")
-
     > [!NOTE]
     > Die generierte Datei beinhaltet das Verarbeitungsdatum und den Zeittext (**"#"**) von der Bindung, die in der hinzugefügten Ausgangswertregel konfiguriert wurde, nicht aus der Bindung des Formats.
-
+    
 4. Schließen Sie die Seite **Anhänge**.
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Führen Sie das entworfene ER-Format aus und prüfen Sie das Protokoll, um die Ergebnisse zu analysieren

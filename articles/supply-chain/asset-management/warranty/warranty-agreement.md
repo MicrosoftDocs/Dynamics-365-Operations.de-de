@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 71905d5b362c80d48b78210b59cacfb1e7899757
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: da60d098aff96780ca1e40832db34e3c9cc835e7
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874692"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569684"
 ---
 # <a name="warranty-agreements"></a>Garantievereinbarungen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 
 Im Anlagenmanagement können Sie Garantiebedingungen einrichten, die mit einer Anlage oder einer Anlagenart verknüpft werden können. Garantiebedingungen werden für einen bestimmten Zeitraum angelegt. Die Garantie kann so eingerichtet werden, dass sie eine vollständige oder teilweise Deckung bietet, und Sie können Bedingungen einrichten, die sich auf Stunden, Ausgaben und Artikel beziehen.
@@ -54,4 +54,4 @@ Eine Garantievereinbarung kann mehrere Vertragszeilen umfassen, um die Garantie 
     3. Geben Sie im Feld **Intervall** eine Zahl ein. Dieses Feld definiert die Anzahl der Zeiträume, für die die Garantie gültig sein soll.
     4. Geben Sie im Feld **Prozent** den Deckungsprozentsatz für die Garantiezeile ein. Der Prozentsatz gibt an, wie viel von Ihrem Unternehmen abgedeckt wird.
 
-![Abbildung 1](media/01-warranty.png)
+![Garantieseite](media/01-warranty.png)

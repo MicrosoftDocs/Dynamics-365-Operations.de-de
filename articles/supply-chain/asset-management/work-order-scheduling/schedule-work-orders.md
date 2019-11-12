@@ -18,20 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6fad4d57b8e08c839ac0ffac2324c02304335ef
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 953c4bb17329205c5d8d14b6570a6bac152e9320
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887227"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652148"
 ---
 # <a name="schedule-work-orders"></a>Arbeitsaufträge terminieren
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
-In diesem Abschnitt wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen. Die erforderliche Stundenanzahl für einen Arbeitsauftrag ergibt sich aus der Summe der prognostizierten Stunden auf den Arbeitsauftragsjobs abzüglich der gebuchten Stunden. Wenn mehr Zeit benötigt wird, muss die Prognose auf dem Arbeitsauftrag entsprechend angepasst werden. In **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** können Sie Prognosen zu einem Arbeitsauftrag einsehen oder bearbeiten, indem Sie den Arbeitsauftrag auswählen und **Prognose** auf der Registerkarte **Arbeitsauftrag** anklicken. Wenn Arbeitsaufträge erstellt und geschätzt wurden, ist der nächste Schritt die Zuweisung der erforderlichen Wartungsarbeiter und Werkzeuge zur Fertigstellung der Arbeitsaufträge.
+In diesem Abschnitt wird erläutert, wie Sie Arbeitsaufträge im Anlagenmanagement planen. 
+
+Die erforderliche Stundenanzahl für einen Arbeitsauftrag ergibt sich aus der Summe der prognostizierten Stunden auf abzüglich der gebuchten Stunden. Wenn mehr Zeit benötigt wird, muss die Prognose entsprechend angepasst werden. In **Anlagenmanagement** > **Allgemein** > **Arbeitsaufträge** > **Alle Arbeitsaufträge** oder **Aktive Arbeitsaufträge** können Sie Prognosen zu einem Arbeitsauftrag einsehen oder bearbeiten, indem Sie den Arbeitsauftrag auswählen und **Prognose** auf der Registerkarte **Arbeitsauftrag** anklicken. Wenn Arbeitsaufträge erstellt und geschätzt wurden, ist der nächste Schritt in der Ausführung der Arbeitsaufträge, die erforderlichen Wartungsarbeiter und Werkzeuge zuzuweisen.
 
 Es können nur Arbeitsaufträge mit einem Arbeitsauftragslebenszyklusstatus terminiert werden, der eine Terminierung ermöglicht. Die Zulassungsplanung ist in **Anlagenmanagement** > **Einrichtung** > **Arbeitsaufträge** > **Lebenszykluszustände** > **Allgemein** FastTab > **Zulässige Planung** Umschalt-Schaltfläche eingerichtet.
 
@@ -43,8 +45,8 @@ Es können nur Arbeitsaufträge mit einem Arbeitsauftragslebenszyklusstatus term
 
 4. Im Dialog **Arbeitsaufträge terminieren** können Sie bei Bedarf Auswahlmöglichkeiten bezüglich erwartetem Starttermin und Servicelevel hinzufügen. Wenn der Planungsprozess Kapazitätsengpässe bei bereits für andere Jobs eingeplanten Ressourcen beachten soll, stellen Sie sicher, dass die Umschalttasten **Anlage**, **Werkzeug** und **Arbeiter** auf „Ja“ gesetzt sind.
 
->[!NOTE]
->Wenn Sie die Schaltflächen **Anlage**, **Werkzeug** und **Arbeiter** auf „Nein“ umschalten, werden bestehende Reservierungen ignoriert. Im Infolog wird eine Liste der sich überschneidenden Arbeitsauftragspläne angezeigt, und Sie können auf die Nachrichten klicken, um einen Arbeitsauftrag zu öffnen und bei Bedarf neu zu terminieren.
+    [!NOTE]
+    Wenn Sie die Schaltflächen **Anlage**, **Werkzeug** und **Arbeiter** auf „Nein“ umschalten, werden bestehende Reservierungen ignoriert. Im Infolog wird eine Liste der sich überschneidenden Arbeitsauftragspläne angezeigt, und Sie können auf die Nachrichten klicken, um einen Arbeitsauftrag zu öffnen und bei Bedarf neu zu terminieren.
 
 5. Um detaillierte Informationen über den Planungsprozess zu erhalten, wählen Sie „Ja“ auf der Umschalttaste **Lang**. Das bedeutet, dass detaillierte Informationen über die berechneten Werte der Arbeitsaufträge und Wartungspersonal im Infolog angezeigt werden.
 
@@ -114,5 +116,7 @@ Die Bewertungspunkte für die Berechnung, welche Wartungsmitarbeiter an den Arbe
 
 ## <a name="competencies-used-in-work-order-scheduling"></a>Kompetenzen für die Arbeitsvorbereitung
 
-Qualifikationen und Zertifikatsanforderungen können auf Instandhaltungsjobtypen (**Anlagenmanagement** > **Einrichtung** > **Jobs** > **Wartungsjobtypen**) und Instandhaltungsaufträge (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Instandhaltungsauftragswechsel**) eingerichtet werden. Wartungsauftragsarten und Wartungsauftragsarten werden bei Arbeitsaufträgen ausgewählt. Wenn Fähigkeiten oder Zertifikate für eine Wartungsauftragsart oder eine Wartungsauftragsart ausgewählt wurden und diese Wartungsauftragsart oder diese Wartungsauftragsart für eine Auftragsarbeit verwendet wird, werden nur Wartungsarbeiter mit übereinstimmenden Fähigkeiten und Zertifikaten für die Arbeit an der Auftragsarbeit vorgesehen.
+Qualifikationen und Zertifikatsanforderungen können auf Instandhaltungsjobtypen (**Anlagenmanagement** > **Einrichtung** > **Jobs** > **Wartungsjobtypen**) und Instandhaltungsaufträge (**Anlagenmanagement** > **Einrichtung** > **Aufträge** > **Instandhaltungsauftragswechsel**) eingerichtet werden. 
+
+Wartungsauftragsarten und Wartungsauftragsarten werden bei Arbeitsaufträgen ausgewählt. Wenn Fähigkeiten oder Zertifikate für eine Wartungsauftragsart oder eine Wartungsauftragsart ausgewählt wurden und diese Wartungsauftragsart oder diese Wartungsauftragsart für eine Auftragsarbeit verwendet wird, werden nur Wartungsarbeiter mit übereinstimmenden Fähigkeiten und Zertifikaten für die Arbeit an der Auftragsarbeit vorgesehen.
 

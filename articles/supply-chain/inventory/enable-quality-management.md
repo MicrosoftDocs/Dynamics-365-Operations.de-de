@@ -3,7 +3,7 @@ title: Qualitätsmanagement-Übersicht
 description: In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Dynamics 365 Supply Chain Management verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 author: perlynne
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9600e165da76948bb53a0188ec0b212a0fed84a
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ba38f9c43fed81768155a27dda88a4bfb4a7828e
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249578"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653555"
 ---
 # <a name="quality-management-overview"></a>Qualitätsmanagement-Übersicht
 
@@ -32,7 +32,7 @@ ms.locfileid: "2249578"
 
 In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Dynamics 365 Supply Chain Management verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 
-Das Qualitätsmanagement kann Ihnen dabei helfen, Abfertigungszeiten zu fehlerhaften Produkten zu verwalten (unabhängig vom Ursprung). Da Diagnosetypen mit der Korrekturberichterstellung verknüpft sind, kann Finance and Operations Aufgaben planen, um Probleme zu korrigieren und zu verhindern, dass sie erneut auftreten.
+Das Qualitätsmanagement kann Ihnen dabei helfen, Abfertigungszeiten zu fehlerhaften Produkten zu verwalten (unabhängig vom Ursprung). Da Diagnosetypen mit der Korrekturberichterstellung verknüpft sind, kann Supply Chain Management Aufgaben planen, um Probleme zu korrigieren und zu verhindern, dass sie erneut auftreten.
 
 Zusätzlich zu den Funktionen für die Verwaltung des Qualitätsmangels, umfasst das Qualitätsmanagement Funktionen für die Nachverfolgung von Problemen nach Problemtyp (auch interne Probleme) und zur Kennzeichnung von Lösungen als kurzzeitig oder langfristig. Die Statistiken zu Key Performance Indicators (KPIs) geben Einblick in den Verlauf von vorherigen Qualitätsmangelprobleme sowie zu Lösungen zu deren Korrektur. Sie können Verlaufsdaten verwenden, um die Effizienz vorheriger Qualitätsmaßnahmen zu prüfen und geeignete Maßnahmen für die Zukunft zu bestimmen.
 
@@ -290,6 +290,256 @@ Die folgende Tabelle enthält weitere Informationen darüber, wie Qualitätsprü
 <td></td>
 <td></td>
 <td>Ein Qualitätsprüfungsauftrag muss für die Lagermenge eines Artikels manuell erstellt werden. Physischer Lagerbestand ist erforderlich.</td>
+</tr>
+</tbody>
+</table>
+
+## <a name="quality-order-auto-generation-examples"></a>Automatische Generierung von Qualitätsprüfungsaufträgen – Beispiele
+
+### <a name="purchasing"></a>Einkauf
+
+Im Einkauf, wenn Sie das Feld **Ereignistyp** auf **Produktzugang** und das **Ausführung**-Feld auf **Später** auf der Seite **Qualitätszuordnungen** festgelegt haben, erhalten Sie die folgenden Ergebnisse: 
+
+- Wenn die Option **Pro aktualisierter Menge** auf **Ja** festgelegt wird, wird ein Qualitätsprüfungsauftrag für jeden Zugang für den Auftrag anhand der Eingangsmenge und Einstellungen in der Artikelmusteraufnahme generiert. Wenn eine Menge für den Auftrag eingeht, werden neue Qualitätsprüfungsaufträge auf Grundlage der neuen Eingangsmenge generiert.
+- Wenn die Option **Pro aktualisierter Menge** auf **Nein** festgelegt wird, wird ein Qualitätsprüfungsauftrag für den ersten Zugang für den Auftrag anhand der Eingangsmenge generiert. Außerdem werden eine oder mehrere Qualitätsprüfungsaufträge auf Basis der Restmenge je nach den Überwachungsdimensionen erstellt. Qualitätsprüfungsaufträge werden nicht für nachfolgende Zugänge für den Auftrag generiert.
+
+<table>
+<tbody>
+<tr>
+<th>Qualitätsspezifikation</th>
+<th>Pro aktualisierter Menge</th>
+<th>Pro Rückverfolgungsangabe</th>
+<th>Ergebnis</th>
+</tr>
+<tr>
+<td>Prozentsatz: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Chargennummer: Nein</p>
+<p>Seriennummer: Nein</p>
+</td>
+<td>
+<p>Auftragsmenge: 100</p>
+<ol>
+<li>Fertigmeldung für 30
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 3 (10 % von 30)</li>
+</ul>
+</li>
+<li>Fertigmeldung für 70
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 7 (10 % verbleibenden Auftragsmenge, die in diesem Fall 70 entspricht)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Feste Menge: 1</td>
+<td>Nein</td>
+<td>
+<p>Chargennummer: Nein</p>
+<p>Seriennummer: Nein</p>
+</td>
+<td>Auftragsmenge: 100
+<ol>
+<li>Fertigmeldung für 30
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 wird für 1 erstellt (für die erste als fertig gemeldete Menge, die den festen Wert „1“ hat).</li>
+<li>Es werden keine weiteren Qualitätsprüfungsaufträge für die Restmenge erstellt.</li>
+</ul>
+</li>
+<li>Fertigmeldung für 10
+<ul>
+<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
+</ul>
+</li>
+<li>Fertigmeldung für 60
+<ul>
+<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Feste Menge: 1</td>
+<td>Ja</td>
+<td>
+<p>Chargennummer: Ja</p>
+<p>Seriennummer: Ja</p>
+</td>
+<td>
+<p>Auftragsmenge: 10</p>
+<ol>
+<li>Fertigmeldung für 3
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 1 von Charge Nr. b1, Serie Nr. s1</li>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 1 von Charge Nr. b2, Serie Nr. s2</li>
+<li>Qualitätsprüfungsauftrag Nr. 3 für 1 von Charge Nr. b3, Serie Nr. s3</li>
+</ul>
+</li>
+<li>Fertigmeldung für 2
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 4 für 1 von Charge Nr. b4, Serie Nr. s4</li>
+<li>Qualitätsprüfungsauftrag Nr. 5 für 1 von Charge Nr. b5, Serie Nr. s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Hinweis:</strong> Die Charge kann wiederverwendet werden.</p>
+</td>
+</tr>
+<tr>
+<td>Feste Menge: 2</td>
+<td>Nein</td>
+<td>
+<p>Chargennummer: Ja</p>
+<p>Seriennummer: Ja</p>
+</td>
+<td>
+<p>Auftragsmenge: 10</p>
+<ol>
+<li>Fertigmeldung für 4
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 1 von Charge Nr. b1, Serie Nr. s1.</li>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 1 von Charge Nr. b2, Serie Nr. s2.</li>
+<li>Qualitätsprüfungsauftrag Nr. 3 für 1 von Charge Nr. b3, Serie Nr. s3.</li>
+<li>Qualitätsprüfungsauftrag Nr. 4 für 1 von Charge Nr. b4, Serie Nr. s4.</li>
+<li>Es werden keine weiteren Qualitätsprüfungsaufträge für die Restmenge erstellt.</li>
+</ul>
+</li>
+<li>Fertigmeldung für 6
+<ul>
+<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+
+### <a name="production"></a>Produktion
+
+In der Produktion, wenn Sie das Feld **Ereignistyp** auf **Fertigmeldung** und das **Ausführung**-Feld auf **Später** auf der Seite **Qualitätszuordnungen** festgelegt haben, erhalten Sie die folgenden Ergebnisse:
+
+- Wenn die Option **Pro aktualisierter Menge** auf **Ja** festgelegt wird, wird ein Qualitätsprüfungsauftrag auf der Basis einer jeden fertiggestellten Menge und der Einstellungen in der Artikelmusteraufnahme generiert. Wenn eine Menge für den Produktionsauftrag als fertig gemeldet wird, werden neue Qualitätsprüfungsaufträge auf Grundlage der neuen fertiggestellten Menge generiert. Diese Generierungslogik ist mit dem Einkauf konsistent.
+- Wenn die Option **Pro aktualisierter Menge** auf **Nein** festgelegt wird, wird ein Qualitätsprüfungsauftrag das erste Mal, wenn eine Menge als fertig gemeldet wird, anhand der fertiggestellten Menge generiert. Außerdem werden eine oder mehrere Qualitätsprüfungsaufträge auf Basis der Restmenge je nach den Überwachungsdimensionen der Artikelmusteraufnahme erstellt. Qualitätsprüfungsaufträge werden nicht für nachfolgende fertiggestellte Mengen generiert.
+
+<table>
+<tbody>
+<tr>
+<th>Qualitätsspezifikation</th>
+<th>Pro aktualisierter Menge</th>
+<th>Pro Rückverfolgungsangabe</th>
+<th>Ergebnis</th>
+</tr>
+<tr>
+<td>Prozentsatz: 10 %</td>
+<td>Ja</td>
+<td>
+<p>Chargennummer: Nein</p>
+<p>Seriennummer: Nein</p>
+</td>
+<td>
+<p>Auftragsmenge: 100</p>
+<ol>
+<li>Fertigmeldung für 30
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 3 (10 % von 30)</li>
+</ul>
+</li>
+<li>Fertigmeldung für 70
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 7 (10 % verbleibenden Auftragsmenge, die in diesem Fall 70 entspricht)</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Feste Menge: 1</td>
+<td>Nein</td>
+<td>
+<p>Chargennummer: Nein</p>
+<p>Seriennummer: Nein</p>
+</td>
+<td>Auftragsmenge: 100
+<ol>
+<li>Fertigmeldung für 30
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 1 (für die erste als fertig gemeldete Menge, die den festen Wert „1“ hat)</li>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 1 (für die verbleibende Menge, die immer noch den festen Wert „1“ hat)</li>
+</ul>
+</li>
+<li>Fertigmeldung für 10
+<ul>
+<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
+</ul>
+</li>
+<li>Fertigmeldung für 60
+<ul>
+<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
+</ul>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td>Feste Menge: 1</td>
+<td>Ja</td>
+<td>
+<p>Chargennummer: Ja</p>
+<p>Seriennummer: Ja</p>
+</td>
+<td>
+<p>Auftragsmenge: 10</p>
+<ol>
+<li>Fertigmeldung für 3: 1 für Nr. b1, Nr. s1; 1 für Nr. b2, Nr. s2; und 1 für Nr. b3, Nr. s3
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 1 von Charge Nr. b1, Serie Nr. s1</li>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 1 von Charge Nr. b2, Serie Nr. s2</li>
+<li>Qualitätsprüfungsauftrag Nr. 3 für 1 von Charge Nr. b3, Serie Nr. s3</li>
+</ul>
+</li>
+<li>Fertigmeldung für 2: 1 für Nr. b4, Nr. s4; und 1 für Nr. b5, Nr. s5
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 4 für 1 von Charge Nr. b4, Serie Nr. s4</li>
+<li>Qualitätsprüfungsauftrag Nr. 5 für 1 von Charge Nr. b5, Serie Nr. s5</li>
+</ul>
+</li>
+</ol>
+<p><strong>Hinweis:</strong> Die Charge kann wiederverwendet werden.</p>
+</td>
+</tr>
+<tr>
+<td>Feste Menge: 2</td>
+<td>Nein</td>
+<td>
+<p>Chargennummer: Ja</p>
+<p>Seriennummer: Ja</p>
+</td>
+<td>
+<p>Auftragsmenge: 10</p>
+<ol>
+<li>Fertigmeldung für 4: 1 für Nr. b1, Nr. s1; 1 für Nr. b2, Nr. s2; 1 für Nr. b3, Nr. s3; und 1 für Nr. b4, Nr. s4
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 1 für 1 von Charge Nr. b1, Serie Nr. s1</li>
+<li>Qualitätsprüfungsauftrag Nr. 2 für 1 von Charge Nr. b2, Serie Nr. s2</li>
+<li>Qualitätsprüfungsauftrag Nr. 3 für 1 von Charge Nr. b3, Serie Nr. s3</li>
+<li>Qualitätsprüfungsauftrag Nr. 4 für 1 von Charge Nr. b4, Serie Nr. s4</li>
+</ul>
+<ul>
+<li>Qualitätsprüfungsauftrag Nr. 5 für 2, ohne Verweis auf eine Charge und Seriennummer</li>
+</ul>
+</li>
+<li>Fertigmeldung für 6: 1 für Nr. b5, Nr. s5; 1 für Nr. b6, Nr. s6; 1 für Nr. b7, Nr. s7; 1 für Nr. b8, Nr. s8; 1 für Nr. b9, Nr. s9; und 1 für Nr. b10, Nr. s10
+<ul>
+<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
+</ul>
+</li>
+</ol>
+</td>
 </tr>
 </tbody>
 </table>

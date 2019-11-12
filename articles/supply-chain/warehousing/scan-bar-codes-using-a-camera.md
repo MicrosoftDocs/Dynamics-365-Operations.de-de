@@ -1,6 +1,6 @@
 ---
-title: Strichcodes mithilfe einer Kamera in Dynamics 365 Supply Chain Management – Warehousing-App
-description: In diesem Thema wird erläutert, wie Sie die Dynamics 365 Supply Chain Management – Warehousing-App einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen.
+title: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations – Warehousing-App
+description: In diesem Thema wird erläutert, wie Sie die Dynamics 365 for Finance and Operations – Warehousing-App einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen.
 author: MarkusFogelberg
 manager: AnnBe
 ms.date: 01/03/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8062a981f792bcfed2713d3cb6a42f414394f6a4
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 58cf27a250778d68bdffa1eefa5e939276e467fc
+ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251458"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "2578148"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-supply-chain-management---warehousing-app"></a>Strichcodes mithilfe einer Kamera in Dynamics 365 Supply Chain Management – Warehousing-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie die Dynamics 365 Supply Chain Management – Warehousing-App einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen. 
+In diesem Thema wird erläutert, wie Sie die Dynamics 365 for Finance and Operations – Warehousing-App einrichten, um Strichcodes mithilfe einer Kamera auf einem mobilen Gerät zu scannen. 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Damit Sie diese Funktion verwenden können, müssen Sie 1.2.0.0 Version der Warehousing-App eingerichtet haben, und Ihr Gerät muss eine Kamera haben. Wenn Sie die App nach der Aktualisierung öffnen, werden Sie aufgefordert, der App zu erlauben, die Kamera zu verwenden. Wenn Ihr Gerät keine Kamera hat, wird keine entsprechende Meldung angezeigt, und Sie können die Kamera nicht als Scanner verwenden. 
@@ -49,7 +49,7 @@ Die Kameraseite wird auf jeder Seite verwendet, die im Eingabefeld einen bevorzu
 
 | Aufgabe und Detailseite | Kameraseite | 
 | :---------------------: | :--------------------: |
-| ![Kamera-Scannen-Beispiel-Aufgabe-Detail-Seite](./media/camera-scanning-example-task-detail-page50.png)          | ![Kamera-Scannen-Beispiel-Kamera-Seite-kleiner](./media/camera-scanning-example-camera-page50.png)          |
+| ![Aufgabe und Detailseite für Beispiel zum Scannen mit der Kamera](./media/camera-scanning-example-task-detail-page50.png)          | ![Aufgabe und Detailseite für Beispiel zum Scannen mit der Kamera – kleiner](./media/camera-scanning-example-camera-page50.png)          |
 
 Auf der Kameraseite, wenn Sie auf die Kameraschaltfläche klicken, wird sie abgeblendet angezeigt, wenn Sie versuchen, einen Strichcode zu identifizieren. Wenn ein Strichcode nicht innerhalb von 5 Sekunden gekennzeichnet wird, wird der Prozess unterbrochen und die Kameraschaltfläche wird wieder verfügbar. Sie können dann versuchen, den Strichcode erneut zu scannen.
 

@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ff513d2e2d2968e531e4515c45abdc470b384123
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184093"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570332"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Es wurde ein neues Modul **Umsatzerkennung** hinzugefügt, das Menüoptionen für alle erforderlichen Einstellungen enthält. In diesem Thema werden die Einrichtungsoptionen und deren Auswirkungen behandelt.
+
+> [!NOTE]
+> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
 
 Das Modul **Umsatzerkennung** bietet folgende Optionen:
 

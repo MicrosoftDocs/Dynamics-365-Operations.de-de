@@ -19,18 +19,16 @@ ms.search.industry: Retail
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0ea2c71458f92d048706a6e263d0da1830bdcde
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 792ff4d7b72ce092fe1ad92e53172cf40f0ecf26
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1565695"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569270"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO mit physischem Wert und Markierung
 
 [!include [banner](../includes/banner.md)]
-
-[!include [retail name](../includes/retail-name.md)]
 
 Bei LIFO (Last in, First out) handelt es sich um ein Lagermodell, bei dem die zuletzt eingegangenen Zugänge das Lager als Erstes wieder verlassen. Abgänge aus dem Lager werden mit den neuesten Zugängen im Lager auf der Grundlage des Datums der Lagerbuchung abgeglichen. 
 
@@ -56,7 +54,9 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 -   5b. Wertmäßiger Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 20,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
 -   6. Lagerabschluss wird vorgenommen. Der letzte wertmäßig aktualisierte Abgang wird auf Basis der LIFO-Methode mit dem letzten wertmäßig aktualisierten Zugang ausgeglichen. Für die Abgangsbuchung erfolgt eine Regulierung in Höhe von EUR 10,00.
 
-Der neue laufende Durchschnittseinstandspreis stellt den Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 15,00 dar. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. ![LIFO ohne Einbeziehung des physischen Werts](./media/lifowithoutincludephysicalvalue.gif) 
+Der neue laufende Durchschnittseinstandspreis stellt den Durchschnitt der wertmäßig aktualisierten Buchungen in Höhe von EUR 15,00 dar. Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. 
+
+![LIFO ohne Einbeziehung des physischen Werts](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -90,7 +90,9 @@ Die folgende Abbildung zeigt diese Buchungen an:
 
 Die Buchung 6a wird mit der Zugangsbuchung 4b reguliert. Diese Buchungen werden vom System nicht ausgeglichen, da der Zugang nur physisch, nicht aber wertmäßig aktualisiert wurde. Stattdessen erfolgt lediglich eine Regulierungsbuchung in Höhe von EUR 8,75 für die physische Abgangsbuchung. Die Buchung 5b wird mit der physischen Zugangsbuchung 3a reguliert. Diese Buchungen werden vom System nicht ausgeglichen, da nicht für beide eine wertmäßige Aktualisierung erfolgt ist. Stattdessen wird für diese Abgangsbuchung lediglich eine Regulierung in Höhe von EUR –3,75 vorgenommen. Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 20,00 berücksichtigt. 
 
-Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. ![LIFO mit "Physischen Wert einbeziehen"](./media/lifowithincludephysicalvalue.gif) 
+Die folgende Abbildung zeigt die Auswirkungen des Lagermodells LIFO für diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** verwendet wird. 
+
+![LIFO mit "Physischen Wert einbeziehen"](./media/lifowithincludephysicalvalue.gif) 
 
 **Diagrammschlüssel**
 
@@ -132,7 +134,9 @@ Die folgende Abbildung zeigt diese Buchungen an:
 
 Im neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig und physisch aktualisierten Buchungen in Höhe von EUR 27,50 berücksichtigt. 
 
-Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. ![LIFO mit Markierung](./media/lifowithmarking.gif) 
+Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermodells auf diese Reihe von Buchungen, die bei markierten Ab- und Zugängen anfallen. 
+
+![LIFO mit Markierung](./media/lifowithmarking.gif) 
 
 **Diagrammschlüssel**
 
@@ -146,7 +150,4 @@ Die folgende Abbildung gibt Aufschluss über die Auswirkungen des LIFO-Lagermode
 - Jeder vertikale Pfeil ist mit einer Sequenzkennung (beispielsweise *1a*) versehen. Mit dieser Kennung wird die Reihenfolge der Lagerbuchungen auf der Zeitachse angegeben.
 - Lagerabschlüsse sind durch eine vertikale rote gestrichelte Linie und die Beschriftung *Lagerabschluss* gekennzeichnet.
 - Ein durch einen Lagerabschluss vorgenommener Ausgleich ist durch rote diagonale gestrichelte Pfeile dargestellt, die von einem Zugang zu einem Abgang verlaufen.
-
-
-
 

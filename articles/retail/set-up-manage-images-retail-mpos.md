@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8f4658696a2e6c2959b87aa852c25c108b9ba302
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 1776220766984339c7c289f7b55252fb0c0bb2a8
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024843"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570655"
 ---
 # <a name="set-up-and-manage-images-for-retail-modern-pos-mpos"></a>Einrichten und Verwalten von Retail Modern POS (MPOS)
 
@@ -83,9 +83,7 @@ In den folgenden Verfahren werden Bilder für die Katalogentität als Beispiel g
     [![Bilder-Dialogfeld](./media/catalog4.png)](./media/catalog4.png)
 
 > [!NOTE]
-> Sie können dasselbe Verfahren für alle fünf Entitäten verwenden, die unterstützt werden: Arbeitskraft, Debitor, Katalog, Kategorie und Produkte. "Katalog-Produkte" (Produkte, die auf Katalogebene festgelegt werden) und "Kanalprodukte "( Produkte, die auf der Kanalstufe festgelegt werden), verwenden die Medienvorlage, die für die Produktentität festgelegt ist. Für die Produktmedienvorlage können Sie die Anzahl von Produktbildern auswählen, um das Produkt darzustellen. Sie können das standardmäßige Bild für ein bestimmtes Produkt auch festlegen. Auf diese Weise können Sie leere Bilder in MPOS verhindern und steuern, welches Bild als standardmäßiges Bild für einen Produktionsartikel verwendet wird. Im folgenden Beispiel verfügt jedes Produkt fünf Bilder, und das erste Bild wird als standardmäßiges Bild festgelegt. Verschiedenen Produkte werden gleiche Weise wie Vorlagenprodukte behandelt. Der Dateiname der Bilddatei soll auf der Produktnummer basieren. Einige Zeichen werden auch weggelassen, während der Dateiname generiert wird. Daher ist es gut, den Dateinamen zu überprüfen. Dies tun Sie mithilfe des Bereichs **Bild URL für Excel erstellen**.
->
-> [![Medienvorlagen-Dialogfeld definieren](./media/prods.png)](./media/prods.png)
+> Sie können dasselbe Verfahren für alle fünf Entitäten verwenden, die unterstützt werden: Arbeitskraft, Debitor, Katalog, Kategorie und Produkte. "Katalog-Produkte" (Produkte, die auf Katalogebene festgelegt werden) und "Kanalprodukte "( Produkte, die auf der Kanalstufe festgelegt werden), verwenden die Medienvorlage, die für die Produktentität festgelegt ist. Für die Produktmedienvorlage können Sie die Anzahl von Produktbildern auswählen, um das Produkt darzustellen. Sie können das standardmäßige Bild für ein bestimmtes Produkt auch festlegen. Auf diese Weise können Sie leere Bilder in MPOS verhindern und steuern, welches Bild als standardmäßiges Bild für einen Produktionsartikel verwendet wird. Im folgenden Beispiel verfügt jedes Produkt fünf Bilder, und das erste Bild wird als standardmäßiges Bild festgelegt. Verschiedenen Produkte werden gleiche Weise wie Vorlagenprodukte behandelt. Der Dateiname der Bilddatei soll auf der Produktnummer basieren. Einige Zeichen werden auch weggelassen, während der Dateiname generiert wird. Daher ist es gut, den Dateinamen zu überprüfen. Dies tun Sie mithilfe des Bereichs **Bild URL für Excel erstellen**. Siehe [Mit in Excel bearbeiten überschreiben](#overwrite-by-using-edit-in-excel) weiter unten in diesem Artikel.
 
 ## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synchronisierungsvorgänge, um eine Medienvorlage an die Kanalseite zu senden
 
@@ -110,8 +108,6 @@ Wie Sie im vorherigen Abschnitt lernten, unterstützt die Medienvorlage für ein
 
     > [!IMPORTANT]
     > Sobald die Medienvorlage geändert wird, müssen Sie auf **Erstellen** klicken, bevor Sie die Funktion in Excel bearbeiten verwenden können.
-
-    [![Bild-URLs für Excel-Inforegister generieren](./media/excel1.jpg)](./media/excel1.jpg)
 
     Sie sehen nun eine Vorschau der Bild URLs, die basierend auf der letzten gespeicherten Medienvorlage erstellt wurden.
 

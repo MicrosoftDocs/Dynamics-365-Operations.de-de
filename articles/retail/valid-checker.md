@@ -3,7 +3,7 @@ title: Konsistenzprüfung für Einzelhandelstransaktionen
 description: In diesem Thema werden die Funktionen der Konsistenzprüfung für Einzelhandelstransaktionen in Dynamics 365 Retail beschrieben.
 author: josaw1
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 10/14/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0413c2b236e442fb56098f1902b4d5b247ed4649
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b956565ac15b3d7b638cedaadc20923ee87b9c61
+ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2018413"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622596"
 ---
 # <a name="retail-transaction-consistency-checker"></a>Konsistenzprüfung für Einzelhandelstransaktionen
 
@@ -59,7 +59,10 @@ Der Stapelverarbeitungsvorgang **Geschäftsbuchungen überprüfen** prüft die K
 - **Geschenkkartenartikel**: Retail unterstützt nicht die Rückgabe von Geschenkkartenartikeln. Allerdings kann der Wert einer Geschenkkarte bar ausgezahlt werden. Bei allen Geschenkkartenartikeln, die anstelle einer Barauszahlungsposition als Rückgabeposition verarbeitet werden, schlägt der Auszugsbuchungsprozess fehl. Bei der Validierung von Geschenkkartenartikeln wird sichergestellt, dass die einzigen Rückgabepositionsartikel der Geschenkkarte in den Einzelhandelstransaktionstabellen Barauszahlungspositionen sind.
 - **Negativer Preis**: Überprüft, dass es keine Transaktionspositionen mit negativen Preisen gibt.
 - **Artikel und Variante**: Prüft, ob Artikel und Varianten aus den Transaktionspositionen in der Masterdatei mit Artikeln und Varianten vorhanden sind.
-- **Steuerbetrag**: Prüft, ob die Steuerdatensätze den Steuerbeträgen in den Positionen entsprechen. 
+- **Steuerbetrag**: Prüft, ob die Steuerdatensätze den Steuerbeträgen in den Positionen entsprechen.
+- **Seriennummer** - Überprüft, ob die Seriennummer in den Transaktionspositionen für Artikel vorhanden ist, die über die Seriennummer gesteuert werden.
+- **Vorzeichen** - Überprüft, ob die Vorzeichen für die Menge und den Nettobetrag in allen Transaktionspositionen gleich sind.
+- **Geschäftsdatum** - Prüft, ob die Finanzperioden für alle Geschäftsdaten der Einzelhandelstransaktionen offen sind.
 
 ## <a name="set-up-the-consistency-checker"></a>Konsistenzprüfung einrichten
 

@@ -1,5 +1,5 @@
 - name: Dynamics 365 for Talent
-  href: index.yml
+  href: talent-welcome.md
   items:
     - name: Erste Schritte
       items:
@@ -8,6 +8,10 @@
         - name: Neuerungen oder Änderungen in Talent
           href: whats-new.md
           items:
+            - name: 23. Oktober 2019
+              href: whats-new-talent-october-23-2019.md
+            - name: 8. Oktober 2019
+              href: whats-new-talent-october-8-2019.md
             - name: 1. Oktober 2019
               href: whats-new-talent-october-1-2019.md
             - name: 17. September 2019
@@ -385,21 +389,23 @@
           items:
             - name: Antworten auf eine Anforderung persönlicher Daten in Talent
               href: ../dev-itpro/gdpr/respond-dsr-request-talent.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Formular I-9 zur Beschäftigungsüberprüfung
+            - name: Formular I-9 – Beschäftigungsüberprüfung
               href: ../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/dynamics365/unified-operations/talent/toc.json
             - name: Einhalten des ADA (Americans with Disabilities Act)
               href: ../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/dynamics365/unified-operations/talent/toc.json
     - name: Integration
       items:
+        - name: Datenintegrationsanleitung für Dynamics 365 for Talent
+          href: data-integration.md
+        - name: Common Data Service-Integration konfigurieren
+          href: hr-common-data-service-integration.md
         - name: Integration in Dynamics 365 for Finance and Operations
           href: talent-financeandoperations-integration.md
         - name: Konfigurieren der Lohnintegration zwischen Talent und Dayforce
           href: configure-payroll-integration.md
-        - name: Datenintegrationsanleitung für Dynamics 365 for Talent
-          href: data-integration.md
         - name: FAQs zur Integration
           href: talent-fo-integration.md
-        - name: Wiederkehrender Datenexport mithilfe von Azure Logic-Apps
+        - name: Wiederkehrender Datenexport mithilfe von Azure Logic Apps
           href: tutorial-integration-recurring-export.md
         - name: Office-Integration
           items:

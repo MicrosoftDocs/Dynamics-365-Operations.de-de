@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdfc5eda1ebf78abe823908324ed9c35215e562e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249565"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653510"
 ---
 # <a name="demand-forecasting-setup"></a>Einrichten einer Bedarfsplanung
 
@@ -72,7 +72,7 @@ Um die Planung zu generieren, verwendet Supply Chain Management einen Machine Le
 
 **Hinweis:** Azure-Speicherkontenname und -schlüssel sind nur erforderlich, wenn Sie ein benutzerdefiniertes Speicherkonto verwenden. Wenn Sie die lokale Version bereitstellen, müssen Sie ein benutzerdefiniertes Speicherkonto auf Azure haben, sodass der Machine Learning-Dienst auf die historischen Daten zugreifen kann. 
 
-Um Bedarfsvorhersagen zu erstellen, können Sie Ihren eigenen Dienst bereitstellen, indem Sie Machine Learning Studio- oder Supply Chain Management-Bedarfsplanungsexperimente verwenden. Anweisungen für das Bereitstellen der Bedarfsplanungexperimente als Webdienst sind in Finance and Operations verfügbar. Klicken Sie auf der Seite **Bedarfsplanungsparameter** auf die Registerkarte **Azure Machine Learning**.
+Um Bedarfsvorhersagen zu erstellen, können Sie Ihren eigenen Dienst bereitstellen, indem Sie Machine Learning Studio- oder Supply Chain Management-Bedarfsplanungsexperimente verwenden. Anweisungen für das Bereitstellen der Bedarfsplanungsexperimente als Webdienst sind in Supply Chain Management verfügbar. Klicken Sie auf der Seite **Bedarfsplanungsparameter** auf die Registerkarte **Azure Machine Learning**.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Einstellungen für den Machine Learning-Dienst der Bedarfsplanung
 Um die Parameter anzuzeigen die für den Bedarfsplanungsdienst konfiguriert werden können, gehen Sie zu **Masterplanung** &gt; **Einstellungen** &gt; **Bedarfsplanung** &gt; **Planungsalgorithmusparameter**. Die **Planungsalgorithmusparameter** Seite zeigt die Standardwerte für die Parameter an. Sie können mithilfe der Parameter die **Bedarfsplanungsparameter** überschreiben. Verwenden Sie die Registerkarte **Allgemein**, um die Parameter global zu überschreiben, oder klicken Sie auf die Registerkarte **Artikelverteilungsschlüssel**, um die Parameter pro Artikelverteilungsschlüssel zu überschreiben. Parameter, die für einen Artikelverteilungsschlüssel überschreiben werden, wirken sich nur auf die Planung von Artikeln aus, die diesem Artikelverteilungsschlüssel zugeordnet sind.

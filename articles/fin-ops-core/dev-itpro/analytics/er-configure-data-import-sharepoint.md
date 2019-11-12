@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 143cd51a3ea34a6b05da049d87819b3dfee95725
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
+ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181518"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564936"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Datenimport aus SharePoint konfigurieren
 
@@ -62,9 +62,9 @@ Geben Sie die Aufgabenleitfäden **Daten aus einer Microsoft Excel-Datei mit EB 
 > Das Format für den Import von Kreditorenbuchungen wird als Standardmodellzuordnung ausgewählt. Wenn Sie also eine Modellzuordnung des Typs **US 1099-Steuerzahlungsmodell** ausführen und diese Modellzuordnung vom Typ **Bis Ziel** ist, führt die Modellzuordnung dieses Format aus, um Daten aus externen Dateien zu importieren. Diese Daten werden dann zur Aktualisierung der Anwendungstabellen verwendet.
 
 ## <a name="configure-access-to-sharepoint-for-file-storage"></a>Konfigurieren des Zugriffs auf SharePoint für die die Dateispeicherung
-Um elektronische Berichtdateien an einem SharePoint-Speicherort zu speichern, müssen Sie den Zugriff der SharePoint Server-Instanz konfigurieren, die vom aktuellen Unternehmen verwendet wird. In diesem Beispiel ist das Unternehmen USMF. Anweisungen hierzu finden Sie unter [SharePoint-Speicher konfigurieren](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
+Um elektronische Berichtdateien an einem SharePoint-Speicherort zu speichern, müssen Sie den Zugriff der SharePoint Server-Instanz konfigurieren, die vom aktuellen Unternehmen verwendet wird. In diesem Beispiel ist das Unternehmen USMF. Anweisungen hierzu finden Sie unter [SharePoint-Speicher konfigurieren](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage).
 
-1. Führen Sie die Schritte in [SharePoint-Speicher konfigurieren](../../fin-and-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) aus.
+1. Führen Sie die Schritte in [SharePoint-Speicher konfigurieren](../../fin-ops/organization-administration/configure-document-management.md#configure-sharepoint-storage) aus.
 2. Öffnen Sie die konfigurierte SharePoint-Site.
 3. Setzt die folgenden Ordner, in denen eingehende elektronische Berichterstellungsdateien gespeichert werden können:
 
@@ -80,7 +80,7 @@ Um elektronische Berichtdateien an einem SharePoint-Speicherort zu speichern, m�
     - Dateifehlerordner - Dieser Ordner steht für fehlgeschlagenr importierte Dateien.
 
 4. Wechseln Sie zu **Organisationsverwaltungs > Dokumentenverwaltung > Dokumentarten**.
-5. Erstellen Sie die folgenden Dokumenttypen, die verwendet werden, um auf die SharePoint-Ordner zuzugreifen, die Sie soeben erstellt haben. Weitere Informationen unter [Konfigurieren Sie Dokumenttypen](../../fin-and-ops/organization-administration/configure-document-management.md#configure-document-types).
+5. Erstellen Sie die folgenden Dokumenttypen, die verwendet werden, um auf die SharePoint-Ordner zuzugreifen, die Sie soeben erstellt haben. Weitere Informationen unter [Konfigurieren Sie Dokumenttypen](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types).
 
 |Dokumenttyp       | Gruppieren              | Ziel      | SharePoint-Ordner      |
 |--------------------|--------------------|---------------|------------------------|

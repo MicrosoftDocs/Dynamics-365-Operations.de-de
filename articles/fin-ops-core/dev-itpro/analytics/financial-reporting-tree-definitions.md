@@ -3,7 +3,7 @@ title: Berichtsstruktur-Definitionen in Finanzberichten
 description: Dieser Artikel enthält Informationen zu Berichtsstruktur-Definitionen. Eine Berichtsstruktur-Definition ist eine Berichtkomponente oder ein Baustein, die/der Sie dabei unterstützt, die Struktur und die Hierarchie Ihrer Organisation zu definieren.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 10/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8127c694d21064392b1932525a87044b9554973d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6bb16ada206434c0588ed6c140a49b6a5d94d7ed
+ms.sourcegitcommit: a3fbcd63f10f204350a058a124ba80abeb34309e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181817"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "2564166"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Berichtsstruktur-Definitionen in Finanzberichten
 
@@ -50,7 +50,7 @@ Die Berichtstruktur-Definition enthält die Spalten, die in der folgenden Tabell
 
 | Berichtsbaumstrukturspalte | Beschreibung |
 |-----------------------|-------------|
-| Unternehmen               | Der Unternehmensname für die Berichtseinheit. Der **@ANY**-Wert, der normalerweise nur auf der Zusammenfassungsebene zugewiesen wird, ermöglicht die Verwendung der Berichtsbaumstruktur für alle Unternehmen. Allen untergeordneten Verzweigungen ist ein Unternehmen zugewiesen. |
+| Firma               | Der Unternehmensname für die Berichtseinheit. Der **\@ANY**-Wert, der normalerweise nur auf der Zusammenfassungsebene zugewiesen wird, ermöglicht die Verwendung der Berichtsbaumstruktur für alle Unternehmen. Allen untergeordneten Verzweigungen ist ein Unternehmen zugewiesen. |
 | Einheitenname             | Der Code, der diese Berichtserstellungseinheit in der grafischen Berichtsbaumstruktur identifiziert. Stellen Sie sicher, dass ein konsistentes und eindeutiges Kodierungssystem festgelegt ist, das für den Benutzer leicht verständlich ist. |
 | Einheitenbeschreibung      | Der Berichtseinheitentitel wird in der Kopf- oder Fußzeile des Berichts angezeigt, wenn Sie **UnitDesc** als Code auf der Registerkarte **Kopf- und Fußzeilen** eingeben. Der Titel wird in der Berichtszeilenbeschreibung angezeigt, wenn Sie **UnitDesc** in der Zelle **Beschreibung** der Zeilendefinition eingeben. |
 | Dimensionen            | Eine Berichtserstellungseinheit, die Informationen direkt aus den Finanzdaten bezieht. Sie definiert den logische Standort und die Längen für das Konto und die zugehörigen Segmente. Jede Berichtseinheitszeile muss eine Dimension in dieser Spalte enthalten. Sie können eine Dimension auch in einer zusammengefassten Einheitszeile festlegen (z. B. für die Ausgaben, die dieser Einheit direkt zugeordnet sind). Wenn Sie eine Dimension in einer zusammengefassten Einheitszeile eingeben, sollten Konten, die in den untergeordneten Einheiten verwendet werden nicht in den untergeordneten Einheiten verwendet werden. Andernfalls könnten Beträge dupliziert werden. |

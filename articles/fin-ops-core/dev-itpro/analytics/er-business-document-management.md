@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c84b08ec45dfa7aa9c7b913087a2518bfeedf87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
+ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181564"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2652616"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -120,7 +120,7 @@ Gehen Sie folgendermaßen vor, um die Geschäftsdokument-Verwaltungsfunktionen f
 
 ![Arbeitsbereich für die Funktionsverwaltung](./media/BDM-Overview-FMEnabling.png)
 
-Weitere Informationen zur Aktivierung neuer Funktionen finden Sie unter [Funktionsverwaltungsüberblick](../../fin-and-ops/get-started/feature-management/feature-management-overview.md).
+Weitere Informationen zur Aktivierung neuer Funktionen finden Sie unter [Funktionsverwaltungsüberblick](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="configure-parameters"></a>Parameter konfigurieren
 
@@ -137,7 +137,7 @@ Für diesen Dokumenttyp müssen die folgenden Attributwerte ausgewählt werden.
 | Gruppieren               | Datei                  |
 | Ort            | SharePoint            |
 
-Informationen dazu, wie Sie die erforderlichen Dokumentverwaltungsparameter und Dokumenttypen einrichten, finden Sie unter [Konfigurieren der Dokumentverwaltung](../../fin-and-ops/organization-administration/configure-document-management.md).
+Informationen dazu, wie Sie die erforderlichen Dokumentverwaltungsparameter und Dokumenttypen einrichten, finden Sie unter [Konfigurieren der Dokumentverwaltung](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
 
 ![Dokumenttyp für die Dokumentverwaltung einrichten](./media/BDM-Overview-DMSetting.png)
 

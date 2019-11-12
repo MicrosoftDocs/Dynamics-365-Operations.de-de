@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8d9c8afc139c96e32efb3161d35fde685b8abcc5
-ms.sourcegitcommit: 802dbf0a744d70f9e546632d419415b0993331ab
+ms.openlocfilehash: 89e13179e17b7cf075d631bc65d82da5f24da624
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1874669"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2569845"
 ---
 # <a name="scheduled-execution"></a>Geplante Ausführung
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Sie können die Service Levels für Arbeitsaufträge verwenden, um die geplante Ausführung einzurichten. (Weitere Informationen zu den Service Levels der Arbeitsaufträge finden Sie unter [Service Level und Beschreibung](service-level-and-description.md).) Die planmäßige Ausführung bietet Flexibilität bei der Arbeitsplanung für Instandhalter, da Sie für das Intervall, in dem ein Arbeitsauftrag abgeschlossen werden soll, detailliertere oder weniger detaillierte Anforderungen einrichten können. So kann beispielsweise ein Wartungsmitarbeiter, der einen Auftrag in einer Produktionsstätte schneller als erwartet erledigt, zu einem anderen nahegelegenen Auftrag wechseln, der für die aktuelle Woche geplant war, aber nicht unbedingt für den aktuellen Tag. Dieser Ansatz ermöglicht die Optimierung der Arbeitsvorbereitung und der Auftragsabwicklung.
 
@@ -42,4 +42,4 @@ Die Einrichtung der geplanten Ausführung, die sich auf Arbeitsaufträge bezieht
 5. Wählen Sie im Feld **Geplante Ausführung** das Zeitintervall aus.
 6. Wählen Sie **Speichern**.
 
-![Abbildung 1](media/20-setup-for-work-orders.png)
+![Geplante Ausführung](media/20-setup-for-work-orders.png)

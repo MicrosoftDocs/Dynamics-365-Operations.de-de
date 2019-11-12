@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 349f720ee4cfb612ca4f4f50a9e081f3343f756d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 36144474defc4849a112a180247f37796de00a27
+ms.sourcegitcommit: 1eaa3451275fe4223d4d25b37aaa1cd2b183e803
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188693"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "2667459"
 ---
 # <a name="budgeting-overview"></a>Budgetierungsüberblick 
 
@@ -69,6 +69,12 @@ Erstellen Sie *Budgetcodes*, die den Typ der zu erfassenden Budgettransaktionen 
 Budgetcodes geben Ihnen einen Audit-Trail mit den im Verlauf des Budgetzyklus genehmigten Budgetänderungen. Wenn ein Workflow einem Budgetcode zugeordnet ist, wird der Workflow aktiviert für alle Budgetregistereinträge, die diesen Budgetcode verwenden, und Workflowschritte müssen ausgeführt werden, bevor dem Budgetregistereintrag Phase **Abgeschlossen** eingeben kann.  
 
 Sie können optional auch *Budgetübertragungsregeln* festlegen. Wenn Sie  Budgetübertragungsregeln verwenden, wählen Sie **Regeln für Budgetübertragungen** auf der Seite **Budgetparameter** aus. Wenn Budgetübertragungsregeln verwendet werden, wenn ein Benutzer ein Dokument mithilfe des Budgetcodes vom Typ **Übertragen** erstellt, werden Budgetsalden nicht aktualisiert, wenn die Budgetübertragungsregeln verletzt werden. Sie können beispielsweise Budgetübertragungsdokumente zulassen, wenn das Ausgabenbudget zwischen den Hauptkonten für die Vertriebs- und Marketingabteilung übertragen werden, kann jedoch verhindern, dass Budget von dieser Abteilung oder zu dieser übertragen wird, sofern keine Workflowgenehmigung für diesen Typ von Budgetkontoeinträgen gewährt wurde.
+
+Bei Funktionen, die in Microsoft Dynamics 365 Finance Version 10.0.7 (Januar 2020) eingeführt wurden, wurden mehr Möglichkeiten und Flexibilität für Budgetregistereinträge hinzugefügt. Um diese Erweiterungen von aktivieren, gehen Sie zum **Funktionsverwaltung**-Arbeitsbereich und wählen Sie **Nur Budgetregistereinträge für Menge** und/oder **Budgetregistereintrags-Standardwerte für den Betragstyp** aus.
+
+Mit der Funktion **Nur Budgetregistereinträge für Menge** können Sie einen Budgetregistereintrag mit ausschließlich mengenbezogenen Beträgen buchen. Sie können beispielsweise einen Budgeteintrag mit einer Menge von 32 und einen Preis von Null buchen, was den Betrag von Null ergibt. Sie können dann diese Menge im Kontext einem Finanzberichts verwenden, um einem Preis pro Menge zu bestimmen. Beachten Sie, dass keine Abfragen oder Berichte als Teil dieser Funktion aktualisiert wurden; mit der Funktion können Sie momentan nur eine Menge von Null buchen.
+
+Die Funktion **Budgetregistereintrags-Standardwerte für den Betragstyp** ermöglicht, dass der Standardbetragstyp innerhalb eines Budgetregistereintrags ein Betragstyp sein kann, der nicht Ausgaben entspricht. Die Budgetregistereintragsposition wird nun standardmäßig auf „Ausgaben“ gesetzt, wenn der Hauptkontotyp „Ausgaben“ ist. Sie wird standardmäßig auf „Umsatzerlös“ gesetzt, wenn der Hauptkontotyp „Ausgaben“ ist, und wird standardmäßig für alle anderen Kontotypen auf „Ausgaben“ gesetzt.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Verwenden der Arbeitsbereiche und Anfragenseiten, um des Budgets im Vergleich zum Istwert zu verfolgen
 Der Budget-Manager kann den aktuellen Status eines Budgets im Arbeitsbereich **Sachkontobudgets und Planungen** überprüfen. Die Registerkarten **Ausgaben über Budget** und **Umsatzerlös unter Budget** geben einen raschen Überblick über die Finanzdimensionskombinationen, wenn Budgetziele nicht erfüllt werden oder sich dem Schwellenwert nähern. Sie können den Budgetschwellenwertprozentsatz und die Finanzdimensionssätze, die in diesen Registerkarten verwendet werden, personalisieren, indem Sie den **Meinen Arbeitsbereich konfigurieren** anklicken. Sie können auf **Einheiten-Manager** klicken, um die Arbeitskräfte anzuzeigen, die für bestimmte Finanzdimensionskombinationen, die auf diesen Registerkarten ausgewählt werden, verantwortlich sind. Wenn Sie beispielsweise sehen, dass das Ausgabenbudget der Betriebsabteilung den Budgetschwellenwert überschreitet, können Sie den Betriebsabteilungsmanager einfach auffinden, um das Problem zu diskutieren. 

@@ -3,7 +3,7 @@ title: Manuelle Aktualisierung der Anlagenzähler
 description: Dieses Thema beschreibt die manuelle Aktualisierung von Anlagenzählern im Anlagenmanagement.
 author: josaw1
 manager: AnnBe
-ms.date: 08/15/2019
+ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,47 +16,51 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2019-08-15
+ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e7c5ec288404c18b00f9dcd0e66f50744d0aa2f
-ms.sourcegitcommit: f5bfa3212bc3ef7d944a358ef08fe8863fd93b91
+ms.openlocfilehash: 3072ab204b53b16988d2973b28a697041cb84c27
+ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "1875674"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2626132"
 ---
-# <a name="manual-update-of-asset-counters"></a>Manuelle Aktualisierung der Anlagenzähler
+# <a name="manual-update-of-asset-counters"></a>Die manuelle Aktualisierung von Anlagenzählern
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
 
 
-Zähler werden verwendet, um Registrierungen auf einer Anlage zu erstellen, z.B. hinsichtlich der Anzahl der Betriebsstunden oder der Anzahl der produzierten Mengen.
+Zähler werden verwendet, um Erfassungen für eine Anlage zu erstellen, z. B. Erfassungen zur Anzahl der Stunden, die die Anlage in Betrieb war, oder zur Menge, die produziert wurde.
 
-Wenn der für einen Zähler ausgewählte Zählertyp auf Vererbung von Zählerwerten eingestellt ist (**Anlagenmanagement** > **Einrichtung** > **Anlagentypen** > **Zähler** > **Allgemein** FastTab > **Anlagenzählerwerte vererben** Umschalttaste auf „Ja“ gesetzt), Wenn Sie dann eine neue Gegenzeile dieses Typs erstellen, wird jede untergeordnete Kühlstelle, die den gleichen Zählertyp verwendet, automatisch aktualisiert.
+Der Zählertyp, der für einen Zähler aktiviert wird, kann festgelegt werden, um Zählerwerte zu vererben. Das bedeutet, die Option **Anlagenzählerwerte vererben** ist auf **Ja** gesetzt auf dem Inforegister **Allgemein** der Seite **Zähler** (**Anlangenverwaltung** > **Einstellungen** > **Anlagentypen** > **Zähler**). In diesem Fall, wenn Sie eine neue Zählerposition dieses Typs erstellen, wird jede untergeordnete Anlage, die den gleichen Zählertyp verwendet, automatisch aktualisiert.
 
-Unter **Alle Anlagen** erstellen Sie Stunden- oder Mengenzählerregistrierungen für eine Anlage, basierend auf Ihren Messwerten für die Anlage.
+Auf der Seite **Alle Anlagen** erstellen Sie Stunden- oder Mengenzählerregistrierungen für eine Anlage, basierend auf Ihren Messwerten für die Anlage.
 
-1. Klicken Sie auf **Anlagenmanagement** > **Allgemein** > **Anlagen** > **Alle Anlagen**.
+1. Wählen Sie **Anlagenverwaltung** > **Allgemeines** > **Anlagen** > **Alle Anlagen**.
 
-2. Wählen Sie das Objekt in der Liste aus und klicken Sie auf **Zähler**. Im Formular **Anlagenzähler** sehen Sie eine Liste aller früheren Zählerregistrierungen für die ausgewählte Anlage.
+2. Wählen Sie die Anlage aus und dann im Aktivitätsbereich auf der Registerkarte **Anlage** in der Gruppe **Vorbeugend** die Option **Zähler**. Auf der Seite **Anlagenzähler** sehen Sie eine Liste aller früheren Zählerregistrierungen für die ausgewählte Anlage.
 
-3. Klicken Sie auf **Neu**, um eine neue Registrierung zu erstellen. Die Asset-ID wird automatisch eingefügt.
+3. Wählen Sie **Neu** aus, um eine Registrierung zu erstellen. Die Anlagen-ID wird automatisch in das Feld **Anlage** eingetragen.
 
-4. Wählen Sie im Feld **Zähler** den entsprechenden Zähler aus. Es sind nur Zähler verfügbar, die sich auf die auf der Anlage ausgewählte Anlagenart beziehen. Die zugehörige Einheit wird automatisch in das Feld **Einheit** eingefügt.
+4. Wählen Sie im Feld **Zähler** den entsprechenden Zähler aus. Es sind nur Zähler zur Auswahl verfügbar, die sich auf die auf der Anlage ausgewählte Anlagenart beziehen. Die zugehörige Einheit wird automatisch in das Feld **Einheit** eingegeben.
 
-5. Wählen Sie Datum und Uhrzeit für die Zählerregistrierung.
+5. Im Feld **Erfasst** wählen Sie das Datum und die Uhrzeit für die Zählererfassung aus.
 
-6. Geben Sie in das Feld **Wert** die Nummer seit der letzten Zählerregistrierung ein oder geben Sie im Feld **Aggregierter Wert** die Gesamtzählnummer ein.
+6. Geben Sie im Feld **Wert** die Zahl seit der letzten Zählererfassung ein. Sie können stattdessen im Feld **Aggregierter Wert** die gesamte Zählerzahl eingeben.
 
-- Wenn Sie einen neuen Zähler physisch auf einer Anlage installieren, müssen Sie die Änderung auf der Anlage in **Anlagenzähler** registrieren. Als nächstes müssen Sie zwei Registrierungszeilen mit identischen Zeitstempeln erstellen, und auf der Zeile mit dem neuen Zähler aktivieren Sie das Kontrollkästchen **Zähler zurücksetzen**. Wenn Sie die beiden Registrierungszeilen anlegen, muss die erste Zeile für den Zähler sein, den Sie ersetzen. Im Feld **Summen** ist die Gesamtzahl die Summe der Zählersumme aller registrierten Werte auf diesem Zählertyp.  
-- Wenn das Kontrollkästchen **Zählerrückstellung** bei einer Anlage mit einem Wartungsplan mit Intervalltyp „Einmal von...“ oder „Einmal erreicht...“ aktiviert ist, ist der Zähler auf der neuen Zählerzeile weiterhin aktiv, da Sie eine separate Zählerzeile erstellen und mit einem neuen Zähler neu beginnen.
+Beachten Sie die folgenden Punkte:
+
+- Wenn Sie einen neuen Zähler physisch auf einer Anlage installieren, müssen Sie die Änderung auf der Anlage auf der Seite **Anlagenzähler** registrieren. Danach müssen Sie zwei Erfassungspositionen erstellen, die identische Zeitstempel haben. Die erste Position muss für den Zähler sein, den Sie ersetzen. Auf der Position, die dem neuen Zähler zugeordnet ist, aktivieren Sie das Kontrollkästchen **Zähler zurücksetzen**. Im Feld **Summen** ist die Gesamtzahl die Summe der Zählersummen aller registrierten Werte auf diesem Zählertyp.
+
+- Wenn das Kontrollkästchen **Zähler zurücksetzen** bei einer Anlage mit einem Wartungsplan mit Intervalltyp „Einmal von...“ oder „Einmal erreicht...“ aktiviert ist, ist der Zähler auf der neuen Zählerposition weiterhin aktiv, da Sie eine separate Zählerposition erstellen und mit einem neuen Zähler neu beginnen.
+
+In der folgenden Abbildung wird ein Beispiel der Seite **Anlagenzähler** angezeigt.
 
 ![Abbildung 1](media/11-work-orders.png)
 
-
-Wenn Sie für mehrere Anlagen Gegenregistrierungen vornehmen müssen, kann dies in **Anlagenmanagement** > **Anfragen** > **Anlagen** > **Anlagenzähler** erfolgen.
+Auf der Seite **Anlagenzähler** (**Anlagenverwaltung** > **Abfragen** > **Anlagen** > **Anlagenzähler**) können Sie Zählererfassungen für mehrere Anlagen gleichzeitig nach Bedarf vornehmen.
 
 >[!NOTE]
->Sie können einen Bereich einrichten, um Abweichungen bei manuellen Zählerregistrierungen zu definieren, und die Art der Meldung, die angezeigt werden soll, wenn Registrierungen außerhalb des definierten Bereichs liegen. Lesen Sie das Thema [Zähler](../setup-for-objects/counters.md) zur Einrichtung von Zählern.
+>Sie können einen Bereich einrichten, um Abweichungen in den manuellen Zählererfassungen zu definieren. Sie können auch die Art der Meldung angeben, die angezeigt wird, wenn Erfassungen außerhalb des definierten Bereich sind. Weitere Informationen zum Einrichten von Zählern finden Sie unter [Zähler](../setup-for-objects/counters.md).
+

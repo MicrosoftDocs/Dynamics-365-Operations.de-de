@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8b4e783f79b02c77a27fc59c2f4be8a192f2f476
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
+ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248699"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "2553090"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sicherungsspeicher von ER-Vorlagen
 
@@ -33,7 +33,7 @@ Mit dem [Electronic Reporting (ER)-Framework](general-electronic-reporting.md) k
 
 Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht werden. Jede ER-Lösung kann von einer Finance and Operations-Instanz exportiert und in eine andere Instanz importiert werden.
 
-Das ER-Framework verwendet das [Dokumentverwaltungsframework](../../fin-and-ops/organization-administration/configure-document-management.md), um erforderliche Vorlagen für die aktuelle Finance and Operations-Instanz beizubehalten. Je nach Einstellungen des ER-Frameworks kann Microsoft Azure BLOB-Speicher oder ein Microsoft SharePoint-Ordner als physischer Primärspeicherort für Vorlagen ausgewählt werden. (Weitere Informationen, finden Sie unter [Konfigurieren des ER-Frameworks](electronic-reporting-er-configure-parameters.md).) Die DocuValue-Tabelle enthält einen einzelnen Datensatz für jede Vorlage. In jedem Datensatz speichert das Feld **AccessInformation** den Pfad einer Vorlagendatei, die sich im konfigurierten Speicherort befindet.
+Das ER-Framework verwendet das [Dokumentverwaltungsframework](../../fin-ops/organization-administration/configure-document-management.md), um erforderliche Vorlagen für die aktuelle Finance and Operations-Instanz beizubehalten. Je nach Einstellungen des ER-Frameworks kann Microsoft Azure BLOB-Speicher oder ein Microsoft SharePoint-Ordner als physischer Primärspeicherort für Vorlagen ausgewählt werden. (Weitere Informationen, finden Sie unter [Konfigurieren des ER-Frameworks](electronic-reporting-er-configure-parameters.md).) Die DocuValue-Tabelle enthält einen einzelnen Datensatz für jede Vorlage. In jedem Datensatz speichert das Feld **AccessInformation** den Pfad einer Vorlagendatei, die sich im konfigurierten Speicherort befindet.
 
 Wenn Sie Ihre Finance and Operations-Instanzen verwalten, können Sie die aktuelle Instanz zu einem anderem Speicherort migrieren. Sie können Ihre Produktionsinstanz beispielsweise zu einer neuen Sandboxumgebung migrieren. Wenn Sie das ER-Framework konfigurieren, um Vorlagen im BLOB-Speicher zu speichern, verweist die DocuValue-Tabelle in der neuen Sandboxumgebung auf die BLOB-Speicherinstanz in der Produktionsumgebung. Auf diese Instanz kann jedoch nicht über die Sandboxumgebung zugegriffen werden, da der Migrationsvorgang die Migration von Artefakten im BLOB-Speicher nicht unterstützt. Daher tritt eine Ausnahme auf, wenn Sie versuchen, ein ER-Format auszuführen, das eine Vorlage zum Generieren von Geschäftsdokumenten verwendet, und Sie erhalten eine Benachrichtigung, dass die Vorlage fehlt. Sie erhalten eine Anleitung dazu, wie Sie die in der ER-Formatkonfiguration enthaltene Vorlage mit dem ER-Bereinigungstool löschen und erneut importiert. Dieser Vorgang kann zeitaufwändig sein, da Sie möglicherweise über mehrere ER-Formatkonfigurationen verfügen.
 

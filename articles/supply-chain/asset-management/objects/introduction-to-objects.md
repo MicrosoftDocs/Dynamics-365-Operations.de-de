@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84609106fc3daafbbfed6f947df4524160bd7450
-ms.sourcegitcommit: 747bcd25ce7c6c20ce9eaa0027e730f74d4fd6aa
+ms.openlocfilehash: cf23d4b01729e6c1ece633b009f033b9d74bc7fe
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "1783292"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2571552"
 ---
 # <a name="introduction-to-assets"></a>Einführung in Anlagen
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Dieses Thema bietet einen Überblick über Anlagen in Asset Management. Eine *Anlage* ist jeder Ausrüstungstyp, wie z. B. eine Maschine oder ein Maschinenteil, der Wartung, Service oder Reparatur benötigt.
 
@@ -41,7 +41,7 @@ Wählen Sie **Anlagenverwaltung** \> **Allgemeines** \> **Anlagen** \> **Alle An
 
 Wählen Sie in der Rasteransicht **Alle Anlagen** eine Verknüpfung in der Spalte **Anlage** aus, um die Details für den ausgewählten Datensatz anzuzeigen. Um den Datensatz zu bearbeiten, wählen Sie die Schaltfläche **Bearbeiten**. Die Detailansicht zeigt detaillierte Informationen an, die sich auf die Anlage beziehen. Der Bereich **Zugehörige Informationen** auf der rechten Seite enthält zusätzliche auf Anlagen bezogene Informationen. Erweitern Sie den Bereich, um die zugehörigen Informationen für die ausgewählte Anlage anzuzeigen.
 
-Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst. Die folgende Tabelle beschreibt kurz die Schaltflächen, die sich auf Asset Management beziehen.
+Die Schaltflächen im Aktivitätsbereich sind auf Registerkarten zusammengefasst. Die folgende Tabelle beschreibt kurz die Schaltflächen, die sich auf Anlagenmanagement beziehen.
 
 | Name der Schaltfläche          | Beschreibung                                                                                                                                                       |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|

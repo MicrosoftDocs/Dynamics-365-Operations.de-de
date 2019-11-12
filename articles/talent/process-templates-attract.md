@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 694835d20e3401aaeb22aa19082a2cd0e3a0163a
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
+ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2010705"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "2622717"
 ---
-# <a name="create-a-process-template"></a>Prozessvorlage erstellen
+# <a name="create-a-process-template-in-attract"></a>Erstellen einer Prozessvorlage in Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ Nur Administratoren können Standardvorlagen festlegen. Die Standardvorlage wird
 
 ## <a name="create-a-process-template"></a>Erstellen einer Prozessvorlage
 
-Administratoren, Personalverantwortliche und Manager können Prozessvorlagen erstellen. Eine Prozessvorlage besteht aus *Phasen* und *Aktivitäten*. Gruppieren Sie Phasen in eine oder mehrere Aktionen. Standardmäßig hat jede Prozessvorlage Interessenten, Anwendungen und Angebotsaktivitäten. Die Phasen, die diese Aktivitäten enthalten, können umbenannt werden. Sie können mehrere Phasen hinzufügen, indem Sie **+ Neue Phase** auswählen. Sie können Aktivitäten in einer Phase entweder durch ziehen oder doppelklicken einer Aktivitätenliste zuweisen.
+Administratoren, Personalverantwortliche und Manager können Prozessvorlagen erstellen. Eine Prozessvorlage besteht aus *Phasen* und *Aktivitäten*. Gruppieren Sie Phasen in eine oder mehrere Aktionen. Standardmäßig hat jede Prozessvorlage Interessenten, Anwendungen und Angebotsaktivitäten. Die Phasen, die diese Aktivitäten enthalten, können umbenannt werden. Sie können mehrere Phasen hinzufügen, indem Sie **+ Neue Phase** auswählen. Sie können Aktivitäten in einer Phase entweder durch ziehen oder doppelklicken einer Aktivitätenliste hinzufügen.
 
 > [!NOTE]
 > Phasennamen sind für Kandidaten auf der Seite **Bewerbungsstatus** sichtbar. Sie sollten diesen Tatsache berücksichtigen, wenn Sie Namen für Phasen auswählen.

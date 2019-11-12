@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 174c816c7a6442b07e4722c03045293b94c59153
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
+ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024659"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "2653322"
 ---
 # <a name="register-consumption"></a>Verbrauch registrieren
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 Wenn ein Wartungsauftrag abgeschlossen ist, ist der nächste Schritt die Verbrauchserfassung und die Buchung der Journale. Sie können Anmeldungen zu den folgenden Verbrauchsarten vornehmen: Stunden, Elemente und Ausgaben. Die verschiedenen Verbrauchsarten werden erfasst und auf der Seite **Arbeitsauftragserfassungen** gebucht. Die Erfassungseinrichtung in **Anlagenmanagement** dient der Erstellung und Buchung von separaten Journalen für Stunden, Posten und Ausgaben im Modul **Projektmanagement und Abrechnung**.
 
-Sie könnenin einem Arbeitsauftrag Prognosezeile hinzufügen oder löschen. Die Einrichtung eines Arbeitsauftrags-Lebenszykluszustands, der zugehörige Projekttyp und die mit dem Projekttyp verbundenen Stufenregeln bestimmen, ob Sie Erfassungszeilen hinzufügen oder bearbeiten können. Lesen Sie mehr über den Lebenszyklus von Arbeitsaufträgen und die damit verbundenen Projektphasen unter [Integration in das Projektmanagement und Rechnungswesen](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+In einigen Fällen können Sie einem Arbeitsauftrag Prognosezeile hinzufügen oder löschen. Die Einrichtung eines Arbeitsauftrags-Lebenszykluszustands, der zugehörige Projekttyp und die mit dem Projekttyp verbundenen Stufenregeln bestimmen, ob Sie Erfassungszeilen hinzufügen oder bearbeiten können. Lesen Sie mehr über den Lebenszyklus von Arbeitsaufträgen und die damit verbundenen Projektphasen unter [Integration in das Projektmanagement und Rechnungswesen](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Es ist möglich, eine automatische Buchung von Erfassungen über den Lebenszyklus eines Arbeitsauftrags einzurichten. Weitere Informationen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](../setup-for-work-orders/work-order-lifecycle-states.md).
@@ -50,10 +50,10 @@ Sie könnenin einem Arbeitsauftrag Prognosezeile hinzufügen oder löschen. Die 
 
 6. Klicken Sie auf **Erfassungen buchen**, um die Erfassungszeilen zu buchen.
 
-7. Nachdem Sie die Verbrauchserfssungen gebucht haben, können Sie den Lebenszykluszustand des Arbeitsauftrags, z.B. auf „Beendet“, aktualisieren, um anzuzeigen, dass der Arbeitsauftrag abgeschlossen ist.
+7. Nachdem Sie die Verbrauchserfassungen gebucht haben, können Sie den Arbeitsauftragslebenszyklusstatus aktualisieren. Beispielsweise um anzugeben, dass der Arbeitsauftrag abgeschlossen wurde, können Sie den Lebenszyklusstatus in „Abgeschlossen“ aktualisieren.
 
-- Wählen Sie im Feld **Anzeigen** oben auf der Seite **Arbeitsauftragserfassungen** aus, welche Erfassungszeilen Sie sehen möchten: Alle, Nicht gebucht oder gebucht. Die gebuchten Erfassungen haben ein Häkchen im Kontrollkästchen **Gebucht**.  
-- Wenn Artikelzeilen im Arbeitsauftragserfassungen erstellt werden, werden Produktdimensionen und Tracking-Dimensionen, die sich auf den Artikel beziehen, automatisch in die Journalzeile übertragen.  
+    - Wählen Sie im Feld **Anzeigen** oben auf der Seite **Arbeitsauftragserfassungen** aus, welche Erfassungszeilen Sie sehen möchten: **Alle**, **Nicht gebucht** oder **Gebucht**. Die gebuchten Erfassungen haben ein Häkchen im Kontrollkästchen **Gebucht**.  
+    - Wenn Artikelzeilen im Arbeitsauftragserfassungen erstellt werden, werden Produktdimensionen und Tracking-Dimensionen, die sich auf den Artikel beziehen, automatisch in die Journalzeile übertragen.  
 
 Der folgende Screenshot zeigt ein Beispiel für Stunden- und Artikelregistrierungen auf einem Arbeitsauftrag in **Arbeitsauftragserfassungen**.
 
@@ -76,7 +76,7 @@ Wenn ein Arbeitsauftrag mehrere Arbeitsaufträge enthält, können Sie die Arbei
 
 6. Geben Sie in das Feld **Stunden** die Anzahl der zu teilenden Arbeitsstunden ein.
 
-![Abbildung 2](media/02-consumption.png)
+    ![Abbildung 2](media/02-consumption.png)
 
 7. Klicken Sie auf **OK**.
 
@@ -88,10 +88,10 @@ Wenn ein Arbeitsauftrag mehrere Arbeitsaufträge enthält, können Sie die Arbei
 
 Wenn Sie Verbrauchserfassungen durchführen, werden die Registrierungen in einer bestimmten Reihenfolge um finanzielle Aspekte der verschiedenen Registrierungsarten ergänzt. 
 
-*Stunden- und Ausgabenregistrierungen:* Zunächst werden die finanziellen Dimensionen aus dem Erfassungs-Header hinzugefügt, falls vorhanden. Als nächstes werden die finanziellen Dimensionen aus dem zugehörigen Arbeitsauftragsprojekt hinzugefügt. Schließlich werden die finanziellen Dimensionen der Ressource (Arbeiter) hinzugefügt.
+- *Stunden- und Ausgabenregistrierungen:* Zunächst werden die finanziellen Dimensionen aus dem Erfassungs-Header hinzugefügt, falls vorhanden. Als nächstes werden die finanziellen Dimensionen aus dem zugehörigen Arbeitsauftragsprojekt hinzugefügt. Schließlich werden die finanziellen Dimensionen der Ressource (Arbeiter) hinzugefügt.
 
-*Elementregistrierungen:* Zunächst werden finanzielle Dimensionen aus dem Erfassungskopf hinzugefügt, falls vorhanden. Dann werden die finanziellen Dimensionen aus dem zugehörigen Arbeitsauftragsprojekt hinzugefügt. Als nächstes werden die finanziellen Dimensionen des Standorts hinzugefügt. Schließlich werden die finanziellen Dimensionen aus der Position hinzugefügt.
+- *Elementregistrierungen:* Zunächst werden finanzielle Dimensionen aus dem Erfassungskopf hinzugefügt, falls vorhanden. Dann werden die finanziellen Dimensionen aus dem zugehörigen Arbeitsauftragsprojekt hinzugefügt. Als nächstes werden die finanziellen Dimensionen des Standorts hinzugefügt. Schließlich werden die finanziellen Dimensionen aus der Position hinzugefügt.
 
 >[!NOTE]
->Für alle drei Registrierungsarten wird die Kombination der finanziellen Dimension validiert und ungültige Kombinationen werden ausgeblendet. Dies ist Standardeinstellung in Finance and Operations.
+>Für alle drei Registrierungsarten wird die Kombination der finanziellen Dimension validiert und ungültige Kombinationen werden ausgeblendet. Dies sind die Standardeinstellungen mit anderen Finance and Operations-Apps.
 

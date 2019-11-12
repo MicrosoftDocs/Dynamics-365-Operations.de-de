@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4fc32d337be1f71932555fcb062a8d05c9ca9bda
-ms.sourcegitcommit: 2292b54e2da96f71b59ec9ccf17cd32d3d1d8b21
+ms.openlocfilehash: 1aee14c869d84bef38a738bfe78fd09ee7f82d94
+ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "1918417"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "2652378"
 ---
 # <a name="asset-kpis"></a>Anlagen-KPIs
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
+ 
 
 In Asset Management können Sie verschiedene Key Performance Indicators (KPIs) für Anlagen und Anlagentypen berechnen. Sie können KPIs verwenden, um einen Überblick der Leistung von Anlagen in Bezug auf beispielsweise Uptime, Ausfallzeiten, Reparaturzeit und mittlere ausfallfreie Betriebszeit (MTBF) zu erhalten.
 
@@ -85,7 +85,7 @@ In der Tabelle unten finden Sie eine Beschreibung der Felder auf der Seite **Anl
 
 Die folgende Abbildung zeigt ein Bildschirmabbild einer KPI-Berechnung für vier Anlagen.
 
-![Abbildung 1](media/11-controlling-and-reporting.png)
+![Screenshot einer KPI-Berechnung für vier Anlagen](media/11-controlling-and-reporting.png)
 
 - Sie können mehrere Anlagen in **Alle Anlagen** auswählen und dann auf die Schaltfläche **Anlagen-KPIs** auf der Registerkarte **Allgemein** klicken. Klicken Sie dann im Dialogfeld **Anlagen-KPIs berechnen** auf **OK**, um KPIs für die ausgewählten Anlagen zu berechnen.  
 - Ergebnisse einer KPI-Berechnung können [Wartungsausfallzeiterfassungen](../work-orders/maintenance-downtime.md) enthalten, je nach Einstellungen und Verwendung von Wartungsausfallzeitursachencodes. 

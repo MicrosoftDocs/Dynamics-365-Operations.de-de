@@ -16,20 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 244321e1eb246c46260326a8892924d9d9da75d3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
+ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175943"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "2570355"
 ---
 # <a name="recognize-deferred-revenue"></a>Erkennen verzögerter Umsatzerlöse
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Die Umsatzerkennungsfunktion kann bisher nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
+> Die Umsatzerkennungsfunktion kann nicht über die Funktionsverwaltung aktiviert werden. Sie müssen derzeit Konfigurationsschlüssel verwenden, um sie zu aktivieren.
 
 In diesem Thema wird die Erkennung von Umsatzerlösen im Umsatzerkennungszeitplan beschrieben. Nachdem eine Rechnung für einen Auftrag gebucht wurde, wird ein Umsatzerkennungszeitplan für jede Auftragsposition erstellt, die einen Umsatzerlöszeitplan hat. Der Umsatzerlöszeitplan in einer Position wird verwendet, um zu bestimmen, ob der Umsatz der Position verzögert werden soll.
 
