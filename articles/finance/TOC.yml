@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Anmelden für Vorschauabonnement
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
+            - name: Debitorenzahlungseinblicke (Vorschau)
+              href: accounts-receivable/payment-insights-overview.md
             - name: Dienstupdates für eine Version
               items:
                 - name: Dienstupdates für eine Version – Übersicht
@@ -298,7 +300,7 @@
                   href: accounts-payable/vendor-payments-partial-amount.md
                 - name: Seite mit Lieferantentransaktionen
                   href: accounts-payable/vendor-transaction-list-page.md
-        - name: Debitorenkonten
+        - name: Debitoren
           items:
             - name: Debitoren – Startseite
               href: accounts-receivable/accounts-receivable.md
@@ -2239,6 +2241,8 @@
                       href: localizations/rus-currency-sale-purchase.md
                     - name: Handkasse
                       href: localizations/emea-petty-cash.md
+                    - name: Bargeld – Lokale Hauptformulare und einheitliche Berichte
+                      href: localizations/rus-local-primary-forms-and-unified-reports.md
                 - name: MwSt.
                   items:
                     - name: Lokale bestimmte Buchung der Ausgangssteuer
@@ -2255,6 +2259,8 @@
                       href: localizations/rus-sales-books-purchase-books.md
                     - name: Vorauszahlungsverwaltung
                       href: localizations/rus-prepayments-management.md
+                    - name: Eingehende MwSt. wiederherstellen
+                      href: localizations/rus-incoming-VAT-restoring.md
                 - name: Anlagen
                   items:
                     - name: Anlagen verwalten
@@ -2313,6 +2319,14 @@
                       href: localizations/rus-cash-flow.md
                     - name: Zuordnung der sonstigen Kosten im Verhältnis zu Gewicht und Volumen
                       href: localizations/rus-miscellaneous-charges.md
+                    - name: Sonstige Zuschläge von Dritten
+                      href: localizations/rus-third-party-misc-charges.md
+                - name: Lager
+                  items:
+                    - name: Waren in Zustellung vom Kreditor
+                      href: localizations/rus-goods-transit-vendor.md
+                    - name: Zollerklärungnummern
+                      href: localizations/rus-custom-declaration-number.md
                 - name: Berichterstellung
                   items:
                     - name: Finanzberichterstellung
@@ -2335,6 +2349,8 @@
                       href: localizations/rus-officials.md
                     - name: Unternehmensbereiche
                       href: localizations/rus-company-divisions.md
+                    - name: Russische Adressformate und Importieren aus FIAS
+                      href: localizations/rus-russian-address-format-and-import-from-FIAS.md
                 - name: Stundungen
                   items:
                     - name: Stundungen einrichten
@@ -2869,6 +2885,12 @@
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Importieren von Konfigurationen aus RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: Lernprogramme
+                  items:
+                    - name: 'Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md
+                    - name: Konfigurieren des Länderkontext auf Basis der ER-Modellzuordnungen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md
                 - name: Verwenden elektronischer Berichtslösungen in Finance and Operations
                   items:
                     - name: Konfigurieren des Framework
@@ -2903,6 +2925,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Geschäftsdokumentverwaltung – Übersicht
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
+                    - name: Hinzufügen von neuen Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                 - name: ER-Framework API
                   items:
                     - name: Die Liste der elektronischen Berichterstellungsfunktionen erweitern
