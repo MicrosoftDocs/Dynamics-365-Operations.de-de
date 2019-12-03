@@ -848,8 +848,10 @@
               href: tasks/retail-price-adjustments.md
         - name: Treue
           items:
-            - name: Übersicht über die Loyalität
+            - name: Übersicht zur Treue
               href: set-up-customer-loyalty-program.md
+            - name: Übersicht zu Kundenaktionen
+              href: clienteling-overview.md
         - name: Zahlungen
           items:
             - name: Zahlungsmethoden
@@ -1246,7 +1248,7 @@
                   href: dev-itpro/overview-upgrade-n-minus1.md
                 - name: 'Installation, Konfiguration und Übernahme des phasenweisen Rollouts (N-1)'
                   href: dev-itpro/n-1-installation-configuration.md
-                - name: Die Einzelhandelskanalerweiterung auf das aktuellste Retail SDK aktualisieren
+                - name: Die Retail Channel-Erweiterung auf das aktuellste Retail SDK aktualisieren
                   href: dev-itpro/retailSDK-update.md
             - name: Implementierungsleitfaden
               items:
@@ -1268,8 +1270,6 @@
                   href: Open-URL-in-POS.md
                 - name: Installieren des POS-Layoutdesigners
                   href: install-pos-layout-designer.md
-                - name: Retail Modern POS im Offlinemodus
-                  href: dev-itpro/retail-modern-pos-offline.md
                 - name: POS Dual-Anzeigenansicht erweitern
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Auslösererweiterbarkeit für Retail Modern POS und Cloud POS
@@ -1332,6 +1332,8 @@
                   href: dev-itpro/trigger-example-blocking-transaction.md
                 - name: Implementieren einer Rückgaberichtlinie mithilfe von Auslösern
                   href: dev-itpro/trigger-example-return-policy.md
+                - name: Protokollerweiterungsereignisse zu Application Insights
+                  href: dev-itpro/commerce-application-insights.md
             - name: E-Commerce-Erweiterbarkeit
               items:
                 - name: Onlineshops konfigurieren

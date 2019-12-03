@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 17774053badb00cc464c34c7c90194a26839cc7d
-ms.sourcegitcommit: 807dec193cd163c9f5d949e744cfde40f2eb24b4
+ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2469001"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770918"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-Anwendungsdokumentation
 
@@ -68,11 +68,11 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 <h3><a href="../dev-itpro/data-entities/integration-overview.md">Integrationen</a></h3>
 <p><a href="../dev-itpro/business-events/home-page.md">Geschäftsereignisse</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Datenentitäten</a></p>
-<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration mithilfe von Microsoft Flow</a></p>
+<p><a href="../dev-itpro/data-entities/fin-ops-connector.md">Integration mit Microsoft Power Automate</a></p>
 
 <h3><a href="../../finance/index.md">Finanzverwaltung</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
-<p><a href="../../finance/accounts-receivable/accounts-receivable.md">Debitorenkonten</a></p>
+<p><a href="../../finance/accounts-receivable/accounts-receivable.md">Debitoren</a></p>
 <p><a href="../../finance/budgeting/budgeting-overview.md">Budgetierung</a></p>
 <p><a href="../../finance/cash-bank-management/cash-bank-management.md">Bargeld- und Bankverwaltung</a></p>
 <p><a href="../../finance/general-ledger/audit-policy-rules.md">Konformität</a></p>

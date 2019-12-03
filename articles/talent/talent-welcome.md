@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: edc2f59752a32b9cd20902d0b7a1edfe3ba4d15b
-ms.sourcegitcommit: ff160a9f9879f3ec015ffef11fbc8b7c1b84a59d
+ms.openlocfilehash: 841ef8f2b7c319e0a6b3a9ce9a9e4959e70aa8cd
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552949"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812763"
 ---
 # <a name="welcome-to-dynamics-365-talent"></a>Willkommen bei Dynamics 365 Talent
 
@@ -52,11 +52,11 @@ Entdecken Sie Dynamics 365 Talent, indem Sie das Video [Erste Schritte mit Dynam
 
 Bei Ihrer Arbeit mit Talent entscheiden Sie über die Strukturierung Ihrer Organisation mithilfe von Elementen wie Abteilungen, Stellen und Positionen. Diese gehören zu den grundlegenden Elementen, die Sie konfigurieren. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
--   [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](departments-jobs-positions.md)
--   [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](set-up-company-specific-hr-parameters.md)
+-   [Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen](departments-jobs-positions.md)
+-   [Unternehmensspezifische Personalverwaltungsparameter einrichten](set-up-company-specific-hr-parameters.md)
 -   [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](set-up-hr-parameters-across-legal-entities.md) 
 -   [FAQs zu Personalaktivitäten](personnel-actions-faq.md)
--   [Urlaubs- und Abwesenheitsübersicht](leave-absence-overview.md)
+-   [Urlaubs- und Abwesenheitsverwaltung](leave-absence-overview.md)
 -   [Verwenden von Dynamics 365 Talent: Urlaub und Abwesenheit (Video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
 -   [Personalverwaltung in Dynamics 365 Talent (Video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
@@ -64,8 +64,8 @@ Bei Ihrer Arbeit mit Talent entscheiden Sie über die Strukturierung Ihrer Organ
 
 Talent enthält die App Attract. Diese unterstützt Sie beim Ausfindigmachen, bei den Vorstellungsgesprächen und der Einstellung von Kandidaten mit den von Ihrer Organisation benötigten Fähigkeiten. Sobald Sie von der Personalbeschaffung zur Einstellung übergehen, kann Sie die App Onboard dabei unterstützen, den neuen Mitarbeiter in Ihre Organisation einzuführen. Es werden genaue Erwartungen festgelegt, Informationen werden bereitgestellt, die für den Einstieg benötigt werden, neue Mitarbeiter werden mit Kollegen in Kontakt gebracht, und sie werden auf den Erfolg in ihrer neuen Rolle vorbereitet.  
 
-- [Überblick von Attract](attract-overview.md)
-- [Überblick von Onboard](create-onboarding-experience.md)
+- [Microsoft Dynamics 365 Talent - Attract-Funktionen und Leistungsspektrum](attract-overview.md)
+- [Erste Schritte mit Onboard](create-onboarding-experience.md)
 
 ## <a name="retain-and-motivate-employees"></a>Halten und Motivieren von Mitarbeitern
 
@@ -82,17 +82,17 @@ Sie können Pläne einrichten, um effektiv und ausgewogen Vergütungen sowie Obj
 Um Ihren Mitarbeitern beim Erreichen ihrer Karriereziele bei wichtigen Geschäftsanforderungen zu helfen, können Sie Ziele einrichten, Leistungsbeurteilungen erstellen und Feedback nachverfolgen. Um Mitarbeitern zu helfen, die benötigten Fähigkeiten zu entwickeln, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Agenden, Verläufe und Sitzungen einrichten, bevor Sie einen Kursleiter einem Kurs zuweisen oder jemanden für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
 -   [Leistungsverwaltung](performance-management-overview.md)
--   [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](skills.md)
--   [Verwalten von Schulung durch Kurse](courses.md)
+-   [Ausrichten der Mitarbeiterqualifikationen an den Geschäftsanforderungen](skills.md)
+-   [Schulungskurse einrichten](courses.md)
 -   [Verwalten der Mitarbeiterentwicklung in Dynamics 365 Talent (Video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Vorteile erstellen und verwalten
 
 Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vorteilsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
 
--   [Ein Vergütungsprogramm verwalten](manage-benefit-program.md)
+-   [Definieren und Verwalten eines Vergütungsprogramms](manage-benefit-program.md)
 -   [Vorteilsberechtigungsrichtlinien](benefit-eligibility-policies.md)
--   [An Arbeitskräfte ausgeliehene Artikel verwalten](loan-items.md)
+-   [Artikel verwalten, die an Arbeitskräfte ausgeliehen werden](loan-items.md)
 -   [Verwalten der Mitarbeitervorteile in Dynamics 365 Talent (Video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
@@ -107,6 +107,6 @@ Talent hilft Ihnen bei der Verwaltung einer sicheren Arbeitsumgebung, die mit de
 Sie können Fragebögen entwerfen und verwalten, um Informationen für die verschiedensten Zwecke zu sammeln. Die Fragebogenfunktion ermöglicht das Entwerfen und Erstellen von Fragebögen. Wenn ein Fragebogen fertig ist, lassen Sie ihn allgemein oder innerhalb einer bestimmten Gruppe von Befragten ausfüllen. Nachdem die Teilnehmer ihre Antworten angegeben haben, überprüfen und analysieren Sie die Ergebnisse.
 
 -   [Fragebögen](questionnaires.md)
--   [Entwerfen eines Fragebogens](design-questionnaires.md)
--   [Einen Fragebogen verteilen und ausfüllen](distribute-questionnaires.md)
--   [Die Ergebnisse eines Fragebogens anzeigen und auswerten](evaluate-questionnaire-results.md)
+-   [Entwerfen von Fragebögen](design-questionnaires.md)
+-   [Verteilen und Planen von Fragebögen](distribute-questionnaires.md)
+-   [Anzeigen und Auswerten der Ergebnisse eines Fragebögen](evaluate-questionnaire-results.md)
