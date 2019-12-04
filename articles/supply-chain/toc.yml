@@ -571,6 +571,8 @@
                   href: cost-management/inventory-close.md
                 - name: Regulieren der Einstandswerte für verfügbaren Bestand
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Bestandsfälligkeitsbericht
+                  href: cost-management/inventory-aging-report-storage.md
             - name: Fertigungsbuchhaltung
               items:
                 - name: Herstellkostenkalkulationen
@@ -868,7 +870,13 @@
                         - name: Herunterladen von ER-Konfigurationen aus dem RCS-Repository für den RCS-Typ
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Importieren von Konfigurationen aus RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Lernprogramme
+                      items:
+                        - name: 'Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurieren des Länderkontext auf Basis der ER-Modellzuordnungen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Verwenden elektronischer Berichtslösungen in Finance and Operations
                   items:
                     - name: Konfigurieren des Framework
@@ -903,6 +911,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Geschäftsdokumentverwaltung – Übersicht
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Hinzufügen von neuen Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel
+                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ER-Framework API
                   items:
                     - name: Die Liste der elektronischen Berichterstellungsfunktionen erweitern
@@ -1051,13 +1061,29 @@
           items:
             - name: Hauptplanung – Startseite
               href: master-planning/master-planning-home-page.md
-            - name: Hauptpläne
+            - name: Planungsoptimierung
               items:
-                - name: Hauptpläne – Übersicht
+                - name: Übersicht zur Planungsoptimierung
+                  href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Erste Schritte mit der Planungsoptimierung
+                  href: master-planning/planning-optimization/get-started.md
+                - name: Passanalalyse zu Planungsoptimierung
+                  href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: Anwenden von Filtern auf einen Plan
+                  href: master-planning/planning-optimization/plan-filters.md
+                - name: Planhistorie- und Planungsprotokolle anzeigen
+                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Automatische Umwandlung mit der Planungsoptimerung
+                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Abbrechen eines Planungsvorgangs
+                  href: master-planning/planning-optimization/cancel-planning-job.md
+            - name: Produktprogrammplan
+              items:
+                - name: Übersicht zu Produktprogrammplänen
                   href: master-planning/master-plans.md
-                - name: Hauptpläne einrichten
+                - name: Einrichten von Produktprogrammplänen
                   href: master-planning/master-planning-setup.md
-                - name: Einrichtungs-Assistent für Hauptpläne
+                - name: Einrichtungsassistent für Produktprogrammpläne
                   href: master-planning/master-planning-setup-wizard.md
                 - name: Deckungseinstellungen
                   href: master-planning/coverage-settings.md

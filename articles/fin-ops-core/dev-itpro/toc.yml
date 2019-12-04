@@ -2,6 +2,8 @@
   items:
     - name: Entwicklung und Administration für Finance and Operations-Apps
       items:
+        - name: Finance and Operations-Anwendungsdokumentation
+          href: ../fin-ops/index.md
         - name: Entwicklung und Administration für Finance and Operations-Apps
           href: index.md
         - name: Neuerungen oder Änderungen
@@ -128,16 +130,28 @@
                           href: data-entities/dual-write-overview.md
                         - name: Organisationshierarchie in Common Data Service
                           href: data-entities/dual-write-organization.md
-                        - name: Unternehmenskonzept in Common Data Service
-                          href: data-entities/dual-write-company.md
+                        - name: Unternehmensintegration
+                          items:
+                            - name: Unternehmenskonzept in Common Data Service
+                              href: data-entities/dual-write-company.md
+                            - name: Bootstrap mit Unternehmensdaten
+                              href: data-entities/dual-write-bootstrap.md
                         - name: Integrierte Masterdaten von Debitoren
                           href: data-entities/dual-write-customer.md
+                        - name: Integriertes Sachkonto
+                          href: data-entities/dual-write-ledger.md
                         - name: Einheitliche Produktumgebung
                           href: data-entities/dual-write-product.md
-                        - name: Integrierte Masterdaten von Kreditoren
-                          href: data-entities/dual-write-vendor.md
+                        - name: Kreditorintegration
+                          items:
+                            - name: Integrierte Masterdaten von Kreditoren
+                              href: data-entities/dual-write-vendor.md
+                            - name: Wechsel zwischen Kreditorendesigns
+                              href: data-entities/dual-write-vendor-switch.md
                         - name: Integrierte Standorte und Lagerorte
                           href: data-entities/dual-write-sites-and-warehouses.md
+                        - name: Integrierter Steuermaster
+                          href: data-entities/dual-write-tax.md
                         - name: Erstsynchronisierung
                           href: data-entities/dual-write-initial.md
                         - name: Problembehandlung für die Datenintegration
@@ -418,6 +432,8 @@
                   href: user-interface/client-disconnected.md
                 - name: Problembehandlung lokaler Bereitstellungen
                   href: deployment/troubleshoot-on-prem.md
+                - name: Skripts für die Auflösung von Problemen in lokalen Umgebungen
+                  href: deployment/onprem-tsg-implementations.md
                 - name: Zertifikatrotation
                   href: deployment/certificate-rotation-on-prem.md
             - name: Benutzerdefinierten Code erstellen

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c6a9e4dd3f3182c98a9f5491b07f8687c21e5c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 531fd219cc2db79e01a277c72eba66fb8a9b8bbd
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184070"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772650"
 ---
 # <a name="budgeting-home-page"></a>Budgetierung – Startseite
 
@@ -42,12 +42,12 @@ Der Prozess sowohl für die langfristige strategische Planung als auch für die 
 
 Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organisationskultur, in der die Mitarbeiter über organisatorische Ziele informiert sind und versuchen, diese Ziele mittels Richtlinien wie z. B. „Ziehen Sie eine Online-Besprechung einer Dienstreise vor“ zu erreichen. Die Anwendung beinhaltet ein Budgetsteuerungsframework, mit dem das Unternehmensmanagement entweder strikte Kontrolle (wodurch Buchungen verhindert werden, die über das Budget hinausgehen) oder weniger strikte Kontrolle (der Benutzer wird gewarnt, wenn die verfügbaren Budgetmittel überschritten werden, kann jedoch selbst entscheiden, ob er fortfahren möchte) wählen kann. Schließlich können Sie rollende Planungen verwenden. Eine rollende Planung ist ein regelmäßiger Vergleich des Budgets mit Istwerten und wird verwendet, um zu definieren, inwieweit das Unternehmen im Rahmen des Budgets agiert. Eine rollende Planung wird auch verwendet, um Trends zu erkennen. In Finance and Operations werden rollende Planungen durch ein Budgetplandokument als Erstplanungsaktivitäten unterstützt. Rollende Planungen können parallel zur Planung des bevorstehenden Budgetzyklus ausgeführt werden.
 
--   [Allgemeine Budgetplanung: Überblick und Konfiguration](basic-budgeting-overview-configuration.md)
--   [Budgetsteuerung: Überblick und Konfiguration](budget-control-overview-configuration.md)
--   [Budgetplanung: Überblick und Konfiguration](budget-planning-overview-configuration.md)
+-   [Budgetierungsüberblick](basic-budgeting-overview-configuration.md)
+-   [Budgetsteuerung – Übersicht](budget-control-overview-configuration.md)
+-   [Budgetplanung – Übersicht](budget-planning-overview-configuration.md)
 -   [Positionsplanung](position-forecasting.md)
 -   [Begründungsdokumente für die Budgetplanung](budget-planning-justification-docs.md)
--   [Microsoft Excel-Vorlagen zur Budgetplanung](budget-planning-excel-templates.md)
+-   [Budgetplanungsvorlagen für Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budgetierungstools
 [![Budgetierungstools](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 

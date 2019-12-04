@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce6ce9c3c08a165ca19eb8d83643fd87b970f1ca
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: e9fbc0e3f3960f25930f9587d489009bc34181c7
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658735"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772236"
 ---
 # <a name="accounts-payable-home-page"></a>Kreditorenkonten – Startseite
 
@@ -41,9 +41,9 @@ Sie können Kreditorenrechnungen manuell eingeben oder elektronisch über eine D
 
 Richten Sie Kreditorengruppen, Kreditorenkonten, Buchungsprofile, verschiedene Zahlungsoptionen sowie Parameter zu Kreditorenkonten, Gebühren, Lieferungen und Ziele, Solawechsel und andere Typen von Kreditorenkontendaten ein. 
 
-[Kreditorenkonten konfigurieren](accounts-payable-overview.md)
+[Kreditorenkonten konfigurieren – Übersicht](accounts-payable-overview.md)
 
-[Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Kreditorenrechnungen](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
+[Buchhaltungsverteilungen und Journaleinträge im untergeordneten Sachkonto für Kreditorenrechnungen](accounting-distributions-subledger-journal-entries-vendor-invoices.md) 
 
 [Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 
@@ -51,7 +51,7 @@ Richten Sie Kreditorengruppen, Kreditorenkonten, Buchungsprofile, verschiedene Z
 
 Verwenden Sie Kreditorenkonten, um Rechnungen und Aufwendungen an Kreditorenkonten zu verfolgen.
 
-[Kreditorenkonten-Rechnungsabgleich](accounts-payable-invoice-matching.md)
+[Rechnungsabgleich von Kreditorenkonten – Übersicht](accounts-payable-invoice-matching.md)
 
 [Kreditorenbuchungsprofile](vendor-posting-profiles.md)
 
@@ -61,7 +61,7 @@ Verwenden Sie Kreditorenkonten, um Rechnungen und Aufwendungen an Kreditorenkont
 
 [Rechnungsabgleich sowie Intercompany-Bestellungen](invoice-matching-intercompany-purchase-orders.md)
 
-[Beheben von Abweichungen beim Abgleich von Rechnungssummen](resolve-invoice-totals-invoice-matching-discrepancies.md)
+[Beheben von Abweichungen beim Abgleich von Rechnungssummen – Übersicht](resolve-invoice-totals-invoice-matching-discrepancies.md)
 
 [Standardgegenkonten für Kreditorenrechnungserfassungen und Rechnungsgenehmigungserfassungen](default-offset-accounts-vendor-invoice-journals.md)
 
@@ -93,27 +93,27 @@ Sie können jeder beliebigen benutzerdefinierten Zahlungsmethode einen vom Syste
 
 [Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen](take-cash-discount-outside-cash-discount-timeframe.md)
 
-[Elektronische Berichterstellung für Kreditorenschecks](electronic-reporting-sample-vendor-checks.md)
+[Beispiel für die elektronische Berichterstellung für Kreditorenschecks](electronic-reporting-sample-vendor-checks.md)
 
 [Stornieren einer Kreditorenzahlung](reverse-vendor-payment.md)
 
-[Überblick über Vorauszahlungsrechnungen und Vorauszahlungen](prepayments-invoices-vs-prepayments.md)
+[Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen](prepayments-invoices-vs-prepayments.md)
 
 [Zentralisierte Zahlungen für Kreditorenkonten](centralized-payments-accounts-payable.md)
 
-## <a name="settlements"></a>Ausgleiche
+## <a name="settlements"></a>Bedarfsdeckung
 
 Unter den folgenden Themen finden Sie Informationen zum Verwalten von Ausgleichen. Ausgleich ist der Prozess für das Ausgleichen von Zahlungen mit Rechnungen. 
 
 [Konfigurieren eines Ausgleichs](../cash-bank-management/configure-settlement.md)
 
-[Ausgleich einer teilweisen Kreditorenzahlung vor dem Rabattdatum](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+[Ausgleich einer teilweisen Kreditorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum](settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
 
 [Ausgleich einer teilweisen Kreditorenzahlung, bei der es Rabatte auf Kreditorengutschriften gibt](settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
 
 [Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat](settle-partial-vendor-payment-multiple-discount-periods.md)
 
-[Ausgleich einer teilweisen Kreditorenzahlung oder endgültigen Zahlung vor dem Rabatt](settle-partial-vendor-payment-or-final-payment-before-discount.md)
+[Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](settle-partial-vendor-payment-or-final-payment-before-discount.md)
 
 [Einzelner Beleg mit mehreren Debitoren- oder Kreditorendatensätzen](single-voucher-multiple-customer-vendor-records.md)
 
@@ -123,7 +123,7 @@ Unter den folgenden Themen finden Sie Informationen zum Verwalten von Ausgleiche
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Lesen Sie die [Microsoft Dynamics 365-Versionshinweise](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
+Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
 
 #### <a name="blogs"></a>Blogs
 

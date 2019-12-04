@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92fec444834be8ca4943932730b94beb8a1902e7
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536846"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771563"
 ---
 # <a name="business-intelligence-bi-and-reporting-home-page"></a>Business Intelligence (BI) und Berichterstellung – Startseite
 
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie in folgenden Themen:
 - [Power BI Embedded-Integration](power-bi-embedded-integration.md)
 - [Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen](add-analytics-tab-workspaces.md)
 - [Analysearbeitsbereiche und -berichte mit Power BI Embedded schützen](secure-analytical-workspaces.md)
-- [Power BI-Inhalte für Finance and Operations](power-bi-home-page.md)
+- [Power BI Inhalt – Startseite](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Geschäftsdokumente und Drucken
 Berichterstellungslösungen werden häufig verwendet, um die Details von Geschäftstransaktionen zu erfassen und zu kommunizieren. Daher muss eine Berichterstellungslösung in der Lage sein, physische Darstellungen von Geschäftsdaten mithilfe vorhandener Geräte zu erzeugen, wie beispielsweise Netzwerkdruckern. Beispiele von Geschäftsdokumenten umfassen Verkaufsrechnungen, Debitorenaufstellungen und Schecks.
@@ -57,9 +57,9 @@ Berichterstellungslösungen werden häufig verwendet, um die Details von Geschä
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Überblick über Dokumenterstellungsservices](document-reporting-services.md)
-- [Drucken in Finance and Operations-Anwendungen](print-documents.md)
-- [Installieren des Dokumentweiterleitungsagenten, um Netzwerkdruckergeräte zu aktivieren](install-document-routing-agent.md)
+- [Dokumenterstellungsservices](document-reporting-services.md)
+- [Dokumentendruck – Übersicht](print-documents.md)
+- [Installieren des Dokument-Routing-Agent, um Netzwerkdruck zu aktivieren](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronische Berichterstellung
 „Elektronische Berichterstellung” (ER) ist das Tool, mit dem Sie elektronische Dokumentformate konfigurieren, die die gesetzlichen Anforderungen verschiedener Länder oder Regionen erfüllen. Die Anwendungen der elektronischen Berichterstellung umfassen Finanzüberwachung, Steuererklärung und elektronische Rechnungsstellung.
@@ -68,9 +68,9 @@ Weitere Informationen finden Sie in folgenden Themen:
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
-- [Den Lebenszyklus der elektronischen Berichterstellungskonfiguration verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
-- [Eine elektronische Berichterstellungskonfiguration erstellen](electronic-reporting-configuration.md)
+- [Überblick über die elektronische Berichterstellung (ER)](general-electronic-reporting.md)
+- [Den Lebenszyklus der elektronischen Berichterstellungskonfiguration (ER) verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Eine Elektronische Berichterstellungskonfiguration (ER) erstellen](electronic-reporting-configuration.md)
 
 ## <a name="financial-reporting"></a>Finanzberichterstellung
 Standardfinanzberichte werden bereitgestellt, bei denen die standardmäßigen Hauptkontenkategorien verwendet werden. Sie können den Berichts-Designer verwenden, um traditionelle Finanzaufstellungen, wie beispielsweise Gewinn- & Verlustrechnungen und Bilanzen, zu erstellen oder zu ändern. Sie können die Ergebnisse dann für andere Mitglieder Ihrer Organisation freigeben. Beispiele für die Finanzberichterstellung umfassen Bilanzen, Cashflow und zusammenfassende Zwischenbilanzen im Vergleich zum Vorjahr.
@@ -79,14 +79,14 @@ Standardfinanzberichte werden bereitgestellt, bei denen die standardmäßigen Ha
 
 Weitere Informationen finden Sie in folgenden Themen:
 
-- [Finanzberichterstellung für Finance and Operations](financial-reporting-intro.md)
-- [Finanzbericht generieren](generate-financial-report.md)
+- [Finanzberichterstellung](financial-reporting-intro.md)
+- [Finanzberichte generieren](generate-financial-report.md)
 - [Finanzberichtkomponenten](financial-report-components.md)
 
 ## <a name="technical-reference-reports"></a>Technische Referenzberichte
 Die folgenden Berichte enthalten Referenzinformationen zu den Objekten:
 
-- [Bericht zu Datenentitäten](../data-entities/data-entities-report.md)
+- [Informationen zu Standarddatenentitäten suchen](../data-entities/data-entities-report.md)
 - [Bericht zu Lizenzcodes und Konfigurationsschlüsseln](../sysadmin/license-codes-configuration-keys-report.md)
-- [Bericht zu SQL Server Reporting Services-Berichten](SSRS-report.md)
+- [Verfügbare SQL Server Reporting Services-Berichte (SSRS)](SSRS-report.md)
 - [Bericht zu Workflowtypen](../../fin-ops/organization-administration/workflow-types-report.md)

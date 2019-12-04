@@ -3,7 +3,7 @@ title: Umsatzerkennungsübersicht
 description: Dieses Thema enthält Informationen zur Umsatzerkennungsfunktion. Diese Funktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans für Aufträge mit mehreren Elementen definieren können.
 author: kweekley
 manager: aolson
-ms.date: 08/24/2018
+ms.date: 11/11/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 0681636853b38895e4b8875150ea42baadd7b951
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 8743183c46463395cad3138261860442701e0178
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570378"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781895"
 ---
 # <a name="revenue-recognition-overview"></a>Umsatzerkennungsübersicht
 
@@ -36,6 +36,10 @@ Im Allgemeinen lässt sich der Umsatzerkennungsprozess verwenden, um folgende Au
 
 * Umsatzerlöse zuweisen – um sicherzustellen, dass der entsprechende Umsatzerlöspreis auf Grundlage der Komponentenwerte bei Aufträgen mit mehreren Elementen realisiert wird.
 * Umsatzerlöse verzögern – basierend auf einem Umsatzerlöszeitplan, der den Vertragszeitrahmen und die prozentualen Anteile für Umsatzerlöse im Zeitverlauf erkennt, werden die Umsatzerlöse verzögert dargestellt.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE44iER]
+
+Das Video [Verwendung der Umsatzerkennung in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo)(oben) ist teil der [Finance and Operations-Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube.
 
 Die Umsatzerkennungsfunktion stellt ein flexibles Framework bereit, mit dem Sie unternehmensspezifische Regeln zur Erfassung des Umsatzerlöspreises und des Umsatzerlöszeitplans definieren können.
 

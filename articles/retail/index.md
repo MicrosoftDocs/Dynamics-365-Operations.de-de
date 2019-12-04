@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 57d3b66e7ebc5a8a6e2ddda9135e27cd24535365
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: e77fd279ddec5eb02e226776eecb1223283313c3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278105"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811925"
 ---
 # <a name="help-resources-for-dynamics-365-retail"></a>Dynamics 365 Retail – Hilferessourcen
 
@@ -81,7 +81,7 @@ Sie richten mehrere Komponenten ein, um die Beziehungen innerhalb eines Geschäf
 
 Wenn Sie um die Anpassung Ihrer Umgebung gebeten wurden oder Sie für die Bereitstellung und Verwaltung Ihres Systems verantwortlich sind, finden Sie neben den eher allgemeinen Inhalten weitere, für Retail spezifische Informationen in den Inhalten für Entwickler und Systemadministratoren.
 
-- [Dynamics 365 Retail für IT-Experten und Entwickler](dev-itpro/dev-retail-home-page.md)
+- [Retail für IT-Experten und Entwickler](dev-itpro/dev-retail-home-page.md)
 - [Entwicklung und Administration für Dynamics 365 Finance](../dev-itpro/dev-tools/developer-home-page.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

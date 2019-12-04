@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51a27f5ecdb4d4903ac0b76c5682ea7f9ab0d8c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 1d074b9450a4dfc72f60f97ccaf03610ce54315d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175942"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772581"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startseite für Bargeld- und Bankverwaltung
 
@@ -49,36 +49,36 @@ Zu diesen Finanzinstrumenten gehören Einzahlungsbelege, Schecks, Wechsel und So
 ### <a name="bank-reconciliation"></a>Bankabstimmung
 
 -   [Überblick über die erweiterte Bankabstimmung](advanced-bank-reconciliation-overview.md)
--   [Konfigurieren der erweiterten Bankabstimmung](configure-advanced-bank-reconciliation.md)
--   [Einrichten des erweiterten Bankabstimmungsimports](set-up-advanced-bank-reconciliation-import-process.md)
+-   [Einrichtungsprozess der erweiterten Bankabstimmung](configure-advanced-bank-reconciliation.md)
+-   [Einrichten des erweiterten Bankabstimmungs-Importprozesses](set-up-advanced-bank-reconciliation-import-process.md)
 -   [Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung](reconcile-bank-statements-advanced-bank-reconciliation.md)
 -   [Einrichten von Abgleichsregeln für Bankabstimmung](set-up-bank-reconciliation-matching-rules.md)
 
 
-## <a name="accounts-payable-payments-and-settlements"></a>Kreditorenkontenzahlungen und Ausgleiche
+## <a name="accounts-payable-payments-and-settlements"></a>Kreditorenzahlungen und Ausgleiche
 -   [Zentralisierte Zahlungen für Kreditorenkonten](../accounts-payable/centralized-payments-accounts-payable.md)
--   [Erstellen von Kreditorenrechnungen unter Verwendung eines Zahlungsvorschlags](../accounts-payable/create-vendor-payments-payment-proposal.md)
+-   [Kreditorenzahlungen unter Verwendung eines Zahlungsvorschlags erstellen](../accounts-payable/create-vendor-payments-payment-proposal.md)
 -   [Stornieren einer Kreditorenzahlung](../accounts-payable/reverse-vendor-payment.md)
 -   [Kreditorenzahlungen für einen Teilbetrag](../accounts-payable/vendor-payments-partial-amount.md)
--   [Überblick über Vorauszahlungsrechnungen und Vorauszahlungen](../accounts-payable/prepayments-invoices-vs-prepayments.md)
--   [Szenario: Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
--   [Szenario: Eine teilweise Kreditorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum abgleichen](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
--   [Szenario: Eine teilweise Kreditorenzahlung, bei der Rabatte auf Kreditorengutschriften vorhanden sind, ausgleichen](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
--   [Szenario: Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
--   [Szenario: Nehmen Sie einen Rabatt in Anspruch, der höher ist, als der berechnete Rabatt für eine Kreditorenzahlung](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
--   [Szenario: Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
+-   [Vorauszahlungsrechnungen im Vergleich zu Vorauszahlungen](../accounts-payable/prepayments-invoices-vs-prepayments.md)
+-   [Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount.md)
+-   [Ausgleich einer teilweisen Kreditorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum](../accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after.md)
+-   [Ausgleich einer teilweisen Kreditorenzahlung, bei der es Rabatte auf Kreditorengutschriften gibt](../accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes.md)
+-   [Ausgleichen einer teilweisen Kreditorenzahlung, die mehrere Rabattzeiträume hat](../accounts-payable/settle-partial-vendor-payment-multiple-discount-periods.md)
+-   [Einen Rabatt in Anspruch nehmen, der höher ist, als der berechnete Rabatt für eine Kreditorenzahlung](../accounts-payable/take-discount-more-calculated-discount-vendor-payment.md)
+-   [Ein Skonto außerhalb der Skontoperiode in Anspruch nehmen](../accounts-payable/take-cash-discount-outside-cash-discount-timeframe.md)
 
 ## <a name="accounts-receivable-payments-and-settlements"></a>Debitorenzahlungen und Ausgleiche
 -   [Zentralisierte Zahlungen für Debitoren](../accounts-receivable/centralized-payments-accounts-receivable.md)
 -   [Debitorenzahlungen für einen Teilbetrag](../accounts-receivable/customer-payments-partial-amount.md)
 -   [Ausführen einer Debitorenrückerstattung](../accounts-receivable/reimburse-customers.md)
--   [Szenario: Automatischer Ausgleich und Priorisierung](../accounts-receivable/automatic-settlement-prioritization.md)
--   [Szenario: Skonto für Überzahlungen behandeln](../cash-bank-management/cash-discount-handling-overpayments.md)
--   [Szenario: Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
--   [Szenario: Eine teilweise Debitorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum ausgleichen](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
--   [Szenario: Eine teilweise Debitorenzahlung, bei der Rabatte auf Gutschriften vorhanden sind, ausgleichen](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
--   [Szenario: Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
--   [Szenario: Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattperioden enthalten](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+-   [Automatischer Ausgleich und Priorisierung](../accounts-receivable/automatic-settlement-prioritization.md)
+-   [Skonto für Überzahlungen handhaben](../cash-bank-management/cash-discount-handling-overpayments.md)
+-   [Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der abschließenden vollständigen Zahlung vor dem Skontodatum](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+-   [Ausgleich einer teilweisen Debitorenzahlung vor dem Skontodatum mit einer abschließenden Zahlung nach dem Skontodatum](../accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+-   [Eine teilweise Debitorenzahlung ausgleichen, bei der Rabatte auf Gutschriften vorhanden sind](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
+-   [Ausgleichen einer teilweisen Debitorenzahlung, die mehrere Rabattzeiträume hat](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
+-   [Verwenden einer Debitorenzahlung, um mehrere Rechnungen auszugleichen, die mehrere Rabattperioden enthalten](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
 
 
 
@@ -86,7 +86,7 @@ Zu diesen Finanzinstrumenten gehören Einzahlungsbelege, Schecks, Wechsel und So
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Lesen Sie die [Microsoft Dynamics 365-Versionshinweise](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant wurden. 
+Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant wurden. 
 
 #### <a name="blogs"></a>Blogs
 
