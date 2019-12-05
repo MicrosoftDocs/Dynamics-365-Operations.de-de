@@ -18,102 +18,102 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 168c2fb9edfc994617ef6764a5b9f5949d599882
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186324"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771751"
 ---
-# <a name="sales-tax-payments-and-rounding-rules"></a><span data-ttu-id="236c9-103">Mehrwertsteuerzahlungen und Rundungsregeln</span><span class="sxs-lookup"><span data-stu-id="236c9-103">Sales tax payments and rounding rules</span></span>
+# <a name="sales-tax-payments-and-rounding-rules"></a><span data-ttu-id="dd2d1-103">Mehrwertsteuerzahlungen und Rundungsregeln</span><span class="sxs-lookup"><span data-stu-id="dd2d1-103">Sales tax payments and rounding rules</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="236c9-104">In diesem Artikel wird beschrieben, wie sich die Rundungsregeleinstellung auf die Mehrwertsteuer-Behörden und auf die Rundung des Mehrwertsteuersaldos während der Abrechnung und Buchung der Mehrwertsteuer auswirkt.</span><span class="sxs-lookup"><span data-stu-id="236c9-104">This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.</span></span>
+<span data-ttu-id="dd2d1-104">In diesem Artikel wird beschrieben, wie sich die Rundungsregeleinstellung auf die Mehrwertsteuer-Behörden und auf die Rundung des Mehrwertsteuersaldos während der Abrechnung und Buchung der Mehrwertsteuer auswirkt.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-104">This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.</span></span>
 
-<span data-ttu-id="236c9-105">In regelmäßigen Abständen muss Mehrwertsteuer gemeldet werden und an die Steuerbehörde abgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="236c9-105">Periodically, sales tax needs to be reported and paid to tax authorities.</span></span> <span data-ttu-id="236c9-106">Dazu öffnen werden, indem die Informationen zur Bank und Beitragsmehrwertsteuerprozess in der Mehrwertsteuerseite ausführt.</span><span class="sxs-lookup"><span data-stu-id="236c9-106">This can be done by running the settle and post sales tax process in the Sales tax page.</span></span> <span data-ttu-id="236c9-107">Die Mehrwertsteuer für einen Zeitraum wird mit den Mehrwertsteuerkonten ausgeglichen und der Mehrwertsteuersaldo wird zum Konto "Mehrwertsteuerabrechnung" gebucht.</span><span class="sxs-lookup"><span data-stu-id="236c9-107">Sales tax for a period will be settled against the sales tax accounts and the sales tax balance will be posted to the Sales tax settlement account.</span></span> <span data-ttu-id="236c9-108">Der Mehrwertsteuersaldo, der im Konto "Mehrwertsteuerabrechnung" gebucht wird, kann je nach Anforderung der Steuerbehörden gerundet werden, indem eine Rundungsregel für die Mehrwertsteuerseite eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="236c9-108">The sales tax balance, which is posted on the Sales tax settlement account, can be rounded as required by tax authorities by setting up a rounding rule on the Sales tax page.</span></span> 
+<span data-ttu-id="dd2d1-105">In regelmäßigen Abständen muss Mehrwertsteuer gemeldet werden und an die Steuerbehörde abgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-105">Periodically, sales tax needs to be reported and paid to tax authorities.</span></span> <span data-ttu-id="dd2d1-106">Dazu öffnen werden, indem die Informationen zur Bank und Beitragsmehrwertsteuerprozess in der Mehrwertsteuerseite ausführt.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-106">This can be done by running the settle and post sales tax process in the Sales tax page.</span></span> <span data-ttu-id="dd2d1-107">Die Mehrwertsteuer für einen Zeitraum wird mit den Mehrwertsteuerkonten ausgeglichen und der Mehrwertsteuersaldo wird zum Konto "Mehrwertsteuerabrechnung" gebucht.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-107">Sales tax for a period will be settled against the sales tax accounts and the sales tax balance will be posted to the Sales tax settlement account.</span></span> <span data-ttu-id="dd2d1-108">Der Mehrwertsteuersaldo, der im Konto "Mehrwertsteuerabrechnung" gebucht wird, kann je nach Anforderung der Steuerbehörden gerundet werden, indem eine Rundungsregel für die Mehrwertsteuerseite eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-108">The sales tax balance, which is posted on the Sales tax settlement account, can be rounded as required by tax authorities by setting up a rounding rule on the Sales tax page.</span></span> 
 
-<span data-ttu-id="236c9-109">Die Rundungsdifferenz wird zum Konto "Rundung Mehrwertsteuer" gebucht, das im Feld "Konten für automatische Buchungen" im "Hauptbuch" ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="236c9-109">The rounding difference is posted to the Sales tax rounding account that is selected in the Accounts for automatic transactions field in the General ledger.</span></span>
+<span data-ttu-id="dd2d1-109">Die Rundungsdifferenz wird zum Konto "Rundung Mehrwertsteuer" gebucht, das im Feld "Konten für automatische Buchungen" im "Hauptbuch" ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-109">The rounding difference is posted to the Sales tax rounding account that is selected in the Accounts for automatic transactions field in the General ledger.</span></span>
 
-<span data-ttu-id="236c9-110">Das Beispiel unten veranschaulicht, wie der Rundenregel bei "Mehrwertsteuerbehörde" funktioniert.</span><span class="sxs-lookup"><span data-stu-id="236c9-110">The below example illustrates how the rounding rule on Sales tax authority works.</span></span>
+<span data-ttu-id="dd2d1-110">Das Beispiel unten veranschaulicht, wie der Rundenregel bei "Mehrwertsteuerbehörde" funktioniert.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-110">The below example illustrates how the rounding rule on Sales tax authority works.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="236c9-111">Beispiele</span><span class="sxs-lookup"><span data-stu-id="236c9-111">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="dd2d1-111">Beispiele</span><span class="sxs-lookup"><span data-stu-id="dd2d1-111">Examples</span></span>
 
-<span data-ttu-id="236c9-112">Die Gesamtumsatzsteuer für eine Periode zeigt ein Guthaben von -98.765,43 an.</span><span class="sxs-lookup"><span data-stu-id="236c9-112">The total sales tax for a period shows a credit balance of -98,765.43.</span></span> <span data-ttu-id="236c9-113">Die juristische Person hat mehr Mehrwertsteuer eingenommen, als sie bezahlt hat.</span><span class="sxs-lookup"><span data-stu-id="236c9-113">The legal entity collected more sales taxes than it paid.</span></span> <span data-ttu-id="236c9-114">Daher schuldet die juristische Person der Steuerbehörde Geld.</span><span class="sxs-lookup"><span data-stu-id="236c9-114">Therefore, the legal entity owes money to the tax authority.</span></span> 
+<span data-ttu-id="dd2d1-112">Die Gesamtumsatzsteuer für eine Periode zeigt ein Guthaben von -98.765,43 an.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-112">The total sales tax for a period shows a credit balance of -98,765.43.</span></span> <span data-ttu-id="dd2d1-113">Die juristische Person hat mehr Mehrwertsteuer eingenommen, als sie bezahlt hat.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-113">The legal entity collected more sales taxes than it paid.</span></span> <span data-ttu-id="dd2d1-114">Daher schuldet die juristische Person der Steuerbehörde Geld.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-114">Therefore, the legal entity owes money to the tax authority.</span></span> 
 
-<span data-ttu-id="236c9-115">Die juristische Person möchte eine Rundungsmethode verwenden, mit der der Saldo auf die nächsten 1,00 gerundet wird.</span><span class="sxs-lookup"><span data-stu-id="236c9-115">The legal entity wants to use a rounding method that rounds the balance to the nearest 1.00.</span></span> <span data-ttu-id="236c9-116">Der Benutzer, der für die Mehrwertsteuerbuchhaltung zuständig ist, führt die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="236c9-116">The user who is responsible for sales tax accounting performs the following steps.</span></span>
+<span data-ttu-id="dd2d1-115">Die juristische Person möchte eine Rundungsmethode verwenden, mit der der Saldo auf die nächsten 1,00 gerundet wird.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-115">The legal entity wants to use a rounding method that rounds the balance to the nearest 1.00.</span></span> <span data-ttu-id="dd2d1-116">Der Benutzer, der für die Mehrwertsteuerbuchhaltung zuständig ist, führt die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-116">The user who is responsible for sales tax accounting performs the following steps.</span></span>
 
-1.  <span data-ttu-id="236c9-117">Klicken Sie auf "Steuer" &gt; "Indirekte Steuern" &gt; "Mehrwertsteuer" &gt; "Mehrwertsteuerbehörden".</span><span class="sxs-lookup"><span data-stu-id="236c9-117">Click Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax authorities</span></span>
-2.  <span data-ttu-id="236c9-118">Wählen Sie im Inforegister "Allgemein" im Feld "Rundungsart" die Option "Normal" aus.</span><span class="sxs-lookup"><span data-stu-id="236c9-118">On the General FastTab, select Normal in the Rounding form field.</span></span>
-3.  <span data-ttu-id="236c9-119">Geben Sie im Feld "Rundung" die Zahl 1,00 ein.</span><span class="sxs-lookup"><span data-stu-id="236c9-119">In the Round-off field, enter 1.00.</span></span>
-4.  <span data-ttu-id="236c9-120">Wenn die Mehrwertsteuer an das Finanzamt abgeführt werden soll, öffnen Sie die Seite "Mehrwertsteuer abrechnen und buchen".</span><span class="sxs-lookup"><span data-stu-id="236c9-120">When it is time to pay the sales taxes to the tax authority, open the Settle and post sales tax page.</span></span> <span data-ttu-id="236c9-121">(Klicken Sie auf "Steuer" &gt; "Erklärungen" &gt; "Mehrwertsteuer" &gt; "Mehrwertsteuer abrechnen und buchen".)</span><span class="sxs-lookup"><span data-stu-id="236c9-121">(Click Tax &gt; Declarations &gt; Sales tax &gt; Settle and post sales tax.)</span></span>
-5.  <span data-ttu-id="236c9-122">Im Mehrwertsteuer-Abrechnungskonto wird der Steuerverbindlichkeitsbetrag von 98.765,43 auf 98.765 abgerundet.</span><span class="sxs-lookup"><span data-stu-id="236c9-122">On the sales tax settlement account, the tax liability amount of 98,765.43 is rounded to 98,765.</span></span>
+1.  <span data-ttu-id="dd2d1-117">Klicken Sie auf "Steuer" &gt; "Indirekte Steuern" &gt; "Mehrwertsteuer" &gt; "Mehrwertsteuerbehörden".</span><span class="sxs-lookup"><span data-stu-id="dd2d1-117">Click Tax &gt; Indirect taxes &gt; Sales tax &gt; Sales tax authorities</span></span>
+2.  <span data-ttu-id="dd2d1-118">Wählen Sie im Inforegister "Allgemein" im Feld "Rundungsart" die Option "Normal" aus.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-118">On the General FastTab, select Normal in the Rounding form field.</span></span>
+3.  <span data-ttu-id="dd2d1-119">Geben Sie im Feld "Rundung" die Zahl 1,00 ein.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-119">In the Round-off field, enter 1.00.</span></span>
+4.  <span data-ttu-id="dd2d1-120">Wenn die Mehrwertsteuer an das Finanzamt abgeführt werden soll, öffnen Sie die Seite "Mehrwertsteuer abrechnen und buchen".</span><span class="sxs-lookup"><span data-stu-id="dd2d1-120">When it is time to pay the sales taxes to the tax authority, open the Settle and post sales tax page.</span></span> <span data-ttu-id="dd2d1-121">(Klicken Sie auf "Steuer" &gt; "Erklärungen" &gt; "Mehrwertsteuer" &gt; "Mehrwertsteuer abrechnen und buchen".)</span><span class="sxs-lookup"><span data-stu-id="dd2d1-121">(Click Tax &gt; Declarations &gt; Sales tax &gt; Settle and post sales tax.)</span></span>
+5.  <span data-ttu-id="dd2d1-122">Im Mehrwertsteuer-Abrechnungskonto wird der Steuerverbindlichkeitsbetrag von 98.765,43 auf 98.765 abgerundet.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-122">On the sales tax settlement account, the tax liability amount of 98,765.43 is rounded to 98,765.</span></span>
 
-<span data-ttu-id="236c9-123">Die folgende Tabelle zeigt, wie ein Betrag von 98.765,43 gerundet wird. Dabei wird jede Rundungsmethode angewendet, die im Feld "Rundungsart" auf der Seite "Steuerbehörden" verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="236c9-123">The following table shows how an amount of 98,765.43 is rounded by using each rounding method that is available in the Rounding form field in the Sales tax authorities page.</span></span>
+<span data-ttu-id="dd2d1-123">Die folgende Tabelle zeigt, wie ein Betrag von 98.765,43 gerundet wird. Dabei wird jede Rundungsmethode angewendet, die im Feld "Rundungsart" auf der Seite "Steuerbehörden" verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-123">The following table shows how an amount of 98,765.43 is rounded by using each rounding method that is available in the Rounding form field in the Sales tax authorities page.</span></span>
 
-| <span data-ttu-id="236c9-124">Option der Rundungsart</span><span class="sxs-lookup"><span data-stu-id="236c9-124">Rounding form option</span></span>                | <span data-ttu-id="236c9-125">Rundungswert = 0,01</span><span class="sxs-lookup"><span data-stu-id="236c9-125">Round-off value = 0.01</span></span> | <span data-ttu-id="236c9-126">Rundungswert = 0,10</span><span class="sxs-lookup"><span data-stu-id="236c9-126">Round-off value = 0.10</span></span> | <span data-ttu-id="236c9-127">Rundungswert = 1,00</span><span class="sxs-lookup"><span data-stu-id="236c9-127">Round-off value = 1.00</span></span> | <span data-ttu-id="236c9-128">Rundungswert = 100,00</span><span class="sxs-lookup"><span data-stu-id="236c9-128">Round-off value = 100.00</span></span> |
+| <span data-ttu-id="dd2d1-124">Option der Rundungsart</span><span class="sxs-lookup"><span data-stu-id="dd2d1-124">Rounding form option</span></span>                | <span data-ttu-id="dd2d1-125">Rundungswert = 0,01</span><span class="sxs-lookup"><span data-stu-id="dd2d1-125">Round-off value = 0.01</span></span> | <span data-ttu-id="dd2d1-126">Rundungswert = 0,10</span><span class="sxs-lookup"><span data-stu-id="dd2d1-126">Round-off value = 0.10</span></span> | <span data-ttu-id="dd2d1-127">Rundungswert = 1,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-127">Round-off value = 1.00</span></span> | <span data-ttu-id="dd2d1-128">Rundungswert = 100,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-128">Round-off value = 100.00</span></span> |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| <span data-ttu-id="236c9-129">Normal</span><span class="sxs-lookup"><span data-stu-id="236c9-129">Normal</span></span>                              | <span data-ttu-id="236c9-130">98.765,43</span><span class="sxs-lookup"><span data-stu-id="236c9-130">98,765.43</span></span>              | <span data-ttu-id="236c9-131">98.765,40</span><span class="sxs-lookup"><span data-stu-id="236c9-131">98,765.40</span></span>              | <span data-ttu-id="236c9-132">98.765,00</span><span class="sxs-lookup"><span data-stu-id="236c9-132">98,765.00</span></span>              | <span data-ttu-id="236c9-133">98.800,00</span><span class="sxs-lookup"><span data-stu-id="236c9-133">98,800.00</span></span>                |
-| <span data-ttu-id="236c9-134">Abwärts</span><span class="sxs-lookup"><span data-stu-id="236c9-134">Downward</span></span>                            | <span data-ttu-id="236c9-135">98.765,43</span><span class="sxs-lookup"><span data-stu-id="236c9-135">98,765.43</span></span>              | <span data-ttu-id="236c9-136">98.765,40</span><span class="sxs-lookup"><span data-stu-id="236c9-136">98,765.40</span></span>              | <span data-ttu-id="236c9-137">98.765,00</span><span class="sxs-lookup"><span data-stu-id="236c9-137">98,765.00</span></span>              | <span data-ttu-id="236c9-138">98.700,00</span><span class="sxs-lookup"><span data-stu-id="236c9-138">98,700.00</span></span>                |
-| <span data-ttu-id="236c9-139">Aufrunden</span><span class="sxs-lookup"><span data-stu-id="236c9-139">Rounding-up</span></span>                         | <span data-ttu-id="236c9-140">98.765,43</span><span class="sxs-lookup"><span data-stu-id="236c9-140">98,765.43</span></span>              | <span data-ttu-id="236c9-141">98.765,50</span><span class="sxs-lookup"><span data-stu-id="236c9-141">98,765.50</span></span>              | <span data-ttu-id="236c9-142">98.766,00</span><span class="sxs-lookup"><span data-stu-id="236c9-142">98,766.00</span></span>              | <span data-ttu-id="236c9-143">98.800,00</span><span class="sxs-lookup"><span data-stu-id="236c9-143">98,800.00</span></span>                |
-| <span data-ttu-id="236c9-144">Eigener Vorteil, für ein Guthaben</span><span class="sxs-lookup"><span data-stu-id="236c9-144">Own advantage, for a credit balance</span></span> | <span data-ttu-id="236c9-145">98.765,43</span><span class="sxs-lookup"><span data-stu-id="236c9-145">98,765.43</span></span>              | <span data-ttu-id="236c9-146">98.765,40</span><span class="sxs-lookup"><span data-stu-id="236c9-146">98,765.40</span></span>              | <span data-ttu-id="236c9-147">98.765,00</span><span class="sxs-lookup"><span data-stu-id="236c9-147">98,765.00</span></span>              | <span data-ttu-id="236c9-148">98.700,00</span><span class="sxs-lookup"><span data-stu-id="236c9-148">98,700.00</span></span>                |
-| <span data-ttu-id="236c9-149">Eigener Vorteil, für ein Debitorensaldo</span><span class="sxs-lookup"><span data-stu-id="236c9-149">Own advantage, for a debit balance</span></span>  | <span data-ttu-id="236c9-150">98,765.43</span><span class="sxs-lookup"><span data-stu-id="236c9-150">98,765.43</span></span>              | <span data-ttu-id="236c9-151">98,765.50</span><span class="sxs-lookup"><span data-stu-id="236c9-151">98,765.50</span></span>              | <span data-ttu-id="236c9-152">98,766.00</span><span class="sxs-lookup"><span data-stu-id="236c9-152">98,766.00</span></span>              | <span data-ttu-id="236c9-153">98,800.00</span><span class="sxs-lookup"><span data-stu-id="236c9-153">98,800.00</span></span>                |
+| <span data-ttu-id="dd2d1-129">Normal</span><span class="sxs-lookup"><span data-stu-id="dd2d1-129">Normal</span></span>                              | <span data-ttu-id="dd2d1-130">98.765,43</span><span class="sxs-lookup"><span data-stu-id="dd2d1-130">98,765.43</span></span>              | <span data-ttu-id="dd2d1-131">98.765,40</span><span class="sxs-lookup"><span data-stu-id="dd2d1-131">98,765.40</span></span>              | <span data-ttu-id="dd2d1-132">98.765,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-132">98,765.00</span></span>              | <span data-ttu-id="dd2d1-133">98.800,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-133">98,800.00</span></span>                |
+| <span data-ttu-id="dd2d1-134">Abwärts</span><span class="sxs-lookup"><span data-stu-id="dd2d1-134">Downward</span></span>                            | <span data-ttu-id="dd2d1-135">98.765,43</span><span class="sxs-lookup"><span data-stu-id="dd2d1-135">98,765.43</span></span>              | <span data-ttu-id="dd2d1-136">98.765,40</span><span class="sxs-lookup"><span data-stu-id="dd2d1-136">98,765.40</span></span>              | <span data-ttu-id="dd2d1-137">98.765,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-137">98,765.00</span></span>              | <span data-ttu-id="dd2d1-138">98.700,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-138">98,700.00</span></span>                |
+| <span data-ttu-id="dd2d1-139">Aufrunden</span><span class="sxs-lookup"><span data-stu-id="dd2d1-139">Rounding-up</span></span>                         | <span data-ttu-id="dd2d1-140">98.765,43</span><span class="sxs-lookup"><span data-stu-id="dd2d1-140">98,765.43</span></span>              | <span data-ttu-id="dd2d1-141">98.765,50</span><span class="sxs-lookup"><span data-stu-id="dd2d1-141">98,765.50</span></span>              | <span data-ttu-id="dd2d1-142">98.766,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-142">98,766.00</span></span>              | <span data-ttu-id="dd2d1-143">98.800,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-143">98,800.00</span></span>                |
+| <span data-ttu-id="dd2d1-144">Eigener Vorteil, für ein Guthaben</span><span class="sxs-lookup"><span data-stu-id="dd2d1-144">Own advantage, for a credit balance</span></span> | <span data-ttu-id="dd2d1-145">98.765,43</span><span class="sxs-lookup"><span data-stu-id="dd2d1-145">98,765.43</span></span>              | <span data-ttu-id="dd2d1-146">98.765,40</span><span class="sxs-lookup"><span data-stu-id="dd2d1-146">98,765.40</span></span>              | <span data-ttu-id="dd2d1-147">98.765,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-147">98,765.00</span></span>              | <span data-ttu-id="dd2d1-148">98.700,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-148">98,700.00</span></span>                |
+| <span data-ttu-id="dd2d1-149">Eigener Vorteil, für ein Debitorensaldo</span><span class="sxs-lookup"><span data-stu-id="dd2d1-149">Own advantage, for a debit balance</span></span>  | <span data-ttu-id="dd2d1-150">98,765.43</span><span class="sxs-lookup"><span data-stu-id="dd2d1-150">98,765.43</span></span>              | <span data-ttu-id="dd2d1-151">98,765.50</span><span class="sxs-lookup"><span data-stu-id="dd2d1-151">98,765.50</span></span>              | <span data-ttu-id="dd2d1-152">98,766.00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-152">98,766.00</span></span>              | <span data-ttu-id="dd2d1-153">98,800.00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-153">98,800.00</span></span>                |
 
 
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a><span data-ttu-id="236c9-154">Kein Runden, da die Rundung 0,00</span><span class="sxs-lookup"><span data-stu-id="236c9-154">No rounding at all, since the round-off is 0.00</span></span>
+### <a name="no-rounding-at-all-since-the-round-off-is-000"></a><span data-ttu-id="dd2d1-154">Kein Runden, da die Rundung 0,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-154">No rounding at all, since the round-off is 0.00</span></span>
 
-<span data-ttu-id="236c9-155">Rundung(1,0151, 0,00) = 1,0151 Rundung(1,0149, 0,00) = 1,0149</span><span class="sxs-lookup"><span data-stu-id="236c9-155">round(1.0151, 0.00) = 1.0151 round(1.0149, 0.00) = 1.0149</span></span>
+<span data-ttu-id="dd2d1-155">Rundung(1,0151, 0,00) = 1,0151 Rundung(1,0149, 0,00) = 1,0149</span><span class="sxs-lookup"><span data-stu-id="dd2d1-155">round(1.0151, 0.00) = 1.0151 round(1.0149, 0.00) = 1.0149</span></span>
 
-### <a name="normal-round-and-round-precision-is-001"></a><span data-ttu-id="236c9-156">Normale Rundung und Rungungsgenauigkeit ist 0,01</span><span class="sxs-lookup"><span data-stu-id="236c9-156">Normal round, and round precision is 0.01</span></span>
+### <a name="normal-round-and-round-precision-is-001"></a><span data-ttu-id="dd2d1-156">Normale Rundung und Rungungsgenauigkeit ist 0,01</span><span class="sxs-lookup"><span data-stu-id="dd2d1-156">Normal round, and round precision is 0.01</span></span>
 
 <table>
   <tr>
-    <td><span data-ttu-id="236c9-157">Rundung</span><span class="sxs-lookup"><span data-stu-id="236c9-157">Rounding</span></span>
+    <td><span data-ttu-id="dd2d1-157">Rundung</span><span class="sxs-lookup"><span data-stu-id="dd2d1-157">Rounding</span></span>
     </td>
-    <td><span data-ttu-id="236c9-158">Berechnungsprozess</span><span class="sxs-lookup"><span data-stu-id="236c9-158">Calculation process</span></span>
+    <td><span data-ttu-id="dd2d1-158">Berechnungsprozess</span><span class="sxs-lookup"><span data-stu-id="dd2d1-158">Calculation process</span></span>
     </td>
   </tr>
     <tr>
-    <td><span data-ttu-id="236c9-159">Rundung(1,015, 0,01) = 1,02</span><span class="sxs-lookup"><span data-stu-id="236c9-159">round(1.015, 0.01) = 1.02</span></span>
+    <td><span data-ttu-id="dd2d1-159">Rundung(1,015, 0,01) = 1,02</span><span class="sxs-lookup"><span data-stu-id="dd2d1-159">round(1.015, 0.01) = 1.02</span></span>
     </td>
     <td>
       <ol>
-        <li><span data-ttu-id="236c9-160">Rundung(1,015 / 0,01, 0) = Rundung(101,5, 0) = 102</span><span class="sxs-lookup"><span data-stu-id="236c9-160">round(1.015 / 0.01, 0) = round(101.5, 0) = 102</span></span>
+        <li><span data-ttu-id="dd2d1-160">Rundung(1,015 / 0,01, 0) = Rundung(101,5, 0) = 102</span><span class="sxs-lookup"><span data-stu-id="dd2d1-160">round(1.015 / 0.01, 0) = round(101.5, 0) = 102</span></span>
         </li>
-        <li><span data-ttu-id="236c9-161">102 \* 0.01 = 1.02</span><span class="sxs-lookup"><span data-stu-id="236c9-161">102 \* 0.01 = 1.02</span></span>
-        </li>
-      </ol>
-    </td>
-  </tr>
-    <tr>
-    <td><span data-ttu-id="236c9-162">Rundung(1,014 0,01) = 1,01</span><span class="sxs-lookup"><span data-stu-id="236c9-162">round(1.014, 0.01) = 1.01</span></span>
-    </td>
-    <td> <ol>
-        <li><span data-ttu-id="236c9-163">Rundung(1,014 / 0,01, 0) = Rundung(101,4, 0) = 101</span><span class="sxs-lookup"><span data-stu-id="236c9-163">round(1.014 / 0.01, 0) = round(101.4, 0) = 101</span></span>
-        </li>
-        <li><span data-ttu-id="236c9-164">101 \* 0.01 = 1.01</span><span class="sxs-lookup"><span data-stu-id="236c9-164">101 \* 0.01 = 1.01</span></span>
+        <li><span data-ttu-id="dd2d1-161">102 \* 0.01 = 1.02</span><span class="sxs-lookup"><span data-stu-id="dd2d1-161">102 \* 0.01 = 1.02</span></span>
         </li>
       </ol>
     </td>
   </tr>
     <tr>
-    <td><span data-ttu-id="236c9-165">Rundung(1,011 0,02) = 1,02</span><span class="sxs-lookup"><span data-stu-id="236c9-165">round(1.011, 0.02) = 1.02</span></span>
+    <td><span data-ttu-id="dd2d1-162">Rundung(1,014 0,01) = 1,01</span><span class="sxs-lookup"><span data-stu-id="dd2d1-162">round(1.014, 0.01) = 1.01</span></span>
     </td>
     <td> <ol>
-        <li><span data-ttu-id="236c9-166">Rundung(1,011 / 0,02, 0) = Rundung(50,55, 0) = 51</span><span class="sxs-lookup"><span data-stu-id="236c9-166">round(1.011 / 0.02, 0) = round(50.55, 0) = 51</span></span>
+        <li><span data-ttu-id="dd2d1-163">Rundung(1,014 / 0,01, 0) = Rundung(101,4, 0) = 101</span><span class="sxs-lookup"><span data-stu-id="dd2d1-163">round(1.014 / 0.01, 0) = round(101.4, 0) = 101</span></span>
         </li>
-        <li><span data-ttu-id="236c9-167">51 \* 0.02 = 1.02</span><span class="sxs-lookup"><span data-stu-id="236c9-167">51 \* 0.02 = 1.02</span></span>
+        <li><span data-ttu-id="dd2d1-164">101 \* 0.01 = 1.01</span><span class="sxs-lookup"><span data-stu-id="dd2d1-164">101 \* 0.01 = 1.01</span></span>
         </li>
       </ol>
     </td>
   </tr>
     <tr>
-    <td><span data-ttu-id="236c9-168">Rundung(1,009, 0,02) = 1,00</span><span class="sxs-lookup"><span data-stu-id="236c9-168">round(1.009, 0.02) = 1.00</span></span>
+    <td><span data-ttu-id="dd2d1-165">Rundung(1,011 0,02) = 1,02</span><span class="sxs-lookup"><span data-stu-id="dd2d1-165">round(1.011, 0.02) = 1.02</span></span>
     </td>
     <td> <ol>
-        <li><span data-ttu-id="236c9-169">Rundung(1,009 / 0,02, 0) = Rundung(50,45, 0) = 50</span><span class="sxs-lookup"><span data-stu-id="236c9-169">round(1.009 / 0.02, 0) = round(50.45, 0) = 50</span></span>
+        <li><span data-ttu-id="dd2d1-166">Rundung(1,011 / 0,02, 0) = Rundung(50,55, 0) = 51</span><span class="sxs-lookup"><span data-stu-id="dd2d1-166">round(1.011 / 0.02, 0) = round(50.55, 0) = 51</span></span>
         </li>
-        <li><span data-ttu-id="236c9-170">50 \* 0.02 = 1.00</span><span class="sxs-lookup"><span data-stu-id="236c9-170">50 \* 0.02 = 1.00</span></span>
+        <li><span data-ttu-id="dd2d1-167">51 \* 0.02 = 1.02</span><span class="sxs-lookup"><span data-stu-id="dd2d1-167">51 \* 0.02 = 1.02</span></span>
+        </li>
+      </ol>
+    </td>
+  </tr>
+    <tr>
+    <td><span data-ttu-id="dd2d1-168">Rundung(1,009, 0,02) = 1,00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-168">round(1.009, 0.02) = 1.00</span></span>
+    </td>
+    <td> <ol>
+        <li><span data-ttu-id="dd2d1-169">Rundung(1,009 / 0,02, 0) = Rundung(50,45, 0) = 50</span><span class="sxs-lookup"><span data-stu-id="dd2d1-169">round(1.009 / 0.02, 0) = round(50.45, 0) = 50</span></span>
+        </li>
+        <li><span data-ttu-id="dd2d1-170">50 \* 0.02 = 1.00</span><span class="sxs-lookup"><span data-stu-id="dd2d1-170">50 \* 0.02 = 1.00</span></span>
         </li>
       </ol>
     </td>
@@ -121,13 +121,13 @@ ms.locfileid: "2186324"
 </table>
 
 > [!NOTE]                                                                                  
-> <span data-ttu-id="236c9-171">Wenn Sie "Eigener Vorteil" auswählen, erfolgt die Rundung immer zum Vorteil der juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="236c9-171">If you select Own advantage, the rounding is always to the advantage of the legal entity.</span></span> 
+> <span data-ttu-id="dd2d1-171">Wenn Sie "Eigener Vorteil" auswählen, erfolgt die Rundung immer zum Vorteil der juristischen Person.</span><span class="sxs-lookup"><span data-stu-id="dd2d1-171">If you select Own advantage, the rounding is always to the advantage of the legal entity.</span></span> 
 
-<span data-ttu-id="236c9-172">Weitere Informationen finden Sie in folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="236c9-172">For more information, see the following topics:</span></span>
-- [<span data-ttu-id="236c9-173">Mehrwertsteuerüberblick</span><span class="sxs-lookup"><span data-stu-id="236c9-173">Sales tax overview</span></span>](indirect-taxes-overview.md)
-- [<span data-ttu-id="236c9-174">Eine Mehrwertsteuerzahlung erstellen</span><span class="sxs-lookup"><span data-stu-id="236c9-174">Create a sales tax payment</span></span>](tasks/create-sales-tax-payment.md)
-- [<span data-ttu-id="236c9-175">Mehrwertsteuerbuchungen in Dokumenten erstellen</span><span class="sxs-lookup"><span data-stu-id="236c9-175">Create sales transactions on documents</span></span>](tasks/create-sales-tax-transactions-documents.md)
-- [<span data-ttu-id="236c9-176">Vorgenommene Mehrwertsteuerbuchungen anzeigen</span><span class="sxs-lookup"><span data-stu-id="236c9-176">View posted sales tax transactions</span></span>](tasks/view-posted-sales-tax-transactions.md)
-- [<span data-ttu-id="236c9-177">Rundungsfunktion</span><span class="sxs-lookup"><span data-stu-id="236c9-177">round Function</span></span>](https://msdn.microsoft.com/library/aa850656.aspx)
+<span data-ttu-id="dd2d1-172">Weitere Informationen finden Sie in folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="dd2d1-172">For more information, see the following topics:</span></span>
+- [<span data-ttu-id="dd2d1-173">Mehrwertsteuerübersicht</span><span class="sxs-lookup"><span data-stu-id="dd2d1-173">Sales tax overview</span></span>](indirect-taxes-overview.md)
+- [<span data-ttu-id="dd2d1-174">Eine Mehrwertsteuerzahlung erstellen</span><span class="sxs-lookup"><span data-stu-id="dd2d1-174">Create a sales tax payment</span></span>](tasks/create-sales-tax-payment.md)
+- [<span data-ttu-id="dd2d1-175">Mehrwertsteuerbuchungen in Dokumenten erstellen</span><span class="sxs-lookup"><span data-stu-id="dd2d1-175">Create sales tax transactions on documents</span></span>](tasks/create-sales-tax-transactions-documents.md)
+- [<span data-ttu-id="dd2d1-176">Vorgenommene Mehrwertsteuerbuchungen anzeigen</span><span class="sxs-lookup"><span data-stu-id="dd2d1-176">View posted sales tax transactions</span></span>](tasks/view-posted-sales-tax-transactions.md)
+- [<span data-ttu-id="dd2d1-177">Rundungsfunktion</span><span class="sxs-lookup"><span data-stu-id="dd2d1-177">round Function</span></span>](https://msdn.microsoft.com/library/aa850656.aspx)
 
 
