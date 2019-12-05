@@ -19,22 +19,20 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d33625b94e7611a256c389a6de4692ae8f4ff2a7
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: da451c63c23444da564307505d38699faf9df19a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572471"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770982"
 ---
 # <a name="integrated-vendor-master"></a>Integrierte Masterdaten von Kreditoren
 
 [!include [banner](../includes/banner.md)]
 
-[!include [preview](../includes/preview-banner.md)]
-
 Der Begriff *Kreditor* bezieht sich auf eine Lieferantenorganisation oder einen Einzelunternehmer, der Teil des Lieferkettenprozesses ist und der Waren an das Unternehmen liefert. In Finance and Operations-Apps ist der Begriff *Kreditor* zwar ein etabliertes Konzept, in anderen Dynamics 365-Apps ist jedoch kein Kreditorenkonzept enthalten. Stattdessen überladen einige Unternehmen die Kontoentität, um sowohl Debitoreninformationen als auch Kreditoreninformationen zu speichern. Andere Unternehmen verwenden ein benutzerdefiniertes Kreditorenkonzept. Die Common Data Service-Integration unterstützt beide Entwürfe. Daher können Sie, je nach Ihrem Unternehmensszenario, einen der beiden Entwürfe aktivieren.
 
-Durch die Integration von Kreditorendaten zwischen Finance and Operations-Apps und anderen Dynamics 365-Anwendungen können Sie für die Daten ein Multimastering ausführen. Unabhängig davon, woher die Kreditorendaten stammen, werden diese im Hintergrund über Anwendungsgrenzen und Infrastrukturunterschiede hinweg integriert. 
+Durch die Integration von Lieferantendaten zwischen Finance and Operations-Apps und anderen Dynamics 365-Apps können Sie für die Daten ein Multimastering ausführen. Unabhängig davon, woher die Kreditorendaten stammen, werden diese im Hintergrund über Anwendungsgrenzen und Infrastrukturunterschiede hinweg integriert. 
 
 ### <a name="vendor-data-flow"></a>Kreditorendatenfluss
 
@@ -52,166 +50,24 @@ Die Kontaktinformationen des Kreditors ähneln den Kontaktinformationen des Debi
 
 Kreditorendaten enthalten alle Informationen über den Kreditor, z. B. die Kreditorengruppe, Adressen, Kontaktinformationen, das Zahlungsprofil und das Rechnungsprofil. Eine Sammlung von Entitätszuordnungen arbeitet während der Interaktion der Kreditorendaten zusammen, wie in der folgenden Tabelle dargestellt.
 
-Finance and Operations-Apps  | Sonstige Dynamics 365-Apps
-------------------------|---------------------------------
-Kreditor V2               | Konto
-Kreditor V2               | Msdyn\_vendors
-CDS-Kontakte V2         | Kontakt
-Kreditorengruppen           | Msdyn\_vendorgroups
-Kreditorzahlungsmethode   | Msdyn\_vendorpaymentmethods
-Zahlungszeitplan        | Msdyn\_paymentschedules
-Zahlungszeitplan        | Msdyn\_paymentschedulelines
-Zahlungstag CDS         | Msdyn\_paymentdays
-Zahlungstagpositionen CDS   | Msdyn\_paymentdaylines
-Zahlungsbedingungen        | Msdyn\_paymentterms
-Namensaffixe            | Msdyn\_nameaffixes
+Finance and Operations-Apps | Sonstige Dynamics 365-Apps         | Beschreibung
+----------------------------|---------------------------------|------------
+Kreditor V2               | Konto | Unternehmen, die die Kontoentität verwenden, um Kreditorendaten speichern, können diese weiterhin auf die gleiche Weise verwenden. Sie können auch die explizite Kreditorenfunktion nutzen, die dank der Integration von Finance and Operations-Apps zur Verfügung stehen.
+Kreditor V2               | Msdyn\_vendors | Unternehmen, die eine benutzerdefinierte Lösung für Kreditoren verwenden, können das vordefinierte Kreditorenkonzept nutzen, das in Common Data Service durch die Integration von Finance and Operations-Apps eingeführt wird. 
+Kreditorengruppen | msdyn_vendorgroups | Diese Vorlage synchronisiert Lieferantengruppeninformationen.
+Kreditorzahlungsmethode | msdyn_vendorpaymentmethods | Diese Vorlage synchronisiert Informationen zu den Zahlungsmethoden für Lieferanten.
+CDS-Kontakte V2             | Kontakte                        | Die Vorlage [Kontakte](dual-write-customer.md#cds-contacts-v2-to-contacts) synchronisiert alle primären, sekundären und tertiären Kontaktinformationen für Kunden und Lieferanten.
+Zahlungsplanpositionen      | msdyn_paymentschedulelines      | Diese Vorlage [Zahlungsplanpositionen](dual-write-customer.md#payment-schedule-lines-to-msdyn_paymentschedulelines) synchronisiert die Referenzdaten für Kunden und Lieferanten.
+Zahlungszeitplan            | msdyn_paymentschedules          | Die Vorlage [Zahlungspläne](dual-write-customer.md#payment-schedule-to-msdyn_paymentschedules) synchronisiert die Referenzdaten für Zahlungspläne sowohl für Kunden als auch für Lieferanten.
+Zahlungstagpositionen CDS V2    | msdyn_paymentdaylines           | Die Vorlage [Zahlungstagpositionen](dual-write-customer.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) synchronisiert die Referenzdaten für Zahlungstagpositionen für Kunden und Lieferanten.
+Zahlungstage CDS            | msdyn_paymentdays               | Die Vorlage [Zahlungstage](dual-write-customer.md#payment-days-cds-to-msdyn_paymentdays) synchronisiert die Referenzdaten für Zahlungstage sowohl für Kunden als auch für Lieferanten.
+Zahlungsbedingungen            | msdyn_paymentterms              | Die Vorlage [Zahlungsbedingungen](dual-write-customer.md#terms-of-payment-to-msdyn_paymentterms) synchronisiert die Referenzdaten für Zahlungsbedingungen sowohl für Kunden als auch für Lieferanten.
+Namensaffixe                | msdyn_nameaffixes               | Die Vorlage [Namensaffixe](dual-write-customer.md#name-affixes-to-msdyn_nameaffixes) synchronisiert die Referenzdaten für Namensaffixe sowohl für Kunden als auch für Lieferanten.
 
-[!include [banner](../includes/dual-write-symbols.md)]
+[!include [symbols](../includes/dual-write-symbols.md)]
 
-## <a name="vendor-v2-and-account"></a>Kreditor V2 und Konto 
+[!include [Vendors](dual-write/VendorsV2-msdyn-vendors.md)]
 
-Unternehmen, die die Kontoentität verwenden, um Kreditorendaten speichern, können diese weiterhin auf die gleiche Weise verwenden. Sie können auch die explizite Kreditorenfunktion nutzen, die dank der Integration von Finance and Operations-Apps zur Verfügung stehen.
+[!include [Vendor groups](dual-write/VendVendorGroup-msdyn-vendorgroups.md)]
 
-## <a name="vendor-v2-and-msdyn_vendors"></a>Kreditor V2 und Msdyn\_vendors
-
-Unternehmen, die eine benutzerdefinierte Lösung für Kreditoren verwenden, können das vordefinierte Kreditorenkonzept nutzen, das in Common Data Service durch die Integration von Finance and Operations-Apps eingeführt wird. 
-
-<!-- ![vendor mappings](media/dual-write-vendors-1.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-2.png) -->
-
-<!-- ![vendor mappings](media/dual-write-vendors-3.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-VENDORACCOUNTNUMBER | = | msdyn\_vendoraccountnumber
-VENDORGROUPID | = | msdyn\_vendorgroupid.msdyn\_vendorgroup
-VENDORORGANIZATIONNAME | = | msdyn\_name
-VENDORPARTYTYPE | \>\< | msdyn\_isperson
-PERSONFIRSTNAME | = | msdyn\_firstname
-PERSONLASTNAME | = | msdyn\_lastname
-CREDITLIMIT | = | msdyn\_vendorcreditlimit
-ISFOREIGNENTITY | \>\< | msdyn\_isforeignentity
-ISONETIMEVENDOR | \>\< | msdyn\_isonetimevendor
-ADDRESSBUILDINGCOMPLIMENT | = | msdyn\_addressbuildingcompliment
-PERSONCHILDRENNAMES | = | msdyn\_childrennames
-ADDRESSCITY | = | msdyn\_addresscity
-ADDRESSCOUNTRYREGIONID | = | msdyn\_addresscountryregionid
-ADDRESSCOUNTRYREGIONISOCODE | = | msdyn\_addresscountryregionisocode
-ADDRESSCOUNTYID | = | msdyn\_addresscountyid
-CREDITRATING | = | msdyn\_creditrating
-ADDRESSDESCRIPTION | = | msdyn\_addressdescription
-ADDRESSDISTRICTNAME | = | msdyn\_addressdistrictname
-DUNSNUMBER | = | msdyn\_dunsnumber
-ETHNICORIGINID | = | msdyn\_ethnicorigin
-FORMATTEDPRIMARYADDRESS | = | msdyn\_formattedprimaryaddress
-PERSONHOBBIES | = | msdyn\_hobbies
-PERSONINITIALS | = | msdyn\_initials
-LANGUAGEID | = | msdyn\_languageid
-PERSONLASTNAMEPREFIX | = | msdyn\_lastnameprefix
-PERSONMIDDLENAME | = | msdyn\_middlename
-ORGANIZATIONNUMBER | = | msdyn\_organizationnumber
-OURACCOUNTNUMBER | = | msdyn\_ourvendoraccountnumber
-PAYMENTID | = | msdyn\_paymentid
-PERSONPHONETICFIRSTNAME | = | msdyn\_phoneticfirstname
-PERSONPHONETICMIDDLENAME | = | msdyn\_phoneticmiddlename
-PERSONPHONETICLASTNAME | = | msdyn\_phoneticlastname
-ORGANIZATIONPHONETICNAME | = | msdyn\_organizationphoneticname
-ADDRESSPOSTBOX | = | msdyn\_addresspostbox
-PRIMARYURL | = | msdyn\_primarycontacturl
-PRIMARYEMAILADDRESS | = | msdyn\_primaryemailaddress
-PRIMARYEMAILADDRESSDESCRIPTION | = | msdyn\_primaryemailaddressdescription
-PRIMARYFACEBOOK | = | msdyn\_primaryfacebook
-PRIMARYFACEBOOKDESCRIPTION | = | msdyn\_primaryfacebookdescription
-PRIMARYFAXNUMBER | = | msdyn\_primaryfaxnumber
-PRIMARYFAXNUMBERDESCRIPTION | = | msdyn\_primaryfaxnumberdescription
-PRIMARYFAXNUMBEREXTENSION | = | msdyn\_primaryfaxnumberextension
-PRIMARYLINKEDIN | = | msdyn\_primarylinkedin
-PRIMARYLINKEDINDESCRIPTION | = | msdyn\_primarylinkedindescription
-PRIMARYPHONENUMBER | = | msdyn\_pimaryphonenumber
-PRIMARYPHONENUMBERDESCRIPTION | = | msdyn\_primaryphonenumberdescription
-PRIMARYPHONENUMBEREXTENSION | = | msdyn\_primaryphonenumberextension
-PRIMARYTELEX | = | msdyn\_primarytelex
-PRIMARYTELEXDESCRIPTION | = | msdyn\_primarytelexdescription
-PRIMARYTWITTER | = | msdyn\_primarytwitter
-PRIMARYTWITTERDESCRIPTION | = | msdyn\_primarytwitterdescription
-PRIMARYURLDESCRIPTION | = | msdyn\_primaryurldescription
-PERSONPROFESSIONALSUFFIX | = | msdyn\_professionalsuffix
-PERSONPROFESSIONALTITLE | = | msdyn\_professionatitle
-ADDRESSSTATEID | = | msdyn\_addressstateid
-ADDRESSSTREET | = | msdyn\_addressstreet
-ADDRESSSTREETNUMBER | = | msdyn\_addressstreetnumber
-VENDORKNOWNASNAME | = | msdyn\_vendorknownasname
-ADDRESSZIPCODE | = | msdyn\_addresszipcode
-DEFAULTPAYMENTDAYNAME | = | msdyn\_defaultpaymentdayname.msdyn\_name
-DEFAULTPAYMENTSCHEDULENAME | = | msdyn\_paymentschedule.msdyn\_name
-DEFAULTPAYMENTTERMSNAME | = | msdyn\_paymentterms.msdyn\_name
-HASONLYTAKENBIDS | \>\< | msdyn\_hasonlytakenbids
-ISMINORITYOWNED | \>\< | msdyn\_isminorityowned
-ISVENDORLOCALLYOWNED | \>\< | msdyn\_isvendorlocallyowned
-ISSERVICEVETERANOWNED | \>\< | msdyn\_isserviceveteranowned
-ISOWNERDISABLED | \>\< | msdyn\_ownerisdisabled
-ISWOMANOWNER | \>\< | msdyn\_womanowner
-PERSONANNIVERSARYDAY | = | msdyn\_personanniversaryday
-PERSONANNIVERSARYYEAR | = | msdyn\_anniversaryyear
-PERSONBIRTHDAY | = | msdyn\_birthday
-PERSONBIRTHYEAR | = | msdyn\_birthyear
-ORGANIZATIONEMPLOYEEAMOUNT | = | msdyn\_numberofemployees
-VENDORHOLDRELEASEDATE | = | msdyn\_vendoronholdreleasedate
-VENDORPARTYNUMBER | = | msdyn\_vendorpartynumber
-ADDRESSLOCATIONID | = | msdyn\_addresslocationid
-PERSONANNIVERSARYMONTH | = | msdyn\_vendorpersonanniversarymonth
-PERSONBIRTHMONTH | = | msdyn\_vendorpersonbirthmonth
-PERSONMARITALSTATUS | \>\< | msdyn\_maritalstatus
-ADDRESSLATITUDE | \>\> | msdyn\_addresslatitude
-ADDRESSLONGITUDE | \>\> | msdyn\_addresslongitude
-ONHOLDSTATUS | \>\< | msdyn\_onholdstatus
-CURRENCYCODE | = | msdyn\_currencycode.isocurrencycode
-ISVENDORLOCATEDINHUBZONE | \>\< | msdyn\_isvendorlocatedinhubzone
-DEFAULTVENDORPAYMENTMETHODNAME | = | msdyn\_vendorpaymentmethod.msdyn\_name
-INVOICEVENDORACCOUNTNUMBER | = | msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber
-PERSONGENDER | \>\< | msdyn\_gender
-AREPRICESINCLUDINGSALESTAX | \>\< | msdyn\_priceincludessalestax
-SALESTAXGROUPCODE | = | msdyn\_taxgroup.msdyn\_name
-VENDORPRICETOLERANCEGROUPID | = | msdyn\_pricetolerancegroup.msdyn\_groupid
-
-## <a name="contacts"></a>Kontakte
-
-Diese Vorlage synchronisiert alle primären, sekundären und tertiären Kontaktinformationen, sowohl für Debitoren als auch für Kreditoren, zwischen Finance and Operations-Apps und anderen Dynamics 365-Apps. Informationen zur Entitätszuordnung finden Sie in den [Integrierten Masterdaten von Debitoren](dual-write-customer.md#contacts).
-
-## <a name="vendor-groups"></a>Kreditorengruppen
-
-Diese Vorlage synchronisiert Kreditorengruppeninformationen zwischen Finance and Operations-Apps und anderen Dynamics 365-Apps.
-
-<!-- ![vendor groups mappings](media/dual-write-vendor-groups.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-DEFAULTPAYMENTTERMNAME | = | msdyn\_paymentterms.msdyn\_name
-BESCHREIBUNG | = | msdyn\_description
-VENDORGROUPID | = | msdyn\_vendorgroup
-CLEARINGPERIODPAYMENTTERMNAME | = | msdyn\_clearingperiodpaymentpermname.msdyn\_name
-
-### <a name="vendor-payment-method"></a>Kreditorzahlungsmethode
-
-Diese Vorlage synchronisiert Informationen zu Kreditorenzahlungsmethoden zwischen Finance and Operations und anderen Dynamics 365-Apps.
-
-<!-- ![vendor payment method mappings](media/dual-write-vendor-payment-method.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-NAME | = | msdyn\_name
-BESCHREIBUNG | = | msdyn\_description
-SUMBYPERIOD | \>\< | msdyn\_sumbyperiod
-DISCOUNTGRACEPERIODDAYS | = | msdyn\_discountgraceperioddays
-PAYMENTSTATUS | \>\< | msdyn\_paymentstatus
-ALLOWPAYMENTCOPIES | \>\< | msdyn\_allowpaymentcopies
-PAYMENTTYPE | \>\< | msdyn\_paymenttype
-LASTFILENUMBER | = | msdyn\_lastfilenumber
-LASTFILENUMBERTODAY | = | msdyn\_lastfilenumbertoday
-ACCOUNTTYPE | \>\< | msdyn\_accounttype
-BRIDGINGPOSTINGENABLED | \>\< | msdyn\_bridgingposting
-ENABLEPOSTDATEDCHECKCLEARINGPOSTING | \>\< | msdyn\_postdatedcheckclearingposting
-PROMISSORYNOTEDRAFTTYPE | \>\< | msdyn\_promissorynotedrafttype
-DIRECTDEBIT | \>\< | msdyn\_directdebit
-
+[!include [Vendor payment methods](dual-write/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]

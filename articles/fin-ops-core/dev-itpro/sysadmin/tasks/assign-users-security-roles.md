@@ -3,7 +3,7 @@ title: Zuweisen von Benutzern zu Sicherheitsrollen
 description: Um auf Finance and Operations-Apps zuzugreifen, müssen Benutzer Sicherheitsrollen zugewiesen werden.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 11/14/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4daecc1acd589cd1656402244e5325382a407e7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e4f4ef4535de9e371829c2d86d4fdc1400510c7b
+ms.sourcegitcommit: 6aa74f66f1abd3a7977050a5339b0b17e62ff053
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180966"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "2807995"
 ---
 # <a name="assign-users-to-security-roles"></a>Zuweisen von Benutzern zu Sicherheitsrollen
 
@@ -37,6 +37,9 @@ Um etwas außerhalb der allgemeinen Funktionen verwenden zu können, müssen Ben
 5. Klicken Sie in der Liste **Mitgliederregelname** auf den Link in der ausgewählten Zeile.
 6. Klicken Sie auf **Abtrage bearbeiten**. Bearbeiten Sie die Abfrage nach Bedarf.  
 7. Klicken Sie auf **OK**.
+8. Klicken Sie auf **Automatische Rollenzuweisung ausführen**.
+9. Wechseln Sie zu **Navigationsbereich > Module > Systemverwaltung > Benutzer > Benutzer** (idealerweise in einer separaten Browserregisterkarte).
+10. Überprüfen Sie die Rollen, die unterschiedlichen Benutzern zugewiesen sind, um zu bestätigen, dass die Rollenzuweisungsabfrage korrekt war. Passen Sie bei Bedarf die Werte an, und führen Sie den Vorgang erneut aus.
 
 ## <a name="exclude-users-from-automatic-role-assignment"></a>Schließen Sie Benutzer von der automatischen Rollenzuweisung aus
 1. Schließen Sie die Seite.

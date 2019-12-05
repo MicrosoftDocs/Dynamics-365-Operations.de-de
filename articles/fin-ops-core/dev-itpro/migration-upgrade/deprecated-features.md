@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c5dea039ae6482bfd9e036642c23463f5bc3a
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 52ed93ae425a821ebce4ed63f154e155cb161e94
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658689"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811992"
 ---
 # <a name="removed-or-deprecated-features-for-finance-and-operations"></a>Entfernte oder veraltete Funktionen für Finance and Operations
 
@@ -270,7 +270,7 @@ Integrierte Key Performance Indicators (KPIs) können in Visual Studio von einem
 | **Status**                         | Veraltet: Die Warnung wird in Zukunft zu einem Kompilierungsfehler. Wir arbeiten derzeit an Plattformaktualisierung 30. |
 
 #### <a name="complete-list"></a>Vollständige Liste
-Wenn Sie auf die gesamte Liste der veralteten APIs zuzugreifen möchten, finden Siediese unter [Veralten von Methoden und Metadatenelementen](deprecation-deletion-apis.md).
+Die vollständige Liste der veralteten APIs finden Sie unter [Veraltete Methoden und Metadatenelemente](deprecation-deletion-apis.md).
 
 ## <a name="finance-and-operations-81-with-platform-update-20"></a>Finance and Operations 8.1 mit Plattformupdate 20
 
@@ -348,7 +348,7 @@ Ab 15. Februar 2018 können Einzelhändler nicht mehr personalisierte Produktemp
 | **Status**                         |Entfernt ab 15. Februar 2018. Dies betrifft Kunden mit Dynamics 365 for Operations 1611 und höher.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Erweiterung der Liste der elektronischen Berichterstellungsfunktionen (ER)
-Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-Generator zu verwenden (weitere Informationen finden Sie unter [Erweiterung der Liste elektronischer Berichterstellungsfunktionen](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) wird nicht mehr unterstützt. Aufgrund von Änderungen der ER-APIs, wurde die API zum Aufruf integrierter Funktionen vom ER-Ausrucks-Generator intern und kann nicht mehr erweitert werden.
+Die Möglichkeit, benutzerdefinierte Funktionen zur Verwendung im ER-Ausdrucks-Generator zu verwenden (weitere Informationen finden Sie unter [Erweitern der Liste elektronischer Berichterstellungsfunktionen (ER, Elektronic Reporting)](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) wird nicht mehr unterstützt. Aufgrund von Änderungen der ER-APIs, wurde die API zum Aufruf integrierter Funktionen vom ER-Ausrucks-Generator intern und kann nicht mehr erweitert werden.
 
 |   |  |
 |------------|--------------------|
@@ -474,7 +474,7 @@ Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – W
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Doppelte Funktionen.       |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Einrichten und Konfigurieren von Microsoft Dynamics 365 for Finance and Operations – Lagerorte](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Diese Funktion wurde von Finance and Operations - Warehousing ersetzt. Weitere Informationen zu Einstellungen und Voraussetzungen finden Sie unter [Installieren und Konfigurieren der Warehousing-App – Übersicht](../../../supply-chain/warehousing/install-configure-warehousing-app.md). |
 | **Betroffene Produktbereiche**         | Lagerortverwaltung und Transportverwaltung     |
 | **Bereitstellungsoption**              | Portal für mobile Geräte für das Lager (Warehouse Mobile Devices Portal – WMDP) war eine eigenständige Komponente, die für lokale Selbstbereitstellung vorgesehen war.               |
 | **Status**                         | Veraltet: Zielzeitrahmen für das Entfernen der Funktion ist Q4 2019.   |
@@ -1244,7 +1244,7 @@ Der Produktgenerator wurde zur dynamischen Konfiguration von Artikel aus einem A
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Der Produktgenerator zeigte X++-Code für die Endbenutzer an und wird in der aktuellen Version von Dynamics AX nicht unterstützt. Es ist entfernt wurden, um doppelten Wartungsaufwand durch Überschneidung einer beträchtlichen Codebases zu vermeiden.  |
-| **Ersetzt durch eine andere Funktion?**   | Ja. Die einschränkungsbasierte Konfiguration wurde in Dynamics AX 2012 eingeführt, wo bereits angekündigt wurde, dass der Produkt-Generator in zukünftigen Versionen veraltet sein wird. Die Technologie der einschränkungsbasierten Konfiguration wird bei den Produktmastern ausgewählt, um die Konfiguration zu aktivieren. Weitere Informationen finden Sie unter [Erstellen eines Produktkonfigurationsmodells](../../../supply-chain/pim/build-product-configuration-model.md). |
+| **Ersetzt durch eine andere Funktion?**   | Ja. Die einschränkungsbasierte Konfiguration wurde in Dynamics AX 2012 eingeführt, wo bereits angekündigt wurde, dass der Produkt-Generator in zukünftigen Versionen veraltet sein wird. Die Technologie der einschränkungsbasierten Konfiguration wird bei den Produktmastern ausgewählt, um die Konfiguration zu aktivieren. Weitere Informationen finden Sie unter [Produktkonfiguration – Übersicht](../../../supply-chain/pim/build-product-configuration-model.md). |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung, Vertrieb und Marketing  |
 | **Status**                         | Entfernt ab Dynamics AX 7.0.      |
 

@@ -3,7 +3,7 @@ title: Physischen Wert einbeziehen
 description: Verwenden Sie das Kontrollkästchen "Physischen Wert einbeziehen"auf dem Inforegister "Lagermodell" im Formular "Artikelmodellgruppen", um anzugeben, ob physisch aktualisierte Buchungen in der Berechnung des laufenden Durchschnittseinstandspreises für einen Artikel berücksichtigt werden sollen.
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96d5e2a658a027d66663868329cf4eedcb1d46f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 834438f8389e295bbb992f0b8397ff45559690c3
+ms.sourcegitcommit: 92322167f57b66d2accc134aaf862e6b9931ec94
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1551974"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "2692996"
 ---
 # <a name="include-physical-value"></a>Physischen Wert einbeziehen
 
@@ -47,10 +47,16 @@ Die Verwendung des Kontrollkästchens hat je nach genutztem Lagermodell etwas an
 
 **Beispiel 1** Bei aktiviertem Kontrollkästchen**Physischen Wert einbeziehen** gehen die folgenden Bestellungen ein:
 
--   Eine Bestellung mit einer Menge von 2 zu einem Einstandspreis von EUR 10,00, die auf Grundlage des Lieferscheins aktualisiert wurde.
--   Eine Bestellung mit einer Menge von 3 zu einem Einstandspreis von EUR 12,00, die auf Grundlage einer Rechnung aktualisiert wurde.
+-   Eine Bestellung über eine Menge von 2 und einen Einkaufspreis von 10,00 USD, die nach der Aktualisierung des Verpackungspakets aktualisiert wurde.
+-   Eine Bestellung über eine Menge von 3 und einen Einkaufspreis von 12,00 USD, die rechnungsaktualisiert wurde.
 
-In diesem Fall beträgt der laufende Durchschnittseinstandspreis EUR 11,20, da für die Einstandspreisberechnung sowohl physisch als auch wertmäßig aktualisierte Buchungen verwendet werden. **Beispiel 2** Das Kontrollkästchen **Physischen Wert einbeziehen** ist nicht aktiviert, und der Einstandspreis in den Artikeleinstellungen beträgt EUR 10,00. Sie erhalten eine Bestellung mit einer Menge von 20 zu einem Einstandspreis von EUR 12,00, die auf Grundlage des Lieferscheins aktualisiert wurde. Bei der Buchung eines Auftrags wird der Einstandspreis mit EUR 10,00 gebucht, da im laufenden Durchschnittseinstandspreis keine physisch gebuchten Posten enthalten sind. **Hinweis:** Wenn Sie zum Vergleich das Kontrollkästchen **Physischen Wert einbeziehen** bei der Auftragsbuchung für diesen Artikel aktivieren, beträgt der gebuchte Einstandspreis EUR 12.00.
+In diesem Fall beträgt der laufende durchschnittliche Einstandspreis USD 11,20 = (2x10+3x12)/(2+3), da sowohl physisch aktualisierte Transaktionen als auch finanziell aktualisierte Transaktionen zur Berechnung des Einstandspreises verwendet werden. 
 
+**Beispiel 2** Das Kontrollkästchen **Physischen Wert einbeziehen** ist nicht aktiviert, und der Einstandspreis in den Artikeleinstellungen beträgt EUR 10,00. 
 
+-   Sie erhalten eine Bestellung mit einer Menge von 20 zu einem Einstandspreis von EUR 12,00, die auf Grundlage des Lieferscheins aktualisiert wurde.
 
+Bei der Buchung eines Auftrags wird der Einstandspreis mit EUR 10,00 gebucht, da im laufenden Durchschnittseinstandspreis keine physisch gebuchten Posten enthalten sind. 
+
+> [!NOTE]
+> Wenn Sie zum Vergleich für diese Position das Kontrollkästchen **Physischen Wert** einbeziehen aktivieren, beträgt der gebuchte Kostenbetrag bei der Buchung eines Kundenauftrags USD 12,00.

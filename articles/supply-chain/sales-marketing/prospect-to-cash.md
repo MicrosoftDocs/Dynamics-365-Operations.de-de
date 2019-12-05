@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 1a96b7cfa57ec72b25f21d94fadb2fbf9bc6ea3b
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: fb5abb983811ce736e3494bc85e8d9b23a2e373c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251355"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814074"
 ---
 # <a name="prospect-to-cash"></a>Prospect-to-Cash
 
@@ -36,12 +36,12 @@ Für weitere Informationen über die Integration Prospect to Cash sehen Sie sich
 
 In der aktuellen Version enthält die Interessent in Bargeldlösung die folgenden Typen der direkten Synchronisierung:
 
-- [Konten in Sales verwalten und direkt von Sales zu Supply Chain Management synchronisieren](accounts-template-mapping-direct.md)
-- [Produkte in Supply Chain Management verwalten und direkt zu Sales synchronisieren](products-template-mapping-direct.md)
-- [Kontakte in Sales verwalten und direkt mit Kontakten oder Debitoren in Supply Chain Management synchronisieren](contacts-template-mapping-direct.md)
-- [Synchronisieren von Verkaufsangeboten direkt von Sales mit Supply Chain Management](sales-quotation-template-mapping-sales-fin.md)
+- [Konten direkt von Sales mit Konten in Supply Chain Management synchronisieren](accounts-template-mapping-direct.md)
+- [Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren](products-template-mapping-direct.md)
+- [Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren](contacts-template-mapping-direct.md)
+- [Verkaufsangebotskopfzeilen und ‑positionen direkt von Sales zu Supply Chain Management synchronisieren](sales-quotation-template-mapping-sales-fin.md)
 - [Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
-- [Synchronisieren von Verkaufsrechnungen direkt von Supply Chain Management zu Sales](sales-invoice-template-mapping-direct.md)
+- [Rechnungskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-supply-chain-management"></a>Systemanforderungen für Supply Chain Management
 „Interessent zu Bargeld”-Integration wird in den folgenden Versionen unterstützt:

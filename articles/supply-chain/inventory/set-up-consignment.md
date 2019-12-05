@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 24500ff46cc77ca8fa59c0c16427d9f05f33a87e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 04b3fb3038a1373e203ec240a0163cf67de655cc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1549995"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813843"
 ---
 # <a name="set-up-consignment"></a>Unterlieferung einrichten
 
@@ -31,7 +31,7 @@ ms.locfileid: "1549995"
 
 In diesem Thema wird erläutert, wie eingehende Lieferungsbestandsvorgänge konfiguriert werden.
 
-Beim Lieferungsbestand handelt es sich um Bestand, der im Besitz eines Kreditors ist, der aber an Ihrem Standort gelagert ist. Wenn Sie bereit sind, den Bestand zu verbrauchen oder verwenden, übernehmen Sie den Besitz des Bestands. In diesem Thema werden die Einstellungen beschrieben, die benötigt werden, um Lieferungsprozesse zu ermöglichen. Weitere Informationen zu Lieferungsprozessen finden Sie unter [Lieferung](consignment.md).
+Beim Lieferungsbestand handelt es sich um Bestand, der im Besitz eines Kreditors ist, der aber an Ihrem Standort gelagert ist. Wenn Sie bereit sind, den Bestand zu verbrauchen oder verwenden, übernehmen Sie den Besitz des Bestands. In diesem Thema werden die Einstellungen beschrieben, die benötigt werden, um Lieferungsprozesse zu ermöglichen. Weitere Informationen zu Konsignationsprozessen finden Sie unter [Konsignation einrichten](consignment.md).
 
 ## <a name="inventory-owners"></a>Bestandsbesitzer
 Um physischen, eingehenden Lieferungsbestand zu erfassen, müssen Sie einen Kreditoreneigentümer definieren. Dies erfolgt auf der Seite **Bestandseigentümer**. Wenn Sie ein **Kreditorenkonto** auswählen, generiert dies Standardwerte für die Felder **Name** und **Besitzer**. Der Wert im Feld **Besitzer** wird für den Kreditor angezeigt, somit möchten Sie ihn möglicherweise ändern, wenn die Namen Ihres Kreditorenkontos von externen Personen nicht einfach erkannt werden können. Es ist möglich, das Feld **Besitzer** zu bearbeiten. Dies gilt jedoch nur bis zu dem Zeiptunkt, an dem Sie den Datensatz **Bestandsbesitzer** speichern. Das Feld **Name** wird mit dem Namen der Partei aufgefüllt, dem das Kreditorenkonto zugeordnet ist, und dieser kann nicht geändert werden.
@@ -49,4 +49,4 @@ Die Erfassung **Bestandsbesitzänderung**wird verwendet, um die Übertragung des
 [![Bestandeigentümer-Änderungserfassung](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Kreditorenzusammenarbeit in den Lieferungsprozessen
-Wenn Ihre Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, können sie diese verwenden, um den Verbrauch des Bestands an Ihrem Standort zu überwachen. Weitere Informationen zur Einrichtung von Kreditoren zur Verwendung der Kreditorenzusammenarbeit finden Sie unter [Konfiguration der Sicherheit für Kreditoren-Zusammenarbeitsbenutzer](../procurement/configure-security-vendor-portal-users.md)
+Wenn Ihre Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, können sie diese verwenden, um den Verbrauch des Bestands an Ihrem Standort zu überwachen. Weitere Informationen zur Einrichtung von Kreditoren zur Verwendung der Kreditorenzusammenarbeit finden Sie unter [Benutzersicherheit für Kreditorenportal](../procurement/configure-security-vendor-portal-users.md)

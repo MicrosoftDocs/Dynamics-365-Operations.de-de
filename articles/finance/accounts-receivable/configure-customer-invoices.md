@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa49b70b07ac3dc6cbc5989b11981098f22be89c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0f5b9866fc7afba205b84b372c6a204ec4c8f64d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189153"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772719"
 ---
 # <a name="create-a-customer-invoice"></a>Erstellen einer Debitorenrechnung
 
@@ -35,13 +35,13 @@ Bei einer **Debitorenrechnung für einen Auftrag** handelt es sich um eine Rechn
 
 Weitere Informationen finden Sie unter ''.
 
-[Freitextrechnung erstellen](../accounts-receivable/create-free-text-invoice-new.md)
+[Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-new.md)
 
-[Erstellt eine Vorlage für Freitextrechnungen.](../accounts-receivable/create-free-text-invoice-template-new.md)
+[Vorlage für Freitextrechnungen erstellen](../accounts-receivable/create-free-text-invoice-template-new.md)
 
-[Einem Debitor eine Freitext-Rechnungsvorlage zuweisen](tasks/assign-free-text-invoice-template-customer.md)
+[Einem Debitor eine Freitextrechnungsvorlage zuweisen](tasks/assign-free-text-invoice-template-customer.md)
 
-[Freitext-Serienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
+[Freitextserienrechnungen generieren und buchen](tasks/post-recurring-free-text-invoices.md)
 
 
 Bei einer **Proforma-Rechnung** handelt es sich um eine Rechnung, die vor dem Buchen der Rechnung als Vorkalkulation der tatsächlichen Rechnungsbeträge vorbereitet wird. Proforma-Rechnungen können sowohl für eine Debitorenrechnung für einen Auftrag als auch für Freitextrechnungen gedruckt werden.

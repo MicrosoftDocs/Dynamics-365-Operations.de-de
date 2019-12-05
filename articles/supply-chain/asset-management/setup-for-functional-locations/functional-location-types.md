@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74ccda77a97d1e104940bb10a605d3ebbf45af75
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 0468cb0b1717b7cf0ccb391da09a4e7d788124f3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571253"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812213"
 ---
 # <a name="functional-location-types"></a>Funktionale Standorttypen
 
@@ -56,7 +56,7 @@ Jetzt wurde der standardmäßige funktionale Standorttyp erstellt, der nur für 
 3. Fügen Sie eine ID für den funktionalen Standorttyp in das Feld **Funktionaler Standorttyp** ein, und geben Sie einen Namen in das Feld **Name** ein.
 4. Wählen Sie ein Lebenszyklusmodell im Feld **Lebenszyklusmodellen für funktionale Standorte** aus. Weitere Informationen zu den Lebenszyklusstatus von funktionalen Standorten und Lebenszyklusmodellen finden Sie unter [Lebenszyklusstatus funktionaler Standorte](../setup-for-functional-locations/functional-location-stages.md).
 5. Wählen Sie für die Umschaltfläche **Mehrere Anlagen** „Ja“ aus, um zu ermöglichen, dass mehrere Anlagen an einem funktionalen Standort mit diesem funktionalen Standorttyp installiert werden können. Wenn Sie „Nein“ auswählen, können Sie nur *eine* Anlage mit diesem funktionalen Standorttypen an einem funktionalen Standort installieren.
-6. Wählen Sie für die Umschaltfläche **Anlagendimension aktualisieren** die Option „Ja“, wenn Anlagen, die an einem funktionalen Standort dieses Typs installiert sind, automatisch die Finanzdimensionen verwenden sollen, die mit diesem funktionalen Standort verknüpft sind. Das bedeutet Folgendes: Wenn Sie Finanzdimensionen im Formular [Funktionaler Standort](../functional-locations/create-functional-locations.md) ändern und der funktionale Standort einen funktionalen Standorttypen verwendet, bei dem diese Umschaltfläche auf „Ja“ festgelegt ist, werden Finanzdimensionen automatisch für alle Anlagen aktualisiert, die an diesem funktionalen Standort installiert sind.
+6. Wählen Sie für die Umschaltfläche **Anlagendimension aktualisieren** die Option „Ja“, wenn Anlagen, die an einem funktionalen Standort dieses Typs installiert sind, automatisch die Finanzdimensionen verwenden sollen, die mit diesem funktionalen Standort verknüpft sind. Das bedeutet, wenn Sie die Finanzdimensionen im Formular [Technische Standorte anlegen](../functional-locations/create-functional-locations.md) ändern und der Technische Standort einen Technischen Standorttyp mit dieser Umschaltoption auf „Ja“ verwendet, werden die Finanzdimensionen automatisch auf alle auf diesem Technischen Standort installierten Anlagen aktualisiert.
 7. Das Feld **Anlagentyp** wird verwendet, wenn Sie automatisch *eine* Anlage für den funktionalen Standort mit der gleichen ID und dem gleichen Namen erstellen möchten, wie Sie für den funktionalen Standort verwenden, den Sie erstellen. Dies ist zum Beispiel dann relevant, wenn Sie einen statischen funktionalen Standort erstellen, wie z. B. ein Gebäude oder eine Rohrleitung. Wählen Sie in diesem Fall den Anlagentyp aus, den Sie für die automatisch erstellte Anlage verwenden möchten. Denken Sie daran, dass Sie die Umschaltfläche **Mehrere Anlagen** auf „Nein“ festlegen müssen, wenn Sie eine Auswahl in diesem Feld vornehmen.
 8. Wählen Sie im Inforegister **Anlagentypen** die Anlagentypen aus, die dem funktionalen Standorttyp zugeordnet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie die Anlagentypen aus. Wenn Sie hier Anlagentypen hinzufügen, können nur Anlagen mit diesem Anlagentypen an einem funktionalen Standort mit diesem funktionalen Standorttypen installiert werden. Wenn im Inforegister **Anlagentypen** keine Anlagentypen ausgewählt werden, können alle Anlagentypen installiert werden.
 9. Wählen Sie im Inforegister **Wartungspläne** die Wartungspläne aus, die automatisch für neue funktionale Standorte mit diesem funktionalen Standorttypen eingerichtet werden sollen. Wählen Sie **Position hinzufügen**, und wählen Sie die Wartungspläne aus. Wenn Sie hier Wartungspläne hinzufügen, können nur diese Pläne an einem funktionalen Standort mit diesem funktionalen Standorttypen verwendet werden.

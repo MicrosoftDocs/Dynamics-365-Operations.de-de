@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 727a32409be168286347ab91990eca765a83c49c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a01941cfbbaa8d5ba2f878b7cec95a5803c2bea0
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183550"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773400"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -29,10 +29,10 @@ ms.locfileid: "2183550"
 Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die für juristische Personen mit einer primären Adresse in Deutschland berücksichtigt werden sollen.
 
 ## <a name="audit-file"></a>Protokolldatei
-- [Deutsche Protokolldatei (GDPdU/GoBD)](emea-deu-gdpdu-audit-data-export.md)
-- [Protokolldateikonfiguration anpassen](tasks/customize-german-audit-file-configuration.md)
-- [Protokolldatei generieren](tasks/german-audit-file.md)
-- [Protokolldateikonfiguration importieren](tasks/import-german-audit-file-configuration.md)
+- [Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht](emea-deu-gdpdu-audit-data-export.md)
+- [Anpassen der deutschen Protokolldateikonfiguration](tasks/customize-german-audit-file-configuration.md)
+- [Generieren Sie deutsche Protokolldatei](tasks/german-audit-file.md)
+- [Deutsche Protokolldateikonfiguration importieren](tasks/import-german-audit-file-configuration.md)
 
 ## <a name="depreciation"></a>Abschreibung
 -   [Zusätzliche Anschaffungsabschreibung](emea-deu-additional-acquisition-depreciation.md)

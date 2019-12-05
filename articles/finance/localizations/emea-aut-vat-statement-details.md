@@ -17,12 +17,12 @@ ms.search.region: Austria
 ms.author: v-elgolu
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 18134450ca7baff22889e97c3d5fafe2494b000d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: af36680957a4f1f47ea02b8a4e739506ef8aba08
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183559"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773405"
 ---
 # <a name="vat-statement-details-for-austria"></a>MwSt-Berichtdetails für Österreich
 
@@ -30,7 +30,7 @@ ms.locfileid: "2183559"
 
 In diesem Thema wird erläutert, wie der MwSt Bericht für juristische Personen in Österreich erfasst wird.
 
-Dieses Thema enthält länder-/regionsspezifische Informationen zu den Einstellungen des Auszugs Mehrwertsteuer (MwSt)- für juristische Personen nur in Österreich. Weitere Informationen zu den Einstellungen des MwSt. -Auszugs findne Sie unter [MwSt Bericht](emea-vat-reporting.md). Der Rest dieses Themas zeigt, wie Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes für die österreichischen Mehrwertsteuererklärung eingerichtet wird, sodass MwSt. -Auszüge generiert werden können.
+Dieses Thema enthält länder-/regionsspezifische Informationen zu den Einstellungen des Auszugs Mehrwertsteuer (MwSt)- für juristische Personen nur in Österreich. Weitere Informationen zur Einrichtung des MwSt.-Auszugs finden Sie unter [MwSt-Berichterstattung für Europa](emea-vat-reporting.md). Der Rest dieses Themas zeigt, wie Mehrwertsteuercodes und Mehrwertsteuer-Erklärungscodes für die österreichischen Mehrwertsteuererklärung eingerichtet wird, sodass MwSt. -Auszüge generiert werden können.
 
 ## <a name="set-up-sales-tax-authorities"></a>Einrichten von Mehrwertsteuerbehörden
 Um eine Umsatzsteuervoranmeldung im richtigen Format der entsprechenden Steuerbehörde zu generieren, müssen das Berichtslayout für die Mehrwertsteuerbehörden eingerichtet werden. Sie müssen auch das Feld **Berichtslayout** im Bereich **Allgemein** auf der Seite **Mehrwertsteuer-Behörden** auswählen. Wählen Sie dieselbe Mehrwertsteuerbehörde für den Mehrwertsteuer-Abrechnungszeitraum aus, in der der Mehrwertsteuercodes verwendet wird.

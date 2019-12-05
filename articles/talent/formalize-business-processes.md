@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
-ms.openlocfilehash: 51f8102afc28b3836d5fee13aa1e950351af3c4f
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 2a245891e2e3e8c0eae4f28d0932776c3ee976dc
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008370"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832814"
 ---
 # <a name="formalize-business-processes"></a>Geschäftsprozesse formalisieren
 
-[!include[banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Die Geschäftsprozessfunktion ermöglicht es Ihnen, eine Geschäftsprozessvorlage für Prozesse zu erstellen, die innerhalb Ihrer Organisation abgeschlossen werden müssen. Beispielsweise macht Ihr Unternehmen jedes jarh ein Personalverwaltung (HR)- Audit. In diesem Fall können Sie eine Vorlage erstellen, die alle Aufgaben nachverfolgt, die im Auditprozess vorkommen. Diese Vorlage kann dann helfen sicherzustellen, dass alle Aufgaben jedes Mal geleistet werden, wenn die Überwachungs- geleistet wird. Darüber hinaus, wenn die Aufgaben in einer bestimmten Reihenfolge ausgeführt werden müssen, kann die Vorlage dazu beitragen, sicherzustellen, dass diese in der richtigen Reihenfolge geleistet werden.
 

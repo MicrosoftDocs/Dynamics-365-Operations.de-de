@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1dac72d7b5ca6a2817207c0bded1befee46406cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ed1fdc4a44ff55586f6879d9fb7df44b4f88c568
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175427"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772844"
 ---
 # <a name="europe-overview"></a>Europa – Übersicht
 
@@ -28,23 +28,23 @@ ms.locfileid: "2175427"
 
 Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren Hilfe Sie für juristische Personen mit primärer Adresse in Europa einrichten können. 
 
-- [Vorschussinhaber](emea-advance-holders.md)
- - [Vorschussinhaberbuchungen](emea-advance-holders-transactions.md)
- - [Vorauszahlung an einen Mitarbeiter (Osteuropa)](tasks/advance-payment-employee.md)
-- [Erweiterte Fakturierung](emea-advance-invoice.md)
-- [Bankabstimmung](emea-bank-reconciliation.md)
+- [Vorschussinhaber – Übersicht](emea-advance-holders.md)
+ - [Vorauszahlungstransaktionen](emea-advance-holders-transactions.md)
+ - [Vorauszahlung an Mitarbeiter ](tasks/advance-payment-employee.md)
+- [Vorabrechnungen für Osteuropa](emea-advance-invoice.md)
+- [Kontoauszug und Zahlungsabstimmung ](emea-bank-reconciliation.md)
 - [Rechnungskorrektur](emea-corrective-invoice.md)
-- [Periodische Erfassungen erstellen und buchen](emea-create-post-periodic-journals.md)
+- [Perioden in periodischen Erfassungen teilen](emea-create-post-periodic-journals.md)
 - [Zahlungen für einen Debitor erstellen, der Direkteinzugsmandate verwendet](tasks/create-payments-customers-who-have-direct-debit-mandates.md)
-- [Rechnungs-IDs zu Aufträgen bearbeiten](emea-edit-invoice-id-sales-orders.md)
-- [EU-Gelangensbestätigungen](emea-entry-certificates.md)
+- [Rechnungs-IDs auf Kundenaufträgen für Osteuropa bearbeiten](emea-edit-invoice-id-sales-orders.md)
+- [EU-Gelangensbestätigung](emea-entry-certificates.md)
 - [Zusammenfassende Meldung](emea-eu-sales-list.md)
 - [Wechselkursregulierungen](emea-exchange-rate-adjustments.md)
 - [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md)
 - [Steuerdienste ERS-Integration](emea-fiscal-service-integration.md)
 - [Anlagenveräußerungen für Estland und Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Umlagerungsdokument für eine interne Umlagerung generieren](tasks/transfer-document-internal-inventory-transfer.md)
-- [Bericht „Zusammenfassende Meldung“ generieren](tasks/eur-00011-eu-sales-list-report.md)
+- [Erstellen des Berichts für die zusammenfassende Meldung](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-Dateien
   - [ISO20022-Dateien importieren](emea-ISO20022-file-formats.md)
   - [ISO20022-Direktbelastungskonfiguration importieren](tasks/import-iso20022-direct-debit-configuration.md)
@@ -52,29 +52,29 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
   - [Unternehmens-Bankkonten für ISO20022-Überweisungen einrichten](tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
   - [Unternehmens-Bankkonten für ISO20022-Lastschriften einrichten](tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
   - [Zahlungsmethode für ISO20022-Kreditübertragung einrichten](tasks/set-up-method-payment-iso20022-credit-transfer.md)
-  - [Zahlungsmethode für ISO20022-Direktbelastung einrichten](tasks/setup-method-payment-iso20022-direct-debit.md)
+  - [Zahlungsmethode für ISO20022-Direktbelastungen einrichten](tasks/setup-method-payment-iso20022-direct-debit.md)
   - [Debitoren und Debitoren-Bankkonten für ISO20022-Lastschriften einrichten](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrichten](tasks/set-up-vendor-iso20022-credit-transfers.md)
-  - [Kreditorenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](tasks/create-export-vendor-payments-iso20022-payment-format.md)
-- [Intrastat](emea-intrastat.md)
+  - [Lieferantenzahlungen mithilfe eines ISO20022-Zahlungsformats erstellen und exportieren](tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Intrastat – Übersicht](emea-intrastat.md)
   - [Buchungen an Intrastat übertragen](tasks/transfer-transactions-intrastat.md)
-  - [Ladungsadresse für eine innergemeinschaftliche Buchung angeben](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Angabe einer Ladungsadresse für ein innergemeinschaftliches Geschäft ](tasks/eur-00002-specify-lading-address-intra-community.md)
   - [EU-Intrastat-Meldung generieren](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagererfassungsberichte](emea-set-up-report-inventory-journal-names.md)
-- [Rechnungsabgangsfristen](emea-invoice-issue-deadline.md)
+- [Rechnungsabgangsfrist](emea-invoice-issue-deadline.md)
 - [Rechnungsverarbeitung](emea-invoice-processing.md)
 - [EU-Gelangensbestätigung ausstellen](tasks/eur-00012-issue-eu-entry-certificate.md)
-- [OIOUBL-Standards](emea-oioubl-standards-electronic-invoicing.md)
+- [Unterstützte Standards für die elektronische Rechnungsstellung](emea-oioubl-standards-electronic-invoicing.md)
 - [Originalrechnungsreferenz (Osteuropa)](tasks/ee-00004-original-invoice-reference.md)
 - [Suche nach Partei per MwSt.-Kennung](tasks/eur-00015-party-search-vat-id.md)
-- [Zahlungsreferenzgenerierungstool (Osteuropa)](tasks/ee-00015-payment-reference-generation-tool.md)
+- [Werkzeug zur Generierung von Zahlungsreferenzen](tasks/ee-00015-payment-reference-generation-tool.md)
 - [Zahlungsbelegbericht](emea-eur-payment-slip-report-giro.md)
-- [Handkasse](emea-petty-cash.md)
+- [Handkasse für Osteuropa und Russland](emea-petty-cash.md)
 - [Den vor der Anschaffung bestehenden Wert einer Anlage buchen](emea-pre-acquisition-acquisition-fixed-asset.md)
 - [Postleitzahlen](emea-import-create-postal-codes-manually.md)
 - [EU-Gelangensbestätigung erhalten](tasks/eur-00012-receive-eu-entry-certificate.md)
 - [Registrierungskennungen](emea-registration-ids.md)
-- [Verlagerung der Steuerschuld](emea-reverse-charge.md)
+- [Verlagerung der Steuerschuld MwSt.](emea-reverse-charge.md)
 - [SEPA-Kreditübertragungsübersicht](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA-Lastschriftüberblick](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Einrichten der Debitoren- und Kreditorenvergütung](emea-compensation-customer-vendor-transactions.md)
@@ -85,15 +85,15 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 - [Steuerrichtlinien](emea-tax-directives.md)
 - [Aktualisieren, wie Beträge in Berichten und Dokumenten angezeigt werden](emea-amount-printing-forms.md)
 - Mehrwertsteuer (MwSt.)
-  - [name: Set up VAT ID](tasks/eur-00015-vat-id.md)
-  - [Kreditor-MwSt.-Kennung registrieren](tasks/eur-00015-registration-vendor-vat-id.md)
-  - [MwSt.-Wechselkurse](emea-vat-exchange-rate.md)
+  - [MwSt.-Kennung einrichten](tasks/eur-00015-vat-id.md)
+  - [Registrierung der Umsatzsteuer-ID des Lieferanten](tasks/eur-00015-registration-vendor-vat-id.md)
+  - [Mehrwertsteuer-Wechselkursübersicht](emea-vat-exchange-rate.md)
   - [MwSt.-Abstimmungsbericht](tasks/eur-00018-vat-reconciliation-report.md)
   - [MwSt.-Register-Buchungen für Osteuropa](emea-vat-register-transactions.md)
   - [MwSt.-Berichterstellung](emea-vat-reporting.md)
   - [MwSt.-Erklärung erstellen und übermitteln](tasks/create-submit-vat-report.md)
-  - [Buchungen zum Ausgleich anzeigen](emea-transactions-settlement-form.md)
-  - [Steuerleistungsdatum (Datum der der MwSt. -Register)](emea-tax-point-date.md)
+  - [Betrachten der Transaktionen zur Abwicklung für Osteuropa](emea-transactions-settlement-form.md)
+  - [Steuerleistungsdatum (Datum des MwSt.-Registers)](emea-tax-point-date.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

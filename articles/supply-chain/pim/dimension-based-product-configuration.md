@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca7e5555a242c10d2268182ed440e686a1dc46ad
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: ad8c2c82f9104a350d37534e4d70372da82f40a7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865351"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815041"
 ---
 # <a name="dimension-based-product-configuration-overview"></a>Dimensionsbasierte Produktkonfigurationen – Übersicht
 
@@ -79,12 +79,12 @@ Die Technologie der dimensionsbasierten Konfiguration eignet sich insbesondere f
 
 Die folgenden acht Aufgabenleitfaden sind in diesem Thema in der Reihenfolge aufgeführt, in der Sie sie durchführen müssen. 
 
-1.  [Dimensionsbasierten Produktmaster erstellen (Aufgabenleitfaden)](tasks/create-dimension-based-product-master.md)
-2.  [Dimensionsbasierten Produktmaster freigeben (Aufgabenleitfaden)](tasks/release-dimension-based-product-master.md)
-3.  [Grundeinrichtung eines freigegebenen Produktmasters abschließen (Aufgabenleitfaden)](tasks/complete-basic-setup-released-product-master.md)
-4.  [Variantengruppen definieren (Aufgabenleitfaden)](tasks/define-configuration-groups.md)
-5.  [Eine Stückliste für einen dimensionsbasierten Produktmaster erstellen (Aufgabenleitfaden)](tasks/create-bill-materials-dimension-based-product-master.md)
-6.  [Variantenarbeitspläne definieren (Aufgabenleitfaden)](tasks/define-configuration-route.md)
-7.  [Variantenregeln erstellen (Aufgabenleitfaden)](tasks/create-configuration-rules.md)
-8.  [Dimensionsbasierte Konfigurationen erstellen (Aufgabenleitfaden)](tasks/create-dimension-based-configurations.md)
+1.  [Dimensionsbasierten Produktmaster erstellen](tasks/create-dimension-based-product-master.md)
+2.  [Dimensionsbasierten Produktmaster veröffentlichen](tasks/release-dimension-based-product-master.md)
+3.  [Grundeinrichtung eines veröffentlichten Produktmasters abschließen](tasks/complete-basic-setup-released-product-master.md)
+4.  [Variantengruppen definieren](tasks/define-configuration-groups.md)
+5.  [Eine Stückliste für einen dimensionsbasierten Produktmaster erstellen](tasks/create-bill-materials-dimension-based-product-master.md)
+6.  [Variantenarbeitspläne definieren](tasks/define-configuration-route.md)
+7.  [Variantenregeln erstellen](tasks/create-configuration-rules.md)
+8.  [Dimensionsbasierte Konfigurationen erstellen](tasks/create-dimension-based-configurations.md)
 

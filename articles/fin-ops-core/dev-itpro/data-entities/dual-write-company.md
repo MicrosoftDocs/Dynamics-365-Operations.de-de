@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: aa4d54fd7b3ab407751ad6ca1032d742c23eed41
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 21c2143f4fa58d51f64e349c7963cb17e04bad97
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184530"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772436"
 ---
 ## <a name="company-concept-in-common-data-service"></a>Unternehmenskonzept in Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 In Finance and Operations ist das Konzept *Unternehmen* sowohl ein juristisches als auch ein unternehmerisches Konstrukt. Es ist außerdem ein Sicherheits- und Sichtbarkeitsgrenze für Daten. Benutzer arbeiten immer im Kontext eines einzelnen Unternehmens, und die meisten Daten werden von dem Unternehmen gekennzeichnet.
 
@@ -60,12 +58,14 @@ Wie in der vorherigen Abbildung dargestellt, ist diese 1:1-Zuordnung zwischen Ge
 
 Ein abschließendes Thema ist, wie durch das duale Schreiben bestimmt wird, welchem Eigentümerteam Datensätze zugewiesen werden sollen. Dieses Verhalten wird vom Feld **Standardeigentümerteam** im Datensatz cdm\_Company gesteuert. Wenn ein cdm\_Company-Datensatz für duales Schreiben aktiviert ist, erstellt ein Plug-In automatisch die zugewiesene Geschäftseinheit und das Eigentümerteam (wenn nicht bereits vorhanden) und legt das Feld **Standardeigentümerteam** fest. Der Administrator kann das Feld in einen anderen Wert ändern. Allerdings kann der Administrator das Feld nicht deaktivieren, sofern die Entität für duales Schreiben aktiviert ist.
 
+> [!div class="mx-imgBorder"]
 ![Feld „Standardeigentümerteam“](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Unternehmensstriping und Bootstrapping
 
 Die Common Data Service-Integration bringt Unternehmensparität durch Verwendung eines Unternehmensbezeichners zum Kennzeichen von Daten. Wie in der folgenden Abbildung dargestellt, werden alle unternehmensspezifischen Entitäten so erweitert, dass sie eine Viele-zu-Eins-Beziehung (N:1) mit der cdm\_Company-Entität haben.
 
+> [!div class="mx-imgBorder"]
 ![N:1-Beziehung zwischen einer unternehmensspezifischen Entität und der cdm_Company-Entität](media/dual-write-bootstrapping.png)
 
 + Für Datensätze wird der Wert schreibgeschützt, nachdem ein Unternehmen hinzugefügt und gespeichert wird. Daher sollten Benutzer sicherstellen, dass Sie das korrekte Unternehmen auswählen.

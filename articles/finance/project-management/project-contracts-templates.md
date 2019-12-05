@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 76c62f3a503ff2a8c93143390fc91ef81fbf7d0f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: b44fc116f1dcaa1275b2262487ef9114bce639c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250460"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773853"
 ---
 # <a name="synchronize-project-contracts-and-projects-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronisieren von Projektverträgen und Projekten direkt aus Project Service Automation mit Finance and Operations
 
@@ -42,11 +42,11 @@ Die Project Service Automation nach Finance-Integrationslösung nutzen die Daten
 
 Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Project Service Automation und Finance synchronisiert werden.
 
-[![Datenfluss für Project Service Automation Integration mit Finance](./media/ProjectsAndContractsFlow.JPG)](./media/ProjectsAndContractsFlow.JPG)
+[![Datenfluss für Project Service Automation Integration mit Finance](./media/ProjectsAndContractsFlow_upd.JPG)](./media/ProjectsAndContractsFlow.JPG)
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
-Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
+Wenn Sie auf die verfügbaren Vorlagen im Microsoft Power Apps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
 
 Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um Projektverträge und Projekte von Project Service Automation zu Finance zu synchronisieren:
 

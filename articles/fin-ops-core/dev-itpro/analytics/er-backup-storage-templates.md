@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 932ba44b4223bf9c9d93ffb19e17f6e57bb303b5
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 5dad101ffe56c9266c0d81ede8be1f72b684a8fb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553090"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771420"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sicherungsspeicher von ER-Vorlagen
 
 [!include [banner](../includes/banner.md)]
 
-Mit dem [Electronic Reporting (ER)-Framework](general-electronic-reporting.md) können geschäftliche Benutzer Formate für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder und Regionen konfigurieren. Konfigurierte ER-Formate können vordefinierte Vorlagen verwenden, um ausgehende Dokumente in verschiedenen Formaten zu generieren, z. B. Microsoft Excel-Arbeitsmappen, Microsoft Word-Dokumente oder PDF-Dokumente. Die Vorlagen sind mit den Daten gefüllt, die der konfigurierte Datenfluss für generierte Dokumente erfordert.
+Mit der [Elektronischen Berichterstellungs(EB)-Übersicht](general-electronic-reporting.md) können geschäftliche Benutzer Formate für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder und Regionen konfigurieren. Konfigurierte ER-Formate können vordefinierte Vorlagen verwenden, um ausgehende Dokumente in verschiedenen Formaten zu generieren, z. B. Microsoft Excel-Arbeitsmappen, Microsoft Word-Dokumente oder PDF-Dokumente. Die Vorlagen sind mit den Daten gefüllt, die der konfigurierte Datenfluss für generierte Dokumente erfordert.
 
 Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht werden. Jede ER-Lösung kann von einer Finance and Operations-Instanz exportiert und in eine andere Instanz importiert werden.
 
-Das ER-Framework verwendet das [Dokumentverwaltungsframework](../../fin-ops/organization-administration/configure-document-management.md), um erforderliche Vorlagen für die aktuelle Finance and Operations-Instanz beizubehalten. Je nach Einstellungen des ER-Frameworks kann Microsoft Azure BLOB-Speicher oder ein Microsoft SharePoint-Ordner als physischer Primärspeicherort für Vorlagen ausgewählt werden. (Weitere Informationen, finden Sie unter [Konfigurieren des ER-Frameworks](electronic-reporting-er-configure-parameters.md).) Die DocuValue-Tabelle enthält einen einzelnen Datensatz für jede Vorlage. In jedem Datensatz speichert das Feld **AccessInformation** den Pfad einer Vorlagendatei, die sich im konfigurierten Speicherort befindet.
+Das EB-Framework verwendet [Konfigurieren der Dokumentverwaltung](../../fin-ops/organization-administration/configure-document-management.md), um erforderliche Vorlagen für die aktuelle Finance and Operations-Instanz beizubehalten. Je nach Einstellungen des ER-Frameworks kann Microsoft Azure BLOB-Speicher oder ein Microsoft SharePoint-Ordner als physischer Primärspeicherort für Vorlagen ausgewählt werden. (Weitere Informationen, finden Sie unter [Konfigurieren des Elektronischen Berichterstellungs(EB)-Frameworks](electronic-reporting-er-configure-parameters.md).) Die DocuValue-Tabelle enthält einen einzelnen Datensatz für jede Vorlage. In jedem Datensatz speichert das Feld **AccessInformation** den Pfad einer Vorlagendatei, die sich im konfigurierten Speicherort befindet.
 
 Wenn Sie Ihre Finance and Operations-Instanzen verwalten, können Sie die aktuelle Instanz zu einem anderem Speicherort migrieren. Sie können Ihre Produktionsinstanz beispielsweise zu einer neuen Sandboxumgebung migrieren. Wenn Sie das ER-Framework konfigurieren, um Vorlagen im BLOB-Speicher zu speichern, verweist die DocuValue-Tabelle in der neuen Sandboxumgebung auf die BLOB-Speicherinstanz in der Produktionsumgebung. Auf diese Instanz kann jedoch nicht über die Sandboxumgebung zugegriffen werden, da der Migrationsvorgang die Migration von Artefakten im BLOB-Speicher nicht unterstützt. Daher tritt eine Ausnahme auf, wenn Sie versuchen, ein ER-Format auszuführen, das eine Vorlage zum Generieren von Geschäftsdokumenten verwendet, und Sie erhalten eine Benachrichtigung, dass die Vorlage fehlt. Sie erhalten eine Anleitung dazu, wie Sie die in der ER-Formatkonfiguration enthaltene Vorlage mit dem ER-Bereinigungstool löschen und erneut importiert. Dieser Vorgang kann zeitaufwändig sein, da Sie möglicherweise über mehrere ER-Formatkonfigurationen verfügen.
 
@@ -94,6 +94,6 @@ In Finance and Operations 10.0.5 ist die Sicherungsspeicherung der ER-Vorlagenfu
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
 
-[Konfigurieren des Rahmens für die elektronische Berichterstellung](electronic-reporting-er-configure-parameters.md)
+[Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md).

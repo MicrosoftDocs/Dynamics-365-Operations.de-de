@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c16082bb18ac5c170aab30f1a2033e0790cbacc1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a7a44e1c9d8dcb4b2cc81a682a044d26cdc1149e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026002"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812694"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-20-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (20. März 2019)
 
@@ -43,7 +43,7 @@ Diese Funktion ermöglicht es, dass Suchmodulcrawler Stellenausschreibungen auf 
 Wenn ein Kandidat die Anmeldeinformationen vergaß, die verwendet wurden, um sich bei einer Stelle zu bewerben, während ein Link geöffnet wird, der für ihn gespeichert oder per E-Mail gesendet wurde, sieht er einen Tipp mit dem Anbieternamen und dem Benutzernamen (verborgen). Dies ermöglicht Ihnen, die korrekten Anmeldeinformationen zu verwenden, um auf die Stellenbewerbung zuzugreifen.
 
 ### <a name="help-internal-candidates-explore-internal-jobs"></a>Helfen Sie internen Kandidaten, die internen Stelen zu durchsuchen
-Ein Problem wurde korrigiert, nämlich der, dass externe Kandidaten den Namen des Personalbeschaffungsmanagers oder des künftigen Vorgesetzten einer Stelle sehen konnten. Jetzt können nur noch interne Kandidaten das Einstellungsteammitglied für eine Stelle sehen. Es ist auch leichter für interne Kandidaten, sich auf interne Stellen zu bewerben und diese anzuzueigen. Wenn ein Kandidat versucht, auf den Link zuzugreifen, um sich auf eine reine interne Stelle zu bewerben, muss er sich mit den Azure Active Directory Anmeldeinformationen authentifizieren. Interne Kandidaten haben auch die Möglichkeit, das Einstellungsteammitglied zu kontaktieren, um ihr Interesse zu bekunden oder um mehr über die Stelle zu erfahren. Diese Funktion ist für alle Stellen nur für interne Kandidaten verfügbar. Weitere Informationen finden Sie unter [Funktionen für Karrierefunktionen in Attract](./career-site.md).
+Ein Problem wurde korrigiert, nämlich der, dass externe Kandidaten den Namen des Personalbeschaffungsmanagers oder des künftigen Vorgesetzten einer Stelle sehen konnten. Jetzt können nur noch interne Kandidaten das Einstellungsteammitglied für eine Stelle sehen. Es ist auch leichter für interne Kandidaten, sich auf interne Stellen zu bewerben und diese anzuzueigen. Wenn ein Kandidat versucht, auf den Link zuzugreifen, um sich auf eine reine interne Stelle zu bewerben, muss er sich mit den Azure Active Directory Anmeldeinformationen authentifizieren. Interne Kandidaten haben auch die Möglichkeit, das Einstellungsteammitglied zu kontaktieren, um ihr Interesse zu bekunden oder um mehr über die Stelle zu erfahren. Diese Funktion ist für alle Stellen nur für interne Kandidaten verfügbar. Weitere Informationen finden Sie unter [Einrichtung Ihrer Karriereseite in Microsoft Dynamics 365 Talent - Attract](./career-site.md).
 
 ### <a name="designate-silver-medalists-to-assign-high-value-applicants-for-future-positions"></a>Wählen Sie Silbermedaillengewinner aus, um gut qualifizierte Bewerber künftigen Positionen zuzuordnen
 Personalbeschaffungsmanager oder künftige Vorgesetzte haben oftmals eine Liste von Bewerbern, die gut für eine Position passen würden, aber denen man kein Angebot unterbreiten konnte, da die Stelle bereits besetzt war. Solche Bewerber, sogenannte Silbermedaillengewinner, sind wertvoll, da damit die Zeit verkürzt werden kann, wenn wieder eine ähnliche Position zu besetzten ist. Attract ermöglicht es nun Personalbeschaffungsmanagern und künftigen Vorgesetzten, Silbermedaillengewinner auf der Bewerberliste auszuwählen, wenn der Bewerber in die Angebotsphase wechselt. Die Silbermedaillengewinnerbezeichnung wird auf der Bewerberliste für die Stelle angezeigt. Sie erscheint auch in der Talentpoolansicht, wenn diese Bewerber Mitglieder in einem Pool des Personalbeschaffungsmanagers oder des künftigen Vorgesetzten sind. Darüber hinaus erscheint die Auszeichnung im Stellenverlauf als Teil des Talentpool-Profils des Kandidaten. Sie können diese Funktion anzeigen, indem Sie einen Administrator bitten, diese mithilfe der [Funktions-Verwaltung im  Administrator-Center](https://docs.microsoft.com/dynamics365/unified-operations/talent/access-preview-feature) zu aktivieren.

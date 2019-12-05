@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 36784311294f80f56f680cd6d14cc989b629ba12
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b1b519d116a55c255cf90d9478ee1714de90264
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177999"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811323"
 ---
 # <a name="organization-administration-home-page"></a>Organisationsverwaltung – Startseite
 
@@ -36,8 +36,8 @@ Ein Großteil des Inhalts, der hier aufgeführt wird, gilt für die Funktionen i
 
 Nummernkreise dienen zum Generieren von lesbaren, eindeutigen Bezeichnern für Masterdatensätze und Buchungsdatensätze, die Bezeichner benötigen. Ein Masterdatensatz oder Buchungsdatensatz, der eine Kennung erfordert, wird als *Referenz* bezeichnet. Bevor neue Datensätze für eine Referenz erstellt werden können, muss ein Nummernkreis eingerichtet und der Referenz zugeordnet werden.
 
-- [Nummernkreise – Überblick](number-sequence-overview.md)
-- [Einrichten von Nummernsequenzen mit einem Assistenten](tasks/set-up-number-sequences-wizard.md)(Aufgabenleitfaden)
+- [Nummernsequenzen – Übersicht](number-sequence-overview.md)
+- [Nummernfolgen mit einem Assistenten einrichten](tasks/set-up-number-sequences-wizard.md) (Aufgabenbeschreibung)
 - [Richten Sie Nummernkreise auf einzelner Basis ein](tasks/set-up-number-sequences-individual-basis.md)(Aufgabenleitfaden)
 
 ## <a name="organizations"></a>Organisation
@@ -46,7 +46,7 @@ Eine Organisation ist eine Gruppe von Personen, die zusammenarbeiten, um einen G
 
 Bevor Sie Organisationen und Organisationshierarchien einrichten, sollten Sie sicherstellen, dass Sie planen, wie das Unternehmen modelliert wird. Das Organisationsmodell hat bedeutende Auswirkungen auf die Implementierung sowie auf Unternehmensprozesse.
 
-- [Organisationen und Organisationshierarchien](organizations-organizational-hierarchies.md)
+- [Organisationen und Organisationshierarchien – Übersicht](organizations-organizational-hierarchies.md)
 - [Planen Ihrer Organisationshierarchie](plan-organizational-hierarchy.md)
 - [Erstellen oder Ändern einer Organisationshierarchie](tasks/create-organization-hierarchy.md) (Aufgabenleitfaden)
 - [Juristische Person erstellen](tasks/create-legal-entity.md) (Aufgabenleitfaden)
@@ -58,8 +58,8 @@ Das globale Adressbuch ist ein zentralisiertes Repository für Masterdaten, die 
 
 Nachdem Sie das globale Adressbuch erstellt haben, können Sie, wenn nötig, zusätzliche Adressbücher, wie z. B. ein separates Adressbuch für jedes Unternehmen in der Organisation oder für jede einzelne Sparte, erstellen.
 
-- [Globales Adressbuch](overview-global-address-book.md)
-- [Konfiguration des globalen Adressbuchs und zusätzlicher Adressbücher planen](plan-configuration-global-address-book-additional-address-books.md)
+- [Überblick über globale Adressbücher](overview-global-address-book.md)
+- [Planen für das globale Adressbuch und andere Adressbücher](plan-configuration-global-address-book-additional-address-books.md)
 - [Konfigurieren des globalen Adressbuchs](tasks/configure-global-address-book.md)
 - [FAQs zu Adressbüchern](qa-address-books.md)
 
@@ -67,10 +67,10 @@ Nachdem Sie das globale Adressbuch erstellt haben, können Sie, wenn nötig, zus
 
 Workflow ist ein System, das über Funktionen verfügt, die zum Erstellen einzelner Workflows oder Geschäftsprozesse verwendet werden können. Wenn Sie einen Workflow definieren, können Sie definieren, wie ein Dokument das System durchläuft, indem angezeigt wird, wer eine Aufgabe abschließen, eine Entscheidung treffen oder ein Dokument genehmigen muss.
 
-- [Workflowüberblick](overview-workflow-system.md)
-- [Workflowelemente](workflow-elements.md)
-- [Workflowaktivitäten](workflow-actions.md)
-- [Erstellen eines Workflows](create-workflow.md)
+- [Workflowsystem – Übersicht](overview-workflow-system.md)
+- [Workflow-Elemente](workflow-elements.md)
+- [Aktivitäten in Workflow-Genehmigungsprozessen](workflow-actions.md)
+- [Erstellen von Workflows – Übersicht](create-workflow.md)
 
 ## <a name="electronic-signatures"></a>Elektronische Signaturen
 
@@ -78,23 +78,23 @@ Eine elektronische Signatur bestätigt die Identität einer Person, die im Begri
 
 Sie können elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen.
 
-- [Elektronische Signatur – Überblick](electronic-signature-overview.md)
+- [Elektronische Signatur – Übersicht](electronic-signature-overview.md)
 - [Einrichten von Parametern für elektronische Signaturen](tasks/set-up-electronic-signatures.md)(Aufgabenleitfaden)
 
 ## <a name="case-management"></a>Anfragenverwaltung
 
 Indem Sie Anfragen planen, nachverfolgen und analysieren, können Sie effiziente Lösungen entwickeln, die für ähnliche Probleme wiederverwendet werden können. Wenn Mitarbeiter des Kundendiensts oder der Personalverwaltung Anfragen erstellen, können sie die Informationen in den Knowledge-Artikeln zur Handhabung bzw. zur effizienteren Lösung einer Anfrage verwenden.
 
-- [Anfragenverwaltung – Überblick](cases.md)
-- [Anfragensicherheit, -prozesse und -kategorien konfigurieren](plan-case-management.md)
+- [Überblick über die Anfragenverwaltung](cases.md)
+- [Fallkategorie Sicherheit, Fallprozesse und Fallkategorien planen](plan-case-management.md)
 
 ## <a name="record-templates"></a>Datensatzvorlagen
 
 Mithilfe von Datensatzvorlagen können Sie Datensätze schneller erstellt werden. Diese Prozedur zeigt, wie eine Datensatzvorlge erstellt wird, sodass Feldwerte, die oft verwendet werden, nicht explizit für jeden neuen Datensatz eingegeben werden müssen.
 
-- [Datensatzvorlagen](record-templates.md)
+- [Datensatzvorlagen – Übersicht](record-templates.md)
 - [Eine Datensatzvorlage erstellen, um die Dateneingabe zu erleichtern](../../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md) (Aufgabenleitfaden)
-- [Datensatzvorlage zum Erstellen eines neuen Datensatzes verwenden](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Aufgabenleitfaden)
+- [Verwenden Sie die Datensatz-Vorlage, um einen neuen Datensatz anzulegen](../../dev-itpro/data-entities/tasks/use-record-template-new-record.md) (Aufgabenübersicht)
 
 ## <a name="general-organization-administration"></a>Allgemeine Organisationsverwaltung
 

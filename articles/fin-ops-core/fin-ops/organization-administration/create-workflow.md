@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 2168b33c8495eab61ec0c8262b042cd16420031c
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a643be553f3fcdfbe53f2024982a596e498830a8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190096"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811289"
 ---
 # <a name="create-workflows-overview"></a>Erstellen von Workflows – Übersicht
 
@@ -54,21 +54,21 @@ Gehen Sie folgendermaßen vor, um die Eigenschaften des Workflows zu konfigurier
 
 1. Klicken Sie auf die Canvas, um sicherzustellen, dass kein Workflowelement ausgewählt ist.
 2. Klicken Sie auf **Eigenschaften** **, um die Seite** Eigenschaften für den Workflow zu öffnen.
-3. Folgen Sie der Prozedur unter [Eigenschaften für einen Workflow konfigurieren](configure-workflow-properties.md).
+3. Folgen Sie den Schritten des Verfahrens unter [Konfigurieren von Workfloweigenschaften](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurieren der Elemente des Workflows
 
 Konfigurieren Sie jedes auf die Canvas gezogene Element. Informationen zum Konfigurieren jedes Workflowelements finden Sie unter folgenden Themen:
 
-- [Konfigurieren einer manuellen Aufgabe](configure-manual-task-workflow.md)
-- [Konfigurieren einer automatisierten Aufgabe](configure-automated-task-workflow.md)
-- [Konfigurieren eines Genehmigungsprozesses](configure-approval-process-workflow.md)
-- [Konfigurieren eines Genehmigungsschritts](configure-approval-step-workflow.md)
-- [Konfigurieren einer manuellen Entscheidung](configure-manual-decision-workflow.md)
-- [Konfigurieren einer bedingten Entscheidung](configure-conditional-decision-workflow.md)
-- [Konfigurieren einer parallelen Aktivität](configure-parallel-activity-workflow.md)
+- [Manuelle Aufgaben in einem Workflow konfigurieren](configure-manual-task-workflow.md)
+- [Konfigurieren von automatisierten Aufgaben in einem Workflow](configure-automated-task-workflow.md)
+- [Genehmigungsprozesse in einem Workflow konfigurieren](configure-approval-process-workflow.md)
+- [Genehmigungsschritte in einem Workflow konfigurieren](configure-approval-step-workflow.md)
+- [Manuellen Entscheidungen in einem Workflow konfigurieren](configure-manual-decision-workflow.md)
+- [Konfigurieren von bedingten Entscheidungen in einem Workflow](configure-conditional-decision-workflow.md)
+- [Konfigurieren paralleler Verzweigungen in einem Workflow](configure-parallel-activity-workflow.md)
 - [Konfigurieren eines Parallelzweigs](configure-parallel-branch-workflow.md)
-- [Konfigurieren eines Positionsworkflows](configure-line-item-workflow.md)
+- [Konfigurieren von Positionsworkflows](configure-line-item-workflow.md)
 
 ## <a name="resolve-any-errors-or-warnings"></a>Beheben von Fehlern oder Warnungen
 

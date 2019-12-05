@@ -15,12 +15,12 @@ ms.search.region: Austria
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ad0a889c535200ae30d9bd6718b660cab9806dfb
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ce90b53bb3b79b4c6099a99d291d00030f9eff3a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250350"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772869"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 
@@ -30,11 +30,11 @@ Dieses Thema enthält Informationen und Verknüpfungen zu Ressourcen, mit deren 
 
 ## <a name="depreciation"></a>Abschreibung
 
-Bei Unternehmen in Österreich werden die Abschreibung für zusätzliche Anschaffungen und Anschaffungsänderungen gemäß den folgenden Regeln berechnet: Weitere Informationen finden Sie unter [Halbjährliche Abschreibung auf zusätzlichen Anschaffungen](emea-aut-half-year-depreciation.md).
+Bei Unternehmen in Österreich werden die Abschreibung für zusätzliche Anschaffungen und Anschaffungsänderungen gemäß den folgenden Regeln berechnet: Weitere Informationen finden Sie unter [Halbjährliche Abschreibung auf sonstige Anschaffungen für Österreich](emea-aut-half-year-depreciation.md).
 
 ## <a name="packing-material-fees"></a>Verpackungsmaterialgebühren
 
-In Österreich werden Verpackungsmaterialien in verschiedene Kategorien gruppiert z. B. und Haushalt und Kommerz. Die Verwaltung gibt Steuersätze für Verpackungsmaterialien für jede einzelne Kategorie an. Die Kategorie, in die das Verpackungsmaterial gehört, hängt von der Größe und den Produkten ab, die für die Verpackung verwendet wurde. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind. Weitere Informationen finden Sie unter [Verpackungsmaterialgebühr](emea-aut-packing-material-fee-calculation.md).
+In Österreich werden Verpackungsmaterialien in verschiedene Kategorien gruppiert z. B. und Haushalt und Kommerz. Die Verwaltung gibt Steuersätze für Verpackungsmaterialien für jede einzelne Kategorie an. Die Kategorie, in die das Verpackungsmaterial gehört, hängt von der Größe und den Produkten ab, die für die Verpackung verwendet wurde. Verpackungsmaterialgebühren werden kalkuliert und erfasst, es werden jedoch keine Sachkontobuchungen ausgeführt, da die Gebühren nicht als Steuern betrachtet werden, die an eine Behörde zu entrichten sind. Weitere Informationen finden Sie unter [Bericht „Berechnung der Verpackungsmaterialgebühren“ für Österreich](emea-aut-packing-material-fee-calculation.md).
 
 ## <a name="purchase-duties"></a>Einkaufsaufgaben
 
@@ -49,9 +49,9 @@ Um den Wert der Einkaufssteuer anzugeben, klicken Sie auf **Einkaufssteuerwert**
 Einkaufssteuern werden generiert, wenn Sie die Mehrwertsteuer ausgleichen und buchen. Sie können den Bericht **Einkaufssteuer** im Menü **Einkaufssteuererklärung** generieren.
 
 ## <a name="vat"></a>MwSt.
-Informationen zum Einrichten des Mehrwertsteuer (VAT)- Auszugs für juristische Personen in Österreich, finden Sie unter [Mehrwertsteuerbeitreibung für Österreich](emea-aut-vat-statement-details.md). 
+Informationen zum Einrichten des Mehrwertsteuer (VAT)- Auszugs für juristische Personen in Österreich, finden Sie unter [MwSt-Berichtdetails für Österreich](emea-aut-vat-statement-details.md). 
 
-Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [MwSt Bericht](emea-vat-reporting.md).
+Weitere Informationen zu den Einstellungen des MwSt. -Auszugs finden Sie unter [MwSt-Berichterstattung für Europa](emea-vat-reporting.md).
 
 ## <a name="reports-for-austria"></a>Berichte für Österreich
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9447474e0878077659a80dc49f7c7c1313db2cbe
-ms.sourcegitcommit: 8741b4b32ef32a54de3d064bf40a9c0179d4139a
+ms.openlocfilehash: 28d74bcbe49ce8a3c26f7ebcefd9f1c1aea8c8d4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "1691461"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813269"
 ---
 # <a name="operations-scheduling"></a>Grobterminierung
 
@@ -80,7 +80,7 @@ Wenn Sie mit begrenztem Material arbeiten, hängt die Planung auch von der Verf�
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Optionen für die Grobterminierung](operation-scheduling-options.md)
+[Grobterminierungsoptionen](operation-scheduling-options.md)
 
 
 

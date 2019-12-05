@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: fe6da4599940a0b7812dc9d3f66157715c45f62d
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 2039c09372381ef2c078e1f4d4ed8a25c22de5c7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009830"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814719"
 ---
 # <a name="view-the-status-of-onboarding-employees-and-your-tasks"></a>Anzeigen des Status des Onboarding von Mitarbeitern und Ihrer Aufgaben
 
@@ -54,6 +54,6 @@ Microsoft Dynamics 365 Talent: Onboard lässt Sie den Status anzeigen, den Ihre 
 ### <a name="see-also"></a>Siehe auch
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
-- [Neuerungen](./whats-new.md)
-- [Versionshinweise](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Support anfordern](./talent-support.md)
+- [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
+- [Release-Pläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

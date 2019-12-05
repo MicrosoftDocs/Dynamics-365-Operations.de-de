@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: ''
+ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 05dee1efc4e817795824e3fa1c41093d48a97d78
-ms.sourcegitcommit: 219a73371638a9a4c6076d4c88b95fb2ebe95b00
+ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
+ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2652616"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "2824519"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
-Geschäftliche Benutzer verwenden das [Electronic Reporting (ER) Framework](general-electronic-reporting.md) zum Konfigurieren von Formaten für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
+Geschäftsanwender nutzen die Übersicht [Electronic Reporting (ER) ](general-electronic-reporting.md), um Formate für ausgehende Dokumente entsprechend den gesetzlichen Anforderungen verschiedener Länder/Regionen zu konfigurieren. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
 
 Die **Geschäftsdokumentverwaltung** wird auf dem ER-Framework erstellt und ermöglicht geschäftlichen Benutzern, Geschäftsdokumentvorlagen zu bearbeiten, indem sie einen Microsoft Office 365-Dienst oder eine entsprechende Microsoft Office-Desktopanwendung verwenden. Bearbeitungen an Dokumenten umfassen das Ändern von Geschäftsdokumentdesigns und das Hinzufügen von Platzhaltern für zusätzliche Daten ohne Quellcodeänderungen und neue Bereitstellungen. Keine Vorkenntnisse des ER-Frameworks sind erforderlich, um Vorlagen von Geschäftsdokumenten zu aktualisieren.
 
@@ -58,21 +59,17 @@ Die folgenden Berichte, mit Excel-basierten Vorlagen, werden bei Veröffentlichu
 
 Zusätzliche Berichte werden verfügbar sein. Spezielle Benachrichtigungen über zusätzliche Berichte werden gesondert übermittelt. 
 
-Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2019 geplant sind, finden Sie unter [Konfigurierbare Berichterstellung für Geschäftsbelege in Word und Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
-
-# <a name="example-enable-configure-and-use-business-document-management"></a>Beispiel: Aktivieren, Konfigurieren und Verwenden der Geschäftsdokumentverwaltung
-
-Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2019 geplant sind, finden Sie unter [Konfigurierbare Berichterstellung für Geschäftsbelege in Word und Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
 
 ## <a name="configure-er-parameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
-Da die Geschäftsdokumentverwaltung auf dem ER-Framework erstellt wird, müssen Sie die ER-Parameter konfigurieren, um die Arbeit mit der Geschäftsdokumentverwaltung zu starten. Hierzu müssen Sie die ER-Parameter einrichten, wie unter [Konfigurieren des ER-Frameworks](electronic-reporting-er-configure-parameters.md) beschrieben. Außerdem müssen Sie einen neuen Konfigurationsanbieter hinzufügen, wie unter [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) beschrieben.
+Da die Geschäftsdokumentverwaltung auf dem ER-Framework erstellt wird, müssen Sie die ER-Parameter konfigurieren, um die Arbeit mit der Geschäftsdokumentverwaltung zu starten. Dazu müssen Sie die ER-Parameter wie unter [Konfigurieren des Electronic Reporting (ER) Frameworks](electronic-reporting-er-configure-parameters.md) beschrieben einrichten. Außerdem müssen Sie einen neuen Konfigurationsanbieter hinzufügen, wie unter [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) beschrieben.
 
 ![ER-Arbeitsbereich](./media/BDM-Overview-ERSetting.png)
 
 ## <a name="import-er-solutions"></a>Importieren von ER-Lösungen
 
-Sie müssen ER-Konfigurationen importieren, die Geschäftsdokumentvorlagen für die aktuelle Instanz enthalten. Laden Sie die folgenden Dateien herunter und speichern Sie sie lokal, um diese Prozedur abzuschließen.
+Im Beispiel dieses Verfahrens werden exemplarische ER-Konfigurationen verwendet. Sie müssen in Ihre aktuelle Instanz von Dynamics 365 Finance die ER-Konfigurationen importieren, die die Geschäftsdokumentvorlagen enthalten, die mit der Business-Dokumentenverwaltung bearbeitet werden können. Laden Sie die folgenden Dateien herunter und speichern Sie sie dann lokal, um diesen Vorgang abzuschließen.
 
 **ER-Beispiel-Debitorenrechnungsstellungslösung**
 
@@ -105,7 +102,13 @@ Gehen Sie folgendermaßen vor, um die jeweiligen Dateien zu importieren. Importi
 
 ![ER-Konfigurationsseite](./media/BDM-Overview-ERSolutions.png)
 
+
+Alternativ können Sie die offiziell veröffentlichten ER-Formatkonfigurationen aus dem Microsoft Dynamics Lifecycle Service (LCS) importieren. Um diesen Vorgang abzuschließen, können Sie beispielsweise die neueste Version der **Freitextrechnung (Excel)** ER-Format-Konfiguration importieren. Die entsprechenden ER-Datenmodell- und ER-Modellzuordnungskonfigurationen werden automatisch importiert.
+
+![LCS Inhaltsseite der gemeinsamen Asset-Bibliothek](./media/BDM-Overview-SharedAssetLibrary.png)
+
 Weitere Informationen zum Importieren von ER-Konfigurationen finden Sie unter [Verwalten des ER-Konfigurationslebenszyklus](general-electronic-reporting-manage-configuration-lifecycle.md).
+
 
 ## <a name="enable-business-document-management"></a>Aktivieren der Geschäftsdokumentverwaltung
 
@@ -118,9 +121,12 @@ Gehen Sie folgendermaßen vor, um die Geschäftsdokument-Verwaltungsfunktionen f
 3. Wählen Sie **Jetzt aktivieren** aus, um die ausgewählte Fähigkeit zu aktivieren.
 4. Aktualisieren Sie die Seite, um auf die neue Funktion zugreifen können.
 
+>[!NOTE]
+> Außerdem müssen Sie **Office-ähnliche UI-Erfahrung fürGeschäftsdokumentverwaltung** für die Verwendung einer neuen Geschäftsdokumentverwaltung-Schnittstelle aktivieren.
+
 ![Arbeitsbereich für die Funktionsverwaltung](./media/BDM-Overview-FMEnabling.png)
 
-Weitere Informationen zur Aktivierung neuer Funktionen finden Sie unter [Funktionsverwaltungsüberblick](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Weitere Informationen zur Aktivierung neuer Funktionen finden Sie unter [Funktionsverwaltungsüberblick](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="configure-parameters"></a>Parameter konfigurieren
 
@@ -137,7 +143,7 @@ Für diesen Dokumenttyp müssen die folgenden Attributwerte ausgewählt werden.
 | Gruppieren               | Datei                  |
 | Ort            | SharePoint            |
 
-Informationen dazu, wie Sie die erforderlichen Dokumentverwaltungsparameter und Dokumenttypen einrichten, finden Sie unter [Konfigurieren der Dokumentverwaltung](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management).
+Informationen dazu, wie Sie die erforderlichen Dokumentverwaltungsparameter und Dokumenttypen einrichten, finden Sie unter [Konfigurieren der Dokumentverwaltung](../../fin-ops/organization-administration/configure-document-management.md).
 
 ![Dokumenttyp für die Dokumentverwaltung einrichten](./media/BDM-Overview-DMSetting.png)
 
@@ -179,21 +185,21 @@ Gehen Sie folgendermaßen vor, um die Geschäftsdokument-Verwaltungszugriffsbere
 1. Melden Sie sich als Benutzer mit Zugriff auf die Seite **Konfigurator von Zugriffsberechtigungen** an.
 2. Gehen Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Geschäftsdokumentverwaltung** \> **Zugriffsberechtigungen verwalten**.
 
-Beachten Sie die Benachrichtigung, die Sie darüber informiert, dass die Verwendung von Zugriffsberechtigungen für die Geschäftsdokumentverwaltung derzeit nicht aktiviert ist.
+    Beachten Sie die Benachrichtigung, die Sie darüber informiert, dass die Verwendung von Zugriffsberechtigungen für die Geschäftsdokumentverwaltung derzeit nicht aktiviert ist.
 
-![Konfigurator der Geschäftsdokument-Verwaltungszugriffsberechtigungsseite](./media/BDM-Overview-TemplatesAccess1.png)
+    ![Konfigurator der Geschäftsdokument-Verwaltungszugriffsberechtigungsseite](./media/BDM-Overview-TemplatesAccess1.png)
 
-Mit dieser Einstellung kann jeder Benutzer, der einer Sicherheitsrolle zugewiesen ist, die konfiguriert ist, um die Berechtigungen **Geschäftsdokumentvorlagen verwalten** (AOT-Name **ERBDManageTemplates**) auszuführen, den Geschäftsdokument-Verwaltungsarbeitsbereich öffnen und eine Vorlage bearbeiten, die verfügbar ist.
+    Mit dieser Einstellung kann jeder Benutzer, der einer Sicherheitsrolle zugewiesen ist, die konfiguriert ist, um die Berechtigungen **Geschäftsdokumentvorlagen verwalten** (AOT-Name **ERBDManageTemplates**) auszuführen, den Geschäftsdokument-Verwaltungsarbeitsbereich öffnen und eine Vorlage bearbeiten, die verfügbar ist.
 
-In der folgenden Grafik wird gezeigt, was im Geschäftsdokument-Verwaltungsarbeitsbereich für die Benutzer angezeigt wird, die der Rolle **Sachbearbeiter Debitorenkonten** zugewiesen sind. Mit der aktuellen Zugriffsberechtigungseinstellung kann der Benutzer Geschäftsdokumentvorlagen von verschiedenen Funktionsbereichen bearbeiten, einschließlich Rechnungsstellung, aufsichtsrechtliche Berichtsinformationen und Zahlungen.
+    In der folgenden Grafik wird gezeigt, was im Geschäftsdokument-Verwaltungsarbeitsbereich für die Benutzer angezeigt wird, die der Rolle **Sachbearbeiter Debitorenkonten** zugewiesen sind. Mit der aktuellen Zugriffsberechtigungseinstellung kann der Benutzer Geschäftsdokumentvorlagen von verschiedenen Funktionsbereichen bearbeiten, einschließlich Rechnungsstellung, aufsichtsrechtliche Berichtsinformationen und Zahlungen.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-TemplatesForAlice1.png)
+    ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-TemplatesForAlice1.png)
 
 3. Wählen Sie auf der Seite **Konfigurator von Zugriffsberechtigungen** **Zugriffsberechtigungseinstellung** aus.
 4. Aktivieren Sie im Dialogfeld **Einstellungen von Zugriffsberechtigungen zur Bearbeitung von Vorlagen** die Option **Konfigurierte Zugriffsberechtigungen übernehmen**.
 5. Wählen Sie **OK** aus, um zu bestätigen, dass die Geschäftsdokument-Verwaltungszugriffsberechtigungen aktiviert wurden.
 
-![Konfiguration der Geschäftsdokument-Verwaltungszugriffsberechtigungsseite](./media/BDM-Overview-TemplatesAccess2.png)
+    ![Konfiguration der Geschäftsdokument-Verwaltungszugriffsberechtigungsseite](./media/BDM-Overview-TemplatesAccess2.png)
 
 6. Wählen Sie **Hinzufügen** aus, um eine neue Geschäftsrolle einzugeben, für die Berechtigungen zum Zugriff auf Geschäftsdokument-Verwaltungsvorlagen konfiguriert werden müssen.
 7. Im Dialogfeld **Sicherheitsrollen** wählen Sie die Rolle **Sachbearbeiter Debitorenkonten** aus, und wählen Sie dann **OK** aus, um die Rollenauswahl zu bestätigen.
@@ -201,11 +207,11 @@ In der folgenden Grafik wird gezeigt, was im Geschäftsdokument-Verwaltungsarbei
 9. Wählen Sie im Feld **Markierungstyp** **Funktionsbereich** und im Feld **Kennung** **Rechnungsstellung** aus.
 10. Wählen Sie **Speichern** aus, um konfigurierte Zugriffsberechtigungen für die ausgewählte Rolle zu speichern.
 
-  Die aktuelle Einstellung bedeutet, dass für einen Benutzer, der der Rolle **Sachbearbeiter Debitorenkonten** zugewiesen ist und die Berechtigungen **Geschäftsdokumentvorlagen verwalten** (AOT-Name **ERBDManageTemplates**) ausführt, ER-Formatkonfigurationsvorlagen, die den Wert **Rechnungsstellung** für die **Funktionsbereich**-Markierung aufweisen, im Geschäftsdokument-Verwaltungsarbeitsbereich zur Bearbeitung verfügbar sind.
+    Die aktuelle Einstellung bedeutet, dass für einen Benutzer, der der Rolle **Sachbearbeiter Debitorenkonten** zugewiesen ist und die Berechtigungen **Geschäftsdokumentvorlagen verwalten** (AOT-Name **ERBDManageTemplates**) ausführt, ER-Formatkonfigurationsvorlagen, die den Wert **Rechnungsstellung** für die **Funktionsbereich**-Markierung aufweisen, im Geschäftsdokument-Verwaltungsarbeitsbereich zur Bearbeitung verfügbar sind.
 
 11. Schalten Sie den Bereich **Zugehörige Informationen** von der rechten Seite der aktuellen Seite um. Der Bereich **Zugehörige Informationen** zeigt an, wie die konfigurierten Zugriffsberechtigungen angewendet werden, u. a. welche ER-Konfigurationsvorlagen für Benutzer verfügbar sind, die der **Sachbearbeiter Debitorenkonten** zugewiesen sind.
 
-![Konfiguration der Geschäftsdokument-Verwaltungszugriffsberechtigungsseite](./media/BDM-Overview-TemplatesAccess3.png)
+    ![Konfiguration der Geschäftsdokument-Verwaltungszugriffsberechtigungsseite](./media/BDM-Overview-TemplatesAccess3.png)
 
 12. Wählen Sie auf der Registerkarte **Zugriffsberechtigungen pro Konfigurationen** die Option **Hinzufügen** aus.
 13. Markieren Sie im Dialogfeld **Konfiguration auswählen** die ER-Formatkonfiguration **Intrastat-Bericht**.
@@ -252,21 +258,31 @@ Die Option **Vorlage bearbeiten** ist für die ausgewählte Vorlage verfügbar. 
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Starten der Bearbeitung von Vorlagen im Besitz anderer Anbieter
 
-1. Im Geschäftsdokument-Verwaltungsarbeitsbereich wählen Sie die Vorlage **Debitoren-FTR-Bericht (GER)** in der Liste aus.
-2. Wählen Sie die Registerkarte **Details** aus.
+1. Wählen Sie im Arbeitsbereich Geschäftsdokumentverwaltung die Option **Neues Dokument**.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate3.png)
+![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template1.png)
 
-Die Option **Neues Dokument** ist für die ausgewählte Vorlage verfügbar. Diese Option ist immer für eine Vorlage in einer ER-Formatkonfiguration verfügbar, die von einem anderen Anbieter zur Verfügung gestellt wurde (**Microsoft** in diesem Beispiel). Wenn **Neues Dokument** aktiviert ist, steht eine neue Vorlage zur Bearbeitung zur Verfügung. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
+2. Wählen Sie das Dokument aus, das Sie als Vorlage verwenden möchten.
+
+![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template2.png)
+
+3. Klicken Sie auf **Dokument erstellen**.
+4. Im Feld **Titel** ändern Sie den Titel der bearbeitbaren Vorlage nach Bedarf. Der Text wird zum Benennen der ER-Formatkonfiguration verwendet, die automatisch erstellt wird. Beachten Sie, dass die Entwurfsversion dieser Konfiguration (**Debitoren-FTR-Bericht (GER) – Kopie**), die die bearbeitete Vorlage enthält, automatisch markiert wird, um dieses ER-Format für den aktuellen Benutzer auszuführen. Gleichzeitig wird die ursprüngliche nicht-geänderte Vorlage von der Basis-ER-Formatkonfiguration verwendet, um dieses ER-Format für einen anderen Benutzer auszuführen.
+5. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
+6. Ändern Sie im Feld **Kommentar** die Anmerkung für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
+7. Wählen Sie **OK**, um den Start des Bearbeitungsprozesses zu bestätigen.
+
+![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template3.png)
+
+Die Option **Neues Dokument** ist immer für eine Vorlage in einer ER-Formatkonfiguration eines anderen Anbieters (in diesem Beispiel Microsoft) verfügbar. Wenn Sie auf **Neues Dokument** klicken, sehen Sie alle Vorlagen, die sich im Besitz aktueller und anderer Anbieter befinden. Nachdem Sie die Vorlage ausgewählt haben, wird sie zur Bearbeitung geöffnet. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
 
 ### <a name="start-editing-a-template"></a>Mit der Bearbeitung einer Vorlage beginnen
 
-1. In der ausgewählten Vorlage wählen Sie **Neues Dokument** aus.
-2. Im Feld **Titel** ändern Sie den Titel der bearbeitbaren Vorlage nach Bedarf. Der Text wird zum Benennen der ER-Formatkonfiguration verwendet, die automatisch erstellt wird. Beachten Sie, dass die Entwurfsversion dieser Konfiguration (**Debitoren-FTR-Bericht (GER) – Kopie**), die die bearbeitete Vorlage enthält, automatisch markiert wird, um dieses ER-Format für den aktuellen Benutzer auszuführen. Gleichzeitig wird die ursprüngliche nicht-geänderte Vorlage von der Basis-ER-Formatkonfiguration verwendet, um dieses ER-Format für einen anderen Benutzer auszuführen.
-3. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
-4. Ändern Sie im Feld **Kommentar** die Anmerkung für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
+1. Wählen Sie aus der ausgewählten Vorlage **Dokument bearbeiten**.
+2. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
+3. Ändern Sie im Feld **Kommentar** die Anmerkung für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate4.png)
+    ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template4.png)
 
 5. Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
@@ -285,15 +301,15 @@ Die Seite **BDM-Vorlagen-Editor** wird geöffnet. Die ausgewählte Vorlage ist f
 1. Wählen Sie die Option **In der Desktop-App öffnen** aus, um die Vorlage zu ändern, indem Sie die Funktion der Office-Desktop-Anwendung verwenden (Excel in diesem Beispiel). Die bearbeitbare Vorlage wird aus dem Festspeicher in den temporären Speicher kopiert, der in den Geschäftsdokument-Verwaltungsparametern als SharePoint-Ordner konfiguriert wird.
 2. Bestätigen Sie, dass die Vorlage aus dem temporären Dateispeicher in der Office-Desktop-Excel-Anwendung geöffnet werden soll.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingLayout3.png)
+    ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingLayout3.png)
 
 3. Ändern Sie die Vorlage. Beispielsweise erfolgt durch das Ändern der Schriftart der Felder die Aufforderung im Vorlagenkopf zum Aktualisieren der Farbe von **Schwarz** zu **Blau**.
 
-![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout4.png)
+    ![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout4.png)
 
 4. Wählen Sie **Speichern** in der Excel-Desktop-Anwendung aus, um die Vorlagenänderungen im temporären Speicher zu speichern.
 
-![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout5.png)
+    ![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout5.png)
 
 5. Schließen Sie die Excel-Desktop-Anwendung.
 6. Wählen Sie **Gespeicherte Kopie synchronisieren** aus, um den temporären Vorlagenspeicher mit dem permanenten Vorlagenspeicher zu synchronisieren.
@@ -307,7 +323,7 @@ Die Seite **BDM-Vorlagen-Editor** wird geöffnet. Die ausgewählte Vorlage ist f
 2. Wählen Sie **Format anzeigen** aus, um die aktuelle Struktur des Formats von der ER-Basis-Formatkonfiguration anzuzeigen, die auf die bearbeitbare Vorlage ausgerichtet werden muss. 
 3. Wählen Sie **Format ausblenden** aus, um den Bereich zu schließen.
 
-![BDM: BDM-Vorlagen-Editor-Seite](./media/BDM-Overview-EditingTemplate6.png)
+    ![BDM: BDM-Vorlagen-Editor-Seite](./media/BDM-Overview-EditingTemplate6.png)
 
 4. Schließen Sie die Seite **BDM-Vorlagen-Editor**.
 
@@ -323,7 +339,7 @@ Die aktualisierte Vorlage wird auf der Registerkarte **Vorlage** angezeigt. Beac
 4. Wählen Sie die Ebene **Modul – Debitorenkonten** \> **Dokumente** \> **Freitextrechnung** \> **Originaldokument** aus, um den Bereich von Rechnungen für das Verarbeiten anzugeben.
 5. Im Feld **Berichtsformat** wählen Sie das ER-Format **Debitoren-FTR-Bericht (GER) – Kopie** für die angegebene Dokumentebene aus.
 
-![Druckverwaltungs-Einstellungsseite](./media/BDM-Overview-TestRun1.png)
+    ![Druckverwaltungs-Einstellungsseite](./media/BDM-Overview-TestRun1.png)
 
 6. Drücken Sie die **Esc**-Taste, um die aktuelle Seite zu schließen.
 7. Wählen Sie **Drucken** aus, und klicken Sie dann auf **Ausgewählt**.
@@ -340,9 +356,9 @@ Die geänderte Vorlage wird verwendet, um den Freitextrechnungsbericht für den 
 3. Bei Bedarf ändern Sie im Feld **Name** den Namen der zweiten Überarbeitung, basierend auf der derzeit aktiven ersten Überarbeitung.
 4. Ändern Sie ggf. im Feld **Kommentar** die Anmerkung für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-AddRevision.png)
+    ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-AddRevision.png)
 
-Sie haben eine neue Überarbeitung der Vorlage erstellt, die im permanenten Vorlagenspeicher gespeichert wurde. Jetzt können Sie das Bearbeiten der Vorlage der zweiten Überarbeitung fortsetzen, die derzeit als „aktiv“ ausgewählt ist.
+    Sie haben eine neue Überarbeitung der Vorlage erstellt, die im permanenten Vorlagenspeicher gespeichert wurde. Jetzt können Sie das Bearbeiten der Vorlage der zweiten Überarbeitung fortsetzen, die derzeit als „aktiv“ ausgewählt ist.
 
 5. Wählen Sie die erste Überarbeitung und dann **Als aktiv festlegen** aus. Sie können jederzeit eine andere Überarbeitung als aktiv auswählen, wenn Sie zu dieser Überarbeitung der Vorlage zurückkehren möchten.
 6. Wählen Sie die zweite Überarbeitung und dann **Löschen** aus.
@@ -370,7 +386,7 @@ Wenn Sie die Vorlage von einem ER-Format bearbeiten, das dem aktuellen aktiven A
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-#### <a name="i-selected-new-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Ich habe **Neues Dokument** ausgewählt, aber anstatt die Seite **BDM-Vorlagen-Editor** in Finance and Operations zu öffnen, wurde ich zur Office 365-Webseite weitergeleitet.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Ich habe **Dokument bearbeiten** ausgewählt, aber anstatt die Seite **BDM Vorlageneditor** in Finance and Operations zu öffnen, wurde ich auf die Webseite Office 365 geschickt.
 Dies ist ein bekanntes Problem bei der Office 365-Umleitung. Dies passiert, wenn Sie sich zum ersten Mal bei Office 365 anmelden. Um dieses Problem zu umgehen, wählen Sie die Schaltfläche **Zurück** Ihres Browsers aus, um zurück zu navigieren.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ich weiß, wie ich eine Vorlage bearbeite, indem ich Office 365 in der ersten Anwendungssitzung verwende, und wie ich die Vorlage in der zweiten Anwendungssitzung verwende, indem ich die Vorlage anpasse, um zu untersuchen, inwiefern sich meine Änderungen das generierte Geschäftsdokument auswirken. Ist dies mithilfe der Office-Desktop-Anwendung möglich?
@@ -386,12 +402,12 @@ Höchstwahrscheinlich haben Sie sich bei der aktuellen Instanz der App der Azure
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
 
-[Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format](tasks/er-design-reports-openxml-2016-11.md)
+[ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
 
 [EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren](tasks/er-design-configuration-word-2016-11.md)
 
 [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurieren elektronischer Berichterstattung, um Daten in Power BI einzubeziehen](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+[Konfigurieren Sie die elektronische Berichterstattung (ER), um Daten in Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md) zu ziehen.

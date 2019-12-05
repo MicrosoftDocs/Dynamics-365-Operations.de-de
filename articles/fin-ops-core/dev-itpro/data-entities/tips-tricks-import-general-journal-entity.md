@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 167afa70bfa35b966081709f1587d61d401d318f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184346"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769609"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
 
@@ -57,7 +57,7 @@ In den folgenden Abschnitten beschreiben die Auswirkung dieser Einstellung und a
 
 ### <a name="voucher-number"></a>Belegnummer
 
-- Wenn Sie die Einstellungen **Auf Sätzen basierende Verarbeitung** für die Entität der allgemeinen Erfassung verwenden, muss die Belegnummer in der importierten Datei bereitgestellt werden. Jede Buchung in der allgemeinen Erfassung erhält die Belegnummer, die in der importierten Datei bereitgestellt wird (auch, wenn der Beleg nicht ausgeglichen ist). Wenn Sie die satzbasierte Verarbeitung verwenden möchten, aber auch den Nummernkreis verwenden möchten, der für Belegnummern definiert ist, steht dafür ab Februar 2016 ein Hotfix bereit. Die Hotfix-Nummer ist 3170316. Er steht über Lifecycle Services (LCS) zum Download bereit. Weitere Informationen finden Sie unter [Downloaden von Hotfixes über LCS](../migration-upgrade/download-hotfix-lcs.md).
+- Wenn Sie die Einstellungen **Auf Sätzen basierende Verarbeitung** für die Entität der allgemeinen Erfassung verwenden, muss die Belegnummer in der importierten Datei bereitgestellt werden. Jede Buchung in der allgemeinen Erfassung erhält die Belegnummer, die in der importierten Datei bereitgestellt wird (auch, wenn der Beleg nicht ausgeglichen ist). Wenn Sie die satzbasierte Verarbeitung verwenden möchten, aber auch den Nummernkreis verwenden möchten, der für Belegnummern definiert ist, steht dafür ab Februar 2016 ein Hotfix bereit. Die Hotfix-Nummer ist 3170316. Er steht über Lifecycle Services (LCS) zum Download bereit. Weitere Informationen finden Sie unter [Download von Updates aus Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
 
     - Um diese Funktionalität zu aktivieren legen Sie **Nummernzuordnung bei der Buchung** im für die Importe verwendeten Erfassungsnamen auf **Ja** fest.
     - Eine Belegnummer muss weiterhin in der importierten Datei definiert werden. Diese Nummer ist jedoch vorübergehend und wird bei der Buchung der Erfassung mit einer Belegnummer überschrieben. Sie müssen sicherstellen, dass die Positionen der Erfassung korrekt nach der temporären Belegnummer gruppiert werden. Beispielsweise werden während der Buchung drei Positionen mit einer temporären Belegnummer von 1 gefunden. Die vorübergehende Belegnummer für alle drei Positionen wird durch die nächste Nummer des Nummernkreises überschrieben. Wenn diese drei Zeilen keine ausgeglichenen Posten sind, wird der Beleg nicht gebucht. Wenn Positionen gefunden werden, die eine temporäre Belegnummer 2 haben, wird diese Nummer von der nächsten Belegnummer im Nummernkreis überschrieben, usw.

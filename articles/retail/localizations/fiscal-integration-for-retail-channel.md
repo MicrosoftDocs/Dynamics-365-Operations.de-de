@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 647ef586b64699a891bd3b6702ac93bc5ee8292e
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 03853e1f80bd32c1dfe5cfcbcd77e79168f26249
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025406"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812306"
 ---
 # <a name="overview-of-fiscal-integration-for-retail-channels"></a>Übersicht über die Steuerintegration für Retail Channels
 
@@ -36,7 +36,7 @@ Dieses Thema bietet einen Überblick der Steuerintegrationsfunktionen, die in Dy
 - Senden Sie Informationen, die Verkäufen und Rücksendungen zugeordnet sind, die in Retail POS abgeschlossen werden, sicher an einen externen Webdienst, der von der Steuerbehörde betrieben wird.
 - Gewährleisten Sie die Unveränderbarkeit von Verkaufsbuchungsdaten durch digitale Signaturen.
 
-Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Steuerintegrationsbeispiele, die grundlegende Einzelhandelsszenarien für bestimmte Länder/Regionen unterstützen und mit bestimmten steuerbezogenen Geräten oder Diensten verwendet werden können. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Retail-Komponenten und ist im Software Development Kit (SDK) enthalten. Weitere Informationen zu Steuerintegrationsbeispielen finden Sie unter [Steuerintegrationsbeispiele im Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informationen zur Installation und Verwendung des Retail SDK finden Sie unter [Retail SDK-Übersicht](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Die Steuerintegrationsfunktionen sind ein Framework, das eine allgemeine Lösung für die weitere Entwicklung und Anpassung der Integration zwischen Retail POS und steuerbezogenen Geräten und Diensten bereitstellt. Die Funktionalität umfasst auch Steuerintegrationsbeispiele, die grundlegende Einzelhandelsszenarien für bestimmte Länder/Regionen unterstützen und mit bestimmten steuerbezogenen Geräten oder Diensten verwendet werden können. Ein Steuerintegrationsbeispiel besteht aus mehreren Erweiterungen von Retail-Komponenten und ist im Software Development Kit (SDK) enthalten. Weitere Informationen zu Steuerintegrationsbeispielen finden Sie unter [Steuerintegrationsbeispiele im Retail SDK](#fiscal-integration-samples-in-the-retail-sdk). Informationen zur Installation und Verwendung des Retail SDK finden Sie unter [Retail Software Development Kit (SDK) Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Um andere Szenarien zu unterstützen, die nicht von einem Steuerintegrationsbeispiel unterstützt werden, um Retail POS in andere steuerbezogene Geräte oder Dienste zu integrieren, oder um Anforderungen anderer Länder/Regionen zu erfüllen, müssen Sie entweder ein vorhandenes Steuerintegrationsbeispiel erweitern oder ein neues Beispiel mithilfe eines vorhandenen Beispiels erstellen.
 
@@ -141,6 +141,6 @@ Die folgenden Steuerintegrationsbeispiele sind derzeit im Retail SDK verfügbar:
 
 Die folgenden Steuerintegrationsfunktionen sind ebenfalls im Retail SDK verfügbar, nutzen derzeit jedoch nicht das Steuerintegrationsframework. Die Migration dieser Funktionen in das Steuerintegrationsframework ist für spätere Aktualisierungen geplant.
 
-- [Digitale Signatur für Frankreich](emea-fra-cash-registers.md)
-- [Digitale Signatur für Norwegen](emea-nor-cash-registers.md)
-- [Beispiel zur Integration der Kontrolleinheit für Schweden](./retail-sdk-control-unit-sample.md)
+- [Kassenfunktionalität für Frankreich](emea-fra-cash-registers.md)
+- [Kassenfunktionalität für Norwegen](emea-nor-cash-registers.md)
+- [Muster für die Retail POS-Integration mit Steuergeräten für Schweden ](./retail-sdk-control-unit-sample.md)

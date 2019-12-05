@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a12ab249129dce24cdca5e29d737fa9f68c0eac
-ms.sourcegitcommit: 6e0909e95f38b7487a4b7f68cc62b723f8b59bd4
+ms.openlocfilehash: 9efc63c385c31a6d8848d016c1a8689460908dcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572448"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769659"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisationshierarchie in Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Da Dynamics 365 Finance ein Finanzsystem ist, ist *Organisation* ein Grundkonzept, und die Systemeinrichtung beginnt mit der Konfiguration einer Organisationshierarchie. Unternehmensfinanzen können auf Organisationsebene und auch auf jeder anderen Ebene in der Organisationshierarchie verfolgt werden.
 
@@ -46,85 +44,35 @@ Ein Geschäftsökosystem, das aus Finance and Operations-Apps and Common Data Se
 
 Entitätszuordnungen der Organisationshierarchie sind für die unidirektionale Synchronisierung von Daten aus Finance and Operations-Apps nach Common Data Service verfügbar.
 
+## <a name="templates"></a>Vorlagen
+
+Produktinformationen enthält alle Informationen, die mit dem Produkt und seiner Definition in Verbindung stehen, z. B. den Produktdimensionen oder den Nachverfolgungs- und Lagerdimensionen. Wie die folgende Tabelle zeigt, darstellt, wird eine Sammlung von Entitätszuordnungen erstellt, um Produkte und zugehörige Informationen zu synchronisieren.
+
+Finance and Operations | Sonstige Dynamics 365-Apps | Beschreibung
+-----------------------|--------------------------------|---
+Organisationshierarchiezwecke | msdyn_internalorganizationhierarchypurposes | Diese Vorlage ermöglicht eine unidirektionale Synchronisierung der Entität „Zweck der Organisationshierarchie“.
+Organisationshierarchietyp | msdyn_internalorganizationhierarchytypes | Diese Vorlage ermöglicht eine unidirektionale Synchronisierung der Entität „Organisationshierarchietyp“.
+Organisationshierarchie – veröffentlicht | msdyn_internalorganizationhierarchies | Diese Vorlage bietet eine unidirektionale Synchronisierung der Entität „Veröffentlichte Organisationshierarchie“.
+Organisationseinheit | msdyn_internalorganizations | 
+Juristische Personen | msdyn_internalorganizations | 
+Juristische Personen | cdm_companies | Bietet eine bidirektionale Synchronisierung von Daten von juristischen Person (Unternehmen).
+
+
 [!include [banner](../includes/dual-write-symbols.md)]
 
-## <a name="internal-organization-hierarchy-purpose"></a>Zweck der internen Organisationshierarchie
+[!include [Organization hierarchy purposes](dual-write/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
 
-Diese Vorlage bietet eine unidirektionale Synchronisierung der Entität „Zweck der Organisationshierarchie“ von Finance and Operations nach anderen Dynamics 365-Apps.
+[!include [Organization hierarchy type](dual-write/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
 
-<!-- ![architecture image](media/dual-write-purpose.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-HIERARCHIETYP | \> | msdyn\_hierarchypurposetypename
-HIERARCHIETYP | \> | msdyn\_hierarchytype.msdyn\_name
-HIERARCHIEZWECK | \>\> | msdyn\_hierarchypurpose
-UNVERÄNDERLICH | \>\> | msdyn\_immutable
-SETASDEFAULT | \>\> | msdyn\_setasdefault
-
-## <a name="internal-organization-hierarchy-type"></a>Interner Organisationshierarchietyp
-
-Diese Vorlage bietet eine unidirektionale Synchronisierung der Entität „Organisationshierarchietyp“ von Finance and Operations nach anderen Dynamics 365-Apps.
-
-<!-- ![architecture image](media/dual-write-type.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-NAME | \> | msdyn\_name
-
-## <a name="internal-organization-hierarchy"></a>Interner Organisationshierarchietyp
-
-Diese Vorlage bietet eine unidirektionale Synchronisierung der Entität „Veröffentlichte Organisationshierarchie“ von Finance and Operations nach anderen Dynamics 365-Apps.
-
-<!-- ![architecture image](media/dual-write-organization.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-VALIDTO | \> | msdyn\_validto
-VALIDFROM | \> | msdyn\_validfrom
-HIERARCHYTYPE | \> | msdyn\_hierarchytypename
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentpartyid
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childpartyid
-HIERARCHYTYPE | \> | msdyn\_hierarchytypeid.msdyn\_name
-CHILDORGANIZATIONPARTYNUMBER | \> | msdyn\_childid.msdyn\_partynumber
-PARENTORGANIZATIONPARTYNUMBER | \> | msdyn\_parentid.msdyn\_partynumber
+[!include [Organization hierarchy - published](dual-write/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
 
 ## <a name="internal-organization"></a>Interne Organisation
 
 Informationen zur internen Organisation in Common Data Service stammen aus zwei Entitäten, **Organisationseinheit** und **juristische Personen**.
 
-<!-- ![architecture image](media/dual-write-operating-unit.png) -->
+[!include [Operating unit](dual-write/OperatingUnit-msdyn-internalorganizations.md)]
 
-<!-- ![architecture image](media/dual-write-legal-entities.png) -->
+[!include [Legal entities](dual-write/LegalEntities-msdyn-internalorganizations.md)]
 
-### <a name="operating-unit"></a>Organisationseinheit
+[!include [Legal entities](dual-write/LegalEntities-Companies.md)]
 
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-LANGUAGEID | \> | msdyn\_languageid
-NAMEALIAS | \> | msdyn\_namealias
-NAME | \> | msdyn\_name
-PARTYNUMBER | \> | msdyn\_partynumber
-OPERATINGUNITTYPE | \>\> | msdyn\_type
-
-### <a name="legal-entity"></a>Juristische Person
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-NAMEALIAS | \> | msdyn\_namealias
-LANGUAGEID | \> | msdyn\_languageid
-NAME | \> | msdyn\_name
-PARTEINUMMER | \> | msdyn\_partynumber
-Kein | \>\> | msdyn\_type
-LEGALENTITYID | \> | msdyn\_companycode
-
-## <a name="company"></a>Firma
-
-Bietet eine bidirektionale Synchronisierung von Daten von juristischen Person (Unternehmen) zwischen Finance and Operations und anderen Dynamics 365-Apps.
-
-<!-- ![architecture image](media/dual-write-company.png) -->
-
-Quellfeld | Zuordnungstyp | Zielfeld
----|---|---
-NAME | = | cdm\_name
-LEGALENTITYID | = | cdm\_companycode

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76bae24a975c922ea49ee2584e87cf43ccca61c7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 22a7b0acae02738e4f14905edb13fac1da0d0213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177859"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770596"
 ---
 # <a name="posting-definitions"></a>Buchung (Definitionen)
 
@@ -59,6 +59,6 @@ Die folgenden Einschränkungen gelten für das Erstellen von Verknüpfungen in B
 -   Sie können eine Buchungsdefinition jeder beliebigen Buchungsart zuweisen, diese muss sich jedoch im selben Modul wie die Buchungsdefinition befinden. Verwenden Sie die Seite **Buchung - Definitionen**, um festzustellen, aus welchem Modul eine Buchungsart ist.
 
 
-Weitere Informationen in [Beispiele zu Buchungsdefinitionen](example-posting-definitions.md). 
+Weitere Informationen finden Sie unter [Buchungsdefinitionsbeispiele](example-posting-definitions.md). 
 
 

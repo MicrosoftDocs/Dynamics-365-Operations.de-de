@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 3b885610ac9ca8645358ba8ab6d46ab82143a534
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ebf0fce60ad006e798aa4f404fbffcf10a0b31f9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250483"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770288"
 ---
 # <a name="synchronize-project-estimates-directly-from-project-service-automation-to-finance-and-operations"></a>Synchronisieren von Projektvorkalkulationen direkt aus Project Service Automation mit Finance and Operations
 
@@ -46,7 +46,7 @@ Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Projec
 
 ### <a name="template-and-tasks"></a>Vorlage und Aufgaben
 
-Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
+Wenn Sie auf die verfügbaren Vorlagen im Microsoft Power Apps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
 
 Die folgenden Vorlagen und zugrunde liegenden Aufgaben werden verwendet, um Projektausgabenkategorien von Project Service Automation zu Finance zu synchronisieren:
 

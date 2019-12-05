@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: a4945f47c86d490f40a6b00cb823e6a6005e0ee4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e38d0bd75ad865b7885182f798beb43551576beb
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550508"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770895"
 ---
 # <a name="add-location-and-party-relationship-types"></a>Standort- und Parteibeziehungstypen hinzufügen 
 
@@ -41,7 +41,7 @@ Es gibt zwei Möglichkeiten, neue Standortrollen für Adress- und Kontaktinforma
 
     1.  Erstellen Sie eine Erweiterung zur **LogisticsLocationRoleType** Enumeration und fügen Sie dann die neue Rolle der Erweiterung hinzu. 
   
-        ![LogisticsLocationRoleType](media/Logistics.PNG)
+        ![Erweiterung zu LogisticsLocationRoleType Enum](media/Logistics.PNG)
 
     2. Erstellen Sie eine neue Ressourcendatei für die neue Rolle und weisen Sie anschließend einen Wert für deren Eigenschaften zu.
      
@@ -69,7 +69,7 @@ Es gibt zwei Möglichkeiten, einen neuen Beziehungstyp hinzuzufügen:
 
     2. Legen Sie einen Initialisierer für diesen neuen Typ an. Sie finden mehrere Beispiele im Kerncode, eines davon ist  **DirRelationshipTypeChildInitialize**. Dies ist eine Initialisierungsklasse für den Parteienbeziehungstyp "Child". Sie können mit Ihrem Initializer beginnen, indem Sie diesen Code kopieren und einfügen und dann die markierten Bereiche aktualisieren.
     
-    ![DirRelationshipChild](media/DirRelationship.PNG)
+    ![DirRelationshipChild Initialisierer](media/DirRelationship.PNG)
 
     3.  Um das Auffüllen des neuen Beziehungstyps zu testen, können Sie eine lauffähige Klasse erstellen und DirDataPopulation::insertDirRelationshipTypes() in Main() aufrufen. Sie sollten den neuen Beziehungstyp in der **DirRelationshipTypeTable** sehen, und der neue Beziehungstyp wird auf der Seite **Beziehungstypen** verfügbar sein.
 

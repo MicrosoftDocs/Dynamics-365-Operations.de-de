@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-05
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: c7ee8f4cf14197d6bd4549741058fc5fe95ae55d
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 561b6fad0facad86e9a7bc8f36218ab98fcec73c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026669"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773264"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-5-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (5. März 2019)
 
@@ -71,7 +71,7 @@ Mit dieser Änderung werden die Lohnfelder bei Änderungsanfragen an den vorhand
 Es gibt weitere kleinere Fehlerkorrekturen in dieser Version.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="coming-soon"></a>Bald verfügbar
 

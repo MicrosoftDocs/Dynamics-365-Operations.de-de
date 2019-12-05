@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7eca533ed1621ec3507d8510f75842c0f0165275
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5cabdce5e23704fbf12e631a138235174ebc5772
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186738"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770780"
 ---
 # <a name="close-the-general-ledger-at-period-end"></a>Abschluss des Hauptbuchs am Ende der Periode
 
@@ -48,8 +48,8 @@ Der Arbeitsbereich Finanzperioden schließen kann verwendet werden, um die Aufga
 
 
 Weitere Informationen zu Workflows finden Sie unter den folgenden Themen:
-- [Finanzperiodenabschluss-Arbeitsbereich](financial-period-close-workspace.md) 
-- [Jahresabschluss](Year-end-close.md)  
+- [Arbeitsbereich für Abschluss der Finanzperiode](financial-period-close-workspace.md) 
+- [Jahresendabschluss](Year-end-close.md)  
 - [Massen-Finanzperiodenabschluss](tasks/mass-financial-period-close.md)
 
 

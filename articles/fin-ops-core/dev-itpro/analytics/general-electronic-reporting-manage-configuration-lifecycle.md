@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6206b3a1ac298af98e4b69b6800b9a493658c4ea
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: ecaeb80f3cda2ee24533ed263df63cc10c5ffc65
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181288"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771095"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten
 
@@ -33,7 +33,7 @@ In diesem Thema wird beschrieben, wie Sie den Lebenszyklus von Konfigurationen f
 
 ## <a name="overview"></a>Übersicht
 
-Die elektronische Berichterstellung (EB) ist ein Modul, das gesetzlich vorgeschriebene und länderspezifische elektronische Dokumente  unterstützt. Im Allgemeinen setzt ER die Möglichkeit der Ausführung der folgenden Aufgaben für ein einzelnes elektronisches Dokument voraus. Genauere Informationen finden Sie in der [Berichterstellungsüberblick](general-electronic-reporting.md).
+Die elektronische Berichterstellung (EB) ist ein Modul, das gesetzlich vorgeschriebene und länderspezifische elektronische Dokumente  unterstützt. Im Allgemeinen setzt ER die Möglichkeit der Ausführung der folgenden Aufgaben für ein einzelnes elektronisches Dokument voraus. Weitere Informationen finden Sie unter [Elektronisches Berichtswesen (ER) Übersicht](general-electronic-reporting.md).
 
 - Entwerfen einer Vorlage für ein elektronisches Dokument:
 
@@ -87,4 +87,4 @@ ER-Konfigurationen, die in der Testumgebung entworfene wurden, können in die Te
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)

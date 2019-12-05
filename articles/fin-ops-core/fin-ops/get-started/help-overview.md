@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef630ca56888eb61ab0519a29c89c3ccb2f24a87
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537831"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811671"
 ---
 # <a name="help-system"></a>Hilfesystem
 
@@ -82,7 +82,7 @@ Weitere Informationen hierzu finden Sie in unserem [Mitwirkerhandbuch](https://d
 
 Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können einen Aufgabenleitfaden aus dem Hilfe-Bereich öffnen (wiedergeben). Wenn Sie zuerst auf einen Aufgabenleitfaden klicken, werden im Hilfe-Bereich Schritt für Schritt die Anweisungen für die Aufgabe angezeigt. Lokalisierte Aufgabenleitfäden sind verfügbar.
 
-Microsoft Aufgabenleitfadenbibliotheken für gelieferte Versionen bis Dezember 2017 für Dynamics 365 for Finance and Operations. Der Abschnitt [Auf Aufgabenleitfäden zugreifen aus dem Hilfebereich](help-overview.md#accessing-task-guides-from-the-help-pane) beschreibt, wie Sie die richtigen Aufgabenleitfäden für Ihr Produkt finden.
+Microsoft Aufgabenleitfadenbibliotheken für gelieferte Versionen bis Dezember 2017 für Dynamics 365 for Finance and Operations. Der Abschnitt [Hilfesystem](help-overview.md#accessing-task-guides-from-the-help-pane) beschreibt, wie Sie die richtigen Aufgabenanleitungen für Ihr Produkt finden.
 
 ![Leseansicht des Aufgabenleitfadens](./media/task-guide-ops.png)
 
@@ -93,7 +93,7 @@ Um die geführte, interaktive Umgebung zu starten, klicken Sie auf **Aufgabenlei
 > [!IMPORTANT]
 > Die Daten, die Sie eingeben, wenn Sie einen Aufgabenleitfaden wiedergeben, sind real. In einer Produktionsumgebung werden die Daten in das Unternehmen eingegeben, das Sie derzeit verwenden.
 
-Sie können Aufgabenaufzeichnung verwenden, um Ihre eigenen benutzerdefinierten Aufgabenleitfäden zu erstellen. Weitere Informationen finden Sie unter [Dokumentation oder Schulung mithilfe von Aufgabenaufzeichnungen erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)...
+Sie können Aufgabenaufzeichnung verwenden, um Ihre eigenen benutzerdefinierten Aufgabenleitfäden zu erstellen. Weitere Informationen finden Sie unter [Dokumentation oder Training mit Aufgabenrecorder](../../dev-itpro/user-interface/task-recorder-training-docs.md) erstellen.
 
 ## <a name="in-product-help"></a>Produkthilfe
 
@@ -144,13 +144,12 @@ Nachdem ein Systemadministrator diese Schritte eingerichtet hat, können Sie den
 
 Sie können Hilfe für Benutzer erstellen, indem Sie benutzerdefinierte Aufgabenleitfäden erstellen oder Ihre eigene Website mit dem Hilfebereich verbinden. Weitere Details finden Sie unter:
 
-- [Wie Sie eine Aufgabenaufzeichnung zu Dokumentations- und Schulungszwecken erstellen](../../dev-itpro/user-interface/task-recorder.md).
+- [Aufgabenrecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md).
 - [Erstellen benutzerdefinierter Hilfe (Whitepaper)](https://go.microsoft.com/fwlink/?linkid=2041185)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Aufgabenaufzeichnung](../../dev-itpro/user-interface/task-recorder.md)
-- [Dokumentation oder Schulungen mithilfe von „Aufgabenaufzeichnungen“ erstellen](../../dev-itpro/user-interface/task-recorder.md)
+- [Aufgabenrecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md)
 
 In der folgenden Tabelle werden unsere Websites aufgeführt. Für Sites, die ein Sternchen (\*) neben dem Namen besitzen,ist es erforderlich, dass Sie sich über ein Konto anmelden, das einem Dienstleistungsplan zugeordnet ist.
 

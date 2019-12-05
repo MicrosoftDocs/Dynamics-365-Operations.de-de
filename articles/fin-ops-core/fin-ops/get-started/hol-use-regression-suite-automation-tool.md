@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9afa98156c58d10c19454430769a3d60343661dc
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 654685a382ca5f3f462ad8a9c506b51b52c3758c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550956"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811648"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Das Regression Suite Automation Tool-Tutorial anweden
 
@@ -44,7 +44,7 @@ Informationen zu dieser Funktion finden Sie unter [Ändern einer vorhandenen Auf
 
 ### <a name="derived-test-case"></a>Abgeleitete Testfälle
 
-1. Öffnen Sie das Regression Suite Automation Tool (RSAT) und wählen Sie beide Testfälle aus, die Sie in [Einrichten und Installieren des Regression Suite Automation Tool](./hol-set-up-regression-suite-automation-tool.md) ausgewählt haben.
+1. Öffnen Sie das Regression Suite Automation Tool (RSAT) und wählen Sie beide Testfälle aus, die Sie in [Einrichtung und Installation des Regression Suite Automation Tools](./hol-set-up-regression-suite-automation-tool.md) erstellt haben.
 2. Wählen Sie **Neu \>Abgeleiteten Testfall berechnen** aus.
 
     ![Abgeleiteten Testfallbefehl im Menü „Neu“ erstellen](./media/use_rsa_tool_01.png)

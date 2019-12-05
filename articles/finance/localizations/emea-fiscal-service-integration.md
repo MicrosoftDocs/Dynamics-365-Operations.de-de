@@ -16,12 +16,12 @@ ms.search.region: Austria, Czech Republic
 ms.author: Anasyash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d84ce00ceaf126abd8c6e6a12bcdedbdc0bf01d5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d47016732dfb31b810f4e3bd3b1d534baee63a23
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175711"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773475"
 ---
 # <a name="fiscal-service-esr-integration"></a>Integration von steuerlichem Dienst (ESR)
 
@@ -182,7 +182,7 @@ In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäf
 ### <a name="register-an-automatically-posted-cod-payment-for-a-free-text-invoice-and-print-a-cash-receipt"></a>Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Freitextrechnung und Drucken eines Barbelegs
 
 1. Wählen Sie **Debitoren** &gt; **Freitextrechnungen** &gt; **Alle Freitextrechnungen** aus.
-2. Dient zum Erstellen einer Freitextrechnung. Weitere Informationen finden Sie unter [Erstellen einer Freitextrechnung](../accounts-receivable/create-free-text-invoice-new.md). 
+2. Dient zum Erstellen einer Freitextrechnung. Weitere Informationen finden Sie unter [Erstellen von Freitextrechnungen](../accounts-receivable/create-free-text-invoice-new.md). 
 3. Wählen Sie im Inforegister **Zahlung** eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.
 4. Wählen Sie Zahlungsbedingungen aus, die für die Zahlung bei Lieferung eingerichtet sind.
 5. Wählen Sie **Buchen** aus.
@@ -198,7 +198,7 @@ In diesem Abschnitt werden Sie Schritt für Schritt durch die folgenden Geschäf
 ### <a name="register-an-automatically-posted-cod-payment-for-a-sales-order-invoice-and-print-a-cash-receipt"></a>Registrieren einer automatisch gebuchten Zahlung bei Lieferung für eine Auftragsrechnung und Drucken eines Barbelegs
 
 1. Wählen Sie **Debitoren** &gt; **Aufträge** &gt; **Alle Aufträge** aus.
-2. Erstellen Sie einen Auftrag. Weitere Informationen finden Sie unter [Einen Auftrag erstellen](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
+2. Erstellen Sie einen Auftrag. Weitere Informationen finden Sie unter [Aufträge erstellen](../../supply-chain/sales-marketing/tasks/create-sales-orders.md).
 3. Wählen Sie im Inforegister **Preis und Rabatt** eine Zahlungsmethode aus, die als Zahlungsmethode für die Kasse eingerichtet ist.
 4. Wählen Sie im Feld **Zahlung** die Zahlungsbedingungen aus, die für Zahlung bei Lieferung eingerichtet sind.
 5. Wählen Sie **Rechnung** &gt; **Rechnung** aus.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: c40877bc6557a81adc5c1b8d10afbbd26322b200
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3677db634366ecfe6a26f2f5e01532ce5a087593
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249931"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815248"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Stücklisten- und Formelpositionen für den Lagerort freigeben
 
@@ -31,7 +31,7 @@ ms.locfileid: "2249931"
 In diesem Thema wird der Prozess für die Freigabe von Rohmaterial für Stücklisten-(BOM)-Positionen und Formelpositionen zum Lagerort beschrieben. Wenn Sie eine Stücklisten- oder eine Formelposition dem Lagerort freigeben, bestimmt das System zuerst, ob das Material am Produktionseingangslagerplatz im Fertigungsbereich bereits vorhanden ist, wo das Material für den Produktionsprozess verbraucht wird.
 
 - Wenn das Material am Produktionseingangslagerplatz verfügbar ist, wird es sofort von diesem Standort entnommen, nachdem das Signal für die Freigabe von Material an den Lagerort gegeben wird.
-- Wenn das Material am Produktionseingangslagerplatz nicht verfügbar ist, gibt die Materialfreigabe an, dass Material von Lagerplätzen im Lagerort zum Produktionseingangslagerplatz verschoben werden muss. Das Material wird über Lagerortarbeit für Rohmaterialentnahme verschoben. Daher müssen Lagerortprozesse für Rohmaterialentnahme konfiguriert werden. Weitere Informationen finden Sie unter [Wiederbeschaffung](../warehousing/replenishment.md) und [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](../warehousing/control-warehouse-location-directives.md).
+- Wenn das Material am Produktionseingangslagerplatz nicht verfügbar ist, gibt die Materialfreigabe an, dass Material von Lagerplätzen im Lagerort zum Produktionseingangslagerplatz verschoben werden muss. Das Material wird über Lagerortarbeit für Rohmaterialentnahme verschoben. Daher müssen Lagerortprozesse für Rohmaterialentnahme konfiguriert werden. Weitere Informationen finden Sie unter [Nachschubübersicht](../warehousing/replenishment.md) und [Lagerarbeiten mit Hilfe von Arbeitsvorlagen und Standortrichtlinien](../warehousing/control-warehouse-location-directives.md) steuern.
 
 ## <a name="methods-for-releasing-bom-and-formula-lines"></a>Methoden für die Freigabe von Stücklisten- und Formelpositionen
 

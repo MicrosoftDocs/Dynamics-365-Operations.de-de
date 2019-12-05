@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 482febc91a04766216f9887ab59d30cc9aed5096
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7b0b3721c3b0755218c834d2bf77ec976be3bdcc
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250506"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770311"
 ---
 # <a name="synchronize-project-expense-categories-between-finance-and-operations-and-project-service-automation"></a>Synchronisieren Sie Projektausgabenkategorien zwischen Finance and Operations and Project Service Automation
 
@@ -64,7 +64,7 @@ Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Projec
 
 ### <a name="template-and-task"></a>Vorlage und Aufgabe
 
-Wenn Sie auf die Vorlage im Microsoft PowerApps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
+Wenn Sie auf die Vorlage im Microsoft Power Apps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
 
 Die folgenden Vorlagen und zugrunde liegende Aufgabe werden verwendet, um Projektausgabenkategorien von Finance zu Project Service Automation zu synchronisieren:
 

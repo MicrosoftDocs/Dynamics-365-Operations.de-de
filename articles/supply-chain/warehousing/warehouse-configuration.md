@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54d6c432907b1b75307c56d3876c8b390d5ff376
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: aa503f2ce3ae8ff6b221ea1d26a1c62d0ba37646
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653417"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814903"
 ---
 # <a name="warehouse-configuration-overview"></a>Übersicht über die Lagerkonfiguration
 
@@ -31,7 +31,8 @@ ms.locfileid: "2653417"
 
 In diesem Artikel wird beschrieben, wie ein Lagerort konfiguriert wird. Es enthält Informationen zum Aktivieren eines Lagerortlayouts und Lagerortverfahren.
 
-**Hinweis:** Dieser Artikel gilt für Funktionen im Modul **Lagerortverwaltung** (erweiterte Lagerung). Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
+> [!NOTE]
+> Dieser Artikel gilt für Funktionen im Modul **Lagerverwaltung** (Advanced Warehousing). Es gilt nicht für Lagerort-Funktionen im Modul **Bestandsverwaltung**.
 
 ## <a name="warehouse-layout"></a>Lagerortlayout
 Das Lagerortverwaltungssystem in Supply Chain Management ermöglicht flexible Methoden, Ihr Lagerortlayout zu definieren, um notwendige Anpassungen und somit eine optimale Lagerorteffizienz zu ermöglichen.
@@ -114,7 +115,7 @@ Um das Definieren der Aktivitäten, die den einzelnen Richtlinienpositionen für
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Konfigurieren von Lagerplätzen in einem WMS-aktivierten Lagerort (Aufgabenleitfaden)](tasks/configure-locations-wms-enabled-warehouse.md)
+[Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren](tasks/configure-locations-wms-enabled-warehouse.md)
 
 
 

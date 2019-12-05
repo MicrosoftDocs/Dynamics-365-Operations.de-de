@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: b40f9a5677fd5375d7a19a75400d4305a8850392
-ms.sourcegitcommit: 399e861ca6f2bdcd4fe84d89fedc04b60d9f43e6
+ms.openlocfilehash: c11123c0d53fcf4ba67e83fe64d2d6e692d5b6f1
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "2564936"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771351"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Datenimport aus SharePoint konfigurieren
 
@@ -43,7 +43,7 @@ Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugri
 - ER-Format und Modellkonfigurationen für US 1099-Steuerzahlungen.
 
 ### <a name="create-required-er-configurations"></a>Erforderliche ER-Konfigurationen erstellen
-Geben Sie die Aufgabenleitfäden **Daten aus einer Microsoft Excel-Datei mit EB importieren** wieder, die Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozess sind. Diese Aufgabenleitfäden führen Sie durch den Prozess des Entwurfs und die Verwendung von EB-Konfigurationen zum interaktiven Importieren von Kreditorenbuchungen aus Microsoft Excel-Dateien. Weitere Informationen finden Sie unter [Eingehende Dokumente in Microsoft Excel analysieren](parse-incoming-documents-excel.md). Nachdem Sie die Aufgabenleitfäden abgeschlossen haben, können Sie die folgenden Einstellungen vornehmen.
+Geben Sie die Aufgabenleitfäden **Daten aus einer Microsoft Excel-Datei mit EB importieren** wieder, die Teil des **7.5.4.3 IT-Dienstleistungs-/-Lösungskomponenten anschaffen/entwickeln (10677)**-Geschäftsprozess sind. Diese Aufgabenleitfäden führen Sie durch den Prozess des Entwurfs und die Verwendung von EB-Konfigurationen zum interaktiven Importieren von Kreditorenbuchungen aus Microsoft Excel-Dateien. Weitere Informationen finden Sie unter [Eingangsdokumente im Excel-Format analysieren](parse-incoming-documents-excel.md). Nachdem Sie die Aufgabenleitfäden abgeschlossen haben, können Sie die folgenden Einstellungen vornehmen.
 
 #### <a name="er-configurations"></a>ER-Konfigurationen
 

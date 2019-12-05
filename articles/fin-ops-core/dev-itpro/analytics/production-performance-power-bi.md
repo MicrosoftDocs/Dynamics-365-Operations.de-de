@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9e2613a9adf60699a1c20b780e1acf2afb99d37d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0dc71f819f132b91fe153f83089eab24fa33173a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182875"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772487"
 ---
 # <a name="production-performance-power-bi-content"></a>Power BI-Inhalt – Produktionsleistung
 
@@ -62,7 +62,7 @@ Die folgende Tabelle enthält eine Übersicht der Visualisierungen im Inhaltspak
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Produktionsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen zum Entitätsshop finden Sie unter [Power BI-Integration mit Entitäts-Shop](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt **Produktionsleistung** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Um mehr über den Entitätsspeicher zu erfahren, siehe [Power BI Integration mit dem Entitätsspeicher](power-bi-integration-entity-store.md).
 
 Die folgenden aggregierende Messungen der Rechnungspositionsentität werden als Grundlage des Power BI-Inhalts verwendet.
 

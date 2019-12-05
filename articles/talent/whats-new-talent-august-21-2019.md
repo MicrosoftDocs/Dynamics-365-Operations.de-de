@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-08-20
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 5e4272fa1c94a883a10b7893d5dc8addfa987e60
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: a3e2178dbc60582d6167898c4c3446feac49dd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024067"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814489"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-august-20-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (20. August 2019)
 
@@ -35,7 +35,7 @@ In diesem Thema werden die Funktionen beschrieben, die in Dynamics 365 Talent ne
 
 ### <a name="simplified-apply-experience-for-candidates"></a>Vereinfachte Bewerbungserfahrung für Kandidaten 
 
-Eine vereinfachte Bewerbungserfahrung für Kandidaten ist nun verfügbar in der öffentlichen Vorschau. Sobald aktiviert, können Sie sich für eine Stelle bewerben, indem Sie Ihren Lebenslauf verwenden mithilfe von **Mit LinkedIn bewerben** (falls aktiviert) oder mithilfe des bestehenden Bewerbungsformulars. Mithilfe dieser Änderungen können Kandidaten ihre Bewerbung mit minimalen Feldern mit wenigen manuellen Eingaben machen. Informationen dazu, wie diese Funktion aktiviert wird, finden Sie unter [Aktivieren oder Deaktivieren von Vorschaufunktionen](./access-preview-feature.md#enable-or-disable-preview-features).
+Eine vereinfachte Bewerbungserfahrung für Kandidaten ist nun verfügbar in der öffentlichen Vorschau. Sobald aktiviert, können Sie sich für eine Stelle bewerben, indem Sie Ihren Lebenslauf verwenden mithilfe von **Mit LinkedIn bewerben** (falls aktiviert) oder mithilfe des bestehenden Bewerbungsformulars. Mithilfe dieser Änderungen können Kandidaten ihre Bewerbung mit minimalen Feldern mit wenigen manuellen Eingaben machen. Informationen zum Aktivieren dieser Funktion finden Sie unter [Zugriffsvorschau-Funktionen in Microsoft Dynamics 365 Talent](./access-preview-feature.md#enable-or-disable-preview-features).
 
 ### <a name="view-rejection-comments-as-part-of-application-activity"></a>Hier werden Ablehnungskommentare als Teil der Bewerbungsaktivität angezeigt
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ce8c1e7a3a4533516d8f2e2b0af46633e4c7667
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c0d9b8708df413118d6e1c1dbe788ce4f6ed5b2f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250736"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815179"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Eine statistische Grundplanung generieren
 
@@ -56,7 +56,7 @@ Das Feld **Startdatum für statistische Grundplanung** - **Von Datum** muss auf 
 
 Das Feld **Startdatum für statistische Grundplanung** - **Von Datum** kann auf ein Datum in der Vergangenheit gesetzt werden. Das bedeutet, es ist möglich, eine Bedarfsplanung in der Vergangenheit zu generieren. Dies ist hilfreich, da Benutzer die Planungsdienstparameter ändern können, damit die statistische Planung, die in der Vergangenheit generiert wurde, mit dem tatsächlichen historischen Bedarf übereinstimmt. Benutzer können mithilfe dieser Parametereinstellungen dann fortfahren, um eine statistische Grundplanung für die Zukunft zu erstellen. 
 
-Die manuellen Anpassungen, die in den vorherigen Bedarfsplanungsiterationen vorgenommen wurden, können automatisch in die neue Grundplanung übernommen werden, wenn das Kontrollkästchen **Manuelle Anpassungen auf Bedarfsplanung übertragen** aktiviert ist. Wenn das Kontrollkästchen deaktiviert ist, werden die manuellen Anpassungen nicht zur Grundplanung hinzugefügt, sie werden jedoch nicht gelöscht. Die manuellen Anpassungen, die an einer Planung vorgenommen werden, können nur zum Zeitpunkt des Planungsimports gelöscht werden, indem das Kontrollkästchen **Manuelle Anpassungen der Grundbedarfsplanung speichern** deaktiviert wird. Manuelle Anpassungen werden zum Zeitpunkt der Autorisierung gespeichert. Wenn ein Benutzer manuelle Anpassungen an der Planung vornimmt, aber die Planung nicht in Supply Chain Management autorisiert, gehen die Änderungen daher verloren. Weitere Informationen zu manuellen Anpassungen und dazu, wie sie arbeiten, finden Sie unter [Autorisieren der angepassten Planung](authorize-adjusted-forecast.md). 
+Die manuellen Anpassungen, die in den vorherigen Bedarfsplanungsiterationen vorgenommen wurden, können automatisch in die neue Grundplanung übernommen werden, wenn das Kontrollkästchen **Manuelle Anpassungen auf Bedarfsplanung übertragen** aktiviert ist. Wenn das Kontrollkästchen deaktiviert ist, werden die manuellen Anpassungen nicht zur Grundplanung hinzugefügt, sie werden jedoch nicht gelöscht. Die manuellen Anpassungen, die an einer Planung vorgenommen werden, können nur zum Zeitpunkt des Planungsimports gelöscht werden, indem das Kontrollkästchen **Manuelle Anpassungen der Grundbedarfsplanung speichern** deaktiviert wird. Manuelle Anpassungen werden zum Zeitpunkt der Autorisierung gespeichert. Wenn ein Benutzer manuelle Anpassungen an der Planung vornimmt, aber die Planung nicht in Supply Chain Management autorisiert, gehen die Änderungen daher verloren. Weitere Informationen über manuelle Anpassungen und deren Funktionsweise finden Sie unter [Autorisieren einer angepassten Prognose](authorize-adjusted-forecast.md). 
 
 Eine Bedarfsplanungsgenerierung kann einen Namen und Kommentare haben, damit Benutzer die Planung erkennen können, die generiert wurde. Diese Werte werden im Generierungsverlauf der Planung auf der Seite **Generierungsverlauf statistische Grundplanung** angezeigt. 
 
@@ -75,6 +75,6 @@ Wenn die Planung nicht für einen großen Satz Artikel generiert wird, sondern b
 
 - [Einrichten einer Bedarfsplanung](demand-forecasting-setup.md)
 
-- [Manuelle Anpassungen an die Grundplanung](manual-adjustments-baseline-forecast.md)
+- [Manuelle Anpassungen an der Grundplanung](manual-adjustments-baseline-forecast.md)
 
-- [Autorisieren der angepassten Planung](authorize-adjusted-forecast.md)
+- [Eine angepasste Planung autorisieren](authorize-adjusted-forecast.md)

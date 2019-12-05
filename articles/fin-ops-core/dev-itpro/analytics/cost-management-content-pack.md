@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6bd76fc771c370d8d769a97d3b33003f632717f2
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174189"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771516"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-Inhalt zur Kostenverwaltung
 
@@ -37,7 +37,7 @@ Der Microsoft Power BI-Inhalt für **Kostenmanagement** ist für Bestandsbuchhal
 > [!NOTE]
 > Der Power BI-Inhalt zur **Kostenverwaltung**, der in diesem Thema beschrieben wird, gilt für Dynamics 365 Finance and Operations 8.0.
 > 
-> Das Power BI-Inhaltspaket zur **Kostenverwaltung**, das auf der AppSource-Site verfügbar ist, ist veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Power BI-Inhaltspakete, die auf AppSource verfügbar sind](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Das Power BI-Inhaltspaket zur **Kostenverwaltung**, das auf der AppSource-Site verfügbar ist, ist veraltet. Weitere Informationen zu dieser Veraltung finden Sie unter [Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Dieser Power BI-Inhalt bietet ein kategorisiertes Format, mit dessen Hilfe Sie die Leistung von Beständen überwachen können und visuell darstellen können, wie Kosten durch sie fließen. Sie können Verwaltungseinblicke erhalten, wie das Umsatzverhältnis, die Anzahl von Tagen, während der der Bestand verfügbar ist, die Genauigkeit sowie die „ABC-Klassifizierung” auf Ihrer bevorzugten aggregierten Ebene (Untenehmen, Artikel, Artikelgruppe oder Standort). Die verfügbar gemachten Informationen können auch als detaillierte Ergänzung der Finanzaufstellung verwendet werden.
 
@@ -172,7 +172,7 @@ Die folgende Tabelle bietet eine Übersicht der Visualisierungen im Power BI-Inh
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
 
-Daten aus der Anwendung werden verwendet, um die Berichtsseiten im Power BI-Inhalt zur **Kostenverwaltung** auszufüllen. Diese Daten werden als aggregierte Messungen dargestellt, die im Entitätsspeicher bereitgestellt werden, der eine Microsoft SQL Server-Datenbank ist, die für Analysen optimiert ist. Weitere Informationen finden Sie unter [Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Daten aus der Anwendung werden verwendet, um die Berichtsseiten im Power BI-Inhalt zur **Kostenverwaltung** auszufüllen. Diese Daten werden als aggregierte Messungen dargestellt, die im Entitätsspeicher bereitgestellt werden, der eine Microsoft SQL Server-Datenbank ist, die für Analysen optimiert ist. Weitere Informationen finden Sie unter [Power BI Integration mit Entity Store](power-bi-integration-entity-store.md).
 
 Die wesentlichen aggregierten Messungen der folgenden Objekte werden als Grundlage des Power BI-Inhalts verwendet.
 

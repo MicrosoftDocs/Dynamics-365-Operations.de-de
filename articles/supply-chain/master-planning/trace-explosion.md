@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4a6123d7443cce51e95aa6d1fdb1fdc19d001d1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 7f2821eb6a17d2caaacf399f8d519e4caf3ecd04
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1557847"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813660"
 ---
 # <a name="use-tracing-for-explosion"></a>Verwenden der Ablaufverfolgung für die Auflösung
 
@@ -44,7 +44,7 @@ Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten 
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Produktprogrammpläne](master-plans.md)
+[Hauptpläne – Übersicht](master-plans.md)
 
 
 

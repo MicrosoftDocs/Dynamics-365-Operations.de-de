@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 6e83a2607f4840139143fb473ef7d6daf4b8b7ad
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180667"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812556"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
 [!include [banner](../includes/banner.md)]
 
-Bevor Sie mit der Hardware- und Infrastrukturkalkulation für eine lokale Umgebung beginnen, machen Sie sich mit den [Systemanforderungen](system-requirements.md) und den [Anweisungen für die Einrichtung und Bereitstellung](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) vertraut, um die zugrundeliegende Infrastruktur wirklich zu verstehen.
+Bevor Sie mit dem Hardware- und Infrastruktur-Sizing-Prozess für eine lokale Umgebung beginnen, machen Sie sich mit den [Systemanforderungen für Cloud-Bereitstellungen](system-requirements.md) und [Setup- und Bereitstellungsanweisungen](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) vertraut, um ein solides Verständnis der zugrunde liegenden Infrastruktur zu erlangen.
 
 > [!NOTE]
 > Achten Sie auf die optimalen Leistungsverfahren für die Systemeinrichtung.

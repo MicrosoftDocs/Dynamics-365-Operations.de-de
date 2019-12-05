@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e5e795ca6f7831ecd3fa28be9782f0b287eea6e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: eef77a5d81d12ec92eea86b1dd9902d9e3d80b33
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190004"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812362"
 ---
 # <a name="workflow-system-overview"></a>Workflowsystem – Übersicht
 
@@ -57,18 +57,18 @@ Die Verwendung des Workflowsystems in der Organisation verspricht mehrere Vortei
 
 ## <a name="workflow-content"></a>Workflowinhalt
 
-+ [Workflowarchitektur](workflow-system-architecture.md)
-+ [Workflowelemente](workflow-elements.md)
-+ [Workflowaktivitäten](workflow-actions.md)
-+ [Erstellen eines Workflows](create-workflow.md)
-+ [Konfigurieren von Workfloweigenschaften](configure-workflow-properties.md)
-+ [Konfigurieren einer manuellen Entscheidung in einem Workflow](configure-manual-task-workflow.md)
-+ [Konfigurieren einer automatisierten Aufgabe in einem Workflow](configure-automated-task-workflow.md)
-+ [Einen Genehmigungsschritt in einem Workflow konfirgurieren](configure-approval-process-workflow.md)
-+ [Einen Genehmigungsschritt in einem Workflow genehmigen](configure-approval-step-workflow.md)
-+ [Konfigurieren einer manuellen Entscheidung in einem Workflow](configure-manual-decision-workflow.md)
-+ [Konfigurieren einer bedingten Entscheidung in einem Workflow](configure-conditional-decision-workflow.md)
-+ [Konfigurieren einer parallelen Aktivität in einem Workflow](configure-parallel-activity-workflow.md)
-+ [Konfigurieren eines Parallelzweigs in einem Workflow](configure-parallel-branch-workflow.md)
-+ [Konfigurieren eines Positionsworkflows](configure-line-item-workflow.md)
++ [Workflow-Systemarchitektur](workflow-system-architecture.md)
++ [Workflow-Elemente](workflow-elements.md)
++ [Aktivitäten in Workflow-Genehmigungsprozessen](workflow-actions.md)
++ [Erstellen von Workflows – Übersicht](create-workflow.md)
++ [Konfigurieren von Workflow-Eigenschaften](configure-workflow-properties.md)
++ [Manuelle Aufgaben in einem Workflow konfigurieren](configure-manual-task-workflow.md)
++ [Konfigurieren von automatisierten Aufgaben in einem Workflow](configure-automated-task-workflow.md)
++ [Genehmigungsprozesse in einem Workflow konfigurieren](configure-approval-process-workflow.md)
++ [Genehmigungsschritte in einem Workflow konfigurieren](configure-approval-step-workflow.md)
++ [Manuellen Entscheidungen in einem Workflow konfigurieren](configure-manual-decision-workflow.md)
++ [Konfigurieren von bedingten Entscheidungen in einem Workflow](configure-conditional-decision-workflow.md)
++ [Konfigurieren paralleler Aktivitäten in einem Workflow](configure-parallel-activity-workflow.md)
++ [Konfigurieren paralleler Verzweigungen in einem Workflow](configure-parallel-branch-workflow.md)
++ [Konfigurieren von Positionsworkflows](configure-line-item-workflow.md)
 + [Workflow-FAQs](workflow-FAQ.md)

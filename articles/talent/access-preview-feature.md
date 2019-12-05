@@ -1,5 +1,5 @@
 ---
-title: Auf Vorschaufunktionen in Microsoft Dynamics 365 Talent zugreifen
+title: Funktionen verwalten
 description: In diesem Thema wird beschrieben, wie ein Administrator die Vorschaufunktionen in Microsoft Dynamics 365 Talent aktivieren kann, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind.
 author: tracykeya
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: trkeya
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 0f9a83aeea3942d3c56d32956f79490c91565e9e
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551598"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833299"
 ---
-# <a name="access-preview-features-in-microsoft-dynamics-365-talent"></a>Auf Vorschaufunktionen in Microsoft Dynamics 365 Talent zugreifen
+# <a name="manage-features"></a>Funktionen verwalten
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Im Rahmen unseres kontinuierlichen Rollouts von Human Capital Management (HCM) Funktionen für Microsoft Dynamics 365 Talent, wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Administratoren können Vorschaufunktionen in ihrer Umgebung sehen und nutzen. Diese Funktionen sind fast fertig für die allgemeine Verfügbarkeit und wurden ausgiebig getestet. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
 
@@ -117,6 +117,6 @@ Stellen Sie sicher, dass Sie keine persönlichen Daten (Informationen, die Sie i
 ## <a name="see-also"></a>Siehe auch
 
 - [Talent Apps testen oder kaufen](https://dynamics.microsoft.com/talent/overview/)
-- [Neuigkeiten](./whats-new.md)
-- [Versionshinweise](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Erhalten Sie Support für Talent](./talent-support.md)
+- [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
+- [Freigabepläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

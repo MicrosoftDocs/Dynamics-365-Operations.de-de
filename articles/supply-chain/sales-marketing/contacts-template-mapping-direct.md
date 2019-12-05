@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d3a4602a3d8462666dfcb26b97a4f652891f7bc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 141464f2ce7cb4ccfd2a8fb7a266e657e8f52015
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249970"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814120"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren
 
@@ -135,7 +135,7 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 
 [Produkte direkt von Supply Chain Management mit Produkten in Sales synchronisieren](products-template-mapping-direct.md)
 
-[Auftragskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-order-template-mapping-direct-two-ways.md)
+[Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Rechnungskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-invoice-template-mapping-direct.md)
 

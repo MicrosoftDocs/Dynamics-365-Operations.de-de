@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bb318c24424c291f08ba7527b2258c0da4cba9a8
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 53100a897dc71758b8920672fea1e684817cb4b7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571667"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812282"
 ---
 # <a name="inbound-and-outbound-assets"></a>Ein- und ausgehende Anlagen
 
@@ -34,7 +34,7 @@ ms.locfileid: "2571667"
 Wenn Ihr Unternehmen Reparatur- oder Wartungsarbeiten für Anlagen ausführt, die von anderen Standorten oder Kunden entgegen genommen werden, kann Asset Management sowohl eingehende Anlagen nachverfolgen, die auf dem Weg zu Ihrem Unternehmen sind, als auch ausgehenden Anlagen, die zurückgegeben werden.
 
 > [!NOTE]
-> Wenn Sie Lebenszyklusstatus für ein- und ausgehende Anlagen zum Verwalten von Anlagen verwenden möchten, die empfangen und zurückgegeben werden, müssen Sie Lebenszyklusstatus für Wartungsanforderungen und Lebenszyklusmodelle einrichten, die diese Aktivitäten unterstützen. Weitere Informationen finden Sie unter [Einstellungen für Wartungsanfragen](../setup-for-maintenance-requests/requests.md).
+> Wenn Sie Lebenszyklusstatus für ein- und ausgehende Anlagen zum Verwalten von Anlagen verwenden möchten, die empfangen und zurückgegeben werden, müssen Sie Lebenszyklusstatus für Wartungsanforderungen und Lebenszyklusmodelle einrichten, die diese Aktivitäten unterstützen. Weitere Informationen finden Sie unter [Wartungsanforderungen](../setup-for-maintenance-requests/requests.md).
 
 Die Einrichtung von Asset Management bestimmt, ob Sie mit ein- und ausgehenden Anlagen arbeiten können.
 

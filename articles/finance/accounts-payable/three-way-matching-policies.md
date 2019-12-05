@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9c177f7a7b713e7b8490b718650daafeca0e937
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d84e3ed050bacf7632d03cf0123f682c43fd7b58
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189383"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772742"
 ---
 # <a name="three-way-matching-policies"></a>Dreiseitige Abgleichsrichtlinien
 
@@ -141,7 +141,7 @@ Beachten Sie die folgenden Punkte:
 Wenn eine Genehmigung erforderlich ist, damit Rechnungen mit Abweichungen beim Rechnungsabgleich gebucht werden können, muss die Umschaltfläche "Buchungen mit beim Abgleich erkannten Abweichungen genehmigen" auf der Seite "Details zum Rechnungsabgleich" ausgewählt sein. Erst dann kann die Rechnung mit Preis- und Mengenabgleichsfehlern gebucht werden. Ist keine Genehmigung erforderlich, kann die Fakturierung fortgesetzt werden, wenn es keine weiteren Buchungsfehler gibt.
 
 
-Weitere Informationen finden Sie unter [Kreditorenrechnungsabgleich](accounts-payable-invoice-matching.md).
+Weitere Informationen finden Sie unter [Übersicht zum Abgleich der Kreditorenrechnungen](accounts-payable-invoice-matching.md).
 
 
 

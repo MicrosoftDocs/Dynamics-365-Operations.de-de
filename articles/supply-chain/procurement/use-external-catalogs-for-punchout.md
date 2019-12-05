@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0734db6f777de2bcd6ea024c9255f589c155e44f
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec2874fb21184ccbf4f7039acf20db399e5cf5fb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1569821"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813338"
 ---
 # <a name="use-external-catalogs-for-punchout-eprocurement"></a>Externe Kataloge für PunchOut eProcurement verwenden
 
@@ -41,7 +41,7 @@ Verwenden Sie die **Externe Kataloge** Positionsaktivität, um eine Seite zu öf
 
 Abhängig von Ihren Berechtigungen ändern Sie die anfordernde Person, die juristische Person und die empfangende Organisationseinheit. Eine Änderung in diesen Werten ändert möglicherweise die Liste der externen Kataloge, die für eine anfordernde Person bereitstehen. Die externen Kataloge, die verfügbar sind, hängen von der aktuellen aktiven Einkaufsrichtlinien für die kaufende juristische Person und die empfangende Organisationseinheit ab. Diese Richtlinie kann Zugriffe auf bestimmte Beschaffungskategorien gestatten oder verhindern. Daher kann die Liste der externen Kataloge, die diesen Beschaffungskategorien zugeordnet sind, betroffen sein.
 
-Weitere Informationen zum Einrichten von Richtlinien finden Sie unter [Einkaufsrichtlinien](../procurement/purchase-policies.md)
+Weitere Informationen zu Policen finden Sie unter [Einkaufsübersicht ](../procurement/purchase-policies.md).
 
 - Wenn Sie externe Kataloge für bestimmte Beschaffungskategorien suchen, geben Sie Text im Feld "Katalogsuchgebiete" ein.
 - Um Produkte aus dem externen Katalog eines Lieferanten auf der Website des Kreditors hinzuzufügen, klicken auf den externen Katalog. Fügen Sie dann Produkte zum Einkaufskorb hinzu und gehen Sie zur Kasse. Die Einkaufskorbpositionen werden an Microsoft Dynamics 365 übertragen.

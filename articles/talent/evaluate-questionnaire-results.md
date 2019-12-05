@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 38b694b6dd4b1b9a198452e409bd64d7934b4685
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 6be2f79d4f0c234028c0cc98b81cfa8ff4fcc992
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518120"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813982"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Die Ergebnisse von Fragebögen anzeigen und auswerten
 
@@ -57,7 +57,8 @@ Auf der Seite **Antworten** können Sie Details zu Antworten, erzielten Punkten,
 -   **Antwortbericht** - In diesem Bericht werden die Antworten angezeigt, die der Befragte für jede Frage zum Fragebogen ausgewählt hat.
 -   **Falsche Antworten** - Dieser Bericht werden Informationen zu den falschen Antworten des Befragten angezeigt.
 
-**Hinweis:** Der **Ergebnisse**-Bericht ist nur verfügbar, wenn Sie Ergebnisgruppen im Fragebogen verwendet und wenn Sie auf der Seite **Ergebnisse** auf der Seite **Fragebögen** ausgewählt haben. Der **Antwort**-Bericht und der **Falsche Antworten**-Bericht sind nur verfügbar, wenn Sie auf der Seite **Antwortbericht** der Seite **Fragebögen** ausgewählt haben.
+> [!NOTE]
+> Der Bericht **Ergebnisse** ist nur verfügbar, wenn Sie Ergebnisgruppen auf dem Fragebogen verwenden und wenn Sie die Seite **Ergebnisse** auf der Seite **Fragebögen** ausgewählt haben. Der **Antwort**-Bericht und der **Falsche Antworten**-Bericht sind nur verfügbar, wenn Sie auf der Seite **Antwortbericht** der Seite **Fragebögen** ausgewählt haben.
 
 ## <a name="questionnaire-statistics"></a>Fragebogenstatistik
 Mithilfe der Fragebogenstatistik können Sie die Ergebnisse eines ausgefüllten Fragebogen analysieren, der auf den Berechnungen beruht, die Sie definieren. Um Berechnungen zu definieren, müssen Sie die folgenden Aufgaben ausführen:
@@ -75,9 +76,9 @@ Die festgelegten Einstellungen werden gespeichert und können zur regelmäßigen
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Entwurf von Fragebögen](design-questionnaires.md)
+[Entwerfen von Fragebögen](design-questionnaires.md)
 
-[Verwenden von Fragebögen](questionnaires.md)
+[Fragebögen](questionnaires.md)
 
-[Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
+[Verteilen und Planen von Fragebögen](distribute-questionnaires.md)
 

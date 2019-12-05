@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c3d83334bcccc62a2cbe761272b13cc80e10c11
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658809"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812648"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
 
@@ -84,7 +84,7 @@ So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 
 [![Darstellung der Hinweisanmerkung im Aufgabenleitfaden](./media/screen4.png)](./media/screen4.png)
 
--   **Infoschritt**: Diese Anmerkungen werden mit einem Rechtsklick auf Steuerelement oder eine beliebige Stelle in einem Formular klicken &lt; **Aufgabenaufzeichnung** &lt; **Infoschritt hinzufügen**. Infoschritte werden als nummerierte Schritte an jedem Punkt, den Sie einfügen, angezeigt, auch wenn in der Benutzeroberfläche keine Aktion aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird.Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorbereiten, Schritte zu beschreiben, die außerhalb der Anwendung abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperinks erstellen.).
+-   **Info Schritt**: Diese Anmerkungen werden erstellt, indem man mit der rechten Maustaste auf ein Steuerelement oder irgendwo auf einem Formular &lt; klickt **Aufgabenrecorder** &lt; **Info Schritt hinzufügen.** Infoschritte werden an jeder Stelle, an der Sie sie einfügen, als nummerierter Schritt angezeigt, auch wenn keine Aktion in der Benutzeroberfläche aufgezeichnet wurde. Sie können einen Infoschritt auf Formularebene hinzufügen oder einen Infoschritt, der einem Steuerelement zugeordnet ist. Wenn ein Infoschritt einem Formular zugeordnet ist, wird die "Blase" des Aufgabenleitfadens ohne Zeiger irgendwo im Formular plaziert, wenn der Aufgabenleitfaden wiedergegeben wird. Wenn ein Infoschritt einem Steuerelement zugeordnet ist, wird die "Blase" des Aufgabenleitfadens auf das Steuerelement zeigen, wenn der Aufgabenleitfaden wiedergegeben wird.Im Hilfebereich wird ein Info-Schritt als nummerierter Schritt mit dem Text angezeigt, den Sie eingegeben haben. Verwenden Sie Infoschritte, um den Benutzer auf die nächsten Schritte vorbereiten, Schritte zu beschreiben, die außerhalb der Anwendung abgeschlossen werden müssen, oder um auf andere Aufzeichnungen zu verweisen (jedoch können Sie in den Anmerkungen keine Hyperinks erstellen.).
 
 **Die Länge der Aufzeichnung bestimmen**
 
@@ -97,7 +97,7 @@ So sieht die Hinweisanmerkung in der "Blase" im Aufgabenleitfaden aus.
 **Legen Sie fest, wo in der Benutzeroberfläche eine Erfassung gestartet wird** Die Seite, auf der Sie sich befinden, wenn Sie mit der Aufnahme einer Aufgabenaufzeichnung starten, hat Auswirkungen darauf, für welche Seite der Aufgabenleitfaden angezeigt wird.Wenn also beispielsweise Ihre Aufgabenaufzeichnung im Hilfebereich aufgeführt werden soll, wenn ein Benutzer auf Hilfe auf der Seite "Hauptbuchparameter" klickt, müssen Sie die Aufzeichnung auf der Hauptbuchparameterseite starten. **Aufzeichnungen als .axtr-Dateien speichern** Wenn Sie das Erstellen oder Bearbeiten einer Aufgabenaufzeichnung beendet haben, werden Ihnen mehrere Optionen zum Herunterladen, oder Speichern der Aufzeichnung dargestellt. Sie können die Datei als Aufgabeaufzeichnungspaket (.axtr), als unformatierte Aufzeichnungsdatei (.xml) oder als Word-Dokument herunterladen, oder die Datei in einer LCS-Bibliothek speichern. Es wird empfohlen, Ihre Aufgabenaufzeichnung immer als Aufgabenaufzeichnungspaketdatei (.axtr) zu speichern. Dies unterstützt Sie dabei, die Verwaltung der Datei zu vereinfachen, wenn Prozeduren oder Anmerkungen später geändert werden müssen. Wenn Sie die Datei als Word-Dokument herunterladen möchten, speichern Sie sie ebenfalls als Aufgabenaufzeichnungspaketdatei.
 
 ## <a name="create-your-task-recording"></a>Ihre Aufgabenaufzeichnung erstellen
-Ausführliche Anweisungsschritte finden Sie unter [Eine Aufgabenaufzeichnung erstellen](task-recorder.md).
+Detaillierte Durchführungsschritte finden Sie unter [Aufgabenrecorder-Ressourcen](task-recorder.md).
 
 ## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopieren und Anpassen von Microsoft Aufgabenaufzeichnungen
 Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, um sie für eine eigene Hilfedokumentation oder Trainingsmaterialien zu verwenden. Um eine Microsoft Aufgabenaufzeichnung herunterzuladen, führen Sie die folgenden Schritte aus:
@@ -115,14 +115,14 @@ Sie können die Microsoft Aufgabenaufzeichnungen herunterladen und bearbeiten, u
 11. Wählen Sie aus, wie Sie die Aufgabenaufzeichnung speichern wollen.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Ihre Aufgabenaufzeichnungen in den Hilfebereich einbeziehen
-Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich angezeigt werden, sodass sie als Aufgabenleitfaden wiedergegeben oder als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Verbinden des Hilfesystems](../../fin-ops/get-started/help-connect.md)
+Damit Ihre eigenen benutzerdefinierten Aufgabenaufzeichnungen im Hilfebereich angezeigt werden, sodass sie als Aufgabenleitfaden wiedergegeben oder als Text angezeigt werden können, müssen Sie die Aufgabenaufzeichnungen in Ihrer eigenen BPM-Bibliothek speichern und Ihre Hilfesystemparameter so aktualisieren, dass sie auf die BPM-Bibliothek verweisen. Weitere Informationen finden Sie unter [Anschluss des Hilfesystems](../../fin-ops/get-started/help-connect.md).
 
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Hilfe – Überblick](../../fin-ops/get-started/help-overview.md)
+[Hilfesystem](../../fin-ops/get-started/help-overview.md)
 
-[Mit Hilfe verbinden](../../fin-ops/get-started/help-connect.md)
+[Verbinden des Hilfesystems](../../fin-ops/get-started/help-connect.md)
 
 [Aufgabenaufzeichnung](task-recorder.md)
 

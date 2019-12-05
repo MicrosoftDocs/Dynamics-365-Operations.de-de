@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 944d43279a6753b73b9dfe89429b2c9d6c80b5df
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 6c286587add6cb38f5fe2728e29fe8b3ac528165
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250782"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814329"
 ---
 # <a name="inventory-management-overview"></a>Bestandsverwaltung – Übersicht
 
@@ -48,10 +48,10 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neuen Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
+Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="inventory-accounting"></a>Bestandsbuchhaltung 
-Weiteres finden Sie unter [Bestandsbuchhaltung im Kostenmanagement](../cost-management/inventory-close.md) Sie unter.
+Um mehr zu erfahren, siehe [Bestand schließen](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Herstellungs- und Supply Chain Management-Blogs
 Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Bestandsverwaltung und zu anderen Lösungen unter [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management im Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).

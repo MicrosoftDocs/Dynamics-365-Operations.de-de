@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c8475e26d9a2234d4c429ef1b5e482ac06fde08
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9acc4c26febacf4ec7647cf436ac678e52df3973
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182898"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772557"
 ---
 # <a name="document-printing-overview"></a>Dokumentendruck – Übersicht
 
@@ -58,7 +58,7 @@ Da die Auflösun je nach spezifischem Szenario ändert, stellt einen integrierte
 Neben der Plattform, die im Azure Abonnement bereitgestellt wird, stellen Finance and Operations Anwendungen Kunden eine integrierte Azure Anwendung des Erstanbieters bereit, damit sie einfacher Domäne-gehostete Geräte verwenden können, um Dokumente zu drucken.
 
 ## <a name="service-overview"></a>Dienstleistungsüberblick
-Während Dokumente, die über gehostete Anwendungen produziert werden, darauf warten, auf einem mit dem Netzwerk verbundenen Gerät gedruckt zu werden, werden diese im Azure BLOB-Speicher gespeichert. Der [Dokument-Routing-Agent](install-document-routing-agent.md) verwendet Azure Authentifizierung, um einen sicheren Kanal zu den Azure Dienstleistungen einzurichten.
+Während Dokumente, die über gehostete Anwendungen produziert werden, darauf warten, auf einem mit dem Netzwerk verbundenen Gerät gedruckt zu werden, werden diese im Azure BLOB-Speicher gespeichert. [Installieren des Document Routing Agent, um das Drucken im Netzwerk zu ermöglichen](install-document-routing-agent.md) verwendet die Azure-Authentifizierung, um einen sicheren Kanal zu den Azure-Diensten herzustellen.
 
 **Ausführungssequenz**
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: a39654d4b6d74aa640db682fa052651736552db1
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
+ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553186"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "2810698"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
@@ -83,6 +83,9 @@ Auf Grundlage von Unterhaltungen mit Debitoren, hat Microsoft die folgende Liste
 
 Die folgenden Szenarien können nur mithilfe der Funktionalität „Ein Beleg” ausgeführt werden. Wenn Ihre Organisation eines dieser Szenarien hat, müssen Sie mehrere Transaktionen aktivieren, um sie in einen Beleg einzugeben, indem sie die Einstellungen  **Mehrere Transaktionen in einem Beleg zulassen** auf der Seite **Hauptbuchparameter** ändern. Diese Funktionslücken werden in späteren Versionen durch andere Funktionen ausgefüllt.
 
+> [!Note]
+> [Für jedes der folgenden Szenarien muss das Feld **Mehrere Transaktionen innerhalb eines Belegs zulassen** im Feld **Allgemein** Inforegister auf der Seite **Hauptbuchparameter** auf Ja gesetzt sein.]
+
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Formular Beitragsdebitorenzahlungszusammenfassung vom Bankkonto
 
 **Szenario** Eine Organisation übermittelt eine Liste mit Kreditoren und Beträgen auf ihre Bank, und die Bank verwendet diese Liste, um Kreditoren im Auftrag der Organisation darzustellen. Die Bank bucht die Summe der Zahlungen als einzelne Entnahme beim Bankkonto.
@@ -120,6 +123,9 @@ Mit den folgenden Anlagenbuchungen werden auch mehrere Transaktionen innerhalb e
 - Eine Anlage wird aufgeteilt.
 - Ein Parameter, um die Abschreibung nach Verwendung zu berechnen wird aktiviert und anschließend wird die Anlage abgeschafft.
 - Ein Anlage-Servicedatum liegt vor dem Anschaffungsdatum. Daher wird einer Abschreibungsregulierung gebucht.
+
+> [!Note]
+> Achten Sie bei der Erfassung von Transaktionen darauf, dass alle Transaktionen auf dieselbe Anlage zutreffen. Der Beleg wird nicht gebucht, wenn er mehr als eine Anlage enthält, auch wenn das Feld **Neuer Beleg** auf eine Belegnummer nur auf der Seite **Journalnamen** im Hauptbuch gesetzt ist. Wenn Sie mehr als eine Anlage in den Beleg aufnehmen, erscheint die Meldung **Es kann nur eine Anlagenbewegung pro Beleg** und Sie können den Beleg nicht buchen.  
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Wechsel und Solawechsel
 Wechsel und Solawechsel verlangen, dass ein Beleg verwendet wird, da die Transaktion den Debitoren- bzw. Kreditorensaldo von einem Debitoren-/Kreditorsachkonto auf ein anderes verschiebt, basierend auf dem Status der Zahlung.

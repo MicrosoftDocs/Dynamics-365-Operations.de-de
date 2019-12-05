@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-04
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: b031fd95d2e7fc8405ad96139779091e00bb4d46
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 42065f3d6b7ae9e7ad99b26c7692e41f8c36934d
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551471"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832976"
 ---
 # <a name="troubleshoot-integration-with-linkedin-and-microsoft-dynamics-365-talent---attract"></a>Problembehandlungsintegration mit LinkedIn und Microsoft Dynamics 365 Talent: Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Verwenden Sie die folgenden Informationen, um Probleme zu beheben, die Sie möglicherweise haben, wenn Sie versuchen, Stellen auf LinkedIn von Microsoft Dynamics 365 Talent: Attract zu veröffentlichen.
 
@@ -42,18 +42,18 @@ Wenn Sie Schwierigkeiten bei der Anmeldung zu LinkedIn von Attract haben, versuc
 
 Wenn Ihre Stelle nicht auf LinkedIn angezeigt wird nach 24 Stunden, versuchen Sie diese Schritte aus:
 
-1. Stellen Sie sicher, dass die LinkedIn-Unternehmenskennungszuordnungen korrekt mit Ihrer LinkedIn-Unternehmensseite verknüpft sind und ordnungsgemäß im Attract Admin Center eingegeben wurden. Weitere Informationen dazu, wie LinkedIn-Einstellungen im Administratorcenter geändert werden, finden Sie unter  [Integration mit LinkedIn einstellen](attract-admin-linkedin.md). Weitere Informationen zur LinkedIn Unternehmungskennungen, finden Sie unter [Ihre LinkedIn-Unternehmenskennung der LinkedIn-Stellenbörse zuordnen - häufig gestellte Fragen](https://www.linkedin.com/help/linkedin/answer/98972).
+1. Stellen Sie sicher, dass die LinkedIn-Unternehmenskennungszuordnungen korrekt mit Ihrer LinkedIn-Unternehmensseite verknüpft sind und ordnungsgemäß im Attract Admin Center eingegeben wurden. Weitere Informationen dazu, wie LinkedIn-Einstellungen im Admin Center geändert werden, finden Sie unter [Einrichten der Integration mit LinkedIn für Microsoft Dynamics 365 Talent - Attract](attract-admin-linkedin.md). Weitere Informationen zur LinkedIn Unternehmungskennungen, finden Sie unter [Ihre LinkedIn-Unternehmenskennung der LinkedIn-Stellenbörse zuordnen - häufig gestellte Fragen](https://www.linkedin.com/help/linkedin/answer/98972).
 2. Überprüfen Sie die Stellendetails auf LinkedIn, um zu überprüfen, ob die Adresse abgeschlossen ist. Um eine Stelle erfolgreich zu veröffentlichen, muss LinkedIn mindestens den Ort und das Land bzw. die Region der Stelle haben.
 3. Stellen Sie sicher, dass die Stelle kein Duplikat einer Stelle ist, die bereits auf LinkedIn veröffentlicht wurde. LinkedIn veröffentlicht keine Stellen, die entweder Duplikate von Premium Stellen oder begrenzten Listen aus einer anderen Quelle sind. Überprüfen Sie, ob eine andere Person in Ihrem Unternehmen nicht bereits manuell die Stelle veröffentlicht hat.
 
 ## <a name="see-also"></a>Siehe auch
 
-[LinkedIn-FAQ](./attract-linkedin-faq.md)
+[Attract Integration mit LinkedIn FAQ](./attract-linkedin-faq.md)
 
-[Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Attract](./attract-post-jobs-to-linkedin.md)
+[Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
-[Kandidaten suchen mithilfe von LinkedIn Recruiter](./attract-linkedin-recruiter.md)
+[Kandidaten mithilfe von LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract anwerben](./attract-linkedin-recruiter.md)
 
-[Stelle erstellen](./creating-jobs-attract.md)
+[Erstellen, Genehmigen und Buchen von Aufträgen in Attract](./creating-jobs-attract.md)
 
-[Probleme mit der Integration mit LinkedIn](./attract-troubleshoot-linkedin.md)
+[Problembehandlungsintegration mit LinkedIn und Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)

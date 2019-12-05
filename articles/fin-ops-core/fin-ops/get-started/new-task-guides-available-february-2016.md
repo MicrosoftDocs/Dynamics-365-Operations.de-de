@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b220dfc90d4b850c774ff638c5b766f650dcef9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d4c912e8364a2503b98e511cbf22884528e467f0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190947"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811625"
 ---
 # <a name="new-task-guides-february-2016"></a>Neuer Aufgabenleitfaden verfügbar (Februar 2016)
 
@@ -32,7 +32,7 @@ Diese Themen führen die Aufgabenleitfäden auf, die auf den Microsoft BPM Bibli
 
 ## <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der (Februar 2016) APQC Unified-Bibliothek für Microsoft Dynamics AX
 
-Die (Februar 2016) APQC Unified-Bibliothek enthält Aufgabenleitfäden für die Hilfe bei der Dynamics AX 7.0.0-Version. Wenn Sie lokalisierte Versionen von Aufgabenleitfäden benötigen, finden Sie diese in der (Mai 2016) APQC Unified-Bibliothek für Microsoft Dynamics AX. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die (Februar 2016) APQC Unified-Bibliothek enthält Aufgabenleitfäden für die Hilfe bei der Dynamics AX 7.0.0-Version. Wenn Sie lokalisierte Versionen von Aufgabenleitfäden benötigen, finden Sie diese in der (Mai 2016) APQC Unified-Bibliothek für Microsoft Dynamics AX. Weitere Informationen zur Anbindung des Hilfesystems an eine Aufgabenleitfadenbibliothek finden Sie unter [Hilfesystem](help-overview.md).
 
 ### <a name="accounts-payable"></a>Kreditorenkonten
 

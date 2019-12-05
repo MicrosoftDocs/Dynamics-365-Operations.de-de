@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Prozessvorlage in Attract
-description: Dieses Thema enthält Informationen darüber, wie eine Prozessvorlage in Attract erstellt wird.
+title: Legen Sie eine Vorlage für den Einstellungsprozess in Attract an.
+description: In diesem Thema finden Sie Informationen darüber, wie Sie eine Vorlage für einen Einstellungsprozess in Attract anlegen.
 author: andreabichsel
 manager: AnnBe
 ms.date: 10/15/2017
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: AX 8.1
-ms.openlocfilehash: 533b9abd3d57c5bf8f3d9da85020c86012436f2f
-ms.sourcegitcommit: dd991154231280aff9c9c5799e42799e2bfc02fb
+ms.openlocfilehash: 82046d43cf7366b760c140bdb8b017337b4f41da
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622717"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832557"
 ---
-# <a name="create-a-process-template-in-attract"></a>Erstellen einer Prozessvorlage in Attract
+# <a name="create-a-hiring-process-template-in-attract"></a>Legen Sie eine Vorlage für den Einstellungsprozess in Attract an.
 
 [!include [banner](includes/banner.md)]
 
@@ -48,7 +48,7 @@ Administratoren, Personalverantwortliche und Manager können Prozessvorlagen ers
 > [!NOTE]
 > Phasennamen sind für Kandidaten auf der Seite **Bewerbungsstatus** sichtbar. Sie sollten diesen Tatsache berücksichtigen, wenn Sie Namen für Phasen auswählen.
 
-Weitere Informationen über Aktivitäten finden Sie unter [Einstelungsaktivitäten in Attract](./activities-attract.md).
+Weitere Informationen zu Aktivitäten finden Sie unter [Aktivitäten in Einstellungsprozessen](./activities-attract.md).
 
 Folgen Sie diesen Schritten, um eine Einstellungsvorlage zu erstellen.
 

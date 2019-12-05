@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e022fbf182da9a07fe20e5bebdd99cbff3d9c90
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248928"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813361"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dieser Artikel gibt Informationen zu Kaufverträge. Ein Kaufvertrag ist ein Vertrag, der eine Organisation bindet, eine angegebene Menge oder einen Betrag zu kaufen, indem sie mehrere Bestellungen tätigt. Für diese Zusage erhält der Käufer Sonderpreise und Rabatte. 
 
@@ -80,6 +81,9 @@ Wenn Sie eine Bestellung erstellen, können Sie einen Kaufvertrag für sie über
 Sie können einen Kaufvertrag auswählen, wenn Sie eine Bestellung erstellen. Sie können einen Kaufvertrag nicht aktivieren, nachdem die Bestellung erstellt wurde.  
 In einigen Fällen, in denen Kaufverträge indirekt erstellt werden, können Sie steuern, ob Supply Chain Management automatisch nach gültigen Kaufverträgen sucht. Dies kann beispielsweise ratsam sein, wenn Sie geplante Einkaufsbestellungen automatisch umwandeln oder Bestellungen erstellen, die auf Aufträgen basieren.
 
+## <a name="matching-policy-on-purchase-agreements"></a>Zuordnungsrichtlinie zu Kaufverträgen
+Sie können eine Zeilenabgleichsrichtlinie auf dem Kopf des Kaufvertrags definieren. Diese Zeilenabgleichsrichtlinie respektiert die Zeilenabgleichsrichtlinie für Kreditorenparameter, wenn das Feld **Überschreiben der Abgleichsrichtlinie zulassen** auf der Seite **Abgleich der Kreditorenparameter** (auf der Seite **Preis- und Mengenabgleich** Inforegister) auf **Höher als die Unternehmensrichtlinie** gesetzt ist. Belege, die sich auf den Kaufvertrag beziehen, verwenden die Zeilenabgleichsrichtlinie, die im Kopf des Kaufvertrags definiert ist, sofern in der entsprechenden Position, Position und Lieferant oder in der Einkaufsrichtlinie der Kategorie nichts anderes angegeben ist.
+
 ## <a name="purchase-agreements-and-intercompany-trade"></a>Kaufverträge und Intercompany-Handel
 Intercompany-Handelsbeziehungen können zwischen Kreditorenkonten und Debitorenkonten erstellt werden, die zu verschiedenen juristischen Personen gehören. Wenn ein Auftrag oder eine Bestellung für eine der Parteien erstellt wird, wird eine Intercompany-Auftragskette erstellt. In der Auftragskette werden der Auftrag und die Bestellung in den entsprechenden juristischen Personen erstellt.  
 
@@ -93,9 +97,9 @@ Sie können Finanzdimensionen in Dokumentüberschriften oder einzelne Positionen
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Erstellen eines Kaufvertrags (Aufgabenleitfaden)](tasks/create-purchase-agreement.md)
+[Kaufvertrag erstellen](tasks/create-purchase-agreement.md)
 
-[Erstellen eines Freigabeauftrags für Einkauf aus einem Kaufvertrag (Aufgabenleitfaden)](tasks/create-purchase-release-order-purchase-agreement.md)
+[Einen Freigabeauftrag für den Einkauf aus einem Kaufvertrag erstellen](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 

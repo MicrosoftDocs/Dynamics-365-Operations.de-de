@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4e9fe8f78121428770e6516159f5eceb6976c4c9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cdfa9ed24d0456d9beaec03ebac89098131d0675
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181794"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771141"
 ---
 # <a name="financial-reporting"></a>Finanzberichterstellung
 
@@ -47,7 +47,7 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 | Komponente        | Funktionen | Weitere Informationen: |
 |------------------|-----------|------------------------|
 | Berichts-Designer  | Erstellen Sie Berichtsbausteine, die kombiniert werden können, um einen Bericht zu definieren und zu generieren. Der Berichts-Assistent führt weniger erfahrene Benutzer durch den Designprozess. Erfahrene Benutzer können neue Berichtsbausteine erstellen oder vorhandene Bausteine den Anforderungen entsprechend ändern. | |
-| Berichtszeitpläne | Planen Sie einen einzelnen Bericht oder eine Gruppe von Berichten so, dass sie regelmäßig generiert werden. | [Finanzbericht generieren](generate-financial-report.md) |
+| Berichtszeitpläne | Planen Sie einen einzelnen Bericht oder eine Gruppe von Berichten so, dass sie regelmäßig generiert werden. | [Finanzberichte generieren](generate-financial-report.md) |
 
 ## <a name="features"></a>Funktionen
 <table>
@@ -96,4 +96,4 @@ Die folgenden Komponenten der Finanzberichterstellung erleichtern das Erstellen,
 </table>
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Finanzbericht generieren](generate-financial-report.md)
+[Finanzberichte generieren](generate-financial-report.md)

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 731b6a61bd78388f3db0a7007478e3a5e9629a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181426"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771282"
 ---
 # <a name="generate-printable-fti-forms"></a>Generieren von druckbaren FTI-Formularen
 
@@ -41,7 +41,7 @@ Neben der vorhandenen Funktion zum Generieren druckbarer FTR-Formulare mithilfe 
 Als Teil der benutzerdefinierten Lösung für druckbare FTR-Formulare müssen Sie eine Reihe von EB-Konfigurationen erstellen.
 
 ### <a name="configure-the-er-data-model"></a>Das EB-Datenmodell konfigurieren
-Ihre Anwendung muss die EB-Datenmodellkonfiguration umfassen, die ein Datenmodell enthält, das die Geschäftsdomäne für die Debitorenfakturierung beschreibt. Als Anforderung muss der Name des Datenmodells **CustomersInvoicing** sein. Informationen darüber, wie EB-Datenmodelle entworfen werden, finden Sie unter [Domänenspezifisches Datenmodell für elektronische Berichterstellung (EB) erstellen](tasks/er-design-domain-specific-data-model-2016-11.md).
+Ihre Anwendung muss die EB-Datenmodellkonfiguration umfassen, die ein Datenmodell enthält, das die Geschäftsdomäne für die Debitorenfakturierung beschreibt. Als Anforderung muss der Name des Datenmodells **CustomersInvoicing** sein. Informationen zum Design von ER-Datenmodellen finden Sie unter [ER Design domänenspezifisches Datenmodell](tasks/er-design-domain-specific-data-model-2016-11.md).
 
 ### <a name="configure-the-er-model-mapping"></a>Die EB-Modellzuordnung konfigurieren
 Ihre Anwendung muss die EB-Modellzuordnung für das Datenmodell „CustomersInvoicing” enthalten. Die Modellzuordnung kann entweder die EB-Datenmodellkonfiguration oder die EB-Modellzuordnungskonfiguration sein. Allerdings muss der Name des Stammdeskriptors der Modellzuordnung **FreeTextInvoice** lauten.
@@ -62,7 +62,7 @@ Die Zuordnung muss die folgenden Datenquellen enthalten:
 
 Die Details der Anwendungsintegration mit dem EB-Framework können in der Klasse **ERPrintMgmtReportFormatSubscriber** (EB-Anwendungssuite-Integrationsmodell) im Quellcode der Anwendung gefunden werden.
 
-Weitere Informationen zum Entwurf von EB-Modellzuordnungen finden Sie unter [Modellzuordnungen definieren und Datenquellen für die elektronische Berichterstellung (EB) auswählen](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
+Weitere Informationen zum Design von ER-Modell-Mappings finden Sie unter [Definieren von ER-Modellzuordnungen und Auswählen von Datenquellen](tasks/er-define-model-mapping-select-data-sources-2016-11.md).
 
 ### <a name="configure-the-er-format"></a>Das EB-Format konfigurieren
 In Ihrer Anwendungsinstanz müssen Sie die EB-Formatkonfiguration haben, die verwendet wird, um FTR-Formulare zu generieren. 
@@ -70,7 +70,7 @@ In Ihrer Anwendungsinstanz müssen Sie die EB-Formatkonfiguration haben, die ver
 > [!NOTE]
 > Diese Formatkonfiguration muss für das CustomersInvoicing-Datenmodell erstellt werden, und sie muss die Modellzuordnung verwenden, die den Stammdeskriptor **FreeTextInvoice** hat.
 
-Informationen darüber, wie EB-Formate konfiguriert werden, finden Sie unter [Eine Formatkonfiguration zur elektronischen Berichterstellung (EB) erstellen](tasks/er-format-configuration-2016-11.md). Informationen darüber, wie EB-Formate entworfen werden, um Berichte im OpenXML-Format zu generieren, finden Sie unter [Eine Konfiguration zum Generieren von Berichten im OpenXML-Format zur elektronischen Berichterstellung (EB) entwerfen](tasks/er-design-reports-openxml-2016-11.md).
+Informationen zur Konfiguration von ER-Formaten finden Sie unter [ER Erstellen einer Formatkonfiguration (November 2016)](tasks/er-format-configuration-2016-11.md). Informationen zum Entwerfen von ER-Formaten zur Generierung von Berichten im OpenXML-Format finden Sie unter [ER Entwerfen einer Konfiguration zur Generierung von Berichten im OPENXML-Format (November 2016)](tasks/er-design-reports-openxml-2016-11.md).
 
 ## <a name="configure-print-management"></a>Druckverwaltung konfigurieren
 Um FTR-Formulare mithilfe eines EB-Frameworks zu generieren, können Sie EB-Formate in derselben Art zuweisen, wie Sie SSRS-Berichte zuweisen. Um das EB-Format allen Debitoren-FTRs zuzuordnen, wechseln Sie zu **Debitoren** \> **Einstellungen** \> **Formulare** \> **Formulareinstellungen** \> **Allgemein** \> **Druckverwaltung** \> **Freitextrechnung** \> **Original**. Um das EB-Format einem bestimmten Debitor oder einer bestimmten Rechnung zuzuordnen, führen Sie die folgenden Schritte aus.
@@ -94,7 +94,7 @@ Um FTR-Formulare zu generieren, können Sie Rechnungen entweder nach Bereich ode
 
 ![Rechnungsvorschau](media/FTIbyGER-InvoiceExcelPreview.png)
 
-Wenn Sie EB-Formate verwenden, um auf diese Weise FTR-Formulare zu drucken, werden die standardmäßigen EB-Dateiziele verwenden. Das Ziel kann nicht geändert werden. Weitere Informationen darüber, wie die EB-Ziele für EB-Formate konfiguriert werden, finden Sie unter [Elektronische Berichterstellungsziele](electronic-reporting-destinations.md).
+Wenn Sie EB-Formate verwenden, um auf diese Weise FTR-Formulare zu drucken, werden die standardmäßigen EB-Dateiziele verwenden. Das Ziel kann nicht geändert werden. Weitere Informationen zur Konfiguration der ER-Ziele für ER-Formate finden Sie unter [Elektronische Berichtsziele (ER)](electronic-reporting-destinations.md).
 
 Sie können auch FTR-Formulare generieren, wenn Sie eine FTR buchen, indem Sie **Rechnung drucken** aktivieren und **Druckverwaltungsziele verwenden** deaktivieren.
 
@@ -224,4 +224,4 @@ Der Ausdruck **Emailing.TxtToUse.Body** des Beispielformats wird für die folgen
 ![E-Mail](media/FTIbyGER-Email.PNG)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)

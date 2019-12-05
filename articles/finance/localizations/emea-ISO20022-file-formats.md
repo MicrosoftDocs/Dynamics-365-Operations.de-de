@@ -16,12 +16,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4ef97d30ca2d8a9c27ce656c82d2a415682ce075
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551222"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773430"
 ---
 # <a name="import-iso20022-files"></a>ISO20022-Dateien importieren
 
@@ -49,7 +49,7 @@ Sie müssen die folgenden Voraussetzungen erfüllen, um Bankbenachrichtigungsmel
 
     - Geben Sie in das Feld **Kundenzahlungen, Kontolängen** die Länge des Kundencodes ein, der in den ISR-Referenzen verwendet wird, oder für die automatische Identifizierung des Kunden.
     - Stellen Sie sicher, dass die Kundennummer und die Rechnungsnummer (Zahlenfolgen) nur Ziffern enthalten. Sie dürfen keine anderen Zeichen enthalten. Die Rechnungsnummer darf keine führenden Nullen haben.
-    - Geben Sie ESR, BESR und Bankleitzahl für das Bankkonto der juristischen Entität ein. Weitere Informationen finden Sie unter [ESR-Funktion der Vorversion](emea-che-esr-customer-payments-import.md), weil hier ähnliche Einstellungen erforderlich sind.
+    - Geben Sie ESR, BESR und Bankleitzahl für das Bankkonto der juristischen Entität ein. Weitere Informationen finden Sie unter [ESR-Debitorenzahlungen für Importe](emea-che-esr-customer-payments-import.md), weil hier ähnliche Einstellungen erforderlich sind.
     
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importieren der camt.054-Gutschriftanzeigedatei in das Kundenzahlungsjournal.
 1. Klicken Sie auf der Seite **Kundenzahlungserfassungspositionen** auf **Funktionen** > **Zahlungen importieren**.
@@ -127,5 +127,5 @@ Weitere Informationen über die elektronische Berichterstattung finden Sie unter
 - [Unternehmens-Bankkonten für ISO20022-Lastschriften einrichten](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
 - [Debitoren und Debitoren-Bankkonten für ISO20022-Lastschriften einrichten](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
 - [Zahlungsmethode für ISO20022-Kreditübertragung einrichten](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
-- [Zahlungsmethode für ISO20022-Direktbelastung einrichten](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Zahlungsmethode für ISO20022-Direktbelastungen einrichten](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Kreditoren und Kreditorenbankkonten für ISO20022-Überweisungen einrichten](./tasks/set-up-vendor-iso20022-credit-transfers.md)

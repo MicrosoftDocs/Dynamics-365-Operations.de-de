@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6da9447386e8e56e20507d985ebcdbfce934debd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: be641e1b2f90f4d19f7ed15e47413c0aa43d5073
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181610"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771443"
 ---
 # <a name="automate-testing-with-electronic-reporting"></a>Automatisiertes Testen mit elektronischen Berichten
 
@@ -44,8 +44,8 @@ Weitere Informationen dazu, wie Sie eine benutzerdefinierte Version eines Format
 Funktionale Poweruser können Benutzerakzeptanz- und Integrationstests erstellen, ohne Quellcode zu schreiben.
 
 - Verwenden Sie die ER-Ausgangswertefunktion, um generierte Dokumente mit Masterkopien zu vergleichen. Weitere Informationen finden Sie unter [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md).
-- Verwenden Sie die Aufgabenaufzeichnung, um Testfälle zu erfassen, und schließen Sie eine Ausgangswertebewertung ein. Weitere Informationen finden Sie unter [Aufgabenaufzeichnung](../user-interface/task-recorder.md).
-- Gruppieren von Testfällen für erforderliche Testszenarien. Weitere Informationen finden Sie unter [Erstellen von Benutzerakzeptanz-Testbibliotheken mithilfe von Aufgabenleitfäden und BPMs](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
+- Verwenden Sie die Aufgabenaufzeichnung, um Testfälle zu erfassen, und schließen Sie eine Ausgangswertebewertung ein. Weitere Informationen finden Sie unter [Ressourcen für Aufgabenaufzeichnung](../user-interface/task-recorder.md).
+- Gruppieren von Testfällen für erforderliche Testszenarien. Weitere Informationen finden Sie unter [Benutzerakzeptanztests erstellen und automatisieren](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md).
 
     - Verwenden Sie Geschäftsprozessmodellierer (BPM) in LCS , um Bibliotheken für Benutzerakzeptanztests zu erstellen.
     - Verwenden Sie BPM-Testbibliotheken, um einen Testplan zu erstellen und Suiten in Microsoft Azure DevOps Services (Azure DevOps) zu erstellen.
@@ -59,7 +59,7 @@ Funktionale Powernutzer können Benutzerakzeptanz- und Integrationstests durchf�
 
 Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgenden Voraussetzungen abgeschlossen werden:
 
-- Stellen Sie eine Topologie bereit, die Testautomatisierung unterstützt. Sie müssen Zugriff auf die Instanz dieser Topologie für die **Systemadministrator**-Rolle haben. Diese Topologie muss die Demodaten enthalten, die in diesem Beispiel verwendet werden. Weitere Informationen finden Sie unter [Bereitstellen von Topologien, die fortlaufenden Build und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md) Sie unter.
+- Stellen Sie eine Topologie bereit, die Testautomatisierung unterstützt. Sie müssen Zugriff auf die Instanz dieser Topologie für die **Systemadministrator**-Rolle haben. Diese Topologie muss die Demodaten enthalten, die in diesem Beispiel verwendet werden. Weitere Informationen finden Sie unter [Bereitstellen und Verwenden von Umgebungen, die fortlaufende und Build- und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md).
 - Um Benutzerakzeptanz- und Integrationstests automatisch zu erstellen, müssen Sie RSAT in der Topologie installieren, die Sie verwenden und in der entsprechenden Art konfigurieren. Informationen darüber, wie Sie RSAT installieren und konfigurieren, damit es mit Finance and Operations-Apps und Azure DevOps funktioniert, finden Sie unter [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357). Beachten Sie die Voraussetzungen für die Verwendung des Tools. Die folgende Abbildung zeigt ein Beispiel der RSAT-Einstellungen. Das blaue Rechteck schließt die Parameter ein, die den Zugriff auf Azure DevOps angeben. Das grüne Rechteck schließt die Parameter ein, die den Zugriff auf die Instanz angeben.
 
     ![RSAT-Einstellungen](media/GER-Configure.png "Screenshot des Dialogfelds „RSAT-Einstellungen“")
@@ -81,7 +81,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
     - **Zahlungsmodellzuordnung 1611** ER-Modellzuordnungskonfiguration
     - **BACS (UK)**-ER-Formatkonfiguration
 
-    ![Konfigurationen für elektronische Berichterstellung](media/GER-Configurations.png "Screenshot der Konfigurationsseite in der elektronischen Berichterstellung")
+    ![Elektronische Berichtskonfigurationen](media/GER-Configurations.png "Screenshot der Konfigurationsseite in der elektronischen Berichterstellung")
 
 3. Wählen Sie die **GBSI**-Demodatunternehmen aus, das einen Land-/Regionskontext in Großbritannien hat.
 4. Kreditorenkontenparameter konfigurieren:
@@ -93,7 +93,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
         1. Legen Sie im Inforegister **Dateiformate** die Option **Generisches elektronisches Exportformat** auf **Ja** fest.
         2. Wählen Sie im Feld **Exportformatkonfiguration** **BACS (UK)** aus.
 
-    ![Seite der Zahlungsmethode](media/GER-APParameters.png "Screenshot der Seite der Zahlungsmethode")
+    ![Seite für Zahlungsmethoden](media/GER-APParameters.png "Screenshot der Seite der Zahlungsmethode")
 
     > [!NOTE]
     > Wenn Sie die abgeleitete Version dieses ER-Formats haben, die erstellt wurde, um Anpassungen zu unterstützen, können Sie diese Konfiguration in der Zahlungsmethode **Elektronisch** auswählen.
@@ -103,7 +103,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
     1. Wechseln Sie zu **Kreditorenkonten \> Zahlungen \> Zahlungserfassung**.
     2. Stellen Sie sicher, dass Sie nicht die Zahlungserfassung nicht gebucht haben.
 
-        ![Seite der Zahlungserfassung](media/GER-APJournal.png "Screenshot der Seite der Zahlungserfassung")
+        ![Seite für Zahlungserfassung](media/GER-APJournal.png "Screenshot der Seite der Zahlungserfassung")
 
     3. Wählen Sie **Positionen** aus, und geben Sie eine Position ein, die die folgenden Informationen enthält.
 
@@ -116,7 +116,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
         | Gegenkonto      | GBSI OPER       |
         | Zahlungsmethode   | Elektronisch      |
 
-    ![Seite der Kreditorenzahlung](media/GER-APJournalLines.png "Screenshot der Seite der Kreditorenzahlung")
+    ![Seite für Kreditorenzahlungen](media/GER-APJournalLines.png "Screenshot der Seite der Lieferantenzahlung")
 
 ## <a name="prepare-the-er-framework-to-test-vendor-payment-processing"></a>Bereiten Sie das ER-Framework vor, um die Kreditorenzahlungsverarbeitung zu testen
 
@@ -125,7 +125,7 @@ Bevor Sie die Aufgaben in diesem Thema abschließen können, müssen die folgend
 1. Wechseln Sie zu **Organisationsverwaltung \>Elektronische Berichterstellung \> Parameter für elektronische Berichterstellung**.
 2. Wählen Sie auf der Registerkarte **Anhänge** im Feld **Ausgangswert** **Datei** als den Dokumenttyp aus, das vom Dokumenteverwaltungs(DM)-Framework verwendet wird, um Dokumente zu behalten, die als DM-Anhänge der Ausgangswertefunktion zugeordnet sind.
 
-    ![Seite der Parameter für elektronische Berichterstellung](media/GER-ERParameters.png "Screenshot der Seite der Parameter für elektronische Berichterstellung")
+    ![Parameterseite der elektronischen Berichterstellung](media/GER-ERParameters.png "Screenshot der Seite der Parameter für elektronische Berichterstellung")
 
 ### <a name="generate-baseline-copies-of-vendor-paymentrelated-documents"></a>Generieren Sie Ausgangswertekopien von Kreditorzahlungen in Zusammenhang mit Dokumenten
 
@@ -262,7 +262,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 
     Im ER-Debug-Protokoll werden die Ergebnisse des Vergleichs im Feld **Generierter Text** angezeigt. Die Felder **Formatkomponente** und **Formatpfad, der einen Protokolleintrag verursacht hat** beziehen sich auf die Dateikomponente, mit dem die generierte Ausgabe des Ausgangswerts verglichen wurde.
 
-    ![Einträge auf der Seite der Ausführungsprotokolle für elektronische Berichterstellung](media/GER-ERDebugLog.png "Screenshot der Einträge auf der Seite der Ausführungsprotokolle für elektronische Berichterstellung")
+    ![Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle](media/GER-ERDebugLog.png "Screenshot der Einträge auf der Seite für Elektronische Berichterstellungsausführungsprotokolle")
 
 4. Der Vergleich der aktuellen Ausgabe zu den Ausgangswerten wird aufgezeichnet, indem Sie die Aufgabenaufzeichnungsoption **Überprüfen**verwenden und **Aktueller Wert** auswählen.
 
@@ -287,7 +287,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
     1. Geben Sie dem Testfall den Namen**Testen der Verarbeitung von Kreditorenzahlungen unter Verwendung des ER-Format BACS (UK)**.
     2. Fügen Sie die Datei **Recording.xml** aus dem Ordner **Verarbeiten** an, den Sie zuvor heruntergeladen haben.
 
-    ![Neue Testfälle für den ausgewählten Testplan](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot der neuen Testfälle für den ausgewählten Testplan")
+    ![Neuen Testfälle für den ausgewählten Testplan](media/GER-RSAT-DevOps-Tests-Passed.png "Screenshot der neuen Testfälle für den ausgewählten Testplan")
 
 > [!NOTE]
 > Beachten Sie die korrekte Ausführungsreihenfolge der Tests, die hinzugefügt werden.
@@ -306,7 +306,7 @@ Diese Aufgabenaufzeichnung führt die folgenden Aktivitäten aus:
 1. Wählen Sie in RSAT die Tests aus, die Sie von Azure DevOps geladen haben.
 2. Wählen Sie **Neu** aus, um RAST-Automatisierungs- und -Parameterdateien zu erstellen.
 
-    ![In RAST erstellte RSAT-Automatisierungs- und -Parameterdateien](media/GER-RSAT-RSAT-Tests-Initiated.png "Screenshort der in RAST erstellte RSAT-Automatisierungs- und -Parameterdateien")
+    ![In RAST erstellte RSAT-Automatisierungs- und -Parameterdateien](media/GER-RSAT-RSAT-Tests-Initiated.png "Screenshot der in RAST erstellten RSAT-Automatisierungs- und -Parameterdateien")
 
 ### <a name="modify-the-parameters-files"></a>Ändern der Parameterdateien
 
@@ -374,10 +374,10 @@ Daher kann die Funktion eines beliebigen ER-Formats, wie Sie gesehen haben, auto
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Aufgabenaufzeichnung](../user-interface/task-recorder.md)
+- [Ressourcen für Aufgabenaufzeichnung](../user-interface/task-recorder.md)
 - [Regression Suite Automation Tool](https://www.microsoft.com/download/details.aspx?id=57357)
-- [Erstellen von Benutzerakzeptanz-Testbibliotheken mithilfe von Aufgabenaufzeichnung und BPM](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
-- [Bereitstellen von Topologien, die fortlaufende und Build- und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md)
-- [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit ER-Ausgangswerten](er-trace-reports-compare-baseline.md)
-- [Aktualisieren Sie Ihr ER-Format durch Verwendung einer neuen Basisversion dieses Formats](tasks/er-upgrade-format.md)
-- [Importieren der ER-Konfiguration von Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+- [Benutzerakzeptanztests erstellen und automatisieren](../lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
+- [Bereitstellen und Verwenden von Umgebungen, die fortlaufende und Build- und Testautomatisierung unterstützen](../perf-test/continuous-build-test-automation.md)
+- [Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten](er-trace-reports-compare-baseline.md)
+- [ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats](tasks/er-upgrade-format.md)
+- [ER Import einer Konfiguration von Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)

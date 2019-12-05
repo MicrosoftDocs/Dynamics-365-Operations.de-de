@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8e5fd05f3114eb99b7e8b4390827d5ccd52832a
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: c527735ea65dad84c5d3d405eac2ead35d3c792d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2572202"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815364"
 ---
 # <a name="purchase-order-overview"></a>Überblick über Bestellungen
 
@@ -41,8 +41,8 @@ Die Arbeitsbereiche **Bestellungsvorbereitung** und **Bestellungszugang und Weit
 
 Der folgenden Artikel bieten einen Überblick über die verschiedenen Phasen, die eine Bestellung durchläuft:
 
--   [Bestellungserstellung](purchase-order-creation.md)
--   [Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
+-   [Bestellungen erstellen](purchase-order-creation.md)
+-   [Bestellungen genehmigen und bestätigen](purchase-order-approval-confirmation.md)
 -   [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 -   [Überblick über Kreditorenrechnungen](../../financials/accounts-payable/vendor-invoices-overview.md)
 
@@ -82,9 +82,9 @@ Das **Genehmigungsstatus**-Feld wird verwendet, wenn eine Bestellung einen Über
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Bestellungserstellung](purchase-order-creation.md)
+[Bestellungen erstellen](purchase-order-creation.md)
 
-[Genehmigen und Bestätigen von Bestellungen](purchase-order-approval-confirmation.md)
+[Bestellungen genehmigen und bestätigen](purchase-order-approval-confirmation.md)
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Unternehmensinformationen konfigurieren in Microsoft Dynamics 365 Talent: Attract'
+title: Unternehmensinformationen konfigurieren in Attract
 description: 'In diesem Thema wird erläutert, wie Unternehmensinformationen und Branding für Microsoft Dynamics 365 Talent: Attract konfiguriert werden.'
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7013065a9494cb407020de2ebcad4058dd57c6c4
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: db3ec965f3a52810d5f310697b9ed830c3abe681
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551594"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833253"
 ---
-# <a name="configure-company-information-in-microsoft-dynamics-365-talent---attract"></a>Unternehmensinformationen konfigurieren in Microsoft Dynamics 365 Talent: Attract
-[!include[banner](../includes/banner.md)]
+# <a name="configure-company-information-in-attract"></a>Unternehmensinformationen konfigurieren in Attract
+
+[!include [banner](includes/banner.md)]
 
 Das Administratorcenter in Microsoft Dynamics 365 Talent: Attract enthält Konfigurationseinstellungen, Integrationsoptionen und Einrichtungsoptionen für die Attract-Anwendung.
 
@@ -48,11 +49,11 @@ Wenn neue Funktionen hinzugefügt werden, werden Sie möglicherweise in einer ö
 
 ## <a name="template-management"></a>Vorlagenverwaltung
 
-Eine Prozessvorlage enthält alle Aktivitäten, die im Rahmen des Einrichtungsprozesses für einen Stelle einbezogen werden sollen. Ihre Organisation kann entweder erlauben, dass alle Teammitglieder oder nur Administratoren Einstellungsprozessvorlagen erstellen. Um zuzulassen, dass Teammitglieder eigene Einstellungsprozessvorlagen erstellen, schalten Sie die Vorlagenverwaltungsfunktionen ein. Weitere Informationen zu Prozessvorlagen finden Sie unter [Prozessvorlagen in Attract](./process-templates-attract.md)
+Eine Prozessvorlage enthält alle Aktivitäten, die im Rahmen des Einrichtungsprozesses für einen Stelle einbezogen werden sollen. Ihre Organisation kann entweder erlauben, dass alle Teammitglieder oder nur Administratoren Einstellungsprozessvorlagen erstellen. Um zuzulassen, dass Teammitglieder eigene Einstellungsprozessvorlagen erstellen, schalten Sie die Vorlagenverwaltungsfunktionen ein. Weitere Informationen zu Prozessvorlagen finden Sie unter [Erstellen einer Prozessvorlage in Attract](./process-templates-attract.md)
 
 ## <a name="email-template-settings"></a>E-Mail-Vorlageneinstellungen
 
-Organisationen können für verschiedene Szenarien E-Mail-Vorlagen erstellen. Sie können auswählen, dass das Kopfzeilenbild in den E-Mail-Vorlagen einbezogen wird. Die ausgewählte Kopfzeile erscheint dann in allen E-Mail-Vorlagen. In der Vorlagenfußzeile können Sie einen Link zu den Datenschutzbestimmungen und den Nutzungsbedingungen Ihrer Organisation bezüglich Kommunikation hinzufügen. Weitere Informationen finden Sie unter [E-Mail-Vorlagen in Attract](./email-templates.md).
+Organisationen können für verschiedene Szenarien E-Mail-Vorlagen erstellen. Sie können auswählen, dass das Kopfzeilenbild in den E-Mail-Vorlagen einbezogen wird. Die ausgewählte Kopfzeile erscheint dann in allen E-Mail-Vorlagen. In der Vorlagenfußzeile können Sie einen Link zu den Datenschutzbestimmungen und den Nutzungsbedingungen Ihrer Organisation bezüglich Kommunikation hinzufügen. Weitere Informationen finden Sie unter [E-Mail-Vorlagen](./email-templates.md).
 
 ## <a name="offer-process"></a>Angebotsprozess
 

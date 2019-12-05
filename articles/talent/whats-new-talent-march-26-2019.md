@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-03-26
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: d4b59183116784f44f45fddacdfa4aa954383ecd
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b23860a7eda0ec9d75cca04728b7fc11d01bf967
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023883"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812740"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-march-26-2019"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (26. März 2019)
 
@@ -75,11 +75,11 @@ In dieser Aktualisierung werden feste Vergütungspläne nun angezeigt, wenn Benu
 Mit dieser Version können Sie nun Stellendatensätze entfernen, indem Sie die Option **In Excel öffnen** in Talent verwenden.
 
 ### <a name="upgrade-to-common-data-service"></a>Upgrade auf Common Data Service
-Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im PowerApps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
+Die Fristen für das Upgrade auf Common Data Service kommen schnell näher. Melden Sie sich im Power Apps-Administratorcenter an, um zu bestimmen, ob die Datenbank aktualisiert werden muss. Weitere Informationen über die Termine und erforderlichen Schritte finden Sie unter[ Upgrade auf Common Data Service](https://docs.microsoft.com/common-data-service/upgradecds/introduction-upgrade-cds).
 
 ## <a name="in-preview"></a>Vorschau
 
-Informationen zum Aktivieren von Vorschaufunktionen, finden Sie unter [Zugriffsvorschaufunktionen im Talent](./access-preview-feature.md).
+Informationen zum Aktivieren von Vorschaufunktionen finden Sie unter [Zugriff auf Vorschaufunktionen in Microsoft Dynamics 365 Talent](./access-preview-feature.md).
 
 ### <a name="allow-reason-codes-to-be-specified-on-leave-types"></a>Ermöglichen Sie, dass Ursachencodes für Sonderurlaubstypen angegeben werden können
 Organisationen brauchen möglicherweise zusätzliche Informationen zu den betreffenden Freizeitanforderungen. Um diese Informationen zu erhalten, müssen die Mitarbeiter die Ursachencode für ihre Freizeitanforderungen einbeziehen. Mit dieser Aktualisierung können Sie nun die Ursachencodes für Sonderurlaubstypen definieren und Mitarbeiter aktivieren, damit sie einen Ursachencode für ihre Freizeitanforderungen auszuwählen können.

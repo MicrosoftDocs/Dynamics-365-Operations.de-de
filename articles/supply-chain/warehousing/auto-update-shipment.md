@@ -3,7 +3,7 @@ title: Automatische Aktualisierung von Lieferungen
 description: Dieses Thema bietet einen Überblick über Funktionen, die automatische Aktualisierungen für Lieferungen bereitstellen.
 author: josaw1
 manager: AnnBe
-ms.date: 08/13/2019
+ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,16 +18,15 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 160ad55a12d13fdb64e55effaabb1848179e71cf
-ms.sourcegitcommit: c35dfce2c0605d6f46365ce5d985c22187d21761
+ms.openlocfilehash: e42e7f19311adee7cc48f0ad0b59a4d0d54df9aa
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "1986116"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773542"
 ---
 # <a name="shipment-auto-updates"></a>Automatische Aktualisierung von Lieferungen
 
-[!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
 Die Funktion zur automatischen Aktualisierung von Lieferungen aktualisiert automatisch die Mengen (Erhöhungen und Senkungen) in einer Ladungsposition, die einer Lieferung zugeordnet ist, nachdem die Ladung an einen Lagerort geschickt wurde. Diese Funktion bleibt aktiviert, bis die Ladungsposition in der Lieferung oder Ladung in einer Welle verarbeitet wird. Wenn sie verwendet wird, können Auftragsaktualisierungen den Lagerort automatisch durchfließen, ohne manuelle Aktivitäten festlegen zu müssen, bis Lagerortarbeit erstellt wurde.

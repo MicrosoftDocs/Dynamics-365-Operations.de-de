@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a13223fb1034e5902061788cd9ea9cec55d69dc7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190050"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812385"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Übersicht über Unternehmen und Organisationshierarchien
 
@@ -67,4 +67,4 @@ Organisationshierarchien werden eingerichtet, um unterschiedliche Perspektiven d
 
 Jede Hierarchie wird einem Kostenträger zugewiesen. Der Zweck der Hierarchie bestimmt die Organisationstypen, die der Hierarchie hinzugefügt werden können. Der Zweck definiert auch die Anwendungsszenarien, in denen die Hierarchie verwendet werden kann.
 
-Organisationen in einer Hierarchie können Parameter, Richtlinien und Buchungen gemeinsam nutzen. Eine Organisation kann die Parameter der übergeordneten Organisation erben oder überschreiben. Gemeinsam genutzte Masterdaten, z. B. Produkte und Adressbücher, betreffen jedoch die gesamte Organisation und können für einzelne Organisationen nicht überschrieben werden. Das Erstellen von Organisationen und Hierarchien erfordert eine sorgfältige Planung. Weitere Informationen finden Sie unter [Die Organisationshierarchie planen](plan-organizational-hierarchy.md).
+Organisationen in einer Hierarchie können Parameter, Richtlinien und Buchungen gemeinsam nutzen. Eine Organisation kann die Parameter der übergeordneten Organisation erben oder überschreiben. Gemeinsam genutzte Masterdaten, z. B. Produkte und Adressbücher, betreffen jedoch die gesamte Organisation und können für einzelne Organisationen nicht überschrieben werden. Das Erstellen von Organisationen und Hierarchien erfordert eine sorgfältige Planung. Weitere Informationen finden Sie unter [Planen Sie Ihre Organisationshierarchie](plan-organizational-hierarchy.md).

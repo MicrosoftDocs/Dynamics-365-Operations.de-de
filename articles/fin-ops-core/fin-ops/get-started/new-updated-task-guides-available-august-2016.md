@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: c7675ca0ef2f2477d510c956e63d824a5e6b0980
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8747df5513cab16ee3b609f405740e660753e086
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178036"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812531"
 ---
 # <a name="new-or-updated-task-guides-august-2016"></a>Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)
 
@@ -32,7 +32,7 @@ Dieses Thema führt neue oder aktualisierte Aufgabenleitfäden auf, die für die
 
 ## <a name="task-guides-in-the-august-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (August 2016 – alle Sprachen)
 
-Die APQC Unified-Bibliothek (August 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics AX – Plattformupdate 2 (August 2016), Dynamics AX-Anwendungsupdate vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die APQC Unified-Bibliothek (August 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics AX – Plattformupdate 2 (August 2016), Dynamics AX-Anwendungsupdate vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Releases finden Sie unter [Was ist neu oder geändert auf der Homepage von Finance and Operations](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zum Verbinden des Hilfesystems mit einer Aufgabenleitfadenbibliothek finden Sie unter [Hilfesystem](help-overview.md).
 
 ### <a name="data-access"></a>Datenzugriff
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08d128e3006d019fa19b52f320b262ae49105e5d
-ms.sourcegitcommit: ddd66bd329e76d88178032566b0a57637159b537
+ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2666829"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770665"
 ---
 # <a name="sales-tax-overview"></a>Mehrwertsteuerüberblick
 
@@ -38,7 +38,7 @@ Das Mehrwertsteuerframework unterstützt verschiedene Varianten von indirekten S
 
 Das folgende Diagramm zeigt die Entitäten der Steuereinrichtung und wie sie zugeordnet sind.
 
-[![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![-Diagramm, das einen Überblick über die Steuerstruktur gibt](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 Für jede Mehrwertsteuer, die ein Unternehmen berechnet, muss ein Mehrwertsteuercode definiert werden. Ein Mehrwertsteuercode speichert die Steuersätze und die Berechnungsregeln für die Mehrwertsteuer. 
 
@@ -55,7 +55,7 @@ In der folgenden Tabelle beschreibt die Entitäten und die Reihenfolge für die 
 | Einrichtungsaktivität                                                  | Erforderlich/Optional und Beschreibung                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Hauptkonten erstellen.                                           | Erforderlich. Vor dem Einrichten der Mehrwertsteuerfunktion müssen Sie die Hauptkonten erstellen, die das Unternehmen zum Bezahlen und Erfassen von Steuern verwendet.                                                                                                                                                                             |
-| Richten Sie Sachkontobuchungsgruppen für Mehrwertsteuer ein.                     | Erforderlich. Sachkontobuchungsgruppen definieren die Hauptkonten für die Erfassung und Zahlung von Mehrwertsteuern.   Weitere Informationen finden Sie unter [Einrichten der Sachkontengruppen für Mehrwertsteuer](tasks/set-up-ledger-posting-groups-sales-tax.md)                                                                                 |
+| Richten Sie Sachkontobuchungsgruppen für Mehrwertsteuer ein.                     | Erforderlich. Sachkontobuchungsgruppen definieren die Hauptkonten für die Erfassung und Zahlung von Mehrwertsteuern.   Weitere Informationen finden Sie unter [Sachkontobuchungsgruppen für Umsatzsteuer einrichten](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
 | Einrichten von Mehrwertsteuerbehörden.                                   | Erforderlich. Mehrwertsteuerbehörden sind die Entitäten, denen Steuern gemeldet werden und an die abgeführt werden muss.    Weitere Informationen finden Sie unter [Einrichten der Mehrwertsteuerbehörden](tasks/set-up-sales-tax-authorities.md)                                                                                                                                          |
 | Einrichten von Mehrwertsteuer-Abrechnungszeiträumen.                            | Erforderlich. Mehrwertsteuer-Abrechnungszeiträume enthalten Informationen darüber, wann und wie oft Mehrwertsteuer gemeldet und abgeführt werden muss. Sie werden zu einer Mehrwertsteuerbehörde zugeordnet.                                                                                                                                                       |
 | Einrichten von Mehrwertsteuer-Erklärungscodes.                               | Diese Angabe ist optional. Mehrwertsteuer-Erklärungscodes können zu Mehrwertsteuercodes zugeordnet werden, um Beträge für mehrere Mehrwertsteuercodes unter einem Mehrwertsteuer-Erklärungscode zu melden. Weitere Informationen finden Sie unter [Einrichten der Mehrwertsteuer-Berichterstattungscodes](tasks/set-up-sales-tax-reporting-codes.md)                                         |

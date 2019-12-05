@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8f1f8ed86af5b9fcb6ede91621b9227115bd2b59
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9d307ceae85773feb58d11e575df27e74b065cd3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175706"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773448"
 ---
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
@@ -263,11 +263,11 @@ Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber d
 |----------------|---------------------------------------------------------------------------------|
 | Österreich        |  [MwSt-Berichtdetails für Österreich](emea-aut-vat-statement-details.md)         |
 | Belgien        |                                                                                 |
-| Tschechische Republik |  [MwSt.-Berichtsdetails für die Tschechische Republik](emea-cze-vat-statement-details.md)   |
+| Tschechische Republik |  [MwSt.-Abrechnung für die Tschechische Republik](emea-cze-vat-statement-details.md)   |
 | Estland        |  [MwSt-Berichtadetails für Estland](emea-est-vat-statement-details.md) |
 | Finnland        |                                                                                 |
 | Deutschland        |                                                                                 |
-| Italien          | [MwSt-Berichtdetail für Italien](emea-ita-vat-statements-details.md)            |
+| Italien          | [MwSt-Abrechnungsdetails für Italien](emea-ita-vat-statements-details.md)            |
 | Lettland         | [MwSt-Berichtdetail für Lettland](emea-lva-vat-statement-details.md)           |
 | Litauen      | [MwSt-Berichtdetail für Litauen](emea-ltu-vat-statement-details.md)         |
 | Niederlande    |                                                                                 |

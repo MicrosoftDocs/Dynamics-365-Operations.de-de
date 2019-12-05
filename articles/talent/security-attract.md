@@ -1,5 +1,5 @@
 ---
-title: Sicherheit und Rollenverwaltung in Attract
+title: Setzen von Benutzerberechtigungen in Attract
 description: Dieses Thema enthält Informationen über Rollensicherheit in Microsoft Dynamics 365 Talent – Attract.
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7db2ac241db121f07eb3524c7c5c9a8f64e78537
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: efac512cfa07bb2183f06b8be45f74bef9af0767
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551425"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832697"
 ---
-# <a name="security-and-role-management-in-attract"></a>Sicherheit und Rollenverwaltung in Attract
+# <a name="set-user-permissions-in-attract"></a>Setzen von Benutzerberechtigungen in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Talent: Attract verwendet rollenbasierte Sicherheit. Das bedeutet, dass der Zugriff nicht für einzelne Benutzer, sondern für Sicherheitsrollen gewährt wird, denen Benutzer zugewiesen werden. Ein Benutzer, der einer Sicherheitsrolle zugewiesen wird, besitzt Zugriff auf eine Gruppe von Rechten, die dieser Rolle zugeordnet sind.
 
@@ -52,7 +52,7 @@ Die folgenden Abschnitte enthalten eine allgemeine Beschreibung der jeweiligen R
 
 ## <a name="administrator"></a>Administrator
 
-Benutzer, die der Rolle zugewiesen sind, können auf alle Daten in Attract zugreifen und diese ändern. Administratoren können Daten erstellen, lesen, aktualisieren und löschen. Zudem haben Sie Zugriff auf das Administratorencenter, in dem sie Attract konfigurieren und Benutzerinformationen einrichten können. Es wird empfohlen, dass mindestens eine Person der Administratorrolle zugewiesen wird. Standardmäßig wird der Umgebungsadministrator in Microsoft PowerApps als Administrator in Attract festgelegt. Wenn Sie sich für die Testversion von Attract angemeldet haben, wird die Administrator-Rolle Ihnen automatisch zugewiesen. Momentan Stellen erstellen, müssen Benutzer, der der Administratorrolle haben, die entweder Werbeoffizierrolle oder die Personalerrolle verfügen.
+Benutzer, die der Rolle zugewiesen sind, können auf alle Daten in Attract zugreifen und diese ändern. Administratoren können Daten erstellen, lesen, aktualisieren und löschen. Zudem haben Sie Zugriff auf das Administratorencenter, in dem sie Attract konfigurieren und Benutzerinformationen einrichten können. Es wird empfohlen, dass mindestens eine Person der Administratorrolle zugewiesen wird. Standardmäßig wird der Umgebungsadministrator in Microsoft Power Apps als Administrator in Attract festgelegt. Wenn Sie sich für die Testversion von Attract angemeldet haben, wird die Administrator-Rolle Ihnen automatisch zugewiesen. Momentan Stellen erstellen, müssen Benutzer, der der Administratorrolle haben, die entweder Werbeoffizierrolle oder die Personalerrolle verfügen.
 
 ## <a name="hiring-manager"></a>Zukünftiger Vorgesetzter
 

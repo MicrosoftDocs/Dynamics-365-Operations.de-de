@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 0f4c68acfe021e736c259e91a40ce7d43d401246
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552001"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812878"
 ---
 # <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Bearbeiten von Onboarding-Anleitungen und Vorlagen in Dynamics 365 Talent - Onboard
 
@@ -124,7 +124,7 @@ Um Ihre Änderungen zu pushen:
 
     - Um ein YouTube Videodatei hinzuzufügen, ziehen Sie den Artikel des zu bearbeitenden Bereichs **YouTube**, geben Sie einen Namen und eine Beschreibung für die Aktivität ein, und geben Sie die URL für die YouTube Videodatei ein.
     - Um eine Sway Präsentation oder einen Newsletter hinzufügen, ziehen Sie das Element **Sway** in den zu bearbeitenden Bereich und geben einen Namen und eine Beschreibung für die Aktivität oder die eingebettete URL für die Sway Präsentation oder den Newsletter ein.
-    - Um eine PowerApps-App hinzuzufügen, ziehen Sie den Artikel in den zu bearbeitenden Bereich **PowerApps**, geben Sie einen Namen und eine Beschreibung für die Aktivität ein, und wählen Sie entweder die PowerApps-App oder die PowerApps-App Kennung ein
+    - Um eine Microsoft Power Apps-App hinzuzufügen, ziehen Sie den Artikel in den zu bearbeitenden Bereich **Power Apps**, geben Sie einen Namen und eine Beschreibung für die Aktivität ein, und wählen Sie entweder die Power Apps-App oder die Power Apps-App Kennung ein
     - Um ein Microsoft Stream Videodatei hinzuzufügen, ziehen Sie den Artikel des zu bearbeitenden Bereichs **Microsoft Stream**, geben Sie einen Namen und eine Beschreibung für die Aktivität ein, und geben Sie die URL für die Microsoft Stream Videodatei ein.
     - Um ein Microsoft Forms-Formular hinzuzufügen, ziehen Sie den Artikel in den zu bearbeitenden Bereich **Microsoft Forms**, geben Sie einen Namen und eine Beschreibung für die Aktivität, die URL für das Microsoft Forms-Formular ein, und geben Sie die Größe des Bildschirmbereichs an.
     - Um einen iFrame hinzuzufügen, der Internetinhalt enthält, ziehen Sie das Element **Web Inhalt (iFrame)** in den zu bearbeitenden Bereich, geben einen Namen und eine Beschreibung ein, geben die URL für den Internetinhalt ein und definieren die Größe des Bildschirmbereichs.
@@ -186,6 +186,6 @@ Um einen Kontakt zu bearbeiten, wählen Sie die Schaltfläche **Bearbeiten** (St
 ### <a name="see-also"></a>Siehe auch
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
-- [Neuerungen](./whats-new.md)
-- [Versionshinweise](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Support anfordern](./talent-support.md)
+- [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
+- [Release-Pläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

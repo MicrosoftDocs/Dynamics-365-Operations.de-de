@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 2a5c3e49f09bf4f1f90449db10d439f563ecc2c0
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: cf1c4cbc18728b6094f862792d20a893b2a8d6ea
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249836"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815271"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Übersicht über die Integration in Microsoft Dynamics 365 Field Service
 
@@ -41,9 +41,9 @@ Die erste Phase der Integration zwischen Field Service und Supply Chain Manageme
 
 Die erste Phase der Integration zwischen Field Service und Supply Chain Management ermöglicht die Synchronisierung der folgenden Elemente:
 
-- [Produkte in Supply Chain Management mit Produkten in Field Service, die Produkttypinformationen enthalten](field-service-product.md)
-- [Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management](field-service-work-order.md)
-- [Rechnungen in Field Service mit Freitextrechnungen in Supply Chain Management synchronisieren](field-service-invoice.md)
+- [Produkte von Supply Chain Management mit Produkten in Field Service synchronisieren](field-service-product.md)
+- [Arbeitsaufträge in Field Service mit Aufträgen in Supply Chain Management synchronisieren](field-service-work-order.md)
+- [Vereinbarungsrechnungen in Field Service mit Freitextrechnungen in Supply Chain Management synchronisieren](field-service-invoice.md)
 
 Um ein Beispiel zu sehen, wie Sie einen Arbeitsauftrag zwischen Field Service und Supply Chain Management synchronisieren können, sehen Sie sich das kurze YouTube Video [Arbeitsaufträge zwischen Microsoft Dynamics 365 Integration ](https://www.youtube.com/watch?v=46ylO7raZAo) an.
 

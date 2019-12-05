@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 265e4dd4be63f70a29e46b6acf7db514feb599a4
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652171"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813430"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Bestellungen genehmigen und bestätigen
 
@@ -90,11 +90,11 @@ Wenn eine Bestellung im Änderungsmanagement ist, muss jede Änderung, z. B. ein
 
 [Übersicht über Bestellungen](purchase-order-overview.md)
 
-[Bestellungserstellung](purchase-order-creation.md)
+[Bestellungen erstellen](purchase-order-creation.md)
 
 [Produkteingang für Bestellungen](product-receipt-against-purchase-orders.md)
 
-[Überblick über Kreditorenrechnungen](../../finance/accounts-payable/vendor-invoices-overview.md)
+[Kreditorenrechnungen – Übersicht](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 08/19/2019
+ms.date: 11/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: d5e9f8e4d154e5f56ee7ceae666cd935d6ceb460
-ms.sourcegitcommit: f93ead945afe5ae18706c66bce6e64a6b57aac50
+ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
+ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "1887134"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2696638"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -181,7 +181,7 @@ Derzeit werden die Funktionen für Artikelgewichtsmarkierungen nur als Teil der 
 - Wenn ein geänderter Bestandsstatus mithilfe der Lagerort-App verarbeitet wird.
 - Wenn eine Lagerort-Umlagerung mithilfe der Lagerort-App ausgeführt wird.
 - Wenn eine ein- und ausgehende Regulierung über die Lagerort-App verarbeitet wird.
-- Wenn die Entnahmearbeit für Verkaufsaufträge und Umlagerungsaufträge verarbeitet wird. (Beachten Sie, dass Artikelgewichtsmarkierungen nicht für die Entnahme von Produktionskomponenten erfasst werden können.)
+- Wenn die Entnahmearbeit für Verkauf, Umlagerung und Produktionsauftragspositionen verarbeitet wird.
 - Wenn entnommene Mengen aus Ladungspositionen reduziert werden, unabhängig davon, ob Container verwendet werden.
 - Wenn Produkte an einer Verpackungsstation in Container gepackt werden.
 - Wenn Container neu geöffnet werden.

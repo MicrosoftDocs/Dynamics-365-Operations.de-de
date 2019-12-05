@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d1229c89f43f9ded955dadf2f4d87825c9ab4e71
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182576"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769854"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)
 
@@ -36,7 +36,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfig
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Laden Sie die Zahlungsdatenmodell-Konfiguration hoch
 1. Gehen Sie im Navigationsbereich zu **Module > Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung**.
-2. Markieren Sie in der Liste den Konfigurationsanbieter für das Beispielunternehmen „Litware, Inc.“. Wenn Sie diesen Konfigurationsanbieter nicht finden, müssen Sie zunächst die Schritte unter [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+2. Markieren Sie in der Liste den Konfigurationsanbieter für die Musterfirma Litware, Inc. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte unter [Konfigurationsanbieter anlegen ausführen und ihn als aktiv](er-configuration-provider-mark-it-active-2016-11.md) markieren.
 3. Wählen Sie **Als aktiv festlegen**.
 4. Wählen Sie **Repositorys** aus. Wählen Sie ein Repository für den Typ „Betriebliche Ressource” aus, falls verfügbar. Wenn es verfügbar ist, überspringen Sie die folgenden Schritte zur Erstellung eines neuen Repository.  
 5. Wählen Sie **Hinzufügen**, um das Dropdown-Dialogfeld zu öffnen.

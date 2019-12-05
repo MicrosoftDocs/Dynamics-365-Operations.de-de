@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f238afadfa064e972ef11a95fdad073f63ff20c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 4cf65826279f0741ce5abc89d8f15bfec98c83ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250667"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813683"
 ---
 # <a name="monitor-forecast-accuracy"></a>Planungsgenauigkeit überwachen
 
@@ -44,7 +44,7 @@ Supply Chain Management berechnet die folgenden Typen der Planungsgenauigkeit:
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Autorisieren der angepassten Planung](authorize-adjusted-forecast.md)
+[Eine angepasste Planung autorisieren](authorize-adjusted-forecast.md)
 
 [Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.](remove-historical-outliers-calculating-demand-forecast.md)
 

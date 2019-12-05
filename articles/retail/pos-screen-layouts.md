@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 4852ec9b347f119a1007b63476b8609a3e38ba57
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c4636f5a023786e3871eb5d907e2e9546181827a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025270"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811779"
 ---
 # <a name="screen-layouts-for-the-point-of-sale-pos"></a>Bildschirmlayouts für die Verkaufsstelle (POS)
 
@@ -171,7 +171,7 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
 
     - **Aktivität** – In der Liste der POS-Arbeitsgängen, wählen Sie den entsprechenden Arbeitsgang aus, der aufgerufen wird, wenn im POS auf die Schaltfläche geklickt wird.
 
-        Für die Liste der unterstützten POS-Arbeitsgänge gehen Sie zu [POS-Vorgängen, online oder offline](pos-operations.md).
+        Eine Liste der unterstützten POS-Operationen finden Sie unter [Online- und Offline-Point-of-Sale (POS)-Operationen](pos-operations.md).
 
     - **Aktivitätsparameter** – Einige zusätzliche Parameter der POS-Vorgänge Verwendung zusätzliche Parameter, wenn sie aufgerufen werden. Beispielsweise für das Hinzufügen von Arbeitsgängen können Benutzer das Produkt wählenn, das hinzugefügt werden soll..
     - **Text auf Schaltfläche** - Definieren Sie den Text, der auf der Schaltfläche im POS angezeigt werden soll.
@@ -193,4 +193,4 @@ Mit dem Schaltflächenrasterdesigner können Sie Schaltflächenraster konfiguri
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Den Retail POS-Layout-Designer installieren](install-pos-layout-designer.md)
+[Den Retail-Verkaufstellen-(POS)-Layout-Designer installieren](install-pos-layout-designer.md)

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: fda94e77480b9d9455fc0e214e43772ab2921f2d
-ms.sourcegitcommit: ffc37f7c2a63bada3055f37856a30424040bc9a3
+ms.openlocfilehash: a987e75834ddde486421a425a621e66f0b6e063f
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1577899"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811164"
 ---
 # <a name="set-up-the-fiscal-integration-for-retail-channels"></a>Steuerintegration für Retail Channel einrichten
 
@@ -210,7 +210,7 @@ Die Optionen für die Fehlerbehandlung, die in der Steuerintegration zur Verfüg
 
 Um die Ausführung von X/Z-Berichten aus der POS heraus zu ermöglichen, sollten Sie einem POS-Layout neue Schaltflächen hinzufügen.
 
-- Befolgen Sie auf der Seite **Schaltflächenraster** die Anweisungen in [Hinzufügen einer benutzerdefinierten Schaltfläche zum POS-Layout in der Retail Zentralverwaltung](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), um den Designer zu installieren und ein POS-Layout zu aktualisieren.
+- Folgen Sie auf der Seite **Schaltflächenraster** den Anweisungen unter [POS-Operationen zu POS-Layouts hinzufügen, indem Sie den Button Grid Designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) verwenden, um den Designer zu installieren und ein POS-Layout zu aktualisieren.
 
     1. Wählen Sie das zu aktualisierende Layout aus. 
     2. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche **Steuer X drucken** fest.
@@ -221,7 +221,7 @@ Um die Ausführung von X/Z-Berichten aus der POS heraus zu ermöglichen, sollten
 
 Um die manuelle Ausführung einer aufgeschobenen steuerlichen Erfassung zu aktivieren, können Sie einer Schaltfläche ein neues POS-Layout hinzufügen.
 
-- Befolgen Sie auf der Seite **Schaltflächenraster** die Anweisungen in [Hinzufügen einer benutzerdefinierten Schaltfläche zum POS-Layout in der Retail Zentralverwaltung](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters), um den Designer zu installieren und ein POS-Layout zu aktualisieren.
+- Folgen Sie auf der Seite **Schaltflächenraster** den Anweisungen unter [POS-Operationen zu POS-Layouts hinzufügen, indem Sie den Button Grid Designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) verwenden, um den Designer zu installieren und ein POS-Layout zu aktualisieren.
 
     1. Wählen Sie das zu aktualisierende Layout aus.
     2. Fügen Sie eine neue Schaltfläche hinzu und legen Sie die Eigenschaft der Schaltfläche  auf**Steuererlicher Registrierungsprozess abschliessen**

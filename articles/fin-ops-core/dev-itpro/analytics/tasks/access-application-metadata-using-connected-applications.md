@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a476163ba6f66ab60ed8bfea6198d02f13ac5136
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182714"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769877"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
 
@@ -31,11 +31,11 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**. 
-2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. 
+2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diese als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. 
 
 ## <a name="get-required-er-configurations"></a>Erforderliche ER-Konfigurationen abrufen
 1. Klicken Sie auf **Berichterstellungskonfigurationen**. 
-2. Wenn Sie die Schritte in der Prozedur [(RCS) Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) bereits abgeschlossen haben, haben Sie bereits alle erforderlichen ER-Konfigurationen (Außenhandelsmetadaten, Modell- und Zuordnungskonfigurationen) in der aktuellen RCS-Instanz. Sie können alle übrigen Schritte dieser Unteraufgabe überspringen. 
+2. Wenn Sie die Schritte in der Prozedur [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) bereits abgeschlossen haben, haben Sie bereits alle erforderlichen ER-Konfigurationen (Außenhandelsmetadaten, Modell- und Zuordnungskonfigurationen) in der aktuellen RCS-Instanz. Sie können alle übrigen Schritte dieser Unteraufgabe überspringen. 
 3. Klicken Sie auf **Austauschen**. 
 4. Klicken Sie auf **Aus XML-Datei laden**. 
 5. Klicken Sie auf **Durchsuchen** und wählen die Datei **metadata.xml für Außenhandel** aus. 
@@ -72,8 +72,8 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 4. Wählen Sie in der Struktur **Außenhandelsmodell\Außenhandelszuordnung** aus. 
 5. Erweitern Sie den Abschnitt **Voraussetzungen**. 
 
-> [!NOTE]
-> Diese Zuordnung bezieht sich derzeit auf die Metadatenkonfiguration. Anwendungsmetadaten aus dieser Konfiguration werden angeboten, während diese Modellzuordnung entworfen wird. 
+    > [!NOTE]
+    > Diese Zuordnung bezieht sich derzeit auf die Metadatenkonfiguration. Anwendungsmetadaten aus dieser Konfiguration werden angeboten, während diese Modellzuordnung entworfen wird. 
 
 6. Klicken Sie auf **Designer**. 
 7. Klicken Sie auf **Designer**. 
@@ -81,8 +81,8 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 9. Klicken Sie auf **Stamm hinzufügen**. 
 10. Geben Sie im Feld **Tabelle** einen Wert ein, oder wählen Sie einen Wert aus. 
 
-> [!NOTE]
-> Diese Zuordnung bezieht sich derzeit auf die Metadatenkonfiguration. Anwendungsmetadaten aus dieser Konfiguration werden angeboten, während diese Modellzuordnung entworfen wird. 
+    > [!NOTE]
+    > Diese Zuordnung bezieht sich derzeit auf die Metadatenkonfiguration. Anwendungsmetadaten aus dieser Konfiguration werden angeboten, während diese Modellzuordnung entworfen wird. 
 
 11. Klicken Sie auf **Abbrechen**. 
 12. Schließen Sie die Seite. 
@@ -92,8 +92,8 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 1. Klicken Sie auf **Bearbeiten**. 
 2. Wählen Sie die **MyConnectedApp**-Anwendung aus. 
 
-> [!NOTE]
-> Momentan bezieht sich diese Zuordnung auf die Metadaten der ausgewählten verbundenen Anwendung. Wenn sich dieselbe Zuordnung gleichzeitig auf die Metadatenkonfiguration sowie die verbundene Anwendung bezieht, werden Metadaten der verbundenen Anwendung verwendet. 
+    > [!NOTE]
+    > Momentan bezieht sich diese Zuordnung auf die Metadaten der ausgewählten verbundenen Anwendung. Wenn sich dieselbe Zuordnung gleichzeitig auf die Metadatenkonfiguration sowie die verbundene Anwendung bezieht, werden Metadaten der verbundenen Anwendung verwendet. 
 
 3. Klicken Sie auf **Designer**. 
 4. Klicken Sie auf **Designer**. 
@@ -101,14 +101,14 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 6. Klicken Sie auf **Stamm hinzufügen**. 
 7. Geben Sie im Feld **Tabelle** einen Wert ein, oder wählen Sie einen Wert aus. 
 
-> [!NOTE]
-> Mehr als zwei Anwendungstabellen wurden nun angeboten, da diese Zuordnung alle Metadaten der verbundenen Anwendung verwenden, die ihr zugeordnet ist. 
+    > [!NOTE]
+    > Mehr als zwei Anwendungstabellen wurden nun angeboten, da diese Zuordnung alle Metadaten der verbundenen Anwendung verwenden, die ihr zugeordnet ist. 
 
 8. Klicken Sie auf **Abbrechen**. 
 9. Klicken Sie auf **Überprüfen**. 
 
-> [!NOTE]
-> Es wurden erfolgreich Elemente des Datenmodells mit Datenquellenelementen gebunden, die mit Details aus Metadaten der verbundenen Anwendung verwendet, die dieser Zuordnung zugewiesen wurde. 
+    > [!NOTE]
+    > Es wurden erfolgreich Elemente des Datenmodells mit Datenquellenelementen gebunden, die mit Details aus Metadaten der verbundenen Anwendung verwendet, die dieser Zuordnung zugewiesen wurde. 
 
 10. Schließen Sie die Seite. 
 11. Schließen Sie die Seite. 

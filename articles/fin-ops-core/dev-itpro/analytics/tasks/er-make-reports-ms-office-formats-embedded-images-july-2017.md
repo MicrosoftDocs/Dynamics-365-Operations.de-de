@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52ed5677890555775961c0c23b46713d99090983
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 143782413359d87f3d4c46940f9a699fbf0e8f90
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184806"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769808"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format entwerfen, die eingebettete Bilder haben
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Um dies Schritte in dieser Prozedur auszuführen, müssen Sie zuerst die Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen. Mit dieser Prozedur wird erklärt, wie die Konfigurationen zur elektronischen Berichterstellung (EB) entworfen werden, um ein Microsoft Excel- oder Word-Dokument zu generieren, das eingebettete Bilder enthält. In dieser Prozedur erstellen Sie die erforderlichen EB-Konfigurationen für das Beispielunternehmen Litware, Inc.. Diese Schritte können mithilfe des USMF-Datasets abgeschlossen werden. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Bevor Sie beginnen, laden Sie die Dateien, die im Hilfethema [Bilder und Formen in Geschäftsdokumente einbetten, die mit dem elektronischen Berichterstellungstool generiert sind](../electronic-reporting-embed-images-shapes.md) aufgelistet sind herunter und speichern Sie diese. Die Dateien sind: Modell für Schecks.xml, Druckformat für Schecks.xml, Unternehmenslogo.png, Signaturbild.png, Signaturbild 2.png und Scheckvorlage Word.docx.
+Um dies Schritte in dieser Prozedur auszuführen, müssen Sie zuerst die Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen. Mit dieser Prozedur wird erklärt, wie die Konfigurationen zur elektronischen Berichterstellung (EB) entworfen werden, um ein Microsoft Excel- oder Word-Dokument zu generieren, das eingebettete Bilder enthält. In dieser Prozedur erstellen Sie die erforderlichen EB-Konfigurationen für das Beispielunternehmen Litware, Inc.. Diese Schritte können mithilfe des USMF-Datasets abgeschlossen werden. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Bevor Sie beginnen, laden Sie die im Hilfethema aufgeführten Dateien herunter und speichern Sie sie, [Betten Sie Bilder und Formen in Dokumente ein, die Sie mit ER](../electronic-reporting-embed-images-shapes.md) erzeugen. Die Dateien sind: Modell für Schecks.xml, Druckformat für Schecks.xml, Unternehmenslogo.png, Signaturbild.png, Signaturbild 2.png und Scheckvorlage Word.docx.
 
 ## <a name="verify-prerequisites"></a>Überprüfung der erforderlichen Software  
  1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.  

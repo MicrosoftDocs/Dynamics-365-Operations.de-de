@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d70bce4e47c05a7974c1b974fdca17682e5370aa
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 11a5792c9c039eb76337309ef2fdb2b994ce191a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550856"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772386"
 ---
 # <a name="near-real-time-data-integration-with-common-data-service"></a>Datenintegration nahezu in Echtzeit mit Common Data Service
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 In der derzeitigen digitalen Welt verwenden Geschäftsökosysteme die Microsoft Dynamics 365-Anwendungen als Ganzes. Da die Daten von Personen, Kunden, Arbeitsgängen und IoT-Geräten (Internet of Things) in eine Quelle fließen, gibt es eine Möglichkeit für digitale Rückmeldungsschleifen. Um dies zu erreichen, ist die Integration zwischen Finance and Operations-Apps und anderen Dynamics 365-Anwendungen unerlässlich. Einige Anwendungen basieren auf Common Data Service. Durch die Integration zwischen Finance and Operations-App-Daten mit Common Data Service können andere Anwendungen kohärent und fließend mit Finance and Operations kommunizieren.
 
@@ -38,13 +36,16 @@ Finance and Operations-Apps und Common Data Service bieten eine Datensynchronisi
 
 ![Übersicht über die Architektur](media/dual-write-overview.jpg)
 
-Die folgenden Wertvorschläge stehen für Debitoren zur Verfügung:
+Die folgenden Wertvorschläge stehen zur Verfügung:
 
 + [Organisationshierarchie in Common Data Service](dual-write-organization.md)
 + [Unternehmenskonzept in Common Data Service](dual-write-company.md)
 + [Integrierte Masterdaten von Debitoren](dual-write-customer.md)
++ [Integriertes Sachkonto](dual-write-ledger.md)
++ [Einheitliche Produktumgebung](dual-write-product.md)
 + [Integrierte Masterdaten von Kreditoren](dual-write-vendor.md)
-+ Einheitlicher Produktmaster
++ [Integrierte Standorte und Lagerorte](dual-write-sites-and-warehouses.md)
++ [Integrierter Steuermaster](dual-write-tax.md)
 
 ## <a name="system-requirements"></a>Systemanforderungen
 

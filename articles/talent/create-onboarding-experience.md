@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 97082533831d592817e54e77469a3e22b0b47610
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 8c11186ff3f95a7f1e00f9e42d7b78f5a68957b0
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008127"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813936"
 ---
 # <a name="get-started-with-onboard"></a>Erste Schritte mit Onboard
 
@@ -35,17 +35,17 @@ Mit Onboard  können Sie schnell ein Handbuch erstellen, das Ihre neuen Mitarbei
 
 Informationen zum Zuweisen der Onboard-App, finden Sie in den folgenden Themen:
 
-- [Onboard-App einrichten](./onboard-get-app.md)
-- [Erstellen einer Onboarding-Aneitung](./onboard-create-guide.md)
-- [Erstellen einer Onboarding-Vorlage](./onboard-create-template.md)
-- [Bearbeiten von Onboarding Anleitungen und Vorlagen](./onboard-edit-guides-templates.md)
-- [Hier können Sie Inhalte mit anderen Personen teilen](./onboard-share-template.md)
-- [Anzeigen des Status von Aufgaben und dem Onboarding von Mitarbeitern](./onboard-view-status.md)
-- [Erstellen von Einstellungsteams in Onboard](./onboard-create-team.md)
+- [Abrufen der Dynamics 365 Talent – Onboard-App](./onboard-get-app.md)
+- [Erstellen und Versenden einer Onboarding-Anleitung mithilfe von Dynamics 365 Talent - Onboard](./onboard-create-guide.md)
+- [Erstellen einer Onboarding-Vorlage mit Dynamics 365 Talent - Onboard](./onboard-create-template.md)
+- [Bearbeiten von Onboarding-Anleitungen und Vorlagen in Dynamics 365 Talent - Onboard](./onboard-edit-guides-templates.md)
+- [Freigeben von Inhalten mit anderen Mitwirkenden in Dynamics 365 Talent - Onboard](./onboard-share-template.md)
+- [Anzeigen des Status des Onboarding von Mitarbeitern und Ihrer Aufgaben](./onboard-view-status.md)
+- [Zusammenstellen eines Einstellungsteams mithilfe von Dynamics 365 Talent - Onboard](./onboard-create-team.md)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
-- [Neuerungen](./whats-new.md)
-- [Versionshinweise](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Support anfordern](./talent-support.md)
+- [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
+- [Freigabepläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

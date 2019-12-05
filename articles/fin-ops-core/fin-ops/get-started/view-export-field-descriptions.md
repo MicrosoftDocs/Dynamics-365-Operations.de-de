@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 974f99632738cfc6eec5ff85965f4e9f9608a8b5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3e110c7fe6881825fe2b075c1795bc4f7e938da4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178031"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811506"
 ---
 # <a name="view-and-export-field-descriptions"></a>Feldbeschreibungen anzeigen und exportieren
 
@@ -35,7 +35,7 @@ Einige der komplexeren Felder haben Beschreibungen. Diese Beschreibungen werden 
 
 Nicht alle Seiten haben Feldbeschreibungen. Wir möchten Beschreibungen nur für die komplexeren Felder bereitstellen, und nicht für Felder, bei denen die Verwendung offensichtlich ist. Daher verfügen einige Seiten über keine Feldbeschreibungen, andere über ein paar und komplexeren Seiten, wie ein Großteil der Parameter-Seiten, verfügen über viele Beschreibungen.
 
-Wenn Sie Zugriff auf die Entwicklungsumgebung haben, können Sie neue Feldbeschreibungen hinzufügen. Beispielsweise können Sie einer Feldbeschreibung unternehmensspezifische Informationen hinzufügen. Weitere Informationen finden Sie unter [Feldhilfe anpassen](../../dev-itpro/user-interface/customize-field-help.md).
+Wenn Sie Zugriff auf die Entwicklungsumgebung haben, können Sie neue Feldbeschreibungen hinzufügen. Beispielsweise können Sie einer Feldbeschreibung unternehmensspezifische Informationen hinzufügen. Weitere Informationen finden Sie unter [Feldbeschreibungen anpassen](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Siehe hierzu auch die Feldbeschreibungen auf der Benutzeroberfläche.
 
@@ -107,4 +107,4 @@ Informationen über die verschiedenen Methoden zum Suchen von Seiten finden Sie 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Feldhilfe anpassen](../../dev-itpro/user-interface/customize-field-help.md)
+[Anpassen von Feldbeschreibungen](../../dev-itpro/user-interface/customize-field-help.md)

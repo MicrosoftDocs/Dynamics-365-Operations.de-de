@@ -1,5 +1,5 @@
 ---
-title: 'Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Microsoft Dynamics 365 Talent: Attract'
+title: Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Attract
 description: 'In diesem Thema wird erläutert, wie Dynamics 365 Talent: Attract verwendet wird, um Stellen auf LinkedIn zu veröffentlichen.'
 author: andreabichsel
 manager: AnnBe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: e2b8065fe2521694efb30478a5a41676cff45127
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 782a2e5de6edf0e85c4d32a0910f5f3c01981a01
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551494"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833000"
 ---
-# <a name="post-jobs-to-linkedin-from-microsoft-dynamics-365-talent---attract"></a>Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Microsoft Dynamics 365 Talent: Attract
+# <a name="post-jobs-to-linkedin-from-attract"></a>Veröffentlichen von Stellenausschreibungen auf LinkedIn mit Attract
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 LinkedIn sit das größten Online-Berufsnetzwerk und ermöglicht Zugriff auf die besten Talente weltweit. Microsoft Dynamics 365 Talent: Attract hilft Ihnen, die Talente zu finden, die Sie brauchen, indem Sie Ihre Stellen direkt von Attract in LinkedIn veröffentlichen.
 
@@ -46,7 +46,7 @@ In der folgenden Tabelle werden die Aktionen angezeigt, die Sie auf LinkedIn aus
 
 Weitere Informationen zu Benutzerrollen in Attract finden Sie unter [Sicherheit und Rollenverwaltung in Attract](./security-attract.md).
 
-Wenn Sie ein Administrator sind und mehr Informationen dazu benötigen, wie LinkedIn-Integration mit Attract konfiguriert wird, gehen Sie zu [Einstellungsintegration mit LinkedIn](./attract-admin-linkedin.md).
+Wenn Sie ein Administrator sind und mehr Informationen dazu benötigen, wie LinkedIn-Integration mit Attract konfiguriert wird, gehen Sie zu [Einstellungsintegration mit LinkedIn für Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md).
 
 Die Stellen, die in LinkedIn veröffentlicht werden, werden auf der laufenden LinkedIn-Website angezeigt. Es gibt keine Testumgebung in LinkedIn für das Veröffentlichen von Stellen. Daher sollten Sie sicherstellen, dass Sie keine Testjobs versehentlich veröffentlichen.
 
@@ -67,15 +67,15 @@ Wenn interessierte Kandidaten **Ansicht** neben den Listen auswählen, finden si
 
 Alle Stellenausschreibungen die über Attract erfolgen, sind limitierte Listen. Weitere Informationen über limitierte Listen in LinkedIn finden Sie unter [Limitierte Listen mit erstklassigen Stellen für Stellenzusammenfassung](https://www.linkedin.com/help/recruiter/answer/79049).
 
-Wenn Sie Schwierigkeiten haben, Stellen in LinkedIn zu veröffentlihcen, gehen Sie zu [Probleme beim Veröffentlichen von Stellen in LinkedIn](./attract-troubleshoot-linkedin.md).
+Wenn Sie Schwierigkeiten haben, Stellenausschreibungen auf LinkedIn zu veröffentlichen, finden Sie weitere Informationen unter [Problembehandlungsintegration mit LinkedIn und Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md).
 
 ## <a name="see-also"></a>Siehe auch
 
-[LinkedIn-FAQ](./attract-linkedin-faq.md)
+[Attract Integration mit LinkedIn FAQ](./attract-linkedin-faq.md)
 
-[Einrichten von Integration mit LinkedIn](./attract-admin-linkedin.md)
+[Einrichten der Integration mit LinkedIn für Microsoft Dynamics 365 Talent - Attract](./attract-admin-linkedin.md)
 
-[Stelle erstellen](./creating-jobs-attract.md)
+[Erstellen, Genehmigen und Buchen von Aufträgen in Attract](./creating-jobs-attract.md)
 
 [Kandidaten suchen mithilfe von LinkedIn Recruiter](./attract-linkedin-recruiter.md)
 

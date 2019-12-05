@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f65118b6a7393ced9d80c30fad7540a7b27da6c7
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569083"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771397"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
 
@@ -54,7 +54,7 @@ In der aktuellen Topologie [erstellen Sie ein neues ER-Format](tasks/er-format-c
 
 ## <a name="create-a-new-document-type"></a>Erstellen eines neuen Dokumenttyps
 
-Um anzugeben, wie Dokumente, die von einem ER-Format generiert werden, weitergeleitet werden, müssen Sie [Er-Ziele](electronic-reporting-destinations.md) konfigurieren. In jedem ER-Ziel, das konfiguriert wird, um generierten Dokumente als Dateien zu speichern, müssen Sie einen Dokumenttyp des Dokumentverwaltungsframework angeben. Verschiedene Dokumenttypen können verwendet werden, um Dokumente weiterzuleiten, die von verschiedenen ER-Formaten generiert werden.
+Um festzulegen, wie Dokumente, die von einem ER-Format erzeugt werden, weitergeleitet werden, müssen Sie [Elektronische Berichtsziele (ER)](electronic-reporting-destinations.md) konfigurieren. In jedem ER-Ziel, das konfiguriert wird, um generierten Dokumente als Dateien zu speichern, müssen Sie einen Dokumenttyp des Dokumentverwaltungsframework angeben. Verschiedene Dokumenttypen können verwendet werden, um Dokumente weiterzuleiten, die von verschiedenen ER-Formaten generiert werden.
 
 1. Fügen Sie einen neuen [Dokumenttyp](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) für das ER-Format hinzu, das Sie bereits erstellt oder importiert haben. In der folgenden Abbildung lautet der Dokumenttyp **FileX**.
 2. Um dieses Dokumenttyp von anderen Dokumenttypen zu unterscheiden, schließen Sie ein bestimmtes Schlüsselwort in seinem Namen ein. Beispielsweise lautet der Name in der folgenden Abbildung **(LOKALER) Ordner**.
@@ -173,5 +173,5 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)
+- [Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
 - [Startseite für Erweiterbarkeit](../extensibility/extensibility-home-page.md)

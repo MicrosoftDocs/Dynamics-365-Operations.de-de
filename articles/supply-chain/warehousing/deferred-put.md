@@ -3,7 +3,7 @@ title: Verzögerte Verarbeitung der Lagerarbeit
 description: In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Einlagerungsvorgängen in Dynamics 365 Supply Chain Management verfügbar machen.
 author: josaw1
 manager: AnnBe
-ms.date: 06/17/2019
+ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1acfa41b9a94b5f27eefda006c8e2950059f3489
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: b67b3899a506c02b581d04f51691cb4408ee012e
+ms.sourcegitcommit: 0af4caa9f5ea6f6c1d1f4b30090e02e7f755df36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026920"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815787"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Verzögerte Verarbeitung der Lagerarbeit
 
@@ -30,7 +30,6 @@ ms.locfileid: "2026920"
 [!include [banner](../includes/pivate-preview-banner.md)]
 
 In diesem Thema werden die Funktionen beschrieben, die die verzögerte Verarbeitung von Lagerarbeiten in Dynamics 365 Supply Chain Management verfügbar machen.
-
 
 Mit der verzögerten Verarbeitungsfunktion können Lagerarbeiter weiterhin andere Aufgaben erledigen, während im Hintergrund der Einlagerungsvorgang verarbeitet wird. Die verzögerte Verarbeitung ist hilfreich, wenn zahlreiche Arbeitspositionen verarbeitet werden müssen und die Arbeitskraft diese Arbeit asynchron verarbeiten lassen kann. Sie ist außerdem nützlich, wenn es beim Server zu spontanen oder ungeplanten Zunahmen bei der Verarbeitungszeit kommen kann und sich diese erhöhte Verarbeitungszeit auf die Produktivität des Benutzers auswirken kann.
 
@@ -50,6 +49,8 @@ Richtlinien werden auf der Seite **Arbeitsverarbeitungsrichtlinien** konfigurier
 | Arbeitsverarbeitungsmethode          | Die zur Verarbeitung der Arbeitsposition verwendete Methode. Wenn die Methode auf **Sofort** festgelegt wird, ähnelt das Verhalten dem Verhalten, wenn keine Arbeitsverarbeitungsrichtlinien verwendet werden, um die Position zu verarbeiten. Wenn die Methode auf **Verzögert** festgelegt wird, wird die verzögerte Verarbeitung verwendet, die das Batch-Framework verwendet. |
 | Verzögerter Verarbeitungsschwellenwert   | Ein Wert von **0** (Null) bedeutet, dass kein Schwellenwert festgelegt ist. In diesem Fall wird die verzögerte Verarbeitung verwendet, wenn sie verwendet werden kann. Wenn die Berechnung des speziellen Schwellenwerts unterhalb des Schwellenwerts liegt, wird die Methode „Sofort“ verwendet. Andernfalls wird die verzögerte Methode verwendet, wenn sie verwendet werden kann. Bei verkaufs- und übertragungsbezogenen Arbeiten wird der Schwellenwert als die Zahl zugeordneter Quellladungspositionen berechnet, die für die Arbeit verarbeitet werden. Für wird der Wiederbeschaffungsarbeiten wird der Schwellenwert als die Anzahl von Arbeitspositionen berechnet, die wiederbeschafft werden. Wenn beispielsweise ein Schwellenwert von **5** für den Verkauf festgelegt wird, wird für kleinere Arbeiten mit weniger als fünf anfänglichen Quellladungspositionen keine verzögerte Verarbeitung verwendet, sondern nur für größere. Der Schwellenwert hat nur Auswirkungen, wenn die Arbeitsverarbeitungsmethode auf **Verzögert** festgelegt wird. |
 | Chargengruppe mit verzögerter Verarbeitung |Die Stapelverarbeitungsgruppe, die für die Verarbeitung verwendet wird. |
+
+Für verzögerte Einlagerungsaufgaben werden die folgenden Arbeitsauftragstypen unterstützt: Aufträge, Umlagerungsauftragsprobleme und Wiederbeschaffung.
 
 ## <a name="assigning-the-work-creation-policy"></a>Zuweisen der Arbeitserstellungsrichtlinie
 
@@ -99,7 +100,7 @@ Es gibt mehrere Szenarios, bei denen die verzögerte Einlagerungsverarbeitungsri
 - Der manuelle Arbeitsabschluss wird verwendet.
 - Die Arbeit wird mithilfe der automatische Vervollständigung abgeschlossen.
 - Auditvorlagen werden verwendet.
-- Die Arbeit verwendet Container.
+
 
 ## <a name="monitoring-the-deferred-processing-tasks-from-the-outbound-work-monitoring-workspace"></a>Überwachen der verzögerten Verarbeitungsaufgaben im Arbeitsbereich „Überwachung ausgehender Arbeit“
 

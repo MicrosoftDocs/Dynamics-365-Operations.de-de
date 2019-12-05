@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 9b7cd06d820522d8db83b5b1480b95db1400e9cc
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f8017ab23ce77a03469a6a6c82bc22986ec4478
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191246"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812625"
 ---
 # <a name="before-you-buy"></a>Vor dem Einkauf
 
@@ -41,8 +41,8 @@ Folgende Überlegungen müssen vorgenommen werden, wenn Sie lokal als Bereitstel
 
 - Gesetzliche Anforderungen und Konformitätsanforderungen, die in den Cloudzertifizierungen nicht verfügbar sind
 - Nicht verbundener Geschäftsprozess mit erforderlicher zeitweiliger Internetkonnektivität, um auf Microsoft Dynamics Lifecycle Services (LCS) für die Anwendungslebenszyklus-Verwaltung zuzugreifen
-- [Funktionen, die in lokalen Bereitstellungen aktuell nicht implementiert sind](features-not-implemented-on-prem.md)
-- [Minimale Infrastrukturanforderungen](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+- [Nicht in On-Premises-Bereitstellungen implementierte Funktionen](features-not-implemented-on-prem.md)
+- [Systemanforderungen für On-Premises-Bereitstellungen](system-requirements-on-prem.md#minimum-infrastructure-requirements)
 
 > [!IMPORTANT]
 > Lokale Bereitstellungen von Microsoft Dynamics 365 for Finance and Operations werden in keiner Public Cloud-Infrastruktur unterstützt, einschließlich Azure.
@@ -78,7 +78,7 @@ Ein Anbieter von Microsoft Cloud-Lösungen kann eng mit Ihnen zusammenarbeiten, 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Erwerb über einen Dynamics-Partner (lokal)
 
-Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für den lokalen Betrieb zu erwerben. Weitere Informationen finden Sie unter [Dynamics 365 for Finance and Operations (lokal) kaufen](purchase-on-premises.md)
+Sie müssen mit einem Partner zusammenarbeiten, um Finance and Operations für den lokalen Betrieb zu erwerben. Weitere Informationen finden Sie unter [Finance and Operations (On-Premises) kaufen](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Wählen Sie Ihre Supportoption
 
@@ -91,7 +91,7 @@ Weitere Informationen:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Schritt 4: Planen der Bereitstellung und Informationen über FastTrack
 
-Microsoft-FastTrack für Dynamics 365 ist unser Kundenerfolgsservice, der Ihnen dabei hilft, sich in Dynamics 365 problemlos und sicher zurechtzufinden, sodass Sie rascher Unternehmenserfolg haben. Wenn Sie am FastTrack-Programm teilnehmen, erhalten Sie Informationen zu bewährten Methoden und wie Sie die Ausweitung erfolgreich planen. Sie lernen auch Methoden, neue Benutzer zu aktivieren und Funktionen zu erweitern – alles in Ihrem eigenen Tempo. Außerdem haben Sie Zugriff auf die Microsoft-Technikressourcen, damit Ihre Erfahrungen mit Dynamics 365 erfolgreich sind. Weitere Informationen: [Übersicht über Microsoft FastTrack for Dynamics 365](fasttrack-dynamics-365-overview.md).
+Microsoft-FastTrack für Dynamics 365 ist unser Kundenerfolgsservice, der Ihnen dabei hilft, sich in Dynamics 365 problemlos und sicher zurechtzufinden, sodass Sie rascher Unternehmenserfolg haben. Wenn Sie am FastTrack-Programm teilnehmen, erhalten Sie Informationen zu bewährten Methoden und wie Sie die Ausweitung erfolgreich planen. Sie lernen auch Methoden, neue Benutzer zu aktivieren und Funktionen zu erweitern – alles in Ihrem eigenen Tempo. Außerdem haben Sie Zugriff auf die Microsoft-Technikressourcen, damit Ihre Erfahrungen mit Dynamics 365 erfolgreich sind. Weitere Informationen: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md)
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Falls Sie ein Upgrade von Dynamics AX 2012 vornehmen oder von AX 2009 migrieren
 

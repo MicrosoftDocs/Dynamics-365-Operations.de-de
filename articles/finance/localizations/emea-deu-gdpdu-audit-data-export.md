@@ -17,12 +17,12 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4abd6c6ab42bde4b57ff2966d4efa456aff38f9d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a69e8a7d195e8cbd5c656124c294df7c4b1cfb2f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175717"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773402"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -219,6 +219,6 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 ## <a name="additional-information"></a>Weitere Informationen
 
 - [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
-- [Protokolldateikonfiguration anpassen](./tasks/customize-german-audit-file-configuration.md)
-- [Protokolldatei generieren](./tasks/german-audit-file.md)
+- [Deutsche Protokolldateikonfiguration importieren](./tasks/import-german-audit-file-configuration.md)
+- [Anpassen der deutschen Protokolldateikonfiguration](./tasks/customize-german-audit-file-configuration.md)
+- [Generieren Sie deutsche Protokolldatei](./tasks/german-audit-file.md)
