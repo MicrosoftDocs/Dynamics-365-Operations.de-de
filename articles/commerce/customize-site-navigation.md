@@ -1,0 +1,110 @@
+---
+title: Anpassen der Sitenavigation
+description: In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce Site zu organisieren.
+author: bicyclingfool
+manager: annbe
+ms.date: 10/01/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application user
+ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: StuHarg
+ms.search.validFrom: 2019-10-31
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 8e1efb4a7484bd4626886c0f9aa40c3e4dfe304a
+ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2697473"
+---
+# <a name="customize-site-navigation"></a>Anpassen der Sitenavigation
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce Site zu organisieren.
+
+## <a name="overview"></a>Übersicht
+
+Online-Schaufenster ermöglichen es Debitoren, Produkte zu entdecken und zu suchen, indem sie durch Produktkategorien navigieren. Diese Funktion wird normalerweise von den Registerkarten am oberen Seitenrand oder auf einer Navigationsleiste links bereitgestellt. In Dynamics 365 Commerce können Sie die hierarchische Struktur der Kategorienavigation und der Produkte erstellen und verwalten, die in den unterschiedlichen Kategorien enthalten sind.
+
+## <a name="create-a-retail-channel-navigation-hierarchy"></a>Navigationshierarchie für Retail Channel erstellen
+
+Um eine Retail Channel Navigationshierarchie zu erstellen, führen Sie die folgenden Schritte aus.
+
+1. Navigieren Sie zu **Retail \> Produkte und Kategorien \>Kategorie- und Prdouktverwaltung**.
+1. Wählen Sie **Kategoriehierarchien** und **Neu** aus.
+1. Der Name der Hierarchie.
+
+    > [!NOTE]
+    > Die oberste Kategorie, die Sie erstellen, ist der Stammkategorieknoten. Sie wird nicht auf dem Standort angezeigt. Um eine Kategoriehierarchie zu erstellen, in der ein einzelner oberste Knoten auf dem Standort angezeigt wird, erstellen und benennen Sie die Kategorie als untergeordnetes Element der Stammkategorie.
+
+1. Wählen Sie **Neuer Kategorieknoten** und benennen Sie die Kategorie.
+1. Fahren Sie fort, um gleichgeordnete und untergeordnete Kategorien nach Bedarf zu erstellen.
+
+Sie können Produkte nun jeder Kategorie zuweisen, die Sie unter der obersten Ebene erstellt haben.
+
+## <a name="customize-the-order-of-categories"></a>Passen Sie die Reihenfolge der Kategorien an
+
+Standardmäßig werden die Kategorien, die Sie festlegen, in alphabetischer Reihenfolge auf der Site angezeigt. Allerdings können Sie die Anzeigereihenfolge der Kategorien auch anpassen.
+
+## <a name="assign-a-category-hierarchy-type"></a>Zuweisen eines Kategoriehierarchietyps
+
+1. Navigieren Sie zu **Retail \> Produkte und Kategorien \>Kategorie- und Prdouktverwaltung**.
+1. Wählen Sie **Kategoriehierarchien**.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte auf **Kategoriehierarchie** in der Gruppe **Einrichten** und wählen Sie **Hierarchietyp zuordnen**.
+1. Wählen Sie **Neu** aus.
+1. Wählen Sie im Feld **Kategoriehierarchietyp** die **Navigationshierarchie - Retail Channel** aus.
+1. Wählen Sie im Feld **Kategoriehierarchie** die Kanalnavigationshierarchie aus, die Sie eben erstellt haben.
+
+## <a name="publish-new-or-updated-navigation-hierarchies"></a>Veröffentlichen Sie die neuen oder aktualisierten Navigationshierarchien
+
+Um Ihre Navigationshierarchie im Online Schaufenster verfügbar zu machen, folgen Sie diesen Schritten.
+
+1. Wählen Sie **Retail \> Kanal einrichten \> Kanalkategorien und Produktattribute**.
+1. In der Struktur auf der linken Seite wählen Sie den Onlineshop aus.
+1. Wählen Sie **Kanalupdates veröffentlichen**.
+1. Klicken Sie auf **Retail \> Retail IT \> Distributions-Zeitplan**.
+1. Wählen Sie **Job 1040** suchen und auswählen.
+1. Wählen Sie **Jetzt ausführen** aus.
+1. Wiederholen Sie die Schritte 5 und 6 für Job 1070 und 1150.
+
+## <a name="show-categories-on-your-site"></a>Anzeigen der Kategorien auf der Site
+
+Um Ihre Kategoriehierarchie in Ihrem Online-Schaufenster anzuzeigen, müssen Sie das Navigationsmenümodul am geeigneten Speicherort in einer Vorlage oder Fragment hinzufügen. Das Navigationsmenümodul wird dann in der Navigationshierarchie angezeigt, vorausgesetzt, die Retailnavigationshierarchie wurde im Kanal veröffentlicht, mit dem Ihre Site verbunden ist.
+
+> [!NOTE]
+> Mit dem Navigationsmenümodul, das im Shop-Starter-Kit enthalten ist, können Benutzer zu den Kategorien navigieren, die keine Unterkategorien umfassen. Wenn Ihre Debitoren nicht in der Lage sind, zu der Kategorien zu navigieren, die Unterkategorien umfassen, müssen Sie das Navigationsmenümodul anpassen.
+
+## <a name="add-custom-navigation-options"></a>Fügen Sie benutzerdefinierte Navigationsoptionen hinzu
+
+Auf dem Navigationsmenü können Sie Navigationsoptionen hinzufügen, die nicht Teil der Hierarchie Ihrer Produktkategorie sind. Zum Beispiel am Ende der Liste der Produktkategorien können Sie ein Element **Kontaktieren Sie uns** hinzufügen, das auf die Kontaktseite verweist, die Sie für Ihren Standort erstellt haben.
+
+Um benutzerdefinierte Navigationsoptionen Ihrem Navigationsmenü hinzuzufügen, führen Sie die folgenden Schritte aus.
+
+1. In der Vorlage oder im Fragment, das Sie anpassen möchten, wählen Sie das Navigationsmenümodul aus.
+1. Im Eigenschaftenbereich auf der Registerkarte **Daten**, wählen Sie **Artikel hinzufügen**, um einen neuen Navigationsartikel des Content Management-Systems (CMS) zu erstellen.
+1. Geben Sie Hyperlinktext und eine URL ein.
+1. Wiederholen Sie die Schritte 2 und 3, um kundenspezifischere Navigationsoptionen hinzuzufügen.
+1. Wenn Sie fertig sind, speichern Sie das Original oder das Fragment, und laden Sie es hoch.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Übersicht über Vorlagen und Layouts](templates-layouts-overview.md)
+
+[Arbeiten mit Vorlagen](work-with-templates.md)
+
+[Arbeiten mit Voreinstellungslayouts](work-with-layouts.md)
+
+[Arbeiten mit Fragmenten](work-with-fragments.md)
+
+[Arbeiten mit Modulen](work-with-modules.md)
+
+[Erstellen einer Seiten-URL](create-page-url.md)
