@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd2f27c5797fbd34674e39013ed3e0e40cdb28b2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 44fafe1548f97d8e4a532a17b0ca596320b5e9fb
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251131"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814995"
 ---
 # <a name="service-management-overview"></a>Service Management Übersicht
 
@@ -66,7 +66,7 @@ Im folgenden Diagramm werden die Geschäftsprozesse auf oberer Ebene für **Serv
 
 Die Serviceverwaltung kann in die folgenden Module in  integriert werden:
 
-  - [Vertrieb und Marketing](../sales-marketing/overview-sales-marketing.md)
+  - [Vertrieb und Marketing – Übersicht](../sales-marketing/overview-sales-marketing.md)
   - [Personalverwaltung](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
 
   

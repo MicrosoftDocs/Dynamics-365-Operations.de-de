@@ -16,18 +16,18 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: eb5d721784f45097ab466f75d43256495aac36ca
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182829"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769946"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Import von Dateien im XML-Format mit optionalen Attributen
 
 Sie können Elektronische Berichterstellung (ER)-Formate entwerfen, um eingehende Dokumente im XML-Format zu generieren. Bestimmte Attribute von XML-Elementen können in entworfenem ER-Format als optional angegeben werden. Es ermöglicht Ihnen, eingehende Dateien mit und ohne diese XML-Attribute korrekt zu bearbeiten. Sie können den Inhalt aus diesen Dateien dann verwenden, um Anwendungsdaten zu aktualisieren.
 
-Um mehr über diese Funktion zu erfahren, führen Sie die Schritte im Thema, [RCS-Importdateien im XML-Format mit optionalen Attributen](tasks/import-files-xml-format-optional-attributes.md) aus, das Teil ist von 7.5.4.3 IT-Service/Lösungskomponenten (10677) Geschäftsprozess abrufen/entwickeln. Sie können diesen Aufgabenleitfaden und die zugeordneten Beispieldateien vom [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) herunterladen.
+Um mehr über diese Funktion zu erfahren, führen Sie die Schritte im Thema [(RCS) Importieren von Dateien im XML-Format mit optionalen Attributen](tasks/import-files-xml-format-optional-attributes.md) aus, die Teil des Geschäftsprozesses 7.5.4.3 Acquire/Develop IT service/solution components (10677) sind. Sie können diesen Aufgabenleitfaden und die zugeordneten Beispieldateien vom [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) herunterladen.
 
 
 | Inhaltsbeschreibung       | Datei                                                         |
@@ -36,10 +36,10 @@ Um mehr über diese Funktion zu erfahren, führen Sie die Schritte im Thema, [RC
 | Aufgabenleitfaden                | (RCS) Importiert Dateien im XML-Format mit optionalen Attributen.axtr |
 
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle Entwickler für elektronische Berichterstellung zugewiesen ist, eine ER-Formatkonfiguration entwerfen kann, um die Dateien im XML-Format, die optionale Attribute enthalten, zu importieren. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abschließen. Bevor Sie beginnen, laden Sie die IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-Datei aus dem Microsoft Download Center(https://go.microsoft.com/fwlink/?linkid=874684) und herunter speichern Sie sie lokal.
+In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle Entwickler für elektronische Berichterstellung zugewiesen ist, eine ER-Formatkonfiguration entwerfen kann, um die Dateien im XML-Format, die optionale Attribute enthalten, zu importieren. Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte der Vorgehensweise [Konfigurationsanbieter anlegen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md). Bevor Sie beginnen, laden Sie die IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-Datei aus dem Microsoft Download Center(https://go.microsoft.com/fwlink/?linkid=874684) und herunter speichern Sie sie lokal.
 
 1. Wechseln Sie zu **Organisationsverwaltung**  >  **Arbeitsbereiche**  >  **Elektronische Berichterstellung**.
-2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, führen Sie die Schritte im Thema [Konfigurationsanbieter anlegen aus und markieren Sie ihn als aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Klicken Sie auf **Berichterstellungskonfigurationen**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Neue Datenmodellkonfiguration erstellen

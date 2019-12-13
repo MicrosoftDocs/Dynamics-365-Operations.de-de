@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: 4343c875da05641c57b7784bf52f1c814dd26d20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2174872"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773644"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementieren benutzerdefinierter Felder für die mobile Microsoft Dynamics 365 Project Timesheet-App auf iOS und Android
 
@@ -321,13 +321,9 @@ Unten befindet sich ein Bildschirmfoto von der mobilen App. Es zeigt einen Benut
 
 ![Weitere Details anzeigen – Befehl](media/show-more.png)
 
-
-
 Unten befindet sich ein Bildschirmfoto von der mobilen App. Es zeigt den Abschnitt „Mehr“ in der Arbeitszeittabelle. Ein benutzerdefiniertes Feld mit der Bezeichnung „Benutzungsrate der Arbeitszeittabelle (berechnetes benutzerdefiniertes Feld)“ ist dem Arbeitszeittabellen-Kopfzeilenabschnitt hinzugefügt worden. Ein schreibgeschützter Wert „0,667“ ist im benutzerdefinierten Feld festgelegt.
 
 ![Weiterer Abschnitt](media/more-section.jpg)
-
-
 
 ### <a name="extend-the-tstimesheettable-table-so-that-it-has-a-custom-field"></a>Erweitern der TSTimesheetTable-Tabelle, sodass sie ein benutzerdefiniertes Feld hat
 

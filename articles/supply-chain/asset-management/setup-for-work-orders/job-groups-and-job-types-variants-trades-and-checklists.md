@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bdfd8ca5e4feb236bc1b4e88a4dd3817a07e8a3f
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 2a5da707069966ea0dac282b2a0b2074ec5a41ff
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571000"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812236"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten
 
@@ -33,7 +33,7 @@ ms.locfileid: "2571000"
 
 Jeder Anlage ist ein Anlagentyp zugeordnet. Anlagentypen definieren die Wartungsauftragsarten (und damit die Wartungsaufträge), die auf Anlagen durchgeführt werden können. Wenn Sie einen Arbeitsauftrag anlegen, müssen Sie einen Wartungsauftragstyp auswählen. Sie können nur die Wartungsauftragsarten auswählen, die sich auf das Einrichten der Anlagenart beziehen, die für die Anlage verwendet wird.
 
-Eine grafische Übersicht über Anlagen und Wartungsauftragsarten und deren Verknüpfung mit Arbeitsaufträgen finden Sie unter [Anlagen und Arbeitsaufträge](../overview/functional-locations-and-objects.md).
+Eine grafische Übersicht über Anlagen und Instandhaltungsjobtypen und deren Verbindung zu Arbeitsaufträgen finden Sie unter [Technische Standorte und Anlagen](../overview/functional-locations-and-objects.md).
 
 Varianten von Wartungsauftragsarten können auf einem Wartungsauftragstyp eingerichtet werden. Varianten von Wartungsaufträgen definieren Abweichungen eines Auftragstyps, wie z.B. Größen (klein, mittel oder groß), Zeiträume (wöchentlich, halbmonatlich, ein Monat oder drei Monate) und Konfigurationen (niedriger Standard, flexibel oder leistungsstark).
 

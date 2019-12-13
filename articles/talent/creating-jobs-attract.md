@@ -1,5 +1,5 @@
 ---
-title: Erstellen, Genehmigen und Buchen von Aufträgen in Attract
+title: Erstellen einer Stelle in Attract
 description: In diesem Thema werden die Elemente einer Stelle in Attract beschrieben. Es wird auch erklärt, wie eine Stelle erstellt wird.
 author: hasrivas
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: hasrivas
 ms.search.validFrom: 2018-10-24
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: db725c230de5e3dfe971098249b280d9da47ae20
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 9dcdbcea995285c879f91c0bff435103865cc10f
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551071"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832930"
 ---
-# <a name="create-approve-and-post-jobs-in-attract"></a>Erstellen, Genehmigen und Buchen von Aufträgen in Attract
+# <a name="create-a-job-in-attract"></a>Erstellen einer Stelle in Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -49,7 +49,7 @@ Wenn Positionsverwaltung im Administrator-Center aktiviert wurde, ist die **Posi
 > [!NOTE]
 > Positionsverwaltung ist im Unternehmen mit dem umfassenden Add-On für Neueinstellungen verfügbar.
 
-Abhängig von den Einstellungen in der Angebotsaktivität des Einstellungsprozesses kann eine Positionsnummer in einem Angebot zweimal verwendet werden. Weitere Informationen finden Sie unter [Einstellungsprozess](./activities-attract.md).
+Abhängig von den Einstellungen in der Angebotsaktivität des Einstellungsprozesses kann eine Positionsnummer in einem Angebot zweimal verwendet werden. Weitere Informationen finden Sie unter [Aktivitäten im Einstellungsprozess](./activities-attract.md).
 
 Attract enthält einen Standardsatz an **Qualifikationen**. Diese Qualifikationen werden während der Eingabe als Vorschläge angezeigt. Sie können mehr Qualifikationen hinzufügen, indem Sie den neuen Qualifikationstext im Feld eingeben und dann Eingabe drücken.
 
@@ -67,7 +67,7 @@ Das Einstellungsteam kann aktualisiert werden, nachdem die Stelle aktiviert wurd
 
 Standardinformationen zum Einstellungsprozess basieren auf der Prozessvorlage, die ausgewählt wurde, als die Stelle erstellt wurde. Wenn zu diesen Zeitraum keine bestimmte Vorlage ausgewählt wurde, wird die Standardvorlage verwendet. Wenn Sie den Einstellungsprozess definieren, können Sie diesem verschiedene Phasen hinzufügen oder davon entfernen, außer die Phasen "Interessent", "Bewerbung" und "Angebot". Obwohl die Interessentenphase nicht entfernt werden kann, kann sie deaktiviert werden. In jeder Phase können Sie mindestens eine vordefinierte Aktivität hinzufügen oder daraus entfernen.
 
-Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt werden können, finden Sie unter [Einstellungsprozessaktivitäten in Attract](./activities-attract.md).
+Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt werden können, finden Sie unter [Aktivitäten im Einstellungsprozess](./activities-attract.md).
 
 > [!NOTE]
 > Der Einstellungsprozess kann nicht aktualisiert werden, nachdem eine Stelle aktiviert wurde.
@@ -76,7 +76,7 @@ Weitere Informationen zu Aktivitäten, die dem Einstellungsprozess hinzugefügt 
 
 Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden. Nur Personalbeschaffer und Administratoren können Stellen veröffentlichen. Die Stelle kann entweder bei Talent Careers (eine Dynamics 365 Talent-Karriereseite) oder bei LinkedIn veröffentlicht werden. Das Attract-Team arbeitet ständig an Partnerschaften mit Stellenbörsenaggregatoren. Daher erweitert sich diese Liste mit der Zeit. Wenn eine Stelle nur als intern veröffentlicht wird, benötigen Kandidaten ein AAD-Konto, um die Stelle anzuzeigen und sich auf sie zu bewerben. Wenn die Stelle als öffentlich aufgeführt ist, können Kandidaten mithilfe aller Authentifizierungsoptionen Stellen anzeigen und sich auf sie bewerben. 
 
-Weitere Informationen zu Stellenausschreibungen finden Sie unter [Funktionen für Karriereseiten in Attract](career-site.md).
+Weitere Informationen zu Stellenausschreibungen finden Sie unter [Website mit Stellenangeboten einrichten in Microsoft Dynamics 365 Talent - Attract](career-site.md).
 
 > [!NOTE]
 > Die Stellenausschreibungsfunktionen sind nur mit dem umfassenden Add-On für Neueinstellungen für Attract verfügbar.
@@ -90,7 +90,7 @@ Nachdem eine Stelle aktiviert wurde, kann sie veröffentlicht werden, und Intere
 
 ## <a name="prospects-and-applicants"></a>Interessenten und Bewerber
 
-Die Option zum Hinzufügen von Interessenten zu einer Stelle ist in der [Interessentenaktivität](./activities-attract.md#prospect-activity) im Einstellungsprozess festgelegt. Diese Option sollte festgelegt werden, bevor Sie die Stelle aktivieren. Nachdem eine Stelle aktiviert wurde, können Interessenten und Bewerber hinzugefügt werden.
+Die Option zum Hinzufügen von Interessenten zu einer Stelle ist unter [Aktivitäten im Einstellungsprozess](./activities-attract.md#prospect-activity) im Einstellungsprozess festgelegt. Diese Option sollte festgelegt werden, bevor Sie die Stelle aktivieren. Nachdem eine Stelle aktiviert wurde, können Interessenten und Bewerber hinzugefügt werden.
 
 ## <a name="approvals"></a>Genehmigungen
 

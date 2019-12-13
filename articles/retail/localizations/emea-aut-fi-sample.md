@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0a10133952d1a161d265dd29e6a63b54de392417
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 2cfd12f836c17b6dd16f4b5954edfc974ba3d1b4
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2023377"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812322"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
@@ -110,7 +110,7 @@ Der Steuererfassungsdienst unterstützt nur Szenarien, bei denen die Mehrwertste
 
 ## <a name="set-up-retail-for-austria"></a>Retail für Österreich einrichten
 
-In diesem Abschnitt werden die Retail-Einstellungen beschrieben, die für Österreich spezifisch und empfohlen sind. Weitere Informationen zum Einrichten von Retail finden Sie in der [Microsoft Dynamics 365 for Retail-Dokumentation](../index.md).
+In diesem Abschnitt werden die Retail-Einstellungen beschrieben, die für Österreich spezifisch und empfohlen sind. Weitere Informationen zum Einrichten von Retail finden Sie unter [Hilferessourcen für Dynamics 365 Retail](../index.md).
 
 Um die Österreich-spezifischen Retail-Funktionen zu verwenden, müssen Sie die folgenden Einstellungen angeben:
 
@@ -212,7 +212,7 @@ In Designer für Bonformat fügen Sie die folgenden benutzerdefinierten Felder d
 
     - Feld **QR-Code**, das verwendet wird, um den Verweis auf die erfasste Bargeldbuchung in der Form eines QR-Codes zu drucken.
 
-Weitere Informationen zum Arbeiten mit Belegformaten finden Sie unter [Belegvorlagen und Drucken](../receipt-templates-printing.md).
+Weitere Informationen zum Arbeiten mit Belegformaten finden Sie unter [Einrichten und Entwerfen von Bonformaten](../receipt-templates-printing.md).
 
 ### <a name="configure-fiscal-integration"></a>Steuerintegration konfigurieren
 
@@ -224,7 +224,7 @@ Schließen Sie die Steuerintegrationseinrichtungsschritte ab, wie beschrieben in
 
 ## <a name="deployment-guidelines-for-cash-registers-for-austria"></a>Bereitstellungsrichtlinien für Kassen für Österreich
 
-Das Steuererfassungsdienst-Integrationsbeispiel für Österreich ist Teil des Retail SDK. Informationen zur Installation und Verwendung des Retail SDK finden Sie in der [Retail SDK-Dokumentation](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Das Steuererfassungsdienst-Integrationsbeispiel für Österreich ist Teil des Retail SDK. Informationen zur Installation und Verwendung des Retail SDK finden Sie in der [Retail Software Development Kit (SDK)-Architektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 Dieses Beispiel besteht aus Erweiterungen für CRT, Hardwarestation und POS. Um dieses Beispiel auszuführen, müssen Sie CRT, Hardwarestation und POS-Projekte ändern und erstellen. Es wird empfohlen, dass Sie ein unverändertes Retail SDK verwenden, um die Änderungen vorzunehmen, die in diesem Thema beschrieben werden. Es wird außerdem empfohlen, dass Sie ein Quellsteuerungssystem verwenden, wie Azure DevOps, bei dem noch keine Dateien geändert wurden.
 
@@ -365,7 +365,7 @@ Die Hardware station-Erweiterungskomponenten sind in den Hardware station-Beispi
 
 ### <a name="set-up-the-registration-process"></a>Den Erfassungsprozess einrichten
 
-Um den Erfassungsprozess zu aktivieren, führen Sie diese Schritte aus, um Retail Headquarters einzurichten. Weitere Informationen finden [Ein Steuererfassungsprozess einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Um den Erfassungsprozess zu aktivieren, führen Sie diese Schritte aus, um Retail Headquarters einzurichten. Weitere Details finden Sie unter [Steuerintegration für Retail Channel einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Gehen Sie zu **Einzelhandel \> Zentralverwaltungseinrichtung \> Parameter \> Freigegebene Retail-Parameter**. Auf der Registerkarte **Allgemein** legen Sie die Option **Steuerintegration aktivieren** auf **Ja** fest.
 2. Gehen Sie zu **Retail \> Channel-Einstellungen \> Steuerintegration \> Steuerkonnektoren**, und laden Sie die Konnektorkonfiguration. Der Dateispeicherort ist **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
@@ -432,7 +432,7 @@ Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter dienstspezifis
 
 Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**.
 
-Genauere Informationen zum Entwurf der Steuerintegrationslösung finden Sie unter [Steuererfassungsprozess und Steuerintegrationsbeispiele für steuerbezogene Geräte](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Weitere Details zum Entwerfen der Steuerintegrationslösung finden Sie unter [Überblick der Steuerintegration für Retail Channel](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### <a name="request-handler"></a>Anforderungshandler
     

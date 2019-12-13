@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 2bb5dd5e29559807e40b66ad7f9c061bf510ed67
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba0d11efe868d57c74f6ae4b069d1cb8351f7213
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026140"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773056"
 ---
 # <a name="provision-talent"></a>Talent bereitstellen
 
@@ -49,12 +49,12 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
 1. In Ihrem LCS-Projekt wählen Sie die Kachel **Talent App-Verwaltung** aus.
 2. Geben Sie an, ob dies eine Sandkasten- oder Produktionsinstanz von Talent ist. Frühe Vorschaufunktionen sind möglicherweise in Sandkasteninstanzen verfügbar, um frühes Feedback und Testen zu ermöglichen. 
     > [!NOTE]
-    > Der Talentinstanztyp ist von dem Instanztyp der PowerApps-Umgebung getrennt, die Sie im PowerApps-Admin Center festlegen
+    > Der Talentinstanztyp ist von dem Instanztyp der Microsoft Power Apps-Umgebung getrennt, die Sie im Power Apps-Admin Center festlegen
 3. Wählen Sie die Option **Demo-Daten einbeziehen**, wenn Sie möchten, dass Ihre Umgebung den gleichen Demo-Datensatz enthält, der auch in der Talent Test Drive Erfahrung verwendet wird. Dies ist vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollte niemals für Produktionsumgebungen verwendet werden.  Beachten Sie, dass Sie diese Option nach der ersten Bereitstellung auswählen müssen. Sie können eine vorhandene Bereitstellung später nicht aktualisieren.
-4. Talent wird immer in einer Microsoft PowerApps-Umgebung bereitgestellt, um PowerApps-Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt „PowerApps-Umgebung“ dieses Themas, bevor Sie fortfahren. Wenn Sie noch keine PowerApps-Umgebung haben, wählen Sie Umgebung verwalten in LCS oder navigieren zum PowerApps-Administratorcenter. Folgen Sie dann den Schritten zum [Erstellen der PowerApps-Umgebung](https://docs.microsoft.com/powerapps/administrator/create-environment).
+4. Talent wird immer in einer Microsoft Power Apps-Umgebung bereitgestellt, um Power Apps-Integration und Erweiterbarkeit zu aktivieren. Lesen Sie den Abschnitt „Power Apps-Umgebung“ dieses Themas, bevor Sie fortfahren. Wenn Sie noch keine Power Apps-Umgebung haben, wählen Sie Umgebung verwalten in LCS oder navigieren zum Power Apps-Administratorcenter. Folgen Sie dann den Schritten zum [Erstellen der Power Apps-Umgebung](https://docs.microsoft.com/powerapps/administrator/create-environment).
 
     > [!NOTE]
-    > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz PowerApps-P2 zugewiesen werden. Wenn Ihre Organisation keine P2-PowerApps-Lizenz hat, können Sie dies aus Ihrem CSP oder über die [PowerApps-Preiskalkulationsseite](https://powerapps.microsoft.com/pricing/) abrufen.
+    > Um die vorhandene Umgebung anzeigen oder eine neue Umgebung zu erstellen, muss der Mandantenadministrator der Talent bereitstellt der Lizenz Power Apps-P2 zugewiesen werden. Wenn Ihre Organisation keine P2-Power Apps-Lizenz hat, können Sie dies aus Ihrem CSP oder über die [Power Apps-Preiskalkulationsseite](https://powerapps.microsoft.com/pricing/) abrufen.
 
 5. Wählen Sie die Umgebung aus, in die Talent bereitgestellt werden soll.
 6. Wählen Sie **Ja**, um den Bedingungen zuzustimmen und Bereitstellung zu starten.
@@ -68,19 +68,19 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Talent in einer Umgebung
 
     > Da nur zwei LCS-Umgebungen als Teil des Talent Abonnements erlaubt sind, können Sie auch eine kostenlose 60-Tage-Testumgebung [Talent Testumgebung](https://dynamics.microsoft.com/talent/overview/) in Anspruch nehmen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Core HR eingeladen werden. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Sie sind nicht dazu vorgesehen, als Produktionsumgebung verwendet zu werden. Beachten Sie, dass, wenn die Testumgebung nach 60 Tagen abläuft, alle Daten im Modul gelöscht und nicht wiederhergestellt werden können. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
-## <a name="select-a-powerapps-environment"></a>Eine PowerApps-Umgebung auswählen
+## <a name="select-a-power-apps-environment"></a>Eine Power Apps-Umgebung auswählen
 
-Durch die Integration zwischen Talent und der PowerApps-Umgebung können Sie die Verwendung von Talentdaten mithilfe von PowerApps-Tools integrieren und erweitern. Das Verständnis des Zwecks von PowerApps-Umgebungen erleichtert Ihnen nicht nur das Erstellen von Apps, um Talent zu erweitern, sondern es wird Ihnen auch dabei helfen, die richtige Umgebung beim Bereitstellen von Talent auszuwählen. Weitere Informationen zur PowerApps-Umgebungen, einschließlich Umgebungsumfang, Umgebungszugriff und das Erstellen und Wählen einer Umgebung finden Sie unter [Ankündigung der PowerApps-Umgebungen](https://powerapps.microsoft.com/blog/powerapps-environments/). 
+Durch die Integration zwischen Talent und der Power Apps-Umgebung können Sie die Verwendung von Talentdaten mithilfe von Power Apps-Tools integrieren und erweitern. Das Verständnis des Zwecks von Power Apps-Umgebungen erleichtert Ihnen nicht nur das Erstellen von Apps, um Talent zu erweitern, sondern es wird Ihnen auch dabei helfen, die richtige Umgebung beim Bereitstellen von Talent auszuwählen. Weitere Informationen zur Power Apps-Umgebungen, einschließlich Umgebungsumfang, Umgebungszugriff und das Erstellen und Wählen einer Umgebung finden Sie unter [Ankündigung der Power Apps-Umgebungen](https://powerapps.microsoft.com/blog/powerapps-environments/). 
 
-Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche PowerApps-Umgebung Talent bereitgestellt werden soll: 
+Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-Umgebung Talent bereitgestellt werden soll: 
 
-1. In LCS wählen Sie **Verwaltete Umgebung** oder navigieren direkt zum PowerApps-Administratorcenter, in dem Sie die vorhandene Umgebung anzeigen und eine neue Umgebung erstellen können.
-2. Eine einzelne Talentumgebung wird auf eine einzelne PowerApps-Umgebung zugeordnet.
-3. Eine PowerApps-Umgebung enthält die Talentbewerbung, zusammen mit den entsprechenden PowerApps, Flow und Common Data Service-Anwendungen. Wenn die PowerApps-Umgebung gelöscht wird, sind die Apps enthalten. Wird eine Talentumgebung bereitgestellt, können Sie entweder eine **Test**- oder **Produktions**-Umgebung bereitstellen. Wählen Sie den Typ der Umgebung basierend darauf aus, wie die Umgebung verwendet wird. 
-4. Datenenintegrations- und -Testsstrategien sollten berücksichtigt werden : z. B. Sandbox, UAT oder Produktion. Wir empfehlen daher, dass Sie die verschiedenen Auswirkungen für Ihre Bereitstellung beachten, da es nicht leicht ist, später zu ändern, welche Talent-Umgebung einer PowerApps-Umgebung zugeordnet ist.
-5. Die folgenden PowerApps-Umgebungen können nicht für Talent verwendet werden und werden von der Auswahlliste innerhalb von LCS aus gefiltert:
+1. In LCS wählen Sie **Verwaltete Umgebung** oder navigieren direkt zum Power Apps-Administratorcenter, in dem Sie die vorhandene Umgebung anzeigen und eine neue Umgebung erstellen können.
+2. Eine einzelne Talentumgebung wird auf eine einzelne Power Apps-Umgebung zugeordnet.
+3. Eine Power Apps-Umgebung enthält Talent sowie die entsprechenden Power Apps, Power Automate und Common Data Service Anwendungen. Wenn die Power Apps-Umgebung gelöscht wird, sind die Apps enthalten. Wird eine Talentumgebung bereitgestellt, können Sie entweder eine **Test**- oder **Produktions**-Umgebung bereitstellen. Wählen Sie den Typ der Umgebung basierend darauf aus, wie die Umgebung verwendet wird. 
+4. Datenenintegrations- und -Testsstrategien sollten berücksichtigt werden : z. B. Sandbox, UAT oder Produktion. Wir empfehlen daher, dass Sie die verschiedenen Auswirkungen für Ihre Bereitstellung beachten, da es nicht leicht ist, später zu ändern, welche Talent-Umgebung einer Power Apps-Umgebung zugeordnet ist.
+5. Die folgenden Power Apps-Umgebungen können nicht für Talent verwendet werden und werden von der Auswahlliste innerhalb von LCS aus gefiltert:
  
-    - **Standard-Power-App-Umgebungen** - Obwohl jeder Mandant automatisch mit einer Standard-PowerApps-Umgebung ausgestattet ist, empfehlen wir, dass Sie ihn nicht mit Talent verwenden, da alle Mandantenbenutzer Zugriff auf die PowerApps-Umgebung haben und unbeabsichtigt produktive Daten beim Testen und Untersuchen von PowerApps oder Flow Integration beeinträchtigen könnten.
+    - **Standard Power Apps-Umgebungen** - Obwohl jeder Mandant automatisch mit einer Standard Power Apps-Umgebung ausgestattet ist, empfehlen wir nicht, sie mit Talent zu verwenden, da alle Mandantenbenutzer Zugriff auf die Power Apps-Umgebung haben und unbeabsichtigt Produktionsdaten beim Testen und Erkunden mit Power Apps oder Power Automate Integrationen beschädigen könnten.
    
     - **Testumgebung** Diese Umgebungen werden mit einem Ablaufdatm erstellt und verfallen nach dieser Zeit. Ihre Umgebung und alle Talent-Instanzen darin werden automatisch entfernt.
    

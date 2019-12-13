@@ -3,7 +3,7 @@ title: Bestellvorschläge verwalten
 description: Dieser Artikel bietet Informationen dazu, wie Bestellvorschläge verwaltet werden. Es wird beschrieben, wie Sie den Status von Bestellvorschlägen aktualisieren, umwandeln und Bestellvorschläge filtern können, die den gleichen Status wie ein ausgewählter Bestellvorschlag haben.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 11/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ddf2c7b4c67bec6c29387c78d1fdb021d85d702
-ms.sourcegitcommit: 620e15555d176eec3905b48d5001af1c50107ce6
+ms.openlocfilehash: 68bccb632255eac975dc150cf322d4c579ff2f24
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "1993439"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813775"
 ---
 # <a name="maintain-planned-orders"></a>Bestellvorschläge verwalten
 
@@ -39,7 +39,7 @@ Sie können das Feld **Status** verwenden, um Ihren Fortschritt zu verfolgen. Fo
 
 -   Wenn vom Produktprogrammplanungslauf Bestellvorschläge generiert wurden, weisen die Bestellvorschläge den Status **Offen** auf.
 -   Wenn ein Bestellvorschlag nicht umgewandelt werden soll, können Sie ihm den Status **Abgeschlossen** zuweisen.
--   Wenn Sie ein Bestellvorschlag umgewandelt werden soll, können Sie den Status in **Genehmigt** ändern. Umgewandelte Bestellvorschläge mit Status **Genehmigt** werden von der Produktprogrammplanung respektiert, daher sind diese weder geändert noch gelöscht. 
+-   Wenn Sie ein Bestellvorschlag umgewandelt werden soll, können Sie den Status in **Genehmigt** ändern. Planaufträge mit dem Status **Genehmigt** werden von der Masterplanung berücksichtigt, so dass sie bei einem späteren Masterplanungslauf nicht geändert oder gelöscht werden. 
 
 ## <a name="firming-planned-orders"></a>Umwandeln von Bestellvorschlägen 
 Durch die Umwandlung von Bestellvorschlägen werden tatsächliche Aufträge erstellt. Diese sind auch als *freigegebene* oder *offene Aufträge* bekannt. Nachdem ein Bestellvorschlag umgewandelt wurde, wird er in den Abschnitt "Aufträge" des jeweiligen Moduls verschoben.
@@ -62,7 +62,7 @@ Wenn Sie viele Aufträge gleichzeitig umwandeln möchten, kann das Parallelisier
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Hauptpläne](master-plans.md)
+[Hauptpläne – Übersicht](master-plans.md)
 
 
 

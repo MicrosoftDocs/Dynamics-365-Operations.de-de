@@ -1,5 +1,5 @@
 ---
-title: 'Kandidaten mithilfe von Talentpools in Microsoft Dynamics 365 Talent: Attract anwerben'
+title: Kandidaten mithilfe von Talentpools in Attract anwerben
 description: 'In diesem Thema wird erläutert, wie in Attract Berichte erstellt und Talentpools in Microsoft Dynamics 365 Talent: Attract eingerichtet werden.'
 author: andreabichsel
 manager: AnnBe
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-22-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 454ba987eef924d520af17e8b9ae694fe9b82ec2
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ea10ccd5e4b1f1ffbb8f736e886240e223a4eeb3
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551117"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833022"
 ---
-# <a name="source-candidates-with-talent-pools-in-microsoft-dynamics-365-talent---attract"></a>Kandidaten mithilfe von Talentpools in Microsoft Dynamics 365 Talent: Attract anwerben
+# <a name="source-candidates-with-talent-pools-in-attract"></a>Kandidaten mithilfe von Talentpools in Attract anwerben
 
-[!include[banner](../includes/banner.md)]
-
+[!include [banner](includes/banner.md)]
 
 Personalbeschaffungsmitarbeiter und Einstellungsmanager können ihre Kandidaten mit der Talentpool-Funktion in Attract organisieren. Talentpools können Ihnen helfen, alle Kandidaten zu verfolgen und in Kontakt mit ihnen zu treten, die sich auf Stellen in Ihrem Unternehmen bewerben.
 
@@ -116,7 +115,7 @@ Alle Benutzer verfügen über eine allgemeine Ansicht der Kandidatenprofile. Die
 
     Zum Anzeigen eines Dokuments wählen Sie den Dokumentnamen aus der Dokumentenliste aus. Sie können Microsoft Word-Dokumente der Bewerbung anzeigen, indem Sie Microsoft Office 365 verwenden. Sie können die Dokumente auch auf Ihren lokalen Computer herunterladen, indem Sie die Option **Herunterladen** für jedes Dokument verwenden.
 
-- Die Registerkarte **LinkedIn** enthält die LinkedIn-Informationen des Kandidaten. Um diese Registerkarte zu verwenden, müssen Sie Ihr LinkedIn-Konto in den Benutzereinstellungen verbinden, und die LinkedIn Recruiter-Verbindung muss hergestellt werden. Weitere Informationen finden Sie unter [Beschaffung mit LinkedIn Recruiter](./attract-linkedin-recruiter.md).
+- Die Registerkarte **LinkedIn** enthält die LinkedIn-Informationen des Kandidaten. Um diese Registerkarte zu verwenden, müssen Sie Ihr LinkedIn-Konto in den Benutzereinstellungen verbinden, und die LinkedIn Recruiter-Verbindung muss hergestellt werden. Weitere Informationen finden Sie unter [Kandidaten mithilfe von LinkedIn Recruiter in Microsoft Dynamics 365 Talent - Attract anwerben](./attract-linkedin-recruiter.md).
 
 > [!NOTE]
 > Nur Kandidaten können deren Qualifikationen, Ausbildungsverlauf und Berufserfahrung aktualisieren.

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 21ff82df71e352ca176aa1635a5ffb478bbcaf0e
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536823"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771586"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-Inhalt zur Kostenrechnungsanalyse
 
@@ -40,7 +40,7 @@ Der **Kostenrechnungsanalyse**-Inhalt ermöglicht es Buchhaltern, Kosten zu anal
 
 Weitere Informationen zur Kostenrechnung finden Sie unter [Startseite Kostenrechnung](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
-Durch das Festlegen der Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den Power BI-Inhalt zur **Kostenrechnungsanalyse** geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für Kostenrechnungsinhalt für Power BI einrichten](setup-security-cost-accounting-content-pack.md).
+Durch das Festlegen der Zugriffsebenensicherheit in der Kostenrechnung und durch die Kombination mit Zeilenebenensicherheit in Power BI können Sie allen Kostenträgereigentümern Zugriff auf den Power BI-Inhalt zur **Kostenrechnungsanalyse** geben. Alle Daten in den Visualisierungen werden anschließend auf Basis der Zugriffsebene gefiltert, die in der Kostenrechnung gesteuert wird. Weitere Informationen zur Zugriffsebenensicherheit und zur Sicherheit auf Zeilenebene finden Sie unter [Sicherheit für den Power BI-Inhalt der Kostenrechnungsanalyse einrichten](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 Sie finden den Power BI-Inhalt zur **Kostenbuchhaltungsanalyse** in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
@@ -74,7 +74,7 @@ Der Inhalt enthält einen Satz Berichtsseiten. Jede Seite enthält einen Satz Me
 |                                  | Istkosten nach Kostenelementhierarchie und Kostenobjektdimensions-Mitgliedsname                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Das Datenmodells und die Entitäten verstehen
-Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt zur **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie in der [Übersicht Power BI-Integration mit Entitätsspeicher](power-bi-integration-entity-store.md).
+Die folgenden Daten werden verwendet, um die Berichtsseiten im Power BI-Inhalt zur **Kostenrechnungsanalyse** auszufüllen. Diese Daten werden als gesamte Messungen dargestellt, die im Entitätsshop bereitgestellt werden. Der Entitätsshop ist eine Microsoft SQL Server-Datenbank, die für die Analyse optimiert ist. Weitere Informationen finden Sie unter [Power BI Integration mit Entity Store](power-bi-integration-entity-store.md).
 
 Die folgenden aggregierten Messungen werden als Grundlage des Inhaltspakets verwendet.
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2922b00dffe8e99f8331d7aaa7e2f1b7dc4f9ea6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 405af4e3e122953bbfa74e7e91d2feef8f068708
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177938"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772627"
 ---
 # <a name="advanced-bank-reconciliation-setup-process"></a>Einrichtung des erweiterten Bankabstimmungsprozesses
 
@@ -31,7 +31,7 @@ ms.locfileid: "2177938"
 
 Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 Finance automatisch mit Bankbuchungen abstimmen. Dieser Artikel erläutert die Einrichtung von Prozesse für die Abstimmung.  
 
-Es gibt mehrere Stück, die vor der Verwendung der erweiterten Bankabstimmungsfunktion eingerichtet werden müssen. Weitere Informationen zur Einrichtung von Bankauszugsimport finden Sie unter [Einrichten von Bankauszugimportprozess](set-up-advanced-bank-reconciliation-import-process.md).  Anforderungen für Einrichtung des Abstimmungsvorgangs sind nachfolgend genauer dargelegt.
+Es gibt mehrere Stück, die vor der Verwendung der erweiterten Bankabstimmungsfunktion eingerichtet werden müssen. Weitere Informationen zur Einrichtung von Bankauszugsimport finden Sie unter [Einrichten des erweiterten Bankabstimmungs-Importprozesses](set-up-advanced-bank-reconciliation-import-process.md).  Anforderungen für Einrichtung des Abstimmungsvorgangs sind nachfolgend genauer dargelegt.
 
 ## <a name="transaction-codes"></a>Art des Geschäftes
 Abstimmungscodes können als Teil von Bankabstimmungsübereinstimmungsregeln verwendet werden. Transaktionscodes helfen, nur die gleichen Buchungsarten zwischen Finance und Ihrem Bankauszug abzustimmen. Um diesen Abgleichstyp zu bewerkstelligen, müssen Sie zuerst die Transaktionsarten definieren, die für Banktransaktionen von Finance verwendet werden. Ordnen Sie dann diese Typen den Auszugstransaktionscodes zu, die von der Bank verwendet werden. Transaktionsarten für Banktransaktionen werden auf der Seite **Banktransaktionsart** definiert. Dies gilt auch dort, wo Sie das Hauptkonto definieren, das für Buchungen im Zusammenhang mit Transaktionsarten verwendet wird. 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 074132af2111debee4bea894b559744b4470454d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 78b3b20ed56cbb6404f5526e90fdcefcaec9bf3f
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177918"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771960"
 ---
 # <a name="cost-accounting-home-page"></a>Startseite für die Kostenrechnung
 
@@ -39,17 +39,17 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 |      |   |
 |------|---|
-|  [Basisentitäten konfigurieren (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)  |[Dimensionen erstellen](cost-elements.md)  |
-|  [Dimensionshierarchie erstellen](dimension-hierarchy.md)  |[Grundlegende Einrichtung erstellen](./tasks/define-cost-control-units.md)| 
-| [Zuteilungsbasis definieren](allocation-bases.md)|[Richtlinien definieren](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Datequelle und Datenanbieter](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Datequelle und Datenanbieter](./tasks/process-trace-source-data.md)     | 
-|[Gemeinkostenberechnung](overhead-calculation.md)  | [Analyse und Berichterstellung](cost-control-workspace.md)   |
+|  [Basisentitäten konfigurieren (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-Konto erforderlich)  |[Kostenelementdimensionen](cost-elements.md)  |
+|  [Dimensionshierarchie](dimension-hierarchy.md)  |[Kostenkontrolleinheiten definieren](./tasks/define-cost-control-units.md)| 
+| [Zuteilungsbasen](allocation-bases.md)|[Eine Kostenzuweisungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [Eine Datenquelle für das Sachkonto der Kostenrechnung verwalten](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Quelldaten verarbeiten und nachverfolgen](./tasks/process-trace-source-data.md)     | 
+|[Gemeinkostenberechnung](overhead-calculation.md)  | [Kostensteuerungs-Arbeitsbereich](cost-control-workspace.md)   |
 
 ## <a name="get-started-videosbr"></a>Erste Schritte-Videos<br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
 | [Erste Schritte mit Kostenrechnung](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Mobiler Arbeitsbereich für die Kostenrechnung](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Verwendung von Excel zur Kostenrechnungsanalyse](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
-|  |  |                             |
+
 
 

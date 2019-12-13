@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 43f14a1cbd016335b857fdff1147740b27d5c765
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 3d23375ec7ebe9b43c2d2e3e376e26c348131bd3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653322"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812259"
 ---
 # <a name="register-consumption"></a>Verbrauch registrieren
 
@@ -33,7 +33,7 @@ ms.locfileid: "2653322"
 
 Wenn ein Wartungsauftrag abgeschlossen ist, ist der nächste Schritt die Verbrauchserfassung und die Buchung der Journale. Sie können Anmeldungen zu den folgenden Verbrauchsarten vornehmen: Stunden, Elemente und Ausgaben. Die verschiedenen Verbrauchsarten werden erfasst und auf der Seite **Arbeitsauftragserfassungen** gebucht. Die Erfassungseinrichtung in **Anlagenmanagement** dient der Erstellung und Buchung von separaten Journalen für Stunden, Posten und Ausgaben im Modul **Projektmanagement und Abrechnung**.
 
-In einigen Fällen können Sie einem Arbeitsauftrag Prognosezeile hinzufügen oder löschen. Die Einrichtung eines Arbeitsauftrags-Lebenszykluszustands, der zugehörige Projekttyp und die mit dem Projekttyp verbundenen Stufenregeln bestimmen, ob Sie Erfassungszeilen hinzufügen oder bearbeiten können. Lesen Sie mehr über den Lebenszyklus von Arbeitsaufträgen und die damit verbundenen Projektphasen unter [Integration in das Projektmanagement und Rechnungswesen](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
+In einigen Fällen können Sie einem Arbeitsauftrag Prognosezeile hinzufügen oder löschen. Die Einrichtung eines Arbeitsauftrags-Lebenszykluszustands, der zugehörige Projekttyp und die mit dem Projekttyp verbundenen Stufenregeln bestimmen, ob Sie Erfassungszeilen hinzufügen oder bearbeiten können. Weitere Informationen über den Lebenszyklus von Arbeitsaufträgen und die damit verbundenen Projektphasen finden Sie unter [Prognosen, Arbeitsaufträge und Projekte](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
 >[!NOTE]
 >Es ist möglich, eine automatische Buchung von Erfassungen über den Lebenszyklus eines Arbeitsauftrags einzurichten. Weitere Informationen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](../setup-for-work-orders/work-order-lifecycle-states.md).

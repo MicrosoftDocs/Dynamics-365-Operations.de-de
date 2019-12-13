@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10
 ms.search.validFrom: 2019-02-28
-ms.openlocfilehash: 521fdc98c8af51f6f244f9aa606ce047d014edf1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3cb3b25503b559f21c45c0232a8c0abd3e415eb3
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250437"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773621"
 ---
 # <a name="project-mobile-applications-overview"></a>Überblick über mobile Project-Anwendungen
 
@@ -45,4 +45,7 @@ Meine Arbeitszeitnachweise (optimiert für Mobile) und Arbeitszeitnachweise für
 
 ## <a name="for-more-information"></a>Weitere Informationen
 
-Weitere Informationen finden Sie unter [Microsoft Dynamics 365 Project Timesheet – mobile Anwendung](project-timesheet.md), [Projektarbeitszeittabellen auf einem mobilen Gerät]( project-time-entry-mobile-workspace.md), [Projektarbeitszeittabellen auf einem mobilen Gerät](Mobile-timesheets.md) und [Implementieren benutzerdefinierter Felder für die mobile Project Timesheet-App](custom-fields-mobile.md).
+- [Mobile Projektarbeitszeitnachweis-Anwendung](project-timesheet.md)
+- [Projektzeiteintrag]( project-time-entry-mobile-workspace.md)
+- [Projektarbeitszeitnachweise auf einem mobilen Gerät](Mobile-timesheets.md)
+- [Implementieren Sie benutzerdefinierte Felder für die Microsoft Dynamics 365 Project Timesheet mobile App auf iOS und Android](custom-fields-mobile.md)

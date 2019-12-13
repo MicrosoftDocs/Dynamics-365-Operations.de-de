@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a4759f55eceba923b47d906a764edcad34bf2f2
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 80236da5220aa9c70d5c488c09b457a470f0225a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2571598"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811848"
 ---
 # <a name="create-an-asset"></a>Eine Anlage erstellen
 
@@ -36,15 +36,15 @@ In diesem Thema wird beschrieben, wie eine Anlage in der Anlageverwaltung erstel
 1. Klicken Sie auf **Anlagenverwaltung** > **Gemeinsam** > **Anlagen** > **Alle Anlagen** oder **Aktive Anlagen**.
 2. Klicken Sie auf die Schaltfläche **Neu**.
 3. Im Dialogfeld **Anlagen erstellen** geben Sie die DAten zu **Anlagen** (Die Anlagen-Kennung) und den Anlagennamen ein. Wählen Sie das Datum und die Zeit für die Anlage im Feld **Effektiv**. Ab diesem Datum sind Sie in der Lage, die Anlage auf einem funktionalen Stnadort zu installieren und Die Anlage in der Anlagenstruktur zu verschieben oder zu ersetzen.
-4. Im Feld **Anlagentyp** wählen Sie den Anlagentyp für die Anlage aus (Pflichtfeld). Bei Bedarf wählen Sie **Anlagenhersteller** und **Anlagenmodell** für die Anlage aus. Wenn nur ein Produkt eingerichtet wurde, wird dieses Produkt automatisch im Feld **Anlagenhersteller** ausgewählt. Die Auswahl, die in den Feldern **Anlagenhersteller** und **Anlagenmodell** verfügbar ist, hängt von der Einstellung in [Anlagenhersteller und -Modell](../setup-for-objects/product-and-model.md) ab.
+4. Im Feld **Anlagentyp** wählen Sie den Anlagentyp für die Anlage aus (Pflichtfeld). Bei Bedarf wählen Sie **Anlagenhersteller** und **Anlagenmodell** für die Anlage aus. Wenn nur ein Produkt eingerichtet wurde, wird dieses Produkt automatisch im Feld **Anlagenhersteller** ausgewählt. Die Auswahl, die in den Feldern **Anlagenhersteller** und **Anlagenmodell** verfügbar ist, hängt von der Einstellung in [Anlagenhersteller und -Modelle](../setup-for-objects/product-and-model.md) ab.
 5. In der Gruppe ist **Übergeordnete Anlage** ist das Feld **Aktivposten** als Standardwert leer. Bei Bedarf können Sie eine übergeordnete Anlage auswählen, und anschließend werden alle Felder in der Gruppe **Übergeordnete Anlage** automatisch aufgefüllt.
 >[!NOTE]  
->Wenn Sie andererseits eine übergeordnete Anlage ausgewählt haben, stehen zwei oder drei Registerkarten zur Verfügung: Die Registerkarte **Meine Anlagen** enthält die Anlagen, die den funktionalen Standorten zugeordnet sind, auf denen möglicherweise Sie (der Wartungsarbeiter, der beims System angemeldet ist), zugeordnet werden. Wenn keine funktionalen Standorte für einen Wartungsarbeiter im Formular [Wartungsarbeiter](../setup-for-objects/workers-and-worker-groups.md) eingerichtet werden, wird die Registerkarte **Meine Anlagen** nicht angezeigt. Die Registerkarte **Aktive Anlagen** enthält eine Liste aller Anlagen mit dem Anlagenlebenszyklusstatus „Aktiv“. Die Registerkarte **Anlagenansicht** enthält eine Strukturansicht der funktionalen Standorte und Anlagen, die für diese Standorte installiert sind.
+>Wenn Sie andererseits eine übergeordnete Anlage ausgewählt haben, stehen zwei oder drei Registerkarten zur Verfügung: Die Registerkarte **Meine Anlagen** enthält die Anlagen, die den funktionalen Standorten zugeordnet sind, auf denen möglicherweise Sie (der Wartungsarbeiter, der beims System angemeldet ist), zugeordnet werden. Wenn keine funktionalen Standorte für einen Wartungsarbeiter im Formular [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md) eingerichtet werden, wird die Registerkarte **Meine Anlagen** nicht angezeigt. Die Registerkarte **Aktive Anlagen** enthält eine Liste aller Anlagen mit dem Anlagenlebenszyklusstatus „Aktiv“. Die Registerkarte **Anlagenansicht** enthält eine Strukturansicht der funktionalen Standorte und Anlagen, die für diese Standorte installiert sind.
 
 6. Der funktionale Standardstandort, den Sie eingerichtet haben, wird für die Anlage in der Gruppe **Anlagen** > im Feld **Funktionaler Standort** vorgeschlagen. Wählen Sie bei Bedarf einen anderen, funktionalen Standort aus.
 
 >[!NOTE]
->Sobald Soe eine Anlage erstellt haben, können Sie auf einem anderen funktionalen Standort installieren, falls erforderlich. Nur Anlagen der obersten Ebene (Anlagen ohne eine übergeordnete Anlage) können auf einen funktionalen Standort installiert werden. Das bedeutet, dass Sie die übergeordnete Ebene sowie sämtliche untergeordneten Anlagen im ausgewählten funktionalen Standorten einrichten. Lesen Sie mehr über das Installieren von Anlagen auf funktionalen Standorten in [Funktionale Standorte](../functional-locations/introduction-to-functional-locations.md).
+>Sobald Soe eine Anlage erstellt haben, können Sie auf einem anderen funktionalen Standort installieren, falls erforderlich. Nur Anlagen der obersten Ebene (Anlagen ohne eine übergeordnete Anlage) können auf einen funktionalen Standort installiert werden. Das bedeutet, dass Sie die übergeordnete Ebene sowie sämtliche untergeordneten Anlagen im ausgewählten funktionalen Standorten einrichten. Lesen Sie mehr über das Installieren von Anlagen auf funktionalen Standorten in [Einführung in funktionale Standorte](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klicken Sie auf **OK**.
 8. Wählen Sie die Anlage in der Liste **Alle Anlagen** aus und klicken Sie auf die Schaltfläche **Bearbeiten**, um weitere Informationen zur Anlage hinzuzufügen.
@@ -53,13 +53,13 @@ In diesem Thema wird beschrieben, wie eine Anlage in der Anlageverwaltung erstel
 
 Der funktionale Standort, dem die Anlage zugeordnet ist, wird im Feld **Funktionaler Standort** angezeigt. Wenn die Anlage eine übergeordnete Anlage ist, ist die Anzahl von untergeordneten Elementen, die der Anlage zugeordnet sind, im Feld **Untergeordnet** angezeigt. Wenn die Anlage eine untergeordnete Anlage ist, wird die Kennzeichnung der übergeordneten Elementen im Feld **Übergeordnet** angezeigt.
 
-Sie können **Anlagenhersteller** und **Anlagenmodell** Informationen zur Anlage bearbeiten, die verwendet wird, um Ersatzteile, alternative Ersatzteile und Stellentypenstandards zu verwalten. Lesen Sie [Anlagenhersteller und -Modell](../setup-for-objects/product-and-model.md), um weitere Informationen anzuzeigen. Sie können auch Informationen über **Modelljahr** und **Seriennummer** hinzufügen, falls erforderlich.
+Sie können **Anlagenhersteller** und **Anlagenmodell** Informationen zur Anlage bearbeiten, die verwendet wird, um Ersatzteile, alternative Ersatzteile und Stellentypenstandards zu verwalten. Weitere Informationen finden Sie unter [Anlagenhersteller und -modelle](../setup-for-objects/product-and-model.md). Sie können auch Informationen über **Modelljahr** und **Seriennummer** hinzufügen, falls erforderlich.
 
 **Aktueller Lebenszyklusstatus** wird verwendet, um festzulegen, ob die Anlage aktiv oder inaktiv ist. Wenn eine Anlage erstellt wird, ist die Phase immer auf der ersten Phase in der Anlagenphasengruppe festgelegt. Wenn Sie bereit sind, eine Anlage zu aktivieren, klicken Sie **Aktualisierungsanlagenstatus** und wählen Sie den Lebenszyklusstatus, den Sie als „aktive Anlage“ festgelegt haben und klicken Sie auf **OK**
 
 **Hinweis:** Wenn eine Anlage auf „inaktiv“ festgelegt ist, ist es nicht mehr möglich, Arbeitsaufträge für die Anlage zu erstellen. Außerdem können Sie keine vorbeugenden Wartungsaufträge für eine inaktive Anlage planen.
 
-Die Felder **Leistungsebene** und **Risiko** beziehen sich auf die Arbeitsaufträge, die für die Anlage erstellt werden. Die Felder enthalten die Nummern **Leistungsebene** und **Priorität**, die für die aktuellen Einstellungen für die Anlage berechnet werden. Weitere Informationen finden Sie unter [Anlagenservicelevel](../setup-for-objects/object-priorities.md) und [Anlagenpriorität](../setup-for-objects/object-criticalities.md) bezüglich der Einrichtung dieser Werte.
+Die Felder **Leistungsebene** und **Risiko** beziehen sich auf die Arbeitsaufträge, die für die Anlage erstellt werden. Die Felder enthalten die Nummern **Leistungsebene** und **Priorität**, die für die aktuellen Einstellungen für die Anlage berechnet werden. Weitere Informationen zum Einrichten dieser Werte finden Sie unter [Anlagenservicelevel](../setup-for-objects/object-priorities.md) und [Typen kritischer Werte für Anlagen](../setup-for-objects/object-criticalities.md).
 
 ## <a name="asset"></a>Anlage
 

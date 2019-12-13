@@ -1,6 +1,6 @@
 ---
-title: Praktische Empfehlungen
-description: In diesem Thema wird erläutert, wie die Lernfähigkeit einer Maschine verwendet werden kann, um Empfehlungen für Stellen und Stellen-Bewerber bereitzustellen.
+title: Intelligente Empfehlungen in Attract
+description: Dieser Artikel erklärt, wie maschinelles Lernen genutzt werden kann, um Empfehlungen für Stellen und Bewerber in Microsoft Dynamics 365 Talent - Attract.
 author: andreabichsel
 manager: AnnBe
 ms.date: 05/16/2019
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: beb54753c50e398197353f86c2a1239a96b879eb
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: fa06821c98e42dcd8590a764db9beb4a5c33fca2
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1741751"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832790"
 ---
-# <a name="intelligent-recommendations"></a>Praktische Empfehlungen
+# <a name="intelligent-recommendations-in-attract"></a>Intelligente Empfehlungen in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Lernfähigkeit einer Maschine kann Personalbeschaffungsmitarbeitern und Vorgesetzten helfen, mögliche Top-Kandidaten für eine Stelle zu identifizieren. Sie kann auch Interessenten helfen, die Position zu finden, die am besten zu ihrem Profil und ihren Interessen passt. Während diese Funktion verwendet werden und Feedback gegeben wird, verbessern sich Empfehlungen.
 
 > [!NOTE] 
 > - Die intelligente Empfehlungsfunktion sind nur mit dem [umfassenden Add-On für Neueinstellungen](https://docs.microsoft.com/dynamics365/unified-operations/talent/attract-comprehensive-hiring) verfügbar.
-> - Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe des **Admin Center** in Attract. Setzen Sie **Kandidatenempfehlung**, **Einzelvorgangsempfehlung** und **Interessentenempfehlung** auf **Aktiviert** fest. Weitere Informationen finden Sie unter [Zugriff auf Vorschaufunktionen im Talent](./access-preview-feature.md). 
+> - Die in diesem Abschnitt genannte Funktion steht im Rahmen einer Vorschauversion zur Verfügung. Inhalt und Funktionsweise unterliegen Änderungen. Um diese Funktion zu verwenden, bitten Sie einen Administrator um die Aktivierung mithilfe des **Admin Center** in Attract. Setzen Sie **Kandidatenempfehlung**, **Einzelvorgangsempfehlung** und **Interessentenempfehlung** auf **Aktiviert** fest. Weitere Informationen finden Sie unter [Zugriffsvorschau-Funktionen in Microsoft Dynamics 365 Talent](./access-preview-feature.md). 
 
 
 ## <a name="candidate-recommendations"></a>Kandidatenempfehlungen

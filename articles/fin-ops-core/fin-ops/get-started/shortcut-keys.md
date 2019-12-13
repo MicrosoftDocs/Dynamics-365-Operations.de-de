@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd5c80bc53029426d7e42c4854e0effc48ef202a
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537807"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811554"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -238,5 +238,5 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Ganz nach oben/unten in der Suche wechseln                                                                                    | POS1 / ENDE                       |
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Tastaturkürzel für den Berichts-Designer](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+- [Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

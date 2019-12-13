@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3bb30ddffb86c7083f40863c0c336fc5f65ce8f5
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 96cd2fc988df11c616faf06cf0905acd6b3d6dcc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248979"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813522"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Zusammenarbeiten mit Kreditoren mithilfe des Kreditorenportals
 
@@ -31,7 +31,7 @@ ms.locfileid: "2248979"
 
 In diesem Artikel wird beschrieben, wie Einkaufsvertreter das Kreditorenportal nutzen können, um mit externen Kreditoren während des Bestellungsbestätigungsprozesses zusammenzuarbeiten. Diese Informationen gelten nur für die Versionen Februar 2016 und Mai 2016 von Dynamics AX.
 
-Die Informationen in diesem Thema betreffen nur die Versionen Februar 2016 und Mai 2016 von Microsoft Dynamics AX. Weitere Informationen über die neue Kreditorenzusammenarbeitsfunktion finden Sie unter [Nutzung der Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)  
+Die Informationen in diesem Thema betreffen nur die Versionen Februar 2016 und Mai 2016 von Microsoft Dynamics AX. Weitere Informationen über die neue Kreditorenzusammenarbeitsfunktion finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](vendor-collaboration-work-external-vendors.md)  
 
 Das Kreditorenportal wendet sich an Kreditoren, die über keine EDI-Integration (Electronic Data Interchange) mit Microsoft Dynamics AX für den Austausch von Bestellungsinformationen (PO) verfügen. Das Portal ermöglicht Einkaufsvertretern, eine PO an den Kreditor zu senden und die Antwort „Bestätigt“ oder „Abgelehnt“ direkt in Dynamics AX zu erhalten.  
 
@@ -98,9 +98,9 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Konfigurieren der Sicherheit für Kreditorenportalbenutzer](configure-security-vendor-portal-users.md)
+[Kreditorenportalbenutzersicherheit](configure-security-vendor-portal-users.md)
 
-[Arbeitsbereich für Kreditor-Kooperationsrechungen](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Arbeitsbereich für Kreditorkooperationsrechnungen](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 

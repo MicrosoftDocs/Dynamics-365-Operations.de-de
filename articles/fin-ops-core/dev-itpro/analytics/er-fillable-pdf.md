@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13744df950040056ba03a3847d84f93e266ea6c3
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 96426ce54ec1b37c6751d990503d95960c2913df
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181449"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771305"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>ER-Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
 
@@ -46,7 +46,7 @@ Bevor Sie beginnen, müssen Sie eine der folgenden Arten des Zugriffs haben, abh
     - Funktionaler Berater für elektronische Berichterstellung
     - Systemadministrator
 
-Sie müssen auch die Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+Außerdem müssen Sie die Prozedur [Konfigurationsanbieter anlegen ausfüllen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 Schließlich müssen Sie die folgenden Dateien herunterladen von[CustomerSource](https://go.microsoft.com/fwlink/?linkid=874111).
 
@@ -300,5 +300,5 @@ Die folgende Abbildung zeigt ein Beispiel einer anderen Seite des Berichts, der 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [ER Entwerfen einer Konfiguration für das Erstellen von Berichten im OPENXML-Format](tasks/er-design-reports-openxml-2016-11.md)
-- [EB-Konfigurationen entwerfen, um Berichte im Microsoft Word Format zu generieren](tasks/er-design-configuration-word-2016-11.md)
+- [ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)](tasks/er-design-reports-openxml-2016-11.md)
+- [EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren](tasks/er-design-configuration-word-2016-11.md)

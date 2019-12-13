@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: b5c54d921e2955bc866ffd1ca516169790d33127
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: c8655af567ef56c535ce0e43cb76c28c58dc1eb3
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2024229"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814604"
 ---
 # <a name="questionnaires"></a>Fragebögen
 
@@ -44,17 +44,17 @@ Die folgende Tabelle enthält Links zu Informationen über die Kernaufgaben von 
 | Thema| Beschreibung|
 |------|------------|
 | [Entwerfen eines Fragebogens](design-questionnaires.md)  | Dieser Artikel enthält die Verfahrensweise zum Entwerfen von Fragebogenparametern. Der Designprozess umfasst die Einrichtung von Voraussetzungen, Fragen und Antworten und die Kombination dieser Element in einen Fragebogen. |
-| [Fragebögen verteilen und abschließen](distribute-questionnaires.md)  | Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen.                                                                       |
-| [Anzeigen und beurteilen der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md) | Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden.                                                                                        |
+| [Verteilen und Planen von Fragebögen](distribute-questionnaires.md)  | Dieser Artikel bietet Informationen zur Verteilung eines Fragebogens an die Befragungsteilnehmern und zum Abschließen von Fragebögen.                                                                       |
+| [Betrachten und bewerten Sie die Ergebnisse des Fragebogens](evaluate-questionnaire-results.md) | Dieser Artikel enthält Informationen darüber, wie die Ergebnisse ausgefüllter Fragebögen angezeigt und ausgewertet werden.                                                                                        |
 
 
 
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Entwurf von Fragebögen](design-questionnaires.md)
+[Entwerfen von Fragebögen](design-questionnaires.md)
 
-[Verteilen und Abschließen von Fragebögen](distribute-questionnaires.md)
+[Verteilen und Planen von Fragebögen](distribute-questionnaires.md)
 
-[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+[Anzeigen und Auswerten der Ergebnisse eines Fragebögen](evaluate-questionnaire-results.md)
 

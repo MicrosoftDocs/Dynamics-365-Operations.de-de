@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a3251368e92eb2e24eb9e64bb615027d038ff660
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 11f6c96cc07c63d2c0c6a94385916b3396a77ed5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251084"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814972"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurieren Sie App-Feldnamen in der Warehousing-App
 
@@ -32,7 +32,8 @@ ms.locfileid: "2251084"
 
 In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
 
-**Hinweis:** Dieser Artikel gilt für Funktionen im Modul "Lagerortverwaltung". Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zu Warehousing konfiguriert wird, finden Sie im Lernprogramm [Installieren und Konfigurieren von Warehousing](install-configure-warehousing-app.md).
+> [!NOTE]
+> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zu Warehousing konfiguriert wird, finden Sie im Lernprogramm [Einrichten und Konfigurieren der Warehousing-App: Übersicht](install-configure-warehousing-app.md).
 
 ## <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 
@@ -142,4 +143,4 @@ Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufg
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einrichten und Konfigurieren von Microsoft Dynamics 365 for Finance and Operations – Lagerorte](install-configure-warehousing-app.md)
+[Einrichten und Konfigurieren der Warehousing-App: Übersicht](install-configure-warehousing-app.md)

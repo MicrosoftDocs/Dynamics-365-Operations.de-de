@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4e47aea3a9d1ce62a85aac9a4acce398b5847f1b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4bcc6937da0e9f66014d9c00668e0c6790433ba8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2191407"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811969"
 ---
 # <a name="optimization-advisor-overview"></a>Optimierungsratgeber – Übersicht
 
@@ -38,7 +38,7 @@ Falsche Konfiguration und Einstellung eines Moduls können die Verfügbarkeit vo
 
 Der Arbeitsbereich **Optimierungsratgeber** ist ein Tool, mit dem durch Poweruser, Business Analysten, Funktionsberater und IT-Supportfunktionen Probleme in der Modulkonfiguration und in Geschäftsdaten identifiziert werden können. Optimierungsratgeber schlägt Verfahren für Modulkonfiguration vor und bezeichnet die Daten, die veraltet oder falsch sind.
 
-Optimierungsratgeber führt in regelmäßigen Zeitabständen eine Gruppe von Regeln für bewährte Methoden aus. Ein Standardregelsatz ist verfügbar, allerdings können auch Benutzer Regeln erstellen, die spezifisch auf die Anpassungen, Lösungen von den unabhängigen Softwareherstellern (ISVs) und Geschäftsdaten bestimmt sind. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Erstellen neuer Regeln](./create-rules-optimization-advisor.md).
+Optimierungsratgeber führt in regelmäßigen Zeitabständen eine Gruppe von Regeln für bewährte Methoden aus. Ein Standardregelsatz ist verfügbar, allerdings können auch Benutzer Regeln erstellen, die spezifisch auf die Anpassungen, Lösungen von den unabhängigen Softwareherstellern (ISVs) und Geschäftsdaten bestimmt sind. Weitere Informationen zum Erstellen von Regeln finden Sie unter [Regeln für Optimierungsberater erstellen](./create-rules-optimization-advisor.md).
 
 Wenn ein Verstoß einer Regel erkannt wird, wird eine Optimierungsverkaufschance generiert und wird im Arbeitsbereich **Optimierungsratgeber** angezeigt. Ein Benutzer kann entsprechenden Korrektur-Aktivitäten direkt im Formular **Optimierungsratgeber** ausführen.
 
@@ -92,6 +92,6 @@ Um die Bewertung bestimmter Regeln zu deaktivieren, wählen Sie die Verkaufschan
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Erstellen neuer Regeln](./create-rules-optimization-advisor.md)
+[Regeln für Optimierungsratgeber erstellen](./create-rules-optimization-advisor.md)
 
 [Optimierungsratgeber in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)

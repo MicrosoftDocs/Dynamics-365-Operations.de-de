@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f61c142fff73fdeeca573cca3f54e654511af1e
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 132817fefb9592764d1adaf9f714c27108ce88ae
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1556411"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815110"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch
 
@@ -51,15 +51,15 @@ In der folgenden Grafik wird der Ablauf der Produktprogrammplanung veranschaulic
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)
+[Hauptpläne und Funktion für mehrere Standorte – Übersicht](master-plan-multisite-functionality.md)
 
-[Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+[Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort obligatorisch](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort obligatorisch](master-plan-site-coverage-warehouse-mandatory.md)
+[Hauptplanung für Standortdeckung, Lagerort obligatorisch](master-plan-site-coverage-warehouse-mandatory.md)
 
-[Produktprogrammplanungslauf - Standort- und Lagerdisposition, Lagerort nicht obligatorisch](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+[Produktprogrammplanung für Disposition an Standort und Lagerort, Lagerort nicht obligatorisch](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
-[Produktprogrammplanungslauf - Ermittlung der Stücklistenversion](master-plan-bom-version-determined.md)
+[Die Stücklistenversion bestimmen](master-plan-bom-version-determined.md)
 
 
 

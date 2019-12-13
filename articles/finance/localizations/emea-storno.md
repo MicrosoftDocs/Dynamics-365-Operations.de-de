@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: v-semaz
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95d85df8c5e23267f9be6c75370cadad8da499c2
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 2cefdbc03b19eebff8141d4f578047de002ace56
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250343"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773455"
 ---
 # <a name="storno-accounting"></a>Stornobuchung
 
@@ -32,9 +32,9 @@ Stornobuchung ist die Verwendung negativer Zahlen, um Originaleinträge im Journ
 *Stornobuchung* ist die Verwendung negativer Lastschrift- oder Gutschriftbeträge, um Originaleinträge im Journalkonto rückgängig zu machen. Buchhalter schreiben Stornoeinträge üblicherweise in roter Farbe, deshalb wird diese Buchungsform auch als *Rotes Storno* bezeichnet. Mit einer Stornobuchung können Sie ein Dokument mit fehlerhaften Beträgen stornieren, Sie sollten nach der Stornierung jedoch immer den richtigen Dokumentenbetrag eingeben.
 
 ## <a name="example"></a>Beispiel
-Ein Buchhalter bucht eine Rechnung von einem Zulieferer über 120 USD. Beim Zahlungsprozess wird festgestellt, dass der Buchhalter versehentlich 120 USD statt 102 USD eingetragen hat. Jetzt muss der Buchhalter ein Storno für das Originaldokument erstellen und dann die richtige Rechnung über 102 USD erstellen. Weitere Informationen finden Sie unter [Rechnung vom Zulieferer](../accounts-payable/vendor-invoices-overview.md). Die folgende Tabelle zeigt die allgemeine Eingabe für Storno.
+Ein Buchhalter bucht eine Rechnung von einem Zulieferer über 120 USD. Beim Zahlungsprozess wird festgestellt, dass der Buchhalter versehentlich 120 USD statt 102 USD eingetragen hat. Jetzt muss der Buchhalter ein Storno für das Originaldokument erstellen und dann die richtige Rechnung über 102 USD erstellen. Weitere Informationen finden Sie unter [Überblick über Lieferantenrechnungen](../accounts-payable/vendor-invoices-overview.md). Die folgende Tabelle zeigt die allgemeine Eingabe für Storno.
 
-| **Dokument-ID** | **Konto** | **Soll** | **Haben** | **Kommentar**                  |
+| **Dokumentkennung** | **Konto** | **Soll** | **Haben** | **Kommentar**                  |
 |-----------------|-------------|-----------|------------|------------------------------|
 | Invoice0001     | Einkaufskonto   | 120       |            | Originalrechnung (fehlerhaft) |
 | Invoice0001     | Zuliefererkonto  |           | 120        | Originalrechnung (fehlerhaft) |
@@ -168,5 +168,5 @@ Sie können die Anzeige von Storno in Formularen, Tabellen, Spalten und Feldern 
 ![Journaleintrag-Stornobeträge](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Wie Dokumente Storno erstellen
-Bestimmte Dokumente erzeugen Stornierungstransaktionen. Beispielsweise stornieren die Fremdwährungsüberprüfung für das Sachkonto, Kreditoren- und Debitorendokumente nicht realisierte Gewinne und Verluste. Weitere Informationen finden Sie unter [Fremdwährungsberprüfung für das Sachkonto](../general-ledger/foreign-currency-revaluation-general-ledger.md) oder [Kreditoren und Debitoren](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Nachdem eine Stornierungstransaktion erstellt wurde, werden neue Transaktionen mit nicht realisierten Gewinnen und Verlusten erstellt. Stornierungstransaktionen werden auch für Bestand erstellt. Weitere Informationen finden Sie unter [Bestandsabschluss](../../supply-chain/cost-management/inventory-close.md). Es gibt Dokumente, in denen Sie das zuvor gebuchte Dokument stornieren können. Beispielsweise kann der Benutzer eine Gutschriftanzeige erstellen, um eine zuvor erstellte Rechnung zu stornieren. Dokumente verwenden spezifische Parameter, um Gegenbuchungen oder Stornotransaktionen zu erstellen. Beispielsweise erzeugt die Fremdwährungsüberprüfung Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für das Sachkonto. Die Kundengutschriftanzeige erzeugt Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für die Debitorengutschriftsanzeige.
+Bestimmte Dokumente erzeugen Stornierungstransaktionen. Beispielsweise stornieren die Fremdwährungsüberprüfung für das Sachkonto, Kreditoren- und Debitorendokumente nicht realisierte Gewinne und Verluste. Weitere Details finden Sie unter [Neubewertung der Fremdwährung für Hauptbuch](../general-ledger/foreign-currency-revaluation-general-ledger.md) oder [Neubewertung der Fremdwährung für Kreditorenkonten und Debitoren](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Nachdem eine Stornierungstransaktion erstellt wurde, werden neue Transaktionen mit nicht realisierten Gewinnen und Verlusten erstellt. Stornierungstransaktionen werden auch für Bestand erstellt. Weitere Informationen finden Sie unter [Bestandsabschluss](../../supply-chain/cost-management/inventory-close.md). Es gibt Dokumente, in denen Sie das zuvor gebuchte Dokument stornieren können. Beispielsweise kann der Benutzer eine Gutschriftanzeige erstellen, um eine zuvor erstellte Rechnung zu stornieren. Dokumente verwenden spezifische Parameter, um Gegenbuchungen oder Stornotransaktionen zu erstellen. Beispielsweise erzeugt die Fremdwährungsüberprüfung Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für das Sachkonto. Die Kundengutschriftanzeige erzeugt Gegenbuchungs- oder Stornotransaktionen basierend auf dem Korrekturparameter für die Debitorengutschriftsanzeige.
 

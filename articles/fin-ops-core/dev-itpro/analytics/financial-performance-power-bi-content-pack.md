@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35db2b51274afa6dae4cb5f75b4ba5390b167a49
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3cbecf178d0588c51b831fbd55b536d3e4e41c27
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181748"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771118"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Financial Performance PowerBI.com-Lösung
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Diese PowerBI.com-Lösung ist veraltet, wie in [Power BI-Inhaltspakete auf AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) dokumentiert.
+> Diese PowerBI.com-Lösung wurde veraltet, wie in [ Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource) dokumentiert.
 
 Dieses Thema beschreibt die **Financial Performance** PowerBI.com-Lösung. Es beschreibt das Dashboard und die enthaltenen Berichte und liefert Informationen über das Datenmodell und die Entitäten, mit denen die Lösung erstellt wurde.
 

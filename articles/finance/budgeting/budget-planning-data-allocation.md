@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08141615e36c7bfe8b8a7984322dbb985568ee51
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177948"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772075"
 ---
 # <a name="budget-planning-data-allocation"></a>Datenzuteilung für Budgetplanung
 
@@ -36,28 +36,28 @@ Sie können die Daten in einem Budgetplan auf vielfältige Weise verteilen, um d
 ## <a name="allocation-methods"></a>Zuweisungsmethoden
 Drei Zuordnungsmethoden (Auf Perioden verteilen, Zu Dimensionen zuordnen und Sachkonto-Zuordnungsregeln verwenden) können Budgetplanpositionen erstellen, die auf den Positionen im gleichen Budgetplan basieren. Drei andere Methoden (Zusammenführen, Verteilen und Aus Budgetplan kopieren), können Budgetplanpositionen in anderen Budgetplänen erstellen. Für alle sechs Zuordnungsmethoden geben Sie das Zielszenario an. Das Zielszenario kann entweder dem Quellszenario gleichen oder sich davon sich unterscheiden. Darüber hinaus können Sie angeben, ob dem Haushaltsplan neue Positionen angehängt oder die aktuellen Positionen im Budgetplan ersetzt werden.
 
-[![Auf Perioden verteilen](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
-**Auf Perioden verteilen** – Eine Zuteilungskategorie wird verwendet, um die Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. Der Quellbetrag wird mehreren Positionen im Zielszenario basierend auf dem Prozentsatz und dem Datum zugewiesen, die in der Periodenzuteilungskategorie definiert werden.         
+[![Zuteilungsmethode „Auf Perioden verteilen“](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Auf Perioden verteilen** – Eine Pertiodenzuteilungskategorie wird verwendet, um die Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. Der Quellbetrag wird mehreren Positionen im Zielszenario basierend auf dem Prozentsatz und dem Datum zugewiesen, die in der Periodenzuteilungskategorie definiert werden.         
 
-[![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
-**Zu Dimensionen zuordnen** - die Budgetplanpositionen werden vom Quellbudgetplanungsszenario an einen oder mehrere Positionen im Zielszenario auf Grundlage der Prozentsätze und der Finanzdimensionen zugeordnet, die in einer ausgewählten Bedingung für Budgetzuteilung definiert werden.           
+[![Zuteilungsmethode „Zu Dimensionen zuordnen“](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
+**Zu Dimensionen zuordnen** – Die Budgetplanpositionen werden vom Quellbudgetplanungsszenario an einen oder mehrere Positionen im Zielszenario auf Grundlage der Prozentsätze und der Finanzdimensionen zugeordnet, die in einer ausgewählten Bedingung für Budgetzuteilung definiert werden.           
 
-![AggregateChart](./media/aggregatechart-300x230.png)
-**Zusammenführen** - Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario in zugeordneten (untergeordneten) Budgetplänen auf das Zielszenario in den übergeordneten Budgetplan verteilt. Diese Methode erlaubt Budgetbeträge, die auf einer niedrigeren Ebene in der Organisation vorbereitet werden, auf einer höheren Ebene zu konsolidierenden.          
+![Diagramm „Zusammenführen“](./media/aggregatechart-300x230.png)
+**Zusammenführen** – Die Budgetplanpositionen werden aus dem Quellbudgetplanszenario in zugeordneten (untergeordneten) Budgetplänen auf das Zielszenario in den übergeordneten Budgetplan verteilt. Diese Methode erlaubt Budgetbeträge, die auf einer niedrigeren Ebene in der Organisation vorbereitet werden, auf einer höheren Ebene zu konsolidierenden.          
 
-[![DistributeChart](./media/distributechart-300x230.png)](./media/distributechart.png)
-**Verteilen** - Die Budgetplanpositionen werden vom Quellbudgetplanungsszenario im übergeordneten Budgetplan dem Zielszenario in den zugehörigen (untergeordneten)Budgetplänen auf Grundlage die Finanzdimensionen der Organisationseinheiten der zugeordneten Pläne verteilt. Diese Methode erlaubt Budgetbeträge, die auf einer höheren Ebene in der Organisation vorbereitet werden, für eine örtlichere Überprüfung auszubreiten.           
+[![Diagramm „Verteilen“](./media/distributechart-300x230.png)](./media/distributechart.png)
+**Verteilen** – Die Budgetplanpositionen werden vom Quellbudgetplanungsszenario im übergeordneten Budgetplan dem Zielszenario in den zugehörigen (untergeordneten)Budgetplänen auf Grundlage die Finanzdimensionen der Organisationseinheiten der zugeordneten Pläne verteilt. Diese Methode erlaubt Budgetbeträge, die auf einer höheren Ebene in der Organisation vorbereitet werden, für eine örtlichere Überprüfung auszubreiten.           
 
-[![LedgerAllocationRules](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
-**Sachkonto-Zuordnungsregeln verwenden** - Die Budgetplanpositionen werden vom Quellbudgetplanungsszenario auf Grundlage der ausgewählten Sachkonto-Zuordnungsregel auf das Zielbudgetplanszenario verteilt. 
+[![Sachkonto-Zuordnungsregeln](./media/ledgerallocationrules-300x202.png)](./media/ledgerallocationrules.png)
+**Sachkonto-Zuordnungsregeln verwenden** – Die Budgetplanpositionen werden vom Quellbudgetplanungsszenario auf Grundlage der ausgewählten Sachkonto-Zuordnungsregel auf das Zielbudgetplanszenario verteilt. 
 
-[![CopyFromBudgetPlan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
-**Kopie des Haushaltsplans** - Wie bei der Verteilungszuordnungsmethode, Budgetplanpositionen werden im Ziel, auf Grundlage der Positionen in einem dazugehörigen Budgetplan erstellt. Für diese Methode muss der Quellbudgetplan nicht der übergeordnete Plan sein, kann jedoch auf jeder höheren Ebene in der Budgetplanhierarchie stehen. Diese Zuordnungsmethode ist hilfreich, wenn konsolidierte Beträge ursprünglich auf einer viel höheren Ebene geplant werden, und muss einer untergeordneten Ebene der Organisation für detaillierten Prüfung und Regulierung übertragen werden, bevor sie höhere Genehmigung erhalten können.          
+[![Aus Budgetplan kopieren](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
+**Aus Budgetplan kopieren** – Wie bei der Verteilungszuordnungsmethode, Budgetplanpositionen werden im Ziel, auf Grundlage der Positionen in einem dazugehörigen Budgetplan erstellt. Für diese Methode muss der Quellbudgetplan nicht der übergeordnete Plan sein, kann jedoch auf jeder höheren Ebene in der Budgetplanhierarchie stehen. Diese Zuordnungsmethode ist hilfreich, wenn konsolidierte Beträge ursprünglich auf einer viel höheren Ebene geplant werden, und muss einer untergeordneten Ebene der Organisation für detaillierten Prüfung und Regulierung übertragen werden, bevor sie höhere Genehmigung erhalten können.          
 
 ## <a name="using-allocation-methods-in-a-budget-plan"></a>Verwenden der Zuordnungsmethoden in einem Budgetplan
 Um Zuweisungen auf der Budgetplanseite auszuführen, wählen Sie die zuzuweisenden Positionen aus, und klicken Sie anschließend auf **Budget zuteilen**.
 
-[![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
+[![Schaltfläche „Budget zuteilen“](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Wählen Sie anschließend eine Zuordnungsmethode aus. Die übrigen Felder werden dann auf Grundlage der Methode festgelegt, die Sie ausgewählt haben. Diese Felder enthalten die Quelle und das Ziel der Budgetplandaten und eine Option, mit der Sie die Quelle durch einen angegebenen Faktor multiplizieren können, wenn die Zielbeträge erstellt werden, um die Massenregulierung zu vereinfachen. Sie können auch die Option **An Plan anheften** festlegen. Wählen Sie **Nein** aus, um die vorhandenen Budgetplanpositionen zu ersetzen, oder **Ja**, um die vorhandenen Budgetplanpositionen zu verwalten und neue Positionen für die zugeteilten Beträge hinzuzufügen.
 
@@ -70,7 +70,7 @@ Anschließend erstellen Sie eine Phasenzuteilung auf der Seite **Budgetplanungsk
 
 Schließlich fügen Sie in dem gewünschten Workflowstadium eine automatisierte Aufgabe für Budgetplanungsphasenzuteilung hinzu. Im folgenden Beispiel wurden zwei Budgetplanungsphasenzuteilungen (in rot umrissen) in den Workflow eingefügt.
 
-[![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+[![Zuteilungen für Budgetplanungsphase](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
 
 
 

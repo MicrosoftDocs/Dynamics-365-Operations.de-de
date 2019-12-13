@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Vorlagen
+title: E-Mail-Vorlagen in Attract erstellen
 description: 'Dieses Thema enthält Informationen zu den E-Mail-Vorlagen, die Sie in Microsoft Dynamics 365 Talent: Attract erstellen und verwenden können.'
 author: andreabichsel
 manager: AnnBe
@@ -18,15 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-15
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 7174fd96e5ddc9ba5a91eb423d08afd1daa45f48
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 55c12010cfd055ee6977f50e566b70f76a2e1682
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008035"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832883"
 ---
-# <a name="email-templates"></a>E-Mail-Vorlagen
-[!include[banner](../includes/banner.md)]
+# <a name="create-email-templates-in-attract"></a>E-Mail-Vorlagen in Attract erstellen
+
+[!include [banner](includes/banner.md)]
 
 Mithilfe der E-Mail-Vorlagen-Bibliothek können Administratoren ein einheitliches Design und Branding für alle E-Mails erstellen, die von Microsoft Dynamics 365 Talent: Attract und Offer gesendet werden. Administratoren können auch eine Sammlung von E-Mail-Inhaltsvorlagen zusammenstellen, die von anderen E-Mail-Nutzern verwendet werden können. Das Einstellungsteam kann diese Vorlagen in ihrem Workflow verwenden, um E-Mail-Nachrichten effizienter zu senden. Einige E-Mails werden so konfiguriert, dass sie automatisch gesendet werden, und der Administrator kann die Email-Vorlagen-Bibliothek verwenden, um den Inhalt für die E-Mails anzupassen.
 

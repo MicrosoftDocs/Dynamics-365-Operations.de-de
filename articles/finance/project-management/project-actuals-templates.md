@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: knelson
 ms.search.validFrom: 2016-11-28
 ms.dyn365.ops.version: AX 7.3.0
-ms.openlocfilehash: 0aeaa1ee4c35ca42a5382b3c7ff3519cba52996c
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 302ac0f456dd8a24dc02948ee657e359f5a9c844
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250529"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770334"
 ---
 # <a name="synchronize-project-actuals-directly-from-project-service-automation-to-the-project-integration-journal-for-posting-in-finance-and-operations"></a>Synchronisieren von Projekt-Ist-Werten direkt aus Project Service Automation mit der Projektintegrationserfassung für die Buchung in Finance and Operations
 
@@ -50,7 +50,7 @@ Die folgende Abbildung zeigt, wie Daten als Teil der Integration zwischen Projec
 
 ### <a name="template-and-tasks"></a>Vorlage und Aufgaben
 
-Wenn Sie auf die verfügbaren Vorlagen im Microsoft PowerApps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
+Wenn Sie auf die verfügbaren Vorlagen im Microsoft Power Apps-Admin Center zugreifen möchten, wählen Sie **Projekte**, und klicken Sie dann in der oberen rechten Ecke auf **Neues Projekt**, um die öffentliche Vorlage auszuwählen.
 
 Die folgende Vorlage und zugrunde liegenden Aufgaben werden verwendet, um Projektistwerte von Project Service Automation mit Finance zu synchronisieren:
 

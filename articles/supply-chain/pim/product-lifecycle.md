@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 83c523a23973f4fd146d8308fbb5ecb486224ad9
-ms.sourcegitcommit: e286572ce94a9442a5b3076c3ff5b429be0ed512
+ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "1865327"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813545"
 ---
 # <a name="product-lifecycle-state-overview"></a>Übersicht über den Zustand des Produktlebenszyklus
 
@@ -107,9 +107,9 @@ Verwenden Sie die folgenden Kriterien, um die freigegebenen Produkte und Produkt
 
 ## <a name="related-topics"></a>Verwandte Themen
 
--  [Einen neuen Lebenszyklusstatus erstellen (Aufgabenleitfaden)](tasks/new-product-lifecycle-state.md)
--  [Einen Standardlebenszyklusstatus erstellen (Aufgabenleitfaden)](tasks/default-product-lifecycle-state.md)
--  [Einem veröffentlichten Produktmaster einen Produktlebenszyklusstatus zuweisen (Aufgabenleitfaden)](tasks/product-lifecycle-state-released-product-master.md)
--  [Einem veröffentlichten Produkt einen Produktlebenszyklusstatus zuweisen (Aufgabenleitfaden)](tasks/product-lifecycle-state-released-product.md)
--  [Veraltete Produktvarianten finden und einen Produktlebenszyklus-Status (Aufgabenleitfaden) zuweisen](tasks/obsolete-product-variants.md)
--  [Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan (Aufgabenleitfaden) auszuschließen](tasks/exclude-products-master-planning.md)
+-  [Neuen Status für Produktlebenszyklus erstellen](tasks/new-product-lifecycle-state.md)
+-  [Status für Standardproduktlebenszyklus erstellen](tasks/default-product-lifecycle-state.md)
+-  [Einem veröffentlichten Produktmaster einen Produktlebenszyklus-Status zuweisen](tasks/product-lifecycle-state-released-product-master.md)
+-  [Einem veröffentlichten Produkt einen Produktlebenszyklus-Status zuweisen](tasks/product-lifecycle-state-released-product.md)
+-  [Finden Sie veraltete Produktvarianten und weisen Sie einen Produktlebenszyklusstatus zu](tasks/obsolete-product-variants.md)
+-  [Ein Produktlebenszyklusstatus erstellen, um Produkte vom Produktprogrammplan auszuschließen](tasks/exclude-products-master-planning.md)

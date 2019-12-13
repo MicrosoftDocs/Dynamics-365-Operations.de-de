@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00e1956950154051d4a916a013c2200029772e37
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: fd57b702220374ef5ac48e1af7c42827a21e7517
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547100"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813592"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Berechnungen für Produktkonfigurationsmodelle, FAQ
 
@@ -37,7 +37,7 @@ Berechnungen können für Arithmetik oder logische Operationen verwendet werden.
 ## <a name="what-is-a-calculation"></a>Was ist eine Berechnung?
 Eine Berechnung ist ein Element, das Sie in einem Produktkonfigurationsmodell verwenden können. Berechnungen ergänzen Einschränkungen, indem Sie Ihnen ermöglichen, Werte mithilfe von Dezimalzahlen zu berechnen, wenn Sie ein Produkt konfigurieren. Darüber hinaus verfügen Berechnungen über einen größeren Satz von Operatoren als bei Einschränkungen.  
 
-Wie eine Einschränkung ist eine Berechnung mit einer bestimmten Komponente in einem Produktkonfigurationsmodell verbunden und kann nicht von einer anderen Komponente wiederverwendet werden oder mit einer solchen geteilt werden. Ein wichtiger Unterschied zwischen Berechnungen und Einschränkungen ist, dass Berechnungen imperativ (unidirektional) sind, während Einschränkungen deklarativ sind (bidirektional). Weitere Informationen zu Einschränkungen finden Sie unter [Ausdruckseinschränkungen und Tabelleneinschränkungen](expression-constraints-table-constraints-product-configuration-models.md).  
+Wie eine Einschränkung ist eine Berechnung mit einer bestimmten Komponente in einem Produktkonfigurationsmodell verbunden und kann nicht von einer anderen Komponente wiederverwendet werden oder mit einer solchen geteilt werden. Ein wichtiger Unterschied zwischen Berechnungen und Einschränkungen ist, dass Berechnungen imperativ (unidirektional) sind, während Einschränkungen deklarativ sind (bidirektional). Weitere Informationen zu Einschränkungen finden Sie unter [Ausdruckseinschränkungen und Tabelleneinschränkungen in Produktkonfigurationsmodellen](expression-constraints-table-constraints-product-configuration-models.md).  
 
 Eine Berechnung besteht aus einem Zielattribut und einem Berechnungsausdruck.
 
@@ -88,7 +88,7 @@ Nr. Die Werte, die Sie festlegen, wenn Sie ein Produkt konfigurieren, sind die W
 Wenn Sie einen Eingabewert in einer Berechnung entfernen, wird der Wert des Zielattributs ebenfalls entfernt.
 
 ## <a name="why-do-i-receive-an-error-message-that-says-that-my-model-is-in-contradiction"></a>Warum erhalte ich eine Fehlermeldung, die darauf hinweist, dass mein Modell im Widerspruch steht?
-Diese Meldung wird angezeigt, wenn eine Berechnung einen Fehler enthält, oder ein Widerspruch in mindestens einer Einschränkung vorhanden ist. Weitere Informationen zu Widersprüchen finden Sie unter [Ausdruckseinschränkungen und Tabelleneinschränkungen](expression-constraints-table-constraints-product-configuration-models.md). Nachfolgend sind einige Situationen, wo Fehler in Berechnungen auftreten können:
+Diese Meldung wird angezeigt, wenn eine Berechnung einen Fehler enthält, oder ein Widerspruch in mindestens einer Einschränkung vorhanden ist. Weitere Informationen zu Widersprüchen in den Einschränkungen finden Sie unter [Ausdruckseinschränkungen und Tabelleneinschränkungen in Produktkonfigurationsmodellen](expression-constraints-table-constraints-product-configuration-models.md). Nachfolgend sind einige Situationen, wo Fehler in Berechnungen auftreten können:
 
 -   Ein Wert wird durch 0 (Null) geteilt.
 -   Ein Konflikt zwischen den folgenden zwei Elementen liegt vor:

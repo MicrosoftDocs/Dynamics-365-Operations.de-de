@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 5b52e1765d3afbe1730e96f58b601aebccd12787
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7154a6e8aff62b1ebf79edfecb1e1b99048f7c44
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181265"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771468"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Ziele für elektronische Berichterstellung (EB)
 
@@ -122,7 +122,7 @@ Wenn Sie **Aktiviert** auf **Ja** setzen, wird eine Vorschau der Ausgabe erstell
 
 ### <a name="power-bi-destination"></a>Power BI-Ziel
 
-Legen Sie **Aktiviert** auf **Ja** fest, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurden muss. Weitere Informationen finden Sie unter [Eine Konfiguration zur elektronischen Berichterstellung verwenden, um Power BI mit Daten aus Finance bereitzustellen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
+Legen Sie **Aktiviert** auf **Ja** fest, um Ihre ER-Konfiguration zu verwenden, um die Übertragung von Daten aus Ihrer Instanz von Finance zu den Microsoft Power BI-Diensten zu veranlassen. Die übertragenen Dateien werden auf einem Microsoft SharePoint Server gespeichert, der für diesen Zweck konfiguriert wurden muss. Weitere Informationen finden Sie unter [Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen](general-electronic-reporting-report-configuration-get-data-powerbi.md).
 
 > [!TIP]
 > Zum Überschreiben des Standardverhaltens (das Dialogfeld für eine Konfiguration) können Sie einen Zielverweis und ein Dateiziel für die Hauptausgabekomponente erstellen und alle Ziele deaktivieren.
@@ -163,4 +163,4 @@ Die Voraussetzung ist, dass das Format in ER-Konfigurationen verfügbar sein mus
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)

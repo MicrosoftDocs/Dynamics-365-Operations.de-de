@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89441ee4c799e2d1215fbd82e0490d7168e2aa1b
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 859d769b95c57663dc1bb76a632e34728a6691b5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1570808"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813877"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservieren von Lagermengen
 
@@ -55,7 +55,7 @@ Der Abschnitt **Bestandrichtlinie** enthält die folgenden Reservierungsrichtlin
 | FIFO-datumsgesteuert    | Wenn Sie im Formular die Option **FIFO-datumsgesteuert** aktivieren, wird die Lagerreservierung über ein Sortierdatum nach dem FIFO-Prinzip gesteuert. Chargen sind basierend auf dem frühesten Wareneingangsdatum nach dem Prinzip "first in, first out" (FIFO) reserviert.                                                                                                                                                                                                                                                                       |
 | Rückwärts ab Versanddatum | Diese Option ist nur verfügbar, wenn Sie die Option **FIFO datumsgesteuert** ausgewählt haben. Wenn Sie zusätzlich das Kontrollkästchen **Rückwärts ab Versanddatum** aktivieren, erfolgt die Lagerreservierung rückwärts ab dem gewünschten Lieferdatum unter Verwendung des LIFO-Prinzips (last in, first out). Sind vor dem Versanddatum keine Zugänge zu verzeichnen, wird eine FIFO-Reservierung vorgenommen.                                                                                                                                                                                                           |
 | Artikelverkaufsreservierung  | Bestimmt, ob die Artikelreservierung manuell oder automatisch erfolgt. Wenn eine Reservierung automatisch erfolgt, wird der Bestand reserviert, wenn Auftragspositionen erstellt werden. Es ist möglich, Reservierungen auf der Artikelnummerenebene für Stücklisten **Automatisch** oder für die einzelnen Elemente einer Stückliste**Auflösung** zu machen. Der Standardwert wird aus den für **Artikelvertriebsreservierung** **Debitorparametern** übernommen werden. Auf dieser Seite wird der Wert im Reservierungsfeld im **Abschnitt** **Vertriebsstandardwerte** in der Registerkarte **Allgemeines** festgelegt. |
-| Auswahl derselben Charge    | Mit der Reservierung derselben Charge können Sie Bestand für eine Auftragsposition aus einer einzelnen Lagercharge reservieren. Wenn Sie diese Option verwenden möchten, müssen Sie die Option **Bedarf konsolidieren** auch auf **Ja** festlegen. Darüber hinaus gibt es weitere Einstellungen, die die für die Lagerdimensionsgruppe und Rückverfolgungsangabengruppe erforderlich sind. Weitere Informationen finden Sie unter[Reservierung derselben Charge für einen Auftrag](../sales-marketing/reserve-same-batch-sales-order.md).                                                          |
+| Auswahl derselben Charge    | Mit der Reservierung derselben Charge können Sie Bestand für eine Auftragsposition aus einer einzelnen Lagercharge reservieren. Wenn Sie diese Option verwenden möchten, müssen Sie die Option **Bedarf konsolidieren** auch auf **Ja** festlegen. Darüber hinaus gibt es weitere Einstellungen, die die für die Lagerdimensionsgruppe und Rückverfolgungsangabengruppe erforderlich sind. Weitere Informationen finden Sie unter [Die gleiche Charge für einen Kundenauftrag](../sales-marketing/reserve-same-batch-sales-order.md) reservieren.                                                          |
 | Bedarf konsolidieren | Diese Option ist mit der Option **Auswahl derselben Charge** ähnlich und konsolidiert den Bestand, der für Auftragspositionen reserviert ist, in einer einzelnen Anforderung.                                                                                                                                                                                                                                                                                                                                                                                      |
 | FEFO-datumsgesteuert    | Mit dieser Option können Sie den Chargen reservieren, die nahe dem Ablaufdatum oder dem Mindesthaltbarkeitsdatum sind. Zudem müssen Sie das Feld **Kommissionierungskriterien** einrichten, um entweder **Ablaufdatum oder** **Mindesthaltbarkeitsdatum** auszuwählen.                                                                                                                                                                                                                                                                                                                              |
 

@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11ed2101304c4e09744bbd10e94e9cd2a8db4da5
-ms.sourcegitcommit: dd960cf07d8be791fd27c7bb72e6baa2d63ccd51
+ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "2578240"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771072"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
 
@@ -71,7 +71,7 @@ Eine Modellzuordnung, die ausgehende elektronische Dokumente unterstützt, hat d
 
 - Sie kann verschiedene Datentypen als Datenquellen für ein Datenmodell verwenden. Beispielsweise kann sie Tabellen, Datenentitäten, Methoden oder Enumerationen verwenden.
 - Sie unterstützt Benutzereingabeparameter, die als Datenquellen für ein Datenmodell definiert werden, wenn einige Daten in der Laufzeit angegeben werden müssen.
-- Sie unterstützt die Umwandlung von Daten in die erforderlichen Gruppen. Sie können damit zudem Daten filtern, sortieren und zusammenfassen sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln. Weitere Informationen finden Sie unter [Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)).
+- Sie unterstützt die Umwandlung von Daten in die erforderlichen Gruppen. Sie können damit zudem Daten filtern, sortieren und zusammenfassen sowie logisch berechnete Felder anhängen, die mit Formeln entworfen werden, die Microsoft Excel-Formeln ähneln. Weitere Informationen finden Sie unter [Formuladesigner in der elektronischen Berichterstattung (ER)](general-electronic-reporting-formula-designer.md)).
 
 
 Eine Zuordnung, die vorbildliche eingehende elektronische Dokumente unterstützt, umfasst die folgenden Funktionen:
@@ -362,5 +362,5 @@ ER ermöglicht die automatische Übernahme von Änderungen der neuesten Version 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Lokalisierungsanforderungen – Erstellen einer elektronischen Berichtskonfiguration](electronic-reporting-configuration.md)
-- [Verwalten des Lebenszyklus der elektronischen Berichterstellung](general-electronic-reporting-manage-configuration-lifecycle.md)
+- [Erstellen von Konfigurationen für elektronische Meldungen (ER) ](electronic-reporting-configuration.md)
+- [Den Konfigurationslebenszyklus der elektronischen Berichterstellung (EB) verwalten](general-electronic-reporting-manage-configuration-lifecycle.md)

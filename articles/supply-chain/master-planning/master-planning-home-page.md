@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2dd3915d9eb5b255e9d84e5ec7c331d184e5f485
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 0588ad24cb28a32557361e1a2e5391502a8b46d7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250690"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814260"
 ---
 # <a name="master-planning-home-page"></a>Startseite für die Produktprogrammplanung
 
@@ -39,9 +39,9 @@ Dient zum Berechnen des Bedarfs für die Produktprogrammplanung sowie zum Generi
 
 Die drei Hauptplanungsprozesse sind:
 
--  **Produktprogrammplanung** - Im Produktprogrammplan wird der Nettobedarf berechnet. Es basiert auf aktuellen und tatsächlichen Aufträgen, um gibt Unternehmen die Möglichkeit, Bestandswiederbeschaffung auf einer täglichen Basis zu steuern. Eine andere Bedingung, um dies zu beschreiben, ist der *Nettobedarfsplan*. Weitere Informationen unter [Masterplan](master-plans.md). 
+-  **Produktprogrammplanung** - Im Produktprogrammplan wird der Nettobedarf berechnet. Es basiert auf aktuellen und tatsächlichen Aufträgen, um gibt Unternehmen die Möglichkeit, Bestandswiederbeschaffung auf einer täglichen Basis zu steuern. Eine andere Bedingung, um dies zu beschreiben, ist der *Nettobedarfsplan*. Weitere Informationen finden Sie unter [Masterplanübersicht](master-plans.md). 
 
--  **Absatzplanung** - Planungszeitplan der Bruttobedarf berechnet. Er basiert auf künftiger (oder geplanter) Projektionen und aktiviert Unternehmen, langfristig Material- und Kapazitätsplanung zu tätigen. Weitere Informationen unter [Künftige Planung](introduction-demand-forecasting.md). 
+-  **Absatzplanung** - Planungszeitplan der Bruttobedarf berechnet. Er basiert auf künftiger (oder geplanter) Projektionen und aktiviert Unternehmen, langfristig Material- und Kapazitätsplanung zu tätigen. Weitere Informationen finden Sie unter [Übersicht der Bedarfsprognose](introduction-demand-forecasting.md). 
 
 -  **Intergesellschaftsproduktprogrammplanung** - Die Intercompany-Produktprogrammplan berechnet den Bedarfsverlauf zu juristischen Personen. Er umfasst Angebot und Nachfrage zwischen Unternehmen nicht nur für kurzfristige, feste und nachgefragte, sondern auch für langfristige (die noch nicht fest sind), geplante Angebot und Nachfrage. Weitere Informationen finden Sie unter [Intercompany-Produktprogrammplanungslauf](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (CustomerSource-Konto erforderlich). 
 
@@ -57,18 +57,18 @@ Die folgende Lernenzuordnung zeigen die wichtigsten Konzepte und die Aufgaben, d
 
 ## <a name="quick-links"></a>Direktlinks
 
-- [Produktprogrammpläne](master-plans.md)  
+- [Hauptpläne – Übersicht](master-plans.md)  
 - [Plan mit Einschränkungen erstellen](./tasks/constrained-plan.md)
 - [Materialplan für Co-Produkte erstellen](./tasks/create-material-plan-co-products.md)
-- [Produktprogrammplanung und Funktion für mehrere Standorte](master-plan-multisite-functionality.md)
+- [Hauptpläne und Funktion für mehrere Standorte – Übersicht](master-plan-multisite-functionality.md)
 - [Intercompany-Plan erstellen](./tasks/create-intercompany-plan.md)
-- [Bedarfsplanung – Überblick](introduction-demand-forecasting.md)
-- [Planzahlenverrechnungsschlüssel](reduction-keys.md)
+- [Bedarfsplanung – Übersicht](introduction-demand-forecasting.md)
+- [Planzahlenverrechnungsschlüssel vorhersagen](reduction-keys.md)
                                   
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 ### <a name="roadmaps"></a>Roadmaps
-Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neuen Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
+Besuchen Sie [Microsoft Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht wurden und welche neuen Funktionen gerade entwickelt werden.
 
 ### <a name="blogs"></a>Blogs
 Sie finden Meinungen, Neuigkeiten und weitere Informationen zur Produktprogrammplanung und zu anderen Lösungen im [Dynamics AX Manufacturing R&D Team-Blog](https://blogs.msdn.microsoft.com/axmfg) und [Supply Chain Management in Dynamics AX R&D Team-Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm).

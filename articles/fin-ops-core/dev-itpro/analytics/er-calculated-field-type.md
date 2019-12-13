@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 20d48795b23628bbba2896bf48940936a25e0435
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550083"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771328"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“
 
@@ -55,7 +55,7 @@ Laden Sie die gezippte (komprimierte) Datei **Unterstützen parametrisierter Auf
 | Beispiel-EB-Formatkonfiguration        | Format to learn parameterized calls.version.1.1.xml  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Anmelden bei Ihrer RCS-Instanz
-In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. In RCS müssen Sie zunächst die Schritte unter [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abzuschließen.
+In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware, Inc. Zunächst müssen Sie im RCS die Schritte in der Prozedur [Konfigurationsanbieter anlegen durchführen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md):
 
 1. Wählen Sie im Standard-Dashboard **Elektronische Berichterstellung** aus.
 2. Wählen Sie **Berichterstellungskonfigurationen** aus.
@@ -75,21 +75,21 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
 3. Wählen Sie **Designer** aus.
 4. Wählen Sie **Designer** aus.  
    
-Diese ER-Modellzuordnung ist für die folgenden Aktionen vorgesehen:
+    Diese ER-Modellzuordnung ist für die folgenden Aktionen vorgesehen:
 
-- Rufen Sie die Liste der Steuercodes (**Steuer**-Datenquelle) ab, die sich in der **TaxTable**-Tabelle befinden.
-- Rufen Sie die Liste der Steuertransaktionen (**Trans**-Datenquelle) ab, die sich in der **TaxTrans**-Tabelle befinden.
+    - Holen Sie sich die Liste der Steuercodes (**Steuern** Datenquelle), die sich in der Tabelle **Steuertabelle** befinden.
+    - Holen Sie sich die Liste der Steuertransaktionen (**Trans** Datenquelle), die sich in der Tabelle **TaxTrans** befinden:
     
-    - Gruppieren Sie die Liste der abgerufenen Transaktionen (**GR**-Datenquelle) nach Steuercode.
-    - Führen Sie eine Berechnung für gruppierte Transaktionen nach aggregierten Werten pro Steuerkennzeichen durch:
+        - Gruppieren Sie die Liste der abgerufenen Transaktionen (**GR**-Datenquelle) nach Steuercode.
+        - Berechnen Sie für gruppierte Transaktionen nach aggregierten Werten pro Steuercode:
 
-        - Summe der Steuerbasiswerte
-        - Summe der Steuerwerte
-        - Mindestwert des angewendeten Steuersatzes
+            - Summe der Steuerbasiswerte
+            - Summe der Steuerwerte
+            - Mindestwert des angewendeten Steuersatzes
 
-Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle ER-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
+    Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle ER-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
 
-  ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen](media/er-calculated-field-type-01.png)
+    ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen](media/er-calculated-field-type-01.png)
 
 5.  Schließen Sie die Seite **Modellzuordnungsdesigner**.
 6.  Schließen Sie die Seite **Modellzuordnung**.
@@ -100,25 +100,25 @@ Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell f
 2. Wählen Sie **Format zum Ermitteln parametrisierter Anrufe** aus.
 3. Wählen Sie **Designer** aus. Dieses ER-Format ist für die folgenden Aktionen vorgesehen:
 
-  - Generieren Sie einen Steuerauszug im XML-Format.
-  - Stellen Sie die folgenden Besteuerungsstufen im Steuerauszug dar: „Regulär“, „Reduziert“ und „Keine“.
-  - Stellen Sie mehrere Details für jedes Besteuerungsniveau dar, die jeweils eine andere Anzahl von Details auf jeder Stufe aufweisen.
+    - Generieren Sie einen Steuerauszug im XML-Format.
+    - Stellen Sie die folgenden Besteuerungsstufen im Steuerauszug dar: „Regulär“, „Reduziert“ und „Keine“.
+    - Stellen Sie mehrere Details für jedes Besteuerungsniveau dar, die jeweils eine andere Anzahl von Details auf jeder Stufe aufweisen.
 
-  ![Formatdesignerseite](media/er-calculated-field-type-02.png)
+    ![Formatdesignerseite](media/er-calculated-field-type-02.png)
 
 4. Wählen Sie **Zuordnung** aus.
 5. Erweitern Sie die Elemente **Modell**, **Daten,** und **Zusammenfassung**. 
 
-   Das berechnete Feld **Model.Data.Summary.Level** enthält den Ausdruck, der den Code des Besteuerungsniveaus (**Regulär**, **Reduziert**, **Kein,** oder **Sonstige**) als Textwert für jeden Steuercode zurückgibt, der zur Laufzeit aus der Datenquelle **Model.Data.Summary** abgerufen werden kann.
+    Das berechnete Feld **Model.Data.Summary.Level** enthält den Ausdruck, der den Code des Besteuerungsniveaus (**Regulär**, **Reduziert**, **Kein,** oder **Sonstige**) als Textwert für jeden Steuercode zurückgibt, der zur Laufzeit aus der Datenquelle **Model.Data.Summary** abgerufen werden kann.
 
-  ![Seite „Formatdesigner“ mit Details des Datenmodells „Modell zum Lernern parametrisierter Aufrufe“](media/er-calculated-field-type-03.png)
+    ![Seite „Formatdesigner“ mit Details des Datenmodells „Modell zum Lernern parametrisierter Aufrufe“](media/er-calculated-field-type-03.png)
 
 6. Erweitern Sie das Element **Modell**.**Data2**.
 7. Erweitern Sie das Element **Modell**.**Data2.Summary2**.
    
-   Die Datenquelle **Modell**.**Data2.Summary2** ist zum Gruppieren der Transaktionsdetails der Datenquelle **Model.Data.Summary** nach Besteuerungsniveau (die vom berechneten Feld **Model.Data.Summary.Level** zurückgegeben werden) und zum Berechnen der Aggregationen konfiguriert.
+    Die Datenquelle **Modell**.**Data2.Summary2** ist zum Gruppieren der Transaktionsdetails der Datenquelle **Model.Data.Summary** nach Besteuerungsniveau (die vom berechneten Feld **Model.Data.Summary.Level** zurückgegeben werden) und zum Berechnen der Aggregationen konfiguriert.
 
-  ![Die Seite „Formatdesigner“ mit Details der Datenquelle „Model.Data2.Summary2“](media/er-calculated-field-type-04.png)
+    ![Die Seite „Formatdesigner“ mit Details der Datenquelle „Model.Data2.Summary2“](media/er-calculated-field-type-04.png)
 
 8. Überprüfen Sie die berechneten Felder **Model**.**Data2.Level1**, **Model**.**Data2.Level2** und **Model**.**Data2.Level3.** Diese berechneten Felder werden verwendet, um die Datensatzliste **Model**.**Data2.Summary2** zu filtern und nur Datensätze zurückzugeben, die ein bestimmtes Besteuerungsniveau darstellen.
 9. Seite **Format-Designer** schließen.
@@ -309,7 +309,7 @@ Wenn ein parametrisiertes berechnetes Feld einen Datensatz zurückgibt, müssen 
 Sie können die anfänglichen und verbesserten ER-Formate ausführen, um sicherzustellen, dass parametrisierte berechnete Felder, die konfiguriert sind, ordnungsgemäß funktionieren.
 
 ### <a name="import-er-configurations"></a>ER Konfigurationen importieren
-Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-Repository des Typs **RCS** verwenden. Wenn Sie die Schritte im Thema, [Importieren von Konfigurationen für die elektronische Berichterstellung (Electronic Reporting, ER) aus den gesetzlichen Konfigurationsdiensten (Regulatory Configuration Services, RCS)](rcs-download-configurations.md) bereits ausgeführt haben, verwenden Sie das ER-Repository, um die weiter oben in diesem Thema erläuterten Konfigurationen in Ihre Umgebung zu importieren. Andernfalls führen Sie die folgenden Schritte aus:
+Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-Repository des Typs **RCS** verwenden. Wenn Sie die Schritte im Thema [Importieren von elektronischen Berichtskonfigurationen (ER-Konfigurationen) aus Regulatory Configuration Services (RCS)](rcs-download-configurations.md) bereits durchgeführt haben, verwenden Sie das konfigurierte ER-Repository, um die zuvor in diesem Thema beschriebenen Konfigurationen in Ihre Umgebung zu importieren. Andernfalls führen Sie die folgenden Schritte aus:
 
 1. Wählen Sie das Unternehmen **DEMF** und im Standard-Dashboard die Option **Elektronische Berichterstellung** aus.
 2. Wählen Sie **Berichterstellungskonfigurationen** aus.
@@ -339,4 +339,4 @@ Sie können überprüfte Konfigurationen aus RCS importieren, indem Sie das ER-R
 8. Vergleichen Sie den Inhalt der generierten Ergebnisse.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Formeldesigner in der elektronischen Berichterstellung](general-electronic-reporting-formula-designer.md)
+[Formeldesigner in der elektronischen Berichterstellung (EB)](general-electronic-reporting-formula-designer.md)

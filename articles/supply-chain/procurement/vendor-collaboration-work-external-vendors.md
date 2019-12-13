@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 22d16219df9319d276514c62348c0e1995d22715
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 733ecc7cfb4fee325560f5a6fe11612bb8ba57ef
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653601"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815294"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
@@ -218,7 +218,7 @@ Wenn Sie Lieferungsbestand verwenden, können Lieferanten, bzw. Kreditoren die K
 
 ## <a name="working-with-rfqs-when-you-use-vendor-collaboration"></a>Arbeiten mit Angebotsanforderungen, wenn Sie die Kreditorenzusammenarbeit verwenden
 
-Dieser Abschnitt beschreibt die Interaktionen zwischen Debitoren und Kreditoren während des Angebotsanforderungsprozesses. Es wird auch erklärt, wie Kreditoren Informationen mitgeteilt werden. Eine grundlegende Übersicht der Unterstützung für den Angebotsanforderungsprozess, finden Sie unter [Angebotsanforerungen](request-quotations.md).
+Dieser Abschnitt beschreibt die Interaktionen zwischen Debitoren und Kreditoren während des Angebotsanforderungsprozesses. Es wird auch erklärt, wie Kreditoren Informationen mitgeteilt werden. Einen grundlegenden Überblick über die Unterstützung des Ausschreibungsprozesses finden Sie unter [Anfrage zu Angeboten (RFQs) Übersicht](request-quotations.md).
 
 ### <a name="alternates-attachments-amendments-and-returns"></a>Alternativen, Anhänge, Ergänzungen und Rückgaben
 

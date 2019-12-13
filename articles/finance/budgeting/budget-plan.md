@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a59ff16555bfcb55d2f21c09675e7ae0637bca8f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c9558013236a728e0fb9691f4edd719fe58d5457
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188601"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772144"
 ---
 # <a name="budget-planning"></a>Budgetplanung
 
@@ -60,23 +60,21 @@ Julia wird folgende Excel Tabelle erstellen, um das Budget vorzubereiten:
 ## <a name="exercise-1-configuration"></a>Übung 1: Konfiguration
 
 ### <a name="task-1-create-organizational-hierarchy"></a>**Aufgabe 1: Organisationshierarchie erstellen**
-Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia eine sehr einfache Organisationshierarchie erstellen, die nur aus der Finanzabteilung besteht. 1.1. Navigieren Sie zu den Organisationshierarchien (Organisationsverwaltung &gt;Organisationen &gt;Organisationshierarchien) und klicken Sie auf die Schaltfläche "Neu"
+Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia eine sehr einfache Organisationshierarchie erstellen, die nur aus der Finanzabteilung besteht. 
 
-![Hierarchie](./media/screenshot3.png) 
+1.1. Navigieren Sie zu den Organisationshierarchien (Organisationsverwaltung &gt; Organisationen &gt; Organisationshierarchien), und klicken Sie auf die Schaltfläche „Neu“.
 
-1.2. Geben Sie den Namen für die Organisationshierarchie ein und klicken Sie auf die Schaltfläche "Zweck zuweisen"
+![Organisationshierarchien](./media/screenshot3.png) 
 
-[![Name](./media/screenshot4.png)](./media/screenshot4.png) 
+1.2. Geben Sie den Namen für die Organisationshierarchie ein das Feld „Name“ ein, und klicken Sie auf die Schaltfläche „Zweck zuweisen“.
 
-1.3. Wählen Sie den Budgetplanungszweck aus, klicken Sie auf die Schaltfläche "Hinzufügen" und weisen Sie eine neu erstellte Organisationshierarchie zu: 
+1.3. Wählen Sie den Budgetplanungszweck aus, klicken Sie auf „Hinzufügen“, und weisen Sie die neu erstellte Organisationshierarchie zu. 
 
 [![Zweck zuweisen](./media/screenshot5.png)](./media/screenshot5.png)
 
 1.4. Wiederholen Sie den obigen Schritt für den Zweck der Organisationssicherheit. Schließen Sie das Formular, wenn Sie fertig sind.
 
-[![Sicherheitsorganisation](./media/screenshot6.png)](./media/screenshot6.png)
-
-1.5. In der Organisationshierarchieformularklicken-Schaltfläche Ansicht. Klicken Sie im Hierarchie-Designer auf "Bearbeiten", und erstellen Sie eine Hierarchie, indem Sie auf die Schaltfläche "Einfügen" klicken.
+1.5. Klicken Sie im Formular „Organisationshierarchie“ auf die Schaltfläche „Ansicht“. Klicken Sie im Hierarchie-Designer auf „Bearbeiten“, und erstellen Sie eine Hierarchie, indem Sie auf „Einfügen“ klicken.
 
 [![Einfügen](./media/screenshot7.png)](./media/screenshot7.png) 
 
@@ -84,7 +82,7 @@ Da der ganze Budgetierungsprozess in der Finanzabteilung geschieht, muss Julia e
 
 [![Finanzen](./media/screenshot8.png)](./media/screenshot8.png)
 
-1.7. Wenn Sie fertig sind, klicken Sie auf die Schaltfläche "Veröffentlichen und schließen". Wählen Sie 1/1/2015 als Gültigkeitsdatum für die Hierarchieveröffentlichung aus.
+1.7. Wenn Sie fertig sind, klicken Sie auf „Veröffentlichen“ und „Schließen“. Wählen Sie 01.01.2015 als Gültigkeitsdatum für die Hierarchieveröffentlichung aus.
 
 [![Gültigkeitsdatum](./media/screenshot9.png)](./media/screenshot9.png)
 
@@ -94,7 +92,7 @@ Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die
 2.1. Wechsel zum DEMF-Kontext für die juristische Entität. 
 
 
-2.2. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. In der Registerkarte Parameter legen Sie den Sicherheitsmodellwert basierend auf der Sicherheitsorganisationen fest 
+2.2. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. Legen Sie auf der Registerkarte „Parameter“ den Sicherheitsmodellwert auf „Basierend auf Sicherheitsorganisationen“ fest. 
 
 [![Parameter](./media/screenshot11.png)](./media/screenshot11.png) 
 
@@ -102,11 +100,11 @@ Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die
 
 [![Budget-Manager](./media/screenshot12.png)](./media/screenshot12.png) 
 
-2.4. Wählen Sie die Benutzerrolle aus und klicken Sie auf Organisation zuweisen 
+2.4. Wählen Sie die Benutzerrolle aus, und klicken Sie auf „Organisationen zuweisen“. 
 
-[![Organisationsstruktur zuweisen](./media/screenshot13.png)](./media/screenshot13.png)
+[![Organisationen zuweisen](./media/screenshot13.png)](./media/screenshot13.png)
 
-2.5. Wählen Sie "Zugriff individuell auf spezifische Organisationen erteilen" aus. Wählen Sie die im ersten Schritt erstellte Organisationshierarchie aus. Wählen Sie den Finanzknoten aus, und klicken Sie Erteilen mit untergeordnenten Elementen 
+2.5. Wählen Sie "Zugriff individuell auf spezifische Organisationen erteilen" aus. Wählen Sie die im ersten Schritt erstellte Organisationshierarchie aus. Wählen Sie „Finanzknoten“ aus, und klicken Sie auf die Schaltfläche „Zugriff erteilen (inkl. untergeordnete Elemente)“. 
 
 ***Wichtig!*** *Stellen Sie sicher, dass Sie sich im Kontext DEMF Juristische Person befinden, wenn Sie diese Aufgabe ausführen, da die Organisationssicherheit pro juristische Person angewendet wird.* 
 
@@ -122,31 +120,23 @@ Budgetplanung verwendet spezielle Sicherheitsrichtlinien, um den Zugriff auf die
 ### <a name="task-4-create-budget-plan-columns"></a>Abgabe 4: Budgetplanspalten erstellen
 Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Budgetplan-Dokumentenlayout verwendet werden können. In unserem Beispiel müssen wir eine Spalte für Vorjahres-Istwerte und 12 Spalten für jeden Monat in einem budgetierten Jahr erstellen. Spalten können entweder erstellt werden, indem Sie einfach auf die Schaltfläche "Hinzufügen" klicken und die Werte eintragen, oder mithilfe der "Datenentität". In dieser Übungseinheit verwenden wir "Datenentität", um die Werte einzutragen. 
 
-4.1. Öffnen Sie in Budgetplanungskonfiguration die Spaltenseite &gt;Einrichten &gt; Budgetplanung &gt;. Klicken Sie auf die Schaltfläche Office in der rechten oberen Ecke das Formulars, und wählen Sie Spalten (ungefiltert) aus 
+4.1. Öffnen Sie unter Budgetierung &gt; Einrichtung &gt; Budgetplanung &gt; Budgetplanungskonfiguration die Seite „Spalten“. Klicken Sie in der rechten oberen Ecke das Formulars auf die Schaltfläche „Office“, und wählen Sie Spalten (ungefiltert) aus. 
 
 [![Spalten ungefiltert](./media/screenshot16.png)](./media/screenshot16.png) 
 
-4.2. Das System öffnet die Excel-Arbeitsmappe, die zum Ausfüllen der Werten verwendet wird. Bei Aufforderung klicken Sie Bearbeitung aktivieren und dieser App vertrauen 
+4.2. Das System öffnet eine Excel-Arbeitsmappe, die zum Ausfüllen der Werte verwendet wird. Klicken Sie bei Aufforderung auf „Bearbeitung aktivieren und dieser App vertrauen“. 
 
-[![Bearbeitung aktivieren](./media/screenshot18.png)](./media/screenshot18.png) 
+4.3. Es müssen mehrere Spalten vorhanden sein, um Werte einzugeben. Klicken Sie im rechten Bereich auf „Entwurf“, um die Spalten dem Raster hinzuzufügen. 
 
-[![Anwendungskonfigurationstool dieser App](./media/screenshot17.png)](./media/screenshot17.png)
+[![Entwurf](./media/screenshot19.png)](./media/screenshot19.png) 
 
-4.3. Es müssen mehrere Spalten vorhanden sein, um Werte einzugeben. Klicken Sie auf Entwurf im rechten Bereich, um die Spalten im Raster hinzuzufügen: 
-
-[![Gestaltung](./media/screenshot19.png)](./media/screenshot19.png) 
-
-4.4. Klicken Sie auf die Schaltfläche mit dem kleinen Bleistift neben PlanColumns, um die verfügbaren Spalten zu anzuzeigen, die dem Raster hinzugefügt werden können 
+4.4. Klicken Sie auf die Schaltfläche mit dem Bleistift neben PlanColumns, um die verfügbaren Spalten zu anzuzeigen, die dem Raster hinzugefügt werden können. 
 
 [![Bearbeiten](./media/screenshot20.png)](./media/screenshot20.png) 
 
-4.5. Doppelklicken Sie auf jedes verfügbaren Feld, um es zu Ausgewählte Felder hinzuzufügen und klicken Sie auf Aktualisieren 
+4.5. Doppelklicken Sie auf jedes verfügbaren Feld, um es zu „Ausgewählte Felder“ hinzuzufügen, und klicken Sie auf „Aktualisieren“. 
 
-![Buchen](./media/screenshot21.png)](./media/screenshot21.png) 
-
-4.6. Fügen Sie in der Excel-Tabelle alle Spalten hinzu, die erstellt werden müssen. Verwenden Sie die AutoFill-Funktion in Excel, um die Positionen schnell hinzuzufügen. Stellen Sie sicher, dass die Positionen als Teil der Tabelle hinzugefügt werden (wenn Sie den vertikalen Bildlauf verwenden, sollten Sie die Spaltenüberschriften über dem Raster sehen können) 
-
-[![Autofill](./media/screenshot22.png)](./media/screenshot22.png) 
+4.6. Fügen Sie in der Excel-Tabelle alle Spalten hinzu, die erstellt werden müssen. Verwenden Sie die AutoFill-Funktion in Excel, um die Positionen schnell hinzuzufügen. Stellen Sie sicher, dass die Positionen als Teil der Tabelle hinzugefügt werden (wenn Sie den vertikalen Bildlauf verwenden, sollten Sie die Spaltenüberschriften über dem Raster sehen können). 
 
 4.7. Kehren Sie zur Anwendung zurück und aktualisieren Sie die Seite. Veröffentlichte Werte werden angezeigt. 
 
@@ -155,7 +145,7 @@ Budgetplanspalten sind entweder monitär- oder mengenbasierte Spalten, die im Bu
 ### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Abgabe 5:Budgetplan-Dokumentenlayouts und - vorlagen erstellen
 Layout definiert, wie das Raster der Budgetsplan-Dokumentenpositionen aussieht, wenn ein Benutzer das Budgetplandokument öffnet. Es ist auch möglich, das Layout des Budgetplandokuments zu wechseln, um dieselben Daten aus verschiedenen Winkeln anzuzeigen. Jetzt, da sie die Spalten definiert hat, die in unserem Budgetplandokument verwendet werden, muss Julia ein Budgetsplan-Dokumentenlayout erstellen, das der Excel-Tabelle ähnlich sieht, das sie verwendet, um Budgetdaten zu erstellen (weitere Informationen finden Sie im Abschnitt Szenarioüberblick in dieser Übungseinheit) 
 
-5.1. Öffnen Sie in Budgetierung> &gt;Einstellungen&gt;Budgetplanung&gt;Budgetplanungskonfiguration die Seite "Layouts". Erstellen Sie ein neues Layout für den Monatsbudgeteintrag:
+5.1. Öffnen Sie unter Budgetierung &gt; Einrichtung &gt; Budgetplanung &gt; Budgetplanungskonfiguration die Seite „Layouts“. Erstellen Sie ein neues Layout für den Monatsbudgeteintrag:
 
 -   Wählen Sie den MA+BU-Dimensionssatz, um dem Layout Hauptkonten und Unternehmenseinheiten hinzuzufügen.
 -   Führen Sie alle Budgetplanspalten auf, die im vorherigen Schritt im Elementabschnitt erstellt wurden. Machen Sie alle Istwerte aus denen des Vorjahres bearbeitbar.
@@ -170,12 +160,13 @@ Auf Grundlage der Budgetplan-Layoutdefinition können wir eine Excel-Vorlage ers
 *Hinweis Stellen Sie sicher, Speichern auszuwählen und den Ort auszuwählen, an dem die Vorlage gespeichert werden soll, um diese zu bearbeiten. Wenn Benutzer Öffnen im Dialogfeld auswählen, ohne Speichern, werden die Änderungen, die in die Datei geleisteten, nicht beibehalten, wenn die Datei geschlossen wird* 
 [![Vorlagenansicht](./media/screenshot25.png)](./media/screenshot25.png) 
 
-5.3. &lt;Optionaler Schritt&gt; Ändern Sie die Excel-Vorlage, um sie benutzerfreundlicher zu machen - fügen Sie Addierformeln, Überschriftenfelder, Formatierung usw. hinzu. Speichern Sie die Änderungen, und laden Sie die Datei zum Budgetplanlayout hoch, indem Sie auf Layout&gt; Hochladen[![Hochladen](./media/screenshot26.png)](./media/screenshot26.png) klicken
+5.3. &lt; Optionaler Schritt&gt; Ändern Sie die Excel-Vorlage, um sie benutzerfreundlicher zu machen – fügen Sie Addierformeln, Überschriftenfelder, Formatierung usw. hinzu. Speichern Sie die Änderungen, und laden Sie die Datei zum Budgetplanlayout hoch, indem Sie auf Layout &gt; Hochladen klicken. 
+
 
 ### <a name="task-6-create-a-budget-planning-process"></a>Aufgabe 6: Budgetplanungsprozess erstellen
 Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämtliche oben genannten Einstellungen kombiniert, um mit der Eingabe von Budgetplänen zu beginnen. Der Budgetplanungsprozess definiert, welche Budgetplanungsorganisationen, Workflows, Layouts und Vorlagen zum Erstellen von Budgetplänen verwendet werden. 
 
-6.1. Navigieren Sie zu Budgetierung  &gt;Einstellungen&gt; Budgetplanung &gt; Budgetplanungsprozess, und erstellen Sie einen neuen Datensatz.
+6.1. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung &gt; Budgetplanungsprozess, und erstellen Sie einen neuen Datensatz.
 
 -   Budgetplanungsprozess – DEMF-Budgetierung GJ2016
 -   Budgetzyklus – GJ2016
@@ -189,74 +180,68 @@ Julia muss einen neuen Budgetplanungsprozess erstellen und aktivieren, der sämt
 
 [![Alternative Layouts](./media/screenshot27.png)](./media/screenshot27.png) 
 
-6.2. Wählen Sie Aktionen &gt;Aktivieren aus, um diesen Budgetplanungsworkflow zu aktivieren 
+6.2. Wählen Sie Aktionen &gt; Aktivieren aus, um diesen Budgetplanungsworkflow zu aktivieren. 
 
 [![Aktivieren](./media/screenshot28.png)](./media/screenshot28.png)
 
 ## <a name="exercise-2-process-simulation"></a>Übung 2: Prozesssimulation
 
 ### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Aufgabe 7: Anfängliche Daten für den Budgetplan aus dem Hauptbuch generieren
-7.1. Navigieren Sie zu Budgetierung &gt;Periodisch &gt; Budgetplan aus dem Hauptbuch generieren. Füllen Sie die periodischen Prozessparameter aus, klicken Sie auf die Schaltfläche "Generieren". 
+7.1. Navigieren Sie zu Budgetierung &gt;Periodisch &gt; Budgetplan aus dem Hauptbuch generieren. Füllen Sie die periodischen Prozessparameter aus, klicken Sie auf die Schaltfläche „Generieren“. 
 
-[![Generieren](./media/screenshot29.png)](./media/screenshot29.png) 
-
-7.2. Navigieren Sie zu Budgetierung &gt;Budgetpläne, um einen Budgetplan zu finden, der durch den Generate-Prozess erstellt wurde. 
+7.2. Navigieren Sie zu Budgetierung &gt; Budgetpläne, um einen Budgetplan zu suchen, der durch den Prozess „Generieren“ erstellt wurde. 
 
 [![Budgetplan](./media/screenshot30.png)](./media/screenshot30.png) 
 
-7.3. Öffnen Sie Dokumentdetails, indem Sie den Dokumentnummerhyperlink klicken. Der Budgetplan wird im Layout, das während dieser Übungseinheit erstellt wurde, als definiert angezeigt 
+7.3. Öffnen Sie Dokumentdetails, indem Sie den Dokumentnummerhyperlink klicken. Der Budgetplan wird im Layout, das während dieser Übungseinheit erstellt wurde, als definiert angezeigt. 
 
 [![Budgetplandokumente anzeigen](./media/screenshot31.png)](./media/screenshot31.png)
 
 ### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Aufgabe 8: Budget des aktuellen Jahres auf Grundlage der Vorjahres-Istwerte erstellen
 Zuordnungsmethoden können im Budegetplan verwendet werden, um Informationen für Budgetpläne einfach von einem Szenario zu einem anderen zu kopieren/sie über Perioden zu verteilen/Dimensionen zuweisen. Wir verwenden Zuweisungen, um das Budget des aktuellen Jahres aus den Vorjahres-Istwerten zu erstellen. 
 
-8.1. Wählen Sie alle Positionen im Budgetplan-Dokumentenraster, und klicken Sie auf die Schaltfläche Budget zuteilen 
+8.1. Wählen Sie alle Positionen im Budgetplan-Dokumentenraster, und klicken Sie auf die Schaltfläche „Budget zuteilen“. 
 
 [![Alle Positionen](./media/screenshot32.png)](./media/screenshot32.png) 
 
-8.2. Wählen Sie, Zuordnungsmethode Periodenschlüssel, Quelle und Zielszenarien aus und klicken "Zuweisen" 
+8.2. Wählen Sie, Zuordnungsmethode Periodenschlüssel, Quelle und Zielszenarien aus, und klicken auf „Zuteilen“. 
 
 [![Zuordnen](./media/screenshot33.png)](./media/screenshot33.png)
 
-Die tatsächlichen Beträge das vorherige Jahr werden in das Budget des aktuellen Jahres sowie diese periodenübergreifend mithilfe von Verkaufskurvenperiodenschlüsseln zugewiesen. 
+Die tatsächlichen Beträge des vorherigen Jahres werden in das Budget des aktuellen Jahres sowie diese periodenübergreifend mithilfe von Verkaufskurvenperiodenschlüsseln zugewiesen. 
 
 [![Vertriebskurve](./media/screenshot34.png)](./media/screenshot34.png)
 
 ### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Abgabe 9: Das Budgetplandokument mithilfe von Excel anpassen und das Dokument fertig stellen
-9.1. Klicken Sie auf die Schaltflächen "Arbeitsblatt", um Dokumentinhalte in Excel zu öffnen
+9.1. Klicken Sie auf die Schaltfläche „Arbeitsblatt“, um Dokumentinhalte in Excel zu öffnen.
 
-[![Excel](./media/screenshot35.png)](./media/screenshot35.png)
+9.2. Wenn die Excel-Arbeitsmappe geöffnet wird, passen Sie die Nummern im Budgetplandokument an, und klicken Sie auf die Schaltfläche „Veröffentlichen“.
 
-9.2. Wenn die Excel-Arbeitsmappe geöffnet wird, passen Sie die Nummern im Budgetplandokument an, und klicken Sie auf die Schaltfläche "Veröffentlichen".
-
-[![Veröffentlichen](./media/screenshot36.png)](./media/screenshot36.png)
-
-9.3. Kehren Sie zum Budgetplandokument zurück. Klicken Sie auf Workflow&gt; übermitteln, um das Dokument automatisch zu genehmigen
+9.3. Kehren Sie zum Budgetplandokument zurück. Klicken Sie auf Workflow &gt; Übermitteln, um das Dokument automatisch zu genehmigen.
 
 [![Automatisch genehmigt](./media/screenshot37.png)](./media/screenshot37.png) 
 
-Wenn der Workflow abgeschlossen ist, wird die Budgetplandokumentphase als "Genehmigt" angezeigt. [![Genehmigt](./media/screenshot38.png)](./media/screenshot38.png)
+Wenn der Workflow abgeschlossen ist, wird die Budgetplandokumentphase als „Genehmigt“ angezeigt. [![Genehmigt](./media/screenshot38.png)](./media/screenshot38.png)
 
 ## <a name="appendix"></a>Anhang
 
 ### <a name="auto-approve-workflow-configuration"></a>Workflowkonfiguration für automatische Genehmigung
 
-A. Budgetierung &gt; Einrichten &gt; Budgetplan &gt; Budgetworkflow Erstellt einen neuen Workflows mithilfe der Vorlage Budget-Planungsworkflow:
+A. Budgetierung &gt; Einrichtung &gt; Budgetplanung &gt; Budgetierungsworkflows. Erstellen Sie einen neuen Workflow mithilfe der Vorlage „Budgetplanungsworkflows“:
 
 [![Erstellen eines neuen Workflows.](./media/screenshot39.png)](./media/screenshot39.png)
 
-Dieser Workflow enthält nur eine Aufgabe – Phasenübergangsbudgetplan 
+Dieser Workflow enthält nur eine Aufgabe – Phasenübergangsbudgetplan. 
 
 [![Phasenübergang für Budgetplan](./media/screenshot40.png)](./media/screenshot40.png) 
 
 Speichern und Aktivieren des Workflows. 
 
-B. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. In der Phasenregisterkarte erstellen Sie 2 Phasen – Ursprünglich und Übermittelt 
+B. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. Erstellen Sie auf der Registerkarte „Phasen“ 2 Phasen – „Ursprünglich“ und „Übermittelt“. 
 
 [![Erstmalig und gesendet](./media/screenshot41.png)](./media/screenshot41.png)
 
-C. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. Ordnen Sie in der Registerkarte "Workflowphasen" den Workflow "Automatisch genehmigen", der in Schritt A erstellt wurde, den Phasen "Ursprünglich" und "Übermittelt" zu 
+C. Navigieren Sie zu Budgetierung &gt; Einrichtung &gt; Budgetplanung&gt; Budgetplanungskonfiguration. Ordnen Sie auf der Registerkarte „Workflowphasen“ den in Schritt A erstellten Workflow „Automatisch genehmigen“ den Phasen „Ursprünglich“ und „Übermittelt“ zu.
 
 [![Budgetierung und Budgetplanung](./media/screenshot42.png)](./media/screenshot42.png)  
 

@@ -19,20 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c16268338085d414468f17362294fb7e933d1b57
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35c0a1e6342008bc2ee6ff25a1663e199c8cb985
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249108"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771024"
 ---
 # <a name="troubleshooting-guide-for-data-integration"></a>Leitfaden zur Problembehandlung für die Datenintegration
 
 ## <a name="enable-plug-in-trace-logs-in-common-data-service-and-inspect-the-dual-write-plug-in-error-details"></a>Aktivieren der Plug-In-Ablaufverfolgungsprotokolle in Common Data Service und Überprüfen der Plug-In-Fehlerdetails für duales Schreiben
 
 [!include [banner](../includes/banner.md)]
-
-[!include [preview](../includes/preview-banner.md)]
 
 Sollte ein Problem oder Fehler bei der Synchronisierung des dualen Schreibens auftreten, führen Sie die folgenden Schritte aus, um die Fehler im Ablaufverfolgungsprotokoll zu überprüfen.
 

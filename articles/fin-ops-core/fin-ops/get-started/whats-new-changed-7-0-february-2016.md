@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e39328c73fe3dd101e32ec04d895483335184ae7
-ms.sourcegitcommit: 4d6ec2b1a9674712e1efb8c46b919d554f21a2b3
+ms.openlocfilehash: 54f07e7037f818862db4a44f9ad3e3fe8545f6f9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "2627650"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811481"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Neuheiten und Änderungen in Dynamics AX 7.0 (Februar 2016)
 
@@ -322,7 +322,7 @@ Diese Funktion funktioniert unabhängig von den Nachkalkulationsmethoden, die de
 <tr>
 <td>Zugriff auf geführte Verfahrensweisen (Aufgabenleitfäden) und grundlegende Themen über <strong>Hilfe</strong>.</td>
 <td>Das Hilfesystem von AX 2012 verweist auf HTML-Themen, die auf einem lokalen Webserver gespeichert werden. Kunden und Partner können ihre eigene Hilfe erstellen.</td>
-<td>Das Hilfesystem in der aktuellen Version von Dynamics AX zeigt Aufgabenleitfäden an, die in Microsoft Dynamics Lifecycle Services (LCS) BPM gespeichert sind. Das Hilfesystem enthält auch Themen aus der Microsoft-Docs-Seite. Weitere Informationen erhalten Sie unter <a href="help-overview.md" data-raw-source="[Dynamics AX Help - Getting Started](help-overview.md)">Dynamics AX-Hilfe – Erste Schritte</a> und <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides available (February 2016)](new-task-guides-available-february-2016.md)">Neue Aufgabenleitfäden verfügbar (Februar 2016)</a>.</td>
+<td>Das Hilfesystem in der aktuellen Version von Dynamics AX zeigt Aufgabenleitfäden an, die in Microsoft Dynamics Lifecycle Services (LCS) BPM gespeichert sind. Das Hilfesystem enthält auch Themen aus der Microsoft-Docs-Seite. Weitere Informationen finden Sie unter <a href="help-overview.md" data-raw-source="[Help system](help-overview.md)">Hilfesystem</a> und <a href="new-task-guides-available-february-2016.md" data-raw-source="[New task guides (February 2016)](new-task-guides-available-february-2016.md)">Neue Aufgabenleitfäden (Februar 2016)</a>.</td>
 <td>Ein Aufgabenleitfaden ist eine kontrollierte, geführte, interaktive Erfahrung, die Sie durch die Schritte einer Aufgabe oder eines Geschäftsprozesses führt. Sie können die von Microsoft bereitgestellten Aufgabenleitfäden herunterladen und anpassen. Das Thema ermöglicht schnellere und flexiblere Möglichkeiten zur Erstellung, Bereitstellung und Aktualisierung der Produktdokumentation. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.</td>
 </tr>
 </tbody>
@@ -1031,6 +1031,6 @@ Es wurden keine neuen Funktionen hinzugefügt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Neuheiten und Änderungen](whats-new-changed.md)
+[Neuerungen oder Änderungen in Finance and Operations – Startseite](whats-new-changed.md)
 
 [Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)

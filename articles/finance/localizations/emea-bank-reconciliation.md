@@ -17,12 +17,12 @@ ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c2ad9c8daf40750839ed7b16fb529e0de35d19a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3fbdefce85fbd7aee228cdcb58f29007478c1485
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175718"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772874"
 ---
 # <a name="bank-statement-and-payment-reconciliation-for-the-eu"></a>Bankauszug und Zahlungsabstimmung für die EU
 
@@ -46,14 +46,14 @@ Neben einem Bankauszug können Banken bestimmte Meldungen bereitstellen, die Inf
 
 ### <a name="import-formats"></a>Importformat
 
--   Bankbenachrichtigungsmitteilung ISO 20022 [camt.054](emea-ISO20022-file-formats.md)
+-   [ISO 20022 camt.054](emea-ISO20022-file-formats.md)-Bankbenachrichtigungsmitteilung
 -   [Netzwerkimportformat ](emea-nor-nets-import-format.md)
--   Importieren von [ESR](emea-che-esr-customer-payments-import.md)-Kundenzahlungen
+-   [ESR-Debitorenzahlungen für Importe](emea-che-esr-customer-payments-import.md) 
 -   Importieren Sie Zahlungsformate für Schweden - BankGirot-Maximum und BankGirot OCR-Formate
 
 ### <a name="return-formats"></a>Rückgabeformat
 
--   Zahlungsstatusbericht ISO 20022 [pain.002](emea-ISO20022-file-formats.md)
+-   [ISO 20022 pain.002](emea-ISO20022-file-formats.md)-Zahlungsstatusbericht
 -   (DNK) BetalingsserviceBasis-returformat – Rückgabeformat für Kunden Betalingsservice-Exportformat
 -   [Importzahlungsformate für Schweden](emea-swe-payment-formats-import.md)
 -   (SWE) BankGirot-Rücklieferung – Kreditorenzahlungen geben das Format zurück, das dem Bankgirot-Exportformat entspricht

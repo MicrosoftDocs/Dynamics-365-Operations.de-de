@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e21854825019a73dc8d7bf5a3ee18d508123f72
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: a85f804344abec37d85e1ce15f064c8a0b901546
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1743187"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813108"
 ---
 # <a name="set-up-disposition-codes"></a>Dispositionscodes einrichten 
 
@@ -32,7 +32,7 @@ ms.locfileid: "1743187"
 
 Sie können Sie Dispositionscodes einrichten, um anzugeben, wie ein Artikel verarbeitet wird, der von einem Debitor zurückgegeben wird. Sie erstellen beispielsweise einen Dispositionscode mit Namen **Reparatur und Rücklieferung**, um anzugeben, dass der zurückgelieferte Artikel repariert und dann an den Debitor zurückgegeben wird. Weitere Beispiele von Dispositionscodes, die üblicherweise für Artikel verwendet werden, die von Debitoren zurückgegeben werden, finden Sie unter [Angaben zur Entsorgung zurückgelieferter Artikel](specify-how-to-dispose-of-returned-items.md).
 
-Sie können auch einen Ursachencode einrichten, der dabei hilft zu erläutern, warum ein Artikel zurückgegeben wurde. Weitere Informationen finden Sie unter [Einrichten von Ursachencodegruppen für Rückgaben](set-up-return-reason-code.md).
+Sie können auch einen Ursachencode einrichten, der dabei hilft zu erläutern, warum ein Artikel zurückgegeben wurde. Weitere Informationen zu den Differenzgründen finden Sie unter [Rückgabegrundcodes einrichten](set-up-return-reason-code.md).
 
 1.  Klicken Sie auf **Vertrieb und Marketing** \> **Einstellungen** \> **Aufträge** \> **Retouren** \> **Dispositionscodes**.
 
@@ -46,7 +46,7 @@ Sie können auch einen Ursachencode einrichten, der dabei hilft zu erläutern, w
 
 ## <a name="see-also"></a>Siehe auch
 
-[Dispositionscodes und Rückgabeursachencodes](disposition-and-return-reason-codes.md)
+[Einrichten von Debitorenrücklieferungen – Übersicht](disposition-and-return-reason-codes.md)
 
 [Dispositionscodes (Formular)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 

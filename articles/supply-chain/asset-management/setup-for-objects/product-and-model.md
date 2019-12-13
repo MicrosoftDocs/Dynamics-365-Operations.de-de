@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a73f49064911a2b28c742cfc19469f4bf95e74
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: b77605070387871335c480e25cbe23af1155d6e8
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2569960"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812167"
 ---
 # <a name="asset-manufacturers-and-models"></a>Anlagenhersteller und -modelle
 
@@ -45,7 +45,7 @@ In diesem Thema wird erläutert, wie Anlagenhersteller und zugehörige Modelle i
 8. Wählen Sie im Feld **Anlagentyp** den Anlagentyp aus, dem das Herstellermodell zugeordnet werden soll.
 
     > [!NOTE]
-    > Sie können Zuordnungen für Anlagentypen, -hersteller und -modelle auch in der Suche **Anlagentypen** einrichten. Weitere Informationen finden Sie im Thema zum [Erstellen von Anlagentypen](../setup-for-objects/object-types.md).
+    > Sie können Zuordnungen für Anlagentypen, -hersteller und -modelle auch in der Suche **Anlagentypen** einrichten. Weitere Informationen finden Sie unter [Anlagentypen](../setup-for-objects/object-types.md).
 
     Auf dem Inforegister **Details** wird im Feld **Modelle** die Anzahl der Anlagenmodelle angezeigt, die für den ausgewählten Anlagenhersteller eingerichtet sind. Das Feld **Anlagen** zeigt die Anzahl der Anlagen, die den ausgewählten Hersteller verwenden.
     

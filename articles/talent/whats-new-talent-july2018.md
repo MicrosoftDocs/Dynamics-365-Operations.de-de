@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kherr
 ms.search.validFrom: 2018-07-31
 ms.dyn365.ops.version: Talent July 2018 update
-ms.openlocfilehash: 6ed1e4afcaeee03474d4c0ce20ac7864fb11ce78
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 5538aef6599eeffee6d9b075f1b9630d55cf982a
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551771"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812717"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent---core-hr-july-2018"></a>Neuerungen oder Änderungen in Dynamics 365 Talent – Core HR (Juli 2018)
 
@@ -31,11 +31,11 @@ ms.locfileid: "2551771"
 
 In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Talent: Core HR entweder neu oder geändert sind.
 
-## <a name="powerapps-personalization"></a>PowerApps-Personalisierung
+## <a name="power-apps-personalization"></a>Power Apps-Personalisierung
 
-Talent unterstützt Integration mit dem Microsoft PowerApps-Service. Mit PowerApps können sowohl Entwickler als auch nicht technische Benutzer benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Web erstellen, ohne Code schreiben zu müssen. Apps, die Sie, Ihre Organisation oder das breitere Ökosystem mithilfe von PowerApps entwickeln, können im Talent-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen. Beispielsweise erstellen Sie möglicherweise eine App, die Talent mit Informationen ergänzt, die von einem anderen System abgerufen werden.
+Talent unterstützt Integration mit dem Microsoft Power Apps-Service. Mit Power Apps können sowohl Entwickler als auch nicht technische Benutzer benutzerdefinierte Geschäfts-Apps für mobile Geräte, Tablets und das Web erstellen, ohne Code schreiben zu müssen. Apps, die Sie, Ihre Organisation oder das breitere Ökosystem mithilfe von Power Apps entwickeln, können im Talent-Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen. Beispielsweise erstellen Sie möglicherweise eine App, die Talent mit Informationen ergänzt, die von einem anderen System abgerufen werden.
 
-Weitere Informationen finden Sie unter [PowerApps-Apps einbetten](../fin-and-ops/get-started/embed-power-apps.md).
+Weitere Informationen finden Sie unter [Power Apps-Apps einbetten](../fin-and-ops/get-started/embed-power-apps.md).
 
 ## <a name="ceridian-payroll-integration"></a>Ceridian-Lohnintegration
 
@@ -46,7 +46,7 @@ Integration zwischen Talent und Ceridian Dayforce ist nun für die USA, Kanada u
 - Lohndaten, wie Lohnzyklen, Lohnperioden und Einkommenscodes
 - Arbeitskraftdaten
 
-Weitere Informationen finden Sie unter [Ihre Lohnintegration konfigurieren](configure-payroll-integration.md).
+Weitere Informationen finden Sie unter [Konfiguration der Abrechnungsintegration zwischen Talent und Dayforce](configure-payroll-integration.md).
 
 ## <a name="worker-tax-regions-have-been-expanded-beyond-the-us"></a>Arbeitskraft-Steuerregionen sind über die USA hinaus erweitert worden
 

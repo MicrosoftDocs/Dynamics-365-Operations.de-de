@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c689df9b00ad2d4ce161c6fdb1193f48cacbfcbc
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653510"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813798"
 ---
 # <a name="demand-forecasting-setup"></a>Einrichten einer Bedarfsplanung
 
@@ -70,7 +70,8 @@ Um die Planung zu generieren, verwendet Supply Chain Management einen Machine Le
 -   Azure-Speicherkontoname
 -   Azure-Speicherkontoschlüssel
 
-**Hinweis:** Azure-Speicherkontenname und -schlüssel sind nur erforderlich, wenn Sie ein benutzerdefiniertes Speicherkonto verwenden. Wenn Sie die lokale Version bereitstellen, müssen Sie ein benutzerdefiniertes Speicherkonto auf Azure haben, sodass der Machine Learning-Dienst auf die historischen Daten zugreifen kann. 
+> [!NOTE]
+> Azure-Speicherkontenname und -schlüssel sind nur erforderlich, wenn Sie ein benutzerdefiniertes Speicherkonto verwenden. Wenn Sie die lokale Version bereitstellen, müssen Sie ein benutzerdefiniertes Speicherkonto auf Azure haben, sodass der Machine Learning-Dienst auf die historischen Daten zugreifen kann. 
 
 Um Bedarfsvorhersagen zu erstellen, können Sie Ihren eigenen Dienst bereitstellen, indem Sie Machine Learning Studio- oder Supply Chain Management-Bedarfsplanungsexperimente verwenden. Anweisungen für das Bereitstellen der Bedarfsplanungsexperimente als Webdienst sind in Supply Chain Management verfügbar. Klicken Sie auf der Seite **Bedarfsplanungsparameter** auf die Registerkarte **Azure Machine Learning**.
 
@@ -93,11 +94,11 @@ Auf der Registerkarte **Verteilungsschlüssel** können Sie den **Planungsalgori
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einführung in die Bedarfsplanung](introduction-demand-forecasting.md)
+[Bedarfsplanung – Übersicht](introduction-demand-forecasting.md)
 
-[Generieren einer statistischen Grundplanung](generate-statistical-baseline-forecast.md)
+[Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)
 
-[Manuelle Anpassungen an die Grundplanung](manual-adjustments-baseline-forecast.md)
+[Manuelle Anpassungen an der Grundplanung](manual-adjustments-baseline-forecast.md)
 
 
 

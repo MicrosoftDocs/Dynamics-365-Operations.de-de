@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a8494bdefcf11dc331be18bfe02e0df1e39d602
-ms.sourcegitcommit: deb87e518a151d8bb084891851a39758938a96e4
+ms.openlocfilehash: 2652458a5fea9e46b8b68d3b197d2ccb1385731d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2626246"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811742"
 ---
 # <a name="manually-created-work-orders"></a>Manuell erstellte Arbeitsaufträge
 
@@ -70,7 +70,7 @@ Beachten Sie die folgenden Punkte:
 
 - In der Detailansicht auf der Listenseite **Alle Arbeitsaufträge** können Sie mehrere Anlagen zu einem Arbeitsauftrag hinzufügen, indem Sie Positionen zu den Wartungsaufträgen im Inforegister **Wartungsaufträge für Arbeitsaufträge** hinzufügen. In einer Anlage können Sie nur die Wartungsauftragstypen auswählen, die für die für die Anlage ausgewählten Anlagenart definiert sind.  
 
-- Wenn Sie einen Anlagenservicelevel oder eine Anlagenkritikalität ändern, nachdem Sie die Anlage für einen Arbeitsauftrag verwendet haben, wird der Servicelevel oder die Kritikalität für den Arbeitsauftrag nicht entsprechend aktualisiert. Weitere Informationen zum Servicelevel und zu Anlagenzuständen finden Sie unter [Anlagenservicelevel](../setup-for-objects/object-priorities.md) und [Kritische Anlagezustände](../setup-for-objects/object-criticalities.md).
+- Wenn Sie einen Anlagenservicelevel oder eine Anlagenkritikalität ändern, nachdem Sie die Anlage für einen Arbeitsauftrag verwendet haben, wird der Servicelevel oder die Kritikalität für den Arbeitsauftrag nicht entsprechend aktualisiert. Weitere Informationen zu Service Levels und Kritikalitäten finden Sie unter [Asset Service Levels](../setup-for-objects/object-priorities.md) und [Asset Kritikalitätsarten](../setup-for-objects/object-criticalities.md).
 
 - Die Kritikalität eines Arbeitsauftrags wird jedes Mal neu berechnet, wenn eine Arbeitsauftragseinzelvorgang zum Arbeitsauftrag hinzugefügt oder daraus gelöscht wird.
 

@@ -3,7 +3,7 @@ title: Videos
 description: Diese Seite listet von Microsoft erstellte „How-to“- und Tech-Talk-Videos zu Finance and Operations-Apps auf, die auf YouTube und anderen Websites verfügbar sind.
 author: josaw1
 manager: AnnBe
-ms.date: 10/20/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: fb14ffa500fcf84030eca075545716a79d7b2b27
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
+ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635102"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "2781849"
 ---
 # <a name="videos"></a>Videos 
 
@@ -82,7 +82,7 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 ### <a name="customize-the-app"></a>App anpassen
 - [Benutzerdefinierte Felder hinzufügen](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
-- [PowerApps einbetten](https://www.youtube.com/watch?v=x3qyA1bH-NY)
+- [Power Apps einbetten](https://www.youtube.com/watch?v=x3qyA1bH-NY)
 
 ### <a name="expenses"></a>Ausgaben
 - [Ausgabenfunktionalität](https://youtu.be/Ocy-MsTvEE0)
@@ -101,6 +101,9 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 ### <a name="organization-administration"></a>Organisationsverwaltung
 
 - [Dokumentverwaltung](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be)
+
+### <a name="revenue-recognition"></a>Umsatzerkennung
+- [Wie man die Umsatzrealisierung nutzt](https://youtu.be/v3amIsiqvoo)
 
 ### <a name="tax-engine"></a>Steuermodul
 

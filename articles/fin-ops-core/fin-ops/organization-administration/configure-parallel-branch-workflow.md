@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2339c6f901a3ef39ad4f9586b2f391b966a3df98
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2058eaac77282946559cae11fcec8152658fc96b
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190142"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811356"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Konfigurieren paralleler Verzweigungen in einem Workflow
 
@@ -46,8 +46,8 @@ Gehen Sie folgendermaßen vor, um einen Namen für einen Parallelzweig einzugebe
 Gehen Sie folgendermaßen vor, um die Elemente eines Parallelzweigs zu entwerfen und zu konfigurieren.
 
 1. Doppelklicken Sie auf den Parallelzweig.
-2. Ziehen Sie Workflowelemente auf die Canvas, und konfigurieren Sie die Elemente analog zum Erstellen eines Workflows. Weitere Informationen finden Sie unter [Erstellen eines Workflows.](create-workflow.md).
+2. Ziehen Sie Workflowelemente auf die Canvas, und konfigurieren Sie die Elemente analog zum Erstellen eines Workflows. Weitere Informationen finden Sie unter [Erstellen von Workflows – Übersicht](create-workflow.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Erstellen eines Workflows](create-workflow.md)
+[Erstellen von Workflows – Übersicht](create-workflow.md)

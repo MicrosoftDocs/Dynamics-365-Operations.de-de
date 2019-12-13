@@ -17,12 +17,12 @@ ms.search.region: Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d9c13042738f62ba4d806d2dd4d8af7a8a2531dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: dfcfb13391bccde43a5bd50965967fde1a8a432b
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183557"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2773408"
 ---
 # <a name="esr-customer-payments-import"></a>ESR-Debitorenzahlungen für Importe
 
@@ -40,7 +40,7 @@ Zahlungsreferenzen sollten auf den Zahlungsbeleg gedruckt werden, nachdem sie ge
 3.  Der Verkaufsrechnungsnummernkreis soll im richtigen Format (es sollte Symbole nicht anders als Ziffern haben und dieses sollen keine führende Null aufweisen) sein.
 4.  Das Format **Orange** muss für das Debitorenkonto im Feld **Auf einer Debitorenrechnung** auf der **Rechnung und Lieferung** Registerkarte angegeben werden.
 
-Weitere Informationen finden Sie unter [Zahlungsbericht (Giro)](emea-eur-payment-slip-report-giro.md).
+Weitere Informationen finden Sie unter [Zahlungsbelegbericht für Europa](emea-eur-payment-slip-report-giro.md).
 
 ## <a name="import-a-payment-file"></a>Zahlungsdatei importieren
 1. Gehen Sie zur Seite **Zahlungsjournal**
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie unter [Zahlungsbericht (Giro)](emea-eur-payment
 3. Klicken Sie auf **Funktionen** &gt; **Zahlungen importieren**.
 4. Wählen Sie im Dialogfeld die Zahlungsmethode, und suchen Sie dann den Speicherort der Datei, die importiert werden soll. 
    > [!NOTE]
-   >  Bevor Sie diesen Schritt ausführen können, müssen Sie die **ESR (CH)** Konfigurationen aus dem Lifecycle Services (LCS) bereits importiert haben und die ESR-Zahlungsmethode einrichten. Weitere Informationen finden Sie unter [Dateiformate für Zahlungen](emea-select-file-formats-for-the-method-of-payments.md).
+   >  Bevor Sie diesen Schritt ausführen können, müssen Sie die **ESR (CH)** Konfigurationen aus dem Lifecycle Services (LCS) bereits importiert haben und die ESR-Zahlungsmethode einrichten. Weitere Informationen finden Sie [Dateiformate für Zahlungsmethoden](emea-select-file-formats-for-the-method-of-payments.md).
 
 Nachdem Sie die Zahlungsdatei importieren haben, werden die Zahlungserfassungspositionen für den Ausgleich mit Debitorenrechnungen anhand der Zahlungsreferenz erstellt und markiert. Wenn es Gebühren gibt, die für das Bankkonto angegeben werden, die in der Datei angezeigt werden, wie Buchungen zwischen dem Hauptkonto und dem Gebührenkonto, sind diese Gebühren der Erfassung hinzuzufügen.
 

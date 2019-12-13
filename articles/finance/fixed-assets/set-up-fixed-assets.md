@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9eef9d8c58d19b05901035f4c679ee7d9902819
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8196ddc879df1f398aabef0c1c4064bf0d4fff2c
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177887"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771919"
 ---
 # <a name="set-up-fixed-assets"></a>Anlagen einrichten
 
@@ -43,7 +43,7 @@ Anlagen werden bei der Erstellung einer Gruppe zugeordnet. Standardmäßig werde
 
 ## <a name="depreciation-profiles"></a>Abschreibungsprofile
 
-Abschreibungsprofile sollten zuerst eingerichtet werden. Im Abschreibungsprofil konfigurieren Sie, wie der Wert einer Anlage im Laufe der Zeit abgeschrieben wird. Sie müssen die Abschreibungsmethode, das Abschreibungsjahr (Kalenderjahr oder Geschäftsjahr) und die Häufigkeit der Abschreibung festlegen. Weitere Informationen finden Sie unter [Einrichten und Erstellen von Abschreibungsprofilen](tasks/set-up-depreciation-profiles.md).
+Abschreibungsprofile sollten zuerst eingerichtet werden. Im Abschreibungsprofil konfigurieren Sie, wie der Wert einer Anlage im Laufe der Zeit abgeschrieben wird. Sie müssen die Abschreibungsmethode, das Abschreibungsjahr (Kalenderjahr oder Geschäftsjahr) und die Häufigkeit der Abschreibung festlegen. Weitere Informationen finden Sie unter [Abschreibungsprofile einrichten und anlegen](tasks/set-up-depreciation-profiles.md).
 
 ## <a name="books"></a>Bücher
 
@@ -51,7 +51,7 @@ Nachdem Sie das Abschreibungsprofile erstellt haben, müssen Sie die erforderlic
 
 Ein primäres Abschreibungsprofil wird jedem Buch zugewiesen. Bücher haben auch ein alternatives oder wechselbares Abschreibungsprofil, wenn diese Art des Profils anwendbar ist. Um das Anlagenbuch in den Abschreibungsausführungen automatisch einzubeziehen, müssen Sie die Option **Berechnen der Abschreibung** aktivieren. Wenn diese Option nicht für eine Anlage aktiviert ist, überspringt der Abschreibungsvorschlag die Anlage.
 
-Sie können auch abgeleitete Bücher einrichten. Die angegebenen abgeleiteten Transaktionen werden in den abgeleiteten Büchern als genaue Kopie der primären Transaktion gebucht. Daher werden normalerweise die abgeleitete Buchungen für Anschaffungen und Abgänge und nicht für Abschreibungsbuchungen eingerichtet. Weitere Informationen finden Sie unter [Einrichten von Büchern](tasks/set-up-value-models.md).
+Sie können auch abgeleitete Bücher einrichten. Die angegebenen abgeleiteten Transaktionen werden in den abgeleiteten Büchern als genaue Kopie der primären Transaktion gebucht. Daher werden normalerweise die abgeleitete Buchungen für Anschaffungen und Abgänge und nicht für Abschreibungsbuchungen eingerichtet. Weitere Informationen finden Sie unter [Wertmodelle einrichten](tasks/set-up-value-models.md).
 
 ## <a name="fixed-asset-posting-profiles"></a>Anlagenbuchungsprofile
 

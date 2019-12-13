@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 15a645c98fe38e8ddaa34c0c21581eac6636502f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 40317cdef777ca6524feb66caf66ddec3d855d32
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190970"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811600"
 ---
 # <a name="new-or-updated-task-guides-november-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (November 2016)
 
@@ -30,7 +30,7 @@ ms.locfileid: "2190970"
 
 Dieses Thema führt neue oder aktualisierte Aufgabenleitfäden aus der APQC Unified-Bibliothek (November 2016 – alle Sprachen) für Microsoft Dynamics 365 for Operations auf. Es wurden keine neue Erste Schritte Bibliothek veröffentlicht.
 
-Die APQC Unified-Bibliothek (November 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations – Plattformupdate 3, Microsoft Dynamics AX – Plattformupdate 2, Dynamics AX-Update vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Versionen, finden Sie unter [Was ist neu oder geändert](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die APQC Unified-Bibliothek (November 2016 – alle Sprachen) enthält Aufgabenleitfäden zur Hilfe bei Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations – Plattformupdate 3, Microsoft Dynamics AX – Plattformupdate 2, Dynamics AX-Update vom Mai 2016 und Microsoft Dynamics AX-Version vom Februar 2016. Weitere Informationen zu diesen Releases finden Sie unter [Was ist neu oder geändert auf der Homepage von Finance and Operations](whats-new-changed.md). Lokalisierte Versionen der Aufgabenleitfäden sind in dieser Bibliothek verfügbar. Weitere Informationen zum Verbinden des Hilfesystems mit einer Aufgabenleitfadenbibliothek finden Sie unter [Hilfesystem](help-overview.md).
 
 > [!NOTE]
 > :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für das Dynamics 365 for Operations-Update vom November 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
@@ -545,6 +545,6 @@ Die APQC Unified-Bibliothek (November 2016 – alle Sprachen) enthält Aufgaben
 
 [Neuer Aufgabenleitfaden verfügbar (Februar 2016)](new-task-guides-available-february-2016.md)
 
-[Neue oder aktualisierte Aufgabenleitfäden verfügbar (Mai 2016)](new-updated-task-guides-available-may-2016.md)
+[Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Neue oder aktualisierte Aufgabenleitfäden verfügbar (August 2016)](new-updated-task-guides-available-august-2016.md)

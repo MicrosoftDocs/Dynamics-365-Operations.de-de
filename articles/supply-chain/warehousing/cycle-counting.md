@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aef99a7e8964dba0e3c3a507bb214b79ae723357
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: d7ec95b230c5ea17f208bc1288c10fce15631a5d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251522"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813062"
 ---
 # <a name="cycle-counting"></a>Permanente Inventur
 
@@ -136,7 +136,7 @@ Eine Zykluszählungsdifferenz tritt in den folgenden Szenarien auf, wenn die Opt
 Sie können Abweichungen in den gezählten Werten anpassen und dann den gezählten Wert auf der Seite **Ausstehende Prüfung der Zykluszählung** akzeptieren. Sie können die geänderte Anzahl der Artikelmenge auf der Seite **Verfügbarer Lagerbestand nach Lagerplatz** überprüfen. Der gezählte Wert wird abgelehnt, wenn die Differenz nicht genehmigt werden kann.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-[Konfigurieren von mobile Geräten für Lagerortarbeit](configure-mobile-devices-warehouse.md)
+[Mobile Geräte für Lagerarbeiten einrichten](configure-mobile-devices-warehouse.md)
 
 
 

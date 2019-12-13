@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7b6b3cced92920ef5a253ca15793f26f244475fa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2186600"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771844"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -69,13 +69,13 @@ Nachfolgend sind einige der Konsolidierungsszenarien, die Onlinesupporte konsoli
 ## <a name="legal-entity-setup"></a>Einrichten von juristischen Personen
 Vor dem Beginn einer Konsolidierung muss die juristische Person eingerichtet werden. Sie können Konsolidierungen beliebig oft ausführen, die Sie benötigen, und sämtliche Daten werden aus der Buchhaltungswährung des Quellunternehmens übersetzt, die in der Währung des Konsolidierungsunternehmens definiert wird. Daher muss für die nachfolgende Organisationsstruktur, wenn Sie alle nordamerikanischen Unternehmen in US-Dollar (USD) und anschließend in Euro (EUR) übersetzen müssen, die Währung des übergeordneten Unternehmens, müssen Sie mindestens zwei Konsolidierungsunternehmen haben.
 
-![Organisationsstruktur](./media/organizational-structure.png "Organisationsstruktur")
+![Organisationsstruktur](./media/organizational-structure.png "Unternehmensstruktur")
 
 In der vorherigen Organisationsstruktur müssen Sie eine juristische Person für die Konsolidierung in Nordamerika haben, weil die Konsolidierungen immer in der Buchhaltungswährung des Quellunternehmens in die Währung des Konsolidierungsunternehmens konsolidieren. Im Beispiel wenn alle Unternehmen in einer einzigen Konsolidierung enthalten sind, wird die mexikanische Tochtergesellschaft von mexikanischen Pesos MXN zu EUR und nicht von MXN zu USD und zu EUR übersetzt.
 
 Wenn Sie die juristische Person erstellen, können Sie angeben, ob das Unternehmen für den Konsolidierungsprozess und den Löschungsprozess verwendet wird, oder nur für einen der angegebenen Prozesse. In der folgenden Abbildung wird das Unternehmen für beide Prozesse verwendet. Beachten Sie, dass Tageserfassungen Sie in einem Konsolidierungsunternehmen nicht gebucht werden können, kann aber in einem Unternehmen mit Löschungseinträgen gebucht. Daher sollten Sie ein gesondertes Unternehmen mit Löschungseinträgen haben.
 
-![Juristische Person, die für die Konsolidierung und Löschung verwendet wird](./media/sep-elimination-company.png "Juristische Person, die für die Konsolidierung und Löschung verwendet wird")
+![Juristische Person, die sowohl für die Konsolidierung als auch für die Eliminierung verwendet wird ](./media/sep-elimination-company.png "Juristische Person, die sowohl für die Konsolidierung als auch für die Eliminierung verwendet wird.")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hauptkonten und Konsolidierungskontogruppen
 Eine Auswahl, die Sie treffen müssen, ist, wie Sie Ihren Kontenplan konsolidieren möchten. Während des Konsolidierungsprozesses haben Sie drei Möglichkeiten für Konsolidieren von Hauptkonten.
@@ -84,14 +84,14 @@ Die erste Option verwendet die Hauptkonten von den Ausgangsunternehmen. In diese
 
 Die zweite Option ist es, ein Standardkonsolidierungskonto auf der Seite **Hauptkonten** festzulegen. Das Konto wird dann zum Konsolidierungskonto zugeordnet. Diese Option kann hilfreich sein, wenn Sie verschiedene Kontenpläne haben oder einem Diagramm zuordnen müssen, dass als Hauptsitz definiert wird.
 
-![Standardkonsolidierungskonto auf der Hauptkontoseite definiert](./media/main-accounts.png "Standardkonsolidierungskonto auf der Hauptkontoseite definiert")
+![Standardkonsolidierungskonto, das auf der Seite Hauptkonten angegeben ist](./media/main-accounts.png "Standard-Konsolidierungskonto, das auf der Seite Hauptkonten angegeben ist.")
 
 Die dritte Option ist es, Konsolidierungskontogruppen zu verwenden. Sie können beliebig viele Konsolidierungskontogruppen definieren, die Sie benötigen. auf der Seite **Zusätzliche Konsolidierungskonten** müssen Sie das Hauptkonto vom Kontenplan dem Konto zuweisen, das Sie für diese Gruppe benötigen.
 
-![Zuordnung auf der zusätzlichen Konsolidierungskontoseite](./media/additional-consolidation-accounts.png "Zuordnung auf der zusätzlichen Konsolidierungskontoseite")
+![Zuordnung auf der Seite Zusätzliche Konsolidierungskonten](./media/additional-consolidation-accounts.png "Zuordnung auf der Seite Zusätzliche Konsolidierungskonten")
 
 ## <a name="consolidating-online"></a>Konsolidierung, online
-Informationen zum Zuweisen von Details von Konsolidierungen online, finden Sie unter [Konsolidierung online](./consolidate-online.md)
+Wie Sie Details zu Konsolidierungen online eingeben können, erfahren Sie unter [Online-Finanzkonsolidierungen](./consolidate-online.md).
 
 ## <a name="managing-consolidation-transactions"></a>Konsolidierungsbuchungen verwalten
 Um die Ergebnisse der Konsolidierung anzuzeigen, haben Sie mehrere Optionen:
@@ -100,7 +100,7 @@ Um die Ergebnisse der Konsolidierung anzuzeigen, haben Sie mehrere Optionen:
 - Wiederholen Sie die Listenseite **Zwischenbilanz** im Konsolidierungsunternehmen.
 - In der Liste von Konsolidierungsbuchungen auf der Seite **Konsolidierungen**, zeigen Sie die Salden an, die durch das Datum für jedes Ausgangsunternehmen für jede Periode erstellt werden.
 
-    ![Konsolidierungsbuchungen auf der Konsolidierungsseite](./media/managing-consolidation-transactions.png "Konsolidierungsbuchungen auf der Konsolidierungsseite")
+    ![Konsolidierungsvorgänge auf der Seite Konsolidierungen](./media/managing-consolidation-transactions.png "Konsolidierungsvorgänge auf der Seite Konsolidierungen")
 
 Um die Konsolidierung erneut auszuführen, können Sie einfach die Konsolidierung verarbeiten. Alternativ können Sie auf der Seite **Entfernt der Buchungen** zuerst **Konsolidierungen** auswählen.
 
@@ -120,7 +120,7 @@ Die Einstellung für die Löschungen wird im Bereich **Einrichten** im **Konsoli
 
 Sie können das Datum festlegen, ab dem die Löschungsregel gültig ist und das Datum, an dem sie abläuft, entsprechend Ihren Anforderungen. Sie müssen **Aktiv** auf **Ja** setzen,  wenn Sie  möchten, dass sie im Löschungsvorschlagsprozess verfügbar sein sollen. Wählen Sie ein Journal aus, das einen Typ **Löschung**  hat.
 
-![Grundlegende Eigenschaften einer Löschungsregel](./media/ledger-elimination-rule-journal.png "Grundlegende Eigenschaften einer Löschungsregel")
+![Basiseigenschaften einer Eliminierungsregel](./media/ledger-elimination-rule-journal.png "Grundeigenschaften einer Eliminierungsregel")
 
 Nachdem Sie die Grundlagen definiert haben, können Sie die tatsächlichen Verarbeitungsregeln definieren, indem Sie **Positionen** anklicken. Es gibt zwei Optionen für Löschungen, nämlich den Nettoveränderungsbetrag eliminieren oder einen festen Betrag definieren.
 
@@ -128,7 +128,7 @@ Wählen Sie das Quellkonto aus. Sie können Platzhalterzeichen wie Sternchen (\*
 
 Nachdem Sie Ihre Quellkonten ausgewählt haben, bestimmen die **Kontospezifikation** das Konto vom Zielunternehmen, das verwendet wird. Wählen Sie **Quelle** aus, wenn Sie dasselbe Hauptkonto verwendet werden soll, das im Konto Quelle definiert ist. Wenn Sie **Benutzerdefiniert** auswählen, dann müssen Sie ein Zielkonto angeben.
 
-![Sachkonto-Löschungsregel-Positionsseite](./media/ledger-elimination-rule-line.png "Sachkonto-Löschungsregel-Positionsseite")
+![Sachkonto-Eliminierungsregel Zeile Seite](./media/ledger-elimination-rule-line.png "Zeilenseite der Ledger-Eliminierungsregel")
 
 Das Feld **Dimensionsspezifikation** arbeitet wie das Feld **Kontospezifikation**. Wenn Sie **Quelle** auswählen, werden die gleichen Dimensionen im Zielunternehmen wie im Ausgangsunternehmen verwendet. Wenn Sie **Benutzerdefiniert** auswählen, müssen Sie die Dimensionen im Zielunternehmen angeben, indem Sie auf die **Zieldimensionen** Menüoption klicken. Wählen Sie Quelldimensionen und Finanzdimensionen und die Werte aus, die als Quelle der Löschung verwendet werden.
 

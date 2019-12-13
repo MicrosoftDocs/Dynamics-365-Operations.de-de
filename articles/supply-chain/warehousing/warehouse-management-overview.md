@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abb78c9ac43dad80e45729f4b42651d9807f71f1
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: f50b950b8588f2b17611889e0cb0eeb6da359886
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251061"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813016"
 ---
 # <a name="warehouse-management-overview"></a>Lagerortverwaltung – Übersicht
 
@@ -36,7 +36,7 @@ Um das Arbeiten mit der Lagerortverwaltung zu beginnen, müssen Sie die Einricht
 
 Sie müssen Komponenten für ein- und ausgehende Lagerortprozess-Workflows entsprechend den Geschäftsanforderungen konfigurieren. Die wichtigsten Komponenten, die Sie konfigurieren müssen, sind Wellenvorlagen, Arbeitsvorlagen, Arbeitspools und Lagerplatzrichtlinien.
 
-- [Lagerortkonfiguration](warehouse-configuration.md)
+- [Lagerortkonfiguration – Übersicht](warehouse-configuration.md)
 - [Steuern von Lagerarbeit, indem Sie Arbeitsvorlagen und Lagerplatzrichtlinien verwenden](control-warehouse-location-directives.md)
 - [Mobile Geräte für Lagerarbeiten einrichten](configure-mobile-devices-warehouse.md)
 - [Lagerplatzdirektive für Bestellungseinlagerung einrichten](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)

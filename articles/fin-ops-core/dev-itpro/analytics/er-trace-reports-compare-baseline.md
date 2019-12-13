@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 1643e7fb3128faf6ad638d4cdad313b3667463b1
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6cdfbbd7d4f41503e97620b8738679ad572b2a4a
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181679"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2771236"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Erstellte Berichtsergebnisse protokollieren und mit Ausgangswerten vergleichen
 
@@ -44,10 +44,10 @@ Um mehr über diese Funktion zu erfahren, spielen Sie die Aufgabenleitfäden **E
 
 Dieses Verfahren erklärt, wie das ER-Framework konfiguriert wird, um Informationen zu ER-Formatausführungen zu sammeln und die Ergebnisse dieser Durchläufe dann auszuwerten. Als Teil dieser Bewertung werden generierte Dokumente mit ihren Basisdateien verglichen. In diesem Beispiel erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie einen beliebigen Dataset verwenden.
 
-Um die Schritte in diesem Beispiel auszuführen, müssen Sie zunächst die Schritte in[Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+Um die Schritte in diesem Beispiel abzuschließen, müssen Sie zunächst die Schritte unter [Konfigurationsanbieter anlegen ausführen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
-2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der Konfigurationsanbieter für das Litware, Inc.-Beispielunternehmen aufgeführt ist und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in [Konfigurationsanbieter erstellen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md) befolgen.
+2. Überprüfen Sie auf der Seite **Lokalisierungskonfigurationen** im Abschnitt **Konfigurationsanbieter**, ob der Konfigurationsanbieter für das Litware, Inc.-Beispielunternehmen aufgeführt ist und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, führen Sie die Schritte unter [Konfigurationsanbieter erstellen aus und markieren Sie ihn als aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ### <a name="configure-document-management-parameters"></a>Parameter der Dokumentverwaltung konfigurieren
 
@@ -55,7 +55,7 @@ Um die Schritte in diesem Beispiel auszuführen, müssen Sie zunächst die Schri
 2. Geben Sie im Feld **Klasse** die Option **Datei zuordnen** an.
 3. Geben Sie im Feld **Gruppe** die Option **Datei** an.
 
-![Dokumenttypseite](media/GER-BaselineSample-SetupDocumentType.PNG "Screenshot der Dokumenttypseite")
+![Seite „Dokumenttypen”](media/GER-BaselineSample-SetupDocumentType.PNG "Screenshot der Seite Dokumenttypen")
 
 > [!NOTE]
 > Einen neuer Dokumenttyp mit dem gleichen Namen muss für jeden Datensatz konfiguriert werden, in dem Sie die ER-Basisfunktion verwenden möchten.
@@ -64,11 +64,11 @@ Um die Schritte in diesem Beispiel auszuführen, müssen Sie zunächst die Schri
 
 1. Wählen Sie im Arbeitsbereich **Elektronische Berichterstellung** im Abschnitt **Zugehörige Links** **Elektronische Berichterstellungsparameter** aus.
 
-    ![Elektronischer Berichterstellungsarbeitsbereich](media/GER-BaselineSample-ERWorkspace.PNG "Screenshot des elektronischen Berichterstellungsarbeitsbereichs")
+    ![Elektronische Berichterstellung – Arbeitsbereich](media/GER-BaselineSample-ERWorkspace.PNG "Screenshot des Arbeitsbereichs Elektronische Berichterstattung")
 
 2. Auf der Registerkarte **Anhänge** im Feld **Berechnungsgrundlage** wählen Sie den Dokumenttyp aus, den Sie soeben erstellt haben.
 
-    ![Anhangregisterkarte der elektronischen Berichterstellungsparameterseite](media/GER-BaselineSample-ERParameters.PNG "Screenshot der elektronischen Berichterstellungsparameter")
+    ![Registerkarte Anhänge auf der Seite Elektronische Berichtsparameter](media/GER-BaselineSample-ERParameters.PNG "Screenshot der elektronischen Berichtsparameter")
 
 3. Wählen Sie **Speichern** aus und schließen Sie dann die Seite **Elektronische Berichterstellungsparameter**.
 
@@ -79,7 +79,7 @@ Um die Schritte in diesem Beispiel auszuführen, müssen Sie zunächst die Schri
 3. Geben Sie im Drop-Down-Dialogfeld im Feld **Name** **Modell zum Erlernen von ER-Grundlagen** ein.
 4. Wählen Sie **Konfiguration erstellen** aus, um die Erstellung eines neuen ER-Datenmodelleintrags zu bestätigen.
 
-![Erstellen Sie ein Konfigurations-Drop-Down-Dialogfeld](media/GER-BaselineSample-ModelAdd.PNG "Screenshot der Dialogfelds 'Konfigurations-Drop-Down erstellen'")
+![Konfigurations-Dropdown-Dialogfeld erstellen](media/GER-BaselineSample-ModelAdd.PNG "Screenshot des Dropdown-Dialogfensters Konfiguration erstellen")
 
 ### <a name="design-a-data-model"></a>Entwerfen eines Datenmodells
 
@@ -93,7 +93,7 @@ Um die Schritte in diesem Beispiel auszuführen, müssen Sie zunächst die Schri
 8. Wählen Sie **Status ändern** aus.
 9. Wählen Sie **Abschließen** und dann **OK** aus.
 
-![Konfigurationsseite](media/GER-BaselineSample-ModelComplete.PNG "Screenshot der Konfigurationsseite")
+![Konfigurationsseite](media/GER-BaselineSample-ModelComplete.PNG "Screenshot der Seite Konfigurationen")
 
 ### <a name="add-a-new-er-format-configuration"></a>Neues ER-Modellformat hinzufügen
 
@@ -102,7 +102,7 @@ Um die Schritte in diesem Beispiel auszuführen, müssen Sie zunächst die Schri
 3. Wählen Sie im Feld **Name** den Text **Format zum Erlernen der ER-Grundlagen** ein.
 4. Wählen Sie **Konfiguration erstellen** aus, um die Erstellung eines neuen ER-Formateintrags zu bestätigen.
 
-![Erstellen Sie ein Konfigurations-Drop-Down-Dialogfeld](media/GER-BaselineSample-FormatAdd.PNG "Screenshot der Dialogfelds 'Konfigurations-Drop-Down erstellen'")
+![Konfigurations-Dropdown-Dialogfeld erstellen](media/GER-BaselineSample-FormatAdd.PNG "Screenshot des Dropdown-Dialogfensters Konfiguration erstellen")
 
 ### <a name="design-a-format"></a>Entwerfen eines Formats
 
@@ -131,7 +131,7 @@ Bei diesem Beispiel erstellen Sie ein einfaches ER-Format, um XML-Dokumente zu g
     2. Geben Sie im Feld **Name** **ID** ein.
     3. Wählen Sie **OK**.
 
-    ![Formatdesignerseite](media/GER-BaselineSample-FormatLayoutDesign.PNG "Screenshot der Formatdesignerseite")
+    ![Formatdesignerseite](media/GER-BaselineSample-FormatLayoutDesign.PNG "Screenshot der Format Designer Seite")
 
 8. Auf der Registerkarte **Zuordnung** wählen Sie **Löschen** aus.
 9. Wählen Sie **Stamm hinzufügen** aus.
@@ -144,7 +144,7 @@ Bei diesem Beispiel erstellen Sie ein einfaches ER-Format, um XML-Dokumente zu g
 11. Wählen Sie in der Struktur **Ausgabe\\Dokument\\Id** aus.
 12. Wählen Sie **Binden** und dann **Speichern** aus.
 
-![Formatdesignerseite](media/GER-BaselineSample-FormatMappingDesign.PNG "Screenshot der Formatdesignerseite")
+![Formatdesignerseite](media/GER-BaselineSample-FormatMappingDesign.PNG "Screenshot der Format Designer Seite")
 
 Auf Grundlage die entworfenen Struktur generiert das konfigurierte Format eine XML-Datei. Diese XML enthält das Element **Stamm** mit dem Attribut **ID**, das auf den Wert festgelegt wird, den der Benutzer im ER-Laufzeitdialogfeld eingibt.
 
@@ -154,11 +154,11 @@ Auf Grundlage die entworfenen Struktur generiert das konfigurierte Format eine X
 2. Geben Sie im Feld **Eingabe-ID** den Wert **1** ein.
 3. Wählen Sie **OK**.
 
-    ![Dialogfeld für elektronische Berichtsparameter](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Screenshot des Dialogfelds für elektronische Berichtsparameter")
+    ![Dialogfeld für elektronische Berichtsparameter ](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Screenshot des Dialogfensters Elektronische Berichtsparameter")
 
 4. Speichern Sie eine lokale Kopie der Datei **out.Admin.xml**, die erzeugt wird, damit Sie sie später als Grundlage für dieses ER-Format verwenden können.
 
-    ![Benachrichtigung zur erstellten Datei auf der Konfigurationsseite](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Screenshot der Benachrichtigungen zur erstellten Datei auf der Konfigurationsseite")
+    ![Benachrichtigung über die generierte Datei auf der Seite Konfigurationen](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Screenshot der Benachrichtigung über die generierte Datei auf der Seite Konfigurationen")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>Konfigurieren Sie die ER-Parameter, um die Grundlagenfunktion zu verwenden
 
@@ -166,20 +166,20 @@ Auf Grundlage die entworfenen Struktur generiert das konfigurierte Format eine X
 2. Legen Sie die Option **In Debugmodus ausführen** auf **Ja** fest.
 3. Wählen Sie **OK**.
 
-![Benutzerparameterdialogfeld](media/GER-BaselineSample-ERUserParameters.PNG "Screenshot des Benutzerparameterdialogfelds")
+![Benutzerparameter-Dialogfeld](media/GER-BaselineSample-ERUserParameters.PNG "Screenshot des Dialogfensters Benutzerparameter")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Fügen Sie eine neue Grundlage für ein entworfenes ER-Format hinzu
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Wählen Sie im Aktivitätsbereich **Grundlagen** aus.
 
-    ![Schaltfläche „Grundlagen“ auf der Seite „Konfigurationen“](media/GER-BaselineSample-OpenBaselinePage.PNG "Screenshot der Schaltfläche „Grundlagen“ auf der Seite „Konfigurationen“")
+    ![Baselines-Schaltfläche auf der Seite Konfigurationen](media/GER-BaselineSample-OpenBaselinePage.PNG "Screenshot der Schaltfläche Baselines auf der Seite Konfigurationen")
 
 3. Wählen Sie im Aktivitätsbereich **Neu** aus.
 4. Wählen Sie das ER-Format **Format zum Erlernen der ER-Grundlagen** aus, die Sie zuvor entworfen haben.
 5. Wählen Sie **Speichern**.
 
-![Seite für die Formatgrundlage für elektronische Berichterstellung](media/GER-BaselineSample-AddBaseline.PNG "Screenshot der Formatgrundlagen für elektronische Berichterstellung")
+![Elektronisches Berichtsformat Basislinien Seite](media/GER-BaselineSample-AddBaseline.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** hinzugefügt.
 
@@ -189,7 +189,7 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 2. Wählen Sie im Aktivitätsbereich **Neu** \> **Datei** aus. In den ER-Parametern sollte der Dokumenttyp **Datei** zuvor als ausgewählt worden sein, da der Dokumenttyp zum Speichern von Grundlagendateien verwendet wird.
 3. Wählen Sie **Durchsuchen** und die Datei **out.Admin.xml** aus, die generiert wurde, als Sie die zuvor das konfigurierte ER-Format ausgeführt haben.
 
-    ![Anhangseite](media/GER-BaselineSample-UploadBaselineFile.PNG "Screenshot der Anhangseite")
+    ![Anhänge-Seite](media/GER-BaselineSample-UploadBaselineFile.PNG "Screenshot der Seite Anlagen")
 
 4. Schließen Sie die Seite **Anhänge**.
 5. Auf dem Inforegister **Grundlagen** wählen Sie **Neu** aus.
@@ -204,7 +204,7 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 10. Geben Sie im Feld **Grundlage** den Anhang **out.Admin** ein oder wählen Sie ihn aus.
 11. Wählen Sie **Speichern**.
 
-![Seite für die Formatgrundlage für elektronische Berichterstellung](media/GER-BaselineSample-SetupBaselineLine.PNG "Screenshot der Formatgrundlagen für elektronische Berichterstellung")
+![Elektronisches Berichtsformat Basislinien Seite](media/GER-BaselineSample-SetupBaselineLine.PNG "Screenshot der Seite Baselines des elektronischen Berichtsformats")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Führen Sie das entworfene ER-Format aus und prüfen Sie das Protokoll, um die Ergebnisse zu analysieren
 
@@ -215,7 +215,7 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 5. Wählen Sie **OK**.
 6. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurations-Debug-Protokolle**.
 
-    ![Seite der Ausführungsprotokolle für elektronische Berichterstellung](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Screenshot der Seite der Ausführungsprotokolle für elektronische Berichterstellung")
+    ![Elektronische Berichterstellung Laufprotokolle Seite](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Screenshot der Seite mit den Protokollen für die elektronische Berichterstattung")
 
     > [!NOTE]
     > Das Ausführungsprotokoll enthält Informationen über die Ergebnisse des Vergleichs der generierten Datei mit der konfigurierten Grundlage. In diesem Beispiel gibt das Protokoll an, dass die generierte Datei und die Grundlage gleich sind.
@@ -231,7 +231,7 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 5. Wählen Sie **OK**.
 6. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurations-Debug-Protokolle**.
 
-    ![Seite der Ausführungsprotokolle für elektronische Berichterstellung](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Screenshot der Seite der Ausführungsprotokolle für elektronische Berichterstellung")
+    ![Elektronische Berichterstellung Laufprotokolle Seite](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Screenshot der Seite mit den Protokollen für die elektronische Berichterstattung")
 
     > [!NOTE]
     > Das Ausführungsprotokoll enthält Informationen über die Ergebnisse des Vergleichs der generierten Datei mit der konfigurierten Grundlage. In diesem Beispiel gibt das Protokoll an, dass die generierte Datei und die Grundlage unterschiedlich sind.
@@ -243,4 +243,4 @@ Die Grundlegende wird für das Format **Format zum Erlernen von ER-Grundlagen** 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Konfigurieren des ER-Framework](electronic-reporting-er-configure-parameters.md)
+- [Konfigurieren Sie das Electronic Reporting (ER) Framework](electronic-reporting-er-configure-parameters.md).

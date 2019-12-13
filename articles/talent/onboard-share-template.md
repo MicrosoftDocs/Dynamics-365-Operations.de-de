@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 010d68b79300d15292dbcd4754eed8aac115cdce
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2551448"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812832"
 ---
 # <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Hier können Sie Inhalte mit anderen Personen teilen in Dynamics 365 Talent - Onboard
 
@@ -53,7 +53,7 @@ Microsoft Dynamics 365 Talent: Onboard ermöglicht es Ihnen: Onboarding Anleitun
 
 3. Unter **Empfänger** wenn der Empfänger in der Lage sein sollte, die Vorlage zu überarbeiten, legen Sie die Option **Können diese Personen Änderungen vornehmen** auf **Aktiviert** fest. Wenn Empfänger per E-Mail informiert werden, dass Sie Ihnen die Vorlage freigegeben haben, legen die Option **Senden Sie E-Mail-Benachrichtigung an die Empfänger** auf **Aktiviert** fest.
 
-    [!Festlegen von Zugriff und E-Mail-Einstellungen für eine Vorlage](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
+    [![Zugriffs- und E-Mail-Einstellungen für eine Vorlage festlegen](./media/onboard-share-template-access-and-email.png)](./media/onboard-share-template-access-and-email.png)
 
 4. Geben Sie einen Namen oder eine E-Mail-Adresse ein, und wählen Sie die gewünschten Empfänger in der Dropdownliste aus.
 5. Auf der Registerkarte **Verwalten des Zugriffs** können Sie prüfen oder ändern, was die Empfänger in der Vorlage geändert haben. Um den Zugriff eines Empfängers zu ändern, wählen Sie in der Dropdownliste neben dem Namen des Empfängers **Kann anzeigen**, **Kann bearbeiten** oder **Entfernen**, je nach Bedarf aus.
@@ -68,6 +68,6 @@ Microsoft Dynamics 365 Talent: Onboard ermöglicht es Ihnen: Onboarding Anleitun
 ### <a name="see-also"></a>Siehe auch
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
-- [Neuerungen](./whats-new.md)
-- [Versionshinweise](https://docs.microsoft.com/business-applications-release-notes/index)
-- [Support anfordern](./talent-support.md)
+- [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
+- [Freigabepläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

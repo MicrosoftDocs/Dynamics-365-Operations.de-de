@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cb55d7d00e5676fc5a1326d77889b4adb86c3ca6
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 50ce332673e130dace38f596020973d37c34b566
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248956"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813499"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Benutzer für Kreditor-Kooperationen verwalten
 
@@ -31,9 +31,9 @@ ms.locfileid: "2248956"
 
 In diesem Thema wird beschrieben, wie Sie die Bereitstellung neuer Kreditorenzusammenarbeitsbenutzer anfordern können und wie neue Kreditorenzusammenarbeitkontakte hinzugefügt werden. 
 
-Die Kreditorenzusammenarbeitsschnittstelle in Dynamics 365 Supply Chain Management zeigt Informationen zu Bestellungen, Rechnungen und Lieferbestand für externe Kreditoren an. Sie können neue Kreditorenzusammenarbeitkontakte erstellen und anfordern, dass neuen Benutzer bereitgestellt werden, wenn Sie als externer Kreditor mit der Sicherheitsrolle **Kreditorenadministrator (extern)** oder einer ähnlichen Berechtigung arbeiten. Sie können diese Aufgaben auch ausführen, wenn Sie als Beschaffungsspezialist arbeiten. In diesem Thema bezieht sich diese Rolle auf einen Beschaffungsspezialisten, der im Unternehmen arbeitet, das die Instanz von Supply Chain Management besitzt. Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein externer Anbieter sind, finden Sie unter [Kreditoren mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+Die Kreditorenzusammenarbeitsschnittstelle in Dynamics 365 Supply Chain Management zeigt Informationen zu Bestellungen, Rechnungen und Lieferbestand für externe Kreditoren an. Sie können neue Kreditorenzusammenarbeitkontakte erstellen und anfordern, dass neuen Benutzer bereitgestellt werden, wenn Sie als externer Kreditor mit der Sicherheitsrolle **Kreditorenadministrator (extern)** oder einer ähnlichen Berechtigung arbeiten. Sie können diese Aufgaben auch ausführen, wenn Sie als Beschaffungsspezialist arbeiten. In diesem Thema bezieht sich diese Rolle auf einen Beschaffungsspezialisten, der im Unternehmen arbeitet, das die Instanz von Supply Chain Management besitzt. Weitere Informationen zur Verwendung der Lieferantenzusammenarbeit als externer Lieferant finden Sie unter [Lieferantenzusammenarbeit mit Kunden](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
-Weitere Informationen dazu, wie Kreditorenzusammenarbeit, wenn Sie ein Beschaffungsprofil sind, finden Sie unter [Kreditorenzusammenarbeit mit für externe Kreditoren](vendor-collaboration-work-external-vendors.md).
+Weitere Informationen zur Verwendung der Lieferantenzusammenarbeit als Beschaffungsprofi finden Sie unter [Lieferantenzusammenarbeit mit externen Lieferanten](vendor-collaboration-work-external-vendors.md).
 
 ## <a name="add-new-vendor-collaboration-contacts"></a>Hier können Sie neue Kreditorenzusammenarbeitkontakte hinzufügen
 Wenn Sie jemandem Zugriff auf die Kreditorenzusammenarbeit gewähren möchten, müssen sie die Person zunächst als Kreditorenzusammenarbeitskontakt hinzufügen. Sie sollten auch Kontakte für Mitarbeiter Ihres Unternehmens hinzufügen, die die Kreditorenzusammenarbeit nicht verwenden werden. So könnten sie beispielsweise der Punkt der Kontaktperson für andere Arten von  Beschaffungsinformationen sein. Neue Kontakten werden auf der Seite **Alle Kontakte** hinzugefügt, auf die Sie über das Menü **Kreditorenzusammenarbeit**&gt; **Kontakte** zugreifen. Hinzufügen eines neuen Kontakts:

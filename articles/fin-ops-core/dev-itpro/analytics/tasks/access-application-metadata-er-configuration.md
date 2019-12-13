@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2bfe007995c894d6cc86d07ef2b52da65e32e950
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: aa8444b081650e3d375e6f28f47866c8d4853721
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182737"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772462"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten der Anwendung verwendet. Auf Anwendungsmetadaten können zugegriffen werden, indem eine ER-Metadatenkonfiguration verwendet wird, die einen Beispielsatz der Metadaten enthält, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie zunächst in RCS die Schritte in der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Schließen Sie dann die Schritte im Thema [(ER) Anwendungsmetadaten zur Verwendung in RCS vorbereiten](prepare-application-metadata-rcs.md) ab.
+In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten der Anwendung verwendet. Auf Anwendungsmetadaten können zugegriffen werden, indem eine ER-Metadatenkonfiguration verwendet wird, die einen Beispielsatz der Metadaten enthält, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie zunächst in RCS die Schritte in der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Schließen Sie dann die Schritte im Thema [Anwendungsmetadaten zur Verwendung in RCS vorbereiten](prepare-application-metadata-rcs.md) ab.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**. 
@@ -35,7 +35,7 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 
 ## <a name="import-metadata-configuration"></a>Importieren der Metadatenkonfiguration 
 1. Klicken Sie auf **Metadatenkonfiguration**. 
-2. Importieren Sie die ER-Metadatumenkonfiguration, die Metadaten enthält und die konfiguriert wurde, um elektronische Dokumente für das Außenhandelsgeschäft zu generieren. Diese ER-Metadatumenkonfiguration wurde als XML-Datei exportiert, während die Schritte in der Prozedur [(ER) Anwendungsmetadaten vorberieten, die in RCS verwendet werden](prepare-application-metadata-rcs.md)ausgeführt wurden. 
+2. Importieren Sie die ER-Metadatumenkonfiguration, die Metadaten enthält und die konfiguriert wurde, um elektronische Dokumente für das Außenhandelsgeschäft zu generieren. Diese ER-Metadatumenkonfiguration wurde als XML-Datei exportiert, während die Schritte in der Prozedur [Anwendungsmetadaten vorbereiten, die in RCS verwendet werden](prepare-application-metadata-rcs.md) ausgeführt wurden. 
 3. Klicken Sie auf **Austauschen**. 
 4. Klicken Sie auf **Aus XML-Datei laden**. 
 5. Klicken Sie **Durchsuchen** und wählen die Datei „metadata.xml für Außenhandel“ aus. 

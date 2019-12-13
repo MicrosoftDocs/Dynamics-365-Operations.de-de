@@ -1,5 +1,5 @@
 ---
-title: 'Broadbean-Integration in Microsoft Dynamics 365 Talent: Attract aktivieren'
+title: Broadbean-Integration in Attract aktivieren
 description: 'In diesem Thema wird erläutert, wie Microsoft Dynamics 365 Talent: Attract konfiguriert wird um Einzelvorgänge an externe Stellenbörsen wie Broadbean zu buchen.'
 author: andreabichsel
 manager: AnnBe
@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 0ca655655f79ddf88b6f6c7377a1b596477c35a7
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 10b612711e81b2b368ed23fdd95ab6a66451f0ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552139"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833207"
 ---
-# <a name="enable-broadbean-integration-in-microsoft-dynamics-365-talent---attract"></a>Broadbean-Integration in Microsoft Dynamics 365 Talent: Attract aktivieren
+# <a name="enable-broadbean-integration-in-attract"></a>Broadbean-Integration in Attract aktivieren
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Sie möchten die offenen Stellen für möglichst viele qualifizierten Kandidaten bekannt machen. Stellenportale wie Broadbean helfen Ihnen dabei Mit Microsoft Dynamics 365 Talent: Attract können Sie nun Stellen auf Broadbean veröffentlichen und Microsoft ist ständig daran, neue Angebote in diesem Bereich bereitzustellen.
 

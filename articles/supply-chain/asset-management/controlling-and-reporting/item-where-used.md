@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511108e689c10e27a42253d95b02e5394f9eb713
-ms.sourcegitcommit: fb66731f05207094149a6bc7b8549a4dabbb071a
+ms.openlocfilehash: 476b01a4bae34a271203f34481ff18042783d4df
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "2652355"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811262"
 ---
 # <a name="item-where-used"></a>Artikelverwendungsort
 
@@ -33,15 +33,15 @@ ms.locfileid: "2652355"
 
 Sie können eine Kalkulation für einen bestimmten Artikel durchführen, um sich einen Überblick zu verschaffen, wo in Asset Management der Artikel verwendet wurde. Die Ergebnisse zeigen den Kontext, in dem der Artikel während seiner Lebensdauer verwendet wurde. Die Seite **Artikelverwendungsort** kann vom Anlagenmanagement-Hauptmenü geöffnet werden, ist auch über die folgenden Seiten zugänglich:
 
-- [Anlagenstückliste](../objects/object-BOM.md)
+- [Anlagenstücklisten](../objects/object-BOM.md)
 
-- [Ersatzteile in Anlagentypstandardeinstellungen](../setup-for-objects/object-types.md)
+- [Ersatzteile in Anlagentypstandardeinstellungen](../setup-for-objects/object-types.md#spare-parts-on-the-asset-type-setup)
 
-- [Artikelplanung auf Wartungsauftragstyp-Standardprognosen](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
+- [Kategorien von Wartungsaufträgen und Arten von Wartungsaufträgen, Variationen von Wartungsaufträgen, Handel von Wartungsaufträgen und Wartungsprüflisten](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md)
 
-- [Arbeitsauftrag – Wartungsprognose](../work-orders/maintenance-forecasts.md)
+- [Wartungsprognose](../work-orders/maintenance-forecasts.md)
 
-- [Arbeitsauftrag – Bestellanforderung](../work-orders/procurement.md)
+- [Beschaffung](../work-orders/procurement.md)
 
 - [Arbeitsauftrag – Einkauf](../work-orders/procurement.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2e5144517a880c41cf04998ed53a826a75ecefb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3d1d8952324bb16bcfa6a8b42fc4f157edb75cf1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178000"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811309"
 ---
 # <a name="electronic-signatures-overview"></a>Elektronische Signatur – Übersicht
 
@@ -44,7 +44,7 @@ Elektronische Signaturen sind eine Konformitätsanforderung für verschiedene be
 
 Sie können elektronische Signaturen für wichtige Geschäftsprozesse verwenden. Einige Prozesse verfügen über integrierte Funktionen der elektronischen Signatur. Darüber hinaus können Sie benutzerdefinierte Signaturanforderungen für Datenbanktabellen und -felder erstellen.
 
-Elektronische Signaturen verfügen über die integrierte Funktion für digitale Signatur. Jeder Benutzer, der Dokumente signiert, muss über ein gültiges kryptografisches Zertifikat verfügen. Beim Signieren eines Dokuments wird der diesem Zertifikat zugeordnete private Schlüssel geprüft. Informationen zu elektronischen Signaturen werden in einem Protokoll aufgezeichnet, um Informationen für ein Audit-Trail bereitzustellen. Um elektronische Signaturen einzurichten, siehe [Einrichten elektronischer Signaturen (Aufgabenleitfaden)](tasks/set-up-electronic-signatures.md).
+Elektronische Signaturen verfügen über die integrierte Funktion für digitale Signatur. Jeder Benutzer, der Dokumente signiert, muss über ein gültiges kryptografisches Zertifikat verfügen. Beim Signieren eines Dokuments wird der diesem Zertifikat zugeordnete private Schlüssel geprüft. Informationen zu elektronischen Signaturen werden in einem Protokoll aufgezeichnet, um Informationen für ein Audit-Trail bereitzustellen. Um elektronische Signaturen einrichten, siehe [Einrichten elektronischer Signaturen](tasks/set-up-electronic-signatures.md).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Benutzer, die Zugriff auf elektronische Signaturen benötigen
 

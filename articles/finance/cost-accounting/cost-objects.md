@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 90d9176a2ca37b581ef82306cc1ceef515ceb624
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6c15402993568c53eda8e03351fc2fccbcd82ab8
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187888"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770826"
 ---
 # <a name="cost-object-dimensions"></a>Kostenobjektdimensionen
 
@@ -37,7 +37,7 @@ Ein Kostenträger kann jeder Typ von Objekt sein, den Sie vorkalkulieren möchte
 ## <a name="cost-object-dimensions-and-cost-object-dimension-members"></a>Kostenträgerdimensionen und Kostenträger-Dimensionsmitglieder
 Kostenträger werden als *Kostenträgerdimensionen* bezeichnet. Nachdem Sie sich entschieden haben, auf welche Entität die Kostenträgerdimension verweisen soll, müssen Sie die einzelnen Dimensionswerte angeben oder sie in die Kostenrechnung aus anderen Quellsystemen importieren. Diese einzelnen Dimensionswerte sind als *Kostenträger-Dimensionsmitglieder* bekannt. Sie möchten beispielsweise die Finanzdimension, die als „Kostenstelle” bezeichnet wird, als die Kostenträgerdimension verwenden. Um zu sehen, wie Kosten zu einzelnen Kostenstellen fließen, müssen Sie die Kostenträger-Dimensionsmitglieder importieren. In diesem Fall sind die Kostenträger-Dimensionsmitglieder die Istkostenstellen, beispielsweise Vertrieb, Produktion, Verwaltung und geografische Orte. Das folgende Screenshot zeigt ein Beispiel von Kostenstellen als die Kostenträgerdimension mit ihren Istkostenstellen als Kostenträger-Dimensionsmitglieder an. 
 
-[![Kostenobjektdimension](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
+[![Screenshot mit Kostenstellen als Kostenträgerdimension](./media/cost-object-dimensions.png)](./media/cost-object-dimensions.png)
 
 ## <a name="import-cost-object-dimension-members-through-data-connectors"></a>Kostenträger-Dimensionsmitglieder über Datenkonnektoren importieren
 Um den Import von den Kostenträgerdimensionsmitgliedern zu erleichtern, verwenden Sie Datenkonnektoren, um die Werte aus den Entitäten abzurufen, die Sie als Kostenträgerdimensionen verwenden möchten. Sie können entweder die bereits erstellten Datenkonnektoren oder benutzerdefinierte Datenkonnektoren, die Sie erstellen, verwenden.

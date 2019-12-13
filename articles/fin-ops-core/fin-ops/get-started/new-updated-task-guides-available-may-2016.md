@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.openlocfilehash: 7134dc49c0e767d3bc4dc32e4feeb0e83a168e86
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 930c744ff2a28451d4267f060867b4b6474d45e7
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190924"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811577"
 ---
 # <a name="new-or-updated-task-guides-may-2016"></a>Neue oder aktualisierte Aufgabenleitfäden (Mai 2016)
 
@@ -32,7 +32,7 @@ Dieser Artikel führt neue oder aktualisierte Aufgabenleitfäden, die für die M
 
 ## <a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>Aufgabenleitfäden in der APQC Unified-Bibliothek für Microsoft Dynamics AX (Mai 2016 – alle Sprachen)
 
-Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden für die Hilfe bei dem Microsoft Dynamics AX-Update vom Mai 2016 und der Microsoft Dynamics AX-Version vom Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zur Verbindung des Hilfesysteme mit einer Aufgabenleitfaden-Bibliothek finden Sie unter [Erste Schritte mit der Hilfe](help-overview.md).
+Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden für die Hilfe bei dem Microsoft Dynamics AX-Update vom Mai 2016 und der Microsoft Dynamics AX-Version vom Februar 2016. Die in der APQC Unified-Bibliothek aus Februar 2016 veröffentlichten Aufgabenleitfäden sind in dieser Bibliothek enthalten. Weitere Informationen zum Verbinden des Hilfesystems mit einer Aufgabenleitfadenbibliothek finden Sie unter [Hilfesystem](help-overview.md).
 
 > [!NOTE]
 > :Das Sternchen (\*) neben dem Titel eines Geschäftsprozessmodellierers (BPM, Business Process Modeler) gibt an, dass der Aufgabenleitfaden für diesen Geschäftsprozess für das Dynamics AX-Update vom Mai 2016 erstellt wurde und nicht in früheren Versionen von Microsoft Dynamics AX unterstützt wird.
@@ -185,7 +185,7 @@ Die APQC Unified-Bibliothek (Mai 2016) enthält Aufgabenleitfäden für die Hilf
 | Containerisierung einrichten                                         | Global         |
 | Richten Sie manuelle Verpackung ein                                           | Global         |
 | Transporteinschränkungen für einen Artikel einrichten                   | Global         |
-| \*Lagerortarbeitsrichtlinien einrichten                                 | Global         |
+| \*Lagerortarbeitsrichtlinien einrichten                                | Global         |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

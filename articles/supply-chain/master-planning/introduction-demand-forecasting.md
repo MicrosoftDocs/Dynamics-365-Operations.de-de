@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bea02c6fe7b8e50be22be89eeb43a913851ddbfb
-ms.sourcegitcommit: 0099fb24f5f40ff442020b488ef4171836c35c48
+ms.openlocfilehash: 27c9bf32a88858ec2d2214f18ff96138c29e59bc
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "2653532"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815156"
 ---
 # <a name="demand-forecasting-overview"></a>Bedarfsplanung – Überblick
 
@@ -76,13 +76,13 @@ Die Bedarfsplanung ist ein Tool, das Kunden in der Fertigungsindustrie hilft, Pl
 
 [Einrichten einer Bedarfsplanung](demand-forecasting-setup.md)
 
-[Generieren einer statistischen Grundplanung](generate-statistical-baseline-forecast.md)
+[Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)
 
-[Manuelle Anpassungen an die Grundplanung](manual-adjustments-baseline-forecast.md)
+[Manuelle Anpassungen an der Grundplanung](manual-adjustments-baseline-forecast.md)
 
-[Autorisieren der angepassten Planung](authorize-adjusted-forecast.md)
+[Eine angepasste Planung autorisieren](authorize-adjusted-forecast.md)
 
-[Überwachen der Planungsgenauigkeit](monitor-forecast-accuracy.md)
+[Planungsgenauigkeit überwachen](monitor-forecast-accuracy.md)
 
 [Entfernen Sie Ausreißer aus den historischen Buchungsdaten, wenn Sie eine Bedarfsplanung berechnen.](remove-historical-outliers-calculating-demand-forecast.md)
 

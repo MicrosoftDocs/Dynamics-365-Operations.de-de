@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: cf4eb74acbd305eb67861ab3f09648bf8af8f86c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: ba01f0d16341eb9b0ec0918798e458626b5ef90e
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025052"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811192"
 ---
 # <a name="retail-peripherals"></a>Einzelhandelsperipheriegeräte
 
@@ -35,11 +35,17 @@ In diesem Thema werden einige Konzepte in Verbindung mit Einzelhandelsperipherie
 
 ### <a name="pos-registers"></a>POS-Register
 
-Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. Die POS-Register ist eine Entität, die verwendet wird, um die Merkmale einer bestimmten Instanz des POS zu definieren. Diese umfassen das Hardwareprofil bzw. die Einstellung für Einzelhandelsperipheriegeräte, die für die Register verwendet werden, den Shop, dem die Register zugeordnet ist, und die Sichterfahrung für den Benutzer, der sich an der Register anmeldet.
+Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. 
+
+Die POS-Register ist eine Entität, die verwendet wird, um die Merkmale einer bestimmten Instanz des POS zu definieren. Diese umfassen das Hardwareprofil bzw. die Einstellung für Einzelhandelsperipheriegeräte, die für die Register verwendet werden, den Shop, dem die Register zugeordnet ist, und die Sichterfahrung für den Benutzer, der sich an der Register anmeldet.
 
 ### <a name="devices"></a>Geräte
 
-Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**. Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. Geräte können zu folgenden Anwendungsarten zugeordnet werden: Retail Modern POS, Retail Cloud POS, Retail Modern POS, Windows Phone, Retail Modern POS – Android und Retail Modern POS – IOS
+Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Geräte**. 
+
+Ein Gerät ist eine Entität, die eine physische Instanz eines Gerätes darstellt, das dem POS-Register zugeordnet ist. Wenn ein Gerät eingerichtet wird, wird es einem POS-Register zugeordnet. Die Geräteentität verfolgt Informationen darüber, ob ein POS-Register aktiviert ist, welcher Client verwendet wird und das Anwendungspaket, das für ein bestimmtes Gerät bereitgestellt wurde. 
+
+Geräte können zu folgenden Anwendungsarten zugeordnet werden: Retail Modern POS, Retail Cloud POS, Retail Modern POS, Windows Phone, Retail Modern POS – Android und Retail Modern POS – IOS
 
 ### <a name="retail-modern-pos"></a>Retail Modern POS
 
@@ -63,11 +69,15 @@ POS-Peripheriegeräte sidn Geräte, die für POS-Funktionen explizit unterstütz
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Die **Hardwarestation**-Einstellung ist eine kanalbasierte Einstellung, die verwendet wird, um Instanzen zu definieren, in denen die Einzelhandelsperipherie bereitgestellt wird. Diese Einstellung auf der Kanalebene wird verwendet, um die Merkmale der Hardwarestation zu bestimmen. Sie wird außerdem zum Auflisten von Hardwarestationen verwendet, die für eine Modern POS-Instanz eine moderne in einem bestimmten Shop verfügbar sind. Die Hardwarestation ist in das Modern POS-Programm für Windows integriert. Die Hardwarestation kann auch unabhängig bereitgestellt werden als ein eigenständiges Microsoft-Internetinformationsdienste-Programm (IIS). In diesem Fall können Sie über ein Netzwerk zugreifen.
+Navigieren: Klicken Sie auf **Einzelhandel** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. 
+
+Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Die **Hardwarestation**-Einstellung ist eine kanalbasierte Einstellung, die verwendet wird, um Instanzen zu definieren, in denen die Einzelhandelsperipherie bereitgestellt wird. Diese Einstellung auf der Kanalebene wird verwendet, um die Merkmale der Hardwarestation zu bestimmen. Sie wird außerdem zum Auflisten von Hardwarestationen verwendet, die für eine Modern POS-Instanz eine moderne in einem bestimmten Shop verfügbar sind. Die Hardwarestation ist in das Modern POS-Programm für Windows integriert. Die Hardwarestation kann auch unabhängig bereitgestellt werden als ein eigenständiges Microsoft-Internetinformationsdienste-Programm (IIS). In diesem Fall können Sie über ein Netzwerk zugreifen.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
-Navigation: Klicken Sie auf **Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwareprofile**. Das Hardwareprofil identifiziert die Geräte, die für eine POS-Register oder einer Hardwarestation konfiguriert sind. Das Hardwareprofile kann direkt zu einer POS-Register oder einer Hardwarestation zugewiesen werden.
+Navigation: Klicken Sie auf **Handel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **POS-Profile** &gt; **Hardwareprofile**. 
+
+Das Hardwareprofil identifiziert die Geräte, die für eine POS-Register oder einer Hardwarestation konfiguriert sind. Das Hardwareprofile kann direkt zu einer POS-Register oder einer Hardwarestation zugewiesen werden.
 
 ## <a name="devices-classes"></a>Geräteklassen
 POS-Peripheriegeräte werden in der Regel in Klassen aufgeteilt. Dieser Abschnitt beschreibt und gibt einen Überblick der Geräte, die Modern POS unterstützt.
@@ -202,11 +212,11 @@ Die Logik für physisch verbundene und über das Netzwerk-adressierbaren Periphe
 
 ### <a name="hardware-station-installation"></a>Installation der Hardwarestation
 
-Weitere Informationen finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md).
+Weitere Informationen finden Sie unter [Konfiguration und Installation der Retail-Hardwarestation](retail-hardware-station-configuration-installation.md).
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS für Windows-Einstellung und -Konfiguration
 
-Weitere Informationen finden Sie unter [Retail Modern POS-Konfiguraton und -Installation](retail-modern-pos-device-activation.md).
+Weitere Informationen finden Sie unter [Konfiguration, Installation und Aktivierung von Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-Geräte Einrichtung und Konfiguration
 
@@ -523,7 +533,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 
 ## <a name="configuration-for-supported-scenarios"></a>Konfiguration für unterstützte Szenarien
 
-Weitere Informationen dazu, wie Sie Hardwareprofile erstellt finden Sie unter [Definieren und Verwalten von Kanal-Clients, einschließlich Registern und Hardwarestationen](define-maintain-channel-clients-registers-hw-stations.md).
+Weitere Informationen zum Erstellen von Hardwareprofilen finden Sie unter [Peripheriegeräte an den Point of Sale (POS)](define-maintain-channel-clients-registers-hw-stations.md) anschließen.
 
 > [!NOTE]
 > Für Retail-Version 1611 wird das Hardware-Stationsprofil nicht mehr verwendet. Attribute, die Sie bereits im Vorfeld im Hardwarestationsprofil einrichten, sind jetzt Teil der Hardwarestation selbst.
@@ -566,8 +576,8 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die eine
 4. Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**.
 5. Wählen Sie den Verteilungszeitplan **1090** aus, um das neue Hardwareprofil zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 6. Wählen Sie den Verteilungszeitplan **1040** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
-7. Installation der Hardwarestation Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md).
-8. Installieren und aktivieren von Modern POS Weitere Informationen dazu, wie Modern POS installiert wird, finden Sie unter [Retail Modern POS-Konfiguration und -Installation](retail-modern-pos-device-activation.md).
+7. Installation der Hardwarestation Weitere Informationen zur Installation der Hardware-Station finden Sie unter [Konfiguration und Installation der Retail-Hardware-Station](retail-hardware-station-configuration-installation.md).
+8. Installieren und aktivieren von Modern POS Weitere Informationen zur Installation von Modern POS finden Sie unter [Konfiguration, Installation und Aktivierung von Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9. Melden Sie sich bei Modern POS, und wählen Sie aus **Ausführen von Vorgängen ohne Kassenlade**.
 10. Starten Sie den **Hardwarestationen verwalten** Arbeitsgang.
 11. Klicken Sie auf **Verwalten**.
@@ -595,8 +605,8 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die die 
 5. Klicken Sie auf **Einzelhandel** &gt; **Handel IT** &gt; **Vertriebsplan**.
 6. Wählen Sie den Verteilungszeitplan **1090** aus, um das neue Hardwareprofil zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 7. Wählen Sie den Verteilungszeitplan **1040** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
-8. Installieren Sie die Hardwarestation auf jedem Hostcomputer, den Sie in Schritt 2. und 3 eingerichtet haben. Weitere Informationen dazu, wie die Hardwarestation installiert wird, finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md).
-9. Installieren und aktivieren von Modern POS Weitere Informationen dazu, wie Modern POS installiert wird, finden Sie unter [Retail Modern POS-Konfiguration und -Installation](retail-modern-pos-device-activation.md).
+8. Installieren Sie die Hardwarestation auf jedem Hostcomputer, den Sie in Schritt 2. und 3 eingerichtet haben. Weitere Informationen zur Installation der Hardware-Station finden Sie unter [Konfiguration und Installation der Retail-Hardware-Station](retail-hardware-station-configuration-installation.md).
+9. Installieren und aktivieren von Modern POS Weitere Informationen zur Installation von Modern POS finden Sie unter [Konfiguration, Installation und Aktivierung von Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Melden Sie sich bei Modern POS, und wählen Sie aus **Ausführen von Vorgängen ohne Kassenlade**.
 11. Starten Sie den **Hardwarestationen verwalten** Arbeitsgang.
 12. Klicken Sie auf **Verwalten**.
@@ -655,7 +665,7 @@ Entsprechend aktuellen Sicherheitsstandards sollten die folgenden Einstellungen 
 
 ## <a name="peripheral-simulator"></a>Peripheriesimulator
 
-Weitere Informationen finden Sie unter [Retail-Peripheriesimulator](dev-itpro/retail-peripheral-simulator.md).
+Weitere Informationen finden Sie unter [Peripheriesimulator for Retail](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Von Microsoft getestete Peripheriegeräte
 
@@ -896,4 +906,4 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Einzelhandels-Peripheriesimulator](dev-itpro/retail-peripheral-simulator.md)
+[Peripheriesimulator für Retail](dev-itpro/retail-peripheral-simulator.md)

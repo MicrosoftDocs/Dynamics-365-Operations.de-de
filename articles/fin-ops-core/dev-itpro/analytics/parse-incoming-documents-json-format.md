@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 92ef83bc1783b00a4d7d9739ca1c17e863c7ff44
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8be4e225507a18a92d642ff0f3a6ca3d0ff68564
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185266"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772534"
 ---
 # <a name="parse-incoming-documents-in-json-format"></a>Analysieren eingehender Dokumente im JSON-Format
 
@@ -46,7 +46,7 @@ Bevor Sie den ER Formatkonfiguration abschließen, um Daten aus einem externen J
 - JSON-Arrays können nur geschachtelte Elemente der Eigenschaftenelemente eines Objekts sein.
 - JSON-Arrays können nur JSON-Objekte enthalten. Sie können keine direkte Zeichenfolge / numerische Werte und geschachtelte Arrays enthalten. Elemente in diesen Arrays werden in der Reihenfolge analysiert, in der sie im Format angegeben werden. Vielfältige Einstellungen in jedem JSON-Objekt werden berücksichtigt.
 
-Darüber hinaus müssen Sie den Aufgabenleitfaden [ER erforderlichen Konfigurationen erstellen, um Daten aus einer externen Datei für elektronische Berichte zu importieren](tasks/er-required-configurations-import-data.md) abschließen, wenn Sie diesen nicht bereits abgeschlossen haben. Laden Sie die folgende Datei herunter, um den Aufgabenleitfaden ausführen.
+Zusätzlich müssen Sie die erforderlichen Konfigurationen erstellen, um [Daten aus einer externen Datei zu importieren ](tasks/er-required-configurations-import-data.md) Aufgabenanleitung, wenn Sie diese noch nicht abgeschlossen haben. Laden Sie die folgende Datei herunter, um den Aufgabenleitfaden ausführen.
 
 | Titel                  | Dateiname |
 |------------------------|-----------|

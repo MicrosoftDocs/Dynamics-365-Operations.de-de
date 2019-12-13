@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a7db93e1877034051b6add4c11ddfe7cd7d17e0b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 575b27de845d931c990b1d19254b5218fa6e4199
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2187911"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770849"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimensionen erstellen und Dimensionsmitglieder importieren
 
@@ -44,11 +44,10 @@ Das folgende Diagramm veranschaulicht die Dimensionen, die in der Kostenrechnung
 Nachdem die Daten in die Kostenrechnung importiert wurden, können Variablengruppen verwendet werden, um unterschiedliche Perspektiven zu erstellen, die Manager auf allen Ebenen der Organisation Einblicke geben. Unter den folgenden Themen finden Sie Informationen zum Erstellen von Dimensionen und importieren von Dimensionsmitgliedern. 
 
 -  [Kostenelementdimensionen](cost-elements.md)
--  [Kostenelemente erstellen (Aufgabenleitfaden)](./tasks/create-cost-elements.md)
--  [Kostenobjektdimensionen](cost-objects.md)
--  [Kostenelemente erstellen (Aufgabenleitfaden)](./tasks/create-cost-objects.md)
+-  [Kostenelemente erstellen](./tasks/create-cost-elements.md)
+-  [Kostenträgerdimensionen](cost-objects.md)
 -  [Kostenelement-Dimensionselemente einem allgemeinen Satz von Dimensionselementen zuordnen](map-cost-elements-dimension-members.md)
--  [Eine Kostenelementdimension zuordnen (Aufgabenleitfaden)](./tasks/map-cost-element-dimension.md)
+-  [Eine Kostenelementdimension zuordnen](./tasks/map-cost-element-dimension.md)
 -  [Statistische Dimensionselement und statistischen Maßnahmenanbieter-Vorlagen](statistical-measure-provider-template.md)
 
 

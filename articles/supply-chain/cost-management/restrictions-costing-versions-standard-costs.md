@@ -19,12 +19,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0383f78ea5cfa42183e0bfe8a96d7d3866766e7
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 484471c6bbda1d7396dfcfa34c33f50d247dad98
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1547720"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812671"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Einschränkungen für eine Nachkalkulationsversion für Standardkosten
 
@@ -45,9 +45,9 @@ Die Artikelkostendaten für Standardkosten können in eine andere Nachkalkulatio
 <a name="related-topics"></a>Verwandte Themen
 --------
 
-[Nachkalkulationsversionen](costing-versions.md)
+[Nachkalkulationsversionen – Übersicht](costing-versions.md)
 
-[Aktualisieren der Standardkosten in einer Umgebung ohne Produktionstätigkeit](update-standard-costs-non-manufacturing-environment.md)
+[Aktualisieren der Standardkosten in einer Umgebung ohne Produktion](update-standard-costs-non-manufacturing-environment.md)
 
 [Vorbereiten der Verwaltung von Standardkosten für produzierte Artikel](update-standard-costs-manufacturing-environment.md)
 

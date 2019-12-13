@@ -1,5 +1,5 @@
 ---
-title: Gesprächsplanung und -rückmeldung
+title: Planen von Interviews in Attract
 description: Dieses Thema enthält Informationen zu Gesprächsplanungs- und -rückmeldungsaktivitäten in Attract.
 author: hasrivas
 manager: AnnBe
@@ -14,18 +14,18 @@ ms.reviewer: anbichse
 ms.search.scope: Talent, Core
 ms.search.region: Global
 ms.author: shielas
-ms.openlocfilehash: 39b14f3ca855ca283a7484e480ff2547623938ef
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 33eba9796ca997fde4be9a46050207d313551bde
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518075"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2832744"
 ---
-# <a name="interview-scheduling-and-feedback"></a>Gesprächsplanung und -rückmeldung
+# <a name="schedule-interviews-in-attract"></a>Planen von Interviews in Attract
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-## <a name="scheduler-activity"></a>Planungsaktivität
+## <a name="scheduler-activity"></a>Planeraktivität
 
 Die Planungsaktivität ist optional und enthält zwei Komponenten: Kandidatenverfügbarkeitsanforderung und Zeitplan. Mit der Kandidatenverfügbarkeitskomponente können Sie E-Mail verwenden, um die Verfügbarkeit des Kandidaten anzufordern. Die Zeitplankomponente bietet die Möglichkeit, Gespräche mit dem Kandidaten und dem Einstellungsteam zu planen.
 

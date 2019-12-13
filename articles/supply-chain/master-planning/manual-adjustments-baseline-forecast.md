@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df9692dc168e9efb653b20c677cd6e3bb0bd8756
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 8897e0fe01e7ed5af9a8d5b99de6b9b4506554f1
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250713"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2815133"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Manuelle Anpassungen an der Grundplanung
 
@@ -66,7 +66,7 @@ Auf der Seite **Bedarfsplanungsdetails** werden die folgenden Informationen in g
 -   Die neuen Bedarfsplanungswerte und die Beträge, mit denen sie manuell angepasst wurden.
 -   Das Zuverlässigkeitsintervall für die geplanten Werte.
 -   Das Planzahlenmodell, das verwendet wurde, um die Planung zu generieren. Wenn Sie aggregierte Daten anzeigen, sehen Sie die Liste aller Methoden, die für alle aggregierten Zeitreihen verwendet wurden.
--   Die interne Modellgenauigkeit (MAPE). Weitere Informationen zu Planungsgenauigkeit finden Sie unter [Überwachen der Planungsgenauigkeit](monitor-forecast-accuracy.md).
+-   Die interne Modellgenauigkeit (MAPE). Weitere Informationen zur Prognosegenauigkeit finden Sie unter [Monitor Prognosegenauigkeit](monitor-forecast-accuracy.md).
 
 **Hinweise:**
 
@@ -78,9 +78,9 @@ Sie können manuelle Anpassungen an der Planung auf der Seite **Bedarfsplanungsd
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Überwachen der Planungsgenauigkeit](monitor-forecast-accuracy.md)
+[Planungsgenauigkeit überwachen](monitor-forecast-accuracy.md)
 
-[Generieren einer statistischen Grundplanung](generate-statistical-baseline-forecast.md)
+[Eine statistische Grundplanung generieren](generate-statistical-baseline-forecast.md)
 
 
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 4624f7e31c6dca616ff4ee824453b8971c1865e7
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: ebca416e94f44d0448a4f4d0be08f13e30e749e9
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249887"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813223"
 ---
 # <a name="synchronize-accounts-directly-from-sales-to-customers-in-supply-chain-management"></a>Konten direkt von Sales mit Konten in Supply Chain Management synchronisieren
 
@@ -43,7 +43,7 @@ Die Lösung Interessent nach Bargeld verwendet die Datenenintegrationsfunktion, 
 
 ## <a name="templates-and-tasks"></a>Vorlagen und Aufgaben
 
-Um auf die verfügbaren Vorlagen zuzugreifen, öffnen Sie [PowerApps-Administrator-Center](https://preview.admin.powerapps.com/dataintegration). Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen.
+Um auf die verfügbaren Vorlagen zuzugreifen, öffnen Sie [Power Apps-Administrator-Center](https://preview.admin.powerapps.com/dataintegration). Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen.
 
 Die folgende Vorlage und grundlegende Aufgabe werden für die Synchronisierung von Konten aus Sales in Supply Chain Management verwendet:
 
@@ -111,7 +111,7 @@ Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung in Dat
 
 [Kontakte direkt von Sales mit Kontakten oder Debitoren in Supply Chain Management synchronisieren](contacts-template-mapping-direct.md)
 
-[Auftragskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-order-template-mapping-direct-two-ways.md)
+[Synchronisieren von Aufträgen direkt zwischen Sales und Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
 
 [Rechnungskopfzeilen und ‑positionen direkt von Supply Chain Management zu Sales synchronisieren](sales-invoice-template-mapping-direct.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 22372bd2d42b526d10e39174e7fb5ec5281d1b73
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 544721af404775a6d8b65628848caa84ceaebe30
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1572787"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2813822"
 ---
 # <a name="quality-management-processes"></a>Qualitätsmanagementprozesse
 
@@ -90,14 +90,14 @@ Es wird empfohlen, einen eindeutigen Dokumenttyp für Korrekturen zu definieren,
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Qualitätsmanagement aktivieren](enable-quality-management.md)
+[Qualitätsmanagement – Übersicht](enable-quality-management.md)
 
-[Verwaltung von Qualitätsmängeln aktivieren](enable-nonconformance-management.md)
+[Qualitätsmangelverwaltung](enable-nonconformance-management.md)
 
 [Sperrung von Lagerbestand](inventory-blocking.md)
 
 [Quarantäneaufträge](quarantine-orders.md)
 
-[Einrichten von Qualitätsprüfungsaufträgen (Aufgabenleitfaden)](tasks/set-up-quality-orders.md)
+[Testbestellungen einrichten](tasks/set-up-quality-orders.md)
 
-[Inspektion der Qualität von Waren (Aufgabenleitfaden)](tasks/inspect-quality-goods.md)
+[Überprüfen Sie die Qualität von Waren](tasks/inspect-quality-goods.md)

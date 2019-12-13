@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c78fc1f2f1bb08d01828a8b71ad5d3c16ad31b86
-ms.sourcegitcommit: 5b53bdafa5cb9a1279576bfece0452a50383b122
+ms.openlocfilehash: 98c84e987c40adf136d0240117f7b0f119bf2f59
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "2278378"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811116"
 ---
 # <a name="product-recommendations-on-pos"></a>Produktempfehlungen zu POS
 
@@ -40,13 +40,13 @@ Produktempfehlungen werden für die folgenden POS-Szenarien aktiviert. Sie sind 
 
 1. Auf der **Produktdetails** Seite:
 
-    - • Wenn ein Shopmitarbeiter eine **Produktdetails**-Seite besucht, wenn er auf die vorherigen Buchungen über verschiedene Kanäle schaut, schlägt der Empfehlungsdienst zusätzliche Artikel vor, die wahrscheinlich zusammen eingekauft werden.
+    - Wenn ein Filialmitarbeiter eine **Produktdetails** Seite besucht, wenn er frühere Transaktionen über verschiedene Kanäle betrachtet, schlägt der Empfehlungsdienst zusätzliche Artikel vor, die wahrscheinlich zusammen gekauft werden.
 
     [![Empfehlungen zur Produktdetailseite](./media/proddetails.png)](./media/proddetails.png)
 
 2. Auf der **Transaktionen** Seite:
 
-    - • Das Empfehlungsmodul schlägt Artikel auf Basis der gesamten Artikelliste im Korb vor, die häufig zusammen eingekauft werden.
+    - Die Empfehlungs-Engine schlägt Artikel vor, die auf der gesamten Liste der Artikel im Warenkorb basieren, die häufig zusammen gekauft werden.
 
     > [!NOTE]
     > Zum Anzeigen von Empfehlungen auf der Seite **Buchung** muss der Einzelhändler das Bildschirmlayout in Dynamics 365 for Retail aktualisieren. Das Steuerelement **Empfehlungen** muss auf der Seite **Buchung** abgelegt werden.
@@ -69,10 +69,12 @@ Gehen Sie zum Einrichten von Produktempfehlungen folgendermaßen vor:
 
 - Navigieren Sie zu **Retail-Parameter** \> **Empfehlungslisten** \> **Produktempfehlungen deaktivieren** und **globalen Konfigurationsauftrag \[9999\]** ausführen. 
 - Wenn Sie die **Empfehlungssteuerung** Ihrem Buchungsbildschirm mithilfe von **Designer für Bildschirmlayout** hinzugefügt haben, entfernen Sie diese auch.
-- Wenn zusätzliche Fragen haben, sehen Sie sich unsere [Häufig gestellten Fragen zu Empfehlungen](../commerce/faq-recommendations.md) an.
+- Wenn Sie weitere Fragen haben, lesen Sie die [Produktempfehlungen FAQ](../commerce/faq-recommendations.md) für weitere Informationen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Hinzufügen eines Empfehlungssteuerelements zu einer Buchungsseite auf einem POS-Gerät](add-recommendations-control-pos-screen.md)
-[Produktempfehlungsüberblick](../commerce/product-recommendations.md)
-[Aktivieren von Produktempfehlungen](../commerce/enable-product-recommendations.md) 
+[Ein Empfehlungssteuerelement des Transaktionsbildschirms auf POS-Geräten](add-recommendations-control-pos-screen.md)
+
+[Überblick über Produktempfehlungen](../commerce/product-recommendations.md)
+
+[Produktempfehlungen aktivieren](../commerce/enable-product-recommendations.md) 

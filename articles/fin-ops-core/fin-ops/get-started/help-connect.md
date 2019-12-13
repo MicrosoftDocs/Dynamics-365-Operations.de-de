@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 491024c9c3d6c7d20ef212e167ceab6abac8dac7
-ms.sourcegitcommit: d554faca895609b8124bf2ea5aca5a55c407534a
+ms.openlocfilehash: 2955464aa8a220563db1b9ebbb348be52f520659
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2537854"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812579"
 ---
 # <a name="connect-the-help-system"></a>Verbinden des Hilfesystems
 
@@ -80,7 +80,7 @@ Sie können Aufgabenleitfäden verwenden, um benutzerdefinierte Hilfe zu erstell
 
 Sie können eine benutzerdefinierte Hilfe für Finance, Supply Chain Management und für Retail erstellen, indem Sie Aufgabenaufzeichnungen erstellen, die die Implementierung widerspiegeln, und diese in einer LCS Business Process Library speichern. Sie können keine benutzerdefinierten Aufgabenleitfäden für Talent erstellen.
 
-Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in eine Lösung aufnehmen, wir diese für die Kunden verfügbar. Sie können eine Kopie der globalen APQC Unified Bibliothek für Dynamics AX erstellen und dann Ihre Kopie öffnen, Aufgabenaufzeichnungen aus dieser öffnen, sie ändern und dann Aufzeichnungen mit den Änderungen speichern. Weitere Informationen finden Sie unter [Erstellen einer Aufgabenaufzeichnung als Dokumentation oder Schulung](../../dev-itpro/user-interface/task-recorder.md)...
+Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in eine Lösung aufnehmen, wir diese für die Kunden verfügbar. Sie können eine Kopie der globalen APQC Unified Bibliothek für Dynamics AX erstellen und dann Ihre Kopie öffnen, Aufgabenaufzeichnungen aus dieser öffnen, sie ändern und dann Aufzeichnungen mit den Änderungen speichern. Weitere Informationen finden Sie unter [Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md).
 
 ### <a name="connect-a-custom-site"></a>Benutzerdefinierte Website verbinden
 
@@ -91,8 +91,8 @@ Microsoft hat ein Whitepaper und einen Beispielcode bereitgestellt, die beschrei
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Hilfe – Überblick](help-overview.md)
+[Hilfesystem](help-overview.md)
 
-[Über zur Aufgabenaufzeichnung](../../dev-itpro/user-interface/task-recorder.md)
+[Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md)
 
-[Wie Sie Aufgabenaufzeichnungen zu Dokumentations- und Schulungszwecken erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)

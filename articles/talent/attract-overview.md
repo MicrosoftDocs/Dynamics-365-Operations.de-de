@@ -1,5 +1,5 @@
 ---
-title: 'Funktionen und Leistungsspektrum von Microsoft Dynamics 365 Talent: Attract'
+title: Funktionen und Leistungsspektrum von Attract
 description: 'In diesem Thema werden die Funktionen beschrieben, die Microsoft Dynamics 365 Talent: Attract zum Verwalten des Einstellungsprozesses für neue Talente bietet.'
 author: andreabichsel
 manager: AnnBe
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c8860602bd293c158aa33ea22b5f73de15a6b6f
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 4186dddc471de676cc6d26050f16711f581da7ca
+ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2552070"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "2833068"
 ---
-# <a name="microsoft-dynamics-365-talent---attract-features-and-capabilities"></a>Funktionen und Leistungsspektrum von Microsoft Dynamics 365 Talent: Attract
+# <a name="attract-features-and-capabilities"></a>Features und Funktionen von Attract
 
 [!include [banner](includes/banner.md)]
 
@@ -48,4 +48,4 @@ Attract stellt einen vordefinierten Prozess bereit, der über vier grundlegende 
 Sobald die Kandidaten der Stelle hinzugefügt wurden, erhalten Sie eine E-Mail mit einem Link zum Abruf der Web-App. Die App bietet Stellendetails und wird verwendet, um mit dem Einstellungsteam zu kommunizieren. Kandidaten können damit ihre Verfügbarkeit für Gespräche senden.
 
 ## <a name="analytic-reports"></a>Analytische Berichte
-Einstellungsteams können die Ansicht Metrik für zentrale Einstellungsprozesse für eine einzelne Stelle oder aggregiert über alle Stellen mit den [analytischen Bereichten in Attract](analytic-reports.md) verwenden. Diese Funktion ist momentan in [Vorschau](access-preview-feature.md) für Debitoren mit dem [Umfassenden Einstellungs-Add-On](attract-comprehensive-hiring.md).
+Einstellungsteams können die Ansicht Metrik für zentrale Einstellungsprozesse für eine einzelne Stelle oder aggregiert über alle Stellen mit den [analytischen Bereichten in Attract](analytic-reports.md) verwenden. Diese Funktion befindet sich derzeit in der [Vorschau](access-preview-feature.md) für Debitoren mit der [Welche Version von Microsoft Dynamics 365 Talent - Attract](attract-comprehensive-hiring.md).

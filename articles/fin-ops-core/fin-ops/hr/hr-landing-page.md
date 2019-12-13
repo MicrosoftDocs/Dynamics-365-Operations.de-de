@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9db36b528de097aae613a5fbf5ee94f4cc79a0f
-ms.sourcegitcommit: bbb64b3475eef155b3f9d1bdc440545da8a7182f
+ms.openlocfilehash: f701a61a718469023dfa57c160229108afeb421c
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "2553162"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2812435"
 ---
 # <a name="human-resources-overview"></a>Personalwesen – Übersicht
 
@@ -45,15 +45,15 @@ Sie können „Personalverwaltung” verwenden, um diese Aufgaben abzuschließen
 
 Bei Ihrer Arbeit in der Personalverwaltung entscheiden Sie über die Strukturierung Ihrer Organisation mithilfe von Elementen wie Abteilungen, Stellen und Positionen. Diese gehören zu den grundlegenden Elementen, die Sie in der Personalverwaltung konfigurieren. Einzelne Mitarbeiter werden Positionen zugewiesen, die Stellen zugeordnet sind.
 
-- [Belegschaft mittels Abteilungen, Stellen und Positionen verwalten](../../../talent/departments-jobs-positions.md)
-- [Einrichten von unternehmensspezifischen Personalverwaltungsparametern](../../../talent/set-up-company-specific-hr-parameters.md)
+- [Verwalten der Belegschaft mittels Abteilungen, Stellen und Positionen](../../../talent/departments-jobs-positions.md)
+- [Unternehmensspezifische Personalverwaltungsparameter einrichten](../../../talent/set-up-company-specific-hr-parameters.md)
 - [Einrichten von Personalverwaltungsparametern bei verschiedenen juristischen Personen](../../../talent/set-up-hr-parameters-across-legal-entities.md)
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Beschaffen, Einstellen und Motivieren von Mitarbeitern
 
 Personalbeschaffungsprojekte verwalten den Inhalt, der in Anzeigen für offene Stellen verwendet wird und helfen Ihnen, Bewerbungen auf Stellenangebote zu verwalten. Sie können sie verwenden, um Antworten auf Stellenausschreibungen für ein bestimmtes Personalbeschaffungsprojekt oder bestimmte Bewerber nachzuverfolgen und aktualisieren den Status offener Stellen. Sie können auch einzelne Bewerber einstellen oder „Masseneinstellungsprojekte” verwalten, die das Einstellen mehrerer Arbeitskräfte erleichtern, z. B. bei saisonalem Bedarf.
 
-- [Einen Personalbeschaffungsprozess verwalten](manage-recruiting-process.md)
+- [Personalbeschaffungsprozesse verwalten](manage-recruiting-process.md)
 - [Masseneinstellungsprojekte](mass-hire-projects.md) 
 
 Nachdem Sie Mitarbeiter eingestellt haben, können Sie Pläne einrichten, um effektiv und ausgewogen Vergütungen zu verwalten sowie Objekte, die Ihre Organisation den Mitarbeitern zur Verfügung stellt, wie z. B. Computer oder Telefone. Sie können feste und variable Vergütungspläne erstellen, sowie Regeln für den Vergütungsplan mit entsprechenden Kriterien für den Plan definieren.
@@ -67,30 +67,30 @@ Nachdem Sie Mitarbeiter eingestellt haben, können Sie Pläne einrichten, um eff
 Um Ihren Mitarbeiter beim Erreichen ihrer Karriereziele beim Liefern wichtigen Geschäftsanforderungen zu helfen, können Sie Ziele einrichten, Leistungsbeurteilungen erstellen und Rückmeldung verfolgen. Um Mitarbeitern zu helfen, die benötigten Fähigkeiten zu entwickeln, können Sie auch Kursleiter, Kurstypen, Kurse, Kursbeschreibungen, Agenden, Verläufe und Sitzungen einrichten, bevor Sie einen Kursleiter einem Kurs zuweisen oder jemanden für einen Kurs registrieren. Kursleiter müssen bereits als Arbeitskräfte, Bewerber oder Kontakte vorhanden sein.
 
 - [Leistungsverwaltung](../../../talent/performance-management-overview.md)
-- [Belegschaftsqualifikationen auf den Geschäftsbedarf ausrichten](../../../talent/skills.md)
-- [Verwalten von Schulung durch Kurse](../../../talent/courses.md)
+- [Ausrichten der Mitarbeiterqualifikationen an den Geschäftsanforderungen](../../../talent/skills.md)
+- [Schulungskurse einrichten](../../../talent/courses.md)
 
-## <a name="create-and-maintain-benefits"></a>Vergütungen erstellen und verwalten
+## <a name="create-and-maintain-benefits"></a>Vorteile erstellen und verwalten
 
-Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vergütungsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
+Neben der Vergütung für Ihre Mitarbeiter über Löhne, Gehälter und Boni, können Sie Vorteilsprogramme, wie Krankenversicherung und Pensionspläne entwickeln. Sie können Vergütungen (z. B. Verleihprogramme) verwalten, in denen Ihr Unternehmen seinen Mitarbeitern Artikel (z. B. Computer oder Telefone) ausleiht.
 
-- [Ein Vergütungsprogramm verwalten](../../../talent/manage-benefit-program.md)
-- [Vergütungsberechtigungsrichtlinien](../../../talent/benefit-eligibility-policies.md)
-- [Objekte verwalten, die an Arbeitskräfte ausgeliehen werden](../../../talent/loan-items.md)
+- [Definieren und Verwalten eines Vergütungsprogramms](../../../talent/manage-benefit-program.md)
+- [Vorteilsberechtigungsrichtlinien](../../../talent/benefit-eligibility-policies.md)
+- [Artikel verwalten, die an Arbeitskräfte ausgeliehen werden](../../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Verwalten von Arbeitsplatzsicherheit und Konformität
 
 Microsoft Dynamics AX hilft Ihnen bei der Verwaltung einer sicheren Arbeitsumgebung, die mit den geltenden Gesetzen übereinstimmt, einschließlich der Vorgaben des Americans with Disabilities Act (Gesetz für die Rechte von Menschen mit Behinderungen in den USA) und der Einwanderungs- und Einbürgerungsgesetze. So können Sie beispielsweise die physischen Anforderungen für bestimmte Stellen verwalten sowie Anforderungen von Arbeitsplatzhilfsmitteln nachverfolgen, um so die Organisation dabei zu unterstützen, die Qualifikationen ihrer Belegschaft zu optimieren.
 
-- [Formular I-9 – Beschäftigungsüberprüfung](localizations/noam-usa-form-i-9-verification.md)
-- [Erfüllen der Vorgaben des Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
-- [Freie Zeit für FMLA nachverfolgen](localizations/noam-usa-track-time-for-fmla.md)
+- [Prüfung des I-9-Formulars](localizations/noam-usa-form-i-9-verification.md)
+- [Einhaltung des Americans with Disabilities Act (ADA)](localizations/noam-usa-comply-ada.md)
+- [Für die Verfolgung der Freizeit nach dem Family and Medical Leave Act (FMLA)](localizations/noam-usa-track-time-for-fmla.md)
 
 ## <a name="gather-information-using-questionnaires"></a>Informationen anhand von Fragebögen sammeln
 
 Sie können Fragebögen entwerfen und verwalten, um Informationen für die verschiedensten Zwecke zu sammeln. Die Fragebogenfunktion ermöglicht das Entwerfen und Erstellen von Fragebögen. Wenn ein Fragebogen fertig ist, lassen Sie ihn allgemein oder innerhalb einer bestimmten Gruppe von Befragten ausfüllen. Nachdem die Teilnehmer ihre Antworten angegeben haben, überprüfen und analysieren Sie die Ergebnisse.
 
 - [Fragebögen](../../../talent/questionnaires.md)
-- [Entwerfen eines Fragebogens](../../../talent/design-questionnaires.md)
-- [Einen Fragebogen verteilen und ausfüllen](../../../talent/distribute-questionnaires.md)
-- [Die Ergebnisse eines Fragebogens anzeigen und auswerten](../../../talent/evaluate-questionnaire-results.md)
+- [Entwerfen von Fragebögen](../../../talent/design-questionnaires.md)
+- [Verteilen und Planen von Fragebögen](../../../talent/distribute-questionnaires.md)
+- [Anzeigen und Auswerten der Ergebnisse eines Fragebögen](../../../talent/evaluate-questionnaire-results.md)

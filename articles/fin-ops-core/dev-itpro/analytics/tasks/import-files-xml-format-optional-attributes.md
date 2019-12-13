@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e1290598d8dbd5b72d679ccf3e642e75b6dc3215
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f34302a32b2e06f281dc93d6df160b88ffac7123
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182185"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2769784"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Importiert Dateien im XML-Format mit optionalen Attributen
 
@@ -30,7 +30,7 @@ ms.locfileid: "2182185"
 In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle Entwickler für elektronische Berichterstellung zugewiesen ist, eine ER-Formatkonfiguration entwerfen kann, um die Dateien im XML-Format, die optionale Attribute enthalten, zu importieren. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen. Bevor Sie beginnen, laden Sie die IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-Datei aus [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) und herunter speichern Sie sie lokal.
 
 1.  Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**.
-2.  Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+2.  Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diese als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen.
 3.  Klicken Sie auf **Berichterstellungskonfigurationen**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Neue Datenmodellkonfiguration erstellen

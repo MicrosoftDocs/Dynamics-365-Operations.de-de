@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9200b0e4bc3862abdb3ecacb6539f7ba0d619b2f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 0a930b4921a29d5ce561ce0e958733f0c3261b81
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189613"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2772190"
 ---
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Projektkostenabgrenzung beim Empfang von Bestellungen
 
@@ -40,21 +40,20 @@ Contoso Consulting hat ein neues Cloudbereitstellungsprojekt gestartet. Eine Bes
 Die antizipierten Kosten müssen auf der Finanzebene und Projektebene und für Berichtszwecke erfasst werden. Die wertmäßige Aktualisierung des Produktzugangs für den Artikel und die Beschaffungskategorien kann nachverfolgt werden. 
 
 Für Artikel auf der **Kreditorenparameter** Seite wählen Sie die **Produktzugänge im Sachkonto** Option aus.
-[![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
+[![Kreditorenparameter Seite](./media/accruals1-1024x409.png)](./media/accruals1.png) 
 
 Für auf Beschaffungskategorien der **Kategorierichtlinienregel** Seite, wählen Sie **Einkauf** Richtlinien, und wählen Sie dann **Einkaufausgaben fallen auf Beleg an** für jede Beschaffungskategorie aus.
-[![accruals2](./media/accruals2-1024x569.png)](./media/accruals2.png) 
+[![Kategorie Richtlinienregel Seite](./media/accruals2-1024x569.png)](./media/accruals2.png) 
 
 Die **Einkaufaufwendungen nicht fakturiert** und **Einkaufsabgrenzung** Konten in **Buchungseinstellungen** verwendet werden, wenn Belege, die dem Produktzugang zugeordnet sind, gebucht werden.
-[![accruals3](./media/accruals3-1024x429.png)](./media/accruals3.png) 
 
 Das Verwenden dieses Szenarios gleichen lassen Sie prüfen, wie Sie das Buchen eines Produktzugangs Hauptbuch und Projektinformationen auswirkt. 
 
 **Schritt 1:** Erstellen und Bestätigen Sie eine neue Bestellung für das Projekt, den Einkauf eines Computers für 1500 USD und der Installations-Services für 150 USD erfasst.
-[![accruals4](./media/accruals4-1024x497.png)](./media/accruals4.png) 
+[![Neue Bestellung anlegen](./media/accruals4-1024x497.png)](./media/accruals4.png) 
 
 Wenn die Bestellung bestätigt wurde, werden Buchungen für die zugesagten Kosten für das Projekt erstellt. 
-[![accruals5](./media/accruals5-1024x219.png)](./media/accruals5.png) 
+[![Transaktionen erstellt](./media/accruals5-1024x219.png)](./media/accruals5.png) 
 
 > [!NOTE]
 > Die Buchungen für die zugesagten Kosten besitzen das **Buchungs-Ursprung** Feld auf **Bestellung** festgelegt. Eine Bestellung der Informationen erstellt, bestätigend, keine Buchungen für ein Projekt. 
@@ -62,23 +61,23 @@ Wenn die Bestellung bestätigt wurde, werden Buchungen für die zugesagten Koste
 **Schritt 2:** Waren und Dienstleistungen geliefert wird ab und ein Produktzugang erfasst wird. 
 
 Beim Buchen eines Produktzugangs generiert und gebucht einen Beleg auf Sachkonto. Der Beleg für die Einkaufaufwendungen, das Konto und das Kreditkaufabgrenzungskonto nicht. 
-[![accruals6](./media/accruals6-1024x214.png)](./media/accruals6.png)
+[![Belegbuchungen](./media/accruals6-1024x214.png)](./media/accruals6.png)
 
 > [!NOTE]
 > Einen Produktzugang buchen verwendet die Buchungseinstellungen für Beschaffungskategorien und Produkte und nicht die Buchungseinstellungen für die Projektkategorien. Um Finanzauswirkungen von Einkaufabgrenzungen ordnungsgemäß widerzuspiegeln, muss diese Einstellung vorgenommen werden. 
 
 Es ist möglich, Beschaffungskategorien auf die Projektkategorien auf der Seite **Beschaffungskategorie** zuordnen.
-[![accruals7](./media/accruals7-1024x390.png)](./media/accruals7.png)
+[![Beschaffungskategorie Seite](./media/accruals7-1024x390.png)](./media/accruals7.png)
 
 **Schritt 3:** Standardmäßige Entwurfskreditorenrechnung erstellen 
 
 Das Buchen eines Produktzugangs wirkt sich nicht auf die Projektinformationen aus. Als Problemumgehung können Sie ein Entwurfskreditorenrechnungs-Recht erstellen, wenn Sie den Empfang von Bestellungen gebucht wurden. Wechseln Sie zu **Bestellung** Seite &gt; **Rechnungsregisterkarte** &gt; **Generieren** &gt; **Rechnung**. Dies erstellt ein ausstehendes Rechnungsdokument, das Projektinformationen aktualisiert. 
 
 Das Erstellen einer Entwurfskreditorenrechnung generiert ausstehende Projektbuchungen. 
-[![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 
+[![Ausstehende Projektbuchungen](./media/accruals8-1024x225.png)](./media/accruals8.png) 
 
 In der **Zugesagte Kosten** Seite werden die in Schritt 1 erstellten Datensätze geschlossen und neue Datensätze werden erstellt, damit die Zusage von der ausstehenden Kreditorenrechnung wiedergegeben wird. Die **Buchungsgrundlage** Feld für die zugesagten Kosten wird auf **Kreditorenrechnung** festgelegt.
-[![accruals9](./media/accruals9-1024x200.png)](./media/accruals9.png)
+[![Verpflichtungskosten Seite](./media/accruals9-1024x200.png)](./media/accruals9.png)
 
 Die Kreditorenrechnung wird zwar weiterhin im einem ausstehenden Status, wenn die tatsächliche Kreditorenrechnung Eingang.
 

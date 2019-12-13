@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e0369be278519f39fc304b34ef3a270438f0bb1
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 242e9fd5fd4b22f3081367cf33ff18ff5e4174a5
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026255"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2814742"
 ---
 # <a name="distribute-and-schedule-questionnaires"></a>Fragebögen verteilen und planen
 
@@ -54,7 +54,8 @@ Um eine Fragebogengruppe einem Fragebogen zuzuweisen, klicken Sie auf der Seite 
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Geplante Beantwortungssitzung in einem Fragebogen
 Geplante Antwortsitzungen sind Fragebogen, die Sie entwickelt und für die Sie die Befragten ausgewählt haben. 
 
-> **Hinweis** Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen. 
+> [!NOTE]
+>   Bevor Sie geplante Antwortsitzungen einrichten können, müssen Sie einen Fragebogen entwerfen. 
 
 Auf der Seite **Geplante Antwortsitzung** können Sie eine geplante Antwortsitzung für einen einzelnen Mitarbeiter erstellen. In der Liste auf der Seite werden alle geplanten Fragebögen angezeigt. 
 
@@ -108,12 +109,14 @@ Wenn Sie eine geplante Antwortsitzung verwenden, müssen Sie die Person z. B. te
 
 Verwenden Sie die Seite **Zeitpläne für Fragebögen**, um eine E-Mail-Nachricht an alle Teilnehmer, die dem Fragebogen zugeordnet sind, zu erstellen und zu senden. Geben Sie den Text der E-Mail auf der Registerkarte **E-Mail für Mitarbeiter-Self-Service** ein. Nachdem der Plan gestartet wurde, klicken Sie **Funktionen** &gt; **E-Mail senden**, um die E-Mail den Befragungsteilnehmern zu generieren und zu senden. Die Befragungsteilnehmer können sich nun auf der Website anmelden und den Fragebogen ausfüllen. 
 
-> **Hinweis** Bevor Sie die E-Mail-Funktion verwenden können, muss Ihr IT-Administrator auf der Seite **E-Mail-Parameter** die E-Mail-Einstellungen eintragen.
+> [!NOTE]
+>   Bevor Sie die E-Mail-Funktion verwenden können, muss Ihr IT-Administrator auf der Seite **E-Mail-Parameter** die E-Mail-Einstellungen eintragen.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Beenden eines geplanten Fragebogens
 Sie können einen geplanten Fragebogen beenden, nachdem alle Befragungsteilnehmer ihre zugewiesenen Antwortsitzungen abgeschlossen haben. Nachdem ein geplanter Fragebogen beendet ist, können Sie seine Einstellungen nicht in eine neue Planung kopieren. 
 
-> **Hinweis** Wenn ein oder mehrere Befragungsteilnehmer den Fragebogen nicht ausgefüllt haben, Sie aber die Planung beenden wollen, müssen Sie zuerst diese Befragungsteilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung** löschen. Dann können Sie die Planung beenden.
+> [!NOTE]
+>   Wenn ein oder mehrere Befragungsteilnehmer den Fragebogen nicht ausgefüllt haben, Sie aber die Planung beenden wollen, müssen Sie zuerst diese Befragungsteilnehmer aus der Liste auf der Seite **Geplante Antwortsitzung** löschen. Dann können Sie die Planung beenden.
 
 ## <a name="completing-questionnaires"></a>Ausfüllen von Fragebögen
 Nachdem Sie einen Fragebogen entworfen und verteilt haben, kann der Fragebogen von ausgewählten Befragten ausgefüllt werden. Die verfügbaren Fragebögen können von zwei Orten aus aufgerufen werden:
@@ -126,10 +129,10 @@ Fragebögen können entweder allen Personen im Netzwerk oder lediglich bestimmte
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Entwurf von Fragebögen](design-questionnaires.md)
+[Entwerfen von Fragebögen](design-questionnaires.md)
 
-[Verwenden von Fragebögen](questionnaires.md)
+[Fragebögen](questionnaires.md)
 
-[Anzeigen und Auswerten der Ergebnisse eines Fragebogens](evaluate-questionnaire-results.md)
+[Anzeigen und Auswerten der Ergebnisse eines Fragebögen](evaluate-questionnaire-results.md)
 
 

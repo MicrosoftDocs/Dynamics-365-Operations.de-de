@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a21394daeb797995418c3b139191dd700c129e12
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 3f0180f63c32f3e88d7f5e245716ccc908cc026d
+ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019392"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "2811239"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Peripheriegeräte mit der Verkaufsstelle (POS) verbinden
 
@@ -33,7 +33,7 @@ ms.locfileid: "2019392"
 Dieses Thema erläutert, wie Sie Peripheriegeräte mit Ihrer Retail POS verbinden.
 
 > [!NOTE]
-> Spezifische Installationshinweise finden Sie unter [Retail-Hardwarestation-Konfiguration und -Installation](retail-hardware-station-configuration-installation.md) und [Retail Modern POS Self-Service-Download/-Installation und Geräteaktivierung von Modern POS und Cloud POS](retail-modern-pos-device-activation.md).
+> Spezifische Installationsanweisungen finden Sie unter [Konfigurieren und richten Sie Kleinhardwarestation](retail-hardware-station-configuration-installation.md) und unter [Konfigurieren, Installieren und Aktivieren von Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ## <a name="key-components"></a>Schlüsselkomponenten
 
@@ -139,7 +139,7 @@ Das Funktionsprofil wird auf der Shopebene festgelegt. Wird verwendet, um Shop �
 
 - **Infocodes**-Inforegister:
 
-    - Alle Aspekte wie Infocodes werden am POS verwaltet. Details finden Sie unter [Infocodes](info-codes-retail.md)
+    - Alle Aspekte wie Infocodes werden am POS verwaltet. Weitere Informationen finden Sie unter [Infocodes und Infocodegruppen](info-codes-retail.md).
 
 - **Bonnummerierung**-Inforegister:
 

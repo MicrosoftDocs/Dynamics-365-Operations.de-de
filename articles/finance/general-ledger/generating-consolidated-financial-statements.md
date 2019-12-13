@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 55c5d02ca4e487782f020aa5eb85e6ebb36d4ce8
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177865"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770688"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Konsolidierte Finanzaufstellungen erstellen
 
@@ -45,15 +45,15 @@ Die folgende Abbildung zeigt, wie Sie eine Berichtsbaumstruktur-Definition in de
 
 Wie der konsolidierte Bericht in der folgenden Abbildung zeigt, können Sie jedes Unternehmen getrennt anzeigen, wenn Sie die Berichtsbaumstruktur zusammen mit einer Berichtsdefinition verwenden. Die konsolidierten Beträge werden auf der Zusammenfassungsebene angezeigt.
 
-![Zusammenfassungsebene für konsolidierten Betrag](./media/consolidate-amount-summary-level.png "Zusammenfassungsebene für konsolidierten Betrag")
+![Konsolidieren Sie die Summenstufe ](./media/consolidate-amount-summary-level.png "Summenstufe konsolidieren")
 
 Sie können auch eine mehrstufige Berichtsbaumstruktur erstellen, die so viele Ebenen umfasst, wie Sie benötigen. Die folgende Abbildung zeigt eine mehrstufige Berichtsbaumstruktur-Definition, die Zusammenfassungen nach weltweiter Funktion aufweist.
 
-![Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Region](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Region")
+![Mehrstufige Berichtsbaumdefinition mit Rollups nach Regionen](./media/multilevel-reporting-tree-definition-roll-ups-worldwide-region.png "Mehrstufige Berichtsbaumdefinition mit Rollups nach Regionen")
 
 Die folgende Abbildung zeigt eine mehrstufige Berichtsbaumstruktur-Definition, die Zusammenfassungen nach Funktion aufweist.
 
-![Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Mehrstufige Berichtsbaumstruktur-Definition mit Zusammenfassungen nach Funktion")
+![Mehrstufige Berichtsbaumdefinition mit Rollups nach Funktion](./media/multilevel-reporting-tree-definition-roll-ups-by-function.png "Mehrstufige Berichtsbaumdefinition mit Rollups nach Funktionen")
 
 ### <a name="viewing-companies-side-by-side"></a>Unternehmen nebeneinander anzeigen
 Zahlreiche Debitoren bevorzugen Berichte, in denen Unternehmen nebeneinander angezeigt werden, und in denen eine Spalte das konsolidierte Gesamtergebnis zeigt. Dieses Format ist einfach zu erreichen, nachdem Sie die Berichtsbaumstruktur erstellt haben. Hierbei gelten die allgemeinen Schritte, um Unternehmen in konsolidierten Finanzaufstellungen nebeneinander anzuzeigen.
@@ -64,19 +64,19 @@ Zahlreiche Debitoren bevorzugen Berichte, in denen Unternehmen nebeneinander ang
 
 Die folgende Abbildung zeigt eine Spaltendefinition im Format "Nebeneinander".
 
-![Spaltendefinition im Format "Nebeneinander"](./media/column-definition-side-by-side-format.png "Spaltendefinition im Format \"Nebeneinander\"")
+![Spaltendefinition in einem Side-by-Side-Format](./media/column-definition-side-by-side-format.png "Spaltendefinition in einem Side-by-Side-Format")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolidierungen, die Organisationsstrukturen verwenden, die von den juristischen Personen erstellt werden
 Organisationshierarchien, die dynamische Dimensionen oder juristische Personen enthalten, erstellen Berichtsbaumstruktur-Definitionen in der Finanzberichterstellung. Eine einfache Möglichkeit zur Optimierung von Konsolidierungen besteht darin, Ihrem Bericht in der Finanzberichterstellung eine Organisationshierarchie hinzuzufügen. Auf Grundlage das Berichtsdatums wählt die Finanzberichterstellung die Organisationshierarchie am oder vor dem zugehörigen Gültigkeitsdatum aus, wie in der folgenden Abbildung dargestellt.
 
-![Dynamisch eine Berichtsstrukturdefinition erstellen](./media/dynamically-create-reporting-tree-definitions.png "Dynamisch eine Berichtsstrukturdefinition erstellen")
+![Dynamische Erstellung von Berichtsbaumdefinitionen](./media/dynamically-create-reporting-tree-definitions.png "Dynamische Erstellung der Berichtsbaumdefinition")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolidierungen die Löschungen beinhalten
 Löschungsbuchungen sind ein üblicher Teil des Konsolidierungsprozesses. In diesem Beispiel werden im Zuge der Konsolidierung fünf Konten gelöscht: 142600, 211400, 401420, 401180 und 510820. Unternehmen richten ihre Intercompany-Konten möglicherweise unterschiedlich ein. Beispielsweise legen einige Unternehmen die letzte Stelle auf den Wert 9 fest, wenn das Konto in Intercompany-Transaktionen verwendet wird. Wenn Ihnen die Intercompany-Konten bekannt sind, können Sie Löschungen unabhängig von der Methode in Ihren konsolidierten Finanzaufstellungen anzeigen.
 
 Die folgende Abbildung zeigt eine Spaltendefinition für eine konsolidierte Gewinn- und Verlustrechnung. Für jedes Unternehmen werden mit dem Dimensionsfilter drei Intercompany-Gewinn- und Verlust-Konten definiert. Spalte D umfasst nur die Löschungskonten für das USMF-Unternehmen und Spalte E schließt nur Löschungen für das DEMF-Unternehmen ein. Spalte D und Spalte E werden so eingerichtet, dass sie **nicht** in der Finanzaufstellung gedruckt werden.
 
-![Konsolidierte Gewinn- und Verlustrechnung mit Spaltendefinition](./media/column-definition-consolidated-income-statement.png "Konsolidierte Gewinn- und Verlustrechnung mit Spaltendefinition")
+![Spaltendefinition Konzern-Gewinn- und Verlustrechnung](./media/column-definition-consolidated-income-statement.png "Spaltendefinition Konzern-Gewinn- und Verlustrechnung")
 
 Wenn der Bericht erstellt wird, werden die Löschungsbeträge in den Spalten F, G und H berechnet und in Spalte I addiert. Spalte J zeigt die konsolidierten Beträge. Diese Konsolidierungsbeträge schließen Löschungen für die USMF-, USRT- und DEMF-Unternehmen aus.
 
@@ -85,7 +85,7 @@ Wenn der Bericht erstellt wird, werden die Löschungsbeträge in den Spalten F, 
 
 Die folgende Abbildung zeigt den konsolidierten Bericht.
 
-![Gewinn- und Verlustrechnung für den konsolidierten Bericht](./media/consolidated-report-income-statement.png "Gewinn- und Verlustrechnung für den konsolidierten Bericht")
+![Konzernlagebericht Gewinn- und Verlustrechnung](./media/consolidated-report-income-statement.png "Konzernbericht Gewinn- und Verlustrechnung")
 
 Ob Sie Konten, Dimensionen oder beides verwenden, mit Finanzberichten können Sie die Löschungseinträge mit den Dimensionsfilterungsfunktionen herausfiltern.
 
@@ -98,13 +98,13 @@ Geben Sie in der Berichtsbaumstruktur-Definition den Anteil der Eigentümerschaf
 > [!NOTE]
 > Sie können diesen Anteil der Eigentümerschaft auf jede Berichtseinheit anwenden, nicht nur auf Unternehmensebene. 
 
-![Verwenden des Berichtsstruktur-Definitionsanteils](./media/Using-reporting-tree-definition-percentage.png "Verwenden des Berichtsstruktur-Definitionsanteils")
+![Verwendung der prozentualen Definition des Berichtsbaums ](./media/Using-reporting-tree-definition-percentage.png "Prozentsatz der Berichtsbaumdefinition verwenden")
 
 Wenn der Bericht generiert wird, zeigt der Bericht für Contoso Deutschland 100 Prozent des Verkaufsbetrags und 80 Prozent des Betrags wird der konsolidierten Ebene für Verkäufe zugewiesen und zusammengefasst.
 
 Wenn Sie weniger als 1 Prozent eines Unternehmens besitzen, können Sie das Kontrollkästchen **Rollup von weniger als 1% zulassen** auf der Registerkarte **Weitere Optionen** der Seite **Berichtseinstellungen** aktivieren, wie in der folgenden Abbildung dargestellt. In diesem Fall werden die Werte in der Spalte **Rollup %** in der Berichtsbaumstruktur als weniger als 1 Prozent behandelt. Wenn Sie beispielsweise **.8** eingeben, werden 0,8 % auf der konsolidierten Ebene ausgeführt, nicht 80 Prozent. Alternativ erreichen Sie das gleiche Ergebnis, indem Sie das Kontrollkästchen **Rollup von weniger als 1% zulassen** deaktiviert lassen und **.008** in der Spalte **Rollup %** eingeben.
 
-![Einstellungsoptionen für die Berichtserstellung](./media/reporting-setting-options.png "Einstellungsoptionen für die Berichtserstellung")
+![Einstellungsoptionen für die Berichterstellung ](./media/reporting-setting-options.png "Optionen für die Berichtseinstellung")
 
 ### <a name="showing-ownership-as-a-separate-row-on-the-consolidated-report"></a>Eigentümerschaft als separate Zeile im konsolidierten Bericht anzeigen
 Eine weitere Option der Minderheitsbeteiligung ist das Anzeigen von 100 Prozent der Tochtergesellschaft für jede Position im Bericht, aber die nicht-kontrollierende Beteiligung vom Nettogewinn zu subtrahieren.
@@ -125,11 +125,11 @@ Mehrere Links zu Finanzdimensionen können jeder Zeile in der Zeilendefinition f
 > [!TIP]
 > Weitere Informationen zur Zelle **Link zu Finanzdimensionen** finden Sie in der Zelle "Verknüpfung mit Finanzdimensionen angeben".
 
-![Ersten Link zu Finanzdimensionen festlegen](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Ersten Link zu Finanzdimensionen festlegen")
+![Erste Verknüpfung der Konten mit den finanziellen Dimensionen setzen](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Setzen Sie die erste Verknüpfung der Konten mit den finanziellen Dimensionen.")
 
 Sie können eine Berichtsbaumstruktur verwenden, um zu definieren, welcher Link zu Finanzdimensionen aus der Zeilendefinition bei jedem Unternehmen verwendet wird. Wählen Sie die Zeilendefinition in Spalte E und wählen Sie dann den entsprechenden Zeilenlink in Spalte F, wie in der folgenden Abbildung dargestellt.
 
-![Verwendete Zeilendefinition für Finanzdimensionen verknüpfen](./media/link-financial-dimensions-row-definition-used.png "Verwendete Zeilendefinition für Finanzdimensionen verknüpfen")
+![Verknüpfung der Zeilendefinition der Finanzdimensionen verwendet](./media/link-financial-dimensions-row-definition-used.png "Verknüpfung der Finanzdimensionen Zeilendefinition verwendet")
 
 > [!TIP]
 > Wenn Sie Links zu Finanzdimensionen erstellen, verwenden Sie die Beschreibung, um die Unternehmen zu ermitteln, für die jeder Link gilt. Auf diese Weise können Sie einfach das korrekte Unternehmen auswählen, wenn Sie eine Berichtsbaumstruktur erstellen. In der Spaltendefinition können Sie mit dem Feld **Berichtseinheit** jede Spalte auf eine Einheit der Berichtsbaumstruktur einschränken, um die Daten nebeneinander anzeigen zu können. Wenn Sie kein bestimmtes Unternehmen für eine Spalte angeben, werden konsolidierte Daten für alle Unternehmen angezeigt.
@@ -149,16 +149,16 @@ Wenn die Spaltendefinition für mehrere Unternehmen entwerfen, die über verschi
 
 In der folgenden Abbildung wird das USMF-Unternehmen im Feld **Unternehmensname** in der Berichtsdefinition angegeben. Der Steuerkalender des USMF-Unternehmens wird daher als Basissteuerkalender verwendet. In diesem Beispiel verwendet das USMF-Unternehmen, wenn ein Bericht für den 30. Juni 2018 generiert wird, den Basiszeitraum, der als Zeitraum 12 in der Berichtsdefinition definiert ist. Das INMF-Unternehmen verwendet BASE-6, das Periode 6 ist. Beide Spalten schließen Daten für den Juni 2018 ein.
 
-![Basiszeitraum des Berichts](./media/report-base-period.png "Basiszeitraum des Berichts")
+![Basiszeitraum melden](./media/report-base-period.png "Berichtsbasiszeitraum")
 
 Die folgende Abbildung zeigt die Optionen in der Berichtsdefinition, mit denen Sie auswählen können, ob die Zeitraumnummer oder das Enddatum des Zeitraums für die Konsolidierung verwendet wird.
 
-![Optionen für die Zeitraumnummer der Berichtsdefinition](./media/options-report-definition-period-number.png "Optionen für die Zeitraumnummer der Berichtsdefinition")
+![Optionen Bericht Definitionsperiode Nummer](./media/options-report-definition-period-number.png "Optionen Bericht Definition Zeitraum Nummer")
 
 ## <a name="business-unit-consolidations"></a>Geschäftsbereichskonsolidierungen
 Dieses Thema konzentrierte sich auf die Verwendung von Berichtsbaumstruktur-Definitionen und Organisationshierarchien in Finanzberichten für Konsolidierungszwecke. Sie können auch die Berichtsbaumstruktur verwenden, um Konsolidierungsberichte für Unternehmenseinheiten, wie Berichte über weltweiten Vertrieb oder Arbeitsgänge zu erstellen. Diese Berichte sind eine allgemeine Anforderung. Um diese zu erstellen, wählen Sie ein Unternehmen und eine Dimension für jede Einheit aus, die Sie konsolidieren möchten. In der folgenden Abbildung wird beispielsweise die Zusammenfassung der Unternehmenseinheit abgewickelt, indem jedes Unternehmen in der Spalte **Unternehmen** (Spalte A) wiederholt und einer Gruppe mit Abteilungsdimensionswerten pro Unternehmen in der Spalte **Dimensionen** (Spalte D) identifiziert wird.
 
-![Konsolidierungsberichte für Unternehmenseinheiten](./media/business-unit-consolidation-reports.png "Konsolidierungsberichte für Unternehmenseinheiten")
+![Geschäftseinheiten-Konsolidierungsberichte](./media/business-unit-consolidation-reports.png "Berichte zur Konsolidierung von Geschäftseinheiten")
 
 ## <a name="consolidations-that-involve-multiple-reporting-currencies"></a>Konsolidierungen, die mehrere Berichtswährungen bedingen
 Die Finanzberichterstellung bietet erweiterte Flexibilität, wenn Sie die Istkosten, das Budget, die Budgetsteuerung und die Budgetplanungsdaten in mehreren Währungen anzeigen. Indem die wichtigsten Einstellungsdaten übertragen werden, müssen Sie zu keiner Zeit für keinen Benutzer in keiner Währung eine zusätzliche Einrichtung in der Finanzberichterstellung vornehmen.
@@ -171,7 +171,7 @@ Im Hauptkonto müssen die Felder **Wechselkurstyp für Finanzberichterstellung**
 - Im Feld **Wechselkurstyp für Finanzberichterstellung** wählen Sie den Wechselkurstyp aus, der die Währungen und Wechselkurse enthält, die auf das Konto angewendet werden sollen. Diese Tabelle der Währungen und von Wechselkurse wird bei den tatsächlichen Daten in der Finanzberichterstellung angewendet.
 - Wählen Sie im Feld **Währungsumrechnungstyp** die Methode aus, die zur Berechnung des Wechselkurses für die Firma verwendet wird. Diese Währungsmethode wird für Ist- und Budgetdaten in der Finanzberichterstellung verwendet.
 
-![Finanzberichterstellung bei Hauptkonten](./media/Financial-reporting-main-accounts.png "Finanzberichterstellung bei Hauptkonten")
+![Finanzberichterstattung Hauptkonten ](./media/Financial-reporting-main-accounts.png "Finanzberichterstattung Hauptkonten")
 
 Für Budget, Budgetsteuerung und Budgetplanungsdaten wird der Wechselkurstyp auf der Seite **Sachkonto** definiert. Diese Tabelle wird verwendet, um die Wechselkurse zu übernehmen, und der Währungsumrechnungstyp, der dem Konto zugewiesen ist, wird verwendet.
 
@@ -202,15 +202,15 @@ Die Währungsumrechnungsdifferenz (CTA) ist die Differenz zwischen den Kursen, d
 
 - Verwenden Sie die Seite **Rundungsausgleiche** in der Zeilendefinition, wie in der folgenden Abbildung dargestellt.
 
-    ![Rundungsausgleiche bei der Anpassung der Währungsumrechnung](./media/Currency-translation-adjustment-rounding-adjustments.png "Rundungsausgleiche bei der Anpassung der Währungsumrechnung")
+    ![Währungsumrechnungsdifferenzen Rundungsdifferenzen](./media/Currency-translation-adjustment-rounding-adjustments.png "Währungsumrechnungsdifferenzen Rundungsdifferenzen")
 
     Wenn Sie die Zeile angeben, die den Rundungsausgleich (CTA) anzeigen soll, werden die Zeile "Gesamtes Anlagevermögen", die Zeile "Verbindlichkeiten und Eigenkapital insgesamt" und die Grenze angezeigt, mit denen Sie sich wohlfühlen. Die Finanzberichterstellung berechnet die Differenz und legt diese auf die gewünschte Zeile. Eine Position mit dem Namen **Rundungsausgleich** wird erstellt und nach Drilldown wie in der folgenden Abbildung dargestellt angezeigt.
 
-    ![Rundungsausgleich-Drilldown](./media/rounding-adjustment-drill-down.png "Rundungsausgleich-Drilldown")
+    ![Drill-Down für die Rundungseinstellung](./media/rounding-adjustment-drill-down.png "Drill-Down für die Rundungseinstellung")
 
 - Alle Konten, von Anlagen bis Ausgaben, in einen Bereich legen. Wie in der folgenden Abbildung dargestellt gleicht der Differenzbetrag dem Rundungsausgleich (CTA). Daher können Sie diesen als Prüfsumme verwenden, um sicherzustellen, dass die Rundungsausgleichsseite keine Kontosalden enthält, die vergessen wurden.
 
-    ![Rundungsausgleich von Scheck](./media/rounding-adjustment-form-check.png "Rundungsausgleich von Scheck")
+    ![Rundungsanpassung Formularprüfung](./media/rounding-adjustment-form-check.png "Überprüfung der Rundungsanpassung Formularprüfung")
 
 ### <a name="balance-calculation-approach"></a>Saldoberechnungsansatz
 Um die ordnungsgemäß umgerechneten Beträge zu erhalten, wenn Währungen verwendet werden, verwendet die Finanzberichterstellung die folgenden Berechnungsmethoden für die Salden:
@@ -221,6 +221,6 @@ Um die ordnungsgemäß umgerechneten Beträge zu erhalten, wenn Währungen verwe
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-Weitere Informationen zu Konsolidierungs- und Währungsumrechnungen, finden Sie im übergeordneten Thema dieses Themas unter [Währungsumrechnung und Finanzkonsolidierungen](./financial-consolidations-currency-translation.md)
+Weitere Informationen zur Konsolidierung und Währungsumrechnung finden Sie im übergeordneten Thema dieses Themas, [Finanzkonsolidierungen und Übersicht zur Währungsumrechnung](./financial-consolidations-currency-translation.md).
 
-Weitere Informationen zum Zuweisen von Details von Konsolidierungen online, finden Sie unter [Konsolidierung online](./consolidate-online.md)
+Weitere Informationen zur Online-Erfassung von Konsolidierungsdetails finden Sie unter [Online-Finanzkonsolidierungen](./consolidate-online.md).

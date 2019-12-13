@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7be41e724cb715e4b7c9077bb30d26b2bd4899dd
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5401f310138d19f78412dff318959414c31a191
+ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181909"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2770022"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurieren elektronischer Berichterstattung (EB), um Daten in Power BI einzubeziehen
 
@@ -184,7 +184,7 @@ Klicken Sie auf die Schaltfläche **Einstellungen** für den neuen Zieldatensatz
     [![Aktualisierte Zuordnung](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>Zugreifen auf den Power BI-Bericht in Finance
-Einrichten der Integration in Power BI. Weitere Informationen finden Sie unter [Konfigurieren der Power BI-Integration für Arbeitsbereiche](configure-power-bi-integration.md).
+Einrichten der Integration in Power BI. Weitere Informationen finden Sie unter [Konfiguration der Power BI-Integration für Workspaces](configure-power-bi-integration.md).
 
 1. Auf der Arbeitsbereichsseite **Elektronische Berichterstellung**, die die Power BI-Integration unterstützt (**Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Arbeitsbereich der elektronischen Berichterstellung**), klicken Sie auf **Optionen** &gt; **Berichtskatalog öffne**.
 2. Wählen Sie den Power BI-Bericht **Import- und Exportdetails** aus, den Sie erstellt haben, um diesen Bericht als Aktivitätselement auf der ausgewählten Seite anzuzeigen.
@@ -194,6 +194,6 @@ Einrichten der Integration in Power BI. Weitere Informationen finden Sie unter [
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Zielorte für elektronische Berichterstellung](electronic-reporting-destinations.md)
+[Ziele für elektronische Berichterstellung (EB)](electronic-reporting-destinations.md)
 
-[Überblick über die elektronische Berichterstellung](general-electronic-reporting.md)
+[Überblick über die elektronische Berichterstellung (Electronic reporting, ER)](general-electronic-reporting.md)
