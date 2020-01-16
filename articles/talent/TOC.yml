@@ -8,6 +8,12 @@
         - name: Neuerungen oder Änderungen in Talent
           href: whats-new.md
           items:
+            - name: "17.\_Dezember\_2019"
+              href: whats-new-talent-december-17-2019.md
+            - name: "12.\_Dezember\_2019"
+              href: whats-new-talent-december-12-2019.md
+            - name: "3.\_Dezember\_2019"
+              href: whats-new-talent-december-3-2019.md
             - name: "19.\_November\_2019"
               href: whats-new-talent-november-19-2019.md
             - name: "12.\_November\_2019"
@@ -26,17 +32,17 @@
               href: whats-new-talent-september-17-2019.md
             - name: 10. September 2019
               href: whats-new-talent-september-12-2019.md
-            - name: "27.\_August\_2019"
-              href: whats-new-talent-august-28-2019.md
-            - name: "22.\_August\_2019"
-              href: whats-new-talent-august-21-2019.md
-            - name: "13.\_August\_2019"
-              href: whats-new-talent-august-15-2019.md
-            - name: "6.\_August\_2019"
-              href: whats-new-talent-august-7-2019.md
             - name: Neuigkeitenarchive 2019
               items:
-                - name: 30. Juli 2019
+                - name: "27.\_August\_2019"
+                  href: whats-new-talent-august-28-2019.md
+                - name: "22.\_August\_2019"
+                  href: whats-new-talent-august-21-2019.md
+                - name: "13.\_August\_2019"
+                  href: whats-new-talent-august-15-2019.md
+                - name: "6.\_August\_2019"
+                  href: whats-new-talent-august-7-2019.md
+                - name: "30.\_Juli\_2019"
                   href: whats-new-talent-july-31-2019.md
                 - name: "23.\_Juli\_2019"
                   href: whats-new-talent-july-24-2019.md
@@ -130,36 +136,32 @@
           href: talent-updates.md
         - name: Talent bereitstellen
           href: provisioning-talent.md
-        - name: Kopieren einer Core HR-Instanz
+        - name: Eine Core HR-Instanz kopieren
           href: hr-copy-instance.md
         - name: Talent-Umgebungen entfernen
           href: remove-talent-environment.md
-        - name: Bereitstellen für die App Onboard
+        - name: Funktionen verwalten
+          href: access-preview-feature.md
+        - name: Onboard bereitstellen
           href: modular-app-tech-faq.md
-        - name: PowerApps-Apps einbetten
+        - name: Power Apps-Apps einbetten
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Core HR und Common Data Service
+        - name: Core HR-Entitäten in Common Data Service
           href: CoreHREntities.md
         - name: Support für Talent anfordern
           href: talent-support.md
-    - name: Ausstatten Ihrer Organisation mit Attract
+    - name: Ihrer Organisation mit Attract ausstatten
       items:
-        - name: Welche Version von Attract?
+        - name: Eine Version von Attract auswählen
           href: attract-comprehensive-hiring.md
         - name: Funktionen und Leistungsspektrum von Attract
           href: attract-overview.md
-        - name: Häufig gestellte Fragen
-          items:
-            - name: LinkedIn-Integration-FAQs
-              href: attract-linkedin-faq.md
         - name: Systemeinstellungen konfigurieren
           items:
             - name: Unternehmensdaten konfigurieren
               href: admin-settings-attract.md
             - name: Benutzerberechtigungen festlegen
               href: security-attract.md
-            - name: Funktionen verwalten
-              href: access-preview-feature.md
             - name: Website mit Stellenangeboten einrichten
               href: career-site.md
             - name: Broadbean-Integration aktivieren
@@ -168,13 +170,15 @@
               href: attract-configure-email-settings.md
             - name: LinkedIn-Integration einrichten
               href: attract-admin-linkedin.md
+            - name: LinkedIn-Integration-FAQs
+              href: attract-linkedin-faq.md
         - name: Einstellungsprozess erstellen
           items:
-            - name: Prozessvorlage erstellen
+            - name: Eine Einstellungsprozessvorlage erstellen
               href: process-templates-attract.md
-            - name: Aktivitäten im Einstellungsprozess
+            - name: Aktivitäten einem Einstellungsprozess hinzufügen
               href: activities-attract.md
-            - name: E-Mail-Vorlagen
+            - name: E-Mail-Vorlagen erstellen
               href: email-templates.md
             - name: Analytische Berichte verwenden
               href: analytic-reports.md
@@ -197,10 +201,10 @@
             - name: Kandidatenquellen nachverfolgen
               href: source-tracking.md
             - name: Praktische Empfehlungen
-              href: Intelligent-Recommendations.md
+              href: intelligent-recommendations.md
         - name: Bewerbergespräche einrichten
           items:
-            - name: Planung und Feedback von Bewerbergesprächen
+            - name: Gespräche planen
               href: interview-scheduling-feedback.md
         - name: Ein Angebot unterbreiten
           items:
@@ -433,7 +437,7 @@
       items:
         - name: Eingebettetes Power BI in Arbeitsbereichen
           href: ../dev-itpro/analytics/embed-power-bi-workspaces.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: "Erweitern von Talent mit PowerApps und Microsoft Flow\_– Beispielszenarien"
+        - name: Talent mit Power Apps und Power Automate erweitern
           href: extensibility-examples.md
         - name: Mobile App
           items:
@@ -443,8 +447,6 @@
                   href: ../dev-itpro/mobile-apps/company-directory-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Mobiler Arbeitsbereich für mein Team
                   href: ../dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
-            - name: Veröffentlichen mobiler Arbeitsbereiche
-              href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Verfolgen von Änderungen in Rekrutierungsdaten
           href: process-auditing.md
         - name: Erweiterbarkeit in Attract
