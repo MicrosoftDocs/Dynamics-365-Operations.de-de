@@ -3,7 +3,7 @@ title: Planen für das globale Adressbuch und andere Adressbücher
 description: Dieses Thema beschreibt die Überlegungen und die Entscheidungen, die Sie während des Planungsprozesses vornehmen müssen, bevor Sie das globale Adressbuch und alle zusätzlichen Adressbücher einrichten und konfigurieren.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25a99284b2773e7c9d473357356c69a39f23c92d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 89c6e71e5f537f0f9309eca1025c8e74cdce6716
+ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190027"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883410"
 ---
 # <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planen für das globale Adressbuch und andere Adressbücher
 
@@ -35,7 +35,7 @@ Dieses Thema beschreibt die Überlegungen und die Entscheidungen, die Sie währe
 
 Bevor Sie beginnen mit dem globalen Adressbuch zu arbeiten, müssen Sie die dafür notwendigen Standardwerte bestimmen. Diese Standardwerte werden dann für weitere Adressbücher verwendet, die Sie erstellen.
 
-**Entscheidung:**
+**Entscheidungen**
 
 - In welcher Reihenfolge sollen die Namen der Parteidatensätze vom Typ **Person** angezeigt werden? So kann beispielsweise eine Reihenfolge Nachname, zweiter Vorname, Vorname sein.
 - Müssen Parteidatensätze aus dem Adressbuch gelöscht werden, wenn die Rolle Datensatz gelöscht wird? Sollte der Parteidatensatz auch gelöscht werden, wenn beispielsweise ein Debitorendatensatz gelöscht wird?
@@ -58,11 +58,3 @@ Nachdem Sie das globale Adressbuch erstellt haben, können Sie, wenn nötig, zus
 **Entscheidung:**
 
 - Wie viele zusätzliche Adressbücher wollen Sie erstellen?
-
-### <a name="address-book-security"></a>Adressbuch-Sicherheit
-
-Adressbücher können jederzeit erstellt werden, und auch Sicherheitsparameter für die Adressbücher können jederzeit festgelegt werden. Sie müssen keine Sicherheitsrechte für ein Adressbuchfestlegen. Wenn Sie es aber nicht tun, können alle Arbeitskräfte in der Organisation alle Parteidatensätze im Adressbuch anzeigen. Sie können Sicherheitsrechte für Parteidatensätze über das Adressbuch festlegen. Sicherheitsrechte basieren auf Teams. Dieser Ansatz garantiert, dass Arbeitskräfte, die einem Team zugewiesen sind, das Zugriff auf ein Adressbuch hat, die Parteidatensätze in diesem Adressbuch anzeigen können. Sie müssen die Teams auswählen, die Zugriff auf jedes Adressbuch haben. Für jedes Adressbuch können Sicherheitsrechte festgelegt werden, die den Zugriff auf bestimmte Teams gestatten oder verweigern. Werden einem Team Rechte für ein Adressbuch gewährt, können alle Mitglieder dieses Teams die Datensätze im Adressbuch anzeigen. Wird einem Team kein Zugriff auf ein Adressbuch gewährt, kann die Mitglieder des Teams das Adressbuch oder dessen Inhalt nicht anzeigen.
-
-**Entscheidung:**
-
-- Welches Team soll Zugriff auf jedes neue Adressbuch haben, das Sie erstellen?

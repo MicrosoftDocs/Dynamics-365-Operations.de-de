@@ -3,7 +3,7 @@ title: Vergleich von Cloudfunktionen und lokalen Funktionen
 description: Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden.
 author: sericks007
 manager: AnnBe
-ms.date: 10/11/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 8fa5ff0de4e97d5dc178581f721f3a6ea72fc974
-ms.sourcegitcommit: 70c6257bd6833de3e8de34d9a7561088194e59cc
+ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
+ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "2573929"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935386"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
@@ -48,7 +48,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 | Datenverwaltung und -integration      |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurations-getriebene Erweiterung                                                            | Ja       | Nr.              |
 |                                      | Exportieren von Daten in Ihrem eigenen Data Warehouse                                                    | Ja       | Ja             |
-|                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Nr.              |
+|                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Ja              |
 |                                      | Datenintegrationen                                                                         | Ja       | Ja             |
 | Dokumentverwaltung                  |                                                                                           | Ja       | Ja             |
 | Finanzverwaltung                 |                                                                                           | Ja       | Ja             |
@@ -148,7 +148,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 
 ## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
 
-Eine Liste der Einzelhandelsfunktionen, die in den lokalen Bereitstellungen verfügbar sind, finden Sie unter [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/PeterRFriis-patch-1/articles/retail/retail-onprem.md).
+Eine Liste der Einzelhandelsfunktionen, die in den lokalen Bereitstellungen verfügbar sind, finden Sie unter [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../../retail/retail-onprem.md).
 
 ## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
 

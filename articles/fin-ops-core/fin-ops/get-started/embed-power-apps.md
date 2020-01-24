@@ -3,7 +3,7 @@ title: Einbetten von Power Apps
 description: In diesem Thema wird beschrieben, wie Power Apps in den Client eingebettet werden, um die Funktionalität des Produkts zu erhöhen.
 author: jasongre
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 755a30f89725ca0a7e1c14252984c617d6ba280e
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 8b5e64cb9ba916f9cbd628703394318b4044867b
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824492"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870240"
 ---
 # <a name="embed-microsoft-power-apps"></a>Einbetten von Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Die folgenden Anweisungen zeigen, wie eine Power-App in den Webclient eingebette
 
     - Das Feld **Name** gibt den Text an, der für die Schaltfläche oder Registerkarte angezeigt wird, die die eingebettete Power-App enthält. Oftmals können Sie ggf. den Namen der Power-App in diesem Feld wiederholen.
     - **App-Kennung** ist der GUID für die Power-App, die Sie einbetten möchten. Um diesen Wert abzurufen, suchen Sie die Power-App auf [web.powerapps.com](https://web.powerapps.com), und suchen Sie dann das Feld **App-ID** unter **Details**.
-    - Für die **Eingabedaten für Power-App** können Sie optional das Feld auswählen, das die Daten enthält, die an die Power-App weitergegeben werden sollen. Weitere Informationen dazu, wie die Power-App auf die von Finance and Operations-Apps gesendeten Daten zugreifen kann, finden Sie im Abschnitt [Erstellen einer Power-App, die Daten aus Finance and Operations-Apps nutzt](#building-a-powerapp-that-leverages-data-sent-from-finance-and-operations-apps) weiter unten in diesem Thema.
+    - Für die **Eingabedaten für Power-App** können Sie optional das Feld auswählen, das die Daten enthält, die an die Power-App weitergegeben werden sollen. Weitere Informationen dazu, wie die Power-App auf die von Finance and Operations-Apps gesendeten Daten zugreifen kann, finden Sie im Abschnitt [Erstellen einer Power-App, die Daten aus Finance and Operations-Apps nutzt](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) weiter unten in diesem Thema.
     - Wählen Sie die **Anwendungsgröße** die zum Typ der Power-App passt, die Sie einbetten. Wählen Sie **Dünn** für Power Apps, die für mobile Geräte erstellt wurden, und **Breit** für Power Apps aus, die für Tablets erstellt wurden. Dadurch wird sichergestellt, dass für die eingebettete Power-App ausreichend Platz zugeteilt wird.
     - Das Inforegister **Juristische Personen** bietet die Möglichkeit, auszuwählen, für welche juristischen Personen die Power-App verfügbar ist. Standardmäßig wird die Power-App in allen juristischen Personen angezeigt.
 
@@ -101,7 +101,7 @@ Gehen Sie folgendermaßen vor, um die Konfiguration einer eingebetteten Power-Ap
 
 Nachdem eine Power-App auf einer Seite eingebettet wurde, gibt es zwei Möglichkeiten, sie nach Bedarf zu entfernen:
 
-- Wechseln Sie zum Bereich **Bearbeiten einer Power-App** mithilfe der Anweisungen vom Bereich [Bearbeiten einer eingebetteten Power-App](#editing-an-embedded-powerapp) oben in diesem Thema. Vergewissern Sie sich, dass der Bereich Informationen für die eingebettete Power-Apps anzeigt, den Sie entfernen möchten, und klicken Sie dann auf die Schaltfläche **Löschen**.
+- Wechseln Sie zum Bereich **Bearbeiten einer Power-App** mithilfe der Anweisungen vom Bereich [Bearbeiten einer eingebetteten Power-App](#editing-an-embedded-power-app) oben in diesem Thema. Vergewissern Sie sich, dass der Bereich Informationen für die eingebettete Power-Apps anzeigt, den Sie entfernen möchten, und klicken Sie dann auf die Schaltfläche **Löschen**.
 - Da eine eingebettete Power-App als Personalisierungsdaten gespeichert wird, werden durch die Entfernung der Personalisierung der Seite auch alle eingebetteten Power Apps auf dieser Seite entfernt. Beachten Sie, dass die Löschung der Personalisierung dauerhaft ist und nicht rückgängig gemacht werden kann. Um Ihre Personalisierungen auf einer Seite zu entfernen, wählen Sie **Optionen** aus, und klicken Sie dann auf **Dieses Formular personalisieren**. Unter dem Menü **Verwalten** wählen Sie die Schaltfläche **Löschen** aus. Nachdem Sie Ihrem Browser aktualisiert haben, werden auch alle vorherigen Personalisierungen für diese Seite entfernt. Unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md) finden Sie weitere Informationen darüber, wie Sie Seiten mithilfe der Personalisierung optimieren können.
 
 ## <a name="appendix"></a>Anhang

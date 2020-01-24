@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 8090fafc891d874c3f4fb646fe22a2b783ce37aa
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 7057c5b24ee3ae03574ec106a0c7d268dfffb98e
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814834"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897188"
 ---
-# <a name="create-a-hiring-team-by-using-dynamics-365-talent---onboard"></a>Zusammenstellen eines Einstellungsteams mithilfe von Dynamics 365 Talent - Onboard
+# <a name="create-a-hiring-team"></a>Zusammenstellen eines Einstellungsteams
 
 [!include [banner](includes/banner.md)]
 
@@ -51,11 +51,11 @@ In Microsoft Dynamics 365 Talent: Onboard können Sie Einstellungsteams erstelle
 2. Wählen Sie das Team aus.
 3. Wählen Sie auf der Registerkarte **Anleitungen** und dann **Anleitungen hinzufügen**.
 
-    ![[Onboarding Anleitungen zu einem Team hinzufügen](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
+    ![[Weisen Sie Onboarding-Leitfäden einem Team zu](./media/onboard-add-guides-to-team.png)](./media/onboard-add-guides-to-team.png)
 
 4. Aktivieren Sie das Kontrollkästchen für jede Onboarding Anleitung, die Sie de Team zuweisen möchten und wählen Sie dann **Hinzufügen** aus.
 
-    ![[Onboarding Anleitungen auswählen, um einem Team hinzuzufügen](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
+    ![[Auswählen der Onboarding-Leitfäden, die dem Team hinzugefügt werden sollen](./media/onboard-select-guides.png)](./media/onboard-select-guides.png)
 
 ## <a name="assign-onboarding-templates-to-a-hiring-team"></a>Weisen Sie Oonboarding Vorlagen einem Einstellungsteam zu
 
@@ -63,11 +63,11 @@ In Microsoft Dynamics 365 Talent: Onboard können Sie Einstellungsteams erstelle
 2. Wählen Sie das Team aus.
 3. Wählen Sie auf der Registerkarte **Vorlagen** dann **Vorlage hinzufügen** aus.
 
-    ![[Vorlage zu einem Team hinzufügen](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
+    ![[Hinzufügen von Vorlagen zu einem Team](./media/onboard-add-templates-to-team.png)](./media/onboard-add-templates-to-team.png)
 
 4. Aktivieren Sie das Kontrollkästchen für jede Vorlage, die Sie dem Team zuweisen möchten und wählen Sie dann **Hinzufügen** aus.
 
-    ![[Vorlage auswählen, um einem Team hinzuzufügen](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
+    ![[Auswählen der Vorlagen, die dem Team hinzugefügt werden sollen](./media/onboard-select-templates.png)](./media/onboard-select-templates.png)
 
 ### <a name="see-also"></a>Siehe auch
 

@@ -18,16 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0a2fa6a7f6efef05862a3727a80122c22d591487
-ms.sourcegitcommit: 4162d9ef4239c9d4e5297b8aaa903dd54f9cafc3
+ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "2824519"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933907"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
-Geschäftsanwender nutzen die Übersicht [Electronic Reporting (ER) ](general-electronic-reporting.md), um Formate für ausgehende Dokumente entsprechend den gesetzlichen Anforderungen verschiedener Länder/Regionen zu konfigurieren. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
+Geschäftliche Benutzer verwenden das [Electronic Reporting (ER) Framework](general-electronic-reporting.md) zum Konfigurieren von Formaten für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
 
 Die **Geschäftsdokumentverwaltung** wird auf dem ER-Framework erstellt und ermöglicht geschäftlichen Benutzern, Geschäftsdokumentvorlagen zu bearbeiten, indem sie einen Microsoft Office 365-Dienst oder eine entsprechende Microsoft Office-Desktopanwendung verwenden. Bearbeitungen an Dokumenten umfassen das Ändern von Geschäftsdokumentdesigns und das Hinzufügen von Platzhaltern für zusätzliche Daten ohne Quellcodeänderungen und neue Bereitstellungen. Keine Vorkenntnisse des ER-Frameworks sind erforderlich, um Vorlagen von Geschäftsdokumenten zu aktualisieren.
 
@@ -59,7 +59,7 @@ Die folgenden Berichte, mit Excel-basierten Vorlagen, werden bei Veröffentlichu
 
 Zusätzliche Berichte werden verfügbar sein. Spezielle Benachrichtigungen über zusätzliche Berichte werden gesondert übermittelt. 
 
-Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2019 geplant sind, finden Sie unter [Konfigurierbare Berichterstellung für Geschäftsbelege in Word und Excel](https://docs.microsoft.com/en-us/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
+Eine vollständige Liste aller Berichte, die für die Veröffentlichung im Oktober 2019 geplant sind, finden Sie unter [Konfigurierbare Berichterstellung für Geschäftsbelege in Word und Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details). Weitere Informationen über diese Funktion erhalten Sie, wenn Sie das Beispiel in diesem Thema abschließen.
 
 ## <a name="configure-er-parameters"></a>Parameter der elektronischen Berichterstellung konfigurieren
 
@@ -410,4 +410,4 @@ Höchstwahrscheinlich haben Sie sich bei der aktuellen Instanz der App der Azure
 
 [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](electronic-reporting-embed-images-shapes.md)
 
-[Konfigurieren Sie die elektronische Berichterstattung (ER), um Daten in Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md) zu ziehen.
+[Konfigurieren Sie die elektronische Berichterstattung (ER), um Daten in Power BI zu ziehen.](general-electronic-reporting-report-configuration-get-data-powerbi.md)

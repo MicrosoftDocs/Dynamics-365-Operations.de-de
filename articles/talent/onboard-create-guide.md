@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a095fe97b05898403b501763204a462ee8dcc12a
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 2371d86165390503312c2848842acf4745a8ed7a
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814627"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898247"
 ---
-# <a name="create-and-send-an-onboarding-guide-by-using-dynamics-365-talent---onboard"></a>Erstellen und versenden eines Onboarding-Leitfadens mithilfe von Dynamics 365 Talent - Onboard
+# <a name="create-and-send-an-onboarding-guide"></a>Erstellen und versenden eines Onboarding-Leitfadens
 
 [!include [banner](includes/banner.md)]
 
@@ -42,7 +42,7 @@ Nachdem Sie ein Onboarding Handbuch erstellt haben, können Sie diese an einen n
 
 5. Im Fenster **Erstellen Sie Anleitungen** unter **für wen ist das Onboarding**, geben Sie den Namen oder die neue E-Mail-Adresse des neuen Mitarbeiters ein. Wenn der neue Mitarbeiter noch nicht im System ist, wählen Sie **Jetzt hinzufügen**, und geben Sie die Informationen des Mitarbeiters ein.
 
-    ![[Informationen für das Onboarding-Handbuch](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Eingabe von Informationen für den Onboarding-Leitfaden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 6. Wählen Sie unter **Wann beginnen sie** ein Startdatum aus.
 7. Wenn das Onboarding Handbuch automatisch an einen neuen Mitarbeiter zu einem bestimmten Zeitpunkt gesendet wird, stellen Sie sicher, dass die Option **Planen Sie ein automatisches Sendedatum** aktiviert ist, und wählen Sie dann das automatische Sendedatum aus. Um die Anleitung sofort zu senden, deaktivieren Sie die Option **Ein automatisches Sendedatum planen** aus.
@@ -92,7 +92,7 @@ Sie müssen nicht immer Anleitungen aus einer Vorlage erstellen. Wenn Sie es bev
 1. Wählen Sie im linken Menü **Anleitungen** und dann **Hinzufügen** aus der Schaltfläche (das Pluszeichen \[**+**\]).
 2. Im Fenster **Erstellen Sie Anleitungen** unter **für wen ist das Onboarding**, geben Sie den Namen oder die neue E-Mail-Adresse des neuen Mitarbeiters ein. Wenn der neue Mitarbeiter noch nicht im System ist, wählen Sie **Jetzt hinzufügen**, und geben Sie die Informationen des Mitarbeiters ein.
 
-    ![[Informationen für das Onboarding-Handbuch](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
+    ![[Eingabe von Informationen für den Onboarding-Leitfaden](./media/onboard-create-a-guide-window.png)](./media/onboard-create-a-guide-window.png)
 
 3. Wählen Sie unter **Wann beginnen sie** ein Startdatum aus.
 4. Wenn das Onboarding Handbuch automatisch an einen neuen Mitarbeiter zu einem bestimmten Zeitpunkt gesendet wird, stellen Sie sicher, dass die Option **Planen Sie ein automatisches Sendedatum** aktiviert ist, und wählen Sie dann das automatische Sendedatum aus. Um die Anleitung sofort zu senden, deaktivieren Sie die Option **Ein automatisches Sendedatum planen** aus.
@@ -105,7 +105,7 @@ Sie können eine Onboarding Anleitung als Vorlage speichern. Dadurch können Sie
 1. Wählen Sie im linken Menü **Anleitungen** aus.
 2. Wählen Sie die Schaltfläche**Weiter** aus (die Auslassungspunkte \[**...**\]) für die Anleitung, von er Sie die Vorlage erstellen möchten und wählen Sie dann die aktuelle Vorlage **Als Vorlage speichern** aus.
 
-    ![[Ein Onboarding Handbuch wird als Vorlage gespeichert](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
+    ![[Speichern des Onboarding-Leitfadens als Vorlage speichern](./media/onboard-save-guide-as-template.png)](./media/onboard-save-guide-as-template.png)
 
 3. Im Fenster **Speichern als neue Vorlage** geben Sie einen Namen für die neue Vorlage ein, und wählen Sie dann **Speichern** aus.
 

@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: caa449feba22c5804799b5317a8e29c139cc440e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f67296797d9a671ae071a13b1bbda73cf3fc6e7f
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177868"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915176"
 ---
 # <a name="financial-reporting-overview"></a>Finanzberichterstellung – Übersicht
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 In diesem Thema wird beschrieben, wo Sie auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst auch eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 
@@ -79,6 +81,18 @@ Die Finanzberichtsfunktionen stehen Benutzern zur Verfügung, denen die entsprec
 | Finanzberichte anzeigen                | Die Finanzen des Unternehmens überprüfen          | Nicht zugewiesen                                                                   |
 
 Nachdem Sie ein Benutzer hinzugefügt haben, oder eine Rolle geändert wurde, sollte der Benutzer in der Lage sein, innerhalb weniger Minuten auf die Finanzberichterstellung zuzugreifen. **Hinweis** Die Rolle sysadmin wird allen Rollen in der Finanzberichterstellung hinzugefügt.
+
+## <a name="report-deletions-and-expirations"></a>Löschungen und Verfallsdaten melden
+Benutzer, die einen Bericht erstellen, können ihre eigenen Berichte löschen. Benutzer mit der Pflicht **Finanzberichtssicherheit verwalten** können die Berichte anderer Benutzer löschen. 
+
+Ab dem Release 10.0.7 wurde das Konzept der Ablaufdaten eingeführt. Eine neue obligatorische Funktion wird im Funktionsverwaltungsarbeitsbereich aktiviert. Diese Funktion enthält die folgenden Änderungen:
+* Neu erstellte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Erstellung gekennzeichnet
+* Alle vorhandenen Berichte, die vor der Installation der Funktion erstellt wurden, haben eine Gültigkeitsdauer von 90 Tagen. Das Datum wird möglicherweise für einen kurzen Zeitraum leer angezeigt, bis der Finanzberichtsdienst ausgeführt wird, ein Bericht generiert wird und der Dienst die Aktualisierung vorhandener Berichte mit einem leeren Ablaufdatum durchführt. 
+* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Aufbewahrungsoptionen verfügbar: 
+  * Ablauf von 90 Tagen
+  * Eine Option zum Festlegen, dass der Bericht niemals abläuft
+
+Wenn ein Ablaufdatum wie 90 Tage ausgewählt wird, werden 90 Tage ab dem heutigen Datum gewährt. Dies unterscheidet sich von den 90 Tagen ab dem ursprünglichen Erstellungsdatum, das während der Berichtserstellung festgelegt wurde. 
 
 ## <a name="default-reports"></a>Standardberichte
 Die Finanzberichterstellung enthält 22 standardmäßige Finanzberichte. Jeder Bericht verwendet die standardmäßige Hauptkontokategorien. Sie können diese Berichte verwenden oder sie als Ausgangspunkt für Ihre Finanzberichte nutzen. Zusätzlich zu herkömmlichen Finanzaufstellungen (z. B. Einkommensaufstellung und Bilanz) enthalten diese Standardberichte Berichte, die die unterschiedlichen Arten von Finanzberichten aufzeigen, die Sie erstellen können. 

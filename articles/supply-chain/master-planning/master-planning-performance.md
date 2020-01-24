@@ -3,7 +3,7 @@ title: Leistungsverbesserungen der Produktprogrammplanung
 description: In diesem Thema werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben.
 author: t-benebo
 manager: AnnBe
-ms.date: 05/31/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,39 +19,39 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: f0d075bbcc8a6671054f227a13c75ca7fb1e954f
-ms.sourcegitcommit: 432481001b986b54937d423516efd8f2af1511d6
+ms.openlocfilehash: 7e8c1d7ee51eb6e335554a01fd050bd80f2a070d
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "1631542"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915223"
 ---
 # <a name="improve-master-planning-performance"></a>Leistungsverbesserungen der Produktprogrammplanung
 
 [!include [banner](../includes/preview-banner.md)]
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben. Er umfasst Informationen zu Parametern und Einstellungen und zu empfohlenen Konfigurationen und Aktivitäten. Es enthält außerdem eine Zusammenfassung aller wichtigen Parameter, die Sie berücksichtigen sollten, wenn Sie langfristige Produktprogrammplanungsaufträge haben.
+In diesem Thema werden die verschiedenen Optionen beschrieben, die Ihnen helfen können, die Leistung der Produktprogrammplanung zu verbessern und Probleme zu beheben. Er umfasst Informationen zu Parametern und Einstellungen sowie empfohlene Konfigurationen und Aktivitäten. Er enthält außerdem eine Zusammenfassung aller wichtigen Parameter, die Sie berücksichtigen sollten, wenn Sie langfristige Produktprogrammplanungsaufträge haben.
 
 Dieses Thema ist für Systemadministratoren oder IT-Benutzer vorgesehen, die Fehlerbehebungen durchführen können. Es ist außerdem für Produktions- oder Beschaffungsplaner vorgesehen, da es Informationen zu Parametern enthält, die den Unternehmensplanungsanforderungen zugeordnet werden. 
 
-## <a name="parameters-that-are-related-to-master-planning-performance"></a>Parameter, die der Produktprogrammplanungsleistung zugeordnet sind
+## <a name="parameters-related-to-master-planning-performance"></a>Parameter, die der Produktprogrammplanungsleistung zugeordnet sind
 
 Verschiedene Parameter betreffen die Laufzeit der Produktprogrammplanung und sollten berücksichtigt werden.
 
 ### <a name="number-of-threads"></a>Anzahl der Threads
 
-Mit dem **Number of threads**-Parameter können Sie die Produktprogrammplanung anpassen, um die Leistung beim bestimmten Datensatz zu verbessern. Er gibt die Gesamtanzahl der Threads an, die verwendet werden, um die Produktprogrammplanung ausführen. Er verursacht Parallelisierung der Produktprogrammplanungsausführung, und dieser Parallelisierung hilft bei der Verringerung der Ausführungszeit. 
+Mit dem Parameter **Anzahl der Threads** können Sie die Produktprogrammplanung anpassen, um die Leistung beim bestimmten Datensatz zu verbessern. Dieser Parameter gibt die Gesamtanzahl der Threads an, die verwendet werden, um die Produktprogrammplanung ausführen. Er verursacht eine Umwandlung der Produktprogrammplanungsausführung, die bei der Verringerung der Ausführungszeit hilft. 
 
 Sie können den Parameter **Number of threads** im Dialogfeld **Produktprogrammplanungslauf** festlegen. Zum Öffnen dieses Dialogfelds, wechseln Sie zu **Produktprogrammplanung \> Produktprogrammplanung \> Ausführen \> Produktprogrammplanung** oder wählen Sie **Ausführen** im Arbeitsbereich **Produktprogrammplanung** aus. Um den besten Wert für diesen Parameter zu bestimmen, müssen Sie mehrere Versuche durchführen. Sie können jedoch die folgenden Formeln verwenden, um einen Ausgangswert zu berechnen:
 
-- **Bei der Fertigungsbranche:** Anzahl der Threads = Anzahl der geplanten Bestellungen ÷ 1.000
-- **Andernfalls:** Anzahl der Threads = Anzahl der Artikel ÷ 1.000
+- **Bei der Fertigungsbranche:** (Anzahl der Threads) = (Anzahl der geplanten Bestellungen ÷ 1.000)
+- **Andernfalls:** (Anzahl der Threads) = (Anzahl der Artikel ÷ 1.000)
 
 Die Anzahl der Hilfsprogramme, die während der Produktprogrammplanung verwendet werden, muss kleiner oder gleich der maximalen Anzahl der Threads sein, die auf dem Chargenserver zulässig sind. Wenn die Anzahl der Hilfsprogramme überschreitet die Anzahl der Threads auf dem Chargenserver, die zusätzlichen Threads erledigen keine Arbeit.
 
 > [!NOTE]
-> Bei einer Einstellung von **0** (Null) für den Parameter **Anzahl der Threads** wird die Laufzeit der Produktprogrammplanung erhöht. Daher wird empfohlen, dass Sie immer einen Wert größer als 0 festlegen.
+> Bei der Einstellung von **0** (Null) für den Parameter **Anzahl der Threads** wird die Laufzeit der Produktprogrammplanung erhöht. Daher wird empfohlen, dass Sie immer einen Wert größer als 0 festlegen.
 
 ### <a name="number-of-tasks-in-helper-task-bundle"></a>Anzahl der Aufgaben im Hilfsaufgabenbündel
 
@@ -59,10 +59,10 @@ Durch Änderung der Einstellung **Anzahl der Aufgaben im Aufgabenbündel** (das 
 
 Sie können den Parameter **Aznahl der Aufgaben im Aufgabenbündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Der beste Wert für diesen Parameter hängt von Ihren Daten ab. Daher wird empfohlen, dass Sie mit dem Wert **1** beginnen und dann durch Versuche den besten Wert für diese Einstellung bestimmen.
 
-Im Allgemeinen wird empfohlen, dass Sie die Anzahl der Aufgaben erhöhen, wenn die Anzahl der Elemente sehr groß ist (bei mehreren Hunderttausenden). Andernfalls sollten Sie die Anzahl der Aufgaben verringern. Bei folgenden speziellen Branchen sollten Sie die folgenden Punkte berücksichtigen:
+Im Allgemeinen wird empfohlen, dass Sie die Anzahl der Aufgaben erhöhen, wenn die Anzahl der Elemente sehr groß ist (bei mehreren Hunderttausenden). Andernfalls sollten Sie die Anzahl der Aufgaben verringern. Bei folgenden speziellen Branchen sollten Sie die folgenden Empfehlungen berücksichtigen:
 
 - In den Einzelhandel- und Verteilungsbranchen, in denen viele unabhängige Elemente vorhanden sind, verwenden Sie viele Hilfsprogramme, da es hier keine Abhängigkeit zwischen Elementen gibt. 
-- In derFertigungsindustrie bei denen es zahlreiche Stücklisten (BOMs) und freigegebene Unterkomponenten gibt, verwenden Sie weniger Hilfsprogramme, da die Abhängigkeiten zwischen Elementen zu Wartezeiten führen können.
+- In der Fertigungsindustrie bei denen es zahlreiche Stücklisten (BOMs) und freigegebene Unterkomponenten gibt, verwenden Sie weniger Hilfsprogramme, da die Abhängigkeiten zwischen Elementen zu Wartezeiten führen können.
 
 > [!TIP]
 > Bei Leistungsproblemen wird empfohlen, dass Sie die Einstellung **Anzahl der Hilfsprogramme im Aufgabenbündel** auf **1** reduzieren. Sie können dann die Versuchsreihe starten, um den besten Wert für diese Einstellungen zu finden. Im Allgemeinen treten Leistungsprobleme auf, wenn die Verarbeitung eines Elements länger dauert, als die der verbleibenden Elemente. In diesem Fall dauert die Ausführung von zwei folgenden Elementen mit dem Status **Disposition** im Produktprogrammplanungslauf deutlich unterschiedlich lange. In Extremfällen kann diese Differenz bis zu 30 Minuten betragen. Sie können die Zeit, die die Ausführung einer Aufgabe benötigt, ableiten, indem Sie die Dauer der einzelnen Aufgaben betrachten.
@@ -85,9 +85,9 @@ Sie können den Parameter **Cacheverwendung** im Abschnitt **Leistung** auf der 
 
 Der Parameter **Zahl der Produktionsaufträge im Anlagebündel** gibt die Gesamtanzahl der Aufträge an, die jeweils von jedem Thread/jeder Charge ausgeführt werden. Er verursacht Parallelisierung des automatischen Umwandlungsprozesses.
 
-Sie können den Parameter **Zahl der Produktionsaufträge im Anlagebündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Parallelisierung des automatischen Umwandlungsprozesses basiert auf den Aufträgen, die zusammen verarbeitet werden müssen. Wenn der Parameter also auf **50** festgelegt wird, z . B. nimmt jeder Thread eines Chargenauftrags 50 Aufträge auf einmal an und verarbeitet diese zusammen. Es wird empfohlen, einen den besten Wert mithilfe einer Versuchsreihe zu bestimmen. Sie können jedoch die folgende Formel verwenden, um einen Ausgangswert zu berechnen:
+Sie können den Parameter **Zahl der Produktionsaufträge im Anlagebündel** im Abschnitt **Leistung** auf der Registerkarte **Allgemein** der Seite **Parameter für Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \>-Parameter für Produktprogrammplanung**) festlegen. Parallelisierung des automatischen Umwandlungsprozesses basiert auf den Aufträgen, die zusammen verarbeitet werden müssen. Wenn der Parameter beispielsweise auf **50** festgelegt wird, nimmt jeder Thread oder Batchauftrag 50 Aufträge auf einmal an und verarbeitet diese zusammen. Es wird empfohlen, einen den besten Wert mithilfe einer Versuchsreihe zu bestimmen. Sie können jedoch die folgende Formel verwenden, um einen Ausgangswert zu berechnen:
 
-Anzahl der Aufträge pro Bündel = Anzahl der Bedarfsartikel ÷ Anzahl der Threads
+(Anzahl der Aufträge pro Bündel) = (Anzahl der Bedarfsartikel ÷ Anzahl der Threads)
 
 > [!NOTE]
 > Durch Festlegen des Parameters auf **Zahl der Produktionsaufträge im Anlagebündel** auf den Wert **0** (Null), wird keine Parallelisierung des automatischen Umwandlungsprozesses auftreten. Der ganze Prozess wird in einem einzelnen Chargenauftrag ausgeführt und hat eine kumulative Ausführungszeit. Daher steigt die Ausführungszeit der Produktprogrammplanung. Aus diesem Grund sollten Sie diesen Parameter auf einen Wert über **0** (Null) festlegen.
@@ -98,7 +98,7 @@ Planungszeiträume geben an, wie weit Berechnungen und andere Voraussetzungen in
 
 ### <a name="actions"></a>Aktionen
 
-Unter den Planungszeiträumen können Sie auch den Parameter **Aktivitätsmeldung** finden. Die Berechnung der Aktivitätsmeldungen bewirkt eine längere Laufzeit der Produktprogrammplanung. Wenn Aktivitätsmeldungen nicht regelmäßig analysiert und angewendet werden (täglich, wöchentlich, usw.), sollten Sie die Berechnung beim Produktprogrammplanungslauf deaktivieren. Um die der Berechnung auszuschalten, legen Sie auf der Seite **Produktprogrammpläne** (**Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammpläne**) die Planungszeitraum **Aktivitätsmeldung** für den Produktprogrammplan, den Sie ausführen, auf **0** (Null) fest. Überprüfen Sie außerdem, dass die Einstellung **Aktivitätsmeldung** für alle Dispositionssteuerungsgruppen deaktiviert ist.
+Unter den Planungszeiträumen können Sie auch den Parameter **Aktivitätsmeldung** finden. Die Berechnung der Aktivitätsmeldungen bewirkt eine längere Laufzeit der Produktprogrammplanung. Wenn Aktivitätsmeldungen nicht regelmäßig analysiert und angewendet werden (täglich, wöchentlich, usw.), sollten Sie die Berechnung beim Produktprogrammplanungslauf deaktivieren. Um die Berechnung auszuschalten, legen Sie auf der Seite **Produktprogrammplanung** (**Produktprogrammplanung \> Einstellungen \> Pläne \> Produktprogrammplan**) den Planungszeitraum **Aktionsnachricht** auf **0** (null) fest. Überprüfen Sie außerdem, dass die Einstellung **Aktivitätsmeldung** für alle Dispositionssteuerungsgruppen deaktiviert ist.
 
 ### <a name="futures"></a>Verfügbarkeit
 
@@ -110,7 +110,7 @@ Bei der Planung von Produktprogrammplanung, planen Sie keinen anderen Batchauftr
 
 ## <a name="review-the-session-log"></a>Sitzungsprotokoll überprüfen
 
-Das System kann mehr Informationen zu den Aufgaben sammeln, die während der Produktprogrammplanung ausgeführt werden. Damit das System diese Informationen sammelt, schalten Sie die Einstellungen **Verarbeitungszeit nachverfolgen** im Dialogfeld **Produktprogrammplanungslauf** ein. Die Informationen, die erfasst werden, helfen Ihnen bei der Suche nach Engpässen bei der Ausführung. Wenn zum Beispiel der Parameter **Anzahl der Aufgaben im Hilfsaufgabenbündel** auf **1** festgelegt wird, können Sie das Element bestimmen, das die längste Laufzeit hat. Sie können auch die für die verschiedenen Laufzeiten für die verschiedenen Threads vergleichen, die den Status **Disposition** besitzen und die Dauer für jede Aufgabe vergleichen.
+Das System kann zusätzliche Informationen zu den Aufgaben sammeln, die während der Produktprogrammplanung ausgeführt werden. Damit das System diese Informationen sammelt, schalten Sie die Einstellungen **Verarbeitungszeit nachverfolgen** im Dialogfeld **Produktprogrammplanungslauf** ein. Die Informationen, die erfasst werden, helfen Ihnen bei der Suche nach Engpässen bei der Ausführung. Wenn zum Beispiel der Parameter **Anzahl der Aufgaben im Hilfsaufgabenbündel** auf **1** festgelegt wird, können Sie das Element bestimmen, das die längste Laufzeit hat. Sie können auch die für die verschiedenen Laufzeiten für die verschiedenen Threads vergleichen, die den Status **Disposition** besitzen und die Dauer für jede Aufgabe vergleichen.
 
 Zur Überprüfung der Produktprogrammplanungläufe Ihres Systems führen Sie einen dieser Schritte aus.
 
@@ -119,7 +119,7 @@ Zur Überprüfung der Produktprogrammplanungläufe Ihres Systems führen Sie ein
 
 Wenn Sie das Sitzungsprotokoll prüfen, beachten Sie die folgenden Punkte:
 
-- **Aktualisieren** sollte nicht lange Dauern (allgemein, sollte es 30 Minuten in Anspruch nehmen.) Es ist allerdings Singlethread.
+- **Aktualisieren** sollte nicht lange Dauern (allgemein sollte es 30 Minuten in Anspruch nehmen.) Es ist allerdings Singlethread.
 - **Plan kopieren** sollte eine lange dauern (es dauert ungefähr eine Minute).
 - **Automatische Umwandlung** dauert normalerweise ungefähr 30 Minuten. Es kann jedoch bis zu mehrere Stunden dauern, abhängig von der Anzahl der Aufträge und der Komplexität der Elemente.
 - **Automatische Umwandlung** sollte weniger Zeit als **Disposition** in Anspruch nehmen.
@@ -129,6 +129,28 @@ Wenn Sie das Sitzungsprotokoll prüfen, beachten Sie die folgenden Punkte:
 ## <a name="filtering-of-items"></a>Das Filtern von Elementen
 
 Filter, die im Dialogfeld **Produktprogrammplanungslauf** ausgeführt werden, beeinflussen die Dauer des Produktprogrammplanungslaufs. Wechseln Sie zu **Produktprogrammplanung \> Produktprogrammplanung \> Ausführen \> Produktprogrammplanung** oder wählen Sie **Ausführen** im Arbeitsbereich **Produktprogrammplanung** aus. Um Elemente von der Ausführung auszuschließen, wird empfohlen, dass Sie nach Lebenszykluszustand des Elements filtern (nicht nach Artikelnummern). Wenn Sie nach Lebenszykluszustand filtern, nimmt der Aktualisierungsvorgang weniger Zeit in Anspruch als bei der Filterung nach Artikelnummern.
+
+## <a name="automatically-filter-by-items-with-direct-demand"></a>Automatisch nach Artikeln mit direktem Bedarf filtern
+
+Um die Laufzeit der Produktprogrammplanung zu verbessern, können Sie nur Artikel mit direktem Bedarf einbeziehen. Dieser Filter kann nur für einen vollständigen Produktprogrammplanungslauf verwendet werden, ohne dass andere Filter im Feld **Einzuschließende Datensätze** angewendet werden. Ein Produktprogrammplanungslauf, der mit Filtern ausgeführt wird, ignoriert die Einstellung **Automatisch nach Artikeln mit direktem Bedarf filtern**.
+
+Das Feld **Automatisch nach Artikeln mit direktem Bedarf filtern** befindet sich auf der Seite **Parameter für Produktprogrammplanung** und kann mit Einstellungen zur Vor- und Nachverarbeitung verwendet werden.
+
+### <a name="pre-processing"></a>Vorverarbeitung
+Der Parameter **Vorverarbeitung: Automatisch nach Artikeln mit direktem Bedarf filtern** stellt sicher, dass die Vorbearbeitungsphase des Produktplans nur Elemente enthält, die mindestens eine der folgenden Bedingungen erfüllt:
+  - Der Artikel hat einen erwarteten Eingang oder eine erwartete Ausgabe, z. B. eine Bestellung, einen Kundenauftrag, ein Angebot, einen Überweisungsauftrag oder einen Fertigungsauftrag. 
+  - Der Artikel verfügt über eine Artikeldeckung mit Sicherheitsbestand (Mindestbestand).
+  - Für den Artikel besteht ein prognostizierter Bedarf nach dem heutigen Tag.
+  - Für den Artikel besteht eine prognostizierte Beschaffung nach dem heutigen Tag.
+  - Das Element enthält alle noch zu erstellenden Durchgangsleitungen aus dem Callcenter-Modul.
+
+> [!NOTE]
+> Bei einem Artikel, der physisch verfügbar ist, wird keine Anforderungstransaktion angezeigt, da für den Artikel keine Nachfrage besteht.
+
+### <a name="post-processing"></a>Nachbearbeitung
+Die Option **Nachbearbeitung: Automatisch nach Artikeln mit direktem Bedarf filtern** ist nur relevant, wenn Sie **Stücklistenversionsverwendung** in Ihrer Deckungsgruppe festlegen. Andernfalls müssen Sie den Parameter nicht aktivieren. 
+
+Bevor der Deckungsschritt beginnt, gibt es einen Vorerfassungsschritt, in dem Elemente mit der aktivierten Deckungseinstellung **Stücklistenversionsverwendung** erneut verarbeitet werden. Dadurch wird sichergestellt, dass Artikel aus der erforderlichen Stücklistenversion geplant werden. Artikel, bei denen während der Vorverarbeitung ein Bedarf besteht, haben keinen Bedarf mehr und sollten daher vom Planungslauf ausgeschlossen werden.
 
 ## <a name="performance-checklist-summary"></a>Zusammenfassung der Leistungscheckliste
 

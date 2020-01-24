@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a542d6987280451910b4ff3bcfb3a109a0e028c6
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: c5fb59a9798e2cddfb75b71235ee7754e54b0e28
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697611"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945768"
 ---
 # <a name="enable-location-based-store-detection"></a>Standortbasierte Shop-Erkennung aktivieren
 
@@ -50,16 +50,16 @@ Um ortsbasierte Shoperkennung im Handel zu aktivieren, gehen Sie folgendermaßen
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Onlineshop – Überblick](online-store-overview.md)
-
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
+[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
-
-[Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
 
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
+
+[Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)

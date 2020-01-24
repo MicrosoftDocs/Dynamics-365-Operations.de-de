@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ef9e65b2027a41ca152afaf20ac2fb9a69cd9b96
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: d9c0f329d21cdda5c36a39a8c602d5925b720f52
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698141"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945742"
 ---
 # <a name="enrich-a-product-page"></a>Erweitern einer Produktseite
 
@@ -72,3 +72,4 @@ Um ein Produktseite anzureichern, führen Sie die folgenden Schritte aus.
 
 [Füllen einer Kategorie-Landingpage](enrich-category-page.md)
 
+[Überprüfen der Zugänglichkeit des Seiteninhalts](verify-accessibility.md)

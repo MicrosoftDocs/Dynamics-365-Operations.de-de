@@ -3,7 +3,7 @@ title: Einzelhandelskanäle definieren und verwalten
 description: Dieses Thema bietet einen Überblick über den Prozess für das Einrichten von physischen Shops, die in Dynamics 365 Retail als Einzelhandelsshops bezeichnet werden. Er umfasst Informationen über die Aufgaben, die Sie durchführen müssen, bevor und nachdem Sie ein Einzelhandelsgeschäft einrichten.
 author: mugunthanm
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: f55099ad283e665965aad0684b3c9d87223d5ed7
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 45d0386d215da15103a417502debb245c91f6309
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2019369"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934607"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Einzelhandelskanäle definieren und verwalten
 
@@ -85,3 +85,6 @@ Nachdem Sie die Details für den Einzelhandelsshop eingeben, schließen Sie dies
 ## <a name="organization-hierarchies"></a>Organisationshierarchien
 
 Retail verwendet Organisationshierarchien, um Einzelhandelskanäle zu strukturieren. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht. Wenn Sie Filialen einrichten, können Sie diese einer Organisationshierarchie hinzufügen. Die Filialen teilen dann Daten, die für Sortimente, Auffüllung und Berichterstellung verwendet werden.
+
+> [!NOTE]
+> Um die Funktionen des Einzelhandelsverkaufs nutzen zu können, muss der Konfigurationsschlüssel für **Mehrere Lieferadressen** aktiviert sein. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund der Einzelhandels-Funktionalität erforderlich, die verschiedene Überprüfungen basierend auf der Lieferadresse durchführt, die auf der Ebene der Auftragspositionen konfiguriert wurde.

@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7a988f533757cc3f8555fcf4fb724a22a5b014f8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 8f73c034563fb1cc6b05091b4c47e2a788d1a8b6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770457"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945535"
 ---
 # <a name="configure-your-domain-name"></a>Konfigurieren Ihres Domänennamens
 
@@ -43,16 +43,16 @@ Wenn Sie neue Domänen mit der E-Commerce-Umgebung nach der E-Commerce-Initialis
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Onlineshop – Überblick](online-store-overview.md)
+[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
 [Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
 
-[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
-
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+
+[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
 [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
-
-[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)

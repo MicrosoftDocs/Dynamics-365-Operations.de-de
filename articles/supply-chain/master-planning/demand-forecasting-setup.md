@@ -3,7 +3,7 @@ title: Einrichten einer Bedarfsplanung
 description: In diesem Thema werden die Einrichtungsaufgaben, die Sie ausführen müssen, um die Bedarfsplanung vorzubereiten, beschrieben.
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 09/16/2017
+ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 048b0e8e57211893cae538fae20e87186399dd38
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f56157be8cc61486801fc4c01bb191432dd9a541
+ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813798"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935490"
 ---
 # <a name="demand-forecasting-setup"></a>Einrichten einer Bedarfsplanung
 
@@ -63,7 +63,7 @@ Sie können jederzeit Planungsdimensionen zur Liste mit den Dimensionen hinzufü
 
 Nicht alle Artikel verhalten sich aus der Perspektive der Bedarfsplanung auf dieselbe Weise. Ähnliche Artikel können in einem Artikelverteilungsschlüssel gruppiert werden, und Parameter wie Buchungsarten und Planungsmethodeneinstellungen können pro Artikelverteilungsschlüssel festgelegt werden. Klicken Sie auf **Artikelverteilungsschlüssel** im linken Bereich der Seite **Bedarfsplanungsparameter**. 
 
-Um die Planung zu generieren, verwendet Supply Chain Management einen Machine Learning-Webdienst. Um die Verbindung mit dem Dienst herzustellen, müssen Sie die folgenden Informationen bereitstellen, wenn Sie sich bei Microsoft Azure Machine Learning Studio anmelden:
+Um die Planung zu generieren, verwendet Supply Chain Management einen Machine Learning-Webdienst. Um die Verbindung mit dem Dienst herzustellen, müssen Sie die folgenden Informationen bereitstellen, wenn Sie sich bei Microsoft Azure Machine Learning Studio (klassisch) anmelden:
 
 -   API-Schlüssel des Webdiensts
 -   URL des Webdienst-Endpunkts
@@ -71,7 +71,7 @@ Um die Planung zu generieren, verwendet Supply Chain Management einen Machine Le
 -   Azure-Speicherkontoschlüssel
 
 > [!NOTE]
-> Azure-Speicherkontenname und -schlüssel sind nur erforderlich, wenn Sie ein benutzerdefiniertes Speicherkonto verwenden. Wenn Sie die lokale Version bereitstellen, müssen Sie ein benutzerdefiniertes Speicherkonto auf Azure haben, sodass der Machine Learning-Dienst auf die historischen Daten zugreifen kann. 
+> Azure-Speicherkontenname und -schlüssel sind nur erforderlich, wenn Sie ein benutzerdefiniertes Speicherkonto verwenden. Wenn Sie die lokale Version bereitstellen, müssen Sie ein benutzerdefiniertes Speicherkonto auf Azure haben, sodass das Machine Learning auf die historischen Daten zugreifen kann. 
 
 Um Bedarfsvorhersagen zu erstellen, können Sie Ihren eigenen Dienst bereitstellen, indem Sie Machine Learning Studio- oder Supply Chain Management-Bedarfsplanungsexperimente verwenden. Anweisungen für das Bereitstellen der Bedarfsplanungsexperimente als Webdienst sind in Supply Chain Management verfügbar. Klicken Sie auf der Seite **Bedarfsplanungsparameter** auf die Registerkarte **Azure Machine Learning**.
 

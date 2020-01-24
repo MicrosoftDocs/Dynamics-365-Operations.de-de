@@ -3,7 +3,7 @@ title: Übersicht über den Zustand des Produktlebenszyklus
 description: Ein Produktlebenszyklusstatus dokumentiert den Lebenszyklusstatus eines freigegebenen Produkts oder Produktvariante.
 author: cvocph
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: c3674442dfec11afc26881f3e5c442ba05a4821b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: b5b0ceb1926de6efda239fdbc69fb36a9d4b28e0
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813545"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934839"
 ---
 # <a name="product-lifecycle-state-overview"></a>Übersicht über den Zustand des Produktlebenszyklus
 
@@ -74,11 +74,7 @@ Um ausführliche Informationen dazu zu erhalten, wie mithilfe eines Produktleben
 
 ## <a name="default-migration-import-and-export"></a>Standardmäßige Migration, Import und Export 
 
-Die Produktlebenszyklusstatus werden durch Datenentitäten nicht unterstützt, und der Lebenszyklusstatus kann nicht auf einen variables Status durch die freigegebenen Produktdatenentitäten festgelegt werden.
-
--  Nach der Migration von vorherigen Versionen, ist der Lebenszyklusstatus aller Produkte und Produktvarianten leer.  
--  Wenn die freigegebenen Produkte durch eine Datenentität importiert werden, wird bei der Erstellung der Standardlebenszyklusstatus angewendet.  
--  Wenn Sie freigegebene Produktvarianten durch eine Datenentität importieren, wird der Produktlebenszyklusstatus des freigegebenen Produktmasters importiert.   
+Die Produktlebenszyklusstatus werden durch Datenentitäten unterstützt, und der Lebenszyklusstatus kann nicht auf einen variables Status durch die freigegebenen Produktdatenentitäten oder der freigegebenen Variantendatenentität festgelegt werden.
 
 ## <a name="find-obsolete-products-and-products-variants"></a>Veraltete Produkte und Produktvarianten suchen 
 

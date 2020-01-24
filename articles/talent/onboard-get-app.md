@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent July 2017 update
-ms.openlocfilehash: 5849de38962967f0614ff7afd40296c0f12ff476
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8739bb1afdbea40c7f1c77064ee6b052516903d1
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812855"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898201"
 ---
-# <a name="get-the-dynamics-365-talent---onboard-app"></a>Holen Sie sich die Dynamics 365 Talent - Onboard-App
+# <a name="get-the-onboard-app"></a>Onboard-App einrichten
 
 [!include [banner](includes/banner.md)]
 
@@ -67,7 +67,7 @@ Beim ersten öffnen von Onboard können Sie **Startet die exemplarischen Vorgehe
 
 Wenn Sie die Exemplarische Vorgehensweise überspringen, können Sie später darauf zugreifen, indem Sie die Schaltfläche **Hilfe** (**?**) auswählen und dann **Erste Schritte** auswählen.
 
-![[Die exemplarische Vorgehensweise von Onboard starten](./media/onboard-start-walkthrough.png)](./media/onboard-start-walkthrough.png)
+![[Die exemplarische Onboard-Vorgehensweise starten](./media/onboard-start-walkthrough.png)](./media/onboard-start-walkthrough.png)
 
 ## <a name="change-the-domain-name"></a>Ändern Sie den Domänennamen
 
@@ -90,5 +90,5 @@ Wenn Sie die Standarddomänennamen akzeptiert haben, als Sie sich bei Onboard an
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
 - [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
-- [Freigabepläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release-Pläne](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

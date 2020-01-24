@@ -1,0 +1,192 @@
+---
+title: Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung
+description: In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Vorschauumgebung konfiguriert wird.
+author: psimolin
+manager: annbe
+ms.date: 12/10/2019
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-commerce
+ms.technology: ''
+audience: Application user
+ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: psimolin
+ms.search.validFrom: 2019-12-10
+ms.dyn365.ops.version: Release 10.0.5
+ms.openlocfilehash: 2c4872cdebc414eaa865af025237bd9e1d14bfd2
+ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "2906115"
+---
+# <a name="configure-optional-features-for-a-commerce-preview-environment"></a>Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung
+
+[!include [banner](includes/preview-banner.md)]
+[!include [banner](includes/banner.md)]
+
+In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Vorschauumgebung konfiguriert wird.
+
+## <a name="prerequisites"></a>Voraussetzungen
+
+Wenn Sie die Transaktions-E-Mail-Funktionen bewerten möchten, müssen die folgenden Voraussetzungen erfüllt sein:
+
+- Ihnen steht ein E-Mail-Server (Simple Mail Transfer Protocol \[SMTP\]-Server) zur Verfügung, der über das Microsoft Azure-Abonnement verwendet werden kann, auf dem Sie die Vorschauumgebung bereitstellen.
+- Sie verfügen über den vollqualifizierten Domänennamen (FQDN)/die vollqualifizierte IP-Adresse, die SMTP-Portnummer und die Authentifizierungsdetails des Servers.
+
+Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer Mehrkanal-Images bewerten möchten, muss Ihnen der Name Ihres CMS-Mandanten (Content Management System) zur Verfügung stehen. Anweisungen zum Auffinden dieses Namens finden Sie weiter unten in diesem Thema. >>> (F: Wo sind die Anweisungen?)
+
+## <a name="configure-the-image-back-end"></a>Konfigurieren Sie das Image-Backend
+
+### <a name="find-your-media-base-url"></a>Auffinden Ihrer medienbasierten URL
+
+> [!NOTE]
+> Bevor Sie diesen Vorgang abschließen können, müssen Sie die Schritte in [Richten Sie Ihre Site in Commerce ein](cpe-post-provisioning.md#set-up-your-site-in-commerce) abschließen.
+
+1. Melden Sie sich beim Commerce-Site-Management-Tool mit der URL an, die Sie bei der Initialisierung von E-Commerce während der Bereitstellung notiert haben (siehe [E-Commerce initialisieren](provisioning-guide.md#initialize-e-commerce)).
+1. Öffnen Sie die Site **Fabrikam**.
+1. Wählen Sie im linken Menü **Assets** aus.
+1. Wählen Sie ein einzelnes Image-Medienobjekt aus.
+1. Suchen Sie im Eigenschafteninspektor rechts die Eigenschaft **Öffentliche URL**. Der Wert ist eine URL. Hier ist ein Beispiel:
+
+    `https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/MA1nQC`.
+
+1. Ersetzen Sie den letzten Bezeichner in der URL (**MA1nQC** im vorherigen Beispiel) durch die Zeichenfolge **search?fileName=**. So sieht die Beispiel-URL nach dieser Änderung aus:
+
+    `https://images-us-sb.cms.commerce.dynamics.com/cms/api/fabrikam/imageFileData/search?fileName=`
+
+    Diese URL ist Ihre Mediendatenbank-URL. Machen Sie sich eine Notiz davon.
+
+### <a name="update-the-media-base-url"></a>Aktualisieren der medienbasierten URL
+
+1. Melden Sie sich bei Dynamics 365 Retail an.
+1. Navigieren Sie über das Menü links zu **Modulee \> Retail \> Kanaleinstellungen \> Kanalprofile**.
+1. Wählen Sie **Bearbeiten** aus.
+1. Ersetzen Sie unter **Profileigenschaften** den Wert für die Eigenschaft **Media Server-Basis-URL** durch die medienbasierte URL, die Sie zuvor erstellt haben.
+1. Wählen Sie in der Liste links unter dem Kanal **Standard** den anderen Kanal aus.
+1. Wählen Sie unter **Profileigenschaften** die Option **Hinzufügen** aus.
+1. Wählen Sie für die hinzugefügte Eigenschaft **Media Server-Basis-URL** als Eigenschaftsschlüssel aus. Geben Sie als Eigenschaftswert die zuvor erstellte Media Base-URL ein.
+1. Wählen Sie **Speichern**.
+
+## <a name="configure-the-email-server"></a>Konfigurieren des E-Mail-Servers
+
+> [!NOTE]
+> Der SMTP-Server oder E-Mail-Dienst, den Sie hier eingeben, muss über das Azure-Abonnement zugänglich sein muss, das Sie für die Umgebung verwenden.
+
+1. Melden Sie sich bei Retail an.
+1. Navigieren Sie über das Menü links zu **Module \> Systemverwaltung \> Einstellungen \> E-Mail \> E-Mail-Parameter**.
+1. Geben Sie auf der Registerkarte **SMTP-Einstellungen** im Feld **Name des SMTP-Servers** den vollständig qualifizierten Namen (FQDN) oder die IP-Adresse Ihres SMTP-Servers oder E-Mail-Dienstes an.
+1. Geben Sie im Feld **SMTP-Portnummer** die Portnummer ein. (Wenn Sie Secure Sockets Layer \[SSL\] nicht verwenden, lautet die Standardportnummer **25**.)
+1. Wenn eine Authentifizierung erforderlich ist, geben Sie Werte in das Feld **Benutzername** und **Kennwort** ein.
+1. Wählen Sie **Speichern**.
+1. Wählen Sie **Aktualisieren** aus.
+1. Wählen Sie auf der Registerkarte **Test-E-mail** im Feld **E-Mail-Anbieter** die Option **SMTP** aus.
+1. Geben Sie im Feld **Senden an** die E-Mail-Adresse ein, an die die Test-E-Mail gesendet werden soll.
+1. Wählen Sie **Test-E-Mail senden** aus.
+
+## <a name="configure-email-templates"></a>Konfigurieren der E-Mail-Vorlagen
+
+Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen Sie die E-Mail-Vorlage mit einer gültigen Absender-E-Mail-Adresse aktualisieren.
+
+1. Melden Sie sich bei Retail an.
+1. Navigieren Sie über das Menü links zu **Module \> Organizationsverwaltung \> Einstellungen \> Organisations-E-Mail-Vorlagen**.
+1. Wählen Sie **Liste anzeigen** aus.
+1. Führen Sie für jede Vorlage in der Liste die folgenden Schritte aus:
+
+    1. Geben Sie im Feld **E-Mail des Absenders** die E-Mail-Adresse des Absenders ein.
+    1. Optional: Geben Sie im Feld **Absendername** den Namen ein, der als Absendername verwendet werden soll.
+
+1. Wählen Sie **Speichern**.
+
+## <a name="customize-email-templates"></a>E-Mail-Vorlagen anpassen
+
+Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschiedliche Bilder verwenden. Oder Sie möchten die Links in den Vorlagen aktualisieren, damit sie in Ihre Vorschauumgebung gelangen. In dieser Prozedur wird erläutert, wie Sie die Standardvorlagen herunterladen, anpassen und die Vorlagen im System aktualisieren.
+
+1. Laden Sie über einen Webbrowser [die Datei Microsoft Dynamics 365 Commerce-Vorschau-Standard-E-Mail-Vorlagen.zip](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
+
+    - Auftragsbestätigungsvorlage
+    - Geschenkkartenvorlage ausstellen
+    - Neue Auftragsvorlage
+    - Verpackungsvorlage
+    - Entnahmevorlage
+
+1. Passen Sie die Vorlagen mit einem Text- oder HTML-Editor an. Schauen Sie sich die Lister der [unterstützten Token](#supported-tokens-in-the-email-template) später in diesem Thema an.
+1. Melden Sie sich bei Retail an.
+1. Navigieren Sie über das Menü links zu **Module \> Organizationsverwaltung \> Einstellungen \> Organisations-E-Mail-Vorlagen**.
+1. Erweitern Sie die Liste auf der linken Seite, um alle Vorlagen anzuzeigen.
+1. Gehen Sie für jede Vorlage, die Sie anpassen möchten, folgendermaßen vor:
+
+    1. Wählen Sie die Vorlage in der Liste aus.
+    1. Wählen Sie unter **Inhalt der E-Mail-Nachricht** die entsprechende Sprachversion in der Liste aus. (Die Standardsprache lautet **en-us**.)
+    1. Wählen Sie uner **Inhalt der E-Mail-Nachricht** die Option **Bearbeiten** aus. Der Bereich **E-Mail-Vorlage hochladen** wird angezeigt.
+    1. Wählen Sie **Durchsuchen** aus, und finden Sie die HTML-Datei mit dem angepassten Inhalt.
+    1. Wählen Sie **Hochladen** aus. Die Vorlage wird in das System hochgeladen und eine Vorschau wird angezeigt.
+    1. Wählen Sie **OK**.
+    1. Optional: Passen Sie die Eigenschaft **Betreff** der Vorlage an.
+    1. Wählen Sie **Speichern**.
+
+### <a name="supported-tokens-in-the-email-template"></a>Unterstützte Token in der E-Mail-Vorlage
+
+Diese Token werden beim Rendern per E-Mail durch die tatsächlichen Werte ersetzt, die für den Debitor und die Debitorenbestellung gelten.
+
+#### <a name="sales-order"></a>Auftrag
+
+Die folgenden Token gelten für den gesamten Auftrag.
+
+| Name des Token | Token  |
+|-------------------|-------|
+| Auftragsnummer      | %salesid% |
+| Debitorenname   | %customername% |
+| Lieferadresse  | %deliveryaddress% |
+| Rechnungsadresse   | %customeraddress% |
+| Spätestens        | %shipdate% |
+| Liefermodus     | %modeofdelivery% |
+| Skonto          | %discount% |
+| Mehrwertsteuer         | %tax% |
+| Bestellung gesamt       | %total% |
+
+#### <a name="sales-line"></a>Verkaufsposition
+
+Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
+
+> [!NOTE]
+> Setzen Sie den Token **Produktliste – Start** an den Anfang des HTML-Blocks, der für jedes Produkt wiederholt wird, und den Token **Produktliste – Ende** an das Ende des Blocks.
+
+| Name des Token      | Token  |
+|------------------------|-------|
+| Produktliste - Start   | \<!--%tablebegin.salesline% --\> |
+| Produktliste - Ende     | \<!--%tableend.salesline%--\> |
+| Produktname           | %lineproductname% |
+| Beschreibung            | %lineproductdescription% |
+| Leistung               | %linequantity% |
+| Preiseinheit der Position        | %lineprice% (prüfen) |
+| Positionsartikel gesamt        | %linenetamount% |
+| Positionsrabatt          | %linediscount% |
+| Versanddatum              | %lineshipdate% |
+| Beschaffungsmethode     | %linedeliverymode% |
+| Lieferadresse       | %linedeliveryaddress% |
+| Verkaufseinheit der Position | %lineunit% |
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+
+[Bereitstellen einer Commerce-Vorschauumgebung](provisioning-guide.md)
+
+[Konfigurieren einer Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+
+[Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
+
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+
+[Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
+
+[Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Hilferessourcen für Dynamics 365 Retail](../retail/index.md)

@@ -3,7 +3,7 @@ title: Einheitliche Produkterfahrung
 description: In diesem Thema wird die Integration von Produktdaten zwischen Finance and Operations-Apps und Common Data Service beschrieben.
 author: t-benebo
 manager: AnnBe
-ms.date: 09/3/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: bcc2c3d2530153a225a94fa0fb3cc990abbf65b4
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7df9097feeb9566705f50f8a62809aa79dc10cd7
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769728"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914770"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produkterfahrung
 
@@ -52,7 +52,7 @@ Produktinformationen enthält alle Informationen, die mit dem Produkt und seiner
 
 Finance and Operations | Sonstige Dynamics 365-Apps | Beschreibung
 -----------------------|--------------------------------|---
-Freigegebene Produkte V2 | msdyn\_sharedproductdetails | Die Entität **msdyn\_sharedproductdetails** enthält die Felder aus Finance and Operations-Apps, die das Produkt definieren, und die die Finanz- und Verwaltungsinformationen des Produkts enthalten. Die Zuordnungen werden in der folgenden Tabelle veranschaulicht.
+Freigegebene Produkte V2 | msdyn\_sharedproductdetails | Die Entität **msdyn\_sharedproductdetails** enthält die Felder aus Finance and Operations-Apps, die das Produkt definieren, und die die Finanz- und Verwaltungsinformationen des Produkts enthalten. 
 Von Common Data Service freigegebene eindeutig identifizierbare Produkte | Produkt | Die Entität **Produkt** enthält die Felder, die das Produkt definieren. Sie enthält Einzelprodukte (Produkte mit Untertypprodukt) und die Produktvarianten. Die Zuordnungen werden in der folgenden Tabelle veranschaulicht.
 Durch Produktnummer identifizierter Strichcode | msdyn\_productbarcodes | Produktstrichcodes werden verwendet, um Produkte eindeutig zu kennzeichnen.
 Standardauftragseinstellungen | msdyn\_productdefaultordersettings
@@ -74,7 +74,7 @@ Einheitenumrechnungen | msdyn_ unitofmeasureconversions
 Produktspezifische Maßeinheit-Umrechnung | msdyn_productspecificunitofmeasureconversion
 Produktkategorien | msdyn_productcategories | Jede der Produktkategorien und -informationen über die Struktur und Eigenschaften ist in der Produktkategorieentität enthalten. 
 Produktkategoriehierarchien | msdyn_productcategoryhierarhies | Produkthierarchien werden zum Kategorisieren oder Gruppieren von Produkten verwendet. Die Kategoriehierarchien sind in Common Data Service über die Entität „Produktkategoriehierarchie“ verfügbar. 
-Produktkategoriehierarchie-Rollen | msdyn_productcategoryhierarchies | Produkthierarchien können für verschiedene Rollen in der D365 Finance and Operations verwendet werden. Um festzulegen, welche Kategorie in jeder Rolle verwendet wird, wird die Entität „Produktkategorierolle“ mit den folgenden Zuordnungen herangezogen. 
+Produktkategoriehierarchie-Rollen | msdyn_productcategoryhierarchies | Produkthierarchien können für verschiedene Rollen in der D365 Finance and Operations verwendet werden. Um festzulegen, welche Kategorie in jeder Rolle verwendet wird, wird die Entität „Produktkategorierolle“ verwendet. 
 Produktkategoriezuweisungen | msdyn_productcategoryassignments | Zum Zuweisen eines Produkts zu einer Kategorie kann die Entität „Produktkategoriezuweisungen“ verwendet werden.
 
 ## <a name="integration-of-products"></a>Integration von Produkten
@@ -139,7 +139,7 @@ Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Arti
 
 [!include [product sizes](dual-write/InventProductSpecificOrderSettingsV2Entity-msdyn-productspecificdefaultordersetting.md)]
 
-## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Unit of measure and unit of measure conversions
+## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Maßeinheit und Maßeinheitsumrechnungen
 
 Die Maßeinheiten und die jeweiligen Umrechungen sind in Common Data Service entsprechend des Datenmodells im Diagramm verfügbar.
 

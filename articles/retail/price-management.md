@@ -3,7 +3,7 @@ title: Einzelhandelspreisverwaltung
 description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Dynamics 365 Retail behandelt.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 081fadf0c120eba50af9e6c396fb3e492051bb3c
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: d8c6f8d7d368be8ffa192f8dee6b46a753b04cad
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2025217"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934770"
 ---
 # <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
@@ -221,11 +221,11 @@ Eine einzelne Modul-Preiskalkulation wird verwendet, um Einzelhandelspreise übe
 
 Retailpreise wurde so entworfen, dass mit Retailentitäten anstelle der Nicht-Retailentitäten gearbeitet werden kann. Speziell wurde diese so entworfen, dass Preise nach Filiale, nicht nach Lagerort festgelegt werden.
 
-Das Einzelhandelsmodul unterstützt nicht die folgenden Preiskalkulationsfunktionen:
+Das Einzelhandelsmodul **unterstützt nicht** die folgenden Preiskalkulationsfunktionen:
 
-- Preisfestlegung mithilfe der Standort- und Lagerortlagerdimensionen
-- Auf Attributen basierte Preiskalkulationskennung
-- Kreditorenrabatt-Pass-Through
+- Das Festlegen von Preisen nach Standort oder Standort- und Lagerspeicherdimensionen wird nicht unterstützt. Wenn Sie in den Handelsvereinbarungen nur die Site-Dimension angeben, ignoriert der Einzelhandelspreis die Site und wendet die Handelsvereinbarung auf alle Sites an. Wenn Sie sowohl Site als auch Warehouse angeben, ist das Verhalten undefiniert/nicht getestet, da erwartet wird, dass Einzelhändler die Store-Preisgruppen verwenden, um die Preise für jedes Store/Warehouse zu steuern.
+- Attributbasierte Preisgestaltung wird nicht unterstützt.
+- Lieferantenrabatt-Pass-Through wird nicht unterstützt.
 
 Das Einzelhandelsmodul unterstützt zudem **nur** die folgenden Preiskalkulationsfunktionen:
 

@@ -3,7 +3,7 @@ title: Erweiterte Filter- und Abfragesyntax
 description: Erweiterte Filter- und Abfragesyntax - In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den Operator "entspricht" im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
 author: jasongre
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9e57cac740a26c6c5b451c92d856e533c6db33e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
+ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180828"
+ms.lasthandoff: 01/02/2020
+ms.locfileid: "2931287"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Erweiterter Filter- und Abfragesyntax
 
@@ -114,6 +114,12 @@ ms.locfileid: "2180828"
 <td>Vergleicht die Werte, die durch Kommas getrennt sind.</td>
 <td>Geben Sie alle Kriterien durch Kommas getrennt an.</td>
 <td><strong>A, D, F, G</strong> findet genau &quot;A&quot;, &quot;D&quot;, &quot;F&quot; und &quot;G&quot;. <strong>10, 20, 30, 100</strong> findet genau &quot;10, 20, 30, 100&quot;.</td>
+</tr>
+<tr>
+<td>"" (zwei doppelte Anführungszeichen)</td>
+<td>Übereinstimmung mit einem leeren Wert</td>
+<td>Geben Sie zwei aufeinanderfolgende doppelte Anführungszeichen ein, um in diesem Feld nach leeren Werten zu filtern.</td>
+<td>Zwei aufeinanderfolgende doppelte Anführungszeichen (<strong>""</strong>) finden Zeilen ohne Wert für die aktuelle Spalte.</td>
 </tr>
 <tr>
 <td>(<span class="code">SQL-Anweisung</span>) (SQL-Anweisung in Klammern)</td>

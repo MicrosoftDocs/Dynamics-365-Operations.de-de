@@ -3,7 +3,7 @@ title: Kontoverwaltungsseiten und Module
 description: In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3986505a7e0e8d33d5b8ff2c06f493335731a8d9
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
+ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785378"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "2885808"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontoverwaltungsseiten und Module
 
@@ -58,7 +58,7 @@ Die Bestelldetailseite stellt Detailinformationen zu jedem Auftrag bereit und wi
 
 ### <a name="user-profile-page"></a>Benutzerprofilseite
 
-Die Benutzerprofilseite zeigt die Benutzerkontodetails, beispielsweise den Benutzername und die E-Mail-Adresse an. Es verwendet das Benutzerprofilmodul. Obwohl die E-Mail-Adresse nicht entfernt werden kann, kann sie bearbeitet werden.
+Die Benutzerprofilseite zeigt die Benutzerkontodetails, beispielsweise den Benutzernamen und die E-Mail-Adresse an. Es verwendet das Benutzerprofilmodul. Obwohl die E-Mail-Adresse nicht entfernt werden kann, kann sie bearbeitet werden. Auf der Benutzerprofilseite werden auch Benutzereinstellungen angezeigt, mit denen ein Benutzer bestimmte Funktionen wie die Personalisierung von Empfehlungslisten aktivieren oder deaktivieren kann. 
 
 ### <a name="user-address-page"></a>Adressenseite des Benutzers
 

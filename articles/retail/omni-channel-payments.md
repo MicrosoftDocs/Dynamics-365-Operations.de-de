@@ -3,7 +3,7 @@ title: Übersicht Omni-Channel-Zahlungen
 description: Dieses Thema bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Retail.
 author: rubendel
 manager: AnnBe
-ms.date: 05/12/2019
+ms.date: 11/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: b16b0cedaa2b908d2707eb7076f82f3513d00b62
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: e20662eb9b8530edf2ebe6c1e7ce07ad18aba286
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2017573"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2854011"
 ---
 # <a name="omni-channel-payments-overview"></a>Übersicht Omni-Channel-Zahlungen
 
@@ -58,7 +58,7 @@ Die Omnikanal-Zahlungsfunktionen, die in diesem Thema beschrieben sind, wurden i
 
 #### <a name="card-present-and-card-not-present-connectors"></a>„Karte vorhanden“ und „Karte nicht vorhanden“ Verbindungen
 
-Das Zahlungen-SDK basiert auf zwei Sätzen von Anwendungsprogrammierschnittstellen (APIs) für Zahlungen. Das erste Set von APIs nennt man **iPaymentProcessor**. Sie wird verwendet, um „Karte nicht vorhandene“ Zahlungskonnektoren zu implementieren, die in Callcentern und der Microsoft Dynamics e-Commerce-Plattform verwendet werden können. Weitere Informationen zur**iPaymentProcessor** Schnittstelle finden Sie im [Implementieren Sie einen Zahlungskonnektor und ein Zahlungsgerät](https://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx) Whitepaper, das Zahlungen umfasst. 
+Das Zahlungen-SDK basiert auf zwei Sätzen von Anwendungsprogrammierschnittstellen (APIs) für Zahlungen. Das erste Set von APIs nennt man **iPaymentProcessor**. Sie wird verwendet, um „Karte nicht vorhandene“ Zahlungskonnektoren zu implementieren, die in Callcentern und der Microsoft Dynamics e-Commerce-Plattform verwendet werden können. Weitere Informationen zur**iPaymentProcessor** Schnittstelle finden Sie im [Implementieren Sie einen Zahlungskonnektor und ein Zahlungsgerät](https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device_update.pdf) Whitepaper, das Zahlungen umfasst. 
 
 Das zweite Set von APIs nennt man **iNamedRequestHandler**. Er unterstützt die Implementierung von „Karte vorhandenen“ Zahlungsintegrationen, die als Zahlungsterminal verwendet werden. Weitere Informationen zur **iNamedRequestHandler**-Schnittstelle finden Sie unter [Erstellen Sie eine Zahlungsintegration für ein Zahlungsterminal](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension). 
 

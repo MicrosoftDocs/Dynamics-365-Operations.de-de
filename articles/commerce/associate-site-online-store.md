@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e0fad51fcb092c95103356f17618a647dd166b95
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 62d3c168967bd680b3ded56e627730324f2a5ec6
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697362"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945581"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Zuordnen einer E-Commerce-Site zu einem Online-Kanal
 
@@ -40,16 +40,16 @@ Nachdem Ihre Site erstellt wurde, können Sie prüfen, dass sie Ihrem Onlineshop
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Onlineshop – Überblick](online-store-overview.md)
-
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+
+[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
 [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
-
-[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)

@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-06-19
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 24369a878e95076783d670894236d56dca18e765
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 291f7aefac61c26dfab81cfff28c1c6580d46de5
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812878"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897119"
 ---
-# <a name="edit-onboarding-guides-and-templates-in-dynamics-365-talent---onboard"></a>Bearbeiten von Onboarding-Anleitungen und Vorlagen in Dynamics 365 Talent - Onboard
+# <a name="edit-onboarding-guides-and-templates"></a>Bearbeiten von Onboarding Anleitungen und Vorlagen
 
 [!include [banner](includes/banner.md)]
 
@@ -114,11 +114,11 @@ Um Ihre Änderungen zu pushen:
 1. Auf der Registerkarte **Aktivitäten** ziehen Sie Artikel von Rechts in den Bearbeitungsbereich.
 2. Um Ihre Anleitung in Abschnitte zu organisieren, ziehen Sie das Element **Neuer Abschnitt** in den zu bearbeitenden Bereich und geben einen Namen und eine optionale Beschreibung für den Bereich ein.
 
-    ![[Neuen Abschnitt zu einer Onboarding Anleitung oder zu einer Vorlage hinzufügen](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
+    ![[Hinzufügen eines neuen Abschnitts zu einem Onboarding-Leitfaden oder einer Onboarding-Vorlage](./media/onboard-edit-add-section.png)](./media/onboard-edit-add-section.png)
 
 3. Um die Aktivitäten hinzuzufügen, um die Einstellung abzuschließen, ziehen Sie das Element **Neue Aktivität** in den zu bearbeitenden Bereich und geben Sie einen Namen und eine Beschreibung für die Aktivität ein.
 
-    ![[ Neue Aktivität zu einer Onboarding Anleitung oder zu einer Vorlage hinzufügen](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
+    ![[Hinzufügen einer neuen Aktivität zu einem Onboarding-Leitfaden oder einer Onboarding-Vorlage](./media/onboard-edit-add-activity.png)](./media/onboard-edit-add-activity.png)
 
 4. Fügen Sie umfangreichen Inhalt Ihrer Onboarding Anleitung hinzu:
 
@@ -129,7 +129,7 @@ Um Ihre Änderungen zu pushen:
     - Um ein Microsoft Forms-Formular hinzuzufügen, ziehen Sie den Artikel in den zu bearbeitenden Bereich **Microsoft Forms**, geben Sie einen Namen und eine Beschreibung für die Aktivität, die URL für das Microsoft Forms-Formular ein, und geben Sie die Größe des Bildschirmbereichs an.
     - Um einen iFrame hinzuzufügen, der Internetinhalt enthält, ziehen Sie das Element **Web Inhalt (iFrame)** in den zu bearbeitenden Bereich, geben einen Namen und eine Beschreibung ein, geben die URL für den Internetinhalt ein und definieren die Größe des Bildschirmbereichs.
 
-    ![[Wichtigen Inhalt einer Onboarding Anleitung oder einer Vorlage hinzufügen](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
+    ![[Hinzufügen eines umfangreichen Inhalts zu einem Onboarding-Leitfaden oder einer Onboarding-Vorlage](./media/onboard-edit-add-rich-content.png)](./media/onboard-edit-add-rich-content.png)
 
 2. Optional: Im Bereich auf der rechten Seite weisen Sie jeder Aktivität eine bestimmte Person oder einer Rolle die Aktivität zu, fügen Sie ein Fälligkeitsdatum und eine Kontaktperson ein, und weisen Sie eine Kategoriefarbe zu. Wenn Sie eine Person oder einer Rolle einer Aktivität zuweisen, wird eine Aufgabe für jede Person erstellt. Diese Aufgabe wird im Onboard Menü unter **Aufgaben** angezeigt.
 
@@ -148,7 +148,7 @@ Sie können Kontaktpersonen hinzufügen, die Ihre neuen Mitarbeiter von Beginn w
 1. Auf der Registerkarte **Kontakte** wählen Sie **Neuen Kontakt** aus.
 2. Im Dialogfeld **Fügen Sie Teammitglied hinzu** geben Sie den Namen oder die E-Mail-Adresse der Kontaktperson ein, eine kurze Beschreibung, die erläutert, wie die Kontaktperson den neuen Mitarbeiter unterstützen kann und wählen Sie dann **Hinzufügen** aus. 
 
-    ![[Kontakte der Onboarding Anleitung oder einer Vorlage hinzufügen](./media/onboard-edit-add-rich-contact.png)](./media/onboard-edit-add-contact.png)
+    ![[Hinzufügen eines Kontakts zu einem Onboarding-Leitfaden oder einer Onboarding-Vorlage](./media/onboard-edit-add-contact.png)](./media/onboard-edit-add-contact.png)
 
     Alternativ können Sie einen oder mehrere Kontakte unter **Vorschlägen** auswählen.
 
@@ -169,7 +169,7 @@ Sie können nützliche Dateien, Zuordnungen und Links im Abschnitt **Ressourcen*
     - Um eine Verknüpfung hinzuzufügen, wählen Sie die Registerkarte **Verknüpfung** aus, geben Sie einen Namen und die Adresse für die Verknüpfung ein, und wählen Sie dann **Hinzufügen** aus.
     - Um eine Zuordnung hinzuzufügen, wählen Sie die Registerkarte **Zuordnen** aus, geben Sie einen Namen und die Adresse für die Zuordnung ein, und wählen Sie dann **Hinzufügen** aus. Onboard eine Zuordnung der Adresse, die Sie angeben.
 
-    ![[Neue Ressource einer Onboarding Anleitung oder einer Vorlage hinzufügen](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
+    ![[Hinzufügen einer Ressource zu einem Onboarding-Leitfaden oder einer Onboarding-Vorlage](./media/onboard-edit-add-resource.png)](./media/onboard-edit-add-resource.png)
 
 3. Wählen Sie **Speichern** aus, um die Arbeit zu speichern.
 
