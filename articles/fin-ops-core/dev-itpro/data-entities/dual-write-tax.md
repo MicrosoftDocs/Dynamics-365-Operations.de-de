@@ -19,33 +19,33 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: b6be53e9a2065373ca37c2791568a8161823803f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 86e74086a5a74c7af5f2572d1a653a1658d729c0
+ms.sourcegitcommit: d0322d1ed6c798301058e44dae76227a0e1f49ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772409"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853858"
 ---
-## <a name="integrated-tax"></a><span data-ttu-id="8b6f9-103">Integrierte Steuer</span><span class="sxs-lookup"><span data-stu-id="8b6f9-103">Integrated tax</span></span>
+# <a name="integrated-tax"></a><span data-ttu-id="3f168-103">Integrierte Steuer</span><span class="sxs-lookup"><span data-stu-id="3f168-103">Integrated tax</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="8b6f9-104">Steuereinstellungsdaten definieren die Einstellung sowohl für indirekte Steuern (MwSt., GST, Mehrwertsteuer) und Quellensteuer.</span><span class="sxs-lookup"><span data-stu-id="8b6f9-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="8b6f9-105">Es werden die Steuerberechnungsregel, der Steuersatz, die Steuerbuchhaltung, der Steuerausgleich und weitere Konzepte beschrieben.</span><span class="sxs-lookup"><span data-stu-id="8b6f9-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
+<span data-ttu-id="3f168-104">Steuereinstellungsdaten definieren die Einstellung sowohl für indirekte Steuern (MwSt., GST, Mehrwertsteuer) und Quellensteuer.</span><span class="sxs-lookup"><span data-stu-id="3f168-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="3f168-105">Es werden die Steuerberechnungsregel, der Steuersatz, die Steuerbuchhaltung, der Steuerausgleich und weitere Konzepte beschrieben.</span><span class="sxs-lookup"><span data-stu-id="3f168-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
 
-## <a name="templates"></a><span data-ttu-id="8b6f9-106">Vorlagen</span><span class="sxs-lookup"><span data-stu-id="8b6f9-106">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="3f168-106">Vorlagen</span><span class="sxs-lookup"><span data-stu-id="3f168-106">Templates</span></span>
 
-<span data-ttu-id="8b6f9-107">Steuerdaten enthalten eine Sammlung von Entitätszuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.</span><span class="sxs-lookup"><span data-stu-id="8b6f9-107">Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.</span></span>
+<span data-ttu-id="3f168-107">Steuerdaten enthalten eine Sammlung von Entitätszuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.</span><span class="sxs-lookup"><span data-stu-id="3f168-107">Tax data includes a collection of entity maps that work together during data interaction, as shown in the following table.</span></span>
 
-<span data-ttu-id="8b6f9-108">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="8b6f9-108">Finance and Operations</span></span>   | <span data-ttu-id="8b6f9-109">Customer Engagement-Anwendung</span><span class="sxs-lookup"><span data-stu-id="8b6f9-109">Customer Engagement application</span></span>
+<span data-ttu-id="3f168-108">Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="3f168-108">Finance and Operations</span></span>   | <span data-ttu-id="3f168-109">Sonstige Dynamics 365-Apps</span><span class="sxs-lookup"><span data-stu-id="3f168-109">Other Dynamics 365 apps</span></span>
 -------------------------|---------------------------------
-<span data-ttu-id="8b6f9-110">Steuercodes</span><span class="sxs-lookup"><span data-stu-id="8b6f9-110">Tax codes</span></span>                  | <span data-ttu-id="8b6f9-111">msdyn\_taxcodes.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-111">msdyn\_taxcodes.md</span></span>
-<span data-ttu-id="8b6f9-112">Steuergruppen</span><span class="sxs-lookup"><span data-stu-id="8b6f9-112">Tax groups</span></span>               | <span data-ttu-id="8b6f9-113">msdyn\_taxgroups.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-113">msdyn\_taxgroups.md</span></span>
-<span data-ttu-id="8b6f9-114">Steuerpostengruppen</span><span class="sxs-lookup"><span data-stu-id="8b6f9-114">Tax item groups</span></span>          | <span data-ttu-id="8b6f9-115">msdyn\_taxitemgroups.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-115">msdyn\_taxitemgroups.md</span></span>
-<span data-ttu-id="8b6f9-116">Steuerbefreiungen</span><span class="sxs-lookup"><span data-stu-id="8b6f9-116">Tax Exemptions</span></span>           | <span data-ttu-id="8b6f9-117">msdyn\_taxexemptcodes.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-117">msdyn\_taxexemptcodes.md</span></span>
-<span data-ttu-id="8b6f9-118">Steuerbehörden</span><span class="sxs-lookup"><span data-stu-id="8b6f9-118">Tax Authorities</span></span>          | <span data-ttu-id="8b6f9-119">msdyn\_taxauthorities.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-119">msdyn\_taxauthorities.md</span></span>
-<span data-ttu-id="8b6f9-120">Quellensteuercodes</span><span class="sxs-lookup"><span data-stu-id="8b6f9-120">Withholding tax codes</span></span>      | <span data-ttu-id="8b6f9-121">msdyn\_withholdingtaxcodes.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-121">msdyn\_withholdingtaxcodes.md</span></span>
-<span data-ttu-id="8b6f9-122">Quellensteuergruppen</span><span class="sxs-lookup"><span data-stu-id="8b6f9-122">Withholding tax groups</span></span>   | <span data-ttu-id="8b6f9-123">msdyn\_withholdingtaxgroups.md</span><span class="sxs-lookup"><span data-stu-id="8b6f9-123">msdyn\_withholdingtaxgroups.md</span></span>
-<span data-ttu-id="8b6f9-124">Steuersachkontengruppe</span><span class="sxs-lookup"><span data-stu-id="8b6f9-124">Tax Ledger Account Group</span></span> | <span data-ttu-id="8b6f9-125">msdyn\_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="8b6f9-125">msdyn\_taxpostinggroups</span></span>  
+<span data-ttu-id="3f168-110">Steuercodes</span><span class="sxs-lookup"><span data-stu-id="3f168-110">Tax codes</span></span>                  | <span data-ttu-id="3f168-111">msdyn\_taxcodes.md</span><span class="sxs-lookup"><span data-stu-id="3f168-111">msdyn\_taxcodes.md</span></span>
+<span data-ttu-id="3f168-112">Steuergruppen</span><span class="sxs-lookup"><span data-stu-id="3f168-112">Tax groups</span></span>               | <span data-ttu-id="3f168-113">msdyn\_taxgroups.md</span><span class="sxs-lookup"><span data-stu-id="3f168-113">msdyn\_taxgroups.md</span></span>
+<span data-ttu-id="3f168-114">Steuerpostengruppen</span><span class="sxs-lookup"><span data-stu-id="3f168-114">Tax item groups</span></span>          | <span data-ttu-id="3f168-115">msdyn\_taxitemgroups.md</span><span class="sxs-lookup"><span data-stu-id="3f168-115">msdyn\_taxitemgroups.md</span></span>
+<span data-ttu-id="3f168-116">Steuerbefreiungen</span><span class="sxs-lookup"><span data-stu-id="3f168-116">Tax Exemptions</span></span>           | <span data-ttu-id="3f168-117">msdyn\_taxexemptcodes.md</span><span class="sxs-lookup"><span data-stu-id="3f168-117">msdyn\_taxexemptcodes.md</span></span>
+<span data-ttu-id="3f168-118">Steuerbehörden</span><span class="sxs-lookup"><span data-stu-id="3f168-118">Tax Authorities</span></span>          | <span data-ttu-id="3f168-119">msdyn\_taxauthorities.md</span><span class="sxs-lookup"><span data-stu-id="3f168-119">msdyn\_taxauthorities.md</span></span>
+<span data-ttu-id="3f168-120">Quellensteuercodes</span><span class="sxs-lookup"><span data-stu-id="3f168-120">Withholding tax codes</span></span>      | <span data-ttu-id="3f168-121">msdyn\_withholdingtaxcodes.md</span><span class="sxs-lookup"><span data-stu-id="3f168-121">msdyn\_withholdingtaxcodes.md</span></span>
+<span data-ttu-id="3f168-122">Quellensteuergruppen</span><span class="sxs-lookup"><span data-stu-id="3f168-122">Withholding tax groups</span></span>   | <span data-ttu-id="3f168-123">msdyn\_withholdingtaxgroups.md</span><span class="sxs-lookup"><span data-stu-id="3f168-123">msdyn\_withholdingtaxgroups.md</span></span>
+<span data-ttu-id="3f168-124">Steuersachkontengruppe</span><span class="sxs-lookup"><span data-stu-id="3f168-124">Tax Ledger Account Group</span></span> | <span data-ttu-id="3f168-125">msdyn\_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="3f168-125">msdyn\_taxpostinggroups</span></span>  
 
 [!include [banner](../includes/dual-write-symbols.md)]
 

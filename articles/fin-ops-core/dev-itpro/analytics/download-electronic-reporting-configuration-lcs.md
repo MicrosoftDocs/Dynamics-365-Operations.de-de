@@ -3,7 +3,7 @@ title: Laden Sie die elektronische Berichtskonfigurationen der Lifecycle Service
 description: Dieses Thema zeigt, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS) herunterladen.
 author: NickSelin
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,59 +18,59 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 49785835ee2da911d7b8d1360e1c42f850f1153f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4cc14860bd969048c4378b40d97a7940a8710e89
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771492"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934653"
 ---
-# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="d39e2-103">Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen</span><span class="sxs-lookup"><span data-stu-id="d39e2-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
+# <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a><span data-ttu-id="3441f-103">Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen</span><span class="sxs-lookup"><span data-stu-id="3441f-103">Download Electronic reporting configurations from Lifecycle Services</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d39e2-104">Dieses Thema zeigt, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS) herunterladen.</span><span class="sxs-lookup"><span data-stu-id="d39e2-104">This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="3441f-104">Dieses Thema zeigt, wie Sie Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS) herunterladen.</span><span class="sxs-lookup"><span data-stu-id="3441f-104">This topic explains how to download Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="d39e2-105">Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="d39e2-105">This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="3441f-105">Dieses Lernprogramm erläutert das Herunterladen der aktuellen Version der Konfigurationen zur elektronischen Berichterstellung (EB) von Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="3441f-105">This tutorial guides you through the process of downloading the newest version of Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-1. <span data-ttu-id="d39e2-106">Melden Sie sich in der Anwendung an, indem Sie eine der folgenden Rollen verwenden:</span><span class="sxs-lookup"><span data-stu-id="d39e2-106">Sign in to the application by using one of the following roles:</span></span>
+1. <span data-ttu-id="3441f-106">Melden Sie sich in der Anwendung an, indem Sie eine der folgenden Rollen verwenden:</span><span class="sxs-lookup"><span data-stu-id="3441f-106">Sign in to the application by using one of the following roles:</span></span>
 
-    - <span data-ttu-id="d39e2-107">Entwickler für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="d39e2-107">Electronic reporting developer</span></span>
-    - <span data-ttu-id="d39e2-108">Funktionaler Berater für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="d39e2-108">Electronic reporting functional consultant</span></span>
-    - <span data-ttu-id="d39e2-109">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="d39e2-109">System administrator</span></span>
+    - <span data-ttu-id="3441f-107">Entwickler für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="3441f-107">Electronic reporting developer</span></span>
+    - <span data-ttu-id="3441f-108">Funktionaler Berater für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="3441f-108">Electronic reporting functional consultant</span></span>
+    - <span data-ttu-id="3441f-109">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="3441f-109">System administrator</span></span>
 
-2. <span data-ttu-id="d39e2-110">Wechseln Sie zu **Organisationsverwaltung**&gt; **Elektronische Berichterstellung**..</span><span class="sxs-lookup"><span data-stu-id="d39e2-110">Go to **Organization administration** &gt; **Electronic reporting**.</span></span>
-3. <span data-ttu-id="d39e2-111">Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.</span><span class="sxs-lookup"><span data-stu-id="d39e2-111">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
-4. <span data-ttu-id="d39e2-112">Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**.</span><span class="sxs-lookup"><span data-stu-id="d39e2-112">On the **Microsoft** tile, click **Repositories**.</span></span>
+2. <span data-ttu-id="3441f-110">Wechseln Sie zu **Organisationsverwaltung** &gt; **Arbeitsbereiche** &gt; **Elektronische Berichterstellung**.</span><span class="sxs-lookup"><span data-stu-id="3441f-110">Go to **Organization administration** &gt; **Workspaces** &gt; **Electronic reporting**.</span></span>
+3. <span data-ttu-id="3441f-111">Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Microsoft** aus.</span><span class="sxs-lookup"><span data-stu-id="3441f-111">In the **Configuration providers** section, select the **Microsoft** tile.</span></span>
+4. <span data-ttu-id="3441f-112">Klicken Sie auf der Kachel **Microsoft** auf **Repositorys**.</span><span class="sxs-lookup"><span data-stu-id="3441f-112">On the **Microsoft** tile, click **Repositories**.</span></span>
 
-    <span data-ttu-id="d39e2-113">[![Aktualisieren von ER über LCS für MS - MS Repositorys-Liste öffnen](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="d39e2-113">[![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
+    <span data-ttu-id="3441f-113">[![Aktualisieren von ER über LCS für MS - MS Repositorys-Liste öffnen](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span><span class="sxs-lookup"><span data-stu-id="3441f-113">[![update-er-from-lcs-for-ms-open-ms-repositories-list](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)</span></span>
 
-5. <span data-ttu-id="d39e2-114">Auf der Seite **Konfigurationsrepositorys** wählen Sie im Raster ein vorhandenes Repository vom Typ **LCS** aus.</span><span class="sxs-lookup"><span data-stu-id="d39e2-114">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="d39e2-115">Wenn dieses Repository nicht im Raster angezeigt wird, führen Sie die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="d39e2-115">If this repository doesn't appear in the grid, follow these steps:</span></span>
+5. <span data-ttu-id="3441f-114">Auf der Seite **Konfigurationsrepositorys** wählen Sie im Raster ein vorhandenes Repository vom Typ **LCS** aus.</span><span class="sxs-lookup"><span data-stu-id="3441f-114">On the **Configuration repositories** page, in the grid, select the existing repository of the **LCS** type.</span></span> <span data-ttu-id="3441f-115">Wenn dieses Repository nicht im Raster angezeigt wird, führen Sie die folgenden Schritte aus:</span><span class="sxs-lookup"><span data-stu-id="3441f-115">If this repository doesn't appear in the grid, follow these steps:</span></span>
 
-    1. <span data-ttu-id="d39e2-116">Klicken Sie zum Hinzufügen neuer Repository auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="d39e2-116">Click **Add** to add a new repository.</span></span>
-    2. <span data-ttu-id="d39e2-117">Aktivieren Sie **LCS** als Repository-Typ.</span><span class="sxs-lookup"><span data-stu-id="d39e2-117">Select **LCS** as the repository type.</span></span>
-    3. <span data-ttu-id="d39e2-118">Klicken Sie auf **Repository erstellen**.</span><span class="sxs-lookup"><span data-stu-id="d39e2-118">Click **Create repository**.</span></span>
-    4. <span data-ttu-id="d39e2-119">Wenn Sie aufgefordert werden, folgen Sie den Autorisierungsanweisungen.</span><span class="sxs-lookup"><span data-stu-id="d39e2-119">If prompted, follow the authorization instructions.</span></span>
-    5. <span data-ttu-id="d39e2-120">Geben Sie einen Namen und eine Beschreibung für das Repository ein.</span><span class="sxs-lookup"><span data-stu-id="d39e2-120">Enter a name and description for the repository.</span></span>
-    6. <span data-ttu-id="d39e2-121">Klicken Sie auf **OK**, um den neuen Repositoryeintrag zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="d39e2-121">Click **OK** to confirm the new repository entry.</span></span>
-    7. <span data-ttu-id="d39e2-122">Wählen Sie im Raster das neue Repository vom Typ **LCS** aus.</span><span class="sxs-lookup"><span data-stu-id="d39e2-122">In the grid, select the new repository of the **LCS** type.</span></span>
+    1. <span data-ttu-id="3441f-116">Klicken Sie zum Hinzufügen neuer Repository auf **Hinzufügen**.</span><span class="sxs-lookup"><span data-stu-id="3441f-116">Click **Add** to add a new repository.</span></span>
+    2. <span data-ttu-id="3441f-117">Aktivieren Sie **LCS** als Repository-Typ.</span><span class="sxs-lookup"><span data-stu-id="3441f-117">Select **LCS** as the repository type.</span></span>
+    3. <span data-ttu-id="3441f-118">Klicken Sie auf **Repository erstellen**.</span><span class="sxs-lookup"><span data-stu-id="3441f-118">Click **Create repository**.</span></span>
+    4. <span data-ttu-id="3441f-119">Wenn Sie aufgefordert werden, folgen Sie den Autorisierungsanweisungen.</span><span class="sxs-lookup"><span data-stu-id="3441f-119">If prompted, follow the authorization instructions.</span></span>
+    5. <span data-ttu-id="3441f-120">Geben Sie einen Namen und eine Beschreibung für das Repository ein.</span><span class="sxs-lookup"><span data-stu-id="3441f-120">Enter a name and description for the repository.</span></span>
+    6. <span data-ttu-id="3441f-121">Klicken Sie auf **OK**, um den neuen Repositoryeintrag zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="3441f-121">Click **OK** to confirm the new repository entry.</span></span>
+    7. <span data-ttu-id="3441f-122">Wählen Sie im Raster das neue Repository vom Typ **LCS** aus.</span><span class="sxs-lookup"><span data-stu-id="3441f-122">In the grid, select the new repository of the **LCS** type.</span></span>
 
-6. <span data-ttu-id="d39e2-123">Klicken Sie auf **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="d39e2-123">Click **Open** to view the list of ER configurations for the selected repository.</span></span>
+6. <span data-ttu-id="3441f-123">Klicken Sie auf **Öffnen**, um die Liste der ER-Konfigurationen für das ausgewählte Repository anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="3441f-123">Click **Open** to view the list of ER configurations for the selected repository.</span></span>
 
-    <span data-ttu-id="d39e2-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="d39e2-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
+    <span data-ttu-id="3441f-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span><span class="sxs-lookup"><span data-stu-id="3441f-124">[![update-er-from-lcs-for-ms-make-lcs-repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)</span></span>
 
-7. <span data-ttu-id="d39e2-125">Wählen Sie in der Konfigurationsstruktur im linken Bereich die ER-Konfiguration aus, die Sie benötigen.</span><span class="sxs-lookup"><span data-stu-id="d39e2-125">In the configurations tree in the left pane, select the ER configuration that you require.</span></span>
-8. <span data-ttu-id="d39e2-126">Wählen Sie im Inforegister **Versionen** die erforderliche Version der ausgewählten ER-Konfiguration aus.</span><span class="sxs-lookup"><span data-stu-id="d39e2-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
-9. <span data-ttu-id="d39e2-127">Klicken Sie auf **Importieren**, um die ausgewählte Version vom LCS auf die aktuelle Instanz herunterzuladen.</span><span class="sxs-lookup"><span data-stu-id="d39e2-127">Click **Import** to download the selected version from LCS to the current instance.</span></span>
+7. <span data-ttu-id="3441f-125">Wählen Sie in der Konfigurationsstruktur im linken Bereich die ER-Konfiguration aus, die Sie benötigen.</span><span class="sxs-lookup"><span data-stu-id="3441f-125">In the configurations tree in the left pane, select the ER configuration that you require.</span></span>
+8. <span data-ttu-id="3441f-126">Wählen Sie im Inforegister **Versionen** die erforderliche Version der ausgewählten ER-Konfiguration aus.</span><span class="sxs-lookup"><span data-stu-id="3441f-126">On the **Versions** FastTab, select the required version of the selected ER configuration.</span></span>
+9. <span data-ttu-id="3441f-127">Klicken Sie auf **Importieren**, um die ausgewählte Version vom LCS auf die aktuelle Instanz herunterzuladen.</span><span class="sxs-lookup"><span data-stu-id="3441f-127">Click **Import** to download the selected version from LCS to the current instance.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="d39e2-128">Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Instanz bereits vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="d39e2-128">The **Import** button is unavailable for ER configuration versions that are already present in the current instance.</span></span>
+    > <span data-ttu-id="3441f-128">Die Schaltfläche **Importieren** ist nicht für ER-Konfigurationsversionen verfügbar, die in der aktuellen Instanz bereits vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="3441f-128">The **Import** button is unavailable for ER configuration versions that are already present in the current instance.</span></span>
 
-    <span data-ttu-id="d39e2-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="d39e2-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
+    <span data-ttu-id="3441f-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span><span class="sxs-lookup"><span data-stu-id="3441f-129">[![update-er-from-lcs-for-ms-download-configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d39e2-130">Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden.</span><span class="sxs-lookup"><span data-stu-id="d39e2-130">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="d39e2-131">Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden.</span><span class="sxs-lookup"><span data-stu-id="d39e2-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="d39e2-132">Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können.</span><span class="sxs-lookup"><span data-stu-id="d39e2-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="d39e2-133">Weitere Informationen finden Sie in der Liste der zugehörigen Artikel.</span><span class="sxs-lookup"><span data-stu-id="d39e2-133">For more information, see the list of related articles for this topic.</span></span>
+> <span data-ttu-id="3441f-130">Abhängig von den ER-Einstellungen werden Konfigurationen überprüft, nachdem diese importiert wurden.</span><span class="sxs-lookup"><span data-stu-id="3441f-130">Depending on the ER settings, configurations are validated after they are imported.</span></span> <span data-ttu-id="3441f-131">Sie werden über alle Inkonsistenz-Probleme benachrichtigt, die ermittelt werden.</span><span class="sxs-lookup"><span data-stu-id="3441f-131">You might be notified about any inconsistency issues that are discovered.</span></span> <span data-ttu-id="3441f-132">Sie müssen diese Probleme beheben, bevor Sie die importierten Konfigurationsversionen verwenden können.</span><span class="sxs-lookup"><span data-stu-id="3441f-132">You must resolve those issues before you can use the imported configuration version.</span></span> <span data-ttu-id="3441f-133">Weitere Informationen finden Sie in der Liste der zugehörigen Artikel.</span><span class="sxs-lookup"><span data-stu-id="3441f-133">For more information, see the list of related articles for this topic.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="d39e2-134">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="d39e2-134">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="3441f-134">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="3441f-134">Additional resources</span></span>
 
-[<span data-ttu-id="d39e2-135">Überblick über die elektronische Berichterstellung (Electronic reporting, ER)</span><span class="sxs-lookup"><span data-stu-id="d39e2-135">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+[<span data-ttu-id="3441f-135">Überblick über die elektronische Berichterstellung (Electronic reporting, ER)</span><span class="sxs-lookup"><span data-stu-id="3441f-135">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
