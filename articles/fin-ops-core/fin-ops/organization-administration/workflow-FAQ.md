@@ -3,7 +3,7 @@ title: Workflow-FAQs
 description: Diese Thema enthält Antworten auf häufig gestellte Fragen zum Workflowsystem.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/19/2019
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0188e8ed3cbbfd7dbccd7d13cf6129e146a919ac
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: cdddd26a662e9334f6d3c9806871df5b58ec03c7
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772696"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934908"
 ---
 # <a name="workflow-faq"></a>Workflow-FAQs
 
@@ -37,7 +37,7 @@ Jede Benachrichtigung gilt für eine andere Arbeitsaufgabe, die Ähnlichkeit kan
 Derzeit gibt es eine Einschränkung der Workflowexportfunktion, durch die Workflownamen 48 Zeichen nicht überschreiten können. Das Verwenden eines Namens, der länger als 48 Zeichen ist, kann zu einem „Fehler beim Authentifizieren der Anforderung durch Server“ führen und/oder verhindern, dass eine Datei ohne Dateityp exportiert wird. Der folgende Blogbeitrag enthält weitere Details: [Workflow zur Exprotfehlerbehebung](https://community.dynamics.com/ax/b/elandaxdynamicsaxupgradesanddevelopment/archive/2019/04/10/workflow-export-troubleshooting)
 
 ## <a name="can-the-submitter-of-a-workflow-also-approve-the-workflow"></a>Kann der Übermittler eines Workflows auch den Workflow genehmigen?
-Ja, ein Antragsteller eines Workflows kann den Workflow kann genehmigen, wenn er so konfiguriert wird. Um dieses Verhalten zu verhindern, legen Sie die **Workflow-Parameter > Allgemein > Genehmiger >Genehmigung durch Antragsteller nicht zulassen** auf **Ja** fest.
+Ja, ein Antragsteller eines Workflows kann den Workflow kann genehmigen, wenn er so konfiguriert wird. Um dieses Verhalten zu verhindern, legen Sie **Systemverwaltung > Workflow > Workflow-Parameter > Allgemein > Genehmiger > Genehmigung durch Antragsteller nicht zulassen** auf **Ja** fest.
 
 ## <a name="can-i-add-alerts-to-workflows-to-provide-notifications-to-users"></a>Kann ich Warnungen zu Workflows hinzufügen, um Benachrichtigungen für Benutzer verfügbar zu machen?
 Nachfolgend sind einige wesentliche Konzepte, um Warnungen für Workflows zu beachten, um Benachrichtigungen zu erhalten:
@@ -51,3 +51,6 @@ Nachfolgend sind einige wesentliche Konzepte, um Warnungen für Workflows zu bea
     - [Workflows haben Geschäftsereignisse](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), dass der Debitor Trigger-Flüsse nutzen kann, die Benachrichtigungen haben, nach denen Sie suchen.   
 
 Zusammenfassend lässt sich sagen, wenn ein Benutzer nicht die richtige Benachrichtigung vom Action Center erhält, wenn ihm ein Workflow-Workitem zugewiesen wird, dann nutzen Sie [Workflow Business Events](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) mit Microsoft Power Automate, um zusätzliche oder andere Benachrichtigungen bereitzustellen.
+
+## <a name="workflow-editor-has-trouble-starting-under-adfs"></a>Der Workflow-Editor kann unter ADFS nicht gestartet werden 
+Wenn der Workflow-Editor unter Active Directory-Verbunddiensten (AD FS) in einer aktualisierten Umgebung ausgeführt wird, kann er möglicherweise nicht gestartet werden. Wenn dies der Fall ist, stellen Sie sicher, dass die URL "https://dynamicsaxworkfloweditor/" der Eigenschaft **Microsoft Dynamics 365 for Operations Vor Ort – Workflow – Native Anwendung** in den ADFS-Einstellungen hinzugefügt wird.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d3f90e963341efe854270134988cfc51b5280bf4
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: abe921b8658322bcf77aeea8fa05843e539f97f8
+ms.sourcegitcommit: 523d22f31010339b4ff5b4fbe0a75aa909843ba6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813361"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902431"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
@@ -36,7 +36,14 @@ Kaufverträge können für eine bestimmte Menge eines Produkts, einen bestimmten
 
 Auf der Seite **Kaufverträge** können Sie Kaufverträge, die zwischen Ihrer Organisation und Kreditoren gelten, erstellen, anwenden und weiterverfolgen. Nach der Erstellung eines Kaufvertrags können Sie zum Beispiel damit direkt eine Bestellung in Auftrag geben. Jeder Kaufvertrag hat einen Gültigkeitszeitraum, der von der Person definiert wird, die den Kaufvertrag erstellt. Das Lieferdatum einer Bestellung muss innerhalb der Gültigkeitsdaten dieser Gültigkeitsperiode liegen.  
 
-Nachdem Sie einen Kaufvertrag erstellen, müssen Sie diesen aktivieren, bevor er gültig ist. Um einen Kaufvertrag zu aktivieren, legen Sie die **Vertrag als 'Effektiv' kennzeichnen** Option auf **Ja** fest.
+Nachdem Sie einen Kaufvertrag erstellen, müssen Sie diesen aktivieren, bevor er gültig ist. Um einen Kaufvertrag zu aktivieren, legen Sie die **Vertrag als 'Effektiv' kennzeichnen** Option auf **Ja** fest. 
+
+Um zu verhindern, dass Ihr Kaufvertrag verwendet und bestätigt wird, markieren Sie den Vertragsstatus als **Geschlossen**. Sie können den Status jederzeit nach dieser Änderung wieder als **Gültig** aktualisieren.
+
+## <a name="responsible-workers-on-purchase-agreements"></a>Verantwortliche Mitarbeiter bei Kaufverträgen
+
+Sie können einen primären und einen sekundären verantwortlichen Mitarbeiter in der Klassifizierung des Kaufvertrags identifizieren. Diese Werte werden vom resultierenden Kaufvertrag übernommen. Sie müssen dem Kaufvertrag keine verantwortlichen Mitarbeiter hinzufügen, und diese können im Kaufvertrag selbst fallweise direkt geändert werden. Sie können keinen sekundärverantwortlichen Mitarbeiter ohne einen primärverantwortlichen Mitarbeiter angeben, obwohl Sie keinen sekundärverantwortlichen Mitarbeiter benötigen. Sie können nicht denselben Mitarbeiter als primären und sekundären verantwortlichen Mitarbeiter angeben. 
+
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Kauf eines Artikels aus. Sie können Positionen aus mehreren Bestellungen (POs) verwenden, um die Zusage zu erfüllen. Es gibt vier Typen von Zusagen:

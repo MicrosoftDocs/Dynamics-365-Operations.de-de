@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c1c7544f3c9d53b9d5759b246f81dae6cfe2c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 7cd3e2ac729bdb3ecc8e7bfacb060e433b185f09
+ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771072"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2933931"
 ---
 # <a name="electronic-reporting-er-overview"></a>Überblick über die elektronische Berichterstellung (Electronic reporting, ER)
 
@@ -51,12 +51,12 @@ Das ER-Modul hat folgende Funktionen:
 
 ER unterstützt zwei Komponententypen: **Datenmodell** und **Format**.
 
-#### <a name="data-model-components"></a>Datenmodellkomponenten
+#### <a name="data-model-and-model-mapping-components"></a>Datenmodell und Modellzuordnungskomponenten
 
 Eine Datenmodellkomponente ist eine abstrakte Darstellung der Datenstruktur. Es wird verwendet, um bestimmte Geschäftsdomänenbereiche mit ausreichend Details zu beschreiben, um die Berichtsanforderungen für diese Domäne zu erfüllen. Eine Datenmodellkomponente besteht aus den folgenden Teilen:
 
-- Ein Datenmodell als ein Satz domänenspezifischer Geschäftseinheiten und einer hierarchisch strukturierten Definition von Beziehungen zwischen diesen Einheiten.
-- Eine Modellzuordnung, die ausgewählte Anwendungsdatenquellen mit einzelnen Elementen eines Datenmodells verknüpft, das zur Laufzeit den Datenfluss und die Regeln der Geschäftsdatenauffüllung zu einer Datenmodellkomponente angibt.
+- <a name="DataModelComponent"></a>Ein Datenmodell als ein Satz domänenspezifischer Geschäftseinheiten und einer hierarchisch strukturierten Definition von Beziehungen zwischen diesen Einheiten.
+- <a name="ModelMappingComponent"></a>Eine Modellzuordnung, die ausgewählte Anwendungsdatenquellen mit einzelnen Elementen eines Datenmodells verknüpft, das zur Laufzeit den Datenfluss und die Regeln der Geschäftsdatenauffüllung zu einer Datenmodellkomponente angibt.
 
 Eine Geschäftseinheit eines Datenmodells wird als Container (Datensatz) dargestellt. Geschäftseinheitseigenschaften werden als Datenelemente (Felder) dargestellt. Jedes Datenelement hat eine(n) eindeutigen Namen, Beschriftung, Beschreibung und Wert. Der Wert jedes Datenelements kann so konzipiert werden, dass er als Zeichenfolge, Ganzzahl, Gleitkommazahl, Datum, Aufzählung, Boolesch, usw. erkannt wird. Außerdem kann er ein anderer Datensatz oder eine Datensatzliste sein.
 
@@ -81,7 +81,7 @@ Eine Zuordnung, die vorbildliche eingehende elektronische Dokumente unterstützt
 
 Für jede Geschäftsdomäne wird eine Datenmodellkomponente entworfen, die als vereinheitlichte Datenquelle für die Berichtserstellung verwendet werden soll, und die die Berichtserstellung von der physischen Implementierung von Datenquellen isoliert. Sie stellt domänenspezifische Geschäftskonzepte und Funktionen in einem Formular dar, die den ersten Entwurf und die weitere Verwaltung eines Berichterstellungsformats effizienter macht.
 
-#### <a name="format-components-for-outgoing-electronic-documents"></a>Formatkomponenten für ausgehende elektronische Dokumente
+#### <a name="FormatComponentOutbound"></a>Formatkomponenten für ausgehende elektronische Dokumente
 
 Eine Formatkomponente ist das Schema der Berichtsausgabe, die zur Laufzeit generiert wird. Ein Schema besteht aus folgenden Elementen:
 
@@ -107,7 +107,7 @@ Die folgende Abbildung zeigt, wie die Daten für diese Formate fließen.
 
 Um eine einzelne ER-Formatkonfiguration ausführen und ein ausgehendes elektronisches Dokument zu generieren, müssen Sie die Zuordnung der Formatkonfiguration identifizieren.
 
-#### <a name="format-components-for-incoming-electronic-documents"></a>Formatkomponenten für eingehende elektronische Dokumente
+#### <a name="FormatComponentInbound"></a>Formatkomponenten für eingehende elektronische Dokumente
 Eine Formatkomponente ist das Schema des eingehenden Dokuments, das zur Laufzeit importiert wird. Ein Schema besteht aus folgenden Elementen:
 
 - Ein Format, das die Struktur und den Inhalt des zur Laufzeit importierten eingehenden elektronischen Dokuments festlegt, das Daten enthält. Eine Formatkomponente wird verwendet, um ein eingehendes Dokument in verschiedenen Formaten, z. B. Text und XML, zu analysieren.
@@ -144,7 +144,7 @@ Der Zugriff auf ER-Formatkomponenten hängt von den Einstellungen des ISO-Lände
 
 Für unterschiedliche Versionen einer Datenformatkomponente kann es verschiedene Einstellungen von ISO-Länder-/Regionscodes geben.
 
-#### <a name="configuration"></a>Konfiguration
+#### <a name="Configuration"></a>Konfiguration
 
 Eine ER-Konfiguration ist der Wrapper einer bestimmten ER-Komponente. Diese Komponente kann entweder eine Datenmodellkomponente oder eine Formatkomponente sein. Eine Konfiguration kann unterschiedliche Versionen einer ER-Komponente beinhalten. Jede Konfiguration wird markiert als im Besitz von einem bestimmten Konfigurationsanbieter. Die **Entwurf**-Version einer Konfigurationskomponente kann bearbeitet werden, wenn der Besitzer einer Konfiguration als aktiver Anbieter in den ER-Einstellungen in der Anwendung ausgewählt wurde.
 
@@ -154,13 +154,13 @@ Die erstellte Formatkonfiguration enthält eine Format Komponente. Die Datenmode
 
 Eine ER-Konfiguration wird für Anwendungs-Unternehmen gemeinsam genutzt.
 
-#### <a name="provider"></a>Anbieter
+#### <a name="Provider"></a>Anbieter
 
 Der ER-Anbieter ist der Bezeichner einer Partei, die verwendet wird, um den Autor (Besitzer) jeder einzelnen ER-Konfiguration anzugeben. ER ermöglicht die Verwaltung einer Liste von Konfigurationsanbietern. Formatkonfigurationen, die als Teil der Finance and Operations-Lösung für elektronische Dokumente freigegeben sind, werden als Eigentum des **Microsoft**-Konfigurationsanbieters gekennzeichnet.
 
 Informationen zum Registrieren eines neuen ER-Anbieters enthält der Aufgabenleitfaden **ER – Konfigurationsanbieter erstellen und als aktiv markieren** (Teil des Geschäftsprozesses **7.5.4.3 Erwerben/Entwickeln von IT-Service-/-Lösungskomponenten (10677)**).
 
-#### <a name="repository"></a>Repository
+#### <a name="Repository"></a>Repository
 
 Ein ER-Repository speichert ER-Konfigurationen. Folgende Typen von ER-Repositorys werden derzeit unterstützt: 
 

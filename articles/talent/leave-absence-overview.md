@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ebfaeb0696d7200ddf3c715f96a259b91db08e7a
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 3376a9aec5c0003e9cc7c076c4d221a697df61ce
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1518068"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898293"
 ---
 # <a name="leave-and-absence-management"></a>Urlaubs- und Abwesenheitsverwaltung
-
-[!include [banner](includes/banner.md)]
 
 Das Modul **Urlaubs- und Absenzverwaltung** bietet ein flexibles Framework für das Definieren des Abwesenheitsverwaltungsprozesses. Urlaubs- und Abwesenheitspläne können erstellt werden, um festzustellen, wie Mitarbeiter anfallen oder Ihnen Freizeit gewährt wird. Nachdem Mitarbeiter in einem Plan registriert sind, können sie Freizeitersuchen zur Genehmigung durch Vorgesetzte senden. In Urlaubnachverfolgung können Manager der obersten Ebene und Personalverwaltung (HR)- Manager anzeigen, wer freimacht und wie viel Freizeit jeder Mitarbeiter noch hat.  
 

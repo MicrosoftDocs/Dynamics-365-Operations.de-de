@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent October 2019 update
-ms.openlocfilehash: 40bbb8429355fa18fe12c7cf56f8d58f19766cad
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: 35cceb97442b05abc243cf7341e0ce7a0d09c613
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2009421"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915200"
 ---
 # <a name="streamlined-employee-entry-and-navigation"></a>Fortschrittlicher Mitarbeitereintrag und ‑Navigation
 
-[!include [banner](includes/banner.md)]
-
 Dynamics 365 Talent ermöglicht effiziente Eingabe des Mitarbeiters sowie Beschäftigungsdaten. Sie können die Arbeitsverlaufinformationen für vergangene, aktive und künftige Mitarbeiter und Auftragnehmer aktualisieren.
 
-Sie können auch eine vereinfachte Navigationserfahrung aktivieren, um zugehörige Informationen schnell zu finden und erforderliche Änderungen vorzunehmen. Diese Funktionalität ist in der Sandboxumgebung verfügbar. Um diese Funktion zu aktivieren, navigieren Sie zu **> Systemverwaltung > Verknüpfung > Einstellungen > Systemparameter- > Vorschaufunktionen**. Wählen Sie **Verbessertes Arbeitskraftformular und Navigation** aus. Dies aktiviert diese Änderungen für alle Benutzer. Sie können diese Option jederzeit deaktivieren.
+Sie können auch eine vereinfachte Navigationserfahrung aktivieren, um zugehörige Informationen schnell zu finden und erforderliche Änderungen vorzunehmen. Diese Funktionalität ist in allen Umgebungen verfügbar. Navigieren Sie zum Aktivieren dieser Funktion zu **Systemverwaltung> Funktionsvewaltung > Neu> Fortschrittlicher Mitarbeitereintrag > Aktivieren**. Dies aktiviert diese Änderungen für alle Benutzer. Sie können diese Option jederzeit deaktivieren.
 
 ## <a name="view-options"></a>Optionen anzeigen
 

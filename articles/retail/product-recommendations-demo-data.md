@@ -3,7 +3,7 @@ title: Omni-Channel-Produkt-Empfehlungsdemodaten
 description: Dieses Dokument bietet Richtlinien zur Nutzung von Omni-Channel-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 12/1/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81af4c1bb7828c9b346a3ef514d8657e853dcefb
-ms.sourcegitcommit: c526cfd1f823df1ff33ded95e599a72f0a15cc5a
+ms.openlocfilehash: 31aa5dbd2fa814fd572024a4ae36b9d9b46a2fb0
+ms.sourcegitcommit: 398c0652acde12c953de007d06055456d6e0a516
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2225955"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2872325"
 ---
 # <a name="omni-channel-product-recommendations-demo-data"></a>Omni-Channel-Produkt-Empfehlungsdemodaten
 
 Dieses Dokument bietet Richtlinien zur Nutzung von Omni-Channel-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 
-Omni-Channel-Produktempfehlungen bieten einen Satz redaktionell zusammengestellter oder programmgesteuert generierter geordneter Liste von Produkten. Diese Liste kann in einigen Szenarien je nach Geschäftsanforderung verwendet werden. Weitere Informationen zu Produktempfehlungslisten finden Sie im [Produktempfehlungsüberblick](product-recommendaitons-overview.md).
+Omni-Channel-Produktempfehlungen bieten einen Satz redaktionell zusammengestellter oder programmgesteuert generierter geordneter Liste von Produkten. Diese Liste kann in einigen Szenarien je nach Geschäftsanforderung verwendet werden. Weitere Informationen zu Produktempfehlungslisten finden Sie im [Produktempfehlungsüberblick](../commerce/product-recommendations.md).
 
 Für Stufe 2 und höhere Dynamics-Umgebungen werden Produktempfehlungen automatisch basierend auf Kundendaten berechnet.
 Das Verwenden der Empfehlungsdemodaten deaktiviert keine Produktempfehlungslösung, die bereits in der Umgebung ist und keine der seiner Nutzung zugeordneten Kosten.
@@ -68,6 +68,6 @@ Die Erweiterung enthält die Datendatei RecoMockDataset.csv, mit der ein Debitor
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Produktempfehlungsübersicht](product-recommendations-overview.md)
+[Produktempfehlungsübersicht](../commerce/product-recommendations.md)
 
-[Umgebungsplanung](environment-planning.md)
+[Umgebungsplanung](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)

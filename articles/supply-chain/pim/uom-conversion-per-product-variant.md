@@ -3,12 +3,12 @@ title: Maßeinheitsumrechnungen für Produktvarianten
 description: In diesem Thema wird erläutert, wie Maßeinheitsumrechnungen in Produktvarianten eingerichtet werden können.
 author: johanhoffmann
 manager: AnnBe
-ms.date: 12/18/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: josaw
@@ -17,34 +17,26 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 196b68db02867f8d864be8bcc593aa01f554f7c3
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: c8181f0bda9b781a6c2b0feb0aba1beb51bfea65
+ms.sourcegitcommit: af36eb17b36092a3101bbfc96486b25036676558
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249447"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2935098"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Maßeinheitsumrechnungen für Produktvarianten
 
 [!include [banner](../includes/banner.md)]
 
-[!include [pivate-preview](../includes/pivate-preview-banner.md)]
-
 In diesem Thema wird erläutert, wie Maßeinheitsumrechnungen in Produktvarianten eingerichtet werden können. Zudem enthält es ein Beispiel für die Einstellung.
 
 Diese Funktion ermöglicht den Austausch, damit Unternehmen verschiedene Einheitenumrechnung zwischen den Varianten desselben Produkts definieren. Das folgende Beispiel wird in diesem Thema verwendet. Ein Unternehmen verkauft die T-Shirts in kleinen, mittig großen und extra-großen Größen. Das T-Shirt wird als Produkt definiert, und die verschiedenen Größen werden als Varianten des Produkts definiert. Die T-Shirts werden in Kisten verpackt und es haben fünf T-Shirts darin Platz, mit Ausnahme der extra-großen Größe, bei denen es nur Platz für vier T-Shirts gibt. Das Unternehmen möchte die verschiedenen Varianten der T-Shirts in der Einheit **Stücke** nachverfolgen aber verkauft die T-Shirts in der Einheit **Schachteln**. Die Umrechnung zwischen der Lagereinheit und der Verkaufseinheit ist eine Schachtel = 5, außer für die extra-großen, bei denen 1 Schachtel = 4 Stück ist.
-
-## <a name="setup"></a>Einstellungen
-
-Sie können die Parameter für die Verwendung der Funktion für die Produkte festlegen, die für **Alle Prozesse** oder nur für das Produkt aktiviert werden, das für **Lagerortprozesse** aktiviert ist, indem Sie die Option **Aktivieren Sie Maßeinheits-Unterhaltungen** auf der Seite **Produktinformationsparameter** nutzen.
 
 ### <a name="set-up-a-product-for-unit-conversion-per-variant"></a>Einrichten eines Produkts für Einheitenumrechnung pro Variante
 
 ProtukVarianten können nur für Produkte von **Produkt-Untertyp** **Produktmaster** erstellt werden. Weitere Informationen finden Sie unter [Erstellen eines Produktmasters](tasks/create-product-master.md).
 
 Die Funktion ist nicht für Produkte aktiviert, die für Artikelgewichtsprozesse eingerichtet werden. 
-
-Während der Erstellung eines Produktmasters aktivieren Sie Maßeinheitsumrechnung, indem Sie die **Aktivieren Sie Maßeinheitsumrechnungen** auf der Seite **Produktdetails** nutzen.
 
 Wenn der Produktmaster mit freigegebenen Produkten erstellt wird, können pro Einheitenumrechnungen Varianten eingerichtet werden. Sie können für die Menüoption das Öffnen der Einheitenumrechnungsseite im Kontext eines Produkts oder die Produktvariante auf den folgenden Seiten finden.
 

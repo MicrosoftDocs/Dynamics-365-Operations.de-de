@@ -3,7 +3,7 @@ title: Hinzufügen einer Begrüßungsnachricht
 description: In diesem Thema wird beschrieben, wie eine Begrüßungsmeldung Ihrer Microsoft Dynamics 365 Commerce hinzugefügt wird.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 25a4e91646916b03c8a138fc713577f429ab633c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 4e9deeeaf491b77700ba0833e429f05d376a4392
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697381"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2914515"
 ---
 # <a name="add-a-welcome-message"></a>Hinzufügen einer Begrüßungsnachricht
 
@@ -60,6 +60,8 @@ Die Begrüßungsmeldung wird nun oben auf jeder Standortsseite angezeigt, das da
 [Hinzufügen eines Logos](add-logo.md)
 
 [Auswählen eines Sitedesigns](select-site-theme.md)
+
+[Arbeiten mit CSS-Überschreibungsdateien](css-override-files.md)
 
 [Hinzufügen eines Favicons](add-favicon.md)
 

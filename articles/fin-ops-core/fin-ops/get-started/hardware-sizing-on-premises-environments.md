@@ -1,9 +1,9 @@
 ---
 title: Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 description: Dieses Thema listet die Anforderungen an die Hardwarekalkulation für eine lokale Umgebung auf.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 11/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 65f21d71c22d295902b968e6c18134e1577e01f2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 8fa644f35a086af99cde74fd6a2062f9b59a6ff7
+ms.sourcegitcommit: dc953c316c396c45ddd596e25c2b358e39a95d84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812556"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870263"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Anforderungen an die Hardwarekalkulation für lokale Umgebungen
 
@@ -137,7 +137,7 @@ Für die allgemeine Verfügbarkeit kann nur ein SSRS-Knoten bereitgestellt werde
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 
-Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS. Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs. Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices. Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden. Weitere Informationen finden Sie unter [Aspekte zur Service Fabric-Clusterkapazitätsplanung](/azure/service-fabric/service-fabric-cluster-capacity).
+Der Orchestrator-Service verwaltet Ihre Bereitstellung und die entsprechende Kommunikation mit LCS. Dieser Service wird als primärer Service Fabric-Service bereitgestellt und benötigt mindestens drei VMs. Dieser Services befindet sich am selben Standort wie die Service Fabric-Orchestrierungsservices. Dieser sollte auf die Spitzenlast des Clusters ausgelegt werden. Weitere Informationen finden Sie unter [Planen und Vorbereiten Ihrer eigenständigen Fabric-Cluster-Bereitstellung](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisierung und Überabonnement
 

@@ -46,7 +46,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?toc=/dynamics365/retail/toc.json
                 - name: Cloudbereitstellung
                   href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?toc=/dynamics365/retail/toc.json
-                - name: Systemanforderungen für Cloudbereitstellungen
+                - name: Systemanforderungen für Retail-Client-Komponenten
                   href: get-started/system-requirements.md
                 - name: On-Premises-Bereitstellung
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/retail/toc.json
@@ -62,20 +62,14 @@
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/retail/toc.json
             - name: Neuerungen oder Änderungen
               items:
-                - name: Vorschaufunktionen in Retail-Version 10.0.7
+                - name: Retail-Version 10.0.7
                   href: get-started/whats-new-10-0-7.md
                 - name: Retail-Version 10.0.6
                   href: get-started/whats-new-10-0-6.md
-                - name: Retail-Version 10.0.5
-                  href: get-started/whats-new-10-0-5.md
                 - name: Neuerungen oder Änderungen in vorherigen Versionen
                   items:
                     - name: Neuerungen oder Änderungen in Finance and Operations – Startseite
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/retail/toc.json
-                    - name: "Finance and Operations-Apps\_10.0.5 (Oktober\_2019)"
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-5.md?toc=/dynamics365/retail/toc.json
-                    - name: "Finance and Operations\_10.0.4 (Juli\_2019)"
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-4.md?toc=/dynamics365/retail/toc.json
                     - name: 'Finance and Operations, Enterprise Edition 7.3'
                       href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/retail/toc.json
                 - name: Entfernte oder veraltete Funktionen
@@ -788,10 +782,8 @@
               href: ../supply-chain/pim/product-information.md?toc=/dynamics365/retail/toc.json
             - name: Einzelhandelshierarchien
               href: retail-hierarchies.md
-            - name: Attribute und Attributgruppen
+            - name: Attribute und Attributgruppen verwalten
               href: attribute-attributegroups-lifecycle.md
-            - name: Attribute erstellen und verwalten
-              href: create-manage-attributes.md
             - name: Einzelhandelsprodukte einrichten
               href: set-up-retail-products.md
             - name: Ein Produkt erstellen
@@ -1146,7 +1138,9 @@
               items:
                 - name: Kassenfunktionen
                   href: localizations/emea-swe-cash-registers.md
-                - name: Beispiel zur Retail POS-Integration mit Kontrolleinheiten
+                - name: Beispiel zur Integration der Kontrolleinheit für Schweden
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Beispiel zur Retail POS-Integration mit Kontrolleinheiten (Vorversion)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Retail-Aufgaben
           items:

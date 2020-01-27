@@ -1,6 +1,6 @@
 ---
-title: Zwischen Lieferantendesigns wechseln
-description: ''
+title: Wechsel zwischen Kreditorendesigns
+description: In diesem Thema wird der Wechsel von Kreditorendaten zwischen Finance and Operations-Apps und Common Data Service beschrieben.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 4e97ff0b0e6195b5e3703e15a0bb0de7644ef8d1
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 204d788e72e79e7acf744d24cbeacb0f9b47da7d
+ms.sourcegitcommit: 3306e451f04df01c51d8d332306b135d8ae1e254
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772363"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "2902724"
 ---
-# <a name="switch-between-vendor-designs"></a>Zwischen Lieferantendesigns wechseln
+# <a name="switch-between-vendor-designs"></a>Wechsel zwischen Kreditorendesigns
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "2772363"
 
 Wenn Sie andere Dynamics 365-Apps für das Lieferanten-Mastering verwenden und die Lieferanteninformationen von Kunden isolieren möchten, verwenden Sie dieses Basislieferantendesign.  
 
-![Grundlegender Lieferantenfluss](media/dual-write-switch-1.png)
+![Grundlegender Lieferantenfluss](media/dual-write-vendor-data-flow.png)
  
 Wenn Sie andere Dynamics 365-Apps für das Lieferanten-Mastering verwenden und weiterhin die **Kontoentität** zum Speichern der Lieferanteninformationen verwenden möchten, verwenden Sie dieses erweiterte Lieferantendesign. In diesem Entwurf werden erweiterte Lieferanteninformationen wie der Gesperrt-Status des Lieferanten und das Lieferantenprofil in der Entität **Lieferanten** in Common Data Service gespeichert. 
 
-![Erweiterter Lieferantenfluss](media/dual-write-switch-2.png)
+![Erweiterter Lieferantenfluss](media/dual-write-vendor-detail.jpg)
  
 Führen Sie die unten stehenden Schritte aus, um das erweiterte Lieferantendesign zu verwenden: 
  
@@ -60,5 +60,5 @@ Führen Sie die unten stehenden Schritte aus, um das erweiterte Lieferantendesig
     4. Sie können die Workflow als Echtzeit- oder Hintergrundworkflows je nach Ihren Anforderungen konfigurieren. 
         > [!div class="mx-imgBorder"]
         > ![In einen Hintergrundworkflow konvertieren](media/dual-write-switch-8.png)
-    5. Aktivieren Sie die Workflows, die Sie in den Entitäten **Konto** und **Lieferant** erstellt haben, um mit der Verwendung der Customer Engagement-Entität **Konto** für das Speichern von Lieferanteninformationen zu starten. 
+    5. Aktivieren Sie die Workflows, die Sie in den Entitäten **Konto** und **Kreditor** erstellt haben, um mit der Verwendung der Entität **Konto** für das Speichern von Kreditoreninformationen zu starten. 
  

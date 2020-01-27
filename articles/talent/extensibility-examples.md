@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: negudava
 ms.search.validFrom: 2019-03-04
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 3bb61297e294aa3f2d06f542bebe29d7afae9c3b
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832837"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2898316"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Talent mit Power Apps und Power Automate erweitern
-
-[!include [banner](includes/banner.md)]
 
 Dieses Thema beschreibt einige Beispiele für Erweiterungsszenarien für Microsoft Dynamics 365 Talent, die Microsoft Power Apps und Microsoft Power Automate verwenden. Sie können das Lösungspaket importieren, das jedem Beispiel in der Power Apps-Umgebung zugeordnet ist. Sie können entweder die Pakete als Anleitung oder als Startpunkte zu den Werkzeugszenarien verwenden, die der Organisation zugeordnet sind.
 
@@ -108,7 +106,7 @@ Sie können die Empfehlungs-App verwenden, um Kandidaten einer freigegebene Tale
 
 Sie können dieser App im Mitarbeiter-Self-Service (ESS) für das Übermitteln von Empfehlungen eingeben, oder Sie können sie als Verknüpfung im Unternehmensportal und als eigenständige App ausführen.
 
-Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 Talent Erweiterbarkeitslösung: Empfehlungs-App](http://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
+Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 Talent Erweiterbarkeitslösung: Empfehlungs-App](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

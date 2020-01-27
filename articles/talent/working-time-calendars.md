@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 270048e10c6c0b20023467662acfdcd1b255588e
-ms.sourcegitcommit: 434dd21450bddcd891aba0555b9853d9ba0afb6f
+ms.openlocfilehash: f69bfec663cb8473c112f108813f042368439570
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "2008960"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897234"
 ---
 # <a name="working-time-calendars"></a>Arbeitszeitkalender
-
-[!include [banner](includes/banner.md)]
 
 Mit dem Arbeitszeitkalender können Sie einen Kalender mit den Stunden erstellen und Tagen erstellen, die ein Mitarbeiter in Ihrer Organisation arbeitet. Kalender optimieren den Freizeitanforderungsprozess standardmäßig in Stunden oder in Tagen. Wenn ein Mitarbeiter eine Freizeitanforderung übermittelt, müssen sie sich jedoch nicht um Feiertage und Schließungen sorgen, da dies für sie im Arbeitszeitkalender bearbeitet wird.
 

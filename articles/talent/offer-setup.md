@@ -3,7 +3,7 @@ title: Angebotsmanagement in Attract einrichten
 description: In diesem Thema wird beschrieben, wie Angebote in Microsoft Dynamics 365 Talent eingerichtet werden.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/04/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-10-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63f45f1493935f543cfd25a7d8ed7b54170800a0
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.openlocfilehash: bc91a83afd5ce1627376685bcf612d6998ddbc02
+ms.sourcegitcommit: 5022d63a81c3715c9a3dcf2a68217bb6b17c7805
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2832721"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890554"
 ---
 # <a name="set-up-offer-management-in-attract"></a>Angebotsmanagement in Attract einrichten
 
@@ -45,9 +45,11 @@ Angebotdaten sind die kleinste Einheit in der Angebotpaketvorlage. Ein typisches
 
     >[!NOTE]
     > Auf der Seite **Daten anbieten** werden die Abschnitte **Kandidatendetails** und **Stellendetails** angezeigt. Attract stellt einige Daten-Platzhalterstandards bereit.
-    
+    > 
     > Es gibt Abschnitte auf der Seite, um die verschiedenen Angebotsdatenenplatzhalter zusammen mit den logischen Gruppen zu organisieren. Diese Bereiche können bei der Verwaltung von Angebotdaten und beim Auffüllen von Daten während des Angebotserstellungsprozesses helfen.
-
+    > 
+    > Laden Sie zum Erstellen einer Werteliste für einen Platzhalter eine Excel-Tabelle hoch, die eine Spalte mit dem Platzhalter als Spaltentitel und der Auswahlliste in den Zeilen darunter enthält. Wenn derselbe Platzhalter in einem anderen Datenregelsatz referenziert wird, stellen Sie sicher, dass diese einen gemeinsamen Wertesatz haben.
+    
 1.  Zum Erstellen eines neuen Angebotsdatenabschnittes klicken Sie auf **Fügen Sie einen Abschnitt hinzu**, und geben Sie einen eindeutigen Namen für den Bereich ein.
 
 1.  Um Angebotsdatenenplatzhalter jedem Bereich hinzuzufügen, klicken Sie auf **Fügen Sie Angebotsdaten hinzu** und geben Sie einen eindeutigen Namen für den Platzhalter ein.

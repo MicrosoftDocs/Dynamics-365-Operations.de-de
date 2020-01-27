@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c1d1ec695626404389dec2b07dd6e34358cd2d5a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2fb188498705dcbad841645ced43e6a1715cbbd0
+ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175707"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2915163"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
@@ -37,13 +37,15 @@ Die Implementierung und Übernahme der EU-weiten elektronischen Rechnungsstellun
 Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur Verfügung:
 
 -   OIOUBL v.2.02 für Dänemark
--   EHF v.2.0.8 für Norwegen
+-   EHF v.3.0 für Norwegen
 -   PEPPOL BIS v.2 für Österreich, Frankreich und Belgien
 -   UBL-OHNL 1.9 für die Niederlande
 -   FacturaE v.3.2.1 für Spanien
 -   FatturaPA v.1.2 für Italien
+-   xRechnung v.1.2 für Deutschland
+-   PEPPOL BIS Billing v.3.0 für die Europäische Union öffnen
 
-Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung](../../dev-itpro/analytics/general-electronic-reporting.md). Es gibt ein **Kundenrechnungsmodell**-Datenmodell sowie mehrere länderspezifische elektronische Berichtsformatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE) und die Niederlande (NL).
+Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../dev-itpro/analytics/general-electronic-reporting.md). Es gibt ein **Debitorenrechnungsmodell**-Datenmodell sowie verschiedene länder-/regionsspezifische EB-Formatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE), die Niederlande (NL), Deutschland (DE) und die Europäische Union (EU).
 
 -   OIOUBL Vertriebsrechnung – für AT, DK und NO
 -   OIOUBL Vertriebsgutschrift – für AT, DK und NO
@@ -65,6 +67,12 @@ Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserst
 -   Vertriebsrechnung (IT)
 -   Projektrechnung (ES)
 -   Projektrechnung (IT)
+-   Verkaufsrechnung DE
+-   Projektrechnung DE
+-   Peppol Verkaufsrechnung – für die EU
+-   Peppol Vertriebsgutschrift – für die EU
+-   Peppol Projektrechnung – für die EU
+-   Peppol Projekt-Vertriebsgutschrift – für die EU
 
 Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer die Bibliothek der freigegebenen Anlagen in Microsoft Dynamics Lifecycle Services (LCS) besuchen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
 

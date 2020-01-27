@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2632632b9b21dd3a88e9a4df0e65cfd28e579d2
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697450"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945512"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Bereitstellen eines neuen E-Commerce-Mandanten
 
@@ -88,16 +88,16 @@ Um auf die Erstellungsumgebung zuzugreifen, wechseln zur Registerkarte **E-Comme
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Onlineshop – Überblick](online-store-overview.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
 
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+
+[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
 [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
-
-[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)

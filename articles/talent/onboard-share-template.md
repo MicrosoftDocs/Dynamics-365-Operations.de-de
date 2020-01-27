@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2019-05-06
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: ee86f52a2e1c697d71549a39d9eb86bac33d9ff2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 474c7cc82aaccf6b3bcfb3bbe879725497961c43
+ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812832"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2897142"
 ---
-# <a name="share-content-with-other-contributors-in-dynamics-365-talent---onboard"></a>Hier können Sie Inhalte mit anderen Personen teilen in Dynamics 365 Talent - Onboard
+# <a name="share-content-with-other-contributors"></a>Hier können Sie Inhalte mit anderen Personen teilen
 
 [!include [banner](includes/banner.md)]
 
@@ -34,11 +34,11 @@ Microsoft Dynamics 365 Talent: Onboard ermöglicht es Ihnen: Onboarding Anleitun
 1. Wählen Sie im linken Menü **Anleitungen** und dann das Installationshandbuch aus, das Sie freigeben möchten.
 2. Wählen Sie die Schaltfläche **Mehr** (die drei vertikalen Punkte) in der rechten oberen Ecke der Seite aus, und wählen Sie dann **freigeben**.
 
-    ![[Die Onboarding Anleitung mit anderen beteiligten Personen teilen](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
+    ![[Teilen eines Onboarding-Leitfadens mit anderen Personen](./media/onboard-share-guide.png)](./media/onboard-share-guide.png)
 
 3. Unter **Teilen mit** wenn der Empfänger in der Lage sein sollte, die Anleitung zu überarbeiten, legen Sie die Option **Können diese Personen Änderungen vornehmen** auf **Aktiviert** fest. Wenn Empfänger per E-Mail informiert werden, dass Sie Ihnen die Anleitung freigegeben haben, legen die Option **Senden Sie E-Mail-Benachrichtigung an die Empfänger** auf **Aktiviert** fest.
 
-    ![[Einstellungen und E-Mail-Präferenzen für eine Onboarding-Anleitung festlegen](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
+    ![[Festlegen der Zugriffs- und E-Mail-Einstellungen für einen Onboarding-Leitfaden](./media/onboard-share-guide-with-contributors.png)](./media/onboard-share-guide-with-contributors.png)
 
 4. Geben Sie einen Namen oder eine E-Mail-Adresse ein, und wählen Sie die gewünschten Empfänger in der Dropdownliste aus.
 5. Auf der Registerkarte **Verwalten des Zugriffs** können Sie prüfen oder ändern, was die Empfänger im Handbuch geändert haben. Um den Zugriff eines Empfängers zu ändern, wählen Sie in der Dropdownliste neben dem Namen des Empfängers **Kann anzeigen**, **Kann bearbeiten** oder **Entfernen**, je nach Bedarf aus.
@@ -69,5 +69,5 @@ Microsoft Dynamics 365 Talent: Onboard ermöglicht es Ihnen: Onboarding Anleitun
 
 - [Testen oder kaufen Sie die Onbaord-App](https://dynamics.microsoft.com/talent/onboard/)
 - [Was ist neu oder geändert in Dynamics 365 Talent](./whats-new.md)
-- [Freigabepläne](https://docs.microsoft.com/business-applications-release-notes/index)
+- [Release-Pläne](https://docs.microsoft.com/business-applications-release-notes/index)
 - [Sie erhalten Unterstützung für Microsoft Dynamics 365 Talent](./talent-support.md)

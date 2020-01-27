@@ -3,7 +3,7 @@ title: Leistungsverwaltung
 description: Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -17,16 +17,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 05d8986d69abba4dbba7c30aad5a7e4626ceb5b1
-ms.sourcegitcommit: cadce85ca3004d53caf6bc49147a524c1bfd421f
+ms.openlocfilehash: 18e9606e62bc2739da99b75ab56161bd7cc7eafe
+ms.sourcegitcommit: 724b72412861d342c138a7935319da700b63c234
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "1590504"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2921149"
 ---
 # <a name="performance-management"></a>Leistungsverwaltung
-
-[!include [banner](includes/banner.md)]
 
 Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.  
 
@@ -91,6 +89,8 @@ Für ausführlichere Beurteilungen können Sie die aktiven und abgeschlossenen Z
 Sie können auch den Bereich **Kompetenzen** verwenden, um die Mitarbeiterkompetenzen zu erörtern, zu beurteilen und zu bewerten. Sie können beliebig viele Kompetenzen hinzufügen und festlegen, ob die Kompetenz bewertet werden muss. 
 
 Sie können neue Beurteilungen erstellen, die auf den von Ihnen erstellten Vorlagen basieren. Sie können beispielsweise Vorlagen für Einzelgespräche, Entwicklungspläne oder regelmäßige Beurteilungen verwenden. Wenn Sie eine neue Beurteilung erstellen, können Sie die Vorlage auswählen.
+
+Um Bewertungen auszudrucken, wählen Sie die Taste **Druckansicht** aus. Wenn Sie die Taste auf der Seite **Bewertung** nicht sehen, stellen Sie sicher, dass Sie die Funktion im Arbeitsbereich **Funktionsverwaltung** aktiviert haben. Weitere Informationen zur Feature-Verwaltung finden Sie unter [Feature-Verwaltung Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 ## <a name="components-you-can-include-in-performance-reviews"></a>Mögliche Komponenten für Leistungsbeurteilungen
 Sie können verschiedene Arten von Informationen in Leistungsbeurteilungen berücksichtigen. Dazu gehören zum Beispiel Beurteilungsdetails, Messungen, Aktivitäten, Bewertungen, Abzeichnungen und Anhänge.

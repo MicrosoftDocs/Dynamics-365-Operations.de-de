@@ -8,9 +8,11 @@
           href: index.md
         - name: Neuerungen oder Änderungen
           items:
-            - name: Vorschaufunktionen in Platform update 31 (Januar 2020)
+            - name: Vorschaufunktionen in Plattformupdate 32 (Februar 2020)
+              href: get-started/whats-new-platform-update-32.md
+            - name: Plattformupdate 31 (Januar 2020)
               href: get-started/whats-new-platform-update-31.md
-            - name: Platform update 30 (November 2019)
+            - name: Plattformupdate 30 (November 2019)
               href: ../fin-ops/get-started/whats-new-platform-update-30.md
             - name: "Platform update\_29 (Oktober 2019)"
               href: ../fin-ops/get-started/whats-new-platform-update-29.md
@@ -30,10 +32,14 @@
               href: ../fin-ops/get-started/whats-new-platform-update-22.md
             - name: Platform update 21 (November 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-21.md
-            - name: "Platform update\_20 (September\_2018)"
+            - name: "Plattformupdate\_20 (September\_2018)"
               href: ../fin-ops/get-started/whats-new-platform-update-20.md
-            - name: Platform update 15 (März 2018)
+            - name: Plattformupdate 15 (März 2018)
               href: ../fin-ops/get-started/whats-new-platform-update-15.md
+            - name: Neuerungen oder Änderungen in vorherigen Versionen
+              items:
+                - name: Neuerungen oder Änderungen in Finance and Operations – Startseite
+                  href: ../fin-ops/get-started/whats-new-changed.md
         - name: Geschäftsereignisse
           items:
             - name: Geschäftsereignisse – Übersicht
@@ -410,7 +416,7 @@
                   href: deployment/develop-deploy-custom-models-on-premises.md
                 - name: PowerBI.com-Integration mit lokalen Umgebungen
                   href: analytics/entity-store-on-prem.md
-                - name: Konfigurieren von Reverseproxys für lokale Umgebungen
+                - name: Konfigurieren von Proxys für lokale Umgebungen
                   href: deployment/onprem-reverseproxy.md
                 - name: Updates auf eine lokale Bereitstellung anwenden
                   href: deployment/apply-updates-on-premises.md
@@ -916,7 +922,7 @@
           items:
             - name: Ressourcen für Lifecycle-Services
               items:
-                - name: "Ressourcen für Lifecycle\_Services"
+                - name: "Lifecycle\_Services-Ressourcen"
                   href: lifecycle-services/lcs.md
                 - name: LCS für Kunden
                   href: lifecycle-services/lcs-works-lcs.md
@@ -926,6 +932,8 @@
                   href: lifecycle-services/whats-new-lcs.md
                 - name: Bekannte Probleme
                   href: lifecycle-services/known-issues.md
+                - name: Entfernte oder veraltete Funktionen in Lifecycle Services (LCS)
+                  href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services-Benutzerhandbuch
               href: lifecycle-services/lcs-user-guide.md
             - name: Abonnementskalkulator

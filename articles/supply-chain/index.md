@@ -3,7 +3,7 @@ title: Supply Chain Management – Hilferessourcen
 description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
 author: josaw1
 manager: AnnBe
-ms.date: 10/01/2019
+ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4926cd63aa360c7e08a0a435f7609017f02cb229
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
+ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814420"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "2853987"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management – Hilferessourcen
 
@@ -115,7 +115,6 @@ Es gibt viele Themen zur Produktion und Lieferkettenverwaltung unter <a href="ht
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktische Übungseinheiten zur Kostenrechnung</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Stücklistenberechnung anhand eines Nachkalkulationsbogens</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Mobilität am von Microsoft Dynamics 365 for Finance and Operations verwalteten Lagerort</a>
 
 ## <a name="elearning-courses"></a>eLearning-Kurse
 Weitere Informationen zu Dynamics 365-Schulungen finden Sie im <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> Microsoft Dynamics-Lernportal</a>. (erfordert ein CustomerSource-Konto) 

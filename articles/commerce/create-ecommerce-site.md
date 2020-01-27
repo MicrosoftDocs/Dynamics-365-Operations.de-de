@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fd87a51b73deae64867b0420c00db9fce7c79336
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697128"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945834"
 ---
 # <a name="create-an-e-commerce-site"></a>Erstellen einer E-Commerce-Webseite
 
@@ -59,20 +59,16 @@ Nachdem Ihre Site erstellt wurde, können Sie prüfen, dass sie Ihrem Onlineshop
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Onlineshop – Überblick](online-store-overview.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+
+[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
 [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)
-
-[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
-
-[Übersicht über die Erstellung von Startseiten](authoring-home-overview.md)
-
-[Neue Seite hinzufügen](add-new-page.md)

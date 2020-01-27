@@ -3,7 +3,7 @@ title: Eingabehilfefunktionen
 description: In diesem Thema werden die Funktionen erläutert, die für Benutzer gestaltet ist, die unter verschiedenen Behinderungen leiden.
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 09/10/2019
+ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 7cc63320a3ba055a0c18ab59447f34a86bc0dc87
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8ec4ee4654bdf306e179dcac5bf246df7f2b8cf7
+ms.sourcegitcommit: c3bc5dd007d9f063631232497bd4cda9214e2e5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180851"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872441"
 ---
 # <a name="accessibility-features"></a>Eingabehilfefunktionen
 
@@ -40,7 +40,7 @@ Für die meisten Benutzer umfasst die tägliche Systemverwendung viele Dateneing
 
 Jede Seite, die über das Navigationsbereichsmenü aufgerufen wird, ist auch über den am weitesten links stehende Bereich über das Kästchen **Suchen** verfügbar. Drücken Sie ALT+G, um den Fokus auf das Feld **Suchen** zu richten und geben Sie dann den Namen oder die Beschreibung der Seite ein.
 
-!["Bankkonten" in das Suchfeld eingegeben](media/6d08b0be32808221023e2aa92d69fd70.png "\"Bankkonten\" in das Suchfeld eingegeben")
+![„Bankkonten“ im Suchfeld eingeben](media/6d08b0be32808221023e2aa92d69fd70.png "'Bankkonten' im Suchfeld eingeben")
 
 Weitere Informationen finden Sie unter [Navigationssuche](navigation-search.md)
 
@@ -55,7 +55,7 @@ Jede Aktivität, die auf einer Seite angegeben wird, kann über eine Tastatur ü
 
 Sie möchten die Aktivität **E-Mail-Benachrichtigungsprotokoll** ausführen, die in der Gruppe **E-Mail-Benachrichtigung** auf der Registerkarte **Auftrag** im Aktivitätsbereich angezeigt wird.
 
-![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich")
+![E-Mail-Benachrichtigungs-Protokollaktivität im Aktivitätsbereich](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "'E-Mail-Benachrichtigungs-Protokollaktivität' im Aktivitätsbereich")
 
 Eine Option ist, die Tastatur zu verwenden. Drücken Sie STRG+F6, um den Fokus im Aktivitätsbereich zu verschieben, und die Registerkarte der Verschiebung von allen Registerkarten und Aktivitäten wiederholt zu übertragen, nachdem die Aktivität **E-Mail-Benachrichtigungsprotokoll** im Fokus liegt.
 
@@ -65,11 +65,11 @@ Sie können jedoch auch die Aktivität direkt ausführen. Von Überall auf der S
 
 Im Suchfeld tippen Sie Wörter ein, die die Aktion beschreiben. Die Aktivität wird für Sie verfügbar gemacht, und Sie können sie direkt ausführen. Beispielsweise indem Sie **E-Mail**, **benachrich** (ein Teil eines Worts) oder **Protokoll** eingeben, können Sie zur E-Mail-Benachrichtigungs-Protokollfunktionen springen.
 
-!["E-Mail" in das Suchfeld eingegeben](media/image4.png "'E-Mail' in das Suchfeld eingegeben")
+![„E-Mail“ im Suchfeld eingeben](media/image4.png "'E-Mail' im Suchfeld eingeben")
 
-!["Benachrich" in das Suchfeld eingegeben](media/image5.png "'Benachrich' in das Suchfeld eingegeben")
+![„Benachrich“ im Suchfeld eingeben](media/image5.png "'Benachrich' im Suchfeld eingeben")
 
-!["Protokoll" in das Suchfeld eingegeben](media/image6.png "'Protokoll' in das Suchfeld eingegeben")
+![„Protokoll“ im Suchfeld eingeben](media/image6.png "„Protokoll“ im Suchfeld eingeben")
 
 Wenn Sie fertig sind, können Sie Ctrl+Apostrophe erneut drücken, um dem Fokus wieder auf das Feld zu richten, an dem Sie gearbeitet haben, bevor Sie zur Aktivitätssuche wechselten.
 
@@ -81,7 +81,7 @@ In der täglichen Systemverwendung nicht jedes Feld obligatorisch, um jede Aufga
 
 Allerdings stellen Sie möglicherweise fest, dass einige Felder, die Sie häufig aufrufen, um Aufgaben auszuführen, nicht in der Standardtabulatorsequenz enthalten sind. In diesem Fall, wenn Sie Windows-Sprachausgabe auswählen, können Sie die Windows-Sprachausgaben-Tastatur-Aktivitäten nutzen, um auf diese Felder zuzugreifen und ihren Inhalt zu überprüfen. Sie können auch die Option **Erweiterte Tabulatorsequenz** auf der Seite **Optionen** aktivieren. Diese Option macht alle bearbeitbaren und schreibgeschützten Felder Teil der Tabulatorsequenz. Sie können die Seitenpersonalisierung dann verwenden, um eine benutzerdefinierte Tabulatorsequenz zu erstellen und Felder zu unterdrücken, die nicht Teil der Tabulatorsequenz sein müssen. Weitere Informationen über die Personalisierung, finden Sie unter [Personalisieren Sie die Benutzerfreundlichkeit](personalize-user-experience.md).
 
-!["Verbesserte Registerkartensequenz"-Option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "'Verbesserte Registerkartensequenz'-Option")
+![Option „Erweiterte Tabulatorsequenz“](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "Option „Erweiterte Tabulatorsequenz“")
 
 ## <a name="form-patterns"></a>Formularmuster
 
@@ -92,6 +92,8 @@ Fast 90 Prozent der Seiten in der App sind auf einem kleinen Satz Muster basiert
 ## <a name="responsive-layout"></a>Responsives Layout
 
 Das Produkt wurde so entworfen, dass es auf verschieden Geräten und Formularfaktoren arbeitet, von den kleinsten Bildschirmen bis hin zu großen Bildschirmen mit höchster Auflösung. Mit unserem reagierenden Layoutmodul können Benutzer ein Vergrößerungsniveau von 200 Prozent erzielen (oder in einigen Szenarien mehr als 200 Prozent ).
+
+Auf Smartphones und anderen kleinen Bildschirmen passen sich die Steuerelemente und das Formularlayout an, um sicherzustellen, dass die Kerndaten bevorzugt werden. Zu diesen Reaktionsverhalten kann auch gehören, dass die Anzahl der Spalten in Gruppen und Registerkarten auf eine einzige Spalte reduziert wird, Shell-Elemente ausgeblendet werden und der Aktionsbereich ausgeblendet wird.
 
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Empfehlungen, um Entwickler und Kunden zu helfen, Eingabehilfen in Ihre Anpassungen zu integrieren.
 

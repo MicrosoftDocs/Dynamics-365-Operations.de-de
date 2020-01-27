@@ -3,7 +3,7 @@ title: Filter auf einen Plan anwenden
 description: In diesem Thema wird erläutert, wie Sie Filter auf einem Plan verwenden, wenn Sie die Funktionalität der Planungsoptimierung verwenden.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/30/2019
+ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ff9c9f875368fcc4dd62b9c188d489e20a5c7960
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 9d1431cc8db6fb28d1f1ec73ee07dd15e78f82e8
+ms.sourcegitcommit: 65f4b8a751670a7fe9ef4cb8b218213f792d57a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773967"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945418"
 ---
 [!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 # <a name="apply-filters-to-a-plan"></a>Filter auf einen Plan anwenden
 
-Wenn Sie die Funktionalität der Planungsoptimierung nutzen, können Sie einen Filter auf einen Plan anwenden. Der Planfilter wird immer während eines Masterplanungslaufs angewendet. Ein Planfilter ist sinnvoll, wenn Sie einen Plan auf eine bestimmte Gruppe von Positionen beschränken und sicherstellen wollen, dass keine weiteren Positionen in die resultierende Masterplanung einbezogen werden.
+Wenn Sie die Funktionalität der Planungsoptimierung nutzen, können Sie einen Filter auf einen Plan anwenden. Der **Planfilter** wird immer während einer Masterplanungsausführung angewendet. Ein **Planfilter** ist sinnvoll, wenn Sie einen Plan auf eine bestimmte Gruppe von Positionen beschränken und sicherstellen wollen, dass keine weiteren Positionen in die resultierende Masterplanung einbezogen werden.
 
-Wenn ein Planfilter angewendet wird und während des Masterplanungslaufs auch ein Laufzeitfilter angewendet wird, wird nur die Schnittmenge der beiden Filter in den Planungslauf einbezogen.
+Wenn ein **Planfilter** angewendet wird und während der Masterplanungsausführung auch ein Laufzeitfilter angewendet wird, wird nur die Schnittmenge der beiden Filter in die Planungsausführung einbezogen.
+
+Der **Planungsfilter** kann über **Masterpläne** aufgerufen werden, wenn die Planungsoptimierung verwendet wird.
 
 ## <a name="example-scenario"></a>Beispielszenario
 

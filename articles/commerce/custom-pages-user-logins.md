@@ -3,7 +3,7 @@ title: Einrichten angepasster Seiten für die Benutzeranmeldung
 description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Mandanten von Azure Active Directory (Azure AD) Onlinebankenlösungen (B2C) verarbeiten.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 644d937ddd3c219ae869f22d977d2846dffc20e1
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 20bfacbc2374003814e12e7737644d118d404cc0
+ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697565"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2945558"
 ---
 # <a name="set-up-custom-pages-for-user-logins"></a>Einrichten angepasster Seiten für die Benutzeranmeldungen
 
@@ -136,11 +136,11 @@ Um die Richtlinie „registrieren und anmelden“ mit benutzerdefinierten Seiten
 1. In der Richtlinie **Anmelden und abmelden** die Sie eben im Navigationsbereich konfiguriert haben, wählen Sie **Seitenlayouts** aus.
 1. Wählen Sie das Layout **Einheitliche An- und Abmeldung auf der Seite** aus.
 1. Hier können Sie die Option **Benutzerdefinierten Seiteninhalt verwwenden** auf **Ja** fest.
-1. Im Feld **Benutzerdefinierte Seiten-URLe** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Zum Beispiel geben Sie **www.\<my domain\>.com/sign-in?preloadscripts=true** ein.
+1. Im Feld **Benutzerdefinierte Seiten-URLe** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Geben Sie beispielsweise ``www.<my domain>.com/sign-in?preloadscripts=true`` ein.
 1. Im Feld **Seitenlayoutversion (Vorschau)** wählen Sie **1.2.0** aus.
 1. Wählen Sie das Layout **Lokale Kontoanmeldeseite** aus.
 1. Hier können Sie die Option **Benutzerdefinierten Seiteninhalt verwwenden** auf **Ja** fest.
-1. Im Feld **Benutzerdefinierte Seiten-URLe** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Zum Beispiel geben Sie **www.\<my domain\>.com/sign-in?preloadscripts=true** ein.
+1. Im Feld **Benutzerdefinierte Seiten-URI** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Geben Sie beispielsweise ``www.<my domain>.com/sign-up?preloadscripts=true`` ein.
 1. Im Feld **Seitenlayoutversion (Vorschau)** wählen Sie **1.2.0** aus.
 1. Im Abschnitt **Benutzerattribute** folgen Sie diesen Schritten:
 
@@ -156,7 +156,7 @@ Um die Richtlinie „Profil bearbeiten“ mit benutzerdefinierten Seiteninformat
 1. In der Richtlinie **Profil bearbeiten** die Sie eben im Navigationsbereich konfiguriert haben, wählen Sie **Seitenlayouts** aus.
 1. Wählen Sie das Layout **Profilbearbeitungsseite** aus.
 1. Hier können Sie die Option **Benutzerdefinierten Seiteninhalt verwwenden** auf **Ja** fest.
-1. Im Feld **Benutzerdefinierte Seiten-URLe** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Zum Beispiel geben Sie **www.\<my domain\>.com/sign-in?preloadscripts=true** ein.
+1. Im Feld **Benutzerdefinierte Seiten-URI** geben Sie die vollständige Profilbearbeitungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Geben Sie beispielsweise ``www.<my domain>.com/profile-edit?preloadscripts=true`` ein.
 1. Im Feld **Seitenlayoutversion (Vorschau)** wählen Sie **1.2.0** aus.
 1. Im Abschnitt **Benutzerattribute** folgen Sie diesen Schritten:
 
@@ -170,12 +170,14 @@ Um die Richtlinie „Kennwort zurücksetzen“ mit benutzerdefinierten Seiteninf
 1. In der Richtlinie **Kennwort zurücksetzen** die Sie eben im Navigationsbereich konfiguriert haben, wählen Sie **Seitenlayouts** aus.
 1. Wählen Sie das Layout **Neue Kennwortseite** aus.
 1. Hier können Sie die Option **Benutzerdefinierten Seiteninhalt verwwenden** auf **Ja** fest.
-1. Im Feld **Benutzerdefinierte Seiten-URLe** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Zum Beispiel geben Sie **www.\<my domain\>.com/sign-in?preloadscripts=true** ein.
+1. Im Feld **Benutzerdefinierte Seiten-URI** geben Sie die vollständige URL zum Zurücksetzen von Passwörtern ein. Schließt das Suffix **? preloadscripts=true** ein. Geben Sie beispielsweise ``www.<my domain>.com/passwordreset?preloadscripts=true`` ein.
 1. Im Feld **Seitenlayoutversion (Vorschau)** wählen Sie **1.2.0** aus.
 1. Wählen Sie das Layout **Kontoenprüfungsseite** aus.
 1. Hier können Sie die Option **Benutzerdefinierten Seiteninhalt verwwenden** auf **Ja** fest.
-1. Im Feld **Benutzerdefinierte Seiten-URLe** geben Sie die vollständige Anmeldungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Zum Beispiel geben Sie **www.\<my domain\>.com/sign-in?preloadscripts=true** ein.
+1. Im Feld **Benutzerdefinierte Seiten-URI** geben Sie die vollständige Überprüfungs-URL ein. Schließt das Suffix **? preloadscripts=true** ein. Geben Sie beispielsweise ``www.<my domain>.com/passwordreset-verification?preloadscripts=true`` ein.
 1. Im Feld **Seitenlayoutversion (Vorschau)** wählen Sie **1.2.0** aus.
+
+
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Passen Sie Standardtextzeichenfolgen für Beschriftungen und Beschreibungen an
 
@@ -193,15 +195,15 @@ Nachdem Sie die global.json-Datei aktualisiert und die Änderungen veröffentlic
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Onlineshop – Überblick](online-store-overview.md)
-
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
+[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
 
 [Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
 

@@ -3,12 +3,12 @@ title: Produktbezeichner
 description: Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
 author: cvocph
 manager: AnnBe
-ms.date: 03/23/2018
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResProductEntityIdentifierCode
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: josaw
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 68be63370eca0089649c47de0ba0bc9bd335b905
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
+ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250598"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934885"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner 
 
@@ -43,6 +43,9 @@ In vielen Fällen wird die Produktnummer ursprünglich nicht in Dynamics 365 Sup
 Wenn Sie Supply Chain Management implementieren, sollten Sie Ihrer Strategie für Produktnummern besondere Aufmerksamkeit widmen. Ein Zahlensystem gutes verbessert Logistikflüsse und hilft verhindern Fehler. Eine gute Produktkennung ist maximal 15 Zeichen lang. Idealerweise hat diese weniger als 10 Zeichen und schließt nicht mehr als klassifizierende fünf Zeichen ein. Sie können auch Suchnamen verwenden, um Schnellsuchen zu ermöglichen. Ein Suchbegriff ist ein zusätzlicher Name, der die Klassifizierungen eines Produkts darstellt.
 
 Wenn Sie Common Data Service verwenden, ist die Produktnummer in Supply Chain Management auch die Produktnummer in Common Data Service. Produktvarianten werden zu den Common Data Service als eindeutig identifizierbare Produkte synchronisiert.
+
+> [!NOTE]
+> Die Produktnummer darf nicht mit "%" beginnen.
 
 ## <a name="item-number-and-product-dimensions"></a>Artikel- und Produktdimensionen
 
