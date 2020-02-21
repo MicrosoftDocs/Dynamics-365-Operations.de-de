@@ -1,7 +1,7 @@
-Wenn Sie eine Datenbank von einer Umgebung in eine andere kopieren, müssen Sie das Tool zur erneuten Bereitstellung der Umgebung ausführen, bevor die kopierte Datenbank nach Ausführung dieses Schritts voll funktionsfähig ist, um zu gewährleisten, dass alle Retail-Komponenten aktuell sind.
+Wenn Sie eine Datenbank von einer Umgebung in eine andere kopieren, müssen Sie das Tool zur erneuten Bereitstellung der Umgebung ausführen, bevor die kopierte Datenbank nach Ausführung dieses Schritts voll funktionsfähig ist, um zu gewährleisten, dass alle Commerce-Komponenten aktuell sind.
 
 > [!IMPORTANT]
-> Es wird empfohlen, diese Vorgehensweise unabhängig davon durchzuführen, ob Sie Retail-Komponenten verwenden oder nicht, da die Retail-Funktionalität in allen Umgebungen enthalten ist. 
+> Es wird empfohlen, diese Vorgehensweise unabhängig davon durchzuführen, ob Sie Commerce-Komponenten verwenden oder nicht, da die Commerce-Funktionalität in allen Umgebungen enthalten ist. 
 
 Bevor Sie fortfahren, müssen Sie sicherstellen, dass die folgenden Voraussetzungen erfüllt sind:
 1. Wenn Sie auf die Version vom Juli 2017 (auch bekannt als 7.2) 7.2.11792.56024 aktualisieren, wenden Sie die folgenden X++-Hotfixes der Anwendung in der Zielumgebung an, bevor Sie die Aktualisierung der Daten in dieser Umgebung durchführen. Dadurch wird verhindert, dass während der Aktualisierung der Daten verschiedene Fehler auftreten:

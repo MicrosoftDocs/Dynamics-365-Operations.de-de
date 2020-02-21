@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89139c149146b64125370c3840f8d3011b92e067
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770918"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005539"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-Anwendungsdokumentation
 
@@ -30,7 +30,7 @@ ms.locfileid: "2770918"
 
 In diesem Thema erfahren Sie, wie Sie Finance and Operations-Anwendungen erfolgreich in Ihrem Unternehmen einsetzen können. Dazu dienen die Ressourcen unten, in denen Sie ausgezeichneten Inhalt für Endbenutzer, Entwickler und IT-Fachkräfte finden. 
 
-Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 365 Retail und Talent. 
+Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 365 Commerce und Dynamics 365 Human Resources. 
 
 <table>
 <colgroup>
@@ -56,7 +56,7 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software-Lebenszyklusrichtlinie: Cloud</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software-Lebenszyklusrichtlinie: On-Premises</a></p>
 <p><a href="get-started/public-preview-releases.md">Standardrelease- und First Release-Dienstupdates</a></p>
-<p><a href="get-started/whats-new-changed.md">Neuerungen oder Änderungen</a></p>
+<p><a href="get-started/whats-new-changed.md">Neuigkeiten oder Änderungen</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, Updates und Hotfixes</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Updates auf Cloudumgebungen anwenden</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Dienstupdates konfigurieren</a></p>
@@ -72,7 +72,7 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 
 <h3><a href="../../finance/index.md">Finanzverwaltung</a></h3>
 <p><a href="../../finance/accounts-payable/accounts-payable.md">Kreditorenkonten</a></p>
-<p><a href="../../finance/accounts-receivable/accounts-receivable.md">Debitoren</a></p>
+<p><a href="../../finance/accounts-receivable/accounts-receivable.md">Debitorenkonten</a></p>
 <p><a href="../../finance/budgeting/budgeting-overview.md">Budgetierung</a></p>
 <p><a href="../../finance/cash-bank-management/cash-bank-management.md">Bargeld- und Bankverwaltung</a></p>
 <p><a href="../../finance/general-ledger/audit-policy-rules.md">Konformität</a></p>
@@ -84,9 +84,9 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale gesetzliche Besonderheiten</a></p>
 
 <h3><a href="hr/hr-landing-page.md">Personalverwaltung</a></h3>
-<p><a href="../../talent/manage-benefit-program.md">Vergütungen</a></p>
-<p><a href="../../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
-<p><a href="../../talent/questionnaires.md">Fragebogen</a></p>
+<p><a href="../../human-resources/hr-benefits-manage-program.md">Vorteile</a></p>
+<p><a href="../../human-resources/hr-develop-performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
+<p><a href="../../human-resources/hr-learning-questionnaires.md">Fragebögen</a></p>
 <p><a href="hr/manage-recruiting-process.md">Personalbeschaffung</a></p>
 <p><a href="hr/localizations/noam-usa-payroll.md">US-Lohn</a></p>
 
@@ -129,16 +129,17 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 </td>
 <td>
 <h3>Zugehörige Produkte</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Retail</a></h4>
+<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
 <p><a href="../../retail/call-center-functionality.md">Callcenter</p>
 <p><a href="../../retail/define-maintain-retail-channels.md">Kanaleinrichtung und -verwaltung</p>
-<p><a href="../../retail/retail-peripherals-overview.md">MPOS und Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Retail-Entwickler und -Verwaltung</p>
+<p><a href="../../retail/retail-peripherals-overview.md">MPOS und Cloud POS</p>
+<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Commerce-Entwickler und -Verwaltung</p>
 
-<h4><a href="../../talent/index.yml">Dynamics 365 Talent</a></h4>
-<p><a href="../../talent/manage-benefit-program.md">Vergütungen</a></p>
-<p><a href="../../talent/performance-management-overview.md">Mitarbeiterentwicklung und -schulung</a></p>
-<p><a href="../../talent/questionnaires.md">Fragebogen</a></p>
+<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<p><a href="../../human-resources/hr-admin-overview.md">Administratorhandbuch</a></p>
+<p><a href="../../human-resources/hr-developer-overview.md">Entwicklerhandbuch</a></p>
+<p><a href="../../human-resources/hr-hrpro-overview.md">Benutzerhandbuch</a></p>
+
 
 </td>
 </tr>
