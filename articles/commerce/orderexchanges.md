@@ -1,0 +1,53 @@
+---
+title: Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung
+description: In diesem Thema wird erläutert, wie Sie einen Austausch für eine Rücklieferung im Dynamics 365 Commerce konfigurieren.
+author: josaw1
+manager: AnnBe
+ms.date: 11/12/2018
+ms.topic: index-page
+ms.prod: ''
+ms.service: dynamics-365-retail
+ms.technology: ''
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
+ms.custom: ''
+ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
+ms.search.region: global
+ms.search.industry: Retail
+ms.author: josaw
+ms.search.validFrom: 2018-11-15
+ms.dyn365.ops.version: ''
+ms.openlocfilehash: a6d7688e78a375bc262b1156c5439c0fff7cd1f0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004434"
+---
+# <a name="configure-and-process-an-exchange-on-a-return-order"></a><span data-ttu-id="989a2-103">Konfigurieren und Verarbeiten eines Austausch für eine Rücklieferung</span><span class="sxs-lookup"><span data-stu-id="989a2-103">Configure and process an exchange on a return order</span></span>
+
+[!include [banner](includes/banner.md)]
+
+<span data-ttu-id="989a2-104">In älteren Versionen von Dynamics 365 Commerce werden Rücklieferungen für Kundenaufträge mithilfe des Rücklieferungsdokuments in der Zentralverwaltung verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="989a2-104">In previous versions of Dynamics 365 Commerce, returns against customer orders were processed by using the return order document in Headquarters.</span></span> <span data-ttu-id="989a2-105">Doch das Rücklieferungsdokument kann auch ausschließlich für die Bearbeitung von Produkten verwendet werden, die zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="989a2-105">However, the return order document can be used to process only products that are being returned.</span></span> <span data-ttu-id="989a2-106">Die zurückgelieferten Produkte werden durch eine negative Menge in den Rücklieferungspositionen angegeben.</span><span class="sxs-lookup"><span data-stu-id="989a2-106">The returned products are indicated by a negative quantity on the return order lines.</span></span> <span data-ttu-id="989a2-107">Dagegen wird im Umsatz eine positive Menge angegeben.</span><span class="sxs-lookup"><span data-stu-id="989a2-107">By contrast, sales are indicated by a positive quantity.</span></span> <span data-ttu-id="989a2-108">Das Rücklieferungsdokument unterstützt jedoch keine positiven Mengen.</span><span class="sxs-lookup"><span data-stu-id="989a2-108">However, the return order document doesn't support positive quantities.</span></span> <span data-ttu-id="989a2-109">Aufgrund dieser Einschränkung wurden in früheren Versionen der App keine Szenarien unterstützt, in denen Produktumtauschaktivitäten mithilfe des Rücklieferungsdokuments durchgeführt wurden.</span><span class="sxs-lookup"><span data-stu-id="989a2-109">Because of this limitation, previous versions of the app didn't support scenarios where product exchanges are done by using the return order document.</span></span>
+
+<span data-ttu-id="989a2-110">Allerdings wurden Funktionen hinzugefügt, die Szenarien unterstützen, in denen der Umtausch mithilfe von Rücklieferungen erfolgt.</span><span class="sxs-lookup"><span data-stu-id="989a2-110">However, functionality has been added to support scenarios where exchanges are done on return orders.</span></span> <span data-ttu-id="989a2-111">Commerce verwendet nun das Auftragsdokument anstelle des Rücklieferungsdokuments, um die Transaktionsarten zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="989a2-111">Commerce now uses the sales order document instead of the return order document to process these types of transactions.</span></span>
+
+## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a><span data-ttu-id="989a2-112">Konfigurieren von Commerce für die Unterstützung von Rücklieferungen</span><span class="sxs-lookup"><span data-stu-id="989a2-112">Configure Commerce to support exchanges on return orders</span></span>
+
+<span data-ttu-id="989a2-113">Gehen Sie folgendermaßen vor, um das System so zu konfigurieren, dass Umtausch mit Rücklieferungen unterstützt wird.</span><span class="sxs-lookup"><span data-stu-id="989a2-113">Follow these steps to configure the system to support exchanges on return orders.</span></span>
+
+1. <span data-ttu-id="989a2-114">Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Handelsparameter**.</span><span class="sxs-lookup"><span data-stu-id="989a2-114">Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.</span></span> <span data-ttu-id="989a2-115">Legen Sie im Inforegister **Kundenaufträge** die Option **Rücklieferungen als Aufträge verarbeiten** auf **Ja** fest.</span><span class="sxs-lookup"><span data-stu-id="989a2-115">On the **Customer orders** FastTab, set the **Process return orders as sales orders** option to **Yes**.</span></span>
+2. <span data-ttu-id="989a2-116">Führen Sie den Auftrag **Globaler Konfigurationsverteilungszeitplan** (**1110**) aus.</span><span class="sxs-lookup"><span data-stu-id="989a2-116">Run the **Global configuration distribution schedule** job (**1110**).</span></span>
+
+## <a name="make-an-exchange"></a><span data-ttu-id="989a2-117">Durchführen eines Umtauschs</span><span class="sxs-lookup"><span data-stu-id="989a2-117">Make an exchange</span></span>
+
+<span data-ttu-id="989a2-118">Wenn das System wie im vorigen Abschnitt beschrieben konfiguriert ist, wählt der Verkaufsstellen (POS)-Benutzer immer noch einen Auftrag oder eine Verkaufsrechnung aus, um eine Rücklieferung zu verarbeiten. Dies hat sich seit den vorherigen Versionen der App nicht geändert.</span><span class="sxs-lookup"><span data-stu-id="989a2-118">After the system is configured as described in the previous section, the point of sale (POS) user will still select a sales order or sales invoice to process a return, as in previous versions of the app.</span></span> <span data-ttu-id="989a2-119">Wenn jedoch die Rückgabeartikel in den Einkaufskorb gelegt wurden, kann der Benutzer dem Einkaufskorb neue Auftragspositionen hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="989a2-119">However, after the return items are added to the cart, the user will be able to add new sales lines to the cart.</span></span>
+
+<span data-ttu-id="989a2-120">Für diese neuen Auftragspositionen muss der Benutzer alle Attribute definieren, die für die Verarbeitung von Kundenauftragsposition erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="989a2-120">For these new sales lines, the user must define all the attributes that are required in order to process a customer order line.</span></span> <span data-ttu-id="989a2-121">Diese Attribute enthalten die Lieferarten und den Erfüllungsstandort.</span><span class="sxs-lookup"><span data-stu-id="989a2-121">These attributes include the delivery method and fulfillment location.</span></span> <span data-ttu-id="989a2-122">Die Zahlung, die für die Transaktion fällig ist, ist der Nettobetrag der Rücklieferungspositionen und Auftragspositionen.</span><span class="sxs-lookup"><span data-stu-id="989a2-122">The payment that is due for the transaction will be a net of the return order lines and sales order lines.</span></span> <span data-ttu-id="989a2-123">Erfolgt die Zahlung für die Transaktion, wird die Rücklieferung in der Zentralverwaltung als Auftragsdokument gebucht, und das System erstellt sofort eine Rechnung für die Rückgabepositionen.</span><span class="sxs-lookup"><span data-stu-id="989a2-123">When payment is tendered for the transaction, the return order will be posted as a sales order document in Headquarters, and the system will immediately invoice the return lines.</span></span>
+
+<span data-ttu-id="989a2-124">Zur besseren Übersicht über die unterschiedlichen Mengen für den Einkaufskorb wurden dem Einkaufskorb drei neue Betragsfelder hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="989a2-124">To provide better visibility into the various amounts for the cart, three new amount fields have been added to the cart.</span></span> <span data-ttu-id="989a2-125">Mithilfe des Bildschirmdesigners können Sie diese neuen Felder in der POS-Benutzeroberfläche (UI) bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="989a2-125">You can use the screen designer to make these new fields available in the POS user interface (UI).</span></span>
+
+- <span data-ttu-id="989a2-126">**Einzahlung angewendet** – Der Einzahlungsbetrag, der in einer Transaktion verwendet wird, wenn der Benutzer einen Kundenauftrag auswählt.</span><span class="sxs-lookup"><span data-stu-id="989a2-126">**Deposit applied** – The deposit amount that is applied on a transaction when the user does a customer order pickup.</span></span> <span data-ttu-id="989a2-127">Wenn die Einzahlung nicht überschrieben wird und eine Einzahlung von 10 Prozent konfiguriert wurde, beläuft sich der Betrag in diesem Feld auf 90 Prozent des Gesamtbetrags des Kundenauftrags.</span><span class="sxs-lookup"><span data-stu-id="989a2-127">If there is no deposit override, and a 10-percent deposit is configured, the amount in this field is 90 percent of the total amount of the customer order.</span></span>
+- <span data-ttu-id="989a2-128">**Betrag ausführen** – Der Gesamtbetrag für Positionen, in denen die Lieferart bei der Erstellung oder Bearbeitung des Kundenauftrags oder bei einem Umtausch eines Kundenauftrags auf **Ausführen** festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="989a2-128">**Carry out amount** – The total amount for lines where the delivery mode was set to **Carry out** when the customer order was created or edited, or during a customer order exchange.</span></span> <span data-ttu-id="989a2-129">Der Betrag in diesem Feld enthält die Steuern und Belastungen.</span><span class="sxs-lookup"><span data-stu-id="989a2-129">The amount in this field includes taxes and charges.</span></span>
+- <span data-ttu-id="989a2-130">**Rückgabebetrag** – Der Gesamtbetrag für Positionen, die negative Mengen für den Kundenauftragsumtausch haben.</span><span class="sxs-lookup"><span data-stu-id="989a2-130">**Return amount** – The total amount for lines that have negative quantities during the customer order exchange.</span></span> <span data-ttu-id="989a2-131">Der Betrag in diesem Feld enthält die Steuern und Belastungen.</span><span class="sxs-lookup"><span data-stu-id="989a2-131">The amount in this field includes taxes and charges.</span></span>

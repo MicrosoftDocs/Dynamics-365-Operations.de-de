@@ -52,31 +52,31 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemanforderungen für On-Premises-Bereitstellungen
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations (On-Premises) kaufen
+                - name: Finance and Operations (on-premises) kaufen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurieren der Lagerung für lokale Bereitstellungen
+                - name: Lagerung für lokale Bereitstellungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Finance and Operations-Apps, bearbeitet von 21Vianet in China'
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and Operations-Apps in Frankreich
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Neuerungen oder Änderungen
+            - name: Neuigkeiten oder Änderungen
               items:
-                - name: Supply Chain Management Version 10.0.7 (Dezember 2019)
-                  href: get-started/whats-new-scm-10-0-7.md
-                - name: Supply Chain Management 10.0.6 (November 2019)
-                  href: get-started/whats-new-scm-10-0-6.md
-                - name: Neuerungen oder Änderungen in vorherigen Versionen
+                - name: Neuigkeiten oder Änderungen in Finance and Operations-Apps
+                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Neuigkeiten oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuerungen oder Änderungen in Finance and Operations – Startseite
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Finance and Operations, Enterprise Edition 7.3'
-                      href: ../fin-ops-core/fin-ops/get-started/whats-new-application-7.3-update.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Neuigkeiten oder Änderungen in Supply Chain Management – Startseite
+                      href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management Version 10.0.8 (Februar 2020)
+                      href: get-started/whats-new-scm-10-0-8.md
+                    - name: Supply Chain Management Version 10.0.7 (Januar 2020)
+                      href: get-started/whats-new-scm-10-0-7.md
                 - name: Entfernte oder veraltete Funktionen
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: "Verschobene Funktionen von AX\_2012"
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Nicht in On-Premises-Bereitstellungen implementierte Funktionen
+                - name: Nicht in lokale Bereitstellungen implementierte Funktionen
                   href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
                   href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
@@ -84,7 +84,7 @@
               items:
                 - name: Hilfesystem
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Verbinden des Hilfesystems
+                - name: Das Hilfesystem verbinden
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Verbinden einer benutzerdefinierten Hilfe-Website
                   href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/supply-chain/toc.json
@@ -162,7 +162,7 @@
               items:
                 - name: Implementierung der Lebenszyklusverwaltung – Startseite
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Architektur von Finance and Operations-Apps
+                - name: Architektur für Finance and Operations-Apps
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack for Finance and Operations
                   href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -196,7 +196,7 @@
               items:
                 - name: Russland – Übersicht
                   href: ../finance/localizations/russia.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Lager
+                - name: Bestand
                   items:
                     - name: Waren in Zustellung vom Kreditor
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
@@ -467,9 +467,9 @@
               href: ../finance/cost-accounting/statistical-measure-provider-template.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zuteilungsbasen
               href: ../finance/cost-accounting/allocation-bases.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Eine Kostenzuweisungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
+            - name: Eine Kostenzuweisungsrichtlinie für eine Kostenkontrolleinheit erstellen und zuweisen
               href: ../finance/cost-accounting/tasks/create-assign-cost-allocation-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Eine Kostenverhaltensrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
+            - name: Eine Kostenverhaltensrichtlinie für eine Kostenkontrolleinheit erstellen und zuweisen
               href: ../finance/cost-accounting/tasks/create-assign-cost-behavior-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
             - name: Eine Kostenverteilungsrichtlinie für eine Kostenkontrollsteuereinheit erstellen und zuweisen
               href: ../finance/cost-accounting/tasks/create-assign-cost-distribution-policy-cost-control-unit.md?toc=/dynamics365/supply-chain/toc.json
@@ -491,7 +491,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Inhaltspaket für Microsoft Power BI-Berichterstellung verwenden
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Verwenden des Kostensteuerungsarbeitsbereichs bei der mobilen Nutzung von Finance and Operations
+            - name: Verwenden des Kostensteuerungsarbeitsbereichs für die mobile Finance and Operations-Anwendung
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Kostenverwaltung
           items:
@@ -605,7 +605,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
         - name: Intelligence
           items:
-            - name: Nachrichtendienst – Startseite
+            - name: Intelligence – Startseite
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Informationszugriff und Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
@@ -613,9 +613,9 @@
               items:
                 - name: Power BI Inhalt – Startseite
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ist-Wert im Vergleich mit Budget
+                - name: Istwert und Budget
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Vergütungen
+                - name: Vorteile
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Bargeldübersicht
                   href: ../finance/cash-bank-management/Cash-Overview-Power-BI-content.md?toc=/dynamics365/supply-chain/toc.json
@@ -741,7 +741,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Generieren elektronischer Dokumente für Zahlungen mithilfe einer Formatkonfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Formataktualisierung durch Verwendung einer neuen Format-Basisversion
+                    - name: Format durch Verwendung einer neuen Format-Basisversion aktualisieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Formeldesigner in der elektronischen Berichterstellung
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
@@ -871,27 +871,27 @@
                       items:
                         - name: 'Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen'
                           href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurieren des Länderkontext auf Basis der ER-Modellzuordnungen
+                        - name: Länderkontext auf Basis der ER-Modellzuordnungen konfigurieren
                           href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Verwenden elektronischer Berichtslösungen in Finance and Operations
+                - name: Elektronische Berichtslösungen in Finance and Operations verwenden
                   items:
-                    - name: Konfigurieren des Framework
+                    - name: Framework konfigurieren
                       items:
-                        - name: Konfigurieren des Rahmens für die elektronische Berichterstellung
+                        - name: Rahmen für die elektronische Berichterstellung konfigurieren
                           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Sichern und Wiederherstellen von ER-Vorlagen
                           href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Erstellen von Konfigurationsanbietern und Markieren als aktiv
+                        - name: Konfigurationsanbieter erstellen und als aktiv markieren
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Ziele
                       items:
                         - name: Zielübersicht
                           href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurieren von Zielen
+                        - name: Ziele konfigurieren
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Generierte Berichte automatisch validieren
                       items:
-                        - name: Nachverfolgung erstellter Berichtsergebnisse und Vergleich mit Ausgangswerten
+                        - name: Erstellte Berichtsergebnisse nachverfolgen und mit Ausgangswerten vergleichen
                           href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Verbesserungen bei der Nachverfolgung erstellter ER-Berichtsergebnisse und Vergleich mit Ausgangswerten
                           href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
@@ -907,7 +907,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Geschäftsdokumentverwaltung – Übersicht
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Hinzufügen von neuen Feldern zu einer Geschäftsdokumentvorlage in Microsoft Excel
+                    - name: Neue Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel hinzufügen
                       href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                 - name: ER-Framework API
                   items:
@@ -953,7 +953,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Lösen von Problemen nach der Entitätsspeicherverwaltung
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: Konfigurieren der Power BI-Integration für Arbeitsbereiche
+                - name: Power BI-Integration für Arbeitsbereiche konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Eigene Datenbanken nutzen
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/supply-chain/toc.json
@@ -1203,13 +1203,13 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Öffnen von Entitätsdaten in Excel und Aktualisieren mithilfe des Excel-Add-Ins
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Verschaffen von „In Excel öffnen”-Erfahrungen
+            - name: „In Excel öffnen”-Erfahrungen verschaffen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Hinzufügen von Vorlagen zum Menü „Positionen in Excel öffnen”
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
             - name: Menü „In Microsoft Office öffnen“ anpassen
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Konfigurieren und Senden von E-Mails
+            - name: E-Mails konfigurieren und senden
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: E-Mail-Umgebungen entwickeln
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
@@ -1219,23 +1219,23 @@
           items:
             - name: Organisationsverwaltung – Startseite
               href: ../fin-ops-core/fin-ops/organization-administration/organization-administration-home-page.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nummernsequenzen
+            - name: Nummernkreise
               items:
-                - name: Nummernsequenzen – Übersicht
+                - name: Nummernkreise – Übersicht
                   href: ../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nummernkreise einzeln einrichten
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-individual-basis.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Einrichten von Nummernsequenzen mit einem Assistenten
+                - name: Nummernkreise mit einem Assistenten einrichten
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-number-sequences-wizard.md?toc=/dynamics365/supply-chain/toc.json
             - name: Organisationen und Organisationshierarchien
               items:
                 - name: Organisationen und Organisationshierarchien – Übersicht
                   href: ../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Planen Ihrer Organisationshierarchie
+                - name: Organisationshierarchie planen
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-organizational-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Erstellen einer Organisationshierarchie
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-organization-hierarchy.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Erstellen juristischer Personen
+                - name: Juristische Personen erstellen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Erstellen von Organisationseinheiten
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md?toc=/dynamics365/supply-chain/toc.json
@@ -1345,9 +1345,9 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Datensatzvorlage zum Erstellen eines neuen Datensatzes verwenden
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Konfigurieren der Dokumentverwaltung
+            - name: Dokumentverwaltung konfigurieren
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Konfigurieren und Senden von E-Mails
+            - name: E-Mails konfigurieren und senden
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: Datums-/Uhrzeitdaten und Zeitzonen
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
@@ -1383,6 +1383,8 @@
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: Ausschreibungstypen und Bewertungskriterien für Angebotsanforderungen erstellen
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
+                - name: Beantworten von Lieferantenfragen auf Angebotsanforderungen
+                  href: procurement/rfq-question.md
                 - name: Angebotsanforderungsangebote eingeben und vergleichen und Verträge vergeben
                   href: procurement/tasks/enter-compare-rfq-bids-award-contracts.md
             - name: Bestellungen
@@ -1503,7 +1505,7 @@
                   href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
                 - name: Produktnummernbezeichnung für konfigurierte Produktvarianten erstellen
                   href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
-                - name: Neues Produkt erstellen
+                - name: Ein neues Produkt erstellen
                   href: pim/tasks/create-new-product.md
                 - name: Produktmaster erstellen
                   href: pim/tasks/create-product-master.md
@@ -2221,7 +2223,7 @@
               href: transportation/transportation-management-overview.md
             - name: Transportverwaltungsmodule
               href: transportation/transportation-management-engines.md
-            - name: Erstellen eines neuen Transportverwaltungsmoduls
+            - name: Ein neues Transportverwaltungsmodul erstellen
               href: transportation/create-new-transportation-management-engine.md
             - name: Brennstoffindex einem Spediteur als Zusatzgebühr zuordnen
               href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
@@ -2299,8 +2301,12 @@
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Strichcodeunterstützung für Mobilgeräte
                   href: warehousing/mobile-barcode-support.md
-                - name: Einrichten des Lagerorts für Umlagerungsaufträge
+                - name: Lagerort für Umlagerungsaufträge einrichten
                   href: warehousing/transfer-orders-warehouse.md
+            - name: Reservierungen im Lagermanagement
+              items:
+                - name: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerebene
+                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
             - name: Lagerortarbeitsrichtlinien
               items:
                 - name: Lagerortarbeitsrichtlinien – Übersicht
@@ -2411,7 +2417,7 @@
                   href: warehousing/process-guide-framework.md
             - name: Upgrade und Migration
               items:
-                - name: Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations aktualisieren
+                - name: Upgrade der Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Zugänge für die Erfassung und Einlagerung
               items:
@@ -2428,11 +2434,13 @@
           items:
             - name: Anleitung zur Entwicklung von Gantt-Steuerelementen
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Erstellen eines neuen Transportverwaltungsmoduls
+            - name: Ein neues Transportverwaltungsmodul erstellen
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
-    - name: Entwicklung und Administration für Finance and Operations-Apps
+    - name: Entwicklung und Verwaltung für Finance and Operations-Apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
+    - name: Dynamics 365 Commerce
+      href: ../commerce/index.md
     - name: Dynamics 365 Retail
-      href: ../retail/index.md
+      href: ../commerce/index.md
