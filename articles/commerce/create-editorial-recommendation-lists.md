@@ -19,27 +19,26 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d075635b7b986cc854550d15f7e941a9ea9cf72
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770412"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024932"
 ---
 # <a name="create-curated-product-recommendation-lists"></a>Erstellen von kuratierten Produktempfehlungslisten
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Verkaufsberater manuelle Produktlisten für Microsoft Dynamics 365 Commerce Kunden erstellen und verwalten können.
 
 Kuratierte Listen sind Sammlungen von individuellen Inhalten, die von Personen erstellt und kuratiert wurden.  
 
-## <a name="create-a-new-list"></a>Erstellen Sie eine neue Liste
+## <a name="create-a-new-list"></a>Neue Liste erstellen
 
 Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schritten.
 
-1. Gehen Sie zu **Einzelhandel** &gt; **Produktempfhelungen** &gt; **Empfehlungslisten**.
+1. Gehen Sie zu **Retail und Commerce &gt; Produktempfehlungen &gt; Empfehlungslisten**.
 1. Wählen Sie **Neu** aus.
 1. Geben Sie im Feld **Listen-ID** einen Wert ein.
 1. Geben Sie im Feld **Listennamen** einen Wert ein.
@@ -60,3 +59,5 @@ Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schri
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 
 [Hinzufügen von Produktempfehlungslisten zu Seiten](add-reco-list-to-page.md)
+
+[Übersicht über Produktsammelmodule](product-collection-module-overview.md)

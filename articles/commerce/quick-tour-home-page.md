@@ -3,7 +3,7 @@ title: Übersicht der Startseite
 description: Dieser Artikel enthält eine Übersicht über die Startseite in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3fb42c9aa2e2ef1d620b310e9d30dbae5f84c788
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6f337af0b598322e9542a3c9462402e61dc11a88
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698279"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025970"
 ---
 # <a name="overview-of-the-home-page"></a>Übersicht der Startseite
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieser Artikel enthält eine Übersicht über die Startseite in Microsoft Dynamics 365 Commerce.
@@ -45,19 +45,19 @@ Im Hauptbereich der Startseite können Produkte, Kategorien oder Werbeaktionen m
 
 - **Hero** – In der Regel zeigt der erste Eintrag oben im Hauptbereich ein oder mehrere „Hero“ -Bilder, die neue Produkte und Werbeaktionen im Geschäft hervorheben. Wenn es mehrere Hero-Bilder gibt, werden sie in einem Karussellmodul gehostet, damit Benutzer sie durchsuchen können.
 
-    Die folgende Abbildung zeigt ein Beispiel für eine Startseite, auf der das erste Element im Hauptabschnitt ein benanntes Hero-Modul mit der Bezeichnung **Neue Wareneingänge** ist.
+    Die folgende Abbildung zeigt ein Beispiel für eine Startseite, auf der das erste Element im Hauptabschnitt ein Hero-Layout eines Inhaltsblockmoduls mit der Bezeichnung „Neue Wareneingänge“ ist.
 
     ![Beispiel eines Hero-Moduls](./media/Hero.PNG)
 
-- **Funktion** – Ein Funktionsmodul dient zur Vermarktung von Produkten oder Werbeaktionen mithilfe einer Kombination aus Bildern und Text. Funktionsmodule können unabhängig voneinander verwendet oder in einem Karussellmodul gehostet werden.
+- **Funktion** – Ein Funktionslayout eines Inhaltsblockmoduls dient zur Vermarktung von Produkten oder Werbeaktionen mithilfe einer Kombination aus Bildern und Text. Funktionslayouts können unabhängig voneinander verwendet oder in einem Karussellmodul gehostet werden.
 
-    Die folgende Abbildung zeigt ein Beispiel für Funktionsmodule auf einer Startseite.
+    Die folgende Abbildung zeigt ein Beispiel für Funktionslayouts eines Inhaltsblockmoduls auf einer Startseite.
 
     ![Beispiele für Funktionsmodule](./media/Feature.PNG)
 
-- **Inhaltsplatzierung** – Ein Inhaltsplatzierungsmodul wird verwendet, um mehrere Produkte oder Produktkategorien mithilfe einer Kombination aus Bildern und Text in einem mehrspaltigen Layout zu präsentieren. In der Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, wird ein Inhaltsplatzierungsmodul für das dreispaltige Layout der Elemente **Shop für Frauen**, **Shop für Männer** und **Accessoire-Shop** verwendet.
+- **Kachel** – Ein Kachellayout eines Inhaltsblockmoduls wird verwendet, um mehrere Produkte oder Produktkategorien mithilfe einer Kombination aus Bildern und Text in einem mehrspaltigen Layout zu präsentieren. In der Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, wird ein Kachellayout für das dreispaltige Rendering der Elemente **Shop für Frauen**, **Shop für Männer** und **Accessoire-Shop** verwendet.
 - **Video-Player** – Ein Video-Player-Modul kann verwendet werden, um Videoinhalte auf der Startseite zu präsentieren. Die Abbildung einer Startseite, die weiter oben in diesem Thema angezeigt wird, enthält ein Video-Player-Modul.
-- **Umfangreicher Inhaltsblock** –Ein umfangreicher Inhaltsblock kann verwendet werden, um Textinhalte auf der Startseite in einem ein- oder mehrspaltigen Layout darzustellen.
+- **Textblock** – Ein umfangreicher Inhaltsblock kann verwendet werden, um Textinhalte auf der Startseite in einem ein- oder mehrspaltigen Layout darzustellen.
 - **Produktempfehlungen** – Produktempfehlungsmodule werden verwendet, um Listen wie **Neu**, **Populär** und **Bestseller** auf der Startseite anzuzeigen. Diese Listen stellen Produkte basierend auf Einkaufstrends vor und können algorithmisch generiert oder manuell kuratiert werden. Sie helfen Kunden dabei, Top-Produkte schnell zu entdecken und dann weiter einzukaufen.
 
     Die folgende Abbildung zeigt ein Beispiel für Produktempfehlunsmodule auf einer Startseite.

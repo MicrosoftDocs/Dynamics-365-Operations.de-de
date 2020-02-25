@@ -1,5 +1,5 @@
 ---
-title: Commerce-Vorschauumgebung – FAQ
+title: Dynamics 365 Commerce Vorschauumgebung FAQ
 description: Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Microsoft Dynamics 365 Commerce-Vorschauumgebung.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,15 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 53e593931850d6b8b22bb756d5828f742416aa4d
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 061a160380e500ea52afbc35f0a95fe84d971bcf
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906092"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024751"
 ---
-# <a name="commerce-preview-environment-faq"></a>Commerce-Vorschauumgebung – FAQ
+# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce Vorschauumgebung FAQ
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Microsoft Dynamics 365 Commerce-Vorschauumgebung.
@@ -83,10 +82,10 @@ Wenn Sie Probleme haben, wenn Sie versuchen, auf die Yammer-Gruppe zuzugreifen, 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
 
-[Bereitstellen einer Commerce-Vorschauumgebung](provisioning-guide.md)
+[Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md)
 
-[Konfigurieren einer Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+[Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md)
 
-[Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung](cpe-optional-features.md)
+[Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung](cpe-optional-features.md)

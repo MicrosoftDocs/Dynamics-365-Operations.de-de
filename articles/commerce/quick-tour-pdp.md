@@ -3,7 +3,7 @@ title: Übersicht der Produktdetailseiten
 description: Dieses Thema bietet eine Übersicht über Produktdetailseiten (PDPs) in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b02d50adbfcda27d590bcb87fd9669d67d4a01c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: dbf8f4c1ea479a508f4a0294020b7201b32fe228
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697864"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025924"
 ---
 # <a name="overview-of-product-details-pages"></a>Übersicht der Produktdetailseiten
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Produktdetailseiten (PDPs) in Microsoft Dynamics 365 Commerce.
@@ -45,7 +45,7 @@ Oben in der PDP befindet sich eine Kopfzeile mit allen Produktkategorien und and
 
 ## <a name="buy-box-module"></a>Kauffeldmodul
 
-Das wichtigste Modul auf einer PDP ist das Kauffeldmodul. Daher ist es das erste Element im Hauptabschnitt der Seite. Ein Kauffeldmodul ist ein Containermodul und enthält mehrere Module, die die wichtigsten Informationen zum Produkt enthalten. Zu diesen Informationen gehören der Produktname, die Produktbilder, die Beschreibung, der Preis und die Produktbewertungen.
+Das wichtigste Modul auf einer PDP ist das Kauffeldmodul, das als erstes Element im Hauptabschnitt der Seite angezeigt wird. Ein Kauffeldmodul zeigt wichtige Produktinformationen wie den Produktnamen, die Produktbeschreibung, den Produktpreis, Produktbilder und Produktbewertungen an.
 
 Mit dem Kauffeldmodul kann der Kunde Produktoptionen (z. B. Größe, Stil und Farbe) auswählen und das Produkt in den Einkaufskorb legen. Der Kunde kann das Produkt auch online kaufen und in einem Geschäft abholen. Das Modul Online kaufen und im Geschäft abholen verwendet die Integration mit Bing Maps-APIs (Application Programming Interfaces), um Geschäfte in der Nähe oder Geschäfte an einem anderen vom Kunden angegebenen Ort zu finden.
 
@@ -53,7 +53,7 @@ Ein Kauffeldmodul erfordert eine Produkt-ID. Diese ID wird aus dem Seitenkontext
 
 ## <a name="product-specifications-module"></a>Produktklassifizierungsmodul
 
-Mit dem Produktklassifizierungsmodul können zusätzliche Details zum Produkt angezeigt werden. Diese Details werden aus den Produktattributen in Dynamics 365 Retail übernommen. Das Produktklassifizierungsmodul zeigt jedes Attribut, bei dem die Eigenschaft **sichtbar** auf **true** gesetzt ist. Es erfordert eine Produkt-ID, um die Produktattribute abzurufen.
+Mit dem Produktklassifizierungsmodul können zusätzliche Details zum Produkt angezeigt werden. Diese Details werden aus den Produktattributen in Commerce übernommen. Das Produktklassifizierungsmodul zeigt jedes Attribut, bei dem die Eigenschaft **sichtbar** auf **true** gesetzt ist. Es erfordert eine Produkt-ID, um die Produktattribute abzurufen.
 
 ## <a name="recommendations-module"></a>Empfehlungsmodul
 
@@ -62,17 +62,23 @@ Das Empfehlungsmodul ist ein wichtiges Modul auf einer PDP. Während Kunden nach
 Es gibt verschiedene Arten von Empfehlungslisten:
 
 - Die Liste **Personen gefällt auch** basiert auf dem maschinellen Lernen. Sie verwendet die Transaktionshistorie anderer Kunden, um Empfehlungen abzugeben. Diese Liste wird vom Empfehlungsdienst erstellt und ähnelt den Listen „Kunden, die dies gekauft haben, kauften auch ...“. Eine Produkt-ID ist zum Generieren dieser Liste erforderlich.
-- Die Liste **Zugehörig** kann für ein Produkt in Retail konfiguriert werden. Beispielsweise können für eine braune Lederreisehandtasche mehrere Handtaschen auf Lederbasis oder für Reisezwecke entworfene Handtaschen für die Themenliste konfiguriert werden. Andere Typen zugehöriger Listen, wie **Zubehör** und **Weitere ähnliche Aktivitäten**, können auch in Retail konfiguriert werden. Eine Produkt-ID ist zum Generieren dieser Liste erforderlich. Daher ist die Liste leer, wenn sie zu einer Startseite hinzugefügt wird, auf der der Seitenkontext keine Produkt-ID enthält.
+- Die Liste **Zugehörig** kann für ein Produkt in Commerce konfiguriert werden. Beispielsweise können für eine braune Lederreisehandtasche mehrere Handtaschen auf Lederbasis oder für Reisezwecke entworfene Handtaschen für die Themenliste konfiguriert werden. Andere Typen zugehöriger Listen, wie **Zubehör** und **Weitere ähnliche Aktivitäten**, können auch in Commerce konfiguriert werden. Eine Produkt-ID ist zum Generieren dieser Liste erforderlich. Daher ist die Liste leer, wenn sie zu einer Startseite hinzugefügt wird, auf der der Seitenkontext keine Produkt-ID enthält.
 - Algorithmisch generierte Empfehlungslisten, wie **Populär**, **Bestseller** und **Neu** können in PDPs verwendet werden. Diese Listen stehen zwar möglicherweise nicht in direktem Zusammenhang mit dem Produkt auf der PDP, sind jedoch eine weitere Möglichkeit, Kunden bei der Suche nach Produkten zu unterstützen, die sie interessieren könnten. Diese Listentypen erfordern keine Produkt-ID. Hierbei handelt es sich um generische Listen, die auf der Grundlage von Einkaufsmustern auf der gesamten Website erstellt werden.
 - Redaktionslisten sind manuell kuratierte Listen. Beispielsweise kann ein Einzelhändler entscheiden, Listen von Produkten, die präsentiert werden sollen, manuell zu kuratieren.
 
-## <a name="ratings-and-reviews-module"></a>Bewertungs- und Prüfungsmodul
+## <a name="ratings-and-reviews-modules"></a>Bewertungs- und Prüfungsmodule
 
-Das Bewertungs- und Prüfungsmodul zeigt Bewertungen und Prüfungen an, die von anderen Kunden bereitgestellt wurden. Hiermit kann ein Kunde auch seine eigene Bewertung des Produkts verfassen. Zusätzlich enthält es ein Histogramm, das den Bewertungstrend für das Produkt anzeigt. Weitere Details erhalten Sie unter [Bewertungs- und Prüfungsüberblick](ratings-reviews-overview.md).
+Mit drei Modulen können Prüfungen angezeigt und hinzugefügt werden:
+
+- **Prüfungen** – Dieses Modul zeigt Bewertungen und Prüfungen an, die von anderen Kunden bereitgestellt wurden. Kunden können die Prüfungen sortieren und filtern. Dieses Modul ermöglicht es auch Kunden, Prüfungen zuzustimmen oder abzulehnen und Probleme zu melden.
+- **Prüfung schreiben** – Mit diesem Modul können Kunden ihre eigenen Produktprüfungen verfassen.
+- **Bewertungshistogramm** – Dieses Modul enthält ein Histogramm, das den Bewertungstrend für ein Produkt anzeigt.
+
+Weitere Details erhalten Sie unter [Bewertungs- und Prüfungsüberblick](ratings-reviews-overview.md).
 
 ## <a name="marketing-modules"></a>Marketingmodule
 
-Wenn Marketinginhalte für ein bestimmtes Produkt spezifisch sind, kann der PDP ein beliebiges Marketingmodul hinzugefügt werden. Sie können einer PDP Marketingmodule hinzufügen, indem Sie die Seite „anreichern“. 
+Wenn Marketinginhalte für ein bestimmtes Produkt spezifisch sind, kann der PDP ein beliebiges Marketingmodul hinzugefügt werden. Sie können einer PDP Marketingmodule hinzufügen, indem Sie die Seite „anreichern“. Weitere Details finden Sie unter [Erweitern einer Produktseite](enrich-product-page.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -83,3 +89,5 @@ Wenn Marketinginhalte für ein bestimmtes Produkt spezifisch sind, kann der PDP 
 [Übersicht der Einkaufswagen- und Auschecken-Seiten](quick-tour-cart-checkout.md)
 
 [Übersicht der Kontenverwaltungsseiten](quick-tour-account-management.md)
+
+[Erweitern einer Produktdetailseite](enrich-product-page.md)

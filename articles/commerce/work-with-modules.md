@@ -3,7 +3,7 @@ title: Arbeiten mit Modulen
 description: In diesem Thema wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
 author: v-chgri
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,18 +17,18 @@ ms.search.industry: ''
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c4161e7a40cdbbb40292a6ce9acab58347460bd
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 769d6754fa944830b989d657e0dad9cc42212932
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914793"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025878"
 ---
 # <a name="work-with-modules"></a>Arbeiten mit Modulen
 
 In diesem Thema wird beschrieben, wie und wann Module in Microsoft Dynamics 365 Commerce verwendet werden.
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Übersicht
@@ -99,12 +99,10 @@ In den folgenden Prozeduren wird beschrieben, wie Sie Inhalts- und Containermodu
 
 Um ein Inhaltsmodul auf einer Seite zu konfigurieren, befolgen Sie diese Schritte.
 
-1. Wählen Sie im Gliederungsbereich links einen Inhaltsmodultyp (z. B. **Feature**, **Hero** oder **Banner**) aus.
-1. Erweitern Sie im Eigenschaftenbereich rechts die verschachtelten Steuerelemente, indem Sie die Überschriften auswählen, und legen Sie die erforderlichen Steuerelementwerte fest.
-1. Falls der Eigenschaftenbereich den Abschnitt **Datenkonfiguration** enthält, wählen Sie ihn aus, um ihn zu erweitern. Fahren Sie andernfalls mit Schritt 5 fort.
-1. Falls die Schaltfläche **Datenquelle hinzufügen** vorhanden ist, wählen Sie diese und dann die hinzuzufügenden Inhaltselemente aus.
-1. Geben Sie Einstellungen für erforderliche oder gewünschte Modulsteuerungen ein.
-1. Wählen Sie **Speichern**.
+1. Erweitern Sie die Baumstruktur im Gliederungsbereich links und wählen Sie einen beliebigen Inhaltsmodultyp (z. B. **Funktion**, **Hero** oder **Banner**) aus.
+1. Suchen Sie im Eigenschaftenbereich rechts die Steuerelemente für Inhalt und Einstellungen des Moduls.
+1. Geben Sie Eigenschaften für die gewünschten Modulsteuerelemente ein.
+1. Wählen Sie in der Befehlsleiste **Sichern** aus. Dadurch wird auch der Vorschau-Canvas aktualisiert.
 
 ### <a name="configure-a-container-module"></a>Ein Containermodul konfigurieren
 
@@ -112,7 +110,7 @@ Um ein Containermodul auf einer Seite zu konfigurieren, befolgen Sie diese Schri
 
 1. Wählen Sie ein Containermodul auf Ihrer Seite aus (z. B. ein Karussell oder ein flüssiges Containermodul).
 1. Erweitern Sie im Eigenschaftenbereich rechts die verschachtelten Steuerelemente, indem Sie die Überschriften auswählen, und legen Sie die erforderlichen Steuerelementwerte fest.
-1. Wählen Sie links im Gliederungsbereich die Schaltfläche mit den Auslassungspunkten neben dem Namen des Containers oder von Slots im Container und dann **Modul hinzufügen** aus. Fügen Sie dann dem ausgewählten Container untergeordnete Module hinzu. Weitere Informationen erhalten Sie in der Prozedur [Modul hinzufügen](#add-a-module), die am Anfang dieses Themas beschrieben wurde.
+1. Wählen Sie links im Gliederungsbereich die Schaltfläche mit den Auslassungspunkten neben dem Namen des Containers oder von Slots im Container und dann **Modul hinzufügen** aus. Fügen Sie dann dem ausgewählten Container untergeordnete Module hinzu. Weitere Informationen erhalten Sie im Abschnitt [Mit Modulen arbeiten](#add-a-module) am Anfang dieses Themas.
 1. Wenn mehrere untergeordnete Module als gleichgeordnete Elemente in einem übergeordneten Container vorhanden sind, können Sie deren Anzeigereihenfolge im übergeordneten Container ändern. Wählen Sie die Auslassungsschaltfläche für ein Modul aus und verwenden Sie dann die Aufwärts- und Abwärtspfeiltasten.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
@@ -126,8 +124,6 @@ Um ein Containermodul auf einer Seite zu konfigurieren, befolgen Sie diese Schri
 [Arbeiten mit Fragmenten](work-with-fragments.md)
 
 [Ein Containermodul einer neuen Seite hinzufügen](add-container-module.md)
-
-[Einer Seite Inhaltsplatzierungsmodule hinzufügen](add-content-placement-modules.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
 

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4bb523c2817a220623d8a1b6cc1ac04d7b96283
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 268b95aad57c2e4863a3f58cd54828dbb0e09465
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812648"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006194"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
 
@@ -32,7 +32,7 @@ ms.locfileid: "2812648"
 In diesem Thema werden die Aufgabenaufzeichnung und Aufgabenleitfäden erläutert. Zudem erfahren Sie, wie Aufgabenaufzeichnungen angelegt werden und wie Microsoft-Aufgabenleitfäden angepasst und in die Hilfe aufgenommen werden.
 
 > [!IMPORTANT]
-> Sie können Ihre eigenen Aufgabenleitfäden für Dynamics 365 Talent erfassen, jedoch sind Sie noch nicht in der Lage, sie in einer Geschäftsprozessmodellierer-(BPM)-Bibliothek zu speichern oder sie vom Hilfebereich zu öffnen. Sie können sie lokal oder an einem Netzwerkspeicherort speichern und sie dann mithilfe der Aufgabenaufzeichnung öffnen und erneut wiedergeben. 
+> Sie können Ihre eigenen Aufgabenleitfäden für Dynamics 365 Human Resources erfassen, jedoch sind Sie noch nicht in der Lage, sie in einer Geschäftsprozessmodellierer-(BPM)-Bibliothek zu speichern oder sie vom Hilfebereich zu öffnen. Sie können sie lokal oder an einem Netzwerkspeicherort speichern und sie dann mithilfe der Aufgabenaufzeichnung öffnen und erneut wiedergeben. 
 
 <a name="learn-about-task-recorder"></a>Mehr über die "Aufgabenaufzeichnung" erfahren
 -------------------------

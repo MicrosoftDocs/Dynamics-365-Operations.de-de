@@ -3,7 +3,7 @@ title: Sperrung von Lagerbestand
 description: Dieses Thema gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Supply Chain Management ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
 author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,18 +19,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f41fbe6e2034c0e58fc03d1dfbbd87844f3a4466
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: e1a870936619d07db01d5a8fe83b3fab73693187
+ms.sourcegitcommit: e5a3c85a322a9216b8f176536d664fef40ae0bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814374"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "2971486"
 ---
 # <a name="inventory-blocking"></a>Sperrung von Lagerbestand
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Supply Chain Management ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
+Dieses Thema gibt einen Überblick über die Sperrung von Lagerbestand, die Teil des Qualitätsprüfungsprozesses in Supply Chain Management ist. Sie können die Sperrung von Lagerbestand verwenden, um die Verarbeitung oder den Verbrauch von Artikeln zu verhindern.
 
 Sie können Lagerartikel auf die folgenden Arten sperren:
 -   Manuell
@@ -43,6 +43,9 @@ Sie können eine bestimmte Menge eines Artikels sperren, indem Sie auf der Seite
 
 ## <a name="blocking-items-by-creating-a-quality-order"></a>Sperren von Artikeln per Erstellung einer Testbestellung
 Sie können Artikel angeben, die überprüft werden müssen, indem Sie eine Testbestellung auf der Seite **Testbestellungen** erstellen. Wenn Sie eine Testbestellung erstellen, wird die Menge, die Sie für einen Artikel angeben, gesperrt. Der Musteraufnahmeplan, der einer Testbestellung zugeordnet ist, steuert nur die Menge der Artikel, die überprüft werden müssen, nicht die Menge, die gesperrt wird. Die Menge, die in der Testbestellung eingegeben wird, ist die Menge, die gesperrt wird, ungeachtet der Menge, die gemäß der Angaben des Musteraufnahmeplans zur Prüfung eingereicht werden sollte.
+
+> [!NOTE]
+> Die Verwendung sowohl des Chargenablaufdatums als auch der Funktionen zum Sperren des Bestandsstatus wird von der Masterplanung nicht unterstützt. Dies kann zu einem doppelten Ausschluss des Lagerbestands führen, der während der Masterplanung auftreten kann. Wir empfehlen, dass Sie sich beim Sperren abgelaufener Chargen anstelle des Inventarstatus auf Chargenverfügungscodes verlassen.
 
 ## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Sperrung von Artikeln mithilfe eines Prozesses, bei dem eine Testbestellung generiert wird
 Wenn ein Qualitätsprozess angibt, dass ein Artikel überprüft werden muss, wird eine Menge des Artikels automatisch gesperrt. Wenn daher eine Testbestellung automatisch generiert wird, steuert der der Testbestellung zugeordnete Musteraufnahmeplan sowohl die Menge der Artikel, die gesperrt wird, als auch die Menge, die geprüft werden muss. Wenn die Option **Vollständige Sperrung** auf der Seite **Artikelmusteraufnahme** ausgewählt ist, wird die gesamte Menge beispielsweise einer Bestellposition während der Überprüfung gesperrt, unabhängig von der Menge der Artikelmusteraufnahme.

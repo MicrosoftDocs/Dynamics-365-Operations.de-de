@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
 manager: AnnBe
-ms.date: 01/07/2020
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac8f154fdf892553f69d135727589bf13efd6076
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
+ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935464"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029361"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -59,7 +59,8 @@ Wenn Sie die Anwendung verwenden, werden viele Ihrer Einstellungen gespeichert, 
 
 Implizite Personalisierungen sind die Personalisierungen, die Sie ausführen, indem Sie einfach mit bestimmten Steuerelementen interagieren, die ihren aktuell sichtbaren Status speichern.
 
-- **Rasterspalten:** - Sie können die Breite einer Spalte in einer Liste anpassen, indem Sie die Größenänderungsleiste links oder rechts des Spaltenkopfs auswählen und sie nach links oder rechts auf die gewünschte Breite schieben. Die App speichert die Breite, die Sie festlegen,m in einer Spalte. Beim nächsten Öffnen der Seite, die dieses Raster enthält, wird die Breite dieser Spalte an diese Größe angepasst.
+- **Rasterspaltenbreiten** - Sie können die Breite einer Spalte in einer Liste anpassen, indem Sie die Größenänderungsleiste links oder rechts des Spaltenkopfs auswählen und sie nach links oder rechts auf die gewünschte Breite schieben. Die App speichert die Breite, die Sie festlegen,m in einer Spalte. Beim nächsten Öffnen der Seite, die dieses Raster enthält, wird die Breite dieser Spalte an diese Größe angepasst.
+- **Rasterspaltensummen** – (Nur verfügbar, wenn das neue Rastersteuerelement aktiviert ist.) Sie können entscheiden, ob eine Summe am unteren Rand einer beliebigen numerischen Spalte in einem Raster angezeigt werden soll oder nicht und ob die Rasterfußzeile sichtbar ist. Die App speichert diese Daten, sodass diese Einstellungen beim nächsten Öffnen der Seite gespeichert werden. Weitere Informationen im Thema [Raster-Funktionen](grid-capabilities.md). 
 - **Inforegister** – Einige Seiten haben erweiterbare Abschnitte, die als *Inforegister* bezeichnet werden. Die App speichert Informationen über die Inforegister, die Sie erweitert und reduziert haben. Beim nächsten Mal, wenn Sie zu der Seite zurückkehren, werden die gleichen Inforegister erweitert oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. In einigen Fällen verbessert das Reduzieren eines Inforegisters die Leistung, da die App diese Informationen für Inforegister erst abruft, wenn die Inforegister erweitert werden. Wie später in diesem Thema erläutert, können Sie die Reihenfolge der Inforegister einer Seite auch ändern.
 - **Infoboxen** – Einige Seiten haben einen Bereich **Zugehörige Informationen**, der schreibgeschützte Informationen enthält, die dem aktuell zugeordneten Betreff der Seite zugeordnet sind. Jeder Abschnitt im Bereich **Zugehörige Informationen** wird als *Infobox* bezeichnet. Sie können den Bereich **Zugehörige Informationen** erweitern oder reduzieren, und Sie können auch einzelne Infoboxen erweitern oder reduzieren. Die App speichert diese Einstellungen. Anschließend werden das nächste Mal, wenn Sie die Seite öffnen, der Bereich **Zugehörige Informationen** und die einzelnen Infoboxen, basierend auf Ihrer letzten Interaktion mit der Seite erweitert oder reduziert. In einigen Fällen verbessert das Reduzieren einer Infobox die Leistung, da die App diese Informationen für Infoboxen erst abruft, wenn die Infoboxen erweitert werden.
 - **Aktivitätsbereiche** – *Aktivitätsbereich* Wird meistens oben an den meisten Seiten angezeigt. Der Aktivitätsbereich enthält Schaltflächen für viele der Aktivitäten, die auf der aktuellen Seite ausgeführt werden können. Diese Schaltflächen werden häufig auf Registerkarten zusammengefasst. Sie können den gesamten Aktivitätsbereich öffnen, oder Sie können ihn standardmäßig reduzieren lassen. Beim nächsten Mal, wenn Sie zu der Seite zurückkehren, wird der Aktivitätsbereich entweder geöffnet oder reduziert, basierend auf Ihrer letzten Interaktion mit der Seite. Wenn Sie den Aktivitätsbereich als geöffnet fixiert haben, wird die letzte Registerkarte angezeigt, die Sie verwendet haben.
@@ -95,7 +96,7 @@ Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abh�
 
 Wenn Sie mehrere Änderungen auf einer Seite oder Änderungen vornehmen möchten, die über keinen anderen Mechanismen (z. B. Elemente neu anordnen) verfügbar sind, können Sie die Symbolleiste **Personalisierung** verwenden. Um die Symbolleiste **Personalisierung** zu öffnen, führen Sie die folgenden Schritte aus:
 
-- Wählen Sie **Dieses Formular personalisieren** im Eigenschaftenfenster eines Elements aus.
+- Wählen Sie **Diese Seite personalisieren** im Eigenschaftenfenster eines Elements aus.
 - Wählen Sie im Aktivitätsbereich einer Seite in der Registerkarte **Optionen** in der Gruppe **Personalisieren** die Option **Diese Seite personalisieren** aus.
 - Wählen Sie die Schaltfläche **Einstellungen** (Zahnradsymbol) auf der Navigationsleiste und wählen Sie dann **Anpassen**.
 
@@ -116,7 +117,8 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 - Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können Felder der Tabulatorsequenz interaktiv entfernen oder hinzufügen.
 - Verwenden Sie das Tool **In Kopfzeile anzeigen**, wenn ein Feld im Zusammenfassungsbereich des Inforegisters angezeigt werden soll. Wenn Sie die Schaltfläche **In Kopfzeile anzeigen** auf der Symbolleiste auswählen, werden alle Felder, die als Zusammenfassungsfelder ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder daraus entfernen, indem Sie die Felder auswählen.
 - Wählen Sie das Tool **Sperren** aus, wenn Sie ein Element als „Bearbeitbar“ oder „Nicht bearbeitbar“ markieren wollen. Wenn Sie die Schaltfläche **Sperren** auf der Symbolleiste auswählen, werden alle Elemente, die gerade nicht bearbeitbar sind, in einem schattierten Container angezeigt. Sie können definieren, dass sie wieder geändert werden können. Beachten Sie: Mehrere Felder sind obligatorisch und können nicht als nicht bearbeitbar festgelegt werden. Ein Schlosssymbol wird neben den Feldern angezeigt.
-- Verwenden Sie die Schaltfläche **PowerApp hinzufügen**, um eine App einzufügen, die unter Microsoft PowerApps auf der Seite erstellt wurde. Detaillierte Informationen zum Einbetten einer PowerApps App in eine Seite finden Sie unter [Einbetten von PowerApps Apps](embed-power-apps.md).
+- Nutzen Sie die Schaltfläche **Eine App hinzufügen von Power Apps**, um eine App einzufügen, die unter Microsoft Power Apps auf der Seite erstellt wurde. Detaillierte Informationen zum Einbetten einer App von Power Apps in eine Seite finden Sie unter [Einbetten von Apps von Power Apps](embed-power-apps.md). Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) deaktiviert ist.  
+- Nutzen Sie die Schaltfläche **Eine App hinzufügen** zu dieser Seite, um eine App einzufügen, die entweder von Microsoft Power Apps oder einer Drittpartei erstellt wurde. Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) aktiviert ist. 
 - Verwenden Sie das Tool **Löschen**, um die Seite auf den Standard, also den installierten Standard zurückzusetzen. Alle Personalisierungen auf der aktuellen Seite werden gelöscht. Es gibt keine rückgängig gemachte Aktion. Daher verwenden Sie dieses Tool nur, wenn Sie sicher sind, dass Sie die Seite zurücksetzen möchten.
 - Verwenden Sie das Tool **Importieren**, um eine Personalisierung aus einer Datei zu verwenden, die Sie oder eine andere Person zuvor erstellt haben. Wenn Sie Personalisierungen für eine Seite importieren, können Sie auswählen, ob sie hinzugefügt werden oder die vorhandenen Personalisierungen für die Seite ersetzen sollen. Es gibt keine rückgängig gemachte Aktion. Daher nachdem Sie Personalisierungen importieren, müssen Sie oder Änderungen, die Sie nicht möchten, manuelle rückgängig machen oder löschen.
 - Verwenden Sie das Tool **Exportieren**, um die Personalisierungen für die Seite in einer Datei zu speichern. Sie können Ihre Personalisierungen mit anderen Benutzern teilen. Diese Benutzer müssen nur die Datei importieren, die für Ihre Personalisierungen die Seite enthält.
@@ -152,7 +154,7 @@ Das Dashboard ist oftmals die erste Seite, die beim Öffnen der App angezeigt wi
 Um das Dashboard zu personalisieren, klicken Sie auf eine beliebige Kachel mit der rechten Maustaste, und wählen Sie dann das **Anpassen**-Eigenschaftenfenster, um die Kachel zu öffnen.
 
 - Wenn Sie die ausgewählten Kachel ausblenden oder umbenennen möchten, können Sie diese Änderung direkt im Eigenschaftenfenster vornehmen.
-- Wenn Sie die Kacheln im Arbeitsbereich neu anordnen möchten, wählen Sie **Dieses Formular personalisieren** im Eigenschaftenfenster aus, um die Symbolleiste **Personalisierung** zu öffnen. Sie können das Tool **Verschieben** verwenden, um die Kacheln neu anzuordnen.
+- Wenn Sie die Kacheln im Arbeitsbereich neu anordnen möchten, wählen Sie **Diese Seite personalisieren** im Eigenschaftenfenster aus, um die Symbolleiste **Personalisierung** zu öffnen. Sie können das Tool **Verschieben** verwenden, um die Kacheln neu anzuordnen.
 - Wenn Sie eine neue Arbeitsbereichskachel hinzufügen möchten, wählen Sie im Eigenschaftenfenster **Arbeitsbereich hinzufügen** aus. Eine neue Arbeitsbereichkachel wird am unteren Rand das Dashboard erstellt. Sie können diese neue Arbeitsbereichkachel umbenennen, wenn Sie dies wünschen. Sie können, Kacheln, Listen und auch Links dem Arbeitsbereich hinzufügen wie im Abschnitt [Hinzufügen von Kacheln, Listen oder Links zu Arbeitsbereichen](#adding-a-tile-list-or-link-to-a-workspace) beschrieben.
 
 ## <a name="administration-of-personalizations"></a>Verwalten der Personalisierungen

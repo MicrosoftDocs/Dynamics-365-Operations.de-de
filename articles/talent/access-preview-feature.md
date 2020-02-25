@@ -1,12 +1,12 @@
 ---
 title: Funktionen verwalten
 description: In diesem Thema wird beschrieben, wie ein Administrator die Vorschaufunktionen in Microsoft Dynamics 365 Talent aktivieren kann, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind.
-author: tracykeya
+author: andreabichsel
 manager: AnnBe
-ms.date: 05/30/2019
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,21 +15,21 @@ ms.search.scope: Talent, Core
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: trkeya
-ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.1.0, Talent April 2019 update
-ms.openlocfilehash: 9f1fb4b929660bbe9018fb98169b3cfddcaec547
-ms.sourcegitcommit: 9cc6a011bfdd1b0fe505760b6bf429eb6c65862a
+ms.author: anbichse
+ms.search.validFrom: 2020-02-03
+ms.dyn365.ops.version: AX 7.1.0, Talent
+ms.openlocfilehash: d818e9e04ce88e5ab285ef8176334809447fb477
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "2833299"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006427"
 ---
 # <a name="manage-features"></a>Funktionen verwalten
 
 [!include [banner](includes/banner.md)]
 
-Im Rahmen unseres kontinuierlichen Rollouts von Human Capital Management (HCM) Funktionen für Microsoft Dynamics 365 Talent, wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Administratoren können Vorschaufunktionen in ihrer Umgebung sehen und nutzen. Diese Funktionen sind fast fertig für die allgemeine Verfügbarkeit und wurden ausgiebig getestet. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
+Im Rahmen unseres kontinuierlichen Rollouts von Human Capital Management (HCM) Funktionen für Microsoft Dynamics 365 Human Resources, wollen wir unseren Kunden so schnell wie möglich neue Funktionen zur Verfügung stellen. Administratoren können Vorschaufunktionen in ihrer Umgebung sehen und nutzen. Diese Funktionen sind fast fertig für die allgemeine Verfügbarkeit und wurden ausgiebig getestet. Wir sind nur auf der Suche nach einer letzten Runde von Kunden-Feedback und Validierung, bevor wir sie zur allgemeinen Verfügbarkeit veröffentlichen.
 
 In diesem Thema wird beschrieben, wie Sie die Vorschaufunktionen aktivieren können, und es werden die Funktionen aufgeführt, die derzeit für Vorschau aktiviert sind. Diese Liste wird aktualisiert, wenn die Funktionen zur allgemeinen Verfügbarkeit freigegeben werden und wenn neue Funktionen zur Vorschau freigegeben werden. Es erfolgt keine Benachrichtigung, wenn neue Funktionen zur Vorschau freigegeben werden. Die Benutzer werden nur beginnen, die Funktionen zu sehen. Weitere Informationen über neue Funktionen im Talent, finden Sie unter [Neuheiten oder Änderungen in Dynamics 365 Talent](./whats-new.md) und [Dynamics 365 und Power Platform-Versionshinweise](https://docs.microsoft.com/business-applications-release-notes).
 
@@ -54,50 +54,6 @@ Um auf Vorschaufunktionen zugreifen zu können, müssen Sie sie in Ihrer Umgebun
 > [!NOTE]
 > Einige Vorschaufunktionen erfordern ggf. zusätzliche Konfiguration. Folgen Sie den Links neben der Vorschaufunktion, um die Einstellungen für diese durchzuführen.
 
-### <a name="core-hr"></a>Zentrale Personalverwaltung
-
-1. Melden Sie sich bei Talent an.
-2. Wählen Sie **Systemverwaltung** und anschließend die Registerkarte **Links** aus.
-3. Auf der Seite **Systemverwaltung** unter **Einstellungen**, wählen Sie **Systemparameter** aus.
-4. Auf der Seite **Systemparameter** wählen Sie die Registerkarte **Vorschaufunktionen** aus.
-5. Hier können Sie die Option **Aktivieren Sie Seitenansichtsmodus für alle Benutzer** auf **Ja** festlegen, um die  Vorschaufunktionen bereitzustellen.
-
-    ![Vorschaufunktionen in Core HR aktivieren](./media/corehr-enable-preview-features.png)
-
-> [!NOTE]
-> Um die Vorschaufunkltion zu deaktivieren, führen Sie die gleichen Schritte aus, aber legen die Option **Aktivieren der Vorschaufunkltion für alle Benutzer** auf **nein** fest. Wenn Sie die Vorschaufunktionen deaktivieren, werden sie für Ihre Benutzer unzugänglich, und es können Fehler in Prozessen auftreten, die mit den Funktionen verknüpft sind.
-
-### <a name="onboard"></a>Aufnehmen
-
-Keine Vorschaufunktionen sind derzeit für Microsoft Dynamics 365 Talent: Onboard verfügbar.
-
-## <a name="features-that-are-currently-in-preview"></a>Funktionen, die sich derzeit in der Vorschau befinden
-
-### <a name="attract"></a>Attract
-
-- [Kandidatenempfehlung](./intelligent-recommendations.md#candidate-recommendations) - Wenn es mehr als zehn Kandidaten oder Interessenten gibt, die Zusammenfassungen oder vollständige Profile haben, erscheinen die Kandidaten oder Interessenten, die den Anforderungen der Stelle am besten entsprechen, oben im Abschnitt **Zu berücksichtigende Bewerber** auf der Stellenseite.
-- [Stellenempfehlung](./intelligent-recommendations.md#job-recommendations) – Wenn mehr als zehn Stellen auf der Karrieresite veröffentlicht sind, stellt Attract Stellenempfehlungen für Interessenten bereit.
-- [Broadbean-Integration](./posting-jobs-external.md#post-jobs-to-broadbean) – Sie können Stellen von Attract in Broadbean, einer externen Stellenveröffentlichungssite, veröffentlichen. Nachdem Sie diese Vorschaufunktion aktiviert haben, müssen Sie die Einrichtung abschließen, indem Sie Ihren Broadbean Benutzernamen, Client-ID und Verschlüsselungstoken eingeben.
-- [Analytis](./analytic-reports.md) -  Im Analytcs Hub können Einstellungsteams Schlüsselindikatoren für eine einzelne Stelle und aggregierte Metriken für alle Stellen anzeigen.
-- [BCG](./activities-attract.md) – Neue Aktivitätstypen ermöglichen die Nutzung eines vordefinierten Formulars für die Erfassung der Daten des Kandidaten bezüglich beruflicher Chancengleichheit (BCG) und der staatlichen Abteilung zur Überwachung der Chancengleichheit für Beschäftige bei öffentlichen Aufträgen (Office of Federal Contract Compliance Program - OFCCP). Das vordefinierte Formular kann nicht bearbeitet werden.
-- [Interessentenempfehlung](./intelligent-recommendations.md#prospect-recommendations) – Attract überprüft frühere und aktuelle Kandidaten und stellt eine Liste von Interessenten bereit, die gut für Ihre Stelle passen könnten.
-- [Bedeutungssuche](./attract-talent-pools.md#search-and-view-candidate-profiles) – Sie können die gesamte Kandidatendatenbank nach bestimmten Fähigkeiten, Namen oder Informationen zur Ausbildung suchen. Attract durchsucht das gesamte Profil und hebt alle gefundenen Übereinstimmungen hervor. Attract sucht auch alle Dokumente, die für einen Kandidaten verfügbar sind und ordnet die Suchergebnisse logisch an.
-- [Aktivitätszielgruppe](./whats-new-talent-march-20.md#setting-the-audience-on-activities) – Sie können die Zielgruppe für Aktivitäten (wie Gesprächsvereinbarung, Zeitplan oder Feedback) auf **Alle Kandidaten**, **Interne Kandidaten** oder **Externe Kandidaten** festlegen. Sie können kundenspezifische Aktivitäten wie YouTube Videos, Webinhalt und Microsoft Formulare für alle Kandidaten, interne Kandidaten, externe  Kandidaten oder Einstellungsteams bereitstellen.
-- [Mit LinkedIn anwenden](./career-site.md#enable-applying-for-jobs-with-linkedin-profiles) – Sie können eine Option in Ihrer Attract Karrieresite einrichten, damit Stellenkandidaten sich über LinkedIn bewerben können. Diese Funktion steuert den Bewerbungsprozeß für Kandidaten, indem sie das LinkedIn-Profil verwenden können, um ihre Bewerbung auf der Karrieresite automatisch auszufüllen.
-- [Quellnachverfolgung](./source-tracking.md) – Attracts verfolgt die Quelle der Kandidatenbewerbungen und stellt wertvolle Informationen bereit, die Sie bei der Erfüllung der Rekrutierungsanstrengungen unterstützen. Sie können auch eine Bewerbungsquelle auswählen, wenn Sie einen Kandidaten dem Kandidatenpool hinzufügen.
-- [Silbermedaillengewinner](./whats-new-talent-march-20.md#designate-silver-medalists-to-assign-high-value-applicants-for-future-positions) – Wenn Kandidaten hervorragend in Ihre Organisation passen würden, Sie diese aber nicht für die aktuelle Position eingeladen haben, können Sie dies als Silbermedaillengewinner definieren. Durch diese Funktion kann die Zeit beim nächsten Mal reduziert werden, wenn eine ähnliche Stelle verfügbar ist.
-
-### <a name="core-hr"></a>Zentrale Personalverwaltung
-
-- [Überprüfen Sie Positionshierarchiedaten](./whats-new-talent-may-13-2019.md#new-page-to-validate-position-hierarchy-data) – Sie können die Verwaltungshierarchie wie alle Zirkelverweise prüfen, die versehentlich importiert wurden.
-- [Geben Sie Ursachencodes auf Sonderurlaubstypen an](./whats-new-talent-may-13-2019.md#specify-reason-codes-on-leave-types) – Sie können Ursachencodes für Sonderurlaubstypen angeben.
-- [Erzwingen von Ursachencodes für Freizeitanforderungen](./whats-new-talent-may-13-2019.md#require-reason-codes-for-specific-leave-types-on-time-off-requests) – Neben den Ursachencodes für Sonderurlaub gibt es auch Ursachencodes für Freizeitanforderungen.
-- [Erstellen Sie eine Urlaub- und Abwesenheitsbuchungsliste bereit für Personalverwaltung](./whats-new-talent-may-13-2019.md#provide-a-leave-and-absence-transaction-list-for-hr) – Sie können eine Liste der Sonderurlaubstypen und Abwesenheitsbuchungen anzeigen, mit deren Hilfe erhalten Einblicke in Freizeitsalden.
-
-### <a name="onboard"></a>Aufnehmen
-
-Keine Vorschaufunktionen sind derzeit für Microsoft Onboard verfügbar.
-
 ## <a name="feedback"></a>Feedback
 
 Wir möchten von Ihnen über Ihre Erfahrung mit diesen Vorschaufunktionen hören Wir empfehlen Ihnen, Ihr Feedback regelmäßig auf den folgenden Seiten zu veröffentlichen, wenn Sie diese oder andere Funktionen nutzen:
@@ -106,7 +62,6 @@ Wir möchten von Ihnen über Ihre Erfahrung mit diesen Vorschaufunktionen hören
 - Teilen Sie uns mit, welche Funktionen Sie im Produkt sehen möchten und welche Änderungen Ihrer Meinung nach an bestehenden Funktionen vorgenommen werden sollten. Verwenden Sie die folgenden Webseiten, um Produktideen vorzuschlagen:
 
     - [Attract Ideen](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
-    - [Core HR Ideen](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
     - [Onboard Ideen](https://powerusers.microsoft.com/t5/Ideas-for-Onboard/idb-p/Onboard)
 
 Stellen Sie sicher, dass Sie keine persönlichen Daten (Informationen, die Sie identifizieren könnten) in Ihre Feedback- oder Produktbewertungseinreichungen mitsenden. Die gesammelten Informationen können weiter analysiert werden und werden nicht zur Beantwortung von Anfragen im Rahmen der geltenden Datenschutzgesetze verwendet. Personenbezogene Daten, die im Rahmen dieser Programme separat erfasst werden, unterliegen der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/privacystatement).

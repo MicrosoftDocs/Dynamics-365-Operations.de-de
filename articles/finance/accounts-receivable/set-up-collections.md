@@ -1,5 +1,5 @@
 ---
-title: Kredit und Inkasso einrichten
+title: Einrichten Inkassi
 description: In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -18,18 +18,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ed075484f79d7ef7d0d4e6d62d037bb3e9cc96f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 58d3e7f66ab5816849d393098d073ea7629e6b7c
+ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177956"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013162"
 ---
-# <a name="set-up-credit-and-collections"></a>Kredit und Inkasso einrichten
+# <a name="set-up-collections"></a>Einrichten Inkassi
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden.
+In diesem Artikel wird beschrieben, wie Inkassofunktionen eingerichtet werden. Sie müssen einige Einrichtungsschritte ausführen, wenn Sie die Inkassofähigkeit verwenden. Es gibt auch einige optionale Funktionen, einschließlich Debitorenpools und Inkassoteams. 
+
+- Zahlungsfristdefinitionen
+- Fälligkeitsmomentaufnahmen
+- Journale
+- Ursachencode für Abschreibungsbuchungen
+- Inkassobeauftragte
+- Abschreibungskonto
+- Information: Keine Deckung
+- Outlook-Einstellungen für Benutzer, die die Seite **Inkassi** verwenden
+- E-Mail-Adressen
+
+Diese Punkte werden im weiteren Verlauf dieses Themas ausführlicher behandelt. 
 
 <a name="set-up-aging-period-definitions"></a>Zahlungsfristdefinitionen einrichten
 -------------------------------
@@ -46,12 +58,12 @@ Sie können Debitorenpools für Gruppen von Debitoren einrichten. Auf den Listen
 Wenn mehrere Personen in der Organisation mit Inkassi beschäftigt sind, können Sie ein Inkassoteam einrichten. Sie können das Team auf der Seite **Debitorenparameter** auswählen. Wenn Sie kein Inkassoteam erstellen, wird beim Einrichten von Inkassobeauftragten auf der Seite **Inkassobeauftragter** automatisch ein Team erstellt.
 
 ## <a name="set-up-a-collections-case-category"></a>Einrichten einer Kategorie für Inkassoanfragen
-Wenn Sie die Inkassoaktivitäten nach Anfragen organisieren, richten Sie eine Anfragenkategorie mit dem Kategorietyp **Inkassi** ein. Diese Einrichtung ist nur erforderlich, wenn Sie die Anfragefunktion auf der Seite **Inkassi** verwenden möchten.
+Wenn Sie Ihre Inkassoaktivitäten nach Anfragen organisieren, richten Sie eine Anfragenkategorie mit dem Kategorietyp **Inkassi** ein. Diese Einrichtung ist nur erforderlich, wenn Sie die Anfragefunktion auf der Seite **Inkassi** verwenden möchten.
 
 ## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Einrichten von Journalen (Ausgleich, Abschreibung und KD)
-Richten Sie die Namen der Erfassungen ein, die verwendet werden, wenn Buchungen auf der Seite **Inkassi** verarbeitet werden. Zu dieser Verarbeitung gehören der Ausgleich einer Buchung, das Abschreiben einer Buchung und das Verarbeiten einer Zahlung mit unzureichender Deckung.
+Richten Sie die Namen der Erfassungen ein, die verwendet werden, wenn Buchungen auf der Seite **Inkassi** verarbeitet werden. Zu dieser Verarbeitung gehören der Ausgleich einer Buchung, das Abschreiben einer Buchung und das Verarbeiten einer Zahlung ohne ausreichende Deckung.
 
-| Beschreibung | Erfassungstyp     |
+| Beschreibung | Journaltyp     |
 |-------------|------------------|
 | Ausgleich  | Debitorenzahlung |
 | Abschreiben   | Täglich            |
@@ -78,7 +90,10 @@ Aktualisieren Sie Bankkonten, sodass sie die richtige Erfassung haben, wenn NSF-
 ## <a name="set-up-outlook-settings-for-users-of-the-collections-page"></a>Einrichten von Outlook-Einstellungen für Benutzer der Seite "Inkassi"
 Damit Arbeitskräfte mit der Seite **Inkasso** Aktivitäten erstellen oder E-Mail-Nachrichten senden können, müssen Sie zuerst sicherstellen, dass der Konfigurationsschlüssel **Microsoft Outlook-Synchronisierung** ausgewählt und die Outlook-Synchronisierung für diese Arbeitskräfte eingerichtet ist.
 
-## <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Einrichten von E-Mail-Einstellungen für Inkassokontakte von Debitoren
+## <a name="set-up-email-and-addresses"></a>E-Mail und Adressen einrichten
+Mithilfe von E-Mail können Sie mit Kunden und Verkäufern über Inkassoprobleme kommunizieren, um E-Mail-Nachrichten von der Seite **Inkassi** zu senden. 
+
+### <a name="set-up-email-and-address-settings-for-collections-customer-contacts"></a>Einrichten von E-Mail-Einstellungen für Inkassokontakte von Debitoren
 Richten Sie E-Mail-Adressen für Debitorenkontakte ein, wenn Sie mit der Seite **Inkassi** E-Mail-Nachrichten an diese Kontakte senden möchten. Der Inkassokontakt wird als Standardkontakt auf der Seite **Inkassi** verwendet. Sie können eine Adresse für Aufstellungen einrichten, wenn der Debitor Aufstellungen unter einer anderen als der primären Adresse erhalten soll. 
 
 Wählen Sie auf dem Inforegister **Kredit und Inkasso** für einen Debitor im Feld **Kontakt für Inkasso** die Person in der Organisation des Debitors aus, die mit Ihrem Inkassobeauftragten zusammenarbeitet. Diese Person wird als Standardkontakt auf der Seite **Inkassi** verwendet und ist der Empfänger der E-Mail-Nachrichten. 
@@ -86,7 +101,7 @@ Wählen Sie auf dem Inforegister **Kredit und Inkasso** für einen Debitor im Fe
 > [!NOTE] 
 > Wenn kein Inkassokontakt für einen Debitor angegeben ist, wird der Primärkontakt für den Debitor verwendet. Falls kein Primärkontakt angegeben ist, werden E-Mails an die erste Adresse auf der Seite **Kontakte** gesendet.
 
-## <a name="set-up-email-settings-for-salespeople"></a>Einrichten von E-Mail-Einstellungen für Verkäufer
+### <a name="set-up-email-settings-for-salespeople"></a>Einrichten von E-Mail-Einstellungen für Verkäufer
 Richten Sie E-Mail-Adressen für Verkäufer ein, wenn Sie mit der Seite **Inkassi** E-Mail-Nachrichten an Verkäufer senden möchten. Richten Sie für jeden Verkäufer in allen Provisionsverkaufsgruppen eine E-Mail-Adresse ein. Der Verkäufer, für den die Option **Kontakt** aktiviert ist, fungiert als Standardverkäufer, an den E-Mail-Nachrichten gesendet werden. 
 
 Ist kein Verkäufer angegeben, wird der primäre Verkäufer für die Organisation des Debitors verwendet. Falls kein primärer Verkäufer angegeben ist, werden E-Mails an den ersten auf der Seite aufgeführten Verkäufer gesendet.

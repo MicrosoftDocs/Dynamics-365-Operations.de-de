@@ -3,7 +3,7 @@ title: Starterkit-Überblick
 description: Dieses Thema bietet einen Überblick über das Microsoft Dynamics 365 Commerce Starter Kit.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 73af7fc8845fe08bc4aa014abe4d8c6dcf7ccb7d
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785259"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025901"
 ---
 # <a name="starter-kit-overview"></a>Starterkit-Überblick
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet einen Überblick über das Microsoft Dynamics 365 Commerce Starter Kit.
@@ -43,7 +43,7 @@ Die Module im Starter-Kit können mit Designs versehen werden, um ihr Erscheinun
 Die folgenden Modultypen sind im Starter-Kit enthalten:
 
 - **Containermodul** – Ein Containermodul ist ein einfaches Modul, das als Host für andere Module fungiert. Es steuert das Layout der darin enthaltenen Module.
-- **Marketingmodule** – Zu den Marketing-Modulen gehören Hero-, Feature-, Inhaltsplatzierungs-, umfangreiche Inhaltsblock-, Video-Player- und Karussell-Module. Alle diese Module können verwendet werden, um Inhalte zu präsentieren. Sie können auf jede Seite gestellt werden und werden von Daten aus dem Content Management System (CMS) gesteuert.
+- **Marketingmodule** – Zu den Marketingmodulen gehören Block-, Textblock-, Video-Player- und Karussell-Module. Alle diese Module können verwendet werden, um Inhalte zu präsentieren. Sie können auf jede Seite gestellt werden und werden von Daten aus dem Content Management System (CMS) gesteuert.
 - **Kopf- und Fußzeilenmodule** – Kopf- und Fußzeilenmodule werden in den Kopf- und Fußzeilen aller Websiteseiten angezeigt. Diese Module können nach Bedarf über Eigenschaften konfiguriert werden.
 - **Suchmodule** – Produkte können mithilfe des Suchmoduls in der Kopfzeile gefunden werden. Suchergebnisse werden auf der Suchergebnisseite angezeigt. Produkte können auch auf Kategorieseiten gefunden werden. Hierbei handelt es sich um dedizierte Seiten für jede Kategorie, die in der Kanalnavigationshierarchie unterstützt wird. Darüber hinaus können mit Refiner-Modulen Suchergebnisse und Kategorieseiten weiter gefiltert werden.
 - **Produktdetailseitenmodule** – Produktdetailseiten verwenden mehrere Module, um Produktinformationen anzuzeigen. Mit dem Kauffeld-Modul können Kunden Produkte anzeigen und in den Einkaufskorb legen. Andere Module, wie das Modul für technische Daten, zeigen die Produktdetails an. Das Bewertungsmodul kann zum Anzeigen und Bereitstellen von Bewertungen verwendet werden.

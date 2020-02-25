@@ -3,7 +3,7 @@ title: Containermodul
 description: Dieses Thema enthält Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,27 +17,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 22a09b61fbe3bd1cca96011d3fb81a12ef1bc844
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697059"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025527"
 ---
 # <a name="container-module"></a>Containermodul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 ## <a name="overview"></a>Übersicht
 
-Ein Containermodul ist ein Modul, das andere Module hostet. Dies ist der generischste Container, der in Dynamics 365 Commerce verwendet wird. Der Hauptzweck eines Containermoduls ist es, die Eigenschaften zu definieren, die für sie festgelegt, werden, wie das Layout der Module, die enthalten sind. Diese Module können nebeneinander in einem Zwei-, Drei-, Vier- oder Sechsspalten-Layout angezeigt werden. Sie können auch auf die Breite des Containers beschränkt werden, oder sie können den Bildschirm ausfüllen. Eine Überschrift kann zu jedem Containermodul hinzugefügt werden.
+Ein Containermodul ist ein Modul, das andere Module hostet. Der Hauptzweck eines Containermoduls ist es, das Layout der Module über die Eigenschaften, die für es festgelegt sind und die es enthält, zu bestimmen. Diese Module können nebeneinander in einem Zwei-, Drei-, Vier- oder Sechsspalten-Layout angezeigt werden. Sie können auch auf die Breite des Containers beschränkt werden, oder sie können den Bildschirm ausfüllen. Eine Überschrift kann zu jedem Containermodul hinzugefügt werden.
 
-Es gibt drei standardmäßige Containermodule: Container, Containern mit 2 Slots und Container mit 3 Slots. Module von einem beliebigen Typ von Modulen können innerhalb dieser Container festgelegt werden. Es gibt auch bestimmte Arten von Containermodulen, wie Karussell, umfangreicher Inhaltsblock, Inhaltplatzierung, Einkaufskorb, Auschecken, Kauffeld, Kopf- und Fußzeile. Diese Container gelten bestimmten Zwecken und nur bestimmte unterstützte Typen von Modulen können darin festgelegt werden.
+Es werden drei Containermodule unterstützt: Container, Container mit 2 Slots und Container mit 3 Slots. Es können Module eines beliebigen Typs innerhalb dieser Container festgelegt werden. 
 
-Es wird empfohlen, dass Sie die Module innerhalb eines Containers festlegen, sodass sie auf die Breite des Containers beschränkt werden können.
+> [!NOTE] 
+> Es wird empfohlen, dass Sie immer die Module innerhalb eines Containermoduls festlegen, sodass sie auf die Breite des Containers beschränkt werden können.
 
 ## <a name="examples-of-container-modules-in-e-commerce"></a>Beispiele für Containermodulen in E-Commerce
 
@@ -98,30 +99,27 @@ Zusätzliche Eigenschaften können verwendet werden, um das Layout für verschie
 
 Um ein Containerspielmodul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Erstellen Sie eine Seitenvorlage, die mit **Containervorlage** bezeichnet ist.
-1. Im **Haupt-** Slot der Standardseite fügen Sie ein Containermodul hinzu.
-1. Im Containermodul fügen Sie ein Funktionsmodul hinzu.
-1. Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie.
+1. Erstellen Sie eine Seitenvorlage, die mit **Containervorlage** bezeichnet ist. 
+1. Fügen Sie im Slot **Text** das Modul **Standardseite** hinzu.
+1. Beenden Sie die Bearbeitung der Vorlage und veröffentlichen Sie sie.
 1. Verwenden Sie die Containervorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Containerseite** hat.
 1. Im **Haupt-** Slot der neuen Seite fügen Sie ein Containermodul hinzu.
-1. Im Eigenschaftenbereich für das Containermodul legen Sie die **Anzahl der Spalten** auf **1** die **Breite** auf **Eingepasster Container**.
-1. Im Containermodul fügen Sie ein Funktionsmodul hinzu.
-1. Im Eigenschaftenbereich für das Funktionsmodul konfigurieren Sie eine Überschrift.
+1. Im Eigenschaftenbereich für das Containermodul legen Sie die Eigenschaft **Anzahl der Spalten** auf **1** und die Eigenschaft **Breite** auf **Container füllen** fest.
+1. Fügen Sie dem Containermodul ein Inhaltsblockmodul hinzu.
+1. Konfigurieren Sie im Eigenschaftenbereich für das Inhaltsblockmodul die Überschrift, das Bild und das Layout.
 1. Seite speichern und Vorschau anzeigen. Sie sollten ein Funktionsmodul sehen, das in die Breite des Containermoduls passt.
-1. Im Eigenschaftenbereich für das Containermodul ändern Sie die **Anzahl der Spalten** auf **3**
-1. Fügen Sie zwei weitere Funktionsmodule dem Containermodul hinzu.
-1. Seite speichern und Vorschau anzeigen. Sie können drei Funktionsmodule sehen, die nebeneinander angezeigt werden.
-1. Nachdem Sie das Layout erstellt haben, das Sie möchten, laden Sie die Seite hoch und veröffentlichen diese.
+1. Im Eigenschaftenbereich für das Containermodul ändern Sie den Wert der Eigenschaft **Anzahl der Spalten** auf **3**.
+1. Fügen Sie zwei weitere Inhaltsblockmodule dem Containermodul hinzu.
+1. Seite speichern und Vorschau anzeigen. Sie können jetzt drei Inhaltsblockmodule sehen, die nebeneinander angezeigt werden.
+1. Nachdem Sie das gewünschte Layout erstellt haben, bearbeiten Sie die Seite fertig und veröffentlichen Sie sie.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Überblick](starter-kit-overview.md)
+[Starterkit-Übersicht](starter-kit-overview.md)
 
 [Karussellmodul](add-carousel.md)
 
-[Umfangreiches Inhaltsblockmodul](add-content-rich-block.md)
-
-[Inhaltsplatzierungsmodul](add-content-placement-modules.md)
+[Textblock-Modul](add-content-rich-block.md)
 
 [Kauffeldmodul](add-buy-box.md)
 

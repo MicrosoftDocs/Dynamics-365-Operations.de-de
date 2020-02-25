@@ -1,9 +1,9 @@
 ---
 title: Entfernte oder veraltete Funktionen in Lifecycle Services (LCS)
 description: In diesem Thema werden die Funktionen beschrieben, die aus Microsoft Dynamics Lifecycle Services (LCS) entfernt wurden oder entfernt werden sollen.
-author: sericks007
+author: AngelMarshall
 manager: AnnBe
-ms.date: 12/02/2019
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -12,15 +12,15 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: sericks
+ms.author: tsmarsha
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c792d06e9b0aa42919de924bdcc9118358779b72
-ms.sourcegitcommit: 75bbcff474cfb8d2f282be2b9d2d7984d1505fa3
+ms.openlocfilehash: 96ecd040ef8661765c0a3861d8e07fee3c241161
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885454"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027979"
 ---
 # <a name="removed-or-deprecated-features-in-lifecycle-services-lcs"></a>Entfernte oder veraltete Funktionen in Lifecycle Services (LCS)
 
@@ -53,7 +53,7 @@ Diese Liste soll Ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 </tr>
 <tr>
 <td><strong>Status</strong></td>
-<td>Veraltet: Die Flussdiagrammkomponente in BPM wird voraussichtlich Anfang Februar 2020 entfernt. Folgende Funktion wird entfernt:
+<td>Veraltet: Die Flussdiagrammkomponente in BPM wird voraussichtlich im Jahr 2020 entfernt. Folgende Funktion wird entfernt:
 <ul>
 <li>Vorhandene Flussdiagramme können nicht angezeigt oder bearbeitet werden. Die Formeigenschaften, die mit Flussdiagrammaktivitäten verknüpft sind, sind ebenfalls nicht verfügbar, da die gesamte Registerkarte <strong>Flussdiagramm</strong> entfernt wird. Diese Flussdiagramme umfassen sowohl automatisch generierte Standardflussdiagramme als auch benutzerdefinierte Flussdiagramme, die auf der Grundlage dieser Standardflussdiagramme geändert werden.</li>
 <li>Die Funktion zur Analyse älterer Anpassungen/Lücken ist nicht verfügbar. Daher wird keine Lückenliste automatisch erstellt oder steht für den Export zur Verfügung.

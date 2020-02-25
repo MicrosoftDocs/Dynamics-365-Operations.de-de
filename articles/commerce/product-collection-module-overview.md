@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 31307035014f2fae6146f33bc23e3e06103f82eb
-ms.sourcegitcommit: c237123ad94d9418994ac095fbd8634c05a927b1
+ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2943262"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025947"
 ---
 # <a name="product-collection-modules"></a>Produktsammelmodule
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Produktsammelmodule in Microsoft Dynamics 365 Commerce.
@@ -39,7 +39,7 @@ Produktsammelmodule stellen physische Produkte und Dienstleistungen auf der Webs
 
 Die Quelle für Produktsammlungen kann eine der vier folgenden Listentypen sein:
 
-- Redaktionelle Listen von Produkten, die manuell in Dynamics 365 Retail als zugehörige Produkte für ein Produkt definiert wurden, oder Produktlisten
+- Redaktionelle Listen von Produkten, die manuell in Dynamics 365 Commerce als zugehörige Produkte für ein Produkt definiert wurden, oder Produktlisten
 - Algorithmische Listen, z. B. Listen mit neuen, meistverkauften oder beliebten Produkten
 - Empfehlungslisten, die auf maschinellem Lernen basieren
 - Personalisierungslisten, die personalisierte Ergebnisse für einen Kunden unterstützen. Kunden müssen auf der E-Commerce-Website angemeldet sein, um personalisierte Ergebnisse zu erhalten. Gastbenutzer sehen keine personalisierten Ergebnisse. Kunden können sich von der Personalisierung abmelden [Kontoverwaltungsseite](account-management.md).
@@ -57,9 +57,10 @@ In der folgenden Tabelle werden verschiedene Arten von Produktsammelmodulen in D
 
 | Produktsammelmodul  | Typ | Beschreibung |
 |----------------------------|------|-------------|
-| Kategorie                   | Kategorie | In diesem Modul wird eine Liste der Produkte in einer Kategorie angezeigt, die durch die Navigationskategoriehierarchie definiert ist, die der Einzelhändler für einen Einzelhandelskanal erstellt hat. |
-| Zugehörige Produkte           | Redaktion | Diese Art eines Produktsammelmoduls zeigt eine Liste der Produkte an, die ein Manager Verkaufsförderung für den vom Autor ausgewählten Relationstyp als verwandte Produkte im Einzelhandel konfiguriert hat. |
-| Kuratierte Produktlisten      | Redaktion | Dieses Modul zeigt eine benutzerdefinierte Liste, die Merchandiser und Redakteure im Einzelhandel erstellt haben. |
+| Kategorie                   | Kategorie | In diesem Modul wird eine Liste der Produkte in einer Kategorie angezeigt, die durch die Navigationskategoriehierarchie definiert ist, die der Einzelhändler für einen Kanal erstellt hat. |
+| Zugehörige Produkte           | Redaktion | Diese Art eines Produktsammelmoduls zeigt eine Liste der Produkte an, die ein Manager Verkaufsförderung für den vom Autor ausgewählten Relationstyp als verwandte Produkte in Commerce konfiguriert hat. |
+| Suchergebnisse             | Suchabfrage | Diese Art eines Produktsammelmoduls zeigt eine Liste der Produkte an, die der vom Kunden eingegebenen Suchanfrage am besten entsprechen. |
+| Kuratierte Produktlisten      | Redaktion | Dieses Modul zeigt eine benutzerdefinierte Liste, die Merchandiser und Redakteure in Commerce erstellt haben. |
 | Neue                        | Algorithmisch | Dieses Modul zeigt eine Liste der neuesten Produkte, die nach Kanälen und Katalogen sortiert wurden. Diese Liste kann personalisierte Ergebnisse für einen angemeldeten Benutzer anzeigen, wenn der Site-Autor diese Option auswählt. |
 | Bestseller               | Algorithmisch | Dieses Modul zeigt eine Liste der Produkte, die nach der höchsten Anzahl an Verkäufen sortiert sind. Diese Liste kann personalisierte Ergebnisse für einen angemeldeten Benutzer anzeigen, wenn der Site-Autor diese Option auswählt. |
 | Populär                   | Algorithmisch | Dieses Modul zeigt eine Liste der leistungsstärksten Produkte für einen bestimmten Zeitraum. Diese Liste kann personalisierte Ergebnisse für einen angemeldeten Benutzer anzeigen, wenn der Site-Autor diese Option auswählt. |
@@ -76,7 +77,6 @@ Befolgen Sie diese Schritte, um ein Produktsammelmodul zu einer Kategorieseite h
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** **Container** und dann **OK** aus.
 1. Wählen Sie im Containermodul die Ellipsen-Schaltfläche und dann **Modul hinzufügen** aus.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** **Produktsammlung** und dann **OK** aus.  
-![Beispiel für den Ablauf des Produktsammlungsmoduls-Assistenten](./media/productCollectionModule.png)
 1. Konfigurieren Sie die Einstellungen, indem Sie eine geeignete Datenquelle und Eingaben für die Produktsammlung auswählen.
 1. Wählen Sie im Eigenschaftenbereich für das Produktsammelmodul **Produktliste hinzufügen** aus.
 1. Wählen Sie im Dialogfeld **Produktlistenkonfiguration auswählen** den Typ der Liste aus, geben Sie die Anzahl der Artikel ein und wählen Sie andere Optionen aus, die für den Listentyp verfügbar sind. Weitere Informationen zu Listentypen finden Sie in der folgenden Tabelle. 
@@ -88,8 +88,8 @@ In der folgenden Tabelle sind die Listentypen aufgeführt, die im Dialogfeld **P
 | Typ                       | Beschreibung | Nutzung | Seitenkontext | Spezifischer Kontext | Personalisierung |
 |----------------------------|-------------|-------|--------------|------------------|-----------------|
 | Produkte nach Kategorie       | Eine Liste von Produkten, die zu einer bestimmten Kategorie gehören. Diese Kategorie wird entweder über den Seitenkontext oder über dem vom Autor bereitgestellten Kontext bestimmt. | Diese Art von Liste kann auf jeder Seite verwendet werden (z. B. einer Homepage, Kategorieseite, Marketing-Seite oder Produktdetailseite \[PDP\]), um eine bestimmte Produktkategorie zu fördern. | Kategorie aus dem Seitenkontext, sofern verfügbar (z. B. eine Kategorieseite) | Der Autor kann eine bestimmte Kategorie als Kontext für die Liste angeben. | Nicht zutreffend |
-| Zugehörige Produkte           | Eine Liste der Produkte, die ein Manager Verkaufsförderung als verwandte Produkte im Einzelhandel für den Relationstyp konfiguriert hat. | Diese Art von Liste wird hauptsächlich auf PDPs verwendet, kann jedoch auf jeder Seite verwendet werden, wenn ein übergeordnetes Produkt bereitgestellt wird. | Produkt von der Seite, Beziehungstyp (obligatorisch) | Das Produkt kann im Picker ausgewählt werden und der Beziehungstyp wird verwendet. | Nicht zutreffend |
-| Zusammengestellt                    | Eine benutzerdefinierte Liste, die Merchandiser und Redakteure im Einzelhandel erstellt haben. | Erweitern von Kategorieseiten, Startseiten, Auscheck- und Einkaufskorbseiten sowie Produktseiten | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
+| Zugehörige Produkte           | Eine Liste der Produkte, die ein Manager Verkaufsförderung als verwandte Produkte in Commerce für den Relationstyp konfiguriert hat. | Diese Art von Liste wird hauptsächlich auf PDPs verwendet, kann jedoch auf jeder Seite verwendet werden, wenn ein übergeordnetes Produkt bereitgestellt wird. | Produkt von der Seite, Beziehungstyp (obligatorisch) | Das Produkt kann im Picker ausgewählt werden und der Beziehungstyp wird verwendet. | Nicht zutreffend |
+| Zusammengestellt                    | Eine benutzerdefinierte Liste, die Merchandiser und Redakteure in Commerce erstellt haben. | Erweitern von Kategorieseiten, Startseiten, Auscheck- und Einkaufskorbseiten sowie Produktseiten | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend |
 | Algorithmisch                | <ul><li>**Neu** – Eine Liste der neuesten Produkte, die nach Kanälen und Katalogen sortiert wurden.</li><li>**Bestseller** – Eine Liste der Produkte, die nach der höchsten Anzahl an Verkäufen sortiert sind.</li><li>**Populär** – Eine Liste der leistungsstärksten Produkte für einen bestimmten Zeitraum.</li></ul> | Startseite, Kategorieseite und Bezahl- und Warenkorbseiten erweitern | Kategorie aus dem Seitenkontext (z. B. eine Kategorieseite) | Die vom Site-Autor festgelegte Kategorie | Unterstützt |
 | Wird häufig zusammen gekauft | Eine Liste, die maschinelles Lernen verwendet, um Kaufmuster von Verbrauchern zu analysieren und verwandte Artikel zu empfehlen, die häufig zusammen mit einem bestimmten Produkt gekauft werden. | Diese Art von Liste gilt nur für die Warenkorbseite. | Einkaufskorb | Nicht zutreffend | Unterstützt |
 | Personen gefällt auch           | Eine Liste, die maschinelles Lernen verwendet, um Kaufmuster von Verbrauchern zu analysieren und verwandte Artikel zu empfehlen, die sich auf ein bestimmtes Produkt beziehen. | Diese Art von Liste wird auf PDPs verwendet, um Produkte anzuzeigen, die andere Kunden gekauft haben. | Produktkontext von der Seite | Das vom Site-Autor bereitgestellte Produkt | Unterstützt |
@@ -97,13 +97,11 @@ In der folgenden Tabelle sind die Listentypen aufgeführt, die im Dialogfeld **P
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Überblick](starter-kit-overview.md)
+[Starterkit-Übersicht](starter-kit-overview.md)
 
 [Karussellmodul](add-carousel.md)
 
 [Umfangreiches Inhaltsblockmodul](add-content-rich-block.md)
-
-[Inhaltsplatzierungsmodul](add-content-placement-modules.md)
 
 [Containermodul](add-container-module.md)
 

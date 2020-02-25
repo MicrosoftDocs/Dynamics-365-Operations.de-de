@@ -3,7 +3,7 @@ title: Steuern von Lagerarbeit, indem Sie Arbeitsvorlagen und Lagerplatzrichtlin
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 09/21/2018
+ms.date: 02/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9a5292e88fe022482ab9c6c5a8f016745946988
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 4645cf36201aa1b87c22ba4dbfb1b8d8117f425a
+ms.sourcegitcommit: fb7d0efd97754f1ae0b5aa765d0eeb3f57b8078f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026928"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3028027"
 ---
 # <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Steuern von Lagerarbeit, indem Sie Arbeitsvorlagen und Lagerplatzrichtlinien verwenden
 
@@ -152,7 +152,7 @@ Aktivieren Sie dieses Kontrollkästchen, um Chargenstrategien für die Artikel z
 ### <a name="strategy"></a>Strategie
 
 -   **Konsolieriung** . Diese Strategie wird verwendet, um Artikel an einem bestimmten Lagerplatz zu konsolidieren, wenn ähnliche Artikel bereits verfügbar sind. Dies funktioniert nur für den Einlagerungstyp mit der Lagerplatzdirektive. Allgemeine Einstellungen für Einlagerungen ist es, in der ersten Aktivitätsposition zu konsolidieren und dann im zweiten Versuch die Einlagerung ohne Konsolidierung vorzunehmen. Durch Konsolidieren von Waren ist das Buchen effizienter.
--   **Packmenge anpassen** - Diese Strategie wird verwendet, um sicherzustellen, dass ein Entnahmeort die angegebene Verpackungsmenge hat. Dies funktioniert nur für Lagerplatzdirektiven des Typs Entnahme. 
+-   **Verpackungsmenge anpassen** – Diese Strategie findet einen Ort, der ein Nummernschild enthält, das genau die benötigte Menge enthält. Es kann nicht an Orten verwendet werden, die nicht kennzeichengesteuert sind. Diese Strategie funktioniert nur für eine Lagerplatzdirektive des Typs Entnahme.
 -   **FEFO-Chargenreservierung** - Diese Strategie wird verwendet, wenn Bestand mithilfe eines Chargenablaufdatums zur Chargenreservierung zugeordnet wird. Sie können diese Strategie nur für stapelverarbeitungsfähige Artikel verwenden. Dies geht nur für eine Lagerplatzdirektive des Typs Entnahme. 
 -   **Auffüllen für eine vollständige LP** - Diese Strategie wird verwendet, um die Bestandsmenge zu runden, sodass sie der Ladungsträgermenge entspricht, die den zu entnehmenden Artikeln zugewiesen ist. Sie können diese Strategie für den Wiederbeschaffungstyp von Lagerplatzdirektiven des Typs Entnahme verwenden. 
 -   **Leerer Lagerplatz ohne eingehende Arbeit** -  Diese Strategie wird verwendet, um leere Lagerplätze zu suchen. Der Lagerplatz wird als leer angesehen, wenn dieser keinen physischen Bestand und keine erwartete eingehende Arbeit hat. Diese Strategie wird nur für einen Einlagerungsty der Lagerplatzdirektive verwendet. 

@@ -3,7 +3,7 @@ title: Genehmigungsprozesse in einem Workflow konfigurieren
 description: Verwenden Sie das folgende Verfahren, um die Eigenschaften des Genehmigungsprozesses zu konfigurieren.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d4032d5e56b9dd014ec0472abfc1b2ad4a15ff1d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 1f58e227542b1e5ca1235748d14e71bddac826ee
+ms.sourcegitcommit: 759325234a763e14071348a6f5399999a92f8264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811380"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2983763"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Genehmigungsprozesse in einem Workflow konfigurieren
 
@@ -138,11 +138,12 @@ Sie können Benachrichtigungen an Personen senden, wenn ein Dokument genehmigt, 
 
 ## <a name="specify-a-final-approver"></a>Festlegen einer letzten genehmigenden Person
 
-Eine letzte genehmigende Person sollte für Szenarios festgelegt werden, in denen die genehmigende Person die Person ist, die das Dokument zur Genehmigung übermittelt hat. Gehen Sie zum Festlegen einer letzten genehmigenden Person folgendermaßen vor.
+Sie können einen endgültigen Genehmiger für Szenarien festlegen, in denen der Genehmiger die Person ist, die das Dokument zur Genehmigung eingereicht hat, und die Option „Genehmigung durch Übermittler nicht zulassen“ verwendet wird. Gehen Sie zum Festlegen einer letzten genehmigenden Person folgendermaßen vor.
 
-1. Klicken Sie im linken Bereich auf **Erweiterte Einstellungen**.
-2. Aktivieren Sie das Kontrollkästchen **Letzter Genehmiger verwenden**.
-3. Wählen Sie in der Liste den Benutzer aus, der als letzte genehmigende Person fungieren soll.
+1. Rechtsklicken Sie im Workflow-Editor mit der rechten Maustaste auf das Genehmigungselement, und wählen Sie dann **Eigenschaften**, um das Formular **Eigenschaften** zu öffnen.
+2. Klicken Sie im linken Bereich auf **Erweiterte Einstellungen**.
+3. Aktivieren Sie das Kontrollkästchen **Letzter Genehmiger verwenden**.
+4. Wählen Sie in der Liste einen Benutzer aus, der als letzte genehmigende Person fungieren soll.
 
 ## <a name="set-a-time-limit"></a>Festlegen einer Zeitgrenze
 

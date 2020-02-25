@@ -3,7 +3,7 @@ title: Hinzufügen eines Urheberrechtshinweises
 description: In diesem Thema wird beschrieben, wie eine Urheberrechts-Meldung der E-Comerce Website hinzugefügt wird.
 author: psimolin
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 58c2949057ef777f706d12cee2dd3341d1a3b7e6
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914569"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025481"
 ---
 # <a name="add-a-copyright-notice"></a>Hinzufügen eines Urheberrechtshinweises
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie eine Urheberrechts-Meldung der E-Comerce Website hinzugefügt wird.
@@ -48,8 +48,8 @@ Um einen Urheberrechtshinweis am Fuß jeder Seite hinzuzufügen die eine bestimm
 1. Im Navigationsbereich wählen Sie die Ellipsis-Schaltfläche (**...**) neben der **Fußzeile** aus, und wählen Sie dann **Fügen Sie Modul hinzu** aus.
 1. Wählen Sie im Dialogfeld **Fußzeilenkategorie** und **OK** aus.
 1. Im Navigationsbereich wählen Sie die Ellipsis-Schaltfläche (...) neben der **Fußzeilenkategorie** aus, und wählen Sie dann **Fügen Sie Modul hinzu** aus.
-1. Wählen Sie im Dialogfeld **Umfangreiches Inhaltsblockmodul** und **OK** aus.
-1. Im Navigationsbereich wählen Sie **Umfangreiches Inhaltsblockmodul** aus.
+1. Wählen Sie im Dialogfeld **Textblock** und dann **OK** aus.
+1. Wählen Sie im Navigationsbereich **Textblock** aus.
 1. Im Eigenschaftenbereich auf der rechten Seite im Feld **Absatz**, fügen Sie die Urheberrechtsnachricht hinzu. Geben Sie beispielsweise **(C) Fabrikam 2019** ein.
 1. Wählen Sie **Speichern** aus, wählen Sie **Einchecken** und **Veröffentlichen** aus.
 1. Wechseln Sie zu **Vorlagen**, wählen Sie die Vorlage, und wählen Sie dann **Auschecken** aus.

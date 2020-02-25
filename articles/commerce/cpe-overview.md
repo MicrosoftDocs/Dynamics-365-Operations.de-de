@@ -1,5 +1,5 @@
 ---
-title: Commerce-Vorschauumgebung – Übersicht
+title: Dynamics 365 Commerce-Vorschauumgebung – Übersicht
 description: Dieses Thema enthält eine Übersicht der Microsoft Dynamics 365 Commerce-Vorschauumgebung.
 author: v-chgri
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 901583afde4739be5313fa129ff0e52f11326881
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 1ff96aeb5963df9ddee56783a089dad129bbb71c
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906069"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024682"
 ---
-# <a name="commerce-preview-environment-overview"></a>Commerce-Vorschauumgebung – Übersicht
+# <a name="dynamics-365-commerce-preview-environment-overview"></a>Dynamics 365 Commerce-Vorschauumgebung – Übersicht
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält eine Übersicht der Microsoft Dynamics 365 Commerce-Vorschauumgebung.
@@ -52,10 +52,10 @@ Informationen zum Bereitstellen der Commerce-Vorschauumgebung finden Sie unter [
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Bereitstellen einer Commerce-Vorschauumgebung](provisioning-guide.md)
+[Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md)
 
-[Konfigurieren einer Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+[Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md)
 
-[Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung](cpe-optional-features.md)
+[Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung](cpe-optional-features.md)
 
-[Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
+[Dynamics 365 Commerce-Vorschauumgebung – FAQ](cpe-faq.md)

@@ -17,30 +17,30 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 111bcaba971b6223f670176135574633d2f1c5ec
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914612"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001414"
 ---
 # <a name="add-languages-to-your-site"></a>Hinzufügen von Sprachen zu Ihrer Website
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie für weitere Sprachen Unterstützung für eine Microsoft Dynamics 365 Commerce Site hinzugefügt wird.
 
 ## <a name="overview"></a>Übersicht
 
-Sie können Ihre Website in eine beliebige Sprache lokalisieren, die Dynamics 365 Commerce unterstützt. (Die Liste der unterstützten Sprachen wird später in diesem Thema angezeigt) Wenn Sie eine Sprache auf der Website hinzuzufügen, müssen Sie sie in einem Onlineshop zuerst hinzufügen, der mit Ihrer Site verbunden ist.
+Sie können Ihre Website in eine beliebige Sprache lokalisieren, die Commerce unterstützt. (Die Liste der unterstützten Sprachen wird später in diesem Thema angezeigt) Wenn Sie eine Sprache auf der Website hinzuzufügen, müssen Sie sie in einem Onlineshop zuerst hinzufügen, der mit Ihrer Site verbunden ist.
 
 ## <a name="add-a-language-to-an-online-store"></a>Eine Sprache einem Onlineshop hinzufügen
 
 Um eine Sprache einem Online-Shop hinzuzufügen, folgen Sie diesen Schritten.
 
-1. Öffnen Sie die Dynamics 365 Retail Umgebung für Ihren Standort.
-1. Wechseln Sie zu **Einzelhandel \> Kanäle \> Onlineshops**, um auf die von Liste Onlineshops zuzugreifen, die für Ihre Umgebung konfiguriert werden. Alternativ können Sie **Onlineshops** als Suchbegriff eingeben.
+1. Öffnen Sie die Dynamics 365 Commerce Umgebung für Ihren Standort.
+1. Wechseln Sie zu **Retail und Commerce \> Kanäle \> Onlineshops**, um auf die von Liste Onlineshops zuzugreifen, die für Ihre Umgebung konfiguriert werden. Alternativ können Sie **Onlineshops** als Suchbegriff eingeben.
 1. Wählen Sie den Onlineshop, für den Sie eine Sprache  hinzufügen möchten.
 1. Auf dem Inforegister **Sprachen** wählen Sie **Hinzufügen** aus.
 1. Im Feld **Sprache** wählen Sie die Sprache aus, die Sie hinzufügen möchten.

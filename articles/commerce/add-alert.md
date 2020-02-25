@@ -1,9 +1,9 @@
 ---
-title: Warnungsmodul
-description: Dieses Thema enthält allgemeine Module und es wird beschrieben, wie diese Standortsseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+title: Werbebanner-Modul
+description: Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,68 +18,75 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82138dd7f0934f732215f67a3726638eb87075d4
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785351"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025619"
 ---
-# <a name="alert-module"></a>Warnmmodul
+# <a name="promo-banner-module"></a>Werbebanner-Modul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält allgemeine Module und es wird beschrieben, wie diese Standortsseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
 ## <a name="overview"></a>Übersicht
 
-Ein Warnungsmodul wird verwendet, um Informationsmeldungen auf einer Seite anzeigen. Warnungsmodule unterstützen Textnachricht und einen Link. Sie können verwendet werden, um Standort-weite Aktionen anzuzeigen, die auf allen Seiten einer E-Commerce-Webseite verwendet werden. 
+Werbebanner-Module werden verwendet, um Informationsmeldungen auf einer Seite anzeigen. Sie können verwendet werden, um Standort-weite Aktionen anzuzeigen, die auf allen Seiten einer E-Commerce-Webseite verwendet werden. 
 
-WModule Wachsame werden nach Daten des Content Management-System (CMS) gesteuert und können für jede beliebige Seite eingelagert werden.
+Werbebanner-Modul unterstützen eine Textnachricht und einen Link. Wenn einem Werbebanner-Modul mehrere Nachrichten hinzugefügt werden, wird es zu einem rotierenden Karussell-Banner, mit dem Kunden alle Nachrichten durchlaufen können. 
 
-## <a name="examples-of-alert-modules-in-e-commerce"></a>Beispiele der Warnungsmodule in E-Commerce
+Werbebanner-Module werden nach Daten des Content Management-System (CMS) gesteuert und können für jede beliebige Seite eingelagert werden.
 
-Warnungsmodule können im Sitekopf verwendet werden, um Standort-weite Aktionen oder Nachrichten anzugeben. Nachfolgend finden Sie einige Beispiele:
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Anwendungsbeispiele für Werbebanner im E-Commerce
+
+Werbebanner können im Site-Header verwendet werden, um Site-weite Werbeaktionen oder Nachrichten anzuzeigen, wie in den folgenden Beispielen dargestellt.
 
 „Jahresendverkauf endet in 10 Tagen“
 
 „Mit den Aktionen zum Schulbeginn viel sparen. Jetzt shoppen.“
 
-## <a name="alert-module-properties"></a>Warnungsmoduleigenschaften
+## <a name="promo-banner-module-properties"></a>Eigenschaften von Werbebanner-Modulen
 
-| Eigenschaftenname  | Wert                              | Beschreibung |
-|----------------|------------------------------------|-------------|
-| Text           | Text                               | Die Textnachricht erscheint im Warnungsmodul. |
-| Textausrichtung | **Rechts** **Links** **Zentriert** | Ein Wert, der definiert, wie Text im Warnungsmodul dargestellt wird. |
-| Warnung verwerfen  | **True** oder **False**              | Wenn der Wert auf **True** gesetzt wird, kann der Debitor die Warnung ablehnen. |
-| Verknüpfung           | URL                                | Die URL für einen optionalen Link. |
+| Eigenschaftenname             | Value                              | Beschreibung |
+|---------------------------|------------------------------------|-------------|
+| Bannernachrichten           | Text und Links                     | Eine Reihe von Texten und Links. |
+| Automatische Wiedergabe                  | **True** oder **False**              | Ein Wert, der angibt, ob Nachrichten automatisch durchlaufen werden, wenn mehrere Nachrichten konfiguriert sind. |
+| Folienübergangsintervall | Eine Anzahl von Millisekunden (ms)      | Das Intervall, in dem Nachrichten durchlaufen werden. |
+| Ausblenden zulassen             | **True** oder **False**              | Wenn der Wert auf **True** gesetzt wird, können Debitoren die Warnung ablehnen. |
+| Karussellflipper anzeigen     | **True** oder **False**              | Ein Wert, der angibt, ob die Karussellflipper angezeigt werden sollen, damit Debitoren mehrere Bannerelemente manuell durchlaufen können. |
+| Textausrichtung            | **Rechts** **Links** **Zentriert** | Die Textausrichtung im Werbebanner-Modul. |
+| Verknüpfung                      | Eine URL                              | Die URL für einen optionalen Link. |
 
-## <a name="add-an-alert-module-to-a-page"></a>Ein Warnungsmodul einer Seite hinzufügen 
+## <a name="add-a-promo-banner-module-to-a-page"></a>Ein Werbebanner-Modul einer neuen Seite hinzufügen 
 
-Um ein Warnungsmodul einer Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
+Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Erstellen Sie eine Seitenvorlage, die mit **Warnungsvorlage** bezeichnet ist.
-1. Im **Haupt-** Slot der Standardseite fügen Sie ein Warnungsmodul hinzu.
+1. Erstellen Sie eine Seitenvorlage mit dem Namen **Werbebanner-Vorlage**.
+1. Unter **Seitengliederung** fügen Sie ein Modul **Standardseite** zum Slot **Text** hinzu. 
 1. Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie. 
-1. Verwenden Sie die Warnungsvorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Warnungsseite** hat. 
-1. Im **Haupt-** Slot der neuen Seite fügen Sie ein Warnungsmodul hinzu.
-1. In den Einstellungen für das Warnungsmodul geben Sie den Warnungstext ein. Sie können die anderen Eigenschaften bearbeiten, wenn Sie das Modul weiter anpassen möchten.
-1. Seite speichern und Vorschau anzeigen. Am oberen Rand der Seite können sollten Sie eine Warnung sehen, die den von Ihnen hinzugefügten Text hat.
-1. Laden Sie die Seite hoch und veröffentlichen Sie sie. 
+1. Verwenden Sie die Vorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Werbebanner-Seite** hat. 
+1. Im **Haupt-** Slot der neuen Seite fügen Sie ein Containermodul hinzu. 
+1. Stellen Sie im rechten Bereich den Wert **Breite** auf **Behälter füllen** ein.
+1. Fügen Sie unter **Seitengliederung** dem Containermodul ein Werbebanner-Modul hinzu.
+1. Fügen Sie in den Einstellungen für das Banner-Modul eine oder mehrere Banner-Nachrichten hinzu. Jede Nachricht kann Text zusammen mit einem Link enthalten. Sie können die anderen Eigenschaften bearbeiten, um das Modul weiter anzupassen.
+1. Seite speichern und Vorschau anzeigen. Am oberen Rand der Seite sollten Sie eine Warnung sehen, die den von Ihnen hinzugefügten Text anzeigt.
+1. Beenden Sie die Bearbeitung der Seite und veröffentlichen Sie sie. 
+
+> [!NOTE]
+> Ein Werbebanner wird normalerweise im Seitenkopf- oder Untertitel-Slot verwendet.
+
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Überblick](starter-kit-overview.md)
+[Starterkit-Übersicht](starter-kit-overview.md)
 
 [Karussellmodul](add-carousel.md)
 
-[Umfangreiches Inhaltsblockmodul](add-content-rich-block.md)
+[Textblock-Modul](add-content-rich-block.md)
 
-[Inhaltsplatzierungsmodul](add-content-placement-modules.md)
-
-[Funktionsmodul](add-feature-module.md)
-
-[Hero-Modul](add-hero-module.md)
+[Inhaltsblockmodul](add-hero-module.md)
 
 [Video-Player-Modul](add-video-player.md)

@@ -3,7 +3,7 @@ title: Checkoutmoduls
 description: In diesem Thema wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,31 +17,29 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b810441fd25d41ee0893b119b4f7d91e7435d21
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 3805c0faabc8afc3decffb924b7f25332ff1ab16
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697082"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025389"
 ---
 # <a name="checkout-module"></a>Auschecken-Modul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 
 ## <a name="overview"></a>Übersicht
 
-Ein Auscheckenmodul ist ein spezieller Container, der alle Module hostet, die erforderlich sind, um einen Auftrag zu erstellen. Ein Auscheckenmodul kann Module enthalten, die die Versandadresse, die Versandart, die Fakturierungsdaten, Auftragszusammenfassung und andere Informationen bearbeiten, die einem Kundenauftrag zugeordnet sind. Der Bericht stellt einen schrittweisen Fluss dar, die ein Kunde verwendet, um die gesamten relevanten Informationen einzugeben, um eine Bestellung abzuschließen.
+Ein Auscheckenmodul ist ein spezieller Container, der alle Module hostet, die erforderlich sind, um einen Auftrag zu erstellen. Der Bericht stellt einen schrittweisen Fluss dar, die ein Kunde verwendet, um die gesamten relevanten Informationen einzugeben, um eine Bestellung abzuschließen. Es erfasst die Versandadresse, die Versandmethode und die Rechnungsinformationen. Es enthält auch eine Bestellübersicht und andere Informationen, die sich auf eine Kundenbestellung beziehen.
 
 Ein Auscheckenmodul rendert Daten basierend auf der Warkenkorb-Kennung Diese Kennung wird als Browsercookie gespeichert. Eine Einkaufskorb-Kennung ist erforderlich, um Informationen im Auscheckenmodul zu rendern, wie Artikel im Auftrag, im Gesamtbetrag und bei den Rabatten.
 
 ## <a name="checkout-module-properties"></a>Checkoutmodul-Eigenschaften
 
-Ein Auscheckenmodul hostet einen enthaltenen Satz Module. Mit einer Breiteneigenschaft können Sie angeben, ob die Artikel im Auscheckenmodul die Breite der Kombination anpassen oder den Bildschirm ausfüllen sollen.
-
-Ein Auscheckenmodul hat mehrere Slots, wie **Auscheckinformationen**, **Auftragszusammenfassung** und **Auftrag platziern**. Jeder Slot unterstützt einen Satz Module, die in einem bestimmten Layout auf der Seite angezeigt werden. Zum Beispiel beinhaltet der Slot **Auscheckeninformationen** alle Module, die erforderlich sind, um das Auschecken auszulösen, wie Module für die Postanschrift und die Zahlungsmethode. Der Slot **Auftragszusammenfassung** zeigt eine Auftragszusammenfassung an und unterstützt die Aktivität für das Sperren des Auftrags. Der **Ortsauftrag** Slot unterstützt zudem die Aktivität für das Sperren des Auftrags. Ortsauftragsmodule können in zwei Slots definiert werden, um den Prozess des Platzierens von Aufträgen aus verschiedenen Plattformen zu optimieren.
+Ein Checkout-Modul zeigt eine Bestellübersicht an und bietet die Funktionalität zum Aufgeben einer Bestellung. Um alle Kundeninformationen zu erfassen, die erforderlich sind, bevor eine Bestellung aufgegeben werden kann, müssen dem Checkout-Modul zusätzliche Module hinzugefügt werden. Einzelhändler haben daher die Flexibilität, dem Checkout-Flow benutzerdefinierte Module hinzuzufügen oder Module basierend auf ihren Anforderungen auszuschließen.
 
 ### <a name="modules-that-can-be-used-in-the-checkout-module"></a>Module können im Auscheckmodul verwendet werden
 
@@ -50,15 +48,12 @@ Ein Auscheckenmodul hat mehrere Slots, wie **Auscheckinformationen**, **Auftrags
 - **Containerabschnitt Auschecken** – Dieses Modul ist ein Container, der mehrere Module aufnehmen kann, um einen Bereich innerhalb des Auscheckflusses zu erstellen. So können Sie alle zahlungsrelevanten Module innerhalb dieses Containers speichern, damit diese in einem Bereich angezeigt werden. Dieses Modul wirkt sich nur auf das Layout des Flusses aus.
 - **Geschenkkarte** – Dieses Modul ermöglicht es einem Debitor, für einen Auftrag mit einer Geschenkkarte zu bezahlen. Er unterstützt nur Microsoft Dynamics 365 Commerce Geschenkkarten. Eine oder mehrere Geschenkkarten können für einen Auftrag verwendet werden. Wenn der Saldo der Geschenkkarte nicht dem Betrag im Einkaufskorb entspricht, kann die Geschenkkarte mit einer anderen Zahlungsmethode kombiniert werden. Geschenkkarten können nur eingelöst werden, wenn der Debitor angemeldet ist.
 - **Treuepunkte** – Dieses Modul ermöglicht einem Debitor für einen Auftrag zu bezahlen, indem er Treuepunkte verwendet. Es bietet eine Übersicht der verfügbaren Punkte und ablaufenden Punkten der Debitor kann die Punktzahl auswählen, die er für die Zahlung verwenden möchte. Wenn der Debitor nicht angemeldet ist oder kein Treuemitglied ist oder wenn der Gesamtbetrag im Einkaufskorb 0 (null) ist, wird dieses Modul automatisch ausgeblendet.
-- **Kreditkarte** – Dieses Modul ermöglicht es einem Debitor, für einen Auftrag mit einer Kreditkarte zu bezahlen. Wenn der Gesamtbetrag im Einkaufskorb durch Treuepunkte oder mit einer Geschenkkate bezahlt ist oder 0 (null) ist, wird dieses Modul automatisch ausgeblendet. Kreditkartenintegration wird aus dem Adyen-Zahlungskonnektor bereitgestellt. Weitere Informationen dazu, wie dieser Konnektor verwendet wird, finden Sie unter [Adyen Zahlungskonnektor](https://).
+- **Zahlung** – Dieses Modul ermöglicht es einem Kunden, für eine Bestellung mit einer Kreditkarte zu bezahlen. Wenn der Gesamtbetrag im Einkaufskorb durch Treuepunkte oder mit einer Geschenkkate bezahlt ist oder 0 (null) ist, wird dieses Modul automatisch ausgeblendet. Die Kreditkartenintegration wird vom Adyen-Zahlungskonnektor in diesem Modul gewährleistet. Weitere Informationen dazu, wie dieser Konnektor verwendet wird, finden Sie unter [Connector für Adyen-Zahlungen für Dynamics 365](dev-itpro/adyen-connector.md).
 - **Rechnungsadresse** – Dieses Modul ermöglicht einem Debitor Fakturierungsdaten bereitzustellen. Diese Informationen werden zusammen mit den Kreditkarteninformationen verarbeitet, die von Adyen bereitgestellt werden. Dieses Modul enthält eine Option, mti der die Debitoren die Rechnungsadresse als die Versandadresse verwenden können.
 - **Kontaktinformationen** – Dieses Modul ermöglicht einem Debitor die Kontaktinformationen (E-Mail-Adresse) für einen Auftrag hinzuzufügen oder zu ändern.
-- **Auftrage aufgeben** – Dieses Modul ermöglicht einem Debitor einen Auftrag zu erteilen.
-- **Umfangreicher Inhaltsblock** – Dieses Modul enthält ein beliebige Nachricht, die vom Content Management System (CMS) gesteuert wird. Kann beispielsweise eine Meldung enthalten, die angibt, „für Probleme mit Ihrem Auftrag kontaktieren Sie 1-800-FABRIKAM.“ 
-- **Auftragszusammenfassung** – Dieses Modul zeigt die Kostenaufschlüsselung eines Auftrags an.
-- **Auftragspositionen** – Dieses Modul zeigt eine Übersicht der Artikel, die in einem Auftrag enthalten sind.
+- **Textblock** – Dieses Modul enthält ein beliebige Nachricht, die vom Content Management System (CMS) gesteuert wird. Kann beispielsweise eine Meldung enthalten, die lautet: „Für Probleme mit Ihrem Auftrag kontaktieren Sie 1-800-Fabrikam.“ 
 
-## <a name="retail-server-interaction"></a>Retail Server-Interaktion
+## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 
 Die meisten Auschecken-Informationen, wie Postanschrift und Versandart werden im Warenkorb gespeichert und als Teil des Auftrags verarbeitet. Die einzige Ausnahme ist die Kreditkarteninformation. Diese Informationen werden verarbeitet, indem der Adyen-Zahlungskonnektor direkt verwendet wird. Die Zahlung ist genehmigt aber nicht belastet.
 
@@ -69,13 +64,10 @@ Um ein Auschecken-Modul einer neuen Seite hinzuzufügen und die erforderlichen E
 1. Gehen Sie zu **Fragment \> Neues Fragment** und bezeichnen Sie das neue Fragment mit **Auscheckenfragment**.
 1. Hinzufügen eines Auscheckenmoduls dem Fragment.
 1. Hinzufügen eines Titels zum Auscheckenmodul.
-1. Im Slot **Auscheckeninformationen** fügen Sie die Module Versandadresse, Lieferoptionen, Auschecken-Abschnitt und Kontaktinformationen hinzu. Es sollten nun vier Bereiche im **Auscheckeninformationen** Slot haben.
-1. Fügen Sie im Auscheckenabschnitt-Containermodul die Module Geschenkkarte, Treuepunkte und Kreditkarte hinzu. Auf diese Weise stellen Sie sicher, dass alle Zahlungsmethoden zusammen in einem Abschnitt angezeigt werden.
-1. Im Slot **Auftragszusammenfassung** fügen Sie die Module Auftragszusammenfassung, Auftrag aufgeben und umfangreicher Inhaltsblock hinzu.
-1. Im umfangreichen Inhaltsblockmodul fügen Sie den folgenden Text hinzu **Für Fragen über Ihren Auftrag, kontaktieren Sie 1-800-FABRIKAM.**
-1. Im Slot **Auftrag ausführen** fügen Sie Modul Auftrag ausführe hinzu.
-1. Wählen Sie **Speichern**. Einige Module können in der Vorschau nicht gerendert werden, weil Sie keinen Einkaufswagenkontext haben.
-1. Laden Sie das Fragment hoch und veröffentlichen Sie es.
+1. Fügen Sie die Module Versandadresse, Lieferoptionen, Auscheckenabschnitt-Container und Kontaktinformationen hinzu. 
+1. Fügen Sie im Auscheckenabschnitt-Containermodul die Module Geschenkkarte, Treuepunkte und Zahlung hinzu. Auf diese Weise stellen Sie sicher, dass alle Zahlungsmethoden zusammen in einem Abschnitt angezeigt werden.
+1. Speichern Sie das Fragment und zeigen Sie es in der Vorschau an. Einige Module, die über keinen Kontext verfügen, können möglicherweise nicht in der Vorschau gerendert werden.
+1. Beenden Sie die Bearbeitung des Fragments und veröffentlichen Sie es.
 1. Hier können Sie eine Vorlage erstellen, die das neue Auschecken-Fragment verwendet.
 1. Hier können Sie eine Auscheckensseite erstellen, die die neue Vorlage verwendet.
 

@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ee0b835cbe6cc3a238247be29f8a8d3de42a8d
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: bdbff802ca85f7cc568efb8a1aacaf6f8fb2874a
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570747"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003995"
 ---
 # <a name="product-information-overview"></a>Produktinformationsübersicht
 
@@ -32,7 +32,7 @@ ms.locfileid: "2570747"
 
 Dieses Thema enthält Informationen zur Produktinformationsverwaltung. Die Produktinformationsverwaltung funktioniert mit einer freigegebenen Produktdefinition, Kategorisierung und Kennungen für alle juristischen Personen und auch bestimmte Konfigurationen eines Produkts, um Geschäftsprozessen gerecht zu werden. 
 
-Produktinformationen sind die Grundlage von Lieferketten- und Einzelhandelsanwendungen in allen Branchen. Sie beziehen sich auf Prozesse und Technologien, die sich auf die zentrale Verwaltung von Informationen zu Produkten fokussieren (beispielsweise Lieferketten). Es ist wichtig, dass freigegebene Produktdefinitionen, Dokumentationen, Attribute, Kennungen verwendet werden. In den verschiedenen Modulen einer Geschäftslösung sind produktspezifische Informationen und Konfigurationen erforderlich, um die Geschäftsprozesse zu verwalten, die mit bestimmten Produkten, Produktkategorien oder Produktfamilien verknüpft sind.
+Produktinformationen sind die Grundlage von Lieferketten- und Handelsanwendungen in allen Branchen. Sie beziehen sich auf Prozesse und Technologien, die sich auf die zentrale Verwaltung von Informationen zu Produkten fokussieren (beispielsweise Lieferketten). Es ist wichtig, dass freigegebene Produktdefinitionen, Dokumentationen, Attribute, Kennungen verwendet werden. In den verschiedenen Modulen einer Geschäftslösung sind produktspezifische Informationen und Konfigurationen erforderlich, um die Geschäftsprozesse zu verwalten, die mit bestimmten Produkten, Produktkategorien oder Produktfamilien verknüpft sind.
 
 ## <a name="product-definition"></a>Produktdefinition
 

@@ -3,7 +3,7 @@ title: Bereitstellen eines neuen E-Commerce-Mandanten
 description: In diesem Thema wird beschrieben, wie Sie einen neuen E-Commerce-Mandanten bereitstellen, indem Microsoft Dynamics Lifecycle Services (LCS) verwenden.
 author: psimolin
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,22 +17,22 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 10dab1e62446ff7f60ad48fd0841bde5cfd29e12
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 6d7dfcaf244260de5f39a1201ec1ea78e94351e7
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945512"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3001782"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Bereitstellen eines neuen E-Commerce-Mandanten
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie eine neue E-Commerce-Site bereitstellen, indem Sie Microsoft Dynamics Lifecycle Services (LCS) verwenden.
 
 ## <a name="overview"></a>Übersicht
-    
+
 Microsoft Dynamics Lifecycle Services (LCS) ist ein Cloud-basierter kooperativer Arbeitsbereich, den Partnern und Kunden verwenden können, um die Projekte und Umgebung zu verwalten, die neuesten Informationen anzuzeigen über die Microsoft Dynamics Produkte und Funktionen und Stützvorfälle zu erstellen, nachzuverfolgen und zu durchsuchen. E-Commerce-Verwaltungsfunktionen sind in LCS integriert.
 
 Weitere Informationen zu LCS finden Sie unter [Lifecycle Services Benutzerhandbuch](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide).
@@ -80,11 +80,16 @@ Nachdem Sie die erforderlichen Informationen gesammelt haben, folgen Sie diesen 
 1. Auf der nächsten Seite geben Sie die erforderlichen Informationen ein und übermitteln das Formular. Sie werden zur Registerkarte **E-Commerce** zurückgeführt, wo Sie die Initialisierung sehen sollten, die begonnen wurde.
 1. Um den Initialisierungsstatus später anzuzeigen, **Aktualisieren** Sie oder kehren später zur Registerkarte **E-Commerce** zurück.
     
-Wenn E-Commerce von LCS initialisiert wird, erstellt das System mehrere Komponenten, die für E-Commerce erforderlich sind bereit und ordnet sie der Umgebung zu. Nachdem das Bereitstellen abgeschlossen ist, wird die Registerkarte **E-Commerce** auf der Seite **Retailverwaltung** aktualisiert, um der Bereitstellung zu entsprechen. Die Seite zeigt die aktuellsten Anpassungsbereitstellungen und den aktuellen Status aller anderen Bereitstellungen an. Sie schließt auch Links zur E-Commerce-Site und das E-Commerce-Site-Verwaltungstol ein (das Erstellungstool).
+Wenn E-Commerce von LCS initialisiert wird, erstellt das System mehrere Komponenten, die für E-Commerce erforderlich sind bereit und ordnet sie der Umgebung zu. Nachdem das Bereitstellen abgeschlossen ist, wird die Registerkarte **E-Commerce** auf der Seite **Retailverwaltung** aktualisiert, um der Bereitstellung zu entsprechen. Die Seite zeigt die aktuellsten Anpassungsbereitstellungen und den aktuellen Status aller anderen Bereitstellungen an. Sie schließt auch Links zur E-Commerce-Site und dem E-Commerce-Site-Builder ein, in dem Sites erstellt werden.
 
-## <a name="access-the-authoring-environment"></a>Zugriff auf die Erstellungsumgebung
+## <a name="access-site-builder"></a>Site Builder aufrufen
 
-Um auf die Erstellungsumgebung zuzugreifen, wechseln zur Registerkarte **E-Commerce** auf der Seite **Retailverwaltung**. Dort finden Sie Links zu Ihre E-Commerce-Site und das Site-Verwaltungstool.
+Um auf den Site Builder zuzugreifen, gehen Sie zur Registerkarte **E-Commerce** auf der Seite **Retail-Verwaltung** in LCS und wählen Sie den Link **E-Commerce-Site-Management-Tool**. Auf der Zielseite des Site Builders wird eine Ansicht auf Mandantenebene angezeigt. Auf dieser Seite können Sie folgende Aktivitäten durchführen:
+
+- Die Einstellungen auf Mandantenebene ändern.
+- Zu einer von Ihnen erstellten Site navigieren und die Berechtigung zum Anzeigen haben. 
+- Auf Überprüfungsfunktionen wie Moderation und Berichterstattung zugreifen.
+- Erstellen einer neuer Site. Weitere Informationen zum Erstellen einer neuen Site finden Sie unter [E-Commerce-Site erstellen](create-ecommerce-site.md). 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

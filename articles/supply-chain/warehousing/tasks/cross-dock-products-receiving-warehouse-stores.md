@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8e25007cc4a204aeaf73a2e819c129fa8fa29d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: f38c2ad9561cc1a1c775c27aec54681124cffeec
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563388"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004087"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Produkte vom empfangenden Lagerort Filialen zuordnen
 
@@ -31,9 +31,9 @@ Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung und Verarbei
 
 1. Wechseln Sie zu "Alle Bestellungen".
 2. Wählen Sie eine Bestellung in der Liste aus und klicken Sie auf den Link, um den Auftrag zu öffnen.
-3. Klicken Sie im Aktivitätsbereich auf "Einzelhandel".
+3. Klicken Sie im Aktivitätsbereich auf „Retail und Commerce“.
 4. Klicken Sie auf "Crossdocking".
-5. Klicken Sie auf "Bearbeiten".
+5. Klicken Sie auf Bearbeiten.
     * Die Kategorie kann verwendet werden, um die Artikel im Abschnitt "Positionen" zu filtern.  
 6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 7. Geben Sie im Crossdockingmengenfeld einen Wert ein, um anzugeben, wie viel der Menge, die vom ausgewählten Produkt gekauft wird, vertrieben werden soll.

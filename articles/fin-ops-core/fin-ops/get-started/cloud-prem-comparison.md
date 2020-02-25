@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 7837fbaaffdbd61a1adce1698800017bf4f6a018
-ms.sourcegitcommit: 282552609fdb82ec4463f801023b4bc01bc151d5
+ms.openlocfilehash: aa60f3bc35f2bc10902da060ccacd7767bc9af8f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935386"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005725"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
@@ -32,8 +32,8 @@ In diesem Thema wird ein Vergleich der Funktionen in der Cloud und lokal für di
 
 - [Dynamics 365 Finance](cloud-prem-comparison.md#dynamics-365-finance)
 - [Dynamics 365 Supply Chain Management](cloud-prem-comparison.md#dynamics-365-supply-chain-management)
-- [Dynamics 365 Retail](cloud-prem-comparison.md#dynamics-365-retail)
-- [Dynamics 365 Talent](cloud-prem-comparison.md#dynamics-365-talent)
+- [Dynamics 365 Commerce](cloud-prem-comparison.md#dynamics-365-commerce)
+- [Dynamics 365 Human Resources](cloud-prem-comparison.md#dynamics-365-human-resources)
 
 Informationen zu [Entwicklungs- und Verwaltungsfunktionen](cloud-prem-comparison.md#development-and-administration-features) sind ebenfalls enthalten.
 
@@ -45,8 +45,7 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |---------------------|-----------------------------|-----------|-----------------|
 | Compliance und Bescheinigungen        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1 Zertifizierung                                                                | Ja       | Nein              |
-| Datenverwaltung und -integration      |                                                                                           | Ja       | Ja             |
-|                                      | Konfigurations-getriebene Erweiterung                                                            | Ja       | Nr.              |
+| Datenverwaltung und -integration      |                                                                                           | Ja       | Ja             
 |                                      | Exportieren von Daten in Ihrem eigenen Data Warehouse                                                    | Ja       | Ja             |
 |                                      | Aktivieren des Exports von stufenweisen Aktualisierungen an einer Datenentität                                 | Ja       | Ja              |
 |                                      | Datenintegrationen                                                                         | Ja       | Ja             |
@@ -146,15 +145,15 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 | Unterstützung                              |                                                                                           | Ja       | Ja             |
 |                                      | Zugriff auf Support über das Menü Hilfe und Support                                             | Ja       | Nein              |
 
-## <a name="dynamics-365-retail"></a>Dynamics 365 Retail 
+## <a name="dynamics-365-commerce"></a>Dynamics 365 Commerce 
 
-Eine Liste der Einzelhandelsfunktionen, die in den lokalen Bereitstellungen verfügbar sind, finden Sie unter [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../../retail/retail-onprem.md).
+Eine Liste der Funktionen, die in den lokalen Bereitstellungen verfügbar sind, finden Sie unter [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../../retail/retail-onprem.md).
 
-## <a name="dynamics-365-talent"></a>Dynamics 365 Talent 
+## <a name="dynamics-365-human-resources"></a>Dynamics 365 Human Resources 
 
 | **Bereich**         | **Funktion**         | **Cloud** | **Lokal** |
 |------------------|---------------------|-----------|-----------------|
-| Alle Talent-Bereiche | Alle Talentfunktionen | Ja       | Nein              |
+| Alle Personalverwaltungsbereiche | Alle Personalverwaltungsfunktionen | Ja       | Nein              |
 
 ## <a name="development-and-administration-features"></a>Entwicklungs- und Verwaltungsfunktionen
 

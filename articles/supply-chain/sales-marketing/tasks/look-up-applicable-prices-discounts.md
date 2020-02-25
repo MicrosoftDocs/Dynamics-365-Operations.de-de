@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db9caaa7f425133eda7a5f225b39ca52e11e0716
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: debf66029d6efa42fe6d85eadb3866aadb312a97
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835579"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025827"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Anwendbare Preise und Rabatte nachschlagen
 
@@ -49,7 +49,7 @@ Im folgenden Verfahren, wie Preis und/oder den Rabatt für ein Produkt sucht, da
 10. Schließen Sie die Seite.
 
 ## <a name="find-the-applicable-discount"></a>Suchen des gültigen Rabatts
-    * Stellen Sie sicher, dass das Feld "Debitorenkonto" Debitornummer US-001 enthält    
+Stellen Sie sicher, dass das Feld "Debitorenkonto" Debitornummer US-001 enthält    
 1. Geben Sie im Feld "Artikelnummer" die Zeichenfolge "T0012" ein.
     * Stellen Sie sicher, dass das Feld Menge auf 1 festgelegt ist.  
     * Die folgenden Preiskalkulationsdetails, die für Produkt T0012 angezeigt werden, stammen aus einer oder mehreren Handelsvereinbarungen: Der Preis je Einheit beträgt 1,000 EUR sowie der Rabattprozentsatz ist 5.  

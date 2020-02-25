@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb9c850aa045b72137b8a1d3c8cdae51cf2fd7b6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec17fc31df1daed943f9bc3f4cbe25a683c8ac7e
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1843240"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026313"
 ---
 # <a name="reconcile-freight-manually"></a>Fracht manuell abstimmen
 
@@ -37,7 +37,7 @@ Dieses Verfahren zeigt, wie Fracht manuell abgestimmt wird. Diese Einstellung wi
 3. In der Liste wählen Sie die Auslastung aus, die die Auslastungskennung 00006 hat.
 
 ## <a name="create-a-carrier-invoice"></a>Erstellen einer Spediteursrechnung
-    * Wenn Sie Fracht manuell abstimmen und nicht automatischen Spediteursrechnungen empfangen, können Sie eine Rechnung auf Basis des Frachtbriefs erstellen.  
+Wenn Sie Fracht manuell abstimmen und nicht automatischen Spediteursrechnungen empfangen, können Sie eine Rechnung auf Basis des Frachtbriefs erstellen.  
 1. Klicken Sie auf "Zugehörige Informationen".
 2. Klicken Sie auf Frachtbriefdetails.
 3. Klicken Sie auf "Frachtbriefrechnung generieren".
@@ -45,7 +45,7 @@ Dieses Verfahren zeigt, wie Fracht manuell abgestimmt wird. Diese Einstellung wi
 5. Klicken Sie auf "OK".
 
 ## <a name="reconcile-the-invoice"></a>Rechnung abstimmen
-    * Wenn Sie eine Spediteursrechnung und einen Frachtbrief abstimmen, passiert dies Position für Position.  
+Wenn Sie eine Spediteursrechnung und einen Frachtbrief abstimmen, passiert dies Position für Position.  
 1. Klicken Sie auf "Frachtbriefe und Rechnungen abgleichen".
 2. Erweitern Sie den Abschnitt "Rechnungsdetails".
 3. Erweitern Sie den Abschnitt "Nicht abgeglichene Frachtbriefdetails".

@@ -1,9 +1,9 @@
 ---
-title: Bereitstellen einer Commerce-Vorschauumgebung
+title: Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung
 description: In diesem Thema wird erläutert, wie eine Vorschauumgebung in Microsoft Dynamics 365 Commerce bereitgestellt wird.
 author: psimolin
 manager: annbe
-ms.date: 01/06/2020
+ms.date: 01/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,28 +18,28 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b77d2cbbc100aeae5dcd53ddbe69ff2e4435da13
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934747"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024635"
 ---
-# <a name="provision-a-commerce-preview-environment"></a>Bereitstellen einer Commerce-Vorschauumgebung
+# <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie eine Vorschauumgebung in Microsoft Dynamics 365 Commerce bereitgestellt wird.
+In diesem Thema wird erläutert, wie eine Vorschauumgebung in Dynamics 365 Commerce bereitgestellt wird.
 
-Bevor Sie beginnen, sollten Sie zumindest das gesamte Thema durchgehen, um eine Vorstellung davon zu bekommen, was der Prozess beinhaltet und was dieses Thema enthält.
+Bevor Sie beginnen, empfehlen wir, dass Sie einen kurzen Blick in dieses Thema werfen, um eine Vorstellung davon zu bekommen, was der Prozess erfordert.
 
 > [!NOTE]
-> Wenn Sie noch keinen Zugriff auf die Dynamics 365 Commerce-Vorschau erhalten haben, können Sie einen Zugriff auf die Vorschau über die [Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite) anfordern.
+> Wenn Sie noch keinen Zugriff auf die Dynamics 365 Commerce-Vorschau erhalten haben, können Sie einen Zugriff auf die Vorschau über die [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite) anfordern.
 
 ## <a name="overview"></a>Übersicht
 
-Um Ihre Commerce-Vorschauumgebung erfolgreich bereitzustellen, müssen Sie ein Projekt mit einem bestimmten Produktnamen und -Typ erstellen. Bei der Umgebung und Retail Cloud Scale Unit (RCSU) gibt es auch einige spezifische Parameter, die Sie verwenden müssen, um später E-Commerce bereitstellen zu können. Die Anweisungen in diesem Thema beschreiben alle erforderlichen Schritte, die Sie ausführen müssen, und die Parameter, die Sie verwenden müssen.
+Um Ihre Commerce-Vorschauumgebung erfolgreich bereitzustellen, müssen Sie ein Projekt mit einem bestimmten Produktnamen und -Typ erstellen. Bei der Umgebung und der Commerce-Skalierungseinheit (CSU) gibt es auch einige spezifische Parameter, die Sie verwenden müssen, um später E-Commerce bereitstellen zu können. In den Anweisungen in diesem Thema werden alle Schritte, die zum Ausführen der Bereitstellung erforderlich sind, sowie die Parameter, die Sie verwenden müssen, beschrieben.
 
 Nach der erfolgreichen Bereitstellung Ihrer Commerce-Vorschauumgebung müssen Sie einige Schritte nach der Bereitstellung ausführen, um Ihre Vorschauumgebung vorzubereiten. Einige Schritte sind optional, je nachdem, welche Aspekte des Systems Sie bewerten möchten. Sie können die optionalen Schritte später jederzeit ausführen.
 
@@ -52,69 +52,21 @@ Wenn Sie Fragen zu den Bereitstellungsschritten haben oder auf Probleme stoßen,
 Die folgenden Voraussetzungen müssen erfüllt sein, damit Sie Ihre Commerce-Vorschauumgebung bereitstellen können:
 
 - Sie haben Zugriff auf das Microsoft Dynamics Lifecycle Services-Portal (LCS).
+- Sie sind ein bestehender Partner oder Kunde von Microsoft Dynamics 365 und können ein Dynamics 365 Commerce-Projekt erstellen.
 - Sie wurden beim Dynamics 365 Commerce-Vorschauprogramm angenommen.
-- Sie besitzen die erforderlichen Berechtigungen, um ein Projekt für **Künftige Presales** oder **Migrieren, Erstellen von Lösungen und Kennenlernen von** zu erstellen.
+- Sie besitzen die erforderlichen Berechtigungen, um ein Projekt für **Migrieren, Erstellen von Lösungen und Kennenlernen von** zu erstellen.
 - Sie sind Mitglied der Rolle **Umgebungsmanager** oder **Projektverantwortlicher** in dem Projekt, in dem Sie die Umgebung bereitstellen.
 - Sie haben Administratorzugriff auf Ihr Microsoft Azure-Abonnement oder wenden sich an einen Abonnementadministrator, der in Ihrem Namen die beiden Schritte abschließen kann, für die Administratorberechtigungen erforderlich sind.
 - Ihnen liegt Ihre Azure Active Directory-Mandanten-ID (Azure AD) vor.
 - Sie haben eine Azure AD-Sicherheitsgruppe erstellt, die als E-Commerce-Systemadministrator-Gruppe verwendet wird, und Ihnen liegt deren ID vor.
 - Sie haben eine Azure AD-Sicherheitsgruppe erstellt, die als Bewertungs- und Prüfungsmoderatorgruppe verwendet wird, und Ihnen liegt deren ID vor. (Diese Sicherheitsgruppe kann mit der Administratorgruppe des E-Commerce-Systems identisch sein.)
 
-### <a name="find-your-azure-ad-tenant-id"></a>Ihre Azure AD-Mandanten-ID finden
-
-Ihre Azure AD-Mandanten-ID ist eine global eindeutige Kennung (GUID), die dem folgenden Beispiel ähnelt: **72f988bf-86f1-41af-91ab-2d7cd011db47**.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-the-azure-portal"></a>Ihre Azure AD-Mandanten-ID mithilfe des Azure-Portals finden
-
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.
-1. Stellen Sie sicher, dass das richtige Verzeichnis ausgewählt wurde.
-1. Wählen Sie im linken Menü **Azure Active Directory** aus.
-1. Wählen Sie unter **Verwalten** die Option **Eigenschaften** aus. Ihre Azure AD-Mandanten-ID wird unter **Verzeichnis-ID** angezeigt.
-
-#### <a name="find-your-azure-ad-tenant-id-by-using-openid-connect-metadata"></a>Ihre Azure AD-Mandanten-ID durch Verwendung der OpenID Connect-Metadaten finden
-
-Erstellen Sie eine OpenID-URL, indem Sie **\{IHRE\_DOMÄNE\}** mit Ihrer Domäne, wie `microsoft.com`, ersetzen. Beispielsweise wird `https://login.microsoftonline.com/{YOUR_DOMAIN}/.well-known/openid-configuration` zu `https://login.microsoftonline.com/microsoft.com/.well-known/openid-configuration`.
-
-1. Navigieren Sie zur OpenID-URL, die Ihre Domäne enthält.
-
-    Sie finden Ihre Azure AD-Mandanten-ID in mehreren Eigenschaftswerten.
-
-1. Suchen Sie **authorization\_endpoint**, und extrahieren Sie die GUID, die sofort hinter `login.microsoftonline.com/` angezeigt wird.
-
-### <a name="find-your-azure-ad-security-group-id"></a>Ihre Azure AD-Sicherheitsgruppen-ID finden
-
-Die ID Ihrer Azure AD-Sicherheitsgruppe ist eine GUID, die diesem Beispiel ähnelt: **436ea7f5-ee6c-40c1-9f08-825c5811066a**.
-
-Bei diesem Verfahren wird davon ausgegangen, dass Sie Mitglied der Gruppe sind, für die Sie die ID suchen.
-
-1. Öffnen Sie den [Graph-Tester](https://developer.microsoft.com/graph/graph-explorer#).
-1. Wählen Sie **Bei Microsoft anmelden** aus, und melden Sie sich mit Ihren Anmeldeinformationen an.
-1. Wählen Sie links **Weitere Beispiele anzeigen** aus.
-1. Aktivieren Sie im rechten Bereich **Gruppen**.
-1. Schließen Sie den rechten Bereich.
-1. Wählen Sie **Alle Gruppen, denen ich angehöre** aus.
-1. Suchen Sie im Feld **Antwortvorschau** Ihre Gruppe. Die Sicherheitsgruppen-ID wird unter der **ID**-Eigenschaft angezeigt.
-
 ## <a name="provision-your-commerce-preview-environment"></a>Bereitstellen Ihrer Commerce-Vorschauumgebung
 
 In diesen Verfahren wird erläutert, wie eine Commerce-Vorschauumgebung bereitgestellt wird. Nachdem Sie sie erfolgreich abgeschlossen haben, kann die Commerce-Vorschauumgebung konfiguriert werden. Alle hier beschriebenen Aktivitäten finden im LCS-Portal statt.
 
 > [!IMPORTANT]
-> Der Vorschauzugriff ist an das LCS-Konto und die Organisation gebunden, die Sie in Ihrer Vorschauanwendung angegeben haben. Sie müssen dasselbe Konto verwenden, um die Commerce-Vorschauumgebung bereitzustellen. Wenn Sie ein anderes LCS-Konto oder einen anderen Mandanten für die Commerce-Vorschauumgebung verwenden müssen, müssen Sie diese Details Microsoft bereitstellen. Kontaktinformationen finden Sie im Abschnitt [Unterstützung der Commerce-Vorschauumgebung](#commerce-preview-environment-support) weiter unten in diesem Thema.
-
-### <a name="grant-access-to-e-commerce-applications"></a>Zugriff auf die E-Commerce-Anwendungen gewähren
-
-> [!IMPORTANT]
-> Die Person, die sich anmeldet, muss ein Azure AD-Mandantenadministrator sein, der über die Azure AD-Mandanten-ID verfügt. Wenn dieser Schritt nicht erfolgreich abgeschlossen wird, schlagen die verbleibenden Bereitstellungsschritte fehl.
-
-Gehen Sie folgendermaßen vor, um E-Commerce-Anwendungen für den Zugriff auf Ihr Azure-Abonnement zu autorisieren.
-
-1. Stellen Sie eine URL im folgenden Format zusammen:
-
-    `https://login.windows.net/{AAD_TENANT_ID}/oauth2/authorize?client_id=fbcbf727-cd18-4422-a723-f8274075331a&response_type=code&redirect_uri=https://sb.manage.commerce.dynamics.com/_commerce/Consent&response_mode=query&prompt=admin_consent&state=12345`
-
-1. Kopieren Sie die URL, fügen Sie sie in Ihren Browser oder Texteditor ein, und ersetzen Sie **\{AAD\_TENANT\_ID\}** mit Ihrer Azure AD-Mandanten-ID. Öffnen Sie dann die URL.
-1. Melden Sie sich im Azure AD-Anmeldedialogfeld an, und bestätigen Sie, dass Sie **Dynamics 365 Commerce (Vorschau)** Zugriff auf Ihr Abonnement erteilen möchten. Sie werden auf eine Seite umgeleitet, auf der angegeben wird, ob der Vorgang erfolgreich war.
+> Der Vorschauzugriff ist an das LCS-Konto und die Organisation gebunden, die Sie in Ihrer Commerce-Vorschauanwendung angegeben haben. Sie müssen dasselbe Konto verwenden, um die Commerce-Vorschauumgebung bereitzustellen. Wenn Sie ein anderes LCS-Konto oder einen anderen Mandanten für die Commerce-Vorschauumgebung verwenden müssen, müssen Sie diese Details Microsoft bereitstellen. Kontaktinformationen finden Sie im Abschnitt [Unterstützung der Commerce-Vorschauumgebung](#commerce-preview-environment-support) weiter unten in diesem Thema.
 
 ### <a name="confirm-that-preview-features-are-available-and-turned-on-in-lcs"></a>Bestätigen, dass die Vorschaufunktionen verfügbar und im LCS aktiviert sind
 
@@ -210,12 +162,12 @@ Die folgende Abbildung zeigt die Aktionen, die auf der LCS-Seite **Objektbibliot
 Gehen Sie folgendermaßen vor, um die Umgebung bereitzustellen.
 
 > [!NOTE]
-> Möglicherweise müssen Sie die Schritte 6, 7 und/oder 8 nicht ausführen, da Seiten mit einer einzelnen Option übersprungen werden. Wenn Sie sich in der Ansicht **Umgebungsparameter** befinden, bestätigen Sie, dass der Text **Dynamics 365 Commerce (Vorschau) - Demo (10.0.6 mit Plattform-Update 30)** direkt über dem Feld **Umgebungsname** angezeigt wird. Schauen Sie sich die Abbildung an, die nach Schritt 8 angezeigt wird.
+> Möglicherweise müssen Sie die Schritte 6, 7 und/oder 8 nicht ausführen, da Seiten mit einer einzelnen Option übersprungen werden. Wenn Sie sich in der Ansicht **Umgebungsparameter** befinden, bestätigen Sie, dass der Text **Dynamics 365 Commerce – Demo (10.0.* x* mit Plattform-Update *xx*)** direkt über dem Feld **Umgebungsname** angezeigt wird. Weitere Details finden Sie in der Abbildung, die nach Schritt 8 angezeigt wird.
 
 1. Wählen Sie aus dem oberen Menü **In der Cloud gehostete Umgebungen** aus.
 1. Wählen Sie **Hinzufügen** aus, um eine Umgebung hinzuzufügen.
-1. Wählen Sie im Feld **Anwendungsversion** die Option **10.0.6** aus.
-1. Wählen Sie im Feld **Plattformversion** **Plattformupdate 30** aus.
+1. Wählen Sie im Feld **Anwendungsversion** die aktuellste Version aus. Wenn Sie aus einem bestimmten Grund eine andere Anwendungsversion als die aktuellste auswählen müssen, wählen Sie keine Version vor **10.0.8** aus.
+1. Verwenden Sie im Feld **Plattformversion** die Plattformversion, die automatisch für die von Ihnen ausgewählte Anwendungsversion ausgewählt wird. 
 
     ![Auswählen von Anwendungs- und Plattformversionen](./media/project1.png)
 
@@ -224,7 +176,7 @@ Gehen Sie folgendermaßen vor, um die Umgebung bereitzustellen.
 
     ![Auswählen der Umgebungstopologie 1](./media/project2.png)
 
-1. Wählen Sie **Dynamics 365 Commerce (Vorschau) - Demo** als Umgebungstopologie aus. Wenn Sie zuvor einen einzelnen Azure Connector konfiguriert haben, wird dieser für diese Umgebung verwendet. Wenn Sie mehrere Azure Connectors konfiguriert haben, können Sie auswählen, welcher Connector verwendet werden soll: **USA, Osten**, **USA 2, Osten**, **USA, Westen** oder **USA2, Westen**. (Für die beste End-to-End-Leistung empfehlen wir, dass Sie **USA 2, Westen**) auswählen.
+1. Wählen Sie **Dynamics 365 Commerce – Demo** als Umgebungstopologie aus. Wenn Sie zuvor einen einzelnen Azure Connector konfiguriert haben, wird dieser für diese Umgebung verwendet. Wenn Sie mehrere Azure Connectors konfiguriert haben, können Sie auswählen, welcher Connector verwendet werden soll: **USA, Osten**, **USA 2, Osten**, **USA, Westen** oder **USA2, Westen**. (Für die beste End-to-End-Leistung empfehlen wir, dass Sie **USA 2, Westen**) auswählen.
 
     ![Auswählen der Umgebungstopologie 2](./media/project3.png)
 
@@ -241,39 +193,38 @@ Gehen Sie folgendermaßen vor, um die Umgebung bereitzustellen.
 
 1. Stellen Sie vor dem Fortfahren sicher, dass der Status Ihrer Umgebung **Bereitgestellt** lautet.
 
-### <a name="initialize-rcsu"></a>RCSU initialisieren
+### <a name="initialize-the-commerce-scale-unit-csu"></a>Initialisieren der Commerce-Skalierungseinheit (CSU)
 
-Führen Sie folgende Schritte aus, um eine RCSU zu initialisieren.
+Führen Sie folgende Schritte aus, um eine CSU zu initialisieren.
 
 1. Wählen Sie in der Ansicht **In der Cloud gehostete Umgebungen** Ihre Umgebung in der Liste aus.
 1. Wählen Sie in der Umgebungsansicht rechts die Option **Vollständige Details** aus. Die Ansicht zu Umgebungsdetails wird angezeigt.
 1. Wählen Sie unter **Umgebungsfunktionen** die Option **Verwalten** aus.
-1. Wählen Sie auf der Registerkarte **Einzelhandel** die Option **Initialisieren** aus. Die Ansicht zu RCSU-Initialisierungsparametern wird angezeigt.
+1. Wählen Sie auf der Registerkarte **Commerce** die Option **Initialisieren** aus. Die Ansicht zu CSU-Initialisierungsparametern wird angezeigt.
 1. Wählen Sie im Feld **Region** **USA, Osten**, **USA, Osten 2**, **USA, Westen** oder **USA, Westen 2** aus.
-1. Wählen Sie im Feld **Version** die Option **Version angeben** in der Liste aus und, geben Sie dann **9.16.19262.5** im angezeigten Feld an. Stellen Sie sicher, dass Sie die genaue Version angeben, die hier angegeben ist. Andernfalls müssen Sie RCSU später auf die richtige Version aktualisieren.
+1. Wählen Sie im Feld **Version** die Option **Version angeben** in der Liste aus und, geben Sie dann **9.18.20014.4** im angezeigten Feld an. Stellen Sie sicher, dass Sie die genaue Version angeben, die hier angegeben ist. Andernfalls müssen Sie RCSU später auf die richtige Version aktualisieren.
 1. Aktivieren Sie die Option **Erweiterung anwenden**.
 1. Wählen Sie aus der Erweiterungsliste **Commerce-Vorschaudemobasiserweiterung** aus.
 1. Wählen Sie **Initialisieren** aus.
-1. Prüfen Sie auf der Bestätigungsseite für die Bereitstellung, ob die Details korrekt sind, und wählen Sie dann **Ja** aus. Sie werden zur Ansicht **Retail-Verwaltung** mit ausgewählter Registerkarte **Retail** weitergeleitet. Ihre RCSU wurde für die Bereitstellung in die Warteschlange gestellt.
-1. Stellen Sie vor dem Fortfahren sicher, dass Ihr RCSU-Status **Erfolgreich** lautet. Die Initialisierung dauert ungefähr zwei bis fünf Stunden.
+1. Prüfen Sie auf der Bestätigungsseite für die Bereitstellung, ob die Details korrekt sind, und wählen Sie dann **Ja** aus. In der Ansicht **Commerce-Verwaltung** wird erneut angezeigt, wo die Registerkarte **Commerce** ausgewählt ist. Ihre CSU wurde für die Bereitstellung in die Warteschlange gestellt.
+1. Stellen Sie vor dem Fortfahren sicher, dass Ihr CSU-Status **Erfolgreich** lautet. Die Initialisierung dauert ungefähr zwei bis fünf Stunden.
 
 ### <a name="initialize-e-commerce"></a>E-Commerce initialisieren
 
 Führen Sie folgende Schritte aus, um e-Commerce zu initialisieren.
 
-1. Prüfen Sie auf der Registerkarte **E-Commerce (Vorschau)** die Vorschaueinwilligung, und wählen Sie dann **Einstellungen** aus.
+1. Prüfen Sie auf der Registerkarte **E-Commerce** die Vorschaueinwilligung und wählen Sie dann **Einrichten** aus.
 1. Geben Sie im Feld **E-Commerce-Mandantenname** einen Namen ein. Beachten Sie jedoch, dass dieser Name in einigen URLs sichtbar ist, die auf Ihre E-Commerce-Instanz verweisen.
-1. Wählen Sie im Feld **Retail Cloud Scale Unit-Name** Ihre RCSU in der Liste aus. (Die Liste sollte nur eine Option haben.)
+1. Wählen Sie im Feld **Commerce-Skalierungseinheit-Name** Ihre CSU in der Liste aus. (Die Liste sollte nur eine Option haben.)
 
     Das Feld **E-Commerce-Geografie** wird automatisch festgelegt und der Wert kann nicht geändert werden.
 
 1. Wählen Sie **Weiter** aus, um fortzufahren.
 1. Geben Sie im Feld **Unterstützte Hostnamen** eine gültige Domäne, wie `www.fabrikam.com`, ein.
-1.  Geben Sie im Feld **AAD-Sicherheitsgruppe für Systemadministratoren** die ersten Buchstaben des Namens der Sicherheitsgruppe ein, die Sie verwenden möchten. Wählen Sie das Symbol für die Vergrößerungsklasse aus, um die Suchergebnisse anzuzeigen. Wählen Sie eine Sicherheitsgruppe aus der Liste aus.
-2.  Geben Sie im Feld **AAD-Sicherheitsgruppe für Bewertungs- und Prüfungsmoderator** die ersten Buchstaben des Namens der Sicherheitsgruppe ein, die Sie verwenden möchten. Wählen Sie das Symbol für die Vergrößerungsklasse aus, um die Suchergebnisse anzuzeigen. Wählen Sie eine Sicherheitsgruppe aus der Liste aus.
+1.  Geben Sie im Feld **AAD-Sicherheitsgruppe für Systemadministratoren** die ersten Buchstaben des Namens der Sicherheitsgruppe ein, die Sie verwenden möchten. Wählen Sie das Symbol für die Vergrößerungsklasse aus, um die Suchergebnisse anzuzeigen. Wählen Sie die richtige Sicherheitsgruppe aus der Liste aus.
+2.  Geben Sie im Feld **AAD-Sicherheitsgruppe für Bewertungs- und Prüfungsmoderator** die ersten Buchstaben des Namens der Sicherheitsgruppe ein, die Sie verwenden möchten. Wählen Sie das Symbol für die Vergrößerungsklasse aus, um die Suchergebnisse anzuzeigen. Wählen Sie die richtige Sicherheitsgruppe aus der Liste aus.
 1. Lassen Sie die Optoin **Bewertungs- und Prüfungsdienst aktivieren** aktiviert.
-1. Wenn Sie den Schritt zur Microsoft Azure Active Directory-Zustimmung (Azure AD), wie im Abschnitt „Zugriff auf e-Commerce-Anwendungen gewähren“ beschrieben, abgeschlossen haben, aktivieren Sie das Kontrollkästchen, um Ihre Zustimmung zu bestätigen. Wenn Sie diesen Schritt noch nicht abgeschlossen haben, müssen Sie dies tun, bevor Sie mit der Initialisierung fortfahren. Wählen Sie den Link im Text neben dem Kontrollkästchen aus, um das Einwilligungsdialogfeld zu öffnen und den Schritt abzuschließen.
-1. Wählen Sie **Initialisieren** aus. Sie werden zur Ansicht **Retail-Verwaltung** mit ausgewählter Registerkarte **E-Commerce (Vorschau)** weitergeleitet. Die E-Commerce-Initialisierung wurde gestartet.
+1. Wählen Sie **Initialisieren** aus. In der Ansicht **Commerce-Verwaltung** wird erneut angezeigt, wo die Registerkarte **E-Commerce** ausgewählt ist. Die E-Commerce-Initialisierung wurde gestartet.
 1. Warten Sie, bevor Sie fortfahren, bis Ihr E-Commerce-Initialisierungsstatus **Initialisierung erfolgreich** lautet.
 1. Notieren Sie sich unten rechts im Bereich **Links** die URLs für die folgenden Links:
 
@@ -292,13 +243,13 @@ Um den Prozess zum Bereitstellen und Konfigurieren Ihrer Commerce-Vorschauumgebu
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
 
-[Konfigurieren einer Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+[Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md)
 
-[Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung](cpe-optional-features.md)
+[Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung](cpe-optional-features.md)
 
-[Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
+[Dynamics 365 Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -308,4 +259,3 @@ Um den Prozess zum Bereitstellen und Konfigurieren Ihrer Commerce-Vorschauumgebu
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Hilferessourcen für Dynamics 365 Retail](../retail/index.md)

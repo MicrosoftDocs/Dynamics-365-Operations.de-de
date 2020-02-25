@@ -1,5 +1,5 @@
 ---
-title: Ausnahmen untersuchen/auflösen
+title: Ausnahmen untersuchen oder auflösen
 description: Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen.
 author: abruer
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2f2e7d401e97aeab9dbc74f65e1a0c03eb0c880
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 68694e08550083c38feb4389f82d83c535e978c3
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189337"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000221"
 ---
-# <a name="researchresolve-exceptions"></a>Ausnahmen untersuchen/auflösen
+# <a name="research-or-resolve-exceptions"></a>Ausnahmen untersuchen oder auflösen
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
