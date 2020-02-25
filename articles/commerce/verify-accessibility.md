@@ -17,71 +17,71 @@ ms.search.industry: retail
 ms.author: arotkin
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70604ed16d72e519724aeb2c33bd4a91a8b26c8c
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 8e35b0f71ff41bade266fb177e4500c7d124ed1f
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2946015"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002658"
 ---
-# <a name="verify-page-content-accessibility"></a><span data-ttu-id="3858a-103">Überprüfen der Zugänglichkeit des Seiteninhalts</span><span class="sxs-lookup"><span data-stu-id="3858a-103">Verify page content accessibility</span></span>
+# <a name="verify-page-content-accessibility"></a><span data-ttu-id="da003-103">Überprüfen der Zugänglichkeit des Seiteninhalts</span><span class="sxs-lookup"><span data-stu-id="da003-103">Verify page content accessibility</span></span>
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="3858a-104">In diesem Thema wird beschrieben, wie Sie die Barrierefreiheit von Seiteninhalten in Microsoft Dynamics 365 Commerce überprüfen.</span><span class="sxs-lookup"><span data-stu-id="3858a-104">This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="da003-104">In diesem Thema wird beschrieben, wie Sie die Barrierefreiheit von Seiteninhalten in Microsoft Dynamics 365 Commerce überprüfen.</span><span class="sxs-lookup"><span data-stu-id="da003-104">This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="3858a-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="3858a-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="da003-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="da003-105">Overview</span></span>
 
-<span data-ttu-id="3858a-106">Wenn Sie mit dem Ändern einer Seite fertig sind, sollten Sie sicherstellen, dass der Inhalt für alle im Web zugänglich ist.</span><span class="sxs-lookup"><span data-stu-id="3858a-106">When you've finished changing a page, you should make sure that the content is accessible to everyone on the web.</span></span> <span data-ttu-id="3858a-107">In den Commerce-Authoring-Tools können Sie mithilfe des integrierten Dienstes [Microsoft Accessibility Insights](https://accessibilityinsights.io/) auf einfache Weise die Zugänglichkeit von Seiteninhalten überprüfen.</span><span class="sxs-lookup"><span data-stu-id="3858a-107">In the Commerce authoring tools, you can easily verify the accessibility of page content by using the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service.</span></span> <span data-ttu-id="3858a-108">Dieser Dienst überprüft Ihren Seiteninhalt anhand der neuesten Richtlinien zur [World Wide Web Consortium (W3C Zugänglichkeit)](https://www.w3.org/standards/webdesign/accessibility).</span><span class="sxs-lookup"><span data-stu-id="3858a-108">This service verifies your page content against the latest [World Wide Web Consortium (W3C) accessibility](https://www.w3.org/standards/webdesign/accessibility) guidelines.</span></span>
+<span data-ttu-id="da003-106">Wenn Sie mit dem Ändern einer Seite fertig sind, sollten Sie sicherstellen, dass der Inhalt für alle im Web zugänglich ist.</span><span class="sxs-lookup"><span data-stu-id="da003-106">When you've finished changing a page, you should make sure that the content is accessible to everyone on the web.</span></span> <span data-ttu-id="da003-107">In den Commerce-Authoring-Tools können Sie mithilfe des integrierten Dienstes [Microsoft Accessibility Insights](https://accessibilityinsights.io/) auf einfache Weise die Zugänglichkeit von Seiteninhalten überprüfen.</span><span class="sxs-lookup"><span data-stu-id="da003-107">In the Commerce authoring tools, you can easily verify the accessibility of page content by using the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service.</span></span> <span data-ttu-id="da003-108">Dieser Dienst überprüft Ihren Seiteninhalt anhand der neuesten Richtlinien zur [World Wide Web Consortium (W3C Zugänglichkeit)](https://www.w3.org/standards/webdesign/accessibility).</span><span class="sxs-lookup"><span data-stu-id="da003-108">This service verifies your page content against the latest [World Wide Web Consortium (W3C) accessibility](https://www.w3.org/standards/webdesign/accessibility) guidelines.</span></span>
 
-<span data-ttu-id="3858a-109">Die [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-Integration muss auf Mandanten- oder Site-Ebene aktiviert sein, bevor Sie sie verwenden können.</span><span class="sxs-lookup"><span data-stu-id="3858a-109">The [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration must be turned on at the tenant or site level before you can use it.</span></span>
+<span data-ttu-id="da003-109">Die [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-Integration muss auf Mandanten- oder Site-Ebene aktiviert sein, bevor Sie sie verwenden können.</span><span class="sxs-lookup"><span data-stu-id="da003-109">The [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration must be turned on at the tenant or site level before you can use it.</span></span>
 
-## <a name="turn-on-microsoft-accessibility-insights-for-all-the-sites-in-your-tenant"></a><span data-ttu-id="3858a-110">Aktivieren Sie Microsoft Accessibility Insights für alle Websites in Ihrem Mandanten</span><span class="sxs-lookup"><span data-stu-id="3858a-110">Turn on Microsoft Accessibility Insights for all the sites in your tenant</span></span>
+## <a name="turn-on-microsoft-accessibility-insights-for-all-the-sites-in-your-tenant"></a><span data-ttu-id="da003-110">Aktivieren Sie Microsoft Accessibility Insights für alle Websites in Ihrem Mandanten</span><span class="sxs-lookup"><span data-stu-id="da003-110">Turn on Microsoft Accessibility Insights for all the sites in your tenant</span></span>
 
-<span data-ttu-id="3858a-111">Um [Microsoft Accessibility Insights](https://accessibilityinsights.io/) zu aktivieren, führen Sie die folgenden Schritte aus, um alle Commerce-Sites in Ihrem Mandanten zu integrieren.</span><span class="sxs-lookup"><span data-stu-id="3858a-111">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for all the Commerce sites in your tenant, follow these steps.</span></span>
+<span data-ttu-id="da003-111">Um [Microsoft Accessibility Insights](https://accessibilityinsights.io/) zu aktivieren, führen Sie die folgenden Schritte aus, um alle Commerce-Sites in Ihrem Mandanten zu integrieren.</span><span class="sxs-lookup"><span data-stu-id="da003-111">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for all the Commerce sites in your tenant, follow these steps.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3858a-112">Um auf Mandanteneinstellungen zuzugreifen, müssen Sie als Systemadministrator bei Commerce angemeldet sein.</span><span class="sxs-lookup"><span data-stu-id="3858a-112">To access tenant settings, you must be signed in to Commerce as a system admin.</span></span>
+> <span data-ttu-id="da003-112">Um auf Mandanteneinstellungen zuzugreifen, müssen Sie als Systemadministrator bei Commerce angemeldet sein.</span><span class="sxs-lookup"><span data-stu-id="da003-112">To access tenant settings, you must be signed in to Commerce as a system admin.</span></span>
 
-1. <span data-ttu-id="3858a-113">Melden Sie sich bei Commerce als Systemadministrator an.</span><span class="sxs-lookup"><span data-stu-id="3858a-113">Sign in to Commerce as a system admin.</span></span>
-1. <span data-ttu-id="3858a-114">Wählen Sie im linken Navigationsbereich **Mandanteneinstellungen** (neben dem Zahnradsymbol) aus, um es zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="3858a-114">In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.</span></span>
-1. <span data-ttu-id="3858a-115">Wählen Sie unter **Mandanteneinstellungen** die Option **Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-115">Under **Tenant Settings**, select **Features**.</span></span>
-1. <span data-ttu-id="3858a-116">Legen Sie die Option **Zugänglichkeitsprüfung** auf **Ein** fest.</span><span class="sxs-lookup"><span data-stu-id="3858a-116">Set the **Accessibility Check** option to **On**.</span></span>
+1. <span data-ttu-id="da003-113">Melden Sie sich bei Commerce als Systemadministrator an.</span><span class="sxs-lookup"><span data-stu-id="da003-113">Sign in to Commerce as a system admin.</span></span>
+1. <span data-ttu-id="da003-114">Wählen Sie im linken Navigationsbereich **Mandanteneinstellungen** (neben dem Zahnradsymbol) aus, um es zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="da003-114">In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.</span></span>
+1. <span data-ttu-id="da003-115">Wählen Sie unter **Mandanteneinstellungen** die Option **Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="da003-115">Under **Tenant Settings**, select **Features**.</span></span>
+1. <span data-ttu-id="da003-116">Legen Sie die Option **Zugänglichkeitsprüfung** auf **Ein** fest.</span><span class="sxs-lookup"><span data-stu-id="da003-116">Set the **Accessibility Check** option to **On**.</span></span>
 
-## <a name="turn-on-microsoft-accessibility-insights-for-a-single-site"></a><span data-ttu-id="3858a-117">Aktivieren Sie Microsoft Accessibility Insights für eine einzelne Site</span><span class="sxs-lookup"><span data-stu-id="3858a-117">Turn on Microsoft Accessibility Insights for a single site</span></span>
+## <a name="turn-on-microsoft-accessibility-insights-for-a-single-site"></a><span data-ttu-id="da003-117">Aktivieren Sie Microsoft Accessibility Insights für eine einzelne Site</span><span class="sxs-lookup"><span data-stu-id="da003-117">Turn on Microsoft Accessibility Insights for a single site</span></span>
 
-<span data-ttu-id="3858a-118">Um die [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-Integration für eine einzelne Commerce-Site zu aktivieren, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-118">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for a single Commerce site, follow these steps.</span></span>
+<span data-ttu-id="da003-118">Um die [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-Integration für eine einzelne Commerce-Site zu aktivieren, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="da003-118">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for a single Commerce site, follow these steps.</span></span>
 
-1. <span data-ttu-id="3858a-119">Wählen Sie unter **Sites** **Fabrikam** (oder den Namen Ihrer Site) aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-119">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
-1. <span data-ttu-id="3858a-120">Wählen Sie im linken Navigationsbereich **Site-Einstellungen** aus, um den Bereich zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="3858a-120">In the left navigation pane, select **Site Settings** to expand it.</span></span>
-1. <span data-ttu-id="3858a-121">Wählen Sie unter **Site-Einstellungen** die Option **Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-121">Under **Site Settings**, select **Features**.</span></span>
-1. <span data-ttu-id="3858a-122">Legen Sie die Option **Zugänglichkeitsprüfung** auf **Ein** fest.</span><span class="sxs-lookup"><span data-stu-id="3858a-122">Set the **Accessibility Check** option to **On**.</span></span>
+1. <span data-ttu-id="da003-119">Wählen Sie unter **Sites** **Fabrikam** (oder den Namen Ihrer Site) aus.</span><span class="sxs-lookup"><span data-stu-id="da003-119">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
+1. <span data-ttu-id="da003-120">Wählen Sie im linken Navigationsbereich **Site-Einstellungen** aus, um den Bereich zu erweitern.</span><span class="sxs-lookup"><span data-stu-id="da003-120">In the left navigation pane, select **Site Settings** to expand it.</span></span>
+1. <span data-ttu-id="da003-121">Wählen Sie unter **Site-Einstellungen** die Option **Funktionen** aus.</span><span class="sxs-lookup"><span data-stu-id="da003-121">Under **Site Settings**, select **Features**.</span></span>
+1. <span data-ttu-id="da003-122">Legen Sie die Option **Zugänglichkeitsprüfung** auf **Ein** fest.</span><span class="sxs-lookup"><span data-stu-id="da003-122">Set the **Accessibility Check** option to **On**.</span></span>
 
-## <a name="verify-the-accessibility-of-the-content-on-the-home-page"></a><span data-ttu-id="3858a-123">Überprüfen Sie die Zugänglichkeit des Inhalts auf der Homepage</span><span class="sxs-lookup"><span data-stu-id="3858a-123">Verify the accessibility of the content on the home page</span></span>
+## <a name="verify-the-accessibility-of-the-content-on-the-home-page"></a><span data-ttu-id="da003-123">Überprüfen Sie die Zugänglichkeit des Inhalts auf der Homepage</span><span class="sxs-lookup"><span data-stu-id="da003-123">Verify the accessibility of the content on the home page</span></span>
 
-<span data-ttu-id="3858a-124">Um den integrierten [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-Dienst zu verwenden und so den Inhalt Ihrer Startseite in Commerce zu scannen und zu prüfen, gehen Sie folgendermaßen vor.</span><span class="sxs-lookup"><span data-stu-id="3858a-124">To use the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service to scan and verify the content of your home page in Commerce, follow these steps.</span></span>
+<span data-ttu-id="da003-124">Um den integrierten [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-Dienst zu verwenden und so den Inhalt Ihrer Startseite in Commerce zu scannen und zu prüfen, gehen Sie folgendermaßen vor.</span><span class="sxs-lookup"><span data-stu-id="da003-124">To use the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service to scan and verify the content of your home page in Commerce, follow these steps.</span></span>
 
-1. <span data-ttu-id="3858a-125">Wählen Sie unter **Sites** **Fabrikam** (oder den Namen Ihrer Site) aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-125">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
-1. <span data-ttu-id="3858a-126">Wählen Sie im linken Navigationsbereich die Option **Seiten** aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-126">In the left navigation pane, select **Pages**.</span></span>
-1. <span data-ttu-id="3858a-127">Suchen Sie die Startseite und wählen Sie sie aus, um sie im Seiteneditor zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="3858a-127">Find and select the home page to open it in the page editor.</span></span>
-1. <span data-ttu-id="3858a-128">Wählen Sie in der Befehlsleiste die Option **Zugänglichkeit prüfen** aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-128">On the command bar, select **Check accessibility**.</span></span> <span data-ttu-id="3858a-129">Die Seite **Zugänglichkeit prüfen** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3858a-129">The **Check Accessibility** page appears.</span></span>
-1. <span data-ttu-id="3858a-130">Überprüfen Sie nach Abschluss des Scans den Inhalt des Berichts.</span><span class="sxs-lookup"><span data-stu-id="3858a-130">After the scan is completed, review the contents of the report.</span></span>
-1. <span data-ttu-id="3858a-131">Wenn Prüfungen fehlgeschlagen sind, wählen Sie jedes fehlgeschlagene Prüfelement aus, um es zu erweitern und weitere Details anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="3858a-131">If any checks failed, select each failed check item to expand it so that you can view more details.</span></span>
-1. <span data-ttu-id="3858a-132">Um den Bericht zu schließen, nachdem Sie ihn geprüft haben, scrollen Sie zur Seite **Zugänglichkeit prüfen**, und wählen Sie **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="3858a-132">To close the report after you've finished reviewing it, scroll to the bottom of the **Check Accessibility** page, and select **OK**.</span></span>
+1. <span data-ttu-id="da003-125">Wählen Sie unter **Sites** **Fabrikam** (oder den Namen Ihrer Site) aus.</span><span class="sxs-lookup"><span data-stu-id="da003-125">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
+1. <span data-ttu-id="da003-126">Wählen Sie im linken Navigationsbereich die Option **Seiten** aus.</span><span class="sxs-lookup"><span data-stu-id="da003-126">In the left navigation pane, select **Pages**.</span></span>
+1. <span data-ttu-id="da003-127">Suchen Sie die Startseite und wählen Sie sie aus, um sie im Seiteneditor zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="da003-127">Find and select the home page to open it in the page editor.</span></span>
+1. <span data-ttu-id="da003-128">Wählen Sie in der Befehlsleiste die Option **Zugänglichkeit prüfen** aus.</span><span class="sxs-lookup"><span data-stu-id="da003-128">On the command bar, select **Check accessibility**.</span></span> <span data-ttu-id="da003-129">Die Seite **Zugänglichkeit prüfen** wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="da003-129">The **Check Accessibility** page appears.</span></span>
+1. <span data-ttu-id="da003-130">Überprüfen Sie nach Abschluss des Scans den Inhalt des Berichts.</span><span class="sxs-lookup"><span data-stu-id="da003-130">After the scan is completed, review the contents of the report.</span></span>
+1. <span data-ttu-id="da003-131">Wenn Prüfungen fehlgeschlagen sind, wählen Sie jedes fehlgeschlagene Prüfelement aus, um es zu erweitern und weitere Details anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="da003-131">If any checks failed, select each failed check item to expand it so that you can view more details.</span></span>
+1. <span data-ttu-id="da003-132">Um den Bericht zu schließen, nachdem Sie ihn geprüft haben, scrollen Sie zur Seite **Zugänglichkeit prüfen**, und wählen Sie **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="da003-132">To close the report after you've finished reviewing it, scroll to the bottom of the **Check Accessibility** page, and select **OK**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="3858a-133">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="3858a-133">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="da003-133">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="da003-133">Additional resources</span></span>
 
-[<span data-ttu-id="3858a-134">Bestehende Seite einer Website ändern</span><span class="sxs-lookup"><span data-stu-id="3858a-134">Modify an existing site page</span></span>](modify-existing-page.md)
+[<span data-ttu-id="da003-134">Bestehende Seite einer Website ändern</span><span class="sxs-lookup"><span data-stu-id="da003-134">Modify an existing site page</span></span>](modify-existing-page.md)
 
-[<span data-ttu-id="3858a-135">Neue Seite hinzufügen</span><span class="sxs-lookup"><span data-stu-id="3858a-135">Add a new site page</span></span>](add-new-page.md)
+[<span data-ttu-id="da003-135">Neue Seite hinzufügen</span><span class="sxs-lookup"><span data-stu-id="da003-135">Add a new site page</span></span>](add-new-page.md)
 
-[<span data-ttu-id="3858a-136">Auswählen von Seitenlayouts</span><span class="sxs-lookup"><span data-stu-id="3858a-136">Select page layouts</span></span>](select-page-layouts.md)
+[<span data-ttu-id="da003-136">Auswählen von Seitenlayouts</span><span class="sxs-lookup"><span data-stu-id="da003-136">Select page layouts</span></span>](select-page-layouts.md)
 
-[<span data-ttu-id="3858a-137">Verwalten von SEO-Metadaten</span><span class="sxs-lookup"><span data-stu-id="3858a-137">Manage SEO metadata</span></span>](manage-seo-metadata.md)
+[<span data-ttu-id="da003-137">Verwalten von SEO-Metadaten</span><span class="sxs-lookup"><span data-stu-id="da003-137">Manage SEO metadata</span></span>](manage-seo-metadata.md)
 
-[<span data-ttu-id="3858a-138">Speichern, Vorschau und Veröffentlichung einer Seite</span><span class="sxs-lookup"><span data-stu-id="3858a-138">Save, preview, and publish a page</span></span>](save-preview-publish-page.md)
+[<span data-ttu-id="da003-138">Speichern, Vorschau und Veröffentlichung einer Seite</span><span class="sxs-lookup"><span data-stu-id="da003-138">Save, preview, and publish a page</span></span>](save-preview-publish-page.md)
 
-[<span data-ttu-id="3858a-139">Erweitern einer Produktseite</span><span class="sxs-lookup"><span data-stu-id="3858a-139">Enrich a product page</span></span>](enrich-product-page.md)
+[<span data-ttu-id="da003-139">Erweitern einer Produktseite</span><span class="sxs-lookup"><span data-stu-id="da003-139">Enrich a product page</span></span>](enrich-product-page.md)
 
-[<span data-ttu-id="3858a-140">Füllen einer Kategorie-Landingpage</span><span class="sxs-lookup"><span data-stu-id="3858a-140">Enrich a category landing page</span></span>](enrich-category-page.md)
+[<span data-ttu-id="da003-140">Füllen einer Kategorie-Landingpage</span><span class="sxs-lookup"><span data-stu-id="da003-140">Enrich a category landing page</span></span>](enrich-category-page.md)

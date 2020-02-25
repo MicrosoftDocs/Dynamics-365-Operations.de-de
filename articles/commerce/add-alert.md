@@ -1,9 +1,9 @@
 ---
-title: Warnungsmodul
-description: Dieses Thema enthält allgemeine Module und es wird beschrieben, wie diese Standortsseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
+title: Werbebanner-Modul
+description: Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,68 +18,75 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 82138dd7f0934f732215f67a3726638eb87075d4
-ms.sourcegitcommit: 3a4e137ef3a96ba0a58c5352f4a3b57467ace9ae
+ms.openlocfilehash: da5e220e4578d1064eb7b627b441d3f585b3c095
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2785351"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025619"
 ---
-# <a name="alert-module"></a><span data-ttu-id="95e9a-103">Warnmmodul</span><span class="sxs-lookup"><span data-stu-id="95e9a-103">Alert module</span></span>
+# <a name="promo-banner-module"></a><span data-ttu-id="e9979-103">Werbebanner-Modul</span><span class="sxs-lookup"><span data-stu-id="e9979-103">Promo banner module</span></span>
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="95e9a-104">Dieses Thema enthält allgemeine Module und es wird beschrieben, wie diese Standortsseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="95e9a-104">This topic covers alert modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="e9979-104">Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="e9979-104">This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="95e9a-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="95e9a-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="e9979-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="e9979-105">Overview</span></span>
 
-<span data-ttu-id="95e9a-106">Ein Warnungsmodul wird verwendet, um Informationsmeldungen auf einer Seite anzeigen.</span><span class="sxs-lookup"><span data-stu-id="95e9a-106">An alert module is used to show inline informational messages on a page.</span></span> <span data-ttu-id="95e9a-107">Warnungsmodule unterstützen Textnachricht und einen Link.</span><span class="sxs-lookup"><span data-stu-id="95e9a-107">Alert modules support a text message and a link.</span></span> <span data-ttu-id="95e9a-108">Sie können verwendet werden, um Standort-weite Aktionen anzuzeigen, die auf allen Seiten einer E-Commerce-Webseite verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="95e9a-108">They can be used to show site-wide promotions that appear on all pages of an e-Commerce site.</span></span> 
+<span data-ttu-id="e9979-106">Werbebanner-Module werden verwendet, um Informationsmeldungen auf einer Seite anzeigen.</span><span class="sxs-lookup"><span data-stu-id="e9979-106">Promo banner modules are used to show inline informational messages on a page.</span></span> <span data-ttu-id="e9979-107">Sie können verwendet werden, um Standort-weite Aktionen anzuzeigen, die auf allen Seiten einer E-Commerce-Webseite verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e9979-107">They can be used to show site-wide promotions that appear on all pages of an e-Commerce site.</span></span> 
 
-<span data-ttu-id="95e9a-109">WModule Wachsame werden nach Daten des Content Management-System (CMS) gesteuert und können für jede beliebige Seite eingelagert werden.</span><span class="sxs-lookup"><span data-stu-id="95e9a-109">Alert modules are driven by data from the content management system (CMS) and can be put on any page.</span></span>
+<span data-ttu-id="e9979-108">Werbebanner-Modul unterstützen eine Textnachricht und einen Link.</span><span class="sxs-lookup"><span data-stu-id="e9979-108">Promo banner modules support a text message and a link.</span></span> <span data-ttu-id="e9979-109">Wenn einem Werbebanner-Modul mehrere Nachrichten hinzugefügt werden, wird es zu einem rotierenden Karussell-Banner, mit dem Kunden alle Nachrichten durchlaufen können.</span><span class="sxs-lookup"><span data-stu-id="e9979-109">If multiple messages are added to a promo banner module, it becomes a rotating carousel banner that lets customers cycle through all the messages.</span></span> 
 
-## <a name="examples-of-alert-modules-in-e-commerce"></a><span data-ttu-id="95e9a-110">Beispiele der Warnungsmodule in E-Commerce</span><span class="sxs-lookup"><span data-stu-id="95e9a-110">Examples of alert modules in e-Commerce</span></span>
+<span data-ttu-id="e9979-110">Werbebanner-Module werden nach Daten des Content Management-System (CMS) gesteuert und können für jede beliebige Seite eingelagert werden.</span><span class="sxs-lookup"><span data-stu-id="e9979-110">Promo banner modules are driven by data from the content management system (CMS) and can be put on any page.</span></span>
 
-<span data-ttu-id="95e9a-111">Warnungsmodule können im Sitekopf verwendet werden, um Standort-weite Aktionen oder Nachrichten anzugeben.</span><span class="sxs-lookup"><span data-stu-id="95e9a-111">Alert modules can be used in the site header to indicate site-wide promotions or messages.</span></span> <span data-ttu-id="95e9a-112">Nachfolgend finden Sie einige Beispiele:</span><span class="sxs-lookup"><span data-stu-id="95e9a-112">Here are some examples:</span></span>
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a><span data-ttu-id="e9979-111">Anwendungsbeispiele für Werbebanner im E-Commerce</span><span class="sxs-lookup"><span data-stu-id="e9979-111">Usage examples of promo banners in e-Commerce</span></span>
 
-<span data-ttu-id="95e9a-113">„Jahresendverkauf endet in 10 Tagen“</span><span class="sxs-lookup"><span data-stu-id="95e9a-113">"Annual sale ends in 10 days"</span></span>
+<span data-ttu-id="e9979-112">Werbebanner können im Site-Header verwendet werden, um Site-weite Werbeaktionen oder Nachrichten anzuzeigen, wie in den folgenden Beispielen dargestellt.</span><span class="sxs-lookup"><span data-stu-id="e9979-112">Promo banners can be used in the site header to show site-wide promotions or messages, as in the following examples.</span></span>
 
-<span data-ttu-id="95e9a-114">„Mit den Aktionen zum Schulbeginn viel sparen.</span><span class="sxs-lookup"><span data-stu-id="95e9a-114">"Save big with back to school sale.</span></span> <span data-ttu-id="95e9a-115">Jetzt shoppen.“</span><span class="sxs-lookup"><span data-stu-id="95e9a-115">Shop Now."</span></span>
+<span data-ttu-id="e9979-113">„Jahresendverkauf endet in 10 Tagen“</span><span class="sxs-lookup"><span data-stu-id="e9979-113">"Annual sale ends in 10 days"</span></span>
 
-## <a name="alert-module-properties"></a><span data-ttu-id="95e9a-116">Warnungsmoduleigenschaften</span><span class="sxs-lookup"><span data-stu-id="95e9a-116">Alert module properties</span></span>
+<span data-ttu-id="e9979-114">„Mit den Aktionen zum Schulbeginn viel sparen.</span><span class="sxs-lookup"><span data-stu-id="e9979-114">"Save big with back to school sale.</span></span> <span data-ttu-id="e9979-115">Jetzt shoppen.“</span><span class="sxs-lookup"><span data-stu-id="e9979-115">Shop Now."</span></span>
 
-| <span data-ttu-id="95e9a-117">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="95e9a-117">Property name</span></span>  | <span data-ttu-id="95e9a-118">Wert</span><span class="sxs-lookup"><span data-stu-id="95e9a-118">Value</span></span>                              | <span data-ttu-id="95e9a-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="95e9a-119">Description</span></span> |
-|----------------|------------------------------------|-------------|
-| <span data-ttu-id="95e9a-120">Text</span><span class="sxs-lookup"><span data-stu-id="95e9a-120">Text</span></span>           | <span data-ttu-id="95e9a-121">Text</span><span class="sxs-lookup"><span data-stu-id="95e9a-121">Text</span></span>                               | <span data-ttu-id="95e9a-122">Die Textnachricht erscheint im Warnungsmodul.</span><span class="sxs-lookup"><span data-stu-id="95e9a-122">The text message that appears in the alert module.</span></span> |
-| <span data-ttu-id="95e9a-123">Textausrichtung</span><span class="sxs-lookup"><span data-stu-id="95e9a-123">Text alignment</span></span> | <span data-ttu-id="95e9a-124">**Rechts** **Links** **Zentriert**</span><span class="sxs-lookup"><span data-stu-id="95e9a-124">**Right**, **Left**, or **Center**</span></span> | <span data-ttu-id="95e9a-125">Ein Wert, der definiert, wie Text im Warnungsmodul dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="95e9a-125">A value that defines how text is aligned in the alert module.</span></span> |
-| <span data-ttu-id="95e9a-126">Warnung verwerfen</span><span class="sxs-lookup"><span data-stu-id="95e9a-126">Dismiss alert</span></span>  | <span data-ttu-id="95e9a-127">**True** oder **False**</span><span class="sxs-lookup"><span data-stu-id="95e9a-127">**True** or **False**</span></span>              | <span data-ttu-id="95e9a-128">Wenn der Wert auf **True** gesetzt wird, kann der Debitor die Warnung ablehnen.</span><span class="sxs-lookup"><span data-stu-id="95e9a-128">If the value is set to **True**, the customer can dismiss the alert.</span></span> |
-| <span data-ttu-id="95e9a-129">Verknüpfung</span><span class="sxs-lookup"><span data-stu-id="95e9a-129">Link</span></span>           | <span data-ttu-id="95e9a-130">URL</span><span class="sxs-lookup"><span data-stu-id="95e9a-130">URL</span></span>                                | <span data-ttu-id="95e9a-131">Die URL für einen optionalen Link.</span><span class="sxs-lookup"><span data-stu-id="95e9a-131">The URL for an optional link.</span></span> |
+## <a name="promo-banner-module-properties"></a><span data-ttu-id="e9979-116">Eigenschaften von Werbebanner-Modulen</span><span class="sxs-lookup"><span data-stu-id="e9979-116">Promo banner module properties</span></span>
 
-## <a name="add-an-alert-module-to-a-page"></a><span data-ttu-id="95e9a-132">Ein Warnungsmodul einer Seite hinzufügen</span><span class="sxs-lookup"><span data-stu-id="95e9a-132">Add an alert module to a page</span></span> 
+| <span data-ttu-id="e9979-117">Eigenschaftenname</span><span class="sxs-lookup"><span data-stu-id="e9979-117">Property name</span></span>             | <span data-ttu-id="e9979-118">Value</span><span class="sxs-lookup"><span data-stu-id="e9979-118">Value</span></span>                              | <span data-ttu-id="e9979-119">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e9979-119">Description</span></span> |
+|---------------------------|------------------------------------|-------------|
+| <span data-ttu-id="e9979-120">Bannernachrichten</span><span class="sxs-lookup"><span data-stu-id="e9979-120">Banner messages</span></span>           | <span data-ttu-id="e9979-121">Text und Links</span><span class="sxs-lookup"><span data-stu-id="e9979-121">Text and links</span></span>                     | <span data-ttu-id="e9979-122">Eine Reihe von Texten und Links.</span><span class="sxs-lookup"><span data-stu-id="e9979-122">An array of text and links.</span></span> |
+| <span data-ttu-id="e9979-123">Automatische Wiedergabe</span><span class="sxs-lookup"><span data-stu-id="e9979-123">Autoplay</span></span>                  | <span data-ttu-id="e9979-124">**True** oder **False**</span><span class="sxs-lookup"><span data-stu-id="e9979-124">**True** or **False**</span></span>              | <span data-ttu-id="e9979-125">Ein Wert, der angibt, ob Nachrichten automatisch durchlaufen werden, wenn mehrere Nachrichten konfiguriert sind.</span><span class="sxs-lookup"><span data-stu-id="e9979-125">A value that indicates whether messages are automatically cycled through, if multiple messages are configured.</span></span> |
+| <span data-ttu-id="e9979-126">Folienübergangsintervall</span><span class="sxs-lookup"><span data-stu-id="e9979-126">Slide transition interval</span></span> | <span data-ttu-id="e9979-127">Eine Anzahl von Millisekunden (ms)</span><span class="sxs-lookup"><span data-stu-id="e9979-127">A number of milliseconds (ms)</span></span>      | <span data-ttu-id="e9979-128">Das Intervall, in dem Nachrichten durchlaufen werden.</span><span class="sxs-lookup"><span data-stu-id="e9979-128">The interval that is used to cycle through messages.</span></span> |
+| <span data-ttu-id="e9979-129">Ausblenden zulassen</span><span class="sxs-lookup"><span data-stu-id="e9979-129">Allow dismiss</span></span>             | <span data-ttu-id="e9979-130">**True** oder **False**</span><span class="sxs-lookup"><span data-stu-id="e9979-130">**True** or **False**</span></span>              | <span data-ttu-id="e9979-131">Wenn der Wert auf **True** gesetzt wird, können Debitoren die Warnung ablehnen.</span><span class="sxs-lookup"><span data-stu-id="e9979-131">If the value is set to **True**, customers can dismiss the alert.</span></span> |
+| <span data-ttu-id="e9979-132">Karussellflipper anzeigen</span><span class="sxs-lookup"><span data-stu-id="e9979-132">Show carousel flipper</span></span>     | <span data-ttu-id="e9979-133">**True** oder **False**</span><span class="sxs-lookup"><span data-stu-id="e9979-133">**True** or **False**</span></span>              | <span data-ttu-id="e9979-134">Ein Wert, der angibt, ob die Karussellflipper angezeigt werden sollen, damit Debitoren mehrere Bannerelemente manuell durchlaufen können.</span><span class="sxs-lookup"><span data-stu-id="e9979-134">A value that indicates whether the carousel flippers should be shown, so that customers can manually cycle through multiple banner items.</span></span> |
+| <span data-ttu-id="e9979-135">Textausrichtung</span><span class="sxs-lookup"><span data-stu-id="e9979-135">Text alignment</span></span>            | <span data-ttu-id="e9979-136">**Rechts** **Links** **Zentriert**</span><span class="sxs-lookup"><span data-stu-id="e9979-136">**Right**, **Left**, or **Center**</span></span> | <span data-ttu-id="e9979-137">Die Textausrichtung im Werbebanner-Modul.</span><span class="sxs-lookup"><span data-stu-id="e9979-137">The text alignment in the promo banner module.</span></span> |
+| <span data-ttu-id="e9979-138">Verknüpfung</span><span class="sxs-lookup"><span data-stu-id="e9979-138">Link</span></span>                      | <span data-ttu-id="e9979-139">Eine URL</span><span class="sxs-lookup"><span data-stu-id="e9979-139">A URL</span></span>                              | <span data-ttu-id="e9979-140">Die URL für einen optionalen Link.</span><span class="sxs-lookup"><span data-stu-id="e9979-140">The URL for an optional link.</span></span> |
 
-<span data-ttu-id="95e9a-133">Um ein Warnungsmodul einer Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="95e9a-133">To add an alert module to a page and set the required properties, follow these steps.</span></span>
+## <a name="add-a-promo-banner-module-to-a-page"></a><span data-ttu-id="e9979-141">Ein Werbebanner-Modul einer neuen Seite hinzufügen</span><span class="sxs-lookup"><span data-stu-id="e9979-141">Add a promo banner module to a page</span></span> 
 
-1. <span data-ttu-id="95e9a-134">Erstellen Sie eine Seitenvorlage, die mit **Warnungsvorlage** bezeichnet ist.</span><span class="sxs-lookup"><span data-stu-id="95e9a-134">Create a page template that is named **alert template**.</span></span>
-1. <span data-ttu-id="95e9a-135">Im **Haupt-** Slot der Standardseite fügen Sie ein Warnungsmodul hinzu.</span><span class="sxs-lookup"><span data-stu-id="95e9a-135">In the **Main** slot of the default page, add an alert module.</span></span>
-1. <span data-ttu-id="95e9a-136">Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie.</span><span class="sxs-lookup"><span data-stu-id="95e9a-136">Check in the template, and publish it.</span></span> 
-1. <span data-ttu-id="95e9a-137">Verwenden Sie die Warnungsvorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Warnungsseite** hat.</span><span class="sxs-lookup"><span data-stu-id="95e9a-137">Use the alert template that you just created to create a page that is named **alert page**.</span></span> 
-1. <span data-ttu-id="95e9a-138">Im **Haupt-** Slot der neuen Seite fügen Sie ein Warnungsmodul hinzu.</span><span class="sxs-lookup"><span data-stu-id="95e9a-138">In the **Main** slot of the new page, add an alert module.</span></span>
-1. <span data-ttu-id="95e9a-139">In den Einstellungen für das Warnungsmodul geben Sie den Warnungstext ein.</span><span class="sxs-lookup"><span data-stu-id="95e9a-139">In the settings for the alert module, enter the alert text.</span></span> <span data-ttu-id="95e9a-140">Sie können die anderen Eigenschaften bearbeiten, wenn Sie das Modul weiter anpassen möchten.</span><span class="sxs-lookup"><span data-stu-id="95e9a-140">You can edit the other properties if you want to customize the alert module further.</span></span>
-1. <span data-ttu-id="95e9a-141">Seite speichern und Vorschau anzeigen.</span><span class="sxs-lookup"><span data-stu-id="95e9a-141">Save and preview the page.</span></span> <span data-ttu-id="95e9a-142">Am oberen Rand der Seite können sollten Sie eine Warnung sehen, die den von Ihnen hinzugefügten Text hat.</span><span class="sxs-lookup"><span data-stu-id="95e9a-142">At the top of the page, you should see an alert that has the text that you added.</span></span>
-1. <span data-ttu-id="95e9a-143">Laden Sie die Seite hoch und veröffentlichen Sie sie.</span><span class="sxs-lookup"><span data-stu-id="95e9a-143">Check in the page, and publish it.</span></span> 
+<span data-ttu-id="e9979-142">Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.</span><span class="sxs-lookup"><span data-stu-id="e9979-142">To add a promo banner module to a page and set the required properties, follow these steps.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="95e9a-144">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="95e9a-144">Additional resources</span></span>
+1. <span data-ttu-id="e9979-143">Erstellen Sie eine Seitenvorlage mit dem Namen **Werbebanner-Vorlage**.</span><span class="sxs-lookup"><span data-stu-id="e9979-143">Create a page template that is named **Promo banner template**.</span></span>
+1. <span data-ttu-id="e9979-144">Unter **Seitengliederung** fügen Sie ein Modul **Standardseite** zum Slot **Text** hinzu.</span><span class="sxs-lookup"><span data-stu-id="e9979-144">Under **Page Outline**, add a **Default page** module to the **Body** slot.</span></span> 
+1. <span data-ttu-id="e9979-145">Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie.</span><span class="sxs-lookup"><span data-stu-id="e9979-145">Check in the template, and publish it.</span></span> 
+1. <span data-ttu-id="e9979-146">Verwenden Sie die Vorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Werbebanner-Seite** hat.</span><span class="sxs-lookup"><span data-stu-id="e9979-146">Use the template that you just created to create a page that is named **Promo banner page**.</span></span> 
+1. <span data-ttu-id="e9979-147">Im **Haupt-** Slot der neuen Seite fügen Sie ein Containermodul hinzu.</span><span class="sxs-lookup"><span data-stu-id="e9979-147">In the **Main** slot of the new page, add a container module.</span></span> 
+1. <span data-ttu-id="e9979-148">Stellen Sie im rechten Bereich den Wert **Breite** auf **Behälter füllen** ein.</span><span class="sxs-lookup"><span data-stu-id="e9979-148">In the pane on the right, set the **Width** value to **Fill Container**.</span></span>
+1. <span data-ttu-id="e9979-149">Fügen Sie unter **Seitengliederung** dem Containermodul ein Werbebanner-Modul hinzu.</span><span class="sxs-lookup"><span data-stu-id="e9979-149">Under **Page Outline**, add a promo banner module to the container module.</span></span>
+1. <span data-ttu-id="e9979-150">Fügen Sie in den Einstellungen für das Banner-Modul eine oder mehrere Banner-Nachrichten hinzu.</span><span class="sxs-lookup"><span data-stu-id="e9979-150">In the settings for the banner module, add one or more banner messages.</span></span> <span data-ttu-id="e9979-151">Jede Nachricht kann Text zusammen mit einem Link enthalten.</span><span class="sxs-lookup"><span data-stu-id="e9979-151">Each message can have text together with a link.</span></span> <span data-ttu-id="e9979-152">Sie können die anderen Eigenschaften bearbeiten, um das Modul weiter anzupassen.</span><span class="sxs-lookup"><span data-stu-id="e9979-152">You can edit the other properties to customize the module further.</span></span>
+1. <span data-ttu-id="e9979-153">Seite speichern und Vorschau anzeigen.</span><span class="sxs-lookup"><span data-stu-id="e9979-153">Save and preview the page.</span></span> <span data-ttu-id="e9979-154">Am oberen Rand der Seite sollten Sie eine Warnung sehen, die den von Ihnen hinzugefügten Text anzeigt.</span><span class="sxs-lookup"><span data-stu-id="e9979-154">At the top of the page, you should see an alert that shows the text that you added.</span></span>
+1. <span data-ttu-id="e9979-155">Beenden Sie die Bearbeitung der Seite und veröffentlichen Sie sie.</span><span class="sxs-lookup"><span data-stu-id="e9979-155">Finish editing the page, and publish it.</span></span> 
 
-[<span data-ttu-id="95e9a-145">Starterkit-Überblick</span><span class="sxs-lookup"><span data-stu-id="95e9a-145">Starter kit overview</span></span>](starter-kit-overview.md)
+> [!NOTE]
+> <span data-ttu-id="e9979-156">Ein Werbebanner wird normalerweise im Seitenkopf- oder Untertitel-Slot verwendet.</span><span class="sxs-lookup"><span data-stu-id="e9979-156">A promo banner is typically used in the page header slot or a subheader slot.</span></span>
 
-[<span data-ttu-id="95e9a-146">Karussellmodul</span><span class="sxs-lookup"><span data-stu-id="95e9a-146">Carousel module</span></span>](add-carousel.md)
 
-[<span data-ttu-id="95e9a-147">Umfangreiches Inhaltsblockmodul</span><span class="sxs-lookup"><span data-stu-id="95e9a-147">Content rich block module</span></span>](add-content-rich-block.md)
+## <a name="additional-resources"></a><span data-ttu-id="e9979-157">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="e9979-157">Additional resources</span></span>
 
-[<span data-ttu-id="95e9a-148">Inhaltsplatzierungsmodul</span><span class="sxs-lookup"><span data-stu-id="95e9a-148">Content placement module</span></span>](add-content-placement-modules.md)
+[<span data-ttu-id="e9979-158">Starterkit-Übersicht</span><span class="sxs-lookup"><span data-stu-id="e9979-158">Starter kit overview</span></span>](starter-kit-overview.md)
 
-[<span data-ttu-id="95e9a-149">Funktionsmodul</span><span class="sxs-lookup"><span data-stu-id="95e9a-149">Feature module</span></span>](add-feature-module.md)
+[<span data-ttu-id="e9979-159">Karussellmodul</span><span class="sxs-lookup"><span data-stu-id="e9979-159">Carousel module</span></span>](add-carousel.md)
 
-[<span data-ttu-id="95e9a-150">Hero-Modul</span><span class="sxs-lookup"><span data-stu-id="95e9a-150">Hero module</span></span>](add-hero-module.md)
+[<span data-ttu-id="e9979-160">Textblock-Modul</span><span class="sxs-lookup"><span data-stu-id="e9979-160">Text block module</span></span>](add-content-rich-block.md)
 
-[<span data-ttu-id="95e9a-151">Video-Player-Modul</span><span class="sxs-lookup"><span data-stu-id="95e9a-151">Video player module</span></span>](add-video-player.md)
+[<span data-ttu-id="e9979-161">Inhaltsblockmodul</span><span class="sxs-lookup"><span data-stu-id="e9979-161">Content block module</span></span>](add-hero-module.md)
+
+[<span data-ttu-id="e9979-162">Video-Player-Modul</span><span class="sxs-lookup"><span data-stu-id="e9979-162">Video player module</span></span>](add-video-player.md)
