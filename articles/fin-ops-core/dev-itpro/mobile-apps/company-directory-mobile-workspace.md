@@ -10,17 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
-ms.search.scope: Operations, Talent
+ms.search.scope: Operations, Human Resources
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5a96955b72fcc5b0e2975f4bb1e619062be33e20
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 445a2872dcd0e4d3aca9a50c7539fdabb0ed7818
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2248756"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005585"
 ---
 # <a name="company-directory-mobile-workspace"></a>Unternehmensverzeichnis für mobilen Arbeitsbereich
 
@@ -28,7 +28,7 @@ ms.locfileid: "2248756"
 
 Dieses Thema enthält Informationen zum **Unternehmensverzeichnis** im mobilen Arbeitsbereich. Dieser Arbeitsbereich ermöglicht Benutzern das Anzeigen von Kontakten und Mitarbeitern in der Organisation.
 
-Dieser mobile Arbeitsbereich kann mit der Finance and Operations-Mobile-App verwendet werden.
+Dieser mobile Arbeitsbereich kann mit der Finance and Operations Mobile-App verwendet werden.
 
 ## <a name="overview"></a>Übersicht
 Der mobile Arbeitsbereich **Unternehmensverzeichnis** ermöglicht Benutzern, folgende Aufgaben auszuführen:
@@ -52,12 +52,12 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 <tbody>
 <tr class="odd">
 <td>Eines der folgenden Produkte muss in der Organisation bereitgestellt werden:
-<ul><li>A Finance and Operations-App</li>
-<li>Microsoft Dynamics 365 Talent</li>
+<ul><li>Eine Finance and Operations App</li>
+<li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
 <td>Systemadministrator</td>
-<td>Wenn keine Finance and Operations-App in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Talent nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://www.microsoft.com/dynamics365/talent">Talent-Webseite</a> auf eine Testversion zugreifen.
+<td>Wenn keine Finance and Operations-App in der Organisation bereitgestellt wurde, finden Sie Informationen unter <a href="../deployment/deploy-demo-environment.md">Eine Demoumgebung bereitstellen</a>. Wenn Personal nicht bereits in der Organisation bereitgestellt wurde, kann der Systemadministrator von der <a href="https://dynamics.microsoft.com/human-resources/overview/">Personal-Webseite</a> auf eine Testversion zugreifen.
 </td>
 </tr>
 <tr class="even">
@@ -69,7 +69,7 @@ Bevor Sie diesen mobilen Arbeitsbereich verwenden können, müssen die folgenden
 </table>
 
 ## <a name="download-and-install-the-mobile-app"></a>Herunterladen und Installieren der mobilen App
-Laden Sie die mobile Finance and Operations-App herunter und installieren Sie diese:
+Herunterladen und Installieren der Finance and Operations mobilen App:
 
 -   [Für Android-Smartphones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [Für iPhones](https://go.microsoft.com/fwlink/?linkid=850663)

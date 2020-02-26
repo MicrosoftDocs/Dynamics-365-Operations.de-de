@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df158e80bd1c11832376678a631a9e0e162534ad
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: b09efeb6b5d8bd2ea452dbf7a9ddaeec2ab75c92
+ms.sourcegitcommit: 0455a024185f79ecb82df61e6d994bd71dee5c10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915716"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "2974291"
 ---
 # <a name="FORMAT">FORMAT EB-Funktion</a>
 
@@ -96,7 +96,7 @@ Wenn derselbe Bericht für den Kunden **Litware Retail** am 17. Dezember 2015 in
 >[!NOTE]
 > Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:
 >
-> - **Für Bezeichnungen aus Ressourcen in der Microsoft Dynamics 365 Finance-App:** **@X**, wobei **X** die Bezeichnungs-ID in der Entwicklungsumgebung ist.
+> - **Für Bezeichnungen aus Ressourcen in der Microsoft Dynamics 365 Finance-App:** **\@X**, wobei **X** die Bezeichnungs-ID in der Entwicklungsumgebung ist
 > - **Für Bezeichnungen in EB-Konfigurationen:** **@"GER_LABEL:X"**, wobei **X** die Bezeichnungs-ID in der EB-Konfiguration ist
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

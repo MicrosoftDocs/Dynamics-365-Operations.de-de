@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 347db3af36521e11dc70d5188dcc54b07efa1fbe
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697841"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002934"
 ---
 # <a name="overview-of-cart-and-checkout-pages"></a>Übersicht der Einkaufskorb- und Auschecken-Seiten
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Dieses Thema bietet eine Übersicht über Einkaufskorb- und Auschecken-Seiten in Microsoft Dynamics 365 Commerce.
@@ -65,11 +65,11 @@ Im Hauptteil der Auschecken-Seite werden alle Auftragsinformationen gesammelt. Z
 
 ### <a name="shipping-address"></a>Versandadresse
 
-Eine Versandadresse ist erforderlich, wenn Artikel versendet werden müssen. Das Format der Versandadressen für jedes Gebietsschema kann in Dynamics 365 Retail konfiguriert werden. Wenn die Artikel beispielsweise in die USA versendet werden, muss die Versandadresse eine Straße, ein Bundesland und eine Postleitzahl enthalten. Einige grundlegende Eingabevalidierungen werden für Versandadressfelder durchgeführt, z. B. die Validierung für alphanumerische Zeichen, maximale Länge und Zahlen. Obwohl die Gültigkeit der Adresse selbst nicht überprüft wird, kann diese Überprüfung mithilfe von benutzerdefinierten Diensten von Drittanbietern durchgeführt werden.
+Eine Versandadresse ist erforderlich, wenn Artikel versendet werden müssen. Das Format der Versandadressen für jedes Gebietsschema kann in Dynamics 365 Commerce konfiguriert werden. Wenn die Artikel beispielsweise in die USA versendet werden, muss die Versandadresse eine Straße, ein Bundesland und eine Postleitzahl enthalten. Einige grundlegende Eingabevalidierungen werden für Versandadressfelder durchgeführt, z. B. die Validierung für alphanumerische Zeichen, maximale Länge und Zahlen. Obwohl die Gültigkeit der Adresse selbst nicht überprüft wird, kann diese Überprüfung mithilfe von benutzerdefinierten Diensten von Drittanbietern durchgeführt werden.
 
 Die Lieferadresse wird auf alle Artikel im Einkaufskorb angewendet, für die die Option „Versand“ ausgewählt ist. Wenn Sie den im Online-Starter-Kit angegebenen Auschecken-Ablauf verwenden, können einzelne Einkaufskorbartikel nicht an verschiedene Adressen versendet werden. Wenn Sie diese Funktion benötigen, kann sie durch Anpassung der Auschecken-Module implementiert werden.
 
-Nachdem die Versandadresse angegeben wurde, werden die Versandmethoden, die über den Dynamics 365 Commerce-Online-Store verfügbar sind, angezeigt. Die Versandarten und die von ihnen unterstützten Adressen können in Retail konfiguriert werden.
+Nachdem die Versandadresse angegeben wurde, werden die Versandmethoden, die über den Dynamics 365 Commerce-Online-Store verfügbar sind, angezeigt. Die Versandarten und die von ihnen unterstützten Adressen können in Commerce konfiguriert werden.
 
 ### <a name="payment"></a>Zahlung
 

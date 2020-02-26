@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung
+title: Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung
 description: In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Vorschauumgebung konfiguriert wird.
 author: psimolin
 manager: annbe
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2c4872cdebc414eaa865af025237bd9e1d14bfd2
-ms.sourcegitcommit: 610d5c3efadbaf11752b46f24680af619bcd70a6
+ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
+ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "2906115"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024728"
 ---
-# <a name="configure-optional-features-for-a-commerce-preview-environment"></a>Konfigurieren optionaler Funktionen für eine Commerce-Vorschauumgebung
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Vorschauumgebung konfiguriert wird.
@@ -173,13 +173,13 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
 
-[Bereitstellen einer Commerce-Vorschauumgebung](provisioning-guide.md)
+[Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md)
 
-[Konfigurieren einer Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+[Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md)
 
-[Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
+[Dynamics 365 Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
@@ -188,5 +188,3 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-Website](https://aka.ms/Dynamics365CommerceWebsite)
-
-[Hilferessourcen für Dynamics 365 Retail](../retail/index.md)

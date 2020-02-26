@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 1a357c4623f4f9dc441fe328ec0d5481c14ae4af
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771632"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025853"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
 
@@ -111,7 +111,7 @@ Gehen Sie wie folgt vor, um eine Geschäftslogik hinzuzufügen, die das Steuerel
 2. Drücken Sie F7, um auf den Code hinter der Codedefinition zuzugreifen.
 3. Fügen Sie den folgenden X++-Code hinzu.
 
-    ```
+    ```xpp
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
@@ -156,7 +156,7 @@ Damit haben Sie die Aufgabe abgeschlossen, die Geschäftslogik hinzuzufügen, mi
 Dieser Abschnitt enthält Informationen über die Helferklasse, mit der ein Power BI-Bericht (PBIX-Ressource) in ein Formular-Gruppensteuerelement eingebettet wird.
 
 #### <a name="syntax"></a>Syntax
-```
+```xpp
 public static void initializeReportControl(
     str                 _resourceName,
     FormGroupControl    _formGroupControl,

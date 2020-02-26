@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 3199bccca19ab8ee4d7503e4a8443fcb05acbb1b
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: 230cb7c2fe8f3c1972766a25414bb33a78b37a42
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934885"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004018"
 ---
 # <a name="product-identifiers"></a>Produktbezeichner 
 
@@ -88,7 +88,7 @@ Auf der Seite **Externe Artikelbeschreibungen** können Sie die Artikelnummer de
 | Beschreibung | Der Name, den der Debitor dem Artikel zuordnet | Der Name, den der Kreditor dem Artikel zuordnet |
 | Externer Artikeltext | Die Beschreibung des Artikels des Debitors | Die Artikelbeschreibung des Kreditors |
 
-Wenn viele Debitoren oder Kreditoren dieselben Artikelnummern (beispielsweise bei einer Einkaufzuordnung oder einer Einzelhandelsgruppe) verwenden, können Sie Gruppen von Debitoren oder Kreditoren erstellen, um die Verwaltung der externen Produktinformationen zu vereinfachen.
+Wenn viele Debitoren oder Kreditoren dieselben Artikelnummern (beispielsweise bei einer Einkaufzuordnung oder einer Commerce Gruppe) verwenden, können Sie Gruppen von Debitoren oder Kreditoren erstellen, um die Verwaltung der externen Produktinformationen zu vereinfachen.
 
 - Für Debitorengruppen &gt; gehen Sie zu **Verkäufe** **Einstellungen** &gt; **Artikel** &gt; **Externe Artikelbeschreibung**, die Gruppen und die zugehörigen Artikelnummern erstellen und verwalten. Um Kunden einer Gruppe zuzuordnen, wechseln Sie zu **Debitoren** &gt; **Kunden** &gt; **Alle Kunden**, und geben Sie dann im Inforegister **Standardwerte für Aufträge** einen Wert im Feld **Artikel – Kundengruppe** ein.
 - Für Debitorengruppen  gehen Sie zu **Einkauf und Bereitstellung**&gt;**Einrichtung**&gt;**Externe Artikelbeschreibungsgruppe**, um die Gruppen der betreffenden Artikelnummern zu erstellen und verwalten. Um Kreditoren einer Gruppe zuzuordnen, wechseln Sie zu **Kreditorenkonten** &gt; **Kreditoren** &gt; **Alle Kreditoren**, und geben Sie dann im Inforegister **Standardwerte für Bestellungen** einen Wert im Feld **Artikel – Kreditorengruppe** ein.

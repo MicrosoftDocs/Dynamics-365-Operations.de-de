@@ -3,7 +3,7 @@ title: Einrichten von Kreditorenkonten
 description: In diesem Thema werden die Typen von Informationen beschrieben, die Sie angeben müssen, wenn Sie ein neues Kreditorenkonto erstellen.
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5ab1f10f0874df36d1227e39f2d2146e85de41e
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 63843381207fbe6cb72ac1b5533eda754b1ba55b
+ms.sourcegitcommit: 5457cbec3399d8ed9f87c3a9dc586173b5616c11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249390"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012444"
 ---
 # <a name="set-up-vendor-accounts"></a>Einrichten von Kreditorenkonten
 
@@ -88,7 +88,7 @@ Sie können einen Kreditor für verschiedene Buchungsarten sperren. Die folgende
 -   **Rechnung** – Für den Kreditor können keine Rechnungen erstellt oder gebucht werden.
 -   **Alle** – Für den Kreditor sind alle Buchungsarten gesperrt. Diese Buchungsarten umfassen Bestellanforderungen, Rechnungen und Zahlungen.
 -   **Zahlung** – Für den Kreditor können keine Zahlungen generiert werden.
--   **Anforderung** – Es können nur Bestellanforderungen erstellt werden. Es können keine anderen Buchungen erstellt werden.
+-   **Anforderung** – Bestellanforderungen können nicht für den Lieferanten erstellt werden, und Anforderungspositionen, die bereits vor dem Sperren des Lieferanten erstellt wurden, können nicht in eine Bestellung umgewandelt werden. Anforderungszeilen für den Lieferanten werden storniert, wenn Ihre Richtlinie so eingestellt ist, dass Bestellungen automatisch erstellt werden.
 -   **Nie** – Der Kreditor wird niemals für Inaktivität gesperrt.
 
 Wenn Sie einen Kreditor sperren, können Sie auch einen Grund und ein Datum angeben, wann die Sperrung aufgehoben wird. Wenn Sie kein Enddatum eingeben, bleibt die Sperre des Kreditors auf unbestimmte Zeit bestehen.

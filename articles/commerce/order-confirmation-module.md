@@ -1,9 +1,9 @@
 ---
-title: Auftragsbestätigungsmodul
-description: In diesem Thema werden Auftragsbestätigungsmodule behandelt und deren Erstellung in Microsoft Dynamics 365 Commerce beschrieben.
+title: Auftragsdetailmodul
+description: In diesem Thema werden Auftragsdetailmodule behandelt und deren Verwendung in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,56 +17,58 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e339ce02bb646d0d9a68c22b24fde9b72071de6f
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: cb09a0b6ce1e48707f96021e9fad0006d9c1c55c
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698325"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026016"
 ---
-# <a name="order-confirmation-module"></a>Auftragsbestätigungsmodul
+# <a name="order-details-module"></a>Auftragsdetailmodul
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden Auftragsbestätigungsmodule behandelt und deren Erstellung in Microsoft Dynamics 365 Commerce beschrieben.
+In diesem Thema werden Auftragsdetailmodule behandelt und deren Verwendung in Microsoft Dynamics 365 Commerce beschrieben.
 
 ## <a name="overview"></a>Übersicht
 
-Ein Auftragsbestätigungsmodul wird verwendet, um eine Bestätigungsnachricht auf einer Auftragsbestätigungsseite anzuzeigen, nachdem ein Auftrag aufgegeben wurde. Das Auftragsbestätigungsmodul zeigt die Auftragsbestätigungsnummer und die Debitoren-E-Mail-Adresse an, die beim Bezahlen angegeben wurden.
-
-Wenn ein Auftrag während des Bestellvorgangs aufgegeben wird, werden die Auftragsbestätigungsnummer und die Debitoren-E-Mail-Adresse als Abfragezeichenfolge in der URL der Seite an die Auftragsbestätigungsseite übergeben. Das Auftragsbestätigungsmodul erhält diese Informationen und zeigt den Auftragsstatus auf der Auftragsbestätigungsseite an. Das Auftragsbestätigungsmodul benötigt diesen Seitenkontext, um den Status des Auftrags anzuzeigen.
+Nachdem eine Bestellung aufgegeben wurde, kann das Bestelldetailmodul verwendet werden, um die Bestätigungsdetails anzuzeigen. Hier werden die Bestellbestätigungs-ID, die Bestellkontaktinformationen und andere Bestelldetails angezeigt, z. B. die gekauften Artikel, die Zahlungsinformationen und die Versandmethode.
 
 ## <a name="order-confirmation-module-properties"></a>Eigenschaften des Auftragsbestätigungsmoduls
 
-| Eigenschaftenname | Werte | Beschreibung |
-|---------------|--------|-------------|
-| Überschrift       | Überschriftentext und Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Das Auftragsbestätigungsmodul kann eine Überschrift haben. Standardmäßig wird die **H2** Überschriftsmarkierung für die Überschrift verwendet. Die Markierung kann jedoch geändert werden, um Zugangsbedingungen zu erfüllen. |
+| Eigenschaftenname  | Werte | Beschreibung |
+|----------------|--------|-------------|
+| Überschrift        | Überschriftentext und Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Das Auftragsbestätigungsmodul kann eine Überschrift haben. Standardmäßig wird die **H2** Überschriftsmarkierung für die Überschrift verwendet. Die Markierung kann jedoch geändert werden, um Zugangsbedingungen zu erfüllen. |
+| Kontaktnummer | Text | Für auftragsbezogene Fragen kann eine Telefonnummer angegeben werden. |
 
-## <a name="modules-that-can-be-used-in-an-order-confirmation-page-module"></a>Module, die in einem Modul einer Auftragsbestätigungsseite verwendet werden können 
+## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Module, die in einem Modul einer Auftragsdetailseite verwendet werden können
 
-- **Empfehlungen** – Das Empfehlungsmodul kann auf der Auftragsbestätigungsseite platziert werden, um dem Kunden andere Produkte vorzuschlagen.
-- **Marketing** – Das Marketingmodul kann der Auftragsbestätigungsseite Marketinginhalte hinzufügen.
+Wenn Sie eine Bestelldetailseite erstellen, können Sie zusätzlich zum Bestelldetail-Modul weitere relevante Module hinzufügen. Im Folgenden finden Sie einige Beispiele hierfür:
 
-## <a name="create-an-order-confirmation-page-module"></a>Erstellen eines Moduls für eine Auftragsbestätigungsseite
+- **Empfehlungsmodule** – Das Empfehlungsmodul kann auf der Auftragsbestätigungsseite platziert werden, um dem Kunden andere Produkte vorzuschlagen.
+- **Marketing-Module** – Zur Seite mit den Bestelldetails kann ein beliebiges Marketingmodul hinzugefügt werden, um Marketinginhalte anzuzeigen.
 
-1. Erstellen Sie eine Seitenvorlage, die mit **Auftragsbestätigung** bezeichnet ist.
-1. Im **Haupt-** Slot der Standardseite fügen Sie ein Auftragsbestätigungsmodul hinzu.
-1. Fügen Sie im Auftragsbestätigungsmodul ein Empfehlungsmodul hinzu.
-1. Vorlage speichern und Vorschau anzeigen. Das Auftragsbestätigungsmodul soll nicht gerendert werden, da es den Kontext der Auftragsbestätigungsnummer benötigt.
-1. Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie.
-1. Verwenden Sie die Auftragsbestätigungsvorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Auftragsbestätigung** hat.
+## <a name="create-an-order-details-page-module"></a>Erstellen eines Moduls für eine Bestelldetailseite
+
+1. Erstellen Sie eine Seitenvorlage, die mit **Auftragdetailvorlage** bezeichnet ist.
+1. Im **Haupt-** Slot der Standardseite fügen Sie ein Auftragsdetailmodul hinzu.
+1. Fügen Sie im Auftragsdetailmodul ein Empfehlungsmodul hinzu.
+1. Vorlage speichern und Vorschau anzeigen. Das Auftragsdetailmodul soll nicht gerendert werden, da es den Kontext der Auftragsbestätigungsnummer benötigt.
+1. Beenden Sie die Bearbeitung der Vorlage und veröffentlichen Sie sie.
+1. Verwenden Sie die Auftragsdetailvorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Auftragsdetail** hat.
 1. Fügen Sie die Standardseite zum Seitenumriss hinzu.
 1. Fügen Sie im **Kopfzeilen**-Slot ein Kopffragment hinzu.
 1. Fügen Sie im **Fußzeilen**-Slot ein Fußzeilenfragment hinzu.
-1. Fügen Sie im **Haupt**-Slot ein Auftragsbestätigungsmodul hinzu.
-1. Fügen Sie im Eigenschaftenbereich des Auftragsbestätigungsmoduls die Überschrift **Auftragsbestätigung** hinzu.
-1. Fügen Sie unter dem Auftragsbestätigungsmodul ein Empfehlungsmodul hinzu und konfigurieren Sie es so, dass es die Einstellungen **Neu** und **Bestseller** verwendet.
-1. Speichern Sie die Seite, laden Sie es hoch und zeigen Sie eine Vorschau an.
+1. Fügen Sie im **Haupt**-Slot ein Auftragsdetailmodul hinzu.
+1. Fügen Sie im Eigenschaftenbereich für Auftragsdetailmodule die Überschrift **Auftragsdetail** hinzu.
+1. Fügen Sie unter dem Auftragsdetailmodul ein Empfehlungsmodul hinzu und konfigurieren Sie es so, dass es die Einstellungen **Neu** und **Bestseller** verwendet.
+1. Seite speichern und Vorschau anzeigen.
+1. Beenden Sie die Bearbeitung der Seite und veröffentlichen Sie sie.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Überblick](starter-kit-overview.md)
+[Starterkit-Übersicht](starter-kit-overview.md)
 
 [Containermodul](add-container-module.md)
 

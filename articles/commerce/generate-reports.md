@@ -1,6 +1,6 @@
 ---
 title: Generieren von Onlinekanalberichten
-description: In diesem Thema wird beschrieben, wie Sie Berichte für Ihren Online-Kanal in Microsoft Dynamics 365 Retail generieren.
+description: In diesem Thema wird beschrieben, wie Sie Berichte für Ihren Online-Kanal in Microsoft Dynamics 365 Commerce generieren.
 author: psimolin
 manager: annbe
 ms.date: 10/01/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77737c134df8f3ba598fe9026fa7c01ca9976733
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: fd40aabdf40e0f2bb257b914326df5595a0e6945
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2698049"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003003"
 ---
 # <a name="generate-online-channel-reports"></a>Generieren von Onlinekanalberichten
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie Berichte für Ihren Online-Kanal in Microsoft Dynamics 365 Retail generieren.
+In diesem Thema wird beschrieben, wie Sie Berichte für Ihren Online-Kanal in Microsoft Dynamics 365 Commerce generieren.
 
 ## <a name="overview"></a>Übersicht
 
-Sie können in Retail mehrere Berichte erstellen und anzeigen, um die Leistung Ihres Online-Kanals zu überprüfen.
+Sie können in Commerce mehrere Berichte erstellen und anzeigen, um die Leistung Ihres Online-Kanals zu überprüfen.
 
 ## <a name="channel-summary-report"></a>Bericht 'Kanalzusammenfassung'
 
@@ -46,7 +46,7 @@ Der Bericht **Kanalzusammenfassung** zeigt eine Zusammenfassung der folgenden Tr
 
 Befolgen Sie diese Schritte, um den Bericht **Kanalzusammenfassung** zu generieren.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Bericht Kanalzusammenfassung**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanalzusammenfassung'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -58,7 +58,7 @@ Der Bericht **Kanal Umsatz nach Jahr** zeigt einen Vergleich der Verkäufe im Ja
 
 Befolgen Sie diese Schritte, um den Bericht **Kanal Umsatz nach Jahr** zu generieren.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Bericht Kanal Umsatz pro Jahr**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanal Umsatz nach Jahr'**.
 1. Geben Sie im Feld **Von Kalenderjahr** ein Jahr ein.
 1. Geben Sie im Feld **Bis Kalenderjahr** ein Jahr ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -70,7 +70,7 @@ Der Bericht **Kanal Umsatz nach Stunde** zeigt die Verkaufskennzahlen pro Stunde
 
 Befolgen Sie diese Schritte, um den Bericht **Kanal Umsatz nach Stunde** zu generieren.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Bericht Kanal Umsatz nach Stunde**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kanal Umsatz nach Stunde'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -82,7 +82,7 @@ Der Bericht **Wichtigste Debitoren** zeigt die Verkaufsmetriken für die wichtig
 
 Befolgen Sie diese Schritte, um den Bericht **Wichtigste Debitoren** zu erstellen.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Bericht Wichtigste Debitoren**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Wichtigste Debitoren'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -94,7 +94,7 @@ Der Bericht **Höchste Rabatte** zeigt die Verkaufsmetriken für die wichtigsten
 
 Befolgen Sie diese Schritte, um den Bericht **Höchste Rabatte** zu erstellen.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Bericht Höchste Rabatte**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht über höchste Rabatte'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -106,7 +106,7 @@ Der Bericht **Top-Produkte** zeigt die Verkaufsmetriken für die wichtigsten *N*
 
 Befolgen Sie diese Schritte, um den Bericht **Top-Produkte** zu erstellen.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Bericht Top-Produkte**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht über Top-Produkte**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -118,7 +118,7 @@ Der Bericht **Kategorie Verkäufe** zeigt Verkaufsmetriken für einen ausgewähl
 
 Befolgen Sie diese Schritte, um den Bericht **Kategorie Verkäufe** zu erstellen.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Berichte Kategorie Verkäufe**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Kategorie Verkäufe'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie im Feld **Kanal** den Online-Kanal aus.
@@ -126,11 +126,11 @@ Befolgen Sie diese Schritte, um den Bericht **Kategorie Verkäufe** zu erstellen
 
 ## <a name="organization-sales-report"></a>Bericht 'Organisationsverkäufe'
 
-Der Bericht **Organisationsverkäufe** zeigt die Leistung Ihrer Einzelhandelsgeschäfte nach Organisationseinheiten an. Dieser Bericht enthält die Verkaufsmenge und den Betrag nach Filiale sowie die Gewinnspanne für jede Filiale. Die Organisationseinheit basiert auf der Standardberichterstattungshierarchie.
+Der Bericht **Organisationsverkäufe** zeigt die Leistung Ihrer Geschäfte nach Organisationseinheiten an. Dieser Bericht enthält die Verkaufsmenge und den Betrag nach Filiale sowie die Gewinnspanne für jede Filiale. Die Organisationseinheit basiert auf der Standardberichterstattungshierarchie.
 
 Befolgen Sie diese Schritte, um den Bericht **Organisationsverkäufe** zu erstellen.
 
-1. Navigieren Sie zu **Retail \> Abfragen und Berichte \> Umsatzberichte \> Berichte Organisationsverkäufe**.
+1. Navigieren Sie zu **Retail und Commerce \> Abfragen und Berichte \> Umsatzberichte \> Bericht 'Organisationsverkäufe'**.
 1. Geben Sie im Feld **Von Datum** ein Datum ein.
 1. Geben Sie im Feld **Bis Datum** ein Datum ein.
 1. Wählen Sie **OK**.

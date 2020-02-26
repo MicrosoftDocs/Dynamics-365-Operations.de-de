@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 11/01/2019
+ms.date: 01/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5800f95de0ec773f40c506662a031887810b8c92
-ms.sourcegitcommit: db222a1719d4756d9ccb73fc71e7eaf4521c23a7
+ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2696638"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004110"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pivate-preview-banner.md)]
 
 
 ## <a name="feature-exposure"></a>Funktionsbereitstellung
@@ -35,7 +33,7 @@ ms.locfileid: "2696638"
 Um die Lagerortverwaltung für die Artikelgewichtsproduktverarbeitung zu verwenden, müssen Sie einen Lizenzkonfigurationsschlüssel verwenden, um die Funktionen zu aktivieren. (Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**. Erweitern Sie dann auf der Registerkarte **Konfigurationsschlüssel** die Option **Art \> Lagerort- und Transportverwaltung**, und aktivieren Sie das Kontrollkästchen für **Artikelgewicht für Lagerort**).
 
 > [!NOTE]
-> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden.
+> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden. Um die Konfigurationsschlüssel für das Artikelgewicht festzulegen, müssen Sie die Funktion auch mit dem Arbeitsbereich **Funktionsverwaltung** aktivieren. Die Hauptfunktion, die aktiviert werden muss, ist **Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung**. Eine weitere verwandte, aber optionale Funktion, die Sie vielleicht aktivieren möchten, ist **Bestandsstatusänderungen für Produkte mit Artikelgewicht**. Diese Funktion unterstützt Änderungen des Inventarstatus für Produkte, für die das Artikelgewicht aktiviert ist.
 
 Nachdem der Lizenzkonfigurationsschlüssel aktiviert ist, können Sie beim Erstellen eines freigegebenen Produkts **Artikelgewicht** auswählen. Sie können das freigegebene Produkt auch einer Lagerdimensionsgruppe zuordnen, für die der **Lagerortverwaltungsprozesse verwenden**-Parameter ausgewählt ist.
 
@@ -51,6 +49,9 @@ Weitere Informationen finden Sie unter [Einrichten und Verwalten von Artikelgewi
 ## <a name="transaction-adjustments"></a>Transaktionsregulierungen
 
 Da das Gewicht des Bestands bei Ankunft am Lagerort vom Gewicht des Bestands bei Entnahme aus dem Lagerort abweichen kann, muss die Artikelgewichtsproduktverarbeitung den Bestand regulieren.
+
+> [!NOTE]
+> Die Aktivität des Mobilgeräts löst die Transaktionsanpassungen nur aus, wenn die ausgehende Gewichtsabweichungsmethode der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht **Gewichtsabweichung zulassen** lautet.
 
 **Beispiel 1**
 
@@ -80,9 +81,12 @@ Sie können definieren, wann das Gewicht für die Verkaufs- und Umlagerungsauft
 - **Entnahme** – Das Gewicht wird bei den Anfangs-Entnahmearbeitspositionen bei der Auftragsarbeit erfasst.
 - **Verpackung** – Das Gewicht wird bei der manuellen Verpackung erfasst. (Sie müssen die Artikel an eine Verpackungsstation senden.)
 
-Wenn das tatsächliche Gewicht an der Verpackungsstation während des Containerverpackungsprozesses erfasst wird, werden die Lagerarbeiter nicht aufgefordert, das Gewicht bei der Entnahmearbeit zu erfassen. Stattdessen wird das Durchschnittsgewicht des physischen Bestands als Gewicht des für den Verpackungsbereich entnommenen Bestands verwendet.
+Wenn das tatsächliche Gewicht an der Verpackungsstation während des Containerverpackungsprozesses erfasst wird, werden die Lagerarbeiter nicht aufgefordert, das Gewicht bei der Entnahmearbeit zu erfassen. Stattdessen wird das Durchschnittsgewicht des physischen Bestands als Gewicht des für den Verpackungsbereich entnommenen Bestands verwendet. Dieses Konzept gilt auch für das Erfassen von Artikelgewichten, die über Tags verfolgt werden. Bei mit Tags verfolgten Elementen bestimmen diese Parameter, wann das Tag erfasst wird. Das Etikett kann entweder zum Zeitpunkt der Entnahme mithilfe des Mobilgeräts oder beim manuellen Verpacken erfasst werden.
 
-Bei internen Lagerortverwaltungsprozessen wie Inventur- wie und Regulierungskorrekturen kann definiert werden, ob das Gewicht erfasst werden soll oder nicht. Wird es nicht erfasst, wird das nominelle Gewicht verwendet.
+> [!NOTE]
+> Da die Option **Verpackung** bewirkt, dass das Inventar mit dem durchschnittlich ausgewählten Gewicht aktualisiert wird, kann dies eine Diskrepanz auslösen, die eine Anpassung des Gewinns/Verlusts des Artikelgewichts und/oder eine Differenz zwischen dem vorhandenen Inventargewicht und dem Gewicht des Artikelgewichtstags verursachen kann.
+
+Bei internen Lagerortverwaltungsprozessen wie Inventur und Regulierungskorrekturen können Sie definieren, ob das Gewicht erfasst werden soll. Wird es nicht erfasst, wird das nominelle Gewicht verwendet. Mit anderen Optionen können Sie das Gewicht pro Artikelgewichtseinheit und pro Zählmenge erfassen.
 
 Sie können auch definieren, wie das Gewicht erfasst wird. In einem der beiden Hauptflüsse, werden Artikelgewichtsmarkierungen nachverfolgt und verwendet, um das Gewicht zu erfassen. In dem anderen Fluss werden Artikelgewichtsmarkierungen nicht nachverfolgt.
 
@@ -91,25 +95,42 @@ Sie können auch definieren, wie das Gewicht erfasst wird. In einem der beiden H
 
 Der Prozess zur Nachverfolgung von Artikelgewichtsmarkierungen kann für Artikel verwendet werden, deren Gewicht sich während des Lagerungszeitraums nicht verändert. Das Gewicht wird nur beim Eingangslagerort-Prozess erfasst. Während des Ausgangsprozesses werden die Artikelgewichtsmarkierungen nur gescannt, und das jeweilige Gewicht, das den Markierungen zugeordnet wird, wird für die Ausgangstransaktionsverarbeitung verwendet.
 
+Ein weiterer wichtiger Parameter, der sich auf die Verarbeitung von Artikelgewichtstags bezieht, ist **Dimensionsrückverfolgungsmethode des Artikelgewichtstags**. Tags können entweder teilweise oder vollständig verfolgt werden. Wenn ein Tag teilweise nachverfolgt wird, werden die Produktdimensionen, die Rückverfolgungsangaben und der Inventarstatus nachverfolgt. Wenn ein Tag vollständig nachverfolgt wird, werden die Produktdimensionen, die Rückverfolgungsangaben und **alle** Lagerdimensionen nachverfolgt.
+
+Wenn ein Element mit einem Tag verfolgt wird, gibt es außerdem einen Parameter **Erfassungsmethode für ausgehende Tags**. Sie können diesen Parameter so einstellen, dass Sie bei ausgehenden Transaktionen auf dem Mobilgerät immer zur Eingabe des Tags aufgefordert werden. Alternativ können Sie den Parameter so einstellen, dass Sie nur dann zur Eingabe von Tags aufgefordert werden, wenn diese erforderlich sind. Beispielsweise befinden sich auf einem bestimmten Kennzeichen fünf Tags mit Artikelgewicht im Inventar, und Sie haben angegeben, dass Sie alle fünf Tags vom Kennzeichen auswählen möchten. Wenn in diesem Fall der Parameter **Erfassungsmethode für ausgehende Tags** auf **Tag nur bei Bedarf anfordern** gesetzt ist, werden die fünf Tags automatisch ausgewählt. Sie müssen nicht jedes Tag scannen. Wenn der Parameter auf **Immer nach dem Tag fragen** eingestellt ist, müssen Sie jedes Tag scannen, auch wenn alle fünf Tags ausgewählt werden.
+
+> [!NOTE]
+> Tags werden in der Regel nur über die Menüelemente des Mobilgeräts erfasst und aktualisiert. Dennoch gibt es einige Szenarien, in denen Tags an anderer Stelle erfasst werden (z. B. von der manuellen Packstation). Im Allgemeinen sollten jedoch die Menüelemente für mobile Geräte für alle Lagerplatzaktivitäten verwendet werden, wenn Tags verwendet werden.
+
 ### <a name="how-to-capture-catch-weight"></a>So wird das Artikelgewicht aufgezeichnet
 
-Wenn die Artikelgewichtsmarkierungs-Nachverfolgung verwendet wird, muss eine Markierung immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jede Markierung muss immer einem Gewicht zugeordnet werden.
+**Wenn die Artikelgewichtstag-Rückverfolgung verwendet wird**, muss ein Tag immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jedes Tag muss immer einem Gewicht zugeordnet werden.
 
 Beispielsweise ist **Box** die Artikelgewichteinheit, und Sie erhalten eine Palette mit acht Boxen. In diesem Fall müssen acht eindeutige Artikelgewichtsmarkierungen erstellt werden, und ein Gewicht muss jeder Markierung zugeordnet werden. Je nach Eingangsartikelgewichts-Markierung kann entweder das Gewicht aller acht Boxen erfasst werden und das Durchschnittsgewicht dann auf jede Box verteilt werden, oder ein eindeutiges Gewicht kann für jede Box erfasst werden.
 
-Wenn die Artikelgewichtsmarkierungs-Nachverfolgung nicht verwendet wird, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
+**Wenn die Artikelgewichtstag-Rückverfolgung nicht verwendet wird**, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
 
-Für die Methoden zur Erfassung des ausgehenden Gewichts können Sie definieren, ob das Wiegen für jede Artikelgewichtseinheit erfolgt (d. h. pro Box), oder ob das Gewicht auf Basis der entnommenen Menge erfasst wird (z. B. drei Boxen). Beachten Sie, dass für die Entnahme der Produktionsauftragsposition und für interne Verschiebungsprozesse das Durchschnittsgewicht verwendet wird, wenn die Option **Nicht erfasst** verwendet wird.
+Für die Methoden zur Erfassung des Ausgangsgewichts können Sie mit der Option **Pro Artikelgewichtseinheit** den Wiegevorgang festlegen, der für jede Artikelgewichtseinheit erfolgen soll (z. B. pro Kiste). Mit der Option **Pro Kommissioniereinheit** können Sie festlegen, dass das Gewicht basierend auf der zu kommissionierenden Menge erfasst werden soll (z. B. drei Kästchen). Beachten Sie, dass für die Entnahme der Produktionsauftragsposition und für interne Verschiebungsprozesse das Durchschnittsgewicht verwendet wird, wenn die Option **Nicht erfasst** verwendet wird.
 
-Um die Entnahmevorgänge bei der Lagerortverwaltung so einzuschränken, dass keine Gewichte erfasst werden, die zu Artikelgewichtgewinn-/ oder Verlustregulierungen führen, kann die Methode der Ausgangsgewichtsabweichung verwendet werden.
+In der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht sind mehrere Methoden zur Gewichtserfassung definiert. Jeder Parameter der Gewichtserfassungsmethode wird von verschiedenen Transaktionen verwendet. Die folgende Tabelle fasst zusammen, welche Parameter von welchen Transaktionen verwendet werden.
 
-## <a name="supported-scenarios"></a>Unterstützte Szenarien
+| Methode                                     | Buchung                                |
+|--------------------------------------------|--------------------------------------------|
+| Ausgangsgewichts-Erfassungsmethode           | Verkaufskommissionierung, Transferkommissionierung            |
+| Erfassungsmethode für Produktionsentnahmegewicht | Produktionskommissionierung, Produktionsverbrauch |
+| Umlagerungsgewichts-Erfassungsmethode           | Bewegung                                   |
+| Wann Gewichtskorrekturen erfasst werden sollen       | Anpassungen, Zählen                      |
+| Inventur Gewichts-Erfassungsmethode           | Inventur                                   |
+| Erfassungsmethode Lagerort-Umlagerungsgewicht | Lagerortumlagerung                         |
 
-Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung. Die folgenden Einschränkungen gelten derzeit.
- 
+Um zu verhindern, dass bei den Entnahmevorgängen der Lagerortverwaltung Gewichte erfasst werden, die zu Artikelgewichtgewinn-/ oder Verlustregulierungen führen, können Sie die Methode der Ausgangsgewichtsabweichung verwenden. Die ausgehende Gewichtsabweichungsmethode gilt für die folgenden Prozesse auf Mobilgeräten: Verkaufskommissionierung, Umlagerungskommissionierung, Produktionskommissionierung, Bewegungen, Zählung und Lagerumlagerung. Sie können Sie Option **Gewichtsabweichung einschränken** verwenden, wenn das Gewicht des Gegenstands mit Artikelgewicht während der Lagerung im Lager nicht schwankt und keine Gewinn-/Verlustanpassungen für das Artikelgewicht erforderlich sind. Sie können die Option **Gewichtsabweichung zulassen** verwenden, wenn das Gewicht schwanken kann und wenn Gewinn-/Verlustanpassungen für das Artikelgewicht erforderlich sind, wenn eine Gewichtsschwankung erfasst wird.
+
+## <a name="unsupported-scenarios"></a>Nicht unterstützte Szenarien
+
+Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung. Die folgenden Einschränkungen gelten derzeit. Sie gelten für alle Gegenstände mit Artikelgewicht, unabhängig davon, ob sie mit Tags versehen sind.
+
 ### <a name="configuring-catch-weight-products-for-warehouse-management-processes"></a>Konfigurieren von Artikelgewichtsprodukten für Lagerortverwaltungsprozesse
 
-- Für Artikelgewichtsprodukte kann die Lagerdimensionsgruppe für Artikel nicht geändert werden (sodass Lagerortverwaltungsprozesse für sie verwendet werden können).
 - Nur die Formelverarbeitung wird für Artikelgewichtsprodukte unterstützt (keine Stückliste).
 - Artikelgewichtsprodukte können keiner Rückverfolgungsangabengruppe zugeordnet werden, indem die Eigentümerdimension verwendet wird.
 - Artikelgewichtsprodukte können nicht als Dienstleistungen verwendet werden.
@@ -118,74 +139,73 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 - Artikelgewichtsprodukte können nicht zusammen mit den Funktionen zum Erfassen von Seriennummern verwendet werden. Daher können Produkte nicht von einer "leeren" zu einer Seriennummer als Teil des Entnahme/Verpackungsprozesses übertragen werden.
 - Artikelgewichtsprodukte können nicht zusammen mit den Funktionen zum Registrieren von Serien vor Verbrauch verwendet werden.
 - Artikelgewichtsprodukte, die für Varianten aktiviert sind, können nicht zusammen mit der Funktion für das Konvertieren von Varianten-Maßeinheiten verwendet werden.
-- Artikelgewichtsprodukte können nicht als Einzelhandels-"Produktset" markiert werden.
+- Artikelgewichtsprodukte können nicht als Commerce-„Produktset“ markiert werden.
 - Artikelgewichtsprodukte können nur mit einer Einheitsnummernkreisgruppe verwendet werden, die über Artikelgewichts-Handhabungseinheiten verfügt, und bei der die Artikelgewichtseinheit den niedrigsten Nummernkreis aufweist.
 - Für Artikelgewichtsprodukte kann die Bestandseinheit nur dann in die Artikelgewichtseinheit umgerechnet werden, wenn die Umrechnung eine nominelle Menge ergibt, die mehr als 1 beträgt.
 - Die Einrichtung von Strichcodes für Artikelgewichtsprodukte unterstützt keine Einrichtung für variables Gewicht.
- 
+
 ### <a name="order-processing"></a>Auftragsverarbeitung
 
 - Die Erstellung des Versand-Avis (ASN/Verpackungsstrukturen) unterstützt keine Gewichtsinformationen.
 - Die Auftragsmenge muss basierend auf der Artikelgewichtseinheit verwaltet werden.
- 
+
 ### <a name="inbound-warehouse-processing"></a>Eingangslagerortverarbeitung
 
 - Das Empfangen von Ladungsträgern setzt voraus, dass Gewichte während der Registrierung zugeordnet werden, da die Gewichtsinformationen nicht als Teil des Versand-Avis unterstützt werden. Wenn Artikelgewichtsmarkierungs-Prozesse verwendet werden, muss die Markierungsnummer manuell pro Artikelgewichtseinheit zugewiesen werden.
- 
+- Eingehende Qualitätsprüfungen werden für Artikelgewichtprodukte nicht unterstützt. Wenn konfiguriert, wird die Qualitätsprüfung übersprungen.
+
 ### <a name="inventory-and-warehouse-operations"></a>Bestands- und Lagerortbetrieb
 
 - Das manuelle Erstellen von Quarantäneaufträgen wird für Artikelgewichtsprodukte nicht unterstützt.
-- Das manuelle Umlagern von Bestand, der einer Arbeit zugeordnet ist, wird für Artikelgewichtsprodukte nicht unterstützt.
+- Das manuelle Umlagern von Bestand, der offener Arbeit zugeordnet ist, wird für Artikelgewichtsprodukte nicht unterstützt.
 - Ladungsträgerladungen zur Initialisierung des Lagerortbestands werden nicht für Artikelgewichtsprodukte unterstützt.
 - Chargenausgleichprozesse werden nicht für Artikelgewichtsprodukte unterstützt.
 - Die Handhabung von negativem physischem Bestand wird nicht für Artikelgewichtsprodukte unterstützt.
 - Bestandsmarkierungen werden nicht für Artikelgewichtsprodukte unterstützt.
- 
+
 ### <a name="outbound-warehouse-processing"></a>Ausgangslagerortverarbeitung
 
 - Die Funktionen zur Clusterkommissionierung werden nicht für Artikelgewichtsprodukte unterstützt.
 - Entnahme- und Verpackungs-Lagerortverarbeitungen werden für Artikelgewichtsprodukte nicht unterstützt.
 - Für Artikelgewichtsprodukte kann Arbeit, die in einer Arbeitsvorlage definiert ist, automatisch ausgeführt werden.
-- Für Artikelgewichtsprodukte wird die manuelle Verpackungsstationsverarbeitung, bei der Arbeit nach dem Schließen von Containern erstellt wird, nicht unterstützt.
+- Für Artikelgewichtsprodukte unterstützt das System keine manuelle Verpackungsstationsverarbeitung, bei der Entnahmearbeit bei gepackten Containern nach dem Schließen von Containern erstellt wird.
 - Die Funktionen zum stückweisen Scannen werden nicht für Artikelgewichtsprodukte unterstützt.
- 
+
 ### <a name="production-processing"></a>Produktionsverarbeitung
 
 - Für Artikelgewichtsprodukte werden nur Chargenaufträge für Formelprodukte unterstützt.
 - Die Kanban-Funktionen werden nicht für Artikelgewichtsprodukte unterstützt.
 - Für Artikelgewichtsprodukte können Seriennummern nicht vor dem Verbrauch registriert werden.
-- Die Funktionen zur Stornierung von Ladungsträgern werden nicht für Artikelgewichtsprodukte unterstützt.
+- Die Funktionen zur Stornierung von Ladungsträgern von der Produktion werden nicht für Artikelgewichtsprodukte unterstützt.
 - Für Artikelgewichtsprodukte kann die Fertigmeldung nicht nach Seriennummer registriert werden.
 
 ### <a name="transportation-management-processing"></a>Transportverwaltungsverarbeitung
 
 - Ladungserstellungsworkbenchverarbeitungen werden für Artikelgewichtsprodukte nicht unterstützt.
 - Transportanforderungspositionen werden für Artikelgewichtsprodukte nicht unterstützt.
- 
+
 ### <a name="other-restrictions-and-behaviors-for-catch-weight-product-processing-with-warehouse-management"></a>Andere Einschränkungen und Verhaltensweisen für die Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
 - Während der Entnahmeprozesse, in denen der Benutzer nicht aufgefordert wird, Rückverfolgungsangaben zu identifizieren, erfolgt die Gewichts-Zuweisung basierend auf dem Durchschnittsgewicht. Dieses Verhalten tritt auf, wenn z. B. eine Kombination von Rückverfolgungsangaben am gleichen Lagerplatz verwendet wird, und, nachdem ein Benutzer die Entnahme verarbeitet hat, nur ein Rückverfolgungsangabewert am Lagerplatz verbleibt.
-- Wenn der Bestand für ein Artikelgewichtsprodukt reserviert wird, das für Lagerortverwaltungsprozesse konfiguriert ist, erfolgt die Reservierung auf Grundlage des Mindestgewichts, das definiert wird, auch wenn diese Menge die letzte verfügbare Handhabungsmenge ist. Dieses Verhalten unterscheidet sich vom Verhalten für Artikel, die nicht für Lagerortverwaltungsprozesse konfiguriert sind.
+- Wenn der Bestand für ein Artikelgewichtsprodukt reserviert wird, das für Lagerortverwaltungsprozesse konfiguriert ist, erfolgt die Reservierung auf Grundlage des Mindestgewichts, das definiert wird, auch wenn diese Menge die letzte verfügbare Handhabungsmenge ist. Dieses Verhalten unterscheidet sich vom Verhalten für Artikel, die nicht für Lagerortverwaltungsprozesse konfiguriert sind. Es gibt eine Ausnahme von dieser Einschränkung. Bei der Produktionskommissionierung wird das tatsächliche Gewicht verwendet, wenn die letzte Handhabungsmenge eines seriennummerngesteuerten Artikelgewichtsprodukts kommissioniert wird.
 - Prozesse, die das Gewicht als Teil der Kapazitätsberechnungen verwenden (Wellenschwellenwerte, maximale Arbeitspausen, Container-Höchstwerte, Lagerplatzladekapazitäten usw.), verwenden nicht das tatsächliche Gewicht des Bestands. Stattdessen basieren die Prozesse auf dem physischen Handhabungsgewicht, das für das Produkt definiert wird.
-- Retail-Funktionen werden in der Regel nicht für Artikelgewichtsprodukte unterstützt.
- 
+- Die Commerce-Funktion wird in der Regel nicht für Artikelgewichtsprodukte unterstützt.
+- Bei Produkten mit Artikelgewicht kann der Lagerstatus von **Lagerstatusänderung** nicht aktualisiert werden.
+
 ### <a name="catch-weight-tags"></a>Artikelgewichtsmarkierungen
 
-Derzeit werden die Funktionen für Artikelgewichtsmarkierungen nur als Teil der folgenden Szenarien unterstützt:
+Eine Artikelgewichtsmarkierung kann mithilfe eines Lagerort-App-Prozesses erstellt werden, es kann manuell im Formular erstellt werden oder es kann mithilfe eines Datenentitätsprozesses erstellt werden. Wenn ein Artikelgewichtstag einer eingehenden Quelldokumentposition zugeordnet wird, z. B. Bestellposition, wird das Tag registriert. Wenn die Zeile für die Ausgangsverarbeitung verwendet wird, wird das Tag im Auslieferungszustand aktualisiert.
 
-- Wenn der Bestellungseingang über die Lagerort-App verarbeitet wird.
-- Wenn der Ladungseingang über die Lagerort-App verarbeitet wird.
-- Für den Ladungsträgereingang, der einer Bestellungsladung zugeordnet ist, wird die Gewichts-Zuweisung beim Eingangsprozess angefordert. Im Gegensatz dazu wird für den Umlagerungsauftragseingang das Gewicht aus den Lieferdaten für den Umlagerungsauftrag verwendet.
-- Für den Umlagerungsauftragsartikel- und -positionseingang, der aus einem Nicht-Lagerortverwaltungsprozess-Lagerort stammt.
-- Die Verarbeitung des Rücklieferungseingangs kann Artikelgewichtsmarkierungen erfassen, aber die Verarbeitung wird nicht geprüft, wenn die Markierungen dieselben Markierungen sind, die ursprünglich für eine bestimmte Auftragsposition geliefert wurden.
-- Wenn ein geänderter Bestandsstatus mithilfe der Lagerort-App verarbeitet wird.
-- Wenn eine Lagerort-Umlagerung mithilfe der Lagerort-App ausgeführt wird.
-- Wenn eine ein- und ausgehende Regulierung über die Lagerort-App verarbeitet wird.
-- Wenn die Entnahmearbeit für Verkauf, Umlagerung und Produktionsauftragspositionen verarbeitet wird.
-- Wenn entnommene Mengen aus Ladungspositionen reduziert werden, unabhängig davon, ob Container verwendet werden.
-- Wenn Produkte an einer Verpackungsstation in Container gepackt werden.
-- Wenn Container neu geöffnet werden.
-- Wenn Formelprodukte mithilfe der Lagerort-App als fertig gemeldet werden.
-- Wenn Transportladungen mithilfe der Lagerort-App verarbeitet werden.
+Zusätzlich zu den Einschränkungen, die derzeit für Artikelgewichtsprodukte gelten, gelten für Artikelgewichtsprodukte mit Tags weitere derzeit geltende Einschränkungen.
 
-Eine Artikelgewichtsmarkierung kann entweder mithilfe eines Lagerort-App-Prozesses erstellt werden, manuell im Formular erstellt werden oder mithilfe eines Datenentitätsprozesses erstellt werden. Wenn eine Artikelgewichtsmarkierung einer eingehenden Quelldokumentposition zugeordnet wird, wie z. B. Bestellposition, wird die Markierung registriert. Wenn die Position für ausgehende Verarbeitungen verwendet wird. Die Markierung wird als versendet aktualisiert.
+- Alle manuellen Aktualisierungen des Inventars (d. h. Aktualisierungen, die nicht über ein mobiles Gerät durchgeführt werden) müssen entsprechende manuelle Aktualisierungen der zugehörigen Artikelgewichtstags enthalten, da diese Aktualisierungen nicht automatisch durchgeführt werden. Zum Beispiel aktualisieren manuelle Anpassungsjournale das Inventar, nicht jedoch die zugehörigen Artikelgewichtstags.
+- Sie müssen die Artikelgewichtstags manuell aktualisieren, um die Bewegungen der Wiederbeschaffungsarbeit widerzuspiegeln. Dies liegt daran, dass das System bei der Wiederbeschaffungsarbeit keine Gewichte erfassen kann und stattdessen das Durchschnittsgewicht erfasst.
+- Der Empfang gemischter Ladungsträger wird für mit Tags versehene Gegenstände mit Artikelgewicht nicht unterstützt.
+- Die Verarbeitung des Eingangs von Kundenrücksendungen kann Artikelgewichtstags erfassen. Der Prozess überprüft jedoch nicht, ob es sich bei dem zurückgegebenen Tag um das gleiche Tag handelt, das ursprünglich für einen Auftrag geliefert wurde.
+- Das Menüelement des Mobilgeräts mit dem Aktivitätscode **Materialverbrauch registrieren** unterstützt derzeit nicht die Aufzeichnung von Artikelgewichtstags.
+- Obwohl Zählvorgänge für mit Tags versehene Gegenstände mit Artikelgewicht unterstützt werden, sind sie begrenzt. Beispielsweise können Sie die Optionen für mobile Geräte zum Zählen von mit Tags versehenen Gegenständen mit Artikelgewicht verwenden und das Durchschnittsgewicht wird verwendet. Artikelgewichtstags werden jedoch von der Zähltransaktion nicht automatisch aktualisiert. Nach Abschluss der Zählungstransaktion müssen die Artikelgewichtstags manuell aktualisiert werden, damit sie den Bestand widerspiegeln. Wenn Gegenstände, die sich ursprünglich nicht an einem Ort befanden, zu diesem Ort gezählt werden, wird das Nenngewicht verwendet.
+- Die Kennzeichenkonsolidierung unterstützt derzeit keine mit Tags versehenen Gegenstände mit Artikelgewicht.
+- Die Funktion zum Stornieren von Arbeit wird für mit Tags versehenene Gegenstände mit Artikelgewicht, die mit Tagnummern rückverfolgt werden, nicht unterstützt.
+
+> [!NOTE]
+> Die vorstehenden Informationen zu Artikelgewichtstags sind nur gültig, wenn das Artikelgewichtsprodukt über eine Methode zur Verfolgung der Dimension von Artikelgewichtstags verfügt, die vollständig verfolgt wird (d. h. der Parameter der **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht ist auf **Produktdimensionen, Rückverfolgungsangaben und alle Lagerdimensionen** gesetzt). Wenn der Gegenstand mit dem Artikelgewicht nur teilweise mit Tags verfolgt wird (d. h. wenn der Parameter **Dimensionsrückverfolgungsmethode des Artikelgewichtstags** in der Richtlinie zur Handhabung von Gegenständen mit Artikelgewicht auf **Produktdimensionen, Rückverfolgungsangaben und Inventarstatus** gesetzt ist) gelten zusätzliche Einschränkungen. Da in diesem Fall die Sichtbarkeit zwischen Tag und Inventar verloren geht, werden einige zusätzliche Szenarien nicht unterstützt.

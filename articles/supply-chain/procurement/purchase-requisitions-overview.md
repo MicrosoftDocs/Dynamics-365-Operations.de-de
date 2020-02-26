@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bfec4660d9e6b0898cf81e1f1fdd2e4c1fdcaef
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 0a51d443e40dbf948a06657293dcca77dc177896
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2815341"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003652"
 ---
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
@@ -81,7 +81,7 @@ Der Gesamtstatus einer Bestellanforderung wird durch den Status der Bestellanfor
 <li><strong>Wird überprüft</strong> – Die Bestellanforderungspositionen wurden zur Prüfung übermittelt. Wenn der Workflowprozess für eine Bestellanforderungsposition abgeschlossen ist, verbleibt der Status dieser Position <strong>Wird überprüft</strong>, bis alle verbleibenden Bestellanforderungspositionen geprüft wurden.</li>
 <li><strong>Abgelehnt</strong> – Die Bestellanforderung wurde abgelehnt. Abgelehnte Bestellanforderungspositionen können geändert und erneut übermittelt werden.</li>
 </ul>
-Wenn Sie eine Bestellanforderungsposition, die abgelehnt wurde, erneut übermitteln, wird der Prüfprozess für alle Positionen in der Bestellanforderung, die noch geprüft werden, erneut gestartet. <strong>Hinweis:</strong> Eine Bestellanforderung, die bereits übermittelt wurde, kann erneut aufgerufen werden. Wenn Sie eine Bestellanforderung erneut aufrufen, werden auch alle anderen Bestellanforderungspositionen erneut aufgerufen. Erneut aufgerufene Bestellanforderungspositionen können gelöscht werden.</td>
+Wenn Sie eine Bestellanforderungsposition, die abgelehnt wurde, erneut übermitteln, wird der Prüfprozess für alle Positionen in der Bestellanforderung, die noch geprüft werden, erneut gestartet. </br><strong>Hinweis:</strong> Eine Bestellanforderung, die bereits übermittelt wurde, kann erneut aufgerufen werden. Wenn Sie eine Bestellanforderung erneut aufrufen, werden auch alle anderen Bestellanforderungspositionen erneut aufgerufen. Erneut aufgerufene Bestellanforderungspositionen können gelöscht werden.</td>
 </tr>
 <tr class="odd">
 <td>Abgelehnt</td>
@@ -109,7 +109,7 @@ Wenn Sie eine Bestellanforderungsposition, die abgelehnt wurde, erneut übermitt
 <tr class="odd">
 <td>Abgebrochen</td>
 <td>Abgebrochen</td>
-<td>Die ausgewählte Bestellanforderung und alle Bestellanforderungspositionen wurden abgebrochen. <strong>Hinweis:</strong> Wenn Sie einen Artikel, der sich in einer Bestellanforderungsposition befindet, nicht mehr benötigen, muss diese Bestellanforderungsposition storniert werden, falls sie bereits genehmigt wurde. Nur genehmigte Bestellanforderungspositionen können storniert werden. Wenn derzeit Bestellanforderungspositionen geprüft werden, besitzt die Bestellanforderung den Status <strong>Wird überprüft</strong>. In diesem Fall können Sie die Bestellanforderung erneut aufrufen und die entsprechende Bestellanforderungsposition löschen.</td>
+<td>Die ausgewählte Bestellanforderung und alle Bestellanforderungspositionen wurden abgebrochen.</br> <strong>Hinweis:</strong> Wenn Sie einen Artikel, der sich in einer Bestellanforderungsposition befindet, nicht mehr benötigen, muss diese Bestellanforderungsposition storniert werden, falls sie bereits genehmigt wurde. Nur genehmigte Bestellanforderungspositionen können storniert werden. Wenn derzeit Bestellanforderungspositionen geprüft werden, besitzt die Bestellanforderung den Status <strong>Wird überprüft</strong>. In diesem Fall können Sie die Bestellanforderung erneut aufrufen und die entsprechende Bestellanforderungsposition löschen.</td>
 </tr>
 <tr class="even">
 <td>Geschlossen</td>
@@ -156,7 +156,8 @@ In einigen Fällen müssen Sie einen Angebotsanforderungsprozess beginnen, um de
 
 Sie können eine Bestellanforderung sperren, indem Sie das Kontrollkästchen auf **Gesperrt** die **Bestellanforderungsdetails** Seite auswählen. Die Verarbeitung der Bestellanforderung kann fortfahren, nachdem der aufgehoben, indem Sie das Kontrollkästchen deaktivieren.  
 
-**Hinweis:** Im eProcurement lässt es die Angebotsanforderung für Ihre Bestellanforderung möglicherweise Händlern zu, alternative Positionen hinzuzufügen. In diesem Fall spiegelt Ihre Bestellanforderung genehmigte Alternativen wieder.
+> [!NOTE]
+> Im eProcurement lässt es die Angebotsanforderung für Ihre Bestellanforderung möglicherweise Händlern zu, alternative Positionen hinzuzufügen. In diesem Fall spiegelt Ihre Bestellanforderung genehmigte Alternativen wieder.
 
 ## <a name="demand-consolidation"></a>Bedarfskonsolidierung
 Wenn Sie Bestellanforderungspositionen aus mehreren Bestellanforderungen konsolidieren, können Sie Ihre Verhandlungsposition mit Ihren Kreditoren stärken, um eine bessere Preisgestaltung sowie niedrigere Liefer- und Versandkosten sowie verringerte Gemeinkosten zu erreichen.  
@@ -172,7 +173,8 @@ Eine Konsolidierungseinheit ist ein Satz Bestellanforderungspositionen, die zusa
 
 Nachdem Sie die Anforderungspositionen einer Konsolidierungseinheit hinzugefügt und die Änderungen vorgenommen haben, die Sie benötigen, können Sie eine Bestellung für die konsolidierten Bestellanforderungspositionen erstellen.  
 
-**Hinweis:** Änderungen, die Sie an einer Bestellanforderungsposition auf der Seite **Bestellanforderungskonsolidierung** vornehmen, werden in der Bestellung, die Sie erstellen, widergespiegelt. In der Bestellanforderung verbleibt die Position jedoch unverändert, sodass die zugehörigen Historie erhalten bleibt.  
+> [!NOTE]
+> Änderungen, die Sie an einer Bestellanforderungsposition auf der Seite **Bestellanforderungskonsolidierung** vornehmen, werden in der Bestellung, die Sie erstellen, widergespiegelt. In der Bestellanforderung verbleibt die Position jedoch unverändert, sodass die zugehörigen Historie erhalten bleibt.  
 
 Um eine Bestellung für Bestellanforderungspositionen zu erstellen, die nicht für die Bedarfskonsolidierung infrage kommen oder die nicht für eine Konsolidierungseinheit ausgewählt werden, müssen Sie die Positionen manuell verarbeiten.
 

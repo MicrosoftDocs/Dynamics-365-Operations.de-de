@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a033853be17d6013daa5550ca9c061198bb0330
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 548f16034ebdf7e0f29e8e89d85aac880f6323a1
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184737"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026239"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Zuordnen von Komponenten des erstellten Formats zu Datenmodellelementen (November 2016)
 
@@ -98,7 +98,7 @@ Die folgende Prozedur zeigt, wie ein Benutzer entweder in der Rolle „Systemadm
 2. Schließen Sie die Seite.
 
 ## <a name="change-status-of-the-current-version-of-format-configuration"></a>Ändern Sie den Status der aktuellen Version der Format-Konfiguration
-    * In den nächsten Schritten ändern Sie den Status der Formatkonfiguration von „Entwurf” zu „Abgeschlossen”, um sie für die Zahlungsdokumentgenerierung verfügbar zu machen.  
+In den nächsten Schritten ändern Sie den Status der Formatkonfiguration von „Entwurf” zu „Abgeschlossen”, um sie für die Zahlungsdokumentgenerierung verfügbar zu machen.  
 1. Klicken Sie auf "Status ändern".
 2. Klicken Sie auf "Abgeschlossen".
 3. Geben Sie im Feld "Beschreibung" einen Wert ein.
@@ -108,7 +108,7 @@ Die folgende Prozedur zeigt, wie ein Benutzer entweder in der Rolle „Systemadm
     * Beachten Sie, dass die Konfiguration als abgeschlossene Version 1.1 gespeichert wird: Version 1 des Formats basierend auf der Version 1 des Datenmodells.  
 
 ## <a name="define-effective-date-for-completed-version-of-format"></a>Definieren Sie Gültigkeitsdatum für abgeschlossene Version des Formats
-    * Jede Formatversion kann so konfiguriert werden, wie verfügbar für die Verwendung, die von einem bestimmten Datum startet. Wenn mehr als eine Formatversion an einem bestimmten Datum aktiv ist, wird das neueste Format (auf Grundlage der Versionsnummer) für die Verwendung ausgewählt. Der Sitzungsdatumswert wird für die richtige Versionsauswahl verwendet.  
+Jede Formatversion kann so konfiguriert werden, wie verfügbar für die Verwendung, die von einem bestimmten Datum startet. Wenn mehr als eine Formatversion an einem bestimmten Datum aktiv ist, wird das neueste Format (auf Grundlage der Versionsnummer) für die Verwendung ausgewählt. Der Sitzungsdatumswert wird für die richtige Versionsauswahl verwendet.  
 
 ## <a name="restrict-access-to-created-format-from-companies"></a>Einschränken des Zugriffs auf erstelltes Format von Unternehmen
 1. Erweitern Sie den Abschnitt „ISO-Land-/Regionencode”.

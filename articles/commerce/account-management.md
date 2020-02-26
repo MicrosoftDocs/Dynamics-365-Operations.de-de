@@ -3,7 +3,7 @@ title: Kontoverwaltungsseiten und Module
 description: In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
 author: v-chgri
 manager: annbe
-ms.date: 12/02/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,16 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f9fc3731cd9d21294b0161e1d419f255096d7790
-ms.sourcegitcommit: 96bfc20eb748f4090a2b5e1ff9f54997d5a5d359
+ms.openlocfilehash: 8787a7b01ecf15752569d2a3a8d7804fe492e63d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2885808"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025688"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontoverwaltungsseiten und Module
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema werden Kundenbetreuungsseiten und Module in Microsoft Dynamics 365 Commerce behandelt.
@@ -40,13 +40,12 @@ Kundenbetreuung bezieht sich auf eine Gruppe von Seiten, die benötigt wird, um 
 
 Die Kundenbetreuungsangebotsseite verwendet die folgenden Module:
 
-- **Inhalt-Platzierung** – Dieses Modul ist ein Containermodul, das alle Module in der Kundenbetreuungsangebotsseite enthält.
-- **Konto-Begrüßungselement** – Dieses Modul wird verwendet, um eine Begrüßungsmeldung auf der Kontoverwaltungsseite bereitzustellen. Sie umfasst Eigenschaften für die Überschrift und die Kachelgröße. Die Eigenschaft **Kachelgröße** definiert die Breite des Moduls im Inhaltplatzierungsmodul. Die verfügbaren Werte sind von **1** bis zu **12**, wobei **12** für die volle Breite des Inhaltplatzierungscontainers steht.
-- **Kontenauftrags-Platzierungsartikel** – Dieses Modul wird verwendet, um eine Zusammenfassung der Anzahl von Aufträgen verfügbar machen, die vom Benutzer im Konto platziert wurden. Sie umfasst Eigenschaften für die Überschrift, die Kachelgröße und den Link „Details anzeigen“. Der Link „Details anzeigen“  muss konfiguriert werden, um die Auftragsverlaufsseite umzuleiten.
-- **Kundenprofil-Platzierungsartikel** – Dieses Modul wird verwendet, um eine Zusammenfassung des Benutzerprofils bereitzustellen. Sie umfasst Eigenschaften für die Überschrift, die Kachelgröße und den Link „Details anzeigen“. Der Link „Details anzeigen“ muss konfiguriert werden, um die Benutzerprofilseite umzuleiten.
-- **Konto Wunschlistenartikel** – Dieses Modul wird verwendet, um eine Übersicht der Artikel auf der Wunschliste des Debitors anzuzeigen. Beispielsweise kann stehen, „Sie hat 10 Artikel auf Ihrer Wunschliste.“ Sie umfasst Eigenschaften für die Überschrift, die Kachelgröße und den Link „Details anzeigen“. Der Link „Details anzeigen“ muss konfiguriert werden, um die Wunschlistenseite umzuleiten.
-- **Kundenprofil-Adressartikel** – Dieses Modul wird verwendet, um eine Zusammenfassung der Benutzeradressen bereitzustellen. Beispielsweise kann stehen „Sie haben 2 Adressen Ihrem Konto hinzugefügt.“ Sie umfasst Eigenschaften für die Überschrift, die Kachelgröße und den Link „Details anzeigen“. Der Link „Details anzeigen“ muss konfiguriert werden, um die Benutzeradressseite umzuleiten.
-- **Kontoenloyalitätsartikel** – Dieses Modul wird verwendet, um zu die Treueprogramminformationen darzustellen und zu verknüpfen. Sie umfasst Eigenschaften für den Link für die Überschrift, die Kachelgröße und den Link „Details anzeigen“ und „Mitglied werden“. Der Link „Details anzeigen“ muss konfiguriert werden, um auf die Treueprogrammseite umzuleiten. Der Link „Mitglied werden“ sollte konfiguriert werden, um zu einer Seite umzuleiten, auf der der Benutzer dem Treueprogramm beitreten kann.
+- **Container** – Alle Zielseitenmodule für die Kontoverwaltung sollten sich in einem Container befinden. 
+- **Konto-Begrüßungskachel** – Dieses Modul wird verwendet, um eine Begrüßungsmeldung auf der Kontoverwaltungsseite bereitzustellen. Es enthält Eigenschaften für die Überschrift.
+- **Generische Kachel für Konto** – Dieses Modul kann verwendet werden, um Überschriften und Links für Kontoverwaltungsseiten bereitzustellen, z. B. die Seiten „Bestellverlauf“ oder „Mein Profil“. Mit dem allgemeinen Kachelmodul kann eine Kachel für eine beliebige Seite konfiguriert werden. In Fabrikam wird dieses Modul für die Seitenlinks „Bestellverlauf“ und „Mein Profil“ auf der Zielseite der Kontoverwaltung verwendet.
+- **Wunschlistenkachel für Konto** – Dieses Modul wird verwendet, um eine Übersicht der Artikel auf der Wunschliste des Debitors anzuzeigen. Beispielsweise kann stehen, „Sie hat 10 Artikel auf Ihrer Wunschliste.“ Es umfasst Eigenschaften für die Überschrift und den Link „Details anzeigen“. Der Link „Details anzeigen“ muss konfiguriert werden, um die Wunschlistenseite umzuleiten. 
+- **Adresskachel für Konto** – Dieses Modul wird verwendet, um eine Zusammenfassung der Benutzeradressen bereitzustellen. Beispielsweise kann stehen „Sie haben 2 Adressen Ihrem Konto hinzugefügt.“ Es umfasst Eigenschaften für die Überschrift und den Link „Details anzeigen“. Der Link „Details anzeigen“ muss konfiguriert werden, um die Benutzeradressseite umzuleiten.
+- **Loyalitätskachel für Konto** – Dieses Modul wird verwendet, um zu die Treueprogramminformationen darzustellen und zu verknüpfen. Diese Kachel hat zwei Status: In einem Status werden Links angezeigt, über die einem Treueprogramm beigetreten werden kann, wenn der Benutzer noch kein Mitglied ist. Der andere Status zeigt Links zum Anzeigen der Treuedetailseite an, wenn der Benutzer bereits Mitglied ist. Zu den Eigenschaften gehören die Überschrift, der Link „Anmelden“ und der Link „Treueprogramm anzeigen“. Der Link „Treueprogramm anzeigen“ muss konfiguriert werden, um auf die Treueprogrammseite umzuleiten. Der Link „Anmelden“ sollte konfiguriert werden, um zu einer Seite umzuleiten, auf der der Benutzer dem Treueprogramm beitreten kann. 
 
 ### <a name="order-history-page"></a>Bestellverlaufseite
 
@@ -58,7 +57,7 @@ Die Bestelldetailseite stellt Detailinformationen zu jedem Auftrag bereit und wi
 
 ### <a name="user-profile-page"></a>Benutzerprofilseite
 
-Die Benutzerprofilseite zeigt die Benutzerkontodetails, beispielsweise den Benutzernamen und die E-Mail-Adresse an. Es verwendet das Benutzerprofilmodul. Obwohl die E-Mail-Adresse nicht entfernt werden kann, kann sie bearbeitet werden. Auf der Benutzerprofilseite werden auch Benutzereinstellungen angezeigt, mit denen ein Benutzer bestimmte Funktionen wie die Personalisierung von Empfehlungslisten aktivieren oder deaktivieren kann. 
+Die Benutzerprofilseite zeigt die Benutzerkontodetails, beispielsweise den Benutzernamen und die E-Mail-Adresse an. Es verwendet die Benutzerprofildetails und Benutzerprofilbearbeitungsmodule. Obwohl die E-Mail-Adresse nicht entfernt werden kann, kann sie bearbeitet werden. Auf der Benutzerprofilseite werden auch Benutzereinstellungen angezeigt, mit denen ein Benutzer bestimmte Funktionen wie die Personalisierung von Empfehlungslisten aktivieren oder deaktivieren kann. 
 
 ### <a name="user-address-page"></a>Adressenseite des Benutzers
 
@@ -70,11 +69,13 @@ Die Seite Wunschliste zeigt eine Liste von Elementen, die der Kunde seiner Wunsc
 
 ### <a name="loyalty-page"></a>Treueseite
 
-Die Treueprogrammseite ermöglicht es einem Debitor, einem Treueprogramm beizutreten oder die Programmdetails anzuzeigen, wenn er bereits Treueprogrammmitglied ist. Sie können auch die Punkte anzeigen, die sie für kürzliche Transaktionen erworben haben.
+Die Treueprogrammseite ermöglicht es einem Debitor, ihre Programmdetails anzuzeigen, wenn er bereits Treueprogrammmitglied ist. Sie können auch die Punkte anzeigen, die sie für kürzliche Transaktionen erworben haben. Die Seite verwendet das Modul „Treuedetails“, um die Treuedetails anzuzeigen. 
+
+Um dem Treueprogramm beizutreten, kann eine Marketingseite mit Modulen für die Registrierung von Treueprogrammen- und Treueprogrammbedingungen erstellt werden. Wenn der Benutzer kein Mitglied eines Treueprogramms ist, kann der Benutzer sich mit diesen Modulen anmelden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Überblick](starter-kit-overview.md)
+[Starterkit-Übersicht](starter-kit-overview.md)
 
 [Containermodul](add-container-module.md)
 

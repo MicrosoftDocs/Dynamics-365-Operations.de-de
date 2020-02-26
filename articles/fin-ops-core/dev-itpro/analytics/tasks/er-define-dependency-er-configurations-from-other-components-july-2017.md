@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d949be57d9e9fe744860f5c4045bef2923b7f284
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 97aedf17bb6fa67fd08497ec6e15a7c92866fa4d
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249180"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026109"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Die Abhängigkeit der EB-Konfigurationen bei anderen Komponenten definieren
 
@@ -47,9 +47,9 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 5. Klicken Sie auf "Neu".
 6. Wählen Sie Produktvoraussetzungskomponente aus.
 7. Microsoft Dynamics 365 for Operations (1611) auswählen.
-8. Geben Sie im Feld Version Typ '(7.1.1541.3036,8)' ein.
-    * (7.1.1541.3036,8)  
-    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie im Voraus heruntergeladen wird, muss sie in Finance and Operations-Version 7.1.1541.3036 oder höher aufweisen, darf aber die Hauptversion 8 nicht überschreiten.   
+8. Geben Sie im Versionsfeld '[7.1.1541.3036,8)' ein.
+    * [7.1.1541.3036,8)  
+    * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie vorab heruntergeladen wird, muss sie in Finance and Operations-Version 7.1.1541.3036 oder höher abgeschlossen werden, darf aber Hauptversion 8 nicht überschreiten.   
 9. Klicken Sie auf "Speichern".
 10. Schließen Sie die Seite.
 11. Klicken Sie auf "Status ändern".
@@ -60,8 +60,8 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 16. Klicken Sie auf "Neu".
 17. Wählen Sie Produktvoraussetzungskomponente aus.
 18. Wählen Sie Microsoft Dynamics AX 7.0 RTW aus.
-19. Geben Sie im Feld Version Typ '(7.0.1265.3015,7.1)' ein.
-    * (7.0.1265.3015,7.1)  
+19. Geben Sie im Versionsfeld '[7.0.1265.3015,7.1)' ein.
+    * [7.0.1265.3015,7.1)  
     * Abhängigkeiten, die Sie eingeben, werden ausgewertet, wenn die Konfiguration von einem beliebigen ER-Repository heruntergeladen wird. Diese wird aus dem ER-Repository Variantenversion heruntergeladen, wenn Version 1 " der Beispieldatmodell" Konfiguration entweder bereits an der richtigen Stelle ist oder heruntergeladen im Voraus. Wenn sie im Voraus heruntergeladen wird, muss sie in Microsoft Dynamics 365 for Finance and Operations (Enterprise Edition) abgeschlossen werden, wobei die Version 7.0.1265.3015 oder höher sein muss, aber die Nebenversion 1 nicht überschreiten darf.   
 20. Klicken Sie auf "Speichern".
 21. Schließen Sie die Seite.
@@ -109,7 +109,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
     * Version 1.1 dieser Modellzuordnungskonfiguration wurde in LCS hochgeladen, indem Sie das LCS-Projekt für das verwendete ER-Repository verwenden, das zuvor konfiguriert wurde.   
 
 ## <a name="evaluate-er-configuration-dependencies"></a>Überprüfen der ER-Konfigurationsabhängigkeiten
-    * Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repository herunter.  
+Wir werden erstellte Konfigurationen löschen und laden sie erneut vom LCS-Repository herunter.  
 1. Wählen Sie in der Struktur Musterdatenmodell\Musterzuordnung.
 2. Klicken Sie auf Löschen.
 3. Klicken Sie auf "Ja".
@@ -139,5 +139,5 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 25. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
 26. Wählen Sie in der Struktur 'Muster Datenmodell' erweitern.
     * Beachten Sie, dass die vorbildliche "Beispielzuordnungs" Zuordnungskonfiguration zusammen mit der gewählten Datenmodellkonfiguration heruntergeladen wurde. Die zwei Dateien werden zusammen heruntergeladen, da die „Beispielzuordnung “ als Implementierung des ausgewählten Datenmodells definiert wurde und weil sie für die Anwendung anwendbar ist. Die Variante "Beispielzuordnung (Alternative)" ist nicht heruntergeladen worden, da die Bedingung für die erforderliche Anwendungsversion nicht erfüllt ist.   
-    * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie denselben Anbieter, greifen auf das gleiche LCS-Projekt zu und laden die gleiche Datenmodellkonfiguration, die „Beispielzuordnung (Alternative )“ herunter, während die „Beispielzuordnungs“ Konfiguration übersprungen wird.  
+    * Wenn Sie sich bei Finance and Operations anmelden, registrieren Sie den gleichen Anbieter, greifen auf das gleiche LCS-Projekt zu und laden die gleiche Datenmodellkonfiguration, die ‘Beispielzuordnung (Alternative )‘ herunter, während die ‘Beispielzuordnung‘ Konfiguration übersprungen wird.  
 

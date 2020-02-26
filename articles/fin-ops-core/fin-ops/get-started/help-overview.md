@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf1a417130cb9d17f33d96f5e510582c79e875ca
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4594da0feeb3b74eb066fb5761e36398804b4fc2
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811671"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3005702"
 ---
 # <a name="help-system"></a>Hilfesystem
 
@@ -32,9 +32,9 @@ ms.locfileid: "2811671"
 Dieses Thema enthält einen Überblick über die Komponenten des Hilfesystems. Das Hilfesystem wird von folgenden Produkten gemeinsam verwendet:
 
 - Dynamics 365 Finance 
-- Dynamics 365 Retail
+- Dynamics 365 Commerce
 - Dynamics 365 Supply Chain Management
-- Dynamics 365 Talent
+- Dynamics 365 Human Resources
 
 Sie können auf die Hilfe aus dem Hilfebereich zugreifen, unabhängig davon, welches Produkt Sie verwenden. 
 
@@ -42,7 +42,7 @@ Sie können auf die Hilfe aus dem Hilfebereich zugreifen, unabhängig davon, wel
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hilfe auf docs.microsoft.com
 
-Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) ist die primäre Quelle für Produktdokumentation für die oben aufgeführten Anwendungen. Die Seite enthält die folgenden Funktionen:
+Die Website docs.microsoft.com ([docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/)) ist die primäre Quelle für die Produktdokumentation zu den oben aufgeführten Anwendungen. Die Seite enthält die folgenden Funktionen:
 
 - **Zugriff auf aktuellsten Inhalt**- Die Seite ist eine schnellere und flexiblere Methode, Produktdokumentationen zu erstellen, zu liefern und zu aktualisieren. So können wir besser sicherstellen, dass Zugriff auf den neuesten technischen Informationen enthalten.
 - **Inhalte, die von den Experten geschrieben wurden**- Die Seite bietet eine umfangreichere Zusammenstellung von Produktdokumentationen, die von Community-Mitgliedern, sowohl innerhalb als auch außerhalb von Microsoft, weiterentwickelt werden können.
@@ -73,7 +73,7 @@ Sie können zur Dokumentation beitragen und Änderungen daran vornehmen. Um anzu
 
 Das Video [So tragen Sie zur Microsoft Dynamics 365-Dokumentation bei](https://youtu.be/m5djioozRbg) (oben) ist im Microsoft Dynamics 365-Kanal auf YouTube enthalten.
 
-Weitere Informationen hierzu finden Sie in unserem [Mitwirkerhandbuch](https://docs.microsoft.com/en-us/contribute).
+Weitere Informationen hierzu finden Sie in unserem [Mitwirkerhandbuch](https://docs.microsoft.com/contribute).
 
 > [!NOTE]
 > Es werden derzeit nur Beiträge für unseren englischen Inhalt akzeptiert.
@@ -106,12 +106,12 @@ Um auf Hilfeinhalte zuzugreifen, klicken Sie entweder auf das **Hilfe** (**?**) 
 Im Hilfe-Bereich können Sie auf Artikel zugreifen, die für den Client gelten. Wenn Sie zuerst den Hilfebereich öffnen und auf die Registerkarte **Hilfe** klicken, finden Sie die Artikel, die für die Seite gelten, an denen Sie derzeit sind. Wenn keine Artikel gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren. Wenn Sie auf einen Artikel im Bereich Hilfe klicken, wird eine neue Registerkarte in Ihrem Browser geöffnet und der Artikel angezeigt.
 
 > [!IMPORTANT]
-> Dieser Abschnitt gilt nicht für Dynamics 365 Talent. Das Hilfesystem für Talent stellt automatisch eine Verbindung mit den Aufgabenleitfäden für das Produkt bereit. Sie können auch keine benutzerdefinierten Aufgabenleitfäden für Talent erstellen.
+> Dieser Abschnitt gilt nicht für Dynamics 365 Human Resources. Das Hilfesystem für Human Resources wird automatisch mit den Aufgabenleitfäden für das Produkt verbunden. Sie können zudem keine benutzerdefinierten Aufgabenleitfäden für Human Resources erstellen.
 
 
 ### <a name="accessing-task-guides-from-the-help-pane"></a>Auf Aufgabenleitfäden über den Hilfebereich zugreifen
 
-Bevor Sie auf Aufgabenleitfäden aus dem Bereich **Hilfe** zugreifen können, muss ein Systemadministrator auf der Seite Systemparameter in Finance, Supply Chain Managment und Retail einige Einstellungen konfigurieren.
+Bevor Sie auf Aufgabenleitfäden aus dem Hilfe-Bereich zugreifen können, muss ein Systemadministrator zur Seite **Systemparameter** in Finance, Supply Chain Management und Commerce wechseln und einige Einstellungen konfigurieren.
 
 > [!NOTE]
 > - Um Hilfe zu konfigurieren, müssen Sie mit einem Konto des Mandanten angemeldet sein, für die App bereitgestellt ist.

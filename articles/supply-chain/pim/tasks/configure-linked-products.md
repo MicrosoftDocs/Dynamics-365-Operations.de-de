@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3ef8314c3b6122627de0a730e912c7ebcd99be
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: ec7a2c5a2b2b7ef22fd3dcf7f7d3859e8e07ea5e
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568649"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003949"
 ---
 # <a name="configure-linked-products"></a>Verknüpfte Produkte konfigurieren
 
@@ -30,9 +30,9 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Konfigurieren von verkn
 
 1. Wechseln Sie zu "Produktinformationsverwaltung" > "Produkte" > "Freigegebene Produkte".
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-3. Klicken Sie im Aktivitätsbereich auf "Einzelhandel".
+3. Klicken Sie im Aktivitätsbereich auf „Retail und Commerce“.
 4. Klicken Sie auf "Verknüpfte Produkte".
-5. Klicken Sie auf "Bearbeiten".
+5. Klicken Sie auf Bearbeiten.
 6. Klicken Sie im Feld "Verknüpfte Produktnummer" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 7. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 8. Klicken Sie im Feld "Einheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.

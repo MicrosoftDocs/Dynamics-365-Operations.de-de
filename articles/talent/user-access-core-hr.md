@@ -1,6 +1,6 @@
 ---
-title: Benutzer kann auf Core HR, aber nicht auf Onboard oder Attract zugreifen
-description: In diesem Thema wird erläutert, wie das Problem gelöst wird, wenn ein Benutzer auf Microsoft Dynamics 365 Talent – Core HR, aber nicht auf die Attract- und Onboard-App zugreifen kann.
+title: Benutzer kann auf Personalverwaltung aber nicht auf Onboard oder Attract zugreifen
+description: In diesem Thema wird erläutert, wie das Problem gelöst wird, wenn ein Benutzer auf Microsoft Dynamics 365 Talent – Personalverwaltung aber nicht auf Attract oder Onboard zugreifen kann.
 author: andreabichsel
 manager: AnnBe
 ms.date: 11/02/2018
@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 1a86936d756d8375761ce50c9d9bf33dc638dfad
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 6c384d9a7100982eabd201d910e1bea14355dc1f
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772918"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006309"
 ---
-# <a name="user-can-access-core-hr-but-not-onboard-or-attract"></a>Benutzer kann auf Core HR, aber nicht auf Onboard oder Attract zugreifen
+# <a name="user-can-access-human-resources-but-not-onboard-or-attract"></a>Benutzer kann auf Personalverwaltung aber nicht auf Onboard oder Attract zugreifen
 
 [!include [banner](includes/banner.md)]
 
 **Umgebungsdetails**
 
 - Die Microsoft Dynamics Lifecycle Services (LCS)-Bereitstellung wurde von Benutzer A ausgeführt.
-- Benutzer A hat Benutzer B als Benutzer zu Microsoft Dynamics 365 Talent: Core HR hinzugefügt.
+- Benutzer A hat Benutzer B als Benutzer zu Microsoft Dynamics 365 Human Resources hinzugefügt.
 
 **Abgang**
 
-Benutzer B kann auf Core HR, aber nicht auf Talent zugreifen: Attract oder Talent: Onboard-App. Wenn der Benutzer versucht, zu **Erfahrungs-Apps** zu wechseln, wird er oder sie zu einer stattdessen zu einer Testumgebung geführt.
+Benutzer B kann auf Personalverwaltung aber nicht auf Talent zugreifen: Attract- oder Talent: Onboard-App. Wenn der Benutzer versucht, zu **Erfahrungs-Apps** zu wechseln, wird er oder sie zu einer stattdessen zu einer Testumgebung geführt.
 
 **Lösung**
 
@@ -45,4 +45,4 @@ Informationen dazu finden Sie im Abschnitt „Zugriff auf die Umgebung gewähren
 
 **Langfristige Lösung**
 
-Microsoft erwägt, die entsprechenden Rechte automatisch an Onboard oder Attact zuzuweisen, wenn ein Benutzer zu Core HR hinzugefügt wurde.
+Microsoft erwägt, die entsprechenden Rechte automatisch an Onboard oder Attact zuzuweisen, wenn ein Benutzer zu Personalverwaltung hinzugefügt wurde.

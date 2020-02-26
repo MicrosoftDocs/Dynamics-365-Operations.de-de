@@ -1,9 +1,9 @@
 ---
 title: Talent mit Power Apps und Power Automate erweitern
-description: Dieses Thema beschreibt einige Beispiele für Erweiterungsszenarien für Microsoft Dynamics 365 Talent, die Microsoft Power Apps und Microsoft Power Automate verwenden.
+description: Dieser Artikel beschreibt einige Beispiele für Erweiterungsszenarien für Microsoft Dynamics 365 Talent - Attract, die Microsoft Power Apps und Microsoft Power Automate verwenden.
 author: negudava
 manager: Annbe
-ms.date: 05/01/2019
+ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -16,21 +16,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: negudava
-ms.search.validFrom: 2019-03-04
+ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Talent October 2018 update
-ms.openlocfilehash: 6c8a583a93c2ceb70d8c3b0e0047e2bf2047b56d
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 1051fa4db16bb94cc9d60a91fc3637d7e5305cc2
+ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2898316"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029910"
 ---
 # <a name="extend-talent-with-power-apps-and-power-automate"></a>Talent mit Power Apps und Power Automate erweitern
 
-Dieses Thema beschreibt einige Beispiele für Erweiterungsszenarien für Microsoft Dynamics 365 Talent, die Microsoft Power Apps und Microsoft Power Automate verwenden. Sie können das Lösungspaket importieren, das jedem Beispiel in der Power Apps-Umgebung zugeordnet ist. Sie können entweder die Pakete als Anleitung oder als Startpunkte zu den Werkzeugszenarien verwenden, die der Organisation zugeordnet sind.
+Dieser Artikel beschreibt einige Beispiele für Erweiterungsszenarien für Microsoft Dynamics 365 Talent: Attract, die Microsoft Power Apps und Microsoft Power Automate verwenden. Sie können das Lösungspaket importieren, das jedem Beispiel in der Power Apps-Umgebung zugeordnet ist. Sie können entweder die Pakete als Anleitung oder als Startpunkte zu den Werkzeugszenarien verwenden, die der Organisation zugeordnet sind.
 
 > [!IMPORTANT]
-> Wenn Sie die Vorlagen und Apps verwenden möchten, die in diesem Thema als "wie vorliegend" beschrieben sind, müssen Sie diese unbedingt testen, um sicherzustellen, dass sie alle Szenarien beinhalten, die für Ihre Implementierung bestimmt sind.
+> Wenn Sie die Vorlagen und Apps verwenden möchten, die in diesem Artikel als „wie vorliegend“ beschrieben sind, müssen Sie diese unbedingt testen, um sicherzustellen, dass sie alle Szenarien beinhalten, die für Ihre Implementierung bestimmt sind.
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -49,67 +49,31 @@ Diese Vorlage kann auch erweitert werden, sodass sie für andere Szenarien verwe
 - Kompilieren Sie eine Bibliothek von Gesprächsfragen für die Personalverwaltungs (HR)-Administratoren.
 - Zeichnen Sie die Bewertung des Kandidaten aus dem Gesprächsprozess auf
 
-In Microsoft Dynamics 365:  Attract Formulare können in Kandidatenprofilen angezeigt werden und der Kandidat kann die Details ausfüllen. Formulare können als Aktivitäten auch in einer Stellenvorlage eingebettet werden.
+In Microsoft Dynamics 365: Attract können Sie Formulare im Kandidatenportal nutzen, bei dem Kandidaten die Details selbst eingeben. Sie können Formulare auch als Aktivitäten in die Stellenvorlage einbetten.
 
 Wenn ein Kandidat ein Formular abschickt, erfasst Microsoft Power Automate die Formularabgabe, liest die Daten und speichert sie in der Entität Common Data Service.
 
 Um die **Power Automate - Formular verbinden** Vorlage und benutzerdefinierte Entitätsstruktur herunterzuladen, gehen Sie zu [Power Automate - Formular verbinden](https://go.microsoft.com/fwlink/?linkid=2081988) im Microsoft Download Center.
 
-## <a name="initiate-and-extract-parameters-passed-to-power-apps"></a>Initiieren und Extrahieren von Parametern, die an Power Apps übergeben werden.
-
-Die Vorlage **An Power Apps übergebene Initiierungs- und Extraktparameter** kann als Ausgangspunkt für jedes Power Apps-Szenario verwendet werden, das spezifisch für Attract ist. Dies umfasst alle Standardparameter, die von Attract weitergegeben werden, wie beispielsweise **Stellenbewerbung**, **Kandidaten-ID** und **JobID**.
-
-Diese Vorlage kann verwendet werden, um einen Kandidatenbewertungsbogen abzurufen, damit ein zukünftiger Vorgesetzter die Bewertung sehen kann, die ein Kandidat ausfüllte.
-
-Apps, die mithilfe von Power Apps erstellt wurden, können in die Stellenvorlage in Attract eingebettet werden.
-
-Um die **Initiieren und Extrahieren von Parametern, die an Power Apps** Vorlage und benutzerdefinierte Entitätsstruktur übergeben wurden, herunterzuladen, gehen Sie im Microsoft Download Center zu [Initiieren und Extrahieren von Parametern, die an Power Apps](https://go.microsoft.com/fwlink/?linkid=2081991) übergeben wurden.
-
-## <a name="integration-with-office-365"></a>Integration mit Office 365
-
-Die **Integration mit Office 365** App kann verwendet werden, um Teaminformationen für angemeldete Benutzer von Microsoft Office 365 zu extrahieren. Sie verweist Arbeitskräfte in Talent dahingehend, Ausstempeldetails und Ausnahmeaufzeichnungen zu extrahieren. Ein- und Ausstempelndetails werden in den benutzerdefinierten Common Data Service Entitäten gespeichert. Die Voraussetzung ist, dass diese Details von einem System von einem Fremdanbietern über die Integration ausgefüllt werden.
-
-Diese App kann auch erweitert werden, sodass sie für andere Szenarien verwendet werden kann. Sie kann zum Beispiel dazu verwendet werden, Teamferieninformationen, Kalenderereignisse und weitere Team spezifische Ereignisse anzuzeigen.
-
-Wenn Sie die App**Integration mit Office 365** und die benutzerdefinierte Entitäts-Struktur herunterladen, gehen Sie zu [Integration mit Office 365](https://go.microsoft.com/fwlink/?linkid=2081787) im Microsoft Download Center.
-
-## <a name="power-automate--email-notification"></a>Power Automate - E-Mail-Benachrichtigung
-
-Die Vorlage **Power Automate - E-Mail-Benachrichtigung** kann für E-Mail-Benachrichtigungsszenarien verwendet werden. Sie kann verwendet werden, um Benachrichtigungs-E-Mails zu den Kandidaten zu starten, die das Einstellungsteam während jeder Phase des Rekrutierungsprozesses abgelehnt hat.
-
-Diese Vorlage kann erweitert werden, um Änderungen an der Kandidatenphase während des Rekrutierungsprozesses nachzuverfolgen und, Benachrichtigungen an das Einstellungsteam und die Kandidaten zu senden.
-
-Im Allgemeinen gilt für Entitäten, die in Common Data Service gespeichert werden, dass Fluss eingerichtet werden kann, um Benachrichtigungen für Ereignisse zu versenden, die in Core HR Attract oder Onboard auftreten.
-
-Um die Vorlage **Power Automate - E-Mail-Benachrichtigung** herunterzuladen, gehen Sie zu [Power Automate - E-Mail-Benachrichtigung](https://go.microsoft.com/fwlink/?linkid=2082103) im Microsoft Download Center.
-
-## <a name="power-automate--sql-connect-and-execute"></a>Power Automate - SQL Verbinden und ausführen
-
-Die Vorlage **Power Automate - SQL Connect and execute** verbindet sich mit Microsoft SQL Server und ermöglicht die Ausführung von SQL-Abfragen.
-
-Obwohl diese Vorlage dazu entwickelt wurde, SQL-Tabellen zu lesen und zu aktualisieren, kann sie auch erweitert werden, sodass sie für andere Szenarien verwendet werden kann. Sie kann beispielsweise dazu verwendet werden, um eine Stagingtabelle in Common Data Service mit Datensätzen vom SQL Server zu füllen und um die Stagingtabelle regelmäßig zu synchronisieren, indem ein inkrementeller Push von SQL Server verwendet wird.
-
-Um die **Power Automate - SQL Connect and execute** Vorlage herunterzuladen, gehen Sie zu [Power Automate - SQL Connect und führen Sie](https://go.microsoft.com/fwlink/?linkid=2081789) im Microsoft Download Center aus.
-
 ## <a name="power-automate--sharepoint-integration"></a>Power Automate - SharePoint Integration
 
 Die Vorlage **Power Automate - SharePoint Integration** kann verwendet werden, um Daten aus einer Microsoft SharePoint-Liste zu lesen, die Liste mit Feldwerten für jede Common Data Service-Einheit zu vergleichen und die Ergebnisse des Vergleichs als Benachrichtigungs-E-Mail zu senden. 
 
-Eine Organisation hat möglicherweise eine Reihe von Fähigkeiten, die sie dringend benötigt. Diese Qualifikationen können in SharePoint als Liste SharePoint gespeichert werden. Wenn sich ein Kandidat für eine Stelle bewirbt, die Qualifikationen verlangt, die aufgelistet sind und wenn es eine erhebliche Übereinstimmung zwischen den Fähigkeiten des Kandidaten und den Qualifikationen gibt, die in SharePoint gespeichert sind, wird eine  Benachrichtigungs-E-Mail übermittelt. Auf diese Weise werden Positionen, die dringend erforderlich sind, schneller gefüllt, da die Benachrichtigungen den Personalbeschaffern hilft, Kandidaten aus der gesamten Organisation zu finden.
+Eine Organisation hat möglicherweise eine Reihe von Fähigkeiten, die sie dringend benötigt. Diese Qualifikationen können in SharePoint als Liste SharePoint gespeichert werden. Wenn sich ein Kandidat für eine Stelle bewirbt, die Qualifikationen verlangt, die aufgelistet sind und wenn es eine erhebliche Übereinstimmung zwischen den Fähigkeiten des Kandidaten und den Qualifikationen gibt, die in SharePoint gespeichert sind, wird eine  Benachrichtigungs-E-Mail übermittelt. Auf diese Weise werden Positionen, die dringend erforderlich sind, schneller besetzt, da die Benachrichtigungen den Personalbeschaffern helfen, Kandidaten aus der gesamten Organisation zu finden.
 
 Diese Vorlage kann auch erweitert werden, sodass sie für ein beliebiges Szenario verwendet werden kann, das die SharePoint Integration betrifft.
 
 Um die Vorlage **Power Automate - SharePoint Integration** herunterzuladen, gehen Sie zu [Power Automate - SharePoint Integration](https://go.microsoft.com/fwlink/?linkid=2082109) im Microsoft Download Center.
 
 ## <a name="referral-app"></a>Bezugs-App
-Sie können die Empfehlungs-App verwenden, um Kandidaten einer freigegebene Talentschmiede hinzuzufügen. Der Empfehler kann **Vorname**, **Lastname**, **E-Mail** und **Linkedln-URL** eingeben, wenn er den Kandidaten übermittelt. Die Kandidatenquellenmetadaten werden dann mit den Informationen des Empfehlers ausgefüllt.
 
-Sie können dieser App im Mitarbeiter-Self-Service (ESS) für das Übermitteln von Empfehlungen eingeben, oder Sie können sie als Verknüpfung im Unternehmensportal und als eigenständige App ausführen.
+Sie können die Empfehlungs-App verwenden, um Kandidaten einer freigegebene Talentschmiede hinzuzufügen. Der Verweiser kann **Vorname**, **Nachname**, **E-Mail** und **LinkedIn-URL** eingeben, wenn er den Kandidaten übermittelt. Die Kandidatenquellenmetadaten werden dann mit den Informationen des Empfehlers ausgefüllt.
 
-Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 Talent Erweiterbarkeitslösung: Empfehlungs-App](https://www.microsoft.com/downloads/details.aspx?FamilyID=9a59c9d1-f8a1-4d4d-b768-cfc4f4eb9d0d) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
+Sie können dieser App im Mitarbeiter-Self-Service für das Übermitteln von Empfehlungen einbetten oder Sie können sie als Verknüpfung im Unternehmensportal und als eigenständige App verwenden.
+
+Um die **Empfehlungs-App** herunterzuladen, gehen Sie zur [Dynamics 365 Talent Erweiterbarkeitslösung: Empfehlungs-App](https://www.microsoft.com/download/details.aspx?id=58497) im  Microsoft Download Center. Sie können diese App importieren und anpassen, um weitere Funktionen hinzuzufügen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Das Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)
-
+[Das Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Migrieren der App zwischen Mandanten und Umgebung](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)

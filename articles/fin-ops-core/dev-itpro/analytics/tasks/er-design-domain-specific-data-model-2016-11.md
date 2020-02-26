@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d66cc69da08478ceb931fab594da51bafcacc38
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3fe08b30977b8515ffd8d0acc1fd8f4b3085de93
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185082"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026085"
 ---
 # <a name="er-design-domain-specific-data-model"></a>ER Domänenspezifisches Datenmodell entwerfen
 
@@ -48,7 +48,7 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
 4. Klicken Sie auf die Schaltfläche "Konfiguration erstellen", um die Konfigurationserstellungsaufgabe abzuschließen
 
 ## <a name="create-a-data-model"></a>Datenmodell erstellen
-    * Sie erstellen ein neues Datenmodell für die ausgewählte Konfiguration. Diese Konfigurationsversion hat den Status "Entwurf".  
+Sie erstellen ein neues Datenmodell für die ausgewählte Konfiguration. Diese Konfigurationsversion hat den Status "Entwurf".  
 1. Klicken Sie auf Designer.
 
 ## <a name="define-the-structure-of-a-party-participating-in-a-payment-process"></a>Definieren der Struktur einer Partei, die an einem Zahlungsprozess teilnimmt

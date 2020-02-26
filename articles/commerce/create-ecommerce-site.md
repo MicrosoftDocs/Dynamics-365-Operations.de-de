@@ -1,9 +1,9 @@
 ---
 title: Erstellen einer E-Commerce-Webseite
-description: In diesem Thema werden die Aufgaben beschrieben, die bei der Erstellung einer neuen E-Commerce-Site in Dynamics 365 Commerce zugeordnet werden.
+description: In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Site in Dynamics 365 Commerce Site Builder erforderlich sind.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,29 +19,31 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 54259d3f5dfd8c8e1ff2caaadfac497cc0e133e0
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: 3d3d8a290f06d9734be21f2d59152acac6857506
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945834"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002012"
 ---
 # <a name="create-an-e-commerce-site"></a>Erstellen einer E-Commerce-Webseite
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
-In diesem Thema werden die Aufgaben beschrieben, die bei der Erstellung einer neuen E-Commerce-Site in Dynamics 365 Commerce zugeordnet werden.
+In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Site in Dynamics 365 Commerce Site Builder erforderlich sind.
 
-## <a name="overview"></a>Übersicht
+Bevor Sie mit der Entwicklung Ihrer E-Commerce-Site beginnen, müssen Sie erst eine neue Site im Site Builder einrichten. 
 
-Um mit der Entwicklung der E-Commerce-Site zu beginnen, müssen Sie eine neue Site in der Siteerstellungsumgebung einrichten. Bevor Sie eine neue Site erstellen können, muss mindestens ein Onlineshop in Dynamics 365 Retail erstellt werden. 
+
+Um mit der Entwicklung der E-Commerce-Site zu beginnen, müssen Sie eine neue Site in der Siteerstellungsumgebung einrichten. Bevor Sie eine neue Site erstellen können, muss mindestens ein Onlineshop in Commerce erstellt werden. 
+
 
 ## <a name="set-up-your-site"></a>Site einrichten
 
 Um Ihre Site einzurichten, gehen Sie folgendermaßen vor.
 
-1. Im Microsoft Lifecycle Services (LCS) wählen Sie den Link für die Siteerstellungsumgebung aus. 
+1. Öffnen Sie die Site Builder-Umgebung. Sie finden einen Link zum Site Builder in Microsoft Lifecycle Services (LCS) auf der Seite mit den Umgebungsfunktionen für Commerce.
 1. Auf der Startseite für die Siteerstellungsumgebung wählen Sie **Neue Site** aus.
 1. Geben Sie im Dialogfeld **Neue Site** die folgenden Informationen ein.
 

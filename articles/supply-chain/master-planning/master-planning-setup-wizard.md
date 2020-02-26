@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 8fbccce6e23c9bc965f66f761f4c1cab32224ef1
-ms.sourcegitcommit: fbd6d027ef3b50c056260e30e78066839efa3ddb
+ms.openlocfilehash: 9d7da31f2df31c7e5cbac73b3232233090ac369e
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "2635125"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3031066"
 ---
 # <a name="master-planning-setup-wizard"></a>Produktprogrammplanungs-Setup-Assistent
 
@@ -32,9 +32,9 @@ ms.locfileid: "2635125"
 
 Dieses Thema enthält eine Anleitung für den **Produktprogrammplanungssetupassistent**. Es wird erläutert, wie Parametervorschläge berechnet werden und sie enthalten auch Beispiele, wie verschiedene Unternehmen Produktprogrammplanung einrichten, basierend auf den Geschäftsanforderungen.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3YnSB]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-Der [Einrichtungs-Assistent für Hauptpläne in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) Videodatei (oben angezeigt) ist in der [Finance and Operations-Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) enthalten, die auf YouTube verfügbar ist.
+Der Einrichtungs-Assistent für [Hauptpläne in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) Video (oben angezeigt) ist in der [Finance and Operations Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) in YouTube verfügbar.
 
 
 ## <a name="specific-requirements-of-your-company"></a>Bestimmte Unternehmensanforderungen
@@ -184,7 +184,7 @@ Im Assistenten werden die folgenden Werte für Contoso-Hersteller eingegeben:
 Contoso-Einzelhändler ist ein Vertriebsunternehmen in der Modeindustrie. Es verwendet Produktprogrammplanung, wenn Bestellungen hinzugefügt werden sollen, basierend auf den geplanten Verkäufen. Nachfolgend sind einige der Merkmale:
 
 - Contoso-Einzelhändler verwendet eine Bedarfsplanung, um Verkäufe vorherzusagen. Bestellungen werden entsprechend der Planung geplant.
-- Ladengeschäfte verwenden Anforderungen für die Wiederbeschaffung.
+- Geschäfte verwenden Anforderungen für die Wiederbeschaffung.
 - Die Lieferzeit vom Hauptlagerort in jedes Geschäft dauert ungefähr zwei Wochen für alle Artikel.
 
 Im Assistenten werden die folgenden Werte für Contoso-Einzelhändler eingegeben:
@@ -208,4 +208,4 @@ Im Assistenten werden die folgenden Werte für Contoso-Einzelhändler eingegeben
     - **Frage:** „Möchten Sie auf der Grundlage genehmigter Anforderungen Nachfrage einschließen, um die Geschäfte zu beliefern?“
     - **Antwort:** „Ja, wie in diesem Produktprogrammplan definiert.“ **1 Tag** wird eingegeben.
 
-    Contoso verwendet die genehmigten Anforderungen von den enthaltenen Ladengeschäften, um Bestellvorschläge zu erstellen, um diese Geschäfte zu beliefern. Da die Produktprogrammplanung jeden Tag ausgeführt wird, sind die Anforderungen vom letzten Tag in der Planung enthalten.
+    Contoso verwendet die genehmigten Anforderungen von den enthaltenen Ladengeschäften, um geplante Einkaufsbestellungen zu erstellen, um diese Geschäfte zu beliefern. Da die Produktprogrammplanung jeden Tag ausgeführt wird, sind die Anforderungen vom letzten Tag in der Planung enthalten.

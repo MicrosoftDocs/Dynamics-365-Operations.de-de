@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2c7ee610c6e3c446a4bcc9d6d46ca72dd71cb23c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 45a2335d7a661ddc1d8907c56ae8193387f44e26
+ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771397"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3030865"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angeben eines benutzerdefinierten Speicherorts für generierte Dokumente
 
@@ -56,7 +56,7 @@ In der aktuellen Topologie [erstellen Sie ein neues ER-Format](tasks/er-format-c
 
 Um festzulegen, wie Dokumente, die von einem ER-Format erzeugt werden, weitergeleitet werden, müssen Sie [Elektronische Berichtsziele (ER)](electronic-reporting-destinations.md) konfigurieren. In jedem ER-Ziel, das konfiguriert wird, um generierten Dokumente als Dateien zu speichern, müssen Sie einen Dokumenttyp des Dokumentverwaltungsframework angeben. Verschiedene Dokumenttypen können verwendet werden, um Dokumente weiterzuleiten, die von verschiedenen ER-Formaten generiert werden.
 
-1. Fügen Sie einen neuen [Dokumenttyp](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) für das ER-Format hinzu, das Sie bereits erstellt oder importiert haben. In der folgenden Abbildung lautet der Dokumenttyp **FileX**.
+1. Fügen Sie einen neuen [Dokumenttyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) für das ER-Format hinzu, das Sie bereits erstellt oder importiert haben. In der folgenden Abbildung lautet der Dokumenttyp **FileX**.
 2. Um dieses Dokumenttyp von anderen Dokumenttypen zu unterscheiden, schließen Sie ein bestimmtes Schlüsselwort in seinem Namen ein. Beispielsweise lautet der Name in der folgenden Abbildung **(LOKALER) Ordner**.
 3. Geben Sie im Feld **Klasse** die Option **Datei zuordnen** an.
 4. Geben Sie im Feld **Gruppe** die Option **Datei** an.
@@ -70,7 +70,7 @@ Um festzulegen, wie Dokumente, die von einem ER-Format erzeugt werden, weitergel
 
 Überprüfen Sie den Code der **insertFile()**-Methode der Klasse **ERDocuManagement**. Beachten Sie, dass das Ereignis **AttachingFile()** ausgelöst wird, während die generierte Datei an einen Datensatz angefügt wurde.
 
-```
+```xpp
 /// <summary>
 /// Inserts file as attachment in Document Management.
 /// </summary>
@@ -131,7 +131,7 @@ Das Ereignis **AttachingFile()** wird ausgelöst, wenn die folgenden ER-Ziele ve
     1. Generierte Dateien in einem Ordner des lokalen Dateisystems des Servers speichern, auf dem Application Object Server (AOS) ausgeführt wird.
     2. Speichern Sie diese generierten Dateien nur, wenn der neuen Dokumenttyp (beispielsweise der Typ **FileX** mit "(LOKALE)-Schlüsselwort im Namen) verwendet wird, während eine Datei an den Datensatz im ER-AusführungsJobprotokoll angefügt ist.
 
-    ```
+    ```xpp
     class ERDocuSubscriptionSample
     {
         void new()

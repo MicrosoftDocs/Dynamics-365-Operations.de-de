@@ -3,7 +3,7 @@ title: Hinzufügen eines Logos
 description: In diesem Thema wird beschrieben, wie Sie ein Logo zu Ihrer Site in Microsoft Dynamics 365 Commerce hinzufügen.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 12/12/2019
+ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,16 +19,16 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 23bac9aae6beb59912bbc9e1f2c6958c007550b0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914619"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3025695"
 ---
 # <a name="add-a-logo"></a>Hinzufügen eines Logos
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie ein Logo zu Ihrer Site in Microsoft Dynamics 365 Commerce hinzufügen.
@@ -43,7 +43,7 @@ Sie können ein Logo direkt zu einer Vorlage, einem Layout oder einer Seite hinz
 
 Bevor Sie allen Seiten Ihrer Site ein Logo hinzufügen können, müssen Sie diese Aufgaben ausführen.
 
-1. Laden Sie Ihr Logo in den Digital Asset Manager hoch, auf den Sie über die Seite **Anlagen** zugreifen können.
+1. Laden Sie Ihr Logo in die Medienbibliothek hoch.
 1. Erstellen Sie ein Header-Fragment. Weitere Informationen zum Erstellen und Verwenden von Fragmenten finden Sie unter [Arbeiten mit Fragmenten](work-with-fragments.md).
 1. Fügen Sie das Headerfragment in die Vorlage ein, die die Seiten Ihrer Site für ihre Layout- und Moduloptionen verwenden. Weitere Informationen zu Vorlagen erhalten Sie unter [Arbeiten mit Vorlagen](work-with-templates.md).
 
@@ -51,13 +51,11 @@ Bevor Sie allen Seiten Ihrer Site ein Logo hinzufügen können, müssen Sie dies
 
 Gehen Sie folgendermaßen vor, um dem Headerfragment für Ihre Site ein Logo hinzuzufügen.
 
-1. Wählen Sie im Navigationsbereich links **Fragmente** und dann das von Ihnen erstellte Header-Fragment aus.
-2. Wählen Sie **Auschecken** aus.
-3. Erweitern Sie die Slots **Header** und **Logo**.
-4. Wählen Sie die Ellipsen-Schaltfläche (**...**) für den Slot **Logo** und dann **Modul hinzufügen** aus.
-5. Wählen Sie das Logomodul aus.
-6. Im Eigenschaftenbereich auf der rechten Seite konfigurieren Sie das Logomodul so, dass es Ihr Logo anzeigt.
-7. Speichern Sie das Kopffragment, laden Sie es hoch und veröffentlichen Sie es.
+1. Wählen Sie im linken Navigationsbereich **Seitenfragmente** aus.
+1. Wählen Sie das Headerfragment, das Sie eben erstellt haben, aus und dann **Bearbeiten**.
+1. Erweitern Sie das Kopfmodul.
+1. Geben Sie im Eigenschaftenbereich für das Kopfzeilenmodul ein Bild und einen Link für das Logo ein. 
+1. Speichern Sie das Headerfragment, beenden Sie die Bearbeitung und veröffentlichen Sie sie.
 
 Nachdem Sie das aktualisierte Headerfragment veröffentlicht haben, wird auf allen Websiteseiten, die die Vorlage mit dem Headerfragment verwenden, Ihr Logo angezeigt.
 

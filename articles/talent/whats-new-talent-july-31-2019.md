@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 96937d48e0d1003adbc5f7fedc89b2686ace01cd
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: 311042caf6a391a06c7e2d8c4c2c2f6e1f855437
+ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2899030"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3006286"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-july-30-2019"></a>Neuerungen und Änderungen in Dynamics 365 Talent (30. Juli 2019)
 
@@ -41,7 +41,7 @@ Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.24
 
 ### <a name="region-support-for-canada-and-southeast-asia"></a>Regionssupport für Kanada und Südostasien
 
-Wir freuen uns anzukündigen, dass Kanada- und Südostasien nun für Talent am 1. August 2019 verfügbar sind. Mit dieser Änderung können Umgebungen in kanadischen asiatischen Regionen erstellen, und alle Talentdaten werden nur innerhalb dieser Standorte verwaltet. Sie können eine Umgebung in diesen neuen Regionen erstellen, indem Sie die elektronische Adresse im neuen Umgebungsdialogfeld auswählen und diese Umgebung verwenden, um Talent in LCS wie unter [Talent bereitstellen](https://docs.microsoft.com/en-us/dynamics365/unified-operations/talent/provisioning-talent) beschrieben nutzen
+Wir freuen uns anzukündigen, dass Kanada- und Südostasien nun für Talent am 1. August 2019 verfügbar sind. Mit dieser Änderung können Umgebungen in kanadischen asiatischen Regionen erstellen, und alle Talentdaten werden nur innerhalb dieser Standorte verwaltet. Sie können eine Umgebung in diesen neuen Regionen erstellen, indem Sie die elektronische Adresse im neuen Umgebungsdialogfeld auswählen und diese Umgebung verwenden, um Talent in LCS wie unter [Talent bereitstellen](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent) beschrieben nutzen
 
 Datenmigration vorhandener Projekte aus anderen Regionen in kanadische und asiatische Regionen wird nicht unterstützt. Nur neue Projekte können zu den neuen unterstützten Regionen bereitgestellt werden.
 

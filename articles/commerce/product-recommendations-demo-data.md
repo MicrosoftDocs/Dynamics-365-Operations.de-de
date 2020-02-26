@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af8a30e69d9ed143e045950efdcece207f6da14c
-ms.sourcegitcommit: 295d940a345879b3dfc5991e387b91c7257019ea
+ms.openlocfilehash: 6abac72b7530dc7b82c8e95faebdce791cf7dbd1
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2697933"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003233"
 ---
 # <a name="get-product-recommendations-using-demo-data"></a>Abrufen von Produktempfehlungen mithilfe von Demodaten
 Dieses Dokument bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
@@ -39,7 +39,7 @@ Bei Umgebungen der Stufe 1 basieren Produktempfehlungen nur auf den statischen D
 Um Demo-Daten für Produktempfehlungen zu aktivieren, müssen Sie die Dynamics 365 Commerce-Vorschau-Demoerweiterung für die entsprechende Umgebung bereitstellen. Wenn Sie dies automatisch tun, werden Demo-Daten für Produktempfehlungen aktiviert.
 
 ## <a name="default-demo-data"></a>Standarddemodaten
-Jede Einzelfeld-Typumgebung verfügt über einen Satz vorab installierter Produktempfehlungsdemodaten, die in der Koma getrennten Datei „reco_demo_data.csv“ auf Retail Server gespeichert ist.
+Jede Einzelfeld-Typumgebung verfügt über einen Satz vorab installierter Produktempfehlungsdemodaten, die in der Koma getrennten Datei „reco_demo_data.csv“ in der Commerce-Skalierungseinheit gespeichert ist.
 
 Die Daten werden in den folgenden Spalten strukturiert.
 

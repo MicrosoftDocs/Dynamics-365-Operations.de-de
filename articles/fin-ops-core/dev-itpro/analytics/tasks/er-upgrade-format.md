@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 648b750b311f902555eba4536767788b64a1ea1e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 62047ef7bde137fbc4464a51d77a8a6efae94696
+ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184645"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026216"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
 
@@ -47,7 +47,10 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
     * Die Version des Formats mit dem Status "Fertig" wird von Proseware, Inc. für die Anpassung verwendet.  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Erstellen Sie eine neue Konfiguration für Ihr benutzerdefiniertes Format des elektronischen Dokuments
-    * Proseware, Incerhielt Version 1.1 der Konfiguration BACS (Großbritannien, fiktiv), die das anfängliche Format zum Generieren elektronischer Zahlungsdokumente von Litware, Inc. enthält. Proseware, Inc.möchte damit beginnen, dies als Standard für ihr Land zu verwenden, aber einige Anpassung ist erforderlich, um bestimmte regionale Anforderungen zu unterstützen. Proseware, Inc.möchte auch die Möglichkeit behalten, ein benutzerdefiniertes Format zu aktualisieren, sobald eine neue Version davon (mit Änderungen, um neue, länderspezifische Anforderungen zu unterstützen) von Litware, Inc. kommt  Um dies zu bewerkstelligen, muss Proseware, Inc. eine Konfiguration mit den Litware, Inc.- Konfiguration BACS (BRITISCHES als Basis erfundenes) erstellen.  
+Proseware, Incerhielt Version 1.1 der Konfiguration BACS (Großbritannien, fiktiv), die das anfängliche Format zum Generieren elektronischer Zahlungsdokumente von Litware, Inc. enthält. Proseware, Inc.möchte damit beginnen, dies als Standard für ihr Land zu verwenden, aber einige Anpassung ist erforderlich, um bestimmte regionale Anforderungen zu unterstützen. Proseware, Inc.möchte auch die Möglichkeit behalten, ein benutzerdefiniertes Format zu aktualisieren, sobald eine neue Version davon (mit Änderungen, um neue, länderspezifische Anforderungen zu unterstützen) von Litware, Inc. kommt  
+
+Um dies zu bewerkstelligen, muss Proseware, Inc. eine Konfiguration mit den Litware, Inc.- Konfiguration BACS (BRITISCHES als Basis erfundenes) erstellen.  
+
 1. Schließen Sie die Seite.
 2. Wählen Sie die Proseware, Inc. als Anbieter aus und machen Sie ihn aktiv.
 3. Klicken Sie auf "Als aktiv festlegen"
@@ -98,7 +101,7 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
 2. Schließen Sie die Seite.
 
 ## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>Ändern Sie den Status der aktuellen Version der benutzerdefinierten Formatkonfiguration
-    * Ändern Sie den Status der entworfenen Formatkonfiguration von „Entwurf” zu „Abgeschlossen”, um sie für die Generierung von Zahlungsdokumenten verfügbar zu machen.  
+Ändern Sie den Status der entworfenen Formatkonfiguration von „Entwurf” zu „Abgeschlossen”, um sie für die Generierung von Zahlungsdokumenten verfügbar zu machen.  
 1. Klicken Sie auf "Status ändern".
     * Beachten Sie, dass die aktuelle Version der ausgewählten Konfiguration im Status "Entwurf" ist.  
 2. Klicken Sie auf "Abgeschlossen".
@@ -108,11 +111,12 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
     * Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1.1.1 gespeichert wird. Das bedeutet, es ist Version 1 des benutzerdefinierten BACS-Formats (Großbritannien, fiktiv benutzerdefiniert), das auf Version 1 des BACS-Formats (Großbritannien, benutzerdefiniert) basiert, das auf Version 1 des Datenmodells "Zahlungen" (vereinfachtes Modell) beruht.  
 
 ## <a name="test-the-customized-format-to-generate-payment-files"></a>Testen Sie das benutzerdefinierte Format, um Zahlungsdateien zu generieren
-    * Schließen Sie die Schritte in der Prozedur „Erstelltes Format zum Generieren von elektronischen Dokumenten für Zahlungen verwenden” in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das Format BACS (Großbritannien, fiktiv benutzerdefiniert) in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt.  
+Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das Format BACS (Großbritannien, fiktiv benutzerdefiniert) in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualisieren Sie die vorhandene landesspezifische Konfiguration
-    * Litware, Inc muss die Konfiguration "BACS (Großbritannien, fiktiv)" aktualisieren und neue Länderanforderungen für die Verwaltung des Formats des elektronischen Dokuments verwenden. Später wird dies in einer neuen Version dieser Konfiguration eingeschlossen sein, die Dienstleistungsabonnenten angeboten wird, einschließlich Proseware, Inc..  
-    * In den realen Prozessen, die mit der Dienstleistungsbereitstellung verknüpft sind, kann jede neue Version von BACS (Großbritannien, fiktiv) von Litware, Inc. importiert werden. In dieser Prozedur simulieren wir dies, indem wir BACS (Großbritannien, fiktiv) im Auftrag eines Dienstanbieters aktualisieren.  
+Litware, Inc muss die Konfiguration "BACS (Großbritannien, fiktiv)" aktualisieren und neue Länderanforderungen für die Verwaltung des Formats des elektronischen Dokuments verwenden. Später wird dies in einer neuen Version dieser Konfiguration eingeschlossen sein, die Dienstleistungsabonnenten angeboten wird, einschließlich Proseware, Inc..  
+
+In den realen Prozessen, die mit der Dienstleistungsbereitstellung verknüpft sind, kann jede neue Version von BACS (Großbritannien, fiktiv) von Litware, Inc. importiert werden. In dieser Prozedur simulieren wir dies, indem wir BACS (Großbritannien, fiktiv) im Auftrag eines Dienstanbieters aktualisieren.  
 1. Schließen Sie die Seite.
 2. Anbieter Litware, Inc. wählen
 3. Klicken Sie auf "Als aktiv festlegen"
@@ -122,9 +126,12 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
     * Die Entwurfversion von Litware, Inc. Anbieter BACS (Großbritannien, fiktiv)" wird ausgewählt, um Änderungen einzuführen, um neue länderspezifische Anforderungen zu unterstützen.  
 
 ## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalisieren Sie das Basisformat des elektronischen Dokuments
-    * Gehen Sie davon aus, dass es neue länderspezifische Anforderungen gibt, die von Litware, Inc. unterstützt werden müssen: – Ein Wert für den SWIFT-Code der Bank des Kreditors in jeder Zahlungstransaktion.  - Eine Begrenzung auf 100 Zeichen für die Textlänge des Namens des Händlers in einer generierenden Datei.  
-    * Neue landesspezifische Anforderungen  
-    * Wählen Sie die Entwurfsversion der gewünschten Konfiguration aus, um erforderliche Änderungen einzuführen.  
+Angenommen, es gibt neue landesspezifische Anforderungen, die von Litware, Inc. unterstützt werden müssen:  
+
+- Ein Wert des SWIFT-Codes der Bank des Kreditors für jede Zahlungsbuchung.  - Eine Begrenzung auf 100 Zeichen für die Textlänge des Namens des Händlers in einer generierenden Datei.  
+- Neue landesspezifische Anforderungen  
+- Wählen Sie die Entwurfsversion der gewünschten Konfiguration aus, um erforderliche Änderungen einzuführen.
+
 1. Klicken Sie auf Designer.
 2. Klicken Sie „Erweitern/reduzieren”.
 3. Klicken Sie „Erweitern/reduzieren”.
@@ -155,7 +162,7 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
 2. Schließen Sie die Seite.
 
 ## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Ändern Sie den Status der aktuellen Version der Basisformatkonfiguration
-    * Ändern Sie den Status der aktualisierten Basisformatkonfiguration von "Entwurf" zu "Abgeschlossen", um sie für die Generierung von Zahlungsdokumenten und Updates der daraus abgeleiteten Formatkonfigurationen verfügbar zu machen.  
+Ändern Sie den Status der aktualisierten Basisformatkonfiguration von "Entwurf" zu "Abgeschlossen", um sie für die Generierung von Zahlungsdokumenten und Updates der daraus abgeleiteten Formatkonfigurationen verfügbar zu machen.  
 1. Klicken Sie auf "Status ändern".
     * Beachten Sie, dass die aktuelle Version der ausgewählten Konfiguration im Status "Entwurf" ist.  
 2. Klicken Sie auf "Abgeschlossen".
@@ -164,7 +171,10 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
 5. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Ändern Sie die Basisversion für die benutzerdefinierte Formatkonfiguration
-    * Proseware, Inc. ist darüber informiert, dass eine neue Version 1.2 der Konfiguration "BACS (Großbritannien, fiktiv)" verfügbar ist, um Dokumente für die elektronische Zahlung in Übereinstimmung mit vor kurzem angekündigten landesspezifischen Anforderungen zu generieren. Proseware, Inc. möchte damit beginnen, diese als Standard für das Land zu verwenden.  Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefinierte Konfiguration "BACS (Großbritannien, fiktiv)" ändern. Anstelle Version 1.1 von "BACS (Großbritannien, fiktiv)" verwenden Sie die neue Version 1.2.  
+Proseware, Inc. ist darüber informiert, dass eine neue Version 1.2 der Konfiguration "BACS (Großbritannien, fiktiv)" verfügbar ist, um Dokumente für die elektronische Zahlung in Übereinstimmung mit vor kurzem angekündigten landesspezifischen Anforderungen zu generieren. Proseware, Inc. möchte damit beginnen, diese als Standard für das Land zu verwenden.  
+
+Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefinierte Konfiguration "BACS (Großbritannien, fiktiv)" ändern. Anstelle Version 1.1 von "BACS (Großbritannien, fiktiv)" verwenden Sie die neue Version 1.2.  
+
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
 2. Wählen Sie die Proseware, Inc. aus. Anbieter, um sie als aktiv zu markieren.
 3. Klicken Sie auf "Als aktiv festlegen"
@@ -198,5 +208,5 @@ Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozedu
     * Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1.2.2 gespeichert wird: Version 2 des Basisformats "BACS (Großbritannien, fiktiv benutzerdefiniert)", das auf Version 2 des Basisformats "BACS (Großbritannien, fiktiv)" beruht, das auf Version 1 des Datenmodells "Zahlungen" (vereinfachtes Modell) beruht.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testen Sie das benutzerdefinierte Format zum Generieren von Zahlungsdateien
-    * Schließen Sie die Schritte in der Prozedur „Erstelltes Format zum Generieren von elektronischen Dokumenten für Zahlungen verwenden” in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format "BACS (Großbritannien, fiktiv benutzerdefiniert)" in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
+Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format "BACS (Großbritannien, fiktiv benutzerdefiniert)" in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
 

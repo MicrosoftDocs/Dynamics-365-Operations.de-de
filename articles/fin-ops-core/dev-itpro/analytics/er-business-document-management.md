@@ -3,7 +3,7 @@ title: Geschäftsdokumentverwaltung – Übersicht
 description: Dieses Thema enthält Informationen dazu, wie die Geschäftsdokumentverwaltungsfunktion des ER-Frameworks verwendet wird.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/09/2019
+ms.date: 01/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3aac66cc39d854cabdb3d29bde029d93683e2ef7
-ms.sourcegitcommit: 3a06d3b38d9de2afc22839e5a794829405068024
+ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
+ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2933907"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2957366"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -122,7 +122,7 @@ Gehen Sie folgendermaßen vor, um die Geschäftsdokument-Verwaltungsfunktionen f
 4. Aktualisieren Sie die Seite, um auf die neue Funktion zugreifen können.
 
 >[!NOTE]
-> Außerdem müssen Sie **Office-ähnliche UI-Erfahrung fürGeschäftsdokumentverwaltung** für die Verwendung einer neuen Geschäftsdokumentverwaltung-Schnittstelle aktivieren.
+> Weitere Informationen zur Verwendung der neuen Dokumentbenutzeroberfläche in der Geschäftsdokumentverwaltung finden Sie unter [Neue Benutzeroberfläche für Dokumente in der Geschäftsdokumentenverwaltung](er-business-document-management-new-template-ui.md).
 
 ![Arbeitsbereich für die Funktionsverwaltung](./media/BDM-Overview-FMEnabling.png)
 
@@ -147,7 +147,7 @@ Informationen dazu, wie Sie die erforderlichen Dokumentverwaltungsparameter und 
 
 ![Dokumenttyp für die Dokumentverwaltung einrichten](./media/BDM-Overview-DMSetting.png)
 
-### <a name="set-up-parameters"></a>Einrichten von Parametern
+### <a name="SetupBdmParameters">Einrichten von Parametern</a>
 
 Die grundlegenden Geschäftsdokument-Verwaltungsparameter können auf der Seite **Geschäftsdokumentparameter** eingerichtet werden. Nur bestimmte Benutzer können auf die Seite zugreifen. Hierzu sind die folgenden Schritte erforderlich:
 
@@ -166,6 +166,9 @@ Gehen Sie folgendermaßen vor, um die grundlegenden Parameter für alle juristis
 ![Einrichten von Geschäftsdokument-Verwaltungsparametern](./media/BDM-Overview-BDMSetting.png)
 
 Der ausgewählte Dokumenttyp ist firmenspezifisch und wird verwendet, wenn der Benutzer mit Geschäftsdokumentverwaltung im Unternehmen arbeitet, für das der ausgewählte Dokumenttyp konfiguriert ist. Wenn der Benutzer mit Geschäftsdokumentverwaltung in einem anderen Unternehmen arbeitet, wird der gleiche ausgewählte Dokumenttyp verwendet, sofern keiner für dieses Unternehmen konfiguriert ist. Wenn ein Dokumenttyp konfiguriert wurde, wird dieser anstelle von dem im Feld **SharePoint-Dokumenttyp** ausgewählten verwendet.
+
+> [!NOTE]
+> Der **SharePoint-Dokumenttyp**-Parameter definiert einen SharePoint-Ordner als temporäreren Speicher für Vorlagen, die mit Microsoft Excel oder Word bearbeitet werden können. Sie müssen diesen Parameter einrichten, wenn Sie diese Office-Desktopanwendungen zum Bearbeiten von Vorlagen verwenden möchten. Weitere Informationen finden Sie unter [Bearbeiten einer Vorlage in der Office-Desktop-Anwendung](#EditInOfficeDesktopApp). Sie können diesen Parameter leer lassen, wenn Sie die Vorlage nur mit den Funktionen von Office 365 ändern möchten. Weitere Informationen finden Sie unter [Bearbeiten einer Vorlage in Office 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurieren der Zugriffsberechtigungen
 
@@ -258,23 +261,18 @@ Die Option **Vorlage bearbeiten** ist für die ausgewählte Vorlage verfügbar. 
 
 ### <a name="initiate-editing-templates-owned-by-other-providers"></a>Starten der Bearbeitung von Vorlagen im Besitz anderer Anbieter
 
-1. Wählen Sie im Arbeitsbereich Geschäftsdokumentverwaltung die Option **Neues Dokument**.
+1. Wählen Sie im Arbeitsbereich für die Geschäftsdokumentverwaltung das Dokument aus, das Sie als Vorlage verwenden möchten.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template1.png)
+![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate3.png)
 
-2. Wählen Sie das Dokument aus, das Sie als Vorlage verwenden möchten.
+3. Wählen Sie **Neues Dokument** aus und ändern Sie im Feld **Titel** bei Bedarf den Titel der bearbeitbaren Vorlage. Der Text wird zum Benennen der ER-Formatkonfiguration verwendet, die automatisch erstellt wird. Beachten Sie, dass die Entwurfsversion dieser Konfiguration (**Debitoren-FTR-Bericht (GER) – Kopie**), die die bearbeitete Vorlage enthält, automatisch markiert wird, um dieses ER-Format für den aktuellen Benutzer auszuführen. Gleichzeitig wird die ursprüngliche nicht-geänderte Vorlage von der Basis-ER-Formatkonfiguration verwendet, um dieses ER-Format für einen anderen Benutzer auszuführen.
+4. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
+5. Ändern Sie im Feld **Kommentar** den Kommentar für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
+6. Wählen Sie **OK**, um den Start des Bearbeitungsprozesses zu bestätigen.
 
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template2.png)
+![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate4.png)
 
-3. Klicken Sie auf **Dokument erstellen**.
-4. Im Feld **Titel** ändern Sie den Titel der bearbeitbaren Vorlage nach Bedarf. Der Text wird zum Benennen der ER-Formatkonfiguration verwendet, die automatisch erstellt wird. Beachten Sie, dass die Entwurfsversion dieser Konfiguration (**Debitoren-FTR-Bericht (GER) – Kopie**), die die bearbeitete Vorlage enthält, automatisch markiert wird, um dieses ER-Format für den aktuellen Benutzer auszuführen. Gleichzeitig wird die ursprüngliche nicht-geänderte Vorlage von der Basis-ER-Formatkonfiguration verwendet, um dieses ER-Format für einen anderen Benutzer auszuführen.
-5. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
-6. Ändern Sie im Feld **Kommentar** die Anmerkung für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
-7. Wählen Sie **OK**, um den Start des Bearbeitungsprozesses zu bestätigen.
-
-![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template3.png)
-
-Die Option **Neues Dokument** ist immer für eine Vorlage in einer ER-Formatkonfiguration eines anderen Anbieters (in diesem Beispiel Microsoft) verfügbar. Wenn Sie auf **Neues Dokument** klicken, sehen Sie alle Vorlagen, die sich im Besitz aktueller und anderer Anbieter befinden. Nachdem Sie die Vorlage ausgewählt haben, wird sie zur Bearbeitung geöffnet. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
+Die Option **Neues Dokument** ist immer für eine Vorlage in einer ER-Formatkonfiguration verfügbar, die von einem aktuellen oder anderen Anbieter (in diesem Beispiel Microsoft) angeboten wird. Die bearbeitete Vorlage wird dann in einer neuen ER-Formatkonfiguration gespeichert, die automatisch generiert wird.
 
 ### <a name="start-editing-a-template"></a>Mit der Bearbeitung einer Vorlage beginnen
 
@@ -282,7 +280,7 @@ Die Option **Neues Dokument** ist immer für eine Vorlage in einer ER-Formatkonf
 2. Ändern Sie im Feld **Name** den Namen der ersten Überarbeitung der bearbeitbaren Vorlage, die automatisch erstellt wird.
 3. Ändern Sie im Feld **Kommentar** die Anmerkung für die automatisch erstellte Überarbeitung der bearbeitbaren Vorlage.
 
-    ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM_overview_new_template4.png)
+    ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate5.png)
 
 5. Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
@@ -290,13 +288,16 @@ Die Seite **BDM-Vorlagen-Editor** wird geöffnet. Die ausgewählte Vorlage ist f
 
 ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="edit-a-template-in-office-365"></a>Eine Vorlage bearbeiten in Office 365
+### <a name="EditInOffice365">Bearbeiten einer Vorlage in Office 365</a>
 
-Ändern Sie die Vorlage, indem die Funktionen von Office 365 verwenden. Beispielsweise erfolgt in Office Online durch das Ändern der Schriftart des Feldes die Aufforderung im Vorlagenkopf von **Regulär** zu **Fett**. Diese Änderungen werden automatisch für die bearbeitbare Vorlage gespeichert, die im Speicher der primären Vorlage gespeichert ist (standardmäßig dem Azure BLOB-Speicher), der für das ER-Framework konfiguriert ist.
+Sie können die Vorlage mit Office 365 ändern. Beispielsweise erfolgt in Office Online durch das Ändern der Schriftart des Feldes die Aufforderung im Vorlagenkopf von **Regulär** zu **Fett**. Diese Änderungen werden automatisch in der bearbeitbaren Vorlage gespeichert, die im Speicher der primären Vorlage gespeichert ist (standardmäßig ist das der Azure BLOB-Speicher). Dies ist für das ER-Framework konfiguriert.
 
 ![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="edit-a-template-in-the-office-desktop-application"></a>Bearbeiten einer Vorlage in der Office-Desktop-Anwendung
+### <a name="EditInOfficeDesktopApp">Bearbeiten einer Vorlage in der Office-Desktop-Anwendung</a>
+
+> [!NOTE]
+> Diese Funktion ist nur verfügbar, wenn der **SharePoint-Dokumenttyp**-Parameter richtig konfiguriert ist. Weitere Informationen finden Sie unter [Konfigurieren von Parametern](#SetupBdmParameters).
 
 1. Wählen Sie die Option **In der Desktop-App öffnen** aus, um die Vorlage zu ändern, indem Sie die Funktion der Office-Desktop-Anwendung verwenden (Excel in diesem Beispiel). Die bearbeitbare Vorlage wird aus dem Festspeicher in den temporären Speicher kopiert, der in den Geschäftsdokument-Verwaltungsparametern als SharePoint-Ordner konfiguriert wird.
 2. Bestätigen Sie, dass die Vorlage aus dem temporären Dateispeicher in der Office-Desktop-Excel-Anwendung geöffnet werden soll.
@@ -386,7 +387,7 @@ Wenn Sie die Vorlage von einem ER-Format bearbeiten, das dem aktuellen aktiven A
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Ich habe **Dokument bearbeiten** ausgewählt, aber anstatt die Seite **BDM Vorlageneditor** in Finance and Operations zu öffnen, wurde ich auf die Webseite Office 365 geschickt.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Ich habe **Dokument bearbeiten** ausgewählt, aber anstatt die Seite **BDM-Vorlageneditor** in Finance and Operations zu öffnen, wurde ich auf die Office 365-Webseite geleitet.
 Dies ist ein bekanntes Problem bei der Office 365-Umleitung. Dies passiert, wenn Sie sich zum ersten Mal bei Office 365 anmelden. Um dieses Problem zu umgehen, wählen Sie die Schaltfläche **Zurück** Ihres Browsers aus, um zurück zu navigieren.
 
 #### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ich weiß, wie ich eine Vorlage bearbeite, indem ich Office 365 in der ersten Anwendungssitzung verwende, und wie ich die Vorlage in der zweiten Anwendungssitzung verwende, indem ich die Vorlage anpasse, um zu untersuchen, inwiefern sich meine Änderungen das generierte Geschäftsdokument auswirken. Ist dies mithilfe der Office-Desktop-Anwendung möglich?
@@ -411,3 +412,4 @@ Höchstwahrscheinlich haben Sie sich bei der aktuellen Instanz der App der Azure
 [Einbetten von Bildern und Formen in generierten Dokumenten mithilfe von ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurieren Sie die elektronische Berichterstattung (ER), um Daten in Power BI zu ziehen.](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+

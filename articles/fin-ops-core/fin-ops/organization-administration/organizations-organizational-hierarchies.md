@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c28c9e8c2573bcd82434f88daa8f9cadc946209
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: fc9064f0386fe7c0f4093fc30587be4baa259eb0
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812385"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003678"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Übersicht über Unternehmen und Organisationshierarchien
 
@@ -47,7 +47,7 @@ Ein Unternehmen ist eine Art von juristischer Person. Derzeit sind Unternehmen d
 
 Eine Organisationseinheit ist eine Organisation, die dazu dient, die Kontrolle über wirtschaftliche Ressourcen und Betriebsprozesse in einem Unternehmen aufzuteilen. Die Personen in einer Organisationseinheit sind verpflichtet, die Nutzung knapper Ressourcen zu maximieren, die Prozesse zu verbessern und Rechenschaft über ihre Leistung abzulegen.
 
-Die Arten von Unternehmenseinheiten umfassen Kostenstellen, Organisationseinheiten, Wertströme, Abteilungen und Vertriebswege. Die folgende Tabelle enthält weitere Informationen zu jedem Organisationseinheitstyp.
+Die Arten von Unternehmenseinheiten umfassen Kostenstellen, Organisationseinheiten, Wertströme, Abteilungen und Commerce-Kanäle. Die folgende Tabelle enthält weitere Informationen zu jedem Organisationseinheitstyp.
 
 | Organisationseinheitstyp | Beschreibung | Zweck |
 |---------------------|-------------|---------|
@@ -55,7 +55,7 @@ Die Arten von Unternehmenseinheiten umfassen Kostenstellen, Organisationseinheit
 | Unternehmenseinheit       | Eine halbautomatische Organisationseinheit, die zum Erreichen strategischer Unternehmensziele erstellt wird. | Dient zur Finanzberichterstattung, die auf Branchen oder Produktlinien basiert, die die Organisation unabhängig von juristischen Personen bedient. |
 | Wertstrom        | Eine Organisationseinheit, die mindestens einen Produktionsfluss steuert. | Wird häufig im Lean Manufacturing zum Steuern der Aktivitäten und Ströme verwendet, die erforderlich sind, um Konsumenten Produkte zu liefern oder Dienstleistungen bereitzustellen. |
 | Abteilung          | Eine Organisationseinheit, die eine Kategorie oder einen funktionalen Teil einer Organisation darstellt und eine bestimmte Aufgabe erfüllt, beispielsweise Vertrieb oder Buchhaltung. | Dient zur Berichterstattung für Funktionsbereiche. Eine Abteilung kann für Gewinn und Verlust verantwortlich sein und aus einer Gruppe von Kostenstellen bestehen. |
-| Vertriebsweg      | Eine Organisationseinheit stellt einen physischen Laden, einen Onlineshop oder einen Onlinemarktplatz dar. | Dient zur Verwaltung und operativen Kontrolle einer oder mehreren Filialen innerhalb der juristischen Person oder mehrere übergreifend. |
+| Commerce-Kanal      | Eine Organisationseinheit stellt einen physischen Laden, einen Onlineshop oder einen Onlinemarktplatz dar. | Dient zur Verwaltung und operativen Kontrolle einer oder mehreren Filialen innerhalb der juristischen Person oder mehrere übergreifend. |
 
 ### <a name="teams"></a>Teams
 

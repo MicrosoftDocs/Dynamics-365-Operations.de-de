@@ -19,16 +19,15 @@ ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb369e6d1356ba13a2310d523b671ac57b9642bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e249c7d450510a3a9a33158e9e1c33f832a1f91c
+ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770046"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3024978"
 ---
 # <a name="product-recommendations-overview"></a>Überblick über Produktempfehlungen
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Microsoft Dynamics 365 Commerce kann verwendet werden, um Produktempfehlungen auf der E-Commerce-Website und dem POS-Gerät (Point of Sale) anzuzeigen. Produktempfehlungen sind Artikel, an denen ein Kunde interessiert sein könnte. Die Empfehlungen basieren auf den Kauftrends anderer Kunden in Online- und physischen Filialen.
@@ -45,6 +44,7 @@ Produktempfehlungen sind für die folgenden Szenarien verfügbar:
 - **Auf jeder Filialseite zum Durchsuchen oder jeder Landingpage im E-Commerce:** Wenn Kunden oder Geschäftspartner eine Filialseite besuchen, kann die Empfehlungs-Engine Produkte in den Listen **Neu**, **Bestseller** und **Populär** vorschlagen.
 - **Auf jeder Produktdetailseite:** Wenn Kunden oder Filialmitarbeiter die Seite **Produktdetails** aufrufen, schlägt die Empfehlungs-Engine zusätzliche Artikel vor, die wahrscheinlich auch gekauft werden. Diese Artikel werden in der Liste **Personen gefällt auch** angezeigt.
 - **Auf der Transaktionsseite oder der Auscheckseite:** Die Empfehlungs-Engine schlägt Artikel basierend auf der gesamten Liste der Artikel im Warenkorb vor. Diese Artikel werden in der Liste **Wird häufig zusammen gekauft** angezeigt.
+- **Personalisierte Empfehlungen:** Verkaufsberater können angemeldeten Kunden neben neuen Funktionen die personalisierte Liste **Entnahmen für Sie** bieten, mit der vorhandene Listenszenarien basierend auf dem Kunden personalisiert werden können. Weitere Informationen finden Sie in der Funktionsdokumentation: [Personalisierte Produktempfehlungen aktivieren.](personalized-recommendations.md)
 
 ## <a name="recommendation-service"></a>Empfehlungsdienstleistung
 
@@ -56,6 +56,10 @@ Produktempfehlungen verwenden die Recommendations-Technologien für maschinelles
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
+
+[Personalisierte Produktempfehlungen aktivieren](personalized-recommendations.md)
+
+[Übersicht über Produktsammelmodule](product-collection-module-overview.md)
 
 [Erstellen von kuratierten Produktempfehlungslisten](create-editorial-recommendation-lists.md)
 

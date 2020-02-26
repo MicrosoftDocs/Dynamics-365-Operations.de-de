@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9c0f329d21cdda5c36a39a8c602d5925b720f52
-ms.sourcegitcommit: ef3a1d7527311d00b69a1072ae5eb021ce68034c
+ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2945742"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3003072"
 ---
 # <a name="enrich-a-product-page"></a>Erweitern einer Produktseite
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie eine Produktseite in Microsoft Dynamics 365 Commerce ergänzt wird.
 
 ## <a name="overview"></a>Übersicht
 
-Standardmäßig verwendet Ihr Standort eine generische Seite, um Produktdaten anzuzeigen. Diese Seite enthält die grundlegenden Informationen zu Produktpreisen und Steuerelementen, die erforderlich sind, um es zu verkaufen. Sie können jedoch die Informationen ergänzen, die über Retail Server kommen mit zusätzlichem Text oder Bildern für ein bestimmtes Produkt. Dieser Vorgang wird als Anreicherung der Produktseite bezeichnet.
+Standardmäßig verwendet Ihr Standort eine generische Seite, um Produktdaten anzuzeigen. Diese Seite enthält die grundlegenden Informationen zu Produktpreisen und Steuerelementen, die erforderlich sind, um es zu verkaufen. Sie können jedoch die Informationen, die über die Commerce-Skalierungseinheit kommen, durch zusätzliche Bilder oder Texte für ein bestimmtes Produkt ergänzen. Dieser Vorgang wird als Anreicherung der Produktseite bezeichnet.
 
-In vielen Fällen möchten Sie bestimmten zusätzlichen Inhalt für Ihre Produkte verwenden. Wenn Sie zu **Einzelhandel** gehen im Erstellungstool sehen Sie eine Liste von Produkten vom Kanal, der dem Standort zugeordnet ist. In dieser Liste zeigen die Spalten **Angereichert** an, ob die Produktseite für ein Produkt angereichert wurde. Wenn ein Häkchen in der Spalte angezeigt wird, liegt eine angereicherte Produktseite für das Produkt vor. Wenn kein Häkchen angezeigt wird, werden die Standardproduktseite und -Inhalt für das Produkt verwendet. Sie können in der Vorschau angereicherte und nicht angereicherte Produktseiten anzeigen, wenn ein Produktname in der Liste ausgewählt ist.
+In vielen Fällen möchten Sie bestimmten zusätzlichen Inhalt für Ihre Produkte verwenden. Wenn Sie zu **Retail und Commerce** im Erstellungstool wechseln, sehen Sie eine Liste von Produkten von dem Kanal, der der Site zugeordnet ist. In dieser Liste zeigen die Spalten **Angereichert** an, ob die Produktseite für ein Produkt angereichert wurde. Wenn ein Häkchen in der Spalte angezeigt wird, liegt eine angereicherte Produktseite für das Produkt vor. Wenn kein Häkchen angezeigt wird, werden die Standardproduktseite und -Inhalt für das Produkt verwendet. Sie können in der Vorschau angereicherte und nicht angereicherte Produktseiten anzeigen, wenn ein Produktname in der Liste ausgewählt ist.
 
 ## <a name="enrich-a-product-page"></a>Erweitern einer Produktseite
 

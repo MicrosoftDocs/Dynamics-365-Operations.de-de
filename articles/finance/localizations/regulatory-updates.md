@@ -3,7 +3,7 @@ title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen rechtlichen Updates für Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 01/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: dc919d232f0e4f0cfbab372b9fdded2657906a1d
-ms.sourcegitcommit: 4d77d06a07ec9e7a3fcbd508afdffaa406fd3dd8
+ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
+ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934676"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "3000000"
 ---
 # <a name="regulatory-updates"></a>Updates zu rechtlichen Bestimmungen
 
@@ -40,44 +40,41 @@ Updates zu rechtlichen Bestimmungen, die als Teil der monatlichen Updates freige
 
 Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgenden Tabelle.   
 
-|Geplantes Freigabedatum|Version freigeben|Land|Regulatorisches Update|
+|Land|Geplantes Freigabedatum|Version freigeben|Regulatorisches Update|
 |--------------------|---------------|-------|-------|
-|      Brasilien        |   2019. Dezember       | 10.0.8      |   Sped Fiscal Layout 014 |
-|      Brasilien         |   November–August 2019       | 10.0.7, 10.0.6HF, 10.0.5HF, 10.0.4HF      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.20    |
-|      Brasilien          |   November–August 2019       | 10.0.7, 10.0.6      |   DRCST-Meldung SC   |
-|      Brasilien         |   August 2019       | 10.0.6HF, 10.0.5HF, 10.0.4HF      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.10    |
-|      Brasilien          |   August 2019      | 10.0.6HF, 10.0.5HF, 10.0.4HF     |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.10    |
-|      Brasilien          |   August 2019      | 10.0.6, 10.0.5HF     |   Neue Gesetzgebung wird vom RJ-Status in Bezug auf EFD-ICMS/IPI implementiert. Die Implementierung der Resolution 13/19 aus Rio de Janeiro (RJ) dient „speziellen Verfahren zur Entlastung     |
-|      Brasilien          |   August 2019      | 10.0.6        |   Steuerauszug CAT 42/18    |
-|      Brasilien          |   Juli 2019     | 10.0.5, 10.0.4HF, 10.0.2HF      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.00  |
-|      Brasilien          |   Juli 2019     | 10.0.5      |   Sped Beiträge praktische Anleitung 1.31. neuer Leitfaden    |
-|      Brasilien          |   Mai 20191     | 10.0.4      |   Eingehendes Steuerdokument 66    |
-|      Brasilien          |   Mai 2019      | 10.0.4      |   NF-e-Verordnung 54.308/18 – RS    |
-|      Brasilien          |   Mai 2019      | 10.0.4      |   NF-e und NFC-e - Lösung 13/2019 und Verordnung SUCIEF 55/2019- - RJ neue Bedingungen für ausgenommen Tags-Ausgaben in NF-e    |
-|      Indien          |   August 2019     | 10.0.6       |   Einzelhandel: Verwaltung der Kundenregistrierungsnummern von POS für Indien    |
-|      Indien          |   Mai 2019     | 10.0.4      |   Anzeige des Ortes der Lieferung und des Bundeslandes in der GST-Steuer-Rechnung    |
-|      Italien          |   2019. Dezember       | 10.0.8      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 vom 23. Oktober 2018: Bericht zur jährlichen Steuermitteilung |
-|      Italien         |   November 2019       | 10.0.7      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 ab dem 23. Oktober 2019: Vierteljährliche MwSt.-Mitteilung („Lipe 2018“)    |
-|      Italien         |   November 2019     | 10.0.7      |   Retail – Verwalten von Debitoreninformationen in POS |
-|      Italien         |   November 2019      | 10.0.7      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
-|      Italien         |   November–August 2019     | 10.0.7, 10.0.6      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 ab dem 23. Oktober 2018 – Dynamics 365 for Finance and Operations  |
-|      Italien          |   August 2019      | 10.0.6      |   Datum des MwSt.-Registers    |
-|      Italien          |   August 2019     | 10.0.6      |   MwSt.-Verwaltung bis zum Datum des Umsatzsteuerregisters    |
-|      Japan          |   Dezember – November 2019     | 10.0.8, 10.0.7HF       |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer (Verbrauchssteuersatzbericht) |
-|      Japan         |   November 2019      | 10.0.7       |   Einführung der Änderung der Verbrauchsrate und der ermäßigten Steuer (Rechnungslayouts) |
-|      Japan          |   November 2019     | 10.0.6HF     |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer (Verbrauchssteuersatzbericht)  |
-|      Japan          |   August 2019      | 10.0.6, 10.0.5HF, 10.0.4HF, 10.0.3HF      |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer    |
-|      Mexiko          |   December – Oktober 2019    | 10.0.8, 10.0.7HF, 10.0.6HF        |   Einzelhandel – CFDI Global: Sonstiges Resol 2019 – c_CodigoPostal und Zeitzone |
-|     Mexiko          |   November – September 2019       | 10.0.7, 10.0.6HF      |   Aktualisierung von Regel 2.7.2.9 – Mithilfe der Zeitzone der Postleitzahl der Einrichtung, die das CFDI-Dokument ausstellt |
-|      Mexiko           |   December – Oktober 2019      | 10.0.8, 10.0.7HF, 10.0.6HF     |   Code-Validierung im Produkt- und Dienstleistungskatalog |
-|      Mexiko         |   Juli 2019     | 10.0.5      |   MX – CFDI 3.3 – Die Details der IEPS-Steuertransaktionen in XML sollten je nach Kundenprofil optional sein.    |
-|      Mexiko          |   Mai 2019     | 10.0.4      |   DIOT-Drittanbietermeldung - Änderungen im Layout 2019    |
-|      Polen          |   November – Oktober 2019     | 10.0.7, 10.0.6HF Polen     |   Teilzahlung ist erforderlich - 10.0.7. |
-|      Singapur           |   2019. Dezember     | 10.0.7      |   GST-Bericht zur Rücklieferung |
-|      Spanien          |   August-Juli 2019      | 10.0.5, 10.0.4HF      |   Spanien: SII: Validierungsregeln ändern sich ab dem 1. Oktober 2019    |
-|      Vereinigtes Königreich          |   2019. Dezember       | 10.0.8      |   Making Tax Digital (MTD) – Zustimmung des Systemadministrators zur Übermittlung von Informationen außerhalb von D365 unter Verwendung der Integration mit HMRC |
-|      Vereinigtes Königreich          |   November 2019     | 10.0.7     |   Digitale Steuer – Berichtserstellung zu Mehrwertsteuerrückerstattung für die Unternehmen, die als MwSt-Gruppe innerhalb der gleichen Systemdatenbank v.10 melden |
-|      Vereinigtes Königreich          |   Juni-Juli 2019      | 10.0.5     |   Digitale Steuer - Parameter zur Betrugsprävention über das Ursprungsgerät – 10.0.5    |
+|      Brasilien         |   2020. März       | 10.0.9      |   Sped Fiscal – Änderungen im Datensatz D100, Feld COD_MUN_ORI    |
+|      Brasilien         |   März 2020 – Dezember 2019       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – Verordnung SEF Nr. 254/19    |
+|      Brasilien         |   Januar 2020 – Dezember 2019       | 10.0.8, 10.0.7HF      |   Ergänzende Informationen von ICMS-ST    |
+|      Brasilien        |   März 2020 – Dezember 2019       | 10.0.9, 10.0.8HF, 10.0.7HF      |   Sped Fiscal Layout 014 |
+|      Brasilien         |   2019. Dezember       | 10.0.7      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.20    |
+|      Brasilien         |   2019. Dezember       | 10.0.7      |   DRCST-Meldung SC    |
+|      Brasilien          |   März 2020 – Januar 2020       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – Verordnung SEF Nr. 343DR   |
+|      Frankreich          |   2020. März       | 10.0.9      |   Französische Lokalisierung: ISO 20022-Format für internationale Zahlungen und Finanztransfers   |
+|      Indien          |   2020. März       | 10.0.9      |   Neues GSTR (ANX-1 und ANX-2) Rückgabe Offlinetool   |
+|      Italien          |   2020. Januar       | 10.0.8      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 vom 23. Oktober 2018: Bericht zur jährlichen Steuermitteilung |
+|      Italien         |   2019. Dezember       | 10.0.7      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 ab dem 23. Oktober 2019: Vierteljährliche MwSt.-Mitteilung („Lipe 2018“)    |
+|      Italien         |   März 2020 – Dezember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Verwalten von Debitoreninformationen in POS |
+|      Italien         |   März 2020 – Dezember 2019      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
+|      Italien         |   2019. Dezember     | 10.0.7      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 von 23. Okt. 2018: Rechnungskommunikation  |
+|      Japan          |   März 2020 – Dezember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF     |   Japan Bankers Association ersetzt JBA-Zahlungsformate mit fester Länge durch ISO20022 |
+|      Japan          |   Januar 2020 – Dezember 2019     | 10.0.8, 10.0.7HF       |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer (Verbrauchssteuersatzbericht) |
+|      Japan         |   2019. Dezember      | 10.0.7       |   Einführung der Änderung der Verbrauchsrate und der ermäßigten Steuer (Rechnungslayouts) |
+|      Mexiko          |   Januar 2020 – Dezember 2019    | 10.0.8, 10.0.7HF        |   Einzelhandel – CFDI Global: Sonstiges Resol 2019 – c_CodigoPostal und Zeitzone |
+|     Mexiko          |   2019. Dezember       | 10.0.7      |   Aktualisierung von Regel 2.7.2.9 – Mithilfe der Zeitzone der Postleitzahl der Einrichtung, die das CFDI-Dokument ausstellt |
+|      Mexiko           |   Januar 2020 – Dezember 2019      | 10.0.8, 10.0.7HF     |   Code-Validierung im Produkt- und Dienstleistungskatalog |
+|      Norwegen          |   März 2020 – Dezember 2019   | 10.0.9, 10.0.8HF, 10.7.7HF     |   SAF-T XSD Update auf Version 1.1 für Dynamics 365 for Finance and Operations |
+|      Polen          |   2020. März    | 10.0.9     |   Vorsteuerregister und SAF-MwSt.-Register: Zollagentur aus SAD-Dokumenten muss durch Drittnamen und Steuerbefreiungsnummer ersetzt werden |
+|      Polen          |   März 2020 – Januar 2020   | 10.0.9, 10.0.8HF     |   Retail – Verwalten von Debitoreninformationen in POS |
+|      Polen          |   März 2020 – Januar 2020     | 10.0.9, 10.0.8HF     |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
+|      Polen          |   März 2020 – Dezember 2019     | 10.0.9, 10.0.8, 10.0.7     |   SAF-Rechnungen (JPK_FA) v.3 ab 2. Dez. 2019 |
+|      Polen          |   März 2020 – Januar 2019     | 10.0.9, 10.0.8     |   JPK_VDEK ersetzt JPK_VAT (SAF VAT) |
+|      Polen          |   2019. Dezember     | 10.0.7     |   Teilzahlung ist erforderlich |
+|      Russische Föderation          |   2020. März     | 10.0.9     |   Format der Eigenschaft Steuererklärung Berichterstellung 2019 |
+|      Russische Föderation          |   2020. März     | 10.0.9     |   Formataktualisierungen der Ertragssteuererklärung |
+|      Singapur           |   Januar 2020 – Dezember 2019     | 10.0.8, 10.0.7HF      |   GST-Bericht zur Rücklieferung |
+|      Schweiz           |   2020. März     | 10.0.9      |   Schweizer Zahlungsbeleg ISR erhält neues Format (QR-Code) |
+|      Vereinigtes Königreich          |   2020. Januar       | 10.0.8      |   Making Tax Digital (MTD) – Zustimmung des Systemadministrators zur Übermittlung von Informationen außerhalb von D365 unter Verwendung der Integration mit HMRC |
+|      Vereinigtes Königreich          |   2019. Dezember     | 10.0.7     |   Digitale Steuer – Berichtserstellung zu Mehrwertsteuerrückerstattung für die Unternehmen, die als MwSt-Gruppe innerhalb der gleichen Systemdatenbank v.10 melden |
 
 
 

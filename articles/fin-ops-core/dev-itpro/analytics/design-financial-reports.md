@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc68289514dc3b201b423091c92fa128d3065707
-ms.sourcegitcommit: 7bec89b33a56447072d01066af4da473b8092ca8
+ms.openlocfilehash: 079439d95597056919d5a8c73b829d79a3b02211
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "2536800"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002542"
 ---
 # <a name="view-and-design-financial-reports"></a>Finanzberichte entwerfen und verwalten
 
@@ -172,7 +172,7 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 3. Erstellen Sie eine neue Spaltendefinition, indem Sie auf **Datei** anschließend auf **Neu** und dann auf **Spaltendefinition** klicken.
 4. Wählen Sie in **Spalte A** **DESC** als Spaltentyp aus.
 5. Wählen Sie in **Spalte B** **FD** als Spaltentyp aus.
-6. Doppelklick Sie im Feld **Dimensionsfilter**.
+6. Doppelklicken Sie auf das Feld **Dimensionsfilter**.
 7. Doppelklicken Sie im Fenster **Dimension** auf die Spalte **Abteilung**.
 8. Klicken Sie im Bereich "Einzel" oder "Bereich" des Dialogfelds, auf die Schaltfläche mit **...**, damit das Feld **Von** eine Liste der Abteilungen anzeigt.
 9. Wählen Sie Abteilung **022**, **Vertrieb und Marketing** aus, und klicken Sie dann auf **OK**.
@@ -197,4 +197,4 @@ In dieser Übung erstellen Sie einen neuen Bericht. Der Bericht ist eine paralle
 
 [Finanzberichte anzeigen](../../../finance/general-ledger/view-financial-reports.md)
 
-[Dynamics Financial Reporting-Blog](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics Financial Reporting-Blog](https://blogs.msdn.com/b/dynamics_financial_reporting/)

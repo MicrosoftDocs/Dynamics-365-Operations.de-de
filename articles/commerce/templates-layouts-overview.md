@@ -17,16 +17,16 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4ddae5b77c36151a279a463033079099722d166e
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d805c39b77d653eaa9935751ae89012c98b930d2
+ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914840"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3002681"
 ---
 # <a name="templates-and-layouts-overview"></a>Übersicht über Vorlagen und Layouts
 
-[!include [banner](includes/preview-banner.md)]
+
 [!include [banner](includes/banner.md)]
 
 Vorlagen sind ein grundlegendes Element des Microsoft Dynamics 365 Commerce-Seitenmodells. Wenn Sie die Effizienz und Konsistenz Ihrer Workflows für das Erstellen von Websites maximieren möchten, ist es wichtig, dass Sie lernen, wie Sie die Vorteile von Vorlagen für Ihre Website nutzen. Frühzeitige Entscheidungen über die Vorlagenstruktur sind wichtig und können die Kosten und Flexibilität für tägliche, saisonale und standortweite Markenaktualisierungen erheblich beeinträchtigen. Gut strukturierte Vorlagen bieten noch weitere Vorteile. Sie tragen beispielsweise dazu bei, die SEO-Werte (Suchmaschinenoptimierung) für die gesamte Website zu verbessern und die Anzahl der Fehler zu minimieren.
