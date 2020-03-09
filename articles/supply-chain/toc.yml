@@ -68,6 +68,8 @@
                   items:
                     - name: Neuigkeiten oder Änderungen in Supply Chain Management – Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management Version 10.0.9 (April 2020)
+                      href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management Version 10.0.8 (Februar 2020)
                       href: get-started/whats-new-scm-10-0-8.md
                     - name: Supply Chain Management Version 10.0.7 (Januar 2020)
@@ -146,6 +148,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Gespeicherte Ansichten
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Rasterfunktionen
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: PowerApps-Apps einbetten
@@ -527,6 +531,8 @@
                   href: cost-management/costing-sheets.md
                 - name: Simulieren von Kostenänderungen mithilfe einer Nachkalkulationsversion für geplante Kosten
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
+                - name: Lagerungsbericht mit Artikelpreisvergleich
+                  href: cost-management/compare-item-price.md
             - name: Bestandsbuchhaltung
               items:
                 - name: Kostenobjekte
@@ -673,6 +679,8 @@
               items:
                 - name: Dokumenterstellungsservices – Übersicht
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Unterstützte Schriftarten
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurieren von SSRS für On-Premises-Bereitstellungen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Drucken
@@ -1055,15 +1063,17 @@
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
         - name: Produktprogrammplanung
           items:
-            - name: Hauptplanung – Startseite
+            - name: Produktprogrammplanung – Startseite
               href: master-planning/master-planning-home-page.md
             - name: Planungsoptimierung
               items:
                 - name: Übersicht zur Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-overview.md
+                - name: Negativer Lagerbestand wird als Lagerbestand Null behandelt
+                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Erste Schritte mit der Planungsoptimierung
                   href: master-planning/planning-optimization/get-started.md
-                - name: Passanalalyse zu Planungsoptimierung
+                - name: Passanalyse zu Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Anwenden von Filtern auf einen Plan
                   href: master-planning/planning-optimization/plan-filters.md
@@ -1203,7 +1213,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Öffnen von Entitätsdaten in Excel und Aktualisieren mithilfe des Excel-Add-Ins
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: „In Excel öffnen”-Erfahrungen verschaffen
+            - name: „In Excel öffnen“-Erfahrungen verschaffen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Hinzufügen von Vorlagen zum Menü „Positionen in Excel öffnen”
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -2441,6 +2451,4 @@
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
-      href: ../commerce/index.md
-    - name: Dynamics 365 Retail
       href: ../commerce/index.md

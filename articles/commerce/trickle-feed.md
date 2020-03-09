@@ -1,6 +1,6 @@
 ---
 title: Auftragserstellung per Einzelzulauf für Einzelhandelsgeschäftbuchungen
-description: Dieses Thema beschreibt die Auftragserstellung per Einzelzulauf für Einzelhandelsgeschäftbuchungen in Microsoft Dynamics 365 Commerce.
+description: Dieses Thema beschreibt die Auftragserstellung per Einzelzulauf für Geschäftbuchungen in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
 ms.date: 10/14/2019
@@ -18,18 +18,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f691017ad06d3416e4ba0e86d7a0bc207aba5bd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004273"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057154"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Auftragserstellung per Einzelzulauf für Einzelhandelsgeschäftbuchungen (Öffentliche Vorschau)
 
 [!include [banner](includes/banner.md)]
-
-
 
 In den Versionen Dynamics 365 Retail 10.0.4 und früher ist die Buchung der Aufstellungen ein Vorgang, der am Tagesende durchgeführt wird. Alle Transaktionen werden am Ende des Tages in den Büchern gebucht. Große Transaktionen müssen dann in einem begrenzten Zeitfenster verarbeitet werden, was manchmal zu Lade- und Sperrproblemen und Fehlern bei der Buchung von Aufstellungen führt. Einzelhändler können so außerdem nicht den ganzen Tag über Einnahmen und Zahlungen in ihren Büchern erfassen.
 

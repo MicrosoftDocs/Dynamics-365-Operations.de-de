@@ -166,6 +166,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/commerce/toc.json
                 - name: Gespeicherte Ansichten
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
+                - name: Rasterfunktionen
+                  href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
                 - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
                 - name: PowerApps-Apps einbetten
@@ -438,8 +440,6 @@
                   href: configure-call-center-delivery.md
                 - name: Betrugswarnungen einrichten und verwenden
                   href: set-up-fraud-alerts.md
-                - name: Anschlussprogramme für Callcenter einrichten
-                  href: set-up-continuity-program.md
             - name: Zusätzliche Kanalkonfiguration
               items:
                 - name: Einen Kanal einer Organisationshierarchie hinzufügen
@@ -450,6 +450,12 @@
                       href: omni-auto-charges.md
                     - name: Kopfzuschläge auf übereinstimmende Verkaufspositionen aufteilen
                       href: pro-rate-charges-matching-lines.md
+                - name: Anschlussprogramme verwalten
+                  items:
+                    - name: Anschlussprogramme für Callcenter einrichten
+                      href: set-up-continuity-program.md
+                    - name: Anschlusszeitpläne definieren
+                      href: tasks/define-continuity-schedules.md
                 - name: Einzelhandelsshopleitung
                   items:
                     - name: Ladenöffnungszeiten erstellen und ändern
@@ -460,8 +466,6 @@
                   items:
                     - name: Callcenter-Auftragssperren konfigurieren und verwenden
                       href: work-with-order-holds.md
-                    - name: Anschlusszeitpläne definieren
-                      href: tasks/define-continuity-schedules.md
                 - name: Zahlungen
                   items:
                     - name: Zahlungsmethoden
@@ -478,6 +482,8 @@
                       href: dev-itpro/adyen-connector.md
                     - name: Online-Zahlungsmittel mit dem Adyen Connector speichern
                       href: dev-itpro/adyen-connector-listpi.md
+                    - name: Nahtloser Offline-Schalter für Geschenkkarten- und Gutschriftsvorgänge
+                      href: dev-itpro/seamless-offline-improvements.md
                     - name: Szenarien für die Rechnungszahlung einrichten
                       href: payinvoice.md
                     - name: Doppelte Zahlungen vermeiden
@@ -494,9 +500,9 @@
                   href: ../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Einzelhandelsprodukte einrichten
                   href: set-up-retail-products.md
-                - name: Produkthierarchie (Einzelhandel)
+                - name: Produkthierarchie
                   items:
-                    - name: Einzelhandelshierarchien
+                    - name: Handelshierarchien
                       href: retail-hierarchies.md
                     - name: Neue Produkthierarchie erstellen
                       href: create-product-hierarchy.md
@@ -624,6 +630,12 @@
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Auffüllungsregeln für Crossdocking und Käuferübertragung einrichten
                       href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+                    - name: Eingehender Bestandsvorgang in POS
+                      href: pos-inbound-inventory-operation.md
+                    - name: Ausgehender Bestandsvorgang in POS
+                      href: pos-outbound-inventory-operation.md
+                    - name: Lagerverfügbarkeit für Retail Channels berechnen
+                      href: calculated-inventory-retail-channels.md
                 - name: Bestellungen
                   items:
                     - name: Übersicht über Bestellungen
@@ -726,6 +738,18 @@
               href: tasks/store-configurations-retail-statements.md
             - name: Onlineverkäufe und -zahlungen buchen
               href: tasks/posting-online-sales-payments.md
+        - name: Aufgaben für Arbeitskräfte verwalten
+          items:
+            - name: Aufgabenverwaltung – Übersicht
+              href: task-mgmt-overview.md
+            - name: Aufgabenverwaltung konfigurieren
+              href: task-mgmt-configure.md
+            - name: Aufgabenlisten erstellen und Aufgaben hinzufügen
+              href: task-mgmt-create-lists.md
+            - name: Filialen oder Mitarbeitern Aufgabenlisten zuweisen
+              href: task-mgmt-assign-lists.md
+            - name: Aufgabenverwaltung in POS
+              href: task-mgmt-pos.md
         - name: Ihre E-Commerce-Site verwalten
           items:
             - name: Onlineshop – Überblick
@@ -880,6 +904,8 @@
                   items:
                     - name: Kauffeldmodul
                       href: add-buy-box.md
+                    - name: Bewertungs- und Prüfungsmodule
+                      href: ratings-reviews-modules.md
                 - name: Kaufmodule
                   items:
                     - name: Einkaufswagenmodul
@@ -1056,6 +1082,8 @@
               items:
                 - name: Dokumenterstellungsservices – Übersicht
                   href: ../fin-ops-core/dev-itpro/analytics/document-reporting-services.md?toc=/dynamics365/commerce/toc.json
+                - name: Unterstützte Schriftarten
+                  href: ../fin-ops-core/dev-itpro/analytics/supported-fonts.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurieren von SSRS für On-Premises-Bereitstellungen
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Drucken
@@ -1636,7 +1664,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
             - name: Öffnen von Entitätsdaten in Excel und Aktualisieren mithilfe des Excel-Add-Ins
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: „In Excel öffnen”-Erfahrungen verschaffen
+            - name: „In Excel öffnen“-Erfahrungen verschaffen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
             - name: Hinzufügen von Vorlagen zum Menü „Positionen in Excel öffnen”
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
@@ -1834,8 +1862,6 @@
                       href: e-commerce-extensibility/add-module-config-fields.md
                     - name: Vorschau und Debugging von Modulen
                       href: e-commerce-extensibility/test-module.md
-                    - name: Modul-Debugging
-                      href: e-commerce-extensibility/debug-modules.md
                     - name: Testen von Modulen mithilfe von Pseudodateien
                       href: e-commerce-extensibility/test-module-mock.md
                     - name: Testen von Modulen mithilfe von Pseudoseiten
@@ -1936,7 +1962,7 @@
                   href: dev-itpro/modern-pos-trigger-extensibility.md
                 - name: Benutzerdefinierte Steuerelementen in POS-Ansichten hinzufügen
                   href: dev-itpro/pos-custom-control.md
-                - name: Hinzufügen von POS-Vorgängen zu POS-Layouts mithilfe des Schaltflächenraster-Designers
+                - name: POS-Vorgänge zu POS-Layouts mithilfe des Schaltflächenraster-Designers hinzufügen
                   href: dev-itpro/add-POS-operations.md
                 - name: POS-APIs
                   href: dev-itpro/POS-APIs.md
@@ -1944,11 +1970,11 @@
                   href: dev-itpro/pos-payment-extension.md
                 - name: Unterstützung für externe Geschenkgutscheine
                   href: dev-itpro/gift-card.md
-                - name: Erstellen und Anwenden von Branding in der Retail Experience-App
+                - name: Branding in der Retail Experience-App erstellen und anwenden
                   href: dev-itpro/create-retail-experience-app.md
                 - name: POS Hybrid-App unter Android und iOS einrichten
                   href: dev-itpro/hybridApp.md
-                - name: Überschreiben des POS-Anforderungshandlers
+                - name: Den POS-Anforderungshandler überschreiben
                   href: dev-itpro/pos-handler.md
                 - name: Verpackungsinformationen zu POS-Erweiterungen anzeigen
                   href: dev-itpro/view-pos-extension-package-details.md
@@ -1976,11 +2002,13 @@
                   href: dev-itpro/pos-run-samples.md
                 - name: Implementierungsleitfaden für die Geräteverwaltung
                   href: implementation-considerations-devices.md
+                - name: Ereignisse und Handler in der POS-Warenkorbansicht
+                  href: dev-itpro/cart-view-handlers.md
             - name: "Hardware\_Station-Erweiterbarkeit"
               items:
                 - name: "Hardware\_Station und Erweiterbarkeit"
                   href: dev-itpro/hardware-station-extensibility.md
-                - name: Integrieren Sie POS mit einem neuen Hardwaregerät
+                - name: POS mit einem neuen Hardwaregerät integrieren
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server-Erweiterbarkeit
               items:
@@ -1988,7 +2016,7 @@
                   href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Retail Server-Kunden- und -Endverbraucher-APIs
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Erweitern des Standard-Retail Server-Metadatencontrollers
+                - name: Den Standard-Retail Server-Metadatencontroller erweitern
                   href: dev-itpro/extend-metadata.md
                 - name: Abrufen des CRT-Service im Offlinemodus
                   href: dev-itpro/call-crt-service-offline.md
@@ -2004,17 +2032,17 @@
                   href: dev-itpro/crt-services.md
                 - name: Erweiterbarkeit von CRT und Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Hinzufügen der Kundenpräferenzdaten zu Kanaldatenbanken
+                - name: Kundenpräferenzdaten zu Kanaldatenbanken hinzufügen
                   href: dev-itpro/add-customer-preference-channel.md
-                - name: Verwalten der Geheimnisse für Einzelhandelskanäle
+                - name: Geheimnisse für Einzelhandelskanäle verwalten
                   href: dev-itpro/manage-secrets.md
-                - name: Hinzufügen von Eigenschaften zu Aufträgen
+                - name: Eigenschaften zu Aufträgen hinzufügen
                   href: dev-itpro/add-properties-sales-order.md
                 - name: Erweiterbarkeit und Auslöser von CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
-                - name: Sperren von Transaktionen mithilfe von Auslösern
+                - name: Transaktionen mithilfe von Auslösern sperren
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Implementieren einer Rückgaberichtlinie mithilfe von Auslösern
+                - name: Rückgaberichtlinie mithilfe von Auslösern implementieren
                   href: dev-itpro/trigger-example-return-policy.md
                 - name: Treueerweiterung
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
@@ -2022,7 +2050,7 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Kanaldatenbankerweiterungen
                   href: dev-itpro/channel-db-extensions.md
-                - name: Aktivieren benutzerdefinierter CDX-Synchronisierung per Erweiterung
+                - name: Benutzerdefinierte CDX-Synchronisierung per Erweiterung aktivieren
                   href: dev-itpro/cdx-extensibility.md
                 - name: Definieren und Festlegen von Auftragsattributen
                   href: dev-itpro/order-attributes.md
@@ -2032,22 +2060,26 @@
                   href: dev-itpro/retail-sdk/retail-sdk-samples.md
                 - name: Protokollerweiterungsereignisse zu Application Insights
                   href: dev-itpro/commerce-application-insights.md
+                - name: Asynchrone Commerce (CRT)-APIs in Ihrer Geschäftslogik erstellen
+                  href: dev-itpro/async-commerce-extension.md
             - name: Zahlungsconnectorerweiterbarkeit
               items:
                 - name: Erstellen von Zahlungsintegration für ein Zahlungsterminal
                   href: dev-itpro/end-to-end-payment-extension.md
                 - name: Zahlungsconnector und Zahlungsgerät implementieren (Whitepaper)
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
-                - name: Bereitstellen von Zahlungsconnectors
+                - name: Zahlungsconnectors bereitstellen
                   href: dev-itpro/deploy-payment-connector.md
-                - name: Erstellen von benutzerdefinierten lokalisierten Fehlermeldungen für Zahlungsterminalerweiterungen
+                - name: Benutzerdefinierte lokalisierte Fehlermeldungen für Zahlungsterminalerweiterungen erstellen
                   href: dev-itpro/payment-custom-error-messages.md
-                - name: Erstellen von Windows-Installationsprogrammen für Zahlungsconnectors
+                - name: Windows-Installationsprogramme für Zahlungsconnectors erstellen
                   href: dev-itpro/create-windows-installer-payment-connector.md
-                - name: Verwenden von Zahlungsdaten
+                - name: Zahlungsdaten verwenden
                   href: payment-connector-data-fields.md
-                - name: Aktivierung von duplizierterm Zahlungsschutz für den Zahlungsverbinder
+                - name: Duplizierten Zahlungsschutz für den Zahlungsconnector aktivieren
                   href: dev-itpro/duplicate-payment-protection.md
+                - name: Zahlungspakete für den Anwendungs-Explorer in Service Fabric-Bereitstellungen erstellen
+                  href: dev-itpro/payment-connector-package.md
             - name: E-Commerce-Erweiterbarkeit durch Drittanbieter
               items:
                 - name: Onlineshops konfigurieren
@@ -2060,8 +2092,6 @@
               href: dev-itpro/extension-resource-localization.md
     - name: Entwicklung und Verwaltung für Finance and Operations-Apps
       href: ../fin-ops-core/dev-itpro/index.md
-    - name: Dynamics 365 Retail
-      href: index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Supply Chain Management
