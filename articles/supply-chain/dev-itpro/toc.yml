@@ -452,13 +452,11 @@
           href: ../../dev-itpro/dev-tools/build-operations.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Code-Editor-Funktionen
           href: ../../dev-itpro/dev-tools/code-editor.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-        - name: Erstellen von Modellen und Datenmodellelementen
+        - name: Modelle und Datenmodellelemente erstellen
           items:
-            - name: Erstellen von Modellen und Datenmodellelementen – Übersicht
+            - name: Modelle und Datenmodellelemente erstellen – Übersicht
               href: ../../dev-itpro/dev-tools/create-data-model-elements.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Benennungsrichtlinien für Erweiterungen
-              href: ../../dev-itpro/extensibility/NamingGuidelines.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
-            - name: Modellanpassung ausschalten und Funktionalität als veraltete kennzeichnen
+            - name: Modellanpassung ausschalten und Funktionalität als veraltet kennzeichnen
               href: ../../dev-itpro/dev-tools/lock-models.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
         - name: Anpassungsanalysebericht
           href: ../../dev-itpro/dev-tools/customization-analysis-report.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
@@ -870,7 +868,7 @@
           href: ../../dev-itpro/gdpr/gdpr-lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
 - name: Lifecycle Services
   items:
-    - name: Ressourcen für Lifecycle-Services
+    - name: Ressourcen für Lifecycle Services
       items:
         - name: "Ressourcen für Lifecycle\_Services"
           href: ../../dev-itpro/lifecycle-services/lcs.md?toc=/dynamics365/unified-operations/supply-chain/toc.json
