@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 12d3a86698e9250f5d1645de51e0749c8d929f75
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024705"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057716"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung
 
@@ -35,7 +35,7 @@ In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Vorsch
 
 Führen Sie die in diesem Thema beschriebenen Verfahren erst aus, nachdem Ihre Commerce-Vorschauumgebung bereitgestellt wurde. Informationen zum Bereitstellen Ihrer Commerce-Vorschauumgebung nach deren Bereitstellung finden Sie unter [Stellen Sie eine Commerce-Vorschauumgebung bereit](provisioning-guide.md).
 
-Nachdem Ihre Commerce-Vorschauumgebung vollständig bereitgestellt wurde, müssen zusätzliche Konfigurationsschritte nach der Bereitstellung ausgeführt werden, bevor Sie mit der Evaluierung der Umgebung beginnen können. Um diese Schritte auszuführen, müssen Sie Microsoft Dynamics Lifecycle Services (LCS), Dynamics 365 Commerce und Dynamics 365 Retail verwenden.
+Nachdem Ihre Commerce-Vorschauumgebung vollständig bereitgestellt wurde, müssen zusätzliche Konfigurationsschritte nach der Bereitstellung ausgeführt werden, bevor Sie mit der Evaluierung der Umgebung beginnen können. Um diese Schritte abzuschließen, müssen Sie Microsoft Dynamics Lifecycle Services (LCS) und Dynamics 365 Commerce verwenden.
 
 ## <a name="before-you-start"></a>Bevor Sie beginnen
 
@@ -53,7 +53,7 @@ Nachdem Ihre Commerce-Vorschauumgebung vollständig bereitgestellt wurde, müsse
 
 Gehen Sie folgendermaßen vor, um einen Mitarbeiter Ihrer Identität in LCS zuzuordnen.
 
-1. Navigieren Sie über das Menü links zu **Module \> Retail \> Mitarbeiter \> Arbeitskräfte**.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail und Commerce \> Mitarbeiter \> Arbeitskräfte** zu gehen.
 1. Suchen Sie in der Liste den folgenden Datensatz, und wählen Sie ihn aus: **000713 - Andrew Collette**.
 1. Wählen Sie im Aktivitätsbereich **Retail** aus.
 1. Wählen Sie **Vorhandene Identität zuordnen** aus.
@@ -91,12 +91,12 @@ Gehen Sie folgendermaßen vor, um Ihre Vorschau-Site in Commerce einzurichten.
 1. Lassen Sie das Feld **Pfad** unverändert.
 1. Wählen Sie **OK**. Die Liste der Seiten auf der Site wird angezeigt.
 
-## <a name="enable-jobs-in-retail"></a>Jobs in Retail aktivieren
+## <a name="enable-jobs"></a>Aufträge aktivieren
 
-Um Jobs in Retail zu aktivieren, führen Sie die folgenden Schritte aus.
+Um Jobs in Commerce zu ermöglichen, folgen Sie diesen Schritten.
 
 1. Melden Sie sich bei der Umgebung (HQ) an.
-1. Navigieren Sie über das Menü links zu **Retail \> Abfragen und Berichte \> Batchaufträge**.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Retail and Commerce \> Anfragen und Berichte \> Batch-Jobs** zu gehen.
 
     Die verbleibenden Schritte dieses Verfahrens müssen für jeden der folgenden Jobs ausgeführt werden:
 
@@ -112,11 +112,11 @@ Um Jobs in Retail zu aktivieren, führen Sie die folgenden Schritte aus.
     1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Batchauftrag** die Option **Status ändern** aus.
     1. Wählen Sie **Im Wartezustand** und dann **OK** aus.
 
-### <a name="run-full-data-synchronization-in-retail"></a>Führen Sie die vollständige Datensynchronisierung im Einzelhandel durch
+### <a name="run-full-data-synchronization"></a>Vollständige Datensynchronisation ausführen
 
-Gehen Sie folgendermaßen vor, um die vollständige Datensynchronisierung in Retail auszuführen.
+Um die vollständige Datensynchronisation im Handel auszuführen, führen Sie die folgenden Schritte aus.
 
-1. Navigieren Sie über das Menü links zu **Module \> Retail \> Zentralverwaltungseinrichtung \> Retail Steuerprogramm \> Kanaldatenbank**.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail and Commerce \> Headquarter Einrichtung \> Einzelhandelsplaner \> Kanaldatenbank** zu gehen.
 1. In der Liste links wird der Kanal **Standard** ausgewählt. Wählen Sie den anderen verfügbaren Kanal. Dieser Kanal heißt **scXXXXXXXXX**.
 1. Wählen Sie **Vollständige Datensynchronisierung** im Aktionsbereich aus.
 1. Geben Sie **9999** als Vertriebsplan ein.

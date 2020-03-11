@@ -1,12 +1,12 @@
 ---
-title: Gehalts-/Vergütungsstruktur und -plan entwickeln
-description: Diese Aufgabe führt Schritt für Schritt durch den Prozess der Erstellung eines "Festen Vergütungsplans" und ermöglicht es Mitarbeitern, in dem Plan durch Berechtigungsregeln registriert zu werden.
+title: Entwicklung einer Vergütungsstruktur
+description: Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung.
 author: andreabichsel
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 02/10/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid
 audience: Application User
@@ -16,62 +16,100 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5711dc8a7fbd44ea9c27e1d57b936765808d199e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 124d0f7f83feebabf622f00732c25bfa0f6eccdd
+ms.sourcegitcommit: de715b7fda2f1548f2f443b9e0f6d09f5b881d61
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009198"
+ms.lasthandoff: 02/10/2020
+ms.locfileid: "3034262"
 ---
-# <a name="develop-salarycompensation-structure-and-plan"></a>Gehalts-/Vergütungsstruktur und -plan entwickeln
+# <a name="develop-a-compensation-structure"></a>Entwicklung einer Vergütungsstruktur
 
+Dieser Artikel führt Sie durch die Erstellung eines festen Vergütungsplans und die Anmeldung von Mitarbeitern in den Plan durch die Regeln für die Anspruchsberechtigung. Dieser Artikel verwendet die USMF-Demodaten und gilt für Vergütungs- und Leistungsmanager.
 
+## <a name="create-a-fixed-compensation-plan"></a>Erstellen eines festen Vergütungsplans
 
-Diese Aufgabe führt Schritt für Schritt durch den Prozess der Erstellung eines "Festen Vergütungsplans" und ermöglicht es Mitarbeitern, in dem Plan durch Berechtigungsregeln registriert zu werden. Das Demodatunternehmen, das verwendet wird, um diese Aufgabe erstellen, ist USMF, und die Aufgabe ist für "Leiter Vergütungen/Bezüge" bestimmt.
+1. Wählen Sie **Vergütungsmanagement**.
 
+2. Wählen Sie **Feste Vergütungspläne**.
 
-## <a name="create-fixed-compensation-plan"></a>Erstellen eines festen Vergütungsplans.
-1. Klicken Sie auf "Vergütungsverwaltung".
-2. Klicken Sie auf feste Vergütungspläne.
-3. Klicken Sie auf "Neu".
-4. Geben Sie im Feld "Plan" einen Wert ein.
-5. Geben Sie im Feld "Beschreibung" einen Wert ein.
-6. Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.
-7. Wählen Sie im Feld "Typ" aus, ob der "Feste Vergütungsplan" ein "Bereichs-", "Klassen-" oder "Stufenplan" ist.
-8. Das Kontrollkästchen "Empfehlung erlaubt" fungiert als Standardwert für alle Aktivitäten, die zu diesem Plan in einem "Prozessereignis" hinzugefügt wurden.  Das Zulassen von Empfehlungen bietet Ihnen die Möglichkeit, den berechneten Richtbetrag zu überschreiben, wenn die Vergütung verarbeitet wird.
-9. Die "Außerhalb des zulässigen Bereichs (Toleranz)" ermöglicht es Ihnen anzugeben, wie Vergütungsbeträge gehandhabt werden sollen, die außerhalb des angegebenen Vergütungsstrukturbereich für die bestimmte Ebene liegen.  Eine Auswahl von "Kein" bei "Außerhalb des zulässigen Bereichs (Toleranz)" ermöglicht, dass ein beliebiger Vergütungsbetrag verwendet wird.  Bei "Eingeschränkte Toleranz" erhält der Benutzer eine Warnung, wenn der Vergütungsbetrag geringer als der minimale Referenzpunktbetrag für diese Ebene ist oder größer als der Höchstbetrag für diese Ebene ist. Der Benutzer kann die Warnung ignorieren und fortfahren.  Eine "Uneingeschränkte Toleranz" generiert einen Fehler, wenn eine Mitarbeitervergütung außerhalb der Minimal- und Maximalreferenzpunkte für die Ebene festgelegt ist und wird die Mitarbeitervergütung automatisch anpassen, damit sie innerhalb des Bereichs fällt.
-10. Das Feld "Einstellungsregel" wird verwendet, wenn ein "Prozessereignis" zur Vergütung ausgeführt wird, um die Vergütung eines Mitarbeiters zu berechnen.  Eine "Einstellungsregel" mit "Prozent" berechnet eine Erhöhung, die anteilig für die Länge der Zeit berechnet wird, während die Arbeitskraft in einem Zyklus beschäftigt war.
-11. Geben Sie im Feld "Währung" einen Wert ein.
-12. Geben Sie im Feld "Lohnsatzumwandlung" einen Wert ein, oder wählen Sie einen Wert aus.
-13. Erweitern Sie den Abschnitt "Matrix für Bereichsauslastung".
-    * Fügen Sie optional Bereichsauslastungsdatensätze hinzu, damit Mitarbeiter schneller zu ihrem Mittelwert gelangen und langsamer den Maximalwert ihres Bereichs erreichen.  
-14. An diesem Punkt müssen Sie den "Festen Vergütungsplan" speichern, um die Schaltfläche Vergütung einrichten" zu aktivieren und das Definieren der Vergütungsstruktur für den Plan fortzusetzen.  Klicken Sie auf "Speichern".
-15. Klicken Sie auf "Vergütung einrichten".
-    * Es gibt drei Möglichkeiten, um eine Vergütungsstruktur zu erstellen. 1: Erstellen Sie eine vollständig neue Struktur, indem Sie eine Gruppe von Referenzpunkten auswählen und die Ebenen hinzufügen, um Ihre eigene Struktur zu erstellen. 2: Kopieren Sie eine Vergütungsstruktur aus einem vorhandenen Plan als Ausgangspunkt und ändern Sie sie für den neuen Plan. 3: Wählen Sie ein bestehendes Vergütungsraster aus. Wenn das Vergütungsraster bereits von einem anderen Plan verwendet wird, spiegeln sich alle Änderungen, die am Raster vorgenommen werden, auch im anderen Plan wieder.  
-16. Wählen Sie die Option "Neue Vergütungsmatrix aufgrund der bestehenden Matrix erstellen" aus.
-17. Geben Sie im Feld "Aus Raster kopieren" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Optional können Sie den Namen des neuen das Vergütungsrasters ändern, das als Kopie des ausgewählten Rasters erstellt wird.  
-18. Klicken Sie auf "OK".
-19. Klicken Sie auf "Massenänderung".
-    * Massenänderung ermöglicht Ihnen, die Vergütungsmatrixbeträge zu verwalten, indem Sie einen Prozentsatz oder eine feste Betragserhöhung bei einem oder mehreren Ebenen und/oder Referenzpunkten anwenden.  
-20. Geben Sie im Feld "Regulierungsbetrag" eine Zahl ein.
+3. Wählen Sie **Neu** aus.
+
+4. Geben Sie in das Feld **Plan** einen Wert ein.
+
+5. Geben Sie im Feld **Beschreibung** einen Wert ein, oder wählen Sie einen Wert aus.
+
+6. Geben Sie im Feld **Gültigkeitsdatum** ein Datum ein.
+
+7. Wählen Sie im Feld **Typ** aus, ob es sich bei dem festen Vergütungsplan um einen Plan **Band**, **Grad** oder **Schritt** handelt.
+
+8. Das Ankreuzfeld **Empfehlung erlaubt** dient als Standardwert für alle Maßnahmen, die diesem Plan in einem Prozessereignis hinzugefügt werden. Das Zulassen von Empfehlungen bietet Ihnen die Möglichkeit, den berechneten Richtbetrag zu überschreiben, wenn die Vergütung verarbeitet wird.
+
+9. Mit dem Feld **Bereichstoleranz außerhalb des Bereichs** können Sie angeben, wie Sie Vergütungsbeträge behandeln wollen, die außerhalb des für die gegebene Ebene angegebenen Bereichs der Vergütungsstruktur liegen. Wenn Sie das Feld **Bereichstoleranz außerhalb des Bereichs** auf **Keine** setzen, können Sie jeden beliebigen Vergütungsbetrag verwenden. **Weiche Toleranz** warnt die Benutzer, wenn der Ausgleichsbetrag unter dem Minimum oder über den maximalen Bezugspunktbeträgen für diese Ebene liegt. Benutzer können die Warnung ignorieren und fortfahren. **Harte Toleranz** erzeugt einen Fehler, wenn die Vergütung eines Mitarbeiters außerhalb des minimalen und maximalen Bezugspunktbetrags für diese Stufe liegt, und passt die Vergütung des Mitarbeiters automatisch so an, dass sie in den Bereich fällt.
+
+10. Das Feld **Einstellungsregel** berechnet die Vergütung eines Mitarbeiters während eines Prozessereignisses. Das Feld **Einstellungsregel** von **Prozent** berechnet eine Erhöhung, die anteilig für die Dauer der Beschäftigung des Mitarbeiters in dem Zyklus berechnet wird.
+
+11. Geben Sie im Feld **Währung** einen Wert ein.
+
+12. Geben Sie in das Feld **Lohnratenumwandlung** einen Wert ein oder wählen Sie einen Wert aus.
+
+13. Erweitern Sie den Abschnitt **Bereichsausnutzungsmatrix**. Fügen Sie optional Bereichsauslastungsdatensätze hinzu, damit Mitarbeiter schneller zu ihrem Mittelwert gelangen und langsamer den Maximalwert ihres Bereichs erreichen.
+
+14. Wählen Sie **Speichern**. Dadurch wird die Drucktaste **Vergütung** eingerichtet und Sie können mit der Definition Ihrer Vergütungsstruktur für den Plan fortfahren.
+
+15. Wählen Sie **Vergütung einrichten**. Sie können eine Vergütungsstruktur mit einer dieser drei Methoden anlegen:
+
+    - Erstellen Sie eine völlig neue Struktur, indem Sie eine Reihe von Bezugspunkten auswählen und die Ebenen hinzufügen, um Ihre eigene Struktur zu erstellen.
+    - Kopieren Sie eine Vergütungsstruktur aus einem bestehenden Plan als Ausgangspunkt und ändern Sie sie für den neuen Plan.
+    - Wählen Sie ein bestehendes Vergütungsraster aus. Wenn ein anderer Plan bereits das Vergütungsgitter verwendet, spiegelt der andere Plan ebenfalls alle Änderungen wider, die Sie am Gitter vornehmen.
+
+16. Wählen Sie **Neues aus vorhandener Vergütungsmatrix erstellen**.
+
+17. Geben Sie in das Feld **Kopieren von Raster** einen Wert ein oder wählen Sie ihn aus. Optional können Sie den Namen des neuen Vergütungsrasters, das Sie anlegen, ändern, indem Sie das ausgewählte Raster kopieren.
+
+18. Wählen Sie **OK**.
+
+19. Wählen Sie **Massenänderung**. Mit **Massenänderung** können Sie die Beträge der Vergütungsmatrix beibehalten, indem Sie eine prozentuale oder pauschale Betragserhöhung auf eine oder mehrere Ebenen oder Bezugspunkte anwenden.
+
+20. Geben Sie in das Feld **Anpassungsbetrag** eine Zahl ein.
+
 21. Markieren Sie alle Zeilen in der Liste, oder heben Sie die Markierung auf.
-22. Klicken Sie auf "Auf Raster anwenden".
-23. Schließen Sie die Seite.
-    * Sobald eine Vergütungsstruktur erstellt oder ausgewählt wurde, können Sie auswählen, welche der Referenzpunkte als der Kontrollpunkt für den "Festen Vergütungsplan" verwendet werden sollte.  Der Kontrollpunkt wird verwendet, um die Compa-Ratio eines Mitarbeiters zu errechnen.  
-24. Geben Sie im Feld "Kontrollpunkt" einen Wert ein, oder wählen Sie einen Wert aus.
+
+22. Klicken Sie auf **Anwendung auf Raster**.
+
+23. Schließen Sie die Seite. Nachdem Sie die Vergütungsstruktur angelegt haben, können Sie auswählen, welcher der Referenzpunkte als Kontrollpunkt für den festen Vergütungsplan verwendet werden soll. Der Kontrollpunkt wird zur Berechnung des Kompensationsverhältnisses eines Mitarbeiters verwendet.
+
+24. Geben Sie in das Feld **Kontrollpunkt** einen Wert ein oder wählen Sie einen Wert aus.
+
 25. Schließen Sie die Seite.
 
-## <a name="create-an-eligibility-rule-for-the-new-fixed-compensation-plan"></a>Eine Berechtigungsregel für den neuen "Festen Vergütungsplan" erstellen
-    * Der neue "Festen Vergütungsplan" kann nicht einem Mitarbeiter zugewiesen werden, bevor die "Berechtigungsregeln" für den Plan definiert wurden.  
-1. Klicken Sie auf Berechtigungsregeln.
-2. Klicken Sie auf "Neu".
-3. Geben Sie im Feld "Berechtigung" einen Wert ein.
-4. Geben Sie im Feld "Beschreibung" einen Wert ein.
-5. Geben Sie im Feld "Gültigkeitsdatum" ein Datum ein.
-    * Berechtigungsregeln werden sowohl für "Feste Vergütungspläne" als auch für "Variable Vergütungspläne" verwendet.  Wählen Sie im Feld "Typ" aus, für welchen Typ von Plan dieser Satz von Berechtigungsregeln bestimmt ist.  
-6. Geben Sie im Feld "Plan" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Wählen Sie die Kriterien aus, die ein Mitarbeiter erfüllen muss, um für den Vergütungsplan berechtigt zu sein. Kriterien können eine Abteilung, einen Gewerkschaft, einen Lagerplatz (Kompensationsregion), eine Stelle, eine Funktion, einen Stellentyp oder eine Vergütungsstufe enthalten. Der Mitarbeiter muss alle angegebenen Kriterien erfüllen, um für den Vergütungsplan berechtigt zu sein. Wenn keine Kriterien angegebenen wurden, sind alle Mitarbeiter für den Vergütungsplan berechtigt. Wenn ein Mitarbeiter nicht die Kriterien erfüllt, die in der Berechtigungsregel angegeben sind oder eine Berechtigungsregel nicht für einen Vergütungsplan festgelegt wurde, wird der Vergütungsplan nicht in der Suche angezeigt, wenn ein "Fester Vergütungsdatensatz" für einen Mitarbeiter erstellt wird.  
+## <a name="create-an-eligibility-rule-for-the-fixed-compensation-plan"></a>Legen Sie eine Zulässigkeitsregel für den festen Vergütungsplan an.
+
+Sie können einem Mitarbeiter erst dann einen festen Vergütungsplan zuordnen, wenn Sie die Zulässigkeitsregeln für den Plan definiert haben.  
+
+1. Wählen Sie **Zulässigkeitsregeln**.
+
+2. Wählen Sie **Neu** aus.
+
+3. Geben Sie in das Feld **Zulässigkeit** einen Wert ein.
+
+4. Geben Sie im Feld **Beschreibung** einen Wert ein, oder wählen Sie einen Wert aus.
+
+5. Geben Sie im Feld **Gültigkeitsdatum** ein Datum ein. Sowohl feste als auch variable Vergütungspläne verwenden Zulässigkeitsregeln. Wählen Sie im Feld **Typ** die Art des Plans aus.
+
+6. Geben Sie im Feld **Plan** einen Wert ein oder wählen Sie ihn aus. Wählen Sie die Kriterien aus, die ein Mitarbeiter erfüllen muss, um für den Vergütungsplan berechtigt zu sein. Die Kriterien können umfassen:
+
+    - **Abteilung**
+    - **Gewerkschaft**
+    - **Standort** (**Vergütungsregion**)
+    - **Job**
+    - **Funktion**
+    - **Stellentyp**
+    - **Vergütungsstufe**
+    
+    Der Mitarbeiter muss alle angegebenen Kriterien erfüllen, um für den Vergütungsplan berechtigt zu sein. Wenn Sie keine Kriterien angeben, sind alle Mitarbeiter für den Vergütungsplan berechtigt. Wenn ein Mitarbeiter die in der Zulässigkeitsregel angegebenen Kriterien nicht erfüllt oder keine Zulässigkeitsregel für einen Vergütungsplan angegeben wurde, erscheint der Vergütungsplan nicht in der Nachschlagsliste, wenn Sie einen Satz für eine feste Vergütung für einen Mitarbeiter anlegen.
+
 7. Schließen Sie die Seite.
+
 8. Schließen Sie die Seite.
 

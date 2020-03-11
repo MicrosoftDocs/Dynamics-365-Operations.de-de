@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 28306b2e5fb1febce49ab55240c6d84ff240282a
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d11e2d8b46614085156228ab1001d1f9340a05b0
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916774"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040962"
 ---
 # <a name="PADLEFT">PADLEFT EB-Funktion</a>
 
@@ -33,7 +33,7 @@ Die Funktion `PADLEFT` gibt den Wert *String* mit der angegebenen Länge zurück
 
 ## <a name="syntax"></a>Syntax
 
-```
+```vb
 PADLEFT (text, length, padding chars)
 ```
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ac5135d0606ffc9816c841637aa032826f87e28
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022653"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057159"
 ---
 # <a name="create-and-associate-registers"></a> Register erstellen und zuordnen
 
@@ -30,14 +30,14 @@ ms.locfileid: "3022653"
 
 Diese Prozedur zeigt, wie ein Verkaufsstellen-(POS)-Register erstellt wird. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
-1. Wechseln Sie zu Einzelhandel und Handel > Kanaleinstellungen > POS-Einstellungen > Register.
-2. Klicken Sie auf "Neu".
+1. Wechseln Sie zu Retail und Commerce > Kanaleinstellungen > POS-Einstellungen > Register.
+2. Klicken Sie auf Neu.
 3. Geben Sie im Feld "Registernummer" eine Kennung für ein neues Register ein.
     * Die Registerkennung umfasst gewöhnlich Codes, die helfen, das Register dem Lager zuzuordnen, zu dem es gehört, sowie zum Lagerplatz innerhalb des Lagers.  
 4. Geben Sie im Feld "Name" einen aussagekräftigen Namen für das Register ein.
 5. Geben Sie im Feld "Lagernummer" einen Wert ein oder wählen Sie einen Wert aus.
 6. Geben Sie im Feld "Hardwareprofil" einen Wert ein, oder wählen Sie einen Wert aus.
-    * Hardware-Profile werden verwendet, um die Einzelhandels-Peripheriegeräte anzugeben, die mit dem Register verbunden werden, wie beispielsweise die Kassenlade oder der Belegdrucker.  
+    * Hardwareprofile werden zur Angabe der Peripheriegeräte verwendet, die an die Registrierkasse angeschlossen werden, wie z.B. Kassenlade und Bondrucker.  
 7. Geben Sie im Feld "Visuelles Profil" einen Wert ein oder wählen Sie einen Wert aus.
     * Visuelle Profile werden verwendet, um die Bilder anzugeben, die im POS-Hintergrund und auf der Anmeldeseite sowie als Themen für das POS verwendet werden.  
 8. Geben Sie im Feld "POS-Registernummer für elektronische Überweisung" einen Wert ein.

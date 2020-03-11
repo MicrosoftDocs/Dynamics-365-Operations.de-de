@@ -3,7 +3,7 @@ title: Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 description: Dieses Thema enthält Informationen zu den Verkaufsstelle (POS)-Arbeitsgängen in Dynamics 365 Commerce. Es gibt an, an welcher Position in der Anwendung die Arbeitsgänge aufgerufen werden können, und ob sie im Offline-Modus verfügbar sind.
 author: jblucher
 manager: AnnBe
-ms.date: 05/21/2019
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: bf67c53ffd5bd530f484b60da604fd9338c964fd
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 24ef0ad8528d1d094f59736b7a36fd77f57fb227
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022703"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081338"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online- und Offlineverkaufsstellen-(POS)-Vorgänge
 
@@ -51,7 +51,9 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 135 | Zugehörigkeit aus Liste hinzufügen | Hinzufügen einer Zugehörigkeit durch Auswahl aus einer Liste. | Ja | Ja | Ja | Ja | Nr. |
 | 137 | Hinzufügen einer Zugehörigkeit zu einem Debitor | Hinzufügen einer Zugehörigkeit einem Debitor auf der Seite **Debitorendetails**. | Nr. | Nr. | Nr. | Ja | Nr. |
 | 138 | Zugehörigkeit von Debitor entfernen | Zugehörigkeit eines Debitor auf der Seite **Debitorendetails** entfernen. | Nr. | Nr. | Nr. | Ja | Nr. |
-| 643 | Couponcode hinzufügen | Einen Coupon hinzufügen durch Eingabe seines Codes in POS. | Ja | Ja | Nr. | Ja | Nr. |
+| 643 | Couponcode hinzufügen | Einen Coupon hinzufügen durch Eingabe seines Codes in POS. | Ja | Ja | Nein | Ja | Nein |
+| 141 | Kopfzuschläge hinzufügen | Fügen Sie dem Auftragskopf eine Gebühr für eine Fehlbestellung hinzu. | Ja | Ja | Nein | Nein| Nein |
+| 141 | Belastungen pro Position hinzufügen | Fügen Sie einer ausgewählten Verkaufszeile Gebühr für eine Fehlbestellung hinzu. | Ja | Ja | Nein | Nein| Nein |
 | 117 | Treuekarte hinzufügen | Fordern Sie den Benutzer auf, eine Treuekartennummer einzugeben, die der aktuellen Buchung hinzugefügt wird. | Ja | Ja | Nr. | Ja | Nr. |
 | 136 | Seriennummer hinzufügen | Dieser Arbeitsgang erlaubt dem Benutzer, eine Seriennummer für das derzeit ausgewählte Produkt anzugeben. | Ja | Ja | Nr. | Ja | Nr. |
 | 1214 | Versandadresse hinzufügen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
@@ -63,7 +65,8 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 1053 | Schicht blind schließen | Festlegen der aktuellen Schicht, um Einträge blind vorzunehmen, und unterzeichnet Sie den Benutzer aus. Eine blind-geschlossene Schicht wird abgeschlossen, als Lieferant zu weiteren Buchungen jedoch zu den Kassenladearbeitsgängen, wie Zahlungsmittel entfernen und Kassensturz weiterhin geöffnet. | Ja | Ja | Ja | Nr. | Nr. |
 | 310 | Summe berechnen | Wenn Rabattberechnung verzögert wird, initiiert dieser Arbeitsgang die Berechnung für die aktuelle Buchung. | Ja | Ja | Nr. | Ja | Nr. |
 | 642 | Alle Produkte ausführen | Legen Sie die Lieferart für alle Positionen auf **Takeaway** fest. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 641 | Ausgewählte Produkte ausführen | Legen Sie die Lieferart für die ausgewählten Positionen auf **Takeaway** fest. | Ja | Ja | Nr. | Ja\* | Nr. |
+| 641 | Ausgewählte Produkte ausführen | Legen Sie die Lieferart für die ausgewählten Positionen auf **Takeaway** fest. | Ja | Ja | Nein | Ja\* | Nein |
+| 647 | Lieferart ändern | Ändern Sie die Lieferart für vorkonfigurierte Versandverkaufszeilen. | Ja | Ja | Nein | Nein| Nein |
 | 1215 | Kennwort ändern | Dieser Arbeitsgang ermöglicht dem POS-Benutzer, sein Kennwort zu ändern. | Ja | Ja | Ja | Nr. | Nr. |
 | 123 | Maßeinheit ändern | Ändern der Maßeinheit für den ausgewählten Positionsartikel. | Ja | Ja | Nr. | Ja | Nr. |
 | 639 | Standardverkäufer für Buchung löschen | Entfernt die Provisionsverkaufsgruppe (Verkäufer) aus der Buchung. | Ja | Ja | Nr. | Ja | Nr. |
@@ -99,7 +102,8 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 1201 | Mittelzugang | Dieser Arbeitsgang ermöglicht dem Benutzer, zusätzliches Geld der aktuellen Schicht oder Kassenlade hinzufügen. | Ja | Ja | Ja | Ja | Nr. |
 | 1218 | Entsperren von Peripheriegerät erzwingen | Das System verwendet diesen Arbeitsgang intern, um die Sperrung der POS-Peripheriegeräte aufzuheben. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 520 | Geschenkkartensaldo | Zeigt den Saldo einer Geschenkkarte an. | Ja | Ja | Nr. | Nr. | Nr. |
-| 708 | Gerät deaktivieren | Deaktivieren Sie das aktuelle Gerät, damit es nicht als POS-Register verwendet werden kann. | Nr. | Nr. | Nr. | Nr. | Nr. |
+| 708 | Gerät deaktivieren | Deaktivieren Sie das aktuelle Gerät, damit es nicht als POS-Register verwendet werden kann. | Nein | Nein | Nein | Nein | Nein |
+| 804 | Eingangsvorgang | Greifen Sie auf die Funktionen der Bestandsverwaltung eingehender Filialen zu. | Ja | Nein | Ja | Nein| Nein |
 | 517 | Ertragskonten | Dient zum Erfassen des Geldes, das der Geldlade hinzugefügt wird, aber nicht aus einem Verkauf stammt. | Ja | Ja | Ja | Ja | Nr. |
 | 801 | Bestandssuche | Suchen Sie verfügbare, bestellte oder für Zusage verfügbare (ATP) Mengen für den aktuellen Shop und an anderen verfügbaren Lagerplätzen. | Ja | Ja | Ja | Nr. | Nr. |
 | 122 | Rechnungskommentar | Dieser Arbeitsgang ermöglicht dem Benutzer, einen Kommentar zur aktuellen Buchung einzugeben. | Ja | Ja | Nr. | Ja | Nr. |
@@ -110,11 +114,13 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 301 | Positionsrabatt (in Prozent) | Dient zum Eingeben eines Rabattprozentsatzes für einen Positionsartikel in der Buchung. Dieser Vorgang kann ausschließlich für rabattfähige Artikel verwendet und nur innerhalb der angegebenen Rabattgrenzen angegeben werden. | Ja | Ja | Nr. | Ja | Nr. |
 | 703 | Register sperren | Sperren Sie das aktuelle Register, damit es nicht verwendet werden kann, aber melden Sie nicht den aktuellen Benutzer ab. | Nr. | Nr. | Nr. | Ja | Nr. |
 | 701 | Abmelden | Melden Sie den aktuellen Benutzer aus dem Register ab. | Ja | Ja | Ja | Ja | Nr. |
-| 521 | Treuekarten-Punktestand | Anzeigen des Saldos von Punkten für die angegebene Treuekarte. | Ja | Ja | Nr. | Nr. | Nr. |
+| 521 | Treuekarten-Punktestand | Anzeigen des Saldos von Punkten für die angegebene Treuekarte. | Ja | Ja | Nein | Nein | Nein |
+| 142 | Belastungen verwalten | Anzeigen und Verwalten der auf die Transaktion angewendeten Gebühren. | Ja | Ja | Nein | Nein| Nein |
 | 918 | Schichten verwalten | Zeigen Sie eine Liste aktiver, unterbrochener und blinder, geschlossener Schichten an. | Ja | Ja | Ja | Nr. | Nr. |
 | 914 | POS-Fenster minimieren | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nr. |
 | 1.000 | Kassenlade öffnen | Führen Sie einen Arbeitsgangs "Verkauf" aus, und öffnen Sie die derzeit ausgewählte Geldlade. | Ja | Ja | Ja | Ja | Nr. |
-| 928 | Auftragserfüllung | Dieser Arbeitsgang ermöglicht es Benutzern, Aufträge für die Filialabholung zu entnehmen, zu verpacken, zu versenden oder zurückzurufen. | Ja | Ja | Ja | Nr. | Nr. |
+| 928 | Auftragserfüllung | Dieser Arbeitsgang ermöglicht es Benutzern, Aufträge für die Filialabholung zu entnehmen, zu verpacken, zu versenden oder zurückzurufen. | Ja | Ja | Ja | Nein | Nein |
+| 805 | Ausgangsvorgang | Zugriffsfunktionen für die Verwaltung von Sendungen ausgehender Transportaufträge. | Ja | Nein | Ja | Nein| Nein |
 | 129 | Steuer für Positionsprodukt überschreiben | Überschreibt die Steuer für den ausgewählten Positionsartikel mit einer anderen angegebenen Steuer. | Ja | Ja | Nr. | Ja | Nr. |
 | 130 | Steuer für Positionsprodukt aus Liste überschreiben | Überschreibt die Steuer für den ausgewählten Positionsartikel mit einer Steuer, die der Benutzer in einer Liste auswählt. | Ja | Ja | Nr. | Ja | Nr. |
 | 127 | Transaktionssteuer überschreiben | Dient zum Überschreiben der Steuer für die Buchung, um eine andere angegebene Steuer zu verwenden. | Ja | Ja | Nr. | Ja | Nr. |
@@ -146,7 +152,8 @@ Die folgenden Spalten geben an, woher die Arbeitsgänge aufgerufen werden könne
 | 100 | Produktverkauf | Fügt der Buchung ein angegebenes Produkt hinzu. | Ja | Ja | Ja | Ja | Nr. |
 | 108 | Produktsuche | Dieser Arbeitsgang erlaubt dem Benutzer die Suche nach einem Produkt, indem er zur Produktsuchseite am Point-of-Sale wechselt. | Ja | Ja | Ja | Ja | Nr. |
 | 633 | Ablaufdatum für Angebot | Dieser Arbeitsgang erlaubt dem Benutzer, das Ablaufdatum auf einem Verkaufsangebot anzuzeigen oder zu ändern. | Ja | Ja | Nr. | Ja\* | Nr. |
-| 627 | Neu berechnen | Berechnen Sie alle Debitoren-Auftragspositionen und Steuern auf Basis der aktuellen Konfiguration. | Ja | Ja | Nr. | Ja\* | Nr. |
+| 627 | Neu berechnen | Berechnen Sie alle Debitoren-Auftragspositionen und Steuern auf Basis der aktuellen Konfiguration. | Ja | Ja | Nein | Ja\* | Nein |
+| 143 | Belastung neu berechnen | Neuberechnung der auf den Auftrag angewendeten automatischen Gebühren. | Ja | Ja | Nein | Nein| Nein |
 | 515 | Auftrag zurückrufen | Dieser Arbeitsgang erlaubt Benutzern die Suche nach und das Zurückrufen von Debitorenaufträgen und Verkaufsangeboten. | Ja | Ja | Ja | Nr. | Nr. |
 | 504 | Buchung zurückrufen | Dieser Arbeitsgang ermöglicht dem Benutzer, eine zuvor unterbrochene Buchung vom aktuellen Shops zurückzurufen. | Ja | Ja | Nr. | Ja‡ | Nr. |
 | 305 | Treuepunkte einlösen | Der Vorgang wird nicht unterstützt. | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Nicht zutreffend | Ja |

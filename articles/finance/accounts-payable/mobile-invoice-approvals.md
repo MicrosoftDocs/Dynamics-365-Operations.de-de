@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: dd72c8a54498cc6ffae7125c5c2f44bfac5a5995
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 88ba96b1d9d2f722528a4a920eabe4ab64304a7a
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658643"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059427"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile Rechnungsgenehmigungen
 
@@ -54,8 +54,8 @@ Jede Organisation definiert und nutzt eigene Geschäftsprozesse für Kreditorenr
     -   Wie viele Buchhaltungsverteilungen (erweiterte Preis, Mehrwertsteuer, Belastungen, Teilungen, usw.) gibt es für eine Rechnungsposition? Wieder gilt die Regel 80-20.
     -   Haben Rechnungen auch Buchhaltungsverteilungen im Rechnungskopf? Falls ja sollen diese Buchhaltungsverteilungen im Gerät verfügbar sein?
 
-> [!NOTE]
-> In diesem Thema wird nicht erläutert, wie Sie Buchhaltungsverteilungen bearbeitet, da diese Funktion nicht aktuell für mobile Szenarios unterstützt werden.
+    > [!NOTE]
+    > In diesem Thema wird nicht erläutert, wie Sie Buchhaltungsverteilungen bearbeitet, da diese Funktion nicht aktuell für mobile Szenarios unterstützt werden.
 
 -   Möchten Benutzer Anhänge für die Rechnung auf dem Gerät angezeigt?
 
@@ -158,9 +158,9 @@ Die erste mobile Seite soll die Liste der Rechnungen, die dem Benutzer zur Geneh
     - Rechnungsnummer
     - Rechnungsdatum
 
-  Nachdem die Felder hinzugefügt sind, muss die mobile Seite der folgenden Abbildung ähneln. 
+    Nachdem die Felder hinzugefügt sind, muss die mobile Seite der folgenden Abbildung ähneln. 
     
-   [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Seite nach Felder hinzugefügt](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Sie müssen außerdem die folgenden Spalten hinzufügen, sodass wir Workflowaktivitäten später aktivieren können.
     - Abgeschlossene Aufgabe anzeigen
@@ -247,9 +247,10 @@ Um Workflow-Aktionen hinzuzufügen, verwenden Sie die Seite **VendMobileInvoiceH
     - Er blendet die zusätzlichen workflowbezogenen Spalten aus, die wir früher mobilen auf der Listenseite hinzugefügt. Es werden diesen Spalten hinzufügen, sodass der Zeit-App dass Informationen im Zusammenhang hat und die nächsten Schritt ausführen kann.
     - Anhand des Workflowschritt, die aktiv ist, wendet sie Logik, um nur die Vorgänge anzeigen.
 
-> [!NOTE]
-> Die Namen der Seiten und andere Steuerelemente im Code müssen mit den Namen im Arbeitsbereich identisch sein.
+    > [!NOTE]
+    > Die Namen der Seiten und andere Steuerelemente im Code müssen mit den Namen im Arbeitsbereich identisch sein.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -308,6 +309,7 @@ Um Workflow-Aktionen hinzuzufügen, verwenden Sie die Seite **VendMobileInvoiceH
                  },
            };
         }
+    ```
 
 2.  Laden Sie die Codedatei dem Arbeitsbereich hohe, indem Sie die **Logik** Registerkarte auswählen
 3.  Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
@@ -341,7 +343,7 @@ Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf P
 
 1.  In der URL ersetzten Sie den Name der Menüoption. Die Seite, die angezeigt wird, sollte der folgenden Abbildung ähneln.
 
-[![Alle Verteilungen-Seite](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Alle Verteilungen-Seite](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Öffnen Sie den Designer von mobilen **Einstellungen** (Zahnrad) Schaltfläche.
 
@@ -367,16 +369,18 @@ Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf P
 
 10. Klicken Sie auf **Arbeitsbereich veröffentlichen**, um die Arbeit zu speichern.
 
-> [!NOTE] 
-> Die mobile Seite **Buchhaltung anzeigen** ist derzeit mit keiner mobilen Seiten verknüpft, die wir bisher entworfen haben. Da der Benutzer in der Lage sein soll, die Seite **Buchhaltung anzeigen** aus der **Rechnungsdetails** Seite im mobilen Gerät zu navigieren, müssen Sie zuvor aus der **Rechnungsdetails** Seite der **Buchhaltung anzeigen** Seite bereitstellen. Wir legen die Navigationsverknüpfung ein, indem wir Zusatzlogik zu JavaScript verwenden.
+#### <a name="adding-navigation-to-view-accounting-page"></a>Hinzufügen der Navigation zur Seite „Buchhaltung anzeigen“.
+
+Die mobile Seite **Buchhaltung anzeigen** ist derzeit mit keiner mobilen Seiten verknüpft, die wir bisher entworfen haben. Da der Benutzer in der Lage sein soll, die Seite **Buchhaltung anzeigen** aus der **Rechnungsdetails** Seite im mobilen Gerät zu navigieren, müssen Sie zuvor aus der **Rechnungsdetails** Seite der **Buchhaltung anzeigen** Seite bereitstellen. Wir legen die Navigationsverknüpfung ein, indem wir Zusatzlogik zu JavaScript verwenden.
 
 1.  Öffnen Sie die JS-Datei, die Sie eben erstellt haben, und fügen Sie die Positionen hinzu, die im folgenden Code hervorgehoben werden. Dieser Code mach zwei Dinge:
     1.  Er wird sichergestellt, dass Benutzer nicht direkt über der Arbeitsbereich **Buchhaltung anzeigen** Seite Navigation können.
     2.  Er wird ein Navigationssteuerelement der **Rechnungsdetails** Seite der **Buchhaltung anzeigen** Seite ein.
 
-> [!NOTE] 
-> Die Namen der Seiten und andere Steuerelemente im Code müssen mit den Namen im Arbeitsbereich identisch sein.
+    > [!NOTE] 
+    > Die Namen der Seiten und andere Steuerelemente im Code müssen mit den Namen im Arbeitsbereich identisch sein.
 
+    ```javascript
     function main(metadataService, dataService, cacheService, $q) {
            return {
                appInit: function (appMetadata) {
@@ -439,7 +443,8 @@ Die Anforderungen für dieses Szenarios bestätigen, dass nur Verteilungen auf P
                  },
            };
         }
-
+    ```
+    
 2.  Laden Sie die Codedatei dem Arbeitsbereich hohe, indem Sie die **Logik** Registerkarte zum Überschreiben des Codes auswählen
 3.  Klicken Sie auf **Fertig**, um den Bearbeitungsmodus zu verlassen.
 4.  Klicken Sie auf **Zurück** und **Fertig**, um den Arbeitsbereich zu beenden

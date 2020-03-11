@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c0baf96315dd9fe6bc1984d337fd1c50ae47016a
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: cd6ec1013de757214db99ada02170bb6e2af96c0
+ms.sourcegitcommit: f52ddcad105aac4ad2caef709751ff80caf363c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3031042"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3036928"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -46,7 +46,7 @@ In diesen Szenarien besteht die Herausforderung darin, dass jedem freigegebenen 
 
 ### <a name="business-scenario"></a>Geschäftsszenario
 
-In diesem Szenario verwendet ein Unternehmen eine Bestandsstrategie, bei der Fertigwaren anhand von Chargennummern verfolgt werden. Diese Firma verwendet auch die WHS-Arbeitsauslastung. Da diese Auslastung eine gut gerüstete Logik für die Planung und Durchführung von Kommissionierungs- und Versandvorgängen für Artikel hat, für die Chargen aktiviert sind, werden die meisten Fertigprodukte mit der Bestandsreservierungshistorie „Charge unterhalb\[Lagerort\]“ verknüpft. Der Vorteil dieser Art des operativen Einrichtung besteht darin, dass Entscheidungen (die im Grunde genommen Reservierungsentscheidungen sind) darüber, welche Chargen kommissioniert werden sollen und wo sie im Lager abgelegt werden sollen, verschoben werden, bis mit der Kommissionierung begonnen wird. Sie werden nicht schon gemacht, wenn der Kunde bestellt.
+In diesem Szenario verwendet ein Unternehmen eine Bestandsstrategie, bei der Fertigwaren anhand von Chargennummern verfolgt werden. Diese Firma verwendet auch die WMS-Arbeitsauslastung. Da diese Auslastung eine gut gerüstete Logik für die Planung und Durchführung von Kommissionierungs- und Versandvorgängen für Artikel hat, für die Chargen aktiviert sind, werden die meisten Fertigprodukte mit der Bestandsreservierungshistorie „Charge unterhalb\[Lagerort\]“ verknüpft. Der Vorteil dieser Art des operativen Einrichtung besteht darin, dass Entscheidungen (die im Grunde genommen Reservierungsentscheidungen sind) darüber, welche Chargen kommissioniert werden sollen und wo sie im Lager abgelegt werden sollen, verschoben werden, bis mit der Kommissionierung begonnen wird. Sie werden nicht schon gemacht, wenn der Kunde bestellt.
 
 Obwohl die Reservierungshistorie „Charge unterhalb\[Lagerort\]“ den Geschäftszielen des Unternehmens dient, fordern viele der etablierten Unternehmenskunden bei der Nachbestellung die gleiche Charge an, wie beim vorherigen Kauf. Aus diesem Grund ist das Unternehmen bestrebt, die Regeln für die Chargenreservierung flexibel zu gestalten, sodass, je nachdem, ob der Kunde den gleichen Artikel wünscht, die folgenden Verhaltensweisen auftreten:
 

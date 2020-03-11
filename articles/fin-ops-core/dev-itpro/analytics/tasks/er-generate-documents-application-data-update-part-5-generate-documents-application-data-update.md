@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6af7113031fd77a0a7e06ec23a149a3fa7ad0012
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026062"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042849"
 ---
 # <a name="generate-documents-that-have-application-data"></a>Generieren von Dokumenten, die Anwendungsdaten haben
 
@@ -40,10 +40,14 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 ## <a name="set-up-foreign-trade-parameters"></a>Außenhandelsparameter einrichten
 1. Wechseln Sie zu "Steuer" > "Einstellungen" > "Außenhandel" > "Außenhandelsparameter".
 2. Klicken Sie auf die Registerkarte "Nummernkreis".
-    * Zum Archivieren der Details des Intrastat-Berichterstattungsprozess müssen wir Datensätze jedes Archivs, das wir erstellt haben identifizieren. Ein spezieller Nummernkreis muss konfiguriert werden.  
+
+    Zum Archivieren der Details des Intrastat-Berichterstattungsprozess müssen wir Datensätze jedes Archivs, das wir erstellt haben identifizieren. Ein spezieller Nummernkreis muss konfiguriert werden.  
+
 3. Wählen Sie die Intrastat-Archiv "ID-" Referenz aus.
 4. Geben Sie im Feld "Nummernkreiscode" einen Wert ein.
-    * Geben Sie im Feld "Nummernsequenzcode" einen Wert ein, oder wählen Sie einen Wert aus.  
+
+    Geben Sie im Feld "Nummernsequenzcode" einen Wert ein, oder wählen Sie einen Wert aus.  
+
 5. ResolveChanges den Nummersequenzcode.
 6. Klicken Sie auf "Speichern".
 7. Schließen Sie die Seite.
@@ -52,20 +56,25 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 1. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
 2. Erweitern Sie 'Intrastatmodell' (Modell) in der Struktur.
 3. Wählen Sie in der Strukturdarstellung "Intrastat(Modell)\Intrastat (Format)" aus.
-4. Klicken Sie auf "Ausführen".
+4. Klicken Sie auf Ausführen.
 5. Geben Sie im Feld Tabelle den Typ intrastat2.xml ein.
-    * intrastat2.xml  
 6. Klicken Sie auf "OK".
 
 ## <a name="review-er-format-executions-results"></a>Überprüfen Sie die Ergebnisse der ER-Formatausführung
 Erstellte XML Datei überprüfen.  
 1. Schließen Sie die Seite.
 2. Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Intrastat".
-    * Öffnen Sie dieses Formular, das die Intrastat-Buchungen enthält, die im generierten elektronischen Dokument enthalten sind.  
+
+    Öffnen Sie dieses Formular, das die Intrastat-Buchungen enthält, die im generierten elektronischen Dokument enthalten sind.  
+
 3. Intrastat-Archivkennung anklicken.
-    * Da das ausgeführte ER-Format nur Einstellungen für Anwendungsdatenenaktualisierungen enthält, wurden die Details des abgeschlossenen Intrastat-Bericht archiviert. In diesem Formular können Sie den Headerdatensatz des erstellten Dokumentarchivs finden.  
+
+    Da das ausgeführte ER-Format nur Einstellungen für Anwendungsdatenenaktualisierungen enthält, wurden die Details des abgeschlossenen Intrastat-Bericht archiviert. In diesem Formular können Sie den Headerdatensatz des erstellten Dokumentarchivs finden.  
+
 4. Klicken Sie auf Details.
-    * In diesem Formular können Sie die Details für das erstellte Dokumentarchiv finden.  
+
+    In diesem Formular können Sie die Details für das erstellte Dokumentarchiv finden.  
+
 5. Schließen Sie die Seite.
 6. Schließen Sie die Seite.
 7. Schließen Sie die Seite.

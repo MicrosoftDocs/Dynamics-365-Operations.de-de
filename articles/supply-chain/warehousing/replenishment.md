@@ -3,7 +3,7 @@ title: Nachschubübersicht
 description: Dieser Artikel beschreibt die Wiederbeschaffungsstrategien, die für Lagerorte, die die Funktionen der Lagerortverwaltung verwenden, verfügbar sind.
 author: Mirzaab
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3c1989f11563db343129c678623725e2e61b27fc
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 7aa17df3c3632c89f35a69022084bbd9f4171f36
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251467"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076354"
 ---
 # <a name="replenishment-overview"></a>Nachschubübersicht
 
@@ -49,6 +49,8 @@ Lagerplatzrichtlinien dienen zum Bestimmen, welcher Lagerort wieder aufgefüllt 
 Zusätzlich zur Erstellung einer Vorlage, müssen Sie einige Wiederbeschaffungseinstellungen in der Wellenvorlage angeben. Die Wellenvorlage sollte einen Wellenschritt für Wiederbeschaffung enthalten, der nur ausgeführt wird, wenn die Zuordnung eines Artikels nicht erfolgreich ist. Dieser Wiederbeschaffungswellenschritt verwendet einen Wellenschrittcode, um zu bestimmen, welche Wiederbeschaffungsvorlage verwendet werden soll. Wenn ein Wiederbeschaffungswellenschritt vorhanden ist, müssen Sie zusätzlich sicherstellen, dass **Auffüllen** im Abschnitt **Methoden** der Wellenvorlage ausgewählt ist. 
 
 Die Seite **Wiederbeschaffungsvorlage** enthält ein Kontrollkästchen **Wellenbedarf die Nutzung nicht reservierter Mengen gestatten**. Aktivieren Sie dieses Kontrollkästchen, wenn die Bedarfswiederbeschaffung in der Lage sein soll, nicht reservierte Mengen aus Arbeit, die über die ausgewählte Wiederbeschaffungsvorlage generiert wurde, abzuziehen. Um die Bedarfswiederbeschaffungsvorlage für diese Logik zu aktivieren, muss das Kontrollkästchen für jede bestehende Wiederbeschaffungsvorlage festgelegt werden. Wenn die Bedarfswiederbeschaffung am Lagerort ausgelöst wurde, wird der Bedarf von den bestehenden Wiederbeschaffungsarbeiten mit nicht reservierten Mengen abgezogen, wenn die Arbeit auf einer Wiederbeschaffungvorlage mit aktivierten Kontrollkästchen **Wellenbedarf die Nutzung nicht reservierter Mengen gestatten** stammt.
+
+**Nachschubeinheit** ist die minimale Einheit, die Sie auffüllen müssen. Dies muss eine ganze Zahl sein, die ein Vielfaches der Einheit ist. Das System rundet beim Anlegen von Arbeiten auf die höchstmögliche Einheit auf.
 
 Bedarfswiederbeschaffung wird für Aufträge, Umlagerungsaufträge, Produktionsaufträge und Kanbans unterstützt. 
 

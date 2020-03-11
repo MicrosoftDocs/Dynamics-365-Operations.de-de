@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 612ded1f68cc8e1b26b8046501bae1707175e23a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a5e7e6897f19dc0303ffbd3111f93669a91daa1b
+ms.sourcegitcommit: 4f668b23f5bfc6d6502858850d2ed59d7a79cfbb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188325"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3059375"
 ---
 # <a name="bank-statement-file-import-troubleshooting"></a>Bankauszugsdatei-Importproblembehandlung
 
@@ -40,7 +40,7 @@ Nachdem Sie versuchen, eine Bankauszugsdatei zu importieren, wechseln Sie zur Ei
 Vergleichen Sie die Bankdateilayoutdefinition mit der Finance-Importdefinition, und achten Sie auf eventuelle Unterschiede in den Feldern und den Elementen. Vergleichen Sie die Bankauszugdatei mit der jeweiligen Finance-Datei. In den Dateien ISO20022 sollten sämtliche Abweichungen einfach sein anzuzeigen.
 
 ## <a name="time-zone-differences-on-imported-bank-statements"></a>Zeitzonendifferenzen in importierten Bankauszügen
-Die Datum-Zeit-Werte in der Importdatei können sich von den Datum-Zeit-Werten unterscheiden, die in Finance and Operations angezeigt werden. Um diese Abweichung zu verhindern, können Sie auf der Seite **Datenquellen konfigurieren** eine Zeitzoneneinstellung einstellen. Weitere Informationen zur Eingabe einer Zeitzoneneinstellung finden Sie unter [Einrichten des erweiterten Bankabstimmungsimportprozesses](set-up-advanced-bank-reconciliation-import-process.md).
+Die Datums- und Zeitwerte in der Importdatei können von den in Finance and Operations angezeigten Datums- und Zeitwerten abweichen. Um diese Abweichung zu verhindern, können Sie auf der Seite **Datenquellen konfigurieren** eine Zeitzoneneinstellung einstellen. Weitere Informationen zur Eingabe einer Zeitzoneneinstellung finden Sie unter [Einrichten des erweiterten Bankabstimmungsimportprozesses](set-up-advanced-bank-reconciliation-import-process.md).
 
 ## <a name="transformations"></a>Umwandlungen
 In der Regel muss die Änderung bei einer von drei Umwandlungen vorgenommen werden. Jede Umwandlung ist für einen bestimmten Standard geschrieben.
@@ -58,9 +58,11 @@ Die Dateien BAI2 und MT940 sind text-basierte Dateien und benötigen eine Anpass
 
 1.  Erstellen Sie eine XML-Datei und kopieren Sie den folgenden Text hinein.
 
-        <Batch><![CDATA[PASTESTATEMENTFILEHERE
+    ```xml
+    <Batch><![CDATA[PASTESTATEMENTFILEHERE
         ]]></Batch>
-
+    ```
+    
 2.  Kopieren Sie den Inhalt der Bankauszugsdatei und fügen Sie ihn in die XML-Datei ein, sodass er **PASTESTATEMENTFILEHERE** ersetzt.
 
 ### <a name="debug-the-xslt"></a>Debuggen Sie die XSLT

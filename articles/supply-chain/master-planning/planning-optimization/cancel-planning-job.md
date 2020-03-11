@@ -1,9 +1,9 @@
 ---
 title: Abbrechen eines Planungsauftrags
-description: In diesem Thema wird erläutert, wie Sie einen aktiven Planungseinzelvorgang stornieren, der die Funktion „Planungsoptimierung“ verwendet.
+description: In diesem Thema wird erläutert, wie ein aktiver Planungsauftrag, der die Planungsoptimierungsfunktionalität verwendet, abgebrochen werden kann.
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,21 +19,22 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a2d90f04985fdd66ca83582ee676100fffb26981
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 18c5c7b8030fc6adbc548dab750e4f454aebc867
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773968"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076345"
 ---
+# <a name="cancel-a-planning-job"></a>Abbrechen eines Planungsvorgangs
+
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/preview-banner.md)]
 
-# <a name="cancel-a-planning-job"></a>Abbrechen eines Planungsauftrags
+In Microsoft Dynamics 365 Supply Chain Management können Sie einen aktiven Planungsauftrag, der die Planungsoptimierungsfunktionalität verwendet, abbrechen. Wenn Sie im Dialogfenster **Abbrechen** wählen, wenn ein Planungsoptimierungsjob direkt von der Benutzeroberfläche aus (nicht im Hintergrund) ausgelöst wird, wird der Planungsoptimierungsjob nicht abgebrochen. Selbst wenn Sie eine Warnung wie „Vorgang abgebrochen“ erhalten, müssen Sie die folgenden Schritte durchführen, um einen Planungsjob mit Planungsoptimierung abzubrechen.
 
-In Microsoft Dynamics 365 Supply Chain Management können Sie einen aktiven Planungseinzelvorgang stornieren, der die Funktion „Planungsoptimierung“ verwendet.
 
-Um einen aktiven Planungseinzelvorgang zu stornieren, führen Sie die folgenden Schritte aus.
+Um einen aktiven Planungseinzelvorgang zu stornieren, führen Sie die folgenden Schritte aus. 
 
 > [!NOTE]
 > Es können nur aktive Aufträge abgebrochen werden.
@@ -49,9 +50,9 @@ Der Status des Einzelvorgangs lautet **Wird storniert**, bis der Planungsoptimie
 > [!NOTE]
 > Um Statusänderungen anzuzeigen, müssen Sie die Seite aktualisieren, indem Sie die Schaltfläche **Aktualisieren** auswählen.
 
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Planungsoptimierung – Übersicht](planning-optimization-overview.md)
+[Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
 
 [Erste Schritte mit der Planungsoptimierung](get-started.md)
 

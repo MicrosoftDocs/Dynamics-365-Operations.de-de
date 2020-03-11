@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a46ff0a1d6e29cc567a86fae60ff803a102d1a2e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2181219"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071589"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 
@@ -216,7 +216,7 @@ In diesem Beispiel bedeutet die Berechnungsformel **@100+@330**, dass der Betrag
 Wenn die Zeile in einer Zeilendefinition den Formatcode **CAL** hat und Sie geben eine mathematische Berechnung in die Zelle **Verwandte Formeln/Zeilen/Einheiten** ein, müssen Sie auch den Buchstaben der zugeordneten Spalte und Zeile im Bericht eingeben. Geben Sie **A.120** ein, um Spalte "A", Zeile 120 anzugeben. Sie können auch ein @-Zeichen verwenden, um alle Spalten anzugeben. Geben Sie z. B. **@120** ein, um alle Spalten in Zeile 120 anzugeben. Mathematische Berechnungen, die nicht über einen Spaltenbuchstaben oder ein @-Zeichens erfolgen werden als reelle Zahl angesehen.
 
 > [!NOTE]
-> Wenn Sie einen Bezeichungszeilencode nutzen, um eine Zeile zu referenzieren, müssen Sie einen Punkt (.) als Trennzeichen zwischen dem Spaltenbuchstaben und der Bezeichnung verwenden (beispielsweise **A.GROSS\_MARGIN/A.SALES**). Wenn Sie ein At-Zeichen (@) verwenden, ist kein Trennzeichen erforderlich (beispielsweise **@GROSS\_MARGIN/@SALES**).
+> Wenn Sie einen Bezeichungszeilencode nutzen, um eine Zeile zu referenzieren, müssen Sie einen Punkt (.) als Trennzeichen zwischen dem Spaltenbuchstaben und der Bezeichnung verwenden (beispielsweise **A.GROSS\_MARGIN/A.SALES**). Wenn Sie ein At-Zeichen (@) verwenden, ist ein Trennzeichen nicht erforderlich (z.B. **\@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Beispiel für eine Berechnungsformel für eine bestimmte Spalte
 

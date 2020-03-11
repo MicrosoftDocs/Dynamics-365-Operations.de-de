@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: 4992b42bae5edac0f588f08cd6b47ac2795f4c5d
-ms.sourcegitcommit: 615ed3e4260192ba36826e128f1afa1588e94845
+ms.openlocfilehash: c885602f99995d536d8ff3be43e67578abcda3fc
+ms.sourcegitcommit: a2f9dce06322dada6b5f1c82051ef2359f8c0f12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2020
-ms.locfileid: "2974475"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "3081817"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-january-14-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Talent (14. Januar 2020)
 
@@ -58,4 +58,4 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 | **Beschäftigung** Entitätsänderungen | <ul><li>**Finanzdimensionen** hinzugefügt</li><li>**Kündigungsgrund** hinzugefügt</li><li>**Kündigungsdatum** umbenannt von **Übergangsdatum**</li><li>**Probezeitdatum** hinzugefügt</li></ul> |
 | **Arbeitskraftadresse** Entitätsänderungen | <ul><li>**Straße** hinzugefügt</li><li>**Adresszeile 1**, **Adresszeile 2**, und **Adresszeile 3** als veraltet markiert</li></ul> |
 | Neue variable Vergütung-Einrichtungsentitäten | <ul><li>**Plantyp für variable Vergütung**</li><li>**Plan für variable Vergütung**</li><li>**Übertragungsregeln**</li><li>**Variable Planstufe zur Vergütung**</li></ul> |
-| Neu **Arbeitskraftkalender-Beschäftigung** Entität | <ul><li>**Arbeitkraftkalender-Entität** hinzugefügt</li></ul> |
+| Neue **Arbeitskraftkalender-Beschäftigung** Entität | <ul><li>**Arbeitkraftkalender-Entität** hinzugefügt</li></ul> |

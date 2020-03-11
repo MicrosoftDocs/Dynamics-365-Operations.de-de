@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 29d5389315c5a9ac75e2a296adac2544a8a639d3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: faa76c800451060dd867a914c69d12fd96afe217
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004696"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057603"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
@@ -110,7 +110,7 @@ Der Steuererfassungsdienst unterstützt nur Szenarien, bei denen die Mehrwertste
 
 ## <a name="set-up-commerce-for-austria"></a>Commerce für Österreich einrichten
 
-In diesem Abschnitt werden die Commerce-Einstellungen beschrieben, die für Österreich spezifisch und empfohlen sind. Weitere Informationen zum Einrichten von Informationen finden Sie unter [Hilferessourcen für Dynamics 365 Retail](../index.md).
+In diesem Abschnitt werden die Commerce-Einstellungen beschrieben, die für Österreich spezifisch und empfohlen sind. Weitere Informationen zum Einrichten finden Sie unter [Commerce-Homepage](../index.md).
 
 Um die Österreich-spezifischen Funktionen zu verwenden, müssen Sie die folgenden Einstellungen angeben:
 
@@ -216,7 +216,7 @@ Weitere Informationen zum Arbeiten mit Belegformaten finden Sie unter [Einrichte
 
 ### <a name="configure-fiscal-integration"></a>Steuerintegration konfigurieren
 
-Schließen Sie die Steuerintegrationseinrichtungsschritte ab, wie beschrieben in [Steuerintegration für Retail Channels einrichten](setting-up-fiscal-integration-for-retail-channel.md):
+Schließen Sie die Schritte zur Einrichtung der steuerlichen Integration ab, wie unter [Einrichtung der steuerlichen Integration für Commerce-Kanäle](setting-up-fiscal-integration-for-retail-channel.md) beschrieben:
 
 - [Richten Sie einen Steuererfassungsprozesses ein](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Beachten Sie auch die Einstellungen für den Steuererfassungsprozess, die [für dieses Steuererfassungsdienst-Integrationsbeispiel spezifisch sind](#set-up-the-registration-process).
 - [Legen Sie Einstellungen zur Fehlerbehandlung fest](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
@@ -365,7 +365,7 @@ Die Hardware station-Erweiterungskomponenten sind in den Hardware station-Beispi
 
 ### <a name="set-up-the-registration-process"></a>Den Erfassungsprozess einrichten
 
-Um den Erfassungsprozess zu aktivieren, führen Sie diese Schritte aus, um die Zentralverwaltung einzurichten. Weitere Details finden Sie unter [Steuerintegration für Retail Channel einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
+Um den Erfassungsprozess zu aktivieren, führen Sie diese Schritte aus, um die Zentralverwaltung einzurichten. Weitere Einzelheiten finden Sie unter [Steuerliche Integration für Commerce-Kanäle einrichten](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process).
 
 1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Gemeinsame Commerce-Parameter**. Auf der Registerkarte **Allgemein** legen Sie die Option **Steuerintegration aktivieren** auf **Ja** fest.
 2. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> Steuerintegration \> Steuerkonnektoren**, und laden Sie die Konnektorkonfiguration. Der Dateispeicherort ist **RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration\\ConnectorEFRSample.xml**.
@@ -421,7 +421,7 @@ Die vorherige Prozedur aktiviert die Erweiterungen, die Komponenten des Steuerer
         ```
 
 3. Starten Sie die MSBuild-Eingabeaufforderung für Visual Studio-Hilfsprogramm und führen Sie **msbuild** unter dem Ordner Retail SDK aus, um bereitstellbare Pakete zu erstellen.
-4. Übernehmen Sie die Pakete über Microsoft Dynamics Lifecycle Services (LCS) oder manuell. Weitere Informationen finden Sie unter [Bereitstellbare Einzelhandelspakete erstellen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. Übernehmen Sie die Pakete über Microsoft Dynamics Lifecycle Services (LCS) oder manuell. Weitere Informationen finden Sie unter [Bereitstellbare Pakete erstellen](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 5. Schließen Sie alle erforderlichen Setupaufgaben ab, die im Abschnitt [Commerce für Österreich einrichten](#set-up-commerce-for-austria) beschrieben sind.
 
 ## <a name="design-of-extensions"></a>Entwurf von Erweiterungen
@@ -432,7 +432,7 @@ Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter dienstspezifis
 
 Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**.
 
-Weitere Details zum Entwerfen der Steuerintegrationslösung finden Sie unter [Überblick der Steuerintegration für Retail Channel](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
+Weitere Einzelheiten über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### <a name="request-handler"></a>Anforderungshandler
     

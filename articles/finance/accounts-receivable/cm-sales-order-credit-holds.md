@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 23f819139e74d81d24810c63bae1de19358983b9
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015240"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057669"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kreditsperren für Aufträge
 [!include [banner](../includes/banner.md)]
@@ -264,7 +264,7 @@ Gesperrte Kundenaufträge können nicht mit dem Workflow verarbeitet werden.
 #### <a name="releasing-orders-that-were-added-to-the-credit-management-hold-list-with-a-forced-credit-hold"></a>Freigeben von Aufträgen, die der Kreditmanagement-Sperrliste mit einer erzwungenen Kreditsperre hinzugefügt wurden
 Kundenaufträge mit einem Grund für erzwungenes Halten können nicht automatisch freigegeben werden. Wenn der Auftrag gesperrt wurde und Sie einen Prozess verwendet haben, der Aufträge automatisch freigibt, wird der Auftrag als **Bereit zur Freigabe** angezeigt und bleibt in der Warteliste. Sie müssen das Menü **Freigabe** verwenden, um die Bestellung freizugeben.
  
-## <a name="free-text-invoices-retail-orders-and-project-invoice-support-in-credit-management"></a>Freitextrechnungen, Einzelhandelsaufträge und Projektrechnungen im Kreditmanagement 
-Das Kreditmanagement kann derzeit nur für Aufträge verwendet werden. In Freitextrechnungen, Verkaufsstellenaufträgen und Callcenteraufträgen werden die temporären Kreditlimits und Versicherungen/Garantien verwendet, die Sie hinzufügen, um das Kreditlimit anzupassen. Sie verwenden die Sperrregeln nicht und werden nicht in die Sperrliste aufgenommen, wenn ein Problem mit dem Kreditlimit vorliegt.
+## <a name="free-text-invoices-orders-and-project-invoice-support-in-credit-management"></a>Freitext-Rechnungen, Aufträge und Unterstützung von Projektrechnungen im Kreditmanagement 
+Das Kreditmanagement kann derzeit nur für Aufträge verwendet werden. Freitext-Rechnungen, Point-of-Sales-Aufträge und Call-Center-Aufträge verwenden die temporären Kreditlimits und Versicherungen/Garantien, die Sie zur Anpassung des Kreditlimits hinzufügen. Sie verwenden die Sperrregeln nicht und werden nicht in die Sperrliste aufgenommen, wenn ein Problem mit dem Kreditlimit vorliegt.
 
 Projektrechnungen werden im Kreditmanagement nicht unterstützt.

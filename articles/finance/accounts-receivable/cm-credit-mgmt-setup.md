@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 02d7e2238e58098428397121de848a1947a991ad
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.openlocfilehash: b4234ac428cc80836852d4edfb0f37098b4a1e8e
+ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015237"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "3071659"
 ---
 # <a name="credit-management-parameters-setup"></a>Einrichtung der Parameter für das Kreditmanagement
 
@@ -38,8 +38,8 @@ Es gibt vier Inforegister, in denen Sie die Parameter ändern können, die das K
 - Stellen Sie die Option **Bearbeitung des Kundenauftragswerts nach Freigabe des Auftragsstopps zulassen** auf **Ja**, um zu verlangen, dass die Buchungsregeln erneut überprüft werden, wenn der Kundenauftragswert (erweiterter Preis) seit der Freigabe des Kundenauftrags aus der Warteliste geändert wurde. .
 - Im Feld **Gründe für stornierte Bestellungen** wählen Sie den Freigabegrund aus, der standardmäßig verwendet wird, wenn ein Kundenauftrag storniert wird, für den das Kreditmanagement eingestellt war.
 - Stellen Sie die Option **Kreditlimit für Debitorenkreditgruppen überprüfen** auf **Ja**, um das Kreditlimit einer Debitorenkreditgruppe zu überprüfen, wenn der Kunde in einem Kundenauftrag zu einer Debitorenkreditgruppe gehört. Das Kreditlimit für die Gruppe wird überprüft, und wenn es ausreicht, wird das Kreditlimit für den Debitor überprüft.
-- Stellen Sie die Option **Kreditlimit überprüfen, wenn die Zahlungsbedingungen erhöht werden** auf **Ja**, um die Rangfolge der Zahlungsbedingungen zu überprüfen und festzustellen, ob die Zahlungsbedingungen im Kundenauftrag von den Zahlungsbedingungen im Kundenauftrag abweichen. Wenn die neuen Zahlungsbedingungen einen höheren Rang als die ursprünglichen Zahlungsbedingungen haben, wird die Bestellung im Kreditmanagement zurückgestellt.
-- Stellen Sie die Option **Kreditlimit überprüfen, wenn ein Rabattausgleich erhöht wird** auf **Ja**, um die Rangfolge des Rabattausgleichs zu überprüfen und festzustellen, ob der Skonto im Kundenauftrag vom Skonto im Kundenauftrag abweicht. Wenn der neue Skonto einen höheren Rang als der ursprüngliche Skonto hat, wird die Bestellung im Kreditmanagement zurückgestellt.
+- Setzen Sie die Option **Kreditlimit prüfen, wenn Zahlungsbedingungen erhöht werden** Option auf **Ja**, um die Rangfolge der Zahlungsbedingungen zu prüfen und festzustellen, ob die Zahlungsbedingungen auf dem Kundenauftrag von den Standardzahlungsbedingungen für den Kunden abweichen. Wenn die neuen Zahlungsbedingungen einen höheren Rang als die ursprünglichen Zahlungsbedingungen haben, wird die Bestellung im Kreditmanagement zurückgestellt.
+- Setzen Sie die Option **Kreditlimit prüfen, wenn ein Abrechnungsrabatt erhöht wird** Option auf **Ja**, um die Rangfolge der Abrechnungsrabatte zu prüfen und festzustellen, ob der Skonto auf den Kundenauftrag vom Standardskonto für den Kunden abweicht. Wenn der neue Skonto einen höheren Rang als der ursprüngliche Skonto hat, wird die Bestellung im Kreditmanagement zurückgestellt.
 - Im Feld **Grund für die Freigabe geänderter Aufträge** wählen Sie den Freigabegrund aus, der standardmäßig verwendet wird, wenn geänderte Aufträge automatisch aus der Kreditverwaltung freigegeben werden.
 - Stellen Sie die Option **Sperrregel für abgelaufenes Kreditlimit ignorieren, wenn das Ablaufdatum leer ist** auf **Ja**, um das Verhalten der Regel **Kreditlimit abgelaufen** zu steuern. Stellen Sie die Option auf **Nein**, um eine Bestellung zu sperren, wenn das Ablaufdatum leer ist.
 - In der Lagerverwaltung können Ladungen zum Zeitpunkt der Auftragserfassung angelegt werden. Stellen Sie die Option **Blockierte Ladungspositionen entfernen** auf **Nein**, um Auftragspositionen auf der Last zu lassen, wenn ein Kundenauftrag mit einer Kreditlimitsperre belegt ist. Die Ladung kann nicht verarbeitet werden, solange der Kundenauftrag mit einer Sperre belegt ist. Stellen Sie die Option auf **Ja**, um Auftragspositionen von der Last zu entfernen, wenn ein Kundenauftrag mit einer Kreditlimitsperre belegt ist. Die Last kann dann verarbeitet werden.

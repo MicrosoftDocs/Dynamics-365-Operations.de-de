@@ -1,9 +1,9 @@
 ---
 title: Startseite der lokalen Bereitstellung
 description: Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen.
-author: kfend
+author: sericks007
 manager: AnnBe
-ms.date: 11/04/2019
+ms.date: 02/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -14,15 +14,15 @@ ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 81698517dc501a6001f62216f3804510144c1045
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
+ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770945"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "3090588"
 ---
 # <a name="on-premises-deployment-home-page"></a>On-Premises-Bereitstellung – Startseite
 
@@ -50,19 +50,19 @@ Sie können Dynamics 365 Finance und Operations (on-premises) bereitstellen. Wen
 - [Dokumentverwaltung konfigurieren](../../fin-ops/organization-administration/configure-document-management.md)
 - [Elektronische Berichtskonfigurationen (ER) importieren](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Generieren, Veröffentlichen und Drucken von Dokumenten in lokalen Bereitstellungen](../analytics/printing-capabilities-on-premises.md)
-- [Proxies für lokale Umgebungen konfigurieren](onprem-reverseproxy.md)
-- [Technischen Support für Finance and Operations Apps einrichten](../lifecycle-services/support-experience.md)
+- [Konfigurieren von Proxys für lokale Umgebungen](onprem-reverseproxy.md)
+- [Technische Unterstützung für Finance and Operations-Apps einrichten](../lifecycle-services/support-experience.md)
 - [Clientinternetverbindung](../user-interface/client-disconnected.md)
 - [Anwenden von Updates in lokalen Bereitstellungen](apply-updates-on-premises.md)
 - [Lokale Umgebungen neu bereitstellen](redeploy-on-prem.md)
 
-## <a name="retail"></a>Retail
-- [In lokalen Bereitstellungen verfügbare Einzelhandelsfunktionen](../../../retail/retail-onprem.md)
-- [Installationsschritte für Einzelhandelskanalkomponenten in einer lokalen Umgebung](deploy-retail-onprem.md)
-- [Konfigurieren, Installieren und Aktivieren von Retail Modern POS (MPOS)](../../../retail/retail-modern-pos-device-activation.md)
-- [Konfigurieren und Installieren von Retail Store Scale Unit](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+## <a name="commerce"></a>Commerce
+- [Commerce-Fnktionen, die in lokalen Implementierungen verfügbar sind](../../../retail/retail-onprem.md)
+- [Installationsschritte für Retail Channel-Komponenten in einer lokalen Umgebung](deploy-retail-onprem.md)
+- [Modern POS (MPOS) Konfigurieren, installieren und aktivieren](../../../retail/retail-modern-pos-device-activation.md)
+- [Commerce Scale Unit konfigurieren und installieren](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-## <a name="upgrade"></a>Upgrade durchführen
+## <a name="upgrade"></a>Upgrade
 - [In-Place-Upgrade-Prozess für lokale Umgebungen](../migration-upgrade/on-prem-upgrade.md)
 
 ## <a name="other-resources"></a>Weitere Ressourcen
@@ -70,7 +70,7 @@ Sie können Dynamics 365 Finance und Operations (on-premises) bereitstellen. Wen
 - [Scripte zur Behebung von Problemen in lokalen Umgebungen](onprem-tsg-implementations.md)
 - [Zertifikatrotation](certificate-rotation-on-prem.md)
 - [On-premises-Diagnosen](on-premises-diagnostics.md)
-- [Nicht in On-Premises-Bereitstellungen implementierte Funktionen](../../fin-ops/get-started/features-not-implemented-on-prem.md)
-- [Entfernte oder veraltete Funktionen für Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Nicht in lokale Bereitstellungen implementierte Funktionen](../../fin-ops/get-started/features-not-implemented-on-prem.md)
+- [Entferntes oder veraltetes Merkmal für Finance and Operations](../migration-upgrade/deprecated-features.md)
 - [Software-Lebenszyklusrichtlinie und lokale Freigaben](../migration-upgrade/on-prem-version-update-policy.md)
  

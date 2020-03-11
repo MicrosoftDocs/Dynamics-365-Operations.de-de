@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b1c6a3f3fd5b55012d89a6c9f0bf2ed5dddd13c
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916659"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042710"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelsprache in der elektronischen Berichterstellung
 
@@ -154,7 +154,7 @@ ER ermöglicht es Ihnen, die Liste von Funktionen zu verlängern, die in ER-Ausd
 
 Sie können zusammengesetzte Ausdrücke erstellen, die Funktionen aus verschiedenen Kategorien verwenden, sofern die Datentypen übereinstimmen. Wenn Sie Funktionen zusammen verwenden, passen Sie den Datentyp der Ausgabe von einer Funktion an den Eingabedatentyp an, der von einer anderen Funktion benötigt wird. Um beispielsweise einen möglichen „list-is-empty“-Fehler bei der Bindung eines Feldes mit dem EB-Formatelement zu vermeiden, kombinieren Sie Funktionen aus der Kategorie [List](er-functions-category-list.md) mit einer Funktion aus der Kategorie [Logical](er-functions-category-logical.md), wie das folgende Beispiel zeigt. Hier verwendet die Formel die [IF](er-functions-logical-if.md)-Funktion, um zu testen, ob die **IntrastatTotals**-Liste leer ist, bevor der Wert der erforderlichen Aggregation aus dieser Liste zurückgegeben wird. Wenn die **IntrastatTotals**-Liste leer ist, gibt die Formel **0** (Null) zurück.
 
-```
+```vb
 IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 
@@ -162,7 +162,7 @@ IF(ISEMPTY(IntrastatTotals), 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded'
 
 Häufig können Sie dasselbe Datenumwandlungsergebnis auf verschiedene Arten erhalten, indem Sie Funktionen aus verschiedenen Kategorien oder verschiedene Funktionen aus derselben Kategorie verwenden. Beispielsweise kann der vorherige Ausdruck auch mithilfe der [COUNT](er-functions-list-count.md)-Funktion aus der [List](er-functions-category-list.md)-Kategorie konfiguriert werden.
 
-```
+```vb
 IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded') 
 ```
 

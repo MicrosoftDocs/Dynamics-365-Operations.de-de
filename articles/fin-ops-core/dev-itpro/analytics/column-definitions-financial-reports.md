@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 68a92610a880c574b4a3a48951c432bc2764c24b
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 408767539628a14f8ea039155c72f5e9aa6803af
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771540"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070759"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Spaltendefinitionen in Finanzberichten
 
@@ -120,7 +120,7 @@ In der folgenden Tabelle werden die Spalteneinschränkungscodes beschrieben.
 | ADJ                     | Schränken Sie die Beträge in der Spalte auf Zeitraumberichtigungsbeträge (falls verfügbar) ein. |
 | XAD                     | Schränken Sie die Beträge in der Spalte so ein, dass Zeitraumberichtigungsbeträge (falls verfügbar) ausgeschlossen werden. |
 | PT                      | Schränken Sie die Beträge in der Spalte so ein, sodass nur gebuchte Posten enthalten sind, wenn diese verfügbar sind. |
-| UPT                     | Beschränken Sie die Beträge in der Spalte, sodass nur nicht gebuchte Transaktionen enthalten sind, wenn diese Transaktionen verfügbar sind.<p><strong>Hinweis:</strong> Nicht alle Daten unterstützen nicht gebuchte Transaktionen. Weitere Informationen finden Sie im <a href='https://go.microsoft.com/fwlink/?LinkID=162565'>Datenintegrationshandbuch</a> für Ihr Microsoft Dynamics ERP-System.</p> |
+| UPT                     | Beschränken Sie die Beträge in der Spalte, sodass nur nicht gebuchte Transaktionen enthalten sind, wenn diese Transaktionen verfügbar sind.<p><strong>Hinweis:</strong> Nicht alle Daten unterstützen nicht gebuchte Transaktionen. </p> |
 
 ### <a name="restrict-a-column-to-a-reporting-unit"></a>Einschränken einer Spalte auf eine Berichtseinheit
 

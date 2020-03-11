@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9ce977b36cd96a27a228dba1bc8c8445bafd879
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: 961ccd18e70d4f9851027492366a7d9408a668c5
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916383"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042411"
 ---
 # <a name="DATETODATETIME">DATETODATETIME EB-Funktion</a>
 
@@ -33,7 +33,7 @@ Die Funktion `DATETODATETIME` gibt den Wert *DateTime* zurück, der über den vo
 
 ## <a name="syntax"></a>Syntax
 
-```
+```vb
 DATETODATETIME (date)
 ```
 
@@ -51,7 +51,7 @@ Der resultierende Wert für Datum/Uhrzeit.
 
 ## <a name="example-1"></a>Beispiel 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` gibt das Datum der aktuellen Microsoft Dynamics 365 Finance-Sitzung, Dezember 24, 2015, mit **12/24/2015 12:00:00 AM** zurück. In diesem Beispiel ist **CompInfo** eine Datenquelle der elektronischen Berichterstellung (EB) des Typs **Finance and Operations/Tabelle** und bezieht sich auf die Tabelle „CompanyInfo“.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` gibt das Datum der aktuellen Microsoft Dynamics 365 Finance-Sitzung, Dezember 24, 2015, mit **12/24/2015 12:00:00 AM** zurück. In diesem Beispiel ist **CompInfo** eine Datenquelle für die elektronische Berichterstattung (ER) vom Typ **Finance and Operations/Tabelle**, und sie bezieht sich auf die Tabelle CompanyInfo.
 
 ## <a name="example-2"></a>Beispiel 2
 

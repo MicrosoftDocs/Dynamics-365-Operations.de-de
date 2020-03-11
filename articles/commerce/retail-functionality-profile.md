@@ -1,6 +1,6 @@
 ---
-title: Erstellen eines Einzelhandelsfunktionsprofils
-description: In diesem Thema wird beschrieben, wie Sie ein Einzelhandelsfunktionsprofil in Microsoft Dynamics 365 Commerce erstellen.
+title: Ein Einzelhandelsfunktionsprofil erstellen
+description: In diesem Thema wird beschrieben, wie Sie ein Funktionsprofil in Microsoft Dynamics 365 Commerce erstellen.
 author: samjarawan
 manager: annbe
 ms.date: 01/27/2020
@@ -17,27 +17,27 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9fb0fd63b11e55f2b153fc9c135f148a6e343057
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6bee51eb25b04eb65e588dd4cf54a0cef587aa15
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002842"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057347"
 ---
-# <a name="create-a-retail-functionality-profile"></a>Erstellen eines Einzelhandelsfunktionsprofils
+# <a name="create-a-retail-functionality-profile"></a>Ein Einzelhandelsfunktionsprofil erstellen
 
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Sie ein Einzelhandelsfunktionsprofil in Microsoft Dynamics 365 Commerce erstellen.
+In diesem Thema wird beschrieben, wie Sie ein Funktionsprofil in Microsoft Dynamics 365 Commerce erstellen.
 
 ## <a name="overview"></a>Übersicht
 
-Das Einzelhandelsfunktionsprofil bietet verschiedene Einstellungen für Onlinekanäle. Jeder Einzelhandelskanal muss ein Einzelhandelsfunktionsprofil angeben.
+Das Funktionsprofil für den Handel bietet verschiedene Einstellungen, die für Online-Kanäle verwendet werden. Jeder Kanal muss ein Funktionsprofil angeben.
 
-## <a name="create-a-retail-functionality-profile"></a>Erstellen eines Einzelhandelsfunktionsprofils
+## <a name="create-a-functionality-profile"></a>Ein Funktionsprofil erstellen
 
-Um ein Einzelhandelsfunktionsprofil zu erstellen, folgen Sie diesen Schritten.
+Führen Sie die folgenden Schritte aus, um ein Funktionsprofil zu erstellen.
 
 1. Gehen Sie im Navigationsbereich zu **Module \> Kanaleinrichtung \> POS-Profile \> Funktionsprofile**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
@@ -51,9 +51,9 @@ Um ein Einzelhandelsfunktionsprofil zu erstellen, folgen Sie diesen Schritten.
 1. Ändern Sie im Abschnitt **Infocodes** die Einstellungen nach Bedarf.
 1. Ändern Sie im Abschnitt **Belegnummerierung** die Einstellungen nach Bedarf. 
   
-Das folgende Bild zeigt ein Beispiel für ein Einzelhandelsfunktionsprofil.
+Die folgende Abbildung zeigt ein Beispiel für ein Funktionsprofil.
   
-![Beispiel für ein Einzelhandelsfunktionsprofil](media/retail-functionality-profile.png)
+![Beispiel für ein Funktionalitätsprofil](media/retail-functionality-profile.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
