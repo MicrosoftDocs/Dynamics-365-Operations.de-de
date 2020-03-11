@@ -18,35 +18,35 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0b4c93a4705cd0e382b9b6c7af1d199beeceabe
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: d91caff1a1b89e060a16833e53f3647208ed3826
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915992"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3041422"
 ---
-# <span data-ttu-id="f5232-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY EB-Funktion</a></span><span class="sxs-lookup"><span data-stu-id="f5232-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY ER function</a></span></span>
+# <span data-ttu-id="b8869-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY EB-Funktion</a></span><span class="sxs-lookup"><span data-stu-id="b8869-103"><a name="GETCURRENTCOMPANY">GETCURRENTCOMPANY ER function</a></span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="f5232-104">Die Funktion `GETCURRENTCOMPANY` gibt den Wert *String* zurück, der den Code für die juristische Person (Unternehmen) darstellt, bei dem ein Benutzer derzeit angemeldet ist.</span><span class="sxs-lookup"><span data-stu-id="f5232-104">The `GETCURRENTCOMPANY` function returns a *String* value that represents the code for the legal entity (company) that a user is currently signed in to.</span></span>
+<span data-ttu-id="b8869-104">Die Funktion `GETCURRENTCOMPANY` gibt den Wert *String* zurück, der den Code für die juristische Person (Unternehmen) darstellt, bei dem ein Benutzer derzeit angemeldet ist.</span><span class="sxs-lookup"><span data-stu-id="b8869-104">The `GETCURRENTCOMPANY` function returns a *String* value that represents the code for the legal entity (company) that a user is currently signed in to.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f5232-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f5232-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b8869-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b8869-105">Syntax</span></span>
 
-```
+```vb
 GETCURRENTCOMPANY ()
 ```
 
-## <a name="return-values"></a><span data-ttu-id="f5232-106">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="f5232-106">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="b8869-106">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="b8869-106">Return values</span></span>
 
-<span data-ttu-id="f5232-107">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="f5232-107">*String*</span></span>
+<span data-ttu-id="b8869-107">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="b8869-107">*String*</span></span>
 
-<span data-ttu-id="f5232-108">Der resultierende Textwert.</span><span class="sxs-lookup"><span data-stu-id="f5232-108">The resulting text value.</span></span>
+<span data-ttu-id="b8869-108">Der resultierende Textwert.</span><span class="sxs-lookup"><span data-stu-id="b8869-108">The resulting text value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f5232-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f5232-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b8869-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b8869-109">Example</span></span>
 
-<span data-ttu-id="f5232-110">`GETCURRENTCOMPANY ()` gibt **USMF** für einen Benutzer zurück, der beim Unternehmen **Contoso Entertainment System USA** angemeldet ist.</span><span class="sxs-lookup"><span data-stu-id="f5232-110">`GETCURRENTCOMPANY ()` returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company.</span></span>
+<span data-ttu-id="b8869-110">`GETCURRENTCOMPANY ()` gibt **USMF** für einen Benutzer zurück, der beim Unternehmen **Contoso Entertainment System USA** angemeldet ist.</span><span class="sxs-lookup"><span data-stu-id="b8869-110">`GETCURRENTCOMPANY ()` returns **USMF** for a user who is signed in to the **Contoso Entertainment System USA** company.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="f5232-111">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="f5232-111">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b8869-111">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="b8869-111">Additional resources</span></span>
 
-[<span data-ttu-id="f5232-112">Andere (geschäftsdomänenspezifische) Funktionen</span><span class="sxs-lookup"><span data-stu-id="f5232-112">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="b8869-112">Andere (geschäftsdomänenspezifische) Funktionen</span><span class="sxs-lookup"><span data-stu-id="b8869-112">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
