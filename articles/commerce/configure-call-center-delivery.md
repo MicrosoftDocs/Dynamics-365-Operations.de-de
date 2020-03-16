@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9f043d66fbd417633de71b5fa12b13b3f04e3452
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022611"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057809"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurieren von Callcenter-Lieferarten und -Belastungen
 
@@ -66,7 +66,7 @@ Zuschläge können so konfiguriert werden, dass sie für eine bestimmte Lieferar
 
 Im Abschnitt **Positionen** können Sie je nach Bedarf eine oder mehrere Gebühren pro Währung definieren. Gebühren müssen mit einem Code für Belastungen verknüpft sein, der die Regeln für die wertmäßigen Buchungen der Gebühr festlegt. Das Feld **Kategorie** wird verwendet, um festzulegen, wie Gebühren berechnet werden. Zum Beispiel, wenn Kunden eine Pauschale von $9.95 berechnet werden soll, um eine Bestellung durch eine bestimmte Lieferart versenden zu lassen, verwenden Sie die Kategorie **Fest**. Wenn das Unternehmen beschließt, den Kunden einen Prozentsatz der Auftragssumme in Rechnung zu stellen, um die Lieferzuschläge zu decken, verwenden Sie die Kategorie **Prozent**. Die tatsächliche Gebühr für den Kunden wird im Feld **Wert der sonstigen Zuschläge** definiert.
 
-Einzelhandelsunternehmen konfigurieren häufig abgestufte Gebühren. In diesem Fall richtet sich der Betrag, den der Kunde für die Lieferung bezahlt, nach dem Auftragswert. Um abgestufte Gebühren zu konfigurieren, geben Sie Werte in die Felder **Von-Betrag** und **Bis-Betrag** ein, zusätzlich zur Definition der Gebühr selbst im Feld **Wert der sonstigen Zuschläge**. Zum Beispiel, für Aufträge, die einen Wert von weniger als $50 haben, berechnet ein Einzelhändler $5.95 für den Bodenversand. Für Aufträge, deren Wert gleich oder größer als $50, aber kleiner als $100 ist, berechnet der Einzelhändler $7,95. Für Aufträge, deren Wert gleich oder höher als $100 ist, bietet der Händler kostenlosen Versand an. Die folgende Abbildung zeigt die Konfiguration dieser Gebühren.
+Unternehmen konfigurieren oft gestaffelte Gebühren. In diesem Fall richtet sich der Betrag, den der Kunde für die Lieferung bezahlt, nach dem Auftragswert. Um abgestufte Gebühren zu konfigurieren, geben Sie Werte in die Felder **Von-Betrag** und **Bis-Betrag** ein, zusätzlich zur Definition der Gebühr selbst im Feld **Wert der sonstigen Zuschläge**. Zum Beispiel, für Aufträge, die einen Wert von weniger als $50 haben, berechnet ein Einzelhändler $5.95 für den Bodenversand. Für Aufträge, deren Wert gleich oder größer als $50, aber kleiner als $100 ist, berechnet der Einzelhändler $7,95. Für Aufträge, deren Wert gleich oder höher als $100 ist, bietet der Händler kostenlosen Versand an. Die folgende Abbildung zeigt die Konfiguration dieser Gebühren.
 
 ![Beispiel für feste abgestufte Gebühren](media/fixedtieredcharges.png)
 

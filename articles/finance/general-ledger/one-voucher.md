@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 233f31bd0b20ad5dd8ba21077797dd2f65069deb
-ms.sourcegitcommit: bc6db23825c94cd8305ef37bc18296765e9ce8a4
+ms.openlocfilehash: 68ec3cb028462865e914cbcb25ff28dbaf9a4f01
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "2810698"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3058016"
 ---
 # <a name="one-voucher"></a>Ein Beleg
 
@@ -156,7 +156,7 @@ Organisationen möchten häufig im Hauptbuch als Zusammenfassung buchen, um die 
 
 ### <a name="settle-multiple-unposted-payments-to-the-same-invoice"></a>Gleichen Sie nicht gebuchte Zahlungen mit der gleichen Rechnung aus
 
-Dieses Szenario ist normalerweise bei Einzelhandelsorganisationen anzutreffen, wo Debitoren mehrere Zahlungsmethoden verwenden können, um für Einkäufe zu bezahlen. In diesem Szenario muss die Organisation in der Lage sein, mehrere nicht gebuchte Zahlungen zu erfassen und mit der Debitorenrechnung auszugleichen.
+Dieses Szenario findet sich in der Regel in Organisationen, in denen Kunden mehrere Zahlungsmethoden zur Bezahlung von Einkäufen verwenden können. In diesem Szenario muss die Organisation in der Lage sein, mehrere nicht gebuchte Zahlungen zu erfassen und mit der Debitorenrechnung auszugleichen.
 
 Eine neue Fähigkeit, die in Microsoft Dynamics 365 for Operations Version 1611 (November 2016) ermöglicht es, dass mehrfach nicht gebuchte Zahlungen nicht mit einzelnen Rechnungen ausgeglichen werden. Mehrere Debitorenzahlungen müssen in einem einzelnen Dokument nicht mehr erfasst werden.
 

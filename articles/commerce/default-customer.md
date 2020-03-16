@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9e1087821b357c578993cdd5742399c5ec0ecc95
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001805"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057961"
 ---
 # <a name="create-a-default-customer"></a>Einen Standarddebitoren erstellen
 
@@ -33,7 +33,7 @@ In diesem Thema wird beschrieben, wie Sie einen Standarddebitoren erstellen, der
 
 ## <a name="overview"></a>Übersicht
 
-Beim Erstellen eines Einzelhandels- oder Onlinekanals müssen Sie einen Standardkunden angeben. Ein Standardkunde kann einfach erstellt werden, nachdem zuerst die Kundengruppe und das Kundenadressbuch erstellt wurden.
+Wenn Sie einen Channel anlegen, müssen Sie einen Standardkunden angeben. Ein Standardkunde kann einfach erstellt werden, nachdem zuerst die Kundengruppe und das Kundenadressbuch erstellt wurden.
 
 ## <a name="create-a-customer-group"></a>Eine Debitorengruppe erstellen
 

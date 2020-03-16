@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 43b23b9ef881b2ab2f3d005d4ba761848a7fa4ed
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024728"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057739"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung
 
@@ -63,8 +63,8 @@ Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer
 
 ### <a name="update-the-media-base-url"></a>Aktualisieren der medienbasierten URL
 
-1. Melden Sie sich bei Dynamics 365 Retail an.
-1. Navigieren Sie über das Menü links zu **Modulee \> Retail \> Kanaleinstellungen \> Kanalprofile**.
+1. Melden Sie sich bei Dynamics 365 Commerce an.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail and Commerce \> Kanaleinrichtung \> Kanalprofile** zu gehen.
 1. Wählen Sie **Bearbeiten** aus.
 1. Ersetzen Sie unter **Profileigenschaften** den Wert für die Eigenschaft **Media Server-Basis-URL** durch die medienbasierte URL, die Sie zuvor erstellt haben.
 1. Wählen Sie in der Liste links unter dem Kanal **Standard** den anderen Kanal aus.
@@ -77,7 +77,7 @@ Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer
 > [!NOTE]
 > Der SMTP-Server oder E-Mail-Dienst, den Sie hier eingeben, muss über das Azure-Abonnement zugänglich sein muss, das Sie für die Umgebung verwenden.
 
-1. Melden Sie sich bei Retail an.
+1. Melden Sie sich bei Commerce an.
 1. Navigieren Sie über das Menü links zu **Module \> Systemverwaltung \> Einstellungen \> E-Mail \> E-Mail-Parameter**.
 1. Geben Sie auf der Registerkarte **SMTP-Einstellungen** im Feld **Name des SMTP-Servers** den vollständig qualifizierten Namen (FQDN) oder die IP-Adresse Ihres SMTP-Servers oder E-Mail-Dienstes an.
 1. Geben Sie im Feld **SMTP-Portnummer** die Portnummer ein. (Wenn Sie Secure Sockets Layer \[SSL\] nicht verwenden, lautet die Standardportnummer **25**.)
@@ -92,7 +92,7 @@ Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer
 
 Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen Sie die E-Mail-Vorlage mit einer gültigen Absender-E-Mail-Adresse aktualisieren.
 
-1. Melden Sie sich bei Retail an.
+1. Melden Sie sich bei Commerce an.
 1. Navigieren Sie über das Menü links zu **Module \> Organizationsverwaltung \> Einstellungen \> Organisations-E-Mail-Vorlagen**.
 1. Wählen Sie **Liste anzeigen** aus.
 1. Führen Sie für jede Vorlage in der Liste die folgenden Schritte aus:
@@ -115,7 +115,7 @@ Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschi
     - Entnahmevorlage
 
 1. Passen Sie die Vorlagen mit einem Text- oder HTML-Editor an. Schauen Sie sich die Lister der [unterstützten Token](#supported-tokens-in-the-email-template) später in diesem Thema an.
-1. Melden Sie sich bei Retail an.
+1. Melden Sie sich bei Commerce an.
 1. Navigieren Sie über das Menü links zu **Module \> Organizationsverwaltung \> Einstellungen \> Organisations-E-Mail-Vorlagen**.
 1. Erweitern Sie die Liste auf der linken Seite, um alle Vorlagen anzuzeigen.
 1. Gehen Sie für jede Vorlage, die Sie anpassen möchten, folgendermaßen vor:

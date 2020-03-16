@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b4ee6b128e473d0999885f1cb1b4dbb015026c4e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022667"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057208"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Einstellungen und Arbeiten mit Callcenterbetrugswarnungen
 
@@ -54,6 +54,7 @@ Schließlich verwenden Sie das Feld **Betrugskommentartyp**, um den Dokumenttyp 
 Es gibt zwei Typen von Betrugskriterien, auf die sich das System bezieht, um zu prüfen, ob der Auftrag auf Betrug überprüft und gesperrt werden sollte:
 
 - **Statische Betrugsdaten** verwendet einen bestimmten Wert, wie Telefonnummer, die auf eine Liste von gesperrten Nummern von oder E-Mail-Adresse gesetzt wurde, die markiert wurde, da dieses bekannt ist, für gefälschte vorherige Buchungen verwendet zu werden. Um statische Betrugsdaten einzurichten, wechseln Sie zu **Retail und Commerce** \> **Kanaleinrichtung** \> **Callcenter-Einrichtung** \> **Betrug** \> **Statische Betrugsdaten**. Auf der Seite **Statische Betrugsdaten** können Sie Betrugskriterien manuell oder durch Datenimport hinzufügen. Bewertungen werden zu den gefälschten Informationen zugeordnet. Wenn Betrugsüberprüfung aktiviert ist, wird der eingegebene Auftrag mit den statischen Daten verglichen. Wenn die Daten entweder in der Rechnungsadresse oder der Lieferadresse des Debitors gefunden wird, oder wenn die Daten in der Lieferadressen gefunden werden, die mit einer Position in diesem Auftrag verknüpft sind, werden die Punktzahlen aller eindeutigen Übereinstimmungen zusammengefügt und mit dem Wert **Minimale Punktzahl** verglichen, um zu bestimmen, ob der Auftrag gesperrt werden soll.
+
 - **Betrugsregeln** bestehen aus benutzerdefinierten Variablen und den Bestimmungen, die für diese Variablen definiert werden. Um Regeln zu erstellen, gehen Sie zu **Retail und Commerce** \> **Kanaleinrichtung** \> **Callcenter-Einrichtung** \> **Betrug** \> **Regeln**. Mit Betrugsregeln können Unternehmen komplexere Regeln erstellen mit **UND** oder **ODER** Bedingungen, um mehrere Bedingungen zu evaluieren. Beispielsweise fordert ein Benutzer alle Aufträge für Debitoren, die einer bestimmten Debitorengruppe angehören und die ein bestimmtes Produkt bestellten, um für die Betrugsprüfung gesperrt zu werden. In diesem Fall werden die Bedingungen für den Debitor und die Produkte auf der Seite **Regeln** definiert und die UND Bedingung wird verwendet. Ein Auftrag wird dann gesperrt, wenn beide Bedingungen erfüllt sind und der Punktzahlwert, der dieser Regel zugeordnet wird, zuzüglich dem Punktzahlwert aller anderen Regeln, auf die die Auftragsabgleichung passt, verursacht, dass die gesamte Betrugspunktzahl des Auftrags den Wert der **Minimalen Punktzahl** überschreitet, der auf der Seite **Callcenterparameter** definiert ist.
 
 > [!NOTE]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82b1719990caeb1b383ab806a3e09a4c4a6e41a
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026133"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042826"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a>ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1: Datenmodell vorbereiten)
 
@@ -36,10 +36,14 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 
 ## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a>Zugriff auf die Liste von Microsoft bereitgestellte von den Konfigurationen erhalten
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, ob "Litware, Inc." Anbieter ist verfügbar und markiert als aktiv.  
+
+    Überprüfen Sie, ob "Litware, Inc." Anbieter ist verfügbar und markiert als aktiv.  
+
 2. Wählen Sie den "Litware, Inc."- Anbieter.
 3. Klicken Sie auf Repositorys.
-    * Wenn ein Repository des Typs "Operations-Ressourcen" vorhanden ist, überspringen Sie die übrigen Schritte der aktuellen Unteraufgabe.  
+
+    Wenn ein Repository des Typs "Operations-Ressourcen" vorhanden ist, überspringen Sie die übrigen Schritte der aktuellen Unteraufgabe.  
+
 4. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
 5. Geben Sie im Feld "Konfigurationsrepository-Typ" die Bezeichnung "Betriebliche Ressourcen" ein.
 6. Klicken Sie auf "Repository erstellen".
@@ -51,9 +55,13 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 3. Klicken Sie auf "Filter anzeigen".
 4. Klicken Sie auf "Öffnen".
 5. Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell " aus.
-    * Wählen Sie die Modellkonfiguration "Debitorenrechnungsmodell" aus, um sie zu importieren.  
+
+    Wählen Sie die Modellkonfiguration "Debitorenrechnungsmodell" aus, um sie zu importieren.  
+
 6. Klicken Sie auf Import.
-    * Klicken Sie auf "Importieren" für Version 1 der ausgewählten Konfiguration.  
+
+    Klicken Sie auf "Importieren" für Version 1 der ausgewählten Konfiguration.  
+
 7. Klicken Sie auf "Ja".
 8. Schließen Sie die Seite.
 9. Schließen Sie die Seite.
@@ -65,6 +73,5 @@ Sie erstellen eine eigene Konfiguration des Debitorenrechnungmodells, die von de
 1. Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.
 2. Geben Sie im Feld "Neu" "Von Name 'Debitorenrechnungsmodell Microsoft' abgeleitet" ein.
 3. Geben Sie im Feld "Name" "Debitorenrechnungsmodell (benutzerdefiniert)" ein.
-    * Debitorenrechnungsmodell (benutzerdefiniert)  
 4. Klicken Sie auf Konfiguration erstellen.
 

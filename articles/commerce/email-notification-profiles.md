@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: feb28b9c801786f63282c4189d3eeb6d53ed07e1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 320f21916a5f451ebf4f21e0075017a121ba6d6a
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003141"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057613"
 ---
 # <a name="set-up-an-email-notification-profile"></a>Ein E-Mail-Benachrichtigungsprofil einrichten
 
@@ -41,7 +41,7 @@ Weitere Informationen über die Konfiguration von E-Mails finden Sie unter [E-Ma
 
 Gehen Sie folgendermaßen vor, um ein E-Mail-Benachrichtigungsprofil zu erstellen.
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Hauptsitz-Setup \> E-Mail-Benachrichtigungsprofil Einzelhandel**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail and Commerce \> Headquarters-Einrichtung \> Commerce-E-Mail-Benachrichtigungsprofil**.
 1. Klicken Sie im Aktivitätsbereich auf **Neu**.
 1. Geben Sie im Feld **E-Mail-Benachrichtigungsprofil** einen Namen ein, um das Profil zu identifizieren.
 1. Geben Sie im Feld **Beschreibung** eine entsprechende Beschreibung ein.
@@ -71,20 +71,20 @@ Das folgende Bild zeigt einige Beispieleinstellungen für E-Mail-Vorlagen.
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Ereignis zu erstellen:
 
-1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Hauptsitz-Setup \> E-Mail-Benachrichtigungsprofil Einzelhandel**.
+1. Gehen Sie im Navigationsbereich zu **Module \> Retail and Commerce \> Headquarters-Einrichtung \> Commerce-E-Mail-Benachrichtigungsprofil**.
 1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. 
 1. Wählen Sie die E-Mail-Vorlage aus der Dropdownliste **E-Mail-Kennung**.
 1. Wählen Sie aus der Dropdownliste den entsprechenden **E-Mail-Kennungstyp**.
 1. Aktivieren Sie das Kontrollkästchen **Aktiv**.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
 
-Das folgende Bild zeigt einige Beispieleinstellungen für Ereignisbenachrichtigungen (Einzelhandel).
+Das folgende Bild zeigt einige Beispiele für die Einstellungen der Ereignisbenachrichtigung.
 
-![Ereignisbenachrichtigungseinstellungen Einzelhandel](media/email-notification-profile.png)
+![Einstellungen für die Ereignisbenachrichtigung](media/email-notification-profile.png)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren und Senden von E-Mails](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
+[E-Mails konfigurieren und senden](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-email)
 
 [Kanäle – Übersicht](channels-overview.md)
 

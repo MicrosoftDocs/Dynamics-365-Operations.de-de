@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 08fb278a3de0c06715dcd9c252ee6c21b2172cff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
+ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009187"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087299"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Erstellen Sie einen Urlaubs- und Abwesenheitsplan
 
@@ -61,8 +61,8 @@ Sie können auch arbeitsplatzbezogene Urlaubsleistungen, z. B. nur für Führung
 
       | Abgrenzungsbasis | Beschreibung |
       | --- | --- |
-      | Plan-Startdatum | Das Startdatum der Abgrenzungsperiode ist das Datum, an dem der Plan verfügbar ist. |
-      | Mitarbeiter spezifische Daten | Das Startdatum der Abgrenzungsperiode hängt von einem Mitarbeiterereignis ab:</br><ul><li>Benutzerdefiniert (Sie müssen für jede einzelne Anmeldung ein Abgrenzungsdatum festlegen)</li><li>Jahrestag</li><li>Ursprüngliches Einstellungsdatum</li><li>Dienstalterdatum</li><li>Angepasstes Startdatum der Arbeitskraft</li><li>Startdatum der Arbeitskraft</li></ul> |
+      | **Plan-Startdatum** | Das Startdatum der Abgrenzungsperiode ist das Datum, an dem der Plan verfügbar ist. |
+      | **Mitarbeiter spezifische Daten** | Das Startdatum der Abgrenzungsperiode hängt von einem Mitarbeiterereignis ab:</br><ul><li>Benutzerdefiniert (Sie müssen für jede einzelne Anmeldung ein Abgrenzungsdatum festlegen)</li><li>Jahrestag</li><li>Ursprüngliches Einstellungsdatum</li><li>Dienstalterdatum</li><li>Angepasstes Startdatum der Arbeitskraft</li><li>Startdatum der Arbeitskraft</li></ul> |
 
    3. Wählen Sie eine Option aus dem Dropdown-Feld **Stichtag der Abgrenzung**:
 

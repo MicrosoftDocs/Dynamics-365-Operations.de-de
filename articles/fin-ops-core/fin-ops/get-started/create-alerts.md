@@ -3,7 +3,7 @@ title: Erstellen von Warnregeln
 description: Dieses Thema enthält Informationen zu Warnungen und erläutert, wie eine Warnregel erstellt wird, damit Sie über Ereignisse benachrichtigt werden, wie ein Datum, das eintritt, oder eine spezifische Änderung, die auftritt.
 author: tjvass
 manager: AnnBe
-ms.date: 09/20/2019
+ms.date: 02/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c37ddc52ef576a15dd35cc155e99821c74631a46
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2180713"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3075923"
 ---
 # <a name="create-alert-rules"></a>Erstellen von Warnregeln
 
@@ -31,7 +31,11 @@ ms.locfileid: "2180713"
 
 Vor dem Einrichten einer Warnregel müssen Sie entscheiden, wann oder in welchen Situationen Sie Warnungen erhalten möchten. Wenn Sie wissen, über welches Ereignis Sie informiert werden möchten, suchen Sie nach der Seite, auf der die Daten angezeigt werden, die dieses Ereignis verursachen. Das Ereignis kann ein eintretendes Datum oder eine spezifische Änderung sein. Daher müssen Sie die Seite finden, auf der das Datum angegeben ist, oder auf der das Feld, das sich ändert oder der neue Datensatz, der erstellt wird, angezeigt wird. Auf Basis dieser Informationen können Sie nun die Warnregel erstellen.
 
-Wenn Sie eine Warnregel erstellen, legen Sie die Kriterien fest, die erfüllt werden müssen, bevor eine Warnung ausgegeben wird. Stellen Sie sich ein solches Kriterium als eine Übereinstimmung zwischen dem Auftreten eines Ereignisses und der Erfüllung bestimmter Bedingungen vor. Wenn ein Ereignis auftritt, beginnt das System mit der Überprüfung anhand der Bedingungen, die eingerichtet wurden.
+Wenn Sie eine Warnregel erstellen, legen Sie die Kriterien fest, die erfüllt werden müssen, bevor eine Warnung ausgegeben wird. Kriterien ist grundsätzlich die Übereinstimmung zwischen dem Auftreten eines Ereignisses und der Erfüllung bestimmter Bedingungen. Wenn ein Ereignis auftritt, beginnt das System mit der Überprüfung anhand der Bedingungen, die eingerichtet wurden.
+
+## <a name="ensure-the-alert-batch-jobs-are-running"></a>Sicherstellen, dass die Batch-Jobs für die Alarme ausgeführt werden.
+
+Die Batch-Jobs für Datenänderungs- und Fälligkeitswarnungen müssen ausgeführt werden, damit die Warnbedingungen verarbeitet und die Benachrichtigungen gesendet werden können. Um Batch-Jobs auszuführen, gehen Sie zu **Systemadministration** > **Periodische Aufgaben** > **Alarme** und fügen Sie einen neuen Batch-Job für **Änderungsbasierte Warnungen** und/oder **Fälligkeits-Warnungen** hinzu. Wenn ein langer und häufig laufender Batch-Job benötigt wird, wählen Sie **Wiederholung** und setzen **Kein Enddatum** mit einem **Wiederholungsmuster** von **Minuten** und einem **Zahl** von **1**.
 
 ## <a name="events"></a>Ereignisse
 
@@ -51,7 +55,7 @@ Auftretende Änderungen können von einem Benutzer initiiert werden. Beispielswe
 
 ## <a name="conditions"></a>Bedingungen
 
-A uf der Registerkarte **Warnung** im Dialogfelds **Warnregel erstellen** können Sie den Bereich für die Bedingung auswählen, um zu steuern, wann Sie über Ereignisse informiert werden.
+Auf dem Dialogfenster **Warnung für mich** im **Alarmregel erstellen** können Sie mit Bedingungen steuern, wann Sie über Ereignisse alarmiert werden.
 
 Beispielsweise können Sie angeben, dass das System Sie warnen soll, wenn der Status von Bestellungen sich ändert, jedoch nur, wenn eine Bestellung bestimmten Bedingungen entspricht. Konkret möchten Sie gewarnt werden, wenn der Status einer Bestellung auf **Eingegangen** festgelegt ist. Diese Statusänderung ist das Ereignis, das die Warnung auslöst.
 
@@ -70,16 +74,21 @@ Klicken Sie auf dem Inforegister **Warnen mit** des Dialogfelds **Warnregel erst
 
 ## <a name="user-id"></a>Benutzer-ID
 
-Auf der Registerkarte **Warnung durch**im Dialogfeld **Warnungsregel erstellen** können Sie definieren, welcher Benutzer die Warnmeldungen erhalten soll. Standardmäßig wird Ihre Benutzerkennung ausgewählt. Diese Option ist auf Organisationsadministratoren beschränkt.
+Auf der Registerkarte **Warnung durch**im Dialogfeld **Warnungsregel erstellen** können Sie definieren, welcher Benutzer die Warnmeldungen erhalten soll. Standardmäßig wird Ihre Benutzerkennung ausgewählt. Die Möglichkeit, den Benutzer, der die Warnung erhält, zu ändern, ist auf Administratoren der Organisation beschränkt.
+
+## <a name="alerts-as-business-events"></a>Warnungen als Geschäftsereignisse
+
+Warnungen können über das Event-Framework extern gesendet werden. Setzen Sie beim Anlegen eines Warnung **Organisationsweit** auf **Nein** und **Extern senden** auf **Ja**. Nachdem der Alert das Ereignis ausgelöst hat, können Sie einen in Power Automate eingebauten Ablauf über **Wenn ein Ereignis eintritt** auf dem Konnektor Finance and Operations auslösen oder das Ereignis über **Ereigniskatalog** explizit an einen Veranstaltungs-Endpunkt senden.
 
 ## <a name="create-an-alert-rule"></a>Erstellen Sie eine Warnregel.
 
+0. Stellen Sie sicher, dass die Warnungen-Batch-Jobs ausgeführt werden (siehe oben).
 1. Öffnen Sie das Formular, das die zu überwachenden Daten enthält.
 2. Klicken Sie alternativ im Aktivitätsbereich auf der Registerkarte **Optionen** in der Gruppe **Freigeben** auf **Benutzerdefinierte Warnungsregek** erstellen.
 3. Aktivieren Sie im Formular **Warnregel erstellen** in der Liste **Feld**das Feld, das überwacht werden soll.
 4. Wählen Sie im Feld **Ereignis** den Typ des Berechtigungsereignisses aus.
-5. Auf dem Inforegister **Warnen für** aktivieren Sie eine Option.
+5. Wählen Sie auf der Registerkarte **Warnen für** die gewünschte Option. Wenn Sie die Warnung als Geschäftsereignis senden möchten, stellen Sie sicher, dass **Organisationsweit** auf **Nein** gesetzt ist.
 6. Wenn die Warnregel an einem bestimmten Datum deaktiviert werden soll, wählen Sie im Abschnitt **Warnung bis** ein Enddatum aus.
-7. Auf der Registerkarte **Warnung mit** im Feld **Betreff** akzeptieren Sieie Standardbetreffzeile für die E-Mail-Nachricht, oder geben Sie einen neuen Betreff ein. Der Text wird als Betreffzeile für die E-Mail-Nachricht verwendet, die Sie empfangen, wenn eine Warnung ausgegeben wird.
+7. Auf der Registerkarte **Warnung mit** im Feld **Betreff** akzeptieren Sieie Standardbetreffzeile für die E-Mail-Nachricht, oder geben Sie einen neuen Betreff ein. Der Text wird als Betreffzeile für die E-Mail-Nachricht verwendet, die Sie empfangen, wenn eine Warnung ausgegeben wird. Wenn Sie die Warnung als Veranstaltung senden möchten, setzen Sie **Externes Senden** auf **Ja**.
 8. Geben Sie im Feld **Nachricht** einen optionalen Meldungstext ein. Der Text wird als die Meldung verwendet, die Sie bei Auslösung einer Warnung erhalten.
 9. Wählen Sie **OK** aus, um die Einstellungen zu speichern und die Warnregel zu erstellen.

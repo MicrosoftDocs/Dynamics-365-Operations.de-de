@@ -18,12 +18,12 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.version: 10.0.3
 ms.search.validFrom: 2019-05-29
-ms.openlocfilehash: c0c578ca44919671b67daeea51a9ec7687f755c9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 48854c15e429d51dcf30ea804eb636dee7965443
+ms.sourcegitcommit: a356299be9a593990d9948b3a6b754bd058a5b3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773644"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080771"
 ---
 # <a name="implement-custom-fields-for-the-microsoft-dynamics-365-project-timesheet-mobile-app-on-ios-and-android"></a>Implementieren benutzerdefinierter Felder für die mobile Microsoft Dynamics 365 Project Timesheet-App auf iOS und Android
 
@@ -183,7 +183,7 @@ Im folgenden Beispiel wird ein Zeichenfolgenfeld in Zeiteinträgen angezeigt. Di
 
 Beachten Sie die Verwendung der **TSTimesheetCustomField::newFromMetatdata()**-Methode, um die Initialisierung der Eigenschaften benutzerdefinierter Felder zu vereinfachen: **fieldBaseType**, **tableName**, **fieldname**, **label**, **isEditable**, **isMandatory**, **stringLength** und **numberOfDecimals**. Sie können diese Parameter auch manuell festlegen, wenn Sie dies bevorzugen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -212,7 +212,7 @@ final class TSTimesheetSettings_Extension
 
 Die Methode **buildCustomFieldListForEntry** wird verwendet, um Werte in den gespeicherten Arbeitszeittabellen-Positionen in der mobilen App einzugeben. Sie übernimmt einen TSTimesheetTrans-Datensatz als Parameter. Felder aus diesem Datensatz können verwendet werden, um den benutzerdefinierten Feldwert in der App auszufüllen.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetEntry))]
 final class TsTimesheetEntry_Extension
@@ -250,7 +250,7 @@ Um ein benutzerdefiniertes Feld in typischer Verwendung wieder in die Datenbank 
 > [!NOTE]
 > Das folgende Beispiel speichert die Werte **firstOption** oder **secondOption**, die der Benutzer auswählt, in der Datenbank als unformatierter Zeichenfolgenwert. Wenn das Datenbankfeld ein Feld vom Typ **Enumeration** ist, können diese Werte manuell einem Enumerationswwert zugeordnet werden und dann in einem Enumerationsfeld in der Datenbanktabelle gespeichert werden.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetEntryService))]
 final class TSTimesheetEntryService_Extension
@@ -339,7 +339,7 @@ Dieser Code steuert die Anzeigeeinstellungen für das Feld in der App. Er steuer
 
 Das folgende Beispiel zeigt einen berechneten Wert im Kopfzeilenabschnitt in der App an.
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TsTimesheetSettings))]
 final class TSTimesheetSettings_Extension
@@ -369,7 +369,7 @@ final class TSTimesheetSettings_Extension
 Die Methode **buildCustomFieldListForHeader** wird verwendet, um die Arbeitszeittabellen-Kopfzeilendetails in der mobilen App einzugeben. Sie übernimmt einen TSTimesheetTable-Datensatz als Parameter. Felder aus diesem Datensatz können verwendet werden, um den benutzerdefinierten Feldwert in der App auszufüllen. Im folgenden Beispiel werden keine Werte aus der Datenbank gelesen. Stattdessen wird eine X++-Logik verwendet, um einen berechneten Wert zu generieren, der dann in der App angezeigt wird.
 
 
-```
+```xpp
 ...
 [ExtensionOf(classStr(TSTimesheetDetails))]
 final class TSTimesheetDetails_Extension

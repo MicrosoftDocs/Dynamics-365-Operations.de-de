@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fe785e3bfd503193a588958ae5df0d1c0fdb9e52
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002311"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057855"
 ---
 # <a name="warehouse-set-up"></a>Lagerort einrichten
 
@@ -59,7 +59,7 @@ Um einen Lagerort einzurichten, gehen Sie folgendermaßen vor:
 
 1. Gehen Sie im Navigationsbereich zu **Module \> Retail und Commerce \> Kanaleinrichtung \> Lagerorte**.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
-1. Geben Sie im Feld **Lagerort** einen Wert ein.  Wenn dies eine 1:1-Zuordnung zu einem Einzelhandelsgeschäft ist, sollten Sie den Namen des Geschäfts oder den Namen eines regionalen Vertriebszentrums verwenden.
+1. Geben Sie im Feld **Lagerort** einen Wert ein.  Wenn es sich um eine 1:1-Zuordnung zu einem Geschäft handelt, sollten Sie den Namen des Geschäfts oder den Namen eines regionalen Vertriebszentrums verwenden.
 1. Geben Sie im Feld **Name** einen Wert ein.
 1. In der Dropdown-Liste **Standort** wählen Sie den zuvor erstellten Standort des Lagerorts aus.
 1. Wählen Sie im Feld **Typ** die Option **Standard**.

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23e63f6b7999399fd5365c616613cbc603774d53
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: ce2192c7bc849996e08573d71d8ed43956c8fb89
+ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916935"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "3070528"
 ---
 # <a name="MOD_97">MOD_97 EB-Funktion</a>
 
@@ -33,7 +33,7 @@ Die Funktion `MOD_97` gibt den Wert *String* zurück, der eine Gläubigerreferen
 
 ## <a name="syntax"></a>Syntax
 
-```
+```vb
 MOD_97 (invoice number digits)
 ```
 

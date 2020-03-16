@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ec42ab920868f541eeac54556f4f24cb1efaa3a
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 42448bd54c00b8642b158f422e17d2b46ee25579
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002449"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057878"
 ---
 # <a name="set-up-a-call-center-channel"></a>Einen Callcenterkanal einrichten
 
@@ -33,7 +33,7 @@ In diesem Thema wird beschrieben, wie ein Callcenterkanal in Microsoft Dynamics 
 
 ## <a name="overview"></a>Übersicht
 
-In Dynamics 365 Commerce ist ein Callcenter ein Retail Channel-Typ, der in der Anwendung definiert werden kann. Durch das Definieren eines Kanals für Ihre Callcenter-Entitäten kann das System bestimmte Daten und Auftragsverarbeitungsstandards mit Aufträgen verknüpfen. Ein Unternehmen kann Callcenterkanäle in Commerce definieren. 
+In Dynamics 365 Commerce ist ein Callcenter ein Kanaltyp, der in der Anwendung definiert werden kann. Durch das Definieren eines Kanals für Ihre Callcenter-Entitäten kann das System bestimmte Daten und Auftragsverarbeitungsstandards mit Aufträgen verknüpfen. Ein Unternehmen kann Callcenterkanäle in Commerce definieren. 
 
 Vergewissern Sie sich vor dem Erstellen eines neuen Callcenterkanals, dass Sie die [Voraussetzungen für die Kanaleinrichtung](channels-prerequisites.md) erfüllen.
 

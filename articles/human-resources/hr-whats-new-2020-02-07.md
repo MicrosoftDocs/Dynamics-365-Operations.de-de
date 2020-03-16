@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78043273fb98a12a8d33f7bb94ba8ad2e9fb49fb
-ms.sourcegitcommit: 13c4a6f98ccce243d6befde90992aefcf562bdab
+ms.openlocfilehash: c6ca9877eb172794c67ac55b8dc54ed28af9576d
+ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029956"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "3076269"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (7. Februar 2020)
 
@@ -47,7 +47,7 @@ Die folgenden Vorschaufunktionen sind am 3. Februar 2020 verfügbar:
 
 - **Urlaubs- und Abwesenheitsfunktion** - Weitere Informationen finden Sie unter [Urlaub- und Abwesenheitsverwaltung, Vorschaufunktion](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-- **Vorschaufunktion für das Leistungsmanagement** – Weitere Informationen, einschließlich bekannter Probleme, finden Sie unter [Übersicht über das Leistungsmanagement](hr-benefits-management-overview.md).
+- **Vorschaufunktion für die Leistungsverwaltung** - Weitere Informationen, einschließlich bekannter Probleme, finden Sie unter [Übersicht über die Leistungsverwaltung](hr-benefits-management-overview.md).
 
 ## <a name="coming-soon"></a>Bald verfügbar
 
@@ -68,5 +68,11 @@ Eine neue Common Data Service Lösung wird in Kürze mit den folgenden Änderung
 | Neue variable Vergütung-Einrichtungsentitäten | **Plantyp für variable Vergütung**</br>**Plan für variable Vergütung**</br>**Übertragungsregeln**</br>**Variable Planstufe zur Vergütung** |
 | Neue **Arbeitskraftkalender-Beschäftigung** Entität | **Arbeitkraftkalender-Entität** hinzugefügt |
 | Neue **Lohnpositionsdetail** Entität | **Lohnpositionsdetail** hinzugefügt |
-| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue **Titel** Entität wird in den Synchronisierungsprozess zwischen Human Resources und Common Data Service eingschlossen, wird aber zunächst nicht referenziert von **Berufliche Stellung** oder **Job** Entitäten. |
+| Neue **Titel** Entität | **Titel** hinzugefügt. Die neue Einheit **Titel** wird in den Synchronisationsprozess zwischen Human Resources und Common Data Service einbezogen. Sie wird nicht zunächst von **Job-Position** oder **Job** Entitäten referenziert. |
 
+## <a name="see-also"></a>Siehe auch
+
+[Neuigkeiten oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
+[Funktionen verwalten](hr-admin-manage-features.md)

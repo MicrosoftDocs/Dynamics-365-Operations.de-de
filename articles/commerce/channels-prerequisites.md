@@ -3,7 +3,7 @@ title: Voraussetzungen der Kanaleinrichtung
 description: Dieses Thema bietet einen Überblick über die Voraussetzungen für die Einrichtung von Kanälen in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 manager: annbe
-ms.date: 01/27/2020
+ms.date: 02/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b861d90f1333c8f6e61a83602ed74e30b65f3dc1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
+ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002288"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081314"
 ---
 # <a name="channel-setup-prerequisites"></a>Voraussetzungen der Kanaleinrichtung
 
@@ -40,16 +40,16 @@ Bevor ein Dynamics 365 Commerce Kanal erstellt werden kann, müssen mehrere erfo
 
 ## <a name="initialization"></a>Initialisierung
 
-- [Seed-Daten initialisieren](../retail/enable-configure-retail-functionality.md)
+- [Seed-Daten initialisieren](enable-configure-retail-functionality.md)
 
 ## <a name="global-prerequisities-required-for-all-channel-types"></a>Globale Voraussetzungen für alle Kanaltypen erforderlich
 
 - [Ihre Rechtsträgerstruktur definieren und konfigurieren](channels-legal-entities.md) 
 - [Ihre Organisationshierarchie konfigurieren](channels-org-hierarchies.md)
 - [Einen Lagerort einrichten](channels-setup-warehouse.md)
-- [Mehrwertsteuer konfigurieren](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Mehrwertsteuer konfigurieren](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
 - [Ein E-Mail-Benachrichtigungsprofil einrichten](email-notification-profiles.md)
-- [Einrichten von Nummernkreisen](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Einrichten von Nummernkreisen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
 - [Einen Standardkunden und ein Adressbuch einrichten](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)
@@ -57,23 +57,21 @@ Bevor ein Dynamics 365 Commerce Kanal erstellt werden kann, müssen mehrere erfo
 
 ## <a name="retail-channel-prerequisites"></a>Retail Channel-Voraussetzungen
 
-- [Infocodes und Infocodegruppen](https://docs.microsoft.com/en-us/dynamics365/retail/info-codes-retail?toc=/dynamics365/commerce/toc.json)
+- [Infocodes und Infocodegruppen](info-codes-retail.md)
 - [Ein Einzelhandelsfunktionsprofil einrichten](retail-functionality-profile.md)
 - [Ein Mitarbeiteradressbuch einrichten](new-address-book.md)
-- [Einrichten eines Bildschirmlayouts](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)
-- [Eine Hardwarestation einrichten](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/commerce/toc.json)
+- [Einrichten eines Bildschirmlayouts](pos-screen-layouts.md)
+- [Eine Hardwarestation einrichten](retail-hardware-station-configuration-installation.md)
 
 ## <a name="call-center-channel-prerequisites"></a>Voraussetzungen für Callcenter-Kanäle
 
 - Callcenter-Parameter
-- Callcenter-Rückerstattungsmethoden
-- Miettypen
-- Zahlungsdienste
-- Auftragssperrcodes
+- [Call-Center-Bestellung und Rückerstattungs-Zahlungsmethoden](work-with-payments.md)
+- [Zustellarten und Gebühren des Callcenters](configure-call-center-delivery.md)
 
-## <a name="online-channel-prerequisites"></a>Voraussetzungen für Onlinekanäle
+## <a name="online-channel-prerequisites"></a>Onlinechannel – Voraussetzungen
 
-- [Ein Online-Funktionsprofil erstellen](online-functionality-profile.md)
+- [Ein Onlinefunktionsprofil erstellen](online-functionality-profile.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

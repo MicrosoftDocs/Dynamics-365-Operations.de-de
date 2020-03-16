@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 63639d69af90c6aa37bbf7af7868bca71942063f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 0fbca2c9178cd372653287afdf72deaf75442604
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022606"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057913"
 ---
 # <a name="define-and-maintain-retail-channels"></a>Definieren und Verwalten von Retail-Kanälen
 
@@ -47,9 +47,9 @@ Bevor Sie ein Geschäft einrichten können, müssen Sie die folgenden erforderli
 3. Richten Sie Nummernkreise für Geschäfte, Lageraufstellungen und Auszugsbelege ein.
 4. Parameter für Commerce konfigurieren.
 5. Richten Sie die Zahlungsmethoden ein, die im Shop akzeptiert werden.
-6. Um Kreditkartenbuchungen an POS-Kassen zu verarbeiten, können Sie Zahlungsdienste einrichten.
+6. Für die Verarbeitung von Kreditkartentransaktionen an POS-Kassen können Sie auch Zahlungsdienste einrichten.
 7. Mehrwertsteuergruppen einrichten.
-8. Einrichten von Einzelhandelsprodukten. Als Teil dieser Aufgabe richten Sie auch Produkthierarchien, Produktvarianten und Sortimente ein.
+8. Produkte einrichten. Als Teil dieser Aufgabe richten Sie auch Produkthierarchien, Produktvarianten und Sortimente ein.
 9. Einrichten von Produktpreisgruppen.
 10. Produktpreise einrichten. Als Teil dieser Aufgabe richten Sie auch Preisregulierungen, Rabatte und Rabattzeiträume ein.
 11. Einrichten von Mitarbeitern.
@@ -87,5 +87,5 @@ Nachdem Sie die Details für das Geschäft eingeben, schließen Sie diese Aufgab
 Commerce verwendet Organisationshierarchien, um Kanäle zu strukturieren. Organisationshierarchien stellen die Beziehungen zwischen den Organisationen dar, aus denen das Unternehmen besteht. Wenn Sie Filialen einrichten, können Sie diese einer Organisationshierarchie hinzufügen. Die Filialen teilen dann Daten, die für Sortimente, Auffüllung und Berichterstellung verwendet werden.
 
 > [!NOTE]
-> Um die Funktionen des Einzelhandelsverkaufs nutzen zu können, muss der Konfigurationsschlüssel für **Mehrere Lieferadressen** aktiviert sein. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund der Einzelhandels-Funktionalität erforderlich, die verschiedene Überprüfungen basierend auf der Lieferadresse durchführt, die auf der Ebene der Auftragspositionen konfiguriert wurde.
+> Um die Commerce-Verkaufsfunktionalität zu nutzen, muss der Konfigurationsschlüssel für **Mehrfache Wareneingänge** aktiviert werden. Diesen Konfigurationsschlüssel finden Sie in den Konfigurationsschlüsseln **Handel** unter **Systemverwaltung**\> **Einstellungen** \> **Lizenzkonfiguration**. Dies ist aufgrund verschiedener Validierungen auf der Grundlage der auf der Ebene der Kundenauftragszeile konfigurierten Lieferadresse erforderlich.
 

@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f3f2616fd98b37576625d9586a1cda29ce1b89f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022697"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057486"
 ---
 # <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
@@ -43,23 +43,23 @@ Die folgenden Begriffe werden in diesem Thema erläutert.
 
 ## <a name="price-groups"></a>Preisgruppen
 
-Preisgruppen sind zentral in der Preis- und Rabattverwaltung in Commerce. Preisgruppen werden verwendet, um Rabatte und Handelsvereinbarungen zu den Einzelhandelskanälen, Zugehörigkeiten, Katalogen und Treueprogrammen zuzuweisen. Da Preisgruppen für alle Preise und Rabatte verwendet werden, ist es sehr wichtig, dass Sie planen, wie Sie diese verwenden, bevor Sie beginnen.
+Preisgruppen sind zentral in der Preis- und Rabattverwaltung in Commerce. Preisgruppen werden verwendet, um Preise und Rabatte den Handelseinheiten (d.h. Kanälen, Katalogen, Mitgliedschaften und Treueprogrammen) zuzuordnen. Da Preisgruppen für alle Preise und Rabatte verwendet werden, ist es sehr wichtig, dass Sie planen, wie Sie diese verwenden, bevor Sie beginnen.
 
-An sich ist eine Preisgruppe derzeit ein Name, Beschreibung und optional eine Preiskalkulationspriorität. Der Hauptpunkt, an den man sich bei Preisgruppen erinnern soll ist, dass sie verwendet werden, um die m:n-Beziehungen zu verwalten, die Rabatte und Preise mit Kleinentitäten haben.
+An sich ist eine Preisgruppe derzeit ein Name, Beschreibung und optional eine Preiskalkulationspriorität. Der Hauptpunkt, den man sich bei Preisgruppen merken sollte, ist, dass sie zur Verwaltung der Viel-zu-Viel- Beziehungen verwendet werden, die Rabatte und Preise mit Handelseinheiten haben.
 
-Die folgende Abbildung zeigt, wie Preisgruppen verwendet werden. In dieser Grafik beachten Sie, dass "Preisgruppe" buchstäblich in der Mitte der Preiskalkulations- und Rabattverwaltung ist. Die Kleinentitäten, die Sie verwenden können, um differenzielle Preise und Rabatte zu verwalten, sind auf der linken Seite und die Effektivpreis- und Rabattdatensätze sind auf der rechten Seite.
+Die folgende Abbildung zeigt, wie Preisgruppen verwendet werden. In dieser Grafik beachten Sie, dass "Preisgruppe" buchstäblich in der Mitte der Preiskalkulations- und Rabattverwaltung ist. Die Handelseinheiten, mit denen Sie Differenzpreise und Rabatte verwalten können, befinden sich auf der linken Seite, und die tatsächlichen Preis- und Rabattsätze befinden sich auf der rechten Seite.
 
 ![Preisgruppen](./media/PriceGroups.png "Preisgruppen")
 
-Wenn Sie Preisgruppen erstellen, sollten Sie eine Gruppe des Uniform Preises für mehrere Arten von Kleinentitäten nicht verwenden. Andernfalls kann es schwierig sein zu ermitteln, warum ein bestimmter Preis oder ein Rabatt auf eine Buchung angewendet wird.
+Wenn Sie Preisgruppen anlegen, sollten Sie nicht eine einzige Preisgruppe für mehrere Arten von Handelseinheiten verwenden. Andernfalls kann es schwierig sein zu ermitteln, warum ein bestimmter Preis oder ein Rabatt auf eine Buchung angewendet wird.
 
 Wie die rot gestrichelte Linie in der Abbildung zeigt, unterstützt Commerce die zentralen Microsoft Dynamics 365 Funktionen einer Preisgruppe, die direkt auf einen Kunden festgelegt wird. Jedoch in diesem Fall erhalten Sie nur Handelsvereinbarungen. Falls Sie benutzerdefinierte Preise anwenden möchten, sollten Sie nicht festgelegte Preisgruppen direkt für den Debitor definieren. Stattdessen können Sie Zuordnungen verwenden.
 
-Die folgenden Abschnitte enthalten weitere Informationen zur Kleinentitäten, die Sie verwenden können, wenn Preise festgelegt werden, wenn eindeutige Preisgruppen verwendet werden. Die Variante von Preisen und Rabatten für alle diese Entitäten ist ein Prozess in zwei Schritten. Diese Schritte können in jedem Auftrag vorgenommen werden. Allerdings besteht die logische Reihenfolge darinm, Preisgruppen auf die Entitäten zuerst festzulegen, da dieser Schritt nicht wahrscheinlich eine einmalige Einstellung ist, die bei der Implementierung geleistet wird. Anschließend wenn Preise und Rabatte erstellt werden, können Sie Preisgruppen die auf diesen Preisen und Rabatten basieren, einzeln festlegen.
+In den folgenden Abschnitten finden Sie weitere Informationen über die Handelseinheiten, mit denen Sie bei der Verwendung der Preisgruppen unterschiedliche Preise festlegen können. Die Variante von Preisen und Rabatten für alle diese Entitäten ist ein Prozess in zwei Schritten. Diese Schritte können in jedem Auftrag vorgenommen werden. Allerdings besteht die logische Reihenfolge darinm, Preisgruppen auf die Entitäten zuerst festzulegen, da dieser Schritt nicht wahrscheinlich eine einmalige Einstellung ist, die bei der Implementierung geleistet wird. Anschließend wenn Preise und Rabatte erstellt werden, können Sie Preisgruppen die auf diesen Preisen und Rabatten basieren, einzeln festlegen.
 
 ### <a name="channels"></a>Benachrichtigungskanäle
 
-Im Einzelhandel ist es sehr typisch, verschiedene Preise in verschiedenen Kanälen zu haben. Die primären zwei Faktoren, die Kanal spezifische Preise beeinflusse, sind Kosten, und lokale Marktlagen.
+In der Handelsbranche ist es sehr typisch, verschiedene Preise in verschiedenen Kanälen zu haben. Die primären zwei Faktoren, die Kanal spezifische Preise beeinflusse, sind Kosten, und lokale Marktlagen.
 
 - **Kosten** – Je weiter weg ein Kanal von der Produktquelle ist, desto mehr kostet der Bestand eines Produktes. So verfügt beispielsweise Frischware eine begrenzte Haltbarkeit und besondere Produktionsanforderungen (beispielsweise eine Vegetationsperiode). Während des Winters kostet frischer Kopfsalates in den Nordklimata vermutlich mehr als in den südlichen. Klimata Wenn Preise für Kanäle in einem großen geografischen Bereich festgelegt werden soll, müssen Sie wahrscheinlich verschiedene Preise in verschiedenen Kanälen festlegen.
 - **Lokale Marktlagen** – Ein Shop, der über einen direkten Mitbewerber in der gleichen Straße hat ist vermutlich Preis sensitiver als ein Geschäft, dass keinen unmittelbaren Mitbewerber hat.
@@ -84,7 +84,7 @@ Einige Einzelhändler werden die physischen oder virtuellen Kataloge nutzen und 
 
 ### <a name="best-practices-for-price-groups"></a>Optimale Verfahren für Preisgruppen
 
-Verwenden Sie keine Preisgruppe für mehrere Kleinentitätstypen. Verwenden Sie stattdessen einen Satz Preisgruppen für Kanäle, einen anderen Satz Zuordnungen oder Preisgruppen für Treueprogramme, usw. Sie können ein Präfix oder ein Suffix im Auftrag der Preisgruppe verwendet, um die unterschiedlichen Arten von Preisgruppen visuell zu gruppieren, die Sie verwenden.
+Verwenden Sie eine Preisgruppe nicht für mehrere Entitätstypen. Verwenden Sie stattdessen einen Satz Preisgruppen für Kanäle, einen anderen Satz Zuordnungen oder Preisgruppen für Treueprogramme, usw. Sie können ein Präfix oder ein Suffix im Auftrag der Preisgruppe verwendet, um die unterschiedlichen Arten von Preisgruppen visuell zu gruppieren, die Sie verwenden.
 
 Vermeiden Sie es, Preisgruppen direkt auf einem Debitor festzulegen. Verwenden Sie stattdessen eine Zugehörigkeit. Auf diese Weise können Sie alle Typen von Preisen und Rabatten zuweisen für Debitoren, nicht nur Handelsvereinbarungen.
 
@@ -98,7 +98,7 @@ Um Preiskalkulationspriorität für Preise zu verwenden, müssen Sie eine Preisk
 
 Die Preiskalkulationsprioritätsfunktion wurde eingegeben, um das Szenario zu unterstützen, in dem ein Einzelhändler höhere Preise in einem bestimmten Geschäft übernehmen möchte, das aus den Shops festgelegt wird. So verfügt beispielsweise ein Einzelhändler definiert regionale Preise für die Ostküste der USA aber möchte höhere Preise für mehrere Produkte in New York Cityshops, da es mehr kostet, um mehrere Produkte im Ort zu verkaufen und/oder weil der lokale Markt einen höheren Preis verträgt.
 
-Wie im Abschnitt "Bester Preis" beschrieben wurde, wählt das Einzelhandelspreismodul in der Regel den tieferen der zwei Preise aus. Daher wird der Einzelhändler normalerweise daran gehindert, den höheren der beiden Preisen in einem Shop zu verwenden, der die Ostküste und New York als Preisgruppen hat. Zur Behebung dieses Problems muss der Einzelhändler Preise für jedes Produkt zweimal definieren und Preisgruppen nicht beiden zuweisen. Alternativ musste der Einzelhändler zusätzliche Preisgruppen erstellen, um die Produkte zu suchen, die höhere Preise von Produkten verfügen, die die üblichen, niedrigeren Preisen haben.
+Wie im Abschnitt „Bester Preis“ dieses Themas beschrieben wurde, wählt das Preisfindungsmodul normalerweise den niedrigeren von zwei Preisen aus. Daher wird der Einzelhändler normalerweise daran gehindert, den höheren der beiden Preisen in einem Shop zu verwenden, der die Ostküste und New York als Preisgruppen hat. Zur Behebung dieses Problems muss der Einzelhändler Preise für jedes Produkt zweimal definieren und Preisgruppen nicht beiden zuweisen. Alternativ musste der Einzelhändler zusätzliche Preisgruppen erstellen, um die Produkte zu suchen, die höhere Preise von Produkten verfügen, die die üblichen, niedrigeren Preisen haben.
 
 Allerdings ermöglicht die Preiskalkulationsfunktion es zu, dass der Einzelhändler eine Preiskalkulationspriorität für Shop-Preise erstellt, die höher als die Preiskalkulationspriorität regionaler Preise ist. Alternativ kann der Einzelhändler eine Preiskalkulationspriorität für Shop-Preise regionaler Preise erstellen und die Standardpreiskalkulationspriorität lassen, die 0 (null )ist. Beide Einstellungen stellen sicher, dass Shop-Preise immer vor regionalen Preise verwendet werden.
 
@@ -142,7 +142,7 @@ Der einfachste Ort, um Preis für ein Produkt festzulegen ist direkt im Produkt.
 
 Wenn ein Produkt einen Preis für den aufweist, bietet der Basispreis effizienteste Weise an, Preis dieses Produkts zu verwalten. Auch wenn Sie Handelsvereinbarungen zum Festlegen der Preise nutzen, können Sie auch den Basispreis auf einem Produkt festlegen. Wenn Sie keine Handelsvereinbarung **Alle** verwenden, haben Sie einen Fallback-Preis, der verwendet wird, wenn keine Handelsvereinbarung gilt.
 
-Wenn sich die Währung eines Einzelhandelskanals von der Unternehmenswährung unterscheidet, wird der Einzelhandelskanal-Basispreis ermittelt, indem Währungskonvertierung für den Preis verwendet, die für das Produkt festgelegt wird.
+Wenn die Währung eines Kanals von der Firmenwährung abweicht, wird der Basispreis in diesem Kanal durch Währungsumrechnung des auf dem Produkt festgelegten Preises bestimmt.
 
 Obgleich die Preiseinheit kein allgemeines Szenario ist, unterstützt es das Einzelhandelspreismodul. Wenn die Preiseinheit auf einen anderen Wert als **0** (Null) festgelegt ist, ergibt der Preis pro Einheit Preis ÷ Preiseinheit. Wenn der Preis eines Produkts $ 10,00 ist und die Preiseinheit ist 50, ist der Preis für eine Menge von 1 ist $0,20 (= $10.00 ÷ 50).
 
@@ -150,9 +150,9 @@ Obgleich die Preiseinheit kein allgemeines Szenario ist, unterstützt es das Ein
 
 Mit der Handelsvereinbarungserfassung verwenden, können Sie Handelsvereinbarungen für jedes Produkt erstellen. In Microsoft Dynamics 365 gibt es drei Debitorenumfänge für Handelsvereinbarungen: **Tabelle**, **Gruppe** und **Alle**. Der Debitorenumfang bestimmt die Debitoren, die eine bestimmte Verkaufspreis-Handelsvereinbarung gilt.
 
-Eine Handelsvereinbarung zu Verkaufspreisen **Tabelle** gilt für einen einzelnen Debitor, der direkt in der Handelsvereinbarung festgelegt ist. Dieses Szenario ist kein typisches Einzelhandels-Konsumenten-Szenario (B2C). Wenn es der Fall ist, verwendet das Einzelhandelspreismodul Handelsvereinbarungen **Tabelle**, wenn der Preis bestimmt wird.
+Eine Handelsvereinbarung zu Verkaufspreisen **Tabelle** gilt für einen einzelnen Debitor, der direkt in der Handelsvereinbarung festgelegt ist. Dieses Szenario ist kein typisches Business-to-Consumer (B2C)-Szenario. Wenn es der Fall ist, verwendet das Einzelhandelspreismodul Handelsvereinbarungen **Tabelle**, wenn der Preis bestimmt wird.
 
-Eine Handelsvereinbarung zu Verkaufspreisen **Gruppe** ist der Typ, der mit Kleinfunktionen häufig an das benutztesten ist. Außerhalb des Commerce sind Handelsvereinbarungen **Gruppen** für eine einfache Debitorengruppe. Allerdings ist im Commerce das Konzept einer Debitorengruppe erweitert worden, damit es eine allgemeine Einzelhandelspreisgruppe ist. Eine Preisgruppe kann einem Einzelhandelskanal, einer Zugehörigkeit, einem Treueprogramm oder einem Katalog zugeordnet werden. Detaillierte Informationen zu Preisgruppen finden Sie im Abschnitt "Preisgruppen" oben in diesem Thema.
+Eine **Gruppe** Verkaufspreis-Handelsvereinbarung ist der Typ, der am häufigsten verwendet wird. Außerhalb des Commerce sind Handelsvereinbarungen **Gruppen** für eine einfache Debitorengruppe. Allerdings ist im Commerce das Konzept einer Debitorengruppe erweitert worden, damit es eine allgemeine Einzelhandelspreisgruppe ist. Eine Preisgruppe kann einem Einzelhandelskanal, einer Zugehörigkeit, einem Treueprogramm oder einem Katalog zugeordnet werden. Detaillierte Informationen zu Preisgruppen finden Sie im Abschnitt "Preisgruppen" oben in diesem Thema.
 
 > [!NOTE]
 > Ein Handelsvereinbarungs-Preis wird immer vor dem Basispreis verwendet.
@@ -211,7 +211,7 @@ Microsoft SQL Server Express wird häufig für Kanaldatenbanken verwendet, um Ko
 
 ## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Preise, die Preise für Steuer enthalten und solche, die keine Steuer enthalten
 
-Wenn Sie Verkaufspreise in Dynamics 365 festlegen, definieren Sie nicht, ob der Preis den Sie festlegen, Mehrwersteuer einschließt oder nicht. Der Wert ist nur der Preis. Allerdings können Sie mit der Einstellung **Preis enthält Mehrwertsteuer** Einzelhandelskanäle so konfigurieren, dass sie entweder Steuer von Preisen einbeziehen oder ausschließen. Diese Einstellung wird für den Kanal festgelegt und kann auch in einem bestimmten Unternehmen ändern.
+Wenn Sie Verkaufspreise in Dynamics 365 festlegen, definieren Sie nicht, ob der Preis den Sie festlegen, Mehrwersteuer einschließt oder nicht. Der Wert ist nur der Preis. Bei der Einstellung **Preis einschließlich Verkaufssteuer** auf Kanäle können Sie Kanäle jedoch so konfigurieren, dass sie die Steuer in den Preisen entweder enthalten oder ausschließen. Diese Einstellung wird für den Kanal festgelegt und kann auch in einem bestimmten Unternehmen ändern.
 
 Wenn Sie mit den Arten der inklusiven und exklusive Steuern arbeiten, ist es für Sie für Preise ordnungsgemäß außerordentlich wichtig, da der Gesamtbetrag, der vom Debitor bezahlt wird, ändert, wenn die Einstellung **Preis enthält Mehrwertsteuer** im Kanal geändert wird.
 
@@ -219,15 +219,15 @@ Wenn Sie mit den Arten der inklusiven und exklusive Steuern arbeiten, ist es fü
 
 Eine einzelne Modul-Preiskalkulation wird verwendet, um Einzelhandelspreise über alle Kanäle zu berechnen: Callcenter, Einzelhandelsgeschäft und Onlineshops. Das hilft bei der Aktivierung der einheitlichen Geschäftsszenarien.
 
-Retailpreise wurde so entworfen, dass mit Retailentitäten anstelle der Nicht-Retailentitäten gearbeitet werden kann. Speziell wurde diese so entworfen, dass Preise nach Filiale, nicht nach Lagerort festgelegt werden.
+Die Preisgestaltung ist so konzipiert, dass sie mit Einzelhandelseinheiten statt mit Nicht-Einzelhandelseinheiten funktioniert. Speziell wurde diese so entworfen, dass Preise nach Filiale, nicht nach Lagerort festgelegt werden.
 
-Das Einzelhandelsmodul **unterstützt nicht** die folgenden Preiskalkulationsfunktionen:
+Die Preisfindungs-Engine **unterstützt nicht** die folgenden Preisfindungsfunktionen:
 
-- Das Festlegen von Preisen nach Standort oder Standort- und Lagerspeicherdimensionen wird nicht unterstützt. Wenn Sie in den Handelsvereinbarungen nur die Site-Dimension angeben, ignoriert der Einzelhandelspreis die Site und wendet die Handelsvereinbarung auf alle Sites an. Wenn Sie sowohl Site als auch Warehouse angeben, ist das Verhalten undefiniert/nicht getestet, da erwartet wird, dass Einzelhändler die Store-Preisgruppen verwenden, um die Preise für jedes Store/Warehouse zu steuern.
+- Das Festlegen von Preisen nach Standort oder Standort- und Lagerspeicherdimensionen wird nicht unterstützt. Wenn Sie in den Handelsvereinbarungen nur die Standortdimension angeben, ignoriert die Preisfindungsmaschine den Standort und wendet die Handelsvereinbarung auf alle Standorte an. Wenn Sie sowohl Site als auch Warehouse angeben, ist das Verhalten undefiniert/nicht getestet, da erwartet wird, dass Einzelhändler die Store-Preisgruppen verwenden, um die Preise für jedes Store/Warehouse zu steuern.
 - Attributbasierte Preisgestaltung wird nicht unterstützt.
 - Lieferantenrabatt-Pass-Through wird nicht unterstützt.
 
-Das Einzelhandelsmodul unterstützt zudem **nur** die folgenden Preiskalkulationsfunktionen:
+Außerdem unterstützt **nur** das Preisfindungssystem die folgenden Preisfindungsfunktionen:
 
 - Der Preis wird auf Grundlage der Produktdimensionen im Auftrag der verschiedenen Preis von der spezifischsten Preisvariante bis zur am wenigsten spezifischen Preisvariante im Produktmaster-Preis festgelegt. Ein Preis, der festgelegt wird, indem zwei Produktdimensionen verwendet werden (beispielsweise Gesamtlayout, Farbe und Größe), die vor einem Preis verwendet werden, der festgelegt wird, indem nur eine Produktdimension verwendet wird (beispielsweise Gesamtlayout, Größe).
 - Dieselbe Preisgruppe kann verwendet werden, um Preiskalkulation und Rabatte zu steuern.

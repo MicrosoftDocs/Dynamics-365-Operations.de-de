@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: t-benebo
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 623c25490964ccdf6abc37acaffee7ac0844cf39
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 35aad9bf89ba8c1ed6451304d8fc4fc6ffa575b5
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2251154"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057778"
 ---
 # <a name="trade-allowance-management"></a>Handelsvergütungsverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-Die Handelsvergütungsverwaltung hilft Unternehmen bei der Verwaltung von Verkaufsförderungsprogrammen, die Kunden im Einzelhandel, die Mengen- und Verhaltensziele erreichen, leistungsbezogene finanzielle Zuwendungen bieten. Die Möglichkeiten der Funktion sind für Unternehmen konzipiert, die sich auf umfassende auf Profit ausgerichtete Aktionen, wie der Budgetierung und Zuteilung von Aktionsmittel oder der Vertragseinstellungen, Anspruchserstellung und -verarbeitung sowie Zahlungsverarbeitung und Aktionseffizienzanalyse konzentrieren.
+Die Verwaltung von Handelszulagen hilft Unternehmen bei der Verwaltung von Verkaufsförderungsprogrammen, die Kunden, die Volumen- und Verhaltensziele erreichen, „Pay-for-Performance“-Geldbelohnungen anbieten. Die Möglichkeiten der Funktion sind für Unternehmen konzipiert, die sich auf umfassende auf Profit ausgerichtete Aktionen, wie der Budgetierung und Zuteilung von Aktionsmittel oder der Vertragseinstellungen, Anspruchserstellung und -verarbeitung sowie Zahlungsverarbeitung und Aktionseffizienzanalyse konzentrieren.
 
 
 Dieser Artikel bietet einen breiten Überblick der Handelsvergütungsverwaltungsfunktion und macht Sie mit den üblichen Aufgaben vertraut, die bei der Verwaltung eines Verkaufsförderungsprogramms benötigt werden. Eine Reihe von Benutzern mit Betriebs- und Entscheidungspflichten sollen diese Funktionen nutzen, um ihre jeweiligen Ziele zu erreichen:
@@ -61,7 +61,7 @@ Ein Handelsvergütungsvertrag ist ein Anreizprogramm, bei dem Kunden, die bestim
 
 Mittel, die dem Durchschnitt, die den Handelsvergütungsverträgen zugewiesen sind, werden auf der Seite **Geldmittel** erfasst. Um die Seite **Geldmittel** zu öffnen, wählen Sie **Vertrieb und Marketing** \> **Handelsvergütungen** \> **Geldmittel** \> **Geldmittel** aus.
 
-![Geldmittelseite](./media/trade-allowance-management-funds-page.png "Geldmittelseite")
+![Fonds Seite](./media/trade-allowance-management-funds-page.png "Fonds-Seite")
 
 Auf der Seite **Geldmittel** können Sie die Details der verkaufsfördernden Mittel anzeigen.
 
@@ -77,9 +77,9 @@ Nachdem die Mitteldefinition durchgeführt wurde, werden im nächsten Schritt de
 
 Handelsvergütungsverträge werden auf der Seite **Handelsvergütungsverträge** erfasst. Um die Seite **Handelsvergütungsverträge** zu öffnen, wählen Sie **Vertrieb und Marketing** \> **Händlervergütung** \> **Handelsvergütungsverträge** aus.
 
-![Handelsvergütungsvertragsseite](./media/trade-allowance-management-agreements-page.png "Handelsvergütungsvertragsseite")
+![Handelszulassungsabkommen Seite](./media/trade-allowance-management-agreements-page.png "Seite Handelszulassungsabkommen")
 
-#### <a name="header"></a>Übergeordnet
+#### <a name="header"></a>Header
 
 Wählen Sie **Kopfzeile** aus, um in die Kopfzeilenansicht zu wechseln.
 
@@ -105,7 +105,7 @@ Die Registerkarte **Verkaufereignisse** enthält die Ereignistypen, die durch vo
 
 Wenn Sie das Verkaufsereignis auswählen und dann auf die Registerkarte **Beträge** auswählen, werden die Details für das Ereignis angezeigt.
 
-![Handelsvergütungsvertragspositionen](./media/trade-allowance-management-agreements-lines.png "Handelsvergütungsvertragspositionen")
+![Handelszulagen-Abkommenszeilen](./media/trade-allowance-management-agreements-lines.png "Zeilen des Handelszulassungsabkommens")
 
 Im Abschnitt **Handelsvergütungspositionen** geben Sie die Mengen- oder Betragsbereiche an, die der Debitor als Definition erreichen muss, um die Belohnungen zu erhalten.
 

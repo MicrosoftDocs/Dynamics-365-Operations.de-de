@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de0981d3200c2b1d62cab7600d2382bd11dd4b20
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
+ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002242"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "3057832"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die Cloud-basierte Suche
 
@@ -33,7 +33,7 @@ Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft D
 
 ## <a name="overview"></a>Übersicht
 
-Produkt-Auffindbarkeit hilft sicherzustellen, dass Debitoren Produkte über das Durchsuchen von Kategorien schnell und einfach finden. Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Einzelhandelskanäle hinweg.
+Produkt-Auffindbarkeit hilft sicherzustellen, dass Debitoren Produkte über das Durchsuchen von Kategorien schnell und einfach finden. Einzelhändler erachten die Produkterfassung als ein primäres Tool für Debitoreninteraktionen über alle Kanäle hinweg.
 
 Debitoren sind sich an die blitzschnellen Antwortzeiten von Internet-Suchmodulen, tollen E-Commerce-Websites, Sozialen Apps und automatischen Vorschlägen gewöhnt, die angezeigt werden, solange sie Suchbegriffen, facettierte Navigation und Hervorhebungen eingeben. Wenn Kunden das Produkt nicht schnell genug finden, das sie in einem E-Commerce-Shop suchen, zögern sie nicht und wechseln in einen anderen E-Commerce-Shop.
 

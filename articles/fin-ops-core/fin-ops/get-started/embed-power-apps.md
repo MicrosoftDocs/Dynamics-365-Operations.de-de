@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 9585d5a399ebf45b0ad7640f3c4e48d8afc46cd8
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 90422a34499dab7302ad7722cf84d40e1815991c
+ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017727"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3042941"
 ---
 # <a name="embed-microsoft-power-apps"></a>Einbetten von Microsoft Power Apps
 
@@ -55,7 +55,7 @@ Die folgenden Anweisungen zeigen, wie eine App von Power Apps in den Webclient e
 
     - Das Feld **Name** gibt den Text an, der für die Schaltfläche oder Registerkarte angezeigt wird, der die eingebettete App enthält. Oftmals können Sie ggf. den Namen der App in diesem Feld wiederholen.
     - **App-Kennung** ist der GUID für die App, die Sie einbetten möchten. Um diesen Wert abzurufen, suchen Sie die App auf [web.powerapps.com](https://web.powerapps.com), und suchen Sie dann das Feld **App-ID** unter **Details**.
-    - Für die **Eingabekontext für die App** können Sie optional das Feld auswählen, das die Daten enthält, die an die App weitergegeben werden sollen. Weitere Informationen dazu, wie die [Apps auf die von Finance and Operations-Apps](#building-a-power-app-that-leverages-data-sent-from-finance-and-operations-apps) gesendeten Daten zugreifen kann, finden Sie im Abschnitt Erstellen einer App, die Daten aus Finance and Operations-Apps nutzt, weiter unten in diesem Thema.
+    - Für die **Eingabekontext für die App** können Sie optional das Feld auswählen, das die Daten enthält, die an die App weitergegeben werden sollen. Siehe den Abschnitt weiter unten in diesem Thema mit dem Titel [Erstellung einer Anwendung, die von Finance and Operations Anwendungen](#building-an-app-that-leverages-data-sent-from-finance-and-operations-apps) gesendete Daten nutzt, für Einzelheiten darüber, wie die Anwendung auf die von Finance and Operations Anwendungen gesendeten Daten zugreifen kann.
     - Wählen Sie die **Anwendungsgröße** die zum Typ der App passt, die Sie einbetten. Wählen Sie **Schmal** für Apps aus, die für mobile Geräte erstellt wurden, und **Breit** für Apps aus, die für Tablets erstellt wurden. Dadurch wird sichergestellt, dass für die eingebettete App ausreichend Platz zugeteilt wird.
     - Das Inforegister **Juristische Personen** bietet die Möglichkeit, auszuwählen, für welche juristischen Personen die App verfügbar ist. Standardmäßig wird die App in allen juristischen Personen verfügbar gemacht. Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) deaktiviert ist. 
 
@@ -76,7 +76,7 @@ Ein wichtiger Teil beim Erstellen einer App von Power Apps, die in eine Finance 
 
 In der OnStart-Funktion der App können Sie die Eingabedaten von Finance and Operations-Apps auf eine Variable wie die folgende festlegen:
 
-```
+```powerapps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
 ```
 
@@ -101,7 +101,7 @@ Gehen Sie folgendermaßen vor, um die Konfiguration von einer eingebetteten App 
 
 Nachdem eine App auf einer Seite eingebettet wurde, gibt es zwei Möglichkeiten, sie nach Bedarf zu entfernen:
 
-- Wechseln Sie zum Bereich **Eine App bearbeiten** mithilfe der Anweisungen vom Bereich [Bearbeiten einer eingebetteten App](#editing-an-embedded-power-app) oben in diesem Thema. Vergewissern Sie sich, dass der Bereich Informationen für die eingebettete App anzeigt, den Sie entfernen möchten, und klicken Sie dann auf die Schaltfläche **Löschen**.
+- Wechseln Sie zum Bereich **Eine App bearbeiten** mithilfe der Anweisungen vom Bereich [Bearbeiten einer eingebetteten App](#editing-an-embedded-app) oben in diesem Thema. Vergewissern Sie sich, dass der Bereich Informationen für die eingebettete App anzeigt, den Sie entfernen möchten, und klicken Sie dann auf die Schaltfläche **Löschen**.
 - Da eine eingebettete App als Personalisierungsdaten gespeichert wird, werden durch die Entfernung der Personalisierung der Seite auch alle eingebetteten Apps auf dieser Seite entfernt. Beachten Sie, dass die Löschung der Personalisierung dauerhaft ist und nicht rückgängig gemacht werden kann. Um Ihre Personalisierungen auf einer Seite zu entfernen, wählen Sie **Optionen** aus, und klicken Sie dann auf **Dieses Seite personalisieren** und schließlich auf die Schaltfläche **Löschen**. Nachdem Sie Ihrem Browser aktualisiert haben, werden auch alle vorherigen Personalisierungen für diese Seite entfernt. Unter [Personalisieren der Benutzeroberfläche](personalize-user-experience.md) finden Sie weitere Informationen darüber, wie Sie Seiten mithilfe der Personalisierung optimieren können.
 
 ## <a name="appendix"></a>Anhang
@@ -115,7 +115,7 @@ Standardmäßig können Benutzer Apps auf einer beliebigen Seite, entweder unter
 
 Das folgende Beispiel zeigt eine neue Klasse mit den beiden Methoden an, die erforderlich sind, um zu konfigurieren, wo Apps eingebettet werden kann.
 
-```
+```powerapps
 [ExtensionOf(classStr(FormRunConfigurationPowerAppsConfiguration))]
 
 public final class ClassTest_Extension
