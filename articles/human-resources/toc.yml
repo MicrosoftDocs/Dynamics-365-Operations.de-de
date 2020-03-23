@@ -1,10 +1,16 @@
 - name: Dynamics 365 Human Resources
   href: hr-welcome.md
   items:
-    - name: Neuigkeiten
+    - name: Neuerungen
       items:
-        - name: Neuigkeiten oder Änderungen in Human Resources
+        - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "10.\_März\_2020"
+          href: hr-whats-new-2020-03-10.md
+        - name: "3.\_März\_2020"
+          href: hr-whats-new-2020-03-03.md
+        - name: "25.\_Februar\_2020"
+          href: hr-whats-new-2020-02-25.md
         - name: "18.\_Februar\_2020"
           href: hr-whats-new-2020-02-18.md
         - name: "12.\_Februar\_2020"
