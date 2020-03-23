@@ -10,8 +10,6 @@
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
             - name: Anmelden für Vorschauabonnement
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
-            - name: Debitorenzahlungseinblicke (Vorschau)
-              href: accounts-receivable/payment-insights-overview.md
             - name: Dienstupdates für eine Version
               items:
                 - name: Dienstupdates für eine Version – Übersicht
@@ -24,8 +22,10 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/finance/toc.json
                 - name: Dienstupdateverfügbarkeit
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
-                - name: Updates auf Cloudumgebungen anwenden
+                - name: Updates in Cloudumgebungen anwenden
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/finance/toc.json
+                - name: Updates in lokalen Bereitstellungen anwenden
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Dienstupdates konfigurieren
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Dienstupdates anhalten
@@ -62,28 +62,32 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
                 - name: Finance and Operations-Apps in Frankreich
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
-            - name: Neuigkeiten oder Änderungen
+            - name: Neuerungen oder Änderungen
               items:
-                - name: Neuigkeiten oder Änderungen in Finance and Operations-Apps
+                - name: Neuerungen oder Änderungen in Finance and Operations-Apps
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Neuigkeiten oder Änderungen in Finance
+                - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuigkeiten oder Änderungen in Finance – Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Finance
                       href: get-started/whats-new-home-page.md
+                    - name: "Finance-Version 10.0.10 (Mai\_2020)"
+                      href: get-started/whats-new-changed-10-0-10.md
                     - name: Finance-Version 10.0.9 (April 2020)
                       href: get-started/whats-new-changed-10-0-9.md
                     - name: Finance-Version 10.0.8 (Februar 2020)
                       href: get-started/whats-new-changed-10-0-8.md
-                    - name: Finance-Version 10.0.7 (Januar 2020)
-                      href: get-started/whats-new-changed-10-0-7.md
-                - name: Entfernte oder veraltete Funktionen
+            - name: Entfernte oder veraltete Funktionen
+              items:
+                - name: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: In früheren Versionen entfernte oder veraltete Funktionen
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-                - name: "Verschobene Funktionen von AX\_2012"
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-                - name: Nicht in lokale Bereitstellungen implementierte Funktionen
-                  href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
+            - name: "Verschobene Funktionen von AX\_2012"
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: Nicht in lokale Bereitstellungen implementierte Funktionen
+              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
+            - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsressourcen
               items:
                 - name: Hilfesystem
@@ -312,7 +316,9 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Debitorenzahlungsgebühren festlegen
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
-            - name: Debitoren-Buchungsprofile
+            - name: Debitorenzahlungseinblicke (Vorschau)
+              href: accounts-receivable/payment-insights-overview.md
+            - name: Debitorenbuchungsprofile
               href: accounts-receivable/customer-posting-profiles.md
             - name: Debitoren unter Verwendung gemeinsamer Nummernkreise kopieren
               href: accounts-receivable/copy-customer.md
@@ -1794,7 +1800,9 @@
                           href: localizations/apac-ind-GST-define-gstin-numbers-number-sequences.md
                         - name: HSN-Codes und Service Accounting Codes definieren
                           href: localizations/apac-ind-GST-hsn-service-accounting-codes.md
-                        - name: Hauptkonto für die Buchungsart „GST” erstellen
+                        - name: Steuersatztyp erstellen
+                          href: localizations/apac-ind-GST-create-tax-rate-type.md
+                        - name: Hauptkonto für die Buchungsart „GST“ erstellen
                           href: localizations/apac-ind-GST-create-main-accounts-GST-posting-type.md
                         - name: Steuer-Abrechnungszeitraum erstellen
                           href: localizations/apac-ind-GST-create-tax-settlement-period.md
@@ -1920,19 +1928,20 @@
                       href: localizations/apac-ind-GST-tax-inquiry.md
                 - name: Steuermodul
                   items:
-                    - name: Steuermodul – Übersicht
+                    - name: Übersicht über das Steuermodul
                       href: general-ledger/tax-engine.md
-                      items:
-                        - name: Erstellen von Steuerkomponenten
-                          href: localizations/tax-engine-create-tax-component.md
-                        - name: Konfiguration importieren
-                          href: general-ledger/tax-engine-import-configuration.md
-                        - name: Anwendbarkeit des Steuermoduls
-                          href: general-ledger/tax-engine-applicability.md
-                        - name: Integration des Steuermoduls
-                          href: general-ledger/tax-engine-integration.md
-                        - name: Erweitern des Steuermoduls
-                          href: general-ledger/extend-tax-engine-configurations.md
+                    - name: Importkonfiguration
+                      href: general-ledger/tax-engine-import-configuration.md
+                    - name: Erweiterter Formeldesigner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-advanced-formula-editor.md?toc=/dynamics365/finance/toc.json
+                    - name: Anwendbarkeit des Steuermoduls
+                      href: general-ledger/tax-engine-applicability.md
+                    - name: Steuerkomponenten erstellen
+                      href: localizations/tax-engine-create-tax-component.md
+                    - name: Integration des Steuermoduls
+                      href: general-ledger/tax-engine-integration.md
+                    - name: Steuermodul erweitern
+                      href: general-ledger/extend-tax-engine-configurations.md
                 - name: FAQ zu Steuerschwellenwerten
                   href: localizations/apac-ind-tax-thresholds.md
                 - name: Aktienübertragungen
@@ -2357,50 +2366,56 @@
                       href: localizations/rus-incoming-VAT-restoring.md
                 - name: Anlagen
                   items:
-                    - name: Anlagen verwalten
-                      href: localizations/rus-fixed-assets.md
-                    - name: Anlagen – Übersicht
-                      hfre: localizations/rus-fixed-assets-overview.md
+                    - name: Übersicht über Anlagen
+                      href: localizations/rus-fixed-assets-overview.md
                     - name: Anlagen einrichten
-                      href: localizations/rus-set-up-fixed-assets.md
-                    - name: Erwerben und Inbetriebnehmen von Anlagen
-                      href: localizations/rus-fixed-asset-acquisition.md
-                    - name: Erfassen des Erwerbs von Anlagen
-                      href: localizations/rus-register-acquisition.md
-                    - name: Erstellen und Buchen von Budgeterfassungen für den Anlagenerwerb
-                      href: localizations/rus-post-budget-fixed-asset-acquisition.md
-                    - name: Anlagenpacht und eine Rücklieferung aus der Pachttransaktion erstellen
-                      href: localizations/rus-fixed-asset-leasing.md
-                    - name: Anlagebestandserfassung
-                      href: localizations/rus-fixed-assets-counting.md
-                    - name: Währungsneubewertung für Anlagen
-                      href: localizations/rus-fixed-asset-currency-revaluation.md
-                    - name: Anlagen verwalten
-                      href: localizations/rus-maintain-fixed-assets.md
-                    - name: Neubewerten von Anlagekosten und Anlageabschreibungen
-                      href: localizations/rus-fixed-assets-revaluation.md
-                    - name: Teilweise Anlagendemontage (Liquidation)
-                      href: localizations/rus-fixed-assets-disassembly.md
-                    - name: 'Veräußern, Entsorgen und Abschreiben von Anlagen'
-                      href: localizations/rus-sell-dispose-write-off-fixed-assets.md
-                    - name: Einrichten von Anlagestandorten und Anlagenummerierung
-                      href: localizations/rus-fixed-assets-locations-numbering.md
-                    - name: Einrichten von Abschreibungen
-                      href: localizations/rus-depreciation-setup.md
-                    - name: Abschreibungsmethoden
-                      href: localizations/rus-depreciation-methods.md
-                    - name: Abschreibungszulagen
-                      href: localizations/rus-bonus-depreciation.md
-                    - name: Berechnen der Abschreibung
-                      href: localizations/rus-depreciation-calculation.md
-                    - name: Übertragen von Anlagen
-                      href: localizations/rus-fixed-asset-transfer.md
-                    - name: Einheitliche Druckformulare für Anlagen
-                      href: localizations/printing-forms-fixed-assets.md
-                    - name: Buchhaltung für Arbeitskleidung/Spezialausrüstung (Russische Föderation)
-                      href: localizations/rus-working-clothes-instruments-accounting.md
-                    - name: Nicht wertvolle Anlagen (NVFAs) (Russland)
-                      href: localizations/rus-not-valuable-assets.md
+                      items:
+                        - name: Anlagen einrichten
+                          href: localizations/rus-set-up-fixed-assets.md
+                        - name: Abschreibung einrichten
+                          href: localizations/rus-depreciation-setup.md
+                        - name: Abschreibungsmethoden
+                          href: localizations/rus-depreciation-methods.md
+                        - name: Abschreibungszulagen
+                          href: localizations/rus-bonus-depreciation.md
+                        - name: Anlagestandorte und Anlagenummerierung einrichten
+                          href: localizations/rus-fixed-assets-locations-numbering.md
+                    - name: Mit Anlagen arbeiten
+                      items:
+                        - name: Anlagen erstellen
+                          href: localizations/rus-fixed-assets.md
+                        - name: Erwerb von Anlagen erfassen
+                          href: localizations/rus-register-acquisition.md
+                        - name: Anlagen erwerben und in Betrieb nehmen
+                          href: localizations/rus-fixed-asset-acquisition.md
+                        - name: Abschreibung berechnen
+                          href: localizations/rus-depreciation-calculation.md
+                        - name: Teilweise Anlagendemontage (Liquidation)
+                          href: localizations/rus-fixed-assets-disassembly.md
+                        - name: 'Anlagen veräußern, entsorgen und abschreiben'
+                          href: localizations/rus-sell-dispose-write-off-fixed-assets.md
+                        - name: Anlagenpacht und eine Rücklieferung aus der Pachttransaktion erstellen
+                          href: localizations/rus-fixed-asset-leasing.md
+                        - name: Anlagen verwalten
+                          href: localizations/rus-maintain-fixed-assets.md
+                        - name: Anlagebestandserfassung
+                          href: localizations/rus-fixed-assets-counting.md
+                        - name: Währungsneubewertung für Anlagen
+                          href: localizations/rus-fixed-asset-currency-revaluation.md
+                        - name: Anlagekosten und Anlageabschreibungen neu bewerten
+                          href: localizations/rus-fixed-assets-revaluation.md
+                        - name: Budgeterfassungen für den Anlagenerwerb erstellen und buchen
+                          href: localizations/rus-post-budget-fixed-asset-acquisition.md
+                        - name: Anlagen übertragen
+                          href: localizations/rus-fixed-asset-transfer.md
+                    - name: Nicht schätzbare Anlagen und Arbeitskleidung
+                      items:
+                        - name: Nicht schätzbare Anlagen (NVFAs) (Russland)
+                          href: localizations/rus-not-valuable-assets.md
+                        - name: Buchhaltung für Arbeitskleidung/Spezialausrüstung (Russland)
+                          href: localizations/rus-working-clothes-instruments-accounting.md
+                        - name: Einheitliche Druckformulare für Anlagen
+                          href: localizations/printing-forms-fixed-assets.md
                 - name: Debitoren- und Kreditorenkonto
                   items:
                     - name: Gutschrift als Korrektur (Russland)
@@ -2427,6 +2442,14 @@
                           href: localizations/rus-register-transactions-with-reference-to-agreements.md
                         - name: Anfragen und Berichte mit Vereinbarungen
                           href: localizations/rus-inquiries-reports-agreements.md
+                    - name: Transaktionen durch Zwischenbenutzer
+                      items:
+                        - name: Überblick über Transaktionen durch Zwischenbenutzer
+                          href: localizations/rus-transactions-through-intermediary.md
+                        - name: Einkäufe auf Provision
+                          href: localizations/rus-purchases-on-commission.md
+                        - name: Verkäufe auf Provision
+                          href: localizations/rus-sales-on-commission.md
                 - name: Bestand
                   items:
                     - name: Waren in Zustellung vom Kreditor
@@ -2533,9 +2556,11 @@
                   href: localizations/emea-swe-sie-standard-report.md
                 - name: Zahlungsformate importieren
                   href: localizations/emea-swe-payment-formats-import.md
+                - name: Mehrwertsteuer-Zahlungsbericht für Schweden
+                  href: localizations/emea-swe-sales-tax-payment-report-sweden.md
             - name: Schweiz
               items:
-                - name: Schweiz – Übersicht
+                - name: "Schweiz\_– Übersicht"
                   href: localizations/switzerland.md
                 - name: Debitorenzahlungen in ESR importieren
                   href: localizations/emea-che-esr-customer-payments-import.md
@@ -2561,20 +2586,24 @@
                   href: localizations/united-kingdom.md
                 - name: Schema für Baubranche
                   href: localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Gutschrift für den Rabattausgleich erstellen
-                  href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: 'Eine Bestellung erstellen, die Artikel beinhaltet, für die die Mehrwertsteuer für die Verlagerung der Steuerschuld gilt'
-                  href: localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: 'Einen Auftrag mit Artikeln erstellen, für die Mehrwertsteuer für Verlagerung der Steuerschuld gilt'
-                  href: localizations/tasks/gb-00002-sales-order.md
-                - name: Artikel-Mehrwertsteuergruppen für die Verlagerung der Steuerschuld einrichten
-                  href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Artikelgruppen, Regeln und Parameter zur Verlagerung der Steuerschuld einrichten'
-                  href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Mehrwertsteuergruppen für die Verlagerung der Steuerschuld festlegen
-                  href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
+                - name: Verlagerung der Steuerschuld
+                  items:
+                    - name: Gutschrift für den Rabattausgleich erstellen
+                      href: localizations/tasks/gb-00009-credit-note-settlement-discount.md
+                    - name: 'Eine Bestellung erstellen, die Artikel beinhaltet, bei denen die Mehrwertsteuer für die Verlagerung der Steuerschuld gilt'
+                      href: localizations/tasks/purchase-order-reverse-charge-vat.md
+                    - name: 'Einen Auftrag mit Artikeln erstellen, für die Mehrwertsteuer für Verlagerung der Steuerschuld gilt'
+                      href: localizations/tasks/gb-00002-sales-order.md
+                    - name: Artikel-Mehrwertsteuergruppen für die Verlagerung der Steuerschuld einrichten
+                      href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+                    - name: 'Artikelgruppen, Regeln und Parameter zur Verlagerung der Steuerschuld einrichten'
+                      href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+                    - name: Mehrwertsteuergruppen für die Verlagerung der Steuerschuld festlegen
+                      href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
                 - name: Digitale Steuer für MwSt.
                   href: localizations/emea-gbr-mtd-vat-integration.md
+                - name: Statistiken zu Bericht über Zahlungsmethoden
+                  href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Vereinigte Staaten
               items:
                 - name: Vereinigte Staaten – Übersicht
@@ -3141,7 +3170,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Datenmodelldefinitionen beim Erstellen von Formaten auswählen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-                - name: Erstellen von Berichten durch Hinzufügen von Inhalten als unformatierten XML-Code
+                - name: Erweiterte Filteroptionen zur Suche nach Konfigurationen im globalen Repository
+                  href: ../finance/localizations/enhanced-filtering-global-repo.md
+                - name: Berichte durch Hinzufügen von Inhalten als unformatierten XML-Code erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
                 - name: (ER) Unternehmensübergreifende Datenquellen in elektronischer Berichterstellung
                   href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
