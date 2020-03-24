@@ -3,7 +3,7 @@ title: Gespeicherte Ansichten
 description: In diesem Thema wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
 manager: AnnBe
-ms.date: 10/16/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: 62d7dc1bd877cd1267f87ed24f8fb8be8f6c74a3
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: c6a5880c6ae9470dbf7986f39798ec888d0c22ea
+ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017703"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100307"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
@@ -71,7 +71,7 @@ Wenn Sie die diese Änderungen speichern möchten, führen Sie die folgenden Sch
 2.  Um die vorhandenen Ansicht zu ändern:
      1. Wählen Sie **Speichern**. Beachten Sie, dass diese Aktion nicht für gesperrte Ansichten aktiviert ist. 
 3.  Um eine neue Ansicht zu erstellen.
-     1.    Wählen Sie **Speichern unter...**. 
+     1.    Wählen Sie **Speichern unter**. 
      2.    Geben Sie einen Namen und eine (optionale) Beschreibung ein.
      3.    Wählen Sie **Speichern**.
 
@@ -83,9 +83,9 @@ Um die Standardansicht für eine Seite zu ändern, führen Sie die folgenden Sch
 2.  Wählen Sie den Ansichtsnamen aus, um die Ansichts-Auswahl zu öffnen. 
 3.  Wählen Sie **Weiter** und anschließend **Als Standard festsetzen** aus.  
 
-Möchten Sie eine neue Ansicht (mithilfe der Aktivität **Speichern unter...**) erstellen, können Sie diese neue Ansicht zur Standardansicht machen, indem Sie die Option **Als Standard festsetzen** festlegen, bevor Sie die Ansicht speichern.
+Möchten Sie eine neue Ansicht (mithilfe der Aktivität **Speichern unter**) erstellen, können Sie diese neue Ansicht zur Standardansicht machen, indem Sie die Option **Als Standard festsetzen** festlegen, bevor Sie die Ansicht speichern.
 
-Beachten Sie, dass in einigen Fällen die Abfrage, die der Standardansicht zugeordnet ist, nicht ausgeführt wird, wenn Sie erstmals zu einer Seite navigieren. Wenn Sie also beispielsweise über eine Kachel zu einer Seite navigieren, wird die Abfrage der Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Falls Sie zu einer Seite navigieren, deren klassische Ansicht bereits eine definierte Abfrage besitzt, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. Wenn dies der Fall ist, werden Sie durch eine Informationsmeldung benachrichtigt, wenn die Ansicht geladen wird. Der Wechsel von Ansichten, nachdem die Seite geladen wurde, sollte eine Ansichtsabfrage wie erwartet ermöglichen.
+Beachten Sie, dass in einigen Fällen die Abfrage, die der Standardansicht zugeordnet ist, nicht ausgeführt wird, wenn Sie erstmals zu einer Seite navigieren. Wenn Sie also beispielsweise über eine Kachel zu einer Seite navigieren, wird die Abfrage der Kachel unabhängig von der Abfrage, die der Standardansicht zugeordnet ist, ausgeführt. Falls Sie zu einer Seite navigieren mit einer Standard-Ansicht, die bereits eine definierte Abfrage besitzt, wird die ursprüngliche Abfrage anstelle der Abfrage der Standardansicht ausgeführt. Wenn dies der Fall ist, werden Sie durch eine Informationsmeldung benachrichtigt, wenn die Ansicht geladen wird. Der Wechsel von Ansichten, nachdem die Seite geladen wurde, sollte eine Ansichtsabfrage wie erwartet ermöglichen. Ab Version 10.0.10 Platform Update 34 enthält die Informationsnachricht eine eingebettete Aktion, mit der Sie die Abfrage der Standardansicht direkt laden können.
 
 ## <a name="managing-personal-views"></a>Verwalten von persönlichen Ansichten 
 Das Dialogfeld **Verwalten Sie meine Ansichten** bietet grundlegende Verwaltungsfunktionen für Ihre persönlichen Ansichten und die Reihenfolge in der Ansichts-Auswahl. Um diese Seite zu öffnen, klicken Sie auf den Ansichtsnamen um das Ansichtswähldropdownmenü zu öffnen, wählen Sie **Weiter** und anschließend **Verwalten meiner Ansichten** aus.  

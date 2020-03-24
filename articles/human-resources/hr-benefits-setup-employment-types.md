@@ -1,6 +1,6 @@
 ---
 title: Beschäftigungstypen einrichten
-description: ''
+description: Beschäftigungstypen können in Dynamics 365 Human Resources eingerichtet werden, um Ihren Mitarbeitern gerecht zu werden.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1951c3bfadd06eef99258f59724d5fa27d89706
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 89a6045bebbb67251ee4a65dab71ce5771acc2af
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009156"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092613"
 ---
 # <a name="set-up-employment-types"></a>Beschäftigungstypen einrichten
 

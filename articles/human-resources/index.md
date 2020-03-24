@@ -1,6 +1,6 @@
 ---
 title: Willkommen bei Dynamics 365 Human Resources
-description: ''
+description: Dynamics 365 Human Resources bietet die Einblicke in die Belegschaft, die Sie benötigen, um datengesteuerte Mitarbeitererfahrungen in mehreren Bereichen aufzubauen.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fa043d98f7f4c7bf4421082d71b509cf2d7816c3
-ms.sourcegitcommit: 880f617d1d6e95eccbed762c7ea04398553c2ec0
+ms.openlocfilehash: 398bfd769946d4b6560e36e2713f06d7b8c4d8d3
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3036498"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092082"
 ---
 # <a name="welcome-to-dynamics-365-human-resources"></a>Willkommen bei Dynamics 365 Human Resources
 

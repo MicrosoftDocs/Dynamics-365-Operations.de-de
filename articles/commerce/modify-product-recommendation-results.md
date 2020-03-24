@@ -1,9 +1,9 @@
 ---
-title: Verwalten von KI-ML-basierten Produktempfehlungsergebnissen
+title: Anpassen von KI-ML-basierten Produktempfehlungsergebnissen
 description: In diesem Thema wird erläutert, wie Sie Ergebnisse zu Produktempfehlungen basierend auf maschinellen Lernverfahren mit künstlicher Intelligenz (AI-ML) an Ihr Unternehmen anpassen.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5da77f71fb2569adc011bb9ee9c8c795d85545f8
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: 4631ef03e1d73b70d80e774d1efa4909e619bbc0
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3025001"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127927"
 ---
-# <a name="manage-ai-ml-based-product-recommendation-results"></a>Verwalten von KI-ML-basierten Produktempfehlungsergebnissen
+# <a name="adjust-ai-ml-based-product-recommendation-results"></a>Anpassen von KI-ML-basierten Produktempfehlungsergebnissen
 
 
 [!include [banner](includes/banner.md)]
@@ -102,10 +102,22 @@ Befolgen Sie diese Schritte, um manuell Ergebnisse für ein Startprodukt hinzuzu
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
+[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 
 [Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
 
-[Hinzufügen von Produktempfehlungslisten zu Seiten](add-reco-list-to-page.md)
+[Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
 
-[Übersicht über Produktsammelmodule](product-collection-module-overview.md)
+[Empfehlungslisten zu einer E-Commerce-Site hinzufügen](add-reco-list-to-page.md)
+
+[Produktempfehlungen am POS hinzufügen](product.md)
+
+[Empfehlungen zum Transaktionsbildschirm hinzufügen](add-recommendations-control-pos-screen.md)
+
+[Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
+
+[Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
+
+[Produktempfehlungs-FAQs](faq-recommendations.md)

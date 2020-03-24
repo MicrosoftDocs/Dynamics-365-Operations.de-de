@@ -3,7 +3,7 @@ title: Zurücksetzen der Belegnummern
 description: In diesem Thema wird beschrieben, wie Sie die Belegnummern zurücksetzen, die für verschiedene Vorgänge an einem gewünschten Datum verwendet werden (zum Beispiel das Geschäftsjahr oder das Kalenderjahr).
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,17 +19,17 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: e81ff86a8b8a4dca6b14a21d6e982b03a928d29e
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
+ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3020077"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3123945"
 ---
 # <a name="reset-receipt-numbers"></a>Zurücksetzen der Belegnummern 
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Einzelhändler generieren Belegnummern für verschiedene Vorgänge in der Filiale, wie Cash-and-carry-Transaktionen, Rücklieferungstransaktionen, Kundenaufträge, Angebote und Zahlungen. Obwohl Einzelhändler ihre eigenen Belegformate definieren, gelten in einigen Ländern oder Regionen Bestimmungen, die diese Belegformate einschränken. Diese Bestimmungen können beispielsweise die Anzahl der Zeichen auf dem Beleg begrenzen, fortlaufende Belegnummern erfordern, einige Sonderzeichen einschränken oder ein Zurücksetzen der Belegnummern zu Beginn des Jahres erfordern. Microsoft Dynamics 365 Commerce ermöglicht eine flexible Verwaltung von Belegnummern, um Einzelhändlern zu helfen, behördliche Anforderungen zu erfüllen. In diesem Thema wird erläutert, wie Sie die Funktion zum Zurücksetzen von Belegnummern verwenden.
 

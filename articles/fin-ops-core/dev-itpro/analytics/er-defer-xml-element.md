@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
 ms.openlocfilehash: e9f6161186d04b690ee560dac7ee12974d070506
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 9c401a4adba260704b0b1cb9fe8e148bbb5afeed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015230"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3120877"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Verzögern der Ausführung von XML-Elementen in ER-Formaten
 
@@ -47,7 +47,7 @@ Die Option **Verzögerte Ausführung** wird nur für XML-Elemente unterstützt, 
 
 Die Option **Verzögerte Ausführung** wird nicht für XML-Elemente unterstützt, die sich im Formatelement **Allgemein\\Datei** befinden, wenn die Option für **Datei teilen** auf **Ja** gesetzt ist. Weitere Informationen zum Teilen von Dateien finden Sie unter [Teilen erstellter XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge](er-split-files.md).
 
-## <a name="Example"></a>Beispiel: Verzögern der Ausführung eines XML-Elements in einem ER-Format
+## <a name="example-defer-the-execution-of-an-xml-element-in-an-er-format"></a><a name="Example"></a>Beispiel: Verzögern der Ausführung eines XML-Elements in einem ER-Format
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministrator- oder der Funktionaler Berater für elektronische Berichterstellung-[Rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) ein ER-Format konfigurieren kann, das ein XML-Element enthält, dessen Ausführungsreihenfolge von der Reihenfolge in der Formathierarchie abweicht.
 

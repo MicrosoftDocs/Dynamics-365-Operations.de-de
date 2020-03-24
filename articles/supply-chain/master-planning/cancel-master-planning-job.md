@@ -19,14 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-12-16
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 66d5b10e1471b98274d4049df18a2e53873f789a
-ms.sourcegitcommit: 92cd55028be556a0bd41b6972c9c6d14b695dfa0
+ms.openlocfilehash: c04e2b2c0e5d7f28ea688578b3e1d7a1e1d9f6d3
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "2947479"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117447"
 ---
 # <a name="cancel-a-master-planning-job"></a>Masterplanungsauftrag abbrechen
+
+[!include [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Supply Chain Management gibt es mehrere Möglichkeiten, einen Masterplanungsauftrag abzubrechen. Beispielsweise möchten Sie vielleicht einen Masterplanungsauftrag abbrechen, wenn er versehentlich gestartet wurde oder länger als erwartet ausgeführt wird, und Sie möchten ihn beenden. Am besten brechen Sie einen Planungsauftrag über die Seite **Nicht abgeschlossene Planungsprozesse** ab. Alternative Optionen auf den Seiten **Batchaufträge** und **Erweiterte Batchaufträge** sollten nur verwendet werden, wenn das Abbrechen des Masterplanungsauftrags über die Seite **Nicht abgeschlossene Prozesse** nicht innerhalb weniger Minuten abgeschlossen wurde.
 
@@ -37,7 +39,7 @@ In Microsoft Dynamics 365 Supply Chain Management gibt es mehrere Möglichkeiten
 3. Klicken Sie auf **Abbrechen**.
 
 ## <a name="additional-cancel-options"></a>Weitere Optionen zum Abbrechen
-Diese sollten nur verwendet werden, wenn das Abbrechen des Masterplanungsauftrags über die Seite **Nicht abgeschlossene Prozesse** nicht innerhalb weniger Minuten abgeschlossen wurde.
+Diese sollten nur dann verwendet werden, wenn der Abbruch des Generalplanungsjobs von der Seite **Unerledigte Planungsprozesse** nicht innerhalb weniger Minuten abgeschlossen wurde.
 
 ### <a name="delete-master-planning-job-from-the-batch-jobs-page"></a>Masterplanungsauftrag über die Seite **Batchaufträge** löschen
 1. Wechseln Sie zu **Systemverwaltung > Anfragen > Batchaufträge**.

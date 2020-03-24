@@ -3,7 +3,7 @@ title: Produktempfehlungs-FAQs
 description: Dieses Thema enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den Produktempfehlungen oder deren Ergebnisse zugeordnet werden.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7951f92ef68a7a782f2874d7b73d7e45eba0afba
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003026"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127789"
 ---
 # <a name="product-recommendations-faq"></a>Produktempfehlungs-FAQs
 
@@ -75,12 +75,28 @@ Für Informationen dazu, wie Produktempfehlungsseiten Ihrer E-Commerce-Website h
 
 ## <a name="how-do-i-enable-recommendations-on-pos"></a>Wie aktiviere ich Empfehlungen für POS?
 
-Nachdem Sie Produktempfehlungen aktiviert haben, müssen Sie den Empfehlungsbereich dem Bildschirm der POS-Steuerung hinzufügen. Gehen Sie zu [dieser Funktionsdokumentation](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen) für weitere Informationen dazu, wie der Empfehlungsbereich Ihrem POS-Gerätenlayout hinzugefügt wird.
+Nachdem Sie Produktempfehlungen aktiviert haben, müssen Sie den Empfehlungsbereich dem Bildschirm der POS-Steuerung hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen einer Empfehlungssteuerung zum Transaktionsbild auf POS-Geräten](add-recommendations-control-pos-screen.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
+[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 
-[Verwalten von KI-ML-basierten Produktempfehlungsergebnissen](modify-product-recommendation-results.md)
+[Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
+
+[Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
+
+[Empfehlungslisten zu einer E-Commerce-Site hinzufügen](add-reco-list-to-page.md)
+
+[Produktempfehlungen am POS hinzufügen](product.md)
+
+[Empfehlungen zum Transaktionsbildschirm hinzufügen](add-recommendations-control-pos-screen.md)
+
+[Anpassung der Ergebnisse der AI-ML-Empfehlungen](modify-product-recommendation-results.md)
+
+[Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
+
+[Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)

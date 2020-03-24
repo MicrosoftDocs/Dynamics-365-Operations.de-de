@@ -3,7 +3,7 @@ title: Verwalten von robots.txt-Dateien
 description: In diesem Thema wird beschrieben, wie Sie robots.txt-Dateien in Microsoft Dynamics 365 Commerce verwalten.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brishoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d0ce49f2968030ca4656a01c7646819c01635e12
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: d248dae36e6e038749ee17a5a6ccb32f1dde0aed
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003486"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096842"
 ---
 # <a name="manage-robotstxt-files"></a>Verwalten von robots.txt-Dateien
 
@@ -88,16 +88,24 @@ Gehen Sie folgendermaßen vor, um eine robots.txt-Datei in Commerce zu löschen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[Onlineshopkanal einrichten](online-stores.md)
+
+[E-Commerce-Site erstellen](create-ecommerce-site.md)
 
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
+[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+
+[Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
+
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
-[Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
+[Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
+
+[Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)

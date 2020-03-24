@@ -18,16 +18,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 411daa5bc08df530750fd5c09ca8b54bf537b548
-ms.sourcegitcommit: ba1c76497acc9afba85257976f0d4e96836871d1
+ms.openlocfilehash: 0cfa7d55f5d4d219c0bc43eb6313c0c6bd014ab6
+ms.sourcegitcommit: ac7c457bda3d8545ee8c0de45e4fcc24d677ffdc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "2890326"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3133895"
 ---
 # <a name="vendor-invoices-overview"></a>Überblick über Kreditorenrechnungen
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dieses Thema enthält allgemeine Informationen zu Kreditorenrechnungen. Kreditorenrechnungen sind Zahlungsaufforderungen für Produkte und Dienste, die empfangen wurden. Kreditorenrechnungen können eine Rechnung für laufende Dienstleistungen darstellen oder auf Bestellungen für bestimmte Artikel und Dienstleistungen basieren.
 
@@ -44,7 +45,7 @@ Es gibt mehrere Möglichkeiten, eine Kreditorenrechnung einzugeben:
 - Zusammen mit dem Kreditorenrechnungspool, ermöglicht Ihnen das Kreditorenrechnungsregister, Rechnungen zum Antizipieren der Ausgaben schnell zu eingeben, . Sie können die zugeordneten Bestellungen später öffnen, um die Rechnung für das Ausgabenkonto zu buchen.
 - Auf den Seiten **Offene Kreditorenrechnungen** und **Ausstehende Kreditorenrechnungen** können Sie Kreditorenrechnung auf Basis bestätigter Bestellungen erstellen.
 
-In der nachstehenden Erläuterung finden Sie weitere Informationen dazu, wie Sie **Offene Kreditorenrechnungen** oder **Ausstehende Kreditorenrechnungen** verwenden, um eine Kreditorenrechnung aus einer Bestellung zu erstellen.
+In der nachstehenden Erläuterung finden Sie weitere Informationen dazu, wie Sie **Offene Kreditorenrechnungen** oder **Ausstehende Kreditorenrechnungen** verwenden können, um eine Kreditorenrechnung aus einer Bestellung zu erstellen.
 
 ## <a name="understanding-invoice-line-quantities"></a>Rechnungspositionsmengen verstehen
 
@@ -66,6 +67,16 @@ Sie können der Kreditorenrechnung eine Position hinzuzufügen, die nicht in der
 
 Möglicherweise werden in der Organisation Workflows zur Verwaltung des Prüfprozesses für Kreditorenrechnungen verwendet. Der Prüfungsworkflow kann für den Rechnungskopf und/oder die Rechnungsposition erforderlich sein. Die Steuerelemente des Workflows werden je nachdem, worauf der Fokus beim Auswählen auf das Steuerelement lag, auf die Kopfzeile oder die Position angewendet. Statt der Schaltfläche **Buchen** finden Sie eine **Übermitteln** Schaltfläche, die Sie verwenden können, um die Kreditorenrechnung durch den Prüfprozess zu senden.
 
+### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Verhindern, dass die Rechnung an den Workflow gesendet wird 
+
+Im Folgenden finden Sie verschiedene Möglichkeiten, wie Sie verhindern können, dass eine Rechnung an einen Workflow gesendet wird.
+
+- **Rechnungssumme und registrierte Summe sind nicht gleich.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass die Gesamtsummen nicht gleich sind, sodass sie die Salden korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungssumme und die registrierte Rechnungssumme nicht gleich sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist. 
+
+- **Die Rechnung enthält nicht zugeordnete Gebühren.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass die Rechnung nicht zugewiesene Belastungen enthält, sodass sie die Salden korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn nicht zugewiesene Belastungen auf einer Kreditorenrechnung sind** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.
+
+- **Die Rechnung enthält dieselbe Rechnungsnummer wie eine andere gebuchte Rechnung.** Die Person, die die Rechnung eingereicht hat, erhält eine Benachrichtigung, dass eine Rechnung mit gleicher Rechnungsnummer gefunden wurde, sodass sie sie korrigieren kann, bevor sie die Rechnung erneut an den Workflow sendet. Diese Warnung wird angezeigt, wenn der Parameter Kreditorenbuchhaltung gekennzeichnet ist **Überprüfen Sie die verwendete Rechnungsnummer** eingestellt ist auf **Duplikat ablehnen**. Diese Funktion ist verfügbar, wenn die **Verbieten Sie die Übermittlung an den Workflow, wenn die Rechnungsnummer bereits auf einer gebuchten Rechnung vorhanden ist und Ihr System nicht für die Annahme doppelter Rechnungsnummern eingerichtet ist** Parameter auf der **Funktionsverwaltung** Seite eingeschaltet ist.  
+
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Abgleichen von Kreditorenrechnungen mit Produktzugängen
 
 Sie können Informationen zu Kreditorenrechnungen eingeben und speichern, und Sie können Rechnungspositionen mit Produktzugangspositionen abgleichen. Für eine Position können auch Teilmengen abgeglichen werden.
@@ -78,9 +89,19 @@ Für die folgende Option wird vorausgesetzt, dass für die Bestellung mindestens
 
 Weitere Informationen finden Sie unter [Eingang von Kreditorenrechnungen erfassen und mit dem Wareneingang abgleichen](../accounts-payable/tasks/record-vendor-invoice-match-against-received-quantity.md).
 
+## <a name="configure-an-automated-task-for-vendor-invoice-workflow-to-post-the-vendor-invoice-using-a-batch-job"></a>Konfigurieren Sie eine automatisierte Aufgabe für den Lieferantenrechnungsworkflow, um die Lieferantenrechnung mithilfe eines Stapeljobs zu buchen
+
+Sie können dem Lieferantenrechnungsworkflow eine automatisierte Buchungsaufgabe hinzufügen, damit Rechnungen in einem Stapel verarbeitet werden. Durch das Buchen von Rechnungen in einem Stapel kann der Workflow-Prozess fortgesetzt werden, ohne auf den Abschluss der Buchung warten zu müssen. Dadurch wird die Gesamtleistung aller an den Workflow gesendeten Aufgaben verbessert.
+
+Um eine Lieferantenrechnung in einem Stapel zu buchen, klicken Sie auf die Seite **Funktionsverwaltung**, und aktivieren Sie die Parameter **Chargenbuchung der Lieferantenrechnung**. Workflows für Lieferantenrechnungen werden konfiguriert unter **Kreditorenbuchhaltung> Einrichtung > Kreditorenbuchhaltung**.
+
+Sie sehen die Aufgabe **Buchen Sie die Lieferantenrechnung mit einem Stapel** im Workflow-Editor, unabhängig davon, ob der Funktions-Parameter **Chargenbuchung der Lieferantenrechnung** aktiviert ist. Wenn der Funktions-Parameter nicht aktiviert ist, wird eine Rechnung mit **Buchen Sie die Lieferantenrechnung mit einer Chargenaufgabe** erst im Workflow verarbeitet, wenn der Parameter aktiviert ist. Die Aufgabe **Buchen Sie die Lieferantenrechnung mit einer Charge** darf nicht im selben Workflow verwendet werden wie die automatisierte Aufgabe **Lieferantenrechnungen buchen**. Auch die Aufgabe **Buchen Sie die Lieferantenrechnung mit einer Charge** sollte das letzte Element in der Workflow-Konfiguration sein.
+
+Sie können die Anzahl der Rechnungen, die in die Charge aufgenommen werden sollen, und die Anzahl der Stunden angeben, die gewartet werden muss, bevor eine Charge neu geplant wird. Gehen Sie dazu zu **Kreditorenkonten > Einrichtung > Kreditorenkontenparameter> Rechnung> Rechnungsworkflow**. 
+
 ## <a name="working-with-multiple-invoices"></a>Arbeiten mit mehreren Rechnungen
 
-Mehrere Rechnungen können zur gleichen Zeit bearbeitet und gleichzeitig gebucht werden. Wenn Sie mehrere Rechnungen erstellen müssen, verwenden Sie die Seite **Ausstehende Kreditorenrechnungen**. Wenn sie mehrere Kreditorenrechnungen buchen und drucken müssen, verwenden Sie die Rechnungsgenehmigungserfassung. Wenn Sie die Rechnungsgenehmigungserfassung verwenden, muss mindestens ein Produktzugang der Bestellung und eine Rechnung für die Bestellung in einem Rechnungsbuch gebucht sein. Die Finanzdaten für die Rechnung stammen aus der im Register gebuchten Rechnung.
+Mehrere Rechnungen können zur gleichen Zeit bearbeitet und alle gleichzeitig gebucht werden. Wenn Sie mehrere Rechnungen erstellen müssen, nutzen Sie die Seite **Ausstehende Kreditorenrechnungen**. Wenn sie mehrere Kreditorenrechnungen buchen und drucken müssen, verwenden Sie die Rechnungsgenehmigungserfassung. Wenn Sie die Rechnungsgenehmigungserfassung verwenden, muss mindestens ein Produktzugang der Bestellung und eine Rechnung für die Bestellung in einem Rechnungsbuch gebucht sein. Die Finanzdaten für die Rechnung stammen aus der im Register gebuchten Rechnung.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Wiederherstellen von Kreditorenrechnungen, die gerade verwendet werden
 

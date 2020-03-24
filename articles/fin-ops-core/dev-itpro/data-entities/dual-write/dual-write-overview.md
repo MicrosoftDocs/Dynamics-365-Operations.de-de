@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 12c6a39700a260c138fab67ed370f94b3aa04213
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: c4a643d4981364cea5b549118c201ac8a9798e02
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075985"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113873"
 ---
 # <a name="dual-write-overview"></a>Dual-Write-Übersicht
 
@@ -105,4 +105,4 @@ In der ersten Version wird der größte Teil der Automatisierung durch Dual-Writ
     - Es wird mehr Unterstützung für Währung und Wechselkurse geben, und die **Wechselkurs** Programmierschnittstelle (API) wird überarbeitet.
     - Einheitenumrechnungen werden unterstützt.
 
-Weitere Informationen über bevorstehende Änderungen finden Sie unter [Daten in Common Data Service - Phase 1 unf 2](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/extensibility/extensibility-roadmap).
+Weitere Informationen über bevorstehende Änderungen finden Sie unter [Daten in Common Data Service - Phase 1 unf 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1).

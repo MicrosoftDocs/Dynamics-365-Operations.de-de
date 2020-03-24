@@ -1,0 +1,63 @@
+---
+title: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
+description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
+author: roschlom
+manager: AnnBe
+ms.date: 03/13/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: roschlom
+ms.search.scope: Operations
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2020-03-02
+ms.dyn365.ops.version: Platform update 33
+ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127976"
+---
+# <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
+
+[!include [banner](../includes/banner.md)]
+
+In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Finance.
+
+- Eine Funktion *entfernt* ist nicht mehr im Produkt verfügbar.
+- Eine Funktion *veraltet* wird nicht aktiv entwickelt und könnte bei einem zukünftigen Update entfernt werden.
+
+Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
+
+> [!NOTE]
+> Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10012-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.12
+
+### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polnische SSRS-Berichte: Ausgangssteuer, Vorsteuer, EU-Zusammenfassung des Umsatzsteuerregisters – Funktionsreferenz PL-00014
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Nicht rechtlich obligatorisch.  |
+| **Ersetzt durch eine andere Funktion?**   | Ja (Excel-Format für Standard-Auditdatei mit Umsatzsteuererklärung – JPK_VDEK) |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Bis zum 1. Juli 2021 planen wir, die SSRS-Berichte nicht mehr zu unterstützen: **Ausgangssteuerregister, Kaufsteuerregister, EU-Zusammenfassung des Umsatzsteuerregisters – Funktionsreferenz PL-00014**. Stattdessen wird ein Beispiel für ein Excel-Format für eine Standard-Auditdatei mit Umsatzsteuererklärung (JPK_VDEK) eingeführt. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.7
+
+### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Das Dialogfeld für die Änderung von Workflow-Anforderungen enthält nicht mehr die Dropdown-Liste für die Benutzerauswahl.
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Geändert in die Funktion mit Kontogruppenauswahl.  |
+| **Ersetzt durch eine andere Funktion?**   | Ja |
+| **Betroffene Produktbereiche**         | Workflow |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Wir planen, die chinesischen Belegtypen-Einstellungen ohne Kontogruppenauswahl bis zum 1. Dezember 2020 nicht mehr zu unterstützen. Zusätzliche Details für das neue Design in [Was ist neu in 10.0.7](whats-new-changed-10-0-7.md). |
+
+## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Frühere Ankündigungen über entfernte oder veraltete Funktionen
+Um mehr über Funktionen zu erfahren, die in früheren Versionen entfernt oder veraltet sind, siehe [Entfernte oder veraltete Funktionen in früheren Versionen](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).

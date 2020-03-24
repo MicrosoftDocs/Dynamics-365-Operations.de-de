@@ -1,9 +1,9 @@
 ---
-title: Abrufen von Produktempfehlungen mithilfe von Demodaten
+title: Erstellen Sie Empfehlungen mit Demo-Daten
 description: Dieses Dokument bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,14 +19,17 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1456feb0665b6ec79a36a3704f17da80ffd759a0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 2e790d78b4d5216822ffda3a3895feb674876bd8
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042779"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127835"
 ---
-# <a name="get-product-recommendations-using-demo-data"></a>Abrufen von Produktempfehlungen mithilfe von Demodaten
+# <a name="create-recommendations-with-demo-data"></a>Erstellen Sie Empfehlungen mit Demo-Daten
+
+[!include [banner](includes/banner.md)]
+
 Dieses Dokument bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 
 Mehrkanal-Produktempfehlungen bieten eine Reihe von redaktionell kuratierten oder programmatisch erstellten Produktlisten. Diese Liste kann in einigen Szenarien je nach Geschäftsanforderung verwendet werden. Weitere Informationen zu Produktempfehlungslisten finden Sie im [Produktempfehlungsüberblick](product-recommendations.md).
@@ -39,7 +42,7 @@ Bei Umgebungen der Stufe 1 basieren Produktempfehlungen nur auf den statischen D
 Um Demo-Daten für Produktempfehlungen zu aktivieren, müssen Sie die Dynamics 365 Commerce-Vorschau-Demoerweiterung für die entsprechende Umgebung bereitstellen. Wenn Sie dies automatisch tun, werden Demo-Daten für Produktempfehlungen aktiviert.
 
 ## <a name="default-demo-data"></a>Standarddemodaten
-Jede Einzelfeld-Typumgebung verfügt über einen Satz vorab installierter Produktempfehlungsdemodaten, die in der Koma getrennten Datei „reco_demo_data.csv“ in der Commerce-Skalierungseinheit gespeichert ist.
+Jede Einzelfeld-Typumgebung verfügt über einen Satz vorab installierter Produktempfehlungsdemodaten, die in der Koma getrennten Datei „reco_demo_data.csv“ in der Commerce Scale Unit gespeichert ist.
 
 Die Daten werden in den folgenden Spalten strukturiert.
 
@@ -49,7 +52,7 @@ Die Daten werden in den folgenden Spalten strukturiert.
 | OperatingUnitNumber | :heavy_check_mark: | Die bestimmte Organisationseinheitsnummer, in der Produktempfehlungen angezeigt werden sollen.                                        |                                                                              |
 | Kategorie            |                    |    Die Kategorie, für die die bestimmte Liste zurückgegeben werden soll. Wenn keine Kategorie angegeben wird, gilt die Liste nur für den Anfang der Navigationshierarchie.    |                                                                              |
 | SeedItemId          |                    |    Für Listen, für die ein Seed (RecoPeopleAlsoBuy und RecoCart) erforderlich ist, ist es das Produkt, für das diese Listen weitere Produkte anzeigen sollten.            |                                                                              |
-| ItemIds             | :heavy_check_mark: | Mindestens ein Produkt, das als Ergebnis durch „;“ getrennt zurückgegeben wird.                                                                  |                                                                              |
+| ItemIds             | :heavy_check_mark: | Mindestens ein Produkt, das als Ergebnis durch ';'getrennt zurückgegeben wird.                                                                  |                                                                              |
 
 ## <a name="customize-demo-data"></a>Demodaten anpassen
 Sie können die Standarddemodaten mit sämtlichen Produkt und Kategorieinformationen bearbeiten, die in der Hauptniederlassung konfiguriert werden. Sobald Sie die .csv aktualisiert haben, werden die Produktempfehlungen, die den Kunden zurückgesendet werden, diese Änderungen wiedergeben.
@@ -67,4 +70,22 @@ Die Erweiterung enthält die Datendatei „RecoMockDataset.csv“, mit der Sie d
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
-[Umgebungsplanung](../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md)
+[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+
+[Produktempfehlungen aktivieren](enable-product-recommendations.md)
+
+[Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
+
+[Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
+
+[Empfehlungslisten zu einer E-Commerce-Site hinzufügen](add-reco-list-to-page.md)
+
+[Produktempfehlungen am POS hinzufügen](product.md)
+
+[Empfehlungen zum Transaktionsbildschirm hinzufügen](add-recommendations-control-pos-screen.md)
+
+[Anpassung der Ergebnisse der AI-ML-Empfehlungen](modify-product-recommendation-results.md)
+
+[Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
+
+[Produktempfehlungs-FAQs](faq-recommendations.md)

@@ -1,6 +1,6 @@
 ---
 title: Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
-description: Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. In diesem Artikel wird beschrieben, wie die aktuelle Version von Microsoft Dynamics 365 Finance Operations Anforderungen für die GDPdU/GoBD-Protokolldatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
+description: Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzlich verpflichtet, einen Export von Finanzdaten in einer maschinenlesbaren Form bereitzustellen. Dieser Artikel beschreibt, wie die aktuelle Version von Microsoft Dynamics 365 Finance die Anforderungen der GDPdU/GoBD-Prüfungsdatei unterstützt. Er enthält außerdem Tabellen, die als Beispiele in elektronischen Berichterstellungskonfigurationen eingerichtet wurden.
 author: mrolecki
 manager: AnnBe
 ms.date: 07/25/2019
@@ -17,12 +17,12 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a69e8a7d195e8cbd5c656124c294df7c4b1cfb2f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: fbc08332916d85b1bab54169da36c193b6eb4052
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773402"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091885"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -52,7 +52,7 @@ In den folgenden Abschnitten werden die Tabellen aufgelistet, die als Beispiele 
 
 ### <a name="general-ledger"></a>Hauptbuch
 
-In den folgenden Tabellen werden die allgemeinen Sachdatenstrukturdefinitionen angezeigt.
+Die folgenden Tabellen zeigen die Definitionen der Datenstruktur des Hauptbuchs.
 
 #### <a name="sachkonten"></a>Sachkonten
 

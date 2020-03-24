@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16a67ef625fdde0755e96c959be1fb2989ca53b6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e827ede0508d07b6800ecdc4cc99cb2b6a0bcc78
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770665"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124496"
 ---
 # <a name="sales-tax-overview"></a>Mehrwertsteuerüberblick
 
@@ -46,7 +46,7 @@ Jeder Mehrwertsteuercode muss mit einem Mehrwertsteuer-Ausgleichszeitraum verkn�
 
 Jeder Mehrwertsteuercode muss mit einer Sachkontobuchungsgruppe verknüpft werden. Eine Sachkontobuchungsgruppe gibt die Hauptkonten an, für die Beträge für Mehrwertsteuercodes gebucht werden. 
 
-Optionale Mehrwertsteuererklärungscodes können definiert werden. Diese können Mehrwertsteuercodes für verschiedene Betragstypen zugewiesen werden, die für den Mehrwertsteuercode berechnet werden. der **Mehrwertsteuerzahlung nach Code**-Bericht zeigt die Summen pro Mehrwertsteuerberichtscode für einen angegebenen Mehrwertsteuer-Abrechnungszeitraum und ein Intervall. 
+Optionale Mehrwertsteuererklärungscodes können definiert werden. Diese können Mehrwertsteuercodes für verschiedene Betragstypen zugewiesen werden, die für den Mehrwertsteuercode berechnet werden. Der Bericht **Umsatzsteuerzahlung nach Code** zeigt Summen pro Umsatzsteuer-Meldekennzeichen für eine bestimmte Umsatzsteuerabrechnungsperiode und ein bestimmtes Intervall. 
 
 Jede Buchung, für die Mehrwertsteuer berechnet und gebucht werden muss, muss eine Mehrwertsteuergruppe und eine Artikel-Mehrwertsteuergruppe haben. Mehrwertsteuergruppen werden der Partei (beispielsweise Debitor oder Kreditor) der Buchung zugeordnet, während Artikel-Mehrwertsteuergruppen der Ressource (beispielsweise Artikel oder Beschaffungskategorie) der Buchung zugeordnet sind. Steuergruppen enthalten eine Liste der Steuercodes. Die Steuercodes, die in der Mehrwertsteuergruppe und in der Artikel-Mehrwertsteuergruppe für eine Buchung vorhanden sind, sind der Steuercode, der für diese Buchung gilt. 
 

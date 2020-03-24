@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 14c6f7aaab4c6e4f099f47210f4d89fdfcd33d79
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030842"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124404"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
 [!include[banner](includes/banner.md)]
 
-In diesem Thema werden einige Konzepte in Verbindung mit Peripheriegeräten für Einzelhandelsgeschäfte beschrieben. Es werden die verschiedenen Arten Peripheriegeräte beschrieben, die mit der Verkaufsstelle (POS) verbunden werden können und die Komponenten, die für das Verwalten der Verbindung mit dem POS zuständig sind.
+In diesem Thema werden die Konzepte erläutert, die sich auf Speicherperipheriegeräte beziehen. Es werden die verschiedenen Arten Peripheriegeräte beschrieben, die mit der Verkaufsstelle (POS) verbunden werden können und die Komponenten, die für das Verwalten der Verbindung mit dem POS zuständig sind.
 
 ## <a name="concepts"></a>Konzepte
 
@@ -65,7 +65,7 @@ POS-Peripheriegeräte sidn Geräte, die für POS-Funktionen explizit unterstütz
 
 ### <a name="hardware-station"></a>Hardware Station
 
-Navigieren: Klicken Sie auf **Retail und Commerce** &gt; **Kanäle** &gt; **Einzelhandelsgeschäfte** &gt; **Alle Einzelhandelsgeschäfte**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Die **Hardwarestation**-Einstellung ist eine kanalbasierte Einstellung, die verwendet wird, um Instanzen zu definieren, in denen die Einzelhandelsperipherie bereitgestellt wird. Diese Einstellung auf der Kanalebene wird verwendet, um die Merkmale der Hardwarestation zu bestimmen. Sie wird außerdem zum Auflisten von Hardwarestationen verwendet, die für eine Modern POS-Instanz eine moderne in einem bestimmten Shop verfügbar sind. Die Hardwarestation ist in die Modern POS-Programme für Windows und Android integriert. Die Hardwarestation kann auch unabhängig bereitgestellt werden als ein eigenständiges Microsoft-Internetinformationsdienste-Programm (IIS). In diesem Fall können Sie über ein Netzwerk zugreifen.
+Navigation: Klicken Sie auf **Retail and Commerce** &gt; **Kanäle** &gt; **Filialen** &gt; **Alle Filialen**. Wählen Sie einen Shop aus, und klicken Sie anschließend auf die Registerkarte **Hardwarestationen**. Die Einstellung **Hardware-Station** ist eine Einstellung auf Kanalebene, die zur Definition von Instanzen verwendet wird, in denen die Peripherielogik eingesetzt wird. Diese Einstellung auf der Kanalebene wird verwendet, um die Merkmale der Hardwarestation zu bestimmen. Sie wird außerdem zum Auflisten von Hardwarestationen verwendet, die für eine Modern POS-Instanz eine moderne in einem bestimmten Shop verfügbar sind. Die Hardwarestation ist in die Modern POS-Programme für Windows und Android integriert. Die Hardwarestation kann auch unabhängig bereitgestellt werden als ein eigenständiges Microsoft-Internetinformationsdienste-Programm (IIS). In diesem Fall können Sie über ein Netzwerk zugreifen.
 
 ### <a name="hardware-profile"></a>Hardwareprofil
 
@@ -117,27 +117,30 @@ Der Zahlungsgerätensupport wird durch den Zahlungskonnektor implementiert. Zahl
 ## <a name="supported-interfaces"></a>Unterstützte Schnittstellen
 ### <a name="opos"></a>OPOS
 
-Um die meisten Geräte mit Commerce nutzen zu können, ist der OLE für POS-Industriestandard die primäre Plattform für Peripheriegeräte im Einzelhandel, die unterstützt wird. Der OLE für POS-Standard wurde vom National Retail Federation (NRF) erstellt, der branchenüblichen Kommunikationsprotokolle für Einzelhandlesperipheriegeräte erstellt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
+Um zu gewährleisten, dass die größte Bandbreite an Geräten mit Commerce verwendet werden kann, ist der Industriestandard OLE für POS die primäre unterstützte Peripheriegeräteplattform. Der OLE for POS-Standard wurde von der National Retail Federation (NRF) erstellt, die Industriestandard-Kommunikationsprotokolle für Peripheriegeräte festlegt. OPOS ist eine weithin anerkannte Implementierung des OLE für POS-Standards. Es wurde Mitte der 1990er entwickeltes und wurde mehrmals und aktualisiert. OPOS enthält eine Gerätetreiberarchitektur, die eine einfache Integration von POS-Hardware mit Windows-basierten POS-Systemen ermöglicht. OPOS steuert die Kommunikation zwischen kompatibler Hardware und der POS-Software. Ein OPOS-Steuerelement besteht aus zwei Teilen:
 
 -   **Steuerelementobjekt** – Das Steuerelementobjekt für eine Einheitenklasse (z.B. Gerätenamen) stellt die Schnittstelle zum Softwareprogramm bereit. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) bietet einen Satz OPOS-Steuerobjekte, die Common Control Objects (CCOs) heißen. Mit den CCOs wird die POS-Komponente von Commerce getestet. Wenn Commerce eine Geräteklasse über OPOS unterstützt, wird mit den Tests sichergestellt, dass viele Gerätetypen unterstützt werden, vorausgesetzt, dass der Hersteller ein Serviceobjekt bereitstellt, das für OPOS entwickelt wurde. Sie müssen jeden Einheitentyp nicht explizit testen.
 -   **Serviceobjekt** – Das Serviceobjekt bietet die Kommunikation zwischen dem Steuerobjekt (CCO) und dem Gerät. Normalerweise wird das Serviceobjekt für ein Gerät von dem Gerätenhersteller bereitgestellt. In bestimmten Fällen müssen Sie jedoch möglicherweise das Serviceobjekt von der Website des Herstellers herunterladen. Beispielsweise kann ein neueres Serviceobjekt verfügbar sein. Um die Adresse der Website des Herstellers suchen, prüfen Sie die Hardwaredokumentation.
 
-[![Steuerobjekt und Serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Unterstützung für die OPOS-Implementierung von OLE für POS gewährleistet Folgendes: Wenn die Gerätehersteller und POS-Herausgeber den Standard korrekt implementieren, können POS-Systeme und unterstützte Geräte zusammenarbeiten, auch wenn sie zuvor nicht zusammen getestet wurden. **Hinweis:** Die OPOS-Unterstützung gewährleistet nicht die Unterstützung aller Geräte mit OPOS-Treibern. Microsoft Dynamics 365 for Retail muss zunächst diesen Gerätetyp oder diese Klasse über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
+[![Steuerobjekt und Serviceobjekt](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Unterstützung für die OPOS-Implementierung von OLE für POS gewährleistet Folgendes: Wenn die Gerätehersteller und POS-Herausgeber den Standard korrekt implementieren, können POS-Systeme und unterstützte Geräte zusammenarbeiten, auch wenn sie zuvor nicht zusammen getestet wurden. 
+
+> [!NOTE]
+> OPOS-Support wird sichergestellt für alle Geräte, die OPOS-Treiber haben. Der Handel muss diesen Gerätetyp bzw. diese Geräteklasse zunächst über OPOS unterstützen. Darüber hinaus können ggf. Serviceobjekte nicht unbedingt mit der aktuellen Version des CCOs auf dem aktuellen Stand befindet. Sie sollten sich bewusst sein, dass sich im Allgemeinen die Servicequalitätsobjekte unterscheidet.
 
 ### <a name="windows"></a>Windows
 
-Bondruck am POS sind für OPOS optimiert. OPOS neigt zum schnelleren Drucken über Windows. Daher wird OPOS empfohlen. Insbesondere in Einzelhandelsumgebungen mit Bons mit 40 Spalten und schnellen Transaktionen. Für die meisten Geräte verwenden Sie OPOS-Steuerelemente. Allerdings unterstützen mehrere OPOS-Bondrucker auch Windows-Treiber. Mithilfe eines Windows-Treibers können Sie die neuesten Schriftarten und den Drucker im Netzwerk für mehrere Registern unterstützen. Allerdings besteht Nachteile bei der Verwendung von Windows-Treibern. Beispiele für Nachteile:
+Bondruck am POS sind für OPOS optimiert. OPOS neigt zum schnelleren Drucken über Windows. Daher ist es eine gute Idee, OPOS zu verwenden, insbesondere in Umgebungen, in denen 40-Spalten-Belege gedruckt werden und die Transaktionszeiten schnell sein müssen. Für die meisten Geräte verwenden Sie OPOS-Steuerelemente. Allerdings unterstützen mehrere OPOS-Bondrucker auch Windows-Treiber. Mithilfe eines Windows-Treibers können Sie die neuesten Schriftarten und den Drucker im Netzwerk für mehrere Registern unterstützen. Allerdings besteht Nachteile bei der Verwendung von Windows-Treibern. Beispiele für Nachteile:
 
 -   Wenn Windows-Treiber verwendet werden, werden Bilder gerendert bevor das Drucken auftritt. Daher neigt das Drucken dazu langsamer zu werden als bei Druckern mit OPOS-Steuerung.
 -   Geräte, die mit dem Drucker verbunden sind („Daisy-Chained“) funktionieren möglicherweise nicht korrekt, wenn Windows-Treiber verwendet werden. Beispielsweise kann die Kassenlade vielleicht nicht geöffnet werden, oder der Registernbelegdrucker arbeitet nicht wie erwartet.
--   OPOS unterstützt außerdem eine umfangreiche Palette an Variablen, die für Einzelhandeldsbondrucker spezifisch sind (z. B. Papierschnitt oder Belegdrucken).
+-   OPOS unterstützt auch einen umfangreicheren Satz von Variablen, die spezifisch für Quittungsdrucker sind, wie z.B. das Ausschneiden von Papier oder das Drucken von Belegen.
 -   Windows-Drucker werden nicht von der IIS-Hardwarestation unterstützt. 
 
 Wenn OPOS-Steuerungen für Windows-Drucker verfügbar sind, sollte der Drucker trotzdem korrekt mit Commerce funktionieren.
 
 ### <a name="universal-windows-platform"></a>Universal Windows Platform
 
-UWP, bei der Einzelhandelsperipheriegeräten, umfasst den Windows-Support für Plug-and-Play-Geräte. Wenn ein Plug&Play-Gerät an eine Windows-Betriebssystemversion verbunden ist, in der diese Art des Geräts unterstützt, ist kein Treiber erforderlich, damit das Gerät verwendet werden kann. Wenn beispielsweise Windows ein Bluetooth-Lautsprechergerät erkennt weiß das Betriebssystem das Gerät, dass den Klassentyp **Lautsprecher** hat. Daher behandelt es dieses Gerät es als Lautsprecher. Es sind keine zusätzlichen Einrichtung erforderlich. Im Falle von POS-Geräten können viele USB-Geräte verbunden werden, und Windows werden sie als Eingabegeräte (HIDs) erkannt. Allerdings ist es möglicherweise nicht in der Lage, die Funktion auf bestimmen Geräten zu erkennen, da das Gerät nicht die Klasse oder den Typ angibt. In Windows 10 sind Einheitenklassen für Strichcodescanner MSR und hinzugefügt. Wenn ein Gerät unter Windows 10 sich als Gerät aus einer der Klassen deklariert, hört Windows auf Ereignisse vom Gerät zu den entsprechenden Uhrzeiten. Modern POS unterstützt UWP MSR und Scanner. Wenn die Eingabe über dieser Geräte bereit ist, und ein RFID-Gerät, das zu einer der Klassen gehört vrbunden ist, kann das Gerät verwendet werden. Wenn beispielsweise ein UWP-Barcodescanner in einem Windows 10-Computer eingesteckt wird, und Strichcodeanmeldung für Modern POS konfiguriert ist, wird Strichcodescanner aktiv im Feld Anmeldungsbildschirm. Es sind keine zusätzlichen Einrichtung erforderlich. Zusätzliche Klassen von Geräten für UWP werden Windows hinzugefügt werden. Diese Klassen beinhalten Klassen für Kassenladen und Bondrucker. Unterstützung für diese neuen Einheitenklassen für Modern POS ist aussteht.
+UWP steht im Falle von Peripheriegeräten in Zusammenhang mit der Windows-Unterstützung für Plug-and-Play-Geräte. Wenn ein Plug&Play-Gerät an eine Windows-Betriebssystemversion verbunden ist, in der diese Art des Geräts unterstützt, ist kein Treiber erforderlich, damit das Gerät verwendet werden kann. Wenn beispielsweise Windows ein Bluetooth-Lautsprechergerät erkennt weiß das Betriebssystem das Gerät, dass den Klassentyp **Lautsprecher** hat. Daher behandelt es dieses Gerät es als Lautsprecher. Es sind keine zusätzlichen Einrichtung erforderlich. Im Falle von POS-Geräten können viele USB-Geräte verbunden werden, und Windows werden sie als Eingabegeräte (HIDs) erkannt. Allerdings ist es möglicherweise nicht in der Lage, die Funktion auf bestimmen Geräten zu erkennen, da das Gerät nicht die Klasse oder den Typ angibt. In Windows 10 sind Einheitenklassen für Strichcodescanner MSR und hinzugefügt. Wenn ein Gerät unter Windows 10 sich als Gerät aus einer der Klassen deklariert, hört Windows auf Ereignisse vom Gerät zu den entsprechenden Uhrzeiten. Modern POS unterstützt UWP MSR und Scanner. Wenn die Eingabe über dieser Geräte bereit ist, und ein RFID-Gerät, das zu einer der Klassen gehört vrbunden ist, kann das Gerät verwendet werden. Wenn beispielsweise ein UWP-Barcodescanner in einem Windows 10-Computer eingesteckt wird, und Strichcodeanmeldung für Modern POS konfiguriert ist, wird Strichcodescanner aktiv im Feld Anmeldungsbildschirm. Es sind keine zusätzlichen Einrichtung erforderlich. Zusätzliche Klassen von Geräten für UWP werden Windows hinzugefügt werden. Diese Klassen beinhalten Klassen für Kassenladen und Bondrucker. Unterstützung für diese neuen Einheitenklassen für Modern POS ist aussteht.
 
 ### <a name="keyboard-wedge"></a>Tastaturweiche
 
@@ -155,13 +158,13 @@ Netzwerk-Kassenladen, -Bondrucker und -Zahlungsterminals können über ein Netzw
 
 ### <a name="dedicated"></a>Dediziert
 
-Moderne POS-Clients für Windows und Android umfassen **dedizierte** oder eingebaute Hardwarestationen. Diese Clients können mithilfe der in die Anwendungen integrierten Geschäftslogik direkt mit Peripheriegeräten kommunizieren. Die Android-Anwendung unterstützt nur Netzwerkgeräte. Weitere Informationen zur Unterstützung von Peripheriegeräten für Android finden Sie im Artikel (Einrichten einer POS Hybrid-App unter Android und iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+Moderne POS-Clients für Windows und Android umfassen **dedizierte** oder eingebaute Hardwarestationen. Diese Clients können mithilfe der in die Anwendungen integrierten Geschäftslogik direkt mit Peripheriegeräten kommunizieren. Die Android-Anwendung unterstützt nur Netzwerkgeräte. Weitere Informationen über die Unterstützung von Peripheriegeräten für die Android finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 Um die dedizierte Hardwarestation zu verwenden, weisen Sie einem Register ein Hardwareprofil zu, das Modern POS für Windows- oder Android-Anwendungen nutzt. Erstellen Sie dann eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird. Starten Sie den Modern POS im kassenladenfremden Modus und verwenden Sie den Vorgang **Hardwarestationen verwalten**, um die Hardwarestationsfunktionen einzuschalten; die dedizierte Hardwarestation ist standardmäßig aktiv. Melden Sie sich als Nächstes vom Modern POS ab, melden Sie sich dann wieder an und öffnen Sie eine Schicht. Die im Hardwareprofil konfigurierten Peripheriegeräte können verwendet werden. 
 
 ### <a name="shared"></a>Geteilt 
 
-IIS, manchmal auch als IIS-Hardwarestation bezeichnet, bedeutet, dass die POS-Anwendung über Microsoft Internet Information Services eine Verbindung zur Hardwarestation herstellt. Die POS-Anwendung verbindet sich mit der IIS-Hardwarestation über Webdienste, die auf einem Computer ausgeführt werden, mit dem die Geräte verbunden werden. Wenn die freigegebene Hardwarestation verwendet wird, können die Einzelhandelsperipheriegeräte, die mit einer Hardwarestation verbunden sind, von jedem POS-Register genutzt werden, das sich im selben Netzwerk wie die IIS-Hardwarestation befindet. Da nur Modern POS für Windows und Android integrierte Unterstützung für Einzelhandelsperipheriegeräte umfasst, müssen alle anderen Modern POS-Anwendungen die IIS-Hardwarestation verwenden, um mit POS-Peripheriegeräten zu kommunizieren, die im Hardwareprofil konfiguriert sind. Deshalb muss jede Instanz der IIS-Hardwarestation einen Computer haben, der den Webdienst und die Anwendung ausführen. 
+IIS, manchmal auch als IIS-Hardwarestation bezeichnet, bedeutet, dass die POS-Anwendung über Microsoft Internet Information Services eine Verbindung zur Hardwarestation herstellt. Die POS-Anwendung verbindet sich mit der IIS-Hardwarestation über Webdienste, die auf einem Computer ausgeführt werden, mit dem die Geräte verbunden werden. Wenn die gemeinsam genutzte Hardware-Station verwendet wird, können die Peripheriegeräte, die an eine Hardware-Station angeschlossen sind, von jeder POS-Kasse verwendet werden, die sich im selben Netzwerk wie die IIS-Hardware-Station befindet. Da nur Modern POS for Windows und Android eine integrierte Unterstützung für Peripheriegeräte enthalten, müssen alle anderen Modern POS-Anwendungen die IIS-Hardware-Station zur Kommunikation mit den im Hardwareprofil konfigurierten POS-Peripheriegeräten verwenden. Deshalb muss jede Instanz der IIS-Hardwarestation einen Computer haben, der den Webdienst und die Anwendung ausführen. 
 
 Mit der freigegebenen Hardwarestation können mehrere POS-Clients Peripheriegeräte gemeinsam nutzen, oder es kann damit ein festgeschriebenes Set oder Peripheriegeräte für einen einzelnen POS verwaltet werden. 
 
@@ -179,7 +182,7 @@ Die Netzwerkbezeichnung für Geräte im Hardwareprofil sorgt dafür, das Kassenl
 
 #### <a name="modern-pos-for-windows"></a>Modern POS für Windows
 
-Sie können IP-Adressen für Netzwerkperipheriegeräte in zwei Stellen angeben. Wenn der Modern POS Windows-Client einen individuellen Satz Netzwerkperipheriegeräte verwendet, sollten Sie die IP-Adressen diese für Geräte festlegen, indem Sie die **IP-Konfiguration** Option im Aktivitätsbereich für die Register verwenden. Bei der Netzwerkgeräten, die unter POS-Registern freigegeben werden, kann ein Hardwareprofil, dem Netzwerkgeräte zugewiesen werden, direkt auf eine freigegebene Hardwarestation zugeordnet werden. Um IP-Adressen zuzuweisen, wählen Sie die Hardwarestation auf der Seite **Filialen** aus. Verwenden Sie dann die Option **IP-Konfiguration** im Abschnitt **Hardwarestationen**, um die Netzwerkgeräte anzugeben, die dieser Hardwarestation zugewiesen werden. Für Hardwarestationen, die nur Netzwerkgeräte haben, müssen Sie die Hardwarestation selbst nicht bereitstellen. In diesem Fall ist die Hardwarestation nur erforderlich, , um über das Netzwerk adressierbare Geräte entsprechend ihrem Standort im auf Shop zu gruppieren.
+Sie können IP-Adressen für Netzwerkperipheriegeräte in zwei Stellen angeben. Wenn der Modern POS Windows-Client einen individuellen Satz Netzwerkperipheriegeräte verwendet, sollten Sie die IP-Adressen diese für Geräte festlegen, indem Sie die **IP-Konfiguration** Option im Aktivitätsbereich für die Register verwenden. Bei der Netzwerkgeräten, die unter POS-Registern freigegeben werden, kann ein Hardwareprofil, dem Netzwerkgeräte zugewiesen werden, direkt auf eine freigegebene Hardwarestation zugeordnet werden. Um IP-Adressen zuzuweisen, wählen Sie die Hardwarestation auf der Seite **Filialen** aus. Verwenden Sie dann die Option **IP-Konfiguration** im Abschnitt **Hardwarestationen**, um die Netzwerkgeräte anzugeben, die dieser Hardwarestation zugewiesen werden. Für Hardwarestationen, die nur Netzwerkgeräte haben, müssen Sie die Hardwarestation selbst nicht bereitstellen. In diesem Fall ist die Hardware-Station nur erforderlich, um netzwerkadressierbare Geräte konzeptionell nach ihrem Standort in der Filiale zu gruppieren.
 
 #### <a name="cloud-pos-and-modern-pos-for-ios"></a>Cloud POS und Modern POS für iOS
 
@@ -192,11 +195,11 @@ Weitere Informationen finden Sie unter [Konfigurieren und Installieren einer Har
 
 ### <a name="modern-pos-for-windows-setup-and-configuration"></a>Modern POS für Windows-Einstellung und -Konfiguration
 
-Weitere Informationen finden Sie unter [Konfigurieren, Installieren und Aktivieren von Retail Modern POS](retail-modern-pos-device-activation.md).
+Weitere Informationen finden Sie unter [Konfigurieren, Installieren und Aktivieren von Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS für Android und iOS – Einrichtung und Konfiguration
 
-Weitere Informationen finden Sie unter (Einrichten einer POS Hybrid-App unter Android und iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+Weitere Informationen finden Sie unter [POS-Hybridanwendung auf Android und iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp) einrichten.
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-Geräte Einrichtung und Konfiguration
 
@@ -283,14 +286,14 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <td>Schublade</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netzwerk <strong>Hinweis:</strong> Nur eine Kassenlade kann eingerichtet werden, wenn <strong>Freigegebene Schicht verwenden</strong> für die Kassenlade konfiguriert ist.</li>
+<li>Netzwerk </br><strong>Hinweis:</strong> Es kann nur eine Kassenlade eingerichtet werden, wenn das <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Schublade 2</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netzwerk <strong>Hinweis:</strong> Nur eine Kassenlade kann eingerichtet werden, wenn <strong>Freigegebene Schicht verwenden</strong> für die Kassenlade konfiguriert ist.</li>
+<li>Netzwerk </br><strong>Hinweis:</strong> Es kann nur eine Kassenlade eingerichtet werden, wenn das <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -333,7 +336,8 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-Clients mit festgeschriebener freigegebener IIS-Hardwarestation
 
-**Hinweis:** Wenn die IIS-Hardwarestation festgeschrieben ist, gibt es eine Eins-zu-Eins-Beziehung zwischen dem POS-Client und der Hardwarestation.
+> [!NOTE]
+> Wenn die IIS-Hardware-Station „committed“ ist, besteht eine Eins-zu-Eins-Beziehung zwischen dem POS-Client und der Hardware-Station.
 
 <table>
 <colgroup>
@@ -373,7 +377,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <td>Schublade</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netzwerk <strong>Hinweis:</strong> Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Freigegebene Schicht verwenden</strong> für die Kassenlade konfiguriert ist.</li>
+<li>Netzwerk </br><strong>Hinweis:</strong> Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -415,7 +419,8 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 
 ### <a name="all-modern-pos-clients-shared-an-iis-hardware-station"></a>Alle Modern POS-Clients mit freigegebener IIS-Hardwarestation
 
-**Hinweis:** Wenn die IIS-Hardwarestation freigegeben ist, können mehrere Geräte gleichzeitig die Hardwarestation verwenden. Für dieses Szenario sollten Sie nur die Geräte verwenden, die in der weiter unten dargestellten Tabelle. Wenn Sie versuchen Geräte freizugeben, die hier nicht aufgeführt sind, wie Strichcodescanner und MSR, treten Fehler auf, wenn mehrere Geräte versuchen, dasselbe Peripheriegerät zu beanspruchen. In der Zukunft wird eine solche Konfiguration explizit verhindert.
+> [!NOTE]
+> Wenn die IIS-Hardware-Station „gemeinsam genutzt“ wird, können mehrere Geräte die Hardware-Station gleichzeitig verwenden. Für dieses Szenario sollten Sie nur die Geräte verwenden, die in der weiter unten dargestellten Tabelle. Wenn Sie versuchen Geräte freizugeben, die hier nicht aufgeführt sind, wie Strichcodescanner und MSR, treten Fehler auf, wenn mehrere Geräte versuchen, dasselbe Peripheriegerät zu beanspruchen. In der Zukunft wird eine solche Konfiguration explizit verhindert.
 
 <table>
 <colgroup>
@@ -447,7 +452,7 @@ Netzwerkperipheriegeräte können direkt über die Hardwarestation unterstützt 
 <td>Schublade</td>
 <td><ul>
 <li>OPOS</li>
-<li>Netzwerk <strong>Hinweis:</strong> Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Freigegebene Schicht verwenden</strong> für die Kassenlade konfiguriert ist.</li>
+<li>Netzwerk </br><strong>Hinweis:</strong> Nur eine Kassenlade pro Hardwareprofil kann eingerichtet werden, wenn <strong>Verwenden der freigegebenen Schicht</strong> für die Kassenlade konfiguriert wird.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -476,8 +481,12 @@ Diese Konfiguration ist die typischste Konfiguration für die traditionelle, fes
 
 1.  Erstellen eines Hardwareprofils, bei dem alle erforderlichen Peripheriegeräte konfiguriert werden.
 2.  Ordnen Sie den dem Hardwareprofil POS-Registern zu.
-3.  Erstellen Sie eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird. Die Beschreibung ist optional. **Hinweis**: Sie müssen keine anderen Eigenschaften auf der Hardwarestation festlegen. Alle anderen Informationen, z.B. das Hardwareprofil, kommt von der Register selbst.
-4.  Klicken Sie auf **Retail und Commerce** &gt; **Retail-IT** &gt; **Verteilungszeitplan**.
+3.  Erstellen Sie eine Hardware-Station vom Typ **Dediziert** für das Geschäft, in dem die POS-Kasse verwendet werden soll. Die Beschreibung ist optional. 
+
+    > [!NOTE]
+    > Sie müssen keine anderen Eigenschaften auf der Hardwarestation festlegen. Alle anderen Informationen, z.B. das Hardwareprofil, kommt von der Register selbst.
+
+4.  Klicken Sie auf **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Verteilungsplan**.
 5.  Wählen Sie den Verteilungszeitplan **1090** aus, um das neue Hardwareprofil zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 6.  Wählen Sie den Verteilungszeitplan **1040** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 7.  Installieren und aktivieren von Modern POS für Windows.
@@ -485,29 +494,30 @@ Diese Konfiguration ist die typischste Konfiguration für die traditionelle, fes
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS für Android mit einer IPC-Hardwarestation (integriert)
 
-**Neu für 10.0.8** – Epson-Netzwerkdrucker und Kassenladen, die über den DK-Port mit diesen Druckern verbunden sind, werden jetzt für die Modern POS für Android-App unterstützt. Weitere Details finden Sie im Artikel (Einrichten einer POS Hybrid-App unter Android und iOS)[https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp].
+**Neu für 10.0.8** – Epson-Netzwerkdrucker und Kassenladen, die über den DK-Port mit diesen Druckern verbunden sind, werden jetzt für die Modern POS für Android-App unterstützt. Einzelheiten finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-Clients mit festgeschriebener freigegebener IIS-Hardwarestation
 
 Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die eine Hardwarestation hat, die ausschließlich durch eine POS-Register verwendet wird. Führen Sie zum Eirnichten dieser Konfiguration die folgenden Schritte durch.
 
 1.  Erstellen eines Hardwareprofils, bei dem alle erforderlichen Peripheriegeräte konfiguriert werden.
-2.  Erstellen Sie eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird.
+2.  Erstellen Sie eine Hardware-Station vom Typ **Dediziert** für das Geschäft, in dem die POS-Kasse verwendet werden soll.
 3.  Auf dedizierten Hardwarestationen legen Sie die folgenden Eigenschaften fest:
     -   **Hostname** – Der Name des Hostcomputers, wo die Hardwarestation ausgeführt wird. 
     
-    **Hinweis**: Cloud POS kann **localhost** für den lokalen Computer auflösen, um zu bestimmen, wo Cloud POS ausgeführt wird. Das Zertifikat für das koppeln von Cloud POS mit der Hardwarestation muss jedoch auch "Localhost" als Computernamen nutzen. Um Probleme zu vermeiden, sollten Sie eine Liste aller Instanzen jeder dedizierten Hardwarestation für den Shop führen. Für jede Hardwarestation sollte der Hostname der Computernamen sein, für den die Hardwarestation bereitgestellt wird.
+        > [!NOTE]
+        > Cloud POS kann **localhost** für den lokalen Computer auflösen, um zu bestimmen, wo Cloud POS ausgeführt wird. Das Zertifikat für das koppeln von Cloud POS mit der Hardwarestation muss jedoch auch "Localhost" als Computernamen nutzen. Um Probleme zu vermeiden, sollten Sie eine Liste aller Instanzen jeder dedizierten Hardwarestation für den Shop führen. Für jede Hardwarestation sollte der Hostname der Computernamen sein, für den die Hardwarestation bereitgestellt wird.
     
     -   **Port** – Der Port, der verwendet wird, damit die Hardwarestation mit dem Modern POS-Client kommunizieren kann.
     -   **Hardwareprofil** – Wenn das Hardwareprofil nicht auf der Hardwarestation selbst angegeben ist, wird das Hardwareprofil, das der Register zugewiesen ist, verwendet.
     -   **EFT POS-Nummer** – Die EFT-Terminal-ID, das verwendet werden soll, wenn EFT-Autorisierungen übermittelt werden. Diese Kennung wird von der Kreditkartenverarbeitungsstelle bereitgestellt.
     -   **Paketname** – Das Hardwarestationspaket, das verwendet werden soll, wenn die Hardwarestation bereitgestellt wird.
 
-4.  Klicken Sie auf **Retail und Commerce** &gt; **Retail-IT** &gt; **Verteilungszeitplan**.
+4.  Klicken Sie auf **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Verteilungsplan**.
 5.  Wählen Sie den Verteilungszeitplan **1090** aus, um das neue Hardwareprofil zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 6.  Wählen Sie den Verteilungszeitplan **1040** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 7.  Installation der Hardwarestation Weitere Informationen zur Installation der Hardware-Station finden Sie unter [Konfiguration und Installation der Retail-Hardware-Station](retail-hardware-station-configuration-installation.md).
-8.  Installieren und aktivieren von Modern POS Weitere Informationen zur Installation von Modern POS finden Sie unter [Konfigurieren, Installieren und Aktivieren von Retail Modern POS(MPOS)](retail-modern-pos-device-activation.md).
+8.  Installieren und aktivieren von Modern POS Weitere Informationen über die Installation von Modern POS finden Sie unter [Konfiguration, Installation und Aktivierung von Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 9.  Melden Sie sich bei Modern POS, und wählen Sie aus **Ausführen von Vorgängen ohne Kassenlade**.
 10. Starten Sie den **Hardwarestationen verwalten** Arbeitsgang.
 11. Klicken Sie auf **Verwalten**.
@@ -521,7 +531,7 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die eine
 Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die die Hardwarestationen mit anderen Geräten teilen. Führen Sie zum Eirnichten dieser Konfiguration die folgenden Schritte durch.
 
 1.  Erstellen eines Hardwareprofils, bei dem die erforderlichen Peripheriegeräte konfiguriert werden.
-2.  Erstellen Sie eine Hardwarestation vom Typ **Freigegeben** für den Shop, in dem die Register verwendet wird.
+2.  Erstellen Sie eine Hardware-Station vom Typ **Shared** für das Geschäft, in dem die POS-Kasse verwendet werden soll.
 3.  Auf freigegebenen Hardwarestationen legen Sie die folgenden Eigenschaften fest:
     -   **Hostname** – Der Name des Hostcomputers, wo die Hardwarestation ausgeführt wird.
     -   **Beschreibung** – Text, der die Erkennung der Hardwarestation unterstützt (z. B. **Rücklieferungen** oder **Vorne im Laden**).
@@ -531,11 +541,11 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die die 
     -   **Paketname** – Das Hardwarestationspaket, das verwendet werden soll, wenn die Hardwarestation bereitgestellt wird.
 
 4.  Wiederholen Sie die Schritte 2 und 3 für jede zweite Hardwarestation im Shop.
-5.  Klicken Sie auf **Retail und Commerce** &gt; **Retail-IT** &gt; **Verteilungszeitplan**.
+5.  Klicken Sie auf **Retail and Commerce** &gt; **Retail and Commerce IT** &gt; **Verteilungsplan**.
 6.  Wählen Sie den Verteilungszeitplan **1090** aus, um das neue Hardwareprofil zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 7.  Wählen Sie den Verteilungszeitplan **1040** aus, um die neue Hardwarestation zu synchronisieren. Klicken Sie auf **Jetzt ausführen**, um die Änderungen am POS zu synchronisieren.
 8.  Installieren Sie die Hardwarestation auf jedem Hostcomputer, den Sie in Schritt 2. und 3 eingerichtet haben. Weitere Informationen zur Installation der Hardware-Station finden Sie unter [Konfiguration und Installation der Retail-Hardware-Station](retail-hardware-station-configuration-installation.md).
-9.  Installieren und aktivieren von Modern POS Weitere Informationen zur Installation von Modern POS finden Sie unter [Konfigurieren, Installieren und Aktivieren von Retail Modern POS (MPOS)](retail-modern-pos-device-activation.md).
+9.  Installieren und aktivieren von Modern POS Weitere Informationen über die Installation von Modern POS finden Sie unter [Konfigurieren, Installieren und Aktivieren von Modern POS (MPOS)](retail-modern-pos-device-activation.md).
 10. Melden Sie sich bei Modern POS, und wählen Sie aus **Ausführen von Vorgängen ohne Kassenlade**.
 11. Starten Sie den **Hardwarestationen verwalten** Arbeitsgang.
 
@@ -546,7 +556,8 @@ Diese Konfiguration kann für alle Modern POS-Clients verwendet werden, die die 
 16. Nachdem alle erforderlichen Hardwarestationen gekoppelt sind, klicken Sie auf **Schließen**.
 17. Auf der Hardwaresenderauswahlseite klicken Sie auf die Hardwarestation die sie gerade ausgewählte haben, um diese zu aktivieren. 
 
-**Hinweis**: Wenn Geräte oft unterschiedliche Hardwarestationen verwenden, empfehlen wir, Modern POS so zu konfigurieren, um Kassierer zur Auswahl einer Hardwarestation aufzufordern, wenn sie den Zahlungsmittelprozess starten. Klicken Sie auf **Einzelhandel** &gt; **Kanaleinstellungen** &gt; **POS-Einstellungen** &gt; **Register**. Wählen Sie das Register aus, und legen Sie dann die Option **Bei Angebot auswählen** auf **Ja** fest. Verwenden Sie den Verteilungszeitplan **1090**, um Änderungen an der Kanaldatenbank zu synchronisieren.
+> [!NOTE]
+> Wenn Geräte oft unterschiedliche Hardwarestationen verwenden, empfiehlt es sich, Modern POS zu konfigurieren, um den Kassierer zur Auswahl einer Hardwarestation aufzufordern, wenn sie den Zahlungsmittelprozess starten. Klicken Sie auf **Retail and Commerce** &gt; **Kanal-Einrichtung** &gt; **POS-Einrichtung** &gt; **Registrierungen**. Wählen Sie das Register aus, und legen Sie dann die Option **Bei Angebot auswählen** auf **Ja** fest. Verwenden Sie den Verteilungszeitplan **1090**, um Änderungen an der Kanaldatenbank zu synchronisieren.
 
 ## <a name="extensibility"></a>Erweiterbarkeit
 Informationen zu Erweiterbarkeitsszenarien für die Hardwarestation finden Sie unter [Hardwarestationserweiterbarkeit](dev-itpro/hardware-station-extensibility.md).
@@ -554,12 +565,14 @@ Informationen zu Erweiterbarkeitsszenarien für die Hardwarestation finden Sie u
 ## <a name="security"></a>Sicherheit
 Entsprechend aktuellen Sicherheitsstandards sollten die folgenden Einstellungen in einer Produktionsumgebung verwendet werden: 
 
-**Hinweis:** Das Hardwarestationsinstallationsprogramm führt automatisch diese Registrierungsänderungen als Teil der Installation über Self-Service durch.
-
+### <a name="hardware-station-installer"></a>Hardware-Station-Installationsprogramm
+Das Hardwarestationsinstallationsprogramm macht automatisch diese Eintragsanpassungen als Teil der Installation über Self-Service.
+ 
 -   Secure Sockets Layer (SSL) sollte deaktiviert werden.
 -   Nur Transport Layer Security (TLS)- Version 1.2 (oder die höchste aktuelle Version) sollte aktiviert und verwendet werden. 
 
-**Hinweis:** Standardmäßig sind SSL und alle TLS-Version außer TLS 1.2 deaktiviert. Um diese Werte zu bearbeiten oder zu aktivieren, gehen Sie folgendermaßen vor:
+### <a name="ssl-and-tls"></a>SSL und TLS
+Standardmäßig sind SSL und alle Versionen von TLS außer TLS 1.2 deaktiviert. Um diese Werte zu bearbeiten oder zu aktivieren, gehen Sie folgendermaßen vor:
     1.  Drücken Sie Windows-Taste+R, um das **Ausführen** Fenster zu öffnen.
     2.  Geben Sie im Feld **Öffnen** **Regedit** ein und klicken Sie auf **OK**.
     3.  Wenn ein **Benutzerkontensteuerung** Meldungsfeld angezeigt wird, klicken Sie auf **Ja**.
@@ -580,10 +593,11 @@ Entsprechend aktuellen Sicherheitsstandards sollten die folgenden Einstellungen 
 -   Cross-Origin-Resource-Sharing muss deaktiviert werden und es müssen die zulässigen Ursprünge angeben werden.
 -   Nur vertrauenswürdige Zertifizierungsstellen dürfen verwendet werden, um Zertifikate für Computern mit Hardwarestation zu erstellen.
 
-**Hinweis**: Es ist außerordentlich wichtig, die Sicherheitsrichtlinien für IIS und die PCI-Anforderungen zu lesen (Payment Card Industry).
+> [!NOTE]
+> Es ist sehr wichtig, dass Sie die Sicherheitsrichtlinien für IIS und die Anforderungen der Payment Card Industry (PCI) überprüfen.
 
 ## <a name="peripheral-simulator"></a>Peripheriesimulator
-Weitere Informationen finden Sie unter [Peripheriesimulator for Retail](dev-itpro/retail-peripheral-simulator.md).
+Weitere Informationen finden Sie unter [Peripheriesimulator für den Handel](dev-itpro/retail-peripheral-simulator.md).
 
 ## <a name="microsoft-tested-peripheral-devices"></a>Von Microsoft getestete Peripheriegeräte
 ### <a name="ipc-built-in-hardware-station"></a>IPC-Hardwarestation (integriert)
@@ -736,7 +750,10 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine dedizierte (nicht fr
 
 ### <a name="shared-iis-hardware-station"></a>Freigegebene IIS-Hardwarestation
 
-Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hardwarestation zusammen mit Modern POS für Windows und Cloud POS verwendet wurde. **Hinweis**: Nur ein Drucker, ein Zahlungsterminal und eine Kassenlade werden unterstützt.
+Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hardwarestation zusammen mit Modern POS für Windows und Cloud POS verwendet wurde. 
+
+> [!NOTE]
+> Nur ein Drucker, ein Zahlungsterminal und eine Kassenlade werden unterstützt.
 
 #### <a name="printer"></a>Drucker
 
@@ -793,7 +810,7 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 **Lösung:** Nachfolgend sind einige typische Ursachen dieses Problems:
 
 -   Überprüfen Sie, ob andere Gerätetreiberkonfigurationsprogramme geschlossen sind. Wenn diese Hilfsprogramme offen sind, verhindern könnten sie möglicherweise, das Modern POS oder die Hardwarestation das Gerät nutzen kann.
--   Wenn das Kleinperipheriegerät mit mehreren POS-Geräten freigegeben ist, prüfen Sie, ob es bis eine der folgenden Kategorien gehören:
+-   Wenn das Peripheriegerät von mehreren POS-Geräten gemeinsam genutzt wird, stellen Sie sicher, dass es zu einer der folgenden Kategorien gehört:
     -   Kassenlade
     -   Belegdrucker
     -   Zahlungsterminal
@@ -817,6 +834,6 @@ Die folgenden Peripheriegeräte wurden getestet, indem eine freigegeben IIS-Hard
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Peripheriesimulator für Retail](dev-itpro/retail-peripheral-simulator.md)
+[Peripheriesimulator für den Handel](dev-itpro/retail-peripheral-simulator.md)
 
 

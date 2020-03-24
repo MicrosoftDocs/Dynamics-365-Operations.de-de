@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8bef8edb46a1942d3efc325e2c437a138ad44839
-ms.sourcegitcommit: e1a55b4dc43abedf523c33ba9a8abe7b073f2ec6
+ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3083017"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113919"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle
 
@@ -41,7 +41,7 @@ In diesem Thema werden die Datensynchronisationsprozesse erläutert, die häufig
 Sie können die folgenden APIs verwenden, um die Bestandsverfügbarkeit für ein Produkt anzuzeigen, wenn Ihre Kunden auf einer E-Commerce-Website einkaufen.
 
 - **GetEstimatedAvailabilty** - Verwenden Sie diese API, um die Bestandsverfügbarkeit für den Artikel im Lager des E-Commerce-Kanals oder in allen Lagern, die mit der Konfiguration der Erfüllungsgruppe für den E-Commerce-Kanal verknüpft sind, anzuzeigen. Diese API kann auch für Lager in einem bestimmten Suchbereich oder Radius verwendet werden, basierend auf Längen- und Breitengraddaten.
-- **ProductWarehouseInventoryAvailabilities** - Verwenden Sie diese API, um den Bestand für einen Artikel aus einem bestimmten Lager anzufordern. Sie können sie beispielsweise verwenden, um die Bestandsverfügbarkeit in Szenarien anzuzeigen, die eine Auftragsabholung beinhalten.
+- **GetEstimatedProductWarehouseAvailability** - Verwenden Sie diese API, um den Bestand für einen Artikel aus einem bestimmten Lager anzufordern. Sie können sie beispielsweise verwenden, um die Bestandsverfügbarkeit in Szenarien anzuzeigen, die eine Auftragsabholung beinhalten.
 
 > [!NOTE]
 > Diese APIs ersetzen die APIs **GetProductAvailabilities** und **GetAvailableInventoryNearby** in Dynamics 365 Retail Version 10.0.7 und früher.

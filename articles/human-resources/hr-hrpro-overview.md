@@ -1,6 +1,6 @@
 ---
 title: Übersicht
-description: ''
+description: Das Dynamics 365 Human Resources Benutzerhandbuch enthält Anweisungen zum Einrichten der Personalabteilung, zum Einrichten von Vergütungen und Leistungen für Ihre Mitarbeiter und zum Verwalten Ihrer Belegschaft.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c489ddaec0363a5a6d68f0464786dfbe1b0e1349
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 7bef82f83de150df69a1a001fa9c07e34270742d
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009138"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091723"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -85,12 +85,12 @@ Das Dynamics 365 Human Resources Benutzerhandbuch enthält Anweisungen zum Einri
 [Verfahren zur Vorteilsberechtigung](hr-benefits-eligibility-process.md)</br>
 [Regeln und Richtlinien zur Vorteilsberechtigung festlegen](hr-benefits-define-eligibility-rules.md)</br>
 [Mitarbeitervorteilsprogramm anbieten](hr-benefits-deliver-employee-benefits-program.md)</br>
-[Neuen Vorteil erstellen](hr-benefits-create.md)</br>
+[Neue Vorteile erstellen](hr-benefits-create.md)</br>
 [Arbeitskräfte für Vorteile registrieren](hr-benefits-enroll-workers.md)</br>
 [Leistungsablaufdaten verwalten](hr-benefits-expiration-dates.md)</br>
 [ACA-Berichte generieren](hr-benefits-aca-reports.md)</br>
 
-## <a name="manage-leave-and-absence"></a>Verwalten von Urlaub und Abwesenheit
+## <a name="manage-leave-and-absence"></a>Urlaub und Abwesenheit verwalten
 
 [Übersicht](hr-leave-and-absence-overview.md)</br>
 [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md)</br>
@@ -110,20 +110,20 @@ Das Dynamics 365 Human Resources Benutzerhandbuch enthält Anweisungen zum Einri
 [Übersicht über die Leistungsverwaltung](hr-develop-performance-management-overview.md)</br>
 [Mitarbeiterqualifikationen ausrichten](hr-develop-skills.md)</br>
 [Hinzufügung zur Leistungserfassung](hr-develop-add-performance-journal.md)</br>
-[Erstellen von Zielen](hr-develop-create-goal.md)</br>
-[Erstellen von Leistungsbeurteilungen](hr-develop-create-performance-review.md)</br>
+[Ziele erstellen](hr-develop-create-goal.md)</br>
+[Eine Leistungsbeurteilung erstellen](hr-develop-create-performance-review.md)</br>
 
 ## <a name="create-courses"></a>Kurse erstellen
 
 [Schulungskurse einrichten](hr-learning-courses.md)</br>
 [Fragebogenübersicht](hr-learning-questionnaires.md)</br>
-[Entwerfen von Fragebögen](hr-learning-design-questionnaires.md)</br>
-[Verteilen und Planen von Fragebögen](hr-learning-distribute-questionnaires.md)</br>
+[Fragebögen entwerfen](hr-learning-design-questionnaires.md)</br>
+[Fragebögen verteilen und planen](hr-learning-distribute-questionnaires.md)</br>
 [Fragebogen mittels Zeitplanung verteilen](hr-learning-distribute-questionnaires-scheduling.md)</br>
 [Fragebogenergebnisse anzeigen](hr-learning-evaluate-questionnaire-results.md)</br>
 [Fragebogenergebnisse analysieren](hr-learning-analyze-questionnaire-results.md)</br>
-[Erstellen Sie eine offene Frage](hr-learning-create-open-ended-question.md)</br>
-[Erstellen einer Frage mit vordefinierten Antworten](hr-learning-create-closed-ended-question.md)</br>
+[Eine offene Frage erstellen](hr-learning-create-open-ended-question.md)</br>
+[Eine Frage mit vordefinierten Antworten erstellen](hr-learning-create-closed-ended-question.md)</br>
 [Eine abhängige Frage erstellen](hr-learning-depending-question.md)</br>
 
 

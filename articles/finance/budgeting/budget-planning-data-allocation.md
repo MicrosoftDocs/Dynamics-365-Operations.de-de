@@ -3,7 +3,7 @@ title: Datenzuteilung für Budgetplanung
 description: Dieses Thema beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 Finance verfügbar sind, und wie sie verwendet werden können.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 03/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,23 +18,26 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b8bcfb4d3720d03ce84024766a66ccfc546767ab
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ceddeda5760d961568d58e7e4805955ea972c586
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772075"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106881"
 ---
 # <a name="budget-planning-data-allocation"></a>Datenzuteilung für Budgetplanung
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 Finance verfügbar sind, und wie sie verwendet werden können.  
+Dieses Thema beschreibt die verschiedenen Zuordnungsmethoden, die in Microsoft Dynamics 365 Finance verfügbar sind, und wie sie verwendet werden können.  
 
 Sie können die Daten in einem Budgetplan auf vielfältige Weise verteilen, um die geplanten Beträge genau zu darzustellen.
 
 ## <a name="allocation-methods"></a>Zuweisungsmethoden
 Drei Zuordnungsmethoden (Auf Perioden verteilen, Zu Dimensionen zuordnen und Sachkonto-Zuordnungsregeln verwenden) können Budgetplanpositionen erstellen, die auf den Positionen im gleichen Budgetplan basieren. Drei andere Methoden (Zusammenführen, Verteilen und Aus Budgetplan kopieren), können Budgetplanpositionen in anderen Budgetplänen erstellen. Für alle sechs Zuordnungsmethoden geben Sie das Zielszenario an. Das Zielszenario kann entweder dem Quellszenario gleichen oder sich davon sich unterscheiden. Darüber hinaus können Sie angeben, ob dem Haushaltsplan neue Positionen angehängt oder die aktuellen Positionen im Budgetplan ersetzt werden.
+
+> [!NOTE] 
+> Für die Aggregation sollte ein eindeutiges Szenario verwendet werden, das sich von dem Szenario unterscheidet, das für den Vertrieb oder andere Änderungen, die zuvor im übergeordneten Plan durchgeführt wurden, verwendet wurde.  
 
 [![Zuteilungsmethode „Auf Perioden verteilen“](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
 **Auf Perioden verteilen** – Eine Pertiodenzuteilungskategorie wird verwendet, um die Budgetplanpositionen von den Quellbudgetplanszenarioperioden im Zielszenario zuzuteilen. Der Quellbetrag wird mehreren Positionen im Zielszenario basierend auf dem Prozentsatz und dem Datum zugewiesen, die in der Periodenzuteilungskategorie definiert werden.         

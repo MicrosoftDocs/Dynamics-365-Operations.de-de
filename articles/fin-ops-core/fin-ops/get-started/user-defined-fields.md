@@ -1,9 +1,9 @@
 ---
 title: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
-description: In diesem Thema wird gezeigt, wie Sie benutzerdefinierte Felder erstellen, um die Anwendung für ihre geschäftlichen Bedürfnisse anzupassen.
+description: In diesem Thema wird gezeigt, wie Sie benutzerdefinierte Felder über die Benutzerschnittstelle erstellen, um die Anwendung für ihre geschäftlichen Bedürfnisse anzupassen.
 author: jasongre
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 9146921c47e89c5895a1a727de874b0ffbc93c37
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: f689bb3ec844459d1dd6e199804a30f3e0cb38bc
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2812504"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112335"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Erstellen von und Arbeiten mit benutzerdefinierten Feldern
 
 [!include [banner](../includes/banner.md)]
 
-Während es einen umfangreichen Satz von vorkonfigurierten Feldern gibt, um eine große Bandbreite von Geschäftsprozessen zu verwalten, besteht manchmal für ein Unternehmen der Bedarf, zusätzliche Informationen im System nachzuverfolgen. Um diese Anforderung zu erfüllen, können Sie benutzerdefinierte Felder erstellen, um die Anwendung so anzupassen, dass sie zu Ihrem Unternehmen passt, vorausgesetzt Sie haben Berechtigungen für die Funktion.
+Während es einen umfangreichen Satz von vorkonfigurierten Feldern gibt, um eine große Bandbreite von Geschäftsprozessen zu verwalten, besteht manchmal für ein Unternehmen der Bedarf, zusätzliche Informationen im System nachzuverfolgen. Während Programmierer verwendet werden können, um diese Felder als Erweiterungen in den Entwicklertools hinzuzufügen, können mit der Funktion für benutzerdefinierte Felder Felder direkt über die Benutzeroberfläche hinzugefügt werden, sodass Sie die Anwendung mithilfe Ihres Webbrowsers an Ihr Unternehmen anpassen können.
 
-Die Möglichkeit, benutzerdefinierte Felder hinzuzufügen, ist in Plattformupdate 13 und höher verfügbar.
+Die Möglichkeit, benutzerdefinierte Felder hinzuzufügen, ist in Plattformupdate 13 und höher verfügbar. Nur Benutzer mit speziellen Berechtigungen haben Zugriff auf diese Funktion.
 
 Dieses Video zeigt, wie einfach es ist, ein benutzerdefiniertes Feld einer Seite hinzuzufügen: [Hinzufügen von benutzerdefinierten Feldern](https://www.youtube.com/watch?v=gWSGZI9Vtnc)
 
@@ -159,3 +159,7 @@ Aus Gründen der Leistung und technischen Gründen ist es nur bei Tabellen, die 
 - Die Tabelle kann keine andere Tabelle erweitern.
 - Die Tabelle kann nicht als Systemtabelle markiert werden.
 - Die Tabelle kann keine temporäre Tabelle sein.
+
+### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kann ich in den Entwicklertools auf benutzerdefinierte Felder verweisen?  
+
+Benutzerdefinierte Felder können nur über die Benutzeroberfläche verwaltet und nicht durch Code referenziert werden. 

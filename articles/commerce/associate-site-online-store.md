@@ -3,7 +3,7 @@ title: Zuordnen einer E-Commerce-Site zu einem Online-Kanal
 description: In diesem Thema wird erläutert, wie Sie Ihre Microsoft Dynamics 365 Commerce Site an mindestens einen Onlineshop binden.
 author: stuharg
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: bicyclingfool
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8de02eca941054c7c43dec1c904f461da1927230
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 30a992ae5cc68173b830224ae88ac3770b414b7a
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001207"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096700"
 ---
 # <a name="associate-an-e-commerce-site-with-an-online-channel"></a>Zuordnen einer E-Commerce-Site zu einem Online-Kanal
 
@@ -40,16 +40,24 @@ Nachdem Ihre Site erstellt wurde, können Sie prüfen, dass sie Ihrem Onlineshop
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[Onlineshopkanal einrichten](online-stores.md)
+
+[E-Commerce-Site erstellen](create-ecommerce-site.md)
 
 [Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
 
+[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+
+[Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
+
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
 
-[Unterstützung für ein Content Delivery Network (CDN) hinzufügen](add-cdn-support.md)
+[Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
+
+[Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)

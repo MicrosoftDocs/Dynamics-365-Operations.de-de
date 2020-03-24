@@ -1,6 +1,6 @@
 ---
 title: Gefahrengüter
-description: Dieses Thema enthält Informationen zu Gefahrgutdokumenten und -Informationen, die in Ihrer Umgebung gespeichert sind.
+description: Dieses Thema bietet Informationen über Gefahrgutdokumente und Informationen, die in Ihrer Umgebung gespeichert sind.
 author: lachlancashMS
 manager: AnnBe
 ms.date: 01/10/2020
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 76dd6539e39bb77c546e613b290fc5decba9457f
-ms.sourcegitcommit: 4c60f5dccdf0b94ed110a657ef331546adc5424a
+ms.openlocfilehash: 443d2eb545b2b7592e27ae037009720db0a71997
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2982307"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092544"
 ---
 # <a name="hazardous-materials"></a>Gefahrengüter
 

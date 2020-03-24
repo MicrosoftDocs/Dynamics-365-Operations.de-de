@@ -17,14 +17,16 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: eb89f50a3d227cad80226ce30f71c4f210129245
-ms.sourcegitcommit: 0262a19e32b2c0c84c731d9f4fbe8ba91822afa3
+ms.openlocfilehash: f5fc73f636a5cac25c259ce2cbae5c5407dca9b7
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "2622688"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117360"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Standardbeschreibungen für automatische Buchungen einrichten
+
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Sie Standardtext einrichten, der verwendet wird, um Buchhaltungseinträge auszufüllen, die automatisch im Hauptbuch gebucht werden. Sie können Standardbeschreibungstext einrichten, indem Sie Freihandtext verwenden oder indem Sie feste Variablen auswählen.
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 326d9375670cb4f4990a4f7070bf923a28b2c025
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
+ms.sourcegitcommit: 8fad5a8c7ea5d0d0037669e61e2313f684bcae23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177949"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3106858"
 ---
 # <a name="process-collection-letters"></a>Mahnschreiben verarbeiten
 
@@ -70,7 +70,11 @@ In diesem Thema erfahren Sie, wie Sie Abholbriefe erstellen, drucken und versend
     1. Wählen Sie im Feld **Gedruckt** eine Option aus.
 
 ## <a name="control-collection-letters-at-the-customer-level"></a>Steuermahnschreiben auf Debitorenebene
-Sie können Mahnschreiben auf Debitorenebene auch einrichten, sodass der Mahnschreibencode für jede Buchung erfasst ist, aber das Mahnschreibenverarbeiten basiert auf einer einzelne Mahnschreibenebene, die für den Debitor gespeichert wird. Das jeweilige Mahnschreiben enthält alle Buchungen, die für den Debitor überfällig sind. Da die Schontage nun auf Debitorenebene nachverfolgt werden, wird das nächste Mahnschreiben nicht übermittelt, bis die Anzahl der Schontagen für das nächste Mahnschreiben im Nummernkreis abgelaufen ist, obwohl Buchungen überfällig werden, nachdem das letzte Mahnschreiben gesendet wurde. Diese Option verringert die Nummer des Mahnschreibens, die Sie pro Debitor übermitteln. 
+Wenn Abholbriefe auf Transaktionsebene eingerichtet werden, werden möglicherweise mehrere Briefe für einen Kunden generiert, basierend auf der Fälligkeit der Transaktionen. Wenn Transaktionen in unterschiedlichen Buchstabenfolgen angezeigt werden, werden für jede Gruppe überfälliger Transaktionen für den Kunden separate Inkassobriefe generiert. Daher kann ein einzelner Kunde beispielsweise einen Inkassobrief für Transaktionen erhalten, die 60 Tage überfällig sind, und einen weiteren Inkassobrief für Transaktionen, die 90 Tage überfällig sind. 
+
+Jeder Sammelbrief ist auch einem Sammelbriefcode zugeordnet. Der Abholbriefcode ist einzelnen Transaktionen zugeordnet und wird verwendet, um zu bestimmen, wann der nächste Abholbrief für jede Transaktion generiert werden soll. Wenn eine Transaktion beispielsweise mehr als 30 Tage überfällig ist, bestimmt der Abholbriefcode, dass der nächste Abholbrief gesendet wird, wenn die Transaktion 60 Tage überfällig ist, wenn sie nicht vorher bezahlt wurde. 
+
+Abholbriefe können auch auf Kundenebene eingerichtet werden. In diesem Fall wird der Mahnschreibencode für jede Buchung erfasst ist, aber das Mahnschreibenverarbeiten basiert auf einer einzelne Mahnschreibenebene, die für den Debitor gespeichert wird. Das jeweilige Mahnschreiben enthält sämtliche Buchungen, die für den Debitor überfällig sind. Da die Schontage nun auf der Debitorenebene nachverfolgt werden, wird das nächste Mahnschreiben nicht übermittelt, bis die Anzahl der Schontagen für das nächste Mahnschreiben im Nummernkreis abgelaufen ist, obwohl Buchungen überfällig werden, nachdem das letzte Mahnschreiben gesendet wurde. Diese Option hilft, die Anzahl der Mahnschreiben zu reduzieren, die Sie pro Debitor übermitteln müssen.
 
 ### <a name="set-up-the-customer-to-control-collection-letters-at-the-customer-level"></a>Kunden einrichten, um Steuermahnschreiben auf Debitorenebene zu steuern
 1.  Gehen Sie zu **Navigationsbereich > Module > Kredit und Inkasso > Einrichtung > Debitorenparameter** und wählen Sie die Registerkarte **Inkasso**. 
