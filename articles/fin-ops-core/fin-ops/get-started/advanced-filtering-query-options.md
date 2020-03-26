@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Filter- und Abfragesyntax
-description: Erweiterte Filter- und Abfragesyntax - In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den Operator "entspricht" im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
+description: In diesem Thema werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie das Dialogfeld Erweitertes Filter/Sortierung oder den Übereinstimmungsoperator im Filterbereich oder die Filter in den Spaltenüberschriften des Gitters verwenden.
 author: jasongre
 manager: AnnBe
-ms.date: 01/02/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5a96921436311440ba60c3fa31135457cf9f291
-ms.sourcegitcommit: 8585de8acf579bcc033671ef270fa9d92230121b
+ms.openlocfilehash: 7a525422a091efe8ea88f42e91dc52488430cfe5
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "2931287"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "3112190"
 ---
-# <a name="advanced-filtering-and-query-syntax"></a>Erweiterter Filter- und Abfragesyntax
+# <a name="advanced-filtering-and-query-syntax"></a>Erweiterte Filter- und Abfragesyntax
 
 [!include [banner](../includes/banner.md)]
 
-**Erweiterte Filter- und Abfragesyntax** - In diesem Artikel werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie den Operator "entspricht" im Dialogfeld "Erweitertes Filtern/Sortieren" verwenden.
+In diesem Thema werden die Filter- und Abfrageoptionen beschrieben, die verfügbar sind, wenn Sie das Dialogfeld Erweitertes Filter/Sortierung oder den Operator **Übereinstimmungen** im Filterbereich oder den Spaltenüberschriftsfiltern des Gitters verwenden.
 
 ## <a name="advanced-query-syntax"></a>Erweiterte Suchsyntax
 
@@ -122,10 +122,11 @@ ms.locfileid: "2931287"
 <td>Zwei aufeinanderfolgende doppelte Anführungszeichen (<strong>""</strong>) finden Zeilen ohne Wert für die aktuelle Spalte.</td>
 </tr>
 <tr>
-<td>(<span class="code">SQL-Anweisung</span>) (SQL-Anweisung in Klammern)</td>
+<td>(<span class="code">Finance and Operations-Abfrage</span>) (Finance and Operations-Abfrage zwischen Klammern)</td>
 <td>Übereinstimmung mit einer definierten Abfrage</td>
-<td>Geben Sie eine Abfrage als SQL-Anweisung in Klammern an.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td>Geben Sie eine Abfrage als SQL-Anweisung zwischen Klammern in der Abfragesprache Finance and Operations ein.</td>
+  <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
+       als Syntaxbeispiel für eine Filterbedingung auf ein Feld aus der Stammdatensammlung sowie ein Feld aus einer anderen Datenquelle (für die Seite Alle Kunden)</td>
 </tr>
 <tr>
 <td>Di</td>

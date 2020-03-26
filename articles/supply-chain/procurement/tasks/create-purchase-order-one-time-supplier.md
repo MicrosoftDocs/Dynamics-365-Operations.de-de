@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 26c62aa72a7919c780bb709b185b48c97066c538
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: e2fa54ff598bb6a09bbcc483995a6e1a3f4286b3
+ms.sourcegitcommit: 16612a632aad9d390f8d80d3fc1f766585b2911e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836311"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3098075"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Eine Bestellung für einen einmaligen Lieferanten erstellen
 
@@ -37,5 +37,5 @@ Diese Prozedur zeigt Ihnen, wie Sie eine Bestellung für einen einmaligen Liefer
     * Ein Kreditorenkonto wird automatisch erstellt und der Bestellung zugewiesen. Das Kreditorenkonto wird auf Basis der Vorlage erstellt, die auf der Registerkarte "Allgemein" auf der Seite "Kreditorenkontenparameter" angegeben wird.  
 4. Geben Sie im Feld "Name" einen Namen für den Lieferanten ein.
 5. Klicken Sie auf "OK".
-    * Die Bestellung kann jetzt wie jeder andere Auftrag abgeschlossen und verarbeitet werden. Es gibt keine speziellen Eigenschaften, in Bezug darauf, wie dies erfolgen soll. Die Rechnung berücksichtigt eine fällige Transaktion zum Kreditorenkonto, das mit dem Auftrag erstellt wurde, und die Zahlung wird dann verarbeitet. Wenn dies abgeschlossen ist, kann das Kreditorenkonto gelöscht werden. Dies erfolgt gewöhnlich durch die Kreditorenkontenabteilung.  
+    * Die Bestellung kann jetzt wie jeder andere Auftrag abgeschlossen und verarbeitet werden. Es gibt keine speziellen Eigenschaften, in Bezug darauf, wie dies erfolgen soll. Die Rechnung berücksichtigt eine fällige Transaktion zum Kreditorenkonto, das mit dem Auftrag erstellt wurde, und die Zahlung wird dann verarbeitet.
 

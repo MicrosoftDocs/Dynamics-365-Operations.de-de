@@ -3,7 +3,7 @@ title: Unterstützung für ein Content Delivery Network (CDN) hinzufügen
 description: In diesem Thema wird beschrieben, wie ein Content Delivery Network (CDN) Ihrer Microsoft Dynamics 365 Commerce Umgebung hinzugefügt wird.
 author: brianshook
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 03/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: bf5a0da2803f985e6c0c04dd9916977397173d11
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 23ac9d8844c2a8ae20bd316c40078319601a3a4d
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001621"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096724"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Unterstützung für ein Content Delivery Network (CDN) hinzufügen
 
@@ -140,16 +140,24 @@ Ihr CDN sollte jetzt ordnungsgemäß konfiguriert werden, so dass sie mit der Co
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
+[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+[Onlineshopkanal einrichten](online-stores.md)
+
+[E-Commerce-Site erstellen](create-ecommerce-site.md)
 
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
 [Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
 
+[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+
+[Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
+
 [Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
+
+[Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
 
 [Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)

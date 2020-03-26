@@ -1,9 +1,9 @@
 ---
-title: Ein Empfehlungssteuerelement des Transaktionsbildschirms auf POS-Geräten
+title: Empfehlungen zum Transaktionsbildschirm hinzufügen
 description: In diesem Thema wird beschrieben, wie Sie ein Empfehlungssteuerelement zum Transaktionsbildschirm auf einem Verkaufsstelle (POS)-Gerät mithilfe des Bildschirmlayoutdesigners in Microsoft Dynamics 365 Commerce hinzufügen.
 author: bebeale
 manager: AnnBe
-ms.date: 10/01/19
+ms.date: 03/12/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,14 +19,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6d6f48197a36f633e3cd63cbad4518f53946fc7f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 9117f398ee1d9edbd3aee9bed366eea225964184
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022603"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127674"
 ---
-# <a name="add-a-recommendations-control-to-the-transaction-screen-on-pos-devices"></a>Ein Empfehlungssteuerelement des Transaktionsbildschirms auf POS-Geräten
+# <a name="add-recommendations-to-the-transaction-screen"></a>Empfehlungen zum Transaktionsbildschirm hinzufügen
 
 [!include [banner](includes/banner.md)]
 
@@ -98,6 +98,24 @@ Es stehen zwei Optionen für die Konfiguration zur Verfügung. Wählen Sie die O
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Produktempfehlungen im POS](product.md)
+[Überblick über Produktempfehlungen](product-recommendations.md)
 
-[Überblick über Produktempfehlungen](../commerce/product-recommendations.md)
+[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+
+[Produktempfehlungen aktivieren](enable-product-recommendations.md)
+
+[Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
+
+[Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
+
+[Empfehlungslisten zu einer E-Commerce-Site hinzufügen](add-reco-list-to-page.md)
+
+[Produktempfehlungen am POS hinzufügen](product.md)
+
+[Anpassung der Ergebnisse der AI-ML-Empfehlungen](modify-product-recommendation-results.md)
+
+[Manuell kuratierte Empfehlungen erstellen](create-editorial-recommendation-lists.md)
+
+[Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
+
+[Produktempfehlungs-FAQs](faq-recommendations.md)

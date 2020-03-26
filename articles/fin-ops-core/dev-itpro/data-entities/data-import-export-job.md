@@ -3,7 +3,7 @@ title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 09/16/2019
+ms.date: 02/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87b852a73268251241cd66a07d7e4f4720706c0d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184553"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124611"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -191,8 +191,11 @@ Wenn Sie den Bereinigungsprozess planen, müssen die folgenden Parameter angegeb
 
 -   **Anzahl der Tage zur Beibehaltung des Verlaufs** – Diese Einstellung wird verwendet, um den Umfang des beizubehaltenden Ausführungsverlaufs zu steuern. Wird in Anzahl Tagen angegeben. Wenn der Bereinigungsauftrag als wiederkehrender Batchauftrag geplant wird, funktioniert diese Einstellung wie ein sich fortlaufend bewegendes Fenster, das heißt, der Verlauf wird für die angegebene Anzahl von Tagen unverändert gelassen, während der Rest gelöscht wird. Der Standardwert ist 7 Tage.
 
--   **Anzahl der Stunden für die Ausführung des Auftrags** – Je nach Umfang des zu bereinigenden Verlaufs kann die gesamte Ausführungszeit für den Bereinigungsauftrag von wenigen Minuten bis zu ein paar Stunden variieren. Da die Bereinigung der genannten Tabellen erfolgen muss, wenn keine andere Datenverwaltungsaktivität im System ausgeführt wird, muss sichergestellt werden, dass der Bereinigungsauftrag vor dem Beginn der Geschäftsaktivitäten ausgeführt und beendet wird.
+-   **Anzahl der Stunden für die Ausführung des Auftrags** – Je nach Umfang des zu bereinigenden Verlaufs kann die gesamte Ausführungszeit für den Bereinigungsauftrag von wenigen Minuten bis zu ein paar Stunden variieren. Dieser Parameter muss auf die Anzahl der Stunden eingestellt werden, die der Job ausgeführt wird. Nachdem der Bereinigungsjob für die angegebene Anzahl von Stunden ausgeführt wurde, wird der Job beendet und bei der nächsten Ausführung auf der Grundlage des Wiederholungszeitplans wieder aufgenommen.
 
     Eine maximale Ausführungszeit kann durch Festlegen eines Höchstlimits für die Anzahl der Stunden angegeben werden, die der Auftrag unter Verwendung dieser Einstellung ausgeführt werden muss. Die Bereinigungslogik geht chronologisch eine Auftragsausführungskennung nach der anderen durch. Dabei wird die älteste bei der Bereinigung des entsprechenden Ausführungsverlaufs zuerst berücksichtigt. Sie endet mit der Verarbeitung neuer Ausführungskennungen für die Bereinigung, wenn die verbleibende Ausführungsdauer innerhalb der letzten 10 % des angegebenen Zeitraums liegt. In einigen Fällen wird der Bereinigungsauftrag erwartungsgemäß über die angegebene Höchstzeit fortgesetzt. Dies hängt weitestgehend von der Anzahl der Datensätze ab, die für die aktuelle Ausführungskennung zu löschen sind, die gestartet wurde, bevor der Schwellenwert von 10 % erreicht wurde. Die Bereinigung, die gestartet wurde, muss abgeschlossen werden, um die Datenintegrität sicherzustellen. Dies bedeutet, dass die Bereinigung auch dann fortgesetzt wird, denn das angegebene Limit überschritten wurde. Wenn der Vorgang abgeschlossen ist, werden keine neuen Ausführungskennungen verarbeitet und der Bereinigungsauftrag wird abgeschlossen. Der verbleibende Ausführungsverlauf, der aufgrund unzureichender Ausführungszeit nicht bereinigt wurde, wird das nächste Mal verarbeitet, wenn der Bereinigungsauftrag eingeplant wird. Der Standard- und Mindestwert für diese Einstellung ist 2 Stunden.
 
 -   **Wiederkehrender Stapel** – Der Bereinigungsauftrag kann als einmalige, manuelle Ausführung ausgeführt oder für eine wiederkehrende Ausführung in Stapeln eingeplant werden. Der Stapel kann mithilfe der Einstellungen **Im Hintergrund ausführen** geplant werden. Dies ist die Standardstapeleinstellung.
+
+> [!NOTE]
+> Wenn Sätze in den Staging-Tabellen nicht vollständig bereinigt werden, stellen Sie sicher, dass der Bereinigungsjob für die Ausführung in Wiederholung eingeplant wird. Wie oben erläutert, wird der Job bei jeder Bereinigungsausführung nur so viele Ausführungs-IDs bereinigen, wie innerhalb der vorgegebenen maximalen Stunden möglich sind. Um mit der Bereinigung der verbleibenden Staging-Datensätze fortzufahren, muss der Job für eine periodische Ausführung eingeplant werden.

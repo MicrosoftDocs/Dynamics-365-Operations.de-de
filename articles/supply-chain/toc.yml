@@ -22,8 +22,10 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dienstupdateverfügbarkeit
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Updates auf Cloudumgebungen anwenden
+                - name: Updates in Cloudumgebungen anwenden
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Updates in lokalen Bereitstellungen anwenden
+                  href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dienstupdates konfigurieren
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Dienstupdates anhalten
@@ -60,22 +62,24 @@
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Finance and Operations-Apps in Frankreich
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Neuigkeiten oder Änderungen
+            - name: Neuerungen oder Änderungen
               items:
-                - name: Neuigkeiten oder Änderungen in Finance and Operations-Apps
+                - name: Neuerungen oder Änderungen in Finance and Operations-Apps
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Neuigkeiten oder Änderungen in Supply Chain Management
+                - name: Neuerungen oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuigkeiten oder Änderungen in Supply Chain Management – Startseite
+                    - name: Neuerungen oder Änderungen in Supply Chain Management – Startseite
                       href: get-started/whats-new-home-page.md
                     - name: Supply Chain Management Version 10.0.9 (April 2020)
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management Version 10.0.8 (Februar 2020)
                       href: get-started/whats-new-scm-10-0-8.md
-                    - name: Supply Chain Management Version 10.0.7 (Januar 2020)
-                      href: get-started/whats-new-scm-10-0-7.md
                 - name: Entfernte oder veraltete Funktionen
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
+                      href: get-started/removed-deprecated-features-scm-updates.md
+                    - name: In früheren Versionen entfernte oder veraltete Funktionen
+                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
                 - name: "Verschobene Funktionen von AX\_2012"
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Nicht in lokale Bereitstellungen implementierte Funktionen
@@ -757,7 +761,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Datenmodelldefinitionen beim Erstellen von Formaten auswählen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Erstellen von Berichten durch Hinzufügen von Inhalten als unformatierten XML-Code
+                - name: Berichte durch Hinzufügen von Inhalten als unformatierten XML-Code erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
                 - name: (ER) Unternehmensübergreifende Datenquellen in elektronischer Berichterstellung
                   href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
@@ -1515,7 +1519,7 @@
                   href: pim/tasks/create-product-number-nomenclature-predefined-variants-2016-11.md
                 - name: Produktnummernbezeichnung für konfigurierte Produktvarianten erstellen
                   href: pim/tasks/create-product-number-nomenclature-product-variants_2016_11.md
-                - name: Ein neues Produkt erstellen
+                - name: Neues Produkt erstellen
                   href: pim/tasks/create-new-product.md
                 - name: Produktmaster erstellen
                   href: pim/tasks/create-product-master.md

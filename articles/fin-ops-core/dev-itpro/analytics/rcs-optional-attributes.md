@@ -16,14 +16,16 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5e2989906c5aa3ead9e46b8ed5333e880e5cf1c6
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 10795c90cb90961c17a4326b71ed43dc72039f2b
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769946"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117424"
 ---
 # <a name="import-files-in-xml-format-with-optional-attributes"></a>Import von Dateien im XML-Format mit optionalen Attributen
+
+[!include [banner](../includes/banner.md)]
 
 Sie können Elektronische Berichterstellung (ER)-Formate entwerfen, um eingehende Dokumente im XML-Format zu generieren. Bestimmte Attribute von XML-Elementen können in entworfenem ER-Format als optional angegeben werden. Es ermöglicht Ihnen, eingehende Dateien mit und ohne diese XML-Attribute korrekt zu bearbeiten. Sie können den Inhalt aus diesen Dateien dann verwenden, um Anwendungsdaten zu aktualisieren.
 
@@ -52,17 +54,17 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 7. Klicken Sie auf **Hinzufügen**.
 8. Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
 9. Geben Sie im Feld **Name** Liste ein.
-10. Wählen Sie im Feld **Artikeltyp** **Datensatzliste** aus.
-11. Klicken Sie auf **Hinzufügen**.
-12. Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
-13. Geben Sie im Feld **Name** 'Code' ein.
-14. Wählen Sie im Feld **Artikeltyp** **Zeichenfolge** aus.
-15. Klicken Sie auf **Hinzufügen**.
-16. Klicken Sie auf **Speichern**.
-17. Schließen Sie die Seite.
-18. Klicken Sie auf **Status ändern**.
-19. Klicken Sie auf **Abgeschlossen**.
-20. Klicken Sie auf **OK**.
+10.    Wählen Sie im Feld **Artikeltyp** **Datensatzliste** aus.
+11.    Klicken Sie auf **Hinzufügen**.
+12.    Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
+13.    Geben Sie im Feld **Name** 'Code' ein.
+14.    Wählen Sie im Feld **Artikeltyp** **Zeichenfolge** aus.
+15.    Klicken Sie auf **Hinzufügen**.
+16.    Klicken Sie auf **Speichern**.
+17.    Schließen Sie die Seite.
+18.    Klicken Sie auf **Status ändern**.
+19.    Klicken Sie auf **Abgeschlossen**.
+20.    Klicken Sie auf **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Erstellen Sie ein Format für den Datenimport
 1. Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
@@ -81,32 +83,32 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 7. Wählen Sie in der Struktur den Knoten **XML\Element**.
 8. Geben Sie im Feld **Name** 'Dokument' ein.
 9. Wählen Sie im **Vielfältigkeitsgebiet** **viele** aus.
-10. Klicken Sie auf **OK**.
-11. Wählen Sie in der Struktur **Root\Dokument**.
-12. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.
-13. Wählen Sie in der Struktur **XML\Attribute** aus.
-14. Geben Sie im Feld **Name** 'ID' ein.
-15. Klicken Sie auf **OK**.
-16. Klicken Sie auf **Speichern**.
+10.    Klicken Sie auf **OK**.
+11.    Wählen Sie in der Struktur **Root\Dokument**.
+12.    Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.
+13.    Wählen Sie in der Struktur **XML\Attribute** aus.
+14.    Geben Sie im Feld **Name** 'ID' ein.
+15.    Klicken Sie auf **OK**.
+16.    Klicken Sie auf **Speichern**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Entwerfen Sie eine Formatzuordnung, um analysierte Informationen zum Datenmodell zu speichern
-1.  Klicken Sie auf **Format zu Modell zuordnen**.
-2.  Klicken Sie auf **Neu**.
-3.  Geben Sie im Feld **Definition** einen Wert ein, oder wählen Sie einen Wert aus.
-4.  Geben Sie im Feld **Name** 'Zuordnung' ein.
-5.  Klicken Sie auf **Speichern**.
-6.  Klicken Sie auf **Designer**.
-7.  Erweitern Sie in der Struktur **Format**.
-8.  Erweitern Sie in der Struktur **format\root: XML Element(root)**.
-9.  Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-10. Klicken Sie auf **Binden**.
-11. Erweitern Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-12. Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
-13. Erweitern Sie in der Struktur **Liste = format.root.dokument**.
-14. Wählen Sie in der Struktur **Liste = format.root.dokument\code**.
-15. Klicken Sie auf **Binden**.
-16. Klicken Sie auf **Speichern**.
-17. Schließen Sie die Seite.
+1.    Klicken Sie auf **Format zu Modell zuordnen**.
+2.    Klicken Sie auf **Neu**.
+3.    Geben Sie im Feld **Definition** einen Wert ein, oder wählen Sie einen Wert aus.
+4.    Geben Sie im Feld **Name** 'Zuordnung' ein.
+5.    Klicken Sie auf **Speichern**.
+6.    Klicken Sie auf **Designer**.
+7.    Erweitern Sie in der Struktur **Format**.
+8.    Erweitern Sie in der Struktur **format\root: XML Element(root)**.
+9.    Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+10.    Klicken Sie auf **Binden**.
+11.    Erweitern Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+12.    Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
+13.    Erweitern Sie in der Struktur **Liste = format.root.dokument**.
+14.    Wählen Sie in der Struktur **Liste = format.root.dokument\code**.
+15.    Klicken Sie auf **Binden**.
+16.    Klicken Sie auf **Speichern**.
+17.    Schließen Sie die Seite.
 
 ## <a name="run-format-mapping"></a>Formularzuordnung ausführen
 1. Klicken Sie auf **Ausführen**.

@@ -1,6 +1,6 @@
 ---
-title: Wartetage konfigurieren
-description: ''
+title: Wartezeiten konfigurieren
+description: In Microsoft Dynamics 365 Human Resources legen Wartetage einen monatlichen Meilenstein zur Verwendung für Vergütungspläne fest.
 author: andreabichsel
 manager: AnnBe
 ms.date: 02/03/2020
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a17ba895951b02032fa563afa7b8077cecd3672
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: a46f296722317f4815bf6b2cb8960455cecee110
+ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009203"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3092436"
 ---
-# <a name="configure-waiting-days"></a>Wartetage konfigurieren
+# <a name="configure-waiting-days"></a>Wartezeiten konfigurieren
 
 [!include [banner](includes/preview-feature.md)]
 

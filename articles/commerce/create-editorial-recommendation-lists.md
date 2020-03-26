@@ -1,9 +1,9 @@
 ---
-title: Erstellen von kuratierten Produktempfehlungslisten
-description: In diesem Thema wird erläutert, wie Verkaufsberater manuelle Produktlisten für Microsoft Dynamics 365 Commerce Kunden erstellen und verwalten können.
+title: Manuelle Erstellung kuratierter Empfehlungen
+description: Dieses Thema erklärt, wie Händler manuell Produktlisten für Microsoft Dynamics 365 Commerce-Kunden erstellen und verwalten können.
 author: bebeale
 manager: AnnBe
-ms.date: 10/1/2019
+ms.date: 03/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,18 +19,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 46fbd2d8c1235a6cb22c9341bcc21ee3754c8ede
-ms.sourcegitcommit: b5ecde955a69f577de46e7db10e89caaedeb2b49
+ms.openlocfilehash: b39ef61e7dabdd8a53d5666926a95cb7b9e6b9a5
+ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024932"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3127720"
 ---
-# <a name="create-curated-product-recommendation-lists"></a>Erstellen von kuratierten Produktempfehlungslisten
+# <a name="manually-create-curated-recommendations"></a>Manuelle Erstellung kuratierter Empfehlungen
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Verkaufsberater manuelle Produktlisten für Microsoft Dynamics 365 Commerce Kunden erstellen und verwalten können.
+In diesem Thema wird erläutert, wie Händler manuell Produktempfehlungslisten für Microsoft Dynamics 365 Commerce-Kunden erstellen und verwalten können.
 
 Kuratierte Listen sind Sammlungen von individuellen Inhalten, die von Personen erstellt und kuratiert wurden.  
 
@@ -56,8 +56,22 @@ Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schri
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
+[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 
-[Hinzufügen von Produktempfehlungslisten zu Seiten](add-reco-list-to-page.md)
+[Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
 
-[Übersicht über Produktsammelmodule](product-collection-module-overview.md)
+[Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
+
+[Empfehlungslisten zu einer E-Commerce-Site hinzufügen](add-reco-list-to-page.md)
+
+[Produktempfehlungen am POS hinzufügen](product.md)
+
+[Empfehlungen zum Transaktionsbildschirm hinzufügen](add-recommendations-control-pos-screen.md)
+
+[Anpassung der Ergebnisse der AI-ML-Empfehlungen](modify-product-recommendation-results.md)
+
+[Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
+
+[Produktempfehlungs-FAQs](faq-recommendations.md)

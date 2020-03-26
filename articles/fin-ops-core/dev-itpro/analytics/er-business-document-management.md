@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0deb51bb23851b179e2c4166b6444af654a64e1d
-ms.sourcegitcommit: 380664bf10bb25449e3af3d62e235b76d46c0c89
+ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
+ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2957366"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3117336"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
+
+[!include [banner](../includes/banner.md)]
 
 Geschäftliche Benutzer verwenden das [Electronic Reporting (ER) Framework](general-electronic-reporting.md) zum Konfigurieren von Formaten für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
 
@@ -98,7 +100,7 @@ Gehen Sie folgendermaßen vor, um die jeweiligen Dateien zu importieren. Importi
 2. Wählen Sie oben auf der Seite **Austausch** aus.
 3. Wählen Sie **Aus XML-Datei laden** aus.
 4. Wählen Sie **Durchsuchen** aus, um die erforderliche XML-Datei zu laden.
-5. Wählen Sie **OK** aus, um den Import der Konfiguration zu bestätigen.
+5. Wählen Sie **OK**, um den Import der Konfiguration zu bestätigen.
 
 ![ER-Konfigurationsseite](./media/BDM-Overview-ERSolutions.png)
 
@@ -147,7 +149,7 @@ Informationen dazu, wie Sie die erforderlichen Dokumentverwaltungsparameter und 
 
 ![Dokumenttyp für die Dokumentverwaltung einrichten](./media/BDM-Overview-DMSetting.png)
 
-### <a name="SetupBdmParameters">Einrichten von Parametern</a>
+### <a name=""></a><a name="SetupBdmParameters">Einrichten von Parametern</a>
 
 Die grundlegenden Geschäftsdokument-Verwaltungsparameter können auf der Seite **Geschäftsdokumentparameter** eingerichtet werden. Nur bestimmte Benutzer können auf die Seite zugreifen. Hierzu sind die folgenden Schritte erforderlich:
 
@@ -158,7 +160,7 @@ Gehen Sie folgendermaßen vor, um die grundlegenden Parameter für alle juristis
 
 1. Melden Sie sich als Benutzer mit Zugriff auf die Seite **Geschäftsdokumentparameter** an.
 2. Gehen Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Geschäftsdokumentverwaltung** \> **Geschäftsdokumentparameter**.
-3.  Auf der Seite **Geschäftsdokumentparameter** auf der Registerkarte **Anhänge** im Feld **SharePoint-Dokumenttyp** definieren Sie den Dokumenttyp, der verwendet werden soll, um Vorlagen in Office-Formaten vorübergehend zu speichern, während sie mithilfe der Office-Desktop-Anwendungen bearbeitet werden. 
+3.    Auf der Seite **Geschäftsdokumentparameter** auf der Registerkarte **Anhänge** im Feld **SharePoint-Dokumenttyp** definieren Sie den Dokumenttyp, der verwendet werden soll, um Vorlagen in Office-Formaten vorübergehend zu speichern, während sie mithilfe der Office-Desktop-Anwendungen bearbeitet werden. 
 
 > [!NOTE]
 > Nur Dokumenttypen, die mithilfe eines SharePoint-Speicherorts konfiguriert werden, sind Sie für diesen Parameter verfügbar.
@@ -288,13 +290,13 @@ Die Seite **BDM-Vorlagen-Editor** wird geöffnet. Die ausgewählte Vorlage ist f
 
 ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name="EditInOffice365">Bearbeiten einer Vorlage in Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Bearbeiten einer Vorlage in Office 365</a>
 
-Sie können die Vorlage mit Office 365 ändern. Beispielsweise erfolgt in Office Online durch das Ändern der Schriftart des Feldes die Aufforderung im Vorlagenkopf von **Regulär** zu **Fett**. Diese Änderungen werden automatisch in der bearbeitbaren Vorlage gespeichert, die im Speicher der primären Vorlage gespeichert ist (standardmäßig ist das der Azure BLOB-Speicher). Dies ist für das ER-Framework konfiguriert.
+Sie können die Vorlage mit Office 365 ändern. Beispielsweise erfolgt in Office Online durch das Ändern der Schriftart des Feldes die Aufforderung im Vorlagenkopf von **Regulär** zu **Fett**. Diese Änderungen werden automatisch in der bearbeitbaren Vorlage gespeichert, die im Speicher der primären Vorlage (standardmäßig im Azure-Blob-Speicher) gespeichert ist. Dies ist für das ER-Framework konfiguriert.
 
 ![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout2.png)
 
-### <a name="EditInOfficeDesktopApp">Bearbeiten einer Vorlage in der Office-Desktop-Anwendung</a>
+### <a name=""></a><a name="EditInOfficeDesktopApp">Bearbeiten einer Vorlage in der Office-Desktop-Anwendung</a>
 
 > [!NOTE]
 > Diese Funktion ist nur verfügbar, wenn der **SharePoint-Dokumenttyp**-Parameter richtig konfiguriert ist. Weitere Informationen finden Sie unter [Konfigurieren von Parametern](#SetupBdmParameters).
@@ -328,7 +330,7 @@ Sie können die Vorlage mit Office 365 ändern. Beispielsweise erfolgt in Office
 
 4. Schließen Sie die Seite **BDM-Vorlagen-Editor**.
 
-Die aktualisierte Vorlage wird auf der Registerkarte **Vorlage** angezeigt. Beachten Sie, dass der Status der bearbeiteten Vorlage nun **Entwurf** lautet und die aktuelle Überarbeitung nicht mehr leer ist. Das bedeutet, dass der Prozess der Bearbeitung dieser Vorlage gestartet wurde.
+Die aktualisierte Vorlage wird auf der Registerkarte **Vorlage** angezeigt. Beachten Sie, dass der Status der bearbeiteten Vorlage nun **Entwurf** lautet und die aktuelle Überarbeitung nicht mehr leer ist. Dies bedeutet, dass der Prozess der Bearbeitung dieser Vorlage gestartet wurde.
 
 ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate5.png)
 
@@ -359,7 +361,7 @@ Die geänderte Vorlage wird verwendet, um den Freitextrechnungsbericht für den 
 
     ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-AddRevision.png)
 
-    Sie haben eine neue Überarbeitung der Vorlage erstellt, die im permanenten Vorlagenspeicher gespeichert wurde. Jetzt können Sie das Bearbeiten der Vorlage der zweiten Überarbeitung fortsetzen, die derzeit als „aktiv“ ausgewählt ist.
+    Sie haben eine neue Revision Ihrer Vorlage erstellt, die im Speicher der permanenten Vorlage gespeichert wurde. Jetzt können Sie das Bearbeiten der Vorlage der zweiten Überarbeitung fortsetzen, die derzeit als „aktiv“ ausgewählt ist.
 
 5. Wählen Sie die erste Überarbeitung und dann **Als aktiv festlegen** aus. Sie können jederzeit eine andere Überarbeitung als aktiv auswählen, wenn Sie zu dieser Überarbeitung der Vorlage zurückkehren möchten.
 6. Wählen Sie die zweite Überarbeitung und dann **Löschen** aus.
@@ -398,7 +400,7 @@ Ja. In der ersten Anwendungssitzung wählen Sie **In der Desktop-App öffnen** a
 3. Auf der Seite **BDM-Vorlagen-Editor** der ersten Anwendungssitzung wählen Sie **Gespeicherte Kopie synchronisieren** aus.
 4. Führen Sie dieses ER-Vorlagenformat in der zweiten Anwendungssitzung aus.
 
-#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Es wird der Fehler 'Der Wert darf nicht Null sein. Parametername: externalId' angezeigt, wenn ich **In der Desktop-App** auswähle. Wie kann ich dieses Problem umgehen? 
+#### <a name="i-get-the-error-value-cannot-be-null-parameter-name-externalid-when-i-select-open-in-desktop-app-how-do-i-work-around-this"></a>Ich erhalte die Fehlermeldung 'Wert kann nicht null sein. Parametername: externalId', wenn ich **Öffnen in Desktop App** wähle. Wie kann ich dieses Problem umgehen? 
 Höchstwahrscheinlich haben Sie sich bei der aktuellen Instanz der App der Azure AD-Domäne angemeldet, die sich von der Azure AD-Domäne unterscheidet, die verwendet wurde, um diese Instanz bereitzustellen. Da der SharePoint-Service, der verwendet wird, um Vorlagen zum Bereitstellen zur Bearbeitung mit Office-Desktop-Anwendungen zu speichern, zur gleichen Domäne gehört, haben Sie keine Berechtigung für den Zugriff auf den SharePoint-Service. Zur Behebung dieses Problems melden Sie sich bei der aktuellen Instanz mithilfe der Anmeldeinformationen eines Benutzers mit der richtigen Azure AD-Domäne an.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

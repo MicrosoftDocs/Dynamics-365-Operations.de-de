@@ -3,7 +3,7 @@ title: Startseite der lokalen Bereitstellung
 description: Dieses Thema liefert Informationen und Links zu Inhalten über lokale Bereitstellungen.
 author: sericks007
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 03/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 50fb53902e9f9796cac958f7cea2605ba00ba1bd
-ms.sourcegitcommit: ae8625f44453a71a94df6fb98d054c1c56b76700
+ms.openlocfilehash: b251125323bb74eb8be4172cb1b143c4866a8eac
+ms.sourcegitcommit: ec4df51e17be0b2df393635605ea17250c991ee9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "3090588"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3099729"
 ---
 # <a name="on-premises-deployment-home-page"></a>On-Premises-Bereitstellung – Startseite
 
@@ -55,8 +55,9 @@ Sie können Dynamics 365 Finance und Operations (on-premises) bereitstellen. Wen
 - [Clientinternetverbindung](../user-interface/client-disconnected.md)
 - [Anwenden von Updates in lokalen Bereitstellungen](apply-updates-on-premises.md)
 - [Lokale Umgebungen neu bereitstellen](redeploy-on-prem.md)
+- [Verwenden Sie dieselbe AD FS-Instanz für mehrere Umgebungen](onprem-reuseadfs.md)
 
-## <a name="commerce"></a>Commerce
+## <a name="commerce"></a>Handel
 - [Commerce-Fnktionen, die in lokalen Implementierungen verfügbar sind](../../../retail/retail-onprem.md)
 - [Installationsschritte für Retail Channel-Komponenten in einer lokalen Umgebung](deploy-retail-onprem.md)
 - [Modern POS (MPOS) Konfigurieren, installieren und aktivieren](../../../retail/retail-modern-pos-device-activation.md)

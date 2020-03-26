@@ -3,7 +3,7 @@ title: Onlineshopkanal einrichten
 description: Dieser Artikel enthält Informationen über die Kanäle des Onlineshops und wie man sie in Dynamics 365 Commerce einrichtet.
 author: kfend
 manager: AnnBe
-ms.date: 10/31/2019
+ms.date: 03/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c427b0eba2120123a47f52029d70896be88b9ec0
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b719e40720b091eec879edf332ab63db710a1ebc
+ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022711"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3096893"
 ---
 # <a name="set-up-an-online-store-channel"></a>Onlineshopkanal einrichten
 
@@ -71,3 +71,27 @@ Organisationshierarchien werden verwendet, um die Vertriebskanäle zu strukturie
 Wenn Sie eine Organisationshierarchie erstellen, müssen Sie einen Kostenträger zuweisen. Der Kostenträger gibt an, wie die Hierarchie in der Struktur des Unternehmens verwendet wird. Sie können eine Organisationshierarchie für die Filialenarbeitsgänge erstellen und diese Hierarchie für Sortimente, Auffüllung und Berichte verwenden. 
 
 Sie können auch eine separate Organisationshierarchie für jeden Kostenträger erstellen. Sie können auch mehrere Hierarchien mit demselben Kostenträger erstellen und diesen je einen separaten Kanal zuweisen. Wenn Sie Produktkataloge im Onlineshop veröffentlichen möchten, sollten Sie mindestens den Onlineshop einer Organisationshierarchie für Sortimente hinzufügen. Die Produkte in einem Katalog werden von den Sortimenten ausgewählt, die dem Onlineshop zugewiesen sind. Wenn der Katalog veröffentlicht wird, vergleicht der Veröffentlichungsprozess die Gültigkeitsdaten für das Sortiment, das dem Onlineshop für die Produkte zugewiesen ist, die im Katalog enthalten sind, um zu bestimmen, welche Produkte im Onlineshop verfügbar gemacht werden.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+
+[Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
+
+[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
+
+[Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
+
+[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+
+[URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
+
+[Einrichten eines B2C-Mandanten in Commerce](set-up-B2C-tenant.md)
+
+[Einrichten angepasster Seiten für die Benutzeranmeldungen](custom-pages-user-logins.md)
+
+[Konfigurieren Sie mehrere B2C-Mandanten in einer Commerce-Umgebung](configure-multi-B2C-tenants.md)
+
+[Hinzufügen von Unterstützung für ein Content Delivery Network (CDN)](add-cdn-support.md)
+
+[Standortbasierte Shop-Erkennung aktivieren](enable-store-detection.md)

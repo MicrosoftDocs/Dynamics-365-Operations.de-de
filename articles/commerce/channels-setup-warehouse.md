@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9ba12876a8c8f841733d8ec49c33e900211c4ab4
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057855"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113758"
 ---
 # <a name="warehouse-set-up"></a>Lagerort einrichten
 
@@ -33,7 +33,7 @@ In diesem Thema wird beschrieben, wie Sie einen Lagerort für die Verwendung mit
 
 ## <a name="overview"></a>Übersicht
 
-Jedem Commerce-Kanal muss ein konfigurierter Lagerort zugeordnet sein. Die folgenden Verfahren bieten die Mindestkonfiguration, die zum Einrichten eines Lagerorts für einen Commerce-Kanal erforderlich ist. Weitere Informationen zur Einrichtung des Lagerorts finden Sie in der [Übersicht über die Lagerortverwaltung](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview).
+Jedem Commerce-Kanal muss ein konfigurierter Lagerort zugeordnet sein. Die folgenden Verfahren bieten die Mindestkonfiguration, die zum Einrichten eines Lagerorts für einen Commerce-Kanal erforderlich ist. Weitere Informationen zur Einrichtung des Lagerorts finden Sie in der [Übersicht über die Lagerortverwaltung](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json).
 
 ## <a name="configure-a-warehouse-site"></a>Standort eines Lagerorts konfigurieren
 
@@ -131,7 +131,7 @@ Das folgende Bild zeigt Details für einen konfigurierten Lagerort.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Lagerortverwaltung – Übersicht](https://docs.microsoft.com/en-us/dynamics365/supply-chain/warehousing/warehouse-management-overview)
+[Lagerortverwaltung – Übersicht](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json)
 
 [Kanalübersicht](channels-overview.md)
 

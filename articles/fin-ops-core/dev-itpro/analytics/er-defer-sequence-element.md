@@ -19,11 +19,11 @@ ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
 ms.openlocfilehash: 6efa4466dbf7f5ca1d3945acf15fac65d628d691
-ms.sourcegitcommit: 6a70f9ac296158edd065d52a12703b3ce85ce5ee
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3015229"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124542"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Verzögern der Ausführung von Sequenz-Elementen in ER-Formaten
 
@@ -45,7 +45,7 @@ Die Option **Verzögerte Ausführung** wird nur für Sequenz-Elemente unterstüt
 
 Die Option **Verzögerte Ausführung** gilt nicht für Sequenzen, die als zugeschnittene Sequenzen konfiguriert wurden und deren maximale Länge begrenzt ist.
 
-## <a name="Example"></a>Beispiel: Verzögern der Ausführung eines Sequenz-Elements in einem ER-Format
+## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Beispiel: Verzögern der Ausführung eines Sequenz-Elements in einem ER-Format
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministrator- oder der Funktionaler Berater für elektronische Berichterstellung-[Rolle](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) ein ER-Format konfigurieren kann, das ein Sequenz-Element enthält, dessen Ausführungsreihenfolge von der Reihenfolge in der Formathierarchie abweicht.
 

@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: AnnBe
-ms.date: 01/10/2020
+ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8bc3e3e7bea15127062edfcd362476de97bff07d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3014a7b22c47f99b5c57fd6acd9be8d89c6fb8ab
+ms.sourcegitcommit: 75974ae567bb0eacf0f65cac992b34ce5c680b93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004110"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095796"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -30,10 +30,10 @@ ms.locfileid: "3004110"
 
 ## <a name="feature-exposure"></a>Funktionsbereitstellung
 
-Um die Lagerortverwaltung für die Artikelgewichtsproduktverarbeitung zu verwenden, müssen Sie einen Lizenzkonfigurationsschlüssel verwenden, um die Funktionen zu aktivieren. (Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**. Erweitern Sie dann auf der Registerkarte **Konfigurationsschlüssel** die Option **Art \> Lagerort- und Transportverwaltung**, und aktivieren Sie das Kontrollkästchen für **Artikelgewicht für Lagerort**).
+Um die Lagerortverwaltung für die Artikelgewichtsproduktverarbeitung zu verwenden, müssen Sie einen Lizenzkonfigurationsschlüssel verwenden, um die Funktionen zu aktivieren. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**. Erweitern Sie dann auf der Registerkarte **Konfigurationsschlüssel** **Handel \> Lager- und Transportverwaltung**, und markieren Sie das Kontrollkästchen für **Artikelgewicht für Lager**.
 
 > [!NOTE]
-> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden. Um die Konfigurationsschlüssel für das Artikelgewicht festzulegen, müssen Sie die Funktion auch mit dem Arbeitsbereich **Funktionsverwaltung** aktivieren. Die Hauptfunktion, die aktiviert werden muss, ist **Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung**. Eine weitere verwandte, aber optionale Funktion, die Sie vielleicht aktivieren möchten, ist **Bestandsstatusänderungen für Produkte mit Artikelgewicht**. Diese Funktion unterstützt Änderungen des Inventarstatus für Produkte, für die das Artikelgewicht aktiviert ist.
+> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden. Um die Konfigurationsschlüssel für das Artikelgewicht festzulegen, müssen Sie die Funktion auch mit dem Arbeitsbereich **Funktionsverwaltung** aktivieren. Die Hauptfunktion, die aktiviert werden muss, ist **Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung**. Zwei verwandte, aber optionale Funktionen, die Sie möglicherweise einschalten möchten, sind **Lagerstatusänderungen für Produkte mit Artikelgewicht** und **Benutzen Sie vorhandene Artikelgewichtkennzeichnungen, wenn Sie Produktionsaufträge als abgeschlossen melden**.
 
 Nachdem der Lizenzkonfigurationsschlüssel aktiviert ist, können Sie beim Erstellen eines freigegebenen Produkts **Artikelgewicht** auswählen. Sie können das freigegebene Produkt auch einer Lagerdimensionsgruppe zuordnen, für die der **Lagerortverwaltungsprozesse verwenden**-Parameter ausgewählt ist.
 
@@ -107,6 +107,7 @@ Wenn ein Element mit einem Tag verfolgt wird, gibt es außerdem einen Parameter 
 **Wenn die Artikelgewichtstag-Rückverfolgung verwendet wird**, muss ein Tag immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jedes Tag muss immer einem Gewicht zugeordnet werden.
 
 Beispielsweise ist **Box** die Artikelgewichteinheit, und Sie erhalten eine Palette mit acht Boxen. In diesem Fall müssen acht eindeutige Artikelgewichtsmarkierungen erstellt werden, und ein Gewicht muss jeder Markierung zugeordnet werden. Je nach Eingangsartikelgewichts-Markierung kann entweder das Gewicht aller acht Boxen erfasst werden und das Durchschnittsgewicht dann auf jede Box verteilt werden, oder ein eindeutiges Gewicht kann für jede Box erfasst werden.
+Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden**, wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Folglich fordert die Warehousing-App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
 
 **Wenn die Artikelgewichtstag-Rückverfolgung nicht verwendet wird**, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
 

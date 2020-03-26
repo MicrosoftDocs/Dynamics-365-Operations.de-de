@@ -1,6 +1,6 @@
 ---
-title: Kreditsperren für Aufträge
-description: ''
+title: Kreditsperren für Aufträge verwalten
+description: In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird.
 author: mikefalkner
 manager: AnnBe
 ms.date: 01/25/2019
@@ -9,25 +9,23 @@ ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: roschloma
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 316a626e6a18f0afda632111138482f62f6809db
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 8a0e006be8a72f35d6c6009ca9d67d083b8fac89
+ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057669"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124253"
 ---
-# <a name="credit-holds-for-sales-orders"></a>Kreditsperren für Aufträge
+# <a name="credit-holds-for-sales-orders"></a>Kreditsperren für Aufträge verwalten
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-
-In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird. Die Sperrregeln für das Kreditmanagement können für einen einzelnen Debitor oder eine Gruppe von Debitoren gelten.  Sperrregeln definieren Reaktionen auf die folgenden Umstände:
+In diesem Thema wird das Einrichten von Regeln beschrieben, mit denen ein Debitorenauftrag auf Kredit gehalten wird. Die Sperrregeln für das Kreditmanagement können für einen einzelnen Debitor oder eine Gruppe von Debitoren gelten. Sperrregeln definieren Reaktionen auf die folgenden Umstände:
 
 1. Anzahl der überfälligen Tage
 2. Kontostatus
@@ -57,10 +55,10 @@ Wenn ein Debitor eine Verkaufstransaktion einleitet, werden die Informationen im
    - Für den Bereich **Tabelle** bietet die Suche eine Liste der Debitoren zur Auswahl. 
    - Wählen Sie eine **Gruppe**, wenn die Regel für eine Debitorenkreditgruppe gilt.
    - Wählen Sie alle **Alle**, wenn die Regel für alle Debitoren gilt. 
-3. Wählen Sie **Risikogruppe**, um Kriterien für die Anwendung einer Kreditmanagementsperre auf Debitoren anzuwenden, die nach einer Reihe von Faktoren gruppiert sind, zum Beispiel nach ihrer Dun&Breadstreet-Bewertung, der Anzahl der Jahre im Geschäft, die Zeit, die sie bereits Ihr Debitor sind usw.  
+3. Wählen Sie **Risikogruppe**, um Kriterien für die Anwendung einer Kreditmanagement-Sperre auf Kunden zu verwenden, die nach einem gemeinsamen Satz von Faktoren gruppiert sind, wie z. B. ihr Dun- und Bradstreet-Rating, die Anzahl der Jahre, die sie im Geschäft sind, die Zeit, die sie Ihr Kunde sind, und so weiter.  
 4. Wählen Sie die Art der Regel aus, die Sie einrichten. Die Option **Sperrung** erstellt eine Regel, die eine Bestellung sperrt. Die Option **Ausschluss** erstellt eine Regel, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
 5. Wählen Sie einen **Werttyp** aus. Der Standardeintrag ist eine feste Anzahl von Tagen. Wenn Sie einen Ausschluss erstellen, können Sie stattdessen eine feste Anzahl von Tagen oder einen Betrag angeben. 
-6. Geben Sie die Anzahl der Tage **Überfällig** ein, die für die ausgewählte Sperrregel zulässig sind, bevor eine Bestellung zur Überprüfung in die Warteschleife für das Kreditmanagement gestellt wird. Die Anzahl der überfälligen Tage entspricht einer zusätzlichen Anzahl von Kulanztagen, die zu der Anzahl von Tagen nach dem Fälligkeitsdatum hinzuaddiert werden, die die Rechnung haben kann, bevor sie als überfällig angesehen wird. Wenn Sie den **Werttyp** als Betrag für einen Ausschluss angegeben haben, geben Sie einen Betrag und eine Währung für diesen Betrag ein.
+6. Geben Sie die Anzahl der Tage **Überfällig** ein, die für die ausgewählte Sperrregel zulässig sind, bevor eine Bestellung zur Überprüfung in die Warteschleife für das Kreditmanagement gestellt wird. Die Anzahl der überfälligen Tage entspricht einer zusätzlichen Anzahl von Kulanztagen, die zu der Anzahl von Tagen nach dem Fälligkeitsdatum hinzuaddiert werden, die die Rechnung haben kann, bevor sie als überfällig angesehen wird. Wenn Sie den **Werttyp** als Betrag für einen Ausschluss angegeben haben, dann geben Sie einen Betrag und eine Währung für diesen Betrag ein.
 
 ### <a name="accounts-status"></a>Kontostatus
 
@@ -87,9 +85,9 @@ Wählen Sie **Zahlungsbedingungen**, wenn die Sperrregel für die ausgewählte Z
    - Wählen Sie alle **Alle**, wenn die Regel für alle Debitoren gilt. 
 3. Wählen Sie eine **Risikogruppe**, um die Liste der Debitoren, die für das Kreditmanagement reserviert werden, weiter einzuschränken. 
 4. Wählen Sie die Art der Regel aus, die Sie einrichten. 
-  - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
-  - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
-6. Geben Sie die **Tage Kreditlimit abgelaufen** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement gehalten wird. Die Anzahl der überfälligen Tage gibt zusätzliche Kulanztage an, die zu der Anzahl der Tage hinzuaddiert werden, an denen das Kreditlimit abgelaufen ist.
+   - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
+   - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
+5. Geben Sie die **Tage Kreditlimit abgelaufen** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement gehalten wird. Die Anzahl der überfälligen Tage gibt zusätzliche Kulanztage an, die zu der Anzahl der Tage hinzuaddiert werden, an denen das Kreditlimit abgelaufen ist.
 
 ### <a name="overdue-amount"></a>Überfälliger Betrag
 
@@ -104,11 +102,10 @@ Wählen Sie **Zahlungsbedingungen**, wenn die Sperrregel für die ausgewählte Z
    - Wählen Sie alle **Alle**, wenn die Regel für alle Debitoren gilt. 
 3. Wählen Sie eine **Risikogruppe**, wenn Sie die Liste der Debitoren, die für das Kreditmanagement reserviert werden, weiter einschränken möchten. 
 4. Wählen Sie die Art der Regel aus, die Sie einrichten. 
-  - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
-  - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
+   - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
+   - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
 5. Geben Sie **Überfälliger Betrag** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement zur Überprüfung gehalten wird. 
-6. Wählen Sie den **Werttyp**, der die Art des Werts festgelegt, mit dem auch geprüft wird, wie viel von dem Kreditlimit verwendet wurde. Sperrregeln erfordern einen Prozentsatz, aber ein Ausschluss kann einen festen Betrag oder Prozentsatz haben.
-Schwellenwert. Die Schwelle bezieht sich auf das Kreditlimit.
+6. Wählen Sie den **Werttyp**, der die Art des Werts festgelegt, mit dem auch geprüft wird, wie viel von dem Kreditlimit verwendet wurde. Sperrregeln erfordern einen Prozentsatz, aber ein Ausschluss kann einen festen Betrag oder Prozentsatz haben. Die Schwelle bezieht sich auf das Kreditlimit.
 7. Geben Sie den Wert **Kreditlimitschwelle** für die ausgewählte Regel ein, bevor ein Kunde das Kreditmanagement einstellt. Dies kann ein Betrag oder ein Prozentsatz sein, der auf dem im Wertetyp ausgewählten Wertetyp basiert.
 8. Die Regel prüft, ob der **Überfällige Betrag** und die **Kreditlimitschwelle** überschritten ist. 
 
@@ -125,9 +122,9 @@ Wählen Sie **Auftrag**, wenn die Sperrregel für den Wert des Auftrags gilt.
    - Wählen Sie alle **Alle**, wenn die Regel für alle Debitoren gilt. 
 3. Wählen Sie eine **Risikogruppe**, wenn Sie die Liste der Debitoren, die für das Kreditmanagement reserviert werden, weiter einschränken möchten. 
 4. Wählen Sie die Art der Regel aus, die Sie einrichten.  
-  - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
-  - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
-6. Geben Sie den **Auftragsbetrag** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement gehalten wird. 
+   - Wählen Sie **Sperrung**, um eine Regel zu erstellen, die eine Bestellung sperrt. 
+   - Wählen Sie **Ausschluss**, um eine Regel zu erstellen, die eine andere Regel vom Sperren einer Bestellung ausschließt. 
+5. Geben Sie den **Auftragsbetrag** für die ausgewählte Sperrregel an, bevor eine Bestellung im Kreditmanagement gehalten wird. 
 
 Die Auftragsregel enthält eine zusätzliche Einstellung, die alle anderen Regeln außer Kraft setzt. Um einen Ausschluss zu erstellen, durch den der Auftrag freigegeben wird, ohne dass andere Regeln wirksam werden, markieren Sie das Kontrollkästchen **Auftragskommissionierung** in der Ausschlusszeile.
 
@@ -187,7 +184,7 @@ Das Verhalten der Regel **Kreditlimit verwendet** ändert sich basierend auf den
 
 Aufträge können auch dann vom Kreditmanagement ausgeschlossen werden, wenn Regeln vorhanden sind. 
 
-- Wenn Sie die Einstellungen **Debitor vom Kreditmanagement ausschließen** in **Alle Debitoren > Einen Debitor auswählen > Inforegister Kredit und Inkasso** zu **Ja** ändern, werden keine Bestellungen für diesen Kunden bearbeitet.
+- Wenn Sie die Einstellungen **Kunde vom Kreditmanagement ausschließen** in **Alle Kunden > Kunde auswählen > Kredit und Inkasso** auf **Ja** ändern, dann werden keine Aufträge für diesen Kunden bearbeitet
 - Wenn Sie den Wert **Vom Kreditmanagement ausschließen** im **Auftragskopf**in der **Inforegister für die Kreditverwaltung** zu **Ja** ändern, werden die Kreditverwaltungsregeln nicht verarbeitet. Diese Einstellung kann nur vom Kreditkaufmann oder Kreditmanager vorgenommen werden.
 
 ## <a name="processing-orders-on-hold-using-the-credit-management-hold-list"></a>Bearbeitung von gesperrten Aufträgen über die Kreditmanagement-Sperrliste
@@ -206,7 +203,7 @@ Ein Auftrag kann aus folgenden Gründen in die Warteliste aufgenommen werden:
 8. Die Zahlungsbedingungen weichen von den Standard-Zahlungsbedingungen für den Debitor ab.
 9. Die Ausgleichsrabatte weichen vom Standardausgleichsrabatt für den Debitor ab.
 
-Der Sperrgrund wird für jeden Auftrag in der Sperrliste angezeigt. Wenn es mehr als einen Grund für die Sperre gibt, wird der Grund als **Mehrere** angezeigt. Sie können das Menü **Sperrgründe** im Aktionsbereich verwenden, um alle Gründe anzuzeigen, warum der Auftrag gesperrt wurde. Sie können auch die **Sperrgründe** in einer Infobox anzeigen.
+Der Sperrgrund wird für jeden Auftrag in der Sperrliste angezeigt. Wenn es mehr als einen Grund für die Sperre gibt, wird der Grund als **Mehrere** angezeigt. Sie können das Menü **Sperrgründe** im Aktionsbereich verwenden, um alle Gründe anzuzeigen, warum der Auftrag gesperrt wurde. Sie können auch die **Blockierungsgründe** in einer FactBox anzeigen.
 
 ### <a name="releasing-orders-from-the-hold-list-for-processing"></a>Aufträge aus der Sperrliste zur Bearbeitung freigeben
 
@@ -216,8 +213,8 @@ Wenn Sie die Gründe für die Sperre untersucht und behoben haben, können Sie d
 2) Wählen Sie einen **Grund für die Freigabe** für den Auftrag, der zur Freigabe ausgewählt wurde.  
 3) Geben Sie **Prüfdatum** für jeden Auftrag ein, der zur Freigabe ausgewählt wurde.  
 4) Wählen aus dem Menü **Freigabe** im Aktionsbereich, um eine Bestellung freizugeben. Dieses Menü ist nur verfügbar, nachdem Transaktionen ausgewählt wurden. Dem Benutzer werden zwei Optionen angeboten:
- - Wählen Sie **Mit Buchung**, um die Sperre zu entfernen und das Dokument zu buchen, indem Sie denselben Buchungsprozess verwenden, der ausgeführt wurde, als der Auftrag gesperrt wurde. Wenn beispielsweise die Auftragsbestätigung gesperrt wurde, wird die Auftragsbestätigung nach der Freigabe abgeschlossen. Das Auftragsbuchungsformular wird angezeigt, damit der Benutzer die Bestätigung buchen kann.
- - Wählen Sie **Ohne Buchung**, um die Sperre ohne weitere Bearbeitung zu entfernen. Der Auftrag kann manuell gebucht werden.
+   - Wählen Sie **Mit Buchung**, um die Sperre zu entfernen und das Dokument zu buchen, indem Sie denselben Buchungsprozess verwenden, der ausgeführt wurde, als der Auftrag gesperrt wurde. Wenn beispielsweise die Auftragsbestätigung gesperrt wurde, wird die Auftragsbestätigung nach der Freigabe abgeschlossen. Das Auftragsbuchungsformular wird angezeigt, damit der Benutzer die Bestätigung buchen kann.
+   - Wählen Sie **Ohne Buchung**, um die Sperre ohne weitere Bearbeitung zu entfernen. Der Auftrag kann manuell gebucht werden.
 
 ### <a name="rejecting-orders-in-the-hold-list"></a>Aufträge in der Warteliste ablehnen
 Sie können das Menü **Ablehnen** im Aktionsbereich verwenden, um einen Auftrag abzulehnen

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8ac01f36912fa5e8a09bb4f324ef272cec737aa1
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: a9291dddf7d4dc080b6eb1ec60702de32a761f45
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002380"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113827"
 ---
 # <a name="set-up-a-retail-channel"></a>Einen Retail Channel einrichten
 
@@ -66,7 +66,7 @@ Das folgende Bild zeigt ein Beispiel für einen Retail Channel.
 
 Es gibt zahlreiche andere optionale Einstellungen, die in den Abschnitten **Auszug/Abschluss**und **Sonstiges** basierend auf den Bedürfnissen des Einzelhandelsgeschäfts eingestellt werden können.
 
-Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS) ](https://docs.microsoft.com/en-us/dynamics365/retail/pos-screen-layouts?toc=/dynamics365/commerce/toc.json)für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](https://docs.microsoft.com/en-us/dynamics365/retail/retail-hardware-station-configuration-installation) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
+Darüber hinaus siehe [Bildschirmlayouts für den Point of Sale (POS) ](pos-screen-layouts.md)für Informationen zum Einrichten des Standard-Bildschirmlayouts im Abschnitt **Bildschirmlayout** und [konfigurieren und installieren Sie die Retail Hardware station](retail-hardware-station-configuration-installation.md) für Informationen zum Einrichten über den Abschnitt **Hardwarestationen**.
 
 Das folgende Bild zeigt ein Beispiel für einen Retail Channel-Einrichtungskonfiguration.
 

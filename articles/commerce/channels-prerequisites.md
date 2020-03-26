@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a0927f6ee9b2d5bed1327bb223ceca85ecc16a0
-ms.sourcegitcommit: 161e85eb0a6b772b60ba8b2578a3de149ce5bfd7
+ms.openlocfilehash: 0da0457240cf12686fff2fa929c7fb510c11f242
+ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "3081314"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3113781"
 ---
 # <a name="channel-setup-prerequisites"></a>Voraussetzungen der Kanaleinrichtung
 
@@ -47,9 +47,9 @@ Bevor ein Dynamics 365 Commerce Kanal erstellt werden kann, müssen mehrere erfo
 - [Ihre Rechtsträgerstruktur definieren und konfigurieren](channels-legal-entities.md) 
 - [Ihre Organisationshierarchie konfigurieren](channels-org-hierarchies.md)
 - [Einen Lagerort einrichten](channels-setup-warehouse.md)
-- [Mehrwertsteuer konfigurieren](https://docs.microsoft.com/dynamics365/finance/general-ledger/indirect-taxes-overview?toc=/dynamics365/commerce/toc.json)
+- [Mehrwertsteuer konfigurieren](../finance/general-ledger/indirect-taxes-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Ein E-Mail-Benachrichtigungsprofil einrichten](email-notification-profiles.md)
-- [Einrichten von Nummernkreisen](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview?toc=/dynamics365/commerce/toc.json)
+- [Einrichten von Nummernkreisen](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=/dynamics365/commerce/toc.json)
 - [Einen Standardkunden und ein Adressbuch einrichten](default-customer.md)
 <!--
 - [Configure commerce parameters](commerce-parameters.md)

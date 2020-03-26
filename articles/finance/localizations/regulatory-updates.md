@@ -1,9 +1,9 @@
 ---
 title: Regulatorische Features
-description: Dieses Thema enthält eine Liste der geplanten und freigegebenen rechtlichen Updates für Microsoft Dynamics 365 Finance.
+description: Dieses Thema enthält eine Liste der geplanten und freigegebenen regulatorischen Updates für Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 01/29/2020
+ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d596a543ca8aacc2c6530672111001a9dd161aa7
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 2aea83f99c7e5b017ae0cf9d755882739e22ccb7
+ms.sourcegitcommit: 48c39c0c0949fe48b3536d9d2d0e451d561ff5c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000000"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3112754"
 ---
-# <a name="regulatory-updates"></a>Updates zu rechtlichen Bestimmungen
+# <a name="regulatory-updates"></a>Regulatorische Features
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,39 +42,34 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 |Land|Geplantes Freigabedatum|Version freigeben|Regulatorisches Update|
 |--------------------|---------------|-------|-------|
+|      Brasilien         |   März 2020 – Januar 2020      | 10.0.9, 10.0.8      |   DRCST SC – Verordnung SEF Nr. 416    |
+|      Brasilien         |   März 2020 – Januar 2020     | 10.0.9, 10.0.8      |   SPED-Beitrag – Layout für Januar 2020    |
 |      Brasilien         |   2020. März       | 10.0.9      |   Sped Fiscal – Änderungen im Datensatz D100, Feld COD_MUN_ORI    |
-|      Brasilien         |   März 2020 – Dezember 2019       | 10.0.9, 10.0.8, 10.0.7HF      |   DRCST SC – Verordnung SEF Nr. 254/19    |
-|      Brasilien         |   Januar 2020 – Dezember 2019       | 10.0.8, 10.0.7HF      |   Ergänzende Informationen von ICMS-ST    |
-|      Brasilien        |   März 2020 – Dezember 2019       | 10.0.9, 10.0.8HF, 10.0.7HF      |   Sped Fiscal Layout 014 |
-|      Brasilien         |   2019. Dezember       | 10.0.7      |   Eine neue Version technischer Hinweise für NF-e: NT 2019.001 Version 1.20    |
-|      Brasilien         |   2019. Dezember       | 10.0.7      |   DRCST-Meldung SC    |
-|      Brasilien          |   März 2020 – Januar 2020       | 10.0.9, 10.0.8HF, 10.0.7HF      |   DRCST SC – Verordnung SEF Nr. 343DR   |
+|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9, 10.0.8      |   DRCST SC – Verordnung SEF Nr. 254/19    |
+|      Brasilien         |   2020. Januar       | 10.0.8      |   Ergänzende Informationen von ICMS-ST    |
+|      Brasilien        |   März 2020 – Januar 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
+|      Brasilien          |   März 2020 – Januar 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Verordnung SEF Nr. 343DR   |
 |      Frankreich          |   2020. März       | 10.0.9      |   Französische Lokalisierung: ISO 20022-Format für internationale Zahlungen und Finanztransfers   |
+|      Ungarn          |   2020. März       | 10.0.9, 10.0.8      |   Online-Rechnungsstellungssystem v.2.0 am Finance and Operations    |
 |      Indien          |   2020. März       | 10.0.9      |   Neues GSTR (ANX-1 und ANX-2) Rückgabe Offlinetool   |
 |      Italien          |   2020. Januar       | 10.0.8      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 vom 23. Oktober 2018: Bericht zur jährlichen Steuermitteilung |
-|      Italien         |   2019. Dezember       | 10.0.7      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 ab dem 23. Oktober 2019: Vierteljährliche MwSt.-Mitteilung („Lipe 2018“)    |
-|      Italien         |   März 2020 – Dezember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Verwalten von Debitoreninformationen in POS |
-|      Italien         |   März 2020 – Dezember 2019      | 10.0.9, 10.0.8HF, 10.0.7HF      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
-|      Italien         |   2019. Dezember     | 10.0.7      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 von 23. Okt. 2018: Rechnungskommunikation  |
-|      Japan          |   März 2020 – Dezember 2019     | 10.0.9, 10.0.8HF, 10.0.7HF     |   Japan Bankers Association ersetzt JBA-Zahlungsformate mit fester Länge durch ISO20022 |
-|      Japan          |   Januar 2020 – Dezember 2019     | 10.0.8, 10.0.7HF       |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer (Verbrauchssteuersatzbericht) |
-|      Japan         |   2019. Dezember      | 10.0.7       |   Einführung der Änderung der Verbrauchsrate und der ermäßigten Steuer (Rechnungslayouts) |
-|      Mexiko          |   Januar 2020 – Dezember 2019    | 10.0.8, 10.0.7HF        |   Einzelhandel – CFDI Global: Sonstiges Resol 2019 – c_CodigoPostal und Zeitzone |
-|     Mexiko          |   2019. Dezember       | 10.0.7      |   Aktualisierung von Regel 2.7.2.9 – Mithilfe der Zeitzone der Postleitzahl der Einrichtung, die das CFDI-Dokument ausstellt |
-|      Mexiko           |   Januar 2020 – Dezember 2019      | 10.0.8, 10.0.7HF     |   Code-Validierung im Produkt- und Dienstleistungskatalog |
-|      Norwegen          |   März 2020 – Dezember 2019   | 10.0.9, 10.0.8HF, 10.7.7HF     |   SAF-T XSD Update auf Version 1.1 für Dynamics 365 for Finance and Operations |
+|      Italien         |   2020. März     | 10.0.9, 10.0.8HF      |   Retail – Verwalten von Debitoreninformationen in POS |
+|      Italien         |   2020. März      | 10.0.9, 10.0.8HF      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
+|      Japan          |   2020. März     | 10.0.9, 10.0.8HF     |   Japan Bankers Association ersetzt JBA-Zahlungsformate mit fester Länge durch ISO20022 |
+|      Japan          |   2020. Januar      | 10.0.8       |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer (Verbrauchssteuersatzbericht) |
+|      Mexiko          |   2020. Januar     | 10.0.8        |   Einzelhandel – CFDI Global: Sonstiges Resol 2019 – c_CodigoPostal und Zeitzone |
+|      Mexiko           |   2020. Januar       | 10.0.8     |   Code-Validierung im Produkt- und Dienstleistungskatalog |
+|      Norwegen          |   2020. März   | 10.0.9, 10.0.8HF     |   SAF-T XSD Update auf Version 1.1 für Dynamics 365 for Finance and Operations |
 |      Polen          |   2020. März    | 10.0.9     |   Vorsteuerregister und SAF-MwSt.-Register: Zollagentur aus SAD-Dokumenten muss durch Drittnamen und Steuerbefreiungsnummer ersetzt werden |
 |      Polen          |   März 2020 – Januar 2020   | 10.0.9, 10.0.8HF     |   Retail – Verwalten von Debitoreninformationen in POS |
 |      Polen          |   März 2020 – Januar 2020     | 10.0.9, 10.0.8HF     |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
-|      Polen          |   März 2020 – Dezember 2019     | 10.0.9, 10.0.8, 10.0.7     |   SAF-Rechnungen (JPK_FA) v.3 ab 2. Dez. 2019 |
-|      Polen          |   März 2020 – Januar 2019     | 10.0.9, 10.0.8     |   JPK_VDEK ersetzt JPK_VAT (SAF VAT) |
-|      Polen          |   2019. Dezember     | 10.0.7     |   Teilzahlung ist erforderlich |
+|      Polen          |   März 2020 – Januar 2020     | 10.0.9, 10.0.8     |   SAF-Rechnungen (JPK_FA) v.3 ab 2. Dez. 2019 |
+|      Polen          |   März 2020 – Januar 2020     | 10.0.9, 10.0.8     |   JPK_VDEK ersetzt JPK_VAT (SAF VAT) |
 |      Russische Föderation          |   2020. März     | 10.0.9     |   Format der Eigenschaft Steuererklärung Berichterstellung 2019 |
 |      Russische Föderation          |   2020. März     | 10.0.9     |   Formataktualisierungen der Ertragssteuererklärung |
-|      Singapur           |   Januar 2020 – Dezember 2019     | 10.0.8, 10.0.7HF      |   GST-Bericht zur Rücklieferung |
+|      Singapur           |   2020. Januar     | 10.0.8      |   GST-Bericht zur Rücklieferung |
 |      Schweiz           |   2020. März     | 10.0.9      |   Schweizer Zahlungsbeleg ISR erhält neues Format (QR-Code) |
 |      Vereinigtes Königreich          |   2020. Januar       | 10.0.8      |   Making Tax Digital (MTD) – Zustimmung des Systemadministrators zur Übermittlung von Informationen außerhalb von D365 unter Verwendung der Integration mit HMRC |
-|      Vereinigtes Königreich          |   2019. Dezember     | 10.0.7     |   Digitale Steuer – Berichtserstellung zu Mehrwertsteuerrückerstattung für die Unternehmen, die als MwSt-Gruppe innerhalb der gleichen Systemdatenbank v.10 melden |
 
 
 
