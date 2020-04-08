@@ -638,7 +638,7 @@
           items:
             - name: Ausgabenverwaltung – Übersicht
               href: expense-management/expense-management.md
-            - name: Überarbeitete Ausgabenberichte
+            - name: Überarbeitete Spesenabrechnungen
               href: expense-management/ExpenseWorkspaceNew.md
             - name: Planen der Ausgabenverwaltung
               href: expense-management/plan-expense-management.md
@@ -660,7 +660,7 @@
               href: expense-management/expense-report-distributions.md
             - name: Intercompany-Ausgaben
               href: expense-management/intercompany-expense.md
-            - name: Ausgabenrichtlinien
+            - name: Ausgabenrichtlinien definieren
               href: expense-management/travel-expense-policies.md
             - name: Anzeigen einer Spesenabrechnung
               href: expense-management/view-expense-report.md
@@ -984,6 +984,8 @@
               href: project-management/project-contracts.md
             - name: Projektplanungen und -budgets
               href: project-management/project-forecasts-budgets.md
+            - name: Projektbudget zum Ende des Geschäftsjahres übertragen
+              href: project-management/process-project-budgets-for-fiscal-year-end.md
             - name: Projektaufträge
               href: project-management/project-sales-orders.md
             - name: Bestellungen für ein Projekt
@@ -1646,6 +1648,12 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Buchungen zum Ausgleich anzeigen
                   href: localizations/emea-transactions-settlement-form.md
+            - name: Finnland
+              items:
+                - name: Finnland – Übersicht
+                  href: localizations/finland.md
+                - name: Mehrwertsteuer-Zahlungsbericht für Finnland
+                  href: localizations/emea-fin-sales-tax-payment-report-finland.md
             - name: Frankreich
               items:
                 - name: Frankreich – Übersicht
@@ -1696,6 +1704,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Zahlungsmethode für Debitor aktualisieren
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: DAS-2-Bericht
+                  href: localizations/emea-fra-das2-report.md
             - name: Deutschland
               items:
                 - name: Deutschland – Übersicht
@@ -1992,10 +2002,16 @@
                   href: localizations/emea-ita-exil-goods-for-free.md
                 - name: Verbesserte Abfrage von Debit- oder Kreditabrechnungen
                   href: localizations/emea-ita-exil-improved-inquiry-settlement.md
+                - name: Provisionsausgleich bei Zahlung
+                  href: localizations/emea-ita-exil-commission-settlement.md
                 - name: Hauptbuchsimulationen (Italien)
                   href: localizations/emea-ita-exil-general-ledger-simulations.md
+                - name: Konfigurierbare Buchungsprofile für Banken- und Rimessentypen
+                  href: localizations/emea-ita-exil-bank-remittance.md
                 - name: Eindeutige Zertifizierung
                   href: localizations/emea-ita-exil-unique-certification.md
+                - name: Wechselprotestimport
+                  href: localizations/emea-ita-exil-protest-boe.md
             - name: Japan
               items:
                 - name: Japan – Übersicht
@@ -2456,10 +2472,12 @@
                       href: localizations/rus-goods-transit-vendor.md
                     - name: Zollerklärungszahlen
                       href: localizations/rus-custom-declaration-number.md
-                    - name: Lagerkostenstruktur
+                    - name: Bestandskostenstruktur
                       href: localizations/rus-inventory-cost-structure.md
                     - name: Bestandsregulierungsassistent
                       href: localizations/rus-inventory-adjustment-wizard.md
+                    - name: Bestandsberichte
+                      href: localizations/rus-inventory-reports.md
                 - name: Berichterstellung
                   items:
                     - name: Finanzberichterstellung

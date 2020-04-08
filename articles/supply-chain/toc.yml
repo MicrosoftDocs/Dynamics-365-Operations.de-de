@@ -68,8 +68,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Neuerungen oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuerungen oder Änderungen in Supply Chain Management – Startseite
+                    - name: Neuerungen oder Änderungen bei der Supply Chain Management-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management Version 10.0.10 (Mai 2020)
+                      href: get-started/whats-new-scm-10-0-10.md
                     - name: Supply Chain Management Version 10.0.9 (April 2020)
                       href: get-started/whats-new-scm-10-0-9.md
                     - name: Supply Chain Management Version 10.0.8 (Februar 2020)

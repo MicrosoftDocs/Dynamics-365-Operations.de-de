@@ -454,7 +454,9 @@
                   items:
                     - name: Erweiterte automatische Belastungen konfigurieren und verwenden
                       href: omni-auto-charges.md
-                    - name: Kopfzuschläge auf übereinstimmende Verkaufspositionen aufteilen
+                    - name: Automatische Belastungen nach Kanal aktivieren und konfigurieren
+                      href: auto-charges-by-channel.md
+                    - name: Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen
                       href: pro-rate-charges-matching-lines.md
                 - name: Anschlussprogramme verwalten
                   items:
@@ -525,7 +527,7 @@
                 - name: Neues Produkt erstellen
                   items:
                     - name: Neues Produkt in Commerce erstellen
-                      href: create-new-product.md
+                      href: create-new-product-commerce.md
                     - name: Produktkategorien und Produkte verwalten
                       href: category-management-product-creation.md
                 - name: Produktattribute
@@ -598,8 +600,6 @@
                       href: personalized-recommendations.md
                     - name: Personalisierte Empfehlungen kündigen
                       href: personalization-gdpr.md
-                - name: Einer E-Commerce-Website Empfehlungslisten hinzufügen
-                  href: add-reco-list-to-page.md
                 - name: POS-Umgebungen
                   items:
                     - name: Produktempfehlungen in POS hinzufügen
@@ -944,6 +944,8 @@
                       href: add-checkout-module.md
                     - name: Auftragsbestätigungsmodul
                       href: order-confirmation-module.md
+                    - name: Shopauswahlmodul
+                      href: store-selector.md
                 - name: Kontenverwaltungsmodule
                   items:
                     - name: Kontenverwaltungsseiten und -module
@@ -2115,7 +2117,7 @@
                 - name: Zahlungsdaten verwenden
                   href: payment-connector-data-fields.md
                 - name: Duplizierten Zahlungsschutz für den Zahlungsconnector aktivieren
-                  href: dev-itpro/duplicate-payment-protection.md
+                  href: dev-itpro/duplicate-payments-protection.md
                 - name: Zahlungspakete für den Anwendungs-Explorer in Service Fabric-Bereitstellungen erstellen
                   href: dev-itpro/payment-connector-package.md
             - name: E-Commerce-Erweiterbarkeit durch Drittanbieter
