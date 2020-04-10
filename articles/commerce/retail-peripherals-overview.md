@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 278cfe89181efbbb934e108708db8fc29c25ab62
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: dd2ce6b223c99d890691d5fdb9f93a5ceaf33a0d
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124404"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154179"
 ---
 # <a name="peripherals"></a>Peripheriegeräte
 
@@ -158,7 +158,7 @@ Netzwerk-Kassenladen, -Bondrucker und -Zahlungsterminals können über ein Netzw
 
 ### <a name="dedicated"></a>Dediziert
 
-Moderne POS-Clients für Windows und Android umfassen **dedizierte** oder eingebaute Hardwarestationen. Diese Clients können mithilfe der in die Anwendungen integrierten Geschäftslogik direkt mit Peripheriegeräten kommunizieren. Die Android-Anwendung unterstützt nur Netzwerkgeräte. Weitere Informationen über die Unterstützung von Peripheriegeräten für die Android finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+Moderne POS-Clients für Windows und Android umfassen **dedizierte** oder eingebaute Hardwarestationen. Diese Clients können mithilfe der in die Anwendungen integrierten Geschäftslogik direkt mit Peripheriegeräten kommunizieren. Die Android-Anwendung unterstützt nur Netzwerkgeräte. Weitere Informationen über die Unterstützung von Peripheriegeräten für die Android finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 Um die dedizierte Hardwarestation zu verwenden, weisen Sie einem Register ein Hardwareprofil zu, das Modern POS für Windows- oder Android-Anwendungen nutzt. Erstellen Sie dann eine Hardwarestation vom Typ **Dediziert** für den Shop, in dem die Register verwendet wird. Starten Sie den Modern POS im kassenladenfremden Modus und verwenden Sie den Vorgang **Hardwarestationen verwalten**, um die Hardwarestationsfunktionen einzuschalten; die dedizierte Hardwarestation ist standardmäßig aktiv. Melden Sie sich als Nächstes vom Modern POS ab, melden Sie sich dann wieder an und öffnen Sie eine Schicht. Die im Hardwareprofil konfigurierten Peripheriegeräte können verwendet werden. 
 
@@ -199,7 +199,7 @@ Weitere Informationen finden Sie unter [Konfigurieren, Installieren und Aktivier
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Modern POS für Android und iOS – Einrichtung und Konfiguration
 
-Weitere Informationen finden Sie unter [POS-Hybridanwendung auf Android und iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp) einrichten.
+Weitere Informationen finden Sie unter [POS-Hybridanwendung auf Android und iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp) einrichten.
 
 ### <a name="opos-device-setup-and-configuration"></a>OPOS-Geräte Einrichtung und Konfiguration
 
@@ -494,7 +494,7 @@ Diese Konfiguration ist die typischste Konfiguration für die traditionelle, fes
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Modern POS für Android mit einer IPC-Hardwarestation (integriert)
 
-**Neu für 10.0.8** – Epson-Netzwerkdrucker und Kassenladen, die über den DK-Port mit diesen Druckern verbunden sind, werden jetzt für die Modern POS für Android-App unterstützt. Einzelheiten finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/hybridApp).
+**Neu für 10.0.8** – Epson-Netzwerkdrucker und Kassenladen, die über den DK-Port mit diesen Druckern verbunden sind, werden jetzt für die Modern POS für Android-App unterstützt. Einzelheiten finden Sie im Artikel [POS-Hybridanwendung einrichten auf Android und iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-Clients mit festgeschriebener freigegebener IIS-Hardwarestation
 

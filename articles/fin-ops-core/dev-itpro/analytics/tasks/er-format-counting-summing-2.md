@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d785b321037645837dbcbaf28c8ede9b8e97b79
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 20188438a4ca623fc926e6c373fb002f148c3df4
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550601"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142477"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-2---configure-computations"></a>ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 2: Konfigurieren von Berechnungen)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe. Diese Schritte können in jedem Unternehmen ausgeführt werden.
 
-Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 1: Format erstellen)" ausführen.
+Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden „ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 1: Format erstellen)“ ausführen.
 
 Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
@@ -82,37 +82,37 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 31. Schließen Sie die Seite.
 32. Klicken Sie auf "OK".
 33. Wählen Sie in der Struktur "Intrastat\Data" aus.
-34. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselname".
+34. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselname“.
 35. Klicken Sie auf Datenquelle hinzufügen.
     * $BlockName  
-36. Klicken Sie auf "Speichern".
+36. Klicken Sie auf Speichern.
 37. Schließen Sie die Seite.
 38. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselwert".
 39. Geben Sie im Feld Formel 'IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")' ein.
     * IF(Intrastat.CommodityRecord.Direction=Direction.Import, "Import", "Export")  
 40. Klicken Sie auf "Speichern".
 41. Schließen Sie die Seite.
-    * Positionen dieses Nummernkreises zählen. Die Ergebnisse werden mit dem Namen "block" für unterschiedliche Richtungen separat verwendet. Der Wert "Import" wird für beliebige Eingangs-Intrastat-Buchungen verwendet. Der Wert "Export" wird für beliebige Abgangs-Intrastat-Buchungen verwendet. Nutzen Sie dies als virtuelles Excel-Arbeitsblatt. Für jede Buchung einer Zeile, in der die erste Spalte "block" die Werte "Import" und "Export" hat.  
+    * Positionen dieses Nummernkreises zählen. Die Ergebnisse werden mit dem Namen „block“ für unterschiedliche Richtungen separat verwendet. Der Wert „Import“ wird für beliebige Eingangs-Intrastat-Buchungen verwendet. Der Wert „Export“ wird für beliebige Abgangs-Intrastat-Buchungen verwendet. Nutzen Sie dies als virtuelles Excel-Arbeitsblatt. Für jede Buchung einer Zeile, in der die erste Spalte „block“ die Werte „Import“ und „Export“ hat.  
 42. Erweitern Sie 'Intrastat\Data: Sequence' in der Struktur.
 43. Wählen Sie 'Intrastat\Data: Sequence\Arrivals?'.
-44. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselname".
-    * Positionen dieses Nummernkreises zählen. Die Ergebnisse werden unter dem Namen "Record" gespeichert.  
+44. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselname“.
+    * Positionen dieses Nummernkreises zählen. Die Ergebnisse werden unter dem Namen „Record“ gespeichert.  
 45. Wählen Sie in der Struktur '$RecName' aus.
 46. Klicken Sie auf Datenquelle hinzufügen.
-47. Klicken Sie auf "Speichern".
+47. Klicken Sie auf Speichern.
 48. Schließen Sie die Seite.
-49. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselwert".
+49. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselwert“.
 50. Geben Sie im Feld Formel "Intrastat.CommodityRecord.CommodityCode" ein.
 51. Klicken Sie auf "Speichern".
 52. Schließen Sie die Seite.
-    * Positionen dieses Nummernkreises zählen. Die Ergebnisse werden mit dem Namen "record" für unterschiedliche Warencodes separat verwendet. Nutzen Sie dies als virtuelles Excel-Arbeitsblatt. Für jede Buchung wird eine Zeile ausgefüllt, in der die erste Spalte "block" mit den Werten "Import" und "Export" und der zweite und Block "record" mit dem Warencodewert ausgefüllt wird.  
+    * Positionen dieses Nummernkreises zählen. Die Ergebnisse werden mit dem Namen „record“ für unterschiedliche Warencodes separat verwendet. Nutzen Sie dies als virtuelles Excel-Arbeitsblatt. Für jede Buchung wird eine Zeile ausgefüllt, in der die erste Spalte „block“ mit den Werten „Import“ und „Export“ und der zweite und Block „record“ mit dem Warencodewert ausgefüllt wird.  
 53. Wählen Sie in der Struktur "Intrastat\Data: Sequence\Dispatches?' aus.
-54. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselname".
+54. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselname“.
 55. Wählen Sie in der Struktur '$RecName' aus.
 56. Klicken Sie auf Datenquelle hinzufügen.
-57. Klicken Sie auf "Speichern".
+57. Klicken Sie auf Speichern.
 58. Schließen Sie die Seite.
-59. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselwert".
+59. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselwert“.
 60. Geben Sie im Feld Formel "Intrastat.CommodityRecord.CommodityCode" ein.
 61. Klicken Sie auf Speichern.
 62. Schließen Sie die Seite.
@@ -121,18 +121,18 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 65. Klicken Sie auf die Registerkarte 'Format'.
 66. Wählen Sie in der Strukturdarstellung 'Intrastat\Data\Dispatches\Record\Invoice amount EUR'.
 67. Klicken Sie auf die Registerkarte Zuordnung.
-68. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselname".
+68. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselname“.
 69. Wählen Sie in der Struktur '$InvName' aus.
 70. Klicken Sie auf Datenquelle hinzufügen.
 71. Klicken Sie auf "Speichern".
 72. Schließen Sie die Seite.
-    * Zusammenfassen des fakturierten Betrags für Positionen dieser Sequenz Die Ergebnisse werden mit dem Namen "InvoicedAmountEUR" für unterschiedliche Intrastat-Richtungen und Warencodes separat verwendet. Nutzen Sie dies als virtuelles Excel-Arbeitsblatt. Für jede Buchung einer Zeile, in der die erste Spalte "block" die Werte "Import" und "Export" hat. Der zweite Block "record" wird mit dem Warencodewert ausgefüllt, und die dritte Spalte "InvoicedAmountEUR" wird mit dem Rechnungsbetrag ausgefüllt.  
+    * Zusammenfassen des fakturierten Betrags für Positionen dieser Sequenz Die Ergebnisse werden mit dem Namen „InvoicedAmountEUR“ für unterschiedliche Intrastat-Richtungen und Warencodes separat verwendet. Nutzen Sie dies als virtuelles Excel-Arbeitsblatt. Für jede Buchung einer Zeile, in der die erste Spalte „block“ die Werte „Import“ und „Export“ hat. Der zweite Block „record“ wird mit dem Warencodewert ausgefüllt, und die dritte Spalte „InvoicedAmountEUR“ wird mit dem Rechnungsbetrag ausgefüllt.  
 73. Erweitern Sie 'Intrastat\Data\Arrivals?' in der Struktur.
 74. Erweitern Sie 'Intrastat\Data: Arrivals?\Record = Intrastat.CommodityRecord'' in der Struktur.
 75. Klicken Sie auf die Registerkarte 'Format'.
 76. Wählen Sie in der Strukturdarstellung 'Intrastat\Data\Arrivals\Record\Invoice amount EUR'.
 77. Klicken Sie auf die Registerkarte Zuordnung.
-78. Klicken Sie auf die Schaltfläche "Bearbeiten" für das Feld "Gesammelter Datenschlüsselname".
+78. Klicken Sie auf die Schaltfläche „Bearbeiten“ für das Feld „Gesammelter Datenschlüsselname“.
 79. Wählen Sie in der Struktur '$InvName' aus.
 80. Klicken Sie auf Datenquelle hinzufügen.
 81. Klicken Sie auf "Speichern".

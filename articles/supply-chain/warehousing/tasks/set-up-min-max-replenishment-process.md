@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9002b1d9f8507af42277ccc47621d92a4a00f62
-ms.sourcegitcommit: 7b74425637ddcf02087f1d391755e5cb8ce25949
+ms.openlocfilehash: e8210369139b3c3d4123deff5279abb26b1cbb17
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "2559188"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145961"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Einen Min-Max-Auffüllungsprozess einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wird, der die Min./Max.-Auffüllungsstrategie verwendet. Wenn Lagerbestand unter der Untergrenze liegt, wird Arbeit erstellt, um den Lagerplatz aufzufüllen. Die Prozedur zeigt auch, wie feste Entnahmeorte verwendet werden, um die Lagerauffüllung zuzulassen, selbst wenn der Lagerbestand unter die Untergrenze sinkt und wie der Auffüllungsprozess aktiviert wird, um mithilfe eines Batchauftrags regelmäßig ausgeführt zu werden. Diese Aufgaben werden normalerweise von einem Lagerortleiter ausgeführt. Sie können diese Prozedur im USMF-Demodatunternehmen ausführen, unter Verwendung der Beispielswerte unten, oder Sie können sie mit Ihren eigenen Daten ausführen. Wenn Sie Ihre eigenen Daten verwenden, stellen Sie sicher, dass Sie einen Lagerort haben, der für Lagerortverwaltungsprozesse aktiviert ist.
 
@@ -34,10 +34,10 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 ## <a name="create-a-fixed-picking-location"></a>Erstellen Sie einen festen Entnahmeort
 1. Gehen Sie auf **Navigationsbereich > Module > Lagerortverwaltung > Einstellungen > Feste Lagerplätze**. Dies ist eine optionale Aufgabe für Min./Max.-Auffüllung, aber wenn Sie feste Entnahmeorte verwenden, ermöglicht dies das Auffüllen des Bestands, selbst wenn es unterhalb des minimalen Niveaus fällt, da das System bestimmen kann, welche Artikel aufgefüllt werden müssen, selbst wenn keine mehr übrig sind.
 2. Klicken Sie auf **Neu**.
-3. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie Artikel A0001 auswählen.  
-4. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie "Standort 2" auswählen.  
+3. Geben Sie im Feld **Artikelnummer** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie den Artikel A0001 auswählen.  
+4. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie „Standort 2“ auswählen.  
 5. Geben Sie im Feld **Lagerort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie Lagerort 24 auswählen.  
-6. Geben Sie im Feld **Lagerplatz** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie "CP-003" auswählen.  
+6. Geben Sie im Feld **Lagerplatz** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie „CP-003“ auswählen.  
 7. Schließen Sie die Seite.
 
 ## <a name="create-a-replenishment-location-directive"></a>Erstellen Sie eine Auffüllungslagerplatz-Anweisung
@@ -46,7 +46,7 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 3. Klicken Sie im **Aktivitätsbereich** auf **Neu**.
 4. Geben Sie im Feld **Name** einen Wert ein.
 5. Wählen Sie im Feld **Arbeitstyp** die Option „Entnahme“ aus.
-6. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie "Standort 2" auswählen.  
+6. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie „Standort 2“ auswählen.  
 7. Geben Sie im Feld **Lagerort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie Lagerort 24 auswählen.  
 8. Klicken Sie auf **Speichern**.
 9. Klicken SIe im Abschnitt **Positionen** auf **Neu**.
@@ -63,14 +63,14 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 20. Schließen Sie die Seite.
 
 ## <a name="create-a-replenishment-work-template"></a>Erstellen Sie eine Auffüllungs-Arbeitsvorlage
-1. Wechseln Sie zu **Lagerortverwaltung > Einstellungen > Arbeit > Arbeitsvorlagen**. Diese Arbeitsvorlage wird verwendet, um das System darin zu führen, wie die Min./Max.-Auffüllungsarbeit erstellt werden muss. Als Minimum muss es eine Arbeitsvorlagenposition für eine Entnahme und eine Einlagerung geben. Die Arbeitsvorlage weist darauf hin, dass sie "Ungültig" ist, bis die gesamten erforderlichen Informationen ausgefüllt wurden. 
+1. Wechseln Sie zu **Lagerortverwaltung > Einstellungen > Arbeit > Arbeitsvorlagen**. Diese Arbeitsvorlage wird verwendet, um das System darin zu führen, wie die Min./Max.-Auffüllungsarbeit erstellt werden muss. Als Minimum muss es eine Arbeitsvorlagenposition für eine Entnahme und eine Einlagerung geben. Die Arbeitsvorlage weist darauf hin, dass sie „Ungültig“ ist, bis die gesamten erforderlichen Informationen ausgefüllt wurden. 
 2. Wählen Sie im Feld **Arbeitsauftragstyp** die Option „Wiederbeschaffung“ aus.
 3. Klicken Sie im **Aktivitätsbereich** auf **Neu**.
 4. Geben Sie in das Feld **Arbeitsvorlage** einen Wert ein.
 5. Klicken Sie auf **Speichern**.
 6. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu**:
 7. Wählen Sie im Feld **Arbeitstyp** die Option „Entnahme“ aus.
-8. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein, oder wählen Sie einen Wert aus. Diese sollte eine Arbeitsklasse sein, die der Auffüllung zugeordnet ist. Wenn Sie USMF erwenden, wählen Sie "Auffüllen" aus.  
+8. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein, oder wählen Sie einen Wert aus. Diese sollte eine Arbeitsklasse sein, die der Auffüllung zugeordnet ist. Wenn Sie USMF erwenden, wählen Sie „Auffüllen“ aus.  
 9. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu**:
 10. Markieren Sie in der Liste die ausgewählte Zeile.
 11. Wählen Sie im Feld **Arbeitstyp** die Option 'Einlagern'.
@@ -107,7 +107,7 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 26. Schließen Sie die Seite.
 
 ## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Legen Sie fest, dass der Auffüllungsprozess als Batchauftrag ausgeführt wird
-1. Wechseln Sie zu **Lagerortverwaltung > Wiederbeschaffung > Wiederbeschaffen**. Die Seite "Auffüllungen" ermöglicht es Ihnen festzulegen, dass Auffüllung als Batchauftrag ausgeführt wird oder festzulegen, dass sie manuell gestartet wird.
+1. Wechseln Sie zu **Lagerortverwaltung > Wiederbeschaffung > Wiederbeschaffen**. Die Seite „Auffüllungen“ ermöglicht es Ihnen festzulegen, dass Auffüllung als Batchauftrag ausgeführt wird oder festzulegen, dass sie manuell gestartet wird.
 2. Klicken Sie auf **Filter**.
 3. Markieren Sie in der Liste die ausgewählte Zeile.
 4. Geben Sie im Feld **Kriterien** einen Wert ein, oder wählen Sie einen Wert aus.

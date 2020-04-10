@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36bad7424ac247b8fd9a819928837de619e9e258
-ms.sourcegitcommit: f87de0f949b5d60993b19e0f61297f02d42b5bef
+ms.openlocfilehash: 764d1dc1d7fb54e0fa14a681d6d3cdb1d829aa57
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "2026784"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146122"
 ---
 # <a name="create-a-location-profile"></a>Lagerplatzprofil erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie ein Lagerplatzprofil in Dynamics 365 Supply Chain Management erstellt wird. Jeder Standort in den Lagerortanforderungen musst ein Lagerplatzprofil zugeordnet haben, das die Eigenschaften des Lagerplatzes beschreibt, beispielsweise ob der Lagerplatz Mischartikel zulässt. In diesem Verfahren erstellen wir ein Profil für einen Lagerplatz, der nicht über Ladungsträger gesteuert wird. Wir aktivieren Mischartikel und Mischbestandsstatus und ermöglichen die permanente Inventur. Sie können diese Prozedur im Demodatunternehmen USMF verwenden.
+In diesem Thema wird erläutert, wie ein Lagerplatzprofil in Dynamics 365 Supply Chain Management erstellt wird. Jeder Standort in den Lagerortanforderungen musst ein Lagerplatzprofil zugeordnet haben, das die Eigenschaften des Lagerplatzes beschreibt, beispielsweise ob der Lagerplatz Mischartikel zulässt. In diesem Verfahren erstellen wir ein Profil für einen Lagerplatz, der nicht über die Ladungsträger gesteuert wird. Wir aktivieren Mischartikel und Mischbestandsstatus und ermöglichen eine Zykluszählung. Sie können diese Prozedur im Demodatunternehmen USMF verwenden.
 
 
 1. Wechseln Sie im Navigationsbereich zu **Module > Lagerortverwaltung > Einstellungen > Lagerort > Lagerplatzprofile**.

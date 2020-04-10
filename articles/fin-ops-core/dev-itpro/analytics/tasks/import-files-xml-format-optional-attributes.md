@@ -16,69 +16,69 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f34302a32b2e06f281dc93d6df160b88ffac7123
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: fc28e9a2170929c6cd8daafd7eae54713cec36ff
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769784"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143199"
 ---
 # <a name="rcs-import-files-in-xml-format-with-optional-attributes"></a>(RCS) Importiert Dateien im XML-Format mit optionalen Attributen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle Entwickler für elektronische Berichterstellung zugewiesen ist, eine ER-Formatkonfiguration entwerfen kann, um die Dateien im XML-Format, die optionale Attribute enthalten, zu importieren. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen. Bevor Sie beginnen, laden Sie die IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-Datei aus [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) und herunter speichern Sie sie lokal.
+In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle Entwickler für elektronische Berichterstellung zugewiesen ist, eine ER-Formatkonfiguration entwerfen kann, um die Dateien im XML-Format, die optionale Attribute enthalten, zu importieren. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen. Bevor Sie beginnen, laden Sie die IncomingDocumentToLearnHowToHandleOptionalAttributes.xml-Datei aus [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) und herunter speichern Sie sie lokal.
 
-1.  Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**.
-2.  Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diese als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen.
-3.  Klicken Sie auf **Berichterstellungskonfigurationen**.
+1.    Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**.
+2.    Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diesen als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen.
+3.    Klicken Sie auf **Berichterstellungskonfigurationen**.
 
 ## <a name="create-a-new-data-model-configuration"></a>Neue Datenmodellkonfiguration erstellen
-1.  Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
-2.  Geben Sie im Feld **Name** Modell ein, um die XML-Datei zu importieren.
-3.  Klicken Sie auf **Konfiguration erstellen**.
-4.  Klicken Sie auf **Designer**.
-5.  Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
-6.  Geben Sie im Feld **Name** Stamm ein.
-7.  Klicken Sie auf **Hinzufügen**.
-8.  Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
-9.  Geben Sie im Feld **Name** Liste ein.
-10. Wählen Sie im Feld **Artikeltyp** **Datensatzliste** aus.
-11. Klicken Sie auf **Hinzufügen**.
-12. Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
-13. Geben Sie im Feld **Name** 'Code' ein.
-14. Wählen Sie im Feld **Artikeltyp** **Zeichenfolge** aus.
-15. Klicken Sie auf **Hinzufügen**.
-16. Klicken Sie auf **Speichern**.
-17. Schließen Sie die Seite.
-18. Klicken Sie auf **Status ändern**.
-19. Klicken Sie auf **Abgeschlossen**.
-20. Klicken Sie auf **OK**.
+1.    Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
+2.    Geben Sie im Feld **Name** Modell ein, um die XML-Datei zu importieren.
+3.    Klicken Sie auf **Konfiguration erstellen**.
+4.    Klicken Sie auf **Designer**.
+5.    Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
+6.    Geben Sie im Feld **Name** Stamm ein.
+7.    Klicken Sie auf **Hinzufügen**.
+8.    Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
+9.    Geben Sie im Feld **Name** Liste ein.
+10.    Wählen Sie im Feld **Artikeltyp** **Datensatzliste** aus.
+11.    Klicken Sie auf **Hinzufügen**.
+12.    Klicken Sie auf **Neu** zum Öffnen des Ablagedialogfeld.
+13.    Geben Sie im Feld **Name** 'Code' ein.
+14.    Wählen Sie im Feld **Artikeltyp** **Zeichenfolge** aus.
+15.    Klicken Sie auf **Hinzufügen**.
+16.    Klicken Sie auf **Speichern**.
+17.    Schließen Sie die Seite.
+18.    Klicken Sie auf **Status ändern**.
+19.    Klicken Sie auf **Abgeschlossen**.
+20.    Klicken Sie auf **OK**.
 
 ## <a name="create-a-format-for-data-import"></a>Erstellen Sie ein Format für den Datenimport
-1.  Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
-2.  Geben Sie im Feld **Neu** Format basierend auf Datenmodell, um die xml Datei zum importieren ein.
-3.  Geben Sie im Feld **Name** „Formatieren, um XML-Datei zu importieren“ ein.
-4.  Wählen Sie die Option **Ja** im Feld **Unterstützt Datenimport** aus.
-5.  Klicken Sie auf **Konfiguration erstellen**.
+1.    Klicken Sie auf **Konfiguration erstellen** um das Dropdown-Dialogfeld zu öffnen.
+2.    Geben Sie im Feld **Neu** Format basierend auf Datenmodell, um die xml Datei zum importieren ein.
+3.    Geben Sie im Feld **Name** „Formatieren, um XML-Datei zu importieren“ ein.
+4.    Wählen Sie die Option **Ja** im Feld **Unterstützt Datenimport** aus.
+5.    Klicken Sie auf **Konfiguration erstellen**.
 
 ## <a name="design-a-format-to-parse-incoming-file-in-xml-format"></a>Entwerfen Sie ein Format, um eingehende Datei im XML-Format zu analysieren
-1.  Klicken Sie auf **Designer**.
-2.  Klicken Sie auf **Stamm hinzufügen**, um das Ablagedialogfeld zu öffnen.
-3.  Wählen Sie in der Struktur den Knoten **XML\Element**.
-4.  Geben Sie im Feld **Name** Stamm ein.
-5.  Klicken Sie auf **OK**.
-6.  Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.
-7.  Wählen Sie in der Struktur den Knoten **XML\Element**.
-8.  Geben Sie im Feld **Name** 'Dokument' ein.
-9.  Wählen Sie im **Vielfältigkeitsgebiet** **viele** aus.
-10. Klicken Sie auf **OK**.
-11. Wählen Sie in der Struktur **Root\Dokument**.
-12. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.
-13. Wählen Sie in der Struktur **XML\Attribute** aus.
-14. Geben Sie im Feld **Name** „ID“ ein.
-15. Klicken Sie auf **OK**.
-16. Klicken Sie auf **Speichern**.
+1.    Klicken Sie auf **Designer**.
+2.    Klicken Sie auf **Stamm hinzufügen**, um das Ablagedialogfeld zu öffnen.
+3.    Wählen Sie in der Struktur den Knoten **XML\Element**.
+4.    Geben Sie im Feld **Name** Stamm ein.
+5.    Klicken Sie auf **OK**.
+6.    Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.
+7.    Wählen Sie in der Struktur den Knoten **XML\Element**.
+8.    Geben Sie im Feld **Name** 'Dokument' ein.
+9.    Wählen Sie im **Vielfältigkeitsgebiet** **viele** aus.
+10.    Klicken Sie auf **OK**.
+11.    Wählen Sie in der Struktur **Root\Dokument**.
+12.    Klicken Sie zum Öffnen des Ablage-Dialogfelds auf **Hinzufügen**.
+13.    Wählen Sie in der Struktur **XML\Attribute** aus.
+14.    Geben Sie im Feld **Name** „ID“ ein.
+15.    Klicken Sie auf **OK**.
+16.    Klicken Sie auf **Speichern**.
 
 ## <a name="design-a-format-mapping-to-save-parsed-information-to-data-model"></a>Entwerfen Sie eine Formatzuordnung, um analysierte Informationen zum Datenmodell zu speichern
 1. Klicken Sie auf **Format zu Modell zuordnen**.
@@ -90,15 +90,15 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 7. Klicken Sie auf **Designer**.
 8. Erweitern Sie in der Struktur **Format**.
 9. Erweitern Sie in der Struktur **format\root: XML Element(root)**.
-10. Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-11. Klicken Sie auf **Binden**.
-12. Erweitern Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
-13. Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
-14. Erweitern Sie in der Struktur **Liste = format.root.dokument**.
-15. Wählen Sie in der Struktur **Liste = format.root.dokument\code**.
-16. Klicken Sie auf **Binden**.
-17. Klicken Sie auf **Speichern**.
-18. Schließen Sie die Seite.
+10.    Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+11.    Klicken Sie auf **Binden**.
+12.    Erweitern Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)**.
+13.    Wählen Sie in der Struktur **format\root: XML Element(root)\document: XML Element 1..* (dokument)\id**.
+14.    Erweitern Sie in der Struktur **Liste = format.root.dokument**.
+15.    Wählen Sie in der Struktur **Liste = format.root.dokument\code**.
+16.    Klicken Sie auf **Binden**.
+17.    Klicken Sie auf **Speichern**.
+18.    Schließen Sie die Seite.
  
 ## <a name="run-format-mapping"></a>Formularzuordnung ausführen
 1. Klicken Sie auf **Ausführen**.

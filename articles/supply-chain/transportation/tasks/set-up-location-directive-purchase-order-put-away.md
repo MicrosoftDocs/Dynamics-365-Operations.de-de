@@ -16,16 +16,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aea3f08ea2d1bd584448c3033aea41eca2a0e3ce
-ms.sourcegitcommit: 0e2e4d8419c03a30d2223662ba8d403a28fa31eb
+ms.openlocfilehash: 54c75696f7147a7a4eb7b9d984936af9c28ef501
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "1870915"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146214"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Lagerplatzdirektive für Bestellungseinlagerung einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrichten. Das Beispiel, das angezeigt wird, erstellt, um zu bestimmen, wo sich verwendet werden Lagerplatzdirektive, Artikel führt, die für eine Bestellung eingegangen sind. Sie können diese Prozedur mit dem Daten des Demodatenunternehmen USMF oder mit eigenen Daten verwenden. Vorbedingungen: Sie müssen einen Dispositionscode erstellen. In diesem Schritt verwenden Sie einen aufgerufenen Dispositionscode neu bezeichnen. Wenn Sie Lagerplatzdirektive in eigene Daten erstellen, müssen Sie einrichten erweiterte Lagerortverwaltung für den aktuellen Lagerort und Artikel verwenden. Diese Prozedur ist für die Lagerverwaltung vorgesehen.
 
@@ -53,7 +53,7 @@ In diesem Thema wird erläutert, wie Sie eine einfache Standortanweisung einrich
 4. Geben Sie im Feld **Einheit** einen Wert ein. Die Einheit, die von der Menge sowie der Menge ist, wird die Quellensteuer ausgedrückt. Wenn Sie dieses Feld leer lassen, wird die Lagereinheit des Artikels verwendet.  
 5. Wählen Sie im Feld **Menge lokalisieren** eine Option aus.
     - Kein oder Kfz-Kennzeichen-Menge: Die Menge erfasste jedem Nachverfolgen.  
-    - Unitized Menge: Die gesamte Menge, die erfasst wird.  
+    - Vereinheitlichte Menge: Die gesamte Menge, die erfasst wird.  
     - Die noch zu empfangende Menge, die in der Bestellposition angegeben ist.  
     - Die Gesamtmenge, die in der Bestellposition angegeben ist.  
 6. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Einschränkung nach Einheit**. Wenn Sie diese Option wählen und die Einheit auf der Seite **Einschränkung nach Einheit** angeben, können nur Artikel mit dieser Maßeinheit an den Ort gebracht werden. Wenn beispielsweise die Maßeinheit Paletten ist, können Artikel auf Paletten an einem bestimmten Lagerplatz eingelagert werden.  

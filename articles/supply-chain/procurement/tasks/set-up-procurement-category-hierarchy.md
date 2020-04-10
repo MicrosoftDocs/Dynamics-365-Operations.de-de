@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d7010a1c612b9b3884c675f578657d951da06c38
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: c7010fb702d16dc276bfee397066ccf95bf5d25a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995281"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147272"
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Einrichten einer Beschaffungskategoriehierarchie
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-Hierarchie erstellt und das Einrichten einer in konfiguriert einem Beschaffungsprozess zu verwendende Beschaffungskategorie. Diese Aufgaben werden normalerweise von einem Einkaufsleiter ausgeführt. Überprüfen Sie zunächst können, muss es eine Kategoriehierarchie vom Typ Beschaffung geben. Wenn Sie ein Demodatunternehmen verwenden, können Sie diese Prozedur im USMF-Unternehmen ausführen.
 
@@ -39,7 +39,7 @@ Dieses Verfahren zeigt Ihnen an, wie neue Knoten in einer Beschaffungskategorie-
 7. Wählen Sie **Speichern**.
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Hinzufügen von Produkten zu Ihrer neuen Beschaffungskategorie
-1. Klicken Sie auf **Beschaffung > Sendung > Beschaffungskategorien**. Wählen Sie den Knoten aus, den Sie soeben gelegt haben. Wenn Sie die Prozedur wie ein Aufgabenhandbuch ausführen, müssen Sie möglicherweise auf die Schaltfläche "Entsperren" klicken, bevor Sie den Knoten auswählen können.  
+1. Klicken Sie auf **Beschaffung > Sendung > Beschaffungskategorien**. Wählen Sie den Knoten aus, den Sie soeben gelegt haben. Wenn Sie die Prozedur wie ein Aufgabenhandbuch ausführen, müssen Sie möglicherweise auf die Schaltfläche „Entsperren“ klicken, bevor Sie den Knoten auswählen können.  
 2. Schalten Sie die Erweiterung des **Produkt**-Abschnitts ein/aus.
 3. Wählen Sie **Hinzufügen**, um Produkte mit der Beschaffungskategorie zu verknüpfen.
 4. Wählen Sie Produkte aus, die Sie der Beschaffungskategorie hinzufügen möchten.

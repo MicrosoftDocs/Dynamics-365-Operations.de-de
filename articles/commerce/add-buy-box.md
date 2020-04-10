@@ -3,7 +3,7 @@ title: Kauffeldmodul
 description: Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 13d044a150651dd18c3a09c4db6a783fe8f42287
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 3417156cbf3cb20a5190e5e51b61b3423816895a
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025458"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154062"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
@@ -58,7 +58,7 @@ Mithilfe von Designs können Sie die Reihenfolge der Produkteigenschaften und Ak
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Module, die im Kauffeldmodus verwendet werden können
 
 - **Mediengalerie** - Dieses Modul wird verwendet, um die Bilder eines Produkts auf einer Produktdetailseite anzuzeigen. Es kann ein bis zu vielen Bildern unterstützen. Er unterstützt auch Miniaturbilder. Die Miniaturbilder können horizontal (als Zeile unter dem Bild) oder vertikal angeordnet werden (als Spalte neben dem Bild). Das Medienkatalogmodul kann dem Slot **Medien** im Kauffeldmodul hinzugefügt werden. Es unterstützt derzeit nur Bilder. 
-- **Store-Selector** – Dieses Modul wird eine Liste von nahe gelegene Filialen anzeigen, die für eine Abholung zur Verfügung stehen. Hier können Benutzer einen Ort eingeben, um nach Geschäften in der Nähe zu suchen. Das Store-Selector-Modul ist in der Anwendungsprogrammierschnittstelle (API) für die Geocodierung von Bing Maps integriert, um den angegebenen Standort in eine Breite und eine Länge zu konvertieren. Ein Bing Maps-API-Schlüssel ist erforderlich und muss auf der Seite „Freigegebene Retail-Parameter“ in Dynamics 365 Retail hinzugefügt werden. Dieses Modul unterstützt zwei Eigenschaften: **Suchradius** und **Nutzungsbedingungen Link**. Die Eigenschaft **Suchradius** definiert den Suchradius für Geschäfte in Meilen. Wenn kein Wert angegeben wird, wird der Standardsuchradius von 50 Meilen verwendet. Wenn Bings Maps oder ein externer Dienst verwendet wird, wird die Eigenschaft **Nutzungsbedingungen-Link** verwendet, um einen Link zu den Nutzungsbedingungen bereitzustellen. Für den Bing Maps-Dienst ist ein Link zu den Nutzungsbedingungen erforderlich. 
+- **Store-Selector** – Dieses Modul wird eine Liste von nahe gelegene Filialen anzeigen, die für eine Abholung zur Verfügung stehen. Hier können Benutzer einen Ort eingeben, um nach Geschäften in der Nähe zu suchen. Weitere Informationen zu diesem Modul finden Sie unter [Auswahlmodul speichern](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Kauffeldmoduleinstellungen
 
@@ -91,7 +91,9 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Überblick](starter-kit-overview.md)
+[Starterkit-Übersicht](starter-kit-overview.md)
+
+[Shopauswahlmodul](store-selector.md)
 
 [Containermodul](add-container-module.md)
 

@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2948282d8b40f7d34ffbae072a195cf954ab6e2
-ms.sourcegitcommit: 81e6eaa2178fda7f7d086ad978f4c891bc4ec10a
+ms.openlocfilehash: 6ca44b4793f61d1067b9e0740b9a447d3a2363c2
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "1738903"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147387"
 ---
 # <a name="create-a-requisition-for-consumption"></a>Anforderung für Verbrauch erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben. Sie erfahren Ihnen unterschiedliche Arten an, für Produkte im Beschaffungskatalog zu suchen und wie ein Produkt hinzufügt, das nicht im Katalog ist. Überprüfen Sie zunächst, müssen Sie eine Einkaufsrichtlinieneinstellung mit der Verbrauch mit der Standardtyp der Anforderung offen. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Die Prozedur kann in einem Benutzerprofil nur ausgeführt werden, das als Arbeitskraft eingerichtet ist. Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt. Die Sicherheitsrolle **Mitarbeiter** ermöglicht es Ihnen, diese Aufgaben auszuführen. Sie können sich auch als **Alicia** anmelden, wenn Sie USMF verwenden.
+In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben. Es zeigt Ihnen unterschiedliche Arten an, um nach Produkten im Beschaffungskatalog zu suchen und wie ein Produkt hinzufügt, das nicht im Katalog ist. Überprüfen Sie zunächst, müssen Sie eine Einkaufsrichtlinieneinstellung mit der Verbrauch mit der Standardtyp der Anforderung offen. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Die Prozedur kann in einem Benutzerprofil nur ausgeführt werden, das als Arbeitskraft eingerichtet ist. Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt. Die Sicherheitsrolle **Mitarbeiter** ermöglicht es Ihnen, diese Aufgaben auszuführen. Sie können sich aber auch als **Alicia** anmelden, wenn Sie USMF verwenden.
 
 
 ## <a name="create-a-new-requisition"></a>Neue Reiseanforderung erstellen
@@ -58,7 +58,7 @@ In diesem Thema wird der Prozess zum Erstellen einer Anforderung beschrieben. Si
 7. Geben Sie im Feld **Menge** eine Zahl ein.
 8. Geben Sie im Feld **Beschaffungskategorieknoten suchen** den ersten Teil des Namens der Kategorie ein, nach der Sie suchen, und klicken Sie dann auf die **EINGABETASTE**. Geben Sie für dieses Beispiel `High` (Textmarker) ein.  
 9. Verwenden Sie die Verknüpfung **InvokeDefaultButton**.
-10. Wählen Sie **Nicht gelistete Produkte zu Positionen hinzufügen** aus, um ein Produkt hinzuzufügen, das nicht im Beschaffungskatalog aufgeführt ist.
+10. Wählen Sie **Nicht gelistete Produkte zu Positionen hinzufügen**, um ein Produkt hinzuzufügen, das nicht im Beschaffungskatalog aufgeführt ist.
 11. Geben Sie im Feld **Produktname** einen Wert ein.
 12. Geben Sie im Feld **Einheit** einen Wert ein.
 13. Wählen Sie **OK**.

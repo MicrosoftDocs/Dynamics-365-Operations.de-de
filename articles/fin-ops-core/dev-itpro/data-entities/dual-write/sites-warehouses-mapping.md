@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 0f5ed58ad50df49250aa4c001401ff52d460dfa6
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: 1b9181211bbb65cdfc46e63f3cee0e9f5bc9f6a4
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019795"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173061"
 ---
 # <a name="integrated-sites-and-warehouses"></a>Integrierte Standorte und Lagerorte
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 In diesem Thema wird die Integration von Stand- und Lagerortdaten zwischen Finance and Operations and Common Data Service beschrieben. Betriebsstandorte und Lagerorte sind allgemeine Konzepte in einer Supply Chain Management-Anwendung. Sie werden verwendet, um die Lieferkette des Unternehmens zu modellieren.
 

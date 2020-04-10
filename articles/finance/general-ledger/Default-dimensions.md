@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0e2b98bde04b221730413bcd7ddd028074b19d47
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: e65d371486d53d0fe4f039da68fbb4dcc35074d1
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030944"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154573"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finanzdimensionen und Buchungen 
 
@@ -37,7 +37,7 @@ Ein großes, regelbasiertes System wird verwendet, um zulässige Kombinationen v
 
 ### <a name="account-structures"></a>Kontostrukturen
 
-Eine Kontostruktur ist erforderlich, wenn Sie das Sachkonto einrichten. Sie müssen mindestens eine Kontostruktur definieren und aktivieren, die Sie dem Sachkonto zuweisen. Das Hauptkonto muss die Kontostruktur enthalten. Sie können die Reihenfolge der Segmente definieren, die für das Unternehmen am besten sind. Nachdem das Hauptkonto definiert wird, kann das System die Kontostruktur, die verwendet wird, bestimmen. Wenn Sie zuerst das Hauptkonto vor oder in der Nähe einer Struktur stellen, können Sie die Werte einschränken und das System auch unterstützen, den letzten bekannten gültigen Wert als Standardwert zu übernehmen. Sie können bis 10 um zusätzliche Finanzdimensionen in der Kontostruktur sind. Die Kontostruktur definiert, welche Dimensionswerte in Verbindung mit anderen Werten gültig sind. sie definiert auch, dass die Dimensionswerte eingegeben werden müssen.
+Eine Kontostruktur ist erforderlich, wenn Sie das Sachkonto einrichten. Sie müssen mindestens eine Kontostruktur definieren und aktivieren, die Sie dem Sachkonto zuweisen. Das Hauptkonto muss die Kontostruktur enthalten. Sie können die Reihenfolge der Segmente definieren, die für das Unternehmen am besten sind. Nachdem das Hauptkonto definiert wird, kann das System die Kontostruktur, die verwendet wird, bestimmen. Wenn Sie zuerst das Hauptkonto vor oder in der Nähe einer Struktur stellen, können Sie die Werte einschränken und das System auch unterstützen, den letzten bekannten gültigen Wert als Standardwert zu übernehmen. Sie können bis 10 um zusätzliche Finanzdimensionen in der Kontostruktur sind. Die Kontostruktur definiert, welche Dimensionswerte in Verbindung mit anderen Werten gültig sind. Sie definiert auch, dass die Dimensionswerte eingegeben werden müssen.
 
 ### <a name="advanced-rules"></a>Erweiterte Regeln
 

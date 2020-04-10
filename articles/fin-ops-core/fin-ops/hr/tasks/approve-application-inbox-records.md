@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 28a82ea8747fcbbceb835291ad5cd3d87091a736
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a087fa63bfdf4c2340f0fe9a8bdbd9195a7b90b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190694"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144063"
 ---
 # <a name="approve-application-inbox-records"></a>Bewerbungseingangs-Datensätze genehmigen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Im folgenden Verfahren wird gezeigt, wie Sie Bewerbungen prüfen, die über die Seite "Mitarbeiter-Self-Service" eingehen. Neben der Prüfung der Bewerbungen, können Sie die Bewerbung in den Felddatensätzen genehmigen, die Sie auswählen. Bei Bewerbungseingangsdatensätzen handelt es sich um Stellenbewerbungen, die beim Unternehmen eingegangen sind. Nach dem Genehmigen eines Datensatzes wird für die Person, die die Bewerbung übermittelt hat, ein Bewerberdatensatz erstellt. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

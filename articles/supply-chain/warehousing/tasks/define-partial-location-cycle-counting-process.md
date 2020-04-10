@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3aafb42cea1664b0629f57fe4492736601902cc1
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 67f719d5990a4331559cab34412bf82f15eca735
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1568257"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148353"
 ---
 # <a name="define-partial-location-cycle-counting-process"></a>Partiellen Lagerplatzzykluszählungsprozess definieren 
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Wenn Sie Zykluszählungspläne verwenden, um Inventurarbeit zu erstellen, können Sie die tatsächlichen Zähleroperationen verwalten, indem Sie diese nur für bestimmte Produkte und Produktvarianten anfordern,  anstelle aller verfügbaren Lagerbestands am Lagerplatz zu zählen. Indem Sie nach bestimmten Produkten filtern, kann der Lagerortleiter Prüfungsgemeinkosten senken, Konsolidierungsfehler vermeiden und Zeit sparen. Normalerweise werden diese Aufgaben von einem Lagerortleiter ausgeführt. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.
 

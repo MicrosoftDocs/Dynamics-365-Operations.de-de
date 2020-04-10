@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fe0fd9a7c27efb71f15cca9d3a0341b550bf9698
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: ba64093dfe9ca28108456641ad17b5eda23d7f49
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916670"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148210"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Artikel oder Rohmaterial nachverfolgen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Verfahren zeigt, wie die Artikelverfolgung angewendet wird, um zu erkennen, wo Artikel oder Rohmaterial verwendet wurden oder verwendet werden. Mit dieser Prozedur können Sie einen Artikel identifizieren, ihn zur Quelle zurückverfolgen und dann die Abläufe vorwärts verfolgen über die Produktion und den Vertrieb des fertigen Produkts. Der Prozess kann verwendet werden, um die Debitoren, die beeinflusst werden, die betroffenen Aufträge usw. zu überprüfen. Für diese Prozedur wird das Demodatunternehmen USP2 verwendet.
 
@@ -48,7 +48,7 @@ Der oberste Knoten der Struktur stellt die verfügbare Menge des ausgewählten A
     Erweitern Sie: "P9100 / 1 / 10 / as-12-344-01 ● 117 Liter ● 26,4 Liter  \P9100 ● Entnommen ● Auftrag 000072 ● 22.12.2015 ● -58,6 Liter ● -15 Liter ● Standort=1, Lagerort=10, Chargennummer=als-12-344-01   \P9100 ● Produktion B-000050 ● 9.12.2015● 410,72 Liter ● 102,21 Liter ● Standort=1, Lagerort=10, Chargennummer=als-12-344-01 ● Co-Produkte: P9101" und wählen Sie dann diesen Knoten aus.     
 2. Erweitern Sie in der Struktur "den unten beschriebenen Knoten und wählen Sie dann diesen Knoten aus".
     
-    Beginnend am Knoten, den Sie soeben ausgewählt haben, erweitern Sie "M9103 ● Produktionsposition B-000050 ● 09.12.2015 ● -72,57 kg ● Größe=70, Farbe=OK, Standort=1, Lagerort=10, Charennummer=App01" und wählen Sie dann diesen Knoten aus.  
+    Beginnend am Knoten, den Sie soeben ausgewählt haben, erweitern Sie „M9103 ● Produktionsposition B-000050 ● 09.12.2015 ● -72,57 kg ● Größe=70, Farbe=OK, Standort=1, Lagerort=10, Charennummer=App01“ und wählen Sie dann diesen Knoten aus.  
 3. Klicken Sie auf **Trace vom Knoten**.
 4. Klicken Sie auf **Vorwärts**.
 5. Klicken Sie im **Aktionsbereich** auf **Verfolgung**.

@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ac75d390b8bbb94c6e039b374b51462d348e355
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 001bdd61f9266798dadae2ac7c96a4f4c19dbb94
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057159"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141452"
 ---
 # <a name="create-and-associate-registers"></a> Register erstellen und zuordnen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diese Prozedur zeigt, wie ein Verkaufsstellen-(POS)-Register erstellt wird. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
@@ -41,6 +41,6 @@ Diese Prozedur zeigt, wie ein Verkaufsstellen-(POS)-Register erstellt wird. Für
 7. Geben Sie im Feld "Visuelles Profil" einen Wert ein oder wählen Sie einen Wert aus.
     * Visuelle Profile werden verwendet, um die Bilder anzugeben, die im POS-Hintergrund und auf der Anmeldeseite sowie als Themen für das POS verwendet werden.  
 8. Geben Sie im Feld "POS-Registernummer für elektronische Überweisung" einen Wert ein.
-    * Die POS-Registernummer für elektronische Überweisungen wird verwendet, um den Zahlungsprozessor darüber zu informieren, welches Zahlungsterminal Autorisierungsanforderungen sendet. Dieser Wert wird häufig als "Terminalkennung" oder "TID" bezeichnet. Die TID kann allgemein auf einem Aufkleber auf dem Zahlungsgerät gefunden werden.  
+    * Die POS-Registernummer für elektronische Überweisungen wird verwendet, um den Zahlungsprozessor darüber zu informieren, welches Zahlungsterminal Autorisierungsanforderungen sendet. Dieser Wert wird häufig als „Terminalkennung“ oder „TID“ bezeichnet. Die TID kann allgemein auf einem Aufkleber auf dem Zahlungsgerät gefunden werden.  
 9. Klicken Sie auf "Speichern".
 

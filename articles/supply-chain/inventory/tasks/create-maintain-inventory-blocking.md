@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b2485eaf31226b11106895074ae0ad95e561777b
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 2408addea3615ffe6dbc4db8baecfdef6a65e839
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916598"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145823"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Dient zum Erstellen und Verwalten einer Sperrung von Lagerbestand
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verfügbarer Lagerbestand durch andere ausgehende Quelldokumente mithilfe der Sperrung von Lagerbestand reserviert wird. Sie können die Prozedur im Demodatenunternehmen USMF mit den Beispielswerten ausführen, die angezeigt werden. Sie müssen einen Artikel mit physisch verfügbarem Lagerbestand haben, bevor Sie dieses Verfahren beginnen.
 
@@ -35,11 +35,11 @@ Im folgenden Verfahren wird dargestellt, wie verhindert wird, dass physisch verf
 1. Wechseln Sie im **Navigationsbereich** zu **Module > Lagerverwaltung > Periodische Aufgaben > Sperrung von Lagerbestand**.
 2. Klicken Sie auf **Neu**.
 3. Klicken Sie im Feld **Artikelnummer** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-4. Wählen Sie in der Liste den Artikel aus. Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie Artikel M9201 auswählen.  
-5. Geben Sie im Feld **Menge** eine Zahl ein. Wenn Sie Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.
+4. Wählen Sie in der Liste den Artikel aus. Wählen Sie eine Artikelnummer mit physischem Lagerbestand aus, die Sie sperren möchten. Wenn Sie USMF verwenden, können Sie den Artikel M9201 auswählen.  
+5. Geben Sie im Feld **Menge** eine Zahl ein. Wenn Sie den Artikel M9201 verwenden, müssen Sie weniger als 200 auswählen.
 6. Erweitern Sie das Inforegister **Lagerungsdimensionen**.
 7. Klicken Sie im Feld **Lagerort** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wenn Sie Artikel M9201 verwenden, können Sie Warehouse 51 auswählen.  
+8. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Wenn Sie den Artikel M9201 verwenden, können Sie Warehouse 51 auswählen.  
 9. Klicken Sie auf **Speichern**.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Aktualisieren Sie die Bedingungen der Sperrung von Lagerbestand

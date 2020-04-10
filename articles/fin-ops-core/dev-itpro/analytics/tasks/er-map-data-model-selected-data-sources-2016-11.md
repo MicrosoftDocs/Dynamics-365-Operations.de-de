@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 44f6ac3263f115e76d054e68c99d58dc11e6f1a0
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: cf19d69c498da32594e17e16fb83ed25e6747982
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182231"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142988"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>Er-Datenmodell zu den ausgewählten Datenquellen zuordnen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Datenquellen, zuordnen kann. Diese vorbildliche Zuordnung wird später als Datenquelle in einer Formatkonfiguration verwendet, die verwendet wird, um Dokumente für den elektronischen Zahlungsverkehr zu verwalten. In diesem Beispiel verknüpfen Sie ein Datenmodell für das Beispielunternehmen, Litware, Inc. mit Datenquellen. Um diese Schritte abzuschließen, die folgenden Schritte in der "Datenquellen für Modell-Zuordnung" im Verfahren zuerst abschließen.
+In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” ein Datenmodell der elektronischen Berichterstellung (EB) ausgewählten Datenquellen, zuordnen kann. Diese vorbildliche Zuordnung wird später als Datenquelle in einer Formatkonfiguration verwendet, die verwendet wird, um Dokumente für den elektronischen Zahlungsverkehr zu verwalten. In diesem Beispiel verknüpfen Sie ein Datenmodell für das Beispielunternehmen, Litware, Inc. mit Datenquellen. Um diese Schritte abzuschließen, die folgenden Schritte in der „Datenquellen für Modell-Zuordnung“ im Verfahren zuerst abschließen.
 
 
 ## <a name="open-er-configurations-tree"></a>Öffnen Sie ER-Konfigurationsstruktur
@@ -36,7 +36,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Sys
 
 ## <a name="select-created-model-mapping"></a>Wählen Sie erstellte Model-Zuordnung
 1. Wählen Sie 'Zahlungen (vereinfachtes Modell)' in der Struktur aus.
-    * Stellen Sie sicher, dass die Modellkonfiguration "Zahlungen (vereinfachtes Modell)" im Voraus erstellt wurde. Andernfalls beenden Sie jetzt und kehren nach Abschluss des Aufgabenleitfadens „Erstellen einer neuer Konfiguration mit dem Datenmodell der ausgewählten Domäne” zurück.  
+    * Stellen Sie sicher, dass die Modellkonfiguration „Zahlungen (vereinfachtes Modell)“ im Voraus erstellt wurde. Andernfalls beenden Sie jetzt und kehren nach Abschluss des Aufgabenleitfadens „Erstellen einer neuer Konfiguration mit dem Datenmodell der ausgewählten Domäne“ zurück.  
 2. Klicken Sie auf "Modelldesigner".
 3. Klicken Sie auf "Modell der Datenquelle zuordnen".
 4. Wählen Sie den "CT-Zuordnungs" Datensatz aus.

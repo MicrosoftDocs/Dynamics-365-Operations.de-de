@@ -16,27 +16,27 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fcceb0e4d5f3bec54598515da0a5cbd8d11def3d
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: ea5b17873dea4508230f39ffb41a50e2f427584f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142131"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Entwerfen einer Konfiguration für das Generieren von Berichten im OPENXML-Format (November 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält. Diese Konfiguration wird zur Verarbeitung von Kreditorenzahlungen verwendet.
 
 In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
 
-Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen. Sie müssen auch über eine Excel-Datei verfügen, die importiert wird, wenn die Vorlage erstellt wird. Auf diese Datei kann aus der [Vorlage des Zahlungsberichgte](https://go.microsoft.com/fwlink/?linkid=862266) zugegriffen werden.
+Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen. Sie müssen auch über eine Excel-Datei verfügen, die importiert wird, wenn die Vorlage erstellt wird. Auf diese Datei kann aus der [Vorlage des Zahlungsberichgte](https://go.microsoft.com/fwlink/?linkid=862266) zugegriffen werden.
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Laden Sie die Zahlungsdatenmodell-Konfiguration hoch
 1. Gehen Sie im Navigationsbereich zu **Module > Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung**.
-2. Markieren Sie in der Liste den Konfigurationsanbieter für die Musterfirma Litware, Inc. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte unter [Konfigurationsanbieter anlegen ausführen und ihn als aktiv](er-configuration-provider-mark-it-active-2016-11.md) markieren.
+2. Markieren Sie in der Liste den Konfigurationsanbieter für die Musterfirma Litware, Inc. Wenn Sie diesen Konfigurationsanbieter nicht sehen können, müssen Sie zunächst die Schritte unter [Konfigurationsanbieter anlegen ausführen und ihn als aktiv](er-configuration-provider-mark-it-active-2016-11.md) markieren.
 3. Wählen Sie **Als aktiv festlegen**.
 4. Wählen Sie **Repositorys** aus. Wählen Sie ein Repository für den Typ „Betriebliche Ressource” aus, falls verfügbar. Wenn es verfügbar ist, überspringen Sie die folgenden Schritte zur Erstellung eines neuen Repository.  
 5. Wählen Sie **Hinzufügen**, um das Dropdown-Dialogfeld zu öffnen.
@@ -55,7 +55,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfig
 3. Wählen Sie **Konfiguration erstellen** aus, um das Dropdown-Dialogfeld zu öffnen.
 4. Geben Sie im Feld **Neu** `Format based on data model PaymentModel` ein. Erstellen Sie ein Format, das auf dem PaymentModel-Datenmodell basiert.
 5. Geben Sie im Feld **Name** `Sample worksheet report` ein. Beispiel-Arbeitsblattbericht  
-6. Geben Sie im Feld **Beschreibung** `Sample worksheet report for vendors’ payments` ein. Beispiel-Arbeitsblattbericht für Zahlungen der Händler.  
+6. Geben Sie im Feld **Beschreibung** `Sample worksheet report for vendors' payments` ein. Beispiel-Arbeitsblattbericht für Zahlungen von Händler.  
 7. Geben Sie im Feld **Datenmodelldefinition** einen Wert ein, oder wählen Sie einen Wert aus. Wählen Sie die Definition **CustomerCreditTransferInitiation** aus.  
 8. Wählen Sie **Konfiguration erstellen**.
 

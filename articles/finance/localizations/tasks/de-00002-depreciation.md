@@ -16,16 +16,16 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f74f21780060745b3464101e6c0cba2e6c1d95bb
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 006a3eb2aae6c414ffd087fe67ca48b648a0f865
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175107"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141542"
 ---
 # <a name="de-00002-depreciation-adjustments-for-additional-acquisitions-in-the-second-year"></a>DE-00002 Abschreibungsregulierungen für zusätzliche Anschaffungen im zweiten Jahr
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Handbuch veranschaulicht, wie die Berechnung der Abschreibung für zusätzliche Anschaffungen eingerichtet. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.
 

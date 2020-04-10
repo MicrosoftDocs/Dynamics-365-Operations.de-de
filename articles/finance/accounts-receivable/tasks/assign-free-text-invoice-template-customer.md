@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c64a00a839522ea14fc5fcdaca08ab17748f894
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 19742c53406cd1c616e8be1172b93157437132e8
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000023"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140328"
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Einem Debitor eine Freitextrechnungsvorlage zuweisen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu einem Debitor zuweisen. Für diese Aufgabe wird das USMF-Demounternehmen verwendet und die Erfassung ist für den Benutzer bestimmt, der für die Verwaltung und für die Verarbeitung von Debitorenrechnungen zuständig ist.
 
@@ -41,7 +41,7 @@ In dieser Aufgabe wird dargestellt, wie Sie eine Freitextrechnungsvorlage zu ein
 10. Geben Sie im Abschnitt **Ende der Serie** ein wiederkehrendes Enddatum ein.  
     * Wählen Sie eine der folgenden Optionen: Kein Enddatum – Es werden so lange Rechnungen generiert, bis die Vorlage aus dem Debitorenkonto entfernt wird.
     * Enddatum der Fakturierung – Wählen Sie diese Option aus, und geben Sie das letzte Datum ein, an dem eine Rechnung generiert werden kann.  
-11. Geben Sie im Feld **Maximaler kumulierter Betrag** den maximalen kumulierten Betrag ein, nach dem die Rechnungsgenerierung stoppt. Geben Sie den maximalen kumulativen Betrag ein, der unter Verwendung der ausgewählten Vorlage erreicht werden kann. Beispiel: Wenn Sie in dieses Feld den Wert 1.000,00 eingeben und monatlich eine Rechnung über jeweils 100,00 Einheiten generieren, wird nach der zehnten Rechnung keine weitere Rechnung mehr generiert.  
+11. Geben Sie im Feld **Maximaler kumulativer Betrag** den maximalen kumulativen Betrag ein, nach dem die Rechnungsgenerierung stoppt. Geben Sie den maximalen kumulativen Betrag ein, der unter Verwendung der ausgewählten Vorlage erreicht werden kann. Beispiel: Wenn Sie in dieses Feld den Wert 1.000,00 eingeben und monatlich eine Rechnung über jeweils 100,00 Einheiten generieren, wird nach der zehnten Rechnung keine weitere Rechnung mehr generiert.  
 12. Im Abschnitt **Serienrechnungen generieren mithilfe der Standardwerte aus** wählen Sie entweder die Freitextrechnungsvorlage oder das Debitorenkonto aus. Wählen Sie aus, ob die Standardwerte für Sprache, Buchungsprofil, Mehrwertsteuergruppe, Artikel-Mehrwertsteuergruppe, Listencode, Land/Region zur Lieferadresse, Währung, Zahlungsbedingungen, Zahlungsmethode, Zahlungsspezifikation, Zahlungsplan, Skonto, Finanzdimensionen und Giro-Überweisungsbeleg anhand der Freitext-Rechnungsvorlage oder des Debitorenkontos bestimmt werden.  
 13. Im Feld **Wiederholungsmuster** wählen Sie das Wiederholungsmuster aus.
     + Täglich – Wählen Sie diese Option aus, und geben Sie im Feld "Pro" die Anzahl von Tagen ein. Beispiel: Wenn Sie 15 eingeben, wird für diesen Debitor alle 15 Tage eine Rechnung generiert.

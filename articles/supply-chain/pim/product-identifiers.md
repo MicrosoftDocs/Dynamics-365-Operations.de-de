@@ -3,7 +3,7 @@ title: Produktbezeichner
 description: Dieses Thema enthält Informationen zu den unterschiedlichen Arten von Produktbezeichnern und erläutert, wie Sie Produktbezeichner in Ihren Produktdaten hinzufügen können.
 author: cvocph
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,14 +19,14 @@ ms.search.industry: ''
 ms.author: conradv
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: adac308a17ac51ed6da28d04d8c69b01f579aab7
-ms.sourcegitcommit: 7789ef6b0d337bee6aa05110c40e002f02eec71b
+ms.openlocfilehash: 0aa8baf5802ccdd9a502e2a7d291a76fc4afe932
+ms.sourcegitcommit: d91d96c98b31ae59bc82ec91efbb7da86ffb25fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095616"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172024"
 ---
-# <a name="product-identifiers"></a>Produktbezeichner 
+# <a name="product-identifiers"></a>Produktbezeichner
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Wenn Sie mit Produkten in der Produktion (BDE) oder in einem Lagerort in Microso
 
 ## <a name="unique-product-numberproduct-id"></a>Eindeutige Produktnummer/Produkt-ID
 
-In Dynamics 365 Supply Chain Management der primäre Bezeichner für ein Produkt ist die Produktnummer (d.h. die eindeutige Produkt-ID). Diese Nummer kann automatisch durch einen Nummernkreis generiert werden, oder sie kann manuell einem Produkt zugeordnet werden. Für Produktvarianten können die Zahlen durch die Produktnomenklaturvorlage definiert werden.
+In Dynamics 365 Supply Chain Management der primäre Bezeichner für ein Produkt ist die Produktnummer (d.h. die eindeutige Produkt-ID). Diese Nummer kann automatisch durch einen Nummernkreis generiert werden, oder manuell einem Produkt zugeordnet werden. Für Produktvarianten können die Zahlen durch die Produktnomenklaturvorlage definiert werden.
 
 In vielen Fällen wird die Produktnummer ursprünglich nicht in Dynamics 365 Supply Chain Management erstellt. Stattdessen ist es mit einem Produkt in einem Produktlebenszyklussystem (PLM) oder einem  Produktdatenverwaltungssystem (PDM) zugeordnet. In diesem Fall können Sie Datenentitäten verwenden, um die Produkte und Produktvarianten zu importieren. Supply Chain Management verwendet dann die Zahlen in allen Arbeitsgängen.
 
@@ -53,6 +53,9 @@ Darüber hinaus kann eine Produktvariante nicht durch eine Artikelnummer eindeut
 Viele Seiten haben weiterhin die Artikelnummer und Produktdimensionen als die primären Kennungen. Allerdings kann die Produktnummern für Suchen verwendet werden. Bei **Vertrieb und Marketing** &gt; **Einstellungen** &gt; **Suchen** &gt; **Suchparameter** öffnen, können Sie die Suche ändern, sodass sie Produktnummern anstelle der Artikelnummern als primäre Suchstrategie verwendet. Wenn Sie " **Aktivieren für Produktsuchsuche** auf die Option **Ja** festlegen, zeigt die Suche nicht nur die Produktmaster Produktvarianten an. Weitere Informationen finden Sie unter[Nach Produkten und Produktvarianten bei der Auftragserfassung suchen](search-products-product-variants.md).
 
 Darüber hinaus sind Sie in der Lage, auf der Produktnummer, den Produktnamen sowie die Beschreibung und die Kennungen der Produktdimension Produktvariante zu finden und zu filtern. Wenn Sie eine Variante auswählen, werden die zugehörige Artikelnummer und alle Produktdimensions-IDs ausgewählt. Daher können Sie leichter die richtige Variante finden und auswählen. Diese Einstellung wird ausdrücklich empfohlen, wenn Sie Produktvarianten und die eindeutige Produktnummer als primäre Bezeichner für Produkte verwenden. Die einzige Ausnahme ist möglicherweise die Modebranche, in der es bei Geschäftsprozessen oft erforderlich ist, dass der Master vor der Auswahl einer Variante ausgewählt wird. Sie sollten diese Option sorgfältig auswerten, bevor Sie das Nummerierungssystem implementieren.
+
+> [!NOTE]
+> Die Artikelnummer für ein Produkt kann nicht geändert werden, sobald eine oder mehrere Transaktionen für dieses Produkt vorhanden sind.
 
 ## <a name="product-name-and-description"></a>Geben Sie einen Namen und eine Beschreibung ein
 
@@ -123,7 +126,7 @@ Leider gibt es keine Standardfunktionalität, mit der Sie nach Produkten per ext
 | Produkte V2  | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Je nach den Einstellungen der Entität und des Nummernkreises für die Produktnummer, kann die Produktnummer zum Zeitpunkt des Importvorgangs automatisch erstellt werden. |
 | Produktvarianten | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung | Abhängig von der Produktnomenklaturvorlage kann die Produktnummer zum Zeitpunkt des Importvorgangs automatisch erstellt werden. Sie können jedoch eine beliebige eindeutige Produktnummer importieren und diese Produktnummer muss der Struktur der Produktnomenklaturvorlagen nicht folgen. |
 | Produktübersetzungen | Produktname, Produktbeschreibung | Produktname, Produktbeschreibung | Diese Entität überschreibt jede beliebige Sprache. Beachten Sie, dass der Name oder die Beschreibung der Sprache einer primären juristischen Person überschrieben wird, Name und Beschreibung des Produkts selbst wird geändert. |
-| Freigegebene Produkte V2 | Artikelnummer, Artikelsuchename Produktnummer| Artikelnummer, Artikelsuchename Produktnummer, Produktsuchename, Produktname | Die Entität kann eine Herausforderung sein, wenn Nummernkreise während der Erstellung neuer freigegebener Produkte verwendet werden. **Artikelnummer** Nummernsequenzen und **Produktnummer** Nummernsequenzen haben einen Einfluss. Allerdings ist der Nummernkreis **Artikelnummer** pro juristische Person, für die **Produktnummer** Nummernkreis global. Es wird daher nicht empfohlen, dass Sie den Nummernkreis **Artikelnummer** verwenden, wenn Sie neue freigegebene Produkte bereitstellen. Offensichtlich, wenn die Entität verwendet wird, um ein vorhandenes Produkt freizugeben, muss die Produktnummer in der Entität zugeordnet werden. Weitere Informationen finden Sie im Abschnitt "Produkte- und Artikelnummernsequenzen" in diesem Thema. |
+| Erstellung eines freigegebenen Produkts V2 | Artikelnummer, Artikelsuchename Produktnummer| Artikelnummer, Artikelsuchename Produktnummer, Produktsuchename, Produktname | Die Entität kann eine Herausforderung sein, wenn Nummernkreise während der Erstellung neuer freigegebener Produkte verwendet werden. **Artikelnummer** Nummernsequenzen und **Produktnummer** Nummernsequenzen haben einen Einfluss. Allerdings ist der Nummernkreis **Artikelnummer** pro juristische Person, für die **Produktnummer** Nummernkreis global. Es wird daher nicht empfohlen, dass Sie den Nummernkreis **Artikelnummer** verwenden, wenn Sie neue freigegebene Produkte bereitstellen. Offensichtlich, wenn die Entität verwendet wird, um ein vorhandenes Produkt freizugeben, muss die Produktnummer in der Entität zugeordnet werden. Weitere Informationen finden Sie im Abschnitt "Produkte- und Artikelnummernsequenzen" in diesem Thema. |
 | Freigegebene Produktvarianten | Artikelnummer, Produktdimensionen, Produktnummer | Produktnummer, Produktsuchename, Produktname, Produktbeschreibung, Produktdimensionen | Wie **Produktvarianten**-Entität kann diese Entität verwendet werden, um neue Produkte zu erstellen, die entweder der Produktnomenklaturvorlage folgen oder eigene Produktnummern für die Variante verwenden. |
 | Externe Artikelbeschreibungen für Debitoren | Debitoren-Artikelnummer, Debitorenartikelname, Debitorenbeschreibung, Debitorenkonto | Debitoren-Artikelnummer, Debitorenartikelname, Debitorenbeschreibung, Debitorenkonto | Eine Gruppe von Debitoren (beispielsweise Gesamtlayout, eine Käufervereinigung) kann in eine Gruppe zusammengefasst werden, indem die **Debitorengruppen der externen Artikelbeschreibung** verwendet. |
 | Externe Artikelbeschreibungen für Kreditoren | Kreditorenartikelnummer, Kreditorenartikelname, Kreditorenbeschreibung, Kreditorenkonto | Kreditorenartikelnummer, Kreditorenartikelname, Kreditorenbeschreibung, Kreditorenkonto | Eine Gruppe von Debitoren (beispielsweise Gesamtlayout, eine Käufervereinigung) kann in eine Gruppe zusammengefasst werden, indem die **Debitorengruppen der externen Artikelbeschreibung** verwendet. |
@@ -144,7 +147,7 @@ Sie können zwei unterschiedliche Nummernkreise festlegen.
 > [!NOTE]
 > Sie sollten die Artikelnummer nur als separaten Bezeichner verwenden, wenn Sie unterschiedliche juristische Personen aus verschiedenen Quellen migrieren, die verschiedene Nummerierungssysteme hatten. Sie sollten immer versuchen, einen Produktbezeichner zu verwenden, der für alle juristischen Personen eindeutig ist. Daher sollten Sie die Option **Manuell** auf **Ja** für den Nummernkreis **Artikelnummer** festlegen. Auf diese Weise folgt die Produktnummer der Artikelnummer bei der Erstellung. Wenn Supply Chain Management nicht das führende System für neue Produktnummern ist, sollten Sie die Option **Manuell** auf **Ja** für **Artikelnummer** und **Produktnummer** Nummernkreise festlegen.
 
-Wenn Sie die Entität **Freigegebenes Produkt V2** verwenden, um Produkte zu erstellen, können mehrere Einstellungen sich darauf auswirken, wie die Nummernkreise verwendet werden, um die Produktnummer und Artikelnummer zu erstellen:
+Wenn Sie die Entität **Freigegebene Produkterstellung V2** verwenden, um Produkte zu erstellen, können mehrere Einstellungen sich darauf auswirken, wie die Nummernkreise verwendet werden, um die Produktnummer und Artikelnummer zu erstellen:
 
 - Einstellungen des Nummernkreises **Produktnummer**
 - Einstellungen des Nummernkreises **Artikelnummer**
@@ -155,9 +158,9 @@ Die folgende Tabelle bietet eine Übersicht über die Ergebnisse des Imports und
 
 | Produktnummernkreis Nummersequenz | Artikelnummerennummernkreis | Modellnummer des Artikels zuordnen | Die Zuordnung der Produktnummer | Ergebnis des Entitätsimports | Ergebnis der manuellen Erstellung | Abschluss |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
-| Manuell = Null | Manuell = Null | Keine Zuordnung | Keine Zuordnung | Produktnummern verwenden den Nummernkreis. **Produktnummer** Artikelnummern verwenden den Nummernkreis. **Artikelnummer** | Produktnummern verwenden den Nummernkreis. **Produktnummer** Artikelnummern verwenden den Nummernkreis. **Artikelnummer** | Diese Einstellungen können verwendet werden, wenn Sie eine unterschiedliche Anzahl für Produkte und Artikel benötigen. Es wird jedoch nicht empfohlen, dass Sie unterschiedlich Zahlen für Artikel und Produkte verwenden. |
-| Manuell = Null | Handbuch = Ja | Automatisch generieren | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Artikelnummer** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Diese Einstellungen werden nicht empfohlen. Importieren und manuelle Erstellung funktionieren unterschiedlich. |
-| Manuell = Null | Handbuch = Ja | Keine Zuordnung | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Diese Einstellungen werden empfohlen, wenn Produkte eine konsistente automatische Nummerierung haben sollten, unabhängig davon, ob Import oder manuelle Erstellung verwendet wird. |
+| Manuell = Null | Manuell = Null | Keine Zuordnung | Keine Zuordnung | Produktnummern verwenden den Nummernkreis. **Produktnummer** Artikelnummern verwenden den Nummernkreis. **Artikelnummer** | Produktnummern verwenden den Nummernkreis. **Produktnummer** Artikelnummern verwenden den Nummernkreis. **Artikelnummer** | Bei dieser Konfiguration folgen die Produktnummern der Produktnummernfolge und die Artikelnummern der Artikelnummernfolge. Diese Konfiguration funktioniert jedoch nicht, wenn mehr als ein Element (Zeile) importiert werden soll. |
+| Manuell = Null | Handbuch = Ja | Automatisch generieren | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Artikelnummer** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern und Produktnummern folgen dem Produktnummernkreis. Dies ist der empfohlene Ansatz zum Importieren von Massenprodukten mit der Datenentität „Freigegebene Produkterstellung V2“. |
+| Manuell = Null | Handbuch = Ja | Keine Zuordnung | Keine Zuordnung | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern verwenden Produktnummern und **Produktnummern** den Nummernkreis. | Artikelnummern und Produktnummern verwenden den Produktnummernkreis. Diese Konfiguration funktioniert jedoch nicht, wenn mehr als ein Element (Zeile) importiert werden soll. |
 | Handbuch = Ja | Nicht zutreffend | Nicht zutreffend | Automatisch generieren | Sie erhalten die folgende Fehlermeldung: „Nummernkreis kann nicht erkannt werden.” | Einstellungen des Nummernkreises **Artikelnummer** | Diese Einstellung wird für den Import nicht unterstützt. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Produktentitätskennung (Export aller Produktkennungen)

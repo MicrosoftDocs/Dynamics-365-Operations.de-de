@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10e7018c79e54841d0729636b08ad475a94d20d5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 135cca434a1689bf22ee468894dcf8746071e7ca
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185956"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144696"
 ---
 # <a name="set-up-withholding-tax"></a>Quellensteuer einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie die Quellensteuer eingerichtet wird. Die *Quellensteuer* ist eine Steuer für Kreditoren, bei der keine Mehrwertsteuerbuchungen entstehen. Die Quellensteuer, die für Kreditorenzahlungen berechnet wird, ist eine Verbindlichkeit. Daher sind nur Bilanz- oder Verbindlichkeitskonten gültige Kontenarten für das Buchen der Quellensteuer. Diese Aufgabenanleitung veranschaulicht, wie die Quellensteuer eingerichtet wird.
 

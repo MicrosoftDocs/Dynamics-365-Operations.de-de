@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b578a664e9e3b6496e5665b2eefd9d75f86ecc3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 6ca5a2e2180235e51ef569fd93ad06867c3dddae
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837829"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149319"
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Eine Kanban-Regel mithilfe eines Mindestbestandsereignisses erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur konzentriert sich auf die Einstellungen, die benötigt werden, um eine Kanban-Regel unter Verwendung eines Mindestbestandsereignisses zu erstellen, um zu garantieren, dass ein spezifisches Produkt immer an einem spezifischen Lagerplatz verfügbar ist. Eine Kanban-Regel wird erstellt, um Material zum Lagerplatz zu übertragen, wenn das Bestandsniveau unterhalb von 200 Stücke fällt. Durch das Ausführen der Verarbeitung des bedarfsverursachenden Ereignisses werden die erforderlichen Kanbans erstellt. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USMF. Diese Aufgabe ist für den Fertigungsplaner oder den Wertstrom-Manager vorgesehen, da diese die Produktion eines neuen oder geänderten Produkts in einer schlanken Umgebung vorbereiten.
 

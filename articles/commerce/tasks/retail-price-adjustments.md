@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd6459416ca42530401aa439b1b8511657bd9b36
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 83498fa0a0432cb182106d6d273cb6117ed0b094
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022630"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141242"
 ---
 # <a name="retail-price-adjustments"></a> Einzelhandelspreisregulierungen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung einer Handelspreisregulierung. Eine Preisregulierung kann den Verkaufspreis eines Artikels direkt festlegen oder den Basisverkaufspreis oder Handelsvereinbarungsverkaufspreis ändern. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 

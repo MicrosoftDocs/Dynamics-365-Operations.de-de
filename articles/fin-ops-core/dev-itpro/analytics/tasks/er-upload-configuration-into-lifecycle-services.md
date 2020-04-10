@@ -16,23 +16,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 980ce00ae702ea0a3394efa15419e0f7b7dc2530
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5def757de8fb9d347f5fd0f828039dad5c989c19
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182208"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143284"
 ---
 # <a name="er-upload-a-configuration-into-lifecycle-services"></a>ER Upload einer Konfiguration nach Lifecycle Services
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" eine neue Konfiguration für "Elektronische Berichterstellung (ER)" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann.
 
-In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. und laden Sie in LCS hoch. Diese Schritte können in einem beliebigen Unternehmen ausgeführt werden, da ER-Konfigurationen unter Unternehmen geteilt werden. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen. Zugriff auf LCS ist auch für den Abschluss dieser Schritte erforderlich.
+In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen, Litware, Inc. und laden Sie in LCS hoch. Diese Schritte können in einem beliebigen Unternehmen ausgeführt werden, da ER-Konfigurationen unter Unternehmen geteilt werden. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen. Zugriff auf LCS ist auch für den Abschluss dieser Schritte erforderlich.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-2. Wählen Sie „Litware, inc.” aus un lege es als aktiv fest.
+2. Wählen Sie „Litware, inc.“ aus un lege es als aktiv fest.
 3. Klicken Sie auf "Konfigurationen".
 
 ## <a name="create-a-new-data-model-configuration"></a>Neue Datenmodellkonfiguration erstellen
@@ -79,19 +79,19 @@ In diesem Beispiel erstellen Sie eine Konfiguration für das Beispielunternehmen
 2. Wählen Sie "Beispielmodellkonfiguration" in der Struktur aus.
     * Wählen Sie eine erstellte Konfiguration aus, die bereits abgeschlossen wurden.  
 3. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Version der ausgewählten Konfiguration mit dem Status "Abgeschlossen" aus.  
+    * Wählen Sie die Version der ausgewählten Konfiguration mit dem Status „Abgeschlossen“ aus.  
 4. Klicken Sie auf "Status ändern".
 5. Klicken Sie auf "Freigeben".
-    * Der Konfigurationsstatus ändert sich von "Abgeschlossen" zu "Freigegeben", wenn er in LCS veröffentlicht wird.  
+    * Der Konfigurationsstatus ändert sich von „Abgeschlossen“ zu „Freigegeben“, wenn er in LCS veröffentlicht wird.  
 6. Klicken Sie auf "OK".
 7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
     * Wählen Sie die Konfigurationsversion mit dem Status "Freigegeben" aus.  
-    * Beachten Sie, dass sich der Status der ausgewählten Version von "Abgeschlossen" zu "Freigegeben" geändert hat.  
+    * Beachten Sie, dass sich der Status der ausgewählten Version von „Abgeschlossen“ zu „Freigegeben“ geändert hat.  
 8. Schließen Sie die Seite.
 9. Klicken Sie auf Repositorys.
     * Dies ermöglicht Ihnen, die Liste der Repositorys für Litware, Inc. als Konfigurationsanbieter zu öffnen.  
 10. Klicken Sie auf "Öffnen".
     * Wählen Sie das LCS-Repository aus und öffnen Sie es.  
     * Beachten Sie, dass die ausgewählte Variante als Anlage des ausgewählten LCS-Projekts angezeigt wird.  
-    * Öffnen Sie LCS mithilfe von https://lcs.dynamics.com. Öffnen Sie ein Projekt, das zuvor für Repositoryregistrierung verwendet wurde, öffnen zu die "Anlagenbibliothek" dieses Projekts und erweitern Sie den Inhalt des Anlagentyps "GER-Konfiguration" – die hochgeladene ER-Konfiguration wird verfügbar sein. Beachten Sie, dass die hochgeladene LCS-Konfiguration zu einer anderen Instance werden kann, wenn Anbieter Zugriff auf dieses LCS-Projekt haben.  
+    * Öffnen Sie LCS mithilfe von https://lcs.dynamics.com. Öffnen Sie ein Projekt, das zuvor für Repositoryregistrierung verwendet wurde, öffnen zu die „Anlagenbibliothek“ dieses Projekts und erweitern Sie den Inhalt des Anlagentyps „GER-Konfiguration“ – die hochgeladene ER-Konfiguration wird verfügbar sein. Beachten Sie, dass die hochgeladene LCS-Konfiguration zu einer anderen Instance werden kann, wenn Anbieter Zugriff auf dieses LCS-Projekt haben.  
 

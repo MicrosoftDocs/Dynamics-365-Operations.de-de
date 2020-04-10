@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 48a327fc5033a7478d2ae5e401ffdce6e4546ad0
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 33d3f3773fdba4b704deeca48874b10958e2ea4e
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042872"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143314"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Erforderliche Konfigurationen zum Import von Daten aus einer externen Datei estellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator“ oder „Entwickler für elektronische Berichterstellung“ Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden erst abschließen, "ER bieten einen Konfigurationsanbieter" erstellen und als aktiv markieren, ihn. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien mithilfe der Links aus dem Elektronischen Berichterstellungsüberblick-Thema herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+In den folgenden Schritten wird erläutert, wie ein Benutzer in der Rolle „Systemadministrator“ oder „Entwickler für elektronische Berichterstellung“ Konfigurationen für elektronische Berichterstellung (EB) entwerfen kann, um Daten in die Anwendung aus einer externen Datei zu importieren. In diesem Beispiel erstellen Sie erforderliche ER-Konfigurationen für das Beispielunternehmen, Litware, Inc., um diesen Aufgabenleitfaden abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden „ER bieten einen Konfigurationsanbieter erstellen und als aktiv markieren“ erst abschließen. Die Schritte können abgeschlossen werden, indem Sie den USMF-Datensatz verwenden. Sie müssen auch die folgenden Dateien mithilfe der Links aus dem Elektronischen Berichterstellungsüberblick-Thema herunterladen und lokal speichern (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
 
 ER bietet Geschäftskunden die Möglichkeit, den Prozess des Imports externer Datendateien in Tabellen, entweder im .XML- oder .TXT-Format, zu konfigurieren. Zunächst muss eine Kurzfassungsdatenmodell- sowie ein ER-Datenmodellkonfiguration entworfen werden, um die Daten darzustellen, die Sie importieren. Danach müssen Sie die Struktur der Datei, die Sie importieren und die Methode, die Sie verwenden, um die Daten aus der Datei zum Kurzfassungsdatenmodell zu übertragen, definieren. Die ER-Formatkonfiguration, die dem entworfenen Datenmodell zugeordnet ist, muss für das Kurzfassungsatenmodell erstellt werden. Anschließend muss die Datenmodellkonfiguration mit einer Zuordnung erweitert werden, die beschreibt, wie die importierten Daten permanent als Kurzfassungsdatenmodell sind und wie sie verwendet werden, um Tabellen zu aktualisieren.  Der ER-Datenmodellkonfiguration muss eine neue Modellzuordnung angefügt werden, die die Bindung des Datenmodells an die Ziele der Anwendung beschreibt.  
 
@@ -36,11 +36,11 @@ Das folgende Szenario zeigt die ER-Datenimportfunktionen. Hierzu zählen Kredito
 ## <a name="add-a-new-er-model-configuration"></a>Neue ER-Modellkonfiguration hinzufügen
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
 
-    Überprüfen Sie den Konfigurationsanbieter für Beispielunternehmen Litware, Inc. ist verfügbar und markiert als aktiv. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
+    Überprüfen Sie den Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.“ ist verfügbar und markiert als aktiv. Sollten Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.   
 
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
 
-    Statt ein neuen Modells zu erstellen, um den Datenimport zu unterstützen, laden Sie die Datei 1099model.xml, die Sie zuvor heruntergeladen haben. Diese Datei enthält ein benutzerdefiniertes Datenmodell von Kreditorenbuchungen. Dieses Datenmodell ist den Datenenkomponenten zugeordnet, die in der AOT-Datenentität sind.   
+    Statt ein neuen Modells zu erstellen, um den Datenimport zu unterstützen, laden Sie die Datei 1099model.xml, die Sie zuvor heruntergeladen haben. Diese Datei enthält ein benutzerdefiniertes Datenmodell der Kreditorenbuchungen. Dieses Datenmodell ist den Datenenkomponenten zugeordnet, die in der AOT-Datenentität sind.   
 
 3. Klicken Sie auf „Austauschen”.
 4. Klicken Sie auf „Aus XML-Datei laden”.
@@ -84,12 +84,12 @@ Die Schritte in dieser Unteraufgabe zeigen Ihnen, wie eine neue Formatkonfigurat
 3. Klicken Sie „Erweitern/reduzieren”.
 4. Klicken Sie „Erweitern/reduzieren”.
 
-    Das entworfene Format stellt die erwartete Struktur der externen Datei dar. Diese Datei muss im XML-Format sein und das Ausgleichsstammelement haben. Jede Kreditorenbuchung wird vom Buchungselement dargestellt, das mit einer Null-zu-Viele-Multiplizität definiert ist. Dies bedeutet, dass die eingehende Datei möglicherweise irgendeine Anzahl zwischen null und mehreren Buchungen enthält. Geschachtelte Elemente des Elements „Buchung” stellen die Attribute einer einzelnen Buchung dar. Beachten Sie, dass alle Attribute, außer Land, als erforderlich markiert werden. Das bedeutet, dass es erforderlich ist, dass sie in der importierenden Datei vorhanden sind.   
+    Das entworfene Format stellt die erwartete Struktur der externen Datei dar. Diese Datei muss im XML-Format sein und das Ausgleichsstammelement haben. Jede Kreditorenbuchung wird vom Buchungselement dargestellt, das mit einer Null-zu-Viele-Multiplizität definiert ist. Dies bedeutet, dass die eingehende Datei möglicherweise irgendeine Anzahl zwischen null und mehreren Buchungen enthält. Geschachtelte Elemente des Elements „Buchung“ stellen die Attribute einer einzelnen Buchung dar. Beachten Sie, dass alle Attribute, außer Land, als erforderlich markiert werden. Das bedeutet, dass es erforderlich ist, dass sie in der importierenden Datei vorhanden sind.   
 
 ## <a name="review-the-settings-of-the-format-mapping-to-the-data-model"></a>Die Einstellungen der Formatzuordnung zum Datenmodell überprüfen
 1. Klicken Sie auf „Format zu Modell zuordnen”.
 
-    Die Zuordnung „Für Buchungen importierender Kreditoren” enthält die Datenübertragungsregeln von der eingehenden XML-Datei an den ausgewählten Teil des benutzerdefinierten Datenmodells, das definiert wird, indem die 1099-MISC-Definition ausgewählt wird.  
+    Die Zuordnung „Zum Importieren von Kreditorenbuchungen“ enthält die Datenübertragungsregeln von der eingehenden XML-Datei an den ausgewählten Teil des benutzerdefinierten Datenmodells, das definiert wird, indem die 1099-MISC-Definition ausgewählt wird.  
 
 2. Klicken Sie auf Designer.
 3. Schalten Sie „Details anzeigen” ein.
@@ -104,10 +104,10 @@ Die Schritte in dieser Unteraufgabe zeigen Ihnen, wie eine neue Formatkonfigurat
 9. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Record list\country: XML Element 0..1 (country): Record”.
 10. Erweitern Sie in der Struktur „format: Record\*settlement: XML Element 1..1 (settlement): Record\transaction: XML Element 0..* (transaction): Datesatzliste\*vendor: XML Element 1..1 (vendor): Record”.
 
-    Beachten Sie, dass die Präsentation von erforderlichen und optionalen Formatelementen in der vordefinierten Datenquellenkomponente „Format” anders ist.  
+    Beachten Sie, dass die Präsentation von erforderlichen und optionalen Formatelementen in der vordefinierten Datenquellenkomponente „Format“ anders ist.  
 11. Erweitern Sie in der Struktur „Transactions: Record list= format.settlement.'$enumerated”.
 
-    Beachten Sie, dass die Elemente des Formats, das die Struktur der importierten Datei definiert an die Elemente des benutzerdefinierten Datenmodells gebunden sind. Basierend auf diesen Bindungen wird der Inhalt der importierten XML-Datei zur Laufzeit in das vorhandene Datenmodell gespeichert. Beachten Sie die Bindung des Länderelements. Bei jedem Buchungselement in der eingehenden Datei, die kein solches Element hat, wird der Standardländercode „USA” im Datenmodell aufgefüllt.  
+    Beachten Sie, dass die Elemente des Formats, das die Struktur der importierten Datei definiert an die Elemente des benutzerdefinierten Datenmodells gebunden sind. Basierend auf diesen Bindungen wird der Inhalt der importierten XML-Datei zur Laufzeit in das vorhandene Datenmodell gespeichert. Beachten Sie die Bindung des Länderelements. Bei jedem Buchungselement in der eingehenden Datei, die kein solches Element hat, wird der Standardländercode „USA“ im Datenmodell aufgefüllt.  
 
 12. Klicken Sie auf die Registerkarte „Überprüfungen”.
 
@@ -148,7 +148,7 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 8. Klicken Sie auf "Bearbeiten".
 9. Klicken Sie auf Formel bearbeiten.
 
-    Wenn mindestens eine Überprüfung für eine einzelne importierte Buchung fehlschlägt, wird diese Buchung durch das Datenquellenattribut „$failed” als fehlgeschlagen markiert.  
+    Wenn mindestens eine Überprüfung für eine einzelne importierte Buchung fehlschlägt, wird diese Buchung durch das Datenquellenattribut „$failed“ als fehlgeschlagen markiert.  
 
 10. Schließen Sie die Seite.
 11. Klicken Sie auf "Abbrechen".
@@ -235,7 +235,7 @@ Führen Sie diese Formatzuordnung für Testzwecke aus. Verwenden Sie die Datei 1
 17. Klicken Sie auf "Speichern".
 18. Schließen Sie die Seite.
 19. Schließen Sie die Seite.
-20. Klicken Sie auf "Bearbeiten".
+20. Klicken Sie auf Bearbeiten.
 
     Wenn Sie den Hotfix „KB 4012871 Unterstützung von GER-Modellzuordnungen in getrennten Konfigurationen mit der Fähigkeit, verschiedene Arten von Voraussetzungen zur Bereitstellung in verschiedenen Versionen von Dynamics 365 Finance“ (https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871) installiert haben, führen Sie den nächsten Schritt „Kennung „Standard für Modellzuordnung“ einschalten“ für die eingegebene Formatkonfiguration aus. Überspringen Sie anderenfalls den nächsten Schritt.  
 
