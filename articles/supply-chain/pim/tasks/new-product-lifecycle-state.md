@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e3293caa905eacaebc757a57ec5b104629b6a8d
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 8557a196a3998d57baf3db63c05fc3945d52e8f4
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1567675"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149886"
 ---
-# <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="275fc-103">Erstellen eines neuen Produktlebenszyklus-Status</span><span class="sxs-lookup"><span data-stu-id="275fc-103">Create a new product lifecycle state</span></span>
+# <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="2ad58-103">Erstellen eines neuen Produktlebenszyklus-Status</span><span class="sxs-lookup"><span data-stu-id="2ad58-103">Create a new product lifecycle state</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="275fc-104">Diese Prozedur zeigt, wie ein neuer Produktlebenszyklus-Status erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="275fc-104">This procedure shows how to create a new product lifecycle state.</span></span> <span data-ttu-id="275fc-105">Ein Produktlebenszyklusstatus dokumentiert den Lebenszyklusstatus eines freigegebenen Produkts oder Produktvariante.</span><span class="sxs-lookup"><span data-stu-id="275fc-105">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="275fc-106">Produktlebenszyklusstatus werden vom Benutzer, in der Regel ein Produktmanager oder ein Produktmasterdatenmanager, definiert.</span><span class="sxs-lookup"><span data-stu-id="275fc-106">Product lifecycle states are defined by the user, typically a product manager, or a product master data manager.</span></span> <span data-ttu-id="275fc-107">Bestimmte Geschäftsprozesse, wie beispielsweise Produktprogrammplan, können von einem bestimmten Lebenszyklusstatus betroffen sein.</span><span class="sxs-lookup"><span data-stu-id="275fc-107">Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.</span></span>
+<span data-ttu-id="2ad58-104">Diese Prozedur zeigt, wie ein neuer Produktlebenszyklus-Status erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="2ad58-104">This procedure shows how to create a new product lifecycle state.</span></span> <span data-ttu-id="2ad58-105">Ein Produktlebenszyklusstatus dokumentiert den Lebenszyklusstatus eines freigegebenen Produkts oder Produktvariante.</span><span class="sxs-lookup"><span data-stu-id="2ad58-105">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="2ad58-106">Produktlebenszyklusstatus werden vom Benutzer, in der Regel ein Produktmanager oder ein Produktmasterdatenmanager, definiert.</span><span class="sxs-lookup"><span data-stu-id="2ad58-106">Product lifecycle states are defined by the user, typically a product manager, or a product master data manager.</span></span> <span data-ttu-id="2ad58-107">Bestimmte Geschäftsprozesse, wie beispielsweise Produktprogrammplan, können von einem bestimmten Lebenszyklusstatus betroffen sein.</span><span class="sxs-lookup"><span data-stu-id="2ad58-107">Specific business processes, for example, Master planning, can be affected by a specific lifecycle state.</span></span>
 
 
-## <a name="create-a-product-lifecycle-state"></a><span data-ttu-id="275fc-108">Erstellen eines Produktlebenszyklus-Status</span><span class="sxs-lookup"><span data-stu-id="275fc-108">Create a product lifecycle state</span></span>
-1. <span data-ttu-id="275fc-109">Wechseln Sie zu Produktinformationsverwaltung > Einstellungen > Produktlebenszyklus-Status.</span><span class="sxs-lookup"><span data-stu-id="275fc-109">Go to Product information management > Setup > Product lifecycle state.</span></span>
-2. <span data-ttu-id="275fc-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="275fc-110">Click New.</span></span>
-3. <span data-ttu-id="275fc-111">Geben Sie im Feld „Status” einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="275fc-111">In the State field, type a value.</span></span>
-4. <span data-ttu-id="275fc-112">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="275fc-112">In the Description field, type a value.</span></span>
+## <a name="create-a-product-lifecycle-state"></a><span data-ttu-id="2ad58-108">Erstellen eines Produktlebenszyklus-Status</span><span class="sxs-lookup"><span data-stu-id="2ad58-108">Create a product lifecycle state</span></span>
+1. <span data-ttu-id="2ad58-109">Wechseln Sie zu Produktinformationsverwaltung > Einstellungen > Produktlebenszyklus-Status.</span><span class="sxs-lookup"><span data-stu-id="2ad58-109">Go to Product information management > Setup > Product lifecycle state.</span></span>
+2. <span data-ttu-id="2ad58-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="2ad58-110">Click New.</span></span>
+3. <span data-ttu-id="2ad58-111">Geben Sie im Feld „Status” einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="2ad58-111">In the State field, type a value.</span></span>
+4. <span data-ttu-id="2ad58-112">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="2ad58-112">In the Description field, type a value.</span></span>
 

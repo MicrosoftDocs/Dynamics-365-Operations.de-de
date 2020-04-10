@@ -1,6 +1,6 @@
 ---
 title: Wechsel zwischen Kreditorendesigns
-description: In diesem Thema wird der Wechsel zwischen der Integration von Kreditorendaten zwischen Finance and Operations Apps und Common Data Service beschrieben.
+description: In diesem Thema wird der Wechsel der Integration von Kreditorendaten zwischen Finance and Operations Apps und Common Data Service beschrieben.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 09/20/2019
@@ -19,49 +19,61 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 587a9b98f28b11e303aff4b59e9726f220d956eb
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: ffd7a4c01810578b4abb6942aeff76e5147fafa9
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019793"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173038"
 ---
-# <a name="switch-between-vendor-designs"></a><span data-ttu-id="91c31-103">Wechsel zwischen Kreditorendesigns</span><span class="sxs-lookup"><span data-stu-id="91c31-103">Switch between vendor designs</span></span>
+# <a name="switch-between-vendor-designs"></a><span data-ttu-id="3ea7a-103">Wechsel zwischen Kreditorendesigns</span><span class="sxs-lookup"><span data-stu-id="3ea7a-103">Switch between vendor designs</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-## <a name="vendor-data-flow"></a><span data-ttu-id="91c31-104">Kreditorendatenfluss</span><span class="sxs-lookup"><span data-stu-id="91c31-104">Vendor data flow</span></span> 
 
-<span data-ttu-id="91c31-105">Wenn Sie andere Dynamics 365-Apps für das Lieferanten-Mastering verwenden und die Lieferanteninformationen von Kunden isolieren möchten, verwenden Sie dieses Basislieferantendesign.</span><span class="sxs-lookup"><span data-stu-id="91c31-105">If you use other Dynamics 365 apps for vendor mastering and you want to isolate vendor information from customers, use this basic vendor design.</span></span>  
+## <a name="vendor-data-flow"></a><span data-ttu-id="3ea7a-104">Kreditorendatenfluss</span><span class="sxs-lookup"><span data-stu-id="3ea7a-104">Vendor data flow</span></span> 
 
-![Grundlegender Lieferantenfluss](media/dual-write-vendor-data-flow.png)
- 
-<span data-ttu-id="91c31-107">Wenn Sie andere Dynamics 365-Apps für das Lieferanten-Mastering verwenden und weiterhin die **Kontoentität** zum Speichern der Lieferanteninformationen verwenden möchten, verwenden Sie dieses erweiterte Lieferantendesign.</span><span class="sxs-lookup"><span data-stu-id="91c31-107">If you use other Dynamics 365 apps for vendor mastering and you want to continue to use the **Account** entity for storing vendor information, use this extended vendor design.</span></span> <span data-ttu-id="91c31-108">In diesem Entwurf werden erweiterte Lieferanteninformationen wie der Gesperrt-Status des Lieferanten und das Lieferantenprofil in der Entität **Lieferanten** in Common Data Service gespeichert.</span><span class="sxs-lookup"><span data-stu-id="91c31-108">In this design, extended vendor information like vendor on-hold status and vendor profile is stored in the **vendors** entity in Common Data Service.</span></span> 
+<span data-ttu-id="3ea7a-105">Wenn Sie die Entität **Konto** zum Speichern von Kreditoren vom Typ **Organisation** und die Entität **Kontakt** zum Speichern von Kreditoren vom Typ **Person** verwenden, konfigurieren Sie die folgenden Workflows.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-105">If you choose to use the **Account** entity to store vendors of the **Organization** type and the **Contact** entity to store vendors of the **Person** type, configure the following workflows.</span></span> <span data-ttu-id="3ea7a-106">Andernfalls ist diese Konfiguration nicht erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-106">Otherwise, this configuration isn't required.</span></span>
 
-![Erweiterter Lieferantenfluss](media/dual-write-vendor-detail.jpg)
- 
-<span data-ttu-id="91c31-110">Führen Sie die unten stehenden Schritte aus, um das erweiterte Lieferantendesign zu verwenden:</span><span class="sxs-lookup"><span data-stu-id="91c31-110">Follow the below steps to use the extended vendor design:</span></span> 
- 
-1. <span data-ttu-id="91c31-111">Das **SupplyChainCommon**-Lösungspaket enthält die Workflowprozessvorlagen wie auf dem folgenden Bild gezeigt.</span><span class="sxs-lookup"><span data-stu-id="91c31-111">The **SupplyChainCommon** solution package contains the workflow process templates as shown in the following image.</span></span>
-    > [!div class="mx-imgBorder"]
-    > <span data-ttu-id="91c31-112">![Workflowprozessvorlagen](media/dual-write-switch-3.png)</span><span class="sxs-lookup"><span data-stu-id="91c31-112">![Workflow process templates](media/dual-write-switch-3.png)</span></span>
-2. <span data-ttu-id="91c31-113">Erstellen Sie neue Workflowprozesse mithilfe der Workflowprozessvorlagen:</span><span class="sxs-lookup"><span data-stu-id="91c31-113">Create new workflow processes using the workflow process templates:</span></span> 
-    1. <span data-ttu-id="91c31-114">Erstellen Sie einen neuen Workflowprozess für die Entität **Lieferant** mithilfe der Workflowprozessvorlage **Lieferanten in der Kontoentität erstellen** und klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="91c31-114">Create a new workflow process for the **Vendor** entity using the **Create Vendors in Account Entity** workflow process template and click **OK**.</span></span> <span data-ttu-id="91c31-115">Dieser Workflow verarbeitet das Lieferantenerstellungsszenario für die Entität **Konto**.</span><span class="sxs-lookup"><span data-stu-id="91c31-115">This workflow handles the vendor creation scenario for the **Account** entity.</span></span>
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="91c31-116">![Lieferanten in der Kontoentität erstellen](media/dual-write-switch-4.png)</span><span class="sxs-lookup"><span data-stu-id="91c31-116">![Create Vendors in Account Entity](media/dual-write-switch-4.png)</span></span>
-    2. <span data-ttu-id="91c31-117">Erstellen Sie einen neuen Workflowprozess für die Entität **Lieferant** mithilfe der Workflowprozessvorlage **Kontoentität aktualisieren** und klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="91c31-117">Create a new workflow process for the **Vendor** entity using the **Update Accounts Entity** workflow process template and click **OK**.</span></span> <span data-ttu-id="91c31-118">Dieser Workflow verarbeitet das Lieferantenaktualisierungsszenario für die Entität **Konto**.</span><span class="sxs-lookup"><span data-stu-id="91c31-118">This workflow handles the vendor update scenario for the **Account** entity.</span></span> 
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="91c31-119">![Kontoentität aktualisieren](media/dual-write-switch-5.png)</span><span class="sxs-lookup"><span data-stu-id="91c31-119">![Update Accounts Entity](media/dual-write-switch-5.png)</span></span>
-    3. <span data-ttu-id="91c31-120">Erstellen Sie neue Workflowprozesse aus den Vorlagen, die in der Entität **Konten** erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="91c31-120">Create new workflow processes from the templates created on the **Accounts** entity.</span></span> 
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="91c31-121">![Lieferanten in der Kontoentität erstellen](media/dual-write-switch-6.png)
-        > </span><span class="sxs-lookup"><span data-stu-id="91c31-121">![Create vendors in vendors entity](media/dual-write-switch-6.png)
-        > </span></span>[!div class="mx-imgBorder"]
-<span data-ttu-id="91c31-122">![Lieferantenentität aktualisieren](media/dual-write-switch-7.png)</span><span class="sxs-lookup"><span data-stu-id="91c31-122">![Update vendors entity](media/dual-write-switch-7.png)</span></span>
-    4. <span data-ttu-id="91c31-123">Sie können die Workflow als Echtzeit- oder Hintergrundworkflows je nach Ihren Anforderungen konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="91c31-123">You can configure the workflows as real-time or background workflows based on your requirements.</span></span> 
-        > [!div class="mx-imgBorder"]
-        > <span data-ttu-id="91c31-124">![In einen Hintergrundworkflow konvertieren](media/dual-write-switch-8.png)</span><span class="sxs-lookup"><span data-stu-id="91c31-124">![Convert to a background workflow](media/dual-write-switch-8.png)</span></span>
-    5. <span data-ttu-id="91c31-125">Aktivieren Sie die Workflows, die Sie in den Entitäten **Konto** und **Kreditor** erstellt haben, um mit der Verwendung der Entität **Konto** für das Speichern von Kreditoreninformationen zu starten.</span><span class="sxs-lookup"><span data-stu-id="91c31-125">Activate the workflows that you created on the **Account** and **Vendor** entities to start using the **Account** entity for storing vendor information.</span></span> 
- 
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-organization-type"></a><span data-ttu-id="3ea7a-107">Erweiterte Kreditorendesign für Kreditoren vom Typ „Organisation“ verwenden</span><span class="sxs-lookup"><span data-stu-id="3ea7a-107">Use the extended vendor design for vendors of the Organization type</span></span>
+
+<span data-ttu-id="3ea7a-108">Das Lösungspaket **Dynamics365FinanceExtended** enthält die folgenden Workflow-Prozessvorlagen.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-108">The **Dynamics365FinanceExtended** solution package contains the following workflow process templates.</span></span> <span data-ttu-id="3ea7a-109">Sie erstellen für jede Vorlage einen Workflow.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-109">You will create a workflow for each template.</span></span>
+
++ <span data-ttu-id="3ea7a-110">Lieferanten in der Kontoentität erstellen</span><span class="sxs-lookup"><span data-stu-id="3ea7a-110">Create Vendors in Accounts Entity</span></span>
++ <span data-ttu-id="3ea7a-111">Lieferanten in der Lieferantenentität erstellen</span><span class="sxs-lookup"><span data-stu-id="3ea7a-111">Create Vendors in Vendors Entity</span></span>
++ <span data-ttu-id="3ea7a-112">Lieferanten in der Kontoentität aktualisieren</span><span class="sxs-lookup"><span data-stu-id="3ea7a-112">Update Vendors in Accounts Entity</span></span>
++ <span data-ttu-id="3ea7a-113">Lieferanten in der Lieferantenentität aktualisieren</span><span class="sxs-lookup"><span data-stu-id="3ea7a-113">Update Vendors in Vendors Entity</span></span>
+
+<span data-ttu-id="3ea7a-114">Um neue Workflowprozesse mithilfe der Workflowprozessvorlagen zu erstellen, befolgen Sie diese Schritte:</span><span class="sxs-lookup"><span data-stu-id="3ea7a-114">To create new workflow processes by using the workflow process templates, follow these steps.</span></span>
+
+1. <span data-ttu-id="3ea7a-115">Erstellen Sie einen Workflowprozess für die Entität **Lieferant** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Kontoentität erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-115">Create a workflow process for the **Vendor** entity, and select the **Create Vendors in Accounts Entity** workflow process template.</span></span> <span data-ttu-id="3ea7a-116">Wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-116">Then select **OK**.</span></span> <span data-ttu-id="3ea7a-117">Dieser Workflow verarbeitet das Lieferantenerstellungsszenario für die Entität **Konto**.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-117">This workflow handles the vendor creation scenario for the **Account** entity.</span></span>
+
+    ![Workflowprozess „Lieferanten in der Kontoentität erstellen“](media/create_process.png)
+
+2. <span data-ttu-id="3ea7a-119">Erstellen Sie einen Workflowprozess für die Entität **Lieferant** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Kontoentität aktualisieren** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-119">Create a workflow process for the **Vendor** entity, and select the **Update Vendors in Accounts Entity** workflow process template.</span></span> <span data-ttu-id="3ea7a-120">Wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-120">Then select **OK**.</span></span> <span data-ttu-id="3ea7a-121">Dieser Workflow verarbeitet das Lieferantenaktualisierungsszenario für die Entität **Konto**.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-121">This workflow handles the vendor update scenario for the **Account** entity.</span></span>
+3. <span data-ttu-id="3ea7a-122">Erstellen Sie einen Workflowprozess für die Entität **Konto** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Lieferantenentität erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-122">Create a workflow process for the **Account** entity, and select the **Create Vendors in Vendors Entity** workflow process template.</span></span>
+4. <span data-ttu-id="3ea7a-123">Erstellen Sie einen Workflowprozess für die Entität **Konto** und wählen Sie die Workflowprozessvorlage **Lieferanten in der Lieferantenentität aktualisieren** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-123">Create a workflow process for the **Account** entity, and select the **Update Vendors in Vendors Entity** workflow process template.</span></span>
+5. <span data-ttu-id="3ea7a-124">Sie können die Workflow entweder als Echtzeit- oder Hintergrundworkflows je nach Ihren Anforderungen konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-124">You can configure the workflows as either real-time workflows or background workflows, depending on your requirements.</span></span> <span data-ttu-id="3ea7a-125">Wählen Sie **In einen Hintergrundworkflow konvertieren** aus, um einen Workflow als Hintergrundworkflow zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-125">To configure a workflow as a background workflow, select **Convert to a background workflow**.</span></span>
+
+    ![Schaltfläche „In einen Hintergrundworkflow konvertieren“](media/background_workflow.png)
+
+6. <span data-ttu-id="3ea7a-127">Aktivieren Sie die Workflows, die Sie für die Entitäten **Konto** und **Lieferant** erstellt haben, um die Entität **Konto** für das Speichern von Informationen vom Typ **Organisation** zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-127">Activate the workflows that you created for the **Account** and **Vendor** entities to start to use the **Account** entity to store information for vendors of the **Organization** type.</span></span>
+
+## <a name="use-the-extended-vendor-design-for-vendors-of-the-person-type"></a><span data-ttu-id="3ea7a-128">Erweiterte Kreditorendesign für Kreditoren vom Typ „Person“ verwenden</span><span class="sxs-lookup"><span data-stu-id="3ea7a-128">Use the extended vendor design for vendors of the Person type</span></span>
+
+<span data-ttu-id="3ea7a-129">Das Lösungspaket **Dynamics365FinanceExtended** enthält die folgenden Workflow-Prozessvorlagen.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-129">The **Dynamics365FinanceExtended** solution package contains the following workflow process templates.</span></span> <span data-ttu-id="3ea7a-130">Sie erstellen für jede Vorlage einen Workflow.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-130">You will create a workflow for each template.</span></span>
+
++ <span data-ttu-id="3ea7a-131">Lieferanten vom Typ „Person“ in der Lieferantenentität erstellen</span><span class="sxs-lookup"><span data-stu-id="3ea7a-131">Create Vendors of type Person in Vendors Entity</span></span>
++ <span data-ttu-id="3ea7a-132">Lieferanten vom Typ „Person“ in der Kontaktentität zu erstellen</span><span class="sxs-lookup"><span data-stu-id="3ea7a-132">Create Vendors of type Person in Contacts Entity</span></span>
++ <span data-ttu-id="3ea7a-133">Lieferanten vom Typ „Person“ in der Kontaktentität aktualisieren</span><span class="sxs-lookup"><span data-stu-id="3ea7a-133">Update Vendors of type Person in Contacts Entity</span></span>
++ <span data-ttu-id="3ea7a-134">Lieferanten vom Typ „Person“ in der Lieferantenentität aktualisieren</span><span class="sxs-lookup"><span data-stu-id="3ea7a-134">Update Vendors of type Person in Vendors Entity</span></span>
+
+<span data-ttu-id="3ea7a-135">Um neue Workflowprozesse mithilfe der Workflowprozessvorlagen zu erstellen, befolgen Sie diese Schritte:</span><span class="sxs-lookup"><span data-stu-id="3ea7a-135">To create new workflow processes by using the workflow process templates, follow these steps.</span></span>
+
+1. <span data-ttu-id="3ea7a-136">Erstellen Sie einen Workflowprozess für die Entität **Lieferant** und wählen Sie die Workflowprozessvorlage **Lieferanten vom Typ „Person“ in der Lieferantenentität erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-136">Create a workflow process for the **Vendor** entity, and select the **Create Vendors of type Person in Contacts Entity** workflow process template.</span></span> <span data-ttu-id="3ea7a-137">Wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-137">Then select **OK**.</span></span> <span data-ttu-id="3ea7a-138">Dieser Workflow verarbeitet das Lieferantenerstellungsszenario für die Entität **Kontakt**.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-138">This workflow handles the vendor creation scenario for the **Contact** entity.</span></span>
+2. <span data-ttu-id="3ea7a-139">Erstellen Sie einen Workflowprozess für die Entität **Lieferant** und wählen Sie die Workflowprozessvorlage **Lieferanten vom Typ „Person“ in der Lieferantenentität aktualisieren** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-139">Create a workflow process for the **Vendor** entity, and select the **Update Vendors of type Person in Contacts Entity** workflow process template.</span></span> <span data-ttu-id="3ea7a-140">Wählen Sie dann **OK** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-140">Then select **OK**.</span></span> <span data-ttu-id="3ea7a-141">Dieser Workflow verarbeitet das Lieferantenaktualisierungsszenario für die Entität **Kontakt**.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-141">This workflow handles the vendor update scenario for the **Contact** entity.</span></span>
+3. <span data-ttu-id="3ea7a-142">Erstellen Sie einen Workflowprozess für die Entität **Kontakt** und wählen Sie die Workflowprozessvorlage **Lieferanten vom Typ „Person“ in der Lieferantenentität erstellen** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-142">Create a workflow process for the **Contact** entity, and select the **Create Vendors of type Person in Vendors Entity** template.</span></span>
+4. <span data-ttu-id="3ea7a-143">Erstellen Sie einen Workflowprozess für die Entität **Kontakt** und wählen Sie die Workflowprozessvorlage **Lieferanten vom Typ „Person“ in der Lieferantenentität aktualisieren** aus.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-143">Create a workflow process for the **Contact** entity, and select the **Update Vendors of type Person in Vendors Entity** template.</span></span>
+5. <span data-ttu-id="3ea7a-144">Sie können die Workflow entweder als Echtzeit- oder Hintergrundworkflows je nach Ihren Anforderungen konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-144">You can configure the workflows as either real-time workflows or background workflows, depending on your requirements.</span></span> <span data-ttu-id="3ea7a-145">Wählen Sie **In einen Hintergrundworkflow konvertieren** aus, um einen Workflow als Hintergrundworkflow zu konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-145">To configure a workflow as a background workflow, select **Convert to a background workflow**.</span></span>
+6. <span data-ttu-id="3ea7a-146">Aktivieren Sie die Workflows, die Sie für die Entitäten **Kontakt** und **Lieferant** erstellt haben, um die Entität **Kontakt** für das Speichern von Informationen vom Typ **Person** zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="3ea7a-146">Activate the workflows that you created on the **Contact** and **Vendor** entities to start to use the **Contact** entity to store information for vendors of the **Person** type.</span></span>

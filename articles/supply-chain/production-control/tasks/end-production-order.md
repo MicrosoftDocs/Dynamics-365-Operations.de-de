@@ -16,33 +16,33 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f5cb4afdc0285a6ccf28dbd362df3799c0ecc74
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: cb84d3b1908d6be889a49f7386de876cb52141ab
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1555838"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149043"
 ---
-# <a name="end-a-production-order"></a><span data-ttu-id="c7025-103">Produktionsauftrag beenden</span><span class="sxs-lookup"><span data-stu-id="c7025-103">End a production order</span></span>
+# <a name="end-a-production-order"></a><span data-ttu-id="bc32a-103">Produktionsauftrag beenden</span><span class="sxs-lookup"><span data-stu-id="bc32a-103">End a production order</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c7025-104">Diese Prozedur zeigt, wie ein Produktionsauftrag beendet wird.</span><span class="sxs-lookup"><span data-stu-id="c7025-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="c7025-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="c7025-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c7025-106">Dies ist die abschließende Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.</span><span class="sxs-lookup"><span data-stu-id="c7025-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
+<span data-ttu-id="bc32a-104">Diese Prozedur zeigt, wie ein Produktionsauftrag beendet wird.</span><span class="sxs-lookup"><span data-stu-id="bc32a-104">This procedure shows how to end a production order.</span></span> <span data-ttu-id="bc32a-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="bc32a-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="bc32a-106">Dies ist die abschließende Prozedur von sieben, die den Produktionsauftrags-Lebenszyklus erklärt.</span><span class="sxs-lookup"><span data-stu-id="bc32a-106">This is the final procedure out of seven which explains the production order lifecycle.</span></span>
 
 
-## <a name="end-a-production-order"></a><span data-ttu-id="c7025-107">Produktionsauftrag beenden</span><span class="sxs-lookup"><span data-stu-id="c7025-107">End a production order</span></span>
-1. <span data-ttu-id="c7025-108">Wechseln Sie zu "Produktionssteuerung" > "Produktionsaufträge" > "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="c7025-108">Go to Production control > Production orders > All production orders.</span></span>
-    * <span data-ttu-id="c7025-109">Wählen Sie einen Produktionsauftrag aus, der den Status "Fertig gemeldet" hat.</span><span class="sxs-lookup"><span data-stu-id="c7025-109">Select a production order that has the status Reported as finished.</span></span>  
-2. <span data-ttu-id="c7025-110">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="c7025-110">On the Action Pane, click Production order.</span></span>
-3. <span data-ttu-id="c7025-111">Klicken Sie auf "Beenden".</span><span class="sxs-lookup"><span data-stu-id="c7025-111">Click End.</span></span>
-    * <span data-ttu-id="c7025-112">Auf dieser Seite können Sie das Beenden des Produktionsauftrags bestätigen.</span><span class="sxs-lookup"><span data-stu-id="c7025-112">On this page, you can confirm that you want to end the production order.</span></span>  
-4. <span data-ttu-id="c7025-113">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="c7025-113">Click the General tab.</span></span>
-5. <span data-ttu-id="c7025-114">Geben Sie ein Datum in das Feld "Datum" ein.</span><span class="sxs-lookup"><span data-stu-id="c7025-114">In the Date field, enter a date.</span></span>
-6. <span data-ttu-id="c7025-115">Wählen Sie im Feld "Ausschussmethode" "Zuordnung" aus.</span><span class="sxs-lookup"><span data-stu-id="c7025-115">In the Scrap method field, select 'Allocation'.</span></span>
-    * <span data-ttu-id="c7025-116">Wenn Sie die Zuordnungsmethode auswählen, werden die Kosten des Ausschusses zu den Fertigerzeugnissen hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="c7025-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
-7. <span data-ttu-id="c7025-117">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="c7025-117">Click OK.</span></span>
+## <a name="end-a-production-order"></a><span data-ttu-id="bc32a-107">Produktionsauftrag beenden</span><span class="sxs-lookup"><span data-stu-id="bc32a-107">End a production order</span></span>
+1. <span data-ttu-id="bc32a-108">Wechseln Sie zu "Produktionssteuerung" > "Produktionsaufträge" > "Alle Produktionsaufträge".</span><span class="sxs-lookup"><span data-stu-id="bc32a-108">Go to Production control > Production orders > All production orders.</span></span>
+    * <span data-ttu-id="bc32a-109">Wählen Sie einen Produktionsauftrag aus, der den Status "Fertig gemeldet" hat.</span><span class="sxs-lookup"><span data-stu-id="bc32a-109">Select a production order that has the status Reported as finished.</span></span>  
+2. <span data-ttu-id="bc32a-110">Klicken Sie im Aktivitätsbereich auf "Produktionsauftrag".</span><span class="sxs-lookup"><span data-stu-id="bc32a-110">On the Action Pane, click Production order.</span></span>
+3. <span data-ttu-id="bc32a-111">Klicken Sie auf "Beenden".</span><span class="sxs-lookup"><span data-stu-id="bc32a-111">Click End.</span></span>
+    * <span data-ttu-id="bc32a-112">Auf dieser Seite können Sie das Beenden des Produktionsauftrags bestätigen.</span><span class="sxs-lookup"><span data-stu-id="bc32a-112">On this page, you can confirm that you want to end the production order.</span></span>  
+4. <span data-ttu-id="bc32a-113">Klicken Sie auf die Registerkarte "Allgemein".</span><span class="sxs-lookup"><span data-stu-id="bc32a-113">Click the General tab.</span></span>
+5. <span data-ttu-id="bc32a-114">Geben Sie ein Datum in das Feld "Datum" ein.</span><span class="sxs-lookup"><span data-stu-id="bc32a-114">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="bc32a-115">Wählen Sie im Feld "Ausschussmethode" "Zuordnung" aus.</span><span class="sxs-lookup"><span data-stu-id="bc32a-115">In the Scrap method field, select 'Allocation'.</span></span>
+    * <span data-ttu-id="bc32a-116">Wenn Sie die Zuordnungsmethode auswählen, werden die Kosten des Ausschusses zu den Fertigerzeugnissen hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="bc32a-116">When you select the Allocation method, costs from the scrapped materials are added to the finished goods.</span></span>  
+7. <span data-ttu-id="bc32a-117">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="bc32a-117">Click OK.</span></span>
 
-## <a name="validate-calculation-results"></a><span data-ttu-id="c7025-118">Berechnungergebnisse überprüfen</span><span class="sxs-lookup"><span data-stu-id="c7025-118">Validate calculation results</span></span>
-1. <span data-ttu-id="c7025-119">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="c7025-119">On the Action Pane, click Manage costs.</span></span>
-2. <span data-ttu-id="c7025-120">Klicken Sie auf "Kostenvergleich anzeigen".</span><span class="sxs-lookup"><span data-stu-id="c7025-120">Click View cost comparison.</span></span>
-    * <span data-ttu-id="c7025-121">Nachdem Sie den Produktionsauftrag abgeschlossen haben, können Sie den vorkalkulierten Einstandspreis mit dem realisierten Einstandspreis vergleichen, um einen Überblick über die Produktionsabweichungen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="c7025-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  
+## <a name="validate-calculation-results"></a><span data-ttu-id="bc32a-118">Berechnungergebnisse überprüfen</span><span class="sxs-lookup"><span data-stu-id="bc32a-118">Validate calculation results</span></span>
+1. <span data-ttu-id="bc32a-119">Klicken Sie im Aktivitätsbereich auf "Kosten verwalten".</span><span class="sxs-lookup"><span data-stu-id="bc32a-119">On the Action Pane, click Manage costs.</span></span>
+2. <span data-ttu-id="bc32a-120">Klicken Sie auf "Kostenvergleich anzeigen".</span><span class="sxs-lookup"><span data-stu-id="bc32a-120">Click View cost comparison.</span></span>
+    * <span data-ttu-id="bc32a-121">Nachdem Sie den Produktionsauftrag abgeschlossen haben, können Sie den vorkalkulierten Einstandspreis mit dem realisierten Einstandspreis vergleichen, um einen Überblick über die Produktionsabweichungen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="bc32a-121">After you have ended the production order, you can compare the estimated cost price against the realized cost price to get an overview of the production variances.</span></span>  

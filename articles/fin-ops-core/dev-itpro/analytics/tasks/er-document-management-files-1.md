@@ -16,62 +16,62 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6085f2f06fb374887d504c332a34705f0fd9e99
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 800df13e1654bc01304411bfa52f4bbd04e6589a
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042826"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142062"
 ---
-# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="f6b33-103">ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1: Datenmodell vorbereiten)</span><span class="sxs-lookup"><span data-stu-id="f6b33-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
+# <a name="er-use-document-management-files-in-format-outputs-part-1---prepare-data-model"></a><span data-ttu-id="2d823-103">ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 1: Datenmodell vorbereiten)</span><span class="sxs-lookup"><span data-stu-id="2d823-103">ER Use Document Management files in format outputs (Part 1 - Prepare data model)</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f6b33-104">In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann.</span><span class="sxs-lookup"><span data-stu-id="f6b33-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="f6b33-105">Diese Schritte können in jedem Unternehmen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="f6b33-105">These steps can be performed in any company.</span></span>
+<span data-ttu-id="2d823-104">In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann.</span><span class="sxs-lookup"><span data-stu-id="2d823-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output.</span></span> <span data-ttu-id="2d823-105">Diese Schritte können in jedem Unternehmen ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="2d823-105">These steps can be performed in any company.</span></span>
 
-<span data-ttu-id="f6b33-106">Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter "Konfigurationsanbieter erstellen und als aktiv markieren" abschließen.</span><span class="sxs-lookup"><span data-stu-id="f6b33-106">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” procedure.</span></span>
+<span data-ttu-id="2d823-106">Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.</span><span class="sxs-lookup"><span data-stu-id="2d823-106">To complete these steps, you must first complete the steps in the "Create a configuration provider and mark it as active" procedure.</span></span>
 
-<span data-ttu-id="f6b33-107">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="f6b33-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
+<span data-ttu-id="2d823-107">Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="2d823-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 
 
-## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="f6b33-108">Zugriff auf die Liste von Microsoft bereitgestellte von den Konfigurationen erhalten</span><span class="sxs-lookup"><span data-stu-id="f6b33-108">Get access to the list of configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="f6b33-109">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="f6b33-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+## <a name="get-access-to-the-list-of-configurations-provided-by-microsoft"></a><span data-ttu-id="2d823-108">Zugriff auf die Liste von Microsoft bereitgestellte von den Konfigurationen erhalten</span><span class="sxs-lookup"><span data-stu-id="2d823-108">Get access to the list of configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="2d823-109">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="2d823-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
 
-    <span data-ttu-id="f6b33-110">Überprüfen Sie, ob "Litware, Inc."</span><span class="sxs-lookup"><span data-stu-id="f6b33-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="f6b33-111">Anbieter ist verfügbar und markiert als aktiv.</span><span class="sxs-lookup"><span data-stu-id="f6b33-111">provider is available and marked as active.</span></span>  
+    <span data-ttu-id="2d823-110">Überprüfen Sie, ob "Litware, Inc."</span><span class="sxs-lookup"><span data-stu-id="2d823-110">Make sure that the 'Litware, Inc.'</span></span> <span data-ttu-id="2d823-111">Anbieter ist verfügbar und markiert als aktiv.</span><span class="sxs-lookup"><span data-stu-id="2d823-111">provider is available and marked as active.</span></span>  
 
-2. <span data-ttu-id="f6b33-112">Wählen Sie den "Litware, Inc."-</span><span class="sxs-lookup"><span data-stu-id="f6b33-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="f6b33-113">Anbieter.</span><span class="sxs-lookup"><span data-stu-id="f6b33-113">provider.</span></span>
-3. <span data-ttu-id="f6b33-114">Klicken Sie auf Repositorys.</span><span class="sxs-lookup"><span data-stu-id="f6b33-114">Click Repositories.</span></span>
+2. <span data-ttu-id="2d823-112">Wählen Sie den "Litware, Inc."-</span><span class="sxs-lookup"><span data-stu-id="2d823-112">Select the 'Litware, Inc.'</span></span> <span data-ttu-id="2d823-113">Anbieter.</span><span class="sxs-lookup"><span data-stu-id="2d823-113">provider.</span></span>
+3. <span data-ttu-id="2d823-114">Klicken Sie auf Repositorys.</span><span class="sxs-lookup"><span data-stu-id="2d823-114">Click Repositories.</span></span>
 
-    <span data-ttu-id="f6b33-115">Wenn ein Repository des Typs "Operations-Ressourcen" vorhanden ist, überspringen Sie die übrigen Schritte der aktuellen Unteraufgabe.</span><span class="sxs-lookup"><span data-stu-id="f6b33-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
+    <span data-ttu-id="2d823-115">Wenn ein Repository des Typs "Operations-Ressourcen" vorhanden ist, überspringen Sie die übrigen Schritte der aktuellen Unteraufgabe.</span><span class="sxs-lookup"><span data-stu-id="2d823-115">If a repository of the 'Operations resources' type already exists, skip the remaining steps of the current sub-task.</span></span>  
 
-4. <span data-ttu-id="f6b33-116">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="f6b33-116">Click Add to open the drop dialog.</span></span>
-5. <span data-ttu-id="f6b33-117">Geben Sie im Feld "Konfigurationsrepository-Typ" die Bezeichnung "Betriebliche Ressourcen" ein.</span><span class="sxs-lookup"><span data-stu-id="f6b33-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
-6. <span data-ttu-id="f6b33-118">Klicken Sie auf "Repository erstellen".</span><span class="sxs-lookup"><span data-stu-id="f6b33-118">Click Create repository.</span></span>
-7. <span data-ttu-id="f6b33-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="f6b33-119">Click OK.</span></span>
+4. <span data-ttu-id="2d823-116">Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="2d823-116">Click Add to open the drop dialog.</span></span>
+5. <span data-ttu-id="2d823-117">Geben Sie im Feld "Konfigurationsrepository-Typ" die Bezeichnung "Betriebliche Ressourcen" ein.</span><span class="sxs-lookup"><span data-stu-id="2d823-117">In the Configuration repository type field, enter 'Operations resources'.</span></span>
+6. <span data-ttu-id="2d823-118">Klicken Sie auf "Repository erstellen".</span><span class="sxs-lookup"><span data-stu-id="2d823-118">Click Create repository.</span></span>
+7. <span data-ttu-id="2d823-119">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="2d823-119">Click OK.</span></span>
 
-## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="f6b33-120">Die Debitorenrechnungsmodell-Konfigurationen von Microsoft abrufen</span><span class="sxs-lookup"><span data-stu-id="f6b33-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
-1. <span data-ttu-id="f6b33-121">Klicken Sie auf "Filter anzeigen".</span><span class="sxs-lookup"><span data-stu-id="f6b33-121">Click Show filters.</span></span>
-2. <span data-ttu-id="f6b33-122">Wenden Sie die nachfolgenden Filter an: Geben Sie den Filterwert "Operations-Ressourcen" im Feld " Name" ein, indem Sie den "beginnt mit"-Filteroperator verewnden; Geben Sie den Filterwert "" im Feld "Beschreibungs" ein, indem Sie den "beginnt mit"-Filteroperator verwenden.</span><span class="sxs-lookup"><span data-stu-id="f6b33-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
-3. <span data-ttu-id="f6b33-123">Klicken Sie auf "Filter anzeigen".</span><span class="sxs-lookup"><span data-stu-id="f6b33-123">Click Show filters.</span></span>
-4. <span data-ttu-id="f6b33-124">Klicken Sie auf "Öffnen".</span><span class="sxs-lookup"><span data-stu-id="f6b33-124">Click Open.</span></span>
-5. <span data-ttu-id="f6b33-125">Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell " aus.</span><span class="sxs-lookup"><span data-stu-id="f6b33-125">In the tree, select 'Customer invoice model'.</span></span>
+## <a name="get-the-customer-invoice-model-configurations-provided-by-microsoft"></a><span data-ttu-id="2d823-120">Die Debitorenrechnungsmodell-Konfigurationen von Microsoft abrufen</span><span class="sxs-lookup"><span data-stu-id="2d823-120">Get the Customer invoice model configurations provided by Microsoft</span></span>
+1. <span data-ttu-id="2d823-121">Klicken Sie auf "Filter anzeigen".</span><span class="sxs-lookup"><span data-stu-id="2d823-121">Click Show filters.</span></span>
+2. <span data-ttu-id="2d823-122">Wenden Sie die nachfolgenden Filter an: Geben Sie den Filterwert "Operations-Ressourcen" im Feld " Name" ein, indem Sie den "beginnt mit"-Filteroperator verewnden; Geben Sie den Filterwert "" im Feld "Beschreibungs" ein, indem Sie den "beginnt mit"-Filteroperator verwenden.</span><span class="sxs-lookup"><span data-stu-id="2d823-122">Apply the following filters: Enter a filter value of "Operations resources" on the "Name" field using the "begins with" filter operator; Enter a filter value of "" on the "Description" field using the "begins with" filter operator</span></span>
+3. <span data-ttu-id="2d823-123">Klicken Sie auf "Filter anzeigen".</span><span class="sxs-lookup"><span data-stu-id="2d823-123">Click Show filters.</span></span>
+4. <span data-ttu-id="2d823-124">Klicken Sie auf "Öffnen".</span><span class="sxs-lookup"><span data-stu-id="2d823-124">Click Open.</span></span>
+5. <span data-ttu-id="2d823-125">Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell " aus.</span><span class="sxs-lookup"><span data-stu-id="2d823-125">In the tree, select 'Customer invoice model'.</span></span>
 
-    <span data-ttu-id="f6b33-126">Wählen Sie die Modellkonfiguration "Debitorenrechnungsmodell" aus, um sie zu importieren.</span><span class="sxs-lookup"><span data-stu-id="f6b33-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
+    <span data-ttu-id="2d823-126">Wählen Sie die Modellkonfiguration "Debitorenrechnungsmodell" aus, um sie zu importieren.</span><span class="sxs-lookup"><span data-stu-id="2d823-126">Select the model configuration 'Customer invoice model' to import it.</span></span>  
 
-6. <span data-ttu-id="f6b33-127">Klicken Sie auf Import.</span><span class="sxs-lookup"><span data-stu-id="f6b33-127">Click Import.</span></span>
+6. <span data-ttu-id="2d823-127">Klicken Sie auf Import.</span><span class="sxs-lookup"><span data-stu-id="2d823-127">Click Import.</span></span>
 
-    <span data-ttu-id="f6b33-128">Klicken Sie auf "Importieren" für Version 1 der ausgewählten Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="f6b33-128">Click Import for version 1 of the selected configuration.</span></span>  
+    <span data-ttu-id="2d823-128">Klicken Sie auf "Importieren" für Version 1 der ausgewählten Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="2d823-128">Click Import for version 1 of the selected configuration.</span></span>  
 
-7. <span data-ttu-id="f6b33-129">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="f6b33-129">Click Yes.</span></span>
-8. <span data-ttu-id="f6b33-130">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f6b33-130">Close the page.</span></span>
-9. <span data-ttu-id="f6b33-131">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f6b33-131">Close the page.</span></span>
-10. <span data-ttu-id="f6b33-132">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="f6b33-132">Click Reporting configurations.</span></span>
-11. <span data-ttu-id="f6b33-133">Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell " aus.</span><span class="sxs-lookup"><span data-stu-id="f6b33-133">In the tree, select 'Customer invoice model'.</span></span>
+7. <span data-ttu-id="2d823-129">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="2d823-129">Click Yes.</span></span>
+8. <span data-ttu-id="2d823-130">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2d823-130">Close the page.</span></span>
+9. <span data-ttu-id="2d823-131">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="2d823-131">Close the page.</span></span>
+10. <span data-ttu-id="2d823-132">Klicken Sie auf "Berichterstellungskonfigurationen".</span><span class="sxs-lookup"><span data-stu-id="2d823-132">Click Reporting configurations.</span></span>
+11. <span data-ttu-id="2d823-133">Wählen Sie in der Strukturdarstellung "Debitorenrechnungsmodell " aus.</span><span class="sxs-lookup"><span data-stu-id="2d823-133">In the tree, select 'Customer invoice model'.</span></span>
 
-## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="f6b33-134">Erstellen Sie das abgeleitete Modell, um den Zugriff auf die Dokumentverwaltungsdateien zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="f6b33-134">Create the derived model to support access to the Document Management files.</span></span>
-<span data-ttu-id="f6b33-135">Sie erstellen eine eigene Konfiguration des Debitorenrechnungmodells, die von der Konfiguration von Microsoft abgeleitet ist.</span><span class="sxs-lookup"><span data-stu-id="f6b33-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="f6b33-136">Sie verwenden diese Konfiguration, um den Zugriff auf die Dokumentverwaltungsdateien zu implementieren und diese für elektronische Dokumente bereitzustellen, die Sie auf Basis dieses Modell erstellen.</span><span class="sxs-lookup"><span data-stu-id="f6b33-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
-1. <span data-ttu-id="f6b33-137">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f6b33-137">Click Create configuration to open the drop dialog.</span></span>
-2. <span data-ttu-id="f6b33-138">Geben Sie im Feld "Neu" "Von Name 'Debitorenrechnungsmodell Microsoft' abgeleitet" ein.</span><span class="sxs-lookup"><span data-stu-id="f6b33-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
-3. <span data-ttu-id="f6b33-139">Geben Sie im Feld "Name" "Debitorenrechnungsmodell (benutzerdefiniert)" ein.</span><span class="sxs-lookup"><span data-stu-id="f6b33-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
-4. <span data-ttu-id="f6b33-140">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="f6b33-140">Click Create configuration.</span></span>
+## <a name="create-the-derived-model-to-support-access-to-the-document-management-files"></a><span data-ttu-id="2d823-134">Erstellen Sie das abgeleitete Modell, um den Zugriff auf die Dokumentverwaltungsdateien zu unterstützen.</span><span class="sxs-lookup"><span data-stu-id="2d823-134">Create the derived model to support access to the Document Management files.</span></span>
+<span data-ttu-id="2d823-135">Sie erstellen eine eigene Konfiguration des Debitorenrechnungmodells, die von der Konfiguration von Microsoft abgeleitet ist.</span><span class="sxs-lookup"><span data-stu-id="2d823-135">You will create our own configuration of the Customer invoice model deriving it from the configuration provided by Microsoft.</span></span> <span data-ttu-id="2d823-136">Sie verwenden diese Konfiguration, um den Zugriff auf die Dokumentverwaltungsdateien zu implementieren und diese für elektronische Dokumente bereitzustellen, die Sie auf Basis dieses Modell erstellen.</span><span class="sxs-lookup"><span data-stu-id="2d823-136">You will use this configuration to implement access to the Document Management files and make them available for electronic documents that you will create based on this model.</span></span>  
+1. <span data-ttu-id="2d823-137">Klicken Sie auf "Konfiguration erstellen", um das Dropdown-Dialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="2d823-137">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="2d823-138">Geben Sie im Feld "Neu" "Von Name 'Debitorenrechnungsmodell Microsoft' abgeleitet" ein.</span><span class="sxs-lookup"><span data-stu-id="2d823-138">In the New field, enter 'Derive from Name: Customer invoice model, Microsoft'.</span></span>
+3. <span data-ttu-id="2d823-139">Geben Sie im Feld "Name" "Debitorenrechnungsmodell (benutzerdefiniert)" ein.</span><span class="sxs-lookup"><span data-stu-id="2d823-139">In the Name field, type 'Customer invoice model (custom)'.</span></span>
+4. <span data-ttu-id="2d823-140">Klicken Sie auf Konfiguration erstellen.</span><span class="sxs-lookup"><span data-stu-id="2d823-140">Click Create configuration.</span></span>
 
