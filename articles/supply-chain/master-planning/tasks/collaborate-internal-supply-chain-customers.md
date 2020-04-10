@@ -16,30 +16,30 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 930a986b6dfe40d4d40de1f9ee8b1e4b88371166
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 2746534cc808dc61e54aa55c1030422bb37e8984
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1835981"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148146"
 ---
-# <a name="collaborate-with-internal-supply-chain-customers"></a><span data-ttu-id="6be34-103">Mit Debitoren der internen Lieferkette zusammenarbeiten</span><span class="sxs-lookup"><span data-stu-id="6be34-103">Collaborate with internal supply chain customers</span></span>
+# <a name="collaborate-with-internal-supply-chain-customers"></a><span data-ttu-id="9541f-103">Mit Debitoren der internen Lieferkette zusammenarbeiten</span><span class="sxs-lookup"><span data-stu-id="9541f-103">Collaborate with internal supply chain customers</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="6be34-104">Dieses Verfahren zeigt, wie Sie alle Bestellvorschläge anzeigen, die von einem Intercompany-Kreditor erfüllt werden.</span><span class="sxs-lookup"><span data-stu-id="6be34-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="6be34-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.</span><span class="sxs-lookup"><span data-stu-id="6be34-105">The demo data company used to create this procedure is DEMF.</span></span>
+<span data-ttu-id="9541f-104">Dieses Verfahren zeigt, wie Sie alle Bestellvorschläge anzeigen, die von einem Intercompany-Kreditor erfüllt werden.</span><span class="sxs-lookup"><span data-stu-id="9541f-104">This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor.</span></span> <span data-ttu-id="9541f-105">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF.</span><span class="sxs-lookup"><span data-stu-id="9541f-105">The demo data company used to create this procedure is DEMF.</span></span>
 
-1. <span data-ttu-id="6be34-106">Klicken Sie auf "Produktprogrammplanung".</span><span class="sxs-lookup"><span data-stu-id="6be34-106">Click Master planning.</span></span>
-2. <span data-ttu-id="6be34-107">Geben Sie im Feld "Plan" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="6be34-107">In the Plan field, enter or select a value.</span></span>
-    * <span data-ttu-id="6be34-108">Wählen Sie im Feld Plan "Plan 10" aus.</span><span class="sxs-lookup"><span data-stu-id="6be34-108">In the Plan field, select plan 10.</span></span>  
-3. <span data-ttu-id="6be34-109">Klicken Sie auf "Ausführen".</span><span class="sxs-lookup"><span data-stu-id="6be34-109">Click Run.</span></span>
-4. <span data-ttu-id="6be34-110">Geben Sie im Feld "Anzahl von Threads" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="6be34-110">In the Number of threads field, enter a number.</span></span>
-    * <span data-ttu-id="6be34-111">Dies stellt die Anzahl von parallelen Threads für die Produktprogrammplanung dar.</span><span class="sxs-lookup"><span data-stu-id="6be34-111">This represents the number of parallel threads to be used for master planning.</span></span>  
-5. <span data-ttu-id="6be34-112">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="6be34-112">Click OK.</span></span>
-    * <span data-ttu-id="6be34-113">Dies kann einige Zeit in Anspruch nehmen.</span><span class="sxs-lookup"><span data-stu-id="6be34-113">This may take a while.</span></span>  
-6. <span data-ttu-id="6be34-114">Klicken Sie auf "Geplanter Intercompany-Bedarf".</span><span class="sxs-lookup"><span data-stu-id="6be34-114">Click Planned intercompany demand.</span></span>
-7. <span data-ttu-id="6be34-115">Klicken Sie auf "Ausgehender geplanter Intercompany-Bedarf".</span><span class="sxs-lookup"><span data-stu-id="6be34-115">Click Outbound planned intercompany demand.</span></span>
-    * <span data-ttu-id="6be34-116">Diese Seite enthält eine Übersicht des gesamten geplanten Bedarfs, der durch einen internen Lieferkettenkreditor erfüllt wird.</span><span class="sxs-lookup"><span data-stu-id="6be34-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
-8. <span data-ttu-id="6be34-117">Erweitern Sie den Abschnitt "Bedarfsdetails hochstreamen".</span><span class="sxs-lookup"><span data-stu-id="6be34-117">Expand the Upstream demand details section.</span></span>
-    * <span data-ttu-id="6be34-118">In diesem Abschnitt finden Sie Details zur Erfüllung des Bedarfs.</span><span class="sxs-lookup"><span data-stu-id="6be34-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="6be34-119">Möglicherweise müssen Sie auf die im Lieferungsunternehmen auszuführende Produktprogrammplanung warten, bevor Sie hier zusätzliche Informationen sehen.</span><span class="sxs-lookup"><span data-stu-id="6be34-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
+1. <span data-ttu-id="9541f-106">Klicken Sie auf "Produktprogrammplanung".</span><span class="sxs-lookup"><span data-stu-id="9541f-106">Click Master planning.</span></span>
+2. <span data-ttu-id="9541f-107">Geben Sie im Feld "Plan" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="9541f-107">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="9541f-108">Wählen Sie im Feld Plan "Plan 10" aus.</span><span class="sxs-lookup"><span data-stu-id="9541f-108">In the Plan field, select plan 10.</span></span>  
+3. <span data-ttu-id="9541f-109">Klicken Sie auf "Ausführen".</span><span class="sxs-lookup"><span data-stu-id="9541f-109">Click Run.</span></span>
+4. <span data-ttu-id="9541f-110">Geben Sie im Feld "Anzahl von Threads" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="9541f-110">In the Number of threads field, enter a number.</span></span>
+    * <span data-ttu-id="9541f-111">Dies stellt die Anzahl von parallelen Threads für die Produktprogrammplanung dar.</span><span class="sxs-lookup"><span data-stu-id="9541f-111">This represents the number of parallel threads to be used for master planning.</span></span>  
+5. <span data-ttu-id="9541f-112">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="9541f-112">Click OK.</span></span>
+    * <span data-ttu-id="9541f-113">Dies kann einige Zeit in Anspruch nehmen.</span><span class="sxs-lookup"><span data-stu-id="9541f-113">This may take a while.</span></span>  
+6. <span data-ttu-id="9541f-114">Klicken Sie auf "Geplanter Intercompany-Bedarf".</span><span class="sxs-lookup"><span data-stu-id="9541f-114">Click Planned intercompany demand.</span></span>
+7. <span data-ttu-id="9541f-115">Klicken Sie auf "Ausgehender geplanter Intercompany-Bedarf".</span><span class="sxs-lookup"><span data-stu-id="9541f-115">Click Outbound planned intercompany demand.</span></span>
+    * <span data-ttu-id="9541f-116">Diese Seite enthält eine Übersicht des gesamten geplanten Bedarfs, der durch einen internen Lieferkettenkreditor erfüllt wird.</span><span class="sxs-lookup"><span data-stu-id="9541f-116">This page provides an overview of all the planned demand that will be fulfilled by an internal supply chain vendor.</span></span>  
+8. <span data-ttu-id="9541f-117">Erweitern Sie den Abschnitt "Bedarfsdetails hochstreamen".</span><span class="sxs-lookup"><span data-stu-id="9541f-117">Expand the Upstream demand details section.</span></span>
+    * <span data-ttu-id="9541f-118">In diesem Abschnitt finden Sie Details zur Erfüllung des Bedarfs.</span><span class="sxs-lookup"><span data-stu-id="9541f-118">In this section, you can see the details about how the demand will be fulfilled.</span></span> <span data-ttu-id="9541f-119">Möglicherweise müssen Sie auf die im Lieferungsunternehmen auszuführende Produktprogrammplanung warten, bevor Sie hier zusätzliche Informationen sehen.</span><span class="sxs-lookup"><span data-stu-id="9541f-119">You may need to wait for master planning to be run in the supply company before you can see additional information here.</span></span>  
 

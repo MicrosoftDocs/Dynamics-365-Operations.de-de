@@ -16,73 +16,73 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 68694e08550083c38feb4389f82d83c535e978c3
-ms.sourcegitcommit: 9168621ca9b5061c65f3e05dbc5918b6a11d53d5
+ms.openlocfilehash: 995d68f6224b6dfbb1928c907ad991b86fc47668
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "3000221"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140351"
 ---
-# <a name="research-or-resolve-exceptions"></a><span data-ttu-id="07ae6-103">Ausnahmen untersuchen oder auflösen</span><span class="sxs-lookup"><span data-stu-id="07ae6-103">Research or resolve exceptions</span></span>
+# <a name="research-or-resolve-exceptions"></a><span data-ttu-id="d60b4-103">Ausnahmen untersuchen oder auflösen</span><span class="sxs-lookup"><span data-stu-id="d60b4-103">Research or resolve exceptions</span></span>
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="07ae6-104">Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="07ae6-105">Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird.</span><span class="sxs-lookup"><span data-stu-id="07ae6-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
+<span data-ttu-id="d60b4-104">Kreditorenrechnungsrichtlinien werden ausgeführt, wenn Sie mit der Seite "Kreditorenrechnung" eine Kreditorenrechnung buchen und wenn Sie die Seite "Richtlinienverstöße" der Kreditorenrechnung öffnen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-104">Vendor invoice policies are run when you post a vendor invoice by using the Vendor invoice page and when you open the vendor invoice Policy violations page.</span></span> <span data-ttu-id="d60b4-105">Sie können auch den Workflow für Kreditorenrechnungen konfigurieren, sodass Kreditorenrechnungsrichtlinien immer ausgeführt werden, wenn eine Rechnung an den Workflow übermittelt wird.</span><span class="sxs-lookup"><span data-stu-id="d60b4-105">You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow.</span></span> 
 
-<span data-ttu-id="07ae6-106">Kreditorenrechnungsrichtlinien werden nicht auf Rechnungen angewendet, die im Rechnungsbuch oder in einer Rechnungserfassung erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="07ae6-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
+<span data-ttu-id="d60b4-106">Kreditorenrechnungsrichtlinien werden nicht auf Rechnungen angewendet, die im Rechnungsbuch oder in einer Rechnungserfassung erstellt wurden.</span><span class="sxs-lookup"><span data-stu-id="d60b4-106">Vendor invoice policies do not apply to invoices that were created in the invoice register or invoice journal.</span></span> 
 
-<span data-ttu-id="07ae6-107">Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite "Kreditorenkontenparameter" eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="07ae6-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
+<span data-ttu-id="d60b4-107">Für die Rechnungsabgleichüberprüfung werden keine Kreditorenrechnungsrichtlinien verwendet. Stattdessen wird die Prüfung auf der Seite "Kreditorenkontenparameter" eingerichtet.</span><span class="sxs-lookup"><span data-stu-id="d60b4-107">Invoice matching validation does not use vendor invoice policies, but is instead set up in the Accounts payable parameters page.</span></span>
 
-<span data-ttu-id="07ae6-108">Für diese Erfassung wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="07ae6-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="07ae6-109">Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="07ae6-110">Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="07ae6-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
+<span data-ttu-id="d60b4-108">Für diese Erfassung wird das Demo-Unternehmen USMF verwendet.</span><span class="sxs-lookup"><span data-stu-id="d60b4-108">This recording uses the USMF demo company.</span></span> <span data-ttu-id="d60b4-109">Die Kreditorenleiter- oder Buchhaltungsleiterrolle würde diese Schritte ausführen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-109">The accounts payable manager or accounting manager role would perform these steps.</span></span> <span data-ttu-id="d60b4-110">Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde.</span><span class="sxs-lookup"><span data-stu-id="d60b4-110">Before you begin, make sure that the Invoice matching configuration key is selected.</span></span>
 
 
-## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="07ae6-111">Vorbereitung zum Erstellen von Kreditorenrechnungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="07ae6-111">Prepare to create vendor invoice policies</span></span>
-1. <span data-ttu-id="07ae6-112">Wechseln Sie zu Kreditoren > Einstellung > Kreditorenparameter.</span><span class="sxs-lookup"><span data-stu-id="07ae6-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
-2. <span data-ttu-id="07ae6-113">Klicken Sie auf die Registerkarte "Rechnungsprüfung".</span><span class="sxs-lookup"><span data-stu-id="07ae6-113">Click the Invoice validation tab.</span></span>
-3. <span data-ttu-id="07ae6-114">Aktivieren oder deaktivieren Sie das Kontrollkästchen "Rechnungskopfstatus automatisch aktualisieren".</span><span class="sxs-lookup"><span data-stu-id="07ae6-114">Select or clear the Automatically update invoice header status check box.</span></span>
-4. <span data-ttu-id="07ae6-115">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="07ae6-115">Click OK.</span></span>
-5. <span data-ttu-id="07ae6-116">Wählen Sie im Feld "Rechnung mit Abweichungen buchen" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="07ae6-116">In the Post invoice with discrepancies field, select an option.</span></span>
-6. <span data-ttu-id="07ae6-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="07ae6-117">Close the page.</span></span>
-7. <span data-ttu-id="07ae6-118">Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungsrichtlinien".</span><span class="sxs-lookup"><span data-stu-id="07ae6-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-8. <span data-ttu-id="07ae6-119">Klicken Sie auf "Parameter".</span><span class="sxs-lookup"><span data-stu-id="07ae6-119">Click Parameters.</span></span>
-9. <span data-ttu-id="07ae6-120">Klicken Sie auf die Schaltfläche "Hinzufügen."</span><span class="sxs-lookup"><span data-stu-id="07ae6-120">Click btnAdd.</span></span>
-10. <span data-ttu-id="07ae6-121">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="07ae6-121">Close the page.</span></span>
+## <a name="prepare-to-create-vendor-invoice-policies"></a><span data-ttu-id="d60b4-111">Vorbereitung zum Erstellen von Kreditorenrechnungsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="d60b4-111">Prepare to create vendor invoice policies</span></span>
+1. <span data-ttu-id="d60b4-112">Wechseln Sie zu Kreditoren > Einstellung > Kreditorenparameter.</span><span class="sxs-lookup"><span data-stu-id="d60b4-112">Go to Accounts payable > Setup > Accounts payable parameters.</span></span>
+2. <span data-ttu-id="d60b4-113">Klicken Sie auf die Registerkarte "Rechnungsprüfung".</span><span class="sxs-lookup"><span data-stu-id="d60b4-113">Click the Invoice validation tab.</span></span>
+3. <span data-ttu-id="d60b4-114">Aktivieren oder deaktivieren Sie das Kontrollkästchen "Rechnungskopfstatus automatisch aktualisieren".</span><span class="sxs-lookup"><span data-stu-id="d60b4-114">Select or clear the Automatically update invoice header status check box.</span></span>
+4. <span data-ttu-id="d60b4-115">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d60b4-115">Click OK.</span></span>
+5. <span data-ttu-id="d60b4-116">Wählen Sie im Feld "Rechnung mit Abweichungen buchen" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="d60b4-116">In the Post invoice with discrepancies field, select an option.</span></span>
+6. <span data-ttu-id="d60b4-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d60b4-117">Close the page.</span></span>
+7. <span data-ttu-id="d60b4-118">Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungsrichtlinien".</span><span class="sxs-lookup"><span data-stu-id="d60b4-118">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+8. <span data-ttu-id="d60b4-119">Klicken Sie auf "Parameter".</span><span class="sxs-lookup"><span data-stu-id="d60b4-119">Click Parameters.</span></span>
+9. <span data-ttu-id="d60b4-120">Klicken Sie auf die Schaltfläche "Hinzufügen."</span><span class="sxs-lookup"><span data-stu-id="d60b4-120">Click btnAdd.</span></span>
+10. <span data-ttu-id="d60b4-121">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d60b4-121">Close the page.</span></span>
 
-## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="07ae6-122">Erstellen von Richtlinienregeltypen für Kreditorenrechnungen</span><span class="sxs-lookup"><span data-stu-id="07ae6-122">Create policy rule types for vendor invoices</span></span>
-1. <span data-ttu-id="07ae6-123">Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungs-Richtlinienregeltypen".</span><span class="sxs-lookup"><span data-stu-id="07ae6-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
-2. <span data-ttu-id="07ae6-124">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="07ae6-124">Click New.</span></span>
-3. <span data-ttu-id="07ae6-125">Geben Sie im Feld "Regelname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-125">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="07ae6-126">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-126">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="07ae6-127">Klicken Sie im Feld "Abfragename" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="07ae6-128">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="07ae6-128">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="07ae6-129">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="07ae6-129">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="07ae6-130">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="07ae6-130">Click Save.</span></span>
-9. <span data-ttu-id="07ae6-131">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="07ae6-131">Close the page.</span></span>
+## <a name="create-policy-rule-types-for-vendor-invoices"></a><span data-ttu-id="d60b4-122">Erstellen von Richtlinienregeltypen für Kreditorenrechnungen</span><span class="sxs-lookup"><span data-stu-id="d60b4-122">Create policy rule types for vendor invoices</span></span>
+1. <span data-ttu-id="d60b4-123">Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungs-Richtlinienregeltypen".</span><span class="sxs-lookup"><span data-stu-id="d60b4-123">Go to Accounts payable > Policy setup > Vendor invoice policy rule types.</span></span>
+2. <span data-ttu-id="d60b4-124">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="d60b4-124">Click New.</span></span>
+3. <span data-ttu-id="d60b4-125">Geben Sie im Feld "Regelname" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-125">In the Rule name field, type a value.</span></span>
+4. <span data-ttu-id="d60b4-126">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-126">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="d60b4-127">Klicken Sie im Feld "Abfragename" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-127">In the Query name field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="d60b4-128">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d60b4-128">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="d60b4-129">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d60b4-129">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="d60b4-130">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="d60b4-130">Click Save.</span></span>
+9. <span data-ttu-id="d60b4-131">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d60b4-131">Close the page.</span></span>
 
-## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="07ae6-132">Definieren einer Kreditorenrechnungsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="07ae6-132">Define a vendor invoice policy</span></span>
-1. <span data-ttu-id="07ae6-133">Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungsrichtlinien".</span><span class="sxs-lookup"><span data-stu-id="07ae6-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
-2. <span data-ttu-id="07ae6-134">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="07ae6-134">Click New.</span></span>
-3. <span data-ttu-id="07ae6-135">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-135">In the Name field, type a value.</span></span>
-4. <span data-ttu-id="07ae6-136">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-136">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="07ae6-137">Erweitern oder reduzieren Sie den Abschnitt "Richtlinienorganisationen".</span><span class="sxs-lookup"><span data-stu-id="07ae6-137">Expand or collapse the Policy organizations section.</span></span>
-6. <span data-ttu-id="07ae6-138">Wählen Sie in der Struktur "Contoso Unterhaltungsanlagen USA" aus.</span><span class="sxs-lookup"><span data-stu-id="07ae6-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
-7. <span data-ttu-id="07ae6-139">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-139">Click Add.</span></span>
-8. <span data-ttu-id="07ae6-140">Erweitern oder reduzieren Sie den Abschnitt "Richtlinienregeln".</span><span class="sxs-lookup"><span data-stu-id="07ae6-140">Expand or collapse the Policy rules section.</span></span>
-9. <span data-ttu-id="07ae6-141">Klicken Sie auf "Richtlinienregel erstellen".</span><span class="sxs-lookup"><span data-stu-id="07ae6-141">Click Create policy rule.</span></span>
-10. <span data-ttu-id="07ae6-142">Geben Sie im Feld "Richtlinienregel" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-142">In the Policy rule description field, type a value.</span></span>
-11. <span data-ttu-id="07ae6-143">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="07ae6-143">Click Filter.</span></span>
-12. <span data-ttu-id="07ae6-144">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-144">Click Add.</span></span>
-13. <span data-ttu-id="07ae6-145">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="07ae6-145">In the list, mark the selected row.</span></span>
-14. <span data-ttu-id="07ae6-146">Klicken Sie im Feld "Tabelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-146">In the Table field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="07ae6-147">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="07ae6-147">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="07ae6-148">Klicken Sie im Feld "Abgeleitete Tabelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
-17. <span data-ttu-id="07ae6-149">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="07ae6-149">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="07ae6-150">Klicken Sie im Feld "Feld" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="07ae6-150">In the Field field, click the drop-down button to open the lookup.</span></span>
-19. <span data-ttu-id="07ae6-151">Geben Sie im Feld "Feld" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-151">In the Field field, type a value.</span></span>
-20. <span data-ttu-id="07ae6-152">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="07ae6-152">Close the page.</span></span>
-21. <span data-ttu-id="07ae6-153">Geben Sie im Feld "Kriterien" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="07ae6-153">In the Criteria field, type a value.</span></span>
-22. <span data-ttu-id="07ae6-154">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="07ae6-154">Click OK.</span></span>
-23. <span data-ttu-id="07ae6-155">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="07ae6-155">Click OK.</span></span>
-24. <span data-ttu-id="07ae6-156">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="07ae6-156">Close the page.</span></span>
-25. <span data-ttu-id="07ae6-157">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="07ae6-157">Close the page.</span></span>
+## <a name="define-a-vendor-invoice-policy"></a><span data-ttu-id="d60b4-132">Definieren einer Kreditorenrechnungsrichtlinie</span><span class="sxs-lookup"><span data-stu-id="d60b4-132">Define a vendor invoice policy</span></span>
+1. <span data-ttu-id="d60b4-133">Wechseln Sie zu "Kreditoren" > "Richtlinieneinstellung" > "Kreditorenrechnungsrichtlinien".</span><span class="sxs-lookup"><span data-stu-id="d60b4-133">Go to Accounts payable > Policy setup > Vendor invoice policies.</span></span>
+2. <span data-ttu-id="d60b4-134">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="d60b4-134">Click New.</span></span>
+3. <span data-ttu-id="d60b4-135">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-135">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="d60b4-136">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-136">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="d60b4-137">Erweitern oder reduzieren Sie den Abschnitt "Richtlinienorganisationen".</span><span class="sxs-lookup"><span data-stu-id="d60b4-137">Expand or collapse the Policy organizations section.</span></span>
+6. <span data-ttu-id="d60b4-138">Wählen Sie in der Struktur "Contoso Unterhaltungsanlagen USA" aus.</span><span class="sxs-lookup"><span data-stu-id="d60b4-138">In the tree, select 'Contoso Entertainment System USA'.</span></span>
+7. <span data-ttu-id="d60b4-139">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-139">Click Add.</span></span>
+8. <span data-ttu-id="d60b4-140">Erweitern oder reduzieren Sie den Abschnitt "Richtlinienregeln".</span><span class="sxs-lookup"><span data-stu-id="d60b4-140">Expand or collapse the Policy rules section.</span></span>
+9. <span data-ttu-id="d60b4-141">Klicken Sie auf "Richtlinienregel erstellen".</span><span class="sxs-lookup"><span data-stu-id="d60b4-141">Click Create policy rule.</span></span>
+10. <span data-ttu-id="d60b4-142">Geben Sie im Feld "Richtlinienregel" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-142">In the Policy rule description field, type a value.</span></span>
+11. <span data-ttu-id="d60b4-143">Klicken Sie auf "Filter".</span><span class="sxs-lookup"><span data-stu-id="d60b4-143">Click Filter.</span></span>
+12. <span data-ttu-id="d60b4-144">Klicken Sie auf Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-144">Click Add.</span></span>
+13. <span data-ttu-id="d60b4-145">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="d60b4-145">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="d60b4-146">Klicken Sie im Feld "Tabelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-146">In the Table field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="d60b4-147">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d60b4-147">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="d60b4-148">Klicken Sie im Feld "Abgeleitete Tabelle" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-148">In the Derived table field, click the drop-down button to open the lookup.</span></span>
+17. <span data-ttu-id="d60b4-149">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="d60b4-149">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="d60b4-150">Klicken Sie im Feld "Feld" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d60b4-150">In the Field field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="d60b4-151">Geben Sie im Feld "Feld" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-151">In the Field field, type a value.</span></span>
+20. <span data-ttu-id="d60b4-152">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d60b4-152">Close the page.</span></span>
+21. <span data-ttu-id="d60b4-153">Geben Sie im Feld "Kriterien" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d60b4-153">In the Criteria field, type a value.</span></span>
+22. <span data-ttu-id="d60b4-154">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d60b4-154">Click OK.</span></span>
+23. <span data-ttu-id="d60b4-155">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d60b4-155">Click OK.</span></span>
+24. <span data-ttu-id="d60b4-156">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d60b4-156">Close the page.</span></span>
+25. <span data-ttu-id="d60b4-157">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d60b4-157">Close the page.</span></span>
 
