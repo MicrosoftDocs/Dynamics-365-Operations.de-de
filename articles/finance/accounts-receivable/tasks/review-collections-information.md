@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd606461b9d7198bda12e297598fae0cbf8b39a7
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9b5cc07c5dfb2444ff086c8b1f3bcc7634d8644d
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188716"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143337"
 ---
 # <a name="review-collections-information"></a>Inkassoinformationen überprüfen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie Inkassoinformationen sowie verschiedene Einrichtungsoptionen und Inkassobuchungen prüfen können. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 
@@ -108,7 +108,7 @@ In diesem Thema wird erläutert, wie Sie Inkassoinformationen sowie verschiedene
 - Wählen Sie eine Zahlungsfristdefinition aus. Standardmäßig wird die Zahlungsfristdefinition angezeigt, die der Fälligkeitsmomentaufnahme für den Debitor zugeordnet ist. Die Zahlungsfristdefinition bestimmt, welche Zahlungsfristen und Beträge in den Infoboxen **Saldenrückblick** und **Kreditinformationen** angezeigt werden.  
 - Öffnet ein Menü mit den folgenden Optionen:    
   - Unternehmen – Zeigt Beträge in den Infoboxen „Saldenrückblick“ und „Kreditinformationen“ in der Buchhaltungswährung der juristischen Person an.  
-  - Debitor - Beträge in den Infoboxen "Saldenrückblick" und "Kreditinformationen" in der Währung des Debitors anzeigen.  
+  - Debitor - Beträge in den Infoboxen „Saldenrückblick“ und „Kreditinformationen“ in der Währung des Debitors anzeigen.  
 - Wählen Sie mindestens eine juristische Person in der Fälligkeitsmomentaufnahme des Debitors aus, für die Sie Informationen anzeigen möchten. In der Liste werden die juristischen Personen angezeigt, die beim Erstellen der Fälligkeitsmomentaufnahme ausgewählt wurden.  
 - Zeigen Sie die Debitorenaufstellungen im Microsoft Excel-Format an. Sie können ein Startdatum für den Buchungsbereich auswählen, der in der Aufstellung enthalten sein soll, und festlegen, ob nur offene oder sowohl offene als auch ausgeglichene Buchungen eingeschlossen werden. Wenn die Fälligkeitsmomentaufnahme Informationen für mehrere juristische Personen enthält, werden Buchungen für alle enthaltenen juristischen Personen angezeigt.  
 - Öffnen Sie das Formular **Dokumente**, in dem Sie Dokumente oder Hinweise erstellen oder anzeigen können.  

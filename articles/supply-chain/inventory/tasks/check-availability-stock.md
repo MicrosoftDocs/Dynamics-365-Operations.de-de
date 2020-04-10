@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e0c00b2a79ab588ff47c249f73570544d884b79e
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: a6ced839f93103a62bcfa8ea14ca463f0f1e174e
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145846"
 ---
 # <a name="check-the-availability-of-stock"></a>Überprüfung der Bestandsverfügbarkeit
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lagerbestand für eine bestimmte Artikelnummer überprüfen. Darüber hinaus zeigt sie Ihnen, wie Sie Lieferinformationen zu einem Artikel abrufen. Physischer, verfügbare Lagerbestand ist der verfügbare Lagerbestand, der verfügbar ist – d. h. er ist gekauft, empfangen und erfasst worden. Der verfügbare Lagerbestand umfasst den verfügbaren Lagerbestand, aber auch den Lagerbestand, der bestellt wurde und erwartet wird, der aber noch nicht empfangen oder erfasst wurde. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie USMF verwenden, können Sie die Beispielswerte verwenden, die angezeigt werden. Diese Aufgaben werden normalerweise von einer Lagerarbeitskraft ausgeführt.
+Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lagerbestand für eine bestimmte Artikelnummer überprüfen. Darüber hinaus zeigt sie Ihnen, wie Sie Lieferinformationen zu einem Artikel abrufen. Physischer, verfügbarer Lagerbestand ist der verfügbare Lagerbestand, der verfügbar ist – d. h. er ist gekauft, empfangen und erfasst worden. Der verfügbare Lagerbestand umfasst den verfügbaren Lagerbestand, aber auch den Lagerbestand, der bestellt wurde und erwartet wird, aber noch nicht empfangen oder erfasst wurde. Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden. Wenn Sie USMF verwenden, können Sie die Beispielswerte verwenden, die angezeigt werden. Diese Aufgaben werden normalerweise von einer Lagerarbeitskraft ausgeführt.
 
 
 ## <a name="check-on-hand-inventory-for-an-item"></a>Verfügbaren Lagerbestand für einen Artikel überprüfen
@@ -37,7 +37,7 @@ Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lager
 4. Klicken Sie auf **OK**.
 5. Klicken Sie im **Aktivitätsbereich** auf **Dimensionen**. Die Registerkarte **Dimensionen** ermöglicht es Ihnen, auszuwählen, wie viel Detail Sie über Ihren verfügbaren Lagerbestand sehen möchten. Wenn Sie die Daten benötigen, die der Reservierung zugeordnet sind, müssen Sie alle Lagerbestandsdimensionen für die Artikel anzeigen, die erweiterte Lagerortprozesse verwenden.
 6. Klicken Sie auf **OK**.
-7. Klicken Sie im **Aktivitätsbereich** auf **Zugehörige Informationen**. Wenn Sie diese Option nicht sehen, müssen Sie möglicherweise auf der Schaltfläche „Auslassungspunkte” (...) klicken, um zusätzliche Aktionsbereichsoptionen anzuzeigen.
+7. Klicken Sie im **Aktivitätsbereich** auf **Zugehörige Informationen**. Wenn Sie diese Option nicht sehen, müssen Sie möglicherweise auf die Schaltfläche „Auslassungspunkte“ (...) klicken, um zusätzliche Aktionsbereichsoptionen anzuzeigen.
 8. Klicken Sie auf **Lieferübersicht**. Die Registerkarte **Lieferübersicht** stellt Lieferinformationen für einen bestimmten Artikel bereit, beispielsweise die verfügbare Menge, die Durchlaufzeit und die Kreditordaten.  
 9. Erweitern Sie den Abschnitt **Verfügbar**.
 10. Erweitern Sie den Abschnitt **Kreditoren**.

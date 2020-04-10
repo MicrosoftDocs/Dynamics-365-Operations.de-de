@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d586f4cc92e7533cabb8810ce5a42a37e6ba9ff1
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: 743cb2677696727ac2730fec2c11954d150f4cfa
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995189"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147364"
 ---
 # <a name="create-a-purchase-return-order"></a>Einkaufsrücklieferung erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivität "Gutschrift" verwendet wird, um Positionen von einem Kreditorenrechnungsdokument zu einer neuen Bestellung zu kopieren. Sie zeigt Ihnen auch, wie der Auftrag bestätigt und die Lieferung der Waren zurück zum Kreditor verarbeitet wird. Das Beispiel, das in dieser Prozedur angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Normalerweise wird diese Aufgabe von einem Einkaufsvertreter ausgeführt.
 
@@ -35,27 +35,27 @@ Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivi
 3. Geben Sie im Feld **Kreditorenkonto** den Wert „US-102“ ein.
 4. Klicken Sie auf **OK**.
 5. Klicken Sie im **Aktivitätsbereich** auf **Einkauf**.
-6. Klicken Sie auf **Gutschrift**. Dies ist die Seite, von der aus Sie aus einer vorhandenen Kreditorenrechnung zu Ihrer Reklamation kopieren können. Dies ist die gleiche Seite, die für andere Kopieraktionen verwendet wird. Da wir sie aber von der Aktivität "Gutschrift" aus geöffnet haben, wird diese Seite so konfiguriert, dass sie die Erstellung einer Reklamation unterstützt, die Kreditorenrechnungen ausgleicht.  
+6. Klicken Sie auf **Gutschrift**. Dies ist die Seite, von der aus Sie aus einer vorhandenen Kreditorenrechnung zu Ihrer Reklamation kopieren können. Dies ist die gleiche Seite, die auch für andere Kopieraktionen verwendet wird. Da wir sie aber von der Aktivität Gutschrif aus geöffnet haben, wird diese Seite so konfiguriert, dass sie die Erstellung einer Reklamation unterstützt, die Kreditorenrechnungen ausgleicht.  
 7. Erweitern Sie den Abschnitt **Parameter**.
     - Die Option **Vorzeichen umkehren** ist automatisch ausgewählt und kann nicht geändert werden. Dies gewährleistet, dass das Vorzeichen für die Mengen geändert wird und dass Auftragspositionen, die hinzugefügt werden, die Kreditorenrechnung ausgleichen.  
-    - Die Option **Belastungen kopieren** ist automatisch ausgewählt und kann nicht geändert werden. Dies heißt, dass Belastungen von einer Kreditorenrechnung zur Reklamation hinzugezählt werden, um die ursprüngliche Belastung auszugleichen. Es ist möglich, die Änderungen auf Auftragskopf und -positionen später zu ändern.  
+    - Die Option **Belastungen kopieren** ist automatisch ausgewählt und kann nicht geändert werden. Dies heißt, dass Belastungen von einer Kreditorenrechnung zur Reklamation hinzugezählt werden, um die ursprüngliche Belastung auszugleichen. Es ist möglich, die Änderungen auch auf Auftragskopf und -positionen später zu ändern.  
     - Die Option **Exakt kopieren** ist automatisch ausgewählt und kann nicht geändert werden. Dies stellt sicher, dass eine genaue Kopie von den Werten in allen Feldern in Kreditorenrechnungskopf und -positionen erstellt wird. Dies heißt, dass eine Reklamation mit Werten erstellt wird, die mit allen Bedingungen übereinstimmen, die mit dem Kreditorenrechnungsdokument verwendet werden. 
-    - Die Option **Bestellpositionen löschen** löscht sämtliche Bestellpositionen, die bereits in der Bestellung vorhanden sind, bevor die neuen Positionen hinzugefügt werden. In diesem Beispiel haben wir noch keine Positionen zur Reklamation hinzugefügt, sodass es keine Auswirkung geben würde. Verwenden Sie diese Option mit Vorsicht, da durch sie alle vorhandenen Positionen ohne weitere Warnung gelöscht werden.  
+    - Die Option **Bestellpositionen löschen** löscht sämtliche Bestellpositionen, die bereits in der Bestellung vorhanden sind, bevor die neuen Positionen hinzugefügt werden. In diesem Beispiel haben wir noch keine Positionen zur Reklamation hinzugefügt, sodass es noch keine Auswirkung geben würde. Verwenden Sie diese Option mit Vorsicht, da durch sie alle vorhandenen Positionen ohne weitere Warnung gelöscht werden.  
     * Die Option **Auftragskopf kopieren** ist automatisch ausgewählt und kann nicht geändert werden. Dieses stellt sicher, dass Informationen aus der Kreditorenrechnung kopiert werden und auf den Reklamationskopf angewendet werden. Dies ist nützlich, weil es hilft sicherzustellen, dass die Reklamation die Rechnung ausgleicht, indem ähnliche Bedingungen verwendet werden.  
 8. Reduzieren Sie den Abschnitt **Parameter**.
-9. Erweitern Sie den Abschnitt **Rechnungen**. Die Seite ist von der Aktivität "Gutschrift" aus geöffnet worden, sodass die einzige verfügbare Option darin besteht, Informationen aus Kreditorenrechnungen zu kopieren. Diese Registerkarte zeigt alle verfügbaren Rechnungen für das Kreditorenkonto an, das auf der Reklamation angegeben ist, die Sie vorher erstellt haben.   Die Rechnungen werden durch den Rechnungsbeleg oder die Bestellungskennungen identifiziert.
+9. Erweitern Sie den Abschnitt **Rechnungen**. Die Seite ist von der Aktivität "Gutschrift" aus geöffnet worden, sodass die einzige verfügbare Option darin besteht, Informationen aus Kreditorenrechnungen zu kopieren. Diese Registerkarte zeigt alle verfügbaren Rechnungen für das Kreditorenkonto an, das auf der Reklamation angegeben ist, welche Sie vorher erstellt haben.   Die Rechnungen werden durch den Rechnungsbeleg oder die Bestellungskennungen identifiziert.
 10. Suchen Sie die Kreditorenrechnung, die durch Rechnungsnummer "AP-0006" identifiziert wird und heben Sie diese Position hervor, indem Sie auf irgendein Feld in dieser Position klicken.
-11. Wählen Sie die Position aus, indem Sie auf das Kontrollkästchen für die Position klicken. Beachten Sie, dass die Positionen, die auf den Kreditorenrechnungen verfügbar sind, automatisch zusammen mit dem Auftrag ausgewählt werden. Diese bestimmte Kreditorenrechnung hat 2 Auftragspositionen. Für dieses Beispiel senden wir einen Teil der Menge aus der zweiten Position zurück.
+11. Wählen Sie die Position aus, indem Sie auf das Kontrollkästchen für die Position klicken. Beachten Sie, dass die Positionen, die auf den Kreditorenrechnungen verfügbar sind, automatisch zusammen mit dem Auftrag ausgewählt werden. Diese bestimmte Kreditorenrechnung hat 2 Auftragspositionen. Für dieses Beispiel senden wir einen Teil der Menge von der zweiten Position zurück.
 12. Heben Sie die zweite Position hervor (diejenige mit Artikel "M0006"), indem Sie auf irgendein Feld in dieser Position klicken.
-13. Ändern Sie im Feld **Menge** die Menge zu „10“. Dies ist die Menge, die wir zum Kreditor zurücksenden. 
+13. Ändern Sie im Feld **Menge** die Menge zu „10“. Dies ist die Menge, die wir zum Lieferant zurücksenden. 
 14. Heben Sie die erste Position hervor (diejenige mit Artikel "M0005"), indem Sie auf irgendein Feld in dieser Position klicken.
 15. Deaktivieren Sie das Kontrollkästchen für die Position. Nur die Positionen, die Sie ausgewählt haben, werden in Ihren Auftrag kopiert.
 16. Reduzieren Sie den Abschnitt **Rechnungen**.
-17. Erweitern Sie den Abschnitt **Zum Kopieren ausgewählte Positionen oder Kopfzeile**. Diese Ansicht zeigt eine Zusammenfassung aller Dokumente und Positionen an, die Sie ausgewählt haben, damit sie zu Ihrem Auftrag kopiert werden.  
+17. Erweitern Sie den Abschnitt **Zum Kopieren ausgewählte Positionen oder Kopfzeile**. Diese Ansicht zeigt eine Zusammenfassung aller Dokumente und Positionen an, die Sie ausgewählt haben, damit sie zum Auftrag kopiert werden.  
 18. Reduzieren Sie den Abschnitt **Zum Kopieren ausgewählte Positionen oder Kopfzeile**.
 19. Klicken Sie auf **OK**. Die Position, die Sie ausgewählt haben, ist jetzt in Ihre Reklamation kopiert worden. Das Feld **Menge** zeigt „-10“ an.   
 20. Klicken Sie im Abschnitt **Bestellposition** auf **Bestand**.
-21. Klicken Sie auf **Markierung**. Die Auftragsposition, die erstellt wurde, ist gegenüber der Bestandstransaktion aus der Kreditorenrechnung markiert worden. Dies stellt sicher, dass der Bestand, der dem Kreditor zurückgesendet wird, derselbe Bestand ist, wie der Bestand, der von ihm zuvor empfangen wurde. Es gibt einige Situationen, in denen die Markierung nicht erfolgt, beispielsweise wenn der Bestand bereits als "Verbraucht" markiert wurde oder wenn es sich um ein Produkt handelt, für das keine Markierung verwendet wird.  
+21. Klicken Sie auf **Markierung**. Die Auftragsposition, die erstellt wurde, ist gegenüber der Bestandstransaktion aus der Kreditorenrechnung markiert worden. Dies stellt sicher, dass der Bestand, der dem Lieferant zurückgesendet wird, derselbe Bestand ist, wie der Bestand, der von ihm zuvor empfangen wurde. Es gibt einige Situationen, in denen die Markierung nicht erfolgt, beispielsweise wenn der Bestand bereits als Verbraucht markiert wurde oder wenn es sich um ein Produkt handelt, für das keine Markierung verwendet wird.  
 
 22. Klicken Sie auf **OK**.
 

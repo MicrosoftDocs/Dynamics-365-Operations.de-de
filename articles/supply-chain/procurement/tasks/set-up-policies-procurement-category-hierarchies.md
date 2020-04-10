@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 230794eacd5e9911496dd3826f08126cc21494cb
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 8d8c259ad081d02395c6ae3c3b7cf66b89933fdf
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844174"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149503"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Richtlinien für Beschaffungskategoriehierarchien einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Verwenden Sie dieses Verfahren, um Regeln zum Bestellen von Produkten in einer Kategorie einzurichten. Die Regeln werden für eine bestimmte Einkaufsrichtlinie definiert. Die Kategoriezugriffsregel steuert, auf welche Beschaffungskategorien Mitarbeiter Zugriff haben, wenn sie eine Anforderung erstellen. Wenn eine Anforderung erstellt wird, werden die Einkaufsrichtlinie und Kategoriezugriffsregel, die angewendet werden sollten, durch die juristische Person und die Organisationseinheit bestimmt, der der Mitarbeiter angehört. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. In der Regel wird diese Aufgabe von einem Einkaufsleiter ausgeführt.
 
@@ -50,5 +50,5 @@ Verwenden Sie dieses Verfahren, um Regeln zum Bestellen von Produkten in einer K
 4. Klicken Sie auf **Hinzufügen**.
 5. Wählen Sie im Feld **Kategorie** dieselbe Kategorie aus, die Sie für die **Kategoriezugriffsregel** verwendet haben.
 6. Wählen Sie im Feld **Kreditorenauswahl** eine Option aus. Wählen Sie eine Regel aus, um zu steuern, welche Art von Kreditoren für die Kategorie ausgewählt werden können, wenn Anforderungen erstellt werden.  
-7. Klicken Sie auf **Schließen**. Die Richtlinienregeln, die Sie definiert haben, sind für die Anforderungen des Typs "Verbrauch" gewesen. Sollten Sie Richtlinien für Anforderungen des Typs "Wiederbeschaffung" definieren wollen, würden Sie eine Regel für den Richtlinienregeltyp mit der Bezeichnung "Wiederbeschaffungskategorie-Zugriffsrichtlinienregel" erstellen.  
+7. Klicken Sie auf **Schließen**. Die Richtlinienregeln, die Sie definiert haben, sind für die Anforderungen des Typs "Verbrauch" gewesen. Sollten Sie Richtlinien für Anforderungen des Typs „Wiederbeschaffung“ definieren wollen, würden Sie eine Regel für den Richtlinienregeltyp mit der Bezeichnung „Wiederbeschaffungskategorie-Zugriffsrichtlinienregel“ erstellen.  
 

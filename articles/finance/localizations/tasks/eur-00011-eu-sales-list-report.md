@@ -16,16 +16,16 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7038af3977797a0be2523f2414800400757b7007
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 37f1a6e3bf39e16702d1367a325134ec84369945
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183546"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144376"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 Bericht 'Zusammenfassende Meldung' generieren
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur führt Sie durch das Generieren eines Berichts für zusammenfassende Meldungen. Hierzu zählen das Übertragen von innergemeinschaftlichen Handelsbuchungen zur zusammenfassenden Meldung und das Ausführen des Berichts. Diese Prozedur umfasst auch das Erstellen einer innergemeinschaftlichen Handelstransaktion zu Demonstrationszwecken. Weitere Informationen über zusammenfassende Meldungen, einschließlich erforderliche Voraussetzungen, finden Sie in der Hilfe.
 
@@ -96,7 +96,7 @@ Diese Prozedur ist für Buchhalter vorgesehen.
 3. In der Liste markieren Sie die Zeile für das Feld "Rechnungsdatum" aus.
 4. Geben Sie im Feld "Kriterien" den Wert "01.01.2016..31.01.2016" ein.
 5. In der Liste markieren Sie die Zeile für das Feld "Berichtstatus" aus.
-6. Wählen Sie im Feld "Kriterien" den Wert "Berichtet" aus.
+6. Wählen Sie im Feld „Kriterien“ den Wert „Berichtet“ aus.
     * Sie können zusätzliche Filter auf als "Abgeschlossen" markieren innergemeinschaftlichen Handelsbuchungn anwenden.  
 7. Klicken Sie auf "OK".
 8. Wählen Sie im Feld "Abschnitt" "Abgeschlossen" aus.

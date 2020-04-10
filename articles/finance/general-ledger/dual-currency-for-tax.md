@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1ba4d09240888f0c533fb07614e75ffecea0742c
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 863403dc3b2444f00f0cac27a494fc49d3d70de7
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124092"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161591"
 ---
 # <a name="dual-currency-support-for-sales-tax"></a>Unterstützung der Umsatzsteuer in zwei Währungen
 [!include [banner](../includes/banner.md)]
@@ -34,7 +34,7 @@ Die Doppelwährungsfunktion für Dynamics 365 Finance wurde in Version 8.1 (Okto
 
 In früheren Versionen wurden die Transaktionen in der folgenden Reihenfolge in die Berichtswährung umgerechnet: 
 
-Die Transaktionssumme wurde in der Transaktionswährung berechnet > Der Transaktionsbetrag wurde in die Buchhaltungswährung umgerechnet > Der Betrag in der Buchhaltungswährung wurde in die Berichtswährung umgerechnet
+- Die Transaktionssumme wurde in der Transaktionswährung berechnet > Der Transaktionsbetrag wurde in die Buchhaltungswährung umgerechnet > Der Betrag in der Buchhaltungswährung wurde in die Berichtswährung umgerechnet
 
 Nachdem die Doppelwährungsfunktion aktiviert wurde, wurden die Transaktionen in der folgenden Reihenfolge in die Berichtswährung umgerechnet:
 
@@ -48,8 +48,6 @@ Als Folge der Unterstützung von Doppelwährungen sind zwei neue Funktionen in d
 - Steuerabrechnungs-Autosaldo in Berichtswährung (Release in Version 10.0.11)
 
 Die Doppelwährungsunterstützung für die Umsatzsteuer stellt sicher, dass die Steuern genau in der Steuerwährung berechnet werden und dass der Umsatzsteuerabrechnungssaldo sowohl in der Buchhaltungs- als auch in der Berichtswährung genau berechnet wird. 
-
-Die neuen Funktionen sind derzeit für private Vorschaukunden aktiviert. Um die Funktionen zu aktivieren, richten Sie eine Serviceanfrage über entsprechende Kanäle an Microsoft.
 
 ## <a name="sales-tax-conversion"></a>Mehrwertsteuerkonvertierung
 

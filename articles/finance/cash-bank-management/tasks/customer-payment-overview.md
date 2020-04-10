@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7777ba38e4bf41b17fae698200017b933fc9e876
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9196bedcea26a0024b3eabbbcb9c58a0155a7490
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188164"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141671"
 ---
 # <a name="customer-payment-overview"></a>Übersicht Debitorenzahlung
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieser Aufgabenleitfaden führt durch verschiedene Methoden zum Eingeben von Debitorenzahlungen. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
@@ -45,7 +45,7 @@ Dieser Aufgabenleitfaden führt durch verschiedene Methoden zum Eingeben von Deb
 14. Klicken Sie im **Aktivitätsbereich** auf „Zeilen“. Beim Öffnen von Positionen sehen Sie alle Zahlungen, die Sie auf der Seite **Debitorenzahlungen eingeben** erfasst und in der Erfassung gespeichert haben. Sie können diese Seite auch nutzen, um neue Debitorenzahlungen einzugeben oder bestehende Debitorenzahlungen zu bearbeiten, bevor sie gebucht werden.
 15. Klicken Sie auf **Neu**, um eine weitere Zahlung zu erstellen. 
 16. Wählen Sie den Debitor aus, von dem Sie die Zahlung erhalten haben. Wenn Sie den Debitor nicht kennen, jedoch wissen, dass durch die Zahlung eine Rechnung bezahlt wurde, verwenden Sie das Rechnungsfeld, um die Rechnung manuell einzugeben oder auszuwählen. Der Debitor wird standardmäßig festgelegt, nachdem die Rechnung ausgewählt ist.  
-17. Klicken Sie auf **Buchungen ausgleichen**, um Rechnungen zu markieren, die bezahlt wurden. Sie müssen die Zahlung keinen Rechnungen zuordnen. Wenn es sich um eine Vorauszahlung handelt oder Sie nicht wissen, welche Rechnung bezahlt wurde, können Sie die Zahlung eingeben und buchen. Die Zahlung kann einer Rechnung zu einem späteren Zeitpunkt zugeordnet werden.  
+17. Klicken Sie auf **Transaktionen ausgleichen**, um Rechnungen zu markieren, die bezahlt wurden. Sie müssen die Zahlung nicht mit Rechnungen ausgleichen. Wenn es sich um eine Vorauszahlung handelt oder Sie nicht wissen, welche Rechnung bezahlt wurde, können Sie die Zahlung eingeben und buchen. Die Zahlung kann einer Rechnung zu einem späteren Zeitpunkt zugeordnet werden.  
 18. Markieren Sie bezahlte Rechnungen. 
 19. Geben Sie im Feld **Betrag** den Betrag der Zahlung ein, der mit der ausgewählten Rechnung ausgeglichen werden soll.
 20. Klicken Sie auf **OK**.

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4429bda6efddbb4f1fa7da06e91e51d885919c05
-ms.sourcegitcommit: e10491a2ff04f65d9f306ef6e068ee123213b23b
+ms.openlocfilehash: abe6745682030766eabcd4411121866c9d890be0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "1914953"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149623"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Eine Anforderung erstellen, die eine Angebotsanforderung verwendet
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Thema erklärt, wie man Preis- und Kreditoreninformationen einer Bestellanforderung von einem Angebotsanforderungsprozess aus hinzufügt. Das Beispiel, das in diesem Leitfaden gezeigt wird, kann in dem USMF-Demodatenunternehmen verwendet werden, und Sie müssen als Administrator angemeldet sein, um alle Schritte abzuschließen. Die Aufgaben in diesem Leitfaden würden gewöhnlich von Prokuristen durchgeführt werden.
 
@@ -56,7 +56,7 @@ Die folgende Aufgabe besteht darin, eine Angebotsanforderung zu erstellen, um An
 2. Wählen Sie **Historie anzeigen** aus.
 3. Aktualisieren Sie die Seite.
 4. Erweitern Sie den Abschnitt **Verfolgungsdetails**.
-5. Im Baum wählen Sie die Position aus, die mit „Positionsworkflow aktiviert am“ beginnt.
+5. Im Baum wählen Sie dann die Position aus, die mit „Positionsworkflow aktiviert am“ beginnt.
 6. Wählen Sie **Workflowdetails anzeigen** aus.
 7. Erweitern Sie den Abschnitt **Arbeitsaufgaben**.
 8. Wählen Sie **Neu zuordnen** aus.
@@ -68,7 +68,7 @@ Die folgende Aufgabe besteht darin, eine Angebotsanforderung zu erstellen, um An
 
 1. Aktualisieren Sie die Seite.
 2. Wählen Sie **Angebotsanforderung** aus.
-3. Wählen Sie im Feld **Kaufende juristische Person** die Option **USMF** aus. Sie müssen dieselbe juristische Person auswählen, die auf der Anforderungsposition ist.  
+3. Wählen Sie im Feld **Kaufende juristische Person** die Option **USMF** aus. Sie müssen dieselbe juristische Person auswählen, die auch auf der Anforderungsposition ist.  
 4. Markieren Sie in der Liste die ausgewählte Zeile. Wenn Sie mehrere Positionen auf Ihrer Bestellanforderung hatten, wählen Sie alle die Positionen aus, die Sie zur Angebotsanforderung hinzufügen möchten.  
 5. Wählen Sie **OK**.
 6. Aktualisieren Sie die Seite.
@@ -84,7 +84,7 @@ Die folgende Aufgabe besteht darin, eine Angebotsanforderung zu erstellen, um An
 16. Wählen Sie **Antwort eingeben** aus.
 17. Klicken Sie im Aktivitätsbereich auf **Antworten**.
 18. Wählen Sie **Daten in Antwort kopieren** aus. Dies kopiert Daten, wie die Menge und die Datumsangaben, von der Angebotsanforderung zur Antwort.  
-19. Geben Sie im Feld **Einzelpreis** eine Zahl ein. Dies ist der Preis, den Sie vom Kreditor empfangen haben. Sie sollten auch zusätzliche Information vom Kreditor eingeben.  
+19. Geben Sie im Feld **Einzelpreis** eine Zahl ein. Dies ist der Preis, den Sie vom Lieferant empfangen haben. Sie sollten auch zusätzliche Information vom Kreditor eingeben.  
 20. Wählen Sie **Akzeptieren** aus.
 21. Wählen Sie **OK**.
 

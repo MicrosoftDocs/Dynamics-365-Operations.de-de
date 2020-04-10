@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7549d0c2a3cfa0feb26a641bbc41702b4b21158
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 7e32decdd13cb578c1ac026f25a56b37ff7231a9
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833953"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146467"
 ---
 # <a name="fulfill-sales-agreements"></a>Kaufverträge erfüllen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Verfahren zeigt Ihnen, wie einen Kaufvertrag über die Zuordnung von Aufträgen erfüllt wird. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Bevor Sie mit diesem Leitfaden starten, vergewissern Sie sich, einen gültigen Kaufvertrag vom Typ "Produktwertszusage " vorhanden ist. Alternativ können Sie den Leitfaden "Kaufvertrag erstellen" ausführen.  
 

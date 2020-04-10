@@ -3,7 +3,7 @@ title: Integration mit Finance konfigurieren
 description: Dieser Artikel beschreibt die Funktionen, die für die Integration von Dynamics 365 Human Resources und Dynamics 365 Finance verfügbar sind.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,73 +18,75 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2e7070f627654c9eb889f3e0ee27e37681db0502
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 1558d050627c8dc64727884901ed0d0716df0c50
+ms.sourcegitcommit: f481dfd6bf93bb3e03a7bd9a765e2cfd14305d02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009119"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169276"
 ---
 # <a name="configure-integration-with-finance"></a>Integration mit Finance konfigurieren
 
-Dieser Artikel beschreibt die Funktionen, die für die Integration von Dynamics 365 Human Resources und Dynamics 365 Finance verfügbar sind. Die Vorlage für Human Resources nach Finance, die mit dem [Datenintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) verfügbar ist, ermöglicht den Datenfluss für Stellen, Positionen und Mitarbeiter. Die Daten fließen von Human Resources nach Finance. Die Vorlage bietet keine Möglichkeit, Daten von Finance zurück zu Human Resources fließen zu lassen. 
+Um Dynamics 365 Human Resources in Dynamics 365 Finance zu integrieren, können Sie die Vorlage „Human Resources to Finance“ in [Datenintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator) verwenden. Die Vorlage „Human Resources to Finance“ ermöglicht den Datenfluss für Jobs, Positionen und Mitarbeiter. Die Vorlage ermöglicht den Datenfluss von der Personalabteilung in die Finanzabteilung, jedoch nicht den Datenfluss von der Finanzabteilung in die Personalabteilung.
 
-![Human Resources nach Finance – Integrationsfluss](./media/TalentFinOpsFlow.png)
+![Human Resources nach Finance – Integrationsfluss](./media/hr-admin-integration-finance-flow.png)
 
-Die Human Resources zu Finance-Lösung bietet die folgenden Arten der Datensynchronisierung. 
+Die Human Resources zu Finance-Lösung bietet die folgenden Arten der Datensynchronisierung:
 
-- Verwalten von Jobs in Human Resources und Synchronisierung dieser von Human Resources nach Finance.
-- Verwalten von Positionen und Positionszuweisungen in Human Resources und Synchronisierung von diesen von Human Resources nach Finance.
-- Verwalten von Beschäftigungsverhältnissen in Human Resources und Synchronisierung dieser von Human Resources nach Finance.
-- Verwalten von Arbeitskräften und Arbeitskräfteadressen in Human Resources und Synchronisierung von diesen von Human Resources nach Finance.
+- Verwalten von Jobs in Human Resources und Synchronisierung dieser von Human Resources nach Finance
+- Verwalten von Positionen und Positionszuweisungen in Human Resources und Synchronisierung von diesen von Human Resources nach Finance
+- Verwalten von Beschäftigungsverhältnissen in Human Resources und Synchronisierung dieser von Human Resources nach Finance
+- Verwalten von Arbeitskräften und Arbeitskräfteadressen in Human Resources und Synchronisierung von diesen von Human Resources nach Finance
 
 ## <a name="system-requirements-for-human-resources"></a>Systemanforderungen für Human Resources
+
 Die Integrationslösung erfordert die folgenden Versionen von Human Resources und Finance: 
-- Dynamics 365 Human Resources auf Common Data Service.
+
+- Dynamics 365 Human Resources am Common Data Service
 - Dynamics 365 Finance Version 7.2 und höher
 
 ## <a name="template-and-tasks"></a>Vorlage und Aufgaben
 
-Führen Sie die folgenden Schritte aus, um auf die Vorlage zuzugreifen:
+So greifen Sie auf die Vorlage Human Resources to Finance zu.
+
 1. Öffnen Sie das [Power Apps Admin Center](https://admin.powerapps.com/). 
-1. Wählen Sie **Projekte**, und dann auf, in der oberen rechten Ecke, wählen Sie **Neues Projekt**, um öffentliche Vorlagen auszuwählen. Für jede juristische Person, die Sie in Finance integrieren möchten, muss ein neues Projekt erstellt werden.
 
-Mit der folgenden Vorlage werden Datensätze aus Human Resources nach Finance synchronisiert.
+2. Wählen Sie **Projekte**und dann **Neues Projekt** in der oberen rechten Ecke aus. Erstellen Sie für jede juristische Person, die Sie in Finance integrieren möchten, ein neues Projekt.
 
-- **Name der Vorlage in der Datenintegration:** Human Resources (Human Resources Common Data Service nach Finance)
+3. Wählen Sie **Personalverwaltung (Human Resources Common Data Service to Finance)**, um Datensätze von Human Resources nach Finance zu synchronisieren.
 
-  > [!NOTE]
-  > Der Name der Aufgabe enthält die Entitäten, die in den einzelnen Anwendungen verwendet werden. Die Quelle (Human Resources) befindet sich links und das Ziel (Finance and Operations) rechts.
+Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von Human Resources nach Finance zu synchronisieren:
 
-Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von Human Resources nach Finance zu synchronisieren.
-- Job-Funktionen zu Vergütung (Stellenfunktion)
-- Abteilungen zu Organisationseinheit
-- Stellentypen zu Vergütung (Stellentyp)
-- Stellen zu Stellen
-- Stellen zu Stellendetails
-- Positionstypen zu Positionstyp
-- Stellenpositionen zu Basisposition
-- Stellenpositionen zu Positionsdetails
-- Stellenpositionen zu Positionsdauern
-- Stellenpositionen zu Positionshierarchien
-- Arbeitskräfte zu Arbeitskraft
-- Beschäftigungen zu Beschäftigung
-- Beschäftigungen zu Beschäftigung - Details
-- Position der Arbeitskraftzuordnung zu Position der Arbeitskraftzuordnungen
-- Arbeitskräfteadressen zu Arbeitskraft-Postanschrift V2
+- **Job-Funktionen zu Vergütung (Stellenfunktion)**
+- **Abteilungen zu Organisationseinheit**
+- **Stellentypen zu Vergütung (Stellentyp)**
+- **Stellen zu Stellen**
+- **Stellen zu Stellendetails**
+- **Positionstypen zu Positionstyp**
+- **Stellenpositionen zu Basisposition**
+- **Stellenpositionen zu Positionsdetails**
+- **Stellenpositionen zu Positionsdauern**
+- **Stellenpositionen zu Positionshierarchien**
+- **Arbeitskräfte zu Arbeitskraft**
+- **Beschäftigungen zu Beschäftigung**
+- **Beschäftigungen zu Beschäftigung - Details**
+- **Position der Arbeitskraftzuordnung zu Position der Arbeitskraftzuordnungen**
+- **Arbeitskräfteadressen zu Arbeitskraft-Postanschrift V2**
 
 ## <a name="template-mappings"></a>Vorlagenzuordnungen
 
+In den folgenden Vorlagenzuordnungstabellen enthält der Name der Aufgabe die in jeder Anwendung verwendeten Entitäten. Die Quelle (Human Resources) befindet sich links und das Ziel (Finance) rechts.
+
 ### <a name="job-functions-to-compensation-job-function"></a>Job-Funktionen zu Vergütung (Stellenfunktion)
 
-| Common Data Service-Entität (Quelle)                 | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle) | Finance-Entität (Ziel) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job Funktionsname)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | BESCHREIBUNG   (BESCHREIBUNG)                 |
 
 ### <a name="departments-to-operating-unit"></a>Abteilungen zu Organisationseinheit
 
-| Common Data Service-Entität (Quelle)                           | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)           | Finance-Entität (Ziel) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -93,7 +95,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="job-types-to-compensation-job-type"></a>Stellentypen zu Vergütung (Stellentyp)
 
-| Common Data Service-Entität (Quelle)                   | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)   | Finance-Entität (Ziel) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | BESCHREIBUNG   (BESCHREIBUNG)                 |
@@ -101,7 +103,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="jobs-to-jobs"></a>Stellen zu Stellen
 
-| Common Data Service-Entität (Quelle)                                           | Finance and Operations-Entität (Ziel)           |
+| Common Data Service-Entität (Quelle)                           | Finance-Entität (Ziel)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -111,7 +113,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="jobs-to-job-detail"></a>Stellen zu Stellendetails
 
-| Common Data Service-Entität (Quelle)                                             | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Job-Typ (Job-Typ-Name))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -122,7 +124,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="position-types-to-position-type"></a>Positionstypen zu Positionstyp
 
-| Common Data Service-Entität (Quelle)                       | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)       | Finance-Entität (Ziel) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | BESCHREIBUNG   (BESCHREIBUNG)                 |
@@ -130,13 +132,13 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="job-positions-to-base-position"></a>Stellenpositionen zu Basisposition
 
-| Common Data Service-Entität (Quelle)                           | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)           | Finance-Entität (Ziel) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Stellenpositionsnummer) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Stellenpositionen zu Positionsdetails
 
-| Common Data Service-Entität (Quelle)                                                      | Finance and Operations-Entität (Ziel)       |
+| Common Data Service-Entität (Quelle)              | Finance-Entität (Ziel)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Stellenpositionsnummer)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Stelle (Name))                                        | JOBID (JOBID)                                    |
@@ -150,15 +152,15 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="job-positions-to-position-durations"></a>Stellenpositionen zu Positionsdauern
 
-| Common Data Service-Entität (Quelle)                             | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)             | Finance-Entität (Ziel) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Stellenpositionsnummer)   | POSITIONID (POSITIONID)                      |
 | Berechnete Aktivierung (Berechnete Aktivierung) | VALIDFROM (VALIDFROM)                        |
 | Berechnete Pensionierung (Berechnete Pensionierung) | VALIDTO (VALIDTO)                         |
 
-### <a name="job-positions-to-position-hiearchies"></a>Stellenpositionen zu Positionshierarchien
+### <a name="job-positions-to-position-hierarchies"></a>Stellenpositionen zu Positionshierarchien
 
-| Common Data Service-Entität (Quelle)                                                                           | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)        | Finance-Entität (Ziel) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Stellenpositionsnummer)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -168,7 +170,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 
 ### <a name="workers-to-worker"></a>Arbeitskräfte zu Arbeitskraft
-| Common Data Service-Entität (Quelle)                           | Finance and Operations-Entität (Ziel)       |
+| Common Data Service-Entität (Quelle)           | Finance-Entität (Ziel)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | GEBURTSDATUM   (GEBURTSDATUM)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -187,7 +189,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="employments-to-employment"></a>Beschäftigungen zu Beschäftigung
 
-| Common Data Service-Entität (Quelle)                                             | Finance and Operations-Entität (Ziel) |
+| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -197,7 +199,7 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="employments-to-employment-detail"></a>Beschäftigungen zu Beschäftigung - Details
 
-| Common Data Service-Entität (Quelle)                                             | Finance and Operations-Entität (Ziel)   |
+| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -215,16 +217,16 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Position der Arbeitskraftzuordnung zu Position der Arbeitskraftzuordnungen
 
-| Common Data Service-Entität (Quelle)                                             | Finance and Operations-Entität (Ziel)   |
+| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber (Stellenpositionsnummer)                   | POSITIONID(POSITIONID)                        |
 | cdm_validfrom   (gültig von)                                    | VALIDFROM   (VALIDFROM)                       |
-| cdm_validto (gültig   bis)                                        | VALIDTO (VALIDTO)                             |
+| cdm_validto (gültig bis)                                        | VALIDTO (VALIDTO)                             |
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Arbeitskräfteadressen zu Arbeitskraft-Postanschrift V2
 
-| Common Data Service-Entität (Quelle)                                             | Finance and Operations-Entität (Ziel)   |
+| Common Data Service-Entität (Quelle)                             | Finance-Entität (Ziel)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -239,9 +241,10 @@ Die folgenden zugrunde liegenden Aufgaben werden verwendet, um Datensätze von H
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSDESCRIPTION(ADDRESSDESCRIPTION)        |
 
 ## <a name="integration-considerations"></a>Überlegungen zur Integration
-Bei der Integration von Daten von Human Resources in Finance wird versucht, Datensätze basierend auf der ID miteinander abzugleichen. Bei einer Übereinstimmung werden die Daten in Finance mit den Werten aus Human Resources überschrieben. Ein Problem kann jedoch auftreten, wenn es sich logisch um unterschiedliche Datensätze handelt und dieselbe ID in Human Resources oder Finance basierend auf dem jeweiligen Nummernkreis generiert wurde.
 
-Die Bereiche, in denen dies auftreten kann, gehören zu den Arbeitskräften. Diese nutzen Personalnummern und Positionen zum Abgleich. Für Stellen werden keine Nummernkreise verwendet. Wenn also dieselbe Stellen-ID in Human Resources und Finance vorhanden ist, überschreiben die Daten aus Human Resources die Daten aus Dynamics 365 Finance. 
+Bei der Integration von Daten von Human Resources in Finance wird versucht, Datensätze basierend auf der ID miteinander abzugleichen. Bei einer Übereinstimmung der Datensätze werden die Daten in Finance vom Datenintegrator mit den Werten aus Human Resources überschrieben. Ein Problem kann jedoch auftreten, wenn es sich logisch um unterschiedliche Datensätze handelt und dieselbe ID in Human Resources oder Finance basierend auf dem jeweiligen Nummernkreis generiert wurde.
+
+Dieses Problem kann bei **Arbeitskraft** auftreten. Diese nutzen **Personalnummer** und **Positionen** zum Abgleich. Für Stellen werden keine Nummernkreise verwendet. Wenn also dieselbe Stellen-ID in Human Resources und Finance vorhanden ist, überschreiben die Daten aus Human Resources die Daten aus Dynamics 365 Finance. 
 
 Um Probleme mit doppelten IDs zu vermeiden, können Sie entweder ein Präfix zum [Nummernkreis](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json) hinzufügen oder eine Anfangsnummer für den Nummernkreis festlegen, die außerhalb des Bereichs des anderen Systems liegt. 
 
@@ -250,5 +253,3 @@ Die Lagerplatzkennung, die für die Arbeitskraftadresse verwendet wird, gehört 
 Die folgenden Abbildungen zeigen ein Beispiel für eine Vorlagenzuordnung im Datenintegrator. 
 
 ![Vorlagenzuordnung](./media/IntegrationMapping.png)
-
-

@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbed62c80c14e7cfe96d38d43a5db39b0469d939
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 6132d48f276b27797e86fbcde11746b7e4da7d3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184921"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142454"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Formate zum Generieren von Dokumenten verändern, die Anwendungsdaten haben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 3: Ändern von Modell und Zuordnung)".
 
@@ -96,13 +96,13 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
 
 ## <a name="modify-format-to-memorize-details-of-reporting"></a>Ändern Sie das Format, um Details zur Berichterstellung zu speichern
 1. Klicken Sie auf „Format zu Modell zuordnen”.
-2. Klicken Sie auf "Neu".
+2. Klicken Sie auf Neu.
 3. Wählen Sie im Definitionsfeld den Wert Für Anwendungsdatenaktualisierung Wurzelelement aus oder geben Sie diesen ein.
     * Aktualisierung der Anwendungsdaten  
 4. Geben Sie im Feld Typ Zuordnung zu Aktualisierungstaten.
     * Zuordnung, um die Daten zu aktualisieren  
 5. Klicken Sie auf "Speichern".
-    * Diese Zuordnung definiert, wie die Details des Intrastat-Berichts gesammelt und im Datenmodell erfasst werden, deren Struktur beim ausgewählten Stammartikel "Für Anwendungsdatenaktualisierungen" angegeben wird. Diese Details, die Modellzuordnung mit demselben Stammartikel "Für Anwendungsdatenaktualisierungen" und die Richtung "Zum Ziel "werden für die Datenaktualisierung verwendet. Die Anwendungsdatenaktualiserung beginnt direkt nachdem der ausgehenden Intrastat-Bericht generiert wurde. Beachten Sie, dass die Anwendungsdatenenaktualisierung zur Laufzeit übersprungen werden kann, aber dass das Datenmodell leer sein muss (mit leeren Datensatzbeleglist).   
+    * Diese Zuordnung definiert, wie die Details des Intrastat-Berichts gesammelt und im Datenmodell erfasst werden, deren Struktur beim ausgewählten Stammartikel „Für Anwendungsdatenaktualisierungen“ angegeben wird. Diese Details, die Modellzuordnung mit demselben Stammartikel „Für Anwendungsdatenaktualisierungen“ und die Richtung „Zum Ziel“ werden für die Datenaktualisierung verwendet. Die Anwendungsdatenaktualiserung beginnt direkt nachdem der ausgehenden Intrastat-Bericht generiert wurde. Beachten Sie, dass die Anwendungsdatenenaktualisierung zur Laufzeit übersprungen werden kann, aber dass das Datenmodell leer sein muss (mit leeren Datensatzbeleglist).   
 6. Klicken Sie auf Designer.
     * Beachten Sie, dass das ausgehende Intrastat-Berichts-Format standardmäßig als Datenquelle für diese Modellzuordnung hinzugefügt wird.  
     * Binden Sie die Elemente des Berichts (stellt Datenquelle dar) an die Elemente des Datenmodells, das auf Basis des ausgewählten Stammartikel des Modells gefiltert wird.  

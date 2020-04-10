@@ -1,6 +1,6 @@
 ---
 title: Generieren von Dokumenten, die Anwendungsdaten haben
-description: 'Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 4: Ändern Sie das Format)".'
+description: 'Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, „ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 4: Ändern Sie das Format)“.'
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 759869577ef30cd3f81eb74103a93cc5d1a3d608
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: dcc00bba4aa92ad089bcab83ee22f79c21ccc252
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042849"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141855"
 ---
-# <a name="generate-documents-that-have-application-data"></a>Generieren von Dokumenten, die Anwendungsdaten haben
+# <a name="generate-documents-that-have-application-data"></a>Generieren von Dokumenten mit Anwendungsdaten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 4: Ändern Sie das Format)".
+Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, „ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 4: Ändern Sie das Format)“.
 
 
 
@@ -43,13 +43,13 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 
     Zum Archivieren der Details des Intrastat-Berichterstattungsprozess müssen wir Datensätze jedes Archivs, das wir erstellt haben identifizieren. Ein spezieller Nummernkreis muss konfiguriert werden.  
 
-3. Wählen Sie die Intrastat-Archiv "ID-" Referenz aus.
+3. Wählen Sie die „Intrastat-Archiv ID“-Referenz aus.
 4. Geben Sie im Feld "Nummernkreiscode" einen Wert ein.
 
-    Geben Sie im Feld "Nummernsequenzcode" einen Wert ein, oder wählen Sie einen Wert aus.  
+    Geben Sie im Feld „Nummernsequenzcode“ einen Wert ein, oder wählen Sie den Wert „Fore_2“ aus.  
 
 5. ResolveChanges den Nummersequenzcode.
-6. Klicken Sie auf "Speichern".
+6. Klicken Sie auf Speichern.
 7. Schließen Sie die Seite.
 
 ## <a name="run-modified-er-format"></a>Führen Sie geändertes ER-Format aus

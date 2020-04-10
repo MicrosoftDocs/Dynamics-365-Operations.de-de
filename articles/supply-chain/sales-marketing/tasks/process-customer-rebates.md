@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f3a6678b09ce4011b7f80d40979209cc2f588df8
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 73bc22949d0b19fa04bf27e6fd7df7b27832795b
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994933"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148583"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Debitorenrückvergütungen generieren und verarbeiten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgenerierung so weit des Übergebens sie als Abgrenzungen zu Debitoren verarbeitet. Sie läuft Sie durch ein besonderes Beispiel seitens, um zu erläutern, wie die verschiedenen Bedingungen auf den Rückvergütungspositionen die Endbetrag auswirken, die den Debitor gutgeschrieben werden. Sie müssen das USMF-Demodatunternehmen verwenden und führen die folgenden Aufgaben von, bevor Sie Handbuch starten: (1) Für die der Debitorenparameterseite und erweitern die Registerkarte Preise und dann die Preisdetailregisterkarte und prüfen, ob die aktivierens-Preisdetailoption auf "Ja" festgelegt ist. (2) Die Seite "Rückvergütungsvereinbarungen" aufrufen und die Debitorenrückvergütungsvereinbarung auswählen: USMF-000001. Wenn das Workflowgenehmigungsstatusfeld nicht zu genehmigtem festgelegt wird, benötigen Sie auf Prüfung im Aktivitätsbereich, um ihn zu genehmigen.
 
@@ -36,7 +36,7 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
     - Die Vereinbarung gilt für einen einzelnen Debitor, in diesem Beispielsdebitor US-009.  
     - Der Debitor Nachlässe von gegeben, wenn Sie ein bestimmtes Produkt erwerben. In diesem Fall hat das Produkt Artikelnummer T0020.   
     - Das Verkaufsleistung des Debitors, für das die Rückvergütung ist, werden vorkalkuliert, wöchentlich kumuliert werden sollen.  
-    - Die Einstellungen für "des Preises, der der" übernommen wird, ist grob, was bedeutet, dass der Umsatzbetrag der Position auf, welcher Grundlage der Anspruch bewertet wird, nicht durch den Positionsrabatt verringert wird.  
+    - Die Einstellungen für den Ursprung des Preises ist „Brutto“, was bedeutet, dass der Umsatzbetrag der Position, auf dessen Grundlage der Anspruch vorkalkuliert wird, nicht durch den Positionsrabatt verringert wird.  
     - Das Rückvergütungszeilenumbruch-Typfeld zeigt die Methode zum Berechnen von Nachlässen. In diesem Fall für die die Umsatzvorgabe für Nachlässe bewertet werden sollen, wird der Menge festgelegt.   
     - Die Positionen der Vereinbarung geben den Nachlassbetrag Typ, den tatsächlichen Nachlasswert und die Schwellenwerte. In diesem Beispiel gemäß Abschnitt der Debitor für eine Rückvergütung von EUR 20 pro die verkaufte Einheit, wenn deren wöchentlichen Einkäufe des Produkts innerhalb von 1 bis 50 Einheiten fallen; und einen Rabatt von 40 EUR pro verkaufte Einheit, wenn sie über 50 Einheiten kaufen.  
 2. Schließen Sie die Seite.
@@ -68,7 +68,7 @@ Diese Verfahren zeigt, wie von Debitorenrückvergütungen aus der Anspruchsgener
     - Die Rückvergütungsseite agiert ein Werktisch, in dem Sie prüfen, genehmigen und können Prozeßrückvergütungsansprüche. Verarbeiten Sie nun die Ansprüche, die bei der Fakturierung eines Auftrags für Debitor US-009 erstellt wurden, der der Betreff der Rückvergütungsvereinbarung USMF-000001 ist.   
     - Die erste Zeile stellt einen Rückvergütungsanspruch für 800 EUR, der auf dem Verkauf von 40 Einheiten des Produkts T0020 ist, berechnet bei 20 EUR pro Einheit dar. Dieses entspricht die Bedingungen der ersten Mengenpause in der Nachlassvereinbarung ab.  
     - Der zweite Anspruch liegt bei 2.400 EUR, der auf dem Verkauf von 60 Einheiten des Produkts T0020 ist, berechnet bei 40 EUR pro Einheit, aufgrund der zweiten Mengenpause in der Vereinbarung.  
-    - Beide Ansprüche sind in, ", um berechneter" Status werden sollen. Das bedeutet, dass sie mit einer Vereinbarung zugeordnet sind, die das Verkaufsleistung des Debitors auf Basis regelmäßiger verfolgt und dass sie neu berechnet werden müssen, um das Gesamtumsatzvolumen innerhalb der betreffenden Periode abzulegen.   
+    - Beide Ansprüche sind im Status „Zu berechnen“. Das bedeutet, dass sie mit einer Vereinbarung zugeordnet sind, die das Verkaufsleistung des Debitors auf Basis regelmäßiger verfolgt und dass sie neu berechnet werden müssen, um das Gesamtumsatzvolumen innerhalb der betreffenden Periode abzulegen.   
 2. Klicken Sie auf **Kumulieren**.
 3. Geben Sie im Feld **Debitor** einen Wert ein, oder wählen Sie einen Wert aus.
 4. Das **Startdatum** darf nicht vor dem heutigen Datum liegen.

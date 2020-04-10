@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a05565d220c53d0f860a2c0569622b55c4021d6
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 412e7df299a419642018a62e6e8febd5d59c65e1
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1833873"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148450"
 ---
 # <a name="process-rebates-for-payment"></a>Zahlungsnachlässe verarbeiten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Diese Verfahren zeigt, wie genehmigte und verarbeiteten Debitorenrückvergütungen zu den Gutschriften konvertiert. Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Die Vorbedingung für dieses Handbuch ist, eine oder mehrere Rückvergütungsansprüche zu haben, die einen Status der Markierung haben. Wenn Sie USMF verwenden, sollten Sie das "generieren und verarbeiten Kundenrabatt" Handbuch ausführen, bevor Sie dieses Handbuch starten.
+Diese Verfahren zeigt, wie genehmigte und verarbeiteten Debitorenrückvergütungen zu den Gutschriften konvertiert. Sie können diese Anleitung im Demodatenunternehmen USMF ausführen. Die Vorbedingung für dieses Handbuch ist, eine oder mehrere Rückvergütungsansprüche zu haben, die einen Status der Markierung haben. Wenn Sie USMF verwenden, sollten Sie das „generieren und verarbeiten Kundenrabatt“ Handbuch ausführen, bevor Sie dieses Handbuch starten.
 
 
 ## <a name="convert-rebate-claims-to-credit-note"></a>Konvertieren Sie Rückvergütungsansprüche zur Gutschrift

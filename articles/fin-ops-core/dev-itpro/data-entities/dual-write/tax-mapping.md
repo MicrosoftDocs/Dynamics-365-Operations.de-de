@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ''
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 0d32a5f7859f0200da823a73d94b9a6b2a9c8e7d
-ms.sourcegitcommit: 54baab2a04e5c534fc2d1fd67b67e23a152d4e57
+ms.openlocfilehash: a4da37d45698290b40f6c72148f1500bef72127a
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3019796"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173084"
 ---
 # <a name="integrated-tax"></a>Integrierte Steuer
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Steuereinstellungsdaten definieren die Einstellung sowohl für indirekte Steuern (MwSt., GST, Mehrwertsteuer) und Quellensteuer. Es werden die Steuerberechnungsregel, der Steuersatz, die Steuerbuchhaltung, der Steuerausgleich und weitere Konzepte beschrieben.
 
@@ -38,16 +38,16 @@ Steuereinstellungsdaten definieren die Einstellung sowohl für indirekte Steuern
 
 Steuerdaten enthalten eine Sammlung von Entitätszuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.
 
-Finance and Operations   | Sonstige Dynamics 365-Apps
+| Finance and Operations Apps | Modellgesteuerte Anwendungen in Dynamics 365 | Beschreibung |
 -------------------------|---------------------------------
-Steuercodes                  | msdyn\_taxcodes.md
-Steuergruppen               | msdyn\_taxgroups.md
-Steuerpostengruppen          | msdyn\_taxitemgroups.md
-Steuerbefreiungen           | msdyn\_taxexemptcodes.md
-Steuerbehörden          | msdyn\_taxauthorities.md
-Quellensteuercodes      | msdyn\_withholdingtaxcodes.md
-Quellensteuergruppen   | msdyn\_withholdingtaxgroups.md
-Steuersachkontengruppe | msdyn\_taxpostinggroups  
+Steuercodes                   | msdyn\_taxcodes.md | 
+Steuergruppen                 | msdyn\_taxgroups.md | 
+Steuerpostengruppen             | msdyn\_taxitemgroups.md | 
+Steuerbefreiungen             | msdyn\_taxexemptcodes.md | 
+Steuerbehörden             | msdyn\_taxauthorities.md | 
+Quellensteuercodes       | msdyn\_withholdingtaxcodes.md | 
+Quellensteuergruppen     | msdyn\_withholdingtaxgroups.md | 
+Steuersachkontengruppe | msdyn\_taxpostinggroups     | 
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 

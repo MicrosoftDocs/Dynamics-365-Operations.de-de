@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 327f03435ab55551953fd998dd89c831c76c4c26
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 208b1be20a8833afbf4929a7ceda706aeb5bda3b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182599"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142085"
 ---
 # <a name="design-er-configurations-to-generate-reports-in-word-format"></a>EB-Konfigurationen entwerfen, um Berichte im Word-Format zu generieren
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer entweder in der Rolle „Systemadministrator” oder „Entwickler für elektronische Berichterstellung” Formate für die elektronische Berichterstellung (EB) zum Generieren von Berichten als Microsoft Word-Dateien konfigurieren kann. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
 
-Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen. Im Voraus müssen Sie auch die folgenden Vorlagen für den Beispielbericht herunterladen und lokal speichern:
+Um diese Schritte abzuschließen, müssen Sie die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen“ abschließen. Im Voraus müssen Sie auch die folgenden Vorlagen für den Beispielbericht herunterladen und lokal speichern:
 
 - [Vorlage des Zahlungsberichts](https://go.microsoft.com/fwlink/?linkid=862266)
 - [Begrenzte Vorlage eines Zahlungsberichtes](https://go.microsoft.com/fwlink/?linkid=862266)
@@ -39,7 +39,7 @@ Diese Prozedur ist eine Funktion, für die in Microsoft Dynamics 365 for Operati
 
 
 ## <a name="select-the-existing-er-report-configuration"></a>Wählen Sie die vorhandene ER-Berichtskonfiguration aus
-1. Gehen Sie im **Navigationsbereich zu Module > Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung**. Stellen Sie sicher, dass der Konfigurationsanbieter „Litware, Inc.” als aktiv ausgewählt ist.  
+1. Gehen Sie im **Navigationsbereich zu Module > Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung**. Stellen Sie sicher, dass der Konfigurationsanbieter „Litware, Inc.“ ist als aktiv ausgewählt ist.  
 2. Klicken Sie auf **Berichterstellungskonfigurationen**. Wir verwenden die vorhandene ER-Koniguration erneut, die ursprünglich entworfen wurde, um die Berichtsausgabe im OPENXML-Format zu generieren.  
 3. Erweitern oder reduzieren Sie 'Zahlungsmodell' in der Struktur.
 4. Wählen Sie in der Struktur die Option "Zahlungsmodell \Beispiel-Arbeitsblattbericht" aus.
@@ -58,9 +58,9 @@ Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML
 7. Geben Sie im Feld **Vorlage** einen Wert ein, oder wählen Sie einen Wert aus.
 
 ## <a name="extend-the-word-template-by-adding-a-custom-xml-part"></a>Erweitern der Word-Vorlage durch Hinzufügen eines benutzerdefinierten XML-Teils
-1. Klicken Sie auf **Speichern**. Zusätzlich zum Speichern von Konfigurationsänderungen, wird durch die Aktivität „Speichern” auch die angehängte Word-Vorlage aktualisiert. Die Struktur des entworfenen Formats wird zum zugeordneten Word-Dokument als neuer benutzerdefinierter XML-Abschnitt mit dem Namen „Bericht” übertragen. Beachten Sie, dass die angefügte Word-Vorlage nicht nur das Layout des Dokuments enthält, das wir als ER-Ausgabe generieren möchten. Es enthält auch die Struktur von Daten, die ER in diese Vorlage zur Laufzeit auffüllen wird.  
+1. Klicken Sie auf **Speichern**. Zusätzlich zum Speichern von Konfigurationsänderungen, wird durch die Aktivität „Speichern” auch die angehängte Word-Vorlage aktualisiert. Die Struktur des entworfenen Formats wird dem zugeordneten Word-Dokument als neuer benutzerdefinierter XML-Abschnitt mit dem Namen „Bericht“ übertragen. Beachten Sie, dass die angefügte Word-Vorlage nicht nur das Layout des Dokuments enthält, das wir als ER-Ausgabe generieren möchten. Es enthält auch die Struktur von Daten, die ER in diese Vorlage zur Laufzeit auffüllen wird.  
 2. Klicken Sie auf **Anhänge**.
-    + Nun müssen Sie die Elemente des benutzerdefinierten XML-Abschnitts „Bericht” an die Word-Dokumentteile binden.  
+    + Nun müssen Sie die Elemente des benutzerdefinierten XML-Abschnitts „Bericht“ an die Word Dokumentteile binden.  
     + Wenn Sie mit Word-Dokumenten vertraut sind, die als Formulare entworfen werden können, die Inhaltssteuerelemente enthalten, die durch Elemente von benutzerdefinieten XML-Teilen begrenzt sind – geben Sie alle Schritte der nächsten Unteraufgabe wieder, um so ein Dokument zu erstellen. Weitere Informationen finden Sie unter [Erstellen von Formularen, die in Word ausgefüllt oder gedruckt werden können](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US). Andernfalls überspringen Sie die Schritte in der nächsten Unteraufgabe.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Rufen Sie Word mit benutzerdefiniertem XML-Teil ab, um Datenbindungen vorzunehmen
@@ -68,7 +68,7 @@ Aktuell wird das Excel-Dokument als Vorlage verwendet, um die Ausgabe im OPENXML
 Öffnen Sie das Dokument in Word und gehen Sie folgendermaßen vor:  
 1. Öffnen Sie die Word-Entwicklerregisterkarte (Menüband anpassen, sofern dieses noch nicht aktiviert ist).
 2. Wählen Sie den XML-Zuordnungsbereich aus.
-3. Wählen Sie den benutzerdefinierten XML-Teil „Bericht“ in der Suche aus.
+3. Wählen Sie den benutzerdefinierten XML-Teil „Bericht“ in der Suche.
 4. Führen Sie die Zuordnung von Elementen des ausgewählten benutzerdefinierten XML-Teils und der Inhaltssteuerelemente des Word-Dokuments aus.  5. Speichern Sie das aktualisierte Word-Dokument in einem lokalen Laufwerk.  
 
 ## <a name="upload-the-word-template-with-custom-xml-part-bounded-to-content-controls"></a>Hochladen der Word-Vorlage mit benutzerdefiniertem XML-Teil, der an Inhaltssteuerelemente gebunden ist

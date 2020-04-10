@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b048c49de7357ec1b5cbf36dd4f22a5d3efd443b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a101edd9e25fba1aa2325cb2193c6ea56282c9d1
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189406"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143787"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Einrichten der Kreditorenkonten-Rechnungsabgleichprüfung
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Stellen Sie zu Beginn sicher, dass der Konfigurationsschlüssel "Rechnungsabgleich" ausgewählt wurde. Stellen Sie sicher, dass der Konfigurationsschlüssel "Belastungen" ausgewählt ist, wenn von der juristischen Person Belastungen zur Nachverfolgung von Ausgaben (wie z. B. Fracht) verwendet werden.  Beim Kreditorenrechnungsabgleich handelt es sich um den Prozess zum Abgleich der Informationen aus der Kreditorenrechnung, der Bestellung und des Produktzugangs. Unterschiede zwischen diesen Dokumenten werden als Abgleichsabweichung bezeichnet. Abgleichsabweichungen werden mit den angegebenen Toleranzen verglichen. Übersteigt die Abgleichsabweichung den Toleranzprozentsatz oder -betrag, werden auf den Seiten **Kreditorenrechnung** und **Details zum Rechnungsabgleich** Abweichungssymbole angezeigt.
 

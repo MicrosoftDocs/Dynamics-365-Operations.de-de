@@ -15,36 +15,36 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f61228d328521d0c6fe8e0ae704001a65d03151f
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: 207309e8be6c097cec187f3475a489330e1f6b6c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2249226"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142684"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>EB-Ausdrücke entwerfen, um Anwendungsklassenmethoden aufzurufen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieser Leitfaden enthält Informationen darüber, wie die vorhandene Anwendungslogik in Konfigurationen der elektronischen Berichterstellung (EB) erneut verwendet wird, indem erforderliche Methoden von Anwendungsklassen in EB-Ausdrücken aufgerufen werden. Werte von Argumenten zum Aufrufen von Klassen können dynamisch zur Laufzeit definiert werden: beispielsweise basierend auf Informationen im Analysedokument, um dessen Richtigkeit sicherzustellen. In diesem Handbuch erstellen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen, Litware, Inc. Dieses Verfahren wird für Benutzer mit der zugewiesenen Rolle des Systemadministrators oder elektronischer Berichterstellungsentwicklers erstellt. 
 
 Die Schritte können abgeschlossen werden, indem Sie einen beliebigen Dataset verwenden. Sie müssen auch folgende Datei herunterladen und lokal speichern: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
 
-Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozedur „EB – Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.
+Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozedur „EB Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.   
-    * Sie entwerfen einen Prozess für die Analyse eingehender Bankauszüge für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszug-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits verfügbar ist.   
+    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Sollten Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.   
+    * Sie entwerfen einen Prozess für die Analyse von eingehenden Bankauszügen für eine Anwendungsdatenaktualisierung. Sie erhalten die eingehenden Bankauszüge als TXT-Dateien, die IBAN-Codes enthalten. Als Teil des Bankauszug-Importprozesses müssen Sie die Korrektheit dieser IBAN-Codes mithilfe der Logik überprüfen, die bereits verfügbar ist.   
 
 ## <a name="import-a-new-er-model-configuration"></a>Neue EB-Modellkonfiguration importieren
 1. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
     * Wählen Sie die Microsoft-Anbieterkachel aus.  
 2. Klicken Sie auf Repositorys.
 3. Klicken Sie auf "Filter anzeigen".
-4. Fügen Sie ein Filterfeld „Typname” ein. Geben Sie im Feld „Name” den Wert „Ressourcen” ein, wählen Sie den Filteroperator „enthält” aus, und klicken Sie dann auf „Übernehmen”.
+4. Fügen Sie ein Filterfeld Typname ein. Geben Sie im Feld „Name“ den Wert „Ressourcen“ ein, wählen Sie dann den Filteroperator „enthält“ aus, und klicken Sie dann auf „Übernehmen“.
 5. Klicken Sie auf "Öffnen".
 6. Wählen Sie in der Struktur die Option "Zahlungsmodell" aus.
-    * Wenn die Schaltfläche „Importieren” im Inforegister „Versionen” nicht aktiviert ist, haben Sie bereits die Version 1 der EB-Konfiguration „Zahlungsmodell” importiert. Sie können die übrigen Schritte in dieser Unteraufgabe überspringen.   
+    * Wenn die Schaltfläche „Importieren“ im Inforegister „Versionen“ nicht aktiviert ist, haben Sie die Version 1 der EB-Konfiguration „Zahlungsmodell“ bereits importiert. Sie können die übrigen Schritte in dieser Unteraufgabe überspringen.   
 7. Klicken Sie auf Import.
 8. Klicken Sie auf "Ja".
 9. Schließen Sie die Seite.
@@ -69,14 +69,14 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozed
 4. Geben Sie im Feld Name "Root" ein.
     * Stamm  
 5. Wählen Sie im Feld "Sonderzeichen" "Neue Zeile - Windows (CR LF)".
-    * Die Option „Neue Postion – Windows (CR LF)” wurde im Feld „Sonderzeichen” ausgewählt. Basierend auf dieser Einstellung wird jede Position in der Analysedatei als ein separater Datensatz behandelt.  
+    * Die Option „Neue Postion – Windows (CR LF)“ wurde im Feld „Sonderzeichen“ ausgewählt. Basierend auf dieser Einstellung wird jede Position in der Analysedatei als ein separater Datensatz behandelt.  
 6. Klicken Sie auf "OK".
 7. Klicken Sie zum Öffnen des Ablage-Dialogfelds auf "Hinzufügen".
 8. Wählen Sie in der Struktur 'Text\Sequence'..
 9. Geben Sie im Feld „Name” die Bezeichnung „Zeilen” ein.
     * Zeilen  
 10. Wählen Sie im Vielfältigkeitsgebiet wählen Sie "viele" aus.
-    * Die Option „Eins viele” wurde im Feld „Multiplizität” ausgewählt. Basierend auf dieser Einstellung wird erwartet, dass mindestens eine Position in der Analysedatei dargestellt wird.  
+    * Die Option „viele“ wurde im Feld „Multiplizität“ ausgewählt. Basierend auf dieser Einstellung wird erwartet, dass mindestens eine Position in der Analysedatei dargestellt wird.  
 11. Klicken Sie auf "OK".
 12. Wählen Sie in der Struktur „Stamm\Zeilen” aus.
 13. Klicken Sie auf „Nummernkreis hinzufügen”.
@@ -142,7 +142,7 @@ Um diese Schritte auszuführen, müssen Sie zunächst die Schritte in der Prozed
     * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
 39. Klicken Sie auf "Speichern".
 40. Schließen Sie die Seite.
-    * Die Überprüfungsbedingung wurde so konfiguriert, dass sie FALSE für jeden ungültigen IBAN-Code zurückgibt, indem die vorhandene Methode „verifyMOD1271_36” der Anwendungsklasse „ISO7064” aufgerufen wird. Beachten Sie, dass der Wert des IBAN-Codes dynamisch zur Laufzeit als Argument der aufrufenden Methode basierend auf dem Inhalt der analysierenden TXT-Datei definiert wird.   
+    * Die Überprüfungsbedingung wurde so konfiguriert, dass sie FALSE für jeden ungültigen IBAN-Code zurückgibt, indem die vorhandene Methode „verifyMOD1271_36“ von der Anwendungsklasse „ISO7064“ aufgerufen wird. Beachten Sie, dass der Wert des IBAN-Codes dynamisch zur Laufzeit als Argument der aufrufenden Methode basierend auf dem Inhalt der analysierenden TXT-Datei definiert wird.   
 41. Klicken Sie auf „Nachricht bearbeiten”.
 42. Geben Sie im Feld „Formel” die Zeichenfolge „CONCATENATE("ungültiger IBAN-Code wurde gefunden: ", format.Root.Rows.Fields.IBAN)” ein.
     * CONCATENATE("Ungültiger IBAN-Code wurde gefunden: ", format.Root.Rows.Fields.IBAN)  

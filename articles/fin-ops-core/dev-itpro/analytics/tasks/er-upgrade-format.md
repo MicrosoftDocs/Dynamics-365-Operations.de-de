@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b4ad9fb7a3d768acb0af73dcbe3d87b323de727
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 52bc276a4a88971a7214fa09087cb1323b91aaf5
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042803"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143271"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER – Aktualisieren Sie Ihr Format durch Verwendung einer neuen Basisversion dieses Formats
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, eine Formatkonfiguration für elektronische Berichterstellung (ER) verwalten kann. Diese Prozedur zeigt, wie eine benutzerdefinierte Version eines Formats auf Grundlage des Formats erstellt werden kann, das von einem Konfigurationsanbieter (CP) eingeht. Sie zeigt auch, wie eine neue Basisversion für dieses Format übernommen wird.
 
-Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozeduren "Konfigurationsanbieter erstellen und ihn als aktiv markieren" und "Erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen verwenden" abschließen. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
+Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in den Prozeduren „Konfigurationsanbieter erstellen und ihn als aktiv markieren“ und „Erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen verwenden“ abschließen. Diese Schritte können im GBSI-Unternehmen ausgeführt werden.
 
 ## <a name="select-format-configuration-for-customization"></a>Wählen Sie Formatkonfiguration zur Anpassung aus
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
@@ -127,7 +127,7 @@ Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format z
 ## <a name="update-the-existing-country-specific-configuration"></a>Aktualisieren Sie die vorhandene landesspezifische Konfiguration
 Litware, Inc muss die Konfiguration "BACS (Großbritannien, fiktiv)" aktualisieren und neue Länderanforderungen für die Verwaltung des Formats des elektronischen Dokuments verwenden. Später wird dies in einer neuen Version dieser Konfiguration eingeschlossen sein, die Dienstleistungsabonnenten angeboten wird, einschließlich Proseware, Inc..  
 
-In den realen Prozessen, die mit der Dienstleistungsbereitstellung verknüpft sind, kann jede neue Version von BACS (Großbritannien, fiktiv) von Litware, Inc. importiert werden. In dieser Prozedur simulieren wir dies, indem wir BACS (Großbritannien, fiktiv) im Auftrag eines Dienstanbieters aktualisieren.  
+In den realen Prozessen, die mit der Dienstleistungsbereitstellung verknüpft sind, kann jede neue Version von BACS (Großbritannien, fiktiv) von den Konfigurationen des LCS-Repositorys Proseware, Inc. from Litware, Inc. importiert werden. In dieser Prozedur simulieren wir dies, indem wir BACS (Großbritannien, fiktiv) im Auftrag eines Dienstanbieters aktualisieren.  
 
 1. Schließen Sie die Seite.
 2. Anbieter Litware, Inc. wählen
@@ -216,7 +216,7 @@ Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefini
 ## <a name="resolve-rebase-conflicts"></a>Lösen Sie Konflikte beim Zurücksetzen auf
 1. Klicken Sie auf Designer.
     
-    Beachten Sie, dass Änderungen der Längenbegrenzung des Händlernamentexts nicht automatisch aufgelöst werden können. Daher wird dies in einer Konfliktliste dargestellt. Für jeden Konflikt vom Typ "Update" stehen folgende Optionen zur Verfügung: - Wenden Sie einen früheren Basiswert (Schaltfläche über dem Raster) an, um den vorherigen Basisversionswert (0 in unserem Fall) aufzufüllen.  - Wenden Sie einen Basiswert (Schaltfläche über dem Raster) an, um den neuen Basisversionswert (100 in unserem Fall) aufzufüllen.  - Behalten Sie Ihren eigenen (benutzerdefinierten) Wert (60 in unserem Fall).  Klicken Sie auf "Basiswert anwenden", um eine länderspezifische Begrenzung auf 100 Zeichen für die Textlänge von Händlernamen anzuwenden.  
+    Beachten Sie, dass Änderungen der Längenbegrenzung des Händlernamentexts nicht automatisch aufgelöst werden können. Daher wird dies in einer Konfliktliste dargestellt. Für jeden Konflikt vom Typ "Update" stehen folgende Optionen zur Verfügung: - Wenden Sie einen früheren Basiswert (Schaltfläche über dem Raster) an, um den vorherigen Basisversionswert (0 in unserem Fall) aufzufüllen.  - Wenden Sie einen Basiswert (Schaltfläche über dem Raster) an, um den neuen Basisversionswert (100 in unserem Fall) aufzufüllen.  - Behalten Sie Ihren eigenen (benutzerdefinierten) Wert (60 in unserem Fall).  Klicken Sie auf „Basiswert anwenden“, um eine länderspezifische Begrenzung auf 100 Zeichen für die Textlänge von Händlernamen anzuwenden.  
 
     Beachten Sie, dass Proseware, Inc. und Litware, Inc. benutzerdefinierten und lokale Versionen dieses Formats haben. Diese verwenden IBAN- und SWIFT-Codes mit zugehörigen Komponenten, die automatisch im verwaltenden Format zusammengeführt werden.  
 
@@ -242,5 +242,5 @@ Dazu muss Proseware, Inc. die Basiskonfigurationsversion für die benutzerdefini
     Beachten Sie, dass die erstellte Konfiguration als abgeschlossene Version 1.2.2 gespeichert wird: Version 2 des Basisformats "BACS (Großbritannien, fiktiv benutzerdefiniert)", das auf Version 2 des Basisformats "BACS (Großbritannien, fiktiv)" beruht, das auf Version 1 des Datenmodells "Zahlungen" (vereinfachtes Modell) beruht.  
 
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Testen Sie das benutzerdefinierte Format zum Generieren von Zahlungsdateien
-Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format "BACS (Großbritannien, fiktiv benutzerdefiniert)" in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
+Schließen Sie die Schritte in der Prozedur „Verwenden Sie erstelltes Format zum Generieren elektronischer Dokumente für Zahlungen“ in einer parallelen Finance and Operations-Sitzung ab. Wählen Sie das erstellte Format „BACS (Großbritannien, fiktiv benutzerdefiniert)“ in den Methodenparametern für die elektronische Zahlung aus. Stellen Sie sicher, dass die erstellte Zahlungsdatei den vor kurzem von Proseware, Inc.eingeführten XML-Knoten enthält, der den IBAN-Code in Übereinstimmung mit regionalen Anforderungen darstellt. Die Datei sollte auch den vor kurzem von LItware, Inc. eingegeben XML Knoten enthalten, der in SWIFT-Bankleitzahl die Übereinstimmung der Landanforderungen darstellt.  
 

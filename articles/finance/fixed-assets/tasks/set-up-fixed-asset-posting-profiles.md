@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 494af854d408f0b0c02d753ff3d24eb3d6216fd9
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 07961d8613b6b5e0e1c5dc6a91b554305dcb17f5
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177881"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138160"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Einrichten von Anlagenbuchungsprofilen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Mit dieser Aufgabenanleitung werden "Anlagenbuchungsprofile" eingerichtet.  Dabei werden die "Buchhalterrolle" und die Demodaten für die juristische Person USMF verwendet.  Die Beispiele, die in der Aufgabenanleitung angegeben sind, sind für ein grundlegendes Buchungsprofil, obwohl Buchungsprofile für Ihren speziellen Kontenplans und Ihre Finanzberichterstellungsanforderungen erstellt werden müssen.
 
@@ -63,7 +63,7 @@ Mit dieser Aufgabenanleitung werden "Anlagenbuchungsprofile" eingerichtet.  Dabe
 32. Geben Sie im Feld **Buch** einen Wert ein, oder wählen Sie einen Wert aus.
 33. Wählen Sie im Feld **Wert buchen** die Option „Anschaffungswert“ aus.
     * Anschaffungswert adressiert Anschaffungs- und Anschaffungsregulierungswerte für alle Jahre. Sie können auch Konten für diese Transaktionsarten getrennt definieren.  
-    * Sie können den Veräußerungsprozess so festlegen, dass er verschiedene Konten verwendet, je nachdem, ob die Veräußerung einen Gewinn oder Verlust ergibt. Ich werde den "Verkaufswerttyp" auf "Alle" festlegen, um die gleichen Konten für alle Typen von Veräußerungen zu verwenden.  
+    * Sie können den Veräußerungsprozess so festlegen, dass er verschiedene Konten verwendet, je nachdem, ob die Veräußerung einen Gewinn oder Verlust ergibt. Ich werde den „Verkaufswerttyp“ auf „Alle“ festlegen, um die gleichen Konten für alle Typen von Veräußerungen zu verwenden.  
 34. Geben Sie im Feld **Hauptkonto** die gewünschten Werte an.
 35. Geben Sie im Feld **Gegenkonto** die gewünschten Werte an.
 36. Klicken Sie auf **Hinzufügen**.

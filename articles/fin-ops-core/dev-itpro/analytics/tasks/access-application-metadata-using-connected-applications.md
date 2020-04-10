@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
-description: Die Schritte in diesem Thema erläutern, wie ein Regulatory configuration service (RCS)-Benutzer eine neue Modellzuordnung für elektronische Berichterstellung (ER) entwerfen kann, indem er die Metadaten in Finance and Operations verwendet.
+description: Die Schritte in diesem Thema erläutern, wie ein Regulatory Configuration Service (RCS) Benutzer eine neue Modellzuordnung für elektronische Berichterstellung (ER) entwerfen kann, indem er die Metadaten in Finance and Operations verwendet.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5020b523ca5d76d36f7436a8f43e8629c029e3e8
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 28b8346b916729669af42ca47fe9a882e7a77bd0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769877"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142200"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten in Finance and Operations verwendet. Zugriff auf Anwendungs-Metadaten erfolgt online über die RCS verbundene Anwendungen. Beispiel-ER-Modellzuordnung wird konfiguriert, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie in RCS zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Wenn Sie die Schritte im Thema [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) abgeschlossen haben, fahren Sie mit der [Beispielseite für elektronische Berichterstellung](https://go.microsoft.com/fwlink/?linkid=862266) fort, um die folgenden ER-Konfigurationen herunterzuladen und zu speichern: Außenhandelsmetadaten.xml; Außenhandelsmodel.xml; Außenhandelszuordnung.xml und führen Sie dann die Schritte in der Prozedur aus.
+In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Service (RCS)-Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Modellzuordnung für „Elektronische Berichterstellung (ER)“ entwerfen kann, indem er die Metadaten in Finance and Operations. Zugriff auf Anwendungs-Metadaten erfolgt online über die RCS verbundene Anwendungen. Beispiel-ER-Modellzuordnung wird konfiguriert, um auf Außenhandelstransaktionen zuzugreifen. Um diese Schritte auszuführen, müssen Sie in RCS zunächst die Schritte im Thema [Konfigurationsanbieter erstellen und als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. Wenn Sie die Schritte im Thema [Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration](access-application-metadata-er-configuration.md) abgeschlossen haben, fahren Sie mit der [Beispielseite für elektronische Berichterstellung](https://go.microsoft.com/fwlink/?linkid=862266) fort, um die folgenden ER-Konfigurationen herunterzuladen und zu speichern: Außenhandelsmetadaten.xml; Außenhandelsmodel.xml; Außenhandelszuordnung.xml und führen Sie dann die Schritte in der Prozedur aus.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 1. Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**. 
-2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diese als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. 
+2. Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als **Aktiv** markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur [Konfigurationsanbieter erstellen und diesen als aktiv markieren](er-configuration-provider-mark-it-active-2016-11.md) abschließen. 
 
 ## <a name="get-required-er-configurations"></a>Erforderliche ER-Konfigurationen abrufen
 1. Klicken Sie auf **Berichterstellungskonfigurationen**. 
@@ -54,7 +54,7 @@ In den folgenden Schritten wird erläutert, wie ein Regulatory Configuration Ser
 2. Schließen Sie die Seite. 
 3. Wechseln Sie zu **Alle Arbeitsbereiche** > **Elektronische Berichterstellung**. 
 4. Klicken Sie auf **Verbundene Anwendung**. 
-5. Überprüfen Sie, dass die konfigurierte Anwendung Azura-basiert ist und der aktuelle RCS-Benutzer darauf zugreifen kann. Es ist auch erforderlich, dass der aktuelle RCS-Benutzer Zugriff auf die ausgewählte Anwendung und als Benutzer dieser Anwendung registriert wurde. Dies spielt eine Rolle bei seinen Rechten für den Zugriff auf die Metadaten der Anwendung. 
+5. Überprüfen Sie, dass die konfigurierte Anwendung Azure-basiert ist und der aktuelle RCS-Benutzer darauf zugreifen kann. Es ist auch erforderlich, dass der aktuelle RCS-Benutzer Zugriff auf die ausgewählte Anwendung hat und als Benutzer dieser Anwendung registriert wurde. Dies spielt eine Rolle bei seinen Rechten für den Zugriff auf die Metadaten der Anwendung. 
 6. Klicken Sie auf **Neu**. 
 7. Geben Sie im Feld **Name** „MyConnectedApp“ ein. 
 8. Geben Sie im Feld **Anwendung** „https:// mycompany.operations.dynamics.com“ ein. 

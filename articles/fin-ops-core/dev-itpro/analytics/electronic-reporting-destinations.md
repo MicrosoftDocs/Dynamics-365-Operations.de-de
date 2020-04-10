@@ -3,7 +3,7 @@ title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieses Thema enthält Informationen zur Verwaltung von ER-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: nselin
 manager: AnnBe
-ms.date: 02/07/2020
+ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2e4c6951afbff367dc93072d20395c3a37fffbcb
-ms.sourcegitcommit: 4e62c22b53693c201baa646a8f047edb5a0a2747
+ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
+ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3030772"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3150814"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Ziele für elektronische Berichterstellung (EB)
 
@@ -114,7 +114,7 @@ Nachdem Sie dieses Setup abgeschlossen haben, wird die **Entwurf ausführen** f�
 
 [![Entwurfsoption ausführen](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
-## <a name="DestinationFailure"></a>Behandlung von Zielfehlern
+## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Behandlung von Zielfehlern
 
 Normalerweise wird ein ER-Format im Rahmen eines bestimmten Geschäftsprozesses ausgeführt. Die Zustellung eines ausgehenden Dokuments, das während der Ausführung eines ER-Formats generiert wird, muss jedoch manchmal als Teil dieses Geschäftsprozesses betrachtet werden. In diesem Fall muss die Ausführung des Geschäftsprozesses abgebrochen werden, wenn die Zustellung eines generierten ausgehenden Dokuments an ein konfiguriertes Ziel nicht erfolgreich ist. Um das entsprechende ER-Ziel zu konfigurieren, wählen Sie die Option **Verarbeitung bei Fehler beenden**.
 
@@ -124,7 +124,7 @@ Beispielsweise konfigurieren Sie die Kreditorenzahlungsverarbeitung so, dass das
 
 Wenn Sie das Kontrollkästchen **Verarbeitung bei Fehler beenden** für die Komponente **Anschreiben** in der entsprechenden Dateiziel löschen, gilt eine Zahlung als erfolgreich verarbeitet, auch wenn das Anschreiben nicht erfolgreich per E-Mail zugestellt wurde. Der Status der Zahlung wird von **Keine**zu **Gesendet** geändert, auch wenn das Anschreiben nicht gesendet werden kann, weil beispielsweise die E-Mail-Adresse des Empfängers oder Absenders fehlt oder falsch ist.
 
-## <a name="OutputConversionToPDF"></a>Ausgabeumwandlung in PDF
+## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Ausgabeumwandlung in PDF
 
 Sie können die PDF-Konvertierungsoption verwenden, um die Ausgabe in Microsoft Office Format (Excel/Word) in PDF-Format zu konvertieren.
 
@@ -148,7 +148,7 @@ Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in
 >
 > Das erstellte PDF ist auf maximal 300 Seiten beschränkt.
 >
-> Derzeit wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt.
+> Zurzeit wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt.
 >
 > Für die Konvertierung einer Ausgabe, die keine eingebetteten Schriftarten enthält, werden nur die allgemeinen Systemschriftarten des Windows-Betriebssystems verwendet.
 
@@ -157,6 +157,19 @@ Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in
 Um die PDF-Konvertierung für ein Dateiziel zu aktivieren, aktivieren Sie das Kontrollkästchen **In PDF konvertieren**.
 
 [![Aktivieren der PDF-Konvertierung für ein Dateiziel](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+
+### <a name=""></a><a name="SelectPdfPageOrientation">Wählen Sie eine Seitenausrichtung für die PDF-Konvertierung</a>
+
+Wenn Sie eine ER-Konfiguration im Excel-Format generieren und in das PDF-Format konvertieren möchten, können Sie die Seitenausrichtung der PDF-Datei angeben. Wenn Sie **In PDF konvertieren** auswählen, aktivieren Sie das Kontrollkästchen, um die PDF-Konvertierung für ein Dateiziel zu aktivieren, das eine Ausgabedatei im Excel-Format erstellt. Das Feld **Seitenausrichtung** wird auf dem Inforegister **PDF-Konvertierungseinstellungen** verfügbar. In dem Feld **Seitenausrichtung** können Sie eine bevorzugte Seitenausrichtung auswählen.
+
+[![Wählen Sie eine Seitenausrichtung für die PDF-Konvertierung](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+
+> [!NOTE]
+> Um die PDF-Seitenausrichtung auswählen zu können, müssen Sie Microsoft Dynamics 365 Finance Version 10.0.10 (Mai 2020) oder höher installieren.
+>
+> Die ausgewählte Seitenausrichtung wird auf alle ER-Konfigurationen angewendet, die im Excel-Format generiert und dann in das PDF-Format konvertiert werden.
+>
+> Wenn eine konvertierte PDF-Datei aus einer ER-Konfiguration im Word-Format erstellt wird, wird die Seitenausrichtung der PDF-Datei aus dem Word-Dokument übernommen.
 
 ## <a name="security-considerations"></a>Sicherheitsaspekte
 

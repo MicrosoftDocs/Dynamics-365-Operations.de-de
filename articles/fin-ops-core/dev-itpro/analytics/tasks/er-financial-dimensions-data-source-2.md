@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 788564bfd7c3df146266976d8eef6621ff37ca2a
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 48ce4942f8407242013df45f533390784694d4e6
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550624"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142546"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann. Diese Schritte können in jedem Unternehmen ausgeführt werden.
 
-Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER - Finanzdimensionen als Datenquelle nutzen (Teil 1: Design des Datenmodells)" ausführen.
+Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER - Finanzdimensionen als Datenquelle nutzen (Teil 1: Design des Datenmodells)“ ausführen.
 
 
 ## <a name="add-required-data-sources-to-model-mapping"></a>Hinzufügen von erforderlichen Datenquellen zur Modellzuordnung
@@ -57,7 +57,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER -
 20. Wählen Sie im Feld Finanzdimensionen "Juristische Person" aus.
     * Wählen Sie "Alle" aus, um dem Benutzer die Auswahl der gewünschten Dimensionen für die aktuelle Instanz zu ermöglichen.  Wählen Sie "Juristische Person" aus, um dem Benutzer die Auswahl der Dimensionen für das Unternehmen zu ermöglichen.  Wählen Sie "Dimension" aus, um dem Benutzer die Auswahl von Dimensionen über einen einzelnen Dimensionssatzes zu ermöglichen.  
 21. Wählen Sie "Ja" im Feld "Hauptkonto anfordern".
-    * Legen Sie "Hauptkonto anfordern" auf "Ja" fest, um Benutzern zu ermöglichen, das Hauptkonto als Teil der Liste mit den Dimensionen auszuwählen.   Bei "Nein" wird das Hauptkonto nicht in der Liste mit den Dimensionen aufgenommen und die Option "Hauptkonto erforderlich" ist aktiviert. Wenn "Hauptkonto erforderlich" auf Ja festgelegt ist, wird das Hauptkonto unabhängig von der Auswahl des Benutzers in der Liste mit den Dimensionen festgelegt.  
+    * Legen Sie „Hauptkonto anfordern“ auf „Ja“ fest, um Benutzern zu ermöglichen, das Hauptkonto als Teil der Liste mit den Dimensionen auszuwählen.   Bei „Nein“ wird das Hauptkonto nicht in der Liste mit den Dimensionen aufgenommen und die Option „Hauptkonto erforderlich“ ist aktiviert. Wenn „Hauptkonto erforderlich“ auf Ja festgelegt ist, wird das Hauptkonto unabhängig von der Auswahl des Benutzers in der Liste mit den Dimensionen festgelegt.  
 22. Klicken Sie auf "OK".
 23. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 24. Klicken Sie auf "Stamm hinzufügen".
@@ -134,7 +134,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren "ER -
     * Company.'find()'.'name()'  
 64. Klicken Sie auf "Speichern".
 65. Schließen Sie die Seite.
-66. Klicken Sie auf "Speichern".
+66. Klicken Sie auf Speichern.
 67. Schließen Sie die Seite.
 
 ## <a name="complete-this-draft-models-version"></a>Abschließen dieser Version dieses Entwurfsmodells
