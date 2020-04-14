@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d575e609ac5289f9acb219322c9df93972e5dfc
-ms.sourcegitcommit: 25fe679b73663fda6b5b3c32646026d0993a9f00
+ms.openlocfilehash: d9036b5cbad10af725aaaf5d1d9498687c3a1d58
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "1995212"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146421"
 ---
 # <a name="set-up-sales-commission-rules"></a>Vertriebsprovisionsregeln einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Verfahren zeigt Ihnen, wie Vertriebsprovisionsberechnung und die Nachverfolgung aktivieren. Die Prozedur zeig, wie Debitoren- und Artikelprovisionsgruppen erstellt werden und ein ausgewählter Debitor und ein Produkt zu den jeweiligen Gruppen verknüpft werden. Diese Gruppen werden im Formular "Provisionsberechnungseinstellung" verwendet, um einen Debitor, einen Artikel und eine Verkäuferkombination zu erstellen, die mit dem Auftrag übereinstimmen muss, um die Verkäufer für eine Provision zu berechtigen. Debitoren- und Artikelprovisionsgruppen zu erstellen ist optional, da die Berechnung der Provision auch für einen einzelnen Debitor und/oder einen Artikel ausgeführt werden kann. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.
 

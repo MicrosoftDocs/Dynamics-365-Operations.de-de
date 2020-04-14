@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3e81bb3fe95326636c28885d4decad69f841e3db
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 31690d58d32a93d4cba873e951c26856d3f9cc09
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844008"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147318"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Den Warenzugang auf der Bestellung erfassen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie der Zugang von Waren direkt auf einer Bestellung erfasst wird. Es ist auch möglich, den Produktzugang im Lagerort zu erfassen und ihn dann später auf der Bestellung aufzuzeichnen. Diese Aufgabe wird gewöhnlich von einem Einkäufer oder einem Kreditorenkontenkoordinator ausgeführt. Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Das Beispiel umfasst Schritte, um eine einfache Bestellung zu erstellen, damit Sie die Prozedur als Aufgabenleitfaden wiedergeben können. Wenn Sie die Prozedur mit Ihren eigenen Daten verwenden, müssen Sie bei der Unteraufgabe **Warenzugang erfassen** beginnen.
 

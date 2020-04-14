@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1d235e32c7607add770fbf47f248edd9d965b2c0
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 0ab6315bf70c16c15b2fb3cd2f207dc6f844e8d1
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1834075"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146498"
 ---
 # <a name="create-sales-orders"></a>Aufträge erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie ein Auftrag erstellt wird. Sie können diese Prozedur im Demodatunternehmen USMF verwenden. Aufträge werden normalerweise von einem Auftragsprozessor erstellt. 
 
@@ -54,7 +54,7 @@ Die Produkte, die von Ihrer Organisation verkauft werden, sind möglicherweise i
 6. Wählen Sie im Feld **Farbe** die Dropdown-Schaltfläche aus, um die Suche zu öffnen.
 7. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 8. Geben Sie im Feld **Menge** eine Zahl ein.
-    - Wenn der Artikel in anderen Einheiten verkauft wird, als er eingekauft, hergestellt und gelagert wird, und eine Menge in der Verkaufseinheit für den Produktdatensatz festgelegt wird, wird dieser Wert im Feld **Einheit** angezeigt. Sie können den Wert jederzeit ändern.   
+    - Wenn der Artikel in anderen Einheiten verkauft wird, als er eingekauft, hergestellt und gelagert wird, und eine Menge in der Verkaufseinheit für den Produktdatensatz festgelegt wird, wird dieser Wert dann im Feld **Einheit** angezeigt. Sie können den Wert jederzeit ändern.   
     - Wenn das Feld **Standort** bereits einen Wert enthält, wurde der Wert vom Auftragskopf oder den Auftragseinstellungen kopiert, die dem Produkt zugeordnet sind. Sie können den Wert jederzeit ändern. Wenn das Feld leer ist, wählen Sie einen Wert aus.   
     - Wenn das Feld **Einzelpreis** bereits einen Wert enthält, wurde der Wert von einer gültigen Handelsvereinbarung oder vom Produktdatensatz kopiert. (Der Einzelpreis kann auch von einem Kaufvertrag stammen, aber der Prozess zum Erstellen von Aufträgen aus Kaufverträgen unterscheidet sich von dem hier angezeigten.) Wenn das Feld leer ist, geben Sie einen Wert ein.   
     - Das Feld **Rabatt** enthält einen Rabattbetrag pro Produkteinheit. Um den gesamten Positionsrabattbetrag zu berechnen, wird der Rabattwert nach Positionsmenge multipliziert. Wenn das Feld **Rabatt** bereits einen Wert enthält, wurde der Wert von einer gültigen Handelsvereinbarung kopiert. Wenn das Feld leer ist und Sie dem Debitor einen Positionsrabatt gewähren wollen, geben Sie einen Wert ein.  

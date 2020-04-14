@@ -16,16 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd87ded3bcc20b94fae723424d9cc6b94049a1a5
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 9c5d8dbc5204464b2265029b6a11fcac7b79b464
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1558768"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147157"
 ---
 # <a name="copy-a-formula"></a>Eine Formel kopieren
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur fokussiert sich auf das Erstellen einer Formel, die die gleichen Substanzen wie eine vorhandene Formel umfasst, jedoch mit kleinen Unterschieden. Um die Formelpositionen zu erstellen, können Sie die Kopierfunktion verwenden, um eine vorhandene Formel zu kopieren, die die meisten Substanzen hat, die Sie benötigen. Sie können die erforderlichen Änderungen an den einzelnen Positionen in der neuen Version nach Bedarf ändern. Wenn Sie die Kopierfunktion verwenden, müssen Sie nicht mehrere nahezu identische Formeln erstellen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USP2.
 

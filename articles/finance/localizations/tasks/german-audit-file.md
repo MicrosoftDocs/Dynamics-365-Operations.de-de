@@ -15,16 +15,16 @@ ms.search.region: Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b65d6a0c40fd03080d90e096ed5feea15cf8d913
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a93b89627b95a4a6343a88efb1487351fe69927b
+ms.sourcegitcommit: b92c3e1b3403d0455fc4e0bf9132d6bc0d7aba5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175101"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3139006"
 ---
 # <a name="generate-german-audit-file"></a>Generieren Sie deutsche Protokolldatei
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Im folgenden Verfahren sehen Sie, wie die deutsche Protokolldatei generiert wird. Diese Aufgabe wurde mithilfe des Demodatenunternehmens DEMF erstellt, mit "Deutschland" als Land/Region für die primäre Adresse für die juristischen Person.
 

@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 401b01a6128babd6ed345342a65705a0262540e8
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 93f0c2024e7fbe7d9c6525d41207b788032e763a
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837949"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147203"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Kanban-Mengen-Berechnungsrichtlinie zu einer Kanban-Regel hinzufügen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Der Schwerpunkt dieser Prozedur liegt auf dem Erstellen einer Richtlinie zur Kanban-Mengenberechnung und dem Hinzufügen dieser zu einer Kanban-Regel, mit der die Kanban-Größe und -menge optimiert wird. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Diese Vorgehensweise ist für den Wertstrommanager vorgesehen. Dieses Verfahren wird für die Erstellung des Verfahrens "Kanban-Mengenvorschläge berechnen" vorausgesetzt. 
 

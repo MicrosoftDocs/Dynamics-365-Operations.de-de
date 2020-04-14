@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4a34a03dc5bb3cec37bbccdf913bee5088af6a0
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: c5306d41ab91213fdc7de0d3dd23d6845c5b8657
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844608"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147732"
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Ein freigegebenes Produkt für ein einzelnes Unternehmen erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im Rahmen einer einzelnen gültigen Einheit erstellt wird. Nachdem das freigegebene Produkt erstellt wurde, ist es sofort in ausschließlich dieser Einheit verfügbar. Sie können diese Prozedur im Demodatenunternehmen USMF ausführen. Diese Aufgabe wird in der Regel von einem Produktdesigner ausgeführt.
 
@@ -58,11 +58,11 @@ In dieser Prozedur wird erläutert, wie ein einzelnes freigegebenes Produkt im R
 18. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 19. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 20. Klicken Sie im Feld "Bestelleinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Bestelleinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es von einem Kreditor erworben wird.  
+    * Die Bestelleinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es von einem Lieferant erworben wird.  
 21. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 22. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 23. Klicken Sie im Feld "Verkaufseinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-    * Die Verkaufseinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es an einen Debitor verkauft wird.  
+    * Die Verkaufseinheit bestimmt, wie das Produkt mengenmäßig bestimmt wird, wenn es einem Debitor verkauft wird.  
 24. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 25. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 26. Klicken Sie im Feld "Stücklisteneinheit" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.

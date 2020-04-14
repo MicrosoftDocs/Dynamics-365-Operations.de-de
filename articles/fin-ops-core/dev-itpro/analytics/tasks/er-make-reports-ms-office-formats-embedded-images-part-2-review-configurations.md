@@ -1,6 +1,6 @@
 ---
 title: Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
-description: 'Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)" Aufgabenleitfaden erstellen.'
+description: 'Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im „ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: - Einstellungsparameter)“ Aufgabenleitfaden erstellen.'
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d05020c5b83137d977d7260e269cb7d8c219406
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 8f81f0f86c255d048393047965c0aa29cbef09d0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143075"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurationen zum Generieren von Berichten im Office-Format überprüfen, die eingebettete Bilder haben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: Einstellungsparameter)" Aufgabenleitfaden erstellen.
+Um diese Schritte auszuühren, müssen Sie die Schritte zuerst im „ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 1: Einstellungsparameter)“ Aufgabenleitfaden erstellen.
 
 Dieses Verfahren zeigt, wie die Konfigurationen für die elektronische Berichterstellung (EB) entworfen werden, um elektronische Dokumente zu generieren, die eingebettete Bilder in Microsoft Excel und Microsoft Word enthalten. In diesem Beispiel überprüfen Sie die erforderlichen ER-Konfigurationen für das Beispielunternehmen Litware, Inc. 
 
@@ -37,7 +37,7 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 1. Wechseln Sie zu Organisationsverwaltung > Elektronische Berichterstellung > Konfigurationen.
 2. Wählen Sie in der Struktur 'Modell für Cheques.
 3. Klicken Sie auf Designer.
-    * Dieses Modell wurde so entworfen, dass Zahlungsschecks vom Geschäftsstandpunkt und der Zuordnung dieses Modells der Anwendungs-Datenquelle ist. Wiederholen Sie dieses Modell durch den ER-Arbeitsgangsdesigner. Beachten Sie die Attribute der Modellelemente, die dargestellt werden: Struktur, Name, Beschreibung, Datentyp, usw.   
+    * Dieses Modell wurde so entworfen, dass Zahlungsschecks vom Geschäftsstandpunkt und der Zuordnung dieses Modells der Anwendungsdatenquelle ist. Wiederholen Sie dieses Modell durch den ER-Arbeitsgangsdesigner. Beachten Sie die Attribute der Modellelemente, die dargestellt werden: Struktur, Name, Beschreibung, Datentyp, usw.   
 4. In der Struktur 'Root' erweitern.
 5. Wählen Sie in der Struktur Root\Cheques.
 6. Erweitern Sie Root'Cheques.
@@ -77,16 +77,16 @@ Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrator
 4. Klicken Sie auf Anhänge.
 5. Klicken Sie auf "Öffnen".
     * Öffnen Sie die zugeordnete Vorlage des Berichts in Excel.  
-    * Überprüfen Sie die zugeordnete die Tabelle " des Berichts, die verwendet wird, um Schecks zu drucken. Die Vorlage beinhaltet zwei Schecks pro Seite und wurde so entworfen, um Schecks auf dem vorgedruckten Formular zu drucken. Beachten Sie, dass zwei leere Bilder eingebettet werden. Diese Bilder sind für das Firmenlogo und die Unterschrift der Person, die eine Zahlung autorisiert. Überprüfen Sie, dass die CompLogo Bilder und SignatureImage in Excel bezeichnet werden.   
+    * Überprüfen Sie die zugeordnete die Tabelle des Berichts, die verwendet wird, um Schecks zu drucken. Die Vorlage beinhaltet zwei Schecks pro Seite und wurde so entworfen, um Schecks auf dem vorgedruckten Formular zu drucken. Beachten Sie, dass zwei leere Bilder eingebettet werden. Diese Bilder sind für das Firmenlogo und die Unterschrift der Person, die eine Zahlung autorisiert. Überprüfen Sie, dass die CompLogo Bilder und SignatureImage in Excel bezeichnet werden.   
 6. Schließen Sie die Seite.
 7. Erweitern Sie in der Struktur 'Report'.
 8. Erweitern Sie in der Struktur 'Report\ChequeLines'.
 9. Wählen Sie in der Struktur 'Report\ChequeLines\CompLogo'.
 10. Schalten Sie „Details anzeigen” ein.
-    * Beachten Sie, dass Zellenelemente des Formats "CompLogo" den Excel-Artikel darstellen, der verwendet wird, um das Firmenlogobild im Bericht Daten zu ergänzen. Dieses Formatelement wird an das Bilddatenmodellelement gebunden, das zur Laufzeit ein Firmenlogobild im Binärformat enthält.   
+    * Beachten Sie, dass Zellenelemente des Formats „CompLogo“ den Excel-Artikel darstellen, der verwendet wird, um das Firmenlogobild im Bericht Daten zu ergänzen. Dieses Formatelement wird an das Bilddatenmodellelement gebunden, das zur Laufzeit ein Firmenlogobild im Binärformat enthält.   
 11. Klicken Sie auf die Registerkarte Zuordnung.
 12. Auf Bearbeitung aktiviert klicken.
-    * Beachten Sie, dass Sie Zellen das Element des Formats CompLogo deaktivieren können, so dass es nicht mehr aktiviert ist. In diesem Fall wird das zugeordnete Excel-Bildelement ein Firmenlogo im generierten Bericht verbergen. Wenn der Ausdruck TRUE zurückgibt und die definierte Bindung kein Bild hervorbringt, wird das zugeordnete Excel-Bildelement ein Bild anzeigen, das in der Tabelle wurde gespeichert.   
+    * Beachten Sie, dass Sie Zellen das Element des Formats „CompLogo“ deaktivieren können, so dass es nicht mehr aktiviert ist. In diesem Fall wird das zugeordnete Excel-Bildelement ein Firmenlogo im generierten Bericht verbergen. Wenn der Ausdruck TRUE zurückgibt und die definierte Bindung kein Bild hervorbringt, wird das zugeordnete Excel-Bildelement ein Bild anzeigen, das in der Tabelle wurde gespeichert.   
 13. Schließen Sie die Seite.
 14. In der Struktur Label Container erweitern.
     * Einige Beschriftungen, die auf dem vorgedruckten Scheckformular produziert werden, werden in den Bericht einbezogen, falls sie für Testzwecke erstellt wurden. Allerdings werden die nicht während des tatsächlichen Drucks gedruckt, da das vorgedruckte Formular diese ie bereits beinhaltet.  

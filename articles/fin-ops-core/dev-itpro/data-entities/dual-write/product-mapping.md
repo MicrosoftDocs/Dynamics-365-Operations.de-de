@@ -19,18 +19,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9593e8e54b18c6fe723a133eca699a30baabfdd0
-ms.sourcegitcommit: e0e013fa8a4cc994ef6d1e0a1a3389b36b5afffa
+ms.openlocfilehash: 7de7af1084b62a7248eeda54df215e56f2541286
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3081150"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3173199"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produktumgebung
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
+
 
 Wenn ein Geschäftsökosystem aus Dynamics 365-Anwendungen besteht, wie Finance, Supply Chain Management und Sales, verwenden Unternehmen diese Anwendungen häufig für Quellproduktdaten. Der Grund dafür ist, dass diese Apps eine robuste Produktinfrastruktur bieten, die durch ausgeklügelte Preiskonzepte und genaue Bestandsverfügbarkeitsdaten abgerundet werden. Unternehmen, die ein externes Product Lifecycle Management (PLM)-System für die Beschaffung von Produktdaten verwenden, können Produkte von Finance and Operations-Apps in andere Dynamics 365-Apps kanalisieren. Die einheitliche Produkterfahrung bringt das integrierte Produktdatenmodell in Common Data Service, sodass alle Anwendungsbenutzer einschließlich Power Platform-Benutzer den Vorteil der umfassenden Produktdaten aus Finance and Operations-Apps nutzen können.
 
@@ -52,7 +52,7 @@ Die Entitätszuordnungen für duales Schreiben sind so konzipiert, dass Daten nu
 
 Produktinformationen enthält alle Informationen, die mit dem Produkt und seiner Definition in Verbindung stehen, z. B. den Produktdimensionen oder den Nachverfolgungs- und Lagerdimensionen. Wie die folgende Tabelle zeigt, darstellt, wird eine Sammlung von Entitätszuordnungen erstellt, um Produkte und zugehörige Informationen zu synchronisieren.
 
-Finance and Operations | Sonstige Dynamics 365-Apps | Beschreibung
+Finance and Operations Apps | Sonstige Dynamics 365-Apps | Beschreibung
 -----------------------|--------------------------------|---
 Freigegebene Produkte V2 | msdyn\_sharedproductdetails | Die Entität **msdyn\_sharedproductdetails** enthält die Felder aus Finance and Operations-Apps, die das Produkt definieren, und die die Finanz- und Verwaltungsinformationen des Produkts enthalten. 
 Von Common Data Service freigegebene eindeutig identifizierbare Produkte | Produkt | Die Entität **Produkt** enthält die Felder, die das Produkt definieren. Sie enthält Einzelprodukte (Produkte mit Untertypprodukt) und die Produktvarianten. Die Zuordnungen werden in der folgenden Tabelle veranschaulicht.
@@ -75,8 +75,8 @@ Einheit | uoms
 Einheitenumrechnungen | msdyn_ unitofmeasureconversions
 Produktspezifische Maßeinheit-Umrechnung | msdyn_productspecificunitofmeasureconversion
 Produktkategorien | msdyn_productcategories | Jede der Produktkategorien und -informationen über die Struktur und Eigenschaften ist in der Produktkategorieentität enthalten. 
-Produktkategoriehierarchien | msdyn_productcategoryhierarhies | Sie verwenden Produkthierarchien, um Produkte zu kategorisieren oder zu gruppieren. Die Kategoriehierarchien sind in Common Data Service über die Entität Produktkategoriehierarchie verfügbar. 
-Produktkategoriehierarchie-Rollen | msdyn_productcategoryhierarchies | Produkthierarchien können für verschiedene Rollen in D365 Finance and Operations verwendet werden. Um festzulegen, welche Kategorie in jeder Rolle verwendet wird, wird die Entität „Produktkategorierolle“ verwendet. 
+Produktkategoriehierarchien | msdyn_productcategoryhierarhies | Sie verwenden Produkthierarchien, um Produkte zu kategorisieren oder zu gruppieren. Die Kategoriehierarchien sind in Common Data Service über die Entität „Produktkategoriehierarchie“ verfügbar. 
+Produktkategoriehierarchie-Rollen | msdyn_productcategoryhierarchies | Produkthierarchien können für verschiedene Rollen in D365 Finance and Operations verwendet werden. Sie legen fest, welche Kategorie in jeder Rolle verwendet wird, wird die Entität „Produktkategorierolle“ verwendet. 
 Produktkategoriezuweisungen | msdyn_productcategoryassignments | Zum Zuweisen eines Produkts zu einer Kategorie kann die Entität „Produktkategoriezuweisungen“ verwendet werden.
 
 ## <a name="integration-of-products"></a>Integration von Produkten
@@ -143,7 +143,7 @@ Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Arti
 
 ## <a name="unit-of-measure-and-unit-of-measure-conversions"></a>Maßeinheit und Maßeinheitsumrechnungen
 
-Die Maßeinheiten und die jeweiligen Umrechungen sind in Common Data Service entsprechend des Datenmodells im Diagramm verfügbar.
+Die Maßeinheiten und die jeweilige Umrechung sind in Common Data Service entsprechend des Datenmodells im Diagramm verfügbar.
 
 ![Datenmodell für Produkte](media/dual-write-product-three.png)
 
@@ -153,7 +153,7 @@ Das Maßeinheitskonzept wird in Finance and Operations-Apps und anderen Dynamics
 
 [!include [unit of measure conversions](includes/UnitOfMeasureConversionEntity-msdyn-unitofmeasureconversions.md)]
 
-[!include [product specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
+[!include [product-specific unit of measure conversions](includes/EcoResProductSpecificUnitConversionEntity-msdyn-productspecificunitofmeasureconversions.md)]
 
 ## <a name="initial-synchronization-of-units-data-matching-between-finance-and-operations-and-common-data-service"></a>Datenabgleich bei der Erstsynchronisierung zwischen Finance and Operations und Common Data Service
 
@@ -172,7 +172,7 @@ Für Einheiten, die in Finance and Operations- und anderen Dynamics 365-Apps üb
 
 Für Einheiten und Einheitenklassen in Finance and Operations, die nicht in anderen Dynamics 365-Apps vorhanden sind:
 
-Im Rahmen des dualen Schreibens werden die Einheitengruppen aus Finance and Operations-Apps und die entsprechenden Einheiten erstellt und mit anderen Dynamics 365-Apps und Common Data Service synchronisiert und die Einheitengruppe wird als „extern verwaltet“ festgelegt. Es ist kein zusätzlicher Bootstrapping-Aufwand erforderlich.
+Im Rahmen des dualen Schreibens werden die Einheitengruppen aus Finance and Operations-Apps und die entsprechenden Einheiten erstellt und mit anderen Dynamics 365-Apps und Common Data Service synchronisiert und die Einheitengruppe wird als „Extern verwaltet“ festgelegt. Es ist kein zusätzlicher Bootstrapping-Aufwand erforderlich.
 
 Für Einheiten in anderen Dynamics 365-Apps, die nicht in Finance and Operations-Apps vorhanden sind:
 
@@ -203,7 +203,7 @@ Bei den Produktrichtlinien handelt es sich um Gruppen von Richtlinien, die für 
 
 Integrationsschlüssel werden verwendet, um Produkte zwischen Dynamics 365 for Finance and Operations und Produkte in Common Data Service eindeutig zu identifizieren. Für Produkte ist **(productnumber)** der eindeutige Schlüssel, der ein Produkt in Common Data Service identifiziert. Sie wird durch die Verkettung von zusammengesetzt: **(Firma, msdyn_productnumber)**. Das **Unternehmen** gibt die juristische Person in Finance and Operations und **msdyn_productnumber** gibt die Produktnummer für das jeweilige Produkt in Finance and Operations an. 
 
-Für einen anderen Benutzer von Dynamics 365-Apps wird das Produkt in der Benutzeroberfläche mit **msdyn_productnumber** gekennzeichnet (beachten Sie, dass die Feldbeschriftung **Produktnummer** lautet). Im Produktformular werden das Unternehmen und das Feld „msydn_productnumber“ angezeigt. Das Feld (productnumber), bei dem es sich um den eindeutigen Schlüssel für ein Produkt handelt, wird jedoch nicht angezeigt. 
+Für Benutzer von Dynamics 365-Apps wird das Produkt in der Benutzeroberfläche mit **msdyn_productnumber** gekennzeichnet (beachten Sie, dass die Feldbeschriftung **Produktnummer** lautet). Im Produktformular werden das Unternehmen und das Feld „msydn_productnumber“ angezeigt. Das Feld (productnumber), bei dem es sich um den eindeutigen Schlüssel für ein Produkt handelt, wird jedoch nicht angezeigt. 
 
 Wenn Sie Apps auf Common Data Service aufbauen, sollten Sie darauf achten, dass Sie den Integrationsschlüssel **Produktnummer** (die eindeutige Produkt-ID) verwenden. Verwenden Sie nicht **msdyn_productnumber**, da sie nicht eindeutig ist. 
 

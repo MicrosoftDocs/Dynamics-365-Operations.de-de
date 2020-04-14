@@ -1,6 +1,6 @@
 ---
 title: Modelle und Zuordnungen ändern, um Dokumente zu generieren, die Anwendungsdaten haben
-description: Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 2 - Dokumente erstellen).
+description: Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, „ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 2 - Dokumente erstellen)“.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5df6128228b9ff620c606c550c5eb7a6039b915
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a4546de2c5c1773aadce0ec084ee7058ff2ae153
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182300"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141878"
 ---
 # <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Modelle und Zuordnungen ändern, um Dokumente zu generieren, die Anwendungsdaten haben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, "ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 2: Dokumente erstellen). 
+Um die Schritte in dieser Prozedur auszuführen, müssen Sie zuerst das Verfahren abschließen, „ER generiert Dokumente mit Anwendungsdatenenaktualisierung (Teil 2 - Dokumente erstellen)“. 
 
 Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurationen (ER) erstellt werden, um elektronische Dokumente zu generieren. In diesem Verfahren ändern Sie die ER-Konfigurationen, um sie derzeit nicht verwenden, um elektronische Dokumente zu erzeugen, wohingegen Anwendungsdaten auch zu aktualisieren. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den DEMF-Datensatz verwenden.
 
@@ -129,11 +129,11 @@ Die Schritte in dieser Prozedur erläutern, wie elektronische Berichtskonfigurat
     * Archiv  
 32. Geben Sie im Feld Tabelle den Typ IntrastatArchiveGeneral ein.
     * Formular "IntrastatArchiveGeneral"  
-    * Behalten Sie die Belegaktion "Einfügen", sodass Sie Datensätze für das Detailarchivierens jedes Intrastat-Berichts-Prozesses hinzufügen können.  
+    * Behalten Sie die Belegaktion „Einfügen“, sodass Sie Datensätze für das Detailarchivierens jedes Intrastat-Berichts-Prozesses hinzufügen können.  
 33. Wählen Sie "Ja" im Feld Beleg-Infoprotokoll.
     * Wählen Sie die Option Ja aus, um Informationen zu Problemen mit der Bewerbungsdatenenaktualisierung abzurufen.  
 34. Wählen Sie Ja im Feld Belegaktionsüberprüfungsfeld aus.
-    * Wählen Sie die Option Ja aus, um leere Prüfungsfehler zum Feld "Intrastat-Archiv ID-" zu unterdrücken. Dieses erfolgt, nachdem Datensätze hinzugefügt wurden, basierend auf den Einstellungen der Nummernkreise, die für diese Tabelle in der Außenhandelparameterform konfiguriert werden.  
+    * Wählen Sie die Option „Ja“ aus, um leere Prüfungsfehler zum Feld „Intrastat-Archiv ID“ zu unterdrücken. Dieses erfolgt, nachdem Datensätze hinzugefügt wurden, basierend auf den Einstellungen der Nummernkreise, die für diese Tabelle in der Außenhandelparameterform konfiguriert werden.  
 35. Klicken Sie auf "OK".
     * Binden Sie Elemente der hinzugefügten Datenquelle (das gefilterte Modell auf Basis des ausgewählten Stammartikel) mit Elementen des hinzugefügten Ziels.  
 36. In der Struktur erweitern Sie Archiv.

@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7715c8e7a56703993e8512af03f2ab8d6802a987
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: 899701413814ce38a4367618ed72d1039eca0bf8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916575"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148169"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Physischen Bestand im Lagerort übertragen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur führt Sie durch den Prozess der Erstellung und des Buchens einer Umlagerungserfassung, um Artikelbewegungen von einem Lagerplatz eines Lagerorts an einen anderen zu erfassen. Sie müssen einen Namen der Lagererfassungen für die Umlagerungen haben, bevor Sie diese starten. Sie können diese Prozedur im Demodatunternehmen USMF mithilfe der angezeigten Beispielswerte ausführen, oder eigene Daten verwenden, wenn Sie bereits Produkte und Lagerplätze eingerichtet haben. Diese Aufgaben werden normalerweise von einem Lagerortmitarbeiter ausgeführt.
 

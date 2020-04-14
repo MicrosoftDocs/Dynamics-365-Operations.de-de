@@ -15,23 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 73f2c10d7462c4b52a2b36dd5f221593707d2f4f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5408fd883e91bbff465434ab23974f22bb0f07da
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184668"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142997"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Formate durch erneute Anwendung von Excel-Vorlagen ändern
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte im Aufgabenleitfaden „Eine ER-Konfiguration zum Generieren von Berichten im OPENXML-Format erstellen” abschließen.
 
 Dieses Verfahren zeigt, wie eine Konfiguration für das Format der elektronischen Berichterstellung (EB) geändert wird, indem eine Microsoft Excel-Vorlage erneut angewendet wird, die geändert wurde. In diesem Verfahren importieren Sie eine geänderte Excel-Vorlage in eine ER-Formatkonfigurationen, die für das Beispielunternehmen, Litware, Inc. erstellt wurde, und erstellen dann die elektronischen Dokumente. Diese Prozedur ist für Benutzer bestimmt, die die Rolle des Systemadministrators oder des elektronischen Berichtsentwicklers haben, die ihnen zugewiesen sind. Die Schritte können abgeschlossen werden, indem Sie den GBSI-Datensatz verwenden. Bevor Sie beginnen, laden und speichern Sie die Datei, SampleVendPaymWsReport2.xlsx, die im Hilfethema aufgeführt ist, ändern elektronisches Berichterstellungsformat, indem Sie eine Tabelle erneut öffnen (modify-electronic-reporting-format-reapply-excel-template/).
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
+    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zuerst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.  
 
 ## <a name="select-the-er-format"></a>Wählen Sie ER-Format aus.
 1. Klicken Sie auf "Berichterstellungskonfigurationen".
@@ -49,7 +49,7 @@ Dieses Verfahren zeigt, wie eine Konfiguration für das Format der elektronische
     * Öffnet die Entwurfsversion des ausgewählten ER-Formats zur Bearbeitung.  
 2. Klicken Sie im Aktivitätsbereich auf "Importieren".
 3. Auf "Aus Excel aktualisieren" klicken.
-    * Klicken Sie auf "Vorlage aktualisieren" und wählen Sie die Datei, SampleVendPaymWsReport2.xlsx aus.  
+    * Klicken Sie auf „Vorlage aktualisieren“ und wählen Sie die Datei, SampleVendPaymWsReport2.xlsx aus.  
     * Klicken Sie auf Vorlage aktualisieren und suchen Sie die zuvor heruntergeladene Datei SampleVendPaymWsReport2.xlsx.  
 4. Klicken Sie auf "OK".
     * Die SampleVendPaymWsReport2.xlsx-Vorlage wird angewendet. Die Struktur des ER-Formats wird mit dem Inhalt der Vorlage synchronisiert, deren Elemente in ER-Format hinzugefügt werden. Alle vorhandenen Elemente im ER-Format, die nicht in der Vorlage enthalten sind, werden von der Formatdefinition entfernt.  

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cbef5410d0e6f15fbb5025f3831486d55cd06216
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e0fabf5c9475b5acd7cbd77a51c2912c96681894
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185059"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142638"
 ---
 # <a name="er-configure-destinations"></a>ER Konfigurieren Sie Ziele
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Diese Prozedur zeigt, wie verschiedene Ziele für Ausgabekomponenten für elektronische Berichterstellung (ER) eingerichtet und verwendet werden, wie beispielsweise ein Ordner oder eine Datei. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF. Deutschland ist das Land/die Region der primären Adresse der juristischen Person, jedoch können Sie jede beliebige juristische Person für diese Prozedur verwenden. 
+Diese Prozedur zeigt, wie verschiedene Ziele für Ausgabekomponenten für elektronische Berichterstellung (ER) eingerichtet und verwendet werden, wie beispielsweise ein Ordner oder eine Datei. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist DEMF. Deutschland ist das Land/die Region der primären Adresse der juristischen Person, Sie können jedoch jede beliebige juristische Person für diese Prozedur verwenden. 
 
 Das Format, das in diesem Beispiel verwendet wird, ist "ISO20022 Kreditübertragung", aber Sie können jedes beliebige Format verwenden, das Sie bereits importiert haben. Beachten Sie, dass diese Prozedur ein Beispiel für die Einstellungen zu einer einzelnen Datei und einem einzelnen Ziel ist. Weitere Informationen über die Zielverwaltung für die elektronische Berichterstellung können Sie in der Dynamics 365 Finance-Hilfe finden.
 

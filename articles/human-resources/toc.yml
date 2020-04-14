@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "19.\_März\_2020"
+          href: hr-whats-new-2020-03-19.md
         - name: "10.\_März\_2020"
           href: hr-whats-new-2020-03-10.md
         - name: "3.\_März\_2020"
@@ -539,3 +541,9 @@
               href: hr-learning-create-closed-ended-question.md
             - name: Eine abhängige Frage erstellen
               href: hr-learning-depending-question.md
+        - name: Mitarbeiter- und Manager-Self-Service einrichten
+          items:
+            - name: Mitarbeiter- und Manager-Self-Service-Übersicht
+              href: hr-employee-manager-self-service-overview.md
+            - name: Persönliche Daten bearbeiten
+              href: hr-employee-manager-self-service-edit-personal-information.md

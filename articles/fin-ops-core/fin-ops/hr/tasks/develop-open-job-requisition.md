@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 556f99d34521cce70efb64c5fbababd815e8429d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 55260a4d25f41bc649f5e1f1f8c950c6b438ecfb
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190464"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144040"
 ---
 # <a name="develop-and-open-job-requisition"></a>Stellenanforderung ausarbeiten und freigeben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Mithilfe von Personalbeschaffungsprojekten können Sie den Personalbeschaffungsprozess verwalten. Für jedes Personalbeschaffungsprojekt können Sie Informationen einrichten wie die Stelle, für die Sie Personal beschaffen möchten, den Namen des Personalbeschaffungsmitarbeiters, den Status des Projekts und die Abteilung, in der sich die Stelle befindet. Nachdem Sie ein Personalbeschaffungsprojekt erstellt haben, können Sie eine Stellenausschreibung für das Projekt schreiben, die Stellenausschreibung auf Employee Self-Service-Seiten veröffentlichen, Bewerbungen für Anstellungen mit dem Projekt verknüpfen und Aktivitäten für das Projekt nachverfolgen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF. Um das Verfahren zu starten, wechseln Sie zu "Personalverwaltung" > "Personalbeschaffung" "Personalbeschaffungsprojekte" > "Personalbeschaffungsprojekte"
 

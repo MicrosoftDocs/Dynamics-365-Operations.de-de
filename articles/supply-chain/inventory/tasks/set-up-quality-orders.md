@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0119ae07e490f048dbb021983e25889cb1cb42b3
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9760aeb823730581aa1f02db1574e6f5eccd1f75
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1845348"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3145639"
 ---
 # <a name="set-up-quality-orders"></a>Qualitätsprüfungsaufträge einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wird, in dem eingehender Lagerbestand direkt nach der Eingangsregistrierung geprüft werden muss. Die Prozedur wird normalerweise von einem Qualitätsmanager ausgeführt. Der Prozess umfasst die Erstellung einer Qualitätsgruppe, um die Artikel zu definieren, bei denen Stichproben durchgeführt werden, und eine Testgruppe, um die Tests zu gruppieren, die an Artikeln in der Qualitätsgruppe ausgeführt werden sollen. Sie können diesen Leitfaden im Demodatunternehmen USMF ausführen.
 
@@ -72,7 +72,7 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Artikelmusteraufnahme** einen Wert ein.
 4. Geben Sie im Feld **Beschreibung** einen Wert ein.
-5. Geben Sie im Feld **Wert** eine Zahl ein. Dieser Wert bezieht sich auf die "Mengenspezifikation", die im angrenzenden Feld ausgewählt ist.  
+5. Geben Sie im Feld **Wert** eine Zahl ein. Dieser Wert bezieht sich auf die „Mengenspezifikation“, die im angrenzenden Feld ausgewählt ist.  
 6. Erweitern oder reduzieren Sie den Abschnitt **Prozess**.
 7. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Vollständige Sperrung**. Wenn Sie diese Option auswählen, wird alles oder die Auftragspositionsmenge gesperrt, wenn ein Test fehlschlägt. Wenn Sie sie nicht auswählen, werden nur die Artikel in der Testbestellung gesperrt.  
 8. Klicken Sie auf **Speichern**.
@@ -96,7 +96,7 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 ## <a name="create-a-test-group"></a>Erstellen einer Testgruppe
 1. Wechseln Sie zu **Lagerverwaltung > Einstellungen > Qualitätskontrolle > Testgruppen**.
 2. Klicken Sie auf **Neu**.
-3. Geben Sie im Feld **Testgruppe** einen Wert ein. Geben Sie der **Testgruppe** einen Namen, mit dem Sie sich merken können, welche Arten von Tests ausgeführt werden und welcher Qualitätsgruppe sie zugeordnet werden soll. Beispielsweise, wenn sie mit einer Qualitätsgruppe verwendet wird, die Artikel auswählt, die mit "T" anfangen, könnten Sie sie "T-Artikel-Tests" nennen.  
+3. Geben Sie im Feld **Testgruppe** einen Wert ein. Geben Sie der **Testgruppe** einen Namen, mit dem Sie sich merken können, welche Arten von Tests ausgeführt werden und welcher Qualitätsgruppe sie zugeordnet werden soll. Beispielsweise, wenn sie mit einer Qualitätsgruppe verwendet wird, die Artikel auswählt, die mit „T“ anfangen, könnten Sie sie „T-Artikel-Tests“ nennen.  
 4. Geben Sie im Feld **Beschreibung** einen Wert ein.
 5. Wählen Sie im Feld **Artikelmusteraufnahme** die Artikelmusteraufnahmeposition aus, die Sie zuvor erstellt haben.
 6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
@@ -116,7 +116,7 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 1. Wechseln Sie zu **Lagerverwaltung > Einstellungen > Qualitätskontrolle > Qualitätszuordnungen**.
 2. Klicken Sie auf **Neu**.
 3. Wählen Sie im Feld **Referenztyp** eine Option aus.
-4. Wählen Sie im Feld **Artikelcode** die Option „Gruppe“ aus. In diesem Beispiel wählen wir" Gruppe" aus und verwenden die Qualitätsgruppe, die wir zuvor erstellt hatten. Sie können dies auch als "Tabelle" festlegen, um die Artikel manuell anzugeben, oder Sie können "Alle" auswählen, um alle Artikel der Testbestellung hinzuzufügen.  
+4. Wählen Sie im Feld **Artikelcode** die Option „Gruppe“ aus. In diesem Beispiel wählen wir „Gruppe“ aus und verwenden die Qualitätsgruppe, die wir zuvor erstellt hatten. Sie können dies auch als "Tabelle" festlegen, um die Artikel manuell anzugeben, oder Sie können "Alle" auswählen, um alle Artikel der Testbestellung hinzuzufügen.  
 5. Wählen Sie im Feld **Artikel** die Qualitätsgruppe aus, die Sie zuvor erstellt haben. Die Optionen, die im Feld "Artikel" verfügbar sind, hängen davon ab, was Sie im Feld "Artikelcode" festlegen.  
 6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 7. Erweitern oder reduzieren Sie den Abschnitt 'Prozess'.

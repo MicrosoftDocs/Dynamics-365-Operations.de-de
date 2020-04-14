@@ -19,20 +19,19 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 269346d38eeb3812c352d16f9d50fbcd09307c12
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 977b74b10b4549d09a8816264f9ff603fa86e91c
+ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124588"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172830"
 ---
 # <a name="integrated-customer-master"></a>Integrierte Masterdaten von Debitoren
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
 
-Debitorendatensätze werden typischerweise in mehreren Anwendungen verwaltet. So kann eine Verkaufsaktivität kommerzielle Debitorendatensätze über eine Verkaufsanwendung übernehmen, und E-Commerce und Einzelhandelsverkäufe können Debitorendatensätze über eine Finance and Operations-Anwendung übernehmen. Unabhängig davon, woher der Debitorendatensatz stammt, wird er im Hintergrund über Anwendungsgrenzen und Infrastrukturunterschiede hinweg integriert. Integrierte Masterdaten von Debitoren sind bei der Verarbeitung von Multimasterszenarien behilflich und bieten eine umfassende Ansicht des Debitors in der Dynamics 365-Anwendungssuite.
+Kundendaten können in mehr als einer Dynamics 365 Anwendung verwaltet werden. Beispielsweise kann ein Kundendatensatz durch Verkaufsaktivitäten in Dynamics 365 Sales (eine modellgesteuerte App in Dynamics 365) oder ein Datensatz durch Einzelhandelsaktivitäten in Dynamics 365 Commerce (eine Finance and Operations App) entstehen. Unabhängig davon, woher die Kundendaten stammen, werden sie im Hintergrund integriert. Der integrierte Kundenstamm bietet Ihnen die Flexibilität, Kundendaten in jeder Dynamics 365 Anwendung zu verwalten, und bietet eine umfassende Ansicht des Kunden in der gesamten Dynamics 365 Anwendungssuite.
 
 ## <a name="customer-data-flow"></a>Debitorendatenfluss
 
@@ -59,7 +58,6 @@ Debitorengruppen             | msdyn_customergroups            | Diese Vorlage s
 Zahlungsmethode für Debitoren     | msdyn_customerpaymentmethods    | Diese Vorlage synchronisiert Informationen zu den Zahlungsmethoden für Debitoren.
 Debitoren V3                | Konten                        | Diese Vorlage synchronisiert die Debitorenmasterinformationen für kommerzielle Debitoren und Geschäftsdebitoren.
 Debitoren V3                | Kontakte                        | Diese Vorlage synchronisiert Debitorenmasterdaten für Kunden und Endbenutzer.
-Treuekarte                | msdyn_loyaltycards              | Diese Vorlage synchronisiert Treukarteninformationen von Debitoren.
 Namensaffixe                | msdyn_nameaffixes               | Diese Vorlage synchronisiert die Referenzdaten für Namensaffixe sowohl für Debitoren als auch für Kreditoren.
 Zahlungstagpositionen CDS V2    | msdyn_paymentdaylines           | Diese Vorlage synchronisiert die Referenzdaten für Zahlungstagpositionen sowohl für Debitoren als auch für Kreditoren.
 Zahlungstage CDS            | msdyn_paymentdays               | Diese Vorlage synchronisiert die Referenzdaten für Zahlungstage sowohl für Debitoren als auch für Kreditoren.
@@ -78,8 +76,6 @@ Zahlungsbedingungen            | msdyn_paymentterms              | Diese Vorlage
 [!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
 
 [!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping loyalty card](includes/LoyaltyCard-msdyn-loyaltycards.md)]
 
 [!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
 

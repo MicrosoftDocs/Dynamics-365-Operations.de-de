@@ -17,16 +17,16 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cb6c8175776e4f8ebf59769b904275970dd918f2
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 02feb730b3fd4715516b11de42bd69d411f712ee
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1837679"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149066"
 ---
 # <a name="define-production-flow-models"></a>Produktionsflussmodelle definieren
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Produktionsflussmodelle beschreiben, wie die Kapazität von Lean Manufacturing-Arbeitsgruppen berechnet und gepflegt wird. Daher ist die Definition eines Produktionsflussmodells eine Voraussetzung für die Definition der Arbeitsgruppen. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
@@ -36,7 +36,7 @@ Produktionsflussmodelle beschreiben, wie die Kapazität von Lean Manufacturing-A
 2. Klicken Sie auf "Neu".
 3. Wählen Sie im Feld "Produktionsflussmodell" eine Kennung für das Produktionsflussmodell.
 4. Wählen Sie im Feld "Modell" eine Option aus.
-    * Es gibt zwei Modelltypen: Durchsatz und Stunden. Für "Durchsatz" wird die Kapazität von Arbeitsgruppen verwendet und berechnet, die dieses Produktionsflussmodell verwenden. Für "Stunden" wird die Kapazität von Arbeitsgruppen in Stunden verwendet und berechnet, die dieses Produktionsflussmodell verwenden. Beachten Sie, dass diese Eigenschaft nicht für ein vorhandenes Produktionsflussmodell geändert werden kann. Nachdem eine Arbeitsgruppe Kapazitätsreservierungen hat, kann der Produktionsflussmodelltyp nicht geändert werden.  
+    * Es gibt zwei Modelltypen: Durchsatz und Stunden. Für "Durchsatz" wird die Kapazität von Arbeitsgruppen verwendet und berechnet, die dieses Produktionsflussmodell verwenden. Für "Stunden" wird die Kapazität von Arbeitsgruppen in Stunden verwendet und berechnet, die dieses Produktionsflussmodell verwenden. Beachten Sie, dass diese Eigenschaft nicht für ein bestehendes Produktionsflussmodell geändert werden kann. Nachdem eine Arbeitsgruppe Kapazitätsreservierungen hat, kann der Produktionsflussmodelltyp nicht mehr geändert werden.  
 5. Geben Sie die Anzahl von Tagen in das Feld "EPE-Zyklus" ein.
     * Das Intervall beschreibt die Periode, in jeder Teil, der von einem Produktionsfluss oder von einer Arbeitsgruppe produziert wird, mindestens einmal produziert wird. Je kürzer der EPE-Zyklus, desto flexibler ist der Produktionsprozess. Wenn der EPE-Zyklus gleich 0 ist, kann der gesamte Bedarf am selben Tag produziert werden. Der EPE-Zyklus wird verwendet, um Leanproduktions-Einzelvorgänge zu planen. Wenn Sie einen Einzelvorgang in einer Arbeitsgruppe mit EPE-Zyklus = 5 planen, sucht der Planungsvorgang nach einer Kapazität der Arbeitsgruppe mit dem Fälligkeitsdatum - EPE-Zyklus (5 Tage nach dem aktuellen Datum), um sicherzustellen dass das Produkt in diesem Zyklus produziert werden kann. Die Lagerlieferzeit eines Produkts ist normalerweise größer oder gleich dem EPE-Zyklus des zugehörigen Produktionsprozesses.  
 6. Wählen Sie im Feld "Planungsperiodentyp" eine Option aus.

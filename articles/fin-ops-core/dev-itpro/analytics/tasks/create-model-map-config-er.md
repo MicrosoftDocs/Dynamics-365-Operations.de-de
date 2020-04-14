@@ -15,29 +15,29 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bcfc258e7fe364779fd77cc79413e8d5e871e214
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c6ba23af5f7eb517cc58994e54e918b2a305da17
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2182691"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142162"
 ---
 # <a name="create-electronic-reporting-er-model-mapping-configurations"></a>Modellzuordnungskonfigurationen der elektronischen Berichterstellung (EB) erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Verwenden Sie diese Prozedur, um eine neue Modellzuordnungskonfiguration für elektronische Berichterstellung (EB) zu entwerfen und integrierte EB-Funktionen für effiziente Aggregationsberechnungen zu verwenden. In dieser Prozedur erstellen Sie eine Konfiguration für das Beispielunternehmen Litware, Inc. 
 
 Diese Prozedur wird für Verwendungszwecke erstellt, die die Rolle des Systemadministrators oder des Entwicklers für elektronische Berichterstellung haben, die ihnen zugewiesen sind.
 
-Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.
+Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. Um diese Schritte auszuführen, müssen Sie zunächst die Schritte unter „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.
 
 1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zunächst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren” abschließen.  
+    * Überprüfen Sie, dass der Konfigurationsanbieter für Beispielunternehmen „Litware, Inc.” verfügbar und als aktiv markiert ist. Wenn Sie diesen Konfigurationsanbieter nicht sehen, müssen Sie zuerst die Schritte in der Prozedur „Konfigurationsanbieter erstellen und als aktiv markieren“ abschließen.  
 2. Klicken Sie auf "Berichterstellungskonfigurationen".
 3. Klicken Sie auf "Filter anzeigen".
 4. Geben Sie im Feld „Name” den Filterwert „Intrastat” ein, und verwenden Sie den Filteroperator „beginnt mit”.
-    * Wenden Sie diesen Filter an, um die Datenmodellkonfiguration „Intrastat” zu suchen. Dieses Modell besteht möglicherweise bereits in der Konfigurationsstruktur. Wenn es der Fall, überspringen Sie nächste Unteraufgabe.   
+    * Nehmen Sie diesen Filter um die Datenmodellkonfiguration „Intrastat“ zu suchen. Dieses Modell besteht möglicherweise bereits in der Konfigurationsstruktur. Wenn es der Fall, überspringen Sie nächste Unteraufgabe.   
 
 ## <a name="get-the-intrastat-model-configuration-provided-by-microsoft"></a>Intrastat-Modellkonfiguration von Microsoft erhalten
 1. Schließen Sie die Seite.
@@ -48,7 +48,7 @@ Diese Schritte können mithilfe eines beliebigen Dataset abgeschlossen werden. U
 5. Klicken Sie auf Repositorys.
     * Klicken Sie auf „Repositorys” in der Kachel „Microsoft-Anbieter”.  
 6. Klicken Sie auf "Filter anzeigen".
-7. Geben Sie im Feld „Name eingeben” den Filterwert „Ressourcen” ein, und verwenden Sie den Filteroperator „enthält”. 
+7. Geben Sie im Feld „Name eingeben“ den Filterwert „Ressourcen“ ein, und verwenden Sie dann den Filteroperator „enthält“. 
 8. Klicken Sie auf "Öffnen".
 9. In der Struktur wählen Sie „Intrastatmodell” aus.
 10. Klicken Sie auf Import.

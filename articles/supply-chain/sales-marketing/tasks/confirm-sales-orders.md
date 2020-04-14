@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9274a90ffbf6e5703d3ed97a8b974227b25c2a0
-ms.sourcegitcommit: 62d66f98d4bbf916e19184506b90055bb68d219f
+ms.openlocfilehash: 6383576302789d268d64edcbbe05305b03e956d0
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "1924377"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148702"
 ---
 # <a name="confirm-sales-orders"></a>Aufträge bestätigen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Diese Verfahren zeigt, wie Aufträge bestätigt werden. Sie werden angezeigt, wie einen einzelnen Auftrag bestätigt und wie man bestätigt mehrerer Aufträge gleichzeitig. Diese Aufgaben werden normalerweise von einem Auftragsbearbeiter ausgeführt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden. Bevor Sie beginnen, stellen Sie sicher, dass es mehrere offene Aufträge für denselben Debitor vorhanden ist. Wenn Sie USMF verwenden, können Sie Debitor US-027 verwenden.
+Diese Verfahren zeigt, wie Aufträge bestätigt werden. Es wird angezeigt, wie ein einzelner Auftrag bestätigt wird und wie man mehrere Aufträge gleichzeitig bestätigt. Diese Aufgaben werden normalerweise von einem Auftragsbearbeiter ausgeführt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden. Bevor Sie beginnen, stellen Sie sicher, dass es mehrere offene Aufträge für denselben Debitor vorhanden ist. Wenn Sie USMF verwenden, können Sie Debitor US-027 verwenden.
 
 
 ## <a name="confirm-a-single-sales-order"></a>Einzelnen Auftrag bestätigen
@@ -37,7 +37,7 @@ Diese Verfahren zeigt, wie Aufträge bestätigt werden. Sie werden angezeigt, wi
 4. Klicken Sie im **Aktivitätsbereich** auf **Verkaufen**.
 5. Klicken Sie auf **Auftrag bestätigen**.
 6. Erweitern Sie den Abschnitt **Parameter**. Stellen Sie sicher, dass die Option **Buchung** auf „Ja“ festgelegt ist.  
-7. Legen Sie die Option **Bestätigung drucken** auf „Ja“ fest. Das Feld **Scheckkreditlimit** gibt die Methode an, die verwendet wird, um den verbleibenden Kredit eines Debitors zu berechnen. Standardmäßig wird der Code wird aus der Seite Debitorenparameter kopiert. Wenn die Kreditlimitprüfung übersprungen werden soll, wenn Sie einen bestimmten Auftrag bestätigen, setzen Sie **Kreditlimit prüfen** auf „Nein“. Sie sollten jedoch daran denken, dass auch dann, wenn dieses Feld auf „Nein“ festgelegt ist, die Kreditlimitprüfung weiterhin ausgeführt wird, wenn die Option **Kreditlimit erforderlich** bei den Debitorenmasterdaten ausgewählt ist. 
+7. Legen Sie die Option **Bestätigung drucken** auf „Ja“ fest. Das Feld **Scheckkreditlimit** gibt die Methode an, die verwendet wird, um den verbleibenden Kredit von einem Debitor zu berechnen. Standardmäßig wird der Code aus der Seite Debitorenparameter kopiert. Wenn die Kreditlimitprüfung übersprungen werden soll, wenn Sie einen bestimmten Auftrag bestätigen, setzen Sie **Kreditlimit prüfen** auf „Nein“. Sie sollten jedoch daran denken, dass auch dann, wenn dieses Feld auf „Nein“ festgelegt ist, die Kreditlimitprüfung weiterhin ausgeführt wird, wenn die Option **Kreditlimit erforderlich** bei den Debitorenmasterdaten ausgewählt ist. 
 8. Klicken Sie auf **OK**.
 9. Klicken Sie auf **Ja**.
 10. Schließen Sie die Seite.
@@ -53,7 +53,7 @@ Diese Verfahren zeigt, wie Aufträge bestätigt werden. Sie werden angezeigt, wi
 2. Klicken Sie auf **Auswählen**.
 3. Suchen Sie in der Liste auf der Registerkarte **Bereich** nach dem Datensatz, der auf das Feld **Debitorenkonto** verweist, und wählen Sie ihn aus.
 4. Klicken Sie im Feld **Kriterien** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
-5. Suchen und wählen Sie das Debitorenkonto aus, für das mehrere Aufträge hat, die per Massenerstellung soll bestätigen. Wenn Sie USMF verwenden, können Sie Konto US-027 auswählen.  
+5. Suchen und wählen Sie das Debitorenkonto aus, für das mehrere Aufträge hat, die per Massenerstellung soll bestätigen. Wenn Sie USMF verwenden, können Sie Konto US-027 wählen.  
 6. Klicken Sie auf **OK**.
     - Die Registerkarte **Überblick** zeigt eine Liste der Aufträge an, die mit den Abfragekriterien übereinstimmen. Dabei werden in der Bestätigung eingeschlossen.  
     - Die Feld **Sammelaktualisierung für** im Abschnitt **Parameter** gibt die Parameter an, mit denen mehrere Aufträge in einem Bestätigungsdokument zusammengefasst werden sollen. Standardmäßig wird die Option von der Einstellung **Standardwerte für Sammelaktualisierung** auf der Seite **Debitorenparameter** kopiert.  

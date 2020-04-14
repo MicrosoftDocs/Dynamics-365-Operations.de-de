@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dfa5bfa2eba39b981c5dc1d029f4847651c8fc6f
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 1982c8dffbc7a65263babce7738045b744db2592
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1844032"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149526"
 ---
 # <a name="search-for-vendors"></a>Nach Kreditoren suchen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Informieren Sie, wie nach Kreditoren anhand bestimmter Kriterien sucht. In diesem Beispiel wird Ihnen angegeben, wie nach Kreditoren findet, die für eine bestimmte Beschaffungskategorie genehmigt werden und deren primäre Adresse sich in einem bestimmten Land hat. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Diese Aufgabe ist in der Regel von einem Beschaffungsspezialisten ausgeführt.
 

@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbef7048488056f50ec8967a9af53d468666856
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: e8a4965c07c5a084b21da40667747db36530284c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550762"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141948"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-3---use-computations-to-make-the-output"></a>ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 3: Nutzen von Berechnungen für die Ausgabe)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe. Diese Schritte können in jedem Unternehmen ausgeführt werden.
 
-Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 2: Berechnungen konfigurieren)" ausführen.
+Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden „ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 2: Berechnungen konfigurieren)“ ausführen.
 
 Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
@@ -55,8 +55,8 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
     * COLLECTEDLIST('$BlockName',  
 16. Geben Sie im Feld 'Formel' 'COLLECTEDLIST('$BlockName', "*")' ein.
     * COLLECTEDLIST('$BlockName', "*")  
-17. Klicken Sie auf "Speichern".
-    * Das Muster "*" bedeutet, dass alle Blöcke der Liste für diesen Datensatz enthalten sind.  
+17. Klicken Sie auf Speichern.
+    * Das Muster „*“ bedeutet, dass alle Blöcke der Liste für diesen Datensatz enthalten sind.  
 18. Schließen Sie die Seite.
 19. Klicken Sie auf "OK".
 20. Klicken Sie auf die Registerkarte 'Format'.

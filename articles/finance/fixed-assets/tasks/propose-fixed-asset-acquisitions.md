@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4b35b13dc266fd5bccde437526400832d394b9aa
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: e08177aad2db2438c2d5d4ddd294c1056b88167c
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177883"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142730"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Anlagenanschaffungen vorschlagen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie eine Anlage mithilfe des Anschaffungsvorschlags in der Anlagenerfassung angeschafft wird. Dabei werden die Buchhalterrolle und die Demodaten für die juristische Person USMF verwendet.
 

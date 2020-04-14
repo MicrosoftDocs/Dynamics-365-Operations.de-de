@@ -16,26 +16,26 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b616998738d6b6986f157d136fc56e061900ef41
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 501936734b6ec970062d0d2cbcc8a3cdc11b934f
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550531"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142362"
 ---
 # <a name="er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1---design-format"></a>ER Horizontal erweiterbare Bereiche zum dynamischen Hinzufügen von Spalten in Excel-Berichten nutzen (Teil 1: Designformat)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie einem Benutzer mit der Rolle Systemadministrator oder elektronischer Berichterstellungsentwickler ein Elektronische Berichterstellung-Format (ER) zur Generierung von Berichten als OPENXML-Arbeitsblätter (Excel) konfigurieren kann, in dem die erforderlichen Spalten als horizontal erweiterbare Bereiche erstellt werden können. Diese Schritte können in jedem Unternehmen ausgeführt werden.
 
 Um diese Schritte ausgeführt, auszuführen, müssen Sie diese zuerst in diesen drei Aufgabenleitfäden ausführen: 
 
-"ER Konfigurationsanbieter erstellen und als aktiv markieren"
+„ER Konfigurationsanbieter erstellen und als aktiv markieren“
 
-"ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Designdatenmodell)"
+„ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 1: Datenmodell entwerfen)“
 
-"ER - Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)"
+„ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 2: Modellzuordnung)“
 
 Sie müssen auch eine lokale Kopie der Vorlage mit einem Beispielbericht herunterladen und speichern, die hier unter [Muster Finanzdimensions-Dienstleistungsbericht](https://go.microsoft.com/fwlink/?linkid=862266) gefunden wird.
 
@@ -57,12 +57,12 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 
 ## <a name="design-the-report-format"></a>Entwerfen des Berichtsformats
 1. Klicken Sie auf Designer.
-2. Aktivieren Sie die Umschaltfläche "Detaildaten anzeigen".
+2. Aktivieren Sie die Umschaltfläche „Detaildaten anzeigen“.
 3. Klicken Sie im Aktivitätsbereich auf "Importieren".
 4. Klicken Sie auf "Aus Excel importieren".
 5. Klicken Sie auf Anhänge.
     * Importieren Sie die Vorlage des Berichts. Verwenden Sie hierzu die heruntergeladene Excel-Datei.  
-6. Klicken Sie auf "Neu".
+6. Klicken Sie auf Neu.
 7. Klicken Sie auf "Datei".
 8. Schließen Sie die Seite.
 9. Geben Sie im Feld "Vorlage" einen Wert ein, oder wählen Sie einen Wert aus.

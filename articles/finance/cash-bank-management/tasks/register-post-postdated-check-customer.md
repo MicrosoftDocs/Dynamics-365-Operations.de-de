@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f27675a2aa2160619bf78eea33bba2ce0b7bd81
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 11089584e150a1a302eb969a5fb61cb9d1900901
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188095"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141740"
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Einen vordatierten Scheck für einen Debitor erfassen und buchen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben. Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen.   Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck erfasst und gebucht, der von einem Debitor erhalten haben:   • Einrichten von vordatierten Schecks in bar und in der Bankwesenseite • Einrichten einer Zahlungsmethode für vordatierte Schecks, für die der Rolle für diesen Schritt Schatzmeister ist. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
+Sie können die Details eines vordatierten Schecks erfassen, den Sie von einem Debitor erhalten haben. Sie können den vordatierten Scheck buchen und Finanzbuchungen erstellen.   Führen Sie die folgenden Schritte aus, bevor Sie einen vordatierten Scheck erfasst und gebucht, der von einem Debitor erhalten haben:   * Einrichten von vordatierten Schecks in bar und in der Bankwesenseite * Einrichten einer Zahlungsmethode für vordatierte Schecks, für die der Rolle für diesen Schritt Schatzmeister ist. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet.
 
 1. Wechseln Sie zu "Debitoren" > "Zahlungen" > "Zahlungserfassung".
 2. Klicken Sie auf "Neu".

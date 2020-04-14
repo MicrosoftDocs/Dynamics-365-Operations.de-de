@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e29df3b42479a215b66354f8dfceea002a146e74
-ms.sourcegitcommit: 1bf6a8b2f872394a4f242f9ff13c67e8e1ae8f65
+ms.openlocfilehash: c8416f9a869b9144a63a6fb08c667cc32dec9854
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "1856471"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149710"
 ---
 # <a name="create-purchasing-policies"></a>Einkaufsrichtlinien erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten. Bevor Sie Einkaufsrichtlinien erstellen können, sind die Einkaufsrichtlinienparameter einzurichten. Es ist möglich, eine Einkaufsrichtlinie zu erstellen, zu ändern und außer Kraft zu setzen, aber Sie können eine Einkaufsrichtlinie nicht löschen. Diese Prozedur würde normalerweise von einem Einkaufsleiter ausgeführt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
+In diesem Thema wird erläutert, wie Einkaufsrichtlinien so erstellt werden, dass sie sich an Ihren Geschäftsprozessen für den Einkauf ausrichten. Bevor Sie Einkaufsrichtlinien erstellen können, sind die Einkaufsrichtlinienparameter einzurichten. Es ist möglich, eine Einkaufsrichtlinie zu erstellen, zu ändern und außer Kraft zu setzen, aber Sie können keine Einkaufsrichtlinie löschen. Diese Prozedur würde normalerweise von einem Einkaufsleiter ausgeführt werden. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.
 
 
 ## <a name="set-up-policy-parameters"></a>Einrichten von Richtlinienparametern
@@ -36,22 +36,22 @@ In diesem Thema wird erläutert, wie Einkaufsrichtlinien so erstellt werden, das
 - Richtlinienrangfolgenregeln gelten für verschiedene Ebenen in Ihrer Organisation. Die organisatorischen Einheiten, die hier angezeigt werden, sind von der Hierarchie in Ihrer Organisation abhängig sowie von den Ebenen in der Hierarchie, denen der Zweck der "Beschaffung - interne Kontrolle" zugewiesen wird. Beispielsweise hat Ihre Organisation möglicherweise juristische Personen, Kostenstellen, Regionen und Abteilungen, aber möglicherweise haben nur einige von ihnen einen Hierarchiezweck "Beschaffung - interne Kontrolle". Als Standard ist die Organisation vom Typ "Unternehmen" verfügbar.  
 3. Wählen Sie die Registerkarte **Parameter für den Richtlinienregeltyp** aus.
 4. Wechseln Sie im Baum zu **Einkaufsrichtlinie > Bestellanforderungs-Steuerungsregel**.
-- Sie definieren die Prioritätsreihenfolge für die Richtlinienauflösung auf Richtlinienebene. Bei einigen Richtlinientypen lässt sich jedoch die Prioritätsreihenfolge für einzelne Richtlinienregeltypen überschreiben. Zum Beispiel definieren Sie möglicherweise die Prioritätsreihenfolge für Einkaufsrichtlinien folgendermaßen: Kostenstelle, Abteilung, Unternehmen. Für die Katalogrichtlinienregel möchten Sie möglicherweise folgende Prioritätsreihenfolge festlegen: Abteilung, Kostenstelle, Unternehmen. Sie können die Prioritätsreihenfolge für die Katalogrichtlinienregel ändern. Wenn eine Arbeitskraft eine Anforderung erstellt, wird der angezeigte Katalog anhand der Richtlinien bestimmt, die zunächst der Abteilung der betreffenden Arbeitskraft, dann der zugehörigen Kostenstelle und dann ihrem Unternehmen zugeordnet sind.  
-- Wenn mehr als eine Organisationsebene aufgelistet ist, können Sie die Pfeile nach oben/unten verwenden, um die Prioritätsreihenfolge für die "Steuerungsregel für Bestellanforderung" festzulegen.  
+- Sie definieren die Prioritätsreihenfolge für die Richtlinienauflösung auf Richtlinienebene. Bei einigen Richtlinientypen lässt sich jedoch die Prioritätsreihenfolge für einzelne Richtlinienregeltypen überschreiben. Zum Beispiel definieren Sie möglicherweise die Prioritätsreihenfolge für Einkaufsrichtlinien folgendermaßen: Kostenstelle, Abteilung, Unternehmen. Für die Katalogrichtlinienregel möchten Sie möglicherweise folgende Prioritätsreihenfolge festlegen: Abteilung, Kostenstelle, Unternehmen. Sie können die Prioritätsreihenfolge für die Katalogrichtlinienregel ändern. Wenn eine Arbeitskraft eine Anforderung erstellt, wird der angezeigte Katalog anhand der Richtlinien bestimmt, die zunächst der Abteilung der betreffenden Arbeitskraft, dann der zugehörigen Kostenstelle und dann ihrem Unternehmen zugeordnet werden.  
+- Wenn mehr als eine Organisationsebene aufgelistet ist, können Sie die Pfeile nach oben/nach unten verwenden, um die Prioritätsreihenfolge für die Steuerungsregel für Bestellanforderung festzulegen.  
 5. Schließen Sie die Seite.
 
 ## <a name="create-a-new-policy"></a>Neue Richtlinie erstellen
 1. Wählen Sie **Neu** aus.
 2. Geben Sie im Feld **Name** einen Wert ein.
 3. Geben Sie im Feld **Beschreibung** einen Wert ein.
-- Eine einzelne Einkaufsrichtlinie kann nur für eine Organisationshierarchie gelten. Zum Beispiel könnten Sie eine Hierarchie genannt "Geographisch" haben und eine mit der Bezeichnung "Abteilung" und Sie könnten für jede von ihnen eine unterschiedliche Einkaufsrichtlinie haben.  
+- Eine einzelne Einkaufsrichtlinie kann nur für eine Organisationshierarchie gelten. Zum Beispiel könnten Sie eine Hierarchie genannt Geographisch haben und eine mit der Bezeichnung Abteilung und Sie könnten für jede von ihnen eine unterschiedliche Einkaufsrichtlinie haben.  
 - Wählen Sie eine Organisation aus, für die die Richtlinie gelten soll.  
 4. Klicken Sie auf den Pfeil, um die ausgewählte Organisation hinzuzufügen.
 - Sie können diesen Prozess wiederholen, um mehr Organisationen hinzuzufügen.  
 
 ## <a name="add-a-policy-rule"></a>Eine Richtlinienregel hinzufügen
 1. Wählen Sie in der Liste **Richtlinienregeltyp** die **Anforderungszweckregel** aus.
-- Sie schaffen eine Regel, die den Standardanforderungszweck auf den Typ "Verbrauch" festlegt, aber zulässt, dass der Typ "Wiederbeschaffung" stattdessen ausgewählt wird.  
+- Sie schaffen eine Regel, die den Standardanforderungszweck auf den Typ Verbrauch festlegt, aber zulässt, dass der Typ Wiederbeschaffung stattdessen ausgewählt wird.  
 2. Wählen Sie **Richtlinienregel erstellen** aus.
 3. Wählen Sie **Ja** im Feld **Manuelles Überschreiben zulassen** aus.
 4. Wählen Sie **Schließen** aus.

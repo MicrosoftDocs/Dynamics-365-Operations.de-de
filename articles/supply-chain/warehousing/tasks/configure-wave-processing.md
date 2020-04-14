@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc28149aa56302e09eb0e7be581a582f58a76416
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 9c813a429d7837493663625bde341638eecfc5ee
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847350"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148500"
 ---
 # <a name="configure-wave-processing"></a>Wellenverarbeitung konfigurieren
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Leitfaden wird beschrieben, wie die Kriterien eingerichtet werden, die bestimmen, welche Arbeit für einen Lagerort generiert wird, wenn eine Wellen verarbeitet wird und ob Wellen manuell oder automatisch verarbeitet werden. Sie geben die Kriterien an, indem Sie Wellenvorlagen und Abfragen einrichten, die mit einer Welle mit freigegebenen Positionen in Aufträgen, Produktionsaufträgen oder in Kanban-Aufträgen übereinstimmen. Die Wellenverarbeitung wird an Lagerorten verwendet, die die Funktionen im Modul für "Lagerortverwaltung" verwenden, und nicht an denen, die die Funktionen im Modul für "Bestandsverwaltung" verwenden. Sie können diese Prozedur im Demodatunternehmen USMF ausführen.
 
@@ -34,7 +34,7 @@ In diesem Leitfaden wird beschrieben, wie die Kriterien eingerichtet werden, die
 2. Klicken Sie auf **Neu**.
 3. Geben Sie im Feld **Wellenvorlagenname** einen Wert ein. Wenn Sie eine Wellenvorlage einrichten, geben Sie die Reihenfolge an, in der die Vorlagen mit freigegebenen Positionen in Aufträgen, Produktionsaufträge oder Kanbans abgeglichen werden. Wenn eine Position für einen Lagerort oder für die Produktion freigegeben wird, verwendet sie die erste Wellenvorlage, für die sie die Kriterien erfüllt. Es wird empfohlen, dass Sie die Vorlagen mit den spezifischsten Kriterien an den Anfang der Liste platzieren. Je breiter die Kriterien, desto wahrscheinlicher ist es, dass eine Position die Kriterien erfüllt, und dass könnte dazu führen, dass Positionen der falschen Welle zugewiesen werden.  
 4. Geben Sie im Feld **Wellenvorlagenbeschreibung** einen Wert ein.
-5. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie "Standort 2" auswählen.  
+5. Geben Sie im Feld **Standort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie „Standort 2“ auswählen.  
 6. Geben Sie im Feld **Lagerort** einen Wert ein, oder wählen Sie einen Wert aus. Wenn Sie USMF verwenden, können Sie Lagerort 24 auswählen.  
 7. Legen Sie das Feld **Wellenerstellung automatisieren** auf **Ja** fest. Aktivieren Sie diese Option, um eine Welle automatisch zu erstellen, wenn ein Auftrag, ein Produktionsauftrag oder ein Kanban für den Lagerort freigegeben wird.  
 8. Legen Sie die Option **Welle bei Freigabe für Lagerort verarbeiten** auf **Ja** fest. Aktivieren Sie diese Option, um die Welle automatisch zu verarbeiten und Arbeit zu erstellen, wenn eine Position an den Lagerort freigegeben wird.  
@@ -44,7 +44,7 @@ In diesem Leitfaden wird beschrieben, wie die Kriterien eingerichtet werden, die
 12. Legen Sie die Option **Auffüllungsarbeitsfreigabe automatisieren** auf **Ja** fest. Aktivieren Sie diese Option, um bedarfbasierte Wiederbeschaffungsarbeit zu erstellen und diese automatisch freizugeben. Sie müssen die Wiederbeschaffungswellenmethode der Wellenvorlage hinzufügen und eine Auffüllungsvorlage vom Typ Wellenbedarf erstellen.  
 13. Erweitern Sie den Abschnitt **Methoden**.
 
-    - Wellenvorlagenmethoden ermöglichen es Ihnen, die Reihenfolge der Aktivitäten zu steuern, die jede Welle durchläuft, wenn sie verarbeitet wird. Beispielsweise haben Sie möglicherweise eine Methode für die Wellenauffüllung. Wenn Sie eine Methode hinzufügen, wird diese automatisch im geeigneten Speicherort in der Reihenfolge der Schritte aufgeführt. Wenn Sie die Option "Auffüllungsarbeitsfreigabe automatisieren" auf "Ja" festgelegt haben, müssen Sie die Auffüllungsmethode hier hinzufügen.  
+    - Wellenvorlagenmethoden ermöglichen es Ihnen, die Reihenfolge von den Aktivitäten zu steuern, die jede Welle durchläuft, wenn sie verarbeitet wird. Beispielsweise haben Sie möglicherweise eine Methode für die Wellenauffüllung. Wenn Sie eine Methode hinzufügen, wird diese dann automatisch im geeigneten Speicherort in der Reihenfolge der Schritte aufgeführt. Wenn Sie die Option „Auffüllungsarbeitsfreigabe automatisieren“ auf Ja festgelegt haben, müssen Sie die Auffüllungsmethode hier hinzufügen.  
     - Wellenattribute fungieren als Filter, um die Art von Artikeln zu beschränken, die die Welle verwenden können. Sie könnten beispielsweise eine Artikelgruppe angeben.  
 14. Klicken Sie auf **Speichern**.
 15. Schließen Sie die Seite.

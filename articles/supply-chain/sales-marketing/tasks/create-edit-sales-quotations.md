@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2e9db489383d9c6ef05bc25d190d380b3150d311
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: f313aafb79faaf1344b7e70759405b3bab2d7e45
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1995003"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148713"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Verkaufsangebote erstellen und bearbeiten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Verfahren zeigt, wie ein Verkaufsangebot erstellt und aktualisiert wird. Sie können diese Prozedur in Ihrem eigenen Demodatenunternehmen oder in USMF ausführen.
 
@@ -52,7 +52,7 @@ Diese Verfahren zeigt, wie ein Verkaufsangebot erstellt und aktualisiert wird. S
 17. Klicken Sie im **Aktivitätsbereich** auf **Angebot**.
 18. Klicken Sie auf **Angebot versenden**.
 19. Wählen Sie „Ja“ im Feld **Angebot drucken** aus.
-20. Klicken Sie auf **OK**. Der Bericht kann einige Minute dauern. Schließen Sie nicht die Seite.
+20. Klicken Sie auf **OK**. Der Bericht kann einige Minute dauern. Schließen Sie die Seite nicht.
 
 ## <a name="update-a-sales-quotation"></a>Ein Verkaufsangebot aktualisieren
 1. Wechseln Sie zu **Navigationsbereich > Module > Vertrieb und Marketing > Verkaufsangebote > Alle Angebote**.

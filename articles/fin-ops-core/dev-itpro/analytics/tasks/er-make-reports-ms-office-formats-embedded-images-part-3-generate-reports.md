@@ -1,6 +1,6 @@
 ---
 title: Berichte im Office-Format generieren, die eingebettete Bilder haben
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
+description: In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Rolle „Systemadministratorrolle“ oder „Entwickler für elektronische Berichterstellung“ angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 64fade6578e9cd4f8a51c524e4f6ebbf63b93f20
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: fa6324b244195e9626e259e42eef9512e64cde86
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2184760"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143098"
 ---
 # <a name="generate-reports-in-office-format-that-have-embedded-images"></a>Berichte im Office-Format generieren, die eingebettete Bilder haben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
+In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Rolle „Systemadministratorrolle“ oder „Entwickler für elektronische Berichterstellung“ angehört, eine neue Konfiguration für elektronische Berichterstellung (ER) erstellen kann, die eine Vorlage zur Generierung elektronischer Dokumente im OPENXML-Format enthält.
 
-In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispielunternehmen Litware, Inc.  Um diese Schritte auszuführen, müssen Sie die Schritte zuerst im"ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 2: Konfiguration überprüfen)" Aufgabenleitfaden erstellen. Diese Schritte können im USMF-Unternehmen ausgeführt werden.
+In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispielunternehmen „Litware, Inc.“.  Um diese Schritte auszuführen, müssen Sie die Schritte zuerst im „ER Berichte im MS Office-Formaten mit eingebetteten Bildern (Teil 2: Konfiguration überprüfen)“ Aufgabenleitfaden erstellen. Diese Schritte können im „USMF“-Unternehmen ausgeführt werden.
 
 
 ## <a name="run-format-with-initial-model-mapping"></a>Führen Sie das Format mit Initialenmodellzuordnung aus
@@ -40,7 +40,7 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
     * Führen Sie das Format für Testzwecke aus.  
 6. Wählen Sie die Option Ja im Feld Verhandelbares Scheckformatgebiet aus.
 7. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass das Firmenlogo im Bericht sowie die autorisierten Unterschrift der Person angezeigt wird. Das Unterzeichnungsbild wird im Feld "Container" des Datentyps des Schecklayoutdatensatzes übernommen, der dem ausgewählten Bankkonto zugeordnet ist.  
+    * Prüfen Sie das generierte Ergebnis. Beachten Sie, dass das Firmenlogo im Bericht sowie die autorisierten Unterschrift der Person angezeigt wird. Das Unterzeichnungsbild wird im Feld „Container“ des Datentyps des Schecklayoutdatensatzes übernommen, der dem ausgewählten Bankkonto zugeordnet ist.  
 8. Erweitern Sie den Abschnitt Kopien.
 9. Klicken Sie auf "Bearbeiten".
 10. Im Wasserzeichengebiet geben Sie "Wasserzeichen als Nichtig drucken".
@@ -105,7 +105,7 @@ In diesem Beispiel erstellen Sie eine ER-Konfigurationen für das Beispieluntern
 9. Klicken Sie auf "Ja".
 10. Klicken Sie auf "Neu".
 11. Klicken Sie auf "Datei".
-    * Navigieren und wählen Sie die heruntergeladene Datei "Scheck-Vorlage Word.docx" aus.  
+    * Navigieren und wählen Sie die heruntergeladene Datei „Scheck-Vorlage Word.docx“ aus.  
 12. Schließen Sie die Seite.
 13. Geben Sie im Feld "Vorlage" einen Wert ein, oder wählen Sie einen Wert aus.
 14. Klicken Sie auf "Speichern".

@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f715be8c151f62a4bbb4cc295d3158fe5a17e084
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: f5639a46c105e735d028e903513b4fcfb1f0d968
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550808"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142615"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-4---run-format"></a>ER Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Format ausführen)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann. Diese Schritte können im DEMF-Unternehmen ausgeführt werden.
 
-Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Verwendung der Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)" ausführen.
+Um diese Schritte auszuführen, müssen Sie erst die Schritte im Aufgabenleitfaden „ER Verwendung der Dokumentverwaltungsdateien in Formatausgaben (Teil 3: Format erstellen)“ ausführen.
 
 Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
@@ -38,7 +38,7 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 1. Wechseln Sie zu "Debitoren" > "Rechnungen" > "Offene Debitorenrechnungen".
 2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise im Feld "Rechnung" mit dem Wert "CIV-000148".
     * CIV-000148  
-3. Klicken Sie darauf, um dem ausgewählten Link der Rechnung zu folgen.
+3. Klicken Sie darauf, um dem ausgewählten Link von der Rechnung zu folgen.
     * CIV-000148  
 4. Klicken Sie, um dem Link im Feld "Auftrag" zu folgen.
     * 000148  
@@ -65,8 +65,8 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 7. Klicken Sie auf "Filter".
 8. Wählen Sie die Zeile des Feldes "Debitorenrechnungserfassung" und "Auftrag".
 9. Geben Sie im Feld "Kriterien" den Wert "000148" ein.
-    * Geben Sie im Feld "Auftrag" die Auftragsnummer 000148 ein.  
+    * Geben Sie im Feld Auftrag die Auftragsnummer 000148 ein.  
 10. Klicken Sie auf "OK".
 11. Klicken Sie auf "OK".
-    * Prüfen Sie das generierte Ergebnis. Beachten Sie, das für jede Anlage ein einzelner XML-Knoten erstellt wurde. Der Inhalt des Anhangs wird mit der XML-Ausgabe im MIME-Textformat (Base64) ausgefüllt.  
+    * Prüfen Sie das generierte Ergebnis. Beachten Sie, das für jede Anlage ein einzelner XML-Knoten erstellt wurde. Der Inhalt des Anhangs wird dann mit der XML-Ausgabe im MIME-Textformat (Base64) ausgefüllt.  
 

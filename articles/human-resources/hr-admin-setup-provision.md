@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f982f3c3b2703a71e6c8a1a0d1be15fb260a6ef1
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 4f2fd2b7bf9f09a61d07e1bc35ad48fe2c5d7383
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3138358"
 ---
 # <a name="provision-human-resources"></a>Personalverwaltung bereitstellen
 
@@ -56,7 +56,7 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Human Resources in einer
 2. Geben Sie an, ob dies eine Sandkasten- oder Produktionsinstanz von Human Resources ist. Frühe Vorschaufunktionen sind möglicherweise in Sandkasteninstanzen verfügbar, um frühes Feedback und Testen zu ermöglichen.
    
     > [!NOTE]
-    > Der Talentinstanztyp kann nach dem Festlegen nicht mehr geändert werden. Überprüfen Sie, ob der richtige Instanztyp ausgewählt ist, bevor Sie fortfahren.</br></br>
+    > Der Instanztyp „Human Ressource“ kann nach dem Festlegen nicht mehr geändert werden. Überprüfen Sie, ob der richtige Instanztyp ausgewählt ist, bevor Sie fortfahren.</br></br>
     > Der Human Resources-Instanztyp ist von dem Instanztyp der Microsoft Power Apps-Umgebung getrennt, die Sie im Power Apps-Admin Center festlegen.
     
 3. Wählen Sie die Option **Demo-Daten einbeziehen**, wenn Sie möchten, dass Ihre Umgebung den gleichen Demo-Datensatz enthält, der auch in der Human Resources Test Drive Erfahrung verwendet wird. Dies ist vorteilhaft für langfristige Demo- oder Schulungsumgebungen und sollte niemals für Produktionsumgebungen verwendet werden.  Beachten Sie, dass Sie diese Option nach der ersten Bereitstellung auswählen müssen. Sie können eine vorhandene Bereitstellung später nicht aktualisieren.
@@ -74,7 +74,7 @@ Nachdem Sie ein LCS-Projekt erstellt haben, können Sie Human Resources in einer
     > [!NOTE]
     > Sollten Sie sich von den definitiven Anforderungen noch nicht abgemeldet haben, können Sie eine Testinstanz von Human Resources im Projekt bereitstellen. Sie können diese Instanz dann verwenden, um Ihre Lösung zu testen, bevor Sie sie freigeben. Wenn Sie die neuen Umgebung für Testzwecke verwenden, müssen Sie diese Schrittfolge wiederholen, um eine Produktionsumgebung zu erstellen.
 
-    > Da nur zwei LCS-Umgebungen als Teil des Human Resources-Abonnements erlaubt sind, können Sie auch eine kostenlose 60-Tage-[Human Resources-Testumgebung](https://dynamics.microsoft.com/talent/overview/) in Anspruch nehmen. Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Sie sind nicht dazu vorgesehen, als Produktionsumgebung verwendet zu werden. Beachten Sie, dass, wenn die Testumgebung nach 60 Tagen abläuft, alle Daten im Modul gelöscht und nicht wiederhergestellt werden können. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
+    > Sie können eine kostenlose 60-Tage-Nutzung in Betracht ziehen [Human Ressources-Testumgebung](https://dynamics.microsoft.com/talent/overview/). Obwohl eine Probeumgebung dem Benutzer gehört, der sie angefordert hat, können andere Benutzer durch die Systemverwaltungserfahrung für Human Resources eingeladen werden. Probeumgebung enthält fiktive Daten, die verwendet werden können, um das Programm in einem sicheren Verfahren zu untersuchen. Sie sind nicht dazu vorgesehen, als Produktionsumgebung verwendet zu werden. Beachten Sie, dass, wenn die Testumgebung nach 60 Tagen abläuft, alle Daten im Modul gelöscht und nicht wiederhergestellt werden können. Sie können sich nun für eine neue Probeumgebung anmelden, nachdem die vorhandene Umgebung abläuft.
 
 ## <a name="select-a-power-apps-environment"></a>Eine Power Apps-Umgebung auswählen
 
@@ -97,7 +97,10 @@ Verwenden Sie die folgende Anleitung, wenn Sie bestimmen, in welche Power Apps-U
     - **Testumgebung** – Diese Umgebungen werden mit einem Ablaufdatum erstellt und verfallen nach dieser Zeit. Ihre Umgebung und alle Human Resources-Instanzen darin werden automatisch entfernt.
    
     - **Nicht unterstützte Regionen** – Human Resources wird derzeit nur in folgenden Regionen unterstützt: USA, Europa, Vereinigtes Königreich, Australien, Kanada und Asien.
-  
+
+    > [!NOTE]
+    > Das Human Ressource-Umgebung wird in derselben Region bereitgestellt, in der die Power Apps-Umgebung bereitgestellt wird. Die Migration einer Human Ressources-Umgebung in eine andere Region wird nicht unterstützt.
+
 6. Nachdem Sie die korrekte Umgebung bestimmt haben, die verwendet werden soll, können Sie mit dem Bereitstellungsprozess fortfahren. 
  
 ## <a name="grant-access-to-the-environment"></a>Zugriff auf die Umgebung gewähren

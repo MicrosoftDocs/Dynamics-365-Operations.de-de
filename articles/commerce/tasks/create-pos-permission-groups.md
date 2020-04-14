@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e6f9f8f970f336a0cce6bcac78e32a1b7fe0a252
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 2ffc64fd39a390af3ca7110178ef0999527106dc
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022647"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141379"
 ---
 # <a name="create-pos-permission-groups"></a>POS-Berechtigungsgruppen erstellen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie eine POS-Berechtigungsgruppe erstellen. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Rolle „Bereichsleiter (Commerce)“ vorgesehen.
 
@@ -45,6 +45,6 @@ In diesem Thema wird erläutert, wie Sie eine POS-Berechtigungsgruppe erstellen.
 13. Danach weisen wir die POS-Berechtigungsgruppe einem Einzelvorgang zu. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 14. Wählen Sie **Bearbeiten** aus.
 15. Erweitern Sie den Abschnitt **Einzelvorgangsklassifizierung**.
-16. Geben Sie im Feld "POS-Berechtigungsgruppe" einen Wert ein oder wählen Sie einen Wert aus. Alle Arbeitskräfte in Positionen für diesen Einzelvorgang werden die Einstellungen dieser POS-Berechtigungsgruppe verwenden, es sei denn, die POS-Berechtigungen dieser Arbeitskräfte wurden in ihrer Positionsebene überschrieben.  
+16. Geben Sie im Feld "POS-Berechtigungsgruppe" einen Wert ein oder wählen Sie einen Wert aus. Alle Arbeitskräfte in Positionen für diesen Einzelvorgang werden die Einstellungen dieser POS-Berechtigungsgruppe verwenden, es sei denn, die POS-Berechtigungen für diese Arbeitskräfte wurden in ihrer Positionsebene überschrieben.  
 17. Wählen Sie **Speichern**. Nachdem die Änderungen gespeichert sind, müssen Sie den Mitarbeiterverteilungszeitplan ausführen, um die Änderungen an Kanälen zu übertragen.  
 

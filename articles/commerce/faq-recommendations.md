@@ -3,7 +3,7 @@ title: Produktempfehlungs-FAQs
 description: Dieses Thema enthält Informationen über die Prozesse und Tools, die Sie verwenden können, um Probleme zu beheben, die den Produktempfehlungen oder deren Ergebnisse zugeordnet werden.
 author: bebeale
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Core, Operations
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3add4e2e0d5cc16b561b808aacf5cef94fea5ae5
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: 2e30d29516dff6b2128e21bfa6e449e396884d00
+ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127789"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154389"
 ---
 # <a name="product-recommendations-faq"></a>Produktempfehlungs-FAQs
 
@@ -88,8 +88,6 @@ Nachdem Sie Produktempfehlungen aktiviert haben, müssen Sie den Empfehlungsbere
 [Personalisierte Empfehlungen aktivieren](personalized-recommendations.md)
 
 [Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
-
-[Empfehlungslisten zu einer E-Commerce-Site hinzufügen](add-reco-list-to-page.md)
 
 [Produktempfehlungen am POS hinzufügen](product.md)
 

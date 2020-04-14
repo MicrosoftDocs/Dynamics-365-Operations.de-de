@@ -16,22 +16,22 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 55bc7479ca9ba3ca86e23b5bee106ef169c40077
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: 94d5c3f6677ec10ea1b9ac3c488c3b8d7dc6856f
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1836384"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3147479"
 ---
 # <a name="create-a-procurement-catalog"></a>Beschaffungskatalog erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird erläutert, wie Sie einen Beschaffungskatalog erstellen. Diese Aufgabe wird normalerweise von einem Prokuristen ausgeführt. Sie erfahren auch, wie Mitarbeiter den Katalog verwenden können, wenn sie eine Anforderung erstellen. Bevor Sie einen Katalog erstellen können, muss es in Ihrem System eine Beschaffungskategoriehierarchie geben. Die Hierarchie wird vom neuen Katalog zusammen mit allen Produkten geerbt, die sich in der Hierarchie befinden. Sie können diesen Leitfaden im Demodatenunternehmen USMF verwenden, in dem die Beschaffungskategoriehierarchie verfügbar ist, sowie die Beispiele, die in den Prozedurschritten verwendet werden.
 
 
 ## <a name="ensure-that-a-procurement-category-hierarchy-exists"></a>Sicherstellen, dass eine Beschaffungskategoriehierarchie vorhanden ist
-1. Wechseln Sie zu **Navigationsbereich > Module > Beschaffung > Beschaffungskategorien**. Eine Beschaffungskategoriehierarchie ist im USMF-Demodatenunternehmen verfügbar, und Produkte sind der Kategorie **Bürogeräte/Computer** hinzugefügt worden. Wenn Sie diese Prozedur als Aufgabenleitfaden ausführen, müssen Sie den Leitfaden entsperren, wenn Sie die Kategorie durchsuchen möchten. Wenn eine Hierarchie nicht verfügbar wäre, würden Sie sie erstellen, indem Sie auf **Neu** klicken. Dies kann nur einmal ausgeführt werden.  
+1. Wechseln Sie zu **Navigationsbereich > Module > Beschaffung > Beschaffungskategorien**. Eine Beschaffungskategoriehierarchie ist im USMF-Demodatenunternehmen verfügbar, und Produkte sind der Kategorie **Bürogeräte/Computer** hinzugefügt worden. Wenn Sie diese Prozedur als Aufgabenleitfaden ausführen, müssen Sie den Leitfaden entsperren, um die  Kategorie zu durchsuchen. Wenn eine Hierarchie nicht verfügbar wäre, müssen Sie sie erstellen, indem Sie auf **Neu** klicken. Dies kann nur einmal ausgeführt werden.  
 2. Schließen Sie die Seite.
 
 ## <a name="create-a-catalog"></a>Einen Katalog erstellen
@@ -53,7 +53,7 @@ In diesem Thema wird erläutert, wie Sie einen Beschaffungskatalog erstellen. Di
 ## <a name="make-the-catalog-visible"></a>Den Katalog sichtbar machen
 1. Wechseln Sie zu **Navigationsbereich > Module > Beschaffung > Einstellungen > Richtlinien > Einkaufsrichtlinien**.
 2. Wählen Sie die **Beschaffungsrichtlinie USMF** aus. Sie müssen die Einkaufsrichtlinie für die juristische Person auswählen, in der die Arbeitskraft, der mit Ihrem Benutzerprofil verbunden ist, Produkte bestellen darf. In den USMF-Demodaten ist der Benutzer „Administrator“ mit der Arbeitskraft **Julia Funderburk** verbunden, und sie bestellt standardmäßig Produkte in USMF.  
-3. Wählen Sie den Katalog aus, das Sie soeben erstellt haben.
+3. Wählen Sie den Katalog aus, den Sie soeben erstellt haben.
 4. Wählen Sie **OK**.
 
 ## <a name="use-the-catalog"></a>Den Katalog verwenden

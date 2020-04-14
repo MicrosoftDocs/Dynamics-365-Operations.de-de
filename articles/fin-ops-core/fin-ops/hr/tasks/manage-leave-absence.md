@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ce57495be4ae601d6ac06bb4780a2e1192dfcc5
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 002700ae7f6474b48fbe09cb3aaa72e9516b8224
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190280"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3143545"
 ---
 # <a name="manage-leave-of-absence"></a>Beurlaubung verwalten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Erstellung von Sonderurlaubs-Datensätzen für Mitarbeiter. Sie können Abwesenheitszeit nach Ursachen nachverfolgen. Dazu gehören medizinischen, pädagogischen oder elterliche Aktivitäten. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 

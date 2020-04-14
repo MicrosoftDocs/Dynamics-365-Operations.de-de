@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c54f7a9800bb0fcfb23f0c6c4d16f48bee8c28d
-ms.sourcegitcommit: a368682f9cf3897347d155f1a2d4b33e555cc2c4
+ms.openlocfilehash: c391a29e72b004cf4f7f998de5a74cf5ec1ac520
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/08/2019
-ms.locfileid: "1867124"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149733"
 ---
 # <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Dieses Thema zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist typischer, dass Bestellungen automatisch als Ergebnis des Produktprogrammplans, der Direktlieferung und anderer Prozesse erstellt werden. Bestellungen werden normalerweise von einem Einkaufsvertreter erstellt. Das Beispiel, das hier angezeigt wird, kann im USMF-Demodatunternehmen verwendet werden. Dabei können die Werte verwendet werden, die in den Hinweisen für verschiedene Schritte vorgeschlagen werden.
+Dieses Thema zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist aber typischer, dass Bestellungen automatisch als Ergebnis des Produktprogrammplans, der Direktlieferung und anderer Prozesse erstellt werden. Bestellungen werden normalerweise von einem Einkaufsvertreter erstellt. Das Beispiel, das hier angezeigt wird, kann im USMF-Demodatunternehmen verwendet werden. Dabei können die Werte verwendet werden, die in den Hinweisen für verschiedene Schritte vorgeschlagen werden.
 
 
 ## <a name="create-the-purchase-order-header"></a>Erstellen Sie den Bestellkopf
@@ -57,10 +57,10 @@ Dieses Thema zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist typi
 
     - Wählen Sie die Menge aus, die Sie einkaufen möchten. Das Feld **Menge** wird automatisch mit der minimalen Auftragsmenge für das Produkt aufgefüllt, wenn dies eingerichtet ist, oder mit dem Wert von 1.  
     - Das Feld **Einheit** gibt die Maßeinheit für die bestellte Menge an. Normalerweise wird die Einheit automatisch aus der Bestelleinheit auf den Produktmasterdaten bereitgestellt, Sie können dies jedoch ändern.  
-    - Das Feld **Preis je Einheit** enthält üblicherweise einen Wert entweder aus einem Kaufvertrag oder aus einer Handelsvereinbarung. Es ist möglich, den Preis je Einheit für einzelne Auftragspositionen zu ändern, beispielsweise wenn ein eindeutiger Preis mit dem Händler ausgehandelt wird.  
+    - Das Feld **Preis je Einheit** enthält üblicherweise einen Wert entweder aus einem Kaufvertrag oder aus einer Handelsvereinbarung. Es ist möglich, den Preis je Einheit für einzelne Auftragspositionen zu ändern, beispielsweise dann, wenn ein eindeutiger Preis mit dem Händler ausgehandelt wird.  
     - Das Feld **Rabatt** stellt einen Rabattbetrag pro Einheit dar. Dieser Rabatt verringert daher den Preis je Einheit um den Rabatt. Dieser Rabatt wird im Allgemeinen automatisch in Kaufverträgen oder Handelsvereinbarungen angegeben, kann jedoch bei einzelnen Positionen überschrieben werden, wenn eindeutige Rabatte mit dem Händler ausgehandelt wurden.  
     - Ein Rabattprozentsatz kann eingegeben werden, der den Nettobetrag für die Position entsprechend reduziert. Der Rabattprozentsatz wird oft automatisch in Kaufverträgen oder Handelsvereinbarungen angegeben, kann jedoch bei einzelnen Positionen überschrieben werden, wenn ein eindeutiger Rabattprozentsatz mit dem Händler ausgehandelt wurde.  
-    - Der Wert im Feld **Nettobetrag** wird aus anderen Feldern zur Position einschließlich Menge, Preis je Einheit, Rabatt und Rabattprozentsatz berechnet. Es ist möglich, den Nettobetrag zu ändern, dann sind jedoch die Felder **Preis je Einheit**, **Rabatt** und **Rabatt in Prozent** leer, und wenn Sie auf die Position buchen, wird der gebuchte Betrag proportional zum Nettobetrag sein. Normalerweise wird das Feld **Nettobetrag** nur für die Anzeige des Nettobetrags der Position verwendet.  
+    - Der Wert im Feld **Nettobetrag** wird aus anderen Feldern zur Position einschließlich Menge, Preis je Einheit, Rabatt und Rabattprozentsatz berechnet. Es ist möglich, den Nettobetrag zu ändern, dann sind jedoch die Felder **Preis je Einheit**, **Rabatt** und **Rabatt in Prozent** leer. Wenn Sie auf die Position buchen, wird der gebuchte Betrag proportional zum Nettobetrag sein. Normalerweise wird das Feld **Nettobetrag** nur für die Anzeige des Nettobetrags der Position verwendet.  
 
 8. Erweitern Sie den Abschnitt **Positionsdetails**.
 9. Wählen Sie die Registerkarte **Lieferung** aus. Ein eindeutiges Lieferdatum kann jeder Auftragsposition zugewiesen werden. Das Datum wird aus dem Feld im Bestellkopf übernommen, Sie können dies jedoch ändern.  
@@ -68,7 +68,7 @@ Dieses Thema zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist typi
 ## <a name="review-order-totals"></a>Prüfen Sie Auftragssummen
 1. Wählen Sie **Summen** aus.
 
-    - Wenn Sie die **Summen**-Aktivität nicht sehen, wählen Sie die Registerkarte **Bestellung** auf der Aktivitätsleiste aus.  
+    - Wenn Sie die Aktivität **Summen** nicht sehen, wählen Sie die Registerkarte **Bestellung** auf der Aktivitätsleiste aus.  
     - Dieses Dialogfeld zeigt die Summen für den gesamten Auftrag an.  
     - Das Feld **Auswahl** ermöglicht es Ihnen, die Grundlage zu ändern, auf der Summen berechnet werden. So können Sie beispielsweise auswählen, dass die **Menge im Produktzugang** Summen anzeigt, die dem Betrag des Produkts/der Produkte zugeordnet ist/sind, die eingegangen sind, oder Sie können auswählen, dass **Bestellte Menge** die Menge der Produkte anzeigt, die bestellt wurden.  
 

@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de075899547d194fb9eb0e68947efd005c101851
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: 1a52a7dd3b31c0189577422a79d47b318aae4a05
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550693"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141996"
 ---
 # <a name="er-use-document-management-files-in-format-outputs-part-5---modify-and-run-format"></a>ER – Verwenden von Dokumentverwaltungsdateien in Formatausgaben (Teil 5: Format verändern und ausführen)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Nutzung von Dokumentverwaltungsdateien (Anhänge) in ER-Berichten nutzen kann. Diese Schritte können im DEMF-Unternehmen ausgeführt werden.
 
-Um diese Schritte auszuführen, müssen Sie erst die Schritte im Aufgabenleitfaden „ER - Verwendung der Dokumentverwaltungsdateien in Formatausgaben (Teil 4: Format ausführen)“ ausführen.
+Um diese Schritte auszuführen, müssen Sie erst die Schritte im Aufgabenleitfaden „ER - Verwendung der Dokumentverwaltungsdateien in Formatausgabe (Teil 4: Format ausführen)“ ausführen.
 
 Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
@@ -91,7 +91,7 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 2. Erweitern Sie den Abschnitt "Records to include ()".
 3. Klicken Sie auf "Filter".
 4. Wählen Sie die Zeile des Feldes "Debitorenrechnungserfassung" und "Auftrag".
-5. Geben Sie im Feld "Auftrag" die Auftragsnummer 000148 ein.
+5. Geben Sie im Feld „Auftrag“ die Auftragsnummer 000148 ein.
     * 000148  
 6. Klicken Sie auf "OK".
 7. Klicken Sie auf "OK".

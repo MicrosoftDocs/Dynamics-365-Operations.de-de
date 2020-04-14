@@ -3,7 +3,7 @@ title: Mobile Geräte für Lagerarbeiten einrichten
 description: In diesem Thema wird beschrieben, wie Menüoptionen konfiguriert werden, die Arbeitskräfte zum Ausführen von Arbeit auf einem mobilen Gerät verwenden.
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 04/18/2019
+ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df3968c01006d773300593b966a69b5283a889a2
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 4c4b131c14101722593f685cbe1133b1aa1319b0
+ms.sourcegitcommit: 34e543e807ac8790597f522fe3b4f0266cf4ee56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813039"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3161827"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobile Geräte für Lagerarbeiten einrichten
 
@@ -95,11 +95,11 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 </tr>
 <tr>
 <td>Ladungsträger – Empfang</td>
-<td>Empfangen Sie eine eingehende Ladung, indem Sie die Ladungsträgerkennung verwenden.</td>
+<td>Empfangen Sie einen Versand-Avis (ASN), indem Sie die Ladungsträgerkennung verwenden.</td>
 </tr>
 <tr>
 <td>Kennzeichenempfang und -einlagerung</td>
-<td>Empfangen Sie eine eingehende Ladung und lagern Sie sie ein, indem Sie die Ladungsträgerkennung verwenden.</td>
+<td>Empfangen Sie einen Versand-Avis (ASN) und legen Sie diesen zur Seite, indem Sie die Ladungsträgerkennung verwenden.</td>
 </tr>
 <tr>
 <td>Artikelempfang aus Ladung</td>
@@ -119,7 +119,7 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 <td>Erfassen Sie den Eingang einer Menge eines Artikels, indem Sie die Rücksendungsnummer registrieren und Artikel einlagern. Die gleiche Arbeitskraft führt beide Aktivitäten aus.</td>
 </tr>
 <tr>
-<td rowspan="4">Umlagerungsauftrag</td>
+<td rowspan="6">Umlagerungsauftrag</td>
 <td>Artikelempfang des Umlagerungsauftrags</td>
 <td>Erfassen Sie den Eingang einer Menge eines Artikels, und erstellen Sie Einlagerungsarbeit für eine andere Arbeitskraft.
 
@@ -138,6 +138,14 @@ Sie können eine Menüoption einrichten, die Arbeit für eine andere Arbeitskraf
 <tr>
 <td>Umlagerungsauftragsposition – Empfang und Einlagerung</td>
 <td>Erfassen Sie den Eingang einer Menge eines Artikels, und lagern Sie die Artikel ein. Die gleiche Arbeitskraft führt beide Aktivitäten aus.</td>
+</tr>
+<tr>
+<td>Ladungsträger – Empfang</td>
+<td>Empfangen Sie einen Versand-Avis (ASN), indem Sie die Ladungsträgerkennung verwenden.</td>
+</tr>
+<tr>
+<td>Kennzeichenempfang und -einlagerung</td>
+<td>Empfangen Sie einen Versand-Avis (ASN) und legen Sie diesen zur Seite, indem Sie die Ladungsträgerkennung verwenden.</td>
 </tr>
 <tr>
 <td rowspan="4">Produktion</td>

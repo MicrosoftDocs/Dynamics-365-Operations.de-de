@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46dc13416aa094f33879c017c1a1815fc791409d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: a6287fa95b7ce7341e99d1b1a6b972db68a30398
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2185105"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142165"
 ---
 # <a name="define-er-model-mappings-and-select-data-sources-for-them"></a>EB-Modellzuordnungen definieren und Datenquellen für sie auswählen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, ein Modell der elektronischen Berichterstellung (ER) auswählen kann. Die Datenquellen werden einzelnen Komponenten des ausgewählten Datenmodells zur Entwurfszeit und Daten zu diesem Datenmodell zur Laufzeit aufzufüllen verbunden. In diesem Beispiel wählen Sie Datenquellen für ein bestehendes Datenmodell, das für das Beispielunternehmen Litware, Inc. erstellt wurde. Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in der Prozedur "Erstellen eines neuen Datenmodells abschließen".
+In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" zugewiesen ist, ein Modell der elektronischen Berichterstellung (ER) auswählen kann. Die Datenquellen werden einzelnen Komponenten des ausgewählten Datenmodells zur Entwurfszeit und Daten zu diesem Datenmodell zur Laufzeit aufzufüllen verbunden. In diesem Beispiel wählen Sie Datenquellen für ein bestehendes Datenmodell, das für das Beispielunternehmen Litware, Inc. erstellt wurde. Um diese Schritte abzuschließen, müssen Sie zuerst die Schritte in der Prozedur „Erstellen eines neuen Datenmodells abschließen“.
 
 
 ## <a name="open-the-electronic-reporting-configurations-tree"></a>Die Konfigurationsstruktur „Elektronische Berichterstellung” öffnen
@@ -78,7 +78,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 17. Wählen Sie in der Struktur 'Transactions\Voucher' aus.
 18. Klicken Sie auf Datenquelle hinzufügen.
 19. Im Feld „Formel” geben Sie „CONCATENATE(Transactions.Voucher, „-", „ ein.
-    * Geben Sie [ , “-“, ] am Ende der Formel ein.  
+    * Geben Sie [ , „-“, ] am Ende der Formel ein.  
 20. Wählen Sie in der Struktur den Knoten 'String\TEXT'.
 21. Klicken Sie auf Funktion hinzufügen.
 22. Wählen Sie in der Strukturdarstellung "Transactions\Record-ID (RecId)" aus.
@@ -112,7 +112,7 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 43. Erweitern oder reduzieren Sie „Buchungen” in der Struktur.
 44. Wählen Sie in der Struktur 'Dynamics 365 for Operations\Tabellendatensätze' aus.
 45. Klicken Sie auf "Stamm hinzufügen".
-    * Geben Sie diese Datenquelle ein, um die Bankkontodetails des Unternehmens zuzugreifen.  
+    * Geben Sie diese Datenquelle ein, um auf die Bankkontodetails des Unternehmens zuzugreifen.  
 46. Geben Sie im Feld "Name" "BankAccount" ein.
     * BankAccount  
 47. Geben Sie im Feld Beschreibung "Bank Account" ein.
@@ -126,9 +126,9 @@ In den folgenden Schritten wird erläutert, wie ein Benutzer, der der Systemadmi
 51. Klicken Sie auf "OK".
     * Wählen Sie die Tabelle "BankAccountTable" als Datenquelle für das Modell der aktuellen Daten aus.  
 52. Klicken Sie auf "Stamm hinzufügen".
-    * Geben Sie diese Datenquelle ein, um die Anforderungen des Unternehmens zuzugreifen.  
+    * Geben Sie diese Datenquelle ein, um auf die Anforderungen des Unternehmens zuzugreifen.  
 53. Geben Sie im Feld Name "Firma" ein.
-    * Unternehmen  
+    * Firma  
 54. Geben Sie im Feld Beschreibung einen Wert ein.
     * Unternehmensdaten  
 55. Geben Sie im Feld Hilfe "Company information" ein.

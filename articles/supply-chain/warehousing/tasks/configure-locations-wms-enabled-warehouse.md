@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fca4d8673ef7ccb00bc1b216fbe7d56acc2ff142
-ms.sourcegitcommit: 58db26b7edf02e7c33aaaf1c934e3263aa74b01f
+ms.openlocfilehash: 43fd5a293671d63c1c0db3019ba89fdf84f9fff8
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "1994980"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3146168"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen WMS-aktivierten Lagerort konfiguriert (ein Lagerort, den Verwendung Lagerortverwaltungsprozesse Erweiterter). Der Prozess wird normalerweise von einer Lagerortverwaltung erfolgt. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen. Eine Vorbedingung ist, dass Sie mindestens einen Standort konfiguriert.
 
@@ -82,7 +82,7 @@ Dieses Handbuch zeigt Ihnen an, wie die Lagerplatzeinstellung für einen neuen W
 9. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 10. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 11. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen **Gemischten Bestandstatus zulassen**. Aktivieren Sie diese Option, wenn Sie Mischbestandsstatuswerte an Lagerplätzen zulässig sein soll, die von dieses Lagerplatzprofil gruppiert werden. 
-12. Aktivieren bzw. deaktivieren Sie das Kontrollkästen **Regeln für Chargentage überschreiben**. Aktivieren Sie diese Option, zu überschreiben die Regel für wie viele Tage, die Bestandschargenablaufdaten variieren können, Mixing von Lagerchargen zuzulassen, die diese Schritte Regel nicht, befolgend.  
+12. Aktivieren bzw. deaktivieren Sie das Kontrollkästen **Regeln für Chargentage überschreiben**. Aktivieren Sie diese Option, um die Regel zu überschreiben, für wie viele Tage, die Bestandschargenablaufdaten variieren können, um das Mischen von Lagerchargen zuzulassen, die diese Regel nicht befolgen.  
 13. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Zykluszählung zulassen**. Aktivieren Sie diese Option, wenn Verarbeitung von Zykluszählung an allen Lagerplätzen zulässig sein soll, die von dieses Lagerplatzprofil gruppiert werden. 
 14. Erweitern oder reduzieren Sie den Abschnitt **Dimensionen**. Die Registerkarte "Dimension" ermöglicht es Ihnen, um Parameter und Methoden zu definieren, um genauere Berechnungen der Tragfähigkeit innerhalb jedes der Lagerplätze zu aktivieren.  
 15. Schließen Sie die Seite.

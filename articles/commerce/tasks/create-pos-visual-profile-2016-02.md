@@ -16,16 +16,16 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc7d50805ec771d042732f36a42c2d9fb3c16cdf
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: b265a94c6d8f9e2534e1509e4f33c6f8a05eded0
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022646"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3140938"
 ---
 # <a name="create-point-of-sale-pos-visual-profiles"></a>Visuelle Profile für Verkaufsstellen (POS) erstellen
 
-[!include [task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen visuellen Verkaufsstellen (POS)-Profils. Ein visuelles Profil beinhaltet grundlegende Informationen zur Darstellung der POS-Register. Sie können mehrere visuelle Profile erstellen und bestimmte Profile zuweisen, die auf bestimmten Registern ausgeführt werden sollen. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet.
 
@@ -42,7 +42,7 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen eines neuen v
 11. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 12. Schalten Sie die Erweiterung des Abschnitts "Anmeldehintergrund" ein/aus.
 13. Wählen Sie im Feld "Querformatbild-ID" eine Bildkennung aus bzw. geben Sie diese ein.
-14. Wählen Sie im Feld "Hochformatbildkennung" eine Bildkennung aus bzw. geben Sie diese ein.
+14. Wählen Sie im Feld „Hochformatbildkennung“ eine Bildkennung aus bzw. geben Sie diese ein.
 15. Schalten Sie die Erweiterung des Hintergrund-Abschnitts ein/aus.
 16. Fordern Sie ein Popup für die Bildkennung an.
 17. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.

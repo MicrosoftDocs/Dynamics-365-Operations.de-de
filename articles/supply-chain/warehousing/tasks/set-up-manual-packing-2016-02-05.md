@@ -17,16 +17,16 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 30bbb404e624c33e047c5505c5b21565ed8cce10
-ms.sourcegitcommit: 8b4b6a9226d4e5f66498ab2a5b4160e26dd112af
+ms.openlocfilehash: ec4d86673555f594bb2f81010235fd7eb6e83f27
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "1847182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3148284"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Manuelle Verpackung einrichten (Februar 2016 und Mai 2016)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Der Verpackungsprozess ermöglicht es Ihnen, Produkte zu überprüfen und in Container zu verpacken. In diesem Prozess entnehmen Lagerarbeiter Produkte aus den Speicherorten und verschieben diese zu einer Verpackungsanlage, in der sie die Artikelmengen und Typen überprüfen, und weisen diese den entsprechenden Containern zu. Wenn ein Container vollständig gepackt ist, können sie ihn schließen und zu den Ausgangsrampen verschieben, und die Produkte sind bereit zum liefern. Für diese Prozedur wird das Demo-Unternehmen USMF verwendet. Diese Prozedur ist nur für die Dynamics 365 for Operations-Versionen Februar 2016 und Mai 2016 gedacht.
 

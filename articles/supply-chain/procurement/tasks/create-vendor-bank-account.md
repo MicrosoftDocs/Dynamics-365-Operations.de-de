@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8dd3664d86ffdb8bf731a6ff1e0ed60b50eed61
-ms.sourcegitcommit: cbcf344b3b552acca56c3e27606eac7f2f124afe
+ms.openlocfilehash: be06343aba974ff23a7f328d2175f00768a76465
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "1916828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149572"
 ---
 # <a name="create-a-vendor-bank-account"></a>Ein Kreditorenbankkonto erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Diese Prozedur zeigt Ihnen, wie Sie ein Bankkonto für einen Kreditor erstellen. Sie können diese Prozedur im Demodatunternehmen USMF verwenden.
 
@@ -37,12 +37,12 @@ Diese Prozedur zeigt Ihnen, wie Sie ein Bankkonto für einen Kreditor erstellen.
 6. Geben Sie im Feld **Bankkonto** einen Wert ein. Diese Kennung wird verwendet, um das Bankkonto im Kreditorendatensatz zu identifizieren.  
 7. Geben Sie im Feld **Name** einen Wert ein.
 8. Geben Sie im Feld **Bankgruppen** einen Wert ein, oder wählen Sie einen Wert aus.
-9. Wählen Sie im Feld **Bankleitzahltyp** eine Option aus. Das ist der Bankleitzahltyp, der für internationale Zahlungen verwendet wird.  
+9. Wählen Sie im Feld **Bankleitzahltyp** eine Option aus. Das ist der Bankleitzahltyp, der für die internationalen Zahlungen verwendet wird.  
 10. Geben Sie im Feld **Bankkontonummer** einen Wert ein.
 11. Geben Sie im Feld **SWIFT-Code** einen Wert ein.
 12. Geben Sie im Feld **IBAN** einen Wert ein.
     - Die IBAN-Nummer muss im korrekten Format sein. Sie könnten zum Beispiel "DE89370400440532013000" verwenden.  
-    - Der Status des Bankkontos ist "Aktiv", wenn das "Aktives Datum" erreicht worden ist, und das "Ablaufdatum" noch nicht überschritten wurde. Es ist auch aktiv, wenn die Felder "Aktives Datum" und "Ablaufdatum" leer sind. Wenn die Datumsangaben sowohl im Feld "Aktives Datum" als auch im Feld "Ablaufdatum" in der Zukunft liegen, sind elektronische Zahlungen nicht verfügbar. Andere Zahlungstypen sind verfügbar, und das Bankkonto ist aktiv.  
+    - Der Status des Bankkontos ist "Aktiv", wenn das "Aktives Datum" erreicht worden ist, und das "Ablaufdatum" noch nicht überschritten wurde. Es ist auch aktiv, wenn die Felder „Aktives Datum“ und „Ablaufdatum“ leer sind. Wenn die Datumsangaben sowohl im Feld "Aktives Datum" als auch im Feld "Ablaufdatum" in der Zukunft liegen, sind elektronische Zahlungen nicht verfügbar. Andere Zahlungstypen sind verfügbar, und das Bankkonto ist aktiv.  
 13. Erweitern Sie den Abschnitt **Einrichtung**.
 14. Geben Sie im Feld **Textcode** einen Wert ein. Dieses Feld gibt einen Code an, der auf dem Bankauszug des Empfängers angezeigt wird.  
 15. Geben Sie im Feld **Nachricht an die Bank** einen Wert ein.
@@ -55,6 +55,6 @@ Diese Prozedur zeigt Ihnen, wie Sie ein Bankkonto für einen Kreditor erstellen.
 22. Schließen Sie die Seite.
 23. Klicken Sie auf **Bearbeiten**.
 24. Erweitern Sie den Abschnitt **Zahlung**.
-25. Wählen Sie im Feld **Bankkonto** das Konto aus, dass Sie soeben erstellt haben.
+25. Wählen Sie im Feld **Bankkonto** das Konto aus, dass Sie gerade erstellt haben.
 26. Klicken Sie auf **Speichern**. Die Adresse wird möglicherweise von der Bankgruppe geerbt, wenn eine angegeben ist, oder Sie können sie hier hinzufügen.  
 

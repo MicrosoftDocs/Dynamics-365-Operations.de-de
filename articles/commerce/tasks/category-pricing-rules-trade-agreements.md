@@ -17,16 +17,16 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 35c85e6e3bbdc913e9cd7aefdf6b143f3f03496f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 21b1986aa36aab23f50a5af434435f9e93318e45
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022658"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3141082"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategoriepreiskalkulationsregeln, um Handelsvereinbarungen zu erstellen
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Diese Prozedur veranschaulicht, wie Handelsvereinbarungen zu Verkaufspreisen mithilfe der Kategoriepreiskalkulationsregel erstellt werden. Das Demodatenunternehmen, das verwendet wird, um diese Aufgabe zu erstellen, ist USRT. Diese Aufgabe ist für die Rolle „Manager Verkaufsförderung (Commerce)“ vorgesehen.
 

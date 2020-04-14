@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e46d905145ba42fc2e74149736054125c36ff558
-ms.sourcegitcommit: fbaccf72df82e6b6927f0c9f0d35af0ca3ecbc2d
+ms.openlocfilehash: b43ec2aecd470c3993021f30cb4f2129ec34e567
+ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "1855709"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3149756"
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Eine Bestellung mit einem Lieferzeitplan erstellen
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In diesem Thema wird gezeigt, wie ein Lieferzeitplan für eine Bestellung erstellt wird. Ein Lieferzeitplan wird verwendet, wenn eine Menge für einen Auftrag oder eine Erfassung angefordert wird, um in mehreren Lieferungen geliefert zu werden. Das Beispiel, das in diesem Leitfaden angezeigt wird, kann im Demodatenunternehmen USMF verwendet werden. Diese Prozedur würde normalerweise durch einen Einkaufsvertreter erfolgen.
 
@@ -39,12 +39,12 @@ In diesem Thema wird gezeigt, wie ein Lieferzeitplan für eine Bestellung erstel
 7. Wählen Sie **Bestellposition**.
 8. Wählen Sie **Lieferzeitplan**.
 - Die Seite **Lieferzeitplan** gestattet es Ihnen, die Anzahl von Lieferungen anzugeben, in denen die Gesamtmenge der Auftragsposition vom Kreditor geliefert wird.  
-- Standardmäßig kopiert das System die Gesamtmenge und andere Lieferdetails der ursprünglichen Bestellposition in die erste Lieferzeitplanposition. In diesem Beispiel erstellen wir einen Zeitplan für zwei Lieferungen, wobei das Datum der zweiten Lieferung um eine Woche nach der ersten Lieferung verschoben ist.  
+- Standardmäßig kopiert das System die Gesamtmenge und andere Lieferdetails der ursprünglichen Bestellposition in die erste Lieferzeitplanposition. In diesem Beispiel erstellen wir einen Zeitplan für zwei Lieferungen, wobei das Datum von der zweiten Lieferung um eine Woche nach der ersten Lieferung verschoben ist.  
 9. Ändern Sie im Feld **Menge** die Menge in `4`.
 10. Wählen Sie **Neu** aus.
 11. Geben Sie im Feld **Menge** die Zahl `6` als die verbleibende Menge ein.
-- Im Lieferdatumsfeld wählen Sie ein Datum aus, das eine Woche nach dem Datum auf der ersten Lieferposition liegt.  
-- Sie können die Gesamtmenge nachverfolgen, die den Lieferzeitplanpositionen zugeordnet ist, indem Sie die Felder **Summe** und **Verbleibend** betrachten. Wenn die Restmenge Null ist, ist die gesamte Menge aus der ursprünglichen Position dem Zeitplan zugewiesen worden.  
+- Im Lieferdatumsfeld wählen Sie ein Datum aus, das eine Woche nach dem Datum der ersten Lieferposition liegt.  
+- Sie können die Gesamtmenge nachverfolgen, die den Lieferzeitplanpositionen zugeordnet ist, indem Sie die Felder **Summe** und **Verbleibend** ansehen. Wenn die Restmenge Null ist, ist die gesamte Menge aus der ursprünglichen Position dem Zeitplan zugewiesen worden.  
 12. Erweitern Sie den Abschnitt **Konvertierung von Belastungen**.
 - Die Optionen hier erlauben es Ihnen zu steuern, wie Sie möchten, dass Belastungen über die Lieferzeitplanpositionen verteilt werden. Wenn Sie **Bruttobeträge kopieren** auswählen, wird der Belastungsbetrag auf der ursprünglichen Auftragsposition zu jeder Lieferposition kopiert. Die Option **Zu Lieferpositionen zuordnen** teilt die ursprüngliche Positionsbelastung gemäß der Menge zu jeder Lieferposition.  
 13. Reduzieren Sie den Abschnitt **Konvertierung von Belastungen**.
@@ -68,7 +68,7 @@ Die Bestellung muss bestätigt werden, bevor der Produktzugang verarbeitet werde
 4. Wählen Sie **Produktzugang** aus. Geben Sie im Feld **Produktzugang** irgendeinen Wert ein.
 - Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.  
 - Wählen Sie im Feld **Menge** die Option **Bestellte Menge** aus. Diese Option bedeutet, dass der Zugang für die Menge verarbeitet wird, mit der die Auftragspositionen erstellt wurden.  
-- Stellen Sie sicher, dass das Feld **Produktzugang drucken** auf **Nein** festgelegt ist. Drucken wird in diesem Beispiel nicht benötigt.  
+- Stellen Sie sicher, dass das Feld **Produktzugang drucken** auf **Nein** festgelegt ist. Drucken ist in diesem Beispiel nicht erforderlich.  
 5. Erweitern Sie den Abschnitt **Positionen**.
 - Beachten Sie, wie der Produktzugang für die zwei Lieferpositionen und nicht die ursprüngliche Auftragsposition erstellt wird. Wenn der Zugang am Lagerort erfasst worden wäre, wäre er auch in den Lieferzeitplanpositionen erfasst worden.  
 6. Reduzieren Sie den Abschnitt **Positionen**.

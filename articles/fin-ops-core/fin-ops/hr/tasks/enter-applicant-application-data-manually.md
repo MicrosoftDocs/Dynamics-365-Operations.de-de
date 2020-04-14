@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea61e3c1d76ade6e0d694b4b521e4be76fc8799d
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a897fc64ccd125263b30993c1e24a3c6c67bd63
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178012"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3144017"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Bewerber- und Anwendungsdaten manuell eingeben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
-Im folgenden Verfahren, wird dargestellt, wie Sie Informationen über Bewerber und deren Bewerbung manuell verwalten.   Sie können die persönlichen Daten, Befragungsdatumsangaben und -zeiten, Referenzen, Kompetenzen und Anpassungsersuchen für Bewerber eingeben und verwalten. Sie können außerdem den Status der Bewerbungen der Bewerber aktualisieren und Briefe oder E-Mail-Nachrichten für die Kommunikation mit Bewerbern erstellen. Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt.       Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
+Im folgenden Verfahren, wird dargestellt, wie Sie Informationen über Bewerber und deren Bewerbung manuell verwalten.   Sie können die persönlichen Daten, Befragungsdatumsangaben und -zeiten, Referenzen, Kompetenzen und Anpassungsersuchen für Bewerber eingeben und verwalten. Sie können außerdem den Status der Bewerbungen der Bewerber aktualisieren und auch Briefe oder E-Mail-Nachrichten für die Kommunikation mit Bewerbern erstellen. Wenn Sie einen Bewerberdatensatz erstellen, wird ein Personendatensatz für diesen Bewerber im globalen Adressbuch erstellt.       Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
 
 ## <a name="create-a-new-applicant-record"></a>Neuen Bewerberdatensatz erstellen
