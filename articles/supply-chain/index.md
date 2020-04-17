@@ -2,14 +2,14 @@
 title: Supply Chain Management – Hilferessourcen
 description: Diese Seite enthält eine Liste der Hilfethemen und anderer Ressourcen für die Supply Chain Management-Funktionen.
 author: josaw1
-manager: AnnBe
+manager: tfehr
 ms.date: 11/26/2019
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5f82d76f2e285b6318d900d41919aae14ec71a
-ms.sourcegitcommit: b8a51a0ba8fc33576ff78e5bbe826c14e1df2844
+ms.openlocfilehash: 014b5db6efc15fbed7401d9a857586912c7578f2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "2853987"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201524"
 ---
 # <a name="help-resources-for-supply-chain-management"></a>Supply Chain Management – Hilferessourcen
 
@@ -41,7 +41,7 @@ Wählen Sie einen Funktionsbereich aus, um weitere Informationen darüber zu erh
 - [Anlagenverwaltung](asset-management/index.md)
 - [Kostenrechnung](../finance/cost-accounting/cost-accounting-home-page.md)
 - [Kostenverwaltung](cost-management/cost-management-home-page.md)  
-- [Lagerverwaltung](inventory/inventory-home-page.md)
+- [Bestandsverwaltung](inventory/inventory-home-page.md)
 - [Produktprogrammplanung](master-planning/master-planning-home-page.md)
 - [Beschaffung](procurement/procurement-sourcing-overview.md)
 - [Produktinformationsverwaltung](pim/product-information.md)
@@ -57,11 +57,11 @@ Informationen zu Dynamics 365 Finance finden Sie auf der Seite [Finanzverwaltung
 
 ## <a name="videos"></a>Videos
 
-Diese kurzen Videos erläutern die neuen Funktionen, die in Microsoft Dynamics 365 for Finance and Operations, Version 8.0 (April 2018) eingeführt wurden.
+In diesen kurzen Videos werden die neuen Funktionen der Version 8.0 (April 2018) von Microsoft Dynamics 365 for Finance and Operations erläutert.
 
-- [Synchronisieren eines Arbeitsauftrags zwischen Field Service und Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Arbeitsauftrag synchronisieren zwischen Field Service und Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Diese kurzen Videos erläutern die neuen Funktionen, die in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (Dezember 2017) eingeführt wurden.
+In diesen kurzen Videos werden die neuen Funktionen der Enterprise Edition 7.3 (Dezember 2017) von Microsoft Dynamics 365 for Finance and Operations erläutert.
 
 -  [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimierungsratgeber](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
@@ -75,7 +75,7 @@ Diese kurzen Videos erläutern die neuen Funktionen, die in Microsoft Dynamics 3
 -  [Bestätigung von Bestellungen auf einem mobilen Gerät](https://youtu.be/gZ-gOlJe7H8)
 -  [Visuelle Zeitplanung mit Gantt-Diagramm für Produktions- und Chargenaufträge](https://youtu.be/BtbuShkGj4I)
 
-Diese technische Konferenz beschreibt die Produktfunktionalität für die ältere Version von Finance and Operations, aber die gleichen Konzepte gelten noch, und die Prozeduren sind in der aktuellen Version vergleichbar. 
+In diesen Aufzeichnungen von Fachkonferenzen werden die Produktfunktionen der Vorgängerversion von Finance and Operations besprochen. Die Konzepte gelten jedoch nach wie vor, und die Vorgehensweisen sind mit denen aus der aktuellen Version identisch. 
 
 **Kostenverwaltung**
 
@@ -109,7 +109,7 @@ Diese technische Konferenz beschreibt die Produktfunktionalität für die älter
 -  [Transportverwaltung (TMS) im neuen Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Blogs
-Es gibt viele Themen zur Produktion und Lieferkettenverwaltung unter <a href="https://blogs.msdn.microsoft.com/axmfg/">Dynamics AX – Team für Produktionsforschung und Entwicklung – Blog</a> sowie im <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Lieferkettenverwaltung im Dynamics AX Forschungs- und Entwicklungsteam-Blog</a>. Die meisten dieser Beiträge wurden für die ältere Version erstellt, aber die gleichen Konzepte gelten noch und die Prozeduren sind in der aktuellen Version vergleichbar. 
+Es gibt viele Themen zu Produktion und Supply Chain Management im <a href="https://blogs.msdn.microsoft.com/axmfg/">Blog des Forschungs- und Entwicklungsteams zu Fertigung in Dynamics AX</a> sowie im <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">Blog des Forschungs- und Entwicklungsteams zu Supply Chain Management in Dynamics AX</a>. Die meisten dieser Beiträge wurden für die ältere Version erstellt, aber die gleichen Konzepte gelten noch und die Prozeduren sind in der aktuellen Version vergleichbar. 
 
 ## <a name="white-papers"></a>Whitepapers
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktische Übungseinheiten zur Kostenrechnung</a> 
