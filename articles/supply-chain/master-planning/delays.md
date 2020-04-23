@@ -2,15 +2,15 @@
 title: Verzögerungen
 description: Dieses Thema enthält Informationen zu verzögerten Daten in der Masterplanung. Ein verzögertes Datum ist ein realistisches Fälligkeitsdatum, das eine Transaktion erhält, wenn das früheste Erfüllungsdatum, das die Masterplanung berechnet, später ist als das angeforderte Datum.
 author: roxanadiaconu
-manager: AnnBe
-ms.date: 03/15/2019
+manager: tfehr
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransFuturesListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a8c738fffda76f2a8492c20e2c67a154c68559
-ms.sourcegitcommit: 2b890cd7a801055ab0ca24398efc8e4e777d4d8c
+ms.openlocfilehash: 34252e5cd9ee5151b1cba47975fc0cc612521a17
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "1522288"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203847"
 ---
 # <a name="delays"></a>Verzögerungen
 
@@ -44,6 +44,12 @@ Auf der Seite **Parameter für Produktprogrammplanung** können Sie die Startzei
 
 > [!NOTE]
 > In früheren Versionen waren berechnete Verzögerungen als *Verfügbarkeitsmeldungen* bekannt, das verzögerte Datum als *Verfügbarkeitsdatum*, und eine verzögerte Buchung war als eine *Transaktio mit Erfüllung in der Zukunft* bekannt.
+
+## <a name="limited-delays-in-production-setup-with-multiple-bom-levels"></a>Begrenzte Verzögerungen bei der Einrichtung der Produktion mit mehreren Stücklistenebenen
+Wenn Sie mit Verzögerungen in einem Produktionssetup mit mehreren Stücklistenstufen arbeiten, ist es wichtig zu beachten, dass nur die Artikel direkt über dem Artikel (in der Stücklistenstruktur), die die Verzögerung verursachen, im Rahmen der Masterplanung mit einer Verzögerung aktualisiert werden. Bei anderen Elementen in der Stücklistenstruktur wird die Verzögerung erst beim ersten Masterplanungslauf angewendet, wenn der geplante Auftrag für die oberste Ebene genehmigt oder bestätigt wird. 
+
+Um diese bekannte Einschränkung zu umgehen, können die Fertigungsaufträge oben in der Stücklistenstruktur mit Verzögerungen vor dem nächsten Masterplanungslauf genehmigt (oder bestätigt) werden. Auf diese Weise bleibt die Verzögerung des verspäteten genehmigten geplanten Fertigungsauftrags erhalten und alle zugrunde liegenden Komponenten werden entsprechend aktualisiert.
+Aktionsnachrichten können auch verwendet werden, um Planaufträge zu identifizieren, die aufgrund anderer Verzögerungen in der Stücklistenstruktur zu einem späteren Zeitpunkt verschoben werden können.
 
 ## <a name="desired-date"></a>Gewünschtes Datum
 

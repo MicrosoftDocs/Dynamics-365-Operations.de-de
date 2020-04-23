@@ -3,7 +3,7 @@ title: Erweiterte automatische Omni-Channel-Belastungen
 description: In diesem Thema wird die Fähigkeit für das Verwalten zusätzlicher Auftragszuschläge für Commerce Kanalaufträge mithilfe der erweiterten Auto-Belastungen-Funktionen beschrieben.
 author: hhaines
 manager: annbe
-ms.date: 03/08/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,18 +19,18 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: fd02a81f35b40e5075ccfe5c9a617d7de4e8250d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 826c955b7c99073ff41c8a5ed75254c824359925
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022713"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175153"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erweiterten Auto-Belastungen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
+Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erweiterten Funktionen automatische Belastungen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
 
 Wenn die erweiterten Auto-Belastungen-Funktionen aktiviert sind, können Bestellungen, die in jedem unterstützten Commerce Channel (Verkaufsstelle (POS), Callcenter und online) erstellt wurden, die Vorteile der in der ERP-Anwendung definierten [Auto-Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) -Konfiguration nutzen, die in der ERP-Anwendung sowohl für Kopf- als auch Positionsebene bezogene Gebühren definiert werden.
 
@@ -63,11 +63,11 @@ Die neuen Vorgänge lauten wie folgt.
 - **142 – Belastungen verwalten** – Verwenden Sie diesen Vorgang, damit POS-Benutzer verschiedene Belastungen für die POS-Transaktion anzeigen und bearbeiten können, die entweder manuell oder systematisch durch die automatischen Belastungsberechnungen hinzugefügt wurden.
 - **141 – Kopfzeilenbelastungen hinzufügen** – Verwenden Sie diesen Vorgang, um dem Benutzer die Möglichkeit zu geben, manuell sonstige Zuschläge auf Kopfzeilenebene zu jeder POS-Verkaufstransaktion hinzuzufügen (und den zu verwendenden Belastungscode auszuwählen).
 - **140 – Belastungen pro Position hinzufügen** – Verwenden Sie diesen Vorgang, um dem Benutzer die Möglichkeit zu geben, manuell sonstige Zuschläge auf Positionsebene zu jeder POS-Verkaufstransaktionposition hinzuzufügen (und den zu verwendenden Belastungscode auszuwählen).
-- **143 – Belastungen neu berechnen** – Verwenden Sie diesen Vorgang, um eine vollständige Neuberechnung der Belastungen für die Verkaufstransaktion durchzuführen. Alle zuvor vom Benutzer überschriebenen Auto-Belastungen werden basierend auf der aktuellen Warenkorbkonfiguration neu berechnet.
+- **143 – Belastungen neu berechnen** – Verwenden Sie diesen Vorgang, um eine vollständige Neuberechnung der Belastungen für die Verkaufstransaktion zu machen. Alle zuvor vom Benutzer überschriebenen Auto-Belastungen werden basierend auf der aktuellen Warenkorbkonfiguration neu berechnet.
 
 Wie bei allen POS-Vorgängen können Sicherheitskonfigurationen vorgenommen werden, die eine Genehmigung des Managers erfordern, um den Vorgang auszuführen.
 
-Beachten Sie unbedingt, dass die oben aufgeführten POS-Vorgänge auch dann dem POS-Layout hinzugefügt werden können, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** deaktiviert ist. In diesem Szenario erhalten Organisationen die zusätzliche Vorteile, dass sie manuell hinzugefügte Belastungen anzeigen und mithilfe der Operation **Belastungen verwalten** bearbeiten können. Benutzer können auch die Operationen **Kopfzuschläge hinzufügen** und **Belastungen pro Position hinzufügen** für POS-Transaktionen auch dann verwenden, wenn **Erweiterte Auto-Belstungen verwenden** deaktiviert ist. Die Operation **Belastungen neu berechnen** bietet weniger Funktionen, wenn sie bei deaktiviertem **Erweiterte Auto-Belastungen verwenden** verwendet wird. In diesem Szeanrio würde nichts neu berechnet und alle manuell der Transaktion hinzugefügten Belastungen würden einfach auf 0,00 US-Dollar zurückgesetzt.
+Beachten Sie unbedingt, dass die oben aufgeführten POS-Vorgänge auch dann dem POS-Layout hinzugefügt werden können, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** deaktiviert ist. In diesem Szenario erhalten Organisationen die zusätzliche Vorteile, dass sie manuell hinzugefügte Belastungen anzeigen und mithilfe der Operation **Belastungen verwalten** bearbeiten können. Benutzer können auch die Operationen **Kopfzuschläge hinzufügen** und **Belastungen pro Position hinzufügen** für POS-Transaktionen auch dann verwenden, wenn **Erweiterte Auto-Belstungen verwenden** deaktiviert ist. Die Operation **Belastungen neu berechnen** bietet weniger Funktionen, wenn sie bei deaktiviertem **Erweiterte Auto-Belastungen verwenden** verwendet wird. In diesem Szeanrio würde nichts neu berechnet und alle manuell der Transaktion hinzugefügten Belastungen würden einfach auf 0,00 US-Dollar zurückgesetzt werden.
 
 ## <a name="use-case-examples"></a>Anwendungsbeispiele
 
@@ -77,7 +77,7 @@ In diesem Abschnitt werden Anwendungsbeispiele vorgestellt, die Ihnen helfen sol
 
 #### <a name="use-case-scenario"></a>Fallszenario verwenden
 
-Ein Einzelhändler möchte automatisch Frachtkosten hinzufügen, wenn Transaktionen in einem beliebigen Comerce Channel angelegt werden, der eine Lieferung von Produkten an den Kunden erfordert. Der Einzelhändler bietet 2 Methoden der Lieferung an: Landweg und Luft. Wenn ein Kunde Transport auf dem Landweg auswählt und der Auftragswert kleiner als 100 Euro ist, möchte der Einzelhändler dem Kunden die Frachtkosten mit 10,00 Euro berechnen. Wenn der Auftrag einen Wert von über 100 Euro hat und der Kunde Transport auf dem Landweg auswählt, werden dem Kunden keine Frachtzuschlaggebühren berechnet. Wählt der Kunde für alle Bestellungen, unabhängig vom Gesamtwert, die Versandart Luft, wird eine Frachtgebühr von 20,00 Euro berechnet.
+Ein Einzelhändler möchte automatisch Frachtkosten hinzufügen, wenn Transaktionen in einem beliebigen Comerce Channel angelegt werden, der eine Lieferung von Produkten an den Kunden erfordert. Der Einzelhändler bietet zwei Methoden der Lieferung an: Landweg und Luft. Wenn ein Kunde Transport auf dem Landweg auswählt und der Auftragswert kleiner als 100 Euro ist, möchte der Einzelhändler dem Kunden die Frachtkosten mit 10,00 Euro berechnen. Wenn der Auftrag einen Wert von über 100 Euro hat und der Kunde Transport auf dem Landweg auswählt, werden dem Kunden keine Frachtzuschlaggebühren berechnet. Wählt der Kunde für alle Bestellungen, unabhängig vom Gesamtwert, die Versandart Luft, wird eine Frachtgebühr von 20,00 Euro berechnet.
 
 #### <a name="setup-and-configuration"></a>Einrichtung und Konfiguration
 
@@ -133,7 +133,7 @@ Zu diesem Zeitpunkt gelten die Gebühren für jede Vertriebslinie, die mit der K
 
 #### <a name="use-case-scenario-description"></a>Beschreibung des Fallszenarios verwenden
 
-Ein Einzelhändler macht eine Ausnahme von typischen Prozessen, indem er anbietet, einem Kunden, der Produkte in der Filiale bestellt, eine spezielle Lieferung von Produkten nach Hause anzubieten. Der Einzelhändler und der Kunde haben vereinbart, dass der Kunde eine zusätzliche Bearbeitungsgebühr von 25 Euro für diesen Service zahlt. Der Auftragserfasser muss diese zusätzliche Gebühr zur Transaktion hinzufügen. Da es sich bei der Gebühr um eine Pauschalgebühr handelt und sie sich nicht auf ein einzelnes Produkt in der Bestellung bezieht, wird eine Kopfgebühr verwendet.
+Ein Einzelhändler macht nun eine Ausnahme von typischen Prozessen, indem er anbietet, einem Kunden, der Produkte in der Filiale bestellt, eine spezielle Lieferung von Produkten nach Hause anzubieten. Der Einzelhändler und der Kunde haben vereinbart, dass der Kunde eine zusätzliche Bearbeitungsgebühr von 25 Euro für diesen Service zahlt. Der Auftragserfasser muss diese zusätzliche Gebühr zur Transaktion hinzufügen. Da es sich bei der Gebühr um eine Pauschalgebühr handelt und sie sich nicht auf ein einzelnes Produkt in der Bestellung bezieht, wird eine Kopfgebühr verwendet.
 
 #### <a name="setup-and-configuration"></a>Einrichtung und Konfiguration
 
@@ -157,7 +157,7 @@ Dieser Prozess kann im Call Center angewendet werden, indem Sie die vorhandene F
 
 #### <a name="use-case-scenario"></a>Fallszenario verwenden
 
-Ein Kunde verlangt, dass 2 der 5 Artikel seines AUftrags als Geschenk verpackt werden. Der Einzelhändler bietet diesen optionalen Service gegen eine Gebühr von 2,00 Euro pro Artikel an. Der Auftragserfasser muss diese Gebühren zu den entsprechenden Artikeln hinzufügen, die als Geschenk verpackt werden müssen.
+Ein Kunde verlangt, dass zwei der fünf Artikel seines Auftrags als Geschenk verpackt werden. Der Einzelhändler bietet diesen optionalen Service gegen eine Gebühr von 2,00 Euro pro Artikel an. Der Auftragserfasser muss diese Gebühren zu den entsprechenden Artikeln hinzufügen, die als Geschenk verpackt werden müssen.
 
 #### <a name="setup-and-configuration"></a>Einrichtung und Konfiguration
 
@@ -173,7 +173,7 @@ Der Vorgang **Belastungen pro Position hinzufügen** muss in Ihrem [POS-Bildschi
 
 Um das Szenario in der POS-Anwendung auszuführen, legt der POS-Benutzer die Verkaufstransaktion wie gewohnt an und fügt die Produkte und alle anderen Konfigurationen dem Verkauf hinzu. Vor dem Einzug der Zahlung sollte der Benutzer in der Anzeige der POS-Artikelliste die spezifische Position auswählen, in der die Gebühr anfällt, und den Vorgang **Positionsbelastung** ausführen. Der Benutzer wird aufgefordert, einen Belastungscode auszuwählen und den Zuschlagswert einzugeben. Sobald der Benutzer den Prozess abgeschlossen hat, wird die Belastung mit der Position verknüpft und als Positionsbelastung zum Auftragswert addiert. Der Benutzer kann den Vorgang wiederholen, um bei Bedarf zusätzliche Positionsbelastungen zu anderen Positionen der Transaktion hinzuzufügen.
 
-Der gleiche Prozess kann im Call Center über die Funktion "Belastungen verwalten" im Dropdown-Menü **Finanzen** im Abschnitt **Auftragspositionen** auf der Seite **Auftrag** angewendet werden. Dadurch wird die Seite **Belastungen verwalten** geöffnet, auf der der Benutzer eine neue positionsspezifische Belastung zur Transaktion hinzufügen kann.
+Der gleiche Prozess kann im Call Center über die Funktion "Belastungen verwalten" im Dropdown-Menü **Finanzen** im Abschnitt **Auftragspositionen** auf der Seite **Auftrag** angewendet werden. Dadurch wird die Seite **Belastungen verwalten** geöffnet, auf der der Benutzer eine neue positionsspezifische Belastung der Transaktion hinzufügen kann.
 
 ## <a name="additional-features"></a>Zusätzliche Funktionen
 
@@ -214,4 +214,11 @@ Einige Unternehmen ziehen es möglicherweise vor, zu warten, bis der Benutzer al
 
 ### <a name="charges-override-reports"></a>Belastungen setzen Berichte außer Kraft
 
-Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transaktion manuell eine Belastung hnzufügen, sind diese Daten zur Überprüfung im Bericht **Historie für Belastungsüberschreibung** verfügbar. Der Bericht kann in **Retail und Commerce \> Abfragen und Berichte \> Verlauf für Belastungsüberschreibung** angezeigt werden. Beachten Sie unbedingt, dass die für diesen Bericht erforderlichen Daten durch die "P"-Verteilungs-Zeitplaneinzelvorgänge aus der Kanaldatenbank in die Hauptniederlassung importiert werden. Daher sind Informationen zu Überschreibungen, die soeben im POS ausgeführt wurden, möglicherweise nicht sofort in diesem Bericht verfügbar, bis dieser Einzelvorgang die Transaktionsdaten des Stores zur Hauptniederlassung hochgeladen hat.
+Wenn Benutzer die berechneten Belastungen manuell überschreiben oder der Transaktion manuell eine Belastung hinzufügen, sind diese Daten zur Überprüfung im Bericht **Historie für Belastungsüberschreibung** verfügbar. Der Bericht kann in **Retail und Commerce \> Abfragen und Berichte \> Verlauf für Belastungsüberschreibung** angezeigt werden. Beachten Sie unbedingt, dass die für diesen Bericht erforderlichen Daten durch die "P"-Verteilungs-Zeitplaneinzelvorgänge aus der Kanaldatenbank in die Hauptniederlassung importiert werden. Daher sind Informationen zu Überschreibungen, die soeben im POS ausgeführt wurden, möglicherweise nicht sofort in diesem Bericht verfügbar, bis dieser Einzelvorgang die Transaktionsdaten des Stores zur Hauptniederlassung hochgeladen hat.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Automatische Belastungen nach Kanal aktivieren und konfigurieren](auto-charges-by-channel.md)
+
+[Kopfbelastungen auf übereinstimmende Verkaufspositionen aufteilen](pro-rate-charges-matching-lines.md)
+

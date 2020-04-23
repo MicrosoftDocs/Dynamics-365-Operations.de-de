@@ -16,16 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 42fcbeaadf0e8156cd72bee4328ca612c1abbaff
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 058102b369ec7ed79874017e50a06d265b96b424
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009201"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198765"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Vergütungsprozess definieren und Ergebnisse berechnen
-
-
 
 Vergütungsprozesse werden verwendet, um neue Vergütungsbeträge und Prämien für die Mitarbeiter zu bestimmen, die in einem Plan für feste oder variable Vergütung registriert sind. Vergütungsprozesse können mehrmals ausgeführt werden, um "was wäre wenn"-Analysen auszuführen, um Änderungen und Einstellungen zu überprüfen. Diese Prozedur erstellt einen Vergütungsprozess, führt den Prozess aus und zeigt die Ergebnisse an. Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.
 
