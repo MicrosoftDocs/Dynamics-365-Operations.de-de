@@ -2,7 +2,7 @@
 title: Solver-Strategie für Produktkonfiguration
 description: In diesem Thema wird beschrieben, wie Sie die Solver-Strategie verwenden können, um die Leistung der Produktkonfiguration zu verbessern.
 author: cvocph
-manager: AnnBe
+manager: tfehr
 ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 241e1ae9bfd347695d7a2dbb7b3e71a7d49c2b93
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 5ec7e81c3a0135b075ecb88ab5fc9e7c8b30588a
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814535"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209351"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Solver-Strategie für Produktkonfiguration
 
@@ -43,7 +43,7 @@ Das Solver-Strategiekonzept besteht aus den folgenden Strategien:
 
 ## <a name="solver-strategy"></a>Solver-Strategie 
 
-Ein Produktkonfigurationsmodell kann als [Constraint-Satisfaction-Problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) formuliert werden. Microsoft Solver Foundation (MSF) bietet zwei Typen von Solver-Strategien, um die CSPs zu beheben, die von Produktkonfigurationsmodellen verwendet werden können. Diese Solver-Strategien hängen von [Heuristiken](https://techterms.com/definition/heuristic) ab, mit denen die Reihenfolge bestimmt wird, in der die Variablen der CSPs berücksichtigt werden, wenn das Problem behoben wird. Heuristiken können sich deutlich auf die Leistung auswirken, wenn ein Problem oder eine Klasse von Problemen gelöst wird.
+Ein Produktkonfigurationsmodell kann als [Constraint-Satisfaction-Problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf) formuliert werden. Microsoft Solver Foundation (MSF) bietet zwei Typen von Lösungs-Strategien, um die CSPs zu beheben, die von Produktkonfigurationsmodellen verwendet werden können. Diese Solver-Strategien hängen von [Heuristiken](https://techterms.com/definition/heuristic) ab, mit denen die Reihenfolge bestimmt wird, in der die Variablen der CSPs berücksichtigt werden, wenn das Problem behoben wird. Heuristiken können sich deutlich auf die Leistung auswirken, wenn ein Problem oder eine Klasse von Problemen gelöst wird.
 
 Die Solver-Strategie für Produktkonfigurationsmodelle bestimmt, welcher Solver mit Heuristiken verwendet wird. Die Strategien **Standard**, **Minimaldomänen zuerst** und **Oben-nach-unten** verwenden die beiden Solver von MSF, wohingegen die Strategie **Z3** den Z3-Solver verwendet. 
 

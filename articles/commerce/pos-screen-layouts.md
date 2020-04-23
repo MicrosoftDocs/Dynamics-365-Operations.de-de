@@ -1,9 +1,9 @@
 ---
-title: Bildschirmlayouts für die Verkaufsstelle (POS)
+title: Visuelle Konfigurationen der POS-Benutzeroberfläche
 description: Dieses Thema enthält Informationen zu Bildschirmlayouts für Dynamics 365 Commerce-Verkaufsstellen (POS)-Umgebungen.
-author: jblucher
-manager: AnnBe
-ms.date: 05/20/2019
+author: boycezhu
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,23 +16,22 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5bf7b3d20ff0b42eb9eaedf584b2a508c1307707
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022700"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261466"
 ---
-# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Bildschirmlayouts für die Verkaufsstelle (POS)
+# <a name="pos-user-interface-visual-configurations"></a>Visuelle Konfigurationen der POS-Benutzeroberfläche
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-Dieses Thema enthält Informationen zu Bildschirmlayouts für Dynamics 365 Commerce-Verkaufsstellen (POS)-Umgebungen.
-
-Die POS-Benutzeroberfläche (UI) kann mithilfe einer Kombination von visuellen Profilen und Bildschirmlayouts konfiguriert werden, die Shops, Kassen und/oder den Benutzern zugewiesen sind.
+Die Benutzeroberfläche (UI) der Microsoft Dynamics 365 Commerce Verkaufsstelle (POS) kann mithilfe einer Kombination von visuellen Profilen und Bildschirmlayouts konfiguriert werden, die Shops, Kassen und/oder den Benutzern zugewiesen sind. Dieses Thema enthält Links zu weiteren Informationen über diese Konfigurationsoptionen.
 
 Die folgende Abbildung zeigt die Beziehungen zwischen den unterschiedlichen Entitäten, die die konfigurierbare POS-Benutzeroberfläche bilden.
 
@@ -40,7 +39,7 @@ Die folgende Abbildung zeigt die Beziehungen zwischen den unterschiedlichen Enti
 
 ## <a name="visual-profile"></a>Visuelles Profil
 
-Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die Sichtelementen anzugeben, die kassenspezifisch sind und gemeinsam genutzt werden. Jeder Benutzer, der sich an der Kasse anmeldet, sieht dasselbe Thema, Farben und Bilder.
+Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die Sichtelementen anzugeben, die kassenspezifisch sind und gemeinsam genutzt werden. Jeder Benutzer, der sich an der Kasse anmeldet, sieht dasselbe Thema, Layout, Farben und Bilder.
 
 ![POS-Begrüßungsbildschirm mit hellem Thema](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
@@ -48,16 +47,24 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 
 - **Profilnummer** Die Profilnummer für die eindeutige Kennung für das visuelle Profil.
 - **Beschreibung** - Die Beschreibung ermöglicht es Ihnen, einen beschreibenden Namen angeben, der Ihnen hilft, das richtige Profil für in Ihrer Situation zu identifizieren.
-- **Thema** - Sie können zwischen den hellen oder dunklen Anwendungsdesigns auswählen. Das Thema betrifft die gewünschten Schrift- und Hintergrundfarben in der Anwendung.
+- **Thema** - Sie können zwischen den **hellen** und **dunklen** Anwendungsdesigns auswählen. Das Thema betrifft die gewünschten Schrift- und Hintergrundfarben in der Anwendung.
 - **Akzentfarbe** - Die Akzentfarbe wird im POS verwendet, um bestimmte Sichtelemente wie Kacheln, Befehlsschaltflächen oder Links zu unterscheiden oder hervorzuheben. Diese Elemente sind in der Regel aktiv.
-- **Kopffarbe** – Sie können die Farbe der Kopfzeile konfigurieren, um die Brandingbedingungen des Einzelhändlers zu erfüllen. Diese Funktion ist nur in , Retail-Version 1611 verfügbar.
-- **Datum/Uhrzeit anzeigen** – Bei Aktivierung werden aktuelles Datum und aktuelle Uhrzeit in der POS-Kopfzeile angezeigt.
-- **Anmeldungs-Hintergrund** - Sie können ein Hintergrundbild für die Bildschirm-Anmeldung angeben. Die Dateigröße von Hintergrundbildern sollte so gering wie möglich gehalten werden, da das Speichern und Hochladen großer Dateien Auswirkungen auf das Anwendungsverhalten und die Leistung haben kann.
-- **Anwendungshintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Für den Anmelde-Hintergrund sollte die Dateigröße so gering wie möglich gehalten werden.
+- **Kopffarbe** – Sie können die Farbe der Kopfzeile konfigurieren, um die Brandingbedingungen des Einzelhändlers zu erfüllen.
+- **Schriftschema** – Sie können zwischen den **Standard** und **Groß** Schriftschemata auswählen. Das Schriftschema wirkt sich auf die Schriftgröße in der gesamten Anwendung aus. Die Standardauswahl ist **Standard**.
+- **Zeigen Sie immer Beschriftungen der Anwendungsleiste an** – Wenn diese Option aktiviert ist, ist der Beschriftungstext immer unter den Schaltflächen der Anwendungsleiste sichtbar.
+- **Layout** – Sie können zwischen den Layouts **Zentriert** und **Rechts** auswählen. Das Layout wirkt sich auf die Ausrichtung des Anmeldefelds auf dem Anmeldebildschirm aus. Die Standardauswahl ist **Zentriert**.
+- **Datum/Uhrzeit anzeigen** – Wenn diese Option aktiviert ist, werden das aktuelle Datum und die aktuelle Uhrzeit im POS-Kopf und auf dem Anmeldebildschirm angezeigt.
+- **Tastatur** – Sie können zwischen **Standardmäßiger Betriebssystemtastatur** und **Nummernblock anzeigen** auswählen, um die Standardtastatur anzugeben, die für die Eingabe auf dem Anmeldebildschirm verwendet wird. Der Nummernblock ist eine virtuelle Tastatur, die hauptsächlich für berührungsbasierte Geräte verwendet wird. Die Standardauswahl ist **Standardmäßige Betriebssystemtastatur**.
+- **Logo Bild** – Sie können ein Logo-Bild angeben, das auf dem Anmeldebildschirm angezeigt wird. Wir empfehlen, ein Bild mit transparentem Hintergrund zu verwenden. Die Dateigröße von Hintergrundbildern sollte so gering wie möglich gehalten werden, da das Speichern und Hochladen großer Dateien Auswirkungen auf das Anwendungsverhalten und die Leistung haben könnte.
+- **Anmeldungs-Hintergrund** – Sie können ein Hintergrundbild für die Bildschirm-Anmeldung angeben. Für das Hintergrundbild sollte die Bilddateigröße so gering wie möglich gehalten werden.
+- **Hintergrund**- Sie können einen Hintergrund in der gesamten Anwendung anstelle der ausgefüllten Themenfarbe definieren. Bei Hintergrundbildern für den Anmeldebildschirm sollte die Dateigröße so klein wie möglich gehalten werden.
+
+> [!NOTE]
+> Das Layout **Rechts** und die Datums-/Uhrzeitanzeige gelten nicht für den Anmeldebildschirm in kompakter Ansicht.
 
 ## <a name="screen-layouts"></a>Bildschirmlayouts
 
-Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS-Begrüßungsbildschirm- und -**Buchungs**-Bildschirm.
+Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS- Bildschirm **Begrüßung** und **Transaktion**.
 
 ![POS-Bildschirmlayout anzeigen](../commerce/media/POS-Screen-Layout-View.png)
 

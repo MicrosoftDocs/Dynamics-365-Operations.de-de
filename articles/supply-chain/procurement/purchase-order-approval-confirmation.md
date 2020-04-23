@@ -1,30 +1,30 @@
 ---
 title: Bestellungen genehmigen und bestätigen
-description: Dieser Artikel beschreibt die Statuswerte einer Bestellung (PO) nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen.
-author: FrankDahl
-manager: AnnBe
-ms.date: 06/20/2017
+description: Dieser Artikel beschreibt die Statuswerte einer Bestellung nach der Erstellung und den Effekt des Änderungsmanagements für Bestellungen.
+author: mkirknel
+manager: tfehr
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: fdahl
+ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d0fc75f233ee2eab42317f835834ff24b6ada2f
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 6b331b7e7725b3dd284deb02e59fcf2d699822c4
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813430"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3207993"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Bestellungen genehmigen und bestätigen
 
@@ -69,9 +69,10 @@ In einigen Situationen müssen Sie möglicherweise eine Bestellung ändern nachd
 
 Wenn die Bestellung über einen Änderungsmanagementprozess erstellt wurde, können Sie Änderungen über das erneute Aufrufen der Bestellung oder (wenn sie bereits genehmigt ist) über die Aktion **Änderung anfordern** durchführen. In diesem Fall wird der Genehmigungsstatus wieder auf **Entwurf** geändert, und Sie können die Bestellung ändern. Nachdem Sie die Änderungen abgeschlossen haben, müssen Sie die Bestellung möglicherweise zur erneuten Genehmigung senden. Sie können die Änderungen konfigurieren, die eine erneute Genehmigung erfordern. Nutzen Sie hierzu eine **Regel für die erneute Genehmigung von Bestellungen**-Richtlinienregel auf der **Einkaufsrichtlinien**-Seite.
 
-Wenn ein Teil der bestellten Menge für eine Bestellposition geliefert wurde, können Sie die bestellte Menge nicht ändern. Sie können jedoch die **Rest liefern**-Menge der Position ändern. Anschließend können Sie die **Abschließen**-Aktion nutzen, um die Positionen zu stornieren und die weitere Verarbeitung zu verhindern. 
+Wenn ein Teil der bestellten Menge für eine Bestellposition geliefert wurde, können Sie die bestellte Menge nicht ändern, wenn die Bestellung im Zustand **Entwurf** ist. Sie können jedoch die Menge **Rest liefern** in der Zeile für die Bestellung ändern, die im Status **Entwurf** ist.
 
-Wenn eine Bestellung bestätigt ist, können Sie diese nicht mehr löschen. Sie können jedoch die Gesamtmenge oder die verbleibende Menge einer Bestellung stornieren (solange die Menge noch nicht empfangen oder fakturiert wurde).
+Wenn eine Bestellung bestätigt ist, können Sie diese nicht mehr löschen. Sie können jedoch die Gesamtmenge oder die verbleibende Menge einer Bestellung stornieren (solange die Menge noch nicht empfangen oder fakturiert wurde). Anschließend können Sie die Aktion **Abschließen** nutzen, um die Positionen zu stornieren und die weitere Verarbeitung zu verhindern. 
+
 
 ## <a name="canceling-purchase-orders"></a>Bestellungen stornieren
 
