@@ -2,7 +2,7 @@
 title: Ursachencodes für Serviceaufträge
 description: Ursachencodes können Sie verwenden, um den Status eines Serviceauftrags besser zu erläutern, wenn die Phase eines Serviceauftrags aktualisiert wird.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAStageTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,35 +18,35 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdade89d07fec6a01926015a8c73bacce015fd7a
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 02965eac83d34f6b560e43538f745b215c7c3ee7
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1563832"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3211835"
 ---
-# <a name="reason-codes-for-service-orders"></a><span data-ttu-id="2570a-103">Ursachencodes für Serviceaufträge</span><span class="sxs-lookup"><span data-stu-id="2570a-103">Reason codes for service orders</span></span>   
+# <a name="reason-codes-for-service-orders"></a><span data-ttu-id="3cd40-103">Ursachencodes für Serviceaufträge</span><span class="sxs-lookup"><span data-stu-id="3cd40-103">Reason codes for service orders</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="2570a-104">Ursachencodes können Sie verwenden, um den Status eines Serviceauftrags besser zu erläutern, wenn die Phase eines Serviceauftrags aktualisiert wird.</span><span class="sxs-lookup"><span data-stu-id="2570a-104">You can use reason codes to help explain the status of a service order when the stage of a service order is updated.</span></span> <span data-ttu-id="2570a-105">Wenn Sie beispielsweise einen Serviceauftrag stornieren, können Sie einen Ursachencode für die Stornierung auswählen.</span><span class="sxs-lookup"><span data-stu-id="2570a-105">For example, if you cancel a service order, you can select a reason code for the cancellation.</span></span>
+<span data-ttu-id="3cd40-104">Ursachencodes können Sie verwenden, um den Status eines Serviceauftrags besser zu erläutern, wenn die Phase eines Serviceauftrags aktualisiert wird.</span><span class="sxs-lookup"><span data-stu-id="3cd40-104">You can use reason codes to help explain the status of a service order when the stage of a service order is updated.</span></span> <span data-ttu-id="3cd40-105">Wenn Sie beispielsweise einen Serviceauftrag stornieren, können Sie einen Ursachencode für die Stornierung auswählen.</span><span class="sxs-lookup"><span data-stu-id="3cd40-105">For example, if you cancel a service order, you can select a reason code for the cancellation.</span></span>
 
-<span data-ttu-id="2570a-106">Führen Sie zum Anzeigen von Informationen über Ursachencodes, die verwendet werden, um den Fortschritt von Serviceaufträgen zu verfolgen, den Bericht „Serviceauftragsverlauf“ aus.</span><span class="sxs-lookup"><span data-stu-id="2570a-106">To view information about reason codes that are used to track the progress of service orders, run the Service order progress report.</span></span> <span data-ttu-id="2570a-107">In diesem Bericht werden – unabhängig vom jeweiligen Status – alle Serviceaufträge sowie die Ursachencodes aufgeführt, die beim Aktualisieren der Serviceauftragsphase angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="2570a-107">This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.</span></span>
+<span data-ttu-id="3cd40-106">Führen Sie zum Anzeigen von Informationen über Ursachencodes, die verwendet werden, um den Fortschritt von Serviceaufträgen zu verfolgen, den Bericht „Serviceauftragsverlauf“ aus.</span><span class="sxs-lookup"><span data-stu-id="3cd40-106">To view information about reason codes that are used to track the progress of service orders, run the Service order progress report.</span></span> <span data-ttu-id="3cd40-107">In diesem Bericht werden – unabhängig vom jeweiligen Status – alle Serviceaufträge sowie die Ursachencodes aufgeführt, die beim Aktualisieren der Serviceauftragsphase angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="3cd40-107">This report lists all service orders, regardless of their stage, and the reason codes that are specified when a service order stage is updated.</span></span>
 
-## <a name="turn-reason-codes-on-or-off"></a><span data-ttu-id="2570a-108">Aktivieren und Deaktivieren von Ursachencodes</span><span class="sxs-lookup"><span data-stu-id="2570a-108">Turn reason codes on or off</span></span>
+## <a name="turn-reason-codes-on-or-off"></a><span data-ttu-id="3cd40-108">Aktivieren und Deaktivieren von Ursachencodes</span><span class="sxs-lookup"><span data-stu-id="3cd40-108">Turn reason codes on or off</span></span>
 
-<span data-ttu-id="2570a-109">Die Verwendung von Ursachencodes ist optional.</span><span class="sxs-lookup"><span data-stu-id="2570a-109">Reason codes are optional.</span></span> <span data-ttu-id="2570a-110">Sie können entscheiden, ob ein Ursachencode erforderlich ist, wenn Sie einen Serviceauftrag zu einer bestimmten Servicephase aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="2570a-110">You can decide whether to require a reason code when you update a service order to a specific service stage.</span></span>
+<span data-ttu-id="3cd40-109">Die Verwendung von Ursachencodes ist optional.</span><span class="sxs-lookup"><span data-stu-id="3cd40-109">Reason codes are optional.</span></span> <span data-ttu-id="3cd40-110">Sie können entscheiden, ob ein Ursachencode erforderlich ist, wenn Sie einen Serviceauftrag zu einer bestimmten Servicephase aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="3cd40-110">You can decide whether to require a reason code when you update a service order to a specific service stage.</span></span>
 
-1.  <span data-ttu-id="2570a-111">Klicken auf **Serviceverwaltung** \> **Einrichtung** \> **Serviceaufträge** \> **Servicephasen**.</span><span class="sxs-lookup"><span data-stu-id="2570a-111">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
+1.  <span data-ttu-id="3cd40-111">Klicken auf **Serviceverwaltung** \> **Einrichtung** \> **Serviceaufträge** \> **Servicephasen**.</span><span class="sxs-lookup"><span data-stu-id="3cd40-111">Click **Service management** \> **Setup** \> **Service orders** \> **Service stages**.</span></span>
 
-2.  <span data-ttu-id="2570a-112">Wählen Sie im Formular **Servicephasen** eine Servicephase aus, und aktivieren Sie anschließend das Kontrollkästchen **Ursache** für die Servicephase.</span><span class="sxs-lookup"><span data-stu-id="2570a-112">In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.</span></span>
+2.  <span data-ttu-id="3cd40-112">Wählen Sie im Formular **Servicephasen** eine Servicephase aus, und aktivieren Sie anschließend das Kontrollkästchen **Ursache** für die Servicephase.</span><span class="sxs-lookup"><span data-stu-id="3cd40-112">In the **Service stages** form, select a service stage, and then select the **Reason** check box for the service stage.</span></span>
 
-3.  <span data-ttu-id="2570a-113">Schließen Sie das Formular, um Ihre Änderungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="2570a-113">Close the form to save your changes.</span></span>
+3.  <span data-ttu-id="3cd40-113">Schließen Sie das Formular, um Ihre Änderungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="3cd40-113">Close the form to save your changes.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2570a-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2570a-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3cd40-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3cd40-114">See also</span></span>
 
-[<span data-ttu-id="2570a-115">Serviceauftragsphasen einrichten</span><span class="sxs-lookup"><span data-stu-id="2570a-115">Set up service order stages</span></span>](set-up-service-order-stages.md)
+[<span data-ttu-id="3cd40-115">Serviceauftragsphasen einrichten</span><span class="sxs-lookup"><span data-stu-id="3cd40-115">Set up service order stages</span></span>](set-up-service-order-stages.md)
 
 
 

@@ -2,7 +2,7 @@
 title: Verwenden der Ablaufverfolgung für die Auflösung
 description: In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen.
 author: roxanadiaconu
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 19231
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
@@ -19,32 +19,32 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7f2821eb6a17d2caaacf399f8d519e4caf3ecd04
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 046d4f5270869542d33023b9b9c927e89f5ad40b
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2813660"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3209512"
 ---
-# <a name="use-tracing-for-explosion"></a><span data-ttu-id="3b3a3-103">Verwenden der Ablaufverfolgung für die Auflösung</span><span class="sxs-lookup"><span data-stu-id="3b3a3-103">Use tracing for explosion</span></span>
+# <a name="use-tracing-for-explosion"></a><span data-ttu-id="94acc-103">Verwenden der Ablaufverfolgung für die Auflösung</span><span class="sxs-lookup"><span data-stu-id="94acc-103">Use tracing for explosion</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="3b3a3-104">In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
+<span data-ttu-id="94acc-104">In diesem Artikel wird beschrieben, wie Sie die Funktion Nachverfolgung verwenden können, um die Ursachen hinter dem Ergebnis einer Auftragsauflösung zu untersuchen.</span><span class="sxs-lookup"><span data-stu-id="94acc-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
 
-<span data-ttu-id="3b3a3-105">Wenn Sie Ablaufverfolgung aktivieren, können Sie Informationen zu Faktoren anzeigen, die dem Ergebnis der Auflösung eines bestimmten Auftrags beitrugen.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="3b3a3-106">Nachfolgend finden Sie Beispiele dafür, wie die Ablaufverfolgungsinformationen verwendet werden können:</span><span class="sxs-lookup"><span data-stu-id="3b3a3-106">The following examples show how you can use the tracing information:</span></span>
+<span data-ttu-id="94acc-105">Wenn Sie Ablaufverfolgung aktivieren, können Sie Informationen zu Faktoren anzeigen, die dem Ergebnis der Auflösung eines bestimmten Auftrags beitrugen.</span><span class="sxs-lookup"><span data-stu-id="94acc-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="94acc-106">Nachfolgend finden Sie Beispiele dafür, wie die Ablaufverfolgungsinformationen verwendet werden können:</span><span class="sxs-lookup"><span data-stu-id="94acc-106">The following examples show how you can use the tracing information:</span></span>
 
--   <span data-ttu-id="3b3a3-107">Hier können Sie Zuordnungen zwischen den Aktivitäten zu Bestellvorschlägen anzeigen, um die Lieferkette und die Lagerreservierungen zu optimieren.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
--   <span data-ttu-id="3b3a3-108">Hier können Sie Zuordnungen zu den Aufträgen anzeigen, die bereits genehmigt wurden.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="3b3a3-109">Sie können abgeleitete Anforderungen schwerpunktmäßig automatisch umwandeln, und dann die Aufträge genauer priorisieren.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
--   <span data-ttu-id="3b3a3-110">Simulieren Sie Planungsergebnisse, um zu bestimmen, ob die Planungsparameter optimal sind.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
--   <span data-ttu-id="3b3a3-111">Stellen Sie fest, wie Informationen wie Produktionsdatumsangaben, Mengen und Prioritäten für einen Auftrag bestimmt wurden.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
+-   <span data-ttu-id="94acc-107">Hier können Sie Zuordnungen zwischen den Aktivitäten zu Bestellvorschlägen anzeigen, um die Lieferkette und die Lagerreservierungen zu optimieren.</span><span class="sxs-lookup"><span data-stu-id="94acc-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
+-   <span data-ttu-id="94acc-108">Hier können Sie Zuordnungen zu den Aufträgen anzeigen, die bereits genehmigt wurden.</span><span class="sxs-lookup"><span data-stu-id="94acc-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="94acc-109">Sie können abgeleitete Anforderungen schwerpunktmäßig automatisch umwandeln, und dann die Aufträge genauer priorisieren.</span><span class="sxs-lookup"><span data-stu-id="94acc-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
+-   <span data-ttu-id="94acc-110">Simulieren Sie Planungsergebnisse, um zu bestimmen, ob die Planungsparameter optimal sind.</span><span class="sxs-lookup"><span data-stu-id="94acc-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
+-   <span data-ttu-id="94acc-111">Stellen Sie fest, wie Informationen wie Produktionsdatumsangaben, Mengen und Prioritäten für einen Auftrag bestimmt wurden.</span><span class="sxs-lookup"><span data-stu-id="94acc-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
 
-<span data-ttu-id="3b3a3-112">Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten Auftrag anzeigen.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="3b3a3-113">Auf der Seite **Auflösung** sind auf der Registerkarte **Erklärung** im oberen Bereich Nachverfolgungsinformationen verfügbar.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="3b3a3-114">Ablaufverfolgung tritt auf, wenn Sie einen Auftrag auflösen.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="3b3a3-115">Um die Verfolgung für den Bestellvorschlag zu starten, klicken Sie auf **Aktualisieren** und wählen Sie dann das Kontrollkästchen **Nachverfolgung aktivieren**.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="3b3a3-116">Sie können das Feld **Text suchen** verwenden, um den Datensatz für spezifische Informationen zu suchen.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="3b3a3-117">Suchergebnisse werden in der Struktur hervorgehoben.</span><span class="sxs-lookup"><span data-stu-id="3b3a3-117">Search results are highlighted in the tree.</span></span>
+<span data-ttu-id="94acc-112">Sie können Details zu Verfügbarkeit und Aktivitäten für einen ausgewählten Auftrag anzeigen.</span><span class="sxs-lookup"><span data-stu-id="94acc-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="94acc-113">Auf der Seite **Auflösung** sind auf der Registerkarte **Erklärung** im oberen Bereich Nachverfolgungsinformationen verfügbar.</span><span class="sxs-lookup"><span data-stu-id="94acc-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="94acc-114">Ablaufverfolgung tritt auf, wenn Sie einen Auftrag auflösen.</span><span class="sxs-lookup"><span data-stu-id="94acc-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="94acc-115">Um die Verfolgung für den Bestellvorschlag zu starten, klicken Sie auf **Aktualisieren** und wählen Sie dann das Kontrollkästchen **Nachverfolgung aktivieren**.</span><span class="sxs-lookup"><span data-stu-id="94acc-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="94acc-116">Sie können das Feld **Text suchen** verwenden, um den Datensatz für spezifische Informationen zu suchen.</span><span class="sxs-lookup"><span data-stu-id="94acc-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="94acc-117">Suchergebnisse werden in der Struktur hervorgehoben.</span><span class="sxs-lookup"><span data-stu-id="94acc-117">Search results are highlighted in the tree.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="3b3a3-118">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="3b3a3-118">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="94acc-118">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="94acc-118">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="3b3a3-119">Hauptpläne – Übersicht</span><span class="sxs-lookup"><span data-stu-id="3b3a3-119">Master plans overview</span></span>](master-plans.md)
+[<span data-ttu-id="94acc-119">Hauptpläne – Übersicht</span><span class="sxs-lookup"><span data-stu-id="94acc-119">Master plans overview</span></span>](master-plans.md)
 
 
 
