@@ -2,7 +2,7 @@
 title: Automatische Frachtabstimmung einrichten
 description: Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingerichtet werden.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,65 +10,65 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7551805b7b942b042a0f0f8d2ce408d0bac19d06
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: f8fc4ad5396446aa9f818e237efb06180d398f08
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146255"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3214940"
 ---
-# <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="f2822-103">Automatische Frachtabstimmung einrichten</span><span class="sxs-lookup"><span data-stu-id="f2822-103">Set up automatic freight reconciliation</span></span>
+# <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="515b7-103">Automatische Frachtabstimmung einrichten</span><span class="sxs-lookup"><span data-stu-id="515b7-103">Set up automatic freight reconciliation</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f2822-104">Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="f2822-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="f2822-105">Dies wird normalerweise von einer Lagerortverwaltung erfolgt.</span><span class="sxs-lookup"><span data-stu-id="f2822-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="f2822-106">Sie können diese Prozedur im Demodatunternehmen USMF verwenden.</span><span class="sxs-lookup"><span data-stu-id="f2822-106">You can use this procedure in demo data company USMF.</span></span>
+<span data-ttu-id="515b7-104">Dieses Verfahren zeigt, wie Daten für die automatische Frachtabstimmung eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="515b7-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="515b7-105">Dies wird normalerweise von einer Lagerortverwaltung erfolgt.</span><span class="sxs-lookup"><span data-stu-id="515b7-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="515b7-106">Sie können diese Prozedur im Demodatunternehmen USMF verwenden.</span><span class="sxs-lookup"><span data-stu-id="515b7-106">You can use this procedure in demo data company USMF.</span></span>
 
 
-## <a name="set-up-the-freight-bill-type"></a><span data-ttu-id="f2822-107">Frachtbrieftyp einrichten</span><span class="sxs-lookup"><span data-stu-id="f2822-107">Set up the freight bill type</span></span>
-1. <span data-ttu-id="f2822-108">Wechseln Sie zu "Transportverwaltung" > "Einrichtung" > "Frachtabstimmung" > "Frachtbrieftyp".</span><span class="sxs-lookup"><span data-stu-id="f2822-108">Go to Transportation management > Setup > Freight reconciliation > Freight bill type.</span></span>
-    * <span data-ttu-id="f2822-109">Der Frachtbrieftyp definiert, wie Frachtbriefe und Spediteursrechnungen abgeglichen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="f2822-109">The freight bill type defines how freight bills and carrier invoices  should be matched.</span></span>  
-2. <span data-ttu-id="f2822-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="f2822-110">Click New.</span></span>
-3. <span data-ttu-id="f2822-111">Geben Sie im Feld "Frachtbrieftyp" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="f2822-111">In the Freight bill type field, type a value.</span></span>
-4. <span data-ttu-id="f2822-112">Geben Sie im Feld "Modulklasse" den Typ 'Microsoft.Dynamics.Ax.Tms.dll' ein.</span><span class="sxs-lookup"><span data-stu-id="f2822-112">In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.dll'.</span></span>
-    * <span data-ttu-id="f2822-113">Dies ist die Standardtransportverwaltungs-Zuordnungsmodul-Codebibliothek.</span><span class="sxs-lookup"><span data-stu-id="f2822-113">This is the standard Transportation management matching engine code library.</span></span>  
-5. <span data-ttu-id="f2822-114">Geben Sie im Feld "Modulklasse" den Typ 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer' ein.</span><span class="sxs-lookup"><span data-stu-id="f2822-114">In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.</span></span>
-    * <span data-ttu-id="f2822-115">Dies ist die Standardtransportverwaltungs-Zuordnungsmodul-Klasse.</span><span class="sxs-lookup"><span data-stu-id="f2822-115">This is the standard Transportation management matching engine class.</span></span>  
-6. <span data-ttu-id="f2822-116">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="f2822-116">Click New.</span></span>
-7. <span data-ttu-id="f2822-117">Wählen Sie im Feld "Beschreibung" den Wert aus, der auf dem Frachtbrief und der Spediteursrechnung übereinstimmen sollten.</span><span class="sxs-lookup"><span data-stu-id="f2822-117">In the Description field, choose the value that should match on the freight bill and the carrier invoice.</span></span>  
-8. <span data-ttu-id="f2822-118">Wählen Sie "Ja" im Feld "Abgleich erforderlich" aus.</span><span class="sxs-lookup"><span data-stu-id="f2822-118">In the Match required field, select 'Yes'.</span></span>
-    * <span data-ttu-id="f2822-119">Wenn Sie dieses Feld auf "Ja" festgelegt haben, heißt dies, dass der Wert, der im Feld "Beschreibung" ausgewählt ist, dem Frachtbrief und der Spediteursrechnung entsprechen muss.</span><span class="sxs-lookup"><span data-stu-id="f2822-119">If you set this field to Yes this means that the value selected in the Description field needs to match on both the freight bill and the carrier invoice.</span></span> <span data-ttu-id="f2822-120">Wenn Sie es auf "Nein" festlegen, kann das Feld für einen der Werte leer sein.</span><span class="sxs-lookup"><span data-stu-id="f2822-120">If you set it to No, the field can be blank on one of these.</span></span>  
-9. <span data-ttu-id="f2822-121">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="f2822-121">Click Save.</span></span>
+## <a name="set-up-the-freight-bill-type"></a><span data-ttu-id="515b7-107">Frachtbrieftyp einrichten</span><span class="sxs-lookup"><span data-stu-id="515b7-107">Set up the freight bill type</span></span>
+1. <span data-ttu-id="515b7-108">Wechseln Sie zu "Transportverwaltung" > "Einrichtung" > "Frachtabstimmung" > "Frachtbrieftyp".</span><span class="sxs-lookup"><span data-stu-id="515b7-108">Go to Transportation management > Setup > Freight reconciliation > Freight bill type.</span></span>
+    * <span data-ttu-id="515b7-109">Der Frachtbrieftyp definiert, wie Frachtbriefe und Spediteursrechnungen abgeglichen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="515b7-109">The freight bill type defines how freight bills and carrier invoices  should be matched.</span></span>  
+2. <span data-ttu-id="515b7-110">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="515b7-110">Click New.</span></span>
+3. <span data-ttu-id="515b7-111">Geben Sie im Feld "Frachtbrieftyp" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="515b7-111">In the Freight bill type field, type a value.</span></span>
+4. <span data-ttu-id="515b7-112">Geben Sie im Feld "Modulklasse" den Typ 'Microsoft.Dynamics.Ax.Tms.dll' ein.</span><span class="sxs-lookup"><span data-stu-id="515b7-112">In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.dll'.</span></span>
+    * <span data-ttu-id="515b7-113">Dies ist die Standardtransportverwaltungs-Zuordnungsmodul-Codebibliothek.</span><span class="sxs-lookup"><span data-stu-id="515b7-113">This is the standard Transportation management matching engine code library.</span></span>  
+5. <span data-ttu-id="515b7-114">Geben Sie im Feld "Modulklasse" den Typ 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer' ein.</span><span class="sxs-lookup"><span data-stu-id="515b7-114">In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.</span></span>
+    * <span data-ttu-id="515b7-115">Dies ist die Standardtransportverwaltungs-Zuordnungsmodul-Klasse.</span><span class="sxs-lookup"><span data-stu-id="515b7-115">This is the standard Transportation management matching engine class.</span></span>  
+6. <span data-ttu-id="515b7-116">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="515b7-116">Click New.</span></span>
+7. <span data-ttu-id="515b7-117">Wählen Sie im Feld "Beschreibung" den Wert aus, der auf dem Frachtbrief und der Spediteursrechnung übereinstimmen sollten.</span><span class="sxs-lookup"><span data-stu-id="515b7-117">In the Description field, choose the value that should match on the freight bill and the carrier invoice.</span></span>  
+8. <span data-ttu-id="515b7-118">Wählen Sie "Ja" im Feld "Abgleich erforderlich" aus.</span><span class="sxs-lookup"><span data-stu-id="515b7-118">In the Match required field, select 'Yes'.</span></span>
+    * <span data-ttu-id="515b7-119">Wenn Sie dieses Feld auf "Ja" festgelegt haben, heißt dies, dass der Wert, der im Feld "Beschreibung" ausgewählt ist, dem Frachtbrief und der Spediteursrechnung entsprechen muss.</span><span class="sxs-lookup"><span data-stu-id="515b7-119">If you set this field to Yes this means that the value selected in the Description field needs to match on both the freight bill and the carrier invoice.</span></span> <span data-ttu-id="515b7-120">Wenn Sie es auf "Nein" festlegen, kann das Feld für einen der Werte leer sein.</span><span class="sxs-lookup"><span data-stu-id="515b7-120">If you set it to No, the field can be blank on one of these.</span></span>  
+9. <span data-ttu-id="515b7-121">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="515b7-121">Click Save.</span></span>
 
-## <a name="set-up-the-freight-bill-type-assignment"></a><span data-ttu-id="f2822-122">Frachtbrieftypzuweisung einrichten</span><span class="sxs-lookup"><span data-stu-id="f2822-122">Set up the freight bill type assignment</span></span>
-1. <span data-ttu-id="f2822-123">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f2822-123">Close the page.</span></span>
-2. <span data-ttu-id="f2822-124">Wechseln Sie zu "Transportverwaltung" > "Einrichtung" > "Frachtabstimmung" > "Frachtbrieftyp-Zuweisungen".</span><span class="sxs-lookup"><span data-stu-id="f2822-124">Go to Transportation management > Setup > Freight reconciliation > Freight bill type assignments.</span></span>
-    * <span data-ttu-id="f2822-125">Die Frachtbrieftyp-Zuweisung wird verwendet, um anzugeben, welcher Frachtbrieftyp für einen bestimmten Spediteur verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="f2822-125">The freight bill type assignment is used to specify which freight bill type is used for a particular carrier.</span></span>   
-3. <span data-ttu-id="f2822-126">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="f2822-126">Click New.</span></span>
-4. <span data-ttu-id="f2822-127">Geben Sie im Feld 'Modus' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="f2822-127">In the Mode field, enter or select a value.</span></span>
-5. <span data-ttu-id="f2822-128">Geben Sie im Feld 'Spediteur' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="f2822-128">In the Shipping carrier field, enter or select a value.</span></span>
-6. <span data-ttu-id="f2822-129">Wählen Sie im Frachtbrieftyp-Feld den Frachtbrieftyp aus, den Sie eben erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="f2822-129">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
-7. <span data-ttu-id="f2822-130">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f2822-130">Close the page.</span></span>
+## <a name="set-up-the-freight-bill-type-assignment"></a><span data-ttu-id="515b7-122">Frachtbrieftypzuweisung einrichten</span><span class="sxs-lookup"><span data-stu-id="515b7-122">Set up the freight bill type assignment</span></span>
+1. <span data-ttu-id="515b7-123">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="515b7-123">Close the page.</span></span>
+2. <span data-ttu-id="515b7-124">Wechseln Sie zu "Transportverwaltung" > "Einrichtung" > "Frachtabstimmung" > "Frachtbrieftyp-Zuweisungen".</span><span class="sxs-lookup"><span data-stu-id="515b7-124">Go to Transportation management > Setup > Freight reconciliation > Freight bill type assignments.</span></span>
+    * <span data-ttu-id="515b7-125">Die Frachtbrieftyp-Zuweisung wird verwendet, um anzugeben, welcher Frachtbrieftyp für einen bestimmten Spediteur verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="515b7-125">The freight bill type assignment is used to specify which freight bill type is used for a particular carrier.</span></span>   
+3. <span data-ttu-id="515b7-126">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="515b7-126">Click New.</span></span>
+4. <span data-ttu-id="515b7-127">Geben Sie im Feld 'Modus' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="515b7-127">In the Mode field, enter or select a value.</span></span>
+5. <span data-ttu-id="515b7-128">Geben Sie im Feld 'Spediteur' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="515b7-128">In the Shipping carrier field, enter or select a value.</span></span>
+6. <span data-ttu-id="515b7-129">Wählen Sie im Frachtbrieftyp-Feld den Frachtbrieftyp aus, den Sie eben erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="515b7-129">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+7. <span data-ttu-id="515b7-130">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="515b7-130">Close the page.</span></span>
 
-## <a name="set-up-the-audit-master"></a><span data-ttu-id="f2822-131">Überwachungsmaster einrichten</span><span class="sxs-lookup"><span data-stu-id="f2822-131">Set up the audit master</span></span>
-1. <span data-ttu-id="f2822-132">Wechseln Sie zu "Transportverwaltung" > "Einrichtung" > "Frachtabstimmung" > "Überwachungsmaster".</span><span class="sxs-lookup"><span data-stu-id="f2822-132">Go to Transportation management > Setup > Freight reconciliation > Audit master.</span></span>
-    * <span data-ttu-id="f2822-133">Der Überwachungsmaster definiert die Toleranzgrenzen für die automatische Frachtabstimmung.</span><span class="sxs-lookup"><span data-stu-id="f2822-133">The audit master defines the tolerance limits for automatic freight reconciliation.</span></span> <span data-ttu-id="f2822-134">Er gibt an, um wie viel die Geldbeträge auf dem Frachtbrief und in der Spediteursrechnung abweichen können, und noch eine Abstimmung zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="f2822-134">It specifies by how much the monetary amounts on the freight bill and the carrier invoice can differ and still allow reconciliation to occur.</span></span> <span data-ttu-id="f2822-135">Er definiert auch, wie Abweichungen behandelt werden.</span><span class="sxs-lookup"><span data-stu-id="f2822-135">It also defines how to handle discrepancies.</span></span>  
-2. <span data-ttu-id="f2822-136">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="f2822-136">Click New.</span></span>
-3. <span data-ttu-id="f2822-137">Geben Sie im Feld "Überwachungsmasterkennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="f2822-137">In the Audit master ID field, type a value.</span></span>
-4. <span data-ttu-id="f2822-138">Wählen Sie im Spediteur-Feld den gleichen Spediteur aus, die Sie eben verwendet haben.</span><span class="sxs-lookup"><span data-stu-id="f2822-138">In the Shipping carrier  field, select the same shipping carrier as you did earlier.</span></span>
-5. <span data-ttu-id="f2822-139">Wählen Sie im Frachtbrieftyp-Feld den Frachtbrieftyp aus, den Sie eben erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="f2822-139">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
-6. <span data-ttu-id="f2822-140">Erweitern Sie den Abschnitt "Toleranz".</span><span class="sxs-lookup"><span data-stu-id="f2822-140">Expand the Tolerance section.</span></span>
-7. <span data-ttu-id="f2822-141">Geben Sie im Feld "Minimale Toleranzstufe" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="f2822-141">In the Minimum tolerance level field, enter a number.</span></span>
-8. <span data-ttu-id="f2822-142">Geben Sie im Feld "Maximale Toleranzstufe" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="f2822-142">In the Maximum tolerance level field, enter a number.</span></span>
-9. <span data-ttu-id="f2822-143">Erweitern Sie den Abschnitt Ergebnis.</span><span class="sxs-lookup"><span data-stu-id="f2822-143">Expand the Result section.</span></span>
-10. <span data-ttu-id="f2822-144">Geben Sie im Feld "Überzahlungs-Ursachencode" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="f2822-144">In the Overpayment reason code field, enter or select a value.</span></span>
-    * <span data-ttu-id="f2822-145">Wenn Geldbeträge auf dem Frachtbrief und der Spediteursrechnung abweichen, enthalten die Über- oder Unterzahlungsursachencodes die Konten, für die die Differenz erfasst werden soll, sofern die Differenz innerhalb der Toleranzebenen ist.</span><span class="sxs-lookup"><span data-stu-id="f2822-145">If the monetary amounts differ on the freight bill and the carrier invoice, the overpayment and underpayment reason codes specify the accounts that the difference should be registered on, as long as the difference is within the tolerance levels.</span></span>  
-11. <span data-ttu-id="f2822-146">Geben Sie im Feld "Unterzahlungs-Ursachencode" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="f2822-146">In the Underpayment reason code field, enter or select a value.</span></span>
-12. <span data-ttu-id="f2822-147">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f2822-147">Close the page.</span></span>
+## <a name="set-up-the-audit-master"></a><span data-ttu-id="515b7-131">Überwachungsmaster einrichten</span><span class="sxs-lookup"><span data-stu-id="515b7-131">Set up the audit master</span></span>
+1. <span data-ttu-id="515b7-132">Wechseln Sie zu "Transportverwaltung" > "Einrichtung" > "Frachtabstimmung" > "Überwachungsmaster".</span><span class="sxs-lookup"><span data-stu-id="515b7-132">Go to Transportation management > Setup > Freight reconciliation > Audit master.</span></span>
+    * <span data-ttu-id="515b7-133">Der Überwachungsmaster definiert die Toleranzgrenzen für die automatische Frachtabstimmung.</span><span class="sxs-lookup"><span data-stu-id="515b7-133">The audit master defines the tolerance limits for automatic freight reconciliation.</span></span> <span data-ttu-id="515b7-134">Er gibt an, um wie viel die Geldbeträge auf dem Frachtbrief und in der Spediteursrechnung abweichen können, und noch eine Abstimmung zuzulassen.</span><span class="sxs-lookup"><span data-stu-id="515b7-134">It specifies by how much the monetary amounts on the freight bill and the carrier invoice can differ and still allow reconciliation to occur.</span></span> <span data-ttu-id="515b7-135">Er definiert auch, wie Abweichungen behandelt werden.</span><span class="sxs-lookup"><span data-stu-id="515b7-135">It also defines how to handle discrepancies.</span></span>  
+2. <span data-ttu-id="515b7-136">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="515b7-136">Click New.</span></span>
+3. <span data-ttu-id="515b7-137">Geben Sie im Feld "Überwachungsmasterkennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="515b7-137">In the Audit master ID field, type a value.</span></span>
+4. <span data-ttu-id="515b7-138">Wählen Sie im Spediteur-Feld den gleichen Spediteur aus, die Sie eben verwendet haben.</span><span class="sxs-lookup"><span data-stu-id="515b7-138">In the Shipping carrier  field, select the same shipping carrier as you did earlier.</span></span>
+5. <span data-ttu-id="515b7-139">Wählen Sie im Frachtbrieftyp-Feld den Frachtbrieftyp aus, den Sie eben erstellt haben.</span><span class="sxs-lookup"><span data-stu-id="515b7-139">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+6. <span data-ttu-id="515b7-140">Erweitern Sie den Abschnitt "Toleranz".</span><span class="sxs-lookup"><span data-stu-id="515b7-140">Expand the Tolerance section.</span></span>
+7. <span data-ttu-id="515b7-141">Geben Sie im Feld "Minimale Toleranzstufe" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="515b7-141">In the Minimum tolerance level field, enter a number.</span></span>
+8. <span data-ttu-id="515b7-142">Geben Sie im Feld "Maximale Toleranzstufe" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="515b7-142">In the Maximum tolerance level field, enter a number.</span></span>
+9. <span data-ttu-id="515b7-143">Erweitern Sie den Abschnitt Ergebnis.</span><span class="sxs-lookup"><span data-stu-id="515b7-143">Expand the Result section.</span></span>
+10. <span data-ttu-id="515b7-144">Geben Sie im Feld "Überzahlungs-Ursachencode" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="515b7-144">In the Overpayment reason code field, enter or select a value.</span></span>
+    * <span data-ttu-id="515b7-145">Wenn Geldbeträge auf dem Frachtbrief und der Spediteursrechnung abweichen, enthalten die Über- oder Unterzahlungsursachencodes die Konten, für die die Differenz erfasst werden soll, sofern die Differenz innerhalb der Toleranzebenen ist.</span><span class="sxs-lookup"><span data-stu-id="515b7-145">If the monetary amounts differ on the freight bill and the carrier invoice, the overpayment and underpayment reason codes specify the accounts that the difference should be registered on, as long as the difference is within the tolerance levels.</span></span>  
+11. <span data-ttu-id="515b7-146">Geben Sie im Feld "Unterzahlungs-Ursachencode" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="515b7-146">In the Underpayment reason code field, enter or select a value.</span></span>
+12. <span data-ttu-id="515b7-147">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="515b7-147">Close the page.</span></span>
 

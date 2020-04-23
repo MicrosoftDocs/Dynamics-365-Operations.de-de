@@ -2,7 +2,7 @@
 title: Erstellen einer Vorlagenstückliste
 description: Eine Vorlagenstückliste kann auf viele Arten erstellt werden.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,95 +18,95 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89c5d45ac27a8678c51fb63c0326c2802a094596
-ms.sourcegitcommit: 9d4c7edd0ae2053c37c7d81cdd180b16bf3a9d3b
+ms.openlocfilehash: 815b6b726e9a76a9294995bc5689b030cf623ec0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "1566586"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3202582"
 ---
-# <a name="create-a-template-bom"></a><span data-ttu-id="7771b-103">Erstellen einer Vorlagenstückliste</span><span class="sxs-lookup"><span data-stu-id="7771b-103">Create a template BOM</span></span>   
+# <a name="create-a-template-bom"></a><span data-ttu-id="4b6f2-103">Erstellen einer Vorlagenstückliste</span><span class="sxs-lookup"><span data-stu-id="4b6f2-103">Create a template BOM</span></span>   
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="7771b-104">Eine Vorlagenstückliste kann auf folgende Arten erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="7771b-104">You can create a template BOM by using any of the following methods.</span></span> <span data-ttu-id="7771b-105">Bei allen Verfahren gilt: Die Felder **Von Datum** und **Bis datum** sind optional und nur zu Informationszwecken vorhanden.</span><span class="sxs-lookup"><span data-stu-id="7771b-105">For all methods, the **From date** and **To date** fields are optional and for information only.</span></span>
+<span data-ttu-id="4b6f2-104">Eine Vorlagenstückliste kann auf folgende Arten erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-104">You can create a template BOM by using any of the following methods.</span></span> <span data-ttu-id="4b6f2-105">Bei allen Verfahren gilt: Die Felder **Von Datum** und **Bis datum** sind optional und nur zu Informationszwecken vorhanden.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-105">For all methods, the **From date** and **To date** fields are optional and for information only.</span></span>
 
-## <a name="create-a-template-bom-manually"></a><span data-ttu-id="7771b-106">Manuelles Erstellen einer Vorlagenstückliste</span><span class="sxs-lookup"><span data-stu-id="7771b-106">Create a template BOM manually</span></span>
+## <a name="create-a-template-bom-manually"></a><span data-ttu-id="4b6f2-106">Manuelles Erstellen einer Vorlagenstückliste</span><span class="sxs-lookup"><span data-stu-id="4b6f2-106">Create a template BOM manually</span></span>
 
-1.  <span data-ttu-id="7771b-107">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="7771b-107">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="4b6f2-107">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-107">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="7771b-108">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7771b-108">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="4b6f2-108">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-108">Press CTRL+N to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="7771b-109">Wählen Sie unter **Stücklistenpositionen aus Referenz kopieren** die Option **Manuell** aus.</span><span class="sxs-lookup"><span data-stu-id="7771b-109">Under **Copy BOM lines from reference**, select the **Manual** option.</span></span>
+3.  <span data-ttu-id="4b6f2-109">Wählen Sie unter **Stücklistenpositionen aus Referenz kopieren** die Option **Manuell** aus.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-109">Under **Copy BOM lines from reference**, select the **Manual** option.</span></span>
 
-4.  <span data-ttu-id="7771b-110">Geben Sie im Feld **Artikelnummer** einen Artikel des Typs **Stückliste** ein.</span><span class="sxs-lookup"><span data-stu-id="7771b-110">In the **Item number** field, enter an item of the type **BOM**.</span></span>
+4.  <span data-ttu-id="4b6f2-110">Geben Sie im Feld **Artikelnummer** einen Artikel des Typs **Stückliste** ein.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-110">In the **Item number** field, enter an item of the type **BOM**.</span></span>
 
-5.  <span data-ttu-id="7771b-111">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="7771b-111">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="4b6f2-111">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-111">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="7771b-112">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="7771b-112">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="4b6f2-112">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-112">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="7771b-113">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7771b-113">Click **OK**.</span></span>
+7.  <span data-ttu-id="4b6f2-113">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-113">Click **OK**.</span></span>
 
-<span data-ttu-id="7771b-114">Eine neue leere Vorlagenstückliste wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="7771b-114">A new, blank template BOM is created.</span></span>
+<span data-ttu-id="4b6f2-114">Eine neue leere Vorlagenstückliste wird erstellt.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-114">A new, blank template BOM is created.</span></span>
 
-## <a name="create-a-template-bom-based-on-another-template-bom"></a><span data-ttu-id="7771b-115">Erstellen einer Vorlagenstückliste auf Basis einer anderen Vorlagenstückliste</span><span class="sxs-lookup"><span data-stu-id="7771b-115">Create a template BOM based on another template BOM</span></span>
+## <a name="create-a-template-bom-based-on-another-template-bom"></a><span data-ttu-id="4b6f2-115">Erstellen einer Vorlagenstückliste auf Basis einer anderen Vorlagenstückliste</span><span class="sxs-lookup"><span data-stu-id="4b6f2-115">Create a template BOM based on another template BOM</span></span>
 
-1.  <span data-ttu-id="7771b-116">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="7771b-116">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="4b6f2-116">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-116">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="7771b-117">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7771b-117">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="4b6f2-117">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-117">Press CTRL+N to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="7771b-118">Wählen Sie unter **Stücklistenpositionen aus Referenz kopieren** die Option **Vorlagenstückliste** aus.</span><span class="sxs-lookup"><span data-stu-id="7771b-118">Under **Copy BOM lines from reference**, select the **Template BOM** option.</span></span>
+3.  <span data-ttu-id="4b6f2-118">Wählen Sie unter **Stücklistenpositionen aus Referenz kopieren** die Option **Vorlagenstückliste** aus.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-118">Under **Copy BOM lines from reference**, select the **Template BOM** option.</span></span>
 
-4.  <span data-ttu-id="7771b-119">Wählen Sie im Feld **Referenznummer** eine vorhandene Vorlagenstückliste aus, die in die neue Vorlagenstückliste kopiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="7771b-119">In the **Reference number** field, select an existing template BOM to copy to your new template BOM.</span></span>
+4.  <span data-ttu-id="4b6f2-119">Wählen Sie im Feld **Referenznummer** eine vorhandene Vorlagenstückliste aus, die in die neue Vorlagenstückliste kopiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-119">In the **Reference number** field, select an existing template BOM to copy to your new template BOM.</span></span>
 
-5.  <span data-ttu-id="7771b-120">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="7771b-120">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="4b6f2-120">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-120">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="7771b-121">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="7771b-121">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="4b6f2-121">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-121">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="7771b-122">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7771b-122">Click **OK**.</span></span>
+7.  <span data-ttu-id="4b6f2-122">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-122">Click **OK**.</span></span>
 
-<span data-ttu-id="7771b-123">Eine neue Vorlagenstückliste wird erstellt. Diese enthält die gleichen Positionen wie die ursprüngliche Vorlagenstückliste.</span><span class="sxs-lookup"><span data-stu-id="7771b-123">A new template BOM is created by using lines that correspond to the lines in the original template BOM.</span></span>
+<span data-ttu-id="4b6f2-123">Eine neue Vorlagenstückliste wird erstellt. Diese enthält die gleichen Positionen wie die ursprüngliche Vorlagenstückliste.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-123">A new template BOM is created by using lines that correspond to the lines in the original template BOM.</span></span>
 
-## <a name="create-a-template-bom-based-on-an-item-bom"></a><span data-ttu-id="7771b-124">Erstellen einer Vorlagenstückliste auf Basis einer Artikelstückliste</span><span class="sxs-lookup"><span data-stu-id="7771b-124">Create a template BOM based on an item BOM</span></span>
+## <a name="create-a-template-bom-based-on-an-item-bom"></a><span data-ttu-id="4b6f2-124">Erstellen einer Vorlagenstückliste auf Basis einer Artikelstückliste</span><span class="sxs-lookup"><span data-stu-id="4b6f2-124">Create a template BOM based on an item BOM</span></span>
 
-1.  <span data-ttu-id="7771b-125">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="7771b-125">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="4b6f2-125">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-125">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="7771b-126">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7771b-126">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="4b6f2-126">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-126">Press CTRL+N to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="7771b-127">Wählen Sie unter die **Stücklistenpositionen aus Referenz kopieren** **Stückliste** aus.</span><span class="sxs-lookup"><span data-stu-id="7771b-127">Under **Copy BOM lines from reference**, select **BOM**.</span></span>
+3.  <span data-ttu-id="4b6f2-127">Wählen Sie unter die **Stücklistenpositionen aus Referenz kopieren** **Stückliste** aus.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-127">Under **Copy BOM lines from reference**, select **BOM**.</span></span>
 
-4.  <span data-ttu-id="7771b-128">Wählen Sie im Feld **Referenznummer** eine Stücklistenversion wählen Sie aus.</span><span class="sxs-lookup"><span data-stu-id="7771b-128">In the **Reference number** field, select a BOM version.</span></span> <span data-ttu-id="7771b-129">Ein Artikel vom Typ "Stückliste" wird in das Feld **Artikelnummer** kopiert.</span><span class="sxs-lookup"><span data-stu-id="7771b-129">An item of the type BOM is copied to the **Item number**.</span></span>
+4.  <span data-ttu-id="4b6f2-128">Wählen Sie im Feld **Referenznummer** eine Stücklistenversion wählen Sie aus.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-128">In the **Reference number** field, select a BOM version.</span></span> <span data-ttu-id="4b6f2-129">Ein Artikel vom Typ "Stückliste" wird in das Feld **Artikelnummer** kopiert.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-129">An item of the type BOM is copied to the **Item number**.</span></span>
 
-5.  <span data-ttu-id="7771b-130">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="7771b-130">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="4b6f2-130">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-130">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="7771b-131">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="7771b-131">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="4b6f2-131">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-131">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="7771b-132">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7771b-132">Click **OK**.</span></span>
+7.  <span data-ttu-id="4b6f2-132">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-132">Click **OK**.</span></span>
 
-<span data-ttu-id="7771b-133">Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, die auch in der unter **Stücklisten** aufgeführten Stückliste enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="7771b-133">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **Bills of materials**.</span></span>
+<span data-ttu-id="4b6f2-133">Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, die auch in der unter **Stücklisten** aufgeführten Stückliste enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-133">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **Bills of materials**.</span></span>
 
-## <a name="create-a-template-bom-based-on-a-production-bom"></a><span data-ttu-id="7771b-134">Erstellen einer Vorlagenstückliste auf Basis einer Produktionsstückliste</span><span class="sxs-lookup"><span data-stu-id="7771b-134">Create a template BOM based on a production BOM</span></span>
+## <a name="create-a-template-bom-based-on-a-production-bom"></a><span data-ttu-id="4b6f2-134">Erstellen einer Vorlagenstückliste auf Basis einer Produktionsstückliste</span><span class="sxs-lookup"><span data-stu-id="4b6f2-134">Create a template BOM based on a production BOM</span></span>
 
-1.  <span data-ttu-id="7771b-135">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="7771b-135">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
+1.  <span data-ttu-id="4b6f2-135">Klicken Sie auf **Serviceverwaltung** \> **Einstellungen** \> **Serviceobjekte** \> **Vorlagenstücklisten**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-135">Click **Service management** \> **Setup** \> **Service objects** \> **Template BOMs**.</span></span>
 
-2.  <span data-ttu-id="7771b-136">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="7771b-136">Press CTRL+N to open the **Create template BOM** form.</span></span>
+2.  <span data-ttu-id="4b6f2-136">Drücken Sie STRG+N, um das Formular **Vorlagenstückliste erstellen** zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-136">Press CTRL+N to open the **Create template BOM** form.</span></span>
 
-3.  <span data-ttu-id="7771b-137">Wählen Sie unter die **Stücklistenpositionen aus Referenz kopieren** **Produktion** aus.</span><span class="sxs-lookup"><span data-stu-id="7771b-137">Under **Copy BOM lines from reference**, select **Production**.</span></span>
+3.  <span data-ttu-id="4b6f2-137">Wählen Sie unter die **Stücklistenpositionen aus Referenz kopieren** **Produktion** aus.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-137">Under **Copy BOM lines from reference**, select **Production**.</span></span>
 
-4.  <span data-ttu-id="7771b-138">Wählen Sie im Feld **Referenznummer** eine Produktions-Stücklistenversion aus.</span><span class="sxs-lookup"><span data-stu-id="7771b-138">In the **Reference number** field, select a production BOM.</span></span>
+4.  <span data-ttu-id="4b6f2-138">Wählen Sie im Feld **Referenznummer** eine Produktions-Stücklistenversion aus.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-138">In the **Reference number** field, select a production BOM.</span></span>
 
-5.  <span data-ttu-id="7771b-139">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="7771b-139">In the **Name** field, enter a name for the template.</span></span>
+5.  <span data-ttu-id="4b6f2-139">Geben Sie im Feld **Name** einen Namen für die Vorlage.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-139">In the **Name** field, enter a name for the template.</span></span>
 
-6.  <span data-ttu-id="7771b-140">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="7771b-140">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
+6.  <span data-ttu-id="4b6f2-140">Geben Sie mithilfe der Felder **Von Datum** und **Bis Datum** ein Datumsintervall an, in dem die Vorlagenstückliste aktiv sein soll.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-140">In the **From date** and **To date** fields, enter a date interval in which the template BOM is active.</span></span>
 
-7.  <span data-ttu-id="7771b-141">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="7771b-141">Click **OK**.</span></span>
+7.  <span data-ttu-id="4b6f2-141">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-141">Click **OK**.</span></span>
 
-<span data-ttu-id="7771b-142">Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, die auch in der unter **Stückliste** aufgeführten Stückliste enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="7771b-142">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.</span></span>
+<span data-ttu-id="4b6f2-142">Eine neue Vorlagenstückliste erstellt. Diese enthält die gleichen Positionen, die auch in der unter **Stückliste** aufgeführten Stückliste enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="4b6f2-142">A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7771b-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7771b-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4b6f2-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4b6f2-143">See also</span></span>
 
-[<span data-ttu-id="7771b-144">Vorlagenstücklisten</span><span class="sxs-lookup"><span data-stu-id="7771b-144">Template BOMs</span></span>](template-boms.md)
+[<span data-ttu-id="4b6f2-144">Vorlagenstücklisten</span><span class="sxs-lookup"><span data-stu-id="4b6f2-144">Template BOMs</span></span>](template-boms.md)
 
   
 

@@ -2,7 +2,7 @@
 title: Einen Kanban-Bearbeitungseinzelvorgang vorbereiten, wenn keine Materialien für die Arbeitsgruppe verfügbar sind
 description: In dieser Prozedur liegt der Schwerpunkt auf dem Vorbereiten eines Kanban-Bearbeitungseinzelvorgangs, wenn einige Materialien nicht für die Arbeitsgruppe verfügbar sind und es daher erforderlich ist, Materialien aus dem Lagerort zu entnehmen.
 author: ChristianRytt
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -10,45 +10,45 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardWorkCell
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f779db14a866cc9a401d15e0666883ba3a828548
-ms.sourcegitcommit: fcb27d6a46cd544feef34f6ec7607bdd46b0c12b
+ms.openlocfilehash: d57df6188aacc2f8a56a7ba91c4ab50a90901a7e
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3146697"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3206905"
 ---
-# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="ca000-103">Einen Kanban-Bearbeitungseinzelvorgang vorbereiten, wenn keine Materialien für die Arbeitsgruppe verfügbar sind</span><span class="sxs-lookup"><span data-stu-id="ca000-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
+# <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a><span data-ttu-id="22d7e-103">Einen Kanban-Bearbeitungseinzelvorgang vorbereiten, wenn keine Materialien für die Arbeitsgruppe verfügbar sind</span><span class="sxs-lookup"><span data-stu-id="22d7e-103">Prepare a process kanban job when materials are not available for the work cell</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ca000-104">In dieser Prozedur liegt der Schwerpunkt auf dem Vorbereiten eines Kanban-Bearbeitungseinzelvorgangs, wenn einige Materialien nicht für die Arbeitsgruppe verfügbar sind und es daher erforderlich ist, Materialien aus dem Lagerort zu entnehmen.</span><span class="sxs-lookup"><span data-stu-id="ca000-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="ca000-105">Das Verfahren "Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn Materialien für die Arbeitsgruppe verfügbar sind" ist für dieses Verfahren vorausgesetzt.</span><span class="sxs-lookup"><span data-stu-id="ca000-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="ca000-106">Diese Prozedur ist für den Maschinenbediener vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="ca000-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="ca000-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="ca000-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="22d7e-104">In dieser Prozedur liegt der Schwerpunkt auf dem Vorbereiten eines Kanban-Bearbeitungseinzelvorgangs, wenn einige Materialien nicht für die Arbeitsgruppe verfügbar sind und es daher erforderlich ist, Materialien aus dem Lagerort zu entnehmen.</span><span class="sxs-lookup"><span data-stu-id="22d7e-104">This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.</span></span> <span data-ttu-id="22d7e-105">Das Verfahren "Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn Materialien für die Arbeitsgruppe verfügbar sind" ist für dieses Verfahren vorausgesetzt.</span><span class="sxs-lookup"><span data-stu-id="22d7e-105">The procedure "Prepare a process kanban job when materials are available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="22d7e-106">Diese Prozedur ist für den Maschinenbediener vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="22d7e-106">This procedure is intended for the machine operator.</span></span> <span data-ttu-id="22d7e-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="22d7e-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="ca000-108">Wechseln Sie zu "Produktionssteuerung" > "Kanban" > "Kanban-Übersicht für Prozesseinzelvorgänge".</span><span class="sxs-lookup"><span data-stu-id="ca000-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
-2. <span data-ttu-id="ca000-109">Klicken Sie im Feld "Arbeitsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="ca000-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="ca000-110">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="ca000-110">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="ca000-111">Wählen Sie die Arbeitsgruppe 1250 aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-111">Select work cell 1250.</span></span>  
-4. <span data-ttu-id="ca000-112">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-112">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ca000-113">Wählen Sie "Kanban 000356" aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-113">Select Kanban 000356.</span></span>  
-5. <span data-ttu-id="ca000-114">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-114">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="ca000-115">Wählen Sie in der Liste die Zeile 4 ab.</span><span class="sxs-lookup"><span data-stu-id="ca000-115">In the list, deselect row 4.</span></span> <span data-ttu-id="ca000-116">Heben Sie in der Liste die Auswahl von Zeile 4 auf, oder wählen Sie Zeile 4 aus, wenn Sie die Aufgabe "Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn Material vorhanden ist" noch nicht abgeschlossen haben.</span><span class="sxs-lookup"><span data-stu-id="ca000-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
-6. <span data-ttu-id="ca000-117">Schalten Sie die Erweiterung des Abschnitts "Kommissionierliste" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-117">Toggle the expansion of the Picking list section.</span></span>
-    * <span data-ttu-id="ca000-118">Das Symbol "Kein Eintrag" im Beschaffungsstatus gibt an, dass 48 EA des Artikels P0002 für die Arbeitsgruppe fehlen.</span><span class="sxs-lookup"><span data-stu-id="ca000-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
+1. <span data-ttu-id="22d7e-108">Wechseln Sie zu "Produktionssteuerung" > "Kanban" > "Kanban-Übersicht für Prozesseinzelvorgänge".</span><span class="sxs-lookup"><span data-stu-id="22d7e-108">Go to Production control > Kanban > Kanban board for process jobs.</span></span>
+2. <span data-ttu-id="22d7e-109">Klicken Sie im Feld "Arbeitsgruppe" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="22d7e-109">In the Work cell field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="22d7e-110">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="22d7e-110">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="22d7e-111">Wählen Sie die Arbeitsgruppe 1250 aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-111">Select work cell 1250.</span></span>  
+4. <span data-ttu-id="22d7e-112">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-112">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="22d7e-113">Wählen Sie "Kanban 000356" aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-113">Select Kanban 000356.</span></span>  
+5. <span data-ttu-id="22d7e-114">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-114">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="22d7e-115">Wählen Sie in der Liste die Zeile 4 ab.</span><span class="sxs-lookup"><span data-stu-id="22d7e-115">In the list, deselect row 4.</span></span> <span data-ttu-id="22d7e-116">Heben Sie in der Liste die Auswahl von Zeile 4 auf, oder wählen Sie Zeile 4 aus, wenn Sie die Aufgabe "Bereiten Sie einen Kanban-Bearbeitungseinzelvorgang vor, wenn Material vorhanden ist" noch nicht abgeschlossen haben.</span><span class="sxs-lookup"><span data-stu-id="22d7e-116">or Select row 4 if you haven't completed the task "Prepare a process kanban job when materials are available."</span></span>  
+6. <span data-ttu-id="22d7e-117">Schalten Sie die Erweiterung des Abschnitts "Kommissionierliste" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-117">Toggle the expansion of the Picking list section.</span></span>
+    * <span data-ttu-id="22d7e-118">Das Symbol "Kein Eintrag" im Beschaffungsstatus gibt an, dass 48 EA des Artikels P0002 für die Arbeitsgruppe fehlen.</span><span class="sxs-lookup"><span data-stu-id="22d7e-118">The No entry icon in the supply status indicates that 48 ea of item P0002 are missing for the work cell.</span></span>  
 
-## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="ca000-119">Übertragen von Materialien zur Arbeitsgruppe</span><span class="sxs-lookup"><span data-stu-id="ca000-119">Transfer materials to work cell</span></span>
-1. <span data-ttu-id="ca000-120">Schalten Sie die Erweiterung des Abschnitts "Umlagerungseinzelvorgänge" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-120">Toggle the expansion of the Transfer jobs section.</span></span>
-2. <span data-ttu-id="ca000-121">Verwenden Sie den Schnellfilter, um im Feld "Artikelnummer" nach dem Wert "P0002" zu filtern.</span><span class="sxs-lookup"><span data-stu-id="ca000-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
-3. <span data-ttu-id="ca000-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="ca000-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="ca000-123">Klicken Sie auf "Start".</span><span class="sxs-lookup"><span data-stu-id="ca000-123">Click Start.</span></span>
-    * <span data-ttu-id="ca000-124">Übertragung läuft.</span><span class="sxs-lookup"><span data-stu-id="ca000-124">Transfer is in progress.</span></span>  
-5. <span data-ttu-id="ca000-125">Klicken Sie auf "Abgeschlossen".</span><span class="sxs-lookup"><span data-stu-id="ca000-125">Click Complete.</span></span>
-    * <span data-ttu-id="ca000-126">Artikel P0002 ist nun in der Kommissionierliste für den Kanban-Einzelvorgang verfügbar.</span><span class="sxs-lookup"><span data-stu-id="ca000-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="ca000-127">Das bedeutet, dass wir das Kanban mit allen obligatorischen Materialien vorbereiten können.</span><span class="sxs-lookup"><span data-stu-id="ca000-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
-6. <span data-ttu-id="ca000-128">Klicken Sie auf "Vorbereiten".</span><span class="sxs-lookup"><span data-stu-id="ca000-128">Click Prepare.</span></span>
-    * <span data-ttu-id="ca000-129">Beachten Sie, dass ein Symbol im Einzelvorgangsstatus angibt, dass der Einzelvorgang nun bereit ist.</span><span class="sxs-lookup"><span data-stu-id="ca000-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
+## <a name="transfer-materials-to-work-cell"></a><span data-ttu-id="22d7e-119">Übertragen von Materialien zur Arbeitsgruppe</span><span class="sxs-lookup"><span data-stu-id="22d7e-119">Transfer materials to work cell</span></span>
+1. <span data-ttu-id="22d7e-120">Schalten Sie die Erweiterung des Abschnitts "Umlagerungseinzelvorgänge" ein/aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-120">Toggle the expansion of the Transfer jobs section.</span></span>
+2. <span data-ttu-id="22d7e-121">Verwenden Sie den Schnellfilter, um im Feld "Artikelnummer" nach dem Wert "P0002" zu filtern.</span><span class="sxs-lookup"><span data-stu-id="22d7e-121">Use the Quick Filter to filter on the Item number field with a value of 'P0002'.</span></span>
+3. <span data-ttu-id="22d7e-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="22d7e-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="22d7e-123">Klicken Sie auf "Start".</span><span class="sxs-lookup"><span data-stu-id="22d7e-123">Click Start.</span></span>
+    * <span data-ttu-id="22d7e-124">Übertragung läuft.</span><span class="sxs-lookup"><span data-stu-id="22d7e-124">Transfer is in progress.</span></span>  
+5. <span data-ttu-id="22d7e-125">Klicken Sie auf "Abgeschlossen".</span><span class="sxs-lookup"><span data-stu-id="22d7e-125">Click Complete.</span></span>
+    * <span data-ttu-id="22d7e-126">Artikel P0002 ist nun in der Kommissionierliste für den Kanban-Einzelvorgang verfügbar.</span><span class="sxs-lookup"><span data-stu-id="22d7e-126">Item P0002 is now available in the picking list for the kanban job.</span></span> <span data-ttu-id="22d7e-127">Das bedeutet, dass wir das Kanban mit allen obligatorischen Materialien vorbereiten können.</span><span class="sxs-lookup"><span data-stu-id="22d7e-127">This means that we can prepare the kanban with all the needed materials.</span></span>  
+6. <span data-ttu-id="22d7e-128">Klicken Sie auf "Vorbereiten".</span><span class="sxs-lookup"><span data-stu-id="22d7e-128">Click Prepare.</span></span>
+    * <span data-ttu-id="22d7e-129">Beachten Sie, dass ein Symbol im Einzelvorgangsstatus angibt, dass der Einzelvorgang nun bereit ist.</span><span class="sxs-lookup"><span data-stu-id="22d7e-129">Notice that an icon in the Job status indicates that the job is now ready.</span></span>  
 
