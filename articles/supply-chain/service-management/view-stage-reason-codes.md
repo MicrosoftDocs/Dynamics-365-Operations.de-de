@@ -2,7 +2,7 @@
 title: Phasenursachencodes anzeigen
 description: Anzeigen und Ändern der Liste der Phasenursachen für einen Serviceauftrag.
 author: ShylaThompson
-manager: AnnBe
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -18,29 +18,29 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d8c2ec55bb9ea400b87ad23a3c514d5c3d5fd8e
-ms.sourcegitcommit: 45f8cea6ac75bd2f4187380546a201c056072c59
+ms.openlocfilehash: d050a1195d67918a725a90d81cfac7af9552b92d
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "1742167"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3206403"
 ---
-# <a name="view-stage-reason-codes"></a><span data-ttu-id="39795-103">Phasenursachencodes anzeigen</span><span class="sxs-lookup"><span data-stu-id="39795-103">View stage reason codes</span></span> 
+# <a name="view-stage-reason-codes"></a><span data-ttu-id="00ae9-103">Phasenursachencodes anzeigen</span><span class="sxs-lookup"><span data-stu-id="00ae9-103">View stage reason codes</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="39795-104">Anzeigen und Ändern der Liste der Phasenursachen für einen Serviceauftrag.</span><span class="sxs-lookup"><span data-stu-id="39795-104">View and modify the list of stage reasons for a service order.</span></span> <span data-ttu-id="39795-105">Verwenden Sie Phasenursachen, um den Grund für den Fortschritt eines Serviceauftrags anzugeben.</span><span class="sxs-lookup"><span data-stu-id="39795-105">Use stage reasons to indicate the reason for the status of a service order.</span></span> <span data-ttu-id="39795-106">So können Sie beispielsweise eine **Storniert**-Phase erstellen, der der Ursachencode **Storniert von Debitor** zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="39795-106">For example, you can create a **Canceled** stage that is assigned a reason code of **Canceled by the customer**.</span></span>
+<span data-ttu-id="00ae9-104">Anzeigen und Ändern der Liste der Phasenursachen für einen Serviceauftrag.</span><span class="sxs-lookup"><span data-stu-id="00ae9-104">View and modify the list of stage reasons for a service order.</span></span> <span data-ttu-id="00ae9-105">Verwenden Sie Phasenursachen, um den Grund für den Fortschritt eines Serviceauftrags anzugeben.</span><span class="sxs-lookup"><span data-stu-id="00ae9-105">Use stage reasons to indicate the reason for the status of a service order.</span></span> <span data-ttu-id="00ae9-106">So können Sie beispielsweise eine **Storniert**-Phase erstellen, der der Ursachencode **Storniert von Debitor** zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="00ae9-106">For example, you can create a **Canceled** stage that is assigned a reason code of **Canceled by the customer**.</span></span>
 
-  - <span data-ttu-id="39795-107">Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.</span><span class="sxs-lookup"><span data-stu-id="39795-107">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="39795-108">Öffnen Sie einen Serviceauftrag.</span><span class="sxs-lookup"><span data-stu-id="39795-108">Open a service order.</span></span>
+  - <span data-ttu-id="00ae9-107">Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.</span><span class="sxs-lookup"><span data-stu-id="00ae9-107">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="00ae9-108">Öffnen Sie einen Serviceauftrag.</span><span class="sxs-lookup"><span data-stu-id="00ae9-108">Open a service order.</span></span>
 
-  - <span data-ttu-id="39795-109">Klicken Sie im Formular **Serviceaufträge** auf den **Aktivitätsbereich**, klicken Sie auf die Registerkarte **Ausführung** klicken Sie auf **Phasenursachen**.</span><span class="sxs-lookup"><span data-stu-id="39795-109">In the **Service orders** form, on the **Action Pane**, on the **Dispatch** tab, click **Stage reasons**.</span></span>
+  - <span data-ttu-id="00ae9-109">Klicken Sie im Formular **Serviceaufträge** auf den **Aktivitätsbereich**, klicken Sie auf die Registerkarte **Ausführung** klicken Sie auf **Phasenursachen**.</span><span class="sxs-lookup"><span data-stu-id="00ae9-109">In the **Service orders** form, on the **Action Pane**, on the **Dispatch** tab, click **Stage reasons**.</span></span>
 
-  - <span data-ttu-id="39795-110">Klicken Sie im Formular **Phasenursachen** auf **Neu**, um einen neuen Phasenursachencode zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="39795-110">On the **Stage reasons** form, click **New** to create a new stage reason code.</span></span>
+  - <span data-ttu-id="00ae9-110">Klicken Sie im Formular **Phasenursachen** auf **Neu**, um einen neuen Phasenursachencode zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="00ae9-110">On the **Stage reasons** form, click **New** to create a new stage reason code.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="39795-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="39795-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="00ae9-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="00ae9-111">See also</span></span>
 
-<span data-ttu-id="39795-112">[Formular "Ursachencodes"](https://technet.microsoft.com/library/aa582897\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="39795-112">[Stage reasons (form)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))</span></span>
+<span data-ttu-id="00ae9-112">[Formular "Ursachencodes"](https://technet.microsoft.com/library/aa582897\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="00ae9-112">[Stage reasons (form)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))</span></span>
 
   
 
