@@ -3,7 +3,7 @@ title: REPLACE EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der REPLACE-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba2590635ba465dae9ea50d3e4da989365548f3b
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 83d5095620a938f1ac4b8428fff9209fda7a7831
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040985"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201065"
 ---
-# <a name="REPLACE">REPLACE EB-Funktion</a>
+# <a name=""></a><a name="REPLACE">REPLACE EB-Funktion</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -69,7 +69,7 @@ Der resultierende Textwert.
 
 Wenn das Argument `regular expression flag` **TRUE** lautet, gibt diese Funktion die angegebene Zeichenfolge zurück, nachdem sie geändert wurde, indem der reguläre Ausdruck angewendet wird, der durch das Argument `pattern` angegeben ist. Der reguläre Ausdruck wird verwendet, um die Zeichen zu finden, die ersetzt werden müssen.
 
-Wenn das Argument `regular expression flag` **FALSE** lautet, verhält sich diese Funktion wie [ÜBERSETZEN](er-functions-text-translate.md). Die Zeichen, die durch das Argument `replacement` angegeben sind, werden verwendet, um Zeichen zu ersetzen, die gefunden werden. 
+Wenn das Argument `regular expression flag` **FALSCH** ist, gibt die angegebene Zeichenfolge nach dem Zeichensatz zurück, der im Argument `pattern` Argument wurden durch Zeichen der ersetzt `replacement`Streit. 
 
 ## <a name="example-1"></a>Beispiel 1
 

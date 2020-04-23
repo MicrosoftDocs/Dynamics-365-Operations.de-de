@@ -3,7 +3,7 @@ title: Geschäftsdokumentverwaltung – Übersicht
 description: Dieses Thema enthält Informationen dazu, wie die Geschäftsdokumentverwaltungsfunktion des ER-Frameworks verwendet wird.
 author: NickSelin
 manager: AnnBe
-ms.date: 01/15/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 11db3ee1e9407febce7731d0888e7a10375a90da
-ms.sourcegitcommit: 66eae22cd99e53fe8e4c6c94945ad8061b69a442
+ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3117336"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258556"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -248,9 +248,18 @@ Gehen Sie folgendermaßen vor, um im Geschäftsdokument-Verwaltungsarbeitsbereic
 1. Melden Sie sich als Benutzer mit Zugriff auf den Geschäftsdokument-Verwaltungsarbeitsbereich an.
 2. Öffnen Sie den Geschäftsdokument-Verwaltungsarbeitsbereich.
 
+Wenn die Funktion **Office-ähnliche Benutzeroberfläche für die Verwaltung von Geschäftsdokumenten** im Arbeitsbereich **Funktionsverwaltung** deaktiviert ist, zeigt der Hauptraster im Arbeitsbereich **Verwaltung von Geschäftsdokumenten** die folgenden Vorlagen:
+
+- Vorlagen, die Ihrem EB-Konfigurationsanbieter gehören (d.h dem Anbieter, der derzeit als aktiv markiert ist im Arbeitsbereich **Elektronische Berichterstattung**). Nachdem Sie eine dieser Vorlagen ausgewählt haben, können Sie **Vorlage bearbeiten** auswählen, um zu beginnen oder die Bearbeitung vorzunehmen.
+- Vorlagen, die Eigentum von anderen EB-Konfigurationsanbietern sind. Nachdem Sie eine dieser Vorlagen ausgewählt haben, können Sie **Neues Dokument** auswählen, um eine Kopie davon zu erstellen, die Ihrem ER-Konfigurationsanbieter gehört. Beginnen Sie dann, die Kopie zu bearbeiten.
+
 ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingTemplate1.png)
 
 Die Registerkarte **Vorlage** zeigt den Inhalt der ausgewählten Vorlage. Wählen Sie die Registerkarte **Details** aus, um Details der ausgewählten Vorlage sowie Details einer ER-Formatkonfiguration dieser Vorlage zu überprüfen. Beachten Sie, dass alle Vorlagen den Status **Veröffentlicht** aufweisen und keine Details in der Spalte **Überarbeitung** enthalten. Das bedeutet, dass diese Vorlagen derzeit nicht bearbeitet werden.
+
+Wenn die Funktion **Office-ähnliche Benutzeroberfläche für die Verwaltung von Geschäftsdokumenten** im Arbeitsbereich **Funktionsverwaltung** aktiviert ist, zeigt der Hauptraster im Arbeitsbereich **Verwaltung von Geschäftsdokumenten** die Vorlagen an, die Ihrem EB-Konfigurationsanbieter gehören (d.h dem Anbieter, der derzeit im Arbeitsbereich **Elektronische Berichterstattung** als aktiv markiert ist). Nachdem Sie eine dieser Vorlagen ausgewählt haben, können Sie **Vorlage bearbeiten** auswählen, um zu beginnen oder die Bearbeitung vorzunehmen.
+
+Wählen Sie diese Option aus, um mit Vorlagen zu arbeiten, die anderen EB-Konfigurationsanbietern gehören. Wählen Sie **Neues Dokument**, um eine Kopie der Vorlage zu erstellen, die Ihrem EB-Anbieter gehört. Sie können dann beginnen, die Kopie zu bearbeiten. Weitere Informationen finden Sie unter [Neue Benutzerdokumentschnittstelle in der Geschäftsdokumentenverwaltung](er-business-document-management-new-template-ui.md).
 
 ### <a name="initiate-editing-templates-owned-by-your-configuration-provider"></a>Starten der Bearbeitung von Vorlagen im Besitz Ihres Konfigurationsanbieters
 

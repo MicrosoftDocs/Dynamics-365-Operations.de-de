@@ -3,7 +3,7 @@ title: Erstellen eines Arbeitszeitkalenders
 description: Definieren Sie einen Arbeitszeitkalender, Feiertage und arbeitsfreie Zeiten in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 641f66c75875cfba51af3753223a070d7cb7dc50
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: dc209b62836011b18362f78b63cdd3fcda884dc3
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009185"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3198026"
 ---
 # <a name="create-a-working-time-calendar"></a>Erstellen eines Arbeitszeitkalenders
 
@@ -68,10 +68,6 @@ Sie können Feiertage und Schließungen separat von einem Arbeitszeitkalender hi
 1. Klicken Sie auf der Seite **Organisationsadministration** auf **Arbeitsfreie Zeit**.
 
 2. Wählen Sie **Neu** und geben Sie einen Namen und den Zeitraum für die arbeitsfreie Zeit ein.
-
-## <a name="leave-and-absence-preview-feature"></a>Vorschaufunktionen für Urlaub und Abwesenheit
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
 
 Wenn Sie die Vorschau für Urlaubs- und Abwesenheitskorrekturen für Feiertage aktiviert haben, verwendet die Personalabteilung Feiertage und Schließungsdaten, um die Anzahl der Tage zu bestimmen, die für die im Kalender registrierten Mitarbeiter angepasst werden müssen.
 

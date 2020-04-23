@@ -2,7 +2,7 @@
 title: Visuelle Zeitplanung für Lean Manufacturing
 description: Dieses Thema enthält Informationen zur Behandlung der Kanban-Zeitplanübersicht, die der Produktionsplaner verwenden kann, um den Produktionsplan für Kanban-Einzelvorgänge zu steuern und zu optimieren.
 author: johanhoffmann
-manager: AnnBe
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 337b6b0b7ec25851f5dc156effad9ff07256a44d
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: a2173084b7ea2e18be7f62f657359f1d03806ebe
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814205"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3210287"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuelle Zeitplanung für Lean Manufacturing
 

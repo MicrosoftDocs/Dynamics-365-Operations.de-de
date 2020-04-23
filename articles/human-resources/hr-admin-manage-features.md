@@ -3,7 +3,7 @@ title: Funktionen verwalten
 description: Erfahren Sie, wie Sie neue Funktionen in Dynamics 365 Human Resources aktivieren oder deaktivieren.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 84ff11e8237ce0669f7f6ac70c5b4411c5d4b466
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009117"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230199"
 ---
 # <a name="manage-features"></a>Funktionen verwalten
 
@@ -50,9 +50,14 @@ Um auf Vorschaufunktionen zugreifen zu können, müssen Sie sie in Ihrer Umgebun
 
 3. Um eine Vorschaufunktion zu aktivieren, wählen Sie sie aus der Liste aus und wählen Sie dann **Aktivieren**. Um eine Vorschaufunktion zu deaktivieren, wählen Sie sie aus der Liste aus und wählen Sie dann **Deaktivieren**.
 
-## <a name="preview-feature-benefits-management"></a>Vorschaufunktion: Vorteilsverwaltung
+## <a name="enable-or-disable-benefits-management"></a>Vorteilsverwaltung aktivieren oder deaktivieren
 
-Die Vorteilsverwaltung ist eine flexible Lösung, die eine Vielzahl von Vorteilsoptionen unterstützt und eine benutzerfreundliche Mitarbeitererfahrung bietet, die Ihre Angebote zeigt. Weitere Informationen zur Konfiguration und Verwendung der Vorteilsverwaltung finden Sie unter [Übersicht über die Vorteilsverwaltung](hr-benefits-management-overview.md).
+Verwenden Sie das gleiche Verfahren, um die Leistungsverwaltung zu aktivieren [Aktivieren oder Deaktivieren der Vorschaufunktionen](hr-admin-manage-features.md?enable-or-disable-preview-features).
+
+> [!IMPORTANT]
+> Sie können die Leistungsverwaltung in einer **Produktions** Umgebung nicht deaktivieren, nachdem Sie diese aktiviert haben. Sie können die Leistungsverwaltung in der **Sandkasten** Umgebungen jedoch deaktivieren.
+
+Weitere Informationen zur Konfiguration und Verwendung der Vorteilsverwaltung finden Sie unter [Übersicht über die Vorteilsverwaltung](hr-benefits-management-overview.md).
 
 Vorteilsverwaltung ersetzt die Funktionalität im Arbeitsbereich **Vorteile**. Wenn Sie die Vorschaufunktion für die Vorteilsverwaltung aktivieren, können Sie im Arbeitsbereich **Vorteile** nicht mehr auf die folgenden Formulare zugreifen:
 
@@ -65,62 +70,23 @@ Vorteilsverwaltung ersetzt die Funktionalität im Arbeitsbereich **Vorteile**. W
 - **Vorteilsberechtigungsrichtlinien**
 - **Berechtigungsereignisse**
 
-Sie können die Informationen in diesen Formularen im schreibgeschützten Modus anzeigen. Wenn Sie die Informationen bearbeiten möchten, müssen Sie zuerst die Vorschaufunktion für die Vorteilsverwaltung deaktivieren.
+Sie können die Informationen in diesen Formularen im schreibgeschützten Modus anzeigen. Wenn Sie die Informationen bearbeiten möchten, müssen Sie zuerst die Vorschaufunktion für die Vorteilsverwaltung deaktivieren (gilt nur für **Sandkasten** Umgebungen).
 
-### <a name="benefits-management-known-issues"></a>Bekannte Probleme bei der Vorteilsverwaltung
+## <a name="enable-or-disable-leave-and-absence"></a>Urlaub und Abwesenheit aktivieren oder deaktivieren
 
-#### <a name="life-events"></a>Lebensereignisse
+Verwenden Sie das gleiche Verfahren, um die Urlaub und Abwesenheiten zu aktivieren [Aktivieren oder Deaktivieren der Vorschaufunktionen](hr-admin-manage-features.md?enable-or-disable-preview-features).
 
-Bei der Verarbeitung von Lebensereignissen erhält der Benutzer eine Fehlermeldung:
+> [!IMPORTANT]
+> Sie können die Funktion **Mehrere Urlaubsarten** in Urlaub und Abwesenheit nicht deaktivieren, nachdem Sie sie aktiviert haben. Dies gilt für beide **Sandkasten** und **Produktios** Umgebungen.
 
-Das Startdatum der Abdeckung muss zwischen *Beginn der Planperiode* und *Ende der Planperiode* liegen. 
+Weitere Informationen zur Vorschau-Funktion von Urlaubs- und Abwesenheitsverwaltung finden Sie unter [Urlaub- und Abwesenheitsvorschaufunktion](hr-leave-and-absence-overview.md?leave-and-absence-preview-features).
 
-Das Lebensereignis wird weiterhin wie erwartet verarbeitet.
-
-#### <a name="eligibility-processing"></a>Verarbeitung von Berechtigungen
-
-Wenn Sie die Berechtigung für Vorteile ausführen, die ein 1,5-faches Gehalt, einen Prozentsatz des Gehalts und ein Pauschalbetrag als Abdeckungsbetrag verwenden, muss das Datum der Vorteilsdetails auf das Mitarbeiterstartdatum in **Beschäftigungshistorie** festgelegt werden, mit geleisteten Arbeitsstunden, Zahlungshäufigkeit und jährlichem Vorteilsgehalt. Wenn für die Arbeitskraft eine feste Vergütung besteht, geben Sie die geleisteten Arbeitsstunden zusammen mit der Zahlungshäufigkeit ein und der jährliche Gehaltsbetrag wird berechnet. Wenn der Mitarbeiter fest angestellt ist, werden die geleisteten Arbeitsstunden nicht benötigt. Wir empfehlen, bei der Erstellung neuer Mitarbeiter zunächst eine feste Vergütung einzugeben. So aktualisieren Sie den Datensatz mit Vorteilsdetails: Navigieren Sie zu **Arbeitskraft > Beschäftigungshistorie > Beschäftigungsdetails**. Passen Sie das Datum an das Startdatum der Arbeitskraft an.
-
-#### <a name="employee-self-service"></a>Mitarbeiter-Self-Service
-
-Mitarbeiter können einen Plan auswählen, für den sie nicht qualifiziert sind, und auschecken. Beispiel: Eine Arbeitskraft hat keine Unterhaltsberechtigten, kann jedoch einen Krankenversicherungsplan mit einer Familienversicherungsoption auswählen.
-
-Der Mitarbeiterbetrag wird bei der Aktualisierung des Abdeckungsbetrags für die Lebensversicherung nicht berechnet. Wenn einem Mitarbeiter beispielsweise eine Lebensversicherung angeboten wird, kann er bis zu 50.000 Euro Versicherungsschutz zu einem Preis von 0,36 Euro pro 1.000 Euro Versicherungsschutz auswählen.  Wenn der Mitarbeiter den Abdeckungsbetrag aktualisiert, bleiben die damit verbundenen Kosten des Mitarbeiters bei Null.
-
-Bei einem Vorteilsplan, der nur eine einzige Auswahl dieses Plantyps zulässt, wird dem Benutzer eine Fehlermeldung angezeigt, wenn er versucht, nach Auswahl eines Plans auf einen Plan zu verzichten. Beispielsweise wählt ein Benutzer einen Krankenversicherungsplan aus und legt ihn in seinen Warenkorb. Der Benutzer wählt dann **Aufheben** für einen anderen Krankenversicherungsplan aus. Der Benutzer erhält eine Fehlermeldung.
-
-## <a name="preview-features-in-leave-and-absence"></a>Vorschaufunktionen in Urlaub und Abwesenheit
-
-Vorschaufunktionen in Urlaub und Abwesenheit enthalten:
-
-- **Urlaubs‑ und Abwesenheitskalender** – die Parameter für Urlaub und Abwesenheit befinden sich nicht mehr unter **Personalverwaltungsparameter**, sondern auf einem neuen Bildschirm namens **Urlaubs‑ und Abwesenheitsparameter**. Der neue Bildschirm enthält eine neue Registerkarte **Kalender**. Diese Vorschau ermöglicht nur eine Teilmenge der Parameter. Sie können den neuen Bildschirm über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** aufrufen. Die Kalender beinhalten:
-  - **Firmenkalender** – zeigt alle Freizeitanforderungen der Mitarbeiter an. Menschen mit der Rolle **Personalverwaltung** können auf diesen Kalender über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** zugreifen.
-  - **Manager-Teamkalender** – zeigt alle Freizeitanforderungen von Mitarbeitern an. Manager können über die Registerkarte **Mein Team** im Mitarbeiter-Self-Service unter **Urlaub und Abwesenheit** auf den Kalender zugreifen. 
-
-- **Urlaubs‑ und Abwesenheitskalender** – Urlaubstypen enthalten eine neue Option **Feiertag**, die in Verbindung mit dem Arbeitszeitkalender verwendet wird. Tage, die durch Feiertage und Schließungen definiert sind, werden jetzt als **Feiertag** bezeichnet, wenn Arbeitstage generiert werden. Bei der Verarbeitung von Rückstellungen werden die dem Kalender zugewiesenen Mitarbeiter angepasst, um die auf einen Arbeitstag fallenden Feiertage zu berücksichtigen.
-
-- **Überwachen von Urlaubsrückstellung** – In einem neuen Bildschirm können Sie überprüfen, wann Rückstellungen verarbeitet und gelöscht wurden, sowohl von allen Mitarbeitern als auch von einzelnen Mitarbeitern. Sie können diesen neuen Bildschirm über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** aufrufen.
-
-- **Löschen von Urlaubsrückstellung** – Sie können jetzt Rückstellungsdatensätze für bestimmte Urlaubspläne löschen. Sie können diese neue Option über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** aufrufen. Für einzelne Mitarbeiter erscheint diese Option in der Gruppierung **Urlaub und Abwesenheit** im Mitarbeiterprofil. 
-
-- **Runden von Urlaubsrückstellung** – Neue Optionen für **Urlaubstyp** definieren, welche Rundungsart für die Rückstellung verwendet werden soll, sowie die Dezimalgenauigkeit der Rundung während des Rückstellungsprozesses. Bei der Verarbeitung von Rückstellungen werden Rundung und Genauigkeit auf die Rückstellungsdatensätze angewendet. 
-
-- **Mehrere Urlaubstypen in einem einzigen Urlaubsplan konfigurieren** – In einer neuen Spalte im Urlaubsrückstellungsplan für Urlaubstypen können Sie mehrere Urlaubstypen in einem Urlaubs‑ und Abwesenheitsplan mit unterschiedlichen Rückstellungsplänen definieren. Der vorherige Feld **Urlaubstyp** wird entfernt. Bei der Mitarbeiterregistrierung werden die Salden für die Urlaubstypen jetzt in einer Tabelle angezeigt und nicht mehr oben auf dem Bildschirm.
-
-  > [!IMPORTANT]
-  > Sie können diese Funktion nicht deaktivieren, nachdem Sie sie aktiviert haben.
-
-- **Vollzeitäquivalent (FTE) eines Mitarbeiters für die Rückstellung verwenden** – Eine neue Spalte im Urlaubsrückstellungsplan ermöglicht die Verwendung des FTE für die Rückstellung. Bei der Verarbeitung von Rückstellungen verwendet die Anwendung die primäre Position des Mitarbeiters und das definierte FTE, um den anteiligen Rückstellungsbetrag zu bestimmen.
-
-  > [!NOTE]
-  > Diese Funktion ist nur verfügbar, wenn Sie **Mehrere Urlaubstypen pro Urlaubsplan konfigurieren** aktivieren. 
-
-## <a name="feedback"></a>Feedback
+## <a name="send-us-feedback"></a>Senden Sie uns Feedback
 
 Wir möchten von Ihnen über Ihre Erfahrung mit Vorschaufunktionen hören. Wir empfehlen Ihnen, Ihr Feedback regelmäßig auf den folgenden Seiten zu veröffentlichen, wenn Sie diese oder andere Funktionen nutzen:
 
 - [Community](https://community.dynamics.com/enterprise/f/759?pi53869=0&category=Talent) - Diese Seite ist eine großartige Ressource, auf der Benutzer Anwendungsfälle diskutieren, Fragen stellen und Hilfe von der Community erhalten können.
-- Teilen Sie uns mit, welche Funktionen Sie im Produkt sehen möchten und welche Änderungen Ihrer Meinung nach an bestehenden Funktionen vorgenommen werden sollten. Schlagen Sie Produktideen über [Ideen für Human Resources](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources) vor
+- Teilen Sie uns mit, welche Funktionen Sie im Produkt sehen möchten und welche Änderungen Ihrer Meinung nach an bestehenden Funktionen vorgenommen werden sollten. Schlagen Sie Produktideen über [Ideen für Human Resources](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources) vor.
     
 Bitte geben Sie keine persönlichen Daten (Informationen, die Sie identifizieren könnten) in Ihre Feedback- oder Produktbewertungseinreichungen ein. Die gesammelten Informationen können weiter analysiert werden und werden nicht zur Beantwortung von Anfragen im Rahmen der geltenden Datenschutzgesetze verwendet. Personenbezogene Daten, die im Rahmen dieser Programme separat erfasst werden, unterliegen der [Microsoft-Datenschutzerklärung](https://privacy.microsoft.com/privacystatement).
 

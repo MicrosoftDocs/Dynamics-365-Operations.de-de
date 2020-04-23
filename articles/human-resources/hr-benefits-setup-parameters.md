@@ -3,7 +3,7 @@ title: Vorteilsverwaltungsparameter festlegen
 description: Konfigurieren Sie Parameter für die Vorteilsverwaltung in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab9b1fc78ce42479d9265b80337adf899cec3866
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 9d6d463df08b9ae68047f09316f19e98740a8441
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009155"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229762"
 ---
 # <a name="set-benefits-management-parameters"></a>Vorteilsverwaltungsparameter festlegen
-
-[!include [banner](includes/preview-feature.md)]
 
 Bevor Sie Urlaubspläne in Microsoft Dynamics 365 Human Resources einrichten können, müssen Sie die Vorteilsverwaltungsparameter konfigurieren. Diese Parameter legen Standardwerte, Ursachencodes und andere Optionen fest.
 
@@ -47,7 +45,6 @@ Bevor Sie Urlaubspläne in Microsoft Dynamics 365 Human Resources einrichten kö
    | **Ursachencode für Satzänderung** | Der Ursachencode, der beim Stornieren und erneuten Öffnen eines Personalvorteilsplans verwendet werden soll, wenn die Satzänderung aktualisiert wird. Er zeigt an, welche Datensätze durch die Aktualisierung der Satzänderung geändert wurden. |
    | **Neueinstellung möglich** | Gibt an, ob Neueinstellungen zulässig sind. |
    | **Registrierungsperiode für Neueinstellungen** | Die Periode, für die die Registrierung einer Neueinstellung zulässig ist.</br></br>**Hinweis**: Diese Einstellung überschreibt jede Registrierungsperiode für Neueinstellungen, die Sie in der Planberechtigungsregel festgelegt haben. | 
-   | **Jährliche Gehaltserhöhung** | Gibt an, ob das **Jährliches Vorteilsgehalt** in **Mitarbeitervorteilsdetails** automatisch berechnet werden soll. Basiert auf dem **Festen Lohnsatz**, **Durchschnittlichen Stunden** und **Zahlungshäufigkeit** des Mitarbeiters.</br></br>**Durchschnittliche Stunden** x **Fester Lohnsatz** x **Zahlungshäufigkeit** (Anzahl der Lohnperioden) = **Jährliches Vorteilsgehalt** </br></br>Wenn einer der Werte in den Feldern **Durchschnittliche Stunden**, **Fester Lohnsatz** oder **Zahlungshäufigkeit** geändert wird, berechnet das System den Betrag **Jährliches Vorteilsgehalt** des Mitarbeiters basierend auf den geänderten Werten automatisch neu. Das System erstellt einen Datensatz **Gültigkeitsdatum**, um das genaue Datum und die Uhrzeit der Änderung festzuhalten. Sie können den Betrag **Jährliches Vorteilsgehalt** bei Bedarf manuell bearbeiten. |
    | **Lebensereignisse aktiviert** | Aktiviert Lebensereignisse. |
    | **Legacy-Vergütungsformulare ausblenden** | Ermöglicht das Ausblenden von Legacy-Vergütungsformularen. |
 

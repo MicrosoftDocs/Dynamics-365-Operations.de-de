@@ -3,7 +3,7 @@ title: Jahresabschluss
 description: In diesem Thema werden die erforderlichen Einstellungen und die Schritte für den Jahresabschlussprozess im Hauptbuch beschrieben.
 author: kweekley
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3071365640eb6c012cb9af5461e885bb3f135143
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 3f5b81ed788536a8b81ca53d6b6f12200836b6f5
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175430"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259770"
 ---
 # <a name="year-end-close"></a>Jahresabschluss
 
@@ -74,7 +74,7 @@ Die Option **Bilanzdimensionen übertragen** wird verwendet, um festzulegen, ob 
 Der Jahresabschlussprozess muss sich nicht an Kontostrukturen orientieren. Dies liegt daran, dass sich die Kontostrukturen während des Geschäftsjahres ändern können und es aufgrund dieser Änderungen nicht immer möglich ist, die relevante Kontostruktur zu identifizieren.  Wenn Primobuchungen erstellt werden, werden die Salden mit Finanzdimensionen übertragen, wie in der Jahresabschlussvorlage definiert. Die Anfangssaldeneinträge können Finanzdimensionen enthalten, die nicht mehr in der aktuellen Kontostruktur enthalten sind, sowie Segmentkombinationen, die nicht mehr länger für die aktuelle Kontostruktur gelten. Wenn Ihre Organisation eine Finanzdimension für den Anfangssaldo nicht ausgeschütteter Gewinne ausschließen möchte, setzen Sie die Finanzdimension auf **Einzeln abschließen** und lassen den Dimensionswert leer.
 
 ## <a name="run-the-year-end-close-process"></a>Ausführen des Jahresabschlussprozesses
-Nachdem die Jahresabschlussvorlagen erstellt wurden, wird der Jahresabschlussprozess initiiert, indem im Aktivitätsbereich die Option für **Jahresabschluss durchführen** gewählt wird. Wählen Sie entweder alle oder eine Untergruppe von juristischen Personen aus der Vorlage, für die der Jahresabschluss ausgeführt werden soll. Wenn Sie den Jahresabschluss das erste Mal in einem Geschäftsjahr ausführen, werden Sie vermutlich alle juristischen Personen auswählen, um Anfangssalden für alle juristischen Personen zu erstellen. Wenn Sie den Jahresabschluss erneut ausführen, können Sie diesen nur für die juristischen Personen durchführen, für die Regulierungseinträge gebucht wurden. 
+Nachdem die Jahresabschlussvorlagen erstellt wurden, wird der Jahresabschlussprozess initiiert, indem im Aktivitätsbereich die Option für **Jahresabschluss abschließen** gewählt wird. Wählen Sie entweder alle oder eine Untergruppe von juristischen Personen aus der Vorlage, für die der Jahresabschluss ausgeführt werden soll. Wenn Sie den Jahresabschluss das erste Mal in einem Geschäftsjahr ausführen, werden Sie vermutlich alle juristischen Personen auswählen, um Anfangssalden für alle juristischen Personen zu erstellen. Wenn Sie den Jahresabschluss erneut ausführen, können Sie diesen nur für die juristischen Personen durchführen, für die Regulierungseinträge gebucht wurden. 
 
 Wählen Sie das Geschäftsjahr aus, für das Sie den Jahresabschlussprozess durchführen möchten. Wenn mehr als eine Abschlussperiode für die letzte Periode des Geschäftsjahres vorhanden ist, wird das Feld **Periodenname** verfügbar, sodass Sie auswählen können, für welche Abschlussperiode die Abschlussbuchung vorgenommen werden soll, wenn das Setup so definiert ist, dass eine Abschlussbuchung erstellt wird. 
 

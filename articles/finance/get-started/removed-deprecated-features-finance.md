@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ec13076e6a05c3402af566487f7921f6971da215
-ms.sourcegitcommit: 1e7e7c4bc197b0a42e4d53d2a54600a2fb125b69
+ms.openlocfilehash: aebce032d7d780b296ba74fea4467425a3cbe1a7
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3127976"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175107"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Finance
 
@@ -47,6 +47,18 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 | **Betroffene Produktbereiche**         | Bewerbung |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Bis zum 1. Juli 2021 planen wir, die SSRS-Berichte nicht mehr zu unterstützen: **Ausgangssteuerregister, Kaufsteuerregister, EU-Zusammenfassung des Umsatzsteuerregisters – Funktionsreferenz PL-00014**. Stattdessen wird ein Beispiel für ein Excel-Format für eine Standard-Auditdatei mit Umsatzsteuererklärung (JPK_VDEK) eingeführt. |
+
+## <a name="features-removed-or-deprecated-in-the-finance-10011-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.11
+
+### <a name="norwegian-standard-main-accounts"></a>Norwegische Standard-Hauptkonten
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Neugestaltung  |
+| **Ersetzt durch eine andere Funktion?**   | Ja (ersetzt durch anwendungsspezifische Parameter im ER-Format) |
+| **Betroffene Produktbereiche**         | Bewerbung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Bis zum 1. April 2021 planen wir, Funktionen für Standardhauptkonten nicht mehr zu unterstützen: Referenzfeld, zugehörige Tabelle, Datenentität. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Entfernte oder veraltete Funktionen in Finance Release 10.0.7
 

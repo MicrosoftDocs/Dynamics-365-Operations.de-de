@@ -1,9 +1,9 @@
 ---
 title: Übersicht
-description: Der Arbeitsbereich **Urlaub und Abwesenheit** in Dynamics 365 Human Resources bietet einen flexiblen Rahmen zum Erstellen neuer Urlaubspläne, Workflows zum Verwalten von Anfragen und eine intuitive Self-Service-Seite, auf der Mitarbeiter eine Freizeitanforderung beantragen können.
+description: In Dynamics 365 Human Resources bietet der Arbeitsbereich Urlaub und Abwesenheit einen flexiblen Rahmen zum Erstellen neuer Urlaubspläne, Workflows zum Verwalten von Anfragen und eine intuitive Self-Service-Seite, auf der Mitarbeiter eine Freizeitanforderung beantragen können.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 493bc3abe82103541125914896252b2eae596b38
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091747"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226229"
 ---
 # <a name="overview"></a>Übersicht
 
-Dynamics 365 Human Resources hilft Ihnen dabei, Ihren Arbeitnehmern großartige Urlaubsleistungen zu bieten. Der Arbeitsbereich **Urlaub und Abwesenheit** bietet einen flexiblen Rahmen zum Erstellen neuer Urlaubspläne, Workflows zum Verwalten von Anfragen und eine intuitive Self-Service-Seite, auf der Mitarbeiter eine Freizeitanforderung beantragen können. Mithilfe von Analysen kann Ihr Unternehmen Urlaubsguthaben und -Verwendung für Ihre Urlaubspläne messen und überwachen.
+Dynamics 365 Human Resources hilft Ihnen dabei, Ihren Arbeitnehmern großartige Urlaubsleistungen zu bieten. Der Arbeitsbereich **Urlaub und Abwesenheit** bietet einen flexiblen Rahmen zum Erstellen neuer Urlaubspläne, Workflows zum Verwalten von Anfragen und eine intuitive Self-Service-Seite, auf der Mitarbeiter eine Freizeitanforderung beantragen können. Mithilfe von Analysen kann Ihr Unternehmen Urlaubsguthaben und Urlaubsverwendung für Ihre Urlaubspläne messen und überwachen.
 
 ## <a name="set-up-leave-and-absence"></a>Einrichten von Urlaub und Abwesenheit
 
-Bevor Sie Urlaubspläne für Ihre Mitarbeiter erstellen können, müssen Sie einige Einrichtungsschritte ausführen:
+Bevor Sie Urlaubspläne für Ihre Mitarbeiter erstellen, müssen Sie einige Einrichtungsschritte ausführen:
 
 - [Urlaub- und Abwesenheitsparameter konfigurieren](hr-leave-and-absence-parameters.md)
 - [Einen Arbeitszeitkalender erstellen](hr-leave-and-absence-working-time-calendar.md)
@@ -54,28 +54,32 @@ Ihre Mitarbeiter können Freizeitanträge einreichen und Sie können sie im Arbe
 - [Arbeitsfreie Zeit anfordern](hr-employee-self-service-request-time-off.md)
 - [Urlaubs- und Abwesenheitsanforderungen verwalten](hr-employee-self-service-manage-requests.md)
 
+## <a name="leave-and-absence-known-issues"></a>Urlaub und Abwesenheit bekannte Probleme
+
+### <a name="rounding-precision"></a>Rundungsgenauigkeit
+
+Sie können **Rundungsgenauigkeit** nicht festlegen, wenn Sie **Rundungstyp** festlegen. Sie können nur **Rundungsgenauigkeit** mithilfe der Entität **Urlaubs- und Abwesenheitstyp** festlegen. 
+
+1. Von **Urlaubs- und Abwesenheitsarten** wählen Sie **In Excel öffnen**, um die Entität **Urlaubs- und Abwesenheitstyp** zu öffnen.
+
+2. Nachdem die Datei geöffnet und aktiviert wurde, wählen Sie **Design**.
+
+3. Auf der Tabelle **Urlaubs- und Abwesenheitstyp** wählen Sie in der Tabelle die zu bearbeitende Stiftoption aus.
+
+4. Wählen **Rundungspräzision** und **RoundingType** und dann wählen Sie **Hinzufügen** zum Hinzufügen der Liste der Felder.
+
+5. Wählen Sie **Aktualisierung** und dann **Fertig** aus.
+
+6. Wählen Sie die **Rundungsart** für jeden Urlaubstyp aus oder geben Sie diese ein, falls sie noch nicht festgelegt wurden. 
+
+7. Geben Sie die **Rundungsgenauigkeit** für die entsprechenden Typen ein.
+
+8. Wählen Sie **Veröffentlichen**, um die Änderungen in die Personalabteilung zu übertragen.
+
 ## <a name="leave-and-absence-preview-features"></a>Vorschaufunktionen für Urlaub und Abwesenheit
 
-Sie können neue Funktionen für die Vorschau von Abwesenheiten und Urlaubszeiten in einer **Sandkasten** Umgebung ausprobieren. Weitere Informationen zum Aktivieren von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md). Die Vorschaufunktionen umfassen:
+Sie können neue Funktionen für die Vorschau von Abwesenheiten und Urlaubszeiten in einer **Sandkasten** Umgebung ausprobieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md). Die Vorschaufunktionen umfassen:
 
-- **Urlaubs‑ und Abwesenheitskalender** – die Parameter für Urlaub und Abwesenheit befinden sich nicht mehr unter **Personalverwaltungsparameter**, sondern auf einem neuen Bildschirm namens **Urlaubs‑ und Abwesenheitsparameter**. Der neue Bildschirm enthält eine neue Registerkarte **Kalender**. Diese Vorschau ermöglicht nur eine Teilmenge der Parameter. Sie können den neuen Bildschirm über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** aufrufen. Die Kalender beinhalten:
-  - **Firmenkalender** – zeigt alle Freizeitanforderungen der Mitarbeiter an. Menschen mit der Rolle **Personalverwaltung** können auf diesen Kalender über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** zugreifen.
-  - **Manager-Teamkalender** – zeigt alle Freizeitanforderungen von Mitarbeitern an. Manager können über die Registerkarte **Mein Team** im Mitarbeiter-Self-Service unter **Urlaub und Abwesenheit** auf den Kalender zugreifen. 
+- **Urlaubsaussetzung** - Sie können Urlaub und Abwesenheit in der Personalabteilung für einen Mitarbeiter aussetzen. Durch das Aussetzen des Urlaubs werden die Urlaubsrückstellungen für ausgewählte Urlaubstypen gestoppt. Wenn die Aussetzung erfolgte, nachdem eine Rückstellung bearbeitet wurde, führt die Aussetzung des Urlaubs zu einer anteiligen Anpassung des Urlaubssaldos des Mitarbeiters. 
 
-- **Urlaubs‑ und Abwesenheitskalender** – Urlaubstypen enthalten eine neue Option **Feiertag**, die in Verbindung mit dem Arbeitszeitkalender verwendet wird. Tage, die durch Feiertage und Schließungen definiert sind, werden jetzt als **Feiertag** bezeichnet, wenn Arbeitstage generiert werden. Bei der Verarbeitung von Rückstellungen werden die dem Kalender zugewiesenen Mitarbeiter angepasst, um die auf einen Arbeitstag fallenden Feiertage zu berücksichtigen.
-
-- **Überwachen von Urlaubsrückstellung** – In einem neuen Bildschirm können Sie überprüfen, wann Rückstellungen verarbeitet und gelöscht wurden, sowohl von allen Mitarbeitern als auch von einzelnen Mitarbeitern. Sie können diesen neuen Bildschirm über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** aufrufen.
-
-- **Löschen von Urlaubsrückstellung** – Sie können jetzt Rückstellungsdatensätze für bestimmte Urlaubspläne löschen. Sie können diese neue Option über die Registerkarte **Links** im Arbeitsbereich **Urlaub und Abwesenheit** aufrufen. Für einzelne Mitarbeiter erscheint diese Option in der Gruppierung **Urlaub und Abwesenheit** im Mitarbeiterprofil. 
-
-- **Runden von Urlaubsrückstellung** – Neue Optionen für **Urlaubstyp** definieren, welche Rundungsart für die Rückstellung verwendet werden soll, sowie die Dezimalgenauigkeit der Rundung während des Rückstellungsprozesses. Bei der Verarbeitung von Rückstellungen werden Rundung und Genauigkeit auf die Rückstellungsdatensätze angewendet. 
-
-- **Mehrere Urlaubstypen in einem einzigen Urlaubsplan konfigurieren** – In einer neuen Spalte im Urlaubsrückstellungsplan für Urlaubstypen können Sie mehrere Urlaubstypen in einem Urlaubs‑ und Abwesenheitsplan mit unterschiedlichen Rückstellungsplänen definieren. Der vorherige Feld **Urlaubstyp** wird entfernt. Bei der Mitarbeiterregistrierung werden die Salden für die Urlaubstypen jetzt in einer Tabelle angezeigt und nicht mehr oben auf dem Bildschirm.
-
-  > [!IMPORTANT]
-  > Sie können diese Funktion nicht deaktivieren, nachdem Sie sie aktiviert haben.
-
-- **Vollzeitäquivalent (FTE) eines Mitarbeiters für die Rückstellung verwenden** – Eine neue Spalte im Urlaubsrückstellungsplan ermöglicht die Verwendung des FTE für die Rückstellung. Bei der Verarbeitung von Rückstellungen verwendet die Anwendung die primäre Position des Mitarbeiters und das definierte FTE, um den anteiligen Rückstellungsbetrag zu bestimmen.
-
-  > [!NOTE]
-  > Diese Funktion ist nur verfügbar, wenn Sie **Mehrere Urlaubstypen pro Urlaubsplan konfigurieren** aktivieren. 
+- **Vortragungsregel** - Sie können einen Vortragsabwesenheitstyp für Vortragssalden angeben, bei denen Vortragsanpassungen übertragen werden. Wenn ein Mitarbeiter beispielsweise 10 Tage vorzieht, können Sie für diese 10 Tage einen anderen Urlaubstyp auswählen. 

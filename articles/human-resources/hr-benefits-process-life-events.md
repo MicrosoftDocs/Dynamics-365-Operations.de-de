@@ -3,7 +3,7 @@ title: Lebensereignisse verarbeiten
 description: Während des Mitarbeiterlebenszyklus in Microsoft Dynamics 365 Human Resources kann es bei jedem Mitarbeiter zu verschiedenen Änderungen von Lebensereignissen kommen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 91812432ead4b0afccfba30f8023f014e216236a
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: ba8d21482a18c6baa93437fc65c165907bdb515d
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009158"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229927"
 ---
 # <a name="process-life-events"></a>Lebensereignisse verarbeiten
-
-[!include [banner](includes/preview-feature.md)]
 
 Während des Mitarbeiterlebenszyklus in Microsoft Dynamics 365 Human Resources kann es bei jedem Mitarbeiter zu verschiedenen Änderungen von Lebensereignissen kommen. Beispiel: Ehe, Wechsel der Beschäftigung oder Wechsel von Unterhaltsberechtigten/Begünstigten. Um Lebensereignisse zu verwenden, müssen Sie Lebensereignisse im Formular „Vorteilparameter“ aktivieren, Lebensereignistypen einrichten und Lebensereignisoptionen für Plantypen einrichten.
 
@@ -43,10 +41,10 @@ Wenn beispielsweise heute der 1. Februar ist und die Arbeitskraft Joe Smith am 
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Registrierungsperiode | Die Registrierungsperiode, für die die Lebensereignisse verarbeitet werden. |
-   | Juristische Person | Die juristische Person, für die die Lebensereignisse verarbeitet werden. |
-   | Datum des Lebensereignisses | Das System verarbeitet alle Ereignisse während der Registrierungsperiode, die bis zu diesem Datum auftreten. |
-   | Arbeitskraft | Die Arbeitskraft, für die die Lebensereignisse verarbeitet werden. Wenn Sie dieses Feld leer lassen, werden Lebensereignisse für alle Arbeitskräfte verarbeitet. |
+   | **Registrierungsperiode** | Die Registrierungsperiode, für die die Lebensereignisse verarbeitet werden. |
+   | **Juristische Person** | Die juristische Person, für die die Lebensereignisse verarbeitet werden. |
+   | **Datum des Lebensereignisses** | Das System verarbeitet alle Ereignisse während der Registrierungsperiode, die bis zu diesem Datum auftreten. |
+   | **Arbeitskraft** | Die Arbeitskraft, für die die Lebensereignisse verarbeitet werden. Wenn Sie dieses Feld leer lassen, werden Lebensereignisse für alle Arbeitskräfte verarbeitet. |
 
 3. Wenn Sie den Prozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:
 
