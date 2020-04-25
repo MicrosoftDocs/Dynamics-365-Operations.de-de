@@ -3,7 +3,7 @@ title: Erstellen oder Bearbeiten eines Kalenders
 description: Teamkalender erstellen und anpassen in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,26 +18,32 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 22350e0a9da593d52278090dde298923d490cb8c
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 71637a659b26ea6912da993f1e899e33f7082512
+ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009139"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226206"
 ---
-# <a name="view-team-and-company-calendars"></a>Teamkalender und Unternehmenskalender anzeigen
+# <a name="view-team-and-company-calendars"></a>Team- und Unternehmenskalender anzeigen
 
 [!include [banner](includes/preview-feature.md)]
 
-Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resources anzeigen.
+Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resources anzeigen. Teamkalender zeigen nur Direktunterstellte an, wie in der Hierarchie definiert.
 
-## <a name="view-your-team-calendar"></a>Ihre Teamkalender anzeigen
-
-Manager können Teamkalender anzeigen. Teamkalender zeigen nur Direktunterstellte an, wie in der Hierarchie definiert.
+## <a name="view-your-team-calendar-as-an-employee"></a>Teamkalender als Mitarbeiter anzeigen
 
 1. Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team**aus.
 
 2. Wählen Sie **Urlaub und Absenzen** und dann **Teamkalender anzeigen**.
+
+## <a name="view-your-team-calendar-as-a-manager"></a>Teamkalender als Manager anzeigen
+
+1. Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team**aus.
+
+2. Wählen Sie **Urlaub und Absenzen** und dann **Teamkalender anzeigen**.
+
+Manager können auch über **Ausstehende Anfragen meines Teams**, **Genehmigte Freizeit** und **Freizeitanfragen** auf den Teamkalender zugreifen. 
 
 ## <a name="view-a-company-calendar"></a>Einen Unternehmenskalender anzeigen
 
@@ -47,5 +53,7 @@ Personen, die in der Personalabteilung tätig sind, können Unternehmenskalender
 
 2. Wählen Sie **Urlaubs- und Abwesenheitskalender**.
 
-Informationen zu Kalendereinstellungen finden Sie unter [Konfigurieren Sie die Kalenderparameter](hr-leave-and-absence-parameters.md?configure-calendar-parameters)
+Personalrollen können auch über auf den Unternehmenskalender **Urlaubs- und Abwesenheitsanträge**, **Genehmigte Freizeit**, und **Freizeitanfragen** zugreifen. 
+
+Informationen zu Kalendereinstellungen finden Sie unter [Konfigurieren Sie die Kalenderparameter](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
 

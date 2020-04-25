@@ -2,7 +2,7 @@
 title: 'Einrichten und Konfigurieren der Warehousing-App: Übersicht'
 description: In diesem Thema wird erläutert, wie die Dynamics 365 for Finance and Operations Warehousing-App eingerichtet und konfiguriert wird.
 author: MarkusFogelberg
-manager: AnnBe
+manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: df0bc9ff2405cc2f370ea777a70e005a1ff338a0
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 52882ef7542bfedebdae4a08de8404cddd01ed55
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814949"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3205597"
 ---
 # <a name="install-and-configure-the-warehousing-app-overview"></a>Einrichten und Konfigurieren der Warehousing-App: Übersicht
 
@@ -50,9 +50,9 @@ Die App ist auf Android- und Windows-Betriebssystemen verfügbar. Um diese App 
 
 ## <a name="get-the-app"></a>Abrufen der App
 -   Windows (UWP)
-     - [Finance and Operations – Lagerhaltung im Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+     - [Finance and Operations - Lagerhaltung im Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 -   Android
-    - [Finance and Operations - Lagerung im Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
+    - [Finance and Operations- Lagerhaltung im Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
 > [!NOTE]
 > Die Zebra AppGallery wurde zurückgezogen, was bedeutet, dass die Lagerorte-App an diesem Speicherort nicht mehr zum Download verfügbar ist.

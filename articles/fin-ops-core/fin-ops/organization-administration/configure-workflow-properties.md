@@ -3,7 +3,7 @@ title: Konfigurieren von Workfloweigenschaften
 description: Dieses Thema erläutert, wie Sie die verschiedenen Eigenschaften eines Workflows konfigurieren können.
 author: sericks007
 manager: AnnBe
-ms.date: 07/17/2018
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76d44c472989a73d71c2edd19f1187ecd09827ae
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
+ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2190119"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3199435"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurieren von Workfloweigenschaften
 
@@ -75,9 +75,11 @@ Sie können Benutzern, die Dokumente zur Verarbeitung und Genehmigung übermitte
     5. Zum Personalisieren des Texts können Sie Platzhalter einfügen. Anweisungen zum Eingeben eines Platzhalters finden Sie in Schritt 3.
     6. Klicken Sie auf **Schließen**.
 
-## <a name="specify-when-this-workflow-is-used"></a>Angeben, wann der Workflow verwendet wird
+## <a name="specify-when-this-workflow-is-used-through-activation-conditions"></a>Geben Sie an, wann dieser Workflow über Aktivierungsbedingungen verwendet wird
 
-Sie können mehrere Workflows erstellen, die auf demselben Typ basieren. Sie können beispielsweise für jedes Land bzw. jede Region, in dem/der Sie tätig sind, einen Workflow für Bestellanforderungen erstellen, wie "Bestellanforderungen Dänemark" und "Bestellanforderungen Spanien". Wenn mehrere Workflows vorhanden sind, die auf demselben Typ basieren, müssen Sie angeben werden, wann jeder Workflow verwendet wird. Für obengenanntes Beispiel müssen die folgenden Bedingungen angegeben werden:
+Sie können mehrere Workflows erstellen, die auf demselben Workflowtyp basieren. Wenn mehrere Workflows vorhanden sind, die auf demselben Typ basieren, müssen Sie angeben, wann jeder Workflow mithilfe der Aktivierungsbedingungen verwendet wird. Wenn die Aktivierungsbedingungen nicht erfüllt sind, wird der Standardworkflow verwendet. Wenn für einen Workflow-Typ nur eine Workflow-Konfiguration definiert ist, wird diese Workflow-Konfiguration unabhängig von den Aktivierungsbedingungen verwendet.
+
+Sie können beispielsweise für jedes Land bzw. jede Region, in dem/der Sie tätig sind, einen Workflow für Bestellanforderungen erstellen, wie Bestellanforderungen Dänemark und Bestellanforderungen Spanien, mit den folgenden Bedingungen:
 
 - "Bestellanforderungen Dänemark" wird verwendet, wenn: Land/Region = DK.
 - "Bestellanforderungen Spanien" wird verwendet, wenn: Land/Region = ES.

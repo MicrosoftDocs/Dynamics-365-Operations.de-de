@@ -16,16 +16,16 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a317fba4f30ab9fefe6b12637d53fda141d354bf
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 03f76f6539e8f318b75c8ec8f53020eb7052ec45
+ms.sourcegitcommit: c69926b4285cb2ec2d9ce1ad72d1cb852024dd5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188877"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3137921"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Mahnschreibensequenzen einrichten
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Erstellen Sie mithilfe dieser Aufgabenanleitung eine Mahnschreibensequenz. Für diese Aufgabe wird das Demo-Unternehmen USMF verwendet.
 
@@ -42,7 +42,7 @@ Erstellen Sie mithilfe dieser Aufgabenanleitung eine Mahnschreibensequenz. Für 
 11. Geben Sie die Gebühr ein, die berechnet wird, wenn dieses Mahnschreiben gesendet wird.
 12. Klicken Sie im Feld **Artikel-Mehrwertsteuergruppe** auf die Dropdown-Schaltfläche, um die Suche zu öffnen. Wählen Sie eine Artikel-Mehrwertsteuergruppe aus, wenn Mehrwertsteuern auf die Gebühr berechnet werden müssen.  
 13. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
-14. Geben Sie im Feld **Überfälliger Mindestsaldo** den überfälligen Mindestsaldo ein, der erforderlich ist, bevor ein Mahnschreiben gesendet wird.
+14. Geben Sie im Feld **Minimaler überfälliger Mindestsaldo** den überfälligen Mindestsaldo ein, der erforderlich ist, bevor ein Mahnschreiben gesendet wird.
 15. Geben Sie im Feld **Tage** die Anzahl der Toleranztage ein, die Sie gestatten werden. Dies ist die Anzahl von Tagen nach dem Fälligkeitsdatum, damit ein Mahnschreiben generiert werden kann. Das Fälligkeitsdatum, das für die Berechnung verwendet wird, hängt von der Position des Mahnschreibens in der Mahnschreibensequenz ab:
     - Die Toleranzperiode für Mahnschreiben 1 ist relativ zum Fälligkeitsdatum auf der Rechnung.
     - Die Toleranzperiode für Mahnschreiben 2 und höhere ist relativ zum Datum, an dem das vorherige Mahnschreiben gebucht oder gedruckt wird, abhängig von der Auswahl im Feld "Mahnschreibencode aktualisieren" auf der Seite "Debitorenparameter".  

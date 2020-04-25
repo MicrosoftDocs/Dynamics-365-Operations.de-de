@@ -3,7 +3,7 @@ title: TRANSLATE EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung von TRANSLATE bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
 manager: kfend
-ms.date: 12/10/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 07fe19c5f66c33e336f76f3a72d3bbda0c7e8d86
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 415444bda097c00522155d1b37988a79da836902
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3040916"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201111"
 ---
-# <a name="TRANSLATE">TRANSLATE EB-Funktion</a>
+# <a name=""></a><a name="TRANSLATE">TRANSLATE EB-Funktion</a>
 
 [!include [banner](../includes/banner.md)]
 
-Die Funktion `TRANSLATE` gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem er ganz oder teilweise durch eine andere Zeichenfolge ersetzt wurde.
+Die Funktion `TRANSLATE` gibt einen *Zeichenfolgen* Wert zurück, der das Ergebnis der Ersetzung des angegebenen Textes in Zeichen für einen anderen bereitgestellten Zeichensatz enthält.
 
 ## <a name="syntax"></a>Syntax
 
@@ -57,9 +57,23 @@ Den als Ersatz zu verwendenden Text.
 
 Der resultierende Textwert.
 
-## <a name="example"></a>Beispiel
+## <a name="usage-notes"></a>Anwendungshinweise
 
-`TRANSLATE ("abcdef", "cd", "GH")` ersetzt das Muster **"cd"** durch die Zeichenfolge **"GH"** und gibt **"abGHef"** zurück.
+Die `TRANSLATE` Funktion ersetzt jeweils ein Zeichen. Die Funktion ersetzt das erste Zeichen des `text` Arguments mit dem ersten Zeichen des `pattern` Arguments und dann das zweite Zeichen und folgt dem gleichen Ablauf bis zum Ende. Wenn ein Charakter aus dem `text` und `pattern` Argumente übereinstimmt, wird es durch ein Zeichen aus dem Argument `replacement` ersetzt, das sich an derselben Position befindet wie das Zeichen aus dem Argument `pattern`. Wenn ein Zeichen mehrmals im Argument `pattern` angezeigt wird, wird das Argument `replacement`, das dem ersten Auftreten dieses Zeichens entspricht, zugeordnet.
+
+## <a name="example-1"></a>Beispiel 1
+
+`TRANSLATE ("abcdef", "cd", "GH")` ersetzt das Zeichen **c** des angegebenen **abcdef** Texts mit dem **G** Zeichen der `replacement` Texts aus folgenden Gründen:
+-   Das Zeichen **c** wird im dargestellten Text `pattern` an der ersten Stelle angezeigt.
+-   Die erste Position des Texts `replacement` enthält das Zeichen **G**.
+
+## <a name="example-2"></a>Beispiel 2
+
+`TRANSLATE ("abcdef", "ccd", "GH")` gibt **abcdef** zurück.
+
+## <a name="example-3"></a>Beispiel 3
+
+`TRANSLATE ("abccba", "abc", "123")` gibt **"123321"** zurück.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

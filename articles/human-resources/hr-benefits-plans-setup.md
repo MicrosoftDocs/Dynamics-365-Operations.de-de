@@ -3,7 +3,7 @@ title: Vorteilsplan erstellen
 description: Einrichten von Vorteilsplänen in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 97c3acf1294b7a8c2496f23a32918152f50a9e5e
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 6e3822a1071023898e459a82c14ff648d8cdebed
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009162"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230107"
 ---
 # <a name="create-a-benefits-plan"></a>Vorteilsplan erstellen
-
-[!include [banner](includes/preview-feature.md)]
 
 In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Resources einrichten.
 
@@ -39,16 +37,16 @@ In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Res
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Plan | Ein eindeutiger Bezeichner für den Plan. |
-   | Beschreibung | Eine Beschreibung des Plans. |
-   | Typ des Plans | Wenn Sie einen neuen Plan erstellen, müssen Sie den Plantyp angeben. Ein Plantyp ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp gibt an, ob ein Mitarbeiter sich für mehrere Pläne dieses Typs registrieren kann, gibt an, ob Kontakte Begünstigte oder Unterhaltsberechtigte sind und definiert Abdeckungsoptionen. Sie können neue benutzerdefinierte Plantypen erstellen, um die Anforderungen Ihrer Vorteilsangebote zu erfüllen. Die wichtigsten Typen von Vorteilsplänen sind: <ul><li>401K</li><li>ADD</li><li>Zahnbehandlungs-Zusatzversicherung</li><li>Fitness</li><li>FSA</li><li>Leben</li><li>LTD</li><li>Medizinisch</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
-   | Code des Plantyps | Der Plantypcode des Plantyps. |
-   | Programm | Gibt ein Programm an, dem der Plan optional zugewiesen werden soll. |
-   | Bündel | Gibt ein Bündel an, dem der Plan optional zugewiesen werden soll. |
-   | Haupt | Gibt an, ob es sich bei dem Plan um den Produktprogrammplan innerhalb des Bündels handelt, dem es zugewiesen ist. |
-   | Status | Gibt den aktuellen Status des Vorteilsplans an. Der Standardwert ist „Aktiv“. Wenn Sie den Status zu „Inaktiv“ ändern, wird der Plan während der Registrierung nicht als Auswahl angezeigt. |
-   | Gültig ab Datum und Zeit | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan startet. Das aktuelle Systemdatum ist der Standardwert. |
-   | Gültig bis Datum und Zeit | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan endet (Status wird auf „Inaktiv“ gesetzt). Der Standardwert lautet 31.12.2154 (stellvertretend für „endet nie“). |
+   | **Plan** | Ein eindeutiger Bezeichner für den Plan. |
+   | **Beschreibung** | Eine Beschreibung des Plans. |
+   | **Typ des Plans** | Wenn Sie einen neuen Plan erstellen, müssen Sie den Plantyp angeben. Ein Plantyp ist eine übergeordnete Gruppierung bestimmter Vorteilstypen. Jeder Plantyp gibt an, ob ein Mitarbeiter sich für mehrere Pläne dieses Typs registrieren kann, gibt an, ob Kontakte Begünstigte oder Unterhaltsberechtigte sind und definiert Abdeckungsoptionen. Sie können neue benutzerdefinierte Plantypen erstellen, um die Anforderungen Ihrer Vorteilsangebote zu erfüllen. Die wichtigsten Typen von Vorteilsplänen sind: <ul><li>401K</li><li>ADD</li><li>Zahnbehandlungs-Zusatzversicherung</li><li>Fitness</li><li>FSA</li><li>Leben</li><li>LTD</li><li>Medizinisch</li><li>PTO</li><li>STD</li><li>Vision</li></ul> |
+   | **Code des Plantyps** | Der Plantypcode des Plantyps. |
+   | **Programm** | Gibt ein Programm an, dem der Plan optional zugewiesen werden soll. |
+   | **Bündel** | Gibt ein Bündel an, dem der Plan optional zugewiesen werden soll. |
+   | **Haupt** | Gibt an, ob es sich bei dem Plan um den Produktprogrammplan innerhalb des Bündels handelt, dem es zugewiesen ist. |
+   | **Status** | Gibt den aktuellen Status des Vorteilsplans an. Der Standardwert ist „Aktiv“. Wenn Sie den Status zu „Inaktiv“ ändern, wird der Plan während der Registrierung nicht als Auswahl angezeigt. |
+   | **Gültig ab Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan startet. Das aktuelle Systemdatum ist der Standardwert. |
+   | **Gültig bis Datum und Zeit** | Datum und Uhrzeit des Zeitpunkts, zu dem der Plan endet (Status wird auf „Inaktiv“ gesetzt). Der Standardwert lautet 31.12.2154 (stellvertretend für „endet nie“). |
 
 4. Geben Sie auf der Registerkarte **Konfiguration** Werte für die folgenden Felder an, abhängig vom Plantyp, den Sie erstellen:
 
@@ -77,42 +75,42 @@ In diesem Artikel erfahren Sie, wie Sie Vorteilspläne in Dynamics 365 Human Res
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Registrierung zulassen/fortsetzen | Gibt an, ob Mitarbeiter sich für den Plan registrieren können, wenn sie die Berechtigungsbedingungen erfüllen.</br></br>Wenn dies auf „Nein“ gesetzt ist, steht der Plan den Mitarbeitern nicht zur Verfügung, wenn Sie die Berechtigung verarbeiten. |
-   | Automatische Registrierung aus dem vorherigen Jahr | Gibt an, ob ein berechtigter Mitarbeiter im Plan automatisch registriert werden soll, wenn er im vorangegangenen Jahr registriert wurde. |
-   | Standardmäßig automatisch registrieren | Gibt an, ob der Plan standardmäßig für die Registrierung ausgewählt werden soll. Der Plan ist nicht obligatorisch, sodass der Mitarbeiter die Standardauswahl ändern kann. |
-   | Für neue Registrierungen geschlossen | Gibt an, ob der Plan nur auf berechtigte Mitarbeiter beschränkt werden soll, die im Vorjahr für den Plan registriert waren. |
-   | Obligatorischer Plan | Gibt an, ob Mitarbeiter automatisch für den Plan registriert werden sollen. Mitarbeiter können die Registrierungsauswahl nicht ändern. |
-   | Anfangsdatum | Das Datum, an dem der Plan im Unternehmen erstellt wurde. |
-   | Kreditorenkonto (Leistungserbringer) | Der Kreditor, an den das Unternehmen die Prämien für den Plan zahlt. |
-   | Name (Leistungserbringer) | Der Name des Kreditors. |
-   | Kreditorreferenz (Leistungserbringer) | Die Referenz des Kreditors für den Plan. Zum Beispiel die Gruppenplannummer des Unternehmens. |
-   | Alternative Referenz (Leistungserbringer) | Die alternative Referenz des Kreditors für den Plan. Zum Beispiel die Kontonummer des Unternehmens. |
-   | Währung (Leistungserbringer) | Die Währung, in der die Prämien an den Erbringer gezahlt werden. |
-   | Ausgabenkonto (Leistungserbringer) | Das Hauptbuchkonto, das als Ausgabenkonto für Planprämien verwendet wird. |
-   | Kreditorenkonto (Vorteilsadministrator) | Der Lieferant, den das Unternehmen für die Verwaltung des Plans zahlt. Wenn der Plan selbst verwaltet wird, lassen Sie dieses Feld leer. |
-   | Name (Vorteilsadministrator) | Der Name des Vorteilsadministrators. |
-   | Lieferantenreferenz (Vorteilsadministrator) | Die Referenz des Vorteilsadministrators für den Plan. |
-   | Alternative Referenz (Vorteilsadministrator) | Die alternative Referenz des Vorteilsadministrators für den Plan. |
-   | Währung (Vorteilsadministrator) | Die Währung, in der der Vorteilsadministrator gezahlt wird. |
-   | Ausgabenkonto (Vorteilsadministrator) | Das Hauptbuchkonto, das als Ausgabenkonto für die Kosten verwendet wird, die mit der Planverwaltung zusammenhängen. |
+   | **Registrierung zulassen/fortsetzen** | Gibt an, ob Mitarbeiter sich für den Plan registrieren können, wenn sie die Berechtigungsbedingungen erfüllen.</br></br>Wenn dies auf „Nein“ gesetzt ist, steht der Plan den Mitarbeitern nicht zur Verfügung, wenn Sie die Berechtigung verarbeiten. |
+   | **Automatische Registrierung aus dem vorherigen Jahr** | Gibt an, ob ein berechtigter Mitarbeiter im Plan automatisch registriert werden soll, wenn er im vorangegangenen Jahr registriert wurde. |
+   | **Standardmäßig automatisch registrieren** | Gibt an, ob der Plan standardmäßig für die Registrierung ausgewählt werden soll. Der Plan ist nicht obligatorisch, sodass der Mitarbeiter die Standardauswahl ändern kann. |
+   | **Für neue Registrierungen geschlossen** | Gibt an, ob der Plan nur auf berechtigte Mitarbeiter beschränkt werden soll, die im Vorjahr für den Plan registriert waren. |
+   | **Obligatorischer Plan** | Gibt an, ob Mitarbeiter automatisch für den Plan registriert werden sollen. Mitarbeiter können die Registrierungsauswahl nicht ändern. |
+   | **Anfangsdatum** | Das Datum, an dem der Plan im Unternehmen erstellt wurde. |
+   | **Lieferantenkonto** (Leistungserbringer) | Der Kreditor, an den das Unternehmen die Prämien für den Plan zahlt. |
+   | **Name** (Leistungserbringer) | Der Name des Kreditors. |
+   | **Kreditorreferenz** (Leistungserbringer) | Die Referenz des Kreditors für den Plan. Zum Beispiel die Gruppenplannummer des Unternehmens. |
+   | **Alternative Referenz** (Leistungserbringer) | Die alternative Referenz des Kreditors für den Plan. Zum Beispiel die Kontonummer des Unternehmens. |
+   | **Währung** (Leistungserbringer) | Die Währung, in der die Prämien an den Erbringer gezahlt werden. |
+   | **Ausgabenkonto** (Leistungserbringer) | Das Hauptbuchkonto, das als Ausgabenkonto für Planprämien verwendet wird. |
+   | **Kreditorenkonto** (Vorteilsadministrator) | Der Lieferant, den das Unternehmen für die Verwaltung des Plans zahlt. Wenn der Plan selbst verwaltet wird, lassen Sie dieses Feld leer. |
+   | **Name** (Vorteilsadministrator) | Der Name des Vorteilsadministrators. |
+   | **Lieferantenreferenz** (Vorteilsadministrator) | Die Referenz des Vorteilsadministrators für den Plan. |
+   | **Alternative Referenz** (Vorteilsadministrator) | Die alternative Referenz des Vorteilsadministrators für den Plan. |
+   | **Währung** (Vorteilsadministrator) | Die Währung, in der der Vorteilsadministrator gezahlt wird. |
+   | **Ausgabenkonto** (Vorteilsadministrator) | Das Hauptbuchkonto, das als Ausgabenkonto für die Kosten verwendet wird, die mit der Planverwaltung zusammenhängen. |
 
 6. Wählen Sie auf der Registerkarte **Filter** nach Bedarf Filter aus. Sie können nach folgenden Feldern filtern:
 
-   - Unternehmenseinheit
-   - Abteilung
-   - Juristische Person
-   - Elektronische Adresse
-   - Position
+   - **Unternehmenseinheit**
+   - **Abteilung**
+   - **Juristische Person**
+   - **Elektronische Adresse**
+   - **Position**
 
 7. Definieren Sie auf der Registerkarte **Berechtigungsregeln** die Werte für die folgenden Felder:
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Positionsnummer | Positionsnummer der Berechtigungsregel. |
-   | Berechtigungsregel | Eine Berechtigungsregel, die für den Vorteilsplan gilt. Diese Berechtigungsregel wird auf den entsprechenden Vorgangstyp angewendet und mit der angegebenen Abdeckungs‑ und Abzugswarteperiode verknüpft. |
-   | Vorgangstyp | Die Aktivität zum Anwenden der Berechtigungsregel auf: Vorteilsregistrierung oder Vorteilsablauf. |
-   | Abdeckungswarteperiode | Ein Wert aus dem Formular „Wartezeiten“. Die Abdeckungswarteperiode bestimmt die Anzahl der Tage oder Monate, die ein Mitarbeiter auf die Vorteilsabdeckung oder den Vorteilsablauf wartet, basierend auf den Kriterien in der Berechtigungsregel und dem Vorgangstyp. |
-   | Abzugswarteperiode | Ein Wert aus dem Formular „Wartezeiten“. Die Abzugswarteperiode bestimmt die Anzahl der Tage oder Monate, die ein Mitarbeiter auf den Vorteilsabzug vom Lohnscheck wartet, basierend auf den Kriterien in der Berechtigungsregel und dem Vorgangstyp. |
+   | **Positionsnummer** | Positionsnummer der Berechtigungsregel. |
+   | **Berechtigungsregel** | Eine Berechtigungsregel, die für den Vorteilsplan gilt. Diese Berechtigungsregel wird auf den entsprechenden Vorgangstyp angewendet und mit der angegebenen Abdeckungs‑ und Abzugswarteperiode verknüpft. |
+   | **Vorgangstyp** | Die Aktivität zum Anwenden der Berechtigungsregel auf: Vorteilsregistrierung oder Vorteilsablauf. |
+   | **Abdeckungswarteperiode** | Ein Wert aus dem Formular „Wartezeiten“. Die Abdeckungswarteperiode bestimmt die Anzahl der Tage oder Monate, die ein Mitarbeiter auf die Vorteilsabdeckung oder den Vorteilsablauf wartet, basierend auf den Kriterien in der Berechtigungsregel und dem Vorgangstyp. |
+   | **Abzugswarteperiode** | Ein Wert aus dem Formular „Wartezeiten“. Die Abzugswarteperiode bestimmt die Anzahl der Tage oder Monate, die ein Mitarbeiter auf den Vorteilsabzug vom Lohnscheck wartet, basierend auf den Kriterien in der Berechtigungsregel und dem Vorgangstyp. |
 
 8. Wählen Sie **Speichern**.
 

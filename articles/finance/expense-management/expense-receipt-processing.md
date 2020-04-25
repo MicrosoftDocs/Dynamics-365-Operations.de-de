@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 49cdfeac8cda9f1ddd3aca61f902f00f30f3485b
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
+ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154039"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248962"
 ---
 # <a name="expense-receipt-processing"></a>Verarbeitung von Ausgabenbelegen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Die Ausgabenerfassung wurde durch die Einführung der OCR-Verarbeitung für Belege erweitert. Diese Funktion wurde entwickelt, um die Benutzerfreundlichkeit bei der Erstellung von Spesenabrechnungen zu verbessern.
 

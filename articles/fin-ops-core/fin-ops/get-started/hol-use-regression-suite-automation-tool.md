@@ -1,7 +1,7 @@
 ---
 title: Verwenden des Regression Suite Automation Tool-Tutorials
 description: Dieses Thema zeigt, wie das Regression Suite Automation Tool (RSAT) verwendet wird. Es beschreibt die verschiedenen Funktionen und enthält Beispiele, die erweiterte Skripterstellung verwenden.
-author: kfend
+author: robinarh
 manager: AnnBe
 ms.date: 06/09/2019
 ms.topic: article
@@ -9,19 +9,19 @@ ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: rhaertle
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: kfend
+ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 6cdaa89fb6d50ebaaaefe7f92d7224a1567d17d1
-ms.sourcegitcommit: 3dede95a3b17de920bb0adcb33029f990682752b
+ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
+ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "3070819"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3248735"
 ---
 # <a name="use-the-regression-suite-automation-tool-tutorial"></a>Das Regression Suite Automation Tool-Tutorial anweden
 
@@ -30,92 +30,26 @@ ms.locfileid: "3070819"
 > [!NOTE]
 > Verwenden Sie das Internet-Browsertool, um die Seite in pdf-Format herunterzuladen und zu speichern. 
 
-Dies Tutorial führt Sie durch mehrere der erweiterten Funktionen des Regression Suite Automation Tool (RSAT), enthält eine Demozuweisung und beschreibt Strategie und wichtige Lernpunkte.
+Dies Tutorial führt Sie durch mehrere der erweiterten Funktionen des Regression Suite Automation Tool (RSAT), enthält eine Demozuweisung und beschreibt Strategie und wichtige Lernpunkte. 
 
-## <a name="features-of-rsattask-recorder"></a>Funktionen von RSAT/Aufgabenaufzeichnung
+## <a name="notable-features-of-rsat-and-task-recorder"></a>Bemerkenswerte Funktionen von RSAT und Aufgabenaufzeichnung
 
 ### <a name="validate-a-field-value"></a>Einen Feldwert überprüfen
 
-Informationen zu dieser Funktion finden Sie unter [Erstellen einer neuen Aufgabenaufzeichnung mit einer Validierungsfunktion](./hol-set-up-regression-suite-automation-tool.md#create-a-new-task-recording-that-has-a-validate-function) Sie unter.
-
-### <a name="saved-variable"></a>Variable gespeichert
-
-Informationen zu dieser Funktion finden Sie unter [Ändern einer vorhandenen Aufgabenaufzeichnung, um eine gespeicherte Variable zu erstellen](./hol-set-up-regression-suite-automation-tool.md#modify-an-existing-task-recording-to-create-a-saved-variable).
-
-### <a name="derived-test-case"></a>Abgeleitete Testfälle
-
-1. Öffnen Sie das Regression Suite Automation Tool (RSAT) und wählen Sie beide Testfälle aus, die Sie in [Einrichtung und Installation des Regression Suite Automation Tools](./hol-set-up-regression-suite-automation-tool.md) erstellt haben.
-2. Wählen Sie **Neu \>Abgeleiteten Testfall berechnen** aus.
-
-    ![Abgeleiteten Testfallbefehl im Menü „Neu“ erstellen](./media/use_rsa_tool_01.png)
-
-3. Sie erhalten eine Meldung, die angibt, dass ein abgeleiteter Testfall für jeden ausgewählten Testfall in der aktuellen Testsuite erstellt wird und dass jeder abgeleitete Testfall eine eigene Kopie der Excel-Parameterdatei hat. Wählen Sie **OK**.
-
-    > [!NOTE]
-    > Wenn Sie einen abgeleiteten Testfall ausführen, verwendet er die Aufgabenaufzeichnung des übergeordneten Testfalls und die eigene Kopie der Excel-Parameterdatei. Auf diese Weise können Sie den gleichen Test mit unterschiedlichen Parametern erstellen, ohne mehr als eine Aufgabenaufzeichnung verwalten zu müssen. Ein abgeleiteter Testfall muss kein Teil der gleichen Testsuite wie der übergeordneter Testfall sein.
-
-    ![Meldungsfeld](./media/use_rsa_tool_02.png)
-
-    Zwei zusätzliche abgeleitete Testfälle werden erstellt, und das Kontrollkästchen **Abgeleitet?** für sie wird aktiviert.
-
-    ![Abgeleitete Testfälle erstellt](./media/use_rsa_tool_03.png)
-
-    Ein abgeleiteter Testfall wird automatisch in Azure DevOps erstellt. Es ist ein untergeordnetes Element des Testfalls **Neues Produkt erstellen** und es ist mit einem speziellen Schlüsselwort markiert: **RSAT:DerivedTestSteps**. Diese Testfälle werden ebenfalls automatisch dem Testplan in Azure DevOps hinzugefügt.
-
-    ![RSAT:DerivedTestSteps-Schlüsselwort](./media/use_rsa_tool_04.png)
-
-    > [!NOTE]
-    > Wenn die abgeleiteten Testfälle, die erstellt werden, aus irgendeinem Grund nicht in der richtigen Reihenfolge vorliegen, wechseln Sie zu Azure DevOps und ordnen Sie die Testfälle in der Testsuite neu an, damit RSAT sie in der richtigen Reihenfolge ausführen kann.
-
-4. Wählen Sie die abgeleiteten Testfälle aus, und wählen Sie dann **Bearbeiten** aus, um die entsprechenden Excel-Parameterdateien zu öffnen.
-5. Bearbeiten Sie diese Excel-Parameterdateien auf die gleiche Weise, wie Sie die übergeordneten Dateien bearbeitet haben. Stellen Sie also sicher, dass die Produktkennung so festgelegt ist, dass sie automatisch generiert wird. Stellen Sie außerdem sicher, dass die gespeicherte Variable in die relevanten Felder kopiert wird.
-6. Aktualisieren Sie auf der Registerkarte **Allgemein** beider Excel-Parameterdateien den Wert des Felds **Unternehmen** auf **USSI**, sodass die abgeleiteten Testfälle für eine andere juristische Person als der übergeordnete Testfall ausgeführt werden. Um die Testfälle für einen bestimmten Benutzer (oder die Rolle, die einem bestimmten Benutzer zugeordnet ist) auszuführen, können Sie den Wert des Felds **Testbenutzer** aktualisieren.
-7. Wählen Sie **Ausführen** aus, und überprüfen Sie, dass das Produkt in der juristischen USMF-Person und in der juristischen USSI-Person erstellt wird.
-
-### <a name="validate-notifications"></a>Benachrichtigungen validieren
-
-Diese Funktion kann verwendet werden, um zu überprüfen, ob eine Aktivität stattfand. Wenn ein Produktionsauftrag beispielsweise erstellt, vorkalkuliert und dann gestartet wird, zeigt die App eine „Produktion – Start“-Nachricht, die Sie darüber zu informieren, dass der Produktionsauftrag gestartet wurde.
-
-![Produktion – Start-Benachrichtigung](./media/use_rsa_tool_05.png)
-
-Sie können diese Meldung über RSAT überprüfen, indem Sie den Nachrichtentext auf der Registerkarte **MessageValidation** der Excel-Parameterdatei für die entsprechende Erfassung eingeben.
-
-![Registerkarte Nachrichtenvalidierung](./media/use_rsa_tool_06.png)
-
-Nachdem der Testfall ausgeführt wurde, wird die Nachricht in der Excel-Parameterdatei mit der Nachricht verglichen, die angezeigt wird. Wenn die Nachrichten nicht übereinstimmen, schlägt der Testfall fehl.
-
-> [!NOTE]
-> Sie können mehrere Nachrichten auf der Registerkarte **MessageValidation** in der Excel-Parameterdatei eingeben. Die Nachrichten können auch Fehler- oder Warnmeldungen anstelle der Informationsmeldungen sein.
-
-### <a name="validate-values-by-using-operators"></a>Überprüfen der Werte mithilfe von Operatoren
-
-In früheren Versionen von RSAT, konnten Sie Werte nur überprüfen, wenn ein Kontrollwert einem erwarteten Wert entsprach. Mit der neuen Funktion können Sie prüfen, dass eine Variable ungleich, kleiner oder größer als ein angegebener Wert ist.
-
-- Um diese Funktion zu verwenden, öffnen Sie die Datei **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** im RSAT-Installationsordner (beispielsweise **C:\\Programme (x86)\\Regression Suite Automation Tool**), und ändern Sie den Wert im folgenden Element von **false** auf **true**.
-
-    ```xml
-    <add key="AddOperatorFieldsToExcelValidation" value="false" />
-    ```
-
-    In der Excel-Parameterdatei wird das neue Feld **Operator** angezeigt.
-
-    > [!NOTE]
-    > Wenn Sie eine ältere Version von RSAT verwendet haben, müssen Sie neue Excel-Parameterdateien generieren.
-
-    ![Feld „Operator“](./media/use_rsa_tool_07.png)
+Mit RSAT können Sie Validierungsschritte in Ihren Testfall aufnehmen, um die erwarteten Werte zu validieren. Informationen zu dieser Funktion finden Sie im Artikel [Überprüfen Sie die erwarteten Werte](../../dev-itpro/perf-test/rsat/rsat-validate-expected.md).
 
 Das folgende Beispiel veranschaulicht, wie Sie diese Funktion verwenden können, um zu prüfen, ob der Lagerbestand mehr als 0 (null) ist.
 
 1. In den Demodaten im **USMF**-Unternehmen erstellen Sie eine Aufgabenaufzeichnung, die die folgenden Schritte ausführt:
 
-    1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \>Freigegebene Produkte**.
+    1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
     2. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise auf einen Wert von **1000** für das Feld **Artikelnummer**.
     3. Wählen Sie **Verfügbarer Lagerbestand** aus
     4. Verwenden Sie den Schnellfilter, um Datensätze zu suchen. Filtern Sie beispielsweise auf einen Wert von **1** für das Feld **Website**.
     5. Markieren Sie in der Liste die ausgewählte Zeile.
     6. Überprüfen Sie, dass der Wert des Feldes **Verfügbare Summe** **411,0000000000000000** ist.
 
-2. Speichern Sie die Aufgabenaufzeichnung in der die BPM-Bibliothek in LCS und synchronisieren Sie sie mit Azure DevOps.
+2. Speichern Sie die Aufgabenaufzeichnung und hängen Sie sie in Azure DevOps an Ihren Testfall an.
 3. Fügen Sie den Testfall dem Testplan hinzu, und laden Sie den Testfall in RSAT.
 4. Öffnen Sie die Excel-Parameterdatei. Auf der Registerkarte **InventOnhandItem** wird ein Abschnitt **InventOnhandItem validieren** angezeigt, die ein **Operator**-Feld enthält.
 
@@ -130,28 +64,32 @@ Das folgende Beispiel veranschaulicht, wie Sie diese Funktion verwenden können,
 
 Wenn der Wert des Feldes **Verfügbare Summe** jetzt für den angegebenen Artikel im Bestand größer als 0 (null) ist, sind Tests unabhängig vom tatsächlichen Wert des verfügbaren Bestands erfolgreich.
 
-### <a name="generator-logs"></a>Generatorprotokolle
+### <a name="saved-variables-and-chaining-of-test-cases"></a>Gespeicherte Variablen und Verkettung von Testfällen
 
-Diese Funktion erstellt einen Ordner, der die Protokolle der durchgeführten Testfälle enthält.
+Eine wichtige zentrale Funktion von RSAT ist das Verketten von Testfällen, das heißt, die Fähigkeit eines Tests, Variablen an andere Tests zu übergebe). Weitere Informationen finden Sie im Artikel [Kopieren Sie Variablen in Kettentestfälle](../../dev-itpro/perf-test/rsat/rsat-chain-test-cases.md).
 
-- Um diese Funktion zu verwenden, öffnen Sie die Datei **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** im RSAT-Installationsordner (beispielsweise **C:\\Programme (x86)\\Regression Suite Automation Tool**), und ändern Sie den Wert im folgenden Element von **false** auf **true**.
+### <a name="derived-test-case"></a>Abgeleitete Testfälle
 
-    ```xml
-    <add key="LogGeneration" value="false" />
-    ```
+Mit RSAT können Sie dieselbe Aufgabenaufzeichnung mit mehreren Testfällen verwenden, sodass eine Aufgabe mit unterschiedlichen Datenkonfigurationen ausgeführt werden kann. Siehe Artikel [Abgeleitete Testfälle](../../dev-itpro/perf-test/rsat/rsat-derived-test-cases.md) für mehr Informationen.
 
-Nachdem die Testfälle ausgeführt werden, finden Sie die Protokolldateien unter **C:\\Benutzer\\\<Benutzername\>\\AppData\\Roaming\\regressionTool\\generatorLogs**.
+### <a name="validate-notifications-and-messages"></a>Überprüfen Sie Benachrichtigungen und Nachrichten
 
-![GeneratorLogs-Ordner](./media/use_rsa_tool_10.png)
+Diese Funktion kann verwendet werden, um zu überprüfen, ob eine Aktivität stattfand. Wenn ein Produktionsauftrag beispielsweise erstellt, vorkalkuliert und dann gestartet wird, zeigt die App eine „Produktion – Start“-Nachricht, die Sie darüber zu informieren, dass der Produktionsauftrag gestartet wurde.
+
+![Produktion – Start-Benachrichtigung](./media/use_rsa_tool_05.png)
+
+Sie können diese Meldung über RSAT überprüfen, indem Sie den Nachrichtentext auf der Registerkarte **MessageValidation** der Excel-Parameterdatei für die entsprechende Erfassung eingeben.
+
+![Registerkarte Nachrichtenvalidierung](./media/use_rsa_tool_06.png)
+
+Nachdem der Testfall ausgeführt wurde, wird die Nachricht in der Excel-Parameterdatei mit der Nachricht verglichen, die angezeigt wird. Wenn die Nachrichten nicht übereinstimmen, schlägt der Testfall fehl.
 
 > [!NOTE]
-> Wenn Testfälle vorhanden waren, bevor Sie den Wert in der CONFIG-Datei geändert haben, werden keine Protokolle für diese Testfälle generiert, bis Sie neue Testausführungsdateien generieren.
-> 
-> ![Befehl „Nur Textbewertungsfelder generieren“ im Menü „Neu“](./media/use_rsa_tool_11.png)
+> Sie können mehrere Nachrichten auf der Registerkarte **MessageValidation** in der Excel-Parameterdatei eingeben. Die Nachrichten können auch Fehler- oder Warnmeldungen anstelle der Informationsmeldungen sein.
 
 ### <a name="snapshot"></a>Momentaufnahme
 
-Diese Funktion nimmt Screenshots der Schritte auf, die während der Aufgabenaufzeichnung ausgeführt wurden.
+Diese Funktion nimmt Screenshots der Schritte auf, die während der Aufgabenaufzeichnung ausgeführt wurden. Es ist nützlich für Prüf- oder Debugging-Zwecke.
 
 - Um diese Funktion zu verwenden, öffnen Sie die Datei **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** im RSAT-Installationsordner (beispielsweise **C:\\Programme (x86)\\Regression Suite Automation Tool**), und ändern Sie den Wert des folgenden Elements von **false** auf **true**.
 
@@ -159,13 +97,7 @@ Diese Funktion nimmt Screenshots der Schritte auf, die während der Aufgabenaufz
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Unter **C:\\Benutzer\\\<Benutzername\>\\AppData\\Roaming\\regressionTool\\Playback** wird ein separater Ordner für jeden Testfall erstellt, der ausgeführt wird.
-
-![Momentaufnahme-Ordner für einen Testfall](./media/use_rsa_tool_12.png)
-
-In jedem dieser Ordner können Sie Momentaufnahmen der Schritte finden, die ausgeführt wurden, als die Testfälle ausgeführt wurden.
-
-![Momentaufnahmedateien](./media/use_rsa_tool_13.png)
+Wenn Sie den Testfall ausführen, generiert RSAT Snapshots (Bilder) der Schritte im Wiedergabeordner der Testfälle im Arbeitsverzeichnis. Wenn Sie eine ältere Version von RSAT verwenden, werden die Bilder in **C:\\Benutzer\\\<Benutzername\>\\Anwendungsdaten\\Roaming\\RegressionTool\\Wiedergabe** gespeichert und für jeden Testfall, der ausgeführt wird, wird ein separater Ordner erstellt.
 
 ## <a name="assignment"></a>Zuweisung
 
@@ -183,7 +115,7 @@ Die folgende Abbildung zeigt den Ablauf für dieses Szenario.
 
 ![Ablauf für das Demoszenario](./media/use_rsa_tool_14.png)
 
-Die folgende Abbildung zeigt den Geschäftsprozess für dieses Szenario in RSAT.
+Die folgende Abbildung zeigt die Geschäftsprozesshierarchie für dieses Szenario im LCS Business Process Modeler.
 
 ![Geschäftsprozesse für das Demoszenario](./media/use_rsa_tool_15.png)
 
@@ -377,7 +309,7 @@ Sie können den Befehl ``listtestsuitenames`` verwenden, um alle verfügbaren Te
 
 
 #### <a name="help"></a>help
-Identisch mit dem [?](####?) command
+Identisch mit dem [?](#section) command
 
 
 #### <a name="list"></a>Liste
@@ -512,6 +444,8 @@ Zeigt zwei Möglichkeiten, diese Anwendung aufzurufen: eine mit einer Standardei
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-Beispiele
 
+[!IMPORTANT] Die folgenden Beispielskripte werden zu Illustrationszwecken wie besehen bereitgestellt und von Microsoft nicht unterstützt.
+
 #### <a name="run-a-test-case-in-a-loop"></a>Ausführen eines Testfalls in einer Schleife
 
 Sie haben ein Testskript, das einen neuen Debitor erstellt. Über Skripterstellung kann dieser Testfall in einer Schleife ausgeführt werden, indem Sie die folgenden Daten zufällig generieren, bevor jede Iteration ausgeführt wird:
@@ -520,7 +454,7 @@ Sie haben ein Testskript, das einen neuen Debitor erstellt. Über Skripterstellu
 - Name des Debitors
 - Adresse des Debitors
 
-Die Debitorenkennung hat das Format *ATCUS \<Nummer\>*, wobei \<Nummer\> ein Wert zwischen **000000001** und **999999999** ist.
+Die Debitorenkennung hat das Format *ATCUS\<Nummer\>*, wobei \<Nummer\> ein Wert zwischen **000000001** und **999999999** ist.
 
 Das folgende Beispiel verwendet den Parameter **Start**, um die erste Nummer zu definieren, die verwendet wird. Es wird ein zweiter Parameter **nr** verwendet, um die Anzahl der Debitoren zu definieren, die erstellt werden müssen. Für jede Iteration werden die Parameter in der Excel-Parameterdatei geändert, indem eine UpdateCustomer-Funktion verwendet wird. Danach wird die RSAT-Befehlszeile in einer RunTestCase-Funktion aufgerufen.
 
@@ -551,7 +485,7 @@ function RunTestCase
     $cmd = $cmd + $filename
     cmd /c $cmd
 }
-$excelFilename = "full path to excel file parameter file"
+$excelFilename = "full path to Excel parameter file"
 l$sheetName = "DirPartyQuickCreateForm"
 for ($i = $start; $i -lt $start + $nr; $i++ )
 {

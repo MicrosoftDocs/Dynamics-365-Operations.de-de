@@ -3,7 +3,7 @@ title: Berechtigungsregeln und -optionen konfigurieren
 description: Legen Sie die Berechtigungsregeln und ‑optionen in der Vorteilsverwaltung von Microsoft Dynamics 365 Human Resources fest.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 448156a2428e99d8b95de547cb6f1621d49b1c7b
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 07dd8a6ca7edb460769f761950dc0c143112f708
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009209"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229900"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Berechtigungsregeln und -optionen konfigurieren
-
-[!include [banner](includes/preview-feature.md)]
 
 Nachdem Sie die erforderlichen Parameter für die Vorteilsverwaltung in Microsoft Dynamics 365 Human Resources konfiguriert haben, können Sie Berechtigungsregeln, Bündel, Perioden und Programme erstellen, die Sie mit Ihren Vorteilsplänen verknüpfen.
 
@@ -57,6 +55,7 @@ Während der offenen Registrierung können Mitarbeiter Vorteilspläne auswählen
    | **Beschäftigungskategorie** | Die Beschäftigungskategorie des Mitarbeiters, wenn die Umschaltfläche **Beschäftigungskategorie verwenden** ist auf **Ja** eingestellt ist. |
    | **Neue Einstellungsregel verwenden** | Gibt an, ob der neue Einstellungsperiodenwert des neuen Mitarbeiters als Teil der Vorteilsberechtigungsregel verwendet werden soll. |
    | **Registrierungsperiode** | Die Periode, für die die Registrierung einer Neueinstellung zulässig ist. Wenn Sie dies auch in Parametern einstellen, hat die Parametereinstellung Vorrang. |
+   | **Ehemaligen Beschäftigungsstatus verwenden** | Gibt an, ob der frühere Beschäftigungsstatus eines Mitarbeiters als Teil der Vorteilsberechtigungsregel verwendet werden soll. Beispielsweise können Sie eine Berechtigungsregel angeben, die auf eine Deckungswartezeit für alle Mitarbeiter verzichtet, die vom Status **Entlassen** zu einem Status **Beschäftigt** innerhalb von 90 Tagen nach ihrer vorherigen Beschäftigung gewechselt haben. |
 
 4. Wählen Sie unter **Zusätzliche Kriterien** die folgenden Optionen aus und fügen Sie nach Bedarf Informationen hinzu:
 

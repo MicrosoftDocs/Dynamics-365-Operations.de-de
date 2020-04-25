@@ -3,7 +3,7 @@ title: In früheren Versionen entfernte oder veraltete Funktionen
 description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt wurden oder für die Entfernung geplant waren.
 author: sericks007
 manager: AnnBe
-ms.date: 03/05/2020
+ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2e079f1eb43d46acdc39819ae81e0472bba6aa1
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
+ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124565"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225127"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -263,11 +263,11 @@ Integrierte Key Performance Indicators (KPIs) können in Visual Studio von einem
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Es ist möglich, dass Tabellenmetadatendefinitionen über Feldgruppen verfügen, die ungültige Feldreferenzen enthalten. Dieses Problem wird derzeit als eine *Compilerwarnung* statt als *Fehler* kategorisiert, d. h., die zur Bereitstellung geeignete Paketerstellung und die Bereitstellung können erfolge, ohne dass, das Problem beheben werden muss. Bei einer BEreitstellung kann dies dieses zu Laufzeitfehlern bei der Finanzberichterstellung und bei SQL Server Reporting Services (SSRS) führen. So beheben Sie dieses Problem:<br><br>1. Entfernen Sie die ungültige Feldreferenz aus der Tabellenfeldgruppendefinition.<br><br>2. Neu kompilieren.<br><br>3. Stellen Sie sicher, dass alle Warnungen oder Fehler behoben werden. |
-| **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird in Zukunft durch einen Kompelierfehler ersetzt.  |
-| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools. |
-| **Bereitstellungsoption**              | Alle. |
-| **Status**                         | Veraltet: Die Warnung wird in Zukunft zu einem Kompilierungsfehler. Wir arbeiten derzeit an Plattformaktualisierung 30. |
+| **Grund für veralteten Zustand/Entfernung** | Es ist möglich, dass Tabellenmetadatendefinitionen über Feldgruppen verfügen, die ungültige Feldreferenzen enthalten. Bei einer BEreitstellung kann dies dieses zu Laufzeitfehlern bei der Finanzberichterstellung und bei SQL Server Reporting Services (SSRS) führen. Dieses Problem wird derzeit als eine *Compilerwarnung* statt als *Fehler* kategorisiert, d. h., die zur Bereitstellung geeignete Paketerstellung und die Bereitstellung können erfolge, ohne dass, das Problem beheben werden muss. So beheben Sie dieses Problem:<br><br>1. Entfernen Sie die ungültige Feldreferenz aus der Tabellenfeldgruppendefinition.<br><br>2. Neu kompilieren.<br><br>3. Stellen Sie sicher, dass alle Warnungen oder Fehler behoben werden. |
+| **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird in Zukunft durch einen Kompelierfehler ersetzt. |
+| **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: Die Warnung wird in Zukunft zu einem Kompilierungsfehler. Diese Änderung ist mit Plattform-Updates für Version 10.0.11 von Finance and Operations Apps geplant. |
 
 #### <a name="complete-list"></a>Vollständige Liste
 Die vollständige Liste der veralteten APIs finden Sie unter [Veraltete Methoden und Metadatenelemente](deprecation-deletion-apis.md).

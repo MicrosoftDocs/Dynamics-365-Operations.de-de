@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2019-04-16
 ms.dyn365.ops.version: Talent
-ms.openlocfilehash: a37436eb15ee4c561d5d0c15c90e37815cb80860
-ms.sourcegitcommit: 871707a3fd236da693a3d51f401eb0cb9d4bae39
+ms.openlocfilehash: aa61a70e14b7997258376beaf389129a4ad2fa73
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2897924"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197266"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-talent-april-16-2019"></a>Neuigkeiten oder Änderungen in Dynamics 365 Talent (16. April, 2019)
 
@@ -46,10 +46,6 @@ Die in diesem Abschnitt beschriebenen Änderungen gelten für Buildnummer 8.1.22
 ### <a name="compensation-region-compensation-level-benefit-option-and-skill-type-entities-in-common-data-service-updated-to-include-customer-field-support"></a>Entitäten für Kompensationsregion, Kompensationsstufe, Vorteilsoption und Fähigkeitstypen in Common Data Service wurden aktualisiert, um Debitorenfeldsupport einzuschließen
 
 Mit dieser Version wurden diese Common Data Service-Entitäten aktualisiert, um die Möglichkeit abzudecken, dass ein benutzerdefiniertes Feld einbezogen wird, das über Talent: Core HR eingeschlossen wird.
-
-### <a name="new-common-data-service-entity-support-for-compensation-vesting-rules-compensation-variable-plan-variable-compensation"></a>Neuer Common Data Service Entitätssupport für: Kompensationsübertragungsregeln, variable Kompensationsplan für variable Kompensation
-
-Mit dieser Version wurden Kompensationsübertragungsregeln, Plan für variable Kompensation und variable Kompensation in Common Data Service hinzugefügt. Diese Entitäten unterstützen auch die benutzerdefinierten Felder, die über Talent: Core HR hinzugefügt werden.
 
 ### <a name="powerbi-refresh-issues-314342"></a>PowerBI-Aktualisierungsproblem (314342)
 
@@ -93,6 +89,6 @@ Mit dieser Änderung werden Duplikate erkannt, während Sie Namenfelder eingeben
 
 ### <a name="email-support-for-alerts"></a>E-Mail-Support für Warnungen
 
-Durch Platform update 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
+Mit der Plattformaktualisierung 25 für Finance and Operations können Benutzer Warnregeln erstellen, dass automatisch E-Mail-Benachrichtigungen an Kontakte gesendet werden, wenn dies von einem Ereignis ausgelöst wird.
 
 

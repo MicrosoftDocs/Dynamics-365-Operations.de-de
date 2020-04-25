@@ -3,7 +3,7 @@ title: Beurlaubungs- und Abwesenheitsparameter konfigurieren
 description: Definieren Sie Personalparameter für Urlaub und Abwesenheit in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2acb8502ebcab122a0a1ff21e9f5e23931026327
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: eb992cbfbed33f88e125d3a8b721f8815414599a
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009129"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197980"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Beurlaubungs- und Abwesenheitsparameter konfigurieren
 
@@ -50,18 +50,25 @@ Bevor Sie Urlaubs- und Abwesenheitspläne einrichten in Dynamics 365 Human Resou
 
 7. Wählen Sie **Speichern**.
 
-## <a name="configure-calendar-parameters"></a>Konfigurieren Sie die Kalenderparameter
-
-Wenn Sie die Vorschau für Urlaubs- und Abwesenheitskalender aktiviert haben, müssen Sie zusätzliche Parameter konfigurieren. 
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-> [!NOTE]
-> Für den Vorschau-Release am 3. Februar 2020 sind nur **Ausstehende Urlaubsanträge** aktiviert.
+## <a name="view-and-change-leave-and-absence-parameters"></a>Urlaub- und Abwesenheitsparameter anzeigen und ändern
 
 1. Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**.
 
-2. Unter **Einrichtung** wählen Sie **Personalverwaltungsparameter einrichten**.
+2. Unter **Installieren**, wählen Sie **Urlaubs- und Abwesenheitsparameter**.
+
+3. Legen Sie auf der Registerkarte **Allgemein** die folgenden Parameter fest:
+ 
+    - **Einheit für Urlaub und Abwesenheit** auf Stunden oder Tage festlegen. Wenn Tage, können Sie **Aktivieren Sie die Halbtagesdefinition** auswählen, damit die Mitarbeiter in ihren Freistellungsanträgen entweder die erste oder die zweite Tageshälfte auswählen können. 
+
+    - Wählen Sie **Datum des Inkrafttretens der Dienstmonate**, um festzulegen, wann die Abgrenzungssätze für Urlaubspläne mit monatelanger Dienstzeit wirksam werden.
+
+    - Wählen Sie **Bilanzberechnung**, um Salden anzuzeigen, die ab heute oder ab dem Abgrenzungszeitraum angezeigt werden. Wenn Sie **Saldo ab heute** in der Bilanz auswählen, wird die Summe aller Rückstellungen, Anpassungen und Anforderungen bis heute angezeigt. Wenn Sie **Saldo zum Abgrenzungszeitraum** auswählen, zeigt der Saldo die Summe aller Rückstellungen, Anpassungen und Anforderungen ab dem Abgrenzungszeitraum an, der durch die Häufigkeit im Urlaubsplan definiert ist. 
+
+## <a name="configure-calendar-parameters"></a>Konfigurieren Sie die Kalenderparameter
+
+1. Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**.
+
+2. Unter **Installieren**, wählen Sie **Urlaubs- und Abwesenheitsparameter**.
 
 3. Auf der **Kalender** Registerkarte, überprüfen Sie die Einstellungen und ändern Sie sie nach Bedarf.
 

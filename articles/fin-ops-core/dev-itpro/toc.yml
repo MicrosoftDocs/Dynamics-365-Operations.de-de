@@ -14,11 +14,13 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
-                - name: Platform update 34 (Mai 2020)
+                - name: Plattformupdates zu 10.0.11 (Juli 2020)
+                  href: get-started/whats-new-platform-update-35.md
+                - name: "Plattformupdates zu 10.0.10 (Mai\_2020)"
                   href: get-started/whats-new-platform-update-34.md
-                - name: "Platform update 33 (April\_2020)"
+                - name: "Plattformupdate 33 (April\_2020)"
                   href: get-started/whats-new-platform-update-33.md
-                - name: Platform update 32 (Februar 2020)
+                - name: Plattformupdate 32 (Februar 2020)
                   href: get-started/whats-new-platform-update-32.md
                 - name: Plattformupdate 31 (Januar 2020)
                   href: get-started/whats-new-platform-update-31.md
@@ -324,8 +326,6 @@
                       href: data-entities/configuration-data-packages.md
                     - name: Konfigurationsdatenpakete (nur Version vom Juli 2017)
                       href: data-entities/configuration-data-packages.md
-                    - name: Entitätsspeicher als Data Lake zur Verfügung stellen
-                      href: data-entities/entity-store-data-lake.md
                 - name: Konfigurationsdatenvorlagen
                   href: data-entities/configuration-data-templates.md
                 - name: Änderungen an einer Entität nachverfolgen
@@ -384,11 +384,19 @@
               href: user-interface/data-validation-workspace.md
             - name: Beschreibungen von Datenverwaltungsfehlern
               href: data-entities/dm-error-descriptions.md
+        - name: Azure Data Lake
+          items:
+            - name: Vorschau von Azure Data Lake
+              href: data-entities/azure-data-lake-overview.md
+            - name: Finance and Operations-Apps in Azure Data Lake
+              href: data-entities/finance-data-azure-data-lake.md
+            - name: Entitätsspeicher als Data Lake zur Verfügung stellen
+              href: data-entities/entity-store-data-lake.md
         - name: Datenbankverschiebungsvorgänge
           items:
             - name: Übersicht
               href: database/dbmovement-operations.md
-            - name: Anleitungen zu den ersten Schritten
+            - name: Schnellstarthandbücher
               items:
                 - name: Datenbank aktualisieren
                   href: database/database-refresh.md
@@ -478,42 +486,50 @@
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Retail-Datenresidenz
                   href: deployment/retail-data-residency.md
-            - name: On-Premises-Bereitstellung
+            - name: Lokale Bereitstellung
               items:
-                - name: On-Premises-Bereitstellung – Startseite
+                - name: Startseite bei lokalen Bereitstellungen
                   href: deployment/on-premises-deployment-landing-page.md
-                - name: On-Premises-Bereitstellung – Übersicht
-                  href: deployment/on-premises-overview.md
-                - name: Planen und Vorbereiten von On-Premises-Bereitstellungen
-                  href: deployment/plan-onprem-deployment.md
-                - name: Anforderungen der Hardwaregrößenanpassung
-                  href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                - name: Einrichten von On-Premises-Projekten
-                  href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                - name: Einrichten und Bereitstellen von On-Premises-Umgebungen
+                - name: Lokale Bereitstellungen vorbereiten
                   items:
-                    - name: Einrichten und Bereitstellen von On-Premises-Umgebungen – Startseite
-                      href: deployment/setup-deploy-on-premises-environments.md
-                    - name: Bereitstellen von On-Premises-Umgebungen (Plattformupdate 12 und höher)
+                    - name: Übersicht über lokale Bereitstellungen
+                      href: deployment/on-premises-overview.md
+                    - name: Lokale Bereitstellungen planen und vorbereiten
+                      href: deployment/plan-onprem-deployment.md
+                    - name: Anforderungen zur Hardwaregrößenanpassung
+                      href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                - name: Lokale Umgebungen einrichten und bereitstellen
+                  items:
+                    - name: Lokale Projekte in LCS einrichten
+                      href: lifecycle-services/lbd-create-lcs-on-prem-project.md
+                    - name: Lokale Umgebungen einrichten und bereitstellen
                       href: deployment/setup-deploy-on-premises-pu12.md
-                    - name: "Bereitstellen lokaler Umgebungen (Plattformupdate\_8 und 11)"
-                      href: deployment/setup-deploy-on-premises-pu8-pu11.md
                     - name: Installationsschritte bei Retail-Kanalkomponenten in einer lokalen Umgebung
                       href: deployment/deploy-retail-onprem.md
+                    - name: Benutzerdefinierte Modelle für lokale Umgebungen entwickeln und bereitstellen
+                      href: deployment/develop-deploy-custom-models-on-premises.md
+                - name: Umgebung verwalten
+                  items:
+                    - name: Aktualisierungen in einer lokalen Bereitstellung anwenden
+                      href: deployment/apply-updates-on-premises.md
+                    - name: Zertifikatrotation
+                      href: deployment/certificate-rotation-on-prem.md
+                    - name: Clientinternetverbindung
+                      href: user-interface/client-disconnected.md
+                    - name: Proxys für lokale Umgebungen konfigurieren
+                      href: deployment/onprem-reverseproxy.md
+                    - name: Lokale Diagnosen
+                      href: deployment/on-premises-diagnostics.md
+                    - name: PowerBI.com-Integration mit lokalen Umgebungen
+                      href: analytics/entity-store-on-prem.md
+                    - name: Umgebungen erneut konfigurieren
+                      href: lifecycle-services/reconfigure-environment.md
+                    - name: Lokale Bereitstellungen erneut bereitstellen
+                      href: deployment/redeploy-on-prem.md
+                    - name: AOS-Knoten entfernen und erneut installieren
+                      href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Gleiche AD FS-Instanz in mehreren Umgebungen verwenden
                       href: deployment/onprem-reuseadfs.md
-                - name: Benutzerdefinierte Modelle für lokale Umgebungen entwickeln und bereitstellen
-                  href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: PowerBI.com-Integration mit lokalen Umgebungen
-                  href: analytics/entity-store-on-prem.md
-                - name: Konfigurieren von Proxys für lokale Umgebungen
-                  href: deployment/onprem-reverseproxy.md
-                - name: Updates in eine lokale Bereitstellung anwenden
-                  href: deployment/apply-updates-on-premises.md
-                - name: On-premises-Diagnosen
-                  href: deployment/on-premises-diagnostics.md
-                - name: On-Premises-Bereitstellungen erneut bereitstellen
-                  href: deployment/redeploy-on-prem.md
                 - name: Lokaler Agent
                   items:
                     - name: Kompatibilität von AD-FS Office 365
@@ -522,19 +538,15 @@
                       href: lifecycle-services/pre-post-scripts.md
                     - name: Den lokalen Agenten aktualisieren
                       href: lifecycle-services/update-local-agent.md
-                - name: Erneutes Konfigurieren von Umgebungen
-                  href: lifecycle-services/reconfigure-environment.md
-                - name: Clientinternetverbindung
-                  href: user-interface/client-disconnected.md
-                - name: Problembehandlung lokaler Bereitstellungen
-                  href: deployment/troubleshoot-on-prem.md
-                - name: Skripts für die Auflösung von Problemen in lokalen Umgebungen
-                  href: deployment/onprem-tsg-implementations.md
-                - name: Zertifikatrotation
-                  href: deployment/certificate-rotation-on-prem.md
+                - name: Problembehandlung
+                  items:
+                    - name: Problembehandlung lokaler Bereitstellungen
+                      href: deployment/troubleshoot-on-prem.md
+                    - name: Skripts zur Lösung von Problemen in lokalen Umgebungen
+                      href: deployment/onprem-tsg-implementations.md
             - name: Benutzerdefinierten Code erstellen
               items:
-                - name: Erstellen von bereitstellbaren Modellpaketen
+                - name: Bereitstellbare Modellpakete erstellen
                   href: deployment/create-apply-deployable-package.md
                 - name: Einrichten von bereitstellbaren Paketen über die Eingabeaufforderung
                   href: deployment/install-deployable-package.md
@@ -928,6 +940,8 @@
                       href: extensibility/extensibility-attributes.md
                     - name: Wichtige Änderungen
                       href: extensibility/breaking-changes.md
+                    - name: Tools zur Kompatibilitätsprüfung
+                      href: extensibility/compatibility-checker-tool.md
             - name: Leistung
               items:
                 - name: Abläufe mithilfe des Ablaufverfolgungs-Parsers verfolgen
@@ -1442,9 +1456,11 @@
               href: sysadmin/configure-manage-database-log.md
             - name: OData-Metadaten-Cache beim Starten von AOS erstellen
               href: sysadmin/odata-warmup.md
+            - name: Azure Key Vault-Client einrichten
+              href: ../../finance/localizations/setting-up-azure-key-vault-client.md
         - name: 'Upgrades, Updates und Hotfixes'
           items:
-            - name: 'Upgrades, Updates und Hotfixes – Ressourcen'
+            - name: 'Ressourcen zu Upgrades, Updates und Hotfixes'
               href: migration-upgrade/upgrade-home-page.md
             - name: Upgrade von AX 2012
               items:
@@ -1540,9 +1556,9 @@
               items:
                 - name: Updates in lokalen Bereitstellungen anwenden
                   href: deployment/apply-updates-on-premises.md
-                - name: Lokale Bereitstellungen erneut bereitstellen
+                - name: Lokale Bereitstellung erneut bereitstellen
                   href: deployment/redeploy-on-prem.md
-                - name: Direkte Aktualisierung für lokale Versionen 7.x bis 8.1
+                - name: Direktes Upgrades bei lokalen Umgebungen
                   href: migration-upgrade/on-prem-upgrade.md
             - name: Hotfixes
               items:

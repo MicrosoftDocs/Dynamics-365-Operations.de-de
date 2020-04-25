@@ -5,6 +5,12 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "13.\_April\_2020"
+          href: hr-whats-new-2020-04-13.md
+        - name: "3.\_April\_2020"
+          href: hr-whats-new-2020-04-03.md
+        - name: "24.\_März\_2020"
+          href: hr-whats-new-2020-03-24.md
         - name: "19.\_März\_2020"
           href: hr-whats-new-2020-03-19.md
         - name: "10.\_März\_2020"
@@ -101,7 +107,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
             - name: Die bevorzugte Zeitzone eines Benutzers festlegen
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
-            - name: Lifecycle Services verstehen
+            - name: Grundlagen zu Lifecycle Services
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Dokumentationsressourcen
           items:
@@ -401,9 +407,9 @@
               href: hr-compensation-process.md
         - name: Vorteile verwalten
           items:
-            - name: 'Vorschaufunktion: Vorteilsverwaltung'
+            - name: Vergütungsverwaltung
               items:
-                - name: Vorteilsverwaltung – Übersicht
+                - name: Übersicht über die Vorteilsverwaltung
                   href: hr-benefits-management-overview.md
                 - name: Vorteilsverwaltung konfigurieren
                   items:
@@ -445,12 +451,8 @@
                   items:
                     - name: Vergütungspläne einrichten
                       href: hr-benefits-plans-setup.md
-                    - name: Vergütungspläne für Arbeitskräfte erstellen
-                      href: hr-benefits-plans-worker.md
                     - name: Programme für flexible Kredite einrichten
                       href: hr-benefits-plans-flex-credit-programs.md
-                    - name: Zukünftige Lebensereignisse konfigurieren
-                      href: hr-benefits-plans-future-life-events.md
                 - name: Vergütungspläne verarbeiten
                   items:
                     - name: Vergütungsberechtigung verarbeiten
@@ -499,6 +501,8 @@
               href: hr-leave-and-absence-enroll.md
             - name: Urlaubs- und Abwesenheitspläne antizipieren
               href: hr-leave-and-absence-accrue.md
+            - name: Urlaub aussetzen
+              href: hr-leave-and-absence-suspend-leave.md
             - name: Analyse für Urlaub und Abwesenheit anzeigen
               href: hr-leave-and-absence-analytics.md
             - name: Urlaubs- und Abwesenheitsanforderungen verwalten

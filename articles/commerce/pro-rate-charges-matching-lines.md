@@ -3,7 +3,7 @@ title: Kopfzuschläge auf entsprechende Bestellpositionen aufteilen
 description: In diesem Thema werden zusätzliche Funktionen zum Berechnen und Anwenden von Auto-Belastungen für Commerce Channel-Aufträge mithilfe der erweiterten Auto-Belastungen-Funktion beschrieben.
 author: hhaines
 manager: annbe
-ms.date: 04/23/2019
+ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 5c03b1a1db11098058022a6916dc5bddf5518f9b
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 4e9b3746790355f9f72bbfddc099c4065a49ad63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022695"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175130"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Kopfzuschläge auf entsprechende Bestellpositionen aufteilen
 
@@ -37,7 +37,7 @@ Diese Funktion ist nur verfügbar, wenn die Funktion [erweiterte Auto-Belastunge
 
 Diese neuen Funktionen geben Organisationen mehr Flexibilität, indem Auto-Belastungen auf Kopfebene berechnet und auf Handelsverkaufsbuchungen angewendet werden.
 
-In App-Versionen vor Version 10.0.1 werden Auto-Belastungen auf Kopfebene, die eine bestimmte Lieferartbeziehung haben, nur dann berechnet, wenn eine Übereinstimmung mit der Lieferart vorliegt, die im Auftragskopf definiert ist.
+In älteren Versionen der App vor Version 10.0.1 werden Auto-Belastungen auf Kopfebene, die eine bestimmte Lieferartbeziehung haben, nur berechnet, wenn eine Übereinstimmung mit der Lieferart vorliegt, die im Auftragskopf definiert ist.
 
 Beispielsweise werden Auto-Belastungen auf Kopfebene für die Lieferarten **99** und **11** definiert. Ein Auftrag wird erstellt und Lieferart **99** wird im Auftragskopf definiert. Einige der Verkaufspositionen werden jedoch so eingerichtet, dass sie mit Lieferart **11** geliefert werden. In diesem Fall werden nur die Belastungen auf Kopfebene, die mit der Lieferart **99** verknüpft sind, für den Auftrag übernommen und berücksichtigt.
 
@@ -45,9 +45,9 @@ In Commerce haben die Belastungen auf Kopfebene eine zusätzliche Funktion, mit 
 
 Einige Organisationen möchten die Vorteile der abgestuften Zuschlagsberechnung nutzen, die mit Belastungen auf Kopfebene bereitgestellt werden. In Szenarios mit gemischten Liefermodi sollte auch sichergetsllt werden, ob Belastungen, die berechnet wurden, auf der Übereinstimmung mit der Lieferart basieren, die für die einzelnen Auftragspositionen definiert ist.
 
-Sie können nun Auto-Belastungen auf Kopfebene konfigurieren, sodass alle Lieferarten im Auftrag berücksichtigt werden, wenn Belastungen berechnet werden. Diese Funktionen erfordern eine komplexere Berechnungslogik zur Berechnung der Belastungen auf Kopfebene. Die Logik gruppiert alle Artikel, die geliefert werden, indem die gleiche Lieferart verwendet wird, und sie behandelt die Gruppe als Gruppe Berechnungsgruppe für die Artikel, wenn sie die Auto-Belastungen auf Kopfebene berechnet. Für Artikel, die dieselbe Lieferart haben, werden Auto-Belastungen auf Grundlage des kombinierten Verkaufswerts der Artikel berechnet. Auf diese Weise wird die entsprechende Auto-Belastungsebene bestimmt.
+Sie können nun Auto-Belastungen auf Kopfebene konfigurieren, sodass alle Lieferarten im Auftrag berücksichtigt werden, wenn Belastungen berechnet werden. Diese Funktionen erfordern eine komplexere Berechnungslogik zur Berechnung der Belastungen auf Kopfebene. Die Logik gruppiert alle Artikel, die geliefert werden, indem die gleiche Lieferart verwendet wird, und sie behandelt die Gruppe als Gruppe Berechnungsgruppe für die Artikel, wenn diese die Auto-Belastungen auf Kopfebene berechnet. Für Artikel, die dieselbe Lieferart haben, werden Auto-Belastungen auf Grundlage des kombinierten Verkaufswerts der Artikel berechnet. Auf diese Weise wird die entsprechende Auto-Belastungsebene bestimmt.
 
-Nachdem die entsprechenden Belastungen auf Kopfebene für die Verkaufspositionen empfangen wurden, die mit derselben Lieferart versendet werden, werden die berechneten Belastungen auf die Verkaufspositionsebene aufgeteilt. Da diese Zuschläge auf Positionsebene sind und nicht auf Kopfebene verbleiben, wird eine spezifischere Verknüpfung zwischen dem Artikel und dem Belastungswert vorgenommen, der berechnet wurde. Dieses Verhalten kann in den Teilrücklieferungsszenarien hilfreich sein, wenn eine Organisation nur einen Teil des Zuschlags anstelle des gesamten Zuschlags erstatten möchte, wenn nur wenige Artikel zurückgegeben werden.
+Nachdem die entsprechenden Belastungen auf Kopfebene für die Verkaufspositionen empfangen wurden, die mit derselben Lieferart versendet werden, werden dann die berechneten Belastungen auf die Verkaufspositionsebene aufgeteilt. Da diese Zuschläge auf Positionsebene sind und nicht auf Kopfebene verbleiben, wird eine spezifischere Verknüpfung zwischen dem Artikel und dem Belastungswert vorgenommen, der berechnet wurde. Dieses Verhalten kann in den Teilrücklieferungsszenarien hilfreich sein, wenn eine Organisation nur einen Teil des Zuschlags anstelle des gesamten Zuschlags erstatten möchte, wenn nur wenige Artikel zurückgegeben werden.
 
 ## <a name="scenarios"></a>Szenarien
 
@@ -169,3 +169,9 @@ Daher wird für dieses Beispiel Artikel 81334 eine Frachtkostenbelastung von $5,
 ![Verrechnete Belastungen für Verkaufsposition für Artikel 81334](media/proratedlinecharge.png)
 
 Wenn diese Berechnungsmethode in einem teilweisen Rückerstattungsszenario verwendet wird und der Belastungscode rückvergütbar ist, wird nur der Teil der Belastung, der dieser Position zugewiesen ist, erstattet, wenn der Artikel zurückgegeben wird.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Erweiterte automatische Omni-Channel-Belastungen](omni-auto-charges.md)
+
+[Automatische Belastungen nach Kanal aktivieren und konfigurieren](auto-charges-by-channel.md)

@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0a80e5b1a79c874ce0a8d24c85be71d0dc5c9c8
-ms.sourcegitcommit: 75db3b75d35d27034f9b56e7119c9d0cb7666830
+ms.openlocfilehash: b89d08d8f6a4223eb592ffa2b918504839e5287b
+ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "2550555"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "3142408"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4---run-format"></a>ER – Konfigurieren des Formats für Inventuren und Summierungen (Teil 4: Format ausführen)
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Format zur Inventarisierung und Summierung basierend auf der bereits generierten Textausgabe. Diese Schritte können im DEMF-Unternehmen ausgeführt werden.
 
-Um diese Schritte ausgeführt, müssen Sie erst die Schritte im Aufgabenleitfaden "ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 3: Nutzung von Berechnungen für Ausgaben)" ausführen.
+Um diese Schritte auszuführent, müssen Sie erst die Schritte im Aufgabenleitfaden ER - Konfigurieren des Formats für die Inventarisierung und Zusammenfassung (Teil 3: Nutzung von Berechnungen für Ausgaben) ausführen.
 
 Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Version 1611 hinzugefügt wurde.
 
@@ -49,9 +49,9 @@ Diese Prozedur ist eine Funktion, für die in Dynamics 365 for Operations Versio
 12. Klicken Sie auf "Speichern".
 13. Wechseln Sie zu "Steuer" > "Einstellungen" > "Außenhandel" > "Außenhandelsparameter".
 14. Erweitern Sie den Bereich "Elektronische Berichterstellung".
-15. Wählen Sie die Konfiguration “Intrastat (DE) mit Berechnungs- und Summierumngs"-Konfiguration.
-16. Wählen Sie die Konfiguration “Intrastat (DE) mit Berechnungs- und Summierumngs"-Konfiguration.
-17. Klicken Sie auf "Speichern".
+15. Wählen Sie die Konfiguration Intrastat (DE) mit Berechnungs- und Summierungs-Konfiguration.
+16. Wählen Sie die Konfiguration Intrastat (DE) mit Berechnungs- und Summierungs-Konfiguration.
+17. Klicken Sie auf Speichern.
 18. Schließen Sie die Seite.
 19. Wechseln Sie zu "Steuer" > "Meldungen" > "Außenhandel" > "Intrastat".
 20. Klicken Sie auf "Ausgabe".

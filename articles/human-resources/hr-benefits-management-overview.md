@@ -3,7 +3,7 @@ title: Vorteilsverwaltung – Übersicht
 description: Übersicht über die Vorschaufunktion für die Vorteilsverwaltung in Dynamics 365 Human Resources. Bieten Sie Ihren Mitarbeitern erweiterte Vorteilsoptionen mit einer benutzerfreundlichen Online-Erfahrung.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 63db1b55bae9150dd87d9981136b96d72ffd0c59
-ms.sourcegitcommit: 523049c363a999050c58d20695f1c7d151b3fd3e
+ms.openlocfilehash: 91a4425b4f020f90843bb3b0b280b7ee28463670
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029462"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230153"
 ---
 # <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
-[!include [banner](includes/preview-feature.md)]
-
-Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die besten Mitarbeiter anzuwerben und zu halten. Zusätzlich zu den Standardleistungen wie Kranken‑ und Zahnzusatzversicherung möchten Sie möglicherweise auch erweiterte Dienstleistungen wie Adoptionsunterstützung, Freizeitprogramme und Aufwandsentschädigungen anbieten. Die Vorschaufunktion für die Vorteilsverwaltung in Microsoft Dynamics 365 Human Resources bietet Ihnen eine flexible Lösung, die eine Vielzahl von Vorteilsoptionen unterstützt. Human Resources umfasst auch eine benutzerfreundliche Mitarbeitererfahrung, die Ihre Angebote vorstellt.
+Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die besten Mitarbeiter anzuwerben und zu halten. Zusätzlich zu den Standardleistungen wie Kranken‑ und Zahnzusatzversicherung möchten Sie möglicherweise auch erweiterte Dienstleistungen wie Adoptionsunterstützung, Freizeitprogramme und Aufwandsentschädigungen anbieten. Die Leistungsverwaltung in Microsoft Dynamics 365 Human Resources bietet Ihnen eine flexible Lösung, die eine Vielzahl von Vorteilsoptionen unterstützt. Human Resources umfasst auch eine benutzerfreundliche Mitarbeitererfahrung, die Ihre Angebote vorstellt.
 
 - Mit erweiterten Vorteilsplänen können Sie einzigartige Vorteilspläne erstellen und verwalten sowie komplexe Vorteilssatztabellen und verschachtelte Stufen unterstützen. Sie können auf einfache Weise Vorteilsprogramme, Bündel und Regeln für die automatische Registrierung erstellen, um die Mitarbeitererfahrung zu vereinfachen.
 
@@ -39,30 +37,30 @@ Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die 
 
 - Die Online-Vorteilsregistrierung bietet Ihren Mitarbeitern eine einfache Erfahrung.
 
-- Qualifizierte Verarbeitung von Lebensereignissen ist im Mitarbeiter-Self-Service integriert und unterstützt auch zukünftige Lebensereignisse.
+- Qualifizierte Lebensereignisverarbeitung unterstützt zukünftige Lebensereignisse.
 
 Wenn Sie auf die Demodaten zugreifen möchten, müssen Sie Ihre Sandkastenumgebung erneut bereitstellen.
 
-Sie können direktes Feedback geben oder Probleme melden an: D365BenefitsPreview@microsoft.com.
-
 ## <a name="benefits-management-known-issues"></a>Bekannte Probleme bei der Vorteilsverwaltung
 
-### <a name="eligibility-processing"></a>Verarbeitung von Berechtigungen
+### <a name="flex-credit-programs"></a>Flexible Gutschriftprogramme
 
-Wenn Sie die Berechtigung für Vorteile ausführen, die ein 1,5-faches Gehalt, einen Prozentsatz des Gehalts und ein Pauschalbetrag als Abdeckungsbetrag verwenden, müssen Sie das Datum der **Vorteilsdetails** auf das **Mitarbeiterstartdatum** in **Beschäftigungshistorie** festlegen. Sie müssen auch **Arbeitsstunden**, **Zahlungshäufigkeit** und **Jährliches Vorteilsgehalt** einschließen. Wenn die Arbeitskraft eine feste Vergütung hat, geben Sie **Arbeitsstunden** und **Zahlungshäufigkeit** ein. Der jährliche Gehaltsbetrag wird berechnet. Wenn der Mitarbeiter fest angestellt ist, müssen Sie keine **Arbeitsstunden** eintragen. Wir empfehlen, bei der Erstellung neuer Mitarbeiter zunächst eine feste Vergütung einzugeben. So aktualisieren Sie den Datensatz mit Vorteilsdetails: Navigieren Sie zu **Arbeitskraft > Beschäftigungshistorie > Beschäftigungsdetails**. Passen Sie das Datum an das Startdatum der Arbeitskraft an.
-
-### <a name="employee-self-service"></a>Mitarbeiter-Self-Service
-
-Der Mitarbeiterbetrag wird bei der Aktualisierung des Abdeckungsbetrags für die Lebensversicherung nicht berechnet. Wenn einem Mitarbeiter beispielsweise eine Lebensversicherung angeboten wird, kann er bis zu 50.000 Euro Versicherungsschutz zu einem Preis von 0,36 Euro pro 1.000 Euro Versicherungsschutz auswählen.  Wenn der Mitarbeiter den Abdeckungsbetrag aktualisiert, bleiben die damit verbundenen Kosten des Mitarbeiters bei Null.
-
-Bei einem Vorteilsplan, der nur eine einzige Auswahl dieses Plantyps zulässt, wird dem Benutzer eine Fehlermeldung angezeigt, wenn er versucht, nach Auswahl eines Plans auf einen Plan zu verzichten. Beispielsweise wählt ein Benutzer einen Krankenversicherungsplan aus und legt ihn in seinen Warenkorb. Der Benutzer wählt dann **Aufheben** für einen anderen Krankenversicherungsplan aus. Der Benutzer erhält eine Fehlermeldung.
+Der für ein flexibles Kreditprogramm definierte Gesamtkreditwert wird im nicht im Formular **Vorsorgepläne für Arbeitnehmer** angezeigt. Auch wenn Sie ein flexibles Kreditprogramm so einstellen, dass es eine Prorationsregel von **Keiner** hat, erhalten Sie einen Fehler im Formular **Vorsorgeplan für Arbeitnehmer** bei der Auswahl und Bestätigung von Plänen.
 
 ## <a name="enable-benefits-management"></a>Vorteilsverwaltung aktivieren
 
-Die Vorteilsverwaltung ist eine Vorschaufunktion und nur in **Sandkasten**umgebungen verfügbar. In diesen Artikeln wird beschrieben, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Sie geben auch an, welche vorhandenen Funktionen in Human Resources die Vorteilsverwaltung ersetzt oder deaktiviert, sobald Sie die Vorteilsverwaltung aktivieren.
+Dieser Artikel beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Er zeigt auch, welche vorhandenen Funktionen in Human Resources die Vorteilsverwaltung ersetzt oder deaktiviert, sobald Sie die Vorteilsverwaltung aktivieren.
+
+> [!IMPORTANT]
+> Nachdem Sie die Leistungsverwaltung in einer **Produktions** Umgebung aktiviert haben, können Sie diese nicht mehr deaktivieren. Wir empfehlen, das Leistungsmanagement in einer **Sandkasten** Umgebung zu aktivieren und zu testen, bevor Sie es in einer aktivieren **Produktion** Umgebung aktivieren. Es gibt erhebliche Unterschiede zwischen der alten Leistungs-Funktionalität und der neuen Leistungsverwaltungs-Funktionalität, die zusätzliche Einstellungen erfordern und vor der Inbetriebnahme getestet werden sollten.
 
 - [Funktionen verwalten](hr-admin-manage-features.md)
-- [Vorschaufunktion: Vorteilsverwaltung](hr-admin-manage-features.md?preview-feature-benefits-management)
+
+## <a name="configure-employee-information"></a>Mitarbeiterdaten konfigurieren
+
+Bevor Sie Mitarbeiter für Leistungen anmelden können, müssen Sie die erforderlichen Informationen angeben. Sie müssen einen Mitarbeiter bei seinem Eintrittsdatum in einem **Festen Vergütungsplan** erfassen und Sie müssen die **Häufigkeit der Leistungsbezüge** unter **Beschäftigungs-Details** im Formular **Arbeitskraft** auswählen.
+
+Wenn Sie einen Leistungsplan erstellen, der Sätze verwendet, die auf Geschlecht oder Alter basieren, müssen Sie ein Geburtsdatum und ein Geschlecht eingeben, damit der Mitarbeiter die Leistungskosten berechnen kann.
 
 ## <a name="configure-benefits-management"></a>Vorteilsverwaltung konfigurieren
 
@@ -80,7 +78,7 @@ Bevor Sie Vorteilspläne für Ihre Mitarbeiter erstellen können, müssen Sie Op
 - [Sätze konfigurieren](hr-benefits-setup-rates.md)
 - [Abzüge konfigurieren](hr-benefits-setup-deductions.md)
 - [Wartezeiten konfigurieren](hr-benefits-setup-waiting-days.md)
-- [Warteperioden konfigurieren](hr-benefits-setup-waiting-periods.md)
+- [Wartezeiträume konfigurieren](hr-benefits-setup-waiting-periods.md)
 - [Rundungsregeln einrichten](hr-benefits-setup-rounding-rules.md)
 - [Mitarbeiterkategorien erstellen](hr-benefits-setup-employment-categories.md)
 - [Beschäftigungstypen einrichten](hr-benefits-setup-employment-types.md)
@@ -91,9 +89,7 @@ Bevor Sie Vorteilspläne für Ihre Mitarbeiter erstellen können, müssen Sie Op
 In diesen Artikeln wird gezeigt, wie Sie Vorteilspläne erstellen, einschließlich Bündeln und Flexguthabenprogrammen.
 
 - [Vergütungspläne einrichten](hr-benefits-plans-setup.md)
-- [Vergütungspläne für Arbeitskräfte erstellen](hr-benefits-plans-worker.md)
-- [Flexguthabenprogramme einrichten](hr-benefits-plans-flex-credit-programs.md)
-- [Zukünftige Lebensereignisse konfigurieren](hr-benefits-plans-future-life-events.md)
+- [Programme für flexible Kredite einrichten](hr-benefits-plans-flex-credit-programs.md)
 
 ## <a name="process-benefit-plans"></a>Vergütungspläne verarbeiten
 

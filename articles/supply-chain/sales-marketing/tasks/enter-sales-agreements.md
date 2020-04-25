@@ -2,7 +2,7 @@
 title: Kaufverträge eingeben
 description: Dieses Thema erklärt, wie Sie einen Kaufvertrag erstellen, der einen Debitor verpflichtet, ein Produkt in einer bestimmten Menge über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Rabatte zustehen.
 author: omulvad
-manager: AnnBe
+manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,23 +10,23 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Service industries
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7699f426c102b4ae2610db0851ddd127e514b652
-ms.sourcegitcommit: 6545bef4584d72dd7789f2d3935cf00ac8f489b0
+ms.openlocfilehash: 723621f61a237d4b390271e65bce204c44ee4fc2
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "1871028"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3204331"
 ---
 # <a name="enter-sales-agreements"></a>Kaufverträge eingeben
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Dieses Thema erklärt, wie Sie einen Kaufvertrag erstellen, der einen Debitor verpflichtet, ein Produkt in einer bestimmten Menge über einen vorgegebenen Zeitraum zu erwerben, wobei ihm im Gegenzug Rabatte zustehen. Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.
 
@@ -43,7 +43,7 @@ Dieses Thema erklärt, wie Sie einen Kaufvertrag erstellen, der einen Debitor ve
 
 ## <a name="set-up-product-value-commitment-lines"></a>Produktwertzusagepositionen einrichten
 1. Wählen Sie **Position hinzufügen** aus.
-2. Wählen Sie im Feld **Artikelnummer** den gewünschten Datensatz aus dem Dropdown-Menü aus. Der Typ der Zusage, den Sie für die Vereinbarung ausgewählt haben, betrifft die Art der Informationen, die Sie für die Vereinbarungspositionen eingeben können. Für eine wertbasierte Vereinbarung müssen Sie zum Beispiel den Gesamtnettobetrag (in der vereinbarten Währung) für den der Debitor den Kauf von Waren von Ihnen zusagt angeben. In diesem Beispiel sind die Felder **Menge** und **Einheit** in der Position nicht verfügbar, da Sie eine Vereinbarung für den Kunden zum Kauf eines bestimmten Wertes eines Produkts erstellen.   
+2. Wählen Sie im Feld **Artikelnummer** den gewünschten Datensatz aus dem Dropdown-Menü aus. Der Typ der Zusage, den Sie für die Vereinbarung ausgewählt haben, betrifft die Art der Informationen, die Sie für die Vereinbarungspositionen eingeben können. Für eine wertbasierte Vereinbarung müssen Sie zum Beispiel den Gesamtnettobetrag (in der vereinbarten Währung) für den der Debitor den Kauf von Waren von Ihnen zusagt angeben. In diesem Beispiel sind die Felder **Menge** und **Einheit** in der Position nicht verfügbar, da Sie eine Vereinbarung für den Kunden zum Kauf eines bestimmten Wertes für ein Produkt erstellen.   
 3. Im Feld **Nettobetrag** geben Sie den Geldbetrag ein, den der Debitor für den Einkauf zugesagt hat.
 4. Geben Sie im Feld **Rabattprozent** einen Prozentwert ein, der für die Auftragspositionen des Debitors gilt, die dieser Vereinbarung zugeordnet sind.
 5. Erweitern Sie den Abschnitt **Positionsdetails**.

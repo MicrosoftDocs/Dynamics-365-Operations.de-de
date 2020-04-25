@@ -2,7 +2,7 @@
 title: Qualitätsmanagement-Übersicht
 description: In diesem Thema wird beschrieben, wie Sie das Qualitätsmanagement in Dynamics 365 Supply Chain Management verwenden können, um die Produktqualität innerhalb der Lieferkette zu verbessern.
 author: perlynne
-manager: AnnBe
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2d51c659d9d06f075458359d81de978e7a6d14b
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
+ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2814397"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3224908"
 ---
 # <a name="quality-management-overview"></a>Qualitätsmanagement-Übersicht
 
@@ -302,122 +302,6 @@ Im Einkauf, wenn Sie das Feld **Ereignistyp** auf **Produktzugang** und das **Au
 
 - Wenn die Option **Pro aktualisierter Menge** auf **Ja** festgelegt wird, wird ein Qualitätsprüfungsauftrag für jeden Zugang für den Auftrag anhand der Eingangsmenge und Einstellungen in der Artikelmusteraufnahme generiert. Wenn eine Menge für den Auftrag eingeht, werden neue Qualitätsprüfungsaufträge auf Grundlage der neuen Eingangsmenge generiert.
 - Wenn die Option **Pro aktualisierter Menge** auf **Nein** festgelegt wird, wird ein Qualitätsprüfungsauftrag für den ersten Zugang für den Auftrag anhand der Eingangsmenge generiert. Außerdem werden eine oder mehrere Qualitätsprüfungsaufträge auf Basis der Restmenge je nach den Überwachungsdimensionen erstellt. Qualitätsprüfungsaufträge werden nicht für nachfolgende Zugänge für den Auftrag generiert.
-
-<table>
-<tbody>
-<tr>
-<th>Qualitätsspezifikation</th>
-<th>Pro aktualisierter Menge</th>
-<th>Pro Rückverfolgungsangabe</th>
-<th>Ergebnis</th>
-</tr>
-<tr>
-<td>Prozentsatz: 10 %</td>
-<td>Ja</td>
-<td>
-<p>Chargennummer: Nein</p>
-<p>Seriennummer: Nein</p>
-</td>
-<td>
-<p>Auftragsmenge: 100</p>
-<ol>
-<li>Fertigmeldung für 30
-<ul>
-<li>Qualitätsprüfungsauftrag Nr. 1 für 3 (10 % von 30)</li>
-</ul>
-</li>
-<li>Fertigmeldung für 70
-<ul>
-<li>Qualitätsprüfungsauftrag Nr. 2 für 7 (10 % verbleibenden Auftragsmenge, die in diesem Fall 70 entspricht)</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Feste Menge: 1</td>
-<td>Nein</td>
-<td>
-<p>Chargennummer: Nein</p>
-<p>Seriennummer: Nein</p>
-</td>
-<td>Auftragsmenge: 100
-<ol>
-<li>Fertigmeldung für 30
-<ul>
-<li>Qualitätsprüfungsauftrag Nr. 1 wird für 1 erstellt (für die erste als fertig gemeldete Menge, die den festen Wert „1“ hat).</li>
-<li>Es werden keine weiteren Qualitätsprüfungsaufträge für die Restmenge erstellt.</li>
-</ul>
-</li>
-<li>Fertigmeldung für 10
-<ul>
-<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
-</ul>
-</li>
-<li>Fertigmeldung für 60
-<ul>
-<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-<tr>
-<td>Feste Menge: 1</td>
-<td>Ja</td>
-<td>
-<p>Chargennummer: Ja</p>
-<p>Seriennummer: Ja</p>
-</td>
-<td>
-<p>Auftragsmenge: 10</p>
-<ol>
-<li>Fertigmeldung für 3
-<ul>
-<li>Qualitätsprüfungsauftrag Nr. 1 für 1 von Charge Nr. b1, Serie Nr. s1</li>
-<li>Qualitätsprüfungsauftrag Nr. 2 für 1 von Charge Nr. b2, Serie Nr. s2</li>
-<li>Qualitätsprüfungsauftrag Nr. 3 für 1 von Charge Nr. b3, Serie Nr. s3</li>
-</ul>
-</li>
-<li>Fertigmeldung für 2
-<ul>
-<li>Qualitätsprüfungsauftrag Nr. 4 für 1 von Charge Nr. b4, Serie Nr. s4</li>
-<li>Qualitätsprüfungsauftrag Nr. 5 für 1 von Charge Nr. b5, Serie Nr. s5</li>
-</ul>
-</li>
-</ol>
-<p><strong>Hinweis:</strong> Die Charge kann wiederverwendet werden.</p>
-</td>
-</tr>
-<tr>
-<td>Feste Menge: 2</td>
-<td>Nein</td>
-<td>
-<p>Chargennummer: Ja</p>
-<p>Seriennummer: Ja</p>
-</td>
-<td>
-<p>Auftragsmenge: 10</p>
-<ol>
-<li>Fertigmeldung für 4
-<ul>
-<li>Qualitätsprüfungsauftrag Nr. 1 für 1 von Charge Nr. b1, Serie Nr. s1.</li>
-<li>Qualitätsprüfungsauftrag Nr. 2 für 1 von Charge Nr. b2, Serie Nr. s2.</li>
-<li>Qualitätsprüfungsauftrag Nr. 3 für 1 von Charge Nr. b3, Serie Nr. s3.</li>
-<li>Qualitätsprüfungsauftrag Nr. 4 für 1 von Charge Nr. b4, Serie Nr. s4.</li>
-<li>Es werden keine weiteren Qualitätsprüfungsaufträge für die Restmenge erstellt.</li>
-</ul>
-</li>
-<li>Fertigmeldung für 6
-<ul>
-<li>Es werden keine Qualitätsprüfungsaufträge erstellt.</li>
-</ul>
-</li>
-</ol>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### <a name="production"></a>Produktion
 

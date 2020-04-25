@@ -1,9 +1,9 @@
 ---
 title: Abdeckungsoptionen erstellen
-description: Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind die Abdeckungsgrade für die Wahl eines Teilnehmers in einem Vorteilsplan oder ‑programm, z. B. „Nur Mitarbeiter“ für einen Krankenversicherungsplan oder „2x Gehalt“ für einen Lebensversicherungsplan.
+description: Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind Deckungsgrade für die Wahl eines Teilnehmers in einem Leistungsplan oder -programm.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0af2b6ae0853b4c7f64c4d4f04299c87089d622b
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 021fea7604af2fff833ddc6868d55a316ef70aae
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092705"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3230176"
 ---
 # <a name="create-coverage-options"></a>Abdeckungsoptionen erstellen
 
-[!include [banner](includes/preview-feature.md)]
+Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind Deckungsgrade für die Wahl eines Teilnehmers in einem Leistungsplan oder -programm. Zu den Deckungsoptionen könnten beispielsweise gehören **Nur für Mitarbeiter** für einen medizinischen Plan oder **2x Gehalt** für eine Lebensversicherung. Nach der Definition können Sie die Optionen für die Leistungsdeckung wiederverwenden. Sie können eine Option einem oder mehreren Plänen zuordnen.
 
-Abdeckungsoptionen in Microsoft Dynamics 365 Human Resources sind die Abdeckungsgrade für die Wahl eines Teilnehmers in einem Vorteilsplan oder ‑programm, z. B. „Nur Mitarbeiter“ für einen Krankenversicherungsplan oder „2x Gehalt“ für einen Lebensversicherungsplan. Nach der Definition sind die Optionen der Vorteilsabdeckung wiederverwendbar und Sie können eine Option mit einem oder mehreren Plänen verknüpfen.
-
-Wenn die Abdeckungsoptionen definiert sind, hängen Sie die Abdeckungsoptionen an einen Vorteilsplantyp an. Der Plantyp wird dann einem Vorteilsplan oder ‑programm zugeordnet. Abdeckungsoptionen, die einem Plantyp zugeordnet sind, stehen für alle Pläne zur Verfügung, die mit diesem Plantyp erstellt wurden. 
+Nachdem Sie die Abdeckungsoptionen definiert haben, hängen Sie die Abdeckungsoptionen an einen Vorteilsplantyp an. Der Plantyp wird dann einem Vorteilsplan oder ‑programm zugeordnet. Abdeckungsoptionen, die einem Plantyp zugeordnet sind, sind für alle Pläne verfügbar, die mit diesem Plantyp erstellt wurden. 
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellung** die Option **Abdeckungsoptionen**.
 

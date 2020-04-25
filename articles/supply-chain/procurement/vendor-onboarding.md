@@ -2,7 +2,7 @@
 title: Kreditoren aufnehmen
 description: In diesem Thema wird der Prozess beschreiben, durch den neue Kreditoren aufgenommen werden. Es werden die Aktivitäten erklärt, die während des Prozesses von verschiedenen Rollen erforderlich sind.
 author: mkirknel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -10,18 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests,SysUserRequestListPage
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: b1290617cc691f88f517a4f3cae5c20668173b0d
-ms.sourcegitcommit: 2460d0da812c45fce67a061386db52e0ae46b0f3
+ms.openlocfilehash: a7168f9042bae561eb46ecdc8eea377862af8df0
+ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "2250145"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3203410"
 ---
 # <a name="onboard-vendors"></a>Kreditoren aufnehmen
 [!include [banner](../includes/banner.md)]
@@ -48,7 +48,7 @@ In der folgenden Tabelle werden die Schritte und die Rollen angezeigt, die am Pr
 | Administrator            | | | Erstellen Sie einen Benutzer in Supply Chain Management und Microsoft Azure | | | |
 | Kontaktperson des Kreditors    | | | Senden Sie eine E-Mail an die Kontaktperson. | Erfassen Sie Kreditoreninformationen. | | |
 
-Für eine schnelle Vorführung des Onboarding-Prozesses des Kreditors, schauen Sie sich dieses kurze YouTube-Video an: [Einen neuen Kreditor in Finance and Operations onboarden](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+Für eine rasche Präsentation des Lieferanten-Onboardingprozesses schauen Sie das kurze YouTube Video zu [Einen neuen Lieferanten in Finance and Operations einführen](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## <a name="importing-the-prospective-vendor-registration-request"></a>Importieren der Registrierungsanforderung des künftigen Kreditors
 

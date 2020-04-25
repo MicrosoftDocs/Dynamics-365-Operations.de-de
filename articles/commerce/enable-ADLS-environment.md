@@ -3,7 +3,7 @@ title: ADLS in Dynamics 365 Commerce-Umgebung aktivieren
 description: In diesem Thema wird das Aktivieren und Testen von Azure Data Lake Storage (ADLS) für eine Dynamics 365 Commerce-Umgebung erläutert. Dies ist eine Grundvoraussetzung für die Aktivierung von Produktempfehlungen.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3c037f5603af5af84917084eefa1edd508891c0d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: ba428765babb9ca7566da7a457368959b1c29083
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154435"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259747"
 ---
 # <a name="enable-adls-in-a-dynamics-365-commerce-environment"></a>ADLS in Dynamics 365 Commerce-Umgebung aktivieren
 
@@ -48,7 +48,8 @@ Weitere Informationen zu ADLS finden Sie in der [offiziellen ADLS-Dokumentation]
   
 ## <a name="configuration-steps"></a>Konfigurationsschritte
 
-In diesem Abschnitt werden die Konfigurationsschritte beschrieben, die zum Aktivieren von ADLS in einer Umgebung erforderlich sind.
+Dieser Abschnitt behandelt die Konfigurationsschritte, die zum Aktivieren von ADLS in einer Umgebung erforderlich sind, und bezieht sich auf Produktempfehlungen.
+Eine ausführlichere Übersicht über die zum Aktivieren von ADLS erforderlichen Schritte finden Sie unter [Stellen Sie den Entity Store als Data Lake zur Verfügung](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-adls-in-the-environment"></a>Aktivieren Sie ADLS der Umgebung
 
@@ -91,6 +92,8 @@ Ist die Konfiguration noch nicht vollständig, befolgen Sie für die Umgebung di
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
+[Entitätsspeicher als Data Lake zur Verfügung stellen](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
@@ -110,5 +113,3 @@ Ist die Konfiguration noch nicht vollständig, befolgen Sie für die Umgebung di
 [Empfehlungen mit Demodaten erstellen](product-recommendations-demo-data.md)
 
 [Produktempfehlungs-FAQs](faq-recommendations.md)
-
-

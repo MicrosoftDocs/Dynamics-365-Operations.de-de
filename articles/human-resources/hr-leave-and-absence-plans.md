@@ -3,7 +3,7 @@ title: Erstellen Sie einen Urlaubs- und Abwesenheitsplan
 description: Urlaubspläne erstellen in Dynamics 365 Human Resources für verschiedene Arten von Urlaub.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed7a47068c451cd3ffaa26ee709599373858721b
-ms.sourcegitcommit: 3cad15f8ecc257d3a45c1bc1fada7c094ff4bcec
+ms.openlocfilehash: 532d9b276692858c77e4de41018775e9520f1882
+ms.sourcegitcommit: 79f8aa2c0b166a423db9b8503da53e96e3fc43dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "3087299"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3197358"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Erstellen Sie einen Urlaubs- und Abwesenheitsplan
 
@@ -42,6 +42,11 @@ Sie können auch arbeitsplatzbezogene Urlaubsleistungen, z. B. nur für Führung
 1. Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf **Neuen Plan erstellen**.
 
 2. Unter **Einzelheiten**, geben Sie den **Namen**, **Anfangsdatum**, **Beschreibung**, und **Abwesenheitstyp** für Ihren Plan ein.
+
+Wenn die Funktion **Konfigurieren Sie mehrere Urlaubstypen für einen einzelnen Urlaubs- und Abwesenheitsplan** aktiviert ist, werden Urlaubstypen im **Abgrenzungsplan** statt unter **Einzelheiten** konfiguriert. Für jeden Datensatz in der Abgrenzungstabelle können Sie eine Urlaubsart definieren.
+
+ > [!IMPORTANT]
+   > Nachdem Sie dies Funktion aktiviert haben, können Sie diese nicht mehr deaktivieren.
 
 3. Rückstellungen definieren in der Registerkarte **Rückstellungen**: Rückstellungen bestimmen, wann und wie oft ein Mitarbeiter freie Zeit erhält. In diesem Schritt definieren Sie Richtlinien über den Zeitpunkt von Abgrenzungen und Richtlinien zur Aufteilung von Urlaubsleistungen.
 
@@ -95,8 +100,8 @@ Sie können auch arbeitsplatzbezogene Urlaubsleistungen, z. B. nur für Führung
    Sie können Ebenen erstellen, um Freizeit auf der Grundlage verschiedener Ebenen zu vergeben.
 
    Wenn sie Mitarbeiter im Stundensatz haben, können Sie Freizeit auf Grundlage der Stunden vergeben, anstelle der Anstellung bei der Organisation. Die Daten für die gearbeiteten Stunden werden in der Regel in einem Zeit- und in einem Anwesenheitssystem gespeichert. Sie können reguläre Arbeitsstunden und Überstunden aus dem Zeiterfassungssystem importieren und als Grundlage für die Auszeichnung eines Mitarbeiters verwenden.
-
-   1. Wählen Sie eine Option aus dem Dropdown-Feld **Abgrenzungstyp**:
+   
+    1. Wählen Sie eine Option aus dem Dropdown-Feld **Abgrenzungstyp**:
 
       - **Dienstmonate** – Den Abgrenzungsplan auf die Dienstmonate stützen.
 
@@ -117,6 +122,13 @@ Sie können auch arbeitsplatzbezogene Urlaubsleistungen, z. B. nur für Führung
       - **Maximaler Übertragssaldo** - Der Abgrenzungsprozess reguliert Urlaubsaldi, die den maximalen Übertragsaldo für den Jahrestag des Startdatums im Feld überschreiten.
 
       - **Zuschussbetrag** - Dies is die Anzahl von Stunden oder die Tage, die Mitarbeitern gewährt werden, wenn sie zuerst im Urlaubplan registriert werden. Der Betrag wird nicht für jede Abgrenzungsperiode antipiziert.
+      
+Wenn die Funktion **Konfigurieren Sie mehrere Urlaubstypen für einen einzelnen Urlaubs- und Abwesenheitsplan** aktiviert ist, wählen Sie eine Option **Typ verlassen** aus. 
+
+   > [!IMPORTANT]
+   > Nachdem Sie dies Funktion aktiviert haben, können Sie diese nicht mehr deaktivieren.
+
+Wenn die Funktion **Festgelegte Vollzeitäquivalen nutzen** aktiviert ist, nutzt die Personalabteilung die für die Position festgelegte Vollzeitäquivalenz (FTE), um die Rückstellung eines Mitarbeiters aufzuteilen. Wenn zum Beispiel der VZÄ 0,5 beträgt und der Abgrenzungsbetrag 10 beträgt, wird der Mitarbeiter 5 abgrenzen. Sie können diese Funktion nur verwenden, wenn Sie mehrere Urlaubsarten aktivieren.  
 
 5. Wählen Sie **Speichern**.
 
@@ -357,19 +369,6 @@ Geplanter Saldo (30) = Antizipierter Betrag (10 × 1) + Aktueller Saldo (40) –
 |---------------------|-------------------|-----------------|------------|----------------|-----------------|---------|
 | Jeannette Nicholson | 0,00              | 6/1/2018        | 6/1/2018   | 1,00           | 9/1/2018        | 3.00    |
 | Jay-Norman          | 0,00              | 6/15/2018       | 6/15/2018  | 1.00           | 9/1/2018        | 2.00    |
-
-## <a name="configure-preview-features"></a>Vorschaufunktionen konfigurieren
-
-Wenn Sie die Vorschaufunktionen für Urlaub und Abwesenheit aktiviert haben, müssen Sie auch die Einstellungen für sie konfigurieren.
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-1. **Vorschaufunktion: Konfigurieren Sie mehrere Urlaubstypen für einen einzelnen Urlaubs- und Abwesenheitsplan**. Für jeden Datensatz in der Abgrenzungstabelle können Sie eine Urlaubsart definieren.
-
-   > [!IMPORTANT]
-   > Nachdem Sie dies Funktion aktiviert haben, können Sie diese nicht mehr deaktivieren.
-
-2. **Vorschaufunktion: Verwenden Sie die Vollzeitäquivalenz**. Wenn Sie diese Vorschaufunktion aktivieren, verwendet die Personalabteilung die für die Position festgelegte Vollzeitäquivalenz (FTE), um die Rückstellung eines Mitarbeiters aufzuteilen. Wenn zum Beispiel der VZÄ 0,5 beträgt und der Abgrenzungsbetrag 10 beträgt, wird der Mitarbeiter 5 abgrenzen. Sie können diese Funktion nur verwenden, wenn Sie mehrere Urlaubsarten aktivieren.
 
 ## <a name="see-also"></a>Siehe auch
 

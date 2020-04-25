@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
 manager: AnnBe
-ms.date: 02/05/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c745248a0c7e54b58b1d3e491f3bbb067ec0e2c2
-ms.sourcegitcommit: d8a2301eda0e5d0a6244ebbbe4459ab6caa88a95
+ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
+ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029361"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260505"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -80,7 +80,7 @@ Einige der typischsten und wichtigsten Änderungen, die Sie an einer Seite vorne
 
 Darüber hinaus sind die Typen der grundlegendsten expliziten Personalisierung verfügbar, indem Sie auf ein Element mit der rechten Maustaste klicken und dann **Anpassen** auswählen. (Beachten Sie, dass nicht alle Elemente auf der Seite personalisiert werden können.) Wenn Sie diese Methode der Personalisierung auswählen, wird das Eigenschaftenfenster des Elements angezeigt.
 
-![Personalisieren der Eigenschaften eines Elements](./media/personalization-element-properties.png)
+![Personalisieren der Eigenschaften eines Elements](./media/cli-element-property-window.png)
 
 Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hinsicht zu personalisieren:
 
@@ -89,6 +89,7 @@ Sie können das Eigenschaftenfenster verwenden, um ein Element in folgender Hins
 - Schließt die zusammengefassten Informationen im Bereich des Inforegisters ein (falls das Element in einem Inforegister ist).
 - Überspringen Sie das Feld, sodass es beim Blättern durch die Seite nie den Fokus erhält.
 - Verhindern Sie, dass Daten im Feld (für einen beliebigen Datensatz) bearbeitet werden.
+- Geben Sie ein Feld an, das für die Dateneingabe erforderlich ist. Wenn in dieses Feld kein Wert eingegeben wurde, wird dieser mit einem roten Rand und einem Sternchen angezeigt, um diesen Status anzuzeigen. Diese Option ist ab Version 10.0.11 nur verfügbar, wenn [Gespeicherte Ansichten](saved-views.md) und **Legen Sie Felder nach Bedarf mithilfe der Personalisierung fest** Funktionen aktiviert sind.
 
 Das Eigenschaftenfenster kann andere Personalisierungsfunktionen enthalten, abhängig vom Element. Beispielsweise können Sie mit dem Eigenschaftenfenster für eine Kachel diese Kachel in einem Dashboard höher stufen, und das Eigenschaftenfenster für das Dashboard lässt Sie möglicherweise einen neuen Arbeitsbereich auf diesem Dashboard erstellen.
 
@@ -116,6 +117,7 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 - Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Umlagern** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus, das umgelagert werden soll. Wenn Sie ein Element auswählen, überprüft die App die Standorte, an die das Element verschoben werden kann. Diese Lagerplätze werden als *Abstiegszonen* bezeichnet. Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
 - Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können Felder der Tabulatorsequenz interaktiv entfernen oder hinzufügen.
 - Verwenden Sie das Tool **In Kopfzeile anzeigen**, wenn ein Feld im Zusammenfassungsbereich des Inforegisters angezeigt werden soll. Wenn Sie die Schaltfläche **In Kopfzeile anzeigen** auf der Symbolleiste auswählen, werden alle Felder, die als Zusammenfassungsfelder ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder daraus entfernen, indem Sie die Felder auswählen.
+- Verwenden Sie das Werkzeug **Benötigt** zum Festlegen eines Elements, das für die Dateneingabe erforderlich ist. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade als erforderlich gekennzeichnet wurden, in einem schattierten Container angezeigt. Sie können definieren, dass sie nicht mehr erforderlich sind. Diese Option ist in einer künftigen Version verfügbar, wenn [Gespeicherte Ansichten](saved-views.md) und **Legen Sie Felder nach Bedarf mithilfe der Personalisierung fest** Funktionen aktiviert sind.
 - Wählen Sie das Tool **Sperren** aus, wenn Sie ein Element als „Bearbeitbar“ oder „Nicht bearbeitbar“ markieren wollen. Wenn Sie die Schaltfläche **Sperren** auf der Symbolleiste auswählen, werden alle Elemente, die gerade nicht bearbeitbar sind, in einem schattierten Container angezeigt. Sie können definieren, dass sie wieder geändert werden können. Beachten Sie: Mehrere Felder sind obligatorisch und können nicht als nicht bearbeitbar festgelegt werden. Ein Schlosssymbol wird neben den Feldern angezeigt.
 - Nutzen Sie die Schaltfläche **Eine App hinzufügen von Power Apps**, um eine App einzufügen, die unter Microsoft Power Apps auf der Seite erstellt wurde. Detaillierte Informationen zum Einbetten einer App von Power Apps in eine Seite finden Sie unter [Einbetten von Apps von Power Apps](embed-power-apps.md). Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) deaktiviert ist.  
 - Nutzen Sie die Schaltfläche **Eine App hinzufügen** zu dieser Seite, um eine App einzufügen, die entweder von Microsoft Power Apps oder einer Drittpartei erstellt wurde. Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) aktiviert ist. 

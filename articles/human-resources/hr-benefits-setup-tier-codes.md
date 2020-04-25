@@ -3,7 +3,7 @@ title: Schichtcodes einrichten
 description: Dynamics 365 Human Resources verwendet Stufencodes mit Vergütungssätzen, die von den Mitarbeitern und vom Arbeitgeber gezahlt werden.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 15b6d84876b6f3907b052f6b297ab52bbd182a0f
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 26ff5459fc387dcb4192f0b558174700d081fecc
+ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092445"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "3229611"
 ---
 # <a name="set-up-tier-codes"></a>Schichtcodes einrichten
-
-[!include [banner](includes/preview-feature.md)]
 
 Dynamics 365 Human Resources verwendet Stufencodes mit Vergütungssätzen, die von den Mitarbeitern und vom Arbeitgeber gezahlt werden. Sie können eine unbegrenzte Anzahl von Stufencodes definieren und Satzberechnungen einrichten, um den Anforderungen Ihres Unternehmens gerecht zu werden.
 
@@ -39,7 +37,7 @@ Dynamics 365 Human Resources verwendet Stufencodes mit Vergütungssätzen, die v
 
    | Feld | Beschreibung |
    | --- | --- |
-   | Stufencode | Ein eindeutiger Vorteilsstufencode oder eine eindeutige Vorteilsstufennummer, um den Stufencode zu identifizieren. |
-   | Beschreibung | Eine Beschreibung des Vorteilsstufencodes. |
+   | **Stufencode** | Ein eindeutiger Vorteilsstufencode oder eine eindeutige Vorteilsstufennummer, um den Stufencode zu identifizieren. |
+   | **Beschreibung** | Eine Beschreibung des Vorteilsstufencodes. |
 
 4. Wählen Sie **Speichern**. 

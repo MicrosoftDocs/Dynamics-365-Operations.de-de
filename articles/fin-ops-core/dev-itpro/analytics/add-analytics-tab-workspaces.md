@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: de85bf52d8e3415549db64501b2435ebd7377fef
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 442557a01b25e13b76074c865dfe5468bbc9fde0
+ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025853"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "3259631"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um die Formulardefinition für den Arbeitsbereich **Res
 8. Klicken Sie mit der rechten Maustaste und wählen Sie dann **Neue Registerkartenseite**.
 9. Geben Sie der Registerkarte einen sprechenden Namen, wie beispielsweise **Analysen**.
 10. Wählen Sie im Formulardesigner **Analysen (Registerkartenseite)**.
-11. Setzen Sie die Legen Sie die **Überschrift**-Eigenschaft auf **Analysen**.
+11. Legen Sie die Eigenschaft **Bildbeschriftung** auf **Analytik** und die Eigenschaft **Automatische Deklaration** auf **Ja** fest.
 12. Klicken Sie mit der rechten Maustaste auf das Steuerelement und wählen Sie dann **Neu**\>**Gruppe**, um ein neues Formulargruppensteuerelement hinzuzufügen.
 13. Geben Sie der Formulargruppe einen sprechenden Namen, wie beispielsweise **powerBIReportGroup**.
 14. Wählen Sie im Formulardesigner **PanoramaBody (Registerkarte)** und ziehen Sie das Steuerelement auf die Registerkarte **Arbeitsbereich**.

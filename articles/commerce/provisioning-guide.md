@@ -3,7 +3,7 @@ title: Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung
 description: In diesem Thema wird erläutert, wie eine Vorschauumgebung in Microsoft Dynamics 365 Commerce bereitgestellt wird.
 author: psimolin
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 04/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cbd4c118de2e91c8849461b20a01403049a07e66
-ms.sourcegitcommit: 4ed1d8ad8a0206a4172dbb41cc43f7d95073059c
+ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
+ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3024635"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "3254747"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung
 
@@ -234,8 +234,6 @@ Führen Sie folgende Schritte aus, um e-Commerce zu initialisieren.
 ## <a name="commerce-preview-environment-support"></a>Unterstützung für die Commerce-Vorschauumgebung
 
 Wenn beim Abschließen der Bereitstellungsschritte Probleme auftreten, schauen Sie sich die [Microsoft Dynamics 365 Commerce Vorschau Yammer-Gruppe](https://aka.ms/Dynamics365CommercePreviewYammer) an, um weitere Hilfe zu erhalten.
-
-Wenn Sie Probleme haben, wenn Sie versuchen, auf die Yammer-Gruppe zuzugreifen, können Sie sich per E-Mail unter <Dynamics365Commerce@microsoft.com> an Microsoft wenden. Diese E-Mail-Adresse wird nicht aktiv überwacht. Erwarten Sie daher eine Verzögerung in der Antwort.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

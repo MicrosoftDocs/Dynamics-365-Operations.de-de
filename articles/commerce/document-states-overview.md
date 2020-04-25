@@ -3,7 +3,7 @@ title: Dokumentstatus und -Lebenszyklus
 description: In diesem Thema werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
 author: phinneyridge
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b4f1c462f734b2d58843308f0f877fe18a4d9af7
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
+ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002980"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3261512"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentstatus und -Lebenszyklus
 
@@ -37,13 +37,13 @@ Die [Seitenelemente](page-elements-overview.md) der Themen führen verschiedene 
 
 Die folgende Tabelle enthält die möglichen Dokumentstatus von Seitenelementen in Commerce.
 
-| Dokumentstatus | Beschreibung |
-|---|---|
-| Ausgecheckt | Wenn ein CMS-Artikel ausgecheckt wird von Ihnen, kann dies nicht von jedem beliebigen anderen authentifizierten Systembenutzern bearbeitet werden. Alle Änderungen, die Sie am Artikel vornehmen, sind nur für Sie angezeigt. |
-| Eingecheckt | Wenn ein CMS-Artikel eingecheckt wird, sind alle Änderungen für andere authentifizierte Systembenutzer angezeigt, und die Benutzer können den Artikel dann auschecken und bearbeitet werden. Jedes Einchecken erstellt einen Dokumentversionsdatensatz im Workflowverlauf des Artikels. |
-| Publiziert | Wenn ein CMS-Artikel veröffentlicht wird, wird er an Ihre Livesite weitergeleitet und wird im Internet für nicht-authentifizierte externe Benutzer sichtbar. Artikel können veröffentlicht werden, nachdem sie eingecheckt wurden. |
-| Gespeichert | Änderungen, die an einem ausgecheckten CMS-Element erfolgt sind, können im CMS gespeichert werden, bevor der Artikel eingecheckt oder veröffentlicht wird. Diese gespeicherten Änderungen sind nicht für andere authentifizierten Systembenutzer sichtbar, bis der Artikel eingecheckt ist. Sie sind nicht für externe Benutzer sichtbar, bis der Artikel veröffentlicht wird. |
-| Auschecken verworfen | Wenn ein ausgecheckter CMS-Artikel verworfen wird, werden sämtliche gespeicherten Änderungen gelöscht, und der Artikel wieder in der Version verwendet, die zuletzt eingecheckt wurde. |
+| Dokumentstatus      | Site Builder Aktivität        | Beschreibung                                                  |
+| ------------------- | -------------------------- | ------------------------------------------------------------ |
+| Ausgecheckt         | Wählen Sie **Bearbeiten** aus.           | Das entsprechende Dokument wird Ihnen ausgecheckt. Während sich ein Dokument in diesem Status befindet, kann es von anderen authentifizierten Systembenutzern nicht geändert werden, und alle Änderungen, die Sie am Dokument vornehmen, sind nur für Sie sichtbar. |
+| Gespeichert               | Wählen Sie **Speichern**.           | Änderungen, die an einem ausgecheckten Dokument vorgenommen wurden, werden in der Datenbank gespeichert, das Dokument ist jedoch noch nicht eingecheckt oder veröffentlicht. Die gespeicherten Änderungen sind nicht für andere authentifizierten Systembenutzer sichtbar, bis der Artikel **Bearbeitung beendet** gewählt wird. Sie sind nicht für externe Benutzer sichtbar, bis der Artikel veröffentlicht wird. |
+| Auschecken verworfen | Wählen Sie **Änderungen verwerfen**.  | Alle Änderungen am ausgecheckten Dokument werden verworfen, und das Element wird auf die zuletzt eingecheckte Version zurückgesetzt. |
+| Eingecheckt          | Wählen Sie **Beenden Sie die Bearbeitung**. | Das bearbeitete Dokument ist eingecheckt. Alle Änderungen sind für andere authentifizierte Systembenutzer sichtbar, und diese Benutzer können das Dokument dann bearbeiten. Jedes Einchecken erstellt einen Dokumentversionsdatensatz im Workflowverlauf des Artikels. |
+| Publiziert           | Wählen Sie **Veröffentlichen** aus.        | Das Dokument wird veröffentlicht, und die Änderungen werden auf Ihre Live-Site übertragen und können von externen Benutzern erkannt werden. Artikel können nur veröffentlicht werden, wenn sie zuerst eingecheckt wurden durch Auswahl von **Bearbeitung beenden**. |
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

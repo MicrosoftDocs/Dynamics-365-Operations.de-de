@@ -1,6 +1,6 @@
 ---
-title: Business Intelligence (BI) und Berichterstellung – Startseite
-description: In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die verfügbaren Tools zu Business Intelligence und zur Berichterstellung.
+title: Berichterstellung und Analysen mit der Power BI-Startseite
+description: In diesem Thema werden Ressourcen vorgestellt, in denen Sie weitere Informationen über die erhältlichen Tools zu Business Intelligence und zur Berichterstellung erhalten.
 author: sericks007
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5da4272e65940708d301d465966dea3f53498b48
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 424da665f91820f3fe42c98b352a646dd3db72c5
+ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771563"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "3258579"
 ---
-# <a name="business-intelligence-bi-and-reporting-home-page"></a>Business Intelligence (BI) und Berichterstellung – Startseite
+# <a name="reporting-and-analytics-with-power-bi-home-page"></a>Berichterstellung und Analysen mit der Power BI-Startseite
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema erhalten Sie Hinweise zu Ressourcen. Diese bieten Ihnen weitere Informationen über die verfügbaren Tools zu Business Intelligence (BI) und zur Berichterstellung.
+In diesem Thema werden Ressourcen vorgestellt, in denen Sie weitere Informationen über die erhältlichen Tools zu Business Intelligence (BI) und zur Berichterstellung erhalten.
 
 ## <a name="get-started"></a>Erste Schritte
-- [Informationszugriff und Berichterstellung](information-access-reporting.md)
+- [Zugang zu Informationen und Berichterstellung](information-access-reporting.md)
 - [Technologie-Gespräch: Berichtoptionen](https://www.youtube.com/watch?v=NzZONjKs5xA) (Video)
-- [Finance and Operations: Power BI-Analyse- und Reporting Services-Blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (Blog)
+- [Finance and Operations: Blog zu Analysen und Reporting Services von Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (Blog)
 
 ## <a name="analytical-workspaces"></a>Analytische Arbeitsbereiche
 Arbeitsbereiche können umfangreiche Infografiken und visuelle Elemente verwenden, die von Microsoft Power BI unterstützt werden. Diese Infografiken und visuellen Elemente umfassen viele Steuerelemente von Drittanbietern. Daher können Arbeitsbereiche eine hochgradig visuelle, interaktive Oberfläche für Benutzer bieten.
@@ -58,8 +58,8 @@ Berichterstellungslösungen werden häufig verwendet, um die Details von Geschä
 Weitere Informationen finden Sie in folgenden Themen:
 
 - [Dokumenterstellungsservices](document-reporting-services.md)
-- [Dokumentendruck – Übersicht](print-documents.md)
-- [Installieren des Dokument-Routing-Agent, um Netzwerkdruck zu aktivieren](install-document-routing-agent.md)
+- [Übersicht zum Dokumentendruck](print-documents.md)
+- [Dokumentweiterleitungsagent für Netzwerkdruck installieren](install-document-routing-agent.md)
 
 ## <a name="electronic-reporting"></a>Elektronische Berichterstellung
 „Elektronische Berichterstellung” (ER) ist das Tool, mit dem Sie elektronische Dokumentformate konfigurieren, die die gesetzlichen Anforderungen verschiedener Länder oder Regionen erfüllen. Die Anwendungen der elektronischen Berichterstellung umfassen Finanzüberwachung, Steuererklärung und elektronische Rechnungsstellung.

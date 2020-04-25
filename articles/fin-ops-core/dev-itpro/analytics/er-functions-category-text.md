@@ -3,7 +3,7 @@ title: Liste der EB-Funktionen in der Textkategorie
 description: Dieses Thema enthält Informationen zu den Textfunktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
 author: NickSelin
 manager: kfend
-ms.date: 12/05/2019
+ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f519d242fe74196b0d12bdc9df4f1b4b0e585752
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: bd4dd7e9a3e1aa448adea5abd0c21b8133f34e3b
+ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916613"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3201088"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste der EB-Funktionen in der Textkategorie
 
@@ -52,7 +52,7 @@ Mithilfe der Textfunktionen für die elektronische Berichterstellung (EB) könne
 | [Ersetzen](er-functions-text-replace.md) | Diese Funktion gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem er ganz oder teilweise durch eine andere Zeichenfolge ersetzt wurde. |
 | [NACH-RECHTS-TASTE](er-functions-text-right.md) | Diese Funktion gibt den Wert *String* zurück, der die angegebene Anzahl von Zeichen ab dem Ende der angegebenen Zeichenfolge angibt. |
 | [Text](er-functions-text-text.md) | Diese Funktion gibt die angegebene Zahl mit dem Wert *String* zurück, nachdem sie in eine Textzeichenfolge konvertiert wurde, die gemäß den Servergebietsschemaeinstellungen der aktuellen Anwendungsinstanz formatiert ist. |
-| [Übersetzen](er-functions-text-translate.md) | Diese Funktion gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem er ganz oder teilweise durch eine andere Zeichenfolge ersetzt wurde. |
+| [Übersetzen](er-functions-text-translate.md) | Diese Funktion gibt einen *Zeichenfolgen* Wert zurück, der das Ergebnis der Ersetzung des angegebenen Textes in Zeichen für einen anderen bereitgestellten Zeichensatz enthält. |
 | [Trim](er-functions-text-trim.md) | Diese Funktion gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem führende und nachfolgende Leerzeichen abgeschnitten wurden und nachdem mehrfache Leerzeichen zwischen Wörtern entfernt wurden. |
 | [Upper](er-functions-text-upper.md) | Diese Funktion gibt die angegebene Textzeichenfolge mit dem Wert *String* zurück, nachdem er in Großbuchstaben umgewandelt wurde. |
 
