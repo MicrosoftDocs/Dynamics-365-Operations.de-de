@@ -18,36 +18,10 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: "Plattformupdates zu 10.0.10 (Mai\_2020)"
                   href: get-started/whats-new-platform-update-34.md
-                - name: "Plattformupdate 33 (April\_2020)"
+                - name: "Plattformupdate\_33 (April\_2020)"
                   href: get-started/whats-new-platform-update-33.md
-                - name: Plattformupdate 32 (Februar 2020)
+                - name: "Plattformupdate\_32 (Februar 2020)"
                   href: get-started/whats-new-platform-update-32.md
-                - name: Plattformupdate 31 (Januar 2020)
-                  href: get-started/whats-new-platform-update-31.md
-                - name: Plattformupdate 30 (November 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-30.md
-                - name: "Plattformupdate\_29 (Oktober 2019)"
-                  href: ../fin-ops/get-started/whats-new-platform-update-29.md
-                - name: Plattformupdate 28 (Juli 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-28.md
-                - name: Plattformupdate 27 (Juni 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-27.md
-                - name: Plattformupdate 26 (Mai 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-26.md
-                - name: Plattformupdate 25 (April 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-25.md
-                - name: Plattformupdate 24 (März 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-24.md
-                - name: Plattformupdate 23 (Januar 2019)
-                  href: ../fin-ops/get-started/whats-new-platform-update-23.md
-                - name: Plattformupdate 22 (Dezember 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-22.md
-                - name: Plattformupdate 21 (November 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-21.md
-                - name: "Plattformupdate\_20 (September\_2018)"
-                  href: ../fin-ops/get-started/whats-new-platform-update-20.md
-                - name: Plattformupdate 15 (März 2018)
-                  href: ../fin-ops/get-started/whats-new-platform-update-15.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Plattformfunktionen
@@ -102,9 +76,11 @@
               href: dev-tools/continuous-delivery-faq.md
             - name: Testpakete aus Build-Ausgabe ausschließen
               href: dev-tools/exclude-test-packages.md
-            - name: Drittanbietermodelle und Laufzeitpakete über Quellcodekontrolle verwalten
+            - name: Drittanbietermodelle und Laufzeitpakete über Quellcodeverwaltung verwalten
               href: dev-tools/manage-runtime-packages.md
-            - name: Aktualisieren der Modellversionen im automatisierten Build
+            - name: Bereitstellbare All-in-One-Pakete
+              href: dev-tools/aio-deployable-packages.md
+            - name: Modellversionen im automatisierten Build aktualisieren
               href: dev-tools/version-models-build.md
         - name: Datenintegration
           items:
@@ -526,7 +502,7 @@
                       href: lifecycle-services/reconfigure-environment.md
                     - name: Lokale Bereitstellungen erneut bereitstellen
                       href: deployment/redeploy-on-prem.md
-                    - name: AOS-Knoten entfernen und erneut installieren
+                    - name: AOS-Knoten entfernen und erneut installieren oder hinzufügen
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Gleiche AD FS-Instanz in mehreren Umgebungen verwenden
                       href: deployment/onprem-reuseadfs.md

@@ -70,12 +70,12 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Startseite von Finance
                       href: get-started/whats-new-home-page.md
+                    - name: "Finance\_10.0.11 (Juli\_2020)"
+                      href: get-started/whats-new-changed-10-0-11.md
                     - name: "Finance\_10.0.10 (Mai\_2020)"
                       href: get-started/whats-new-changed-10-0-10.md
                     - name: "Finance\_10.0.9 (April 2020)"
                       href: get-started/whats-new-changed-10-0-9.md
-                    - name: "Finance\_10.0.8 (Februar 2020)"
-                      href: get-started/whats-new-changed-10-0-8.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
@@ -978,12 +978,16 @@
               href: project-management/tasks/configure-intercompany-project-invoicing.md
             - name: Standardkosten für Arbeit und Ausgaben konfigurieren
               href: project-management/tasks/configure-standard-costs-labor-expenses.md
+            - name: Kreditorenzahlungen des Typs „Zahlung bei Zahlungsempfang“ einrichten und verwenden
+              href: project-management/setup-manage-vendor-payments.md
             - name: Projektkostenabgrenzung für Einkaufslieferungen
               href: accounts-payable/project-cost-accrual-purchase-receipts.md
             - name: Projektrechnungsstellung
               href: accounts-payable/project-invoicing.md
             - name: Projektverträge
               href: project-management/project-contracts.md
+            - name: Erweiterte Verträge für Abrechnung nach Arbeitsstatus erstellen
+              href: project-management/project-create-advanced-contracts-for-billing-based-progress.md
             - name: Projektplanungen und -budgets
               href: project-management/project-forecasts-budgets.md
             - name: Projektbudget zum Ende des Geschäftsjahres übertragen
@@ -1012,13 +1016,15 @@
                   href: project-management/project-timesheet.md
                 - name: Projektarbeitszeitnachweise auf einem mobilen Gerät
                   href: project-management/mobile-timesheets.md
-                - name: Implementieren benutzerdefinierter Felder für die mobile Project-Timesheet-Anwendung
+                - name: Benutzerdefinierte Felder für die mobile Projektarbeitszeitnachweis-App implementieren
                   href: project-management/custom-fields-mobile.md
+            - name: Projektzuschüsse
+              href: project-management/project-grants.md
         - name: Öffentlicher Sektor
           items:
             - name: Startseite für den öffentlichen Sektor
               href: public-sector/public-sector-functionality.md
-            - name: Plan für die Funktionalität des öffentlichen Sektors
+            - name: Für die Funktionalität des öffentlichen Sektors planen
               href: public-sector/plan-public-sector-functionality.md
             - name: Deckblätter und Unterzeichnungsseiten für einen Zahlungsbericht im öffentlichen Sektor erstellen
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
@@ -2016,6 +2022,8 @@
                   href: localizations/emea-ita-exil-unique-certification.md
                 - name: Wechselprotestimport
                   href: localizations/emea-ita-exil-protest-boe.md
+                - name: Steuerlicher Höchstbetrag
+                  href: localizations/emea-ita-exil-tax-plafond.md
             - name: Japan
               items:
                 - name: Japan – Übersicht
