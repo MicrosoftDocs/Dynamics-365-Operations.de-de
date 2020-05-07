@@ -3,7 +3,7 @@ title: Mehrwertsteuerzahlungen und Rundungsregeln
 description: In diesem Artikel wird beschrieben, wie sich die Rundungsregeleinstellung auf die Mehrwertsteuer-Behörden und auf die Rundung des Mehrwertsteuersaldos während der Abrechnung und Buchung der Mehrwertsteuer auswirkt.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 05/30/2018
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: yijialuan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e66a62007025964b3d58ff0620ebecd6d9769f9
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771751"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275673"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Mehrwertsteuerzahlungen und Rundungsregeln
 
@@ -43,26 +43,26 @@ Die Gesamtumsatzsteuer für eine Periode zeigt ein Guthaben von -98.765,43 an. D
 
 Die juristische Person möchte eine Rundungsmethode verwenden, mit der der Saldo auf die nächsten 1,00 gerundet wird. Der Benutzer, der für die Mehrwertsteuerbuchhaltung zuständig ist, führt die folgenden Schritte aus.
 
-1.  Klicken Sie auf "Steuer" &gt; "Indirekte Steuern" &gt; "Mehrwertsteuer" &gt; "Mehrwertsteuerbehörden".
-2.  Wählen Sie im Inforegister "Allgemein" im Feld "Rundungsart" die Option "Normal" aus.
-3.  Geben Sie im Feld "Rundung" die Zahl 1,00 ein.
-4.  Wenn die Mehrwertsteuer an das Finanzamt abgeführt werden soll, öffnen Sie die Seite "Mehrwertsteuer abrechnen und buchen". (Klicken Sie auf "Steuer" &gt; "Erklärungen" &gt; "Mehrwertsteuer" &gt; "Mehrwertsteuer abrechnen und buchen".)
-5.  Im Mehrwertsteuer-Abrechnungskonto wird der Steuerverbindlichkeitsbetrag von 98.765,43 auf 98.765 abgerundet.
+1. Klicken Sie auf **Steuer** > **Indirekte Steuern** > **Mehrwertsteuer** > **Mehrwertsteuerbehörden**.
+2. Wählen Sie im Inforegister **Allgemein** im Feld **Rundungsart** die Option **Normal** aus.
+3. Geben Sie im Feld **Rundung** die Zahl 1,00 ein.
+4. Wenn die Mehrwertsteuer an das Finanzamt abgeführt werden soll, wechseln Sie zu **Steuer** > **Meldungen** > **Mehrwertsteuer** > **Mehrwertsteuer abrechnen und buchen**. Im Mehrwertsteuer-Abrechnungskonto können Sie sehen, dass der Steuerverbindlichkeitsbetrag von **98.765,43** auf **98.765** abgerundet wird.
 
-Die folgende Tabelle zeigt, wie ein Betrag von 98.765,43 gerundet wird. Dabei wird jede Rundungsmethode angewendet, die im Feld "Rundungsart" auf der Seite "Steuerbehörden" verfügbar ist.
+Die folgende Tabelle zeigt, wie ein Betrag von 98.765,43 gerundet wird. Dabei wird jede Rundungsmethode angewendet, die im Feld **Rundungsart** auf der Seite **Steuerbehörden** verfügbar ist.
 
-| Option der Rundungsart                | Rundungswert = 0,01 | Rundungswert = 0,10 | Rundungswert = 1,00 | Rundungswert = 100,00 |
-|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|
-| Normal                              | 98.765,43              | 98.765,40              | 98.765,00              | 98.800,00                |
-| Abwärts                            | 98.765,43              | 98.765,40              | 98.765,00              | 98.700,00                |
-| Aufrunden                         | 98.765,43              | 98.765,50              | 98.766,00              | 98.800,00                |
-| Eigener Vorteil, für ein Guthaben | 98.765,43              | 98.765,40              | 98.765,00              | 98.700,00                |
-| Eigener Vorteil, für ein Debitorensaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                |
+> [!NOTE]                                                                                  
+> Wenn der Rundungswert auf 0,00 eingestellt ist, gilt Folgendes:
+>
+> - Bei normaler Rundung ist das Rundungsverhalten das Gleiche wie für **Rundung = 0,01**.
+> - Für **Option der Rundungsart**, **Abrunden**, **Aufrunden** und **Eigener Vorteil** ist das Verhalten mit dem für **Rundung = 1,00** identisch.
 
-
-### <a name="no-rounding-at-all-since-the-round-off-is-000"></a>Kein Runden, da die Rundung 0,00
-
-Rundung(1,0151, 0,00) = 1,0151 Rundung(1,0149, 0,00) = 1,0149
+| Option der Rundungsart                | Rundungswert = 0,01 | Rundungswert = 0,10 | Rundungswert = 1,00 | Rundungswert = 100,00 | Rundungswert = 0,00   |
+|-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|
+| Normal                              | 98,765.43              | 98,765.40              | 98,765.00              | 98,800.00                | 98,765.43                |
+| Abwärts                            | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Aufrunden                         | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
+| Eigener Vorteil, für ein Guthaben | 98,765.43              | 98,765.40              | 98,765.00              | 98,700.00                | 98,765.00                |
+| Eigener Vorteil, für ein Debitorensaldo  | 98,765.43              | 98,765.50              | 98,766.00              | 98,800.00                | 98,766.00                |
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normale Rundung und Rungungsgenauigkeit ist 0,01
 

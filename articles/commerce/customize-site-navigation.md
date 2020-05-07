@@ -3,7 +3,7 @@ title: Anpassen der Sitenavigation
 description: In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce Site zu organisieren.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2235510c7ef386d66fe3b137f8e791d14706379
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001828"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269658"
 ---
 # <a name="customize-site-navigation"></a>Anpassen der Sitenavigation
 
@@ -93,7 +93,7 @@ Um benutzerdefinierte Navigationsoptionen Ihrem Navigationsmenü hinzuzufügen, 
 1. Im Eigenschaftenbereich auf der Registerkarte **Daten**, wählen Sie **Artikel hinzufügen**, um einen neuen Navigationsartikel des Content Management-Systems (CMS) zu erstellen.
 1. Geben Sie Hyperlinktext und eine URL ein.
 1. Wiederholen Sie die Schritte 2 und 3, um kundenspezifischere Navigationsoptionen hinzuzufügen.
-1. Wenn Sie fertig sind, speichern Sie das Original oder das Fragment, und laden Sie es hoch.
+1. Wenn Sie fertig sind, wählen Sie **Speichern**, um die Vorlage oder das Fragment zu speichern, und wählen Sie dann **Bearbeitung beenden**, um diese einzuchecken.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

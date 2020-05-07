@@ -19,17 +19,16 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 54201de6b242f8100c19a78468476a6308b1b18a
-ms.sourcegitcommit: 5554b3abb4365666992efad692ae28e943faebd4
+ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
+ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "3116555"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3265580"
 ---
 # <a name="show-discounts-in-pos"></a>Rabatte im POS anzeigen
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Werbeaktionen spielen eine wichtige Rolle bei der Motivation von Kunden, die Kaufentscheidungen treffen. Beispielsweise können Feiertage die höchsten Verkaufszahlen für Einzelhändler hervorbringen, da der gesamte Einzelhandelsmarkt mit verlockenden Werbeaktionen und Rabatten überflutet wird. Wenn die Mitarbeiter in den Geschäften die verfügbaren Aktionen kennen und verstehen, können sie diese Aktionen leicht für Cross-Selling und Up-Selling von Artikeln nutzen. In diesem Thema wird erläutert, wie Microsoft Dynamics 365 Commerce Vertriebsmitarbeitern dabei hilft, sich über Werbeaktionen zu informieren und wie sie für Cross- und Upsell-Bewegungen genutzt werden können.
 

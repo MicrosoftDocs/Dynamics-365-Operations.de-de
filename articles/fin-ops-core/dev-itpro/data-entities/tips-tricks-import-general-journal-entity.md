@@ -1,9 +1,9 @@
 ---
 title: Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
 description: Dieser Thema enthält Tipps zum Importieren von Daten in die allgemeine Erfassung über die Entität der allgemeinen Erfassung.
-author: ShylaThompson
+author: rcarlson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 23a4cff85bb5c9d119f9ec47e8421aa1964a3d4f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 13ea54a6fc4ccdfbcc917b533fe9896d57bcb347
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2769609"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281485"
 ---
 # <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Best Practices zum Importieren von Belegen mithilfe der Entität der allgemeinen Erfassung
 
@@ -30,7 +30,7 @@ ms.locfileid: "2769609"
 
 Dieser Thema enthält Tipps zum Importieren von Daten in die allgemeine Erfassung über die Entität der allgemeinen Erfassung.
 
-Sie können die Entität der allgemeinen Erfassung zum Import von Belegen nutzen, die den Konto- oder Gegenkontotyp **Sachkonto, Kunde, Lieferant oder Bank** haben. Der Beleg kann als eine Position eingegeben werden, und zwar mithilfe des Felds **Konto** oder des Felds **Gegenkonto** oder als mehrzeiliger Beleg, wobei nur das Feld **Konto** verwendet wird (das **Gegenkonto** bleibt bei den einzelnen Positionen leer). Die Entität der allgemeinen Erfassung unterstützt nicht jede Kontenart. Stattdessen gibt es für Szenarien, in denen verschiedene Kombinationen von Kontenarten erforderlich sind, andere Entitäten. Um beispielsweise eine Projektbuchung zu importieren, verwenden Sie die Entität der Projektausgabenerfassung. Jede Entität wurde so entworfen, dass bestimmte Szenarien unterstützt werden, d.h., dass zusätzliche Felder möglicherweise in Entitäten für diese Szenarios verfügbar sind, aber keine Entitäten für ein anderes Szenario.
+Sie können die Entität der allgemeinen Erfassung zum Import von Belegen nutzen, die den Konto- oder Gegenkontotyp **Sachkonto**, **Kunde**, **Lieferant** oder **Bank** haben. Der Beleg kann als eine Position eingegeben werden, und zwar mithilfe des Felds **Konto** oder des Felds **Gegenkonto** oder als mehrzeiliger Beleg, wobei nur das Feld **Konto** verwendet wird (das **Gegenkonto** bleibt bei den einzelnen Positionen leer). Die Entität der allgemeinen Erfassung unterstützt nicht jede Kontenart. Stattdessen gibt es für Szenarien, in denen verschiedene Kombinationen von Kontenarten erforderlich sind, andere Entitäten. Um beispielsweise eine Projektbuchung zu importieren, verwenden Sie die Entität der Projektausgabenerfassung. Jede Entität unterstützt bestimmte Szenarien. Das bedeutet, dass in Entitäten für diese Szenarien möglicherweise zusätzliche Felder verfügbar sind. In Entitäten für verschiedene Szenarien sind jedoch möglicherweise keine zusätzlichen Felder verfügbar.
 
 ## <a name="setup"></a>Einstellung
 Bevor Sie mit der Entität der allgemeinen Erfassung einen Import durchführen, prüfen Sie die folgenden Einstellungen:
@@ -44,9 +44,9 @@ Zwei Einstellungen im Datenmanagement beeinflussen die Anwendungen der standardm
 - **Auf Sätzen basierende Verarbeitung** (auf der Datenintität)
 - **Automatisch generiert** (im Feld "Zuordnung")
 
-In den folgenden Abschnitten beschreiben die Auswirkung dieser Einstellung und auch erklären, wie Nummern der Stapelverarbeitungserfassung und Belegnummern generiert werden.
+In den folgenden Abschnitten werden die Auswirkungen dieser Einstellungen beschrieben. Sie erläutern außerdem, wie das System Chargennummern für Erfassungs- und Belegnummern generiert.
 
-### <a name="journal-batch-number"></a>Erfassungschargennummer
+### <a name="journal-batch-number"></a>Lfd. Nummer
 
 - Die **Auf Sätzen basierende Verarbeitung**-Einstellung für die Einrichtung der Entität der allgemeinen Erfassung beeinflusst die Erstellung von Nummern der Stapelverarbeitungserfassung nicht.
 - Wenn das Feld **Nummer der Stapelverarbeitungserfassung** auf **Automatisch generiert** festgelegt ist, wird für jede importiert Position eine neue Nummer der Stapelverarbeitungserfassung erstellt. Dies Verhalten wird nicht empfohlen. Die **Automatisch generieren**-Einstellung finden Sie im Importprojekt unter **Zuordnung anzeigen** auf der **Zuordnungsdetails**-Registerkarte.
@@ -57,10 +57,10 @@ In den folgenden Abschnitten beschreiben die Auswirkung dieser Einstellung und a
 
 ### <a name="voucher-number"></a>Belegnummer
 
-- Wenn Sie die Einstellungen **Auf Sätzen basierende Verarbeitung** für die Entität der allgemeinen Erfassung verwenden, muss die Belegnummer in der importierten Datei bereitgestellt werden. Jede Buchung in der allgemeinen Erfassung erhält die Belegnummer, die in der importierten Datei bereitgestellt wird (auch, wenn der Beleg nicht ausgeglichen ist). Wenn Sie die satzbasierte Verarbeitung verwenden möchten, aber auch den Nummernkreis verwenden möchten, der für Belegnummern definiert ist, steht dafür ab Februar 2016 ein Hotfix bereit. Die Hotfix-Nummer ist 3170316. Er steht über Lifecycle Services (LCS) zum Download bereit. Weitere Informationen finden Sie unter [Download von Updates aus Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
+- Wenn Sie die Einstellungen **Auf Sätzen basierende Verarbeitung** für die Entität der allgemeinen Erfassung verwenden, muss die Belegnummer in der importierten Datei bereitgestellt werden. Jede Buchung in der allgemeinen Erfassung erhält die Belegnummer, die in der importierten Datei bereitgestellt wird (auch, wenn der Beleg nicht ausgeglichen ist). Beachen Sie folgende Punkte, wenn Sie neben der satzbasierten Verarbeitung auch den Nummernkreis verwenden möchten, der für Belegnummern definiert ist.
 
     - Um diese Funktionalität zu aktivieren legen Sie **Nummernzuordnung bei der Buchung** im für die Importe verwendeten Erfassungsnamen auf **Ja** fest.
-    - Eine Belegnummer muss weiterhin in der importierten Datei definiert werden. Diese Nummer ist jedoch vorübergehend und wird bei der Buchung der Erfassung mit einer Belegnummer überschrieben. Sie müssen sicherstellen, dass die Positionen der Erfassung korrekt nach der temporären Belegnummer gruppiert werden. Beispielsweise werden während der Buchung drei Positionen mit einer temporären Belegnummer von 1 gefunden. Die vorübergehende Belegnummer für alle drei Positionen wird durch die nächste Nummer des Nummernkreises überschrieben. Wenn diese drei Zeilen keine ausgeglichenen Posten sind, wird der Beleg nicht gebucht. Wenn Positionen gefunden werden, die eine temporäre Belegnummer 2 haben, wird diese Nummer von der nächsten Belegnummer im Nummernkreis überschrieben, usw.
+    - Eine Belegnummer muss weiterhin in der importierten Datei definiert werden. Diese Nummer ist jedoch vorübergehend und wird bei der Buchung der Erfassung mit einer Belegnummer überschrieben. Achten Sie darauf, dass die Positionen der Erfassung korrekt nach der temporären Belegnummer gruppiert werden. Beispielsweise werden während der Buchung drei Positionen mit einer temporären Belegnummer von 1 gefunden. Die vorübergehende Belegnummer für alle drei Positionen wird durch die nächste Nummer des Nummernkreises überschrieben. Wenn diese drei Zeilen keine ausgeglichenen Posten sind, wird der Beleg nicht gebucht. Wenn Positionen gefunden werden, die eine temporäre Belegnummer 2 haben, wird diese Nummer von der nächsten Belegnummer im Nummernkreis überschrieben, usw.
 
 - Wenn Sie die Einstellung **Auf Sätzen basierende Verarbeitung** verwenden, müssen Sie keine Belegnummer in der importierten Datei bereitstellen. Die Belegnummern werden während des Imports auf der Basis der Einrichtung des Erfassungsnamens erstellt (**Nur ein Beleg**, **In Verbindung mit dem Saldo** usw.). Wenn beispielsweise der Erfassungsname als **In Verbindung mit Saldo** definiert ist, erhält die erste Position eine neue Standard-Belegnummer. Das System evaluiert dann die Position, um zu bestimmten, ob Soll und Haben übereinstimmen. Existiert ein Gegenkonto für die Position, erhält die nächste importierte Position eine neue Belegnummer. Existiert kein Gegenkonto, evaluiert das System bei jeder neuen importierten Position, ob Soll und Haben ausgeglichen sind.
 - Wenn das Feld **Belegnummer** auf **Automatisch generieren** festgelegt ist, schlägt der Import fehl. Die Einstellung **Automatisch generieren** wird für die das Feld **Belegnummer** nicht unterstützt.

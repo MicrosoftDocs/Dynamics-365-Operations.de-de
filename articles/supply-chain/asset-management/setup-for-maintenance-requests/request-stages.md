@@ -3,7 +3,7 @@ title: Wartungsanfrage-Lebenszyklusstatus
 description: In diesem Thema wird beschrieben, wie Wartungsanfrage-Lebenszyklusstatus in Asset Management eingerichtet werden.
 author: josaw1
 manager: tfehr
-ms.date: 07/26/2019
+ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d1e4412af0619b57467b5bcba75ea7259604d1d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 08c45742b064f3a13a0ea2704f8873b9c53aad4e
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209006"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275625"
 ---
 # <a name="maintenance-request-lifecycle-states"></a>Wartungsanfrage-Lebenszyklusstatus
 
@@ -47,7 +47,7 @@ Wartungsanfrage-Lebenszyklusstatus definieren die Phasen, die eine Anfrage durch
 6. Legen Sie die Option **Tatsächliches Ende festlegen** auf **Ja** fest, wenn automatisch ein tatsächliches Enddatum und eine Uhrzeit für eine Wartungsanfrage eingegeben werden sollen, die diesen Lebenszyklusstatus hat.
 7. Legen Sie die Option **Arbeitsauftrag erstellen** auf **Ja** fest, wenn ein Arbeitsauftrag aus einer Wartungsanfrage erstellt werden kann, die diesen Lebenszyklusstatus hat.
 8. Legen Sie die Option **Löschen** auf **Ja** fest, wenn eine Wartungsanfrage gelöscht werden kann, während sie diesen Lebenszyklusstatus hat.
-9. Auf dem Inforegister **Aktualisieren** sind die Optionen **Zugang** und **Abgang** im Abschnitt **Anlage** relevant, wenn Sie die Depotreparatur verwenden. Legen Sie die entsprechende Option auf **Ja** fest, wenn der Anlagenlebenszyklusstatus von Anlagen, die in einer Wartungsanfrage ausgewählt werden, automatisch in **Zugang** oder **Abgang** aktualisiert werden soll, wenn der Wartungsanfrage-Lebenszyklusstatus dieser Wartungsanfrage auf **Zugang** oder **Abgang** festgelegt wird.
+9. Im Inforegister **Aktualisieren** sind die Optionen **Eingehend** und **Ausgehend** im Bereich **Anlage** relevant, wenn Sie die Depotreparatur verwenden. Legen Sie die entsprechende Option auf **Ja** fest, wenn der Lebenszyklusstatus von Anlagen, die in einer Wartungsanfrage ausgewählt sind, automatisch zu **Eingehend** oder **Ausgehend** aktualisiert werden soll, wenn der Lebenszyklusstatus der Wartungsanfrage auf **Eingehend** oder **Ausgehend** festgelegt ist.
 
 Die folgende Abbildung zeigt ein Beispiel der Seite **Wartungsanfrage-Lebenszyklusstatus**.
 

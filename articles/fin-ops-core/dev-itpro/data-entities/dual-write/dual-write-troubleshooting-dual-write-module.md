@@ -19,18 +19,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 34c10e38400a72a670a93f2a72d0aa7a4aed561a
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172759"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275532"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Probleme mit dem Modul für duales Schreiben in Finance and Operations-Apps behandeln
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegration zwischen den Apps Finance and Operations und Common Data Service. Dieses Thema enthält insbesondere Informationen zur Fehlerbehebung, mit denen Sie Probleme beheben können, die mit dem Modul **Duales Schreiben** in der Finance and Operations App zusammenhängen.
 
@@ -41,17 +39,14 @@ Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegrat
 
 Wenn Sie die Seite **Duales Schreiben** nicht öffnen können durch Auswahl der Kachel **Duales Schreiben** im Arbeitsbereich **Datenmverwaltung**, ist der Datenintegrationsdienst wahrscheinlich ausgefallen. Erstellen Sie ein Support-Ticket, um einen Neustart des Datenintegrationsdienstes anzufordern.
 
-## <a name="error-when-you-try-to-create-a-new-entity-mapping"></a>Fehler beim Versuch, eine neue Entitätszuordnung zu erstellen
+## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Fehler beim Versuch, eine neue Entitätszuordnung zu erstellen
 
-**Erforderliche Anmeldeinformationen zum Lösen des Problems:** Azure AD Mandant Admin
+**Erforderliche Anmeldeinformationen zur Behebung des Problems:** Derselbe Benutzer, der duales Schreiben eingerichtet hat.
 
-Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, eine neue Entität für Duales Schreiben zu konfigurieren:
+Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, eine neue Entität für Duales Schreiben zu konfigurieren. Der einzige Benutzer, der eine Karte erstellen kann, ist der Benutzer, der die duale Schreibverbindung eingerichtet hat.
 
 *Der Antwortstatuscode zeigt keinen Erfolg an: 401 (Nicht erlaubt)*
 
-Dieser Fehler tritt auf, weil nur ein Azure AD Mandantenadministrator eine neue Entitätszuordnung hinzufügen kann.
-
-Um das Problem zu beheben, melden Sie sich bei der Finance and Operations App als Azure AD Administratormandant an. Sie müssen auch ins Web.PowerApps.com gehen und Ihre Verbindung erneut bestätigen.
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Fehler beim Öffnen der Benutzeroberfläche Duales Schreiben
 
@@ -63,13 +58,13 @@ Um das Problem zu beheben, melden Sie sich über ein InPrivate-Fenster bei Micro
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-entity-mapping"></a>Fehler beim Verknüpfen der Umgebung für Duales Schreiben oder Hinzufügen einer neuen Entitätszuordnung
 
-**Erforderliche Anmeldeinformationen zum Lösen des Problems:** Azure AD Mandant Admin
+**Erforderliche Rolle zur Behebung des Problems:** Systemadministrator in Finance and Operations-Apps und Common Data Service.
 
 Beim Verknüpfen oder Erstellen von Zuordnungen kann der folgende Fehler auftreten:
 
 *Antwortstatuscode zeigt keinen Erfolg an: 403 (Token-Austausch).<br> Sitzungs-ID: \<Ihre Sitzungs-ID\><br> Stammaktivitäts-ID: \<Ihre Stammaktivitäts-ID\>*
 
-Dieser Fehler kann auftreten, wenn Sie nicht über ausreichende Berechtigungen verfügen, um Duales Schreiben zu verknüpfen oder Zuordnungen zu erstellen. Sie müssen ein Azure AD Mandantenadministratorkonto zum Verknüpfen von Umgebungen und Hinzufügen neuer Entitätszuordnungen verwenden. Nach dem Einrichten können Sie jedoch ein Nicht-Administratorkonto verwenden, um den Status zu überwachen und die Zuordnungen zu bearbeiten.
+Dieser Fehler kann auftreten, wenn Sie nicht über ausreichende Berechtigungen verfügen, um Duales Schreiben zu verknüpfen oder Zuordnungen zu erstellen. Dieser Fehler kann auch auftreten, wenn die Common Data Service-Umgebung zurückgesetzt wurde, ohne die Verknüpfung zum dualen Schreiben aufzuheben. Jeder Benutzer mit Systemadministratorrolle in Finance and Operations-Apps und Common Data Service kann die Umgebungen verbinden. Nur der Benutzer, der die duale Schreibverbindung eingerichtet hat, kann neue Entitätszuordnungen hinzufügen. Nach dem Setup kann jeder Benutzer mit Systemadministratorrolle den Status überwachen und die Zuordnungen bearbeiten.
 
 ## <a name="error-when-you-stop-the-entity-mapping"></a>Fehler beim Beenden der Entitätszuordnung
 
@@ -80,3 +75,14 @@ Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie versuchen, d
 Dieser Fehler tritt auf, wenn die verknüpfte Common Data Service Umgebung nicht verfügbar ist.
 
 Erstellen Sie ein Ticket für das Datenintegrationsteam, um das Problem zu beheben. Fügen Sie die Netzwerkablaufverfolgung hinzu, damit das Datenintegrationsteam die Zuordnung als **wird nicht ausgeführt** im hinteren Ende markieren kann.
+
+## <a name="error-while-trying-to-start-an-entity-mapping"></a>Fehler beim Versuch, eine Entitätszuordnung zu starten
+
+Möglicherweise wird eine Fehlermeldung wie die folgende angezeigt, wenn Sie versuchen, den Status einer Zuordnung auf **Laufend** festzulegen:
+
+*Die anfängliche Datensynchronisierung kann nicht abgeschlossen werden. Fehler: Dualer Schreibfehler – Plugin-Registrierung fehlgeschlagen: Suchmetadaten für duales Schreiben können nicht erstellt werden. Fehlerobjektreferenz nicht auf eine Instanz eines Objekts festgelegt.*
+
+Die Behebung dieses Fehlers hängt von der Fehlerursache ab:
+
++ Wenn die Zuordnung abhängige Zuordnungen enthält, müssen Sie die abhängigen Zuordnungen dieser Entitätszuordnung aktivieren.
++ In der Zuordnung fehlen möglicherweise Quell- oder Zielfelder. Wenn ein Feld in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Entitätsfelder treten auf Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Wenn ein Feld in Common Data Service fehlt, dann klicken Sie in der Zuordnung auf die Schaltfläche **Entitäten aktualisieren**, damit die Felder automatisch wieder in die Zuordnung eingefügt werden.

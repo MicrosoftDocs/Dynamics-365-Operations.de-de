@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 679448255bd85aafb07270f4858d4b83d2fe643b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204032"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268792"
 ---
 # <a name="set-up-quality-orders"></a>Qualitätsprüfungsaufträge einrichten
 
@@ -78,6 +78,9 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 8. Klicken Sie auf **Speichern**.
 9. Schließen Sie die Seite.
 
+> [!NOTE]
+> Die Funktion *Qualitätsmanagement für Lagerortprozesse* bietet zusätzliche Funktionen für die Artikelmusteraufnahme. Sie fügt ein Konzept des *Umfangs der Artikelmusteraufnahme* hinzu und die Fähigkeit, ein vollständiges Kennzeichen als Mengenangabe zu definieren. Wenn Sie diese Funktion aktiviert haben, finden Sie unter [Qualitätsmanagement für Lagerortprozesse](../quality-management-for-warehouses-processes.md) weitere Details.
+
 ## <a name="create-a-quality-group"></a>Eine Qualitätsgruppe erstellen
 1. Wechseln Sie zu **Lagerverwaltung > Einstellungen > Qualitätskontrolle > Qualitätsgruppen**.
 2. Klicken Sie auf **Neu**.
@@ -131,3 +134,5 @@ Diese Prozedur zeigt Ihnen an, wie ein Qualitätsmanagementprozess aktiviert wir
 16. Klicken Sie auf **Speichern**.
 17. Schließen Sie die Seite.
 
+> [!NOTE]
+> Die Funktion *Qualitätsmanagement für Lagerortprozesse* steuert bietet zusätzliche Einstellungsoptionen für Qualitätszuordnungen. Sie fügt eine neue Bedingung (**Zutreffender Lagerorttyp**) hinzu sowie eine neue Einstellung (**Qualitätsverarbeitungsrichtlinie**). Wenn Sie diese Funktion aktiviert haben, finden Sie unter [Qualitätsmanagement für Lagerortprozesse](../quality-management-for-warehouses-processes.md) weitere Details.

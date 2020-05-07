@@ -3,20 +3,20 @@ title: Lernkatalog für Finance and Operations
 description: Hier finden Sie alle Schulungsoptionen für Finance and Operations.
 author: loreleishannonmsft
 ms.topic: article
-ms.date: 02/19/2020
+ms.date: 04/17/2020
 ms.author: v-lshann
-audience: Application User
+audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Core, Operations
+ms.search.scope: Operations
 ms.search.region: Global
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 751e0ec649d962af084f992957f0e4821ea9509d
-ms.sourcegitcommit: 41950e3b5e4d1d0014bef308ac017cb4c2b8e134
+ms.search.validFrom: 2019-1-29
+ms.dyn365.ops.version: 8.0999999999999996
+ms.openlocfilehash: 32b67cfd4c007ddc590cd0ee95255d6f3fbc1d17
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3077992"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278992"
 ---
 # <a name="learning-catalog-for-finance-and-operations"></a>Lernkatalog für Finance and Operations.
 
@@ -33,6 +33,10 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
     Entscheiden Sie, ob Sie in neue Technologien investieren? 
 
     [Lernkatalog für Geschäfts- und technische Entscheidungsträger](learning-catalog-bdm.md#)
+
+    [Erste Schritte](learning-catalog-bdm.md#get-started)
+
+    [Prüfung](learning-catalog-bdm.md#exam)
 
         :::column-end:::
     :::column:::
@@ -53,12 +57,14 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
 
     [Finanzverwaltung](learning-catalog-business-user.md#financial-management)
 
+    [Prüfung](learning-catalog-business-user.md#exam)
+
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
 
-        ### <a name="implementation-project-managers"></a>Implementierungsprojektmanager
+    ### <a name="implementation-project-managers"></a>Implementierungsprojektmanager
 
     Sind Sie dafür verantwortlich, dass die Implementierung Ihres Unternehmens reibungslos verläuft?
 
@@ -73,6 +79,9 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
     [Fertigung](learning-catalog-project-manager.md#manufacturing)
 
     [Lieferkettenverwaltung](learning-catalog-project-manager.md#supply-chain-management)
+
+    [Prüfungen](learning-catalog-project-manager.md#exams)
+
         :::column-end:::
     :::column:::
 
@@ -86,11 +95,15 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
 
     [Kernplattformwissen](learning-catalog-administrator.md#core-platform-knowledge)
 
+    [Grundlegende Entwicklung](learning-catalog-administrator.md#core-development)
+
     [Migration und Upgrade](learning-catalog-administrator.md#migration-and-upgrade)
 
     [Wartung](learning-catalog-administrator.md#servicing)
 
     [Wird getestet](learning-catalog-administrator.md#testing)
+
+    [Prüfung](learning-catalog-administrator.md#exam)
 
   :::column-end:::
 :::row-end:::
@@ -131,6 +144,8 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
 
     [Lieferkettenverwaltung](learning-catalog-functional-consultant.md#supply-chain-management)
 
+    [Prüfungen](learning-catalog-functional-consultant.md#exams)
+
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,6 +156,10 @@ Finden Sie die richtige Online-Schulung, persönliche Workshops und Veranstaltun
     Sind Sie dafür verantwortlich, Ihren Kunden beim Kauf der richtigen Lösung zu helfen? 
 
     [Microsoft Partner Sales und Marketing Learning Catalog](learning-catalog-partner-sales.md)
+
+    [Erste Schritte](learning-catalog-partner-sales.md#get-started)
+
+    [Prüfung](learning-catalog-partner-sales.md#exam)
 
         :::column-end:::
     :::column:::

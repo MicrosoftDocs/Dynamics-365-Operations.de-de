@@ -3,7 +3,7 @@ title: Erweitern einer Produktseite
 description: In diesem Thema wird beschrieben, wie eine Produktseite in Microsoft Dynamics 365 Commerce ergänzt wird.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4c495fc6dfe4aa6561a1bb703253ef8ec71dc13
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 12508a80c440894ec6e2073b5e550846480e6c45
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003072"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269819"
 ---
 # <a name="enrich-a-product-page"></a>Erweitern einer Produktseite
 
@@ -53,7 +53,7 @@ Um ein Produktseite anzureichern, führen Sie die folgenden Schritte aus.
 1. Wählen Sie **Funktion** und dann **OK** aus.
 1. Im Eigenschaftenbereich auf der rechten Seite, im Feld **Rich-Text** geben Sie die aktualisierte Beschreibung des Produkts ein.
 1. Geben Sie im Feld **Kopf** eine Überschrift ein und wählen dann **OK** aus.
-1. Wählen Sie **Speichern** und dann **Hochladen** aus.
+1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.
 1. Geben Sie im Feld **Kommentare** **Angereichertes Produkt** ein und wählen Sie dann **OK** aus.
 1. Wählen Sie **Vorschau** aus, um die aktualisierte Produkteite in der Vorschau anzuzeigen. Wenn Sie fertig sind, schließen Sie die Vorschauregisterkarte, um zum Erstellungstool zurückzukehren.
 1. Wählen Sie **Veröffentlichen** aus.

@@ -3,7 +3,7 @@ title: Füllen einer Kategorie-Landingpage
 description: In diesem Thema wird die Anreicherung der Kategorieseiten in Dynamics 365 Commerce abgedeckt.
 author: v-chgri
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71348efba9fc1374b9e6599eb23f198d3851036e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003049"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269842"
 ---
 # <a name="enrich-a-category-landing-page"></a>Füllen einer Kategorie-Landingpage
 
@@ -39,7 +39,7 @@ Allerdings anstatt die Standardkategorieseite zu verwenden, sollten Sie eine ang
 
 ![Angereicherte Kategorie-Startseite](./media/CategoryLandingPages.png)
 
-Im Erstellungstool umfasst die Seite **Produkt** eine Liste der Kategorien vom Kanal, die dem Standort zugeordnet werden. Wenn der Status **Angereichert** für eine Kategorieseite aktiviert ist, ist diese Kategorieseite angereichert worden. Andernfalls werden die Standardkategorieseite und der Inhalt für die Kategorie verwendet. Sie können in der Vorschau angereicherte und nicht angereicherte Kategorieseiten für eine Kategorie anzeigen, wenn ein Kategoriename in der Liste ausgewählt ist.
+Im Commerce Site Builder umfasst die Seite **Produkte** eine Liste der Kategorien vom Kanal, die dem Standort zugeordnet werden. Wenn der Status **Angereichert** für eine Kategorieseite aktiviert ist, ist diese Kategorieseite angereichert worden. Andernfalls werden die Standardkategorieseite und der Inhalt für die Kategorie verwendet. Sie können in der Vorschau angereicherte und nicht angereicherte Kategorieseiten für eine Kategorie anzeigen, wenn ein Kategoriename in der Liste ausgewählt ist.
 
 Um eine Kategorieseite anzureichern, gehen Sie folgendermaßen vor.
 
@@ -48,9 +48,7 @@ Um eine Kategorieseite anzureichern, gehen Sie folgendermaßen vor.
 3. Wählen Sie eine Vorlage für die angereicherte Kategorieseite aus. Wenn Sie nur geringfügige Änderungen vornehmen, können Sie die Standardkategorieseite auswählen. Alternativ können Sie eine bestimmte Kategorieseitenvorlage auswählen. Wenn Sie die Vorlage auswählen, ist das Seitenaufbereitungsprogramm geöffnet, und die ausgewählte Vorlage wird verwendet, um eine neue Kategorieseite für die ausgewählte Kategorie zu erstellen. Die Seite wird von Ihnen ausgecheckt und Sie können nun Ihre Änderungen vornehmen.
 
 > [!NOTE]
-> Module, die Kategoriespezifikationsdaten verwenden, die Daten aus der ausgewählten Kategorie nutzen.
->
-> Die Einstellungen der Vorlage, die Sie auswählen, bestimmt die Änderungen, die Sie vornehmen können.
+> Module, die Kategoriespezifikationsdaten verwenden, die Daten aus der ausgewählten Kategorie nutzen. Die Einstellungen der Vorlage, die Sie auswählen, bestimmt die Änderungen, die Sie vornehmen können.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

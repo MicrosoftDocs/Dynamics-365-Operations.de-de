@@ -3,7 +3,7 @@ title: In früheren Versionen entfernte oder veraltete Funktionen
 description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt wurden oder für die Entfernung geplant waren.
 author: sericks007
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1aade5d1272e069c1c2e3470363ffd7d5fc3cdc
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225127"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284013"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -230,7 +230,7 @@ Unterstützung für das Erstellen von projektbasierten Aufträgen, bei denen der
 | **Ersetzt durch eine andere Funktion?**   | Nr. |
 | **Betroffene Produktbereiche**         | Produktinformationsverwaltung |
 | **Bereitstellungsoption**              | Alle  |
-| **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattform-Update 24. (Wenn und nur wenn Sie eine Datenbeschädigung reparieren müssen, die durch eine frühere Umbenennung des Primärschlüssels eines freigegebenen Produkts verursacht wurde, wenden Sie sich bitte an den Microsoft-Support, um die vorübergehende Aufhebung dieser Einschränkung zu beantragen). |
+| **Status**                         | Entfernt ab Finance and Operations 10.0.0 mit Plattform-Update 24.|
 
 
 ## <a name="finance-and-operations-813-with-platform-update-23"></a>Finance and Operations 8.1.3 mit Plattformupdate 23
@@ -267,7 +267,7 @@ Integrierte Key Performance Indicators (KPIs) können in Visual Studio von einem
 | **Ersetzt durch eine andere Funktion?**   | Diese Warnung wird in Zukunft durch einen Kompelierfehler ersetzt. |
 | **Betroffene Produktbereiche**         | Visual Studio-Entwicklungstools |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Die Warnung wird in Zukunft zu einem Kompilierungsfehler. Diese Änderung ist mit Plattform-Updates für Version 10.0.11 von Finance and Operations Apps geplant. |
+| **Status**                         | Veraltet: Die Warnung ist ein Compiler-Fehler in Plattform-Updates für Version 10.0.11 von Finance and Operations-Apps. |
 
 #### <a name="complete-list"></a>Vollständige Liste
 Die vollständige Liste der veralteten APIs finden Sie unter [Veraltete Methoden und Metadatenelemente](deprecation-deletion-apis.md).

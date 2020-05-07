@@ -3,7 +3,7 @@ title: Planzahlenverrechnungsschlüssel vorhersagen
 description: Dieses Thema enthält Beispiele, die zeigen, wie Sie einen Planzahlenverrechnungsschlüssel einrichten. Er umfasst Informationen zu den verschiedenen Einstellungen der Planzahlenverrechnungsschlüssel und deren Ergebnissen. Mithilfe von Planzahlenverrechnungsschlüsseln wird definiert, wie der Planungsbedarf verringert werden soll.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 04/03/2020
+ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25cdde073878ed090a4d981eff75a337a79b37af
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 6191b4809c3785d92395bec1b7d51bfc978f9245
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225104"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262695"
 ---
 # <a name="forecast-reduction-keys"></a>Planzahlenverrechnungsschlüssel vorhersagen
 
@@ -222,7 +222,7 @@ Ein Planzahlenverrechnungsschlüssel muss der Deckungsgruppe des Artikels zugewi
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Reduzieren einer Planung durch Transaktionen
 
-Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioen - dynamische Periode** als Methode für das Reduzieren von Planungsbedarfen aktivieren, können Sie angeben, welche Transaktionen die Planung verringert. Auf der Seite **Freigegebene Produkte** auf dem Inforegister **Sonstiges**, im Feld **Planungswert verringern um**, wählen Sie **Alle Transaktionen** wenn alle Transaktionen die Planung verringernn sollen oder **Aufträge**, wenn nur Aufträge die Planung verringern sollen.
+Wenn Sie **Transaktionen - Planzahlenverrechnungsschlüssel** oder **Transaktioen - dynamische Periode** als Methode für das Reduzieren von Planungsbedarfen aktivieren, können Sie angeben, welche Transaktionen die Planung verringert. Wählen Sie auf der Seite **Dispositionssteuerungsgruppe** im Inforegister **Sonstiges** für das Feld **Planungswert verringern um** die Option **Alle Transaktionen** aus, wenn alle Transaktionen die Planung reduzieren sollen, oder die Option **Aufträge**, wenn nur Aufträge die Planung reduzieren sollen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

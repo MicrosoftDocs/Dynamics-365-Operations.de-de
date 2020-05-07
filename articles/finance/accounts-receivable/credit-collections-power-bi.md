@@ -3,7 +3,7 @@ title: Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kredit und Inkassoverwaltung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/25/2019
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ac47ee086569cdaaa3c30f76435432e64f8fac6
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189107"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278873"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 
@@ -49,7 +49,7 @@ Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen El
 1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
 2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto** und legen Sie **Buchhaltungswährung** und **Wechselkurstyp** fest.
 3. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **CustCollectionsBIMeasurements**-Aggregatmessung zu aktualisieren.
+4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **CustCollectionsBIMeasurementsV2**-Aggregatmessung zu aktualisieren.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 

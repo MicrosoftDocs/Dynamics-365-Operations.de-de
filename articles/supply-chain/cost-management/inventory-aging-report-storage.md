@@ -19,24 +19,31 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 790c8fe3a52bce652227f1cef97eff6496476100
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9148a9032615222a1fdfe453488e716bacadbabc
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201618"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275578"
 ---
-# <a name="inventory-aging-report"></a>Bestandsfälligkeitsbericht
+# <a name="inventory-aging-report-storage"></a>Bestandsfälligkeitsbericht
 
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-In Microsoft Dynamics 365 Supply Chain Management können Sie einen Bericht **Inventuralterung** ausführen und die Ausgabe als Formular und Diagramm zur Verfügung stellen. Im Formular werden Spalten- und Summensalden je nach konfiguriertem Layout dynamisch angepasst. Das Diagramm bietet einen visuellen Überblick, der die Filterung unterstützt und es Ihnen ermöglicht, bis in die Details zu verzweigen. Zusätzlich können Sie mit einer Datenentität mit dem Namen **Bestandsalterungsbericht** die Ergebnisse eines **Bestandsalterungsberichts** in ein Format wie eine Microsoft Excel-Datei oder eine PDF-Datei exportieren.
+In Microsoft Dynamics 365 Supply Chain Management können Sie einen Bericht **Bestandsfälligkeitsbericht** ausführen und die Ausgabe als Formular und Diagramm zur Verfügung stellen. Im Formular werden Spalten- und Summensalden je nach konfiguriertem Layout dynamisch angepasst. Das Diagramm bietet einen visuellen Überblick, der die Filterung unterstützt und es Ihnen ermöglicht, bis in die Details zu verzweigen. Zusätzlich können Sie mit einer Datenentität mit dem Namen **Bestandsfälligkeitsbericht** die Ergebnisse eines **Bestandsfälligkeitsbericht** in ein Format wie eine Microsoft Excel-Datei oder eine PDF-Datei exportieren.
 
-Diese Methode zur Ausführung eines Berichts **Bestandsalterung** ist hilfreich, wenn die Ausgabe viele Zeilen enthält. Beispielsweise enthält die Ausgabe viele Zeilen, wenn Sie 50.000 Artikel und 300 Filialen haben, die als Lager angelegt sind, und Sie die Bestandsalterung nach Artikel, Standort und Lager anfordern.
+Diese Methode zur Ausführung eines Berichts **Bestandsfälligkeitsbericht** ist hilfreich, wenn die Ausgabe viele Zeilen enthält. Beispielsweise enthält die Ausgabe viele Zeilen, wenn Sie 50.000 Artikel und 300 Filialen haben, die als Lager angelegt sind, und Sie die Bestandsalterung nach Artikel, Standort und Lager anfordern.
 
-## <a name="run-an-inventory-aging-report"></a>Ausführen eines Berichts zur Bestandsalterung
+## <a name="enable-the-inventory-value-storage-report-feature"></a>Aktivieren Sie die Funktion „Lagerbericht zum Bestandswert“
+
+Bevor Sie diese Funktion nutzen können, müssen Sie sie auf Ihrem System aktivieren. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie bei Bedarf aktivieren. Hier wird die Funktion als aufgeführt:
+
+- **Modul** - Kostenmanagement
+- **Funktionsname** – Bestandsfälligkeitsbericht
+
+## <a name="run-an-inventory-aging-report-storage"></a>Bestandsfälligkeitsbericht ausführen
 
 1. Gehen Sie zu **Kostenmanagement \> Anfragen und Berichte \> Bestandsalterung**.
 1. Wählen Sie **Neu** aus.
@@ -51,4 +58,4 @@ Diese Methode zur Ausführung eines Berichts **Bestandsalterung** ist hilfreich,
     > [!NOTE]
     > Das Formular enthält keine Zwischensummen, die im Berichtslayout definiert sind.
 
-Mit dem Bericht **Bestandsalterung** Dateneinheit können Sie die Ausgabe eines Berichts **Bestandsalterung** exportieren, indem Sie einen Filter für das Feld **Prozessidentifikator - Name** auf jedes Format anwenden, das von der Datenverwaltung unterstützt wird.
+Mit der **Bestandsfälligkeitsbericht**-Dateneinheit können Sie die Ausgabe eines Berichts **Bestandsfälligkeitsbericht** exportieren, indem Sie einen Filter für das Feld **Prozessidentifikator - Name** auf jedes Format anwenden, das von der Datenverwaltung unterstützt wird.

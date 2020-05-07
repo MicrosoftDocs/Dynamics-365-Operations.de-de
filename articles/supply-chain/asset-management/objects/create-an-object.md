@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f734def69ff50549acae1506015ce9b23a1b8a93
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5c77f32caad5e2e79cbc0e21f72a3daa79acecb
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209903"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274164"
 ---
 # <a name="create-an-asset"></a>Eine Anlage erstellen
 
@@ -38,13 +38,13 @@ In diesem Thema wird beschrieben, wie eine Anlage in der Anlageverwaltung erstel
 3. Im Dialogfeld **Anlagen erstellen** geben Sie die DAten zu **Anlagen** (Die Anlagen-Kennung) und den Anlagennamen ein. Wählen Sie das Datum und die Zeit für die Anlage im Feld **Effektiv**. Ab diesem Datum sind Sie in der Lage, die Anlage auf einem funktionalen Stnadort zu installieren und Die Anlage in der Anlagenstruktur zu verschieben oder zu ersetzen.
 4. Im Feld **Anlagentyp** wählen Sie den Anlagentyp für die Anlage aus (Pflichtfeld). Bei Bedarf wählen Sie **Anlagenhersteller** und **Anlagenmodell** für die Anlage aus. Wenn nur ein Produkt eingerichtet wurde, wird dieses Produkt automatisch im Feld **Anlagenhersteller** ausgewählt. Die Auswahl, die in den Feldern **Anlagenhersteller** und **Anlagenmodell** verfügbar ist, hängt von der Einstellung in [Anlagenhersteller und -Modelle](../setup-for-objects/product-and-model.md) ab.
 5. In der Gruppe ist **Übergeordnete Anlage** ist das Feld **Aktivposten** als Standardwert leer. Bei Bedarf können Sie eine übergeordnete Anlage auswählen, und anschließend werden alle Felder in der Gruppe **Übergeordnete Anlage** automatisch aufgefüllt.
->[!NOTE]  
->Wenn Sie andererseits eine übergeordnete Anlage ausgewählt haben, stehen zwei oder drei Registerkarten zur Verfügung: Die Registerkarte **Meine Anlagen** enthält die Anlagen, die den funktionalen Standorten zugeordnet sind, auf denen möglicherweise Sie (der Wartungsarbeiter, der beims System angemeldet ist), zugeordnet werden. Wenn keine funktionalen Standorte für einen Wartungsarbeiter im Formular [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md) eingerichtet werden, wird die Registerkarte **Meine Anlagen** nicht angezeigt. Die Registerkarte **Aktive Anlagen** enthält eine Liste aller Anlagen mit dem Anlagenlebenszyklusstatus „Aktiv“. Die Registerkarte **Anlagenansicht** enthält eine Strukturansicht der funktionalen Standorte und Anlagen, die für diese Standorte installiert sind.
+    >[!NOTE]  
+    >Wenn Sie andererseits eine übergeordnete Anlage ausgewählt haben, stehen zwei oder drei Registerkarten zur Verfügung: Die Registerkarte **Meine Anlagen** enthält die Anlagen, die den funktionalen Standorten zugeordnet sind, auf denen möglicherweise Sie (der Wartungsarbeiter, der beims System angemeldet ist), zugeordnet werden. Wenn keine funktionalen Standorte für einen Wartungsarbeiter im Formular [Wartungsarbeiter und Arbeitskräftegruppen](../setup-for-objects/workers-and-worker-groups.md) eingerichtet werden, wird die Registerkarte **Meine Anlagen** nicht angezeigt. Die Registerkarte **Aktive Anlagen** enthält eine Liste aller Anlagen mit dem Anlagenlebenszyklusstatus „Aktiv“. Die Registerkarte **Anlagenansicht** enthält eine Strukturansicht der funktionalen Standorte und Anlagen, die für diese Standorte installiert sind.
 
 6. Der funktionale Standardstandort, den Sie eingerichtet haben, wird für die Anlage in der Gruppe **Anlagen** > im Feld **Funktionaler Standort** vorgeschlagen. Wählen Sie bei Bedarf einen anderen, funktionalen Standort aus.
 
->[!NOTE]
->Sobald Soe eine Anlage erstellt haben, können Sie auf einem anderen funktionalen Standort installieren, falls erforderlich. Nur Anlagen der obersten Ebene (Anlagen ohne eine übergeordnete Anlage) können auf einen funktionalen Standort installiert werden. Das bedeutet, dass Sie die übergeordnete Ebene sowie sämtliche untergeordneten Anlagen im ausgewählten funktionalen Standorten einrichten. Lesen Sie mehr über das Installieren von Anlagen auf funktionalen Standorten in [Einführung in funktionale Standorte](../functional-locations/introduction-to-functional-locations.md).
+    >[!NOTE]
+    >Sobald Soe eine Anlage erstellt haben, können Sie auf einem anderen funktionalen Standort installieren, falls erforderlich. Nur Anlagen der obersten Ebene (Anlagen ohne eine übergeordnete Anlage) können auf einen funktionalen Standort installiert werden. Das bedeutet, dass Sie die übergeordnete Ebene sowie sämtliche untergeordneten Anlagen im ausgewählten funktionalen Standorten einrichten. Lesen Sie mehr über das Installieren von Anlagen auf funktionalen Standorten in [Einführung in funktionale Standorte](../functional-locations/introduction-to-functional-locations.md).
 
 7. Klicken Sie auf **OK**.
 8. Wählen Sie die Anlage in der Liste **Alle Anlagen** aus und klicken Sie auf die Schaltfläche **Bearbeiten**, um weitere Informationen zur Anlage hinzuzufügen.
