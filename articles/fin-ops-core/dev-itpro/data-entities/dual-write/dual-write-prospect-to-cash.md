@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 12a0e07d1c60a359b3ba6c0d20176927ffe89431
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172807"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270287"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -66,6 +66,14 @@ Angebote können entweder im Vertrieb oder im Supply Chain Management erstellt w
 + Sie können dem Produkt einen Rabatt auf das Angebot hinzufügen. In diesem Fall wird der Rabatt mit dem Supply Chain Management synchronisiert. Die Felder **Rabatt**, **Belastungen** und **Steuer** in der Kopfzeile werden durch komplizierte Einstellungen in Supply Chain Management gesteuert. Diese Einrichtung unterstützt kein Integrations-Mapping. Stattdessen werden die Felder **Preis**, **Rabatt**, **Gebühr** und **Steuer** im Supply Chain Management gepflegt und behandelt.
 + Die Felder **Rabatt %**, **Rabatt** und **Frachtbetrag** im Angebotskopf sind schreibgeschützte Felder.
 + Die Felder **Frachtbedingungen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
+
+Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungsposition-Schnellerstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebote erstellen.
+1. Navigieren Sie zu Ihrer Dynamics 365 Sales-Anwendung.
+2. Wählen Sie das Einstellungssymbol in der oberen Navigationsleiste.
+3. Wählen Sie **Erweiterte Einstellungen**.
+4. Wählen Sie die Option **System anpassen** aus.
+5. Wählen Sie den Menüpunkt **Angebotsposition**.
+6. Wechseln Sie zum Abschnitt **Datendienste** und wählen Sie das Kontrollkästchen **Schnellerstellung zulassen**.
 
 ## <a name="sales-orders"></a>Aufträge
 

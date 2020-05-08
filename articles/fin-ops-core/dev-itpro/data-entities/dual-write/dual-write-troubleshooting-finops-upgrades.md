@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59384d8e8d043eb14231a471c7218ced2dddf739
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172876"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275463"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Probleme bezüglich Aktualisierungen von Finance and Operations Apps beheben
 
@@ -85,9 +85,8 @@ Wenn das Problem immer noch nicht behoben ist, führen Sie die folgenden Schritt
 > Diese Schritte führen Sie durch den Vorgang des Löschens und anschließenden Hinzufügens einer Entität. Befolgen Sie die Schritte genau, um Probleme zu vermeiden.
 
 1. In der Finance and Operations App, gehen Sie zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Datenentitäten**.
-2. Suchen Sie die Entität, der das Feld fehlt. Notieren Sie sich die Zielentität, die Staging-Tabelle, den Entitätsnamen und andere Spaltenwerte.
-3. Wenn eine Ihrer Verarbeitungsgruppen von dieser Entität abhängt, ergreifen Sie die entsprechenden Maßnahmen für die Verarbeitungsgruppen, bevor Sie die Entität löschen.
-4. Löschen Sie die Entität, der das Feld fehlt.
-5. Wählen Sie **Neu** und fügen Sie die Entität wieder hinzu. Geben Sie die Werte an, die Sie in Schritt 2 notiert haben.
-6. Öffnen Sie die Seite **Entitätszuordnung** von der Seite **Duales Schreiben** in der Finance and Operations App.
-7. Wählen Sei **Entitätsliste aktualisieren**, um die Felder in den Entitätszuordnungen automatisch auszufüllen.
+2. Suchen Sie die Entität, der das Attribut fehlt. Klicken Sie in der Symbolleiste auf **Zielzuordnung ändern**.
+3. Klicken Sie im Bereich **Abbildung auf Ziel** auf **Zuordnung generieren**.
+4. Öffnen Sie die Seite **Entitätszuordnung** von der Seite **Duales Schreiben** in der Finance and Operations App.
+5. Wenn das Attribut nicht automatisch in die Zuordnung eingefügt wird, fügen Sie es manuell hinzu, indem Sie auf **Attribut hinzufügen** und dann auf **Speichern** klicken. 
+6. Wählen Sie die Zuordnung aus, und klicken Sie auf **Ausführen**.

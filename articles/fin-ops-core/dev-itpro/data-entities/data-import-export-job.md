@@ -3,7 +3,7 @@ title: Einzelvorgänge für Datenimport und ‑export – Übersicht
 description: Verwenden Sie den Datenverwaltungsarbeitsbereich, um Datenimport- und Exporteinzelvorgänge zu erstellen und zu verwalten.
 author: Sunil-Garg
 manager: AnnBe
-ms.date: 02/20/2020
+ms.date: 04/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a4b5396d2bb3fbb98b3f0f8a1bf59d62f673a3d
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: b25edf9fe09c130ea3d55b11f2698b29c7a39a8b
+ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124611"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3278897"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Einzelvorgänge für Datenimport und ‑export – Übersicht
 
@@ -151,6 +151,18 @@ Ausführungsdetails zeigt den Status der einzelnen Datenentitäten an, die den E
 Sie können die Stagingdaten in Einzelvorgängen einer Datei für den Export herunterladen, oder Sie können sie als Paket für Import- und Exporteinzelvorgänge herunterladen.
 
 Aus den Ausführungsdetails können Sie auch das Ausführungsprotokoll öffnen.
+
+## <a name="parallel-imports"></a>Parallelimporte
+Um den Import von Daten zu beschleunigen, kann die parallele Verarbeitung des Imports einer Datei aktiviert werden, wenn die Entität parallele Importe unterstützt. Um den Parallelimport für eine Entität zu konfigurieren, müssen die folgenden Schritte ausgeführt werden.
+
+1. Wechseln Sie zu **Systemverwaltung \> Arbeitsbereiche \> Datenverwaltung**.
+2. Im Abschnitt **Import/Export** wählen Sie die Kachel **Frameworkparameter** zum Öffnen der Seite **Rahmenparameter für Datenimport/-export**.
+3. Auf der Registerkarte **Entitätseinstellungen** wählen Sie **Entitätsausführungsparameter konfigurieren**, um die Seite **Ausführungsparameter für den Entitätsimport** zu öffnen.
+4. Legen Sie die folgenden Felder fest, um den Parallelimport für eine Entität zu konfigurieren:
+
+    - Wählen Sie im Feld **Entität** aus, die Entität aus.
+    - Geben Sie im Feld **Importschwellenwert für Datensatzanzahl** die Anzahl der Schwellenwerte für den Import ein. Dies bestimmt die Anzahl der Datensätze, die von einem Thread verarbeitet werden sollen. Wenn eine Datei 10 KB an Datensätzen enthält, bedeutet eine Datensatzanzahl von 2500 mit einer Aufgabenanzahl von 4, dass jeder Thread 2500 Datensätze verarbeitet.
+    - Im Feld **Aufgabenanzahl importieren** geben Sie die Anzahl der Importaufgaben ein. Dies darf die maximale Anzahl von Batch-Threads nicht überschreiten, die für die Stapelverarbeitung in **Systemadministration \>Serverkonfiguration** zugewiesen sind.
 
 ## <a name="clean-up-the-staging-tables"></a>Bereinigen der Tabellen
 Mit Plattformupdate 29 wurde diese Funktion eingestellt. Sie wird durch eine neue Version der Bereinigungsfunktion für den Auftragsverlauf ersetzt, die nachstehend erläutert wird.

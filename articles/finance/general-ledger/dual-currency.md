@@ -3,7 +3,7 @@ title: Doppelte Währung
 description: Dieses Thema enthält Informationen zu doppelter Währung. Dabei wird die Berichtswährung als eine zweite Buchhaltungswährung für Microsoft Dynamics 365 Finance verwendet.
 author: kweekley
 manager: AnnBe
-ms.date: 08/07/2019
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4a01b8387afd45648f1205d4246378edc8a9e79b
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249010"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270311"
 ---
 # <a name="dual-currency"></a>Doppelte Währung
 
@@ -174,10 +174,10 @@ Darüber hinaus wurden am Abschreibungsprozess größere Änderungen vorgenommen
 
         | Anlagen | Buchen      | Buchungsart | Transaktionsdatum | Währung | Betrag in Buchungswährung | Dauer  | Wechselkurs | Berichtswährungsbetrag |
         |-------------|-----------|------------------|------------------|----------|--------------------------------|---------|-----------|---------------------------|
-        | BUIL-00001  | 200\_SLLT | Anschaffung      | 6/3/2016         | DKK      | 1.000.000                      | 500.000 | 2,5       | 250.000                   |
-        | BUIL-00001  | 200\_SLLT | Abschreibung     | 6/3/2016         | DKK      | 50.000                         | 50.000  | 2,5       | 250.000                   |
-        | BUIL-00001  | 200\_SLLT | Abschreibung     | 6/3/2016         | DKK      | 50.000                         | 50.000  | 2,5       | 250.000                   |
-        | BUIL-00001  | 200\_SLLT | Abschreibung     | 6/3/2016         | DKK      | 50.000                         | 50.000  | 2,5       | 250.000                   |
+        | BUIL-00001  | 200\_SLLT | Anschaffung      | 6/3/2016         | DKK      | 1.000.000                      | 500,000 | 2.5       | 250,000                   |
+        | BUIL-00001  | 200\_SLLT | Abschreibung     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Abschreibung     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
+        | BUIL-00001  | 200\_SLLT | Abschreibung     | 6/3/2016         | USD      | 50,000                         | 50,000  | 2.5       |  25,000                   |
 
     - Zahlreiche Debitoren haben ihre Anlagentransaktionsdetails in Arbeitsmappen v erfolgt. Diese Details umfassen die Wechselkurse und Beträge. Wenn Sie diese Daten in einer Arbeitsmappe aufbewahren, können Sie mit einen benutzerdefinierten Wechselkurstyp erstellen und diesen mit den Wechselkursen aus der Arbeitsmappe aktualisieren. Dieser Wechselkurstyp wird dann verwendet, um einem Standardwechselkurs zum Anschaffungsdatum einzugeben und den Berichtswährungsbetrag zu berechnen. Wenn kein Wechselkurstyp ausgewählt ist, verwendet der Assistent den Wechselkurstyp, der für das Sachkonto festgelegt wurde.
     - Der Wechselkurs für die Buchhaltungswährungsbeträge können geändert werden. Wenn der Wechselkurs geändert wird, wird der Berichtswährungsbetrag mit dem neuen Kurs neu berechnet.

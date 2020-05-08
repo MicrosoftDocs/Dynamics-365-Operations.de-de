@@ -3,7 +3,7 @@ title: Hinzufügen eines Urheberrechtshinweises
 description: In diesem Thema wird beschrieben, wie eine Urheberrechts-Meldung der E-Comerce Website hinzugefügt wird.
 author: psimolin
 manager: AnnBe
-ms.date: 01/23/2020
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54b48ee74bc9d9f2b77f0584a0bf1739a8dfdbdb
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: a2ed52dbd19508e07fcced92a7fad831180b1d1d
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025481"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269589"
 ---
 # <a name="add-a-copyright-notice"></a>Hinzufügen eines Urheberrechtshinweises
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,12 +50,12 @@ Um einen Urheberrechtshinweis am Fuß jeder Seite hinzuzufügen die eine bestimm
 1. Wählen Sie im Dialogfeld **Textblock** und dann **OK** aus.
 1. Wählen Sie im Navigationsbereich **Textblock** aus.
 1. Im Eigenschaftenbereich auf der rechten Seite im Feld **Absatz**, fügen Sie die Urheberrechtsnachricht hinzu. Geben Sie beispielsweise **(C) Fabrikam 2019** ein.
-1. Wählen Sie **Speichern** aus, wählen Sie **Einchecken** und **Veröffentlichen** aus.
-1. Wechseln Sie zu **Vorlagen**, wählen Sie die Vorlage, und wählen Sie dann **Auschecken** aus.
+1. Wählen Sie **Speichern** aus, wählen Sie **Beenden Sie die Bearbeitung** und **Veröffentlichen** aus.
+1. Navigieren Sie zu **Vorlagen**, wählen Sie die Vorlage und dann **Bearbeiten** aus.
 1. Erweitern Sie unter **Seiten-Gliederung**, **Text** und erweitern Sie dann **Standardseite**.
 1. Aktivieren Sie die Schaltfläche neben **Fußzeilen-Slot**, und wählen Sie dann **Fügen Sie Fragment hinzu** aus.
 1. Wählen Sie das Fragment, das Sie eben erstellt haben, und wählen Sie dann **Auswählen** aus.
-1. Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie.
+1. Wählen **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 Die Fußzeile, die den Urheberrechtshinweis automatisch enthält, wird im unteren Bereich alle Seiten hinzugefügt, die auf der ausgewählten Vorlage basieren.
 

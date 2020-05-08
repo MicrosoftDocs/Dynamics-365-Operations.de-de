@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-10
-ms.openlocfilehash: ef4465144155130087b078f9f96911df38b62c41
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 5ffc0358ff58b2a05aa84b4467a27d88b5e1ec42
+ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173176"
+ms.lasthandoff: 04/18/2020
+ms.locfileid: "3270335"
 ---
 # <a name="sync-with-the-dynamics-365-supply-chain-management-pricing-engine-on-demand"></a>Mit dem Dynamics 365 Supply Chain Management-Preisgestaltungsmodul on demand synchronisieren
 
@@ -50,6 +50,12 @@ Microsoft Dynamics 365 Supply Chain Management enthält ein Preisgestaltungsmodu
     + Frachtbetrag
     + Gesamte Steuern
     + Gesamtbetrag
+    
+5. Stellen Sie sicher, dass das System Handelsvereinbarungen und Kaufverträge zur Berechnung des Preises berücksichtigt:
+    1. Navigieren Sie zu Ihrer Supply Chain Management-Umgebung.
+    2. Navigieren Sie zu **Debitoren \> Einrichtung \> Debitorenparameter**.
+    3. Wählen Sie in der seitlichen Navigationsleiste die Registerkarte **Preise** aus.
+    4. Deaktivieren Sie im Inforegister **Handelsvereinbarungsauswertung** die Option **Manuelle Eingabe**.
 
 ## <a name="how-it-works"></a>Funktionsweise
 

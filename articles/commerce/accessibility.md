@@ -3,7 +3,7 @@ title: Funktionen und Leistungsspektrum der Eingabehilfe
 description: Dieses Thema enthält Informationen über die Eingabehilfefunktionen und -funktionalitäten in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 manager: annbe
-ms.date: 01/08/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3edc6250dd5438be31d80a9d6b0f3b730438ca53
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001759"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3274187"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Funktionen und Leistungsspektrum der Eingabehilfe
 
@@ -57,7 +57,7 @@ Das Dynamics 365 Commerce-System zur digitalen Anlagenverwaltung unterstützt me
 
 ### <a name="configure-video-accessibility-elements"></a>Konfigurieren von Videozugriffselementen
 
-In Dynamics 365 Commerce können Sie im Bereich **Assets** Ihrer Site Video-Assets hochladen, die separate Dateien für Untertitel, reguläres Audio und beschreibendes Audio enthalten. Untertitel können auch automatisch generiert werden, wenn ein Video-Asset hochgeladen wird.
+In Commerce können Sie im Bereich **Medienbibliothek** Ihrer Site Video-Assets hochladen, die separate Dateien für Untertitel, reguläres Audio und beschreibendes Audio enthalten. Untertitel können auch automatisch generiert werden, wenn ein Video-Asset hochgeladen wird.
 
 #### <a name="generate-or-upload-closed-caption-files-during-video-asset-upload"></a>Generieren oder Hochladen von Untertiteldateien während des Uploads von Video-Assets
 
@@ -72,7 +72,7 @@ Befolgen Sie diese Schritte, um eine Untertiteldatei beim Hochladen eines Videos
 Um normale Audio- oder beschreibende Audiodateien für das Video hochzuladen, verwenden Sie die Dateiauswahl im Dialogfeld **Asset-Upload**.
 
 > [!NOTE]
-> Objekte mit Untertiteln, normalem Audio und beschreibendem Audio können auch hinzugefügt werden, nachdem ein Video-Objekt hochgeladen wurde. Navigieren Sie zu **Assets**, wählen Sie das Video-Asset aus, und checken Sie es aus. Laden Sie dann im Eigenschaftenbereich für das Video-Asset die zusätzlichen Assets hoch.
+> Objekte mit Untertiteln, normalem Audio und beschreibendem Audio können auch hinzugefügt werden, nachdem ein Video-Objekt hochgeladen wurde. Navigieren Sie zu **Medienbibliothek**, wählen Sie das Video-Asset und dann **Bearbeiten** aus. Laden Sie dann im Eigenschaftenbereich für das Video-Asset die zusätzlichen Assets hoch.
 
 #### <a name="edit-cc-and-audio-transcript-files"></a>Bearbeiten Sie CC- und Audio-Transkriptdateien
 
@@ -80,10 +80,10 @@ CC- und Audio-Transkriptdateien können direkt im Authoring-Tool bearbeitet werd
 
 Führen Sie die folgenden Schritte aus, um CC- und Audio-Transkriptdateien zu bearbeiten.
 
-1. Navigieren Sie zu **Assets**, wählen Sie das Video-Asset und dann **CC/Transkript bearbeiten** aus. Der Editor für Untertitel und Transkriptionsinhalte wird angezeigt.
-1. Wählen Sie **Auschecken** aus.
+1. Gehen Sie zu **Medienbibliothek** und wählen Sie den Dateinamen des Video-Assets aus. Der Editor für Untertitel und Transkriptionsinhalte wird angezeigt.
+1. Wählen Sie **Bearbeiten** aus.
 1. Bearbeiten Sie die Untertitel oder den Transkriptionstext.
-1. Wenn Sie fertig sind, wählen Sie **Speichern** und dann **Einchecken** aus.
+1. Wenn Sie fertig sind, wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.
 1. Wenn Sie zum Veröffentlichen bereit sind, wählen Sie **Veröffentlichen** aus.
 
 #### <a name="set-the-minimum-age-attribute"></a>Legen Sie das Attribut Mindestalter fest
@@ -92,8 +92,8 @@ Ein **Mindestalter**-Metadatenattribut kann mit Video-Assets verknüpft werden.
 
 Gehen Sie zum Einstellen des Attributs **Mindestalter** für ein Video-Asset folgendermaßen vor.
 
-1. Navigieren Sie zu **Assets**, und wählen Sie das Video-Asset aus.
-1. Wählen Sie **Auschecken** aus.
+1. Navigieren Sie zu **Medienbibliothek**, und wählen Sie das Video-Asset aus.
+1. Wählen Sie **Bearbeiten** aus.
 1. Legen Sie im Eigenschaftenbereich für das Video-Asset das Attribut **Mindestalter** fest.
 
 > [!NOTE]
@@ -107,8 +107,10 @@ Gehen Sie zum Einstellen des Attributs **Mindestalter** für ein Video-Asset fol
 
 [Dynamics 365 Accessibility Center](https://docs.microsoft.com/dynamics365/get-started/accessibility/index)
 
-[Konformitätsübersicht](compliance-overview.md)
+[Übersicht über Konformität](compliance-overview.md)
 
 [Cookie-Compliance](cookie-compliance.md)
 
 [Hinzufügen einer Datenschutzrichtlinienseite](add-privacy-page.md)
+
+[Benutzer-IDs ersetzen, die nachverfolgten Inhalten zugeordnet sind](replace-IDs-tracked-changes.md)

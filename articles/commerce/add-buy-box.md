@@ -3,7 +3,7 @@ title: Kauffeldmodul
 description: Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 35b7027e0f0b680dd82ebfcea754fef1617c0163
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261397"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269750"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
@@ -80,15 +80,15 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 1. Erstellen Sie ein Fragment, das mit dem Namen **Kauffeldfragment** bezeichnet ist und fügen Sie einen Kauffeldmodul AIF-Webdienst hinzu.
 1. Im Slot **Medien** im Kauffeldmodul fügen Sie ein Mediengalleriemodul hinzu.
 1. Fügen Sie im Slot **Auswahl speichern** des Kauffeldmoduls ein Store-Selector-Modul hinzu.
-1. Laden Sie die Seite hoch und veröffentlichen Sie sie.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Erstellen Sie eine Vorlage für eine Produktdetailseite und bezeichnen Sie diese als **PDP-Vorlage**
 1. Eine Standardseite hinzufügen.
 1. Im Slot **Haupt-** der Standardseite fügen Sie ein Kauffeldfragment hinzu.
-1. Speichern Sie die Vorlage, beenden Sie die Bearbeitung und veröffentlichen Sie sie.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Verwenden Sie die Vorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **PDP Seite** hat.
 1. Im Slot **Haupt-** der neuen Seite fügen Sie ein Kauffeldfragment hinzu.
 1. Seite speichern und Vorschau anzeigen. Fügen Sie die **? productid=&lt;Produktkennung&gt;**-Abfragezeichenfolgenparameter der URL der Vorschauseite hinzu. So wird der Produktkontext verwendet, um die Vorschauseite zu stellen und zu rendern.
-1. Speichern Sie die Seite, beenden Sie die Bearbeitung und veröffentlichen Sie sie. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

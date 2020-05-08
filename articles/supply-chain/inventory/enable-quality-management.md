@@ -19,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b090450c6b39607f9661667f8063998bbe5ff52
-ms.sourcegitcommit: c79062ba89498aa3fe3d86e478d9f32484f5f6dc
+ms.openlocfilehash: e1d7828e6bb9a3684c1d76e2cfac96174a8dfbf4
+ms.sourcegitcommit: 6d6aa016c4971b0673d461b82fd80b060ae5f7a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3224908"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3268815"
 ---
 # <a name="quality-management-overview"></a>Qualitätsmanagement-Übersicht
 
@@ -43,7 +43,11 @@ Das Qualitätsmanagement ist flexibel und kann auf unterschiedliche Weise implem
 
 -   Starten Sie automatisch einen Qualitätskontrollenprozess, basierend auf vordefinierten Kriterien (nach Lagerortregistrierung einer Bestellung von einem bestimmten Kreditor).
 -   Sperren Sie einen Bestand während der Prüfung, um die Verwendung eines genehmigten Bestands zu unterbinden (vollständige Sperrung von Bestellungsmengen).
--   Verwenden Sie die Artikelmusteraufnahme als Teil einer Qualitätszuordnung, um die Menge des aktuellen physischen Bestands zu definieren, der geprüft werden müssen. Die Musteraufnahme kann auf festen Mengen oder einem Prozentsatz basieren.
+-   Verwenden Sie die Artikelmusteraufnahme als Teil einer Qualitätszuordnung, um die Menge des aktuellen physischen Bestands zu definieren, der geprüft werden müssen. Die Musteraufnahme kann auf festen Mengen, einem Prozentsatz oder einem vollständigen Kennzeichen basieren.
+
+> [!NOTE]
+> Die Funktion _Qualitätsmanagement für Lagerortprozesse_ erweitert die Möglichkeiten des Qualitätsmanagements. Wenn Sie diese Funktion verwenden, lesen Sie [Qualitätsmanagement für Lagerortprozesse](quality-management-for-warehouses-processes.md), um Beispiele dafür zu erhalten, wie Qualitätsmanagement funktioniert, wenn es aktiviert ist.
+
 -   Erstellen Sie Qualitätsaufträge für Teilbelege. Um einen Qualitätsauftrag zu erstellen, der auf der für einen Auftrag physisch erhaltenen Menge basiert, müssen Sie das Kontrollkästchen **Pro aktualisierter Menge** auf dem Formular **Artikelmusteraufnahme** markieren.
 -   Erstellen Sie Testtypen, die Minimum-, Maximum- und Zielprüfwerte enthalten, und führen Sie Qualitativ-gegen-quantitative-Tests mit vordefinierten Prüfergebnissen aus.
 -   Legen Sie ein akzeptables Qualitätsniveau (AQL) fest, um die Qualitätsmessungstoleranz zu steuern.
@@ -428,6 +432,9 @@ In der Produktion, wenn Sie das Feld **Ereignistyp** auf **Fertigmeldung** und d
 </tbody>
 </table>
 
+> [!NOTE]
+> Die Funktion *Qualitätsmanagement für Lagerortprozesse* fügt Funktionen zur Verarbeitung von Qualitätsaufträgen für die Produktion hinzu, wenn der **Ereignistyp** auf *Fertigmeldung* und **Ausführung** auf *Nach* eingestellt ist, und die Einkäufe mit **Ereignistyp** sind auf *Registrierung* festgelegt. Weitere Informationen finden Sie unter [Qualitätsmanagement für Lagerortprozesse](quality-management-for-warehouses-processes.md).
+
 ## <a name="quality-management-pages"></a>Qualitätsmanagementseiten
 <table>
 <colgroup>
@@ -495,3 +502,5 @@ Sie müssen eine Qualitätszuordnung für jede Variante in einem Geschäftsproze
 [Qualitätsmanagementprozesse](quality-management-processes.md)
 
 [Qualitätsmangelverwaltung](enable-nonconformance-management.md)
+
+[Qualitätsmanagement für Lagerortprozesse](quality-management-for-warehouses-processes.md)

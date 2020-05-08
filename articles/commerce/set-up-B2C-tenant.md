@@ -3,7 +3,7 @@ title: Einen B2C Mandanten in Commerce einrichten
 description: In diesem Thema wird beschrieben, wie Sie Ihren Azure Active Directory (Azure AD) Business-to-Consumer-Mandanten (B2C) für die Authentifizierung von Benutzerseiten in Dynamics 365 Commerce einrichten.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 04/17 /2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5fca37fb89c723273ef753b102092e2cfb26563
-ms.sourcegitcommit: 236672932ffd0a758012ebb7b2df9bc51249c126
+ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
+ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096505"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270209"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -169,8 +169,7 @@ Um eine Kennwortzurücksetzungs-Benutzerflussrichtlinie zu erstellen, führen Si
 1. Im Abschnitt **Identitätsanbieter** wählen Sie **Kennwort zurücksetzen mithilfe der E-Mail-Adresse** aus.
 1. Wählen Sie **Erstellen** aus.
 1. Wählen Sie unter **Anwendungsanspruch** eines der folgenden Kontrollkästchen aus:
-    - **E-Mail**
-    - **Adressen**
+    - **E-Mail-Adressen**
     - **Vorname**
     - **Nachname**
     - **Objekt-ID des Benutzers**

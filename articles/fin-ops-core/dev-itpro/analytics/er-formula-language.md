@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdd8b9c120fc4a860717a66b9dfa66e6b0daed93
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 79b4640a23d4fc78ade4de57e4071abe6c9ecb56
+ms.sourcegitcommit: 0d7b700950b1f95dc030ceab5bbdfd4fe1f79ace
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042710"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3284355"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelsprache in der elektronischen Berichterstellung
 
 [!include [banner](../includes/banner.md)]
 
-Die elektronische Berichterstellung (ER) bietet eine leistungsstarke Datenumwandlungserfahrung. Die Sprache, in der die erforderlichen Datenmanipulationen im ER-Formeldesigner ausgedrückt werden, ähnelt der Formelsprache in Microsoft Excel.
+Die elektronische Berichterstellung (ER) bietet eine leistungsstarke Datenumwandlungserfahrung. Die Sprache, in der die erforderlichen Datenmanipulationen im [ER-Formeldesigner](general-electronic-reporting-formula-designer.md) ausgedrückt werden, ähnelt der Formelsprache in Microsoft Excel.
 
 ## <a name="basic-syntax"></a>Grundlegende Syntax
 
@@ -41,13 +41,13 @@ Er-Ausdrücke können einzelne oder alle folgenden Elemente enthalten:
 - [Pfade](#Paths)
 - [Funktionen](#Functions)
 
-## <a name="Constants">Konstanten</a>
+## <a name=""></a><a name="Constants">Konstanten</a>
 
 Wenn Sie Ausdrücke entwerfen, können Sie Text und numerische Konstanten (das heißt Werte, die nicht berechnet werden) verwenden. So wird beispielsweise der Ausdruck `VALUE ("100") + 20` als numerische Konstante **20** verwendet und die Zeichenfolgenkonstante **"100"** gibt den numerischen Wert **120** zurück.
 
 Der EB-Formeldesigner unterstützt Escapesequenzen. Daher können Sie eine Ausdruckszeichenfolge angeben, die anders behandelt werden soll. Beispielsweise gibt der Ausdruck `"Leo Tolstoy ""War and Peace"" Volume 1"` die Textzeichenfolge **Leo Tolstoy "War and Peace" Volume 1** zurück.
 
-## <a name="Operators">Operatoren</a>
+## <a name=""></a><a name="Operators">Operatoren</a>
 
 Die folgende Tabelle zeigt die arithmetischen Operatoren, die Sie verwenden können, um grundlegende mathematische Arbeitsgänge auszuführen, wie Addition, Subtraktion, Multiplikation und Division.
 
@@ -91,7 +91,7 @@ Die Reihenfolge, in der die Teile eines zusammengesetzten Ausdrucks ausgewertet 
 
 Wenn ein Ausdruck mehrere aufeinander folgende Operatoren enthält, die dieselbe Rangfolge haben, werden diese Arbeitsgänge von links nach rechts ausgewertet. Beispielsweise gibt der Ausdruck `1 + 6 / 2 \* 3 > 5` **true** zurück. Es wird empfohlen, dass Sie Klammern verwenden, um die gewünschte Reihenfolge der Arbeitsgänge für Ausdrucke explizit anzugeben, damit Ausdrücke besser lesbar und verwaltbar sind.
 
-## <a name="References">Verweise</a>
+## <a name=""></a><a name="References">Verweise</a>
 
 Alle Datenquellen der aktuellen EB-Komponente, die während des Entwurfs eines Ausdrucks verfügbar sind, können als benannte Referenzen verwendet werden. Die aktuelle ER-Komponente kann entweder eine Modellzuordnung oder ein Format sein. Zum Beispiel beinhaltet die aktuelle ER-Datenmodellzuordnung die Datenquelle **ReportingDate**, die den Wert des Datentyps *DateTime* zurückgibt. Um diesen Wert im generierenden Dokument korrekt zu formatieren, können Sie auf die Datenquelle im Ausdruck als `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")` verweisen.
 
@@ -112,7 +112,7 @@ Sie können die Art und Weise eingrenzen, in der Werte an die Parameter dieses M
 - Nur Konstanten können an andere Methoden dieses Typs übergeben werden. Die Werte der Konstanten werden zur Entwurfszeit definiert.
 - Nur primitive (grundlegende) Datentypen werden für Parameter dieses Typs unterstützt. Die primitiven Datentypen umfassen *ganze Zahlen*, *tatsächlich*, *boolesch* und *Zeichenfolge*.
 
-## <a name="Paths">Pfade</a>
+## <a name=""></a><a name="Paths">Pfade</a>
 
 Wenn ein Ausdruck auf eine strukturierte Datenquelle verweist, können Sie die Pfadbeschreibung verwenden, um ein bestimmtes primitives Element dieser Datenquelle auszuwählen. Ein Punktzeichen (. ) wird verwendet, um einzelne Elemente einer strukturierten Datenquelle zu unterteilen. Zum Beispiel enthält die aktuelle EB-Datenmodellzuordnung die Datenquelle **InvoiceTransactions**, und diese Datenquelle gibt eine Liste von Datensätzen zurück. Die **InvoiceTransactions**-Datensatzstruktur enthält die Felder **AmountDebit** und **AmountCredit**, und diese beiden Felder geben numerische Werte zurück. Daher können Sie den folgenden Ausdruck entwerfen, um den Rechnungsbetrag zu berechnen: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Die `InvoiceTransactions.AmountDebit`-Konstruktion in diesem Ausdruck ist der Pfad, der für den Zugriff auf das Feld **AmountDebit** der Datenquelle **InvoiceTransactions** des Typs *Datensatzliste* verwendet wird.
 
@@ -130,7 +130,7 @@ Der verbleibende Teil des absoluten Pfades wird auch im [ER Formeleditor](genera
 
 ![Verbleibender Teil des absoluten Pfads auf der Designer-Seite für ER-Formeln](./media/ER-FormulaLanguage-RelativePath2.png)
 
-## <a name="Functions">Funktionen</a>
+## <a name=""></a><a name="Functions">Funktionen</a>
 
 Integrierte ER-Funktionen können in ER-Ausdrücken verwendet werden. Alle Datenquellen des Ausdruckskontexts (die aktuelle EB-Modellzuordnung oder das EB-Format) können als Parameter von aufrufenden Funktionen in Übereinstimmung mit der Liste von Argumenten zum Aufrufen von Funktionen verwendet werden. Konstanten können auch als Parameter aufrufender Funktionen verwendet werden. Zum Beispiel enthält die aktuelle EB-Datenmodellzuordnung die Datenquelle **InvoiceTransactions**, und diese Datenquelle gibt eine Liste von Datensätzen zurück. Die **InvoiceTransactions**-Datensatzstruktur enthält die Felder **AmountDebit** und **AmountCredit**, und diese beiden Felder geben numerische Werte zurück. Um daher den Rechnungsbetrag zu berechnen, können Sie den folgenden Ausdruck entwerfen, der die integrierte EB-Rundungsfunktion verwendet: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 

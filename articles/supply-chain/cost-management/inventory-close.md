@@ -3,7 +3,7 @@ title: Lagerabschluss
 description: Im Rahmen des Prozesses, um Abgangstransaktionen mit Zugangstransaktionen auszugleichen, können Sie wählen, dass das Hauptbuch ausgeglichen wird, um die Regulierungen widerzuspiegeln, die vorgenommen wurden.
 author: AndersGirke
 manager: tfehr
-ms.date: 10/24/2017
+ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c88a5fe52e41df5a0371d6666f544996bd3c76
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 9e9f0608c9afc25e7ca6657f6a2e87d088d4cbad
+ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201639"
+ms.lasthandoff: 04/23/2020
+ms.locfileid: "3283989"
 ---
 # <a name="inventory-close"></a>Lagerabschluss
 
@@ -59,11 +59,10 @@ Viele der Aufgaben, die Sie auf der Seite **Abschluss und Regulierung** ausführ
 
 Bei den durch diese Aufgaben aktualisierten Sachkonten handelt es sich um die Sachkonten, die mit der ursprünglichen Lagerbuchung verknüpft sind. Wird beispielsweise ein Auftrag mit einer Bestellung ausgeglichen, werden die für den ursprünglichen Auftrag verwendeten Hauptbuchkonten entsprechend reguliert. Dies gilt auch, wenn sich die Sachkonten der Artikelgruppe, die dem Artikel zugewiesen sind, seit der Buchung des Auftrags geändert haben. Nachdem durch einen Lagerabschluss ein Ausgleichsbetrag erstellt wurde, wird der Ausgleichsbetrag auf die ursprünglichen Sachkonten gebucht, nicht auf die neuen, dem Artikel zugeordneten Sachkonten. Sie können das Hauptbuch auch aktualisieren, indem Sie einen Lagerabschluss stornieren. 
 
-**Hinweise:**
-
--   Ein Lagerabschluss ist für die Bewertungsmethode "Standardkosten" nicht erforderlich.
--   Bevor Sie die Abschlussprozedur ausführen, können Sie eine Liste der Artikel anzeigen, die während der Aktualisierung nicht ausgeglichen werden können.
--   Es empfiehlt sich, den Lagerabschluss nicht zu Spitzenzeiten auszuführen, um eine gleichmäßigere Verteilung der Berechnungsressourcen zu gewährleisten.
+> [!NOTE] 
+> - Der Bestandsabschluss ist ein erforderlicher Schritt im Abschlussverfahren zum Monatsende für alle Bestandsmodelle. Dies beinhaltet Standard- und gleitende Durchschnittskosten. Sie können den Finanzzeitraum erst schließen, wenn zum Ende des Berichtszeitraums ein Bestandsabschluss durchgeführt wurde.
+> - Bevor Sie die Abschlussprozedur ausführen, können Sie eine Liste der Artikel anzeigen, die während der Aktualisierung nicht ausgeglichen werden können.
+> - Es empfiehlt sich, den Lagerabschluss nicht zu Spitzenzeiten auszuführen, um eine gleichmäßigere Verteilung der Berechnungsressourcen zu gewährleisten.
 
 ## <a name="the-inventory-close-log"></a> Das Lagerabschlussprotokoll
 Nach Fertigstellung des Lagerabschlussprozesses meldet eine Nachricht im Nachrichtencenter möglicherweise, dass ein Einstandspreis pro Einheit falsch ist, da eine Buchung nicht vollständig ausgeglichen werden konnte. 
@@ -85,7 +84,6 @@ Unter bestimmten Voraussetzungen lassen sich Warnungen unter Umständen nicht ve
 ## <a name="reversing-a-completed-inventory-close"></a>Stornieren eines abgeschlossenen Lagerabschlusses
 Gelegentlich muss ein bereits abgeschlossener Lagerabschluss storniert werden, um die Ausgleiche wieder in den Zustand zu versetzen, der vor der Ausführung der Regulierungen vorlag. Durch die Stornierung eines abgeschlossenen Lagerabschlusses wird auch das Lager wieder geöffnet, um Buchungen für die entsprechende Periode zu ermöglichen. Auch im Hauptbuch können dann entsprechende Änderungen vorgenommen werden. Nach Abschluss der Anpassungen können Sie den Lagerabschluss für die bearbeitete Periode erneut ausführen. 
 
-**Hinweis:** Es kann jeweils nur die letzte abgeschlossene Lagerbuchungsperiode erneut geöffnet werden. Um einen älteren Lagerabschluss zu stornieren, müssen Sie jeden nachfolgenden Lagerabschluss, beginnend dem letzten Abschluss einzeln stornieren.
-
-
+> [!NOTE] 
+> Es kann jeweils nur die letzte abgeschlossene Lagerbuchungsperiode erneut geöffnet werden. Um einen älteren Lagerabschluss zu stornieren, müssen Sie jeden nachfolgenden Lagerabschluss, beginnend dem letzten Abschluss einzeln stornieren.
 

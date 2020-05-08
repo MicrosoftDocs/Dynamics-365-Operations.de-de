@@ -3,7 +3,7 @@ title: Lieferterminzusage
 description: Dieser Artikel enthält Informationen zu Lieferterminzusagen. Lieferterminzusagen ermöglichen es Ihnen, Ihren Kunden zuverlässige Lieferdaten zuzusichern und geben Ihnen Flexibilität, sodass Sie diese Daten auch einhalten können.
 author: ShylaThompson
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78b81431d44ea5f85676b6999eece1330d3101a4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: ccb7ef432553c0516eb49013eaad68dd21bf752c
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210052"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270026"
 ---
 # <a name="order-promising"></a>Lieferterminzusage
 
@@ -47,11 +47,13 @@ VfZ wird anhand folgender Formel berechnet:
 
 VfZ = VfZ für die vorherige Periode + Zugänge für die aktuelle Periode - Abgänge für die aktuelle Periode - Nettoabgangsmenge für alle künftigen Perioden bis zu der Periode, in der die Summe der Zugänge für alle künftigen Perioden bis zur (und einschließlich der) künftigen Periode größer ist als die Summe der Abgänge bis zur (und einschließlich der) künftigen Periode.  
 
+Beachten Sie, dass die ATP-Berechnung keine Informationen zum Ablaufdatum und über den ATP-Zeitrahmen hinaus enthält, den das System erwartet, wenn eine Menge zugesagt werden kann.
+
 Sind keine weiteren Zu- oder Abgänge mehr zu berücksichtigen, entspricht die VfZ-Menge für die folgenden Daten der zuletzt berechneten VfZ-Menge.  
 
 Sind beim Ausführen der VfZ-Prüfung nicht alle für einen Artikel verwendeten Dimensionen angegeben, kann dies für die Ab- und Zugänge nachgeholt werden. In diesem Fall müssen die Zu- und Abgänge bei der VfZ-Berechnung in den vorhandenen Dimensionen zusammengefasst werden, um die Anzahl der in der VfZ-Berechnung enthaltenen Zu- und Abgangspositionen zu verringern.  
 
-Die VfZ-Menge, die angezeigt wird, ist immer größer oder gleich 0 (null). Wenn die Berechnung eine negative VfZ-Menge ergibt,(was beispielsweise der Fall sein kann, wenn zuvor eine größere Menge zugesagt wurde als verfügbar ist), wird die Menge automatisch auf **0**festgelegt.
+Die VfZ-Menge, die angezeigt wird, ist immer größer oder gleich 0 (null). Wenn die Berechnung eine negative VfZ-Menge ergibt (was beispielsweise der Fall sein kann, wenn zuvor eine größere Menge zugesagt wurde, als verfügbar ist), wird die Menge automatisch auf 0 festgelegt.
 
 ### <a name="example"></a>Beispiel
 

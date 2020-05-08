@@ -3,7 +3,7 @@ title: Inhaltsblockmodul
 description: Dieses Thema behandelt Inhaltsblockmodule und erläutert, wie sie Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f91de93ce5ed4813f9f2adbe7678229189b5af2f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: daf9193a7fdc3b57defbb3250ae902f6eb6ee6c4
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025757"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3269681"
 ---
 # <a name="content-block-module"></a>Inhaltsblockmodul
 
@@ -81,7 +81,7 @@ Um ein Heromodul einer neuen Seite hinzuzufügen und die erforderlichen Eigensch
 
 1. Rufen Sie **Vorlagen** auf, und erstellen Sie eine Seitenvorlage namens **Inhaltsblockvorlage**.
 1. Im **Haupt-** Slot der Standardseite fügen Sie ein Heromodul hinzu.
-1. Überprüfen Sie in die Vorlage, und veröffentlichen Sie sie.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Verwenden Sie das soeben erstellte Helden-Layout zur Erstellung einer Seite namens **Inhaltsblockseite**.
 1. Auf dem Seitenüberblick wählen Sie den Slot (**Haupt**) und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** unter **Modul wählen** wählen Sie das Heromodul, und wählen Sie dann **OK**.
@@ -93,8 +93,8 @@ Um ein Heromodul einer neuen Seite hinzuzufügen und die erforderlichen Eigensch
 1. Wählen Sie **Link hinzufügen** aus.
 1. Fügen Sie im Dialogfeld **Link** den Linktext, eine Link-URL sowie die ARIA-Kennzeichnung des Links ein, und wählen Sie anschließend **OK** aus.
 1. Wählen Sie die Seite **Helden-** Layout aus.
-1. Seite speichern und Ihre Änderungen in der Vorschau anzeigen.
-1. Laden Sie die Seite hoch und veröffentlichen Sie sie.
+1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.
+1. Wählen **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

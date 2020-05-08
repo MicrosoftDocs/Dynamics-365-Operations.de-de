@@ -3,7 +3,7 @@ title: Überblick über die Finanzberichterstellung
 description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 Finance auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01fcc7c4f3e1eb7aadfc93b120cd57e62077d0c0
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
+ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3249059"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "3262648"
 ---
 # <a name="financial-reporting-overview"></a>Finanzberichterstellung – Übersicht
 
@@ -83,13 +83,15 @@ Nachdem Sie ein Benutzer hinzugefügt haben, oder eine Rolle geändert wurde, so
 ## <a name="report-deletions-and-expirations"></a>Löschungen und Verfallsdaten melden
 Benutzer, die einen Bericht erstellen, können ihre eigenen Berichte löschen. Benutzer mit der Pflicht **Finanzberichtssicherheit verwalten** können die Berichte anderer Benutzer löschen. 
 
-Ab dem Release 10.0.7 wurde das Konzept der Ablaufdaten eingeführt. Eine neue obligatorische Funktion wird im Funktionsverwaltungsarbeitsbereich aktiviert. Diese Funktion enthält die folgenden Änderungen:
+In Version 10.0.8 wurde das Konzept der Ablaufdaten eingeführt. Eine neue erforderliche Funktion wird auf der Seite **Alle** im Arbeitsbereich der Funktionsverwaltung aktiviert. Die Funktion **Richtlinien zur Aufbewahrung von Finanzberichten** enthält die folgenden Änderungen:
 * Neu erstellte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Erstellung gekennzeichnet
 * Alle vorhandenen Berichte, die vor der Installation der Funktion erstellt wurden, haben eine Gültigkeitsdauer von 90 Tagen. Das Datum wird möglicherweise für einen kurzen Zeitraum leer angezeigt, bis der Finanzberichtsdienst ausgeführt wird, ein Bericht generiert wird und der Dienst die Aktualisierung vorhandener Berichte mit einem leeren Ablaufdatum durchführt. 
-* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Aufbewahrungsoptionen verfügbar: 
-  * Ablauf von 90 Tagen
-  * Eine Option zum Festlegen, dass der Bericht niemals abläuft
-
+* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Aufbewahrungsoptionen verfügbar. 
+  * Ablauf von 90 Tagen.
+  * Eine Option zum Festlegen, dass der Bericht niemals abläuft.
+  
+Zusätzliche Optionen werden in zukünftigen Funktionen berücksichtigt. Ablauf von 90 Tagen ist die Standardeinstellung und Benutzer mit entsprechenden Berechtigungen können die Standardeinstellung für die **Finanzberichte**-Listenseite überschreiben.    
+  
 Wenn ein Ablaufdatum wie 90 Tage ausgewählt wird, werden 90 Tage ab dem heutigen Datum gewährt. Dies unterscheidet sich von den 90 Tagen ab dem ursprünglichen Erstellungsdatum, das während der Berichtserstellung festgelegt wurde. 
 
 ## <a name="default-reports"></a>Standardberichte

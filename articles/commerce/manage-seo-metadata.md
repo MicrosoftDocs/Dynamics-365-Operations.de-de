@@ -3,7 +3,7 @@ title: Verwalten von SEO-Metadaten
 description: In diesem Thema wird das Verwalten von SEO-Metadaten (Search Engine Optimization) in Microsoft Dynamics 365 Commerce beschrieben.
 author: psimolin
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e7da7bf5c473746413e92babfa943f546b7724d
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 74229628e48ffb8ac974acd868e325eeca77d91e
+ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3003463"
+ms.lasthandoff: 04/17/2020
+ms.locfileid: "3270049"
 ---
 # <a name="manage-seo-metadata"></a>Verwalten von SEO-Metadaten
 
@@ -72,13 +72,10 @@ Um Seitenmetadaten zu ändern, führen Sie diese Schritte aus.
 1. Wählen Sie unter **Sites** **Fabrikam** (oder den Namen Ihrer Site) aus.
 1. Wählen Sie im Navigationsbereich links **Seiten** aus.
 1. Wählen Sie die Startseite aus, um sie im Seiteneditor zu öffnen.
-1. Wähle Sie im Aktivitätsbereich **Auschecken** aus.
+1. Wählen Sie in der Befehlsleiste **Bearbeiten** aus.
 1. Erweitern Sie im Eigenschaftenbereich rechts **Standard-Metatags**.
-1. Um ein neues Metatag hinzuzufügen, wählen Sie **Hinzufügen** aus und geben Sie den Tag dann im Feld ein.
-
-    Um ein vorhandenes Metatag zu entfernen, wählen Sie das Papierkorb-Symbol rechts daneben aus.
-
-1. Wählen Sie **Speichern** und dann **Hochladen** aus.
+1. Um ein neues Metatag hinzuzufügen, wählen Sie **Hinzufügen** aus und geben Sie den Tag dann im Feld ein. Um ein vorhandenes Metatag zu entfernen, wählen Sie das Papierkorb-Symbol rechts daneben aus.
+1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.
 1. Geben Sie im Feld **Kommentare** **Aktualisierte Metatags** ein und wählen Sie dann **OK** aus.
 1. Wählen Sie **Vorschau** aus, um Ihre Seite in der Vorschau anzuzeigen. Wenn Sie fertig sind, schließen Sie die Vorschauregisterkarte, um zum Erstellungstool zurückzukehren.
 1. Wählen Sie **Veröffentlichen** aus.

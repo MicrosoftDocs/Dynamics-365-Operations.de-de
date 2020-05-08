@@ -70,12 +70,12 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Supply Chain Management-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Supply Chain Management\_10.0.11 (Juli 2020)"
+                      href: get-started/whats-new-scm-10-0-11.md
                     - name: "Supply Chain Management\_10.0.10 (Mai 2020)"
                       href: get-started/whats-new-scm-10-0-10.md
                     - name: "Supply Chain Management\_10.0.9 (April\_2020)"
                       href: get-started/whats-new-scm-10-0-9.md
-                    - name: "Supply Chain Management\_10.0.8 (Februar 2020)"
-                      href: get-started/whats-new-scm-10-0-8.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
@@ -349,6 +349,8 @@
               items:
                 - name: 'Planungen, Arbeitsaufträge und Projekte'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+            - name: Anlagenverwaltung in Anlagen integrieren
+              href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Vorbeugende und reaktive Wartung
               items:
                 - name: Übersicht über die vorbeugende Instandhaltung
@@ -559,12 +561,14 @@
                   href: cost-management/include-physical-value.md
                 - name: Lagerobjektwerte
                   href: cost-management/physical-quantity.md
-                - name: 'LIFO-Datum (LIFO, last in first out, zuletzt eingetroffenen - zuerst versendet) mit physischem Wert und Markierung'
+                - name: 'LIFO-Datum (LIFO, last in first out, zuletzt eingetroffenen, zuerst versendet) mit physischem Wert und Markierung'
                   href: cost-management/lifo-date-physical-value-marking.md
                 - name: LIFO mit physischem Wert und Markierung
                   href: cost-management/lifo-physical-value-marking.md
                 - name: Flexibler Durchschnitt
                   href: cost-management/moving-average.md
+                - name: 'Flexibler Durchschnitt, Fallback-Kostensequenz'
+                  href: cost-management/moving-average-fallback.md
                 - name: Physische und finanzielle Updates
                   href: cost-management/physical-financial-updates.md
                 - name: Laufender Durchschnittseinstandspreis
@@ -577,8 +581,10 @@
                   href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerabschluss
                   href: cost-management/inventory-close.md
-                - name: Regulieren der Einstandswerte für verfügbaren Bestand
+                - name: Einstandswerte für verfügbaren Bestand anpassen
                   href: cost-management/adjust-hand-inventory-cost-values.md
+                - name: Lagerbericht zum Bestandswert
+                  href: cost-management/inventory-value-report-storage.md
                 - name: Bestandsfälligkeitsbericht
                   href: cost-management/inventory-aging-report-storage.md
             - name: Fertigungsbuchhaltung
@@ -1223,6 +1229,8 @@
                   href: inventory/enable-quality-management.md
                 - name: Qualitätsmanagementprozesse
                   href: inventory/quality-management-processes.md
+                - name: Qualitätsmanagement für Lagerortprozesse
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Qualitätsmangelverwaltung
                   href: inventory/enable-nonconformance-management.md
                 - name: Voraussetzungen für Verwaltung einrichten
@@ -2549,6 +2557,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
                 - name: Systemgruppierung in einer offenen Arbeitsliste
                   href: warehousing/system-group-on-open-work-list.md
+                - name: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
+                  href: warehousing/document-routing-layout-for-license-plates.md
                 - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
                   href: warehousing/scan-bar-codes-using-a-camera.md
                 - name: Strichcodeunterstützung für Mobilgeräte
@@ -2649,11 +2659,13 @@
               items:
                 - name: Installieren und Konfigurieren – Übersicht
                   href: warehousing/install-configure-warehousing-app.md
-                - name: Feldnamen in Lagerort-App konfigurieren
+                - name: Feldnamen in Lagerhaltungs-App konfigurieren
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Mobile Geräte für Lagerarbeiten einrichten
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Eine Menüoption des mobilen Geräts für das Abschließen der Arbeit in einer Bestellung einrichten
+                - name: Kennzeicheneingang mit der mobilen Lager-App
+                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                - name: Eine Menüoption des mobilen Geräts für die Fertigstellung von Arbeiten in einer Bestellung einrichten
                   href: warehousing/tasks/set-up-mobile-device-menu.md
                 - name: 'Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen'
                   href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
@@ -2673,7 +2685,9 @@
                   href: warehousing/upgrade-migration-warehouse-management-processes.md
             - name: Zugänge für die Erfassung und Einlagerung
               items:
-                - name: Artikel für einen für erweitertes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+                - name: Abwicklung im Lager eingehender Ladungen für Bestellungen
+                  href: warehousing/inbound-load-handling.md
+                - name: Artikel für einen für die erweiterte Lagerhaltung aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: Artikel für einen für grundlegendes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
                   href: warehousing/tasks/register-items-basic-warehousing.md
@@ -2682,6 +2696,7 @@
                 - name: Lagerplatzdirektive für Bestellungseinlagerung einrichten
                   href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
                 - name: Arbeitsvorlage für Bestellungen einrichten
+                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
         - name: Supply Chain Management-Entwicklung
           items:
             - name: Anleitung zur Entwicklung von Gantt-Steuerelementen

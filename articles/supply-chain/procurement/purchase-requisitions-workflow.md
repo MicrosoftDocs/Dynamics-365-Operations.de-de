@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3d0b6c4ef9e6f21e1542bece9046e98edcab6b
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
+ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207832"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "3281508"
 ---
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
@@ -85,6 +85,9 @@ In diesem Beispiel umfasst der Workflowprozess für die Bestellanforderungsposit
 3.  Der Linienmanager der anfordernden Person prüft und genehmigt die Bestellanforderungspositionen. Die Genehmigung kann an den Vorgesetzten der anfordernden Person weitergeleitet werden, wenn z. B. der Betrag der Bestellanforderungsposition das Ausgabenlimit der anfordernden Person für Bestellanforderungspositionen übersteigt. Der Vorgesetzte kann eine oder beide Bestellanforderungspositionen genehmigen oder ablehnen.
 4.  Der Abteilungsleiter der Marketingabteilung prüft die Bestellanforderungspositionen sowohl für sowohl die Poster als auch die T-Shirts. Der Leiter der Vertriebsabteilung prüft nur die Bestellanforderungsposition für die Poster, da die Vertriebsabteilung nur mit diesen Kosten belastet wird.
 5.  Der Gruppenleiter prüft und genehmigt die Bestellanforderungsposition für die T-Shirts nur, wenn eine Gruppenleitergenehmigung erforderlich ist, da beispielsweise der Betrag der Bestellanforderungsposition das Genehmigungslimit des Abteilungsleiters überschreitet. Der Gruppenleiter muss nicht die Bestellanforderungsposition für die Poster genehmigen.
+
+> [!NOTE]
+> Die Systemwährung muss festgelegt werden, wenn für den Kopfworkflow für eine Bestellanforderung Genehmigungen im Zusammenhang mit Unterzeichnungslimits erforderlich sind.
 
 ## <a name="configuring-a-workflow-for-purchase-requisitions"></a>Konfigurieren eines Workflows für Bestellanforderungen
 Bevor eine Bestellanforderung zur Prüfung weitergeleitet werden kann, müssen die Workflowprozesse für Bestellanforderungen konfiguriert werden. Mit dem Workflowprozess wird die Interaktion zwischen dem Benutzer, von dem die Artikel angefordert wurden (die anfordernde Person), und dem Prüfer und der genehmigenden Person innerhalb des Workflows definiert. Die Weiterleitung der Bestellanforderung hängt von den Bedingungen ab, die in der Workflowkonfiguration angegeben werden. Beispielsweise bestimmen diese Bedingungen, ob die Bestellanforderung weitergeleitet werden soll, den Benutzer oder die Rolle, zu dem oder der sie weitergeleitet werden soll und die Aktivitäten, die Benutzer treffen können.  

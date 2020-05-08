@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: f7ee0b5aa4e72614205e129acd986376b33efc70
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: d5d9dbce0c74d32107db6bbae033b921e4201693
+ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172690"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275649"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -70,14 +70,12 @@ Um die Nachverfolgung einzuschalten, führen Sie diese Schritte aus.
 Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
 1. Melden Sie sich bei der Finance and Operations App an, öffnen Sie die Seite **Einstellungen** und dann unter **Anpassung**, wählen Sie **Plug-In-Ablaufverfolgungsprotokoll**.
-2. Suchen Sie die Ablaufverfolgungsprotokolle, in denen das Feld **Modellname** auf **Microsoft.Dynamics.Integrator.CrmPlugins.Plugin** festgelegt ist.
+2. Suchen Sie die Ablaufverfolgungsprotokolle, in denen das Feld **Modellname** auf **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin** festgelegt ist.
 3. Doppelklicken Sie auf ein Element, um das vollständige Protokoll anzuzeigen, und klicken Sie dann auf das Inforegister **Ausführung** und üerrprüfen Sie den Text **Nachrichtenblock**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivieren Sie den Debug-Modus, um Probleme mit der Live-Synchronisierung in Finance and Operations Apps zu beheben
 
-**Erforderliche Rolle zum Anzeigen der Fehler:** System Administrator
-
-Dual-Write-Fehler, die ihren Ursprung in Common Data Service haben, können in der Finance and Operations App angezeigt werden. In einigen Fällen ist der vollständige Text der Fehlermeldung nicht verfügbar, da die Nachricht zu lang ist oder personenbezogene Daten (PII) enthält. Sie können die ausführliche Protokollierung für Fehler aktivieren, indem Sie die folgenden Schritte ausführen.
+**Erforderliche Rolle zum Anzeigen der Fehler:** Systemadministrator – duale Schreibfehler, die ihren Ursprung im Common Data Service haben, können in der Finance and Operations-App auftreten. In einigen Fällen ist der vollständige Text der Fehlermeldung nicht verfügbar, da die Nachricht zu lang ist oder personenbezogene Daten (PII) enthält. Sie können die ausführliche Protokollierung für Fehler aktivieren, indem Sie die folgenden Schritte ausführen.
 
 1. Alle Projektkonfigurationen in Finance and Operations Apps haben eine **IsDebugMode** Eigenschaft in der **DualWriteProjectConfiguration** Entität. Entität in **DualWriteProjectConfiguration** mithilfe des Excel-Add-Ins öffnen.
 
@@ -92,7 +90,7 @@ Dual-Write-Fehler, die ihren Ursprung in Common Data Service haben, können in d
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Überprüfen Sie die Synchronisierungsfehler auf der virtuellen Maschine auf der Finance and Operations App
 
-**Erforderliche Rolle zum Anzeigen der Fehler:** System Administrator
+**Erforderliche Rolle zum Anzeigen der Fehler:** Systemadministrator
 
 1. Melden Sie sich bei Microsoft Dynamics Lifecycle Services (LCS) an.
 2. Öffnet das LCS-Projekt, das Sie ausgewählt haben, um das Testing für das duale Schreiben durchzuführen.
@@ -104,7 +102,7 @@ Dual-Write-Fehler, die ihren Ursprung in Common Data Service haben, können in d
 
 ## <a name="unlink-and-link-another-common-data-service-environment-from-a-finance-and-operations-app"></a>Verknüpfung aufheben und eine andere Common Data Service Umgebung aus einer Finance and Operations App verknüpfen
 
-**Erforderliche Anmeldeinformationen zum Aufheben der Verknüpfung der Umgebung:** Azure AD Mandant admin
+**Erforderliche Rolle zum Aufheben der Umgebungsverknüpfung:** Systemadministrator für die Finance and Operations-App oder Common Data Service.
 
 1. Bei der Finance and Operations App anmelden.
 2. Gehe zu **Arbeitsbereiche \>Datenmanagement** und wählen Sie die Kachel **Duales Schreiben**.
@@ -113,3 +111,13 @@ Dual-Write-Fehler, die ihren Ursprung in Common Data Service haben, können in d
 5. Wählen Sie **Ja** aus, um den Vorgang zu bestätigen.
 
 Sie können jetzt eine neue Umgebung verknüpfen.
+
+## <a name="unable-to-view-the-sales-order-line-information-form"></a>Das Formular für die Auftragspositionsinformationen können nicht angezeigt werden. 
+
+Wenn Sie in Dynamics 365 Sales einen Kundenauftrag erstellen, können Sie durch das Klicken auf **+ Produkte hinzufügen** möglicherweise zum Bestellformular für Dynamics 365 Project Operations weitergeleitet werden. Von diesem Formular aus gibt es keine Möglichkeit, das Formular **Information** der Kundenauftragsposition anzuzeigen. Die Option für **Information** wird in der Dropdownliste unter **Neue Auftragsposition** nicht angezeigt. Dies liegt daran, dass Project Operations in Ihrer Umgebung installiert wurde.
+
+Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folgenden Schritte aus:
+1. Navigieren Sie zur **Auftragsposition**-Entität.
+2. Suchen Sie das **Information**-Formular unter dem Formularknoten. 
+3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**. 
+4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.
