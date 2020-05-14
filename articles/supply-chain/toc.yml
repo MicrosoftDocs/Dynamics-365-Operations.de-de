@@ -425,6 +425,8 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Wartungsstatus
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Anlagenverwaltung in Dynamics 365 Guides integrieren
+              href: asset-management/asset-management-guides-integration.md
             - name: Mobiler Arbeitsbereich für Anlagenverwaltung
               href: asset-management/asset-management-mobile-workspace.md
         - name: Datenverwaltung
@@ -703,7 +705,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Aggregierende Messungen mit Finanzdimensionen ergänzen
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Analyseberichte mit PowerBI Desktop erstellen
+                - name: "Analytische Berichte mithilfe von Power\_BI\_Desktop erstellen"
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -1057,17 +1059,17 @@
               items:
                 - name: Erstellen von Formaten zum Zählen und Summieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurieren von Formaten zum Zählen und Summieren
+                - name: Formate zum Zählen und Summieren konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Verwenden von Berechnungen zum Generieren der Ausgabe für das Zählen und Summieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ausführen von Formaten zum Zählen und Summieren
+                - name: Formate zum Zählen und Summieren ausführen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Excel-Berichten Spalten als horizontal erweiterbare Bereiche dynamisch hinzufügen
+            - name: Excel-Berichten dynamisch Spalten als horizontal erweiterbare Bereiche hinzufügen
               items:
                 - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche entwerfen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ausführen von Formaten zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche
+                - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche ausführen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
             - name: Verwenden von Dokumentverwaltungsdateien in Formatausgaben
               items:
@@ -1081,9 +1083,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Ändern und Ausführen von Formaten zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Aktualisieren von Anwendungsdaten mithilfe elektronischer Berichte
+            - name: Anwendungsdaten mithilfe elektronischer Berichte aktualisieren
               items:
-                - name: Generieren von elektronischen Dokumenten und Aktualisieren von Anwendungsdaten
+                - name: Elektronische Dokumente generieren und Anwendungsdaten aktualisieren
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: 'Importieren von Konfigurationen, um Dokumente mit Anwendungsdaten zu erstellen'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/supply-chain/toc.json
@@ -1139,7 +1141,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Länderkontext auf Basis der ER-Modellzuordnungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'EB-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
+                - name: 'ER-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Parameter eines EB-Formats pro juristischer Person einrichten
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
@@ -1155,7 +1157,7 @@
                   items:
                     - name: Rahmen für die elektronische Berichterstellung konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Sichern und Wiederherstellen von ER-Vorlagen
+                    - name: ER-Vorlagen sichern und wiederherstellen
                       href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurationsanbieter erstellen und als aktiv markieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -1319,7 +1321,7 @@
               items:
                 - name: Übersicht zur Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Negativer Lagerbestand wird als Lagerbestand Null behandelt
+                - name: Planung mit negativen Vorgabemengen
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Erste Schritte mit der Planungsoptimierung
                   href: master-planning/planning-optimization/get-started.md
@@ -2653,8 +2655,6 @@
                   href: warehousing/material-replenishment-withdrawal-kanban.md
                 - name: Einen Min-Max-Wiederbeschaffungsprozess einrichten
                   href: warehousing/tasks/set-up-min-max-replenishment-process.md
-                - name: Arbeitsvorlage für Bestellungen einrichten
-                  href: ../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md
             - name: Einrichten und Konfigurieren der Lagerort-App
               items:
                 - name: Installieren und Konfigurieren – Übersicht
@@ -2663,7 +2663,7 @@
                   href: warehousing/configure-app-field-names-priorities-warehouse.md
                 - name: Mobile Geräte für Lagerarbeiten einrichten
                   href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Kennzeicheneingang mit der mobilen Lager-App
+                - name: Kennzeicheneingang mit der Lagerort-App
                   href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                 - name: Eine Menüoption des mobilen Geräts für die Fertigstellung von Arbeiten in einer Bestellung einrichten
                   href: warehousing/tasks/set-up-mobile-device-menu.md

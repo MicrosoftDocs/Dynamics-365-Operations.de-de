@@ -94,12 +94,12 @@
                       href: get-started/whats-new-commerce-10-0-10.md
                     - name: "Commerce\_10.0.9 (April\_2020)"
                       href: get-started/whats-new-10-0-9.md
-                    - name: "Commerce\_10.0.8 (Februar 2020)"
-                      href: get-started/whats-new-10-0-8.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Finance and Operations
                       href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
+                    - name: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
+                      href: get-started/removed-deprecated-features-commerce.md
                 - name: "Verschobene Funktionen von AX\_2012"
                   href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/commerce/toc.json
                 - name: Nicht in lokale Bereitstellungen implementierte Funktionen
@@ -644,6 +644,8 @@
                       href: work-with-store-inventory.md
                     - name: Mit serialisierten Artikeln arbeiten
                       href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md?toc=/dynamics365/commerce/toc.json
+                    - name: Mit serialisierten Artikeln am POS arbeiten
+                      href: pos-serialized-items.md
                     - name: Produkte vom Verteilzentrum zu Stores mithilfe von Käuferübertragung übertragen
                       href: tasks/push-products-distribution-center-store-buyers-push.md
                     - name: Auffüllungsregeln für Crossdocking und Käuferübertragung einrichten
@@ -998,11 +1000,11 @@
               href: sales-performance-products.md
             - name: Debitoren- und Produktrentabilität bewerten
               href: assess-customer-product-profitability.md
-            - name: Analysieren der Leistung des Geschäfts
+            - name: Leistung des Geschäfts analysieren
               href: store-performance-information.md
             - name: 'Einrichten von Analysen zu Aktualität, Häufigkeit und Geldbeträgen (RFM)'
               href: set-up-rfm-analysis.md
-        - name: Lokalisierung und rechtliche Funktionen
+        - name: Globalisierung
           items:
             - name: Steuerintegrationsübersicht für Commerce Channel
               href: localizations/fiscal-integration-for-retail-channel.md
@@ -1014,18 +1016,26 @@
                   href: localizations/emea-aut-fi-sample.md
             - name: Osteuropa
               items:
-                - name: Vorauszahlungsrechnungen für Commerce in Osteuropa
-                  href: localizations/emea-eeu-advance-invoices-for-retail.md
-                - name: Handkassenverwaltung für Commerce für Osteuropa
-                  href: localizations/emea-eeu-petty-cash-for-retail.md
-                - name: Debitorenrechnungen und Auftragsrücksendungen in osteuropäischen Ländern
-                  href: localizations/emea-eeu-retail-invoices.md
-                - name: 'Richtlinien zur Bereitstellung von Kassen in Tschechien, Ungarn und Polen'
-                  href: localizations/emea-eeu-deployment.md
-                - name: Beispiel für Belegdruckerintegration für Polen
-                  href: localizations/emea-pol-fpi-sample.md
-                - name: Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik
-                  href: localizations/emea-cze-fi-sample.md
+                - name: Allgemeines
+                  items:
+                    - name: Vorauszahlungsrechnungen für Commerce in Osteuropa
+                      href: localizations/emea-eeu-advance-invoices-for-retail.md
+                    - name: Handkassenverwaltung für Commerce für Osteuropa
+                      href: localizations/emea-eeu-petty-cash-for-retail.md
+                    - name: Debitorenrechnungen und Auftragsrücksendungen in osteuropäischen Ländern
+                      href: localizations/emea-eeu-retail-invoices.md
+                    - name: 'Richtlinien zur Bereitstellung von Kassen in Tschechien, Ungarn und Polen'
+                      href: localizations/emea-eeu-deployment.md
+                - name: Tschechische Republik
+                  items:
+                    - name: Integrationsbeispiel für Steuererfassungsdienst für Tschechische Republik
+                      href: localizations/emea-cze-fi-sample.md
+                - name: Polen
+                  items:
+                    - name: Beispiel für Belegdruckerintegration für Polen
+                      href: localizations/emea-pol-fpi-sample.md
+                    - name: Kundeninformationsmanagement für Polen
+                      href: localizations/emea-pol-customer-information.md
             - name: Frankreich
               items:
                 - name: Kassenfunktionen
@@ -1044,6 +1054,8 @@
               items:
                 - name: Beispiel für die Integration eines Belegdruckers für Italien
                   href: localizations/emea-ita-fpi-sample.md
+                - name: Kundeninformationsmanagement für Italien
+                  href: localizations/emea-ita-customer-information.md
             - name: Mexiko
               items:
                 - name: Globale CFDI-E-Rechnungen für Mexiko
@@ -1058,7 +1070,9 @@
               items:
                 - name: Kassenfunktionen
                   href: localizations/emea-swe-cash-registers.md
-                - name: Beispiel zur POS-Integration mit Kontrolleinheiten
+                - name: Beispiel zur Integration der Kontrolleinheit für Schweden
+                  href: localizations/emea-swe-fi-sample.md
+                - name: Beispiel zur Retail POS-Integration mit Kontrolleinheiten (Vorversion)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Berichterstellung und Power BI-Integrationen
           items:
@@ -1138,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Aggregierende Messungen mit Finanzdimensionen ergänzen
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: Analyseberichte mit PowerBI Desktop erstellen
+                - name: "Analytische Berichte mithilfe von Power\_BI\_Desktop erstellen"
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -1492,17 +1506,17 @@
               items:
                 - name: Erstellen von Formaten zum Zählen und Summieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurieren von Formaten zum Zählen und Summieren
+                - name: Formate zum Zählen und Summieren konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
                 - name: Verwenden von Berechnungen zum Generieren der Ausgabe für das Zählen und Summieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
-                - name: Ausführen von Formaten zum Zählen und Summieren
+                - name: Formate zum Zählen und Summieren ausführen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
-            - name: Excel-Berichten Spalten als horizontal erweiterbare Bereiche dynamisch hinzufügen
+            - name: Excel-Berichten dynamisch Spalten als horizontal erweiterbare Bereiche hinzufügen
               items:
                 - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche entwerfen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Ausführen von Formaten zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche
+                - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche ausführen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
             - name: Verwenden von Dokumentverwaltungsdateien in Formatausgaben
               items:
@@ -1516,9 +1530,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
                 - name: Ändern und Ausführen von Formaten zum Verwenden von Dokumentverwaltungsdateien in ER-Ausgaben
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
-            - name: Aktualisieren von Anwendungsdaten mithilfe elektronischer Berichte
+            - name: Anwendungsdaten mithilfe elektronischer Berichte aktualisieren
               items:
-                - name: Generieren von elektronischen Dokumenten und Aktualisieren von Anwendungsdaten
+                - name: Elektronische Dokumente generieren und Anwendungsdaten aktualisieren
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Importieren von Konfigurationen, um Dokumente mit Anwendungsdaten zu erstellen'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/dynamics365/commerce/toc.json
@@ -1574,7 +1588,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Länderkontext auf Basis der ER-Modellzuordnungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                - name: 'EB-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
+                - name: 'ER-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
                 - name: Parameter eines EB-Formats pro juristischer Person einrichten
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
@@ -1590,7 +1604,7 @@
                   items:
                     - name: Rahmen für die elektronische Berichterstellung konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
-                    - name: Sichern und Wiederherstellen von ER-Vorlagen
+                    - name: ER-Vorlagen sichern und wiederherstellen
                       href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurationsanbieter erstellen und als aktiv markieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/commerce/toc.json
