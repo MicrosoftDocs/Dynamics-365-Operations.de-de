@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 479a7edd456a1f4d121ceef292d2559c400c31a2
-ms.sourcegitcommit: c30a9956d9c29a504856487a3a98090eef9aab2b
+ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3266322"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346352"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.11 (Juli 2020)
 
@@ -40,7 +40,7 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel verweisen auf zusätzliche Informationen auf der Seite [Release-Pläne](https://docs.microsoft.com/dynamics365/release-plans/). Zusätzliche Links verweisen auf zusätzliche Dokumentationen oder Videos, die derzeit für diese Funktion verfügbar sind. Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 
 - [Speicher für den Bericht zum verfügbaren Lagerbestand](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
-- [Verbesserungen beim Empfang von Kennzeichen für die mobile Warehousing-App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Weitere Informationen finden Sie unter [Kennzeichenempfang über die Warehousing Mobile App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Verbesserungen beim Empfang von Kennzeichen für die Lagerhaltungs-App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Weitere Informationen finden Sie unter [Kennzeichenempfang über die Lagerhaltungs-App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 - [Verbesserungen der Leitungsreservierung für das Chargennummernreservierungsformular](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – Weitere Informationen finden Sie unter [Reservieren Sie dieselbe Charge für einen Kundenauftrag](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Neue Datenentitäten für den Fertigungsbereich](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Mehrladung der Lademengen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – Weitere Informationen finden Sie unter [Lagerabwicklung eingehender Ladungen für Bestellungen](../warehousing/inbound-load-handling.md).

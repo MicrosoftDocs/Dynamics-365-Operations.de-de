@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie App-Feldnamen in der Warehousing-App
-description: In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
+description: In diesem Thema wird beschrieben, wie Lagerhaltungs-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f9b02b93895757580b323a4cd891909d5551ea55
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205758"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346398"
 ---
 # <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurieren Sie App-Feldnamen in der Warehousing-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
+In diesem Thema wird beschrieben, wie Lagerhaltungs-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zu Warehousing konfiguriert wird, finden Sie im Lernprogramm [Einrichten und Konfigurieren der Warehousing-App: Übersicht](install-configure-warehousing-app.md).
+> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie diese Lagehaltungs-App-Feldnamen und -Prioritäten definiert und konfiguriert werden und wie sie in der Lagerhaltung verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zu Warehousing konfiguriert wird, finden Sie im Lernprogramm [Einrichten und Konfigurieren der Warehousing-App: Übersicht](install-configure-warehousing-app.md).
 
-## <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
+## <a name="configure-warehousing-app-field-names"></a>Feldnamen der Lagerhaltungs-App konfigurieren
 
 Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können Sie auf der Seite **Lagerort-App-Feldnamen** konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen. In einem neuen Unternehmen wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu, und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
 
@@ -60,7 +60,7 @@ Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können
 <td>Diese Option definiert, welcher eingegebene Typ des ausgewählten Feldnamen verwendet werden soll. Es sind vier Optionen verfügbar:
 <ul>
 <li><strong>Auswahl</strong> - Enthält eine Liste der Optionen zum Auszuwählen. Feldnamen mit dieser Option können nicht bearbeitet werden.</li>
-<li><strong>Datum </strong> -Feldnamen, definiert als Datum zeigen das Datumsformat der Beschriftung an. Damit können Lagerarbeiter sehen, welches Datumsformat sie eingeben müssen. Feldnamen mit dieser Option können nicht bearbeitet werden.</li>
+<li><strong>Datum</strong> - Feldnamen, definiert als Datum zeigen das Datumsformat der Beschriftung an. Damit können Lagerarbeiter sehen, welches Datumsformat sie eingeben müssen. Feldnamen mit dieser Option können nicht bearbeitet werden.</li>
 <li><strong>Alphanumerisch</strong> - Wenn ausgewähltes, wird die Gerätentastatur verwendet, um die Informationen manuell in de App einzugeben. Die Tastaturerfahrung kann geändert werden, je nach Gerät, das verwendet wird.</li>
 <li><strong>Numerisch</strong> - Für Feldnamen, die nur numerische Eingaben verwenden; Sie könne diese Option auswählen, um eine benutzerdefinierte Zehnertastatur dem Eingabefeld anstelle der Gerätentastatur anzuzeigen.</li>
 </ul></td>
@@ -68,7 +68,7 @@ Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können
 </tbody>
 </table>
 
-## <a name="configure-warehouse-app-field-priority"></a>Feldpriorität in Lagerortanwendung konfigurieren
+## <a name="configure-warehousing-app-field-priority"></a>Feldpriorität der Lagerhaltungs-App konfigurieren
 
 Auf der Seite L **agerort-App-Feldpriorität** können Sie Feldnamen anderen Prioritätsgruppen zuweisen. Auf diese Weise ist es möglich, zu entscheiden, welche Informationen auf der Hauptaufgabenseite angezeigt werden sollen, wenn Lagerarbeiter Aufgaben mithilfe der App ausführen. We nn Sie auf **Standardeinstellungen erstellen** klicken, wird ein Standardsatz von Prioritätsgruppen generiert. Es ist möglich, beliebig viele Prioritätsgruppen zu erstellen, aber es werden nur drei Prioritätengruppen auf der Aufgabenseite angezeigt. Wenn das System Metadaten an die App sendet, weist diese jedem der Felder eine relative Priorität abhängig von seiner Prioritätsstufe zu, und die App zeigt die ersten drei Prioritätengruppen an, die in den Metadaten auf der Aufgabenseite enthalten sind. Der Rest der überfließenden Metadaten wird auf einer sekundären Detailseite angezeigt. Die folgende Tabelle enthält ein Beispiel der fünf Prioritätengruppen.
 
@@ -132,7 +132,7 @@ Ein Lagerarbeiter führt beispielsweise eine Aufgabe auf einem mobilen Gerät au
 -   Artikelbeschreibung
 -   Größe und Standort
 
-Basierend auf der Lagerort-App-Feldpriorität, die in der Tabelle oben eingerichtet wird, werden die folgenden 3 Zeilen der Informationen auf der Aufgabenseite angezeigt:
+Basierend auf der Lagerhaltungs-App-Feldpriorität, die in der Tabelle oben eingerichtet wird, werden die folgenden 3 Zeilen der Informationen auf der Aufgabenseite angezeigt:
 
 -   Zeile 1: Artikel, Menge, Maßeinheit
 -   Reihe 2: Artikelbeschreibung

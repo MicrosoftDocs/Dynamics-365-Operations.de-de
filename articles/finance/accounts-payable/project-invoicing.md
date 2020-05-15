@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a68ed1cf21039ec1077bae428dea242f19514b51
-ms.sourcegitcommit: 574309903f15eeab7911091114885b5c7279d22a
+ms.openlocfilehash: 81a3d64d04ceb20fec2f5ca4bb005e7ecb3c1929
+ms.sourcegitcommit: d2b111bf7a5fbf62ff2874d6c57c5ef8412df82e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "2658619"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331371"
 ---
 # <a name="project-invoicing"></a>Projektrechnung
 
@@ -112,6 +112,9 @@ Wenn Sie einen Artikel von einem Kreditor bestellen und den Artikel einem Projek
 
 -   Die Rechnungsstellung für den Artikel an den Debitor des Projekts: Legen Sie in der Bestellung den Abrechnungscode für den Artikel auf einen fakturierbaren Wert fest, und stellen Sie dann eine Rechnung an den Debitor, indem Sie die korrekte Rechnungsstellungsmethode anwenden.
 -   Wenn Sie für den Artikel keine Rechnung an den Projektdebitor stellen möchten: Wählen Sie nicht die Positionseigenschaft **Fakturierbar** in der Bestellposition für den Artikel aus. Sie können dann die Bestellung fakturieren, und es sind keine weiteren Schritte erforderlich.
+
+> [!NOTE] 
+> Freigabe-Einbehaltungspositionen sind standardmäßig nicht kostenpflichtig. Dies bedeutet, dass die Möglichkeit, einen Rechnungsvorschlag für den freigegebenen einbehaltenten Betrag zu erstellen, nicht aktiviert ist.
 
 ## <a name="credit-notes"></a>Gutschriften
 Ist auf einer Debitorenrechnung ein negativer Betrag vorhanden, wird die Rechnung als Gutschrift klassifiziert. Beim Drucken erhält das Dokument die Bezeichnung "Gutschrift". 

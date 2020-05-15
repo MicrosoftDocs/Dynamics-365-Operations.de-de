@@ -3,7 +3,7 @@ title: Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus meh
 description: In diesem Thema wird erläutert, wie Sie JOIN-Typ-Datenquellen in der Elektronischen Berichterstellung (Electronic Reporting/ER) verwenden können.
 author: NickSelin
 manager: AnnBe
-ms.date: 10/25/2019
+ms.date: 05/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: 224acc19ee5dda430cd9471aa50e9d870a4f8c60
-ms.sourcegitcommit: 564aa8eec89defdbe2abaf38d0ebc4cca3e28109
+ms.openlocfilehash: 668ab28297ee7baf8f28cbbaf179d13cb5151dc4
+ms.sourcegitcommit: 248369a0da5f2b2a1399f6adab81f9e82df831a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "2667953"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3332321"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Verwenden Sie JOIN-Datenquellen in ER-Modellzuordnungen, um Daten aus mehreren Anwendungstabellen abzurufen
 
@@ -140,7 +140,7 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 
 7.  Schließen Sie die Seite.
 
-### <a name="review"></a> Überprüfen der ER-Modellzuordnung (Teil 2)
+### <a name="review-er-model-mapping-part-2"></a><a name="review"></a> Überprüfen der ER-Modellzuordnung (Teil 2)
 
 Überprüfen Sie die Einstellungen der ER-Modellzuordnungskomponente. Die Komponente wird konfiguriert, um auf Informationen zu Versionen von ER-Konfigurationen, Details von Konfigurationen und Konfigurationsanbieter zuzugreifen, unter Verwendung einer Datenquelle des Typs **Join**.
 
@@ -185,7 +185,7 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 9.  Schließen Sie die Seite.
 10. Wählen Sie **Abbrechen** aus.
 
-### <a name="executeERformat"></a> ER-Format ausführen
+### <a name="execute-er-format"></a><a name="executeERformat"></a> ER-Format ausführen
 
 1.  Rufen Sie Finance oder RCS in der zweiten Sitzung des Webbrowsers mit den gleichen Anmeldeinformationen und dem gleichen Unternehmen wie in der ersten Sitzung auf.
 2.  Wechseln Sie zu **Organisationsverwaltung \> Elektronische Berichterstellung \> Konfigurationen**.
@@ -240,7 +240,7 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
 
     ![ER-Benutzerdialogfeld – Seite](./media/GER-JoinDS-Set2Run.PNG)
 
-#### <a name="analyze"></a> Analysieren der ER-Formatausführungsablaufverfolgung
+#### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysieren der ER-Formatausführungsablaufverfolgung
 
 1.  In der ersten Sitzung von Finance oder RCS wählen Sie **Designer** aus.
 2.  Wählen Sie **Leistungsnachverfolgung** aus.
@@ -256,6 +256,33 @@ Vorab müssen Sie auch die folgenden ER-Beispiel-Konfigurationsdateien vom [Micr
     - Die Anwendungsdatenbank wurde einmal aufgerufen, um die Anzahl von Konfigurationsversionen zu berechnen, indem Verknüpfungen verwendet wurden, die in der **Details**-Datenquelle konfiguriert wurden.
 
     ![ER-Modellzuordnungsdesigner – Seite](./media/GER-JoinDS-Set2Run3.PNG)
+
+## <a name="limitations"></a>Einschränkungen
+
+Wie Sie dem Beispiel in diesem Thema entnehmen können, kann die Datenquelle **VERKNÜPFEN** aus mehreren Datenquellen erstellt werden, die die einzelnen Datasets der Datensätze beschreiben, die schließlich verknüpft werden müssen. Sie können diese Datenquellen mithilfe der integrierten EB-[FILTER](er-functions-list-filter.md)-Funktion konfigurieren. Wenn Sie die Datenquelle so konfigurieren, dass sie über die Datenquelle **VERKNÜPFEN** hinaus aufgerufen wird, können Sie die Unternehmensbereiche als Teil der Bedingung für die Datenauswahl verwenden. Die anfängliche Umsetzung der **VERKNÜPFEN**-Datenquelle unterstützt keine Datenquellen dieses Typs. Zum Beispiel, wenn Sie eine [FILTER](er-functions-list-filter.md)-basierte Datenquelle im Rahmen der Ausführung einer **VERKNÜPFEN**-Datenquelle aufrufen, wenn die aufgerufene Datenquelle Unternehmensbereiche enthält als Teil der Bedingung für die Datenauswahl, tritt eine Ausnahme auf.
+
+In Microsoft Dynamics 365 Finance Version 10.0.12 (August 2020) können Sie Unternehmensbereiche als Teil der Bedingung für die Datenauswahl in [FILTER](er-functions-list-filter.md)-basierten Datenquellen verwenden, die im Rahmen der Ausführung einer **VERKNÜPFEN**-Datenquelle aufgerufen werden. Wegen der Einschränkungen der Anwendung [Abfrage](../dev-ref/xpp-library-objects.md#query-object-model)-Generator werden die Unternehmensbereiche nur für die erste Datenquelle einer **VERKNÜPFEN**-Datenquelle unterstützt.
+
+### <a name="example"></a>Beispiel
+
+Beispielsweise müssen Sie die Anwendungsdatenbank einmal aufrufen, um die Liste der Außenhandelstransaktionen mehrerer Unternehmen und die Details des Lagerartikels abzurufen, auf den in diesen Transaktionen Bezug genommen wird.
+
+In diesem Fall konfigurieren Sie die folgenden Artefakte in Ihrer EB-Modellzuordnung:
+
+- **Intrastat**-Stammdatenquelle, die die **Intrastat**-Tabelle darstellt.
+- **Elemente**-Stammdatenquelle, die die **InventTable**-Tabelle darstellt.
+- **Unternehmen**-Stammdatenquelle, die die Liste der Unternehmen zurückgibt (**DEMF** und **GBSI** in diesem Beispiel), wo auf Transaktionen zugegriffen werden muss. Der Unternehmenscode ist verfügbar aus dem Feld **Companies.Code**.
+- **X1**-Stammdatenquelle mit dem Ausdruck `FILTER (Intrastat, VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code))`. Als Teil der Bedingung für die Datenauswahl enthält dieser Ausdruck die Definition von Unternehmensbereichen `VALUEIN(Intrastat.dataAreaId, Companies, Companies.Code)`.
+- **X2**-Datenquelle als verschachteltes Element der **X1**-Datenquelle. Es enthält den Ausdruck `FILTER (Items, Items.ItemId = X1.ItemId)`.
+
+Schließlich können Sie eine **VERKNÜPFEN**-Datenquelle konfigurieren, bei der **X1** die erste Datenquelle und **X2** die zweite Datenquelle ist. Sie können **Abfrage** als **Ausführen**-Option angeben, um zu erzwingen, dass EB diese Datenquelle auf Datenbankebene als direkten SQL-Aufruf ausführt.
+
+Wenn die konfigurierte Datenquelle ausgeführt wird, während die EB-Ausführung [nachverfolgt](trace-execution-er-troubleshoot-perf.md) wird, wird die folgende Anweisung im EB-Modellzuordnungs-Designer als Teil der EB-Leistungsnachverfolgung angezeigt.
+
+`SELECT ... FROM INTRASTAT T1 CROSS JOIN INVENTTABLE T2 WHERE ((T1.PARTITION=?) AND (T1.DATAAREAID IN (N'DEMF',N'GBSI') )) AND ((T2.PARTITION=?) AND (T2.ITEMID=T1.ITEMID AND (T2.DATAAREAID = T1.DATAAREAID) AND (T2.PARTITION = T1.PARTITION))) ORDER BY T1.DISPATCHID,T1.SEQNUM`
+
+> [!NOTE]
+> Ein Fehler tritt auf, wenn Sie eine **VERKNÜPFEN**-Datenquelle ausführen, die so konfiguriert wurde, dass sie Datenauswahlbedingungen enthält, die Unternehmensbereiche für zusätzliche Datenquellen der ausgeführten **VERKNÜPFEN**-Datenquelle haben.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

@@ -18,14 +18,15 @@ ms.search.industry: ''
 ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 35b8e2a87708c88b12c5c7605a7977712a35a0f4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 608d2b57bb4d5ab80d75b22ed5c8a4df5263e5f3
+ms.sourcegitcommit: 86052c58e3c365c443bd6f37ad1054bea395e21b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207371"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3338307"
 ---
 # <a name="import-vendor-catalogs"></a>Lieferantenkataloge importieren
+
 [!include[banner](../includes/banner.md)]
 
 ## <a name="vendor-catalogs-import"></a>Lieferantenkatalogimport
@@ -35,35 +36,36 @@ In Dynamics 365 Supply Chain Management können Einkäufer Kataloge erstellen un
 Sie können Katalogdaten hochladen, die von einem Kreditor vom Kunden Microsoft Dynamics 365 übermittelt werden.
 
 Die Produktdaten, die der Lieferant in Form einer Anforderungsdatei für die Katalogverwaltung (CMR-Datei) übermittelt, müssen im XML-Dateiformat vorliegen. Die CMR-Datei sollte alle Details der Produkte enthalten, die der Lieferant für Ihr Unternehmen liefern kann.
-''''
+
 ## <a name="import-vendor-catalog-data"></a>Importieren von Lieferantenkatalogdaten
+
 Führen Sie zum Importieren der Lieferantenkatalogdaten die folgenden Aufgaben aus:
 
-1.  Richten Sie ein Projekt im Datenverwaltungsarbeitsbereich ein, in dem Sie die Datenenzuordnungsregeln definiert haben. Wählen Sie **Datenverwaltung** und **Einstellungsrollen für Datenprojekte** aus. 
-    ''
-2.  Richten Sie eine Beschaffungskategoriehierarchie ein, und weisen Sie den Beschaffungskategorien Lieferanten zu. Wenn Sie Warencodes verwenden, fügen Sie die Warencodes den Beschaffungskategorien hinzu. Informationen zum Einrichten einer Beschaffungskategoriehierarchie finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](../procurement/tasks/set-up-procurement-category-hierarchy.md)
-    ''
-3.  Konfigurieren Sie den Lieferanten für den Katalogimport. Wählen Sie einen Kreditor aus, und wählen Sie anschließend **Beschaffung** > **Einstellungen** > **Kreditor für Katalogimport konfigurieren** aus.
-''''
-4.  Konfigurieren Sie den Workflow für den Katalogimport. Erstellen Sie eine CMR-Dateivorlage und geben Sie diese mit dem Kreditor frei.
+1. Richten Sie ein Projekt im Datenverwaltungsarbeitsbereich ein, in dem Sie die Datenenzuordnungsregeln definiert haben. Wählen Sie **Datenverwaltung** und **Einstellungsrollen für Datenprojekte** aus.
 
-5.  Wählen Sie **Beschaffung** \> **Gemeinsam** \> **Kataloge** \> **Lieferantenkataloge**, um einen Lieferantenkatalog zu erstellen. In diesem Katalog werden die Anforderungsdateien für die Katalogverwaltung (CMR-Dateien) gruppiert, die Sie von Ihrem Lieferanten erhalten. 
+2. Richten Sie eine Beschaffungskategoriehierarchie ein, und weisen Sie den Beschaffungskategorien Lieferanten zu. Wenn Sie Warencodes verwenden, fügen Sie die Warencodes den Beschaffungskategorien hinzu. Informationen zum Einrichten einer Beschaffungskategoriehierarchie finden Sie unter [Einrichten einer Beschaffungskategoriehierarchie](../procurement/tasks/set-up-procurement-category-hierarchy.md)
 
-6.  Laden Sie die CMR-Datei hoch.
+3. Konfigurieren Sie den Lieferanten für den Katalogimport. Wählen Sie einen Kreditor aus, und wählen Sie anschließend **Beschaffung** > **Einstellungen** > **Kreditor für Katalogimport konfigurieren** aus.
 
-7.  Prüfen Sie die Produkte im Lieferantenkatalog, um sie entweder zu genehmigen oder abzulehnen. Die Produkte werden automatisch den Beschaffungskategorien zugeordnet. 
-    
+4. Konfigurieren Sie den Workflow für den Katalogimport. Erstellen Sie eine CMR-Dateivorlage und geben Sie diese mit dem Kreditor frei.
+
+5. Wählen Sie **Beschaffung** \> **Gemeinsam** \> **Kataloge** \> **Lieferantenkataloge**, um einen Lieferantenkatalog zu erstellen. In diesem Katalog werden die Anforderungsdateien für die Katalogverwaltung (CMR-Dateien) gruppiert, die Sie von Ihrem Lieferanten erhalten. 
+
+6. Laden Sie die CMR-Datei hoch.
+
+7. Prüfen Sie die Produkte im Lieferantenkatalog, um sie entweder zu genehmigen oder abzulehnen. Die Produkte werden automatisch den Beschaffungskategorien zugeordnet. 
+
 Genehmigte Produkte werden dem Produktmaster hinzugefügt und für die ausgewählten juristischen Personen freigegeben. Nur genehmigte Produkte können dem Beschaffungskatalog hinzugefügt werden.
 
 ## <a name="generate-a-catalog-import-file-template"></a>Generieren einer Katalogimport-Dateivorlage
 
 Bei der Katalogimport-Dateivorlage handelt es sich um eine XSD-Datei, mit der eine CMR-Datei für die Lieferantenprodukte erstellt werden kann. Mithilfe der erstellten CMR-Datei können Sie einen neuen Katalog erstellen, einen vorhandenen Katalog ersetzen oder einen vorhandenen Katalog ändern.
 
-1.  Wählen Sie **Beschaffung** \> **Kataloge** \> **Lieferantenkataloge** aus und doppelklicken Sie auf den Katalog, den Sie verwenden möchten.
+1. Wählen Sie **Beschaffung** \> **Kataloge** \> **Lieferantenkataloge** aus, und doppelklicken Sie auf den Katalog, den Sie verwenden möchten.
 
-2.  Laden Sie eine aktuelle Katalogimportvorlage herunter (XSD-Datei). Auf der Seite **Katalog aktualisieren** auf **Aktivitätsbereich**, auf der Registerkarte **Kataloge** in der Gruppe **Zugehörige Informationen**, **Katalogvorlage generieren**, und wählen Sie **Beschaffungskategorie** aus.
+2. Laden Sie eine aktuelle Katalogimportvorlage herunter (XSD-Datei). Auf der Seite **Katalog aktualisieren** auf **Aktivitätsbereich**, auf der Registerkarte **Kataloge** in der Gruppe **Zugehörige Informationen**, **Katalogvorlage generieren**, und wählen Sie **Beschaffungskategorie** aus.
 
-    -   Mit der **Beschaffungskatalog**-Option können Sie eine Katalogvorlage mit den Beschaffungskategorien, in denen der Lieferant zum Liefern von Produkten autorisiert ist erstellen.
+    - Mit der **Beschaffungskatalog**-Option können Sie eine Katalogvorlage mit den Beschaffungskategorien, in denen der Lieferant zum Liefern von Produkten autorisiert ist erstellen.
 
 3. Wählen Sie im Dialogfeld **Speichern unter** den Ort aus, an dem die Katalogdateivorlage gespeichert werden soll, und speichern Sie sie.
 

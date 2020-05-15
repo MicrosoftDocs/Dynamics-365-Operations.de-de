@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: ERSolutionTable , ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
+ms.search.form: ERSolutionTable, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2940d99243ac52ee0d56a1c4423c4f0250f42f57
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: c08e81b6e2983a8f16104698944820e93ba3852d
+ms.sourcegitcommit: 139c8007e68d279d7ca9aa302598217522abb8cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091771"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331323"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Verwenden Sie einen relativen Pfad in den Datenbindungen von ER-Modellen und -Formaten
 
@@ -29,10 +29,10 @@ ms.locfileid: "3091771"
 
 Mit dem Tool für die elektronische Berichterstellung (ER) können Benutzer elektronische Formatstrukturen definieren und anschließend wird beschrieben, wie diese Strukturen ausgefüllt werden sollen, indem Sie Daten und Algorithmen verwenden, die in der Anwendung vorhanden sind. Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) erstellen](electronic-reporting-configuration.md). Um den Datenfluss zum Abrufen der Finance and Operations Daten zu definieren und diese zur Erstellung eines elektronischen Dokuments zu verwenden, müssen Sie folgende Schritte ausführen:
 
-- Binden Sie Sie konfigurierte Datenquellen an die Elemente des entworfenen domänenspezifischen Datenmodells. Die Modellstruktur und die ausgewählten Datenquellen könnten Teil einer komplexen hierarchische Struktur sein. Deshalb können endgültige Beziehungen ziemlich groß sein und viele Elemente verschiedener Typen enthalten (zum Beispiel Zuordnungen, Tabellen und Methoden,). Die Beziehungen können weniger lesbar und ziemlich komplex sein zum Verstehen und Prüfen, besonders für Nicht-Eigentümer. 
-- Binden Sie Datenmodellelemente mit Formatkomponenten, um zu definieren, welche Daten vom Datenmodell der generierten Ausgabe des Formats ausgefüllt werden.
+- Binden Sie konfigurierte Datenquellen an Elemente des entworfenen domänenspezifischen [Datenmodells](general-electronic-reporting.md#data-model-and-model-mapping-components). Die Modellstruktur und die ausgewählten Datenquellen könnten Teil einer komplexen hierarchische Struktur sein. Deshalb können endgültige Beziehungen ziemlich groß sein und viele Elemente verschiedener Typen enthalten (zum Beispiel Zuordnungen, Tabellen und Methoden,). Die Beziehungen können weniger lesbar und ziemlich komplex sein zum Verstehen und Prüfen, besonders für Nicht-Eigentümer. 
+- Binden Sie Datenmodellelemente mit [Format](general-electronic-reporting.md#FormatComponentOutbound)-Komponenten, um zu definieren, welche Daten vom Datenmodell der generierten Ausgabe des Formats aufgefüllt werden.
 
-Um die Benutzerfreundlichkeit der ER-Zuordnungsdesignern zu verbessern, ist die Funktion des relativen Pfades freigegeben worden. Standardmäßig wird die Darstellungsoption des relativen Pfades für jede neue Instanz der Anwendung aktiviert, wenn die ER-Designerfahrung aktiviert ist (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Wir haben die relativen Pfadparameter implementiert, damit die Benutzer den vollständigen Pfad weiterhin verwenden können, wenn sie mit dieser Darstellung der ER-Bindungen arbeiten.
+Um die Benutzerfreundlichkeit der EB-Zuordnungs-Designer zu verbessern, ist die Funktion [relativer Pfad](er-formula-language.md#relative-path) freigegeben worden. Standardmäßig wird die Darstellungsoption des relativen Pfades für jede neue Instanz der Anwendung aktiviert, wenn die ER-Designerfahrung aktiviert ist (Microsoft Dynamics 365 Finance, Microsoft Regulatory Configuration Service). Wir haben die relativen Pfadparameter implementiert, damit die Benutzer den vollständigen Pfad weiterhin verwenden können, wenn sie mit dieser Darstellung der ER-Bindungen arbeiten.
 
 [![Benuitzer-Parameter](./media/relative-path-01.png)](./media/relative-path-01.png)
 
@@ -54,3 +54,7 @@ Diese Funktion bricht die Abwärtskompatibilität des ER-Frameworks nicht. Alle 
 
 > [!NOTE]
 > Alle Änderungen, die durch die Massenänderung von Berichtsbeziehungen geschachtelter Elemente in den Modellzuordnungen eingeführt werden, werden in einen Konfigurationsdelta (Nachverfolgung der Änderungen) korrekt gespeichert. Dies ermöglicht es Debitoren, ihre abgeleitete Version von Modellzuordnungen einer neuen Basisversion zuzuordnen, die mithilfe dieser neuen Funktion geändert wurde.
+
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[EB-Formelsprache](er-formula-language.md)

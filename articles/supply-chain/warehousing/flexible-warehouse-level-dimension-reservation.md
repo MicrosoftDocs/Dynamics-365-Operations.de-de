@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0fe9ed9f2bebe8683f3b8bb37b33e8a63b9521f6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205666"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346467"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -233,7 +233,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>Standort überschreiben</strong> in der Warehouse Mmobile App (WMA) aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
+<li>Wählen Sie das Menüelement <strong>Standort überschreiben</strong> in der Lagerhaltungs-App, wenn Sie mit der Entnahmearbeit beginnen.</li>
 <li>Wählen Sie die Option für <strong>Vorschlagen</strong> aus.</li>
 <li>Bestätigen Sie den neuen Lagerort, der basierend auf der Verfügbarkeit der Chargenmenge vorgeschlagen wird.</li>
 </ol>
@@ -247,10 +247,10 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 </tr>
 <tr>
-<td>Nein</td>
+<td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>Standort überschreiben</strong> in WMA aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
+<li>Wählen Sie das Menüelement <strong>Standort überschreiben</strong> in der Lagerhaltungs-App, wenn Sie mit der Entnahmearbeit beginnen.</li>
 <li>Geben Sie einen Lagerort manuell ein.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>Voll</strong> in WMA aus, wenn Sie Entnahmearbeit verarbeiten.</li>
+<li>Wählen Sie das Menüelement <strong>Voll</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit verarbeiten.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> eine Teilmenge der erforderlichen Entnahme ein, um die volle Kapazität anzuzeigen.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Starten Sie eine Verlagerung in WMA.</li>
+<li>Starten Sie eine Verlagerung in der Lagerhaltungs-App.</li>
 <li>Geben Sie „Von“- und „Nach“-Lagerorte ein.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>ShortPick</strong> in WMA aus, wenn Sie Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Geben Sie im Feld <strong>Grund</strong> <strong>Keine Neuzuteilung</strong> ein.</li>
 </ol>
@@ -498,7 +498,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>ShortPick</strong> in WMA aus, wenn Sie Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Geben Sie im Feld <strong>Grund</strong> <strong>Keine Neuzuteilung</strong> ein.</li>
 </ol>
@@ -522,7 +522,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>ShortPick</strong> in WMA aus, wenn Sie Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 <li>Wählen Sie den Lagerort/Ladungsträger in der Liste aus.</li>
@@ -545,10 +545,10 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 </tr>
 <tr>
 <td>Eine Arbeitsausnahme vom Typ <strong>Kurzentnahme</strong> wird eingerichtet, wenn <strong>Artikelneuzuteilung</strong> = <strong>Manuell</strong>, <strong>Bestandsregulierung</strong> = <strong>Ja</strong> und <strong>Reservierungen entfernen</strong> = <strong>Nein</strong> ist. Zusätzlich wird die Option <strong>Manuelle Artikelneuzuordnung zulassen</strong> für die Arbeitskraft aktiviert.</td>
-<td>Nein</td>
+<td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>ShortPick</strong> in WMA aus, wenn Sie Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 </ol>
@@ -558,10 +558,10 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 </tr>
 <tr>
 <td>Eine Arbeitsausnahme vom Typ <strong>Kurzentnahme</strong> wird eingerichtet, wenn <strong>Artikelneuzuteilung</strong> = <strong>Manuell</strong>, <strong>Bestandsregulierung</strong> = <strong>Ja</strong> und <strong>Reservierungen entfernen</strong> = <strong>Ja</strong> ist. Zusätzlich wird die Option <strong>Manuelle Artikelneuzuordnung zulassen</strong> für die Arbeitskraft aktiviert.</td>
-<td>Nein</td>
+<td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>ShortPick</strong> in WMA aus, wenn Sie Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 <li>Wählen Sie den Lagerort/Ladungsträger in der Liste aus.</li>
@@ -585,7 +585,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 <td>
 <ol>
-<li>Wählen Sie den Menüeintrag <strong>ShortPick</strong> in WMA aus, wenn Sie Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit automatischer Neuzuteilung</strong> aus.</li>
 </ol>

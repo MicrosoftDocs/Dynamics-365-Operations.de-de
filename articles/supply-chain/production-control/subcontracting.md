@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 05e6ccdce21ccc5f3e83ad860163cccadcea2edc
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211053"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346421"
 ---
 # <a name="subcontracting"></a>Fremdarbeit
 
@@ -59,7 +59,7 @@ Diese Verfahren führt Sie durch das Einrichten des freigegebenen Produkts D8100
 
 3. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Entwickler**, wählen Sie **Arbeitsplan**, um die Seite **Arbeitsplan** zu öffnen.
 
-    Die Seite **Arbeitsplan** enthält die acht Arbeitsplanversionen für D8100 freigegebenes Produkt. Die acht Arbeitsplanversionen werden auf vier Arbeitsplänen auf Standort 1 und 5. Standort aufgeteilt. Arbeitsplan 000400 wird für die Nachkalkulation verwendet, Arbeitsplan 00041 wird verwendet, wenn der Beschichtungsarbeitsgang ein interner Arbeitsgang und Arbeitsplan 00042  wird verwendet, wenn der Beschichtungsarbeitsgang eine externe Verarbeitung ist.
+    Die Seite **Arbeitsplan** enthält die acht Arbeitsplanversionen für D8100 freigegebenes Produkt. Die acht Arbeitsplanversionen werden auf vier Arbeitsplänen auf Standort 1 und 5. Standort aufgeteilt. Arbeitsplan 000400 wird für die Nachkalkulation verwendet, Arbeitsplan 00041 wird verwendet, wenn der Beschichtungsarbeitsgang ein interner Arbeitsgang und Arbeitsplan 00042 wird verwendet, wenn der Beschichtungsarbeitsgang eine externe Verarbeitung ist.
 
     ![Acht Arbeitsplanversionen auf der Arbeitsplanseite](./media/subcontract03_route-page.png)
 
@@ -82,7 +82,7 @@ Diese Verfahren führt Sie durch das Einrichten des freigegebenen Produkts D8100
 
 8. Wählen Sie **Anwendbare Ressourcen**, um das Dialogfeld **Anwendbare Ressourcen** zu öffnen.
 
-    Drei Ressourcen werden gesucht, die  mit den Ressourcenanforderungen für den Arbeitsgang übereinstimmen Beachten Sie, dass Ressource 8851 und 8852 vom Typ **Kreditor** sind.
+    Drei Ressourcen werden gesucht, die mit den Ressourcenanforderungen für den Arbeitsgang übereinstimmen Beachten Sie, dass Ressource 8851 und 8852 vom Typ **Kreditor** sind.
 
     ![Drei entsprechende Ressourcen im Dialogfeld Anwendbare Ressourcen](./media/subcontract07_applicable-resources-dialog.png)
 
@@ -95,13 +95,13 @@ Diese Verfahren führt Sie durch das Einrichten des freigegebenen Produkts D8100
 
     Die Seite **Stücklistenversionen** zeigt vier Stücklistenpositionen (BOM)- Versionen für freigegebenes Produkt D8100 an. Stückliste 000040 wird zur Nachkalkulation und Planung verwendet, Stückliste 000041 wird verwendet, wenn der Beschichtungsarbeitsgang intern erfolgt ist und Stücklisten 000042 und 000043 werden verwendet, wenn der Beschichtungsarbeitsgang abgezogen wird.
 
-    Beachten Sie, dass Artikel S8050 ein Produkt vom Artikeltyp  **Dienstleistung** ist. Dieser Artikel stellt die Fremdarbeit dar.
+    Beachten Sie, dass Artikel S8050 ein Produkt vom Artikeltyp **Dienstleistung** ist. Dieser Artikel stellt die Fremdarbeit dar.
 
     ![Vier Stücklistenversionen auf der Stücklistenversionsseite](./media/subcontract09_bom-versions-page.png)
 
 12. Auf dem Inforegister **Stücklistenpositionen** aktivieren Sie **Bearbeiten**, um das Dialogfeld **Stücklistenposition bearbeiten** zu öffnen.
 
-    Wenn ein Produktionsauftrag für das freigegebene Produkt D8100  erstellt und vorkalkuliert wird, wird automatisch eine Bestellung für Artikel S8050 generiert. Diese Bestellung wird mit dem Produktionsauftrag verknüpft. Damit Bestellungen automatisch generiert werden können, müssen Sie das Feld **Positionstyp** auf **Lieferant** festlegen und der Kreditor für den Zulieferer ausgewählt werden. In diesem Fall ist das Kreditorenkonto US-801.
+    Wenn ein Produktionsauftrag für das freigegebene Produkt D8100 erstellt und vorkalkuliert wird, wird automatisch eine Bestellung für Artikel S8050 generiert. Diese Bestellung wird mit dem Produktionsauftrag verknüpft. Damit Bestellungen automatisch generiert werden können, müssen Sie das Feld **Positionstyp** auf **Lieferant** festlegen und der Kreditor für den Zulieferer ausgewählt werden. In diesem Fall ist das Kreditorenkonto US-801.
 
     Beachten Sie, ob die Stücklistenposition mit dem Beschichtungsarbeitsgang durch die Arbeitsgangnummer verbunden ist (in diesem Fall 20).
 
@@ -117,7 +117,7 @@ Sie müssen ein Kennwort für die Lagerarbeiter definieren, die das tragbare Ger
     ![Arbeitsbenutzer-Seite](./media/subcontract11_work-users-page.png)
 
 3. **Kennwortzurücksetzung** auswählen.
-4. Wählen Sie in den Feldern **Kennwort** und **Kennwort bestätigen**und  geben Sie **1** ein.
+4. Wählen Sie in den Feldern **Kennwort** und **Kennwort bestätigen** und geben Sie **1** ein.
 5. **Kennwortzurücksetzung** auswählen.
 
 ## <a name="step-by-step-walkthrough"></a>Schrittweise Vorgehensweise
@@ -140,7 +140,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
 5. Wählen Sie **Ja** aus. 
 
-    Im Dialogfeld **Produktionsauftrag erstellen** werden die aktiven Versionen der Stückliste und der Arbeitsplan für Produkt D8100 automatisch in den Feldern **Stücklistennummer** und **Arbeitsplannummer** ausgewählt. In diesem Fall werden Stückliste  **000040** und Arbeitsplan **000040** ausgewählt.
+    Im Dialogfeld **Produktionsauftrag erstellen** werden die aktiven Versionen der Stückliste und der Arbeitsplan für Produkt D8100 automatisch in den Feldern **Stücklistennummer** und **Arbeitsplannummer** ausgewählt. In diesem Fall werden Stückliste **000040** und Arbeitsplan **000040** ausgewählt.
     
     > [!NOTE]
     > Für die Stückliste und Arbeitsplan wird Version 000040 zur Nachkalkulation und Planung verwendet.
@@ -158,7 +158,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     ![Neuer Produktionsauftrag auf der Seite alle Produktionsaufträge](./media/subcontract15_new-production-order.png)
 
-10. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag**und wählen **Schätzung**, um das Dialogfeld **Schätzung** zu öffnen.
+10. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag** und wählen **Schätzung**, um das Dialogfeld **Schätzung** zu öffnen.
 
     ![Dialogfeld Vorkalkulation](./media/subcontract16_estimate-dialog.png)
 
@@ -174,7 +174,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     ![Produktionsauftrags-Stücklistenposition auf der Seite Stückliste](./media/subcontract17_production-order-bom-lines.png)
 
 13. Schließen Sie die Seite **Stückliste**, um zur Seite **Alle Produktionsaufträge** zurückzukehren.
-14. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Zeitplan**und wählen **Aufträge planen**, um das Dialogfeld **Auftragsplanung** zu öffnen.
+14. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Zeitplan** und wählen **Aufträge planen**, um das Dialogfeld **Auftragsplanung** zu öffnen.
 15. Füllen Sie die folgenden Werte aus:
 
     - Wählen Sie im Feld **Planungsrichtung** **Vorwärts ab Lieferdatum** aus.
@@ -190,7 +190,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
     ![Gantt-Diagramm auf der Gantt-Diagramm-Ressourcenansichtsseite](./media/subcontract19_gantt-chart.png)
 
 18. Schließen Sie die Seite **Gantt-Diagramm - Ressourcenansicht**, um zur Seite **Alle Produktionsaufträge** zurückzukehren.
-19. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag**und wählen **Freigabe**, um das Dialogfeld **Freigabe** zu öffnen.
+19. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag** und wählen **Freigabe**, um das Dialogfeld **Freigabe** zu öffnen.
 
     ![Dialogfeld Freigabe](./media/subcontract20_release-dialog.png)
 
@@ -211,13 +211,13 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     ![Zwei Sätze Arbeit für Rohmaterialentnahmen auf der Seite Arbeit](./media/subcontract22_work-page.png)
 
-26. Starten Sie die Lagerort-App, um die Lagerortarbeit für Arbeitsgang 10 zu verarbeiten.
+26. Starten Sie die Lagerhaltungs-App, um die Lagerortarbeit für Arbeitsgang 10 zu verarbeiten.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
 27. Wählen Sie **Produktionssteuerung \> Produktionsaufträge \> Alle Produktionsaufträge**, um die Seite **Alle Produktionsaufträge** zu öffnen.
 28. Verwenden Sie d die Schnellfilterung, um den Produktionsauftrag auszuwählen, an dem Sie gearbeitet haben.
-29. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag**und wählen **Start**, um das Dialogfeld **Start** zu öffnen.
+29. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag** und wählen **Start**, um das Dialogfeld **Start** zu öffnen.
 30. Definieren Sie auf der Registerkarte **Allgemeines** die folgenden Werte
 
     - Im **Von Arbeitsgangnr.** Feld wählen Sie **10**.
@@ -229,11 +229,11 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     Beachten Sie, dass der Status des Produktionsauftrags nun **Gestartet** ist. Die Materialien für Arbeitsgang 10 werden durch eine automatische Buchung der Kommissionierlistenerfassung verbraucht. Der Zeitverbrauch für Arbeitsgang 10 wird durch eine automatische Buchung einer Arbeitsplanlisten-Erfassung angegeben.
 
-32. Starten Sie die Lagerort-App, um die Lagerortarbeit für Arbeitsgang 20 zu verarbeiten.
+32. Starten Sie die Lagerhaltungs-App, um die Lagerortarbeit für Arbeitsgang 20 zu verarbeiten.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
-33. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag**und wählen **Start**, um das Dialogfeld **Start** zu öffnen.
+33. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Produktionsauftrag** und wählen **Start**, um das Dialogfeld **Start** zu öffnen.
 34. Definieren Sie auf der Registerkarte **Allgemeines** die folgenden Werte
 
     - Im **Von Arbeitsgangnr.** Feld wählen Sie **20**.
@@ -257,7 +257,7 @@ Ein Produktionsauftrag von 10 Stück wird erstellt für Produkt D8100, "Beschich
 
     ![Dialogfeld Kommissionierlistenbericht](./media/subcontract26_picking-list-report-dialog.png)
 
-40. Wählen Sie **OK**, um den **Kommissionierlisten**bericht zu erstellen.
+40. Wählen Sie **OK**, um den **Kommissionierlisten**-Bericht zu erstellen.
 
     In diesem Fall wird ein Lieferschein des Kreditors aus der Produktionskommissionierlistenerfassung gedruckt. Der Lieferschein zeigt die Materialien an, die an den Kreditor gesendet werden, der den Beschichtungsarbeitsgang durchführt.
 

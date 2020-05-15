@@ -19,18 +19,16 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9148a9032615222a1fdfe453488e716bacadbabc
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 1e68833cc2b4430f66419a67b1cba5f6c8c209f4
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275578"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323622"
 ---
 # <a name="inventory-aging-report-storage"></a>Bestandsfälligkeitsbericht
 
-
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Supply Chain Management können Sie einen Bericht **Bestandsfälligkeitsbericht** ausführen und die Ausgabe als Formular und Diagramm zur Verfügung stellen. Im Formular werden Spalten- und Summensalden je nach konfiguriertem Layout dynamisch angepasst. Das Diagramm bietet einen visuellen Überblick, der die Filterung unterstützt und es Ihnen ermöglicht, bis in die Details zu verzweigen. Zusätzlich können Sie mit einer Datenentität mit dem Namen **Bestandsfälligkeitsbericht** die Ergebnisse eines **Bestandsfälligkeitsbericht** in ein Format wie eine Microsoft Excel-Datei oder eine PDF-Datei exportieren.
 
