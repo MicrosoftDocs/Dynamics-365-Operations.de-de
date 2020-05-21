@@ -3,7 +3,7 @@ title: Einen B2C Mandanten in Commerce einrichten
 description: In diesem Thema wird beschrieben, wie Sie Ihren Azure Active Directory (Azure AD) Business-to-Consumer-Mandanten (B2C) für die Authentifizierung von Benutzerseiten in Dynamics 365 Commerce einrichten.
 author: BrianShook
 manager: annbe
-ms.date: 04/17 /2020
+ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f4768eede43003aac892b861b4a86ababe98a189
-ms.sourcegitcommit: 063c4d7155be6c2cadcafa1630d16ee235285479
+ms.openlocfilehash: 22d62419c703c64470723cf82864a4782306ea8a
+ms.sourcegitcommit: 1b00e21faf89de8b3450936253a4c02cb4d12a3d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270209"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3295268"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -87,7 +87,7 @@ Führen Sie folgende Schritte aus, um eine B2C-Anwendung zu erstellen.
 
 ### <a name="reply-urls"></a>Antwort-URLs
 
-Antwort-URLs sind wichtig, da sie eine Whitelist der zurückgegebenen Domains ermöglichen, wenn Ihre Site Azure AD B2C zur Authentifizierung eines Benutzers aufruft. Dies ermöglicht die Rückkehr des authentifizierten Benutzers zu der Domäne, bei der er sich anmeldet (Ihrer Site-Domäne). 
+Antwort-URLs sind wichtig, da sie eine Zulassungsliste der zurückgegebenen Domains bereitstellen, wenn Ihre Website Azure AD B2C zur Authentifizierung eines Benutzers aufruft. Dies ermöglicht die Rückkehr des authentifizierten Benutzers zur Domäne, bei der er sich anmeldet (Ihre Website-Domäne). 
 
 Im Feld **Antwort-URL** auf dem Bildschirm **Azure AD B2C – Anwendungen \> Neue Anwendung** müssen Sie separate Zeilen für Ihre Site-Domain und (sobald Ihre Umgebung bereitgestellt ist) die von Commerce generierte URL hinzufügen. Diese URLs müssen immer ein gültiges URL-Format verwenden und dürfen nur Basis-URLs sein (keine nachgestellten Schrägstriche oder Pfade). Die Zeichenfolge ``/_msdyn365/authresp`` muss dann wie in den folgenden Beispielen an die Basis-URLs angehängt werden.
 
@@ -121,7 +121,7 @@ Um eine Registrierungs- und Anmeldebenutzerflussrichtlinie zu erstellen, führen
 
     | **Attribute sammeln** | **Rückgabeanspruch** |
     | ---------------------- | ----------------- |
-    |                        | E-Mail-Adressen   |
+    | E-Mail-Adresse          | E-Mail-Adressen   |
     | Vorname             | Vorname        |
     |                        | Identitätsanbieter |
     | Nachname                | Nachname           |
@@ -246,10 +246,6 @@ Um den Hauptsitz mit den neuen Azure AD B2C Informationen zu aktualisieren, befo
     1. In dem Kästchen **Art** geben Sie **öffentlich** ein.
     1. In dem Kästchen **Benutzertyp** geben Sie **benutzerdefiniert** ein.
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
-1. Suchen Sie im Commerce-Suchfeld nach **Zahlenfolgen** (Organisationsverwaltung> Zahlenfolgen).
-1. Wählen Sie im Aktionsbereich die Option **Bearbeiten** unter **Verwalten**.
-1. Auf der Schnellregisterkarte **Allgemeines** wählen Sie **Nein** für **Handbuch**.
-1. Wählen Sie im Aktionsbereich **Speichern** aus. 
 1. Suchen Sie im Commerce-Suchfeld nach **Verteilungsplan**
 1. Im linken Navigationsmenü auf der Seite **Verteilungspläne** wählen Sie **1110 globale Konfiguration**.
 1. Wählen Sie im Aktivitätsbereich **Jetzt ausführen**.
@@ -304,13 +300,14 @@ Führen Sie die folgenden Schritte aus, um Commerce Ihre AAD B2C-Mandantenanwend
 1. Geben Sie die folgenden erforderlichen Elemente in das angezeigte Formular ein und verwenden Sie dabei die Werte Ihres B2C-Mandanten und Ihrer Anwendung. Nicht erforderliche Felder (solche ohne Sternchen) können leer gelassen werden.
 
     - **Anwendungsname**: Der Name für Ihre B2C-Anwendung, z. B. Fabrikam B2C.
-    - **Name des Mandanten**: Der Name Ihres B2C-Mandanten, z. B. Fabrikam.
+    - **Name des Mandanten**: Der Name Ihres B2C-Mandanten (verwenden Sie beispielsweise „fabrikam“, wenn die Domain für den B2C-Mandanten als „fabrikam.onmicrosoft.com“ angezeigt wird). 
     - **Kennwor vergessen Richtlinien-ID**: Die ID der Benutzerflussrichtlinie für vergessenes Kennwort, z.B. B2C_1_PasswordReset.
     - **Anmeldung Anmelderichtlinien-ID**: Die ID der Anmelde- und Anmelde-Benutzerflussrichtlinie, z. B. B2C_1_signup_signin.
-    - **Client-GUID**: Die B2C-Anwendungs-ID, zum Beispiel 22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6.
+    - **Client-GUID**: Die B2C-Anwendungs-ID, zum Beispiel „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6“.
     - **Profilrichtlinien-ID bearbeiten** : Die Benutzerflussrichtlinien-ID für die Profilbearbeitung, z. B. B2C_1A_ProfileEdit.
 
 1. Wählen Sie **OK**. Sie sollten nun den Namen Ihrer B2C-Anwendung in der Liste sehen.
+1. Wählen Sie **Speichern** aus, um die Änderungen zu speichern.
 
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>Verknüpfen Sie die B2C-Anwendung mit Ihrer Site und Ihrem Kanal
 

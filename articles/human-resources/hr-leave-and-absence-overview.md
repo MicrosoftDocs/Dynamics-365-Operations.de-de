@@ -3,7 +3,7 @@ title: Übersicht
 description: In Dynamics 365 Human Resources bietet der Arbeitsbereich Urlaub und Abwesenheit einen flexiblen Rahmen zum Erstellen neuer Urlaubspläne, Workflows zum Verwalten von Anfragen und eine intuitive Self-Service-Seite, auf der Mitarbeiter eine Freizeitanforderung beantragen können.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7ba32b31a67d81ee5be568b0e64842f343f96b
-ms.sourcegitcommit: 9940ca772807d3c4e1ff3bf47f45b7251c4469ac
+ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
+ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "3226229"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325764"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -78,8 +78,16 @@ Sie können **Rundungsgenauigkeit** nicht festlegen, wenn Sie **Rundungstyp** fe
 
 ## <a name="leave-and-absence-preview-features"></a>Vorschaufunktionen für Urlaub und Abwesenheit
 
-Sie können neue Funktionen für die Vorschau von Abwesenheiten und Urlaubszeiten in einer **Sandkasten** Umgebung ausprobieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md). Die Vorschaufunktionen umfassen:
+Sie können neue Funktionen für die Vorschau von Abwesenheiten und Urlaubszeiten in einer **Sandkasten** Umgebung ausprobieren. Weitere Informationen zur Aktivierung von Vorschaufunktionen finden Sie unter [Funktionen verwalten](hr-admin-manage-features.md). 
 
-- **Urlaubsaussetzung** - Sie können Urlaub und Abwesenheit in der Personalabteilung für einen Mitarbeiter aussetzen. Durch das Aussetzen des Urlaubs werden die Urlaubsrückstellungen für ausgewählte Urlaubstypen gestoppt. Wenn die Aussetzung erfolgte, nachdem eine Rückstellung bearbeitet wurde, führt die Aussetzung des Urlaubs zu einer anteiligen Anpassung des Urlaubssaldos des Mitarbeiters. 
+[!include [banner](includes/preview-feature.md)]
+
+Die Vorschaufunktionen umfassen:
+
+- **Urlaubsaussetzung** - Sie können Urlaub und Abwesenheit in der Personalabteilung für einen Mitarbeiter aussetzen. Durch das Aussetzen des Urlaubs werden die Urlaubsrückstellungen für ausgewählte Urlaubstypen gestoppt. Wenn die Aussetzung erfolgte, nachdem eine Rückstellung bearbeitet wurde, führt die Aussetzung des Urlaubs zu einer anteiligen Anpassung des Urlaubssaldos des Mitarbeiters. Sie können auch Ursachencodes angeben, wenn Sie die Abwesenheit eines Mitarbeiters aussetzen. Die Benutzererfahrung wurde aktualisiert, um eine Aussetzung anzuzeigen. 
 
 - **Vortragungsregel** - Sie können einen Vortragsabwesenheitstyp für Vortragssalden angeben, bei denen Vortragsanpassungen übertragen werden. Wenn ein Mitarbeiter beispielsweise 10 Tage vorzieht, können Sie für diese 10 Tage einen anderen Urlaubstyp auswählen. 
+
+- **Fügen Sie Ursachencode und Kommentare für Regulierungen hinzu** – Sie können einen Ursachencode und einen Kommentar hinzufügen, wenn Sie eine Regulierung des Urlaubsguthabens eines Mitarbeiters vornehmen. 
+
+- **Übergang zu Urlaubs- und Abwesenheitsparametern** – Sie können jetzt nur Urlaubs- und Abwesenheitsparameter anstelle von Personalverwaltungsparametern verwenden. 

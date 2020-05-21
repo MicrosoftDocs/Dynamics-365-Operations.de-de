@@ -1,6 +1,6 @@
 ---
-title: Kennzeichenempfang über die Warehousing Mobile App
-description: In diesem Thema wird erläutert, wie Sie die Warehousing-App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Inventar unterstützt wird.
+title: Kennzeichenempfang über die Lagerhaltungs-App
+description: In diesem Thema wird erläutert, wie Sie die Lagerhaltungs-App so einrichten, dass die Verwendung eines Kennzeichen-Empfangsprozesses zum Empfangen von Bestand unterstützt wird.
 author: perlynne
 manager: tfehr
 ms.date: 03/31/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 98cd608edea1d5365d0d3532244f1fcdb6293d3c
-ms.sourcegitcommit: 3a823444005d316bd95fc663e2dbc8252ac7d93a
+ms.openlocfilehash: 7d5ac6598ab80ece0164d7c92f5d84e91d21b385
+ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261334"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346375"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-mobile-app"></a>Kennzeichenempfang über die Warehousing Mobile App
+# <a name="license-plate-receiving-via-the-warehousing-app"></a>Kennzeichenempfang über die Lagerhaltungs-App
 
-In diesem Thema wird erläutert, wie Sie die Warehousing-Mobile-App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
+In diesem Thema wird erläutert, wie Sie die Lagerhaltungs-App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
 
 Mit dieser Funktion können Sie schnell den Eingang des eingehenden Bestands aufzeichnen, der sich auf eine Vorabmitteilung (ASN) bezieht. Das System erstellt automatisch einen Lieferavis, wenn Lagerverwaltungsprozesse zum Versenden eines Transportauftrags verwendet werden. Für den Bestellvorgang kann ein ASNs manuell erfasst oder mithilfe eines eingehenden ASN-Datenentitätsprozesses automatisch importiert werden.
 
@@ -63,7 +63,7 @@ For more information about the *Report as finished* production scenario, see the
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Zeigen Sie die empfangende Zusammenfassungsseite an oder überspringen Sie sie
 
-Sie können die Funktion *Steuern Sie, ob auf Mobilgeräten eine Empfangsübersichtsseite angezeigt werden soll* verwenden, um einen zusätzlichen detaillierten Warehouse-App-Ablauf als Teil des Kennzeichenempfangsprozesses zu nutzen.
+Sie können die Funktion *Steuern, ob auf mobilen Geräten eine Empfangsübersichtsseite angezeigt werden soll* verwenden, um einen zusätzlichen detaillierten Lagerhaltungs-App-Flow als Teil des Kennzeichenempfangsprozesses zu nutzen.
 
 Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist diese Funktion wie folgt aufgeführt:
 

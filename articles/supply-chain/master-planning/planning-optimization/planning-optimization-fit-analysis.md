@@ -3,7 +3,7 @@ title: Planungsoptimierung Fit-Analyse
 description: In diesem Thema wird erläutert, wie Sie Ihr aktuelles Setup und Ihre Daten mit den Möglichkeiten der Planungsoptimierungsfunktionalität verifizieren können.
 author: ChristianRytt
 manager: tfehr
-ms.date: 04/17/2020
+ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,16 +19,15 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 0382e78942e6cb2047e37b76f1daf5725638d5c3
-ms.sourcegitcommit: 915ee7c59ef5fbd4927c10840e5c5e8652f667a9
+ms.openlocfilehash: 9bf19604d246988e05b91c8a41b1f57b523d2192
+ms.sourcegitcommit: 73ae66c9464bcc9ddc1efbf4e76abb2758862fe6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3277797"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346652"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Planungsoptimierung Fit-Analyse
 
-[!include [banner](../../includes/preview-banner.md)]
 [!include [banner](../../includes/banner.md)]
 
 Um zu sehen, wie kompatibel Ihr aktuelles Setup und Ihre Daten mit der Funktionalität der Planungsoptimierung sind, gehen Sie zu **Masterplanung** \> **Setup** \> **Planungsoptimierung Fit-Analyse**, und wählen Sie dann **Laufanalyse**. Wenn die Analyse Inkonsistenzen feststellt, werden diese auf der gleichen Seite aufgelistet. (Die Analyse kann einige Minuten dauern.)
@@ -73,6 +72,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Intercompany | Produktprogrammpläne einschließlich geplanten Downstream-Bedarfs: _\#_ | Diese Funktion steht noch aus. Derzeit enthält die Masterplanung keine nachgelagerten Planungsanforderungen, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. Beachten Sie, dass freigegebene/feste Bestellungen weiterhin mit der normalen Intercompany-Funktionalität funktionieren und die meisten Szenarien abdecken. |
 | Kanban | Artikeldeckungsdatensätze mit geplantem Auftragstyp "Kanban": _\#_ | Diese Funktion steht noch aus. Derzeit wird die auf Kanban eingestellte Artikelabdeckung ignoriert, wenn die Planungsoptimierung aktiviert ist. Die geplante Kanban-Auftragsart erstellt während der Masterplanung eine Warnung, und geplante Bestellungen werden erstellt, um den entsprechenden Bedarf zu decken. |
 | Kanban | Artikel mit Standardauftragstyp „Kanban“: _\#_ | Derzeit wird die auf Kanban eingestellte Standardauftragsart ignoriert, wenn die Planungsoptimierung aktiviert ist. Die Kanban-Standardauftragsart erstellt während der Masterplanung eine Warnung, und geplante Bestellungen werden erstellt, um den entsprechenden Bedarf zu decken. |
+| Produktlebenszyklus-Status   | Produktlebenszyklus-Status nicht aktiv für die Planung: _\#_ | Dies ist eine ausstehende Funktion. Derzeit wird der Produktlebenszyklusstatus bei aktivierter Planungsoptimierung ignoriert. Sie können den Produktfilter auf Planebene anpassen, um zu vermeiden, dass Produkte einbezogen werden, bei denen der Status des Produktlebenszyklus für die Planung deaktiviert ist. |
 | Produktion | Stücklistenpositionen mit Rundung oder mehreren Konfigurationen: _\#_ | Diese Funktion steht noch aus. Derzeit werden Rundungen und mehrere Setups in Stücklistenzeilen ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. |
 | Produktion | Stücklisten-/Formelpositionen mit Formelmessung: _\#_ | Diese Funktion steht noch aus. Derzeit wird Formelmessung in Stücklisten- und Formelzeilen ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. |
 | Produktion | Stücklisten-/Formelpositionen mit Artikelersetzung (Plangruppen): _\#_ | Diese Funktion steht noch aus. Derzeit wird Artikelersetzung (Plangruppen) ignoriert, wenn die Planungsoptimierung aktiviert ist, unabhängig von dieser Einstellung. |
@@ -99,7 +99,7 @@ Die folgende Tabelle zeigt die verschiedenen Ergebnisse, die nach einer Anpassun
 | Verkaufsangebote | Produktprogrammpläne mit aktivierten Verkaufsangeboten: _\#_ | Diese Funktion steht noch aus. Derzeit werden Angebote ignoriert, wenn die Planungsoptimierung aktiviert ist. Sie werden unabhängig von dieser Einstellung ignoriert. |
 | Haltbarkeitsdatum | Produktprogrammpläne mit aktiviertem Haltbarkeitsdatum: _\#_ | Diese Funktion steht noch aus. Derzeit wird das Haltbarkeitsdatum ignoriert, wenn die Planungsoptimierung unabhängig von dieser Einstellung aktiviert ist. |
 
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Übersicht zur Planungsoptimierung](planning-optimization-overview.md)
 

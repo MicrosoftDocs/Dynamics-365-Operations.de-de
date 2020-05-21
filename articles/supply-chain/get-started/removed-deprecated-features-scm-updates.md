@@ -2,8 +2,8 @@
 title: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen in Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
-ms.date: 03/03/2020
+manager: AnnBe
+ms.date: 04/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 2011f5cc3489eb7921d818dbd178425f72bac2d1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7502cd16129431d41d152508fb3b49ff85a5a9f8
+ms.sourcegitcommit: f1db998ecfccca660eb15cc2739b12c8463fa54d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205068"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "3331247"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
 
@@ -35,6 +35,18 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Entfernte oder veraltete Funktionen in Supply Chain Management 10.0.11
+
+### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>Verwenden des integrierten Supply Chain Management-Masterplanungsmoduls für Verteilungszenarien
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Um die Leistung zu verbessern und die SQL-Datenbanklast während der Ausführung der Masterplanung zu minimieren, wird das integrierte Supply Chain Management-Masterplanungsmodul durch die Planungsoptimierung ersetzt. Die Planungsoptimierung ermöglicht schnelle Planungsausführungen, die auch während der Geschäftszeiten durchgeführt werden können. Dadurch können Planer sofort auf Änderungen in der Nachfrage oder bei den Planungsparametern reagieren. |
+| **Ersetzt durch eine andere Funktion?**   | Ja, die Planungsoptimierung wird das bestehende integrierte Supply Chain Management-Masterplanungsmodul ersetzen. |
+| **Betroffene Produktbereiche**         | Supply Chain Management – Masterplanung |
+| **Bereitstellungsoption**              | Nur Cloud. Planungsoptimierung wird bei lokalen Bereitstellungen nicht unterstützt. |
+| **Status**                         | Veraltet. Im April 2021 werden Verteilungsszenarien mit dem integrierten Dynamics 365 Supply Chain Management-Masterplanungsmodul nicht mehr unterstützt. Für Verteilungsszenarien müssen Kunden die Planungsoptimierung für Masterplanungsberechnungen verwenden. Weitere Informationen finden Sie unter [Planungsoptimierungsdokumentation](https://go.microsoft.com/fwlink/?linkid=2105830). Kunden mit lokalen Bereitstellungen von Dynamics 365 Supply Chain Management verwenden möglicherweise weiterhin das Supply Chain Management-Masterplanungsmodul für Verteilungsszenarien nach April 2021. Es werden jedoch keine weiteren Funktionserweiterungen bereitgestellt. |
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Frühere Ankündigungen über entfernte oder veraltete Funktionen
 

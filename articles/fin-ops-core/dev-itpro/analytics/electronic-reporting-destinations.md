@@ -3,7 +3,7 @@ title: Zielorte für elektronische Berichterstellung (ER)
 description: Dieses Thema enthält Informationen zur Verwaltung von ER-Zielen (Electronic Reporting), zu den unterstützten Zieltypen und zu Sicherheitsaspekten.
 author: nselin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8a6536c82cd3407626fc0d8e102e3819c80cfd4b
-ms.sourcegitcommit: 0d9ca44b48fb2e33d8160faccc1e6bd932e58934
+ms.openlocfilehash: 1bad9e5094f0daa260f66ecd429233f20a2545a5
+ms.sourcegitcommit: 68092ed283bfbb7b6f611cce1b62c791f9b6a208
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3150814"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3323691"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Ziele für elektronische Berichterstellung (EB)
 
@@ -52,7 +52,36 @@ Außerdem gibt es einen [Drucken](er-destination-type-print.md)-Zieltyp. Um ihn 
 
 ## <a name="overview"></a>Übersicht
 
-Sie können Ziele nur für ER-Konfigurationen einrichten, die in die aktuelle Finance-Instanz [importiert](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) wurden und für die Formate auf der Seite **Konfigurationen für die elektronische Berichterstellung**. Die ER-Zielverwaltungsfunktionalität steht unter **Organisationsverwaltung** \> **Elektronische Berichterstattung** \> **Zielort für elektronische Berichterstellung** bereit. Auf der Seite **Zielort für elektronische Berichterstellung** können Sie das Standardverhalten für eine Konfiguration überschreiben. Importierte Konfigurationen werden auf dieser Seite nicht angezeigt, bis Sie auf **Neu** klicken und dann im Feld **Verweis** eine Konfiguration für die Zieleinstellungen wählen.
+Sie können Ziele nur für ER-Konfigurationen einrichten, die in die aktuelle Finance-Instanz [importiert](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) wurden und für die Formate auf der Seite **Konfigurationen für die elektronische Berichterstellung**. Die ER-Zielverwaltungsfunktionalität steht unter **Organisationsverwaltung** \> **Elektronische Berichterstattung** \> **Zielort für elektronische Berichterstellung** bereit.
+
+### <a name="default-behavior"></a>Standardmäßiges Verhalten
+
+Das Standardverhalten für eine EB-Formatkonfiguration hängt vom Ausführungstyp ab, den Sie beim Start eines EB-Formats angeben.
+
+Im Dialogfeld **Intrastat-Bericht** im Inforegister **Im Hintergrund ausführen**, wenn Sie die Option **Stapelverarbeitung** auf **Nein** festlegen, wird ein EB-Format sofort im interaktiven Modus ausgeführt. Wenn diese Ausführung erfolgreich abgeschlossen wurde, wird ein generiertes ausgehendes Dokument zum Download bereitgestellt.
+
+Wenn Sie die Option **Stapelverarbeitung** auf **Ja** festlegen, wird ein EB-Format im Modus [Charge](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) ausgeführt. Der entsprechende Stapelverarbeitungsauftrag wird basierend auf den Parametern erstellt, die Sie in der Registerkarte **Im Hintergrund ausführen** des Dialogfelds **EB-Parameter** angeben.
+
+> [!NOTE]
+> Die Einzelvorgangsbeschreibung wird initiiert, um Sie über die Ausführung einer EB-Formatzuordnung zu informieren. Sie enthält auch den Namen der ausgeführten EB-Komponente.
+
+[![Ausführen eines EB-Formats](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+
+Informationen zu diesen Einzelvorgang finden Sie an mehreren Stellen:
+
+- Gehen Sie zu **Allgemein** \> **Abfragen** \> **Stapelverarbeitungsaufträge** \> **Meine Stapelverarbeitugnsaufträge,** um den Status des geplanten Einzelvorgangs zu überprüfen.
+- Gehen Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Einzelvorgänge der elektronischen Berichterstellung,** um den Status des geplanten Einzelvorgangs und die Ausführungsergebnisse des abgeschlossenen Einzelvorgangs zu überprüfen. Wenn die Einzelvorgangsausführung erfolgreich abgeschlossen wurde, wählen Sie **Dateien anzeigen** auf der Seite **Einzelvorgänge der elektronischen Berichterstellung** aus, um ein generiertes ausgehendes Dokument abzurufen.
+
+    > [!NOTE]
+    > Dieses Dokument wird als Anhang des aktuellen Einzelvorgangsdatensatzes gespeichert und vom [Dokumentverwaltung](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management)-Framework gesteuert. Der [Dokumententyp](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types), der verwendet wird, um EB-Artefakte dieses Typs zu speichern, wird in den [EB-Parametern](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) konfiguriert.
+
+- Auf der Seite **Einzelvorgänge der elektronischen Berichterstellung** wählen Sie **Dateien anzeigen** aus, um die Liste aller Fehler und Warnungen anzuzeigen, die während der Einzelvorgangsausführung generiert wurden.
+
+    [![Überprüfen der EB-Einzelvorgangsliste](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+
+### <a name="user-configured-behavior"></a>Vom Benutzer konfiguriertes Verhalten
+
+Auf der Seite **Zielort für elektronische Berichterstellung** können Sie das Standardverhalten für eine Konfiguration überschreiben. Importierte Konfigurationen werden auf dieser Seite nicht angezeigt, bis Sie auf **Neu** klicken und dann im Feld **Verweis** eine Konfiguration für die Zieleinstellungen wählen.
 
 [![Wählen Sie im Feld eine Konfigurationstechnologie aus](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
@@ -64,7 +93,7 @@ Als nächstes können Sie im Dialogfeld **Zieleinstellungen** die einzelnen Ziel
 
 In den Versionen von Finance **vor Version 10.0.9** können Sie **ein Dateiziel** für jede Ausgabekomponente des gleichen Formats im Feld Dateiname erstellen, z. B. einen Ordner oder eine Datei, die im Feld **Dateiname** ausgewählt ist. In **Version 10.0.9 und höher** können Sie **mehrere Dateiziele** für jede Ausgabekomponente desselben Formats erstellen.
 
-Mit dieser Funktion können Sie beispielsweise Dateiziele für eine Dateikomponente konfigurieren, die zum Generieren eines ausgehenden Dokuments im Excel-Format verwendet wird. Ein Ziel ([Archiv](er-destination-type-archive.md)) kann so konfiguriert werden, dass die ursprüngliche Excel-Datei im ER-Auftragsarchiv gespeichert wird und ein anderes Ziel ([E-Mail ](er-destination-type-email.md)) kann konfiguriert werden, um die Excel-Datei gleichzeitig ins PDF-Format zu [konvertieren](#OutputConversionToPDF) und die PDF-Datei per E-Mail zu senden.
+Mit dieser Funktion können Sie beispielsweise Dateiziele für eine Dateikomponente konfigurieren, die zum Generieren eines ausgehenden Dokuments im Excel-Format verwendet wird. Ein Ziel ([Archiv](er-destination-type-archive.md)) kann so konfiguriert werden, dass die ursprüngliche Excel-Datei im ER-Auftragsarchiv gespeichert wird und ein anderes Ziel ([E-Mail](er-destination-type-email.md)) kann konfiguriert werden, um die Excel-Datei gleichzeitig ins PDF-Format zu [konvertieren](#OutputConversionToPDF) und die PDF-Datei per E-Mail zu senden.
 
 [![Mehrere Ziele für ein einzelnes Formatelement konfigurieren](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
@@ -90,11 +119,11 @@ Wenn Sie Dateiziele für ein ausgewähltes Format konfigurieren, konfigurieren S
 
 [![Konfigurationslink](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-Zur gleichen Zeit haben Sie möglicherweise mehrere [Versionen](general-electronic-reporting.md#component-versioning)des Formats, das in die aktuelle Finance-Instanz importiert wurde. Sie können diese anzeigen, wenn Sie den Link **Konfiguration** auswählen, der angeboten wird, wenn Sie das Feld **Referenz** auswählen.
+Zur gleichen Zeit haben Sie möglicherweise mehrere [Versionen](general-electronic-reporting.md#component-versioning) des Formats, das in die aktuelle Finance-Instanz importiert wurde. Sie können diese anzeigen, wenn Sie den Link **Konfiguration** auswählen, der angeboten wird, wenn Sie das Feld **Referenz** auswählen.
 
 [![Konfigurationsversionen](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
-Standardmäßig werden konfigurierte Ziele nur angewendet, wenn Sie eine Version im ER-Format ausführen, die entweder den Status **Abgeschlossen**oder **Geteilt** haben. Sie müssen jedoch manchmal konfigurierte Ziele verwenden, wenn die Entwurfsversion eines ER-Formats ausgeführt wird. Sie ändern beispielsweise eine Entwurfsversion Ihres Formats und möchten anhand konfigurierter Ziele testen, wie die generierte Ausgabe geliefert wird. Befolgen Sie diese Schritte, um Ziele für ein ER-Format anzuwenden, wenn die Entwurfsversion ausgeführt wird.
+Standardmäßig werden konfigurierte Ziele nur angewendet, wenn Sie eine Version im ER-Format ausführen, die entweder den Status **Abgeschlossen** oder **Geteilt** haben. Sie müssen jedoch manchmal konfigurierte Ziele verwenden, wenn die Entwurfsversion eines ER-Formats ausgeführt wird. Sie ändern beispielsweise eine Entwurfsversion Ihres Formats und möchten anhand konfigurierter Ziele testen, wie die generierte Ausgabe geliefert wird. Befolgen Sie diese Schritte, um Ziele für ein ER-Format anzuwenden, wenn die Entwurfsversion ausgeführt wird.
 
 1. Wechseln Sie zu **Organisationsverwaltung** \> **Elektronische Berichterstellung** \> **Konfigurationen**.
 2. Auf der Seite **Konfigurationen** im Aktivitätsbereich, auf der Registerkarte **Konfigurationen** in der Gruppe **Erweiterte Einstellungen** wählen Sie **Benutzerparameter** aus.
@@ -118,11 +147,11 @@ Nachdem Sie dieses Setup abgeschlossen haben, wird die **Entwurf ausführen** f�
 
 Normalerweise wird ein ER-Format im Rahmen eines bestimmten Geschäftsprozesses ausgeführt. Die Zustellung eines ausgehenden Dokuments, das während der Ausführung eines ER-Formats generiert wird, muss jedoch manchmal als Teil dieses Geschäftsprozesses betrachtet werden. In diesem Fall muss die Ausführung des Geschäftsprozesses abgebrochen werden, wenn die Zustellung eines generierten ausgehenden Dokuments an ein konfiguriertes Ziel nicht erfolgreich ist. Um das entsprechende ER-Ziel zu konfigurieren, wählen Sie die Option **Verarbeitung bei Fehler beenden**.
 
-Beispielsweise konfigurieren Sie die Kreditorenzahlungsverarbeitung so, dass das ER-Format **ISO20022-Kreditübertragung** ausgeführt wird, um die Zahlungsdatei und die zusätzlichen Dokumente (z. B. Anschreiben und Kontrollbericht) zu generieren. Soll eine Zahlung erst dann als erfolgreich abgewickelt gelten, wenn das Anschreiben erfolgreich per E-Mail zugestellt wurde, müssen Sie das Kontrollkästchen **Verarbeitung bei Fehler beenden** für die Komponente **Anschreiben** in der entsprechenden Dateiziel, wie in der folgenden Abbildung dargestellt, auswählen. In diesem Fall wird der Status der Zahlung, die zur Verarbeitung ausgewählt wurde, von **Keine**zu **Geschickt** nur dann geändert, wenn das generierte Anschreiben von einem in der Finance-Instanz konfigurierten E-Mail-Anbieter erfolgreich zur Zustellung angenommen wurde.
+Beispielsweise konfigurieren Sie die Kreditorenzahlungsverarbeitung so, dass das ER-Format **ISO20022-Kreditübertragung** ausgeführt wird, um die Zahlungsdatei und die zusätzlichen Dokumente (z. B. Anschreiben und Kontrollbericht) zu generieren. Soll eine Zahlung erst dann als erfolgreich abgewickelt gelten, wenn das Anschreiben erfolgreich per E-Mail zugestellt wurde, müssen Sie das Kontrollkästchen **Verarbeitung bei Fehler beenden** für die Komponente **Anschreiben** in der entsprechenden Dateiziel, wie in der folgenden Abbildung dargestellt, auswählen. In diesem Fall wird der Status der Zahlung, die zur Verarbeitung ausgewählt wurde, von **Keine** zu **Geschickt** nur dann geändert, wenn das generierte Anschreiben von einem in der Finance-Instanz konfigurierten E-Mail-Anbieter erfolgreich zur Zustellung angenommen wurde.
 
 [![Konfigurieren der Prozessbehandlung für Dateizielfehler](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
-Wenn Sie das Kontrollkästchen **Verarbeitung bei Fehler beenden** für die Komponente **Anschreiben** in der entsprechenden Dateiziel löschen, gilt eine Zahlung als erfolgreich verarbeitet, auch wenn das Anschreiben nicht erfolgreich per E-Mail zugestellt wurde. Der Status der Zahlung wird von **Keine**zu **Gesendet** geändert, auch wenn das Anschreiben nicht gesendet werden kann, weil beispielsweise die E-Mail-Adresse des Empfängers oder Absenders fehlt oder falsch ist.
+Wenn Sie das Kontrollkästchen **Verarbeitung bei Fehler beenden** für die Komponente **Anschreiben** in der entsprechenden Dateiziel löschen, gilt eine Zahlung als erfolgreich verarbeitet, auch wenn das Anschreiben nicht erfolgreich per E-Mail zugestellt wurde. Der Status der Zahlung wird von **Keine** zu **Gesendet** geändert, auch wenn das Anschreiben nicht gesendet werden kann, weil beispielsweise die E-Mail-Adresse des Empfängers oder Absenders fehlt oder falsch ist.
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Ausgabeumwandlung in PDF
 
@@ -136,7 +165,7 @@ Um die PDF-Konvertierungsoption in der aktuellen Finance-Instanz verfügbar zu m
 
 ### <a name="applicability"></a>Anwendbarkeit
 
-Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe in Microsoft Office Exceloder Word-Format (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert.
+Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in denen die Ausgabe in Microsoft Office Excel oder Word-Format (**Excel-Datei**) generiert wird. Wenn diese Option aktiviert ist, wird die im Office-Format generierte Ausgabe automatisch in PDF-Format konvertiert.
 
 ### <a name="limitations"></a>Einschränkungen
 
@@ -148,7 +177,7 @@ Die PDF-Konvertierungsoption kann nur für Dateikomponenten aktiviert werden, in
 >
 > Das erstellte PDF ist auf maximal 300 Seiten beschränkt.
 >
-> Zurzeit wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt.
+> In Microsoft Dynamics 365 Finance Version 10.0.9 (April 2020) wird im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, nur die Querformat-Seitenausrichtung unterstützt. Mit der Veröffentlichung von Dynamics 365 Finance Version 10.0.10 (Mai 2020) können Sie im PDF-Dokument, das aus einer Excel-Ausgabe erstellt wird, die [Seitenausrichtung angeben](#SelectPdfPageOrientation), während Sie ein EB-Ziel konfigurieren.
 >
 > Für die Konvertierung einer Ausgabe, die keine eingebetteten Schriftarten enthält, werden nur die allgemeinen Systemschriftarten des Windows-Betriebssystems verwendet.
 

@@ -3,7 +3,7 @@ title: Rabatte im POS anzeigen
 description: In diesem Thema wird erläutert, wie Microsoft Dynamics 365 Commerce Vertriebsmitarbeitern dabei hilft, sich über Werbeaktionen zu informieren und wie sie für Cross- und Upsell-Bewegungen genutzt werden können.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/06/2020
+ms.date: 05/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 89f7b79733f01c089a16c507b127b23ada5df1a6
-ms.sourcegitcommit: 02640a0f63daa9e509146641824ed623c4d69c7f
+ms.openlocfilehash: 0ffa7ca6294c7b523ec743f1cb9bc4aef8ef46a8
+ms.sourcegitcommit: 4d5bcda288341572076364559125c86e2ec05273
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "3265580"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "3334707"
 ---
 # <a name="show-discounts-in-pos"></a>Rabatte im POS anzeigen
 
@@ -54,9 +54,9 @@ Auf der Seite **Alle Rabatte** können Vertriebsmitarbeiter auch nach Rabatten a
 
 Mehrfache Rabatte, wie z.B. Mengenrabatte, Mix-and-Match-Rabatte und Schwellenwert-Rabatte, sind eine gute Möglichkeit, Kunden zu motivieren, mehr Produkte zu kaufen, um größere Rabatte zu erhalten. Daher tragen sie auch dazu bei, die Größe des Einkaufswagens eines Kunden und den Umsatz des Einzelhändlers zu erhöhen. Diese Rabatte können auf E-Commerce-Websites, in sozialen Netzwerken und auf Bannern im Geschäft veröffentlicht werden.
 
-Doch selbst wenn alle diese Werbemethoden genutzt werden, könnten Kunden die Gelegenheit verpassen, die Vorteile von Werbeaktionen zu nutzen. Um es den Verkäufern leicht zu machen, zu erfahren, welche Werbeaktionen für eine ausgewählte Linie oder sogar für den gesamten Warenkorb gelten, können die Einzelhändler die Schaltfläche für die Operation „Alle Rabatte anzeigen“ zu einem beliebigen Schaltflächenraster am POS hinzufügen. Wir empfehlen, die Schaltfläche dem Schaltflächenraster für die Seite **Transaktion** hinzuzufügen. Auf diese Weise kann ein Verkäufer eine Transaktionszeile auswählen und dann die Schaltfläche wählen, um alle Rabatte anzuzeigen, die für die ausgewählte Zeile verfügbar sind. Der Vertriebsmitarbeiter kann auch eine andere Registerkarte wählen, um Rabatte anzuzeigen, die für die gesamte Transaktion gelten.
+Doch selbst wenn alle diese Werbemethoden genutzt werden, könnten Kunden die Gelegenheit verpassen, die Vorteile von Werbeaktionen zu nutzen. Um es den Vertriebsmitarbeitern leicht zu machen, zu erfahren, welche Werbeaktionen für eine ausgewählte Position oder sogar für den gesamten Warenkorb gelten, können die Einzelhändler die Schaltfläche für den Vorgang „Alle Rabatte anzeigen“ zum Schaltflächenraster auf der Seite **Transaktion** hinzufügen. Auf diese Weise kann ein Vertriebsmitarbeiter eine Transaktionsposition auswählen und dann die Schaltfläche wählen, um alle Rabatte anzuzeigen, die für die ausgewählte Position verfügbar sind. Der Vertriebsmitarbeiter kann auch eine andere Registerkarte wählen, um Rabatte anzuzeigen, die für die gesamte Transaktion gelten.
 
-Die bereits erwähnte Seite **Alle Rabatte** zeigt nur die Rabatte an, die mit keinem der angewandten Rabatte konkurrieren. Dieses Verhalten trägt dazu bei, dass, wenn ein Vertriebsmitarbeiter einen Kunden über einen Rabatt informiert und der Kunde die erforderliche Maßnahme ergreift (z.B. wenn der Kunde einen weiteren Artikel kauft, um 10 Prozent Rabatt zu erhalten), der Rabatt auf die Transaktion angewendet wird. Wie bereits erwähnt, werden couponbasierte Rabatte nur dann angezeigt, wenn die Option **Beantragen ohne Coupon-Code** eingeschaltet ist.
+Die Seite **Alle Rabatte** zeigt nur die Rabatte an, die mit keinem der angewandten Rabatte konkurrieren. Dieses Verhalten trägt dazu bei, dass, wenn ein Vertriebsmitarbeiter einen Kunden über einen Rabatt informiert und der Kunde die erforderliche Maßnahme ergreift (z.B. wenn der Kunde einen weiteren Artikel kauft, um 10 Prozent Rabatt zu erhalten), der Rabatt auf die Transaktion angewendet wird. Die gutscheinbasierten Rabatte werden nur dann angezeigt, wenn die Option **Ohne Gutscheincode anwenden** eingeschaltet ist.
 
 In einem einfachen Szenario, in dem alle Rabatte die gleiche Priorität haben, ist der Modus für die gleichzeitige Gewährung von Rabatten **Gemischt**, und die Steuerung der gleichzeitigen Gewährung von Rabatten ist auf **Bester Preis und Mischung innerhalb der Priorität, niemals Mischung über die Prioritäten hinweg** eingestellt. Die Seite **Alle Rabatte** zeigt alle verfügbaren Rabatte für ein Produkt an, da alle Rabatte gebündelt sind und nicht miteinander konkurrieren.
 

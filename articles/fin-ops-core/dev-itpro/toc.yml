@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-34.md
                 - name: "Plattformupdate\_33 (April\_2020)"
                   href: get-started/whats-new-platform-update-33.md
-                - name: "Plattformupdate\_32 (Februar 2020)"
-                  href: get-started/whats-new-platform-update-32.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Plattformfunktionen
@@ -140,8 +138,6 @@
                               href: data-entities/dual-write/connection-setup.md
                             - name: Einrichtung von dualem Schreiben aus Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
-                            - name: Erstsynchronisierung
-                              href: data-entities/dual-write/initial-sync.md
                             - name: Duales Schreiben für vorhandene Finance and Operations-Apps aktivieren
                               items:
                                 - name: Duales Schreiben für vorhandene Finance and Operations-Apps aktivieren
@@ -556,6 +552,16 @@
                   href: dev-tools/development-system-requirements.md
             - name: 'Versionskontrolle, Metadatensuche und Navigation'
               href: dev-tools/version-control-metadata-navigation.md
+            - name: Automatisierung mit Azure erstellen
+              items:
+                - name: "Automatisierung mit von Microsoft gehosteten Agents und Azure\_Pipelines"
+                  href: dev-tools/hosted-build-automation.md
+                - name: "Einem bereitstellbaren Paket Azure\_Pipelines-Lizenzdateien hinzufügen"
+                  href: dev-tools/pipeline-add-license-package.md
+                - name: Bereitstellbare Pakete in Azure Pipelines erstellen
+                  href: dev-tools/pipeline-create-deployable-package.md
+                - name: X++-Modellversionierung in Azure Pipelines
+                  href: dev-tools/pipeline-model-version.md
             - name: Beispielanwendung für die Flottenverwaltung
               items:
                 - name: End-to-End-Szenario für die Beispielanwendung zur Flottenverwaltung
@@ -1392,11 +1398,13 @@
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Aufgabentrennung einrichten
                   href: sysadmin/tasks/set-up-segregation-duties.md
-                - name: Identifizieren und Beheben von Konflikten bei der Aufgabentrennung
+                - name: Konflikte bei der Aufgabentrennung identifizieren und beheben
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
-                - name: Zuweisen von Benutzern zu Sicherheitsrollen
+                - name: Benutzer zu Sicherheitsrollen zuweisen
                   href: sysadmin/tasks/assign-users-security-roles.md
-            - name: Batch-Verarbeitung
+                - name: Sicherheitsdiagnose für Aufgabenaufzeichnungen
+                  href: sysadmin/tasks/security-diagstics-task-recordings.md
+            - name: Batchverarbeitung
               items:
                 - name: Stapelverarbeitung – Übersicht
                   href: sysadmin/batch-processing-overview.md
