@@ -12,7 +12,7 @@
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
             - name: Dienstupdates für eine Version
               items:
-                - name: Dienstupdates für eine Version – Übersicht
+                - name: Übersicht über Dienstupdates für eine Version
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
                 - name: FAQ zu Dienstupdates für eine Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
@@ -54,7 +54,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/finance/toc.json
                 - name: Systemanforderungen für lokale Bereitstellungen
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations (on-premises) kaufen
+                - name: Finance + Operations (on-premises) kaufen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Lagerung für lokale Bereitstellungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
@@ -92,11 +92,11 @@
               items:
                 - name: Hilfesystem
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Das Hilfesystem verbinden
+                - name: Verbindung zum Hilfesystem herstellen
                   href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/finance/toc.json
-                - name: Verbinden einer benutzerdefinierten Hilfe-Website
-                  href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/finance/toc.json
-                - name: Anzeigen und Exportieren von Feldbeschreibungen
+                - name: Übersicht über benutzerdefinierte Hilfe
+                  href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/finance/toc.json
+                - name: Feldbeschreibungen anzeigen und exportieren
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Aufgabenaufzeichnung
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/finance/toc.json
@@ -134,7 +134,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/finance/toc.json
                 - name: Funktionsverwaltung – Übersicht
                   href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Kunden-FAQs
+                - name: Kunden-FAQ
                   href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Aktivitätssuche
                   href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/finance/toc.json
@@ -182,11 +182,11 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
                 - name: Liveschaltung vorbereiten
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
-                - name: FAQs live schalten
+                - name: FAQ live schalten
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Serviceanforderung senden
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
-                - name: 'FAQs zu Abonnements, LCS-Projekten und Azure AD-Mandanten'
+                - name: 'FAQ zu Abonnements, LCS-Projekten und Azure AD-Mandanten'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Verschieben von Umgebungen zwischen Rechenzentren
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
@@ -1736,6 +1736,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Umsatzsteuererklärung für Deutschland
+                  href: localizations/emea-de-vat-declaration.md
                 - name: Erfassungslistenbericht
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Elektronische Steuererklärungen einrichten
@@ -2398,6 +2400,8 @@
                       href: localizations/rus-prepayments-management.md
                     - name: Eingehende MwSt. wiederherstellen
                       href: localizations/rus-incoming-VAT-restoring.md
+                    - name: Rechnungsfaktoren für den Export verarbeiten
+                      href: localizations/rus-export-trade.md
                 - name: Anlagen
                   items:
                     - name: Übersicht über Anlagen
@@ -2496,6 +2500,12 @@
                       href: localizations/rus-inventory-adjustment-wizard.md
                     - name: Bestandsberichte
                       href: localizations/rus-inventory-reports.md
+                    - name: Bestandsprofilübersicht
+                      href: localizations/rus-inventory-profile-overview.md
+                    - name: Bestandsprofil einrichten
+                      hreF: localizations/rus-set-up-inventory-profile.md
+                    - name: Bestandsprofil in Dokumenten und Abfragen verwenden
+                      href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Berichterstellung
                   items:
                     - name: Finanzberichterstellung
@@ -2766,7 +2776,7 @@
                   href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
                 - name: ACA-Berichte generieren
                   href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Mitarbeiter entwickeln
+            - name: Mitarbeiter weiterbilden
               items:
                 - name: Übersicht über die Leistungsverwaltung
                   href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
@@ -2968,7 +2978,7 @@
                       items:
                         - name: (ER) Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
+                        - name: (RCS) Zugriff auf Anwendungs-Metadaten über die EB-Konfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
                         - name: (RCS) Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
@@ -2982,7 +2992,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Testen der vorbereiteten ER-Lösung in der Zielanwendung
                       items:
-                        - name: Importieren von Konfigurationen aus RCS
+                        - name: Konfigurationen aus RCS importieren
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
                         - name: Generieren elektronischer Dokumente für Zahlungen mithilfe einer Formatkonfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/finance/toc.json
@@ -3242,40 +3252,46 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: ER-Modellzuordnungen in separaten ER-Konfigurationen verwalten
+            - name: ER-Modellzuordnungen in separaten EB-Konfigurationen verwalten
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
             - name: Datenmodelldefinitionen beim Erstellen von Formaten auswählen
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Erstellen von ER-Formaten zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten
+            - name: ER-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
               items:
-                - name: (ER) Erstellen von Konfigurationen zum Generieren von Berichten im OpenXML-Format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: (ER) Erstellen von Konfigurationen zum Generieren von Berichten im Word-Format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
-                - name: Erstellen von Konfigurationen zum Ausfüllen von PDF-Vorlagen
-                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
-            - name: Einbetten von Bildern und Formen
-              items:
-                - name: (ER) Einbetten von Bildern und Formen in zu generierenden Dokumenten
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
-                - name: Beispiel eingebetteter Bilder und Formen
+                - name: Konfigurationen zur Generierung ausgehender Dokumente im Excel-Format entwerfen
                   items:
-                    - name: Entwerfen von Konfigurationen zum Generieren von Berichten in Office-Formaten mit eingebetteten Bildern
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: Überprüfen von Konfigurationen zum Generieren von Berichten in Office-Formaten mit eingebetteten Bildern
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Erstellen von Berichten in Office-Formaten mit eingebetteten Bildern
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-            - name: 'Ändern von elektronisches Berichterstellungsformaten, indem Excel-Vorlagen erneut angewendet werden'
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
-            - name: Definieren der Abhängigkeit von ER-Konfigurationen von anderen Komponenten
+                    - name: Eine Konfiguration zur Generierung von Dokumenten im Excel-Format entwerfen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
+                    - name: Beispiel für die Erstellung von Berichten im OPENXML-Format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektronische Berichterstellungsformate durch erneute Anwendung von Excel-Vorlagen ändern
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Excel-Berichten dynamisch Spalten als horizontal erweiterbare Bereiche hinzufügen
+                      items:
+                        - name: Formate zur dynamischen Ergänzung von Excel-Berichten mit Spalten entwerfen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
+                        - name: Formate zur dynamischen Ergänzung von Excel-Berichten mit Spalten ausführen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurationen zum Generieren von Berichten im Word-Format entwerfen
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurationen zum Ausfüllen von PDF-Vorlagen entwerfen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/finance/toc.json
+                - name: Einbetten von Bildern und Formen
+                  items:
+                    - name: (ER) Einbetten von Bildern und Formen in zu generierenden Dokumenten
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/finance/toc.json
+                    - name: Beispiel eingebetteter Bilder und Formen
+                      items:
+                        - name: Entwerfen von Konfigurationen zum Generieren von Berichten in Office-Formaten mit eingebetteten Bildern
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
+                        - name: Überprüfen von Konfigurationen zum Generieren von Berichten in Office-Formaten mit eingebetteten Bildern
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Berichte in Office-Formaten mit eingebetteten Bildern erstellen
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Erstellte XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge teilen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
+            - name: Abhängigkeit von EB-Konfigurationen von anderen Komponenten festlegen
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-            - name: Excel-Berichten dynamisch Spalten als horizontal erweiterbare Bereiche hinzufügen
-              items:
-                - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche entwerfen
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
-                - name: Formate zum dynamischen Hinzufügen von Spalten zu Excel-Berichten als horizontal erweiterbare Bereiche ausführen
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
             - name: Anwendungsdaten mithilfe elektronischer Berichte aktualisieren
               items:
                 - name: Elektronische Dokumente generieren und Anwendungsdaten aktualisieren
@@ -3304,13 +3320,11 @@
                   items:
                     - name: Import von Dateien im XML-Format mit optionalen Attributen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurieren von ER-Formaten zum Import von Dateien im XML-Format mit optionalen Attributen
+                    - name: ER-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md
-            - name: Teilen erstellter XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurationslebenszyklus
               items:
-                - name: Verwalten des Konfigurationslebenszyklus
+                - name: Konfigurationslebenszyklus verwalten
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/finance/toc.json
                 - name: Hochladen von Konfigurationen in Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
@@ -3322,17 +3336,21 @@
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Erweiterte Filteroptionen zur Suche nach Konfigurationen im globalen Repository
                   href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurationen für elektronische Berichte aus dem RCS-Repository herunterladen
+                - name: EB-Konfigurationen aus dem RCS-Repository herunterladen
                   items:
-                    - name: ER-Konfigurationen aus dem RCS-Repository für den RCS-Typ herunterladen
+                    - name: EB-Konfigurationen aus dem RCS-Repository für den RCS-Typ herunterladen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Importieren von Konfigurationen aus RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurationen aus RCS importieren
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md
+                - name: EB-Konfigurationen in RCS erstellen und in das globale Repository hochladen
+                  href: localizations/rcs-global-repo-upload.md
+                - name: EB-Konfigurationen in RCS an externe Unternehmen freigeben
+                  href: localizations/rcs-global-repo-share-configuration.md
             - name: Lernprogramme
               items:
-                - name: 'Erfahren Sie, wie Sie Datenquellen verwenden'
+                - name: Informationen zur Nutzung von Datenquellen
                   items:
-                    - name: 'JOIN verwenden, um Daten aus mehreren Tabellen abzurufen'
+                    - name: Mit JOIN Daten aus mehreren Tabellen abrufen
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: 'Unformatiertes XML verwenden, um Inhalte hinzuzufügen'
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
@@ -3504,7 +3522,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
             - name: „In Excel öffnen“-Erfahrungen verschaffen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
-            - name: Hinzufügen von Vorlagen zum Menü „Positionen in Excel öffnen”
+            - name: Vorlagen zum Menü „Positionen in Excel öffnen” hinzufügen
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
             - name: Menü „In Microsoft Office öffnen“ anpassen
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/finance/toc.json
@@ -3546,7 +3564,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurieren des globalen Adressbuchs
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
-                - name: FAQs zu Adressbüchern
+                - name: FAQ zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurieren von Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/finance/toc.json
@@ -3612,7 +3630,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/finance/toc.json
                 - name: Bericht zu Workflow-Typen
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/finance/toc.json
-                - name: Workflow-FAQs
+                - name: Workflow-FAQ
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/finance/toc.json
             - name: Warnungen
               items:
@@ -3676,7 +3694,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earning-code-group-tasks.md
                 - name: 'Einrichten von Mehrwertsteuercodes, Steuerregionen, Mehrwertsteuercodes und Mehrwertsteuergruppen'
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-tax-information-tasks.md
-                - name: 'Mehrwertsteuercodes, Mehrwertsteuergruppen und Buchungsdefinitionen – FAQs'
+                - name: 'Mehrwertsteuercodes, Mehrwertsteuergruppen und Buchungsdefinitionen – FAQ'
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
                 - name: Eingeben von Lohnanfangssalden
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-enter-beginning-balances.md
@@ -3694,7 +3712,7 @@
               href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-track-time-for-fmla.md
             - name: Lohnverarbeitungsaufgaben
               items:
-                - name: Einnahmen und Einnahmegenerierung – FAQs
+                - name: Einnahmen und Einnahmegenerierung – FAQ
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-earnings-generation-process.md
                 - name: Einnahmen für Arbeitskräfte generieren
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-generate-earnings.md
@@ -3702,7 +3720,7 @@
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-issue-worker-payments.md
                 - name: Buchen der Lohnverteilung und Generieren der Kreditorenrechnungen
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
-                - name: Lohnabrechnungen und Zahlungsgenerierung – FAQs
+                - name: Lohnabrechnungen und Zahlungsgenerierung – FAQ
                   href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process.md
             - name: Den Zahlungsprozess abschließen
               items:
@@ -3770,7 +3788,7 @@
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Buchungen mithilfe CustTrans::settleTransaction ausgleichen'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Entwicklung und Verwaltung für Finance and Operations-Apps
+    - name: Entwicklung und Verwaltung von Finance and Operations-Apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md

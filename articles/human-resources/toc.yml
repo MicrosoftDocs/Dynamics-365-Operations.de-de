@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "14.\_Mai\_2020"
+          href: hr-whats-new-2020-05-14.md
         - name: "1.\_Mai\_2020"
           href: hr-whats-new-2020-05-01.md
         - name: "13.\_April\_2020"
@@ -79,7 +81,7 @@
               href: ../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json
             - name: Funktionsverwaltung – Übersicht
               href: ../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: Kunden-FAQs
+            - name: Kunden-FAQ
               href: ../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json
             - name: Aktivitätssuche
               href: ../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json
@@ -111,15 +113,17 @@
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
             - name: Grundlagen zu Lifecycle Services
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
+        - name: Human Resources-App in Teams
+          href: hr-admin-teams-leave-app.md
         - name: Dokumentationsressourcen
           items:
             - name: Hilfesystem
               href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
-            - name: Das Hilfesystem verbinden
+            - name: Verbindung zum Hilfesystem herstellen
               href: ../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json
-            - name: Verbinden einer benutzerdefinierten Hilfe-Website
-              href: ../fin-ops-core/fin-ops/get-started/help-custom.md?toc=/dynamics365/human-resources/toc.json
-            - name: Anzeigen und Exportieren von Feldbeschreibungen
+            - name: Übersicht über benutzerdefinierte Hilfe
+              href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?toc=/dynamics365/human-resources/toc.json
+            - name: Feldbeschreibungen anzeigen und exportieren
               href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json
             - name: Aufgabenaufzeichnung
               href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
@@ -241,7 +245,7 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurieren des globalen Adressbuchs
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
-                - name: FAQs zu Adressbüchern
+                - name: FAQ zu Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurieren von Adressbüchern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/address-books.md?toc=/dynamics365/human-resources/toc.json
@@ -307,7 +311,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
                 - name: Bericht zu Workflow-Typen
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
-                - name: Workflow-FAQs
+                - name: Workflow-FAQ
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json
             - name: Warnungen
               items:
@@ -511,11 +515,13 @@
               href: hr-leave-and-absence-analytics.md
             - name: Urlaubs- und Abwesenheitsanforderungen verwalten
               href: hr-employee-self-service-manage-requests.md
-            - name: Arbeitsfreie Zeit anfordern
+            - name: Arbeitsfreie Zeit beantragen
               href: hr-employee-self-service-request-time-off.md
             - name: Team- und Unternehmenskalender anzeigen
               href: hr-employee-self-service-calendar.md
-        - name: Mitarbeiter entwickeln
+        - name: Urlaubsanträge in Teams verwalten
+          href: hr-teams-leave-app.md
+        - name: Mitarbeiter weiterbilden
           items:
             - name: Übersicht über die Leistungsverwaltung
               href: hr-develop-performance-management-overview.md
