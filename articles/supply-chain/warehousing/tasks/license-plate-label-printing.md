@@ -17,18 +17,18 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 484a1465dd41429fe201de18aac55f118a483cab
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 43dc913e84fa53179855d7ab8dbbf4d179e2cc63
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3217010"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383043"
 ---
 # <a name="enable-license-plate-label-printing"></a>Kennzeichenbeschriftungs-Druck aktivieren
 
 [!include [banner](../../includes/banner.md)]
 
-In diesem Thema wird gezeigt, wie Sie das automatische Drucken einer Beschriftung mit der Nummer der Versandeinheit (NVE) aktivieren, nachdem der letzte Artikel aus dem Bestand im Verkaufskommissionierungs-Arbeitsprozess entnommen wurde. Sie können diese Prozedur im Demodatunternehmen USMF ausführen. Wenn Sie diese mithilfe Ihrer eigenen Daten ausgeführt haben, müssen Sie einen Nummernkreis für Kennzeichen eingerichtet haben. Sie müssen einen Etikettendrucker einrichten, bevor Sie mit dieser Aufgabe beginnen. Wechseln Sie zu "Organisationsverwaltung" > "Einrichtung" > "Netzwerkdrucker". Klicken Sie im Aktivitätsbereich auf "Optionen" und klicken Sie dann auf die Routing-Agent-Installationsprogrammschaltfläche "Dokument herunterladen". Führen Sie das Installationsprogramm aus und überprüfen Sie, ob Sie einen funktionierenden Netzwerkdrucker haben, der auf "Aktiv" festgelegt ist, bevor Sie mit der Prozedur fortfahren.
+In diesem Thema wird gezeigt, wie Sie das automatische Drucken einer Beschriftung mit der Nummer der Versandeinheit (NVE) aktivieren, nachdem der letzte Artikel aus dem Bestand im Verkaufskommissionierungs-Arbeitsprozess entnommen wurde. Sie können diese Prozedur im Demodatunternehmen USMF ausführen. Wenn Sie diese mithilfe Ihrer eigenen Daten ausgeführt haben, müssen Sie einen Nummernkreis für Kennzeichen eingerichtet haben. Sie müssen einen Etikettendrucker einrichten, bevor Sie mit dieser Aufgabe beginnen. Wechseln Sie zu "Organisationsverwaltung" > "Einrichtung" > "Netzwerkdrucker". Klicken Sie im Aktivitätsbereich auf „Optionen“, und klicken Sie dann auf die Routing-Agent-Installationsprogrammschaltfläche „Dokument herunterladen“. Führen Sie das Installationsprogramm aus und überprüfen Sie, ob Sie einen funktionierenden Netzwerkdrucker haben, der auf "Aktiv" festgelegt ist, bevor Sie mit der Prozedur fortfahren.
 
 
 ## <a name="set-up-the-gs1-company-prefix"></a>Das Präfix des Unternehmens GS1 einrichten

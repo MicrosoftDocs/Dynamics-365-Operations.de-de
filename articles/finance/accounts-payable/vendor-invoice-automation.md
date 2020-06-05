@@ -3,7 +3,7 @@ title: Kreditorenrechnungsautomatisierung
 description: In diesem Thema werden die Funktionen, die für die weitere Automatisierung von Kreditorenrechnungen verfügbar sind, selbst Rechnungen mit Anlagen, erklärt.
 author: abruer
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 05/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba986afb5c17c7a317b47d1e9cf4ae57ac29da97
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4560d7b61fa8f014f9a1185da087df8b1c8e61ba
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177969"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396008"
 ---
 # <a name="vendor-invoice-automation"></a>Kreditorenrechnungsautomatisierung
 
@@ -61,7 +61,7 @@ Ein Datenpaket ist die Arbeitseinheit, die gesandt werden muss, damit anschließ
 
 Kreditorenrechnungsdokumentanhang ist eine Entität der neuen Daten, die im Rahmen dieser Funktion eingegeben wird. Die Kreditorenrechnungskopfentität wurde geändert, sodass diese Anlagen unterstützt werden. Die Kreditorenrechnungspositionsentität ist für diese Funktion nicht geändert.
 
-In diesem Thema sind keine Definitionen der Projektarbeit eines Datenpakets enthalten. Es erklärt auch nicht, wie Datenenpakete erstellt werden. Weitere Informationen finden Sie unter [Datenentitäts- und Paketframework](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Ausführliche Informationen zu Datenpaketen finden Sie unter [Datenverwaltungsübersicht](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Informationen zum Erstellen von Datenpaketen mithilfe des Datenverwaltungsarbeitsbereichs finden Sie unter [Datenpakete in der Dynamics 365 Finance and Operations-Apps-Lösung verarbeiten und verbrauchen](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 Um schnell Testdaten zu generieren, die Rechnungen und Anhänge enthalten, führen Sie die folgenden Schritte aus.
 

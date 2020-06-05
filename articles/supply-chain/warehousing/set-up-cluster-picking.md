@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daf8bc65dc937962e2e08b6f25805ddd3b8ee3c5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 86aed1b2071875117b74309030ac5e9008babdaf
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204285"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367406"
 ---
-[!include[banner](../includes/banner.md)]
-
 # <a name="set-up-cluster-picking"></a>Clusterkommissionierung einrichten
+
+[!include[banner](../includes/banner.md)]
 
 In diesem Thema wird beschrieben, wie Arbeitskräften ermöglicht wird, ihre mobilen Geräte zu verwenden, um Entnahmearbeit in Cluster zu gruppieren, sodass sie Artikel von einem einzelnen Lagerplatz für mehrere Arbeitsaufträge gleichzeitig entnehmen können. Dies wird als *Clusterkommissionierung* bezeichnet.
 
@@ -36,35 +36,35 @@ Nachdem Arbeitsaufträge für den Lagerort freigegeben sind, kann die Arbeitskra
 
 Bei Bedarf kann eine Arbeitskraft einen Cluster an eine andere Arbeitskraft weiterleiten. Dieses ändert den Clusterstatus zu Erfolgreich. Wenn die Arbeitskraft ein mobiles Gerät verwendet, um anzugeben, dass die Entnahme und die Entnahmearbeit abgeschlossen ist, müssen die Lieferung oder die Ladung im Client bestätigt werden.
 
-## <a name="set-up-cluster-picking"></a>Clusterkommissionierung einrichten
+## <a name="enable-cluster-picking"></a>Clusterkommissionierung aktivieren
 
 Um Clusterentnahme zu aktivieren, müssen Sie Folgendes einrichten:
 
--   **Clusterprofile** - Geben Sie an, ob automatisch Cluster Kennungen generiert werden, die Anzahl der zu verwendenden Positionen, wann Cluster abgebrochen werden und wie die Entnahmearbeit sequenziert und geprüft wird.
+- **Clusterprofile** - Geben Sie an, ob automatisch Clusterkennungen generiert werden, die Anzahl der zu verwendenden Positionen, wann Cluster abgebrochen werden und wie die Entnahmearbeit sequenziert und geprüft wird.
 
--   **Arbeitsvorlagen** - definieren Sie, wie die Entnahmearbeit für Clusterkommissionierung erstellt wird.
+- **Arbeitsvorlagen** – Definieren Sie, wie die Entnahmearbeit für Clusterkommissionierung erstellt wird.
 
--   **Standortweisungen** - Angeben, von wo Artikel entnommen werden und wo sie eingelagert werden.
+- **Standortweisungen** - Geben Sie an, von wo Artikel entnommen werden und wo sie eingelagert werden.
 
--   **Mobile Geräte-Menüartikel** - Konfigurieren einer Menüoption des Mobilgeräts, um vorhandene Arbeit zu verwenden, die durch Clusterkommissionierung geleitet wird. Sie müssen die Menüoption einem Menü des mobilen Geräts hinzufügen, damit es auf mobilen Geräten angezeigt wird.
+- **Mobile Geräte-Menüartikel** - Konfigurieren einer Menüoption des Mobilgeräts, um vorhandene Arbeit zu verwenden, die durch Clusterkommissionierung geleitet wird. Sie müssen die Menüoption einem Menü des mobilen Geräts hinzufügen, damit es auf mobilen Geräten angezeigt wird.
 
--   **Lagerortverwaltungsparameter** - Geben Sie den Nummernkreis an, der verwendet wird, wenn Sie Kennungen für Cluster generieren möchten.
+- **Lagerortverwaltungsparameter** - Geben Sie den Nummernkreis an, der verwendet wird, wenn Sie Kennungen für Cluster generieren möchten.
 
 ## <a name="set-up-a-cluster-profile"></a>Einrichten eines Clusterprofils
 
 Gehen Sie zum Einrichten eines Clusterprofils folgendermaßen vor:
 
-1.  Klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Mobiles Gerät** \> **Clusterprofile**.
+1. Klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Mobiles Gerät** \> **Clusterprofile**.
 
-2.  Klicken Sie auf **Neu**, um ein neues Profil zu erstellen.
+1. Klicken Sie auf **Neu**, um ein neues Profil zu erstellen.
 
-3.  Klicken Sie **Erstellen Sie Cluster**, und unter **Clustersortieren**, klicken Sie **Neu**, um der Sortierkriterien für den Cluster einzurichten. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Entnahmearbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.
+1. Klicken Sie **Erstellen Sie Cluster**, und unter **Clustersortieren**, klicken Sie **Neu**, um der Sortierkriterien für den Cluster einzurichten. Die Sortierkriterien steuern die Reihenfolge, in dem die Arbeitskraft die Entnahmearbeit ausführt. Sie können beliebig viele Kriterien hinzufügen.
 
-4.  Geben Sie im Feld **Sequenzzahl** die Anzahl ein, um die Reihenfolge zu definieren, in der die Sortierkriterien verarbeitet werden sollen.
+1. Geben Sie im Feld **Sequenzzahl** die Anzahl ein, um die Reihenfolge zu definieren, in der die Sortierkriterien verarbeitet werden sollen.
 
-5.  Wählen Sie im Feld **Feldname** das Feld aus, das die Sortierung bestimmt. Wenn Sie beispielsweise das Feld **WMSLocationId** aktiviert haben, wird die Arbeit nach Lagerplatz sortiert.
+1. Wählen Sie im Feld **Feldname** das Feld aus, das die Sortierung bestimmt. Wenn Sie beispielsweise das Feld **WMSLocationId** aktiviert haben, wird die Arbeit nach Lagerplatz sortiert.
 
-6.  Wählen Sie im Feld **Sortieren** eine der folgenden Optionen aus:
+1. Wählen Sie im Feld **Sortieren** eine der folgenden Optionen aus:
 
 | **Option**     | **Beschreibung**                                                                                                                                                                                                                    |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,6 +77,6 @@ Wann die Clusterentnahme angewendet wird, ist die Artikelbestätigung wichtig, u
 
 ### <a name="set-up-item-verification-with-cluster-picking"></a>Einrichten der Artikelprüfung mit Clusterentnahme
 
-1.  Öffnen Sie über ein Menüelement des mobilen Geräts das Einstellungsformular für Arbeitsbestätigung:  **Lagerortverwaltung** \> **Lagerortverwaltung** \> **Einrichtung** \> **Mobiles Gerät** \> **Mobiles Gerätemenü**.
+1. Öffnen Sie über ein Menüelement des mobilen Geräts das Einstellungsformular für Arbeitsbestätigung: **Lagerortverwaltung** \> **Lagerortverwaltung** \> **Einstellungen** \> **Mobiles Gerät** \> **Menüelemente des mobilen Geräts**.
 
-2.  Öffnen Sie über das Menüelement des mobilen Geräts die Option **Einrichtung Arbeitsbestätigung**. Die **Produktbestätigung** ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen.
+1. Öffnen Sie über das Menüelement des mobilen Geräts die Option **Einrichtung Arbeitsbestätigung**. Die **Produktbestätigung** ermöglicht Ihnen, beim Scannen jeden Inventurartikel über das mobile Gerät zu bestätigen.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c83cafd3a8934c488bb7a9f315bd5cb154f88c09
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b4587c9d64c2456e5f9f27cdb19625d9537f1e29
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3204827"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383204"
 ---
 # <a name="create-a-purchase-return-order"></a>Einkaufsrücklieferung erstellen
 
@@ -63,7 +63,7 @@ Diese Prozedur zeigt Ihnen, wie eine Reklamation erstellt wird, indem die Aktivi
 1. Klicken Sie auf **Aktionen > Bestätigen**.
 2. Klicken Sie im **Aktivitätsbereich** auf **Empfangen**.
 3. Klicken Sie auf **Produktzugang**.
-    - Diese Seite wird verwendet, um den Produktzugang für Bestellungen zu erfassen und auch um die Rücksendung von Waren zum Kreditor zu verarbeiten. Auftragspositionen mit einer negativen Menge bedeuten, dass Waren an den Kreditor zurückzusenden sind und dass das Dokument, das von dieser Seite aus generiert werden kann, als Lieferschein für diesen Zweck verwendet werden kann.   
+    - Diese Seite wird verwendet, um den Produktzugang für Bestellungen zu erfassen und auch um die Rücklieferung von Waren zum Kreditor zu verarbeiten. Auftragspositionen mit einer negativen Menge bedeuten, dass Waren an den Kreditor zurückzusenden sind und dass das Dokument, das von dieser Seite aus generiert werden kann, als Lieferschein für diesen Zweck verwendet werden kann.   
     - Wählen Sie im Feld **Menge** die Option „Bestellte Menge“ für dieses Beispiel aus. Dies stellt sicher, dass die Lieferung für die gesamte bestellte Menge verarbeitet wird, mit der die Auftragspositionen erstellt wurden.   
 4. Geben Sie im Feld **Produktzugang** einen Wert ein. Dieses Feld wird benutzt, um einen Verweis einzugeben, der als Beleg für die Produktzugangserfassung verwendet wird.  
 5. Klicken Sie auf **OK**. Die Waren sind jetzt auf der Reklamation als versendet erfasst worden und eine Produktzugangserfassung ist erstellt worden. Sie können die Aktivität "Produktzugang" verwenden, um die Erfassungen zu überprüfen, die mit der Bestellung erstellt wurden und um zu sehen, was wann empfangen oder zurückgesendet wurde.  

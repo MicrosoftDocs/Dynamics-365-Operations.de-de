@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab0a108b5c8b7f2f90a4d33d8a9ff088335c18d4
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f8092ab7f960fd36515afb8448dfe1e262197595
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207657"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383135"
 ---
 # <a name="create-a-vendor-bank-account"></a>Ein Kreditorenbankkonto erstellen
 
@@ -31,7 +31,7 @@ Diese Prozedur zeigt Ihnen, wie Sie ein Bankkonto für einen Kreditor erstellen.
 
 1. Wechseln Sie zu **Navigationsbereich > Module > Beschaffung > Kreditoren > Alle Kreditoren**.
 2. Wählen Sie den Kreditor aus, für den Sie ein Bankkonto erstellen möchten, und klicken Sie dann auf den Link im Feld **Kreditorkontenkennung**.
-3. Klicken Sie im **Aktivitätsbereich** auf **Händler**.
+3. Klicken Sie im **Aktivitätsbereich** auf **Kreditor**.
 4. Klicken Sie auf **Bankkonten**.
 5. Klicken Sie im **Aktivitätsbereich** auf **Neu**.
 6. Geben Sie im Feld **Bankkonto** einen Wert ein. Diese Kennung wird verwendet, um das Bankkonto im Kreditorendatensatz zu identifizieren.  

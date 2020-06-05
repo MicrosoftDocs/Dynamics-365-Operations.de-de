@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ccaeea8d0494644b4d55c29a778d9a8239de10b9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207783"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3383273"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Händler für bestimmte Produkte genehmigen
 
@@ -33,7 +33,7 @@ Diese Prozedur zeigt Ihnen an, wie Sie Händler für bestimmte Produkte genehmig
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
 3. Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.
 4. Erweitern Sie das Inforegister **Einkauf**. Wenn im Feld **Kreditor** ein primärer Kreditor angezeigt wird, müssen Sie diesen Kreditor als genehmigten Kreditor in den folgenden Schritten hinzufügen. Notieren Sie die Kreditornummer, sofern sie angezeigt wird.  
-5. Klicken Sie im Aktivitätsbereich auf **Einkauf**.
+5. Klicken Sie im Aktionsbereich auf **Einkauf**.
 6. Klicken Sie auf **Einstellungen**.
 7. Klicken Sie auf **Hinzufügen**.
 8. Geben Sie im Feld "Händler" einen Wert ein, oder wählen Sie einen Wert aus. Wählen Sie den genehmigten Kreditor aus. Es muss mindestens eine der Positionen der primäre Händler sein, wenn sich einer im Produktdatensatz befand. Wenn Sie zuvor die Händlernummer notierten, wählen Sie diese hier aus.  
