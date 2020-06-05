@@ -3,7 +3,7 @@ title: Verteilte Auftragsverwaltung (DOM)
 description: In diesem Thema wird die Funktion der verteilten Auftragsverwaltung (Distributed Order Management, DOM) in Dynamics 365 Commerce beschrieben.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 05/22/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7a584953b0f4961e25b59bca51aa3928b87b2c7c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1121cc89b278c3694d0bbd667f1a540d17f4d180
+ms.sourcegitcommit: b7af921189048d9f2eb4d3fd57c704c742bc96e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004319"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "3396031"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
@@ -37,7 +37,7 @@ In einem komplexen Netzwerk von Systemen und Prozessen optimiert DOM die Auftrag
 
 Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System für die verteilte Auftragsverwaltung.
 
-![Lebenszyklus eines Auftrags im DOM-Kontext](./media/flow.png "Lebenszyklus eines Auftrags im DOM-Kontext")
+![![Lebenszyklus eines Auftrags im DOM-Kontext](./media/flow.png "Lebenszyklus eines Auftrags im DOM-Kontext")](./media/flow.png "Sales order lifecycle in the context of DOM")
 
 ## <a name="set-up-dom"></a>DOM einrichten
 
@@ -81,8 +81,17 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
 
     1. Gehen Sie zu **Retail und Commerce \> Kanaleinstellungen \> Erfüllungsgruppen**.
     2. Geben Sie unter **Neu** einen neuen Namen und eine Beschreibung für die neue Gruppe ein.
-    3. Wählen Sie **Speichern**.
-    4. Wählen Sie **Position hinzufügen**, um einem einzelnen Standort zur Gruppe hinzuzufügen. Wählen Sie alternativ **Positionen hinzufügen** aus, um mehrere Lagerplätze hinzuzufügen.
+    3. Wählen Sie **Speichern** aus.
+    4. Wählen Sie **Position hinzufügen** aus, um einem einzelnen Standort zur Gruppe hinzuzufügen. Wählen Sie alternativ **Positionen hinzufügen** aus, um mehrere Standorte hinzuzufügen.
+    
+    > [!NOTE]
+    > Ab Commerce Version 10.0.12 muss im Arbeitsbereich **Funktionsverwaltung** die **Option, Standorte in der Erfüllungsgruppe als „Versand“ oder „Abholung“ anzugeben** aktiviert sein.
+    >
+    > Mit dieser Funktion werden der Seite **Erfüllungsgruppe** neue Konfigurationen hinzugefügt, damit Sie festlegen können, ob das Lager für den Versand verwendet werden kann oder ob die Kombination aus Lager und Geschäft für Versand, Abholung oder beides verwendet werden kann. 
+    >
+    > Wenn Sie die Funktion aktivieren, werden die zur Standortauswahl verfügbaren Optionen beim Erstellen von Abhol- oder Versandaufträgen am POS aktualisiert.
+    >
+    > Das Aktivieren der Funktion führt auch zu aktualisierten Seiten am POS, wenn die Vorgänge „Alle versenden“ oder „Ausgewählte versenden“ ausgewählt werden.
 
 9. Um Regeln definieren, gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einstellungen \> Regeln verwalten**. Die folgenden DOM-Regeln werden derzeit unterstützt:
 
@@ -109,10 +118,10 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
         | 8    | Ja                    | Nein                    | Nein                                   | Einige Positionen des Auftrags können erfüllt werden, aber einzelne Positionen können nicht teilweise erfüllt werden, und die verschiedenen Auftragspositionen können von mehreren Standorten in einer DOM-Instanz erfüllt werden werden. |
         | 9\*  | Nein                     | Nicht zutreffend        | Ja                                  | Alle Auftragspositionen müssen erfüllt werden, und alle Auftragspositionen dürfen nur von einem einzelnen Standort aus erfüllt werden. |
 
-        \* Wenn **Partielle Aufträge erfüllen** auf **Nein** festgelegt wird, wird **Partielle Positionen erfüllen** immer mit **Nein** berücksichtigt, unabhängig davon, wie dieses Feld tatsächlich festgelegt ist.
+        \* Wenn **Partielle Aufträge erfüllen** auf **Nein** festgelegt ist, wird **Partielle Positionen erfüllen** immer als **Nein** erachtet, unabhängig davon, wie dieses Feld tatsächlich eingestellt ist.
 
         > [!NOTE]
-        > In der Retail-Version 10.0.5 wurde der Parameter **Auftrag nur von einem Standort aus erfüllen** auf **Maximale Erfüllungsstandorte** geändert. Anstatt einem Benutzer die Möglichkeit zu geben, zu konfigurieren, ob Aufträge nur von einem Standort oder von so vielen Standorten wie möglich erfüllt werden können, können Benutzer nun festlegen, ob die Erfüllung von einem bestimmten Satz von Standorten (bis zu 5) oder von so vielen Standorten wie möglich erfolgen kann. Dies bietet mehr Flexibilität in Bezug auf die Anzahl der Standorte, an denen der Auftrag erfüllt werden kann.
+        > In Retail Version 10.0.5 wurde der Parameter **Auftrag nur von einem Standort aus erfüllen** in **Maximale Erfüllungsstandorte** geändert. Anstatt einem Benutzer die Möglichkeit zu geben, zu konfigurieren, ob Aufträge nur von einem Standort oder von so vielen Standorten wie möglich erfüllt werden können, können Benutzer nun festlegen, ob die Erfüllung von einem bestimmten Satz von Standorten (bis zu 5) oder von so vielen Standorten wie möglich erfolgen kann. Dies bietet mehr Flexibilität in Bezug auf die Anzahl der Standorte, an denen der Auftrag erfüllt werden kann.
 
    - **Regel für Erfüllungsstandort offline** – Mit dieser Regel können Organisationen einen Standort oder eine Standortgruppe für DOM als offline oder als nicht verfügbar angeben, damit für diese Lagerorte keine Aufträge zur Erfüllung zugewiesen werden können.
     - **Regel für maximale Ablehnung** – Mit dieser Regel können Organisationen einen Schwellenwert für Ablehnungen definieren. Wenn der Schwellenwert erreicht wird, markiert der DOM-Prozessor einen Auftrag oder eine Auftragsposition als Ausnahme und schließt ihn oder sie durch Entfernen von späterer Bearbeitung aus.
@@ -134,7 +143,17 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
     2. Wählen Sie **Neu** aus.
     3. Geben Sie in den Feldern **Profil** und **Beschreibung** Werte ein.
     4. Aktivieren Sie die Option **Ergebnis automatisch übernehmen**. Wenn Sie diese Option auf **Ja** setzen, werden die Ergebnisse der DOM-Ausführung für das Profil automatisch in die Auftragspositionen übernommen. Wenn Sie diese auf **Nein** setzen, können die Ergebnisse nur im Erfüllungsplan angezeigt werden können. Sie werden nicht in die Auftragspositionen übernommen.
-    5. Wenn das DOM-Profil für Aufträge durchgeführt werden soll, die jeden Auftragsursprung haben, legen sogar Aufträge, in denen der Auftragsursprung nicht definiert ist, die Option **Aufträge mit leerem Auftragsursprung verarbeiten** auf **Ja** fest. Um das Profil nur für einige Auftragsursprünge auszuführen, können Sie sie auf der Seite **Auftragsursprünge** festlegen. Dies wird später erläutert.
+    5. Soll das DOM-Profil bei Aufträgen mit jedwedem Auftragsursprung ausgeführt werden, darunter auch Aufträge, bei denen der Auftragsursprung nicht angegeben ist, legen Sie die Option **Aufträge mit leerem Auftragsursprung verarbeiten** auf **Ja** fest. Um das Profil nur bei einigen Auftragsursprüngen auszuführen, können Sie diese auf der Seite **Auftragsursprünge** festlegen. Hierzu folgt später noch eine Erklärung.
+
+    > [!NOTE]
+    > Ab Commerce Version 10.0.12 muss im Arbeitsbereich **Funktionsverwaltung** die **Option, einem Erfüllungsprofil eine Erfüllungsgruppe zuzuweisen** aktiviert sein. 
+    >
+    > Mit dieser Funktion wird auf der Seite **Erfüllungsprofil** eine neue Konfiguration ergänzt, die einer einzelnen Erfüllungsgruppe zugewiesen werden kann. 
+    >
+    > Wenn Sie die Erfüllungsgruppe auswählen, werden die DOM-Regeln für dieses Erfüllungsprofil effizient mit Bezug zu den in der Erfüllungsgruppe enthaltenen „Versandlagern“ ausgeführt. 
+    > 
+    > Um diese Funktion sinnvoll einzusetzen, stellen Sie sicher, dass es eine Erfüllungsgruppe gibt, die alle Versandlager enthält, und ordnen Sie diese Erfüllungsgruppe dann dem Erfüllungsprofil zu.
+    
     6. Aktivieren Sie auf dem Inforegister **Juristische Personen** die Option **Hinzufügen**, und wählen Sie dann eine juristische Person aus.
     7. Aktivieren Sie auf dem Inforegister **Regeln** die Option **Hinzufügen**, und wählen Sie dann die Regel aus, die mit dem Profil verknüpft werden soll.
     8. Wiederholen Sie die obigen zwei Schritte, bis dem Profil alle erforderlichen Regeln zugeordnet sind.
@@ -179,7 +198,7 @@ Zum Zeitpunkt des Verarbeitung berücksichtigt DOM die Reihenfolge und die Auftr
 
 Nach der Anwendung der Regeln, der Bestandseinschränkungen und der Optimierung wählt DOM den Standort aus, der der Lieferadresse des Kunden Debitors am nächsten ist.
 
-![Kriterien für Verkaufsaufträge](./media/ordercriteria.png "Kriterien für Verkaufsaufträge")
+![![Kriterien für Verkaufsaufträge](./media/ordercriteria.png "Kriterien für Verkaufsaufträge")](./media/ordercriteria.png "Sales order criteria")
 
 ## <a name="results-of-dom-runs"></a>Ergebnisse von DOM-Ausführungen
 

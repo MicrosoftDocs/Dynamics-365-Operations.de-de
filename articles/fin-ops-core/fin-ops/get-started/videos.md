@@ -3,7 +3,7 @@ title: Videos
 description: Diese Seite listet von Microsoft erstellte „How-to“- und Tech-Talk-Videos zu Finance and Operations-Apps auf, die auf YouTube und anderen Websites verfügbar sind.
 author: josaw1
 manager: AnnBe
-ms.date: 11/11/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-ms.openlocfilehash: 00ea8de8ba0567e8cc086a754062b3fec9672937
-ms.sourcegitcommit: 0138b6c108a10f2bcb90c91205da8092917160d8
+ms.openlocfilehash: f5e7751b71c75f80f1c3031ef00b32e80e7db42a
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "2781849"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367128"
 ---
 # <a name="videos"></a>Videos 
 
@@ -33,12 +33,12 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 > [!Note]
 > Einige der angezeigten Videos wurden unter einem vorherigen Produktnamen veröffentlicht, sind jedoch immer noch relevant.
 
-## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videos zur Entwicklung und Administration für Finance and Operations
+## <a name="videos-for-finance-and-operations-development-and-administration"></a>Videos zur Entwicklung und Verwaltung für Finance and Operations-Apps
 
 ### <a name="data-integration"></a>Datenintegration
 
 - [Integration der Konvertierung eines Interessenten in Bargeld](https://youtu.be/AVV9x5x-XCg)
-- [Synchronisieren eines Arbeitsauftrags zwischen Dynamics 365 for Field Service und Finance and Operations-Apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Arbeitsauftrag synchronisieren zwischen Dynamics 365 for Field Service und Finance and Operations-Apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### <a name="data-management"></a>Datenverwaltung
 
@@ -56,7 +56,7 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 
 - [Bearbeiten eines eingebetteten Berichts in einem analytischen Arbeitsbereich](https://youtu.be/_8WlwmSggcQ)
 - [Einbetten von PowerBI.com-Berichten in Finance and Operations-Apps](https://youtu.be/gGWuNJDoi-M)
-- [Bringen Sie Ihre eigene Datenbank (BYOD) zu Finance and Operations-Apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Eigene Datenbanken in Finance and Operations-Apps nutzen](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [Erläutert das Kostenmanagement Power BI Inhalt in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
@@ -76,6 +76,12 @@ Auf dem [Microsoft Dynamics 365 YouTube-Kanal](https://www.youtube.com/channel/U
 - [Auffrischen von Daten in einer Produktionsumgebung](https://www.youtube.com/watch?v=VCd5SgkYPTw)
 - [Empfang einer neuen Plattformversion nach Plattformaktualisierung 3](https://www.youtube.com/watch?v=nkiKP2Au6OQ&feature=youtu.be)
 - [Verwenden Sie Telemetrie, um wichtige Leistungsindikatoren in Dynamics Lifecycle Services zu überwachen.](https://www.youtube.com/watch?v=18u6SC8GeFY&feature=youtu.be)
+
+### <a name="regression-suite-automation-tool-rsat"></a>Regression Suite Automation Tool (RSAT)
+
+- [So erstellen Sie mit der Aufgabenaufzeichnung einen Testfall für das Regression Suite Automation Tool (RSAT)](https://youtu.be/bBr4BXAxTNI)
+- [So erstellen Sie einen Testplan in Azure DevOps für das Regression Suite Automation Tool (RSAT)](https://youtu.be/3jIuBleAnQk) 
+- [So verwenden Sie das Regression Suite Automation Tool (RSAT)](https://youtu.be/uhN9JItzGAk)
 
 
 ## <a name="videos-for-dynamics-365-finance"></a>Videos für Dynamics 365 Finance

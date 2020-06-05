@@ -3,7 +3,7 @@ title: Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle
 description: In diesem Thema werden die Optionen beschrieben, die für die Anzeige des verfügbaren Bestands für das Geschäft und die Online-Kanäle zur Verfügung stehen.
 author: hhainesms
 manager: annbe
-ms.date: 02/25/2020
+ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 5b85438bc23e8f6cef0730dee9ac2c7f6dc26589
-ms.sourcegitcommit: 141e0239b6310ab4a6a775bc0997120c31634f79
+ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
+ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3113919"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3379235"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle
 
@@ -50,12 +50,7 @@ Beide APIs rufen Daten vom Commerce-Server ab und liefern eine Schätzung des ve
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Beginnen Sie mit der berechneten Verfügbarkeit des E-Commerce-Bestands
 
-Bevor Sie die beiden oben genannten APIs verwenden, müssen Sie in Commerce Headquarters eine Parameteränderung vornehmen, um sicherzustellen, dass der Snapshot der Bestandswerte, den Commerce Headquarters unter Verwendung des Jobs **Produktverfügbarkeit** berechnet, die Daten in die richtigen Tabellen einträgt.
-
-Führen Sie die folgenden Schritte aus, um den Parameter einzustellen.
-
-1. Gehen Sie zu **Retail and Commerce \> Headquarter-Einrichtung \> Parameter \> Gemeinsame Parameter für Commerce**.
-1. Wählen Sie auf der Registerkarte **Bestand** im Abschnitt **Produktverfügbarkeitsjob** **Optimiertes Verfahren für Produktverfügbarkeitsjob verwenden**. Diese Einstellung stellt sicher, dass der optimale Funktionssatz zur Berechnung des verfügbaren Bestands des Channels über den Commerce-Server verwendet wird.
+Bevor Sie die beiden zuvor genannten APIs verwenden, müssen Sie die **Optimierte Berechnung der Produktverfügbarkeit**-Funktion über den **Funktionsverwaltung**-Arbeitsbereich in der Handelszentrale aktivieren.
 
 Bevor die APIs die bestmögliche Schätzung der Bestandsverfügbarkeit für einen Artikel berechnen können, muss ein periodischer Snapshot der Bestandsverfügbarkeit von Commerce Headquarters verarbeitet und an die Datenbank des Vertriebskanals gesendet werden, die die E-Commerce Commerce Scale Unit verwendet. Der Snapshot stellt die Informationen dar, die Commerce Headquarters über die Bestandsverfügbarkeit für eine bestimmte Kombination aus einem Produkt oder einer Produktvariante und einem Lager hat. Er kann Bestandsanpassungen oder -bewegungen enthalten, die durch Lagereingänge oder durch Lieferungen oder andere Prozesse in Commerce Headquarters verursacht werden und über die der E-Commerce-Kanal nur aufgrund des Synchronisierungsprozesses Informationen hat.
 
@@ -85,20 +80,15 @@ Wenn die kanalseitige Berechnung korrekt konfiguriert und verwaltet wird, kann s
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Beginnen Sie mit der kanalseitigen Berechnung der Bestandsverfügbarkeit am POS
 
-Um die kanalseitige Berechnungslogik zu verwenden und Echtzeit-Serviceabrufe für Bestandsabfragen aus der POS-Anwendung auszuschalten, müssen Sie zunächst zwei Parameteränderungen vornehmen. Anschließend müssen Sie die Änderungen mit dem Vertriebskanal über den Verteilungsplanprozess synchronisieren.
+Um die kanalseitige Berechnungslogik zu verwenden und Echtzeitserviceaufrufe für Inventarsuchen in der POS-Anwendung zu deaktivieren, müssen Sie zuerst die Option **Optimierte Berechnung der Produktverfügbarkeit**-Funktion über den **Funktionsverwaltung**-Arbeitsbereich in der Handelszentrale aktivieren. Zusätzlich zur Aktivierung der Funktion müssen Sie Änderungen am **Funktionsprofil** vornehmen.
 
-Führen Sie die folgenden Schritte aus, um den ersten Parameter einzustellen.
-
-1. Gehen Sie zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Gemeinsame Commerce-Parameter**.
-1. Wählen Sie auf der Registerkarte **Bestand** im Abschnitt **Produktverfügbarkeitsjob** **Optimiertes Verfahren für Produktverfügbarkeitsjob verwenden**. Diese Einstellung stellt sicher, dass der optimale Funktionssatz zur Berechnung des verfügbaren Bestands des Channels über den Commerce-Server verwendet wird.
-
-Um den zweiten Parameter zu setzen, führen Sie folgende Schritte aus.
+Führen Sie die folgenden Schritte aus, um das **Funktionsprofil** zu ändern:
 
 1. Gehen Sie zu **Retail und Commerce \> Kanaleinrichtung \> POS-Einrichtung \> POS-Profile \> Funktionsprofile**.
 1. Wählen Sie ein Funktionsprofil aus.
 1. Ändern Sie auf den Inforegister **Funktionen** im Abschnitt **Verfügbarkeitsberechnung** von **Verfügbarkeitsberechnungsmodus** von **Echtzeitdienst** auf **Kanal**. Standardmäßig verwenden alle Funktionsprofile Echtzeit-Serviceabrufe. Daher müssen Sie den Wert dieses Feldes ändern, wenn Sie die kanalseitige Berechnungslogik verwenden möchten. Jedes Einzelhandelsgeschäft, das mit dem ausgewählten Funktionsprofil verknüpft ist, ist von dieser Änderung betroffen.
 
-Führen Sie die folgenden Schritte aus, um die Server zu aktualisieren.
+Anschließend müssen Sie die Änderungen am Kanal über den Verteilungsplanungsprozess synchronisieren, indem Sie die folgenden Schritte ausführen:
 
 1. Gehen Sie zu **Retail and Commerce \> Retail and Commerce IT \> Vertriebsplan**.
 1. Führen Sie den Job **1070** (**Kanalkonfiguration**) aus.

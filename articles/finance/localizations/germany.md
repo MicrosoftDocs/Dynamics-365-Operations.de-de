@@ -3,7 +3,7 @@ title: Deutschland – Übersicht
 description: Dieses Thema bietet eine Übersicht der Dynamics 365 Finance-Funktionen, die für Deutschland spezifisch sind.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a01941cfbbaa8d5ba2f878b7cec95a5803c2bea0
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 418d06af518cf364b3bd6c4f9f5b3a9b89b39496
+ms.sourcegitcommit: baab88d037ebf26e6c8822d96056e5ee475877aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773400"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3369507"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -41,6 +41,7 @@ Dieses Thema enthält Informationen und Verknüpfungen zu den Ressourcen, die f�
 ## <a name="electronic-transmission-of-vat-declaration-elster"></a>Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)
 - [Elektronische Übermittlung der Umsatzsteuererklärung (ELSTER)](tasks/de-00003-electronic-transmission-elster.md)
 - [Elster Testmerker (PDF-Download)](https://msdnshared.blob.core.windows.net/media/2018/04/Dyn365_ElsterTestmerker.pdf)
+- [Umsatzsteuererklärung für Deutschland](emea-de-vat-declaration.md)
 
 ## <a name="credit-memos-originating-from-sales"></a>Gutschriften aus Verkäufen
 In diesem Artikel wird beschrieben, wie die Beschriftung definiert wird, die auf Gutschriften erscheinen, die vom Vertrieb stammen.

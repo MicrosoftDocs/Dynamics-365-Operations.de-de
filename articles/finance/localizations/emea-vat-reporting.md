@@ -17,12 +17,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d307ceae85773feb58d11e575df27e74b065cd3
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a9b5bafb70883d9daf35a7d5a9107d7aee23469
+ms.sourcegitcommit: 98ef9178b28cd548f08f8c32255636e6e09b25f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2773448"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "3395985"
 ---
 # <a name="vat-reporting-for-europe"></a>MwSt-Berichterstattung für Europa
 
@@ -265,13 +265,13 @@ Der Mehrwertsteuertyp. im für jedes Land muss den Bedingungen der Gesetzgeber d
 | Belgien        |                                                                                 |
 | Tschechische Republik |  [MwSt.-Abrechnung für die Tschechische Republik](emea-cze-vat-statement-details.md)   |
 | Estland        |  [MwSt-Berichtadetails für Estland](emea-est-vat-statement-details.md) |
-| Finnland        |                                                                                 |
-| Deutschland        |                                                                                 |
+| Finnland        | [Mehrwertsteuererklärung für Finnland](emea-fin-sales-tax-payment-report-finland.md)          |
+| Deutschland        | [Umsatzsteuererklärung für Deutschland](emea-de-vat-declaration.md)                       |
 | Italien          | [MwSt-Abrechnungsdetails für Italien](emea-ita-vat-statements-details.md)            |
 | Lettland         | [MwSt-Berichtdetail für Lettland](emea-lva-vat-statement-details.md)           |
 | Litauen      | [MwSt-Berichtdetail für Litauen](emea-ltu-vat-statement-details.md)         |
-| Niederlande    |                                                                                 |
-| Schweden         |                                                                                 |
+| Niederlande    | [Mehrwertsteuererklärung für die Niederlande](emea-nl-vat-declaration.md)           |
+| Schweden         | [Mehrwertsteuererklärung für Schweden](emea-swe-sales-tax-payment-report-sweden.md)          |
 
 
 

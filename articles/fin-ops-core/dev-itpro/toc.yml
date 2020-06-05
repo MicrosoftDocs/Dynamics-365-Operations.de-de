@@ -1,10 +1,10 @@
-- name: Entwicklung und Verwaltung für Finance and Operations-Apps
+- name: Entwicklung und Verwaltung von Finance and Operations-Apps
   items:
-    - name: Entwicklung und Verwaltung für Finance and Operations-Apps
+    - name: Entwicklung und Verwaltung von Finance and Operations-Apps
       items:
         - name: Finance and Operations-Anwendungsdokumentation
           href: ../fin-ops/index.md
-        - name: Entwicklung und Verwaltung für Finance and Operations-Apps
+        - name: Entwicklung und Verwaltung von Finance and Operations-Apps
           href: index.md
         - name: Neuerungen oder Änderungen
           items:
@@ -524,11 +524,37 @@
                   href: deployment/install-deployable-package.md
                 - name: Ein Paket deinstallieren
                   href: deployment/uninstall-deployable-package.md
-                - name: Behandeln von Problemen mit der Paketanwendung
+                - name: Probleme mit der Paketanwendung behandeln
                   href: deployment/deployable-package-troubleshooting.md
-        - name: Entwickeln und Anpassen
+            - name: Benutzerdefinierte Hilfe bereitstellen
+              items:
+                - name: Übersicht über benutzerdefinierte Hilfe
+                  href: help/custom-help-overview.md
+                - name: Inhalte zur Verwendung im Hilfebereich vorbereiten
+                  href: help/preparing-content.md
+                - name: Benutzerdefinierte Hilfe zu Azure bereitstellen
+                  href: help/walkthrough-help-azure.md
+                - name: Eigene benutzerdefinierte Hilfe mit dem Hilfebereich verbinden
+                  href: help/connect-help-pane.md
+                - name: Toolkit zur benutzerdefinierten Hilfe
+                  items:
+                    - name: Übersicht
+                      href: help/custom-help-toolkit.md
+                    - name: Das HTML From Repo Generator-Tool
+                      href: help/custom-help-toolkit-HtmlFromRepoGenerator.md
+                    - name: Das Convert HTML To JSON-Tool
+                      href: help/custom-help-toolkit-ConvertHtmlToJson.md
+                    - name: Das HTML Locale Changer-Tool
+                      href: help/custom-help-toolkit-HtmlLocaleChanger.md
+                    - name: "Benutzerdefinierte Hilfe zu Dynamics AX zur Verwendung in Dynamics\_365 konvertieren"
+                      href: help/migrate-dynamicsax2012.md
+                - name: Produkt- und hilfeübergreifende Deskriptoren für Sprache und Gebietsschema
+                  href: help/language-locale.md
+                - name: 'Hilfe erweitern, anpassen und gemeinsam daran arbeiten'
+                  href: help/contributor-guide.md
+        - name: Entwickeln und anpassen
           items:
-            - name: Entwickeln und Anpassen – Startseite
+            - name: Startseite entwickeln und anpassen
               href: dev-tools/developer-home-page.md
             - name: Anwendungsstapel und Serverarchitektur
               href: dev-tools/application-stack-server-architecture.md
@@ -544,7 +570,7 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: Erstellen neuer Benutzer auf Entwicklungscomputern
                   href: dev-tools/enable-development-machine.md
-                - name: 'Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen – FAQs'
+                - name: 'Entwicklungs- und Build-VMs, die keinen Administratorzugriff ermöglichen – FAQ'
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Umbenennen lokaler Umgebungen für den Zugriff Azure DevOps
                   href: migration-upgrade/vso-machine-renaming.md
@@ -798,7 +824,7 @@
                       href: extensibility/extensibility-roadmap.md
                     - name: Erweiterbarkeitsanforderungen
                       href: extensibility/extensibility-requests.md
-                    - name: Erweiterbarkeit – FAQs
+                    - name: Erweiterbarkeit – FAQ
                       href: extensibility/app-sealing-faq.md
                     - name: Von Überlagerung zu Erweiterungen migrieren
                       href: extensibility/migrate-overlayer-extension.md
@@ -835,7 +861,7 @@
                     - name: Änderungen an der Erweiterbarkeit in Version 8.0.1
                       href: extensibility/extensibility-changes-801.md
                     - name: Änderungen an der Erweiterbarkeit in Version 8.0
-                      href: extensibility/changes-80.md
+                      href: extensibility/Changes-80.md
                     - name: Änderungen an der Erweiterbarkeit in Version 7.3
                       href: extensibility/extensibility-changes-73.md
                     - name: Änderungen an der Erweiterbarkeit im Juli 2017

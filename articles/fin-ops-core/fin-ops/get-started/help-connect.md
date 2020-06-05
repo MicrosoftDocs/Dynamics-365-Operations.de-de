@@ -1,9 +1,9 @@
 ---
-title: Verbinden des Hilfesystems
-description: Dieses Thema beschreibt die Komponenten des Hilfe-Systems für Finance and Operations-Apps und bietet einen Überblick darüber, wie sie verbunden werden, und eine Zusammenfassung darüber, wie eine benutzerdefinierte Hilfe erstellt werden kann.
+title: Hilfeumgebung für Finance and Operations-Apps konfigurieren
+description: Dieses Thema enthält Informationen zu den Komponenten des Hilfesystems für einige Microsoft Dynamics 365-Apps. Außerdem wird erläutert, wie Sie diese Apps verbinden, und es wird eine Zusammenfassung des Prozesses zum Erstellen einer benutzerdefinierten Hilfe bereitgestellt.
 author: margoc
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,81 +18,85 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4427388d75c1aef40a978ce35c831d5b714f2562
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 827d4cd14f497b79c85fb084a6295af13c5eb0c7
+ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3006171"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "3367383"
 ---
-# <a name="connect-the-help-system"></a>Verbinden des Hilfesystems
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Hilfeumgebung für Finance and Operations-Apps konfigurieren
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema werden die Komponenten des Hilfesystems für Finance and Operations-Apps wie Dynamics 365 Finance, Supply Chain Management, Commerce und Human Resources beschrieben. Es bietet einen Überblick darüber, wie diese Komponenten und eine Zusammenfassung zu aus, wie Sie benutzerdefinierte Hilfe erstellt.
+In diesem Thema finden Sie eine Übersicht über die Komponenten des Hilfesystems für Finance and Operations-Apps wie Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce und Dynamics 365 Human Resources. In diesem Thema wird auch erläutert, wie diese Apps verbunden werden, und es wird eine Zusammenfassung des Prozesses zum Erstellen einer benutzerdefinierten Hilfe bereitgestellt.
 
 ## <a name="help-architecture"></a>Hilfearchitektur
 
-Die folgende Abbildung zeigt Teile des Hilfesystems. Das Hilfesystem zieht Artikel aus https://docs.microsoft.com und zeigt Aufgabenleitfäden aus dem Geschäftsprozessmodellierer in Microsoft Dynamics Lifecycle Services (LCS) an.
-
-> [!NOTE]
-> Die Funktionen, die im Diagramm mit einem Sternchen (\*) aufgeführt sind (), sind geplant, aber noch nicht verfügbar.
+Finance and Operations-Apps enthalten konzeptionelle Übersichten und andere Themen, die auf der Website [https://docs.microsoft.com/dynamics365](/dynamics365/) veröffentlicht werden. Auf diesen Inhalt kann dann über den Bereich **Hilfe** des Produkts zugegriffen werden. Die folgende Abbildung zeigt Teile des Hilfesystems.
 
 [![Hilfearchitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Verbindung des Hilfesystems
+Das Hilfesystem ruft Artikel von docs.microsoft.com und anderen verbundenen Websites ab. Außerdem werden Aufgabenleitfäden abgerufen, die im Business Process Modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS) gespeichert sind.
+
+## <a name="adding-task-guides"></a>Hinzufügen von Aufgabenleitfäden
 
 > [!NOTE]
-> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Dynamics 365 Human Resources oder Commerce verfügbar. Wir arbeiten derzeit daran, diese Funktion in einer künftigen Version zu ermöglichen. Die Aufgabenleitfäden in der Erste Schritte-Erfahrung in Human Resources bleiben verfügbar, um Grundfunktionen abzudecken. Prozedurale Hilfe ist für Human Resources und Commerce auch auf der Website docs.microsoft.com verfügbar.
+> Die Registerkarte **Aufgabenleitfäden** ist derzeit nicht in Human Resources oder Commerce verfügbar. <!--We are currently working to enable this functionality in a future release.--> Die Aufgabenleitfäden in der Umgebung „Erste Schritte“ in Human Resources bleiben verfügbar, um die grundlegenden Funktionen abzudecken. Auf der Website [https://docs.microsoft.com/dynamics365](/dynamics365/) sind Verfahrensweisen für Human Resources und für Commerce verfügbar.
 
-Mit dem Formular "**Systemparameter**" verbinden Systemadministratoren die Teile des Hilfesystems für eine Implementierung.
+Auf der Seite **Systemparameter** können Systemadministratoren den Zugriff auf die relevanten Aufgabenleitfadenbibliotheken für eine Implementierung konfigurieren.
+
+> [!NOTE]
+> - Zum Konfigurieren der Hilfe müssen Sie sich mit einem Konto des Mandanten anmelden, für den die App bereitgestellt ist.
+> - Eine LCS-Bibliothek kann nicht aus einer Instanz der App verbunden werden, die auf einer lokalen virtuellen Festplatte (VHD) ausgeführt wird.
 
 [![Systemparameterformular mit Hilfe-Einstellungen](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
-Gehen Sie auf der Seite **Systemparameter** folgendermaßen vor:
+Führen Sie die folgenden Schritte auf der Seite **Systemparameter** aus, um Aufgabenleitfäden für eine Lösung zu konfigurieren.
 
 > [!IMPORTANT]
-> Beim erstmaligen Öffnen der Registerkarte **Hilfe** müssen Sie die Verbindung zu den Lifecycle Services herstellen. Klicken Sie auf den Link mitten im Formular, warten Sie auf die Verbindung, schließen Sie das Dialogfeld, und klicken Sie anschließend auf **OK**, um zur Seite **Systemparameter** zu gelangen.
+> Beim erstmaligen Öffnen der Registerkarte **Hilfe** müssen Sie die Verbindung zu den Lifecycle Services herstellen. Wählen Sie den Link in der Mitte des Formulars aus, warten Sie, bis die Verbindung hergestellt wurde, schließen Sie das Dialogfeld, und wählen Sie dann **OK** aus, um zur Seite **Systemparameter** zu gelangen.
 >
 > [![Mit LCS verbinden](./media/connect-to-lcs-crop-1024x365.png "Mit LCS verbinden")](./media/connect-to-lcs-crop.png)
 
 1. Wählen Sie das Projekt Lifecycle Services, um eine Verbindung herzustellen.
 2. Wählen Sie die BPM-Bibliotheken (innerhalb des ausgewählten Projekts) aus, von denen Sie die Aufgabenaufzeichnungen abrufen wollen.
-3. Wählen Sie die Anzeigereihenfolge der BMP-Bibliotheken aus. So können Sie bestimmen, in welcher Reihenfolge Aufgabenaufzeichnungen aus den Bibliotheken im Bereich **Hilfe** angezeigt werden.
+3. Wählen Sie die Anzeigereihenfolge der BMP-Bibliotheken aus. Anhand der Anzeigereihenfolge wird die Reihenfolge definiert, in der Aufgabenaufzeichnungen aus den Bibliotheken im Bereich **Hilfe** angezeigt werden.
 
-Nach der Durchführung dieser Schritte können Sie den Bereich **Hilfe** öffnen und auf die Registerkarte **Aufgabenleitfäden** klicken. Sie sehen dann die Aufgabenleitfäden, die für die Seite gelten, auf der Sie derzeit in Finance and Operations-Apps sind. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren.
+Nachdem Sie diese Schritte ausgeführt haben, können Sie den Bereich **Hilfe** öffnen und die Registerkarte **Aufgabenleitfäden** auswählen. Daraufhin werden die Aufgabenleitfäden angezeigt, die für die Seite gelten, auf der Sie sich derzeit in Finance and Operations-Apps befinden. Wenn keine Aufgabenhandbücher gefunden werden, können Sie Schlüsselwörter eingeben, um die Suche genauer zu definieren.
 
 ### <a name="showing-translated-task-guides"></a>Zeigt übersetzte Aufgabenleitfäden
 
-Übersetzte Aufgabenleitfäden wurden mit der APQC Unified Bibliothek (Mai 2016) und der Erste Schritte-Bibliothek zuerst geliefert. Stellen Sie in Finance and Operations-Apps sicher, dass die mit der Mai-Bibliothek verbunden sind, damit Sie die lokalisierte Aufgabenleitfaden-Hilfe sehen können. Die im Aufgabenleitfaden angezeigte Sprache wird für jeden Benutzer durch Spracheinstellungen unter **Optionen** &gt; **Voreinstellungen** gesteuert.
+Übersetzte Aufgabenleitfäden wurden zuerst in der APQC Unified Bibliothek (Mai 2016) und der Erste Schritte-Bibliothek veröffentlicht. Stellen Sie sicher, dass Ihre Dynamics 365-Lösung mit der Bibliothek vom Mai 2016 verbunden ist, um die lokalisierte Hilfe zu Aufgabenleitfäden anzuzeigen. Benutzer können die Sprache ändern, in der ein Aufgabenleitfaden angezeigt wird, indem Sie die Spracheinstellungen unter **Optionen** &gt; **Einstellungen** ändern.
 
 > [!NOTE]
-> Auch wenn viele Aufgabenleitfäden übersetzt wurden, zeigt der Client im Moment nicht die übersetzten Namen der Aufgabenleitfäden an. Außerdem sind zum jetzigen Zeitpunkt nur die im Februar 2016 veröffentlichten Aufgabenleitfäden als Übersetzung in der Mai-Bibliothek verfügbar. Wir werden eine aktualisierte Bibliothek mit zusätzlichen Übersetzung veröffentlichen.
+> Obwohl viele Aufgabenleitfäden übersetzt wurden, zeigt der Client die übersetzten Namen der Aufgabenleitfäden derzeit nicht an. Außerdem sind nur die im Februar 2016 veröffentlichten Aufgabenleitfäden als Übersetzung in der Bibliothek vom Mai 2016 verfügbar. Microsoft wird eine aktualisierte Bibliothek mit zusätzlichen Übersetzungen veröffentlichen.
 >
 > - Wenn ein Aufgabenleitfaden übersetzt wurde, wird beim Öffnen der gesamte Text des Leitfadens in der ausgewählten Sprache angezeigt.
 > - Wenn ein Aufgabenleitfaden noch nicht übersetzt wurde, wird beim Öffnen nur ein Teil des Texts (der Text der Steuerelemente) in der ausgewählten Sprache angezeigt.
 
-## <a name="creating-custom-help"></a>Erstellen einer benutzerdefinierten Hilfe
+## <a name="adding-custom-help"></a>Hinzufügen einer benutzerdefinierten Hilfe
 
-Sie können Aufgabenleitfäden verwenden, um benutzerdefinierte Hilfe zu erstellen, oder eine Verbindung zwischen einer Website und dem Hilfebereich erstellen.
+Sie können Aufgabenleitfäden verwenden, um eine benutzerdefinierte Hilfe zu erstellen, oder eine Verbindung zwischen einer Website und dem Bereich **Hilfe** herstellen.
 
-### <a name="create-custom-help-with-task-guides"></a>Benutzerdefinierte Hilfe mit Aufgabenleitfäden erstellen
+### <a name="create-custom-help-by-using-task-guides"></a>Benutzerdefinierte Hilfe mit Aufgabenleitfäden erstellen
 
-Sie können eine benutzerdefinierte Hilfe für Finance, Supply Chain Management und Commerce erstellen, indem Sie Aufgabenaufzeichnungen erstellen, die Ihre Implementierung widerspiegeln, und diese in einer LCS Business Process Library speichern. Sie können keine benutzerdefinierten Aufgabenleitfäden für Human Resources erstellen.
+Sie können eine benutzerdefinierte Hilfe für die unterstützten Apps erstellen, indem Sie Aufgabenaufzeichnungen erstellen, die die Implementierung widerspiegeln, und diese anschließend in einer Geschäftsprozessbibliothek in LCS speichern. Sie können keine benutzerdefinierten Aufgabenleitfäden für Human Resources erstellen.
 
-Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in eine Lösung aufnehmen, wir diese für die Kunden verfügbar. Sie können eine Kopie der globalen APQC Unified Bibliothek für Dynamics AX erstellen und dann Ihre Kopie öffnen, Aufgabenaufzeichnungen aus dieser öffnen, sie ändern und dann Aufzeichnungen mit den Änderungen speichern. Weitere Informationen finden Sie unter [Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md).
+Wenn Partner eine Bibliothek auf eine Unternehmensbibliothek hochstufen und in eine Lösung aufnehmen, wird diese für die Kunden verfügbar. Sie können auch eine Kopie der APQC Unified-Bibliothek erstellen und dann Ihre Aufgabenaufzeichnungen in der Kopie öffnen, bearbeiten und Ihre Änderungen anschließend speichern. Weitere Informationen finden Sie unter [Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md).
 
-### <a name="connect-a-custom-site"></a>Benutzerdefinierte Website verbinden
+### <a name="connect-a-custom-help-site"></a>Benutzerdefinierte Hilfewebsite verbinden
 
-Microsoft hat ein Whitepaper und einen Beispielcode bereitgestellt, die beschreiben wie ein benutzerdefinierter Hilfewebsite mit dem Hilfebereich verbunden wird. Weitere Informationen finden Sie hier:
+Finance and Operations-Apps werden selten in ihrer vorgefertigten Form verwendet. Stattdessen wird die Lösung den Anforderungen der Organisation entsprechend angepasst und erweitert. Sie können die Hilfeumgebung auch anpassen und erweitern. Sie können dem Bereich **Hilfe** des Produkts beispielsweise eine benutzerdefinierte Hilfe hinzufügen.
 
-- [Erstellen benutzerdefinierter Hilfe für Finance and Operations-Apps (Whitepaper)](https://go.microsoft.com/fwlink/?linkid=2041185)
-- [Benutzerdefiniertes Hilfe-GitHub-Repository](https://github.com/microsoft/dynamics356f-o-custom-help)
+Microsoft hat ein Toolkit bereitgestellt, mit dem Sie benutzerdefinierte Hilfe bereitstellen und mit dem Bereich **Hilfe** verbinden können. Weitere Informationen zum Einrichten einer benutzerdefinierten Hilfelösung, die mit dem Bereich **Hilfe** verbunden ist, findne Sie unter [Übersicht über benutzerdefinierte Hilfe](../../dev-itpro/help/custom-help-overview.md).
 
-## <a name="additional-resources"></a>Zusätzliche Ressourcen
+Wenn Sie mit Microsoft an Tools und Prozessen zum Anpassen der Hilfe zusammenarbeiten möchten, füllen Sie das Formular unter [https://aka.ms/customhelpfeedback](https://aka.ms/customhelpfeedback) aus.
 
-[Hilfesystem](help-overview.md)
+## <a name="see-also"></a>Siehe auch
 
-[Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md)
-
-[Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)
+[Hilfesystem](help-overview.md)  
+[Übersicht über benutzerdefinierte Hilfe](../../dev-itpro/help/custom-help-overview.md)  
+[Aufgaberecorder-Ressourcen](../../dev-itpro/user-interface/task-recorder.md)  
+[Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
+[Benutzerdefiniertes Hilfe-GitHub-Repository](https://github.com/microsoft/dynamics356f-o-custom-help)  

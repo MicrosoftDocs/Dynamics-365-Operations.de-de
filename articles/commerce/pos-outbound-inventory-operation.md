@@ -3,7 +3,7 @@ title: Bestandsausgangsoperation in POS
 description: Dieses Thema beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
 author: hhaines
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 26d8d67ac6d2fde0753104483fd2127f9acbaa05
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
+ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123921"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3384128"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Bestandsausgangsoperation in POS
 
@@ -117,6 +117,18 @@ In der Ansicht **Vollständige Auftragsliste** können Sie eine Zeile in der Lis
 ### <a name="over-delivery-shipping-validations"></a>Überlieferungs-Versandvalidierungen
 
 Validierungen erfolgen während des Empfangsprozesses für die Belegzeilen. Dazu gehören auch Validierungen für Überlieferungen. Wenn ein Benutzer versucht, mehr Bestand zu erhalten, als in einer Bestellung bestellt wurde, aber entweder keine Überlieferung konfiguriert ist oder die erhaltene Menge die Überlieferungstoleranz überschreitet, die für die Bestellzeile konfiguriert ist, erhält der Benutzer einen Fehler und darf die überschüssige Menge nicht erhalten.
+
+### <a name="underdelivery-close-lines"></a>Unterlieferung schließen-Positionen
+
+In Commerce Version 10.0.12 wurde eine Funktion hinzugefügt, mit der POS-Benutzer verbleibende Mengen während des Versandes ausgehender Bestellungen schließen oder stornieren können, wenn das ausgehende Lager feststellt, dass nicht die angeforderte volle Menge versendet werden kann. Mengen können auch später geschlossen oder storniert werden. Um diese Funktion nutzen zu können, muss das Unternehmen so konfiguriert sein, dass eine Unterlieferung von Transportaufträgen möglich ist. Zusätzlich muss ein Unterlieferungsprozentsatz für die Transportauftragsposition definiert werden.
+
+Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Umlagerungsaufträgen möglich ist, wechseln Sie in der Commerce-Zentrale zu **Bestandsverwaltung \> Einrichtung \> Bestands- und Lagerverwaltungsparameter**. Auf der Seite **Bestands- und Lagerverwaltungsparameter**, auf der Registerkarte **Umlagerungsaufträge** aktivieren Sie die Option **Unterlieferung akzeptieren**. Dann führen Sie den Verteilungszeitplanvorgang **1070** zum Synchronisieren der Parameteränderungen mit Ihrem Geschäftskanal aus.
+
+Unterlieferungsprozentsätze für eine Transportauftragsposition können für Produkte als Teil der Produktkonfiguration in der Commerce-Zentrale vordefiniert werden. Alternativ können sie über die Handelszentrale in einer bestimmten Überweisungsauftragsposition festgelegt oder überschrieben werden.
+
+Nachdem eine Organisation die Konfiguration der Unterlieferung von Umlagerungsaufträgen abgeschlossen hat, wird den Benutzern eine neue Option **Restmenge schließen** im Bereich **Details** angezeigt, wenn sie eine ausgehende Umlagerungsauftragsposition über den **Ausgangsvorgang** am POS auswählen. Dann, wenn Benutzer die Lieferung mit dem Vorgang **Erfüllung abschließen** abschließen, können sie eine Anforderung an die Commerce-Zentrale senden, um die verbleibende nicht versendete Menge zu stornieren. Wenn ein Benutzer die verbleibende Menge schließen möchte, führt Commerce eine Validierung durch, um zu überprüfen, ob die stornierte Menge innerhalb der prozentualen Toleranz für die Unterlieferung liegt, die in der Überweisungsauftragsposition definiert ist. Wenn die Toleranz für Unterlieferung überschritten wird, erhält der Benutzer eine Fehlermeldung und kann die verbleibende Menge erst schließen, wenn die zuvor versendete Menge und die Menge „Jetzt versenden“ die Toleranz für Unterlieferung erfüllt oder überschreitet.
+
+Nachdem die Sendung mit der Commerce-Zentrale synchronisiert wurde, werden die Mengen, die im Feld **Jetzt versenden** für die Transportauftragsposition im POS definiert sind, in der Commerce-Zentrale auf den Versandstatus aktualisiert. Alle nicht versendeten Mengen, die zuvor als „Lieferrückstand“ angesehen wurden (d.h. Mengen, die später versendet werden), gelten stattdessen als stornierte Mengen. Der „Lieferrückstand“ für die Transportauftragsposition ist eingestellt auf **0** (Null), und die Position gilt als vollständig versendet.
 
 ### <a name="shipping-location-controlled-items"></a>Versandortsgesteuerter Artikel
 

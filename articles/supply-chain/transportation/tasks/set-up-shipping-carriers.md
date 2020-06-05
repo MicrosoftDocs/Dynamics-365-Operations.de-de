@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6a29dce877a53d125c5a151da6cfbb13d46b29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0d157470527a986ea1c9fe0a9a02e2ba6ee8819e
+ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201593"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "3382997"
 ---
 # <a name="set-up-shipping-carriers"></a>Spediteure einrichten
 
@@ -32,7 +32,7 @@ In diesem Thema erfahren Sie, wie Sie einen Spediteur einrichten und Details wie
 
 ## <a name="create-a-new-shipping-carrier"></a>Neuen Spediteur erstellen
 1. Gehen Sie zu **Navigationsbereich > Module > Transportmanagement > Einrichtung > Spediteur > Spediteur > Spediteur**.
-2. Wählen Sie **Neu** im Aktionsbereich.
+2. Wählen Sie im Aktivitätsbereich **Neu** aus.
 3. Geben Sie in das Feld **Spediteur** einen Wert ein.
 4. Geben Sie im Feld **Name** einen Wert ein.
 5. Wählen Sie im Feld **Modus** eine Option aus dem Dropdown-Menü aus.

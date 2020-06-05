@@ -3,7 +3,7 @@ title: Ausgabenbelegverarbeitung
 description: Dieses Thema enthält Informationen zur optischen Zeichenerkennung (OCR) für Belege. Diese Funktion wurde entwickelt, um die Benutzerfreundlichkeit bei der Erstellung von Spesenabrechnungen in Microsoft Dynamics 365 Finance zu verbessern.
 author: stsporen
 manager: AnnBe
-ms.date: 11/20/2019
+ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: stsporen
 ms.search.validFrom: 2019-11-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: efba2faf9428d9b556d74273bc7daadba7211c48
-ms.sourcegitcommit: ff6dde637d2f5d2bd18a582eb41573d4c69acdd6
+ms.openlocfilehash: 31c08ea264e6caec3217f4b424275495f39123e3
+ms.sourcegitcommit: 15c5ec742d648c5f3506d031a2ab6150dcbae348
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248962"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "3378230"
 ---
 # <a name="expense-receipt-processing"></a>Verarbeitung von Ausgabenbelegen
 
@@ -36,24 +36,24 @@ Die Ausgabenerfassung wurde durch die Einführung der OCR-Verarbeitung für Bele
 
 ## <a name="usage-examples"></a>Anwendungsbeispiele
 
-- **Belege mit Kreditkartenbuchungen automatisch anhängen, wenn ein Spesenbericht erstellt wird.**
+Führen Sie die folgenden Schritte aus, um Belege mit Kreditkartenbuchungen automatisch anzuhängen, wenn ein Spesenbericht erstellt wird.
 
-    1. Öffnen Sie den Arbeitsbereich **Ausgabenverwaltung**.
-    2. Überprüfen Sie auf der Registerkarte für **Belege**, ob nicht angehängte Belege vorhanden sind. Sie können Belege auch auf die Registerkarte **Belege** hochladen.
-    3. Überprüfen Sie auf der Registerkarte **Ausgaben**, ob nicht angehängte Ausgaben vorhanden sind. In der Regel importiert der Ausgabenadministrator diese Ausgaben vom Kreditkartenanbieter.
-    4. Wählen Sie **Neue Spesenabrechnung**. Beachten Sie, dass Sie beim Erstellen einer Spesenabrechnung jetzt auch Ausgaben und Belege einschließen können. Wenn Sie sowohl Ausgaben als auch Belege hinzufügen, wird ein automatischer Abgleich der Belege mit den Ausgaben durchgeführt.
+  1. Öffnen Sie den Arbeitsbereich **Ausgabenverwaltung**.
+  2. Überprüfen Sie auf der Registerkarte für **Belege**, ob nicht angehängte Belege vorhanden sind. Sie können Belege auch auf die Registerkarte **Belege** hochladen.
+  3. Überprüfen Sie auf der Registerkarte **Ausgaben**, ob nicht angehängte Ausgaben vorhanden sind. In der Regel importiert der Ausgabenadministrator diese Ausgaben vom Kreditkartenanbieter.
+  4. Wählen Sie **Neue Spesenabrechnung**. Beachten Sie, dass Sie beim Erstellen einer Spesenabrechnung jetzt auch Ausgaben und Belege einschließen können. Wenn Sie sowohl Ausgaben als auch Belege hinzufügen, wird ein automatischer Abgleich der Belege mit den Ausgaben durchgeführt.
 
-- **Erstellen einer Ausgabe oder Abgleichen einer Ausgabe aus einem Beleg.**
+Führen Sie die folgenden Schritte aus, um eine Ausgabe zu erstellen oder eine Ausgabe aus einem Beleg abzugleichen.
 
-    1. Fügen Sie bei einer Spesenabrechnung auf der Registerkarte **Belege** einen Beleg hinzu, indem Sie **Belege hinzufügen** auswählen.
-    2. Beachten Sie unter dem hochgeladenen Bild des Belegs die Optionen **Erstellen** und **Abgleichen**.
+  1. Fügen Sie bei einer Spesenabrechnung auf der Registerkarte **Belege** einen Beleg hinzu, indem Sie **Belege hinzufügen** auswählen.
+  2. Beachten Sie unter dem hochgeladenen Bild des Belegs die Optionen **Erstellen** und **Abgleichen**.
 
-        - Wählen Sie **Erstellen** aus, um eine manuell eingegebene Ausgabenbuchung zu erstellen, und geben Sie die aus dem Beleg extrahierten Werte ein.
-        - Wenn Sie **Abgleichen** auswählen, versucht das System, dem Beleg eine vorhandene Ausgabe zuzuordnen.
+      - Wählen Sie **Erstellen** aus, um eine manuell eingegebene Ausgabenbuchung zu erstellen, und geben Sie die aus dem Beleg extrahierten Werte ein.
+      - Wenn Sie **Abgleichen** auswählen, versucht das System, dem Beleg eine vorhandene Ausgabe zuzuordnen.
 
 ## <a name="installation"></a>Installation
 
-Diese Funktion funktioniert in Kombination mit der Funktion **Spesenabrechnungen neu gestaltet**, um die Erfahrung mit der Ausgabenverarbeitung zu verbessern.
+Diese Funktion funktioniert in Kombination mit der Funktion **Spesenabrechnungen neu gestaltet**, um die Erfahrung mit der Ausgabenverarbeitung zu verbessern. Diese Funktion ist nur für Ebene 2+-Umgebungen verfügbar, bei denen es sich um Sandbox und Produktion handelt.
 
 Wenn Sie diese erweiterten Ausgabenfunktionen nutzen möchten, installieren Sie das Add-In für den Spesenverwaltungsdienst für Microsoft Dynamics 365 Finance und aktivieren Sie die Funktionen in Ihrer Instance. Sie können auf das Add-In über Ihr Projekt in Microsoft Dynamics Lifecycle Services (LCS) zugreifen.
 
