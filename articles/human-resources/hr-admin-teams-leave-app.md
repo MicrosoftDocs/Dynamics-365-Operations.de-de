@@ -1,0 +1,69 @@
+---
+title: Human Resources-App in Teams
+description: Dieses Thema enthält Informationen zur Microsoft Dynamics 365 Human Resources-App in Microsoft Teams.
+author: andreabichsel
+manager: AnnBe
+ms.date: 05/18/2020
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-human-resources
+ms.technology: ''
+ms.search.form: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.search.scope: Human Resources
+ms.custom: 7521
+ms.assetid: ''
+ms.search.region: Global
+ms.author: anbichse
+ms.search.validFrom: 2020-05-18
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
+ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "3388115"
+---
+# <a name="human-resources-app-in-teams"></a><span data-ttu-id="f93ec-103">Human Resources-App in Teams</span><span class="sxs-lookup"><span data-stu-id="f93ec-103">Human Resources app in Teams</span></span>
+
+[!include [banner](includes/preview-feature.md)]
+
+<span data-ttu-id="f93ec-104">Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Mitarbeiter schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen.</span><span class="sxs-lookup"><span data-stu-id="f93ec-104">The Microsoft Dynamics 365 Human Resources app in Microsoft Teams lets employees quickly request time off and view their time-off balance information in Microsoft Teams.</span></span> <span data-ttu-id="f93ec-105">Mitarbeiter können mit einem Bot interagieren, um Informationen anzufordern.</span><span class="sxs-lookup"><span data-stu-id="f93ec-105">Employees can interact with a bot to request information.</span></span> <span data-ttu-id="f93ec-106">Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen.</span><span class="sxs-lookup"><span data-stu-id="f93ec-106">The **Time off** tab provides more detailed information.</span></span>
+
+![Bot für Abwesenheiten der Human Resources-App in Teams](./media/hr-admin-teams-leave-app-bot.png)
+
+![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Arbeitsfreie Zeit“](./media/hr-teams-leave-app-timeoff-tab.png)
+
+## <a name="install-and-setup"></a><span data-ttu-id="f93ec-109">Installieren und einrichten</span><span class="sxs-lookup"><span data-stu-id="f93ec-109">Install and setup</span></span>
+
+<span data-ttu-id="f93ec-110">Sie finden die Human Resources-App im Teams Store.</span><span class="sxs-lookup"><span data-stu-id="f93ec-110">You can find the Human Resources app in the Teams store.</span></span> <span data-ttu-id="f93ec-111">Weitere Informationen zum Installieren der Teams-App finden Sie unter [Urlaubsanträge in Teams verwalten](hr-teams-leave-app.md).</span><span class="sxs-lookup"><span data-stu-id="f93ec-111">For information about installing the Teams app, see [Manage leave requests in Teams](hr-teams-leave-app.md).</span></span>
+
+<span data-ttu-id="f93ec-112">Informationen zum Verwalten von App-Berechtigungen in Teams finden Sie unter [App-Berechtigungsrichtlinien in Microsoft Teams verwalten](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).</span><span class="sxs-lookup"><span data-stu-id="f93ec-112">For information about managing app permissions in Teams, see [Manage app permission policies in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).</span></span>
+
+## <a name="known-issues"></a><span data-ttu-id="f93ec-113">Bekannte Probleme</span><span class="sxs-lookup"><span data-stu-id="f93ec-113">Known issues</span></span>
+
+| <span data-ttu-id="f93ec-114">Abgang</span><span class="sxs-lookup"><span data-stu-id="f93ec-114">Issue</span></span> | <span data-ttu-id="f93ec-115">Status</span><span class="sxs-lookup"><span data-stu-id="f93ec-115">Status</span></span> |
+| --- | --- |
+| <span data-ttu-id="f93ec-116">Der Saldo ist falsch, wenn arbeitsfreie Zeit für ein zukünftiges Datum eingereicht wird.</span><span class="sxs-lookup"><span data-stu-id="f93ec-116">The balance is incorrect when submitting time off for a future date.</span></span> | <span data-ttu-id="f93ec-117">Es ist noch keine Planungsfunktion verfügbar.</span><span class="sxs-lookup"><span data-stu-id="f93ec-117">Forecasting isn't yet available.</span></span> <span data-ttu-id="f93ec-118">Der Saldo wird für das aktuelle Datum angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f93ec-118">The balance displays for the current date.</span></span> |
+| <span data-ttu-id="f93ec-119">Wenn die Anzahl der in einem vorhandenen Antrag genommenen Urlaubsstunden reduziert wird, nimmt der **verbleibende Saldo** ab anstatt zu.</span><span class="sxs-lookup"><span data-stu-id="f93ec-119">When reducing the number of hours taken in an existing request, the **Remaining balance** goes down instead of up.</span></span> | <span data-ttu-id="f93ec-120">Wir werden dieses bekannte Problem in Zukunft angehen.</span><span class="sxs-lookup"><span data-stu-id="f93ec-120">We'll address this known issue in the future.</span></span> <span data-ttu-id="f93ec-121">Die Anzeige ist falsch, die korrekten Beträge werden bei der Übermittlung jedoch angepasst.</span><span class="sxs-lookup"><span data-stu-id="f93ec-121">The display is incorrect, but the correct amounts are adjusted upon submission.</span></span> |
+| <span data-ttu-id="f93ec-122">Zwei Karten für **bevorstehende arbeitsfreie Zeit** werden für die dieselben Datumsangaben angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f93ec-122">Two **Upcoming time off** cards display for the same dates.</span></span> | <span data-ttu-id="f93ec-123">Die Karten stellen einzelne Übermittlungen dar.</span><span class="sxs-lookup"><span data-stu-id="f93ec-123">The cards represent individual submissions.</span></span> <span data-ttu-id="f93ec-124">Wir werden weiterhin Feedback entgegennehmen und Anpassungen vornehmen.</span><span class="sxs-lookup"><span data-stu-id="f93ec-124">We'll continue to take feedback and make adjustments.</span></span> |
+| <span data-ttu-id="f93ec-125">Eine **Wird überprüft**-Anforderung kann nicht abgebrochen werden.</span><span class="sxs-lookup"><span data-stu-id="f93ec-125">Unable to cancel an **In review** request.</span></span> | <span data-ttu-id="f93ec-126">Diese Funktion wird derzeit nicht unterstützt und wird in einer zukünftigen Version hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="f93ec-126">This functionality isn't currently supported and will be added in a future release.</span></span> |
+| <span data-ttu-id="f93ec-127">Die Saldoinformationen werden ab heute berechnet.</span><span class="sxs-lookup"><span data-stu-id="f93ec-127">Balance information is calculated as of today.</span></span> | <span data-ttu-id="f93ec-128">Das System zeigt derzeit keine Salden ab dem Abgrenzungszeitraum an, auch wenn dies in den Urlaub- und Abwesenheitsparameter konfiguriert ist.</span><span class="sxs-lookup"><span data-stu-id="f93ec-128">The system currently doesn't display balances as of the accrual period, even if it's configured in Leave and absence parameters.</span></span> |
+
+## <a name="privacy-notice"></a><span data-ttu-id="f93ec-129">Datenschutzhinweis</span><span class="sxs-lookup"><span data-stu-id="f93ec-129">Privacy notice</span></span>
+
+<span data-ttu-id="f93ec-130">Mit dem Bot von Dynamics 365 Human Resources in Microsoft Teams werden die Texteingaben des Benutzers analysiert, um die zugrunde liegende Abfrage/Absicht zu verstehen.</span><span class="sxs-lookup"><span data-stu-id="f93ec-130">With the Dynamics 365 Human Resources bot in Microsoft Teams, the user’s text inputs are analyzed for understanding the underlying query/intent.</span></span> <span data-ttu-id="f93ec-131">Die Eingabe des Benutzers, z. B. „Suchkonto Contoso“ wird an einen Cognitive Service von Microsoft mit dem Namen „Language Understanding Intelligent Service“ (LUIS) weitergeleitet.</span><span class="sxs-lookup"><span data-stu-id="f93ec-131">The user’s input such as “Search account Contoso” is routed to one of Microsoft’s Cognitive Service called Language Understanding Intelligent Service (LUIS).</span></span> <span data-ttu-id="f93ec-132">Weitere Informationen zu LUIS finden Sie  [hier](https://www.luis.ai/).</span><span class="sxs-lookup"><span data-stu-id="f93ec-132">Read more about LUIS [here](https://www.luis.ai/).</span></span> <span data-ttu-id="f93ec-133">Der LUIS-Dienst unterscheidet oder versteht die Absicht der Benutzereingabe (in diesem Fall besteht die Absicht darin, Informationen zu suchen) und die Zielentität (in diesem Fall ist die beabsichtigte Entität ein Konto mit dem Namen Contoso).</span><span class="sxs-lookup"><span data-stu-id="f93ec-133">The LUIS service disambiguates or understands the intent of user input (in this case, the intent is to find information) and the target entity (in this case, the intended entity is an account named Contoso).</span></span> <span data-ttu-id="f93ec-134">Diese Informationen werden dann an das [Azure-Bot-Framework](https://azure.microsoft.com/services/bot-service/)  von Microsoft weitergegeben, das mit Daten aus Dynamics 365 Human Resources interagiert und die gewünschten Informationen für die Benutzerabfrage abruft.</span><span class="sxs-lookup"><span data-stu-id="f93ec-134">This information is then passed on to Microsoft’s [Azure bot framework](https://azure.microsoft.com/services/bot-service/) which interacts with data from Dynamics 365 Human Resources and retrieves the desired information for the user query.</span></span> 
+
+<span data-ttu-id="f93ec-135">Wenn Sie den Bot installieren und den Zugriff für die Verwendung des Bots erlauben, stimmen Sie zu, dass der LUIS-Dienst und das Azure Bot Framework die Absicht hinter der Eingabe verarbeiten können, was zu einer verbesserten Benutzerumgebung für Unterhaltungen führt.</span><span class="sxs-lookup"><span data-stu-id="f93ec-135">By installing and allowing access to use of the bot, you agree to allow the LUIS service and Azure bot framework to process the intent behind the input,  which results in an enhanced conversational user experience.</span></span> <span data-ttu-id="f93ec-136">Der LUIS-Dienst und das Azure Bot Framework weisen im Vergleich zu Dynamics 365 Human Resources möglicherweise unterschiedliche Konformitätsstufen auf.</span><span class="sxs-lookup"><span data-stu-id="f93ec-136">The LUIS service and Azure bot framework may have varying levels of compliance compared to Dynamics 365 Human Resources.</span></span> <span data-ttu-id="f93ec-137">Während der LUIS-Dienst nur auf die Benutzerabfragen zugreifen kann und nicht für die Verbindung mit den Dynamics 365 Human Resources-Daten oder dem Konto des Benutzers ausgelegt ist, könnte ein Benutzer des Bots von Dynamics 365 Human Resources freiwillig eine Abfrage mit Debitorendaten, personenbezogenen Daten oder anderen Daten eingeben, und solche Abfrageinhalte könnten an den LUIS-Dienst und das Azure Bot Framework gesendet werden.</span><span class="sxs-lookup"><span data-stu-id="f93ec-137">While the LUIS service has access to only the user queries and is not designed to be connected to the user’s Dynamics 365 Human Resources data or account, a user of the Dynamics 365 Human Resources bot could voluntarily enter a query containing Customer Data, Personal Data, or other data and such query content could get sent to the LUIS service and the Azure bot framework.</span></span> 
+
+<span data-ttu-id="f93ec-138">Der Inhalt der Abfragen und Nachrichten des Benutzers wird maximal 30 Tage im LUIS-System gespeichert, im Ruhezustand verschlüsselt und nicht für Schulungen oder die Verbesserung von Dienstleistungen verwendet.</span><span class="sxs-lookup"><span data-stu-id="f93ec-138">The content of user’s queries and messages is retained in LUIS system for a maximum of 30 days, is encrypted at rest, and is not used for training or service improvement.</span></span> <span data-ttu-id="f93ec-139">Weitere Informationen zu Cognitive Services findne Sie  [hier](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).</span><span class="sxs-lookup"><span data-stu-id="f93ec-139">Read more about Cognitive Services [here](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).</span></span> 
+
+<span data-ttu-id="f93ec-140">Wechseln Sie zum [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/), um Administratoreinstellungen für Apps in Microsoft Teams zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="f93ec-140">To manage admin settings for apps in Microsoft Teams, go to the [Microsoft Teams admin center](https://admin.teams.microsoft.com/).</span></span> 
+
+## <a name="see-also"></a><span data-ttu-id="f93ec-141">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f93ec-141">See also</span></span> 
+
+[<span data-ttu-id="f93ec-142">Microsoft Teams herunterladen und installieren</span><span class="sxs-lookup"><span data-stu-id="f93ec-142">Download and install Microsoft Teams</span></span>](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
+[<span data-ttu-id="f93ec-143">Microsoft Teams-Hilfecenter</span><span class="sxs-lookup"><span data-stu-id="f93ec-143">Microsoft Teams help center</span></span>](https://support.office.com/teams)</br>
+[<span data-ttu-id="f93ec-144">Urlaubsanträge in Teams verwalten</span><span class="sxs-lookup"><span data-stu-id="f93ec-144">Manage leave requests in Teams</span></span>](hr-teams-leave-app.md)
+
