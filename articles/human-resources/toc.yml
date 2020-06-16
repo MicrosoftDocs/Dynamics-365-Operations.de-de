@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "28.\_Mai\_2020"
+          href: hr-whats-new-2020-05-28.md
         - name: "14.\_Mai\_2020"
           href: hr-whats-new-2020-05-14.md
         - name: "1.\_Mai\_2020"
@@ -509,16 +511,22 @@
               href: hr-leave-and-absence-accrue.md
             - name: Urlaub aussetzen
               href: hr-leave-and-absence-suspend-leave.md
+            - name: Beurlaubungsanforderung
+              href: hr-employee-self-service-request-leave-of-absence.md
             - name: Mitarbeiter-Sonderurlaub verwalten
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Analyse für Urlaub und Abwesenheit anzeigen
               href: hr-leave-and-absence-analytics.md
             - name: Urlaubs- und Abwesenheitsanforderungen verwalten
               href: hr-employee-self-service-manage-requests.md
-            - name: Arbeitsfreie Zeit beantragen
+            - name: Arbeitsfreie Zeit anfordern
               href: hr-employee-self-service-request-time-off.md
             - name: Team- und Unternehmenskalender anzeigen
               href: hr-employee-self-service-calendar.md
+            - name: Kauf- und Verkaufsurlaubsrichtlinien verwalten
+              href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Urlaub kaufen und verkaufen
+              href: hr-employee-self-service-buy-sell-leave.md
         - name: Urlaubsanträge in Teams verwalten
           href: hr-teams-leave-app.md
         - name: Mitarbeiter weiterbilden

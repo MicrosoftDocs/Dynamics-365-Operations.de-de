@@ -70,12 +70,12 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Supply Chain Management-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Supply Chain Management\_10.0.12 (August\_2020)"
+                      href: get-started/whats-new-scm-10-0-12.md
                     - name: "Supply Chain Management\_10.0.11 (Juli 2020)"
                       href: get-started/whats-new-scm-10-0-11.md
                     - name: "Supply Chain Management\_10.0.10 (Mai 2020)"
                       href: get-started/whats-new-scm-10-0-10.md
-                    - name: "Supply Chain Management\_10.0.9 (April\_2020)"
-                      href: get-started/whats-new-scm-10-0-9.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
@@ -523,7 +523,7 @@
                   href: cost-management/manage-standard-cost-updates.md
                 - name: Einschränkungen für eine Nachkalkulationsversion für Standardkosten
                   href: cost-management/restrictions-costing-versions-standard-costs.md
-                - name: 'Daten, die in Herstellkostenkalkulationen mit Standardkosten verwendet werden'
+                - name: 'Daten, die in Stücklistenkostenkalkulationen mit Standardkosten verwendet werden'
                   href: cost-management/information-used-bom-calculations-standard-costs.md
                 - name: Aktualisieren der Standardkosten in einer Produktionsumgebung
                   href: cost-management/update-standard-costs-manufacturing-environment.md
@@ -591,10 +591,12 @@
                   href: cost-management/inventory-aging-report-storage.md
             - name: Fertigungsbuchhaltung
               items:
-                - name: Herstellkostenkalkulationen
+                - name: Stücklistenkostenkalkulationen
                   href: cost-management/bom-calculations.md
-                - name: Herstellkostenkalkulationsgruppen
+                - name: Stücklistenkostenkalkulationsgruppen
                   href: cost-management/bom-calculation-groups.md
+                - name: Kostenberechnungsstufe
+                  href: cost-management/cost-calculation-level.md
                 - name: Nachkalkulation für Produktionskosten
                   href: cost-management/backflush-costing.md
                 - name: Allgemeine Ursachen für Produktionsabweichungen
@@ -1345,9 +1347,11 @@
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Anwenden von Filtern auf einen Plan
                   href: master-planning/planning-optimization/plan-filters.md
+                - name: Masterplanung mit Kaufhandelsvereinbarungen
+                  href: master-planning/planning-optimization/purchase-trade-agreement.md
                 - name: Planhistorie- und Planungsprotokolle anzeigen
                   href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Automatische Umwandlung mit der Planungsoptimierung
+                - name: Automatische Umwandlung mit Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
                 - name: Planungsvorgang abbrechen
                   href: master-planning/planning-optimization/cancel-planning-job.md
@@ -1841,7 +1845,7 @@
                   href: pim/tasks/create-sales-price-selection-criteria.md
                 - name: Eine Attribut-basierte Preiskalkulation für konfigurierbare Produkte einrichten
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
-                - name: Herstellkostenkalkulationen
+                - name: Stücklistenkostenkalkulationen
                   href: cost-management/bom-calculations.md
             - name: Produktkonfiguration
               items:
@@ -1921,7 +1925,7 @@
                       href: production-control/bom-designer-functionality.md
                     - name: Phantomartikel
                       href: production-control/phantom-items.md
-                    - name: Herstellkostenkalkulationen
+                    - name: Stücklistenkostenkalkulationen
                       href: cost-management/bom-calculations.md
                     - name: Maßeinheit verwalten
                       href: pim/tasks/manage-unit-measure.md
@@ -1989,7 +1993,9 @@
                       href: production-control/release-production-orders.md
                     - name: Fertigmeldung für Produktionsaufträge
                       href: production-control/report-production-orders-as-finished.md
-                    - name: Als abgeschlossen an einen per Ladungsträger gesteuerten Lagerplatz melden
+                    - name: Einzelvorgangsliste für Geräte konfigurieren
+                      href: production-control/config-job-card-device.md
+                    - name: Vom Einzelvorgangskartengerät als erledigt melden
                       href: production-control/report-finished-job-device.md
                     - name: Den Produktionsauftragsstatus zurücksetzen
                       href: production-control/reverse-production-order-status.md
@@ -2259,6 +2265,16 @@
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Vertriebsprovisionsregeln festlegen
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
+            - name: Debitorenportal für Dynamics 365 Supply Chain Management
+              items:
+                - name: Übersicht über das Debitorenportal
+                  href: sales-marketing/customer-portal-overview.md
+                - name: 'Das Debitorenportal installieren, einrichten und aktualisieren'
+                  href: sales-marketing/customer-portal-setup.md
+                - name: Erstellen und Verwalten von Debitorenportalbenutzern
+                  href: sales-marketing/customer-portal-user-admin.md
+                - name: Das Debitorenportal anpassen und verwenden
+                  href: sales-marketing/customer-portal-customize.md
             - name: Handelsvergütung
               href: sales-marketing/trade-allowance.md
             - name: Eine neue Handelsvereinbarung erstellen
@@ -2655,9 +2671,11 @@
                   href: warehousing/partial-location-cycle-counting.md
                 - name: Partiellen Lagerplatz-Zykluszählungsprozess definieren
                   href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                - name: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
+                  href: warehousing/onhand-cleanup.md
                 - name: Lagererfassung
                   href: inventory/inventory-journals.md
-                - name: Elektronische Adresse für Lagerbestand
+                - name: Lagerplatz für Lagerbestand
                   href: inventory/inventory-locations.md
                 - name: Bestandsstatus
                   href: inventory/inventory-statuses.md
