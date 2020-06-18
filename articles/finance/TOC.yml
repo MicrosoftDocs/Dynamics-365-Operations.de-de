@@ -2371,7 +2371,7 @@
                     - name: Vorschussinhaber in Russland – Übersicht
                       href: localizations/rus-advance-holders.md
                     - name: Vorschussinhaber erstellen
-                      href: 'localizations/emea-advance-holders.md#create-an-advance-holder'
+                      href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Tägliche Arbeitsgänge für Vorschussinhaber
                       href: localizations/rus-advance-holders-daily-operations.md
                     - name: Fortschrittsberichte zur Budgetsteuerung
@@ -3346,7 +3346,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Regulatory services (RCS)
                   items:
-                    - name: Regulatory Configuration Service (RCS) – Globalisierungsfunktionen
+                    - name: Regulatory Configuration Services (RCS) – Globalisierungsfunktionen
                       href: localizations/rcs-globalization-feature.md
                     - name: EB-Konfigurationen in Finance herunterladen
                       items:
