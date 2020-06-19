@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55820d7376750c210d2b7f214f705ffcb222c6cd
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: f3456df4d91cf0c51cd395ae64e3c192bd46835e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212502"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428399"
 ---
 # <a name="production-setup-requirements"></a>Anforderungen für Produktionseinstellungen
 
@@ -71,7 +71,7 @@ Bei Verwendung von Arbeitsplänen müssen Arbeitsgänge für jeden einzelnen ein
 2.  **Kostengruppen** – Richten Sie Kostengruppen ein, um unterschiedliche Kostenrechnungsarten zu erstellen und zu verwalten.
 3.  **Arbeitsplangruppen** – Richten Sie Arbeitsplangruppen ein, und definieren Sie Parameter, die für Gruppen von Arbeitsplänen gelten sollen. Zum Erstellen von Produktionsarbeitsplänen müssen zunächst Arbeitsplangruppen eingerichtet werden.
 4.  **Arbeitspläne** – Richten Sie Produktionsarbeitspläne ein, und definieren Sie Standardeinstellungen zum Steuern von Planung, Kostenrechnung/Preisgestaltung für Arbeitsplan-Arbeitsgänge sowie von Statusberichten.
-5.  **Arbeitspläne** – Richten Sie Arbeitsplanversionen ein, um in der Produktion die Verwendung von Artikelvarianten zu ermöglichen.
+5.  **Arbeitsplanversion** – Richten Sie Arbeitsplanversionen ein, um in der Produktion die Verwendung von Artikelvarianten zu ermöglichen.
 
 ## <a name="optional-advanced-settings"></a>Optionale erweiterte Einstellungen
 1.  **Produktionsgruppen** – Richten Sie Produktionsgruppen ein, um Beziehungen zwischen dem Produktionsauftrag und den Sachkonten herzustellen. Die Sachkonten dienen zum Buchen oder zum Gruppieren von Aufträgen für die Berichterstellung.
