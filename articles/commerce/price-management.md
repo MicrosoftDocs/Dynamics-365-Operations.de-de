@@ -3,7 +3,7 @@ title: Einzelhandelspreisverwaltung
 description: In diesem Thema werden die Konzepte für das Erstellen und Verwalten von Verkaufspreisen in Dynamics 365 Commerce behandelt.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 01/06/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-retail
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1eb0b218b9008b255cc5a09eefb8c7fa35836cd7
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 84d673bef8597bd7d376c5c74737d5c7db247759
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057486"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3432000"
 ---
 # <a name="retail-sales-price-management"></a>Verwaltung von Einzelhandelsverkaufspreisen
 
@@ -53,7 +53,9 @@ Die folgende Abbildung zeigt, wie Preisgruppen verwendet werden. In dieser Grafi
 
 Wenn Sie Preisgruppen anlegen, sollten Sie nicht eine einzige Preisgruppe für mehrere Arten von Handelseinheiten verwenden. Andernfalls kann es schwierig sein zu ermitteln, warum ein bestimmter Preis oder ein Rabatt auf eine Buchung angewendet wird.
 
-Wie die rot gestrichelte Linie in der Abbildung zeigt, unterstützt Commerce die zentralen Microsoft Dynamics 365 Funktionen einer Preisgruppe, die direkt auf einen Kunden festgelegt wird. Jedoch in diesem Fall erhalten Sie nur Handelsvereinbarungen. Falls Sie benutzerdefinierte Preise anwenden möchten, sollten Sie nicht festgelegte Preisgruppen direkt für den Debitor definieren. Stattdessen können Sie Zuordnungen verwenden.
+Wie die rot gestrichelte Linie in der Abbildung zeigt, unterstützt Commerce die zentralen Microsoft Dynamics 365 Funktionen einer Preisgruppe, die direkt auf einen Kunden festgelegt wird. Jedoch in diesem Fall erhalten Sie nur Handelsvereinbarungen. Falls Sie benutzerdefinierte Preise anwenden möchten, sollten Sie nicht festgelegte Preisgruppen direkt für den Debitor definieren. Stattdessen können Sie Zuordnungen verwenden. 
+
+Beachten Sie, dass, wenn die Preisgruppe für den Kunden festgelegt ist, diese Preisgruppe dem Kundenauftragskopf der für diesen Kunden erstellten Aufträge zugeordnet wird. Wenn der Benutzer die Preisgruppe im Auftragskopf ändert, wird die alte Preisgruppe nur für die aktuelle Bestellung durch die neue Preisgruppe ersetzt. Beispielsweise wirkt sich die alte Preisgruppe nicht auf die aktuelle Bestellung aus, wird jedoch für zukünftige Bestellungen dem Kunden zugeordnet.
 
 In den folgenden Abschnitten finden Sie weitere Informationen über die Handelseinheiten, mit denen Sie bei der Verwendung der Preisgruppen unterschiedliche Preise festlegen können. Die Variante von Preisen und Rabatten für alle diese Entitäten ist ein Prozess in zwei Schritten. Diese Schritte können in jedem Auftrag vorgenommen werden. Allerdings besteht die logische Reihenfolge darinm, Preisgruppen auf die Entitäten zuerst festzulegen, da dieser Schritt nicht wahrscheinlich eine einmalige Einstellung ist, die bei der Implementierung geleistet wird. Anschließend wenn Preise und Rabatte erstellt werden, können Sie Preisgruppen die auf diesen Preisen und Rabatten basieren, einzeln festlegen.
 
@@ -226,6 +228,7 @@ Die Preisfindungs-Engine **unterstützt nicht** die folgenden Preisfindungsfunkt
 - Das Festlegen von Preisen nach Standort oder Standort- und Lagerspeicherdimensionen wird nicht unterstützt. Wenn Sie in den Handelsvereinbarungen nur die Standortdimension angeben, ignoriert die Preisfindungsmaschine den Standort und wendet die Handelsvereinbarung auf alle Standorte an. Wenn Sie sowohl Site als auch Warehouse angeben, ist das Verhalten undefiniert/nicht getestet, da erwartet wird, dass Einzelhändler die Store-Preisgruppen verwenden, um die Preise für jedes Store/Warehouse zu steuern.
 - Attributbasierte Preisgestaltung wird nicht unterstützt.
 - Lieferantenrabatt-Pass-Through wird nicht unterstützt.
+- Die Standard-Pricing-Engine für das Supply Chain Management unterstützt die Preisberechnung basierend auf dem Angeforderten Versanddatum und dem Angeforderten Empfangsdatum zusammen mit dem aktuellen Datum. Die Einzelhandelspreise unterstützen diese Werte derzeit jedoch nicht. Der Grund dafür ist, dass Kunden in B2C-Szenarien nicht erwarten, dass der angeforderte Liefertermin den Artikelpreis beeinflusst. In einigen Fällen sind Einzelhändler sowohl im B2B- als auch im B2C-Bereich tätig. Für B2B-Operationen ist es üblich, die Preise basierend auf den Lieferterminen zu ändern. Diese Einzelhändler können Supply Chain Management-Preise für ihr B2B-Geschäft und Einzelhandelspreise für ihr B2C-Geschäft verwenden. Die Einzelhandelspreise werden nur aktiviert, wenn der Anwendungsbenutzer als Callcenter-Benutzer hinzugefügt wird, sodass die Einzelhändler bestimmte Benutzer zuweisen können, die mit der Supply Chain Management Preisgestaltung arbeiten, und einige Benutzer zuweisen können, die mit der Einzelhandelspreisgestaltung funktionieren, d.h. diese Benutzer sollte als Callcenter-Benutzer hinzugefügt werden. Darüber hinaus muss die Eigenschaft **Verwenden Sie das heutige Datum zur Berechnung der Preise** im Abschnitt **Handelsparameter > Preise und Rabatte > Verschiedenes** eingeschaltet sein. Auf diese Weise können sie den Wert des verwendeten Debitorenparameters für das angeforderte Versanddatum oder das angeforderte Empfangsdatum für die Supply Chain Management-Preisgestaltung beibehalten. Die Einzelhandelspreise verwenden jedoch weiterhin das heutige Datum für die Preisberechnung.
 
 Außerdem unterstützt **nur** das Preisfindungssystem die folgenden Preisfindungsfunktionen:
 

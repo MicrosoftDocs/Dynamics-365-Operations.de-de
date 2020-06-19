@@ -3,7 +3,7 @@ title: Werbebanner-Modul
 description: Dieses Thema enthält Werbebanner-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,15 +18,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 12cabbf0b8d9f337f15a8cd6cb1f2a85100b75f7
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: dae824cdbaaf56f85f125c5f36aaa56171bbd6bc
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269773"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411364"
 ---
 # <a name="promo-banner-module"></a>Werbebanner-Modul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -48,9 +47,15 @@ Werbebanner können im Site-Header verwendet werden, um Site-weite Werbeaktionen
 
 „Mit den Aktionen zum Schulbeginn viel sparen. Jetzt shoppen.“
 
+Für Thanksgiving SALE! shoppen 
+
+Das folgende Bild zeigt ein Beispiel für eine Werbeanzeige.
+
+![Beispiel eines Werbe-Anzeige-Moduls](./media/ecommerce-Promobanner.PNG)
+
 ## <a name="promo-banner-module-properties"></a>Eigenschaften von Werbebanner-Modulen
 
-| Eigenschaftenname             | Value                              | Beschreibung |
+| Eigenschaftenname             | Wert                              | Beschreibung |
 |---------------------------|------------------------------------|-------------|
 | Bannernachrichten           | Text und Links                     | Eine Reihe von Texten und Links. |
 | Automatische Wiedergabe                  | **True** oder **False**              | Ein Wert, der angibt, ob Nachrichten automatisch durchlaufen werden, wenn mehrere Nachrichten konfiguriert sind. |
@@ -64,7 +69,7 @@ Werbebanner können im Site-Header verwendet werden, um Site-weite Werbeaktionen
 
 Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Wählen Sie **Neu** aus, um eine Seitenvorlage zu erstellen.
+1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie **Werbebanner-Vorlage** ein und wählen **OK**.
 1. Unter **Seitengliederung** fügen Sie ein Modul **Standardseite** zum Slot **Text** hinzu. 
 1. Wählen **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen. 
@@ -74,7 +79,7 @@ Um ein Werbebanner-Modul einer neuen Seite hinzuzufügen und die erforderlichen 
 1. Fügen Sie unter **Seitengliederung** dem Containermodul ein Werbebanner-Modul hinzu.
 1. Fügen Sie in den Einstellungen für das Banner-Modul eine oder mehrere Banner-Nachrichten hinzu. Jede Nachricht kann Text zusammen mit einem Link enthalten. Sie können die anderen Eigenschaften bearbeiten, um das Modul weiter anzupassen.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Am oberen Rand der Seite sollten Sie eine Warnung sehen, die den von Ihnen hinzugefügten Text anzeigt.
-1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen. 
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 > [!NOTE]
 > Ein Werbebanner wird normalerweise im Seitenkopf- oder Untertitel-Slot verwendet.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: v-olbara
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: e879ec53a88e5e30257608cba7604b404ac2368a
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: e11ccdf138adbf05ae1fc8ef739687b9212ae1fe
+ms.sourcegitcommit: 52ba8d3e6af72df5dab6c04b9684a61454d353ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383776"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3403334"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Richtlinien zur Lieferungskonsolidierung konfigurieren
 
@@ -270,7 +270,7 @@ In diesem Beispiel erstellen Sie eine *Kunden, die Konsolidierung zulassen*-Rich
 
 - Die Richtlinie fragt nach einem bestimmten Auftragspool, um Kunden zu identifizieren, die konsolidierte Lieferungen annehmen.
 - Die Konsolidierung mit offenen Lieferungen ist deaktiviert.
-- Die Konsolidierung erfolgt über Aufträge hinweg unter Verwendung der Felder, die in der Standard-CrossOrder-Richtlinie ausgewählt sind (um das frühere **Lagerort**-Kontrollkästchen zu replizieren).
+- Die Konsolidierung erfolgt über Aufträge hinweg unter Verwendung der Felder, die in der Standard-CrossOrder-Richtlinie ausgewählt sind (um das frühere Kontrollkästchen **Lieferung bei Freigabe am Lagerort konsolidieren** zu replizieren).
 
 - Sie können die Regel für einen Kundenauftrag überschreiben, indem Sie einen anderen Auftragspool auswählen.
 
@@ -306,7 +306,7 @@ In diesem Beispiel erstellen Sie eine *Lagerorte, die Konsolidierung zulassen*-R
 
 - Die Richtlinie fragt nach einem bestimmten Auftragspool, um Lagerorte zu identifizieren, die Lieferungen konsolidieren.
 - Die Konsolidierung mit offenen Lieferungen ist deaktiviert.
-- Die Konsolidierung erfolgt über Aufträge hinweg unter Verwendung der Felder, die in der Standard-CrossOrder-Richtlinie ausgewählt sind (um das frühere **Lagerort**-Kontrollkästchen zu replizieren).
+- Die Konsolidierung erfolgt über Aufträge hinweg unter Verwendung der Felder, die in der Standard-CrossOrder-Richtlinie ausgewählt sind (um das frühere Kontrollkästchen **Lieferung bei Freigabe am Lagerort konsolidieren** zu replizieren).
 
 In der Regel kann dieser Geschäftsfall mithilfe der von Ihnen erstellten Standardrichtlinie aus [Szenario 1](#scenario-1) behoben werden. Sie können ähnliche Richtlinien jedoch auch manuell erstellen, indem Sie die folgenden Schritte ausführen.
 

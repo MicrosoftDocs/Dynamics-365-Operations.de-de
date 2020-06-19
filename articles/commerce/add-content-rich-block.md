@@ -3,7 +3,7 @@ title: Textblock-Modul
 description: Dieses Thema enthält Textblockmodule und es wird beschrieben, wie diese Site-Seiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fc5b2fa35633b1ce7f7ffefacec318e14fa8db3f
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 93ad09a05d188a30b099b9a44c35e15839be80a7
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025596"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411134"
 ---
 # <a name="text-block-module"></a>Textblock-Modul
 
@@ -46,9 +46,13 @@ Textblockmodule können folgendermaßen verwendet werden:
 * Um benutzerdefinierte Nachrichten in einer Produktdetailseite hinzufügen. (beispielsweise „kostenloser Versand für Aufträge über $50“).
 * Für Haftungsausschlüsse und Kontaktdetails auf Produktdetailseiten, Einkaufswagenseiten, Auscheckenseiten und anderen Seiten, (beispielsweise „Versand und Retouren hängen von den Shoprichtlinien ab“).
 
+Das folgende Bild zeigt ein Beispiel eines Textblockmoduls, das auf einer Homepage verwendet wird.
+
+![Beispiel eines Textblockmoduls](./media/ecommerce-textblock.PNG)
+
 ## <a name="text-block-module-properties"></a>Eigenschaften des Textblock-Moduls
 
-| Eigenschaftenname     | Value                                            | Beschreibung |
+| Eigenschaftenname     | Wert                                            | Beschreibung |
 |-------------------|--------------------------------------------------|-------------|
 | Rich-Text         | Rich-Text                                        | Absatztext. Einige grundlegende umfangreiche Inhaltsblockmodule werden unterstützt wie Fettformatierung und Kursivformattierung. |
 | Benutzerdefinierter Klassenname | Ein Cascading Style Sheets ( CSS) Klassenname        | Der Name einer benutzerspezifischen CSS Klasse, die ein Entwickler zum Formatieren dieses Moduls bereitstellt. Der Klassenname sollte im Theme Pack definiert werden. |
@@ -58,21 +62,27 @@ Textblockmodule können folgendermaßen verwendet werden:
 
 Um ein Textblockmodul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Erstellen Sie eine Seitenvorlage, die mit **Inhaltvorlage** bezeichnet ist. 
-1. Fügen Sie im Slot **Text** das Modul **Standardseite** hinzu.
-1. Beenden Sie die Bearbeitung der Vorlage und veröffentlichen Sie sie.
-1. Verwenden Sie die Inhaltvorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Inhaltseite** hat.
-1. Im **Haupt-** Slot der neuen Seite fügen Sie ein Containermodul hinzu.
+1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
+1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie einen Namen für die **Inhaltvorlage** ein und wählen OK.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die Vorlage **Inhalt-Vorlage** aus. Unter **Seitenname** geben Sie **Inhalt-Seite** ein und wählen dann **OK** aus.
+1. Auf der neuen Seite wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
 1. Legen Sie im Eigenschaftsfenster für das Containermodul die Eigenschaft **Breite** auf **Container füllen** fest.
-1. Fügen Sie dem Containermodul ein Textblockmodul hinzu. 
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Textblock** und dann **OK** aus. 
 1. Fügen Sie im Eigenschaftenbereich des Textblockmoduls Text zum Feld **Rich Text** hinzu.
-1. Beenden Sie die Bearbeitung der Seite und veröffentlichen Sie sie.
+1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Übersicht](starter-kit-overview.md)
+[Überblick über Starterkit](starter-kit-overview.md)
 
-[Werbebanner-Modul](add-alert.md)
+[Werbebannermodul](add-alert.md)
 
 [Karussellmodul](add-carousel.md)
 

@@ -11,12 +11,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d6f2a51191d8c299ffed30c02f51bd8ca5464732
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 01596dd7dbc268c529720b531d4aeea8ccdd666f
+ms.sourcegitcommit: 840230f3dc500852791953d05c2737dd539ed0b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278996"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "3418540"
 ---
 # <a name="business-users-learning-catalog"></a>Lernkatalog für geschäftliche Benutzer
 
@@ -31,7 +31,7 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | [Kennenlernen des Handelswerts von Microsoft Dynamics 365 und Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Vielleicht wissen Sie nicht, wo Sie anfangen sollen, Microsoft Dynamics 365- und Power Platform-Anwendungen zu verwenden? Erfahren Sie, wie die Leistungsfähigkeit von Geschäftsanwendungen Ihr Unternehmen verändern kann.  | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit   | 8 Stunden   |
 | [Dynamics 365 und Power Platform-Grundlagen](https://docs.microsoft.com/learn/paths/dyn-power-plat-bus-app-fundamentals/)    | Sind Sie an Informationen zu Geschäftsanwendungen interessiert? Beginnen Sie mit diesem Lernpfad, um zu sehen, wie Dynamics 365-Apps verwendet werden. Informieren Sie sich über Cloudkonzepte, Power Platform und die ersten Schritte mit Dynamics 365-Apps.  | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit   | 5.5 Stunden |
 | [Erste Schritte mit Finance and Operations-Apps](https://docs.microsoft.com/learn/paths/get-started-finance-operations/)  | Erfahren Sie, wie Finance and Operations-Apps Unternehmen unterstützen, um ihre globalen Finanzsysteme, betrieblichen Geschäftsprozesse und optimierten Lieferketten zu verwalten, damit Personen schnelle, informierten Entscheidungen treffen können. Als erster Schritt in Ihrer Karriere bei der Arbeit mit Finance and Operations-Apps müssen Sie sich unabhängig von der gewünschten Rolle mit den Funktionen vertraut machen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit  | 2 Stunden   |
-| [Kurs MB-900T01-A: Dynamics 365-Grundlagen](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01)   | Dieser Kurs macht den Kursteilnehmer mit Funktionen Dynamics 365 und Handelswert vertraut. Der Kurs deckt Dynamics 365-Anwendungen, die Power Platform, Cloudkonzepte, das Sicherheitsmodell und Lizenzierungsüberlegungen ab.  | Von einem Kursleiter durchgeführtes persönliches oder Onlinetraining; Kosten variieren nach Regionen und Partner | 1 Tag     |
+
 
 ## <a name="core-platform-knowledge"></a>Kernplattformwissen<a name="core-platform-knowledge"></a>
 | Inhalt | Beschreibung  | Formate   | Länge    |

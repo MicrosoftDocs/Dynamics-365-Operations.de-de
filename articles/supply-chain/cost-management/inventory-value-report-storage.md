@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 03426e86186c6aa283531eb37ae26527e6891042
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2742c5c12dcc554745b618dd1ff819c8c1e1d05f
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3276918"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413098"
 ---
 # <a name="inventory-value-storage-report"></a>Lagerbericht zum Bestandswert
 
@@ -50,7 +50,7 @@ Befolgen Sie diese Schritte, um einen **Lagerbericht zum Bestandswert** zu erste
 1. Wählen Sie **Neu** aus.
 1. Legen Sie im angezeigten Dialogfeld **Inventarwert** die folgenden Werte fest, um zu definieren, welche Datensätze in Ihrem Bericht enthalten sind:
 
-    - Auf dem Inforegister **Parameter** geben Sie einen eindeutigen Namen für den Bericht ein und verwenden die Felder im Abschnitt **Datumsintervall**, um zu definieren, welche Datensätze im Bericht enthalten sind. Um das Datumsintervall zu definieren, können Sie entweder einen voreingestellten Bereich (relativ zum Berichtserstellungsdatum) im Feld **Datumsintervallcode** auswählen, oder Sie wählen bestimmte Daten in den Feldern **Startdatum** und **Enddatum**. <!-- KFM: What is the ID setting for here? What do its values mean? -->
+    - Auf dem Inforegister **Parameter** geben Sie einen eindeutigen Namen für den Bericht ein und verwenden die Felder im Abschnitt **Datumsintervall**, um zu definieren, welche Datensätze im Bericht enthalten sind. Um das Datumsintervall zu definieren, können Sie entweder einen voreingestellten Bereich (relativ zum Berichtserstellungsdatum) im Feld **Datumsintervallcode** auswählen, oder Sie wählen bestimmte Daten in den Feldern **Startdatum** und **Enddatum**.
     - Richten Sie in den Abschnitten **Einzubeziehende Datensätze** Filter und Einschränkungen ein, um zu definieren, welche Daten in den Bericht aufgenommen werden sollen.
     - Im Inforegister **Im Hintergrund ausführen** geben Sie an, wie, wann und wie oft der Bericht erstellt wird.
 
