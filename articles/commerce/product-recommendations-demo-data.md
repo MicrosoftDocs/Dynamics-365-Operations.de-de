@@ -3,7 +3,7 @@ title: Erstellen Sie Empfehlungen mit Demo-Daten
 description: Dieses Thema bietet Richtlinien zur Nutzung von Mehrkanal-Produktempfehlungen in einer Einfeldumgebung der Stufe 1 mithilfe der vorinstallierten, anpassbaren Demodaten.
 author: bebeale
 manager: AnnBe
-ms.date: 03/30/20
+ms.date: 05/26/20
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: ec23461352abc53b90b6af539a3dd1764e4b5460
-ms.sourcegitcommit: 67cf9e2cf0f75e90526cae6bf176a40156c62a53
+ms.openlocfilehash: 68275f3e36bce0f641b0273cf3b3b8c8ce9db137
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "3175548"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404324"
 ---
 # <a name="create-recommendations-with-demo-data"></a>Erstellen Sie Empfehlungen mit Demo-Daten
 
@@ -71,7 +71,7 @@ Die Erweiterung enthält die Datendatei „RecoMockDataset.csv“, mit der Sie d
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
-[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+[Aktivieren von Azure Data Lake Storage in einer Dynamics 365 Commerce Umgebung](enable-adls-environment.md)
 
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 

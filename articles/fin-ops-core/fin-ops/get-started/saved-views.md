@@ -3,7 +3,7 @@ title: Gespeicherte Ansichten
 description: In diesem Thema wird beschrieben, wie Sie die gespeicherten Ansichtsfunktionen verwenden.
 author: jasongre
 manager: AnnBe
-ms.date: 04/10/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: fe79558b9d2ac4ef1c83918b949d11983b2cc0d8
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: f6b7f1c64c273f52dc1d414185ba54efdfb8e5c0
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260482"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412330"
 ---
 # <a name="saved-views"></a>Gespeicherte Ansichten
 
@@ -137,7 +137,7 @@ Wenn die Änderungen, die Sie an einer veröffentlichten Ansicht vornehmen möch
 7. [10.0.9/Plattform-Update 33 oder höher] Wenn Sie diese veröffentlichte Ansicht ursprünglich als Standardansicht ausgewählt haben, wird sie nach der erneuten Veröffentlichung für diese Benutzer wieder als Standardansicht verwendet.  
 
 Wenn Änderungen der veröffentlichten Ansicht die Personalisierungen oder Filter umfassen, die der Ansicht zugeordnet sind, folgen Sie diesen Schritten: 
-1.  Wechseln Sie zur veröffentlichten Ansicht, die Sie aktualisieren möchten. 
+1.  Laden Sie die veröffentlichte Ansicht, die Sie aktualisieren möchten. 
 2.  Hiermit wird eine Kopie der veröffentlichten Ansicht gespeichert, um einen lokalen Entwurf der veröffentlichten Ansicht zu erstellen. 
 3.  Ändern Sie den lokalen Entwurf mit den erforderlichen Änderungen.
 4.  Veröffentlicht Sie die Ansicht mit dem ursprünglichen Namen. 
@@ -149,14 +149,27 @@ Während alle Benutzer eine Registerkarte **Meine Ansichten** mit ihren persönl
 
 Für eine Liste aller veröffentlichten Ansichten für diese Seite sind die folgenen Aktivitäten verfügbar. 
 
--    **Veröffentlichen**: Verwenden Sie die Aktivität **Veröffentlichen**, um eine Ansicht erneut zu veröffentlichen, nachdem Veröffentlichungsparameter (Name, Beschreibung oder juristische Personen) geändert wurden.
--    **Entfernen**: Verwenden Sie die Aktivität **Entfernen**, um eine veröffentlichte Aktivität dauerhaft zu löschen. Diese Aktivität entfernt die Ansicht für alle Benutzer im System. Das Entfernen von veröffentlichten Ansichten wird nach dem Auswählen der Schaltfläche **Speichern** wirksam.
+-    **Veröffentlichen** – Verwenden Sie die Aktivität **Veröffentlichen**, um eine Ansicht erneut zu veröffentlichen, nachdem Veröffentlichungsparameter (Name, Beschreibung oder juristische Personen) geändert wurden.
+-    **Als persönlich speichern** – Verwenden Sie die Aktion **Als persönlich speichern** zum Erstellen eines persönlichen Entwurfs einer Kopie der veröffentlichten Ansicht. Diese Funktion kann Ihnen helfen, den Inhalt einer Ansicht zu verstehen, die nicht für Sie veröffentlicht wurde oder die noch nicht veröffentlicht wurde. Sie können damit auch eine Ansicht bearbeiten und anschließend erneut veröffentlichen. Diese Funktion wird in Version 10.0.12 eingeführt.  
+-    **Entfernen** – Verwenden Sie die Aktivität **Entfernen**, um eine veröffentlichte Aktivität dauerhaft zu löschen. Diese Aktivität entfernt die Ansicht für alle Benutzer im System. Das Entfernen von veröffentlichten Ansichten wird nach dem Auswählen der Schaltfläche **Speichern** wirksam.
+
+## <a name="managing-views-globally"></a>Ansichten global verwalten
+Obwohl auf jeder Seite einige Verwaltungsfunktionen angezeigt werden, wie in diesem Thema angegeben, kann **Systemadministratoren** und **gespeicherte Ansichtsadministratoren** Ansichten für das System ganzheitlicher über die Seite **Personalisierung** verwalten. Diese Seite enthält insbesondere die folgenden Abschnitte und Funktionen: 
+
+- **Veröffentlichte Ansichten** – In diesem Abschnitt werden alle Ansichten aufgelistet, die für Ihre Organisation veröffentlicht wurden. Von hier aus können Sie eine Ansicht erneut veröffentlichen, nachdem Sie die Sicherheitsrollen oder juristischen Personen angepasst haben, auf die die Ansicht abzielt. Sie können mindestens eine veröffentlichte Ansicht exportieren oder löschen. In Version 10.0.12 und höher können Sie die Aktion **Als persönlich speichern** zum Erstellen einer persönlichen Kopie der Ansicht verwenden, damit Sie die Ansicht aktualisieren oder deren Inhalt besser verstehen können. 
+- **Unveröffentlichte Ansichten** – Diese Abschnitt führt alle Ansichten auf, die in das System importiert wurden, aber noch nicht veröffentlicht wurden. Sie können diese Ansichten veröffentlichen, exportieren oder löschen. Die Aktion **Schnelle Veröffentlichung**, die in Version 10.0.12 hinzugefügt wurde, kann mehrere Ansichten aus diesem Abschnitt in einer Aktion veröffentlicht werden, indem die vorhandenen Konfigurationen für Sicherheitsrollen und juristische Personen verwendet werden. In Version 10.0.12 und höher können Sie die Aktion **Als persönlich speichern** zum Erstellen einer persönlichen Kopie der Ansicht verwenden, damit Sie die Ansicht aktualisieren oder den Inhalt besser verstehen können.   
+- **Persönliche Ansichten** – Dieser Abschnitt führt alle Ansichten auf, die von den Benutzern im System erstellt wurden. Von hier aus können Sie eine persönliche Ansicht für die Organisation veröffentlichen oder eine oder mehrere der Ansichten an andere Benutzer kopieren. Sie können diese Ansichten auch nach Bedarf exportieren oder löschen.
+- **Benutzer** – Wählen Sie einen Benutzer aus, um eine Liste der Seiten anzuzeigen, die der Benutzer besucht hat. Sie können dann bestimmen, ob der Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer. Darüber hinaus können Sie Funktionslegenden für den Benutzer zurücksetzen. Wenn der Benutzer zuvor Popup-Fenster ablehnte, die neue Funktionen einführen, werden sie beim nächsten Mal, wenn der Benutzer auf diese Funktionen trifft, wieder angezeigt.
+- **System** – Sie können temporär Personalisierungen im System für alle Benutzer deaktivieren. In diesem Fall werden alle Personalisierungen für alle Benutzer gelöscht und alle Seiten auf ihren Standardstatus zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
+
+Benutzer, die Zugriff auf die Seite **Personalisierung** haben, können die persönlichen oder Vorlagenansichten auch importieren, indem sie die Schaltfläche **Ansichten importieren** im Aktivitätsbereich verwenden. In Version 10.0.12 und höher wurde ein Mechanismus hinzugefügt, mit dem Ansichten beim Import sofort veröffentlicht werden können.  
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Wie aktiviere ich gespeicherte Ansichten im meine Umgebung? 
-Hinweis: Für die Funktion **Gespeicherte Ansichten** muss das Personalisierungssystem in Finance and Operations aktiviert sein. Wenn die Personalisierung für die gesamte Umgebung deaktiviert ist, werden Ansichten deaktiviert, selbst wenn Sie die folgenden Schritte ausführen. 
+> [!NOTE]
+> Für die Funktion **Gespeicherte Ansichten** muss das Personalisierungssystem in Finance and Operations aktiviert sein. Wenn die Personalisierung für die gesamte Umgebung deaktiviert ist, werden Ansichten deaktiviert, selbst wenn Sie die folgenden Schritte ausführen. 
 
-**10.0.9/Plattform-Update 33 und höher** Die Funktion **Gespeicherte Ansichten** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/Plattform-Update 33 und höher** Die Funktion **Gespeicherte Ansichten** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie für andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).  
 
 **10.0.8/Plattform-Update 32 und früher** Die Funktion **Gespeicherte Ansichten** kann in Stufe 1-Umgebungen (Entwicklung/Test) und Stufe 2-Umgebungen (Sandbox) aktiviert werden, um zusätzliche Test- und Entwurfsänderungen bereitzustellen, indem die folgenden Schritte ausgeführt werden.
 

@@ -3,7 +3,7 @@ title: Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung
 description: In diesem Thema wird erläutert, wie eine Vorschauumgebung in Microsoft Dynamics 365 Commerce bereitgestellt wird.
 author: psimolin
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54db89372a0f9ef5b267d25e14067e3243a803c
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: c109c2326cf01739255b49587c15aa34ad884f6a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254747"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426464"
 ---
 # <a name="provision-a-dynamics-365-commerce-preview-environment"></a>Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung
 
@@ -39,7 +39,7 @@ Bevor Sie beginnen, empfehlen wir, dass Sie einen kurzen Blick in dieses Thema w
 
 ## <a name="overview"></a>Übersicht
 
-Um Ihre Commerce-Vorschauumgebung erfolgreich bereitzustellen, müssen Sie ein Projekt mit einem bestimmten Produktnamen und -Typ erstellen. Bei der Umgebung und der Commerce-Skalierungseinheit (CSU) gibt es auch einige spezifische Parameter, die Sie verwenden müssen, um später E-Commerce bereitstellen zu können. In den Anweisungen in diesem Thema werden alle Schritte, die zum Ausführen der Bereitstellung erforderlich sind, sowie die Parameter, die Sie verwenden müssen, beschrieben.
+Um Ihre Commerce-Vorschauumgebung erfolgreich bereitzustellen, müssen Sie ein Projekt mit einem bestimmten Produktnamen und -Typ erstellen. Bei der Umgebung und der Commerce Scale Unit (CSU) gibt es auch einige spezifische Parameter, die Sie verwenden müssen, um später E-Commerce bereitstellen zu können. In den Anweisungen in diesem Thema werden alle Schritte, die zum Ausführen der Bereitstellung erforderlich sind, sowie die Parameter, die Sie verwenden müssen, beschrieben.
 
 Nach der erfolgreichen Bereitstellung Ihrer Commerce-Vorschauumgebung müssen Sie einige Schritte nach der Bereitstellung ausführen, um Ihre Vorschauumgebung vorzubereiten. Einige Schritte sind optional, je nachdem, welche Aspekte des Systems Sie bewerten möchten. Sie können die optionalen Schritte später jederzeit ausführen.
 
@@ -193,7 +193,7 @@ Gehen Sie folgendermaßen vor, um die Umgebung bereitzustellen.
 
 1. Stellen Sie vor dem Fortfahren sicher, dass der Status Ihrer Umgebung **Bereitgestellt** lautet.
 
-### <a name="initialize-the-commerce-scale-unit-csu"></a>Initialisieren der Commerce-Skalierungseinheit (CSU)
+### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initialisieren der Commerce Scale Unit (Cloud)
 
 Führen Sie folgende Schritte aus, um eine CSU zu initialisieren.
 
@@ -215,7 +215,7 @@ Führen Sie folgende Schritte aus, um e-Commerce zu initialisieren.
 
 1. Prüfen Sie auf der Registerkarte **E-Commerce** die Vorschaueinwilligung und wählen Sie dann **Einrichten** aus.
 1. Geben Sie im Feld **E-Commerce-Mandantenname** einen Namen ein. Beachten Sie jedoch, dass dieser Name in einigen URLs sichtbar ist, die auf Ihre E-Commerce-Instanz verweisen.
-1. Wählen Sie im Feld **Commerce-Skalierungseinheit-Name** Ihre CSU in der Liste aus. (Die Liste sollte nur eine Option haben.)
+1. Wählen Sie im Feld **Commerce Scale Unit Name** Ihre CSU in der Liste aus. (Die Liste sollte nur eine Option haben.)
 
     Das Feld **E-Commerce-Geografie** wird automatisch festgelegt und der Wert kann nicht geändert werden.
 
@@ -251,7 +251,7 @@ Um den Prozess zum Bereitstellen und Konfigurieren Ihrer Commerce-Vorschauumgebu
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (Cloud)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-Portal](https://azure.microsoft.com/features/azure-portal)
 

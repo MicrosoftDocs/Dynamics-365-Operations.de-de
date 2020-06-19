@@ -3,7 +3,7 @@ title: Regulatorische Features
 description: Dieses Thema enthält eine Liste der geplanten und freigegebenen regulatorischen Updates für Microsoft Dynamics 365 Finance.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 6e403e3d18aec616d0c569b16ba77eaefdf4b0ea
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: a7a26d8c506a9e61f6e4319a33176b4e92fc30ad
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262625"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411411"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -42,44 +42,48 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 |Land|Geplantes Freigabedatum|Version freigeben|Regulatorisches Update|
 |--------------------|---------------|-------|-------|
-|      Brasilien         |   April 2020 – Januar 2020      | 10.0.10, 10.0.9HF, 10.0.8HF      |   DRCST SC – Verordnung SEF Nr. 416    |
+|      Brasilien         |   April 2020 – Januar 2020      | 10.0.10, 10.0.9HF      |   DRCST SC – Verordnung SEF Nr. 416    |
 |      Brasilien         |   April 2020      | 10.0.10      |   SPED Contribuições (PIS/COFINS) – Blöcke M115 und M515    |
 |      Brasilien         |   April 2020      | 10.0.10      |   Beschleunigte Beiträge – C100- und D100-Aktualisierungen aufzeichnen, wenn das Guthaben nicht wiederhergestellt werden kann    |
-|      Brasilien         |   April 2020 – Januar 2020     | 10.0.10, 10.0.9HF, 10.0.8HF      |   SPED-Beitrag – Layout für Januar 2020    |
+|      Brasilien         |   April 2020 – Januar 2020     | 10.0.10, 10.0.9HF      |   SPED-Beitrag – Layout für Januar 2020    |
 |      Brasilien         |   2020. März       | 10.0.9      |   Sped Fiscal – Änderungen im Datensatz D100, Feld COD_MUN_ORI    |
-|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9, 10.0.8      |   DRCST SC – Verordnung SEF Nr. 254/19    |
-|      Brasilien         |   2020. Januar       | 10.0.8      |   Ergänzende Informationen von ICMS-ST    |
-|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9, 10.0.8HF      |   Sped Fiscal Layout 014 |
-|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9, 10.0.8HF      |   DRCST SC – Verordnung SEF Nr. 343DR   |
+|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9      |   DRCST SC – Verordnung SEF Nr. 254/19    |
+|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9      |   Sped Fiscal Layout 014 |
+|      Brasilien         |   März 2020 – Januar 2020       | 10.0.9      |   DRCST SC – Verordnung SEF Nr. 343DR   |
 |      Brasilien         |   Mai 2020 - März 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   SPED ECD Layout 8   |
-|      Brasilien         |   Mai 2020 - April 2020      | 10.0.11, 10.0.10HF, 10.0.9HF, 10.0.8HF      |   Technische Hinweise NT2019.001 v1.40   |
+|      Brasilien         |   Mai 2020 - April 2020      | 10.0.11, 10.0.10HF, 10.0.9HF      |   Technische Hinweise NT2019.001 v1.40   |
+|      Brasilien         |   Mai 2020      | 10.0.12, 10.0.11HF, 10.0.10HF,      |   ADCR ICMS-ST-Anweisung für den Parana-Status   |
+|      Estland         |   Mai 2020       | 10.0.11      |   Elektronische Rechnungsstellung in Estland: Export von Kundenrechnungen im estnischen Format Version 1.2.  |
 |      Frankreich         |   April 2020       | 10.0.10      |   Erklärung der Anwaltskosten bei den Steuerbehörden für Selbständige (DAS2)    |
 |      Frankreich         |   2020. März       | 10.0.9      |   Französische Lokalisierung: ISO 20022-Format für internationale Zahlungen und Finanztransfers    |
-|      Ungarn         |   Mai 2020 - März 2020       | 10.0.11, 10.0.9HF, 10.0.8HF     |   Online-Rechnungsstellungssystem v.2.0 am Finance and Operations    |
+|      Deutschland         |   Mai 2020       | 10.0.12      |   Deutschland – Einzelhandel – Registrierkassenanforderungen    |
+|      Ungarn         |   Mai 2020 - März 2020       | 10.0.11, 10.0.10, 10.0.9HF     |   Online-Rechnungsstellungssystem v.2.0 am Finance and Operations    |
 |      Indien         |   2020. März      | 10.0.9      |   Neues GSTR (ANX-1 und ANX-2) Rückgabe Offlinetool    |
-|      Italien         |   2020. Januar      | 10.0.8      |   Änderungen in der MwSt.-Verwaltung durch D.L. 119 vom 23. Oktober 2018: Bericht zur jährlichen Steuermitteilung    |
-|      Italien         |   2020. März      | 10.0.9, 10.0.8HF      |   Retail – Verwalten von Debitoreninformationen in POS |
-|      Italien         |   2020. März      | 10.0.9, 10.0.8HF      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
-|      Japan          |   2020. März     | 10.0.9, 10.0.8HF     |   Japan Bankers Association ersetzt JBA-Zahlungsformate mit fester Länge durch ISO20022 |
+|      Indien         |   Mai 2020      | 10.0.12      |   Verbesserungen bei der Behandlung von Stückpreisen und Selbstkostenpreisen bei Umlagerungsaufträgen  |
+|      Italien         |   2020. März      | 10.0.9      |   Retail – Verwalten von Debitoreninformationen in POS |
+|      Italien         |   2020. März      | 10.0.9      |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
+|      Italien         |   Mai 2020      | 10.0.12. 10.0.11      |   Formatänderung Modello 770/2019 |
+|      Japan          |   2020. März     | 10.0.9     |   Japan Bankers Association ersetzt JBA-Zahlungsformate mit fester Länge durch ISO20022 |
 |      Japan          |   2020. Januar      | 10.0.8       |   Einführung einer Verbrauchssteuersteuersatzänderung und der ermäßigten Steuer (Verbrauchssteuersatzbericht) |
-|      Mexiko          |   2020. Januar     | 10.0.8        |   Einzelhandel – CFDI Global: Sonstiges Resol 2019 – c_CodigoPostal und Zeitzone |
-|      Mexiko           |   2020. Januar       | 10.0.8     |   Code-Validierung im Produkt- und Dienstleistungskatalog |
 |      Niederlande          |   April 2020   | 10.0.10     |   Niederländische Taxonomie neue Version – NT14 |
-|      Norwegen          |   2020. März   | 10.0.9, 10.0.8HF     |   SAF-T XSD Update auf Version 1.1 für Dynamics 365 for Finance and Operations |
+|      Norwegen          |   2020. März   | 10.0.9     |   SAF-T XSD Update auf Version 1.1 für Dynamics 365 for Finance and Operations |
+|      Norwegen          |   Mai 2020   | 10.0.12     |   Neugestaltung des SAF-T-Berichts: Eröffnungssalden nach Transaktionsart Betrieb und Steuerinformationen in Steuerkennzeichenwährung in Finanzen (v.10) |
+|      Norwegen          |   Mai 2020   | 10.0.12     |   Änderung des SAF-T-Berichtsdialogs: Ermöglicht die Auswahl von Kontaktpersonen in verschiedenen Unternehmen |
+|      Norwegen          |   Mai 2020   | 10.0.12     |   SAF-T Namensraumdeklarationen in jeder Zeile anstatt nur in der Kopfzeile |
 |      Polen          |   2020. März    | 10.0.9     |   Vorsteuerregister und SAF-MwSt.-Register: Zollagentur aus SAD-Dokumenten muss durch Drittnamen und Steuerbefreiungsnummer ersetzt werden |
-|      Polen          |   März 2020 – Januar 2020   | 10.0.9, 10.0.8HF     |   Retail – Verwalten von Debitoreninformationen in POS |
-|      Polen          |   März 2020 – Januar 2020     | 10.0.9, 10.0.8HF     |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
-|      Polen          |   März 2020 – Januar 2020     | 10.0.9, 10.0.8     |   SAF-Rechnungen (JPK_FA) v.3 ab 2. Dez. 2019 |
-|      Polen          |   April 2020 – Januar 2020     | 10.0.10, 10.0.9, 10.0.8     |   JPK_VDEK ersetzt JPK_VAT (SAF VAT) |
+|      Polen          |   März 2020 – Januar 2020   | 10.0.9     |   Retail – Verwalten von Debitoreninformationen in POS |
+|      Polen          |   März 2020 – Januar 2020     | 10.0.9    |   Retail – Drucken von Debitoreninformationen in einem Steuerbeleg |
+|      Polen          |   2020. März     | 10.0.9     |   SAF-Rechnungen (JPK_FA) v.3 ab 2. Dez. 2019 |
+|      Polen          |   April 2020     | 10.0.10, 10.0.9     |   JPK_VDEK ersetzt JPK_VAT (SAF VAT) |
 |      Polen          |   Mai 2020     | 10.0.11     |   Teilen Sie den realisierten Umtauschdifferenzbetrag von AP/AR in die Umtauschdifferenz aus Rechnungsnettowert und Mehrwertsteuerbetrag auf  |
 |      Polen          |   Mai 2020     | 10.0.11     |   SAF-Buchhaltungsbücher – Verbesserungen bei der Filterung von Buchungsebenen |
 |      Polen          |   Mai 2020     | 10.0.11     |   JPK_VDEK ergänztes Pack I |
+|      Polen          |   Mai 2020     | 10.0.12     |   JPK_VDEK ergänztes Paket II |
+|      Polen          |   Mai 2020     | 10.0.11     |   Teilgutschrift für Kundenauftrag mit Vorabrechnung |
 |      Russische Föderation          |   2020. März     | 10.0.9     |   Format der Eigenschaft Steuererklärung Berichterstellung 2019 |
 |      Russische Föderation          |   2020. März     | 10.0.9     |   Formataktualisierungen der Ertragssteuererklärung |
-|      Singapur           |   2020. Januar     | 10.0.8      |   GST-Bericht zur Rücklieferung |
 |      Schweiz           |   2020. März     | 10.0.9      |   Schweizer Zahlungsbeleg ISR erhält neues Format (QR-Code) |
 |      Vereinigtes Königreich           |   April 2020     | 10.0.10      |   Ergänzungspaket zur MTD-Betrugsprävention |
-|      Vereinigtes Königreich         |   2020. Januar      | 10.0.8      |   Making Tax Digital (MTD) – Zustimmung des Systemadministrators zur Übermittlung von Informationen außerhalb von D365 unter Verwendung der Integration mit HMRC    |
 
 
 

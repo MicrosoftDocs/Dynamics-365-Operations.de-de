@@ -3,7 +3,7 @@ title: Containermodul
 description: Dieses Thema enthält Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 93c16da0988cc955835231bdd1f7342f19063f85
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
+ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025527"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3417345"
 ---
 # <a name="container-module"></a>Containermodul
-
 
 [!include [banner](includes/banner.md)]
 
@@ -45,6 +44,10 @@ Es werden drei Containermodule unterstützt: Container, Container mit 2 Slots un
 - Ein Siteautor will ein Dreispaltenlayout, bei dem drei Module nebeneinander angezeigt werden. Daher nutzt der Siteautor ein Containermodul des Containers vom Typ mit 3 Slots.
 - Ein Siteautor will ein Sechspaltenlayout, bei dem sechs Module nebeneinander angezeigt werden. Daher verwendet der Siteautor einen Container des Typs mit sechs Spalten darin.
 - Ein Standortautor möchte ein Modul für eine Seite setzen, möchte aber sie nicht den Bildschirm ausfüllen. Daher wird der Siteautor das Modul einem Containermodul hinzufügen und legt die Eigenschaft **Breite** des Containers auf **Eingepasster Container** fest.
+
+Das folgende Bild zeigt ein Beispiel für ein Containermodul, das ein Karussellmodul im Commerce Site Builder enthält. In diesem Beispiel ist die **Breite** Eigenschaft des Containermoduls auf **Bildschirm ausfüllen** festgelegt.
+
+![Beispiel eines Containermoduls](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Containermoduleigenschaften
 
@@ -99,27 +102,36 @@ Zusätzliche Eigenschaften können verwendet werden, um das Layout für verschie
 
 Um ein Containerspielmodul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Erstellen Sie eine Seitenvorlage, die mit **Containervorlage** bezeichnet ist. 
-1. Fügen Sie im Slot **Text** das Modul **Standardseite** hinzu.
-1. Beenden Sie die Bearbeitung der Vorlage und veröffentlichen Sie sie.
-1. Verwenden Sie die Containervorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Containerseite** hat.
-1. Im **Haupt-** Slot der neuen Seite fügen Sie ein Containermodul hinzu.
+1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
+1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie **Containervorlage** ein und wählen **OK**.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen. 
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die von Ihnen erstellte Video-Player-Vorlage aus. Unter **Seitenname** geben Sie **Container-Seite** ein und wählen dann **OK** aus.
+1. Auf der neuen Seite wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
 1. Im Eigenschaftenbereich für das Containermodul legen Sie die Eigenschaft **Anzahl der Spalten** auf **1** und die Eigenschaft **Breite** auf **Container füllen** fest.
-1. Fügen Sie dem Containermodul ein Inhaltsblockmodul hinzu.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Inhaltblock** und dann **OK** aus.
 1. Konfigurieren Sie im Eigenschaftenbereich für das Inhaltsblockmodul die Überschrift, das Bild und das Layout.
-1. Seite speichern und Vorschau anzeigen. Sie sollten ein Funktionsmodul sehen, das in die Breite des Containermoduls passt.
+1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Sie sollten ein Funktionsmodul sehen, das in die Breite des Containermoduls passt.
 1. Im Eigenschaftenbereich für das Containermodul ändern Sie den Wert der Eigenschaft **Anzahl der Spalten** auf **3**.
-1. Fügen Sie zwei weitere Inhaltsblockmodule dem Containermodul hinzu.
-1. Seite speichern und Vorschau anzeigen. Sie können jetzt drei Inhaltsblockmodule sehen, die nebeneinander angezeigt werden.
-1. Nachdem Sie das gewünschte Layout erstellt haben, bearbeiten Sie die Seite fertig und veröffentlichen Sie sie.
+1. Fügen Sie dem Containermodul zwei weitere Inhaltsblockmodule hinzu und konfigurieren Sie sie.
+1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Sie können jetzt drei Inhaltsblockmodule sehen, die nebeneinander angezeigt werden.
+1. Nachdem Sie das gewünschte Layout erreicht haben, wählen Sie **Beenden Sie die Bearbeitung**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** zum Veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Übersicht](starter-kit-overview.md)
+[Überblick über Starterkit](starter-kit-overview.md)
+
+[Akkordeon Modul](add-accordion.md)
+
+[Registerkartenmodul](add-tab.md)
 
 [Karussellmodul](add-carousel.md)
 
-[Textblock-Modul](add-content-rich-block.md)
+[Textblockmodul](add-content-rich-block.md)
 
 [Kauffeldmodul](add-buy-box.md)
 

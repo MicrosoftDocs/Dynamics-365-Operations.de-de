@@ -3,7 +3,7 @@ title: Kauffeldmodul
 description: Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 095374c14cddf1ae3608ae1427a7144b3e7ca7b2
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269750"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411341"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
-
+[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
 
 Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
@@ -38,6 +38,10 @@ Der Begriff *Kauffeld* bezieht sich in der Regel auf einen Produktdetailseiten-B
 Ein Kauffeldmodul ist ein spezieller Container, der verwendet wird, um alle zu Module verwenden, die im Kauffeldbereich einer Produktdetailseite angezeigt werden.
 
 Die URL einer Produktdetailseite, die in einer Produktkennung enthalten ist. Alle Informationen, die erforderlich sind, um ein Kauffeldmodul zu stellen, werden von dieser Produktkennung berechnet. Wenn eine Produktkennung nicht bereitgestellt wird, wird das Kauffeldmodul nicht ordnungsgemäß auf einer Seite dargestellt. Daher kann ein Kauffeldmodul nur auf Seiten mit Produktkontext verwendet werden. Um es auf einer Seite ohne Produktkontext (z. B. einer Homepage oder einer Marketingseite) zu verwenden, müssen Sie zusätzliche Anpassungen vornehmen.
+
+Das folgende Bild zeigt ein Beispiel eines Kaufelementmoduls auf einer Produktdetailseite.
+
+![Beispiel eines Kaufelementmoduls](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Kaufen Sie Feldmoduleigenschaften und -Slots 
 
@@ -62,31 +66,43 @@ Mithilfe von Designs können Sie die Reihenfolge der Produkteigenschaften und Ak
 
 ## <a name="buy-box-module-settings"></a>Kauffeldmoduleinstellungen
 
-Kauffeldmodule haben drei Einstellungen, die unter **Site-Einstellungen \> Erweiterungen**  konfiguriert werden können:
+Die folgenden Kaufelementmoduleigenschaften können unter **Site-Einstellungen \> Erweiterungen** konfiguriert werden:
 
-- **Höchstmenge** – Diese Eigenschaft dient zur Angabe der maximalen Anzahl jedes Artikels, die dem Einkaufskorb hinzugefügt werden kann. Beispielsweise kann ein Einzelhändler festlegen, dass nur 10 eines Produkts als einzelne Transaktion verkauft werden können.
-- **Bestandsscheck** – Wenn der Wert auf **Wahr** gesetzt ist, wird nur ein Artikel in den Einkaufskorb gelegt, nachdem das Kauffeldmodul sicherstellt, dass es auf Lager ist. Diesee Lagerüberprüfung wird für Szenarien ausgeführt, bei denen der Artikel versendet wird und für Szenarien, wenn der Artikel in der Filiale abgeholt wird. Wenn der Wert auf **Falsch** gesetzt wird, wird kein Bestandsscheck geleistet, bevor ein Artikel in den Einkaufskorb gelegt wird und der Auftrag erteilt wird. Informationen zum Konfigurieren der Inventareinstellungen im Backoffice finden Sie unter [Berechnen Sie die Lagerverfügbarkeit für Einzelhandelskanäle](calculated-inventory-retail-channels.md).
+- **Warenkorbartikel-Höchstmenge** – Diese Eigenschaft dient zur Angabe der maximalen Anzahl jedes Artikels, die dem Einkaufskorb hinzugefügt werden kann. Beispielsweise kann ein Einzelhändler festlegen, dass nur 10 eines Produkts als einzelne Transaktion verkauft werden können.
+- **Bestand** – Informationen zum Anwenden von Bestandeinstellungen finden Sie unter [Wenden Sie Bestandeinstellungen an](inventory-settings.md).
+- **In den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zum Warenkorb navigieren**, **Navigieren Sie nicht zum Warenkorb**, und **Zeige Benachrichtigungen**. Wenn der Wert auf **Zum Warenkorb navigieren** eigestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Nicht zum Warenkorb navigieren** eingestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Zeige Benachrichtigungen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiterhin auf der Seite mit den Produktdetails surfen. 
 
-- **Inventarpuffer** – Diese Eigenschaft wird verwendet, um eine Puffernummer für das Inventar anzugeben. Bestandspuffer – Lagerbestand wird in Echtzeit verwaltet und wenn viele Debitoren Bestellungen aufgeben, kann es schwierig sein, die Lagerzählung zu verwalten. Wenn ein Bestandsscheck erfolgt, und wenn der Bestand kleiner ist als der Pufferbetrag, wird das Produkt nicht als vorrätig behandelt. Wenn Verkäufe rasch in mehreren Kanälen erfolgen und die Bestandszählung nicht vollständig synchronisiert wird, ist das Risiko kleiner, dass ein Artikel verkauft wird, der nicht vorrätig ist.
+    Das folgende Bild zeigt ein Beispiel einer Benachrichtigung Zum Warenkorb hinzugefügt auf der Fabrikam-Site.
+
+    ![Beispiel eines Benachrichtigungs-Moduls](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 
-Das Kauffeldmodul ruft Produktinformationen mithilfe der APIs der Commerce-Skalierungseinheit ab. Die Produktkennung von der Produktdetailseite wird verwendet, um alle Informationen abzurufen.
+Das Kauffeldmodul ruft Produktinformationen mithilfe der Commerce Scale Unit Anwendungsprogrammschnittstellen (APIs) ab. Die Produktkennung von der Produktdetailseite wird verwendet, um alle Informationen abzurufen.
 
 ## <a name="add-a-buy-box-module-to-a-page"></a>Hinzufügen eines Kauffeldmodul zu einer Seite
 
 Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Erstellen Sie ein Fragment, das mit dem Namen **Kauffeldfragment** bezeichnet ist und fügen Sie einen Kauffeldmodul AIF-Webdienst hinzu.
-1. Im Slot **Medien** im Kauffeldmodul fügen Sie ein Mediengalleriemodul hinzu.
-1. Fügen Sie im Slot **Auswahl speichern** des Kauffeldmoduls ein Store-Selector-Modul hinzu.
+1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus, um das neue Fragment zu erstellen.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Kauffeld**.
+1. Unter **Name des Seitenfragments** geben Sie einen Namen für das **Kauffeld-Fragment** ein und wählen Sie dann **OK**.
+1. Im Slot **Mediengallerie**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Mediengallerie** und dann **OK** aus.
+1. Im Slot **Auswahl speichern**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Auswahl speichern** und dann **OK** aus.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
-1. Erstellen Sie eine Vorlage für eine Produktdetailseite und bezeichnen Sie diese als **PDP-Vorlage**
-1. Eine Standardseite hinzufügen.
-1. Im Slot **Haupt-** der Standardseite fügen Sie ein Kauffeldfragment hinzu.
+1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
+1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie **PDP Vorlage** ein und wählen **OK**.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
+1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Seitenfragment hinzufügen**.
+1. Im Dialogfeld **Seitenfragment auswählen** wählen Sie das Fragment **Kauffeldfragment**, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
-1. Verwenden Sie die Vorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **PDP Seite** hat.
-1. Im Slot **Haupt-** der neuen Seite fügen Sie ein Kauffeldfragment hinzu.
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die Vorlage **PDP-Vorlage** aus. Unter **Seitenname** geben Sie **PDP-Seite** ein und wählen dann **OK** aus.
+1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche (**...**) und wählen Sie **Seitenfragment hinzufügen**.
+1. Im Dialogfeld **Seitenfragment auswählen** wählen Sie das Fragment **Kauffeldfragment**, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
 1. Seite speichern und Vorschau anzeigen. Fügen Sie die **? productid=&lt;Produktkennung&gt;**-Abfragezeichenfolgenparameter der URL der Vorschauseite hinzu. So wird der Produktkontext verwendet, um die Vorschauseite zu stellen und zu rendern.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
 

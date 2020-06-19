@@ -3,7 +3,7 @@ title: Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erh
 description: Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu senden, wenn workflowbezogene Ereignisse auftreten.
 author: jasongre
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 06/01/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4c9f2f22bc4b5ca5b4351f7956ad2eb6d3b903d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 40ad380c7bfb2b3fc518b0278286ae03532668ed
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3140420"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416552"
 ---
 # <a name="enable-users-to-receive-workflow-related-email-messages"></a>Ermöglichen Sie es Benutzern, workflowbezogene E-Mail-Nachrichten zu erhalten.
 
@@ -40,3 +40,5 @@ Sie können das System konfigurieren, um E-Mail-Nachrichten an Benutzer zu sende
 6. Klicken Sie auf **Speichern**.
 7. Schließen Sie die Seite.
 
+> [!NOTE]
+> Die Workflow-E-Mail-Vorlagen werden entweder aus System-E-Mail-Vorlagen oder aus Organisations-E-Mail-Vorlagen bezogen, je nachdem, ob es sich bei dem Workflow um einen Workflow auf Systemebene (nicht unternehmensspezifisch) oder auf Organisationsebene (unternehmensspezifisch) handelt.
