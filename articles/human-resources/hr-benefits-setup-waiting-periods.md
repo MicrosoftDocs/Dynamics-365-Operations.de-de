@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,30 +18,30 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: adb7842231e8092398b240a2f017c28821b13ee1
-ms.sourcegitcommit: a9461650d11d6845e1942865ebf7e35f75f61ad3
+ms.openlocfilehash: e1937ab54eb7898afe0fed6659c3ae676626e8ad
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "3229578"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3429772"
 ---
-# <a name="configure-waiting-periods"></a><span data-ttu-id="8e499-103">Wartezeiträume konfigurieren</span><span class="sxs-lookup"><span data-stu-id="8e499-103">Configure waiting periods</span></span>
+# <a name="configure-waiting-periods"></a><span data-ttu-id="40e90-103">Wartezeiträume konfigurieren</span><span class="sxs-lookup"><span data-stu-id="40e90-103">Configure waiting periods</span></span>
 
-<span data-ttu-id="8e499-104">In Microsoft Dynamics 365 Human Resources legen Wartezeiten einen Meilenstein zur Verwendung für Vergütungspläne fest.</span><span class="sxs-lookup"><span data-stu-id="8e499-104">In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans.</span></span> <span data-ttu-id="8e499-105">Mögliche Beispiele: drei Monate ab dem Einstellungsdatum, der erste eines jeden Monats oder sechs Monate.</span><span class="sxs-lookup"><span data-stu-id="8e499-105">For example, three months from hire date, the first of each month, or six months.</span></span>   
+<span data-ttu-id="40e90-104">In Microsoft Dynamics 365 Human Resources legen Wartezeiten einen Meilenstein zur Verwendung für Vergütungspläne fest.</span><span class="sxs-lookup"><span data-stu-id="40e90-104">In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans.</span></span> <span data-ttu-id="40e90-105">Mögliche Beispiele: drei Monate ab dem Einstellungsdatum, der erste eines jeden Monats oder sechs Monate.</span><span class="sxs-lookup"><span data-stu-id="40e90-105">For example, three months from hire date, the first of each month, or six months.</span></span>   
 
-1. <span data-ttu-id="8e499-106">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Wartezeiten** aus.</span><span class="sxs-lookup"><span data-stu-id="8e499-106">In the **Benefits management** workspace, under **Setup**, select **Waiting periods**.</span></span>
+1. <span data-ttu-id="40e90-106">Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Einstellungen** die Option **Wartezeiten** aus.</span><span class="sxs-lookup"><span data-stu-id="40e90-106">In the **Benefits management** workspace, under **Setup**, select **Waiting periods**.</span></span>
 
-2. <span data-ttu-id="8e499-107">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="8e499-107">Select **New**.</span></span>
+2. <span data-ttu-id="40e90-107">Wählen Sie **Neu** aus.</span><span class="sxs-lookup"><span data-stu-id="40e90-107">Select **New**.</span></span>
 
-3. <span data-ttu-id="8e499-108">Geben Sie Werte für die folgenden Felder an:</span><span class="sxs-lookup"><span data-stu-id="8e499-108">Specify values for the following fields:</span></span>
+3. <span data-ttu-id="40e90-108">Geben Sie Werte für die folgenden Felder an:</span><span class="sxs-lookup"><span data-stu-id="40e90-108">Specify values for the following fields:</span></span>
 
-   | <span data-ttu-id="8e499-109">Feld</span><span class="sxs-lookup"><span data-stu-id="8e499-109">Field</span></span> | <span data-ttu-id="8e499-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8e499-110">Description</span></span> |
+   | <span data-ttu-id="40e90-109">Feld</span><span class="sxs-lookup"><span data-stu-id="40e90-109">Field</span></span> | <span data-ttu-id="40e90-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="40e90-110">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="8e499-111">**Wartecode**</span><span class="sxs-lookup"><span data-stu-id="8e499-111">**Waiting code**</span></span> | <span data-ttu-id="8e499-112">Ein eindeutiger Bezeichner für die Wartezeit.</span><span class="sxs-lookup"><span data-stu-id="8e499-112">A unique identifier for the waiting period.</span></span> |
-   | <span data-ttu-id="8e499-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8e499-113">**Description**</span></span> | <span data-ttu-id="8e499-114">Eine kurze Beschreibung der Wartezeit.</span><span class="sxs-lookup"><span data-stu-id="8e499-114">A description of the waiting period.</span></span> |
-   | <span data-ttu-id="8e499-115">**Wartemethode**</span><span class="sxs-lookup"><span data-stu-id="8e499-115">**Waiting method**</span></span> | <span data-ttu-id="8e499-116">Wählen Sie aus der Dropdownliste der Werte die entsprechende Wartemethode aus.</span><span class="sxs-lookup"><span data-stu-id="8e499-116">Select the appropriate waiting method from the drop-down list of values.</span></span> <span data-ttu-id="8e499-117">Die Optionen sind „Netto“, „Aktueller Monat“, „Aktuelles Quartal“, „Aktuelles Jahr“ und „Aktuelle Woche“</span><span class="sxs-lookup"><span data-stu-id="8e499-117">Options are Net, Current month, Current quarter, Current year, and Current week.</span></span> |
-   | <span data-ttu-id="8e499-118">**Monate**</span><span class="sxs-lookup"><span data-stu-id="8e499-118">**Months**</span></span> | <span data-ttu-id="8e499-119">Geben Sie hier die Anzahl der Monate ein, die zum Berechnen des Wartedatums zur Wartemethode addiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="8e499-119">Enter the number of months to add to the waiting method to calculate the waiting date.</span></span> |
-   | <span data-ttu-id="8e499-120">**Tage**</span><span class="sxs-lookup"><span data-stu-id="8e499-120">**Days**</span></span> | <span data-ttu-id="8e499-121">Geben Sie hier die Anzahl der Tage ein, die zum Berechnen des Wartedatums zur Wartemethode addiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="8e499-121">Enter the number of days to add to the waiting method to calculate the waiting date.</span></span> |
-   | <span data-ttu-id="8e499-122">**Wartetag**</span><span class="sxs-lookup"><span data-stu-id="8e499-122">**Waiting day**</span></span> | <span data-ttu-id="8e499-123">Wählen Sie einen Wartetag zum Berechnen des Wartedatums aus.</span><span class="sxs-lookup"><span data-stu-id="8e499-123">Select the waiting day to use to calculate the waiting date.</span></span> |
+   | <span data-ttu-id="40e90-111">**Wartecode**</span><span class="sxs-lookup"><span data-stu-id="40e90-111">**Waiting code**</span></span> | <span data-ttu-id="40e90-112">Ein eindeutiger Bezeichner für die Wartezeit.</span><span class="sxs-lookup"><span data-stu-id="40e90-112">A unique identifier for the waiting period.</span></span> |
+   | <span data-ttu-id="40e90-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="40e90-113">**Description**</span></span> | <span data-ttu-id="40e90-114">Eine kurze Beschreibung der Wartezeit.</span><span class="sxs-lookup"><span data-stu-id="40e90-114">A description of the waiting period.</span></span> |
+   | <span data-ttu-id="40e90-115">**Wartemethode**</span><span class="sxs-lookup"><span data-stu-id="40e90-115">**Waiting method**</span></span> | <span data-ttu-id="40e90-116">Wählen Sie aus der Dropdownliste der Werte die entsprechende Wartemethode aus.</span><span class="sxs-lookup"><span data-stu-id="40e90-116">Select the appropriate waiting method from the drop-down list of values.</span></span> <span data-ttu-id="40e90-117">Die Optionen sind „Netto“, „Aktueller Monat“, „Aktuelles Quartal“, „Aktuelles Jahr“ und „Aktuelle Woche“</span><span class="sxs-lookup"><span data-stu-id="40e90-117">Options are Net, Current month, Current quarter, Current year, and Current week.</span></span> |
+   | <span data-ttu-id="40e90-118">**Monate**</span><span class="sxs-lookup"><span data-stu-id="40e90-118">**Months**</span></span> | <span data-ttu-id="40e90-119">Geben Sie hier die Anzahl der Monate ein, die zum Berechnen des Wartedatums zur Wartemethode addiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="40e90-119">Enter the number of months to add to the waiting method to calculate the waiting date.</span></span> |
+   | <span data-ttu-id="40e90-120">**Tage**</span><span class="sxs-lookup"><span data-stu-id="40e90-120">**Days**</span></span> | <span data-ttu-id="40e90-121">Geben Sie hier die Anzahl der Tage ein, die zum Berechnen des Wartedatums zur Wartemethode addiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="40e90-121">Enter the number of days to add to the waiting method to calculate the waiting date.</span></span> |
+   | <span data-ttu-id="40e90-122">**Wartetag**</span><span class="sxs-lookup"><span data-stu-id="40e90-122">**Waiting day**</span></span> | <span data-ttu-id="40e90-123">Wählen Sie einen Wartetag zum Berechnen des Wartedatums aus.</span><span class="sxs-lookup"><span data-stu-id="40e90-123">Select the waiting day to use to calculate the waiting date.</span></span> |
 
-4. <span data-ttu-id="8e499-124">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="8e499-124">Select **Save**.</span></span>
+4. <span data-ttu-id="40e90-124">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="40e90-124">Select **Save**.</span></span>
