@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,66 +18,66 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c985a0cb242fb6696b55a2514bd788ff4269f8ca
-ms.sourcegitcommit: def66a9dc7feadd33411248af2545ee4a9e27c4f
+ms.openlocfilehash: 209f0ec7236778cc0a828102e554b02206b45b73
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3385547"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428684"
 ---
-# <a name="create-a-leave-request-workflow"></a><span data-ttu-id="a8229-103">Einen Urlaubsanforderungsworkflow erstellen</span><span class="sxs-lookup"><span data-stu-id="a8229-103">Create a leave request workflow</span></span>
+# <a name="create-a-leave-request-workflow"></a><span data-ttu-id="368ff-103">Einen Urlaubsanforderungsworkflow erstellen</span><span class="sxs-lookup"><span data-stu-id="368ff-103">Create a leave request workflow</span></span>
 
-<span data-ttu-id="a8229-104">Sie können einen Workflow für Urlaubsanträge und Abwesenheitsanträge erstellen, um Urlaubsanträge in Dynamics 365 Human Resources konsistent zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="a8229-104">You can create a workflow in Dynamics 365 Human Resources to consistently manage your leave and absence requests.</span></span> <span data-ttu-id="a8229-105">Mit einem Workflow **Urlaub und Abwesenheit** können Sie:</span><span class="sxs-lookup"><span data-stu-id="a8229-105">A **Leave and absence** workflow lets you:</span></span>
+<span data-ttu-id="368ff-104">Sie können einen Workflow für Urlaubsanträge und Abwesenheitsanträge erstellen, um Urlaubsanträge in Dynamics 365 Human Resources konsistent zu verwalten.</span><span class="sxs-lookup"><span data-stu-id="368ff-104">You can create a workflow in Dynamics 365 Human Resources to consistently manage your leave and absence requests.</span></span> <span data-ttu-id="368ff-105">Mit einem Workflow **Urlaub und Abwesenheit** können Sie:</span><span class="sxs-lookup"><span data-stu-id="368ff-105">A **Leave and absence** workflow lets you:</span></span>
 
-- <span data-ttu-id="a8229-106">Aufgaben definieren</span><span class="sxs-lookup"><span data-stu-id="a8229-106">Define tasks</span></span>
-- <span data-ttu-id="a8229-107">Bestimmen, wer die Aufgaben ausführen muss</span><span class="sxs-lookup"><span data-stu-id="a8229-107">Determine who must complete the tasks</span></span>
-- <span data-ttu-id="a8229-108">Geben Sie an, wer Anforderungen genehmigen oder ablehnen kann</span><span class="sxs-lookup"><span data-stu-id="a8229-108">Specify who can approve or reject requests</span></span>
+- <span data-ttu-id="368ff-106">Aufgaben definieren</span><span class="sxs-lookup"><span data-stu-id="368ff-106">Define tasks</span></span>
+- <span data-ttu-id="368ff-107">Bestimmen, wer die Aufgaben ausführen muss</span><span class="sxs-lookup"><span data-stu-id="368ff-107">Determine who must complete the tasks</span></span>
+- <span data-ttu-id="368ff-108">Geben Sie an, wer Anforderungen genehmigen oder ablehnen kann</span><span class="sxs-lookup"><span data-stu-id="368ff-108">Specify who can approve or reject requests</span></span>
 
-## <a name="create-a-leave-and-absence-request-workflow"></a><span data-ttu-id="a8229-109">Eine Urlaubs- und Abwesenheitsworkflowanfrage erstellen</span><span class="sxs-lookup"><span data-stu-id="a8229-109">Create a Leave and absence request workflow</span></span>
+## <a name="create-a-leave-and-absence-request-workflow"></a><span data-ttu-id="368ff-109">Eine Urlaubs- und Abwesenheitsworkflowanfrage erstellen</span><span class="sxs-lookup"><span data-stu-id="368ff-109">Create a Leave and absence request workflow</span></span>
 
-1. <span data-ttu-id="a8229-110">Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**.</span><span class="sxs-lookup"><span data-stu-id="a8229-110">On the **Leave and absence** page, select the **Links** tab.</span></span>
+1. <span data-ttu-id="368ff-110">Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**.</span><span class="sxs-lookup"><span data-stu-id="368ff-110">On the **Leave and absence** page, select the **Links** tab.</span></span>
 
-2. <span data-ttu-id="a8229-111">Unter **Einrichtung** wählen Sie **Personalverwaltungsparameter Workflows**.</span><span class="sxs-lookup"><span data-stu-id="a8229-111">Under **Setup**, select **Human resource workflows**.</span></span>
+2. <span data-ttu-id="368ff-111">Unter **Einrichtung** wählen Sie **Personalverwaltungsparameter Workflows**.</span><span class="sxs-lookup"><span data-stu-id="368ff-111">Under **Setup**, select **Human resource workflows**.</span></span>
 
-3. <span data-ttu-id="a8229-112">Wählen Sie **Neu** und dann wählen Sie **Urlaubs- und Abwesenheitsantrag**.</span><span class="sxs-lookup"><span data-stu-id="a8229-112">Select **New**, and then select **Leave and absence request**.</span></span> 
+3. <span data-ttu-id="368ff-112">Wählen Sie **Neu** und dann wählen Sie **Urlaubs- und Abwesenheitsantrag**.</span><span class="sxs-lookup"><span data-stu-id="368ff-112">Select **New**, and then select **Leave and absence request**.</span></span> 
 
-4. <span data-ttu-id="a8229-113">Wenn die Nachricht **Diese Datei öffnen?** erscheint, wählen Sie **Öffnen** und melden sich mit Ihren Unternehmensdaten an.</span><span class="sxs-lookup"><span data-stu-id="a8229-113">When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.</span></span>
+4. <span data-ttu-id="368ff-113">Wenn die Nachricht **Diese Datei öffnen?** erscheint, wählen Sie **Öffnen** und melden sich mit Ihren Unternehmensdaten an.</span><span class="sxs-lookup"><span data-stu-id="368ff-113">When the **Open this file?** message box appears, select **Open** and sign in with your company credentials.</span></span>
 
-5. <span data-ttu-id="a8229-114">Verwenden Sie den Workflow-Editor, um einen Workflow für Ihre Urlaubsanträge zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="a8229-114">Use the workflow editor to create a workflow for your leave requests.</span></span> <span data-ttu-id="a8229-115">Weitere Informationen zum Arbeiten mit Workflows finden Sie unter [Erstellen Sie eine Workflow-Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span><span class="sxs-lookup"><span data-stu-id="a8229-115">For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span></span>
+5. <span data-ttu-id="368ff-114">Verwenden Sie den Workflow-Editor, um einen Workflow für Ihre Urlaubsanträge zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="368ff-114">Use the workflow editor to create a workflow for your leave requests.</span></span> <span data-ttu-id="368ff-115">Weitere Informationen zum Arbeiten mit Workflows finden Sie unter [Erstellen Sie eine Workflow-Übersicht](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span><span class="sxs-lookup"><span data-stu-id="368ff-115">For more information about working with workflows, see [Create workflows overview](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/create-workflow?toc=/dynamics365/commerce/toc.json.)</span></span>
 
-## <a name="leave-and-absence-request-workflow-data-elements"></a><span data-ttu-id="a8229-116">Datenelemente des Urlaubs- und Abwesenheitsanforderungs-Workflows</span><span class="sxs-lookup"><span data-stu-id="a8229-116">Leave and absence request workflow data elements</span></span>
+## <a name="leave-and-absence-request-workflow-data-elements"></a><span data-ttu-id="368ff-116">Datenelemente des Urlaubs- und Abwesenheitsanforderungs-Workflows</span><span class="sxs-lookup"><span data-stu-id="368ff-116">Leave and absence request workflow data elements</span></span>
 
-<span data-ttu-id="a8229-117">Mit den folgenden Datenelementen können Sie in Workflows bedingte oder automatische Genehmigungen für Urlaubs- und Abwesenheitsanträge erstellen:</span><span class="sxs-lookup"><span data-stu-id="a8229-117">You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:</span></span>
+<span data-ttu-id="368ff-117">Mit den folgenden Datenelementen können Sie in Workflows bedingte oder automatische Genehmigungen für Urlaubs- und Abwesenheitsanträge erstellen:</span><span class="sxs-lookup"><span data-stu-id="368ff-117">You can use the following data elements to create conditional or automatic approvals in workflows for leave and absence requests:</span></span>
 
-- <span data-ttu-id="a8229-118">**Betrag**</span><span class="sxs-lookup"><span data-stu-id="a8229-118">**Amount**</span></span>
-- <span data-ttu-id="a8229-119">**Kommentar**</span><span class="sxs-lookup"><span data-stu-id="a8229-119">**Comment**</span></span>
-- <span data-ttu-id="a8229-120">**Firma**</span><span class="sxs-lookup"><span data-stu-id="a8229-120">**Company**</span></span>
-- <span data-ttu-id="a8229-121">**Erstellt von**</span><span class="sxs-lookup"><span data-stu-id="a8229-121">**Created by**</span></span>
-- <span data-ttu-id="a8229-122">**Erstellungsdatum und -uhrzeit**</span><span class="sxs-lookup"><span data-stu-id="a8229-122">**Created date and time**</span></span>
-- <span data-ttu-id="a8229-123">**Enddatum**</span><span class="sxs-lookup"><span data-stu-id="a8229-123">**End date**</span></span>
-- <span data-ttu-id="a8229-124">**Sonderurlaubstyp**</span><span class="sxs-lookup"><span data-stu-id="a8229-124">**Leave type**</span></span>
-- <span data-ttu-id="a8229-125">**Geändert von**</span><span class="sxs-lookup"><span data-stu-id="a8229-125">**Modified by**</span></span>
-- <span data-ttu-id="a8229-126">**Änderungsdatum und -uhrzeit**</span><span class="sxs-lookup"><span data-stu-id="a8229-126">**Modified date and time**</span></span>
-- <span data-ttu-id="a8229-127">**Ursachencode**</span><span class="sxs-lookup"><span data-stu-id="a8229-127">**Reason code**</span></span>
-- <span data-ttu-id="a8229-128">**Anforderungskennung**</span><span class="sxs-lookup"><span data-stu-id="a8229-128">**Request ID**</span></span>
-- <span data-ttu-id="a8229-129">**Startdatum**</span><span class="sxs-lookup"><span data-stu-id="a8229-129">**Start date**</span></span>
-- <span data-ttu-id="a8229-130">**Status**</span><span class="sxs-lookup"><span data-stu-id="a8229-130">**Status**</span></span> 
-- <span data-ttu-id="a8229-131">**Übermittlungsdatum**</span><span class="sxs-lookup"><span data-stu-id="a8229-131">**Submission date**</span></span>
-- <span data-ttu-id="a8229-132">**Übermittelt von**</span><span class="sxs-lookup"><span data-stu-id="a8229-132">**Submitted by**</span></span>
-- <span data-ttu-id="a8229-133">**Übermittelt von der Personalverwaltung**</span><span class="sxs-lookup"><span data-stu-id="a8229-133">**Submitted by Human resources**</span></span>
-- <span data-ttu-id="a8229-134">**Übermittelt vom Manager**</span><span class="sxs-lookup"><span data-stu-id="a8229-134">**Submitted by Manager**</span></span>
-- <span data-ttu-id="a8229-135">**Übermittelt im Auftrag von**</span><span class="sxs-lookup"><span data-stu-id="a8229-135">**Submitted on behalf**</span></span>
-- <span data-ttu-id="a8229-136">**Worker**</span><span class="sxs-lookup"><span data-stu-id="a8229-136">**Worker**</span></span>
-- <span data-ttu-id="a8229-137">**Arbeitskrafttyp**</span><span class="sxs-lookup"><span data-stu-id="a8229-137">**Worker type**</span></span>
+- <span data-ttu-id="368ff-118">**Betrag**</span><span class="sxs-lookup"><span data-stu-id="368ff-118">**Amount**</span></span>
+- <span data-ttu-id="368ff-119">**Kommentar**</span><span class="sxs-lookup"><span data-stu-id="368ff-119">**Comment**</span></span>
+- <span data-ttu-id="368ff-120">**Firma**</span><span class="sxs-lookup"><span data-stu-id="368ff-120">**Company**</span></span>
+- <span data-ttu-id="368ff-121">**Erstellt von**</span><span class="sxs-lookup"><span data-stu-id="368ff-121">**Created by**</span></span>
+- <span data-ttu-id="368ff-122">**Erstellungsdatum und -uhrzeit**</span><span class="sxs-lookup"><span data-stu-id="368ff-122">**Created date and time**</span></span>
+- <span data-ttu-id="368ff-123">**Enddatum**</span><span class="sxs-lookup"><span data-stu-id="368ff-123">**End date**</span></span>
+- <span data-ttu-id="368ff-124">**Sonderurlaubstyp**</span><span class="sxs-lookup"><span data-stu-id="368ff-124">**Leave type**</span></span>
+- <span data-ttu-id="368ff-125">**Geändert von**</span><span class="sxs-lookup"><span data-stu-id="368ff-125">**Modified by**</span></span>
+- <span data-ttu-id="368ff-126">**Änderungsdatum und -uhrzeit**</span><span class="sxs-lookup"><span data-stu-id="368ff-126">**Modified date and time**</span></span>
+- <span data-ttu-id="368ff-127">**Ursachencode**</span><span class="sxs-lookup"><span data-stu-id="368ff-127">**Reason code**</span></span>
+- <span data-ttu-id="368ff-128">**Anforderungskennung**</span><span class="sxs-lookup"><span data-stu-id="368ff-128">**Request ID**</span></span>
+- <span data-ttu-id="368ff-129">**Startdatum**</span><span class="sxs-lookup"><span data-stu-id="368ff-129">**Start date**</span></span>
+- <span data-ttu-id="368ff-130">**Status**</span><span class="sxs-lookup"><span data-stu-id="368ff-130">**Status**</span></span> 
+- <span data-ttu-id="368ff-131">**Übermittlungsdatum**</span><span class="sxs-lookup"><span data-stu-id="368ff-131">**Submission date**</span></span>
+- <span data-ttu-id="368ff-132">**Übermittelt von**</span><span class="sxs-lookup"><span data-stu-id="368ff-132">**Submitted by**</span></span>
+- <span data-ttu-id="368ff-133">**Übermittelt von der Personalverwaltung**</span><span class="sxs-lookup"><span data-stu-id="368ff-133">**Submitted by Human resources**</span></span>
+- <span data-ttu-id="368ff-134">**Übermittelt vom Manager**</span><span class="sxs-lookup"><span data-stu-id="368ff-134">**Submitted by Manager**</span></span>
+- <span data-ttu-id="368ff-135">**Übermittelt im Auftrag von**</span><span class="sxs-lookup"><span data-stu-id="368ff-135">**Submitted on behalf**</span></span>
+- <span data-ttu-id="368ff-136">**Worker**</span><span class="sxs-lookup"><span data-stu-id="368ff-136">**Worker**</span></span>
+- <span data-ttu-id="368ff-137">**Arbeitskrafttyp**</span><span class="sxs-lookup"><span data-stu-id="368ff-137">**Worker type**</span></span>
 
-<span data-ttu-id="a8229-138">Diese Beispiele zeigen, wie Sie mithilfe dieser Datenelemente verschiedene Typen von Workflowbedingungen erstellen können:</span><span class="sxs-lookup"><span data-stu-id="a8229-138">These examples show how you can create different types of workflow conditions by using these data elements:</span></span>
+<span data-ttu-id="368ff-138">Diese Beispiele zeigen, wie Sie mithilfe dieser Datenelemente verschiedene Typen von Workflowbedingungen erstellen können:</span><span class="sxs-lookup"><span data-stu-id="368ff-138">These examples show how you can create different types of workflow conditions by using these data elements:</span></span>
 
-- <span data-ttu-id="a8229-139">Verwenden Sie den **Ursachencode** in einer bedingten Anweisung zur Weiterleitung von Krankmeldungn mit dem Ursachencode **Medizinische Behandlung** an die Personalverwaltung zur Genehmigung, während alle anderen Ursachencodes an den Manager weitergeleitet werden.</span><span class="sxs-lookup"><span data-stu-id="a8229-139">Use **Reason code** in a conditional statement to route sick leave requests with the reason code **Surgery** to HR for approval, while routing all other reason codes to the manager.</span></span> <span data-ttu-id="a8229-140">Weitere Informationen zu bedingten Anweisungen finden Sie unter [Konfigurieren bedingter Entscheidungen in einem Workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span><span class="sxs-lookup"><span data-stu-id="a8229-140">For more information about conditional statements, see [Configure conditional decisions in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span></span> 
+- <span data-ttu-id="368ff-139">Verwenden Sie den **Ursachencode** in einer bedingten Anweisung zur Weiterleitung von Krankmeldungn mit dem Ursachencode **Medizinische Behandlung** an die Personalverwaltung zur Genehmigung, während alle anderen Ursachencodes an den Manager weitergeleitet werden.</span><span class="sxs-lookup"><span data-stu-id="368ff-139">Use **Reason code** in a conditional statement to route sick leave requests with the reason code **Surgery** to HR for approval, while routing all other reason codes to the manager.</span></span> <span data-ttu-id="368ff-140">Weitere Informationen zu bedingten Anweisungen finden Sie unter [Konfigurieren bedingter Entscheidungen in einem Workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span><span class="sxs-lookup"><span data-stu-id="368ff-140">For more information about conditional statements, see [Configure conditional decisions in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow).</span></span> 
 
-- <span data-ttu-id="a8229-141">Verwenden Sie **Übermittelt von der Personalverwaltung** und **Übermittelt vom Manager** in einer automatischen Aktivität zum automatischen Genehmigen von Abwesenheitsanträgen, die diese Rollen im Auftrag von Mitarbeitern übermitteln.</span><span class="sxs-lookup"><span data-stu-id="a8229-141">Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees.</span></span> <span data-ttu-id="a8229-142">Weitere Informationen über automatische Aktivitäten finden Sie unter [Genehmigungsprozesse in einem Workflow konfigurieren](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span><span class="sxs-lookup"><span data-stu-id="a8229-142">For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span></span>
+- <span data-ttu-id="368ff-141">Verwenden Sie **Übermittelt von der Personalverwaltung** und **Übermittelt vom Manager** in einer automatischen Aktivität zum automatischen Genehmigen von Abwesenheitsanträgen, die diese Rollen im Auftrag von Mitarbeitern übermitteln.</span><span class="sxs-lookup"><span data-stu-id="368ff-141">Use **Submitted by Human resources** and **Submitted by manager** in an automatic action to automatically approve leave requests that these roles submit on behalf of employees.</span></span> <span data-ttu-id="368ff-142">Weitere Informationen über automatische Aktivitäten finden Sie unter [Genehmigungsprozesse in einem Workflow konfigurieren](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span><span class="sxs-lookup"><span data-stu-id="368ff-142">For more information about automatic actions, see [Configure approval processes in a workflow](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow).</span></span>
 
-- <span data-ttu-id="a8229-143">Verwenden Sie **Urlaubstyp** in einer bedingten Anweisung oder einer automatischen Aktivität, um zu steuern, wie der Workflow Anforderungen mit bestimmten Abwesenheitstypen weiterleitet.</span><span class="sxs-lookup"><span data-stu-id="a8229-143">Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.</span></span>
+- <span data-ttu-id="368ff-143">Verwenden Sie **Urlaubstyp** in einer bedingten Anweisung oder einer automatischen Aktivität, um zu steuern, wie der Workflow Anforderungen mit bestimmten Abwesenheitstypen weiterleitet.</span><span class="sxs-lookup"><span data-stu-id="368ff-143">Use **Leave type** in a conditional statement or automatic action to control how the workflow routes requests with certain leave types.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a8229-144">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a8229-144">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="368ff-144">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="368ff-144">See also</span></span>
 
-- [<span data-ttu-id="a8229-145">Urlaubs- und Abwesenheitsübersicht</span><span class="sxs-lookup"><span data-stu-id="a8229-145">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)
+- [<span data-ttu-id="368ff-145">Urlaubs- und Abwesenheitsübersicht</span><span class="sxs-lookup"><span data-stu-id="368ff-145">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)

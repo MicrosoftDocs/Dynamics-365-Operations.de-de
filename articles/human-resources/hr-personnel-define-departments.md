@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm
+ms.search.form: OMOperatingUnit, HierarchyDesigner, OMNodeSelection, HierarchyPublishAndCloseForm, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Core, Operations
@@ -16,39 +16,39 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8b109a16aa96f0d87776d6965c20808ee6f6fce
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: e35d3744661c3f94745803ba698449e6cb917875
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009124"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430344"
 ---
-# <a name="define-new-departments"></a><span data-ttu-id="d28cf-103">Neue Abteilungen definieren</span><span class="sxs-lookup"><span data-stu-id="d28cf-103">Define new departments</span></span>
+# <a name="define-new-departments"></a><span data-ttu-id="d1ad7-103">Neue Abteilungen definieren</span><span class="sxs-lookup"><span data-stu-id="d1ad7-103">Define new departments</span></span>
 
 
 
-<span data-ttu-id="d28cf-104">Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen.</span><span class="sxs-lookup"><span data-stu-id="d28cf-104">Departments are operating units that represent a functional area of a business, such as sales or accounting.</span></span> <span data-ttu-id="d28cf-105">Viele Unternehmen besitzen Organisationshierarchien, die verschiedene Abteilungen innerhalb eines Unternehmens anzeigen.</span><span class="sxs-lookup"><span data-stu-id="d28cf-105">Many companies have organizational hierarchies that display the various departments within a business.</span></span> <span data-ttu-id="d28cf-106">Diese Prozedur führt Sie Schritt für Schritt durch den Prozess der Erstellung von Abteilungen sowie das Hinzufügen dieser Abteilungen zu einer Organisationsabteilungshierarchie.</span><span class="sxs-lookup"><span data-stu-id="d28cf-106">This procedure walks through the process of creating departments, and adding those departments to an organizations departmental hierarchy.</span></span> <span data-ttu-id="d28cf-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="d28cf-107">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="d1ad7-104">Abteilungen sind Organisationseinheiten, die einen Funktionsbereich eines Unternehmens, beispielsweise Vertrieb oder Buchhaltung darstellen.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-104">Departments are operating units that represent a functional area of a business, such as sales or accounting.</span></span> <span data-ttu-id="d1ad7-105">Viele Unternehmen besitzen Organisationshierarchien, die verschiedene Abteilungen innerhalb eines Unternehmens anzeigen.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-105">Many companies have organizational hierarchies that display the various departments within a business.</span></span> <span data-ttu-id="d1ad7-106">Diese Prozedur führt Sie Schritt für Schritt durch den Prozess der Erstellung von Abteilungen sowie das Hinzufügen dieser Abteilungen zu einer Organisationsabteilungshierarchie.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-106">This procedure walks through the process of creating departments, and adding those departments to an organizations departmental hierarchy.</span></span> <span data-ttu-id="d1ad7-107">Das Demodatenunternehmen, das verwendet wird, um diese Prozedur zu erstellen, ist USMF.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="d28cf-108">Wechseln Sie zu "Personalverwaltung" > "Abteilungen" > "Abteilungen".</span><span class="sxs-lookup"><span data-stu-id="d28cf-108">Go to Human resources > Departments > Departments.</span></span>
-2. <span data-ttu-id="d28cf-109">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="d28cf-109">Click New to open the drop dialog.</span></span>
-3. <span data-ttu-id="d28cf-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d28cf-110">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="d28cf-111">Beispiel: Projekt fakturieren</span><span class="sxs-lookup"><span data-stu-id="d28cf-111">Example: Project billing</span></span>  
-4. <span data-ttu-id="d28cf-112">Geben Sie im Feld "Memo" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d28cf-112">In the Memo field, type a value.</span></span>
-    * <span data-ttu-id="d28cf-113">Beispiel: Projekt fakturieren</span><span class="sxs-lookup"><span data-stu-id="d28cf-113">Example: Project billing</span></span>  
-5. <span data-ttu-id="d28cf-114">Geben Sie im Feld "Vorgesetzter" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="d28cf-114">In the Manager field, enter or select a value.</span></span>
-    * <span data-ttu-id="d28cf-115">Beispiel: Jodi Christiansen</span><span class="sxs-lookup"><span data-stu-id="d28cf-115">Example: Jodi Christiansen</span></span>  
-6. <span data-ttu-id="d28cf-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="d28cf-116">Click Save.</span></span>
-7. <span data-ttu-id="d28cf-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d28cf-117">Close the page.</span></span>
-8. <span data-ttu-id="d28cf-118">Wechseln Sie zu "Personalverwaltung" > "Abteilungen" > "Abteilungshierarchie".</span><span class="sxs-lookup"><span data-stu-id="d28cf-118">Go to Human resources > Departments > Department hierarchy.</span></span>
-9. <span data-ttu-id="d28cf-119">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="d28cf-119">Click Edit.</span></span>
-10. <span data-ttu-id="d28cf-120">Klicken Sie auf Einfügen.</span><span class="sxs-lookup"><span data-stu-id="d28cf-120">Click Insert.</span></span>
-11. <span data-ttu-id="d28cf-121">Klicken Sie auf "Abteilung"</span><span class="sxs-lookup"><span data-stu-id="d28cf-121">Click Department.</span></span>
-12. <span data-ttu-id="d28cf-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d28cf-122">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d28cf-123">Beispiel: Projekt fakturieren</span><span class="sxs-lookup"><span data-stu-id="d28cf-123">Example: Project billing</span></span>  
-13. <span data-ttu-id="d28cf-124">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d28cf-124">Click OK.</span></span>
-14. <span data-ttu-id="d28cf-125">Klicken Sie auf "Veröffentlichen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d28cf-125">Click Publish to open the drop dialog.</span></span>
-15. <span data-ttu-id="d28cf-126">Geben Sie im Feld "Gültigkeitsdatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="d28cf-126">In the Effective date field, enter a date and time.</span></span>
-    * <span data-ttu-id="d28cf-127">Wenn Sie die Abteilungshierarchie veröffentlichen, können Sie festlegen, wann die Änderungen wirksam werden.</span><span class="sxs-lookup"><span data-stu-id="d28cf-127">When publishing the department hierarchy, you can select when to make the changes effective.</span></span> <span data-ttu-id="d28cf-128">Änderungen können zukünftig datiert werden.</span><span class="sxs-lookup"><span data-stu-id="d28cf-128">Changes can be future dated.</span></span> <span data-ttu-id="d28cf-129">Beispielsweise wissen Sie, dass Sie am Anfang des Geschäftsjahrs eine zusätzliche Abteilung hinzufügen werden.</span><span class="sxs-lookup"><span data-stu-id="d28cf-129">For example, you may know that at the beginning of your fiscal year you will be adding an additional department.</span></span> <span data-ttu-id="d28cf-130">Sie können Ihr Gültigkeitsdatum auf den Beginn des Geschäftsjahrs festlegen, und die Änderungen an der Hierarchie werden zu diesem Datum wirksam.</span><span class="sxs-lookup"><span data-stu-id="d28cf-130">You can set your effective date to the beginning of the fiscal year, and the changes to the hierarchy will be effective on that date.</span></span>  
-16. <span data-ttu-id="d28cf-131">Geben Sie im Feld "Änderungen beschreiben" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d28cf-131">In the Describe changes field, type a value.</span></span>
-17. <span data-ttu-id="d28cf-132">Klicken Sie auf "Veröffentlichen".</span><span class="sxs-lookup"><span data-stu-id="d28cf-132">Click Publish.</span></span>
+1. <span data-ttu-id="d1ad7-108">Wechseln Sie zu "Personalverwaltung" > "Abteilungen" > "Abteilungen".</span><span class="sxs-lookup"><span data-stu-id="d1ad7-108">Go to Human resources > Departments > Departments.</span></span>
+2. <span data-ttu-id="d1ad7-109">Klicken Sie auf "Neu" zum Öffnen des Ablagedialogfeld.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-109">Click New to open the drop dialog.</span></span>
+3. <span data-ttu-id="d1ad7-110">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-110">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="d1ad7-111">Beispiel: Projekt fakturieren</span><span class="sxs-lookup"><span data-stu-id="d1ad7-111">Example: Project billing</span></span>  
+4. <span data-ttu-id="d1ad7-112">Geben Sie im Feld "Memo" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-112">In the Memo field, type a value.</span></span>
+    * <span data-ttu-id="d1ad7-113">Beispiel: Projekt fakturieren</span><span class="sxs-lookup"><span data-stu-id="d1ad7-113">Example: Project billing</span></span>  
+5. <span data-ttu-id="d1ad7-114">Geben Sie im Feld "Vorgesetzter" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-114">In the Manager field, enter or select a value.</span></span>
+    * <span data-ttu-id="d1ad7-115">Beispiel: Jodi Christiansen</span><span class="sxs-lookup"><span data-stu-id="d1ad7-115">Example: Jodi Christiansen</span></span>  
+6. <span data-ttu-id="d1ad7-116">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="d1ad7-116">Click Save.</span></span>
+7. <span data-ttu-id="d1ad7-117">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-117">Close the page.</span></span>
+8. <span data-ttu-id="d1ad7-118">Wechseln Sie zu "Personalverwaltung" > "Abteilungen" > "Abteilungshierarchie".</span><span class="sxs-lookup"><span data-stu-id="d1ad7-118">Go to Human resources > Departments > Department hierarchy.</span></span>
+9. <span data-ttu-id="d1ad7-119">Klicken Sie auf "Bearbeiten".</span><span class="sxs-lookup"><span data-stu-id="d1ad7-119">Click Edit.</span></span>
+10. <span data-ttu-id="d1ad7-120">Klicken Sie auf Einfügen.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-120">Click Insert.</span></span>
+11. <span data-ttu-id="d1ad7-121">Klicken Sie auf "Abteilung"</span><span class="sxs-lookup"><span data-stu-id="d1ad7-121">Click Department.</span></span>
+12. <span data-ttu-id="d1ad7-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-122">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="d1ad7-123">Beispiel: Projekt fakturieren</span><span class="sxs-lookup"><span data-stu-id="d1ad7-123">Example: Project billing</span></span>  
+13. <span data-ttu-id="d1ad7-124">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d1ad7-124">Click OK.</span></span>
+14. <span data-ttu-id="d1ad7-125">Klicken Sie auf "Veröffentlichen", um das Ablagedialogfeld zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-125">Click Publish to open the drop dialog.</span></span>
+15. <span data-ttu-id="d1ad7-126">Geben Sie im Feld "Gültigkeitsdatum" ein Datum und eine Uhrzeit ein.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-126">In the Effective date field, enter a date and time.</span></span>
+    * <span data-ttu-id="d1ad7-127">Wenn Sie die Abteilungshierarchie veröffentlichen, können Sie festlegen, wann die Änderungen wirksam werden.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-127">When publishing the department hierarchy, you can select when to make the changes effective.</span></span> <span data-ttu-id="d1ad7-128">Änderungen können zukünftig datiert werden.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-128">Changes can be future dated.</span></span> <span data-ttu-id="d1ad7-129">Beispielsweise wissen Sie, dass Sie am Anfang des Geschäftsjahrs eine zusätzliche Abteilung hinzufügen werden.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-129">For example, you may know that at the beginning of your fiscal year you will be adding an additional department.</span></span> <span data-ttu-id="d1ad7-130">Sie können Ihr Gültigkeitsdatum auf den Beginn des Geschäftsjahrs festlegen, und die Änderungen an der Hierarchie werden zu diesem Datum wirksam.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-130">You can set your effective date to the beginning of the fiscal year, and the changes to the hierarchy will be effective on that date.</span></span>  
+16. <span data-ttu-id="d1ad7-131">Geben Sie im Feld "Änderungen beschreiben" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="d1ad7-131">In the Describe changes field, type a value.</span></span>
+17. <span data-ttu-id="d1ad7-132">Klicken Sie auf "Veröffentlichen".</span><span class="sxs-lookup"><span data-stu-id="d1ad7-132">Click Publish.</span></span>
 
