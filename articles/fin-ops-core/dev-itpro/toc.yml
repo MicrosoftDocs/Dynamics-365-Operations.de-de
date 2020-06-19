@@ -14,6 +14,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: Plattformupdates zu 10.0.12 (August 2020)
+                  href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Plattformupdates zu 10.0.11 (Juli 2020)
                   href: get-started/whats-new-platform-update-35.md
                 - name: "Plattformupdates zu 10.0.10 (Mai\_2020)"
@@ -198,6 +200,8 @@
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrierte Arbeitskraft, Stelle und Position'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Verfügbarkeit des Bestands
+                              href: data-entities/dual-write/inventory-availability.md
                         - name: Unterstützung für duales Schreiben
                           items:
                             - name: Unterstützung für Field Service- und Project Service Automation-Lösungen
@@ -452,9 +456,9 @@
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Updates in Cloudumgebungen anwenden
                   href: deployment/apply-deployable-package-system.md
-                - name: Updates und Erweiterungen auf in der Cloud gehostete Retail Channel-Komponenten anwenden
+                - name: Updates und Erweiterungen auf Commerce Scale Unit (Cloud) anwenden
                   href: deployment/Update-retail-channel.md
-                - name: Retail Cloud Scale Unit initialisieren
+                - name: Commerce Scale Unit (Cloud) initialisieren
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Retail-Datenresidenz
                   href: deployment/retail-data-residency.md
@@ -488,6 +492,8 @@
                       href: deployment/certificate-rotation-on-prem.md
                     - name: Clientinternetverbindung
                       href: user-interface/client-disconnected.md
+                    - name: Reine Stapelverarbeitungs- und interaktive AOS-Knoten in lokalen Bereitstellungen konfigurieren
+                      href: deployment/onprem-batchonly.md
                     - name: Proxys für lokale Umgebungen konfigurieren
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokale Diagnosen
@@ -1048,7 +1054,9 @@
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Lifecycle Services-Benutzerhandbuch
               href: lifecycle-services/lcs-user-guide.md
-            - name: Abonnementskalkulator
+            - name: Onboarding eines Projekts
+              href: lifecycle-services/project-onboarding.md
+            - name: Abonnementkalkulator
               href: lifecycle-services/subscription-estimator.md
             - name: Sicherheit konfigurieren
               href: lifecycle-services/configure-lcs-security.md
@@ -1118,6 +1126,20 @@
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Translation Memory-Dateien
                   href: lifecycle-services/use-translation-service-tm.md
+        - name: Microsoft Power Platform-Integration
+          items:
+            - name: Microsoft Power Platform-Integration in Finance and Operations
+              href: power-platform/overview.md
+            - name: Entitätsmodellierung
+              href: power-platform/entity-modeling.md
+            - name: Anwendungslebenszyklusverwaltung
+              href: power-platform/application-lifecycle-management.md
+            - name: Finance and Operations und Common Data Service-Administratorreferenz
+              href: power-platform/admin-reference.md
+            - name: Power Apps-Portale mit Finance and Operations
+              href: power-platform/power-portal-reference.md
+            - name: Häufig gestellte Fragen zu virtuellen Entitäten von Finance and Operations
+              href: power-platform/faq.md
         - name: Mobile Plattform
           items:
             - name: Mobile Plattformressourcen
@@ -1330,9 +1352,7 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Installation und Konfiguration
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Agnostische Datentests mit Regression Suite Automation Tool
-              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
-            - name: Testfälle
+            - name: Verwenden des Regression Suite Automation Tools
               href: perf-test/rsat/rsat-run.md
             - name: Erwartete Werte validieren
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1340,10 +1360,12 @@
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Abgeleitete Testfälle
               href: perf-test/rsat/rsat-derived-test-cases.md
-            - name: Verwenden des Regression Suite Automation Tool-Tutorials
+            - name: Regression Suite Automation Tool-Tutorial und andere Funktionen verwenden
               href: ../fin-ops/get-started/hol-use-regression-suite-automation-tool.md
             - name: Bewährte Methoden
               href: perf-test/rsat/rsat-best-practices.md
+            - name: Agnostische Datentests mit Regression Suite Automation Tool
+              href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: Problembehandlung
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Lösungen mithilfe von Lifecycle Services freigeben
@@ -1436,15 +1458,17 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Chargenverarbeitung und Chargenverarbeitungsserver
                   href: sysadmin/batch-server-overview.md
-                - name: Erstellen von Batch-Aufträgen
+                - name: Stapelverarbeitungsaufträge erstellen
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Kopieren von Batch-Aufträgen
+                - name: Kopieren von Stapelverarbeitungsaufträgen
                   href: sysadmin/copy-batch-job.md
-                - name: Aktive Chargenverarbeitungsperioden
+                - name: Aktive Stapelverarbeitungsperioden
                   href: sysadmin/activeperiod.md
+                - name: Unterstützung der Sommerzeit bei aktiven Stapelverarbeitungsperioden
+                  href: sysadmin/batch-active-period-dst.md
                 - name: Sicherheitsrolle Chargenmanager
                   href: sysadmin/runby.md
-                - name: Batchauftrag zur Verarbeitung von SQL-Indexdefragmentierung
+                - name: Stapelverarbeitungsauftrag zur Verarbeitung von SQL-Indexdefragmentierung
                   href: sysadmin/batch-job-SQL-defragmentation.md
                 - name: Stapelwarnungen konfigurieren
                   href: sysadmin/alerts.md
