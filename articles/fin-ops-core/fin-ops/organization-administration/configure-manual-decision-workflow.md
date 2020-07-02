@@ -3,7 +3,7 @@ title: Manuellen Entscheidungen in einem Workflow konfigurieren
 description: Dieses Thema erläutert, wie Sie die Eigenschaften einer manuellen Entscheidung konfigurieren können.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f46b875f52d3d3e7c755ee92dcd5faddf0d94356
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 130cb50369c13bc3478340023c94f169ee5250cf
+ms.sourcegitcommit: a5009c8958037afbaa1dd4f1469255b187ced93a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2178002"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3455032"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Manuellen Entscheidungen in einem Workflow konfigurieren
 
@@ -239,26 +239,6 @@ Gehen Sie folgendermaßen vor, um anzugeben, wem eine manuelle Aufgabe zugewiese
     <li>Nachdem Sie <strong>Benutzer</strong>ausegwählt haben, klicken Sie auf die Registerkarte <strong>Benutzer</strong>.</li>
     <li>Die Liste <strong>Verfügbare Benutzer</strong> enthält alle Benutzer. Wählen Sie die Benutzer aus, um die Entscheidung zuzuweisen, und verschieben Sie diese Benutzer dann in die Liste <strong>Ausgewählte Benutzer</strong>.</li>
     </ol>
-    </td>
-    </tr>
-    <tr>
-    <td>Warteschlange</td>
-    <td>Eine Warteschlange für Arbeitsaufgaben</td>
-    <td>
-    <ol>
-    <li>Nachdem Sie <strong>Warteschlange</strong> ausgewählt haben, klicken Sie auf die Registerkarte <strong>Warteschlangenbasiert</strong>.</li>
-    <li>Gehen Sie folgendermaßen vor, um die Entscheidung einer bestimmten Warteschlange zuzuweisen: <ol>
-    <li>In der Liste <strong>Warteschlangentyp</strong> wählen Sie <strong>Warteschlangen für Arbeitsaufgaben</strong> aus.</li>
-    <li>Wählen Sie in der Liste <strong>Warteschlangenname</strong> die Warteschlange aus.</li>
-    </ol>
-    </li>
-    <li>Wenn mit einer bestimmten Bedingung festgelegt werden soll, welcher Warteschlange die Entscheidung zugewiesen wird, führen Sie die folgenden Schritte aus: <ol>
-    <li>In der Liste <strong>Warteschlangentyp</strong> wählen Sie <strong>Bedingte Warteschlangen für Arbeitsaufgaben</strong> aus.</li>
-    <li>Wählen Sie in der Liste <strong>Warteschlangenname</strong> <strong>Bedingte Warteschlange</strong>aus.</li>
-    </ol>
-    </li>
-    </ol>
-    <blockquote>[!NOTE] Diese Option wird nur für einige Workflows verwendet, wie z.B. Anfrageverwaltung.</blockquote>
     </td>
     </tr>
     </tbody>

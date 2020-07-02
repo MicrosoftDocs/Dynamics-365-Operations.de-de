@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c386025843edef83d229a42d3f2314678fadae20
-ms.sourcegitcommit: beddfba095c23b3265f0004f5124c4e9dc6404cc
+ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
+ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411929"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "3443463"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (28. Mai 2020)
 
@@ -79,7 +79,10 @@ Mit der Datenbankprotokollierungsfunktion können Sie festlegen, welche Tabelle 
 
 ## <a name="buy-and-sell-leave-in-preview-june-1"></a>Kauf und Verkauf von Urlaub (in der Vorschau am 1. Juni)
 
-Einige Organisationen bieten eine Leistung, mit dem Mitarbeiter ihren Urlaub kaufen oder verkaufen können. Dieser Prozess wird häufig manuell verwaltet. Diese Funktion bietet eine automatisiertere Möglichkeit zur Verwaltung von Richtlinien und Anforderungen für die Personalabteilung und hilft, Fehler zu vermeiden und gleichzeitig den Urlaubsverwaltungsprozess zu optimieren.
+Einige Organisationen bieten eine Leistung, mit dem Mitarbeiter ihren Urlaub kaufen oder verkaufen können. Dieser Prozess wird häufig manuell verwaltet. Diese Funktion bietet eine automatisiertere Möglichkeit zur Verwaltung von Richtlinien und Anforderungen für die Personalabteilung und hilft, Fehler zu vermeiden und gleichzeitig den Urlaubsverwaltungsprozess zu optimieren. Weitere Informationen finden Sie hier:
+
+- [Kauf- und Verkaufsurlaubsrichtlinien verwalten](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Urlaub kaufen und verkaufen](hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Data Management Framework (DMF) Entitäten für das Leistungsmanagement
  

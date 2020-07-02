@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 05/04/2020
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: c47c5430a8f5d67e13c95db609a95d5ad66933ae
-ms.sourcegitcommit: a8b6cd799eddaf5be9aec9ea3c2b55e2c3231652
+ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "3335275"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443917"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 
@@ -35,6 +35,16 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 > [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.11
+### <a name="data-action-hooks"></a>Datenaktivitätshooks
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Funktion für Datenaktions-Hooks wird aufgrund von Leistungsproblemen nicht mehr unterstützt. |
+| **Ersetzt durch eine andere Funktion?**   | Es wird empfohlen, stattdessen [Datenaktion überschreibt](../e-commerce-extensibility/data-action-overrides.md) zu verwenden, um die Geschäftslogik in der Datenaktionsschicht zu ändern.|
+| **Betroffene Produktbereiche**         | E-Commerce-Erweiterbarkeit Datenaktionen |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: ab Frühjahr 10.0.11 Version |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Entfernte oder veraltete Funktionen in Commerce Version 10.0.10
 ### <a name="pos-operation-803---picking-and-receiving"></a>POS-Vorgang 803 – Entnahme und Empfang

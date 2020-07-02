@@ -3,7 +3,7 @@ title: Verpacken in Container einrichten
 description: In diesem Thema wird beschrieben, wie Containerisierung von Ladungen in der Lagerortverwaltung automatisiert wird.
 author: ShylaThompson
 manager: tfehr
-ms.date: 07/22/19
+ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f0f042e6ffe5ecf01b9e5044fc83d081528fbc56
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: d08b89ac32b8ec40ae9dff15dbbd3264800cfb1a
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383296"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454717"
 ---
 # <a name="set-up-containerization"></a>Verpacken in Container einrichten
 
@@ -74,8 +74,8 @@ In diesem Thema wird beschrieben, wie Containerisierung von Ladungen in der Lage
 4. Geben Sie im Feld **Containergruppenkennung** einen Wert ein, oder wählen Sie einen Wert aus.
 5. Geben Sie im Feld **Wellenschrittcode** einen Wert ein.
 6. Aktivieren Sie das Kontrollkästchen **Aufgeteilte Entnahme zulassen**.
-7. Wählen Sie **Speichern**.
-8. Wählen Sie **Containermischungseinschränkungen** aus. Mischlogikpausen ermöglicht es Ihnen, Regeln für das Verpacken von Zuteilungspositionen in Containern einzurichten. Wenn Sie beispielsweise das Feld **Artikelnummer** hinzufügen, wird beim Zuweisen von Artikeln zu Containern ein neuer Container erstellt, wenn es eine neue Artikelnummer gibt. Dies verhindert, dass Arbeitskräfte Zuteilungspositionen für zwei verschiedene Debitoren im gleichen Container verpacken.  
+7. Wählen Sie **Speichern** aus.
+8. Wählen Sie **Containermischungseinschränkungen**. Mischlogikpausen ermöglicht es Ihnen, Regeln für das Verpacken von Zuteilungspositionen in Containern einzurichten. Wenn Sie beispielsweise das Feld **Artikelnummer** hinzufügen, wird beim Zuweisen von Artikeln zu Containern ein neuer Container erstellt, wenn es eine neue Artikelnummer gibt. Dies verhindert, dass Arbeitskräfte Zuteilungspositionen für zwei verschiedene Debitoren im gleichen Container verpacken.  
 9. Wählen Sie **Neu** aus.
 10. Wählen Sie im Feld **Tabelle** eine Option aus.
 11. Geben Sie im Feld **Feldauswahl** einen Wert ein, oder wählen Sie einen Wert aus.

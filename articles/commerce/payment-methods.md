@@ -3,7 +3,7 @@ title: Zahlungsmethoden
 description: Jeder Zahlungstyp, der von einem Einzelhändler akzeptiert wird, muss beim Einrichten des Systems konfiguriert werden. In diesem Artikel wird beschrieben, wie Sie die Zahlungstypen einrichten können und beschreibt den Prozess, um sie einzurichten.
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 06/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 6afbddad869c70e4527c49fc5d4b520d7602f825
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 710c2f3bbe5b76af6d0bc0bf9a469e52c98c18d2
+ms.sourcegitcommit: 550006e6376815237c21b5b30e928353f62fd97c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022707"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3463159"
 ---
 # <a name="payment-methods"></a>Zahlungsmethoden
 
@@ -39,7 +39,7 @@ Einzelhändler können für die von ihnen verkauften Produkte und angebotenen Di
 - **Währung** – Das primäre Zahlungsmittel, bei dem es sich nicht um die Standardwährung des Unternehmens handelt. Münzen und Papiergeld sind jeweils Formen von Währung. Die Währungszahlungsmethode stellt alle verwendeten Währungen dar. Bevor diese Zahlungsmethode verwendet werden kann, müssen Währungen eingerichtet und einzelhandelsbezogene Wechselkursinformationen für die Währungen angegeben werden.
 - **Karte** – Alle verwendeten Karten wie Debit- und Kreditkarten. Es ist eine gute Idee, auf Organisationsebene eine Kartenzahlungsmethode einzurichten, die jede Art von Karte darstellt. Auf Shopebene kann dann für jede Karte oder jeden Kartensatz, der mit den gleichen Einstellungen verarbeitet werden soll, eine Zahlungsmethode eingerichtet werden. Die auf dem Markt erhältlichen Herstellerkarten, z. B. Debitkarten und Kreditkarten, müssen eingerichtet werden, bevor die Karten in einem Shop als Zahlungsmittel akzeptiert werden können.
 - **Gutschrift** – Gutschriften, die am POS ausgestellt und eingelöst werden. Die Gutschrift kann ein Guthaben oder eine Retourengutschrift sein, die bei einer Retoure ausgestellt wird. Wenn Gutschriften nur teilweise eingelöst werden, wird vom Programm eine neue Gutschrift für den neuen Saldobetrag ausgestellt. Die neue Gutschrift hat eine neue Nummer. Eine Gutschrift kann nur einmal verwendet werden, und alle verwendeten Nummern werden erfasst. Der Datensatz kann auf der Seite **Gutschriftentabelle** angezeigt werden. Ein Debitor kann keinen Betrag einlösen, der den Wert der Gutschrift übersteigt.
-- **Geschenkkarte** – Geschenkkarten, die am Point-of-Sale ausgestellt und eingelöst werden. Überzahlungen sind für Geschenkkarten nicht zulässig.
+- **Geschenkkarte** – Geschenkkarten, die am Point-of-Sale ausgestellt und eingelöst werden. Überzahlungen sind für Geschenkkarten nicht zulässig. Alle Geschenkkarten sollten Kartennummernzuordnungen haben. 
 - **Debitorenkonto** – Ein Debitorenkonto kann zum Verkaufszeitpunkt am Register mit dem Zahlungsbetrag belastet werden. Sie können diese Zahlungsmethode auch verwenden, um Verkaufsinformationen oder debitorenspezifische Rabatte zu erfassen, wenn Debitoren eine Zahlung mit einer anderen Zahlungsmethode leisten. In diesem Fall müssen debitorenspezifische Informationen eingerichtet werden.
 - **Treuepunkte** – Die Punkte, die Debitoren für Treueprogramme kumulieren. Wenn Sie Treueprogramme erstellen, Punkte können Debitoren erhalten und sie auf verschiedene Weise dann einlösen. In einigen Treueprogrammen können Kunden Treuepunkte beispielsweise in Form eines Rabatts einlösen oder sogar sie als Zahlungsmethode verwenden.
 

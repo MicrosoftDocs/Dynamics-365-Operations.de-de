@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Plattformfunktionen
 description: Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and Operations-Anwendungen entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
 manager: AnnBe
-ms.date: 06/02/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6fc699907d30fff2d05e752ea055cae8d1134d9b
-ms.sourcegitcommit: 3eaa71c889545318737b3bc88b05eae1a47ad2c0
+ms.openlocfilehash: 1faee75c9112b3aa584ad021ffdc1144fcf4ba32
+ms.sourcegitcommit: 3485d7f36058151cb4fff5c425ef27f56e3ee7d6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "3433921"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "3457565"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -36,6 +36,22 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 > [!NOTE]
 > Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
 
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.13 von Finance and Operations Apps
+
+> [!NOTE]
+> Version 10.0.13 wurde noch nicht veröffentlicht. Diese Angaben dienen lediglich planerischen Zwecken. Inhalt und Funktionsweise unterliegen Änderungen für Version 10.0.13. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-ops/get-started/public-preview-releases.md).
+
+
+### <a name="upgrade-of-three-jquery-component-libraries"></a>Upgrade von drei jQuery-Komponentenbibliotheken 
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Drei jQuery-Komponentenbibliotheken werden aktualisiert, um Sicherheitsupdates und die Aktualisierung der Währung zu gewährleisten.   
+| **Ersetzt durch eine andere Funktion?**   | Die folgenden Bibliotheken sind betroffen: jQuery (auf Version 3.5.0 von Version 2.1.4), jQuery UI (auf Version 1.12.1 von Version 1.11.4), jQuery qTip (auf Version 3.0.3 von 2.2.1). Die Migrationsanleitung wurde online von jQuery bereitgestellt.  |
+| **Betroffene Produktbereiche**         | Erweiterbare Steuerelemente, insbesondere benutzerdefinierter JavaScript-Code, der veraltete oder entfernte APIs verwendet |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Mit der Version 10.0.13/Platform Update 37 können Kunden optional zu den neuesten Bibliotheken wechseln, indem sie die Funktion Drei jQuery-Komponentenbibliotheken aktualisieren aktivieren. Die Umstellung auf die neuen Bibliotheken ist mit der Version vom April 2021 obligatorisch, damit Zeit für die Migration betroffener APIs bleibt.   |
+
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.12 von Finance and Operations Apps
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Formularerweiterungen für Raster- oder Gruppensteuerelemente mit ungültigen Feldreferenzen
@@ -50,11 +66,11 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 
 ## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.11 von Finance and Operations Apps
 
-### <a name="explicit-whitelisting-for-self-service-environments"></a>Explizite Whitelist für Self-Service-Umgebungen
+### <a name="explicit-safe-lists-for-self-service-environments"></a>Explizite sichere Listen für Self-Service-Umgebungen
 
 |   |  |
 |------------|--------------------|
-| **Grund für veralteten Zustand/Entfernung** | Der Prozess für die IP-Whitelist hat sich geändert. Self-Service unterstützt keine IP-Whitelist mehr. |
+| **Grund für veralteten Zustand/Entfernung** | Der Prozess zum Verschieben von IP in sichere Listen hat sich geändert. Self-Service unterstützt keine IP-sichere Listen mehr. |
 | **Ersetzt durch eine andere Funktion?**   | Weitere Informationen finden Sie unter [Konfigurieren von Azure Active Directory Bedingter Zugriff](https://docs.microsoft.com/appcenter/general/configuring-aad-conditional-access).|
 | **Betroffene Produktbereiche**         | Sicherheit |
 | **Bereitstellungsoption**              | Cloud |

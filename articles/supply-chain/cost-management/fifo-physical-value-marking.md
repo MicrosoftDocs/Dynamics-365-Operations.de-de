@@ -3,7 +3,7 @@ title: FIFO mit physischem Wert und Markierung
 description: Bei FIFO (First in, First out) handelt es sich um eine Lagersteuerung, bei der die zuerst erworbenen Zugänge das Lager als Erstes wieder verlassen. Wertmäßig aktualisierte Abgänge aus dem Lager werden mit dem ältesten wertmäßig aktualisierten Zugang zu einem Lagerbestand ausgeglichen, der auf dem wertmäßigen Datum der Lagerbuchung basiert.
 author: AndersGirke
 manager: tfehr
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e237d1e9f9bb83d0fe65556eca07c8757f920664
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a66a1b977a4e36f9ad057683366c39a81ba1d833
+ms.sourcegitcommit: ac47e8679fb104515f7dcca509294264bd05d2b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201754"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "3454625"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO mit physischem Wert und Markierung
 
@@ -49,8 +49,8 @@ In diesem Beispiel ist die Artikelmodellgruppe so konfiguriert, dass der physisc
 -   4a. Physischer Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
 -   4b. Wertmäßiger Lagerzugang für die Menge "1" zu jeweils EUR 30,00 (Kosten).
 -   5a. Physischer Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 20,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
--   5b. Wertmäßiger Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 20,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
--   6. Lagerabschluss wird vorgenommen. Der erste wertmäßig aktualisierte Abgang wird auf Basis der FIFO-Methode gegen den ersten wertmäßig aktualisierten Zugang ausgeglichen. Für die Abgangsbuchung erfolgt eine Regulierung in Höhe von EUR –10,00.
+-   5b. Wertmäßiger Lagerabgang für die Menge "1" zu einem Einstandspreis von EUR 15,00 (laufender Durchschnitt wertmäßig aktualisierter Buchungen).
+-   6. Lagerabschluss wird vorgenommen. Der erste wertmäßig aktualisierte Abgang wird auf Basis der FIFO-Methode gegen den ersten wertmäßig aktualisierten Zugang ausgeglichen. Für die Abgangsbuchung erfolgt eine Regulierung in Höhe von EUR –5,00.
 
 In dem neuen laufenden Durchschnittseinstandspreis ist der Durchschnitt der wertmäßig aktualisierten Buchungen berücksichtigt. Die folgenden Abbildungen zeigen die Auswirkungen des Lagermodells FIFO auf diese Buchungsserie an, wenn die Option **Physischen Wert einbeziehen** nicht verwendet wird. 
 

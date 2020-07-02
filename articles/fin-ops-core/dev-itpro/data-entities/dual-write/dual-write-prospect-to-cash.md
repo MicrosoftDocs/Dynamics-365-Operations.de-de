@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 57aabeef0ee94b4b13bbe6e3925bcafe1e809ab2
-ms.sourcegitcommit: 984604fd651d74aa49a2d7513f096faaf49f9f27
+ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
+ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2020
-ms.locfileid: "3270287"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "3443894"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -67,7 +67,7 @@ Angebote können entweder im Vertrieb oder im Supply Chain Management erstellt w
 + Die Felder **Rabatt %**, **Rabatt** und **Frachtbetrag** im Angebotskopf sind schreibgeschützte Felder.
 + Die Felder **Frachtbedingungen**, **Lieferbedingungen**, **Versandmethode** und **Liefermodus** sind nicht Teil der Standardzuordnungen. Um diese Felder abzubilden, müssen Sie ein Werte-Mapping einrichten, das für die Daten in den Organisationen, zwischen denen die Entität synchronisiert wird, spezifisch ist.
 
-Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungsposition-Schnellerstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebote erstellen.
+Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanforderungspositions-Erstellungs**-Parameter erneut aktivieren. Durch erneutes Aktivieren des Parameters können Sie mit der Schnellerstellungsfunktion weiterhin Angebote erstellen.
 1. Navigieren Sie zu Ihrer Dynamics 365 Sales-Anwendung.
 2. Wählen Sie das Einstellungssymbol in der oberen Navigationsleiste.
 3. Wählen Sie **Erweiterte Einstellungen**.

@@ -3,7 +3,7 @@ title: Kundenportal für Dynamics 365 Supply Chain Management Überblick
 description: In diesem Thema wird das Kundenportal vorgestellt und erläutert, wer es verwenden soll und wie es funktioniert.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6b57365d8042c1d791ee2c50c5458a6595a58270
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 709ba18be9e2edd5d0a7f143aaed5ef94f365b91
+ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413965"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456925"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundenportal für Dynamics 365 Supply Chain Management Überblick
 
@@ -37,6 +37,12 @@ Die Kundenportalvorlage hat Anpassungsfunktionen, über die die Portale von Powe
 
 > [!NOTE]
 > Die Dokumentation zum Kundenportal richtet sich an Administratoren, Anpasser und Systemintegratoren, die das Kundenportal für eine Supply Chain Management-Installation einrichten. Es verwendet die Begriffe _Kunde_ und _Benutzer_, um Personen zu beschreiben, die Kunden der Organisation sind, die Supply Chain Management ausführt, und die das endgültige Portal selbst verwenden.
+
+## <a name="video"></a>-Video
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
+
+Das [Übersicht über die Debitorenportalvorlage in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) Video (siehe oben) ist enthalten in der [Finance and Operations Wiedergabeliste](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) verfügbar auf YouTube.
 
 ## <a name="who-should-use-it"></a>Wer sollte es benutzen?
 
@@ -58,6 +64,6 @@ Das Kundenportal wird als Power Apps Portal Vorlage bereitgestellt. Es hängt vo
 
 [Duales Schreiben](https://docs.microsoft.com/powerapps/maker/portals/overview) ist eine Out-of-Box-Infrastruktur, die eine nahezu Echtzeit-Interaktion zwischen modellgesteuerten Anwendungen in Dynamics 365 und Finance and Operations Anwendungen ermöglicht. Duales Schreiben bietet eine eng gekoppelte, bidirektionale Integration zwischen Finance and Operations Anwendungen und Common Data Service Anwendungen. Deshalb bietet dieser automatisierte Datenfluss eine integrierte Benutzererfahrung über die Anwendungen hinweg. Das Kundenportal hängt von Entitäten ab, die mit dualem Schreiben synchronisiert sind. Bevor Daten aus dem Supply Chain Management im Kundenportal angezeigt werden können, muss duales Schreiben für alle entsprechenden Entitäten aktiviert sein.
 
-![![Kundenportalabhängigkeiten](media/customer-portal-elements.png "Kundenportalabhängigkeiten")](media/customer-portal-elements.png "Customer portal dependencies")
+![Kundenportalabhängigkeiten](media/customer-portal-elements.png "Kundenportalabhängigkeiten")
 
 Das Kundenportal dient als Ausgangspunkt für Organisationen, die Power Apps Portal zum Erstellen einer nach außen gerichteten Website verwenden möchten, die Daten aus ihrer Supply Chain Management-Installation verwendet. Es hilft Unternehmen dabei, duales Schreibe, Supply Chain Management und Power Apps Portal zu organisieren.

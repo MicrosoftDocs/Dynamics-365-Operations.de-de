@@ -3,7 +3,7 @@ title: Produktsammelmodule
 description: Dieses Thema bietet eine Übersicht über Produktsammelmodule in Microsoft Dynamics 365 Commerce.
 author: v-chgri
 manager: annbe
-ms.date: 01/07/2020
+ms.date: 06/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 069fa1cb6acad4b8d6618cebb754cbc0892ca9cf
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 698bdd22cffad26bc9126fca5649f091fbeef4dd
+ms.sourcegitcommit: 49656661c89c864e8e067259a601c3bbceb8bef4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025947"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "3464952"
 ---
 # <a name="product-collection-modules"></a>Produktsammelmodule
 
@@ -72,16 +72,17 @@ In der folgenden Tabelle werden verschiedene Arten von Produktsammelmodulen in D
 
 Befolgen Sie diese Schritte, um ein Produktsammelmodul zu einer Kategorieseite hinzuzufügen.
 
-1. Navigieren Sie in Dynamics 365 Commerce zu Ihrer Website und erstellen Sie eine Seite, die dieselben Vorlagen wie Ihre Standardkategorieseite verwendet.
-1. Wählen Sie im Seitenüberblick den Slot **Unterfußzeile**, dann die Ellipsen-Schaltfläche (**...**) und anschließend **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** **Container** und dann **OK** aus.
-1. Wählen Sie im Containermodul die Ellipsen-Schaltfläche und dann **Modul hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** **Produktsammlung** und dann **OK** aus.  
-1. Konfigurieren Sie die Einstellungen, indem Sie eine geeignete Datenquelle und Eingaben für die Produktsammlung auswählen.
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die gleiche Vorlage, wie jene, die von Ihrer Standardkategorieseite verwendet wird. Unter **Seitenname** geben Sie einen entsprechenden Namen ein und wählen dann **OK**.
+1. Wählen Sie im Slot **Unterfußzeile** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Im Dialogfeld **Modul hinzufügen** wählen Sie das **Produktsammlungsmodul** und wählen Sie dann **OK**.  
 1. Wählen Sie im Eigenschaftenbereich für das Produktsammelmodul **Produktliste hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Produktlistenkonfiguration auswählen** den Typ der Liste aus, geben Sie die Anzahl der Artikel ein und wählen Sie andere Optionen aus, die für den Listentyp verfügbar sind. Weitere Informationen zu Listentypen finden Sie in der folgenden Tabelle. 
+1. Wählen Sie im Dialogfeld **Produktlistenkonfiguration auswählen** den Typ der Liste, den Listenursprung aus und geben Sie die Anzahl der Artikel ein. Konfigurieren Sie alle anderen Optionen, die für den Listentyp verfügbar sind. Weitere Informationen zu Listentypen finden Sie in der folgenden Tabelle. 
 1. Wählen Sie **OK**.
-1. Speichern Sie die Seite und laden Sie es hoch.
+1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
 
 In der folgenden Tabelle sind die Listentypen aufgeführt, die im Dialogfeld **Produktlistenkonfiguration auswählen** verfügbar sind.
 

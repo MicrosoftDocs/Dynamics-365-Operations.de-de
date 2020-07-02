@@ -19,17 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: fc719348f94ff4a1fb7b4ac96f6f617872c9af92
-ms.sourcegitcommit: 437170338c49b61bba58f822f8494095ea1308c2
+ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "3123945"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456572"
 ---
-# <a name="reset-receipt-numbers"></a>Zurücksetzen der Belegnummern 
+# <a name="reset-receipt-numbers"></a>Bonnummern zurücksetzen 
 
 [!include [banner](includes/banner.md)]
 
+> [!NOTE]
+> Wir verlangen, dass Sie die Eigenmschaft **Unabhängige Reihenfolge** für alle Belegarten im Funktionsprofil auswählen, bevor diese Funktion verwendet wird. Außerdem sollte die Systemzeitzone des Geräts, in dem der POS verwendet wird, mit der entsprechenden Speicherzeitzone übereinstimmen. Wir arbeiten daran, diese Einschränkungen in einer zukünftigen Version zu beseitigen. Wenden Sie sich an den Microsoft-Support, bevor Sie diese Funktion in der Produktion verwenden.
 
 Einzelhändler generieren Belegnummern für verschiedene Vorgänge in der Filiale, wie Cash-and-carry-Transaktionen, Rücklieferungstransaktionen, Kundenaufträge, Angebote und Zahlungen. Obwohl Einzelhändler ihre eigenen Belegformate definieren, gelten in einigen Ländern oder Regionen Bestimmungen, die diese Belegformate einschränken. Diese Bestimmungen können beispielsweise die Anzahl der Zeichen auf dem Beleg begrenzen, fortlaufende Belegnummern erfordern, einige Sonderzeichen einschränken oder ein Zurücksetzen der Belegnummern zu Beginn des Jahres erfordern. Microsoft Dynamics 365 Commerce ermöglicht eine flexible Verwaltung von Belegnummern, um Einzelhändlern zu helfen, behördliche Anforderungen zu erfüllen. In diesem Thema wird erläutert, wie Sie die Funktion zum Zurücksetzen von Belegnummern verwenden.
 

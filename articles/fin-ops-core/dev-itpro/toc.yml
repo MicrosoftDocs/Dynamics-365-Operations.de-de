@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-update-35.md
                 - name: "Plattformupdates zu 10.0.10 (Mai\_2020)"
                   href: get-started/whats-new-platform-update-34.md
-                - name: "Plattformupdate\_33 (April\_2020)"
-                  href: get-started/whats-new-platform-update-33.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Plattformfunktionen
@@ -150,6 +148,8 @@
                                   href: data-entities/dual-write/link-your-environment.md
                                 - name: Entitätszuordnung für duales Schreiben aktivieren
                                   href: data-entities/dual-write/enable-entity-map.md
+                            - name: Migration von Daten des Typs „Währung“ beim dualen Schreiben
+                              href: data-entities/dual-write/currrency-decimal-places.md
                         - name: Verwalten von dualem Schreiben
                           items:
                             - name: Entitäts- und Feldzuordnungen anpassen
@@ -364,6 +364,8 @@
           items:
             - name: Vorschau von Azure Data Lake
               href: data-entities/azure-data-lake-overview.md
+            - name: Export in Azure Data Lake konfigurieren
+              href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-Apps in Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitätsspeicher als Data Lake zur Verfügung stellen
@@ -498,6 +500,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokale Diagnosen
                       href: deployment/on-premises-diagnostics.md
+                    - name: Konfiguration für lokale Notfallwiederherstellung
+                      href: deployment/onprem-dr.md
                     - name: PowerBI.com-Integration mit lokalen Umgebungen
                       href: analytics/entity-store-on-prem.md
                     - name: Umgebungen erneut konfigurieren
@@ -652,11 +656,11 @@
                   href: dev-tools/debug-xpp.md
                 - name: EventHandlerResult-Klassen in Anforderungs- oder Antwortszenarien
                   href: dev-tools/event-handler-result-class.md
-                - name: 'Mithilfe von Quellcode in C# und X++ Geschäftslogik schreiben'
+                - name: Mithilfe von Quellcode in C# und X++ Geschäftslogik schreiben
                   href: dev-tools/write-business-logic.md
                 - name: Änderungen in X++ und im X++-Compiler
                   href: dev-tools/programming-language-support.md
-                - name: 'LINQ-Anbieter für C#'
+                - name: LINQ-Anbieter für C#
                   href: dev-tools/linq-provider-c.md
                 - name: Schreiben von Regeln für bewährte Methoden
                   href: dev-tools/author-best-practice-rules.md
@@ -716,7 +720,7 @@
                       href: dev-ref/xpp-macros.md
                     - name: X++-Attributklassen
                       href: dev-ref/xpp-attribute-classes.md
-                    - name: 'X++ und C# im Vergleich'
+                    - name: X++ und C# im Vergleich
                       href: dev-ref/xpp-cs-comparison.md
                     - name: Syntax für X++
                       href: dev-ref/xpp-syntax.md
@@ -1428,7 +1432,7 @@
               href: sysadmin/maintenance-mode.md
             - name: Vorkonfigurierte Systemkonten
               href: sysadmin/pre-configured-system-accounts.md
-            - name: B2B-Benutzer nach Azure AD exportieren
+            - name: B2B-Benutzer in Azure AD exportieren
               href: sysadmin/implement-b2b.md
             - name: Sicherheit
               items:
@@ -1436,11 +1440,13 @@
                   href: sysadmin/role-based-security.md
                 - name: Sicherheitsarchitektur
                   href: sysadmin/security-architecture.md
-                - name: Sitzungsleerlauftimeout festlegen
+                - name: Verschlüsselung in Finance and Operations-Apps
+                  href: sysadmin/encryption.md
+                - name: Leerlaufzeitüberschreitung für Sitzungen festlegen
                   href: sysadmin/session-idle-timeout.md
                 - name: Vordefinierte Sicherheitsberichte
                   href: sysadmin/security-reports.md
-                - name: Erstellen neuer Benutzer
+                - name: Neue Benutzer erstellen
                   href: sysadmin/tasks/create-new-users.md
                 - name: Massenimport von Benutzern
                   href: sysadmin/tasks/import-bulk-users.md

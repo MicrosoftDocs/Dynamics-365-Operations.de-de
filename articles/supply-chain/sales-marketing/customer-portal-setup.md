@@ -3,7 +3,7 @@ title: Installieren, einrichten und aktualisieren Sie das Kundenportal
 description: Dieses Thema enthält Lizenzdetails und Installationsanweisungen für das Kundenportal.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b9d1e742f78254d949dc49fda008d63b8bff4d65
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: 0343100362c4d7bc3e09334fb7890919bdb84941
+ms.sourcegitcommit: 7d943499f302298c6ff127f56cecc34af6cee289
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413966"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "3435607"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installieren, einrichten und aktualisieren Sie das Kundenportal
 
@@ -35,7 +35,7 @@ Um das Kundenportal zu implementieren, müssen Sie über folgende Lizenzen verf�
 
 Das Kundenportal ist abhängig von Power Apps Portalen und dualem Schreiben, wie in der folgenden Abbildung gezeigt.
 
-![![Kundenportalabhängigkeiten](media/customer-portal-elements.png "Kundenportalabhängigkeiten")](media/customer-portal-elements.png "Customer portal dependencies")
+![Kundenportalabhängigkeiten](media/customer-portal-elements.png "Kundenportalabhängigkeiten")
 
 Im Gegensatz zu anderen Funktionen von Supply Chain Management befindet sich die Kundenportalvorlage in Power Apps Portalen. Daher ist das Kundenportal durch die bereitgestellten Funktionen und Fähigkeiten eingeschränkt, die von Power Apps Portalen und die Entitäten in dualem Schreiben bereitgestellt werden.
 
@@ -59,7 +59,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die [erforderliche Einrichtung]
 
 1. Gehen Sie zu [make.powerapps.com](https://make.powerapps.com/).
 2. Stellen Sie sicher, dass Sie die Umgebung verwenden, in der Sie duales Schreiben aktiviert haben.
-3. Auf der Registerkarte **Erstellen** scrollen Sie nach unten zum Abschnitt **Beginnen Sie mit der Vorlage** und wählen Sie die Vorlage aus, die benannt ist **Supply Chain Management Kunde**.
+3. Auf der Registerkarte **Erstellen** scrollen Sie nach unten zum Abschnitt **Beginnen Sie mit der Vorlage** und wählen Sie die Vorlage aus, die benannt ist **Debitorenportal**.
 4. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
 Nach Abschluss der Bereitstellung können Sie auf das Kundenportal im Internet zugreifen im Abschnitt **Ihre Apps** auf der Seite **Startseite**.
@@ -71,7 +71,7 @@ Nach Abschluss der Bereitstellung können Sie auf das Kundenportal im Internet z
 
 Weitere Funktionen werden möglicherweise später zum Kundenportal hinzugefügt. Alle Änderungen, die Microsoft an den zugrunde liegenden Lösungskomponenten vornimmt, werden automatisch in Ihrer Umgebung angezeigt. Die in Ihrer Umgebung bereitgestellte Website spiegelt jedoch nicht automatisch Änderungen wider, die an den Konfigurationsdaten vorgenommen wurden. Sie müssen diese Änderungen manuell anwenden, indem Sie den Code aus der neuen Vorlage abrufen und mit der bereitgestellten Website zusammenführen.
 
-## <a name="resources"></a>Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Um zu erfahren, wie Sie das Kundenportal einrichten und anpassen können, lesen Sie zunächst die folgende Dokumentation zu den zugrunde liegenden Technologien:
 
