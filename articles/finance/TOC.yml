@@ -126,7 +126,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
                 - name: Lösungsarchitekten
                   href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
-            - name: Die Benutzeroberfläche erkunden
+            - name: Benutzeroberfläche kennenlernen
               items:
                 - name: Benutzeroberflächenelemente
                   href: ../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/finance/toc.json
@@ -1820,6 +1820,32 @@
                   items:
                     - name: Indien GST – Übersicht
                       href: localizations/apac-ind-gst.md
+                    - name: Neuerungen oder Änderungen bei der Lokalisierung von APAC-Indien-GST
+                      items:
+                        - name: Neuerungen oder Änderungen in 10.0.0
+                          href: localizations/apac-ind-news-letter-10-0-00.md
+                        - name: Neuerungen oder Änderungen in 10.0.01
+                          href: localizations/apac-ind-news-letter-10-0-01.md
+                        - name: Neuerungen oder Änderungen in 10.0.02
+                          href: localizations/apac-ind-news-letter-10-0-02.md
+                        - name: Neuerungen oder Änderungen in 10.0.03
+                          href: localizations/apac-ind-news-letter-10-0-03.md
+                        - name: Neuerungen oder Änderungen in 10.0.04
+                          href: localizations/apac-ind-news-letter-10-0-04.md
+                        - name: Neuerungen oder Änderungen in 10.0.05
+                          href: localizations/apac-ind-news-letter-10-0-05.md
+                        - name: Neuerungen oder Änderungen in 10.0.06
+                          href: localizations/apac-ind-news-letter-10-0-06.md
+                        - name: Neuerungen oder Änderungen in 10.0.07
+                          href: localizations/apac-ind-news-letter-10-0-07.md
+                        - name: Neuerungen oder Änderungen in 10.0.08
+                          href: localizations/apac-ind-news-letter-10-0-08.md
+                        - name: Neuerungen oder Änderungen in 10.0.09
+                          href: localizations/apac-ind-news-letter-10-0-09.md
+                        - name: Neuerungen oder Änderungen in 10.0.10
+                          href: localizations/apac-ind-news-letter-10-0-10.md
+                        - name: Neuerungen oder Änderungen in 10.0.11
+                          href: localizations/apac-ind-news-letter-10-0-11.md
                     - name: Indien GST-Referenzgruppen
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-Integration für Kassen
@@ -2346,7 +2372,9 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Umsatzsaldenbericht
                   href: localizations/emea-pol-turnover-balances-statement.md
-            - name: Russische Föderation
+                - name: Geteilte Kreditoren/Debitoren-Wechselkursdifferenz
+                  href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+            - name: Russland
               items:
                 - name: Russland – Übersicht
                   href: localizations/russia.md
@@ -2358,7 +2386,7 @@
                       href: localizations/rus-ledger-transactions-preview.md
                     - name: Einrichten von Wechselkursen für Währungsbuchungen
                       href: localizations/rus-exchange-difference.md
-                    - name: Währungswechselkurse der Zentralbank der russischen Föderation (CBRF) importieren
+                    - name: Währungswechselkurse der Zentralbank Russlands (CBRF) importieren
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Sachkontoübersetzung
                       href: localizations/rus-ledger-translation-procedure.md
@@ -3266,7 +3294,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: ER-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
+            - name: EB-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
               items:
                 - name: Konfigurationen zur Generierung ausgehender Dokumente im Excel-Format entwerfen
                   items:
@@ -3328,7 +3356,7 @@
                   items:
                     - name: Import von Dateien im XML-Format mit optionalen Attributen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
-                    - name: ER-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
+                    - name: EB-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurationslebenszyklus
               items:
@@ -3408,28 +3436,32 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Formate zur Verwendung von Dokumentenverwaltungsdateien ändern und ausführen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                        - name: Datenquellen debuggen
-                          href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Datenquellen debuggen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=dynamics365/finance/toc.json
+                    - name: Mit STRICHCODE Strichcodebilder erzeugen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Modellzuordnungen konfigurieren
                   items:
-                    - name: Länderkontext auf Basis der ER-Modellzuordnungen konfigurieren
+                    - name: Auf Länderkontext beruhende EB-Modellzuordnungen konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-                    - name: ER-Modellzuordnungen in separaten EB-Konfigurationen verwalten
+                    - name: EB-Modellzuordnungen in separaten EB-Konfigurationen verwalten
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurieren von Formaten
+                - name: Formate konfigurieren
                   items:
-                    - name: 'ER-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
+                    - name: Modelldefinitionen beim Erstellen von Formaten auswählen
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
+                    - name: 'EB-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
                     - name: Parameter eines EB-Formats pro juristischer Person einrichten
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Modelldefinitionen beim Erstellen von Formaten auswählen
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: Ausführung von ER-Formatelementen verzögern
+                    - name: Ausführung von EB-Formatelementen verzögern
                       items:
                         - name: Ausführung eines Sequenzelements verzögern
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
                         - name: Ausführung eines XML-Elements verzögern
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
+                    - name: Mehrsprachige Berichte entwerfen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Relativer Pfad in Datenbindungen
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Elektronische Berichtslösungen in Finance and Operations verwenden
@@ -3482,7 +3514,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Generieren druckbarer Freitextrechnungs-Formulare (FTI)
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
+                - name: Überwachen der Ausführung von EB-Formaten zur Behebung von Leistungsproblemen
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:
@@ -3546,7 +3578,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Öffnen von Entitätsdaten in Excel und Aktualisieren mithilfe des Excel-Add-Ins
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: „In Excel öffnen“-Erfahrungen verschaffen
+            - name: Möglichkeit „In Excel öffnen“ schaffen
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Vorlagen zum Menü „Positionen in Excel öffnen” hinzufügen
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
