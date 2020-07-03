@@ -1,9 +1,9 @@
 ---
 title: Überblick über die Funktionsverwaltung
 description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
-author: mikefalkner
+author: ChrisGarty
 manager: AnnBe
-ms.date: 09/12/2019
+ms.date: 06/12/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,17 +13,17 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.search.scope: Operations, Core
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: cgarty
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a9be51c4a5cdadd968de160dc0b1406c95382eeb
-ms.sourcegitcommit: 260a820038c29f712e8f1483cca9315b6dd3df55
+ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
+ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "2778704"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "3456596"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -144,3 +144,34 @@ Mit der Funktionsverwaltung können Sie die Funktionen steuern, die in jeder Ver
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Verwenden der Funktionsverwaltung zum Aktivieren von ISV-Funktionen oder benutzerdefinierten Funktionen
 
 Funktionsverwaltung ist derzeit für Funktionen von unabhängigen Softwareherstellern (ISVs) und benutzerdefinierten Funktionen nicht verfügbar. Microsoft fügt aber mehr Funktionen hinzu, um die Funktionsverwaltung zu verbessern. Nachdem diese Erweiterungen abgeschlossen sind, ist die Microsoft Funktionsverwaltung für alle Funktionen verfügbar und stellt Anweisungen zum Aktualisieren Ihrer Funktionen zur Verwendung bereit.
+
+## <a name="frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ)
+
+### <a name="when-are-features-added-removed-or-changed"></a>Wann werden Funktionen hinzugefügt, gelöscht oder geändert? 
+Funktionen werden durch Codeänderungen hinzugefügt, entfernt und geändert. Umgebungen müssen aktualisiert werden, um diese Änderungen zu erhalten.
+
+### <a name="does-a-feature-become-mandatory-automatically"></a>Wird eine Funktion automatisch obligatorisch? 
+Nein, eine Funktion, die obligatorisch wird, ist keine automatische Aktion. Die Produktteams müssen eine Codeänderung vornehmen.
+
+### <a name="when-do-features-become-mandatory"></a>Wann werden Funktionen obligatorisch? 
+Die Richtlinie lautet, dass alle neuen Funktionen für einen Zeitraum von 12 Monaten aktiviert werden und keine Änderungsverwaltung erforderlich ist, bis Sie die Funktion aktivieren. Die Produktteams können wählen, ob eine Funktion nach Ablauf dieses Zeitraums obligatorisch sein soll. 
+
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Warum gibt es kein bestimmtes obligatorisches Aktivierungsdatum? 
+Das Aktualisierungs-Release-Timing ist variabel, das Umgebungs-Update-Timing ist variabel und Kunden können einige Updates überspringen. Infolgedessen sind bestimmte Daten schwer zu bestimmen. 
+
+### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Wo ist die Dokumentation für Funktionen, die obligatorisch gemacht werden? 
+Diese Dokumentation stammt von den Anwendungsteams. Oft werden diese in [Entfernte oder veraltete Funktionen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/deprecated-features) erwähnt. 
+
+### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Gibt es eine produktinterne Benachrichtigung oder ein Signal, dass eine Funktion obligatorisch aktiviert werden muss? 
+Ein Benachrichtigungsmechanismus, der sich darauf bezieht, dass eine Funktion obligatorisch ist, gibt es heute nicht.
+
+### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Werden Funktionen jemals aktiviert, ohne dass der Kunde davon erfährt? 
+Ja, wenn Funktionen keine funktionalen Auswirkungen haben, können sie standardmäßig aktiviert werden.
+
+### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Was ist Funktionen-Flighting und in welcher Beziehung steht es zur Funktlionsverwaltung? 
+Funktionen-Flights sind Echtzeit-Ein/Aus-Schalter, die Microsoft steuert. Sie sind von der Kundenkontrolle durch die Funktionsverwaltung getrennt. 
+- Private Vorschau-Funktionen werden erst dann in der Funktionsverwaltung aufgeführt, wenn sie weitergeleitet werden. In der Produktion muss der Kunde zustimmen, Teil eines speziellen Programms zu sein, damit dies geschieht.
+- Öffentliche Vorschau und freigegebene (allgemein verfügbare) Funktionen werden in der Funktionsverwaltung aufgeführt, sofern sie nicht abgeschaltet werden. Das Ausschalten einer Funktion wird als letzte Möglichkeit für Produktteams angesehen, wenn ein kritisches Problem festgestellt wird, und ist normalerweise eine Operation pro Kunde.
+
+### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Werden Funktionen jemals ausgeschaltet, ohne dass der Kunde davon erfährt? 
+Ja, wenn eine Funktion die Funktionsweise einer Umgebung beeinträchtigt, die keine funktionalen Auswirkungen hat, können sie standardmäßig aktiviert werden.

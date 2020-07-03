@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2d3dde69b102ce161e5c1f1dd393ffceca608bcb
-ms.sourcegitcommit: 4fdee254649a751d46632fb4d0d48698e112fa72
+ms.openlocfilehash: 0c2babc3144cae5c68075bd853a2587505263776
+ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "3248735"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3410149"
 ---
-# <a name="use-the-regression-suite-automation-tool-tutorial"></a>Das Regression Suite Automation Tool-Tutorial anweden
+# <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-Tutorial
 
 [!include [banner](../includes/banner.md)]
 
@@ -97,7 +97,7 @@ Diese Funktion nimmt Screenshots der Schritte auf, die während der Aufgabenaufz
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Wenn Sie den Testfall ausführen, generiert RSAT Snapshots (Bilder) der Schritte im Wiedergabeordner der Testfälle im Arbeitsverzeichnis. Wenn Sie eine ältere Version von RSAT verwenden, werden die Bilder in **C:\\Benutzer\\\<Benutzername\>\\Anwendungsdaten\\Roaming\\RegressionTool\\Wiedergabe** gespeichert und für jeden Testfall, der ausgeführt wird, wird ein separater Ordner erstellt.
+Wenn Sie den Testfall ausführen, generiert RSAT Snapshots (Bilder) der Schritte im Wiedergabeordner der Testfälle im Arbeitsverzeichnis. Wenn Sie eine ältere Version von RSAT verwenden, werden die Bilder in **C\\Benutzer\\\<Username\>\\AppData\\Roaming\\regressionTool\\Playback** gespeichert und für jeden Testfall, der ausgeführt wird, wird ein separater Ordner erstellt.
 
 ## <a name="assignment"></a>Zuweisung
 
@@ -454,7 +454,7 @@ Sie haben ein Testskript, das einen neuen Debitor erstellt. Über Skripterstellu
 - Name des Debitors
 - Adresse des Debitors
 
-Die Debitorenkennung hat das Format *ATCUS\<Nummer\>*, wobei \<Nummer\> ein Wert zwischen **000000001** und **999999999** ist.
+Die Debitorenkennung hat das Format *ATCUS\<number\>*, wobei \<number\> ein Wert zwischen **000000001** und **999999999** ist.
 
 Das folgende Beispiel verwendet den Parameter **Start**, um die erste Nummer zu definieren, die verwendet wird. Es wird ein zweiter Parameter **nr** verwendet, um die Anzahl der Debitoren zu definieren, die erstellt werden müssen. Für jede Iteration werden die Parameter in der Excel-Parameterdatei geändert, indem eine UpdateCustomer-Funktion verwendet wird. Danach wird die RSAT-Befehlszeile in einer RunTestCase-Funktion aufgerufen.
 

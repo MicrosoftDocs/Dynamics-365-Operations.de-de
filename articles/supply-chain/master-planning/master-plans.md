@@ -3,7 +3,7 @@ title: Übersicht Masterpläne
 description: Zur Unterstützung der täglichen Arbeitsabläufe Ihres Unternehmens, zum Simulieren unterschiedlicher Planungsstrategien, die überwacht werden sollen, und zum Implementieren einer Unternehmensrichtlinie, z. B. eine Richtlinie für die interne Leistung oder die Kundenzufriedenheit, können Sie verschiedene Produktprogrammpläne einrichten und verwenden.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56c9c3f910c5c5386cdab25566b43198288eb419
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f5b37347cf2d5b720ed7ac364800fb8cfe2d67ca
+ms.sourcegitcommit: ace6451fde3e4b20cbcaa6279fa1da4d7151ad1e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213537"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "3409521"
 ---
 # <a name="master-plans-overview"></a>Übersicht Masterpläne
 
@@ -35,7 +35,7 @@ Zur Unterstützung der täglichen Arbeitsabläufe Ihres Unternehmens, zum Simuli
 Sie können Produktprogrammpläne auf der Seite **Produktprogrammpläne** konfigurieren.
 
 Es gibt zwei Arten von Plänen:
--   **Statischer Produktprogrammplan** – Bei der Kalkulation im Produktprogrammplanungslauf werden die aktuellen Daten zum Generieren von Bedarfsverlaufsplänen verwendet. Dieser Plan bleibt bis zur nächsten Ausführung eines Produktprogrammplanungslaufs unverändert. Es handelt sich um einen Betriebsablaufplan, den verschiedene Mitarbeiter wie Einkäufer oder Produktionsplaner verwenden können, um informierte Entscheidungen zu treffen und um ihre täglichen Aufgaben und Aktivitäten auszuführen.
+-   **Statischer Produktprogrammplan** – Bei der Kalkulation im Produktprogrammplanungslauf werden die aktuellen Daten zum Generieren von Bedarfsverlaufsplänen verwendet. Dieser Plan bleibt bis zur nächsten Ausführung eines Produktprogrammplanungslaufs oder einer manuelle Planänderung unverändert. Dies ist ein Betriebsablaufplan, den verschiedene Mitarbeiter wie (Einkäufer oder Produktionsplaner) verwenden können, um informierte Entscheidungen zu treffen und um ihre täglichen Aufgaben und Aktivitäten auszuführen.
 -   **Dynamischer Produktprogrammplan** – Dieser Plan setzt auf dem gleichen Bedarfsverlaufsplan auf, der im Produktprogrammplanungslauf generiert wurde. Der dynamische Plan kann allerdings jederzeit aktualisiert werden, wenn sich die Stammdaten ändern. Dieser Fall könnte z. B. eintreten, wenn ein neuer Auftrag erstellt wird. Hiermit sind Sie in der Lage, das sich ändernde Auftragsnetzwerk und die Artikelverfügbarkeit zu überwachen, ohne den statischen Plan zu stören, den andere Personen für ihre Arbeitsprozesse benötigen.
 
 Ein Unternehmen kann nur mit einem dynamischen Produktprogrammplan oder mit statischen und dynamischen Plänen arbeiten. Darüber hinaus kann jeder Produktprogrammplan so konfiguriert werden, dass er eine bestimmte Strategie oder ein Problem berücksichtigt. Beispiele:

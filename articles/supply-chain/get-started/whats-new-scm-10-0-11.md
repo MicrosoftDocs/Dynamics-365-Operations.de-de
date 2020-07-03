@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0b71a76b348941f5a010e2f3e4bbb2fa60d37101
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: e396d2f2731d3600ee9e83e419d1038571e7bd85
+ms.sourcegitcommit: b0e4fa3fb43cf05fce4c833da73012cb01450125
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346352"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3413029"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Neuerungen und Änderungen in Dynamics 365 Supply Chain Management 10.0.11 (Juli 2020)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365 Supply Chain Management  Vorschaufersion 10.0.11 entweder neu oder geändert sind. Diese Version hat die Build-Nummer 10.0.464 und ist wie folgt verfügbar:
 
@@ -41,10 +40,10 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 
 - [Speicher für den Bericht zum verfügbaren Lagerbestand](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 - [Verbesserungen beim Empfang von Kennzeichen für die Lagerhaltungs-App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app) – Weitere Informationen finden Sie unter [Kennzeichenempfang über die Lagerhaltungs-App](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
-- [Verbesserungen der Leitungsreservierung für das Chargennummernreservierungsformular](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) – Weitere Informationen finden Sie unter [Reservieren Sie dieselbe Charge für einen Kundenauftrag](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Verbesserungen der Leitungsreservierung für das Chargennummernreservierungsformular](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form) - Weitere Informationen finden Sie unter [Reservieren Sie dieselbe Charge für einen Kundenauftrag](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Neue Datenentitäten für den Fertigungsbereich](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 - [Mehrladung der Lademengen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement) – Weitere Informationen finden Sie unter [Lagerabwicklung eingehender Ladungen für Bestellungen](../warehousing/inbound-load-handling.md).
-- [Melden Sie die Chargennummern vom Jobkartengerät als fertig](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)
+- [Melden Sie die Chargennummern vom Jobkartengerät als fertig](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device) - Weitere Informationen finden Sie unter [Vom Jobkartengerät als erledigt melden](../production-control/report-finished-job-device.md)
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

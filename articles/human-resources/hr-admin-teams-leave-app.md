@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: FeatureManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 423ec36a73e8af9d915c5cfe16bd4d552448e2b6
-ms.sourcegitcommit: d1541831d556b722a71aed442043ffb4a4576d87
+ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "3388115"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431129"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
@@ -45,6 +45,7 @@ Informationen zum Verwalten von App-Berechtigungen in Teams finden Sie unter [Ap
 
 | Abgang | Status |
 | --- | --- |
+| Fehler: Es gibt ein Problem beim Finden einer Umgebung, zu der eine Verbindung hergestellt werden kann. | Möglicherweise wird dieser Fehler auch dann angezeigt, wenn Sie überprüft haben, dass der Benutzer auf eine oder mehrere Personalumgebungen zugreifen kann. Außerdem werden möglicherweise nicht alle von Ihnen erwarteten Umgebungen angezeigt. Löschen Sie den Benutzer und importieren Sie ihn erneut, um das Problem zu beheben. |
 | Der Saldo ist falsch, wenn arbeitsfreie Zeit für ein zukünftiges Datum eingereicht wird. | Es ist noch keine Planungsfunktion verfügbar. Der Saldo wird für das aktuelle Datum angezeigt. |
 | Wenn die Anzahl der in einem vorhandenen Antrag genommenen Urlaubsstunden reduziert wird, nimmt der **verbleibende Saldo** ab anstatt zu. | Wir werden dieses bekannte Problem in Zukunft angehen. Die Anzeige ist falsch, die korrekten Beträge werden bei der Übermittlung jedoch angepasst. |
 | Zwei Karten für **bevorstehende arbeitsfreie Zeit** werden für die dieselben Datumsangaben angezeigt. | Die Karten stellen einzelne Übermittlungen dar. Wir werden weiterhin Feedback entgegennehmen und Anpassungen vornehmen. |

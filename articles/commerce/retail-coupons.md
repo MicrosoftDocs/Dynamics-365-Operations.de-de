@@ -3,7 +3,7 @@ title: Einrichten von Coupons für Einzelhandelsverkäufe
 description: Dieses Thema gibt einen Überblick über die Coupons und erklärt, wie sie eingerichtet werden.
 author: scott-tucker
 manager: AnnBe
-ms.date: 05/22/2017
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4c580e40ae1f0398ab9f8437d42ddcb2979558c3
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 97206552616b248f88e516fea08b3f059257e8d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057370"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3431977"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Einrichten von Coupons für Einzelhandelsverkäufe
 
@@ -48,8 +48,10 @@ Coupons können als Coupons mit begrenzter Nutzung konfiguriert werden. Das Verw
 
 Die Grenze wird pro Couponcode auf einem Coupon erzwungen. So kann ein Einwegcoupon, der zwei Couponcodes hat, zweimal verwendet werden: einmal für jeden Couponcode. Jeder Code auf einem Coupon kann unabhängig auf Aktiv festgelegt werden.
 
+Die Gutscheine können über jeden Vertriebskanal hinweg verwendet werden. Bei Call-Center-Bestellungen können die Gutscheine mit eingeschränkter Verwendung jedoch nur für Call-Center-Bestellungen verwendet werden, bei denen die **Auftragsabschluss** Einstellung im Call Center ist aktiviert. Wenn dies nicht aktiviert ist, können in Call-Center-Bestellungen nur Gutscheine vom Typ Nicht beschränkt verwendet werden.
+
 > [!NOTE]
-> Wenn ein Couponcode die Nutzungsgrenze erreicht hat, führt das System *nicht* automatisch den Status des Couponcodes auf "verwendet" aus. Das System erlaubt aber keine weitere Verwendung eines Couponcodes, der seine Nutzungsgrenze erreicht hat. Wenn der Status eines Couponcodes manuell auf einen Status anders als "Aktiv" festgelegt wird, dann kann dieser Couponcode nicht in einem beliebigen Kanal verwendet werden.
+> Nachdem ein Couponcode die Nutzungsgrenze erreicht hat, führt das System *nicht* automatisch den Status des Couponcodes auf verwendet aus. Dieser Gutscheincode hat jedoch sein Nutzungslimit erreicht und kann nicht verwendet werden. Wenn der Status eines Couponcodes manuell auf einen Status anders als **Aktiv** festgelegt wird, dann kann dieser Couponcode nicht in einem beliebigen Kanal verwendet werden.  
 
 ## <a name="managing-coupons"></a>Verwalten von Coupons
 

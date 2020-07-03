@@ -3,7 +3,7 @@ title: 'ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Bericht
 description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Rolle Systemadministrator oder Entwickler für elektronische Berichterstellung ein ER-Modell zur Nutzung von Finanzdimensionen als Datenquelle für ER-Berichte nutzen kann.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bbbc81eaf8c13e8d13e30a0276e38453e07ead9
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: cef61787e50561eaac4fd52741ab5f90d9c4171d
+ms.sourcegitcommit: d9125c20b21459076e4fd92fd9ebfe2e53a0431b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142523"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "3406496"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER – Verwendung von Finanzdimensionen als Datenquelle (Teil 3: Berichtsentwurf)
 
@@ -95,6 +95,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 59. Klicken Sie auf "Attribut hinzufügen".
 60. Geben Sie im Feld Name "Desc" ein.
 61. Klicken Sie auf "OK".
+![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Zuweisen von Berichtselementen zu Datenquellen
 1. Klicken Sie auf die Registerkarte Zuordnung.
@@ -141,6 +142,7 @@ Um diese Schritte auszuführen, müssen Sie erst die Schritte im Verfahren „ER
 42. Wählen Sie in der Strukturdarstellung "Root: XML Element\Unternehmen: XML-Attribut".
 43. In der Struktur wählen Sie 'Modell: Datenmodell Finanzdimensionen-Beispielmodell\Unternehmen: String'.
 44. Klicken Sie auf Binden.
-45. Klicken Sie auf "Speichern".
+45. Klicken Sie auf Speichern.
 46. Schließen Sie die Seite.
+![EB-Vorgangs-Designerseite](../media/er-financial-dimensions-guides-format2.png)
 

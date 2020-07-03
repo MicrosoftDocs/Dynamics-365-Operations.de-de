@@ -3,7 +3,7 @@ title: Video-Player-Modul
 description: Dieses Thema enthält Video-Player-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e94658eed12b12d6666e63d2c06b86646c81a120
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
+ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025646"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "3411158"
 ---
 # <a name="video-player-module"></a>Video-Player-Modul
 
@@ -47,6 +47,10 @@ Das Video-Player-Modul unterstützt auch sekundäre Audiospuren. Beim Hochladen 
 - Werbespots oder Videos zu Richtlinien auf einer Marketings-Seite
 - Marketings-Videos, die Produktfunktionen auf Produktdetailseiten oder Marketings-Seiten markieren
 
+Das folgende Bild zeigt ein Beispiel eines Videoplayermoduls, das auf einer Homepage verwendet wird.
+
+![Beispiel eines Video-Player-Moduls](./media/ecommerce-videoplayer.PNG)
+
 ### <a name="video-player-module-properties"></a>Video-Player-Moduleigenschaften
 
 | Eigenschaftenname         | Wert                               | Beschreibung |
@@ -68,22 +72,34 @@ Das Video-Player-Modul unterstützt auch sekundäre Audiospuren. Beim Hochladen 
 
 Um ein Video-Player-Modul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Erstellen Sie eine Seitenvorlage, die mit **Video-Player-Vorlage** bezeichnet ist.
-1. Im **Haupt-** Slot der Standardseite fügen Sie ein Containermodul hinzu.
-1. Im Containermodul fügen Sie Video-Player- und Ambient Video-Player-Modul hinzu.
-1. Beenden Sie die Bearbeitung der Vorlage und veröffentlichen Sie sie.
-1. Verwenden Sie die Video-Player-Vorlage, die Sie soeben erstellt haben, um die Seite zu erstellen, die die Bezeichnung **Video-Player-Seite** hat.
-1. Im **Haupt-** Slot der neuen Seite fügen Sie ein Ambient Video-Player-Modul hinzu.
-1. Wählen Sie im Eigenschaftenfenster für das Videoplayer-Modul **Video hinzufügen** aus.
+1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
+1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie **Videoplayer-Vorlage** ein und wählen **OK**.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
+1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Videoplayer** und dann **OK** aus.
+1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen. 
+1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die von Ihnen erstellte Video-Player-Vorlage aus. Unter **Seitenname** geben Sie **Video-Player-Seite** ein und wählen dann **OK**.
+1. Auf der neuen Seite wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Container** und dann **OK** aus.
+1. Wählen Sie im Slot **Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Videoplayer** und dann **OK** aus.
+1. Wählen Sie im Eigenschaftenfenster des Videoplayer-Moduls **Video hinzufügen** aus.
 1. Wählen Sie im Dialogfeld **Medienauswahl** ein Video und anschließend **Neues Medienelement hochladen** aus.
-1. Seite speichern und Vorschau anzeigen. Sie sollten das Videomodul auf der Seite sehen. Sie können zusätzliche Einstellungen ändern, um das Verhalten des Moduls anzupassen.
-1. Beenden Sie die Bearbeitung der Seite und veröffentlichen Sie sie.
+1. Wählen Sie im Datei-Explorer eine oder mehrere Video-Dateien aus und wählen Sie dann **Öffnen**.
+1. In dem Dialogfeld **Medienelement hochladen** geben Sie nach Bedarf einen Titel und andere Informationen ein und wählen Sie dann aus **OK**.
+1. In dem **Medienauswahl** Dialogfeld wählen Sie **Schließen**.
+1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen. Sie sollten das Videomodul auf der Seite sehen. Sie können zusätzliche Einstellungen ändern, um das Verhalten des Moduls anzupassen.
+1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Übersicht](starter-kit-overview.md)
+[Überblick über Starterkit](starter-kit-overview.md)
 
-[Werbebanner-Modul](add-alert.md)
+[Werbebannermodul](add-alert.md)
 
 [Karussellmodul](add-carousel.md)
 

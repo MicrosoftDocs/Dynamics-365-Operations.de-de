@@ -3,7 +3,7 @@ title: Mail-Vorlagen für Transaktionsereignisse erstellen
 description: In diesem Thema wird beschrieben, wie Sie E-Mail-Vorlagen für Transaktionsereignisse in Microsoft Dynamics 365 Commerce erstellen, hochladen und konfigurieren.
 author: stuharg
 manager: annbe
-ms.date: 05/11/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5cd928e90654cca639ed1e163be9192c0dffd9ad
-ms.sourcegitcommit: 89022f39502b19c24c0997ae3a01a64b93280f42
+ms.openlocfilehash: a02839088addfa9b405af486f3b795eace1671cc
+ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3367174"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "3416578"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Mail-Vorlagen für Transaktionsereignisse erstellen
 
@@ -40,7 +40,7 @@ Bevor Sie ein bestimmtes Transaktionsereignis einer E-Mail-Vorlage zuordnen kön
 
 Führen Sie folgende Schritte aus, um eine E-Mail-Vorlage zu erstellen:
 
-1. Gehen Sie in der Commerce-Zentrale zu **Retail und Commerce \> Zentralverwaltungseinrichtung \> Organisations-E-Mail-Vorlagen**.
+1. Gehen Sie in der Commerce-Zentrale zu **E-Mail-Vorlagen der Organisation**, die unter **Einzelhandel und Handel \> Einrichtung des Hauptsitzes \> E-Mail-Vorlagen der Organisation** oder **Organisationsverwaltung \> Installieren \> E-Mail-Vorlagen der Organisation** sind.
 1. Wählen Sie **Neu** aus.
 1. Unter **Allgemeines** setzen Sie die folgenden Felder:
 

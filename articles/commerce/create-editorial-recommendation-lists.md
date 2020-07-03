@@ -3,7 +3,7 @@ title: Manuelle Erstellung kuratierter Empfehlungen
 description: Dieses Thema erklärt, wie Händler manuell Produktlisten für Microsoft Dynamics 365 Commerce-Kunden erstellen und verwalten können.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b00c83355850f6249068749096b011f805b37e3c
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 0b866704b419fb07dcf1ddd386af2f7d6cfa02e2
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154317"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404115"
 ---
 # <a name="manually-create-curated-recommendations"></a>Manuelle Erstellung kuratierter Empfehlungen
 
@@ -56,7 +56,7 @@ Um eine kuratierte Produktempfehlungsliste zu erstellen, folgen Sie diesen Schri
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
-[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+[Aktivieren von Azure Data Lake Storage in einer Dynamics 365 Commerce Umgebung](enable-adls-environment.md)
 
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 

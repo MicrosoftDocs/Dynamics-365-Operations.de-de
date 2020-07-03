@@ -3,7 +3,7 @@ title: Personalisierte Empfehlungen abmelden
 description: In diesem Thema wird erläutert, wie Sie Kunden davon abhalten können, personalisierte Empfehlungen in Microsoft Dynamics 365 Commerce zu erhalten.
 author: bebeale
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1e88980ef6ad585826762c8be35304aecbcc02ab
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 87c031c045249dbcde274d7c741beb72c3216aa8
+ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154294"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "3404278"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen abmelden
 
@@ -85,7 +85,7 @@ Das folgende Beispiel zeigt, wie ein Einzelhändler diese Aufgabe ausführen kan
 
 [Überblick über Produktempfehlungen](product-recommendations.md)
 
-[ADLS in einer Dynamics 365 Commerce-Umgebung aktivieren](enable-adls-environment.md)
+[Aktivieren von Azure Data Lake Storage in einer Dynamics 365 Commerce Umgebung](enable-adls-environment.md)
 
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
 

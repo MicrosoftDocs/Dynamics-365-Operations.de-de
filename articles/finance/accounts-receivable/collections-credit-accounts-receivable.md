@@ -1,6 +1,6 @@
 ---
-title: Haben und Inkassi in Debitoren
-description: Informationen zu Debitoreninkassi werden in einer zentralen Ansicht auf der Seite „Inkassi“ von Microsoft Dynamics 365 Finance verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Mahnkriterien generiert werden, oder über die Seite "Debitoren".
+title: Inkasso bei Debitoren
+description: Informationen zu Debitoreninkassi werden in einer zentralen Ansicht auf der Seite „Inkassi“ von Microsoft Dynamics 365 Finance verwaltet. Bearbeiter von Gutschriften und Inkassovorgängen können diese zentrale Ansicht zum Verwalten von Inkassi verwenden. Inkassobeauftragte können den Inkassovorgang über Debitorenlisten beginnen, die unter Verwendung vordefinierter Kriterien generiert werden, oder über die Seite „Debitoren”.
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 10/26/2017
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 471de43bc0d171e60100613a6d779a249cd9e92f
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c150eb7283b34c82e728da36ed0e1e6643eff46a
+ms.sourcegitcommit: be7e4378c8122c6e7cfc4e7991efbdffee45e006
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2189176"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "3426395"
 ---
-# <a name="credit-and-collections-in-accounts-receivable"></a>Haben und Inkassi in Debitoren
+# <a name="collections-in-accounts-receivable"></a>Inkasso bei Debitoren
 
 [!include [banner](../includes/banner.md)]
 

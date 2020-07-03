@@ -3,12 +3,12 @@ title: Übersicht
 description: In Dynamics 365 Human Resources bietet der Arbeitsbereich Urlaub und Abwesenheit einen flexiblen Rahmen zum Erstellen neuer Urlaubspläne, Workflows zum Verwalten von Anfragen und eine intuitive Self-Service-Seite, auf der Mitarbeiter eine Freizeitanforderung beantragen können.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/30/2020
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bb123b808615ff7d770c7c6b83338a32d922be3
-ms.sourcegitcommit: de217452a85429675994e9cc0e06eb4821cab3e5
+ms.openlocfilehash: ec72d2d741f7f8428a7daa97bb982e9fc00b8c3f
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "3325764"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3428966"
 ---
 # <a name="overview"></a>Übersicht
 
@@ -84,10 +84,9 @@ Sie können neue Funktionen für die Vorschau von Abwesenheiten und Urlaubszeite
 
 Die Vorschaufunktionen umfassen:
 
-- **Urlaubsaussetzung** - Sie können Urlaub und Abwesenheit in der Personalabteilung für einen Mitarbeiter aussetzen. Durch das Aussetzen des Urlaubs werden die Urlaubsrückstellungen für ausgewählte Urlaubstypen gestoppt. Wenn die Aussetzung erfolgte, nachdem eine Rückstellung bearbeitet wurde, führt die Aussetzung des Urlaubs zu einer anteiligen Anpassung des Urlaubssaldos des Mitarbeiters. Sie können auch Ursachencodes angeben, wenn Sie die Abwesenheit eines Mitarbeiters aussetzen. Die Benutzererfahrung wurde aktualisiert, um eine Aussetzung anzuzeigen. 
+- **Hinterlassen Sie Rückstellungen pro Unternehmen oder Plan** – Sie können den Abgrenzungsprozess entweder für alle Unternehmen oder für ein einzelnes Unternehmen ausführen. Sie können auch den Abgrenzungsprozess für einen bestimmten Urlaubs- und Abwesenheitsplan für ein bestimmtes Unternehmen ausführen. 
 
-- **Vortragungsregel** - Sie können einen Vortragsabwesenheitstyp für Vortragssalden angeben, bei denen Vortragsanpassungen übertragen werden. Wenn ein Mitarbeiter beispielsweise 10 Tage vorzieht, können Sie für diese 10 Tage einen anderen Urlaubstyp auswählen. 
+- **Urlaub kaufen** – Sie können Kaufurlaubsrichtlinien aktivieren und erstellen, damit Mitarbeiter Kaufanfragen stellen können. Mitarbeiter können Kaufanfragen stellen und Salden automatisch aktualisieren lassen, um die Anfrage widerzuspiegeln.  
 
-- **Fügen Sie Ursachencode und Kommentare für Regulierungen hinzu** – Sie können einen Ursachencode und einen Kommentar hinzufügen, wenn Sie eine Regulierung des Urlaubsguthabens eines Mitarbeiters vornehmen. 
+- **Fügen Sie genehmigten Urlaubsanträgen Anhänge hinzu** – Sie können einem Urlaubsantrag, der bereits genehmigt wurde, einen Anhang hinzufügen. 
 
-- **Übergang zu Urlaubs- und Abwesenheitsparametern** – Sie können jetzt nur Urlaubs- und Abwesenheitsparameter anstelle von Personalverwaltungsparametern verwenden. 

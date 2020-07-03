@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.author: anbichse
 ms.reviewer: anbichse
@@ -18,12 +18,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 02475cdc23565c1d49c9f1bb6901101b16acf3a5
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: 69759c0488563a904f6e80afacb1802611ab1930
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009179"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430255"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Einrichten von Komponenten eines Einzelvorgangs
 
@@ -69,8 +69,8 @@ Sie können Arbeitsaufgaben erstellen, die die grundlegenden Aufgaben beschreibe
 <tr class="odd">
 <td>Verkaufsleiter</td>
 <td><ul>
-<li><strong>Leistungsbeurteilung</strong> – Überprüfung der Arbeitsleistung jedes Verkäufers.</li>
-<li><strong>ABS-Überprüfung</strong> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers.</li>
+<li><strong>Leistungsbeurteilung</strong> – Überprüfung der Arbeitsleistung jedes Verkäufers&#39;.</li>
+<li><strong>ABS-Überprüfung</strong> – Genehmigen oder Ablehnen der Abwesenheitsanforderungen oder -erfassungen jedes Verkäufers&#39;.</li>
 </ul></td>
 </tr>
 <tr class="even">

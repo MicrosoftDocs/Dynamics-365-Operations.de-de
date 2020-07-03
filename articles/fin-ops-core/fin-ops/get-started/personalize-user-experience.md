@@ -3,7 +3,7 @@ title: Die Benutzerumgebung personalisieren
 description: In diesem Thema wird erläutert, wie Sie die App personalisieren können.
 author: jasongre
 manager: AnnBe
-ms.date: 04/13/2020
+ms.date: 05/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0a995d25cfc5e78cc76dd73ddea2fb8bd904328
-ms.sourcegitcommit: cd8a28be0acf31c547db1b8f6703dd4b0f62940c
+ms.openlocfilehash: bb66db1e41dce6987bdfc52dd58e2b704ce36720
+ms.sourcegitcommit: dc67232c9aa3223d42f22cc1f7aafbd121e7e616
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3260505"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "3412353"
 ---
 # <a name="personalize-the-user-experience"></a>Die Benutzerumgebung personalisieren
 
@@ -117,7 +117,11 @@ Folgende Tools sind auf der Symbolleiste **Benutzereinstellungen** verfügbar:
 - Wählen Sie das Tool **Umlagern** aus, wenn Sie ein Element auswählen und an einen anderen Lagerplatz innerhalb der aktuellen Elementgruppe umlagern möchten. Sie können kein Element außerhalb seiner übergeordneten Gruppe verschieben. Um dieses Tool zu verwenden, aktivieren Sie die Schaltfläche **Umlagern** auf der Symbolleiste, und wählen Sie dann das gewünschte Element aus, das umgelagert werden soll. Wenn Sie ein Element auswählen, überprüft die App die Standorte, an die das Element verschoben werden kann. Diese Lagerplätze werden als *Abstiegszonen* bezeichnet. Da Sie das Element innerhalb der aktuellen Gruppe ziehen, wird jede Abstiegszone als farbige, fette Position neben dem Bereich angezeigt, in dem das Element abgelegt werden kann.
 - Wählen Sie das **Überspringen** Tool, um ein Element aus der Tastaturtabulatorsequenz der Seite zu entfernen. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade ausgeblendet werden, in einem schattierten Container angezeigt. Sie können Felder der Tabulatorsequenz interaktiv entfernen oder hinzufügen.
 - Verwenden Sie das Tool **In Kopfzeile anzeigen**, wenn ein Feld im Zusammenfassungsbereich des Inforegisters angezeigt werden soll. Wenn Sie die Schaltfläche **In Kopfzeile anzeigen** auf der Symbolleiste auswählen, werden alle Felder, die als Zusammenfassungsfelder ausgewählt wurden, in einem schattierten Container angezeigt. Sie können Felder der Inforegisterzusammenfassung interaktiv hinzufügen und Felder daraus entfernen, indem Sie die Felder auswählen.
-- Verwenden Sie das Werkzeug **Benötigt** zum Festlegen eines Elements, das für die Dateneingabe erforderlich ist. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade als erforderlich gekennzeichnet wurden, in einem schattierten Container angezeigt. Sie können definieren, dass sie nicht mehr erforderlich sind. Diese Option ist in einer künftigen Version verfügbar, wenn [Gespeicherte Ansichten](saved-views.md) und **Legen Sie Felder nach Bedarf mithilfe der Personalisierung fest** Funktionen aktiviert sind.
+- Verwenden Sie das Werkzeug **Benötigt** zum Festlegen eines Elements, das für die Dateneingabe erforderlich ist. Wenn Sie die Schaltfläche **Überspringen** auf der Symbolleiste auswählen, werden alle Elemente, die gerade als erforderlich gekennzeichnet wurden, in einem schattierten Container angezeigt. Sie können definieren, dass sie nicht mehr erforderlich sind. Diese Option ist ab Version 10.0.12 und später verfügbar, wenn die **Legen Sie Felder nach Bedarf mithilfe der Personalisierung fest** Funktion aktiviert ist.
+
+    > [!IMPORTANT]
+    > Version 10.0.12 ist eine Vorschauversion. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
 - Wählen Sie das Tool **Sperren** aus, wenn Sie ein Element als „Bearbeitbar“ oder „Nicht bearbeitbar“ markieren wollen. Wenn Sie die Schaltfläche **Sperren** auf der Symbolleiste auswählen, werden alle Elemente, die gerade nicht bearbeitbar sind, in einem schattierten Container angezeigt. Sie können definieren, dass sie wieder geändert werden können. Beachten Sie: Mehrere Felder sind obligatorisch und können nicht als nicht bearbeitbar festgelegt werden. Ein Schlosssymbol wird neben den Feldern angezeigt.
 - Nutzen Sie die Schaltfläche **Eine App hinzufügen von Power Apps**, um eine App einzufügen, die unter Microsoft Power Apps auf der Seite erstellt wurde. Detaillierte Informationen zum Einbetten einer App von Power Apps in eine Seite finden Sie unter [Einbetten von Apps von Power Apps](embed-power-apps.md). Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) deaktiviert ist.  
 - Nutzen Sie die Schaltfläche **Eine App hinzufügen** zu dieser Seite, um eine App einzufügen, die entweder von Microsoft Power Apps oder einer Drittpartei erstellt wurde. Diese Option ist nur verfügbar, wenn die Funktion [Gespeicherte Ansichten](saved-views.md) aktiviert ist. 
@@ -159,28 +163,21 @@ Um das Dashboard zu personalisieren, klicken Sie auf eine beliebige Kachel mit d
 - Wenn Sie die Kacheln im Arbeitsbereich neu anordnen möchten, wählen Sie **Diese Seite personalisieren** im Eigenschaftenfenster aus, um die Symbolleiste **Personalisierung** zu öffnen. Sie können das Tool **Verschieben** verwenden, um die Kacheln neu anzuordnen.
 - Wenn Sie eine neue Arbeitsbereichskachel hinzufügen möchten, wählen Sie im Eigenschaftenfenster **Arbeitsbereich hinzufügen** aus. Eine neue Arbeitsbereichkachel wird am unteren Rand das Dashboard erstellt. Sie können diese neue Arbeitsbereichkachel umbenennen, wenn Sie dies wünschen. Sie können, Kacheln, Listen und auch Links dem Arbeitsbereich hinzufügen wie im Abschnitt [Hinzufügen von Kacheln, Listen oder Links zu Arbeitsbereichen](#adding-a-tile-list-or-link-to-a-workspace) beschrieben.
 
+
+## <a name="sharing-personalizations"></a>Personalisierungen freigeben
+Nach dem Personalisieren einer Seite können Sie die Personalisierungen mit anderen Benutzern teilen, indem Sie die personalisierte exportieren. Sie können dann die anderen Benutzer auffordern, die personalisierte Seite zu öffnen und die personalisierte Datei zu importieren. Alternativ können Sie die Personalisierungen an einen Benutzer geben, der Administratorrechte besitzt. Dieser Benutzer kann dann Ihre Personalisierungsdatei auf viele Benutzer gleichzeitig anwenden, indem er die Administratorseite **Personalisierung** nutzt.
+
 ## <a name="administration-of-personalizations"></a>Verwalten der Personalisierungen
+Die Seite **Personalisierung** ist der zentrale Knotenpunkt für die Verwaltung von Personalisierungen auf organisatorischer Ebene. Der Inhalt und die Funktionen dieser Seite hängen davon ab, ob die Funktion **Gespeicherte Ansichten** aktiviert wurde.  
 
-Nach dem Personalisieren einer Seite können Sie die Personalisierungen mit anderen Benutzern teilen, indem Sie die personalisierte exportieren. Sie können dann die anderen Benutzer auffordern, die personalisierte Seite zu öffnen und die personalisierte Datei zu importieren. Alternativ können Sie die Personalisierungen an einen Benutzer geben, der Administratorrechte besitzt. Dieser Benutzer kann die Personalisierungsdatei für viele Benutzer gleichzeitig übernehmen.
+Für Kunden, die die Funktion **Gespeicherte Ansichten** aktiviert haben, gibt es weitere Informationen im Abschnitt Ansichten global Verwalten im Thema [Gespeicherte Ansichten](saved-views.md).  
 
-Benutzer mit Administratorrechten können Personalisierungen auch für andere Benutzer auf der Seite **Personalisierung** verwalten.
-
-Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) nicht aktiviert haben, hat diese Seite vier Registerkarten:
+Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) nocht nicht aktiviert haben, hat diese Seite vier Registerkarten:
 
 - **Anwenden** - Sie können eine Personalisierung für einen oder mehrere Benutzer auswählen. Um eine Personalisierung für einen oder mehrere Benutzer anzuwenden, wählen Sie zuerst eine Rolle und Benutzer aus, die diese Rolle besitzen. Wählen Sie anschließend eine vorhandene Personalisierung aus, um die ausgewählten Benutzer zu übernehmen oder importieren Sie eine Personalisierung. Die Personalisierung wird geprüft und auf alle ausgewählten Benutzer angewendet, wenn diese die ausgewählte Seite das nächste Mal öffnen.
 - **Löschen** – Sie können eine Seiten- oder Arbeitsbereichspersonalisierung für einen oder mehrere Benutzer löschen. Wählen Sie eine Seite oder einen Arbeitsbereich aus, um die Liste der Benutzer zu sehen, die diese Seite personalisiert haben. Anschließend wählen Sie die Benutzer, die für diese deaktivierte Seite oder Arbeitsbereich aus und wählen Sie **Löschen** aus. Alle Personalisierungen, die die ausgewählten Benutzer auf die ausgewählte Seite oder den ausgewählten Arbeitsbereich angewendet haben, werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden. Wenn eine Personalisierung für die Seite oder den Arbeitsbereich gespeichert wurde, dann kann die Personalisierung neu importiert werden.
 - **Benutzer** – Wählen Sie einen Benutzer aus, um die Liste der Seiten anzuzeigen, die der Benutzer personalisiert hat. Sie können dann die Möglichkeit aktivieren oder deaktivieren, um zu bestimmen, ob der Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer. Darüber hinaus können Sie Funktionslegenden für den Benutzer zurücksetzen. In diesem Fall, wenn der Benutzer zuvor Popup-Fenster, die neue Funktionen einführen, abgelehnt hat, werden sie beim nächsten Mal, wenn der Benutzer auf diese Funktionen trifft, wieder angezeigt.
 - **System** – Sie können temporär Personalisierungen im System für alle Benutzer deaktivieren. In diesem Fall werden alle Personalisierungen für alle Benutzer gelöscht und alle Seiten auf ihren Standardstatus zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
-
-Für Kunden, die die Funktion [Gespeicherte Ansichten](saved-views.md) aktiviert haben, hat diese Seite **Personalisierung** fünf Registerkarten:
-
-- **Veröffentlichte Ansichten** – Diese Ansichten wurden für die Organisation veröffentlicht. Um die Benutzer zu ändern, an die sich diese Ansichten richten, können Sie die Sicherheitsrollen oder juristischen Personen ändern, die jeder Ansicht zugeordnet sind. Sie können mindestens eine veröffentlichte Ansicht exportieren oder löschen.
-- **Unveröffentlichte Ansichten** – Diese Ansichten sind Vorlagenansichten, die in das System importiert wurden, aber noch nicht veröffentlicht wurden. Sie können diese Ansichten veröffentlichen, exportieren oder löschen.
-- **Persönliche Ansichten** – Diese Ansichten wurden von den Benutzern im System erstellt. Sie können eine persönliche Ansicht für die Organisation veröffentlichen oder eine oder mehrere der Ansichten an andere Benutzer kopieren. Sie können diese Ansichten auch nach Bedarf exportieren oder löschen.
-- **Benutzer** – Wählen Sie einen Benutzer aus, um die Liste der Seiten anzuzeigen, die der Benutzer personalisiert hat. Sie können dann die Möglichkeit aktivieren oder deaktivieren, um zu bestimmen, ob der Benutzer Personalisierungen für bestimmte Seiten oder das gesamte System verwenden kann oder nicht. Sie können Personalisierungen auch löschen, importieren oder exportieren für diesen Benutzer. Darüber hinaus können Sie Funktionslegenden für den Benutzer zurücksetzen. In diesem Fall, wenn der Benutzer zuvor Popup-Fenster, die neue Funktionen einführen, abgelehnt hat, werden sie beim nächsten Mal, wenn der Benutzer auf diese Funktionen trifft, wieder angezeigt.
-- **System** – Sie können temporär Personalisierungen im System für alle Benutzer deaktivieren. In diesem Fall werden alle Personalisierungen für alle Benutzer gelöscht und alle Seiten auf ihren Standardstatus zurückgesetzt. Wenn Sie die Personalisierungen später wieder reaktivieren, werden diese wieder angewendet. Sie können temporär alle Personalisierungen im System für alle Benutzer deaktivieren oder abschalten. Es gibt keine Möglichkeit, Personalisierungen wiederherzustellen, die gelöscht wurden. Deshalb müssen Sie vor diesem Schritt sicherstellen, dass Sie alle Personalisierungen exportiert haben, die Sie später importieren möchten.
-
-Benutzer, die Zugriff auf die Seite **Personalisierung** haben, können die persönlichen oder Vorlagenansichten auch importieren, indem sie die Schaltfläche **Ansichten importieren** im Aktivitätsbereich verwenden.
 
 ## <a name="personalizing-inventory-dimensions"></a>Personalisierung von Lagerungsdimensionen
 

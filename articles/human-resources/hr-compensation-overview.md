@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
 ms.technology: ''
-ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable
+ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
 ms.search.scope: Core, Operations, Human Resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1b2494ac717bc8c0171be49cc39e6aefff4425ab
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3009199"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "3430554"
 ---
 # <a name="compensation-plans"></a>Vergütungspläne
 
@@ -53,7 +53,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 <td>Aktivitäten bezüglich fester Vergütung werden aus zwei Gründen eingerichtet:
 <ul>
 <li>Aktivitäten können die Art der Informationen angeben, die erfasst werden muss, wenn sich die Vergütung eines Mitarbeiters ändert. So können z. B. festlegen, dass der Grund eine Änderung (z. B. eine Beförderung oder Zurückstufung) erfasst wird.</li>
-<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Aktivitäten vom Typ "Vergleich" vergleichen beispielsweise die Bezahlung von Mitarbeitern mit dem Mindestreferenzpunkt für die Stufe des Mitarbeiters und stellen sicher, dass dem Mitarbeiter mindestens das Minimum gezahlt wird.</li>
+<li>Die Aktivitäten werden auf einen Ereignisprozesses angewendet, wenn feste Vergütungspläne berechnet werden.  Aktivitäten vom Typ "Vergleich" vergleichen beispielsweise die Bezahlung von Mitarbeitern mit dem Mindestreferenzpunkt für die Stufe des Mitarbeiters und stellen sicher, dass dem Mitarbeiter&#39; mindestens das Minimum gezahlt wird.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -62,7 +62,7 @@ Die folgende Tabelle listet Komponenten des Vergütungsprozess auf, die Bestandt
 </tr>
 <tr class="odd">
 <td>Matrix für Bereichsauslastung</td>
-<td>Eine Bereichsauslastungsmatrix unterstützt Sie bei der Verschiebung von Mitarbeitern zum Kontrollpunkt für ihre Stellen. Darüber hinaus kann auch durch die Bereichsauslastung die Fairness des Lohnsatzes innerhalb des Unternehmens kontrolliert werden, ohne dabei die Leistung eines einzelnen Mitarbeiters oder die Leistung des gesamten Unternehmens zugrunde zu legen. So erhalten Mitarbeiter, die in ihrem Bereich geringer bezahlt werden, eine höhere prozentuale Steigerung als Mitarbeiter, die höher im Bereich bezahlt werden. Auf diese Weise können Sie Eigenkapitalunterschiede systematisch ausgleichen. Die Bereichsauslastung wird wie folgt berechnet: (Fester Lohnsatz - Bereichs-Minimum) ÷ (Höchstwert des Bereichs - Mindestwert des Bereichs).</td>
+<td>Eine Bereichsauslastungsmatrix unterstützt Sie bei der Verschiebung von Mitarbeitern zum Kontrollpunkt für ihre Stellen. Darüber hinaus kann auch durch die Bereichsauslastung die Fairness des Lohnsatzes innerhalb des Unternehmens kontrolliert werden, ohne dabei die Leistung eines einzelnen Mitarbeiters&#39; oder die Leistung des gesamten Unternehmens zugrunde zu legen. So erhalten Mitarbeiter, die in ihrem Bereich geringer bezahlt werden, eine höhere prozentuale Steigerung als Mitarbeiter, die höher im Bereich bezahlt werden. Auf diese Weise können Sie Eigenkapitalunterschiede systematisch ausgleichen. Die Bereichsauslastung wird wie folgt berechnet: (Fester Lohnsatz - Bereichs-Minimum) ÷ (Höchstwert des Bereichs - Mindestwert des Bereichs).</td>
 </tr>
 <tr class="even">
 <td>Referenzpunkteinstellungen</td>
