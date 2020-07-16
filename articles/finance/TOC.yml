@@ -74,8 +74,6 @@
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: "Finance\_10.0.11 (Juli\_2020)"
                       href: get-started/whats-new-changed-10-0-11.md
-                    - name: "Finance\_10.0.10 (Mai\_2020)"
-                      href: get-started/whats-new-changed-10-0-10.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
@@ -1176,7 +1174,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/dynamics365/finance/toc.json
             - name: Erweiterte Formatierungsoptionen
               href: ../fin-ops-core/dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Organisieren von Berichtskomponenten im Berichts-Designer
+            - name: Berichtskomponente im Berichts-Designer organisieren
               href: ../fin-ops-core/dev-itpro/analytics/organize-components-report-designer.md?toc=/dynamics365/finance/toc.json
             - name: Berichtsdefinitionen
               href: ../fin-ops-core/dev-itpro/analytics/design-financial-report-definitions.md?toc=/dynamics365/finance/toc.json
@@ -1184,9 +1182,11 @@
               href: ../fin-ops-core/dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/dynamics365/finance/toc.json
             - name: Spaltendefinitionen
               href: ../fin-ops-core/dev-itpro/analytics/column-definitions-financial-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Ändern von Zeilendefinitionszellen
+            - name: Definitionen für Berichtsbaumstrukturen in Finanzberichten
+              href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
+            - name: Zeilendefinitionszellen ändern
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Zurücksetzen des Finanzberichterstellungs-Data Mart
+            - name: "Data\_Mart für Finanzberichte zurücksetzen"
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
         - name: Globalisierung
           items:
@@ -3386,12 +3386,18 @@
                       items:
                         - name: Konfigurationen aus dem GR importieren
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Aktualisierte Versionen von EB-Konfigurationen importieren
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: Verbesserte Filterung für die Konfigurationssuche im GR
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
                         - name: Konfigurationen zum GR hochladen
                           href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
                         - name: Konfigurationen im GR freigeben
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+            - name: Schnellstartanleitungen
+              items:
+                - name: EB-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
             - name: Lernprogramme
               items:
                 - name: Informationen zur Nutzung von Datenquellen
