@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 5a751b360b2da8f786dd7b8d139e1a0a44052894
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211973"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530534"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -107,7 +107,7 @@ Wenn ein Element mit einem Tag verfolgt wird, gibt es außerdem einen Parameter 
 **Wenn die Artikelgewichtstag-Rückverfolgung verwendet wird**, muss ein Tag immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jedes Tag muss immer einem Gewicht zugeordnet werden.
 
 Beispielsweise ist **Box** die Artikelgewichteinheit, und Sie erhalten eine Palette mit acht Boxen. In diesem Fall müssen acht eindeutige Artikelgewichtsmarkierungen erstellt werden, und ein Gewicht muss jeder Markierung zugeordnet werden. Je nach Eingangsartikelgewichts-Markierung kann entweder das Gewicht aller acht Boxen erfasst werden und das Durchschnittsgewicht dann auf jede Box verteilt werden, oder ein eindeutiges Gewicht kann für jede Box erfasst werden.
-Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden**, wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Folglich fordert die Warehousing-App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
+Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden**, wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Daher fordert die Warehouse-App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
 
 **Wenn die Artikelgewichtstag-Rückverfolgung nicht verwendet wird**, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
 
@@ -195,7 +195,7 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 
 ### <a name="catch-weight-tags"></a>Artikelgewichtsmarkierungen
 
-Eine Artikelgewichtsmarkierung kann mithilfe eines Lagerort-App-Prozesses erstellt werden, es kann manuell im Formular erstellt werden oder es kann mithilfe eines Datenentitätsprozesses erstellt werden. Wenn ein Artikelgewichtstag einer eingehenden Quelldokumentposition zugeordnet wird, z. B. Bestellposition, wird das Tag registriert. Wenn die Zeile für die Ausgangsverarbeitung verwendet wird, wird das Tag im Auslieferungszustand aktualisiert.
+Ein Artikelgewicht-Tag kann mithilfe eines Warehouse-App-Prozesses, manuell im Formular oder mithilfe eines Datenentitätsprozesses erstellt werden. Wenn ein Artikelgewichtstag einer eingehenden Quelldokumentposition zugeordnet wird, z. B. Bestellposition, wird das Tag registriert. Wenn die Zeile für die Ausgangsverarbeitung verwendet wird, wird das Tag im Auslieferungszustand aktualisiert.
 
 Zusätzlich zu den Einschränkungen, die derzeit für Artikelgewichtsprodukte gelten, gelten für Artikelgewichtsprodukte mit Tags weitere derzeit geltende Einschränkungen.
 

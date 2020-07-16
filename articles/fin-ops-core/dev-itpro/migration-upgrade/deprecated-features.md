@@ -3,7 +3,7 @@ title: In früheren Versionen entfernte oder veraltete Funktionen
 description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt wurden oder für die Entfernung geplant waren.
 author: sericks007
 manager: AnnBe
-ms.date: 04/17/2020
+ms.date: 06/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be266f838c5e6cd10655546179e9075e36570bfc
-ms.sourcegitcommit: 399f128d90b71bd836a1c8c0c8c257b7f9eeb39a
+ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
+ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "3284013"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3500411"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -588,8 +588,8 @@ eGiro basiert auf den internationalen UN EDIFACT CREMUL (Mehrere Gutschriftsanze
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| **Betroffene Produktbereiche**         | Debitoren                                                                       |
+| **Ersetzt durch eine andere Funktion?**   | Ja, der Import der ISO20022 Camt.054 Benachrichtigung. |
+| **Betroffene Produktbereiche**         | Debitorenkonten                                                                       |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                            |
 
 ### <a name="external-inventory-for-poland"></a>Externer Bestand für Polen
@@ -621,8 +621,8 @@ Sie können ein Importformat für finnische Zahlungen auswählen, das Debitorenz
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| **Betroffene Produktbereiche**         | Debitoren                                                                       |
+| **Ersetzt durch eine andere Funktion?**   | Ja, der Import der ISO20022 Camt.054 Benachrichtigung. |
+| **Betroffene Produktbereiche**         | Debitorenkonten                                                                       |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                            |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import von Zahlungsbuchungen in eine Hauptbucherfassung für Finnland
@@ -632,8 +632,8 @@ Ein Sonderformat für Finnland zum Import von Buchhaltungsbuchungen in das Haupt
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Das Zahlungsformat wird nicht mehr verwendet.                                                     |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Das Format wird durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| **Betroffene Produktbereiche**         | Debitoren                                                                       |
+| **Ersetzt durch eine andere Funktion?**   | Ja, der Import des ISO20022 Camt.053 Bankauszugs mit der erweiterten Bankabstimmung. |
+| **Betroffene Produktbereiche**         | Debitorenkonten                                                                       |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                            |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integration mit Isabel synchronisiert (CIS) für Belgien
@@ -698,8 +698,8 @@ Die Formate Telehansa und TeleTeenus werden für den Bankzahlungimport verwendet
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Zahlungsformate werden nicht mehr verwendet.                                                    |
-| **Ersetzt durch eine andere Funktion?**   | Nr. Die Formate werden durch ISO 20022 Auszugsimportformate in künftigen Versionen ersetzt. |
-| **Betroffene Produktbereiche**         | Debitoren                                                                        |
+| **Ersetzt durch eine andere Funktion?**   | Ja, der Import der ISO20022 Camt.054 Bankbenachrichtigung. |
+| **Betroffene Produktbereiche**         | Debitorenkonten                                                                        |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                             |
 
 ### <a name="payroll-information-in-human-resources"></a>Lohndaten in der Personalverwaltung
@@ -784,7 +784,7 @@ Telepay-Zahlungsformate enthalten Kreditorenzahlungsexport (Banküberweisung) un
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Zahlungsformate werden nicht mehr verwendet.                                                        |
-| **Ersetzt durch eine andere Funktion?**   | Ja, ISO20022 Kredittransferzahlungsformat und AvtaleGiro-Debitorenzahlungsformat für Norwegen |
+| **Ersetzt durch eine andere Funktion?**   | Ja, das ISO20022 Kredittransferzahlungsformat und das AvtaleGiro-Debitorenzahlungsformat für Norwegen sowie der Import der Rückgabedateien pain.002 und camt.054 der Bankbenachrichtigung. |
 | **Betroffene Produktbereiche**         | Kreditorenkonten, Debitoren                                                          |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.                                 |
 
@@ -844,7 +844,7 @@ Ein Workflow für das Verwalten der Erstellung der Mitarbeiterziele ist einer vo
 
 ### <a name="aif-axd-and-axbc-integrations"></a>Integration mit AIF, AxD und AxBC
 
-In Application Integration Framework (AIF), können Daten mit externen Systemen über Geschäftslogik ausgetauscht werden, die als Dienst verfügbar gemacht wird. Dynamics AX verfügt über Dienste, die auf Dokumenten und .NET Business Connector (AxBC) basieren. Ein Dokument wird über XML erstellt. Das XML umfasst Kopfinformationen, die hinzugefügt werden, um eine *Meldung* zu erstellen, die zu oder aus Dynamics AX übertragen werden kann. Beispiele zu Dokumenten sind Aufträge und Bestellungen. Fast jede Entität, z. B. ein Debitor, kann über Dokument dargestellt werden. Dienste, die auf Dokumenten basieren, verwenden die Klassen **Axd \<Dokument\>**.
+In Application Integration Framework (AIF), können Daten mit externen Systemen über Geschäftslogik ausgetauscht werden, die als Dienst verfügbar gemacht wird. Dynamics AX verfügt über Dienste, die auf Dokumenten und .NET Business Connector (AxBC) basieren. Ein Dokument wird über XML erstellt. Das XML umfasst Kopfinformationen, die hinzugefügt werden, um eine *Meldung* zu erstellen, die zu oder aus Dynamics AX übertragen werden kann. Beispiele zu Dokumenten sind Aufträge und Bestellungen. Fast jede Entität, z. B. ein Debitor, kann über Dokument dargestellt werden. Dienste, die auf Dokumenten basieren, verwenden die Klassen **Axd \<Document\>**.
 
 |   |  |
 |------------|--------------------|
@@ -1125,13 +1125,13 @@ Testtransaktionsgenerierung kann nicht mithilfe einer Charge verwendet werden. S
 | **Betroffene Produktbereiche**         | Alle Module  |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden. |
 
-### <a name="german-dtazv-payment-format"></a>Deutsches DTAZV-Zahlungsformat
+### <a name="german-dtazv-payment-format-in-domestic-currency"></a>Deutsches DTAZV-Zahlungsformat in Landeswährung
 
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Das Format ist nicht mehr in Deutschland anwendbar, da es durch die SEPA-Funktionen ersetzt wurde. |
 | **Ersetzt durch eine andere Funktion?**   | SEPA-Zahlungsexport    |
-| **Betroffene Produktbereiche**         | Alle Module   |
+| **Betroffene Produktbereiche**         | Kreditorenkonten   |
 | **Status**                         | Veraltet: Ein Datum für das Entfernen dieser Funktion ist nicht festgelegt worden.    |
 
 ### <a name="german-mt940-import"></a>MT940 Import, deutsch

@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren Sie App-Feldnamen in der Warehousing-App
-description: In diesem Thema wird beschrieben, wie Lagerhaltungs-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
+title: Konfigurieren von Feldnamen in der Warehouse-App
+description: In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden.
 author: MarkusFogelberg
 manager: tfehr
 ms.date: 06/20/2017
@@ -19,23 +19,23 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0390900d97e74bb9fd8deac913b1606cb775aa7c
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: 7a4cfe62aa50c423adfd116a81d7962c30b25fcf
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346398"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530488"
 ---
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurieren Sie App-Feldnamen in der Warehousing-App
+# <a name="configure-app-field-names-in-the-warehouse-app"></a>Konfigurieren von Feldnamen in der Warehouse-App
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Thema wird beschrieben, wie Lagerhaltungs-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
+In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Dynamics 365 Supply Chain Management definiert und konfiguriert werden. 
 
 > [!NOTE]
-> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie diese Lagehaltungs-App-Feldnamen und -Prioritäten definiert und konfiguriert werden und wie sie in der Lagerhaltung verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zu Warehousing konfiguriert wird, finden Sie im Lernprogramm [Einrichten und Konfigurieren der Warehousing-App: Übersicht](install-configure-warehousing-app.md).
+> Dieser Artikel gilt für Funktionen im Modul „Lagerortverwaltung“. Er gilt nicht für Funktionen im Modul "Bestandverwaltung". Warehousing ist eine Anwendung, die Sie verwenden können, um Lagerortaufgaben auszuführen. Sie können die Feldnamen definieren und konfigurieren, die in der App verwendet werden und die Priorität konfigurieren, der die Feldnamen zugewiesen werden sollen. In diesem Thema wird beschrieben, wie Lagerort-App-Feldnamen und -Prioritäten in Warehousing definiert, konfiguriert und verwendet werden. Ausführliche Informationen dazu, wie die Verbindung zur Warehouse-App konfiguriert wird, finden Sie im Tutorial [Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md).
 
-## <a name="configure-warehousing-app-field-names"></a>Feldnamen der Lagerhaltungs-App konfigurieren
+## <a name="configure-warehouse-app-field-names"></a>Konfigurieren von Lagerort-Feldnamen in der App
 
 Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können Sie auf der Seite **Lagerort-App-Feldnamen** konfigurieren, wie Metadaten für das Gerät angezeigt werden sollen. In einem neuen Unternehmen wählen Sie **Standardeinstellungen erstellen** aus, um alle Feldnamen zu generieren, die im Workflow des mobilen Geräts für Lagerort verwendet werden, und weisen Sie diesen dann einen bevorzugten Eingabemodus zu, und geben Sie einen Typ ein. Nachdem Sie alle Feldnamen generiert haben, können folgende Eingabeoptionen auswählen.
 
@@ -68,7 +68,7 @@ Wenn Sie Arbeitsgänge für Warehousing auf Ihrem mobilen Gerät nutzen, können
 </tbody>
 </table>
 
-## <a name="configure-warehousing-app-field-priority"></a>Feldpriorität der Lagerhaltungs-App konfigurieren
+## <a name="configure-warehouse-app-field-priority"></a>Feldpriorität in Lagerortanwendung konfigurieren
 
 Auf der Seite L **agerort-App-Feldpriorität** können Sie Feldnamen anderen Prioritätsgruppen zuweisen. Auf diese Weise ist es möglich, zu entscheiden, welche Informationen auf der Hauptaufgabenseite angezeigt werden sollen, wenn Lagerarbeiter Aufgaben mithilfe der App ausführen. We nn Sie auf **Standardeinstellungen erstellen** klicken, wird ein Standardsatz von Prioritätsgruppen generiert. Es ist möglich, beliebig viele Prioritätsgruppen zu erstellen, aber es werden nur drei Prioritätengruppen auf der Aufgabenseite angezeigt. Wenn das System Metadaten an die App sendet, weist diese jedem der Felder eine relative Priorität abhängig von seiner Prioritätsstufe zu, und die App zeigt die ersten drei Prioritätengruppen an, die in den Metadaten auf der Aufgabenseite enthalten sind. Der Rest der überfließenden Metadaten wird auf einer sekundären Detailseite angezeigt. Die folgende Tabelle enthält ein Beispiel der fünf Prioritätengruppen.
 
@@ -132,7 +132,7 @@ Ein Lagerarbeiter führt beispielsweise eine Aufgabe auf einem mobilen Gerät au
 -   Artikelbeschreibung
 -   Größe und Standort
 
-Basierend auf der Lagerhaltungs-App-Feldpriorität, die in der Tabelle oben eingerichtet wird, werden die folgenden 3 Zeilen der Informationen auf der Aufgabenseite angezeigt:
+Basierend auf der Lagerort-App-Feldpriorität, die in der Tabelle oben eingerichtet wird, werden die folgenden 3 Zeilen der Informationen auf der Aufgabenseite angezeigt:
 
 -   Zeile 1: Artikel, Menge, Maßeinheit
 -   Reihe 2: Artikelbeschreibung
@@ -143,4 +143,4 @@ Die verbleibenden Metadaten beispielsweise Lagerplatz, werden nicht auf der Aufg
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------
 
-[Einrichten und Konfigurieren der Warehousing-App: Übersicht](install-configure-warehousing-app.md)
+[Übersicht zum Installieren und Konfigurieren der Warehouse-App](install-configure-warehousing-app.md)

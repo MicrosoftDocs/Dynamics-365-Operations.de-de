@@ -1,6 +1,6 @@
 ---
 title: Verwalten der Lagerortarbeitskräfte
-description: In diesem Artikel wird beschrieben, wie Sie Dynamics 365 Supply Chain Management - Warehousing-App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
+description: In diesem Artikel wird beschrieben, wie Sie die Warehouse-App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
 author: perlynne
 manager: tfehr
 ms.date: 06/20/2017
@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b143051ba39c74869d2ec56203ee4f1cda7268a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d8e7790fa8ab8d60d0e5fd8eb470d86d6728091b
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205574"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530028"
 ---
 # <a name="manage-warehouse-workers"></a>Verwalten der Lagerortarbeitskräfte
 
 [!include [banner](../includes/banner.md)]
 
-In diesem Artikel wird beschrieben, wie Sie Dynamics 365 Supply Chain Management - Warehousing-App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
+In diesem Artikel wird beschrieben, wie Sie die Warehouse-App verwenden können, um die Arbeit zu steuern und zu überwachen, die von Mitarbeitern an Ihren Lagerorten ausgeführt wird.
 
 Wenn Sie die Funktionen in der Lagerortverwaltung verwenden, werden alle Arbeitsgänge der Lagerarbeiter als *Arbeit* bezeichnet. Arbeit, wie die Entnahme, das Umlagern und das Zählen des verfügbaren Lagerbestands wird mithilfe von mobilen Geräten erfasst. Bevor ein Lagerarbeiter Arbeit ausführen kann, muss er einer Arbeitskraft in der Personalverwaltung zugeordnet werden. Jedes **Arbeitskraftkonto** kann mehrere Lagerortarbeitsbenutzer haben, die ihm zugeordnet sind. Diese Arbeitsbenutzer können in verschiedenen Lagerorten arbeiten und verschiedene Zugriffsebenen auf unterschiedliche Menüs des mobilen Geräts haben. Sie können die Lagerortarbeitsbenutzer als mehrere Anmeldungen für die ausgewählte Arbeitskraft betrachten. Jeder Arbeitsbenutzer hat einen Standardlagerort, und bestimmte Workflows werden durch die Menüartikel, die diesem Arbeitsbenutzer verfügbar sind, offengelegt. 
 

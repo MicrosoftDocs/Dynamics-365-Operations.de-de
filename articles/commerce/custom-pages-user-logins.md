@@ -3,7 +3,7 @@ title: Einrichten angepasster Seiten für die Benutzeranmeldung
 description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Mandanten von Azure Active Directory (Azure AD) Onlinebankenlösungen (B2C) verarbeiten.
 author: brianshook
 manager: annbe
-ms.date: 06/16/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71c0f0b6969985b04262b522dd2165eb1475878d
-ms.sourcegitcommit: 9a2e9f7dfec47c42178bb67a3e099e610515baf3
+ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456971"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533458"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Angepasste Seiten für die Benutzeranmeldung einrichten
 
@@ -195,13 +195,11 @@ Nachdem Sie die global.json-Datei aktualisiert und die Änderungen veröffentlic
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Onlineshopkanal einrichten](online-stores.md)
-
-[E-Commerce-Site erstellen](create-ecommerce-site.md)
+[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
 
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 

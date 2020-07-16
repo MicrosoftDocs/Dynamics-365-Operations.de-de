@@ -1,9 +1,9 @@
 ---
 title: Übersicht über die Cloud-basierte Suche
 description: Dieses Thema enthält eine Übersicht der Cloud-betriebenen Suche in Microsoft Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/01/2019
+ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5501f4d39709990eb352511477b1427fb265afde
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057832"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527442"
 ---
 # <a name="cloud-powered-search-overview"></a>Übersicht über die Cloud-basierte Suche
 
@@ -73,8 +73,12 @@ Die folgende Abbildung zeigt ein Beispiel an, wo interaktives automatisches Vors
 
 Verbessertes Sortieren in Dynamics 365 Commerce ermöglicht Kunden, Suchergebnisse zu sortieren, suchen und durchsuchen und diese durch Kriterien wie Preis, Produktname und Produktnummer zu verfeinern. Debitoren können Ergebnisse auch sortieren, basierend darauf, ob ein Produkt neu ist, meistverkauft, oder vor kurzem hinzugefügt wurde.
 
+>[!NOTE]
+>Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
+![Konfigurationsparameter für die Cloud-betriebene Suche](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Standard Kategorie-Landingpage und Suchergebnisseite](category-search-page-overview.md)
+[Standard-Kategorie-Landingpage und Suchergebnisseite – Übersicht](category-search-page-overview.md)
 
 [Verwalten von SEO-Metadaten](manage-seo-metadata.md)

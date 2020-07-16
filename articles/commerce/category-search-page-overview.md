@@ -1,9 +1,9 @@
 ---
-title: Übersicht der Standard-Kategorie-Landingpage und Suchergebnisseite
+title: Übersicht über die Standard-Kategorie-Landingpage und die Suchergebnisseite
 description: Dieses Thema gibt eine Übersicht über die Standard-Kategorie-Startseite und Suchergebnisseite in Dynamics 365 Commerce.
-author: v-chgri
+author: ashishmsft
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 17746d2923ab84311253c47647c0020807bdb75c
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: e85449c10fa4a768a144ce423a77bd1fc2c94352
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002495"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527467"
 ---
-# <a name="overview-of-default-category-landing-page-and-search-results-page"></a>Übersicht der Standard-Kategorie-Landingpage und Suchergebnisseite
-
+# <a name="default-category-landing-page-and-search-results-page-overview"></a>Übersicht über die Standard-Kategorie-Landingpage und die Suchergebnisseite
 
 [!include [banner](includes/banner.md)]
 
@@ -96,7 +95,13 @@ Die folgenden Komponenten sind für eine Suchergebnisseite zentral:
 - Die **Paginierung** ermöglicht es Websitebesuchern, von einer Seite mit kategorisierten Produktergebnissen zu einer anderen Seite zu wechseln.
 - **Gesamtzahl** gibt die Gesamtzahl von Produkten an, die in einer Kategorie definiert werden und den Suchkriterien entsprechen.
 
+>[!NOTE]
+>Diese Cloud-betriebenen Suchfunktionen sind ab Version 10.0.8 verfügbar. Stellen Sie sicher, dass unter **Handelsparameter > Konfigurationsparameter** ein Eintrag für „ProductSearch.UseAzureSearch set to 'true'“ vorhanden ist. 
+![Konfigurationsparameter für die Cloud-betriebene Suche](./media/CloudPoweredSearchConfigurationParameters.png)
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+[Übersicht über die Cloud-basierte Suche](cloud-powered-search-overview.md)
 
 [Übersicht der Startseite](quick-tour-home-page.md)
 

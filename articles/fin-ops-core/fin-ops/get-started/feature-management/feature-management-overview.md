@@ -3,7 +3,7 @@ title: Überblick über die Funktionsverwaltung
 description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/12/2020
+ms.date: 06/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 416c19dcf5b2c983afff7d2e8a9797fb0c0e2780
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
+ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456596"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "3499618"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -140,6 +140,10 @@ Das folgende Beispiel beschreibt, was geschieht, wenn Sie die Entität **Funktio
 ## <a name="feature-management-and-flighting"></a>Funktionsverwaltung und Flight
 
 Mit der Funktionsverwaltung können Sie die Funktionen steuern, die in jeder Version geliefert werden. Flight ermöglicht es den Microsoft Teams Funktionen für eine begrenzte Anzahl von Kunden zu veröffentlichen, sodass diese Funktionen getestet und überprüft werden können, ohne sich auf alle Kunden auszuwirken. Die Funktionsverwaltung kontrolliert nicht das Flight der Funktionen.
+
+## <a name="new-features-are-optional-for-12-months"></a>Neue Funktionen sind für 12 Monate optional
+
+Wenn eine neue, nicht kritische Funktion installiert wird, ist sie für einen Zeitraum von 12 Monaten optional. Auf diese Weise können Sie und Ihr Unternehmen im Voraus planen, wann eine Funktion in Anspruch genommen und anhand Ihrer täglichen Abläufe getestet werden soll. Weitere Informationen finden Sie in den [FAQ zu Dienstupdates für eine Version](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/one-version#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Verwenden der Funktionsverwaltung zum Aktivieren von ISV-Funktionen oder benutzerdefinierten Funktionen
 

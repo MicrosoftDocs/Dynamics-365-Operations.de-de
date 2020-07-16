@@ -3,7 +3,7 @@ title: Erstellen einer E-Commerce-Webseite
 description: In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Site in Dynamics 365 Commerce Site Builder erforderlich sind.
 author: bicyclingfool
 manager: AnnBe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,25 +19,20 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7177bae911dfa91a645b40581bf23b3ed76562a3
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: ea3517a4f2b84db8a87a97d2f644bb4436f8693f
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096773"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533435"
 ---
 # <a name="create-an-e-commerce-site"></a>Erstellen einer E-Commerce-Webseite
-
 
 [!include [banner](includes/banner.md)]
 
 In diesem Thema werden die Schritte und Informationen beschrieben, die zum Erstellen einer neuen E-Commerce-Site in Dynamics 365 Commerce Site Builder erforderlich sind.
 
-Bevor Sie mit der Entwicklung Ihrer E-Commerce-Site beginnen, müssen Sie erst eine neue Site im Site Builder einrichten. 
-
-
-Um mit der Entwicklung der E-Commerce-Site zu beginnen, müssen Sie eine neue Site in der Siteerstellungsumgebung einrichten. Bevor Sie eine neue Site erstellen können, muss mindestens ein Onlineshop in Commerce erstellt werden. 
-
+Wenn Sie die E-Commerce-Funktionen lizenzieren, wird Site Builder eine Starter-Site bereitgestellt, die Sie als Grundlage für Ihre eigene Site verwenden können. Wenn Sie jedoch von Grund auf neu beginnen oder eine zweite Site einrichten möchten, müssen Sie eine neue Site in der Site-Erstellungsumgebung einrichten. 
 
 ## <a name="set-up-your-site"></a>Site einrichten
 
@@ -61,15 +56,13 @@ Nachdem Ihre Site erstellt wurde, können Sie prüfen, dass sie Ihrem Onlineshop
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Onlineshopkanal einrichten](online-stores.md)
-
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 
-[Verwalten von robots.txt-Dateien](manage-robots-txt-files.md)
+[Robots.txt-Dateien verwalten](manage-robots-txt-files.md)
 
 [URL-Weiterleitungen in großen Mengen hochladen](upload-bulk-redirects.md)
 
