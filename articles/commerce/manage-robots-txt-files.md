@@ -3,7 +3,7 @@ title: Verwalten von robots.txt-Dateien
 description: In diesem Thema wird beschrieben, wie Sie robots.txt-Dateien in Microsoft Dynamics 365 Commerce verwalten.
 author: BrianShook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: brishoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d248dae36e6e038749ee17a5a6ccb32f1dde0aed
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4b3856a7a0b4b198e71ce9af6691b1d90362f3e7
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096842"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533412"
 ---
 # <a name="manage-robotstxt-files"></a>Verwalten von robots.txt-Dateien
 
@@ -88,11 +88,9 @@ Gehen Sie folgendermaßen vor, um eine robots.txt-Datei in Commerce zu löschen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
-
-[Onlineshopkanal einrichten](online-stores.md)
 
 [E-Commerce-Site erstellen](create-ecommerce-site.md)
 

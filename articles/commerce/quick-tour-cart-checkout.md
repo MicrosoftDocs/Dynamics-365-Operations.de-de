@@ -1,9 +1,9 @@
 ---
-title: Übersicht der Einkaufskorb- und Auschecken-Seiten
+title: Übersicht der Einkaufswagen- und Auschecken-Seiten
 description: Dieses Thema bietet eine Übersicht über Einkaufskorb- und Auschecken-Seiten in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/31/2019
+ms.date: 06/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07905b9a843eb42d3031dcc80b4e185c122a9e50
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
+ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002934"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3527562"
 ---
-# <a name="overview-of-cart-and-checkout-pages"></a>Übersicht der Einkaufskorb- und Auschecken-Seiten
-
+# <a name="cart-and-checkout-pages-overview"></a>Übersicht der Einkaufswagen- und Auschecken-Seiten
 
 [!include [banner](includes/banner.md)]
 
@@ -104,8 +103,6 @@ Weitere Informationen zum Erstellen einer Auschecken-Seite erhalten Sie unter [E
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Übersicht der Startseite](quick-tour-home-page.md)
-
-[Übersicht der Standard-Kategorie-Landingpage und Suchergebnisseite](category-search-page-overview.md)
 
 [Übersicht der Produktdetailseiten](quick-tour-pdp.md)
 

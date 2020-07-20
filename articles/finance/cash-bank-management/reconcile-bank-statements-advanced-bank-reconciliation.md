@@ -3,7 +3,7 @@ title: Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 description: Mit der erweiterten Bankabstimmungsfunktion können Sie elektronische Bankauszüge importieren und diese in Microsoft Dynamics 365 Finance automatisch mit Bankbuchungen abstimmen. Dieses Thema beschreibt den Abstimmungsprozess.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b37cf8d83c7134ae65da6a885bffeb01d16f9f06
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: c13203217af1788fe3b8a6f9bbf805e03b650a0d
+ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177932"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "3497144"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Bankauszugsabstimmung mithilfe der erweiterten Bankabstimmung
 
@@ -41,9 +41,9 @@ Sie können einen Bankauszug hochladen, der Informationen für entweder ein einz
 -   Um eine einzelne Bankauszugsdatei für ein einzelnes Konto zu importieren, legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Nein** fest, und wählen Sie das Bankkonto aus, dem der Auszug zugeordnet ist. Klicken Sie auf **Durchsuchen**, um die zugeordneten Bankauszugdatei auszuwählen. Klicken Sie dann auf **Hochladen**.
 -   Um eine einzelne Bankauszugsdatei für mehrere Konten zu importieren, legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die zugeordneten Bankauszugdatei auszuwählen. Klicken Sie dann auf **Hochladen**.
 
-Wenn irgendwelche Auszüge in der elektronischen Datei mithilfe der identifizierenden Felder keinem Bankkonto zugeordnet werden können, werden sie nicht importiert. Allerdings können andere Auszüge in der Datei noch importiert werden. Der Benutzer erhält dann eine Nachricht, die besagt, dass der Import von Bankauszügen für bestimmte Bankkonten nicht erfolgreich war. Beachten Sie, dass der Benutzer, der die Bankauszugsdatei importiert, Zugriff auf eine juristische Person haben muss, um Auszüge für die Bankkonten dieser juristischen Person zu importieren. 
+Wenn Bankauszüge in der elektronischen Datei mithilfe der identifizierenden Felder keinem Bankkonto zugeordnet werden können oder mehreren Bankkonten zugeordnet sind, werden sie nicht importiert. Allerdings können andere Auszüge in der Datei noch importiert werden. Der Benutzer erhält dann eine Nachricht, die besagt, dass der Import von Bankauszügen für bestimmte Bankkonten nicht erfolgreich war. Beachten Sie, dass der Benutzer, der die Bankauszugsdatei importiert, Zugriff auf eine juristische Person haben muss, um Auszüge für die Bankkonten dieser juristischen Person zu importieren. 
 
-Sie können mit einer ZIP-Datei mehrere Auszugsdateien in Finance in einem einzigen Prozess hochladen. Um mehrere Bankauszugsdateien für mehrere Konten zu importieren, fassen Sie alle Bankauszugsdateien in einer Zip-Datei zusammen. Im Dialogfeld **Bankauszüge importieren** legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die Zip-Datei mit den zugeordneten Bankauszugdateien auszuwählen. Klicken Sie dann auf **Hochladen**. Beim Importprozess wird die ZIP-Datei erkannt und jeder Auszug hochgeladen, der in ihr enthalten ist, unabhängig von der juristischen Person des Bankkontos. 
+Sie können mit einer ZIP-Datei mehrere Auszugsdateien in Finance in einem einzigen Prozess hochladen. Um mehrere Bankauszugsdateien für mehrere Konten zu importieren, fassen Sie alle Bankauszugsdateien in einer Zip-Datei zusammen. Im Dialogfeld **Bankauszüge importieren** legen Sie die Option **Bankauszug für mehrere Bankkonten in allen juristischen Personen importieren** auf **Ja** fest. Klicken Sie auf **Durchsuchen**, um die Zip-Datei mit den zugeordneten Bankauszugdateien auszuwählen. Klicken Sie dann auf **Hochladen**. Beim Importprozess wird die ZIP-Datei erkannt und jeder Auszug hochgeladen, der in ihr enthalten ist, unabhängig von der juristischen Person des Bankkontos.
 
 Es ist eine **Nach Import abstimmen**-Option verfügbar. Wenn Sie diese Option auf **Ja** festlegen, überprüft das System automatisch den Bankauszug, erstellt eine neue Bankabstimmung und ein Arbeitsblatt und führt den standardmäßigen Abgleichsregelsatz beim Upload des Bankauszugs aus. Diese Funktionalität automatisiert den Prozess bis zu manuellen Abstimmung von Buchungen.
 

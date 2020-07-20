@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6c462a87494c434a6047542d448a85b3bce9f769
-ms.sourcegitcommit: ffd845d4230646499b6f074cb43e69ab95787671
+ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "3346467"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530304"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -139,7 +139,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 
     Im Allgemeinen funktioniert und interagiert diese Seite genauso wie sie bei Artikeln funktioniert und interagiert, die mit einer Reservierungshierarchie vom Typ „Charge oberhalb\[Lagerort\]“ verknüpft sind. Es gelten jedoch folgende Ausnahmen:
 
-    - Das Inforegister **Chargennummern für Quellposition zugesagt** zeigt die Chargennummern an, die für die Bestellposition reserviert sind. Die Chargenwerte im Raster werden während des gesamten Erfüllungszyklus der Auftragsposition einschließlich der Phasen der Lagerortverarbeitung angezeigt. Im Gegensatz dazu werden auf dem Inforegister **Übersicht** regelmäßige Auftragspositionsreservierungen (also Reservierungen für die Dimensionen oberhalb der **Lagerort**-Ebene) im Raster bis zu dem Punkt angezeigt, wenn Lagerarbeiten generiert werden. Die Arbeitsentität übernimmt dann die Positionsreservierung und die Positionsreservierung erscheint nicht mehr auf der Seite. Das Inforegister **Chargennummern für Quellposition zugesagt** sorgt mit dafür, dass der Auftragsverarbeiter die Chargennummern, die für den Kundenauftrag zugesagt wurden, während des gesamten Lebenszyklus bis hin zur Rechnungsstellung anzeigen kann.
+    - Das Inforegister **Chargennummern für Quellposition zugesagt** zeigt die Chargennummern an, die für die Bestellposition reserviert sind. Die Chargenwerte im Raster werden während des gesamten Erfüllungszyklus der Auftragsposition angezeigt, einschließlich der Phasen der Lagerortverarbeitung. Im Gegensatz dazu werden auf dem Inforegister **Übersicht** regelmäßige Auftragspositionsreservierungen (also Reservierungen für die Dimensionen oberhalb der **Lagerort**-Ebene) im Raster bis zu dem Punkt angezeigt, wenn Lagerarbeiten generiert werden. Die Arbeitsentität übernimmt dann die Positionsreservierung und die Positionsreservierung erscheint nicht mehr auf der Seite. Das Inforegister **Chargennummern für Quellposition zugesagt** sorgt mit dafür, dass der Auftragsverarbeiter die Chargennummern, die für den Kundenauftrag zugesagt wurden, während des gesamten Lebenszyklus bis hin zur Rechnungsstellung anzeigen kann.
     - Zusätzlich zur Reservierung einer bestimmten Charge kann ein Benutzer den spezifischen Lagerort und Ladungsträger manuell auswählen und auf die automatische Auswahl durch das System verzichten. Diese Funktion hängt mit dem Design des auftragsgebunden Chargenreservierungsmechanismus zusammen. Wie bereits erwähnt: Wenn eine Chargenummer für einen Artikel reserviert ist, für den die Reservierungsrichtlinie „Charge unterhalb\[Lagerort\]“ gilt, muss das System alle Dimensionen bis zum Lagerort reservieren. Aus diesem Grund gelten für die Lagerarbeit die gleichen Lagerdimensionen, die von den Benutzern reserviert wurden, die diese Aufträge bearbeitet haben. Sie zeigt möglicherweise nicht immer die Artikellagerplatzierung, die für Kommissionierungsarbeiten zweckmäßig oder möglich ist. Wenn Auftragsbearbeiter die Einschränkungen des Lagerorts kennen, möchten sie möglicherweise die spezifischen Lagerorte und Ladungsträger manuell auswählen, wenn sie eine Charge reservieren. In diesem Fall muss der Benutzer die **Dimensionen anzeigen**-Funktionalität auf dem Seitenkopf nutzen und den Lagerort und den Ladungsträger zum Raster im Inforegister **Übersicht** hinzufügen.
 
 6. Auf der Seite **Chargenreservierung** wählen Sie die Position für Charge **B11** sowie **Position reservieren** aus. Es gibt keine festgelegte Logik zum Zuweisen von Lagerorten und Ladungsträgern während der automatischen Reservierung. Sie können die Menge manuell in das Feld **Reservierung** eingeben. Beachten Sie, dass auf dem Inforegister **Chargennummern für Quellposition zugesagt** die Charge **B11** als **Zugesagt** angezeigt wird.
@@ -186,7 +186,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 
     Die Menge von **10** für Chargennummer **B11** wird nun für die Auftragsposition und im Lagerort **Baydoor** platziert. Zu diesem Zeitpunkt kann es auf den LKW verladen und an die Adresse des Kunden versendet werden.
 
-## <a name="exception-handling-of-warehouse-work-thas-has-order-committed-batch-numbers"></a>Ausnahmebehandlung von Lagerarbeit mit auftragsgebundenen Chargennummern
+## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Ausnahmenbehandlung von Lagerortarbeit mit auftragsgebundenen Chargennummern
 
 Die Lagerarbeit für die Kommissionierung von auftragsgebundenen Chargennummern unterliegt denselben standardmäßigen Lagerortausnahmebehandlungen und -Aktionen wie die reguläre Arbeit. Im Allgemeinen kann die offene Arbeit oder Arbeitsposition storniert werden. Sie kann unterbrochen werden, weil ein Lagerort voll ist, sie kann kurz entnommen werden und sie kann aufgrund einer Bewegung aktualisiert werden. Ebenso kann die kommissionierte Arbeit, die bereits erledigt wurde, reduziert oder rückgängig gemacht werden.
 
@@ -233,7 +233,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Standort überschreiben</strong> in der Lagerhaltungs-App, wenn Sie mit der Entnahmearbeit beginnen.</li>
+<li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse-App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
 <li>Wählen Sie die Option für <strong>Vorschlagen</strong> aus.</li>
 <li>Bestätigen Sie den neuen Lagerort, der basierend auf der Verfügbarkeit der Chargenmenge vorgeschlagen wird.</li>
 </ol>
@@ -250,7 +250,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Standort überschreiben</strong> in der Lagerhaltungs-App, wenn Sie mit der Entnahmearbeit beginnen.</li>
+<li>Wählen Sie das Menüelement <strong>Lagerplatz überschreiben</strong> in der Warehouse-App aus, wenn Sie mit der Entnahmearbeit beginnen.</li>
 <li>Geben Sie einen Lagerort manuell ein.</li>
 </ol>
 </td>
@@ -278,7 +278,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Voll</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit verarbeiten.</li>
+<li>Wählen Sie das Menüelement <strong>Voll</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit verarbeiten.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> eine Teilmenge der erforderlichen Entnahme ein, um die volle Kapazität anzuzeigen.</li>
 </ol>
 </td>
@@ -353,7 +353,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Starten Sie eine Verlagerung in der Lagerhaltungs-App.</li>
+<li>Starten Sie eine Verlagerung in der Warehouse-App.</li>
 <li>Geben Sie „Von“- und „Nach“-Lagerorte ein.</li>
 </ol></td>
 <td>
@@ -469,7 +469,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Geben Sie im Feld <strong>Grund</strong> <strong>Keine Neuzuteilung</strong> ein.</li>
 </ol>
@@ -498,7 +498,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld <strong>Entnahmemenge</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Geben Sie im Feld <strong>Grund</strong> <strong>Keine Neuzuteilung</strong> ein.</li>
 </ol>
@@ -522,7 +522,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Ja</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 <li>Wählen Sie den Lagerort/Ladungsträger in der Liste aus.</li>
@@ -548,7 +548,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 </ol>
@@ -561,7 +561,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nr.</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit manueller Neuzuteilung</strong> aus.</li>
 <li>Wählen Sie den Lagerort/Ladungsträger in der Liste aus.</li>
@@ -585,7 +585,7 @@ Die folgenden Tabellen bieten eine Übersicht darüber, wie das System die auftr
 <td>Nicht zutreffend</td>
 <td>
 <ol>
-<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Lagerhaltungs-App, wenn Sie die Entnahmearbeit ausführen.</li>
+<li>Wählen Sie das Menüelement <strong>Entnahme unzureichender Menge</strong> in der Warehouse-App aus, wenn Sie die Entnahmearbeit ausführen.</li>
 <li>Geben Sie im Feld für <strong>Menge der Kurzentnahme</strong> den Wert <strong>0</strong> (Null) ein.</li>
 <li>Wählen Sie im Feld <strong>Grund</strong> <strong>Kurze Entnahme mit automatischer Neuzuteilung</strong> aus.</li>
 </ol>

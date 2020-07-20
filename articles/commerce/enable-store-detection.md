@@ -3,7 +3,7 @@ title: Standortbasierte Shop-Erkennung aktivieren
 description: In diesem Thema wird beschrieben, wie ortsbasierte Shoperkennung für Ihre Dynamics 365 Commerce Site erkannt wird.
 author: brianshook
 manager: annbe
-ms.date: 03/02/2020
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 66ffe56f9d969c9d62ed4ff49f0848fab7e58a56
-ms.sourcegitcommit: 567132f4e4f7a1d76dccf762068209a42c788b52
+ms.openlocfilehash: 4d3a423bf64900e547a23f2e5eeb90aa679ec5d1
+ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3096868"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3533389"
 ---
 # <a name="enable-location-based-store-detection"></a>Standortbasierte Shop-Erkennung aktivieren
 
@@ -50,13 +50,11 @@ Um ortsbasierte Shoperkennung im Handel zu aktivieren, gehen Sie folgendermaßen
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Ihren Domänennamen konfigurieren](configure-your-domain-name.md)
+[Konfigurieren Ihres Domänennamens](configure-your-domain-name.md)
 
 [Bereitstellen einer neuen E-Commerce-Webseite](deploy-ecommerce-site.md)
 
-[Onlineshopkanal einrichten](online-stores.md)
-
-[E-Commerce-Site erstellen](create-ecommerce-site.md)
+[Erstellen einer E-Commerce-Webseite](create-ecommerce-site.md)
 
 [Zuordnen einer Onlinewebseite zu einem Kanal](associate-site-online-store.md)
 

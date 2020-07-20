@@ -74,8 +74,6 @@
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: "Supply Chain Management\_10.0.11 (Juli 2020)"
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: "Supply Chain Management\_10.0.10 (Mai 2020)"
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
@@ -2565,193 +2563,231 @@
           items:
             - name: Lagerortverwaltung – Übersicht
               href: warehousing/warehouse-management-overview.md
-            - name: Lagerortkonfiguration
+            - name: Eingehende Lagerortvorgänge
               items:
-                - name: Lagerortkonfiguration – Übersicht
-                  href: warehousing/warehouse-configuration.md
-                - name: Einen Lagerort mithilfe einer Lagerortkonfigurationsvorlage einrichten
-                  href: inventory/warehouse-template.md
-                - name: Arbeit mithilfe von Arbeitsvorlagen und Lagerplatzanweisungen steuern
-                  href: warehousing/control-warehouse-location-directives.md
-                - name: Wellenschrittcodes
-                  href: warehousing/wave-step-codes.md
-                - name: Wellenverarbeitung konfigurieren
-                  href: warehousing/tasks/configure-wave-processing.md
-                - name: Automatisches Aktualisieren von Lieferungen
-                  href: warehousing/auto-update-shipment.md
-                - name: Lagerplatzprofil erstellen
-                  href: warehousing/tasks/create-location-profile.md
-                - name: Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
-                  href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
-                - name: Auslastungsnutzung planen
-                  href: warehousing/schedule-load-utilization.md
-                - name: Arbeitsauslastungskapazität planen
-                  href: warehousing/schedule-workload-capacity.md
-                - name: Dispositionscodes einrichten
-                  href: warehousing/tasks/set-up-dispositions-codes.md
-                - name: Maßeinheit und Lagerrichtlinien
-                  href: warehousing/unit-measure-stocking-policies.md
-                - name: Power BI-Lagerortinhalt
-                  href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
-                - name: Systemgruppierung in einer offenen Arbeitsliste
-                  href: warehousing/system-group-on-open-work-list.md
-                - name: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
-                  href: warehousing/document-routing-layout-for-license-plates.md
-                - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Strichcodeunterstützung für Mobilgeräte
-                  href: warehousing/mobile-barcode-support.md
-                - name: Lagerort für Umlagerungsaufträge einrichten
-                  href: warehousing/transfer-orders-warehouse.md
-            - name: Reservierungen im Lagermanagement
+                - name: Belege für Erfassung und Einlagerung
+                  items:
+                    - name: Lagerinterne Abwicklung eingehender Ladungen für Bestellungen
+                      href: warehousing/inbound-load-handling.md
+                    - name: Artikel für einen für die erweiterte Lagerhaltung aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+                      href: warehousing/tasks/register-items-advanced-warehousing.md
+                    - name: Artikel für einen für grundlegendes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
+                      href: warehousing/tasks/register-items-basic-warehousing.md
+                    - name: Produkte vom empfangenden Lagerort Filialen zuordnen
+                      href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
+                    - name: Lagerplatzrichtlinie für Einlagerung von Bestellungen festlegen
+                      href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
+                    - name: Arbeitsvorlage für Bestellungen einrichten
+                      href: warehousing/tasks/set-up-work-template-purchase-orders.md
+                    - name: Lagerplatz-Produktdimensionsmischung
+                      href: warehousing/location-product-dimension-mixing.md
+            - name: Ausgehende Lagerortvorgänge
               items:
-                - name: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerebene
-                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
-            - name: Lagerortarbeitsrichtlinien
-              items:
-                - name: Lagerortarbeitsrichtlinien – Übersicht
-                  href: warehousing/warehouse-work-policies.md
-                - name: Lagerortarbeitsrichtlinien einrichten
-                  href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
-                - name: Bewegung von Bestand mit zugeordneter Arbeit in der Lagerortverwaltung
-                  href: warehousing/move-inventory-associated-work.md
-                - name: Eine Arbeitsklasse erstellen
-                  href: warehousing/tasks/create-work-class.md
-                - name: Verwalten der Lagerortarbeitskräfte
-                  href: warehousing/manage-warehouse-workers.md
-                - name: Verzögerte Verarbeitung der Lagerarbeit
-                  href: warehousing/deferred-put.md
-            - name: Crossdocking
-              items:
-                - name: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
-                  href: production-control/cross-docking-opportunities.md
-                - name: Lieferung automatisch für Crossdocking freigeben
-                  href: warehousing/auto-release-shipment-for-cross-docking.md
-            - name: Teilweise Freigabe und teilweise Lieferung
-              items:
-                - name: Partielle Lieferung einer Datentransportauslastung
-                  href: warehousing/partial-shipping-of-transport-loads.md
-                - name: Chargenfreigabe von teilweise reservierten Umlagerungsaufträgen
-                  href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-            - name: Entnahme und Verpackung
-              items:
-                - name: Clusterkommissionierung einrichten
-                  href: warehousing/set-up-cluster-picking.md
-                - name: Verpacken in Container einrichten
-                  href: warehousing/tasks/set-up-containerization.md
-                - name: Chargen- und Kennzeichenbestätigung
-                  href: warehousing/batch-and-license-plate-confirmation.md
-                - name: Kennzeichenbeschriftungs-Druck aktivieren
-                  href: warehousing/tasks/license-plate-label-printing.md
-                - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
-                  href: warehousing/scan-bar-codes-using-a-camera.md
-                - name: Stückentnahmebestätigung
-                  href: warehousing/piece-picking-confirmation.md
-                - name: Verpackungsmaterialien und Gebühren
-                  href: warehousing/pack-materials-packing-material-fees.md
-                - name: Manuelle Verpackung einrichten (nur Februar und Mai 2016)
-                  href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
-                - name: Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten
-                  href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-                - name: Stornieren von Lagerarbeit für die Ausnahmebehandlung
-                  href: warehousing/cancel-warehouse-work.md
-                - name: Systemgeleitete Clusterkommissionierung
-                  href: warehousing/system-directed-cluster-pick.md
-                - name: Gruppierung von Kommissionierpositionen
-                  href: warehousing/pick-line-grouping.md
-            - name: Lagerinventur
-              items:
-                - name: Ursachencodes für Lagerinventuren anzeigen
-                  href: warehousing/reason-codes-for-counting-journals.md
-                - name: Lagerbestand sperren
-                  href: inventory/inventory-blocking.md
-                - name: Zykluszählung
-                  href: warehousing/cycle-counting.md
-                - name: Zykluszählung definieren
-                  href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
-                - name: Teilweise Lagerplatz-Zykluszählung
-                  href: warehousing/partial-location-cycle-counting.md
-                - name: Partiellen Lagerplatz-Zykluszählungsprozess definieren
-                  href: warehousing/tasks/define-partial-location-cycle-counting-process.md
-                - name: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
-                  href: warehousing/onhand-cleanup.md
-                - name: Lagererfassung
-                  href: inventory/inventory-journals.md
-                - name: Lagerplatz für Lagerbestand
-                  href: inventory/inventory-locations.md
-                - name: Bestandsstatus
-                  href: inventory/inventory-statuses.md
-                - name: Markierungsinventur
-                  href: inventory/inventory-tag-counting.md
-            - name: Wiederbeschaffung
-              items:
-                - name: Wiederbeschaffung – Übersicht
-                  href: warehousing/replenishment.md
-                - name: Sofortige Wiederbeschaffung
-                  href: warehousing/immediate-replenishment.md
-                - name: Wiederbeschaffung mit Entnahme-Kanbans
-                  href: warehousing/material-replenishment-withdrawal-kanban.md
-                - name: Einen Min-Max-Wiederbeschaffungsprozess einrichten
-                  href: warehousing/tasks/set-up-min-max-replenishment-process.md
-            - name: Lagerort-App installieren und konfigurieren
-              items:
-                - name: Lagerort-App installieren und Verbindung herstellen
-                  href: warehousing/install-configure-warehousing-app.md
-                - name: Feldnamen in Lagerhaltungs-App konfigurieren
-                  href: warehousing/configure-app-field-names-priorities-warehouse.md
-                - name: Mobile Geräte für Lagerarbeiten einrichten
-                  href: warehousing/configure-mobile-devices-warehouse.md
-                - name: Kennzeicheneingang mit der Lagerort-App
-                  href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                - name: Eine Menüoption des mobilen Geräts für die Fertigstellung von Arbeiten in einer Bestellung einrichten
-                  href: warehousing/tasks/set-up-mobile-device-menu.md
-                - name: 'Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen'
-                  href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                - name: Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen
-                  href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
-                  href: warehousing/mixed-license-plate-receiving.md
-                - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
-                  href: warehousing/display-older-batches-within-warehouses.md
-                - name: Entnahme der ältesten Charge mit einem mobilen Gerät
-                  href: warehousing/pick-oldest-batch.md
-                - name: Verwenden des Prozessleitfadens
-                  href: warehousing/process-guide-framework.md
-            - name: Upgrade und Migration
-              items:
-                - name: Upgrade der Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations
-                  href: warehousing/upgrade-migration-warehouse-management-processes.md
-            - name: Zugänge für die Erfassung und Einlagerung
-              items:
-                - name: Abwicklung im Lager eingehender Ladungen für Bestellungen
-                  href: warehousing/inbound-load-handling.md
-                - name: Artikel für einen für die erweiterte Lagerhaltung aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
-                  href: warehousing/tasks/register-items-advanced-warehousing.md
-                - name: Artikel für einen für grundlegendes Warehousing aktivierten Artikel mithilfe einer Wareneingangserfassung registrieren
-                  href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Produkte vom empfangenden Lagerort Filialen zuordnen
-                  href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-                - name: Lagerplatzdirektive für Bestellungseinlagerung einrichten
-                  href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
-                - name: Arbeitsvorlage für Bestellungen einrichten
-                  href: warehousing/tasks/set-up-work-template-purchase-orders.md
-            - name: Richtlinien zur Lieferungskonsolidierung
-              items:
+                - name: Reservierungen im Lagermanagement
+                  items:
+                    - name: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerebene
+                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                - name: Teilweise Freigabe und teilweise Lieferung
+                  items:
+                    - name: Partielle Lieferung einer Datentransportauslastung
+                      href: warehousing/partial-shipping-of-transport-loads.md
+                    - name: Chargenfreigabe von teilweise reservierten Umlagerungsaufträgen
+                      href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
+                - name: Entnahme und Verpackung
+                  items:
+                    - name: Clusterkommissionierung einrichten
+                      href: warehousing/set-up-cluster-picking.md
+                    - name: Verpacken in Container einrichten
+                      href: warehousing/tasks/set-up-containerization.md
+                    - name: Chargen- und Kennzeichenbestätigung
+                      href: warehousing/batch-and-license-plate-confirmation.md
+                    - name: Kennzeichenbeschriftungs-Druck aktivieren
+                      href: warehousing/tasks/license-plate-label-printing.md
+                    - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Stückentnahmebestätigung
+                      href: warehousing/piece-picking-confirmation.md
+                    - name: Verpackungsmaterialien und Gebühren
+                      href: warehousing/pack-materials-packing-material-fees.md
+                    - name: Manuelle Verpackung einrichten (nur Februar und Mai 2016)
+                      href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+                    - name: Artikelneuzuordnung für Entnahme mit unzureichender Menge einrichten
+                      href: warehousing/tasks/set-up-short-picking-item-reallocation.md
+                    - name: Lagerarbeit bei der Ausnahmebehandlung stornieren
+                      href: warehousing/cancel-warehouse-work.md
+                    - name: Systemgeleitete Clusterkommissionierung
+                      href: warehousing/system-directed-cluster-pick.md
+                    - name: Systemgeleitete Arbeitsabfolgen
+                      href: warehousing/system-directed-work-sequencing.md
+                    - name: Gruppierung von Kommissionierpositionen
+                      href: warehousing/pick-line-grouping.md
+                    - name: Zeitfenster für Lagerort zuweisen
+                      href: warehousing/warehouse-slotting.md
+                - name: Wiederbeschaffung
+                  items:
+                    - name: Wiederbeschaffung – Übersicht
+                      href: warehousing/replenishment.md
+                    - name: Sofortige Wiederbeschaffung
+                      href: warehousing/immediate-replenishment.md
+                    - name: Wiederbeschaffung mit Entnahme-Kanbans
+                      href: warehousing/material-replenishment-withdrawal-kanban.md
+                    - name: Min-Max-Wiederbeschaffungsprozess einrichten
+                      href: warehousing/tasks/set-up-min-max-replenishment-process.md
+                    - name: Schwellenwert für Zonenwiederbeschaffung
+                      href: warehousing/zone-threshold-replenishment.md
+                - name: Ladungserstellung und Versand
+                  items:
+                    - name: Bestätigen und übertragen
+                      href: warehousing/confirm-and-transfer.md
+                    - name: Erweiterte Ladungserstellung während einer Welle
+                      href: warehousing/advanced-load-building-during-wave.md
+                    - name: Freigabe an Lagerregel
+                      href: warehousing/release-to-warehouse-rule.md
+                    - name: Wellenvorlagengruppierung
+                      href: warehousing/wave-template-grouping.md
                 - name: Richtlinien zur Lieferungskonsolidierung
-                  href: warehousing/about-shipment-consolidation-policies.md
-                - name: Richtlinien zur Lieferungskonsolidierung konfigurieren
-                  href: warehousing/configure-shipment-consolidation-policies.md
-                - name: "Szenario\_1: Lieferungen mithilfe der automatischen Auftragsfreigabe konsolidieren, wenn sie im Lager freigegeben werden"
-                  href: warehousing/consolidate-shipments-automatic.md
-                - name: "Szenario\_2: Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird"
-                  href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                - name: "Szenario\_3: Lieferungen mithilfe von „An Lager freigeben“ von der Ladungsplanungs-Workbench aus konsolidieren"
-                  href: warehousing/consolidate-shipments-load-planning-workbench.md
-                - name: "Szenario\_4: Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren"
-                  href: warehousing/consolidate-shipments-manual-workbench.md
-                - name: "Szenario\_5: Lieferungen manuell auf der Seite zur Lieferungskonsolidierung konsolidieren"
-                  href: warehousing/consolidate-shipments-manual-form.md
-        - name: Supply Chain Management-Entwicklung
+                  items:
+                    - name: Richtlinien zur Lieferungskonsolidierung
+                      href: warehousing/about-shipment-consolidation-policies.md
+                    - name: Richtlinien zur Lieferungskonsolidierung konfigurieren
+                      href: warehousing/configure-shipment-consolidation-policies.md
+                    - name: "Szenario\_1: Lieferungen mithilfe der automatischen Auftragsfreigabe konsolidieren, wenn sie im Lager freigegeben werden"
+                      href: warehousing/consolidate-shipments-automatic.md
+                    - name: "Szenario\_2: Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird"
+                      href: warehousing/consolidate-shipments-release-to-warehouse-override.md
+                    - name: "Szenario\_3: Lieferungen mithilfe von „An Lager freigeben“ von der Ladungsplanungs-Workbench aus konsolidieren"
+                      href: warehousing/consolidate-shipments-load-planning-workbench.md
+                    - name: "Szenario\_4: Lieferungen mithilfe der Workbench zur Lieferungskonsolidierung konsolidieren"
+                      href: warehousing/consolidate-shipments-manual-workbench.md
+                    - name: "Szenario\_5: Lieferungen manuell auf der Seite zur Lieferungskonsolidierung konsolidieren"
+                      href: warehousing/consolidate-shipments-manual-form.md
+            - name: Vorgänge im gesamten Lager
+              items:
+                - name: Lagerortarbeitsrichtlinien
+                  items:
+                    - name: Lagerortarbeitsrichtlinien – Übersicht
+                      href: warehousing/warehouse-work-policies.md
+                    - name: Lagerortarbeitsrichtlinien einrichten
+                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
+                    - name: Bewegung von Bestand mit zugeordneter Arbeit in der Lagerortverwaltung
+                      href: warehousing/move-inventory-associated-work.md
+                    - name: Eine Arbeitsklasse erstellen
+                      href: warehousing/tasks/create-work-class.md
+                    - name: Verwalten der Lagerortarbeitskräfte
+                      href: warehousing/manage-warehouse-workers.md
+                    - name: Verzögerte Verarbeitung der Lagerarbeit
+                      href: warehousing/deferred-put.md
+                - name: Crossdocking
+                  items:
+                    - name: Crossdocking von Produktionsaufträgen zu Ausgangsrampen
+                      href: production-control/cross-docking-opportunities.md
+                    - name: Lieferung automatisch für Crossdocking freigeben
+                      href: warehousing/auto-release-shipment-for-cross-docking.md
+                    - name: Geplantes Crossdocking
+                      href: warehousing/planned-cross-docking.md
+                - name: Lagerinventur
+                  items:
+                    - name: Ursachencodes für Lagerinventuren anzeigen
+                      href: warehousing/reason-codes-for-counting-journals.md
+                    - name: Lagerbestand sperren
+                      href: inventory/inventory-blocking.md
+                    - name: Zykluszählung
+                      href: warehousing/cycle-counting.md
+                    - name: Zykluszählung definieren
+                      href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+                    - name: Teilweise Lagerplatz-Zykluszählung
+                      href: warehousing/partial-location-cycle-counting.md
+                    - name: Partiellen Lagerplatz-Zykluszählungsprozess definieren
+                      href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
+                      href: warehousing/onhand-cleanup.md
+                    - name: Lagererfassung
+                      href: inventory/inventory-journals.md
+                    - name: Lagerplatz für Lagerbestand
+                      href: inventory/inventory-locations.md
+                    - name: Lagerstatus
+                      href: inventory/inventory-statuses.md
+                    - name: Markierungsinventur
+                      href: inventory/inventory-tag-counting.md
+                - name: Lagerortarbeit
+                  items:
+                    - name: Arbeitspositionsdetails
+                      href: warehousing/work-line-details.md
+                    - name: Positionierung von Lagerplatzkennzeichen
+                      href: warehousing/location-license-plate-positioning.md
+            - name: Lagerorteinrichtung
+              items:
+                - name: Lagerortkonfiguration
+                  items:
+                    - name: Lagerortkonfiguration – Übersicht
+                      href: warehousing/warehouse-configuration.md
+                    - name: Einen Lagerort mithilfe einer Lagerortkonfigurationsvorlage einrichten
+                      href: inventory/warehouse-template.md
+                    - name: Arbeit mithilfe von Arbeitsvorlagen und Lagerplatzanweisungen steuern
+                      href: warehousing/control-warehouse-location-directives.md
+                    - name: Wellenschrittcodes
+                      href: warehousing/wave-step-codes.md
+                    - name: Wellenverarbeitung konfigurieren
+                      href: warehousing/tasks/configure-wave-processing.md
+                    - name: Automatisches Aktualisieren von Lieferungen
+                      href: warehousing/auto-update-shipment.md
+                    - name: Lagerplatzprofil erstellen
+                      href: warehousing/tasks/create-location-profile.md
+                    - name: Lagerplätze an einem für WMS aktivierten Lagerort konfigurieren
+                      href: warehousing/tasks/configure-locations-wms-enabled-warehouse.md
+                    - name: Status des Lagerplatzes an einem Lagerort
+                      href: warehousing/warehouse-location-status.md
+                    - name: Zusätzliche Lagerplatzzonen
+                      href: warehousing/additional-location-zones.md
+                    - name: Auslastungsnutzung planen
+                      href: warehousing/schedule-load-utilization.md
+                    - name: Arbeitsauslastungskapazität planen
+                      href: warehousing/schedule-workload-capacity.md
+                    - name: Dispositionscodes einrichten
+                      href: warehousing/tasks/set-up-dispositions-codes.md
+                    - name: Maßeinheit und Lagerrichtlinien
+                      href: warehousing/unit-measure-stocking-policies.md
+                    - name: Power BI-Lagerortinhalt
+                      href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
+                    - name: Systemgruppierung in einer offenen Arbeitsliste
+                      href: warehousing/system-group-on-open-work-list.md
+                    - name: Dokumentweiterleitungs-Layout für Kennzeichenbeschriftungen
+                      href: warehousing/document-routing-layout-for-license-plates.md
+                    - name: Strichcodes mithilfe einer Kamera in Dynamics 365 for Finance and Operations scannen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                    - name: Strichcodeunterstützung für Mobilgeräte
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Lagerort für Umlagerungsaufträge einrichten
+                      href: warehousing/transfer-orders-warehouse.md
+                - name: Lagerort-App installieren und konfigurieren
+                  items:
+                    - name: Lagerort-App installieren und Verbindung herstellen
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Feldnamen in Lagerort-App konfigurieren
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Mobile Geräte für Lagerarbeiten einrichten
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Kennzeicheneingang mit der Lagerort-App
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Menüoption zur Fertigstellung von Arbeiten in einer Bestellung auf Mobilgeräten einrichten
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: 'Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen'
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Konfigurieren der Anzeige von älteren Chargen am Lagerort auf einem mobilen Gerät
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Entnahme der ältesten Charge mit einem mobilen Gerät
+                      href: warehousing/pick-oldest-batch.md
+                    - name: Verwenden des Prozessleitfadens
+                      href: warehousing/process-guide-framework.md
+                - name: Upgrade und Migration
+                  items:
+                    - name: Upgrade der Lagerortverwaltungsprozesse von Microsoft Dynamics AX 2012 auf Finance and Operations
+                      href: warehousing/upgrade-migration-warehouse-management-processes.md
+        - name: Entwicklung von Supply Chain Management
           items:
             - name: Anleitung zur Entwicklung von Gantt-Steuerelementen
               href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?toc=/dynamics365/supply-chain/toc.json

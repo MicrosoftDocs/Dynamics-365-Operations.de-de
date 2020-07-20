@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "25.\_Juni\_2020"
+          href: hr-whats-new-2020-06-23.md
         - name: "11.\_Juni\_2020"
           href: hr-whats-new-2020-06-11.md
         - name: "28.\_Mai\_2020"
@@ -137,13 +139,15 @@
               href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json
             - name: Dokumentation oder Schulung mit der Aufgabenaufzeichnung erstellen
               href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json
-        - name: Problembehandlung in der Personalverwaltung
+        - name: Problembehandlung in Human Resources
           items:
             - name: Support anfordern
               href: hr-admin-troubleshooting-support.md
-            - name: Leistung mit automatischen Bereinigungsaufgaben optimieren
+            - name: Leistung durch Einplanung von Batchaufträgen nach Stunden verbessern
+              href: hr-admin-troubleshooting-batch-jobs.md
+            - name: Leistung durch automatische Bereinigungsaufgaben verbessern
               href: hr-admin-troubleshooting-batch-history.md
-            - name: Analytics-Berichte werden nicht aktualisiert
+            - name: Analyseberichte werden nicht aktualisiert
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Erstellen einer Umgebung im Power Apps Admin Center nicht möglich
               href: hr-admin-troubleshooting-power-apps.md

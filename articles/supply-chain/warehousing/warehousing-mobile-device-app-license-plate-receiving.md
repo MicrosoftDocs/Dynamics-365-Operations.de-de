@@ -1,6 +1,6 @@
 ---
-title: Kennzeichenempfang über die Lagerhaltungs-App
-description: In diesem Thema wird erläutert, wie Sie die Lagerhaltungs-App so einrichten, dass die Verwendung eines Kennzeichen-Empfangsprozesses zum Empfangen von Bestand unterstützt wird.
+title: Kennzeichenempfang über die Warehouse-App
+description: In diesem Thema wird erläutert, wie Sie die Warehouse-App so einrichten, dass die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt wird.
 author: perlynne
 manager: tfehr
 ms.date: 04/29/2020
@@ -15,16 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 82b4f40510d5bbf829508f17f1064886620a4aed
-ms.sourcegitcommit: a3cd2783ae120ac6681431c010b9b126a9ca7d94
+ms.openlocfilehash: 5330981bde98b80e81076a9b1416473135ebdac6
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3410884"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530189"
 ---
-# <a name="license-plate-receiving-via-the-warehousing-app"></a>Kennzeichenempfang über die Lagerhaltungs-App
+# <a name="license-plate-receiving-via-the-warehouse-app"></a>Kennzeichenempfang über die Warehouse-App
 
-In diesem Thema wird erläutert, wie Sie die Lagerhaltungs-App einrichten, so dass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
+In diesem Thema wird erläutert, wie Sie die Warehouse-App einrichten, sodass sie die Verwendung eines Kennzeichenempfangsprozesses zum Empfangen von Bestand unterstützt.
 
 Mit dieser Funktion können Sie schnell den Eingang des eingehenden Bestands aufzeichnen, der sich auf eine Vorabmitteilung (ASN) bezieht. Das System erstellt automatisch einen Lieferavis, wenn Lagerverwaltungsprozesse zum Versenden eines Transportauftrags verwendet werden. Für den Bestellvorgang kann ein ASNs manuell erfasst oder mithilfe eines eingehenden ASN-Datenentitätsprozesses automatisch importiert werden.
 

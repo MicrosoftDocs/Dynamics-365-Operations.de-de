@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d11db378be6b2ba845de0ac0a2252092a50bc96a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2d8d6e67040f19cac99f8e0164296ef49768496e
+ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201478"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "3530235"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Auto-Freigabelieferung für Crossdocking
 
@@ -164,7 +164,7 @@ Für ein Crossdocking der Menge von Fertigerzeugnissen für den ausgehenden Lage
 8. Auf der Seite **Produktionsauftrag** im Aktivitätsbereich auf der **Produktionsauftrag**-Registerkarte in der Gruppe **Prozess** wählen Sie **Vorkalkulation** und dann **OK** aus. Der Auftrag wird vorkalkuliert und die Rohmaterialmenge wird für die Produktion reserviert.
 9. Im Aktivitätsbereich auf der **Produktionsauftrag**-Registerkarte in der Gruppe **Prozess** wählen Sie **Freigabe** und dann **OK** aus. Die Lagerortentnahmearbeit wird für die Rohmaterialien erstellt.
 10. Öffnen und überprüfen Sie die Arbeit. Wählen Sie im Aktivitätsbereich, auf der Registerkarte **Lagerort** in der Gruppe **Allgemein** die Option **Arbeitsdetails** aus. Notieren Sie die Arbeits-ID.
-11. Öffnet Sie die Dynamics 365 for Finance and Operations Warehousing-App und melden Sie sich an, um die Arbeit an Lagerort 51 auszuführen.
+11. Melden Sie sich bei der Warehouse-App an, um die Arbeit an Lagerort 51 auszuführen.
 12. Gehen Sie zu **Produktion** \> **Produktionsentnahme**.
 13. Geben Sie die Arbeits-ID ein, um schließen Sie die Rohmaterialentnahme ab. 
 

@@ -3,7 +3,7 @@ title: Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung
 description: In diesem Thema wird erläutert, wie eine Microsoft Dynamics 365 Commerce-Vorschauumgebung nach ihrer Bereitstellung konfiguriert wird.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d72caee25c03e8167b94dd387c7861f98bd0f4cb
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: ad05996eaabd3965308370649a27b8bc3080c7ce
+ms.sourcegitcommit: f72e90dccc80718e99cab2752eaf8931dcbb915e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057716"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "3534066"
 ---
 # <a name="configure-a-dynamics-365-commerce-preview-environment"></a>Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung
 
@@ -116,7 +116,7 @@ Um Jobs in Commerce zu ermöglichen, folgen Sie diesen Schritten.
 
 Um die vollständige Datensynchronisation im Handel auszuführen, führen Sie die folgenden Schritte aus.
 
-1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail and Commerce \> Headquarter Einrichtung \> Einzelhandelsplaner \> Kanaldatenbank** zu gehen.
+1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Einzelhandel und Handel \> Zentralverwaltungseinrichtung \> Commerce-Planer \> Kanaldatenbank** zu wechseln.
 1. In der Liste links wird der Kanal **Standard** ausgewählt. Wählen Sie den anderen verfügbaren Kanal. Dieser Kanal heißt **scXXXXXXXXX**.
 1. Wählen Sie **Vollständige Datensynchronisierung** im Aktionsbereich aus.
 1. Geben Sie **9999** als Vertriebsplan ein.

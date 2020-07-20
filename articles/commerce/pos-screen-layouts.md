@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: boycezhu
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3a84318f7156ef42f7e00f1e89228f541b1634ce
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
+ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261466"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "3505633"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle Konfigurationen der POS-Benutzeroberfläche
 
@@ -101,7 +101,7 @@ Die POS-Anwendung wählt automatisch die nächste Layoutgröße für das Gerät 
 > [!TIP]
 > Sie können die Layoutgröße ermitteln, die für einen POS-Bildschirm erforderlich ist, indem die Lösung in der Zeit-App angezeigt wird. POS starten und zu **Einstellungen \> Einstellungsinformationen** wechseln. POS zeigt das Bildschirmlayout, das gerade geladen wird, die Layoutgröße und die Auflösung des Apps-Fensters.
 
-![POS-Layoutgrößen](../commerce/media/POS-Session-Information.png)
+![POS-Sitzungsinformationsseite mit dem aktuell geladenen Bildschirmlayout, der Layoutgröße und der Auflösung des App-Fensters](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Schaltflächenraster
 
