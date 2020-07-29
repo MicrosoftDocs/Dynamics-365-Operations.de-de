@@ -1434,8 +1434,6 @@
               href: sysadmin/pre-configured-system-accounts.md
             - name: B2B-Benutzer in Azure AD exportieren
               href: sysadmin/implement-b2b.md
-            - name: Prozessautomatisierung
-              href: sysadmin/process-automation.md
             - name: Sicherheit
               items:
                 - name: Rollenbasierte Sicherheit
@@ -1458,10 +1456,16 @@
                   href: sysadmin/tasks/identify-resolve-conflicts-segregation-duties.md
                 - name: Benutzern Sicherheitsrollen zuweisen
                   href: sysadmin/tasks/assign-users-security-roles.md
+                - name: Importieren oder Exportieren einer angepassten Sicherheitskonfiguration mit der Datenverwaltung
+                  href: sysadmin/import-export-customized-security.md
                 - name: Sicherheitsdiagnose für Aufgabenaufzeichnungen
                   href: sysadmin/tasks/security-diagstics-task-recordings.md
+                - name: Erweiterbare Datensicherheitsrichtlinien
+                  href: sysadmin/extensible-data-security-policies.md
+                - name: Sicherheitsrichtlinie erstellen
+                  href: sysadmin/create-simple-security-policy.md
             - name: Prozessautomatisierung
-              href: /sysadmin/process-automation.md
+              href: sysadmin/process-automation.md
             - name: Batchverarbeitung
               items:
                 - name: Batchverarbeitung – Übersicht
@@ -1582,7 +1586,7 @@
               items:
                 - name: Prozess zum Verschieben auf das neueste Update
                   href: migration-upgrade/upgrade-latest-update.md
-                - name: Pfade zu einer Version
+                - name: Pfade zu One Version
                   items:
                     - name: Self-Service-Aktualisierung zur neuesten Version
                       href: migration-upgrade/self-service-upgrade.md
@@ -1670,7 +1674,7 @@
                   href: user-interface/check-box-tree-controls.md
                 - name: Filteroptionen
                   href: user-interface/filtering.md
-                - name: PowerApps-Hoststeuerung
+                - name: Power Apps-Hoststeuerung
                   href: user-interface/powerapps-host-control.md
             - name: Fensterverwaltung
               items:

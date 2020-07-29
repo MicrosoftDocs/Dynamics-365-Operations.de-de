@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "8.\_Juli\_2020"
+          href: hr-whats-new-2020-07-08.md
         - name: "25.\_Juni\_2020"
           href: hr-whats-new-2020-06-23.md
         - name: "11.\_Juni\_2020"
@@ -577,5 +579,7 @@
           items:
             - name: Mitarbeiter- und Manager-Self-Service-Übersicht
               href: hr-employee-manager-self-service-overview.md
+            - name: Name des Self-Service-Arbeitsbereichs für Mitarbeiter ändern
+              href: hr-employee-self-service-workspace-name.md
             - name: Persönliche Daten bearbeiten
               href: hr-employee-manager-self-service-edit-personal-information.md
