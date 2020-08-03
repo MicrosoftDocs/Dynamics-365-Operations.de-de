@@ -1,9 +1,9 @@
 ---
-title: Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung
-description: In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Vorschauumgebung konfiguriert wird.
+title: Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
+description: In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung konfiguriert werden.
 author: psimolin
 manager: annbe
-ms.date: 12/10/2019
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,28 +17,25 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b17f8e9b0d8a9a62714d0073561e66642b2eaf9
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6f7ba7e6de3791720458b509059f008423c73a82
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057739"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599819"
 ---
-# <a name="configure-optional-features-for-a-dynamics-365-commerce-preview-environment"></a>Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung
-
+# <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Vorschauumgebung konfiguriert wird.
+In diesem Thema wird erläutert, wie optionale Funktionen für eine Microsoft Dynamics 365 Commerce-Auswertungsumgebung konfiguriert werden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Wenn Sie die Transaktions-E-Mail-Funktionen bewerten möchten, müssen die folgenden Voraussetzungen erfüllt sein:
 
-- Ihnen steht ein E-Mail-Server (Simple Mail Transfer Protocol \[SMTP\]-Server) zur Verfügung, der über das Microsoft Azure-Abonnement verwendet werden kann, auf dem Sie die Vorschauumgebung bereitstellen.
+- Ihnen steht ein E-Mail-Server (Simple Mail Transfer Protocol \[SMTP\]-Server) zur Verfügung, der über das Microsoft Azure-Abonnement verwendet werden kann, auf dem Sie die Auswertungsumgebung bereitgestellt haben.
 - Sie verfügen über den vollqualifizierten Domänennamen (FQDN)/die vollqualifizierte IP-Adresse, die SMTP-Portnummer und die Authentifizierungsdetails des Servers.
-
-Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer Mehrkanal-Images bewerten möchten, muss Ihnen der Name Ihres CMS-Mandanten (Content Management System) zur Verfügung stehen. Anweisungen zum Auffinden dieses Namens finden Sie weiter unten in diesem Thema. >>> (F: Wo sind die Anweisungen?)
 
 ## <a name="configure-the-image-back-end"></a>Konfigurieren Sie das Image-Backend
 
@@ -47,9 +44,9 @@ Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer
 > [!NOTE]
 > Bevor Sie diesen Vorgang abschließen können, müssen Sie die Schritte in [Richten Sie Ihre Site in Commerce ein](cpe-post-provisioning.md#set-up-your-site-in-commerce) abschließen.
 
-1. Melden Sie sich beim Commerce-Site-Management-Tool mit der URL an, die Sie bei der Initialisierung von E-Commerce während der Bereitstellung notiert haben (siehe [E-Commerce initialisieren](provisioning-guide.md#initialize-e-commerce)).
+1. Melden Sie sich beim Commerce-Website-Generator mit der URL an, die Sie bei der Initialisierung von E-Commerce während der Bereitstellung notiert haben (siehe [E-Commerce initialisieren](provisioning-guide.md#initialize-e-commerce)).
 1. Öffnen Sie die Site **Fabrikam**.
-1. Wählen Sie im linken Menü **Assets** aus.
+1. Wählen Sie im linken Menü **Medienbibliothek** aus.
 1. Wählen Sie ein einzelnes Image-Medienobjekt aus.
 1. Suchen Sie im Eigenschafteninspektor rechts die Eigenschaft **Öffentliche URL**. Der Wert ist eine URL. Hier ist ein Beispiel:
 
@@ -63,22 +60,22 @@ Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer
 
 ### <a name="update-the-media-base-url"></a>Aktualisieren der medienbasierten URL
 
-1. Melden Sie sich bei Dynamics 365 Commerce an.
+1. Melden Sie sich bei der Commerce-Zentralverwaltung an.
 1. Verwenden Sie das Menü auf der linken Seite, um zu **Module \> Retail and Commerce \> Kanaleinrichtung \> Kanalprofile** zu gehen.
 1. Wählen Sie **Bearbeiten** aus.
 1. Ersetzen Sie unter **Profileigenschaften** den Wert für die Eigenschaft **Media Server-Basis-URL** durch die medienbasierte URL, die Sie zuvor erstellt haben.
-1. Wählen Sie in der Liste links unter dem Kanal **Standard** den anderen Kanal aus.
+1. Wählen Sie den Kanal mit der Bezeichnung **scXXXXXXXXX** aus.
 1. Wählen Sie unter **Profileigenschaften** die Option **Hinzufügen** aus.
 1. Wählen Sie für die hinzugefügte Eigenschaft **Media Server-Basis-URL** als Eigenschaftsschlüssel aus. Geben Sie als Eigenschaftswert die zuvor erstellte Media Base-URL ein.
-1. Wählen Sie **Speichern**.
+1. Wählen Sie **Speichern** aus.
 
-## <a name="configure-the-email-server"></a>Konfigurieren des E-Mail-Servers
+## <a name="configure-and-test-the-email-server"></a>Den E-Mail-Server konfigurieren und testen
 
 > [!NOTE]
 > Der SMTP-Server oder E-Mail-Dienst, den Sie hier eingeben, muss über das Azure-Abonnement zugänglich sein muss, das Sie für die Umgebung verwenden.
 
-1. Melden Sie sich bei Commerce an.
-1. Navigieren Sie über das Menü links zu **Module \> Systemverwaltung \> Einstellungen \> E-Mail \> E-Mail-Parameter**.
+1. Melden Sie sich bei der Commerce-Zentralverwaltung an.
+1. Verwenden Sie das Menü links, um zu **Module \> Retail und Commerce \> Zentralverwaltungs-Setup \> Parameter \> E-Mail-Parameter** zu wechseln.
 1. Geben Sie auf der Registerkarte **SMTP-Einstellungen** im Feld **Name des SMTP-Servers** den vollständig qualifizierten Namen (FQDN) oder die IP-Adresse Ihres SMTP-Servers oder E-Mail-Dienstes an.
 1. Geben Sie im Feld **SMTP-Portnummer** die Portnummer ein. (Wenn Sie Secure Sockets Layer \[SSL\] nicht verwenden, lautet die Standardportnummer **25**.)
 1. Wenn eine Authentifizierung erforderlich ist, geben Sie Werte in das Feld **Benutzername** und **Kennwort** ein.
@@ -92,8 +89,8 @@ Wenn Sie die Funktionen der digitalen Anlagenverwaltung durch die Aufnahme neuer
 
 Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen Sie die E-Mail-Vorlage mit einer gültigen Absender-E-Mail-Adresse aktualisieren.
 
-1. Melden Sie sich bei Commerce an.
-1. Navigieren Sie über das Menü links zu **Module \> Organizationsverwaltung \> Einstellungen \> Organisations-E-Mail-Vorlagen**.
+1. Melden Sie sich bei der Commerce-Zentralverwaltung an.
+1. Verwenden Sie das Menü links, um zu **Module \> Retail und Commerce \> Zentralverwaltungs-Setup \> Parameter \> Organisations-E-Mail-Vorlagen** zu wechseln.
 1. Wählen Sie **Liste anzeigen** aus.
 1. Führen Sie für jede Vorlage in der Liste die folgenden Schritte aus:
 
@@ -104,9 +101,9 @@ Für jedes Transaktionsereignis, für das Sie E-Mails senden möchten, müssen S
 
 ## <a name="customize-email-templates"></a>E-Mail-Vorlagen anpassen
 
-Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschiedliche Bilder verwenden. Oder Sie möchten die Links in den Vorlagen aktualisieren, damit sie in Ihre Vorschauumgebung gelangen. In dieser Prozedur wird erläutert, wie Sie die Standardvorlagen herunterladen, anpassen und die Vorlagen im System aktualisieren.
+Möglicherweise möchten Sie die E-Mail-Vorlagen so anpassen, dass sie unterschiedliche Bilder verwenden. Oder Sie möchten die Links in den Vorlagen aktualisieren, damit sie in Ihre Auswertungsumgebung gelangen. In dieser Prozedur wird erläutert, wie Sie die Standardvorlagen herunterladen, anpassen und die Vorlagen im System aktualisieren.
 
-1. Laden Sie über einen Webbrowser [die Datei Microsoft Dynamics 365 Commerce-Vorschau-Standard-E-Mail-Vorlagen.zip](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
+1. Laden Sie über einen Webbrowser die [Microsoft Dynamics 365 Commerce--Auswertungsstandard-E-Mail-Vorlagen-ZIP-Datei](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) auf Ihren lokalen Computer herunter. Diese Datei enthält die folgenden HTML-Dokumente:
 
     - Auftragsbestätigungsvorlage
     - Geschenkkartenvorlage ausstellen
@@ -156,7 +153,7 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 > [!NOTE]
 > Setzen Sie den Token **Produktliste – Start** an den Anfang des HTML-Blocks, der für jedes Produkt wiederholt wird, und den Token **Produktliste – Ende** an das Ende des Blocks.
 
-| Name des Token      | Token  |
+| Name des Token      | Token |
 |------------------------|-------|
 | Produktliste - Start   | \<!--%tablebegin.salesline% --\> |
 | Produktliste - Ende     | \<!--%tableend.salesline%--\> |
@@ -173,13 +170,15 @@ Die folgenden Token werden durch Werte für jedes Produkt im Auftrag ersetzt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Auswertungsumgebung – Übersicht](cpe-overview.md)
 
-[Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md)
+[Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
 
-[Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+[Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung](cpe-post-provisioning.md)
 
-[Dynamics 365 Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
+[BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-bopis.md)
+
+[Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

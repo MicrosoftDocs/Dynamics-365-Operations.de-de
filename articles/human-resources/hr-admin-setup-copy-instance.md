@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8385b7dfcd1d7294542c7f54f609b26b7988ac4
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b14baf49517f5d606038af20366944788b22eba2
+ms.sourcegitcommit: 1ec931f8fe86bde27f6def36ea214a2a05fb22f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431244"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3554324"
 ---
 # <a name="copy-an-instance"></a>Instanz kopieren
 
@@ -108,6 +108,6 @@ Darüber hinaus ändern sich die folgenden Status beim Kopieren einer Instanz:
 
 ## <a name="environment-admin"></a>Umgebungsadministrator
 
-Alle Benutzer in der Ziel-Sandkastenumgebung, einschließlich Administratoren, werden durch die Benutzer der Quellumgebung ersetzt. Stellen Sie vor dem Kopieren einer Instanz sicher, dass Sie ein Administrator in der Zielumgebung sind. Andernfalls können Sie sich nach Abschluss des Kopiervorgangs nicht mehr bei der Ziel-Sandkastenumgebung anmelden.
+Alle Benutzer in der Ziel-Sandkastenumgebung, einschließlich Administratoren, werden durch die Benutzer der Quellumgebung ersetzt. Stellen Sie vor dem Kopieren einer Instanz sicher, dass Sie ein Administrator in der Quellumgebung sind. Andernfalls können Sie sich nach Abschluss des Kopiervorgangs nicht mehr bei der Ziel-Sandkastenumgebung anmelden.
 
 Alle Nicht-Administrator-Benutzer in der Ziel-Sandkastenumgebung sind deaktiviert, um unerwünschte Anmeldungen in der Sandkastenumgebung zu verhindern. Administratoren können Benutzer bei Bedarf erneut aktivieren.

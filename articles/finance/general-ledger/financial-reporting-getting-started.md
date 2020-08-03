@@ -3,7 +3,7 @@ title: Überblick über die Finanzberichterstellung
 description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 Finance auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
 author: aprilolson
 manager: AnnBe
-ms.date: 04/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cd77e22f9c6f90f6aa9934d70a121008e1274dd
-ms.sourcegitcommit: 5419f2b8f51cd5de55be66d1389b5b9d7771fd52
+ms.openlocfilehash: 015f0282a2defcd7a8388eeaa70e0de6fb7cac78
+ms.sourcegitcommit: faaa4215f513885dd92cf7430b3612848ec09893
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "3262648"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "3609588"
 ---
 # <a name="financial-reporting-overview"></a>Finanzberichterstellung – Übersicht
 
@@ -34,7 +34,7 @@ In diesem Thema wird beschrieben, wo Sie auf Finanzberichte zugreifen und wie Si
 <a name="accessing-financial-reporting"></a>Finanzberichterstellung nutzen
 -----------------------------
 
-Sie können das Menü **Finanzberichterstellung** an den folgenden Stellen nutzen:
+Sie können das Menü **Finanzberichterstattung** an den folgenden Orten finden:
 
 -   **Hauptbuch** &gt; **Abfragen und Berichte**
 -   **Planung** &gt; **Anfragen und Berichte** &gt; **Grundlegende Planung**
@@ -49,6 +49,7 @@ Um Finanzberichte für eine juristische Person zu erstellen und zu generieren, m
 -   Kontenplan
 -   Währung
 
+## <a name="granting-security-access-to-financial-reporting"></a>Gewähren des Sicherheitszugriffs auf Financial Reporting
 Die Finanzberichtsfunktionen stehen Benutzern zur Verfügung, denen die entsprechenden Rechte und die Aufgaben über ihre Sicherheitsrollen zugewiesen werden. Die folgenden Abschnitten führen diese Rechte und Aufgaben und die zugeordneten Rollen auf.
 
 ### <a name="duties"></a>Aufgaben
@@ -78,15 +79,26 @@ Die Finanzberichtsfunktionen stehen Benutzern zur Verfügung, denen die entsprec
 | Finanzberichte generieren            | Finanzberichte generieren            | CEO, CFO, Buchhalter                                                            |
 | Finanzberichte anzeigen                | Die Finanzen des Unternehmens überprüfen          | Nicht zugewiesen                                                                   |
 
-Nachdem Sie ein Benutzer hinzugefügt haben, oder eine Rolle geändert wurde, sollte der Benutzer in der Lage sein, innerhalb weniger Minuten auf die Finanzberichterstellung zuzugreifen. **Hinweis** Die Rolle sysadmin wird allen Rollen in der Finanzberichterstellung hinzugefügt.
+Nachdem Sie ein Benutzer hinzugefügt haben, oder eine Rolle geändert wurde, sollte der Benutzer in der Lage sein, innerhalb weniger Minuten auf die Finanzberichterstellung zuzugreifen. 
+
+> [!NOTE]
+> Die Rolle SysAdmin wird allen Rollen in der Finanzberichterstattung hinzugefügt.
 
 ## <a name="report-deletions-and-expirations"></a>Löschungen und Verfallsdaten melden
 Benutzer, die einen Bericht erstellen, können ihre eigenen Berichte löschen. Benutzer mit der Pflicht **Finanzberichtssicherheit verwalten** können die Berichte anderer Benutzer löschen. 
 
-In Version 10.0.8 wurde das Konzept der Ablaufdaten eingeführt. Eine neue erforderliche Funktion wird auf der Seite **Alle** im Arbeitsbereich der Funktionsverwaltung aktiviert. Die Funktion **Richtlinien zur Aufbewahrung von Finanzberichten** enthält die folgenden Änderungen:
+Ab dem Release 10.0.7 wurde das Konzept der Ablaufdaten eingeführt. Eine neue erforderliche Funktion wird im Funktionsverwaltungsarbeitsbereich aktiviert. Diese Funktion enthält die folgenden Änderungen:
+
+* Neu generierte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Generierung gekennzeichnet.
+* Alle vorhandenen Berichte, die vor der Installation der Funktion erstellt wurden, haben eine Gültigkeitsdauer von 90 Tagen. Das Datum wird möglicherweise für einen kurzen Zeitraum leer angezeigt, bis der Finanzberichtsdienst ausgeführt wird, ein Bericht generiert wird und der Dienst die Aktualisierung vorhandener Berichte mit einem leeren Ablaufdatum durchführt. 
+* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Optionen zur Vermerkdauer verfügbar:
+   * Ablauf von 90 Tagen
+   * Eine Option zum Festlegen, dass der Bericht niemals abläuft
+
+Wenn ein Ablaufdatum, wie z. B. 90 Tage, ausgewählt ist, gilt es für 90 Tage ab dem heutigen Datum. Dies unterscheidet sich von den 90 Tagen ab dem ursprünglichen Generierungsdatum, das festgelegt wurde, als der Bericht generiert wurde. In Release 10.0.8 wurde das Konzept der Ablaufdaten eingeführt. Eine neue erforderliche Funktion ist auf der Seite **Alle** im Arbeitsbereich der Funktionsverwaltung aktiviert. Die Funktion **Richtlinien zur Aufbewahrung von Finanzberichten** enthält die folgenden Änderungen:
 * Neu erstellte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Erstellung gekennzeichnet
 * Alle vorhandenen Berichte, die vor der Installation der Funktion erstellt wurden, haben eine Gültigkeitsdauer von 90 Tagen. Das Datum wird möglicherweise für einen kurzen Zeitraum leer angezeigt, bis der Finanzberichtsdienst ausgeführt wird, ein Bericht generiert wird und der Dienst die Aktualisierung vorhandener Berichte mit einem leeren Ablaufdatum durchführt. 
-* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Aufbewahrungsoptionen verfügbar. 
+* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Optionen zur Vermerkdauer verfügbar: 
   * Ablauf von 90 Tagen.
   * Eine Option zum Festlegen, dass der Bericht niemals abläuft.
   
@@ -125,16 +137,36 @@ Die Finanzberichterstellung enthält 22 standardmäßige Finanzberichte. Jeder B
 | Die verfügbaren Budgetmittel - Standard                         | Hier wird ein detaillierter Vergleich des überarbeiteten Budgets, die tatsächliche Aufwendungen, Budgetreservierungen und der Budgetmittel, die für alle Konten verfügbar sind, angezeigt                                                                                                                                                                                  |
 
 ## <a name="opening-financial-reports"></a>Öffnen von Finanzberichten
-Wenn Sie auf das Menü **Finanzberichterstellung** klicken, wird die Liste der standardmäßigen Finanzberichte für das Unternehmen angezeigt. Sie können einen Bericht öffnen oder ändern. Um einen der Standardberichte zu öffnen, wählen Sie den Berichtsname aus. Wenn ein Bericht zum ersten Mal geöffnet wird, wird er automatisch für den vorherigen Monat generiert. Wenn Sie beispielsweise einen Bericht zum ersten Mal im August 2016 öffnen, wird der Bericht zum 31. Juli 2016 generiert. Nach dem Öffnen eines Berichts können Sie ihn durchsuchen, indem Sie Detailinformationen bestimmter Daten anzeigen und Berichtsoptionen ändern.
+Wenn Sie das Menü **Finanzberichterstattung** auswählen, wird die Liste der standardmäßigen Finanzberichte für das Unternehmen angezeigt. Sie können einen Bericht öffnen oder ändern. Um einen der Standardberichte zu öffnen, wählen Sie den Berichtsname aus. Wenn ein Bericht zum ersten Mal geöffnet wird, wird er automatisch für den vorherigen Monat generiert. Wenn Sie beispielsweise einen Bericht zum ersten Mal im August 2019 öffnen, wird der Bericht zum 31. Juli 2019 generiert. Nach dem Öffnen eines Berichts können Sie ihn durchsuchen, indem Sie Detailinformationen bestimmter Daten anzeigen und Berichtsoptionen ändern.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Finanzberichte erstellen und ändern
-Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** anklicken im Aktivitätsbereich. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste enthält nur Berichte, die für das Unternehmen erstellt wurden, das Sie in Finance verwenden. 
+Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** im Aktionsbereich auswählen. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste zeigt nur Berichte an, die für das Unternehmen erstellt wurden, das Sie in Dynamics 365 Finance verwenden. 
 
-> [!NOTE] 
-> Der Computer, auf dem Sie den Berichts-Designer-Client herunterladen, muss Version 4.6.2 von Microsoft .NET Framework installiert haben. Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345). Wenn Sie Chrome verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichtsdesigner-Client herunterzuladen. Wenn Sie den privaten Browser verwenden, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den privaten Modus aktiviert ist. Sie können auch einen Bericht ändern, der in der Finanzberichtsliste erscheint. Wenn der Bereich um den Berichtsnamen aktiviert ist, klicken Sie im Aktivitätsbereich auf **Bearbeiten**. Das Berichtsdesigner-Programm startet.
+## <a name="troubleshooting-issues-opening-report-designer"></a>Behandlung von Problemen beim Öffnen des Berichts-Designers
+Es gibt einige häufige Probleme, die beim Öffnen des Berichts-Designers zu Problemen führen können. Diese Probleme und die Schritte zu ihrer Behebung lauten wie folgt.
+
+Problem 1: Der Berichts-Designer wird nicht gestartet, wenn Sie **Neu** oder **Bearbeiten** auswählen.
+
+* Im Internet Explorer wählen Sie **Einstellungen** aus, dann wählen Sie **Internetoptionen** aus. Wähle Sie die Registerkarte **Sicherheit** aus. Wählen Sie „Vertrauenswürdige Sites“ und dann **Sites** aus. Unter **Diese Website zur Zone hinzufügen** geben Sie „\*\.dynamics.com“ (ohne Anführungszeichen) ein und wählen dann **Hinzufügen** aus. 
+* Im Internet Explorer wählen Sie **Einstellungen** aus, dann wählen Sie **Internetoptionen** aus. Wählen Sie die Registerkarte **Sicherheit** aus. Wählen Sie „Vertrauenswürdige Sites“ aus. Im Bereich mit der Bezeichnung „Sicherheitsstufe für diese Zone“ ändern Sie die Option zu **Mittel bis niedrig**.
+* Deaktivieren Sie den Popupblocker in Ihrem Browser.
+* Auf Arbeitsstationen muss Visual Studio .NET 4.6.2 oder höher installiert sein.
+
+Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
+* Wenn Sie den Chrome-Browser verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichts-Designer-Client herunterzuladen. Wenn Sie den Inkognitomodus ausführen, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den Inkognitomodus aktiviert ist. Wenn Sie sich nicht mit Chrome anmelden können, folgen Sie den in Problem 1 beschriebenen Einrichtungsschritten unter Verwendung von Internet Explorer oder Edge. 
+
+Problem 2: Dem Benutzer wurden nicht die erforderlichen Berechtigungen zur Verwendung von Financial Reporting zugewiesen. 
+
+* Um zu überprüfen, ob der Benutzer keine Berechtigung hat, wählen Sie **Ja** beim Fehler „Verbindung zum Financial Reporting-Server kann nicht hergestellt werden“ aus. Wählen Sie „Ja“ aus, wenn Sie fortfahren und eine andere Serveradresse angeben möchten. " Wählen Sie dann **Verbindung testen** aus. Wenn Sie keine Berechtigung haben, wird folgende Meldung angezeigt:„Verbindungsversuch fehlgeschlagen. Der Benutzer verfügt nicht über die entsprechenden Berechtigungen zum Herstellen einer Verbindung zum Server. Wenden Sie sich an einen Systemadministrator.“
+* Erforderliche Berechtigungen sind oben aufgeführt in [Sicherheitszugriff auf Financial Reporting gewähren](#granting-security-access-to-financial-reporting). Die Sicherheit in Financial Reporting basiert auf diesen Rechten. Sie haben keinen Zugriff, wenn Ihnen diese Rechte (oder eine andere Sicherheitsrolle, die diese Rechte enthält) nicht zugewiesen wurden. 
+* Die Integrationsaufgabe **Unternehmensbenutzeranbieter für Unternehmen** (welche auch für die Benutzerintegration verantwortlich und als diese bekannt ist) wird in einem 5-minütigen Intervall ausgeführt. Es kann bis zu 10 Minuten dauern, bis irgendwelche Berechtigungsänderungen in Financial Reporting wirksam werden. 
+  Wenn ein anderer Benutzer den Berichts-Designer öffnen kann, wählen Sie **Werkzeuge** aus, und dann wählen Sie **Integrationsstatus** aus. Überprüfen Sie, dass die Integrationszuordnung „Unternehmensbenutzeranbieter für Unternehmen“ erfolgreich ausgeführt wurde, da Ihnen die Berechtigung zur Verwendung von Financial Reporting zugewiesen wurde. 
+* Möglicherweise hat ein anderer Fehler verhindert, dass die **Integration von Dynamics-Benutzer in Financial Reporting-Benutzer** fertig gestellt wurde. Oder es ist möglich, dass eine Data Mart-Zurücksetzung initiiert und noch nicht abgeschlossen wurde oder dass ein anderer Systemfehler aufgetreten ist. Versuchen Sie den Prozess später erneut auszuführen. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Systemadministrator.
+
+Problem 3: Sie können über die Anmeldeseite von ClickOnce-Berichts-Designer fortfahren, die Anmeldung im Berichts-Designer jedoch nicht abschließen. 
+
+* Die auf Ihrem lokalen Computer festgelegte Zeit für die Eingabe Ihrer Anmeldeinformationen muss innerhalb von fünf Minuten nach der Zeit auf dem Financial Reporting-Server liegen. Bei einem Unterschied von mehr als fünf Minuten lässt das System keine Anmeldung zu. 
+* In diesem Fall empfehlen wir, die Windows-Option zur automatischen Einstellung der Zeit Ihres PCs zu aktivieren. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Finanzberichte anzeigen](view-financial-reports.md)
-
-
-

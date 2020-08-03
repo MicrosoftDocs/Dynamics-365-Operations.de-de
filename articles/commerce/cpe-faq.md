@@ -1,9 +1,9 @@
 ---
-title: Dynamics 365 Commerce Vorschauumgebung FAQ
-description: Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Microsoft Dynamics 365 Commerce-Vorschauumgebung.
+title: Dynamics 365 Commerce-Auswertungsumgebung – FAQ
+description: Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Microsoft Dynamics 365 Commerce-Auswertungsumgebung.
 author: v-chgri
 manager: annbe
-ms.date: 04/10/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,73 +17,57 @@ ms.search.region: Global
 ms.author: v-chgri
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5321d7937a9de3ba39f7a88bf0e9c26f4e62d7bc
-ms.sourcegitcommit: 4254acb3cf8c6299fc2f3818ea6c499f058320d9
+ms.openlocfilehash: 637714e28b9f8f4aa66e251e709d8f78bff2739d
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "3254723"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599758"
 ---
-# <a name="dynamics-365-commerce-preview-environment-faq"></a>Dynamics 365 Commerce Vorschauumgebung FAQ
+# <a name="dynamics-365-commerce-evaluation-environment-faq"></a>Dynamics 365 Commerce-Auswertungsumgebung – FAQ
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Microsoft Dynamics 365 Commerce-Vorschauumgebung.
+Dieses Thema enthält Antworten auf häufig gestellte Fragen zur Microsoft Dynamics 365 Commerce-Auswertungsumgebung.
 
-**Kann ich meine Einladung für die Commerce-Vorschauumgebung an einen anderen Mandanten übertragen?**
+**Können wir die Commerce-Auswertungsumgebung als E-Commerce-Storefront für Kunden verwenden, die Retail derzeit implementieren?**
 
-Ja. Für Einladungsübertragungen können Sie das [Übertragungsformular für Commerce-Vorschauen](https://aka.ms/Dynamics365CommercePreviewTransferForm) verwenden.
+Nr. Die Commerce-Auswertungsumgebung dient nur zur Auswertung. Wenn Sie für einen Kunden eine Umgebung benötigen, die den Einzelhandel implementiert, wenden Sie sich an Microsoft.
 
-**Wie lange dauert die Übertragung der Einladung?**
+**Kann die Commerce-Auswertungsumgebung verwendet werden, um die E-Commerce-Funktionen zusätzlich zu einer vorhandenen Anwendung/Umgebung bereitzustellen, die Retail implementiert?**
 
-Die Übertragung dauert durchschnittlich drei bis fünf Werktage. Es können jedoch Ausnahmen gelten.
+Nein (meistens). Die Commerce-Auswertungskomponenten sind nur für Umgebungen verfügbar, die den Konfigurationen entsprechen, die in der Anleitung zu den Voraussetzungen und der Bereitstellung angegeben sind. Darüber hinaus sind die erforderlichen Basisdemodaten nicht in Umgebungen verfügbar, die mit einem Erst-Release vor 10.0.8 bereitgestellt wurden. 
 
-**Funktioniert die Commerce-Vorschauumgebung mit Dynamics 365 Finance- oder Dynamics 365 Supply Chain-Projekte?**
+**Welche Kosten fallen bei der Bereitstellung der Commerce-Auswertungsumgebung in Microsoft Azure über Microsoft Dynamics Lifecycle Services (LCS) an?**
 
-Nr. Die Commerce-Vorschauumgebung funktioniert nur mit Dynamics 365 Retail-Projekten.
+Eine traditionelle Dynamics 365 Finance/Dynamics 365 Supply Chain Management/Dynamics 365 Commerce-Zentralverwaltungs-Demo-Umgebung (virtuelle Maschine \[VM\]) wird in Ihrem Azure-Abonnement gehostet. Sie können den [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator/) verwenden, um die Kosten zu schätzen.
 
-**Können wir die Commerce-Vorschauumgebung als E-Commerce-Storefront für Kunden verwenden, die Retail derzeit implementieren?**
+Andere Komponenten wie Commerce Scale Unit, Commerce-Website-Generator und Ihre E-Commerce-Website werden als Software-as-a-Service (SaaS) verfügbar sein und von Microsoft gehostet.
 
-Nr. Die Commerce-Vorschauumgebung ist nur die Evaluierungsumgebung. Wenn Sie für einen Kunden eine Umgebung benötigen, die den Einzelhandel implementiert, wenden Sie sich an Microsoft.
+**Welche Azure-Regionen werden derzeit in der Commerce-Auswertungsumgebung unterstützt?**
 
-**Kann die Commerce-Vorschauumgebung verwendet werden, um die E-Commerce-Funktionen zusätzlich zu einer vorhandenen Anwendung/Umgebung bereitzustellen, die den Einzelhandel implementiert?**
-
-Nr. Die Commerce-Vorschauumgebung ist derzeit nur in neuen Umgebungen verfügbar, die für Projekte mit Lagereinheiten für den Einzelhandel (SKU) bereitgestellt wurden, die Demodaten aus Version 10.0.6 enthalten.
-
-**Welche Kosten fallen bei der Bereitstellung der Commerce-Vorschauumgebung auf Microsoft Azure über Microsoft Dynamics Lifecycle Services (LCS) an?**
-
-Einzelhandel ist die einzige Komponente, die in Ihrem Abonnement gehostet wird. Andere Komponenten wie Retail Cloud Scale Unit (RCSU) und E-Commerce werden in Microsoft-Abonnements gehostet. Sie können den [Azure-Preisrechner](https://azure.microsoft.com/pricing/calculator/) verwenden, um die Kosten zu schätzen.
-
-**Welche Azure-Regionen werden derzeit in der Commerce-Vorschauumgebung unterstützt?**
-
-Die Commerce-Vorschauumgebung kann nur in Nordamerika bereitgestellt werden.
+Die Commerce-Auswertungsumgebung kann nur in der geografischen Region Nordamerika bereitgestellt werden.
 
 **Gibt es eine herunterladbare virtuelle Festplatte (VHD) mit der vollständigen OneBox Virtual Machine-Option (VM)?**
 
-Dynamics 365 Retail Cloud Scale Unit (RCSU) und E-Commerce sind vollständig Software as a Service (SaaS) und müssen in der Cloud gehostet werden.
+Dynamics 365 Commerce und Commerce Scale Unit sind vollständig Software as a Service (SaaS) und müssen in der Cloud gehostet werden.
 
-**Wie lange kann die Commerce-Vorschauumgebung verwendet werden?**
+**Wie lange kann die Commerce-Auswertungsumgebung verwendet werden?**
 
-Für die Commerce-Vorschauumgebung gilt eine Frist von 30 Tagen ab dem Datum der Bereitstellung von E-Commerce.
+Für die Commerce-Auswertungsumgebung gilt eine Frist von 30 Tagen ab dem Datum, an dem SaaS-Komponenten wie Commerce Scale Unit, Commerce-Website-Generator und Ihre E-Commerce-Website bereitgestellt werden.
 
-**Kann ich das Zeitlimit für meine Commerce-Vorschau-Umgebung verlängern?**
+**Kann ich das Zeitlimit für meine Commerce-Auswertungsumgebung verlängern?**
 
-Ja. Sie können sich mit dem Support-Team über das [Commerce Preview-Erweiterungsformular](https://aka.ms/Dynamics365CommercePreviewExtensionForm) in Verbindung setzen.
-
-**Können wir mehrere Anfragen für eine Commerce-Vorschauumgebung stellen?**
-
-Wir gewähren ein Kontingent von einer Commerce-Vorschauumgebung für jede akzeptierte Anfrage. Wenn Sie mehr als eine Vorschauumgebung benötigen, wenden Sie sich an Microsoft. Weitere Kontaktinformationen finden Sie im nächsten Abschnitt.
-
-## <a name="dynamics-365-commerce-preview-environment-contact-information"></a>Kontaktinformationen für die Dynamics 365 Commerce-Vorschauumgebung
-
-Um Microsoft zu kontaktieren, wenn Sie Fragen oder Anforderungen im Zusammenhang mit der Commerce-Vorschauumgebung haben, besuchen Sie die [Microsoft Dynamics 365 Commerce Vorschau Yammer-Gruppe](https://aka.ms/Dynamics365CommercePreviewYammer).
+Die Verlängerung der Frist ist eine Ausnahme von der Norm und wird von Fall zu Fall geprüft. Wenden Sie sich an Ihren Microsoft-Partner, um Unterstützung zu erhalten.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Auswertungsumgebung – Übersicht](cpe-overview.md)
 
-[Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md)
+[Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
 
-[Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md)
+[Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung](cpe-post-provisioning.md)
 
-[Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung](cpe-optional-features.md)
+[BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-bopis.md)
+
+[Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md)

@@ -3,7 +3,7 @@ title: Arbeitsbereich für Kreditorenzahlungen
 description: Dieses Thema enthält Informationen zum Arbeitsbereich für Kreditorenzahlungen. Im Arbeitsbereich für Kreditorenzahlungen werden Informationen angezeigt, die zum Verarbeiten von Kreditorenzahlungen dienen.
 author: abruer
 manager: AnnBe
-ms.date: 04/03/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 895725eeac46b5c20a2fb8dd932595a25fe372ce
-ms.sourcegitcommit: 724f5b400a4e7c385da9d8b22db416ebc3623b93
+ms.openlocfilehash: 86091e16712092086a641d79e49afbc5b205e934
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3225012"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598108"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeitsbereich für Kreditorenzahlungen
 
@@ -34,9 +34,10 @@ Im Arbeitsbereich für **Kreditorenzahlungen** werden Informationen angezeigt, d
 
 Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen Elementen **Lieferantenzahlungen** Power BI angezeigt werden.
 1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
-2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen. 
-2. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-3. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **VendPaymentBIMeasureV2** Aggregatmessung zu aktualisieren. 
+2. Wechseln Sie zu **Hauptbuch > Kalender > Steuerkalender**, um Steuerkalenderdaten zu überprüfen, die der aktiven Zeitperiode zugewiesen sind.
+3. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto**, um **Buchhaltungswährung** und **Wechselkurstyp** festzulegen. 
+4. Definieren Sie Wechselkurse zwischen Buchungswährungen und Buchhaltungswährung und Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
+5. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **VendPaymentBIMeasureV2** Aggregatmessung zu aktualisieren.
 
 ## <a name="my-work-view"></a>Ansicht "Meine Arbeit"
 

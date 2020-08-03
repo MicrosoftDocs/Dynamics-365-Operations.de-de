@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d6988bb95cf2ffe8146434f4b194d97491952915
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: f636dbd3b0ba59ea6cafbc431af46315210dded1
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3157383"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555251"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-19-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (19. März 2020)
 
@@ -122,3 +122,9 @@ Die folgenden Vorschaufunktionen sind am 3. Februar 2020 verfügbar:
 
 - **Vorschaufunktion für das Leistungsmanagement** – Weitere Informationen, einschließlich bekannter Probleme, finden Sie unter [Übersicht über das Leistungsmanagement](hr-benefits-management-overview.md).
 
+## <a name="see-also"></a>Siehe auch
+
+[Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
+[Funktionen verwalten](hr-admin-manage-features.md)

@@ -3,7 +3,7 @@ title: Bedarfsplanung – Überblick
 description: Die Bedarfsplanung wird verwendet, um unabhängigen Bedarf aus Aufträgen und abhängigen Bedarf an jedem Entkopplungspunkt für Kundenaufträge vorauszusagen. Die Reduzierungsregeln der erweiterten Bedarfsplanung stellen eine ideale Lösung für die Massenanpassung bereit.
 author: roxanadiaconu
 manager: tfehr
-ms.date: 01/07/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be60bb5c856020d76d185249fddf09493ea1d2ed
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 1033432d0d820516d8c9b2f58f27241351e7c64b
+ms.sourcegitcommit: 2e7454c07adfc05164121307050f6f24303d36d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213882"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3550039"
 ---
 # <a name="demand-forecasting-overview"></a>Bedarfsplanung – Überblick
 
@@ -48,7 +48,7 @@ Nachfolgend sind einige der Hauptmerkmale der Bedarfsplanung aufgeführt:
 Drei wichtige Themen wurden in die Bedarfsplanung implementiert:
 
 -   **Modularität** - Die Bedarfsplanung ist modular und einfach zu konfigurieren. Sie können die Funktionalität aktivieren und deaktivieren, indem Sie den Konfigurationsschlüssel unter **Art** &gt; **Bestandsprognose** &gt; **Bedarfsplanung** ändern.
--   **Wiederverwendung des Microsoft-Stapels** – Microsoft hat die Machine Learning-Plattform im Februar 2015 veröffentlicht. Machine Learning ist jetzt Teil der Microsoft Cortana Analytics Suite und kann schnell und einfach vorbestimmte erstellt Analyseexperimente, wie Bedarfsvorkalkulationsexperimente über Algorithmen in R oder Python und eine einfache Drag & Drop-Schnittstelle verwendet.
+-   **Wiederverwenden von Microsoft Stack** – Machine Learning ist jetzt Teil der Microsoft Cortana Analytics Suite und mit ihr können Sie schnell und einfach Predictive Analytics-Experimente erstellen, wie Experimente zur Bedarfsvorkalkulation mithilfe von Algorithmen R oder Python-Programmiersprachen und einer einfachen Drag & Drop-Schnittstelle.
     -   Sie können die Bedarfsplanungsexperimente herunterladen, sie ändern und an Ihre geschäftlichen Anforderungen anpassen, sie als Webdienst auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren. Die Experimente sind zum Download verfügbar, wenn Sie ein Supply Chain Management-Abonnement für einen Produktionsplaner als Benutzer auf Unternehmensebene besitzen.
     -   Sie können eines der aktuell verfügbaren Bedarfsvorhersagenexperimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Während die Bedarfsplanungsexperimente automatisch mit Supply Chain Management integriert werden, müssen Kunden und Partner die Integration von Experimenten abwickeln, die sie aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) herunterladen. Daher sind Experimente aus dem [Cortana Analytics-Katalog](https://gallery.cortanaanalytics.com/) nicht so einfach zu verwenden wie die Finance and Operations Bedarfsplanungsexperimente. Sie müssen den Code der Experimente ändern, sodass sie die Finance and Operations Anwendungprogrammschnittstelle verwenden.
     -   Sie können eigene Experimente in Microsoft Azure Machine Learning Studio (klassisch) erstellen, als Dienste auf Azure veröffentlichen und sie verwenden, um Bedarfsplanungen zu generieren.
@@ -70,6 +70,16 @@ Sie können Supply Chain Management verwenden, um die Grundplanungen zu visualis
 
 ## <a name="limitations"></a>Einschränkungen
 Die Bedarfsplanung ist ein Tool, das Kunden in der Fertigungsindustrie hilft, Planungsprozesse zu erstellen. Es bietet der Kernfunktionen von einer Bedarfsplanungslösung anzeigen und soll, sodass einfacher erweitert werden kann. Bedarfsplanung ist möglicherweise nicht die beste Art für Debitoren in Branchen wie beispielsweise Commerce, Großhandel, Warehousing, Transport oder anderen freiberuflichen Dienstleistungen abgeglichen wird.
+
+### <a name="demand-forecast-variant-conversion-limitation"></a>Bedarfsplanungsvarianten-Konvertierungsbegrenzung
+
+Maßeinheit (UOM) pro Variantenkonvertierung wird beim Generieren der Bedarfsplanung nicht vollständig unterstützt, wenn sich die Bestandsmaßeinheit von der Bedarfsplanungs-Maßeinheit unterscheidet.
+
+Prognosen generieren (**Bestandsmaßeinheit > Bedarfsplanungsmaßeinheit**) verwendet die Produktmaßeinheit-Konvertierung. Beim Laden historischer Daten für die Bedarfsplanungsgenerierung wird die Produktebenen-Maßeinheitskonvertierung immer verwendet, wenn von einer Bestandsmaßeinheit zu einer Bedardsplanungsmaßeinheit konvertiert wird, selbst wenn Konvertierungen auf Variantenebene definiert werden.
+
+Der erste Teil der Autorisierung der Planung (**Bedarfsplanungsmaßeinheit > Bestandsmaßeinheit**) verwendet Produktmaßeinheit-Konvertierung. Der zweite Teil der Autorisierung der Planung (**Bestandsmaßeinheit> Verkaufsmaßeinheit**) verwendet die Variantenmaßeinheits-Konvertierung. Wenn die generierte Bedarfsplanung autorisiert ist, erfolgt die Konvertierung in die Bestandsmaßeinheit von der Bedarfsplanungsmaßeinheit mithilfe der Maßeinheitskonvertierung auf Produktebene. Gleichzeitig werden bei der Konvertierung zwischen der Bestandsmaßeinheit und der Verkaufsmaßeinheit die von der Variantenebene definierten Konvertierungen berücksichtigt.
+
+Beachten Sie, dass die Bedarfsplanungsmaßeinheit keine spezifische Bedeutung haben muss. Es kann als „Bedarfsplanungseinheit“ definiert werden. Für jedes der Produkte können Sie die Konvertierung als 1:1 mit der Bestandsmaßeinheit definieren.
 
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------

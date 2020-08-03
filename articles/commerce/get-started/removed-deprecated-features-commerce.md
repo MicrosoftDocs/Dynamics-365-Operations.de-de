@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 description: In diesem Thema werden die Funktionen beschrieben, die entfernt wurden oder entfernt werden sollen von Dynamics 365 Commerce.
 author: josaw
 manager: AnnBe
-ms.date: 06/10/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 64241ef1c25359c7b3b305c4e8f2b24de7e8f5e4
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: aa18e7446a72a907fcad70f92ea529088b6cecbd
+ms.sourcegitcommit: 83c7e5ab54c1cad2e21e33769cc524cfa4213f58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443917"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3539878"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Entfernte oder veraltete Funktionen in Dynamics 365 Commerce
 
@@ -41,8 +41,35 @@ Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen 
 |   |  |
 |------------|--------------------|
 | **Grund für veralteten Zustand/Entfernung** | Die Funktion für Datenaktions-Hooks wird aufgrund von Leistungsproblemen nicht mehr unterstützt. |
-| **Ersetzt durch eine andere Funktion?**   | Es wird empfohlen, stattdessen [Datenaktion überschreibt](../e-commerce-extensibility/data-action-overrides.md) zu verwenden, um die Geschäftslogik in der Datenaktionsschicht zu ändern.|
+| **Ersetzt durch eine andere Funktion?**   | Es wird empfohlen, [Datenaktion überschreibt](../e-commerce-extensibility/data-action-overrides.md) zu verwenden, um die Geschäftslogik in der Datenaktionsschicht zu ändern.|
 | **Betroffene Produktbereiche**         | E-Commerce-Erweiterbarkeit Datenaktionen |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: ab Frühjahr 10.0.11 Version |
+
+### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Retail SDK Unterstützung für Visual Studio 2015, msbuild 14.0 und Retail SDK\Referencebibliotheken und Tools
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Retail SDK-Unterstützung für Visual Studio 2015 wurde veraltet und aktualisiert, um VS 2017, msbuild 15.0 und alle Referenzbibliotheken und Commerce-Proxy-Generator-Tools im Ordner RetailSDK\Referenzen zu unterstützen, die in verschoben wurden NuGet-Pakete zur Vereinfachung des Erweiterungsmodells und des SDK-Aktualisierungsprozesses.|
+| **Ersetzt durch eine andere Funktion?**   | Wir empfehlen Ihnen, den Informationen in [Migrieren von Retail SDK von Visual Studio 2015 bis Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) zu folgen, um Ihr System zu aktualisieren. |
+| **Betroffene Produktbereiche**         | Retail SDK-Erweiterungen |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: ab Frühjahr 10.0.11 Version |
+
+### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Retail Server-Erweiterung mit IEdmModelExtender und CommerceController
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Retail Server -Erweiterung mit IEdmModelExtender und CommerceController wurde eingestellt, um ein vereinfachtes Erweiterungsmodell bereitzustellen. Die neue Implementierung enthält nur die Controller-Klasse ohne zusätzliche Implementierung der IEdmModelExtender-Klasse. Dadurch wird auch die Abhängigkeit von einer bestimmten OData-Version vermieden (wenn die OData-Version aktualisiert wird, können Erweiterungen beschädigt werden.) |
+| **Ersetzt durch eine andere Funktion?**   |  Wir empfehlen, dass Sie das IController-Klassenerweiterungsmodell verwenden, indem Sie das NuGet-Paket importieren(Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Betroffene Produktbereiche**         | Retail Server-Erweiterungen |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Veraltet: ab Frühjahr 10.0.11 Version |
+
+### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Hardware-Stationserweiterung mit IHardwareStationController
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die Erweiterung der Hardwarestation mit IHardwareStationController wird eingestellt, um ein vereinfachtes Erweiterungsmodell bereitzustellen. Die neue Implementierung wird nur die IController-Klasse ohne zusätzliche Klassenimplementierung haben. Um die Abhängigkeit von den wichtigsten Hardware-Stationsbibliotheken zu vermeiden, muss die vorherige Erweiterung auf mehrere Bibliotheken verweisen.) |
+| **Ersetzt durch eine andere Funktion?**   | Es wird empfohlen, dass Sie das IController-Klassenerweiterungsmodell verwenden, indem Sie das NuGet-Paket importieren(Microsoft.Dynamics.Commerce.Hosting.Contracts). |
+| **Betroffene Produktbereiche**         | Hardwar-Stationserweiterungen |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: ab Frühjahr 10.0.11 Version |
 

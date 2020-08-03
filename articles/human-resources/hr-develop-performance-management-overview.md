@@ -3,7 +3,7 @@ title: Leistungsverwaltung
 description: Anhand des Leistungsverwaltungsprozesses können Mitarbeiter ihre Leistung dokumentieren und mit ihrem Vorgesetzten erörtern. Vorgesetzte können wiederum den Mitarbeitern Rückmeldungen und Ratschläge geben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 12/11/2019
+ms.date: 07/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6147b5d92381d76c572f8a10e52c9ed00225e7eb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4786717826592973d3b049c4aa5ca615332d5bc6
+ms.sourcegitcommit: 98cfbb42fc556e1afcb2fab50d8dff0ae2b7aa67
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3430439"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "3609771"
 ---
 # <a name="performance-management"></a>Leistungsverwaltung
 
@@ -145,7 +145,7 @@ Auf der Messungsseite können Sie Standardmessungen erstellen, die auf den Seite
 
 ### <a name="performance-journal-source-types"></a>Leistungserfassungs-Quelltypen
 
-Leistungserfassungs-Quelltypen beschreiben, woher die Leistungserfassungen stammen. Sie können erkennen, ob ein Erfassungselement standardmäßig nur vom Vorgesetzten, nur vom Mitarbeiter oder sowohl vom Vorgesetzten als auch vom Mitarbeiter angezeigt wird. Sie können die Funktion zum Versenden von Lob aktivieren oder deaktivieren, indem Sie den Quelltyp für das Lob ändern. Die anderen Quelltypen können derzeit nicht deaktiviert werden.
+Leistungserfassungs-Quelltypen beschreiben, woher die Leistungserfassungen stammen. Sie können erkennen, ob ein Erfassungselement standardmäßig nur vom Vorgesetzten, nur vom Mitarbeiter oder sowohl vom Vorgesetzten als auch vom Mitarbeiter angezeigt wird. Quelltypen können derzeit nicht deaktiviert werden.
 
 ### <a name="review-types"></a>Überprüfungstypen
 

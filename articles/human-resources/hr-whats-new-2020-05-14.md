@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d46671f73a75a9ed3a652d76153c923a3542b5f6
-ms.sourcegitcommit: 7c750711e9fe1d3726c6ee650669529684933001
+ms.openlocfilehash: 3ce1aca9cebc5b330f054a11e38b5dfc4fc9109d
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "3386106"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555170"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (14. Mai 2020)
 
@@ -110,3 +110,10 @@ In dieser Version wird mit der Kombination von Personalverwaltungsparametern mit
 ## <a name="carry-forward-rules"></a>Vortragungsregeln
 
 Sie können einen Vortragsabwesenheitstyp für Vortragssalden angeben, bei denen Vortragsanpassungen übertragen werden. Wenn ein Mitarbeiter beispielsweise 10 Tage vorzieht, können Sie für diese 10 Tage einen anderen Urlaubstyp auswählen. Weitere Informationen finden Sie unter [Konfigurieren Sie Urlaubs- und Abwesenheitstypen](hr-leave-and-absence-types.md).
+
+## <a name="see-also"></a>Siehe auch
+
+[Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
+[Funktionen verwalten](hr-admin-manage-features.md)

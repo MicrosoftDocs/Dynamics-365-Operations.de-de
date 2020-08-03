@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 711cc4491024e647429b108438ce1d88483ea63c
-ms.sourcegitcommit: dbff1c6bb371a443a0cd2a310f5a48d5c21b08ca
+ms.openlocfilehash: 4f61283f3bab26f54d55ffe7cbea21b1201ed234
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "3259816"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555146"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Neuigkeiten oder Änderungen in Dynamics 365 Human Resources (13. April, 2020)
 
@@ -88,3 +88,10 @@ Wenn die Dokumentvorschau für in SharePoint gespeicherte Dokumente nicht funkti
 3. Greifen Sie auf einen Anhang in SharePoint zu, um die Dokumentvorschau zu starten.
 
 4. Melden Sie sich mit einem anderen Benutzerkonto an, das Zugriff auf Anhänge hat, und überprüfen Sie, ob die Vorschau wie erwartet funktioniert.
+
+## <a name="see-also"></a>Siehe auch
+
+[Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
+[Funktionen verwalten](hr-admin-manage-features.md)

@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a6d792a0e52d2b82b25de461dcec358fdc8f439
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f2422dcec1fb222f1be7162d7c799a13046329b4
+ms.sourcegitcommit: f0faa2929435cd1408c5925f0ee4d6636fec5da1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211076"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3552916"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -225,7 +225,7 @@ Wenn Sie diesen Ansatz verwenden, wird die Seite **Arbeitsgangzuordnungen** Ihr 
 Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der Ressourcenanforderungen für einen Arbeitsgang angegeben, arbeiten möglicherweise die entsprechenden Ressourcen mit unterschiedlichen Geschwindigkeiten. Daher kann die Dauer, die erforderlich ist, um einen Arbeitsgang zum Verarbeiten, abweichen. Zur Behebung dieses Problems, können Sie das Feld **Formel** in der Arbeitsgangzuordnung verwenden, um die Berechnung von Zeitintervall festzulegen. Die folgenden Optionen sind verfügbar:
 
 -   **Standard** – (Standardeinstellung) Die Berechnung verwendet nur die Felder aus der Arbeitsgangzuordnung und multipliziert die angegebene Bearbeitungszeit und die Auftragsmenge.
--   **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Dieser Wert wird mit der Bestellmenge und dem **Faktor** Wert aus der Arbeitsgangzuordnung multipliziert.
+-   **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**.
 -   **Charge** – Eine Chargenkapazität wird berechnet, indem die Informationen aus der Arbeitsgangzuordnung verwendet werden. Die Anzahl von Chargen und daher die Bearbeitungszeit können auf Basis der Auftragsmenge dann berechnet werden.
 -   **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
 

@@ -3,7 +3,7 @@ title: Bestandsausgangsoperation in POS
 description: Dieses Thema beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
 author: hhaines
 manager: annbe
-ms.date: 05/14/2020
+ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 22f057c20898bb4b4c34e38d62313d2634a33511
-ms.sourcegitcommit: 3b6fc5845ea2a0de3db19305c03d61fc74f4e0d4
+ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
+ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3384128"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "3551624"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Bestandsausgangsoperation in POS
 
@@ -58,6 +58,9 @@ Um ein asynchrones Belegframework zu konfigurieren, führen Sie die folgenden Ve
 7. Setzen Sie im Inforegister **Allgemein** im Abschnitt **Einrichten** die Option **Kontinuierlich** auf **Nein**, um sicherzustellen, dass es keine Leistungsprobleme gibt.
 
 ### <a name="create-and-schedule-two-batch-jobs-for-the-document-processing-and-monitoring-tasks"></a>Erstellen und planen Sie zwei Batch-Jobs für die Dokumentverarbeitung und die Überwachungsaufgaben
+
+> [!NOTE]
+> In Commerce Version 10.0.13 und höher müssen Sie die Stapeljobs nicht über das Stapeljob-Framework konfigurieren. Die Stapelverarbeitungsvorgänge können über das Menü **Retail and Commerce >Retail and Commerce IT** konfiguriert werden. Verwenden Sie die Menüoptionen **Überwachung für den Betrieb von Einzelhandelsdokumenten** und **Verarbeitung von Einzelhandelsdokumenten** zum Konfigurieren der Stapeljobs.
 
 Die von Ihnen erstellten Batch-Jobs werden zur Verarbeitung von Dokumenten verwendet, die fehlschlagen oder ein Time-Out aufweisen. Sie werden auch verwendet, wenn die Anzahl der aktiven Bestandsbelege, die von der Kasse aus verarbeitet werden, einen vom System konfigurierten Wert überschreitet.
 
