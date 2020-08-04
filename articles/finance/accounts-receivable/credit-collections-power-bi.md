@@ -3,7 +3,7 @@ title: Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 description: In diesem Thema wird beschrieben, was im Power BI-Inhalt zur Kredit und Inkassoverwaltung enthalten ist. Es erläutert, wie Sie auf die Power BI-Berichte zugreifen und enthält Informationen zum Datenmodell und zu den Entitäten, die verwendet werden, um den Inhalt zu erstellen.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5c4a2289d7fa0f062735c93cf26cba9ac29ab94e
-ms.sourcegitcommit: e9fadf6f6dafdcefaff8e23eaa3c85f53437db3f
+ms.openlocfilehash: 03face220fd63962f645b4fe91f20aec2f19b1ef
+ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3278873"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "3598057"
 ---
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI-Inhalt zur Kredit- und Inkassoverwaltung
 
@@ -47,9 +47,10 @@ Standardmäßig wird die Kredit- und Inkassodaten für das aktuelle Unternehmen 
 Die folgende Einrichtung muss abgeschlossen werden, damit Daten in grafischen Elementen **Debitorenkredit und Inkassos** Power BI angezeigt werden.
 
 1. Wechseln Sie zu **Systemverwaltung > Einrichtung > Systemparameter**, um **Systemwährung** und **Systemwechselkurs** festzulegen.
-2. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto** und legen Sie **Buchhaltungswährung** und **Wechselkurstyp** fest.
-3. Definieren Sie Wechselkurse zwischen Buchungswährungen und der Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
-4. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **CustCollectionsBIMeasurementsV2**-Aggregatmessung zu aktualisieren.
+2. Wechseln Sie zu **Hauptbuch > Kalender > Steuerkalender**, um Steuerkalenderdaten zu überprüfen, die der aktiven Zeitperiode zugewiesen sind.
+3. Wechseln Sie zu **Hauptbuch > Einrichtung> Sachkonto** und legen Sie **Buchhaltungswährung** und **Wechselkurstyp** fest.
+4. Definieren Sie Wechselkurse zwischen Buchungswährungen und Buchhaltungswährung, Buchhaltungswährung und Systemwährung. Wechseln Sie dazu zu **Hauptbuch > Währungen > Währungswechselkurse**.
+5. Wechseln Sie zu **Systemverwaltung > Einrichtung > Entitätsspeicher**, um die **CustCollectionsBIMeasurementsV2**-Aggregatmessung zu aktualisieren.
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 

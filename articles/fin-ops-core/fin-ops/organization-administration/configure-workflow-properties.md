@@ -3,7 +3,7 @@ title: Konfigurieren von Workfloweigenschaften
 description: Dieses Thema erläutert, wie Sie die verschiedenen Eigenschaften eines Workflows konfigurieren können.
 author: sericks007
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d745389b37b899760ea32ae75c5cb80d9139be2d
-ms.sourcegitcommit: 1852f08f015acd106f4cefd03fa07985dc009123
+ms.openlocfilehash: 268448049955170b8eb9e64cbd50416565a041b1
+ms.sourcegitcommit: 561d06c2a74602dfaa40334d8afac5053aebc055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "3199435"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "3541108"
 ---
 # <a name="configure-workflow-properties"></a>Konfigurieren von Workfloweigenschaften
 
@@ -91,12 +91,7 @@ Gehen Sie folgendermaßen vor, um anzugeben, wann der von Ihnen konfigurierte Wo
 3. Klicken Sie auf **Bedingung hinzufügen**.
 4. Geben Sie eine Bedingung ein.
 5. Geben Sie alle notwendigen zusätzlichen Bedingungen ein.
-6. Führen Sie folgende Schritte aus, um die korrekte Einstellung der eingegebenen Bedingungen zu überprüfen:
-
-    1. Klicken Sie auf **Test**.
-    2. Auf der Seite **Workflowbedingung testen** im Bereich **Bedingung überprüfen** wählen Sie einen Datensatz aus.
-    3. Klicken Sie auf **Test**. Der Datensatz wird ausgewertet, um zu bestimmen, ob er den angegebenen Bedingungen entspricht. Beim Erstellen eines Workflow für Bestellanforderungen z. B. für Spanien, wird im Bereich **Bedingung überprüfen** der Seite eine Liste mit Bestellanforderungen angezeigt. Wenn Sie auf **Test** klicken, wird die ausgewählte Bestellanforderung vom System ausgewertet, um festzustellen, ob Land/Region = ES ist.
-    4. Klicken Sie auf **OK** oder **Abbrechen**, um zur Seite **Eigenschaften** zurückzukehren.
+6. Führen Sie den Workflow mit einigen Zieldatensätzen durch, um zu überprüfen, ob die Bedingung Datensätze korrekt einschließt und ausschließt.
 
 ## <a name="specify-when-notifications-are-sent"></a>Angeben, wann Benachrichtigungen gesendet werden
 

@@ -41,7 +41,7 @@ In einem typischen Geschäftsszenario für Microsoft Dynamics 365-Integrationen 
 In diesem Tutorial werden die folgenden Technologien verwendet:
 
 - **[Dynamics 365 Human Resources](https://dynamics.microsoft.com/talent/overview/)**- Die Stammdatenquelle für die zu exportierenden Arbeitskräfte.
-- **[Azure Logic-Apps](https://azure.microsoft.com/services/logic-apps/)** – Die Technologie zur Orchestrierung und Planung des wiederkehrenden Exports.
+- **[Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/)** – Die Technologie zur Orchestrierung und Planung des wiederkehrenden Exports.
 
     - **[Connector](https://docs.microsoft.com/azure/connectors/apis-list)** – Die Technologie, mit der die Logic App mit den erforderlichen Endpunkten verbunden wird.
 
@@ -83,7 +83,7 @@ Der Großteil der Übung besteht darin, die Logic App zu erstellen.
 
     ![Seite zur Erstellung der Logic App](media/integration-logic-app-creation-1.png)
 
-2. Beginnen Sie im Logik-Apps-Designer mit einer leeren Logic App.
+2. Beginnen Sie im Logic Apps Designer mit einer leeren Logic App.
 3. Fügen Sie einen [Auslöser für einen Serienzeitplan](https://docs.microsoft.com/azure/connectors/connectors-native-recurrence) hinzu, um die Logic App alle 24 Stunden (oder nach einem Zeitplan Ihrer Wahl) auszuführen.
 
     ![Dialogfeld „Wiederholung“](media/integration-logic-app-recurrence-step.png)

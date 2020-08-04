@@ -1,9 +1,9 @@
 ---
-title: BOPIS in einer Dynamics 365 Commerce-Umgebung konfigurieren
+title: BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
 description: In diesem Thema wird erläutert, wie Sie den Online-Kauf und die Abholung im Geschäft (BOPIS) in einer Microsoft Dynamics 365 Commerce-Umgebung konfigurieren, nachdem sie bereitgestellt wurde.
 author: rubendel
 manager: annbe
-ms.date: 04/21/2020
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,23 +17,22 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 956d66d09885d4d54655ce25b3aa7ba6a9c34cf4
-ms.sourcegitcommit: dfef2faf881b2db1bd0f016df36e2b838105312b
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 5175e3fae432016246244cf70fe05465f43de88c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3282795"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "3599795"
 ---
-# <a name="configure-bopis-in-a-dynamics-365-commerce-environment"></a>BOPIS in einer Dynamics 365 Commerce-Umgebung konfigurieren
-
+# <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren
 
 [!include [banner](includes/banner.md)]
 
-In diesem Thema wird erläutert, wie Sie den Online-Kauf und die Abholung im Geschäft (BOPIS) in einer Microsoft Dynamics 365 Commerce-Umgebung konfigurieren, nachdem sie bereitgestellt wurde.
+In diesem Thema wird erläutert, wie Sie den Online-Kauf und die Abholung im Geschäft (BOPIS) in einer Microsoft Dynamics 365 Commerce-Auswertungsumgebung konfigurieren, nachdem sie bereitgestellt wurde.
 
 ## <a name="prerequisite"></a>Voraussetzung
 
-Führen Sie die in diesem Thema beschriebenen Verfahren erst aus, nachdem Ihre Commerce-Vorschauumgebung bereitgestellt und konfiguriert wurde. Informationen zum Bereitstellen und Konfigurieren Ihrer Commerce-Vorschauumgebung nach deren Bereitstellung finden Sie unter [Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md) und [Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
+Führen Sie die in diesem Thema beschriebenen Prozeduren erst aus, nachdem Ihre Commerce-Auswertungsumgebung bereitgestellt und konfiguriert wurde. Informationen zum Bereitstellen und Konfigurieren Ihrer Umgebung finden Sie unter [Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md) und [Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning).
 
 Nachdem Ihre Commerce-Umgebung komplett bereitgestellt und konfiguriert wurde, können Sie dieses Thema verwenden, um BOPIS-Szenarien zu aktivieren.
 
@@ -71,7 +70,7 @@ Für BOPIS-Szenarien mit Kreditkartenzahlung ist eine Hardwarestation erforderli
 5. Ein Authentifizierungsdialogfeld wird angezeigt. Wählen Sie das Konto aus, das die E-Mail-Adresse verwendet, die zuvor dem Mitarbeiter **000713 – Andrew Collette** zugeordnet war.
 
     > [!NOTE]
-    > Wenn Sie noch keinen Mitarbeiter mit Ihrer Identität verknüpft haben, ist die Aktivierung nicht erfolgreich. Befolgen Sie in diesem Fall die Schritte im Abschnitt „Mitarbeiter Ihrer Identität zuordnen“ im Thema [Konfigurieren einer Dynamics 365 Commerce-Vorschauumgebung](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
+    > Wenn Sie noch keinen Mitarbeiter mit Ihrer Identität verknüpft haben, ist die Aktivierung nicht erfolgreich. Befolgen Sie in diesem Fall die Schritte im Abschnitt „Mitarbeiter Ihrer Identität zuordnen“ im Thema [Konfigurieren einer Dynamics 365 Commerce-Auswertungsumgebung](cpe-post-provisioning.md#associate-a-worker-with-your-identity).
     
 6. Wenn Sie aufgefordert werden, das Gerät von Ihrer Organisation verwalten zu lassen, wählen Sie **Nur diese App**.
 7. Wenn die Aktivierung abgeschlossen ist, wählen Sie **Erste Schritte**.
@@ -144,13 +143,13 @@ Bei allen allgemeinen Problemen sollten Sie als ersten Schritt immer die Ereigni
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Dynamics 365 Commerce-Vorschauumgebung – Übersicht](cpe-overview.md)
+[Dynamics 365 Commerce-Auswertungsumgebung – Übersicht](cpe-overview.md)
 
-[Bereitstellen einer Dynamics 365 Commerce-Vorschauumgebung](provisioning-guide.md)
+[Bereitstellen einer Dynamics 365 Commerce-Auswertungsumgebung](provisioning-guide.md)
 
-[Konfigurieren optionaler Funktionen für eine Dynamics 365 Commerce-Vorschauumgebung](cpe-optional-features.md)
+[Optionale Funktionen für eine Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](cpe-optional-features.md)
 
-[Dynamics 365 Commerce-Vorschauumgebung – FAQ](cpe-faq.md)
+[Dynamics 365 Commerce-Auswertungsumgebung – FAQ](cpe-faq.md)
 
 [Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 

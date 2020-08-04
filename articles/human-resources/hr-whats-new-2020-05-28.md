@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 37f21fffe209e17a6fe89c2661e49fc0dc8b9655
-ms.sourcegitcommit: 88f38d584c5befb96e4d1daab4b28af5519ef125
+ms.openlocfilehash: 7664afbd0b1fd4e2c9686053fa102d85809c0411
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "3443463"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555314"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-28-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (28. Mai 2020)
 
@@ -103,3 +103,10 @@ In dieser Version kann die Personalverwaltung eine Regel erstellen, um Abwesenhe
 ## <a name="dmf-entity-available-for-accrual-suspensions-june-1"></a>DMF-Entität verfügbar für Ansammlungsaussetzungen (1. Juni)
 
 Eine DMF-Entität ist jetzt verfügbar für Ansammlungsaussetzungen.
+
+## <a name="see-also"></a>Siehe auch
+
+[Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
+[Funktionen verwalten](hr-admin-manage-features.md)

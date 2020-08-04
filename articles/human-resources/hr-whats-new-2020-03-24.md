@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83f24dd6f094715f96666c3ae94faa4bdb97a652
-ms.sourcegitcommit: fac1d519a85eab0c936b54e0a9247f6a11842871
+ms.openlocfilehash: 4f46d631379711dd2002a95dfa6001a362727f4f
+ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "3177936"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "3555098"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (24. März 2020)
 
@@ -113,3 +113,10 @@ Ab April wird die Veröffentlichungskadenz für die Personalabteilung von einem 
 ## <a name="employment-detail-entity"></a>Anstellungsdetailsentität
 
 Die Entität **Beschäftigungsdetail** wurde mit den folgenden Feldern aktualisiert: **PayFrequency**, **ID der Beschäftigungskategorie**, **Beschäftigungsverhältnis**, **EmploymentType ID**, und **Beschäftigungsstatus**. Die Einrichtungsdaten für diese Felder hängen davon ab, dass das Leistungsmanagement im Arbeitsplatz Funktionsverwaltung aktiviert ist. Diese Felder sollten nicht in der Entität **Beschäftigungsdetail** ausgefüllt oder aktualisiert werden, weil dies beim Import zu Fehlern führt.
+
+## <a name="see-also"></a>Siehe auch
+
+[Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
+[Funktionen verwalten](hr-admin-manage-features.md)
