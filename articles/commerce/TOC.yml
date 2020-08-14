@@ -88,8 +88,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
+                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.13 (Oktober 2020)
+                      href: get-started/whats-new-commerce-10-0-13.md
                     - name: "Commerce 10.0.12 (August\_2020)"
                       href: get-started/whats-new-commerce-10-0-12.md
                     - name: "Commerce\_10.0.11 (Juli\_2020)"
@@ -127,23 +129,23 @@
             - name: Schulungskatalog
               items:
                 - name: Schulungskatalog – Startseite
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Entscheidungsträger im Unternehmen
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?
                 - name: Geschäftliche Benutzer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Implementierungsprojektmanager
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratoren
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Entwickler
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerverkauf und -marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionale Berater
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Lösungsarchitekten
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/commerce/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Benutzeroberfläche kennenlernen
               items:
                 - name: Benutzeroberflächenelemente
@@ -310,7 +312,9 @@
                           href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md?toc=/dynamics365/commerce/toc.json
                         - name: Optionen zur Berechnung von Gesamtbetrag und Intervall für Mehrwertsteuercodes
                           href: ../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=/dynamics365/commerce/toc.json
-                    - name: Ein E-Mail-Benachrichtigungsprofil einrichten
+                        - name: Berechnung der Steuerbefreiung
+                          href: tax-exempt-price-inclusive.md
+                    - name: E-Mail-Benachrichtigungsprofil einrichten
                       href: email-notification-profiles.md
                     - name: Nummernkreise
                       items:
@@ -386,6 +390,8 @@
                           href: define-maintain-channel-clients-registers-hw-stations.md
                         - name: Systemdiagnose von POS-Peripheriegeräten und -Diensten
                           href: pos-healthcheck.md
+                        - name: Unterstützung für Netzwerkperipheriegeräte
+                          href: dev-itpro/network-peripherals.md
                     - name: Bildschirmlayouts
                       items:
                         - name: Demodaten-Bildschirmlayouts in MPOS/CPOS
@@ -942,10 +948,12 @@
                   items:
                     - name: Containermodul
                       href: add-container-module.md
-                    - name: Akkordeon-Modul
+                    - name: Akkordeonmodul
                       href: add-accordion.md
                     - name: Registerkartenmodul
                       href: add-tab.md
+                    - name: Iframe-Modul
+                      href: iframe-module.md
                 - name: Marketingmodule
                   items:
                     - name: Werbebannermodul
@@ -968,6 +976,8 @@
                   items:
                     - name: Kauffeldmodul
                       href: add-buy-box.md
+                    - name: Mediengaleriemodul
+                      href: media-gallery-module.md
                     - name: Bewertungs- und Prüfungsmodule
                       href: ratings-reviews-modules.md
                 - name: Kaufmodule
@@ -980,10 +990,14 @@
                       href: add-checkout-module.md
                     - name: Auftragsdetailmodul
                       href: order-confirmation-module.md
-                    - name: Shopauswahlmodul
-                      href: store-selector.md
                     - name: Geschenkkartenmodul
                       href: add-giftcard.md
+                - name: Filialfindermodule
+                  items:
+                    - name: Kartenmodul
+                      href: map-module.md
+                    - name: Shopauswahlmodul
+                      href: store-selector.md
                 - name: Kontenverwaltungsmodule
                   items:
                     - name: Kontenverwaltungsseiten und -module
@@ -1934,17 +1948,17 @@
                       href: e-commerce-extensibility/create-new-module.md
                     - name: Klonen eines Starterkit-Moduls
                       href: e-commerce-extensibility/clone-starter-module.md
-                    - name: Hinzufügen von Modulkonfigurationsfeldern
+                    - name: Modulkonfigurationsfelder hinzufügen
                       href: e-commerce-extensibility/add-module-config-fields.md
-                    - name: Vorschau und Debugging von Modulen
+                    - name: Module in der Vorschau anzeigen und debuggen
                       href: e-commerce-extensibility/test-module.md
-                    - name: Testen von Modulen mithilfe von Pseudodateien
+                    - name: Module mit Pseudomodulen testen
                       href: e-commerce-extensibility/test-module-mock.md
-                    - name: Testen von Modulen mithilfe von Pseudoseiten
+                    - name: Module mithilfe von Pseudoseiten testen
                       href: e-commerce-extensibility/test-page-mock.md
                     - name: Containermodule
                       href: e-commerce-extensibility/container-modules.md
-                    - name: Erstellen eines Layoutcontainermoduls
+                    - name: Layoutcontainermodul erstellen
                       href: e-commerce-extensibility/create-layout-container.md
                     - name: Erstellen eines Seitencontainermoduls
                       href: e-commerce-extensibility/create-page-containers.md
