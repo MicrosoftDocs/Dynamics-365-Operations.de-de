@@ -3,7 +3,7 @@ title: Arbeiten mit Fragmenten
 description: In diesem Thema wird beschrieben, warum, wann und wie Fragmente in Microsoft Dynamics 365 Commerce verwendet werden.
 author: v-chgri
 manager: annbe
-ms.date: 01/31/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.industry: retail
 ms.author: phinneyridge
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f29046ded47ed9c49a2cc841aa7c1f6492b49aec
-ms.sourcegitcommit: 1d5a4f70a931e78b06811add97c1962e8d93689b
+ms.openlocfilehash: 7ae834f38fe380ce0a66f5b1968f1261af670979
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3124358"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645990"
 ---
 # <a name="work-with-fragments"></a>Arbeiten mit Fragmenten 
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema wird beschrieben, warum, wann und wie Fragmente in Microsoft Dynamics 365 Commerce verwendet werden.
 
@@ -62,9 +62,10 @@ Sie können entweder ein neues Fragment erstellen oder eine vorhandene Modulkonf
 Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederverwendbares Fragment zu konvertieren.
 
 1. Öffnen Sie eine Seite oder Vorlage, die das Modul enthält, das Sie in ein Fragment konvertieren möchten.
-1. Wählen Sie links im Gliederungsfenster die Ellipsen-Schaltfläche (**...**) neben dem Namen des Moduls. 
-1. Wählen Sie **Als Fragment teilen**. 
-1. Ein Dialogfeld wird angezeigt. Geben Sie einen Namen und Metadaten für das Fragment ein.
+1. Wählen Sie im Gliederungsbereich links oder direkt auf der Haupt-Canvas das zuvor konfigurierte Modul aus.
+1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls auf der Canvas aus. 
+1. Wählen Sie **Als Seitenfragment teilen** aus. 
+1. Geben Sie im Dialogfeld **Als Seitenfragment speichern** einen Namen für das Fragment ein.
 1. Wählen Sie **OK** aus, um die Modulkonfiguration als Fragment zu speichern, das anderen Seiten hinzugefügt werden kann.
 
 Das folgende Bild zeigt, wie Sie eine Modulkonfiguration als Fragment speichern.
@@ -94,15 +95,16 @@ Die folgenden Prozeduren beschreiben das Hinzufügen, Entfernen und Bearbeiten v
 
 Gehen Sie folgendermaßen vor, um einer Seite ein Fragment hinzuzufügen.
 
-1. Wählen Sie links im Gliederungsfenster einen Container oder Steckplatz aus, zu dem untergeordnete Module hinzugefügt werden können.
-1. Wählen Sie die Ellipsen-Schaltfläche neben dem Namen des Containers oder Slots und dann **Fragment hinzufügen** aus. Ein Dialogfeld wird angezeigt.
+1. Wählen Sie im Gliederungsbereich links oder direkt auf der Haupt-Canvas einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
+1. Wählen Sie im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ die Haupt-Canvas verwenden, wählen Sie das Pluszeichen (**+**) aus.  
+1. Wählen Sie **Fragment hinzufügen** aus.
 
     ![Ein Screenshot, in dem gezeigt wird, wie einem Slot oder Container ein vorhandenes Fragment hinzugefügt wird](./media/add-fragment.png)
  
     > [!NOTE]
     > Wenn der Container oder Slot keine neuen untergeordneten Module unterstützt, ist die Option **Fragment hinzufügen** nicht verfügbar.
     
-1. Suchen Sie im Dialogfeld nach einem Fragment, das Sie hinzufügen möchten, und wählen Sie es aus. Wenn keine verfügbaren Fragmente aufgelistet sind, müssen Sie möglicherweise zuerst ein Fragment aus einem Modultyp erstellen, den der ausgewählte Container oder Slot unterstützt.
+1. Suchen Sie im Dialogfeld **Fragment hinzufügen** nach einem Fragment, das Sie hinzufügen möchten, und wählen Sie es aus. Wenn keine verfügbaren Fragmente aufgelistet sind, müssen Sie möglicherweise zuerst ein Fragment aus einem Modultyp erstellen, den der ausgewählte Container oder Slot unterstützt.
 1. Wählen Sie Ihr gewünschtes Fragment aus, das dem Container oder Slot auf Ihrer Seite hinzugefügt werden soll.
 
     ![Ein Screenshot des modalen Fensters der Fragmentauswahl](./media/fragment-picker.png)
@@ -114,7 +116,7 @@ Gehen Sie folgendermaßen vor, um einer Seite ein Fragment hinzuzufügen.
 
 Gehen Sie folgendermaßen vor, um ein Fragment aus einem Slot oder Container auf einer Seite zu entfernen.
 
-1. Wählen Sie links im Gliederungsbereich die Schaltfläche mit den Auslassungspunkten neben dem Namen des zu entfernenden Fragments und anschließend die Schaltfläche mit dem Papierkorb.
+1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment auf der Canvas und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
 1. Wenn Sie aufgefordert werden, das Entfernen des Fragments zu bestätigen, wählen Sie **OK** aus.
 
 > [!NOTE]

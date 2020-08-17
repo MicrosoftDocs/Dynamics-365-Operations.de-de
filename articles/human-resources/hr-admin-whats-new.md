@@ -3,7 +3,7 @@ title: Neuigkeiten oder Änderungen in Human Resources
 description: Jede Woche stellen wir ein neues Release für Microsoft Dynamics 365 Human Resources zur Verfügung. In den hier aufgeführten Artikeln werden die wöchentlich vorgenommenen Änderungen im Detail beschrieben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/01/2020
+ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 418ac9cf680f3a3f6316888c62f02b4dc86030c9
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: a0fc9d521d40f47821d6134ebef4dc041df3059f
+ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555362"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3614311"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Neuerungen oder Änderungen in Human Resources
 
@@ -31,7 +31,7 @@ Alle zwei Wochenn stellen wir ein neues Release für Microsoft Dynamics 365 Huma
 
 Weitere Informationen über bevorstehende Funktionen oder den Aktualisierungsprozess für die Personalabteilung finden Sie in den folgenden Artikeln:
 
-- [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+- [Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
 
 - [Aktualisierungsprozess](hr-admin-setup-update-process.md)
 
@@ -41,6 +41,7 @@ Weitere Informationen über bevorstehende Funktionen oder den Aktualisierungspro
 
 Um zu sehen, was in jeder zweiwöchentlichen Version von Human Resources neu ist oder geändert wurde, lesen Sie die folgenden Artikel:
 
+[23. Juli 2020](hr-whats-new-2020-07-23.md)</br>
 [8. Juli 2020](hr-whats-new-2020-07-08.md)</br>
 [23. Juni 2020](hr-whats-new-2020-06-23.md)</br>
 [11. Juni 2020](hr-whats-new-2020-06-11.md)</br>
@@ -61,6 +62,6 @@ Um zu sehen, was in jeder zweiwöchentlichen Version von Human Resources neu ist
 
 ## <a name="see-also"></a>Siehe auch
 
-[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)

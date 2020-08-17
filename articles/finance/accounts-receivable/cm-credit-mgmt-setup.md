@@ -3,7 +3,7 @@ title: Einrichtung der Parameter für das Kreditmanagement
 description: In diesem Thema werden die Optionen beschrieben, mit denen Sie das Kreditmanagement konfigurieren können, um die Anforderungen Ihres Unternehmens zu erfüllen.
 author: mikefalkner
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mfalkner
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d4ced14e51dd28d51d2081d8e92891e31eea49d
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: c4930d346ddc4679e6a3196c5f35adb598ed38c1
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154527"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651904"
 ---
 # <a name="credit-management-parameters-setup"></a>Einrichtung der Parameter für das Kreditmanagement
 
@@ -34,7 +34,7 @@ Es gibt vier Inforegister im Abschnitt **Kredit**, in denen Sie die Parameter ä
 
 ### <a name="credit-holds"></a>Kreditsperren
 
-- Stellen Sie die Option **Bearbeitung des Kundenauftragswerts nach Freigabe des Auftragsstopps zulassen** auf **Ja**, um zu verlangen, dass die Buchungsregeln erneut überprüft werden, wenn der Kundenauftragswert (erweiterter Preis) seit der Freigabe des Kundenauftrags aus der Warteliste geändert wurde. .
+- Stellen Sie die Option **Bearbeitung des Kundenauftragswerts nach Freigabe des Auftragsstopps zulassen** auf **Nein**, um zu verlangen, dass die Buchungsregeln erneut überprüft werden, wenn der Kundenauftragswert (erweiterter Preis) seit der Freigabe des Kundenauftrags aus der Warteliste erhöht wurde. .
 - Im Feld **Gründe für stornierte Bestellungen** wählen Sie den Freigabegrund aus, der standardmäßig verwendet wird, wenn ein Kundenauftrag storniert wird, für den das Kreditmanagement eingestellt war.
 - Stellen Sie die Option **Kreditlimit für Debitorenkreditgruppen überprüfen** auf **Ja**, um das Kreditlimit einer Debitorenkreditgruppe zu überprüfen, wenn der Kunde in einem Kundenauftrag zu einer Debitorenkreditgruppe gehört. Das Kreditlimit für die Gruppe wird überprüft, und wenn es ausreicht, wird das Kreditlimit für den Debitor überprüft.
 - Setzen Sie die Option **Kreditlimit prüfen, wenn Zahlungsbedingungen erhöht werden** Option auf **Ja**, um die Rangfolge der Zahlungsbedingungen zu prüfen und festzustellen, ob die Zahlungsbedingungen auf dem Kundenauftrag von den Standardzahlungsbedingungen für den Kunden abweichen. Wenn die neuen Zahlungsbedingungen einen höheren Rang als die ursprünglichen Zahlungsbedingungen haben, wird die Bestellung im Kreditmanagement zurückgestellt.

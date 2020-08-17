@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 50362ccd9df7a44961bd6e46fa16779829b1c408
-ms.sourcegitcommit: 96ec8b7252296de0049bff406c743f8da9e0f0be
+ms.openlocfilehash: 393349240d16636d3eec747126cc1ee6f6f9998d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "3606821"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651665"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -38,8 +38,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.13 von Finance and Operations Apps
 
 > [!NOTE]
-> Version 10.0.13 wurde noch nicht veröffentlicht. Diese Angaben dienen lediglich planerischen Zwecken. Inhalt und Funktionsweise unterliegen Änderungen für Version 10.0.13. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](../../fin-ops/get-started/public-preview-releases.md).
-
+> Version 10.0.13 ist eine Vorschauversion. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
 
 ### <a name="upgrade-of-three-jquery-component-libraries"></a>Upgrade von drei jQuery-Komponentenbibliotheken 
 
@@ -50,6 +49,27 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Betroffene Produktbereiche**         | Erweiterbare Steuerelemente, insbesondere benutzerdefinierter JavaScript-Code, der veraltete oder entfernte APIs verwendet |
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Mit der Version 10.0.13/Platform Update 37 können Kunden optional zu den neuesten Bibliotheken wechseln, indem sie die Funktion Drei jQuery-Komponentenbibliotheken aktualisieren aktivieren. Die Umstellung auf die neuen Bibliotheken ist mit der Version vom April 2021 obligatorisch, damit Zeit für die Migration betroffener APIs bleibt.   |
+
+### <a name="existing-grid-controlforcelegacygrid-api"></a>Bestehende Rastersteuerungs/ForceLegacyGrid()-API
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Die vorhandene Rastersteuerung wird durch die neue Rastersteuerung ersetzt. |
+| **Ersetzt durch eine andere Funktion?**   | Die [neue Rastersteuerung](../..//fin-ops/get-started/grid-capabilities.md) |
+| **Betroffene Produktbereiche**         | Webclient |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | In Version 10.0.13 ist die neue Rastersteuerung allgemein verfügbar und Kunden können diese Funktion optional aktivieren. Die neue Rastersteuerung wird im Release vom Oktober 2021 obligatorisch. Wenn die neue Rastersteuerung obligatorisch wird, wird die **forceLegacyGrid()**-API nicht mehr berücksichtigt. |
+
+### <a name="personalization-without-saved-views"></a>Personalisierung ohne gespeicherte Ansichten 
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Das Personalisierungssubsystem wurde mit der Funktion zum Speichern gespeicherter Ansichten überarbeitet, um eine bessere Leistung und zusätzliche Funktionen zu erreichen. |
+| **Ersetzt durch eine andere Funktion?**   | Gespeicherte Ansichten |
+| **Betroffene Produktbereiche**         | Webclient |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | In Version 10.0.13/Plattformupdate 37 ist die Funktion für gespeicherte Ansichten allgemein verfügbar und Kunden können diese Funktion optional aktivieren. Die Funktion für gespeicherte Ansichten wird im Release vom Oktober 2021 obligatorisch. |
+
 
 ## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.12 von Finance and Operations Apps
 
@@ -75,7 +95,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Cloud |
 | **Status**                         | **Veraltet:** Diese Funktion ist für Self-Service-Bereitstellungen nicht mehr verfügbar. |
 
-### <a name="visual-studio-2015"></a>Visual Studio2015
+### <a name="visual-studio-2015"></a>Visual Studio 2015
 
 |   |  |
 |------------|--------------------|

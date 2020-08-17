@@ -3,7 +3,7 @@ title: In früheren Versionen entfernte oder veraltete Funktionen
 description: Dieses Thema beschreibt Funktionen, die aus Dynamics 365 for Finance and Operations und früheren Versionen dieses Produkts entfernt wurden oder für die Entfernung geplant waren.
 author: sericks007
 manager: AnnBe
-ms.date: 06/23/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a73231a8286a412e9ec8a4eef6c58d7afd73ec0
-ms.sourcegitcommit: bdfc84aa7f607511981c0b2f20f03fabcb773510
+ms.openlocfilehash: bccc9a0a2b0abfdeba248007cfdb2bd599e35f48
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3500411"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645388"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>In früheren Versionen entfernte oder veraltete Funktionen
 
@@ -62,7 +62,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche**         | Bewerbung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Bis 1. April 2020 müssen Entwickler die neue API verwenden. |
+| **Status**                         | Veraltet: Bis zum 1. April 2020 müssen Entwickler, die in der Klasse **Hat Funktion** enthaltenen Plattform-APIs verwenden. |
 
 ### <a name="hashcomputesha1hashstring-message"></a>Hash.ComputeSHA1Hash(string message)
 
@@ -72,7 +72,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Ja |
 | **Betroffene Produktbereiche**         | Plattform |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Bis 1. April 2020 müssen Entwickler die neue API verwenden. |
+| **Status**                         | Veraltet: Bis zum 1. April 2020 müssen Entwickler, die in der Klasse **Hat Funktion** enthaltenen Plattform-APIs verwenden. |
 
 
 ### <a name="formdatetimecontrolsetutcstring"></a>FormDateTimeControl.setUtcString()
@@ -85,7 +85,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Bereitstellungsoption**              | Alle |
 | **Status**                         | Veraltet: Wir planen, die Methode **setUtcString()** bis zum 1. Oktober 2020 nicht mehr zu unterstützen. Entwickler können stattdessen die Methode **setUtcDateTime()** verwenden. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Bericht „schwarze Liste“ (IT) – Funktionsreferenz IT-00001
+### <a name="blacklist-report-it--feature-reference-it-00001"></a>Blacklist-Bericht (IT) – Funktionsreferenz IT-00001
 
 |   |  |
 |------------|--------------------|
@@ -93,7 +93,7 @@ Detaillierte Informationen über Objekte in Finance and Operations Apps finden S
 | **Ersetzt durch eine andere Funktion?**   | Nein |
 | **Betroffene Produktbereiche**         | Italienische Lokalisierung |
 | **Bereitstellungsoption**              | Alle |
-| **Status**                         | Veraltet: Bis 1. Oktober 2020 planen wir, **Bericht „schwarze Liste“ (IT) – Funktionsreferenz IT-00001** nicht mehr zu unterstützen. |
+| **Status**                         | Veraltet: Bis 1. Oktober 2020 planen wir, **Blacklist-Bericht (IT) – Funktionsreferenz IT-00001** nicht mehr zu unterstützen. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>InInlandssteuererklärung – Funktionsreferenz IT-00003
 

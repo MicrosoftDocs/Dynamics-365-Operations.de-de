@@ -3,7 +3,7 @@ title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Die neue Rasterfunktion muss aktiviert sein, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
 manager: AnnBe
-ms.date: 06/04/2020
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 88a4e2fe69000f8034729d468ad5fd108d435c3e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: b1dd5e852bdc116d0848687782c930b19eae7900
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431359"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3651689"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -128,20 +128,47 @@ Damit das System einen Wert als Ausdruck erkennt, müssen Sie vor dem Wert ein G
 
 Alle folgenden Benutzersitzungen beginnen mit der aktivierten neuen Rastersteuerung.
 
+## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Entwickler] Deaktivierung einzelner Seiten für die Verwendung des neuen Rasters 
+Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode des Formulars ein, um das Raster für eine einzelne Seite zu deaktivieren.
+
+        this.forceLegacyGrid();
+
+Diese API wird bis zur Veröffentlichung im Oktober 2021 durchgeführt, danach wird die neue Rastersteuerung obligatorisch. Bitte melden Sie alle Probleme, für die diese API verwendet werden muss, an Microsoft. 
+
 ## <a name="known-issues"></a>Bekannte Probleme
 In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteuerelement verwaltet, während sich die Funktion in einem Vorschaustatus befindet.  
 
 ### <a name="open-issues"></a>Bekannte Probleme
+-  Nach dem Aktivieren der Funktion **Neue Rastersteuerung** werden einige Seiten weiterhin die vorhandene Rastersteuerung verwenden. Dies geschieht in den folgenden Situationen:  
+    -  Auf der Seite gibt es eine Kartenliste, die in mehreren Spalten gerendert ist.
+    -  Auf der Seite gibt es eine gruppierte Kartenliste.
+    -  Eine Rasterspalte mit einem nicht reagierenden erweiterbaren Steuerelement.
 
-- Kartenlisten, die als mehrere Spalten gerendert wurden, werden jetzt als einzelne Spalte gerendert.
-- Gruppierte Listen werden nicht als Gruppen oder in separaten Spalten gerendert.
+    Tritt diese Situation zum ersten Mal auf, wird eine Meldung zum Aktualisieren der Seite angezeigt. Nachdem diese Meldung angezeigt wird, verwendet die Seite das vorhandene Raster für alle Benutzer bis zur nächsten Aktualisierung der Produktversion weiter. Für ein zukünftiges Update wird an einem besseren Umgang mit diesen Szenarien gearbeitet, damit das neue Raster genutzt werden kann.     
 
 ### <a name="fixed-as-part-of-10013"></a>Als Teil von 10.0.13 behoben
 
-> [!NOTE]
-> Die folgenden Informationen werden bereitgestellt, damit Sie entsprechend planen können. Weitere Informationen zur angestrebten Veröffentlichungsversion 10.0.13 finden Sie unter [Dienstupdateverfügbarkeit](../../fin-ops/get-started/public-preview-releases.md).
-
-- [KB 4563317] Quickinfos werden für Bilder nicht angezeigt.
+-  [Bug 470173] Kontrollkästchen in inaktiven Zeilen werden umgeschaltet, wenn auf das Leerzeichen in der Zelle geklickt wird
+-  [Bug 474848] Erweiterte Vorschauen mit Rastern werden nicht angezeigt
+-  [Bug 474851] Hyperlinks in Referenzgruppensteuerelementen funktionieren nicht 
+-  [Bug 471777] Felder in einem Raster können nicht zum Bearbeiten oder Erstellen einer mobilen App ausgewählt werden
+-  [KB 4569441] Probleme beim Rendern mehrspaltiger Kartenlisten, QuickInfos für Bilder und Anzeigeoptionen für einige Felder
+-  [KB 4575279] Nicht alle markierten Zeilen werden aus der allgemeinen Erfassung gelöscht
+-  [KB 4575233] Anzeigeoptionen werden nach dem Verschieben in eine andere Zeile nicht wiederhergestellt
+-  [KB 4571095] Die Buchung des Produktzugangs erfolgt, wenn versehentlich die Eingabetaste gedrückt wird (korrekte Behandlung der Standardaktivität einer Seite)
+-  [KB 4575437] Suchvorgänge mit bearbeitbaren Steuerelementen werden unerwartet geschlossen
+-  [KB 4569418] Doppelte Zeile im Lieferzeitplan erstellt
+-  [KB 4575435] Die verbesserte Vorschau bleibt manchmal bestehen, auch wenn sich der Mauszeiger nicht in der Nähe des Felds befindet
+-  [KB 4575434] Die Suche filtert nicht, wenn das Feld geändert wurde
+-  [KB 4575430] Werte in Kennwortfeldern werden im Raster nicht maskiert
+-  [KB 4569438] Nach dem Markieren von Zeilen beim Abwickeln von Lieferantentransaktionen wird „Die Verarbeitung wurde aufgrund eines Validierungsproblems gestoppt“ angezeigt
+-  [KB 4569434] Das Aktualisieren des Formulars für juristische Personen führt zu weniger Datensätzen
+-  [KB 4575297] Der Fokus bewegt sich beim Bearbeiten und Durchblättern eines Rasters immer wieder zur Aufgabenaufzeichnung
+-  [KB 4566773] Korrekturtransaktionen werden bei der Belegbuchungsanfrage nicht als negativ angezeigt 
+-  [KB 4575288] Der Fokus wird auf die aktive Zeile zurückgesetzt, wenn die Linie zwischen den Zeilen in einer einfachen Liste ausgewählt wird
+-  [KB 4575287] Der Fokus kehrt nicht zur ersten Spalte zurück, wenn mit dem Abwärtspfeil eine neue Zeile in der Erfassung erstellt wird
+-  [KB 4564819] Zeilen in einer Freitextrechnung können nicht gelöscht werden (da die Datenquelle ChangeGroupMode = ImplicitInnerOuter)
+-  [KB 4563317] QuickInfos/verbesserte Vorschauen werden für Bilder nicht angezeigt
 
 ### <a name="fixed-as-part-of-10012"></a>Als Teil von 10.0.12 behoben
 
@@ -158,6 +185,7 @@ In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteue
 - [KB 4562647] Fokus wird auf das erste Steuerelement im Dialogfeld **Veröffentlichen** zurückgesetzt, nachdem eine neue Zeile im Sicherheitsrollenraster hinzugefügt wurde.
 - [KB 4563310] Die erweiterte Vorschau wird nach dem Ändern einer Zeile nicht geschlossen.
 - [KB 4563313] Ein unerwarteter Clientfehler tritt im Internet Explorer auf, wenn ein Wert in einer Suche ausgewählt wird.
+- [KB 4564557] Suchvorgänge und Drop-down-Menüs werden nicht im Internet Explorer geöffnet
 - [KB 4563324] Navigation funktioniert nachdem der **Personalmanagement** Arbeitsbereich geöffnet wurde.
 
 ### <a name="fixed-as-part-of-10011"></a>Als Teil von 10.0.11 behoben

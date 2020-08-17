@@ -3,7 +3,7 @@ title: Kauffeldmodul
 description: Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 583937be92b62991cd13f0806df4a0a6c9ac049c
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 9780aabbac6d01d41dae526c7c06139eba07de4e
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411341"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645338"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
-[!include [banner](includes/preview-banner.md)]
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -61,7 +61,7 @@ Mithilfe von Designs können Sie die Reihenfolge der Produkteigenschaften und Ak
 
 ## <a name="modules-that-can-be-used-in-a-buy-box-module"></a>Module, die im Kauffeldmodus verwendet werden können
 
-- **Mediengalerie** - Dieses Modul wird verwendet, um die Bilder eines Produkts auf einer Produktdetailseite anzuzeigen. Es kann ein bis zu vielen Bildern unterstützen. Er unterstützt auch Miniaturbilder. Die Miniaturbilder können horizontal (als Zeile unter dem Bild) oder vertikal angeordnet werden (als Spalte neben dem Bild). Das Medienkatalogmodul kann dem Slot **Medien** im Kauffeldmodul hinzugefügt werden. Es unterstützt derzeit nur Bilder. 
+- **Mediengalerie** - Dieses Modul wird verwendet, um die Bilder eines Produkts auf einer Produktdetailseite anzuzeigen. Weitere Informationen zu diesem Modul finden Sie unter [Mediengaleriemodul](mediagallery-module.md).
 - **Store-Selector** – Dieses Modul wird eine Liste von nahe gelegene Filialen anzeigen, die für eine Abholung zur Verfügung stehen. Hier können Benutzer einen Ort eingeben, um nach Geschäften in der Nähe zu suchen. Weitere Informationen zu diesem Modul finden Sie unter [Auswahlmodul speichern](store-selector.md).
 
 ## <a name="buy-box-module-settings"></a>Kauffeldmoduleinstellungen
@@ -108,15 +108,17 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Übersicht](starter-kit-overview.md)
+[Überblick über das Starterkit](starter-kit-overview.md)
 
 [Shopauswahlmodul](store-selector.md)
+
+[Mediengaleriemodul](media-gallery-module.md)
 
 [Containermodul](add-container-module.md)
 
 [Einkaufswagenmodul](add-cart-module.md)
 
-[Symbol Einkaufswagenmodul](cart-icon-module.md)
+[Modul für Einkaufswagensymbol](cart-icon-module.md)
 
 [Auschecken-Modul](add-checkout-module.md)
 

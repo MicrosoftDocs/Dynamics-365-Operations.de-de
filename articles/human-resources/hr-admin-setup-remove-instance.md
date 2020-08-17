@@ -3,7 +3,7 @@ title: Eine Instanz entfernen
 description: Diese Artikel führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17f299f81d1326dfb06c11a6125acc54b8ef2a6e
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431198"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621379"
 ---
 # <a name="remove-an-instance"></a>Eine Instanz entfernen
 
@@ -67,8 +67,21 @@ Um eine Human Resources-Umgebung aus einer vorhandenen Power Apps-Umgebung zu en
 1. Kontaktaufnahme von Support, um eine Entfernung einer Anforderung zu initiieren.
 2. Das Supportteam initiiert eine Entfernungsanforderung mit dem Human Resources DevOps-Team. 
 3. Fahren Sie fort, nachdem Sie wissen, dass die Umgebung entfernt wurde.
-4.  Melden Sie sich an bei LCS indem Sie das Konto verwenden, das Sie verwenden, um Human Resources zu abonnieren. 
+4. Melden Sie sich an bei LCS indem Sie das Konto verwenden, das Sie verwenden, um Human Resources zu abonnieren. 
 5. Wählen Sie das Human Resources-Projekt aus, das die Umgebung enthält. 
 6. In Ihrem LCS-Projekt wählen Sie die Kachel **Human Resources App-Verwaltung** aus. 
 7. Wählen Sie die Instanz aus, die Sie entfernen möchten, die mit dem Bereitstellungsstatus **Fehler** markiert werden muss.
 8. Wählen Sie **Instanz entfernen** aus, und bestätigen Sie Ihre Entscheidung. 
+
+## <a name="recover-a-soft-deleted-environment"></a>Eine nicht vollständig gelöschte Umgebung wiederherstellen
+
+Wenn Sie die Power Apps Umgebung, mit der Ihre Human-Ressources-Umgebung verbunden ist, löschen, lautet der Status der Human-Ressources-Umgebung in Lifecycle Services **weich gelöscht**. In diesem Fall können Benutzer keine Verbindung zu Human Ressources herstellen.
+
+So stellen Sie die Umgebung wieder her:
+
+1. Folgen Sie den Anweisungen unter [Die Power Apps Umgebung wiederherstellen](/power-platform/admin/recover-environment.md).
+
+2. Wenden Sie sich an den Support, um die Human-Resources-Umgebung wiederherzustellen. Weitere Informationen erhalten Sie über den [Support](hr-admin-troubleshooting-support.md).
+
+> [!Warning]
+> Power Apps Umgebungen werden nach dem Löschen nur sieben Tage lang gespeichert. Sie müssen die Umgebung innerhalb dieser sieben Tage wiederherstellen.

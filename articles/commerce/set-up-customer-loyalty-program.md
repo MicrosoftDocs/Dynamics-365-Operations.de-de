@@ -3,7 +3,7 @@ title: Übersicht über die Loyalität
 description: In diesem Thema werden die Loyalitätsfunktionen innerhalb von Dynamics 365 Commerce und die damit verbundenen entsprechenden Einrichtungsschritte behandelt, damit Einzelhändler einfach mit ihrem Treueprogramm anfangen können.
 author: scott-tucker
 manager: AnnBe
-ms.date: 03/08/2019
+ms.date: 07/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 337ede63cb9175f2674bae8f2caaac5f1ba5f5cb
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fd0ceefe1890214ab5fe2f619f6bf8ce718dec11
+ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022688"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3613202"
 ---
 # <a name="loyalty-overview"></a>Überblick über die Loyalität
 
@@ -55,7 +55,7 @@ In der folgenden Tabelle werden die einzelnen Komponenten beschrieben und wo sie
 | Einrichten von Rabatten (Komponente)                  | Richten Sie die Rabatte ein, die Sie den Debitoren mit Kundentreue anbieten. Beispielsweise können Sie 5 Prozent auf alle Bekleidungsprodukte anbieten. | Rabatte müssen zu den Preisgruppen hinzugefügt werden, bevor Sie in ein Treueprogramm einbezogen werden. Preisgruppen werden den Treueprogrammen und Treuestufen zugewiesen. |
 | Einrichten von Preisgruppen (Komponente)               | Preisgruppen werden verwendet, um Preise und Rabatte für Produkte zu erstellen und zu verwalten. Richten Sie die Preisgruppen ein, die die Rabatte umfassen, die für Treueprogramme gelten. | Preisgruppen werden Ihren Treueprogrammen und Treuestufen zugewiesen. |
 | Einrichten von Kanälen (Komponente)                   | Commerce-Kanäle sind Shops, die an Ihren Treueprogrammen teilnehmen, wie physische Shops, Onlineshops oder Callcenter. Sie müssen Ihre Kanäle einrichten, bevor Sie ihnen Treueprogramme zuweisen können. | Sie weisen Kanäle einem Treueprogramm zu, wenn der Kanal am Treueprogramm teilnimmt. |
-| Einrichten von Treuezahlungsmethoden (Komponente) | Sie müssen eine Zahlungsmethode einrichten, bevor eine Treuekarte an einem Register verwendet werden kann und Treuepunkte im Rahmen eines Treueprogramms eingelöst werden können. Sie müssen auch die Treuezahlungsmethode dem Kanal hinzufügen, bevor Kunden ihre Treuepunkte als Zahlungsmittel für Produkte einlösen können. | Richten Sie eine Treuezahlungsmethode ein, und weisen Sie anschließend die Treuezahlungsmethode den Kanälen zu, die am Treueprogramm teilnehmen. |
+| Einrichten von Treuezahlungsmethoden (Komponente) | Um sicherzustellen, dass die Treuepunkte in jedem Kanal eingelöst werden können, z. B. in physischen Läden, Onlinegeschäften oder Callcentern, müssen Sie den Lagerfachbereich für die Treuekarten auf der Seite **Kartennummern** einrichten. | Richten Sie eine Treuezahlungsmethode ein, und weisen Sie anschließend die Treuezahlungsmethode den Kanälen zu, die am Treueprogramm teilnehmen. |
 | Einrichten von Datumsintervallen                            | Datumsintervalle bieten eine flexible Methode, um die Dauer festzulegen, die für Treuestufen gilt. Verwenden Sie Datumsintervalle, um anzugeben, wie lange ein Debitor auf einer Stufe bleiben kann, oder wie lange ein Debitor eine Aktivität ausführen muss, um sich für eine Stufe zu qualifizieren. | Datumsintervalle gelten nur, wenn Sie Stufen in Ihren Treueprogrammen verwenden. Sie wählen das Datumsintervall aus, das für Programmstufen gilt, und auch die Datumsintervalle, die auf Programmstufenregeln zutreffen. |
 | Einrichten von Belohnungspunkten                             | Belohnungspunkte sind die Arten von Belohnung, die Sie den Debitoren anbieten. Belohnungspunkte können einlösbar oder nicht einlösbar sein. Einlösbare Belohnungspunkte können gegen Produkte eingetauscht werden. Nicht einlösbare Belohnungspunkte werden für Nachverfolgungszwecke verwendet oder um einen Debitor in die nächste Stufe in einem Treueprogramm anzuheben. | Belohnungspunkte werden in Stufenregeln referenziert und werden verwendet, um einen Debitor für eine bestimmte Stufe zu qualifizieren. Belohnungspunkte werden auch in Treueschemas in den Einnahme- und Tilgungsregeln referenziert. In den Einnahmeregeln geben Sie die Belohnungen an, die ein Debitor für eine bestimmte Aktivität erhalten kann. In den Tilgungsregeln geben Sie die Belohnung an, die der Debitor einlösen kann. |
 | Einrichten von Treueprogrammen                          | Treueprogramme sind die Kerntreueentität, die Sie anbieten. Jedes Treueprogramm kann Treuestufen haben, die ihm zugewiesen sind. Rabatte und Preisgruppen werden den Treueprogrammen entweder auf Programmebene oder auf Treuestufenebene zugeordnet. | Sie erstellen Treueschemas für Ihre Treueprogramme. Sie weisen Treuekarten Ihren Treueprogrammen zu, und Treuekarten können einem Debitor zugewiesen werden. Kanäle nehmen an den Treueprogrammen teil, die den Treueschemas zugewiesen sind. Jeder Debitor, der eine Treuekarte besitzt, kann an den Treueprogrammen teilnehmen, die der Karte zugewiesen sind. |

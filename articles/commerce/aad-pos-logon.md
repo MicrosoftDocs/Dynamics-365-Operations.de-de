@@ -3,7 +3,7 @@ title: Aktivieren Sie die Azure Active Directory-Authentifizierung für die POS-
 description: In diesem Thema wird erläutert, wie die Anmeldung für die Microsoft Dynamics 365 Commerce POS (Point of Sale) so konfiguriert wird, dass sie die Azure Active Directory Authentifizierung verwendet.
 author: boycezhu
 manager: annbe
-ms.date: 05/20/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: boycezhu
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 4f5a02348e8cef44424ae5d6a49de02d762ba245
-ms.sourcegitcommit: cecd97fd74ff7b31f1a677e8fdf3e233aa28ef5a
+ms.openlocfilehash: ccb2d62b09153d03b064d9661227f3499d67bca2
+ms.sourcegitcommit: dc1dcd0ccc40be5d45701114fa8c952c13488344
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "3410034"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641032"
 ---
 # <a name="enable-azure-active-directory-authentication-for-pos-sign-in"></a>Aktivieren Sie die Azure Active Directory-Authentifizierung für die POS-Anmeldung
 [!include [banner](includes/banner.md)]
@@ -64,10 +64,13 @@ Um ein Azure AD-Konto mit einem Mitarbeiter zu verknüpfen, führen Sie die folg
 
 Die Felder **Alias**, **UPN** und **Externer Sub-Identifikator** auf der Registerkarte **Commerce** auf der Seite mit den Details des Mitarbeiters werden ausgefüllt.
 
+> [!NOTE]
+> Nachdem ein Arbeitskraftdatensatz, z. B. wenn ihm ein neues Azure AD-Konto zugeordnet wurde, aktualisiert, ein Kennwort geändert oder das Adressbuch einer Arbeitskraft aktualisiert wird, sollten Sie Verteilungsplan **1060** (**Personal**) ausführen, um den Kanal mit den neuesten Personalinformationen zu aktualisieren. So kann die POS-Anwendung die richtigen Daten für die Benutzerauthentifizierung und Autorisierungsüberprüfung abrufen.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Erweiterte Anmeldungsfunktionen für MPOS und Cloud POS einrichten](extended-logon.md)
 
 [Ein Einzelhandelsfunktionsprofil erstellen](retail-functionality-profile.md)
 
-[ Eine Arbeitskraft konfigurieren](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+[Eine Arbeitskraft konfigurieren](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)

@@ -3,7 +3,7 @@ title: Neuerungen und Änderungen in Dynamics 365 Human Resources (25. Juni 2020
 description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Human Resources entweder neu oder geändert sind.
 author: Darinkramer
 manager: AnnBe
-ms.date: 6/25/2020
+ms.date: 06/25/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d83268292ac65d62cbe8fa9a4c146bf4af36b50
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: fa02cf10b2b4fe08440d3641472e83dfe58169c9
+ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555026"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "3614385"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (23. Juni 2020)
 
@@ -123,6 +123,6 @@ Prüflistenentitäten für Onboarding, Offboarding, Übergänge und Geschäftspr
 ## <a name="see-also"></a>Siehe auch
 
 [Neuerungen oder Änderungen in Human Resources](hr-admin-whats-new.md)</br>
-[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2 ](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Übersicht zu Dynamics 365 Human Resources 2019 Versionswelle 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Aktualisierungsprozess](hr-admin-setup-update-process.md)</br>
 [Funktionen verwalten](hr-admin-manage-features.md)

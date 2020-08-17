@@ -3,7 +3,7 @@ title: Common Data Service-Integration konfigurieren
 description: Sie können die Integration zwischen Common Data Service und Dynamics 365 Human Resources aktivieren und deaktivieren. Sie können auch die Synchronisierungsdetails anzeigen, Nachverfolgungsdaten löschen und eine Entität erneut synchronisieren, um Datenprobleme zwischen den beiden Umgebungen zu beheben.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7aad8217d48917d6855046a6810fe994f5564d94
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 8cbead2961c4576a5394080aae2fec109bce3f10
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431313"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621303"
 ---
 # <a name="configure-common-data-service-integration"></a>Common Data Service-Integration konfigurieren
 
@@ -66,6 +66,9 @@ Möglicherweise möchten Sie die Integration in den folgenden Situationen deakti
 - Um die Integration zu deaktivieren, setzen Sie die Option auf **Nein**.
 
 [![Aktivieren/Deaktivieren der Common Data Service-Integration](./media/hr-enable-or-disable-common-data-service-integration.png)](./media/hr-enable-or-disable-common-data-service-integration.png)
+
+> [!WARNING]
+> Wir empfehlen dringend, die Common Data Service Integration während Datenmigrationsaufgaben auszuschalten. Das Hochladen großer Datenmengen kann die Leistung erheblich beeinträchtigen. Das Hochladen von 2.000 Mitarbeitern kann beispielsweise mehrere Stunden dauern, wenn die Integration aktiviert ist, aber weniger als eine Stunde, wenn sie deaktiviert ist. Die in diesem Beispiel angegebenen Zahlen dienen nur zu Demonstrationszwecken. Die genaue Zeit, die zum Importieren von Datensätzen benötigt wird, kann aufgrund vieler Faktoren stark variieren.
 
 ## <a name="view-data-integration-details"></a>Datenintegrationsdetails anzeigen
 

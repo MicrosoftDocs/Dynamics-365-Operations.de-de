@@ -3,7 +3,7 @@ title: Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 description: Dieses Thema bietet einen Überblick über die Verbesserungen der Produkt- und Debitorensuchfunktion in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 06/10/2019
+ms.date: 07/28/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 2b4c17b41056a35c2d2caaedb4f52998179b3c3e
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
+ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3022596"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628908"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -95,6 +95,9 @@ Bei einer Remote-Debitorensuche wird die Debitorenkennung nicht für Debitoren a
 
 Suchen, die auf der Telefonnummer basieren, sind vereinfacht worden. Diese Suchen ignorieren nun Sonderzeichen, wie Leerzeichen, Bindestriche und Klammern, die möglicherweise hinzugefügt wurden, wenn der Debitor erstellt wurde. Daher müssen Kassierer sich keine Sorgen über das Telefonnummernformat machen, wenn sie suchen. Sie können auch nach Debitoren suchen, indem sie eine unvollständige Telefonnummer eingeben. Wenn eine Telefonnummer Sonderzeichen enthält, kann sie auch gefunden werden, indem nach den Zahlen gesucht wird, die nach den Sonderzeichen angezeigt werden. Wurde beispielsweise die Telefonnummer eines Debitors in der Form **123-456-7890** eingegeben, kann ein Kassierer nach dem Debitor suchen, indem er **123**, **456**, **7890** oder **1234567890** eingibt oder indem er nur die ersten Zahlen einer Telefonnummer eingibt.
 
+> [!NOTE]
+> Ein Debitor kann mehrere Telefonnummern und mehrere E-Mails haben. Der Debitorensuchalgorithmus durchsucht auch diese sekundären E-Mails und Telefonnummern, aber auf der Ergebnisseite der Debitorensuche werden nur die primären E-Mails und Telefonnummern angezeigt. Dies kann zu Verwirrung führen, da in den Debitorenergebnissen die gesuchte E-Mail-Adresse oder Telefonnummer nicht angezeigt wird. In einem zukünftigen Release planen wir, die Anzeige der Debitorensuchergebnisse zu verbessern, um diese Informationen anzuzeigen.
+
 Die herkömmliche Debitorensuche kann zeitaufwendig sein, da sie über mehrere Felder hinweg sucht. Stattdessen können Kassierer jetzt in einer einzelnen benutzerdefinierten Eigenschaft, wie Name, E-Mail-Adresse oder Telefonnummer suchen. Die Eigenschaften, die der Debitorensuchalgorithmus verwendet, werden zusammen als *Debitorensuchkriterien* bezeichnet. Der Systemadministrator kann einfach ein oder mehrere Kriterien als Verknüpfungen konfigurieren, die in der POS angezeigt werden. Da die Suche auf ein einziges Kriterium eingeschränkt ist, werden nur die relevanten Suchergebnisse angezeigt, und die Leistung ist viel besser, als die Leistung bei einer standardmäßigen Debitorensuche. Die folgende Abbildung zeigt die Debitorensuchverknüpfungen in POS an.
 
 ![Kundensuchkriterien Shortcuts](./media/SearchShortcutsPOS.png "Kundensuchkriterien Shortcuts")
@@ -113,4 +116,5 @@ Das Feld **Reihenfolge anzeigen** bestimmt die Reihenfolge, in der Verknüpfunge
 
 In einer bevorstehenden Veröffentlichung von Commerce sind Einzelhändler in der Lage, den Standard-Debitorensuchmodus in POS auf **Alle Shops durchsuchen** festzulegen. Diese Konfiguration kann in Szenarios hilfreich sein, bei denen Debitoren, die außerhalb POS erstellt wurden, umgehend gefunden werden müssen (zum Beispiel selbst bevor der Verteilungseinzelvorgang ausgeführt wird). Eine neue Option **Standarddebitoren-Suchmodus** ist im POS-Funktionsprofil verfügbar. Legen Sie diese auf **Aktiviert** fest, um den Standardsuchmodus auf **Alle Shops durchsuchen** festzulegen. Jeder Debitorensuchenversuch macht dann einen Echtzeitanruf an den Hauptsitz.
 
-Um unerwartete Leistungsabgänge zu verhindern, ist diese nach Konfiguration hinter einer Flight-Markierung verborgen, die lautet**CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** Um die Einstellungen **Standarddebitoren-Suchenmodus** der Benutzerschnittstelle anzuzeigen, sollte der Einzelhändler ein Supportticket für die Benutzerakzeptanztests (UAT) und die Produktumgebung erstellen. Nachdem das Ticket empfangen wurde, arbeitet das Technikteam bei dem Einzelhändler, um sicherzustellen, dass der Einzelhändler Tests in der Nicht-Produktionsumgebung durchführt, um die Leistung zu ermitteln und alle Optimierungen zu implementieren, die erforderlich sind.
+Um unerwartete Leistungsabgänge zu verhindern, ist diese nach Konfiguration hinter einer Flight-Markierung verborgen, die lautet **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING** Um die Einstellungen **Standarddebitoren-Suchenmodus** der Benutzerschnittstelle anzuzeigen, sollte der Einzelhändler ein Supportticket für die Benutzerakzeptanztests (UAT) und die Produktumgebung erstellen. Nachdem das Ticket empfangen wurde, arbeitet das Technikteam bei dem Einzelhändler, um sicherzustellen, dass der Einzelhändler Tests in der Nicht-Produktionsumgebung durchführt, um die Leistung zu ermitteln und alle Optimierungen zu implementieren, die erforderlich sind.
+

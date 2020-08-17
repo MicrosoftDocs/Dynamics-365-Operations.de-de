@@ -1,9 +1,9 @@
 ---
 title: Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 description: In diesem Thema wird die Bestandsreservierungsrichtlinie beschrieben, mit der Unternehmen, die Produkte mit Chargenverfolgung verkaufen und für die Logistik WMS-fähige Vorgänge ausführen, bestimmte Chargen für Debitorenaufträge reservieren können, obwohl die mit den Produkten verknüpfte Reservierungshierarchie die Reservierung bestimmter Chargen nicht zulässt.
-author: omulvad
+author: perlynne
 manager: tfehr
-ms.date: 02/07/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -13,25 +13,29 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: omulvad
+ms.author: perlynne
 ms.search.validFrom: 2020-01-15
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: ec80346126713cc604b00e6ca7f6e8f4c242dc6f
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
+ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530304"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3652178"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
 [!include [banner](../includes/banner.md)]
 
-Wenn eine Bestandsreservierungshierarchie vom Typ „Charge unterhalb\[Lagerort\]“mit Produkten verknüpft ist, können Unternehmen, die Produkte mit Chargenverfolgung verkaufen und ihre Logistik als Operationen ausführen, die für das Microsoft Dynamics 365 Warehouse Management System (WMS) aktiviert sind, bestimmte Chargen dieser Produkte nicht für Debitorenaufträge reservieren. In diesem Thema wird die Bestandsreservierungsrichtlinie beschrieben, mit der diese Unternehmen bestimmte Chargen reservieren können, auch wenn die Produkte mit einer „Charge unterhalb\[Lagerort\]“-Reservierungshierarchie verknüpft sind.
+Wenn eine Bestandsreservierungshierarchie vom Typ „Charge unterhalb\[Lagerort\]“mit Produkten verknüpft ist, können Unternehmen, die Produkte mit Chargenverfolgung verkaufen und ihre Logistik als Operationen ausführen, die für das Microsoft Dynamics 365 Warehouse Management System (WMS) aktiviert sind, bestimmte Chargen dieser Produkte nicht für Debitorenaufträge reservieren.
+
+Ähnlich können bestimmte Ladungsträger nicht für Produkte in Aufträgen reserviert werden, wenn diese Produkte mit der Standardreservierungshierarchie verknüpft sind.
+
+In diesem Thema wird die Bestandsreservierungsrichtlinie beschrieben, mit der diese Unternehmen bestimmte Chargen oder Ladungsträger reservieren können, auch wenn die Produkte mit einer „Charge unterhalb\[Lagerort\]“-Reservierungshierarchie verknüpft sind.
 
 ## <a name="inventory-reservation-hierarchy"></a>Bestandreservierungshierarchie
 
-In diesem Abschnitt wird die vorhandene Bestandsreservierungshierarchie zusammengefasst. Der Schwerpunkt liegt auf der Art und Weise, wie Artikel mit Chargenverfolgung und Seriennummernverfolgung gehandhabt werden.
+In diesem Abschnitt wird die vorhandene Bestandsreservierungshierarchie zusammengefasst.
 
 Die Bestandsreservierungshierarchie gibt vor, dass hinsichtlich von Lagerdimensionen, der Bedarfsauftrag die obligatorischen Dimensionen von Standort-, Lager- und Bestandsstatus trägt, während die Lagerlogik für die Zuweisung eines Lagerplatzes für die angeforderten Mengen und das Reservieren des Lagerplatzes zuständig ist. Mit anderen Worten, bei den Interaktionen zwischen dem Bedarfsauftrag und den Lagervorgängen wird erwartet, dass der Bedarfsauftrag angibt, von wo der Auftrag versendet werden muss (d. h., von welchem Standort und von welchem Lagerort). Das Lager verlässt sich dann auf seine Logik, um die erforderliche Menge in den Lagerstätten zu finden.
 
@@ -64,11 +68,11 @@ Wenn die **Chargennummer**-Ebene in der Hierarchie ausgewählt wird, werden alle
 > [!NOTE]
 > Das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** gilt nur für die Reservierungshierarchieebenen, die unterhalb der Lagerortdimension liegen.
 >
-> **Chargennummer** ist die einzige Ebene in der Hierarchie, die für die flexible Reservierungsrichtlinie offen ist. Mit anderen Worten, Sie können das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** nicht für die Ebenen **Lagerort**, **Ladungsträger** oder **Seriennummer** aktivieren.
+> **Chargennummer** und **Ladungsträger** sind die einzigen Ebenen in der Hierarchie, die für die flexible Reservierungsrichtlinie offen sind. Mit anderen Worten, Sie können das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** nicht für die Ebenen **Lagerplatz** oder **Seriennummer** aktivieren.
 >
 > Wenn Ihre Reservierungshierarchie die Seriennummerdimension enthält (die immer unterhalb der **Chargennummer**-Ebene liegen muss), und wenn Sie die chargenspezifische Reservierung für die Chargennummer aktiviert haben, wird das System weiterhin die Seriennummernreservierung und die Kommissionierungsvorgänge basierend auf den Regeln durchführen, die für die Reservierungsrichtlinie „Serie unterhalb\[Lagerort\]“ gelten.
 
-Sie können jederzeit eine chargenspezifische Reservierung für eine vorhandene „Charge unterhalb\[Lagerort\]“-Reservierungsrichtlinie in Ihrer Bereitstellung zulassen. Diese Änderung wirkt sich nicht auf Reservierungen und offene Lagerarbeiten aus, die vor der Änderung erstellt wurden. Das Kontrollkästchen ***Reservierung für Bedarfsauftrag zulassen** kann aber nicht deaktiviert werden, wenn Lagerbuchungen vom Abgangstyp **Bestellt reserviert**, **Physisch reserviert** oder **Bestellt** für mindestens einen Artikel vorhanden sind, der mit der Reservierungshistorie verknüpft ist.
+Sie können jederzeit eine chargenspezifische Reservierung für eine vorhandene „Charge unterhalb\[Lagerort\]“-Reservierungsrichtlinie in Ihrer Bereitstellung zulassen. Diese Änderung wirkt sich nicht auf Reservierungen und offene Lagerarbeiten aus, die vor der Änderung erstellt wurden. Das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** kann aber nicht deaktiviert werden, wenn Lagerbuchungen vom Abgangstyp **Bestellt reserviert**, **Physisch reserviert** oder **Bestellt** für mindestens einen Artikel vorhanden sind, der mit der Reservierungshistorie verknüpft ist.
 
 > [!NOTE]
 > Wenn die vorhandene Reservierungshierarchie eines Artikels keine Chargenspezifikation für den Auftrag zulässt, können Sie ihn einer Reservierungshierarchie zuordnen, die eine Chargenspezifikation zulässt, vorausgesetzt, die Struktur der Hierarchieebene ist in beiden Hierarchien gleich. Verwenden Sie die **Reservierungshierarchie für Artikel ändern**-Funktion, um die Neuzuweisung durchzuführen. Diese Änderung ist möglicherweise relevant, wenn Sie die flexible Chargenreservierung für eine Teilmenge von Artikeln mit Chargenverfolgung verhindern möchten, aber für den Rest des Produktportfolios zulassen möchten.
@@ -90,11 +94,11 @@ Die folgenden Regeln gelten, wenn Mengen verarbeitet werden und eine Chargennumm
 
 Das folgende Beispiel zeigt den vollständigen Ablauf.
 
-## <a name="example-scenario"></a>Beispielszenario
+## <a name="example-scenario-batch-number-allocation"></a>Beispielszenario: Chargennummernzuteilung
 
 Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das **USMF**-Demodatunternehmen verwenden.
 
-### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a>Einrichten einer Bestandsreservierungshierarchie, um eine chargenspezifische Reservierung zu ermöglichen
+### <a name="set-up-an-inventory-reservation-hierarchy-to-allow-batch-specific-reservation"></a><a name="Example-batch-allocation"></a>Einrichten einer Bestandsreservierungshierarchie, um eine chargenspezifische Reservierung zu ermöglichen
 
 1. Gehen Sie zu **Lagerortverwaltung** \> **Einrichten** \> **Bestand \> Reservierungshierarchie**.
 2. Wählen Sie **Neu** aus.
@@ -122,7 +126,7 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
     | 24        | B11          | FL-001   | LP11          | 10       |
     | 24        | B22          | FL-002   | LP22          | 10       |
 
-### <a name="enter-sales-order-details"></a>Auftragsdetails eingeben
+### <a name="enter-sales-order-details"></a><a name="sales-order-details"></a>Auftragsdetails eingeben
 
 1. Wechseln Sie zu **Vertrieb und Marketing** \> **Aufträge** \> **Alle Aufträge**.
 2. Wählen Sie **Neu** aus.
@@ -186,6 +190,176 @@ Für dieses Beispielmüssen Demodaten eingerichtet werden, und Sie müssen das *
 
     Die Menge von **10** für Chargennummer **B11** wird nun für die Auftragsposition und im Lagerort **Baydoor** platziert. Zu diesem Zeitpunkt kann es auf den LKW verladen und an die Adresse des Kunden versendet werden.
 
+## <a name="flexible-license-plate-reservation"></a>Flexible Ladungsträgerreservierung
+
+### <a name="business-scenario"></a>Geschäftsszenario
+
+In diesem Szenario verwendet ein Unternehmen die Lagerortverwaltung und die Arbeitsverarbeitung und erledigt die Ladungsplanung auf der Ebene einzelner Paletten/Container außerhalb des Supply Chain Management, bevor die Arbeit erstellt wird. Diese Behälter werden durch Ladungsträger in den Bestandsdimensionen dargestellt. Daher müssen für diesen Ansatz den Auftragspositionen bestimmte Ladungsträger vorab zugewiesen werden, bevor die Kommissionierarbeit abgeschlossen wird. Das Unternehmen sucht nach Flexibilität bei der Handhabung der Ladungsträgerreservierungsregeln, damit folgende Verhaltensweisen auftreten:
+
+- Ein Ladungsträger kann aufgezeichnet und reserviert werden, wenn der Auftrag vom Verkäufer entgegengenommen wird. Er kann nicht aufgrund anderer Bedarfe verwendet werden. Mit diesem Verhalten wird gewährleistet, dass der vorgesehene Ladungsträger an den Kunden gesendet wird.
+- Wenn der Ladungsträger noch keiner Auftragsposition zugeordnet ist, kann das Lagerpersonal während der Kommissionierarbeiten nach Abschluss der Registrierung und Reservierung des Auftrags einen Ladungsträger auswählen.
+
+### <a name="turn-on-flexible-license-plate-reservation"></a>Flexible Ladungsträgerreservierung aktivieren
+
+Bevor Sie die flexible Ladungsträgerreservierung verwenden können, müssen zwei Funktionen in Ihrem System aktiviert sein. Administratoren können mit den Einstellungen in der [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktionen überprüfen und sie gegebenenfalls aktivieren. Sie müssen die Funktionen in der folgenden Reihenfolge aktivieren:
+
+1. **Funktionsname:** *Flexible Dimensionsreservierung auf Lagerebene*
+1. **Funktionsname:** *Flexible auftragsgebundene Ladungsträgerreservierung*
+
+### <a name="reserve-a-specific-license-plate-on-the-sales-order"></a>Einen bestimmten Ladungsträger für den Auftrag reservieren
+
+Um die Ladungsträgerresevierung für eine Bestellung zu aktivieren, müssen Sie das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** für die Ebene **Ladungsträger** auf der Seite **Bestandsreservierungshierarchien** für die Hierarchie auswählen, die dem entsprechenden Artikel zugeordnet ist.
+
+![Seite „Bestandsreservierungshierachien“ für eine flexible Ladungsträgerreservierungshierarchie](media/Flexible-LP-reservation-hierarchy.png)
+
+Sie können die Ladungsträgerreservierungshierarchie für den Auftrag zu jedem Zeitpunkt Ihrer Bereitstellung aktivieren. Diese Änderung wirkt sich nicht auf Reservierungen oder offene Lagerarbeiten aus, die vor der Änderung erstellt wurden. Sie können jedoch das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** nicht deaktivieren, wenn offene ausgehende Lagerbuchungen den Abgangsstatus *Bestellt*, *Bestellt reserviert* oder *Physisch reserviert* für mindestens einen Artikel haben, der mit der Reservierungshierarchie verknüpft ist.
+
+Selbst wenn das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen** für die Ebene **Ladungsträger** aktiviert ist, ist es *nicht* möglich, in dem Auftrag einen bestimmten Ladungsträger zu reservieren. In diesem Fall gilt die Standardlagerort-Operationslogik, die auf die Reservierungshierarchie zutrifft.
+
+Um einen bestimmten Ladungsträger zu reservieren, müssen Sie einen [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) Prozess verwenden. In der Anwendung können Sie diese Reservierung direkt aus einem Auftrag über die Option **Auftragsgebundene Reservierungen nach Ladungsträger** im Befehl **In Excel öffnen** vornehmen. In den Entitätsdaten, die im Excel-Add-In geöffnet werden, müssen Sie die folgenden reservierungsbezogenen Daten eingeben und dann **Veröffentlichen** auswählen, um die Daten an das Supply Chain Management zurückzusenden:
+
+- Referenz (nur der Wert *Auftrag* wird unterstützt)
+- Auftragsnummer (der Wert kann aus dem Los abgeleitet werden)
+- Loskennung
+- Kennzeichen
+- Leistung
+
+Wenn Sie einen bestimmten Ladungsträger für einen Artikel mit Chargenverfolgung reservieren müssen, verwenden Sie die Seite **Chargenreservierung** wie im Abschnitt [Auftragsdetails](#sales-order-details) beschrieben.
+
+Wenn die Auftragsposition, die eine auftragsgebundene Ladungsträgerreservierung verwendet, durch Lageroperationen verarbeitet wird, werden keine Lagerplatzrichtlinien verwendet.
+
+Wenn eine Lagerarbeitsaufgabe aus Positionen besteht, die einer vollständigen Palette entsprechen und ladungsträgergebundene Mengen haben, können Sie den Kommissionierprozess mithilfe eines Menüelements für mobile Geräte optimieren, bei denen die Option **Mit Ladungsträger handhaben** auf *Ja* gesetzt ist. Ein Lagerarbeiter kann dann einen Ladungsträger scannen, um eine Kommissionierung abzuschließen, anstatt die Artikel aus der Arbeit einzeln scannen zu müssen.
+
+![Menüpunkt für mobiles Gerät, bei dem die Option „Mit Ladungsträger handhaben“ auf „Ja“ gesetzt ist](media/Handle-by-LP-menu-item.png)
+
+Da die Funktionalität **Mit Ladungsträger handhaben** keine Arbeit unterstützt, die mehrere Paletten abdeckt, ist es besser, für verschiedene Ladungsträger separate Arbeitsaufgaben zu nutzen. Um diesen Ansatz zu verwenden, fügen Sie das Feld **Auftragsgebundene Ladungsträger-ID** als Arbeitskopfzeilenumbruch auf der Seite **Arbeitsvorlage** hinzu.
+
+## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Beispielszenario: auftragsgebundenen Ladungsträgerreservierung einrichten und verarbeiten
+
+Dieses Szenario zeigt, wie man eine auftragsgebundene Ladungsträgerreservierung einrichtet und verarbeitet.
+
+### <a name="make-demo-data-available"></a>Demodaten zur Verfügung stellen
+
+Dieses Szenario verweist auf Werte und Datensätze, die in den für das Supply Chain Management bereitgestellten Standarddemodaten enthalten sind. Wenn Sie das Szenario mithilfe der in diesem Thema dargestellten Werte bearbeiten möchten, müssen Sie in einer Umgebung arbeiten, in der die Standarddemodaten installiert sind. Außerdem müssen Sie die juristische Person **USMF** auswählen, bevor Sie beginnen.
+
+### <a name="create-an-inventory-reservation-hierarchy-that-allows-for-license-plate-reservation"></a>Erstellen Sie eine Bestandsreservierungshierarchie, die eine Ladungsträgerreservierung erlaubt
+
+1. Gehen Sie zu **Lagerortverwaltung \> Einrichten \> Bestand \> Reservierungshierachie**.
+1. Wählen Sie **Neu** aus.
+1. Geben Sie im Feld **Name** einen Wert ein (beispielsweise *Flexibler LP*).
+1. Geben Sie im Feld **Beschreibung** einen Wert ein (beispielsweise *Flexible LP-Reservierung*).
+1. Wählen Sie in der Liste **Ausgewählt** die **Chargennummer**, **Seriennummer** und den **Besitzer**.
+1. Wählen Sie die Schaltfläche **Entfernen** aus ![Rückwärtspfeil](media/backward-button.png), um die Auswahl in die Liste **Verfügbar** zu verschieben.
+1. Wählen Sie **OK**.
+1. In der Zeile mit der **Ladungsträger**-Dimensionsebene aktivieren Sie das Kontrollkästchen **Reservierung für Bedarfsauftrag zulassen**. Die Ebene **Lagerplatz** wird automatisch ausgewählt und Sie können das Kontrollkästchen für diese nicht deaktivieren.
+1. Wählen Sie **Speichern** aus.
+
+### <a name="create-two-released-products"></a>Zwei freigegebene Produkte erstellen
+
+1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
+1. Wählen Sie im Aktivitätsbereich **Neu** aus.
+1. Legen Sie im Dialogfeld **Neues freigegebenes Produkt** die folgenden Werte fest:
+
+    - **Produktnummer:** *Artikel 1*
+    - **Artikelnummer:** *Artikel 1*
+    - **Lagersteuerungsgruppe:** *FIFO*
+    - **Artikelgruppe:** *Audio*
+    - **Lagerdimensionsgruppe:** *Lagerort*
+    - **Rückverfolgungsangabengruppe:** *Keine*
+    - **Reservierungshierarchie:** *Flexibler LP*
+
+1. Wählen Sie **OK** aus, um das Produkt zu erstellen und das Dialogfeld zu schließen.
+1. Das neue Produkt wird geöffnet. Geben Sie im Inforegister **Lagerort** im Feld **Einheitennummernkreisgruppen-ID** *ea* ein.
+1. Wiederholen Sie die vorherigen Schritte, um ein zweites Produkt mit denselben Einstellungen zu erstellen, geben Sie aber bei **Produktnummer** und **Artikelnummer** *Artikel 2* ein.
+1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Ansicht** **Verfügbarer Lagerbestand** aus. Dann wählen Sie **Mengenanpassung**.
+1. Passen Sie den verfügbaren Lagerbestand der neuen Artikel wie in der folgenden Tabelle angegeben an.
+
+    | Artikel  | Lagerort | Ziel | Kennzeichen | Leistung |
+    |-------|-----------|----------|---------------|----------|
+    | Artikel 1 | 24        | FL-010   | LP01          | 10       |
+    | Artikel 1 | 24        | FL-011   | LP02          | 10       |
+    | Artikel 2 | 24        | FL-010   | LP01          | 5        |
+    | Artikel 2 | 24        | FL-011   | LP02          | 5        |
+
+    > [!NOTE]
+    > Sie müssen die beiden Ladungsträger erstellen und Lagerplätze verwenden, die gemischte Artikel zulassen, z. B. *FL-010* und *FL-011*.
+
+### <a name="create-a-sales-order-and-reserve-a-specific-license-plate"></a>Legen Sie einen Auftrag an und reservieren Sie einen bestimmten Ladungsträger
+
+1. Wechseln Sie zu **Vertrieb und Marketing \> Aufträge \> Alle Aufträge**.
+1. Wählen Sie **Neu** aus.
+1. Legen Sie im Dialogfeld **Auftrag erstellen** die folgenden Werte fest:
+
+    - **Debitorenkonto:** *US-001*
+    - **Lagerort:** *24*
+
+1. Wählen Sie **OK** aus, um das Dialogfeld **Auftrag erstellen** zu schließen und den neuen Auftrag zu öffnen.
+1. Fügen Sie im Inforegister **Auftragspositionen** eine Position mit den folgenden Einstellungen hinzu:
+
+    - **Artikelnummer:** *Artikel 1*
+    - **Menge** *10*
+
+1. Fügen Sie eine zweite Auftragsposition mit den folgenden Einstellungen hinzu:
+
+    - **Artikelnummer:** *Artikel 2*
+    - **Menge** *5*
+
+1. Wählen Sie **Speichern** aus.
+1. Im Inforegister **Positionsdetails** in der Registerkarte **Einrichtungen** notieren Sie die **Los-ID** für jede Position. Diese Werte werden bei der Reservierung bestimmter Ladungsträger benötigt.
+
+    > [!NOTE]
+    > Um einen bestimmten Ladungsträger zu reservieren, müssen Sie die Datenentität **Auftragsgebundene Reservierungen nach Ladungsträger** verwenden. Um einen Artikel mit Chargenverfolgung auf einem bestimmten Ladungsträger zu reservieren, verwenden Sie die Seite **Chargenreservierung** wie im Abschnitt [Auftragsdetails](#sales-order-details) beschrieben.
+    >
+    > Wenn Sie den Ladungsträger direkt in die Auftragsposition eingeben und bestätigen, wird die Lagerverwaltungsverarbeitung für die Position nicht verwendet.
+
+1. Wählen Sie **In Microsoft Office** öffnen, **Auftragsgebundene Reservierungen nach Ladungsträger** und laden Sie die Datei herunter.
+1. Öffnen Sie die heruntergeladene Datei in Excel und wählen Sie **Bearbeiten aktiveren**, damit das Excel Add-In ausgeführt werden kann.
+1. Wenn Sie das Excel-Add-In zum ersten Mal ausführen, klicken Sie auf **Diesem Add-In vertrauen**.
+1. Klicken Sie nach Aufforderung auf **Anmelden**, und melden Sie sich mit den Anmeldeinformationen an, mit denen Sie sich beim Supply Chain Management angemeldet haben.
+1. Um einen Artikel auf einem bestimmten Ladungsträger zu reservieren, wählen Sie im Excel-Add-In die Option **Neu**, um eine Reservierungszeile hinzuzufügen, und legen Sie dann die folgenden Werte fest:
+
+    - **Los-ID:** Geben Sie die **Los-ID** ein, die Sie für die Auftragsposition für *Artikel 1* gefunden haben.
+    - **Ladungsträger:** *LP02*
+    - **Reservieren von Lagermenge:** *10*
+
+1. Wählen Sie **Neu** aus, um eine weitere Reservierungszeile hinzuzufügen, und legen Sie die folgenden Werte fest:
+
+    - **Los-ID:** Geben Sie die **Los-ID**, die Sie für die Auftragsposition für *Artikel 2* gefunden haben.
+    - **Ladungsträger:** *LP02*
+    - **Reservieren von Lagermenge:** *5*
+
+1. Wählen Sie im Excel-Add-In die Option **Veröffentlichen** aus, um die Daten an das Supply Chain Management zurückzusenden.
+
+    > [!NOTE]
+    > Die Reservierungszeile wird im System nur angezeigt, wenn die Veröffentlichung fehlerfrei abgeschlossen wurde.
+
+1. Gehen Sie zurück zum Supply Chain Management. 
+1. Um die Reservierung des Artikels zu überprüfen, klicken Sie im Inforegister **Auftragspositionen** im Menü **Bestand** auf **Verwalten \> Reservierung**. Beachten Sie, dass für die Auftragsposition für *Artikel 1* ein Bestand von *10* reserviert ist und für die Auftragsposition für *Artikel 2* ein Bestand von *5*.
+1. Um Lagerbuchungen zu überprüfen, die sich auf die Reservierung der Auftragsposition beziehen, klicken Sie im Inforegister **Auftragspositionen** im Menü **Bestand** auf **Ansicht \> Buchungen**. Beachten Sie, dass es zwei Buchungen gibt, die sich auf die Reservierung beziehen: eine, bei der das Feld **Referenz** auf *Auftrag* steht und eine, bei der das Feld **Referenz** auf *Auftragsgebundene Reservierung* steht.
+
+    > [!NOTE]
+    > Eine Buchung, bei der das Feld **Referenz** auf *Auftrag* gesetzt ist, steht für die Auftragspositionsreservierung für Bestandsdimensionen, die über der Ebene **Lagerplatz** liegen (Standort, Lagerort und Bestandsstatus). Eine Buchung, bei der die das Feld **Referenz** auf *Auftragsgebundene Reservierung* steht, steht für die Auftragspositionsreservierung für den bestimmten Ladungsträger und den Lagerplatz.
+
+1. Um den Auftrag freizugeben, gehen Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** in der Gruppe **Aktivitäten** auf **Für Lagerort freigeben**.
+
+### <a name="review-and-process-warehouse-work-with-order-committed-license-plates-assigned"></a>Lagerarbeiten mit zugewiesenen auftragsgebundenen Ladungsträgern überprüfen und verarbeiten
+
+1. Wählen Sie im Inforegister **Auftragspositionen** im Menü **Lagerort** die Option **Arbeitsdetails** aus.
+
+    Wie bei der Reservierung für eine bestimmte Charge verwendet das System keine Lagerplatzrichtlinien, wenn es die Arbeit für den Auftrag erstellt, der die Ladungsträgerreservierung verwendet. Da die auftragsgebundene Reservierung alle Bestandsdimensionen einschließlich des Lagerplatzes spezifiziert, müssen Lagerplatzrichtlinien nicht verwendet werden, da diese Bestandsdimensionen nur in die Arbeit eingegeben werden. Sie werden im Abschnitt **Aus Bestandsdimensionen** auf der Seite **Arbeitslagerbuchungen** angezeigt.
+
+    > [!NOTE]
+    > Nachdem die Arbeit erstellt wurde, wird die Lagerbuchung, bei der das Feld **Referenz** auf *Auftragsgebundene Reservierung* gesetzt ist, entfernt. Die Lagerbuchung, bei der das Feld **Referenz** auf *Arbeit* gesetzt ist, enthält nun die physische Reservierung für alle Lagerdimensionen der Menge.
+
+1. Beenden Sie die Kommissionierung und Platzierung der Arbeit auf dem mobilen Gerät mithilfe eines Menüelements, in dem das Kontrollkästchen **Mit Ladungsträger handhaben** aktiviert ist.
+
+    > [!NOTE]
+    > Die Funktionalität **Mit Ladungsträger handhaben** hilft Ihnen bei der Verarbeitung des kompletten Ladungsträgers. Wenn Sie einen Teil des Ladungsträgers verarbeiten müssen, können Sie diese Funktionalität nicht verwenden.
+    >
+    > Wir empfehlen, dass Sie für jeden Ladungsträger separate Arbeiten erstellen lassen. Verwenden Sie dafür die Funktion **Arbeitskopfzeilenumbrüche** auf der Seite **Arbeitsvorlage**.
+
+    Der Bestandsträger *LP02* wird nun für die Auftragspositionen kommissioniert und an den Lagerplatz *Ladebereichstor* gebracht. Zu diesem Zeitpunkt kann er verladen und an den Kunden versendet werden.
+
 ## <a name="exception-handling-of-warehouse-work-that-has-order-committed-batch-numbers"></a>Ausnahmenbehandlung von Lagerortarbeit mit auftragsgebundenen Chargennummern
 
 Die Lagerarbeit für die Kommissionierung von auftragsgebundenen Chargennummern unterliegt denselben standardmäßigen Lagerortausnahmebehandlungen und -Aktionen wie die reguläre Arbeit. Im Allgemeinen kann die offene Arbeit oder Arbeitsposition storniert werden. Sie kann unterbrochen werden, weil ein Lagerort voll ist, sie kann kurz entnommen werden und sie kann aufgrund einer Bewegung aktualisiert werden. Ebenso kann die kommissionierte Arbeit, die bereits erledigt wurde, reduziert oder rückgängig gemacht werden.
@@ -194,7 +368,7 @@ Für alle diese Ausnahmebehandlungsaktionen gilt die folgende Grundregel: Die f�
 
 ### <a name="example-scenario"></a>Beispielszenario
 
-Ein Beispiel für dieses Szenario ist eine Situation, in der zuvor abgeschlossene Arbeiten teilweise rückgängig gemacht wird, indem die Funktion **Entnommene Menge reduzieren** verwendet wird. Bei diesem Beispiel wird das vorherige Bespiel dieses Themas fortgesetzt.
+Ein Beispiel für dieses Szenario ist eine Situation, in der zuvor abgeschlossene Arbeiten teilweise rückgängig gemacht wird, indem die Funktion **Entnommene Menge reduzieren** verwendet wird. In diesem Beispiel wird davon ausgegangen, dass Sie die im [Beispielszenario: Chargennummernzuteilung](#Example-batch-allocation) beschriebenen Schritte bereits ausgeführt haben. Es knüpft an dieses Beispiel an.
 
 1. Gehen Sie zu **Lagerortverwaltung** \> **Ladungen** \> **Aktive**.
 2. Wählen Sie die Ladung aus, die im Zusammenhang mit dem Versand Ihres Auftrags erstellt wurde.

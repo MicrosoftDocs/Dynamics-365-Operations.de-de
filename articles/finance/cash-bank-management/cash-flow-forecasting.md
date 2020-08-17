@@ -3,7 +3,7 @@ title: Cashflowplanung
 description: Dieses Thema bietet einen Überblick über den Cashflow-Planungsprozess. Es wird auch erklärt, wie Cashflow-Planung in andere Module im System integriert wird.
 author: saraschi2
 manager: AnnBe
-ms.date: 01/11/2018
+ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9795758a60d7913d306488ae6fbbfb7f9865cfc4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 2ffb8522729049ca98acfb70992738b45c05b552
+ms.sourcegitcommit: cf39369545a94201f367a4efada595a04a319d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188417"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "3653775"
 ---
 # <a name="cash-flow-forecasting"></a>Cashflowplanung
 
@@ -104,6 +104,13 @@ Berechnen Sie die Cashflowplanung, indem Sie die Seite **Cashflowplanungen berec
 
 Sie können auch die Stapelverarbeitung für die Cashflowplanung verwenden. Zur Sicherstellung, dass Ihre Planungsanalyse regelmäßig aktualisiert wird, richten Sie eine sich wiederholende Stapelverarbeitung für die Cashflowplanungsberechnung ein.
 
+In Version 10.0.13 wurde eine Erweiterung des Berechnungsprozesses veröffentlicht, die das Framework für die Prozessautomatisierung verwendet, um die Cashflowberechnung zu planen. Dies wird mit der Funktion **Automatisierung der Cashflowplanung** im Arbeitsbereich **Funktionsverwaltung** aktiviert. Wählen Sie nach der Aktivierung den Link **Automatisierung der Cashflowplanung**, um die neue Automatisierungsseite aufzurufen, auf der Sie den Cashflowberechnungsprozess planen können. Um einen neuen Zeitplan für die Cashflowplanung zu erstellen, gehen Sie auf **Neue Prozessautomatisierung erstellen** und dann auf **Automatisierung der Cashflowplanung** im Drop-down-Menü **Zeitplantyp**. Sie müssen für jedes Unternehmen, für das Sie die Cashflowplanungsdaten aktualisieren, einen Zeitplan festlegen.  Auf dieser Seite wird auch angezeigt, welche Automatisierungsaufträge für die Cashflowplanung ausstehen und wann der letzte Auftrag abgeschlossen wurde.  
+
+> [!NOTE] 
+> Wenn bereits vorhandene Stapelverarbeitungsaufträge für Cashflowplanungen geplant sind, wird eine Fehlermeldung angezeigt, und Sie können diese Funktion nicht aktivieren. Bestehende Stapelverarbeitungsaufträge müssen gelöscht werden, bevor Sie diese Funktion aktivieren können. 
+
+Weitere Informationen finden Sie unter [Prozessautomatisierung](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
+
 ### <a name="reporting"></a>Bericht
 
 Nachdem die Cashflowplanung berechnet wurde, müssen Sie die entsprechenden Entitätsinformationen für analytische Berichterstellung aktualisieren. Auf der Seite **Entitätsspeicher** wählen Sie die Messung **LedgerCovLiquidityMeasurement-Aggregat** aus und klicken dann auf **Aktualisieren**.
@@ -128,7 +135,7 @@ Der Arbeitsbereich **Bargeldüberblick – alle Unternehmen** zeigt die Cashflow
 
 Der Arbeitsbereich **Bargeldüberblick – aktuelles Unternehmen** zeigt Cashflowplanungsanalyse in der definierten Buchhaltungswährung des Unternehmens. Die Buchhaltungswährung, die zur Analyse verwendet wird, wird auf der Seite **Sachkonto** definiert. Der Arbeitsbereich zeigt einen Überblick der Cashflowplanung und Bankkontosalden für das aktuelle Unternehmen an. Ein Diagramm aus Barzu- und -ausflüssen bietet eine Übersicht der künftigen Geldbewegungen und Salden in der Buchhaltungswährung, zusammen mit detaillierten Informationen zu den Planungsbuchungen. Sie können auch die folgenden Währungssalden sehen.
 
-Weitere Informationen zur Cashflowplanungsanalyse finden Sie im Power BI-Inhaltsthema zur Bargeldübersicht.
+Weitere Informationen zur Cashflowplanungsanalyse finden Sie im Thema [Power BI-Inhalt Bargeldübersicht](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content).
 
 Darüber hinaus können Sie Cashflowplanungsdaten für bestimmte Konten, Aufträge und Artikel auf den folgenden Seiten anzeigen:
 

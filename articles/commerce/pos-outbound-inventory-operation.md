@@ -3,7 +3,7 @@ title: Bestandsausgangsoperation in POS
 description: Dieses Thema beschreibt die Möglichkeiten des Bestandsausgangs am Point of Sale (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: c2c8acfaf7b84870ce00bf1ae84440dd369df9da
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
+ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551624"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3646158"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Bestandsausgangsoperation in POS
 
@@ -38,9 +38,9 @@ In Microsoft Dynamics 365 Commerce Version 10.0.10 und höher ersetzen Ein- und 
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Voraussetzung: Konfigurieren Sie ein asynchrones Dokumenten-Framework.
 
-Der ausgehende Betrieb umfasst Leistungsverbesserungen, um sicherzustellen, dass Benutzer, die ein hohes Volumen an Eingangsbuchungen in vielen Geschäften oder Unternehmen sowie große Bestandsdokumente haben, diese Dokumente ohne Zeitverzögerungen oder Ausfälle an Commerce Headquarters weiterleiten können. Diese Verbesserungen erfordern die Verwendung eines asynchronen Dokumenten-Frameworks.
+Die ausgehende Operation umfasst Leistungsverbesserungen, um sicherzustellen, dass Benutzer, die ein hohes Volumen an Eingangsbuchungen in vielen Geschäften oder Unternehmen sowie große Bestandsdokumente haben, diese Dokumente ohne Zeitverzögerungen oder Ausfälle an Commerce Headquarters (HQ) weiterleiten können. Diese Verbesserungen erfordern die Verwendung eines asynchronen Dokumenten-Frameworks.
 
-Wenn ein asynchrones Belegframework verwendet wird, können Sie Änderungen an ausgehenden Belegen von der Kasse an Commerce Headquarters übertragen und dann zu anderen Aufgaben übergehen, während die Verarbeitung an Commerce Headquarters im Hintergrund erfolgt. Sie können den Status des Belegs über die **Ausgangsoperation**-Dokumentliste in POS überprüfen, um sicherzustellen, dass die Buchung erfolgreich war. In der POS-Anwendung können Sie auch die Belegliste der Ausgangsoperation aktiv verwenden, um alle Belege zu sehen, die nicht an Commerce Headquarters gebucht werden konnten. Wenn ein Beleg fehlschlägt, können POS-Benutzer Korrekturen an ihm vornehmen und dann erneut versuchen, ihn an Commerce Headquarters zu verarbeiten.
+Wenn ein asynchrones Belegframework verwendet wird, können Sie Änderungen an ausgehenden Belegen von der Kasse an Commerce Headquarters (HQ) übertragen und dann zu anderen Aufgaben übergehen, während die Verarbeitung an Commerce Headquarters (HQ) im Hintergrund erfolgt. Sie können den Status des Belegs über die **Ausgangsoperation**-Dokumentliste in POS überprüfen, um sicherzustellen, dass die Buchung erfolgreich war. In der POS-Anwendung können Sie auch die Belegliste der Ausgangsoperation aktiv verwenden, um alle Belege zu sehen, die nicht an Commerce Headquarters (HQ) gebucht werden konnten. Wenn ein Beleg fehlschlägt, können POS-Benutzer Korrekturen an ihm vornehmen und dann erneut versuchen, ihn an Commerce Headquarters (HQ) zu verarbeiten.
 
 > [!IMPORTANT]
 > Das asynchrone Belegframework muss konfiguriert werden, bevor ein Unternehmen versucht, die Ausgangsoperation im POS zu verwenden.
@@ -88,22 +88,22 @@ Wenn der Ausgangsvorgang aus der POS-Anwendung heraus gestartet wird, erscheint 
 
 Die Liste der ausgehenden Bestandsbelege hat drei Registerkarten.
 
-- **Aktiv** - Diese Registerkarte zeigt Transportaufträge mit dem Status **Anforderlich** oder **Teilweise versandt**. Die Aufträge enthalten Zeilen oder Mengen auf Zeilen, die von der aktuellen Filiale des Benutzers versandt werden müssen. Diese Registerkarte zeigt auch Bestellungen mit dem Status **Verarbeitung in HQ** (d.h. sie warten auf die Bestätigung der erfolgreichen Buchung von Commerce Headquarters) oder **Verarbeitung fehlgeschlagen** (d.h. die Buchung in Commerce Headquarters war nicht erfolgreich, und der Benutzer muss die Daten korrigieren und erneut versuchen, die Bestellungen einzureichen).
-- **Entwurf** - Diese Registerkarte zeigt neue ausgehende Transportauftragsanforderungen, die von der Filiale des Benutzers erstellt wurden. Die Belege wurden jedoch nur lokal gespeichert. Sie wurden noch nicht zur Bearbeitung an Commerce Headquarters übermittelt.
+- **Aktiv** - Diese Registerkarte zeigt Transportaufträge mit dem Status **Anforderlich** oder **Teilweise versandt**. Die Aufträge enthalten Zeilen oder Mengen auf Zeilen, die von der aktuellen Filiale des Benutzers versandt werden müssen. Diese Registerkarte zeigt auch Bestellungen mit dem Status **Verarbeitung in HQ** (d. h. sie warten auf die Bestätigung der erfolgreichen Buchung von Commerce Headquarters [HQ]) oder **Verarbeitung fehlgeschlagen** (d. h. die Buchung in Commerce Headquarters (HQ) war nicht erfolgreich, und der Benutzer muss die Daten korrigieren und erneut versuchen, die Bestellungen einzureichen).
+- **Entwurf** - Diese Registerkarte zeigt neue ausgehende Transportauftragsanforderungen, die von der Filiale des Benutzers erstellt wurden. Die Belege wurden jedoch nur lokal gespeichert. Sie wurden noch nicht zur Bearbeitung an Commerce Headquarters (HQ) übermittelt.
 - **Ausführlich** - Diese Registerkarte zeigt eine Liste der Transportauftragsbelege, die die Filiale in den letzten sieben Tagen vollständig versandt hat. Diese Registerkarte dient nur zu Informationszwecken. Alle Informationen zu den Belegen sind schreibgeschützte Daten für die Filiale.
 
 Wenn Sie Dokumente auf einer der Registerkarten anzeigen, kann das Feld **Status** Ihnen helfen, den Status des Dokuments zu verstehen.
 
-- **Entwurf** - Das Transportauftragsdokument wurde nur lokal in der Kanaldatenbank der Filiale gespeichert. Es wurden noch keine Informationen über den Transportauftragsantrag an Commerce Headquarters übermittelt.
-- **Anforderung** - Die Bestellung oder der Transportauftrag wurde in Commerce Headquarters erstellt und ist vollständig geöffnet. Der aktuelle Speicher des Benutzers hat noch keine Sendungen gegen das Dokument verarbeitet.
+- **Entwurf** - Das Transportauftragsdokument wurde nur lokal in der Kanaldatenbank der Filiale gespeichert. Es wurden noch keine Informationen über den Transportauftragsantrag an Commerce Headquarters (HQ) übermittelt.
+- **Anforderung** – Die Bestellung oder der Transportauftrag wurde in Commerce Headquarters (HQ) angelegt und ist vollständig geöffnet. Der aktuelle Speicher des Benutzers hat noch keine Sendungen gegen das Dokument verarbeitet.
 - **Teilweise versandt** - Der Transportauftragsbeleg hat eine oder mehrere Zeilen oder Teilzeilenmengen, die als vom Ausgangslager versandt gebucht wurden. Diese versandten Zeilen können über den Eingangsvorgang empfangen werden.
 - **Vollständig versandt** - Der Transportauftrag wurde mit allen Zeilen und vollen Zeilenmengen als vom Auslieferungslager versandt gebucht.
 - **In Bearbeitung** - Dieser Status wird verwendet, um Gerätebenutzer darüber zu informieren, dass der Beleg von einem anderen Benutzer aktiv bearbeitet wird.
 - **Pausiert** - Dieser Status wird angezeigt, nachdem **Empfang pausieren** gewählt wurde, um den Empfangsvorgang vorübergehend zu stoppen.
-- **Bearbeitung in HQ** - Das Dokument wurde von der POS-Anwendung an Commerce Headquarters übermittelt, aber es wurde noch nicht erfolgreich an Commerce Headquarters gesendet. Der Beleg durchläuft gerade den asynchronen Belegverbuchungsprozess. Nachdem der Beleg erfolgreich an Commerce Headquarters gebucht wurde, sollte sein Status auf **Vollständig erhalten** oder **Teilweise erhalten** aktualisiert werden.
-- **Verarbeitung fehlgeschlagen** - Das Dokument wurde an Commerce Headquarters gebucht und abgelehnt. Der Bereich **Details** zeigt den Grund für das Fehlschlagen der Buchung. Der Beleg muss bearbeitet werden, um Datenprobleme zu beheben, und dann erneut zur Verarbeitung an Commerce Headquarters geschickt werden.
+- **Bearbeitung in HQ** – Das Dokument wurde von der POS-Anwendung an Commerce Headquarters (HQ) übermittelt, aber es wurde noch nicht erfolgreich an Commerce Headquarters (HQ) gesendet. Der Beleg durchläuft gerade den asynchronen Belegverbuchungsprozess. Nachdem der Beleg erfolgreich an Commerce Headquarters (HQ) gebucht wurde, sollte sein Status auf **Vollständig erhalten** oder **Teilweise erhalten** aktualisiert werden.
+- **Verarbeitung fehlgeschlagen** - Das Dokument wurde an Commerce Headquarters (HQ) gebucht und abgelehnt. Der Bereich **Details** zeigt den Grund für das Fehlschlagen der Buchung. Der Beleg muss bearbeitet werden, um Datenprobleme zu beheben, und dann erneut zur Verarbeitung an Commerce Headquarters (HQ) geschickt werden.
 
-Wenn Sie eine Belegzeile in der Liste auswählen, erscheint ein Fenster **Details**. Dieser Bereich zeigt zusätzliche Informationen über den Beleg an, wie z.B. Transport- und Datumsinformationen. Ein Fortschrittsbalken zeigt an, wie viele Positionen noch bearbeitet werden müssen. Wenn der Beleg nicht erfolgreich an Commerce Headquarters verarbeitet wurde, zeigt der Bereich **Details** auch Fehlermeldungen an, die mit dem Fehler zusammenhängen.
+Wenn Sie eine Belegzeile in der Liste auswählen, erscheint ein Fenster **Details**. Dieser Bereich zeigt zusätzliche Informationen über den Beleg an, wie z.B. Transport- und Datumsinformationen. Ein Fortschrittsbalken zeigt an, wie viele Positionen noch bearbeitet werden müssen. Wenn der Beleg nicht erfolgreich an Commerce Headquarters (HQ) verarbeitet wurde, zeigt der Bereich **Details** auch Fehlermeldungen an, die mit dem Fehler zusammenhängen.
 
 In der Seitenansicht der Dokumentliste können Sie in der Anwendungsleiste **Details** wählen, um die Dokumentdetails anzuzeigen. Sie können auch die Eingangsverarbeitung für berechtigte Belegzeilen aktivieren.
 
@@ -125,13 +125,13 @@ Validierungen erfolgen während des Empfangsprozesses für die Belegzeilen. Dazu
 
 In Commerce Version 10.0.12 wurde eine Funktion hinzugefügt, mit der POS-Benutzer verbleibende Mengen während des Versandes ausgehender Bestellungen schließen oder stornieren können, wenn das ausgehende Lager feststellt, dass nicht die angeforderte volle Menge versendet werden kann. Mengen können auch später geschlossen oder storniert werden. Um diese Funktion nutzen zu können, muss das Unternehmen so konfiguriert sein, dass eine Unterlieferung von Transportaufträgen möglich ist. Zusätzlich muss ein Unterlieferungsprozentsatz für die Transportauftragsposition definiert werden.
 
-Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Umlagerungsaufträgen möglich ist, wechseln Sie in der Commerce-Zentrale zu **Bestandsverwaltung \> Einrichtung \> Bestands- und Lagerverwaltungsparameter**. Auf der Seite **Bestands- und Lagerverwaltungsparameter**, auf der Registerkarte **Umlagerungsaufträge** aktivieren Sie die Option **Unterlieferung akzeptieren**. Dann führen Sie den Verteilungszeitplanvorgang **1070** zum Synchronisieren der Parameteränderungen mit Ihrem Geschäftskanal aus.
+Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Umlagerungsaufträgen möglich ist, wechseln Sie in Commerce Headquarters (HQ) zu **Bestandsverwaltung \> Einrichtung \> Bestands- und Lagerverwaltungsparameter**. Auf der Seite **Bestands- und Lagerverwaltungsparameter**, auf der Registerkarte **Umlagerungsaufträge** aktivieren Sie die Option **Unterlieferung akzeptieren**. Dann führen Sie den Verteilungszeitplanvorgang **1070** zum Synchronisieren der Parameteränderungen mit Ihrem Geschäftskanal aus.
 
-Unterlieferungsprozentsätze für eine Transportauftragsposition können für Produkte als Teil der Produktkonfiguration in der Commerce-Zentrale vordefiniert werden. Alternativ können sie über die Handelszentrale in einer bestimmten Überweisungsauftragsposition festgelegt oder überschrieben werden.
+Unterlieferungsprozentsätze für eine Transportauftragsposition können für Produkte als Teil der Produktkonfiguration in der Commerce-Zentrale vordefiniert werden. Alternativ können sie über Commerce Headquarters (HQ) in einer bestimmten Überweisungsauftragsposition festgelegt oder überschrieben werden.
 
-Nachdem eine Organisation die Konfiguration der Unterlieferung von Umlagerungsaufträgen abgeschlossen hat, wird den Benutzern eine neue Option **Restmenge schließen** im Bereich **Details** angezeigt, wenn sie eine ausgehende Umlagerungsauftragsposition über den **Ausgangsvorgang** am POS auswählen. Dann, wenn Benutzer die Lieferung mit dem Vorgang **Erfüllung abschließen** abschließen, können sie eine Anforderung an die Commerce-Zentrale senden, um die verbleibende nicht versendete Menge zu stornieren. Wenn ein Benutzer die verbleibende Menge schließen möchte, führt Commerce eine Validierung durch, um zu überprüfen, ob die stornierte Menge innerhalb der prozentualen Toleranz für die Unterlieferung liegt, die in der Überweisungsauftragsposition definiert ist. Wenn die Toleranz für Unterlieferung überschritten wird, erhält der Benutzer eine Fehlermeldung und kann die verbleibende Menge erst schließen, wenn die zuvor versendete Menge und die Menge „Jetzt versenden“ die Toleranz für Unterlieferung erfüllt oder überschreitet.
+Nachdem eine Organisation die Konfiguration der Unterlieferung von Umlagerungsaufträgen abgeschlossen hat, wird den POS-Benutzern eine neue Option **Restmenge schließen** im Bereich **Details** angezeigt, wenn sie eine ausgehende Umlagerungsauftragsposition über die Funktion **Ausgangsvorgang** auswählen. Wenn der Benutzer die Lieferung mit dem Vorgang **Erfüllung abschließen** abschließt, können sie eine Anforderung an Commerce Headquarters (HQ) senden, um die verbleibende nicht versendete Menge zu stornieren. Wenn ein Benutzer die verbleibende Menge schließt, führt Commerce eine Prüfung durch, ob die stornierte Menge innerhalb der prozentualen Toleranz für die Unterlieferung liegt, die in der Überweisungsauftragsposition definiert ist. Wenn die Toleranz für Unterlieferung überschritten wird, wird eine Fehlermeldung angezeigt und der Benutzer kann die verbleibende Menge erst schließen, wenn die zuvor versendete Menge und die Menge „Jetzt versenden“ die Toleranz für Unterlieferung erfüllt oder überschreitet.
 
-Nachdem die Sendung mit der Commerce-Zentrale synchronisiert wurde, werden die Mengen, die im Feld **Jetzt versenden** für die Transportauftragsposition im POS definiert sind, in der Commerce-Zentrale auf den Versandstatus aktualisiert. Alle nicht versendeten Mengen, die zuvor als „Lieferrückstand“ angesehen wurden (d.h. Mengen, die später versendet werden), gelten stattdessen als stornierte Mengen. Der „Lieferrückstand“ für die Transportauftragsposition ist eingestellt auf **0** (Null), und die Position gilt als vollständig versendet.
+Nachdem die Sendung mit Commerce Headquarters (HQ) synchronisiert wurde, werden die Mengen, die im Feld **Jetzt versenden** für die Transportauftragsposition im POS definiert sind, in Commerce Headquarters (HQ) auf den Versandstatus aktualisiert. Alle nicht versendeten Mengen, die zuvor als „Lieferrückstand“ angesehen wurden (d.h. Mengen, die später versendet werden), gelten stattdessen als stornierte Mengen. Der „Lieferrückstand“ für die Transportauftragsposition ist eingestellt auf **0** (Null), und die Position gilt als vollständig versendet.
 
 ### <a name="shipping-location-controlled-items"></a>Versandortsgesteuerter Artikel
 
@@ -145,13 +145,26 @@ Bei Bedarf können Sie in der Anwendungsleiste **Alle versenden** wählen, um di
 
 ### <a name="cancel-fulfillment"></a>Erfüllung stornieren
 
-Sie sollten die Funktion **Erfüllung abbrechen** in der Anwendungsleiste nur dann verwenden, wenn Sie aus dem Dokument zurückkehren und keine Änderungen speichern möchten. Sie haben z.B. zunächst den falschen Beleg selektiert und möchten keine der bisherigen Versanddaten speichern.
+Benutzen Sie die Funktion **Erfüllung abbrechen** in der Anwendungsleiste nur dann, wenn Sie aus dem Dokument zurückkehren und keine Änderungen speichern möchten. Sie haben z.B. zunächst den falschen Beleg selektiert und möchten keine der bisherigen Versanddaten speichern.
 
 ### <a name="pause-fulfillment"></a>Erfüllung anhalten
 
-Wenn Sie den Transportauftrag erfüllen, können Sie die Funktion **Erfüllung pausieren** verwenden, wenn Sie eine Pause vom Prozess machen wollen. Sie möchten beispielsweise einen anderen Vorgang vom POS aus durchführen, wie z.B. einen Kundenverkauf anrufen oder die Verbuchung der Sendung in Commerce Headquarters verzögern.
+Wenn Sie den Transportauftrag erfüllen, können Sie die Funktion **Erfüllung pausieren** verwenden, wenn Sie eine Pause vom Prozess machen wollen. Sie möchten beispielsweise einen anderen Vorgang vom POS aus durchführen, wie z. B. einen Kundenverkauf anrufen oder die Verbuchung der Sendung in Commerce Headquarters (HQ) verzögern.
 
 Wenn Sie **Erfüllung pausieren** wählen, wird der Status des Belegs auf **Pausiert** geändert. Daher weiß der Benutzer, dass Daten in den Beleg eingegeben wurden, der Beleg aber noch nicht bestätigt wurde. Wenn Sie bereit sind, den Erfüllungsprozess wieder aufzunehmen, markieren Sie das angehaltene Dokument und wählen Sie dann **Auftragsdetails**. Alle **Versand jetzt** Mengen, die zuvor gespeichert wurden, bleiben erhalten und können in der Ansicht **Vollständige Bestellliste** eingesehen werden.
+
+### <a name="review"></a>Überprüfen
+
+Vor dem endgültigen Eingang der erfüllten Mengen in Commerce Headquarter (HQ) können Sie die Funktion **Überprüfung** verwenden, um das ausgehende Dokument zu überprüfen. Diese Funktion macht Sie auf mögliche fehlende oder falsche Daten aufmerksam, die zu Verarbeitungsfehlern führen können, und bietet Ihnen die Möglichkeit, Probleme zu beheben, bevor Sie die Empfangsanforderung senden. Um die Funktion **Überprüfen** in der App-Symbolleiste zu aktivieren, aktivieren Sie die Funktion **Prüfung eingehender und ausgehender Bestandsvorgänge am POS** über die Funktionsverwaltung im Commerce Headquarters (HQ).
+
+Die Funktion **Überprüfen** überprüft die folgenden Probleme in einem ausgehenden Dokument:
+- **Zu viel versendet**: Die versendete Menge ist größer als die bestellte Menge. Der Schweregrad dieses Problems wird durch die Konfiguration der Mehrlieferung des Commerce Headquarters (HQ) bestimmt.
+- **Zu wenig versendet**: Die versendete Menge ist niedriger als die bestellte Menge. Der Schweregrad dieses Problems wird durch die Konfiguration der Unterlieferung des Commerce Headquarters (HQ) bestimmt.
+- **Seriennummer**: Die Seriennummer wird für einen serialisierten Artikel, für den die Seriennummer im Bestand registriert werden muss, nicht angegeben oder steht nicht zur Verfügung.
+- **Standort nicht festgelegt**: Der Standort ist für standortgesteuerte Artikel nicht angegeben, wenn ein Standort nicht leer bleiben darf.
+- **Gelöschte Zeilen**: In dem Auftrag wurden Zeilen von einem Benutzer des Commerce Headquarters (HQ) gelöscht, der der POS-Anwendung nicht bekannt ist.
+
+Wenn Sie den Parameter **Automatische Prüfung aktivieren** auf **Ja** unter **Commerce-Parameter** > **Bestand** > **Bestand speichern** stellen, wird die Prüfung automatisch ausgeführt, wenn die Funktion **Erfüllung abschließen** ausgewählt wurde.
 
 ### <a name="finish-fulfillment"></a>Erfüllung abschließen
 
@@ -163,15 +176,15 @@ Bei der asynchronen Belegverarbeitung wird der Beleg über ein asynchrones Dokum
 
 Vom POS aus können Benutzer neue Transportauftragsbelege erstellen. Um den Prozess zu beginnen, wählen Sie **Neu** in der Anwendungsleiste, während Sie sich in der Hauptmenüleiste **Ausgangsvorgang** Belegliste befinden. Sie werden dann aufgefordert, ein **Transfer an** Lager oder Filiale zu wählen, an die Ihre aktuelle Filiale Bestand senden wird. Die Werte sind auf die Auswahl beschränkt, die in der Konfiguration der Erfüllungsgruppe der Filiale definiert ist. Bei einem ausgehenden Transportauftrag ist Ihre aktuelle Filiale immer die **Transfer von** Lager für den Transportauftrag. Dieser Wert kann nicht geändert werden.
 
-Sie können in den Feldern **Versanddatum**, **Empfangsdatum** und **Lieferart** je nach Bedarf Werte eingeben. Sie können auch eine Notiz hinzufügen, die zusammen mit dem Transportauftragskopf als Anlage zum Dokument in Commerce Headquarters gespeichert wird.
+Sie können in den Feldern **Versanddatum**, **Empfangsdatum** und **Lieferart** je nach Bedarf Werte eingeben. Sie können auch eine Notiz hinzufügen, die zusammen mit dem Transportauftragskopf als Anlage zum Dokument in Commerce Headquarters (HQ) gespeichert wird.
 
 Nachdem die Kopfinformationen erstellt wurden, können Sie dem Transportauftrag Produkte hinzufügen. Um den Prozess des Hinzufügens von Artikeln und angeforderten Mengen zu starten, scannen Sie Barcodes oder wählen Sie **Produkt hinzufügen**.
 
-Nachdem die Zeilen im ausgehenden Transportauftrag eingegeben wurden, müssen Sie **Speichern** wählen, um die Belegänderungen lokal zu speichern, oder **Anfrage senden**, um die Auftragsdetails zur weiteren Bearbeitung an Commerce Headquarters zu senden. Wenn Sie **Speichern** wählen, wird der Belegentwurf in der Kanaldatenbank gespeichert, und das Ausgangslager kann den Beleg erst dann ausführen, wenn er erfolgreich über **Anfrage senden** verarbeitet wurde. Sie sollten **Speichern** nur dann wählen, wenn Sie nicht bereit sind, die Anforderung zur Verarbeitung an Commerce Headquarters zu übergeben.
+Nachdem die Zeilen im ausgehenden Transportauftrag eingegeben wurden, müssen Sie **Speichern** wählen, um die Belegänderungen lokal zu speichern, oder **Anfrage senden**, um die Auftragsdetails zur weiteren Bearbeitung an Commerce Headquarters (HQ) zu senden. Wenn Sie **Speichern** wählen, wird der Belegentwurf in der Kanaldatenbank gespeichert, und das Ausgangslager kann den Beleg erst dann ausführen, wenn er erfolgreich über **Anfrage senden** verarbeitet wurde. Wählen Sie **Speichern** nur dann, wenn Sie nicht bereit sind, die Anforderung zur Verarbeitung an Commerce Headquarters (HQ) zu übergeben.
 
 Wenn ein Dokument lokal gespeichert wird, finden Sie es auf der Registerkarte **Entwürfe** der Dokumentenliste **Eingangsvorgang**. Solange sich ein Dokument im Status **Entwurf** befindet, können Sie es bearbeiten, indem Sie **Bearbeiten** wählen. Sie können Zeilen nach Bedarf aktualisieren, hinzufügen oder löschen. Sie können auch das gesamte Dokument löschen, während es sich im Status **Entwurf** befindet, indem Sie **Löschen** auf der Registerkarte **Entwürfe** wählen.
 
-Nachdem der Dokumententwurf erfolgreich bei Commerce Headquarters eingereicht wurde, erscheint er auf der Registerkarte **Aktiv** und hat den Status **Beantragt**. Zu diesem Zeitpunkt können nur Benutzer im Ausgangslager den Beleg bearbeiten, indem sie in der POS-Anwendung **Ausgangsvorgang** wählen. Benutzer im Eingangslager können den Transportauftrag auf der Registerkarte **Aktiv** der Belegliste **Eingangsvorgang** anzeigen, aber nicht bearbeiten oder löschen. Die Bearbeitungssperre stellt sicher, dass keine Konflikte auftreten, weil ein eingehender Anforderer den Transportauftrag zur gleichen Zeit ändert, zu der der ausgehende Verlader den Auftrag aktiv kommissioniert und versendet. Wenn nach der Übermittlung des Transportauftrags Änderungen aus dem eingehenden Lager oder dem Lager erforderlich sind, sollte der ausgehende Verlader kontaktiert und aufgefordert werden, die Änderungen einzugeben.
+Nachdem der Dokumententwurf erfolgreich bei Commerce Headquarters (HQ) eingereicht wurde, erscheint er auf der Registerkarte **Aktiv** und hat den Status **Beantragt**. Zu diesem Zeitpunkt können nur Benutzer im Ausgangslager den Beleg bearbeiten, indem sie in der POS-Anwendung **Ausgangsvorgang** wählen. Benutzer im Eingangslager können den Transportauftrag auf der Registerkarte **Aktiv** der Belegliste **Eingangsvorgang** anzeigen, aber nicht bearbeiten oder löschen. Die Bearbeitungssperre stellt sicher, dass keine Konflikte auftreten, weil ein eingehender Anforderer den Transportauftrag zur gleichen Zeit ändert, zu der der ausgehende Verlader den Auftrag aktiv kommissioniert und versendet. Wenn nach der Übermittlung des Transportauftrags Änderungen aus dem eingehenden Lager oder dem Lager erforderlich sind, sollte der ausgehende Verlader kontaktiert und aufgefordert werden, die Änderungen einzugeben.
 
 Nachdem sich der Beleg im Status **Anforderung** befindet, ist er für die Erfüllungsbearbeitung durch das Ausgangslager bereit. Da der Transport mit Hilfe des Ausgangsvorgangs bearbeitet wird, wird der Status der Transportauftragsbelege von **Anforderung** auf **Vollständig versandt** oder **Teilweise versandt** fortgeschrieben. Nachdem sich die Belege im Status **Vollständig versandt** oder **Teilweise versandt** befinden, kann das Eingangslager oder das Lager mit Hilfe des Empfangsprozesses für den Eingangsvorgang Eingänge gegen sie buchen.
 
