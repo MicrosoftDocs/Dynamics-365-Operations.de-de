@@ -14,6 +14,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: Plattformupdates zu 10.0.13 (Oktober 2020)
+                  href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Plattformupdates zu 10.0.12 (August 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
                 - name: Plattformupdates zu 10.0.11 (Juli 2020)
@@ -80,13 +82,15 @@
               href: dev-tools/version-models-build.md
         - name: Datenintegration
           items:
-            - name: Auswählen einer Datenintegrationsstrategie (Import/Export)
+            - name: Datenintegrationsstrategie (Import/Export) auswählen
               href: data-entities/integration-overview.md
+            - name: Prioritätsbasierte Drosselung
+              hreF: data-entities/priority-based-throttling.md
             - name: Datenintegrations-APIs
               items:
                 - name: Datenverwaltungspaket-REST-API
                   href: data-entities/data-management-api.md
-                - name: Dienstleistungsendpunkte
+                - name: Dienstendpunkte
                   items:
                     - name: Service-Endpunkte – Übersicht
                       href: data-entities/services-home-page.md
@@ -152,6 +156,8 @@
                           items:
                             - name: Entitäts- und Feldzuordnungen anpassen
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Juristische Person nach Einrichtung des dualen Schreibens bearbeiten
+                              href: data-entities/dual-write/edit-legal-entity.md
                             - name: Fehlerverwaltung und Warnungsbenachrichtigungen
                               href: data-entities/dual-write/errors-and-alerts.md
                             - name: Anwendungslebenszyklusverwaltung

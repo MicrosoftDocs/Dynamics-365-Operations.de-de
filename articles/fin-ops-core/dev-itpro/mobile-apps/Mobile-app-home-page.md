@@ -1,7 +1,7 @@
 ---
 title: Startseite der mobilen App
 description: In diesem Thema wird die Finance and Operations (Dynamics 365) Mobile-App beschrieben. Zudem werden Links zu Ressourcen bereitgestellt, die bei der Implementierung in der Organisation helfen.
-author: sericks007
+author: ChrisGarty
 manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
@@ -14,15 +14,15 @@ ms.search.scope: Operations
 ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
-ms.author: sericks
+ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 012b51b66c831a66a54c7c868735e310f05eb8c1
-ms.sourcegitcommit: f939bc6292840e29bc0f498efc8f4641dfe8f994
+ms.openlocfilehash: 65254ac09a01e1ed2486d8f1324f564b3cd800c6
+ms.sourcegitcommit: 9a053d020e672a87b660f27009a492544e6c81a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "2975196"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "3641471"
 ---
 # <a name="mobile-app-home-page"></a>Startseite der mobilen App
 
@@ -86,7 +86,7 @@ Die folgende Tabelle enthält Links zu Ressourcen, die Ihnen beim Implementieren
 <tr class="even">
 <td>2</td>
 <td>Systemadministrator</td>
-<td><strong>Falls Sie Microsoft Dynamics 365 for Operations Version 1611 verwenden:</strong>Laden Sie KBs herunter und installieren Sie diese. Sie aktivieren die mobilen Arbeitsbereiche, die von Microsoft bereitgestellt werden.</td>
+<td><strong>Falls Sie Microsoft Dynamics 365 for Operations Version 1611 verwenden:</strong> Laden Sie KBs herunter und installieren Sie diese. Sie aktivieren die mobilen Arbeitsbereiche, die von Microsoft bereitgestellt werden.</td>
 <td>Weitere Informationen finden Sie in folgenden Themen:
 <ul>
 

@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 3418021f7b4c693779833e1c3c31501df02a0c21
-ms.sourcegitcommit: c5d0bd90334e259e96df17a217b2eff03c265f07
+ms.openlocfilehash: a1e3305bff99fa39240176ac9fc7aaee84b98e6c
+ms.sourcegitcommit: be51e892003778e71b67fb409a8e16965c89b5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "3423035"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "3618410"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisieren Sie Kreditorenzahlungsvorschläge
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Organisationen, die Lieferanten nach einem wiederkehrenden Zeitplan bezahlen, können den Prozess der Generierung von Lieferantenzahlungsvorschlägen nun automatisieren. Automatisierungen von Lieferantenzahlungsvorschlägen definieren die folgenden Details:
 

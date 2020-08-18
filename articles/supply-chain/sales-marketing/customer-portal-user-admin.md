@@ -3,7 +3,7 @@ title: Erstellen und Verwalten von Kundenportalbenutzern
 description: In diesem Thema wird erläutert, wie Sie Kundenportal-Benutzerkonten erstellen und Berechtigungen für diese festlegen.
 author: dasani-madipalli
 manager: tfehr
-ms.date: 04/22/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: c56e41b8ea5039531205083b5b42aff05e05cf66
-ms.sourcegitcommit: 713b5dfc76a6875d0ba6d86c5cbd585ea502cf9d
+ms.openlocfilehash: a751cbffd98b8d47ca7dad222f0ce374381a393d
+ms.sourcegitcommit: 074fe7e77feb795148c3daf2e6ccbb8a88679343
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3413967"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "3645312"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Erstellen und Verwalten von Kundenportalbenutzern
 
@@ -30,11 +30,16 @@ Bevor ein Benutzer eine Website verwenden kann, muss für diesen Benutzer ein Ko
 
 Wenn sich Benutzer selbst registrieren, werden automatisch Kontaktdatensätze für sie erstellt. Daher können Sie nicht sicherstellen, dass ein Benutzer das richtige Kundenkonto und die richtige juristische Person auswählt. Andererseits kann ein Administrator beim Einladungsprozess dem Kontaktdatensatz das richtige Kundenkonto und die richtige juristische Person zuweisen, bevor eine Einladung gesendet wird. Wenn Sie die Lösung so anpassen möchten, dass sich Benutzer selbst registrieren können, sollten Sie die möglichen Konsequenzen berücksichtigen.
 
+## <a name="video"></a>-Video
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+Das Video [Kunden zur Nutzung Ihres Kundenportals auffordern](https://youtu.be/drGUYHX9QIQ) (oben) gehört zur [Finance and Operations-Playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) auf YouTube.
+
 ## <a name="prerequisite-setup"></a>Voraussetzungen für die Einrichtung
 
 Kontakte in Power Apps Portal werden als Datensätze in der Entität **Kontakte** in Common Data Service gespeichert. Duales Schreiben synchronisiert diese Datensätze dann mit Microsoft Dynamics 365 Supply Chain Management wie erforderlich.
 
-![![Systemdiagramm für Kundenportal-Kontakte](media/customer-portal-contacts.png "Systemdiagramm für Kundenportal-Kontakte")](media/customer-portal-contacts.png "System diagram for Customer portal contacts")
+![Systemdiagramm für Kundenportal-Kontakte](media/customer-portal-contacts.png "Systemdiagramm für Kundenportal-Kontakte")
 
 Stellen Sie vor dem Einladen neuer Kunden sicher, dass Sie die Option **Kontakt** Entität zuordnen in dualem Schreiben aktiviert haben.
 

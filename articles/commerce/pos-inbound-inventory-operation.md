@@ -3,7 +3,7 @@ title: Eingangsbestandsvorgang in POS
 description: Dieses Thema beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/10/2020
+ms.date: 07/27/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cf3bec8ab0bfafccfe4b2b5b245d00fd6aeff635
-ms.sourcegitcommit: 037712e348fcbf3569587089bd668ee7bf5567ff
+ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
+ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "3551600"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3627537"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingangsbestandsvorgang in POS
 
@@ -33,7 +33,7 @@ ms.locfileid: "3551600"
 In Microsoft Dynamics 365 Commerce Version 10.0.10 und höher ersetzen Ein- und Ausgangsvorgänge am POS (Point of Sale) den Kommissionier- und Empfangsvorgang.
 
 > [!NOTE]
-> In Version 10.0.10 und später werden alle neuen Funktionen in der POS-Anwendung, die sich auf den Empfang von Filialbeständen gegen Bestellungen und Transportaufträge beziehen, zum **Eingangsvorgang** POS-Vorgang hinzugefügt. Wenn Sie derzeit den Kommissionier- und Empfangsvorgang in der POS-Anwendung verwenden, empfehlen wir Ihnen, eine Strategie für den Übergang von diesem Vorgang zu den neuen Eingangs- und Ausgangsvorgängen zu entwickeln. Obwohl der Kommissionier- und Wareneingangsvorgang nicht aus dem Produkt entfernt wird, werden ab Version 10.0.9 keine weiteren Investitionen in das Produkt getätigt, weder aus funktionaler noch aus leistungsbezogener Sicht.
+> In der Commerce-Version 10.0.10 und später werden alle neuen Funktionen in der POS-Anwendung, die sich auf den Empfang von Filialbeständen gegen Bestellungen und Transportaufträge beziehen, zum **Eingangsvorgang** POS-Vorgang hinzugefügt. Wenn Sie derzeit den Kommissionier- und Empfangsvorgang in der POS-Anwendung verwenden, empfehlen wir Ihnen, eine Strategie für den Übergang von diesem Vorgang zu den neuen Eingangs- und Ausgangsvorgängen zu entwickeln. Obwohl der Kommissionier- und Wareneingangsvorgang nicht aus dem Produkt entfernt wird, werden ab Version 10.0.9 keine weiteren Investitionen in das Produkt getätigt, weder aus funktionaler noch aus leistungsbezogener Sicht.
 
 ## <a name="prerequisite-configure-an-asynchronous-document-framework"></a>Voraussetzung: Konfigurieren Sie ein asynchrones Dokumenten-Framework.
 
@@ -153,6 +153,20 @@ Sie sollten die Funktion **Empfang abbrechen** in der Anwendungsleiste nur dann 
 Wenn Sie eine Bestandsaufnahme erhalten, können Sie die Funktion **Empfang unterbrechen** verwenden, wenn Sie eine Pause vom Empfangsvorgang einlegen möchten. Sie können beispielsweise eine andere Operation vom POS aus durchführen, wie z.B. einen Kundenverkauf anrufen oder die Buchung des Bons verzögern.
 
 Wenn Sie **Empfang pausieren** wählen, wird der Status des Belegs auf **Pausiert** geändert. Daher wissen die Benutzer, dass Daten für den Beleg eingegeben wurden, der Beleg aber noch nicht bestätigt wurde. Wenn Sie bereit sind, den Empfangsvorgang fortzusetzen, wählen Sie das angehaltene Dokument aus und wählen Sie dann **Auftragsdetails**. Alle **Jetzt empfangen** Mengen, die zuvor gespeichert wurden, bleiben erhalten und können in der Ansicht **Vollständige Auftragsliste** angezeigt werden.
+
+### <a name="review"></a>Überprüfen
+
+Vor des endgültigen Eingang der empfangenen Mengen im Commerce Headquaraters (HQ) können Sie die Überprüfungsfunktion verwenden, um das eingehende Dokument zu validieren. Die Überprüfung macht Sie auf fehlende oder falsche Daten aufmerksam, die zu Verarbeitungsfehlern führen können, und bietet Ihnen die Möglichkeit, Probleme zu beheben, bevor Sie die Empfangsanforderung senden. Um die Funktion **Überprüfen** in der App-Symbolleiste zu aktivieren, aktivieren Sie die Funktion **Prüfung eingehender und ausgehender Bestandsvorgänge am POS aktivieren** über den Arbeitsbereich **Funktionsverwaltung** im Commerce Headquarters (HQ).
+
+Die Funktion **Überprüfen** überprüft die folgenden Probleme in einem eingehenden Dokument:
+
+- **Zu viel empfangen**: Die Empfangsmenge ist größer als die bestellte Menge. Der Schweregrad dieses Problems wird durch die Konfiguration der Mehrlieferung des Commerce Headquarters (HQ) bestimmt.
+- **Zu wenig empfangen**: Die Empfangsmenge ist kleiner als die bestellte Menge. Der Schweregrad dieses Problems wird durch die Konfiguration der Unterlieferung des Commerce Headquarters (HQ) bestimmt.
+- **Seriennummer**: Die Seriennummer wird für einen serialisierten Artikel, für den die Seriennummer im Bestand registriert werden muss, nicht angegeben oder überprüft.
+- **Standort nicht festgelegt**: Der Standort ist für standortgesteuerte Artikel nicht angegeben, wenn ein leerer Standort nicht zulässig ist.
+- **Gelöschte Zeilen**: In dem Auftrag wurden Zeilen von einem Benutzer des Commerce Headquarters (HQ) gelöscht, der der POS-Anwendung nicht bekannt ist.
+
+Stellen Sie den Parameter **Automatische Prüfung aktivieren** auf **Ja** unter **Commerce-Parameter** > **Bestand** > **Bestand speichern**, um die Prüfung automatisch ausführen zu lassen, wenn **Empfang abschließen** ausgewählt wurde.
 
 ### <a name="finish-receiving"></a>Empfang abschließen
 

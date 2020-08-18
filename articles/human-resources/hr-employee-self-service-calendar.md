@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0efc2b50b080b769cb103d1519217517b8330668
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 3478c4c2acb134df1c293c1c33f615595aeaadd0
+ms.sourcegitcommit: 3ae002804858f201297a729d03ec7eab8209be34
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429657"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "3628428"
 ---
 # <a name="view-team-and-company-calendars"></a>Team- und Unternehmenskalender anzeigen
 
@@ -33,15 +33,13 @@ Sie können Teamkalender und Unternehmenskalender in Dynamics 365 Human Resource
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Teamkalender als Mitarbeiter anzeigen
 
-1. Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team**aus.
-
-2. Wählen Sie **Urlaub und Absenzen** und dann **Teamkalender anzeigen**.
+1. Im **Mitarbeiter-Self-Service**-Arbeitsbereich wählen Sie **Teamabwesenheitskalender** unter **Zusammenfassung**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Teamkalender als Manager anzeigen
 
 1. Wählen Sie auf der Startseite **Mitarbeiter-Self-Service** **Mein Team**aus.
 
-2. Wählen Sie **Urlaub und Absenzen** und dann **Teamkalender anzeigen**.
+2. Wählen Sie **Urlaub und Abwesenheit** und dann **Managerabwesenheitskalender anzeigen**.
 
 Manager können auch über **Ausstehende Anfragen meines Teams**, **Genehmigte Freizeit** und **Freizeitanfragen** auf den Teamkalender zugreifen. 
 

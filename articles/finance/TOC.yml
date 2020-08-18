@@ -68,8 +68,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Finance
+                    - name: Neuerungen oder Änderungen auf der Finance-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Finanzen 10.0.13 (Oktober\_2020)"
+                      href: get-started/whats-new-changed-10-0-13.md
                     - name: "Finance 10.0.12 (August\_2020)"
                       href: get-started/whats-new-changed-10-0-12.md
                     - name: "Finance\_10.0.11 (Juli\_2020)"
@@ -107,23 +109,23 @@
             - name: Schulungskatalog
               items:
                 - name: Schulungskatalog – Startseite
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog.md
                 - name: Entscheidungsträger im Unternehmen
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-bdm.md
                 - name: Geschäftliche Benutzer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Implementierungsprojektmanager
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratoren
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Entwickler
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerverkauf und -marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionale Berater
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Lösungsarchitekten
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/finance/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Benutzeroberfläche kennenlernen
               items:
                 - name: Benutzeroberflächenelemente
@@ -846,6 +848,8 @@
                   href: accounts-payable/accounting-distributions.md
                 - name: Zuteilungen verarbeiten
                   href: general-ledger/process-allocations.md
+                - name: Zuweisungsbedingungen
+                  href: general-ledger/main-account-allocation-terms.md
                 - name: Finanzdimensionen
                   href: general-ledger/financial-dimensions.md
                 - name: Konsolidierungskontengruppen und zusätzliche Konsolidierungskonten erstellen
@@ -1122,7 +1126,9 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Erweiterten Sachkontoeintrag im öffentlichen Sektor erstellen
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Verwendung von Cash-Control-Limits
+                - name: Zwischenbilanz mit Transaktionsdetailbericht
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
+                - name: Cash-Control-Grenzwerte verwenden
                   href: public-sector/cash-control.md
                 - name: Verarbeitung am Jahresende im öffentlichen Sektor
                   href: public-sector/year-end-processing-public-sector.md
@@ -1146,6 +1152,8 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Zertifizierungstyp zu einem Kreditor für den öffentlichen Sektor hinzufügen
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
+            - name: Berechnung der harmonisierten kanadischen Mehrwertsteuer
+              href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Finanzberichterstellung
           items:
             - name: Finanzberichterstellung – Übersicht
@@ -1846,6 +1854,8 @@
                           href: localizations/apac-ind-news-letter-10-0-10.md
                         - name: Neuerungen oder Änderungen in 10.0.11
                           href: localizations/apac-ind-news-letter-10-0-11.md
+                        - name: Neuerungen oder Änderungen in 10.0.12
+                          href: localizations/apac-ind-news-letter-10-0-12.md
                     - name: Indien GST-Referenzgruppen
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-Integration für Kassen
@@ -2630,12 +2640,16 @@
                   href: localizations/emea-esp-print-checks-with-spanish-layout.md
                 - name: Solawechseloptionen
                   href: localizations/emea-esp-promissory-note-options.md
-                - name: Erklärung 340
+                - name: Bericht 340
                   href: localizations/emea-esp-report-340.md
+                - name: Bericht zu Erklärung 347
+                  href: localizations/emea-esp-declaration-347-report.md
                 - name: Verkaufs- und Kaufzyklen
                   href: localizations/emea-esp-sales-purchase-cycle.md
                 - name: Besondere Einträge und Eröffnungsbögen
                   href: localizations/emea-esp-opening-sheets-spain.md
+                - name: Sofortige Bereitstellung von MwSt.-Informationen
+                  href: localizations/emea-esp-sii.md
             - name: Schweden
               items:
                 - name: Schweden – Übersicht

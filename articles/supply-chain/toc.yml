@@ -68,14 +68,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Neuerungen oder Änderungen in Supply Chain Management
                   items:
-                    - name: Neuerungen oder Änderungen auf der Supply Chain Management-Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: "Supply Chain Management 10.0.13 (Oktober\_2020)"
+                      href: get-started/whats-new-scm-10-0-13.md
                     - name: "Supply Chain Management\_10.0.12 (August\_2020)"
                       href: get-started/whats-new-scm-10-0-12.md
                     - name: "Supply Chain Management\_10.0.11 (Juli 2020)"
                       href: get-started/whats-new-scm-10-0-11.md
-                    - name: "Supply Chain Management\_10.0.10 (Mai 2020)"
-                      href: get-started/whats-new-scm-10-0-10.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
@@ -109,23 +109,23 @@
             - name: Schulungskatalog
               items:
                 - name: Schulungskatalog – Startseite
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Entscheidungsträger im Unternehmen
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-bdm.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Geschäftliche Benutzer
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-business-user.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-business-user.md
                 - name: Implementierungsprojektmanager
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-project-manager.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-project-manager.md
                 - name: Administratoren
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-administrator.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-administrator.md
                 - name: Entwickler
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-developer.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-developer.md
                 - name: Partnerverkauf und -marketing
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-partner-sales.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-partner-sales.md
                 - name: Funktionale Berater
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-functional-consultant.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-functional-consultant.md
                 - name: Lösungsarchitekten
-                  href: ../fin-ops-core/fin-ops/get-started/learning-catalog-solution-architect.md?toc=/dynamics365/supply-chain/toc.json
+                  href: ./get-started/learning-catalog-solution-architect.md
             - name: Benutzeroberfläche kennenlernen
               items:
                 - name: Benutzeroberflächenelemente
@@ -1257,16 +1257,20 @@
               items:
                 - name: Lagererfassungen
                   href: inventory/inventory-journals.md
+                - name: Workflows zur Genehmigung von Lagererfassungen
+                  href: inventory/inventory-journal-workflow.md
                 - name: Lagerplätze für Lagerbestand
                   href: inventory/inventory-locations.md
                 - name: Bestandsstatus
                   href: inventory/inventory-statuses.md
-                - name: Ein neues Lagerortlayout erstellen
+                - name: Neues Lagerortlayout erstellen
                   href: inventory/tasks/create-new-warehouse-layout.md
                 - name: Strichcodetypen verwalten
                   href: inventory/tasks/maintain-barcode-types.md
-                - name: Überprüfung der Bestandsverfügbarkeit
+                - name: Bestandsverfügbarkeit überprüfen
                   href: inventory/tasks/check-availability-stock.md
+                - name: Liste des verfügbaren Lagerbestands
+                  href: inventory/inventory-on-hand-list.md
                 - name: Bestandswerte im Lagerort initialisieren
                   href: inventory/tasks/initialize-stock-levels-warehouse.md
                 - name: Physischen Bestand im Lagerort übertragen
@@ -1951,7 +1955,7 @@
                       href: production-control/tasks/define-resource-capabilities.md
                     - name: Arbeitspläne und Arbeitsgänge
                       href: production-control/routes-operations.md
-                    - name: Lagerortarbeitsrichtlinien
+                    - name: Arbeitsrichtlinien
                       href: warehousing/warehouse-work-policies.md
                     - name: Arbeitszeit-Planungseigenschaften erstellen
                       href: production-control/tasks/create-working-time-scheduling-properties.md
@@ -2589,6 +2593,8 @@
                   href: warehousing/tasks/set-up-work-template-purchase-orders.md
                 - name: Lagerplatz-Produktdimensionsmischung
                   href: warehousing/location-product-dimension-mixing.md
+                - name: Qualitätsprüfung
+                  href: warehousing/quality-check.md
             - name: Ausgehende Lagerortvorgänge
               items:
                 - name: Reservierungen im Lagermanagement
@@ -2647,10 +2653,14 @@
                       href: warehousing/tasks/set-up-min-max-replenishment-process.md
                     - name: Schwellenwert für Zonenwiederbeschaffung
                       href: warehousing/zone-threshold-replenishment.md
+                    - name: Wiederbeschaffung über Lagerplatzkapazität
+                      href: warehousing/replenishment-over-location-capacity.md
                 - name: Ladungserstellung und Versand
                   items:
                     - name: Bestätigen und übertragen
                       href: warehousing/confirm-and-transfer.md
+                    - name: Ausgehende Lieferungen aus Batchverarbeitungsaufträgen bestätigen
+                      href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Erweiterte Ladungserstellung während einer Welle
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Freigabe an Lagerregel
@@ -2679,10 +2689,8 @@
               items:
                 - name: Lagerortarbeitsrichtlinien
                   items:
-                    - name: Lagerortarbeitsrichtlinien – Übersicht
+                    - name: Arbeitsrichtlinien
                       href: warehousing/warehouse-work-policies.md
-                    - name: Lagerortarbeitsrichtlinien einrichten
-                      href: warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
                     - name: Bewegung von Bestand mit zugeordneter Arbeit in der Lagerortverwaltung
                       href: warehousing/move-inventory-associated-work.md
                     - name: Eine Arbeitsklasse erstellen
@@ -2715,11 +2723,11 @@
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
                     - name: Einzelvorgang zur Eingangsbereinigung bei der Lagerortverwaltung
                       href: warehousing/onhand-cleanup.md
-                    - name: Lagererfassung
+                    - name: Lagererfassungen
                       href: inventory/inventory-journals.md
                     - name: Lagerplatz für Lagerbestand
                       href: inventory/inventory-locations.md
-                    - name: Lagerstatus
+                    - name: Bestandsstatus
                       href: inventory/inventory-statuses.md
                     - name: Markierungsinventur
                       href: inventory/inventory-tag-counting.md

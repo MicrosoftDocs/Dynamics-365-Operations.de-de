@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6d956f63eb5525e45651e8b0698f6f0989f4a3cb
-ms.sourcegitcommit: a0fe7187b1120dc41b3c03d248a20c36d3fc28a2
+ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
+ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "3435746"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "3621192"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Erstellen und konfigurieren Sie erweiterte Garantien
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema werden erweiterte Garantien behandelt und deren Erstellung und Konfiguration in Microsoft Dynamics 365 Commerce beschrieben.
 
@@ -94,7 +93,7 @@ Führen Sie die folgenden Schritte aus, um ein Garantieelement in Commerce zu er
     | Feldname | Wert | Beschreibung |
     |------------|-------|-------------|
     | Preisspannenbasis | **Keiner**, **Grundpreis**, oder **Verkaufspreis** | <ul><li>**Keiner** – Die Werte **Untere Grenze** und **Höchstgrenze** von Preisklassen gelten nicht.</li><li>**Grundpreis** – Eine gegebene Garantie gilt, wenn der Grundpreis (d.h der Preis ohne Rabatte) des garantierten Artikels zwischen den Werten **Untere Grenze** und **Höchstgrenze**, die hier angegeben sind, basierend auf dem Preis des garantierten Artikels liegen.</li><li>**Verkaufspreis** – Dieser Wert ist für die zukünftige Verwendung reserviert.</li></ul> |
-    | Untergrenze, Obergrenze | Ein positiver ganzzahliger Wert | Diese Felder definieren die oberen und unteren Preisgrenzen des garantierten Artikels und wie der aktuelle Garantieartikel auf den garantierten Artikel anwendbar ist. Diese Grenzwerte können auf dem Grundpreis des garantierten Artikels basieren (auch als vom Hersteller empfohlener Verkaufspreis bezeichnet) \[UVP\]). Wenn das Feld **Preisspanne Basis** auf **Grundpreis** festgelegt ist, wird nur ein Garantieartikel (Produkt), dessen Grundpreis zwischen den Werten **Untere Grenze** und **Höchstgrenze** liegt, eine Aufforderung auslösen, das Garantieelement dem POS hinzuzufügen. |
+    | Untergrenze, Obergrenze | Ein positiver ganzzahliger Wert | Diese Felder definieren die oberen und unteren Preisgrenzen des garantierten Artikels und wie der aktuelle Garantieartikel auf den garantierten Artikel anwendbar ist. Diese Grenzwerte können auf dem Grundpreis des garantierten Artikels basieren (auch als vom Hersteller empfohlener Verkaufspreis bezeichnet \[UVP\]). Wenn das Feld **Preisspanne Basis** auf **Grundpreis** festgelegt ist, wird nur ein Garantieartikel (Produkt), dessen Grundpreis zwischen den Werten **Untere Grenze** und **Höchstgrenze** liegt, eine Aufforderung auslösen, das Garantieelement dem POS hinzuzufügen. |
 
     Die folgende Abbildung zeigt beispielsweise die **Preisspanne Basis**, das Feld ist auf den **Grundpreis** festgelegt, das Feld **Untere Grenze** ist auf $500 gesetzt, und das Feld **Höchstgrenze** auf $1000.
     
