@@ -156,6 +156,8 @@
                           items:
                             - name: Entitäts- und Feldzuordnungen anpassen
                               href: data-entities/dual-write/customizing-mappings.md
+                            - name: Umgang mit mehreren Entitätszuordnungen
+                              href: data-entities/dual-write/multiple-entity-maps.md
                             - name: Juristische Person nach Einrichtung des dualen Schreibens bearbeiten
                               href: data-entities/dual-write/edit-legal-entity.md
                             - name: Fehlerverwaltung und Warnungsbenachrichtigungen

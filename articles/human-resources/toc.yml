@@ -1,10 +1,12 @@
 - name: Dynamics 365 Human Resources
   href: hr-welcome.md
   items:
-    - name: Neuerungen
+    - name: Neuigkeiten
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "6.\_August\_2020"
+          href: hr-whats-new-2020-08-06.md
         - name: "23.\_Juli\_2020"
           href: hr-whats-new-2020-07-23.md
         - name: "8.\_Juli\_2020"
@@ -23,16 +25,16 @@
           href: hr-whats-new-2020-04-13.md
         - name: "3.\_April\_2020"
           href: hr-whats-new-2020-04-03.md
-        - name: "24.\_März\_2020"
-          href: hr-whats-new-2020-03-24.md
-        - name: "19.\_März\_2020"
-          href: hr-whats-new-2020-03-19.md
-        - name: "10.\_März\_2020"
-          href: hr-whats-new-2020-03-10.md
-        - name: "3.\_März\_2020"
-          href: hr-whats-new-2020-03-03.md
-        - name: "Archive mit Neuerungen\_2020"
+        - name: "Archive mit Neuigkeiten\_2020"
           items:
+            - name: "24.\_März\_2020"
+              href: hr-whats-new-2020-03-24.md
+            - name: "19.\_März\_2020"
+              href: hr-whats-new-2020-03-19.md
+            - name: "10.\_März\_2020"
+              href: hr-whats-new-2020-03-10.md
+            - name: "3.\_März\_2020"
+              href: hr-whats-new-2020-03-03.md
             - name: "25.\_Februar\_2020"
               href: hr-whats-new-2020-02-25.md
             - name: "18.\_Februar\_2020"
@@ -221,12 +223,10 @@
           href: hr-hrpro-overview.md
         - name: Personalverwaltung einrichten
           items:
-            - name: Personalverwaltungsparameter konfigurieren
+            - name: Human Resources-Parameter konfigurieren
               href: hr-setup-parameters.md
-            - name: Freigegebene Personalverwaltungsparameter konfigurieren
+            - name: Freigegebene Human Resources-Parameter konfigurieren
               href: hr-setup-shared-parameters.md
-            - name: Workflows für die Personalverwaltung einrichten
-              href: hr-setup-workflows.md
             - name: Datums- und Zeitfelder verstehen
               href: hr-setup-date-time-fields.md
         - name: Organisationseinstellungen konfigurieren
@@ -383,6 +383,8 @@
               href: hr-personnel-actions-faq.md
             - name: Workflows zum Verwalten von Mitarbeiterinformationen verwenden
               href: hr-workflow-manage-employee-information.md
+            - name: Adressänderungen anzeigen und verwalten
+              href: hr-personnel-view-address-changes.md
             - name: Berichtsbeziehungen für eine Position ändern
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Informationen zur Arbeitskraft eingeben
@@ -395,8 +397,6 @@
               href: hr-personnel-loan-items.md
             - name: Nachfolgeplan entwickeln
               href: hr-personnel-develop-succession-plan.md
-            - name: Projektarbeitsnachweise eingeben
-              href: hr-personnel-enter-project-timesheets.md
             - name: Masseneinstellungsprojekte
               href: hr-personnel-mass-hire-projects.md
             - name: Ein Masseneinstellungsprojekt erstellen
