@@ -1156,7 +1156,7 @@
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Finanzberichterstellung
           items:
-            - name: Finanzberichterstellung – Übersicht
+            - name: Erste Schritte mit der Finanzberichterstellung
               href: general-ledger/financial-reporting-getting-started.md
             - name: Finanzberichterstellung – Übersicht
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -2600,6 +2600,12 @@
                       href: localizations/rus-counting-deferrals.md
                     - name: Berichterstellung für Stundungen
                       href: localizations/rus-reporting-deferrals.md
+                - name: Steuerbuchhaltung
+                  items:
+                    - name: Ausgaben- oder Einnahmencodes
+                      href: localizations/rus-expense-and-income-codes.md
+                    - name: Anlagensteuerregister
+                      href: localizations/rus-assets-tax-registers.md
             - name: Saudi-Arabien
               items:
                 - name: Saudi Arabien – Übersicht
@@ -3026,7 +3032,7 @@
               items:
                 - name: Erstellen von Konfigurationen
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
-                - name: Abhängigkeit von EB-Konfigurationen von anderen Komponenten festlegen
+                - name: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Vorbereiten von Komponenten der elektronischen Berichterstattungslösung
                   items:
@@ -3036,7 +3042,7 @@
                       items:
                         - name: (ER) Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/finance/toc.json
-                        - name: (RCS) Zugriff auf Anwendungs-Metadaten über die EB-Konfiguration
+                        - name: (RCS) Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/finance/toc.json
                         - name: (RCS) Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/finance/toc.json
@@ -3112,11 +3118,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-count.md?toc=/dynamics365/finance/toc.json
                         - name: EmptyList
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-emptylist.md?toc=/dynamics365/finance/toc.json
-                        - name: Aufzählen
+                        - name: Enumerate
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-enumerate.md?toc=/dynamics365/finance/toc.json
-                        - name: Filtern
+                        - name: Filter
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-filter.md?toc=/dynamics365/finance/toc.json
-                        - name: Zuerst
+                        - name: First
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-first.md?toc=/dynamics365/finance/toc.json
                         - name: FirstOrNull
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-firstornull.md?toc=/dynamics365/finance/toc.json
@@ -3124,8 +3130,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-index.md?toc=/dynamics365/finance/toc.json
                         - name: IsEmpty
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/finance/toc.json
-                        - name: Liste
+                        - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/finance/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/finance/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/finance/toc.json
                         - name: ListOfFields
@@ -3134,7 +3142,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/finance/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/finance/toc.json
-                        - name: Stornieren
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/finance/toc.json
                         - name: Teilen
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/finance/toc.json
@@ -3310,7 +3318,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: EB-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
+            - name: ER-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
               items:
                 - name: Konfigurationen zur Generierung ausgehender Dokumente im Excel-Format entwerfen
                   items:
@@ -3372,7 +3380,7 @@
                   items:
                     - name: Import von Dateien im XML-Format mit optionalen Attributen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
-                    - name: EB-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
+                    - name: ER-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurationslebenszyklus
               items:
@@ -3392,7 +3400,7 @@
                   items:
                     - name: Regulatory Configuration Services (RCS) – Globalisierungsfunktionen
                       href: localizations/rcs-globalization-feature.md
-                    - name: EB-Konfigurationen in Finance herunterladen
+                    - name: ER-Konfigurationen in Finance herunterladen
                       items:
                         - name: Konfigurationen von RCS herunterladen
                           href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
@@ -3402,7 +3410,7 @@
                       items:
                         - name: Konfigurationen aus dem GR importieren
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Aktualisierte Versionen von EB-Konfigurationen importieren
+                        - name: Aktualisierte Versionen von ER-Konfigurationen importieren
                           href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=dynamics365/finance/toc.json
                         - name: Verbesserte Filterung für die Konfigurationssuche im GR
                           href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
@@ -3412,8 +3420,10 @@
                           href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
             - name: Schnellstartanleitungen
               items:
-                - name: EB-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
-                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md
+                - name: ER-Format zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
+                - name: Eine neue ER-Lösung für den Ausdruck eines angepassten Berichts entwerfen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
             - name: Lernprogramme
               items:
                 - name: Informationen zur Nutzung von Datenquellen
@@ -3464,19 +3474,19 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                 - name: Modellzuordnungen konfigurieren
                   items:
-                    - name: Auf Länderkontext beruhende EB-Modellzuordnungen konfigurieren
+                    - name: Auf Länderkontext beruhende ER-Modellzuordnungen konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=dynamics365/finance/toc.json
-                    - name: EB-Modellzuordnungen in separaten EB-Konfigurationen verwalten
+                    - name: ER-Modellzuordnungen in separaten ER-Konfigurationen verwalten
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
                 - name: Formate konfigurieren
                   items:
                     - name: Modelldefinitionen beim Erstellen von Formaten auswählen
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/finance/toc.json
-                    - name: 'EB-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
+                    - name: 'ER-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=dynamics365/finance/toc.json
-                    - name: Parameter eines EB-Formats pro juristischer Person einrichten
+                    - name: Parameter eines ER-Formats pro juristischer Person einrichten
                       href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=dynamics365/finance/toc.json
-                    - name: Ausführung von EB-Formatelementen verzögern
+                    - name: Ausführung von ER-Formatelementen verzögern
                       items:
                         - name: Ausführung eines Sequenzelements verzögern
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=dynamics365/finance/toc.json
@@ -3536,7 +3546,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Generieren druckbarer Freitextrechnungs-Formulare (FTI)
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Überwachen der Ausführung von EB-Formaten zur Behebung von Leistungsproblemen
+                - name: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:

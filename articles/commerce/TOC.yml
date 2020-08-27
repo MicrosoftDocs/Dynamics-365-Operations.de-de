@@ -408,12 +408,6 @@
                           href: set-up-manage-images-retail-mpos.md
                         - name: Kundenbilder im POS
                           href: pos-image.md
-                    - name: Debitorenaufträge
-                      items:
-                        - name: Debitorenaufträge in MPOS
-                          href: customer-orders-overview.md
-                        - name: Hybriddebitorenaufträge
-                          href: hybrid-customer-orders.md
                     - name: Vertriebsmitarbeiter
                       items:
                         - name: Provisionen im POS mithilfe von Verkaufsgruppen nachverfolgen
@@ -630,6 +624,8 @@
                       href: personalized-recommendations.md
                     - name: Personalisierte Empfehlungen kündigen
                       href: personalization-gdpr.md
+                - name: Link „Ähnliche Outfits kaufen“ aktivieren
+                  href: shop-similar-looks.md
                 - name: POS-Umgebungen
                   items:
                     - name: Produktempfehlungen in POS hinzufügen
@@ -692,6 +688,12 @@
                       href: tasks/create-product-packages-purchase-orders.md
         - name: Ihre Aufträge verwalten
           items:
+            - name: Debitorenaufträge
+              items:
+                - name: Debitorenaufträge in MPOS
+                  href: customer-orders-overview.md
+                - name: Hybriddebitorenaufträge
+                  href: hybrid-customer-orders.md
             - name: Aufträge
               items:
                 - name: Einen Callcenterauftrag erstellen
@@ -988,6 +990,12 @@
                       href: cart-icon-module.md
                     - name: Auschecken-Modul
                       href: add-checkout-module.md
+                    - name: Zahlungsmodul
+                      href: payment-module.md
+                    - name: Versandadressenmodul
+                      href: ship-address-module.md
+                    - name: Lieferoptionenmodul
+                      href: delivery-options-module.md
                     - name: Auftragsdetailmodul
                       href: order-confirmation-module.md
                     - name: Geschenkkartenmodul
@@ -1228,7 +1236,7 @@
                       items:
                         - name: (ER) Vorbereiten von Anwendungs-Metadaten zur Verwendung in RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/commerce/toc.json
-                        - name: (RCS) Zugriff auf Anwendungs-Metadaten über die EB-Konfiguration
+                        - name: (RCS) Zugriff auf Anwendungs-Metadaten über die ER-Konfiguration
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/commerce/toc.json
                         - name: (RCS) Zugriff auf Anwendungs-Metadaten über verbundene Anwendungen
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/commerce/toc.json
@@ -1500,7 +1508,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
                         - name: 'Text: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
-            - name: EB-Modellzuordnungen in separaten EB-Konfigurationen verwalten
+            - name: ER-Modellzuordnungen in separaten ER-Konfigurationen verwalten
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
             - name: Datenmodelldefinitionen beim Erstellen von Formaten auswählen
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
@@ -1510,7 +1518,7 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
             - name: (ER) Unternehmensübergreifende Datenquellen in elektronischer Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
-            - name: EB-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
+            - name: ER-Formate zum Generieren ausgehender elektronischer Dokumente in unterschiedlichen Formaten erstellen
               items:
                 - name: (ER) Erstellen von Konfigurationen zum Generieren von Berichten im OpenXML-Format
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1532,7 +1540,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
             - name: 'Ändern von elektronisches Berichterstellungsformaten, indem Excel-Vorlagen erneut angewendet werden'
               href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
-            - name: Abhängigkeit von EB-Konfigurationen von anderen Komponenten festlegen
+            - name: Abhängigkeit von ER-Konfigurationen von anderen Komponenten festlegen
               href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
             - name: Entwerfen einer ER-Lösung zur Verwendung von Finanzdimensionen
               items:
@@ -1544,7 +1552,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
                 - name: 'Ausführen von Berichten, die Finanzdimensionen als Datenquellen verwenden'
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
-            - name: Entwerfen von EB-Formaten zum Zählen und Summieren unter Verwendung der ausgegebenen Informationen
+            - name: Entwerfen von ER-Formaten zum Zählen und Summieren unter Verwendung der ausgegebenen Informationen
               items:
                 - name: Erstellen von Formaten zum Zählen und Summieren
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
@@ -1600,7 +1608,7 @@
                   items:
                     - name: Import von Dateien im XML-Format mit optionalen Attributen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
-                    - name: EB-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
+                    - name: ER-Formate zum Import von Dateien im XML-Format mit optionalen Attributen konfigurieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
             - name: Erstellte XML-Dateien auf Grundlage von Dateigröße und Inhaltsmenge teilen
               href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
@@ -1618,9 +1626,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurationen importieren
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: EB-Konfigurationen aus dem RCS-Repository herunterladen
+                - name: ER-Konfigurationen aus dem RCS-Repository herunterladen
                   items:
-                    - name: EB-Konfigurationen aus dem RCS-Repository für den RCS-Typ herunterladen
+                    - name: ER-Konfigurationen aus dem RCS-Repository für den RCS-Typ herunterladen
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurationen aus RCS importieren
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
@@ -1628,13 +1636,13 @@
               items:
                 - name: JOIN-Datenquellen zum Abrufen von Daten aus mehreren Anwendungstabellen verwenden
                   href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: Auf Länderkontext beruhende EB-Modellzuordnungen konfigurieren
+                - name: Auf Länderkontext beruhende ER-Modellzuordnungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                - name: 'EB-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
+                - name: 'ER-Formate zur Verwendung von Parametern konfigurieren, die pro juristischer Person angegeben werden'
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
-                - name: Parameter eines EB-Formats pro juristischer Person einrichten
+                - name: Parameter eines ER-Formats pro juristischer Person einrichten
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: Ausführung von EB-Formatelementen verzögern
+                - name: Ausführung von ER-Formatelementen verzögern
                   items:
                     - name: Ausführung eines Sequenzelements verzögern
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
@@ -1686,7 +1694,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Generieren druckbarer Freitextrechnungs-Formulare (FTI)
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Überwachen der Ausführung von EB-Formaten zur Behebung von Leistungsproblemen
+                - name: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
                 - name: Geschäftsdokumentverwaltung
                   items:
@@ -1974,6 +1982,8 @@
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Übersicht zur Cookie-API
                       href: e-commerce-extensibility/cookie-api-overview.md
+                    - name: Interaktive Komponentenübersicht
+                      href: e-commerce-extensibility/interactive-components.md
                     - name: Globalisieren von Modulen mit der Klasse CultureInfoFormatter
                       href: e-commerce-extensibility/globalize-modules.md
                 - name: Entwickeln von Datenaktivitäten
@@ -2026,6 +2036,10 @@
                   items:
                     - name: Skripteinfügungen
                       href: e-commerce-extensibility/script-injector.md
+                - name: Connectors
+                  items:
+                    - name: Connectors konfigurieren und aktivieren
+                      href: e-commerce-extensibility/connectors.md
                 - name: Telemetrie und Analyse
                   items:
                     - name: Telemetrieprotokollierung
@@ -2042,6 +2056,8 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Anstehende Änderungen im Retail SDK
                   href: dev-itpro/UpcomingSDKChanges.md
+                - name: Wichtige Entwicklungs- und ALM-Änderungen von Version 10.0.10 zu 10.0.13
+                  href: dev-itpro/dev-changes-10-13.md
                 - name: Buildsysteme für Commerce und Finance and Operations zusammenführen
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: Retail SDK von Visual Studio 2015 nach Visual Studio 2017 migrieren
@@ -2118,17 +2134,13 @@
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server-Erweiterbarkeit
               items:
-                - name: Einen Commerce Scale Unit OData-Controller erweitern
-                  href: dev-itpro/extend-retail-server-odata-controller.md
                 - name: Kunden- und Verbraucher-APIs der Commerce Scale Unit
                   href: dev-itpro/retail-server-customer-consumer-api.md
-                - name: Den Standard-Metadaten-Controller für Commerce Scale Unit erweitern
-                  href: dev-itpro/extend-metadata.md
-                - name: Abrufen des CRT-Service im Offlinemodus
-                  href: dev-itpro/call-crt-service-offline.md
-                - name: Erstellen einer neuen Retail Server-Erweiterung
+                - name: Neue Retail Server-Erweiterungs-API (Retail SDK-Version 10.0.11 und neuer)
+                  href: dev-itpro/retail-server-icontroller-extension.md
+                - name: Neue Retail Server-Erweiterungs-API (Retail SDK-Version 10.0.11 und früher)
                   href: dev-itpro/retail-server-extension.md
-                - name: Retail-Typenskript und C#-Proxys
+                - name: Retail Typescript und C#-Proxys
                   href: dev-itpro/typescript-proxy-retail-pos.md
             - name: Erweiterbarkeit der Commerce Runtime (CRT)
               items:
@@ -2138,16 +2150,12 @@
                   href: dev-itpro/crt-services.md
                 - name: Erweiterbarkeit von CRT und Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md
-                - name: Hinzufügen der Kundenpräferenzdaten zu Kanaldatenbanken
-                  href: dev-itpro/add-customer-preference-channel.md
                 - name: Geheimnisse für Einzelhandelskanäle verwalten
                   href: dev-itpro/manage-secrets.md
                 - name: Erweiterbarkeit und Auslöser von CRT
                   href: dev-itpro/commerce-runtime-extensibility-trigger.md
                 - name: Transaktionen mithilfe von Auslösern sperren
                   href: dev-itpro/trigger-example-blocking-transaction.md
-                - name: Rückgaberichtlinie mithilfe von Auslösern implementieren
-                  href: dev-itpro/trigger-example-return-policy.md
                 - name: Treueerweiterung
                   href: dev-itpro/retail-sdk/loyalty-extension-sample.md
                 - name: Erweiterungspunkte für Lieferscheine
