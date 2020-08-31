@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: BriShoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b017b0f91960be1504134f6d46878fce956de203
-ms.sourcegitcommit: 8a1621327568edf49758b70964e0a3e637527e1b
+ms.openlocfilehash: f31f8898358626f2b008826aa69694dc16742aa0
+ms.sourcegitcommit: 59a9e840989bc9f2c7004efa3499b69c09a91b06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "3497167"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "3677903"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Einen B2C Mandanten in Commerce einrichten
 
@@ -77,7 +77,7 @@ Sobald der B2C-Mandant erstellt wurde, erstellen Sie eine B2C-Anwendung innerhal
 
 Führen Sie folgende Schritte aus, um eine B2C-Anwendung zu erstellen.
 
-1. Wählen Sie im Azure-Portal die Option aus **Anwendungen** und dann **Hinzufügen**.
+1. Wählen Sie im Azure-Portal **Anwendungen (Vorgänger)** und dann **Hinzufügen** aus.
 1. Unter **Name** geben Sie den Namen der gewünschten AAD B2C-Anwendung ein.
 1. Unter **Web App/Web API** für **Web-App/Web-API einschließen**, wählen Sie **Ja**.
 1. Für **Impliziten Fluss zulassen**, wählen Sie **Ja** (der Standardwert).
@@ -335,7 +335,7 @@ Für weitere Azure AD B2C-Dokumentation zur Kundenmigration siehe [Migrieren Sie
 
 ### <a name="custom-policies"></a>Benutzerdefinierte Richtlinien
 
-Weitere Informationen zum Anpassen finden Sie unter Azure AD B2C-Interaktionen und Richtlinienflüsse, die über das hinausgehen, was B2C-Standardrichtlinien bieten, (siehe [Benutzerdefinierte Richtlinien in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+Weitere Informationen zum Anpassen finden Sie unter Azure AD B2C-Interaktionen und Richtlinienflüsse, die über das hinausgehen, was B2C-Standardrichtlinien bieten, siehe [Benutzerdefinierte Richtlinien in Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
 
 ### <a name="secondary-admin"></a>Sekundäradministrator
 

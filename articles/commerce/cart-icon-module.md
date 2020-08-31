@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6771a84118504cd5c8e44302380eb970e4658902
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 137debe3f4cad3948d20b2902ea80e66fa74ffd4
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411088"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661146"
 ---
 # <a name="cart-icon-module"></a>Symbol Einkaufswagenmodul
 
@@ -42,22 +42,22 @@ Das folgende Bild zeigt ein Beispiel für ein Warenkorbsymbolmodul, das einen Mi
 
 - **Mini-Warenkorb anzeigen** – Wenn true, kann mit dieser Eigenschaft eine Warenkorbübersicht (Mini-Warenkorb) angezeigt werden, wenn Sie den Mauszeiger über das Warenkorbsymbol bewegen. Diese Funktionalität wird nur für Desktop-Ansichtsports unterstützt.
 
-
 ## <a name="add-a-cart-icon-module-to-a-page"></a>Ein Warenkorbsymbolmodul einer Seite hinzufügen
 
 Informationen zum Hinzufügen eines Warenkorbsymbolmoduls finden Sie unter [Kopf-Modul](author-header-module.md).
 
-
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-
-[Kauffeldmodul](add-buy-box.md)
 
 [Einkaufswagenmodul](add-cart-module.md)
 
 [Auschecken-Modul](add-checkout-module.md)
 
-[Auftragsbestätigungsmodul](order-confirmation-module.md)
+[Zahlungsmodul](payment-module.md)
 
-[Kopfzeilenmodul](author-header-module.md)
+[Versandadressmodul](ship-address-module.md)
 
-[Fußzeilenmodul](author-footer-module.md)
+[Lieferoptionsmodul](delivery-options-module.md)
+
+[Auftragsdetailmodul](order-confirmation-module.md)
+
+[Geschenkkartenmodul](add-giftcard.md)

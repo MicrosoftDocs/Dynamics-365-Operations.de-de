@@ -3,7 +3,7 @@ title: Eine Instanz entfernen
 description: Diese Artikel führt Sie durch den Prozess des Entfernens eine Testversions- oder Produktionsumgebung für Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/27/2020
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a384801060b2b684f7908daaac2311edd27c773a
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: f759d361fa505323b8b171a98024dca9cc9fa0f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621379"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "3668324"
 ---
 # <a name="remove-an-instance"></a>Eine Instanz entfernen
 
@@ -70,7 +70,7 @@ Um eine Human Resources-Umgebung aus einer vorhandenen Power Apps-Umgebung zu en
 4. Melden Sie sich an bei LCS indem Sie das Konto verwenden, das Sie verwenden, um Human Resources zu abonnieren. 
 5. Wählen Sie das Human Resources-Projekt aus, das die Umgebung enthält. 
 6. In Ihrem LCS-Projekt wählen Sie die Kachel **Human Resources App-Verwaltung** aus. 
-7. Wählen Sie die Instanz aus, die Sie entfernen möchten, die mit dem Bereitstellungsstatus **Fehler** markiert werden muss.
+7. Wählen Sie die Instanz aus, die Sie entfernen möchten, die mit dem Bereitstellungsstatus **Gelöscht** markiert werden muss.
 8. Wählen Sie **Instanz entfernen** aus, und bestätigen Sie Ihre Entscheidung. 
 
 ## <a name="recover-a-soft-deleted-environment"></a>Eine nicht vollständig gelöschte Umgebung wiederherstellen

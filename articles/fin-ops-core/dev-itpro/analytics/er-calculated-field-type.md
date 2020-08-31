@@ -3,7 +3,7 @@ title: Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Be
 description: Dieses Thema enthält Informationen zum Verwenden des Typs „Berechnetes Feld“ für ER-Datenquellen.
 author: NickSelin
 manager: AnnBe
-ms.date: 09/09/2019
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3f331401f8d191243f72961333e4f1dbe84d0be5
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 02d53f4326d8f31abf6ec7404575728837954bef
+ms.sourcegitcommit: c9baf9a3b4552f0317b5ec87d252834f52df1b98
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771328"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665609"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“
 
@@ -45,14 +45,14 @@ Um die Beispiele in diesem Thema abzuschließen, müssen Sie den folgenden Zugri
     - Funktionaler Berater für elektronische Berichterstellung
     - Systemadministrator
 
-Laden Sie die gezippte (komprimierte) Datei **Unterstützen parametrisierter Aufrufe von ER-Datenquellen des Typs „Berechnetes Feld“** im [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684) herunter. Sie enthält die folgenden ER-Konfigurationen, die lokal extrahiert und gespeichert werden müssen.
+Sie müssen auch die folgenden Dateien herunterladen und lokal speichern.
 
 | **Inhalt**                           | **Dateiname**                                        |
 |---------------------------------------|------------------------------------------------------|
-| Beispiel-EB-Datenmodell-Konfiguration    | Model to learn parameterized calls.version.1.xml     |
-| Beispiel-EB-Metadatenkonfiguration      | Metadata to learn parameterized calls.version.1.xml  |
-| Beispiel-EB-Modellzuordnungskonfiguration | Mapping to learn parameterized calls.version.1.1.xml |
-| Beispiel-EB-Formatkonfiguration        | Format to learn parameterized calls.version.1.1.xml  |
+| Beispiel-EB-Datenmodell-Konfiguration    | [Model to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)     |
+| Beispiel-EB-Metadatenkonfiguration      | [Metadata to learn parameterized calls.version.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
+| Beispiel-EB-Modellzuordnungskonfiguration | [Mapping to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Beispiel-EB-Formatkonfiguration        | [Format to learn parameterized calls.version.1.1.xml](https://mbs.microsoft.com/customersource/global/AX/downloads/hot-fixes/365optelecrepeg)  |
 
 ## <a name="sign-in-to-your-rcs-instance"></a>Anmelden bei Ihrer RCS-Instanz
 In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware, Inc. Zunächst müssen Sie im RCS die Schritte in der Prozedur [Konfigurationsanbieter anlegen durchführen und als aktiv markieren](tasks/er-configuration-provider-mark-it-active-2016-11.md):
@@ -87,7 +87,7 @@ In diesem Beispiel erstellen Sie eine Konfiguration für die Musterfirma Litware
             - Summe der Steuerwerte
             - Mindestwert des angewendeten Steuersatzes
 
-    Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle ER-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
+    Die Modellzuordnung in dieser Konfiguration implementiert das Basisdatenmodell für alle EB-Formate, für die dieses Modell erstellt und in Finance and Operations ausgeführt werden. Demzufolge wird der Inhalt der **Steuer**- und **GR**-Datenquellen für ER-Formate wie abstrakte Datenquellen bereitgestellt.
 
     ![Seite „Modellzuordnungsdesigner“ mit Steuer- und GR-Datenquellen](media/er-calculated-field-type-01.png)
 

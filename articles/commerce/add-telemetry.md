@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 81c36685c1eccceb2f1854fe7c866186120c08a3
-ms.sourcegitcommit: de5af1912201dd70aa85fdcad0b184c42405802e
+ms.openlocfilehash: 4f26ed5b6674566f579e801f4b7be63c2d0dc38d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154085"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686813"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie
 
@@ -32,7 +32,7 @@ In diesem Thema wird beschrieben, wie ein clientseitiger Skriptcode den Standort
 
 ## <a name="overview"></a>Übersicht
 
-Internet-Analyse ist ein wichtiges Tool, wenn Sie verstehen möchten, wie Ihre Debitoren mit der Site interagieren und Entscheidungen treffen, die Ihnen helfen, die Erfahrung für maximale Umrechnung zu optimieren. Viele Internet-Analysepakete sind verfügbar, um zu helfen, diese Ziele zu erreichen wie Google Analytics, Clicky, Moz-Analyse und KISSMetrics. Die meisten Internet-Analysepakete erfordern, dass Sie clientseitige Scriptcode im **\<Kopf\>** Element des HTML für alle Seiten Ihrer Site hinzufügen.
+Internet-Analyse ist ein wichtiges Tool, wenn Sie verstehen möchten, wie Ihre Debitoren mit der Site interagieren und Entscheidungen treffen, die Ihnen helfen, die Erfahrung für maximale Umrechnung zu optimieren. Viele Internet-Analysepakete sind verfügbar, um zu helfen, diese Ziele zu erreichen wie Google Analytics, Clicky, Moz-Analyse und KISSMetrics. Die meisten Internet-Analysepakete erfordern, dass Sie clientseitigen Scriptcode im **\<head\>**-Element der HTML für alle Seiten Ihrer Website hinzufügen.
 
 > [!NOTE]
 > Die Anweisungen in diesem Thema gelten auch für benutzerdefinierte clientseitige andere Funktionen, die Microsoft Dynamics 365 Commerce System intern nicht bereitstellt.
@@ -45,9 +45,9 @@ Mit einem Seitenfragment können Sie Inline- oder externen Skriptcode auf allen 
 
 Führen Sie die folgenden Schritte aus, um ein wiederverwendbares Seitenfragment für Ihren Inline-Skriptcode im Site Builder zu erstellen.
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus.
-1. In dem **Neues Seitenfragment** Dialogfeld wählen Sie **Inline-Skript**.
-1. Unter **Name des Seitenfragments** geben Sie einen Namen für das Fragment ein und wählen Sie dann **OK**.
+1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** die Option **Inline-Skript** aus.
+1. Geben Sie unter **Name des Seitenfragments** einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
 1. Wählen Sie unter dem von Ihnen erstellten Seitenfragment die Option aus **Standard-Inline-Skript** Modul.
 1. Im Eigenschaftenfenster rechts unter **Inline-Skript** geben Sie Ihr clientseitiges Skript ein. Konfigurieren Sie dann andere Optionen nach Bedarf.
 1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.
@@ -57,9 +57,9 @@ Führen Sie die folgenden Schritte aus, um ein wiederverwendbares Seitenfragment
 
 Führen Sie die folgenden Schritte aus, um ein wiederverwendbares Seitenfragment für Ihren externen Skriptcode im Site Builder zu erstellen.
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus.
-1. In dem **Neues Seitenfragment** Dialogfeld wählen Sie **Externes Skript**.
-1. Unter **Name des Seitenfragments** geben Sie einen Namen für das Fragment ein und wählen Sie dann **OK**.
+1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** die Option **Externes Skript** aus.
+1. Geben Sie unter **Name des Seitenfragments** einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
 1. Wählen Sie unter dem von Ihnen erstellten Seitenfragment die Option aus **Externes Standard-Skript** Modul.
 1. Im Eigenschaftenfenster rechts unter **Skriptquelle** fügen Sie eine externe oder relative URL für die externe Skriptquelle hinzu. Konfigurieren Sie dann andere Optionen nach Bedarf.
 1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.

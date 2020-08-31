@@ -1,9 +1,9 @@
 ---
 title: Überblick über die Finanzberichterstellung
-description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 Finance auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden. Es umfasst eine Beschreibung der Standardfinanzberichte, die zur Verfügung stehen.
+description: In diesem Thema wird beschrieben, wo Sie in Microsoft Dynamics 365 Finance auf Finanzberichte zugreifen und wie Sie Finanzberichtfunktionen verwenden.
 author: aprilolson
 manager: AnnBe
-ms.date: 07/23/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86022b662c265b4b98f6df86647f61ea35d31432
-ms.sourcegitcommit: f5200f37c6c436183b4ee5711026ef92a7cb9538
+ms.openlocfilehash: 1944eda5fe933ff9fdf2b9a837eb2336e8b3a0d5
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "3618037"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696687"
 ---
-# <a name="financial-reporting-overview"></a>Finanzberichterstellung – Übersicht
+# <a name="get-started-with-financial-reporting"></a>Erste Schritte mit Financial Reporting 
 
 [!include [banner](../includes/banner.md)]
 
@@ -88,7 +88,7 @@ Nachdem Sie ein Benutzer hinzugefügt haben, oder eine Rolle geändert wurde, so
 Benutzer, die einen Bericht erstellen, können ihre eigenen Berichte löschen. Benutzer mit der Pflicht **Finanzberichtssicherheit verwalten** können die Berichte anderer Benutzer löschen. 
 
 In Release 10.0.8 wurde das Konzept der Ablaufdaten eingeführt. Eine neue erforderliche Funktion ist auf der Seite **Alle** im Arbeitsbereich der Funktionsverwaltung aktiviert. Die Funktion **Richtlinien zur Aufbewahrung von Finanzberichten** enthält die folgenden Änderungen:
-* Neu erstellte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Erstellung gekennzeichnet
+* Neu generierte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Generierung gekennzeichnet.
 * Alle vorhandenen Berichte, die vor der Installation der Funktion erstellt wurden, haben eine Gültigkeitsdauer von 90 Tagen. Das Datum wird möglicherweise für einen kurzen Zeitraum leer angezeigt, bis der Finanzberichtsdienst ausgeführt wird, ein Bericht generiert wird und der Dienst die Aktualisierung vorhandener Berichte mit einem leeren Ablaufdatum durchführt. 
 * Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Optionen zur Vermerkdauer verfügbar: 
   * Ablauf von 90 Tagen.
@@ -134,6 +134,12 @@ Wenn Sie das Menü **Finanzberichterstattung** auswählen, wird die Liste der st
 ## <a name="creating-and-modifying-financial-reports"></a>Finanzberichte erstellen und ändern
 Über die Finanzberichte Liste können Sie einen neuen Bericht erstellen oder einen vorhandenen Bericht ändern. Wenn Sie die erforderlichen Berechtigungen besitzen, können Sie einen neuen Finanzbericht erstellen, indem Sie **Neu** im Aktionsbereich auswählen. Ein Berichts-Designer-Programm wird auf Ihr Gerät heruntergeladen. Nachdem der Berichts-Designer startete, können Sie den neuen Bericht erstellen. Nachdem Sie den neuen Bericht gespeichert haben, erscheint er in der Finanzberichtsliste. Die Liste zeigt nur Berichte an, die für das Unternehmen erstellt wurden, das Sie in Dynamics 365 Finance verwenden. 
 
+## <a name="reporting-tree-definitions"></a>Berichtsbaumstruktur-Definitionen 
+Eine der Komponenten, die zum Erstellen von Finanzberichten verwendet werden, ist eine Berichtsbaumdefinition. Die Berichtsstruktur-Definition hilft, die Struktur und die Hierarchie Ihrer Organisation zu definieren. Es ist eine dimensionsübergreifende hierarchische Struktur, die auf den dimensionalen Beziehungen in den Finanzdaten basieren. Sie stellt Informationen für alle Einheiten in der Struktur auf der Berichtseinheitenebene und auf einer Zusammenfassungsebene bereit.
+
+Sie können eine unbegrenzte Anzahl von Berichtsbaumstrukturen erstellen, um die Daten der Organisation auf verschiedene Weise anzuzeigen. Jeder Berichtsbaum kann eine beliebige Kombination von Abteilungen und Zusammenfassungseinheiten enthalten. Eine Berichtsdefinition kann jedoch jeweils nur mit einem Berichtsbaum verknüpft werden. 
+
+
 ## <a name="troubleshooting-issues-opening-report-designer"></a>Behandlung von Problemen beim Öffnen des Berichts-Designers
 Es gibt einige häufige Probleme, die beim Öffnen des Berichts-Designers zu Problemen führen können. Diese Probleme und die Schritte zu ihrer Behebung lauten wie folgt.
 
@@ -155,10 +161,11 @@ Problem 2: Dem Benutzer wurden nicht die erforderlichen Berechtigungen zur Verwe
   Wenn ein anderer Benutzer den Berichts-Designer öffnen kann, wählen Sie **Werkzeuge** aus, und dann wählen Sie **Integrationsstatus** aus. Überprüfen Sie, dass die Integrationszuordnung „Unternehmensbenutzeranbieter für Unternehmen“ erfolgreich ausgeführt wurde, da Ihnen die Berechtigung zur Verwendung von Financial Reporting zugewiesen wurde. 
 * Möglicherweise hat ein anderer Fehler verhindert, dass die **Integration von Dynamics-Benutzer in Financial Reporting-Benutzer** fertig gestellt wurde. Oder es ist möglich, dass eine Data Mart-Zurücksetzung initiiert und noch nicht abgeschlossen wurde oder dass ein anderer Systemfehler aufgetreten ist. Versuchen Sie den Prozess später erneut auszuführen. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Systemadministrator.
 
-Problem 3: Sie können über die Anmeldeseite von ClickOnce-Berichts-Designer fortfahren, die Anmeldung im Berichts-Designer jedoch nicht abschließen. 
+Problem 3: Sie können über die Anmeldeseite von ClickOnce-Berichts-Designer fortfahren, die Anmeldung im Report Designer jedoch nicht abschließen. 
 
 * Die auf Ihrem lokalen Computer festgelegte Zeit für die Eingabe Ihrer Anmeldeinformationen muss innerhalb von fünf Minuten nach der Zeit auf dem Financial Reporting-Server liegen. Bei einem Unterschied von mehr als fünf Minuten lässt das System keine Anmeldung zu. 
 * In diesem Fall empfehlen wir, die Windows-Option zur automatischen Einstellung der Zeit Ihres PCs zu aktivieren. 
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Finanzberichte anzeigen](view-financial-reports.md)
+- [Definitionen für Berichtsbaumstrukturen in Finanzberichten](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)

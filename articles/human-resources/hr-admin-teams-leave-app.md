@@ -3,7 +3,7 @@ title: Human Resources-App in Teams
 description: Dieses Thema enthält Informationen zur Microsoft Dynamics 365 Human Resources-App in Microsoft Teams.
 author: andreabichsel
 manager: AnnBe
-ms.date: 05/18/2020
+ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36684710e39c27840cc4aaa259a85579104fd8d6
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 4822cc6560926df878a8b4e9f821b331ede27a8c
+ms.sourcegitcommit: 15c68822f4d412bfc609be31b3702f18c81ea0bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431129"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3666359"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
@@ -45,10 +45,10 @@ Informationen zum Verwalten von App-Berechtigungen in Teams finden Sie unter [Ap
 
 | Abgang | Status |
 | --- | --- |
-| Fehler: Es gibt ein Problem beim Finden einer Umgebung, zu der eine Verbindung hergestellt werden kann. | Möglicherweise wird dieser Fehler auch dann angezeigt, wenn Sie überprüft haben, dass der Benutzer auf eine oder mehrere Personalumgebungen zugreifen kann. Außerdem werden möglicherweise nicht alle von Ihnen erwarteten Umgebungen angezeigt. Löschen Sie den Benutzer und importieren Sie ihn erneut, um das Problem zu beheben. |
+| Das horizontale Scrollen funktioniert nicht bei Android-Smartphones | Horizontales Scrollen ist auf iOS‑ oder Desktop-Geräten kein Problem. Wir arbeiten an einer Lösung für Android. |
+| Fehler: Es gibt ein Problem beim Finden einer Umgebung, zu der eine Verbindung hergestellt werden kann. | Möglicherweise wird dieser Fehler auch dann angezeigt, wenn Sie überprüft haben, dass der Benutzer auf eine oder mehrere Personalumgebungen zugreifen kann. Zudem werden möglicherweise nicht alle von Ihnen erwarteten Umgebungen angezeigt. Löschen Sie den Benutzer und importieren Sie ihn erneut, um das Problem zu beheben. |
 | Der Saldo ist falsch, wenn arbeitsfreie Zeit für ein zukünftiges Datum eingereicht wird. | Es ist noch keine Planungsfunktion verfügbar. Der Saldo wird für das aktuelle Datum angezeigt. |
 | Wenn die Anzahl der in einem vorhandenen Antrag genommenen Urlaubsstunden reduziert wird, nimmt der **verbleibende Saldo** ab anstatt zu. | Wir werden dieses bekannte Problem in Zukunft angehen. Die Anzeige ist falsch, die korrekten Beträge werden bei der Übermittlung jedoch angepasst. |
-| Zwei Karten für **bevorstehende arbeitsfreie Zeit** werden für die dieselben Datumsangaben angezeigt. | Die Karten stellen einzelne Übermittlungen dar. Wir werden weiterhin Feedback entgegennehmen und Anpassungen vornehmen. |
 | Eine **Wird überprüft**-Anforderung kann nicht abgebrochen werden. | Diese Funktion wird derzeit nicht unterstützt und wird in einer zukünftigen Version hinzugefügt. |
 | Die Saldoinformationen werden ab heute berechnet. | Das System zeigt derzeit keine Salden ab dem Abgrenzungszeitraum an, auch wenn dies in den Urlaub- und Abwesenheitsparameter konfiguriert ist. |
 

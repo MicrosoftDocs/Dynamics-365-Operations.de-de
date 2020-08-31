@@ -3,7 +3,7 @@ title: Standardauftragseinstellungen für Dimensionen und Produktvarianten
 description: Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode.
 author: t-benebo
 manager: tfehr
-ms.date: 07/27/2020
+ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,13 +18,13 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 13df8eb7873495847d994922be1acd77e57f8f23
-ms.sourcegitcommit: dfe5916d982eaa879e2afef7440c30b1d0f4380a
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
+ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "3637755"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "3657339"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
@@ -32,7 +32,16 @@ ms.locfileid: "3637755"
 
 Standardauftragseinstellungen in Dynamics 365 Supply Chain Management definieren den Standort und Lagerort, aus dem Artikel bezogen oder an dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode. Standardauftragseinstellungen werden verwendet, wenn Bestellungen, Aufträge, Umlagerungsaufträge, Bestandsjournale erstellt werden, sowie durch den Produktprogrammplan für die Generierung geplanter Aufträge. Standardauftragseinstellungen können artikelspezifisch, standortpsezifsch, produktvariantenspezfisch oder produktdimensionsspezifisch sein.
 
-Sie können die Standardauftragseinstellungen auf der Seite **Standardauftragseinstellungen** definieren. Um diese Seite zu öffnen, gehen Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte** &gt; **Ein freigegebenes Produkt auswählen** &gt; im **Plan**. Sie können auch auf **Bestand verwalten** &gt; **Auftragseinstellungen** &gt; **Standardauftragseinstellungen** gehen.
+Führen Sie die folgenden Schritte aus, um die Standardauftragseinstellungen für ein Produkt zu definieren.
+
+1. Wechseln Sie zu **Produktinformationsverwaltung** &gt; **Produkte** &gt; **Freigegebene Produkte**.
+1. Wählen Sie das relevante Produkt im Raster aus.
+1. Befolgen Sie im Aktivitätsbereich einen dieser Schritte, um die Seite **Standardauftragseinstellungen** für das ausgewählte Produkt zu öffnen:
+
+    - Wählen Sie auf der Registerkarte **Planen** in der Gruppe **Auftragseinstellungen** die Option **Standardauftragseinstellungen** aus.
+    - Wählen Sie auf der Registerkarte **Lagerbestand verwalten** in der Gruppe **Auftragseinstellungen** die Option **Standardauftragseinstellungen** aus.
+
+1. Konfigurieren Sie die Einstellungen, wie im Rest dieses Themas beschrieben.
 
 ## <a name="default-order-settings"></a>Standardauftragseinstellungen
 
@@ -74,7 +83,7 @@ Die Standardlagerauftragseinstellungen gelten auch beim Erstellen von:
 
 ## <a name="full-definition-of-a-released-product"></a>Vollständige Definition eines freigegebenen Produkts
 
-Wenn Sie eine Buchung erstellen, müssen Sie die vollständige Definition eines veröffentlichten Produkts auf der Position angeben, damit Supply Chain Management versucht, die Standardauftragseinstellungen zu identifizieren. Die vollständige Definition des freigegebenen Produkts bedeutet, dass alle aktiven Artikelnummer und Produktdimensionen, beispielsweise Konfiguration, Größe, Farbe, Stil und für die Buchung angegeben werden. Wenn Sie beispielsweise manuell eine Bestellposition für eine freigegebene Produktvariante erstellen, müssen Sie alle erforderlichen Produktdimensionen angeben, bevor der Standort, Lagerort, die Menge sowie die Lieferzeit standardmäßig in der Auftragsposition angezeigt werden. 
+Wenn Sie eine Transaktion erstellen, müssen Sie die vollständige Definition eines veröffentlichten Produkts auf der Position angeben, damit Supply Chain Management versuchen kann, die Standardauftragseinstellungen zu identifizieren. In der vollständigen Definition eines freigegebenen Produkts werden die Artikelnummer und alle aktiven Produktdimensionen, beispielsweise Konfiguration, Größe, Stil, Version und Farbe für die Buchung angegeben. Wenn Sie beispielsweise manuell eine Bestellposition für eine freigegebene Produktvariante erstellen, müssen Sie alle erforderlichen Produktdimensionen angeben, bevor der Standort, der Lagerort, die Mengen sowie die Lieferzeit standardmäßig in der Auftragsposition angezeigt werden. 
 
 Nicht alle Standardauftrags-Einstellungsparameter werden angewendet, wenn Auftrags- oder Erfassungspositionen erstellt werden. Mengen und Lieferzeiten werden nur standardmäßig angezeigt, sofern zutreffend. Wenn beispielsweise eine Erfassungsposition gezählt wird, werden nur der Standort und der Lagerort standardmäßig angezeigt, wenn die Position erstellt wird. Deshalb wird keine Standardmenge ober Überprüfung auf Mehrfache und Minimums ausgeführt, wenn die Position erstellt oder die Erfassung gebucht wird. 
 
@@ -96,7 +105,7 @@ Für eindeutig identifizierbare, freigegebene Produkte können Sie allgemeine Au
 
 ### <a name="site-specific-order-settings"></a>Standortspezifische Auftragseinstellungen
 
-Um standortspezifische Auftragseinstellungen zu erstellen, wählen Sie **Neu**. Füllen Sie in der **Detailansicht** den Standort im Feld **Standort** unter &gt; **Einstellungen gültig für** aus. Füllen Sie in der **Rasteransicht** den Standort in der Spalte **Standort** aus. Die neue Regel ruft automatisch einen neuen Rangwert ab, der über null liegt. Sie können so viele standortspezifische Regeln wie erforderlich erstellen und allen standortspezifischen Regeln denselben Rang zuweisen, um zu modellieren, dass sie gleich wichtig sind. 
+Um standortspezifische Auftragseinstellungen zu erstellen, wählen Sie **Neu**. Geben Sie in der **Detailansicht** den Standort im Feld **Standort** im Abschnitt **Einstellungen gültig für** ein. Füllen Sie in der **Rasteransicht** den Standort in der Spalte **Standort** aus. Der neuen Regel wird automatisch ein neuer Rangwert zugewiesen, der größer als 0 (Null) ist. Sie können so viele standortspezifische Regeln anlegen, wie Sie benötigen. Um anzuzeigen, dass sie gleich wichtig sind, können Sie allen standortspezifischen Regeln den gleichen Rangwert zuweisen.
 
 Wenn Sie sich in der **Detailansicht** befinden, können Sie die Übersicht der Regeln nicht erhalten, die für den Artikel erstellt wurden. Benutzen Sie die Schaltfläche **Liste anzeigen/ausblenden**, um Übersichtsinformationen anzuzeigen. Wenn eine Auftragsposition eines beliebigen Typs erstellt wird und für sie kein Standort bereitgestellt ist, sucht Supply Chain Management nach einer Regel, bei der kein Standort angegeben ist. Dies kann dazu beitragen, einen Standardstandort in der Auftragsposition zu verwenden. Dieser Standort wird dann verwendet, um nach einer standortspezifischen Regel zu suchen, bei der möglicherweise ein Standardlagerort festgelegt wurde. Dieser Lagerort wird auf die Auftragsposition angewendet.
 
@@ -111,41 +120,41 @@ Berücksichtigen Sie das folgende Beispielprodukt.
 | **Produktname**                                    | Photoelektrischer Sensor                    |
 | **Artikelnummer**                                     | XW56                                    |
 | **Konfiguration** (wird verwendet, um den Typ des Lichts zu modellieren) | C1-sichtbares rotes Licht, C2-Infrarotlicht |
-| **Stil** (wird zum Modellieren der Techniküberarbeitung verwendet)  | R1, R2, R3                              |
+| **Version** | V1, V2, V3                              |
 
 Nehmen Sie für dieses Beispiel an, dass das Produkt beschafft und nicht produziert wird. Nehmen Sie außerdem an, dass die Konfiguration C1 häufiger verwendet wird, sodass es kürzere Lieferzeiten hat. 
 
 Erstellen Sie folgende Standardauftragseinstellungen, um dieses Szenario zu modellieren.
 
-| Rang | Standort | Variante | Formatvorlage | Einkauf – Standardeinstellungen überschreiben | Lieferzeit Einkauf | Einkauf – Angehalten | Vertrieb – Standardeinstellungen überschreiben | Vertrieb – Angehalten |
+| Rang | Standort | Variante | Version | Einkauf – Standardeinstellungen überschreiben | Lieferzeit Einkauf | Einkauf – Angehalten | Vertrieb – Standardeinstellungen überschreiben | Vertrieb – Angehalten |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Wenn eine Bestellposition oder eine geplante Einkaufsbestellung für XW56, Konfiguration C1, erstellt wird, wird die Lieferzeit als 2 behandelt, unabhängig von der Überarbeitung oder dem Standort, wo die Position platziert wird. Nehmen Sie an, dass alle Überarbeitungen, außer R3, angehalten werden.
+Wenn eine Bestellposition oder eine geplante Einkaufsbestellung für XW56, Konfiguration C1, erstellt wird, wird die Lieferzeit als 2 behandelt, unabhängig von der Überarbeitung oder dem Standort, wo die Position platziert wird. Nehmen wir an, dass alle Überarbeitungen außer V3 angehalten werden.
 
 Sie können die folgenden standardmäßigen Auftragseinstellungsregeln erstellen.
 
-| Rang | Standort | Variante | Formatvorlage | Einkauf – Standardeinstellungen überschreiben | Lieferzeit Einkauf | Einkauf – Angehalten | Vertrieb – Standardeinstellungen überschreiben | Vertrieb – Angehalten |
+| Rang | Standort | Variante | Version | Einkauf – Standardeinstellungen überschreiben | Lieferzeit Einkauf | Einkauf – Angehalten | Vertrieb – Standardeinstellungen überschreiben | Vertrieb – Angehalten |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 20   |      |               | R2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
-| 20   |      |               | R1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
+| 20   |      |               | V2    | Ja                                  |                    | Ja                | Ja                               | Ja             |
+| 20   |      |               | V1    | Ja                                  |                    | Ja                | Ja                               | Ja             |
 | 10   |      | C1            |       | Ja                                  | 2                  |                    |                                   |                 |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
-Die zwei Regeln für die Beendigung der alten Überarbeitungen haben dieselbe Bewertung, was bedeutet, dass sie gleich wichtig sind. Alle beide haben einen höheren Rang als die Regel für Konfiguration C1, was bedeutet, dass sie den Vorrang vor der Regel für Konfiguration C1 haben. 
+Die beiden Regeln zum Stoppen der alten Versionen haben den gleichen Rang. Daher sind sie gleich wichtig. Beide Regeln haben einen höheren Rang als die Regel für die Konfiguration C1, was bedeutet, dass sie Vorrang vor der Regel für die Konfiguration C1 haben. 
 
-In diesem Beispiel wird die Anforderung für den Rang erklärt. Wenn eine Bestellung für Konfiguration C1 und Überprüfung R2 erstellt wird, wären bei fehlendem Rang die beiden Regeln, die für R2 und C1 definiert werden, mehrdeutig. Um die Mehrdeutigkeit aufzuheben, durchsucht Supply Chain Management die Regeln in absteigender Rangreihenfolge und wendet die erste anwendbare Regel an. Im aktuellen Beispiel, wenn eine Bestellposition für Konfiguration C1 und Überarbeitung R2 erstellt wird, erhält der Benutzer eine Warnmeldung, dass der Artikel gesperrt ist und dass dies durch den Überarbeitungswert verursacht wird. Wenn die Regel für die Konfiguration größer wäre, als diejenige für die Überarbeitung, dann wäre die Erstellung einer Bestellposition für Konfiguration C1 und Überarbeitung R2 erfolgreich gewesen, und der Benutzer hätte keine Meldung „Artikel gesperrt“ erhalten. 
+In diesem Beispiel wird die Anforderung für den Rang erklärt. Wenn der Rang beim Anlegen einer Bestellung für die Konfiguration C1 und die Version V2 erstellt wird, sind die beiden für V2 und C1 definierten Regeln nicht eindeutig. Um die Mehrdeutigkeit aufzuheben, durchsucht Supply Chain Management die Regeln in absteigender Rangreihenfolge und wendet die erste anwendbare Regel an. Im aktuellen Beispiel, wenn eine Bestellposition für die Konfiguration C1 und die Version V2 erstellt wird, wird der Benutzer in einer Warnmeldung darüber informiert, dass der Artikel gesperrt ist und dies durch den Überarbeitungswert verursacht wird. Wenn die Regel für die Konfiguration einen höheren Rang hatte als die für die Version, wäre die Erstellung einer Bestellposition für die Konfiguration C1 und die Version V2 erfolgreich gewesen und der Benutzer hätte die Meldung "Artikel gesperrt" nicht erhalten. 
 
 Berücksichtigen Sie die folgenden standardmäßigen Auftragseinstellungsregeln.
 
-| Rang | Standort | Variante | Formatvorlage | Standardstandort | Standardlagerort | Einkauf – Standardmäßige Lagerdimensionen überschreiben | Lagerort für Einkauf |
+| Rang | Standort | Variante | Version | Standardstandort | Standardlagerort | Einkauf – Standardmäßige Lagerdimensionen überschreiben | Lagerort für Einkauf |
 |------|------|---------------|-------|--------------|-------------------|------------------------------------------------|--------------------|
 | 20   | 2    |               |       |              |                   | Ja                                            | 22                 |
-| 10   |      | C1            |  R2   |  2           |  21               |                                                |                    |
+| 10   |      | C1            |  V2   |  2           |  21               |                                                |                    |
 | 0    |      |               |       | 1            | 11                |                                                |                    |
 
-Das System reicht die Sätze von Regeln zweimal weiter, um den Standort und Lagerort zu bestimmen. Wenn eine Bestellposition für Variante C1, Stil R2 konfiguriert wird, wird der Standort basierend auf der Grundlage der Regel mit Rang 10 bestimmt. Dann sucht das System nach einer Regel für Standort 2, um einen Lagerort zu bestimmen. Regel 20 wird gefunden und da sie einen höheren Rang hat, wird der Lagerort in der Bestellposition 22 und nicht 21 sein.
+Das System reicht die Sätze von Regeln zweimal weiter, um den Standort und Lagerort zu bestimmen. Wenn eine Bestellposition für die Konfiguration C1, Version V2 erstellt wird, wird der Standort basierend auf der Regel mit Rang 10 bestimmt. Das System sucht dann nach einer Regel für Standort 2, um einen Lagerort zu bestimmen. Regel 20 wird gefunden und da sie einen höheren Rang hat, ist der Lagerort in der Bestellposition 22 und nicht 21.
 
 Als allgemeinen Leitfaden erhalten spezifische Regeln und Regeln für Dimensionen, die wichtiger als andere Dimensionen sind, höhere Ränge, während generischere Regeln niedrigere Ränge erhalten. 
 
@@ -159,14 +168,14 @@ Die Anzahl von Regeln, die für ein freigegebenes Produkt erstellt werden, sind 
 
 Wenn das Regelsystem für Standardauftragseinstellungen zu lästig ist, dann gibt es die Option, Standardauftragseinstellungen für jede Produktvariante zu definieren. Im folgenden Beispiel wird gezeigt, wie dies für das Produkt und die oben beschriebenen Fälle aussieht.
 
-| Rang | Standort | Variante | Formatvorlage | Einkauf – Standardeinstellungen überschreiben | Lieferzeit Einkauf | Einkauf – Angehalten | Vertrieb – Standardeinstellungen überschreiben | Vertrieb – Angehalten |
+| Rang | Standort | Variante | Version | Einkauf – Standardeinstellungen überschreiben | Lieferzeit Einkauf | Einkauf – Angehalten | Vertrieb – Standardeinstellungen überschreiben | Vertrieb – Angehalten |
 |------|------|---------------|-------|--------------------------------------|--------------------|--------------------|-----------------------------------|-----------------|
-| 10   |      | C2            | R3    | Ja                                  | 5                  |                    |                                   |                 |
-| 10   |      | C2            | R2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
-| 10   |      | C2            | R1    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
-| 10   |      | C1            | R3    | Ja                                  | 2                  |                    |                                   |                 |
-| 10   |      | C1            | R2    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
-| 10   |      | C1            | R1    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
+| 10   |      | C2            | V3    | Ja                                  | 5                  |                    |                                   |                 |
+| 10   |      | C2            | V2    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
+| 10   |      | C2            | V1    | Ja                                  | 5                  | Ja                | Ja                               | Ja             |
+| 10   |      | C1            | V3    | Ja                                  | 2                  |                    |                                   |                 |
+| 10   |      | C1            | V2    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
+| 10   |      | C1            | V1    | Ja                                  | 2                  | Ja                | Ja                               | Ja             |
 | 0    |      |               |       |                                      | 5                  |                    |                                   |                 |
 
 In diesem Fall ist der Rang tatsächlich unerheblich, sodass Sie ihn ausblenden können. Diese Lösung führt möglicherweise zu einem Wartungsproblem. Möglicherweise empfiehlt es sich jedoch, diese Einstellung zu verwenden, wenn Sie in Erwägung ziehen, eine Integration mit Product-Lifecycle-Management-Systemen (PLM-Systemen) vorzunehmen.

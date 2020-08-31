@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59a2d9712a73c607cf5521f8e79e8e2558854fc4
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3274210"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686694"
 ---
 # <a name="add-a-privacy-policy-page"></a>Hinzufügen einer Datenschutzrichtlinienseite
 
@@ -88,9 +88,9 @@ Sie können einem Fragment den Link zu einer Datenschutzrichtlinienseite hinzuf�
 
 Gehen Sie folgendermaßen vor, um einem Fußzeilenfragment einen Link hinzuzufügen.
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus, um das Seitenfragment zu erstellen.
-1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Fußzeile**.
-1. Unter **Name des Seitenfragments** geben Sie einen Namen für das Fragment ein und wählen Sie dann **OK**.
+1. Wechseln Sie zu **Fragmente** und wählen Sie dann **Neu** aus, um ein Seitenfragment zu erstellen.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Fußzeile** aus.
+1. Geben Sie unter **Name des Seitenfragments** einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
 1. Fügen Sie dem Slot **Fußzeilenkategorie** das Modul **Fußzeilenelement** hinzu.
 1. Wählen Sie im Eigenschaftenbereich rechts **Linktext** aus.
 1. Geben Sie im Dialogfeld **Linktext** den Linktext und das Linkziel der Datenschutzrichtlinienseite ein, und klicken Sie dann auf **OK**.

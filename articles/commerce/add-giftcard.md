@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a8428963e105e422dcd048863c17df0926a409ac
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 41f808d671bf5e7425390484ea30470e044899d8
+ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411111"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "3661241"
 ---
 # <a name="gift-card-module"></a>Geschenkkartenmodul
 
@@ -63,8 +63,18 @@ Anweisungen zum Hinzufügen eines Geschenkkartenmoduls zu einer Checkout-Seite u
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Starterkit-Übersicht](starter-kit-overview.md)
+[Einkaufswagenmodul](add-cart-module.md)
+
+[Modul für Einkaufswagensymbol](cart-icon-module.md)
 
 [Auschecken-Modul](add-checkout-module.md)
+
+[Zahlungsmodul](payment-module.md)
+
+[Versandadressmodul](ship-address-module.md)
+
+[Lieferoptionsmodul](delivery-options-module.md)
+
+[Auftragsdetailmodul](order-confirmation-module.md)
 
 [Unterstützung für externe Geschenkgutscheine](./dev-itpro/gift-card.md)

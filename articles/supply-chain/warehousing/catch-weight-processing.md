@@ -3,7 +3,7 @@ title: Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 description: In diesem Thema wird beschrieben, wie Arbeitsvorlagen und Lagerplatzrichtlinien verwendet werden, um festzustellen, wie und wo Arbeit am Lagerort ausgeführt wird.
 author: perlynne
 manager: tfehr
-ms.date: 03/03/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: c6598a9ac2beb799ddfc4e3cce182e1281ae8d03
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
+ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530534"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3693278"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -168,7 +168,7 @@ Nicht alle Workflows unterstützen die Artikelgewichtsproduktverarbeitung mit La
 
 - Die Funktionen zur Clusterkommissionierung werden nicht für Artikelgewichtsprodukte unterstützt.
 - Entnahme- und Verpackungs-Lagerortverarbeitungen werden für Artikelgewichtsprodukte nicht unterstützt.
-- Für Artikelgewichtsprodukte kann Arbeit, die in einer Arbeitsvorlage definiert ist, automatisch ausgeführt werden.
+- Für Artikelgewichtsprodukte kann Arbeit, die in einer Arbeitsvorlage definiert ist, nicht automatisch ausgeführt werden.
 - Für Artikelgewichtsprodukte unterstützt das System keine manuelle Verpackungsstationsverarbeitung, bei der Entnahmearbeit bei gepackten Containern nach dem Schließen von Containern erstellt wird.
 - Die Funktionen zum stückweisen Scannen werden nicht für Artikelgewichtsprodukte unterstützt.
 
