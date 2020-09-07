@@ -156,13 +156,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/finance/toc.json
                 - name: Rasterfunktionen
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
-                - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+                - name: Benutzerdefinierte Felder erstellen und damit arbeiten
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: PowerApps-Apps einbetten
+                - name: Microsoft Power Apps einbetten
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Informationen per Suchen finden
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
-                - name: Ändern des Datums für eine Sitzung
+                - name: Datum für eine Sitzung ändern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/finance/toc.json
                 - name: Die bevorzugte Zeitzone eines Benutzers festlegen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/finance/toc.json
@@ -2076,6 +2076,8 @@
                   href: localizations/emea-ita-exil-protest-boe.md
                 - name: Steuerlicher Höchstbetrag
                   href: localizations/emea-ita-exil-tax-plafond.md
+                - name: Elektronische Rechnungen für Kunden
+                  href: localizations/emea-ita-e-invoices.md
             - name: Japan
               items:
                 - name: Japan – Übersicht
@@ -2890,13 +2892,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Zugang zu Informationen und Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: Personalisierungsoptionen mit PowerBI.com
+            - name: Personalisierungsoptionen mit Power BI
               items:
-                - name: Bei Integration mit PowerBI.com verfügbare Funktionen
+                - name: Bei Power BI-Integration verfügbare Funktionen
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
-                - name: Inhalte von PowerBI.com anheften
+                - name: Power BI-Inhalt anheften
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Analytische Arbeitsbereiche von PowerBI.com auswählen
+                - name: Analytische Arbeitsbereiche aus Power BI auswählen
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/finance/toc.json
             - name: Power BI-Inhalt
               items:
@@ -2904,7 +2906,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Istwert und Budgetwert
                   href: ../fin-ops-core/dev-itpro/analytics/ledger-budgets-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Vorteile
+                - name: Vergütungen
                   href: ../fin-ops-core/dev-itpro/analytics/benefits-power-bi.md?toc=/dynamics365/finance/toc.json
                 - name: "Power BI-Inhalt\_– Bargeldübersicht"
                   href: cash-bank-management/Cash-Overview-Power-BI-content.md
@@ -2936,7 +2938,7 @@
                   href: fixed-assets/Fixed-asset-management-workspace.md
                 - name: Weiterbildung
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/finance/toc.json
-                - name: Organisationsschulungen
+                - name: Unternehmensschulungen
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Übungsleiter
                   href: ../fin-ops-core/dev-itpro/analytics/practice-manager-power-bi.md?toc=/dynamics365/finance/toc.json
@@ -2992,7 +2994,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/finance/toc.json
                 - name: Probleme nach der Entitätsspeicherverwaltung lösen
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: PowerBI.com-Integration konfigurieren
+                - name: Power BI-Integration konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/finance/toc.json
                 - name: Eigene Datenbanken nutzen
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/finance/toc.json
@@ -3170,6 +3172,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/finance/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/finance/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/finance/toc.json
                     - name: Mathematisch
                       items:
                         - name: Mathematische Funktionen

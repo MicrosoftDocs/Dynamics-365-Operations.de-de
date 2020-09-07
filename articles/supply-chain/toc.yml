@@ -156,13 +156,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Rasterfunktionen
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+                - name: Benutzerdefinierte Felder erstellen und damit arbeiten
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: PowerApps-Apps einbetten
+                - name: Microsoft Power Apps einbetten
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Informationen per Suchen finden
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ändern des Datums für eine Sitzung
+                - name: Datum für eine Sitzung ändern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Die bevorzugte Zeitzone eines Benutzers festlegen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
@@ -633,13 +633,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/supply-chain/toc.json
             - name: Zugang zu Informationen und Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Personalisierungsoptionen mit PowerBI.com
+            - name: Personalisierungsoptionen mit Power BI
               items:
-                - name: Bei Integration mit PowerBI.com verfügbare Funktionen
+                - name: Bei Power BI-Integration verfügbare Funktionen
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Inhalte von PowerBI.com anheften
+                - name: Power BI-Inhalt anheften
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Analytische Arbeitsbereiche von PowerBI.com auswählen
+                - name: Analytische Arbeitsbereiche aus Power BI auswählen
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Power BI-Inhalt
               items:
@@ -649,7 +649,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Weiterbildung
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Organisationsschulungen
+                - name: Unternehmensschulungen
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Produktionsleistung
                   href: ../fin-ops-core/dev-itpro/analytics/production-performance-power-bi.md?toc=/dynamics365/supply-chain/toc.json
@@ -1827,18 +1827,28 @@
                       href: pim/tasks/obsolete-product-variants.md
                     - name: Produkte aus der Masterplanung ausschließen
                       href: pim/tasks/exclude-products-master-planning.md
-                - name: Gruppe für doppelte Verwendung
-                  href: pim/dual-use.md
-                - name: Ursprungsland
-                  href: pim/country-of-origin.md
                 - name: Strichcode für ein Produkt erstellen
                   href: pim/tasks/create-bar-code-product.md
                 - name: GTIN-Code für ein Produkt eingeben
                   href: pim/tasks/enter-gtin-code-product.md
-                - name: Chargenattribute für ein Produkt erstellen
+                - name: Stapelverarbeitungsattribute für ein Produkt erstellen
                   href: pim/tasks/create-batch-attributes-product.md
                 - name: Ein Bild zu einem Produkt hinzufügen
                   href: pim/tasks/add-image-product.md
+                - name: Ursprungsland
+                  href: pim/country-of-origin.md
+                - name: Waren zur doppelten Verwendung
+                  href: pim/dual-use.md
+                - name: Gefahrgüter
+                  items:
+                    - name: Übersicht über Gefahrgüter
+                      href: pim/hazmat-overview.md
+                    - name: Gefahrgüter einrichten
+                      href: pim/hazmat-setup.md
+                    - name: 'Gefahrgüter in Produkten, Bestellungen, Sendungen und Ladungen'
+                      href: pim/hazmat-items.md
+                    - name: Anfragen und Berichte zu Gefahrgütern
+                      href: pim/hazmat-reports.md
                 - name: Übersetzung der Produktinformationen – FAQ
                   href: pim/translations-product-related-information.md
                 - name: Bei Auftragserfassung nach Produkt suchen
