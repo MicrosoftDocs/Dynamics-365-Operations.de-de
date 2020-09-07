@@ -1,9 +1,9 @@
 ---
-title: Auftragserstellung per Einzelzulauf für Einzelhandelsgeschäftbuchungen
+title: Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
 description: Dieses Thema beschreibt die Auftragserstellung per Einzelzulauf für Geschäftbuchungen in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 10/14/2019
+ms.date: 06/08/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,20 +18,20 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d5812893edff24a60a0e2eb3607701ac47a8a78
-ms.sourcegitcommit: 12b9d6f2dd24e52e46487748c848864909af6967
+ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "3057154"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710282"
 ---
-# <a name="trickle-feed-based-order-creation-for-retail-store-transactions-public-preview"></a>Auftragserstellung per Einzelzulauf für Einzelhandelsgeschäftbuchungen (Öffentliche Vorschau)
+# <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
 
 [!include [banner](includes/banner.md)]
 
 In den Versionen Dynamics 365 Retail 10.0.4 und früher ist die Buchung der Aufstellungen ein Vorgang, der am Tagesende durchgeführt wird. Alle Transaktionen werden am Ende des Tages in den Büchern gebucht. Große Transaktionen müssen dann in einem begrenzten Zeitfenster verarbeitet werden, was manchmal zu Lade- und Sperrproblemen und Fehlern bei der Buchung von Aufstellungen führt. Einzelhändler können so außerdem nicht den ganzen Tag über Einnahmen und Zahlungen in ihren Büchern erfassen.
 
-Mit der in Retail-Version 10.0.5 eingeführten öffentlichen Vorschau für die Generierung von Bestellungen auf Basis von Einzelzuläufen (Trickle-Feeds) werden Transaktionen den ganzen Tag über bearbeitet. Am Ende des Tages wird nur eine Abstimmung für die Zahlungsmittel und andere Kassenbuchführungstransaktionen durchgeführt. Diese Funktionalität verteilt den Aufwand für die Erstellung von Aufträgen, Rechnungen und Zahlungen auf den gesamten Tag und sorgt so für eine bessere Leistung und die Möglichkeit, Umsätze und Zahlungen in den Büchern nahezu in Echtzeit zu verbuchen. 
+Mit der in Retail-Version 10.0.5 eingeführten Auftragserstellung per Einzelzulauf werden Transaktionen den ganzen Tag über bearbeitet. Am Ende des Tages werden nur eine Abstimmung der Zahlungsmittel und andere Bargeldverwaltungstransaktionen durchgeführt. Diese Funktionalität verteilt den Aufwand für die Erstellung von Aufträgen, Rechnungen und Zahlungen auf den gesamten Tag und sorgt so für eine bessere Leistung und die Möglichkeit, Umsätze und Zahlungen in den Büchern nahezu in Echtzeit zu verbuchen. 
 
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>So arbeiten Sie mit der Einzelzulaufbuchung

@@ -130,6 +130,8 @@
                       items:
                         - name: Duales Schreiben – Startseite
                           href: data-entities/dual-write/dual-write-home-page.md
+                        - name: Neuerungen oder Änderungen beim dualen Schreiben
+                          href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Duales Schreiben – Übersicht
                           href: data-entities/dual-write/dual-write-overview.md
                         - name: "Duales Schreiben\_– Einrichtung"
@@ -296,7 +298,7 @@
               href: data-entities/data-entities-data-packages.md
             - name: Datenentitäten
               items:
-                - name: Datenentitäten – Übersicht
+                - name: Übersicht über Datenentitäten
                   href: data-entities/data-entities.md
                 - name: Konfigurationsdatenprojekte
                   href: data-entities/configuration-data-projects.md
@@ -354,7 +356,7 @@
                   href: data-entities/security-data-entities.md
                 - name: Verwenden von Drittanbieter-Hilfsprogrammen bei Dienstleistungstests
                   href: data-entities/third-party-service-test.md
-                - name: Erstellen schreibgeschützter Entitäten zur Offenlegung von Finanzdimensionen
+                - name: Schreibgeschützte Entitäten zur Offenlegung von Finanzdimensionen erstellen
                   href: financial/read-only-entity-financial.md
             - name: Eigene Datenbanken nutzen
               href: analytics/export-entities-to-your-own-database.md
@@ -1472,11 +1474,13 @@
                   href: sysadmin/extensible-data-security-policies.md
                 - name: Sicherheitsrichtlinie erstellen
                   href: sysadmin/create-simple-security-policy.md
+            - name: Benutzerlizenzanforderungen einhalten
+              href: sysadmin/stay-compliant-user-license-requirement.md
             - name: Prozessautomatisierung
               href: sysadmin/process-automation.md
             - name: Batchverarbeitung
               items:
-                - name: Batchverarbeitung – Übersicht
+                - name: Übersicht über die Batchverarbeitung
                   href: sysadmin/batch-processing-overview.md
                 - name: Batchverarbeitung und Batchverarbeitungsserver
                   href: sysadmin/batch-server-overview.md
