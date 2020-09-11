@@ -3,7 +3,7 @@ title: Kalender und Produktprogrammplanung
 description: Dieses Thema gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.
 author: t-benebo
 manager: tfehr
-ms.date: 05/08/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,18 +17,18 @@ ms.search.industry: Manufacturing
 ms.author: t-benebo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d542c52623c1b3c0aa4b23159d56791cdc981f48
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 373af2e7bdcbf6860f21e049403fdf174d5e8ca7
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213491"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710332"
 ---
 # <a name="calendars-and-master-planning"></a>Kalender und Produktprogrammplanung
 
 [!include [banner](../includes/banner.md)]
 
-Dieses Thema gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.  Die verschiedenen Kalender, die in der Masterplanungs-Engine verwendet werden, werden erläutert, einschließlich ihrer Auswirkungen auf die Versand- und Annahmedaten in den Planaufträgen. Abschließend werden Empfehlungen zur Zuordnung, Verwendung und Aktualisierung der Kalender gegeben.
+Dieses Thema gibt einen Überblick über die Kalender der Lieferkette und deren Auswirkungen auf die Masterplanung.  Die verschiedenen Kalender, die im Produktprogrammpan-Modul verwendet werden, werden erläutert, einschließlich ihrer Auswirkungen auf die Versand- und Zugangsdatumsangaben in den Planaufträgen. Abschließend werden Empfehlungen zur Zuordnung, Verwendung und Aktualisierung der Kalender gegeben.
 
 ## <a name="definition-of-a-calendar"></a>Definition eines Kalenders
 
@@ -105,28 +105,28 @@ Das Bestelldatum in einer geplante Einkaufsbestellung gibt das Datum an, an dem 
 
 ### <a name="delivery-date-of-a-planned-purchase-order"></a>Lieferdatum einer geplante Einkaufsbestellung
 Das Eingangsdatum eines Kaufs gibt das Datum an, an dem Sie die Ware erhalten. Es wird ein offenes Datum im Kalender sein. Die Kalender werden wie folgt berücksichtigt (in der Reihenfolge von höchster bis niedrigster Priorität): 
-    1. Kalender des Lieferanten
-    2. Kalender der Deckungsgruppe
-    3. Lagerkalender für das empfangende Lager
+1. Kalender des Lieferanten
+1. Kalender der Deckungsgruppe
+1. Lagerkalender für das empfangende Lager
 
 Beachten Sie, dass der Kalender der Deckungsgruppe auf verschiedenen Seiten eingestellt werden kann und in der folgenden Reihenfolge Priorität hat:
-    1. Artikeldeckungsgruppe auf der Seite **Details für freigegebene Produkte verwalten**
-    2. Artikel-Deckungsgruppe auf der Seite **Artikel-Deckung**
-    3. Standardartikeldeckungsgruppe in den **Masterplanungsparametern**
+1. Artikel-Deckungsgruppe auf der Seite **Artikel-Deckung**
+1. Artikeldeckungsgruppe auf der Seite **Details für freigegebene Produkte verwalten**
+1. Standardartikeldeckungsgruppe in den **Masterplanungsparametern**
 
 ### <a name="shipping-date-of-a-planned-transfer-order"></a>Lieferdatum eines geplanten Transportauftrags
 Bei der Erstellung eines Transportauftrags zwischen zwei Lagern werden das Versanddatum und das Eingangsdatum sowie das Lager "von" und das Lager "bis" im Kopf des Transportauftrags berücksichtigt. Die Differenz zwischen diesen beiden Daten ist die erwartete Transportzeit (in Tagen) zwischen den Lagern.
 
 Das Versanddatum eines geplanten Transportauftrags gibt das Datum an, an dem die Ware aus dem Lager "Von" versandt wird. Die Kalender, die zur Angabe des verfügbaren Versanddatums verwendet werden, sind nach Priorität geordnet: 
-    1. Lagerkalender des "Von"-Lagers
-    2. Deckungsgruppenkalender (siehe Fallback-Auftrag für diesen Kalender oben) Wenn ein Lagerkalender eingestellt ist, ist das Versanddatum ein offenes Datum im Kalender. Wenn es keinen Lagerkalender gibt, wird der Kalender der Deckungsgruppe verwendet. 
+1. Lagerkalender des "Von"-Lagers
+1. Deckungsgruppenkalender (siehe Fallback-Auftrag für diesen Kalender oben) Wenn ein Lagerkalender eingestellt ist, ist das Versanddatum ein offenes Datum im Kalender. Wenn es keinen Lagerkalender gibt, wird der Kalender der Deckungsgruppe verwendet. 
 
 ### <a name="receipt-date-of-a-planned-transfer-order"></a>Zugangsdatum eines geplanten Transportauftrags
 Das Zugangsdatum für einen Transportauftrag gibt das Datum an, an dem die Ware im Lager "Nach" eingetroffen ist.
 
 Die Kalender, die für die Angabe des Zugangsdatums verwendet werden, sind die nach Priorität geordneten Kalender: 
-    1. Kalender der Deckungsgruppe 
-    2. Lagerkalender des "Nach"-Lagers Wenn ein Abdeckungskalender eingestellt ist, ist das Zugangsdatum ein offenes Datum im Kalender. Wenn kein Deckungsgruppen-Kalender gesetzt ist, wird der Lagerkalender verwendet. 
+1. Kalender der Deckungsgruppe 
+1. Lagerkalender des "Nach"-Lagers Wenn ein Abdeckungskalender eingestellt ist, ist das Zugangsdatum ein offenes Datum im Kalender. Wenn kein Deckungsgruppen-Kalender gesetzt ist, wird der Lagerkalender verwendet. 
 
 Bei der Ermittlung der Versand- und Empfangsdaten für den geplanten Transfer werden auch die vom Benutzer festgelegten Margen für Versand und Empfang berücksichtigt. 
 

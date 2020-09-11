@@ -3,7 +3,7 @@ title: Verwalten Sie Kauf- und Verkaufsurlaubsrichtlinien
 description: Sie können Mitarbeitern ermöglichen, Urlaub zu kaufen und zu verkaufen in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,24 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 859445f2b6e980b5960e512e69129f6a8fc6df2b
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429012"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712110"
 ---
-# <a name="manage-buy-and-sell-leave-policies"></a>Verwalten Sie Kauf- und Verkaufsurlaubsrichtlinien
+# <a name="manage-buy-and-sell-leave-policies"></a>Kauf- und Verkaufsurlaubsrichtlinien verwalten
 
-[!include [banner](includes/preview-feature.md)]
-
-Sie können Mitarbeitern den Kauf von Urlaub ermöglichen, indem Sie eine Richtlinie für den Kauf von Urlaub erstellen.  
+Sie können Mitarbeitern den Kauf und Verkauf von Urlaub ermöglichen, indem Sie eine Richtlinie für den Kauf und Verkauf von Urlaub erstellen. Sie können diese Richtlinien so konfigurieren, dass sie den Workflow für Genehmigungen verwenden, maximale Beträge und Preise festlegen und Preise für Kauf und Verkauf festlegen. 
 
 ## <a name="enable-employees-to-buy-and-sell-leave"></a>Sie können Mitarbeitern ermöglichen, Urlaub zu kaufen und zu verkaufen in
 
-1. Auf der **Urlaubs- und Abwesenheitsparameter** Seite wählen Sie **Ja**, um **Mitarbeitern zu erlauben, Urlaub zu kaufen**. 
+1. Auf der Seite **Urlaubs- und Abwesenheitsparameter** wählen Sie **Ja** für **Mitarbeitern erlauben, Urlaub zu kaufen** und **Mitarbeitern erlauben, Urlaub zu verkaufen**.
 
-## <a name="create-a-buy-leave-policy"></a>Erstellen einer Richtlinie für den Kuaf von Urlaub
+## <a name="create-a-buy-and-sell-leave-policy"></a>Eine Richtlinie zum Kaufen und Verkaufen von Urlaub erstellen
 
 1. Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**. 
 
@@ -51,19 +49,23 @@ Sie können Mitarbeitern den Kauf von Urlaub ermöglichen, indem Sie eine Richtl
 
 6. Wählen Sie ein **Startdatum** und ein **Enddatum** für die Richtlinie aus. Anträge auf Kauf oder Verkauf von Urlaub können nur in diesem Zeitraum eingereicht werden. 
 
-7. Unter **Kaufrichtlinie**, wählen **Vollzeitäquivalenz** (FTE) aus, um den Höchstbetrag basierend auf dem auf der Position des Mitarbeiters definierten FTE aufzuteilen. Wenn der Richtlinientyp **Menge** ist, geben Sie einen **Maximalen festen Betrag** ein. 
+7. Wählen Sie eine **Workflow-ID** für die Richtlinie. Bei sämtlichen Kauf- und Verkaufsanforderungen wird dieser Workflow zur Überprüfung und Genehmigung verwendet. 
 
-8. Wählen Sie **Hinzufügen**, um die Urlaubsarten für Mitarbeiter hinzuzufügen, um Urlaub zu kaufen. Sie können der Richtlinie mehrere Urlaubstypen hinzufügen. 
+8. Unter **Kaufrichtlinie**, wählen **Vollzeitäquivalenz** (FTE) aus, um den Höchstbetrag basierend auf dem auf der Position des Mitarbeiters definierten FTE aufzuteilen. Wenn der Richtlinientyp **Menge** ist, geben Sie einen **Maximalen festen Betrag** ein. 
 
-9. Geben Sie die **Dienstmonate** für die Urlaubsart ein, damit verschiedene Dienstmonate den Höchstbetrag bestimmen können, den ein Mitarbeiter kaufen kann. 
+9. Wählen Sie **Hinzufügen**, um die Urlaubsarten für Mitarbeiter hinzuzufügen, um Urlaub zu kaufen. Sie können der Richtlinie mehrere Urlaubstypen hinzufügen. 
 
-10. Dient zum Eingeben des **Maximalen Betrags** für den Urlaubstyp. 
+10. Geben Sie die **Dienstmonate** für die Urlaubsart ein, damit verschiedene Dienstmonate den Höchstbetrag bestimmen können, den ein Mitarbeiter kaufen kann. 
 
-11. Geben Sie die **Rate** ein, zu der der Arbeitnehmer den Urlaub kauft. 
+11. Dient zum Eingeben des **Maximalen Betrags** für den Urlaubstyp. 
 
-12. Optional geben Sie den **Verdienstcode** ein, der für den Kauf von Urlaub verwendet werden soll. 
+12. Geben Sie die **Rate** ein, zu der der Arbeitnehmer den Urlaub kauft. 
 
-13. Legen Sie optional fest, ob FTE verwendet werden soll, um den Höchstbetrag für die Urlaubsart zu bestimmen. 
+13. Optional geben Sie den **Verdienstcode** ein, der für den Kauf von Urlaub verwendet werden soll. 
+
+14. Legen Sie optional fest, ob FTE verwendet werden soll, um den Höchstbetrag für die Urlaubsart zu bestimmen. 
+
+15. Befolgen Sie die Schritte 8 bis 14 unter **Verkaufsrichtlinie**, um eine Verkaufsrichtlinie zu erstellen. 
 
 ## <a name="add-the-buy-and-sell-leave-policy-to-a-leave-and-absence-plan"></a>Fügen Sie die Kauf- und Verkaufsurlaubsrichtlinie einem Urlaubs- und Abwesenheitsplan hinzu
 

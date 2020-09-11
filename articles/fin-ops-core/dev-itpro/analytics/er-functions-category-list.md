@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcf1b755959c7ae25928e3f44e988f800027786a
-ms.sourcegitcommit: fb8ad8e2b142441a6530b364f3258bbcc0c724d2
+ms.openlocfilehash: 6e51d9a1d68c48391a223fe48f396c63c206580e
+ms.sourcegitcommit: 41e165482b9bff4175c0e3b224dbeead13461956
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201042"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3687957"
 ---
 # <a name="list-of-er-functions-in-the-list-category"></a>Liste der EB-Funktionen in der Listenkategorie
 
@@ -46,6 +46,7 @@ Mithilfe der Listenfunktionen für die elektronische Berichterstellung (EB) kön
 | [Index](er-functions-list-index.md)                       | Diese Funktion gibt den Wert *Container (Datensatz)* zurück, der unter Verwendung des angegebenen numerischen Index in der angegebenen Liste ausgewählt wird. Diese Funktion löst eine Ausnahme aus, wenn der Index außerhalb des Bereichs der Datensätze in der angegebenen Liste liegt. |
 | [IsEmpty](er-functions-list-isempty.md)                   | Diese Funktion gibt den *booleschen* Wert **TRUE** zurück, wenn die angegebene Liste keine Datensätze enthält. Andernfalls gibt sie den *booleschen* Wert **FALSE** zurück. |
 | [Liste](er-functions-list-list.md)                         | Diese Funktion gibt den Wert *Datensatzliste* zurück, der aus einer neuen Liste besteht, die anhand der angegebenen Argumente erstellt wird.|
+| [ListDistinct](er-functions-list-listdistinct.md)         | Diese Funktion berechnet den angegebenen Ausdruck als Selektor für jeden Datensatz der angegebenen Liste. Es wird ein neuer Wert *Datensatzliste*, der einen einzelnen Datensatz für jeden eindeutigen Auswahlwert enthält.|
 | [ListJoin](er-functions-list-listjoin.md)                 | Diese Funktion gibt den Wert *Datensatzliste* zurück, der eine Liste darstellt, die anhand der angegebenen Argumente erstellt wird.|
 | [ListOfFields](er-functions-list-listoffields.md)         | Diese Funktion gibt den Wert *Datensatzliste* zurück, der basierend auf der Struktur des angegebenen Arguments des Typs *Aufzählung* oder *Container (Datensatz)* erstellt wird. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | Diese Funktion gibt den Wert *Datensatz* zurück, der nur aus dem ersten Datensatz der angegebenen Liste besteht.|

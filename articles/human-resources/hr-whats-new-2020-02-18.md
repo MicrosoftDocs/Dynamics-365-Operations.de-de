@@ -1,6 +1,6 @@
 ---
 title: Neuerungen oder Änderungen in Dynamics 365 Human Resources (18. Februar 2020)
-description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources neu oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 18. Februar 2020 neu sind oder geändert wurden.
 author: Darinkramer
 manager: AnnBe
 ms.date: 02/18/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 60b46f5bd8f5eeae8aedc9bf81f1e7892caa0c93
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: 5e9e1f05de682b4fe29ec23f06099b2968ebe3df
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555338"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711987"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Human Resources (18. Februar 2020)
 

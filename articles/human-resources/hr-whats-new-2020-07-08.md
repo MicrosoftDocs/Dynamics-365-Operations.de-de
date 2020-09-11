@@ -1,6 +1,6 @@
 ---
 title: Neuerungen und Änderungen in Dynamics 365 Human Resources (08. Juli 2020)
-description: In diesem Thema werden die Funktionen beschrieben, die in Microsoft Dynamics 365 Human Resources entweder neu oder geändert sind.
+description: Dieses Thema beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 8. Juli 2020 neu sind oder geändert wurden.
 author: Darinkramer
 manager: AnnBe
 ms.date: 07/08/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c4382aa7473e2b67201ac00753ac9abe11b3c646
-ms.sourcegitcommit: 81296c49be9953aa01e15527c34d0ef13b4622a9
+ms.openlocfilehash: d2f542195693e825391b85efc4a7e91fdfea3944
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3614361"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711891"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Neuerungen und Änderungen in Dynamics 365 Human Resources (8. Juli 2020)
 
@@ -105,7 +105,7 @@ Einige Organisationen bieten eine Leistung, mit dem Mitarbeiter ihren Urlaub kau
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Hinterlassen Sie die Rückstellung für ein einzelnes Unternehmen oder einen einzelnen Plan
 
-Kunden können Rückstellungen für ein einzelnes Unternehmen oder einen einzelnen Urlaubs- und Abwesenheitsplan bearbeiten. Diese Fähigkeit bietet Kunden mit unterschiedlichen Urlaubsjahren oder Urlaubsfälligkeitsrichtlinien Klarheit für den Fälligkeitsprozess. Weitere Informationen finden Sie unter [Urlaub pro Unternehmen oder pro Urlaubsplan](hr-leave-and-absence-accrue.md#accrue-leave-per-company-or-per-leave-plan).
+Kunden können Rückstellungen für ein einzelnes Unternehmen oder einen einzelnen Urlaubs- und Abwesenheitsplan bearbeiten. Diese Fähigkeit bietet Kunden mit unterschiedlichen Urlaubsjahren oder Urlaubsfälligkeitsrichtlinien Klarheit für den Fälligkeitsprozess. Weitere Informationen finden Sie unter [Urlaub pro Unternehmen oder pro Urlaubsplan](hr-leave-and-absence-accrue.md).
 
 ## <a name="add-attachments-to-time-off-requests"></a>Anhänge zu Abwesenheitsfragen hinzufügen
 

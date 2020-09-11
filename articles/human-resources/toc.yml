@@ -1,10 +1,12 @@
 - name: Dynamics 365 Human Resources
   href: hr-welcome.md
   items:
-    - name: Neuigkeiten
+    - name: Neuerungen
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: "20.\_August\_2020"
+          href: hr-whats-new-2020-08-20.md
         - name: "6.\_August\_2020"
           href: hr-whats-new-2020-08-06.md
         - name: "23.\_Juli\_2020"
@@ -78,13 +80,91 @@
             - name: In Office integrieren
               items:
                 - name: Lernprogramm zur Office-Integration
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Entitätsdaten in Excel aktualisieren
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
                 - name: Möglichkeit „In Excel öffnen“ schaffen
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
                 - name: Problembehandlung bei der Office-Integration
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+        - name: Datenverwaltung konfigurieren
+          items:
+            - name: Übersicht über das Datenverwaltungs-Framework
+              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Datenentitäten
+              items:
+                - name: Übersicht über Datenentitäten
+                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatenprojekte
+                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kopieren von Konfigurationsdaten zwischen Unternehmen oder juristischen Personen
+                  items:
+                    - name: Kopieren von Konfigurationsdaten – Übersicht
+                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatenpakete
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                    - name: Konfigurationsdatenpakete (nur Version vom Juli 2017)
+                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatenvorlagen
+                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                - name: Änderungen an einer Entität nachverfolgen
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Informationen zu Standarddatenentitäten suchen
+                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                - name: Datenvorlagen mit mehreren Arbeitsblättern
+                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                - name: Aktivieren der Nachverfolgung von Änderungen an Entitäten
+                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsschlüssel und Datenentitäten
+                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurationsdatenpakete
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Einzelvorgänge für Datenimport und ‑export
+              items:
+                - name: Einzelvorgänge für Datenimport und ‑export – Übersicht
+                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                - name: Bewährte Vorgehensweisen beim Import von Belegen mithilfe der Entität der allgemeinen Erfassung
+                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+            - name: Entwicklung für Datenentitäten
+              items:
+                - name: Gestaltungsprinzipien und optimale Verfahren für Datenentitäten
+                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                - name: Erstellen neuer Datenentitäten
+                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Datenentitätseigenschaften
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Erstellen von Berechnungsspalten und virtuellen Feldern
+                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Unternehmensübergreifendes Verhalten
+                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                - name: Arbeit mit Länder-/Regionscodes
+                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                - name: Vererbungsmuster
+                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                - name: Regeln des Datenentitäts-Assistenten
+                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                - name: Metadateneigenschaften
+                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: 'Überprüfungen, Standards und nicht zugeordnete Felder'
+                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sicherheit und Datenentitäten
+                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                - name: Verwenden von Drittanbieter-Hilfsprogrammen bei Dienstleistungstests
+                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                - name: Schreibgeschützte Entitäten zur Offenlegung von Finanzdimensionen erstellen
+                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+            - name: Eigene Datenbanken nutzen
+              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+            - name: BYOD-Batchaufträge optimieren
+              href: hr-admin-integration-byod-batch-jobs.md
+            - name: Automatisierte Entitätsspeicheraktualisierungen
+              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+            - name: Datenaufgabenautomatisierung
+              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeitsbereich der Prüfliste zur Datenüberprüfung
+              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+            - name: Beschreibungen von Datenverwaltungsfehlern
+              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
         - name: Funktionen verwalten
           href: hr-admin-manage-features.md
         - name: Datenbankprotokollierung konfigurieren und verwalten
@@ -117,13 +197,13 @@
               href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json
             - name: Gespeicherte Ansichten
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
-            - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+            - name: Benutzerdefinierte Felder erstellen und damit arbeiten
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
             - name: PowerApps-Apps einbetten
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Informationen per Suchen finden
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
-            - name: Ändern des Datums für eine Sitzung
+            - name: Datum für eine Sitzung ändern
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
             - name: Die bevorzugte Zeitzone eines Benutzers festlegen
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json
@@ -539,6 +619,8 @@
               href: hr-employee-self-service-calendar.md
             - name: Kauf- und Verkaufsurlaubsrichtlinien verwalten
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
+            - name: Workflows zum Kaufen und Verkaufen von Urlaub erstellen
+              href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Urlaub kaufen und verkaufen
               href: hr-employee-self-service-buy-sell-leave.md
         - name: Urlaubsanträge in Teams verwalten

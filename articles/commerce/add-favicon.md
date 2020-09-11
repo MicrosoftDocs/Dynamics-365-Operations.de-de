@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d95e8b799c3b89418657342868e0ec7e94a86f9
-ms.sourcegitcommit: ce79fb570e299a26a644e29da7ceb5a57a1374e6
+ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "3295079"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686789"
 ---
 # <a name="add-a-favicon"></a>Hinzufügen eines Favicons
 
@@ -62,8 +62,8 @@ Um das HTML für das Favicon zu erstellen, verwenden Sie die folgende HTML-Zeich
 
 Um ein Seitenfragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen Sie diesen Schritten.
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie **Neu** aus.
-1. Im Dialogfeld **Neues Seitenfragment** wählen Sie **Metatags** als das das Modul aus, auf dem das Seitenfragment basiert.
+1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** die Option **Metatags** als das Modul aus, auf dem das Seitenfragment basiert.
 1. Geben Sie einen Namen für das Seitenfragment ein, und wählen Sie dann **OK** aus.
 1. Wählen Sie in der Fragmenthierarchiestruktur das untergeordnete Element **Standard-Metatags** aus.
 1. Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben. 
@@ -75,7 +75,7 @@ Um das Metatag-Seitenfragment zum HTML-**Kopf**-Bereich Ihrer Seiten hinzuzufüg
 
 1. Gehen Sie zu **Vorlagen**, öffnen Sie die Vorlage für die Seiten, denen Sie Ihr Favicon hinzufügen möchten, und wählen Sie dann **Bearbeiten** aus.
 1. Wählen Sie in der Vorlagenhierarchiestruktur die Auslassungspunkte (**...**)-Schaltfläche rechts neben dem **HTML-Kopf**-Container aus, und wählen Sie dann **Seitenfragment hinzufügen** aus.
-1. Im Dialogfeld **Seitenfragment auswählen** wählen Sie das Metatag-Seitenfragment aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Seitenfragment auswählen** das Metatag-Seitenfragment aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
 1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um die Vorlage zu veröffentlichen.
 
 > [!NOTE]

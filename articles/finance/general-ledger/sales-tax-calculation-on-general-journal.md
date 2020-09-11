@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: dd1df355d39065d6959915cc916987d3c58b15a6
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.openlocfilehash: 93c9f2bebd038723d50e64bdaa0e0992c003f88d
+ms.sourcegitcommit: cec5de2dcfc7210a86a220e308f80ab204f12383
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570193"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "3665841"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mehrwertsteuerberechnung für allgemeine Erfassungspositionen
 [!include [banner](../includes/banner.md)]
@@ -64,23 +64,6 @@ Das folgende Diagramm veranschaulicht diese Regel grafisch.
 
 Wenn ein Beleg eine Erfassungsposition hat, in der die Kontenart **Kreditor** ausgewählt ist, gilt für alle Erfassungspositionen im Beleg die gleiche Steuerart. Folgende Punkte zeigen die möglichen Steuerarten für Kreditorenkonten. 
 
-•   Wenn der Mehrwertsteuercode Steuerbefreiung ist, ist die Mehrwertsteuerart Steuerfreier Einkauf.
-
-•   Wenn der Mehrwertsteuercode innergemeinschaftliche Mehrwertsteuer ist, ist die Mehrwertsteuerart Vorsteuer.
-
-•   Wenn der Mehrwertsteuercode Verlagerung der Steuerschuld ist, ist die Mehrwertsteuerart Vorsteuer.
-
-
-Andernfalls ist die Mehrwertsteuerart Mehrwertsteuer.
-
-Das folgende Diagramm veranschaulicht diese Regel grafisch.
-
-![Steuerartmöglichkeiten für Kreditorenkonten](media/Sales-Tax-Direction-Vendor.jpg)
-
-### <a name="account-type-is-customer"></a>Kontotyp ist Debitor
-
-Wenn ein Beleg eine Erfassungsposition hat, in der die Kontenart **Debitor** ausgewählt ist, gilt für alle Erfassungspositionen im Beleg die gleiche Steuerart. Folgende Punkte zeigen die möglichen Steuerarten für Debitorenkonten.
-
 •   Wenn der Mehrwertsteuercode Verbrauchssteuer ist, ist auch die Mehrwert-Steuerart Verbrauchssteuer.
 
 •   Wenn der Mehrwertsteuercode Steuerbefreiung ist, ist die Mehrwertsteuerart Steuerfreier Einkauf.
@@ -90,6 +73,22 @@ Wenn ein Beleg eine Erfassungsposition hat, in der die Kontenart **Debitor** aus
 •   Wenn der Mehrwertsteuercode Verlagerung der Steuerschuld ist, ist die Mehrwertsteuerart Mehrwertsteuer.
 
 Andernfalls ist die Mehrwertsteuerart Vorsteuer.
+
+Das folgende Diagramm veranschaulicht diese Regel grafisch.
+
+![Steuerartmöglichkeiten für Kreditorenkonten](media/Sales-Tax-Direction-Vendor.jpg)
+
+### <a name="account-type-is-customer"></a>Kontotyp ist Debitor
+
+Wenn ein Beleg eine Erfassungsposition hat, in der die Kontenart **Debitor** ausgewählt ist, gilt für alle Erfassungspositionen im Beleg die gleiche Steuerart. Folgende Punkte zeigen die möglichen Steuerarten für Debitorenkonten.
+
+•   Wenn der Mehrwertsteuercode Steuerbefreiung ist, ist die Mehrwertsteuerart Steuerfreier Einkauf.
+
+•   Wenn der Mehrwertsteuercode innergemeinschaftliche Mehrwertsteuer ist, ist die Mehrwertsteuerart Vorsteuer.
+
+•   Wenn der Mehrwertsteuercode Verlagerung der Steuerschuld ist, ist die Mehrwertsteuerart Vorsteuer.
+
+Andernfalls ist die Mehrwertsteuerart Mehrwertsteuer.
 
 Das folgende Diagramm veranschaulicht diese Regel grafisch.
 

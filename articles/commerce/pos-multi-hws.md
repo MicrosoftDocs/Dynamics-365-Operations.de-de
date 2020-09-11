@@ -5,7 +5,7 @@ author: rubendel
 manager: AnnBe
 ms.date: 05/20/2020
 ms.topic: article
-ms.prod: tonyafehr
+ms.prod: ''
 ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4035817fb534477eb4146ff712a92d6e29ce2db2
-ms.sourcegitcommit: 4db8c30c2f26af1896938dd3ece3756577374ecb
+ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3416605"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719213"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Spezielle Zahlungsterminals und Eingabeaufforderungen für einen Drucker und eine Kassenschublade
 
@@ -78,8 +78,8 @@ Führen Sie die folgenden Schritte aus, um das dem Register zugewiesene Hardware
 
     | Gerät | Typ | Gerätename | Zusätzliche Details |
     |---|---|---|---|
-    | Drucker | Fallback | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Das **Belegprofil-ID** sollte gleich sein wie das **Belegprofil-ID**, das dem Netzwerkdrucker zugeordnet ist, der in dem Hardwareprofil eingerichtet ist, das der Hardwarestation auf Kanalebene zugewiesen ist. |
-    | Geldlade | Fallback | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
+    | Drucker | Fallback | *Beliebige* | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Das **Belegprofil-ID** sollte gleich sein wie das **Belegprofil-ID**, das dem Netzwerkdrucker zugeordnet ist, der in dem Hardwareprofil eingerichtet ist, das der Hardwarestation auf Kanalebene zugewiesen ist. |
+    | Geldlade | Fallback | *Beliebige* | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
     | Elektronische Überweisung - Dienst | Adyen | Nicht zutreffend | Informationen darüber, wie der Adyen-Zahlungskonnektor für Onlineshops konfiguriert wird, finden Sie unter [Dynamics 365 Zahlungskonnektor für Ayden](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Andere Zahlungsconnectors werden jedoch möglicherweise über das [Commerce Software Development Kit (SDK) für Zahlungen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) unterstützt. |
     | PIN-Feld | Netzwerk | **MicrosoftAdyenDeviceV001** | Keiner. |
 
@@ -103,7 +103,7 @@ Führen Sie die folgenden Schritte aus, um das Hardwareprofil einzurichten, mit 
     | Gerät | Typ | Beschreibung | Zusätzliche Details |
     |---|---|---|---|
     | Drucker | Netzwerk | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Die **Belegprofil-ID** sollte gleich sein wie die **Belegprofil-ID**, die dem Netzwerkdrucker zugeordnet ist, der in dem Hardwareprofil eingerichtet ist, das der Hardwarestation auf Kanalebene zugewiesen ist. |
-    | Geldlade | Fallback | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
+    | Geldlade | Netzwerk | **Epson** oder **Star** | Der Gerätename berücksichtigt Groß-/Kleinschreibung. Legen Sie die Option **Geteilte Schicht verwenden** auf **Ja** fest. |
 
 5. Wählen Sie **Speichern** aus.
 

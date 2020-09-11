@@ -3,7 +3,7 @@ title: Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle
 description: In diesem Thema werden die Optionen beschrieben, die für die Anzeige des verfügbaren Bestands für das Geschäft und die Online-Kanäle zur Verfügung stehen.
 author: hhainesms
 manager: annbe
-ms.date: 05/15/2020
+ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: hhainesms
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 51e6633caa49daeedca685f3323eaf4e14e788a5
-ms.sourcegitcommit: e789b881440f5e789f214eeb0ab088995b182c5d
+ms.openlocfilehash: 6d25a426268ebfb6990eb3dadb1ad451f86f59a1
+ms.sourcegitcommit: 65a8681c46a1d99e7ff712094f472d5612455ff0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "3379235"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "3694921"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Berechnen der Bestandsverfügbarkeit für Einzelhandelskanäle
 
@@ -40,7 +40,7 @@ In diesem Thema werden die Datensynchronisationsprozesse erläutert, die häufig
 
 Sie können die folgenden APIs verwenden, um die Bestandsverfügbarkeit für ein Produkt anzuzeigen, wenn Ihre Kunden auf einer E-Commerce-Website einkaufen.
 
-- **GetEstimatedAvailabilty** - Verwenden Sie diese API, um die Bestandsverfügbarkeit für den Artikel im Lager des E-Commerce-Kanals oder in allen Lagern, die mit der Konfiguration der Erfüllungsgruppe für den E-Commerce-Kanal verknüpft sind, anzuzeigen. Diese API kann auch für Lager in einem bestimmten Suchbereich oder Radius verwendet werden, basierend auf Längen- und Breitengraddaten.
+- **GetEstimatedAvailabilty** – Verwenden Sie diese API, um die Bestandsverfügbarkeit für den Artikel im Lager des E-Commerce-Kanals oder in allen Lagern anzuzeigen, die mit der Konfiguration der Erfüllungsgruppe für den E-Commerce-Kanal verknüpft sind. Diese API kann auch für Lager in einem bestimmten Suchbereich oder Radius verwendet werden, basierend auf Längen- und Breitengraddaten.
 - **GetEstimatedProductWarehouseAvailability** - Verwenden Sie diese API, um den Bestand für einen Artikel aus einem bestimmten Lager anzufordern. Sie können sie beispielsweise verwenden, um die Bestandsverfügbarkeit in Szenarien anzuzeigen, die eine Auftragsabholung beinhalten.
 
 > [!NOTE]
@@ -50,7 +50,7 @@ Beide APIs rufen Daten vom Commerce-Server ab und liefern eine Schätzung des ve
 
 ### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Beginnen Sie mit der berechneten Verfügbarkeit des E-Commerce-Bestands
 
-Bevor Sie die beiden zuvor genannten APIs verwenden, müssen Sie die **Optimierte Berechnung der Produktverfügbarkeit**-Funktion über den **Funktionsverwaltung**-Arbeitsbereich in der Handelszentrale aktivieren.
+Bevor Sie die beiden zuvor genannten APIs verwenden, müssen Sie die Funktion **Optimierte Berechnung der Produktverfügbarkeit** über den Arbeitsbereich **Funktionsverwaltung** in der Handelszentrale aktivieren.
 
 Bevor die APIs die bestmögliche Schätzung der Bestandsverfügbarkeit für einen Artikel berechnen können, muss ein periodischer Snapshot der Bestandsverfügbarkeit von Commerce Headquarters verarbeitet und an die Datenbank des Vertriebskanals gesendet werden, die die E-Commerce Commerce Scale Unit verwendet. Der Snapshot stellt die Informationen dar, die Commerce Headquarters über die Bestandsverfügbarkeit für eine bestimmte Kombination aus einem Produkt oder einer Produktvariante und einem Lager hat. Er kann Bestandsanpassungen oder -bewegungen enthalten, die durch Lagereingänge oder durch Lieferungen oder andere Prozesse in Commerce Headquarters verursacht werden und über die der E-Commerce-Kanal nur aufgrund des Synchronisierungsprozesses Informationen hat.
 
@@ -66,7 +66,7 @@ Nachdem der Job **Produktverfügbarkeit** ausgeführt wurde, müssen die erfasst
 1. Gehen Sie zu **Retail and Commerce \> Retail and Commerce IT \> Vertriebsplan**.
 1. Führen Sie den Job **1130** (**Produktverfügbarkeit**) aus, um die Momentaufnahmedaten, die der Job **Produktverfügbarkeit** von Commerce Headquarters erstellt hat, mit Ihren Kanaldatenbanken zu synchronisieren.
 
-Wenn die Bestandsverfügbarkeit von der **GetEstimatedAvailabilty** oder **ProductWarehouseInventoryAvailabilities** API angefordert wird, wird eine Berechnung durchgeführt, um die bestmögliche Schätzung des Bestands für das Produkt zu erhalten. Die Berechnung bezieht sich auf alle E-Commerce-Kundenbestellungen, die in der Kanaldatenbank enthalten sind, aber nicht in den Momentaufnahmedaten enthalten waren, die der 1130-Job geliefert hat. Diese Logik wird ausgeführt, indem die zuletzt verarbeitete Bestandstransaktion von Commerce Headquarters verfolgt und mit den Transaktionen in der Kanaldatenbank verglichen wird. Sie liefert eine Basislinie für die kanalseitige Berechnungslogik, sodass die zusätzlichen Bestandsbewegungen, die bei Verkaufstransaktionen von Kundenbestellungen in der E-Commerce-Kanaldatenbank aufgetreten sind, in den geschätzten Bestandswert, den die API liefert, einbezogen werden können.
+Wenn die Bestandsverfügbarkeit von der API **GetEstimatedAvailabilty** oder **GetEstimatedProductWarehouseAvailability** angefordert wird, wird eine Berechnung durchgeführt, um die bestmögliche Schätzung des Bestands für das Produkt zu erhalten. Die Berechnung bezieht sich auf alle E-Commerce-Kundenbestellungen, die in der Kanaldatenbank enthalten sind, aber nicht in den Momentaufnahmedaten enthalten waren, die der 1130-Job geliefert hat. Diese Logik wird ausgeführt, indem die zuletzt verarbeitete Bestandstransaktion von Commerce Headquarters verfolgt und mit den Transaktionen in der Kanaldatenbank verglichen wird. Sie liefert eine Basislinie für die kanalseitige Berechnungslogik, sodass die zusätzlichen Bestandsbewegungen, die bei Verkaufstransaktionen von Kundenbestellungen in der E-Commerce-Kanaldatenbank aufgetreten sind, in den geschätzten Bestandswert, den die API liefert, einbezogen werden können.
 
 Die kanalseitige Berechnungslogik liefert einen geschätzten physisch verfügbaren Wert und einen verfügbaren Gesamtwert für das angeforderte Produkt und das Lager. Die Werte können auf Ihrer E-Commerce-Site angezeigt werden, wenn Sie dies wünschen, oder sie können verwendet werden, um andere Geschäftslogik auf Ihrer E-Commerce-Site auszulösen. So können Sie beispielsweise eine Meldung „nicht vorrätig“ anstelle der tatsächlich verfügbaren Menge anzeigen, die die API übergeben hat.
 
@@ -80,7 +80,7 @@ Wenn die kanalseitige Berechnung korrekt konfiguriert und verwaltet wird, kann s
 
 ### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Beginnen Sie mit der kanalseitigen Berechnung der Bestandsverfügbarkeit am POS
 
-Um die kanalseitige Berechnungslogik zu verwenden und Echtzeitserviceaufrufe für Inventarsuchen in der POS-Anwendung zu deaktivieren, müssen Sie zuerst die Option **Optimierte Berechnung der Produktverfügbarkeit**-Funktion über den **Funktionsverwaltung**-Arbeitsbereich in der Handelszentrale aktivieren. Zusätzlich zur Aktivierung der Funktion müssen Sie Änderungen am **Funktionsprofil** vornehmen.
+Um die kanalseitige Berechnungslogik zu verwenden und Echtzeitserviceaufrufe für Bestandssuchen in der POS-Anwendung zu deaktivieren, müssen Sie zuerst die Option **Optimierte Berechnung der Produktverfügbarkeit** über den Arbeitsbereich **Funktionsverwaltung** in der Handelszentrale aktivieren. Zusätzlich zur Aktivierung der Funktion müssen Sie Änderungen am **Funktionsprofil** vornehmen.
 
 Führen Sie die folgenden Schritte aus, um das **Funktionsprofil** zu ändern:
 
@@ -107,6 +107,8 @@ Um die bestmögliche Schätzung des Bestands zu gewährleisten, ist es wichtig, 
 - **Posttransaktionsauszüge im Batch** - Dieser Job ist auch für die Einzelzulaufsbuchung erforderlich. Er folgt auf den Job **Transaktionale Anweisungen im Batch** berechnen. Dieser Job bucht die berechneten Auszüge systematisch, sodass Kundenaufträge für Cash-and-Carry-Verkäufe in Commerce Headquarters erstellt werden, und Commerce Headquarters den Bestand Ihres Geschäfts genauer widerspiegeln.
 - **Produktverfügbarkeit** - Dieser Job erstellt die Momentaufnahme des Bestands in Commerce Headquarters.
 - **1130 (Produktverfügbarkeit)** - Dieser Job ist auf der Seite **Vertriebspläne** zu finden und sollte unmittelbar nach dem Job **Produktverfügbarkeit** ausgeführt werden. Mit diesem Job werden die Bestandsdaten von Commerce Headquarters zu den Vertriebskanal-Datenbanken transportiert.
+
+Es wird empfohlen, diese Batchaufträge nicht zu häufig (alle paar Minuten) auszuführen. Häufige Ausführungen überlasten die Commerce-Zentralverwaltung (HQ) und können möglicherweise die Leistung beeinträchtigen. Im Allgemeinen empfiehlt es sich, die Produktverfügbarkeit und 1130 Jobs stündlich auszuführen und P-Jobs zu planen, Aufträge zu synchronisieren und Aufträge im Zusammenhang mit Feeding-Posts mit derselben oder einer höheren Häufigkeit durchzuführen.
 
 > [!NOTE]
 > Wenn die kanalseitige Bestandsverfügbarkeitsberechnung verwendet wird, um eine Bestandsverfügbarkeitsanforderung mit Hilfe der E-Commerce-APIs oder der neuen kanalseitigen POS-Bestandslogik zu stellen, verwendet die Berechnung aus Leistungsgründen einen Cache, um festzustellen, ob genügend Zeit verstrichen ist, um die erneute Ausführung der Berechnungslogik zu rechtfertigen. Der Standard-Cache ist auf 60 Sekunden eingestellt. Sie haben beispielsweise die kanalseitige Berechnung für Ihr Geschäft aktiviert und den verfügbaren Bestand für ein Produkt auf der Seite **Bestandssuche** angezeigt. Wenn dann eine Einheit des Produkts verkauft wird, zeigt die Seite **Bestandsabfrage** den reduzierten Bestand erst dann an, wenn der Cache geleert wurde. Nachdem Benutzer Transaktionen in POS gebucht haben, sollten sie 60 Sekunden warten, bevor sie überprüfen, ob der verfügbare Bestand reduziert wurde.

@@ -3,7 +3,7 @@ title: Einkaufswagenmodul
 description: Dieses Thema enthält Einkaufsmodule und es wird beschrieben, wie diese den Sitesieten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 08/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,16 +17,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f21268ed4cffed1d5c789f722796cdf05e965819
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 07d485012bfc93c957b3dc42e3b0ed62e761dee1
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621035"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686765"
 ---
 # <a name="cart-module"></a>Einkaufswagenmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält Einkaufsmodule und es wird beschrieben, wie diese den Sitesieten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -42,9 +43,17 @@ Das folgende Bild zeigt ein Beispiel einer Warenkorbseite auf der Fabrikam-Site.
 
 ![Beispiel eines Warenkorb-Moduls](./media/cart2.PNG)
 
+Das folgende Bild zeigt ein Beispiel einer Warenkorbseite auf der Fabrikam-Site. In diesem Beispiel wird eine Bearbeitungsgebühr für eine Position fällig.
+
+![Beispiel eines Warenkorb-Moduls](./media/ecommerce-handling-fee.png)
+
 ## <a name="cart-module-properties-and-slots"></a>Einkaufswagenmodul-Eigenschaften und Slots
 
-Das Wagenmodul hat eine **Überschrift**-Eigenschaft, die auf Werte wie **Einkaufstasche** und **Artikel im Einkaufskorb** gesetzt werden kann. 
+| Eigenschaft | Werte | Beschreibung |
+|----------------|--------|-------------|
+| Überschrift | Überschriftentext und eine Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Eine Überschrift für den Einkaufskorb wie "Einkaufstasche" oder "Artikel in Ihrem Korb". |
+| Fehlermeldungen "Nicht vorrätig" anzeigen | **True** oder **False** | Wenn diese Eigenschaft **True** ist, zeigt die Warenkorbseite Bestandsfehler an. Wir empfehlen, dass Sie für diese Eigenschaft **True** festlegen, wenn Bestandsprüfungen auf die Website angewendet werden. |
+| Versandkosten für Positionsartikel anzeigen | **True** oder **False** | Wenn diese Eigenschaft **True** ist, enthalten Warenkorbpositionen die Versandkosten, wenn diese Angabe verfügbar ist. Diese Funktion wird im Fabrikam-Design nicht unterstützt, da Benutzer den Versand nur im Auschecken-Ablauf auswählen. Diese Funktion kann jedoch gegebenenfalls in anderen Workflows aktiviert werden. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Module, die im Einkaufswagenmodul verwendet werden können
 
@@ -67,9 +76,9 @@ Das Einkaufskorbmoduls ruft Produktinformationen mithilfe der APIs der Commerce-
 
 Um ein Einkaufswagenmodul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus, um das neue Fragment zu erstellen.
-1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Warenkorb**.
-1. Unter **Name des Seitenfragments** geben Sie einen Namen für das **Warenkorb-Fragment** ein und wählen Sie dann **OK**.
+1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Warenkorb** aus.
+1. Geben Sie unter **Name des Seitenfragments** den Namen **Einkaufswagenfragment** ein und wählen Sie dann **OK** aus.
 1. Wählen Sie den Slot **Warenkorb** aus.
 1. Wählen Sie im Eigenschaftenbereich rechts das Stiftsymbol aus, geben Sie den Überschriftentext in das Feld ein und wählen Sie dann das Häkchensymbol aus.
 1. Wählen Sie im Slot **Warenkorb** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
@@ -77,8 +86,8 @@ Um ein Einkaufswagenmodul einer neuen Seite hinzuzufügen und die erforderlichen
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Im Dialogfeld **Neue Vorlage** unter Vorlagenname geben Sie einen Namen für die neue **Vorlage** ein und wählen OK.
-1. Wählen Sie in der Gliederungsstruktur den Slot **Text**, die Ellipsen-Schaltfläche (**...**) und dann **Fragment hinzufügen** aus.
-1. In dem Dialogfeld **Wählen Sie Seitenfragment** wählen Sie das Fragment **Warenkorbfragment** und wählen **OK**.
+1. Wählen Sie in der Gliederungsstruktur den Slot **Text**, die Ellipsen-Schaltfläche (**...**) und dann **Seitenfragment hinzufügen** aus.
+1. Wählen Sie im Dialogfeld **Seitenfragment auswählen** das Fragment **Warenkorbfragment** und dann **OK** aus.
 1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
 1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
 1. Im Dialogfeld **Vorlage auswählen** wählen Sie die Vorlage, die Sie zuvor erstellt haben, und geben einen Namen ein und wählen dann **OK** aus.
@@ -87,22 +96,18 @@ Um ein Einkaufswagenmodul einer neuen Seite hinzuzufügen und die erforderlichen
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über Starterkit](starter-kit-overview.md)
-
-[Containermodul](add-container-module.md)
-
-[Shopauswahlmodul](store-selector.md)
-
-[Kauffeldmodul](add-buy-box.md)
-
-[Symbol Einkaufswagenmodul](cart-icon-module.md)
+[Modul für Einkaufswagensymbol](cart-icon-module.md)
 
 [Auschecken-Modul](add-checkout-module.md)
 
-[Auftragsbestätigungsmodul](order-confirmation-module.md)
+[Zahlungsmodul](payment-module.md)
 
-[Kopfzeilenmodul](author-header-module.md)
+[Versandadressmodul](ship-address-module.md)
 
-[Fußzeilenmodul](author-footer-module.md)
+[Lieferoptionsmodul](delivery-options-module.md)
+
+[Auftragsdetailmodul](order-confirmation-module.md)
+
+[Geschenkkartenmodul](add-giftcard.md)
 
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)

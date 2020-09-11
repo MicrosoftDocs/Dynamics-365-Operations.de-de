@@ -3,7 +3,7 @@ title: Hauptbuch und Finanzberichterstellung-Übersicht
 description: Verwenden Sie das Hauptbuch zum Verwalten der Finanzdatensätze der juristischen Person.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/31/2017
+ms.date: 08/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b4cad11bcd1b1674055a07b5093093e33d3ac556
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
+ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771798"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "3696663"
 ---
-# <a name="general-ledger-and-financial-reporting-overview"></a>Hauptbuch und Finanzberichterstellung-Übersicht
+# <a name="general-ledger-home-page"></a>Hauptbuch-Homepage
 
 [!include [banner](../includes/banner.md)]
 
@@ -55,7 +55,10 @@ Zudem müssen sie in regelmäßigen Abständen aktualisiert werden, wenn Steuerb
 
 #### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
 
-Gehen Sie zu den [Microsoft Dynamics 365 Release-Plänen](https://go.microsoft.com/fwlink/?linkid=2010158), um zu sehen, welche neuen Features geplant sind. 
+Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant wurden. 
+
+#### <a name="financial-reporting"></a>Finanzberichterstellung
+Weitere Informationen zu Financial Reporting finden Sie im Thema [Financial Reporting – Übersicht](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md).
 
 #### <a name="blogs"></a>Blogs
 

@@ -19,15 +19,14 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fc0673dcdcc8b761089be2c2d201c8488128865
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: 62b8237fa0c30fa9d901d670de38416cf8615c8d
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025695"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686645"
 ---
 # <a name="add-a-logo"></a>Hinzufügen eines Logos
-
 
 [!include [banner](includes/banner.md)]
 
@@ -51,7 +50,7 @@ Bevor Sie allen Seiten Ihrer Site ein Logo hinzufügen können, müssen Sie dies
 
 Gehen Sie folgendermaßen vor, um dem Headerfragment für Ihre Site ein Logo hinzuzufügen.
 
-1. Wählen Sie im linken Navigationsbereich **Seitenfragmente** aus.
+1. Wählen Sie im linken Navigationsbereich **Fragmente** aus.
 1. Wählen Sie das Headerfragment, das Sie eben erstellt haben, aus und dann **Bearbeiten**.
 1. Erweitern Sie das Kopfmodul.
 1. Geben Sie im Eigenschaftenbereich für das Kopfzeilenmodul ein Bild und einen Link für das Logo ein. 

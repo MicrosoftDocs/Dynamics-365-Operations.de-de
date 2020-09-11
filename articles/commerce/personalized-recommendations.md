@@ -3,7 +3,7 @@ title: Personalisierte Produktempfehlungen aktivieren
 description: In diesem Thema wird beschrieben, wie Kunden in Microsoft personalisierte Produktempfehlungen zur Verfügung gestellt werden Dynamics 365 Commerce.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e49b4db17ffd792e8dd536a1671773253c74d71
-ms.sourcegitcommit: fdc5dd9eb784c7d8e75692c8cdba083fe0dd87ce
+ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
+ms.sourcegitcommit: d3b970c3b93d8be12886b1c5a6bf91f0b33726dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3404139"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3700865"
 ---
 # <a name="enable-personalized-recommendations"></a>Personalisierte Produktempfehlungen aktivieren
 
@@ -49,11 +49,13 @@ Weitere Informationen zu Produktempfehlungen finden Sie im [Produktempfehlungsü
 
 Um die Personalisierung einzuschalten, führen Sie diese Schritte aus.
 
-1. Gehen Sie zu **Retail und Commerce \> Produktempfehlungen \> Empfehlungsparameter**.
-1. In der Liste mit freigegebenen Einzelhandelsparametern, wählen Sie **Empfehlungs-Listen** aus.
-1. Legen Sie die Option **Personalisierungen aktivieren** auf **Ja** fest.
+1. In der Commerce-Zentrale suchen Sie nach **Funktionsverwaltung**.
+1. Wählen Sie **Alles** aus, um eine Liste der verfügbaren Funktionen anzuzeigen. 
+1. Geben Sie im Suchfeld **Empfehlungen** ein.
+1. Wählen Sie die Funktion **Personalisierte Produktempfehlungen** aus.
+1. Wählen sie im Eigenschaftsbereich **Personalisierte Produktempfehlungen** die Option **Jetzt aktivieren** aus.
 
-![Personalisierungen aktivieren](./media/enablepersonalization.png)
+![Personalisierungen aktivieren](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Wenn Sie die Personalisierung aktivieren, wird der Prozess zum Generieren personalisierter Produktempfehlungslisten gestartet. Es kann bis zu einem Tag dauern, bis diese Listen online und am POS verfügbar und sichtbar sind.
@@ -113,6 +115,8 @@ Gehen Sie folgendermaßen vor, um eine vorhandene Empfehlungsliste in dem Commer
 [Aktivieren von Azure Data Lake Storage in einer Dynamics 365 Commerce Umgebung](enable-adls-environment.md)
 
 [Produktempfehlungen aktivieren](enable-product-recommendations.md)
+
+[Die Empfehlungen „Produkte mit ähnlichem Aussehen kaufen“ aktivieren](shop-similar-looks.md)
 
 [Personalisierte Empfehlungen kündigen](personalization-gdpr.md)
 

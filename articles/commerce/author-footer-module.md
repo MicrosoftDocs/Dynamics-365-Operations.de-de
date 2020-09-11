@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87ffc0204019f2f7122c40dc21bdb5de012929d6
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e81617979a945274500c9f4ceaa8078d8dfd79e8
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411201"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686717"
 ---
 # <a name="footer-module"></a>Fußzeilenmodul  
 
@@ -50,8 +50,8 @@ Wie die meisten Container unterstützt ein Fußzeilenmodul die Eigenschaften fü
 
 ## <a name="create-a-footer-module"></a>Erstellen eines Fußzeilenmoduls
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus, um das neue Fragment zu erstellen.
-1. Im Dialogfeld **Neues Seiten-Fragment** wählen Sie das **Containermodul** aus, geben Sie einen Namen für das Seitenfragment ein, und wählen Sie dann **OK**.
+1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Container** aus, geben Sie einen Namen für das Seitenfragment ein und wählen Sie dann **OK** aus.
 1. Wählen Sie im Slot **Standard-Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** wählen Sie das **Fußzeilenkategoriemodul** und wählen Sie dann **OK**.
 1. Wählen Sie im Slot **Fußzeilenkategorie** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.

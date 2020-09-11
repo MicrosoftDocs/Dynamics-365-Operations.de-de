@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar-ms
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5f7ad7d9c5ff63c3c3a8fe38275eec0d138891d
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: e7dde3ba1ad375b309ae66cc6d31ccad85615e45
+ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411205"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "3686621"
 ---
 # <a name="header-module"></a>Kopfzeilenmodul
 
@@ -62,8 +62,8 @@ Die folgenden Module können im Kopfzeilenmodul verwendet werden:
 
 Um ein neues Kopfzeilenmodul zu erstellen, befolgen Sie diese Schritte.
 
-1. Wechseln Sie zu **Seitenfragmente**, und wählen Sie dann **Neu** aus, um das neue Fragment zu erstellen.
-1. Im Dialogfeld **Neues Seiten-Fragment** wählen Sie das **Containermodul** aus, geben Sie einen Namen für das Seitenfragment ein, und wählen Sie dann **OK**.
+1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
+1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Container** aus, geben Sie einen Namen für das Seitenfragment ein und wählen Sie dann **OK** aus.
 1. Wählen Sie den **Standardcontainer**-Slot aus und wählen Sie im Eigenschaftenfenster rechts die Option **Breite** aus, um den **Behälter zu füllen**.
 1. Wählen Sie im Slot **Standard-Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** wählen Sie die Module **Promotionsanzeige** und **Cookie-Zustimmung** und wählen dann **OK** aus.

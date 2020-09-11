@@ -68,11 +68,13 @@
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance + Operations (on-premises) kaufen
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
+                - name: Leitfaden zur Implementierung von Commerce Data Exchange
+                  href: dev-itpro/implementation-considerations-cdx.md
                 - name: 'Finance and Operations-Apps, bearbeitet von 21Vianet in China'
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-Apps in Frankreich
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Support für Dynamics 365 Commerce abrufen
+            - name: Support für Dynamics 365 Commerce einholen
               href: retail-support.md
             - name: Aktualisierung und N-1-Support
               items:
@@ -176,13 +178,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
                 - name: Rasterfunktionen
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
-                - name: Erstellen von und Arbeiten mit benutzerdefinierten Feldern
+                - name: Benutzerdefinierte Felder erstellen und damit arbeiten
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: PowerApps-Apps einbetten
+                - name: Microsoft Power Apps einbetten
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
                 - name: Informationen per Suchen finden
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
-                - name: Ändern des Datums für eine Sitzung
+                - name: Datum für eine Sitzung ändern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/commerce/toc.json
                 - name: Die bevorzugte Zeitzone eines Benutzers festlegen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/commerce/toc.json
@@ -202,8 +204,14 @@
                   href: dev-itpro/retail-server-architecture.md
                 - name: Shoptopologie auswählen
                   href: dev-itpro/retail-in-store-topology.md
-                - name: Commerce Data Exchange und Commerce Channel-Kommunikation
-                  href: dev-itpro/define-retail-channel-communications-cdx.md
+                - name: Commerce Data Exchange
+                  items:
+                    - name: Bewährte Vorgehensweisen bei Commerce Data Exchange
+                      href: dev-itpro/CDX-Best-Practices.md
+                    - name: Commerce Data Exchange und Commerce Channel-Kommunikation
+                      href: dev-itpro/define-retail-channel-communications-cdx.md
+                    - name: Problembehandlung in Commerce Data Exchange
+                      href: dev-itpro/CDX-Troubleshooting.md
                 - name: Modern POS-Architektur
                   href: dev-itpro/retail-modern-pos-architecture.md
                 - name: Veröffentlichungsarchitektur für Onlineshop
@@ -516,6 +524,8 @@
                       href: duplicate-payment-protection.md
                     - name: Überblick über Omnichannel-Zahlungen
                       href: omni-channel-payments.md
+                    - name: Omnichannel-Handelsauftragszahlungen
+                      href: dev-itpro/commerce-payments.md
                     - name: FAQ zu Zahlungen
                       href: dev-itpro/payments-retail.md
                 - name: Bing Maps für Ihr Unternehmen verwalten
@@ -536,7 +546,7 @@
                       href: create-product-hierarchy.md
                     - name: Produktkategorien und Produkte verwalten
                       href: category-management-product-creation.md
-                    - name: Sortierreihenfolge für Verkaufsentitäten ändern
+                    - name: Sortierreihenfolge bei Verkaufsentitäten ändern
                       href: custom-order-categories-nav-retail-prod-hierarchy.md
                 - name: Produktdimensionen
                   items:
@@ -758,8 +768,6 @@
               href: disable-consistency-check-rule.md
             - name: Transaktionen im Einzelhandel bearbeiten und prüfen
               href: edit-audit-retail-transactions.md
-            - name: 'Auszüge für ein Einzelhandelsgeschäft erstellen, berechnen und buchen'
-              href: tasks/create-calculate-post-statement-retail-store.md
             - name: Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
               href: trickle-feed.md
             - name: 'Auszüge für ein Einzelhandelsgeschäft erstellen, berechnen und buchen'
@@ -1130,13 +1138,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/commerce/toc.json
             - name: Zugang zu Informationen und Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/commerce/toc.json
-            - name: Personalisierungsoptionen mit PowerBI.com
+            - name: Personalisierungsoptionen mit Power BI
               items:
-                - name: Bei Integration mit PowerBI.com verfügbare Funktionen
+                - name: Bei Power BI-Integration verfügbare Funktionen
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/commerce/toc.json
-                - name: Inhalte von PowerBI.com anheften
+                - name: Power BI-Inhalt anheften
                   href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Analytische Arbeitsbereiche von PowerBI.com auswählen
+                - name: Analytische Arbeitsbereiche aus Power BI auswählen
                   href: ../fin-ops-core/dev-itpro/analytics/select-analytical-workspace.md?toc=/dynamics365/commerce/toc.json
             - name: Power BI-Inhalt
               items:
@@ -1144,7 +1152,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-home-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Weiterbildung
                   href: ../fin-ops-core/dev-itpro/analytics/learning-power-bi.md?toc=/dynamics365/commerce/toc.json
-                - name: Organisationsschulungen
+                - name: Unternehmensschulungen
                   href: ../fin-ops-core/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack.md?toc=/dynamics365/commerce/toc.json
                 - name: Einzelhandelskanalleistung
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -1188,7 +1196,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/dynamics365/commerce/toc.json
                 - name: Probleme nach der Entitätsspeicherverwaltung lösen
                   href: ../fin-ops-core/dev-itpro/analytics/entity-store-maintenance.md
-                - name: PowerBI.com-Integration konfigurieren
+                - name: Power BI-Integration konfigurieren
                   href: ../fin-ops-core/dev-itpro/analytics/configure-power-bi-integration.md?toc=/dynamics365/commerce/toc.json
                 - name: Eigene Datenbanken nutzen
                   href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/commerce/toc.json
@@ -1202,7 +1210,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/commerce/toc.json
                 - name: Aggregierende Messungen mit Finanzdimensionen ergänzen
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/commerce/toc.json
-                - name: "Analytische Berichte mithilfe von Power\_BI\_Desktop erstellen"
+                - name: Analyseberichte mit Power BI Desktop erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/commerce/toc.json
                 - name: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/commerce/toc.json
@@ -2048,7 +2056,7 @@
                   items:
                     - name: Paketkonfigurationen und Bereitstellung in Onlineumgebungen
                       href: e-commerce-extensibility/package-deploy.md
-                    - name: SDK- und Kernbibliothekupdates
+                    - name: Aktualisierungen von SDK und Store-Starter-Kit
                       href: e-commerce-extensibility/sdk-updates.md
             - name: Retail SDK
               items:
@@ -2186,6 +2194,8 @@
                   href: 'https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf'
                 - name: Zahlungsconnectors bereitstellen
                   href: dev-itpro/deploy-payment-connector.md
+                - name: Inkrementelle Erfassung zur Backoffice-Rechnungsstellung
+                  href: dev-itpro/incremental-capture.md
                 - name: Benutzerdefinierte lokalisierte Fehlermeldungen für Zahlungsterminalerweiterungen erstellen
                   href: dev-itpro/payment-custom-error-messages.md
                 - name: Windows-Installationsprogramme für Zahlungsconnectors erstellen

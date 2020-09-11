@@ -3,7 +3,7 @@ title: Garantievereinbarungen
 description: In diesem Abschnitt werden die Garantievereinbarungen im Anlagenmanagement erläutert.
 author: josaw1
 manager: tfehr
-ms.date: 08/30/2019
+ms.date: 08/24/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e9cbb9068101f3004179f338da18af0369190807
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215377"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719237"
 ---
 # <a name="warranty-agreements"></a>Garantievereinbarungen
 
@@ -42,12 +42,12 @@ Eine Garantievereinbarung kann mehrere Vertragszeilen umfassen, um die Garantie 
 
 1. Wählen Sie **Anlagenmanagement** \> **Einrichtung** \> **Anlagen** \> **Garantie**.
 2. Wählen Sie **Neu**, um ein Produkt zu erstellen.
-3. Geben Sie im Feld **Garantie** eine Garantie-ID ein.
+3. Geben Sie im Feld **Garantie** eine Garantie-ID ein. 
 4. Geben Sie im Feld **Name** eine Beschreibung ein.
 
     Im Feld **Details** FastTab zeigt das Feld **Assets** die Anzahl der aktiven Anlagen, die die Garantievereinbarung nutzen.
 
-5. Führen Sie auf den Seiten **Stundengarantie** und **Einzelteilgarantie** FastTabs diese Schritte aus, um Zeilen hinzuzufügen, die in eine Garantievereinbarung aufgenommen werden sollten, die sich auf Stunden oder Artikel bezieht:
+5. Im Inforegister **Garantiepositionen** führen Sie die folgenden Schritte aus, um Positionen hinzuzufügen, die in einer Garantievereinbarung enthalten sein sollten:
 
     1. Wählen Sie **Zeile hinzufügen**, um der Garantie eine neue Bedingung hinzuzufügen. Eine fortlaufende Zeilennummer wird automatisch in das Feld **Zeile** eingetragen.
     2. Wählen Sie im Feld **Periode** die Art der Garantiezeit aus.

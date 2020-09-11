@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-kikozl
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 3a874fdad7a1ba3ed2fdf7dbe2b609c3fc018d2d
-ms.sourcegitcommit: 11d54d5b34d9132daa9a5dc9d9549d59e8a323aa
+ms.openlocfilehash: dcbad91d6362b0e3c9520e1a0780c58b90c28d6a
+ms.sourcegitcommit: 50be4bcc619b71e8124ee7e933ab81a32877ad38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "3403972"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "3741817"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-germany"></a>Integrationsbeispiel für Steuererfassungsdienst für Deutschland
 
@@ -42,18 +42,18 @@ Die folgenden Szenarien werden im Beispiel für die Integration des Steuerregist
 
 - **Registrierung von Cash-and-Carry-Verkäufen und -Rückgaben im Steuerregistrierungsdienst:**
 
-Die Registrierung von Verkaufsvorgängen umfasst die folgenden Schritte: 
+Die Registrierung von Verkaufsvorgängen umfasst die folgenden Schritte:
 
   1. Erfassung des Startdatums
-    
+
 Der Start jeder Transaktion wird in einem technischen Sicherheitselement (TSE) registriert, das mit dem EFR-Dienst verbunden ist. Als Ergebnis der Registrierung weist eine TSE eine Transaktions-ID (TID) zu.
-    
+
   2. Erfassung des Enddatums
-    
+
 Wenn eine Transaktion am POS abgeschlossen wird, wird sie mit derselben TID registriert, die bei der Registrierung des Transaktionsstarts zugewiesen wurde. Zu diesem Zeitpunkt werden detaillierte Buchungsdaten dem Steuererfassungsdienst zugestellt. Diese Daten beinhalten Informationen zu Verkaufspositionen sowie Informationen über Rabatte, Zahlungen und Steuern.
 
-  3. Erfassen einer Antwort vom Steuererfassungsdienst 
-    
+  3. Erfassen einer Antwort vom Steuererfassungsdienst
+
 Sicherheitsdaten werden von einer TSE als Teil einer Antwort empfangen und in der Transaktion in der Kanaldatenbank gespeichert. Die Sicherheitsdaten bestehen aus folgenden Informationen: – TID – Datum und Uhrzeit des Transaktionsstarts – Datum und Uhrzeit des Transaktionsendes – Signaturzähler – Prüfwert – Seriennummer des TSE
 
 - **Registrierung von Kundenbestellungen im Steuerregistrierungsdienst:** Der Registrierungsprozess ist der gleiche wie der Prozess für Cash-and-Carry-Verkäufe und -Rückgaben.
@@ -400,7 +400,8 @@ In der vorherigen Prozedur aktivieren Sie die Erweiterungen, die Komponenten des
 
     - In den Konfigurationsdateien **commerceruntime.ext.config** und **CommerceRuntime.MPOSOffline.Ext.config** fügen Sie die folgenden Positionen zum Abschnitt **Anordnung** hinzu.
 
-        ``` xml 
+        ``` xml
+        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
         ```
@@ -410,7 +411,6 @@ In der vorherigen Prozedur aktivieren Sie die Erweiterungen, die Komponenten des
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
-        <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsGermany" />
         ```
 
 2. Nehmen Sie die folgenden Änderungen in der Paketanpassungs-Konfigurationsdatei **BuildTools\\Customization.settings** vor:
@@ -442,7 +442,7 @@ Der Zweck der Erweiterung ist es, dass ein Steuerdokumentanbieter dienstspezifis
 Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**. Weitere Einzelheiten über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### <a name="request-handler"></a>Anforderungshandler
-    
+
 Es gibt einen Anforderungshandler für den Dokumentanbieter: **DocumentProviderEFRFiscalDEU**. Dieser Handler wird verwendet, um Steuerdokumente für den Steuererfassungsdienst zu erstellen. Er wird von der Oberfläche **INamedRequestHandler** geerbt. Die Methode **HandlerName** ist für die Rückgabe des Namens des Handlers zuständig. Der Handlername sollte mit dem Name des Konnektordokumentanbieters übereinstimmen, der in der Commerce Zentralverwaltung angegeben ist.
 
 Der Konnektor unterstützt die folgenden Anforderungen:

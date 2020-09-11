@@ -3,7 +3,7 @@ title: Mitarbeiter- und Manager-Self-Service-Übersicht
 description: Dieser Artikel bietet einen Überblick über den Self-Service-Arbeitsbereich für Mitarbeiter und Manager.
 author: andreabichsel
 manager: AnnBe
-ms.date: 03/19/2020
+ms.date: 08/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5934b6a1a1a8aa30aa18d9be26845c84acfa2fd0
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429795"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712231"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Mitarbeiter- und Manager-Self-Service-Übersicht
 
@@ -32,6 +32,25 @@ Dieser Artikel bietet einen Überblick über den Self-Service-Arbeitsbereich fü
 ## <a name="edit-personal-details"></a>Personendaten bearbeiten
 
 Wenn Sie persönliche Informationen hinzufügen oder ändern müssen, lesen Sie [Persönliche Daten bearbeiten](hr-employee-manager-self-service-edit-personal-information.md).
+
+## <a name="user-not-assigned-to-a-worker-record"></a>Benutzer, der keinem Arbeitskraftdatensatz zuwiesen ist
+
+Wenn Sie Ihren Benutzer nicht mit einem **Arbeitskraft**-Datensatz auf der Seite **Benutzer** verknüpft haben, wird die folgende Meldung angezeigt:
+
+**Die Benutzerkennung ist dem Mitarbeiterdatensatz im System nicht zugeordnet. Sie können die Informationen erst anzeigen oder aktualisieren, wenn die entsprechende Zuordnung erfolgt ist. Wenden Sie sich hierzu an Ihren Vorgesetzten oder Ihr Support-Team.**
+
+Um einen Benutzer mit einem **Arbeitskraft**-Datensatz zu verknüpfen, navigieren Sie zu **Benutzer**, und wählen Sie den Benutzer aus. Wählen Sie **Bearbeiten** aus, fügen Sie die entsprechende Arbeitskraft im Feld **Person** auf dem Formular hinzu, und wählen Sie **Speichern** aus. Sie sollten jetzt Zugriff auf Employee Self-Service haben.
+
+## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sicherheitsanforderungen Employee und Manager Self-Service
+
+Employee und Manager Self-Service benötigen zwei Sicherheitsrollen:
+
+- Mitarbeiter benötigen die Mitarbeiter-Rolle.
+- Manager benötigen sowohl die Mitarbeiter- als auch die Manager-Rolle.
+
+>[!NOTE]
+>Sie können auch benutzerdefinierte Rollen verwenden, um auf den Employee und Manager Self-Service zuzugreifen, sofern ihnen der Zugriff auf die Arbeitsbereiche für Mitarbeiter und Manager gewährt wurde.<br>
+>Der Zugriff des Managers auf Mitarbeiterinformationen basiert auf der aktuellen Positionshierarchie, die in Human Resources definiert ist.
 
 ## <a name="employee-self-service"></a>Mitarbeiter-Self-Service
 

@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: v-dmpere
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: e8deb45058d471b04fc7756dccb9600d26979c69
-ms.sourcegitcommit: 0681a00d60c9f8cc8f7b9888b8c5ddf07279fc04
+ms.openlocfilehash: e43df9d1f394c083f6ec3460a1dd7a9b44438aac
+ms.sourcegitcommit: 50be4bcc619b71e8124ee7e933ab81a32877ad38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3131747"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "3741818"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 
@@ -391,7 +391,7 @@ Die vorherige Prozedur aktiviert die Erweiterungen, die Komponenten des Steuerer
 
     - In den Konfigurationsdateien **commerceruntime.ext.config** und **CommerceRuntime.MPOSOffline.Ext.config** fügen Sie die folgenden Positionen zum Abschnitt **Anordnung** hinzu.
 
-        ``` xml 
+        ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EFRSample" />
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
         <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsAustria" />
@@ -403,6 +403,7 @@ Die vorherige Prozedur aktiviert die Erweiterungen, die Komponenten des Steuerer
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EFRSample" />
+        <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR" />
         ```
 
 2. Nehmen Sie die folgenden Änderungen in der Paketanpassungs-Konfigurationsdatei **BuildTools\\Customization.settings** vor:
@@ -412,13 +413,13 @@ Die vorherige Prozedur aktiviert die Erweiterungen, die Komponenten des Steuerer
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EFRSample.dll" />
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
         ```
 
     - Fügen Sie die folgende Zeilen hinzu, um die Hardware station-Erweiterung in die bereitstellbaren Pakete einzuschließen.
 
         ``` xml
-        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EFRSample.dll" />
+        <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.DataModelEFR.dll" />
         ```
 
 3. Starten Sie die MSBuild-Eingabeaufforderung für Visual Studio-Hilfsprogramm und führen Sie **msbuild** unter dem Ordner Retail SDK aus, um bereitstellbare Pakete zu erstellen.
@@ -436,7 +437,7 @@ Die CRT-Erweiterung ist **Runtime.Extensions.DocumentProvider.EFRSample**.
 Weitere Einzelheiten über das Design der Lösung für die steuerliche Integration finden Sie unter [Überblick über die steuerliche Integration für Commerce-Kanäle](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
 #### <a name="request-handler"></a>Anforderungshandler
-    
+
 Es gibt zwei Anforderungshandler für Dokumentanbieter:
 
 - **DocumentProviderEFRFiscalAUT** – Dieser Handler wird verwendet, um Steuerdokumente für den Steuererfassungsdienst zu erstellen.

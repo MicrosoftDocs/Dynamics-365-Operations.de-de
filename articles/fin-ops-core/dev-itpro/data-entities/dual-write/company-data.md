@@ -3,7 +3,7 @@ title: Unternehmenskonzept in Common Data Service
 description: In diesem Thema wird die Integration von Unternehmensdaten zwischen Finance and Operations und Common Data Service beschrieben.
 author: RamaKrishnamoorthy
 manager: AnnBe
-ms.date: 07/15/2019
+ms.date: 08/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 9a39cf5fa980d9a815ba675e410589dbd1279c83
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 444bfc1698a206ca34e67f742df63431a3b02649
+ms.sourcegitcommit: 7da8811f1a7db858efb76edb0bdf857a47d07600
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172899"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "3728412"
 ---
 # <a name="company-concept-in-common-data-service"></a>Unternehmenskonzept in Common Data Service
 
@@ -72,3 +72,32 @@ Die Common Data Service-Integration bringt Unternehmensparität durch Verwendung
 + Für Datensätze wird der Wert schreibgeschützt, nachdem ein Unternehmen hinzugefügt und gespeichert wird. Daher sollten Benutzer sicherstellen, dass Sie das korrekte Unternehmen auswählen.
 + Nur Datensätze mit Unternehmensdaten kommen für duales Schreiben zwischen der Anwendung und Common Data Service infrage.
 + Für vorhandene Common Data Service-Daten wird in Kürze eine vom Administrator geführte Bootstrapping-Erfahrung verfügbar sein.
+
+
+## <a name="autopopulate-company-name-in-customer-engagement-apps"></a>Unternehmensname in Kundenbindungs-Apps automatisch ausfüllen
+
+Es gibt verschiedene Möglichkeiten, den Unternehmensnamen in Kundenbindungs-Apps automatisch auszufüllen.
+
++ Wenn Sie ein Systemadministrator sind, können Sie das Standardunternehmen festlegen, indem Sie zu **Erweiterte Einstellungen > System > Sicherheit > Benutzer** navigieren. Öffnen Sie das Formular **Benutzer**, und im Abschnitt **Organisationsinformationen** legen Sie den Wert **Unternehmen gemäß Standard auf Formularen** fest.
+
+    :::image type="content" source="media/autopopulate-company-name-1.png" alt-text="Legen Sie im Abschnitt Organisationsinformationen das Standardunternehmen fest.":::
+
++ Wenn Sie **Schreib**-Zugriff auf die Entität **SystemUser** für die Ebene **Unternehmenseinheit** haben, können Sie das Standardunternehmen auf jedem beliebigen Formular ändern, indem Sie ein Unternehmen aus dem Dropdownmenü **Unternehmen** auswählen.
+
+    :::image type="content" source="media/autopopulate-company-name-2.png" alt-text="Ändern des Unternehmensnamens bei einem neuen Konto.":::
+
++ Wenn Sie **Schreib**-Zugriff auf Daten in mehr als einem Unternehmen haben, können Sie das Standardunternehmen ändern, indem Sie einen Datensatz auswählen, der zu einem anderen Unternehmen gehört.
+
+    :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Durch Auswahl eines Datensatzes wird die Standardunternehmen geändert.":::
+
++ Wenn Sie ein Systemkonfigurator oder -Administrator sind und Unternehmensdaten automatisch in ein benutzerdefiniertes Formular einfügen möchten, können Sie [Formularereignisse](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids) verwenden. Fügen Sie einen JavaScript-Verweis auf **msdyn_/DefaultCompany.js** hinzu, und verwenden Sie die folgenden Ereignisse. Sie können jedes sofort einsatzbereite Formular verwenden, z. B. das **Konto**-Formular.
+
+    + **OnLoad**-Ereignis für das Formular: Legen Sie das Feld **defaultCompany** fest.
+    + **OnChange**-Ereignis für das Feld **Unternehmen**: Legen Sie das Feld **updateDefaultCompany** fest.
+
+## <a name="apply-filtering-based-on-the-company-context"></a>Wenden Sie die Filterung basierend auf dem Unternehmenskontext an
+
+Um die Filterung in Ihren benutzerdefinierten Formularen oder in benutzerdefinierten Suchfeldern, die den Standardformularen hinzugefügt wurden, basierend auf dem Unternehmenskontext anzuwenden, öffnen Sie das Formular, und verwenden Sie den Abschnitt **Filterung zugehöriger Datensätze**, um den Unternehmensfilter anzuwenden. Sie müssen dies für jedes Suchfeld festlegen, das die Filterung basierend auf dem zugrunde liegenden Unternehmen für einen bestimmten Datensatz erfordert. Die Einstellung wird für **Konto** in der folgenden Abbildung angezeigt.
+
+:::image type="content" source="media/apply-company-context.png" alt-text="Unternehmenskontext anwenden":::
+
