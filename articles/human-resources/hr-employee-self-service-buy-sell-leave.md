@@ -1,9 +1,9 @@
 ---
 title: Urlaub kaufen und verkaufen
-description: Sie können Anträge auf Kauf und Verkauf von Urlaub übermitteln.
+description: In Dynamics 365 Human Resources können Sie Anfragen zum Kauf und Verkauf von Urlaub auf der Grundlage der von Ihrem Unternehmen eingerichteten Richtlinien für den Kauf und Verkauf von Urlaub stellen.
 author: andreabichsel
 manager: AnnBe
-ms.date: 06/01/2020
+ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,30 +18,38 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b765544dcca02ff629e4cc88e3b34d1d3b3e85dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e3a10d183c50f4db31f5c08eb6c0ab8cff79b23e
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429680"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3711817"
 ---
-# <a name="buy-and-sell-leave"></a><span data-ttu-id="b9485-103">Urlaub kaufen und verkaufen</span><span class="sxs-lookup"><span data-stu-id="b9485-103">Buy and sell leave</span></span>
+# <a name="buy-and-sell-leave"></a><span data-ttu-id="f1ba6-103">Urlaub kaufen und verkaufen</span><span class="sxs-lookup"><span data-stu-id="f1ba6-103">Buy and sell leave</span></span>
 
-[!include [banner](includes/preview-feature.md)]
+<span data-ttu-id="f1ba6-104">In Dynamics 365 Human Resources können Sie Anfragen zum Kauf und Verkauf von Urlaub auf der Grundlage der von Ihrem Unternehmen eingerichteten Richtlinien für den Kauf und Verkauf von Urlaub stellen.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-104">In Dynamics 365 Human Resources, you can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.</span></span>  
 
-<span data-ttu-id="b9485-104">Sie können Anträge auf Kauf von Urlaub übermitteln.</span><span class="sxs-lookup"><span data-stu-id="b9485-104">You can submit requests to buy leave.</span></span>  
+## <a name="request-to-buy-leave"></a><span data-ttu-id="f1ba6-105">Antrag auf Urlaub kaufen</span><span class="sxs-lookup"><span data-stu-id="f1ba6-105">Request to buy leave</span></span>
 
-## <a name="request-to-buy-leave"></a><span data-ttu-id="b9485-105">Antrag auf Urlaub kaufen</span><span class="sxs-lookup"><span data-stu-id="b9485-105">Request to buy leave</span></span>
+1. <span data-ttu-id="f1ba6-106">In dem **Mitarbeiter Selbstservice** Arbeitsbereich wählen Sie **Antrag auf Urlaub kaufen** in der Kachel **Freizeitguthaben**.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-106">In the **Employee self service** workspace, select **Buy leave request** in the **Time Off Balances** tile.</span></span> 
 
-1. <span data-ttu-id="b9485-106">In dem **Mitarbeiter Selbstservice** Arbeitsbereich wählen Sie **Antrag auf Urlaub kaufen** in der Kachel **Freizeitguthaben**.</span><span class="sxs-lookup"><span data-stu-id="b9485-106">In the **Employee self service** workspace, select **Buy leave request** in the **Time Off Balances** tile.</span></span> 
+2. <span data-ttu-id="f1ba6-107">Fügen Sie **Urlaubstyp** hinzu und geben Sie einen **Menge** für die Menge an Urlaub ein, die Sie kaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-107">Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to buy.</span></span> 
 
-2. <span data-ttu-id="b9485-107">Fügen Sie **Urlaubstyp** hinzu und geben Sie einen **Menge** für die Menge an Urlaub ein, die Sie kaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="b9485-107">Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to buy.</span></span> 
+3. <span data-ttu-id="f1ba6-108">Wählen **einreichen**, wenn Sie bereit sind, Ihre Anfrage einzureichen.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-108">Select **Submit** when you're ready to submit your request.</span></span> 
 
-3. <span data-ttu-id="b9485-108">Wählen **einreichen**, wenn Sie bereit sind, Ihre Anfrage einzureichen.</span><span class="sxs-lookup"><span data-stu-id="b9485-108">Select **Submit** when you're ready to submit your request.</span></span> 
+<span data-ttu-id="f1ba6-109">Ihre Guthaben werden entweder automatisch aktualisiert oder durchlaufen vor der Aktualisierung einen Genehmigungsprozess.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-109">Your balances will either automatically update or go through an approval process before updating.</span></span> <span data-ttu-id="f1ba6-110">Dies hängt davon ab, wie die Kaufrichtlinie konfiguriert wurde.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-110">This depends on how the buy policy has been configured.</span></span>
 
-<span data-ttu-id="b9485-109">Sobald die Anfrage eingereicht wurde, werden Ihre Guthaben automatisch mit dem Betrag des Urlaubs aktualisiert, den Sie zum Kauf angefordert haben.</span><span class="sxs-lookup"><span data-stu-id="b9485-109">Once the request is submitted, your balances will automatically be updated with the amount of leave you requested to buy.</span></span> 
+## <a name="request-to-sell-leave"></a><span data-ttu-id="f1ba6-111">Antrag, Urlaub zu verkaufen</span><span class="sxs-lookup"><span data-stu-id="f1ba6-111">Request to sell leave</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="b9485-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b9485-110">See also</span></span>
+1. <span data-ttu-id="f1ba6-112">Wählen Sie im Arbeitsbereich **Employee Self-Service** die Option **Urlaubsanforderung verkaufen** in der Kachel **Salden arbeitsfreier Zeiten**.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-112">In the **Employee self service** workspace, select **Sell leave request** in the **Time Off Balances** tile.</span></span> 
 
-[<span data-ttu-id="b9485-111">Urlaubs- und Abwesenheitsübersicht</span><span class="sxs-lookup"><span data-stu-id="b9485-111">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)</br>
-[<span data-ttu-id="b9485-112">Verwalten Sie Kauf- und Verkaufsurlaubsrichtlinien</span><span class="sxs-lookup"><span data-stu-id="b9485-112">Manage buy and sell leave policies</span></span>](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+2. <span data-ttu-id="f1ba6-113">Fügen Sie einen **Urlaubstyp** hinzu und geben Sie eine **Menge** für die Menge an Urlaub ein, die Sie verkaufen möchten.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-113">Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to sell.</span></span> 
+
+3. <span data-ttu-id="f1ba6-114">Wählen **einreichen**, wenn Sie bereit sind, Ihre Anfrage einzureichen.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-114">Select **Submit** when you're ready to submit your request.</span></span>
+
+<span data-ttu-id="f1ba6-115">Ihre Guthaben werden entweder automatisch aktualisiert oder durchlaufen vor der Aktualisierung einen Genehmigungsprozess.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-115">Your balances will either automatically update or go through an approval process before updating.</span></span> <span data-ttu-id="f1ba6-116">Dies hängt davon ab, wie die Kaufrichtlinie konfiguriert wurde.</span><span class="sxs-lookup"><span data-stu-id="f1ba6-116">This depends on how the buy policy has been configured.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f1ba6-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f1ba6-117">See also</span></span>
+
+[<span data-ttu-id="f1ba6-118">Urlaubs- und Abwesenheitsübersicht</span><span class="sxs-lookup"><span data-stu-id="f1ba6-118">Leave and absence overview</span></span>](hr-leave-and-absence-overview.md)</br>
+[<span data-ttu-id="f1ba6-119">Kauf- und Verkaufsurlaubsrichtlinien verwalten</span><span class="sxs-lookup"><span data-stu-id="f1ba6-119">Manage buy and sell leave policies</span></span>](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
