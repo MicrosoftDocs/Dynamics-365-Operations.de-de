@@ -3,7 +3,7 @@ title: VALUEIN EB-Funktion
 description: In diesem Thema werden Informationen zur Verwendung der VALUEIN-Funktion bei der elektronischen Berichterstellung (EB) bereitgestellt.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0df97234df41d11897473dea4e85354e82d36ec
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 44459ae56891a08eb11a6c254f4b4d5652a0e693
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041698"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705118"
 ---
-# <a name="VALUEIN">VALUEIN EB-Funktion</a>
+# <a name=""></a><a name="VALUEIN">VALUEIN EB-Funktion</a>
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Der resultierende *boolesche* Wert.
 
 ## <a name="usage-notes"></a>Anwendungshinweise
 
-Im Allgemeinen wird die Funktion `VALUEIN` zu einem Satz **OR**-Bedingungen umgerechnet.
+Im Allgemeinen wird die Funktion `VALUEIN` zu einem Satz **OR**-Bedingungen umgerechnet. Wenn die Liste von **ODER**-Bedingungen groß ist und die maximale Gesamtlänge einer SQL-Anweisung überschritten werden kann, erwägen Sie die Verwendung der [`VALUEINLARGE`](er-functions-logical-valueinlarge.md)-Funktion.
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
@@ -77,13 +77,13 @@ Beim Aufruf einer Datenquelle, wenn diese als `VALUEIN ("B", List, LEFT(List.Val
 
 Der obere Grenzwert für die Anzahl der Zeichen im Text einer derartigen Bedingung entspricht 32.768 Zeichen. Daher sollten Sie keine Datenquellen erstellen, die möglicherweise zur Laufzeit diesen Grenzwert überschreiten. Wenn das Limit überschritten wird, wird die Anwendung nicht mehr ausgeführt und eine Ausnahme ausgelöst. Beispielsweise kann diese Situation erfolgen, wenn die Datenquelle als `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)` konfiguriert wird, und die Listen **List1** und **List2** eine große Anzahl von Datensätzen enthalten.
 
-In einigen Fällen wird die Funktion `VALUEIN` in eine Datenbankaussage durch Verwendung des Operators `EXISTS JOIN` umgerechnet. Dieses Verhalten ist der Fall, wenn die Funktion [FILTER](er-functions-list-filter.md) verwendet wird und die folgenden Bedingungen erfüllt sind:
+In einigen Fällen wird die Funktion `VALUEIN` in eine Datenbankaussage durch Verwendung des Operators `EXISTS JOIN` umgerechnet. Dieses Verhalten tritt auf, wenn die Funktion [`FILTER`](er-functions-list-filter.md) verwendet wird und die folgenden Bedingungen erfüllt sind:
 
 - Die Option **BITTEN SIE UM ABFRAGE** wird für die Datenquelle der Funktion `VALUEIN` deaktiviert, die die Liste von Datenträgen bezieht. Es werden keine zusätzliche Bedingungen auf diese Datenquelle zur Bearbeitungszeit angewendet.
 - Es werden keine eingebetteten Ausdrücke für die Datenquelle der Funktion `VALUEIN` konfiguriert, die sich auf die Liste von Datenträgen bezieht.
 - Ein Listenelement der Funktion `VALUEIN` bezieht sich auf ein Feld der angegebenen Datenquelle, nicht auf einen Ausdruck oder eine Methode dieser Datenquelle.
 
-Berücksichtigen Sie diese Option anstelle der Funktion [WHERE](er-functions-list-where.md), die weiter oben in diesem Beispiel beschrieben wird.
+Erwägen Sie die Nutzung dieser Option anstelle der Funktion [`WHERE`](er-functions-list-where.md), die weiter oben in diesem Beispiel beschrieben wird.
 
 ## <a name="example-2"></a>Beispiel 2
 
@@ -118,3 +118,5 @@ Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Logische Funktionen](er-functions-category-logical.md)
+
+[VALUEINLARGE-Funktionen](er-functions-logical-valueinlarge.md)

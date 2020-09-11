@@ -18,16 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ed663a8b602e1d3f43a429ba18f515dc84d6d3e3
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 0a65eed44de41ae35bf241166ee22dd280ce5d7a
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428569"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712447"
 ---
 # <a name="suspend-leave"></a>Urlaub aussetzen
-
-[!include [banner](includes/preview-feature.md)]
 
 Sie können den Urlaub für einen Mitarbeiter aussetzen, um zu verhindern, dass Urlaubsrückstellungen für ausgewählte Urlaubstypen verarbeitet werden. 
 

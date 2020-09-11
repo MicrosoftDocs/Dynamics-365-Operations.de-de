@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 87d1217204e0c5cb22f567793b043bf399ca5685
-ms.sourcegitcommit: b07434f2bd6db67d8dd712f096329acc902751ae
+ms.openlocfilehash: a6fdc7b8d7ad65c9e4bf1d3b932b62918dea6e77
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "3699368"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710258"
 ---
 # <a name="customer-orders-in-modern-pos-mpos"></a>Debitorenaufträge in Modern POS (MPOS)
 
@@ -54,7 +54,10 @@ Nachfolgend sind einige der Parameter, die auf der Seite **Commerce-Parameter** 
     - Zuschläge werden auf der Ebene der Auftragsüberschrift angewendet und wenn eine beliebige Menge einer Produktgruppe zurückgegeben wird, kann die Gebührenerstattung für die maximalen Versandkosten, die für die Produkte und die Menge zugelassen ist nicht für alle Debitoren gleich angewendet werden.
     - Versandkosten werden für jede Versandinstanz erhoben. Wenn ein Kunde Produkte mehrmals zurücksendet und die Richtlinie des Einzelhändlers angibt, dass der Einzelhändler die Kosten für den Rückversand übernimmt, dann sind die Rückholversandkosten höher als die tatsächlichen Versandkosten.
     
-- **Steuerberechnungsverhalten** - **Neu berechnen** ist die Standardeinstellung und traditionelle Einstellung für die Neuberechnung von Steuern, wenn der Auftrag in das Backoffice importiert wird. **Nicht neu berechnen** deaktiviert die Steuerneuberechnung, bis die Bestellung im Backoffice bearbeitet wird, wenn eine Neuberechnung ausgelöst wird. 
+
+## <a name="disable-option-to-pay-later"></a>Option zum späteren Bezahlen deaktivieren
+
+In Commerce Version 10.0.12 und höher können Händler die Option zum späteren Bezahlen entfernen, wenn eine Kundenbestellung am POS erstellt wird. Um die Option zu deaktivieren öffnen Sie das **Funktionsprofil** für den Kanal, in dem das spätere Bezahlen nicht erlaubt ist, und wählen Sie dann **Bearbeiten** aus. Auf der Registerkarte **Allgemein** wählen Sie das Dropdown für **Zahlung für Erfüllung verlangen** aus. Wenn eine spätere Zahlung am POS nicht zulässig sein soll, wählen Sie **Karte erforderlich** und dann **Speichern** aus. Führen Sie den Verteilungszeitplan **1070** aus, um diese Änderung am Kanal zu synchronisieren. 
 
 ## <a name="transaction-flow-for-customer-orders"></a>Transaktionsfluss für Kundenbestellungen
 

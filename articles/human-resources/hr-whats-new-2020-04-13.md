@@ -1,6 +1,6 @@
 ---
 title: Neuigkeiten oder Änderungen in Dynamics 365 Human Resources (13. April, 2020)
-description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources neu oder geändert wurden.
+description: Dieser Artikel beschreibt Funktionen, die in Microsoft Dynamics 365 Human Resources für den 13. April 2020 neu sind oder geändert wurden.
 author: Darinkramer
 manager: AnnBe
 ms.date: 4/13/2020
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: dkrame
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4f61283f3bab26f54d55ffe7cbea21b1201ed234
-ms.sourcegitcommit: bd9ff0d28718d535356ffbe1cffaaf60310dd430
+ms.openlocfilehash: 729490e7516d8c7aef7232c9f5c227d3207dcd68
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "3555146"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712423"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Neuigkeiten oder Änderungen in Dynamics 365 Human Resources (13. April, 2020)
 

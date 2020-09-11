@@ -3,7 +3,7 @@ title: Liste der EB-Funktionen in der logischen Kategorie
 description: Dieses Thema enthält Informationen zu den logischen Funktionen, die in der elektronischen Berichterstellung (EB) unterstützt werden.
 author: NickSelin
 manager: kfend
-ms.date: 12/17/2019
+ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 408b3c5ec37b24e0ccf6e368012a936701eedf0f
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: e622778c60646e5cc84cd6e23a5d4954a0fe0bb3
+ms.sourcegitcommit: 38ad6f791c3d5688a5dc201a234ba89f155f7f03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2916636"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "3705094"
 ---
 # <a name="list-of-er-functions-in-the-logical-category"></a>Liste der EB-Funktionen in der logischen Kategorie
 
@@ -41,6 +41,8 @@ Logische elektronische Berichtsfunktionen (EB) können verwendet werden, um mit 
 | [Nicht](er-functions-logical-not.md)                       | Diese Funktion gibt den umgekehrten logischen Wert der angegebenen Bedingung als *booleschen* Wert zurück. |
 | [Or](er-functions-logical-or.md)                         | Diese Funktion gibt den *booleschen* Wert **FALSE** zurück, wenn alle angegebenen Bedingungen falsch sind. Wenn eine der angegebenen Bedingungen wahr ist, gibt die Funktion den *booleschen* Wert **TRUE** zurück. |
 | [ValueIn](er-functions-logical-valuein.md)               | Diese Funktion bestimmt, ob die Eingabe mit einem angegebenen Wert eines angegebenen Artikels in der angegebenen Liste übereinstimmt. Sie gibt den *booleschen* Wert **TRUE** zurück, wenn die angegebene Eingabe mit dem Ergebnis der Ausführung des angegebenen Ausdrucks für mindestens einen Datensatz der entsprechenden Liste übereinstimmt. Andernfalls gibt sie den *booleschen* Wert **FALSE** zurück. |
+| [ValueInLarge](er-functions-logical-valueinlarge.md)     | Diese Funktion bestimmt, ob die angegebene Eingabe des Typs *Int64* oder *Integer* mit irgendeinem Wert eines angegebenen Artikels in der angegebenen Liste übereinstimmt. Sie gibt den *booleschen* Wert **TRUE** zurück, wenn die angegebene Eingabe mit dem Ergebnis der Ausführung des angegebenen Ausdrucks für mindestens einen Datensatz der entsprechenden Liste übereinstimmt. Andernfalls gibt sie den *booleschen* Wert **FALSE** zurück. |
+
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

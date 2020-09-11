@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f045cb7ab9f5e7aa4259f29e1b026f110425c236
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: 43c16c5d0de91bf1f433f4fde36e7d13775f44a0
+ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3429058"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3712162"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Urlaubs- und Abwesenheitspläne antizipieren
 
@@ -37,7 +37,9 @@ Sie können Urlaub und Abwesenheit in Dynamics 365 Human Resources für mehrere 
 
 3. Das Dialogfeld **Urlaubs- und Abwesenheitspläne** wird angezeigt. Unter **Aufgelaufen ab** wählen Sie entweder **Heutiges Datum** oder wählen Sie **Benutzerdefiniertes Datum** und geben Sie ein benutzerdefiniertes Datum ein.
 
-4. Wenn Sie den Erfassungsprozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:
+4. Wenn Sie Rückstellungen für alle Unternehmen erstellen möchten, wählen Sie **Alle Unternehmen** aus. Wenn Sie Rückstellungen für einen einzelnen Urlaubsplan bearbeiten möchten, wählen Sie **Nein** für **Alle Pläne** aus, und dann wählen Sie **Urlaubsplan** aus. Wenn Sie alle Unternehmen auswählen, können Sie keinen einzelnen Urlaubsplan auswählen. 
+
+5. Wenn Sie den Erfassungsprozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:
 
    1. Geben Sie Informationen für den Erfassungsprozess ein.
 
@@ -55,7 +57,9 @@ Sie können Urlaub und Abwesenheit in Dynamics 365 Human Resources für mehrere 
 
 3. Das Dialogfeld **Urlaubs- und Abwesenheitspläne** wird angezeigt. Unter **Aufgelaufen ab** wählen Sie entweder **Heutiges Datum** oder wählen Sie **Benutzerdefiniertes Datum** und geben Sie ein benutzerdefiniertes Datum ein.
 
-4. Wenn Sie den Erfassungsprozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:
+4. Wenn Sie Rückstellungen für alle Unternehmen erstellen möchten, wählen Sie **Alle Unternehmen** aus. Wenn Sie Rückstellungen für einen einzelnen Urlaubsplan bearbeiten möchten, wählen Sie **Nein** für **Alle Pläne** aus, und dann wählen Sie **Urlaubsplan** aus. Wenn Sie alle Unternehmen auswählen, können Sie keinen einzelnen Urlaubsplan auswählen. 
+
+5. Wenn Sie den Erfassungsprozess im Hintergrund ausführen möchten, wählen Sie **Im Hintergrund ausführen** und führen Sie die folgenden Aufgaben aus:
 
    1. Geben Sie Informationen für den Erfassungsprozess ein.
 
@@ -102,18 +106,6 @@ Löschen Sie Abgrenzungssätze für einen bestimmten Plan und Zeitraum. Abgrenzu
 1. Auf der Seite **Urlaub- und Abwesenheit** klicken Sie auf die Registerkarte **Links**.
 
 2. Unter **Urlaub verwalten**, wählen Sie **Aufgelaufene Urlaubs- und Abwesenheitsprüfung löschen**.
-
-## <a name="configure-preview-features"></a>Vorschaufunktionen konfigurieren
-
-[!include [banner](includes/preview-feature-leave-absence.md)]
-
-Wenn Sie die Vorschaufunktionen für Urlaub und Abwesenheit aktiviert haben, müssen Sie auch die Einstellungen für sie konfigurieren.
-
-### <a name="accrue-leave-per-company-or-per-leave-plan"></a>Antizipieren von Urlaub pro Unternehmen oder pro Urlaubsplan
-
-Wenn Sie Urlaubs- und Abwesenheitspläne antizipieren, können Sie festlegen, dass alle Unternehmen antizipiert werden. Wenn Sie alle Unternehmen auswählen, können Sie keine individuellen Urlaubspläne auswählen. Wenn Sie nicht für alle Unternehmen antizipieren möchten, können Sie für einen bestimmten Urlaubsplan antizipieren. 
-
-Diese Optionen stehen allen Mitarbeitern oder einzelnen Mitarbeitern zur Verfügung. 
 
 ## <a name="see-also"></a>Siehe auch
 

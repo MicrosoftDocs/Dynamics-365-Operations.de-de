@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: b10e5f0fe97e65ad380e85815c56e88a3ce4e303
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: a2ca0ce277a062c8d525b6a3619eaf1b0114667b
+ms.sourcegitcommit: 18c5ef10e311f3dd2dbf45c6439ae6beff921af8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443894"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "3719263"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Prospect-to-cash in Dual-write
 
@@ -79,7 +79,7 @@ Wenn Sie auch die Field Service-Lösung verwenden, müssen Sie den **Angebotsanf
 
 Kundenaufträge können entweder im Vertrieb oder im Supply Chain Management angelegt werden. Wenn Sie einen Kundenauftrag in Sales anlegen, wird er in Echtzeit mit dem Supply Chain Management synchronisiert. Wenn Sie einen Kundenauftrag im Supply Chain Management anlegen, wird er ebenfalls in Echtzeit mit Sales synchronisiert. Beachten Sie die folgenden Punkte:
 
-+ Sie können Aufträge aus Sales nur dann aktivieren und synchronisieren, wenn alle Produkte auf dem Auftrag aus Finance and Operations-Anwendungen stammen. Daher kann es keine nicht-beschreibbare Produkte geben.
++ Manuell zu erfassende Produkte in Dynamics 365 Sales werden als Produktkategorien in Dynamics 365 Supply Chain Management angezeigt.
 + Rabattberechnung und Rundung:
 
     - Das Rabattberechnungsmodell in Sales unterscheidet sich insofern vom Modell im Bereich Supply Chain Management. In Supply Chain Management kann der endgültige Rabattbetrag in einer Sales-Position die Ergebnisse einer Kombination von Rabattbeträgen und von Rabattprozentsätzen sein. Bei der abschließenden Rabattbetrag durch die Menge für die Position geteilt wird, kann möglicherweise das Runden auftreten. Diese Rundung wird jedoch nicht berücksichtigt, wenn ein gerundeter Rabattbetrag pro Einheit mit dem Vertrieb synchronisiert wird. Um sicherzustellen, dass der volle Rabattbetrag einer Verkaufszeile im Supply Chain Management korrekt mit Sales synchronisiert wird, muss der volle Betrag synchronisiert werden, ohne durch die Zeilenmenge geteilt zu werden. Daher müssen Sie die Rabattberechnungsmethode als **Zeilenposition** im Verkauf definieren.

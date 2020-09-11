@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: conradv
 ms.search.validFrom: 2019-10-14
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5006f06d90ddcc314a51878e9e21337de7d493e7
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 079c8d23250368c92e5d79f0e2624f8340db2077
+ms.sourcegitcommit: c009ec75f53872272f11c92a1ce81a391e3845a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208460"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "3699535"
 ---
 # <a name="hazardous-materials"></a>Gefahrengüter
 
@@ -35,7 +35,7 @@ Informationen zu Gefahrstoffen werden in der Produktinformationsverwaltung einge
 Wenn Sie Materialien versenden, die als Gefahrgut eingestuft sind, müssen der Sendung zusätzliche Unterlagen beigefügt werden. Mit der Gefahrstofffunktionalität können Kunden Klassifizierungsinformationen speichern und zuweisen, um Artikel freizugeben. Diese Informationen können dann zur Vorbereitung der Versanddokumentation verwendet werden.
 
 > [!IMPORTANT]
-> Zur Erleichterung der Verwaltung von Gefahrgutlieferungen ermöglicht Microsoft Dynamics 365 Supply Chain Management Ihnen, zusätzliche Referenzinformationen einzurichten, die sich auf Produkte beziehen. Sie können auch zusätzliche Versanddokumente einrichten. Das System entspricht jedoch nicht automatisch den Bestimmungen Ihres Landes oder Ihrer Region. Stattdessen kommt ein Tool zum Einsatz, das Ihr Programm insgesamt unterstützt.
+> Die Gefahrstoff-Funktionen in Microsoft Dynamics 365 Supply Chain Management bieten eine Sammlung nützlicher Produktinformationsfelder und verknüpfte Funktionen an, mit denen Sie Informationen erfassen und auf sie verweisen können, die sich auf Ihre Gefahrengüter beziehen. Diese Funktionen können Ihnen auch beim Entwerfen und Drucken von Versanddokumenten helfen, die einige der gleichen Informationen zu gefährlichen Stoffen enthalten, die Sie versenden. Durch das System werden Sie jedoch nicht automatisch alle geltenden Bestimmungen in Ihrem Land oder Ihrer Region einhalten. Obwohl diese Tools Ihnen dabei helfen sollen, die gängigen Vorschriften einzuhalten, sind sie an sich weder ausreichend noch garantieren Sie deren vollständige Einhaltung. Ihre Organisation ist dafür verantwortlich, alle geltenden Vorschriften zu kennen und alle erforderlichen Schritte zu unternehmen, um diese einzuhalten.
 
 Bevor Sie diese Funktionalität nutzen können, müssen Sie folgende Einstellungen vornehmen:
 

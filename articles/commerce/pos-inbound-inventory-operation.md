@@ -3,7 +3,7 @@ title: Eingangsbestandsvorgang in POS
 description: Dieses Thema beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
 author: hhaines
 manager: annbe
-ms.date: 07/27/2020
+ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: aba4f2d7932ebc3a0129f04c60c8b6358da68c64
-ms.sourcegitcommit: 0aabe4157f82d8c59dd2d285ab0b33f3c8ec5bbc
+ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
+ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3627537"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "3710308"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingangsbestandsvorgang in POS
 
@@ -143,6 +143,20 @@ Der Vorgang respektiert die Konfiguration **Leerbeleg zulässig** Konfiguration 
 ### <a name="receive-all"></a>Alle empfangen
 
 Bei Bedarf können Sie in der Anwendungsleiste **Alles empfangen** wählen, um die **Jetzt empfangen** Menge für alle Belegzeilen schnell auf den maximalen Wert zu aktualisieren, der für diese Zeilen zum Empfang verfügbar ist.
+
+### <a name="receipt-of-unplanned-items-on-purchase-orders"></a>Erhalt ungeplanter Artikel bei Bestellungen
+
+In Commerce Version 10.0.14 und höher können Benutzer ein Produkt erhalten, das ursprünglich nicht in der Bestellung enthalten war. Um diese Funktion zu aktivieren, aktivieren Sie **Der Bestellung des Verkaufsstellenzugangs Positionen hinzufügen**.  
+
+Diese Funktion funktioniert nur für den Zugang von Bestellungen. Es ist nicht möglich, Artikel bei Umlagerungsaufträgen zu erhalten, wenn die Artikel zuvor nicht bestellt und aus dem Ausgangslager versendet wurden.
+
+Benutzer können der Bestellung während des POS-Zugangs keine neuen Produkte hinzufügen, wenn der [Änderungsverwaltungsworkflow](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) für die Bestellung in der Commerce-Zentrale (HQ) aktiviert ist. Um die Änderungsverwaltung zu aktivieren, müssen alle Änderungen an einer Bestellung zuerst genehmigt werden, bevor der Zugang zulässig ist. Da dieser Prozess es einem Empfänger ermöglicht, der Bestellung neue Positionen hinzuzufügen, schlägt der Zugang fehl, wenn der Änderungsverwaltungs-Workflow aktiviert ist. Wenn die Veränderungsverwaltung für alle Bestellungen oder für den Lieferanten aktiviert ist, der mit der Bestellung verknüpft ist, die aktiv am POS zugeht, kann der Benutzer der Bestellung während des Zugangs am POS keine neuen Produkte hinzufügen.
+
+Die Funktion zum Hinzufügen von Positionen kann nicht als Problemumgehung für den Zugang zusätzlicher Mengen von Produkten verwendet werden, die bereits in der Bestellung enthalten sind. Überhöhter Zugang wird über den Standard verwaltet [Überhöhter Zugang](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations)-Einstellungen für die Produktposition in der Bestellung.
+
+Wenn **Der Bestellung während des Zugangs an der Verkaufsstelle Positionen hinzufügen** aktiviert ist und ein Benutzer mit dem **Eingehender Vorgang** in POS empfängt, die nicht als Artikel in der aktuellen Bestellung erkannt wird, aber als gültiger Artikel erkannt wird, erhält der Benutzer eine Nachricht über das Hinzufügen des Artikels zur Bestellung. Wenn der Benutzer den Artikel zur Bestellung hinzufügt, wird die in **Jetzt zugegangen** eingegebene Menge als bestellte Menge für die Bestellposition betrachtet.
+
+Wenn der Bestellzugang vollständig ist und zur Bearbeitung an die Zentrale übermittelt wurde, werden die hinzugefügten Positionen im Bestellungszentraldokument erstellt. In der Bestellposition in der Zentrale befindet sich eine Kennzeichnung **Hinzugefügt von POS** in der Registerkarte **Allgemein** der Bestellposition. Die Kennzeichnung **Hinzugefügt von POS** zeigt an, dass die Bestellposition durch den POS-Zugangsprozess hinzugefügt wurde und keine Position war, die sich vor dem Zugang in der Bestellung befand.
 
 ### <a name="cancel-receiving"></a>Empfang stornieren
 
