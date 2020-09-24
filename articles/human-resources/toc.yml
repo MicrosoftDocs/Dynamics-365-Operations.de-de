@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: 3. September 2020
+          href: hr-whats-new-2020-09-03.md
         - name: "20.\_August\_2020"
           href: hr-whats-new-2020-08-20.md
         - name: "6.\_August\_2020"
@@ -23,12 +25,12 @@
           href: hr-whats-new-2020-05-14.md
         - name: "1.\_Mai\_2020"
           href: hr-whats-new-2020-05-01.md
-        - name: "13.\_April\_2020"
-          href: hr-whats-new-2020-04-13.md
-        - name: "3.\_April\_2020"
-          href: hr-whats-new-2020-04-03.md
-        - name: "Archive mit Neuigkeiten\_2020"
+        - name: "Archive mit Neuerungen\_2020"
           items:
+            - name: "13.\_April\_2020"
+              href: hr-whats-new-2020-04-13.md
+            - name: "3.\_April\_2020"
+              href: hr-whats-new-2020-04-03.md
             - name: "24.\_März\_2020"
               href: hr-whats-new-2020-03-24.md
             - name: "19.\_März\_2020"
@@ -301,7 +303,7 @@
       items:
         - name: Übersicht
           href: hr-hrpro-overview.md
-        - name: Personalverwaltung einrichten
+        - name: Human Resources einrichten
           items:
             - name: Human Resources-Parameter konfigurieren
               href: hr-setup-parameters.md

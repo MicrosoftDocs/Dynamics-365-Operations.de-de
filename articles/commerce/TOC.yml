@@ -92,6 +92,8 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Commerce-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.14 (November 2020)
+                      href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (Oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
                     - name: "Commerce 10.0.12 (August\_2020)"
@@ -242,7 +244,7 @@
                   href: retail-hardware-station-configuration-installation.md
                 - name: Massenbereitstellung der Self-Service-Komponenten
                   href: dev-itpro/retail-mass-deployment.md
-                - name: Einzelhandelskomponentenereignisse für Diagnose und Problembehandlung
+                - name: Commerce-Komponentenereignisse für Diagnose und Problembehandlung
                   href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
                 - name: Ein bereitstellbares Paket anwenden
                   href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?toc=/dynamics365/commerce/toc.json
@@ -422,7 +424,7 @@
                           href: pos-sales-groups-track-commissions.md
                     - name: Geräteaktivierung
                       items:
-                        - name: 'Konfigurieren, Installieren und Aktivieren von MPOS'
+                        - name: 'MPOS konfigurieren, installieren und aktivieren'
                           href: retail-modern-pos-device-activation.md
                         - name: Erweiterte Anmeldungsfunktionen für MPOS und Cloud POS einrichten
                           href: extended-logon.md
@@ -522,15 +524,17 @@
                       href: payinvoice.md
                     - name: Doppelte Zahlungen vermeiden
                       href: duplicate-payment-protection.md
-                    - name: Überblick über Omnichannel-Zahlungen
+                    - name: Übersicht über Omnichannel-Zahlungen
                       href: omni-channel-payments.md
-                    - name: Omnichannel-Handelsauftragszahlungen
+                    - name: Omnichannel-Commerce-Auftragszahlungen
                       href: dev-itpro/commerce-payments.md
+                    - name: Kreditkarten ohne Hardware Station verarbeiten
+                      href: dev-itpro/cnp-pos.md
                     - name: FAQ zu Zahlungen
                       href: dev-itpro/payments-retail.md
-                - name: Bing Maps für Ihr Unternehmen verwalten
+                - name: Bing Karten für Ihr Unternehmen verwalten
                   href: dev-itpro/manage-bing-maps.md
-        - name: Verkaufsförderung für Produkte und Services
+        - name: Verkaufsförderung für Produkte und Dienstleistungen
           items:
             - name: 'Kategorien, Produkte und Sortimente'
               items:
@@ -700,7 +704,7 @@
           items:
             - name: Debitorenaufträge
               items:
-                - name: Debitorenaufträge in MPOS
+                - name: Debitorenaufträge in Point of Sale (POS)
                   href: customer-orders-overview.md
                 - name: Hybriddebitorenaufträge
                   href: hybrid-customer-orders.md
@@ -736,7 +740,7 @@
                   href: orderexchanges.md
                 - name: Zahlungsmethoden für Retouren ohne Beleg beschränken
                   href: payment-methods-restrictions.md
-                - name: Artikel über mehrere Debitorenaufträgen und Rechnungen zurückgeben
+                - name: Artikel über mehrere Debitorenaufträge und Rechnungen zurückgeben
                   href: multireturn.md
                 - name: Retouren- und Rückerstattungsrichtlinie für einen Kanal erstellen und aktualisieren
                   href: refund_policy_returns.md
@@ -826,6 +830,8 @@
                   href: custom-pages-user-logins.md
                 - name: Mehrere B2C-Mandanten in einer Commerce-Umgebung konfigurieren
                   href: configure-multi-B2C-tenants.md
+                - name: Domänen in Dynamics 365 Commerce
+                  href: domains-commerce.md
                 - name: Unterstützung für ein Content Delivery Network (CDN) hinzufügen
                   href: add-cdn-support.md
                 - name: Standortbasierte Shop-Erkennung aktivieren
@@ -988,8 +994,10 @@
                       href: add-buy-box.md
                     - name: Mediengaleriemodul
                       href: media-gallery-module.md
-                    - name: Bewertungs- und Prüfungsmodule
+                    - name: Bewertungs‑ und Prüfungsmodule
                       href: ratings-reviews-modules.md
+                    - name: Social Share-Modul
+                      href: social-share-module.md
                 - name: Kaufmodule
                   items:
                     - name: Einkaufswagenmodul
@@ -1026,7 +1034,13 @@
                   items:
                     - name: Breadcrumb-Modul
                       href: add-breadcrumb.md
-            - name: Suchen
+                    - name: Navigationsmenümodul
+                      href: nav-menu-module.md
+                - name: Compliance-Module
+                  items:
+                    - name: Cookie-Zustimmungsmodul
+                      href: cookie-consent-module.md
+            - name: Suche
               items:
                 - name: Übersicht zur Zielseite der Standardkategorie und der Suchergebnisseite
                   href: category-search-page-overview.md
@@ -1652,9 +1666,9 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
                 - name: Ausführung von ER-Formatelementen verzögern
                   items:
-                    - name: Ausführung eines Sequenzelements verzögern
+                    - name: Ausführung von Sequenz-Elementen in ER-Formaten verzögern
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Ausführung eines XML-Elements verzögern
+                    - name: Ausführung von XML-Elementen in ER-Formaten verzögern
                       href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
             - name: Elektronische Berichtslösungen in Finance and Operations verwenden
               items:

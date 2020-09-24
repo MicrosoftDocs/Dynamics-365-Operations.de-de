@@ -5,9 +5,11 @@
       items:
         - name: Erste Schritte mit Talent
           href: talent-get-started.md
-        - name: Neuigkeiten oder Änderungen in Talent
+        - name: Neuerungen oder Änderungen in Talent
           href: whats-new.md
           items:
+            - name: 1. September 2020
+              href: whats-new-talent-september-01-2020.md
             - name: "21.\_Januar\_2020"
               href: whats-new-talent-january-21-2020.md
             - name: "14.\_Januar\_2020"
