@@ -70,12 +70,12 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Startseite von Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.14 (November 2020)
+                      href: get-started/whats-new-scm-10-0-14.md
                     - name: "Supply Chain Management 10.0.13 (Oktober\_2020)"
                       href: get-started/whats-new-scm-10-0-13.md
                     - name: "Supply Chain Management\_10.0.12 (August\_2020)"
                       href: get-started/whats-new-scm-10-0-12.md
-                    - name: "Supply Chain Management\_10.0.11 (Juli 2020)"
-                      href: get-started/whats-new-scm-10-0-11.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Dynamics 365 Supply Chain Management
@@ -329,13 +329,13 @@
                   href: asset-management/work-orders/procurement.md
                 - name: Die manuelle Aktualisierung von Anlagenzählern
                   href: asset-management/work-orders/manual-update-of-asset-counters.md
-                - name: Die automatische Aktualisierung von Anlagenzählern
+                - name: Automatische Aktualisierung von Anlagenzählern
                   href: asset-management/work-orders/automatic-update-of-asset-counters.md
                 - name: Wartungsprüflisten
                   href: asset-management/work-orders/maintenance-checklists.md
-                - name: Wartungsausfallzeit
+                - name: Wartungsausfallzeiten für Arbeitsaufträge
                   href: asset-management/work-orders/maintenance-downtime.md
-                - name: Fügen Sie Fehler zum Arbeitsauftrag hinzu
+                - name: Fehler zum Arbeitsauftrag hinzufügen
                   href: asset-management/work-orders/add-fault-to-work-order.md
                 - name: Arbeitsauftragsbericht
                   href: asset-management/work-orders/work-order-report.md
@@ -367,7 +367,7 @@
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-schedule-cost.md
                 - name: Arbeitsaufträge erstellen
                   href: asset-management/preventive-and-reactive-maintenance/creating-work-orders.md
-                - name: Wartungsausfallzeit
+                - name: Wartungsausfallaktivitäten
                   href: asset-management/preventive-and-reactive-maintenance/maintenance-stop.md
             - name: Kapazitätsplanung
               items:
@@ -1345,26 +1345,30 @@
               items:
                 - name: Übersicht zur Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Planung mit negativen Vorgabemengen
-                  href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Erste Schritte mit der Planungsoptimierung
                   href: master-planning/planning-optimization/get-started.md
                 - name: Passanalyse zu Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
-                - name: Anwenden von Filtern auf einen Plan
+                - name: Filter auf einen Plan anwenden
                   href: master-planning/planning-optimization/plan-filters.md
-                - name: Masterplanung mit Kaufhandelsvereinbarungen
+                - name: Produktprogrammplanung mit Kaufhandelsvereinbarungen
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
-                - name: Planhistorie- und Planungsprotokolle anzeigen
-                  href: master-planning/planning-optimization/plan-history-logs.md
+                - name: Sicherheitszuschläge
+                  href: master-planning/planning-optimization/safety-margins.md
+                - name: Bestellvorschläge genehmigen
+                  href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Automatische Umwandlung mit Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Planung mit negativen Vorgabemengen
+                  href: master-planning/planning-optimization/negative-on-hand.md
+                - name: Planhistorie und Planungsprotokolle anzeigen
+                  href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Planungsvorgang abbrechen
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Erweiterbarkeit der Planungsoptimierung
-                  href: master-planning/planning-optimization/extensibility.md
                 - name: Fehlerbehebung bei der Planungsoptimierung
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+                - name: Erweiterbarkeit der Planungsoptimierung
+                  href: master-planning/planning-optimization/extensibility.md
             - name: Produktprogrammpläne
               items:
                 - name: Übersicht über Produktprogrammpläne
@@ -2621,6 +2625,8 @@
                   items:
                     - name: Clusterkommissionierung einrichten
                       href: warehousing/set-up-cluster-picking.md
+                    - name: Clusterposition voll
+                      href: warehousing/cluster-position-full.md
                     - name: Systemgeleitete Clusterkommissionierung
                       href: warehousing/system-directed-cluster-pick.md
                     - name: Verpacken in Container einrichten

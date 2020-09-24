@@ -70,7 +70,9 @@
                   items:
                     - name: Neuerungen oder Änderungen auf der Finance-Startseite
                       href: get-started/whats-new-home-page.md
-                    - name: "Finanzen 10.0.13 (Oktober\_2020)"
+                    - name: Finance 10.0.14 (November 2020)
+                      href: get-started/whats-new-changed-10-0-14.md
+                    - name: Finance 10.0.13 (Oktober 2020)
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: "Finance 10.0.12 (August\_2020)"
                       href: get-started/whats-new-changed-10-0-12.md
@@ -412,6 +414,8 @@
                   href: accounts-receivable/set-up-collections.md
                 - name: Inkassoinformationen überprüfen
                   href: accounts-receivable/tasks/review-collections-information.md
+                - name: Automatisierung des Inkasso-Prozesses
+                  href: accounts-receivable/collections-process-automate.md
                 - name: Kreditverwaltungseinstellungen
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Informationen der Kreditverwaltungseinstellungen
@@ -756,6 +760,8 @@
                   href: fixed-assets/175-percent-reducing-balance-depreciation.md
                 - name: Degressive Abschreibung (200 Prozent)
                   href: fixed-assets/200-percent-reducing-balance-depreciation.md
+                - name: Methodik der halbjährlichen Abschreibungskonvention
+                  href: fixed-assets/half-year-depreciation-methodology.md
                 - name: Vorzeitige Abschreibung
                   href: fixed-assets/bonus-depreciation.md
                 - name: Vorzeitige Abschreibung einrichten
@@ -1013,7 +1019,27 @@
             - name: Ein Angebot zu einem Projekt übertragen
               href: project-management/transfer-quote-new-existing-project.md
             - name: Projektressourcenzuordnung
-              href: project-management/project-resourcing.md
+              items:
+                - name: Übersicht über Projektressourcenzuordnung
+                  href: project-management/project-resourcing.md
+                - name: Projektressourcen einrichten
+                  href: project-management/set-up-project-resources.md
+                - name: Ressourcenkompetenzen verwalten
+                  href: project-management/manage-resource-competencies.md
+                - name: Neues Projekt erstellen
+                  href: project-management/create-new-project.md
+                - name: Rollenbasierte Preisgestaltung einrichten
+                  href: project-management/set-up-role-based-pricing.md
+                - name: Projektteam erstellen
+                  href: project-management/create-project-team.md
+                - name: Ressourcenkapazität synchronisieren
+                  href: project-management/synchronize-resource-capacity.md
+                - name: Leistung der Projektressourcenplanung
+                  href: project-management/project-scheduling-performance.md
+                - name: Rollen in Vorlagen für Projektstrukturpläne einrichten
+                  href: project-management/set-up-roles-wbs-template.md
+                - name: Ressourcenerfüllung für geplante Ressourcen
+                  href: project-management/resource-fulfillment-planned-resources.md
             - name: Artikel zu Bestellung aus Artikelbedarf empfangen
               href: project-management/tasks/receive-items-purchase-order-item-requirement.md
             - name: Projektstrukturpläne
@@ -1224,13 +1250,23 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: MwSt.-Abrechnung
                   href: localizations/emea-aut-vat-statement-details.md
+            - name: Bahrain
+              items:
+                - name: Bahrain – Übersicht
+                  href: localizations/bahrain.md
+                - name: Rechnungslayout für Bahrain konfigurieren
+                  href: localizations/emea-bhr-invoice-layout.md
+                - name: MwSt.-Erklärung für Bahrain
+                  href: localizations/emea-bhr-vat-declaration.md
+                - name: Rechnungsabgangsfrist
+                  href: localizations/gcc-invoice-issue-deadline.md
             - name: Belgien
               items:
                 - name: Belgien – Übersicht
                   href: localizations/belgium.md
                 - name: CODA-Bankauszug
                   href: localizations/emea-bel-coda-bank-statement-import.md
-                - name: Erstellen und Übertragen von Buchungen an das BLWI
+                - name: Buchungen an das BLWI erstellen und übertragen
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
                 - name: INTERVAT-Steuererklärung
                   href: localizations/emea-bel-intervat-tax-declaration.md
@@ -1496,6 +1532,8 @@
                   href: localizations/emea-amount-printing-forms.md
                 - name: MwSt.-Abrechnung
                   href: localizations/emea-cze-vat-statement-details.md
+                - name: MwSt.-Erklärung (Tschechische Republik)
+                  href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Jahresendabschluss
                   href: localizations/emea-cze-hun-year-end.md
             - name: Dänemark
@@ -1780,6 +1818,8 @@
                   href: localizations/emea-cze-hun-year-end.md
                 - name: Online-Fakturierungssystem
                   href: localizations/emea-hun-online-invoicing.md
+                - name: Verzögerte Mehrwertsteuerberechnungen
+                  href: localizations/emea-hun-deferred-vat.md
             - name: Island
               items:
                 - name: Island – Übersicht
@@ -2238,6 +2278,10 @@
                   href: localizations/tasks/use-assemble-list-fixed-asset.md
                 - name: Liste zum Auflösen für Anlagen verwenden
                   href: localizations/tasks/use-disassemble-list-fixed-assets.md
+            - name: Kuwait
+              items:
+                - name: "Kuwait\_– Übersicht"
+                  href: localizations/kuwait.md
             - name: Lettland
               items:
                 - name: Lettland – Übersicht
@@ -2288,6 +2332,8 @@
                   href: localizations/tasks/my-00007-self-billed-invoices.md
                 - name: GST-Entlastungsklauseln einrichten
                   href: localizations/tasks/my-00006-01-gst-relief-clauses.md
+                - name: SST-02-Erklärung für Malaysia
+                  href: localizations/apac-mys-sst-declaration.md
             - name: Mexiko
               items:
                 - name: Mexiko – Übersicht
@@ -2328,6 +2374,10 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Lieferantenregistrierungskennungen
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
+            - name: Oman
+              items:
+                - name: Oman – Übersicht
+                  href: localizations/oman.md
             - name: Niederlande
               items:
                 - name: Niederlande – Übersicht
@@ -2386,6 +2436,10 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Geteilte Kreditoren/Debitoren-Wechselkursdifferenz
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+            - name: Katar
+              items:
+                - name: "Katar\_– Übersicht"
+                  href: localizations/qatar.md
             - name: Russland
               items:
                 - name: Russland – Übersicht
@@ -2724,11 +2778,13 @@
                   href: localizations/noam-usa-year-end-1099-reporting.md
                 - name: Formular 1099 für den öffentlichen Sektor
                   href: localizations/noam-usa-form-1099-public-sector.md
-        - name: Personalverwaltung
+                - name: "Kreditoren für Steuererklärung (US\_1099) einrichten"
+                  href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
+        - name: Human Resources
           items:
-            - name: Personalverwaltung – Übersicht
+            - name: "Human Resources\_– Übersicht"
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Personalverwaltung einrichten
+            - name: Human Resources einrichten
               items:
                 - name: Personalverwaltungsparameter konfigurieren
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
@@ -2970,6 +3026,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Standardberichterstellung in IaaS-Umgebungen
                   href: ../fin-ops-core/dev-itpro/analytics/reporting-experience-iias-environments.md?toc=/dynamics365/finance/toc.json
+                - name: Vorschauoptionen für Dokumentberichte
+                  href: ../fin-ops-core/dev-itpro/analytics/reporting-printing-preview-page-options.md
                 - name: Drucken
                   items:
                     - name: Übersicht zum Dokumentendruck
@@ -3436,8 +3494,12 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: 'Unformatiertes XML verwenden, um Inhalte hinzuzufügen'
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/finance/toc.json
-                    - name: Unterstützung für Parameter bei Aufrufen von Datenquellen BERECHNETES FELD
-                      href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                    - name: Unterstützung für Parameter bei Aufrufen von BERECHNETES FELD-Datenquellen
+                      items:
+                        - name: Benutzererfahrung und Wartung der Benutzerfreundlichkeit verbessern
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/finance/toc.json
+                        - name: Datenzugriffsleistung verbessern
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/finance/toc.json
                     - name: Unternehmensübergreifende ER-Datenquellen
                       href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: FINANZDIMENSIONSDETAILS-Datenquellen verwenden
