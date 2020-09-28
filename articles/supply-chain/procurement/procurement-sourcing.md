@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a23e445fa6a3133c5248aef1e5dc9fdf5aeb162
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3209213"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813833"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beschaffungs-Startseite
 
@@ -55,7 +55,7 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Kreditorenzusammenarbeit mit Debitoren](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Benutzer für Kreditor-Kooperationen verwalten](manage-vendor-collaboration-users.md)
 -   [Kreditorenzusammenarbeit einrichten und verwalten](set-up-maintain-vendor-collaboration.md)
--   [Demo-Skript für die Lieferungsbestandsprozesse für Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(White Paper)
+-   [Demo-Skript für die Lieferungsbestandsprozesse für Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(White Paper)
 -   [Lagerbestand mithilfe der Kreditorenkooperation überwachen](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Zusammenarbeit mit Lieferanten über das Lieferantenportal](collaborate-vendors-vendor-portal.md) (nur Februar 2016 und Mai 2016 Versionen von Dynamics AX).
 -   [Lieferantenportal Benutzersicherheit](configure-security-vendor-portal-users.md) (nur Versionen 2016 und Mai 2016 von Finance and Operations)
@@ -98,7 +98,7 @@ Die Beschaffung umfasst alle Schritte von der Identifikation einer Anforderung f
 -   [Beschaffungsworkflows](procurement-sourcing-workflows.md)
 -   [Den Warenzugang auf der Bestellung erfassen](tasks/record-receipt-goods-purchase-order.md)
 -   [Bestellanforderungsworkflow](purchase-requisitions-workflow.md)
--   [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions) (Whitepaper)
+-   [Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://www.microsoft.com/download/details.aspx?id=101821) (Whitepaper)
 -   [Einkaufsrichtlinien – Übersicht](purchase-policies.md)
 -   [Einkaufsrichtlinien erstellen](tasks/create-purchasing-policies.md)
 

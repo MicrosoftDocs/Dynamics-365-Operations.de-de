@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 415e8268c504487f2b66afc2ac9a50de1b538911
-ms.sourcegitcommit: a8201e0b9033c2afc2b1702b0337facaf7ad4b92
+ms.openlocfilehash: 10c843670a280c86790185c8a39cb2943e2838f9
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "3628908"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759934"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produktsuche und Debitorensuche in der Verkaufsstelle (POS)
 
@@ -93,7 +93,7 @@ Bei einer Remote-Debitorensuche wird die Debitorenkennung nicht für Debitoren a
 
 ### <a name="enhancements-to-local-customer-search"></a>Erweiterungen für lokale Debitorensuche
 
-Suchen, die auf der Telefonnummer basieren, sind vereinfacht worden. Diese Suchen ignorieren nun Sonderzeichen, wie Leerzeichen, Bindestriche und Klammern, die möglicherweise hinzugefügt wurden, wenn der Debitor erstellt wurde. Daher müssen Kassierer sich keine Sorgen über das Telefonnummernformat machen, wenn sie suchen. Sie können auch nach Debitoren suchen, indem sie eine unvollständige Telefonnummer eingeben. Wenn eine Telefonnummer Sonderzeichen enthält, kann sie auch gefunden werden, indem nach den Zahlen gesucht wird, die nach den Sonderzeichen angezeigt werden. Wurde beispielsweise die Telefonnummer eines Debitors in der Form **123-456-7890** eingegeben, kann ein Kassierer nach dem Debitor suchen, indem er **123**, **456**, **7890** oder **1234567890** eingibt oder indem er nur die ersten Zahlen einer Telefonnummer eingibt.
+Suchen, die auf der Telefonnummer basieren, sind vereinfacht worden. Diese Suchen ignorieren nun Sonderzeichen, wie Leerzeichen, Bindestriche und Klammern, die möglicherweise hinzugefügt wurden, wenn der Debitor erstellt wurde. Daher müssen Kassierer sich keine Sorgen über das Telefonnummernformat machen, wenn sie suchen. Wurde beispielsweise die Telefonnummer eines Debitors in der Form **123-456-7890** eingegeben, kann ein Kassierer nach dem Debitor suchen, indem er **1234567890** oder indem er nur die ersten Zahlen einer Telefonnummer eingibt.
 
 > [!NOTE]
 > Ein Debitor kann mehrere Telefonnummern und mehrere E-Mails haben. Der Debitorensuchalgorithmus durchsucht auch diese sekundären E-Mails und Telefonnummern, aber auf der Ergebnisseite der Debitorensuche werden nur die primären E-Mails und Telefonnummern angezeigt. Dies kann zu Verwirrung führen, da in den Debitorenergebnissen die gesuchte E-Mail-Adresse oder Telefonnummer nicht angezeigt wird. In einem zukünftigen Release planen wir, die Anzeige der Debitorensuchergebnisse zu verbessern, um diese Informationen anzuzeigen.

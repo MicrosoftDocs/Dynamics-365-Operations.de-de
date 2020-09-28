@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 64626ebdd7fbad3d47a4b4c6bbc45bf3bc0c8277
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
+ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172783"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "3775146"
 ---
 # <a name="dual-write-overview"></a>Dual-Write-Übersicht
 
@@ -34,7 +34,7 @@ ms.locfileid: "3172783"
 
 ## <a name="what-is-dual-write"></a>Was ist Dual-Write?
 
-Dual-Write ist eine Out-of-Box-Infrastruktur, die eine nahezu Echtzeit-Interaktion zwischen modellgesteuerten Anwendungen in Microsoft Dynamics 365 und Finance and Operations Anwendungen ermöglicht. Wenn Daten über Kunden, Produkte, Personen und Abläufe über Anwendungsgrenzen hinweg fließen, werden alle Abteilungen eines Unternehmens in die Lage versetzt, diese Daten zu nutzen.
+Duales Schreiben ist eine vordefinierte Infrastruktur, die eine Interaktion zwischen Customer Engagement-Apps und Finance and Operations-Apps nahezu in Echtzeit ermöglicht. Wenn Daten über Kunden, Produkte, Personen und Abläufe über Anwendungsgrenzen hinweg fließen, werden alle Abteilungen eines Unternehmens in die Lage versetzt, diese Daten zu nutzen.
 
 Dual-Write bietet eine eng gekoppelte, bidirektionale Integration zwischen Finance and Operations Anwendungen und Common Data Service Anwendungen. Jede Datenänderung in Finance and Operations Anwendungen führt zu Schreibvorgängen in Common Data Service, und jede Datenänderung in Common Data Service führt zu Schreibvorgängen in Finance and Operations Anwendungen. Dieser automatisierte Datenfluss bietet eine integrierte Benutzererfahrung über die Anwendungen hinweg.
 
@@ -49,7 +49,7 @@ Die Dual-Write-Infrastruktur ist erweiterbar und zuverlässig und umfasst die fo
 + Synchroner und bidirektionaler Datenfluss zwischen Anwendungen
 + Synchronisierung zusammen mit Spiel-, Pausen- und Aufholmodi zur Unterstützung des Systems im Online- und Offline-/Asynchronmodus.
 + Fähigkeit zur Synchronisierung der Anfangsdaten zwischen den Anwendungen
-+ Konsolidierte Ansicht der Aktivitäts- und Fehlerprotokolle für Datenadministratoren
++ Kombinierte Ansicht der Aktivitäts- und Fehlerprotokolle für Datenadministratoren
 + Möglichkeit, benutzerdefinierte Benachrichtigungen und Schwellenwerte zu konfigurieren und Benachrichtigungen zu abonnieren
 + Intuitive Benutzeroberfläche (UI) für Filterung und Transformationen
 + Fähigkeit, Abhängigkeiten und Beziehungen zwischen den Entitäten festzulegen und anzuzeigen
@@ -59,7 +59,7 @@ Die Dual-Write-Infrastruktur ist erweiterbar und zuverlässig und umfasst die fo
 
 ### <a name="application"></a>Bewerbung
 
-Dual-Write erstellt eine Zuordnung zwischen Konzepten in Finance and Operations-Apps und Konzepten in modellgesteuerten Anwendungen in Dynamics 365. Diese Integration unterstützt die folgenden Szenarien:
+Duales Schreiben erstellt eine Zuordnung zwischen Konzepten in Finance and Operations-Apps und Konzepten in Customer Engagement-Apps. Diese Integration unterstützt die folgenden Szenarien:
 
 + Integrierte Masterdaten von Debitoren
 + Zugang zu Kundenkarten und Belohnungspunkten
@@ -86,23 +86,25 @@ Dual-Write erstellt eine Zuordnung zwischen Konzepten in Finance and Operations-
 Dual-Write bietet Datenintegration über Microsoft Dynamics 365 Apps hinweg. Dieser robuste Rahmen verbindet Umgebungen und ermöglicht die Zusammenarbeit verschiedener Geschäftsanwendungen. Hier sind die wichtigsten Gründe, warum Sie Dual-Write verwenden sollten:
 
 + Dual-Write bietet eine eng gekoppelte, echtzeitnahe und bidirektionale Integration zwischen Finance and Operations-Anwendungen und modellgesteuerten Anwendungen in Dynamics 365. Diese Integration macht Microsoft Dynamics 365 zum One-Stop-Shop für alle Ihre Geschäftslösungen. Kunden, die Dynamics 365 Finance und Dynamics 365 Supply Chain Management verwenden, aber für das Kundenbeziehungsmanagement (CRM) Nicht-Microsoft-Lösungen einsetzen, entscheiden sich für Dynamics 365 wegen der Unterstützung von Dual-Write.
-+ Daten von Kunden, Produkten, Operationen, Projekten und dem Internet der Dinge (Internet of Things, IoT) fließen automatisch durch Dual-Write zu Common Data Service. Diese Verbindung ist sehr nützlich für Unternehmen, die an Microsoft Power Platform-Erweiterungen interessiert sind.
++ Daten von Kunden, Produkten, Operationen, Projekten und dem Internet der Dinge (Internet of Things, IoT) fließen automatisch durch Dual-Write zu Common Data Service. Diese Verbindung ist nützlich für Unternehmen, die an Microsoft Power Platform-Erweiterungen interessiert sind.
 + Die Dual-Write-Infrastruktur folgt dem No-Code/Low-Code-Prinzip. Es ist nur ein minimaler technischer Aufwand erforderlich, um die Standard-Tabelle-zu-Tabelle-Zuordnungen zu erweitern und um benutzerdefinierte Zuordnungen aufzunehmen.
 + Dual-Write unterstützt sowohl den Online- als auch den Offline-Modus. Microsoft ist das einzige Unternehmen, das Unterstützung für den Online- und Offline-Modus bietet.
 
-## <a name="what-does-dual-write-mean-for-users-and-architects-of-crm-products"></a>Was bedeutet Dual-Write für Benutzer und Architekten von CRM-Produkten?
+## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Was bedeutet duales Schreiben für Entwickler und Architekten von Customer Engagement-Apps?
 
-Dual-Write automatisiert den Datenfluss zwischen Finance and Operations Anwendungen und Common Data Service Anwendungen. In zukünftigen Versionen werden Konzepte in modellgesteuerten Anwendungen in Dynamics 365 (z.B. Kunde, Kontakt, Angebot und Bestellung) auf Kunden des mittleren und oberen Mittelstands skaliert.
+Duales Schreiben automatisiert den Datenfluss zwischen Finance and Operations-Apps und Customer Engagement-Apps. Duales Schreiben besteht aus zwei AppSource-Lösungen, die auf Common Data Service installiert sind. Die Lösungen erweitern das Entitätsschema, die Plugins und die Workflows in Common Data Service, damit sie auf ERP-Größe skaliert werden können. Für eine erfolgreiche Implementierung müssen Entwickler und Architekten von Customer Engagement-Apps diese Änderungen verstehen und mit ihren Kollegen bei Finance and Operations-Apps zusammenarbeiten.
 
-In der ersten Version wird der größte Teil der Automatisierung durch Dual-Write-Lösungen abgewickelt. In zukünftigen Versionen werden diese Lösungen Teil von Common Data Service werden. Wenn Sie die bevorstehenden Änderungen an Common Data Service verstehen, können Sie sich langfristig Aufwand sparen. Hier sind einige der entscheidenden Änderungen:
+Um mit Finance and Operations-Anwendungen Parität zu schaffen, nimmt duales Schreiben einige entscheidende Änderungen am Common Data Service-Schema vor. Wenn Sie den Plan verstehen, können Sie in Zukunft einige Entwurfs- und Entwicklungsarbeiten vermeiden.
 
-+ Common Data Service wird neue Konzepte haben, wie z.B. Firma und Partei. Diese Konzepte werden alle Anwendungen betreffen, die auf Common Data Service aufbauen, wie z.B. Dynamics 365 Marketing, Dynamics 365 Sales, Dynamics 365 Customer Service und Dynamics 365 Field Service.
++ Wenn das AppSource-Paket für duales Schreiben installiert ist, verfügt Common Data Service über neue Konzepte wie Unternehmen und Partei. Diese Konzepte helfen Anwendungen, die auf Common Data Service basieren, einschließlich Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service und Dynamics 365 Field Service dabei, nahtlos mit Finance and Operations-Apps zu interagieren.
+
 + Aktivitäten und Notizen werden vereinheitlicht und erweitert, um sowohl die C1 (Benutzer des Systems) als auch die C2 (Kunden des Systems) zu unterstützen.
-+ Hier sind einige der bevorstehenden Änderungen in Common Data Service:
 
-    - Der dezimale Datentyp wird den Gelddatentyp ersetzen.
-    - Die Datumsgültigkeit wird vergangene, gegenwärtige und zukünftige Daten an der gleichen Stelle unterstützen.
-    - Es wird mehr Unterstützung für Währung und Wechselkurse geben, und die **Wechselkurs** Programmierschnittstelle (API) wird überarbeitet.
-    - Einheitenumrechnungen werden unterstützt.
++ Um Datenverlust während der Währungsübertragung zwischen Finance and Operations-Apps und dem Common Data Service zu verhindern, können Sie die Anzahl der Dezimalstellen im Währungsdatentyp der Customers Engagement-Apps erweitern. Die Funktion übersetzt automatisch vorhandene Datensätze auf der Metadatenebene in den neuen erweiterten Status. Während dieses Vorgangs wird der Währungswert in Dezimaldaten und nicht in Gelddaten umgerechnet, und der Währungswert unterstützt 10 Dezimalstellen. Diese Funktion ist aktiviert, und Unternehmen, die nicht mehr als 4 Dezimalstellen benötigen, müssen dies nicht aktivieren. Weitere Informationen finden Sie unter [Migration vom Währungsdatentyp für duales Schreiben](currrency-decimal-places.md).
 
-Weitere Informationen über bevorstehende Änderungen finden Sie unter [Daten in Common Data Service - Phase 1 unf 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-common-data-service-phase-1).
++ [Datumsgültigkeit](../../dev-tools/date-effectivity.md) wird Common Data Service hinzugefügt. Sie wird vergangene, gegenwärtige und zukünftige Daten in der gleichen Entität unterstützen.
+
++ Produkt-[Einheitenumrechnungen](../../../../supply-chain/pim/tasks/manage-unit-measure.md) werden für Produkte, Angebote, Bestellungen und Rechnungen unterstützt.
+
+Weitere Informationen zu bevorstehenden Änderungen finden Sie unter [Neuerungen oder Änderungen beim dualen Schreiben](whats-new-dual-write.md).
+

@@ -3,7 +3,7 @@ title: Hinzufügen einer Datenschutzrichtlinienseite
 description: In diesem Thema wird beschrieben, wie Sie eine Datenschutzrichtlinienseite zu Ihrer Site in Microsoft Dynamics 365 Commerce hinzufügen.
 author: v-chgri
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2ee361c2e99b79e503e8d94c12602f9427f1ed5c
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: ce6491d176f90717877f084b11546010084c5f3b
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686694"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761272"
 ---
 # <a name="add-a-privacy-policy-page"></a>Hinzufügen einer Datenschutzrichtlinienseite
 
@@ -89,8 +89,8 @@ Sie können einem Fragment den Link zu einer Datenschutzrichtlinienseite hinzuf�
 Gehen Sie folgendermaßen vor, um einem Fußzeilenfragment einen Link hinzuzufügen.
 
 1. Wechseln Sie zu **Fragmente** und wählen Sie dann **Neu** aus, um ein Seitenfragment zu erstellen.
-1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Fußzeile** aus.
-1. Geben Sie unter **Name des Seitenfragments** einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Neues Fragment** das Modul **Fußzeile** aus.
+1. Geben Sie unter **Name des Fragment** einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
 1. Fügen Sie dem Slot **Fußzeilenkategorie** das Modul **Fußzeilenelement** hinzu.
 1. Wählen Sie im Eigenschaftenbereich rechts **Linktext** aus.
 1. Geben Sie im Dialogfeld **Linktext** den Linktext und das Linkziel der Datenschutzrichtlinienseite ein, und klicken Sie dann auf **OK**.

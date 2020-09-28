@@ -3,7 +3,7 @@ title: Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
 description: Dieses Thema beschreibt die Auftragserstellung per Einzelzulauf für Geschäftbuchungen in Microsoft Dynamics 365 Commerce.
 author: josaw1
 manager: AnnBe
-ms.date: 06/08/2020
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6e097ead7cacb3f71452323656546a4be661457f
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710282"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "3766735"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Auftragserstellung per Einzelzulauf bei Transaktionen im Geschäft
 
@@ -36,22 +36,20 @@ Mit der in Retail-Version 10.0.5 eingeführten Auftragserstellung per Einzelzul
 
 ## <a name="how-to-use-trickle-feed-based-posting"></a>So arbeiten Sie mit der Einzelzulaufbuchung
   
-1. Um die Buchung auf Basis von Einzelzuläufen für Einzelhandelstransaktionen zu aktivieren, wechseln Sie zu **Systemverwaltung > Einrichten > Lizenzkonfiguration** und deaktivieren den Schlüssel **Aufstellungen**.
+1. Um die Buchung auf Basis von Einzelzuläufen für Einzelhandelstransaktionen zu aktivieren, aktivieren Sie die Funktion **Einzelhandelsaufstellungen – Einzelzulauf** mit der Funktionsverwaltung.
 
-2. Aktivieren Sie auf derselben Seite den Lizenzschlüssel **Aufstellungen (Einzelzulauf) – Vorschau**. Wenn Sie diesen Schlüssel aktivieren, stellen Sie sicher, dass keine ausstehenden Anweisungen zur Veröffentlichung anstehen. 
+    > [!IMPORTANT]
+    > Bevor Sie diese Funktion aktivieren, stellen Sie sicher, dass keine ausstehenden Anweisungen zur Veröffentlichung anstehen.
 
-    > [!Important]
-    > Bevor Sie den Lizenzschlüssel **Aufstellungen (Einzelzulauf) – Vorschau** aktivieren, stellen Sie sicher, dass keine ausstehenden Anweisungen auf die Veröffentlichung warten.
+2. Das aktuelle Anweisungsdokument wird in zwei Typen unterteilt: Transaktionsaufstellung und Finanzaufstellung.
 
-3. Das aktuelle Anweisungsdokument wird in zwei verschiedene Typen unterteilt: Transaktionsaufstellung und Finanzaufstellung.
-
-      - Die Transaktionsaufstellung erfasst alle nicht gebuchten und geprüften Transaktionen und erstellten Aufträge, Verkaufsrechnungen, Zahlungs- und Rabatterfassungen sowie die Einnahmen- und Ausgabentransaktionen in der von Ihnen konfigurierten Kadenz. Sie sollten diesen Prozess so konfigurieren, dass er sehr häufig ausgeführt wird, sodass Dokumente erstellt werden, wenn die Einzelhandelstransaktionen über den P-Job in die Zentralverwaltung hochgeladen werden. Mit der Transaktionsaufstellung, die bereits Aufträge und Verkaufsrechnungen erstellt, ist es nicht wirklich notwendig, den Batchauftrag **Lager buchen** zu konfigurieren. Sie können ihn jedoch weiterhin verwenden, um möglicherweise vorhandene geschäftliche Anforderungen zu erfüllen.  
+      - Die Transaktionsaufstellung erfasst alle nicht gebuchten und geprüften Transaktionen und erstellten Aufträge, Verkaufsrechnungen, Zahlungs‑ und Rabatterfassungen sowie die Einnahmen‑ und Ausgabentransaktionen in der von Ihnen konfigurierten Kadenz. Sie sollten diesen Prozess so konfigurieren, dass er sehr häufig ausgeführt wird, sodass Dokumente erstellt werden, wenn die Einzelhandelstransaktionen über den P-Job in die Zentralverwaltung hochgeladen werden. Mit der Transaktionsaufstellung, die bereits Aufträge und Verkaufsrechnungen erstellt, ist es nicht wirklich notwendig, den Batchauftrag **Lager buchen** zu konfigurieren. Sie können ihn jedoch weiterhin verwenden, um möglicherweise vorhandene geschäftliche Anforderungen zu erfüllen.  
       
      - Die Finanzaufstellung ist für die Erstellung am Ende des Tages ausgelegt und unterstützt nur die Abschlussmethode **Schicht**. Diese Aufstellung beschränkt sich auf die finanzielle Abstimmung und erstellt nur die Erfassungen zu den Differenzbeträgen zwischen gezähltem Betrag und Transaktionsbetrag für die verschiedenen Zahlungsmittel sowie Erfassungen zu anderen Bargeldverwaltungstransaktionen.   
 
-4. Um die Transaktionsaufstellung zu berechnen, klicken Sie auf **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Transaktionsaufstellungen stapelweise berechnen**. Um die Transaktionsaufstellungen stapelweise zu buchen, klicken Sie auf **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Transaktionsaufstellungen stapelweise buchen**.
+3. Um die Transaktionsaufstellung zu berechnen, gehen Sie zu **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Transaktionsaufstellungen stapelweise berechnen**. Um die Transaktionsaufstellungen stapelweise zu buchen, gehen Sie zu **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Transaktionsaufstellungen stapelweise buchen**.
 
-5. Um die Finanzaufstellung zu berechnen, klicken Sie auf **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Finanzaufstellungen stapelweise berechnen**. Um die Finanzaufstellungen stapelweise zu buchen, klicken Sie auf **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Finanzaufstellungen stapelweise buchen**.
+4. Um die Finanzaufstellung zu berechnen, gehen Sie zu **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Finanzaufstellungen stapelweise berechnen**. Um die Finanzaufstellungen stapelweise zu buchen, gehen Sie zu **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Finanzaufstellungen stapelweise buchen**.
 
 > [!NOTE]
 > Die Menüpunkte **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Aufstellungen stapelweise berechnen** und **Retail und Commerce > Retail und Commerce IT > POS-Buchung > Aufstellungen stapelweise buchen** werden mit dieser neuen Funktion entfernt.

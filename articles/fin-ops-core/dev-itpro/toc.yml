@@ -14,12 +14,12 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: Plattformupdates zu 10.0.14 (November 2020)
+                  href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Plattformupdates zu 10.0.13 (Oktober 2020)
                   href: get-started/whats-new-platform-updates-10-0-13.md
                 - name: Plattformupdates zu 10.0.12 (August 2020)
                   href: get-started/whats-new-platform-update-10-0-12.md
-                - name: Plattformupdates zu 10.0.11 (Juli 2020)
-                  href: get-started/whats-new-platform-update-35.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Plattformfunktionen
@@ -606,6 +606,14 @@
                   href: dev-tools/pipeline-create-deployable-package.md
                 - name: X++-Modellversionierung in Azure Pipelines
                   href: dev-tools/pipeline-model-version.md
+                - name: Anlagen mithilfe von Azure Pipelines herunterladen
+                  href: dev-tools/pipeline-asset-download.md
+                - name: Anlagen mithilfe von Azure Pipelines hochladen
+                  href: dev-tools/pipeline-asset-upload.md
+                - name: Anlagen mithilfe von Azure Pipelines bereitstellen
+                  href: dev-tools/pipeline-deploy-asset.md
+                - name: Verbindung mit Lifecycle Services (LCS) in Azure Pipelines erstellen
+                  href: dev-tools/pipeline-lcs-connection.md
             - name: Beispielanwendung für die Flottenverwaltung
               items:
                 - name: End-to-End-Szenario für die Beispielanwendung zur Flottenverwaltung

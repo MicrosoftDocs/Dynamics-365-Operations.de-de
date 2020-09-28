@@ -15,12 +15,12 @@ ms.search.region: Germany
 ms.author: shylaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 418d06af518cf364b3bd6c4f9f5b3a9b89b39496
-ms.sourcegitcommit: baab88d037ebf26e6c8822d96056e5ee475877aa
+ms.openlocfilehash: 66080d951c0e0af69a2094d58f5b639cdeb1f164
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "3369507"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813823"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 
@@ -63,4 +63,4 @@ Auf der Seite **Juristische Personen** können Sie die Option **Rechnungskorrekt
 - [Überblick über die elektronische Berichterstellung](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Elektronische Berichterstellungskonfigurationen von Lifecycle Services herunterladen](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 - [Lokalisierung und rechtliche Funktionen](../../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json)
-- [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/VATdeclarationXMLELSTER)
+- [Erstellen Sie eine Umsatzsteuervoranmeldung im XML-Format, ohne Daten für ELSTER (Whitepaper)](https://www.microsoft.com/download/details.aspx?id=101929)

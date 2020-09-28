@@ -3,7 +3,7 @@ title: Erstellen Sie einen Urlaubs- und Abwesenheitsplan
 description: Urlaubspläne erstellen in Dynamics 365 Human Resources für verschiedene Arten von Urlaub.
 author: andreabichsel
 manager: AnnBe
-ms.date: 04/01/2020
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 75a70c5784e7032cfebbe58c1d173923a3023507
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428708"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "3796496"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Erstellen Sie einen Urlaubs- und Abwesenheitsplan
 
@@ -43,7 +43,15 @@ Sie können auch arbeitsplatzbezogene Urlaubsleistungen, z. B. nur für Führung
 
 2. Unter **Einzelheiten**, geben Sie den **Namen**, **Anfangsdatum**, **Beschreibung**, und **Abwesenheitstyp** für Ihren Plan ein.
 
-Wenn die Funktion **Konfigurieren Sie mehrere Urlaubstypen für einen einzelnen Urlaubs- und Abwesenheitsplan** aktiviert ist, werden Urlaubstypen im **Abgrenzungsplan** statt unter **Einzelheiten** konfiguriert. Für jeden Datensatz in der Abgrenzungstabelle können Sie eine Urlaubsart definieren.
+Wenn die Funktion **Konfigurieren Sie mehrere Urlaubstypen für einen einzelnen Urlaubs- und Abwesenheitsplan** aktiviert ist, werden Urlaubstypen im **Abgrenzungsplan** statt unter **Einzelheiten** konfiguriert. Für jeden Datensatz in der Abgrenzungstabelle können Sie eine Urlaubsart definieren. Wenn diese Funktion aktiviert ist, müssen Sie neue Datenentitäten für Integrationen oder andere Szenarien verwenden, in denen Sie Entitäten verwenden müssen. 
+
+Die neuen Entitäten sind:
+
+- Buchung für Urlaubs- und Abwesenheitszeitkonto V2
+- Urlaubs- und Abwesenheitsregistrierung V2
+- Stufe des Urlaubs- und Abwesenheitsplans V2
+- Urlaubs- und Abwesenheitsplan V2
+- Antrag auf arbeitsfreie Zeit V2
 
  > [!IMPORTANT]
    > Nachdem Sie dies Funktion aktiviert haben, können Sie diese nicht mehr deaktivieren.

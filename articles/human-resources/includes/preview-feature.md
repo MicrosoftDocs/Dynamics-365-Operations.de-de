@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Die in diesem Artikel genannte Funktion ist in jeder Sandbox- oder Testumgebung als öffentliche Vorschau verfügbar. In Produktionsumgebungen ist sie nicht verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschaufunktionen finden Sie unter [Funktonen verwalten](../hr-admin-manage-features.md).
+> Die Funktion ist teilweise oder komplett in jeder Sandbox‑ oder Testumgebung als öffentliche Vorschau verfügbar. In Produktionsumgebungen ist sie nicht verfügbar. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschaufunktionen finden Sie unter [Funktonen verwalten](../hr-admin-manage-features.md).

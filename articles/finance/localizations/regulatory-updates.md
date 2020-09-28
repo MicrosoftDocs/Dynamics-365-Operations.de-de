@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 785797af0fe62fa6d0ee40fb4df45bcec47780c7
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: b01162f034a948a94139aed66b7ec8d2e861ee9b
+ms.sourcegitcommit: 4b63e71fb031d8f47bd9e72dd9cdfb9bc7ef2efc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598083"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "3789747"
 ---
 # <a name="regulatory-updates"></a>Regulatorische Features
 
@@ -42,6 +42,12 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 
 |Land|Geplantes Freigabedatum|Version freigeben|Regulatorisches Update|
 |--------------------|---------------|-------|-------|
+|      Österreich         |   2020. September      | 10.0.15      |   Das Format der Mehrwertsteuererklärung U30 wurde für die Erklärung 2020 aktualisiert   |
+|      Bahrain         |   2020. Juli      | 10.0.12      |   Verlagerung der Steuerschuld   |
+|      Bahrain         |   2020. Juli      | 10.0.12      |   Rechnungsabgangsfrist (GCC)   |
+|      Bahrain         |   2020. Juli      | 10.0.12      |   Umsatzsteuererklärung für Bahrain   |
+|      Bahrain         |   2020. Juli      | 10.0.12      |   Verkaufsrechnungen für Bahrain   |
+|      Brasilien         |   August 2020      | 10.0.14, 10.0.13, 10.0.12      |   ADRCST-Meldung PR   |
 |      Brasilien         |   2020. März      | 10.0.11      |   SPED ECD Layout 8   |
 |      Brasilien         |   April 2020      | 10.0.11      |   Technische Hinweise NT2019.001 v1.40   |
 |      Brasilien         |   Mai 2020      | 10.0.12, 10.0.11HF      |   ADCR ICMS-ST-Anweisung für den Parana-Status   |
@@ -50,22 +56,36 @@ Die aktuellsten regulatorischen Aktualisierungspläne finden Sie in der folgende
 |      Tschechische Republik      |   2020. Juli      | 10.0.13      |   Änderungen der Umsatzsteuererklärung im XML-Schema (Rechnungsliste)   |
 |      Tschechische Republik         |   2020. Juli      | 10.0.13      |   Umsatzsteuererklärung in XML, Vorschau der Umsatzsteuererklärung in Excel und XML-Formate für Umsatzsteuererklärungen basierend auf dem Steuererklärungsmodell   |
 |      Estland         |   Mai 2020       | 10.0.11      |   Elektronische Rechnungsstellung in Estland: Export von Kundenrechnungen im estnischen Format Version 1.2.  |
+|      Europa        |   August 2020       | 10.0.14      |   USt-IdNr. des Partners an Intrastat übertragen  |
+|      Finnland         |   2020. Juli       | 10.0.13      |   Unterstützung für elektronische Rechnungen für Finnland  |
 |      Deutschland         |   Mai 2020       | 10.0.12      |   Deutschland – Einzelhandel – Registrierkassenanforderungen    |
 |      Ungarn         |   2020. März       | 10.0.11     |   Online-Rechnungsstellungssystem v.2.0 in Finance and Operations    |
+|      Indien         |   August 2020, Juli 2020      | 10.0.3, 10.0.12HF      |   TCS für den Verkauf von Waren gemäß Abschnitt 206C (1H) - Schwellenwert gemäß PAN-basierter Akkumulation von Transaktionen.  |
+|      Indien         |   August 2020, Juni 2020      | 10.0.13, 10.0.12HF      |   Gutschrift/Lastschrift gegen Exportrechnung  |
+|      Indien         |   August 2020      | 10.0.13, 10.0.12HF, 10.0.11HF      |   Elektronische Rechnungen unter GST  |
+|      Indien         |   Mai 2020      | 10.0.13, 10.0.12      |   Neues GSTR-1- und GSTR-2-Rückgabeformat  |
+|      Indien         |   2020. Juli      | 10.0.13      |   Neues GSTR (ANX-1 und ANX-2)-Offlinetool (Betaversion)  |
 |      Indien         |   Mai 2020      | 10.0.12      |   Verbesserungen bei der Behandlung von Stückpreisen und Selbstkostenpreisen bei Umlagerungsaufträgen  |
 |      Indien         |   Mai 2020      | 10.0.12      |   Umlagerung gleicher Steuersatz zum Zeitpunkt des Versands und des Eingangs (einschließlich Teilbeleg)  |
 |      Italien         |   Mai 2020      | 10.0.12, 10.0.11      |   Formatänderung Modello 770/2019 |
 |      Italien         |   2020. Juli      | 10.0.13, 10.0.12HF      |   Änderungen im Format italienischer elektronischer Rechnungen – FatturaPA |
+|      Kuwait         |   2020. Juli      | 10.0.12      |   Verlagerung der Steuerschuld |
+|      Malaysia         |   2020. Juli      | 10.0.13      |   SST-Bericht |
+|      Mexiko         |   2020. September      | 10.0.13HF, 10.0.12HF, 10.0.11HF      |   Speicherort des CFDI-URL-Schemas basierend auf dem Anexo 20-Dokument |
 |      Norwegen          |   Mai 2020   | 10.0.12     |   Neugestaltung des SAF-T-Berichts: Eröffnungssalden nach Transaktionsart Betrieb und Steuerinformationen in Steuerkennzeichenwährung in Finanzen (Version 10) |
 |      Norwegen          |   Mai 2020   | 10.0.12     |   Änderung des SAF-T-Berichtsdialogs: Ermöglicht die Auswahl von Kontaktpersonen in verschiedenen Unternehmen |
 |      Norwegen          |   Mai 2020   | 10.0.12     |   SAF-T Namensraumdeklarationen in jeder Zeile anstatt nur in der Kopfzeile |
+|      Oman         |   2020. Juli      | 10.0.12H      |   Verlagerung der Steuerschuld |
+|      Polen          |   2020. September     | 10.0.14     |   Polen: JPK-V7M (VDEK) Excel-Format - als Ersatz für den SSRS-Bericht  |
 |      Polen          |   Mai 2020     | 10.0.11     |   Teilen Sie den realisierten Umtauschdifferenzbetrag von AP/AR in die Umtauschdifferenz aus Rechnungsnettowert und Mehrwertsteuerbetrag auf  |
 |      Polen          |   Mai 2020     | 10.0.11     |   SAF-Buchhaltungsbücher – Verbesserungen bei der Filterung von Buchungsebenen |
 |      Polen          |   2020. März     | 10.0.11     |   JPK_VDEK ergänztes Pack I |
 |      Polen          |   Mai 2020     | 10.0.12     |   JPK_VDEK ergänztes Paket II |
 |      Polen          |   2020. März     | 10.0.11     |   Teilgutschrift für Kundenauftrag mit Vorabrechnung |
 |      Polen          |   2020. Juli     | 10.0.13     |   Verbesserungen der obligatorischen Teilzahlung |
-|      Russland          |   2020. Juli     | 10.0.13    |   Abschreibungsberechnung auf Basis der Anschaffungskosten und größeren Reparaturen unter Anwendung des Abschreibungsbonus in der Steuerbuchhaltung  |
+|      Katar         |   2020. Juli      | 10.0.12H      |   Verlagerung der Steuerschuld |
+|      Russische Föderation          |   August 2020     | 10.0.14    |   Das Format der Rechnungslegung ändert sich ab dem Jahr 2020  |
+|      Russische Föderation          |   2020. Juli     | 10.0.13    |   Abschreibungsberechnung auf Basis der Anschaffungskosten und größeren Reparaturen unter Anwendung des Abschreibungsbonus in der Steuerbuchhaltung  |
 
 
 
