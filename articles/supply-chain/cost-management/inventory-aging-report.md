@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,349 +19,349 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: cb7b7a055c26b53ee3acc3b872acf04fcf089eca
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: a6e708e4dc818f20fc8d835053da75c2fe9c98f6
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597239"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759543"
 ---
-# <a name="inventory-aging-report-examples-and-logic"></a><span data-ttu-id="a1471-103">Beispiele und Logik für Inventarfäligkeitsberichte</span><span class="sxs-lookup"><span data-stu-id="a1471-103">Inventory aging report examples and logic</span></span>
+# <a name="inventory-aging-report-examples-and-logic"></a><span data-ttu-id="2f6b4-103">Beispiele und Logik für Inventarfäligkeitsberichte</span><span class="sxs-lookup"><span data-stu-id="2f6b4-103">Inventory aging report examples and logic</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="a1471-104">In diesem Thema werden einige Beispiele vorgestellt, die zeigen, wie die Ergebnisse eines **Inventarfälligkeitsberichts** interpretiert werden.</span><span class="sxs-lookup"><span data-stu-id="a1471-104">This topic presents some examples that show how to interpret the results of an **Inventory aging** report.</span></span> <span data-ttu-id="a1471-105">In diesem Bericht werden die verfügbaren Mengen- und Bestandswerte für einen ausgewählten Artikel oder eine Artikelgruppe in mehrere Periodenbereiche unterteilt.</span><span class="sxs-lookup"><span data-stu-id="a1471-105">This report categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets.</span></span> <span data-ttu-id="a1471-106">Dieses Thema zeigt auch die interne Logik des Berichts.</span><span class="sxs-lookup"><span data-stu-id="a1471-106">This topic also shows the internal logic of the report.</span></span>
+<span data-ttu-id="2f6b4-104">In diesem Thema werden einige Beispiele vorgestellt, die zeigen, wie die Ergebnisse eines **Inventarfälligkeitsberichts** interpretiert werden.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-104">This topic presents some examples that show how to interpret the results of an **Inventory aging** report.</span></span> <span data-ttu-id="2f6b4-105">In diesem Bericht werden die verfügbaren Mengen- und Bestandswerte für einen ausgewählten Artikel oder eine Artikelgruppe in mehrere Periodenbereiche unterteilt.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-105">This report categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets.</span></span> <span data-ttu-id="2f6b4-106">Dieses Thema zeigt auch die interne Logik des Berichts.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-106">This topic also shows the internal logic of the report.</span></span>
 
-<span data-ttu-id="a1471-107">Die Beispiele in diesem Thema zeigen Ergebnisse, die auf einem Standard **Fälligkeit des Inventar** Berichts dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="a1471-107">The examples in this topic show results that are presented on a standard **Inventory aging** report.</span></span> <span data-ttu-id="a1471-108">Im Allgemeinen empfehlen wir jedoch die Verwendung der Version [Speicherung von Inventarfälligkeitsberichten](inventory-aging-report-storage.md) dieses Berichts, insbesondere wenn Sie viele Artikel und Lager haben, die verarbeitet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="a1471-108">However, in general, we recommend that you use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, especially when you have many items and warehouses that must be processed.</span></span> <span data-ttu-id="a1471-109">Durch die Speicherung von Inventarfälligkeitsberichten wird jeder von Ihnen erstellte Bericht gespeichert, die Ergebnisse als interaktive Seite und als Diagramm angezeigt und Sie können jeden gespeicherten Bericht exportieren.</span><span class="sxs-lookup"><span data-stu-id="a1471-109">Inventory aging report storage saves each report that you generate, shows the results as an interactive page and a chart, and lets you export any saved report.</span></span>
+<span data-ttu-id="2f6b4-107">Die Beispiele in diesem Thema zeigen Ergebnisse, die auf einem Standard **Fälligkeit des Inventar** Berichts dargestellt werden.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-107">The examples in this topic show results that are presented on a standard **Inventory aging** report.</span></span> <span data-ttu-id="2f6b4-108">Im Allgemeinen empfehlen wir jedoch die Verwendung der Version [Speicherung von Inventarfälligkeitsberichten](inventory-aging-report-storage.md) dieses Berichts, insbesondere wenn Sie viele Artikel und Lager haben, die verarbeitet werden müssen.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-108">However, in general, we recommend that you use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, especially when you have many items and warehouses that must be processed.</span></span> <span data-ttu-id="2f6b4-109">Durch die Speicherung von Inventarfälligkeitsberichten wird jeder von Ihnen erstellte Bericht gespeichert, die Ergebnisse als interaktive Seite und als Diagramm angezeigt und Sie können jeden gespeicherten Bericht exportieren.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-109">Inventory aging report storage saves each report that you generate, shows the results as an interactive page and a chart, and lets you export any saved report.</span></span>
 
-## <a name="sample-data-that-is-used-in-these-examples"></a><span data-ttu-id="a1471-110">Beispieldaten, die in diesen Beispielen verwendet werden</span><span class="sxs-lookup"><span data-stu-id="a1471-110">Sample data that is used in these examples</span></span>
+## <a name="sample-data-that-is-used-in-these-examples"></a><span data-ttu-id="2f6b4-110">Beispieldaten, die in diesen Beispielen verwendet werden</span><span class="sxs-lookup"><span data-stu-id="2f6b4-110">Sample data that is used in these examples</span></span>
 
-<span data-ttu-id="a1471-111">Die Beispiele in diesem Thema basieren auf den in diesem Abschnitt beschriebenen Beispieltransaktionsdaten für das Inventar.</span><span class="sxs-lookup"><span data-stu-id="a1471-111">The examples in this topic are based on the sample inventory transaction data that is described in this section.</span></span>
+<span data-ttu-id="2f6b4-111">Die Beispiele in diesem Thema basieren auf den in diesem Abschnitt beschriebenen Beispieltransaktionsdaten für das Inventar.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-111">The examples in this topic are based on the sample inventory transaction data that is described in this section.</span></span>
 
-### <a name="storage-dimension-setup"></a><span data-ttu-id="a1471-112">Lagerdimensionsgruppe einrichten</span><span class="sxs-lookup"><span data-stu-id="a1471-112">Storage dimension setup</span></span>
+### <a name="storage-dimension-setup"></a><span data-ttu-id="2f6b4-112">Lagerdimensionsgruppe einrichten</span><span class="sxs-lookup"><span data-stu-id="2f6b4-112">Storage dimension setup</span></span>
 
-<span data-ttu-id="a1471-113">Das Beispielsystem enthält die folgenden Einstellungen für die Speicherabmessungen.</span><span class="sxs-lookup"><span data-stu-id="a1471-113">The example system contains the following setup of storage dimensions.</span></span>
+<span data-ttu-id="2f6b4-113">Das Beispielsystem enthält die folgenden Einstellungen für die Speicherabmessungen.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-113">The example system contains the following setup of storage dimensions.</span></span>
 
-| <span data-ttu-id="a1471-114">Name</span><span class="sxs-lookup"><span data-stu-id="a1471-114">Name</span></span>      | <span data-ttu-id="a1471-115">Aktiv</span><span class="sxs-lookup"><span data-stu-id="a1471-115">Active</span></span> | <span data-ttu-id="a1471-116">Physischer Bestand</span><span class="sxs-lookup"><span data-stu-id="a1471-116">Physical inventory</span></span> | <span data-ttu-id="a1471-117">Wertmäßiger Bestand</span><span class="sxs-lookup"><span data-stu-id="a1471-117">Financial inventory</span></span> |
+| <span data-ttu-id="2f6b4-114">Name</span><span class="sxs-lookup"><span data-stu-id="2f6b4-114">Name</span></span>      | <span data-ttu-id="2f6b4-115">Aktiv</span><span class="sxs-lookup"><span data-stu-id="2f6b4-115">Active</span></span> | <span data-ttu-id="2f6b4-116">Physischer Bestand</span><span class="sxs-lookup"><span data-stu-id="2f6b4-116">Physical inventory</span></span> | <span data-ttu-id="2f6b4-117">Wertmäßiger Bestand</span><span class="sxs-lookup"><span data-stu-id="2f6b4-117">Financial inventory</span></span> |
 |-----------|--------|--------------------|---------------------|
-| <span data-ttu-id="a1471-118">Site</span><span class="sxs-lookup"><span data-stu-id="a1471-118">Site</span></span>      | <span data-ttu-id="a1471-119">Ja</span><span class="sxs-lookup"><span data-stu-id="a1471-119">Yes</span></span>    | <span data-ttu-id="a1471-120">Ja</span><span class="sxs-lookup"><span data-stu-id="a1471-120">Yes</span></span>                | <span data-ttu-id="a1471-121">Ja</span><span class="sxs-lookup"><span data-stu-id="a1471-121">Yes</span></span>                 |
-| <span data-ttu-id="a1471-122">Lagerort</span><span class="sxs-lookup"><span data-stu-id="a1471-122">Warehouse</span></span> | <span data-ttu-id="a1471-123">Ja</span><span class="sxs-lookup"><span data-stu-id="a1471-123">Yes</span></span>    | <span data-ttu-id="a1471-124">Ja</span><span class="sxs-lookup"><span data-stu-id="a1471-124">Yes</span></span>                | <span data-ttu-id="a1471-125">Nr.</span><span class="sxs-lookup"><span data-stu-id="a1471-125">No</span></span>                  |
+| <span data-ttu-id="2f6b4-118">Site</span><span class="sxs-lookup"><span data-stu-id="2f6b4-118">Site</span></span>      | <span data-ttu-id="2f6b4-119">Ja</span><span class="sxs-lookup"><span data-stu-id="2f6b4-119">Yes</span></span>    | <span data-ttu-id="2f6b4-120">Ja</span><span class="sxs-lookup"><span data-stu-id="2f6b4-120">Yes</span></span>                | <span data-ttu-id="2f6b4-121">Ja</span><span class="sxs-lookup"><span data-stu-id="2f6b4-121">Yes</span></span>                 |
+| <span data-ttu-id="2f6b4-122">Lagerort</span><span class="sxs-lookup"><span data-stu-id="2f6b4-122">Warehouse</span></span> | <span data-ttu-id="2f6b4-123">Ja</span><span class="sxs-lookup"><span data-stu-id="2f6b4-123">Yes</span></span>    | <span data-ttu-id="2f6b4-124">Ja</span><span class="sxs-lookup"><span data-stu-id="2f6b4-124">Yes</span></span>                | <span data-ttu-id="2f6b4-125">Nr.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-125">No</span></span>                  |
 
-### <a name="inventory-model"></a><span data-ttu-id="a1471-126">Lagermodell</span><span class="sxs-lookup"><span data-stu-id="a1471-126">Inventory model</span></span>
+### <a name="inventory-model"></a><span data-ttu-id="2f6b4-126">Lagermodell</span><span class="sxs-lookup"><span data-stu-id="2f6b4-126">Inventory model</span></span>
 
-<span data-ttu-id="a1471-127">Für das Beispielsystem lautet das Bestandsmodell für die freigegebenen Produkte *FIFO*, und die **Selbstkostenpreis** Einstellung für das Bestandsmodell ist auf *Physischen Wert einschließen* festgelegt.</span><span class="sxs-lookup"><span data-stu-id="a1471-127">For the example system, the inventory model for the released products is *FIFO*, and the **Cost price** setting for the inventory model is *Include physical value*.</span></span>
+<span data-ttu-id="2f6b4-127">Für das Beispielsystem lautet das Bestandsmodell für die freigegebenen Produkte *FIFO*, und die **Selbstkostenpreis** Einstellung für das Bestandsmodell ist auf *Physischen Wert einschließen* festgelegt.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-127">For the example system, the inventory model for the released products is *FIFO*, and the **Cost price** setting for the inventory model is *Include physical value*.</span></span>
 
-### <a name="inventory-transactions"></a><span data-ttu-id="a1471-128">Lagerbuchungen</span><span class="sxs-lookup"><span data-stu-id="a1471-128">Inventory transactions</span></span>
+### <a name="inventory-transactions"></a><span data-ttu-id="2f6b4-128">Lagerbuchungen</span><span class="sxs-lookup"><span data-stu-id="2f6b4-128">Inventory transactions</span></span>
 
-<span data-ttu-id="a1471-129">Das Beispielsystem enthält die folgenden Inventurtransaktionen für ein freigegebenes Produkt mit der Artikelnummer *1000*.</span><span class="sxs-lookup"><span data-stu-id="a1471-129">The example system contains the following inventory transactions for a released product that has the item number *1000*.</span></span>
+<span data-ttu-id="2f6b4-129">Das Beispielsystem enthält die folgenden Inventurtransaktionen für ein freigegebenes Produkt mit der Artikelnummer *1000*.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-129">The example system contains the following inventory transactions for a released product that has the item number *1000*.</span></span>
 
-| <span data-ttu-id="a1471-130">Referenz</span><span class="sxs-lookup"><span data-stu-id="a1471-130">Reference</span></span>      | <span data-ttu-id="a1471-131">Site</span><span class="sxs-lookup"><span data-stu-id="a1471-131">Site</span></span> | <span data-ttu-id="a1471-132">Lagerort</span><span class="sxs-lookup"><span data-stu-id="a1471-132">Warehouse</span></span> | <span data-ttu-id="a1471-133">Zugang</span><span class="sxs-lookup"><span data-stu-id="a1471-133">Receipt</span></span>   | <span data-ttu-id="a1471-134">Abgang</span><span class="sxs-lookup"><span data-stu-id="a1471-134">Issue</span></span> | <span data-ttu-id="a1471-135">Physisches Datum</span><span class="sxs-lookup"><span data-stu-id="a1471-135">Physical date</span></span> | <span data-ttu-id="a1471-136">Finanzdatum</span><span class="sxs-lookup"><span data-stu-id="a1471-136">Financial date</span></span> | <span data-ttu-id="a1471-137">Leistung</span><span class="sxs-lookup"><span data-stu-id="a1471-137">Quantity</span></span> | <span data-ttu-id="a1471-138">Betrag KORE</span><span class="sxs-lookup"><span data-stu-id="a1471-138">Cost amount</span></span> | <span data-ttu-id="a1471-139">Phys. Einstandsbetrag</span><span class="sxs-lookup"><span data-stu-id="a1471-139">Physical cost amount</span></span> |
+| <span data-ttu-id="2f6b4-130">Referenz</span><span class="sxs-lookup"><span data-stu-id="2f6b4-130">Reference</span></span>      | <span data-ttu-id="2f6b4-131">Site</span><span class="sxs-lookup"><span data-stu-id="2f6b4-131">Site</span></span> | <span data-ttu-id="2f6b4-132">Lagerort</span><span class="sxs-lookup"><span data-stu-id="2f6b4-132">Warehouse</span></span> | <span data-ttu-id="2f6b4-133">Zugang</span><span class="sxs-lookup"><span data-stu-id="2f6b4-133">Receipt</span></span>   | <span data-ttu-id="2f6b4-134">Abgang</span><span class="sxs-lookup"><span data-stu-id="2f6b4-134">Issue</span></span> | <span data-ttu-id="2f6b4-135">Physisches Datum</span><span class="sxs-lookup"><span data-stu-id="2f6b4-135">Physical date</span></span> | <span data-ttu-id="2f6b4-136">Finanzdatum</span><span class="sxs-lookup"><span data-stu-id="2f6b4-136">Financial date</span></span> | <span data-ttu-id="2f6b4-137">Leistung</span><span class="sxs-lookup"><span data-stu-id="2f6b4-137">Quantity</span></span> | <span data-ttu-id="2f6b4-138">Betrag KORE</span><span class="sxs-lookup"><span data-stu-id="2f6b4-138">Cost amount</span></span> | <span data-ttu-id="2f6b4-139">Phys. Einstandsbetrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-139">Physical cost amount</span></span> |
 |----------------|------|-----------|-----------|-------|---------------|----------------|----------|-------------|----------------------|
-| <span data-ttu-id="a1471-140">Bestellung</span><span class="sxs-lookup"><span data-stu-id="a1471-140">Purchase order</span></span> | <span data-ttu-id="a1471-141">1</span><span class="sxs-lookup"><span data-stu-id="a1471-141">1</span></span>    | <span data-ttu-id="a1471-142">11</span><span class="sxs-lookup"><span data-stu-id="a1471-142">11</span></span>        | <span data-ttu-id="a1471-143">Eingekauft</span><span class="sxs-lookup"><span data-stu-id="a1471-143">Purchased</span></span> |       | <span data-ttu-id="a1471-144">15. März</span><span class="sxs-lookup"><span data-stu-id="a1471-144">March 15</span></span>      | <span data-ttu-id="a1471-145">15. März</span><span class="sxs-lookup"><span data-stu-id="a1471-145">March 15</span></span>       | <span data-ttu-id="a1471-146">10</span><span class="sxs-lookup"><span data-stu-id="a1471-146">10</span></span>       | <span data-ttu-id="a1471-147">1.000</span><span class="sxs-lookup"><span data-stu-id="a1471-147">1,000</span></span>       | <span data-ttu-id="a1471-148">1.000</span><span class="sxs-lookup"><span data-stu-id="a1471-148">1,000</span></span>                |
-| <span data-ttu-id="a1471-149">Bestellung</span><span class="sxs-lookup"><span data-stu-id="a1471-149">Purchase order</span></span> | <span data-ttu-id="a1471-150">2</span><span class="sxs-lookup"><span data-stu-id="a1471-150">2</span></span>    | <span data-ttu-id="a1471-151">21</span><span class="sxs-lookup"><span data-stu-id="a1471-151">21</span></span>        | <span data-ttu-id="a1471-152">Eingekauft</span><span class="sxs-lookup"><span data-stu-id="a1471-152">Purchased</span></span> |       | <span data-ttu-id="a1471-153">15. März</span><span class="sxs-lookup"><span data-stu-id="a1471-153">March 15</span></span>      | <span data-ttu-id="a1471-154">15. März</span><span class="sxs-lookup"><span data-stu-id="a1471-154">March 15</span></span>       | <span data-ttu-id="a1471-155">10</span><span class="sxs-lookup"><span data-stu-id="a1471-155">10</span></span>       | <span data-ttu-id="a1471-156">2,000</span><span class="sxs-lookup"><span data-stu-id="a1471-156">2,000</span></span>       | <span data-ttu-id="a1471-157">2,000</span><span class="sxs-lookup"><span data-stu-id="a1471-157">2,000</span></span>                |
-| <span data-ttu-id="a1471-158">Bestellung</span><span class="sxs-lookup"><span data-stu-id="a1471-158">Purchase order</span></span> | <span data-ttu-id="a1471-159">1</span><span class="sxs-lookup"><span data-stu-id="a1471-159">1</span></span>    | <span data-ttu-id="a1471-160">11</span><span class="sxs-lookup"><span data-stu-id="a1471-160">11</span></span>        | <span data-ttu-id="a1471-161">Eingegangen</span><span class="sxs-lookup"><span data-stu-id="a1471-161">Received</span></span>  |       | <span data-ttu-id="a1471-162">April 15</span><span class="sxs-lookup"><span data-stu-id="a1471-162">April 15</span></span>      |                | <span data-ttu-id="a1471-163">5</span><span class="sxs-lookup"><span data-stu-id="a1471-163">5</span></span>        |             | <span data-ttu-id="a1471-164">375</span><span class="sxs-lookup"><span data-stu-id="a1471-164">375</span></span>                  |
-| <span data-ttu-id="a1471-165">Umlagerungsauftrag</span><span class="sxs-lookup"><span data-stu-id="a1471-165">Transfer order</span></span> | <span data-ttu-id="a1471-166">1</span><span class="sxs-lookup"><span data-stu-id="a1471-166">1</span></span>    | <span data-ttu-id="a1471-167">11</span><span class="sxs-lookup"><span data-stu-id="a1471-167">11</span></span>        |           | <span data-ttu-id="a1471-168">Verkauft</span><span class="sxs-lookup"><span data-stu-id="a1471-168">Sold</span></span>  | <span data-ttu-id="a1471-169">Mai 2</span><span class="sxs-lookup"><span data-stu-id="a1471-169">May 2</span></span>         | <span data-ttu-id="a1471-170">Mai 2</span><span class="sxs-lookup"><span data-stu-id="a1471-170">May 2</span></span>          | <span data-ttu-id="a1471-171">-5</span><span class="sxs-lookup"><span data-stu-id="a1471-171">-5</span></span>       | <span data-ttu-id="a1471-172">-458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-172">-458.33</span></span>     | <span data-ttu-id="a1471-173">-458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-173">-458.33</span></span>              |
-| <span data-ttu-id="a1471-174">Umlagerungsauftrag</span><span class="sxs-lookup"><span data-stu-id="a1471-174">Transfer order</span></span> | <span data-ttu-id="a1471-175">1</span><span class="sxs-lookup"><span data-stu-id="a1471-175">1</span></span>    | <span data-ttu-id="a1471-176">12</span><span class="sxs-lookup"><span data-stu-id="a1471-176">12</span></span>        | <span data-ttu-id="a1471-177">Eingekauft</span><span class="sxs-lookup"><span data-stu-id="a1471-177">Purchased</span></span> |       | <span data-ttu-id="a1471-178">Mai 2</span><span class="sxs-lookup"><span data-stu-id="a1471-178">May 2</span></span>         | <span data-ttu-id="a1471-179">Mai 2</span><span class="sxs-lookup"><span data-stu-id="a1471-179">May 2</span></span>          | <span data-ttu-id="a1471-180">5</span><span class="sxs-lookup"><span data-stu-id="a1471-180">5</span></span>        | <span data-ttu-id="a1471-181">458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-181">458.33</span></span>      | <span data-ttu-id="a1471-182">458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-182">458.33</span></span>               |
-| <span data-ttu-id="a1471-183">Auftrag</span><span class="sxs-lookup"><span data-stu-id="a1471-183">Sales order</span></span>    | <span data-ttu-id="a1471-184">1</span><span class="sxs-lookup"><span data-stu-id="a1471-184">1</span></span>    | <span data-ttu-id="a1471-185">12</span><span class="sxs-lookup"><span data-stu-id="a1471-185">12</span></span>        |           | <span data-ttu-id="a1471-186">Verkauft</span><span class="sxs-lookup"><span data-stu-id="a1471-186">Sold</span></span>  | <span data-ttu-id="a1471-187">Mai 3</span><span class="sxs-lookup"><span data-stu-id="a1471-187">May 3</span></span>         | <span data-ttu-id="a1471-188">Mai 3</span><span class="sxs-lookup"><span data-stu-id="a1471-188">May 3</span></span>          | <span data-ttu-id="a1471-189">-1</span><span class="sxs-lookup"><span data-stu-id="a1471-189">-1</span></span>       | <span data-ttu-id="a1471-190">-91.67</span><span class="sxs-lookup"><span data-stu-id="a1471-190">-91.67</span></span>      | <span data-ttu-id="a1471-191">-91.67</span><span class="sxs-lookup"><span data-stu-id="a1471-191">-91.67</span></span>               |
+| <span data-ttu-id="2f6b4-140">Bestellung</span><span class="sxs-lookup"><span data-stu-id="2f6b4-140">Purchase order</span></span> | <span data-ttu-id="2f6b4-141">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-141">1</span></span>    | <span data-ttu-id="2f6b4-142">11</span><span class="sxs-lookup"><span data-stu-id="2f6b4-142">11</span></span>        | <span data-ttu-id="2f6b4-143">Eingekauft</span><span class="sxs-lookup"><span data-stu-id="2f6b4-143">Purchased</span></span> |       | <span data-ttu-id="2f6b4-144">15. März</span><span class="sxs-lookup"><span data-stu-id="2f6b4-144">March 15</span></span>      | <span data-ttu-id="2f6b4-145">15. März</span><span class="sxs-lookup"><span data-stu-id="2f6b4-145">March 15</span></span>       | <span data-ttu-id="2f6b4-146">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-146">10</span></span>       | <span data-ttu-id="2f6b4-147">1.000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-147">1,000</span></span>       | <span data-ttu-id="2f6b4-148">1.000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-148">1,000</span></span>                |
+| <span data-ttu-id="2f6b4-149">Bestellung</span><span class="sxs-lookup"><span data-stu-id="2f6b4-149">Purchase order</span></span> | <span data-ttu-id="2f6b4-150">2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-150">2</span></span>    | <span data-ttu-id="2f6b4-151">21</span><span class="sxs-lookup"><span data-stu-id="2f6b4-151">21</span></span>        | <span data-ttu-id="2f6b4-152">Eingekauft</span><span class="sxs-lookup"><span data-stu-id="2f6b4-152">Purchased</span></span> |       | <span data-ttu-id="2f6b4-153">15. März</span><span class="sxs-lookup"><span data-stu-id="2f6b4-153">March 15</span></span>      | <span data-ttu-id="2f6b4-154">15. März</span><span class="sxs-lookup"><span data-stu-id="2f6b4-154">March 15</span></span>       | <span data-ttu-id="2f6b4-155">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-155">10</span></span>       | <span data-ttu-id="2f6b4-156">2,000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-156">2,000</span></span>       | <span data-ttu-id="2f6b4-157">2,000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-157">2,000</span></span>                |
+| <span data-ttu-id="2f6b4-158">Bestellung</span><span class="sxs-lookup"><span data-stu-id="2f6b4-158">Purchase order</span></span> | <span data-ttu-id="2f6b4-159">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-159">1</span></span>    | <span data-ttu-id="2f6b4-160">11</span><span class="sxs-lookup"><span data-stu-id="2f6b4-160">11</span></span>        | <span data-ttu-id="2f6b4-161">Eingegangen</span><span class="sxs-lookup"><span data-stu-id="2f6b4-161">Received</span></span>  |       | <span data-ttu-id="2f6b4-162">April 15</span><span class="sxs-lookup"><span data-stu-id="2f6b4-162">April 15</span></span>      |                | <span data-ttu-id="2f6b4-163">5</span><span class="sxs-lookup"><span data-stu-id="2f6b4-163">5</span></span>        |             | <span data-ttu-id="2f6b4-164">375</span><span class="sxs-lookup"><span data-stu-id="2f6b4-164">375</span></span>                  |
+| <span data-ttu-id="2f6b4-165">Umlagerungsauftrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-165">Transfer order</span></span> | <span data-ttu-id="2f6b4-166">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-166">1</span></span>    | <span data-ttu-id="2f6b4-167">11</span><span class="sxs-lookup"><span data-stu-id="2f6b4-167">11</span></span>        |           | <span data-ttu-id="2f6b4-168">Verkauft</span><span class="sxs-lookup"><span data-stu-id="2f6b4-168">Sold</span></span>  | <span data-ttu-id="2f6b4-169">Mai 2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-169">May 2</span></span>         | <span data-ttu-id="2f6b4-170">Mai 2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-170">May 2</span></span>          | <span data-ttu-id="2f6b4-171">-5</span><span class="sxs-lookup"><span data-stu-id="2f6b4-171">-5</span></span>       | <span data-ttu-id="2f6b4-172">-458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-172">-458.33</span></span>     | <span data-ttu-id="2f6b4-173">-458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-173">-458.33</span></span>              |
+| <span data-ttu-id="2f6b4-174">Umlagerungsauftrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-174">Transfer order</span></span> | <span data-ttu-id="2f6b4-175">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-175">1</span></span>    | <span data-ttu-id="2f6b4-176">12</span><span class="sxs-lookup"><span data-stu-id="2f6b4-176">12</span></span>        | <span data-ttu-id="2f6b4-177">Eingekauft</span><span class="sxs-lookup"><span data-stu-id="2f6b4-177">Purchased</span></span> |       | <span data-ttu-id="2f6b4-178">Mai 2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-178">May 2</span></span>         | <span data-ttu-id="2f6b4-179">Mai 2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-179">May 2</span></span>          | <span data-ttu-id="2f6b4-180">5</span><span class="sxs-lookup"><span data-stu-id="2f6b4-180">5</span></span>        | <span data-ttu-id="2f6b4-181">458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-181">458.33</span></span>      | <span data-ttu-id="2f6b4-182">458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-182">458.33</span></span>               |
+| <span data-ttu-id="2f6b4-183">Auftrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-183">Sales order</span></span>    | <span data-ttu-id="2f6b4-184">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-184">1</span></span>    | <span data-ttu-id="2f6b4-185">12</span><span class="sxs-lookup"><span data-stu-id="2f6b4-185">12</span></span>        |           | <span data-ttu-id="2f6b4-186">Verkauft</span><span class="sxs-lookup"><span data-stu-id="2f6b4-186">Sold</span></span>  | <span data-ttu-id="2f6b4-187">Mai 3</span><span class="sxs-lookup"><span data-stu-id="2f6b4-187">May 3</span></span>         | <span data-ttu-id="2f6b4-188">Mai 3</span><span class="sxs-lookup"><span data-stu-id="2f6b4-188">May 3</span></span>          | <span data-ttu-id="2f6b4-189">-1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-189">-1</span></span>       | <span data-ttu-id="2f6b4-190">-91.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-190">-91.67</span></span>      | <span data-ttu-id="2f6b4-191">-91.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-191">-91.67</span></span>               |
 
-## <a name="how-quantities-and-amounts-in-each-period-bucket-are-calculated"></a><span data-ttu-id="a1471-192">Wie Mengen und Beträge in jedem Periodenbereich berechnet werden</span><span class="sxs-lookup"><span data-stu-id="a1471-192">How quantities and amounts in each period bucket are calculated</span></span>
+## <a name="how-quantities-and-amounts-in-each-period-bucket-are-calculated"></a><span data-ttu-id="2f6b4-192">Wie Mengen und Beträge in jedem Periodenbereich berechnet werden</span><span class="sxs-lookup"><span data-stu-id="2f6b4-192">How quantities and amounts in each period bucket are calculated</span></span>
 
-<span data-ttu-id="a1471-193">Mithilfe der in den vorherigen Abschnitten beschriebenen Beispieldaten können Sie einen Bericht **Alterung des Inventars** mit folgenden Einstellungen ausführen:</span><span class="sxs-lookup"><span data-stu-id="a1471-193">By using the sample data that is described in the previous sections, you can run an **Inventory aging** report that has the following settings:</span></span>
+<span data-ttu-id="2f6b4-193">Mithilfe der in den vorherigen Abschnitten beschriebenen Beispieldaten können Sie einen Bericht **Alterung des Inventars** mit folgenden Einstellungen ausführen:</span><span class="sxs-lookup"><span data-stu-id="2f6b4-193">By using the sample data that is described in the previous sections, you can run an **Inventory aging** report that has the following settings:</span></span>
 
-- <span data-ttu-id="a1471-194">**Stand:** *9. Mai 2020*</span><span class="sxs-lookup"><span data-stu-id="a1471-194">**As of date:** *May 9, 2020*</span></span>
-- <span data-ttu-id="a1471-195">**Seite:** *Aussicht*</span><span class="sxs-lookup"><span data-stu-id="a1471-195">**Site:** *View*</span></span>
-- <span data-ttu-id="a1471-196">**Lagerort:** *Nein*</span><span class="sxs-lookup"><span data-stu-id="a1471-196">**Warehouse:** *No*</span></span>
-- <span data-ttu-id="a1471-197">**Artikelnummer:** *Gesamt*</span><span class="sxs-lookup"><span data-stu-id="a1471-197">**Item number:** *Total*</span></span>
-- <span data-ttu-id="a1471-198">**Alterungsdauer:** Legen Sie dieses Feld fest, um monatliche Bereiche zu generieren.</span><span class="sxs-lookup"><span data-stu-id="a1471-198">**Aging period:** Set this field to generate monthly buckets.</span></span>
+- <span data-ttu-id="2f6b4-194">**Stand:** *9. Mai 2020*</span><span class="sxs-lookup"><span data-stu-id="2f6b4-194">**As of date:** *May 9, 2020*</span></span>
+- <span data-ttu-id="2f6b4-195">**Seite:** *Aussicht*</span><span class="sxs-lookup"><span data-stu-id="2f6b4-195">**Site:** *View*</span></span>
+- <span data-ttu-id="2f6b4-196">**Lagerort:** *Nein*</span><span class="sxs-lookup"><span data-stu-id="2f6b4-196">**Warehouse:** *No*</span></span>
+- <span data-ttu-id="2f6b4-197">**Artikelnummer:** *Gesamt*</span><span class="sxs-lookup"><span data-stu-id="2f6b4-197">**Item number:** *Total*</span></span>
+- <span data-ttu-id="2f6b4-198">**Alterungsdauer:** Legen Sie dieses Feld fest, um monatliche Bereiche zu generieren.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-198">**Aging period:** Set this field to generate monthly buckets.</span></span>
 
-<span data-ttu-id="a1471-199">In diesem Fall ähnelt der Inhalt des generierten Berichts dem folgenden Beispiel.</span><span class="sxs-lookup"><span data-stu-id="a1471-199">In this case, the content of the report that is generated will resemble the following example.</span></span>
+<span data-ttu-id="2f6b4-199">In diesem Fall ähnelt der Inhalt des generierten Berichts dem folgenden Beispiel.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-199">In this case, the content of the report that is generated will resemble the following example.</span></span>
 
 <table>
 <thead>
 <tr>
-    <th rowspan="2"><span data-ttu-id="a1471-200">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="a1471-200">Item number</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-201">Site</span><span class="sxs-lookup"><span data-stu-id="a1471-201">Site</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-202">Verfügbare Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-202">On-hand quantity</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-203">Verfügbarer Wert</span><span class="sxs-lookup"><span data-stu-id="a1471-203">On-hand value</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-204">Lagerwertmenge</span><span class="sxs-lookup"><span data-stu-id="a1471-204">Inventory value quantity</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-205">Lagerwert</span><span class="sxs-lookup"><span data-stu-id="a1471-205">Inventory value</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-206">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="a1471-206">Average unit cost</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-207">5/8/2020 - 5/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-207">5/8/2020 - 5/1/2020</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-208">4/30/2020 - 4/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-208">4/30/2020 - 4/1/2020</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-209">3/31/2020 - 3/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-209">3/31/2020 - 3/1/2020</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-200">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="2f6b4-200">Item number</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-201">Site</span><span class="sxs-lookup"><span data-stu-id="2f6b4-201">Site</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-202">Verfügbare Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-202">On-hand quantity</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-203">Verfügbarer Wert</span><span class="sxs-lookup"><span data-stu-id="2f6b4-203">On-hand value</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-204">Lagerwertmenge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-204">Inventory value quantity</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-205">Lagerwert</span><span class="sxs-lookup"><span data-stu-id="2f6b4-205">Inventory value</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-206">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="2f6b4-206">Average unit cost</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-207">5/8/2020 - 5/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-207">5/8/2020 - 5/1/2020</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-208">4/30/2020 - 4/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-208">4/30/2020 - 4/1/2020</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-209">3/31/2020 - 3/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-209">3/31/2020 - 3/1/2020</span></span></th>
 </tr>
 <tr>
-    <th><span data-ttu-id="a1471-210">P1: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-210">P1:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-211">P1:Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-211">P1:Amount</span></span></th>
-    <th><span data-ttu-id="a1471-212">P2: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-212">P2:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-213">P2:Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-213">P2:Amount</span></span></th>
-    <th><span data-ttu-id="a1471-214">P3: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-214">P3:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-215">P3:Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-215">P3:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-210">P1: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-210">P1:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-211">P1:Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-211">P1:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-212">P2: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-212">P2:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-213">P2:Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-213">P2:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-214">P3: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-214">P3:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-215">P3:Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-215">P3:Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td><span data-ttu-id="a1471-216">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-216">1000</span></span></td>
-    <td><span data-ttu-id="a1471-217">1</span><span class="sxs-lookup"><span data-stu-id="a1471-217">1</span></span></td>
-    <td><span data-ttu-id="a1471-218">14</span><span class="sxs-lookup"><span data-stu-id="a1471-218">14</span></span></td>
-    <td><span data-ttu-id="a1471-219">1,283.33</span><span class="sxs-lookup"><span data-stu-id="a1471-219">1,283.33</span></span></td>
-    <td><span data-ttu-id="a1471-220">14</span><span class="sxs-lookup"><span data-stu-id="a1471-220">14</span></span></td>
-    <td><span data-ttu-id="a1471-221">1,283.33</span><span class="sxs-lookup"><span data-stu-id="a1471-221">1,283.33</span></span></td>
-    <td><span data-ttu-id="a1471-222">91.67</span><span class="sxs-lookup"><span data-stu-id="a1471-222">91.67</span></span></td>
+    <td><span data-ttu-id="2f6b4-216">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-216">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-217">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-217">1</span></span></td>
+    <td><span data-ttu-id="2f6b4-218">14</span><span class="sxs-lookup"><span data-stu-id="2f6b4-218">14</span></span></td>
+    <td><span data-ttu-id="2f6b4-219">1,283.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-219">1,283.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-220">14</span><span class="sxs-lookup"><span data-stu-id="2f6b4-220">14</span></span></td>
+    <td><span data-ttu-id="2f6b4-221">1,283.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-221">1,283.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-222">91.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-222">91.67</span></span></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-223">5.00</span><span class="sxs-lookup"><span data-stu-id="a1471-223">5.00</span></span></td>
-    <td><span data-ttu-id="a1471-224">458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-224">458.33</span></span></td>
-    <td><span data-ttu-id="a1471-225">9.00</span><span class="sxs-lookup"><span data-stu-id="a1471-225">9.00</span></span></td>
-    <td><span data-ttu-id="a1471-226">825.00</span><span class="sxs-lookup"><span data-stu-id="a1471-226">825.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-223">5.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-223">5.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-224">458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-224">458.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-225">9.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-225">9.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-226">825.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-226">825.00</span></span></td>
 </tr>
 <tr>
-    <td><span data-ttu-id="a1471-227">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-227">1000</span></span></td>
-    <td><span data-ttu-id="a1471-228">2</span><span class="sxs-lookup"><span data-stu-id="a1471-228">2</span></span></td>
-    <td><span data-ttu-id="a1471-229">10</span><span class="sxs-lookup"><span data-stu-id="a1471-229">10</span></span></td>
-    <td><span data-ttu-id="a1471-230">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-230">2,000.00</span></span></td>
-    <td><span data-ttu-id="a1471-231">10</span><span class="sxs-lookup"><span data-stu-id="a1471-231">10</span></span></td>
-    <td><span data-ttu-id="a1471-232">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-232">2,000.00</span></span></td>
-    <td><span data-ttu-id="a1471-233">200.00</span><span class="sxs-lookup"><span data-stu-id="a1471-233">200.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-227">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-227">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-228">2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-228">2</span></span></td>
+    <td><span data-ttu-id="2f6b4-229">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-229">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-230">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-230">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-231">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-231">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-232">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-232">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-233">200.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-233">200.00</span></span></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-234">10.00</span><span class="sxs-lookup"><span data-stu-id="a1471-234">10.00</span></span></td>
-    <td><span data-ttu-id="a1471-235">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-235">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-234">10.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-234">10.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-235">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-235">2,000.00</span></span></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-    <td><span data-ttu-id="a1471-236"><strong>1000 Summen</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-236"><strong>1000 Totals</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-236"><strong>1000 Summen</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-236"><strong>1000 Totals</strong></span></span></td>
     <td></td>
-    <td><span data-ttu-id="a1471-237"><strong>24.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-237"><strong>24.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-238"><strong>3,283.33</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-238"><strong>3,283.33</strong></span></span></td>
-    <td></td>
-    <td></td>
+    <td><span data-ttu-id="2f6b4-237"><strong>24.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-237"><strong>24.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-238"><strong>3,283.33</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-238"><strong>3,283.33</strong></span></span></td>
     <td></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-239"><strong>5.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-239"><strong>5.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-240"><strong>458.33</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-240"><strong>458.33</strong></span></span></td>
-    <td><span data-ttu-id="a1471-241"><strong>19</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-241"><strong>19</strong></span></span></td>
-    <td><span data-ttu-id="a1471-242"><strong>2,825.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-242"><strong>2,825.00</strong></span></span></td>
+    <td></td>
+    <td></td>
+    <td><span data-ttu-id="2f6b4-239"><strong>5.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-239"><strong>5.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-240"><strong>458.33</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-240"><strong>458.33</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-241"><strong>19</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-241"><strong>19</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-242"><strong>2,825.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-242"><strong>2,825.00</strong></span></span></td>
 </tr>
 </tfoot>
 </table>
 
-<span data-ttu-id="a1471-243">Beachten Sie die folgenden Details in diesem Beispielbericht:</span><span class="sxs-lookup"><span data-stu-id="a1471-243">Note the following details in this example report:</span></span>
+<span data-ttu-id="2f6b4-243">Beachten Sie die folgenden Details in diesem Beispielbericht:</span><span class="sxs-lookup"><span data-stu-id="2f6b4-243">Note the following details in this example report:</span></span>
 
-- <span data-ttu-id="a1471-244">Die Werte **Inventarwertmenge**, **Inventarwert** und **Durchschnittliche Stückkosten**, die im Bericht angezeigt werden, sind Werte für die Dimension des Finanzinventars (in diesem Fall **Seite**).</span><span class="sxs-lookup"><span data-stu-id="a1471-244">The **Inventory value quantity**, **Inventory value**, and **Average unit cost** values that are shown on the report are values for the financial inventory dimension (**Site**, in this case).</span></span>
+- <span data-ttu-id="2f6b4-244">Die Werte **Inventarwertmenge**, **Inventarwert** und **Durchschnittliche Stückkosten**, die im Bericht angezeigt werden, sind Werte für die Dimension des Finanzinventars (in diesem Fall **Seite**).</span><span class="sxs-lookup"><span data-stu-id="2f6b4-244">The **Inventory value quantity**, **Inventory value**, and **Average unit cost** values that are shown on the report are values for the financial inventory dimension (**Site**, in this case).</span></span>
 
-    <span data-ttu-id="a1471-245">Für Standort 1 enthält der Bericht beispielsweise die folgenden Informationen:</span><span class="sxs-lookup"><span data-stu-id="a1471-245">For example, for site 1, the report shows the following information:</span></span>
+    <span data-ttu-id="2f6b4-245">Für Standort 1 enthält der Bericht beispielsweise die folgenden Informationen:</span><span class="sxs-lookup"><span data-stu-id="2f6b4-245">For example, for site 1, the report shows the following information:</span></span>
 
-    - <span data-ttu-id="a1471-246">Den Wert **Inventarwertmenge** ist *14* (= 10 + 5 – 5 + 5 – 1).</span><span class="sxs-lookup"><span data-stu-id="a1471-246">The **Inventory value quantity** value is *14* (= 10 + 5 – 5 + 5 – 1).</span></span>
-    - <span data-ttu-id="a1471-247">Der Wert **Inventarwertmenge** ist *1,283.33* (= 1,000 + 375 – 458.33 + 458.33 – 91.67).</span><span class="sxs-lookup"><span data-stu-id="a1471-247">The **Inventory value** value is *1,283.33* (= 1,000 + 375 – 458.33 + 458.33 – 91.67).</span></span>
-    - <span data-ttu-id="a1471-248">Der Wert **Durchschnittliche Stückkosten** ist *91,67*.</span><span class="sxs-lookup"><span data-stu-id="a1471-248">The **Average unit cost** value is *91.67*.</span></span>
-    - <span data-ttu-id="a1471-249">Der Wert **Lagerwert** und der Wert **Menge** in jedem Periodenbereich werden mithilfe vom Wert **Durchschnittliche Stückkosten** berechnet.</span><span class="sxs-lookup"><span data-stu-id="a1471-249">The **On-hand value** value and the **Amount** value in each period bucket are calculated by using the **Average unit cost** value.</span></span>
+    - <span data-ttu-id="2f6b4-246">Den Wert **Inventarwertmenge** ist *14* (= 10 + 5 – 5 + 5 – 1).</span><span class="sxs-lookup"><span data-stu-id="2f6b4-246">The **Inventory value quantity** value is *14* (= 10 + 5 – 5 + 5 – 1).</span></span>
+    - <span data-ttu-id="2f6b4-247">Der Wert **Inventarwertmenge** ist *1,283.33* (= 1,000 + 375 – 458.33 + 458.33 – 91.67).</span><span class="sxs-lookup"><span data-stu-id="2f6b4-247">The **Inventory value** value is *1,283.33* (= 1,000 + 375 – 458.33 + 458.33 – 91.67).</span></span>
+    - <span data-ttu-id="2f6b4-248">Der Wert **Durchschnittliche Stückkosten** ist *91,67*.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-248">The **Average unit cost** value is *91.67*.</span></span>
+    - <span data-ttu-id="2f6b4-249">Der Wert **Lagerwert** und der Wert **Menge** in jedem Periodenbereich werden mithilfe vom Wert **Durchschnittliche Stückkosten** berechnet.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-249">The **On-hand value** value and the **Amount** value in each period bucket are calculated by using the **Average unit cost** value.</span></span>
 
-- <span data-ttu-id="a1471-250">Der Bericht ermittelt die verfügbare Menge für jeden Periodenbereich, indem die insgesamt erhaltene Bestandsmenge für jeden Periodenbereich zusammengefasst wird.</span><span class="sxs-lookup"><span data-stu-id="a1471-250">The report determines the on-hand quantity for each period bucket by summarizing the total received inventory quantity for each period bucket.</span></span> <span data-ttu-id="a1471-251">Anschließend wird das Prinzip First In, First Out (FIFO)  angewendet, um die gesamte ausgegebene Menge abzuziehen, unabhängig vom verwendeten Bestandsmodell.</span><span class="sxs-lookup"><span data-stu-id="a1471-251">It then applies the first in, first out (FIFO) principle to deduct the total issued quantity, regardless of the inventory model that the items use.</span></span>
+- <span data-ttu-id="2f6b4-250">Der Bericht ermittelt die verfügbare Menge für jeden Periodenbereich, indem die insgesamt erhaltene Bestandsmenge für jeden Periodenbereich zusammengefasst wird.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-250">The report determines the on-hand quantity for each period bucket by summarizing the total received inventory quantity for each period bucket.</span></span> <span data-ttu-id="2f6b4-251">Anschließend wird das Prinzip First In, First Out (FIFO)  angewendet, um die gesamte ausgegebene Menge abzuziehen, unabhängig vom verwendeten Bestandsmodell.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-251">It then applies the first in, first out (FIFO) principle to deduct the total issued quantity, regardless of the inventory model that the items use.</span></span>
 
-<span data-ttu-id="a1471-252">Wenn Sie denselben Bericht erneut ausführen, diesmal jedoch die Felder **Seite** und **Lagerort** auf *Anzeigen* festlegen, wird der neue Bericht dem folgenden Beispiel ähneln.</span><span class="sxs-lookup"><span data-stu-id="a1471-252">If you run the same report again, but this time you set both the **Site** and **Warehouse** fields to *View*, the new report will resemble the following example.</span></span>
+<span data-ttu-id="2f6b4-252">Wenn Sie denselben Bericht erneut ausführen, diesmal jedoch die Felder **Seite** und **Lagerort** auf *Anzeigen* festlegen, wird der neue Bericht dem folgenden Beispiel ähneln.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-252">If you run the same report again, but this time you set both the **Site** and **Warehouse** fields to *View*, the new report will resemble the following example.</span></span>
 
 <table>
 <thead>
 <tr>
-    <th rowspan="2"><span data-ttu-id="a1471-253">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="a1471-253">Item number</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-254">Site</span><span class="sxs-lookup"><span data-stu-id="a1471-254">Site</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-255">Lagerort</span><span class="sxs-lookup"><span data-stu-id="a1471-255">Warehouse</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-256">Verfügbare Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-256">On-hand quantity</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-257">Verfügbarer Wert</span><span class="sxs-lookup"><span data-stu-id="a1471-257">On-hand value</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-258">Lagerwertmenge</span><span class="sxs-lookup"><span data-stu-id="a1471-258">Inventory value quantity</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-259">Lagerwert</span><span class="sxs-lookup"><span data-stu-id="a1471-259">Inventory value</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-260">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="a1471-260">Average unit cost</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-261">5/8/2020 - 5/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-261">5/8/2020 - 5/1/2020</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-262">4/30/2020 - 4/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-262">4/30/2020 - 4/1/2020</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-263">3/31/2020 - 3/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-263">3/31/2020 - 3/1/2020</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-253">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="2f6b4-253">Item number</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-254">Site</span><span class="sxs-lookup"><span data-stu-id="2f6b4-254">Site</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-255">Lagerort</span><span class="sxs-lookup"><span data-stu-id="2f6b4-255">Warehouse</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-256">Verfügbare Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-256">On-hand quantity</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-257">Verfügbarer Wert</span><span class="sxs-lookup"><span data-stu-id="2f6b4-257">On-hand value</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-258">Lagerwertmenge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-258">Inventory value quantity</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-259">Lagerwert</span><span class="sxs-lookup"><span data-stu-id="2f6b4-259">Inventory value</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-260">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="2f6b4-260">Average unit cost</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-261">5/8/2020 - 5/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-261">5/8/2020 - 5/1/2020</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-262">4/30/2020 - 4/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-262">4/30/2020 - 4/1/2020</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-263">3/31/2020 - 3/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-263">3/31/2020 - 3/1/2020</span></span></th>
 </tr>
 <tr>
-    <th><span data-ttu-id="a1471-264">P1: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-264">P1:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-265">P1: Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-265">P1:Amount</span></span></th>
-    <th><span data-ttu-id="a1471-266">P2: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-266">P2:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-267">P2: Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-267">P2:Amount</span></span></th>
-    <th><span data-ttu-id="a1471-268">P3: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-268">P3:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-269">P3: Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-269">P3:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-264">P1: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-264">P1:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-265">P1: Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-265">P1:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-266">P2: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-266">P2:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-267">P2: Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-267">P2:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-268">P3: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-268">P3:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-269">P3: Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-269">P3:Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td><span data-ttu-id="a1471-270">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-270">1000</span></span></td>
-    <td><span data-ttu-id="a1471-271">1</span><span class="sxs-lookup"><span data-stu-id="a1471-271">1</span></span></td>
-    <td><span data-ttu-id="a1471-272">11</span><span class="sxs-lookup"><span data-stu-id="a1471-272">11</span></span></td>
-    <td><span data-ttu-id="a1471-273">10</span><span class="sxs-lookup"><span data-stu-id="a1471-273">10</span></span></td>
-    <td><span data-ttu-id="a1471-274">916.67</span><span class="sxs-lookup"><span data-stu-id="a1471-274">916.67</span></span></td>
-    <td><span data-ttu-id="a1471-275">14</span><span class="sxs-lookup"><span data-stu-id="a1471-275">14</span></span></td>
-    <td><span data-ttu-id="a1471-276">1,283.33</span><span class="sxs-lookup"><span data-stu-id="a1471-276">1,283.33</span></span></td>
-    <td><span data-ttu-id="a1471-277">91.67</span><span class="sxs-lookup"><span data-stu-id="a1471-277">91.67</span></span></td>
+    <td><span data-ttu-id="2f6b4-270">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-270">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-271">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-271">1</span></span></td>
+    <td><span data-ttu-id="2f6b4-272">11</span><span class="sxs-lookup"><span data-stu-id="2f6b4-272">11</span></span></td>
+    <td><span data-ttu-id="2f6b4-273">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-273">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-274">916.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-274">916.67</span></span></td>
+    <td><span data-ttu-id="2f6b4-275">14</span><span class="sxs-lookup"><span data-stu-id="2f6b4-275">14</span></span></td>
+    <td><span data-ttu-id="2f6b4-276">1,283.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-276">1,283.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-277">91.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-277">91.67</span></span></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-278">5.00</span><span class="sxs-lookup"><span data-stu-id="a1471-278">5.00</span></span></td>
-    <td><span data-ttu-id="a1471-279">458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-279">458.33</span></span></td>
-    <td><span data-ttu-id="a1471-280">5.00</span><span class="sxs-lookup"><span data-stu-id="a1471-280">5.00</span></span></td>
-    <td><span data-ttu-id="a1471-281">458.33</span><span class="sxs-lookup"><span data-stu-id="a1471-281">458.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-278">5.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-278">5.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-279">458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-279">458.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-280">5.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-280">5.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-281">458.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-281">458.33</span></span></td>
 </tr>
 <tr>
-    <td><span data-ttu-id="a1471-282">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-282">1000</span></span></td>
-    <td><span data-ttu-id="a1471-283">1</span><span class="sxs-lookup"><span data-stu-id="a1471-283">1</span></span></td>
-    <td><span data-ttu-id="a1471-284">12</span><span class="sxs-lookup"><span data-stu-id="a1471-284">12</span></span></td>
-    <td><span data-ttu-id="a1471-285">4</span><span class="sxs-lookup"><span data-stu-id="a1471-285">4</span></span></td>
-    <td><span data-ttu-id="a1471-286">366.67</span><span class="sxs-lookup"><span data-stu-id="a1471-286">366.67</span></span></td>
-    <td><span data-ttu-id="a1471-287">14</span><span class="sxs-lookup"><span data-stu-id="a1471-287">14</span></span></td>
-    <td><span data-ttu-id="a1471-288">1,283.33</span><span class="sxs-lookup"><span data-stu-id="a1471-288">1,283.33</span></span></td>
-    <td><span data-ttu-id="a1471-289">91.67</span><span class="sxs-lookup"><span data-stu-id="a1471-289">91.67</span></span></td>
-    <td><span data-ttu-id="a1471-290">4.00</span><span class="sxs-lookup"><span data-stu-id="a1471-290">4.00</span></span></td>
-    <td><span data-ttu-id="a1471-291">366.67</span><span class="sxs-lookup"><span data-stu-id="a1471-291">366.67</span></span></td>
+    <td><span data-ttu-id="2f6b4-282">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-282">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-283">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-283">1</span></span></td>
+    <td><span data-ttu-id="2f6b4-284">12</span><span class="sxs-lookup"><span data-stu-id="2f6b4-284">12</span></span></td>
+    <td><span data-ttu-id="2f6b4-285">4</span><span class="sxs-lookup"><span data-stu-id="2f6b4-285">4</span></span></td>
+    <td><span data-ttu-id="2f6b4-286">366.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-286">366.67</span></span></td>
+    <td><span data-ttu-id="2f6b4-287">14</span><span class="sxs-lookup"><span data-stu-id="2f6b4-287">14</span></span></td>
+    <td><span data-ttu-id="2f6b4-288">1,283.33</span><span class="sxs-lookup"><span data-stu-id="2f6b4-288">1,283.33</span></span></td>
+    <td><span data-ttu-id="2f6b4-289">91.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-289">91.67</span></span></td>
+    <td><span data-ttu-id="2f6b4-290">4.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-290">4.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-291">366.67</span><span class="sxs-lookup"><span data-stu-id="2f6b4-291">366.67</span></span></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
-    <td><span data-ttu-id="a1471-292">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-292">1000</span></span></td>
-    <td><span data-ttu-id="a1471-293">2</span><span class="sxs-lookup"><span data-stu-id="a1471-293">2</span></span></td>
+    <td><span data-ttu-id="2f6b4-292">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-292">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-293">2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-293">2</span></span></td>
     <td></td>
-    <td><span data-ttu-id="a1471-294">10</span><span class="sxs-lookup"><span data-stu-id="a1471-294">10</span></span></td>
-    <td><span data-ttu-id="a1471-295">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-295">2,000.00</span></span></td>
-    <td><span data-ttu-id="a1471-296">10</span><span class="sxs-lookup"><span data-stu-id="a1471-296">10</span></span></td>
-    <td><span data-ttu-id="a1471-297">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-297">2,000.00</span></span></td>
-    <td><span data-ttu-id="a1471-298">200.00</span><span class="sxs-lookup"><span data-stu-id="a1471-298">200.00</span></span></td>
-    <td></td>
-    <td></td>
+    <td><span data-ttu-id="2f6b4-294">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-294">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-295">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-295">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-296">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-296">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-297">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-297">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-298">200.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-298">200.00</span></span></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-299">10.00</span><span class="sxs-lookup"><span data-stu-id="a1471-299">10.00</span></span></td>
-    <td><span data-ttu-id="a1471-300">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-300">2,000.00</span></span></td>
+    <td></td>
+    <td></td>
+    <td><span data-ttu-id="2f6b4-299">10.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-299">10.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-300">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-300">2,000.00</span></span></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-    <td><span data-ttu-id="a1471-301"><strong>1000 Summen</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-301"><strong>1000 Totals</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-301"><strong>1000 Summen</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-301"><strong>1000 Totals</strong></span></span></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-302"><strong>24.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-302"><strong>24.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-303"><strong>3,283.33</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-303"><strong>3,283.33</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-302"><strong>24.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-302"><strong>24.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-303"><strong>3,283.33</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-303"><strong>3,283.33</strong></span></span></td>
     <td></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-304"><strong>4.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-304"><strong>4.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-305"><strong>366.67</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-305"><strong>366.67</strong></span></span></td>
-    <td><span data-ttu-id="a1471-306"><strong>5.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-306"><strong>5.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-307"><strong>458.33</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-307"><strong>458.33</strong></span></span></td>
-    <td><span data-ttu-id="a1471-308"><strong>15</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-308"><strong>15</strong></span></span></td>
-    <td><span data-ttu-id="a1471-309"><strong>2,458.33</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-309"><strong>2,458.33</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-304"><strong>4.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-304"><strong>4.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-305"><strong>366.67</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-305"><strong>366.67</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-306"><strong>5.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-306"><strong>5.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-307"><strong>458.33</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-307"><strong>458.33</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-308"><strong>15</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-308"><strong>15</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-309"><strong>2,458.33</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-309"><strong>2,458.33</strong></span></span></td>
 </tr>
 </tfoot>
 </table>
 
-<span data-ttu-id="a1471-310">Diesmal ist Site 1 in zwei Zeilen unterteilt, eine für Lager 11 und eine für Lager 12.</span><span class="sxs-lookup"><span data-stu-id="a1471-310">This time, site 1 is split into two rows, one for warehouse 11 and one for warehouse 12.</span></span> <span data-ttu-id="a1471-311">Aber die Werte **Inventarwertmenge**, **Inventarwert** und **Durchschnittliche Stückkosten**, die im Bericht angezeigt werden, sind gleich weil der **Lagerort** keine Finanzdimension ist.</span><span class="sxs-lookup"><span data-stu-id="a1471-311">However, the **Inventory value quantity**, **Inventory value**, and **Average unit cost** values are the same, because **Warehouse** isn't a financial inventory dimension.</span></span>
+<span data-ttu-id="2f6b4-310">Diesmal ist Site 1 in zwei Zeilen unterteilt, eine für Lager 11 und eine für Lager 12.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-310">This time, site 1 is split into two rows, one for warehouse 11 and one for warehouse 12.</span></span> <span data-ttu-id="2f6b4-311">Aber die Werte **Inventarwertmenge**, **Inventarwert** und **Durchschnittliche Stückkosten**, die im Bericht angezeigt werden, sind gleich weil der **Lagerort** keine Finanzdimension ist.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-311">However, the **Inventory value quantity**, **Inventory value**, and **Average unit cost** values are the same, because **Warehouse** isn't a financial inventory dimension.</span></span>
 
-<span data-ttu-id="a1471-312">Beachten Sie außerdem, dass die Mengenverteilung von Standort 1 unterschiedlich ist.</span><span class="sxs-lookup"><span data-stu-id="a1471-312">Additionally, notice that the quantity distribution of site 1 is different.</span></span> <span data-ttu-id="a1471-313">In dem ersten Bericht, den Sie ausgeführt haben, hat das System den Transportauftrag ignoriert, der an derselben Site aufgetreten ist, und die Menge der Verkaufsrechnung vom Zeitraumbereich **31.03.2020 – 01.03.2020** in Site 1 abgezogen.</span><span class="sxs-lookup"><span data-stu-id="a1471-313">In the first report that you ran, the system ignored the transfer order that occurred in the same site and deducted the quantity of the sales invoice from the **3/31/2020 - 3/1/2020** period bucket in site 1.</span></span> <span data-ttu-id="a1471-314">Im neuen Bericht zieht das System jedoch die Menge der Verkaufsrechnung vom Zeitraumbereich **08.05.2020 – 01.05.2020** im Lager 12 ab.</span><span class="sxs-lookup"><span data-stu-id="a1471-314">However, in the new report, the system deducts the quantity of the sales invoice from the **5/8/2020 - 5/1/2020** period bucket in warehouse 12.</span></span>
+<span data-ttu-id="2f6b4-312">Beachten Sie außerdem, dass die Mengenverteilung von Standort 1 unterschiedlich ist.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-312">Additionally, notice that the quantity distribution of site 1 is different.</span></span> <span data-ttu-id="2f6b4-313">In dem ersten Bericht, den Sie ausgeführt haben, hat das System den Transportauftrag ignoriert, der an derselben Site aufgetreten ist, und die Menge der Verkaufsrechnung vom Zeitraumbereich **31.03.2020 – 01.03.2020** in Site 1 abgezogen.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-313">In the first report that you ran, the system ignored the transfer order that occurred in the same site and deducted the quantity of the sales invoice from the **3/31/2020 - 3/1/2020** period bucket in site 1.</span></span> <span data-ttu-id="2f6b4-314">Im neuen Bericht zieht das System jedoch die Menge der Verkaufsrechnung vom Zeitraumbereich **08.05.2020 – 01.05.2020** im Lager 12 ab.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-314">However, in the new report, the system deducts the quantity of the sales invoice from the **5/8/2020 - 5/1/2020** period bucket in warehouse 12.</span></span>
 
-## <a name="effects-of-inventory-closing"></a><span data-ttu-id="a1471-315">Effekte der Bestandschließung</span><span class="sxs-lookup"><span data-stu-id="a1471-315">Effects of inventory closing</span></span>
+## <a name="effects-of-inventory-closing"></a><span data-ttu-id="2f6b4-315">Effekte der Bestandschließung</span><span class="sxs-lookup"><span data-stu-id="2f6b4-315">Effects of inventory closing</span></span>
 
-<span data-ttu-id="a1471-316">Wenn Sie das Inventar für Mai schließen und dann den vorherigen Bericht erneut ausführen, aber das Feld **Stand Datum** auf *31. Mai 2020* festlegen, werden Sie folgende Ergebnisse feststellen:</span><span class="sxs-lookup"><span data-stu-id="a1471-316">If you run the inventory closing for May and then run the previous report again, but you set the **As of date** field to *May 31, 2020*, you will notice the following results:</span></span>
+<span data-ttu-id="2f6b4-316">Wenn Sie das Inventar für Mai schließen und dann den vorherigen Bericht erneut ausführen, aber das Feld **Stand Datum** auf *31. Mai 2020* festlegen, werden Sie folgende Ergebnisse feststellen:</span><span class="sxs-lookup"><span data-stu-id="2f6b4-316">If you run the inventory closing for May and then run the previous report again, but you set the **As of date** field to *May 31, 2020*, you will notice the following results:</span></span>
 
-- <span data-ttu-id="a1471-317">Der **Bestandwert** und der Wert **Durchschnittliche Stückkosten** werden aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="a1471-317">The **Inventory value** and **Average unit cost** values are updated.</span></span>
-- <span data-ttu-id="a1471-318">Der **verfügbare Wert** und der Wert **Betrag** in jedem Periodenbereich werden entsprechend aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="a1471-318">The **On-hand value** value and all the **Amount** values in every period bucket are updated accordingly.</span></span>
+- <span data-ttu-id="2f6b4-317">Der **Bestandwert** und der Wert **Durchschnittliche Stückkosten** werden aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-317">The **Inventory value** and **Average unit cost** values are updated.</span></span>
+- <span data-ttu-id="2f6b4-318">Der **verfügbare Wert** und der Wert **Betrag** in jedem Periodenbereich werden entsprechend aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-318">The **On-hand value** value and all the **Amount** values in every period bucket are updated accordingly.</span></span>
 
-<span data-ttu-id="a1471-319">Der neue Bericht sieht ähnlich aus wie das folgende Beispiel.</span><span class="sxs-lookup"><span data-stu-id="a1471-319">The new report will resemble the following example.</span></span>
+<span data-ttu-id="2f6b4-319">Der neue Bericht sieht ähnlich aus wie das folgende Beispiel.</span><span class="sxs-lookup"><span data-stu-id="2f6b4-319">The new report will resemble the following example.</span></span>
 
 <table>
 <thead>
 <tr>
-    <th rowspan="2"><span data-ttu-id="a1471-320">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="a1471-320">Item number</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-321">Site</span><span class="sxs-lookup"><span data-stu-id="a1471-321">Site</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-322">Lagerort</span><span class="sxs-lookup"><span data-stu-id="a1471-322">Warehouse</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-323">Verfügbare Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-323">On-hand quantity</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-324">Verfügbarer Wert</span><span class="sxs-lookup"><span data-stu-id="a1471-324">On-hand value</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-325">Lagerwertmenge</span><span class="sxs-lookup"><span data-stu-id="a1471-325">Inventory value quantity</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-326">Lagerwert</span><span class="sxs-lookup"><span data-stu-id="a1471-326">Inventory value</span></span></th>
-    <th rowspan="2"><span data-ttu-id="a1471-327">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="a1471-327">Average unit cost</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-328">5/31/2020 - 5/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-328">5/31/2020 - 5/1/2020</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-329">4/30/2020 - 4/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-329">4/30/2020 - 4/1/2020</span></span></th>
-    <th colspan="2"><span data-ttu-id="a1471-330">3/31/2020 - 3/1/2020</span><span class="sxs-lookup"><span data-stu-id="a1471-330">3/31/2020 - 3/1/2020</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-320">Artikelnummer</span><span class="sxs-lookup"><span data-stu-id="2f6b4-320">Item number</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-321">Site</span><span class="sxs-lookup"><span data-stu-id="2f6b4-321">Site</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-322">Lagerort</span><span class="sxs-lookup"><span data-stu-id="2f6b4-322">Warehouse</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-323">Verfügbare Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-323">On-hand quantity</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-324">Verfügbarer Wert</span><span class="sxs-lookup"><span data-stu-id="2f6b4-324">On-hand value</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-325">Lagerwertmenge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-325">Inventory value quantity</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-326">Lagerwert</span><span class="sxs-lookup"><span data-stu-id="2f6b4-326">Inventory value</span></span></th>
+    <th rowspan="2"><span data-ttu-id="2f6b4-327">Durchschnittliche Einheitenkosten</span><span class="sxs-lookup"><span data-stu-id="2f6b4-327">Average unit cost</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-328">5/31/2020 - 5/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-328">5/31/2020 - 5/1/2020</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-329">4/30/2020 - 4/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-329">4/30/2020 - 4/1/2020</span></span></th>
+    <th colspan="2"><span data-ttu-id="2f6b4-330">3/31/2020 - 3/1/2020</span><span class="sxs-lookup"><span data-stu-id="2f6b4-330">3/31/2020 - 3/1/2020</span></span></th>
 </tr>
 <tr>
-    <th><span data-ttu-id="a1471-331">P1: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-331">P1:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-332">P1: Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-332">P1:Amount</span></span></th>
-    <th><span data-ttu-id="a1471-333">P2: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-333">P2:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-334">P2: Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-334">P2:Amount</span></span></th>
-    <th><span data-ttu-id="a1471-335">P3: Menge</span><span class="sxs-lookup"><span data-stu-id="a1471-335">P3:Quantity</span></span></th>
-    <th><span data-ttu-id="a1471-336">P3: Betrag</span><span class="sxs-lookup"><span data-stu-id="a1471-336">P3:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-331">P1: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-331">P1:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-332">P1: Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-332">P1:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-333">P2: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-333">P2:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-334">P2: Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-334">P2:Amount</span></span></th>
+    <th><span data-ttu-id="2f6b4-335">P3: Menge</span><span class="sxs-lookup"><span data-stu-id="2f6b4-335">P3:Quantity</span></span></th>
+    <th><span data-ttu-id="2f6b4-336">P3: Betrag</span><span class="sxs-lookup"><span data-stu-id="2f6b4-336">P3:Amount</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td><span data-ttu-id="a1471-337">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-337">1000</span></span></td>
-    <td><span data-ttu-id="a1471-338">1</span><span class="sxs-lookup"><span data-stu-id="a1471-338">1</span></span></td>
-    <td><span data-ttu-id="a1471-339">11</span><span class="sxs-lookup"><span data-stu-id="a1471-339">11</span></span></td>
-    <td><span data-ttu-id="a1471-340">10</span><span class="sxs-lookup"><span data-stu-id="a1471-340">10</span></span></td>
-    <td><span data-ttu-id="a1471-341">910.70</span><span class="sxs-lookup"><span data-stu-id="a1471-341">910.70</span></span></td>
-    <td><span data-ttu-id="a1471-342">14</span><span class="sxs-lookup"><span data-stu-id="a1471-342">14</span></span></td>
-    <td><span data-ttu-id="a1471-343">1,275.00</span><span class="sxs-lookup"><span data-stu-id="a1471-343">1,275.00</span></span></td>
-    <td><span data-ttu-id="a1471-344">91.07</span><span class="sxs-lookup"><span data-stu-id="a1471-344">91.07</span></span></td>
-    <td><span data-ttu-id="a1471-345">0,00</span><span class="sxs-lookup"><span data-stu-id="a1471-345">0.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-337">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-337">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-338">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-338">1</span></span></td>
+    <td><span data-ttu-id="2f6b4-339">11</span><span class="sxs-lookup"><span data-stu-id="2f6b4-339">11</span></span></td>
+    <td><span data-ttu-id="2f6b4-340">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-340">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-341">910.70</span><span class="sxs-lookup"><span data-stu-id="2f6b4-341">910.70</span></span></td>
+    <td><span data-ttu-id="2f6b4-342">14</span><span class="sxs-lookup"><span data-stu-id="2f6b4-342">14</span></span></td>
+    <td><span data-ttu-id="2f6b4-343">1,275.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-343">1,275.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-344">91.07</span><span class="sxs-lookup"><span data-stu-id="2f6b4-344">91.07</span></span></td>
+    <td><span data-ttu-id="2f6b4-345">0,00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-345">0.00</span></span></td>
     <td></td>
-    <td><span data-ttu-id="a1471-346">5.00</span><span class="sxs-lookup"><span data-stu-id="a1471-346">5.00</span></span></td>
-    <td><span data-ttu-id="a1471-347">455.36</span><span class="sxs-lookup"><span data-stu-id="a1471-347">455.36</span></span></td>
-    <td><span data-ttu-id="a1471-348">5.00</span><span class="sxs-lookup"><span data-stu-id="a1471-348">5.00</span></span></td>
-    <td><span data-ttu-id="a1471-349">455.36</span><span class="sxs-lookup"><span data-stu-id="a1471-349">455.36</span></span></td>
+    <td><span data-ttu-id="2f6b4-346">5.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-346">5.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-347">455.36</span><span class="sxs-lookup"><span data-stu-id="2f6b4-347">455.36</span></span></td>
+    <td><span data-ttu-id="2f6b4-348">5.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-348">5.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-349">455.36</span><span class="sxs-lookup"><span data-stu-id="2f6b4-349">455.36</span></span></td>
 </tr>
 <tr>
-    <td><span data-ttu-id="a1471-350">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-350">1000</span></span></td>
-    <td><span data-ttu-id="a1471-351">1</span><span class="sxs-lookup"><span data-stu-id="a1471-351">1</span></span></td>
-    <td><span data-ttu-id="a1471-352">12</span><span class="sxs-lookup"><span data-stu-id="a1471-352">12</span></span></td>
-    <td><span data-ttu-id="a1471-353">4</span><span class="sxs-lookup"><span data-stu-id="a1471-353">4</span></span></td>
-    <td><span data-ttu-id="a1471-354">364.29</span><span class="sxs-lookup"><span data-stu-id="a1471-354">364.29</span></span></td>
-    <td><span data-ttu-id="a1471-355">14</span><span class="sxs-lookup"><span data-stu-id="a1471-355">14</span></span></td>
-    <td><span data-ttu-id="a1471-356">1,275.00</span><span class="sxs-lookup"><span data-stu-id="a1471-356">1,275.00</span></span></td>
-    <td><span data-ttu-id="a1471-357">91.07</span><span class="sxs-lookup"><span data-stu-id="a1471-357">91.07</span></span></td>
-    <td><span data-ttu-id="a1471-358">4.00</span><span class="sxs-lookup"><span data-stu-id="a1471-358">4.00</span></span></td>
-    <td><span data-ttu-id="a1471-359">364.29</span><span class="sxs-lookup"><span data-stu-id="a1471-359">364.29</span></span></td>
+    <td><span data-ttu-id="2f6b4-350">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-350">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-351">1</span><span class="sxs-lookup"><span data-stu-id="2f6b4-351">1</span></span></td>
+    <td><span data-ttu-id="2f6b4-352">12</span><span class="sxs-lookup"><span data-stu-id="2f6b4-352">12</span></span></td>
+    <td><span data-ttu-id="2f6b4-353">4</span><span class="sxs-lookup"><span data-stu-id="2f6b4-353">4</span></span></td>
+    <td><span data-ttu-id="2f6b4-354">364.29</span><span class="sxs-lookup"><span data-stu-id="2f6b4-354">364.29</span></span></td>
+    <td><span data-ttu-id="2f6b4-355">14</span><span class="sxs-lookup"><span data-stu-id="2f6b4-355">14</span></span></td>
+    <td><span data-ttu-id="2f6b4-356">1,275.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-356">1,275.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-357">91.07</span><span class="sxs-lookup"><span data-stu-id="2f6b4-357">91.07</span></span></td>
+    <td><span data-ttu-id="2f6b4-358">4.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-358">4.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-359">364.29</span><span class="sxs-lookup"><span data-stu-id="2f6b4-359">364.29</span></span></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
 </tr>
 <tr>
-    <td><span data-ttu-id="a1471-360">1000</span><span class="sxs-lookup"><span data-stu-id="a1471-360">1000</span></span></td>
-    <td><span data-ttu-id="a1471-361">2</span><span class="sxs-lookup"><span data-stu-id="a1471-361">2</span></span></td>
+    <td><span data-ttu-id="2f6b4-360">1000</span><span class="sxs-lookup"><span data-stu-id="2f6b4-360">1000</span></span></td>
+    <td><span data-ttu-id="2f6b4-361">2</span><span class="sxs-lookup"><span data-stu-id="2f6b4-361">2</span></span></td>
     <td></td>
-    <td><span data-ttu-id="a1471-362">10</span><span class="sxs-lookup"><span data-stu-id="a1471-362">10</span></span></td>
-    <td><span data-ttu-id="a1471-363">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-363">2,000.00</span></span></td>
-    <td><span data-ttu-id="a1471-364">10</span><span class="sxs-lookup"><span data-stu-id="a1471-364">10</span></span></td>
-    <td><span data-ttu-id="a1471-365">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-365">2,000.00</span></span></td>
-    <td><span data-ttu-id="a1471-366">200.00</span><span class="sxs-lookup"><span data-stu-id="a1471-366">200.00</span></span></td>
-    <td></td>
-    <td></td>
+    <td><span data-ttu-id="2f6b4-362">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-362">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-363">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-363">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-364">10</span><span class="sxs-lookup"><span data-stu-id="2f6b4-364">10</span></span></td>
+    <td><span data-ttu-id="2f6b4-365">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-365">2,000.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-366">200.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-366">200.00</span></span></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-367">10.00</span><span class="sxs-lookup"><span data-stu-id="a1471-367">10.00</span></span></td>
-    <td><span data-ttu-id="a1471-368">2,000.00</span><span class="sxs-lookup"><span data-stu-id="a1471-368">2,000.00</span></span></td>
+    <td></td>
+    <td></td>
+    <td><span data-ttu-id="2f6b4-367">10.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-367">10.00</span></span></td>
+    <td><span data-ttu-id="2f6b4-368">2,000.00</span><span class="sxs-lookup"><span data-stu-id="2f6b4-368">2,000.00</span></span></td>
 </tr>
 </tbody>
 <tfoot>
 <tr>
-    <td><span data-ttu-id="a1471-369"><strong>1000 Summen</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-369"><strong>1000 Totals</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-369"><strong>1000 Summen</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-369"><strong>1000 Totals</strong></span></span></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-370"><strong>24.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-370"><strong>24.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-371"><strong>3,275.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-371"><strong>3,275.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-370"><strong>24.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-370"><strong>24.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-371"><strong>3,275.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-371"><strong>3,275.00</strong></span></span></td>
     <td></td>
     <td></td>
     <td></td>
-    <td><span data-ttu-id="a1471-372"><strong>4.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-372"><strong>4.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-373"><strong>364.29</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-373"><strong>364.29</strong></span></span></td>
-    <td><span data-ttu-id="a1471-374"><strong>5.00</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-374"><strong>5.00</strong></span></span></td>
-    <td><span data-ttu-id="a1471-375"><strong>455.36</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-375"><strong>455.36</strong></span></span></td>
-    <td><span data-ttu-id="a1471-376"><strong>15</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-376"><strong>15</strong></span></span></td>
-    <td><span data-ttu-id="a1471-377"><strong>2,455.36</strong></span><span class="sxs-lookup"><span data-stu-id="a1471-377"><strong>2,455.36</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-372"><strong>4.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-372"><strong>4.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-373"><strong>364.29</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-373"><strong>364.29</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-374"><strong>5.00</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-374"><strong>5.00</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-375"><strong>455.36</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-375"><strong>455.36</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-376"><strong>15</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-376"><strong>15</strong></span></span></td>
+    <td><span data-ttu-id="2f6b4-377"><strong>2,455.36</strong></span><span class="sxs-lookup"><span data-stu-id="2f6b4-377"><strong>2,455.36</strong></span></span></td>
 </tr>
 </tfoot>
 </table>

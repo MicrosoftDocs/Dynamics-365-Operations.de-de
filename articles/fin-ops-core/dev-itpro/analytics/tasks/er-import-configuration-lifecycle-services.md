@@ -1,14 +1,14 @@
 ---
-title: ER Import einer Konfiguration von Lifecycle Services
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" eine neue Konfiguration für "Elektronische Berichterstellung (ER)" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann.
+title: Importieren einer Konfiguration von Lifecycle Services
+description: In diesem Thema wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Version der Konfiguration für „Elektronische Berichterstellung (EB)“ von Microsoft Dynamics Lifecycle Services (LCS) importieren kann.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142385"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810642"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a><span data-ttu-id="d6159-103">ER Import einer Konfiguration von Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="d6159-103">ER Import a configuration from Lifecycle Services</span></span>
+# <a name="import-a-configuration-from-lifecycle-services"></a><span data-ttu-id="3cb2a-103">Importieren einer Konfiguration von Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="3cb2a-103">Import a configuration from Lifecycle Services</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="d6159-104">In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" eine neue Konfiguration für "Elektronische Berichterstellung (ER)" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann.</span><span class="sxs-lookup"><span data-stu-id="d6159-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).</span></span>
+<span data-ttu-id="3cb2a-104">In diesem Thema wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Konfiguration für [Elektronische Berichterstellung (EB)](../general-electronic-reporting.md#Configuration) aus der [Anlagenbibliothek auf Projektebene](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS) importieren kann.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-104">This topic explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS).</span></span>
 
-<span data-ttu-id="d6159-105">In diesem Beispiel wählen Sie die gewünschte Version der ER-Konfiguration und importieren das Beispielunternehmen, Litware, Inc. Diese Schritte können in einem beliebigen Unternehmen ausgeführt werden, da ER-Konfigurationsanbieter unter allen Unternehmen geteilt werden.</span><span class="sxs-lookup"><span data-stu-id="d6159-105">In this example, you will select the desired version of the ER configuration and import it for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="d6159-106">Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in der Prozedur „Eine ER-Konfiguration nach Lifecycle Services hochladen“ abschließen.</span><span class="sxs-lookup"><span data-stu-id="d6159-106">To complete these steps, you must first complete the steps in the "Upload an ER configuration into Lifecycle Services" procedure.</span></span> <span data-ttu-id="d6159-107">Zugriff auf LCS ist auch für den Abschluss dieser Schritte erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d6159-107">Access to LCS is also required for completion of these steps.</span></span>
+<span data-ttu-id="3cb2a-105">In diesem Beispiel wählen Sie die gewünschte Version der EB-Konfiguration und importieren ein Beispielunternehmen namens Litware, Inc. Diese Schritte können in einem beliebigen Unternehmen abgeschlossen werden, da EB-Konfigurationsanbieter unter allen Unternehmen geteilt werden.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-105">In this example, you will select the desired version of the ER configuration and import it for a sample company that is named Litware, Inc. These steps can be completed in any company, because ER configurations are shared among companies.</span></span> <span data-ttu-id="3cb2a-106">Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in [Eine Konfiguration nach Lifecycle Services hochladen](er-upload-configuration-into-lifecycle-services.md) abschließen.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-106">To complete these steps, you must first complete the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span></span> <span data-ttu-id="3cb2a-107">Zugriff auf LCS ist ebenfalls erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-107">Access to LCS is also required.</span></span>
 
-1. <span data-ttu-id="d6159-108">Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.</span><span class="sxs-lookup"><span data-stu-id="d6159-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
-2. <span data-ttu-id="d6159-109">Klicken Sie auf "Konfigurationen".</span><span class="sxs-lookup"><span data-stu-id="d6159-109">Click Configurations.</span></span>
+1. <span data-ttu-id="3cb2a-108">Melden Sie sich in der Anwendung an, indem Sie eine der folgenden Rollen verwenden:</span><span class="sxs-lookup"><span data-stu-id="3cb2a-108">Sign in to the application by using one of the following roles:</span></span>
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a><span data-ttu-id="d6159-110">Löschen Sie eine freigegebene Version der Datenmodellkonfiguration</span><span class="sxs-lookup"><span data-stu-id="d6159-110">Delete a shared version of data model configuration</span></span>
-1. <span data-ttu-id="d6159-111">Wählen Sie "Beispielmodellkonfiguration" in der Struktur aus.</span><span class="sxs-lookup"><span data-stu-id="d6159-111">In the tree, select 'Sample model configuration'.</span></span>
-    * <span data-ttu-id="d6159-112">Die erste Version einer Beispieldaten-Modellkonfiguration wurde erstellt und nach LCS veröffentlicht während der Prozedur „Hochladen einer ER-Konfiguration nach Lifecycle Services“.</span><span class="sxs-lookup"><span data-stu-id="d6159-112">The first version of a sample data model configuration has been created and published to LCS during the "Upload an ER configuration into Lifecycle Services" procedure.</span></span> <span data-ttu-id="d6159-113">In dieser Prozedur löschen Sie diese Version der ER-Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="d6159-113">In this procedure, you will delete this version of the ER configuration.</span></span> <span data-ttu-id="d6159-114">Diese Version einer Beispieldatmodellkonfiguration wird später von LCS importiert.</span><span class="sxs-lookup"><span data-stu-id="d6159-114">This version of a sample data model configuration will be imported later from LCS.</span></span>  
-2. <span data-ttu-id="d6159-115">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d6159-115">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d6159-116">Wählen Sie die Version dieser Konfiguration aus, die sich im Status „Freigegeben“ befindet.</span><span class="sxs-lookup"><span data-stu-id="d6159-116">Select the version of this configuration that is in the 'Shared' status.</span></span> <span data-ttu-id="d6159-117">Dieser Status gibt an, dass die Konfiguration nach LCS veröffentlicht wurde.</span><span class="sxs-lookup"><span data-stu-id="d6159-117">This status indicates that the configuration has been published to LCS.</span></span>  
-3. <span data-ttu-id="d6159-118">Klicken Sie auf "Status ändern".</span><span class="sxs-lookup"><span data-stu-id="d6159-118">Click Change status.</span></span>
-4. <span data-ttu-id="d6159-119">Klicken Sie auf "Nicht fortsetzen".</span><span class="sxs-lookup"><span data-stu-id="d6159-119">Click Discontinue.</span></span>
-    * <span data-ttu-id="d6159-120">Ändern Sie den Status der ausgewählten Version von „Freigegeben“ zu „Nicht mehr verfügbar“, um sie zur Löschung bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="d6159-120">Change the status of the selected version from 'Shared' to 'Discontinued' to make it available for deletion.</span></span>  
-5. <span data-ttu-id="d6159-121">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="d6159-121">Click OK.</span></span>
-6. <span data-ttu-id="d6159-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d6159-122">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d6159-123">Wählen Sie die Version dieser Konfiguration aus, die den Status „Nicht mehr verfügbar“ hat.</span><span class="sxs-lookup"><span data-stu-id="d6159-123">Select the version of this configuration that has a status of 'Discontinued'.</span></span>  
-7. <span data-ttu-id="d6159-124">Klicken Sie auf Löschen.</span><span class="sxs-lookup"><span data-stu-id="d6159-124">Click Delete.</span></span>
-8. <span data-ttu-id="d6159-125">Klicken Sie auf „Ja“.</span><span class="sxs-lookup"><span data-stu-id="d6159-125">Click Yes.</span></span>
-    * <span data-ttu-id="d6159-126">Beachten Sie, dass die einzige Entwurfsversion 2 der ausgewählten Datenmodellkonfiguration verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="d6159-126">Note that the only draft version 2 of the selected data model configuration is available.</span></span>  
-9. <span data-ttu-id="d6159-127">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d6159-127">Close the page.</span></span>
+    - <span data-ttu-id="3cb2a-109">Entwickler für elektronische Berichterstellung</span><span class="sxs-lookup"><span data-stu-id="3cb2a-109">Electronic reporting developer</span></span>
+    - <span data-ttu-id="3cb2a-110">Systemadministrator</span><span class="sxs-lookup"><span data-stu-id="3cb2a-110">System administrator</span></span>
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a><span data-ttu-id="d6159-128">Importieren Sie eine freigegebene Version der Datenmodellkonfiguration von LCS</span><span class="sxs-lookup"><span data-stu-id="d6159-128">Import a shared version of data model configuration from LCS</span></span>
-1. <span data-ttu-id="d6159-129">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="d6159-129">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="d6159-130">Öffnen Sie die Liste von Repositorys für den Konfigurationsanbieter „Litware, Inc.“</span><span class="sxs-lookup"><span data-stu-id="d6159-130">Open the list of repositories for the 'Litware, Inc.'</span></span> <span data-ttu-id="d6159-131">zu öffnen Konfigurationsanbieter.</span><span class="sxs-lookup"><span data-stu-id="d6159-131">configuration provider.</span></span>  
-2. <span data-ttu-id="d6159-132">Klicken Sie auf Repositorys.</span><span class="sxs-lookup"><span data-stu-id="d6159-132">Click Repositories.</span></span>
-3. <span data-ttu-id="d6159-133">Klicken Sie auf "Öffnen".</span><span class="sxs-lookup"><span data-stu-id="d6159-133">Click Open.</span></span>
-    * <span data-ttu-id="d6159-134">Wählen Sie das LCS-Repository aus und öffnen Sie es.</span><span class="sxs-lookup"><span data-stu-id="d6159-134">Select the LCS repository and open it.</span></span>  
-4. <span data-ttu-id="d6159-135">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="d6159-135">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="d6159-136">Wählen Sie die erste Version der "Beispielmodellkonfiguration" in der Versionsliste aus.</span><span class="sxs-lookup"><span data-stu-id="d6159-136">Select the first version of the 'Sample model configuration' in the versions list.</span></span>  
-5. <span data-ttu-id="d6159-137">Klicken Sie auf Import.</span><span class="sxs-lookup"><span data-stu-id="d6159-137">Click Import.</span></span>
-6. <span data-ttu-id="d6159-138">Klicken Sie auf "Ja".</span><span class="sxs-lookup"><span data-stu-id="d6159-138">Click Yes.</span></span>
-    * <span data-ttu-id="d6159-139">Bestätigen Sie den Import der ausgewählten Version von LCS.</span><span class="sxs-lookup"><span data-stu-id="d6159-139">Confirm the import of the selected version from LCS .</span></span>  
-    * <span data-ttu-id="d6159-140">Beachten Sie, dass die Informationsmeldung (über dem Formular) den erfolgreichen Abschluss des Importvorgangs der ausgewählten Version bestätigt.</span><span class="sxs-lookup"><span data-stu-id="d6159-140">Note that the information message (above the form) confirms the successful completion of the import of the selected version.</span></span>  
-7. <span data-ttu-id="d6159-141">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d6159-141">Close the page.</span></span>
-8. <span data-ttu-id="d6159-142">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="d6159-142">Close the page.</span></span>
-9. <span data-ttu-id="d6159-143">Klicken Sie auf "Konfigurationen".</span><span class="sxs-lookup"><span data-stu-id="d6159-143">Click Configurations.</span></span>
-10. <span data-ttu-id="d6159-144">Wählen Sie "Beispielmodellkonfiguration" in der Struktur aus.</span><span class="sxs-lookup"><span data-stu-id="d6159-144">In the tree, select 'Sample model configuration'.</span></span>
-11. <span data-ttu-id="d6159-145">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="d6159-145">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="d6159-146">Wählen Sie die Version dieser Konfiguration aus, die den Status „Freigegeben“ hat.</span><span class="sxs-lookup"><span data-stu-id="d6159-146">Select the version of this configuration that has a status of 'Shared'.</span></span>  
-    * <span data-ttu-id="d6159-147">Beachten Sie, dass die freigegebene Version 1 der ausgewählten Datenmodellkonfiguration jetzt verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="d6159-147">Note that the shared version 1 of the selected data model configuration is available now as well.</span></span>  
+2. <span data-ttu-id="3cb2a-111">Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-111">Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.</span></span>
+3. <span data-ttu-id="3cb2a-112">Wählen Sie **Konfigurationen** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-112">Select **Configurations**.</span></span>
 
+<a name="accessconditions"></a>
+> [!NOTE]
+> <span data-ttu-id="3cb2a-113">Stellen Sie sicher, dass der aktuelle Dynamics 365 Finance-Benutzer Mitglied des LCS-Projekts ist, das die Anlagenbibliothek enthält, auf die der Benutzer [Zugriff](../../lifecycle-services/asset-library.md#asset-library-support) erhalten möchte, um EB-Konfigurationen zu importieren.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-113">Make sure that the current Dynamics 365 Finance user is a member of the LCS project that contains the Asset library that the user wants to [access](../../lifecycle-services/asset-library.md#asset-library-support) to import ER configurations.</span></span>
+>
+> <span data-ttu-id="3cb2a-114">Sie können nicht über ein EB-Repository auf ein LCS-Projekt zugreifen, das eine andere Domäne als die in Finance verwendete Domäne darstellt.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-114">You can't access an LCS project from an ER repository that represents a different domain than the domain that is used in Finance.</span></span> <span data-ttu-id="3cb2a-115">Wenn Sie dies versuchen, wird eine leere Liste der LCS-Projekte angezeigt, und Sie können keine EB-Konfigurationen aus der Analgenbibliothek auf Projektebene in LCS importieren.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-115">If you try, an empty list of LCS projects will be shown, and you won't be able to import ER configurations from the project-level Asset library in LCS.</span></span> <span data-ttu-id="3cb2a-116">Um von einem EB-Repository, das zum Importieren von EB-Konfigurationen verwendet wird, auf Analgenbibliotheken auf Projektebene zuzugreifen, melden Sie sich bei Finance an, indem Sie die Anmeldeinformationen eines Benutzers verwenden, der zu dem Mandanten (der Domäne) gehört, für den die aktuelle Finance-Instanz bereitgestellt wurde.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-116">To access project-level Asset libraries from an ER repository that is used to import ER configurations, sign in to Finance by using the credentials of a user who belongs to the tenant (domain) that the current Finance instance has been provisioned for.</span></span>
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a><span data-ttu-id="3cb2a-117">Löschen Sie eine freigegebene Version einer Datenmodellkonfiguration</span><span class="sxs-lookup"><span data-stu-id="3cb2a-117">Delete a shared version of a data model configuration</span></span>
+
+1. <span data-ttu-id="3cb2a-118">Wählen Sie auf der Seite **Konfigurationen** im Konfigurationsbaum **Beispielmodellkonfiguration**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-118">On the **Configurations** page, in the configurations tree, select **Sample model configuration**.</span></span>
+
+    <span data-ttu-id="3cb2a-119">Sie haben die erste Version einer Beispieldaten-Modellkonfiguration erstellt und sie in LCS veröffentlicht, als Sie die Schritte in [Hochladen einer EB-Konfiguration nach Lifecycle Services](er-upload-configuration-into-lifecycle-services.md) abgeschlossen haben.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-119">You created the first version of a sample data model configuration and published it to LCS when you completed the steps in [Upload a configuration into Lifecycle Services](er-upload-configuration-into-lifecycle-services.md).</span></span> <span data-ttu-id="3cb2a-120">In dieser Prozedur löschen Sie diese Version der EB-Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-120">In this procedure, you will delete that version of the ER configuration.</span></span> <span data-ttu-id="3cb2a-121">Sie werden diese Version später in diesem Thema aus LCS importieren.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-121">You will then import that version from LCS later in this topic.</span></span>
+
+2. <span data-ttu-id="3cb2a-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-122">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="3cb2a-123">Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Freigegeben** hat.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-123">For this example, select the version of the configuration that has a status of **Shared**.</span></span> <span data-ttu-id="3cb2a-124">Dieser Status gibt an, dass die Konfiguration nach LCS veröffentlicht wurde.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-124">This status indicates that the configuration has been published to LCS.</span></span>
+
+3. <span data-ttu-id="3cb2a-125">Wählen Sie **Status ändern** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-125">Select **Change status**.</span></span>
+4. <span data-ttu-id="3cb2a-126">Wählen Sie **Nicht fortsetzen** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-126">Select **Discontinue**.</span></span>
+
+    <span data-ttu-id="3cb2a-127">Indem Sie den Status der ausgewählten Version von **Freigegeben** zu **Eingestellt** ändern, wird die Löschung zur Löschung verfügbar.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-127">By changing the status of the selected version from **Shared** to **Discontinued**, you make the version available for deletion.</span></span>
+
+5. <span data-ttu-id="3cb2a-128">Wählen Sie **OK**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-128">Select **OK**.</span></span>
+6. <span data-ttu-id="3cb2a-129">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-129">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="3cb2a-130">Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Eingestellt** hat.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-130">For this example, select the version of the configuration that has a status of **Discontinued**.</span></span>
+
+7. <span data-ttu-id="3cb2a-131">Wählen Sei **Löschen**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-131">Select **Delete**.</span></span>
+8. <span data-ttu-id="3cb2a-132">Wählen Sie **Ja** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-132">Select **Yes**.</span></span>
+
+    <span data-ttu-id="3cb2a-133">Beachten Sie, dass die einzige Entwurfsversion 2 der ausgewählten Datenmodellkonfiguration jetzt verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-133">Notice that the only draft version 2 of the selected data model configuration is now available.</span></span>
+
+9. <span data-ttu-id="3cb2a-134">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-134">Close the page.</span></span>
+
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a><span data-ttu-id="3cb2a-135">Importieren Sie eine freigegebene Version einer Datenmodellkonfiguration von LCS</span><span class="sxs-lookup"><span data-stu-id="3cb2a-135">Import a shared version of a data model configuration from LCS</span></span>
+
+1. <span data-ttu-id="3cb2a-136">Wechseln Sie zu **Organisationsverwaltung  \>Arbeitsbereiche \>  Elektronische Berichterstellung**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-136">Go to **Organization administration \> Workspaces \> Electronic reporting**.</span></span>
+
+2. <span data-ttu-id="3cb2a-137">Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Litware, Inc.** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-137">In the **Configuration providers** section, select the **Litware, Inc.** tile.</span></span>
+
+3. <span data-ttu-id="3cb2a-138">Klicken Sie auf der Kachel **Litware, Inc.** auf **Repositorys**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-138">On the **Litware, Inc.** tile, select **Repositories**.</span></span>
+
+    <span data-ttu-id="3cb2a-139">Sie können jetzt die Liste der Repositorys für Litware, Inc. als Konfigurationsanbieter öffnen.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-139">You can now open the list of repositories for the Litware, Inc. configuration provider.</span></span>
+
+4. <span data-ttu-id="3cb2a-140">Wählen Sie **Öffnen**.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-140">Select **Open**.</span></span>
+
+    <span data-ttu-id="3cb2a-141">Wählen Sie für dieses Beispiel das **LCS**-Repository aus und öffnen Sie es.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-141">For this example, select the **LCS** repository, and open it.</span></span> <span data-ttu-id="3cb2a-142">Sie benötigen [Zugriff](#accessconditions) auf das LCS-Projekt und zur Anlagenbibliothek, auf die das ausgewählte EB-Repository zugreift.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-142">You must have [access](#accessconditions) to the LCS project and to the Asset library that is accessed by the selected ER repository.</span></span>
+
+5. <span data-ttu-id="3cb2a-143">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-143">In the list, mark the selected row.</span></span>
+
+    <span data-ttu-id="3cb2a-144">Wählen Sie für dieses Beispiel die erste Version der **Beispielmodellkonfiguration** in der Versionsliste aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-144">For this example, select the first version of **Sample model configuration** in the version list.</span></span>
+
+6. <span data-ttu-id="3cb2a-145">**Import** auswählen</span><span class="sxs-lookup"><span data-stu-id="3cb2a-145">Select **Import**.</span></span>
+7. <span data-ttu-id="3cb2a-146">Wählen Sie **Ja**, um den Import der ausgewählten Version von LCS nach Dynamics AX zu bestätigen.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-146">Select **Yes** to confirm the import of the selected version from LCS.</span></span>
+
+    <span data-ttu-id="3cb2a-147">Eine Informationsnachricht bestätigt, dass die ausgewählte Version erfolgreich importiert wurde.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-147">An informational message confirms that the selected version was successfully imported.</span></span>
+
+8. <span data-ttu-id="3cb2a-148">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-148">Close the page.</span></span>
+9. <span data-ttu-id="3cb2a-149">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-149">Close the page.</span></span>
+10. <span data-ttu-id="3cb2a-150">Wählen Sie **Konfigurationen** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-150">Select **Configurations**.</span></span>
+11. <span data-ttu-id="3cb2a-151">Wählen Sie in der Struktur **Beispielmodellkonfiguration** aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-151">In the tree, select **Sample model configuration**.</span></span>
+12. <span data-ttu-id="3cb2a-152">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-152">In the list, find and select the desired record.</span></span>
+
+    <span data-ttu-id="3cb2a-153">Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Freigegeben** hat.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-153">For this example, select the version of the configuration that has a status of **Shared**.</span></span>
+
+    <span data-ttu-id="3cb2a-154">Beachten Sie, dass die freigegebene Version 1 der ausgewählten Datenmodellkonfiguration ebenfalls verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="3cb2a-154">Notice that shared version 1 of the selected data model configuration is also available now.</span></span>
