@@ -3,7 +3,7 @@ title: Hinzufügen eines Favicons
 description: In diesem Thema wird erläutert, wie ein favicon der Site hinzufügt wird.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/27/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 198927e3391bdb577ebc845ff41d49ca798251ff
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686789"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761152"
 ---
 # <a name="add-a-favicon"></a>Hinzufügen eines Favicons
 
@@ -58,30 +58,30 @@ Um das HTML für das Favicon zu erstellen, verwenden Sie die folgende HTML-Zeich
 
 `<link rel="shortcut icon" href="Public_URL_for_your_favicon">`
 
-## <a name="create-a-page-fragment-that-contains-a-metatag-for-your-favicon"></a>Erstellen Sie ein Seitenfragment, das ein Metatag für Ihr Favicon enthält
+## <a name="create-a-fragment-that-contains-a-metatag-for-your-favicon"></a>Erstellen Sie ein Fragment, das ein Metatag für Ihr Favicon enthält
 
-Um ein Seitenfragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen Sie diesen Schritten.
+Um ein Fragment zu erstellen, das ein Metatag für Ihr Favicon enthält, folgen Sie diesen Schritten.
 
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus.
-1. Wählen Sie im Dialogfeld **Neues Seitenfragment** die Option **Metatags** als das Modul aus, auf dem das Seitenfragment basiert.
-1. Geben Sie einen Namen für das Seitenfragment ein, und wählen Sie dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Neues Fragment** die Option **Metatags** als das Modul aus, auf dem das Fragment basiert.
+1. Geben Sie einen Namen für das Fragment ein, und wählen Sie dann **OK** aus.
 1. Wählen Sie in der Fragmenthierarchiestruktur das untergeordnete Element **Standard-Metatags** aus.
 1. Im rechten Bereich unter **Metatags** wählen Sie **Hinzufügen** aus, und geben Sie dann die HTML-Zeichenfolge ein, die Sie zuvor für das Favicon erstellt haben. 
-1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um das Seitenfragment zu veröffentlichen.
+1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um das Fragment zu veröffentlichen.
 
-## <a name="add-the-metatag-page-fragment-to-the-html-head-section-of-your-pages"></a>Fügen Sie das Metatag-Seitenfragment zum HTML-Kopfbereich Ihrer Seiten hinzu
+## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Fügen Sie das Metatag-Fragment zum HTML-Kopfbereich Ihrer Seiten hinzu
 
-Um das Metatag-Seitenfragment zum HTML-**Kopf**-Bereich Ihrer Seiten hinzuzufügen, folgen Sie diesen Schritten.
+Um das Metatag-Fragment zum HTML-**Kopf**-Bereich Ihrer Seiten hinzuzufügen, folgen Sie diesen Schritten.
 
 1. Gehen Sie zu **Vorlagen**, öffnen Sie die Vorlage für die Seiten, denen Sie Ihr Favicon hinzufügen möchten, und wählen Sie dann **Bearbeiten** aus.
-1. Wählen Sie in der Vorlagenhierarchiestruktur die Auslassungspunkte (**...**)-Schaltfläche rechts neben dem **HTML-Kopf**-Container aus, und wählen Sie dann **Seitenfragment hinzufügen** aus.
-1. Wählen Sie im Dialogfeld **Seitenfragment auswählen** das Metatag-Seitenfragment aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
+1. Wählen Sie in der Vorlagenhierarchiestruktur die Auslassungspunkte (**...**)-Schaltfläche rechts neben dem **HTML-Kopf**-Container aus, und wählen Sie dann **Fragment hinzufügen** aus.
+1. Wählen Sie im Dialogfeld **Fragment auswählen** das Metatag-Fragment aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
 1. Wählen Sie **Bearbeiten beenden** aus, und wählen Sie dann **Veröffentlichen** aus, um die Vorlage zu veröffentlichen.
 
 > [!NOTE]
-> Wenn Ihre Site mehr als eine Vorlage verwendet, müssen Sie allen das Metatags-Seitenfragment hinzufügen.
+> Wenn Ihre Site mehr als eine Vorlage verwendet, müssen Sie allen das Metatags-Fragment hinzufügen.
 
-Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie das Metatags-Seitenfragment hinzugefügt haben, sollten Sie jetzt das Favicon in der Browser-Registerkarte sehen.
+Wenn Sie Seiten in der Vorschau anzeigen, die auf der Vorlage basieren, der Sie das Metatags-Fragment hinzugefügt haben, sollten Sie jetzt das Favicon in der Browser-Registerkarte sehen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

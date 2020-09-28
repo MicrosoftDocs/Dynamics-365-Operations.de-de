@@ -3,7 +3,7 @@ title: Cookie-Compliance
 description: In diesem Thema werden Überlegungen zur Einhaltung von Cookies und zu den in Microsoft Dynamics 365 Commerce enthaltenen Standardrichtlinien beschrieben.
 author: BrianShook
 manager: annbe
-ms.date: 06/12/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1fa016dc9f46b048220f0f83e4b0783087de91e
-ms.sourcegitcommit: c66c4c67a21e7d7d3a94a3fd766c3184b6e65c4e
+ms.openlocfilehash: 4f54b9b8130a167dbecdb13fccd7039f827f6ed0
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3446912"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761320"
 ---
 # <a name="cookie-compliance"></a>Cookie-Compliance
 
@@ -56,12 +56,20 @@ Die folgende Tabelle zeigt die aktuelle Referenzliste der von Dynamics 365 Comme
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Wird zur Aufrechterhaltung der SSO-Sitzung verwendet.                        |
 | x-ms-cpim-trans                             | Wird zum Verfolgen von Transaktionen verwendet (Anzahl der offenen Registerkarten, die sich bei einer B2C-Site (Business-to-Consumer) authentifizieren), einschließlich der aktuellen Transaktion. |
 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Cookie-Zustimmung der Website-Benutzer auf einer E-Commerce-Website 
+
+Wenn eine E-Commerce-Website-Funktion oder ein E-Commerce-Website-Modul ein nicht wesentliches Cookie verwendet, muss die Zustimmung eines Website-Benutzers eingeholt werden, bevor das Cookie nachverfolgt wird. Damit Website-Benutzer auf der E-Commerce-Website eine Cookie-Einwilligung erteilen können, muss ein Website-Autor im Header-Modul der Seite ein Cookie-Einwilligungsmodul hinzufügen und konfigurieren, um sicherzustellen, dass die Einwilligung angefordert und empfangen wird. Die Zustimmung des Website-Benutzers muss gegeben werden, bevor eine Funktion oder ein Modul, das ein nicht wesentliches Cookie verwendet, auf einer Website-Seite gerendert werden kann.
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 [Funktionen und Leistungsspektrum der Eingabehilfe](accessibility.md)
 
 [Übersicht über Konformität](compliance-overview.md)
 
-[Hinzufügen einer Datenschutzrichtlinienseite](add-privacy-page.md)
+[Seite mit Datenschutzrichtlinien hinzufügen](add-privacy-page.md)
 
 [Benutzer-IDs ersetzen, die nachverfolgten Inhalten zugeordnet sind](replace-IDs-tracked-changes.md)
+
+[Cookie-Zustimmungsmodul](cookie-consent-module.md) 
+ 
+[Kopfzeilenmodul](author-header-module.md)

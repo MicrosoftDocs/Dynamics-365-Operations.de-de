@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5cbf313666e03c0006bee985bcf622a20ce4e51
-ms.sourcegitcommit: f1bef1cb4b3d2c9261e89820d624e4b0fe60d25c
+ms.openlocfilehash: 7a9dceb3f9e71163dcaf8b8763317110ef019844
+ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "3281508"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3813887"
 ---
 # <a name="purchase-requisition-workflow"></a>Bestellanforderungsworkflow
 
@@ -113,7 +113,7 @@ Um einen der Aufwendungsprüfer zu verwenden, den Sie in einem Workflow eingeric
 
 [Anforderung für Verbrauch erstellen](tasks/create-requisition-consumption.md)
 
-[Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+[Definieren von geschäftlichen Prozessworkflows für Bestellanforderungen.](https://www.microsoft.com/download/details.aspx?id=101821)
 
 [Beschaffungsworkflows](procurement-sourcing-workflows.md)
 

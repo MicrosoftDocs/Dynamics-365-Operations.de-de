@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cdc3fe95ec0917c09128997e254f29ce863dcc38
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 253177103435c765bfe45daffeae0c436617af21
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208016"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3803162"
 ---
 # <a name="purchase-agreements"></a>Rahmenbestellungen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dieser Artikel gibt Informationen zu Kaufverträge. Ein Kaufvertrag ist ein Vertrag, der eine Organisation bindet, eine angegebene Menge oder einen Betrag zu kaufen, indem sie mehrere Bestellungen tätigt. Für diese Zusage erhält der Käufer Sonderpreise und Rabatte. 
 
@@ -42,8 +41,13 @@ Um zu verhindern, dass Ihr Kaufvertrag verwendet und bestätigt wird, markieren 
 
 ## <a name="responsible-workers-on-purchase-agreements"></a>Verantwortliche Mitarbeiter bei Kaufverträgen
 
-Sie können einen primären und einen sekundären verantwortlichen Mitarbeiter in der Klassifizierung des Kaufvertrags identifizieren. Diese Werte werden vom resultierenden Kaufvertrag übernommen. Sie müssen dem Kaufvertrag keine verantwortlichen Mitarbeiter hinzufügen, und diese können im Kaufvertrag selbst fallweise direkt geändert werden. Sie können keinen sekundärverantwortlichen Mitarbeiter ohne einen primärverantwortlichen Mitarbeiter angeben, obwohl Sie keinen sekundärverantwortlichen Mitarbeiter benötigen. Sie können nicht denselben Mitarbeiter als primären und sekundären verantwortlichen Mitarbeiter angeben. 
+Sie können einen primären und einen sekundären verantwortlichen Mitarbeiter in der Klassifizierung des Kaufvertrags identifizieren. Diese Werte werden vom resultierenden Kaufvertrag übernommen. Sie müssen dem Kaufvertrag keine verantwortlichen Mitarbeiter hinzufügen, und diese können im Kaufvertrag selbst fallweise direkt geändert werden. Sie können keinen sekundärverantwortlichen Mitarbeiter ohne einen primärverantwortlichen Mitarbeiter angeben, obwohl Sie keinen sekundärverantwortlichen Mitarbeiter benötigen. Sie können nicht denselben Mitarbeiter als primären und sekundären verantwortlichen Mitarbeiter angeben.
 
+> [!IMPORTANT]
+> Bevor Sie die Funktion Zuständige Partei nutzen können, muss sie auf Ihrem System aktiviert werden. Administratoren können mit den Einstellungen [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) den Status der Funktion überprüfen und sie aktivieren. Im Arbeitsbereich **Funktionsverwaltung** ist die Funktion wie folgt aufgeführt:
+> 
+> - **Modul:** *Beschaffung*
+> - **Funktionsname:** *Zuständige Partei für Kaufvertrag*
 
 ## <a name="commitment-types"></a>Zusagetypen
 Jede Position in einem Kaufvertrag drückt eine Zusage für den Kauf eines Artikels aus. Sie können Positionen aus mehreren Bestellungen (POs) verwenden, um die Zusage zu erfüllen. Es gibt vier Typen von Zusagen:

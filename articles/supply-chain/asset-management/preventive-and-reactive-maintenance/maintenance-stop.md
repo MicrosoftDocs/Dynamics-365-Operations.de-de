@@ -1,6 +1,6 @@
 ---
-title: Wartungsausfallzeit
-description: In diesem Thema wird die Ausfallzeit der Wartung im Asset Management erläutert.
+title: Wartungsausfallaktivitäten
+description: In diesem Thema wird erklärt, wie Wartungsausfallzeiten dazu verwendet werden, sich einen Überblick über die Kapazität zu verschaffen, die für die Durchführung von Wartungsarbeiten an bestimmten Anlagen in einem bestimmten Zeitraum erforderlich ist.
 author: josaw1
 manager: tfehr
 ms.date: 08/27/2019
@@ -18,18 +18,16 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c1b219d352b6b090c5c2cd3c063d7f890beaa35c
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 2f864e7fe0129f8487cddadc99b32f75a2b6d9ca
+ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383526"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3802820"
 ---
-# <a name="maintenance-downtime"></a>Wartungsausfallzeit
+# <a name="maintenance-downtime-activities"></a>Wartungsausfallaktivitäten
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Wartungsausfallzeiten dienen dazu, sich einen Überblick über die Kapazität zu verschaffen, die für die Durchführung von Wartungsarbeiten an bestimmten Anlagen in einem bestimmten Zeitraum erforderlich ist. Beispielsweise können Sie eine Instandhaltungsausfallregistrierung für die Produktionsposition 10 in der Produktionshalle 29-A auf der Produktionsstätte 02 anlegen. Die Registrierung von Wartungsausfallzeiten hat eine Start- und Endzeit, die den Zeitraum angibt, in dem die mit dem Wartungsausfall verbundenen Anlagen nicht für die Produktion verfügbar sind.
 

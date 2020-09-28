@@ -3,7 +3,7 @@ title: Checkoutmoduls
 description: In diesem Thema wird beschrieben, wie Sie ein Auscheckenmodul einer Seite hinzufügen und die erforderlichen Eigenschaften festlegen.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d913fdc9ab9a3dbf7d5534fba38add7f942652a
-ms.sourcegitcommit: 81f162f2d50557d7afe292c8d326618ba0bc3259
+ms.openlocfilehash: 389e3e9d631574eac499f7c6146e2776b8126a52
+ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "3686741"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761104"
 ---
 # <a name="checkout-module"></a>Auschecken-Modul
 
@@ -97,8 +97,8 @@ Die meisten Auschecken-Informationen, wie Postanschrift und Versandart werden im
 Um ein Auschecken-Modul einer neuen Seite hinzuzufügen und die erforderlichen Eigenschaften festzulegen, führen Sie die folgenden Schritte aus.
 
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
-1. Wählen Sie im Dialogfeld **Neues Seitenfragment** das Modul **Auschecken** aus.
-1. Geben Sie unter **Name des Seitenfragments** einen Namen für das **Checkout-Fragment** ein und wählen Sie dann **OK** aus.
+1. Wählen Sie im Dialogfeld **Neues Fragment** das Modul **Auschecken** aus.
+1. Geben Sie unter **Name des Fragments** einen Namen für das **Checkout-Fragment** ein und wählen Sie dann **OK** aus.
 1. Wählen Sie den **Kassemodul**-Slot.
 1. Wählen Sie im Eigenschaftenbereich rechts das Stiftsymbol aus, geben Sie den Überschriftentext in das Feld ein und wählen Sie dann das Häkchensymbol aus.
 1. Auf der neuen Seite wählen Sie **Checkout-Informations**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.

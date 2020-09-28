@@ -3,7 +3,7 @@ title: Aktualisierungsprozess
 description: Microsoft Dynamics 365 Human Resources ist ein echter Software-as-a-Service (SaaS), der kontinuierliche, eingriffsfreie Service-Updates für Anwendungs- und Plattformwechsel bietet.
 author: andreabichsel
 manager: AnnBe
-ms.date: 02/27/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 006f3c7218436c1c70e29e51f8b1b784ae36b2dd
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: be9be5509f933ecbda5bf6d040027a7bac8b666d
+ms.sourcegitcommit: 5472005274f2f94fba82dda90de128f39d8b8390
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3431175"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759958"
 ---
 # <a name="update-process"></a>Aktualisierungsprozess
 
@@ -33,7 +33,7 @@ Microsoft Dynamics 365 Human Resources ist eine echte Software-as-a-Service (Saa
 
 Aktualisierungen werden in regelmäßigen Abständen in allen Umgebungen veröffentlicht. Human Resources wird entsprechend der [Microsoft Lifecycle-Richtlinie](https://support.microsoft.com/hub/4095338/microsoft-lifecycle-policy) unterstützt, die einen konsistenten und voraussehbaren Leitfaden für die Supportverfügbarkeit bietet.
 
-## <a name="release-cadence"></a>Veröffentlichungshäufigkeit
+## <a name="release-cadence"></a>Veröffentlichungshäufigkeit 
 
 Human Resources-Aktualisierungen werden automatisch auf alle Umgebungen angewendet. Human Resources bietet zwei Versionstypen:
 
@@ -56,14 +56,12 @@ Versionen werden in einer internen Umgebung überprüft, getestet und validiert.
 
 ## <a name="release-cadence-exceptions-in-2020"></a>Freigabe von Trittfrequenzausnahmen im Jahr 2020
 
-Die folgenden Daten sind Ausnahmen vom regulären Veröffentlichungszeitplan:
+Um die Feiertage zu berücksichtigen, sieht der Veröffentlichungsplan für November und Dezember 2020 wie folgt aus:
 
-| Datum | Beschreibung |
-| --- | --- |
-| Woche des 23. November | Keine Aktualisierungen |
-| Woche des 14. Dezember | Nur kleine Aktualisierungen |
-| Woche des 21. Dezember | Keine Aktualisierungen |
-| Woche des 28. Dezember | Keine Aktualisierungen |
+- November-Veröffentlichung: 2. November – 13. November
+- Dezember-Veröffentlichung: 30. November – 11. Dezember
+ 
+Die zweiwöchige Veröffentlichungshäufigkeit wird wie gewohnt am 11. Januar 2021 wieder aufgenommen.
 
 ## <a name="communications"></a>Kommunikation
 

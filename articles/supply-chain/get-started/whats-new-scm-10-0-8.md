@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 7dfa6353653c41330dba179331ccbd2373aef774
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
+ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3651956"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3801457"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.8 (Februar 2020)
 
@@ -41,10 +41,10 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 - [Zusätzliche Lagerplatzzone](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
 - [Anlagenverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Weitere Informationen finden Sie unter [Anlagenverwaltung – Übersicht](../asset-management/index.md).
 - [Arbeit stornieren](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Weitere Informationen finden Sie unter [Lagerarbeit bei der Ausnahmebehandlung stornieren](../warehousing/cancel-warehouse-work.md).
-- [Arbeitspool für Arbeit ändern](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)
-- [Clusterposition voll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)
-- [Bestätigen und übertragen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)
-- [Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)
+- [Arbeitspool für Arbeit ändern](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Weitere Informationen finden Sie unter [Ändern Sie den Arbeitspool bei der Arbeit](../warehousing/change-work-pool-on-work.md).
+- [Clusterposition voll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) – Weitere Informationen finden Sie unter [Clusterposition voll](../warehousing/cluster-position-full.md).
+- [Bestätigen und übertragen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Weitere Informationen finden Sie unter [Bestätigen und übertragen](../warehousing/confirm-and-transfer.md).
+- [Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Weitere Informationen finden Sie unter [Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme](../warehousing/location-directive-inventory-picking-aging.md).
 - [Lagerplatzstatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)
 - [Gruppierung von Kommissionierpositionen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/pick-line-grouping)<br> - Weitere Informationen finden Sie unter [Gruppierung von Kommissionierpositionen](../warehousing/pick-line-grouping.md).
 - [Automatische Aktualisierung der Lieferung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/shipment-auto-update)<br> - Weitere Informationen finden Sie unter [Automatische Aktualisierungen der Lieferung](../warehousing/auto-update-shipment.md).
@@ -54,9 +54,9 @@ Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel 
 - [Validierung von Warehouse-App-Aufgaben mit RSAT](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-app-task-validation-rsat)
 - [Lagerortfreigaberegel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-release-rule)
 - [Wellenstatusvisualisierung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-status-visualization)
-- [Wellenvorlagengruppierung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)
-- [Arbeitspositionsdetails](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Weitere Informationen finden Sie im Video [Arbeitspositionsdetails](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
-- [Schwellenwert für Zonenwiederbeschaffung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)
+- [Wellenvorlagengruppierung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-template-grouping)<br> - Weitere Informationen finden Sie unter [Wellenvorlagengruppierung](../warehousing/wave-template-grouping.md).
+- [Arbeitspositionsdetails](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/work-line-details)<br> - Weitere Informationen finden Sie unter [Arbeitszeilendetails](../warehousing/work-line-details.md) und im Video [Arbeitszeilendetails](https://www.microsoft.com/videoplayer/embed/RE4fcYN).
+- [Schwellenwert für Zonenwiederbeschaffung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/zone-threshold-replenishment)<br> - Weitere Informationen finden Sie unter [Schwellenwert für Zonenwiederbeschaffung](../warehousing/zone-threshold-replenishment.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

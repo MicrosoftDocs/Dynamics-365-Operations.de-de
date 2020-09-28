@@ -3,7 +3,7 @@ title: Verlagerung der Steuerschuld
 description: In diesem Thema wird erläutert, wie die Verlagerung der Steuerschuld (MwSt.) für europäische Länder, Saudi-Arabien und Singapur eingerichtet wird.
 author: epodkolz
 manager: AnnBe
-ms.date: 07/16/2019
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,24 +11,25 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 530ff52abb1dd36c473ae436d61ea925c5696a30
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 9a58ae689a6185316854bf8f01d1237a487d3981
+ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2183553"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3760232"
 ---
 # <a name="reverse-charge-vat"></a>Verlagerung der Steuerschuld
 
-
 [!include [banner](../includes/banner.md)]
 
+In diesem Thema wird ein allgemeiner Ansatz zum Einrichten der Verlagerung der Steuerschuld für EU- und GCC-Länder sowie Singapur.
 
-In diesem Thema wird ein allgemeiner Ansatz zum Einrichten der Verlagerung der Steuerschuld für Saudi-Arabien, Singapur und europäische Länder beschrieben.
+> [!NOTE]                                                                                  
+> Für Bahrain, Kuwait, Oman und Katar sollte eine **Verfügbarkeit der Verlagerung der Steuerschuld für zusätzliche Länder**-Funktion im **Funktionsverwaltung**-Arbeitsplatz aktiviert sein. 
 
 Die Verlagerung der Steuerschuld ist ein Steuerschema, das die Zuständigkeit für die Buchhaltung und das Melden der Mehrwertsteuer vom Verkäufer auf den Einkäufer von Waren und/oder Dienstleistungen verschiebt. Daher melden Empfänger von Waren und/oder Dienstleistungen sowohl die Ausgangssteuer (in der Rolle eines Verkäufers) als auch die Vorsteuer (in der Rolle des Einkäufers) in ihrer MwSt.-Abrechnung.
 
@@ -85,7 +86,7 @@ Auf der Seite **Artikelgruppen für die Verlagerung der Steuerschuld** (**Steuer
 Auf der Seite **Regeln für die Verlagerung der Steuerschuld** (**Steuer** &gt; **Einstellungen** &gt; **Mehrwertsteuer** &gt; **Regeln für die Verlagerung der Steuerschuld**) können Sie die Anwendbarkeitsregeln zu Einkaufs- und Vertriebszwecke definieren. Sie können einen Satz von Regeln für die Verlagerung der Steuerschuld konfigurieren. Legen Sie für jede Regel die folgenden Felder fest:
 
 - **Dokumenttyp** – Wählen Sie **Bestellung**, **Kreditorenrechnungserfassung**, **Auftrag**, **Freitextrechnung**, **Debitorenrechnungserfassung** und/oder **Kreditorenrechnung** aus.
-- **Lander/Region des Partners** – Wählen Sie **Inland**, **EU** oder **Ausland** aus. Falls die Regel für alle Handelspartner unabhängig vom Land oder der Region ihrer Adresse gilt, wählen Sie **Alle** aus.
+- **Länder-/Regionstyp des Partners** – Wählen Sie **Inland**, **EU**, **GCC** oder **Ausland** aus. Falls die Regel für alle Handelspartner unabhängig vom Land oder der Region ihrer Adresse gilt, wählen Sie **Alle** aus.
 - **Inländische Lieferadresse** – Aktivieren Sie dieses Kontrollkästchen, um die Regel auf Lieferungen im gleichen Land oder der gleichen Region anzuwenden. Dieses Kontrollkästchen kann nicht für die Dokumenttypen **Kreditorenrechnungserfassung** und **Debitorenrechnungserfassung** aktiviert werden.
 - **Artikelgruppe für Verlagerung der Steuerschuld** – Wählen Sie die Gruppe aus, auf die die Regel angewendet werden kann.
 - **Schwellenwertbetrag** – Das Schema der Verlagerung der Steuerschuld wird nur dann bei einer Rechnung angewendet, wenn der Wert der Artikel und/oder Services in der Gruppe der Verlagerung der Steuerschuld das hier angegebene Limit überschreitet.
@@ -98,13 +99,16 @@ Darüber hinaus können Sie angeben, ob eine Benachrichtigung angezeigt wird und
 - **Bestätigung** – Eine Benachrichtigung wird angezeigt, um zu bestätigen, dass die Verlagerung der Steuerschuld angewendet werden kann.
 - **Satz** – Die Dokumentposition wird ohne zusätzliche Benachrichtigung aktualisiert.
 
+## <a name="set-up-countryregion-properties"></a>Länder-/Regionseigenschaften einrichten
+Stellen auf der **Außenhandelsparameter**-Seite (**Steuer** &gt; **Einrichtung** &gt; **Mehrwertsteuer** &gt; **Außenhandel** &gt; **Außenhandelsparameter**) auf der **Land-/Regionseigenschaften**-Registerkarte das Land/die Region der aktuellen juristischen Person auf *Inländisch* ein. Legen Sie den **Land-/Regionstyp** der EU-Länder/Regionen fest, die am EU-Handel mit der aktuellen juristischen Person mit *EU* teilnehmen. Legen Sie den **Land-/Regionstyp** der GCC-Länder/Regionen fest, die am GCC-Handel mit der aktuellen juristischen Person mit *GCC* teilnehmen.
+
 ## <a name="set-up-default-parameters"></a>Einrichten von Standardparametern
 Um die Funktionen für die Verlagerung der Steuerschuld zu aktivieren, legen Sie auf der Seite **Hauptbuchparameter** auf der Registerkarte **Verlagerung der Steuerschuld** die Option **Verlagerung der Steuerschuld aktivieren** auf **Ja** fest. Wählen Sie in den Feldern **Mehrwertsteuergruppe für Bestellung** und **Mehrwertsteuergruppe für Auftrag** die standardmäßigen Mehrwertsteuergruppen aus. Wenn eine Anwendbarkeitsbedingung für die Verlagerung der Steuerschuld erfüllt wird, wird die Bestellposition für den Auftrag oder die Bestellung mit diesen Mehrwertsteuergruppen aktualisiert.
 
 ## <a name="reverse-charge-on-a-sales-invoice"></a>Verlagerung der Steuerschuld für eine Verkaufsrechnung
 Bei Aufträgen mit dem Schema der Verlagerung der Steuerschuld stellt der Verkäufer keine Mehrwertsteuer in Rechnung. Stattdessen gibt die Rechnung die Artikel, für die die Verlagerung der Steuerschuld gilt, und den Gesamtbetrag der Verlagerung der Steuerschuld an.
 
-Wenn eine Verkaufsrechnung mit Verlagerung der Steuerschuld gebucht wird, weisen die Mehrwertsteuerbuchungen Steuerart **Mehrwertsteuer** sowie Null Mehrwertsteuer aus, und das Kontrollkästchen **Verlagerung der Steuerschuld** ist aktiviert.
+Wenn eine Verkaufsrechnung mit Verlagerung der Steuerschuld gebucht wird, weisen die **Mehrwertsteuerbuchungen** Steuerart Mehrwertsteuer sowie Null Mehrwertsteuer aus, und die Kontrollkästchen **Verlagerung der Steuerschuld** und **Befreit** sind aktiviert.
 
 ## <a name="reverse-charge-on-a-purchase-invoice"></a>Verlagerung der Steuerschuld für eine Einkaufsrechnung
 Für Einkäufe mit dem Schema der Verlagerung der Steuerschuld agiert der Käufer, der die Rechnung mit der Verlagerung der Steuerschuld erhält, für MwSt.-Buchhaltungszwecke als Einkäufer und Verkäufer.

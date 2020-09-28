@@ -3,7 +3,7 @@ title: Unterstützte Standards für die elektronische Rechnungsstellung in Europ
 description: Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung für Europa.
 author: mrolecki
 manager: AnnBe
-ms.date: 07/11/2017
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2fb188498705dcbad841645ced43e6a1715cbbd0
-ms.sourcegitcommit: 36857283d70664742c8c04f426b231c42daf4ceb
+ms.openlocfilehash: c86cc90e5f441641bc14d20898e65325d7c7d716
+ms.sourcegitcommit: 1ca48d95fbff2555307cc1e5e5e23feea79a8bc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2915163"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "3763683"
 ---
 # <a name="supported-standards-for-electronic-invoicing-in-europe"></a>Unterstützte Standards für die elektronische Rechnungsstellung in Europa
 
@@ -32,7 +32,7 @@ Dieses Thema beschreibt die Abdeckung für eine elektronische Rechnungsstellung 
 
 Die Implementierung und Übernahme der EU-weiten elektronischen Rechnungsstellung ist in der [Ratsrichtlinie 2010/45/EU](https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:189:0001:0008:EN:PDF) geregelt, die für alle EU-Mitgliedstaaten gilt. Unternehmen, die von der elektronischen Rechnungsstellung profitieren wollen, müssen Vertriebsrechnungen, Freitextrechnungen, Projektrechnungen, Vertriebsgutschriften und Projektrechnungsgutschriften als .xml-Dateien an die Regierung oder andere Handelspartner schicken, die die Verwendung der elektronischen Rechnungsstellung unterstützen. Diese .xml-Dateien müssen bestimmten Standards entsprechen. Die länderspezifischen Anforderungen und ihre Implementierung kann sich zwischen EU-Mitgliedstaaten unterscheiden, aber in der Regel verwenden Sie [UBL](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=ubl) (Universal Business Language) in unterschiedlichen Versionen mit Anpassungen, ebenso wie [PEPPOL](https://www.peppol.eu)-Spezifikationen und -Zugriffspunkte für die Überprüfung und den Transport. Der Hauptvorteil von UBL ist, dass Geschäftsunterlagen für unterschiedliche Zwecke standardisiert werden können. UBL ist ein flexibler, internationaler Standard, der viele Geschäftsanforderungen unterstützt, deshalb können diese Geschäftsunterlagen über Landesgrenzen hinweg ausgetauscht werden.
 
-## <a name="what-electronic-invoice-formats-are-currently-available-in-dynamics-365-finance"></a>Welche Formate der elektronischen Rechnung sind in Dynamics 365 Finance derzeit verfügbar?
+## <a name="electronic-invoice-formats-currently-available-in-dynamics-365-finance"></a>Derzeit in Dynamics 365 Finance verfügbare Formate der elektronischen Rechnung
 
 Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur Verfügung:
 
@@ -44,8 +44,10 @@ Die folgenden länderspezifischen Formate elektronischer Rechnungen stehen zur V
 -   FatturaPA v.1.2 für Italien
 -   xRechnung v.1.2 für Deutschland
 -   PEPPOL BIS Billing v.3.0 für die Europäische Union öffnen
+-   Estnisches spezifisches Format, Version 1.2
+-   Finvoice 3.0 für Finnland
 
-Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../dev-itpro/analytics/general-electronic-reporting.md). Es gibt ein **Debitorenrechnungsmodell**-Datenmodell sowie verschiedene länder-/regionsspezifische EB-Formatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE), die Niederlande (NL), Deutschland (DE) und die Europäische Union (EU).
+Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserstellung (EB)](../../dev-itpro/analytics/general-electronic-reporting.md). Ein **Rechnungsmodell**-Datenmodell, Rechnungsmodellzuordnung sowie verschiedene länder-/regionsspezifische EB-Formatkonfigurationen für Österreich (AT), Dänemark (DK), Italien (IT), Norwegen (NO), Spanien (ES), Frankreich (FR), Belgien (BE), die Niederlande (NL), Deutschland (DE), Estland (EE), Finnland (FI) und die Europäische Union (EU).
 
 -   OIOUBL Vertriebsrechnung – für AT, DK und NO
 -   OIOUBL Vertriebsgutschrift – für AT, DK und NO
@@ -73,10 +75,14 @@ Die elektronische Rechnungsstellung basiert auf der [elektronischen Berichtserst
 -   Peppol Vertriebsgutschrift – für die EU
 -   Peppol Projektrechnung – für die EU
 -   Peppol Projekt-Vertriebsgutschrift – für die EU
+-   Vertriebsrechnung (EE)
+-   Projektrechnung (EE)
+-   Vertriebsrechnung (FI)
+-   Projektrechnung (FI)
 
 Die von Ihnen erstellten elektronischen Rechnungen und Gutschriften enthalten die erforderlichen Informationen, wie beispielsweise die EAN-Nummer (European Article Numbering), den Ansprechpartner, die Kontonummer sowie Adressinformationen für den Kunden. Bei der Erstellung von Rechnungen werden Auswertungsregeln angewendet, Sie können also überprüfen, ob die richtigen Informationen eingetragen wurden. Welche Informationen gefordert werden, unterscheidet sich für die einzelnen Länder. Die Anforderungen und die unterstützten Länder und Formate verändern sich in unregelmäßigen Abständen, Sie sollten also immer die Bibliothek der freigegebenen Anlagen in Microsoft Dynamics Lifecycle Services (LCS) besuchen und die aktuellste Liste der verfügbaren Dateien mit dem Anlagentyp der **GER-Konfiguration** abfragen.
 
-## <a name="additional-information"></a>Weitere Informationen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 Weitere Informationen über die Einrichtung elektronischer Rechnungen finden Sie in den folgenden [Aufgabenleitfäden](../../fin-and-ops/get-started/help-overview.md#task-guides) im Feld Hilfe:
 
  - Einrichten der elektronischen OIOUBL-Rechnungsstellung
