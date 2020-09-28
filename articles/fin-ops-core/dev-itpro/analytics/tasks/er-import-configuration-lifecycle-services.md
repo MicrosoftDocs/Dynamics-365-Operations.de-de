@@ -1,14 +1,14 @@
 ---
-title: ER Import einer Konfiguration von Lifecycle Services
-description: In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" eine neue Konfiguration für "Elektronische Berichterstellung (ER)" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann.
+title: Importieren einer Konfiguration von Lifecycle Services
+description: In diesem Thema wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Version der Konfiguration für „Elektronische Berichterstellung (EB)“ von Microsoft Dynamics Lifecycle Services (LCS) importieren kann.
 author: NickSelin
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ERWorkspace, ERSolutionTable,  ERSolutionRepositoryTable, ERSolutionImport
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -16,57 +16,91 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e09e3187ac49e12727116f55066b64a386e2de
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 59dbbf820f7a3de1e5fb31f781943320b8b1a60a
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3142385"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810642"
 ---
-# <a name="er-import-a-configuration-from-lifecycle-services"></a>ER Import einer Konfiguration von Lifecycle Services
+# <a name="import-a-configuration-from-lifecycle-services"></a>Importieren einer Konfiguration von Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
-In den folgenden Schritten wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle "Entwickler für elektronische Berichterstellung" eine neue Konfiguration für "Elektronische Berichterstellung (ER)" erstellen kann und sie nach Microsoft Lifecycle Services (LCS) hochladen kann.
+In diesem Thema wird erläutert, wie ein Benutzer mit der Systemadministratorrolle oder der Rolle „Entwickler für elektronische Berichterstellung“ eine neue Konfiguration für [Elektronische Berichterstellung (EB)](../general-electronic-reporting.md#Configuration) aus der [Anlagenbibliothek auf Projektebene](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services (LCS) importieren kann.
 
-In diesem Beispiel wählen Sie die gewünschte Version der ER-Konfiguration und importieren das Beispielunternehmen, Litware, Inc. Diese Schritte können in einem beliebigen Unternehmen ausgeführt werden, da ER-Konfigurationsanbieter unter allen Unternehmen geteilt werden. Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in der Prozedur „Eine ER-Konfiguration nach Lifecycle Services hochladen“ abschließen. Zugriff auf LCS ist auch für den Abschluss dieser Schritte erforderlich.
+In diesem Beispiel wählen Sie die gewünschte Version der EB-Konfiguration und importieren ein Beispielunternehmen namens Litware, Inc. Diese Schritte können in einem beliebigen Unternehmen abgeschlossen werden, da EB-Konfigurationsanbieter unter allen Unternehmen geteilt werden. Um diese Schritte abzuschließen, müssen Sie zunächst die Schritte in [Eine Konfiguration nach Lifecycle Services hochladen](er-upload-configuration-into-lifecycle-services.md) abschließen. Zugriff auf LCS ist ebenfalls erforderlich.
 
-1. Wechseln Sie zu Organisationsverwaltung > Arbeitsbereiche > Elektronische Berichterstellung.
-2. Klicken Sie auf "Konfigurationen".
+1. Melden Sie sich in der Anwendung an, indem Sie eine der folgenden Rollen verwenden:
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a>Löschen Sie eine freigegebene Version der Datenmodellkonfiguration
-1. Wählen Sie "Beispielmodellkonfiguration" in der Struktur aus.
-    * Die erste Version einer Beispieldaten-Modellkonfiguration wurde erstellt und nach LCS veröffentlicht während der Prozedur „Hochladen einer ER-Konfiguration nach Lifecycle Services“. In dieser Prozedur löschen Sie diese Version der ER-Konfiguration. Diese Version einer Beispieldatmodellkonfiguration wird später von LCS importiert.  
+    - Entwickler für elektronische Berichterstellung
+    - Systemadministrator
+
+2. Wechseln Sie zu **Organisationsverwaltung** \> **Arbeitsbereiche** \> **Elektronische Berichterstellung**.
+3. Wählen Sie **Konfigurationen** aus.
+
+<a name="accessconditions"></a>
+> [!NOTE]
+> Stellen Sie sicher, dass der aktuelle Dynamics 365 Finance-Benutzer Mitglied des LCS-Projekts ist, das die Anlagenbibliothek enthält, auf die der Benutzer [Zugriff](../../lifecycle-services/asset-library.md#asset-library-support) erhalten möchte, um EB-Konfigurationen zu importieren.
+>
+> Sie können nicht über ein EB-Repository auf ein LCS-Projekt zugreifen, das eine andere Domäne als die in Finance verwendete Domäne darstellt. Wenn Sie dies versuchen, wird eine leere Liste der LCS-Projekte angezeigt, und Sie können keine EB-Konfigurationen aus der Analgenbibliothek auf Projektebene in LCS importieren. Um von einem EB-Repository, das zum Importieren von EB-Konfigurationen verwendet wird, auf Analgenbibliotheken auf Projektebene zuzugreifen, melden Sie sich bei Finance an, indem Sie die Anmeldeinformationen eines Benutzers verwenden, der zu dem Mandanten (der Domäne) gehört, für den die aktuelle Finance-Instanz bereitgestellt wurde.
+
+## <a name="delete-a-shared-version-of-a-data-model-configuration"></a>Löschen Sie eine freigegebene Version einer Datenmodellkonfiguration
+
+1. Wählen Sie auf der Seite **Konfigurationen** im Konfigurationsbaum **Beispielmodellkonfiguration**.
+
+    Sie haben die erste Version einer Beispieldaten-Modellkonfiguration erstellt und sie in LCS veröffentlicht, als Sie die Schritte in [Hochladen einer EB-Konfiguration nach Lifecycle Services](er-upload-configuration-into-lifecycle-services.md) abgeschlossen haben. In dieser Prozedur löschen Sie diese Version der EB-Konfiguration. Sie werden diese Version später in diesem Thema aus LCS importieren.
+
 2. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Version dieser Konfiguration aus, die sich im Status „Freigegeben“ befindet. Dieser Status gibt an, dass die Konfiguration nach LCS veröffentlicht wurde.  
-3. Klicken Sie auf "Status ändern".
-4. Klicken Sie auf "Nicht fortsetzen".
-    * Ändern Sie den Status der ausgewählten Version von „Freigegeben“ zu „Nicht mehr verfügbar“, um sie zur Löschung bereitzustellen.  
-5. Klicken Sie auf "OK".
+
+    Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Freigegeben** hat. Dieser Status gibt an, dass die Konfiguration nach LCS veröffentlicht wurde.
+
+3. Wählen Sie **Status ändern** aus.
+4. Wählen Sie **Nicht fortsetzen** aus.
+
+    Indem Sie den Status der ausgewählten Version von **Freigegeben** zu **Eingestellt** ändern, wird die Löschung zur Löschung verfügbar.
+
+5. Wählen Sie **OK**.
 6. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Version dieser Konfiguration aus, die den Status „Nicht mehr verfügbar“ hat.  
-7. Klicken Sie auf Löschen.
-8. Klicken Sie auf „Ja“.
-    * Beachten Sie, dass die einzige Entwurfsversion 2 der ausgewählten Datenmodellkonfiguration verfügbar ist.  
+
+    Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Eingestellt** hat.
+
+7. Wählen Sei **Löschen**.
+8. Wählen Sie **Ja** aus.
+
+    Beachten Sie, dass die einzige Entwurfsversion 2 der ausgewählten Datenmodellkonfiguration jetzt verfügbar ist.
+
 9. Schließen Sie die Seite.
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Importieren Sie eine freigegebene Version der Datenmodellkonfiguration von LCS
-1. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Öffnen Sie die Liste von Repositorys für den Konfigurationsanbieter „Litware, Inc.“ zu öffnen Konfigurationsanbieter.  
-2. Klicken Sie auf Repositorys.
-3. Klicken Sie auf "Öffnen".
-    * Wählen Sie das LCS-Repository aus und öffnen Sie es.  
-4. Markieren Sie in der Liste die ausgewählte Zeile.
-    * Wählen Sie die erste Version der "Beispielmodellkonfiguration" in der Versionsliste aus.  
-5. Klicken Sie auf Import.
-6. Klicken Sie auf "Ja".
-    * Bestätigen Sie den Import der ausgewählten Version von LCS.  
-    * Beachten Sie, dass die Informationsmeldung (über dem Formular) den erfolgreichen Abschluss des Importvorgangs der ausgewählten Version bestätigt.  
-7. Schließen Sie die Seite.
-8. Schließen Sie die Seite.
-9. Klicken Sie auf "Konfigurationen".
-10. Wählen Sie "Beispielmodellkonfiguration" in der Struktur aus.
-11. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
-    * Wählen Sie die Version dieser Konfiguration aus, die den Status „Freigegeben“ hat.  
-    * Beachten Sie, dass die freigegebene Version 1 der ausgewählten Datenmodellkonfiguration jetzt verfügbar ist.  
+## <a name="import-a-shared-version-of-a-data-model-configuration-from-lcs"></a>Importieren Sie eine freigegebene Version einer Datenmodellkonfiguration von LCS
 
+1. Wechseln Sie zu **Organisationsverwaltung  \>Arbeitsbereiche \>  Elektronische Berichterstellung**.
+
+2. Wählen Sie im Abschnitt **Konfigurationsanbieter** die Kachel **Litware, Inc.** aus.
+
+3. Klicken Sie auf der Kachel **Litware, Inc.** auf **Repositorys**.
+
+    Sie können jetzt die Liste der Repositorys für Litware, Inc. als Konfigurationsanbieter öffnen.
+
+4. Wählen Sie **Öffnen**.
+
+    Wählen Sie für dieses Beispiel das **LCS**-Repository aus und öffnen Sie es. Sie benötigen [Zugriff](#accessconditions) auf das LCS-Projekt und zur Anlagenbibliothek, auf die das ausgewählte EB-Repository zugreift.
+
+5. Markieren Sie in der Liste die ausgewählte Zeile.
+
+    Wählen Sie für dieses Beispiel die erste Version der **Beispielmodellkonfiguration** in der Versionsliste aus.
+
+6. **Import** auswählen
+7. Wählen Sie **Ja**, um den Import der ausgewählten Version von LCS nach Dynamics AX zu bestätigen.
+
+    Eine Informationsnachricht bestätigt, dass die ausgewählte Version erfolgreich importiert wurde.
+
+8. Schließen Sie die Seite.
+9. Schließen Sie die Seite.
+10. Wählen Sie **Konfigurationen** aus.
+11. Wählen Sie in der Struktur **Beispielmodellkonfiguration** aus.
+12. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.
+
+    Wählen Sie für dieses Beispiel die Version der Konfiguration aus, die den Status **Freigegeben** hat.
+
+    Beachten Sie, dass die freigegebene Version 1 der ausgewählten Datenmodellkonfiguration ebenfalls verfügbar ist.

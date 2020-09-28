@@ -3,7 +3,7 @@ title: Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstell
 description: In diesem Thema wird erläutert, wie Sie mithilfe von Electronic Reporting (ER) mehrsprachige Berichte erstellen und erstellen können.
 author: NickSelin
 manager: AnnBe
-ms.date: 04/24/2020
+ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65efb8dbec925b5238acaa5d6769f3085e9715b9
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 26a912aa2002f1d60dd650248bd3c68e45e68596
+ms.sourcegitcommit: 9857d5cbdc0ab2fc9db049ac5ad118fc2b29bedc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3444620"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "3810666"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Entwerfen Sie mehrsprachige Berichte in der elektronischen Berichterstellung
 
@@ -33,7 +33,7 @@ ms.locfileid: "3444620"
 
 Als geschäftlicher Benutzer verwenden Sie [Electronic Reporting (ER)](general-electronic-reporting.md) zum Konfigurieren von Formaten für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen. Wenn diese Anforderungen erfordern, dass ausgehende Dokumente in verschiedenen Sprachen für verschiedene Länder oder Regionen generiert werden, können Sie ein einzelnes ER konfigurieren [Format](general-electronic-reporting.md#FormatComponentOutbound) das sprachabhängige Ressourcen enthält. Auf diese Weise können Sie das Format wiederverwenden, um ausgehende Dokumente für verschiedene Länder oder Regionen zu generieren. Möglicherweise möchten Sie auch ein einziges ER-Format verwenden, um ein ausgehendes Dokument in verschiedenen Sprachen für entsprechende Kunden, Lieferanten, Tochterunternehmen oder andere Parteien zu generieren.
 
-Sie können ER-Datenmodelle und Modellzuordnungen als Datenquellen für konfigurierte ER-Formate konfigurieren, um den Datenfluss zu definieren, der angibt, welche Anwendungsdaten in generierten Dokumenten gespeichert werden. Als ER-Konfiguration [Anbieter](general-electronic-reporting.md#Provider) können Sie [veröffentlichen](tasks/er-upload-configuration-into-lifecycle-services.md#upload-configuration-into-lcs) konfigurierte [Datenmodelle](general-electronic-reporting.md#data-model-and-model-mapping-components) und [Modellzuordnungen](general-electronic-reporting.md#data-model-and-model-mapping-components), und [Formate](general-electronic-reporting.md#FormatComponentOutbound) als Komponenten einer ER-Lösung zur Generierung spezifischer ausgehender Dokumente. Sie können Kunden auch erlauben, [die](general-electronic-reporting-manage-configuration-lifecycle.md), um die veröffentlichte ER-Lösung hochzuladen, damit sie verwendet und angepasst werden kann. Wenn Sie erwarten, dass Kunden andere Sprachen sprechen, können Sie die ER-Komponenten so konfigurieren, dass sie sprachabhängige Ressourcen enthalten. Auf diese Weise kann der Inhalt einer bearbeitbaren ER-Komponente zur Entwurfszeit in der vom Kunden bevorzugten Sprache des Kunden dargestellt werden.
+Sie können ER-Datenmodelle und Modellzuordnungen als Datenquellen für konfigurierte ER-Formate konfigurieren, um den Datenfluss zu definieren, der angibt, welche Anwendungsdaten in generierten Dokumenten gespeichert werden. Als ER-Konfiguration [Anbieter](general-electronic-reporting.md#Provider) können Sie [veröffentlichen](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) konfigurierte [Datenmodelle](general-electronic-reporting.md#data-model-and-model-mapping-components) und [Modellzuordnungen](general-electronic-reporting.md#data-model-and-model-mapping-components), und [Formate](general-electronic-reporting.md#FormatComponentOutbound) als Komponenten einer ER-Lösung zur Generierung spezifischer ausgehender Dokumente. Sie können Kunden auch erlauben, [die](general-electronic-reporting-manage-configuration-lifecycle.md), um die veröffentlichte ER-Lösung hochzuladen, damit sie verwendet und angepasst werden kann. Wenn Sie erwarten, dass Kunden andere Sprachen sprechen, können Sie die ER-Komponenten so konfigurieren, dass sie sprachabhängige Ressourcen enthalten. Auf diese Weise kann der Inhalt einer bearbeitbaren ER-Komponente zur Entwurfszeit in der vom Kunden bevorzugten Sprache des Kunden dargestellt werden.
 
 Sie können sprachabhängige Ressourcen als ER-Labels konfigurieren. Sie können diese Beschriftungen dann verwenden, um ER-Komponenten für die folgenden Zwecke zu konfigurieren:
 

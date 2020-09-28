@@ -7,7 +7,7 @@ ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
-ms.technology: '---'
+ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6757a5a13d16c490dced7118c1da8aa0ea6d8994
-ms.sourcegitcommit: 523049c363a999050c58d20695f1c7d151b3fd3e
+ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
+ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029485"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "3793586"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synchronisieren von Produktbewertungen in Dynamics 365 Commerce
 
@@ -110,7 +110,7 @@ Gehen Sie folgendermaßen vor, um Produktbewertungen am POS zu aktivieren.
 1. Wählen Sie auf der Registerkarte **Konfigurationsparameter** die Option **Neu** aus.
 1. Geben Sie einen Namen, wie **RatingsAndReviews.EnableProductRatingsForRetailStores**, ein, und setzen Sie den Wert auf **true**.
 1. Wählen Sie **Speichern**.
-1. Gehen Sie zu **Retail and Commerce \> Retail and Commerce IT \> Vertriebsplan**. Suchen Sie alternativ nach „Vertriebsplan“.
+1. Gehen Sie zu **Retail und Commerce \> Retail und Commerce IT \> Vertriebsplan**. Suchen Sie alternativ nach „Vertriebsplan“.
 1. Wählen Sie in der Auftragsliste **1110** (**globale Konfiguration**) und dann **Jetzt ausführen** aus.
 1. Überprüfen Sie nach erfolgreicher Ausführung des Auftrags, ob die Produktbewertungen jetzt am POS angezeigt werden.
 

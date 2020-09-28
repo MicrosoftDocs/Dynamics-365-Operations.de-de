@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
 ms.technology: ''
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.scope: Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0bf2f843401811d601b5fe90709bf995f550870
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 54da05bb6b84390f9928d8400e3dafc3228ee2fc
+ms.sourcegitcommit: cd339f48066b1d0fc740b513cb72ea19015acd16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771516"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3759255"
 ---
 # <a name="cost-management-power-bi-content"></a>Power BI-Inhalt zur Kostenverwaltung
 
@@ -190,13 +190,13 @@ Die folgende Tabelle zeigt die wesentlichen berechneten Messungen im Power BI-In
 | Anfangssaldo                  | Anfangssaldo = \[Endsaldo\]-\[Nettoveränderung\] |
 | Anfangssaldomenge             | Anfangssaldomenge = \[Endsaldomenge\]-\[Nettoveränderungsmenge\] |
 | Endsaldo                     | Endsaldo = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
-| Endsaldomenge                | Endsaldomenge = CALCULATE(SUM(\[QTY\], FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Endsaldomenge                | Endsaldomenge = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
 | Nettoveränderung                         | Nettoänderung = SUM(\[AMOUNT\]) |
 | Nettoveränderungsmenge                    | Nettoveränderungsmenge = SUM(\[QTY\]) |
-| Lagerumschlagverhältnis nach Betrag | Lagerumschlagverhältnis nach Betrag = if(OR(\[Durchschnittlicher Bestandssaldo\] \<= 0, \[Verkaufter oder verbrauchter Bestand\]\> = 0), 0, ABS(\[Verkaufter oder verbrauchter Bestand\])/\[Durchschnittlicher Bestandssaldo\]) |
+| Lagerumschlagverhältnis nach Betrag | Lagerumschlagverhältnis nach Betrag = if(OR(\[Durchschnittlicher Bestandssaldo\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Verkaufter oder verbrauchter Bestand\])/\[Durchschnittlicher Bestandssaldo\]) |
 | Durchschnittlicher Lagerbestandsaldo          | Duchschnittlicher Bestandssaldo = ((\[Endsaldo\]  + \[Anfangssaldo\]) / 2) |
 | Lagerbestandsverfügbarkeit in Tagen             | Lagerbestandsverfügbarkeit in Tagen = 365 / CostObjectStatementEntries\[Lagerumschlagsverhältnis nach Betrag\] |
-| Lagergenauigkeit                 | Lagerbestandsgenauigkeit nach Betrag = IF(\[Endsaldo\]\< = 0, IF(OR(\[Gezählter Bestandsbetrag\] \<\> 0, \[Endsaldo\] \< 0), 0, 1), MAX(0, (\[Endsaldo\] - ABS(\[Gezählter Bestandsbetrag\]))\[Endsaldo\])) |
+| Lagergenauigkeit                 | Bestandsgenauigkeit nach Betrag = IF(\[Endsaldo\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[Endsaldo\] \< 0), 0, 1), MAX(0, (\[Endsaldo\] - ABS(\[Im Bestand gezählter Betrag\]))/\[Endsaldo\])) |
 
 Die folgenden wesentlichen Dimensionen werden als Filter verwendet, um die aggregierten Messungen zu segmentieren, damit Sie eine stärkere Granularität sowie tiefere analytische Einblicke erlangen.
 

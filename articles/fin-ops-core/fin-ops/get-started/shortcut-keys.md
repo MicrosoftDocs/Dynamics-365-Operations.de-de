@@ -1,6 +1,6 @@
 ---
 title: Tastenkombinationen
-description: Die folgenden Tastaturkombinationen können Sie schnell umsetzen, um Daten effizient einzugeben.
+description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
 manager: AnnBe
 ms.date: 10/02/2019
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aa35037b435bafa3f22013e41f0692f836e99a14
-ms.sourcegitcommit: 57bc7e17682e2edb5e1766496b7a22f4621819dd
+ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
+ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "2811554"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "3761620"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
 [!include [banner](../includes/banner.md)]
 
-Die folgenden Tastaturkombinationen können Sie schnell umsetzen, um Daten effizient einzugeben.
+Mit den folgenden Tastaturkombinationen können Sie Daten in Finance and Operations-Apps schnell und effizient eingeben.
 
 > [!NOTE]
 > Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
@@ -236,6 +236,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | In der Suche eine Zeile nach oben/unten wechseln                                                                                        | NACH-OBEN-TASTE / NACH-UNTEN-TASTE            |
 | In der Suche eine Seite nach oben/unten wechseln                                                                                       | BILD-AUF / BILD-AB              |
 | Ganz nach oben/unten in der Suche wechseln                                                                                    | POS1 / ENDE                       |
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 - [Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
