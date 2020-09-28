@@ -18,45 +18,45 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6adca3c95c10e7d4b3287561925a9d9fe8a74121
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 5b6fde7cbadec7aae052742ef598e1af4dbae793
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3042043"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3745128"
 ---
-# <span data-ttu-id="0e036-103"><a name="ISEMPTY">ISEMPTY EB-Funktion</a></span><span class="sxs-lookup"><span data-stu-id="0e036-103"><a name="ISEMPTY">ISEMPTY ER function</a></span></span>
+# <a name="isempty-er-function"></a><span data-ttu-id="91c2f-103">ISEMPTY EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="91c2f-103">ISEMPTY ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="0e036-104">Die Funktion `ISEMPTY` gibt den *booleschen* Wert **TRUE** zurück, wenn die angegebene Liste keine Datensätze enthält.</span><span class="sxs-lookup"><span data-stu-id="0e036-104">The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records.</span></span> <span data-ttu-id="0e036-105">Andernfalls gibt sie den *booleschen* Wert **FALSE** zurück.</span><span class="sxs-lookup"><span data-stu-id="0e036-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
+<span data-ttu-id="91c2f-104">Die Funktion `ISEMPTY` gibt den *booleschen* Wert **TRUE** zurück, wenn die angegebene Liste keine Datensätze enthält.</span><span class="sxs-lookup"><span data-stu-id="91c2f-104">The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records.</span></span> <span data-ttu-id="91c2f-105">Andernfalls gibt sie den *booleschen* Wert **FALSE** zurück.</span><span class="sxs-lookup"><span data-stu-id="91c2f-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="0e036-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="0e036-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="91c2f-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="91c2f-106">Syntax</span></span>
 
 ```vb
 ISEMPTY (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="0e036-107">Argumente</span><span class="sxs-lookup"><span data-stu-id="0e036-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="91c2f-107">Argumente</span><span class="sxs-lookup"><span data-stu-id="91c2f-107">Arguments</span></span>
 
-<span data-ttu-id="0e036-108">`list`: *Datensatzliste*</span><span class="sxs-lookup"><span data-stu-id="0e036-108">`list`: *Record list*</span></span>
+<span data-ttu-id="91c2f-108">`list`: *Datensatzliste*</span><span class="sxs-lookup"><span data-stu-id="91c2f-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="0e036-109">Der gültige Pfad einer Datenquelle des Datentyps *Datensatzliste*.</span><span class="sxs-lookup"><span data-stu-id="0e036-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="91c2f-109">Der gültige Pfad einer Datenquelle des Datentyps *Datensatzliste*.</span><span class="sxs-lookup"><span data-stu-id="91c2f-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="0e036-110">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="0e036-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="91c2f-110">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="91c2f-110">Return values</span></span>
 
-<span data-ttu-id="0e036-111">*Aktiv*</span><span class="sxs-lookup"><span data-stu-id="0e036-111">*Boolean*</span></span>
+<span data-ttu-id="91c2f-111">*Aktiv*</span><span class="sxs-lookup"><span data-stu-id="91c2f-111">*Boolean*</span></span>
 
-<span data-ttu-id="0e036-112">Der resultierende *boolesche* Wert.</span><span class="sxs-lookup"><span data-stu-id="0e036-112">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="91c2f-112">Der resultierende *boolesche* Wert.</span><span class="sxs-lookup"><span data-stu-id="91c2f-112">The resulting *Boolean* value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="0e036-113">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="0e036-113">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="91c2f-113">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="91c2f-113">Example 1</span></span>
 
-<span data-ttu-id="0e036-114">Wenn Sie die Datenquelle **DS** des Typs *Berechnetes Feld* eingeben, und sie den Ausdruck `SPLIT ("A|B|C", "|")` enthält, gibt der Ausdruck `ISEMPTY(DS)` **FALSE** zurück.</span><span class="sxs-lookup"><span data-stu-id="0e036-114">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.</span></span>
+<span data-ttu-id="91c2f-114">Wenn Sie die Datenquelle **DS** des Typs *Berechnetes Feld* eingeben, und sie den Ausdruck `SPLIT ("A|B|C", "|")` enthält, gibt der Ausdruck `ISEMPTY(DS)` **FALSE** zurück.</span><span class="sxs-lookup"><span data-stu-id="91c2f-114">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="0e036-115">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="0e036-115">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="91c2f-115">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="91c2f-115">Example 2</span></span>
 
-<span data-ttu-id="0e036-116">Der Ausdruck `ISEMPTY (SPLIT ("",1))` gibt **TRUE** zurück.</span><span class="sxs-lookup"><span data-stu-id="0e036-116">The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.</span></span>
+<span data-ttu-id="91c2f-116">Der Ausdruck `ISEMPTY (SPLIT ("",1))` gibt **TRUE** zurück.</span><span class="sxs-lookup"><span data-stu-id="91c2f-116">The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="0e036-117">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="0e036-117">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="91c2f-117">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="91c2f-117">Additional resources</span></span>
 
-[<span data-ttu-id="0e036-118">Listenfunktionen</span><span class="sxs-lookup"><span data-stu-id="0e036-118">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="91c2f-118">Listenfunktionen</span><span class="sxs-lookup"><span data-stu-id="91c2f-118">List functions</span></span>](er-functions-category-list.md)

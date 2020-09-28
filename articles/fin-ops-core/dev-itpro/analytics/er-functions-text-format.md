@@ -18,87 +18,87 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ae688ef6b24f8d90c0354c8c6449adba1588bfa
-ms.sourcegitcommit: 3c1eb3d89c6ab9bd70b806ca42ef9df74cf850bc
+ms.openlocfilehash: 3f3e8e5f6676c26b8d604ed950470463f04c0473
+ms.sourcegitcommit: 445f6d8d0df9f2cbac97e85e3ec3ed8b7d18d3a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "3041077"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "3743878"
 ---
-# <span data-ttu-id="562ea-103"><a name="FORMAT">FORMAT EB-Funktion</a></span><span class="sxs-lookup"><span data-stu-id="562ea-103"><a name="FORMAT">FORMAT ER function</a></span></span>
+# <a name="format-er-function"></a><span data-ttu-id="aff14-103">FORMAT EB-Funktion</span><span class="sxs-lookup"><span data-stu-id="aff14-103">FORMAT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="562ea-104">Die Funktion `FORMAT` gibt den angegebenen Zeichenfolgenwert mit dem Wert *String* zurück, nachdem sie durch Ersetzen sämtlicher Vorkommnisse von **%N** durch das *N*. Argument formatiert wurde.</span><span class="sxs-lookup"><span data-stu-id="562ea-104">The `FORMAT` function returns the specified string as a *String* value after it has been formatted by substituting any occurrences of **%N** with the *N*th argument.</span></span>
+<span data-ttu-id="aff14-104">Die Funktion `FORMAT` gibt den angegebenen Zeichenfolgenwert mit dem Wert *String* zurück, nachdem sie durch Ersetzen sämtlicher Vorkommnisse von **%N** durch das *N*. Argument formatiert wurde.</span><span class="sxs-lookup"><span data-stu-id="aff14-104">The `FORMAT` function returns the specified string as a *String* value after it has been formatted by substituting any occurrences of **%N** with the *N*th argument.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="562ea-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="562ea-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="aff14-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="aff14-105">Syntax</span></span>
 
 ```vb
 FORMAT (string, argument 1[, argument 2, …, argument N])
 ```
 
-## <a name="arguments"></a><span data-ttu-id="562ea-106">Argumente</span><span class="sxs-lookup"><span data-stu-id="562ea-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="aff14-106">Argumente</span><span class="sxs-lookup"><span data-stu-id="aff14-106">Arguments</span></span>
 
-<span data-ttu-id="562ea-107">`string`: *String*</span><span class="sxs-lookup"><span data-stu-id="562ea-107">`string`: *String*</span></span>
+<span data-ttu-id="aff14-107">`string`: *String*</span><span class="sxs-lookup"><span data-stu-id="aff14-107">`string`: *String*</span></span>
 
-<span data-ttu-id="562ea-108">Ein Verweis auf die Datenquelle des Typs *String*, die formatiert werden muss.</span><span class="sxs-lookup"><span data-stu-id="562ea-108">A reference to a data source of the *String* type that must be formatted.</span></span> <span data-ttu-id="562ea-109">Dieses Argument ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="562ea-109">This argument is required.</span></span>
+<span data-ttu-id="aff14-108">Ein Verweis auf die Datenquelle des Typs *String*, die formatiert werden muss.</span><span class="sxs-lookup"><span data-stu-id="aff14-108">A reference to a data source of the *String* type that must be formatted.</span></span> <span data-ttu-id="aff14-109">Dieses Argument ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="aff14-109">This argument is required.</span></span>
 
-<span data-ttu-id="562ea-110">`argument 1`: *String*</span><span class="sxs-lookup"><span data-stu-id="562ea-110">`argument 1`: *String*</span></span>
+<span data-ttu-id="aff14-110">`argument 1`: *String*</span><span class="sxs-lookup"><span data-stu-id="aff14-110">`argument 1`: *String*</span></span>
 
-<span data-ttu-id="562ea-111">Das erste Argument, das verwendet wird, um Vorkommnisse von **%1** zu ersetzen.</span><span class="sxs-lookup"><span data-stu-id="562ea-111">The first argument, which is used to replace occurrences of **%1**.</span></span> <span data-ttu-id="562ea-112">Dieses Argument ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="562ea-112">This argument is required.</span></span>
+<span data-ttu-id="aff14-111">Das erste Argument, das verwendet wird, um Vorkommnisse von **%1** zu ersetzen.</span><span class="sxs-lookup"><span data-stu-id="aff14-111">The first argument, which is used to replace occurrences of **%1**.</span></span> <span data-ttu-id="aff14-112">Dieses Argument ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="aff14-112">This argument is required.</span></span>
 
-<span data-ttu-id="562ea-113">`argument N`: *String*</span><span class="sxs-lookup"><span data-stu-id="562ea-113">`argument N`: *String*</span></span>
+<span data-ttu-id="aff14-113">`argument N`: *String*</span><span class="sxs-lookup"><span data-stu-id="aff14-113">`argument N`: *String*</span></span>
 
-<span data-ttu-id="562ea-114">Das *N*. Argument, das verwendet wird, um Vorkommnisse von **%2**, **%3** usw. zu ersetzen.</span><span class="sxs-lookup"><span data-stu-id="562ea-114">The *N*th argument, which is used to replace occurrences of **%2**, **%3**, and so on.</span></span> <span data-ttu-id="562ea-115">Diese zusätzlichen Argumente sind optional.</span><span class="sxs-lookup"><span data-stu-id="562ea-115">These additional arguments are optional.</span></span>
+<span data-ttu-id="aff14-114">Das *N*. Argument, das verwendet wird, um Vorkommnisse von **%2**, **%3** usw. zu ersetzen.</span><span class="sxs-lookup"><span data-stu-id="aff14-114">The *N*th argument, which is used to replace occurrences of **%2**, **%3**, and so on.</span></span> <span data-ttu-id="aff14-115">Diese zusätzlichen Argumente sind optional.</span><span class="sxs-lookup"><span data-stu-id="aff14-115">These additional arguments are optional.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="562ea-116">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="562ea-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="aff14-116">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="aff14-116">Return values</span></span>
 
-<span data-ttu-id="562ea-117">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="562ea-117">*String*</span></span>
+<span data-ttu-id="aff14-117">*Zeichenfolge*</span><span class="sxs-lookup"><span data-stu-id="aff14-117">*String*</span></span>
 
-<span data-ttu-id="562ea-118">Der resultierende Textwert.</span><span class="sxs-lookup"><span data-stu-id="562ea-118">The resulting text value.</span></span>
+<span data-ttu-id="aff14-118">Der resultierende Textwert.</span><span class="sxs-lookup"><span data-stu-id="aff14-118">The resulting text value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="562ea-119">Anwendungshinweise</span><span class="sxs-lookup"><span data-stu-id="562ea-119">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="aff14-119">Anwendungshinweise</span><span class="sxs-lookup"><span data-stu-id="aff14-119">Usage notes</span></span>
 
-<span data-ttu-id="562ea-120">Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als **"%N"** in der Zeichenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="562ea-120">If an argument isn't provided for a parameter, the parameter is returned as **"%N"** in the string.</span></span> <span data-ttu-id="562ea-121">Für Werte für den Typ *Real*, wird die Standard-Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</span><span class="sxs-lookup"><span data-stu-id="562ea-121">For values of the *Real* type, the default string conversion is limited to two decimal places.</span></span>
+<span data-ttu-id="aff14-120">Wenn eine Anfrage nicht für einen Parameter angegeben wird, wird der Parameter als **"%N"** in der Zeichenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="aff14-120">If an argument isn't provided for a parameter, the parameter is returned as **"%N"** in the string.</span></span> <span data-ttu-id="aff14-121">Für Werte für den Typ *Real*, wird die Standard-Zeichenkonvertierung auf zwei Dezimalstellen beschränkt.</span><span class="sxs-lookup"><span data-stu-id="aff14-121">For values of the *Real* type, the default string conversion is limited to two decimal places.</span></span>
 
-## <a name="example"></a><span data-ttu-id="562ea-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="562ea-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="aff14-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="aff14-122">Example</span></span>
 
-<span data-ttu-id="562ea-123">In der folgenden Abbildung gibt die Datenquelle **PaymentModel** eine Liste der Kundendatensätze zurück, indem die Komponente **Debitor** verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="562ea-123">In the following illustration, the **PaymentModel** data source returns a list of customer records by using the **Customer** component.</span></span> <span data-ttu-id="562ea-124">Sie gibt den Wert des Verarbeitungsdatums über das Feld **ProcessingDate** zurück.</span><span class="sxs-lookup"><span data-stu-id="562ea-124">It returns the processing date value by using the **ProcessingDate** field.</span></span>
+<span data-ttu-id="aff14-123">In der folgenden Abbildung gibt die Datenquelle **PaymentModel** eine Liste der Kundendatensätze zurück, indem die Komponente **Debitor** verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="aff14-123">In the following illustration, the **PaymentModel** data source returns a list of customer records by using the **Customer** component.</span></span> <span data-ttu-id="aff14-124">Sie gibt den Wert des Verarbeitungsdatums über das Feld **ProcessingDate** zurück.</span><span class="sxs-lookup"><span data-stu-id="aff14-124">It returns the processing date value by using the **ProcessingDate** field.</span></span>
 
 <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a>
 
-<span data-ttu-id="562ea-125">Im Format für die elektronische Berichterstellung (EB), das entworfen wurde, um eine Datei für ausgewählte Debitoren zu generieren, wird **PaymentModel** als Datenquelle ausgewählt, um den Prozessablauf zu steuern.</span><span class="sxs-lookup"><span data-stu-id="562ea-125">In the Electronic reporting (ER) format that is designed to generate an electronic file for selected customers, **PaymentModel** is selected as a data source, and it controls the process flow.</span></span> <span data-ttu-id="562ea-126">Wenn ein ausgewählter Debitor zu dem Datum angehalten wird, an dem der Bericht verarbeitet wird, wird zur Benachrichtigung des Benutzers eine Ausnahme ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="562ea-126">If a selected customer is stopped for the date when the report is processed, an exception is thrown to notify the user.</span></span> <span data-ttu-id="562ea-127">Die Formel, die für diese Art von Prozesssteuerung entworfen wurde, kann die folgenden Ressourcen verwenden:</span><span class="sxs-lookup"><span data-stu-id="562ea-127">The formula that is designed for this type of processing control can use the following resources:</span></span>
+<span data-ttu-id="aff14-125">Im Format für die elektronische Berichterstellung (EB), das entworfen wurde, um eine Datei für ausgewählte Debitoren zu generieren, wird **PaymentModel** als Datenquelle ausgewählt, um den Prozessablauf zu steuern.</span><span class="sxs-lookup"><span data-stu-id="aff14-125">In the Electronic reporting (ER) format that is designed to generate an electronic file for selected customers, **PaymentModel** is selected as a data source, and it controls the process flow.</span></span> <span data-ttu-id="aff14-126">Wenn ein ausgewählter Debitor zu dem Datum angehalten wird, an dem der Bericht verarbeitet wird, wird zur Benachrichtigung des Benutzers eine Ausnahme ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="aff14-126">If a selected customer is stopped for the date when the report is processed, an exception is thrown to notify the user.</span></span> <span data-ttu-id="aff14-127">Die Formel, die für diese Art von Prozesssteuerung entworfen wurde, kann die folgenden Ressourcen verwenden:</span><span class="sxs-lookup"><span data-stu-id="aff14-127">The formula that is designed for this type of processing control can use the following resources:</span></span>
 
-- <span data-ttu-id="562ea-128">Beschriftung SYS70894, die den folgenden Text hat:</span><span class="sxs-lookup"><span data-stu-id="562ea-128">Label SYS70894, which has the following text:</span></span>
+- <span data-ttu-id="aff14-128">Beschriftung SYS70894, die den folgenden Text hat:</span><span class="sxs-lookup"><span data-stu-id="aff14-128">Label SYS70894, which has the following text:</span></span>
 
-    - <span data-ttu-id="562ea-129">**Für die EN-US-Sprache:** "Nichts zu drucken"</span><span class="sxs-lookup"><span data-stu-id="562ea-129">**For the EN-US language:** "Nothing to print"</span></span>
-    - <span data-ttu-id="562ea-130">**Für deutsche Sprache:** "Nichts zu drucken"</span><span class="sxs-lookup"><span data-stu-id="562ea-130">**For the DE language:** "Nichts zu drucken"</span></span>
+    - <span data-ttu-id="aff14-129">**Für die EN-US-Sprache:** "Nichts zu drucken"</span><span class="sxs-lookup"><span data-stu-id="aff14-129">**For the EN-US language:** "Nothing to print"</span></span>
+    - <span data-ttu-id="aff14-130">**Für deutsche Sprache:** "Nichts zu drucken"</span><span class="sxs-lookup"><span data-stu-id="aff14-130">**For the DE language:** "Nichts zu drucken"</span></span>
 
-- <span data-ttu-id="562ea-131">Beschriftung SYS18389, die den folgenden Text hat:</span><span class="sxs-lookup"><span data-stu-id="562ea-131">Label SYS18389, which has the following text:</span></span>
+- <span data-ttu-id="aff14-131">Beschriftung SYS18389, die den folgenden Text hat:</span><span class="sxs-lookup"><span data-stu-id="aff14-131">Label SYS18389, which has the following text:</span></span>
 
-    - <span data-ttu-id="562ea-132">**Für die Sprache EN-US:** "Debitor %1 wird für %2 beendet."</span><span class="sxs-lookup"><span data-stu-id="562ea-132">**For the EN-US language:** "Customer %1 is stopped for %2."</span></span>
-    - <span data-ttu-id="562ea-133">**Für die Sprache DE:** "Debitor '%1' wird für %2 gesperrt."</span><span class="sxs-lookup"><span data-stu-id="562ea-133">**For the DE language:** "Debitor '%1' wird für %2 gesperrt."</span></span>
+    - <span data-ttu-id="aff14-132">**Für die Sprache EN-US:** "Debitor %1 wird für %2 beendet."</span><span class="sxs-lookup"><span data-stu-id="aff14-132">**For the EN-US language:** "Customer %1 is stopped for %2."</span></span>
+    - <span data-ttu-id="aff14-133">**Für die Sprache DE:** "Debitor '%1' wird für %2 gesperrt."</span><span class="sxs-lookup"><span data-stu-id="aff14-133">**For the DE language:** "Debitor '%1' wird für %2 gesperrt."</span></span>
 
-<span data-ttu-id="562ea-134">Hier ist der Ausdruck, der gestaltet werden kann.</span><span class="sxs-lookup"><span data-stu-id="562ea-134">Here is the expression that can be designed.</span></span>
+<span data-ttu-id="aff14-134">Hier ist der Ausdruck, der gestaltet werden kann.</span><span class="sxs-lookup"><span data-stu-id="aff14-134">Here is the expression that can be designed.</span></span>
 
 ```vb
 FORMAT (CONCATENATE (@"SYS70894", ". ", @"SYS18389"), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, "d"))
 ```
 
-<span data-ttu-id="562ea-135">Wenn ein Bericht für den Kunden **Litware Retail** am 17. Dezember 2015 in der **EN-US**-Kultur und in der **EN-US**-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der dann als Ausnahmenachricht für den Benutzer präsentiert werden kann:</span><span class="sxs-lookup"><span data-stu-id="562ea-135">If a report is processed for the **Litware Retail** customer on December 17, 2015, in the **EN-US** culture and the **EN-US** language, this formula returns the following text, which can be presented to the user as an exception message:</span></span>
+<span data-ttu-id="aff14-135">Wenn ein Bericht für den Kunden **Litware Retail** am 17. Dezember 2015 in der **EN-US**-Kultur und in der **EN-US**-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der dann als Ausnahmenachricht für den Benutzer präsentiert werden kann:</span><span class="sxs-lookup"><span data-stu-id="aff14-135">If a report is processed for the **Litware Retail** customer on December 17, 2015, in the **EN-US** culture and the **EN-US** language, this formula returns the following text, which can be presented to the user as an exception message:</span></span>
 
-<span data-ttu-id="562ea-136">*Nichts zu drucken. Debitor Litware Retail wird am 12/17/2015 beendet.*</span><span class="sxs-lookup"><span data-stu-id="562ea-136">*Nothing to print. Customer Litware Retail is stopped for 12/17/2015.*</span></span>
+<span data-ttu-id="aff14-136">*Nichts zu drucken. Debitor Litware Retail wird am 12/17/2015 beendet.*</span><span class="sxs-lookup"><span data-stu-id="aff14-136">*Nothing to print. Customer Litware Retail is stopped for 12/17/2015.*</span></span>
 
-<span data-ttu-id="562ea-137">Wenn derselbe Bericht für den Kunden **Litware Retail** am 17. Dezember 2015 in der **DE**-Kultur und in der **DE**-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet:</span><span class="sxs-lookup"><span data-stu-id="562ea-137">If the same report is processed for the **Litware Retail** customer on December 17, 2015, in the **DE** culture and the **DE** language, the formula returns the following text, which uses a different date format:</span></span>
+<span data-ttu-id="aff14-137">Wenn derselbe Bericht für den Kunden **Litware Retail** am 17. Dezember 2015 in der **DE**-Kultur und in der **DE**-Sprache verarbeitet wird, gibt diese Formel den folgenden Text zurück, der ein anderes Datumsformat verwendet:</span><span class="sxs-lookup"><span data-stu-id="aff14-137">If the same report is processed for the **Litware Retail** customer on December 17, 2015, in the **DE** culture and the **DE** language, the formula returns the following text, which uses a different date format:</span></span>
 
-<span data-ttu-id="562ea-138">*Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.*</span><span class="sxs-lookup"><span data-stu-id="562ea-138">*Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.*</span></span>
+<span data-ttu-id="aff14-138">*Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.*</span><span class="sxs-lookup"><span data-stu-id="aff14-138">*Nichts zu drucken. Debitor 'Litware Retail' wird für 17.12.2015 gesperrt.*</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="562ea-139">Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:</span><span class="sxs-lookup"><span data-stu-id="562ea-139">The following syntax is applied in ER formulas for labels:</span></span>
+> <span data-ttu-id="aff14-139">Die folgende Syntax wird in EB-Formeln für Beschriftungen angewendet:</span><span class="sxs-lookup"><span data-stu-id="aff14-139">The following syntax is applied in ER formulas for labels:</span></span>
 >
-> - <span data-ttu-id="562ea-140">**Für Bezeichnungen aus Ressourcen in der Microsoft Dynamics 365 Finance-App:** **\@X**, wobei **X** die Bezeichnungs-ID in der Entwicklungsumgebung ist</span><span class="sxs-lookup"><span data-stu-id="562ea-140">**For labels from resources in the Microsoft Dynamics 365 Finance app:** **\@X**, where **X** is the label ID in the Application Object Tree (AOT)</span></span>
-> - <span data-ttu-id="562ea-141">**Für Bezeichnungen in EB-Konfigurationen:** **@"GER_LABEL:X"**, wobei **X** die Bezeichnungs-ID in der EB-Konfiguration ist</span><span class="sxs-lookup"><span data-stu-id="562ea-141">**For labels that reside in ER configurations:** **@"GER_LABEL:X"**, where **X** is the label ID in the ER configuration</span></span>
+> - <span data-ttu-id="aff14-140">**Für Bezeichnungen aus Ressourcen in der Microsoft Dynamics 365 Finance-App:** **\@X**, wobei **X** die Bezeichnungs-ID in der Entwicklungsumgebung ist</span><span class="sxs-lookup"><span data-stu-id="aff14-140">**For labels from resources in the Microsoft Dynamics 365 Finance app:** **\@X**, where **X** is the label ID in the Application Object Tree (AOT)</span></span>
+> - <span data-ttu-id="aff14-141">**Für Bezeichnungen in EB-Konfigurationen:** **@"GER_LABEL:X"**, wobei **X** die Bezeichnungs-ID in der EB-Konfiguration ist</span><span class="sxs-lookup"><span data-stu-id="aff14-141">**For labels that reside in ER configurations:** **@"GER_LABEL:X"**, where **X** is the label ID in the ER configuration</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="562ea-142">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="562ea-142">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="aff14-142">Zusätzliche Ressourcen</span><span class="sxs-lookup"><span data-stu-id="aff14-142">Additional resources</span></span>
 
-[<span data-ttu-id="562ea-143">Textfunktionen</span><span class="sxs-lookup"><span data-stu-id="562ea-143">Text functions</span></span>](er-functions-category-text.md)
+[<span data-ttu-id="aff14-143">Textfunktionen</span><span class="sxs-lookup"><span data-stu-id="aff14-143">Text functions</span></span>](er-functions-category-text.md)
