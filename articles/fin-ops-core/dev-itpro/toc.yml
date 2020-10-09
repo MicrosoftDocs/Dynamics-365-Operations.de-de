@@ -84,8 +84,10 @@
           items:
             - name: Datenintegrationsstrategie (Import/Export) auswählen
               href: data-entities/integration-overview.md
-            - name: Prioritätsbasierte Drosselung
+            - name: Prioritätsbasierte Einschränkung
               hreF: data-entities/priority-based-throttling.md
+            - name: FAQ zur prioritätsbasierten Einschränkung
+              href: data-entities/throttling-faq.md
             - name: Datenintegrations-APIs
               items:
                 - name: Datenverwaltungspaket-REST-API
@@ -154,6 +156,8 @@
                                   href: data-entities/dual-write/enable-entity-map.md
                             - name: Migration von Daten des Typs „Währung“ beim dualen Schreiben
                               href: data-entities/dual-write/currrency-decimal-places.md
+                            - name: Zuordnung für die Kundenauftragsstatusfelder einrichten
+                              href: data-entities/dual-write/sales-status-map.md
                         - name: Verwalten von dualem Schreiben
                           items:
                             - name: Entitäts- und Feldzuordnungen anpassen
@@ -522,7 +526,7 @@
                       href: deployment/onprem-reuseadfs.md
                 - name: Lokaler Agent
                   items:
-                    - name: Kompatibilität von AD-FS Office 365
+                    - name: "Kompatibilität von AD-FS Microsoft\_365"
                       href: deployment/onprem-adfscompatibility.md
                     - name: Skripts des lokalen Agenten vor und nach der Bereitstellung
                       href: lifecycle-services/pre-post-scripts.md
@@ -624,12 +628,10 @@
               items:
                 - name: Entwicklungswerkzeuge
                   href: dev-tools/development-tools-overview.md
-                - name: Entwicklungswerkzeuge – Lernprogramm
+                - name: Tutorial zu Entwicklungswerkzeugen
                   href: dev-tools/introduction-visual-studio.md
-                - name: Bewerbungsprüfer
-                  items:
-                    - name: BaseX für Bewerbungsprüfer installieren
-                      href: dev-tools/install-basex.md
+                - name: Anwendungsprüfung
+                  href: dev-tools/application-checker.md
                 - name: Anwendungs-Explorer
                   href: dev-tools/application-explorer.md
                 - name: Projekte erstellen und debuggen
@@ -1368,9 +1370,27 @@
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
                     - name: ValueMetadata-Typ
                       href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
+        - name: Framework zur Prozessautomatisierung
+          items:
+            - name: Entwicklung eines Frameworks zur Prozessautomatisierung
+              href: process-automation/process-automation-framework.md
+            - name: Typenregistrierung
+              href: process-automation/type-registration.md
+            - name: Serienregistrierung
+              href: process-automation/series-registration.md
+            - name: Verarbeitungsparameter
+              href: process-automation/process-parameters.md
+            - name: Vom Benutzer konfigurierbare Abfragen
+              href: process-automation/user-queries.md
+            - name: Prozesses ausführen
+              href: process-automation/run-process.md
+            - name: Ergebnisse und Nachrichten protokollieren
+              href: process-automation/log-results.md
+            - name: Benutzeroberfläche anpassen
+              href: process-automation/ui-customization.md
         - name: Regression Suite Automation Tool
           items:
-            - name: Regression Suite Automation Tool – Übersicht
+            - name: Informationen zum Regression Suite Automation Tool
               href: perf-test/rsat/rsat-overview.md
             - name: Installation und Konfiguration
               href: perf-test/rsat/rsat-install-configure.md
@@ -1395,7 +1415,7 @@
             - name: Entwickeln und Freigeben
               href: lcs-solutions/lcs-solutions-app-source.md
             - name: Bereitstellen und Veröffentlichen
-              href: lcs-solutions/marketing-content-lcs-solutions.md
+              href: /azure/marketplace/partner-center-portal/create-new-operations-offer
             - name: Hinzufügen von Methodiken
               href: lcs-solutions/methodologies-lcs-solutions.md
             - name: Geschäftsprozessmodellierer-Bibliotheken einrichten
@@ -1418,7 +1438,7 @@
                   href: lcs-solutions/apply-country-context.md
                 - name: Gesetzliche Zertifizierungsinformationen in den Funktionstiteln
                   href: lcs-solutions/regulatory-certifications.md
-                - name: Updates zu rechtlichen Bestimmungen
+                - name: Neues zu rechtlichen Bestimmungen
                   href: lcs-solutions/regulatory-watch-communication.md
                 - name: Separate Lokalisierungsmodelle
                   href: lcs-solutions/separate-localization-models.md

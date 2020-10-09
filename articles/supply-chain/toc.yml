@@ -158,11 +158,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Benutzerdefinierte Felder erstellen und damit arbeiten
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft Power Apps einbetten
+                - name: Canvas-Apps aus Power Apps einbetten
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Informationen per Suchen finden
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Datum für eine Sitzung ändern
+                - name: Datum einer Sitzung ändern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Die bevorzugte Zeitzone eines Benutzers festlegen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
@@ -200,7 +200,7 @@
           items:
             - name: Globalisierungsressourcen
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Updates zu rechtlichen Bestimmungen
+            - name: Neues zu rechtlichen Bestimmungen
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: Russland
               items:
@@ -1651,13 +1651,15 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
         - name: Beschaffung
           items:
-            - name: Beschaffung – Übersicht
+            - name: Informationen zur Beschaffung
               href: procurement/procurement-sourcing-overview.md
-            - name: Beschaffungs-Workflow
+            - name: Beschaffungsworkflow
               href: procurement/procurement-sourcing-workflows.md
+            - name: Problembehandlung bei Beschaffungsworkflows
+              href: procurement/troubleshoot-procurementworkflows.md
             - name: Beschaffungskataloge
               items:
-                - name: Beschaffungskataloge – Übersicht
+                - name: Informationen zu Beschaffungskatalogen
                   href: procurement/procurement-catalogs.md
                 - name: Beschaffungskatalog erstellen
                   href: procurement/tasks/create-procurement-catalog.md
@@ -1695,6 +1697,8 @@
                   href: procurement/purchase-order-mobile-workspace.md
                 - name: Den Warenzugang auf der Bestellung erfassen
                   href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                - name: Problembehandlung bei Bestellungen
+                  href: procurement/troubleshoot-purchaseorders.md
             - name: Bestellungserstellung
               items:
                 - name: Bestellungen manuell erstellen
@@ -1719,15 +1723,17 @@
                   href: procurement/tasks/create-requisition-consumption.md
             - name: 'Preise, Rabatte und Rückvergütungen'
               items:
-                - name: Einkaufsverträge
+                - name: Kaufverträge
                   href: procurement/purchase-agreements.md
                 - name: Kaufvertrag erstellen
                   href: procurement/tasks/create-purchase-agreement.md
-                - name: Lieferantenrückvergütungen
+                - name: Rückvergütungen für Kreditoren
                   href: procurement/vendor-rebates.md
+                - name: 'Problembehandlung bei Preisen, Rabatten, Vereinbarungen und Rückvergütungen'
+                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Einkaufsrichtlinien
               items:
-                - name: Einkaufsrichtlinien – Übersicht
+                - name: Informationen zu Einkaufsrichtlinien
                   href: procurement/purchase-policies.md
                 - name: Einkaufsrichtlinien erstellen
                   href: procurement/tasks/create-purchasing-policies.md
@@ -1735,10 +1741,12 @@
                   href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
             - name: Produktzugänge und Rechnungsstellung
               items:
-                - name: Produkteingang für Bestellungen
+                - name: Produktzugang für Bestellungen
                   href: procurement/product-receipt-against-purchase-orders.md
-                - name: Überblick über Kreditorenrechnungen
+                - name: Informationen zu Kreditorenrechnungen
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Problembehandlung bei Produktzugängen und Rechnungsstellung
+                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Kreditorenverwaltung und Zusammenarbeit
               items:
                 - name: Kreditorenzusammenarbeit einrichten und verwalten
@@ -1765,6 +1773,8 @@
                   href: procurement/vendor-catalogs-import.md
                 - name: Externen Katalog für PunchOut eProcurement einrichten
                   href: procurement/set-up-external-catalog-for-punchout.md
+                - name: cXML-Einkaufserweiterungen
+                  href: procurement/purchasing-cxml-enhancements.md
                 - name: Externe Kataloge für PunchOut eProcurement verwenden
                   href: procurement/use-external-catalogs-for-punchout.md
                 - name: Mobiler Arbeitsbereich für Kreditorenzusammenarbeit
@@ -2261,9 +2271,11 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Aufträge bestätigen
                   href: sales-marketing/tasks/confirm-sales-orders.md
+                - name: Problembehandlung bei Kundenaufträgen
+                  href: sales-marketing/troubleshooting-sales.md
             - name: Kaufverträge
               items:
-                - name: Kaufverträge – Übersicht
+                - name: Informationen zu Kaufverträgen
                   href: sales-marketing/sales-agreements.md
                 - name: Kaufverträge eingeben
                   href: sales-marketing/tasks/enter-sales-agreements.md
@@ -2283,13 +2295,15 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Verkaufsangebote erstellen und bearbeiten
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+                - name: Problembehandlung bei Verkaufsangeboten
+                  href: sales-marketing/troubleshooting-salesquotation.md
             - name: Retouren
               items:
                 - name: Verkaufsretouren
                   href: warehousing/sales-returns.md
             - name: Provision
               items:
-                - name: Umsatzprovisionen registrieren
+                - name: Umsatzprovisionen erfassen
                   href: sales-marketing/tasks/register-sales-commissions.md
                 - name: Vertriebsprovisionsregeln festlegen
                   href: sales-marketing/tasks/set-up-sales-commission-rules.md
@@ -2807,19 +2821,21 @@
                   items:
                     - name: Lagerort-App installieren und Verbindung herstellen
                       href: warehousing/install-configure-warehousing-app.md
+                    - name: Strichcodes mithilfe einer Kamera in der Lagerort-App scannen
+                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Feldnamen in Lagerort-App konfigurieren
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobile Geräte für Lagerarbeiten einrichten
                       href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Strichcodes mithilfe einer Kamera in der Lagerort-App scannen
-                      href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Kennzeicheneingang mit der Lagerort-App
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Menüoption zur Fertigstellung von Arbeiten in einer Bestellung auf Mobilgeräten einrichten
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
                       href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: 'Eine Menüoption für das mobile Gerät einrichten, um die eingegangenen Artikel zu erfassen'
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Erfassung eingegangener Artikel einrichten
                       href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Menüoption für ein mobiles Gerät für die Ladungsträger-Konsolidierung erstellen
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Bereitstellung einer Übersicht über Kommissionierpositionen einrichten
+                      href: warehousing/pick-line-overview.md
+                    - name: Auf einem mobilen Gerät eine Menüoption zur Konsolidierung von Ladungsträgern erstellen
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Gemischter Ladungsträger – Empfang auf einem mobilen Gerät
                       href: warehousing/mixed-license-plate-receiving.md

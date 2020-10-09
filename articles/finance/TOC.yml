@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-13.md
                     - name: "Finance 10.0.12 (August\_2020)"
                       href: get-started/whats-new-changed-10-0-12.md
-                    - name: "Finance\_10.0.11 (Juli\_2020)"
-                      href: get-started/whats-new-changed-10-0-11.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
@@ -160,11 +158,11 @@
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/finance/toc.json
                 - name: Benutzerdefinierte Felder erstellen und damit arbeiten
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/finance/toc.json
-                - name: Microsoft Power Apps einbetten
+                - name: Canvas-Apps aus Power Apps einbetten
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/finance/toc.json
                 - name: Informationen per Suchen finden
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
-                - name: Datum für eine Sitzung ändern
+                - name: Datum einer Sitzung ändern
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/finance/toc.json
                 - name: Die bevorzugte Zeitzone eines Benutzers festlegen
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/finance/toc.json
@@ -1226,13 +1224,29 @@
           items:
             - name: Globalisierungsressourcen
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
-            - name: Updates zu rechtlichen Bestimmungen
+            - name: Neues zu rechtlichen Bestimmungen
               href: localizations/regulatory-updates.md
+            - name: Add-On für die elektronische Rechnungsstellung
+              items:
+                - name: Informationen zum Add-On für die elektronische Rechnungsstellung
+                  href: localizations/e-invoicing-service-overview.md
+                - name: Azure-Speicherkonto und Key Vault erstellen
+                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                - name: Erste Schritte mit dem Add-On zur elektronischen Rechnungsstellung
+                  href: localizations/e-invoicing-get-started.md
+                - name: Erste Schritte mit dem Add-On zur elektronischen Rechnungsstellung in Brasilien
+                  href: localizations/e-invoicing-bra-get-started.md
+                - name: Erste Schritte mit dem Add-On zur elektronischen Rechnungsstellung in Italien
+                  href: localizations/e-invoicing-ita-get-started.md
+                - name: Erste Schritte mit dem Add-On zur elektronischen Rechnungsstellung in Mexiko
+                  href: localizations/e-invoicing-mex-get-started.md
+                - name: Add-On zur elektronischen Rechnungsstellung einrichten
+                  href: localizations/e-invoicing-setup.md
             - name: Australien
               items:
-                - name: Australien – Übersicht
+                - name: Informationen zu Australien
                   href: localizations/australia.md
-                - name: 'Geschäftsvorgangsbericht (BAS, Business Activity Statement)'
+                - name: Australischer Geschäftsvorgangsbericht
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: Berichtsfelder hinzufügen und Geschäftsvorgangsbericht generieren
                   href: localizations/tasks/add-bas-report-boxes.md
@@ -1268,11 +1282,13 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Buchungen an das BLWI erstellen und übertragen
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
+                - name: Sachkontobuchungen exportieren
+                  href: localizations/emea-bel-export-ledger-transactions.md
                 - name: INTERVAT-Steuererklärung
                   href: localizations/emea-bel-intervat-tax-declaration.md
-                - name: Abstimmungsbericht
+                - name: Abstimmungsberichte
                   href: localizations/emea-bel-reconciliation-reports.md
-                - name: Berichterstellung über Zahlungssaldo einrichten
+                - name: Berichterstellung zu Zahlungssaldo einrichten
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM einrichten und verwalten
                   href: localizations/emea-bel-prodcom-report.md
@@ -2036,11 +2052,13 @@
                       href: localizations/apac-ind-GST-tax-journal.md
                     - name: GSTR-Berichtsdaten für Steuerrückzahlungen generieren
                       href: localizations/apac-ind-GST-tax-returns.md
+                    - name: Verarbeitung mehrerer Batches bei GSTR-Berichten aktivieren
+                      href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Steuerermittlung
                       href: localizations/apac-ind-GST-tax-inquiry.md
                 - name: Steuermodul
                   items:
-                    - name: Übersicht über das Steuermodul
+                    - name: Informationen zum Steuermodul
                       href: general-ledger/tax-engine.md
                     - name: Importkonfiguration
                       href: general-ledger/tax-engine-import-configuration.md
@@ -3560,6 +3578,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=dynamics365/finance/toc.json
                     - name: Mehrsprachige Berichte entwerfen
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: Große ausgehende Dokumente komprimieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
                 - name: Relativer Pfad in Datenbindungen
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Elektronische Berichtslösungen in Finance and Operations verwenden
