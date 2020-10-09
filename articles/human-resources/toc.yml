@@ -5,6 +5,8 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: 16. September 2020
+          href: hr-whats-new-2020-09-16.md
         - name: 3. September 2020
           href: hr-whats-new-2020-09-03.md
         - name: "20.\_August\_2020"
@@ -201,11 +203,11 @@
               href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json
             - name: Benutzerdefinierte Felder erstellen und damit arbeiten
               href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json
-            - name: PowerApps-Apps einbetten
+            - name: Canvas-Apps aus Power Apps einbetten
               href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json
             - name: Informationen per Suchen finden
               href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json
-            - name: Datum für eine Sitzung ändern
+            - name: Datum einer Sitzung ändern
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json
             - name: Die bevorzugte Zeitzone eines Benutzers festlegen
               href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json

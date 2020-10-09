@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d210e234e9004422913ac76bf4c9b720806cbece
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 00af26a9f41a6908fd0010ec9eac37e41ad9c2b6
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2175946"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888107"
 ---
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
@@ -102,10 +102,10 @@ Lesen Sie den [Microsoft Dynamics 365-Produktplan](https://go.microsoft.com/fwl
 
 Meinungen, Neuigkeiten und weitere Informationen zu Kreditorenkonten und anderen Lösungen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
+Im [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) erfahren Microsoft Dynamics-Partner an zentraler Stelle alles über Neuerungen und Trends bei Dynamics 365.
 
 #### <a name="task-guides"></a>Aufgabenleitfäden
-Weitere Hilfe finden Sie als Aufgabenleitfäden innerhalb der Anwendung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe“.
+Weitere Hilfe finden Sie als Aufgabenleitfäden in der Anwendung. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe“.
 
 #### <a name="videos"></a>Videos
 
