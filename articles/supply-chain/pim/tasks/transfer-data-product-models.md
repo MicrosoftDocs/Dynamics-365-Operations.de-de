@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCImport
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,24 +16,24 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 029f51466add340aead56aaad12afc3e1da374f2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6bb2a3d941b6f263c3ef32c6d0b8763f18b4485c
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3213008"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3886947"
 ---
-# <a name="transfer-data-for-product-models"></a><span data-ttu-id="c14a3-103">Daten für Produktmodelle übertragen</span><span class="sxs-lookup"><span data-stu-id="c14a3-103">Transfer data for product models</span></span>
+# <a name="transfer-data-for-product-models"></a><span data-ttu-id="fdf66-103">Daten für Produktmodelle übertragen</span><span class="sxs-lookup"><span data-stu-id="fdf66-103">Transfer data for product models</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="c14a3-104">Der Export von Daten für ein Produktkonfigurationsmodell setzt voraus, dass Sie mindestens ein verfügbares Produktmodell haben.</span><span class="sxs-lookup"><span data-stu-id="c14a3-104">Exporting data for a product configuration model requires that you have at least one product model available.</span></span> <span data-ttu-id="c14a3-105">Bei diesem Verfahren wird das Spitzenlautsprechermodell im Vorführungsunternehmen USMF verwendet, um zu zeigen, wie Daten für dieses Modell exportiert werden.</span><span class="sxs-lookup"><span data-stu-id="c14a3-105">This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.</span></span>
+<span data-ttu-id="fdf66-104">Der Export von Daten für ein Produktkonfigurationsmodell setzt voraus, dass Sie mindestens ein verfügbares Produktmodell haben.</span><span class="sxs-lookup"><span data-stu-id="fdf66-104">Exporting data for a product configuration model requires that you have at least one product model available.</span></span> <span data-ttu-id="fdf66-105">Bei diesem Verfahren wird das Spitzenlautsprechermodell im Vorführungsunternehmen USMF verwendet, um zu zeigen, wie Daten für dieses Modell exportiert werden.</span><span class="sxs-lookup"><span data-stu-id="fdf66-105">This procedure uses the High end speaker model in the demo company USMF to show you how to export data for this model.</span></span>
 
-1. <span data-ttu-id="c14a3-106">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="c14a3-106">Click Product variant model definition.</span></span>
-2. <span data-ttu-id="c14a3-107">Klicken Sie auf "Produktkonfigurationsmodelle".</span><span class="sxs-lookup"><span data-stu-id="c14a3-107">Click Product configuration models.</span></span>
-3. <span data-ttu-id="c14a3-108">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="c14a3-108">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="c14a3-109">Wählen Sie den Spitzenlautsprecher für diese Aufgabe aus.</span><span class="sxs-lookup"><span data-stu-id="c14a3-109">Select the High end speaker model for this procedure.</span></span>  
-4. <span data-ttu-id="c14a3-110">Klicken Sie im Aktivitätsbereich auf "Modell".</span><span class="sxs-lookup"><span data-stu-id="c14a3-110">On the Action Pane, click Model.</span></span>
-5. <span data-ttu-id="c14a3-111">Klicken Sie auf "Produktmodell exportieren".</span><span class="sxs-lookup"><span data-stu-id="c14a3-111">Click Export product model.</span></span>
-    * <span data-ttu-id="c14a3-112">Das Downloadverhalten variiert von Browser zu Browser. Es hängt davon ab, wie die Sicherheitseinstellungen eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="c14a3-112">The download behavior varies from browser to browser depending on how the security settings are set up.</span></span>  
+1. <span data-ttu-id="fdf66-106">Klicken Sie auf "Produktvariantenmodell-Definition".</span><span class="sxs-lookup"><span data-stu-id="fdf66-106">Click Product variant model definition.</span></span>
+2. <span data-ttu-id="fdf66-107">Klicken Sie auf "Produktkonfigurationsmodelle".</span><span class="sxs-lookup"><span data-stu-id="fdf66-107">Click Product configuration models.</span></span>
+3. <span data-ttu-id="fdf66-108">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="fdf66-108">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="fdf66-109">Wählen Sie den Spitzenlautsprecher für diese Aufgabe aus.</span><span class="sxs-lookup"><span data-stu-id="fdf66-109">Select the High end speaker model for this procedure.</span></span>  
+4. <span data-ttu-id="fdf66-110">Klicken Sie im Aktivitätsbereich auf "Modell".</span><span class="sxs-lookup"><span data-stu-id="fdf66-110">On the Action Pane, click Model.</span></span>
+5. <span data-ttu-id="fdf66-111">Klicken Sie auf "Produktmodell exportieren".</span><span class="sxs-lookup"><span data-stu-id="fdf66-111">Click Export product model.</span></span>
+    * <span data-ttu-id="fdf66-112">Das Downloadverhalten variiert von Browser zu Browser. Es hängt davon ab, wie die Sicherheitseinstellungen eingerichtet werden.</span><span class="sxs-lookup"><span data-stu-id="fdf66-112">The download behavior varies from browser to browser depending on how the security settings are set up.</span></span>  
 
