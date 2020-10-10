@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0847dc1ce01a6e6f4f8b72db115445f75de4aac2
-ms.sourcegitcommit: 70d0b4e6bdacc15ec75935550ae55fc02cb79624
+ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "3596233"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895472"
 ---
 # <a name="dual-use-goods"></a>Waren zur doppelten Verwendung
 
@@ -53,7 +54,7 @@ Verschiedene Länder haben unterschiedliche Anforderungen für Waren mit doppelt
 Führen Sie diese Schritte aus, um die Informationen zu Anforderungen für die doppelte Verwendung für verschiedene Länder einzurichten.
 
 1. Gehen Sie zu **Produktinformationsverwaltung \> Setup \> Produktkonformität \> Produkte mit doppelter Verwendung \> Ländereinstellungen für doppelte Verwendung**.
-2. Wählen Sie vorhandene Ländereinstellungen zum Bearbeiten aus oder wählen Sie **Neu** im Aktionsbereich aus, um neue Ländereinstellungen zu erstellen.
+2. Wählen Sie vorhandene Ländereinstellungen zum Bearbeiten aus oder wählen Sie **Neu** im Aktivitätsbereich aus, um neue Ländereinstellungen zu erstellen.
 3. Legen Sie die folgenden Werte für die ausgewählten oder neuen Ländereinstellungen fest.
 
     | Feld | Beschreibung |
@@ -68,7 +69,7 @@ Waren mit doppelter Verwendung müssen häufig nach ihrer Export Control Classif
 Um Kategorien für doppelte Verwendung einzurichten, folgen Sie diesen Schritten.
 
 1. Gehen Sie zu **Produktinformationsverwaltung \> Setup \> Produktkonformität \> Produkte mit doppelter Verwendung \> Kategorien für doppelte Verwendung**.
-2. Wählen Sie eine vorhandene Kategorie zum Bearbeiten aus oder wählen Sie **Neu** im Aktionsbereich aus, um ein neue Kategorie zu erstellen.
+2. Wählen Sie eine vorhandene Kategorie zum Bearbeiten aus oder wählen Sie **Neu** im Aktivitätsbereich aus, um ein neue Kategorie zu erstellen.
 3. Legen Sie die folgenden Werte für die ausgewählte oder neue Kategorie fest.
 
     | Felder | Beschreibung |
@@ -84,7 +85,7 @@ Führen Sie die folgenden Schritte aus, um ein Produkt als Ware zur doppelten Ve
 
 1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
 1. Wählen Sie ein Produkt aus oder erstellen Sie es, um seine Seite **Freigegebene Produktdetails** zu öffnen.
-1. Im Inforegister **Außenhandel** legen Sie die Option **Produkte zur doppelten Verwendung** auf **Ja** fest, um das aktuelle Produkt als Ware zur doppelten Verwendung zu identifizieren.
+1. Auf dem Inforegister **Außenhandel** legen Sie die Option **Produkte zur doppelten Verwendung** auf **Ja** fest, um das aktuelle Produkt als Ware zur doppelten Verwendung zu identifizieren.
 1. Legen Sie das Feld **Code für doppelte Verwendung** auf den Code fest, der für das aktuelle Produkt gilt. (Sie haben diesen Code auf der Seite **Kategorien der doppelten Verwendung** definiert.)
 
 Dieses Setup wird überprüft, wenn Sie einen Auftrag erstellen.
@@ -94,7 +95,7 @@ Dieses Setup wird überprüft, wenn Sie einen Auftrag erstellen.
 Sie verwenden die Seite **Zertifikate für doppelte Verwendung**, um die erforderlichen Zertifikate für doppelte Verwendung für jedes Produkt und Land zu verwalten. Sie können die Details jedes Zertifikats nachverfolgen, z. B. das Land und die Gültigkeitsdatumsangaben. Sie können auch Optionen festlegen, um anzugeben, wo diese Informationen gedruckt werden sollen. Beispielsweise können die Informationen auf der Rechnung, dem Lieferschein und/oder dem Auftrag gedruckt werden. Dieses Setup wird überprüft, wenn Sie einen Auftrag erstellen.
 
 1. Gehen Sie zu **Produktinformationsverwaltung \> Setup \> Produktkonformität \> Produkte mit doppelter Verwendung \> Zertifikate für doppelte Verwendung**.
-2. Wählen Sie ein vorhandenes Zertifikat zum Bearbeiten aus oder wählen Sie **Neu** im Aktionsbereich aus, um ein neues Zertifikat zu erstellen.
+2. Wählen Sie ein vorhandenes Zertifikat zum Bearbeiten aus oder wählen Sie **Neu** im Aktivitätsbereich aus, um ein neues Zertifikat zu erstellen.
 3. Legen Sie die folgenden Werte für das ausgewählte oder neue Zertifikat fest.
 
     | Feld | Beschreibung |

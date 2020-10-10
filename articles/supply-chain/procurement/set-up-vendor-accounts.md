@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2ea87e4147757a584e38b819faa8a0423ec0028
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 59c8071ed20740f81854d29e21f87b2e8650d10f
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3216076"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893160"
 ---
 # <a name="set-up-vendor-accounts"></a>Einrichten von Kreditorenkonten
 
@@ -66,7 +66,7 @@ Sie können Kreditorenkontakte von Grund auf neu erstellen. Alternativ können S
 
 Sie können keinen Kontaktpersondatensatz löschen, wenn der Kontakt auf ein Dokument verweist. Stattdessen können Sie den Kontakt deaktivieren.  
 
-Sie können Kreditorenkontakte Ihren persönlichen Kontakten in Microsoft Office 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Supply Chain Management und Office 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
+Sie können Lieferantenkontakte Ihren persönlichen Kontakten in Microsoft 365 hinzufügen. Allerdings müssen Sie zuerst die Synchronisierung zwischen Supply Chain Management und Microsoft 365 sowohl in der Microsoft Exchange Server-Synchronisierung als auch im Microsoft Outlook-Setup-Assistenten einrichten.
 
 ## <a name="vendors-in-different-legal-entities"></a>Kreditoren in verschiedenen juristischen Personen
 Wenn ein Kreditor für eine juristische Person in der Organisation erfasst ist und andere juristische Personen den gleichen Kreditor erfassen müssen, können Sie die Seite **Kreditor zu anderer juristischer Person hinzufügen** verwenden, um den Kreditor zu so konfigurieren, dass er Geschäfte mit einer anderen juristischen Person tätigen kann. Wählen Sie für den Kreditor in der ausgewählten juristischen Person eine Kreditorengruppe, eine Währung und einen Sperrstatus aus.  

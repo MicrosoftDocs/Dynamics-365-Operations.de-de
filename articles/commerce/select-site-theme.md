@@ -3,7 +3,7 @@ title: Auswählen eines Sitedesigns
 description: In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dynamics 365 Commerce festlegen oder ändern.
 author: bicyclingfool
 manager: annbe
-ms.date: 12/12/2019
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 45184c7b0e29d1258b26368fbc7221df91013cc3
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 1f92b31e870cbb4d3cc04870273693bed1378c5e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002750"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817705"
 ---
 # <a name="select-a-site-theme"></a>Auswählen eines Sitedesigns
-
 
 [!include [banner](includes/banner.md)]
 
@@ -35,7 +34,7 @@ In diesem Thema wird beschrieben, wie Sie das Design Ihrer Site in Microsoft Dyn
 
 Das Layout und der Stil einer Site (z. B. Schriftarten, Größen und Farben) werden durch das Design definiert, das Sie auswählen und auf die Site anwenden. Ein Design wird von einem Entwickler in Ihrem Unternehmen erstellt und bereitgestellt. Eine Überblick über die Designs erhalten Sie in [Designüberblick](http://). Weitere Informationen zum Erstellen und Bereitstellen von Designs finden Sie unter [Neues Design erstellen](http://).
 
-Wenn Sie eine Site zum ersten Mal erstellen, wird standardmäßig ein Design mit der Bezeichnung **Fabrikam** verwendet. Dieses Standarddesign wird als Teil des Starter-Kits bereitgestellt. Nachdem Sie zusätzliche Designs für Ihre Site bereitgestellt haben, können Sie die Site so konfigurieren, dass stattdessen eines davon verwendet wird.
+Wenn Sie eine Site zum ersten Mal erstellen, wird standardmäßig ein Design mit der Bezeichnung **Fabrikam** verwendet. Dieses Standarddesign wird als Teil der Commerce-Modulbibliothek bereitgestellt. Nachdem Sie zusätzliche Designs für Ihre Site bereitgestellt haben, können Sie die Site so konfigurieren, dass stattdessen eines davon verwendet wird.
 
 ## <a name="select-the-site-theme"></a>Auswählen eines Sitedesigns
 

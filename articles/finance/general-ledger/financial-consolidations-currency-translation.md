@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a67e5e3aea33e874f225a6af606fc8cde2bdc6bf
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
+ms.sourcegitcommit: 7537aa8ef619eea6c48467a3ca86e3372415f8a7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3823454"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Finanzielle Konsolidierungen und Währungsumrechnung – Übersicht
 
@@ -103,6 +103,7 @@ Um die Ergebnisse der Konsolidierung anzuzeigen, haben Sie mehrere Optionen:
     ![Konsolidierungsvorgänge auf der Seite Konsolidierungen](./media/managing-consolidation-transactions.png "Konsolidierungsvorgänge auf der Seite Konsolidierungen")
 
 Um die Konsolidierung erneut auszuführen, können Sie einfach die Konsolidierung verarbeiten. Alternativ können Sie auf der Seite **Entfernt der Buchungen** zuerst **Konsolidierungen** auswählen.
+Falls die Salden auf Ihrem konsolidierten Konto nicht korrekt sind, können diese Salden mithilfe der **Abschlussperiodenregulierungen**-Seite korrigiert werden.
 
 ## <a name="consolidate-with-import"></a>Mit Import konsolidieren
 Die Konsolidierung mit Importfunktionen funktioniert wie das Onlinetool für die Funktionalität der Konsolidierung. Wenn Sie die juristischen Personen auswählen, suchenb Sie in der Quelldatei, ddie Daten enthält.
@@ -156,6 +157,7 @@ Weitere Informationen über die Währungsaufwertung finden Sie im Modul **Hauptb
 - Löschungserfassungen können nur in die aktuelle Ebene gebucht werden.
 - Nur Betriebsperiode Salden werden konsolidiert. Um den Anfangssalden anzuzeigen, müssen Sie ein Jahresende noch ausführen im Konsolidierungsunternehmen.
 - Sie können Tageserfassungen in einem Konsolidierungsunternehmen buchen aber nicht in einem Konsolidierungsunternehmen.
+- Regulierungen der Salden in eines Konsolidierungsunternehmens können nur mit der **Abschlussperiodenregulierungen**-Seite vorgenommen werden . 
 
 ## <a name="benefits-of-using-financial-reporting-for-financial-consolidations-and-currency-translation-or-to-complement-consolidate-online-for-consolidated-reporting"></a>Vorteile für die Verwendung der Finanzkonsolidierungen und Finanzberichte für Währungsumrechnung oder zur Ergänzung von Online-Konsolidierung für konsolidierte Berichterstellung
 Kunden, die Finanzberichte für die Finanzkonsolidierungen und Währungsumrechnung oder zur Ergänzung von Online-Konsolidierung für konsolidierte Berichterstellung haben verschiedene Vorteile:

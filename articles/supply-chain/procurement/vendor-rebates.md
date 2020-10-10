@@ -16,14 +16,15 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 44c8f3ed76698bb4b70d767d9c8881024699552f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: acf7df09b467e0b0b0463946be018ff199d7153e
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203449"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834259"
 ---
 # <a name="vendor-rebates"></a>Kreditorenrückvergütungen
+
 [!include [banner](../includes/banner.md)]
 
 Mithilfe von Kreditorenrückvergütungen können Unternehmen ihre Lieferantenrückvergütungsprogramme anhand automatisierter Aufgaben besser verwalten, die erforderlich sind, um Rückvergütungen, die verdient wurden, zu verwalten, nachzuverfolgen und zu fordern.
@@ -50,6 +51,7 @@ Personen in diesen Positionen suchen nach Möglichkeiten, verschiedene Ziele zu 
 - Arbeiten mit einer quantifizierten Basis für laufende und zukünftige Verhandlungen mit Kreditoren über Rückvergütungen.
 
 ## <a name="review-details-of-a-vendor-rebate-agreement"></a>Überprüfen von Details einer Kreditorenrückvergütungsvereinbarung
+
 Eine Kreditorenrückvergütungsvereinbarung ist ein Datensatz eines Vertrags mit einem Kreditor, der die verhandelten Bedingungen angibt, unter denen das Unternehmen sich für eine monetäre Belohnung für das Erreichen vorher festgelegter Einkaufsziele qualifiziert. Kreditorenrückvergütungsvereinbarungen werden auf der Seite **Rückvergütungsvereinbarungen** erfasst.
 
 Um die Seite **Kreditorenrückvergütungsvereinbarungen** zu öffnen, wählen Sie **Beschaffung** &gt; **Kreditorenrückvergütungen** &gt; **Rückvergütungsvereinbarungen** aus.
@@ -60,7 +62,9 @@ Auf der Seite **Kreditorenrückvergütungsvereinbarungen** können Sie Details �
 
 Der Kopf der Vereinbarung gibt die allgemeinen Bedingungen an, die ein Unternehmen für Rückvergütungen qualifizieren. Im Endeffekt geben Kopfzeileninformationen an, dass ein Kreditor eine Rückvergütung gewährt, wenn ein bestimmtes Produkt in einer bestimmten Menge gekauft wird. In der Kopfzeile geben Sie auch die Maßeinheits-Rückvergütungsoption an und den Berechnungsdatentyp.
 
-- Auf der Registerkarte **Allgemein** im Feld **Rückvergütungsoption für Maßeinheit** können Sie definieren, ob eine Maßeinheit eine Bedingung dafür sein soll, dass für eine Bestellposition eine Rückvergütung in Anspruch genommen werden kann. 
+- Wenn Sie auf der **Überblick**-Registerkarte Positionen haben, bei denen **Artikelcode** auf *Tabelle* festgelegt ist, um den Artikel anzugeben, gilt die Vereinbarung für diesen bestimmten Artikel. Wenn Sie Positionen haben, bei denen der **Artikelcode** auf *Gruppe* oder *Alles* festgelegt ist, um die Artikel anzugeben, wird die Lieferantenrabattvereinbarung individuell für jeden Artikel verarbeitet, der für den Artikelcode qualifiziert ist, und nicht für alle Artikel, die für den Artikelcode qualifiziert sind.
+
+- Auf der Registerkarte **Allgemein** im Feld **Rückvergütungsoption für Maßeinheit** können Sie definieren, ob eine Maßeinheit eine Bedingung dafür sein soll, dass für eine Bestellposition eine Rückvergütung in Anspruch genommen werden kann.
 
     - **Konvertieren** – Eine Bestellposition qualifiziert zu einer Kreditorenrückvergütung mittels der Rückvergütungsvereinbarung. Sie erhalten eine Rückvergütung ungeachtet der Maßeinheit, die für die Position angewendet wird.
     - **Genaue Übereinstimmung** – Um sich für eine Rückvergütung zu qualifizieren, muss eine Bestellposition dieselbe Maßeinheit aufweisen, die in der Vereinbarung angegeben ist.
@@ -97,6 +101,7 @@ In den Vereinbarungspositionen können Sie die Kreditoren-Rückvergütungsverein
 Wenn Bestellungen einem Kreditor erteilt werden, mit dem das Unternehmen eine Rückvergütungsvereinbarung hat, identifiziert das Programm sämtliche zukünftigen Kreditorenkreditzahlungen. Wenn die Bestellungen für eine Rückvergütung qualifizieren, wird eine Rückvergütungsforderung für jede Bestellposition generiert, sobald eine Einkaufsrechnung gebucht wurde. Dieser Prozess ist automatisch. Später können Sie die voraussichtlichen Rückvergütungen überprüfen und die Auswirkung dieser Rückvergütungen auf die Kosten des Produkts und die Gewinnspanne anzeigen.
 
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Details von Rückvergütungen anzeigen, die auf eine Bestellposition durch die Kreditoren-Rückvergütungsvereinbarung angewendet werden
+
 1. Wählen Sie auf der Seite **Bestellung** eine Bestellposition aus, und wählen Sie dann **Bestellposition** &gt; **Ansicht** &gt; **Preisdetails** aus.
 2. Wählen Sie auf der Seite **Preisdetails** das Inforegister **Rückvergütungen** aus.
 
@@ -106,15 +111,18 @@ Die Rückvergütungsinformationen werden auch im Feld **Kreditorenrückvergütun
 > Überprüfen Sie auf der Seite **Beschaffungsparameter** auf der Registerkarte **Preise**, dass die Option **Preisdetails aktivieren** auf **Ja** festgelegt ist. Wenn die Option auf **Nein** festgelegt ist, sind Sie dann nicht in der Lage, die Rückvergütungen anzuzeigen.
 
 ## <a name="review-and-approve-claims"></a>Prüfen und Genehmigen von Forderungen
+
 Rückvergütungsforderungen, die generiert werden, stellen die zukünftigen Zahlungen dar, die vom Kreditor erwartet werden können. Bevor eine Gutschrift für den Kreditor ausgestellt wird, möchte der Vereinbarungsbesitzer normalerweise die Forderungen überprüfen und genehmigen. Beachten Sie jedoch, dass der Status eines Anspruchs bestimmt, ob der Anspruch bereit ist, den Genehmigungsprozess zu durchlaufen.
 
 ### <a name="the-status-of-claims-and-the-effect-on-the-approval-process"></a>Der Status von Forderungen und die Auswirkung auf den Genehmigungsprozess
+
 Wenn eine Forderung generiert wird, wird deren Status auf **Zu berechnen** festgelegt, wenn die Rückvergütung auf kumulativer Basis gewährt wird, oder auf **Berechnet**, wenn die Rückvergütung pro Rechnung gewährt wird. Wenn der Status einer Forderung **Zu berechnen** ist, muss die Forderung einen Berechnungsprozess durchlaufen, der durch die Funktion „Kumulieren” behandelt wird. Nur Forderungen, die den Status **Berechnet** aufweisen, können in den Genehmigungsprozess einbezogen werden.
 
 > [!NOTE]
 > Wenn die Option **Genehmigung erforderlich** auf einer Kreditoren-Rückvergütungsvereinbarung auf **Nein** festgelegt wird, haben sämtliche Ansprüche, die generiert werden, den Status **Genehmigt** Die Genehmigung ist für Forderungen verbindlich, die auf kumulativer Basis gewährt werden.
 
 ### <a name="approve-claims-and-view-postings-and-invoice-details"></a>Forderungen genehmigen und Buchungen sowie Rechnungsdetails anzeigen
+
 Wenn Ansprüche genehmigt wurden, können sie nach Kreditorenkonten bearbeitet werden. Eine Gutschrift (Kreditorenrechnung) für den Rückvergütungs-Forderungsbetrag wird automatisch generiert. Der Kredit kann dann dem Kreditorensaldo hinzugefügt werden und das Kreditorenkontenteam kann es in den regulären Begleichungsprozess einbeziehen.
 
 1. Wählen Sie **Beschaffung** &gt; **Kreditorenrückvergütungen** &gt; **Rückvergütungsforderungen** aus, um eine Rückvergütungsforderung zu öffnen.
@@ -153,6 +161,7 @@ Wenn Ansprüche genehmigt wurden, können sie nach Kreditorenkonten bearbeitet w
 9. Auf der Seite **Alle Kreditoren** wählen Sie den Kreditor aus, von dem Sie die Rückvergütung erhalten, und wählen Sie dann im Aktionsbereich **Buchungen** aus. Finden Sie die Position für die Rechnung. Der Rückvergütungsbetrag wurde nun zum Kreditorensaldo hinzuaddiert.
 
 ## <a name="summary"></a>Summe
+
 Der Prozess für die Bearbeitung von Kreditorenrückvergütungen beinhaltet mehrere manuelle Nachverfolgungsaufgaben, die oft lästig sind. Indem diese Aufgaben automatisiert werden, kann die Kreditorenrückvergütungs-Verwaltungsfunktion Ihnen dabei helfen, die folgenden Prozesse zu durchlaufen:
 
 - Generieren von genauen Rückvergütungsansprüchen

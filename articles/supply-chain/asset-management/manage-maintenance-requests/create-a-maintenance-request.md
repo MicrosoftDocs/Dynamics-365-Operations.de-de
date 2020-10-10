@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetRequestTableCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d9a6b4daf1a29b032bb82f46aaabccb2231a83a8
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 22d5e371c386abc71946bf64ed8792647f78cf1b
+ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205229"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3889217"
 ---
 # <a name="create-maintenance-requests"></a>Wartungsanfragen erstellen
 
@@ -39,13 +39,13 @@ Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Information
 
 1. Wählen Sie **Anlagenverwaltung** \> **Allgemein** \> **Wartungsanfragen** \> **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** aus.
 2. Wählen Sie **Neu** aus.
-3. Wählen Sie im Dialogfeld **Anfrage erstellen** im Feld **Wartungsanfragetyp** den Typ der Wartungsanfrage aus. Ein Standardtyp wird vorgeschlagen.
+3. Wählen Sie im Dialogfeld **Anforderung erstellen** im Feld **Wartungsanfragetyp** den Typ der Wartungsanfrage aus. Ein Standardtyp wird vorgeschlagen.
 4. Geben Sie im Feld **Beschreibung** einen Namen oder einen Titel ein, der die Wartungsanfrage kurz beschreibt.
 5. Wählen Sie in den Feldern **Funktionaler Standort** und **Anlage** einen funktionalen Standort oder eine Anlage oder eine Kombination eines funktionalen Standorts und einer Anlage aus (je nach Anforderung). Sie können eine Wartungsanfrage erstellen, ohne eine Anlage auszuwählen, und die Anlage kann der Wartungsanfrage erst später hinzugefügt werden. Wenn der Wartungsarbeiter, der angemeldet ist, einer Ressource zugeordnet ist, die zu einer Anlage gehört, wird das Feld **Anlage** automatisch festgelegt.
 
-    Wenn der ausgewählten Anlage bereits eine Wartungsanfrage zugeordnet ist, wird oben im Dialogfeld **Anfrage erstellen** eine Meldungsleiste angezeigt, Sie Ihnen die Kennung der Wartungsanfrage mitteilt. Eine Meldungsleiste informiert Sie auch darüber, wenn die Anlage von einer Garantievereinbarung abgedeckt ist.
+    Wenn der ausgewählten Anlage bereits eine Wartungsanfrage zugeordnet ist, wird oben im Dialogfeld **Anforderung erstellen** eine Meldungsleiste angezeigt, Sie Ihnen die Kennung der Wartungsanfrage mitteilt. Eine Meldungsleiste informiert Sie auch darüber, wenn die Anlage von einer Garantievereinbarung abgedeckt ist.
 
-6. Wählen Sie im Feld **Leistungsebene** eine Leistungsebene aus, die die Dringlichkeit der Anfrage angibt.
+6. Wählen Sie im Feld **Leistungsebene** eine Leistungsebene aus, die die Dringlichkeit der Anforderung angibt.
 7. Wenn Sie in Schritt 5 eine Anlage ausgewählt haben, können Sie die Felder **Fehlersymptom**, **Fehlerbereich** und **Fehlertyp** verwenden, um eine Fehlererfassung zu erstellen.
 8. Wenn die Wartungsanfrage eine Wartungsausfallzeit verursacht hat, geben Sie Startdatum und -zeit der Ausfallzeit ein.
 
@@ -59,9 +59,9 @@ Der Abschnitt **Aktive Wartungsanfragen** des Bereichs **Zugehörige Information
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Nachfolgende Verarbeitung von Wartungsanfragen
 
-Nachdem eine Wartungsanfrage erstellt wurde – jedoch bevor sie in einen Arbeitsauftrag umgewandelt wird –, sollten in der Anfrage verschiedene Informationen aktualisiert werden. Normalerweise wird diese Aufgabe von einem Planer oder einem anderen Sachbearbeiter erledigt.
+Nachdem eine Wartungsanfrage erstellt wurde – jedoch bevor sie in einen Arbeitsauftrag umgewandelt wird –, sollten in der Anforderung verschiedene Informationen aktualisiert werden. Normalerweise wird diese Aufgabe von einem Planer oder einem anderen Sachbearbeiter erledigt.
 
-- Wählen Sie auf der Seite **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** die Anfrage aus, mit der gearbeitet werden soll. Wählen Sie dann **Bearbeiten** aus.
+- Wählen Sie auf der Seite **Alle Wartungsanfragen** oder **Aktive Wartungsanfragen** die Anforderung aus, mit der gearbeitet werden soll. Wählen Sie dann **Bearbeiten** aus.
 
 In der Detailansicht können Sie verschiedene Informationen aktualisieren. Nachfolgend finden Sie einige Beispiele:
 

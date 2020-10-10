@@ -1,6 +1,6 @@
 ---
 title: Lernkatalog für Administratoren für Dynamics 365 Commerce
-description: Hier finden Sie alle Schulungsoptionen für Dynamics 365 Commerce.
+description: Hier finden Sie alle Trainingsoptionen für die Administratorrolle in Dynamics 365 Commerce.
 author: margoc
 ms.topic: article
 ms.date: 07/23/2020
@@ -14,12 +14,12 @@ ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7a6e0b6103bf453b74ae485f06bf139b13bae7b2
-ms.sourcegitcommit: 58d7133ae9909fa205730e3cf4c7fd5a1d5d0b75
+ms.openlocfilehash: fc4df1c7fc47608300d705616768b6c8ef135652
+ms.sourcegitcommit: ea335b4536342e496e8b61847b1ae6da3924f94c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "3793392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "3821203"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Lernkatalog für Administratoren für Dynamics 365 Commerce
 
@@ -35,11 +35,11 @@ Der folgende Katalog wurde aus Kernwissen zu bestimmten Domänen und vom Einfach
 | [Erste Schritte mit Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)| Dynamics 365 Commerce basiert auf den bewährten Funktionen von Dynamics 365 Retail und bietet eine umfangreiche Omnikanal-Lösung, die Back-Office-, Store-, Callcenter- und digitale Umgebungen vereint. Dynamics 365 Commerce ermöglicht es Ihnen, durch personalisierte Kundenbindungen eine Markentreue aufzubauen, den Umsatz mit verbesserter Mitarbeiterproduktivität zu steigern, die Abläufe zu optimieren, die Kosten zu senken und die Effizienz der Lieferkette zu steigern und letztendlich bessere Geschäftsergebnisse zu erzielen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden   |
 | [Erste Schritte mit Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection ist eine cloudbasierte Lösung, die für E-Commerce-, physische Geschäfte und Omnikanal-Händler entwickelt wurde, um ihren Umsatz und ihre Reputation zu schützen, indem sie Tools und Funktionen bereitstellt, mit denen Betrug und Missbrauch verringert, Betriebskosten gesenkt und Akzeptanzraten erhöht werden und gleichzeitig Benutzerkonten vor Betrug geschützt werden können. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 35 Minuten |
 
-## <a name="commerce"></a>Handel<a name="commerce"></a>
+## <a name="commerce"></a>Commerce<a name="commerce"></a>
 
 | Inhalt  | Beschreibung  | Formate  | Länge    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
-| [Dynamics 365 Commerce-Bereitstellung](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/)                                    | Dieser Lernpfad beschreibt die Bereitstellung der Dynamics 365 Commerce-Umgebungen und die Schritte nach der Bereitstellung, um erfolgreiche Commerce-Implementierungen unter Verwendung der richtigen Topologie für die geschäftlichen Anforderungen jedes Einzelhändlers durchzuführen.                               | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5 Stunden   |
+| [Bereitstellen und Erweitern von Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dieser Lernpfad beschreibt die Bereitstellung der Dynamics 365 Commerce-Umgebungen und die Schritte nach der Bereitstellung, um erfolgreiche Commerce-Implementierungen unter Verwendung der richtigen Topologie für die geschäftlichen Anforderungen jedes Einzelhändlers durchzuführen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 5 Stunden   |
 | [Konfigurieren und Verwenden der Verkaufsstelle (POS) in Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-use-pos-commerce/)         | Transaktionsdaten werden an der Verkaufsstelle (POS) erstellt und zur Verarbeitung in die Dynamics 365 Commerce-Headquarters hochgeladen. In diesem Lernpfad wird beschrieben, wie Sie die POS installieren und aktivieren sowie tägliche Transaktionen in der POS erstellen. | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 4.5 Stunden |
 | [Konfiguration und Arbeiten mit Callcentern in Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-call-centers-commerce/) | Dynamics 365 Commerce ist eine Omnikanal-Lösung, die einem Callcenterkanal die Möglichkeit bietet, bestimmte Einstellungen für die Auftragsabwicklung und die Standarddaten für die von Callcenterbenutzern erstellten Kundenaufträge festzulegen.                                  | Kostenloser Online-Lernpfad in der eigenen Geschwindigkeit | 2 Stunden   |
 

@@ -3,7 +3,7 @@ title: Übersicht der Einkaufswagen- und Auschecken-Seiten
 description: Dieses Thema bietet eine Übersicht über Einkaufskorb- und Auschecken-Seiten in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c879b90cf49dcab9cf069e4f3613602bd6673aa9
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: e932be31a301ef5aacb68fa4e710d8a9137b7263
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527562"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817777"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Übersicht der Einkaufswagen- und Auschecken-Seiten
 
@@ -40,7 +40,7 @@ Auf der Auschecken-Seite einer E-Commerce-Website wird ein schrittweiser Ablauf 
 
 Die Einkaufskorbseite dient als Einkaufstasche und enthält alle Artikel, die dem Einkaufskorb hinzugefügt wurden.
 
-Die folgende Abbildung zeigt ein Beispiel für eine Einkaufskorbseite, die mit dem Online-Starter-Kit und dem Design „Fabrikam“ erstellt wurde.
+Die folgende Abbildung zeigt ein Beispiel für eine Einkaufskorbseite, die mit der Modulbibliothek und dem Design „Fabrikam“ erstellt wurde.
 
 ![Beispiel einer Einkaufskorbseite](./media/cart2.PNG)
 
@@ -56,7 +56,7 @@ Weitere Informationen zum Erstellen einer Einkaufskorbseite erhalten Sie unter [
 
 Auf der Auschecken-Seite geben Kunden die Informationen ein, die für den Auftrag erforderlich sind.
 
-Die folgende Abbildung zeigt ein Beispiel für die Auschecken-Seite, die mit dem Online-Starter-Kit erstellt wurde.
+Die folgende Abbildung zeigt ein Beispiel für die Auschecken-Seite, die mit der Modulbibliothek erstellt wurde.
 
 ![Beispiel der Auschecken-Seite](./media/Checkout.PNG)
 
@@ -66,7 +66,7 @@ Im Hauptteil der Auschecken-Seite werden alle Auftragsinformationen gesammelt. Z
 
 Eine Versandadresse ist erforderlich, wenn Artikel versendet werden müssen. Das Format der Versandadressen für jedes Gebietsschema kann in Dynamics 365 Commerce konfiguriert werden. Wenn die Artikel beispielsweise in die USA versendet werden, muss die Versandadresse eine Straße, ein Bundesland und eine Postleitzahl enthalten. Einige grundlegende Eingabevalidierungen werden für Versandadressfelder durchgeführt, z. B. die Validierung für alphanumerische Zeichen, maximale Länge und Zahlen. Obwohl die Gültigkeit der Adresse selbst nicht überprüft wird, kann diese Überprüfung mithilfe von benutzerdefinierten Diensten von Drittanbietern durchgeführt werden.
 
-Die Lieferadresse wird auf alle Artikel im Einkaufskorb angewendet, für die die Option „Versand“ ausgewählt ist. Wenn Sie den im Online-Starter-Kit angegebenen Auschecken-Ablauf verwenden, können einzelne Einkaufskorbartikel nicht an verschiedene Adressen versendet werden. Wenn Sie diese Funktion benötigen, kann sie durch Anpassung der Auschecken-Module implementiert werden.
+Die Lieferadresse wird auf alle Artikel im Einkaufskorb angewendet, für die die Option „Versand“ ausgewählt ist. Wenn Sie den in der Modulbibliothek angegebenen Auschecken-Ablauf verwenden, können einzelne Einkaufskorbartikel nicht an verschiedene Adressen versendet werden. Wenn Sie diese Funktion benötigen, kann sie durch Anpassung der Auschecken-Module implementiert werden.
 
 Nachdem die Versandadresse angegeben wurde, werden die Versandmethoden, die über den Dynamics 365 Commerce-Online-Store verfügbar sind, angezeigt. Die Versandarten und die von ihnen unterstützten Adressen können in Commerce konfiguriert werden.
 
@@ -80,7 +80,7 @@ Während des Auschecken-Ablaufs kann ein Kunde, der Mitglied eines Treueprogramm
 
 #### <a name="gift-cards"></a>Geschenkkarten
 
-Mit dem Online-Starterkit können interne Geschenkkarten für eine Bestellung eingelöst werden. Um eine interne Geschenkkarte zu beantragen, muss der Kunde angemeldet sein. Für zusätzliche Sicherheit empfehlen wir, dass Sie den Ablauf anpassen, indem Sie eine persönliche Identifikationsnummer (PIN) für interne Geschenkkarten verwenden.
+Mit der Modulbibliothek können interne Geschenkkarten für eine Bestellung eingelöst werden. Um eine interne Geschenkkarte zu beantragen, muss der Kunde angemeldet sein. Für zusätzliche Sicherheit empfehlen wir, dass Sie den Ablauf anpassen, indem Sie eine persönliche Identifikationsnummer (PIN) für interne Geschenkkarten verwenden.
 
 ### <a name="signed-in-and-guest-users"></a>Angemeldete und Gastbenutzer
 

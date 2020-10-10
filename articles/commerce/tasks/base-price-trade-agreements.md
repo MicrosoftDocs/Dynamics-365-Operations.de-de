@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db9365f25c1d3e387870dd9d173077d864b3d
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: 44dc059f7bfc3ba83a375c197ce67f1378a9bc9b
+ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141521"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3899348"
 ---
 # <a name="base-price-and-trade-agreements"></a> Basispreis und Handelsvereinbarungen
 
@@ -58,12 +58,12 @@ Diese Prozedur führt Sie Schritt für Schritt durch das Erstellen von kanalspez
 26. Klicken Sie im Feld **Name** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 27. Wählen Sie in der Liste **Commerce** aus. In den Demodaten hat das Journal **Commerce** die standardmäßige Relation **Preis (Verkauf)**. Das bedeutet, dass alle erstellten neuen Positionen standardmäßig auf Verkaufspreis-Handelsvereinbarungen festgelegt werden.  
 28. Klicken Sie im **Aktivitätsbereich** auf **Positionen**.
-29. Wählen Sie im Feld **Kontocode** die Option „Gruppe“ aus.
+29. Wählen Sie im Feld **Parteicodetyp** die Option „Gruppe“ aus.
 30. Klicken Sie im Feld **Konto-Auswahl** auf die Dropdown-Schaltfläche, um die Suche zu öffnen.
 31. Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus. Damit wird die Verknüpfung von Kanal zu Preisgruppe zu Handelsvereinbarung abgeschlossen.  
 32. Geben Sie im Feld **Artikelrelation** einen Wert ein.
 33. Geben Sie eine Zahl in das Feld **Betrag in Währung** ein.
-34. Im Inforegister **Details** aktivieren oder deaktivieren Sie das Kontrollkästchen **Weitersuchen**. Wenn **Weitersuchen** auf „Ja“ festgelegt ist, sucht das Preiskalkulationsmodul weiter nach gültigen Handelsvereinbarungen mit einem niedrigeren Verkaufspreis. Wenn **Weitersuchen** auf „Nein“ festgelegt ist, stellt das Preismodul die Suche ein und verwendet die Handelsvereinbarung.  
+34. Auf dem Inforegister **Details** aktivieren oder deaktivieren Sie das Kontrollkästchen **Weitersuchen**. Wenn **Weitersuchen** auf „Ja“ festgelegt ist, sucht das Preiskalkulationsmodul weiter nach gültigen Handelsvereinbarungen mit einem niedrigeren Verkaufspreis. Wenn **Weitersuchen** auf „Nein“ festgelegt ist, stellt das Preismodul die Suche ein und verwendet die Handelsvereinbarung.  
 35. Klicken Sie auf **Buchen**.
 36. Klicken Sie auf **OK**.
 37. Schließen Sie die Seite.

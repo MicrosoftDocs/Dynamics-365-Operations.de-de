@@ -17,17 +17,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 07d121d5a68970dd29f0e77babda735de12871ca
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: d9a15f85838849796d6ce4674712636251c75bf3
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761128"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818274"
 ---
 # <a name="cart-module"></a>Einkaufswagenmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält Einkaufsmodule und es wird beschrieben, wie diese den Sitesieten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -41,11 +40,11 @@ Das Warenkorbmodul rendert Daten basierend auf der Warenkorb-ID, einem auf der g
 
 Das folgende Bild zeigt ein Beispiel einer Warenkorbseite auf der Fabrikam-Site.
 
-![Beispiel eines Warenkorb-Moduls](./media/cart2.PNG)
+![Beispiel eines Einkaufskorbmoduls auf der Fabrikam-Site](./media/cart2.PNG)
 
 Das folgende Bild zeigt ein Beispiel einer Warenkorbseite auf der Fabrikam-Site. In diesem Beispiel wird eine Bearbeitungsgebühr für eine Position fällig.
 
-![Beispiel eines Warenkorb-Moduls](./media/ecommerce-handling-fee.png)
+![Beispiel eines Einkaufskorbmoduls mit einer Bearbeitungsgebühr für einen Positionsartikel](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>Einkaufswagenmodul-Eigenschaften und Slots
 
