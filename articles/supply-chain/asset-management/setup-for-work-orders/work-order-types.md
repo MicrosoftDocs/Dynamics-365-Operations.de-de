@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetWorkOrderType
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,37 +18,37 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 375b18a4bd37ddadecee03a01b3b2125f5cc8d0a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b8e43908e3f13c9e4fd6fab6f1e17a171866b803
+ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215423"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888784"
 ---
-# <a name="work-order-types"></a><span data-ttu-id="aebdf-103">Arbeitsauftragstypen</span><span class="sxs-lookup"><span data-stu-id="aebdf-103">Work order types</span></span>
+# <a name="work-order-types"></a><span data-ttu-id="ee118-103">Arbeitsauftragstypen</span><span class="sxs-lookup"><span data-stu-id="ee118-103">Work order types</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="aebdf-104">Arbeitsauftragsarten werden zur Kategorisierung von Arbeitsaufträgen verwendet.</span><span class="sxs-lookup"><span data-stu-id="aebdf-104">Work order types are used to categorize work orders.</span></span> <span data-ttu-id="aebdf-105">Beispielsweise können Sie Arbeitsaufträge haben, die sich auf vorbeugende Instandhaltung oder korrektive Instandhaltung beziehen.</span><span class="sxs-lookup"><span data-stu-id="aebdf-105">For example, you might have work orders that are related to preventive maintenance or corrective maintenance.</span></span>
+<span data-ttu-id="ee118-104">Arbeitsauftragsarten werden zur Kategorisierung von Arbeitsaufträgen verwendet.</span><span class="sxs-lookup"><span data-stu-id="ee118-104">Work order types are used to categorize work orders.</span></span> <span data-ttu-id="ee118-105">Beispielsweise können Sie Arbeitsaufträge haben, die sich auf vorbeugende Instandhaltung oder korrektive Instandhaltung beziehen.</span><span class="sxs-lookup"><span data-stu-id="ee118-105">For example, you might have work orders that are related to preventive maintenance or corrective maintenance.</span></span>
 
-<span data-ttu-id="aebdf-106">Ein Arbeitsauftragstyp definiert eine Zugehörigkeit zu einem Arbeitsauftrags-Lebenszyklusmodell.</span><span class="sxs-lookup"><span data-stu-id="aebdf-106">A work order type defines an affiliation with a work order lifecycle model.</span></span> <span data-ttu-id="aebdf-107">Ein Arbeitsauftrags-Lebenszyklusmodell definiert die Arbeitsauftrags-Lebenszykluszustände, die auf einem Arbeitsauftrag festgelegt werden können.</span><span class="sxs-lookup"><span data-stu-id="aebdf-107">A work order lifecycle model defines the work order lifecycle states that can be set on a work order.</span></span> <span data-ttu-id="aebdf-108">(Beispiele für Lebenszykluszustände von Arbeitsaufträgen sind **Erstellt**, **In Bearbeitung** und **Fertig**.)</span><span class="sxs-lookup"><span data-stu-id="aebdf-108">(Examples of work order lifecycle states include **Created**, **In Process**, and **Finished**.)</span></span>
+<span data-ttu-id="ee118-106">Ein Arbeitsauftragstyp definiert eine Zugehörigkeit zu einem Arbeitsauftrags-Lebenszyklusmodell.</span><span class="sxs-lookup"><span data-stu-id="ee118-106">A work order type defines an affiliation with a work order lifecycle model.</span></span> <span data-ttu-id="ee118-107">Ein Arbeitsauftrags-Lebenszyklusmodell definiert die Arbeitsauftrags-Lebenszykluszustände, die auf einem Arbeitsauftrag festgelegt werden können.</span><span class="sxs-lookup"><span data-stu-id="ee118-107">A work order lifecycle model defines the work order lifecycle states that can be set on a work order.</span></span> <span data-ttu-id="ee118-108">(Beispiele für Lebenszykluszustände von Arbeitsaufträgen sind **Erstellt**, **In Bearbeitung** und **Fertig**.)</span><span class="sxs-lookup"><span data-stu-id="ee118-108">(Examples of work order lifecycle states include **Created**, **In Process**, and **Finished**.)</span></span>
 
-<span data-ttu-id="aebdf-109">Weitere Informationen über den Lebenszyklus von Arbeitsaufträgen und Projektphasen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](work-order-lifecycle-states.md).</span><span class="sxs-lookup"><span data-stu-id="aebdf-109">For more information about work order lifecycle states and project stages, see [Work order lifecycle states](work-order-lifecycle-states.md).</span></span>
+<span data-ttu-id="ee118-109">Weitere Informationen über den Lebenszyklus von Arbeitsaufträgen und Projektphasen finden Sie unter [Lebenszykluszustand von Arbeitsaufträgen](work-order-lifecycle-states.md).</span><span class="sxs-lookup"><span data-stu-id="ee118-109">For more information about work order lifecycle states and project stages, see [Work order lifecycle states](work-order-lifecycle-states.md).</span></span>
 
-1. <span data-ttu-id="aebdf-110">Wählen Sie **Anlagenmanagement** \> **Einrichtung** \> **Arbeitsaufträge** \> **Arbeitsauftragsarten**.</span><span class="sxs-lookup"><span data-stu-id="aebdf-110">Select **Asset management** \> **Setup** \> **Work orders** \> **Work order types**.</span></span>
-2. <span data-ttu-id="aebdf-111">Wählen Sie **Neu**, um einen Arbeitsauftragstyp anzulegen.</span><span class="sxs-lookup"><span data-stu-id="aebdf-111">Select **New** to create a work order type.</span></span>
-3. <span data-ttu-id="aebdf-112">Geben Sie im Feld **Arbeitsauftragsart** eine ID für die Arbeitsauftragsart ein.</span><span class="sxs-lookup"><span data-stu-id="aebdf-112">In the **Work order type** field, enter an ID for the work order type.</span></span>
-4. <span data-ttu-id="aebdf-113">Geben Sie im Feld **Name** einen Namen ein.</span><span class="sxs-lookup"><span data-stu-id="aebdf-113">In the **Name** field, enter a name.</span></span>
-5. <span data-ttu-id="aebdf-114">Wählen Sie im Feld **Lebenszyklusmodell Arbeitsauftrag** ein Lebenszyklusmodell aus.</span><span class="sxs-lookup"><span data-stu-id="aebdf-114">In the **Work order lifecycle model** field, select a lifecycle model.</span></span>
-5. <span data-ttu-id="aebdf-115">Setzen Sie die Option **Ein Wartungsarbeiter** auf **Ja**, wenn alle Arbeitsaufträge, die sich auf einen Arbeitsauftrag dieses Typs beziehen, auf denselben Wartungsarbeiter terminiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="aebdf-115">Set the **One maintenance worker** option to **Yes** if all work order jobs that are related to a work order of this type should be scheduled to the same maintenance worker.</span></span>
-6. <span data-ttu-id="aebdf-116">Wählen Sie im Feld **Kostenart** **Korrektur**, **Präventiv** oder **Investition**.</span><span class="sxs-lookup"><span data-stu-id="aebdf-116">In the **Cost type** field, select **Corrective**, **Preventive**, or **Investment**, as appropriate.</span></span> <span data-ttu-id="aebdf-117">Alle Arbeitsaufträge auf einem Arbeitsauftrag müssen die gleiche Kostenart haben.</span><span class="sxs-lookup"><span data-stu-id="aebdf-117">All work order jobs on a work order must have the same cost type.</span></span>
-7. <span data-ttu-id="aebdf-118">Setzen Sie im Abschnitt **Pflicht** die entsprechenden Optionen auf **Ja**, um festzulegen, welche fehler- oder wartungsbezogenen Informationen zu einem solchen Arbeitsauftrag hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="aebdf-118">In the **Mandatory** section, set the relevant options to **Yes** to specify which fault-related or maintenance downtime–related information is added to a work order of this type.</span></span>
+1. <span data-ttu-id="ee118-110">Wählen Sie **Anlagenmanagement** \> **Einrichtung** \> **Arbeitsaufträge** \> **Arbeitsauftragsarten**.</span><span class="sxs-lookup"><span data-stu-id="ee118-110">Select **Asset management** \> **Setup** \> **Work orders** \> **Work order types**.</span></span>
+2. <span data-ttu-id="ee118-111">Wählen Sie **Neu**, um einen Arbeitsauftragstyp anzulegen.</span><span class="sxs-lookup"><span data-stu-id="ee118-111">Select **New** to create a work order type.</span></span>
+3. <span data-ttu-id="ee118-112">Geben Sie im Feld **Arbeitsauftragsart** eine ID für die Arbeitsauftragsart ein.</span><span class="sxs-lookup"><span data-stu-id="ee118-112">In the **Work order type** field, enter an ID for the work order type.</span></span>
+4. <span data-ttu-id="ee118-113">Geben Sie im Feld **Name** einen Namen ein.</span><span class="sxs-lookup"><span data-stu-id="ee118-113">In the **Name** field, enter a name.</span></span>
+5. <span data-ttu-id="ee118-114">Wählen Sie im Feld **Lebenszyklusmodell Arbeitsauftrag** ein Lebenszyklusmodell aus.</span><span class="sxs-lookup"><span data-stu-id="ee118-114">In the **Work order lifecycle model** field, select a lifecycle model.</span></span>
+5. <span data-ttu-id="ee118-115">Setzen Sie die Option **Ein Wartungsarbeiter** auf **Ja**, wenn alle Arbeitsaufträge, die sich auf einen Arbeitsauftrag dieses Typs beziehen, auf denselben Wartungsarbeiter terminiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="ee118-115">Set the **One maintenance worker** option to **Yes** if all work order jobs that are related to a work order of this type should be scheduled to the same maintenance worker.</span></span>
+6. <span data-ttu-id="ee118-116">Wählen Sie im Feld **Kostenart** **Korrektur**, **Präventiv** oder **Investition**.</span><span class="sxs-lookup"><span data-stu-id="ee118-116">In the **Cost type** field, select **Corrective**, **Preventive**, or **Investment**, as appropriate.</span></span> <span data-ttu-id="ee118-117">Alle Arbeitsaufträge auf einem Arbeitsauftrag müssen die gleiche Kostenart haben.</span><span class="sxs-lookup"><span data-stu-id="ee118-117">All work order jobs on a work order must have the same cost type.</span></span>
+7. <span data-ttu-id="ee118-118">Setzen Sie im Abschnitt **Pflicht** die entsprechenden Optionen auf **Ja**, um festzulegen, welche fehler- oder wartungsbezogenen Informationen zu einem solchen Arbeitsauftrag hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="ee118-118">In the **Mandatory** section, set the relevant options to **Yes** to specify which fault-related or maintenance downtime–related information is added to a work order of this type.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="aebdf-119">Die Optionen im Abschnitt **Pflicht** beziehen sich auf die Optionen auf der **Validieren** FastTab der **Lebenszykluszustände von Arbeitsaufträgen** Seite (**Anlagenmanagement** \> **Einrichtung** \> **Aufträge** \> **Lebenszykluszustände**).</span><span class="sxs-lookup"><span data-stu-id="aebdf-119">The options in the **Mandatory** section are related to the options on the **Validate** FastTab of the **Work order lifecycle states** page (**Asset management** \> **Setup** \> **Work orders** \> **Lifecycle states**).</span></span>
+    > <span data-ttu-id="ee118-119">Die Optionen im Abschnitt **Pflicht** beziehen sich auf die Optionen auf der **Validieren** FastTab der **Lebenszykluszustände von Arbeitsaufträgen** Seite (**Anlagenmanagement** \> **Einrichtung** \> **Aufträge** \> **Lebenszykluszustände**).</span><span class="sxs-lookup"><span data-stu-id="ee118-119">The options in the **Mandatory** section are related to the options on the **Validate** FastTab of the **Work order lifecycle states** page (**Asset management** \> **Setup** \> **Work orders** \> **Lifecycle states**).</span></span>
 
-8. <span data-ttu-id="aebdf-120">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="aebdf-120">Select **Save**.</span></span>
+8. <span data-ttu-id="ee118-120">Wählen Sie **Speichern**.</span><span class="sxs-lookup"><span data-stu-id="ee118-120">Select **Save**.</span></span>
 
 ![Arbeitsauftragstypen](media/16-setup-for-work-orders.png)
