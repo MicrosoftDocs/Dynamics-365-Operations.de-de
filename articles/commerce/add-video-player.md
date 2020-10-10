@@ -3,7 +3,7 @@ title: Video-Player-Modul
 description: Dieses Thema enthält Video-Player-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/28/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0612682d310362c7523bf08db40faf51c80ea2e3
-ms.sourcegitcommit: b52477b7d0d52102a7ca2fb95f4ebfa30ecd9f54
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "3411158"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817060"
 ---
 # <a name="video-player-module"></a>Video-Player-Modul
 
@@ -97,12 +97,12 @@ Um ein Video-Player-Modul einer neuen Seite hinzuzufügen und die erforderlichen
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Werbebannermodul](add-alert.md)
 
 [Karussellmodul](add-carousel.md)
 
-[Textblock-Modul](add-content-rich-block.md)
+[Textblockmodul](add-content-rich-block.md)
 
 [Inhaltsblockmodul](add-hero-module.md)

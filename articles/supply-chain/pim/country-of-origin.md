@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: d0d93a02817bab8e188818862c1bb7f84b498fc1
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 0471785991a307de11147e9773d9abe1e02941d6
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3802796"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895547"
 ---
 # <a name="country-of-origin"></a>Ursprungsland
 
@@ -41,7 +42,7 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
 Bevor Sie ein Zertifikat für ein Produkt ausstellen, müssen Sie das Produkt mit seinem Zielland und seinem Herkunftsland verknüpfen.
 
 1. Gehen Sie zu **Produktinformationsverwaltung \> Setup \> Produktkonformität \> Herkunftsland \> Regeln für das Herkunftsland**.
-2. Wählen Sie ein vorhandenes Länder-Setup zum Bearbeiten aus oder wählen Sie **Neu** im Aktionsbereich aus, um ein neues Länder-Setup zu erstellen.
+2. Wählen Sie ein vorhandenes Länder-Setup zum Bearbeiten aus oder wählen Sie **Neu** im Aktivitätsbereich aus, um ein neues Länder-Setup zu erstellen.
 3. Legen Sie die folgenden Werte für das ausgewählte oder neue Land fest.
 
     | Feld | Beschreibung |
@@ -61,7 +62,7 @@ Sie müssen entscheiden, welche Zertifikatdokumente Sie ausstellen und wie Sie s
 Gehen Sie zum Einrichten Ihrer Zertifikatsinformationen folgendermaßen vor.
 
 1. Gehen Sie zu **Produktinformationsverwaltung \> Setup \> Produktkonformität \> Herkunftsland \> Kreditorenzertifikate des Herkunftslands**.
-2. Wählen Sie ein vorhandenes Zertifikat-Setup zum Bearbeiten aus oder wählen Sie **Neu** im Aktionsbereich aus, um ein neues Zertifikat-Setup zu erstellen.
+2. Wählen Sie ein vorhandenes Zertifikat-Setup zum Bearbeiten aus oder wählen Sie **Neu** im Aktivitätsbereich aus, um ein neues Zertifikat-Setup zu erstellen.
 3. Legen Sie die folgenden Einstellungen für das ausgewählte oder neue Zertifikat fest.
 
     | Feld | Beschreibung |
@@ -82,7 +83,7 @@ Wenn Sie einen Stücklistenbericht erstellen, können Sie das Herkunftsland für
 
 1. Wechseln Sie zu **Produktinformationsverwaltung \> Produkte \> Freigegebene Produkte**.
 1. Wählen Sie ein Produkt aus oder erstellen Sie es, um seine Seite **Freigegebene Produktdetails** zu öffnen.
-1. Wählen Sie im Aktionsbereich auf der Registerkarte **Techniker** in der Gruppe **Stückliste** die Option **Designer** aus.
+1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Techniker** in der Gruppe **Stückliste** die Option **Designer** aus.
 1. Wählen Sie auf der Seite, die angezeigt wird, im Aktivitätsbereich die Option **Stückliste \> Drucken** aus.
 1. Legen Sie im Dialogfeld **Stücklistenpositionen** das Feld **Zielland** auf das Zielland fest, das Sie in Ihrem Bericht anzeigen möchten.
 1. Wählen Sie **OK**.

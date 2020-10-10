@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 8957065bcadc3f33adb60c2a8f2be78710289631
-ms.sourcegitcommit: d03f301633175b15d46690fc97067820bf21579f
+ms.openlocfilehash: 1eb5e4ea8d086baeee686ccb3d044b3ef9d2a4fa
+ms.sourcegitcommit: b3df62842e62234e8eaa16992375582518976131
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3775146"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3818571"
 ---
 # <a name="dual-write-overview"></a>Dual-Write-Übersicht
 
@@ -78,15 +78,15 @@ Duales Schreiben erstellt eine Zuordnung zwischen Konzepten in Finance and Opera
 + Verwaltung einer einzigen Quelle für Benutzer
 + Integrierte Kanäle für Retail und Marketing
 + Sichtbarkeit von Werbeaktionen und Rabatten
-+ Anfrage für Service-Funktionen
-+ Rationalisierte Serviceabläufe
++ Anforderung für Dienstfunktionen
++ Rationalisierte Dienstvorgänge
 
 ## <a name="top-reasons-to-use-dual-write"></a>Die wichtigsten Gründe für die Verwendung von Dual-Write
 
 Dual-Write bietet Datenintegration über Microsoft Dynamics 365 Apps hinweg. Dieser robuste Rahmen verbindet Umgebungen und ermöglicht die Zusammenarbeit verschiedener Geschäftsanwendungen. Hier sind die wichtigsten Gründe, warum Sie Dual-Write verwenden sollten:
 
 + Dual-Write bietet eine eng gekoppelte, echtzeitnahe und bidirektionale Integration zwischen Finance and Operations-Anwendungen und modellgesteuerten Anwendungen in Dynamics 365. Diese Integration macht Microsoft Dynamics 365 zum One-Stop-Shop für alle Ihre Geschäftslösungen. Kunden, die Dynamics 365 Finance und Dynamics 365 Supply Chain Management verwenden, aber für das Kundenbeziehungsmanagement (CRM) Nicht-Microsoft-Lösungen einsetzen, entscheiden sich für Dynamics 365 wegen der Unterstützung von Dual-Write.
-+ Daten von Kunden, Produkten, Operationen, Projekten und dem Internet der Dinge (Internet of Things, IoT) fließen automatisch durch Dual-Write zu Common Data Service. Diese Verbindung ist nützlich für Unternehmen, die an Microsoft Power Platform-Erweiterungen interessiert sind.
++ Daten von Kunden, Produkten, Operationen, Projekten und dem Internet der Dinge (Internet of Things, IoT) fließen automatisch durch Dual-Write zu Common Data Service. Diese Verbindung ist nützlich für Unternehmen, die an Power Platform-Erweiterungen interessiert sind.
 + Die Dual-Write-Infrastruktur folgt dem No-Code/Low-Code-Prinzip. Es ist nur ein minimaler technischer Aufwand erforderlich, um die Standard-Tabelle-zu-Tabelle-Zuordnungen zu erweitern und um benutzerdefinierte Zuordnungen aufzunehmen.
 + Dual-Write unterstützt sowohl den Online- als auch den Offline-Modus. Microsoft ist das einzige Unternehmen, das Unterstützung für den Online- und Offline-Modus bietet.
 

@@ -3,7 +3,7 @@ title: Breadcrumb-Modul
 description: Dieses Thema enthält Breadcrumb-Module und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 38efc3a60ae0ba49db2036dc84c49e4896727d94
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: 7c6f215c3a7539cc16b0d72594702e6bdde7c58e
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621059"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817109"
 ---
 # <a name="breadcrumb-module"></a>Breadcrumb-Modul
 
@@ -37,6 +37,9 @@ Breadcrumb-Module werden verwendet, um eine sekundäre Navigation auf Websitesei
 
 Auf Seiten mit Produktkategoriekontext, wie z. B. PDPs und Kategorieseiten, zeigen Breadcrumb-Module die Kategoriehierarchie. Auf Seiten ohne Kategoriekontext werden Breadcrumb-Module standardmäßig **&lt;Site-Root&gt; / &lt;Aktuelle Seite&gt;** angezeigt. Breadcrumb-Module können auch manuell auf anderen Arten von Websiteseiten konfiguriert werden, um Links zu bestimmten Seiten auf der Website anzuzeigen.
 
+> [!NOTE]
+> Das Breadcrumb-Modul ist in Dynamics 365 Commerce 10.0.12 verfügbar.
+
 Das folgende Bild zeigt ein Beispiel eines Breadcrumb-Moduls, das die Kategoriehierarchie auf einem PDP zeigt.
 
 ![Beispiel eines Breadcrumb-Moduls](./media/ecommerce-breadcrumb.PNG)
@@ -48,6 +51,9 @@ Das Breadcrumb-Modul basiert auf der **Breadcrumb-Anzeigetyp auf PDP** Einstellu
 - **Kategoriehierarchie anzeigen** – Wenn dieser Wert ausgewählt ist, zeigt das Breadcrumb-Modul die vollständige Kategoriehierarchie des Produkts an, das auf dem PDP angezeigt wird.
 - **Zeigen Sie zurück zu den Ergebnissen** – Wenn dieser Wert ausgewählt ist, zeigt das Breadcrumb-Modul einen Link Zurück zu Ergebnissen auf einem PDP an, wenn der Benutzer den PDP über ein Modul geöffnet hat, das einen Link Zurück zu Ergebnissen ermöglicht. Diese Funktion ist verfügbar, wenn Benutzer von Seiten mit Kategorien, Such-, Listen- und Empfehlungslisten navigieren. Um diese Funktionalität zu unterstützen, verfügen die Module für Produktsammlung und Suchergebnisse über eine Eigenschaft mit dem Namen **Lassen Sie die Ergebnisse auf PDP zurück**. Mit dieser Eigenschaft können Sie flexibel definieren, welche Module die Linkfunktionalität Zurück zu den Ergebnissen auf dem PDP unterstützen sollen. Zum Beispiel wenn **Zeigen Sie zurück zu den Ergebnissen** für den **Breadcrumb-Anzeigetyp auf PDP** Einstellung des Breadcrumb-Moduls ausgewählt ist und **Lassen Sie die Ergebnisse auf PDP zurück** ausgewählt ist für das Suchergebnismodul der Suchseite, wird ein Link Zurück zu den Ergebnissen angezeigt, wenn Benutzer von der Suchseite zu einem PDP navigieren.
 - **Kategoriehierarchie anzeigen und zurück zu den Ergebnissen** – Dieser Wert ist eine Kombination der beiden vorherigen. Wenn dieser Wert ausgewählt ist, zeigt das Breadcrumb-Modul sowohl die vollständige Kategoriehierarchie als auch einen Link Zurück zu den Ergebnissen (falls konfiguriert) auf einem PDP an.
+
+> [!IMPORTANT]
+> Diese Einstellungen sind in Dynamics 365 Commerce 10.0.12 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="breadcrumb-module-properties"></a>Eigenschaften des Breadcrumb-Moduls
 
@@ -76,10 +82,12 @@ Um ein Breadcrumb-Modul einem PDP hinzuzufügen und die erforderlichen Eigenscha
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Übersicht der Standard-Kategorie-Landingpage und Suchergebnisseite](category-search-page-overview.md)
 
 [Produktsammelmodule](product-collection-module-overview.md)
 
 [Kauffeldmodul](add-buy-box.md)
+
+[SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)

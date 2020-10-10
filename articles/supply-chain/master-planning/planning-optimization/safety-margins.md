@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 05ac817081689f27cdf55cb86a3235d7707a737b
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 646a0e7c8b8a7f2d00a50eddfa65500d0f8afbaf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803420"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "3814899"
 ---
 # <a name="safety-margins"></a>Sicherheitszuschläge
 
@@ -162,13 +162,13 @@ Die folgenden Regeln werden angewendet, um zu bestimmen, ob das Planungsmodul ei
 
 #### <a name="calendar-setup-overview-matrix"></a>Übersichtsmatrix für die Kalendereinrichtung
 
-Die folgende Abbildung zeigt eine Matrix, die zusammenfasst, welche Kalender bei der Berechnung der Sicherheitszuschläge gelten. Die folgenden Abkürzungen und Farben geben an, wo die einzelnen Kalendertypen angegeben sind:
+Die folgende Abbildung zeigt eine Matrix, die zusammenfasst, welche Kalender bei der Berechnung der Sicherheitszuschläge gelten. (Wählen Sie das Bild aus, um eine hochauflösende Version davon zu öffnen.) Die folgenden Abkürzungen und Farben geben an, wo die einzelnen Kalendertypen angegeben sind:
 
 - **Dispositionssteuerungsgruppe (CG):** Grün
 - **Lagerort (WH):** Gelb
 - **Lieferant (V):** Blau
 
-![Übersichtsmatrix für die Kalendereinrichtung](media/safety-margins-calendar-matrix.png)
+[![Übersichtsmatrix für die Kalendereinrichtung](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Berechnungstage
 

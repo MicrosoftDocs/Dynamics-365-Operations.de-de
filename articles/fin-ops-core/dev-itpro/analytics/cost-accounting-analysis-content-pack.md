@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0fc9877fdca2d2f85f4f9609616d8d21ab7b5174
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: b0929b449f20e7340c3607d842b7c4f779cbb8fe
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771586"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893303"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-Inhalt zur Kostenrechnungsanalyse
 
@@ -44,8 +44,6 @@ Durch das Festlegen der Zugriffsebenensicherheit in der Kostenrechnung und durch
 
 ## <a name="accessing-the-power-bi-content"></a>Zugreifen auf den Power BI-Inhalt
 Sie finden den Power BI-Inhalt zur **Kostenbuchhaltungsanalyse** in der Bibliothek für freigegebene Anlagen in Microsoft Dynamics Lifecycle Services (LCS). Weitere Informationen dazu, wie Sie den Inhalt herunterladen und in Ihrer Organisation implementieren, finden Sie unter [Power BI-Inhalt in LCS von Microsoft und Ihren Partnern](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
-
-<!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
 Stellen Sie sicher, dass Sie den **Kostenrechnungsanalyse**-Inhalt herunterladen, der der von Ihnen verwendeten Microsoft Dynamics 365-Version entspricht.
 
@@ -87,8 +85,8 @@ Die folgende Tabelle zeigt, wie die zentralen aggregierten Messungen verwendet w
 
 | Kennzahl                                       | Wie die festgelegte Kennzahl berechnet wird                                                                                          |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Istkosten                                   | BERECHNEN Sie "Kostenrechnungeinträge'\[Messung\], Transaktionsversion\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)            |
-| Budgetkosten                                   | BERECHNEN Sie "Kostenrechnungeinträge'\[Messung\], Transaktionsversion\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)            |
+| Istkosten                                   | BERECHNEN Sie ("Kostenrechnungeinträge'\[Messung\], Transaktionsversion\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)            |
+| Budgetkosten                                   | BERECHNEN Sie ("Kostenrechnungeinträge'\[Messung\], Transaktionsversion\[ISSOURCEVERSIONBUDGET\_VALUE\] = 1)            |
 | Budgetabweichung                          | \[Budgetkosten\] - \[Istkosten\]                                                                                      |
 | Budgetabweichung in Prozent                    | IF(\[Budgetkosten\] = 0, blank(), \[Budgetabweichung\] / \[Budgetkosten\])                                                |
 | Tatsächliche Größe                              | BERECHNEN('Statische Einträge'\[FullMagnitude\], 'Transaktionsversionen'\[ISSOURCEVERSIONBUDGET\_VALUE\] = 0)          |
