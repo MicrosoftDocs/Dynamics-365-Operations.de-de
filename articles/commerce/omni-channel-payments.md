@@ -3,7 +3,7 @@ title: Übersicht Omni-Channel-Zahlungen
 description: Dieses Thema bietet einen Überblick über die Omni-Kanalzahlungen in Dynamics 365 Commerce.
 author: rubendel
 manager: AnnBe
-ms.date: 07/21/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 2127eb60a82bef8c6b5f5e9a917160331c483649
-ms.sourcegitcommit: 59fb179c770c799918f624cf345848fd4202bbdd
+ms.openlocfilehash: 80eaf36fb382e0ebe0a66383ea17ab76faa07dfa
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "3613176"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819812"
 ---
 # <a name="omni-channel-payments-overview"></a>Übersicht Omni-Channel-Zahlungen
 
@@ -92,6 +92,9 @@ Die folgenden Omnikanal-Zahlungsszenarien werden unterstützt:
 - Im Callcenter kaufen und In einem Shop abholen
 - Im Callcenter kaufen und Im Shop B abholen
 - Im Shop A kaufen und an den Debitor versenden
+
+    > [!NOTE]
+    > Im Callcenter getätigte Zahlungen, die der Zahlungsfunktion „Normal“ zugeordnet sind, müssen als **Vorab bezahlen** = **Ja** gekennzeichnet sein, um in dem fälligen Betrag berücksichtigt zu werden, wenn die Bestellung am POS zurückgerufen wird. Nicht im Voraus bezahlte Zahlungen vom Typ „Normal“ werden nicht erfasst, wenn die Bestellung am POS zurückgerufen wird. 
 
 Abweichungen dieser Szenarien werden ebenfalls unterstützt. So kann eine Onlinebestellung beide Positionen umfassen nämlich jene, die an den Debitor versendet wird und jene, die im Shop abgeholt wird. Alle Auftragserfüllungsoptionen werden über Omnikanal-Zahlungen unterstützt. 
 
@@ -190,8 +193,8 @@ Um das Szenario auszuführen, führen Sie folgende Schritte aus:
 2. Auf der Seite **Transakltion** fügen Sie Karen Berg der Transaktion hinzu, indem Sie die Nummerauflage verwenden, um **2001** einzugeben.
 3. Fügen Sie eine oder mehrere Zeilen der Transaktion hinzu.
 4. Wählen Sie **Aufträge**, um die Auftragsoptionen anzuzeigen.
-5. Wählen Sie **Alle abholen** und dann aus, wenn Sie dazu aufgefordert werden, wählen Sie **Debitorenauftrag** aus.
-6. In der Suchenleiste geben Sie **Seattle** ein und wählen anschließend den Shop **Seattle** für die Abholung aus. 
+5. Wählen Sie **Alles versenden** und dann, wenn Sie dazu aufgefordert werden, wählen Sie **Debitorenauftrag** aus.
+6. Wählen Sie auf der Seite Versandart die Option aus **Standard über Nacht** und dann **OK** aus, um das heutige Datum als Versanddatum zu akzeptieren. 
 7. Wählen Sie **OK**, um das aktuelle Datum als Datum der Abholung zu akzeptieren.
 8. Wählen Sie **Mit Karte bezahlen** aus, um die Zahlung auszulösen.
 9. Zahlungsmittel Kartenzahlung für den Betrag, der für die Anzahlung fällig ist. 
@@ -233,5 +236,5 @@ Wenn ein Auftrag, der mehrere Zahlungsmittel und mehrere Positionen beinhaltet, 
 
 - [FAQs zu Zahlungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Zahlungskonnektor von Dynamics 365 für Adyen](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)
-- [BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](https://docs.microsoft.com/en-us/dynamics365/commerce/cpe-bopis)
+- [BOPIS in einer Dynamics 365 Commerce-Auswertungsumgebung konfigurieren](https://docs.microsoft.com/dynamics365/commerce/cpe-bopis)
 

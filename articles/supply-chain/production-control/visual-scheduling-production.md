@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 430a012fbc198b90df0c0bf4084705037c95f7be
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3210156"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887239"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Verwenden eines Gantt-Diagramms für die Feinterminierung
 
@@ -38,7 +38,7 @@ Ein Gantt-Diagramm ist eine visuelle Darstellung von geplanten Aktivitäten inne
 -   Umwandeln von geplanten Produktionsaufträgen.
 -   Einzelvorgang geplanter Projektvorgänge vom Typ Stundenplanungen.
 
-Das Gantt-Diagramm kann in zwei unterschiedlichen Ansichten geöffnet werden, **Auftragsansicht** und **Ressourcenansicht**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). In **Auftragsansicht** werden unter Produktionsaufträgen Aktivitäten gruppiert. Dies kann hilfreich sein (z.B um eine Übersicht über alle Einzelvorgänge zu erhalten, die verwaltet werden sollen, die dem gleichen Aufträge gehören. In **Ressourcenansicht** werden alle Einzelvorgänge unter einzelnen Ressourcen gruppiert. Diese Ansicht ist hilfreich, wenn Sie den Plan in einem Ressourcenniveau, beispielsweise einer Maschine oder einer Gruppe von Computern optimieren. Die angezeigten Gantt-Diagramme in der Abbildung zeigen **Auftragsansicht** und **Ressourcenansicht** mit diesen zentralen Elementen:
+Das Gantt-Diagramm kann in zwei unterschiedlichen Ansichten geöffnet werden, **Auftragsansicht** und **Ressourcenansicht**. In **Auftragsansicht** werden unter Produktionsaufträgen Aktivitäten gruppiert. Dies kann hilfreich sein z.B um eine Übersicht über alle Einzelvorgänge zu erhalten, die verwaltet werden sollen, die dem gleichen Aufträge gehören. In **Ressourcenansicht** werden alle Einzelvorgänge unter einzelnen Ressourcen gruppiert. Diese Ansicht ist hilfreich, wenn Sie den Plan in einem Ressourcenniveau, beispielsweise einer Maschine oder einer Gruppe von Computern optimieren. Die angezeigten Gantt-Diagramme in der Abbildung zeigen **Auftragsansicht** und **Ressourcenansicht** mit diesen zentralen Elementen:
 
 1.  Gantt-Diagramm-Aktivität
 2.  Materialmangel-Symbol

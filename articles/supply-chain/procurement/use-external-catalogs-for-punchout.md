@@ -1,5 +1,5 @@
 ---
-title: Externe Kataloge für PunchOut eProcurement verwenden
+title: Externe Kataloge für PunchOut-E-Procurement verwenden
 description: In diesem Thema wird erläutert, wie Sie externe Kataloge verwenden können, um Anforderungen zu erstellen und zu senden.
 author: mkirknel
 manager: tfehr
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f7a784e6a66c0c2df9043468e9878de161c3be0
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: adeffa101aa5a17543ca531aacde2130a07086e9
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207415"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826803"
 ---
-# <a name="use-external-catalogs-for-punchout-eprocurement"></a>Externe Kataloge für PunchOut eProcurement verwenden
+# <a name="use-external-catalogs-for-punchout-e-procurement"></a>Externe Kataloge für PunchOut-E-Procurement verwenden
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,3 +50,8 @@ Sind mehrere Optionen für Beschaffungskategorien vorhanden, wählen Sie die gew
 Nachdem Positionen zu einer Anforderung hinzugefügt wurden, können Sie mehrere Positionen hinzufügen, ohne externe Kataloge zu verwenden. Alternativ können Sie fortfahren, um externe Kataloge zu verwenden, um Positionen hinzuzufügen.
 
 Wenn die Bestellanforderung bereit ist, verwenden Sie die Aktivität **Workflow** > **Übermitteln**, zur Genehmigung.
+
+### <a name="additional-resources"></a>Zusätzliche Ressourcen
+
+- [Externen Katalog für PunchOut-E-Procurement einrichten](set-up-external-catalog-for-punchout.md)
+- [cXML-Einkaufserweiterungen](purchasing-cxml-enhancements.md)

@@ -3,7 +3,7 @@ title: Übersicht der Startseite
 description: Dieser Artikel enthält eine Übersicht über die Startseite in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/30/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c51c5af38f4ba50bbad124de4ac7f66be4001fa6
-ms.sourcegitcommit: ce397c2759f642c595e30fef58a770b50360b2bd
+ms.openlocfilehash: 3ebc8b4ebd3720815cdaaab708fbfdd8302cbea1
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3527582"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817753"
 ---
 # <a name="home-page-overview"></a>Übersicht der Startseite
 
@@ -34,7 +34,7 @@ Dieser Artikel enthält eine Übersicht über die Startseite in Microsoft Dynami
 
 Die Startseite ist die Standardseite, auf die Käufer beim Besuch einer E-Commerce-Website zugreifen. In der Regel werden auf dieser Seite Produkte und Werbeaktionen unter Verwendung einer Kombination von Marketingmodulen dargestellt. Die Startseite sollte viele Bilder und Texte enthalten, um Käufer anzusprechen.
 
-Die folgende Abbildung zeigt ein Beispiel für eine Startseite, die mit dem Online-Starter-Kit und dem Design „Fabrikam“ erstellt wurde.
+Die folgende Abbildung zeigt ein Beispiel für eine Startseite, die mit der Modulbibliothek und dem Design „Fabrikam“ erstellt wurde.
 
 ![Beispiel einer Startseite](./media/Homepage2.PNG)
 

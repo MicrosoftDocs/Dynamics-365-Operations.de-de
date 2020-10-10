@@ -3,7 +3,7 @@ title: Anpassen der Sitenavigation
 description: In diesem Thema wird beschrieben, wie Sie eine benutzerdefinierte Online-Navigationshierarchie erstellen, um die Produkte für das Durchsuchen auf Ihrer Microsoft Dynamics 365 Commerce Site zu organisieren.
 author: bicyclingfool
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ae7696dcb5cdd99cd46b89ed1de1b03c16146e2d
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269658"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817229"
 ---
 # <a name="customize-site-navigation"></a>Anpassen der Sitenavigation
 
@@ -81,7 +81,7 @@ Um Ihre Navigationshierarchie im Online Schaufenster verfügbar zu machen, folge
 Um Ihre Kategoriehierarchie in Ihrem Online-Schaufenster anzuzeigen, müssen Sie das Navigationsmenümodul am geeigneten Speicherort in einer Vorlage oder Fragment hinzufügen. Das Navigationsmenümodul wird dann in der Navigationshierarchie angezeigt, vorausgesetzt, die Navigationshierarchie wurde im Kanal veröffentlicht, mit dem Ihre Site verbunden ist.
 
 > [!NOTE]
-> Mit dem Navigationsmenümodul, das im Shop-Starter-Kit enthalten ist, können Benutzer zu den Kategorien navigieren, die keine Unterkategorien umfassen. Wenn Ihre Debitoren nicht in der Lage sind, zu der Kategorien zu navigieren, die Unterkategorien umfassen, müssen Sie das Navigationsmenümodul anpassen.
+> Mit dem Navigationsmenümodul, das in der Modulbibliothek enthalten ist, können Benutzer nur zu Kategorien navigieren, die keine Unterkategorien umfassen. Wenn Ihre Debitoren nicht in der Lage sind, zu der Kategorien zu navigieren, die Unterkategorien umfassen, müssen Sie das Navigationsmenümodul anpassen.
 
 ## <a name="add-custom-navigation-options"></a>Fügen Sie benutzerdefinierte Navigationsoptionen hinzu
 

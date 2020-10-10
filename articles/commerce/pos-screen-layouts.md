@@ -3,7 +3,7 @@ title: Visuelle Konfigurationen der POS-Benutzeroberfläche
 description: Dieses Thema enthält Informationen zu Bildschirmlayouts für Dynamics 365 Commerce-Verkaufsstellen (POS)-Umgebungen.
 author: boycezhu
 manager: annbe
-ms.date: 04/14/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -16,15 +16,15 @@ ms.custom: 90573
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycezhu
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a037c8514d7838b3a4797f21b3ef3f6d5736e840
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 75bce16c5e1b0898a0284659f9ce5e4716a93049
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505633"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834208"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>Visuelle Konfigurationen der POS-Benutzeroberfläche
 
@@ -62,6 +62,8 @@ Visuelle Profile werden für die Kassen zugewiesen und werden verwendet, um die 
 > [!NOTE]
 > Das Layout **Rechts** und die Datums-/Uhrzeitanzeige gelten nicht für den Anmeldebildschirm in kompakter Ansicht.
 
+Sie müssen den Verteilungsplanauftrag **1090** (**Register**) ausführen, um die neuesten visuellen Profilkonfigurationen mit der Kanaldatenbank zu synchronisieren.
+
 ## <a name="screen-layouts"></a>Bildschirmlayouts
 
 Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzierung von Benutzeroberflächen-Steuerelementen im POS- Bildschirm **Begrüßung** und **Transaktion**.
@@ -81,6 +83,8 @@ Bildschirmlayoutkonfiguration bestimmt die Aktivitäten, Inhalte und die Platzie
 ### <a name="assignment"></a>Zuweisung
 
 Bildschirmlayouts können Unternehmen, Kassen oder Benutzern zugeweisen werden. Die Benutzer-Zuweisung setzt die Kassen- und Shopzuweisung außer Kraft, und die Kassen-Zuweisung setzt die Shopzuweisung außer Kraft. In einem einfachen Szenario, wo alle Benutzer das gleiche Layout unabhängig von der Kasse oder Rolle verwenden, kann das Bildschirmlayout nur für den Shop festgelegt werden. In Fällen, in denen bestimmte Kassen oder Benutzer spezielle Layouts erfordern, können sie ihnen zugeordnet werden.
+
+Abhängig davon, welcher Ebene die Bildschirmlayouts zugewiesen sind, müssen Sie die Verteilungsplanaufträge **1070** (**Kanalkonfiguration**), **1090** ( **Register**) und/oder **1060** ( **Mitarbeiter**) ausführen, um die neuesten Bildschirmlayoutkonfigurationen mit der Kanaldatenbank zu synchronisieren.
 
 ### <a name="layout-sizes"></a>Layoutgrößen
 

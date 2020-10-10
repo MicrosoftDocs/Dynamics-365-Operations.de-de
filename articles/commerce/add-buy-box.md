@@ -3,7 +3,7 @@ title: Kauffeldmodul
 description: Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6556ee8acf1e24a9f6ceddb622960cb3ac891852
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761296"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817084"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
@@ -75,9 +75,12 @@ Die folgenden Kaufelementmoduleigenschaften können unter **Site-Einstellungen \
 - **Bestand** – Informationen zum Anwenden von Bestandeinstellungen finden Sie unter [Wenden Sie Bestandeinstellungen an](inventory-settings.md).
 - **In den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zum Warenkorb navigieren**, **Navigieren Sie nicht zum Warenkorb**, und **Zeige Benachrichtigungen**. Wenn der Wert auf **Zum Warenkorb navigieren** eigestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Nicht zum Warenkorb navigieren** eingestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Zeige Benachrichtigungen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiterhin auf der Seite mit den Produktdetails surfen. 
 
-    Das folgende Bild zeigt ein Beispiel einer Benachrichtigung Zum Warenkorb hinzugefügt auf der Fabrikam-Site.
+> [!IMPORTANT]
+> Die Site-Einstellungen **In den Einkaufskorb** sind in Dynamics 365 Commerce 10.0.11 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
 
-    ![Beispiel eines Benachrichtigungs-Moduls](./media/ecommerce-addtocart-notifications.PNG)
+Das folgende Bild zeigt ein Beispiel einer Benachrichtigung Zum Warenkorb hinzugefügt auf der Fabrikam-Site.
+
+![Beispiel eines Benachrichtigungs-Moduls](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-Interaktion
 
@@ -111,7 +114,7 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über das Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Shopauswahlmodul](store-selector.md)
 
@@ -129,6 +132,8 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 
 [Fußzeilenmodul](author-footer-module.md)
 
-[Social-Share-Modul](social-share-module.md)
+[Social Share-Modul](social-share-module.md)
 
 [Lagerverfügbarkeit für Retail Channels berechnen](calculated-inventory-retail-channels.md)
+
+[SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)

@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c46c4c060d61503779726c68d32449c87b441f1
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7f170fc501e995bf9497d86501f4e086e486d0fb
+ms.sourcegitcommit: 8fe59d216154dbed1208274f44707465b668a8e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207901"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3830748"
 ---
 # <a name="purchasing-policies-overview"></a>Überblick über die Einkaufsrichtlinien
 
@@ -102,9 +102,9 @@ Mit der Bestellanforderungsregel wird anhand von Kriterien definiert, wann für 
 
 ### <a name="purchase-requisition-control-rule"></a>Bestellanforderungs-Steuerungsregel
 
-Die Bestellanforderungs-Steuerungsregel ist eine optionale Regel. Wenn Sie Regeln dieses Typs erstellen, können Sie Optionen auf verschiedenen Registerkarten festlegen:
+Die Bestellanforderungssteuerungsregel für Bestellanforderungen vom Typ **Verbrauch** ist eine optionale Regel. Wenn Sie Regeln dieses Typs erstellen, können Sie Optionen auf verschiedenen Registerkarten festlegen:
 
--   Auf der **Workflowübermittlung** Registerkarte können Sie die Felder konfigurieren, die auf die Bestellanforderungsposition eingegeben werden müssen, damit die Anforderung zur Genehmigung übermittelt werden kann, wenn der Materialanforderungszweck **Verbrauch** ist.
+-   Auf der **Workflowübermittlung**-Registerkarte können Sie die Felder konfigurieren, die auf die Bestellanforderungsposition eingegeben werden müssen, damit die Anforderung zur Genehmigung übermittelt werden kann.
 -   Auf der **Bestellmengen** Registerkarte können Sie die Felder konfigurieren, die in der Bestellanforderung unter bestimmten Bedingungen erforderlich sind. Sie können Bestellmengen auch erzwingen.
 -   Auf der **Datumsangaben** Registerkarte können Sie konfigurieren, ob der Abschlussstichtag der gleiche wie das angeforderte Datum ist
 -   Auf der **Adresse** Registerkarte können Sie definieren, ob der Benutzer neue Adressen im System erstellen darf, um sie auf die Bestellanforderung anzuwenden.

@@ -3,7 +3,7 @@ title: Vorteilsverwaltung – Übersicht
 description: Übersicht über die Vorschaufunktion für die Vorteilsverwaltung in Dynamics 365 Human Resources. Bieten Sie Ihren Mitarbeitern erweiterte Vorteilsoptionen mit einer benutzerfreundlichen Online-Erfahrung.
 author: andreabichsel
 manager: AnnBe
-ms.date: 07/16/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1043fb18c33e5ec0cde13008b168fd317c7c7be6
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599379"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819764"
 ---
 # <a name="benefits-management-overview"></a>Vorteilsverwaltung – Übersicht
 
@@ -41,15 +41,9 @@ Um wettbewerbsfähig zu bleiben, müssen Sie zahlreiche Vorteile bieten, um die 
 
 Wenn Sie auf die Demodaten zugreifen möchten, müssen Sie Ihre Sandkastenumgebung erneut bereitstellen.
 
-## <a name="benefits-management-known-issues"></a>Bekannte Probleme bei der Vorteilsverwaltung
-
-### <a name="flex-credit-programs"></a>Flexible Gutschriftprogramme
-
-Der für ein flexibles Kreditprogramm definierte Gesamtkreditwert wird im nicht im Formular **Vorsorgepläne für Arbeitnehmer** angezeigt. Auch wenn Sie ein flexibles Kreditprogramm so einstellen, dass es eine Prorationsregel von **Keiner** hat, erhalten Sie einen Fehler im Formular **Vorsorgeplan für Arbeitnehmer** bei der Auswahl und Bestätigung von Plänen.
-
 ## <a name="enable-benefits-management"></a>Vorteilsverwaltung aktivieren
 
-Dieser Artikel beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Er zeigt auch, welche vorhandenen Funktionen in Human Resources die Vorteilsverwaltung ersetzt oder deaktiviert, sobald Sie die Vorteilsverwaltung aktivieren.
+Dieses Thema beschreibt, wie Sie die Vorschaufunktionen in Human Resources aktivieren. Er zeigt auch, welche vorhandenen Funktionen in Human Resources die Vorteilsverwaltung ersetzt oder deaktiviert, sobald Sie die Vorteilsverwaltung aktivieren.
 
 > [!IMPORTANT]
 > Nachdem Sie die Leistungsverwaltung in einer **Produktions** Umgebung aktiviert haben, können Sie diese nicht mehr deaktivieren. Wir empfehlen, das Leistungsmanagement in einer **Sandkasten** Umgebung zu aktivieren und zu testen, bevor Sie es in einer aktivieren **Produktion** Umgebung aktivieren. Es gibt erhebliche Unterschiede zwischen der alten Leistungs-Funktionalität und der neuen Leistungsverwaltungs-Funktionalität, die zusätzliche Einstellungen erfordern und vor der Inbetriebnahme getestet werden sollten.

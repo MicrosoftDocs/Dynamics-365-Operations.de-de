@@ -18,22 +18,24 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a022f8297066793080d254baa01410884a3fafd9
-ms.sourcegitcommit: 55b729361ea852e38531c51972c6730e3d9c2b45
+ms.openlocfilehash: 33322b9b553076125695f257b201463e9d8275c6
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "3776307"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828913"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-App in Teams
 
 [!include [banner](includes/preview-feature.md)]
 
-Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Mitarbeiter schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Mitarbeiter können mit einem Bot interagieren, um Informationen anzufordern. Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen.
+Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Mitarbeiter schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Mitarbeiter können mit einem Bot interagieren, um Informationen anzufordern. Das **Arbeitsfreie Zeit**-Registerkarte bietet detailliertere Informationen. Darüber hinaus können Sie Personen Informationen über bevorstehende arbeitsfreie Zeit in Teams und Chats außerhalb der Human Resources-App senden.
 
 ![Bot für Abwesenheiten der Human Resources-App in Teams](./media/hr-admin-teams-leave-app-bot.png)
 
 ![Human Resources-App für Abwesenheiten in Teams – Registerkarte „Arbeitsfreie Zeit“](./media/hr-teams-leave-app-timeoff-tab.png)
+
+![Urlaubsantragskarte in Human Resources](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installieren und einrichten
 
@@ -85,7 +87,6 @@ Nachdem Sie Benachrichtigungen für die Human Resources Teams-App aktiviert habe
 | Abgang | Status |
 | --- | --- |
 | Das horizontale Scrollen funktioniert nicht bei Android-Smartphones | Horizontales Scrollen ist auf iOS‑ oder Desktop-Geräten kein Problem. Wir arbeiten an einer Lösung für Android. |
-| Fehler: Es gibt ein Problem beim Finden einer Umgebung, zu der eine Verbindung hergestellt werden kann. | Möglicherweise wird dieser Fehler auch dann angezeigt, wenn Sie überprüft haben, dass der Benutzer auf eine oder mehrere Personalumgebungen zugreifen kann. Zudem werden möglicherweise nicht alle von Ihnen erwarteten Umgebungen angezeigt. Löschen Sie den Benutzer und importieren Sie ihn erneut, um das Problem zu beheben. |
 | Der Saldo ist falsch, wenn arbeitsfreie Zeit für ein zukünftiges Datum eingereicht wird. | Es ist noch keine Planungsfunktion verfügbar. Der Saldo wird für das aktuelle Datum angezeigt. |
 | Eine **Wird überprüft**-Anforderung kann nicht abgebrochen werden. | Diese Funktion wird derzeit nicht unterstützt und wird in einer zukünftigen Version hinzugefügt. |
 | Die Saldoinformationen werden ab heute berechnet. | Das System zeigt derzeit keine Salden ab dem Abgrenzungszeitraum an, auch wenn dies in den Urlaub- und Abwesenheitsparameter konfiguriert ist. |
@@ -102,9 +103,15 @@ Der Inhalt der Abfragen und Nachrichten des Benutzers wird maximal 30 Tage im L
 
 Wechseln Sie zum [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/), um Administratoreinstellungen für Apps in Microsoft Teams zu verwalten.
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid und Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid und Azure Cosmos DB
 
-Bei Verwendung der Benachrichtigungsfunktion für die Dynamics 365 Human Resources-App in Teams fließen bestimmte Kundendaten außerhalb der geografischen Region, in der der Human Resources-Dienst Ihres Mandanten bereitgestellt wird. Dynamics 365 Human Resources überträgt die Urlaubsantrags- und Workflow-Aufgabendetails des Mitarbeiters an Microsoft Azure Event Grid und Microsoft Teams. Diese Daten können bis zu 24 Stunden gespeichert und in den USA verarbeitet werden, werden während des Transports und als Daten in Ruhe verschlüsselt und werden von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet.
+Bei Verwendung der Dynamics 365 Human Resources-App in Microsoft Teams fließen möglicherweise bestimmte Kundendaten außerhalb der geografischen Region, in der der Human Resources-Dienst Ihres Mandanten bereitgestellt wird.
+
+Dynamics 365 Human Resources überträgt die Urlaubsantrags- und Workflow-Aufgabendetails des Mitarbeiters an Microsoft Azure Event Grid und Microsoft Teams. Diese Daten können bis zu 24 Stunden in Microsoft Azure Event Grid gespeichert werden und werden in den USA verarbeitet, werden während des Transports und als Daten in Ruhe verschlüsselt und werden von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet. Um zu verstehen, wo Ihre Daten in Teams gespeichert sind, lesen Sie bitte: [Speicherort von Daten in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Während der Konversation mit dem Chat-Bot in der Human Resources-App wird der Konversationsinhalt möglicherweise in Azure Cosmos DB gespeichert und an Microsoft Teams übertragen. Diese Daten können in Azure Cosmos DB bis zu 24 Stunden lang gespeichert und außerhalb der geografischen Region verarbeitet werden, in der der Human Resources-Service Ihres Mandanten bereitgestellt wird, werden während des Transports und in Ruhe verschlüsselt und von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet. Um zu verstehen, wo Ihre Daten in Teams gespeichert sind, lesen Sie bitte: [Speicherort von Daten in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Um den Zugriff auf die Human Resources-App in Microsoft Teams für Ihre Organisation oder Benutzer in Ihrer Organisation zu beschränken, finden Sie unter Informationen unter [Verwalten von App-Berechtigungsrichtlinien in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Siehe auch 
 

@@ -1,9 +1,9 @@
 ---
-title: Starterkit-Überblick
-description: Dieses Thema bietet einen Überblick über das Microsoft Dynamics 365 Commerce Starter Kit.
+title: Übersicht über die Modulbibliothek
+description: Dieses Thema bietet einen Überblick über die Microsoft Dynamics 365 Commerce-Modulbibliothek.
 author: anupamar-ms
 manager: annbe
-ms.date: 01/23/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,29 +18,28 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1960e1354744fe1034783177ba331f5877d0bee7
-ms.sourcegitcommit: 829329220475ed8cff5a5db92a59dd90c22b04fa
+ms.openlocfilehash: dfc52dd8e14bb2e9f2f9c026ee0e058aee4cedcb
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3025901"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817825"
 ---
-# <a name="starter-kit-overview"></a>Starterkit-Überblick
-
+# <a name="module-library-overview"></a>Übersicht über die Modulbibliothek
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema bietet einen Überblick über das Microsoft Dynamics 365 Commerce Starter Kit.
+Dieses Thema bietet einen Überblick über die Microsoft Dynamics 365 Commerce-Modulbibliothek.
 
 ## <a name="overview"></a>Übersicht
 
-Das Dynamics 365 Commerce Starter Kit ist eine Sammlung von Modulen, mit denen eine E-Commerce-Website erstellt werden kann. Module besitzen sowohl Aspekte der Benutzeroberfläche (UI) als auch Aspekte des funktionalen Verhaltens.
+Die Dynamics 365 Commerce-Modulbibliothek ist eine Sammlung von Modulen, mit denen eine E-Commerce-Website erstellt werden kann. Module besitzen sowohl Aspekte der Benutzeroberfläche (UI) als auch Aspekte des funktionalen Verhaltens.
 
-Die Module im Starter-Kit können mit Designs versehen werden, um ihr Erscheinungsbild zu ändern. Die Designs verwenden Cascading Style Sheets (CSS). Ein Design für eine fiktive E-Commerce-Site mit dem Namen „Fabrikam“ ist Teil des Starter-Kits und kann als Referenz verwendet werden.
+Die Module in der Modulbibliothek können mit Designs versehen werden, um ihr Erscheinungsbild zu ändern. Die Designs verwenden Cascading Style Sheets (CSS). Ein Design für eine fiktive E-Commerce-Site mit dem Namen „Fabrikam“ ist Teil der Modulbibliothek und kann als Referenz verwendet werden.
 
-## <a name="starter-kit-modules"></a>Starter-Kit-Module
+## <a name="module-library-modules"></a>Module der Modulbibliothek
 
-Die folgenden Modultypen sind im Starter-Kit enthalten:
+Die folgenden Modultypen sind in der Modulbibliothek enthalten:
 
 - **Containermodul** – Ein Containermodul ist ein einfaches Modul, das als Host für andere Module fungiert. Es steuert das Layout der darin enthaltenen Module.
 - **Marketingmodule** – Zu den Marketingmodulen gehören Block-, Textblock-, Video-Player- und Karussell-Module. Alle diese Module können verwendet werden, um Inhalte zu präsentieren. Sie können auf jede Seite gestellt werden und werden von Daten aus dem Content Management System (CMS) gesteuert.

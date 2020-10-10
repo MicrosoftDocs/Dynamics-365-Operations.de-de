@@ -3,7 +3,7 @@ title: Shopauswahlmodul
 description: Dieses Thema enthält das Shopauswahlmodul und es wird beschrieben, wie es Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1531b27dad4188dca96cf5728a9858f94001977c
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 4438e46d4653a0cd2060092695f08613cd696f4e
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646134"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818249"
 ---
 # <a name="store-selector-module"></a>Shopauswahlmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält das Shopauswahlmodul und es wird beschrieben, wie es Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -65,7 +64,7 @@ Damit dieses Szenario funktioniert, sollten Produkte so konfiguriert werden, das
 
 Das folgende Bild zeigt ein Beispiel eines Speicherauswahlmoduls, das auf einem PDP verwendet wird.
 
-![Beispiel eines Shopauswahlmoduls](./media/BOPIS.PNG)
+![Beispiel eines in einem PDP verwendeten Shopauswahlmoduls](./media/BOPIS.PNG)
 
 ## <a name="find-stores-mode"></a>Modus „Geschäfte suchen“
 
@@ -73,7 +72,7 @@ Das Filialauswahlmodul unterstützt auch den Modus **Geschäfte suchen**. In die
 
 Die folgende Abbildung zeigt ein Beispiel eines Filialauswahlmoduls, das zusammen mit einem Kartenmodul auf einer Geschäftsstandortseite verwendet wird.
 
-![Beispiel eines Shopauswahlmoduls](./media/ecommerce-Storelocator.PNG)
+![Beispiel eines Shopauswahlmoduls und eines Kartenmoduls auf einer Seite mit Shopstandorten](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Eine Karte rendern
 
@@ -127,7 +126,7 @@ Führen Sie die folgenden Schritte aus, um das Filialauswahlmodul so zu konfigur
  
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über das Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Kauffeldmodul](add-buy-box.md)
 
