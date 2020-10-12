@@ -3,7 +3,7 @@ title: ER-Konfigurationen in RCS erstellen und sie in das globale Repository hoc
 description: In diesem Thema wird erläutert, wie Sie eine ER-Konfiguration (Electronic Reporting) in Microsoft Regulatory Configuration Services (RCS) erstellen und in das globale Repository hochladen.
 author: JaneA07
 manager: AnnBe
-ms.date: 05/05/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 0e194a8b777f984412d81e315f92ab4bb8a3b0c9
-ms.sourcegitcommit: 204cec8ca2a6c4474d21dbcd408e369131a47856
+ms.openlocfilehash: 5b2b8f35b9931f8fd1824c20e9045da68af33ad5
+ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "3371247"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3834232"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-Konfigurationen in gesetzlichen Konfigurationsdiensten (Regulatory Configuration Services, RCS) erstellen und sie in das globale Repository hochladen
 
@@ -54,7 +54,7 @@ Wenn für Ihr Unternehmen bereits eine RCS-Umgebung bereitgestellt wurde, verwen
 5. Geben Sie einen Namen und eine Beschreibung ein und wählen Sie dann **Konfiguration erstellen** aus, um eine neue abgeleitete Version zu erstellen.
 6. Wählen Sie die neu abgeleitete Konfiguration aus, fügen Sie eine Beschreibung der Version hinzu, und wählen Sie dann **OK** aus. Der Status der Konfiguration in wird in **Abgeschlossen** geändert.
 
-![Neue Konfigurationsversion in RCS](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_CompleteConfig.JPG)
+![Neue Konfigurationsversion in RCS](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Wenn der Konfigurationsstatus geändert wird, wird möglicherweise eine Validierungsfehlermeldung angezeigt, die sich auf die verbundenen Anwendungen bezieht. Um die Validierung zu deaktivieren, klicken Sie im Aktionsbereich auf der Registerkarte **Konfigurationen** auf **Benutzerparameter**, und setzen Sie dann **Validierung bei der Statusänderung und Neubasis der Konfiguration überspringen** auf **Ja**. 
@@ -66,7 +66,7 @@ Um eine neue oder abgeleitete Konfiguration für Ihre Organisation freizugeben, 
 1. Wählen Sie die fertige Version der Konfiguration aus und wählen Sie dann **In das Repository hochladen**.
 2. Wählen Sie die Option **Global (Microsoft)** aus und dann **Hochladen**.
 
-    ![In Repository-Optionen hochladen](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![In Repository-Optionen hochladen](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Wählen Sie im Benachrichtigungsfeld **Ja** aus. 
 4. Aktualisieren Sie die Beschreibung der Version nach Bedarf und wählen Sie dann **OK** aus. 
@@ -74,6 +74,27 @@ Um eine neue oder abgeleitete Konfiguration für Ihre Organisation freizugeben, 
 Der Status der Konfiguration wird auf **Teilen** aktualisiert, und die Konfiguration wird in das globale Repository hochgeladen. Hier können Sie damit auf folgende Arten arbeiten:
 
 - Sie in die Dynamics 365-Instanz importieren Weitere Informationen finden Sie unter [Elektronische Berichterstellungskonfigurationen (ER) aus RCS importieren](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
-- Teilen Sie die Version mit Dritten oder einer externen Organisation [RCS Share Electronic Reporting (ER) -Konfigurationen mit externen Organisationen teilen](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/rcs-global-share-configuration.md)
+- Teilen Sie die Version mit Dritten oder einer externen Organisation [RCS Share Electronic Reporting (ER) -Konfigurationen mit externen Organisationen teilen](rcs-global-repo-share-configuration.md)
 
-![Abgeleitete Intrastat Contoso-Konfigurationsversion im globalen Repository](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Abgeleitete Intrastat Contoso-Konfigurationsversion im globalen Repository](media/RCS_Config_upload_GlobalRepo.JPG)
+
+## <a name="delete-a-configuration-from-the-global-repository"></a>Eine Konfiguration aus dem globalen Repository löschen
+Führen Sie die folgenden Schritte aus, um eine von Ihrer Organisation erstellte Konfiguration zu löschen.
+
+1. Bestätigen Sie im Arbeitsbereich **Elektronische Berichterstattung** dass Ihr Konfigurationsanbieter **Aktiv** ist. Weitere Informationen finden Sie unter [Konfigurationsanbieter erstellen und als aktiv markieren](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Wählen Sie auf Ihrem aktiven Konfigurationsanbieter **Repository**.
+3. Wählen Sie den Repository-Typ **Global** und **Öffnen**.
+4. Suchen Sie im Inforegister **Filter** nach der Konfiguration, die Sie löschen möchten, indem Sie die **Filter**-Funktionalität verwenden.
+5. Im Inforegister **Version** wählen Sie die Version der Konfiguration aus, die Sie löschen möchten, und wählen dann **Löschen**:
+
+    ![Konfiguration aus dem globalen Repository löschen](media/RCS_Delete_from_GlobalRepo.JPG)
+
+6. Wählen Sie im Benachrichtigungsfeld **Ja** aus.
+
+    ![Bestätigungsmeldung zum Löschen der Konfigurationsversion](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+ 
+Die Konfigurationsversion wird gelöscht und eine Bestätigungsmeldung angezeigt. 
+
+> [!NOTE]
+> Konfigurationen können nur von dem Konfigurationsanbieter gelöscht werden, der sie erstellt hat. Wenn die Konfiguration für eine andere Organisation freigegeben wurde, muss die Freigabe der Konfiguration aufgehoben werden, bevor Sie sie löschen können.
+ 

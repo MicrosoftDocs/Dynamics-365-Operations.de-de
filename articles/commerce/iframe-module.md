@@ -3,7 +3,7 @@ title: IFrame-Modul
 description: Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,17 +18,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0616a772a416a7c9d9756a840c93b8601c08c3d0
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 58446289c9a53af30d4d6d331a1a609ae0d2a0ad
+ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646941"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3818197"
 ---
 # <a name="iframe-module"></a>IFrame-Modul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Microsoft Dynamics 365 Commerce hinzugefügt wird.
 
@@ -37,6 +36,9 @@ Dieses Thema behandelt das iFrame-Modul und beschreibt, wie es Webseiten in Micr
 Ein iFrame-Modul stellt einen iFrame (Inlineframe) bereit, der externe Inhalte auf einer Website hostet. Zum Beispiel kann es verwendet werden, um auf einer Webseite ein YouTube-Video oder einen PDF-Datei-Viewer zu hosten. 
 
 Ein iFrame-Modul benötigt eine Ziel-URL. Anschließend wird der Inhalt der Zielseite in einem HTML-**iFrame**-Element gehostet. Externe URLs müssen auf der Zulassungsliste (der sogenannten „Whitelist“) gemäß der Inhaltssicherheitsrichtlinie (CPS) der Website stehen. Für iFrame-Inhalte sollten URLs mithilfe der **frame-ancester**-Richtlinie zugelassen werden. Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie (CSP) verwalten](manage-csp.md).
+
+> [!NOTE]
+> Das iFrame-Modul ist in der Dynamics 365 Commerce-Version 10.0.13 verfügbar.
 
 Das folgende Bild zeigt Beispiele für iFrame-Module, die externe Videos auf Webseiten zeigen.
 
@@ -72,6 +74,6 @@ Gehen Sie wie folgt vor, um einer Seite ein iFrame-Modul hinzuzufügen und ein e
  
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über das Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) verwalten](manage-csp.md)

@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand
+ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: ShylaThompson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66b6b365958820a76f733df5eb2aabf6c3c4ebac
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 8b3f6f601d2d48ede2c4db198ac5438aa32e056d
+ms.sourcegitcommit: 8cbaeb6443ce47a4c4bc02b5e1a1212eb0056b38
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383497"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3829776"
 ---
 # <a name="check-the-availability-of-stock"></a>Überprüfung der Bestandsverfügbarkeit
 
@@ -37,7 +37,7 @@ Diese Prozedur zeigt Ihnen, wie Sie verfügbaren und physisch verfügbaren Lager
 4. Klicken Sie auf **OK**.
 5. Klicken Sie im **Aktivitätsbereich** auf **Dimensionen**. Die Registerkarte **Dimensionen** ermöglicht es Ihnen, auszuwählen, wie viel Detail Sie über Ihren verfügbaren Lagerbestand sehen möchten. Wenn Sie die Daten benötigen, die der Reservierung zugeordnet sind, müssen Sie alle Lagerbestandsdimensionen für die Artikel anzeigen, die erweiterte Lagerortprozesse verwenden.
 6. Klicken Sie auf **OK**.
-7. Klicken Sie im **Aktivitätsbereich** auf **Zugehörige Informationen**. Wenn Sie diese Option nicht sehen, müssen Sie möglicherweise auf die Schaltfläche „Auslassungspunkte“ (...) klicken, um zusätzliche Aktionsbereichsoptionen anzuzeigen.
+7. Klicken Sie im **Aktivitätsbereich** auf **Zugehörige Informationen**. Wenn Sie diese Option nicht sehen, müssen Sie möglicherweise auf die Schaltfläche „Auslassungspunkte“ (...) klicken, um zusätzliche Aktivitätsbereichsoptionen anzuzeigen.
 8. Klicken Sie auf **Lieferübersicht**. Die Registerkarte **Lieferübersicht** stellt Lieferinformationen für einen bestimmten Artikel bereit, beispielsweise die verfügbare Menge, die Durchlaufzeit und die Kreditordaten.  
 9. Erweitern Sie den Abschnitt **Verfügbar**.
 10. Erweitern Sie den Abschnitt **Kreditoren**.

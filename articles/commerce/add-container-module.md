@@ -3,7 +3,7 @@ title: Containermodul
 description: Dieses Thema enthält Containermodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c7d607047aab92144932b4b59db050a588d6483d
-ms.sourcegitcommit: 2683aacb426bfb3b541637edf1f8ec2d6cb5a745
+ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "3417345"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817401"
 ---
 # <a name="container-module"></a>Containermodul
 
@@ -123,9 +123,9 @@ Um ein Containerspielmodul einer neuen Seite hinzuzufügen und die erforderliche
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
-[Akkordeon Modul](add-accordion.md)
+[Akkordeonmodul](add-accordion.md)
 
 [Registerkartenmodul](add-tab.md)
 

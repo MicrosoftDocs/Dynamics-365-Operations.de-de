@@ -1,6 +1,6 @@
 ---
 title: Druckbare Freitextrechnungsformulare generieren
-description: In diesem Thema wird erläutert, wie das Framework zur elektronischen Berichterstellung (EB) dazu verwendet werden kann, um druckbare Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente zu generieren.
+description: In diesem Thema wird erläutert, wie das Framework für die elektronische Berichterstellung (EB) dazu verwendet werden kann, um druckbare Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente zu generieren.
 author: NickSelin
 manager: AnnBe
 ms.date: 07/24/2018
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 0bb817de583c231aa55fa81b9e28d788505e0a1f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 4412fb08c8548c8ebe8455db0547618578e5e5b4
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2771282"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893362"
 ---
 # <a name="generate-printable-fti-forms"></a>Generieren von druckbaren FTI-Formularen
 
 [!include[banner](../includes/banner.md)]
 
-Das Framework zur elektronischen Berichterstellung (EB) ermöglicht Ihnen das Generieren druckbarer Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente. Dieses Thema enthält Informationen darüber, wie Sie Ihre eigenen Konfigurationen sowie Details verfügbarer Konfigurationsvorlagen erstellen können.
+Das Framework für die elektronische Berichterstellung (EB) ermöglicht Ihnen das Generieren druckbarer Freitextrechnungs-(FTR)-Formulare als Microsoft Office-Dokumente. Dieses Thema enthält Informationen darüber, wie Sie Ihre eigenen Konfigurationen sowie Details verfügbarer Konfigurationsvorlagen erstellen können.
 
 ## <a name="overview"></a>Übersicht
 
@@ -111,7 +111,7 @@ Sie können auch FTR-Formulare generieren, wenn Sie eine FTR buchen, indem Sie *
 Das EB-Framework unterstützt aktuell die folgenden Ziele für generierte Dokumente:
 
 - **Heruntergeladene Datei** – Generierte Formulare werden als Downloads angeboten, die Sie speichern können mithilfe des Browser.
-- **Bildschirm** – Microsoft Office 365 Excel wird verwendet, um generierte FTR-Formulare im Excel-Format in der Vorschau anzuzeigen.
+- **Bildschirm** – Microsoft 365 Excel wird verwendet, um generierte FTR-Formulare im Excel-Format in der Vorschau anzuzeigen.
 - **SharePoint-Ordner** – Generierte Formulare werden basierend auf den Einstellungen des Dokumentverwaltungsframeworks gespeichert.
 - **Anwendungsarchiv** – Generierte Formulare werden als Anhänge von Ausführungsprotokolldatensätzen in Microsoft Azure Storage gespeichert.
 - **E-Mail** – Generierte Formulare werden als E-Mail-Anhänge übermittelt.

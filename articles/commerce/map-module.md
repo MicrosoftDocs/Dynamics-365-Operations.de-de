@@ -3,7 +3,7 @@ title: Kartenmodul
 description: In diesem Thema werden Kartenmodule behandelt und deren Konfiguration in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ca531e6cbf0a1044b0a13e5cdf42c7b4f0498fe5
-ms.sourcegitcommit: 629988f1a704d62648d98649056931b8c33b9e08
+ms.openlocfilehash: d2cbc67a186a76647a4f7ddc7942b15d3e469ece
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3811183"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817205"
 ---
 # <a name="map-module"></a>Kartenmodul
 
@@ -38,7 +38,8 @@ Ein Kartenmodul zeigt die Standorte von Geschäften auf einer interaktiven Karte
 
 Ein Kartenmodul ermittelt in Verbindung mit dem Shopauswahlmodul die geografischen Standorte von Geschäften, die auf einer Karte gerendert werden müssen. Die Shopauswahl- und Kartenmodule interagieren, wenn ein Benutzer ein Geschäft in einem dieser Module auf einer Seite auswählt. Kartenmodule können über die Interaktion mit Shopauswahlmodulen hinaus für andere Szenarien erweitert werden. Eine Modulanpassung ist jedoch erforderlich.
 
-Das Kartenmodul wurde in der Commerce-Version 10.0.13 eingeführt.
+> [!NOTE]
+> Das Kartenmodul ist in der Dynamics 365 Commerce-Version 10.0.13 verfügbar.
 
 Das folgende Bild zeigt ein Beispiel eines Kartenmoduls, das auf einer Ladenstandortseite verwendet wird.
 
@@ -70,7 +71,7 @@ Ausführliche Informationen zum Konfigurieren eines Kartenmoduls auf einer Seite
  
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über das Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
 [Kauffeldmodul](add-buy-box.md)
 
@@ -78,6 +79,6 @@ Ausführliche Informationen zum Konfigurieren eines Kartenmoduls auf einer Seite
 
 [Shopauswahlmodul](store-selector.md)
 
-[Bing Maps für Ihr Unternehmen verwalten](./dev-itpro/manage-bing-maps.md)
+[Bing Karten für Ihr Unternehmen verwalten](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8 Web Control](https://docs.microsoft.com/bingmaps/v8-web-control/)

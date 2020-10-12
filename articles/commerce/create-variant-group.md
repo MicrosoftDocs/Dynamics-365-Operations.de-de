@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
+ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
@@ -17,12 +18,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b9acd41c000b22e6c74b0d636a7f58917e4b5ac5
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 5d9279e1076796bb455429e5ff004c89ec5829e7
+ms.sourcegitcommit: 3cc289399e8879b499e31a9559e1031d6ca8570a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3001874"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3885944"
 ---
 # <a name="create-a-variant-group"></a>Eine Variantengruppe erstellen
 
@@ -45,7 +46,7 @@ Gehen Sie folgendermaßen vor, um eine Größengruppe zu erstellen.
 1. Wählen Sie im Aktivitätsbereich **Neu** aus.
 1. Geben Sie im Feld **Größengruppe** einen Namen für die Größengruppe ein.
 1. Geben Sie im Feld **Beschreibung** eine entsprechende Beschreibung ein.
-1. Wählen Sie im Aktionsbereich **Speichern** aus.
+1. Wählen Sie im Aktivitätsbereich **Speichern** aus.
 
 ## <a name="add-attributes-to-the-size-group"></a>Der Größengruppe Attribute hinzufügen
 
@@ -59,7 +60,7 @@ Um Attribute zu einer Größengruppe hinzuzufügen, führen Sie die folgenden Sc
 1. Geben Sie im Feld **Auffüllungsgewicht** eine Zahl ein, die das Auffüllungsgewicht darstellt.
 1. Geben Sie in das Feld **Nummer in Strichcode** eine Zahl ein, die den Strichcode darstellt.
 1. Geben Sie im Feld **Anzeigereihenfolge** eine Nummer ein, die die Anzeigereihenfolge darstellt.
-1. Wenn Sie mit dem Hinzufügen von Größen fertig sind, wählen Sie **Speichern** im Aktionsbereich.
+1. Wenn Sie mit dem Hinzufügen von Größen fertig sind, wählen Sie **Speichern** im Aktivitätsbereich.
 
 Die folgende Abbildung zeigt ein Beispiel für die Größengruppe für „lässige Shirtgrößen”
 

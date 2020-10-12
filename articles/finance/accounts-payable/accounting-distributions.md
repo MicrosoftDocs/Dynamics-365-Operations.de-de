@@ -1,9 +1,9 @@
 ---
 title: Buchhaltungsverteilungen
-description: Dieser Artikel legt Informationen zu Buchhaltungsverteilungen fest und beschreibt die Optionen, die für die Verarbeitung verfügbar sind. Buchhaltungsverteilungen werden verwendet, um Geldbeträgen für ein Quelldokument auf bestimmte Sachkonten zuzuweisen.
+description: Dieses Thema legt Informationen zu Buchhaltungsverteilungen fest und beschreibt die Optionen, die zur Verarbeitung verfügbar sind.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e9f185ac95371bb841e55184650b8089040676c
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: c9a627ba33065086d21c758a1b8d8f2fa2f6ef02
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772259"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819838"
 ---
 # <a name="accounting-distributions"></a>Buchhaltungsverteilungen
 
 [!include [banner](../includes/banner.md)]
 
-Dieser Artikel legt Informationen zu Buchhaltungsverteilungen fest und beschreibt die Optionen, die für die Verarbeitung verfügbar sind. Buchhaltungsverteilungen werden verwendet, um Geldbeträgen für ein Quelldokument auf bestimmte Sachkonten zuzuweisen. 
+Dieses Thema legt Informationen zu Buchhaltungsverteilungen fest und beschreibt die Optionen, die zur Verarbeitung verfügbar sind. Buchhaltungsverteilungen werden verwendet, um Geldbeträgen für ein Quelldokument auf bestimmte Sachkonten zuzuweisen. 
 
 Buchhaltungsverteilungen stellen eine programmweite Funktion dar, die in jedem Quelldokument Anwendung findet und erweitert wird. Ein Quelldokument kann beispielsweise eine Bestellung, eine Kreditorenrechnung, eine Spesenabrechnung oder eine Freitextrechnung sein. Standardmäßig wird eine Standardbuchhaltungsverteilung für jede Position und jeden Geldbetrag im Quelldokument generiert und bedingt für eine Modifizierung aktiviert. 
 
-> [!Note] 
+> [!NOTE] 
 > Einige Dokumente unterstützen außerdem Geldbeträge in Dokumentkopfzeilen, z B. Zuschläge für Aufträge und Rechnungen. 
 
 Die allgemeinen Buchhaltungsverteilungsfunktionen stellen die folgenden Optionen für die Verarbeitung von Buchhaltungsverteilungen bereit:
@@ -47,14 +47,13 @@ Die allgemeinen Buchhaltungsverteilungsfunktionen stellen die folgenden Optionen
     -   Die Schaltfläche **Zurücksetzen** steht möglicherweise für übergeordnete Verteilungen zur Verfügung, wenn mehrere Verteilungen vorhanden sind. Mit **Zurücksetzen** wird jede manuelle Änderung an der Verteilung rückgängig gemacht, indem alle vorhandenen Verteilungen gelöscht und die Standardverteilungen erneut generiert werden.
     -   Jede untergeordnete Verteilung, z. B. Rabatt, Belastung und Mehrwertsteuer, folgt jeweils der übergeordneten Verteilung. Sie können die über- und untergeordnete Beziehung unter **Referenz** &gt; **Informationen zur übergeordneten Position** anzeigen.
     -   Das Hauptkonto und die Finanzdimension können möglicherweise auch für untergeordnete Elemente bearbeitet werden.
-    -   Die Finanzdimensionen für die Buchhaltungsverteilungen folgen einem Standardmuster, das ein Dokument erweitern kann. Weitere Informationen finden Sie in den zugehörigen Artikeln.
+    -   Die Finanzdimensionen für die Buchhaltungsverteilungen folgen einem Standardmuster, das ein Dokument erweitern kann.
     -   Möglicherweise werden in den entsprechenden Szenarien Abweichungsverteilungen generiert, zum Beispiel beim Abgleich zwischen einer Kreditorenrechnung und einer Bestellung. Sie können die entsprechenden Beziehungen zwischen Buchhaltungsverteilungen unter **Referenz** &gt; **Dokumentinformationen** anzeigen.
     -   Die Schaltfläche **Korrigieren** steht für Dokumente zur Verfügung, die Korrekturen unterstützen. **Richtig** erstellt neue Verteilungen. Zuerst werden Verteilungen erstellt, die die ursprünglichen Verteilungen stornieren. Diese Verteilungen können nicht geändert werden. Als Nächstes werden neue korrekte Buchhaltungsverteilungen erstellt. Diese Verteilungen können geändert werden, wenn die ursprünglichen Verteilungen geändert werden konnten.
     -   Die Schaltfläche**Projektdetails** wird als Erweiterung aktiviert, wenn eine Position einem Projekt zugeordnet ist. Über Projektbuchhaltungsverteilungen können Sie Details ändern, z. B. die Finanzierungsquelle und den Abrechnungscode.
     -   Sie können den aktuellen Buchhaltungsstatus des Dokuments unter anzeigen unter **Referenz**. Der Status ist für das gesamte Dokument und gibt an, ob das Dokument in Prozess oder in abgeschlossenem Zustand ist.
--   **Verteilungen anzeigen** – Zeigt die Buchhaltungsverteilungen für alle Positionen und Geldbeträge im Dokument an. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
+-   **Verteilungen anzeigen** – Zeigt die Buchhaltungsverteilungen für alle Positionen und Geldbeträge im Dokument an. Sie können die Buchhaltungsverteilungen in dieser Ansicht nicht ändern.
 
+In Version 10.0.13 wurde eine Funktion hinzugefügt, die die Buchhaltungsverteilungstabelle überprüft, um sicherzustellen, dass neue Felder ordnungsgemäß eingerichtet sind. Hierbei handelt es sich um die Funktion **Zusätzliche Datenvalidierung aktivieren für Dokumente, die das Buchhaltungsframework des Quelldokuments verwenden**. Um diese Funktion zu verwenden, müssen Sie sie über den Arbeitsbereich **Funktionsverwaltung** aktivieren. Um die Funktion zu aktivieren, suchen Sie im Feld **Suche** nach dem Funktionsnamen auf der Seite **Funktionsverwaltung** und wählen Sie dann **Jetzt aktivieren** aus.
 
 Weitere Informationen finden Sie unter [Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Kreditorenrechnungen](accounting-distributions-subledger-journal-entries-vendor-invoices.md)
-
-

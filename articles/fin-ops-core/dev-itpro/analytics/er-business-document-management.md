@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a57b96387ca5746a30b2e438d6b5f0ce3040f54
-ms.sourcegitcommit: 728cd7f723ee821337eee315a27977e99a44d9d3
+ms.openlocfilehash: 65874e5ca73c18c3df7b94b8abb6eb15491482bf
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "3258556"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893134"
 ---
 # <a name="business-document-management-overview"></a>Geschäftsdokumentverwaltung – Übersicht
 
@@ -31,7 +31,7 @@ ms.locfileid: "3258556"
 
 Geschäftliche Benutzer verwenden das [Electronic Reporting (ER) Framework](general-electronic-reporting.md) zum Konfigurieren von Formaten für ausgehende Dokumente in Übereinstimmung mit den rechtlichen Anforderungen verschiedener Länder/Regionen. Benutzer können auch den Datenfluss definieren, um anzugeben, welche Anwendungsdaten sich in generierten Dokumenten befinden. Das ER-Framework generiert ausgehende Dokumente in Microsoft Office-Formaten (Excel-Arbeitsmappen oder Word-Dokumenten) mithilfe vordefinierter Vorlagen. Die Vorlagen werden mit den erforderlichen Daten in Übereinstimmung mit dem konfigurierten Datenfluss ausgefüllt, während die erforderlichen Dokumente generiert werden. Jedes konfigurierte Format kann als Teil einer ER-Lösung veröffentlicht wird, um bestimmte ausgehende Dokumente zu generieren. Dies wird durch eine ER-Formatkonfiguration dargestellt, die Vorlagen enthalten kann, die Sie verwenden können, um verschiedene ausgehende Dokumente zu generieren. Geschäftliche Benutzer können dieses Framework verwenden, um erforderliche Geschäftsdokumente zu verwalten.
 
-Die **Geschäftsdokumentverwaltung** wird auf dem ER-Framework erstellt und ermöglicht geschäftlichen Benutzern, Geschäftsdokumentvorlagen zu bearbeiten, indem sie einen Microsoft Office 365-Dienst oder eine entsprechende Microsoft Office-Desktopanwendung verwenden. Bearbeitungen an Dokumenten umfassen das Ändern von Geschäftsdokumentdesigns und das Hinzufügen von Platzhaltern für zusätzliche Daten ohne Quellcodeänderungen und neue Bereitstellungen. Keine Vorkenntnisse des ER-Frameworks sind erforderlich, um Vorlagen von Geschäftsdokumenten zu aktualisieren.
+Die **Geschäftsdokumentverwaltung** wird auf dem EB-Framework erstellt und ermöglicht geschäftlichen Benutzern die Bearbeitung von Geschäftsdokumentvorlagen, indem sie einen Microsoft 365-Dienst oder eine entsprechende Microsoft Office-Desktopanwendung verwenden. Bearbeitungen an Dokumenten umfassen das Ändern von Geschäftsdokumentdesigns und das Hinzufügen von Platzhaltern für zusätzliche Daten ohne Quellcodeänderungen und neue Bereitstellungen. Keine Vorkenntnisse des ER-Frameworks sind erforderlich, um Vorlagen von Geschäftsdokumenten zu aktualisieren.
 
 > [!NOTE]
 > Beachten Sie, dass die Geschäftsdokumentverwaltung es Ihnen ermöglicht, Vorlagen ändern, die verwendet werden, um Geschäftsdokumente wie Aufträge, Rechnungen usw. zu erzeugen. Während eine Vorlage geändert wurde und eine neue Version davon veröffentlicht wurde, wird diese Version verwendet, um erforderliche Geschäftsdokumente zu generieren. Die Geschäftsdokumentverwaltung kann nicht verwendet werden, um bereits generierte Geschäftsdokumente zu ändern.
@@ -170,7 +170,7 @@ Gehen Sie folgendermaßen vor, um die grundlegenden Parameter für alle juristis
 Der ausgewählte Dokumenttyp ist firmenspezifisch und wird verwendet, wenn der Benutzer mit Geschäftsdokumentverwaltung im Unternehmen arbeitet, für das der ausgewählte Dokumenttyp konfiguriert ist. Wenn der Benutzer mit Geschäftsdokumentverwaltung in einem anderen Unternehmen arbeitet, wird der gleiche ausgewählte Dokumenttyp verwendet, sofern keiner für dieses Unternehmen konfiguriert ist. Wenn ein Dokumenttyp konfiguriert wurde, wird dieser anstelle von dem im Feld **SharePoint-Dokumenttyp** ausgewählten verwendet.
 
 > [!NOTE]
-> Der **SharePoint-Dokumenttyp**-Parameter definiert einen SharePoint-Ordner als temporäreren Speicher für Vorlagen, die mit Microsoft Excel oder Word bearbeitet werden können. Sie müssen diesen Parameter einrichten, wenn Sie diese Office-Desktopanwendungen zum Bearbeiten von Vorlagen verwenden möchten. Weitere Informationen finden Sie unter [Bearbeiten einer Vorlage in der Office-Desktop-Anwendung](#EditInOfficeDesktopApp). Sie können diesen Parameter leer lassen, wenn Sie die Vorlage nur mit den Funktionen von Office 365 ändern möchten. Weitere Informationen finden Sie unter [Bearbeiten einer Vorlage in Office 365](#EditInOffice365).
+> Der **SharePoint-Dokumenttyp**-Parameter definiert einen SharePoint-Ordner als temporäreren Speicher für Vorlagen, die mit Microsoft Excel oder Word bearbeitet werden können. Sie müssen diesen Parameter einrichten, wenn Sie diese Office-Desktopanwendungen zum Bearbeiten von Vorlagen verwenden möchten. Weitere Informationen finden Sie unter [Bearbeiten einer Vorlage in der Office-Desktop-Anwendung](#EditInOfficeDesktopApp). Sie können diesen Parameter leer lassen, wenn Sie die Vorlage nur mit den Funktionen von Microsoft 365 ändern möchten. Weitere Informationen finden Sie unter [Bearbeiten einer Vorlage in Microsoft 365](#EditInOffice365).
 
 ## <a name="configure-access-permissions"></a>Konfigurieren der Zugriffsberechtigungen
 
@@ -295,13 +295,13 @@ Die Option **Neues Dokument** ist immer für eine Vorlage in einer ER-Formatkonf
 
 5. Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
-Die Seite **BDM-Vorlagen-Editor** wird geöffnet. Die ausgewählte Vorlage ist für die Online-Bearbeitung verfügbar, indem Office 365 verwendet wird.
+Die Seite **BDM-Vorlagen-Editor** wird geöffnet. Die ausgewählte Vorlage ist für die Online-Bearbeitung verfügbar, indem Microsoft 365 verwendet wird.
 
 ![Geschäftsdokumentverwaltung – Seite „Arbeitsbereich“](./media/BDM-Overview-EditingLayout1.png)
 
-### <a name=""></a><a name="EditInOffice365">Bearbeiten einer Vorlage in Office 365</a>
+### <a name=""></a><a name="EditInOffice365">Bearbeiten einer Vorlage in Microsoft 365</a>
 
-Sie können die Vorlage mit Office 365 ändern. Beispielsweise erfolgt in Office Online durch das Ändern der Schriftart des Feldes die Aufforderung im Vorlagenkopf von **Regulär** zu **Fett**. Diese Änderungen werden automatisch in der bearbeitbaren Vorlage gespeichert, die im Speicher der primären Vorlage (standardmäßig im Azure-Blob-Speicher) gespeichert ist. Dies ist für das ER-Framework konfiguriert.
+Sie können die Vorlage mit Microsoft 365 ändern. Beispielsweise erfolgt in Office Online durch das Ändern der Schriftart des Feldes die Aufforderung im Vorlagenkopf von **Regulär** zu **Fett**. Diese Änderungen werden automatisch in der bearbeitbaren Vorlage gespeichert, die im Speicher der primären Vorlage (standardmäßig im Azure-Blob-Speicher) gespeichert ist. Dies ist für das ER-Framework konfiguriert.
 
 ![Vorlagen-Editor-Seite der Geschäftsdokumentverwaltung](./media/BDM-Overview-EditingLayout2.png)
 
@@ -398,10 +398,10 @@ Wenn Sie die Vorlage von einem ER-Format bearbeiten, das dem aktuellen aktiven A
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-office-365-web-page"></a>Ich habe **Dokument bearbeiten** ausgewählt, aber anstatt die Seite **BDM-Vorlageneditor** in Finance and Operations zu öffnen, wurde ich auf die Office 365-Webseite geleitet.
-Dies ist ein bekanntes Problem bei der Office 365-Umleitung. Dies passiert, wenn Sie sich zum ersten Mal bei Office 365 anmelden. Um dieses Problem zu umgehen, wählen Sie die Schaltfläche **Zurück** Ihres Browsers aus, um zurück zu navigieren.
+#### <a name="i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page"></a>Ich habe **Dokument bearbeiten** ausgewählt, aber anstatt die Seite **BDM-Vorlageneditor** in Finance and Operations zu öffnen, wurde ich auf die Microsoft 365-Webseite geleitet.
+Dies ist ein bekanntes Problem bei der Microsoft 365-Umleitung. Dies passiert, wenn Sie sich zum ersten Mal bei Microsoft 365 anmelden. Um dieses Problem zu umgehen, wählen Sie die Schaltfläche **Zurück** Ihres Browsers aus, um zurück zu navigieren.
 
-#### <a name="i-understand-how-to-edit-a-template-by-using-office-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ich weiß, wie ich eine Vorlage bearbeite, indem ich Office 365 in der ersten Anwendungssitzung verwende, und wie ich die Vorlage in der zweiten Anwendungssitzung verwende, indem ich die Vorlage anpasse, um zu untersuchen, inwiefern sich meine Änderungen das generierte Geschäftsdokument auswirken. Ist dies mithilfe der Office-Desktop-Anwendung möglich?
+#### <a name="i-understand-how-to-edit-a-template-by-using-microsoft-365-in-the-first-application-session-and-how-to-use-the-template-in-the-second-application-session-adjusting-the-template-to-see-how-my-changes-affect-the-generated-business-document-can-i-do-this-using-the-office-desktop-application"></a>Ich weiß, wie ich eine Vorlage bearbeite, indem ich Microsoft 365 in der ersten Anwendungssitzung verwende, und wie ich die Vorlage in der zweiten Anwendungssitzung verwende, indem ich die Vorlage anpasse, um zu untersuchen, inwiefern sich meine Änderungen das generierte Geschäftsdokument auswirken. Ist dies mithilfe der Office-Desktop-Anwendung möglich?
 Ja. In der ersten Anwendungssitzung wählen Sie **In der Desktop-App öffnen** aus. Ihre Vorlage wird im temporären Dateispeicher gespeichert und in der Office-Desktop-Anwendung geöffnet. Führen Sie dann die folgenden Schritte aus, um die Vorlagenänderungen im generierten Geschäftsdokument in der Vorschau anzuzeigen:
 
 1. Nehmen Sie Änderungen in der Vorlage vor, indem Sie die Office-Desktop-Anwendung verwenden.

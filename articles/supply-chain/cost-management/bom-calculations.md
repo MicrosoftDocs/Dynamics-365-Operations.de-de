@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, ProdSetupCostEstimation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: shylaw
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 6e83d438f4f1a913bfa86827d7ba0c1d9366030f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f90e5babb440a2226638f7d96f111816732f0e70
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202007"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826765"
 ---
 # <a name="bom-calculations"></a>BOM-Berechnungen
 
@@ -82,8 +82,8 @@ Im Anschluss finden Sie zwei Beispiele für die Verwendung des Fallback-Prinzips
 ## <a name="bom-calculation-of-a-suggested-sales-price"></a>Informationen zur Herstellkostenkalkulation eines vorgeschlagenen Verkaufspreises
 Beim Kosten-plus-Aufschlag-Prinzip werden für den berechneten Verkaufspreis des Artikels die Gruppe der für die Herstellkostenkalkulation festgelegten Prozentsätze für die Gewinnvorgabe sowie die Kosten berücksichtigt, die den zugehörigen Komponentenartikeln, Arbeitsgängen des Arbeitsplans sowie den entsprechenden Produktionsgemeinkosten zugeordnet sind. Der Aufschlag spiegelt die Prozentsätze für die Gewinnvorgaben wider, die den Kostengruppen zugewiesen sind, sowie die Kostengruppen, die Artikeln zugewiesen sind, Kostenkategorien für die Arbeitsgangsteuerung und die Berechnungsformeln für indirekte Kosten für Produktionsgemeinkosten. Die Gruppen der Prozentsätze für die Gewinnvorgabe sind mit **Standard**, **Gewinn 1**, **Gewinn 2** und **Gewinn 3** beschriftet. So kann beispielsweise in der Gruppe Gewinn 1 eine Gewinnvorgabe von 50 Prozent für eine Kostengruppe definiert werden, die eingekauftem Material zugeordnet ist, und eine Gewinnvorgabe von 80 Prozent für eine Kostengruppe, die Kostenkategorien für Arbeitsgänge des Arbeitsplans zugeordnet ist. Die Behandlung der Ergebnisse eines berechneten Verkaufspreises hängt vom Kontext der Herstellkostenkalkulation ab:
 
--   **Herstellkostenkalkulation für einen Artikel sowie für eine angegeben Nachkalkulationsversion** – Durch die Herstellkostenkalkulation wird innerhalb der Nachkalkulationsversion ein vorläufiger Verkaufspreisdatensatz generiert. Dieser Verkaufspreisdatensatz bildet die Grundlage für die Anzeige der Berechnungsdetails (beispielsweise auf der Seite **Berechnung Artikelosten**. Der Verkaufspreisdatensatz fungiert in erster Linie als Referenzinformation und wird nicht als Basis für den Verkaufspreis einer Verkaufsrechnung herangezogen.
--   **Auftragsspezifische Herstellkostenkalkulation** − Bei Positionsartikeln in Aufträgen, Verkaufsangeboten oder Serviceaufträgen wird eine Abwandlung des Formulars für die Seite **Herstellkostenkalkulation** verwendet. Durch eine auftragsspezifische Herstellkostenkalkulation wird kein Kostendatensatz in einer Nachkalkulationsversion generiert. Stattdessen erstellt sie einen Berechnungsdatensatz, der auf der Seite **Stücklistenberechnungsdetails** angezeigt wird. Dieser Verkaufspreisdatensatz bildet die Grundlage für die Anzeige der Berechnungsdetails (beispielsweise auf der Seite **Berechnung Artikelkosten**. Hiermit können Informationen zum ausgewählten Kalkulationsdatensatz an den ursprünglichen Positionsartikel übertragen werden. Beispielsweise kann der berechnete Verkaufspreis auf einen Positionsartikel übertragen werden.
+-   **Herstellkostenkalkulation für einen Artikel sowie für eine angegeben Nachkalkulationsversion** – Durch die Herstellkostenkalkulation wird innerhalb der Nachkalkulationsversion ein vorläufiger Verkaufspreisdatensatz generiert. Dieser Verkaufspreisdatensatz bildet die Grundlage für die Anzeige der Berechnungsdetails (beispielsweise auf der Seite **Berechnung Artikelosten**). Der Verkaufspreisdatensatz fungiert in erster Linie als Referenzinformation und wird nicht als Basis für den Verkaufspreis einer Verkaufsrechnung herangezogen.
+-   **Auftragsspezifische Herstellkostenkalkulation** − Bei Positionsartikeln in Aufträgen, Verkaufsangeboten oder Serviceaufträgen wird eine Abwandlung des Formulars für die Seite **Herstellkostenkalkulation** verwendet. Durch eine auftragsspezifische Herstellkostenkalkulation wird kein Kostendatensatz in einer Nachkalkulationsversion generiert. Stattdessen erstellt sie einen Berechnungsdatensatz, der auf der Seite **Stücklistenberechnungsdetails** angezeigt wird. Dieser Verkaufspreisdatensatz bildet die Grundlage für die Anzeige der Berechnungsdetails (beispielsweise auf der Seite **Berechnung Artikelkosten**). Hiermit können Informationen zum ausgewählten Kalkulationsdatensatz an den ursprünglichen Positionsartikel übertragen werden. Beispielsweise kann der berechnete Verkaufspreis auf einen Positionsartikel übertragen werden.
 
 ## <a name="order-specific-bom-calculations"></a>Auftragsspezifische Herstellkostenkalkulationen
 Eine auftragsspezifische Herstellkostenkalkulation stellt eine Form der Herstellkostenkalkulation für einen produzierten Artikel dar. Eine auftragsspezifische Herstellkostenkalkulation wird für einen Positionsartikel in einem Auftrag, Verkaufsangebot oder Serviceauftrag ausgeführt. Eine auftragsspezifische Herstellkostenkalkulation erstellt einen Berechnungsdatensatz, der auf der Seite **Ergebnisse der Herstellkostenkalkulation** angezeigt wird. Der Berechnungsdatensatz enthält ein berechnetes Gewicht, einen berechneten Einstandspreis, der auf aktiven Kostendatensätzen basiert, und einen berechneten Verkaufspreis. Bei jeder auftragsspezifischen Formelberechnung wird im Formular **Formelberechnungsergebnisse** ein Berechnungsdatensatz mit eindeutigem Bezug zu einer Berechnungsnummer generiert. Die Ergebnisse eines Kalkulationsdatensatzes können optional an den ursprünglichen Positionsartikel übertragen werden. Eine auftragsspezifische Herstellkostenkalkulation unterscheidet sich von einer Herstellkostenkalkulation für einen produzierten Artikel auf zwei Arten:

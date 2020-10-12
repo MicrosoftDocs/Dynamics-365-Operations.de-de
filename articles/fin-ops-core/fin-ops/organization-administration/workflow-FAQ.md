@@ -3,7 +3,7 @@ title: Workflow-FAQs
 description: Diese Thema enthält Antworten auf häufig gestellte Fragen zum Workflowsystem.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 02/18/2020
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7408424ff9344b3dcd054106f3f10b0dc1d687b
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 4ba60c832b1f1ac5f514baef4cc0a9c36dd85af9
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3076085"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826189"
 ---
 # <a name="workflow-faq"></a>Workflow-FAQs
 
@@ -58,3 +58,5 @@ Wenn der Workflow-Editor unter Active Directory-Verbunddiensten (AD FS) in einer
 ## <a name="why-am-i-getting-sql-deadlocks-on-workflow-processing"></a>Warum erhalte ich SQL-Deadlocks bei der Workflow-Verarbeitung? 
 Der Standardfeldwert für das Feld **Anzahl der Workflow-Items pro Batch** auf der Seite **Workflow-Parameter** ist 0. Ein Wert von 0 bewirkt, dass sich der Standardwert auf 20 Elemente pro Stapel ändert. Seien Sie bei der Anpassung dieses Wertes vorsichtig, da eine hohe Anzahl von Elementen pro Batch (> 40) zu SQL-Deadlocks führen kann.
 
+## <a name="what-is-the-workflow-enhanced-error-feature"></a>Was ist die Workflow Enhanced Error-Funktion?
+Die Funktion Workflow Enhanced Error in Version 10.0.13 fügt Fehlercodes hinzu, um verschiedene Klassen von Workflowfehlern zu unterscheiden. Die gemeldeten Fehlermeldungen ähneln sich größtenteils mit geringfügigen Unterschieden, um sie zu verdeutlichen.

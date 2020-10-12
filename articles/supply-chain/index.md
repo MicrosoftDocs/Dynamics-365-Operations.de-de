@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 95cf53cbbd7863590f08afa72143effaa80ba8de
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
+ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813808"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "3887087"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -105,6 +105,6 @@ Im [Blog des Teams für F&E in der Fertigung von Dynamics AX](https://blogs.msdn
 - [Lean Manufacturing: Verfügbarkeitszusage und Kanban-Feinterminierung](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/)
 - [Stücklistenberechnung anhand eines Nachkalkulationsbogens](https://www.microsoft.com/download/details.aspx?id=101937/)
 
-## <a name="elearning-courses"></a>E-Learning-Kurse
+## <a name="elearning-courses"></a>E-Learning-Schulungen
 
-Informationen zu Onlinekursen und Schulungen finden Sie unter [Dynamics 365 bei Microsoft Learn](https://docs.microsoft.com/learn/dynamics365/).
+Informationen zu Onlinetrainings und Schulungen finden Sie bei [Microsoft Learn unter Dynamics 365 Supply Chain Management](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).

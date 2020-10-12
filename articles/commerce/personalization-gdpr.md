@@ -3,7 +3,7 @@ title: Personalisierte Empfehlungen abmelden
 description: In diesem Thema wird erläutert, wie Sie Kunden davon abhalten können, personalisierte Empfehlungen in Microsoft Dynamics 365 Commerce zu erhalten.
 author: bebeale
 manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -19,12 +19,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a51c8c0e2743b67df9d66a8c45ab7a69597f4002
-ms.sourcegitcommit: 8905d7a7a010e451c5435086480f66650ec54926
+ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "3664929"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817522"
 ---
 # <a name="opt-out-of-personalized-recommendations"></a>Personalisierte Empfehlungen abmelden
 
@@ -74,7 +74,7 @@ Das folgende Beispiel zeigt, wie ein Einzelhändler diese Aufgabe ausführen kan
 1. Der Einzelhändler erstellt eine benutzerdefinierte Erweiterung, um persönliche Empfehlungsdaten im Namen des Benutzers abzurufen. Informationen zum Erstellen von Modulen, zum Klonen vorhandener Module, zum Aufrufen von Retail Server-APIs und zum Aufrufen von Datenaktionen finden Sie unter [Online-Kanal-Erweiterbarkeit ](e-commerce-extensibility/overview.md).
 2. Die benutzerdefinierte Nebenstelle ruft die **Empfehlungen abrufen** Kerndatenaktion ab und übergibt die erforderlichen Informationen an sie, basierend auf den Anforderungen der Liste. Im Falle der **Tipps für Sie** Liste muss die Erweiterung den richtigen Listennamen und die richtige Kunden-ID an die Datenaktion übergeben.
 
-    Eine Möglichkeit zum Erstellen der benutzerdefinierten Erweiterung besteht darin, das vorhandene Produktsammlungsmodul zu klonen, das zum Zurückgeben von Empfehlungsergebnissen verwendet wird. Durch Klonen dieses vorhandenen Moduls kann ein Einzelhändler den vorhandenen Code ändern und eine neue Schaltfläche hinzufügen, mit der die Empfehlungsergebnisse in eine CSV-Datei exportiert werden. Weitere Informationen finden Sie unter [Klonen Sie ein Starter-Kit-Modul](e-commerce-extensibility/clone-starter-module.md) und [Produktsammelmodule](product-collection-module-overview.md).
+    Eine Möglichkeit zum Erstellen der benutzerdefinierten Erweiterung besteht darin, das vorhandene Produktsammlungsmodul zu klonen, das zum Zurückgeben von Empfehlungsergebnissen verwendet wird. Durch Klonen dieses vorhandenen Moduls kann ein Einzelhändler den vorhandenen Code ändern und eine neue Schaltfläche hinzufügen, mit der die Empfehlungsergebnisse in eine CSV-Datei exportiert werden. Weitere Informationen finden Sie unter [Klonen Sie eine Modulbibliothek](e-commerce-extensibility/clone-starter-module.md) und [Produktsammelmodule](product-collection-module-overview.md).
 
     Eine vollständige Ansicht der Retail Server-API-Bibliothek finden Sie unter [Retail Server-Kunden- und Verbraucher-APIs](dev-itpro/retail-server-customer-consumer-api.md).
 

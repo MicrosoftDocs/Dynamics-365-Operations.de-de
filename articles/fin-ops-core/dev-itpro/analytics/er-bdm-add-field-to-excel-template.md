@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: d6e0f2c914b8d348ef6eac42557fb46c53df04a9
-ms.sourcegitcommit: d16d370dab734e09312cb06711beca9cca52d4c9
+ms.openlocfilehash: 8c3a905c90f5dd4ad3487f004a958c0dcd52115d
+ms.sourcegitcommit: 71ec2f48185b8104ca52ff70df52263ce5f87f26
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "2809519"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3893246"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Hinzufügen neuer Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel
 
@@ -67,7 +67,7 @@ Weitere Informationen zum Importieren von ER-Konfigurationen finden Sie unter [V
 5.  Geben Sie im Feld **Titel** als Titel der neuen Vorlage **Freitextrechnung (Excel) Contoso** ein.
 6.  Wählen Sie **OK** aus, um den Beginn des Bearbeitungsprozesses zu bestätigen.
 
-Die Seite mit dem Editor für BDM-Vorlagen wird angezeigt. Mit Microsoft Office 365 können Sie die ausgewählte Vorlage online im eingebetteten Control bearbeiten.
+Die Seite mit dem Editor für BDM-Vorlagen wird angezeigt. Mit Microsoft 365 können Sie die ausgewählte Vorlage online in der eingebetteten Steuerung bearbeiten.
 
 ![BDM-Vorlagen-Editor-Seite](./media/BDM-AddFldExcel-EditableTemplate.png)
 
@@ -100,7 +100,7 @@ Die Seite mit dem Editor für BDM-Vorlagen wird angezeigt. Mit Microsoft Office 
 
 ### <a name="add-a-new-field-to-the-template"></a>Ein neues Feld zur Vorlage hinzufügen
 
-1.  Wählen Sie auf der Seite **BDM-Vorlageneditor**, im Aktionsbereich **Format anzeigen**.
+1.  Wählen Sie auf der Seite **BDM-Vorlageneditor**, im Aktivitätsbereich **Format anzeigen**.
 2.  Wählen Sie im Bereich **Vorlagenstruktur** **Hinzufügen**.
 
     > [!NOTE]

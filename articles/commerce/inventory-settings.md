@@ -3,7 +3,7 @@ title: Wenden Sie Inventareinstellungen an
 description: In diesem Thema werden Inventareinstellungen behandelt und beschrieben, wie sie in Microsoft Dynamics 365 Commerce angewendet werden.
 author: anupamar-ms
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 737e71dc73750bf151629fd904081924ac15b91e
-ms.sourcegitcommit: 4a981ee4be6d7e6c0e55541535d386bce2565cba
+ms.openlocfilehash: d7d25fd62efca52dd2d60ed3435104c3507a1d19
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "3621220"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817608"
 ---
 # <a name="apply-inventory-settings"></a>Wenden Sie Inventareinstellungen an
 
@@ -38,6 +38,9 @@ Die Inventareinstellungen geben an, ob das Inventar überprüft werden soll, bev
 Dynamics 365 Commerce bietet Schätzungen zur Verfügbarkeit von Produkten. Informationen zur Berechnung der geschätzten Verfügbarkeit finden Sie unter [Berechnen Sie die Lagerverfügbarkeit für Einzelhandelskanäle](calculated-inventory-retail-channels.md).
 
 In Commerce Site Builder können Bestandsschwellenwerte und -bereiche für ein Produkt oder eine Kategorie definiert werden. Sie bestimmen, ob der Lagerbestand als vorrätig, niedrig oder nicht vorrätig eingestuft werden kann. Einzelheiten finden Sie unter [Konfigurieren Sie Bestandpuffer und Bestandebenen](inventory-buffers-levels.md).
+
+> [!NOTE]
+> Unterstützung für Bestandsschwellen und -bereiche finden Sie in der Dynamics 365 Commerce-Version 10.0.12.
 
 ## <a name="inventory-settings"></a>Bestandeinstellungen
 
@@ -55,6 +58,9 @@ In Commerce werden Bestandeinstellungen unter **Seiteneinstellungen \> Erweiteru
     - Wenn **Ausverkauft** ausgewählt ist, werden nur die Nachrichten Nicht vorrätig angezeigt.
 
 - **Nicht vorrätige Schwelle** – Diese alte numerische Einstellung wird nur wirksam, wenn der Wert **Nicht vorrätige Schwelle** für die Einstellung **Lagerbestand basierend auf** ausgewählt ist.
+
+> [!IMPORTANT] 
+> Diese Einstellungen sind in Dynamics 365 Commerce 10.0.12 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="modules-that-use-inventory-settings"></a>Module, die Bestandeinstellungen verwenden
 
@@ -74,9 +80,9 @@ Das folgende Bild zeigt ein Beispiel für einen Einkaufswagen, mit der Meldung a
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-[Überblick über Starterkit](starter-kit-overview.md)
+[Übersicht über die Modulbibliothek](starter-kit-overview.md)
 
-[Konfigurieren Sie Bestandpuffer und Bestandebenen](inventory-buffers-levels.md)
+[Bestandpuffer und Bestandsebenen konfigurieren](inventory-buffers-levels.md)
 
 [Einkaufswagenmodul](add-cart-module.md)
 
@@ -85,3 +91,5 @@ Das folgende Bild zeigt ein Beispiel für einen Einkaufswagen, mit der Meldung a
 [Kontenverwaltungsseiten und -module](account-management.md)
 
 [Shopauswahlmodul](store-selector.md)
+
+[SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md)

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetObjectCounterPart, EntAssetObjectCounterLookup, EntAssetCounterType, EntAssetObjectCounterTotals
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d128a7d20891353927441bb343831876d72aecbe
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: adadb1df7b41488fad496f937ecbc24e0761e42d
+ms.sourcegitcommit: c986d5234b81d31cc6d054298be6f6ec92c1754c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3208891"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3889768"
 ---
 # <a name="counters"></a>Zähler
 
@@ -63,7 +63,7 @@ Eine Zählererfassung kann auf der Grundlage der Produktionsstunden oder produzi
 >[!NOTE]
 >Ein zugehöriger Zähler wird nur dann automatisch aktualisiert, wenn der zugehörige Zähler in den Zählereinstellungen über den Anlagentyp verfügt, dem er zugeordnet ist. Beispiel: Sie richten einen Zähler für „Produktionsstunden“ ein und fügen den Anlagentyp „Lkw-Motor“ hinzu. Wenn dieser Zähler aktualisiert wird, wird der zugehörige Zähler „Öl“ ebenfalls mit denselben Zählerwerten aktualisiert. Die Einstellung in **Zähler** schließt die Einstellung für „Stunden“ ein. Für den Zähler „Öl“ sollte außerdem der Anlagentyp „Lkw-Motor“ zum Inforegister **Anlagentypen** hinzugefügt werden, um den Bezug zum Zähler sicherzustellen. Unten auf den Screenshots sehen Sie ein Beispiel für die Einrichtung der Zähler für Stunden und Öl.
 
-Wenn Anlagentypen zu einem Zählertyp unter **Zähler** hinzugefügt werden, wird dieser Zähler automatisch zu den Anlagentypen im Inforegister **Zähler** unter [Anlagentypen](../setup-for-objects/object-types.md) hinzugefügt.
+Wenn Anlagentypen zu einem Zählertyp unter **Zähler** hinzugefügt werden, wird dieser Zähler automatisch zu den Anlagentypen auf dem Inforegister **Zähler** unter [Anlagentypen](../setup-for-objects/object-types.md) hinzugefügt.
 
 ![Abbildung 1](media/071-setup-for-objects.png)
 

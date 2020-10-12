@@ -3,7 +3,7 @@ title: Entfernte oder veraltete Plattformfunktionen
 description: Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and Operations-Anwendungen entfernt wurden oder deren Entfernung geplant ist.
 author: sericks007
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b2d54cfaddc1697eda543952831e745182df2753
-ms.sourcegitcommit: 5bb36b74935ffe140367fd6ecf956b4857ad12e5
+ms.openlocfilehash: 0b78401f4c1cf289247cd2d600f097ecdf6a712c
+ms.sourcegitcommit: 084eda1d5503be83e97e2e428e67ef5393535fab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3803138"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "3819888"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Entfernte oder veraltete Plattformfunktionen
 
@@ -34,6 +34,22 @@ Dieses Thema beschreibt Funktionen, die in den Plattform-Updates von Finance and
 Diese Liste soll ihnen dabei helfen, diese entfernten und veralteten Funktionen bei Ihrer eigenen Planung zu berücksichtigen. 
 
 Detaillierte Informationen über Objekte in Finance and Operations Apps finden Sie in den [Technischen Referenzberichten](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Sie können die verschiedenen Versionen dieser Berichte vergleichen, um sich über Objekte zu informieren, die sich in jeder Version von Finance and Operations-Anwendungen geändert haben oder entfernt wurden.
+
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.14 von Finance and Operations Apps
+
+> [!NOTE]
+> Version 10.0.14 ist eine Vorschauversion. Inhalt und Funktionsweise unterliegen Änderungen. Weitere Informationen zu Vorschauversionen finden Sie unter [Dienstupdateverfügbarkeit](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/public-preview-releases).
+
+
+### <a name="online-users-page"></a>Seite „Onlinebenutzer“ 
+
+|   |  |
+|------------|--------------------|
+| **Grund für veralteten Zustand/Entfernung** | Dies ist eine Legacy-Seite, die für die vorherige Client/Server-Architektur erstellt wurde. Die Informationen auf dieser Seite sind nicht immer korrekt, was verwirrend und irreführend sein kann. |
+| **Ersetzt durch eine andere Funktion?**   | Wir werden in einem zukünftigen Update eine neue Seite bereitstellen.|
+| **Betroffene Produktbereiche**         | Systemverwaltung |
+| **Bereitstellungsoption**              | Alle |
+| **Status**                         | Bis Oktober 2021 wird dieses Formular entfernt.   |
 
 ## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Plattform-Updates für Version 10.0.13 von Finance and Operations Apps
 

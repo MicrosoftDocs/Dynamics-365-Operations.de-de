@@ -3,7 +3,7 @@ title: Rasterfunktionen
 description: In diesem Thema werden mehrere leistungsstarke Funktionen der Rastersteuerung beschrieben. Die neue Rasterfunktion muss aktiviert sein, damit auf diese Fähigkeiten zugegriffen werden kann.
 author: jasongre
 manager: AnnBe
-ms.date: 08/31/2020
+ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b4efad8423ab42bf6f7f6e2d1054307c11d31d2c
-ms.sourcegitcommit: 241ada0945c72d769eaa70ae35aedbb6a3233fdf
+ms.openlocfilehash: 1f1c27444b38360072beb5277c445161983a2480
+ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3760398"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3835085"
 ---
 # <a name="grid-capabilities"></a>Rasterfunktionen
 
@@ -33,6 +33,7 @@ Die neue Rastersteuerung bietet eine Reihe nützlicher und leistungsfähiger Fun
 -  Type-ahead
 -  Auswerten von mathematischen Ausdrücken 
 -  Gruppieren von Tabellendaten (separat mit der **(Vorschau) Gruppierung in Rastern**-Funktion aktiviert)
+-  Angeheftete Systemspalten
 
 ## <a name="calculating-totals"></a>Summen berechnen
 In Finance and Operations-Apps haben Benutzer die Möglichkeit, Summen am unteren Rand numerischer Spalten in Rastern anzuzeigen. Diese Summen werden in einem Fußzeilenbereich am unteren Rand des Rasters angezeigt. 
@@ -119,12 +120,19 @@ Auf die gleiche Weise, wie Sie alle Zeilen im Raster auswählen (oder die Auswah
 ### <a name="hiding-column-names"></a>Spaltennamen ausblenden
 Beim Gruppieren von Daten wird standardmäßig der Spaltenname in der Gruppenkopfzeile angezeigt. Ab Version 10.0.14/Plattform-Update 38 können Sie den Spaltennamen in Gruppenkopfzeilen unterdrücken, indem Sie **Rasteroptionen** > **Gruppenspaltennamen ausblenden** auswählen.
 
+## <a name="pinned-system-columns"></a>Angeheftete Systemspalten
+Die Zeilenauswahlspalte und die Zeilenstatusspalte im neuen Raster werden am linken Rand des Rasters angeheftet oder eingefroren. Wenn diese Spalten in einem Raster enthalten sind, sind sie für den Benutzer unabhängig von der horizontalen Bildlaufposition im Raster immer sichtbar.   
+
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Wie aktiviere ich die neue Rastersteuerung in meiner Umgebung? 
 
-**10.0.9/Plattform-Update 33 und höher** Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+**10.0.9/Plattformupdate 33 und später**
 
-**10.0.8/Plattform-Update 32 und 10.0.7 / Plattform-Update 31** Die Funktion **Neue Rastersteuerung** kann in Stufe 1-Umgebungen (Entwicklung/Test) und Stufe 2-Umgebungen (Sandbox) aktiviert werden, um zusätzliche Test- und Entwurfsänderungen bereitzustellen, indem die folgenden Schritte ausgeführt werden.
+Die Funktion **Neue Rastersteuerung** ist in jeder Umgebung direkt in der Funktionsverwaltung verfügbar. Wie andere öffentliche Vorschaufunktionen unterliegt auch die Aktivierung dieser Funktion in der Produktion den [Zusätzlichen Nutzungsbedingungen](https://go.microsoft.com/fwlink/?linkid=2105274).  
+
+**10.0.8/Plattform-Update 32 und 10.0.7/Plattform-Update 31**
+
+Die Funktion **Neue Rastersteuerung** kann in Stufe 1 (Dev/Test)- und Stufe 2 (Sandbox)-Umgebungen aktiviert werden, um zusätzliche Test- und Entwurfsänderungen bereitzustellen, indem die folgenden Schritte ausgeführt werden.
 
 1.  **Flight aktivieren**: Führen Sie die folgende SQL-Anweisung aus: 
 
@@ -139,11 +147,14 @@ Beim Gruppieren von Daten wird standardmäßig der Spaltenname in der Gruppenkop
 Alle folgenden Benutzersitzungen beginnen mit der aktivierten neuen Rastersteuerung.
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Entwickler] Deaktivierung einzelner Seiten für die Verwendung des neuen Rasters 
-Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode des Formulars ein, um das Raster für eine einzelne Seite zu deaktivieren.
+Wenn Ihre Organisation eine Seite entdeckt, bei der Probleme bei der Verwendung des neuen Rasters auftreten, steht ab Version 10.0.13/Plattform-Update 37 eine API zur Verfügung, mit der ein einzelnes Formular die Vorgängerrastersteuerung und der Rest des Systems weiterhin die neue Rastersteuerung verwenden kann. Fügen Sie den folgenden Aufruf `super()` in die `run()` Methode für das Formular ein, um das Raster für eine einzelne Seite zu deaktivieren.
 
  ```this.forceLegacyGrid();```
 
-Diese API wird bis zur Veröffentlichung im Oktober 2021 durchgeführt, danach wird die neue Rastersteuerung obligatorisch. Bitte melden Sie alle Probleme, für die diese API verwendet werden muss, an Microsoft. 
+Diese API wird bis zur Veröffentlichung im Oktober 2021 durchgeführt, danach wird die neue Rastersteuerung obligatorisch. Wenn Probleme die Verwendung dieser API erfordern, melden Sie diese an Microsoft.
+
+## <a name="developer-size-to-available-width-columns"></a>[Entwickler] Spalten mit bis zur verfügbaren Breite angepasster Größe
+Wenn ein Entwickler die **WidthMode**-Eigenschaft bei Spalten innerhalb des neuen Rasters auf **SizeToAvailable** festlegt, haben diese Spalten zunächst dieselbe Breite wie bei einer Einstellung der Eigenschaft **SizeToContent**. Sie dehnen sich jedoch, um jede zusätzliche verfügbare Breite innerhalb des Rasters zu nutzen. Wenn die Eigenschaft bei mehreren Spalten auf **SizeToAvailable** festgelegt ist, teilen sich alle diese Spalten die zusätzliche verfügbare Breite innerhalb des Rasters. Wenn ein Benutzer jedoch die Größe einer dieser Spalten manuell ändert, wird die Spalte statisch. Sie bleibt auf dieser Breite und wird nicht mehr gedehnt, um die zusätzliche verfügbare Rasterbreite einzunehmen.  
 
 ## <a name="known-issues"></a>Bekannte Probleme
 In diesem Abschnitt wird eine Liste bekannter Probleme für das neue Rastersteuerelement verwaltet, während sich die Funktion in einem Vorschaustatus befindet.  

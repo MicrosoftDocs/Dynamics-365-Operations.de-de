@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfa6dcbd8d75c1a6c40896311ed367a835eccc7f
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: e761283057ff71fb10d4a5333a0b0dd4b6b6149e
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2770757"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888083"
 ---
 # <a name="fixed-assets-home-page"></a>Startseite für Anlagen
 
@@ -47,10 +47,10 @@ Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.micr
 
 Meinungen, Neuigkeiten und weitere Informationen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
+Im [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) erfahren Microsoft Dynamics-Partner an zentraler Stelle alles über Neuerungen und Trends bei Dynamics 365.
 
 #### <a name="task-guides"></a>Aufgabenleitfäden
-Weitere Hilfe finden Sie als Aufgabenleitfäden. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe“.
+Weitere Hilfe finden Sie in Form von Aufgabenleitfäden. Um auf Aufgabenleitfäden zuzugreifen, klicken Sie auf einer beliebigen Seite auf die Schaltfläche „Hilfe“.
 
 #### <a name="videos"></a>Videos
 

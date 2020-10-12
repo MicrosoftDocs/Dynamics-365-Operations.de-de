@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e68fee44fdc18cada99e3c7e2cba021036e869db
-ms.sourcegitcommit: 1322b94f10470e1728cf330d2d64f1471838c055
+ms.openlocfilehash: 53d37d0a02b6771957e2516ef7e3b0bb277014a6
+ms.sourcegitcommit: 71a7fb9e7133d872790ec25def5453bbbb17c627
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "3696663"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "3888131"
 ---
 # <a name="general-ledger-home-page"></a>Hauptbuch-Homepage
 
@@ -64,7 +64,7 @@ Weitere Informationen zu Financial Reporting finden Sie im Thema [Financial Repo
 
 Meinungen, Neuigkeiten und weitere Informationen finden Sie im [Microsoft Dynamics 365-Blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) und dem [Microsoft Dynamics 365 Finance and Operations – Financials-Blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
-Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei MBS Operations für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
+Der [Microsoft Dynamics Operations-Partner-Community-Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) fasst alle Informationen zu Neuigkeiten und Trends bei Dynamics 365 für Microsoft Dynamics-Partner in einer einzigen Ressource zusammen.
 
 ### <a name="videos"></a>Videos
 

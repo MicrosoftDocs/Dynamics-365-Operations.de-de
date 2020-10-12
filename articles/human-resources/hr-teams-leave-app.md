@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0fbf44fe35af3147fd5fb478b6cbfc5a5d0b109d
-ms.sourcegitcommit: 5b620f670ac0f403a0fdcdeb9c3f970b163191ee
+ms.openlocfilehash: c7b74983cbddf661456b0a65939e272078d59f6d
+ms.sourcegitcommit: e27510ba52623c801353eed4853f8c0aeea3bb2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "3766759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "3828943"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Urlaubsanträge in Teams verwalten
 
 [!include [banner](includes/preview-feature.md)]
 
-Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Sie schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Sie können mit einem Bot interagieren, um Informationen anzufordern. Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen.
+Mit der Microsoft Dynamics 365 Human Resources-App in Microsoft Teams können Sie schnell arbeitsfreie Zeit beantragen und Informationen zu Salden arbeitsfreier Zeiten in Microsoft Teams anzeigen. Sie können mit einem Bot interagieren, um Informationen anzufordern und eine Urlaubsanfrage zu starten. Die Registerkarte **Arbeitsfreie Zeit** enthält detailliertere Informationen. Darüber hinaus können Sie Personen Informationen über Ihre bevorstehende arbeitsfreie Zeit in Teams und Chats außerhalb der Human Resources-App senden.
 
 ## <a name="install-the-app"></a>App installieren
 
@@ -56,8 +56,8 @@ Wenn Sie nicht automatisch von der App angemeldet werden, wählen Sie die Regist
 
 Wenn Sie Zugriff auf mehrere Human Resources-Instanzen haben, können Sie auf der Registerkarte **Einstellungen** festlegen, zu welcher Umgebung Sie eine Verbindung herstellen möchten.
 
-> [!WARNING]
-> Die App unterstützt derzeit die Sicherheitsrolle „Systemadministrator“ nicht und zeigt eine Fehlermeldung an, wenn Sie sich mit einem Systemadministratorkonto anmelden. Wählen Sie auf der Registerkarte **Einstellungen** die Schaltfläche **Konten wechseln** aus, und melden Sie sich dann mit einem Benutzerkonto an, dem keine Systemadministratorrechte zugewiesen sind, um sich mit einem anderen Konto anzumelden.
+> [!NOTE]
+> Die App unterstützt jetzt die Sicherheitsrolle des Systemadministrators.
  
 ## <a name="use-the-bot"></a>Bot verwenden
 
@@ -130,13 +130,33 @@ Auf der Registerkarte **Arbeitsfreie Zeit** können Sie Folgendes anzeigen:
 
    ![Human Resources-App für Abwesenheiten in Teams – „Entwurf bearbeiten“](./media/hr-teams-leave-app-drafts-edit.png)
    
-### <a name="teams-notifications"></a>Teams-Benachrichtigungen
+### <a name="respond-to-teams-notifications"></a>Antworten auf Teams-Benachrichtigungen
 
 Wenn Sie oder ein Mitarbeiter, für den Sie Genehmiger sind, einen Urlaubsantrag stellen, erhalten Sie eine Benachrichtigung in der Human Resources-App in Teams. Sie können die Benachrichtigung auswählen, um sie anzuzeigen. Benachrichtigungen werden auch im **Plaudern**-Bereich angezeigt.
 
 Wenn Sie ein Genehmiger sind, können Sie in der Benachrichtigung **Genehmigen** oder **Verweigern** auswählen. Sie können auch eine optionale Nachricht bereitstellen.
 
 ![Urlaubsantragsbenachrichtigungen in der Human Resources-Teams-App](./media/hr-teams-leave-app-notification.png)
+
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Informationen zu bevorstehender arbeitsfreier Zeit an Ihre Kollegen senden
+
+Nachdem Sie die Human Resources-App für Teams installiert haben, können Sie Ihren Kollegen in Teams oder Chats problemlos Informationen zu Ihrer arbeitsfreien Zeit senden.
+
+1. Wählen Sie in einem Team oder Chat in Teams die Schaltfläche Human Resources unter dem Chatfenster.
+
+   ![Schaltfläche „Human Resources“ unter dem Chatfenster](./media/hr-teams-leave-app-chat-button.png)
+
+2. Wählen Sie die Urlaubsanfrage aus, die Sie teilen möchten. Wenn Sie einen Entwurf für einen Urlaubsantrag freigeben möchten, wählen Sie zuerst **Entwürfe**.
+
+   ![Einen bevorstehenden Urlaubsantrag zum Teilen auswählen](./media/hr-teams-leave-app-chat-search.png)
+
+Ihre Urlaubsanfrage wird im Chat angezeigt.
+
+![Urlaubsantragskarte in Human Resources](./media/hr-teams-leave-app-chat-card.png)
+
+Wenn Sie einen Entwurfsantrag freigegeben haben, wird dieser als Entwurf angezeigt:
+
+![Entwurfsurlaubsantragskarte in Human Resources](./media/hr-teams-leave-app-chat-draft-card.png)
 
 ## <a name="view-your-teams-leave-calendar"></a>Urlaubskalender Ihres Teams anzeigen
 
@@ -164,9 +184,15 @@ Der Inhalt der Abfragen und Nachrichten des Benutzers wird maximal 30 Tage im L
 
 Wechseln Sie zum [Microsoft Teams Admin Center](https://admin.teams.microsoft.com/), um Administratoreinstellungen für Apps in Microsoft Teams zu verwalten.
 
-### <a name="microsoft-azure-event-grid-and-microsoft-teams"></a>Microsoft Azure Event Grid und Microsoft Teams
+### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid und Azure Cosmos DB
 
-Bei Verwendung der Benachrichtigungsfunktion für die Dynamics 365 Human Resources-App in Teams fließen bestimmte Kundendaten außerhalb der geografischen Region, in der der Human Resources-Dienst Ihres Mandanten bereitgestellt wird. Dynamics 365 Human Resources überträgt die Urlaubsantrags- und Workflow-Aufgabendetails des Mitarbeiters an Microsoft Azure Event Grid und Microsoft Teams. Diese Daten können bis zu 24 Stunden gespeichert und in den USA verarbeitet werden, werden während des Transports und als Daten in Ruhe verschlüsselt und werden von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet.
+Bei Verwendung der Dynamics 365 Human Resources-App in Microsoft Teams fließen möglicherweise bestimmte Kundendaten außerhalb der geografischen Region, in der der Human Resources-Dienst Ihres Mandanten bereitgestellt wird.
+
+Dynamics 365 Human Resources überträgt die Urlaubsantrags- und Workflow-Aufgabendetails des Mitarbeiters an Microsoft Azure Event Grid und Microsoft Teams. Diese Daten können bis zu 24 Stunden in Microsoft Azure Event Grid gespeichert werden und werden in den USA verarbeitet, werden während des Transports und als Daten in Ruhe verschlüsselt und werden von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet. Um zu verstehen, wo Ihre Daten in Teams gespeichert sind, lesen Sie bitte: [Speicherort von Daten in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+
+Während der Konversation mit dem Chat-Bot in der Human Resources-App wird der Konversationsinhalt möglicherweise in Azure Cosmos DB gespeichert und an Microsoft Teams übertragen. Diese Daten können in Azure Cosmos DB bis zu 24 Stunden lang gespeichert und außerhalb der geografischen Region verarbeitet werden, in der der Human Resources-Service Ihres Mandanten bereitgestellt wird, werden während des Transports und in Ruhe verschlüsselt und von Microsoft oder seinen untergeordneten verarbeitenden Betrieben nicht für Schulungen oder Serviceverbesserungen verwendet. Um zu verstehen, wo Ihre Daten in Teams gespeichert sind, lesen Sie bitte: [Speicherort von Daten in Microsoft Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams?view=o365-worldwide&preserve-view=true).
+ 
+Um den Zugriff auf die Human Resources-App in Microsoft Teams für Ihre Organisation oder Benutzer in Ihrer Organisation zu beschränken, finden Sie unter Informationen unter [Verwalten von App-Berechtigungsrichtlinien in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
 ## <a name="see-also"></a>Siehe auch
 

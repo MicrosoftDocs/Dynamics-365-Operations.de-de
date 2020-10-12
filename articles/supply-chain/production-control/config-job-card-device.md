@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgRegistrationSetupTouch
+ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: fc698ac7e0cfc8d6b196abf35658688ad1bc8bc7
-ms.sourcegitcommit: 6319a07ee6c36ebb28acaf205bc79d2fd8f7dd5d
+ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
+ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "3413169"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826693"
 ---
 # <a name="configure-job-card-for-devices"></a>Einzelvorgangsliste für Geräte konfigurieren
 
@@ -58,7 +58,7 @@ Um diese Funktion verfügbar zu machen, aktivieren Sie die folgenden Funktionen 
 Um die Gerätekonfigurationen aufzusetzen, wechseln Sie zu **Produktionssteuerung > Einstellungen > Fertigungssteuerung > Einzelvorgangskarte für Geräte konfigurieren**. Die Seite **Konfigurieren Sie die Einzelvorgangskarte für Geräte** wird geöffnet, auf der eine Liste der vorhandenen Konfigurationen angezeigt wird. Von hier aus können Sie folgendermaßen vorgehen: 
 
 - Wählen Sie eine in der linken Spalte aufgeführte Gerätekonfiguration aus, um sie anzuzeigen und zu bearbeiten.
-- Wählen **Neu** im Aktionsbereich, um der Liste eine neue Gerätekonfiguration hinzuzufügen. Dann geben Sie im Feld **Konfiguration** einen Namen ein, um die neue Konfiguration identifizieren zu können. Der hier eingegebene Wert muss für alle Gerätekonfigurationen eindeutig sein und kann später nicht mehr bearbeitet werden.
+- Wählen **Neu** im Aktivitätsbereich, um der Liste eine neue Gerätekonfiguration hinzuzufügen. Dann geben Sie im Feld **Konfiguration** einen Namen ein, um die neue Konfiguration identifizieren zu können. Der hier eingegebene Wert muss für alle Gerätekonfigurationen eindeutig sein und kann später nicht mehr bearbeitet werden.
 
 In den folgenden Abschnitten finden Sie Details zu den einzelnen Einstellungen zum Konfigurieren von Einzelvorgangsgeräten.
 

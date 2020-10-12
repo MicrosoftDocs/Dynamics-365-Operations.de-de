@@ -3,7 +3,7 @@ title: Einrichten angepasster Seiten für die Benutzeranmeldung
 description: In diesem Thema wird beschrieben, wie Sie benutzerdefinierte Seiten in Microsoft Dynamics 365 Commerce erstellen, die benutzerdefinierte Anmeldungen für Benutzer von Mandanten von Azure Active Directory (Azure AD) Onlinebankenlösungen (B2C) verarbeiten.
 author: brianshook
 manager: annbe
-ms.date: 07/02/2020
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e9e78a4d6dc4189c927d9ef321f1eb5a6c120ee2
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 0b54bf6234dcb87c84b21259c30ca5c321869adf
+ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533458"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "3817305"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Angepasste Seiten für die Benutzeranmeldung einrichten
 
@@ -181,17 +181,17 @@ Um die Richtlinie „Kennwort zurücksetzen“ mit benutzerdefinierten Seiteninf
 
 ## <a name="customize-default-text-strings-for-labels-and-descriptions"></a>Passen Sie Standardtextzeichenfolgen für Beschriftungen und Beschreibungen an
 
-Im Starter Kit sind die Anmeldemodule mit Standardtextzeichenfolgen für Beschriftungen und Beschreibungen vorausgefüllt. Sie können diese Zeichenfolgen in Software Development Kit (SDK) anpassen, indem Sie die Werte in der global.json-Datei für das Zeichen im Modul aktualisieren.
+In der Modulbibliothek sind die Anmeldungsmodule mit Standardtextzeichenfolgen für Beschriftungen und Beschreibungen vorausgefüllt. Sie können diese Zeichenfolgen in Software Development Kit (SDK) anpassen, indem Sie die Werte in der global.json-Datei für das Zeichen im Modul aktualisieren.
 
 Beispielsweise ist der Standardtext für den Link Kennwort vergessenen **Vergessenes Kennwort?**. Nachfolgend wird der Standardtext auf der Anmeldeseite angezeigt.
 
 ![Der Standardtext für den Link Kennwort vergessenen auf der Anmeldeseite](./media/B2C_SignUp_ModuleFace.png)
 
-Sie könnnen jedoch in der global.json-Datei für das Starter Kit Anmeldungsmodul den Text **Kennwort vergessen?** bearbeiten, wie in der folgenden Abbildung dargestellt wird.
+Sie könnnen jedoch in der Datei global.json für das Anmeldungsmodul in der Modulbibliothek den Text zu **Kennwort vergessen?** ändern, wie in der folgenden Abbildung dargestellt.
 
 ![Aktualisierter Hyperlinktext im Anmeldungsmodul global.json-Datei](./media/B2C_CustomizingStringsForModule.png)
 
-Nachdem Sie die global.json-Datei aktualisiert und die Änderungen veröffentlicht haben, wird der neue Hyperlinktext im Vorzeichen des Moduls in Commerce und auf der Liveanmeldeseite angezeigt.
+Nachdem Sie die Datei global.json aktualisiert und die Änderungen veröffentlicht haben, wird der neue Hyperlinktext im Anmeldungsmodul in Commerce und auf der Liveanmeldeseite angezeigt.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

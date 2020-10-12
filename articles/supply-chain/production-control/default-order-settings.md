@@ -3,12 +3,12 @@ title: Standardauftragseinstellungen für Dimensionen und Produktvarianten
 description: Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Artikel bezogen oder in dem sie gelagert werden, die Mindest-, Höchst-, Mehrfach- und Standardmengen, die für den Handel oder die Lagerverwaltung verwendet werden, die Lieferzeiten, das Beendigungskennzeichen sowie die Auftragszusagemethode.
 author: t-benebo
 manager: tfehr
-ms.date: 07/31/2020
+ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: InventItemOrderSetup
+ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 0654ba019b71dc952ea52f206bc60d8fa05dd4ff
-ms.sourcegitcommit: f9917706d45693e8d3f9f6224dca9e601db44bae
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "3657339"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "3895595"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardmäßige Auftragseinstellungen für Dimensionen und Produktvarianten
 
@@ -51,8 +51,11 @@ Es gibt drei Typen von Standardauftragseinstellungen für Einkäufe, Verkäufe u
 - Rahmenbestellungspositionen
 - Angebotsanforderungspositionen
 - Bestellanforderungspositionen
-- Lieferungswiederbeschaffungspositionen
+- Lieferungswiederbeschaffungspositionen (teilweise unterstützt, siehe Hinweis)
 - Geplante Einkaufsbestellungen
+
+> [!NOTE]
+> Die einzigen Einstellungen auf dem Inforegister **Bestellung** der Seite **Standardauftragseinstellungen**, die für Lieferungswiederbeschaffungsauftragspositionen gelten, sind die Felder **Standardstandort** und **Standardlagerort** sowie das Kontrollkästchen **Anhalten**.
 
 Die Standardauftragseinstellungen für Verkäufe werden verwendet, wenn Folgendes erstellt wird:
 
@@ -160,7 +163,7 @@ Als allgemeinen Leitfaden erhalten spezifische Regeln und Regeln für Dimensione
 
 Die Regel mit Rang null dient als Sicherheitsnetz. Wenn keine anderen Regeln betroffen sind, dann werden die Standardauftragseinstellungen von Regel null verwendet. 
 
-Da die Rangnummer wichtig ist, befinden sich im Aktionsbereich **Standardauftragseinstellungen** Funktionen, um eine Regel nach oben oder unten zu verschieben und um die Regeln neu zu nummerieren, sodass sie immer in Abstufungen von 10 sind. 
+Da die Rangnummer wichtig ist, befinden sich im Aktivitätsbereich **Standardauftragseinstellungen** Funktionen, um eine Regel nach oben oder unten zu verschieben und um die Regeln neu zu nummerieren, sodass sie immer in Abstufungen von 10 sind. 
 
 Die Anzahl von Regeln, die für ein freigegebenes Produkt erstellt werden, sind möglicherweise viele. Um besser zu verstehen, was jede Regel überschreibt und warum es notwendig ist, empfehlen wir Ihnen, die **Rasteransicht** auf der Seite **Standardauftragseinstellungen** zu verwenden. Sie können die Rasteransicht aktivieren, indem Sie zu **Optionen** &gt; **Seitenoptionen** &gt; **Ansicht wechseln** &gt; **Rasteransicht** wechseln. Die Anzahl der im Raster angezeigten Spalten könnte ziemlich bedeutsam sein, insbesondere für die Registerkarten "Vertrieb" und "Bestand". Um die Anzahl der im Raster angezeigten Spalten einzuschränken, können Gruppen von Spalten ausgeblendet oder angezeigt werden, indem die Schaltflächen im Menü **Standardauftragseinstellungen** &gt; **Spaltenanzeige** verwendet werden.
 

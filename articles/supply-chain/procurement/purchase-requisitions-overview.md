@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3b365bf99fcb5c97a1afe1675ddcf34a0db8f07
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: e09c4ebd3ee978076ac4f1d0b71041e7c1e954be
+ms.sourcegitcommit: b281ac04157f6ccbd159fc89f58910b430a3b6a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207855"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "3826899"
 ---
 # <a name="purchase-requisition-overview"></a>Übersicht über Bestellanforderung
 
@@ -157,7 +157,7 @@ In einigen Fällen müssen Sie einen Angebotsanforderungsprozess beginnen, um de
 Sie können eine Bestellanforderung sperren, indem Sie das Kontrollkästchen auf **Gesperrt** die **Bestellanforderungsdetails** Seite auswählen. Die Verarbeitung der Bestellanforderung kann fortfahren, nachdem der aufgehoben, indem Sie das Kontrollkästchen deaktivieren.  
 
 > [!NOTE]
-> Im eProcurement lässt es die Angebotsanforderung für Ihre Bestellanforderung möglicherweise Händlern zu, alternative Positionen hinzuzufügen. In diesem Fall spiegelt Ihre Bestellanforderung genehmigte Alternativen wieder.
+> Im E-Procurement lässt es die Angebotsanforderung für Ihre Bestellanforderung möglicherweise zu, dass Lieferanten alternative Positionen hinzufügen. In diesem Fall spiegelt Ihre Bestellanforderung genehmigte Alternativen wieder.
 
 ## <a name="demand-consolidation"></a>Bedarfskonsolidierung
 Wenn Sie Bestellanforderungspositionen aus mehreren Bestellanforderungen konsolidieren, können Sie Ihre Verhandlungsposition mit Ihren Kreditoren stärken, um eine bessere Preisgestaltung sowie niedrigere Liefer- und Versandkosten sowie verringerte Gemeinkosten zu erreichen.  
