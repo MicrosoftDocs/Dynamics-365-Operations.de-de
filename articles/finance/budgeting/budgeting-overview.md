@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b56f56f5307c292ced30ec94d178244268c5e68
-ms.sourcegitcommit: 34395464ec80cea800b953eae49af579d436fc1b
+ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935441"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975267"
 ---
 # <a name="budgeting-home-page"></a>Budgetierung – Startseite
 
@@ -40,7 +40,7 @@ Der Ressourcenplanungszyklus für ein Unternehmen besteht normalerweise aus folg
 
 Der Prozess sowohl für die langfristige strategische Planung als auch für die Jahresbudgetplanung werden von einem Budgetplandokument unterstützt. Budgetplandokumente sind eng in Microsoft Excel integriert. Benutzer können unbegrenzt monetäre und quantitative Szenarien konfigurieren sowie eine Budgetplanungs-Organisationshierarchie anlegen, um die Budgetplanungsmethoden Top-Down und Bottom-Up zu unterstützen. Nach dem Einrichten und Genehmigen eines Budgets in der Anwendung konvertieren Sie den Budgetplan in einen Budgetregistereintrag. Budgetregistereinträge enthalten Tools zur Verwaltung des Budgets und für die Nachverfolgung von Beträgen über Budgetcodes. Mit Budgetregistereinträgen können Sie ursprüngliche Budgets überarbeiten, Umbuchungen tätigen und Budgetbeträge vom Vorjahr übertragen. Auf Grundlage eines eingerichteten Budgets kann ein Unternehmen Budgetsteuerung aktivieren. Das Maß an Kontrolle hängt von der Kultur einer Organisation und vom Maturitätsgrad der Organisation ab. Organisationen mit einem niedrigen Reifegrad möchten das Budget möglicherweise nicht verändern und sind eher reaktiv als proaktiv, falls ein Budget nicht den Erwartungen entspricht. Andere Organisationen aktivieren möglicherweise Budgetsteuerungsrichtlinien, die Benutzer am Einkauf hindern, wenn keine Budgetmittel verfügbar sind.
 
-Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organisationskultur, in der die Mitarbeiter über organisatorische Ziele informiert sind und versuchen, diese Ziele mittels Richtlinien wie z. B. „Ziehen Sie eine Online-Besprechung einer Dienstreise vor“ zu erreichen. Die Anwendung beinhaltet ein Budgetsteuerungsframework, mit dem das Unternehmensmanagement entweder strikte Kontrolle (wodurch Buchungen verhindert werden, die über das Budget hinausgehen) oder weniger strikte Kontrolle (der Benutzer wird gewarnt, wenn die verfügbaren Budgetmittel überschritten werden, kann jedoch selbst entscheiden, ob er fortfahren möchte) wählen kann. Schließlich können Sie rollende Planungen verwenden. Eine rollende Planung ist ein regelmäßiger Vergleich des Budgets mit Istwerten und wird verwendet, um zu definieren, inwieweit das Unternehmen im Rahmen des Budgets agiert. Eine rollende Planung wird auch verwendet, um Trends zu erkennen. In Finance and Operations werden rollende Planungen durch ein Budgetplandokument als Erstplanungsaktivitäten unterstützt. Rollende Planungen können parallel zur Planung des bevorstehenden Budgetzyklus ausgeführt werden.
+Schließlich etablieren sehr erfahrene Organisationen möglicherweise eine Organisationskultur, in der die Mitarbeiter über organisatorische Ziele informiert sind und versuchen, diese Ziele mittels Richtlinien wie z. B. „Ziehen Sie eine Online-Besprechung einer Dienstreise vor“ zu erreichen. Die Anwendung beinhaltet ein Budgetsteuerungsframework, mit dem das Unternehmensmanagement entweder strikte Kontrolle (wodurch Buchungen verhindert werden, die über das Budget hinausgehen) oder weniger strikte Kontrolle (der Benutzer wird gewarnt, wenn die verfügbaren Budgetmittel überschritten werden, kann jedoch selbst entscheiden, ob er fortfahren möchte) wählen kann. Schließlich können Sie rollende Planungen verwenden. Eine rollende Planung ist ein regelmäßiger Vergleich des Budgets mit Istwerten und wird verwendet, um zu ermitteln, inwieweit das Unternehmen im Rahmen des Budgets agiert. Eine rollende Planung wird auch verwendet, um Trends zu erkennen. In Finance and Operations werden rollende Planungen durch ein Budgetplandokument als Erstplanungsaktivitäten unterstützt. Rollende Planungen können parallel zur Planung des bevorstehenden Budgetzyklus ausgeführt werden.
 
 -   [Budgetierungsüberblick](basic-budgeting-overview-configuration.md)
 -   [Budgetsteuerung – Übersicht](budget-control-overview-configuration.md)

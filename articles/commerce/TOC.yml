@@ -70,12 +70,12 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Leitfaden zur Implementierung von Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: 'Finance and Operations-Apps, bearbeitet von 21Vianet in China'
+                - name: 'Finance and Operations-Apps, betrieben von 21Vianet in China'
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations-Apps in Frankreich
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
-            - name: Support für Dynamics 365 Commerce einholen
-              href: retail-support.md
+            - name: Support anfordern
+              href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Aktualisierung und N-1-Support
               items:
                 - name: Aktualisierung und N-1-Support für Commerce
@@ -90,8 +90,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Neuerungen oder Änderungen in Commerce
                   items:
-                    - name: Neuerungen oder Änderungen auf der Commerce-Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: "Commerce\_10.0.15 (Januar 2021)"
+                      href: get-started/whats-new-commerce-10-0-15.md
                     - name: Commerce 10.0.14 (November 2020)
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (Oktober 2020)
@@ -270,11 +272,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Verschieben von Umgebungen zwischen Rechenzentren
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/commerce/toc.json
-                - name: Verschieben von Lizenzen zwischen Vertragstypen
+                - name: Lizenzen zwischen Vertragstypen verschieben
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/commerce/toc.json
-                - name: Verschieben von LCS-Implementierungsprojekten zu anderen Azure AD-Mandanten
+                - name: LCS-Implementierungsprojekte an andere Azure AD-Mandanten verschieben
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/commerce/toc.json
-                - name: Mehrere LCS-Projekte und ‑Produktionsumgebungen auf einem einzelnen Azure AD-Mandanten
+                - name: LCS-Implementierungsprojekte von lokal in die Cloud verschieben
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json
+                - name: Mehrere LCS-Projekte und Produktionsumgebungen in einem einzelnen Azure AD-Mandanten
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json
                 - name: Finance and Operations Commerce-Projekte implementieren
                   href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
@@ -702,13 +706,15 @@
           items:
             - name: Debitorenaufträge
               items:
-                - name: Debitorenaufträge in Point of Sale (POS)
+                - name: Debitorenaufträge an der Verkaufsstelle (POS)
                   href: customer-orders-overview.md
                 - name: Hybriddebitorenaufträge
                   href: hybrid-customer-orders.md
+                - name: Abwicklung von Rückrufen am POS
+                  href: enhancedorderrecall.md
             - name: Aufträge
               items:
-                - name: Einen Callcenterauftrag erstellen
+                - name: Callcenterauftrag erstellen
                   href: tasks/create-call-center-orders.md
                 - name: Lieferart in POS ändern
                   href: POS-change-delivery-mode.md
@@ -780,9 +786,7 @@
               href: statement-posting-eod.md
             - name: Verbesserte Handhabung von Artikeln mit Chargenverfolgung
               href: batch.md
-            - name: 'Handelsparameter konfigurieren, die Auswirkungen auf Aufstellungen haben'
-              href: tasks/parameter-configurations-retail-statements.md
-            - name: 'Zahlungsmethodeneinstellungen konfigurieren, die Auswirkungen auf Einzelhandelsaufstellungen haben'
+            - name: 'Zahlungsmethodeneinstellungen konfigurieren, die sich auf Einzelhandelsaufstellungen auswirken'
               href: tasks/payment-configurations-retail-statements.md
             - name: 'Einen Einzelvorgang konfigurieren und aktivieren, um Auszüge zu berechnen'
               href: tasks/run-job-calculate-statements.md
@@ -864,15 +868,17 @@
                   href: add-manage-content.md
                 - name: Seitenmodellglossar
                   href: page-elements-overview.md
-                - name: Dokumentstatus und -Lebenszyklus
+                - name: Dokumentstatus und -lebenszyklus
                   href: document-states-overview.md
-                - name: Arbeiten mit Veröffentlichungsgruppen
+                - name: Mit Veröffentlichungsgruppen arbeiten
                   href: publish-groups.md
-                - name: Sitebranding und Hinzufügen von Shopdetails
+                - name: Kanalübergreifende Freigabe aktivieren und verwenden
+                  href: cross-channel-sharing.md
+                - name: Sitebranding gestalten und Angaben zum Shop ergänzen
                   items:
-                    - name: Ein Logo hinzufügen
+                    - name: Logo hinzufügen
                       href: add-logo.md
-                    - name: Ein Sitedesign auswählen
+                    - name: Sitedesign auswählen
                       href: select-site-theme.md
                     - name: Arbeiten mit CSS-Überschreibungsdateien
                       href: css-override-files.md
@@ -1048,9 +1054,27 @@
               items:
                 - name: Onlinekanalberichte generieren
                   href: generate-reports.md
+            - name: Experimentieren
+              items:
+                - name: Experimentieren in Dynamics 365 Commerce
+                  href: experimentation-overview.md
+                - name: Hypothese und Messwerte für ein Experiment bestimmen
+                  href: experimentation-identify.md
+                - name: Experiment einrichten
+                  href: experimentation-setup.md
+                - name: Experiment verbinden und bearbeiten
+                  href: experimentation-connect-edit.md
+                - name: Experiment in der Vorschau anzeigen und veröffentlichen
+                  href: experimentation-preview-publish.md
+                - name: Experiment durchführen und überwachen
+                  href: experimentation-run-monitor.md
+                - name: Variation entwickeln und Experiment abschließen
+                  href: experimentation-review-complete.md
+                - name: Experimentstatus einsehen
+                  href: experimentation-status.md
             - name: Fehlerbehandlung
               items:
-                - name: Benutzerdefinierte Antwortseiten für Fehler mit 4xx/5xx-Statuscodes erstellen
+                - name: Benutzerdefinierte Antwortseiten bei Fehlern mit 4xx/5xx-Statuscodes erstellen
                   href: build-pages-400-500-errors.md
         - name: Fraud Protection
           items:
@@ -1072,17 +1096,23 @@
               href: set-up-rfm-analysis.md
         - name: Globalisierung
           items:
-            - name: Steuerintegrationsübersicht für Commerce Channel
+            - name: Steuerintegrationsübersicht für Commerce-Kanal
               href: localizations/fiscal-integration-for-retail-channel.md
-            - name: Steuerintegration für Commerce Channel einrichten
+            - name: Steuerintegration für Commerce-Kanal einrichten
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Benutzerdefinierte Zertifikatprofile für Einzelhandelsgeschäfte
+              href: localizations/certificate-profiles-for-retail-stores.md
             - name: Österreich
               items:
                 - name: Integrationsbeispiel für Steuererfassungsdienst für Österreich
                   href: localizations/emea-aut-fi-sample.md
+            - name: Brasilien
+              items:
+                - name: Lokalisierung von Commerce für Brasilien
+                  href: localizations/latam-bra-commerce-localization.md
             - name: Osteuropa
               items:
-                - name: Allgemeines
+                - name: Allgemein
                   items:
                     - name: Vorauszahlungsrechnungen für Commerce in Osteuropa
                       href: localizations/emea-eeu-advance-invoices-for-retail.md
@@ -2048,10 +2078,12 @@
                       href: e-commerce-extensibility/configure-theme-settings.md
                     - name: Voreinstellungen für den Designstil konfigurieren
                       href: e-commerce-extensibility/theme-style-presets.md
-                    - name: 'Ein Design erweitern, um Modulerweiterungen hinzuzufügen'
+                    - name: 'Design erweitern, um Modulerweiterungen hinzuzufügen'
                       href: e-commerce-extensibility/theme-module-extensions.md
-                    - name: Ein Design aus einem Basisdesign erweitern
+                    - name: Design aus einem Basisdesign erweitern
                       href: e-commerce-extensibility/extend-theme.md
+                    - name: Anpassungscode mit benutzerdefinierten Ressourcen ergänzen
+                      href: e-commerce-extensibility/add-custom-resources.md
                 - name: Skript einfügen
                   items:
                     - name: Skripteinfügungen
@@ -2160,15 +2192,17 @@
                   href: dev-itpro/retail-server-customer-consumer-api.md
                 - name: Neue Retail Server-Erweiterungs-API (Retail SDK-Version 10.0.11 und neuer)
                   href: dev-itpro/retail-server-icontroller-extension.md
-                - name: Neue Retail Server-Erweiterungs-API (Retail SDK-Version 10.0.11 und früher)
+                - name: Neue Retail Server-Erweiterungs-API erstellen (Retail SDK-Version 10.0.11 und früher)
                   href: dev-itpro/retail-server-extension.md
                 - name: Retail Typescript und C#-Proxys
                   href: dev-itpro/typescript-proxy-retail-pos.md
-            - name: Erweiterbarkeit der Commerce Runtime (CRT)
+                - name: Retail Server-APIs in externen Anwendungen nutzen
+                  href: dev-itpro/consume-retail-server-api
+            - name: Erweiterbarkeit von Commerce Runtime (CRT)
               items:
                 - name: Architektur und Konfiguration von CRT
                   href: dev-itpro/commerce-runtime-overview.md
-                - name: CRT-Services
+                - name: CRT-Dienste
                   href: dev-itpro/crt-services.md
                 - name: Erweiterbarkeit von CRT und Retail Server
                   href: dev-itpro/commerce-runtime-extensibility.md

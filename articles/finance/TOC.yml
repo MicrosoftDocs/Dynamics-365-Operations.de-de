@@ -58,7 +58,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Lagerung für lokale Bereitstellungen konfigurieren
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: 'Finance and Operations-Apps, bearbeitet von 21Vianet in China'
+                - name: 'Finance and Operations-Apps, betrieben von 21Vianet in China'
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
                 - name: Finance and Operations-Apps in Frankreich
                   href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
@@ -68,8 +68,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuerungen oder Änderungen auf der Finance-Startseite
+                    - name: Neuerungen oder Änderungen auf der Startseite von Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.15 (Januar 2021)
+                      href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (November 2020)
                       href: get-started/whats-new-changed-10-0-14.md
                     - name: Finance 10.0.13 (Oktober 2020)
@@ -188,13 +190,15 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
                 - name: 'FAQ zu Abonnements, LCS-Projekten und Azure AD-Mandanten'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Verschieben von Umgebungen zwischen Rechenzentren
+                - name: Umgebungen zwischen Rechenzentren verschieben
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
-                - name: Verschieben von Lizenzen zwischen Vertragstypen
+                - name: Lizenzen zwischen Vertragstypen verschieben
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
-                - name: Verschieben von LCS-Implementierungsprojekten zu anderen Azure AD-Mandanten
+                - name: LCS-Implementierungsprojekte an andere Azure AD-Mandanten verschieben
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
-                - name: Mehrere LCS-Projekte und ‑Produktionsumgebungen auf einem einzelnen Azure AD-Mandanten
+                - name: LCS-Implementierungsprojekte von lokal in die Cloud verschieben
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
+                - name: Mehrere LCS-Projekte und Produktionsumgebungen in einem einzelnen Azure AD-Mandanten
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Kreditorenkonten
           items:
@@ -222,10 +226,20 @@
               href: accounts-payable/three-way-matching-policies.md
             - name: Rechnungsabgleich von Kreditorenkonten
               items:
-                - name: Rechnungsabgleich von Kreditorenkonten – Übersicht
+                - name: Überblick über Rechnungsabgleich von Kreditorenkonten
                   href: accounts-payable/accounts-payable-invoice-matching.md
                 - name: Überprüfung des Rechnungsabgleichs von Kreditorenkonten einrichten
                   href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+            - name: Kreditorenrechnungsautomatisierung
+              items:
+                - name: Überblick über automatisierte Kreditorenabrechnungsprozesse
+                  href: accounts-payable/auto-vendr-invc-process.md
+                - name: Einrichtungsoptionen zur Automatisierung von Kreditorenrechnungen
+                  href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Rechnungen beim Workflowsystem einreichen und Produktzugangspositionen abgleichen
+                  href: accounts-payable/submit-invoice-workflow-automatically.md
+                - name: Ergebnisse der Automatisierung von Kreditorenrechnungen anzeigen
+                  href: accounts-payable/view-automated-vendor-invoice.md
             - name: Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Kreditorenrechnungen
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Rechnungsabgleich sowie Intercompany-Bestellungen
@@ -256,9 +270,9 @@
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobile Rechnungsgenehmigungen
               href: accounts-payable/mobile-invoice-approvals.md
-            - name: Arbeitsbereich für Kreditorkooperationsrechnungen
+            - name: Arbeitsbereich zur Abrechnung der Zusammenarbeit mit Kreditoren
               href: accounts-payable/vendor-portal-invoicing-workspace.md
-            - name: Kreditorenrechnungsautomatisierung
+            - name: Rechnungsautomatisierung bei gescannten Dokumenten
               href: accounts-payable/vendor-invoice-automation.md
             - name: Brokervertragsmanagement
               href: accounts-payable/broker-contract.md
@@ -336,7 +350,7 @@
               href: accounts-receivable/revenue-recognition-so-basics.md
             - name: Serienrechnungen einrichten und verarbeiten
               href: accounts-receivable/set-up-process-recurring-invoices.md
-            - name: Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen
+            - name: Buchhaltungsverteilungen und Journaleinträge im untergeordneten Sachkonto für Freitextrechnungen
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Debitoren-Buchungsprofile
               href: accounts-receivable/customer-posting-profiles.md
@@ -348,7 +362,7 @@
               href: accounts-receivable/credit-card-authorizations.md
             - name: Freitextrechnung erstellen
               href: accounts-receivable/create-free-text-invoice-new.md
-            - name: Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Freitextrechnungen
+            - name: Buchhaltungsverteilungen und Journaleinträge im untergeordneten Sachkonto für Freitextrechnungen
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
             - name: Vorlage für Freitextrechnungen erstellen
               href: accounts-receivable/create-free-text-invoice-template-new.md
@@ -450,6 +464,8 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Debitorenfälligkeitsinformationen einrichten und erstellen
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Debitorenfälligkeitsbericht
+              href: accounts-receivable/customer-aging.md
             - name: Abschreibungserfassung für Debitor erstellen
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Verwaltung erweiterter Hinweise
@@ -792,13 +808,17 @@
                   href: fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Abschreibungsmethode „Lineare Nutzungsdauer“
                   href: fixed-assets/straight-line-service-life-depreciation.md
+        - name: Anlagenleasing
+          items:
+            - name: Erste Schritte beim Anlagenleasing
+              href: asset-leasing/asset-leasing-quick-start.md
         - name: Hauptbuch
           items:
-            - name: Hauptbuch – Übersicht
+            - name: Übersicht über das Hauptbuch
               href: general-ledger/general-ledger.md
             - name: Konten
               items:
-                - name: Abgrenzungen – Übersicht
+                - name: Übersicht über Abgrenzungen
                   href: general-ledger/accruals-overview.md
                 - name: Löschungsregeln
                   href: general-ledger/elimination-rules.md
@@ -1882,9 +1902,9 @@
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: Indien GST
                   items:
-                    - name: Indien GST – Übersicht
+                    - name: Übersicht über Indien GST
                       href: localizations/apac-ind-gst.md
-                    - name: Neuerungen oder Änderungen bei der Lokalisierung von APAC-Indien-GST
+                    - name: Neuerungen oder Änderungen bei der Lokalisierung für Indien GST
                       items:
                         - name: Neuerungen oder Änderungen in 10.0.0
                           href: localizations/apac-ind-news-letter-10-0-00.md
@@ -1912,9 +1932,11 @@
                           href: localizations/apac-ind-news-letter-10-0-11.md
                         - name: Neuerungen oder Änderungen in 10.0.12
                           href: localizations/apac-ind-news-letter-10-0-12.md
-                    - name: Indien GST-Referenzgruppen
+                        - name: Neuerungen oder Änderungen in 10.0.13
+                          href: localizations/ind-news-letter-10-0-13.md
+                    - name: Indien-GST-Referenzgruppen
                       href: localizations/apac-ind-gst-reference-groups.md
-                    - name: GST-Integration für Kassen
+                    - name: GST-Integration bei Kassen
                       href: ../retail/localizations/apac-ind-cash-registers.md?toc=/dynamics365/finance/toc.json
                     - name: Masterdaten einrichten
                       items:
@@ -2022,6 +2044,8 @@
                           href: localizations/apac-ind-GST-export-services-zero-rated-tax.md
                     - name: Bestandstransaktion
                       items:
+                        - name: Aufträge mit Bestandsübertrag
+                          href: localizations/apac-ind-stock-transfer.md
                         - name: Umlagerungsaufträge mit Steuer auf den Verrechnungspreis
                           href: localizations/apac-ind-GST-stock-transfer-transactions.md
                     - name: Debitorenzahlungsbuchungen
@@ -2070,21 +2094,19 @@
                       href: localizations/tax-engine-create-tax-component.md
                     - name: Integration des Steuermoduls
                       href: general-ledger/tax-engine-integration.md
-                    - name: Steuermodul erweitern
+                    - name: Erweiterung des Steuermoduls
                       href: general-ledger/extend-tax-engine-configurations.md
                     - name: Problembehandlung bei GTE
                       href: localizations/tax-engine-trouble-shooting.md
                 - name: FAQ zu Steuerschwellenwerten
                   href: localizations/apac-ind-tax-thresholds.md
-                - name: Bestandsübertragungen
-                  href: localizations/apac-ind-stock-transfer.md
             - name: Italien
               items:
-                - name: Italien – Übersicht
+                - name: Übersicht über Italien
                   href: localizations/italy.md
                 - name: MwSt.-Abrechnungsdetails
                   href: localizations/emea-ita-vat-statements-details.md
-                - name: Bericht mit der schwarzen Liste
+                - name: Bericht zur schwarzen Liste
                   href: localizations/emea-ita-black-list-report.md
                 - name: Fälligkeitsdatum
                   href: localizations/emea-ita-competence-date.md
@@ -2456,11 +2478,11 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
             - name: Katar
               items:
-                - name: "Katar\_– Übersicht"
+                - name: Übersicht über Katar
                   href: localizations/qatar.md
             - name: Russland
               items:
-                - name: Russland – Übersicht
+                - name: Übersicht über Russland
                   href: localizations/russia.md
                 - name: Hauptbuch
                   items:
