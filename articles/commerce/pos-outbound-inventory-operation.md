@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 026d25717dec8c5633f19fe63c6d6f64284d322d
-ms.sourcegitcommit: 078befcd7f3531073ab2c08b365bcf132d6477b0
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "3646158"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971544"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Bestandsausgangsoperation in POS
 
@@ -164,7 +164,7 @@ Die Funktion **Überprüfen** überprüft die folgenden Probleme in einem ausgeh
 - **Standort nicht festgelegt**: Der Standort ist für standortgesteuerte Artikel nicht angegeben, wenn ein Standort nicht leer bleiben darf.
 - **Gelöschte Zeilen**: In dem Auftrag wurden Zeilen von einem Benutzer des Commerce Headquarters (HQ) gelöscht, der der POS-Anwendung nicht bekannt ist.
 
-Wenn Sie den Parameter **Automatische Prüfung aktivieren** auf **Ja** unter **Commerce-Parameter** > **Bestand** > **Bestand speichern** stellen, wird die Prüfung automatisch ausgeführt, wenn die Funktion **Erfüllung abschließen** ausgewählt wurde.
+Wenn Sie den Parameter **Automatische Prüfung aktivieren** auf **Ja** unter **Handelsparameter** > **Bestand** > **Bestandsvorgänge speichern** stellen, wird die Prüfung automatisch ausgeführt, wenn die Funktion **Erfüllung abschließen** ausgewählt wurde.
 
 ### <a name="finish-fulfillment"></a>Erfüllung abschließen
 

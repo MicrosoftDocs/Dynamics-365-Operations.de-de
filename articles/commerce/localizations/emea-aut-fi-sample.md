@@ -14,15 +14,15 @@ ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
 ms.search.region: Austria
 ms.search.industry: Retail
-ms.author: v-dmpere
+ms.author: josaw
 ms.search.validFrom: 2019-3-1
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: e43df9d1f394c083f6ec3460a1dd7a9b44438aac
-ms.sourcegitcommit: 50be4bcc619b71e8124ee7e933ab81a32877ad38
+ms.openlocfilehash: 586447ba324252ca0684e80471eb3aeb6c72a906
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "3741818"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979343"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-austria"></a>Integrationsbeispiel für Steuererfassungsdienst für Österreich
 

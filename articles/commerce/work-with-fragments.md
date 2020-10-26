@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 671caf1feeb7ac9e7d5a166c5de12540ab9b9792
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818349"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961657"
 ---
 # <a name="work-with-fragments"></a>Arbeiten mit Fragmenten 
 
@@ -61,8 +61,8 @@ Sie können entweder ein neues Fragment erstellen oder eine vorhandene Modulkonf
 Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederverwendbares Fragment zu konvertieren.
 
 1. Öffnen Sie eine Seite oder Vorlage, die das Modul enthält, das Sie in ein Fragment konvertieren möchten.
-1. Wählen Sie im Gliederungsbereich links oder direkt auf der Haupt-Canvas das zuvor konfigurierte Modul aus.
-1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls auf der Canvas aus. 
+1. Wählen Sie im Gliederungsbereich links oder direkt in Visual Page Builder das zuvor konfigurierte Modul aus.
+1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls im Visual Page Builder aus. 
 1. Wählen Sie **Als Seitenfragment teilen** aus. 
 1. Geben Sie im Dialogfeld **Als Seitenfragment speichern** einen Namen für das Fragment ein.
 1. Wählen Sie **OK** aus, um die Modulkonfiguration als Fragment zu speichern, das anderen Seiten hinzugefügt werden kann.
@@ -94,8 +94,8 @@ Die folgenden Prozeduren beschreiben das Hinzufügen, Entfernen und Bearbeiten v
 
 Gehen Sie folgendermaßen vor, um einer Seite ein Fragment hinzuzufügen.
 
-1. Wählen Sie im Gliederungsbereich links oder direkt auf der Haupt-Canvas einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
-1. Wählen Sie im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ die Haupt-Canvas verwenden, wählen Sie das Pluszeichen (**+**) aus.  
+1. Wählen Sie im Gliederungsbereich links oder direkt im Visual Page Builder einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
+1. Wählen Sie im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen (**+**) aus.  
 1. Wählen Sie **Fragment hinzufügen** aus.
 
     ![Ein Screenshot, in dem gezeigt wird, wie einem Slot oder Container ein vorhandenes Fragment hinzugefügt wird](./media/add-fragment.png)
@@ -115,7 +115,7 @@ Gehen Sie folgendermaßen vor, um einer Seite ein Fragment hinzuzufügen.
 
 Gehen Sie folgendermaßen vor, um ein Fragment aus einem Slot oder Container auf einer Seite zu entfernen.
 
-1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment auf der Canvas und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
+1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment in Visual Page Builder und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
 1. Wenn Sie aufgefordert werden, das Entfernen des Fragments zu bestätigen, wählen Sie **OK** aus.
 
 > [!NOTE]

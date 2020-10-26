@@ -3,7 +3,7 @@ title: Zurücksetzen der Belegnummern
 description: In diesem Thema wird beschrieben, wie Sie die Belegnummern zurücksetzen, die für verschiedene Vorgänge an einem gewünschten Datum verwendet werden (zum Beispiel das Geschäftsjahr oder das Kalenderjahr).
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/12/2020
+ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-Commerce
@@ -19,19 +19,19 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: e3243a69b98aae25ad8514890fb984c8a0d9f694
-ms.sourcegitcommit: 218e22014a964b8b52fc0152e355b07b0b84ae2c
+ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456572"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967285"
 ---
 # <a name="reset-receipt-numbers"></a>Bonnummern zurücksetzen 
 
 [!include [banner](includes/banner.md)]
 
 > [!NOTE]
-> Wir verlangen, dass Sie die Eigenmschaft **Unabhängige Reihenfolge** für alle Belegarten im Funktionsprofil auswählen, bevor diese Funktion verwendet wird. Außerdem sollte die Systemzeitzone des Geräts, in dem der POS verwendet wird, mit der entsprechenden Speicherzeitzone übereinstimmen. Wir arbeiten daran, diese Einschränkungen in einer zukünftigen Version zu beseitigen. Wenden Sie sich an den Microsoft-Support, bevor Sie diese Funktion in der Produktion verwenden.
+> Wir verlangen, dass Sie die Eigenmschaft **Unabhängige Reihenfolge** für alle Belegarten im Funktionsprofil auswählen, bevor diese Funktion verwendet wird. Außerdem sollte die Systemzeitzone des Geräts, in dem der POS verwendet wird, mit der entsprechenden Speicherzeitzone übereinstimmen. Aufgrund dieser Einschränkungen empfehlen wir, diese Funktion nicht in der Produktion zu verwenden, während wir daran arbeiten, diese Probleme in einer zukünftigen Version zu beheben. 
 
 Einzelhändler generieren Belegnummern für verschiedene Vorgänge in der Filiale, wie Cash-and-carry-Transaktionen, Rücklieferungstransaktionen, Kundenaufträge, Angebote und Zahlungen. Obwohl Einzelhändler ihre eigenen Belegformate definieren, gelten in einigen Ländern oder Regionen Bestimmungen, die diese Belegformate einschränken. Diese Bestimmungen können beispielsweise die Anzahl der Zeichen auf dem Beleg begrenzen, fortlaufende Belegnummern erfordern, einige Sonderzeichen einschränken oder ein Zurücksetzen der Belegnummern zu Beginn des Jahres erfordern. Microsoft Dynamics 365 Commerce ermöglicht eine flexible Verwaltung von Belegnummern, um Einzelhändlern zu helfen, behördliche Anforderungen zu erfüllen. In diesem Thema wird erläutert, wie Sie die Funktion zum Zurücksetzen von Belegnummern verwenden.
 

@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Austria
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: ce90b53bb3b79b4c6099a99d291d00030f9eff3a
-ms.sourcegitcommit: fbc106af09bdadb860677f590464fb93223cbf65
+ms.openlocfilehash: 5c9b261ca1e71bc705b3b11def199a6a6b4b3311
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2772869"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981884"
 ---
 # <a name="austria-overview"></a>Österreich – Übersicht
 

@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: roschlom
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 000a2861bfc108754860f4090ea34901aee5949e
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3092059"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3977190"
 ---
 # <a name="electronic-messaging"></a>Elektronische Nachrichten
 
@@ -104,7 +104,7 @@ In der folgenden Tabelle werden die Felder auf der Seite **Nachrichtenstatus** b
 
 ### <a name="additional-fields"></a>Zusätzliche Felder
 
-Die Funktion für elektronische Nachrichten ermöglicht es Ihnen, Datensätze aus einer Transaktionstabelle auszufüllen. Auf diese Weise können Sie die Datensätze für die Berichterstellung vorbereiten und diese anschließend melden. Transaktionstabellen enthalten manchmal jedoch nicht genügend Informationen, um die Datensätze in eine Weise auszufüllen, die die Berichtsanforderungen erfüllt. Um alle Informationen einzugeben, die für einen Datensatz gemeldet werden müssen, können Sie zusätzliche Felder einrichten. Zusätzliche Felder können sowohl Nachrichten als auch Nachrichtenelementen zugeordnet werden. Sie können zusätzliche Felder auf der Seite **Zusätzliche Felder** "**Steuer** \> **Einrichtung** \> **Elektronische Nachrichten** \> **Zusätzliche Felder**) einrichten.
+Die Funktion für elektronische Nachrichten ermöglicht es Ihnen, Datensätze aus einer Transaktionstabelle auszufüllen. Auf diese Weise können Sie die Datensätze für die Berichterstellung vorbereiten und diese anschließend melden. Transaktionstabellen enthalten manchmal jedoch nicht genügend Informationen, um die Datensätze in eine Weise auszufüllen, die die Berichtsanforderungen erfüllt. Um alle Informationen einzugeben, die für einen Datensatz gemeldet werden müssen, können Sie zusätzliche Felder einrichten. Zusätzliche Felder können sowohl Nachrichten als auch Nachrichtenelementen zugeordnet werden. Sie können zusätzliche Felder auf der Seite **Zusätzliche Felder** (**Steuer** \> **Einrichtung** \> **Elektronische Nachrichten** \> **Zusätzliche Felder**) einrichten.
 
 In der folgenden Tabelle werden die allgemeinen Felder auf der Seite **Zusätzliche Felder** beschrieben.
 
