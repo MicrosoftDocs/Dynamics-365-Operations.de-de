@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7c7afed8e4620d5fe49ead47eb6c17d97d7492ad
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: 6ffc772addb330abe7205007662a3f3e08a3e47f
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002800"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961585"
 ---
 # <a name="search-engine-optimization-seo-considerations-for-your-site"></a>Überlegungen zur Suchmaschinenoptimierung (SEO) für Ihre Site
 
@@ -47,7 +47,7 @@ Um die Indizierung von Suchmaschinen zu optimieren, verwendet das Rendering-Fram
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Seiten-SEO-Einstellungen für die interne Vorschau, begrenzte Zielgruppen und alle Zielgruppen
 
-Da Dynamics 365 Commerce authentifizierte WYSIWYG-Vorschauen (What you see is what you get) unterstützt, können Autoren ihren Seiteninhalt vorbereiten, ohne befürchten zu müssen, dass die Informationen für die Besucher der Website sichtbar werden. Wenn eine Seite veröffentlicht werden soll, ihre Verfügbarkeit jedoch begrenzt sein muss, sollte sie das Meta-Tag **NOINDEX** aufweisen, damit sie nicht von Suchmaschinen indiziert wird. Wenn die Seite dann für alle Zielgruppen bereit ist, sollten alle grundlegenden SEO-Metadaten vorhanden sein, um die Effizienz der Suchmaschinenindizierung zu maximieren. Darüber hinaus sollte das Metatag **NOLIMIT** entfernt werden.
+Da Dynamics 365 Commerce authentifizierte WYSIWYG-Vorschauen (What you see is what you get) in Visual Page Builder unterstützt, können Autoren ihren Seiteninhalt vorbereiten, ohne befürchten zu müssen, dass die Informationen für die Besucher der Website sichtbar werden. Wenn eine Seite veröffentlicht werden soll, ihre Verfügbarkeit jedoch begrenzt sein muss, sollte sie das Meta-Tag **NOINDEX** aufweisen, damit sie nicht von Suchmaschinen indiziert wird. Wenn die Seite dann für alle Zielgruppen bereit ist, sollten alle grundlegenden SEO-Metadaten vorhanden sein, um die Effizienz der Suchmaschinenindizierung zu maximieren. Darüber hinaus sollte das Metatag **NOLIMIT** entfernt werden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

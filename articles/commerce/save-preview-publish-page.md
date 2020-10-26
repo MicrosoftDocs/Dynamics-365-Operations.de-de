@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e1e19594327c0042915bfae87f480434a7fcb159
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: db4866b22060b764fdde3e4a44e99e969133c0a0
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3269980"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961609"
 ---
 # <a name="save-preview-and-publish-a-page"></a>Speichern, Vorschau und Veröffentlichung einer Seite
 
@@ -38,9 +38,9 @@ Wenn Sie eine Seite speichern, sind die Änderungen nur für Sie sichtbar. Der S
 
 ## <a name="preview-a-page"></a>Eine Seite als Vorschau anzeigen
 
-Das Erstellungstool bietet zwei Arten von Vorschaufunktionen: einen Vorschaubereich „What you see is what you get“ (WYSIWYG) im Seiteneditor und ein separates Vorschaufenster.
+Das Dokumenterstellungstool bietet zwei Arten von Vorschaufunktionen: Visual Page Builder, was ein „What you see is what you get“ (WYSIWYG)-Vorschaubereich im Seiteneditor ist und ein separates Vorschaufenster.
 
-Bei der Verwendung des Seiteneditors wird eine WYSIWYG-Vorschau (What you see is what you get) im mittleren Bereich angezeigt. Diese Vorschau wird automatisch aktualisiert, wenn Sie die Seite speichern. Sie können dies auch manuell aktualisieren, indem Sie **Aktualisieren** in der Befehlsleiste auswählen. In der WYSIWYG-Vorschau wird die Seite so gerendert, wie sie den Benutzern der Site angezeigt wird. Darüber werden jedoch Autorenhilfen gerendert.
+Bei der Verwendung des Seiteneditors wird eine WYSIWYG-Vorschau (What you see is what you get) im mittleren Bereich angezeigt. Diese Vorschau wird automatisch aktualisiert, wenn Sie die Seite speichern. Sie können dies auch manuell aktualisieren, indem Sie **Aktualisieren** in der Befehlsleiste auswählen. In der Vorschau wird die Seite so gerendert, wie sie den Benutzern der Site angezeigt wird. Darüber werden jedoch Dokumenterstellungshilfen gerendert.
 
 Wenn Sie die Seite geändert haben, möchten Sie möglicherweise eine Vorschau anzeigen, um zu sehen, was Kunden sehen werden. Um eine Seite als Vorschau anzuzeigen, wählen Sie **Vorschau** in der Befehlsleiste aus. Die Vorschau wird in einem separaten Browserfenster angezeigt. Die Seite im Vorschaufenster wird so gerendert, wie es der Benutzer der Site sieht. Sie können die Größe des Fensters ändern, um sicherzustellen, dass die reagierenden Module in allen Ansichtsports korrekt gerendert werden.
 

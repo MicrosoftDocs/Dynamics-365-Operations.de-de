@@ -3,7 +3,7 @@ title: Erstellen oder Bearbeiten eines Kalenders
 description: Teamkalender erstellen und anpassen in Dynamics 365 Human Resources.
 author: andreabichsel
 manager: AnnBe
-ms.date: 09/11/2020
+ms.date: 10/7/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7d11b11864f73d4405a4e3629e6873b8cd13e8d
-ms.sourcegitcommit: 1edd3d4642f8fdc801b43b981b7c1a1c36ae0645
+ms.openlocfilehash: bd9a2a928e1f528065a00fecfb19a08edef86bf8
+ms.sourcegitcommit: 6a89816f94c8cdcae6e56fa89843eb99c28b21fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "3796468"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "3968997"
 ---
 # <a name="view-team-and-company-calendars"></a>Team- und Unternehmenskalender anzeigen
 
@@ -50,8 +50,6 @@ Personen, die in der Personalabteilung tätig sind, können Unternehmenskalender
 2. Wählen Sie **Urlaubs- und Abwesenheitskalender**.
 
 Personalrollen können auch über auf den Unternehmenskalender **Urlaubs- und Abwesenheitsanträge**, **Genehmigte Freizeit**, und **Freizeitanfragen** zugreifen. 
-
-[!include [banner](includes/preview-feature.md)]
 
 Kalender enthalten jetzt zusätzliche Filter und Optionen. Alle Kalender enthalten Ansichtsoptionen für:
 

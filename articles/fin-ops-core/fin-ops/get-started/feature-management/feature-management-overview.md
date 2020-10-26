@@ -3,7 +3,7 @@ title: Überblick über die Funktionsverwaltung
 description: In diesem Thema werden die Funktionsverwaltungsfunktion und deren Verwendung beschrieben.
 author: ChrisGarty
 manager: AnnBe
-ms.date: 06/15/2020
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: ae2c7a0d089c81a62932c415eed5f752e7fb4ffa
-ms.sourcegitcommit: 17a8e3d48da4354ba74e35031c320a16369bfcd5
+ms.openlocfilehash: 22e5333859d37ad33f5806d63fc874b1b5a52831
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "3499618"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967333"
 ---
 # <a name="feature-management-overview"></a>Funktionsverwaltung – Übersicht
 
@@ -179,3 +179,24 @@ Funktionen-Flights sind Echtzeit-Ein/Aus-Schalter, die Microsoft steuert. Sie si
 
 ### <a name="do-features-ever-get-flighted-off-without-the-customer-knowing-about-it"></a>Werden Funktionen jemals ausgeschaltet, ohne dass der Kunde davon erfährt? 
 Ja, wenn eine Funktion die Funktionsweise einer Umgebung beeinträchtigt, die keine funktionalen Auswirkungen hat, können sie standardmäßig aktiviert werden.
+
+### <a name="how-can-feature-enablement-be-checked-in-code"></a>Wie kann die Funktionsaktivierung im Code überprüft werden?
+Verwenden Sie die **isFeatureEnabled**-Methode auf der **FeatureStateProvider**-Klasse, wobei eine Instanz der Funktionsklasse übergeben wird. Beispiel: 
+
+    if (FeatureStateProvider::isFeatureEnabled(BatchContentionPreventionFeature::instance()))
+
+### <a name="how-can-feature-enablement-be-checked-in-metadata"></a>Wie kann die Funktionsaktivierung in Metadaten überprüft werden?
+Mit der Eigenschaft **FeatureClass** kann angegeben werden, dass einige Metadaten einer Funktion zugeordnet sind. Der für die Funktion verwendete Klassenname sollte verwendet werden, z.B. **BatchContentionPreventionFeature**. Diese Metadaten sind nur in dieser Funktion sichtbar. Die Eigenschaft **FeatureClass** ist für Menüs, Menüelemente, Aufzählungswerte und Tabellen-/Ansichtsfelder verfügbar.
+
+### <a name="what-is-a-feature-class"></a>Was ist eine Funktionsklasse (Feature Class)?
+Funktionen in der Funktionsverwaltung sind definiert als *Funktionsklassen*. Eine Funktionsklasse **implementiert IFeatureMetadata** und verwendet das Funktionsklassenattribut, um sich im Funktionsverwaltung-Arbeitsbereich zu identifizieren. Es gibt zahlreiche Beispiele für Funktionsklassen, die im Code mit der API **FeatureStateProvider** und in den Metadaten mit der Eigenschaft **FeatureClass** auf Aktivierung überprüft werden können. Beispiel: 
+
+    [ExportAttribute(identifierStr(Microsoft.Dynamics.ApplicationPlatform.FeatureExposure.IFeatureMetadata))]
+    internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMetadata
+    
+### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Was ist der IFeatureLifecycle, der von einigen Funktionsklassen implementiert wird?
+IFeatureLifecycle ist ein Microsoft-interner Mechanismus zur Angabe der Funktions-Lebenszyklusphase. Funktionen können sein:
+- Private Vorschau – Benötigt einen Flug, um sichtbar zu sein.
+- Öffentliche Vorschau – Wird standardmäßig angezeigt, jedoch mit einer Warnung, dass sich die Funktion in der Vorschau befindet.
+- Freigegeben – Vollständig freigegeben.
+
