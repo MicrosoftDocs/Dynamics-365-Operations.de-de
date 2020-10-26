@@ -16,15 +16,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 7a1721b3206f8a3df010f26dc31e3ac4e5e0878b
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.openlocfilehash: ee5775826c4f7f499d015145a5e8f0f6c7a42903
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887015"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987388"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Sicherheitslagerbestandserfüllung für Artikel
 
@@ -111,7 +111,7 @@ Um zu zeigen, wie dies funktioniert, beachten Sie folgendes Szenario.
 
 Sicherheitslagerbestand wird im System als Bedarfstyp nachverfolgt, genauso wie Auftragspositionen oder Stücklistenbedarf. Sie können die Sicherheitslagerbestandsbedarfs-Position auf der Seite **Bedarfsverlauf** anzeigen, wenn Sie den Standardfilter in der Spalte **Bedarfstyp** entfernen.
 
-Die Priorität für Erfüllung der Sicherheitsbestandsbedarfs-Transaktion wird aufgehoben, wenn vom System festgestellt wird, dass dies zu Verzögerungen in der Erfüllung von tatsächlichen Bedarf führt, wie beispielsweise Verkaufspositionen, Stücklistenpositionen, Umlagerungsanforderung oder Bedarfsplanungspositionen. Andernfalls hat das Sicherstellen, dass der verfügbare Bestand über der Sicherheitsbestandsmenge liegt, dieselbe Priorität, wie irgendwelche anderen Bedarfstypen. Dadurch wird sichergestellt, dass es keine Verzögerungen bei realen Transaktionen gibt, und eine überhöhte Wiederbeschaffung und eine verfrühte Wiederbeschaffung von Sicherheitslagerbestand kann so leichter vermieden werden.
+Die Priorität zur Erfüllung der Sicherheitsbestandsanforderungs-Transaktion wird aufgehoben, wenn vom System festgestellt wird, dass dies zu Verzögerungen in der Erfüllung von tatsächlichem Bedarf führt, wie beispielsweise Verkaufspositionen, Stücklistenpositionen, Umlagerungsanforderung oder Bedarfsplanungspositionen. Andernfalls hat das Sicherstellen, dass der verfügbare Bestand über der Sicherheitsbestandsmenge liegt, dieselbe Priorität, wie irgendwelche anderen Bedarfstypen. Dadurch wird sichergestellt, dass es keine Verzögerungen bei realen Transaktionen gibt, und eine überhöhte Wiederbeschaffung und eine verfrühte Wiederbeschaffung von Sicherheitslagerbestand kann so leichter vermieden werden.
 
 Während der Deckungsphase der Produktprogrammplanung wird die Priorität für die Wiederbeschaffung von Sicherheitslagerbestand nicht mehr aufgehoben. Verfügbarer Lagerbestand kann vor irgendwelchen anderen Bedarfstypen verwendet werden. Während der Verzögerungsberechnung wird neue Logik hinzugefügt, um die verzögerten Verkaufspositionen, Stücklistenpositionsbedarf und alle anderen Bedarfstypen durchzugehen, um zu bestimmen, ob sie rechtzeitig geliefert werden können, vorausgesetzt, dass der Sicherheitslagerbestand verwendet wird. Wenn das System identifiziert, dass es Verzögerungen durch die Verwendung des Sicherheitsbestands minimieren kann, dann werden Verkaufspositionen und Stücklistenpositionen ihre anfängliche Deckung durch Sicherheitsbestand ersetzen, und das System löst stattdessen die Wiederbeschaffung für den Sicherheitsbestand aus.
 
