@@ -3,7 +3,7 @@ title: Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telem
 description: In diesem Thema wird beschrieben, wie ein clientseitiger Skriptcode den Standortsseiten hinzugefügt wird, um die Sammlung der clientseitigen Telemetrie zu unterstützen.
 author: bicyclingfool
 manager: annbe
-ms.date: 08/31/2020
+ms.date: 09/29/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a88f4f920154aafaa15a48af67365152e21111f7
-ms.sourcegitcommit: 420b9e538f706178f8e1f2786e02f4f400bf2336
+ms.openlocfilehash: e15ba6a0d624bd97c25936aa6d3bfafb844b66c0
+ms.sourcegitcommit: 7e8a9f92a2675bf5b620889678a2918f63f3e199
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761248"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "3901495"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Hinzufügen von Skriptcode zu Standortseiten zur Unterstützung von Telemetrie
 
@@ -64,6 +64,9 @@ Führen Sie die folgenden Schritte aus, um ein wiederverwendbares Fragment für 
 1. Im Eigenschaftenfenster rechts unter **Skriptquelle** fügen Sie eine externe oder relative URL für die externe Skriptquelle hinzu. Konfigurieren Sie dann andere Optionen nach Bedarf.
 1. Wählen Sie **Speichern** und dann **Bearbeiten beenden** aus.
 1. Wählen Sie **Veröffentlichen** aus.
+
+> [!NOTE]
+> Wenn die Inhaltssicherheitsrichtlinie (Content Security Policy, CSP) für Ihre Site aktiviert ist, stellen Sie sicher, dass alle externen URLs zur Inhaltssicherheitsrichtlinie **script-src** im Commerce Site Builder hinzugefügt werden. Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie (CSP) verwalten](manage-csp.md).
 
 ## <a name="add-a-fragment-that-includes-script-code-to-a-template"></a>Fügen Sie einer Vorlage ein Fragment hinzu, das Skriptcode enthält
 

@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6710dcb1cb53e7221b03b35ceee5ac8e055b6dd2
-ms.sourcegitcommit: 175f9394021322c685c5b37317c2f649c81a731a
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "3826405"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958740"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuelle Zeitplanung für Lean Manufacturing
 
@@ -61,7 +61,7 @@ Die Seite **Kanban-Zeitplanübersicht** enthält sieben wichtige Elemente, wie i
 
 ### <a name="view-the-time-scale"></a>Zeigt die Zeitskala an
 
-Die Karte ist in Perioden aufgeteilt, die jeweils als Knoten (4) dargestellt sind. Die Periodenknoten werden auf der vertikalen Achse aufgeführt, und der horizontale Zugriff stellt einen Zeitraum (7) dar, mit dem die Länge der Periode angezeigt wird. Eine Periode hat eine Länge entweder von einem Tag oder eine Woche. Die Periodenlänge wird von der Konfiguration der Fertigungszelle bestimmt, die für die Kanban-Zeitplanübersicht (2) ausgewählt wird. Für jeden Periodenknoten gibt die Kanban-Zeitplanübersicht an, wie viel die geplanten Kanban-Einzelvorgänge die Periode laden. Es gibt auch hier eine Indikation für den maximalen Durchsatz für die Periode. Wenn der geplante Durchsatz den maximalen Durchsatz überschreitet, wird die Periode als überladen betrachtet und ein rotes Warnsymbol angezeigt. Ein geplanter Kanban-Einzelvorgang wird in einer Periode angezeigt, die Start- und Endzeiten (5) geplant hat. Die Länge des Einzelvorgangs entspricht der Aktivitätszeit. Kanban-Einzelvorgänge werden als überschneidend in einer Periode angezeigt, wenn deren Aktivitätszeiten der Taktzeit der Fertigungszelle überschreiten.
+Die Karte ist in Perioden aufgeteilt, die jeweils als Knoten (4) dargestellt sind. Die Periodenknoten werden auf der vertikalen Achse aufgeführt, und die horizontale Achse stellt eine Zeitskala (7) dar, mit dem die Länge der Periode angezeigt wird. Eine Periode hat eine Länge entweder von einem Tag oder eine Woche. Die Periodenlänge wird von der Konfiguration der Fertigungszelle bestimmt, die für die Kanban-Zeitplanübersicht (2) ausgewählt wird. Für jeden Periodenknoten gibt die Kanban-Zeitplanübersicht an, wie viel die geplanten Kanban-Einzelvorgänge die Periode laden. Es gibt auch hier eine Indikation für den maximalen Durchsatz für die Periode. Wenn der geplante Durchsatz den maximalen Durchsatz überschreitet, wird die Periode als überladen betrachtet und ein rotes Warnsymbol angezeigt. Ein geplanter Kanban-Einzelvorgang wird in einer Periode angezeigt, die Start- und Endzeiten (5) geplant hat. Die Länge des Einzelvorgangs entspricht der Aktivitätszeit. Kanban-Einzelvorgänge werden als überschneidend in einer Periode angezeigt, wenn deren Aktivitätszeiten die Aufgabenzeit der Arbeitsgruppe überschreiten.
 
 ### <a name="view-job-status"></a>Den Einzelvorgangsstatus anzeigen
 
