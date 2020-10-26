@@ -15,28 +15,28 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff99161aa88e853790ddbf5f327bff5bb3898f56
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: c65a63dc48be6241ea23c5330fc3fbe526207613
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3202835"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987485"
 ---
-# <a name="create-reason-codes"></a><span data-ttu-id="36fbb-103">Erstellen von Ursachencodes</span><span class="sxs-lookup"><span data-stu-id="36fbb-103">Create reason codes</span></span>    
+# <a name="create-reason-codes"></a><span data-ttu-id="437d1-103">Erstellen von Ursachencodes</span><span class="sxs-lookup"><span data-stu-id="437d1-103">Create reason codes</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  <span data-ttu-id="36fbb-104">Klicken auf **Serviceverwaltung** \> **Einrichtung** \> **Serviceaufträge** \> **Phasenursachencodes**.</span><span class="sxs-lookup"><span data-stu-id="36fbb-104">Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.</span></span>
+1.  <span data-ttu-id="437d1-104">Klicken auf **Serviceverwaltung** \> **Einrichtung** \> **Serviceaufträge** \> **Phasenursachencodes**.</span><span class="sxs-lookup"><span data-stu-id="437d1-104">Click **Service management** \> **Setup** \> **Service orders** \> **Stage reason codes**.</span></span>
 
-2.  <span data-ttu-id="36fbb-105">Erstellen Sie durch Drücken von STRG+N einen neuen Ursachencode.</span><span class="sxs-lookup"><span data-stu-id="36fbb-105">Press CTRL+N to create a new reason code.</span></span>
+2.  <span data-ttu-id="437d1-105">Erstellen Sie durch Drücken von STRG+N einen neuen Ursachencode.</span><span class="sxs-lookup"><span data-stu-id="437d1-105">Press CTRL+N to create a new reason code.</span></span>
 
-3.  <span data-ttu-id="36fbb-106">Drücken Sie zum Speichern des Ursachencodes die Tastenkombination STRG+S.</span><span class="sxs-lookup"><span data-stu-id="36fbb-106">Press CTRL+S to save the reason code.</span></span>
+3.  <span data-ttu-id="437d1-106">Drücken Sie zum Speichern des Ursachencodes die Tastenkombination STRG+S.</span><span class="sxs-lookup"><span data-stu-id="437d1-106">Press CTRL+S to save the reason code.</span></span>
 
-<span data-ttu-id="36fbb-107">Wenn Sie zur Angabe eines Ursachencodes aufgefordert werden, um zu erklären, warum Sie eine Phase des Serviceauftrags aktualisieren, können Sie unter allen Ursachencodes auswählen, die Sie hier erstellen.</span><span class="sxs-lookup"><span data-stu-id="36fbb-107">When you are prompted for a reason code to explain why you are updating a stage of the service order, you can select any of the reason codes that you create here.</span></span>
+<span data-ttu-id="437d1-107">Wenn Sie zur Angabe eines Ursachencodes aufgefordert werden, um zu erklären, warum Sie eine Phase des Serviceauftrags aktualisieren, können Sie unter allen Ursachencodes auswählen, die Sie hier erstellen.</span><span class="sxs-lookup"><span data-stu-id="437d1-107">When you are prompted for a reason code to explain why you are updating a stage of the service order, you can select any of the reason codes that you create here.</span></span>
 
   
 

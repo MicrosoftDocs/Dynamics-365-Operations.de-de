@@ -14,33 +14,33 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: shylaw
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8eb9873f0ad6f404dc88d27ed5feedfc71fd62b5
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: f351da832f8fa62935d09c6ce6ede277971dbbbc
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201409"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982306"
 ---
-# <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="e6d1d-103">Transporteinschränkungen für einen Artikel einrichten</span><span class="sxs-lookup"><span data-stu-id="e6d1d-103">Set up transportation constraints for an item</span></span>
+# <a name="set-up-transportation-constraints-for-an-item"></a><span data-ttu-id="73d16-103">Transporteinschränkungen für einen Artikel einrichten</span><span class="sxs-lookup"><span data-stu-id="73d16-103">Set up transportation constraints for an item</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="e6d1d-104">Bei dieser Prozedur wird eine Transporteinschränkung eingerichtet, um zu verhindern, dass ein ausgewählter Artikel über einen ausgewählten Hub transportiert wird.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="e6d1d-105">Diese Aufgabe wird normalerweise von einem Transportkoordinator ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="e6d1d-106">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
+<span data-ttu-id="73d16-104">Bei dieser Prozedur wird eine Transporteinschränkung eingerichtet, um zu verhindern, dass ein ausgewählter Artikel über einen ausgewählten Hub transportiert wird.</span><span class="sxs-lookup"><span data-stu-id="73d16-104">This procedure will set up a transportation constraint to prevent a selected item from being transported through a selected hub.</span></span> <span data-ttu-id="73d16-105">Diese Aufgabe wird normalerweise von einem Transportkoordinator ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="73d16-105">This task would typically be carried out by a Transportation coordinator.</span></span> <span data-ttu-id="73d16-106">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="73d16-106">You can use this procedure in the USMF demo data company or on your own data.</span></span>
 
 
-## <a name="create-an-item-constaint"></a><span data-ttu-id="e6d1d-107">Erstellen Sie eine Artikeleinschränkung</span><span class="sxs-lookup"><span data-stu-id="e6d1d-107">Create an item constaint</span></span>
-1. <span data-ttu-id="e6d1d-108">Wechseln Sie zu "Einschränkungen".</span><span class="sxs-lookup"><span data-stu-id="e6d1d-108">Go to Constraints.</span></span>
-2. <span data-ttu-id="e6d1d-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="e6d1d-109">Click New.</span></span>
-3. <span data-ttu-id="e6d1d-110">Geben Sie im Feld "Artikeleinschränkung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-110">In the Item constraint field, type a value.</span></span>
-4. <span data-ttu-id="e6d1d-111">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-111">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="e6d1d-112">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-112">In the Site field, enter or select a value.</span></span>
-6. <span data-ttu-id="e6d1d-113">Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-113">In the Warehouse field, enter or select a value.</span></span>
-7. <span data-ttu-id="e6d1d-114">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-114">In the Item number field, enter or select a value.</span></span>
-8. <span data-ttu-id="e6d1d-115">Geben Sie im Feld "Hub" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-115">In the Hub field, enter or select a value.</span></span>
-9. <span data-ttu-id="e6d1d-116">Wählen Sie im Feld "Einschränkungsaktivität" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-116">In the Constraint action field, select an option.</span></span>
-10. <span data-ttu-id="e6d1d-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="e6d1d-117">Click Save.</span></span>
-11. <span data-ttu-id="e6d1d-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="e6d1d-118">Close the page.</span></span>
+## <a name="create-an-item-constaint"></a><span data-ttu-id="73d16-107">Erstellen Sie eine Artikeleinschränkung</span><span class="sxs-lookup"><span data-stu-id="73d16-107">Create an item constaint</span></span>
+1. <span data-ttu-id="73d16-108">Wechseln Sie zu "Einschränkungen".</span><span class="sxs-lookup"><span data-stu-id="73d16-108">Go to Constraints.</span></span>
+2. <span data-ttu-id="73d16-109">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="73d16-109">Click New.</span></span>
+3. <span data-ttu-id="73d16-110">Geben Sie im Feld "Artikeleinschränkung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="73d16-110">In the Item constraint field, type a value.</span></span>
+4. <span data-ttu-id="73d16-111">Geben Sie im Feld "Name" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="73d16-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="73d16-112">Geben Sie im Feld "Standort" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="73d16-112">In the Site field, enter or select a value.</span></span>
+6. <span data-ttu-id="73d16-113">Geben Sie im Feld 'Lagerort' einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="73d16-113">In the Warehouse field, enter or select a value.</span></span>
+7. <span data-ttu-id="73d16-114">Geben Sie im Feld "Artikelnummer" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="73d16-114">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="73d16-115">Geben Sie im Feld "Hub" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="73d16-115">In the Hub field, enter or select a value.</span></span>
+9. <span data-ttu-id="73d16-116">Wählen Sie im Feld "Einschränkungsaktivität" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="73d16-116">In the Constraint action field, select an option.</span></span>
+10. <span data-ttu-id="73d16-117">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="73d16-117">Click Save.</span></span>
+11. <span data-ttu-id="73d16-118">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="73d16-118">Close the page.</span></span>
 
