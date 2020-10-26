@@ -15,24 +15,24 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5fc7e88451c4d9a915743babb8ec8f96f002e91
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0c0a1ebd51830766332929792ddc0256ab15f5b2
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3211812"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975799"
 ---
-# <a name="project-attached-to-service-agreement"></a><span data-ttu-id="96ec6-103">Der Servicevereinbarung zugeordnetes Projekt</span><span class="sxs-lookup"><span data-stu-id="96ec6-103">Project attached to service agreement</span></span> 
+# <a name="project-attached-to-service-agreement"></a><span data-ttu-id="8ea54-103">Der Servicevereinbarung zugeordnetes Projekt</span><span class="sxs-lookup"><span data-stu-id="8ea54-103">Project attached to service agreement</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="96ec6-104">Servicevereinbarungen können allen Projekttypen mit Ausnahme von Projekten vom Typ "**Zeit**" zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="96ec6-104">You can attach service agreements to projects of every type except the **Time project** type.</span></span>
+<span data-ttu-id="8ea54-104">Servicevereinbarungen können allen Projekttypen mit Ausnahme von Projekten vom Typ "**Zeit**" zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="8ea54-104">You can attach service agreements to projects of every type except the **Time project** type.</span></span>
 
-<span data-ttu-id="96ec6-105">Alle Serviceauftragsbuchungen werden in dem Projekt erfasst und gebucht, das der Servicevereinbarung zugeordnet wird.</span><span class="sxs-lookup"><span data-stu-id="96ec6-105">You register and post all service order transactions through the project that you attach to the service agreement.</span></span> <span data-ttu-id="96ec6-106">Die Erfassungen, in denen diese Buchungen erfasst und gebucht werden, werden auf dem Link **Erfassungen** in dem Formular **Serviceverwaltungsparameter** angegeben.</span><span class="sxs-lookup"><span data-stu-id="96ec6-106">You specify the journals in which these transactions are registered and posted on the **Journals** link in the **Service management parameters** form.</span></span>
+<span data-ttu-id="8ea54-105">Alle Serviceauftragsbuchungen werden in dem Projekt erfasst und gebucht, das der Servicevereinbarung zugeordnet wird.</span><span class="sxs-lookup"><span data-stu-id="8ea54-105">You register and post all service order transactions through the project that you attach to the service agreement.</span></span> <span data-ttu-id="8ea54-106">Die Erfassungen, in denen diese Buchungen erfasst und gebucht werden, werden auf dem Link **Erfassungen** in dem Formular **Serviceverwaltungsparameter** angegeben.</span><span class="sxs-lookup"><span data-stu-id="8ea54-106">You specify the journals in which these transactions are registered and posted on the **Journals** link in the **Service management parameters** form.</span></span>
 
   
 
