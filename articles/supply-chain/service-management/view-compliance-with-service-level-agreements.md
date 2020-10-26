@@ -15,36 +15,36 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cfaee379f45c2516598089f29ed6235f9c5d11a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 6df9f7cb6c5062841d5c9855833a58e11be690a4
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206449"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3987437"
 ---
-# <a name="view-compliance-with-service-level-agreements"></a><span data-ttu-id="2de5c-103">Anzeigen der Konformität mit Vereinbarungen zum Servicelevel</span><span class="sxs-lookup"><span data-stu-id="2de5c-103">View compliance with service level agreements</span></span>    
+# <a name="view-compliance-with-service-level-agreements"></a><span data-ttu-id="48196-103">Anzeigen der Konformität mit Vereinbarungen zum Servicelevel</span><span class="sxs-lookup"><span data-stu-id="48196-103">View compliance with service level agreements</span></span>    
 
 [!include [banner](../includes/banner.md)]
 
 
-## <a name="view-compliance-with-a-service-level-agreement"></a><span data-ttu-id="2de5c-104">Anzeigen der Konformität (Compliance) mit einer Vereinbarung zum Servicelevel</span><span class="sxs-lookup"><span data-stu-id="2de5c-104">View compliance with a service level agreement</span></span>
+## <a name="view-compliance-with-a-service-level-agreement"></a><span data-ttu-id="48196-104">Anzeigen der Konformität (Compliance) mit einer Vereinbarung zum Servicelevel</span><span class="sxs-lookup"><span data-stu-id="48196-104">View compliance with a service level agreement</span></span>
 
-1.  <span data-ttu-id="2de5c-105">Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.</span><span class="sxs-lookup"><span data-stu-id="2de5c-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="2de5c-106">Wählen Sie einen Serviceauftrag aus, und doppelklicken Sie darauf, um das Formular mit den Details zum Auftrag zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="2de5c-106">Select a service order and double-click to open the details form for the order.</span></span>
+1.  <span data-ttu-id="48196-105">Klicken auf **Serviceverwaltung** \> **Gemeinsam** \> **Serviceaufträge** \> **Serviceaufträge**.</span><span class="sxs-lookup"><span data-stu-id="48196-105">Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.</span></span> <span data-ttu-id="48196-106">Wählen Sie einen Serviceauftrag aus, und doppelklicken Sie darauf, um das Formular mit den Details zum Auftrag zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="48196-106">Select a service order and double-click to open the details form for the order.</span></span>
 
-2.  <span data-ttu-id="2de5c-107">Prüfen Sie auf der Registerkarte **Allgemein** im Feld **Konformität**, wie viel Zeit (in Prozent) für den Serviceauftrag aufgewendet wurde. Hierbei wird der in der Vereinbarung zum Servicelevel angegebene Zeitrahmen als Vergleichswert herangezogen.</span><span class="sxs-lookup"><span data-stu-id="2de5c-107">On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.</span></span>
+2.  <span data-ttu-id="48196-107">Prüfen Sie auf der Registerkarte **Allgemein** im Feld **Konformität**, wie viel Zeit (in Prozent) für den Serviceauftrag aufgewendet wurde. Hierbei wird der in der Vereinbarung zum Servicelevel angegebene Zeitrahmen als Vergleichswert herangezogen.</span><span class="sxs-lookup"><span data-stu-id="48196-107">On the **General** tab, in the **Compliance** field, view the percentage of time that was spent on the service order compared to the time frame specified in the service level agreement.</span></span>
 
 
 > [!TIP]
-> <span data-ttu-id="2de5c-108">Übersteigt der Wert im Feld <STRONG>Konformität</STRONG> den Wert "100", wurde das Zeitlimit aus der Vereinbarung zum Servicelevel überschritten.</span><span class="sxs-lookup"><span data-stu-id="2de5c-108">If the value in the <STRONG>Compliance</STRONG> field is larger than 100, the time limit of the service level agreement has been exceeded.</span></span>
+> <span data-ttu-id="48196-108">Übersteigt der Wert im Feld <STRONG>Konformität</STRONG> den Wert "100", wurde das Zeitlimit aus der Vereinbarung zum Servicelevel überschritten.</span><span class="sxs-lookup"><span data-stu-id="48196-108">If the value in the <STRONG>Compliance</STRONG> field is larger than 100, the time limit of the service level agreement has been exceeded.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="2de5c-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2de5c-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="48196-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="48196-109">See also</span></span>
 
-[<span data-ttu-id="2de5c-110">Vereinbarungen zum Servicelevel – Übersicht</span><span class="sxs-lookup"><span data-stu-id="2de5c-110">Service level agreements overview</span></span>](service-level-agreements.md)
+[<span data-ttu-id="48196-110">Vereinbarungen zum Servicelevel – Übersicht</span><span class="sxs-lookup"><span data-stu-id="48196-110">Service level agreements overview</span></span>](service-level-agreements.md)
 
   
 
