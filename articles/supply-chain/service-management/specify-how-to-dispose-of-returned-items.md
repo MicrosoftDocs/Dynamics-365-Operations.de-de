@@ -15,26 +15,26 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb991b5e9abbe517dcbd73de4f34744955383e82
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b2b1468328433a67253bafc21ac9c9b3a2398872
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3206656"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3981665"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a><span data-ttu-id="329dd-103">Angeben zur Entsorgung zurückgelieferter Artikel</span><span class="sxs-lookup"><span data-stu-id="329dd-103">Specify how to dispose of returned items</span></span> 
+# <a name="specify-how-to-dispose-of-returned-items"></a><span data-ttu-id="4bba8-103">Angeben zur Entsorgung zurückgelieferter Artikel</span><span class="sxs-lookup"><span data-stu-id="4bba8-103">Specify how to dispose of returned items</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="329dd-104">Wenn Sie eine Rücklieferung verarbeiten, muss mittels eines Ursachencodes angegeben werden warum das Produkt zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="329dd-104">When you handle a return order, you must specify a reason return code to identify why the product is being returned.</span></span> <span data-ttu-id="329dd-105">Sie müssen auch einen Dispositionscode und eine Dispositionsaktivität angeben, um zu bestimmen, wie mit dem zurückgelieferten Produkt verfahren werden soll.</span><span class="sxs-lookup"><span data-stu-id="329dd-105">You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.</span></span>
+<span data-ttu-id="4bba8-104">Wenn Sie eine Rücklieferung verarbeiten, muss mittels eines Ursachencodes angegeben werden warum das Produkt zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="4bba8-104">When you handle a return order, you must specify a reason return code to identify why the product is being returned.</span></span> <span data-ttu-id="4bba8-105">Sie müssen auch einen Dispositionscode und eine Dispositionsaktivität angeben, um zu bestimmen, wie mit dem zurückgelieferten Produkt verfahren werden soll.</span><span class="sxs-lookup"><span data-stu-id="4bba8-105">You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.</span></span>
 
-<span data-ttu-id="329dd-106">Ein Dispositionscode kann beim Erstellen der Rücklieferung, beim Erfassen des Wareneingangs oder beim Ausführen einer Lieferscheinaktualisierung eines Wareneingangs sowie beim Beenden eines Quarantäneauftrags angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="329dd-106">A disposition code can be applied when you create the return order, register item arrival or packing-slip update an item arrival, and end a quarantine order.</span></span>
+<span data-ttu-id="4bba8-106">Ein Dispositionscode kann beim Erstellen der Rücklieferung, beim Erfassen des Wareneingangs oder beim Ausführen einer Lieferscheinaktualisierung eines Wareneingangs sowie beim Beenden eines Quarantäneauftrags angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="4bba8-106">A disposition code can be applied when you create the return order, register item arrival or packing-slip update an item arrival, and end a quarantine order.</span></span>
 
-<span data-ttu-id="329dd-107">Sie haben die Möglichkeit zum Erstellen beliebiger Dispositionscodes, die für die verwendeten Geschäftsprozesse benötigt werden.</span><span class="sxs-lookup"><span data-stu-id="329dd-107">You can define any disposition codes that you need in order to support the business processes.</span></span> <span data-ttu-id="329dd-108">In der folgenden Tabelle finden Sie eine Reihe häufig verwendeter Codes für die Disposition zurückgelieferter Artikel:</span><span class="sxs-lookup"><span data-stu-id="329dd-108">The following table provides a set of typically used codes to assign return-item disposition.</span></span>
+<span data-ttu-id="4bba8-107">Sie haben die Möglichkeit zum Erstellen beliebiger Dispositionscodes, die für die verwendeten Geschäftsprozesse benötigt werden.</span><span class="sxs-lookup"><span data-stu-id="4bba8-107">You can define any disposition codes that you need in order to support the business processes.</span></span> <span data-ttu-id="4bba8-108">In der folgenden Tabelle finden Sie eine Reihe häufig verwendeter Codes für die Disposition zurückgelieferter Artikel:</span><span class="sxs-lookup"><span data-stu-id="4bba8-108">The following table provides a set of typically used codes to assign return-item disposition.</span></span>
 
 <table>
 <colgroup>
@@ -44,87 +44,87 @@ ms.locfileid: "3206656"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="329dd-109">Dispositionstyp</span><span class="sxs-lookup"><span data-stu-id="329dd-109">Disposition type</span></span></p></th>
-<th><p><span data-ttu-id="329dd-110">Allgemeiner Code</span><span class="sxs-lookup"><span data-stu-id="329dd-110">Common code</span></span></p></th>
-<th><p><span data-ttu-id="329dd-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="329dd-111">Description</span></span></p></th>
+<th><p><span data-ttu-id="4bba8-109">Dispositionstyp</span><span class="sxs-lookup"><span data-stu-id="4bba8-109">Disposition type</span></span></p></th>
+<th><p><span data-ttu-id="4bba8-110">Allgemeiner Code</span><span class="sxs-lookup"><span data-stu-id="4bba8-110">Common code</span></span></p></th>
+<th><p><span data-ttu-id="4bba8-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4bba8-111">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-112">Abgang</span><span class="sxs-lookup"><span data-stu-id="329dd-112">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="329dd-113">AV</span><span class="sxs-lookup"><span data-stu-id="329dd-113">SC</span></span></p></td>
-<td><p><span data-ttu-id="329dd-114">Ausschuss/Vernichtung</span><span class="sxs-lookup"><span data-stu-id="329dd-114">Scrap/Destroy</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-112">Abgang</span><span class="sxs-lookup"><span data-stu-id="4bba8-112">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-113">AV</span><span class="sxs-lookup"><span data-stu-id="4bba8-113">SC</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-114">Ausschuss/Vernichtung</span><span class="sxs-lookup"><span data-stu-id="4bba8-114">Scrap/Destroy</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-115">Abgang</span><span class="sxs-lookup"><span data-stu-id="329dd-115">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="329dd-116">WZ</span><span class="sxs-lookup"><span data-stu-id="329dd-116">DC</span></span></p></td>
-<td><p><span data-ttu-id="329dd-117">Spende für wohltätige Zwecke</span><span class="sxs-lookup"><span data-stu-id="329dd-117">Donate to Charity</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-115">Abgang</span><span class="sxs-lookup"><span data-stu-id="4bba8-115">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-116">WZ</span><span class="sxs-lookup"><span data-stu-id="4bba8-116">DC</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-117">Spende für wohltätige Zwecke</span><span class="sxs-lookup"><span data-stu-id="4bba8-117">Donate to Charity</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-118">Abgang</span><span class="sxs-lookup"><span data-stu-id="329dd-118">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="329dd-119">ED</span><span class="sxs-lookup"><span data-stu-id="329dd-119">TD</span></span></p></td>
-<td><p><span data-ttu-id="329dd-120">Entsorgung durch Dritte</span><span class="sxs-lookup"><span data-stu-id="329dd-120">Third-Party Disposal</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-118">Abgang</span><span class="sxs-lookup"><span data-stu-id="4bba8-118">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-119">ED</span><span class="sxs-lookup"><span data-stu-id="4bba8-119">TD</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-120">Entsorgung durch Dritte</span><span class="sxs-lookup"><span data-stu-id="4bba8-120">Third-Party Disposal</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-121">Abgang</span><span class="sxs-lookup"><span data-stu-id="329dd-121">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="329dd-122">AM</span><span class="sxs-lookup"><span data-stu-id="329dd-122">SL</span></span></p></td>
-<td><p><span data-ttu-id="329dd-123">Altmaterial</span><span class="sxs-lookup"><span data-stu-id="329dd-123">Salvage</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-121">Abgang</span><span class="sxs-lookup"><span data-stu-id="4bba8-121">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-122">AM</span><span class="sxs-lookup"><span data-stu-id="4bba8-122">SL</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-123">Altmaterial</span><span class="sxs-lookup"><span data-stu-id="4bba8-123">Salvage</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-124">Abgang</span><span class="sxs-lookup"><span data-stu-id="329dd-124">Disposal</span></span></p></td>
-<td><p><span data-ttu-id="329dd-125">VD</span><span class="sxs-lookup"><span data-stu-id="329dd-125">TS</span></span></p></td>
-<td><p><span data-ttu-id="329dd-126">Verkauf durch Dritte (Sekundärmärkte)</span><span class="sxs-lookup"><span data-stu-id="329dd-126">Third-Party Sale (Secondary Markets)</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-124">Abgang</span><span class="sxs-lookup"><span data-stu-id="4bba8-124">Disposal</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-125">VD</span><span class="sxs-lookup"><span data-stu-id="4bba8-125">TS</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-126">Verkauf durch Dritte (Sekundärmärkte)</span><span class="sxs-lookup"><span data-stu-id="4bba8-126">Third-Party Sale (Secondary Markets)</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-127">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="329dd-127">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="329dd-128">NB</span><span class="sxs-lookup"><span data-stu-id="329dd-128">RW</span></span></p></td>
-<td><p><span data-ttu-id="329dd-129">Nachbesserung</span><span class="sxs-lookup"><span data-stu-id="329dd-129">Rework</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-127">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-127">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-128">NB</span><span class="sxs-lookup"><span data-stu-id="4bba8-128">RW</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-129">Nachbesserung</span><span class="sxs-lookup"><span data-stu-id="4bba8-129">Rework</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-130">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="329dd-130">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="329dd-131">AÜ</span><span class="sxs-lookup"><span data-stu-id="329dd-131">RF</span></span></p></td>
-<td><p><span data-ttu-id="329dd-132">Aufbereitung/Überholung</span><span class="sxs-lookup"><span data-stu-id="329dd-132">Remanufacture/Refurbish</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-130">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-130">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-131">AÜ</span><span class="sxs-lookup"><span data-stu-id="4bba8-131">RF</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-132">Aufbereitung/Überholung</span><span class="sxs-lookup"><span data-stu-id="4bba8-132">Remanufacture/Refurbish</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-133">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="329dd-133">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="329dd-134">AÄ</span><span class="sxs-lookup"><span data-stu-id="329dd-134">MD</span></span></p></td>
-<td><p><span data-ttu-id="329dd-135">Abänderung</span><span class="sxs-lookup"><span data-stu-id="329dd-135">Modify</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-133">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-133">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-134">AÄ</span><span class="sxs-lookup"><span data-stu-id="4bba8-134">MD</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-135">Abänderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-135">Modify</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-136">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="329dd-136">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="329dd-137">RP</span><span class="sxs-lookup"><span data-stu-id="329dd-137">RP</span></span></p></td>
-<td><p><span data-ttu-id="329dd-138">Reparatur</span><span class="sxs-lookup"><span data-stu-id="329dd-138">Repair</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-136">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-136">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-137">RP</span><span class="sxs-lookup"><span data-stu-id="4bba8-137">RP</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-138">Reparatur</span><span class="sxs-lookup"><span data-stu-id="4bba8-138">Repair</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-139">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="329dd-139">Repair/Modify</span></span></p></td>
-<td><p><span data-ttu-id="329dd-140">RK</span><span class="sxs-lookup"><span data-stu-id="329dd-140">RV</span></span></p></td>
-<td><p><span data-ttu-id="329dd-141">Rücklieferung an Kreditor</span><span class="sxs-lookup"><span data-stu-id="329dd-141">Return to Vendor</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-139">Reparatur/Abänderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-139">Repair/Modify</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-140">RK</span><span class="sxs-lookup"><span data-stu-id="4bba8-140">RV</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-141">Rücklieferung an Kreditor</span><span class="sxs-lookup"><span data-stu-id="4bba8-141">Return to Vendor</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-142">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="329dd-142">Other</span></span></p></td>
-<td><p><span data-ttu-id="329dd-143">KÄ</span><span class="sxs-lookup"><span data-stu-id="329dd-143">AI</span></span></p></td>
-<td><p><span data-ttu-id="329dd-144">Keine Änderung</span><span class="sxs-lookup"><span data-stu-id="329dd-144">Use as is</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-142">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="4bba8-142">Other</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-143">KÄ</span><span class="sxs-lookup"><span data-stu-id="4bba8-143">AI</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-144">Keine Änderung</span><span class="sxs-lookup"><span data-stu-id="4bba8-144">Use as is</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-145">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="329dd-145">Other</span></span></p></td>
-<td><p><span data-ttu-id="329dd-146">WV</span><span class="sxs-lookup"><span data-stu-id="329dd-146">RS</span></span></p></td>
-<td><p><span data-ttu-id="329dd-147">Wiederverkauf</span><span class="sxs-lookup"><span data-stu-id="329dd-147">Resale</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-145">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="4bba8-145">Other</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-146">WV</span><span class="sxs-lookup"><span data-stu-id="4bba8-146">RS</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-147">Wiederverkauf</span><span class="sxs-lookup"><span data-stu-id="4bba8-147">Resale</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-148">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="329dd-148">Other</span></span></p></td>
-<td><p><span data-ttu-id="329dd-149">AT</span><span class="sxs-lookup"><span data-stu-id="329dd-149">EX</span></span></p></td>
-<td><p><span data-ttu-id="329dd-150">Austausch</span><span class="sxs-lookup"><span data-stu-id="329dd-150">Exchange</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-148">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="4bba8-148">Other</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-149">AT</span><span class="sxs-lookup"><span data-stu-id="4bba8-149">EX</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-150">Austausch</span><span class="sxs-lookup"><span data-stu-id="4bba8-150">Exchange</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-151">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="329dd-151">Other</span></span></p></td>
-<td><p><span data-ttu-id="329dd-152">SO</span><span class="sxs-lookup"><span data-stu-id="329dd-152">MS</span></span></p></td>
-<td><p><span data-ttu-id="329dd-153">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="329dd-153">Miscellaneous</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-151">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="4bba8-151">Other</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-152">SO</span><span class="sxs-lookup"><span data-stu-id="4bba8-152">MS</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-153">Sonstiges</span><span class="sxs-lookup"><span data-stu-id="4bba8-153">Miscellaneous</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="329dd-154">Für jeden Dispositionscode, den Sie definieren, müssen Sie eine Dispositionsaktivität auswählen.</span><span class="sxs-lookup"><span data-stu-id="329dd-154">For each disposition code that you define, you must select a disposition action.</span></span> <span data-ttu-id="329dd-155">Die Dispositionsaktivität bestimmt die physischen und die finanziellen Auswirkungen der Dispositionscodes.</span><span class="sxs-lookup"><span data-stu-id="329dd-155">The disposition action determines the physical and financial implications of the disposition codes.</span></span> <span data-ttu-id="329dd-156">Beispielsweise bestimmt die Dispositionsaktivität die physische Handhaben der zurückgelieferten Artikel, die finanziellen Auswirkungen des zurückgegebenen Artikels und wenn ein Ersetzungsartikel an den Debitor gesendet werden muss.</span><span class="sxs-lookup"><span data-stu-id="329dd-156">For example, the disposition action determines the physical handling of the returned item, the financial effect of the returned item, and if a replacement item must be sent to the customer.</span></span> <span data-ttu-id="329dd-157">Sie können eine unbegrenzte Anzahl Dispositionscodes gemäß Ihren Geschäftsanforderungen definieren, es bestehen jedoch nur sechs vordefinierte Dispositionsaktivitäten, von denen Sie auswählen können.</span><span class="sxs-lookup"><span data-stu-id="329dd-157">You can define an unlimited number of disposition codes according to your business needs, but there are only six predefined disposition actions that you can select from.</span></span> <span data-ttu-id="329dd-158">Die folgende Tabelle enthält die Dispositionsaktivitäten und deren Definitionen.</span><span class="sxs-lookup"><span data-stu-id="329dd-158">The following table provides the disposition actions and their definitions.</span></span>
+<span data-ttu-id="4bba8-154">Für jeden Dispositionscode, den Sie definieren, müssen Sie eine Dispositionsaktivität auswählen.</span><span class="sxs-lookup"><span data-stu-id="4bba8-154">For each disposition code that you define, you must select a disposition action.</span></span> <span data-ttu-id="4bba8-155">Die Dispositionsaktivität bestimmt die physischen und die finanziellen Auswirkungen der Dispositionscodes.</span><span class="sxs-lookup"><span data-stu-id="4bba8-155">The disposition action determines the physical and financial implications of the disposition codes.</span></span> <span data-ttu-id="4bba8-156">Beispielsweise bestimmt die Dispositionsaktivität die physische Handhaben der zurückgelieferten Artikel, die finanziellen Auswirkungen des zurückgegebenen Artikels und wenn ein Ersetzungsartikel an den Debitor gesendet werden muss.</span><span class="sxs-lookup"><span data-stu-id="4bba8-156">For example, the disposition action determines the physical handling of the returned item, the financial effect of the returned item, and if a replacement item must be sent to the customer.</span></span> <span data-ttu-id="4bba8-157">Sie können eine unbegrenzte Anzahl Dispositionscodes gemäß Ihren Geschäftsanforderungen definieren, es bestehen jedoch nur sechs vordefinierte Dispositionsaktivitäten, von denen Sie auswählen können.</span><span class="sxs-lookup"><span data-stu-id="4bba8-157">You can define an unlimited number of disposition codes according to your business needs, but there are only six predefined disposition actions that you can select from.</span></span> <span data-ttu-id="4bba8-158">Die folgende Tabelle enthält die Dispositionsaktivitäten und deren Definitionen.</span><span class="sxs-lookup"><span data-stu-id="4bba8-158">The following table provides the disposition actions and their definitions.</span></span>
 
 <table>
 <colgroup>
@@ -133,52 +133,52 @@ ms.locfileid: "3206656"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="329dd-159">Dispositionsaktivität</span><span class="sxs-lookup"><span data-stu-id="329dd-159">Disposition action</span></span></p></th>
-<th><p><span data-ttu-id="329dd-160">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="329dd-160">Description</span></span></p></th>
+<th><p><span data-ttu-id="4bba8-159">Dispositionsaktivität</span><span class="sxs-lookup"><span data-stu-id="4bba8-159">Disposition action</span></span></p></th>
+<th><p><span data-ttu-id="4bba8-160">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4bba8-160">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-161"><strong>Entlastung</strong></span><span class="sxs-lookup"><span data-stu-id="329dd-161"><strong>Credit</strong></span></span></p></td>
-<td><p><span data-ttu-id="329dd-162">Den Artikel zum Lager zurücksenden und dem Debitor gutschreiben.</span><span class="sxs-lookup"><span data-stu-id="329dd-162">Return the item to inventory and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-161"><strong>Entlastung</strong></span><span class="sxs-lookup"><span data-stu-id="4bba8-161"><strong>Credit</strong></span></span></p></td>
+<td><p><span data-ttu-id="4bba8-162">Den Artikel zum Lager zurücksenden und dem Debitor gutschreiben.</span><span class="sxs-lookup"><span data-stu-id="4bba8-162">Return the item to inventory and credit the customer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-163"><strong>Nur gutschreiben</strong></span><span class="sxs-lookup"><span data-stu-id="329dd-163"><strong>Credit only</strong></span></span></p></td>
-<td><p><span data-ttu-id="329dd-164">Schreiben Sie den Artikel dem Debitor gut, ohne den Artikel einzufordern oder zu erwarten, dass er zurückgeliefert wird.</span><span class="sxs-lookup"><span data-stu-id="329dd-164">Credit the customer without requiring or expecting the item to be returned.</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-163"><strong>Nur gutschreiben</strong></span><span class="sxs-lookup"><span data-stu-id="4bba8-163"><strong>Credit only</strong></span></span></p></td>
+<td><p><span data-ttu-id="4bba8-164">Schreiben Sie den Artikel dem Debitor gut, ohne den Artikel einzufordern oder zu erwarten, dass er zurückgeliefert wird.</span><span class="sxs-lookup"><span data-stu-id="4bba8-164">Credit the customer without requiring or expecting the item to be returned.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-165"><strong>Ausschuss</strong></span><span class="sxs-lookup"><span data-stu-id="329dd-165"><strong>Scrap</strong></span></span></p></td>
-<td><p><span data-ttu-id="329dd-166">Verschrotten Sie den Artikel und schreiben Sie ihn dem Debitor gut.</span><span class="sxs-lookup"><span data-stu-id="329dd-166">Scrap the item and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-165"><strong>Ausschuss</strong></span><span class="sxs-lookup"><span data-stu-id="4bba8-165"><strong>Scrap</strong></span></span></p></td>
+<td><p><span data-ttu-id="4bba8-166">Verschrotten Sie den Artikel und schreiben Sie ihn dem Debitor gut.</span><span class="sxs-lookup"><span data-stu-id="4bba8-166">Scrap the item and credit the customer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-167"><strong>Ersatz und Entlastung</strong></span><span class="sxs-lookup"><span data-stu-id="329dd-167"><strong>Replace and credit</strong></span></span></p></td>
-<td><p><span data-ttu-id="329dd-168">Geben Sie den Artikel dem Lager zurück, erstellen Sie einen Ersetzungsauftrag und schreiben Sie ihn dem Debitor gut.</span><span class="sxs-lookup"><span data-stu-id="329dd-168">Return the item to inventory, create a replacement order, and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-167"><strong>Ersatz und Entlastung</strong></span><span class="sxs-lookup"><span data-stu-id="4bba8-167"><strong>Replace and credit</strong></span></span></p></td>
+<td><p><span data-ttu-id="4bba8-168">Geben Sie den Artikel dem Lager zurück, erstellen Sie einen Ersetzungsauftrag und schreiben Sie ihn dem Debitor gut.</span><span class="sxs-lookup"><span data-stu-id="4bba8-168">Return the item to inventory, create a replacement order, and credit the customer.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="329dd-169"><strong>Ersatz und Aussonderung</strong></span><span class="sxs-lookup"><span data-stu-id="329dd-169"><strong>Replace and scrap</strong></span></span></p></td>
-<td><p><span data-ttu-id="329dd-170">Verschrotten Sie den Artikel, erstellen Sie einen Ersetzungsauftrag und schreiben Sie ihn dem Debitor gut.</span><span class="sxs-lookup"><span data-stu-id="329dd-170">Scrap the item, create a replacement order, and credit the customer.</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-169"><strong>Ersatz und Aussonderung</strong></span><span class="sxs-lookup"><span data-stu-id="4bba8-169"><strong>Replace and scrap</strong></span></span></p></td>
+<td><p><span data-ttu-id="4bba8-170">Verschrotten Sie den Artikel, erstellen Sie einen Ersetzungsauftrag und schreiben Sie ihn dem Debitor gut.</span><span class="sxs-lookup"><span data-stu-id="4bba8-170">Scrap the item, create a replacement order, and credit the customer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="329dd-171"><strong>Rückgabe an den Debitor</strong></span><span class="sxs-lookup"><span data-stu-id="329dd-171"><strong>Return to customer</strong></span></span></p></td>
-<td><p><span data-ttu-id="329dd-172">Lehnen Sie den zurückgesendeten Artikel ab und senden Sie ihn dem Debitor zurück.</span><span class="sxs-lookup"><span data-stu-id="329dd-172">Reject the returned item and return it to the customer.</span></span></p></td>
+<td><p><span data-ttu-id="4bba8-171"><strong>Rückgabe an den Debitor</strong></span><span class="sxs-lookup"><span data-stu-id="4bba8-171"><strong>Return to customer</strong></span></span></p></td>
+<td><p><span data-ttu-id="4bba8-172">Lehnen Sie den zurückgesendeten Artikel ab und senden Sie ihn dem Debitor zurück.</span><span class="sxs-lookup"><span data-stu-id="4bba8-172">Reject the returned item and return it to the customer.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="select-a-disposition-code-for-a-quarantine-order"></a><span data-ttu-id="329dd-173">Auswählen eines Dispositionscodes für einen Quarantäneauftrag</span><span class="sxs-lookup"><span data-stu-id="329dd-173">Select a disposition code for a quarantine order</span></span>
+## <a name="select-a-disposition-code-for-a-quarantine-order"></a><span data-ttu-id="4bba8-173">Auswählen eines Dispositionscodes für einen Quarantäneauftrag</span><span class="sxs-lookup"><span data-stu-id="4bba8-173">Select a disposition code for a quarantine order</span></span>
 
-1.  <span data-ttu-id="329dd-174">Klicken Sie auf **Lagerverwaltung** \> **Periodisch** \> **Qualitätsmanagement** \> **Quarantäneaufträge**.</span><span class="sxs-lookup"><span data-stu-id="329dd-174">Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.</span></span>
+1.  <span data-ttu-id="4bba8-174">Klicken Sie auf **Lagerverwaltung** \> **Periodisch** \> **Qualitätsmanagement** \> **Quarantäneaufträge**.</span><span class="sxs-lookup"><span data-stu-id="4bba8-174">Click **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.</span></span>
 
-2.  <span data-ttu-id="329dd-175">Wählen Sie für einen vorhandenen Quarantäneauftrag auf der Registerkarte **Übersicht** im Feld **Dispositionscode** eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="329dd-175">For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.</span></span>
+2.  <span data-ttu-id="4bba8-175">Wählen Sie für einen vorhandenen Quarantäneauftrag auf der Registerkarte **Übersicht** im Feld **Dispositionscode** eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="4bba8-175">For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="329dd-176">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="329dd-176">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4bba8-176">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4bba8-176">See also</span></span>
 
-<span data-ttu-id="329dd-177">[Formular "Quarantäneauftrag"](https://technet.microsoft.com/library/aa554073(v=ax.60))</span><span class="sxs-lookup"><span data-stu-id="329dd-177">[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))</span></span>
+<span data-ttu-id="4bba8-177">[Formular "Quarantäneauftrag"](https://technet.microsoft.com/library/aa554073(v=ax.60))</span><span class="sxs-lookup"><span data-stu-id="4bba8-177">[Quarantine order (form)](https://technet.microsoft.com/library/aa554073(v=ax.60))</span></span>
 
-<span data-ttu-id="329dd-178">[Dispositionscodes (Formular)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="329dd-178">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
+<span data-ttu-id="4bba8-178">[Dispositionscodes (Formular)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span><span class="sxs-lookup"><span data-stu-id="4bba8-178">[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))</span></span>
 
   
 

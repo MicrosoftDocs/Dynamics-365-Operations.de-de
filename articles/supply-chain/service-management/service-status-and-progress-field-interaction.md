@@ -15,22 +15,22 @@ ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: ShylaThompson
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd70d00f7ce531b225362065dfd9f1f5c1adc754
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: a94f2df6a4ddb71a29ff951dfe38618ac7762783
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207323"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3975487"
 ---
-# <a name="service-status-and-progress-field-interaction"></a><span data-ttu-id="426e3-103">Interaktion zwischen Servicestatus und Statusfeld</span><span class="sxs-lookup"><span data-stu-id="426e3-103">Service status and progress field interaction</span></span> 
+# <a name="service-status-and-progress-field-interaction"></a><span data-ttu-id="6abd3-103">Interaktion zwischen Servicestatus und Statusfeld</span><span class="sxs-lookup"><span data-stu-id="6abd3-103">Service status and progress field interaction</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="426e3-104">Im Formular "**Serviceauftärge** wird im Feld "**Fortschritt**" im Serviceauftragskopf der Status des gesamten Serviceauftrags angezeigt, und unter "**Statusberichte**" wird der Status der einzelnen Serviceauftragspositionen angegeben.</span><span class="sxs-lookup"><span data-stu-id="426e3-104">In the **Service orders** form, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.</span></span>
+<span data-ttu-id="6abd3-104">Im Formular "**Serviceauftärge** wird im Feld "**Fortschritt**" im Serviceauftragskopf der Status des gesamten Serviceauftrags angezeigt, und unter "**Statusberichte**" wird der Status der einzelnen Serviceauftragspositionen angegeben.</span><span class="sxs-lookup"><span data-stu-id="6abd3-104">In the **Service orders** form, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.</span></span>
 
 <table>
 <colgroup>
@@ -41,56 +41,56 @@ ms.locfileid: "3207323"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="426e3-105">Status</span><span class="sxs-lookup"><span data-stu-id="426e3-105">Progress</span></span></p></th>
-<th><p><span data-ttu-id="426e3-106">Position 1 Status</span><span class="sxs-lookup"><span data-stu-id="426e3-106">Line 1 Status</span></span></p></th>
-<th><p><span data-ttu-id="426e3-107">Position 2 Status</span><span class="sxs-lookup"><span data-stu-id="426e3-107">Line 2 Status</span></span></p></th>
-<th><p><span data-ttu-id="426e3-108">Position 3 Status</span><span class="sxs-lookup"><span data-stu-id="426e3-108">Line 3 Status</span></span></p></th>
+<th><p><span data-ttu-id="6abd3-105">Status</span><span class="sxs-lookup"><span data-stu-id="6abd3-105">Progress</span></span></p></th>
+<th><p><span data-ttu-id="6abd3-106">Position 1 Status</span><span class="sxs-lookup"><span data-stu-id="6abd3-106">Line 1 Status</span></span></p></th>
+<th><p><span data-ttu-id="6abd3-107">Position 2 Status</span><span class="sxs-lookup"><span data-stu-id="6abd3-107">Line 2 Status</span></span></p></th>
+<th><p><span data-ttu-id="6abd3-108">Position 3 Status</span><span class="sxs-lookup"><span data-stu-id="6abd3-108">Line 3 Status</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="426e3-109"><strong>In Bearbeitung</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-109"><strong>In process</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-110"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-110"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-111"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-111"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-112"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-112"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-109"><strong>In Bearbeitung</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-109"><strong>In process</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-110"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-110"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-111"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-111"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-112"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-112"><strong>Created</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="426e3-113"><strong>In Bearbeitung</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-113"><strong>In process</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-114"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-114"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-115"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-115"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-116"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-116"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-113"><strong>In Bearbeitung</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-113"><strong>In process</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-114"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-114"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-115"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-115"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-116"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-116"><strong>Created</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="426e3-117"><strong>In Bearbeitung</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-117"><strong>In process</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-118"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-118"><strong>Created</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-119"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-119"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-120"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-120"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-117"><strong>In Bearbeitung</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-117"><strong>In process</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-118"><strong>Erstellt</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-118"><strong>Created</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-119"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-119"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-120"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-120"><strong>Posted</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="426e3-121"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-121"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-122"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-122"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-123"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-123"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-124"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-124"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-121"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-121"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-122"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-122"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-123"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-123"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-124"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-124"><strong>Canceled</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="426e3-125"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-125"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-126"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-126"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-127"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-127"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-128"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-128"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-125"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-125"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-126"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-126"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-127"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-127"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-128"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-128"><strong>Posted</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="426e3-129"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-129"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-130"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-130"><strong>Posted</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-131"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-131"><strong>Canceled</strong></span></span></p></td>
-<td><p><span data-ttu-id="426e3-132"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="426e3-132"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-129"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-129"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-130"><strong>Gebucht</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-130"><strong>Posted</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-131"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-131"><strong>Canceled</strong></span></span></p></td>
+<td><p><span data-ttu-id="6abd3-132"><strong>Storniert</strong></span><span class="sxs-lookup"><span data-stu-id="6abd3-132"><strong>Canceled</strong></span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="426e3-133">Der Fortschritt eines Serviceauftrags vollzieht sich, wenn alle Positionen den Status **Erstellt** besitzen. Er ist nach wie vor aktiv, wenn einige der Positionen den Status **Storniert** oder **Gebucht** besitzen.</span><span class="sxs-lookup"><span data-stu-id="426e3-133">The progress of a service order is in process if all lines have the status **Created**; it is still in process if some of the lines have a status of **Canceled** or **Posted**.</span></span>
+<span data-ttu-id="6abd3-133">Der Fortschritt eines Serviceauftrags vollzieht sich, wenn alle Positionen den Status **Erstellt** besitzen. Er ist nach wie vor aktiv, wenn einige der Positionen den Status **Storniert** oder **Gebucht** besitzen.</span><span class="sxs-lookup"><span data-stu-id="6abd3-133">The progress of a service order is in process if all lines have the status **Created**; it is still in process if some of the lines have a status of **Canceled** or **Posted**.</span></span>
 
-<span data-ttu-id="426e3-134">Werden alle Positionen in einem Serviceauftrag als **Gebucht** markiert, lautet der Fortschritt des Statusauftrags **Gebucht**.</span><span class="sxs-lookup"><span data-stu-id="426e3-134">If all lines in a service order are marked as **Posted**, the progress of the status order is **Posted**.</span></span> <span data-ttu-id="426e3-135">Gilt für einige Positionen der Status **Gebucht** und für andere **Storniert**, gilt für den Fortschritt nach wie vor der Status **Gebucht**.</span><span class="sxs-lookup"><span data-stu-id="426e3-135">If some lines are **Posted** and some are **Canceled**, the progress is still **Posted**.</span></span>
+<span data-ttu-id="6abd3-134">Werden alle Positionen in einem Serviceauftrag als **Gebucht** markiert, lautet der Fortschritt des Statusauftrags **Gebucht**.</span><span class="sxs-lookup"><span data-stu-id="6abd3-134">If all lines in a service order are marked as **Posted**, the progress of the status order is **Posted**.</span></span> <span data-ttu-id="6abd3-135">Gilt für einige Positionen der Status **Gebucht** und für andere **Storniert**, gilt für den Fortschritt nach wie vor der Status **Gebucht**.</span><span class="sxs-lookup"><span data-stu-id="6abd3-135">If some lines are **Posted** and some are **Canceled**, the progress is still **Posted**.</span></span>
 
   
 
