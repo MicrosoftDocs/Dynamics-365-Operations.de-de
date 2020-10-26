@@ -14,55 +14,55 @@ ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: conradv
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 261bb1b99045cc78f0e74e1ed2ad7fa133d8ebe6
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 91e1535ab6b53ad60394967d0377606a0cd27d01
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212341"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983445"
 ---
-# <a name="create-activity-relation---successor"></a><span data-ttu-id="f01a9-103">Aktivitätsrelation erstellen -  Nachfolger</span><span class="sxs-lookup"><span data-stu-id="f01a9-103">Create activity relation - Successor</span></span>
+# <a name="create-activity-relation---successor"></a><span data-ttu-id="0a343-103">Aktivitätsrelation erstellen -  Nachfolger</span><span class="sxs-lookup"><span data-stu-id="0a343-103">Create activity relation - Successor</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="f01a9-104">Der Ablauf von Aktivitäten in einem Leanproduktionsfluss wird durch Aktivitätsrelationen dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="f01a9-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="f01a9-105">Diese Aufzeichnung zeigt, wie Sie eine Aktivitätsrelation erstellen.</span><span class="sxs-lookup"><span data-stu-id="f01a9-105">This recording shows how to create an activity relation.</span></span>
+<span data-ttu-id="0a343-104">Der Ablauf von Aktivitäten in einem Leanproduktionsfluss wird durch Aktivitätsrelationen dokumentiert.</span><span class="sxs-lookup"><span data-stu-id="0a343-104">The flow of activities in a lean production flow is documented through activity relations.</span></span> <span data-ttu-id="0a343-105">Diese Aufzeichnung zeigt, wie Sie eine Aktivitätsrelation erstellen.</span><span class="sxs-lookup"><span data-stu-id="0a343-105">This recording shows how to create an activity relation.</span></span>
 
-<span data-ttu-id="f01a9-106">Voraussetzungen:</span><span class="sxs-lookup"><span data-stu-id="f01a9-106">Prerequisites:</span></span>
+<span data-ttu-id="0a343-106">Voraussetzungen:</span><span class="sxs-lookup"><span data-stu-id="0a343-106">Prerequisites:</span></span>
 
-- <span data-ttu-id="f01a9-107">Ein Produktionsfluss und eine Version im Entwurfsmodus.</span><span class="sxs-lookup"><span data-stu-id="f01a9-107">A production flow and version in draft mode.</span></span> 
+- <span data-ttu-id="0a343-107">Ein Produktionsfluss und eine Version im Entwurfsmodus.</span><span class="sxs-lookup"><span data-stu-id="0a343-107">A production flow and version in draft mode.</span></span> 
 
-- <span data-ttu-id="f01a9-108">Zwei Aktivitäten, die im Produktionsfluss aufeinander folgen, werden erstellt, sind aber nicht verknüpft.</span><span class="sxs-lookup"><span data-stu-id="f01a9-108">Two activities that follow each other in the production flow are created but not related.</span></span>
+- <span data-ttu-id="0a343-108">Zwei Aktivitäten, die im Produktionsfluss aufeinander folgen, werden erstellt, sind aber nicht verknüpft.</span><span class="sxs-lookup"><span data-stu-id="0a343-108">Two activities that follow each other in the production flow are created but not related.</span></span>
 
 
-## <a name="find-the-production-flow-version"></a><span data-ttu-id="f01a9-109">Produktionsflussversion suchen</span><span class="sxs-lookup"><span data-stu-id="f01a9-109">Find the production flow version</span></span> 
-1. <span data-ttu-id="f01a9-110">Wechseln Sie zu "Produktionssteuerung" > "Einrichten" > "Lean-Produktionsfluss" > "Produktionsflüsse".</span><span class="sxs-lookup"><span data-stu-id="f01a9-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
-2. <span data-ttu-id="f01a9-111">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="f01a9-111">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="f01a9-112">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="f01a9-112">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="f01a9-113">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="f01a9-113">In the list, mark the selected row.</span></span>
-5. <span data-ttu-id="f01a9-114">Wählen Sie in der Liste ein Entwurfsversion aus.</span><span class="sxs-lookup"><span data-stu-id="f01a9-114">In the list, select a draft version.</span></span>
-    * <span data-ttu-id="f01a9-115">Aktivitätsrelationen können zum Entwurf oder zu aktiven Versionen eines Produktionsflusses hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="f01a9-115">Activity relations can be added to both draft or active versions of a production flow.</span></span>  
+## <a name="find-the-production-flow-version"></a><span data-ttu-id="0a343-109">Produktionsflussversion suchen</span><span class="sxs-lookup"><span data-stu-id="0a343-109">Find the production flow version</span></span> 
+1. <span data-ttu-id="0a343-110">Wechseln Sie zu "Produktionssteuerung" > "Einrichten" > "Lean-Produktionsfluss" > "Produktionsflüsse".</span><span class="sxs-lookup"><span data-stu-id="0a343-110">Go to Production control > Setup > Lean production flow > Production flows.</span></span>
+2. <span data-ttu-id="0a343-111">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="0a343-111">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="0a343-112">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="0a343-112">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="0a343-113">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="0a343-113">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="0a343-114">Wählen Sie in der Liste ein Entwurfsversion aus.</span><span class="sxs-lookup"><span data-stu-id="0a343-114">In the list, select a draft version.</span></span>
+    * <span data-ttu-id="0a343-115">Aktivitätsrelationen können zum Entwurf oder zu aktiven Versionen eines Produktionsflusses hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="0a343-115">Activity relations can be added to both draft or active versions of a production flow.</span></span>  
 
-## <a name="open-the-activity-overview"></a><span data-ttu-id="f01a9-116">Aktivitätsüberblick öffnen</span><span class="sxs-lookup"><span data-stu-id="f01a9-116">Open the activity overview</span></span>
-1. <span data-ttu-id="f01a9-117">Klicken Sie auf "Aktivitäten".</span><span class="sxs-lookup"><span data-stu-id="f01a9-117">Click Activities.</span></span>
-    * <span data-ttu-id="f01a9-118">Beachten Sie, dass im Formular alle Aktivitäten des Produktionsflusses angezeigt werden, die der Version der Produktionsflüsse zugeordnet sind, in der Sie arbeiten.</span><span class="sxs-lookup"><span data-stu-id="f01a9-118">Note that the form shows all activities of the production flow that are allocated to the Version of the production flows that you are working in.</span></span>  
+## <a name="open-the-activity-overview"></a><span data-ttu-id="0a343-116">Aktivitätsüberblick öffnen</span><span class="sxs-lookup"><span data-stu-id="0a343-116">Open the activity overview</span></span>
+1. <span data-ttu-id="0a343-117">Klicken Sie auf "Aktivitäten".</span><span class="sxs-lookup"><span data-stu-id="0a343-117">Click Activities.</span></span>
+    * <span data-ttu-id="0a343-118">Beachten Sie, dass im Formular alle Aktivitäten des Produktionsflusses angezeigt werden, die der Version der Produktionsflüsse zugeordnet sind, in der Sie arbeiten.</span><span class="sxs-lookup"><span data-stu-id="0a343-118">Note that the form shows all activities of the production flow that are allocated to the Version of the production flows that you are working in.</span></span>  
 
-## <a name="add-a-successor"></a><span data-ttu-id="f01a9-119">Eine Folgeaktivität hinzufügen</span><span class="sxs-lookup"><span data-stu-id="f01a9-119">Add a Successor</span></span>
-1. <span data-ttu-id="f01a9-120">Klicken Sie "Folgeaktivität hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="f01a9-120">Click Add successor.</span></span>
-2. <span data-ttu-id="f01a9-121">Klicken Sie im Feld "Aktivität" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f01a9-121">In the Activity field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="f01a9-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="f01a9-122">In the list, find and select the desired record.</span></span>
-4. <span data-ttu-id="f01a9-123">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="f01a9-123">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="f01a9-124">Markieren Sie das Kontrollkästchen "Einschränkung".</span><span class="sxs-lookup"><span data-stu-id="f01a9-124">Select the Constraint check box.</span></span>
-6. <span data-ttu-id="f01a9-125">Geben Sie eine Zahl in das Feld 'Einschränkungswert' ein.</span><span class="sxs-lookup"><span data-stu-id="f01a9-125">In the Constraint value field, enter a number.</span></span>
-    * <span data-ttu-id="f01a9-126">Die Einschränkungszeit ist die Zeit, die zwischen dem geplanten Enddatum der vorherigen Aktivität (Fälligkeitsdatum und Uhrzeit) und dem geplantem Start der Folgeaktivität eingeplant wird.</span><span class="sxs-lookup"><span data-stu-id="f01a9-126">The constraint time is the time to be scheduled between the scheduled end of the predecessor (due date and time) and the scheduled start of the successor.</span></span>  
-7. <span data-ttu-id="f01a9-127">Geben Sie im Feld "Einheit" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="f01a9-127">In the Units field, type a value.</span></span>
-8. <span data-ttu-id="f01a9-128">Geben Sie im Feld "Zykluszeitanteil" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="f01a9-128">In the Cycle time ratio field, enter a number.</span></span>
-    * <span data-ttu-id="f01a9-129">Wenn beide Aktionen am gleichen Takt ausgeführt werden, sollte der Zykluszeitanteil 1 sein.</span><span class="sxs-lookup"><span data-stu-id="f01a9-129">If both activities run at the same takt, the cycle time ratio should be 1.</span></span> <span data-ttu-id="f01a9-130">Wenn die vorherige Aktivität die doppelten Geschwindigkeit der Folgeaktivität ausgeführt wird, sollte das Verhältnis 2 sein.</span><span class="sxs-lookup"><span data-stu-id="f01a9-130">If the predecessor runs at the double speed of the successor, the ratio should be 2.</span></span>   <span data-ttu-id="f01a9-131">Anhand des Anteils werden die durchschnittlichen Zykluszeiten für alle Aktivitäten des Produktionsflusses berechnet.</span><span class="sxs-lookup"><span data-stu-id="f01a9-131">The cycle time ratios are used to calculate the individual cycle times of the production flow activities.</span></span>  
-9. <span data-ttu-id="f01a9-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="f01a9-132">Click OK.</span></span>
-10. <span data-ttu-id="f01a9-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f01a9-133">Close the page.</span></span>
-11. <span data-ttu-id="f01a9-134">Klicken Sie auf die Registerkarte "GridPanel".</span><span class="sxs-lookup"><span data-stu-id="f01a9-134">Click the GridPanel tab.</span></span>
-12. <span data-ttu-id="f01a9-135">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f01a9-135">Close the page.</span></span>
-13. <span data-ttu-id="f01a9-136">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="f01a9-136">Refresh the page.</span></span>
+## <a name="add-a-successor"></a><span data-ttu-id="0a343-119">Eine Folgeaktivität hinzufügen</span><span class="sxs-lookup"><span data-stu-id="0a343-119">Add a Successor</span></span>
+1. <span data-ttu-id="0a343-120">Klicken Sie "Folgeaktivität hinzufügen".</span><span class="sxs-lookup"><span data-stu-id="0a343-120">Click Add successor.</span></span>
+2. <span data-ttu-id="0a343-121">Klicken Sie im Feld "Aktivität" auf die Dropdown-Schaltfläche, um die Suche zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="0a343-121">In the Activity field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="0a343-122">Suchen Sie in der Liste den gewünschten Datensatz, und wählen Sie ihn aus.</span><span class="sxs-lookup"><span data-stu-id="0a343-122">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="0a343-123">Klicken Sie in der Liste auf den Link in der ausgewählten Zeile.</span><span class="sxs-lookup"><span data-stu-id="0a343-123">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="0a343-124">Markieren Sie das Kontrollkästchen "Einschränkung".</span><span class="sxs-lookup"><span data-stu-id="0a343-124">Select the Constraint check box.</span></span>
+6. <span data-ttu-id="0a343-125">Geben Sie eine Zahl in das Feld 'Einschränkungswert' ein.</span><span class="sxs-lookup"><span data-stu-id="0a343-125">In the Constraint value field, enter a number.</span></span>
+    * <span data-ttu-id="0a343-126">Die Einschränkungszeit ist die Zeit, die zwischen dem geplanten Enddatum der vorherigen Aktivität (Fälligkeitsdatum und Uhrzeit) und dem geplantem Start der Folgeaktivität eingeplant wird.</span><span class="sxs-lookup"><span data-stu-id="0a343-126">The constraint time is the time to be scheduled between the scheduled end of the predecessor (due date and time) and the scheduled start of the successor.</span></span>  
+7. <span data-ttu-id="0a343-127">Geben Sie im Feld "Einheit" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="0a343-127">In the Units field, type a value.</span></span>
+8. <span data-ttu-id="0a343-128">Geben Sie im Feld "Zykluszeitanteil" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="0a343-128">In the Cycle time ratio field, enter a number.</span></span>
+    * <span data-ttu-id="0a343-129">Wenn beide Aktionen am gleichen Takt ausgeführt werden, sollte der Zykluszeitanteil 1 sein.</span><span class="sxs-lookup"><span data-stu-id="0a343-129">If both activities run at the same takt, the cycle time ratio should be 1.</span></span> <span data-ttu-id="0a343-130">Wenn die vorherige Aktivität die doppelten Geschwindigkeit der Folgeaktivität ausgeführt wird, sollte das Verhältnis 2 sein.</span><span class="sxs-lookup"><span data-stu-id="0a343-130">If the predecessor runs at the double speed of the successor, the ratio should be 2.</span></span>   <span data-ttu-id="0a343-131">Anhand des Anteils werden die durchschnittlichen Zykluszeiten für alle Aktivitäten des Produktionsflusses berechnet.</span><span class="sxs-lookup"><span data-stu-id="0a343-131">The cycle time ratios are used to calculate the individual cycle times of the production flow activities.</span></span>  
+9. <span data-ttu-id="0a343-132">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="0a343-132">Click OK.</span></span>
+10. <span data-ttu-id="0a343-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="0a343-133">Close the page.</span></span>
+11. <span data-ttu-id="0a343-134">Klicken Sie auf die Registerkarte "GridPanel".</span><span class="sxs-lookup"><span data-stu-id="0a343-134">Click the GridPanel tab.</span></span>
+12. <span data-ttu-id="0a343-135">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="0a343-135">Close the page.</span></span>
+13. <span data-ttu-id="0a343-136">Aktualisieren Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="0a343-136">Refresh the page.</span></span>
 
