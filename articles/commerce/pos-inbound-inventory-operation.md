@@ -3,7 +3,7 @@ title: Eingangsbestandsvorgang in POS
 description: Dieses Thema beschreibt die Möglichkeiten des POS-Eingangsbestandsvorgangs (POS).
 author: hhaines
 manager: annbe
-ms.date: 08/18/2020
+ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -19,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 16a786a4b3ca1bcbd202f6753bdf3bf7233a4333
-ms.sourcegitcommit: 7061a93f9f2b54aec4bc4bf0cc92691e86d383a6
+ms.openlocfilehash: 89021a85c2b215695d7cc25215c049205f71956d
+ms.sourcegitcommit: 6e0d6d291d4881b16a677373f712a235e129b632
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3710308"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3971496"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Eingangsbestandsvorgang in POS
 
@@ -133,6 +133,18 @@ Die Ansicht **Jetzt empfangen** bietet eine gezielte Möglichkeit für Benutzer,
 Validierungen erfolgen während des Empfangsprozesses für die Belegzeilen. Dazu gehören auch Validierungen für Überlieferungen. Wenn ein Benutzer versucht, mehr Bestand zu erhalten, als in einer Bestellung bestellt wurde, aber entweder keine Überlieferung konfiguriert ist oder der erhaltene Betrag die für die Bestellposition konfigurierte Überlieferungstoleranz überschreitet, erhält der Benutzer einen Fehler und darf die überschüssige Menge nicht erhalten.
 
 Für Transportauftragsbelege ist der Überempfang nicht zulässig. Benutzer erhalten immer Fehler, wenn sie versuchen, mehr zu erhalten, als für die Transportauftragsposition geliefert wurde.
+
+### <a name="close-purchase-order-lines"></a>Bestellpositionen schließen
+
+Sie können die verbleibende Menge einer eingehenden Bestellung während des Empfangsprozesses schließen, wenn der Versender bestätigt hat, dass er die angeforderte volle Menge nicht versenden kann. Um diese Funktion nutzen zu können, muss das Unternehmen so konfiguriert sein, dass eine Unterlieferung von Bestellungen möglich ist. Zusätzlich muss ein Unterlieferungstoleranzprozentsatz für die Bestellung definiert werden.
+
+Um das Unternehmen so zu konfigurieren, dass eine Unterlieferung von Bestellungen in der Commerce-Zentrale möglich ist, gehen Sie zu **Beschaffung** > **Einstellungen** > **Beschaffungsparameter**. Aktivieren Sie auf der Registerkarte **Lieferung** den Parameter **Unterlieferung akzeptieren**. Führen Sie dann den Verteilungsplan-Einzelvorgang **1070** (**Kanalkonfiguration**) aus, um die Einstellungsänderungen mit den Kanälen zu synchronisieren.
+
+Unterlieferungstoleranzprozentsätze für eine Bestellungsposition können für Produkte als Teil der Produktkonfiguration in der Commerce-Zentrale vordefiniert werden. Alternativ können sie für eine bestimmte Bestellung in der Commerce-Zentrale festgelegt oder überschrieben werden.
+
+Nachdem eine Organisation die Konfiguration der Unterlieferung von Bestellungen abgeschlossen hat, wird den POS-Benutzern eine neue Option **Restmenge schließen** im Bereich **Details** angezeigt, wenn sie eine eingehende Bestellungsposition über den Vorgang **Eingehender Bestand** auswählen. Wenn ein Benutzer die verbleibende Menge schließt, führt POS eine Prüfung durch, ob die geschlossene Menge innerhalb der prozentualen Toleranz für die Unterlieferung liegt, die in der Bestellungsposition definiert ist. Wenn die Unterlieferungstoleranz überschritten wurde, wird eine Fehlermeldung angezeigt, und der Benutzer kann die Restmenge erst dann abschließen, wenn die zuvor eingegangene Menge zuzüglich der Menge **Jetzt empfangen** die Mindestmenge erreicht oder überschreitet, die auf der Grundlage des Unterlieferungstoleranzprozentsatzes empfangen werden muss. 
+
+Wenn die Option **Restmenge schließen** für eine Bestellposition aktiviert ist und der Benutzer den Empfang mit der Aktion **Empfang abschließen** abschließt, wird auch eine Abschlussanforderung an die Commerce-Zentrale gesendet, und alle nicht erhaltenen Mengen dieser Bestellposition werden storniert. Zu diesem Zeitpunkt gilt die Position als vollständig empfangen. 
 
 ### <a name="receiving-location-controlled-items"></a>Empfangen von standortgesteuerten Positionen
 

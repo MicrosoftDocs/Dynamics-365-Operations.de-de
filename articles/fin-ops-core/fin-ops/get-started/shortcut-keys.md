@@ -3,7 +3,7 @@ title: Tastenkombinationen
 description: Dieses Thema bietet einen Überblick über die Tastenkombinationen, die Sie in Finance and Operations-Apps verwenden können.
 author: jasongre
 manager: AnnBe
-ms.date: 10/02/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41d5fb270e7b01effc650b24626b81ced647a399
-ms.sourcegitcommit: 95d06006142e6bf83351fb075b413fdc2074d5ee
+ms.openlocfilehash: 982fbef1af504ad70aa0e7c4ecf19f09fb599d16
+ms.sourcegitcommit: ebb110b0b73c99929636d26811a6f9c186080ddb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "3761620"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3962519"
 ---
 # <a name="keyboard-shortcuts"></a>Tastenkombinationen
 
@@ -32,6 +32,8 @@ Mit den folgenden Tastaturkombinationen können Sie Daten in Finance and Operati
 
 > [!NOTE]
 > Die hier beschriebenen Tastenkürzel beziehen sich auf das US-Tastaturlayout. Möglicherweise entsprechen die Tasten anderer Tastaturlayouts nicht exakt den Tasten auf der US-Tastatur.
+
+Einige der Verknüpfungen auf dieser Seite sind *Tastenakkorde*. Dies bedeutet, dass zwei aufeinanderfolgende Sätze von Tastenkombinationen (durch Komma getrennt) erforderlich sind, die unabhängig voneinander gedrückt werden müssen, um die erforderliche Aktion auszulösen. Für die Verknüpfung „ALT+M,A“ muss der Benutzer beispielsweise zuerst „ALT+M“ drücken, die Tasten loslassen und dann „A“ drücken. 
 
 ## <a name="finding-a-shortcut"></a>Eine Tastenkombination suchen
 
@@ -193,7 +195,7 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | Zum Hauptseiteninhalt wechseln (mit Fokus auf einem anderen Bereich)                    | ALT+M,M                    |
 | Zum Bereich „Infobox” wechseln (was möglicherweise einschließt, ihn zu öffnen)                       | ALT+M,B oder STRG+F2         |
 
-## <a name="personalization-shortcuts"></a>Personalisierungsverknüpfungen
+## <a name="personalization-shortcuts"></a>[Personalisierung](personalize-user-experience.md)-Verknüpfungen 
 
 | Aktion                                                                                                             | Taste(n)                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -237,7 +239,20 @@ Ab Plattformaktualisierung 11 können Benutzer zur Zeit verfügbaren Tastenkombi
 | In der Suche eine Seite nach oben/unten wechseln                                                                                       | BILD-AUF / BILD-AB              |
 | Ganz nach oben/unten in der Suche wechseln                                                                                    | POS1 / ENDE                       |
 
+## <a name="task-recordershortcuts"></a>[Aufgabenaufzeichnung](../../dev-itpro/user-interface/task-recorder.md)-Verknüpfungen 
+
+| Aktion                                                                    | Drücken Sie folgende Taste: .                      |
+|-------------------------------------------------------------------------------|----------------------------|
+| Stoppen Sie die Aufnahme (während der Aufnahme)                                          | Alt+R,S                    |
+| Schalten Sie die Sichtbarkeit des Aufgabenaufzeichnungsbereichs um (während der Aufnahme)             | Alt+R,T                    |
+| Rails-Modus umschalten (während Sie einen Aufgabenleitfaden spielen)                                | Alt+R,L                    |
+| Gehen Sie zum vorherigen Schritt (während Sie einen Aufgabenleitfaden spielen)                          | Alt+R,P                    |
+| Gehen Sie zum nächsten Schritt (während Sie einen Aufgabenleitfaden spielen)                              | Alt+R,N                    |
+| Schalten Sie den Fokus zwischen der Seite und der animierten Popup-Eingabeaufforderung um (während Sie eine Aufgabenanleitung abspielen) | Alt+R,F               |
+| Erweitern/reduzieren Sie die animierte Popup-Eingabeaufforderung (während Sie eine Aufgabenanleitung abspielen)              | Alt+R,C                    |
+| Zeigen Sie mehr/weniger Informationen in der animierten Popup-Eingabeaufforderung an (während Sie einen Aufgabenleitfaden abspielen) | Alt+R,M                    |
+
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-- [Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
+[Tastenkombinationen für eine Analyse für fehlende Konten](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 65304216b579b8def493d1e4218174cb9617013d
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: d75e6a8b48447a33156e03d50e990b8514bacda9
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652178"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970702"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Flexible Reservierungsrichtlinie für Dimensionen auf Lagerortebene
 
@@ -233,6 +233,9 @@ Wenn eine Lagerarbeitsaufgabe aus Positionen besteht, die einer vollständigen P
 ![Menüpunkt für mobiles Gerät, bei dem die Option „Mit Ladungsträger handhaben“ auf „Ja“ gesetzt ist](media/Handle-by-LP-menu-item.png)
 
 Da die Funktionalität **Mit Ladungsträger handhaben** keine Arbeit unterstützt, die mehrere Paletten abdeckt, ist es besser, für verschiedene Ladungsträger separate Arbeitsaufgaben zu nutzen. Um diesen Ansatz zu verwenden, fügen Sie das Feld **Auftragsgebundene Ladungsträger-ID** als Arbeitskopfzeilenumbruch auf der Seite **Arbeitsvorlage** hinzu.
+
+> [!NOTE]
+> Für den Prozess der auftragsgebundenen Arbeitserstellung wird den Kommissionierarbeitspositionen ein Wert für die Dimension „auftragsgebundener Bestand“ zugewiesen, und es wird nicht möglich sein, den Kennzeichenwert direkt einzusehen. Nur der *Benutzergeleitet*-Prozess wird beim Einrichten eines Menüelements für mobile Geräte unterstützt.
 
 ## <a name="example-scenario-set-up-and-process-an-order-committed-license-plate-reservation"></a>Beispielszenario: auftragsgebundenen Ladungsträgerreservierung einrichten und verarbeiten
 

@@ -14,22 +14,22 @@ ms.reviewer: sericks
 ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
-ms.author: shylaw
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 89c38b354bbca022e80ace4aa8d0b947cfe67f3e
-ms.sourcegitcommit: 14b554b43b9d86152ef27fdde6141589bcaf1161
+ms.openlocfilehash: 0d81471036d88e4faaf2cae4f3cc25d1eeaaa821
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3598180"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3979303"
 ---
 # <a name="globalization-resources"></a>Globalisierungsressourcen
 
 ## <a name="local-and-regional-deployments"></a>Lokale und regionale Bereitstellungen
 Wenn Ihre behördlichen Vorschriften erfordern, dass Daten anders gespeichert oder bearbeitet werden, als dies für andere Länder/Regionen erforderlich ist, kann es sein, dass es länderspezifische/regionale Anforderungen gibt, die Sie bei der Bereitstellung berücksichtigen müssen. Berücksichtigen Sie die folgenden Ressourcen, die für Sie relevant sein könnten:
 
-[Finance and Operations-Apps, bearbeitet von 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-Apps, betrieben von 21Vianet in China](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisierung und rechtliche Funktionen
 
@@ -54,8 +54,8 @@ Die folgenden Ressourcen enthalten Tipps und Hinweise für Entwickler und ISVs, 
 ### <a name="regulatory-updates-and-communication"></a>Rechtliche Updates und Kommunikation
 Die folgenden Ressourcen enthalten Informationen zu geplanten und neuen Lokalisierungsfunktionen. 
 
-#### <a name="regulatory-updates"></a>Updates zu rechtlichen Bestimmungen
--   [Updates zu rechtlichen Bestimmungen](../../../finance/localizations/regulatory-updates.md)
+#### <a name="regulatory-updates"></a>Neues zu rechtlichen Bestimmungen
+-   [Neues zu rechtlichen Bestimmungen](../../../finance/localizations/regulatory-updates.md)
 -   [Lokalisierungsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (Wöchentliche Aktualisierung)
 -   [Problemsuche in den Lifecycle Services (LCS)](../lifecycle-services/issue-search-lcs.md) (täglich aktualisiert)
 

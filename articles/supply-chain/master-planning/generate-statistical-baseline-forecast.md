@@ -16,15 +16,15 @@ ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c56d80dca9bf7753585532dffd57552ce2ee7a3f
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203824"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3982844"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Eine statistische Grundplanung generieren
 
@@ -68,7 +68,7 @@ Die Intercompany-Planungsgruppe, die Artikelverteilungsschlüssel und andere Fil
 Wenn die Planung nicht für einen großen Satz Artikel generiert wird, sondern beispielsweise jeweils für einen Artikel oder einen Artikelverteilungsschlüssel, dann können Sie für eine bessere Leistung das Kontrollkästchen **Anforderungsantwortmodus verwenden** auf der Registerkarte **Produktprogrammplan - Einstellungen - Bedarfsplanung**  -  **Bedarfsplanungsparameter - Azure Machine Learning** aktivieren.
 
 > [!NOTE]
-> Eine möglicherweise flache aussehende Planung kann auf historische Daten zurückzuführen sein, die sich über einen längeren historischen Zeitraum erstrecken müssen (mindestens 3 Zeitperioden, um Muster zu erkennen, z. B. 3 Jahre mit Monatsplanung). Für ein besseres Ergebnis können Sie die Granularität des Zeitraums ändern oder versuchen der Periode zu erhöhen.
+> Eine möglicherweise flache aussehende Planung kann auf historische Daten zurückzuführen sein, die sich über einen längeren historischen Zeitraum erstrecken müssen (mindestens 3 Zeitperioden, um Muster zu erkennen, z. B. 3 Jahre mit Monatsplanung). Für ein besseres Ergebnis können Sie versuchen, die Granularität des Zeitbereichs zu ändern oder den Zeitbereich zu erhöhen.
 
 <a name="additional-resources"></a>Zusätzliche Ressourcen
 --------

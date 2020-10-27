@@ -3,7 +3,7 @@ title: Dokumentstatus und -Lebenszyklus
 description: In diesem Thema werden die verschiedenen Dokumentstatus von Seitenelementen in Microsoft Dynamics 365 Commerce behandelt.
 author: phinneyridge
 manager: annbe
-ms.date: 04/13/2020
+ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,15 +17,14 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4a00f1c363e5ecb0e3e64637a8f487c48df2df72
-ms.sourcegitcommit: ac966ea3a6c557fb5f9634b187b0e788d3e82d4d
+ms.openlocfilehash: 8aad7ef8425e46182c669686710dfc178abc418f
+ms.sourcegitcommit: 83ec80382bfeb693d5c5949b6f65296bd50eed12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "3261512"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3974029"
 ---
 # <a name="document-states-and-lifecycle"></a>Dokumentstatus und -Lebenszyklus
-
 
 [!include [banner](includes/banner.md)]
 
@@ -52,6 +51,8 @@ Die folgende Tabelle enthält die möglichen Dokumentstatus von Seitenelementen 
 [Seitenmodellglossar](page-elements-overview.md)
 
 [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md)
+
+[Aktivieren und verwenden Sie die kanalübergreifende Freigabe](cross-channel-sharing.md)
 
 [Arbeiten mit Modulen](work-with-modules.md)
 

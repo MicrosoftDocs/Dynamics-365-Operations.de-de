@@ -14,6 +14,8 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: "Plattformupdates zu 10.0.15 (Januar\_2021)"
+                  href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Plattformupdates zu 10.0.14 (November 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
                 - name: Plattformupdates zu 10.0.13 (Oktober 2020)
@@ -232,10 +234,12 @@
                                   href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
                                 - name: Probleme bezüglich der Lösungssensitivität beheben
                                   href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                                - name: Probleme bezüglich Aktualisierungen von Finance and Operations-Apps beheben
+                                - name: Probleme bei Aktualisierungen von Finance and Operations-Apps beheben
                                   href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                                 - name: Allgemeine Problembehandlung
                                   href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Häufig gestellte Fragen zum dualen Schreiben
+                          href: data-entities/dual-write/dual-write-faq.md
                     - name: Integration in Power Platform
                       items:
                         - name: Prospect-to-Cash-Szenario konfigurieren
@@ -382,17 +386,19 @@
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitätsspeicher als Data Lake zur Verfügung stellen
               href: data-entities/entity-store-data-lake.md
-        - name: Datenbankverschiebungsvorgänge
+        - name: Datenbankverschiebungen
           items:
             - name: Übersicht
               href: database/dbmovement-operations.md
+            - name: Toolkit für Datenbankverschiebungen
+              href: database/database-movement-toolkit.md
             - name: Schnellstartanleitungen
               items:
                 - name: Datenbank aktualisieren
                   href: database/database-refresh.md
-                - name: Eine Datenbank exportieren
+                - name: Datenbank exportieren
                   href: database/export-database.md
-                - name: Eine Datenbank importieren
+                - name: Datenbank importieren
                   href: database/import-database.md
                 - name: Point-in-Time-Wiederherstellung der Datenbank
                   href: database/database-point-in-time-restore.md
@@ -1564,7 +1570,9 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 Upgrade – Prüfliste vor dem Upgrade für die Datenaktualisierung
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012 Upgrade – Datenaktualisierung in Sandkastenumgebungen
+                - name: AX 2012 Upgrade – Datenupgrade in Sandbox-Umgebungen mithilfe des Dacpac-Prozesses
+                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: AX 2012 Upgrade – Datenaktualisierung in Sandbox-Umgebungen
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012 Upgrade – lokale Umgebungen
                   href: migration-upgrade/on-prem-upgrade-2012.md

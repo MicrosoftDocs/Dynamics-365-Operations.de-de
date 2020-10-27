@@ -12,15 +12,15 @@ audience: Application User
 ms.reviewer: kfend
 ms.search.scope: Operations
 ms.search.region: Germany
-ms.author: shylaw
+ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 66080d951c0e0af69a2094d58f5b639cdeb1f164
-ms.sourcegitcommit: 9c694772e1484df10afd72ea1a717fda0861627e
+ms.openlocfilehash: c1aa18444f2b6cefb1b1cbe73cea7bd6e0164f4b
+ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3813823"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "3983013"
 ---
 # <a name="germany-overview"></a>Deutschland – Übersicht
 

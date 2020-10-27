@@ -3,7 +3,7 @@ title: Übersicht über Angebotsanfragen (RFQs)
 description: Dieses Thema bietet eine Übersicht über Angebotsanforderungen. Organisationen stellen eine Angebotsanforderung aus, um von mehreren Kreditoren Angebote für die Artikel oder Dienstleistungen, die sie kaufen müssen, zwecks Vergleich anzufordern.
 author: mkirknel
 manager: tfehr
-ms.date: 07/25/2019
+ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eedf6b08ef9a4b7f164db60433dd16922a8ec807
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: 4aec0ce03d438f8153b9555a079b6fd97f6a95a5
+ms.sourcegitcommit: ae04c7cb48f7ecafe71bbe77a0f97715e6290991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895619"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "3973499"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Übersicht über Angebotsanfragen (RFQs)
 
@@ -34,23 +34,21 @@ Sie können Kreditoren auch bitten, anzugeben, ob zusätzliche Gebühren, etwa L
 
 Der Angebotsanforderungsprozess besteht aus den folgenden Aufgaben:
 
-1.  Erstellen und senden Sie eine Angebotsanforderung an einen oder mehrere Kreditoren.
-
-2.  Erhalten und erfassen Sie Antworten auf Angebote (Angebotsanforderung).
-
-3.  Übertragen Sie Angebote, die Sie akzeptieren, auf eine Bestellung, einen Kaufvertrag oder eine Bestellanforderung.
+1. Erstellen und senden Sie eine Angebotsanforderung an einen oder mehrere Kreditoren.
+1. Erhalten und erfassen Sie Antworten auf Angebote (Angebotsanforderung).
+1. Übertragen Sie Angebote, die Sie akzeptieren, auf eine Bestellung, einen Kaufvertrag oder eine Bestellanforderung.
 
 Die folgende Abbildung zeigt eine Übersicht über den Angebotsanforderungsprozess.
 
 [![RFQ-Prozess](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
-Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanforderung oder durch einen manuellen Eintrag erstellen. Die Angebotsanforderungsanfrage ist das Basisdokument, dass Sie verwenden, um eine Angebotsanforderung für jeden Kreditor auszugeben.+
+Sie können eine Angebotsanforderung aus geplanten Aufträgen, einer Bestellanforderung oder durch einen manuellen Eintrag erstellen. Die Angebotsanforderung ist das Basisdokument, dass Sie verwenden, um eine Angebotsanforderung für jeden Lieferanten auszugeben.
 
 Nachdem Sie die Angebotsanforderungsanfrage vorbereitet und Kreditoren hinzugefügt haben, wählen Sie **Senden** (**Senden und Veröffentlichen** für den öffentlichen Sektor) in der  Angebotsanforderungsanfrage. Eine Angebotsanforderungserfassung wird für jeden Kreditor generiert, an den Sie eine Angebotsanforderung senden. Sie können die Druckverwaltungseinstellung für die Sendeaktivität so konfigurieren, dass entweder ein Bericht für jeden Kreditor in ein Archiv ausgedruckt wird oder ein Bericht an die E-Mail-Adresse jedes Kreditors gesendet wird. Außerdem können Sie die Angebotsanforderungserfassung für jeden Kreditor verwenden, um einen Bericht zu generieren, den Sie später an den Kreditor senden oder erneut senden können. Sie können die Aktivität „Senden” auch so konfigurieren, dass ein Antwortbogen generiert wird, den der Kreditor ausfüllen kann.
 
 Dieses Thema behandelt den Prozess der Handhabung von Angebotsanforderungen, wenn die Kreditorenzusammenarbeit nicht verwendet wird. Wenn Ihr System für Kreditorenzusammenarbeit eingerichtet ist, können Kreditoren Angebote direkt in Supply Chain Management eingeben. Weitere Informationen über die Kreditorenzusammenarbeit finden Sie unter [Kreditorenzusammenarbeit mit externen Kreditoren](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) und [Kreditorenzusammenarbeit mit Kunden](vendor-collaboration-work-external-vendors.md).
 
-Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem sie übermittelt wurde, können Sie die Angebotsanforderung an Kreditoren erneut senden, wenn Sie mit der Verwendung der beiden Zusatzaktivitäten fertig sind: Erstellen und Abschließen.+
+Wenn Sie eine Angebotsanforderung ergänzen müssen, nachdem sie übermittelt wurde, können Sie die Angebotsanforderung an Lieferanten erneut senden, wenn Sie fertig sind. Dazu verwenden Sie die beiden Zusatzaktivitäten: Erstellen und Abschließen.
 
 Wenn Sie Angebote per E-Mail erhalten, müssen Sie diese Angebote auf der Seite **Antworten auf Angebotsanforderung** eingeben.
 
@@ -68,15 +66,10 @@ Diese Statusangaben werden detaillierter später in diesem Thema beschrieben.
 
 Bevor Sie eine Angebotsanforderungsanfrage erstellen können, müssen Sie Angebotsanforderungsinformationen auf der Seite **Beschaffungsparameter** einrichten. Wenn Sie eine Angebotsanforderungsanfrage erstellen, können Sie die Standardwerte angeben, die in die Angebotsanforderung kopiert werden. Sie können die folgenden Standardwerte angeben:
 
--   Der Bestelltyp neuer Angebotsanforderungen: **Bestellung** oder **Kaufvertrag**
-
--   Das Ablaufdatum und das Zeitgegenkonto ab dem Zeitpunkt der Angebotsanforderungsanfrage wird erstellt.
-
--   Anfragentyp, der eine Standard-Auswertungsmethode für eine bestimmte Angebotsanforderungsanfrage sein kann
-
--   Lieferinformationen und Zahlungsbedingungen
-
--   Felder, die in der Antwort auf Angebotsanforderung einbezogen werden sollen
+- Der Bestelltyp neuer Angebotsanforderungen: **Bestellung** oder **Kaufvertrag**
+- Das Ablaufdatum und das Zeitgegenkonto ab dem Zeitpunkt der Angebotsanforderung wird erstellt.
+- Anfragetyp, der der Angebotsanforderung eine bestimmte Bewertungsmethode vorgeben kann.
+- Lieferinformationen und Zahlungsbedingungen.
 
 Sie können diese Werte für eine bestimmte Angebotsanforderungsanfrage überschreiben.
 
@@ -84,37 +77,25 @@ Sie sollten auch den Ergänzungsprozess konfigurieren. Als Teil dieser Konfigura
 
 Auf der Seite **Beschaffungsparameter** wählen Sie die Vorlage für die E-Mail-Benachrichtigung aus, die an Kreditoren gesendet wird. Wenn eine Vorlage in den **E-Mail-Vorlagen** erstellt wird, kann sie die folgenden Ersatztoken enthalten:
 
--   %Angebotsanforderungsanfrage%
-
--   %Grund für Rücksendung des Angebots%
-
--   %Grund für den Zusatz%
-
--   %Zusatz erstellt von%
-
--   %Unternehmen%
-
--   %Name der Angebotsanforderungsanfrage%
-
--   %Gültig bis%
-
--   %Datum%
+- %Angebotsanforderungsanfrage%
+- %Grund für Rücksendung des Angebots%
+- %Grund für den Zusatz%
+- %Zusatz erstellt von%
+- %Unternehmen%
+- %Name der Angebotsanforderungsanfrage%
+- %Gültig bis%
+- %Datum%
 
 Die Tokens %Grund für Angebotrücksendung% und %Grund für Ergänzung% werden durch Text ersetzt, die der Beschaffungsspezialist eingeben kann, wenn er oder sie die Ergänzung im Assistenten **Ergänzung** abschließt. Die Werte für die Tokens %Ergänzung vorbereitet von% und %Unternehmen% werden automatisch aus der Angebotsanforderung übernommen. Das Token %Datum% wird durch das aktuelle Datum ersetzt.
 
-Wenn Sie eine Angebotsanforderung löschen möchten, nachdem sie versendet wurde, können Sie das über den Angebotsanforderungsfall tun. Dafür wird eine E-Mail-Vorlage verwendet, um die Stornierungsbenachrichtigung an Kontaktpersonen des Kreditors zu senden. Die Vorlage muss auf der Seite **Beschaffungsparameter** ausgewählt werden. Wenn die Vorlage erstellt ist, kann sie die folgenden Ersatztoken enthalten:
+Wenn Sie eine Angebotsanforderung löschen möchten, nachdem sie versendet wurde, können Sie das über den Angebotsanforderungsfall tun. Für die Stornierung ist eine E-Mail-Vorlage erforderlich, um die Stornierungsbenachrichtigung an Kontaktpersonen des Kreditors zu senden. Die Vorlage muss auf der Seite **Beschaffungsparameter** ausgewählt werden. Wenn die Vorlage erstellt ist, kann sie die folgenden Ersatztoken enthalten:
 
--   %Stornierungsgrund%
-
--   %Angebotsanforderungsanfrage%
-
--   %Angebotsanforderung storniert von%
-
--   %Unternehmen%
-
--   %Name der Angebotsanforderungsanfrage%
-
--   %Datum%
+- %Stornierungsgrund%
+- %Angebotsanforderungsanfrage%
+- %Angebotsanforderung storniert von%
+- %Unternehmen%
+- %Name der Angebotsanforderungsanfrage%
+- %Datum%
 
 Das Token %Grund für Stornierung% wird von Text ersetzt, den der Prokurist im **Stornierungs**-Assistenten eingeben kann. Das Token %Datum% wird durch das aktuelle Datum ersetzt.
 
@@ -130,6 +111,19 @@ Wenn Sie eine Angebotsanforderung für eine Bestellung erstellen und einen Lager
 
 Ein Einkaufsleiter oder Agent kann Anfragentypen erstellen und verwalten, die zu den Beschaffungsanforderungen der Organisation passen. Jeder Anfragentyp kann einer Bewertungsmethode zugeordnet werden. Bewertungsmethoden bestehen aus einem Satz von Kriterien, die verwendet werden können, wenn Sie Angebote bewerten. Sie müssen Anfragentypen, Bewertungsmethoden und Bewertungskriterien auf den Seiten **Anfragentyp** und **Bewertungsmethode** einrichten.
 
+## <a name="choose-default-fields-to-include-in-vendor-rfq-reply-forms"></a><a name="default-reply-fields"></a>Wählen Sie Standardfelder aus, die in die Antwortformulare für Lieferantenanfragen aufgenommen werden sollen
+
+Sie können bestimmte Arten von Informationen angeben, die Sie von Kreditoren als Antwort auf eine Angebotsanforderung erhalten möchten. Felder, die Sie als Standard markieren, sind in dem Online-Formular enthalten, das für die Zusammenarbeit mit Lieferanten bereitgestellt wird. Um diese Einstellungen vorzunehmen:
+
+1. Wenn Sie dies noch nicht getan haben, verwenden Sie die Seite [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), um die Funktion *Auswählen der Angebotsanforderungsfelder, die in die Antwortformulare für Lieferantenanfragen aufgenommen werden sollen* zu aktivieren.
+1. Gehen Sie zu **Beschaffung > Setup > Beschaffungsparameter**.
+1. Öffnen Sie die Registerkarte **Angebotsanforderung**.
+1. Wählen Sie den Antwortfelderlink **Standardwerte für Angebot** unter der Überschrift **Standardwerte für Angebotsanforderungen einrichten**.
+1. Das Dialogfeld **Standardanforderung für Angebotsantwortfelder** wird geöffnet.
+1. Der Abschnitt **Angebotsanforderungsfelder in Antwortformularen für Lieferantenanforderungen** enthält einen Schieberegler für jedes Feld, das für die Verwendung in Antwortformularen für Lieferantenanfragen zur Verfügung steht. Felder, die in diesem Abschnitt auf *Ja* gesetzt sind, werden (zusammen mit ihren Werten) in Angebotsanforderung-Antwortformulare aufgenommen. Stellen Sie den Schieberegler auf *Nein* für jedes Feld, in dem Sie verhindern möchten, dass Lieferanten bei der Überprüfung von Geboten Daten sehen. Auf diese Weise können Sie geschätzte oder erwartete Werte während der Angebotsanforderungseingabe für interne Zwecke eingeben, ohne dass der Lieferant sieht, was eingegeben wurde.
+
+Sie können diese Einstellungen für einzelne Angebotsanforderungsfälle nach Bedarf überschreiben.
+
 ## <a name="creating-and-sending-an-rfq"></a>Eine Angebotsanforderung erstellen und senden
 
 Sie erstellen eine Angebotsanforderung, wählen die Kreditoren aus, die auf die Angebotsanforderung antworten sollen, und senden die Angebotsanforderung dann an die Kreditoren. Sie können die Druckeinstellungen verwenden, um den Angebotsanforderungsbericht und Antwortbogenberichte an Ihr bevorzugtes Ziel weiterzuleiten.
@@ -138,15 +132,13 @@ Sie können manuell eine Angebotsanforderung entweder für den Bestelltyp **Best
 
 Wenn die Angebotsanforderungsanfrage vom Typ **Bestellung** ist, erfolgt das folgende Verhalten auf, das aus anderen Typen Angebotsanforderungsfälle abweicht:
 
--   Wenn Angebotsanforderungspositionen erstellt werden, werden Lagerbuchungen generiert, die den Zugangsstatus von **Angebotszugang** besitzen.
-
--   Wenn Sie ein Angebot akzeptieren, wird eine Bestellung generiert.
+- Wenn Angebotsanforderungspositionen erstellt werden, werden Lagerbuchungen generiert, die den Zugangsstatus von **Angebotszugang** besitzen.
+- Wenn Sie ein Angebot akzeptieren, wird eine Bestellung generiert.
 
 Wenn die Angebotsanforderungsanfrage vom Typ **Kaufvertrag** ist, erfolgt das folgende Verhalten auf, das aus anderen Typen Angebotsanforderungsfälle abweicht:
 
--   Die Angebotsanforderung wird für eine Vereinbarung zum Einkauf einer bestimmten Produktmenge oder eines bestimmten Produktwerts über einen gewissen Zeitraum verwendet. Sie müssen den Datumsbereich auswählen, der für den Kaufvertrag und den Namen des Mitarbeiters gilt, der mit der Verwaltung der Rahmenbestellung betraut ist.
-
--   Wenn Sie ein Angebot annehmen, wird ein Kaufvertrag generiert.
+- Die Angebotsanforderung wird für eine Vereinbarung zum Einkauf einer bestimmten Produktmenge oder eines bestimmten Produktwerts über einen gewissen Zeitraum verwendet. Sie müssen den Datumsbereich auswählen, der für den Kaufvertrag und den Namen des Mitarbeiters gilt, der mit der Verwaltung der Rahmenbestellung betraut ist.
+- Wenn Sie ein Angebot annehmen, wird ein Kaufvertrag generiert.
 
 Wenn die Angebotsanfordernung aus einer Bestellanforderung generiert wird, wird der Typ **Bestellanforderung** automatisch zugewiesen. Sie können eine Angebotsanforderung vom Typ **Bestellanforderung** nicht manuell erstellen.
 
@@ -156,6 +148,7 @@ Wenn Sie eine Angebotsanforderung erstellen, können Sie einen Anfragentyp ausw
 
 Sie können einer Angebotsanforderungsanfrage einen Fragebogen hinzufügen. Dieser Fragebogen wird dann auf allen Antworten angezeigt, nachdem Sie die Angebotsanforderung senden. Der Abschluss des Fragebogens ist eine erforderliche Aufgabe, bevor das Angebot gesendet werden kann.
 
+Obwohl Standardeinstellungen angegeben sind, können Sie die Einstellungen **Angebotsanforderungsfelder in Angebotsanforderung-Antwortformularen des Lieferanten** für jeden einzelnen Angebotsanforderungsfall nach Bedarf ändern. Erstellen oder öffnen Sie dazu einen Angebotsanforderungsfall. Öffnen Sie dann im Aktionsbereich die Registerkarte **Angebot** und wählen Sie dann aus dem Abschnitt **Antworten** **Einstellen der Standardantworten für Angebotsanforderungen** aus. Das Dialogfeld **Standardanforderung für Angebotsantwortfelder** wird geöffnet; es funktioniert genauso wie beim Festlegen der Standardeinstellungen für Lieferanten-Angebotsanforderung-Antwortformulare, außer dass Ihre Änderungen hier nur den aktuellen Angebotsanforderungsfall betreffen. Ausführliche Informationen zum Aktivieren und Funktionieren dieser Funktionalität finden Sie unter [Wählen Sie Standardfelder aus, die in die Antwortformulare für Lieferantenanfragen aufgenommen werden sollen](#default-reply-fields).
 
 Es gibt drei Möglichkeiten, um die Kreditoren auswählen, die einer Angebotsanforderungsanfrage hinzugefügt werden sollen:
 
@@ -166,7 +159,6 @@ Es gibt drei Möglichkeiten, um die Kreditoren auswählen, die einer Angebotsanf
 Wenn die Angebotsanforderungsanfrage bereit ist, wählen Sie **Senden** aus. Die Aktion „Senden” generiert Erfassungen und Berichte, die gemäß Ihren Druckverwaltungseinstellungen gedruckt, archiviert und gesendet werden.
 
 Wenn Sie die Kontrollkästchen **Kreditor zur Neuberechnung von Preisen verwenden** und **Kreditorenspezifische Artikelinformationen verwenden** auf der Seite **Angebotsanforderung wird gesendet** auf **Ja** festgelegt haben, wenn Sie die Angebotsanforderung an Kreditoren schickten, werden einige kreditorenspezifische Informationen für diese Angebotsanforderung für diesen Lieferant automatisch eingegeben.
-
 
 ## <a name="amending-an-rfq-case"></a>Anpassen einer Angebotsanforderung
 
@@ -180,10 +172,9 @@ Wenn Kreditoren die Kreditorenzusammenarbeitschnittstelle verwenden, um Angebote
 
 Wenn Sie weitere Kreditoren dazu einladen möchten, Angebote zu unterbreiten, und keine Änderungen an der Angebotsanforderungsanfrage vorgenommen wurden, können Sie die Schaltfläche **Senden** verwenden. Die Kreditoren, die Sie hinzugefügt haben, werden auf der Seite **Senden** angezeigt und erhalten die E-Mail-Einladung.
 
-
 ## <a name="receiving-and-registering-rfq-replies"></a>Erhalten und Erfassen von Antworten auf Angebotsanforderungen
 
-Wenn Sie eine Angebotsanforderung senden, wird automatisch ein Antwortblatt generiert. Da Sie Angebote auf eine Angebotsanforderung erhalten, müssen Sie diese über die Seite **Angebotsanforderung** eingegeben, indem Sie auf **Bearbeiten Antwort auf Angebotsanforderung.** klicken. Dies ermöglicht es Ihnen, eine Anngebotsinformationen in ein dediziertes Angebotsformular einzugeben. Zuerst ist der **Antwortfortschritt** auf **Nicht gestartet** festgelegt. Wenn Sie **Bearbeiten Antwort auf Angebotsanforderung,** klicken, wird der Status **Einkäufer aktualisiert** das Angebot gesendet wird. Klicken Sie auf **Übermitteln**, wenn Sie die Angebotsinformationen eingegeben haben. Der Antwortfortschrittsstatus wechselt zu **Versendet von Käufer.** Und auch wenn die Zusammenarbeit aktiviert ist, aktualisiert sich der  **Antwortfortschritt**, während der Kreditor mit dem Angebot interagiert. Der Status ändert sich dann von **Kreditor aktualisiert** zu **Versendet durch Kreditor**. Wenn das Angebot gesendet wird, wird eine Erfassung als **Eingegangen** erstellt. Die Antwort "(Angebot) muss übermittelt werden, damit sie als eingegangen erfasst werden, und nur dann kann sie weiter als angenommen oder abgelehnt erfasst werden.
+Wenn Sie eine Angebotsanforderung senden, wird automatisch ein Antwortblatt generiert. Da Sie Angebote auf eine Angebotsanforderung erhalten, müssen Sie diese über die Seite **Angebotsanforderung** eingegeben, indem Sie auf **Antwort auf Angebotsanforderung bearbeiten** klicken. Dies ermöglicht es Ihnen, eine Anngebotsinformationen in ein dediziertes Angebotsformular einzugeben. Zuerst ist der **Antwortfortschritt** auf **Nicht gestartet** festgelegt. Wenn Sie **Bearbeiten Antwort auf Angebotsanforderung,** klicken, wird der Status **Einkäufer aktualisiert** das Angebot gesendet wird. Klicken Sie auf **Übermitteln**, wenn Sie die Angebotsinformationen eingegeben haben. Der Antwortfortschrittsstatus wechselt zu **Versendet von Käufer.** Und auch wenn die Zusammenarbeit aktiviert ist, aktualisiert sich der  **Antwortfortschritt**, während der Kreditor mit dem Angebot interagiert. Der Status ändert sich dann von **Kreditor aktualisiert** zu **Versendet durch Kreditor**. Wenn das Angebot gesendet wird, wird eine Erfassung als **Eingegangen** erstellt. Die Antwort "(Angebot) muss übermittelt werden, damit sie als eingegangen erfasst werden, und nur dann kann sie weiter als angenommen oder abgelehnt erfasst werden.
 
 Wenn Sie das Angebot aktualisieren müssen, können Sie den gleichen Prozess durchlaufen wie oben und  erneut übermitteln.
 
@@ -208,29 +199,20 @@ In der Antwort können Sie einen Ursachencode hinzufügen, um zu erläutern, war
 
 Wenn Sie ein Angebot vom Typ **Bestellanforderung** akzeptiert, werden die Bestellanforderungspositionen mit den folgenden Informationen aktualisiert, die die Informationen des angenommenen Angebots angezeigt:
 
--   Preis je Einheit
-
--   Rabattprozentsatz
-
--   Skontobetrag
-
--   Belastungen für Einkauf
-
--   Positionsgebühren
-
--   Lieferant
-
--  Externe Nummer
-
--   Externe Beschreibung
-
+- Preis je Einheit
+- Rabattprozentsatz
+- Skontobetrag
+- Belastungen für Einkauf
+- Positionsgebühren
+- Lieferant
+- Externe Nummer
+- Externe Beschreibung
 
 In der folgenden Tabelle wird angezeigt, wie sich der Angebotsanforderungs-Status ändert, während Sie Angebote von Kreditoren annehmen und ablehnen.
 
-<a name="statuses--highest-and-lowest"></a>Status - höchster und niedrigster
------------------------------
+## <a name="statuses--highest-and-lowest"></a>Status - höchster und niedrigster
 
-Auf der Kreditorenregisterkarte des Angebotsanforderungsfalls können Sie die Positionen mit dem höchsten und niedrigsten Status für einen bestimmten Kreditor finden. Wenn der Kreditor hinzugefügt wird und noch keine Positionen gesendet wurden, wird der niedrigste  und der höchste Status <strong>Erstellt.</strong> Wenn die Angebotsanforderung an den Kreditor gesendet wird mit allen Positionen, bleibt der Status der beiden Positionen <strong>Versendet</strong>. Wenn einige Positionen in einem Angebot von einem Kreditor akzeptiert werden und andere abgelehnt werden, erhalten die abgelehnten Positionen den niedrigsten Status in <strong>Abgelehnt</strong> und die akzeptierte Positionen erhalten den höchsten Status <strong>Angenommen</strong>.
+Auf der Kreditorenregisterkarte des Angebotsanforderungsfalls können Sie die Positionen mit dem höchsten und niedrigsten Status für einen bestimmten Kreditor finden. Wenn der Lieferant hinzugefügt wird und noch keine Positionen gesendet wurden, ist sowohl der niedrigste als auch der höchste Status <strong>Erstellt.</strong> Wenn die Angebotsanforderung mit allen Positionen an den Lieferanten gesendet wird, lautet der Status der beiden Zeilen <strong>Gesendet</strong>. Wenn einige Positionen in einem Angebot von einem Kreditor akzeptiert werden und andere abgelehnt werden, erhalten die abgelehnten Positionen den niedrigsten Status in <strong>Abgelehnt</strong> und die akzeptierte Positionen erhalten den höchsten Status <strong>Angenommen</strong>.
 
 Wählen Sie dien Angebotsanforderungsfallpositionen können Sie den höchsten und niedrigsten Status pro Position für alle Kreditoren anzeigen. Wenn Sie eine Position für alle Kreditoren im Angebotsanforderungsanfrage gesendet haben und niemand geantwortet hat, wird dennoch der niedrigste und höchste Status **Versendet.** Wenn mindestens ein Kreditor antwortet, ändert der höchste Status **Eingegangen**. Wenn Sie einen neuen Kreditor dem Fall hinzufügen, ändern sich der niedrigste Status **Erstellt**
 

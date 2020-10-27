@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d5961b2459a1c43cee24b611cf73879c6e776a4
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 34d941c3806ccc9d2b8baa29eef45fbd4216686e
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177978"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967309"
 ---
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Ausgleichen einer teilweisen Kreditorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
 
@@ -64,7 +64,7 @@ April klickt auf die Registerkarte **Skonto**, um den Rabattbetrag anzuzeigen.
 | 7/25/2015          | 0,00                 | 1.000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Teilzahlung am 1. Juli durch Verwendung der Seite "Buchungen ausgleichen"
-April kann eine Zahlungserfassung für diese Zahlung erstellen, indem sie die Kreditorenseite **Zahlungserfassung** öffnet. Sie erstellt eine neue Zahlungserfassung und gibt die Position für Kreditor 3064 ein. Sie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass sie die Rechnung zum Ausgeleichen markieren kann. April markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **–500,00**. Sie sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **–10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **–5,05**. Daher gleicht April -505,05 dieser Rechnung aus.
+April kann eine Zahlungserfassung für diese Zahlung erstellen, indem sie die Kreditorenseite **Zahlungserfassung** öffnet. Sie erstellt eine neue Erfassung und gibt eine Position für Kreditor 3064 ein. Sie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass sie die Rechnung zum Ausgeleichen markieren kann. April markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **–500,00**. Sie sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **–10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **–5,05**. Daher gleicht April -505,05 dieser Rechnung aus.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

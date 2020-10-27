@@ -3,7 +3,7 @@ title: Erstellen von Warnregeln
 description: Dieses Thema enthält Informationen zu Warnungen und erläutert, wie eine Warnregel erstellt wird, damit Sie über Ereignisse benachrichtigt werden, wie ein Datum, das eintritt, oder eine spezifische Änderung, die auftritt.
 author: tjvass
 manager: AnnBe
-ms.date: 02/19/2020
+ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 85d4774bc710f0c48b384601e5505f11394cf5d5
-ms.sourcegitcommit: a688c864fc609e35072ad8fd2c01d71f6a5ee7b9
+ms.openlocfilehash: 94b68138066867fad641c70a1674c9292920ec6a
+ms.sourcegitcommit: d540998ad6f9c894ca99498c045ae4b86b779806
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "3075923"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "3970678"
 ---
 # <a name="create-alert-rules"></a>Erstellen von Warnregeln
 
@@ -92,3 +92,14 @@ Warnungen können über das Event-Framework extern gesendet werden. Setzen Sie b
 7. Auf der Registerkarte **Warnung mit** im Feld **Betreff** akzeptieren Sieie Standardbetreffzeile für die E-Mail-Nachricht, oder geben Sie einen neuen Betreff ein. Der Text wird als Betreffzeile für die E-Mail-Nachricht verwendet, die Sie empfangen, wenn eine Warnung ausgegeben wird. Wenn Sie die Warnung als Veranstaltung senden möchten, setzen Sie **Externes Senden** auf **Ja**.
 8. Geben Sie im Feld **Nachricht** einen optionalen Meldungstext ein. Der Text wird als die Meldung verwendet, die Sie bei Auslösung einer Warnung erhalten.
 9. Wählen Sie **OK** aus, um die Einstellungen zu speichern und die Warnregel zu erstellen.
+
+## <a name="limitations-and-workarounds"></a>Einschränkungen und Problemumgehungen
+
+### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Problemumgehung zum Erstellen von Warnungen für die sekundären Datenquellen eines Formulars
+Für einige sekundäre Datenquellen in Formularen können keine Warnungen erstellt werden. Wenn Sie beispielsweise Warnungen im Formular für Kunden- oder Kreditorenbuchungsprofile erstellen, sind nur die Felder in der Kopfzeile (CustLedger oder VendLedger) verfügbar und nicht die Dimensionskonten. Diese Einschränkung kann durch die Verwendung von **SysTableBrowser**, um diese Tabelle als primäre Datenquelle zu verwenden, umgangen werden. 
+1. Öffnen Sie die Tabelle im Formular **SysTableBrowser**.
+    ```
+        https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
+    ```
+2. Erstellen Sie eine Warnung aus dem SysTableBrowser-Formular.
+

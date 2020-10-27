@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87c90ed6ee62a094fe44f549c827cf9de2bf5b2f
-ms.sourcegitcommit: 7a1d01122790b904e2d96a7ea9f1d003392358a6
+ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
+ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "3270003"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3961633"
 ---
 # <a name="modify-an-existing-site-page"></a>Bestehende Seite einer Website ändern
 
@@ -47,7 +47,7 @@ Der nächste Schritt besteht darin, Ihre tatsächlichen Änderungen vorzunehmen.
 Ihre Änderung kann jedoch manchmal das Hinzufügen oder Entfernen von Modellen oder Fragmenten umfassen. Um ein Fragment oder Modul hinzuzufügen, suchen Sie in der Seitenstruktur den Slot, dem Sie das Modul oder Fragment hinzufügen möchten, und klicken Sie dann auf die Schaltfläche mit den Auslassungspunkten (**...**) für diesen Slot. Ein Menü mit Befehlen zum Hinzufügen eines Moduls oder Fragments wird angezeigt. Um ein Modul oder Fragment zu entfernen, suchen Sie es und wählen Sie es in der Seitenstruktur aus, klicken Sie auf die Schaltfläche mit den Auslassungspunkten und wählen Sie dann den Befehl zum Löschen des Moduls oder Fragments aus.
 
 > [!TIP]
-> Sie können auch die Eigenschaften für jedes Modul anzeigen und bearbeiten, das in der Vorschau „What You See Is What You Get“ (WYSIWYG) angezeigt wird, indem Sie es direkt auswählen.
+> Sie können auch die Eigenschaften für jedes Modul anzeigen und bearbeiten, das in der Visual Page Builder-Vorschau angezeigt wird, indem Sie es direkt auswählen.
 
 Nachdem Sie Ihre Änderungen vorgenommen und eine Vorschau des Effekts angezeigt haben, sollten Sie die Seite durch Auswahl von **Bearbeiten beenden** auf der Befehlsleiste einchecken. 
 

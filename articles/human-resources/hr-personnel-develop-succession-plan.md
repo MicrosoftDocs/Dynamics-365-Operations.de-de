@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6cf056f9c8f1f24bb6eb0f619c476b1095a854bb
-ms.sourcegitcommit: ba340f836e472f13f263dec46a49847c788fca44
+ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
+ms.sourcegitcommit: 4a32634690a741535f3f4babfd753f7c227ad6fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "3428638"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "3958842"
 ---
 # <a name="develop-succession-plan"></a>Nachfolgeplan entwickeln
 
@@ -38,7 +38,7 @@ Während Ihre Organisation wächst und Sie die Nachfolgeplanung erwägen, möcht
 7. Klicken Sie auf "Person".
 8. Geben Sie im Feld "Person" einen Namen ein oder wählen Sie das Dropdownmenü aus.  Beispiel: Katja Provinzler.
 9. Klicken Sie auf "OK".
-10. Erweitern Sie das Bescheinigungs-Inforegister, um die Bescheinigungen anzuzeigen oder zu bearbeiten, einschließlich der Qualifikationszuordnung.
+10. Erweitern Sie das Zertifikats-Inforegister, um die Zertifikate anzuzeigen oder zu bearbeiten, einschließlich der Qualifikationszuordnung.
 11. Erweitern Sie das Inforegister "Qualifikationen", um die Qualifikationen anzuzeigen oder zu bearbeiten, die eingefügt werden sollen.
 12. Markieren Sie in der Liste die erste Zeile.  Beispiel: Buchhaltung
 13. Klicken Sie auf das Kontrollkästchen "Optional".

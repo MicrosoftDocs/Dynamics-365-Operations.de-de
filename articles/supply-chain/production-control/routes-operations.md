@@ -19,12 +19,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4bb2f340afffc5f62c200b4daac311db435d796e
-ms.sourcegitcommit: 97d4a9bd442fe20f90605d8154c3a947c7645b37
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3895376"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "3989240"
 ---
 # <a name="routes-and-operations"></a>Arbeitspläne und Arbeitsgänge
 
@@ -37,10 +37,10 @@ Dieses Thema enthält allgemeine Informationen zu Arbeitsplan und Arbeitsgänge.
 
 Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der erforderlich ist, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Für jeden Arbeitsgang definiert der Arbeitsplan auch die betrieblichen Ressourcen, die erforderlich sind, die Zeit, die benötigt wird, um den Arbeitsgang einrichten und ausführen, und wie Kosten berechnet werden sollen. Sie können dieselben Arbeitsplan verwenden, um mehrere Produkte anzuzeigen, oder Sie können einen eindeutigen Arbeitsplan für jedes Produkt oder Produktvariante definieren. Sie können sogar mehrere Arbeitspläne für das gleiche Produkt haben. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie der Menge, die produziert werden muss ab. Die Definition eines Arbeitsplans in Supply Chain Management besteht aus vier verschiedenen Elemente, die zusammen den Produktionsprozess beschreiben:
 
--   **Arbeitsplan** – Ein Arbeitsplan definiert die Struktur des Produktionsprozesses. Das bedeutet, er definiert die Reihenfolge der Arbeitsgänge.
--   **Arbeitsgang** – Ein Arbeitsgang gibt einen Schritt in einem benannten Arbeitsplan an (z. B. **Zusammenbau**). Der gleiche Vorgang kann in mehreren Arbeitsplänen auftreten und unterschiedliche Arbeitsgangnummern haben.
--   **Arbeitsgangzuordnung** – Eine Arbeitsgangzuordnung definiert die betrieblichen Eigenschaften eines Arbeitsgangs, wie Rüstzeit und die Bearbeitungszeit, Kostenkategorien, Verbrauchsparameter und Ressourcenanforderungen. Die betrieblichen Arbeitsgangzuordnung ermöglicht unterschiedliche Eigenschaften eines Arbeitsgangs, je nach spezifischem Arbeitsplan und Arbeitsgang für die Produkte die produziert werden.
--   **Arbeitsplanversion** – Eine Arbeitsplanversion definiert den Arbeitsplan, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Arbeitsplanversionen ermöglichen das Wiederverwendet von Arbeitsplänen für Produkte oder Änderungen. Sie ermöglichen auch unterschiedliche Arbeitpläne, um die gleichen Produkte zu erzeugen. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie dem Standort oder der Menge, die produziert werden muss ab.
+- **Arbeitsplan** – Ein Arbeitsplan definiert die Struktur des Produktionsprozesses. Das bedeutet, er definiert die Reihenfolge der Arbeitsgänge.
+- **Arbeitsgang** – Ein Arbeitsgang gibt einen Schritt in einem benannten Arbeitsplan an (z. B. **Zusammenbau**). Der gleiche Vorgang kann in mehreren Arbeitsplänen auftreten und unterschiedliche Arbeitsgangnummern haben.
+- **Arbeitsgangzuordnung** – Eine Arbeitsgangzuordnung definiert die betrieblichen Eigenschaften eines Arbeitsgangs, wie Rüstzeit und die Bearbeitungszeit, Kostenkategorien, Verbrauchsparameter und Ressourcenanforderungen. Die betrieblichen Arbeitsgangzuordnung ermöglicht unterschiedliche Eigenschaften eines Arbeitsgangs, je nach spezifischem Arbeitsplan und Arbeitsgang für die Produkte die produziert werden.
+- **Arbeitsplanversion** – Eine Arbeitsplanversion definiert den Arbeitsplan, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Arbeitsplanversionen ermöglichen das Wiederverwendet von Arbeitsplänen für Produkte oder Änderungen. Sie ermöglichen auch unterschiedliche Arbeitpläne, um die gleichen Produkte zu erzeugen. In diesem Fall hängt der Arbeitsplan, der verwendet wird, von Faktoren wie dem Standort oder der Menge, die produziert werden muss ab.
 
 ## <a name="routes"></a>Arbeitspläne
 Ein Arbeitsplan beschreibt die Reihenfolge der Arbeitsgänge, der verwendet wird, um ein Produkt oder eine ausgewählte Produktvariante zu erzeugen. Jeder Arbeitsgang wird eine Arbeitsgangnummer und einen Folgeaktivitätsarbeitsgang zugewiesen. Die Reihenfolge der Arbeitsgangsformularen eines Arbeitsplan-Netzwerks kann als Diagramm dargestellt werden, das ein oder mehrere Startpunkte und einen bestimmten Endpunkt hat. In Supply Chain Management werden Arbeitspläne basierend auf dem Typ der Struktur unterschieden. Die zwei Typen der Arbeitspläne sind einfache Arbeitspläne und Arbeitsplan-Netzwerke. In den Produktionssteuerungsparametern können Sie angeben, ob nur einfache Arbeitspläne verwendet werden können oder ob die komplexeren Arbeitsplan-Netzwerke verwendet werden können.
@@ -60,9 +60,9 @@ Wenn Sie die komplexeren Arbeitsplan-Netzwerke in den Produktionssteuerungsparam
 [![Arbeitsplan-Netzwerk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
-> -   Jeder Arbeitsgang kann nur einen Folgeaktivitätsarbeitsgang haben, und der gesamte Arbeitsplan muss in einem einzigen Arbeitsgang beendet werden.
-> -   Dies gibt keine Garantie, dass mehrere Arbeitsgänge, die den gleichen Folgeaktivitätsarbeitsgang haben (z. B. Arbeitsgänge 30 und 40 in der vorhergehenden Abbildung)tatsächlich parallel ausgeführt werden. Die Verfügbarkeit und die Kapazität von Ressourcen kann Einschränkungen auf den Weg der Planung von Arbeitsgängen verursachen.
-> -   Sie können 0 (null) nicht als Arbeitsgangnummer verwenden. Die Nummer und reserviert und wird verwendet, um anzugeben, dass der letzte Arbeitsgang im Arbeitsplan keine Folgeaktivitätsarbeitsgang hat.
+> - Jeder Arbeitsgang kann nur einen Folgeaktivitätsarbeitsgang haben, und der gesamte Arbeitsplan muss in einem einzigen Arbeitsgang beendet werden.
+> - Dies gibt keine Garantie, dass mehrere Arbeitsgänge, die den gleichen Folgeaktivitätsarbeitsgang haben (z. B. Arbeitsgänge 30 und 40 in der vorhergehenden Abbildung)tatsächlich parallel ausgeführt werden. Die Verfügbarkeit und die Kapazität von Ressourcen kann Einschränkungen auf den Weg der Planung von Arbeitsgängen verursachen.
+> - Sie können 0 (null) nicht als Arbeitsgangnummer verwenden. Die Nummer und reserviert und wird verwendet, um anzugeben, dass der letzte Arbeitsgang im Arbeitsplan keine Folgeaktivitätsarbeitsgang hat.
 
 ### <a name="parallel-operations"></a>Parallele Arbeitsgänge
 
@@ -99,12 +99,12 @@ Die betrieblichen Eigenschaften eines Arbeitsgangs, wie Rüstzeit und die Bearbe
 ## <a name="operation-relations"></a>Arbeitsgangzuordnungen
 Die betrieblichen folgenden Eigenschaften eines Arbeitsgangs werden auf der Arbeitsgangzuordnung verwaltet:
 
--   Kostenarten
--   Verbrauchsparameter
--   Bearbeitungszeiten
--   Verarbeitung von Mengen
--   Ressourcenanforderungen
--   Hinweise und Anweisungen
+- Kostenarten
+- Verbrauchsparameter
+- Bearbeitungszeiten
+- Verarbeitung von Mengen
+- Ressourcenanforderungen
+- Hinweise und Anweisungen
 
 Sie können mehrere Arbeitsgangzuordnungen für denselben Arbeitsgang definieren. Allerdings ist jede Arbeitsgangzuordnung für einen Arbeitsgang bestimmt und speichert Eigenschaften, die einen Arbeitsplan, ein freigegebenes Produkt oder einer Gruppe von gemeinsamen Produkten gehören, die einer Artikelgruppe zugeordnet werden. Daher kann der gleiche Vorgang in mehreren Arbeitsplänen mit verschiedene betriebliche Eigenschaften verwendet werden. Darüber hinaus können Sie problemlos die Masterdaten beibehalten, wenn Sie normale Arbeitsgänge mit gleichen Eigenschaften nutzen, unabhängig von dem Arbeitsplan und dem Produkt. Der Umfang der Arbeitsgangzuordnung wird durch die Eigenschaften **Artikelcode**, **Artikelrelation**, **Arbeitsplancode** und **Arbeitsplanzuordnung** wie in der folgenden Tabelle dargestellt definiert.
 
@@ -166,12 +166,13 @@ Wenn Supply Chain Management nach der für ein freigegebenes Produkt relevantest
 Daher sollte ein Arbeitsgang nur einmal für jeden Arbeitsplan verwendet werden. Wenn der Arbeitsgang mehrmals im gleichen Arbeitsplan auftritt, haben alle Auftreten dieses Arbeitsgangs dieselbe Arbeitsgangzuordnung, und Sie können nicht verschiedene Eigenschaften (beispielsweise Bearbeitungszeiten) haben.
 
 ## <a name="route-versions"></a>Arbeitsplanversionen
+
 Arbeitsplanversionen werden verwendet, um Abweichungen bei der Herstellung von Produkten gerecht zu werden, oder um eine stärkere Kontrolle über den Produktionsprozess zu ermöglichen. Sie definieren, welcher Arbeitsplan verwendet werden soll, wenn ein bestimmtes freigegebenes Produkt oder eine Variante des freigegebenen Produkts produziert wird. Sie können die folgenden Einschränkungen verwenden, um festzulegen, welche Arbeitsplanung für ein freigegebenes Produkt verwendet wird:
 
--   Produktdimensionen (Größe, Farbe, Stil, Konfiguration)
--   Produktionsmengen
--   Produktionsstandort
--   Produktionsdatum
+- Produktdimensionen (Größe, Farbe, Stil, Konfiguration)
+- Produktionsmengen
+- Produktionsstandort
+- Produktionsdatum
 
 Wenn Sie das Produkt an einen bestimmten Standort, in einer bestimmten Menge oder in einer bestimmten Periode erstellen, können Sie eine bestimmte Arbeitsplanversion als die Standardarbeitsplanversion auswählen. Beachten Sie, dass nur ein aktiver Arbeitsplan für ein gegebenes freigegebenes Produkt und einen vorgegebenen Reihe von Beschränkungen zulässig ist.  
 
@@ -194,6 +195,7 @@ Wenn Sie ein Protokoll beibehalten müssen, das festhält, wer jeden Arbeitsplan
 Der Produktänderungsfall zur Genehmigung und Aktivierung von neuen oder geänderten Arbeitspläne und Arbeitsplanversionen enthält eine einfache Möglichkeit, einen Überblick über die Arbeitsplanversionseinschränkungen anzuzeigen. Sie können auch alle Arbeitspläne genehmigen und aktivieren, die mit einer spezifischen Änderung in einem Arbeitsgang im Dokument und die Ergebnisse im Produkt zugeordnet werden.
 
 ## <a name="maintaining-routes"></a>Arbeitspläne verwalten
+
 Abhängig von Ihren Geschäftsanforderungen könnten Sie den Aufwand reduzieren, der erforderlich ist, um die Prozeßdefinitionen verwalten.
 
 ### <a name="making-routes-independent-of-resources"></a>Arbeitsplan unabhängiger von Ressourcen gestalten
@@ -224,10 +226,10 @@ Wenn Sie diesen Ansatz verwenden, wird die Seite **Arbeitsgangzuordnungen** Ihr 
 
 Wenn Sie keine betriebliche Ressourcen oder eine Ressourcengruppe als Teil der Ressourcenanforderungen für einen Arbeitsgang angegeben, arbeiten möglicherweise die entsprechenden Ressourcen mit unterschiedlichen Geschwindigkeiten. Daher kann die Dauer, die erforderlich ist, um einen Arbeitsgang zum Verarbeiten, abweichen. Zur Behebung dieses Problems, können Sie das Feld **Formel** in der Arbeitsgangzuordnung verwenden, um die Berechnung von Zeitintervall festzulegen. Die folgenden Optionen sind verfügbar:
 
--   **Standard** – (Standardeinstellung) Die Berechnung verwendet nur die Felder aus der Arbeitsgangzuordnung und multipliziert die angegebene Bearbeitungszeit und die Auftragsmenge.
--   **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**.
--   **Charge** – Eine Chargenkapazität wird berechnet, indem die Informationen aus der Arbeitsgangzuordnung verwendet werden. Die Anzahl von Chargen und daher die Bearbeitungszeit können auf Basis der Auftragsmenge dann berechnet werden.
--   **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
+- **Standard** – (Standardeinstellung) Die Berechnung verwendet nur die Felder aus der Arbeitsgangzuordnung und multipliziert die angegebene Bearbeitungszeit und die Auftragsmenge.
+- **Kapazität** – Die Berechnung umfasst das **Kapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig. Der Wert, der in dieser betrieblichen Ressource angegeben wird, ist Kapazität pro Stunde. Die **Prozesszeit** wird berechnet als **Bestellmenge** geteilt durch **Kapazität**.
+- **Charge** – Eine Chargenkapazität wird berechnet, indem die Informationen aus der Arbeitsgangzuordnung verwendet werden. Die Anzahl von Chargen und daher die Bearbeitungszeit können auf Basis der Auftragsmenge dann berechnet werden.
+- **Ressourcencharge** – Diese Option ist grundlegend die gleiche wie die **Charge** Option. Allerdings umfasst die Berechnung das **Chargenkapazität** Feld aus der betrieblichen Ressource. Daher ist die Zeit ressourceabhängig.
 
 ### <a name="set-up-route-groups"></a>Arbeitsplangruppen einrichten
 

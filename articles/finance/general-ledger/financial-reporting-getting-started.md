@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7cc238c573a319073b451063782762c19a80017
-ms.sourcegitcommit: 28a771d81322e72d88db63a20ff360de084a6087
+ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
+ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3835109"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "3967257"
 ---
 # <a name="get-started-with-financial-reporting"></a>Erste Schritte mit Financial Reporting 
 
@@ -149,7 +149,12 @@ Problem 1: Der Berichts-Designer wird nicht gestartet, wenn Sie **Neu** oder **B
 * Im Internet Explorer wählen Sie **Einstellungen** aus, dann wählen Sie **Internetoptionen** aus. Wählen Sie die Registerkarte **Sicherheit** aus. Wählen Sie „Vertrauenswürdige Sites“ aus. Im Bereich mit der Bezeichnung „Sicherheitsstufe für diese Zone“ ändern Sie die Option zu **Mittel bis niedrig**.
 * Deaktivieren Sie den Popupblocker in Ihrem Browser.
 * Auf Arbeitsstationen muss Microsoft .NET-Framework 4.6.2 oder höher installiert sein. Diese Version von Microsoft .NET Framework kann heruntergeladen und eingerichtet werden vom [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Wenn Sie den Chrome-Browser verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichts-Designer-Client herunterzuladen. Wenn Sie den Inkognitomodus ausführen, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den Inkognitomodus aktiviert ist. Wenn Sie sich nicht mit Chrome anmelden können, folgen Sie den in Problem 1 beschriebenen Einrichtungsschritten unter Verwendung von Internet Explorer oder Microsoft Edge. 
+* Wenn Sie Microsoft Edge mit dem Chrome-Browser verwenden, müssen Sie eine ClickOnce-Erweiterung installieren, um den Berichts-Designer-Client herunterzuladen. Wenn Sie den Inkognitomodus ausführen, sollten Sie sicherstellen, dass die ClickOnce-Erweiterung auch für den Inkognitomodus aktiviert ist. 
+     1. Öffnen Sie einen neuen Browser in Microsoft Edge.
+     2. Geben Sie **edge://flags** ein und wählen **Eingeben**.
+     3. Suchen Sie nach der Option **ClickOnce-Support** oder verwenden Sie diesen direkten Link: **edge://flags/#edge-click-once**.
+     4. Stellen Sie die Dropdown-Menüoption auf **Aktiviert** ein.
+     5. Wählen Sie**Browser neu starten**.
 
 Problem 2: Dem Benutzer wurden nicht die erforderlichen Berechtigungen zur Verwendung von Financial Reporting zugewiesen. 
 
