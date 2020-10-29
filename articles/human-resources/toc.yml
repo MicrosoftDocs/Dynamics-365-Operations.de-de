@@ -5,13 +5,19 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
+        - name: 22. Oktober 2002
+          href: hr-whats-new-2020-10-22.md
+        - name: 6. Oktober 2020
+          href: hr-whats-new-2020-10-06.md
+        - name: 26. September 2020
+          href: hr-whats-new-2020-09-26.md
         - name: 16. September 2020
           href: hr-whats-new-2020-09-16.md
         - name: 3. September 2020
           href: hr-whats-new-2020-09-03.md
-        - name: "20.\_August\_2020"
+        - name: 20. August 2020
           href: hr-whats-new-2020-08-20.md
-        - name: "6.\_August\_2020"
+        - name: 6. August 2020
           href: hr-whats-new-2020-08-06.md
         - name: "23.\_Juli\_2020"
           href: hr-whats-new-2020-07-23.md
@@ -83,6 +89,8 @@
               href: hr-admin-integration-dayforce.md
             - name: Eine wiederkehrende Datenexport-App erstellen
               href: hr-admin-integration-recurring-data-export.md
+            - name: In LinkedIn Talent Hub integrieren
+              href: hr-admin-integration-linkedin.md
             - name: In Office integrieren
               items:
                 - name: Lernprogramm zur Office-Integration
@@ -217,6 +225,10 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Human Resources-App in Teams
           href: hr-admin-teams-leave-app.md
+        - name: Liveschaltung vorbereiten
+          href: hr-admin-go-live-prepare.md
+        - name: FAQ live schalten
+          href: hr-admin-go-live-faq.md
         - name: Dokumentationsressourcen
           items:
             - name: Hilfesystem
@@ -669,6 +681,8 @@
           items:
             - name: Mitarbeiter- und Manager-Self-Service-Übersicht
               href: hr-employee-manager-self-service-overview.md
+            - name: Benutzerdefinierte Links in Manager-Self-Service erstellen
+              href: hr-employee-manager-self-service-custom-links.md
             - name: Name des Self-Service-Arbeitsbereichs für Mitarbeiter ändern
               href: hr-employee-self-service-workspace-name.md
             - name: Persönliche Daten bearbeiten
