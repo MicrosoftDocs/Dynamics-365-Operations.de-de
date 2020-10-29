@@ -1735,6 +1735,8 @@
                   href: procurement/purchase-agreements.md
                 - name: Kaufvertrag erstellen
                   href: procurement/tasks/create-purchase-agreement.md
+                - name: Automatische Zuteilung von Gebühren
+                  href: procurement/automatic-charges-allocation.md
                 - name: Rückvergütungen für Kreditoren
                   href: procurement/vendor-rebates.md
                 - name: 'Problembehandlung bei Preisen, Rabatten, Vereinbarungen und Rückvergütungen'
@@ -2037,10 +2039,18 @@
                           href: production-control/tasks/report-production-order-finished.md
                         - name: Produktionsauftrag beenden
                           href: production-control/tasks/end-production-order.md
-                    - name: Freigeben von Produktionsaufträgen
+                    - name: Produktionsaufträge freigeben
                       href: production-control/release-production-orders.md
                     - name: Fertigmeldung für Produktionsaufträge
                       href: production-control/report-production-orders-as-finished.md
+                    - name: Produktionsausführungsoberfläche einrichten und verwenden
+                      items:
+                        - name: Produktionsausführungsoberfläche konfigurieren
+                          href: production-control/production-floor-execution-configure.md
+                        - name: Gerät zum Ausführen der Produktionsausführungsoberfläche einrichten
+                          href: production-control/production-floor-execution-setup.md
+                        - name: Verwendung der Produktionsausführungsoberfläche durch Arbeitskräfte
+                          href: production-control/production-floor-execution-use.md
                     - name: Einzelvorgangsliste für Geräte konfigurieren
                       href: production-control/config-job-card-device.md
                     - name: Vom Einzelvorgangskartengerät als erledigt melden
@@ -2275,7 +2285,9 @@
                   href: sales-marketing/tasks/ship-orders-direct-deliveries.md
                 - name: Aufträge ohne Lagerort liefern
                   href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
-                - name: Erstellen einer Bestellung auf Grundlage eines Auftrags
+                - name: Automatische Zuteilung von Gebühren
+                  href: procurement/automatic-charges-allocation.md
+                - name: Bestellung auf Grundlage eines Auftrags erstellen
                   href: sales-marketing/tasks/create-purchase-order-sales-order.md
                 - name: Aufträge erstellen
                   href: sales-marketing/tasks/create-sales-orders.md
@@ -2663,8 +2675,6 @@
                       href: warehousing/tasks/license-plate-label-printing.md
                     - name: Umlagerungsaufträge aus der Lagerort-App erstellen
                       href: warehousing/create-transfer-order-from-warehouse-app.md
-                    - name: Verarbeitung von Ergebnissen der Lagerort-App
-                      href: warehousing/warehouse-app-events.md
                     - name: Stückentnahmebestätigung
                       href: warehousing/piece-picking-confirmation.md
                     - name: Verpackungsmaterialien und Gebühren
@@ -2843,6 +2853,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobile Geräte für Lagerarbeiten einrichten
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: Verarbeitung von Ereignissen der Lagerort-App
+                      href: warehousing/warehouse-app-events.md
                     - name: Kennzeicheneingang mit der Lagerort-App
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Auf einem mobilen Gerät eine Menüoption zur Fertigstellung von Arbeiten in einer Bestellung einrichten
