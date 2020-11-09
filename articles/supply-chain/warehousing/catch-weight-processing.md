@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: b1d106fa6fe5072eb74813495253731dd988c376
-ms.sourcegitcommit: 9a0be1ceee90e80f4c75f241aba847547b5032e5
+ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "3693278"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016261"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung
 
@@ -30,12 +30,12 @@ ms.locfileid: "3693278"
 
 ## <a name="feature-exposure"></a>Funktionsbereitstellung
 
-Um die Lagerortverwaltung für die Artikelgewichtsproduktverarbeitung zu verwenden, müssen Sie einen Lizenzkonfigurationsschlüssel verwenden, um die Funktionen zu aktivieren. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**. Erweitern Sie dann auf der Registerkarte **Konfigurationsschlüssel** **Handel \> Lager- und Transportverwaltung**, und markieren Sie das Kontrollkästchen für **Artikelgewicht für Lager**.
+Um die Lagerortverwaltung für die Artikelgewichtsproduktverarbeitung zu verwenden, müssen Sie einen Lizenzkonfigurationsschlüssel verwenden, um die Funktionen zu aktivieren. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**. Erweitern Sie dann auf der Registerkarte **Konfigurationsschlüssel** **Handel \> Lager- und Transportverwaltung** , und markieren Sie das Kontrollkästchen für **Artikelgewicht für Lager**.
 
 > [!NOTE]
-> Sowohl der **Lagerort und Transportverwaltung**-Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden. Um die Konfigurationsschlüssel für das Artikelgewicht festzulegen, müssen Sie die Funktion auch mit dem Arbeitsbereich **Funktionsverwaltung** aktivieren. Die Hauptfunktion, die aktiviert werden muss, ist **Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung**. Zwei verwandte, aber optionale Funktionen, die Sie möglicherweise einschalten möchten, sind **Lagerstatusänderungen für Produkte mit Artikelgewicht** und **Benutzen Sie vorhandene Artikelgewichtkennzeichnungen, wenn Sie Produktionsaufträge als abgeschlossen melden**.
+> Sowohl der **Lagerort und Transportverwaltung** -Lizenzkonfigurationsschlüssel als auch die **Prozessverteilungsartikelgewicht \> Lizenzkonfigurationsschlüssel** müssen ebenfalls aktiviert werden. Um die Konfigurationsschlüssel für das Artikelgewicht festzulegen, müssen Sie die Funktion auch mit dem Arbeitsbereich **Funktionsverwaltung** aktivieren. Die Hauptfunktion, die aktiviert werden muss, ist **Artikelgewichtsproduktverarbeitung mit Lagerortverwaltung**. Zwei verwandte, aber optionale Funktionen, die Sie möglicherweise einschalten möchten, sind **Lagerstatusänderungen für Produkte mit Artikelgewicht** und **Benutzen Sie vorhandene Artikelgewichtkennzeichnungen, wenn Sie Produktionsaufträge als abgeschlossen melden**.
 
-Nachdem der Lizenzkonfigurationsschlüssel aktiviert ist, können Sie beim Erstellen eines freigegebenen Produkts **Artikelgewicht** auswählen. Sie können das freigegebene Produkt auch einer Lagerdimensionsgruppe zuordnen, für die der **Lagerortverwaltungsprozesse verwenden**-Parameter ausgewählt ist.
+Nachdem der Lizenzkonfigurationsschlüssel aktiviert ist, können Sie beim Erstellen eines freigegebenen Produkts **Artikelgewicht** auswählen. Sie können das freigegebene Produkt auch einer Lagerdimensionsgruppe zuordnen, für die der **Lagerortverwaltungsprozesse verwenden** -Parameter ausgewählt ist.
 
 Bevor Sie das Produkt in der Lagerortverwaltung verwenden können, müssen Sie einige produktspezifische Grundeinstellungen für das Artikelgewicht vornehmen:
 
@@ -63,7 +63,7 @@ In diesem Fall passt das System automatisch die Differenz an, indem eine Transak
 
 **Beispiel 2**
 
-In der Definition wird ein Produkt so eingerichtet, dass ein Mindestgewicht von 8 kg und ein Höchstgewicht von 12 kg für die **Box**-Artikelgewichtseinheit toleriert wird.
+In der Definition wird ein Produkt so eingerichtet, dass ein Mindestgewicht von 8 kg und ein Höchstgewicht von 12 kg für die **Box** -Artikelgewichtseinheit toleriert wird.
 
 Es gibt zwei Boxen des Produkts, und sie haben ein erfasstes Gewicht von 16 kg. Wenn ein Lagerarbeiter eine der Boxen entnimmt und wiegt und das Gewicht mit 9 kg erfasst wird, wiegt die verbleibende Box 7 kg. Da 7 kg jedoch unter dem Mindestgewicht liegen, führt das System eine automatische Anpassung durch, um das Gewicht des verfügbaren Bestands um 1 kg zu erhöhen.
 
@@ -104,12 +104,12 @@ Wenn ein Element mit einem Tag verfolgt wird, gibt es außerdem einen Parameter 
 
 ### <a name="how-to-capture-catch-weight"></a>So wird das Artikelgewicht aufgezeichnet
 
-**Wenn die Artikelgewichtstag-Rückverfolgung verwendet wird**, muss ein Tag immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jedes Tag muss immer einem Gewicht zugeordnet werden.
+**Wenn die Artikelgewichtstag-Rückverfolgung verwendet wird** , muss ein Tag immer für jede eingegangene Artikelgewichtseinheit erstellt werden, und jedes Tag muss immer einem Gewicht zugeordnet werden.
 
 Beispielsweise ist **Box** die Artikelgewichteinheit, und Sie erhalten eine Palette mit acht Boxen. In diesem Fall müssen acht eindeutige Artikelgewichtsmarkierungen erstellt werden, und ein Gewicht muss jeder Markierung zugeordnet werden. Je nach Eingangsartikelgewichts-Markierung kann entweder das Gewicht aller acht Boxen erfasst werden und das Durchschnittsgewicht dann auf jede Box verteilt werden, oder ein eindeutiges Gewicht kann für jede Box erfasst werden.
-Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden**, wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Daher fordert die Warehouse-App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
+Wenn Sie die Funktion **Bestehende Artikelgewicht-Tags verwenden, wenn Sie Produktionsaufträge als abgeschlossen melden** , wobei der Prozess über einen Menüpunkt des Mobilgeräts aktiviert ist, wird der Bestand auf der Grundlage der vorhandenen Artikelgewicht-Tag-Informationen aktualisiert. Daher fordert die Warehouse-App nicht dazu auf, die Daten der Artikelgewicht-Tags als Teil eines Produktionsberichts als fertigen Vorgang zu erfassen.
 
-**Wenn die Artikelgewichtstag-Rückverfolgung nicht verwendet wird**, kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
+**Wenn die Artikelgewichtstag-Rückverfolgung nicht verwendet wird** , kann das Gewicht für jeden Dimensionssatz erfasst werden (z. B. für jeden Ladungsträger und alle Rückverfolgungsangaben). Alternativ kann das Gewicht auf Basis einer aggregierten Ebene erfasst werden, z. B. fünf Ladungsträger (Paletten).
 
 Für die Methoden zur Erfassung des Ausgangsgewichts können Sie mit der Option **Pro Artikelgewichtseinheit** den Wiegevorgang festlegen, der für jede Artikelgewichtseinheit erfolgen soll (z. B. pro Kiste). Mit der Option **Pro Kommissioniereinheit** können Sie festlegen, dass das Gewicht basierend auf der zu kommissionierenden Menge erfasst werden soll (z. B. drei Kästchen). Beachten Sie, dass für die Entnahme der Produktionsauftragsposition und für interne Verschiebungsprozesse das Durchschnittsgewicht verwendet wird, wenn die Option **Nicht erfasst** verwendet wird.
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: 889337560f073708fb16b2dc173f9872593dd570
-ms.sourcegitcommit: be4fcf8f19c55e852a729b215a16e24e971ff5b7
+ms.openlocfilehash: 7e1f70d95f29dc154044f09c6020300a8e4f8987
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "3456813"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997477"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migration vom Währungsdatentyp für duales Schreiben
 
@@ -87,7 +86,7 @@ Nach Abschluss der Migration können Administratoren die Währungsgenauigkeit fe
 
 ### <a name="business-management-currencies"></a>Geschäftsdokumentverwaltung: Währungen
 
-Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung**, wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie das Feld **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen, wie in der folgenden Abbildung gezeigt.
+Wenn Sie verlangen, dass die Währungsgenauigkeit für eine bestimmte Währung von der Währungsgenauigkeit abweicht, die für die Preisgestaltung verwendet wird, können Sie sie ändern. Gehen Sie zu **Einstellungen \> Geschäftsführung** , wählen **Währungen** und wählen die zu ändernde Währung aus. Dann stellen Sie das Feld **Währungspräzision** auf die Anzahl der gewünschten Dezimalstellen, wie in der folgenden Abbildung gezeigt.
 
 ![Währungseinstellungen für ein bestimmtes Gebietsschema](media/specific-currency.png)
 

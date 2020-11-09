@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8cc7c11233c745719af72222eba02fb71d7a8944
-ms.sourcegitcommit: 4edc658448612afbf1c1663c166d12e08e4c4165
+ms.openlocfilehash: c3352afd93dfc7c37a8af9dabaf85b7a1debad30
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "3340929"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997253"
 ---
 # <a name="general-troubleshooting"></a>Allgemeine Problembehandlung
 
@@ -64,7 +63,7 @@ Um die Nachverfolgung einzuschalten, führen Sie diese Schritte aus.
 
 1. Melden Sie sich bei der modellgesteuerten App in Dynamics 365 an, öffnen Sie die Seite **Einstellungen** und dann unter **System** wählen Sie **Verwaltung** aus.
 2. Wählen Sie auf der Seite **Verwaltung** die Option **Systemeinstellungen** aus.
-3. Auf der Registerkarte **Anpassung** wählen Sie **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** und **Alle**, um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
+3. Auf der Registerkarte **Anpassung** wählen Sie **Plug-In und benutzerdefinierte Workflow-Aktivitätsverfolgung** und **Alle** , um das Plug-Trace-Protokoll zu aktivieren. Wenn Sie Ablaufverfolgungsprotokolle nur protokollieren möchten, wenn Ausnahmen auftreten, können Sie stattdessen **Ausnahme** auswählen.
 
 
 Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
@@ -84,7 +83,7 @@ Um die Nachverfolgung anzuzeigen, führen Sie diese Schritte aus.
 
 2. Stellen Sie die **IsDebugMode** Eigenschaft auf **Ja** für das Projekt.
 3. Führen Sie das Szenario aus, das Fehler generiert.
-4. Die ausführlichen Protokolle sind in der Tabelle DualWriteErrorLog verfügbar. Verwenden Sie die folgende URL, um Daten im Tabellenbrowser nachzuschlagen (**XXX** wie erforderlich ersetzen):
+4. Die ausführlichen Protokolle sind in der Tabelle DualWriteErrorLog verfügbar. Verwenden Sie die folgende URL, um Daten im Tabellenbrowser nachzuschlagen ( **XXX** wie erforderlich ersetzen):
 
     `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=>DualWriteErrorLog`
 
@@ -117,7 +116,7 @@ Sie können jetzt eine neue Umgebung verknüpfen.
 Wenn Sie in Dynamics 365 Sales einen Kundenauftrag erstellen, können Sie durch das Klicken auf **+ Produkte hinzufügen** möglicherweise zum Bestellformular für Dynamics 365 Project Operations weitergeleitet werden. Von diesem Formular aus gibt es keine Möglichkeit, das Formular **Information** der Kundenauftragsposition anzuzeigen. Die Option für **Information** wird in der Dropdownliste unter **Neue Auftragsposition** nicht angezeigt. Dies liegt daran, dass Project Operations in Ihrer Umgebung installiert wurde.
 
 Um die Formularoption **Information** wieder zu aktivieren, führen Sie die folgenden Schritte aus:
-1. Navigieren Sie zur **Auftragsposition**-Entität.
-2. Suchen Sie das **Information**-Formular unter dem Formularknoten. 
+1. Navigieren Sie zur **Auftragsposition** -Entität.
+2. Suchen Sie das **Information** -Formular unter dem Formularknoten. 
 3. Wählen Sie das Formular **Information** und klicken Sie auf **Sicherheitsrollen aktivieren**. 
 4. Ändern Sie die Sicherheitseinstellung in **Anzeige für alle**.

@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 20847ea4651b816fc95135ca03667ae297cde5be
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 4b7d2da346880278f684a796f2d649e7da52b647
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188486"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097185"
 ---
 # <a name="bank-management-workspace"></a>Arbeitsbereich für die Bankverwaltung
 
 [!include [banner](../includes/banner.md)]
 
-Der Arbeitsbereich **Bankwesen** zeigt Informationen bezüglich der Bankkonten des Unternehmens. Der Arbeitsbereich umfasst eine Ansicht **Zusammenfassung** und eine Seite **Analyse**. Die **Zusammenfassungsansicht** zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die **Analyse**-Seite verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen.
+Der Arbeitsbereich **Bankwesen** zeigt Informationen bezüglich der Bankkonten des Unternehmens. Der Arbeitsbereich umfasst eine Ansicht **Zusammenfassung** und eine Seite **Analyse**. Die **Zusammenfassungsansicht** zeigt Übersichtskacheln, Bankkontoinformationen, ein Saldodiagramm und zugehörige Informationen an. Die **Analyse** -Seite verwendet die Funktionen von Microsoft Power BI, um grafische Elemente hinsichtlich der Bankkontosalden anzuzeigen.
 
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 
@@ -43,9 +43,9 @@ Die Karte zeigt außerdem an, wann das Bankkonto zuletzt abgestimmt wurde. Diese
 
 ### <a name="balance"></a>Bilanz
 
-Das **Saldo**-Diagramm zeigt historische Saldoinformationen für das Bankkonto an, das im **Bankkonten**-Abschnitt ausgewählt wurde, oder eine Übersicht der historischen Saldoinformationen für alle Bankkonten bei der juristischen Person. Diese Informationen sind für verschiedene Zeiträume verfügbar: die aktuelle Woche, den aktuellen Monat, das aktuelle Jahr, die letzten fünf Jahre und alle Zeiträume (der vollständige Verlauf des Bankkontos). 
+Das **Saldo** -Diagramm zeigt historische Saldoinformationen für das Bankkonto an, das im **Bankkonten** -Abschnitt ausgewählt wurde, oder eine Übersicht der historischen Saldoinformationen für alle Bankkonten bei der juristischen Person. Diese Informationen sind für verschiedene Zeiträume verfügbar: die aktuelle Woche, den aktuellen Monat, das aktuelle Jahr, die letzten fünf Jahre und alle Zeiträume (der vollständige Verlauf des Bankkontos). 
 
-Wenn Sie das **Saldo**-Diagramm für ein einzelnes Bankkonto anzeigen, werden die historischen Salden in der Bankkontowährung angezeigt. Wenn Sie das Saldo-Diagramm aller Bankkonten der juristischen Person anzeigen, werden die historischen Salden in der Buchhaltungswährung angezeigt.
+Wenn Sie das **Saldo** -Diagramm für ein einzelnes Bankkonto anzeigen, werden die historischen Salden in der Bankkontowährung angezeigt. Wenn Sie das Saldo-Diagramm aller Bankkonten der juristischen Person anzeigen, werden die historischen Salden in der Buchhaltungswährung angezeigt.
 
 Informationen dazu, wann die Daten zuletzt aktualisiert wurden, werden am Anfang des Diagramms angezeigt. Sie können die Daten bei Bedarf aktualisieren.
 
@@ -63,4 +63,4 @@ Die Seite **Analyse** enthält wichtige Metriken zu Bankkonten im aktuellen Unte
 -   Saldo nach Bankkonto
 -   Saldo in Währung
 
-Sie können die Bankanalyse für alle Unternehmen im Arbeitsbereich **Bargeldüberblick – alle Unternehmen** anzeigen.
+Sie können die Bankanalyse für alle Unternehmen im Arbeitsbereich **Bargeldüberblick – alle Unternehmen** anzeigen. Weitere Informationen finden Sie unter [Bargelübersicht Power BI Inhalt](Cash-Overview-Power-BI-content.md).

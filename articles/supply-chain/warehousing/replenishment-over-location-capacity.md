@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5591af5fce4eb3fc901919b98f654faa5e160c54
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652234"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016607"
 ---
 # <a name="replenishment-over-location-capacity"></a>Wiederbeschaffung über Lagerplatzkapazität
 
@@ -227,8 +228,8 @@ Nachdem Sie alle zuvor beschriebenen Beispieldaten verfügbar gemacht und einger
 1. Filtern Sie im Abschnitt **Übersicht** die Spalte **Lagerort** nach dem Lagerort *61*.
 1. Es sollten sieben Arbeits-IDs für die drei Bedarfsaufträge erstellt werden.
 
-    - Drei der sieben Arbeits-IDs haben einen **Arbeitsauftragstyp**-Wert von *Wiederbeschaffung* und vier haben einen **Arbeitsauftragstyp**-Wert von *Aufträge*.
-    - Alle drei Arbeits-IDs mit einem **Arbeitsauftragstyp**-Wert von *Wiederbeschaffung* weisen dieselben *Entnehmen*- und *Einlagern*-Lagerplätze im Abschnitt **Positionen** auf:
+    - Drei der sieben Arbeits-IDs haben einen **Arbeitsauftragstyp** -Wert von *Wiederbeschaffung* und vier haben einen **Arbeitsauftragstyp** -Wert von *Aufträge*.
+    - Alle drei Arbeits-IDs mit einem **Arbeitsauftragstyp** -Wert von *Wiederbeschaffung* weisen dieselben *Entnehmen* - und *Einlagern* -Lagerplätze im Abschnitt **Positionen** auf:
 
         - **Entnehmen:** *02A01R5S1B*
         - **Einlagern:** *06A01R2S1B*
@@ -276,9 +277,9 @@ Sie führen die Lagerplatzwiederbeschaffung für die ersten beiden Arbeits-IDs d
 
     Das System generiert eine Zielkennzeichennummer für das neue Kennzeichen des entnommenen Artikels.
 
-1. Wählen Sie **OK**, um den Wert zu bestätigen.
+1. Wählen Sie **OK** , um den Wert zu bestätigen.
 
-    Es wird eine Einlagerungsarbeit angezeigt, die den Benutzer anweist, das Zielkennzeichen in den Wiederbeschaffungslagerplatz einzulagern. Der *Einlagern*-Lagerplatz sollte **06A01R2S1B** lauten.
+    Es wird eine Einlagerungsarbeit angezeigt, die den Benutzer anweist, das Zielkennzeichen in den Wiederbeschaffungslagerplatz einzulagern. Der *Einlagern* -Lagerplatz sollte **06A01R2S1B** lauten.
 
 1. Bestätigen Sie die Einlagerungsdetails, und wählen Sie **OK**.
 
@@ -288,13 +289,13 @@ Sie führen die Lagerplatzwiederbeschaffung für die ersten beiden Arbeits-IDs d
 
 Nach Abschluss der zweiten Wiederbeschaffungsarbeit erhalten Sie die Meldung „Arbeit abgeschlossen“. Das mobile Gerät informiert Sie auch darüber, dass keine Arbeit verfügbar ist, obwohl noch einige Wiederbeschaffungsarbeiten vorhanden sind. Dieses Verhalten tritt auf, weil die Wiederbeschaffungsarbeit den Verfügbarkeitsstatus *Gehalten* aufweist und daher als **Gesperrt** markiert ist.
 
-Der Status *Gehalten* wurde ausgelöst, weil das Lagerplatzprofil für den Kommissionierstandort, dem die Arbeit zugewiesen ist, einen **Überlaufmenge**-Wert von *0,65 PL* aufweist. Die beiden vorherigen Wiederbeschaffungsarbeitsaufgaben füllten den Lagerplatz fast bis zu seiner Überlaufgrenze für Artikel *T0100*. (Die Einheitenumrechnung für den Artikel ist *1 PL = 100 EA*.) Daher würde die verbleibende Wiederbeschaffungsarbeit dazu führen, dass der Lagerplatz seine Überlaufgrenze überschreitet.
+Der Status *Gehalten* wurde ausgelöst, weil das Lagerplatzprofil für den Kommissionierstandort, dem die Arbeit zugewiesen ist, einen **Überlaufmenge** -Wert von *0,65 PL* aufweist. Die beiden vorherigen Wiederbeschaffungsarbeitsaufgaben füllten den Lagerplatz fast bis zu seiner Überlaufgrenze für Artikel *T0100*. (Die Einheitenumrechnung für den Artikel ist *1 PL = 100 EA*.) Daher würde die verbleibende Wiederbeschaffungsarbeit dazu führen, dass der Lagerplatz seine Überlaufgrenze überschreitet.
 
 Solange nicht genügend Bestand vom Lagerplatz entnommen wurde, um es unter den Schwellenwert für die Arbeitsfreigabe im Menüelement für mobile Geräte zu bringen, bleibt diese Wiederbeschaffungsarbeit gesperrt.
 
 #### <a name="sales-order-pick"></a>Auftragsentnahme
 
-Bevor die verbleibende Wiederbeschaffungsarbeitsaufgabe abgeschlossen werden kann, muss der Kommissionierort so weit vom Bestand geleert sein, dass die verbleibende Wiederbeschaffungsarbeit entsperrt werden kann. Mit anderen Worten, die Summe aus der Menge des Lagerbestands am Lagerplatz und der Wiederbeschaffungsmenge darf den **Überlaufmenge**-Wert nicht überschreiten. Wenn diese Summe geringer ist als die Überlaufmenge, wird die verbleibende Wiederbeschaffungsarbeit entsperrt.
+Bevor die verbleibende Wiederbeschaffungsarbeitsaufgabe abgeschlossen werden kann, muss der Kommissionierort so weit vom Bestand geleert sein, dass die verbleibende Wiederbeschaffungsarbeit entsperrt werden kann. Mit anderen Worten, die Summe aus der Menge des Lagerbestands am Lagerplatz und der Wiederbeschaffungsmenge darf den **Überlaufmenge** -Wert nicht überschreiten. Wenn diese Summe geringer ist als die Überlaufmenge, wird die verbleibende Wiederbeschaffungsarbeit entsperrt.
 
 1. Melden Sie sich bei der Warehouse-App als ein Benutzer im Lagerort *61* an. (Geben Sie *61* als Benutzer-ID und *1* als Passwort ein.)
 1. Gehen Sie zu **Ausgehend \> Verkaufskommissionierung**.
@@ -373,9 +374,9 @@ Sie können diese Wiederbeschaffungsarbeit jetzt über das mobile Gerät bearbei
 
     Das System generiert eine Zielkennzeichennummer für das neue Kennzeichen des entnommenen Artikels.
 
-1. Wählen Sie **OK**, um den Wert zu bestätigen.
+1. Wählen Sie **OK** , um den Wert zu bestätigen.
 
-    Es wird eine Einlagerungsarbeit angezeigt, die den Benutzer anweist, das Zielkennzeichen in den Wiederbeschaffungslagerplatz einzulagern. Der *Einlagern*-Lagerplatz sollte **06A01R2S1B** lauten.
+    Es wird eine Einlagerungsarbeit angezeigt, die den Benutzer anweist, das Zielkennzeichen in den Wiederbeschaffungslagerplatz einzulagern. Der *Einlagern* -Lagerplatz sollte **06A01R2S1B** lauten.
 
 1. Bestätigen Sie die Einlagerungsdetails, und wählen Sie **OK**.
 

@@ -3,7 +3,7 @@ title: Zahlungsmodul
 description: In diesem Thema wird das Zahlungsmodul behandelt und beschrieben, wie es in Microsoft Dynamics 365 Commerce konfiguriert wird.
 author: anupamar-ms
 manager: annbe
-ms.date: 08/05/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 4267391edaf70ec645933b2c5c08a72735f52894
-ms.sourcegitcommit: 97ceb24f191161ca601e0889a539df665834ac3b
+ms.openlocfilehash: 894ac35973927c193d6e9c54e326daefb8a3f4a5
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3818325"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055380"
 ---
 # <a name="payment-module"></a>Zahlungsmodul
 
@@ -41,6 +41,9 @@ Mit dem Zahlungsmodul können angemeldete Debitoren auch ihre Zahlungsinformatio
 Das Zahlungsmodul deckt alle Auftragszuschläge ab, die nicht bereits durch Treuepunkte oder eine Geschenkkarte gedeckt sind. Wenn der Gesamtbetrag einer Bestellung vollständig durch Treuepunkte oder Gutschriften für Geschenkkarten gedeckt ist, wird das Zahlungsmodul ausgeblendet und der Debitor kann die Bestellung ohne diese aufgeben.
 
 Der Adyen-Zahlungskonnektor unterstützt auch Starke Kundenauthentifizierung (SCA). Ein Teil der Richtlinie über Zahlungsdienste der Europäischen Union (EU) 2.0 (PSD2.0) verlangt, dass Online-Käufer außerhalb ihres Online-Einkaufserlebnisses authentifiziert werden, wenn sie eine elektronische Zahlungsmethode verwenden. Während des Checkout-Flows werden Debitoren zur Website ihrer Bank weitergeleitet. Nach der Authentifizierung werden sie dann zurück zum Commerce-Checkout-Flow umgeleitet. Während dieser Umleitung bleiben die Informationen, die ein Debitor in den Checkout-Flow eingegeben hat (z. B. Versandadresse, Lieferoptionen, Geschenkkarteninformationen und Treueinformationen), erhalten. Bevor Sie diese Funktion aktivieren können, muss der Zahlungskonnektor für SCA in der Commerce-Zentrale konfiguriert sein. Weitere Informationen finden Sie unter [Starke Kundenauthentifizierung mit Adyen](adyen_redirect.md).
+
+> [!NOTE]
+> Für den Adyen-Zahlungsconnector kann das iframe-Modul im Zahlungsmodul nur gerendert werden, wenn Sie die Adyen-URL zur Zulassungsliste Ihrer Website hinzufügen. Um diesen Schritt abzuschließen, fügen Sie **\*.adyen.com** zum **child-src** , **Connect-src** , **img-src** , **script-src** und **style-src** Anweisungen der Inhaltssicherheitsrichtlinie Ihrer Website hinzu. Weitere Informationen finden Sie unter [Inhaltssicherheitsrichtlinie verwalten](manage-csp.md). 
 
 Die folgende Abbildung zeigt ein Beispiel für Geschenkkarten‑, Treuepunkt‑, Zahlungsmodule auf einer Checkout-Seite.
 

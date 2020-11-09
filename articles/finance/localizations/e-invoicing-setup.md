@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 92ffd2076497325fb986478328c4b2584929881d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 7e631f1bf64b47b5f3e85d4f98c6edafe67d627a
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835961"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039891"
 ---
 # <a name="set-up-the-electronic-invoicing-add-on"></a>Einrichten des Add-Ons für die elektronische Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 Bei der Einrichtung der Add-On-Funktion für die elektronische Rechnungsstellung wird die erforderliche Konfiguration über die RCS-Umgebung (Regulatory Configuration Services) erstellt und auf dem Add-On-Server für die elektronische Rechnungsstellung veröffentlicht. Mit der Einrichtung können Sie die konfigurierbaren Regeln erstellen, die es dem Add-On für die elektronische Rechnungsstellung ermöglichen, ein sicheres Protokoll über das Internet zu verwenden, um über Webdienste mit einer Drittanbieterentität zu kommunizieren und Daten auszutauschen.
 
@@ -78,7 +78,7 @@ Befolgen Sie diese Schritte, um der Add-On-Funktion für die elektronische Rechn
     > [!NOTE]
     > Während Sie das Format bearbeiten, wird der Status der Konfigurationsversion auf **Entwurf** festgelegt.
 
-3. Verwenden Sie die Seite **Formatdesigner**, um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
+3. Verwenden Sie die Seite **Formatdesigner** , um die Dateiformatkonfiguration zu bearbeiten. Weitere Informationen finden Sie unter [Erstellen elektronischer Berichterstellungskonfigurationen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration).
 
     ![Formatdesignerseite](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
@@ -194,7 +194,7 @@ Die verfügbaren Parameter variieren je nach der Aktion, die auf dem Inforegiste
 |-----------------------------|-------------|
 | Webdienst-URL             | Die URL, an die Anforderungen gesendet werden sollen. |
 | Lautzeitüberschreitung der Webanforderung         | Die maximale Zeit (in Millisekunden), die auf eine Antwort des Webdienstes gewartet wird. |
-| Vorgangstyp anfordern      | Der Typ der HTTP-Anforderungsoperation (z. B. **GET**, **POST** oder **DELETE**). |
+| Vorgangstyp anfordern      | Der Typ der HTTP-Anforderungsoperation (z. B. **GET** , **POST** oder **DELETE** ). |
 | Zertifikatnamen           | Die Zertifikatnamen. |
 | Codierung des Antwortkörpers      | Die erwartete Codierung des HTTP-Antwortkörpers, damit dieser korrekt decodiert werden kann. |
 | Inhaltstyp der HTTP-Anforderung   | Die Header-Eingabe zum Inhaltstyp für HTTP-Anforderungen. |

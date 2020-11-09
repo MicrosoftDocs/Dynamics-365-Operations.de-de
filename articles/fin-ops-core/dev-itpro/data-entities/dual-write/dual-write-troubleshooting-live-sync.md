@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: d45b19c1e88e6a27bde4335d4a356f2173bdfcd3
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 82bdcc71196c22689cc65601f98187aaa9e5e9d6
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275416"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997301"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Live-Synchronisierungsprobleme behandeln
 
@@ -82,11 +81,11 @@ Um das Problem zu beheben, müssen Sie dem Team der zugeordneten Geschäftseinhe
 
     ![Organisationszuordnung](media/mapped_business_unit.png)
 
-2. Melden Sie sich in der modellgesteuerten App in Dynamics 365 bei der Umgebung an und navigieren Sie zu **Einstellungen \> Sicherheit**und finden Sie das Team der zugeordneten Geschäftseinheit.
+2. Melden Sie sich in der modellgesteuerten App in Dynamics 365 bei der Umgebung an und navigieren Sie zu **Einstellungen \> Sicherheit** und finden Sie das Team der zugeordneten Geschäftseinheit.
 
     ![Team des zugeordneten Geschäftsbereichs](media/setting_security_page.png)
 
-3. Öffnen Sie die Seite für das Team zur Bearbeitung und wählen Sie dann **Rollen verwalten**, um das Dialogfeld **Teamrollen verwalten** zu öffnen.
+3. Öffnen Sie die Seite für das Team zur Bearbeitung und wählen Sie dann **Rollen verwalten** , um das Dialogfeld **Teamrollen verwalten** zu öffnen.
 
     ![Schaltfläche Rollen verwalten](media/manage_team_roles.png)
 
@@ -98,7 +97,7 @@ Um das Problem zu beheben, müssen Sie dem Team der zugeordneten Geschäftseinhe
 
 Möglicherweise wird die folgende Fehlermeldung angezeigt, wenn Sie Daten in einer Finance and Operations App erstellen:
 
-*{„entityName“:„CustCustomerV3Entity“,„executeStatus“:2,„fieldResponses“:\[\],„recordResponses“:\[{„Fehlermeldung“:„**Nutzdaten für die Entität CustCustomerV3Entity können nicht generiert werden**“,„logDateTime“:„2019-08-27T18:51:52.5843124Z“,„verboseError“:„Die Erstellung der Nutzdaten ist mit dem Fehler fehlgeschlagen. Ungültiger URI: URI ist leer.“}\],„isErrorCountUpdated“: true}*
+*{„entityName“:„CustCustomerV3Entity“,„executeStatus“:2,„fieldResponses“:\[\],„recordResponses“:\[{„Fehlermeldung“:„ **Nutzdaten für die Entität CustCustomerV3Entity können nicht generiert werden** “,„logDateTime“:„2019-08-27T18:51:52.5843124Z“,„verboseError“:„Die Erstellung der Nutzdaten ist mit dem Fehler fehlgeschlagen. Ungültiger URI: URI ist leer.“}\],„isErrorCountUpdated“: true}*
 
 So sieht der Fehler in der modellgesteuerten App in Dynamics 365 aus:
 

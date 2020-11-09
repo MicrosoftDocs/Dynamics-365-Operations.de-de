@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b3445157efce6349b3febafb6c860260052f7d6c
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835958"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039745"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Übersicht über das Add-On für die elektronische Rechnungsstellung
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Das Add-On für die elektronische Rechnungsstellung für Microsoft Dynamics 365 Finance und Dynamics 365 Supply Chain Management ist ein hyperskalierbarer mandantenfähiger Dienst, der die konfigurierbare Verarbeitung elektronischer Rechnungsdokumente sowie den konfigurierbaren Dokumentenaustausch ermöglicht. Die Verarbeitungs- und Integrationsregeln sind vollständig konfigurierbar und die Logik wird außerhalb von Finance und Supply Chain Management ausgeführt. Der Dienst zielt hauptsächlich auf die Verarbeitung elektronischer Rechnungen in Übermittlungsszenarien zwischen Unternehmen und Behörden ab, kann jedoch auch für andere Zwecke konfiguriert werden.
 

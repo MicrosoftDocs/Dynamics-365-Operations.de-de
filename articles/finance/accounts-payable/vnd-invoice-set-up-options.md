@@ -3,7 +3,7 @@ title: Einrichtungsoptionen für die Automatisierung von Lieferantenrechnungen (
 description: In diesem Thema werden die Optionen beschrieben, die zum Einrichten und Konfigurieren der Automatisierung von Lieferantenrechnungen verfügbar sind.
 author: abruer
 manager: AnnBe
-ms.date: 08/30/2020
+ms.date: 10/16/2020
 ms.topic: articl
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eedc5ae1ed20da4c506b3510eaeac32c0ada3b70
-ms.sourcegitcommit: 6ffbae02de2eee1f3be9bab2da37a3771aae8bec
+ms.openlocfilehash: c3ee1112a409f87fdb433d5d43442a858dbd1798
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "3905014"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022589"
 ---
-# <a name="setup-options-for-vendor-invoice-automation-preview"></a>Einrichtungsoptionen für die Automatisierung von Lieferantenrechnungen (Vorschau)
+# <a name="setup-options-for-vendor-invoice-automation"></a>Einrichtungsoptionen zur Automatisierung von Kreditorenrechnungen
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema werden die Optionen beschrieben, die zum Einrichten und Konfigurieren der Automatisierung von Lieferantenrechnungen verfügbar sind. Die Funktionen zur Rechnungsautomatisierung verwenden die folgenden Arten von Einrichtungsparametern:
 

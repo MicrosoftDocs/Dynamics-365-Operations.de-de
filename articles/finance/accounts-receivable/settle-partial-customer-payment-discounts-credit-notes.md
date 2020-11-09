@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1a37b7c5aea22711938133d43b552eec9260f0a
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: da4353849b053ff94cf1fda7a03568438d0111da
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2188969"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015006"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Eine teilweise Debitorenzahlung, bei der Rechnungsrabatte auf Debitorengutschriften vorhanden sind, ausgleichen
 
@@ -34,7 +34,7 @@ Dieser Artikel führt Sie durch ein Szenario, in dem ein Skonto in eine Gutschri
 Fabrikam ermöglicht Debitoren, Skonti auf Teilzahlungen und auf Gutschriften. Ein Skonto kann für eine Gutschrift in Anspruch genommen werden, wenn die Gutschrift für eine Rechnung ausgegeben wird, für die der Debitor ein Skonto angenommen hat. Anstatt einen Habenbetrag für den Gesamtbetrag bereitzustellen, können Sie den Saldo des Debitors für einen Betrag gutschreiben, der das Skontoprozent des Debitors ausschließt. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** Seite verfügbar.
 
 ## <a name="invoice-and-credit-note"></a>Rechnung und Gutschrift
-Debitor 4035 enthält eine Rechnung über 1.000,00 und eine Gutschrift für 100,00. Jedes Dokument hat einen 1-Prozent-Rabatt, wenn es in 14 Tagen beglichen wird. Auf der Seite**Debitorenbuchungen** können Sie diese Information anzeigen.
+Debitor 4035 enthält eine Rechnung über 1.000,00 und eine Gutschrift für 100,00. Jedes Dokument hat einen 1-Prozent-Rabatt, wenn es in 14 Tagen beglichen wird. Auf der Seite **Debitorenbuchungen** können Sie diese Information anzeigen.
 
 | Beleg    | Transaktionstyp | Datum      | Rechnung  | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag  | Währung |
 |------------|------------------|-----------|----------|--------------------------------------|---------------------------------------|----------|----------|
@@ -42,7 +42,7 @@ Debitor 4035 enthält eine Rechnung über 1.000,00 und eine Gutschrift für 100,
 | CCRN-10050 | Gutschrift      | 6/28/2015 | CR-10050 |                                      | 100,00                                | -100,00  | USD      |
 
 ## <a name="settle-a-credit-note-with-an-invoice"></a>Eine Gutschrift mit einer Rechnung ausgleichen
-Über die Seite **Debitorenbuchungen** öffnen Sie die Seite **Bankbuchungen**. Sie kann die Seite **Buchungen ausgleichen** verwendet werden, um die Rechnung und Gutschrift auszugleichen. Als Teil des Ausgleichsprozesses zeigt er die Skontodatumsangaben der Beträge an. Er markiert die zwei Dokumente und klickt anschließend auf **Buchen**, um die Buchungen auszugleichen. Es gibt einen Rabatt von -1,00 in der Gutschrift, da Fabrikam Rabatte für Gutschriften zulässt.
+Über die Seite **Debitorenbuchungen** öffnen Sie die Seite **Bankbuchungen**. Sie kann die Seite **Buchungen ausgleichen** verwendet werden, um die Rechnung und Gutschrift auszugleichen. Als Teil des Ausgleichsprozesses zeigt er die Skontodatumsangaben der Beträge an. Er markiert die zwei Dokumente und klickt anschließend auf **Buchen** , um die Buchungen auszugleichen. Es gibt einen Rabatt von -1,00 in der Gutschrift, da Fabrikam Rabatte für Gutschriften zulässt.
 
 | Markieren     | Skonto verwenden | Beleg    | Konto | Datum      | Fälligkeitsdatum  | Rechnung  | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|------------|---------|-----------|-----------|----------|--------------------------------|----------|------------------|
@@ -51,13 +51,11 @@ Debitor 4035 enthält eine Rechnung über 1.000,00 und eine Gutschrift für 100,
 
 Rabattinformationen werden am unteren Rand der Seite **Buchungen ausgleichen** angezeigt.
 
-|                              |           |
-|------------------------------|-----------|
-| Skontodatum           | 7/12/2015 |
-| Skontobetrag         | -1,00     |
-| Skonto verwenden            | Normal    |
-| Verwendetes Skonto          | 0,00      |
-| Zu verwendender Skontobetrag | -1,00     |
+- **Skontodatum** : 7.12.2015 
+- **Skontobetrag** : -1.00     
+- **Skonto verwenden** : Normal    
+- **Verwendetes Skonto** : 0.00      
+- **Zu verwendender Skontobetrag** : -1.00     
 
 Der Ausgleich ist 100,00 und umfasst eine Zahlung von 99,00 und einen Rabatt von 1,00.
 
