@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -15,60 +16,60 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cb5c8e615302cba05fbd14a47af6578bca7bc16e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 39a256a5a88a6d70373d6e23f1f380da6791f418
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976949"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016077"
 ---
-# <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="4a582-103">Partiellen Lagerplatzzykluszählungsprozess definieren</span><span class="sxs-lookup"><span data-stu-id="4a582-103">Define partial location cycle counting process</span></span> 
+# <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="916cc-103">Partiellen Lagerplatzzykluszählungsprozess definieren</span><span class="sxs-lookup"><span data-stu-id="916cc-103">Define partial location cycle counting process</span></span> 
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="4a582-104">Wenn Sie Zykluszählungspläne verwenden, um Inventurarbeit zu erstellen, können Sie die tatsächlichen Zähleroperationen verwalten, indem Sie diese nur für bestimmte Produkte und Produktvarianten anfordern,  anstelle aller verfügbaren Lagerbestands am Lagerplatz zu zählen.</span><span class="sxs-lookup"><span data-stu-id="4a582-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="4a582-105">Indem Sie nach bestimmten Produkten filtern, kann der Lagerortleiter Prüfungsgemeinkosten senken, Konsolidierungsfehler vermeiden und Zeit sparen.</span><span class="sxs-lookup"><span data-stu-id="4a582-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="4a582-106">Normalerweise werden diese Aufgaben von einem Lagerortleiter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="4a582-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="4a582-107">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="4a582-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
+<span data-ttu-id="916cc-104">Wenn Sie Zykluszählungspläne verwenden, um Inventurarbeit zu erstellen, können Sie die tatsächlichen Zähleroperationen verwalten, indem Sie diese nur für bestimmte Produkte und Produktvarianten anfordern,  anstelle aller verfügbaren Lagerbestands am Lagerplatz zu zählen.</span><span class="sxs-lookup"><span data-stu-id="916cc-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="916cc-105">Indem Sie nach bestimmten Produkten filtern, kann der Lagerortleiter Prüfungsgemeinkosten senken, Konsolidierungsfehler vermeiden und Zeit sparen.</span><span class="sxs-lookup"><span data-stu-id="916cc-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="916cc-106">Normalerweise werden diese Aufgaben von einem Lagerortleiter ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="916cc-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="916cc-107">Sie können diese Prozedur Schritt für Schritt im Demodatenunternehmen USMF durchführen oder können Ihre eigenen Daten verwenden.</span><span class="sxs-lookup"><span data-stu-id="916cc-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
 
 
-## <a name="create-a-cycle-counting-work-template"></a><span data-ttu-id="4a582-108">Zykluszählungsarbeitsvorlage automatisch erstellen</span><span class="sxs-lookup"><span data-stu-id="4a582-108">Create a cycle counting work template</span></span>
-1. <span data-ttu-id="4a582-109">Wechseln Sie zu "Lagerortverwaltung" > "Einstellungen" > "Arbeit" > "Arbeitsvorlagen".</span><span class="sxs-lookup"><span data-stu-id="4a582-109">Go to Warehouse management > Setup > Work > Work templates.</span></span>
-2. <span data-ttu-id="4a582-110">Wählen Sie im Feld "Arbeitsauftragstyp" die Option "Zykluszählung" aus.</span><span class="sxs-lookup"><span data-stu-id="4a582-110">In the Work order type field, select 'Cycle counting'.</span></span>
-3. <span data-ttu-id="4a582-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="4a582-111">Click New.</span></span>
-4. <span data-ttu-id="4a582-112">Geben Sie im Feld "Laufende Nummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-112">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="4a582-113">Die Sortierreihenfolge ist von der kleinsten Nummer zur größten Nummer.</span><span class="sxs-lookup"><span data-stu-id="4a582-113">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="4a582-114">Der Wert muss größer als 0 (null) sein.</span><span class="sxs-lookup"><span data-stu-id="4a582-114">The value must be more than 0 (zero).</span></span>  
-5. <span data-ttu-id="4a582-115">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="4a582-115">In the list, mark the selected row.</span></span>
-6. <span data-ttu-id="4a582-116">Geben Sie im Feld "Arbeitsvorlage" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-116">In the Work template field, type a value.</span></span>
-7. <span data-ttu-id="4a582-117">Geben Sie im Feld "Arbeitsvorlagenbeschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-117">In the Work template description field, type a value.</span></span>
-8. <span data-ttu-id="4a582-118">Geben Sie im Feld "Pool-ID" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="4a582-118">In the Work pool ID field, enter or select a value.</span></span>
-9. <span data-ttu-id="4a582-119">Geben Sie im Feld "Arbeits-Priorität" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-119">In the Work priority field, enter a number.</span></span>
-10. <span data-ttu-id="4a582-120">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="4a582-120">Click Save.</span></span>
-11. <span data-ttu-id="4a582-121">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="4a582-121">Click New.</span></span>
-12. <span data-ttu-id="4a582-122">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="4a582-122">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="4a582-123">Wählen Sie im Feld "Arbeitstyp" die Option "Zählung" aus.</span><span class="sxs-lookup"><span data-stu-id="4a582-123">In the Work type field, select 'Counting'.</span></span>
-14. <span data-ttu-id="4a582-124">Geben Sie im Feld "Arbeitsklassenkennung" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="4a582-124">In the Work class ID field, enter or select a value.</span></span>
-15. <span data-ttu-id="4a582-125">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="4a582-125">Click Save.</span></span>
-16. <span data-ttu-id="4a582-126">Arbeitspositionsumbrüche anklicken.</span><span class="sxs-lookup"><span data-stu-id="4a582-126">Click Work line breaks.</span></span>
-17. <span data-ttu-id="4a582-127">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="4a582-127">Click New.</span></span>
-18. <span data-ttu-id="4a582-128">Geben Sie im Feld "Laufende Nummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-128">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="4a582-129">Die Sortierreihenfolge ist von der kleinsten Nummer zur größten Nummer.</span><span class="sxs-lookup"><span data-stu-id="4a582-129">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="4a582-130">Der Wert muss größer als 0 (null) sein.</span><span class="sxs-lookup"><span data-stu-id="4a582-130">The value must be more than 0 (zero).</span></span>  
-19. <span data-ttu-id="4a582-131">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="4a582-131">Click Save.</span></span>
-20. <span data-ttu-id="4a582-132">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4a582-132">Close the page.</span></span>
-21. <span data-ttu-id="4a582-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4a582-133">Close the page.</span></span>
+## <a name="create-a-cycle-counting-work-template"></a><span data-ttu-id="916cc-108">Zykluszählungsarbeitsvorlage automatisch erstellen</span><span class="sxs-lookup"><span data-stu-id="916cc-108">Create a cycle counting work template</span></span>
+1. <span data-ttu-id="916cc-109">Wechseln Sie zu "Lagerortverwaltung" > "Einstellungen" > "Arbeit" > "Arbeitsvorlagen".</span><span class="sxs-lookup"><span data-stu-id="916cc-109">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+2. <span data-ttu-id="916cc-110">Wählen Sie im Feld "Arbeitsauftragstyp" die Option "Zykluszählung" aus.</span><span class="sxs-lookup"><span data-stu-id="916cc-110">In the Work order type field, select 'Cycle counting'.</span></span>
+3. <span data-ttu-id="916cc-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="916cc-111">Click New.</span></span>
+4. <span data-ttu-id="916cc-112">Geben Sie im Feld "Laufende Nummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-112">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="916cc-113">Die Sortierreihenfolge ist von der kleinsten Nummer zur größten Nummer.</span><span class="sxs-lookup"><span data-stu-id="916cc-113">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="916cc-114">Der Wert muss größer als 0 (null) sein.</span><span class="sxs-lookup"><span data-stu-id="916cc-114">The value must be more than 0 (zero).</span></span>  
+5. <span data-ttu-id="916cc-115">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="916cc-115">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="916cc-116">Geben Sie im Feld "Arbeitsvorlage" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-116">In the Work template field, type a value.</span></span>
+7. <span data-ttu-id="916cc-117">Geben Sie im Feld "Arbeitsvorlagenbeschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-117">In the Work template description field, type a value.</span></span>
+8. <span data-ttu-id="916cc-118">Geben Sie im Feld "Pool-ID" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="916cc-118">In the Work pool ID field, enter or select a value.</span></span>
+9. <span data-ttu-id="916cc-119">Geben Sie im Feld "Arbeits-Priorität" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-119">In the Work priority field, enter a number.</span></span>
+10. <span data-ttu-id="916cc-120">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="916cc-120">Click Save.</span></span>
+11. <span data-ttu-id="916cc-121">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="916cc-121">Click New.</span></span>
+12. <span data-ttu-id="916cc-122">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="916cc-122">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="916cc-123">Wählen Sie im Feld "Arbeitstyp" die Option "Zählung" aus.</span><span class="sxs-lookup"><span data-stu-id="916cc-123">In the Work type field, select 'Counting'.</span></span>
+14. <span data-ttu-id="916cc-124">Geben Sie im Feld "Arbeitsklassenkennung" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="916cc-124">In the Work class ID field, enter or select a value.</span></span>
+15. <span data-ttu-id="916cc-125">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="916cc-125">Click Save.</span></span>
+16. <span data-ttu-id="916cc-126">Arbeitspositionsumbrüche anklicken.</span><span class="sxs-lookup"><span data-stu-id="916cc-126">Click Work line breaks.</span></span>
+17. <span data-ttu-id="916cc-127">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="916cc-127">Click New.</span></span>
+18. <span data-ttu-id="916cc-128">Geben Sie im Feld "Laufende Nummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-128">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="916cc-129">Die Sortierreihenfolge ist von der kleinsten Nummer zur größten Nummer.</span><span class="sxs-lookup"><span data-stu-id="916cc-129">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="916cc-130">Der Wert muss größer als 0 (null) sein.</span><span class="sxs-lookup"><span data-stu-id="916cc-130">The value must be more than 0 (zero).</span></span>  
+19. <span data-ttu-id="916cc-131">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="916cc-131">Click Save.</span></span>
+20. <span data-ttu-id="916cc-132">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="916cc-132">Close the page.</span></span>
+21. <span data-ttu-id="916cc-133">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="916cc-133">Close the page.</span></span>
 
-## <a name="create-a-cycle-counting-plan"></a><span data-ttu-id="4a582-134">Zykluszählungsplan erstellen</span><span class="sxs-lookup"><span data-stu-id="4a582-134">Create a cycle counting plan</span></span>
-1. <span data-ttu-id="4a582-135">Wechseln Sie zu Lagerortverwaltung > Einrichten > Permanente Inventur > Permanenten Inventurplan erstellen.</span><span class="sxs-lookup"><span data-stu-id="4a582-135">Go to Warehouse management > Setup > Cycle counting > Cycle count plans.</span></span>
-2. <span data-ttu-id="4a582-136">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="4a582-136">Click New.</span></span>
-3. <span data-ttu-id="4a582-137">Geben Sie im Feld "Zykluszählungs-Plankennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-137">In the Cycle counting plan ID field, type a value.</span></span>
-4. <span data-ttu-id="4a582-138">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-138">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="4a582-139">Geben Sie im Feld "Maximale Anzahl von Zykluszählungen" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-139">In the Maximum number of cycle counts field, enter a number.</span></span>
-6. <span data-ttu-id="4a582-140">Geben Sie im Feld "Arbeitsvorlage" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="4a582-140">In the Work template field, enter or select a value.</span></span>
-7. <span data-ttu-id="4a582-141">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="4a582-141">Click New.</span></span>
-8. <span data-ttu-id="4a582-142">Geben Sie im Feld "Laufende Nummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-142">In the Sequence number field, enter a number.</span></span>
-    * <span data-ttu-id="4a582-143">Die Sortierreihenfolge ist von der kleinsten Nummer zur größten Nummer.</span><span class="sxs-lookup"><span data-stu-id="4a582-143">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="4a582-144">Der Wert muss größer als 0 (null) sein.</span><span class="sxs-lookup"><span data-stu-id="4a582-144">The value must be more than 0 (zero).</span></span>  
-9. <span data-ttu-id="4a582-145">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="4a582-145">In the Description field, type a value.</span></span>
-10. <span data-ttu-id="4a582-146">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="4a582-146">Click Save.</span></span>
-11. <span data-ttu-id="4a582-147">Produktabfrage definieren anklicken.</span><span class="sxs-lookup"><span data-stu-id="4a582-147">Click Define product query.</span></span>
-12. <span data-ttu-id="4a582-148">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="4a582-148">In the list, mark the selected row.</span></span>
-13. <span data-ttu-id="4a582-149">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="4a582-149">In the Criteria field, enter or select a value.</span></span>
-14. <span data-ttu-id="4a582-150">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="4a582-150">Click OK.</span></span>
-15. <span data-ttu-id="4a582-151">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="4a582-151">Close the page.</span></span>
+## <a name="create-a-cycle-counting-plan"></a><span data-ttu-id="916cc-134">Zykluszählungsplan erstellen</span><span class="sxs-lookup"><span data-stu-id="916cc-134">Create a cycle counting plan</span></span>
+1. <span data-ttu-id="916cc-135">Wechseln Sie zu Lagerortverwaltung > Einrichten > Permanente Inventur > Permanenten Inventurplan erstellen.</span><span class="sxs-lookup"><span data-stu-id="916cc-135">Go to Warehouse management > Setup > Cycle counting > Cycle count plans.</span></span>
+2. <span data-ttu-id="916cc-136">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="916cc-136">Click New.</span></span>
+3. <span data-ttu-id="916cc-137">Geben Sie im Feld "Zykluszählungs-Plankennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-137">In the Cycle counting plan ID field, type a value.</span></span>
+4. <span data-ttu-id="916cc-138">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-138">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="916cc-139">Geben Sie im Feld "Maximale Anzahl von Zykluszählungen" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-139">In the Maximum number of cycle counts field, enter a number.</span></span>
+6. <span data-ttu-id="916cc-140">Geben Sie im Feld "Arbeitsvorlage" einen Wert ein, oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="916cc-140">In the Work template field, enter or select a value.</span></span>
+7. <span data-ttu-id="916cc-141">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="916cc-141">Click New.</span></span>
+8. <span data-ttu-id="916cc-142">Geben Sie im Feld "Laufende Nummer" eine Zahl ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-142">In the Sequence number field, enter a number.</span></span>
+    * <span data-ttu-id="916cc-143">Die Sortierreihenfolge ist von der kleinsten Nummer zur größten Nummer.</span><span class="sxs-lookup"><span data-stu-id="916cc-143">The sort order is from the smallest number to the largest number.</span></span> <span data-ttu-id="916cc-144">Der Wert muss größer als 0 (null) sein.</span><span class="sxs-lookup"><span data-stu-id="916cc-144">The value must be more than 0 (zero).</span></span>  
+9. <span data-ttu-id="916cc-145">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="916cc-145">In the Description field, type a value.</span></span>
+10. <span data-ttu-id="916cc-146">Klicken Sie auf "Speichern".</span><span class="sxs-lookup"><span data-stu-id="916cc-146">Click Save.</span></span>
+11. <span data-ttu-id="916cc-147">Produktabfrage definieren anklicken.</span><span class="sxs-lookup"><span data-stu-id="916cc-147">Click Define product query.</span></span>
+12. <span data-ttu-id="916cc-148">Markieren Sie in der Liste die ausgewählte Zeile.</span><span class="sxs-lookup"><span data-stu-id="916cc-148">In the list, mark the selected row.</span></span>
+13. <span data-ttu-id="916cc-149">Geben Sie im Feld "Kriterien" einen Wert ein oder wählen Sie einen Wert aus.</span><span class="sxs-lookup"><span data-stu-id="916cc-149">In the Criteria field, enter or select a value.</span></span>
+14. <span data-ttu-id="916cc-150">Klicken Sie auf "OK".</span><span class="sxs-lookup"><span data-stu-id="916cc-150">Click OK.</span></span>
+15. <span data-ttu-id="916cc-151">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="916cc-151">Close the page.</span></span>
 
