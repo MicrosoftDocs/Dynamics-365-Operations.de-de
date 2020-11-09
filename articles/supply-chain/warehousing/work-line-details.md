@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Retail, Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4f0952cc8778ffc509bed80b3a5038dbf4fb76c2
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597191"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015894"
 ---
 # <a name="work-line-details"></a>Arbeitspositionsdetails
 
@@ -39,7 +40,7 @@ Bevor Sie diese Funktion nutzen können, muss sie auf Ihrem System aktiviert wer
 
 Um die Liste der Arbeitspositionsdetails anzuzeigen, gehen Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitspositionsdetails**. Von hier aus können Sie folgende Aktivitäten ausführen:
 
-- Verwenden Sie das Feld **Filter**, um nach Positionen zu suchen, die einen bestimmten Wert für einen verfügbaren Parameter haben. (Zu den verfügbaren Parametern gehören viele Parameter, die nicht als Spalten im Raster angezeigt werden.)
+- Verwenden Sie das Feld **Filter** , um nach Positionen zu suchen, die einen bestimmten Wert für einen verfügbaren Parameter haben. (Zu den verfügbaren Parametern gehören viele Parameter, die nicht als Spalten im Raster angezeigt werden.)
 - Verwenden Sie das Kontrollkästchen **Geschlossene anzeigen** zum Ein- oder Ausblenden geschlossener Positionen.
 - Wählen Sie **Dimensionen anzeigen** aus, um das Dialogfeld **Dimensionsanzeige** zu öffnen, in dem Sie verschiedene Dimensionsspalten im Raster ein- oder ausblenden können.
 - Wählen Sie eine beliebige Spaltenüberschrift aus, um ein Menü zu öffnen, in dem Sie die Liste nach Werten in dieser Spalte sortieren oder filtern können.
@@ -60,14 +61,14 @@ Sie können diese Demo auch als Anleitung nutzen, wenn Sie an einem Produktionss
 
 ### <a name="verify-that-the-scenario-setup-includes-enough-available-inventory"></a>Überprüfen, ob Szenario-Setup genügend verfügbaren Bestand umfasst
 
-Wenn Sie mit den **USMF**-Demodaten arbeiten, sollten Sie zunächst sicherstellen, dass Ihr System so eingerichtet ist, dass an jedem relevanten Entnahmeplatz genügend Bestand verfügbar ist. Für diese Demo wird erwartet, dass folgender Bestand verfügbar ist:
+Wenn Sie mit den **USMF** -Demodaten arbeiten, sollten Sie zunächst sicherstellen, dass Ihr System so eingerichtet ist, dass an jedem relevanten Entnahmeplatz genügend Bestand verfügbar ist. Für diese Demo wird erwartet, dass folgender Bestand verfügbar ist:
 
 - **Artikel M9200:** 45 EA. (oder mehr)
 - **Artikel M9202:** 10 EA. (oder mehr)
 
 Befolgen Sie diese Schritte, um sicherzustellen, dass genügend Bestand verfügbar ist, und um die erforderlichen Anpassungen vorzunehmen.
 
-1. Gehen Sie zu **Lagerortverwaltung \> Setup \> Lagerplatzrichtlinien**, und bestimmen Sie, welche Kommissionierorte für die Auftragskommissionierarbeit im Lagerort 51 verwendet werden. (Weitere Informationen finden Sie unter [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](control-warehouse-location-directives.md).)
+1. Gehen Sie zu **Lagerortverwaltung \> Setup \> Lagerplatzrichtlinien** , und bestimmen Sie, welche Kommissionierorte für die Auftragskommissionierarbeit im Lagerort 51 verwendet werden. (Weitere Informationen finden Sie unter [Steuern von Lagerarbeit mithilfe von Arbeitsvorlagen und Lagerplatzrichtlinien](control-warehouse-location-directives.md).)
 1. Überprüfen Sie die Lagerbestände an den entsprechenden Lagerplätzen.
 1. Passen Sie den Bestand nach Bedarf an. Die können manuelle Bewegungen erstellen, Wiederbeschaffung verwenden oder einen anderen Flow anwenden, um den Bestand anzupassen.
 
@@ -91,14 +92,14 @@ Befolgen Sie diese Schritte, um einige Kommissionierarbeiten zu erstellen.
     - **Menge** _20_
     - **Einheit:** _ea_
 
-1. Wählen Sie die neue Bestellposition aus, und klicken Sie dann im Menü **Lagerbestand** auf **Reservierung**, um die Seite **Reservierung** zu öffnen.
+1. Wählen Sie die neue Bestellposition aus, und klicken Sie dann im Menü **Lagerbestand** auf **Reservierung** , um die Seite **Reservierung** zu öffnen.
 1. Wählen Sie auf der Seite **Reservierung** die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
+1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** auf **Lagerortfreigabe**. Das System erstellt eine Sendung, fügt sie einer neuen Ladung hinzu und erstellt die erforderliche Arbeit.
 1. Erstellen Sie einen zweiten Auftrag für dasselbe Kundenkonto und den Lagerort, die Sie für den ersten Auftrag verwendet haben. Fügen Sie dieser Bestellung die folgenden zwei Bestellpositionen hinzu:
 
-    - **Position 1:** Legen Sie das Feld **Artikelnummer** auf _M9200_, das Feld **Menge** auf _25_ und das Feld **Einheit** auf _EA_ fest.
-    - **Position 2:** Legen Sie das Feld **Artikelnummer** auf _M9202_, das Feld **Menge** auf _10_ und das Feld **Einheit** auf _EA_ fest.
+    - **Position 1:** Legen Sie das Feld **Artikelnummer** auf _M9200_ , das Feld **Menge** auf _25_ und das Feld **Einheit** auf _EA_ fest.
+    - **Position 2:** Legen Sie das Feld **Artikelnummer** auf _M9202_ , das Feld **Menge** auf _10_ und das Feld **Einheit** auf _EA_ fest.
 
 1. Wiederholen Sie die Schritte 6 bis 8, um den Bestand für jede Bestellposition (einzeln) zu reservieren, und wiederholen Sie dann Schritt 9, um die Bestellung für den Lagerort freizugeben.
 
@@ -118,7 +119,7 @@ Befolgen Sie diese Schritte, um einige Kommissionierarbeiten zu erstellen.
 1. Wechseln Sie zu **Lagerortverwaltung \> Arbeit \> Arbeitspositionsdetails**.
 1. Suchen Sie eine der Arbeitspositionen, die Sie für diese Demo erstellt haben, und wählen Sie sie aus. Beachten Sie, dass Sie Mengen nur für Arbeitspositionen stornieren oder ändern können, in denen der Arbeitstyp _Entnahme_ ist.
 1. Wählen Sie **Arbeitsposition stornieren** aus, um das Dialogfeld **Zu stornierende Menge** zu öffnen.
-1. Ändern Sie im Dialogfeld **Zu stornierende Menge** den Wert im Feld **Menge**, um die Menge anzugeben, die von der Menge *subtrahiert* werden soll, die aktuell für die Position angegeben ist. Standardmäßig wird im Feld **Menge** die vollständige Menge angezeigt.
+1. Ändern Sie im Dialogfeld **Zu stornierende Menge** den Wert im Feld **Menge** , um die Menge anzugeben, die von der Menge *subtrahiert* werden soll, die aktuell für die Position angegeben ist. Standardmäßig wird im Feld **Menge** die vollständige Menge angezeigt.
 
     - Wenn Sie die vollständige Menge stornieren, wird der Wert **Arbeitsstatus** zu _Storniert_ geändert, aber das Feld **Arbeitsmenge** zeigt weiterhin den ursprünglichen Wert.
     - Wenn Sie nur einen Teil der Menge stornieren, wird das Feld **Arbeitsmenge** aktualisiert, um den neuen Wert anzuzeigen, aber der Wert **Arbeitsstatus** wird nicht geändert.

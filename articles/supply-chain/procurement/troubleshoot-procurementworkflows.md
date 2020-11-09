@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 940a6c39ac83e7388d4e1a08b656b75df81ed801
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: cdedc45b8f057310801f134104156a732fb58d86
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834360"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018536"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>Fehlerbehebung bei Beschaffungsworkflows
 
@@ -32,7 +32,7 @@ In diesem Thema wird beschrieben, wie Sie Probleme beheben, die bei der Arbeit m
 
 ## <a name="error-when-re-submitting-a-purchase-order-to-the-workflow-after-a-change-changes-to-purchase-order-x-are-allowed-only-in-a-draft-state-when-change-management-is-activated"></a>Fehler beim erneuten Übermitteln einer Bestellung an den Workflow nach einer Änderung: „Änderungen an Bestellung X sind nur in einem Entwurfsstatus zulässig, wenn das Änderungsmanagement aktiviert ist.“
 
-Dieses Problem tritt nur auf, wenn sich die Bestellung in einem *Bestätigt*-Zustand befand, bevor Sie Änderungen angefordert haben. Wenn Sie Änderungen anfordern, während sich die Bestellung in einem *Genehmigt*-Zustand befindet, kann der Workflow erfolgreich verarbeitet werden.
+Dieses Problem tritt nur auf, wenn sich die Bestellung in einem *Bestätigt* -Zustand befand, bevor Sie Änderungen angefordert haben. Wenn Sie Änderungen anfordern, während sich die Bestellung in einem *Genehmigt* -Zustand befindet, kann der Workflow erfolgreich verarbeitet werden.
 
 ### <a name="error-description"></a>Fehlerbeschreibung
 
@@ -48,7 +48,7 @@ SysWorkflowQueue-resume
 
 Dieses Problem kann aufgrund von Inkonsistenzen bei der Verteilung von Bestellungen auftreten.
 
-So entsperren Sie dieses Problem und setzen die Bestellung auf den *Entwurf*-Zustand zurück. Gehen Sie zu **Beschaffung \> Periodische Aufgaben \> Bereinigen \> Zurücksetzen der Bestellverteilung**. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Beheben von Bestellungsverteilungsfehlern in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+So entsperren Sie dieses Problem und setzen die Bestellung auf den *Entwurf* -Zustand zurück. Gehen Sie zu **Beschaffung \> Periodische Aufgaben \> Bereinigen \> Zurücksetzen der Bestellverteilung**. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Beheben von Bestellungsverteilungsfehlern in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 Das Problem wird behoben durch [diesen Artikel in der Microsodft Wissensdatenbank (KB)](https://msdyneng.visualstudio.com/FinOps/_workitems/edit/467138).
 
@@ -56,7 +56,7 @@ Das Problem wird behoben durch [diesen Artikel in der Microsodft Wissensdatenban
 
 Dieses Problem kann aufgrund von Inkonsistenzen bei der Verteilung von Bestellungen auftreten.
 
-So entsperren Sie dieses Problem und setzen die Bestellung auf den *Entwurf*-Zustand zurück. Gehen Sie zu **Beschaffung \> Periodische Aufgaben \> Bereinigen \> Zurücksetzen der Bestellverteilung**. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Beheben von Bestellungsverteilungsfehlern in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+So entsperren Sie dieses Problem und setzen die Bestellung auf den *Entwurf* -Zustand zurück. Gehen Sie zu **Beschaffung \> Periodische Aufgaben \> Bereinigen \> Zurücksetzen der Bestellverteilung**. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Beheben von Bestellungsverteilungsfehlern in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="if-a-delivery-remainder-is-canceled-on-a-purchase-order-where-change-management-is-turned-on-the-purchase-order-goes-to-a-confirmed-state"></a>Wenn eine verbleibende Liefermenge für eine Bestellung storniert wird, für die das Änderungsmanagement aktiviert ist, wechselt die Bestellung in den Status Bestätigt.
 
@@ -74,9 +74,9 @@ Sollte dies in der Bestellbestätigung berücksichtigt werden, sollte die Menge 
 
 ### <a name="issue-description"></a>Problembeschreibung
 
-Nachdem Sie Bestellungen storniert haben, die im *Bestätigt*-Zustand waren, erscheinen die stornierten Bestellungen im **Bestellvorbereitung**-Arbeitsbereich weiterhin in der Liste der Bestellentwürfe.
+Nachdem Sie Bestellungen storniert haben, die im *Bestätigt* -Zustand waren, erscheinen die stornierten Bestellungen im **Bestellvorbereitung** -Arbeitsbereich weiterhin in der Liste der Bestellentwürfe.
 
 ### <a name="issue-resolution"></a>Problemlösung
 
-Dieses Problem tritt nur bei Bestellungen auf, die dem Änderungsmanagement unterliegen. Dies liegt daran, dass die Stornierung als eine Änderung angesehen wird, die genehmigt werden muss. Die Genehmigung kann automatisch vom System erfolgen. Daher besteht der Prozess darin, die stornierte Bestellung an den Genehmigungsworkflow zu senden, damit sie in einen *Genehmigt*-Zustand wechseln kann. Ab diesem Zeitpunkt erscheint die Bestellung nicht mehr im **Bestellvorbereitung**-Arbeitsbereich in der Liste der Bestellentwürfe.
+Dieses Problem tritt nur bei Bestellungen auf, die dem Änderungsmanagement unterliegen. Dies liegt daran, dass die Stornierung als eine Änderung angesehen wird, die genehmigt werden muss. Die Genehmigung kann automatisch vom System erfolgen. Daher besteht der Prozess darin, die stornierte Bestellung an den Genehmigungsworkflow zu senden, damit sie in einen *Genehmigt* -Zustand wechseln kann. Ab diesem Zeitpunkt erscheint die Bestellung nicht mehr im **Bestellvorbereitung** -Arbeitsbereich in der Liste der Bestellentwürfe.
 

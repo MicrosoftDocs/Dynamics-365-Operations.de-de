@@ -3,7 +3,7 @@ title: Erste Schritte mit dem Anlagen-Leasing
 description: In diesem Thema wird die Anlagenleasing-Funktion beschrieben und Sie werden durch die Schritte zum Erstellen eines Anlagenleasings sowie zum Anzeigen von Informationen zu diesen Leasingverträgen geführt.
 author: moaamer
 manager: Ann Beebe
-ms.date: 09/24/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5f8f86861f65f3da71843f6fd4a64e4199e86627
-ms.sourcegitcommit: 9668af8d918faec37abe1881e550872cd6b73259
+ms.openlocfilehash: 9e206569aad3f53a2f6f66e6d6253226e5980078
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "3970007"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022566"
 ---
 # <a name="asset-leasing-get-started"></a>Erste Schritte mit dem Anlagen-Leasing
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In diesem Thema wird die Anlagenleasing-Funktion beschrieben und Sie werden durch die Schritte zum Erstellen eines Anlagenleasings sowie zum Anzeigen von Informationen zu diesen Leasingverträgen geführt. Das Thema definiert außerdem die in der Benutzeroberfläche und der Dokumentation verwendete Terminologie. Anlagenleasing ist eine erweiterte Funktion zur Verwaltung, Verfolgung und Automatisierung von Finanzbuchungen für Leasingobjekte in Microsoft Dynamics 365 Finance. Anlagenleasing entspricht den internationalen Rechnungslegungsstandards (IFRS 16) und den US-GAAP-Standards (ASC 842). Anlagenleasing erfasst und verarbeitet Informationen zu den Leasingverträgen und unterstützt das Generieren von Journaleinträgen über den gesamten Lebenszyklus des Leasingtvertrags hinweg, von der erstmaligen Erfassung über monatliche Journaleinträge bis hin zur dauerhaften Wertminderung und zur Beendigung des Leasingvertrags. Anlagenleasing lässt sich nahtlos in andere Komponenten von Dynamics 365 Finance integrieren, inklusive „Anlagen“, „Kreditorenkonten“ und „Hauptbuch“.
 
@@ -41,11 +40,11 @@ Das folgende Diagramm zeigt die Hauptelemente des Geschäftsprozesses für Leasi
 
 Ein Leasingobjekt enthält folgende Hauptkomponenten:
 
-- **Leasingvertrag**: Der Leasinggeber ist Eigentümer der Anlage und vereinbart mit dem Leasingnehmer das Leasing einer Anlage für einen bestimmten Zeitraum gegen regelmäßige Leasingzahlungen. Neben dem rechtsgültigen Vertrag zwischen dem Leasinggeber und dem Leasingnehmer erfasst der Leasingvertrag Managemententscheidungen wie die Wahrscheinlichkeit des Gebrauchmachens von einer Verlängerungsoption und die Übertragung des Eigentums.
+- **Leasingvertrag** : Der Leasinggeber ist Eigentümer der Anlage und vereinbart mit dem Leasingnehmer das Leasing einer Anlage für einen bestimmten Zeitraum gegen regelmäßige Leasingzahlungen. Neben dem rechtsgültigen Vertrag zwischen dem Leasinggeber und dem Leasingnehmer erfasst der Leasingvertrag Managemententscheidungen wie die Wahrscheinlichkeit des Gebrauchmachens von einer Verlängerungsoption und die Übertragung des Eigentums.
 
-- **Leasingberechnung und -klassifizierung nach Rechnungslegungsstandard**: Die Berechnung und Klassifizierung des Leasingverhältnisses geben den Rechnungslegungsstandard an, der bei der anfänglichen und nachfolgenden Bewertung angewendet wird, sowie den Klassifizierungstest, der die Art des Leasingverhältnisses bestimmt. Ein Leasingverhältnis kann ein Finanzierungsleasing, ein Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasing von geringem Wert sein. Das System berechnet auch den Barwert zukünftiger Mindestleasingzahlungen zum Zwecke der Bewertung und Klassifizierung.
+- **Leasingberechnung und -klassifizierung nach Rechnungslegungsstandard** : Die Berechnung und Klassifizierung des Leasingverhältnisses geben den Rechnungslegungsstandard an, der bei der anfänglichen und nachfolgenden Bewertung angewendet wird, sowie den Klassifizierungstest, der die Art des Leasingverhältnisses bestimmt. Ein Leasingverhältnis kann ein Finanzierungsleasing, ein Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasing von geringem Wert sein. Das System berechnet auch den Barwert zukünftiger Mindestleasingzahlungen zum Zwecke der Bewertung und Klassifizierung.
 
-- **Leasingbuchungen**: Das Anlagenleasing unterstützt die erstmalige Erfassung des Nutzungsrechts am Leasingobjekt für in der Bilanz enthaltene Leasingverhältnisse sowie die anschließende Bewertung entweder für bilanzielle oder für außerbilanzielle Leasingverhältnisse. Die erstmalige Erfassungbuchung bemisst den Barwert zukünftiger Mindestleasingzahlungen. Diese Daten werden verwendet, um den Wert des ursprünglichen Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeiten zu bestimmen, der sich auf die Bilanz des Unternehmens auswirkt. Die anschließende Bewertung der monatlichen Leasingbuchungen umfasst die Aufzinsung auf die Leasingverbindlichkeit, wodurch sich die Leasingverbindlichkeit erhöht. Außerdem wird die Rückstellung von Leasingzahlungen bewertet, die die Leasingverbindlichkeit verringern und anschließend an den Leasinggeber gezahlt werden. Die Bewertung umfasst auch die Amortisierung des Nutzungsrechts am Leasingobjekt.
+- **Leasingbuchungen** : Das Anlagenleasing unterstützt die erstmalige Erfassung des Nutzungsrechts am Leasingobjekt für in der Bilanz enthaltene Leasingverhältnisse sowie die anschließende Bewertung entweder für bilanzielle oder für außerbilanzielle Leasingverhältnisse. Die erstmalige Erfassungbuchung bemisst den Barwert zukünftiger Mindestleasingzahlungen. Diese Daten werden verwendet, um den Wert des ursprünglichen Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeiten zu bestimmen, der sich auf die Bilanz des Unternehmens auswirkt. Die anschließende Bewertung der monatlichen Leasingbuchungen umfasst die Aufzinsung auf die Leasingverbindlichkeit, wodurch sich die Leasingverbindlichkeit erhöht. Außerdem wird die Rückstellung von Leasingzahlungen bewertet, die die Leasingverbindlichkeit verringern und anschließend an den Leasinggeber gezahlt werden. Die Bewertung umfasst auch die Amortisierung des Nutzungsrechts am Leasingobjekt.
 
   Bei außerbilanziellen Leasingverhältnissen berechnet das System die linearen Leasingaufwendungen für den niedrigeren der folgenden Werte: die wirtschaftliche Lebensdauer der Anlage oder die Leasingdauer. Leasinganpassungen bewerten Vertragsänderungen, wie eine Verlängerung oder Erweiterung des Leasingverhältnisses, sowie die Wertminderungsbuchung, bei der das Nutzungsrecht am Leasingobjekt für nicht erstattungsfähige Kosten verwendet wird.
 
@@ -58,34 +57,34 @@ Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechn
 
 [![Leasing, Leasingbuch und Zahlungsplan](./media/overview-02.png)](./media/overview-02.png)
 
-- **Leasingbuch**: Das Leasingbuch enthält alle Informationen zum Leasingvertrag wie Leasingbestimmungen, Zeitwert und Leasingzahlungen. Es enthält auch den Rechnungslegungsstandard, den Sie befolgen, die Leasingart und die Schwellenwerte, die im Klassifizierungstest für das Leasingverhältnis berücksichtigt werden. Das Leasingbuch enthält auch die Leasingbuchungen, die im Hauptbuch gebucht wurden. 
+- **Leasingbuch** : Das Leasingbuch enthält alle Informationen zum Leasingvertrag wie Leasingbestimmungen, Zeitwert und Leasingzahlungen. Es enthält auch den Rechnungslegungsstandard, den Sie befolgen, die Leasingart und die Schwellenwerte, die im Klassifizierungstest für das Leasingverhältnis berücksichtigt werden. Das Leasingbuch enthält auch die Leasingbuchungen, die im Hauptbuch gebucht wurden. 
   
-- **Leasingvertrag**: Der Leasingvertrag enthält die Informationen zum Anlagenleasing, die die Grundlage für selbiges darstellen. Die Informationsquelle für Leasingverträge sind Leasingverträge und Managemententscheidungen, die beide außerhalb von Dynamics 365 Finance getroffen werden. Der Zeitwert der Anlage ist der Preis, der zum Bewertungsstichtag für eine Anlage in einer Buchung gezahlt würde. Dieser Wert kann von der Anlagenart, den Marktbedingungen und anderen Kriterien abhängen, die bei der Bewertung berücksichtigt werden können. Der Zeitwert der Anlage wird in der Gleichung für den Klassifizierungstest berücksichtigt.
+- **Leasingvertrag** : Der Leasingvertrag enthält die Informationen zum Anlagenleasing, die die Grundlage für selbiges darstellen. Die Informationsquelle für Leasingverträge sind Leasingverträge und Managemententscheidungen, die beide außerhalb von Dynamics 365 Finance getroffen werden. Der Zeitwert der Anlage ist der Preis, der zum Bewertungsstichtag für eine Anlage in einer Buchung gezahlt würde. Dieser Wert kann von der Anlagenart, den Marktbedingungen und anderen Kriterien abhängen, die bei der Bewertung berücksichtigt werden können. Der Zeitwert der Anlage wird in der Gleichung für den Klassifizierungstest berücksichtigt.
 
-- **Nutzungsdauer der Anlage**: Dies sind die verbleibenden Zeiträume der Nutzungsdauer einer Anlage ab dem Datum des Leasingbeginns. Die Nutzungsdauer einer Anlage wird in der Gleichung für den Klassifizierungstest berücksichtigt. Sie unterscheidet sich von der in den Anlagen definierten Nutzungsdauer.
+- **Nutzungsdauer der Anlage** : Dies sind die verbleibenden Zeiträume der Nutzungsdauer einer Anlage ab dem Datum des Leasingbeginns. Die Nutzungsdauer einer Anlage wird in der Gleichung für den Klassifizierungstest berücksichtigt. Sie unterscheidet sich von der in den Anlagen definierten Nutzungsdauer.
 
-- **Zinssatz für Neukredit**: Dies ist der Zinssatz, der zur Berechnung des Barwerts verwendet wird. Das System verwendet den impliziten Satz, wenn er in den Leasingdaten definiert ist, um den Barwert der Leasingzahlungen zu berechnen. Wenn der implizite Satz nicht definiert ist, verwendet das System den Zinssatz für Neukredite.
+- **Zinssatz für Neukredit** : Dies ist der Zinssatz, der zur Berechnung des Barwerts verwendet wird. Das System verwendet den impliziten Satz, wenn er in den Leasingdaten definiert ist, um den Barwert der Leasingzahlungen zu berechnen. Wenn der implizite Satz nicht definiert ist, verwendet das System den Zinssatz für Neukredite.
 
-- **Annuitätstyp**: Die Leasingzahlung, die entweder zu Beginn des Zahlungszeitraums oder am Ende des Zeitraums fällig ist. Dies kann eine Vorauszahlung oder eine fällige Annuität (zu Beginn des Zeitraums der Leasingzahlung) oder eine normale Annuität (am Ende des Zeitraums der Leasingzahlung) sein.
+- **Annuitätstyp** : Die Leasingzahlung, die entweder zu Beginn des Zahlungszeitraums oder am Ende des Zeitraums fällig ist. Dies kann eine Vorauszahlung oder eine fällige Annuität (zu Beginn des Zeitraums der Leasingzahlung) oder eine normale Annuität (am Ende des Zeitraums der Leasingzahlung) sein.
 
   Der erste Monat gilt als Zeitraum mi der Nummer Null für die Vorauszahlung. Der erste Monat gilt als erster Zeitraum für Zahlungsrückstände.
 
-- **Aufzinsungsintervall**: Dies entspricht der Anzahl der Zeiträume, die der Zins pro Jahr aufgezinst wird. Diese Aufzinsung kann monatlich (12 Zeiträume pro Jahr), vierteljährlich (4 Zeiträume pro Jahr), halbjährlich (2 Zeiträume pro Jahr) oder jährlich (1 Zeitraum pro Jahr) erfolgen. Die Anzahl der Zeiträume wird bei der Barwertberechnung berücksichtigt.
+- **Aufzinsungsintervall** : Dies entspricht der Anzahl der Zeiträume, die der Zins pro Jahr aufgezinst wird. Diese Aufzinsung kann monatlich (12 Zeiträume pro Jahr), vierteljährlich (4 Zeiträume pro Jahr), halbjährlich (2 Zeiträume pro Jahr) oder jährlich (1 Zeitraum pro Jahr) erfolgen. Die Anzahl der Zeiträume wird bei der Barwertberechnung berücksichtigt.
 
-- **Datum des Leasingbeginns**: Das Datum, an dem der Leasinggeber dem Leasingnehmer die Anlage zur Nutzung zur Verfügung stellt. Alle Leasingberechnungen und -buchungen basieren auf dem Datum des Leasingbeginns. Das Datum des Leasingbeginns sollte am Anfang eines Zeitraums (1. des Monats) liegen, um die Genauigkeit nachfolgender Berechnungen sicherzustellen. Sie können das Feld **Datum der Vertragsunterzeichnung** zur Eingabe des tatsächlichen Datums der Vertragsunterzeichnung verwenden.
+- **Datum des Leasingbeginns** : Das Datum, an dem der Leasinggeber dem Leasingnehmer die Anlage zur Nutzung zur Verfügung stellt. Alle Leasingberechnungen und -buchungen basieren auf dem Datum des Leasingbeginns. Das Datum des Leasingbeginns sollte am Anfang eines Zeitraums (1. des Monats) liegen, um die Genauigkeit nachfolgender Berechnungen sicherzustellen. Sie können das Feld **Datum der Vertragsunterzeichnung** zur Eingabe des tatsächlichen Datums der Vertragsunterzeichnung verwenden.
 
-- **Leasingdauer**: Die Länge des Leasingzeitraums in Monaten.
+- **Leasingdauer** : Die Länge des Leasingzeitraums in Monaten.
 
 > [!NOTE] 
 > Die Definition der Leasingdauer basiert auf der Anzahl der Zeiträume oder Intervalle in den Zahlungsplanpositionen. Die definierte Anzahl von Intervallen wird in Monate umgerechnet.
 
-- **Zahlungsplanposition**: Erfasst die Leasingzahlungen pro Zeitraum. Außerdem legt sie fest, ob ein Verlängerungszeitraum ausgeübt und in die erstmalige Bewertung des Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeit einbezogen wird. Sie können das Startdatum der fälligen Leasingzahlungen und die Zeitraumintervalle definieren, die die Dauer des Leasingverhältnisses darstellen. Dies können Tage, Monate oder Jahre sein.
+- **Zahlungsplanposition** : Erfasst die Leasingzahlungen pro Zeitraum. Außerdem legt sie fest, ob ein Verlängerungszeitraum ausgeübt und in die erstmalige Bewertung des Nutzungsrechts am Leasingobjekt und der Leasingverbindlichkeit einbezogen wird. Sie können das Startdatum der fälligen Leasingzahlungen und die Zeitraumintervalle definieren, die die Dauer des Leasingverhältnisses darstellen. Dies können Tage, Monate oder Jahre sein.
 
-- **Zahlungshäufigkeit**: Gibt an, ob die Zahlung monatlich, vierteljährlich, halbjährlich oder jährlich erfolgt. Das Enddatum wird automatisch anhand des Startdatums und der Anzahl der eingegebenen Zeiträume berechnet.
+- **Zahlungshäufigkeit** : Gibt an, ob die Zahlung monatlich, vierteljährlich, halbjährlich oder jährlich erfolgt. Das Enddatum wird automatisch anhand des Startdatums und der Anzahl der eingegebenen Zeiträume berechnet.
 
-- **Zahlungsplan**: Der berechnete Barwert, basierend auf der von den Leasingzahlungen abgedeckten Zeitspanne, der Höhe der Zahlungen, den Aufzinsungsintervallen und dem Annuitätstyp.
+- **Zahlungsplan** : Der berechnete Barwert, basierend auf der von den Leasingzahlungen abgedeckten Zeitspanne, der Höhe der Zahlungen, den Aufzinsungsintervallen und dem Annuitätstyp.
 
-- **Zeiträume**: Die Leasingzeiträume, die das Aufzinsungsintervall und den Annuitätstyp widerspiegeln. Das Aufzinsungsintervall bestimmt, wie Zeiträume aufgeteilt werden. Sie können folgende Aufzinsungsintervalle festlegen:
+- **Zeiträume** : Die Leasingzeiträume, die das Aufzinsungsintervall und den Annuitätstyp widerspiegeln. Das Aufzinsungsintervall bestimmt, wie Zeiträume aufgeteilt werden. Sie können folgende Aufzinsungsintervalle festlegen:
 
   - Monatlich, 12 Zeiträume pro Jahr
   - Vierteljährlich, 4 Zeiträume pro Jahr
@@ -94,28 +93,28 @@ Das folgende Diagramm zeigt das Leasingbuch, das Leasingverhältnis, den berechn
 
 Der erste Zeitraum beginnt mit dem Zeitraum Null, wenn der Annuitätstyp „Annuität fällig“ ist. Andernfalls beginnt der erste Zeitraum mit Eins, wenn der Annuitätstyp „Zahlungsrückstände“ ist.
 
-- **Monate**: Gibt die Anzahl der Kalendermonate über die Laufzeit des Leasingverhältnisses an. Der Zahlungsbetrag ist der fällige Betrag, wie in der Zahlungshäufigkeit definiert. Der berechnete Barwert ist die auf dem Barwert basierende Leasingzahlung pro Zeitraum, die Aufzinsungsintervalle und der Zinssatz für Neukredite.
+- **Monate** : Gibt die Anzahl der Kalendermonate über die Laufzeit des Leasingverhältnisses an. Der Zahlungsbetrag ist der fällige Betrag, wie in der Zahlungshäufigkeit definiert. Der berechnete Barwert ist die auf dem Barwert basierende Leasingzahlung pro Zeitraum, die Aufzinsungsintervalle und der Zinssatz für Neukredite.
 
 > [!NOTE] 
 > Der Barwert wird basierend auf der Gleichung des diskontierten Cashflows berechnet.
 
-- **Bücher**: Das vorkonfigurierte Setup, das jedem Leasingverhältnis zugeordnet wird. Das Buch definiert den angewandten Rechnungslegungsstandard, die Leasingarten und den Schwellenwert, der als Grundlage für die Klassifizierungstests verwendet wird. Klassifizierungstests werden verwendet, um die Leasingart automatisch festzulegen.
+- **Bücher** : Das vorkonfigurierte Setup, das jedem Leasingverhältnis zugeordnet wird. Das Buch definiert den angewandten Rechnungslegungsstandard, die Leasingarten und den Schwellenwert, der als Grundlage für die Klassifizierungstests verwendet wird. Klassifizierungstests werden verwendet, um die Leasingart automatisch festzulegen.
 
-- **Rechnungslegungsrahmen**: Zeigt den ausgewählten Rechnungslegungsstandard (entweder IFRS 16 oder ASC 842) an, den Sie befolgen. Der Rechnungslegungsstandard ist in dem Buch angegeben, das dem Leasingverhältnis zugeordnet ist. Der Rechnungslegungsstandard bestimmt die Sachkonten, die im Buchungsprofil angegeben sind.
+- **Rechnungslegungsrahmen** : Zeigt den ausgewählten Rechnungslegungsstandard (entweder IFRS 16 oder ASC 842) an, den Sie befolgen. Der Rechnungslegungsstandard ist in dem Buch angegeben, das dem Leasingverhältnis zugeordnet ist. Der Rechnungslegungsstandard bestimmt die Sachkonten, die im Buchungsprofil angegeben sind.
 
-- **Leasingarten**: Gibt an, welche der beiden Arten von Leasingverhältnissen verwendet wird, entweder ein Finanzierungsleasing oder ein Ausrüstungs-Leasingvertrag. Im Rahmen eines Finanzierungsleasings werden Risiken und Chancen, die mit dem Leasingobjekt zusammenhängen, auf den Leasingnehmer übertragen. Bei einem Ausrüstungs-Leasingvertrag verbleiben die Risiken und Chancen, die sich auf das Leasingobjekt beziehen, beim Leasinggeber. Eine dritte Option ist eine automatisierte Identifizierung der Leasingart (Finanzierungsleasing oder Ausrüstungs-Leasingvertrag) basierend auf den im Buch definierten Schwellenwerten. Diese automatische Identifizierung wird während dem Reklassifizierungstests für das Leasingverhältnis durchgeführt.
+- **Leasingarten** : Gibt an, welche der beiden Arten von Leasingverhältnissen verwendet wird, entweder ein Finanzierungsleasing oder ein Ausrüstungs-Leasingvertrag. Im Rahmen eines Finanzierungsleasings werden Risiken und Chancen, die mit dem Leasingobjekt zusammenhängen, auf den Leasingnehmer übertragen. Bei einem Ausrüstungs-Leasingvertrag verbleiben die Risiken und Chancen, die sich auf das Leasingobjekt beziehen, beim Leasinggeber. Eine dritte Option ist eine automatisierte Identifizierung der Leasingart (Finanzierungsleasing oder Ausrüstungs-Leasingvertrag) basierend auf den im Buch definierten Schwellenwerten. Diese automatische Identifizierung wird während dem Reklassifizierungstests für das Leasingverhältnis durchgeführt.
 
-- **Schwellenwerte**: Werden in den Klassifizierungstests für Leasingverhältnisse verwendet, um festzustellen, ob die Anlage als eine der folgenden klassifiziert ist:
+- **Schwellenwerte** : Werden in den Klassifizierungstests für Leasingverhältnisse verwendet, um festzustellen, ob die Anlage als eine der folgenden klassifiziert ist:
 
-  - **Leasingdauer**: Der Prozentsatz der Nutzungsdauer, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert das Leasingverhältnis als Finanzierungsleasing, wenn die Leasingart auf automatisch eingestellt ist und das Verhältnis der Leasingdauer zur Nutzungsdauer der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
+  - **Leasingdauer** : Der Prozentsatz der Nutzungsdauer, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert das Leasingverhältnis als Finanzierungsleasing, wenn die Leasingart auf automatisch eingestellt ist und das Verhältnis der Leasingdauer zur Nutzungsdauer der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
 
-  - **Barwert**: Der Prozentsatz des Zeitwerts der Anlage, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert das Leasingverhältnis als Finanzierungsleasing, wenn die Leasingart auf automatisch eingestellt ist und das Verhältnis des Barwerts künftiger Leasingzahlungen zum Zeitwert der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
+  - **Barwert** : Der Prozentsatz des Zeitwerts der Anlage, der für den Klassifizierungstest verwendet werden soll. Das System klassifiziert das Leasingverhältnis als Finanzierungsleasing, wenn die Leasingart auf automatisch eingestellt ist und das Verhältnis des Barwerts künftiger Leasingzahlungen zum Zeitwert der Anlage größer oder gleich dem hier definierten Prozentsatz ist.
 
-  - **Kurzzeitleasing**: Wenn die Leasingdauer kürzer oder gleich dem hierfür definierten Wert ist, wird das Leasingverhältnis als Kurzzeitleasing eingestuft.
+  - **Kurzzeitleasing** : Wenn die Leasingdauer kürzer oder gleich dem hierfür definierten Wert ist, wird das Leasingverhältnis als Kurzzeitleasing eingestuft.
 
-  - **Leasingobjekt von geringem Wert**: Wenn der Zeitwert der Anlage kleiner oder gleich dem hierfür definierten Wert ist, wird das Leasingverhältnis als Leasingobjekt von geringem Wert eingestuft.
+  - **Leasingobjekt von geringem Wert** : Wenn der Zeitwert der Anlage kleiner oder gleich dem hierfür definierten Wert ist, wird das Leasingverhältnis als Leasingobjekt von geringem Wert eingestuft.
 
-  - **Leasingklassifizierung und -buchungen**: Die Leasingklassifizierung ist ein automatisierter Prozess zur Klassifizierung der Leasingverhältnisse anhand der in Büchern definierten Schwellenwerte sowie anderer Kriterien für Klassifizierungstests, um festzustellen, ob es sich bei dem Leasingverhältnis um ein Finanzierungsleasing, einen Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasingobjekt von geringem Wert handelt. Dies wird auch verwendet, um festzustellen, ob der Prozess für den zurückgestellten Mietaufwand eingehalten wird.
+  - **Leasingklassifizierung und -buchungen** : Die Leasingklassifizierung ist ein automatisierter Prozess zur Klassifizierung der Leasingverhältnisse anhand der in Büchern definierten Schwellenwerte sowie anderer Kriterien für Klassifizierungstests, um festzustellen, ob es sich bei dem Leasingverhältnis um ein Finanzierungsleasing, einen Ausrüstungs-Leasingvertrag, ein Kurzzeitleasing oder ein Leasingobjekt von geringem Wert handelt. Dies wird auch verwendet, um festzustellen, ob der Prozess für den zurückgestellten Mietaufwand eingehalten wird.
 
 Zu den Klassifizierungstests gehören Eigentumsübertragung, Kaufoption, Leasingdauer, Barwert und Einmalige Anlage. Das folgende Diagramm zeigt die Klassifizierungstests für Leasingverhältnisse.
 
@@ -204,7 +203,7 @@ Dies entspricht der übertragenen Saldosenkung des Nutzungsrechts am Leasingobje
 >[!NOTE]
 > Wenn das Leasingverhältnis mit einer Anlage verknüpft ist, sollte die Leasingminderung aus der Anlage gebucht werden, da die Abschreibung der Anlage über das Anlagenmodul erfolgt.
 
-**Doppelte Währung**: Leasingtransaktionen können in einer anderen Währung als der Buchhaltungs- und Berichtswährung gebucht werden. Der Wechselkurs wird am Datum des Leasingbeginns im Hauptbuch definiert. Sie können die Wechselkurse ändern, indem Sie das Feld **Fester Wechselkurs** auf **Ja** festlegen, wenn Sie das Leasingverhältnis erstellen. Wenn Sie Leasingtransaktionen eingeben, wird für die erstmalige Erfassung und die anschließenden Abschreibungstransaktionen der Wechselkurs vom Datum des Leasingbeginns verwendet. Für die nachfolgenden Zahlungen und Zinsbuchungen wird der aktuelle Wechselkurs verwendet. 
+**Doppelte Währung** : Leasingtransaktionen können in einer anderen Währung als der Buchhaltungs- und Berichtswährung gebucht werden. Der Wechselkurs wird am Datum des Leasingbeginns im Hauptbuch definiert. Sie können die Wechselkurse ändern, indem Sie das Feld **Fester Wechselkurs** auf **Ja** festlegen, wenn Sie das Leasingverhältnis erstellen. Wenn Sie Leasingtransaktionen eingeben, wird für die erstmalige Erfassung und die anschließenden Abschreibungstransaktionen der Wechselkurs vom Datum des Leasingbeginns verwendet. Für die nachfolgenden Zahlungen und Zinsbuchungen wird der aktuelle Wechselkurs verwendet. 
 
 ## <a name="create-an-asset-lease"></a>Erstellen eines Anlagenleasings
 Führen Sie die folgenden Schritte aus, um ein neues Leasing zu erstellen. 
@@ -226,7 +225,7 @@ Führen Sie die folgenden Schritte aus, um ein neues Leasing zu erstellen.
 
 5. Wechseln Sie zum Inforegister **Allgemein**. Das **anfängliche Nutzungsrecht am Leasingobjekt** und die **Leasingverbindlichkeit** werden berechnet. 
 
-6. Wechseln Sie zum Inforegister **Klassifizierungstest für das Leasingverhältnis**, um den Wert im Feld **Leasingart** zu überprüfen. 
+6. Wechseln Sie zum Inforegister **Klassifizierungstest für das Leasingverhältnis** , um den Wert im Feld **Leasingart** zu überprüfen. 
 
    Die **Leasingart** wird automatisch anhand der Kriterien klassifiziert, die auf der Seite **Bücher** definiert sind.
 

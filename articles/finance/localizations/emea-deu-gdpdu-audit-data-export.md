@@ -17,12 +17,12 @@ ms.search.region: Austria, Germany
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbc08332916d85b1bab54169da36c193b6eb4052
-ms.sourcegitcommit: f38302b9430f2ab3efe91d0a7beff946bc610e8f
+ms.openlocfilehash: 26a5f1762d5ab4be011e2cf1ae5118b795b3fd75
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091885"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006273"
 ---
 # <a name="german-audit-file-gdpdugobd-overview"></a>Deutsche Protokolldatei (GDPdU/GoBD) – Übersicht
 
@@ -48,7 +48,7 @@ Unternehmen in Deutschland und in einigen anderen Ländern/Regionen sind gesetzl
 In der aktuellen Version von Finance werden Funktionen, die dem Benutzer das Exportieren der erforderlichen Daten ermöglichen, als GDPdU-spezifische elektronische Berichterstellungskonfigurationen implementiert. Aufgabenleitfäden, die zeigen, wie GDPdU-spezifische Konfigurationen importiert werden, eine andere Tabellengruppe für den Export hinzugefügt wird und der Export ausführt wird, sind ebenfalls verfügbar.
 
 ## <a name="table-groups-and-table-definitions"></a>Tabellengruppen und Tabellendefinitionen
-In den folgenden Abschnitten werden die Tabellen aufgelistet, die als Beispiele in der **Deutschen Protokolldatei**der elektronischen Datenmodellkonfiguration eingerichtet sind. Sie können diese Tabellen standardmäßig verwenden, um die Daten zu exportieren. Sie können auch vorhandene Tabellengruppen anpassen und die Liste der unterstützten Tabellengruppen in der Konfiguration der **Deutschen Protokolldatei** des elektronischen Berichterstellungsdatenmodells erweitern.
+In den folgenden Abschnitten werden die Tabellen aufgelistet, die als Beispiele in der **Deutschen Protokolldatei** der elektronischen Datenmodellkonfiguration eingerichtet sind. Sie können diese Tabellen standardmäßig verwenden, um die Daten zu exportieren. Sie können auch vorhandene Tabellengruppen anpassen und die Liste der unterstützten Tabellengruppen in der Konfiguration der **Deutschen Protokolldatei** des elektronischen Berichterstellungsdatenmodells erweitern.
 
 ### <a name="general-ledger"></a>Hauptbuch
 
@@ -56,7 +56,7 @@ Die folgenden Tabellen zeigen die Definitionen der Datenstruktur des Hauptbuchs.
 
 #### <a name="sachkonten"></a>Sachkonten
 
-|     | Feldname                  | Feldtyp | Beschreibung                                      | Elektronischer Berichterstellungs-Datenquellen-Pfad |
+| Anzahl | Feldname                  | Feldtyp | Beschreibung                                      | Elektronischer Berichterstellungs-Datenquellen-Pfad |
 |-----|---------------------------|---------|---------------------------------------------------|------------------------------------------------------------|
 | 1   | SACHKONTONUMMER           | Zeichen | Nummer des Sachkontos                             | MainAccount/MainAccountId                                  |
 | 2   | SACHKONTONAME             | Zeichen | Bezeichnung des Sachkontos                        | MainAccount/Name                                           |
@@ -68,7 +68,7 @@ Die folgenden Tabellen zeigen die Definitionen der Datenstruktur des Hauptbuchs.
 
 #### <a name="sachkontobuchungen"></a>Sachkontobuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                      | Elektronischer Berichterstellungs-Datenquellen-Pfad                                             |
+| Anzahl | Feldname               | Feldtyp   | Beschreibung                                      | Elektronischer Berichterstellungs-Datenquellen-Pfad                                             |
 |-----|------------------------|-----------|---------------------------------------------------|-----------------------------------------------------------------------------------|
 | 1   | SACHKONTONUMMER        | Zeichen   | Nummer des Sachkontos                             | $GeneralJournalEntry/$GeneralJournalAccountEntry/$LedgerDimension/DisplayValue    |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine Mehrwertsteuerbuchung?-lfd Nr | $GeneralJournalEntry/$GeneralJournalAccountEntry/RecId                            |
@@ -97,7 +97,7 @@ In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen
 
 #### <a name="umsatzsteuercodes"></a>Umsatzsteuercodes
 
-|     | Feldname          | Feldtyp   | Beschreibung      | Elektronischer Berichterstellungs-Datenquellen-Pfad|
+| Anzahl | Feldname          | Feldtyp   | Beschreibung      | Elektronischer Berichterstellungs-Datenquellen-Pfad|
 |-----|-------------------|-----------|-------------------|-------------------------------------------------------------------------|
 | 1   | BUCHUNGSGRUNDLAGE | Zeichen   | Buchungsgrundlage | TaxData/$TaxTable/TaxBase                             |
 | 2   | NAME              | Zeichen   | Name              | TaxData/$TaxTable/TaxName                             |
@@ -107,7 +107,7 @@ In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen
 
 #### <a name="mehrwertsteuergruppen"></a>MehrwertsteuerGruppen
 
-|     | Feldname                      | Feldtyp | Beschreibung               | Elektronischer Berichterstellungs-Datenquellen-Pfad |
+| Anzahl | Feldname                      | Feldtyp | Beschreibung               | Elektronischer Berichterstellungs-Datenquellen-Pfad |
 |-----|-------------------------------|---------|----------------------------|-------------------------------------------------|
 | 1   | BESCHREIBUNG                  | Zeichen | Beschreibung               | TaxGroupData/$TaxGroupHeading/TaxGroupName     |
 | 2   | MEHRWERTSTEUERGRUPPE          | Zeichen | Mehrwertsteuergruppe       | TaxGroupData/TaxGroup       |
@@ -118,7 +118,7 @@ In den folgenden Tabellen werden die allgemeinen Steuerdatenstrukturdefinitionen
 
 #### <a name="umsatzsteuerbuchungen"></a>Umsatzsteuerbuchungen
 
-|     | Feldname               | Feldtyp   | Beschreibung                                | Elektronischer Berichterstellungs-Datenquellen-Pfad |
+| Anzahl | Feldname               | Feldtyp   | Beschreibung                                | Elektronischer Berichterstellungs-Datenquellen-Pfad |
 |-----|------------------------|-----------|---------------------------------------------|--------------------------------------|
 | 1   | STEUERART              | Zeichen   | Beschreibung der Steuerart                  | $TaxTrans/taxName()                                      |
 | 2   | STEUERBUCHUNGSREFERENZ | Numerisch | Gibt es hierzu eine MWST-Buchung? - lfd Nr. | $TaxTrans/$TaxTransGeneralJournalAccountEntry/$GeneralJournalAccountEntryRecId                                          |
@@ -144,7 +144,7 @@ In den folgenden Tabellen werden die allgemeinen Debitorendatenstrukturdefinitio
 
 #### <a name="kunden"></a>Kunden
 
-|     | Feldname             | Feldtyp | Beschreibung                          | Elektronischer Berichterstellungs-Datenquellen-Pfad|
+| Anzahl | Feldname             | Feldtyp | Beschreibung                          | Elektronischer Berichterstellungs-Datenquellen-Pfad|
 |-----|----------------------|---------|---------------------------------------|--------------------------------------|
 | 1   | KUNDENKONTONUMMER    | Zeichen | Nummer des Kundenkontos               | CustTable/AccountNum                                     |
 | 2   | KUNDENUSTIDNR        | Zeichen | USt-IdNr des Kunden                   | CustTable/getVatNumPrimaryRegistrationNumber()                                         |
@@ -162,7 +162,7 @@ In den folgenden Tabellen werden die allgemeinen Debitorendatenstrukturdefinitio
 
 #### <a name="kundenbuchungen"></a>Kundenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Elektronischer Berichterstellungs-Datenquellen-Pfad |
+| Anzahl | Feldname                 | Feldtyp   | Beschreibung                          | Elektronischer Berichterstellungs-Datenquellen-Pfad |
 |-----|--------------------------|-----------|---------------------------------------|-----------------------------------------------------------------------------------|
 | 1   | KUNDENKONTONUMMER        | Zeichen   | Kontonummer des Kundenkontos          | $CustTrans/AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | $CustTrans/Voucher                                        |
@@ -183,7 +183,7 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 
 #### <a name="lieferanten"></a>Lieferanten
 
-|     | Feldname                  | Feldtyp | Beschreibung                             | Elektronischer Berichterstellungs-Datenquellen-Pfad |
+| Anzahl | Feldname                  | Feldtyp | Beschreibung                             | Elektronischer Berichterstellungs-Datenquellen-Pfad |
 |-----|---------------------------|---------|------------------------------------------|------------------------------------------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER    | Zeichen | Nummer des Lieferantenkontos             | VendTable/AccountNum                                     |
 | 2   | LIEFERANTENUSTIDNR        | Zeichen | USt-IdNr des Lieferanten                 | VendTableVendTable/getVatNumPrimaryRegistrationNumber()                                         |
@@ -199,7 +199,7 @@ In den folgenden Tabellen werden die allgemeinen Kreditorendatenstrukturdefiniti
 
 #### <a name="lieferantenbuchungen"></a>Lieferantenbuchungen
 
-|     | Feldname                 | Feldtyp   | Beschreibung                          | Elektronischer Berichterstellungs-Datenquellen-Pfad |
+| Anzahl | Feldname                 | Feldtyp   | Beschreibung                          | Elektronischer Berichterstellungs-Datenquellen-Pfad |
 |-----|--------------------------|-----------|---------------------------------------|-------------------------------------------------------------------------------------|
 | 1   | LIEFERANTENKONTONUMMER   | Zeichen   | Nummer des Lieferantenkontos          | $VendTrans/AccountNum                                     |
 | 2   | BUCHUNGSNUMMER           | Zeichen   | Interne Belegnummer der Buchung       | $VendTrans/Voucher                                        |

@@ -1,7 +1,7 @@
 ---
 title: Überprüfen der Zugänglichkeit des Seiteninhalts
 description: In diesem Thema wird beschrieben, wie Sie die Barrierefreiheit von Seiteninhalten in Microsoft Dynamics 365 Commerce überprüfen.
-author: arotkin
+author: josaw1
 manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
@@ -14,15 +14,15 @@ ms.reviewer: v-chgri
 ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: arotkin
+ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8e35b0f71ff41bade266fb177e4500c7d124ed1f
-ms.sourcegitcommit: 81a647904dd305c4be2e4b683689f128548a872d
+ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3002658"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015102"
 ---
 # <a name="verify-page-content-accessibility"></a>Überprüfen der Zugänglichkeit des Seiteninhalts
 
@@ -68,7 +68,7 @@ Um den integrierten [Microsoft Accessibility Insights](https://accessibilityinsi
 1. Wählen Sie in der Befehlsleiste die Option **Zugänglichkeit prüfen** aus. Die Seite **Zugänglichkeit prüfen** wird angezeigt.
 1. Überprüfen Sie nach Abschluss des Scans den Inhalt des Berichts.
 1. Wenn Prüfungen fehlgeschlagen sind, wählen Sie jedes fehlgeschlagene Prüfelement aus, um es zu erweitern und weitere Details anzuzeigen.
-1. Um den Bericht zu schließen, nachdem Sie ihn geprüft haben, scrollen Sie zur Seite **Zugänglichkeit prüfen**, und wählen Sie **OK** aus.
+1. Um den Bericht zu schließen, nachdem Sie ihn geprüft haben, scrollen Sie zur Seite **Zugänglichkeit prüfen** , und wählen Sie **OK** aus.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

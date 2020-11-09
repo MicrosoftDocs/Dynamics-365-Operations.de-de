@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7ed359521dd018047fdbd5312d0cb73d764de925
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: ec91174f291bcfa7027a93ca344823561cc29e3f
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383227"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018152"
 ---
 # <a name="create-a-purchase-order"></a>Eine Bestellung erstellen
 
@@ -60,7 +60,7 @@ Dieses Thema zeigt Ihnen, wie Sie eine Bestellung manuell erstellen. Es ist aber
     - Das Feld **Preis je Einheit** enthält üblicherweise einen Wert entweder aus einem Kaufvertrag oder aus einer Handelsvereinbarung. Es ist möglich, den Preis je Einheit für einzelne Auftragspositionen zu ändern, beispielsweise dann, wenn ein eindeutiger Preis mit dem Händler ausgehandelt wird.  
     - Das Feld **Rabatt** stellt einen Rabattbetrag pro Einheit dar. Dieser Rabatt verringert daher den Preis je Einheit um den Rabatt. Dieser Rabatt wird im Allgemeinen automatisch in Kaufverträgen oder Handelsvereinbarungen angegeben, kann jedoch bei einzelnen Positionen überschrieben werden, wenn eindeutige Rabatte mit dem Händler ausgehandelt wurden.  
     - Ein Rabattprozentsatz kann eingegeben werden, der den Nettobetrag für die Position entsprechend reduziert. Der Rabattprozentsatz wird oft automatisch in Kaufverträgen oder Handelsvereinbarungen angegeben, kann jedoch bei einzelnen Positionen überschrieben werden, wenn ein eindeutiger Rabattprozentsatz mit dem Händler ausgehandelt wurde.  
-    - Der Wert im Feld **Nettobetrag** wird aus anderen Feldern zur Position einschließlich Menge, Preis je Einheit, Rabatt und Rabattprozentsatz berechnet. Es ist möglich, den Nettobetrag zu ändern, dann sind jedoch die Felder **Preis je Einheit**, **Rabatt** und **Rabatt in Prozent** leer. Wenn Sie auf die Position buchen, wird der gebuchte Betrag proportional zum Nettobetrag sein. Normalerweise wird das Feld **Nettobetrag** nur für die Anzeige des Nettobetrags der Position verwendet.  
+    - Der Wert im Feld **Nettobetrag** wird aus anderen Feldern zur Position einschließlich Menge, Preis je Einheit, Rabatt und Rabattprozentsatz berechnet. Es ist möglich, den Nettobetrag zu ändern, dann sind jedoch die Felder **Preis je Einheit** , **Rabatt** und **Rabatt in Prozent** leer. Wenn Sie auf die Position buchen, wird der gebuchte Betrag proportional zum Nettobetrag sein. Normalerweise wird das Feld **Nettobetrag** nur für die Anzeige des Nettobetrags der Position verwendet.  
 
 8. Erweitern Sie den Abschnitt **Positionsdetails**.
 9. Wählen Sie die Registerkarte **Lieferung** aus. Ein eindeutiges Lieferdatum kann jeder Auftragsposition zugewiesen werden. Das Datum wird aus dem Feld im Bestellkopf übernommen, Sie können dies jedoch ändern.  

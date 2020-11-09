@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: fc5db8d04a2860df0c917816e2910c6fbda941ff
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f502519ba419cb8fa322eb1d22f06d2b805f5f05
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3173153"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000733"
 ---
 # <a name="organization-hierarchy-in-common-data-service"></a>Organisationshierarchie in Common Data Service
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Da Dynamics 365 Finance ein Finanzsystem ist, ist *Organisation* ein Grundkonzept, und die Systemeinrichtung beginnt mit der Konfiguration einer Organisationshierarchie. Unternehmensfinanzen können auf Organisationsebene und auch auf jeder anderen Ebene in der Organisationshierarchie verfolgt werden.
 
@@ -41,8 +38,6 @@ Obwohl es in Common Data Service nicht das Konzept einer Organisationshierarchie
 Ein Geschäftsökosystem, das aus Finance and Operations Apps und Common Data Service besteht, wird weiterhin eine Organisationshierarchie haben. Diese Organisationshierarchie basiert auf Finance and Operations Apps, wird aber in Common Data Service zu Informations- und Erweiterbarkeitszwecken verfügbar gemacht. Die folgende Abbildung zeigt die Organisationshierarchieinformationen, die in Common Data Service als unidirektionaler Datenfluss von Finance and Operations Apps nach Common Data Service verfügbar gemacht werden.
 
 ![Architekturabbildung](media/dual-write-data-flow.png)
-
-## <a name="templates"></a>Vorlagen
 
 Entitätszuordnungen der Organisationshierarchie sind für die unidirektionale Synchronisierung Finance and Operations Apps zu Common Data Service  verfügbar.
 
@@ -55,10 +50,9 @@ Finance and Operations Apps | Sonstige Dynamics 365-Apps | Beschreibung
 Organisationshierarchiezwecke | msdyn_internalorganizationhierarchypurposes | Diese Vorlage ermöglicht eine unidirektionale Synchronisierung der Entität „Zweck der Organisationshierarchie“.
 Organisationshierarchietyp | msdyn_internalorganizationhierarchytypes | Diese Vorlage ermöglicht eine unidirektionale Synchronisierung der Entität „Organisationshierarchietyp“.
 Organisationshierarchie – veröffentlicht | msdyn_internalorganizationhierarchies | Diese Vorlage bietet eine unidirektionale Synchronisierung der Entität „Veröffentlichte Organisationshierarchie“.
-Organisationseinheit | msdyn_internalorganizations | 
-Juristische Personen | msdyn_internalorganizations | 
+Organisationseinheit | msdyn_internalorganizations |
+Juristische Personen | msdyn_internalorganizations |
 Juristische Personen | cdm_companies | Bietet eine bidirektionale Synchronisierung von Daten von juristischen Person (Unternehmen).
-
 
 [!include [banner](../../includes/dual-write-symbols.md)]
 
@@ -77,4 +71,3 @@ Informationen zur internen Organisation in Common Data Service stammen aus zwei 
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-

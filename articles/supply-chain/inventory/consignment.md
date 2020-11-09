@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchTablePart, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af30938929677ad0e1388760e6b7a992a8718240
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 0127cc64688bc7878623b08ef143dfd040484ce0
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212893"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018375"
 ---
 # <a name="set-up-consignment"></a>Sendung einrichten
 
@@ -40,7 +40,7 @@ In diesem Beispielszenario hat Unternehmen USMF eine Lieferungsvereinbarung mit 
 2.  Der Kreditor wird über die erwartete Lieferung informiert. Dies kann auf eine von drei Arten erfolgen:
     -   Jemand, der bei USMF arbeitet, sendet die Auftragsinformationen an den Kreditor.
     -   Der Kreditor kann den voraussichtlichen verfügbaren Lagerbestand mithilfe der Kreditoren-Zusammenarbeitschnittstelle überwachen.
-    -   Jemand, der bei USMF arbeitet, filtert die Daten auf der Seite **Verfügbarer Lagerbestand**, sodass lediglich Datensätze für Kreditor US-104 angezeigt werden, bei denen der Empfangsstatus **Bestellt** ist, und er sendet dann diese Informationen zum Kreditor.
+    -   Jemand, der bei USMF arbeitet, filtert die Daten auf der Seite **Verfügbarer Lagerbestand** , sodass lediglich Datensätze für Kreditor US-104 angezeigt werden, bei denen der Empfangsstatus **Bestellt** ist, und er sendet dann diese Informationen zum Kreditor.
 3.  Der Bestand wird von US-104 an USMF geliefert.
 4.  Wenn das Material bei USMF ankommt, wird der Lieferungswiederbeschafftungs-Auftrag mit einem Produktzugang aktualisiert. Nur die physischen Mengen des Bestands, der im Besitz des Kreditors ist, werden erfasst. Es werden keine Hauptbuchtransaktionen erstellt, da der Bestand immer im Besitz des Kreditor ist.
 5.  Der Kreditor überwacht Aktualisierungen des physische verfügbaren Lagerbestands mithilfe der Seite **Verfügbarer Lieferungsbestand**.
@@ -53,21 +53,21 @@ In diesem Beispielszenario hat Unternehmen USMF eine Lieferungsvereinbarung mit 
 USMF führt zusätzliche periodische Prozesse durch:
 
 -   Die physische Bewegung des im Besitz des Kreditors befindlichen Bestands zwischen verschiedenen Lagerorten wird mithilfe einer Umlagerungserfassung verarbeitet.
--   Der physische verfügbare Lagerbestand wird mithilfe einer Erfassung**Artikelinventur**aktualisiert. Die Inventur kann auch vom Kreditor verwendet werden, um den verfügbaren Lagerbestand zu aktualisieren, sofern sie dafür über die notwendige Berechtigung verfügen.
+-   Der physische verfügbare Lagerbestand wird mithilfe einer Erfassung **Artikelinventur** aktualisiert. Die Inventur kann auch vom Kreditor verwendet werden, um den verfügbaren Lagerbestand zu aktualisieren, sofern sie dafür über die notwendige Berechtigung verfügen.
 
 Der Kreditor, US-104, kann die Aktualisierungen mithilfe der Seite **Verfügbarer Lieferungsbestand** überwachen.
 
 ## <a name="consignment-replenishment-orders"></a>Unterlieferungs-Wiederbeschaffungsaufträge
 Ein Lieferungswiederbeschaffungsauftrag ist ein Dokument, das verwendet wird, um Bestandsmengen von Produkten anzufordern und nachzuverfolgen, die ein Kreditor innerhalb eines bestimmten Datumsintervalls zu liefern beabsichtigt, und zwar mithilfe des Erstellens bestellter Bestandstransaktionen. In der Regel basiert dies auf der Planung und dem tatsächlichen Bedarf der spezifischen Produkte. Der Bestand, der für den Lieferungswiederbeschaffungsauftrag eingeht, bleibt im Besitz des Kreditors. Nur der Besitz der Produkte, der mit der Aktualisierung des physischen Zugangs verknüpft ist, wird aufgezeichnet, und deshalb erfolgen keine Aktualisierungen der Hauptbuchtransaktion. 
 
-Die Dimension **Besitzer** wird verwendet, um Informationen darüber zu trennen, welcher Bestand sich im Besitz des Kreditors und welcher sich im Besitz der empfangenden juristischen Person befindet. Lieferungswiederbeschaffungsauftragspositionen haben einen **Offenen Auftrag**-Status, sofern die gesamte Menge der Positionen nicht eingegangenen oder storniert wurde. Wenn die gesamte Menge eingegangenen oder abgebrochen wurde, wird der Status in **Abgeschlossen** geändert. Der physische verfügbare Lagerbestand, der einem Lieferungswiederbeschaffungsauftrag zugeordnet ist, kann mithilfe eines Anmeldeprozesses sowie eines Produktzugangsaktualisierungsprozesses erfasst werden. Die Registrierung kann als Teil des Artikeleingangsprozesses erfolgen oder durch die manuelle Aktualisierung der Auftragspositionen. Wenn der Produktzugangs-Aktualisierungsprozess verwendet wird, wird ein Beleg in der Produktzugangserfassung erstellt, der zur Bestätigung des Zugangs von Waren an die Kreditoren verwendet werden kann.
+Die Dimension **Besitzer** wird verwendet, um Informationen darüber zu trennen, welcher Bestand sich im Besitz des Kreditors und welcher sich im Besitz der empfangenden juristischen Person befindet. Lieferungswiederbeschaffungsauftragspositionen haben einen **Offenen Auftrag** -Status, sofern die gesamte Menge der Positionen nicht eingegangenen oder storniert wurde. Wenn die gesamte Menge eingegangenen oder abgebrochen wurde, wird der Status in **Abgeschlossen** geändert. Der physische verfügbare Lagerbestand, der einem Lieferungswiederbeschaffungsauftrag zugeordnet ist, kann mithilfe eines Anmeldeprozesses sowie eines Produktzugangsaktualisierungsprozesses erfasst werden. Die Registrierung kann als Teil des Artikeleingangsprozesses erfolgen oder durch die manuelle Aktualisierung der Auftragspositionen. Wenn der Produktzugangs-Aktualisierungsprozess verwendet wird, wird ein Beleg in der Produktzugangserfassung erstellt, der zur Bestätigung des Zugangs von Waren an die Kreditoren verwendet werden kann.
 
 [![Unterlieferungs-Wiederbeschaffungsauftrag](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Erfassung für die Änderung von Bestandseigentümern
 Der Prozess der Änderung des Besitzers des Bestands vom Kreditor zur empfangenden juristischen Person erfolgt mithilfe einer Bestandsbesitzänderungs-Erfassung. Es werden keine voraussichtlichen Lagerbuchungen für die Erfassung erstellt. Es werden nur Lagerbuchungen erstellt, die einer gebuchten Erfassung zugeordnet sind. Wenn die Erfassung gebucht wird:
 
--   Der im Besitz des Kreditors befindliche Bestand wird mithilfe einer Referenz **Besitzänderung** mit dem Status **Verkauft**ausgegeben.
+-   Der im Besitz des Kreditors befindliche Bestand wird mithilfe einer Referenz **Besitzänderung** mit dem Status **Verkauft** ausgegeben.
 -   Der verfügbare Lagerbestand wird von der juristischen Person empfangen, die ihn verbraucht. Dies erfolgt mithilfe einer durch den Produktzugang aktualisierten Bestandsbuchung zur Bestellung. Dadurch wird der Status des Auftrags auf **Eingegangen** festgelegt. Bei Bestellungen, die zur Lieferung verwendet werden, wird das Feld **Ursprung** auf **Lieferung** festgelegt.
 
 Es ist nicht möglich, die Menge auf Lieferungsbestellpositionen zu aktualisieren, nachdem der Auftrag erstellt wurde.
@@ -77,7 +77,7 @@ Es ist nicht möglich, die Menge auf Lieferungsbestellpositionen zu aktualisiere
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Kreditorenzusammenarbeit in den Lieferungsprozessen
 Die Kreditorenzusammenarbeitschnittstelle hat drei Seiten, die dem Prozess der eingehenden Lieferung zugeordnet sind:
 
--   **Bestellungen,**, **die Lieferungsbestand verbrauchen**  – Zeigt detaillierte Bestellungsinformationen zur Besitzänderung vom Lieferungsprozess an.
+-   **Bestellungen,** , **die Lieferungsbestand verbrauchen**  – Zeigt detaillierte Bestellungsinformationen zur Besitzänderung vom Lieferungsprozess an.
 -   **Produkte, die aus dem Lieferungsbestand empfangen werden** – Zeigt Informationen zu Artikeln und Mengen an, bei denen die Produktzugänge während des Besitzänderungsprozesses aktualisiert werden.
 -   **Verfügbarer Lieferungsbestand** – Zeigt Informationen zu den Lieferungsartikeln an, die sie erwartungsgemäß liefern sollen, sowie zu den Artikeln, die am Debitorenstandort bereits physisch verfügbar sind.
 
@@ -92,7 +92,7 @@ Artikel, die bei Lieferungsprozessen verwendet werden, müssen einer **Rückverf
 [![Rückverfolgungsangabengruppe](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Erfassung für die Änderung von Bestandseigentümern
-Die Erfassung **Bestandsbesitzänderung**wird verwendet, um die Übertragung des Besitzes des Lieferungsbestands vom Kreditor zur juristischen Person, die ihn verbraucht, aufzuzeichnen. Wie jede Bestandserfassung muss sie mit einem Bestandserfassungsname identifiziert werden. Diese Namen werden auf der Seite **Bestandserfassungsnamen** erstellt, und der **Erfassungstyp** muss auf **Besitzänderung** festgelegt werden.
+Die Erfassung **Bestandsbesitzänderung** wird verwendet, um die Übertragung des Besitzes des Lieferungsbestands vom Kreditor zur juristischen Person, die ihn verbraucht, aufzuzeichnen. Wie jede Bestandserfassung muss sie mit einem Bestandserfassungsname identifiziert werden. Diese Namen werden auf der Seite **Bestandserfassungsnamen** erstellt, und der **Erfassungstyp** muss auf **Besitzänderung** festgelegt werden.
 
 [![Bestandeigentümer-Änderungserfassung](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 

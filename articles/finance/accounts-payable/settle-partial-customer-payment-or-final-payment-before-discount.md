@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37c378a424d89a884d1f3f0f14e1d544b3af178b
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: f9ae9218a85c50582c8c4999da463833fc91d260
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177977"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006114"
 ---
 # <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Ausgleichen einer teilweisen Debitorenzahlung und Ausgleichen der vollständigen Zahlung vollständig vor dem Skontodatum
 
@@ -34,7 +34,7 @@ Dieser Artikel beschreibt Szenarien, die zeigen, wie Teilzahlungen für einen De
 Fabrikam verkauft Waren an Kunde 4028. Fabrikam bietet ein Skonto von 1 % an, wenn die Rechnung innerhalb von 14 Tagen bezahlt wird. Rechnungen müssen in 30 Tagen bezahlt werden. Fabrikam bietet auch Skonti auf Teilzahlungen an. Die Ausgleichsparameter sind auf der Seite **Debitorenkontenparameter** Seite verfügbar.
 
 ## <a name="customer-invoice"></a>Debitorenrechnung
-Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4028 ein und bucht diese. Auf der Seite**Debitorenbuchungen** kann Arnie diese Transaktion anzeigen.
+Am 25. Juni gibt Arnie eine Rechnung für 1.000,00 für den Debitor 4028 ein und bucht diese. Auf der Seite **Debitorenbuchungen** kann Arnie diese Transaktion anzeigen.
 
 | Beleg   | Transaktionstyp | Datum      | Rechnung | Geschuldeter Betrag in Buchungswährung | Gutschriftsbetrag in Buchungswährung | Gesamtbetrag  | Währung |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -48,7 +48,7 @@ Von der Seite **Debitor** oder **Debitorentransaktionen** kann Arnie die Seite *
 
 Rabattinformationen werden am unteren Rand der Seite **Transaktionen abgleichen** für die markierte Rechnung angezeigt.
 
-|                              |           |
+|    &nbsp;                    |  &nbsp;   |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 10,00     |
@@ -56,7 +56,7 @@ Rabattinformationen werden am unteren Rand der Seite **Transaktionen abgleichen*
 | Verwendetes Skonto          | 0,00      |
 | Zu verwendender Skontobetrag | 10,00     |
 
-Arnie klicket auf die Registerkarte **Skonto**, um den Rabattbetrag anzuzeigen.
+Arnie klicket auf die Registerkarte **Skonto** , um den Rabattbetrag anzuzeigen.
 
 | Skontodatum | Skontobetrag | Betrag in Buchungswährung |
 |--------------------|----------------------|--------------------------------|
@@ -71,7 +71,7 @@ Debitor 4028 übermittelt eine Zahlung in Höhe von 500,00. am 1. Juli Um dieser
 | 5,05                         | 0,00                | 500,00        |
 
 ## <a name="partial-payment-by-using-the-journal-lines"></a>Teilzahlung mithilfe der Erfassungspositionen
-Anstatt die Seite **Debitorenzahlungen eingeben** in der Zahlungserfassung zu öffnen, kann Arnie auf **Positionen** klicken, um eine Zahlung einzugeben. Die Zahlungserfassung wird angezeigt, wo Arnie einer Position für Debitor 4028 eingeben kann. Arnie öffnet anschließend die Seite **Buchungen ausgleichen**, sodass er die Rechnung zum Ausgeleichen markieren kann. Arnie markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **500,00**. Er sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **5,05**. Daher gleicht Arnie 505,05 dieser Rechnung aus.
+Anstatt die Seite **Debitorenzahlungen eingeben** in der Zahlungserfassung zu öffnen, kann Arnie auf **Positionen** klicken, um eine Zahlung einzugeben. Die Zahlungserfassung wird angezeigt, wo Arnie einer Position für Debitor 4028 eingeben kann. Arnie öffnet anschließend die Seite **Buchungen ausgleichen** , sodass er die Rechnung zum Ausgeleichen markieren kann. Arnie markiert die Rechnung und ändert den Wert im Feld **Auszugleichender Betrag** zu **500,00**. Er sieht wieder, dass der Wert im Feld **Skontobetrag** der Betrag **10,00** für die gesamte Rechnung ist, und der Wert im Feld **In Anspruch zu nehmender Skontobetrag** beträgt **5,05**. Daher gleicht Arnie 505,05 dieser Rechnung aus.
 
 | Markieren     | Skonto verwenden | Beleg   | Konto | Datum      | Fälligkeitsdatum  | Rechnung | Betrag in Buchungswährung | Währung | Auszugleichender Betrag |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -79,7 +79,7 @@ Anstatt die Seite **Debitorenzahlungen eingeben** in der Zahlungserfassung zu ö
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+|        &nbsp;                | &nbsp;    |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 10,00     |
@@ -95,7 +95,7 @@ Wenn der Debitor genau die Hälfte der Rechnung ausgleichen möchte, übermittel
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+|     &nbsp;                   | &nbsp;    |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 10,00     |
@@ -112,9 +112,9 @@ Arnie schließt die Seite **Transaktionen abgleichen**. Eine Zahlungsposition f�
 | DISC-10010 |  Skonto   | 1. Juli 2015  |         |                                      | 5,00                                  | 0,00    | USD      |
 
 ## <a name="payment-for-the-remaining-amount"></a>Zahlung für den verbleibenden Betrag
-Debitor 4028 zahlt den verbleibenden Betrag von 495,00 am 8. Juli, also innerhalb des Skontozeitraums. Arnie erstellt die Zahlungserfassung am 8. Juli und markiert die Buchung für den Ausgleich. Er sieht, dass der auszugleichende Betrag 495,00 ist. Der Wert im Feld **Vorkalkuliertes Skonto** ist **5,00**, da der Rabatt 5,00 zuvor in Anspruch genommen wurde.
+Debitor 4028 zahlt den verbleibenden Betrag von 495,00 am 8. Juli, also innerhalb des Skontozeitraums. Arnie erstellt die Zahlungserfassung am 8. Juli und markiert die Buchung für den Ausgleich. Er sieht, dass der auszugleichende Betrag 495,00 ist. Der Wert im Feld **Vorkalkuliertes Skonto** ist **5,00** , da der Rabatt 5,00 zuvor in Anspruch genommen wurde.
 
-|                         |        |
+|   &nbsp;                | &nbsp; |
 |-------------------------|--------|
 | Insgesamt markiert            | 495,00 |
 | Vorkalkuliertes Skonto | 5,00   |
@@ -127,7 +127,7 @@ Informationen zur markierte Buchung werden im Raster auf der **Offene Buchungen 
 
 Rabattinformationen werden am unteren Rand der Seite **Offene Buchungen ausgleichen** angezeigt.
 
-|                              |           |
+|  &nbsp;                      |  &nbsp;   |
 |------------------------------|-----------|
 | Skontodatum           | 09. Juli 2015 |
 | Skontobetrag         | 10,00     |

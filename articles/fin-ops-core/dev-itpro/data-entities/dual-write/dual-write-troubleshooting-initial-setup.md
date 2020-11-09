@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 76e104c9ebd7db7ebcbaf214e84be6c4353e8a73
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 6fb71a17d767a1e84511743794d85523db25eba8
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275440"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997349"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Probleme bei der anfänglichen Einrichtung behandeln
 
@@ -63,7 +62,7 @@ Führen Sie die folgenden Schritte aus, um die App-Zustimmung zu erteilen.
 
     <https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent>
 
-2. Wählen **Akzeptieren**, um anzugeben, dass Sie Ihre Zustimmung zur Installation der App mit der ID **33976c19-1db5-4c02-810e-c243db79efde** in Ihrem Mandant geben.
+2. Wählen **Akzeptieren** , um anzugeben, dass Sie Ihre Zustimmung zur Installation der App mit der ID **33976c19-1db5-4c02-810e-c243db79efde** in Ihrem Mandant geben.
 
     > [!TIP]
     > Diese App muss verlinkt werden mit Common Data Service und Finance and Operations Apps. Wenn Sie Probleme mit diesem Schritt haben, öffnen Sie Ihren Browser im Inkognito-Modus (in Google Chrome) oder im InPrivate-Modus (in Microsoft Edge).
@@ -74,7 +73,7 @@ Um sicherzustellen, dass Duales Schreiben ordnungsgemäß funktioniert, werden d
 
 1. Wählen Sie in der modellgesteuerten App in Dynamics 365 den Filter in der oberen rechten Ecke aus.
 2. Wählen Sie in der Dropdownliste **Unternehmen** aus.
-3. Wählen **Ausführen**, um die Ergebnisse zu sehen.
+3. Wählen **Ausführen** , um die Ergebnisse zu sehen.
 4. Wählen Sie die Firma aus, die bei der Konfiguration von Dualem Schreiben verknüpft war.
 5. Stellen Sie sicher, dass das Feld **Standardbesitzerteam** einen Wert hat. In der folgenden Abbildung ist das Feld **Standardbesitzerteam** auf **USMF – Duales Schreiben** festgelegt.
 

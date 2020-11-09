@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: d86fa3df1de13cc0e0fb94449207a326069da25b
-ms.sourcegitcommit: 91e101d7a51a8b63bd196ec80e9224e5e6e6fc95
+ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3834364"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018628"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Fehlerbehebung bei Produktzugängen und Fakturierung
 
@@ -38,7 +38,7 @@ Eine Menge ist obligatorisch, wenn Sie Rechnungen buchen möchten. Wenn die gesa
 
 Dieses Problem kann aufgrund von Inkonsistenzen bei der Verteilung von Bestellungen auftreten.
 
-So entsperren Sie dieses Problem und setzen die Bestellung auf den *Entwurf*-Zustand zurück. Gehen Sie zu **Beschaffung \> Periodische Aufgaben \> Bereinigen \> Zurücksetzen der Bestellverteilung**. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Beheben von Bestellungsverteilungsfehlern in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
+So entsperren Sie dieses Problem und setzen die Bestellung auf den *Entwurf* -Zustand zurück. Gehen Sie zu **Beschaffung \> Periodische Aufgaben \> Bereinigen \> Zurücksetzen der Bestellverteilung**. Weitere Informationen finden Sie im folgenden Blog-Beitrag: [Beheben von Bestellungsverteilungsfehlern in Dynamics 365 Supply Chain Management](https://cloudblogs.microsoft.com/dynamics365/it/2020/08/12/resolve-po-distribution-errors-in-dynamics-365-supply-chain-management/).
 
 ## <a name="i-cant-consolidate-multiple-product-receipts-into-a-single-purchase-order"></a>Ich kann nicht mehrere Produktzugänge in einer einzigen Bestellung zusammenfassen.
 
@@ -58,7 +58,7 @@ Wenn ein Produktzugang storniert wird, können Transaktionen auf gesperrte Sachk
 
 Das folgende Verfahren veranschaulicht eine Möglichkeit, das Problem zu reproduzieren.
 
-1. Stellen Sie auf der **Lieferantenparameter**-Seite auf der Registerkarte **Allgemeines** sicher, dass die **Produktzugang auf Sachkonto buchen**-Option auf *Ja* festgelegt ist.
+1. Stellen Sie auf der **Lieferantenparameter** -Seite auf der Registerkarte **Allgemeines** sicher, dass die **Produktzugang auf Sachkonto buchen** -Option auf *Ja* festgelegt ist.
 1. Erstellen Sie eine Bestellung und fügen Sie eine Bestellposition mit einer Menge von *1.000* für ein Produkt hinzu.
 1. Bestätigen Sie die Bestellung.
 1. Buchen Sie den Produktzugang und überprüfen Sie die Gutscheine.
@@ -72,26 +72,26 @@ Transaktionen können auf die gesperrten Sachkonten gebucht werden, wenn Produkt
 
 ## <a name="a-product-receipt-voucher-number-is-consumed-even-if-no-financial-voucher-is-generated-during-product-receipt"></a>Eine Produktzugangs-Belegnummer wird verbraucht, auch wenn während des Produktzugangs kein Finanzbeleg generiert wird.
 
-Wenn die **Verbindlichkeiten bei Produktzugang abgrenzen**-Option für die Artikelmodellgruppe auf *Nein* festgelegt ist, werden keine Buchungen im Hauptbuch vorgenommen. Ein physisches Ereignis wird jedoch zum Zwecke der Abrechnung in einem Nebenbuch aufgezeichnet, und für dieses Ereignis ist eine Belegnummer erforderlich. Diese Belegnummer ist die Belegnummer, auf die in den Bestandstransaktionen verwiesen wird.
+Wenn die **Verbindlichkeiten bei Produktzugang abgrenzen** -Option für die Artikelmodellgruppe auf *Nein* festgelegt ist, werden keine Buchungen im Hauptbuch vorgenommen. Ein physisches Ereignis wird jedoch zum Zwecke der Abrechnung in einem Nebenbuch aufgezeichnet, und für dieses Ereignis ist eine Belegnummer erforderlich. Diese Belegnummer ist die Belegnummer, auf die in den Bestandstransaktionen verwiesen wird.
 
-Wir empfehlen Ihnen, die **Verbindlichkeiten bei Produktzugang abgrenzen**-Option auf *Ja* festzulegen, wie im folgenden Blogbeitrag beschrieben: [Sonstige Zuschläge zum Zeitpunkt des Produktzugangs buchen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
+Wir empfehlen Ihnen, die **Verbindlichkeiten bei Produktzugang abgrenzen** -Option auf *Ja* festzulegen, wie im folgenden Blogbeitrag beschrieben: [Sonstige Zuschläge zum Zeitpunkt des Produktzugangs buchen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
 
 ## <a name="the-post-to-charge-account-in-ledger-setting-isnt-turned-on"></a>Das Konto „Auf Belastungskonto im Sachkonto buchen“-Einstellung ist nicht aktiviert.
 
 ### <a name="issue-description"></a>Problembeschreibung
 
-Dieses Problem tritt auf, wenn eine Bestellung in Rechnung gestellt wird, wenn die **Auf Belastungskonto im Sachkonto buchen**-Option auf der **Rechnung**-Registerkarte der **Lieferantenparameter**-Seite auf *Ja* festgelegt ist.
+Dieses Problem tritt auf, wenn eine Bestellung in Rechnung gestellt wird, wenn die **Auf Belastungskonto im Sachkonto buchen** -Option auf der **Rechnung** -Registerkarte der **Lieferantenparameter** -Seite auf *Ja* festgelegt ist.
 
 ### <a name="reproduce-the-issue"></a>Reproduzieren Sie das Problem
 
 Das folgende Verfahren veranschaulicht eine Möglichkeit, das Problem zu reproduzieren.
 
 1. Wechseln Sie zu **Kreditoren \> Einstellung \> Kreditorenparameter**.
-1. Legen Sie auf der **Rechnung**-Registerkarte die **Auf Belastungskonto im Sachkonto buchen**-Option auf *Ja* fest.
+1. Legen Sie auf der **Rechnung** -Registerkarte die **Auf Belastungskonto im Sachkonto buchen** -Option auf *Ja* fest.
 1. Gehen Sie zu **Bestandsverwaltung \> Einrichten \> Buchung \> Buchung**.
-1. Stellen Sie auf der **Bestellung**-Registerkarte sicher, dass Sie alle Positionen in den Kaufausgaben für das Produkt gelöscht haben.
+1. Stellen Sie auf der **Bestellung** -Registerkarte sicher, dass Sie alle Positionen in den Kaufausgaben für das Produkt gelöscht haben.
 1. Wechseln Sie zu **Kreditorenkonten \> Bestellungen \> Alle Bestellungen**.
-1. Erstellen einer Bestellung. Wählen Sie in dem **Lieferantenkonto**-Feld *1001 Acme Büromaterial* aus.
+1. Erstellen einer Bestellung. Wählen Sie in dem **Lieferantenkonto** -Feld *1001 Acme Büromaterial* aus.
 1. Fügen Sie eine Bestellung mit den folgenden Einstellungen hinzu:
 
     - **Artikelnummer:** *D0011 Laserprojektor*
@@ -101,9 +101,9 @@ Das folgende Verfahren veranschaulicht eine Möglichkeit, das Problem zu reprodu
 
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Kauf** in der Gruppe **Aktion** auf **Bestätigen**.
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Empfangen** in der Gruppe **Generieren** auf **Produktzugang**.
-1. Geben Sie im **Buchen des Produktzugangs**-Dialogfeld im **Produktzugang**-Feld eine beliebige Zahl ein und wählen Sie dann **OK**.
+1. Geben Sie im **Buchen des Produktzugangs** -Dialogfeld im **Produktzugang** -Feld eine beliebige Zahl ein und wählen Sie dann **OK**.
 1. Wählen Sie im Aktivitätsbereich auf der Registerkarte **Rechnung** in der Gruppe **Generieren** **Rechnung** aus.
-1. Geben Sie im **Nummer**-Feld eine beliebige Nummer als Rechnungsnummer ein.
+1. Geben Sie im **Nummer** -Feld eine beliebige Nummer als Rechnungsnummer ein.
 1. Status des Abgleichs aktualisieren und buchen.
 1. Beachten Sie, dass Sie jetzt die folgende Fehlermeldung erhalten, wenn Sie eine Rechnung aus einer Bestellung erstellen: „Kontonummer für den Transaktionstyp Einkaufsausgaben für Produkt ist nicht vorhanden.“
 

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96ed6d01e22ee2cbc5b3b2be8168fbb43904c89
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 07426eee2a79f21d7e91a82a1832cfdb35fd8683
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3212709"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017344"
 ---
 # <a name="inventory-statuses"></a>Bestandsstatus
 
@@ -42,10 +42,10 @@ Beispiele für Methoden zur Verwendung von Bestandsstatus:
 
 Ein Bestandsstatus ist eine der Dimensionen in der Lagerdimensionsgruppe. Bestandsstatus können als verfügbar oder nicht verfügbar kategorisiert werden, und Sie können den Parameter **Sperrung von Lagerbestand** verwenden, um Artikel zu sperren, die einen Bestandsstatus von "nicht verfügbar" haben. Artikel mit einem gesperrten Status gelten als physischer Bestand und können nicht für einen Produktionsauftrag, einen Auftrag, einen Umlagerungsauftrag oder für eine ausgehende Transaktion verwendet werden.
 
-Sie können Lagerortartikel, die den Bestandsstatus verfügbar oder nicht verfügbar aufweisen, für eingehende Arbeit verwenden. Sie erstellen beispielsweise einen verfügbaren Status namens **Bereit**, einen nicht verfügbaren Status namens **Beschädigt** und einen gesperrten Status namens **Gesperrt**. Wenn Sie eine Bestellung für empfangene oder zurückgelieferte Artikel erstellen und irgendwelche Artikel beschädigt sind, können Sie den Lagerstatus dieser Artikel auf der Bestellposition auf **Beschädigt** ändern. Nach Erhalt dieser Artikel wird der Status automatisch auf **Gesperrt** gesetzt. Wenn Sie die beschädigten Artikel mit einem mobilen Gerät scannen, kann Supply Chain Management Lagerplatzdirektiven und Arbeitsvorlagen verwenden, um Informationen zu einem geeigneten Lagerplatz oder eine Reihe von Lagerplätzen anzeigen, wo Sie diese Artikel lagern können. Für zurückgelieferte Artikel wird der Seite **Lagerbuchungen** ein Abgangstyp **Reservierung** erstellt.
+Sie können Lagerortartikel, die den Bestandsstatus verfügbar oder nicht verfügbar aufweisen, für eingehende Arbeit verwenden. Sie erstellen beispielsweise einen verfügbaren Status namens **Bereit** , einen nicht verfügbaren Status namens **Beschädigt** und einen gesperrten Status namens **Gesperrt**. Wenn Sie eine Bestellung für empfangene oder zurückgelieferte Artikel erstellen und irgendwelche Artikel beschädigt sind, können Sie den Lagerstatus dieser Artikel auf der Bestellposition auf **Beschädigt** ändern. Nach Erhalt dieser Artikel wird der Status automatisch auf **Gesperrt** gesetzt. Wenn Sie die beschädigten Artikel mit einem mobilen Gerät scannen, kann Supply Chain Management Lagerplatzdirektiven und Arbeitsvorlagen verwenden, um Informationen zu einem geeigneten Lagerplatz oder eine Reihe von Lagerplätzen anzeigen, wo Sie diese Artikel lagern können. Für zurückgelieferte Artikel wird der Seite **Lagerbuchungen** ein Abgangstyp **Reservierung** erstellt.
 
 Für ausgehende Arbeit verwenden Sie Artikel, die den Bestandsstatus "verfügbar" aufweisen. Wenn Sie Artikel haben, die den Status **Beschädigt** aufweisen, und die Produktprogrammplan auf diese Artikel ausgeführt wird, werden die Artikel als fehlend betrachtet, und der Bestand wird automatisch aufgefüllt.
 
 Nachdem Sie Bestandsstatus eingerichtet haben, können Sie den standardmäßigen Bestandsstatus für einen Standort, einen Artikel und einen Lagerort festlegen. Sie können auch einen Standardstatus für Verkauf, Umlagerung und Bestellungen festlegen. Beim Standardstatus für Aufträge und ausgehende Umlagerungsaufträge kann die Option **Sperrung von Lagerbestand** nicht auf **Ja** festgelegt sein. Der Bestandsstatus, der von den Standardeinstellungen auf einem Standort, Lagerort, Artikel, einer Bestellung, einem Umlagerungsauftrag oder einem Auftrag übernommen wird, kann mit dem mobilen Gerät oder auf der Position für Bestellung, Auftrag oder Umlagerungsauftrag geändert werden.
 
-Um Disposition für Artikel mit einem verfügbaren Bestandsstatus zu planen, wählen Sie die Option **Disposition nach Dimensionen** für eine Lagerdimension auf der **Lagerdimensionsgruppen**-Seite aus. Wenn Sie den **Artikeldeckungs**-Assistenten öffnen, erscheinen Artikel mit einem verfügbaren Status auf der Seite **Status**. Um Deckungseinstellungen für diese Artikel zu erstellen, wählen Sie die Bestandsstatuskennung für die verfügbaren Bestandsstatus aus. Basierend auf den Deckungseinstellungen können Sie den Artikelbedarf berechnen und das Angebot und die Nachfrage der verfügbaren Artikeln während der Produktprogrammplanung planen. Sie können keine Artikeldeckungseinstellungen erstellen, die einen gesperrten Bestandsstatus aufweisen. Alternativ können Sie die Seite **Artikeldeckung** verwenden, um die Artikeldeckungsparameter zu erstellen oder zu ändern.
+Um Disposition für Artikel mit einem verfügbaren Bestandsstatus zu planen, wählen Sie die Option **Disposition nach Dimensionen** für eine Lagerdimension auf der **Lagerdimensionsgruppen** -Seite aus. Wenn Sie den **Artikeldeckungs** -Assistenten öffnen, erscheinen Artikel mit einem verfügbaren Status auf der Seite **Status**. Um Deckungseinstellungen für diese Artikel zu erstellen, wählen Sie die Bestandsstatuskennung für die verfügbaren Bestandsstatus aus. Basierend auf den Deckungseinstellungen können Sie den Artikelbedarf berechnen und das Angebot und die Nachfrage der verfügbaren Artikeln während der Produktprogrammplanung planen. Sie können keine Artikeldeckungseinstellungen erstellen, die einen gesperrten Bestandsstatus aufweisen. Alternativ können Sie die Seite **Artikeldeckung** verwenden, um die Artikeldeckungsparameter zu erstellen oder zu ändern.

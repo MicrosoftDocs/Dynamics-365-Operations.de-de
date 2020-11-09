@@ -18,18 +18,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3b04f78f2a8210837e16c8246609ad2fddd804f0
-ms.sourcegitcommit: 0dace221e8874021dd212271567666f717d39793
+ms.openlocfilehash: 5dbc856f21b6398109ab1ac4da409252050385df
+ms.sourcegitcommit: cb94f16d69455cbf6fd059f9f394e7623810c924
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "3071589"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4011578"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Erweiterte Formatierungsoptionen in der Finanzberichterstellung
 
 [!include [banner](../includes/banner.md)]
 
-Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar. 
+Wenn Sie einen Bericht in der Finanzberichterstellung erstellen, sind zusätzliche Formatierungsfunktionen, einschließlich Filter für Dimensionen, Einschränkungen für Spalten und Berichtseinheiten, nicht druckbare Zeilen und IF/THEN/ELSE-Anweisungen in Berechnungen, verfügbar.
 
 In der folgenden Tabelle finden Sie die erweiterten Formatierungsfunktionen, die verfügbar sind, wenn Sie Berichte entwerfen.
 
@@ -44,6 +44,7 @@ In der folgenden Tabelle finden Sie die erweiterten Formatierungsfunktionen, die
 | Verwenden Sie einfache Anführungszeichen (") und ein kaufmännisches Und-Zeichen (&) für Dimensionswerte | Sie könen Dimensionswerte einschließlich das kaufännische Und-Zeichens für Berichtsentwürfe verwenden. |
 
 ## <a name="advanced-cell-placement"></a>Erweiterte Zellenplatzierung
+
 Erweiterte Zellenplatzierung oder *Erzwingen* betrifft die Platzierung von bestimmten Werten in bestimmten Zellen. Beispielsweise wird das Erzwingen häufig verwendet, um den korrekten Saldo in einer Cashflowaufstellung zu verschieben. Sie können das Erzwingen für folgende Zwecke verwenden:
 
 - Verschieben Sie Werte aus Microsoft Excel in bestimmte Zellen.
@@ -52,19 +53,21 @@ Erweiterte Zellenplatzierung oder *Erzwingen* betrifft die Platzierung von besti
 
 > [!NOTE]
 > In vielen Fällen müssen Sie Ihre Berichtsdefinition konfigurieren, sodass Spaltenberechnungen vor Zeilenberechnungen geleistet werden. Führen Sie zum Abschließen dieser Konfiguration die folgenden Schritte durch.
-> 
+>
 > 1. Im Berichts-Designer öffnen Sie die Berichtsdefinition.
 > 2. Wählen Sie auf der Registerkarte **Einstellungen** unter **Berechnungspriorität** die Option **Erst Spalte, dann Zeile berechnen** aus.
 
 ## <a name="designing-the-report"></a>Gestalten des Berichts
+
 Wenn Sie einen Bericht entwerfen, sollten Sie zunächst alle Detailzeilen erstellen, um sicherzustellen, dass die Werte wie erwartet miteinbezogen werden. Fügen Sie dann **NP** (kein Druck) Format überschreibt hinzu, um das Detail zu unterdrücken, das die endgültigen Werte umfasst.
 
 > [!IMPORTANT]
-> Wenn Sie den **CAL**-Formatcode in der Zeilendefinition verwenden, können Sie keinen Drilldown zu den Buchungsdetails durchführen.
+> Wenn Sie den **CAL** -Formatcode in der Zeilendefinition verwenden, können Sie keinen Drilldown zu den Buchungsdetails durchführen.
 
 Für das Erzwingen von Formeln verwenden Sie das folgende Format: &lt;Zielspalte&gt;=&lt;Ursprungsspalte&gt;.&lt;Zeilencode&gt;. Trennen Sie alle zusätzlichen Platzierungen für eine Zeile durch ein Komma und eine Leerstelle. Beispiel: D=C.190,E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Beispiele von erweiterten Formatierungsoptionen
+
 Das folgenden Beispiel zeigt, wie die Zeilendefinition und die Spaltendefinition formatiert wird, um einen grundlegenden Cashflowbericht (Beispiel 1) und einen statistischen Bericht (Beispiel 2) zu erzwingen.
 
 ### <a name="example-1-basic-forcing"></a>Beispiel 1: Grundlegendes Erzwingen
@@ -78,17 +81,17 @@ Die folgende Tabelle enthält ein Beispiel einer Zeilendefinition, die das grund
 | 160      |                                  |             |                             |                            |                              |
 | 190      |                                  |             |                             |                            |                              |
 
-> [!NOTE] 
+> [!NOTE]
 > Leere Spalten wurden von der vorherigen Tabelle zu Präsentationszwecken entfernt: Format-Außerkraftsetzung, normaler Saldo, Drucksteuerung, Spalten-Einschränkung werden nicht angezeigt.
 
 Die folgende Tabelle enthält ein Beispiel einer Spaltendefinition, die das grundlegende Erzwingen in einer Zeile verwendet.
 
-|                              | A:   | Mrd    | C:        | S      | E:      | Fr    |
+|           Formate             | K   | Mrd    | C        | S      | E      | Fr    |
 |------------------------------|-----|------|----------|--------|--------|------|
-| Kopfzeile 1                     |     |      |          |        |        |      |
-| Kopfzeile 2                     | A:   | Mrd    | C:        | S      | E:      | Fr    |
-| Kopfzeile 3                     |     |      |          |        |        |      |
-| Spaltentyp                  | ZEILE | BESCHR | FD       | FD     | FD     | KALK |
+| Überschrift 1                     |     |      |          |        |        |      |
+| Überschrift 2                     | K   | Mrd    | C        | S      | E      | Fr    |
+| Überschrift 3                     |     |      |          |        |        |      |
+| Spaltentyp                  | ROW | DESC | FD       | FD     | FD     | KALK |
 | Buchcode/Attributkategorie |     |      | ISTWERT   | ISTWERT | ISTWERT |      |
 | Geschäftsjahr                  |     |      | BASIS     | BASIS   | BASIS   |      |
 | Zeitraum                       |     |      | BASIS     | BASIS   | BASIS   |      |
@@ -113,15 +116,15 @@ Die folgende Tabelle enthält ein Beispiel einer Zeilendefinition, die das grund
 | 310      | Umsatz US                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |                                            |
 | 340      | Internationale Umsätze       | CAL         | D=C.220,E=C115,F=(C.220/C.115)  |                      |                |                                            |
 
-> [!NOTE] 
-> Leere Spalten wurden von der vorherigen Tabelle zu Präsentationszwecken entfernt: Die Saplten Drucksteuerung, Spalteneinschränkung und Zeilenbearbeiter werden nicht angezeigt.
+> [!NOTE]
+> Leere Spalten wurden von der vorherigen Tabelle für Präsentationszwecke entfernt: Die Saplten Drucksteuerung, Spalteneinschränkung und Zeilenbearbeiter werden nicht angezeigt.
 
 Die folgende Tabelle enthält ein Beispiel einer Spaltendefinition, die das grundlegende Erzwingen für einen statistischen Bericht verwendet.
 
-|                              | A:   | Mrd    | C:      | S            | E:     | Fr            |
+|    Formate                    | K   | Mrd    | C      | S            | E     | Fr            |
 |------------------------------|-----|------|--------|--------------|-------|--------------|
-| Kopfzeile 1                     | A:   | Mrd    | C:      | S            | E:     | Fr            |
-| Kopfzeile 2                     | -   | -    | Jahr bis dato    | Jährlicher Umsatz | Personal | $ pro Person |
+| Überschrift 1                     | K   | Mrd    | C      | S            | E     | Fr            |
+| Überschrift 2                     | -   | -    | Jahr bis dato    | Jährlicher Umsatz | Personal | $ pro Person |
 | Kopfzeile 3                     |     |      |        |              |       |              |
 | Spaltentyp                  | ZEILE | DESC | FD     | KALK         | KALK  | KALK         |
 | Buchcode/Attributkategorie |     |      | ISTWERT |              |       |              |
@@ -132,6 +135,7 @@ Die folgende Tabelle enthält ein Beispiel einer Spaltendefinition, die das grun
 | Spaltenbreite                 | 5   | 30   | 14     | 14           | 14    | 14           |
 
 ## <a name="restricting-a-row-to-a-specific-reporting-unit"></a>Beschränken einer Zeile auf eine bestimmte Berichtseinheit
+
 Wenn eine Berichtszeile auf eine bestimmte Berichtseinheit beschränkt ist, zeigt die Zeile die verknüpften Daten nur für die benannte Berichtseinheit und ignoriert die Daten für andere Berichtseinheiten in der Berichtsbaumstruktur. So können Sie eine Zeile erstellen, die Details für die gesamten Betriebskosten für eine bestimmte Abteilung bereitstellt. Ihr Bericht enthält möglicherweise doppelte Daten, wenn der Bericht sowohl die Berichtsbaumstruktur und eine Zeilendefinition enthält, die mehr als das natürliche Konto besitzt. Sie haben beispielsweise eine Berichtsbaumstruktur, die die sechs Abteilungen in der Organisation aufführt, und Sie haben auch eine Zeilendefinition, die eine bestimmte Kombination aus einem Konto und einer Abteilung in der Zeile aufführt. Wenn Sie den Bericht generieren, wird die bestimmte Kombination aus Konto und Abteilung für jede Ebene der Berichtsbaumstruktur gedruckt, auch wenn diese Abteilung möglicherweise nicht mit dem, was in der Struktur ist, übereinstimmt. Dieses Verhalten tritt auf, da die Zeile überschreibt, was in der Regel von der Berichtsdefinition gefiltert wird. Eine Möglichkeit, doppelte Daten zu vermeiden, besteht darin, eine Zeile auf eine bestimmte Berichtseinheit zu beschränken.
 
 > [!NOTE]
@@ -146,6 +150,7 @@ Wenn eine Berichtszeile auf eine bestimmte Berichtseinheit beschränkt ist, zeig
 5. Doppelklicken Sie auf die Zelle in der Spalte **Verknüpfung zu Finanzdimensionen** der beschränkten Zeile, und geben Sie dann die Verknüpfung zum Finanzdatensystem ein.
 
 ## <a name="selecting-print-control-in-a-row-definition"></a>Auswählen einer Drucksteuerelements einer Zeilendefinition
+
 Sie können Drucksteuerungcodes für jede Spalte angeben, indem Sie die Zelle **Drucksteuerelement** verwenden.
 
 ### <a name="add-print-control-codes-to-a-report-row"></a>So fügen Sie Drucksteuerungscodes einer Berichtszeile hinzu
@@ -182,13 +187,15 @@ In der folgenden Tabelle werden die bedingten Drucksteuerungscodes für eine Zei
 | CR                 | Druckt nur die Habensalden für diese Zeile |
 
 ## <a name="column-restriction-cell-in-a-row-definition"></a>Spalteneinschränkungszelle in einer Zeilendefinition
+
 Die Zelle **Spalteneinschränkung** in einer Zellendefinition hat mehrere Zwecke. Je nach Art der Zeile können Sie die Zelle **Spalteneinschränkung** verwenden, um eine der folgenden Funktionen anzugeben:
 
 - Die Zelle kann das Drucken von Zeilenbeträgen auf eine bestimmte Spalte beschränken. Diese Funktion ist hilfreich, wenn Sie eine tabellarische Bilanz erstellen.
 - Die Zelle kann die Spalte der Beträge angeben, die sortiert werden sollen.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Verwenden einer Berechnungsformel in einer Zeilendefinition
-Eine Berechnungsformel ist eine Zeilendefinition und kann die Operatoren **+**, **-**, **\***, und **/** entlhalten sowie die Anweisungen **IF/THEN/ELSE** Darüber hinaus kann eine Berechnung einzelne Zellen und absolute Beträge (Istzahlen, die in der Formel enthalten sind) beinhalten. Die Formel kann 1.024 Zeichen enthalten. Berechnungen können nicht auf die Zeilen angewendet werden, die Zellen vom Typ **Verknüpfung zu Finanzdimensionen** (FD) enthalten. Allerdings können Sie Berechnungen für fortlaufenden Zeilen einbeziehen, das Drucken dieser Zeilen unterdrücken und dann die Berechnungszeilen summieren.
+
+Eine Berechnungsformel ist eine Zeilendefinition und kann die Operatoren **+** , **-** , **\*** , und **/** entlhalten sowie die Anweisungen **IF/THEN/ELSE** Darüber hinaus kann eine Berechnung einzelne Zellen und absolute Beträge (Istzahlen, die in der Formel enthalten sind) beinhalten. Die Formel kann 1.024 Zeichen enthalten. Berechnungen können nicht auf die Zeilen angewendet werden, die Zellen vom Typ **Verknüpfung zu Finanzdimensionen** (FD) enthalten. Allerdings können Sie Berechnungen für fortlaufenden Zeilen einbeziehen, das Drucken dieser Zeilen unterdrücken und dann die Berechnungszeilen summieren.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatoren in einer Berechnungsformel
 
@@ -200,12 +207,12 @@ Eine Berechnungsformel verwendet komplexere Operatoren als eine Zeilengesamtform
 ### <a name="create-a-calculation-formula"></a>Erstellen einer Berechnungsformel
 
 1. Im Berichts-Designer klicken Sie auf die **Zeilendefinitionen** und öffnen dann die Zeilendefinition, um sie zu ändern.
-2. Doppelklicken Sie auf die Zelle **Formatcode**, und wählen Sie dann **CAL** aus.
+2. Doppelklicken Sie auf die Zelle **Formatcode** , und wählen Sie dann **CAL** aus.
 3. Geben Sie in die Zelle **Verwandte Formeln/Zeilen/Einheiten** die Berechnungsformel ein.
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Beispiel für eine Berechnungsformel für bestimmte Zeilen
 
-In diesem Beispiel bedeutet die Berechnungsformel **@100+@330**, dass der Betrag in Zeile 100 zum Betrag in Zeile 330 addiert wird. Zeilengesamtergebnis-Formel **340+370** fügt den Betrag in Zeile 340 zum Betrag in Zeile 370. (Der Betrag in Zeile 370 wird der Betrag aus der Berechnungsformel.)
+In diesem Beispiel bedeutet die Berechnungsformel **@100+@330** , dass der Betrag in Zeile 100 zum Betrag in Zeile 330 addiert wird. Zeilengesamtergebnis-Formel **340+370** fügt den Betrag in Zeile 340 zum Betrag in Zeile 370. (Der Betrag in Zeile 370 wird der Betrag aus der Berechnungsformel.)
 
 | Zeilencode | Beschreibung                 | Formatcode | Verwandte Formeln/Zeilen/Einheiten | Drucksteuerung | Zeilenmodifizierer | Mit Finanzdimensionen verknüpfen |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
@@ -216,11 +223,11 @@ In diesem Beispiel bedeutet die Berechnungsformel **@100+@330**, dass der Betrag
 Wenn die Zeile in einer Zeilendefinition den Formatcode **CAL** hat und Sie geben eine mathematische Berechnung in die Zelle **Verwandte Formeln/Zeilen/Einheiten** ein, müssen Sie auch den Buchstaben der zugeordneten Spalte und Zeile im Bericht eingeben. Geben Sie **A.120** ein, um Spalte "A", Zeile 120 anzugeben. Sie können auch ein @-Zeichen verwenden, um alle Spalten anzugeben. Geben Sie z. B. **@120** ein, um alle Spalten in Zeile 120 anzugeben. Mathematische Berechnungen, die nicht über einen Spaltenbuchstaben oder ein @-Zeichens erfolgen werden als reelle Zahl angesehen.
 
 > [!NOTE]
-> Wenn Sie einen Bezeichungszeilencode nutzen, um eine Zeile zu referenzieren, müssen Sie einen Punkt (.) als Trennzeichen zwischen dem Spaltenbuchstaben und der Bezeichnung verwenden (beispielsweise **A.GROSS\_MARGIN/A.SALES**). Wenn Sie ein At-Zeichen (@) verwenden, ist ein Trennzeichen nicht erforderlich (z.B. **\@GROSS\_MARGIN/@SALES**).
+> Wenn Sie einen Bezeichungszeilencode nutzen, um eine Zeile zu referenzieren, müssen Sie einen Punkt (.) als Trennzeichen zwischen dem Spaltenbuchstaben und der Bezeichnung verwenden (beispielsweise **A.GROSS\_MARGIN/A.SALES** ). Wenn Sie ein At-Zeichen (@) verwenden, ist ein Trennzeichen nicht erforderlich (z.B. **\@GROSS\_MARGIN/@SALES** ).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Beispiel für eine Berechnungsformel für eine bestimmte Spalte
 
-In diesem Beispiel bedeutet die Berechnungsformel **E=C.340**, dass die Berechnung in der Zelle in Spalte C, Zeile 340, ausschließlich auf Spalte E ausgeführt wird.
+In diesem Beispiel bedeutet die Berechnungsformel **E=C.340** , dass die Berechnung in der Zelle in Spalte C, Zeile 340, ausschließlich auf Spalte E ausgeführt wird.
 
 > [!NOTE]
 > Wenn Sie eine Spalte in einer Berechnungsformel referenzieren, ist ein At-Zeichen (@) nicht erforderlich.
@@ -235,8 +242,8 @@ In diesem Beispiel bedeutet die Berechnungsformel **E=C.340**, dass die Berechnu
 
 Wenn Sie eine Zahl oder eine Berechnung in einer Spalte einer bestimmten Zeile ändern, jedoch keine Auswirkungen auf andere Spalten im Bericht haben möchten, können Sie **CAL** (Berechnung) in der Spalte **Formatcode** der Zeilendefinition angeben.
 
-- Um eine Berechnung für alle (**FD**)-Spalten des Berichts vorzunehmen, geben Sie keine Spaltenzuweisung ein.
-- Um eine Formel auf bestimmte Spalten einzuschränken, geben Sie den Spaltenbuchstaben, ein Gleichheitszeichen (**=**) und dann die Formel ein.
+- Um eine Berechnung für alle ( **FD** )-Spalten des Berichts vorzunehmen, geben Sie keine Spaltenzuweisung ein.
+- Um eine Formel auf bestimmte Spalten einzuschränken, geben Sie den Spaltenbuchstaben, ein Gleichheitszeichen ( **=** ) und dann die Formel ein.
 - Sie können mehrere Spalten angeben. Wenn Sie ein At-Zeichen (@) mit bestimmter Spaltenplatzierung verwenden, wird das At-Zeichen (@) der Zeile zugeordnet.
 - Sie können mehrere Spaltenformeln in einer Zeile eingeben. Trennen Sie die Formeln durch Kommas.
 
@@ -250,34 +257,34 @@ Wenn Sie eine Zahl oder eine Berechnung in einer Spalte einer bestimmten Zeile �
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>IF/THEN/ELSE-Anweisungen in einer Zeilendefinition
 
-**IF/THEN/ELSE**-Anweisungen können zu einer gültigen Berechnung hinzugefügt werden und mit dem Format **CAL** verwendet werden. Sie geben **IF/THEN/ELSE**-Berechnungsformeln in die Zelle in der Spalte **Verwandte Formeln/Zeilen/Einheiten** ein. **IF/THEN/ELSE** Berechnungsformeln nutzen das folgende Format: IF &lt;true/false statement&gt; THEN &lt;formula&gt; ELSE &lt;formula&gt; Der **ELSE &lt;Formel&gt;** tiel des Berichts ist optional.
+**IF/THEN/ELSE** -Anweisungen können zu einer gültigen Berechnung hinzugefügt werden und mit dem Format **CAL** verwendet werden. Sie geben **IF/THEN/ELSE** -Berechnungsformeln in die Zelle in der Spalte **Verwandte Formeln/Zeilen/Einheiten** ein. **IF/THEN/ELSE** Berechnungsformeln nutzen das folgende Format: IF &lt;true/false statement&gt; THEN &lt;formula&gt; ELSE &lt;formula&gt; Der **ELSE &lt;Formel&gt;** tiel des Berichts ist optional.
 
 #### <a name="if-statements"></a>IF-Anweisungen
 
-Die Anweisung, die der **IF**-Anweisung folgt, kann jede Anweisung sein, die als „true“ oder „false“ ausgewertet werden kann. Die Anweisung, die der **IF**-Anweisung folgt, kann eine einfache Auswertung oder eine komplexe Anweisung mit mehreren Ausdrücken enthalten. Nachfolgend finden Sie einige Beispiele:
+Die Anweisung, die der **IF** -Anweisung folgt, kann jede Anweisung sein, die als „true“ oder „false“ ausgewertet werden kann. Die Anweisung, die der **IF** -Anweisung folgt, kann eine einfache Auswertung oder eine komplexe Anweisung mit mehreren Ausdrücken enthalten. Nachfolgend finden Sie einige Beispiele:
 
 - **IF A.200&gt;0** (Einfache Auswertung)
 - **IF A.200&gt;0 AND A.200&lt;10,000** (Komplexe Anweisung)
 - **IF A.200&gt;10000 OR ((A.340/B.1200)\*2 &lt;1200)** (Komplexe Anweisung mit mehreren Ausdrücken)
 
-Der Begriff **Perioden** in einer **IF**-Anweisung gibt die Anzahl der Perioden für den Bericht an. Der Begriff wird in der Regel verwendet, um einen Durchschnitt für den Zeitraum Jahr bis dato zu berechnen. Wenn Sie beispielsweise einen Bericht für den Zeitraum 7 Jahr bis dato ausführen, bedeutet **B.150/Zeiträume**, dass der Wert in Zeile 150 der Spalte B durch 7 geteilt wird.
+Der Begriff **Perioden** in einer **IF** -Anweisung gibt die Anzahl der Perioden für den Bericht an. Der Begriff wird in der Regel verwendet, um einen Durchschnitt für den Zeitraum Jahr bis dato zu berechnen. Wenn Sie beispielsweise einen Bericht für den Zeitraum 7 Jahr bis dato ausführen, bedeutet **B.150/Zeiträume** , dass der Wert in Zeile 150 der Spalte B durch 7 geteilt wird.
 
 #### <a name="then-and-else-formulas"></a>THEN- und ELSE-Formeln
 
-Die Formeln **THEN** und **ELSE** können eine beliebige gültige Berechnung sein, von sehr einfachen Wertzuweisungen bis hin zu komplexen Formeln. Beispielsweise bedeutet die Anweisung **IF A.200&gt;0 THEN A=B.200** "wenn der Wert in der Zelle in Spalte A der Zeile 200 größer ist als 0 (Null), übertrage den Wert der Zelle in Spalte B der Zeile 200 in die Zelle in Spalte A der aktuellen Zeile“. Die vorangehende **IF/THEN**-Anweisung trägt einen Wert in eine Spalte der aktuellen Zeile ein. Sie können jedoch ein At-Zeichen (@) entweder in true/false-Anweisungen oder die Formel eingeben, um alle Spalten darzustellen. Nachfolgend einige andere Beispiele, die in den folgenden Abschnitten beschrieben werden:
+Die Formeln **THEN** und **ELSE** können eine beliebige gültige Berechnung sein, von sehr einfachen Wertzuweisungen bis hin zu komplexen Formeln. Beispielsweise bedeutet die Anweisung **IF A.200&gt;0 THEN A=B.200** "wenn der Wert in der Zelle in Spalte A der Zeile 200 größer ist als 0 (Null), übertrage den Wert der Zelle in Spalte B der Zeile 200 in die Zelle in Spalte A der aktuellen Zeile“. Die vorangehende **IF/THEN** -Anweisung trägt einen Wert in eine Spalte der aktuellen Zeile ein. Sie können jedoch ein At-Zeichen (@) entweder in true/false-Anweisungen oder die Formel eingeben, um alle Spalten darzustellen. Nachfolgend einige andere Beispiele, die in den folgenden Abschnitten beschrieben werden:
 
-- **IF A.200 &gt;0 THEN B.200**: Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus der Zelle B.200 in jede Spalte der aktuellen Zeile platziert.
-- **IF A.200 &gt;0 THEN @200**: Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus jeder Spalte in Zeile 200 in die entsprechende Spalte in der aktuellen Zeile platziert.
-- **IF @200 &gt;0 THEN @200**: Wenn der Wert in Zeile 200 der aktuellen Spalte positiv ist, wird der Wert von Zeile 200 in die gleiche Spalte in der aktuellen Zeile platziert.
+- **IF A.200 &gt;0 THEN B.200** : Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus der Zelle B.200 in jede Spalte der aktuellen Zeile platziert.
+- **IF A.200 &gt;0 THEN @200** : Wenn der Wert in der Zelle A.200 positiv ist, wird der Wert aus jeder Spalte in Zeile 200 in die entsprechende Spalte in der aktuellen Zeile platziert.
+- **IF @200 &gt;0 THEN @200** : Wenn der Wert in Zeile 200 der aktuellen Spalte positiv ist, wird der Wert von Zeile 200 in die gleiche Spalte in der aktuellen Zeile platziert.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Beschränken einer Berechnung auf eine Berichtseinheit in einer Zeilendefinition
 
-Um eine Berechnung auf eine einzelne Berichtseinheit in einer Berichtsbaumstruktur zu beschränken, sodass der resultierende Betrag nicht in einer Einheit auf höherer Ebene zusammengefasst ist, verwenden Sie den **@Unit**-Code in den Zellen **Verwandte Formeln/Zeilen/Einheiten** in der Zeilendefinition. Der **@Unit**-Code wird in der Spalte B der Berichtsbaumstruktur **Einheitenname** aufgeführt. Wenn Sie den Code **@Unit** verwenden, wird für die Werte kein Rollup durchgeführt, aber die Berechnung wird auf allen Ebenen aus der Berichtsbaumstruktur ausgewertet.
+Um eine Berechnung auf eine einzelne Berichtseinheit in einer Berichtsbaumstruktur zu beschränken, sodass der resultierende Betrag nicht in einer Einheit auf höherer Ebene zusammengefasst ist, verwenden Sie den **@Unit** -Code in den Zellen **Verwandte Formeln/Zeilen/Einheiten** in der Zeilendefinition. Der **@Unit** -Code wird in der Spalte B der Berichtsbaumstruktur **Einheitenname** aufgeführt. Wenn Sie den Code **@Unit** verwenden, wird für die Werte kein Rollup durchgeführt, aber die Berechnung wird auf allen Ebenen aus der Berichtsbaumstruktur ausgewertet.
 
 > [!NOTE]
 > Zur Verwendung dieser Funktion, muss eine Berichtsbaumstruktur zu einer Zeilendefinition zugeordnet sein.
 
-Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verweisen. Die Berechnung wird in der Zelle **Verwandte Formeln/Zeilen/Einheiten** der Zeilendefinition und der Finanzdatentypeinschränkung erfasst. Die Berechnung muss eine bedingte Berechnung verwenden, die mit einer **IF @Unit**-Konstruktion beginnt. Beispiel: IF @Unit(SALES) THEN @100 ELSE 0. Diese Berechnung enthält die Beträge aus Zeile 100 in jeder Spalte des Berichts, aber nur für die Verkaufseinheit. Wenn mehrere Einheiten SALES benannt sind, wird der Betrag in jeder dieser Einheiten angezeigt. Darüber hinaus kann Zeile 100 eine Finanzdatenzeile sein und kann als NP (kein Druck) definiert werden. In diesem Fall wird das Anzeigen des Betrags in allen Einheiten der Struktur verhindert. Sie können den Betrag auf eine einzelne Spalte des Berichts beschränken, beispielsweise Spalte H, indem Sie eine Spalteneinschränkung nutzen, um den Wert nur in dieser Spalte des Berichts zu drucken. Sie können auch **OR**-Kombinationen in eine **IF**-Anweisung einschließen. Beispiel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Sie können eine Einheit in einer Berechnungstypeinschränkung auf verschiedenen Wegen angeben:
+Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verweisen. Die Berechnung wird in der Zelle **Verwandte Formeln/Zeilen/Einheiten** der Zeilendefinition und der Finanzdatentypeinschränkung erfasst. Die Berechnung muss eine bedingte Berechnung verwenden, die mit einer **IF @Unit** -Konstruktion beginnt. Beispiel: IF @Unit(SALES) THEN @100 ELSE 0. Diese Berechnung enthält die Beträge aus Zeile 100 in jeder Spalte des Berichts, aber nur für die Verkaufseinheit. Wenn mehrere Einheiten SALES benannt sind, wird der Betrag in jeder dieser Einheiten angezeigt. Darüber hinaus kann Zeile 100 eine Finanzdatenzeile sein und kann als NP (kein Druck) definiert werden. In diesem Fall wird das Anzeigen des Betrags in allen Einheiten der Struktur verhindert. Sie können den Betrag auf eine einzelne Spalte des Berichts beschränken, beispielsweise Spalte H, indem Sie eine Spalteneinschränkung nutzen, um den Wert nur in dieser Spalte des Berichts zu drucken. Sie können auch **OR** -Kombinationen in eine **IF** -Anweisung einschließen. Beispiel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Sie können eine Einheit in einer Berechnungstypeinschränkung auf verschiedenen Wegen angeben:
 
 - Geben Sie einen Einheitsnamen ein, um Einheiten mit einzubeziehen, die übereinstimmen. Beispiel: **IF @UNIT(SALES)** ermöglicht die Berechnung für jede Einheit namens SALES, auch wenn es mehrere SALES-Einheiten (Verkaufseinheiten) in der Berichtsbaumstruktur gibt.
 - Geben Sie den Unternehmens- und Einheitsnamen ein, um die Berechnung auf bestimmte Einheiten in einem bestimmten Unternehmen zu beschränken. Beispiel: Geben Sie **IF @Unit(ACME:SALES** ein, um die Berechnung auf Verkaufseinheiten im Unternehmen ACME zu beschränken.
@@ -288,19 +295,19 @@ Die Berechnungszeile kann auf eine Berechnungszeile oder Finanzdatenzeile verwei
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Einschränken einer Berechnung auf eine Berichtseinheit
 
-1. Klicken Sie im Berichts-Designer auf **Zeilendefinitionen**, und öffnen Sie dann die zu ändernde Zeilendefinition.
-2. Doppelklicken Sie auf die Zelle **Formatcode**, und wählen Sie dann **CAL** aus.
-3. Klicken Sie auf die Zelle **Verwandte Formeln/Zeilen/Einheiten**, und geben Sie dann eine bedingte Berechnung ein, die mit einer **IF @Unit**-Konstruktion beginnt.
+1. Klicken Sie im Berichts-Designer auf **Zeilendefinitionen** , und öffnen Sie dann die zu ändernde Zeilendefinition.
+2. Doppelklicken Sie auf die Zelle **Formatcode** , und wählen Sie dann **CAL** aus.
+3. Klicken Sie auf die Zelle **Verwandte Formeln/Zeilen/Einheiten** , und geben Sie dann eine bedingte Berechnung ein, die mit einer **IF @Unit** -Konstruktion beginnt.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-Anweisungen in einer Spaltendefinition
 
-Eine **IF/THEN/ELSE**-Anweisung ermöglicht, dass eine Berechnung von den Ergebnissen aus einer anderen Spalte abhängt. Sie können auf andere Spalten verweisen; ein Verweis auf eine Berichtszelle in der **IF**-Anweisung ist jedoch nicht möglich. Jede Berechnung muss auf die gesamte Spalte angewendet werden. Die Anweisung **IF B&gt;100 THEN B ELSE C\*1.25** bedeutet beispielsweise „Wenn der Betrag in Spalte B größer ist als 100, platziere den Wert aus der Spalte B in die Spalte **CALC**. Wenn der Betrag in der Spalte B nicht mehr als 100 ist, multipliziere den Wert in der Spalte C mit 1,25, und platziere das Ergebnis in die Spalte **KALK**." Nach der **IF**-Anweisung muss immer eine logische Anweisung folgen, die als „true“ oder „false“ ausgewertet werden kann. Die Formeln, die Sie für die Anweisungen **THEN** und **ELSE** verwenden, können Referenzen auf eine beliebige Zahl an Spalten enthalten. Die Formeln können so komplex sein, wie Sie es möchten.
+Eine **IF/THEN/ELSE** -Anweisung ermöglicht, dass eine Berechnung von den Ergebnissen aus einer anderen Spalte abhängt. Sie können auf andere Spalten verweisen; ein Verweis auf eine Berichtszelle in der **IF** -Anweisung ist jedoch nicht möglich. Jede Berechnung muss auf die gesamte Spalte angewendet werden. Die Anweisung **IF B&gt;100 THEN B ELSE C\*1.25** bedeutet beispielsweise „Wenn der Betrag in Spalte B größer ist als 100, platziere den Wert aus der Spalte B in die Spalte **CALC**. Wenn der Betrag in der Spalte B nicht mehr als 100 ist, multipliziere den Wert in der Spalte C mit 1,25, und platziere das Ergebnis in die Spalte **KALK**." Nach der **IF** -Anweisung muss immer eine logische Anweisung folgen, die als „true“ oder „false“ ausgewertet werden kann. Die Formeln, die Sie für die Anweisungen **THEN** und **ELSE** verwenden, können Referenzen auf eine beliebige Zahl an Spalten enthalten. Die Formeln können so komplex sein, wie Sie es möchten.
 
 > [!NOTE]
 > Sie können die Ergebnisse einer Berechnung in keine andere Spalte einfügen. Die Ergebnisse müssen in der Spalte sein, die die Formel enthält.
 
 #### <a name="use-single-quotes-and-an-ampersand-for-dimension-values-in-a-row-column-or-tree"></a>Verwenden Sie einfache Anführungszeichen (") und ein kaufmännisches Und-Zeichen (&) in einer Zeile, Spalte oder Struktur
 
-Sie können Berichte mithilfe von Dimensionswerten entwerfen, die ein kaufmännisches Und-Zeichen (&) enthalten. 
+Sie können Berichte mithilfe von Dimensionswerten entwerfen, die ein kaufmännisches Und-Zeichen (&) enthalten.
 
-Innerhalb eines beliebigen Feld **Link zur Finanzdimension** können Sie einen Wert wie beispielsweise **GuV** eingeben. Das Einschließen von einfachen Anführungszeichen ('') auf beiden Seiten des Dimensionswert gibt an, dass Sie den Literalwert verwenden, wie beispielsweise das Einschließen des kaufmännischen Und-Zeichens (&). 
+Innerhalb eines beliebigen Feld **Link zur Finanzdimension** können Sie einen Wert wie beispielsweise **GuV** eingeben. Das Einschließen von einfachen Anführungszeichen ('') auf beiden Seiten des Dimensionswert gibt an, dass Sie den Literalwert verwenden, wie beispielsweise das Einschließen des kaufmännischen Und-Zeichens (&).

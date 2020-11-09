@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: e4ee3bf07a1df445875197f38f655464cc9b44d3
-ms.sourcegitcommit: cf709f1421a0bf66ecea493088ecb4eb08004187
+ms.openlocfilehash: 4d0ca1fb4b7a4964194516544686b6bb7d26e76c
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "3443848"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997325"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Probleme bei der anfänglichen Synchronisierung behandeln
 
@@ -113,7 +112,7 @@ Wenn Sie Datensätze mit Werten in der Lieferantenentität in den Feldern **Prim
 1. In der Finance and Operations App löschen Sie die **PrimaryContactPersonId** und **InvoiceVendorAccountNumber** Felder aus der Zuordnung und speichern Sie die Änderungen.
 
     1. Navigieren Sie zur Zuordnungsseite duales Schreiben für **Lieferant V2 (msdyn\_vendors)** und wählen Sie die Registerkarte **Entitätszuordnungen** und wählen Sie im linken Filter **Finance and Operations Apps.Vendors V2**. Wählen Sie im rechten Filter **Sales.Vendor**.
-    2. Suchen Sie nach **Hauptkontaktperson**, um das Quellfeld zu finden **PrimaryContactPersonId**.
+    2. Suchen Sie nach **Hauptkontaktperson** , um das Quellfeld zu finden **PrimaryContactPersonId**.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
         ![Löschen des Felds PrimaryContactPersonId](media/vend_selfref3.png)
@@ -160,7 +159,7 @@ Wenn Sie Datensätze mit Werten in der Lieferantenentität in den Feldern **Cont
 1. In der Finance and Operations App löschen Sie Felder **ContactPersonID** und **InvoiceAccount** aus der Zuordnung **Kunden V3 (Konten)** und speichern Sie dann die Zuordnung.
 
     1. Navigieren Sie zur Zuordnungsseite duales Schreiben für **Kunden V3 (Konten)** und wählen Sie die Registerkarte **Entitätszuordnungen**. Wählen Sie im linken Filter **Finance and Operations Apps.Customers V3**. Wählen Sie im rechten Filter **Common Data Service Konto**.
-    2. Suchen Sie nach **contactperson**, um das Quellfeld **ContactPersonID** zu finden.
+    2. Suchen Sie nach **contactperson** , um das Quellfeld **ContactPersonID** zu finden.
     3. Wählen Sie **Aktionen** und dann **Löschen**.
 
         ![Löschen des Felds ContactPersonId](media/cust_selfref3.png)
@@ -203,7 +202,7 @@ Wenn Sie Datensätze mit Werten in der Lieferantenentität in den Feldern **Cont
 
         > [HINWEIS] Wenn die Schaltfläche Filter nicht vorhanden ist, erstellen Sie ein Support-Ticket, um das Datenintegrationsteam zu bitten, die Filterfunktion für Ihren Mandanten zu aktivieren.
 
-        Wenn Sie keine Filterabfrage für **\_msdyn\_company\_value**, dann werden alle Datensätze synchronisiert.
+        Wenn Sie keine Filterabfrage für **\_msdyn\_company\_value** , dann werden alle Datensätze synchronisiert.
 
         ![Hinzufügen einer Filterabfrage](media/cust_selfref7.png)
 

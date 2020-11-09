@@ -8,7 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence
+ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d2997a39311e371443de3bc11ace17ab36be20e8
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: 3119b6e93bc1f09c068fa599ec5ea2d0b23906a1
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383572"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016723"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Einen Min-Max-Auffüllungsprozess einrichten
 
@@ -68,10 +68,10 @@ Diese Prozedur zeigt Ihnen an, wie ein neuer Auffüllungsprozess eingerichtet wi
 3. Klicken Sie im **Aktivitätsbereich** auf **Neu**.
 4. Geben Sie in das Feld **Arbeitsvorlage** einen Wert ein.
 5. Klicken Sie auf **Speichern**.
-6. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu**:
+6. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu** :
 7. Wählen Sie im Feld **Arbeitstyp** die Option „Entnahme“ aus.
 8. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein, oder wählen Sie einen Wert aus. Diese sollte eine Arbeitsklasse sein, die der Auffüllung zugeordnet ist. Wenn Sie USMF erwenden, wählen Sie „Auffüllen“ aus.  
-9. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu**:
+9. Im Abschnitt **Arbeitsvorlagendetails** klicken Sie auf **Neu** :
 10. Markieren Sie in der Liste die ausgewählte Zeile.
 11. Wählen Sie im Feld **Arbeitstyp** die Option 'Einlagern'.
 12. Geben Sie im Feld **Arbeitsklassenkennung** einen Wert ein, oder wählen Sie einen Wert aus.

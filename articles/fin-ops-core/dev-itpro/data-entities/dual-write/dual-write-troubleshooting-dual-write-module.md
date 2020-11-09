@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 853791d5ffc1d92b9fbafa2acc13cd5543c38196
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: f99f3760e75ec1bbf2ccdea497cf2eec3e28e233
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275532"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997373"
 ---
 # <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>Probleme mit dem Modul für duales Schreiben in Finance and Operations-Apps behandeln
 
@@ -37,7 +36,7 @@ Dieses Thema enthält Problembehandlungsinformationen zur dualen Schreibintegrat
 
 ## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Sie können das Modul Duales Schreiben in der Finance and Operations App nicht laden
 
-Wenn Sie die Seite **Duales Schreiben** nicht öffnen können durch Auswahl der Kachel **Duales Schreiben** im Arbeitsbereich **Datenmverwaltung**, ist der Datenintegrationsdienst wahrscheinlich ausgefallen. Erstellen Sie ein Support-Ticket, um einen Neustart des Datenintegrationsdienstes anzufordern.
+Wenn Sie die Seite **Duales Schreiben** nicht öffnen können durch Auswahl der Kachel **Duales Schreiben** im Arbeitsbereich **Datenmverwaltung** , ist der Datenintegrationsdienst wahrscheinlich ausgefallen. Erstellen Sie ein Support-Ticket, um einen Neustart des Datenintegrationsdienstes anzufordern.
 
 ## <a name="error-when-you-try-to-create-a-new-entity-map"></a>Fehler beim Versuch, eine neue Entitätszuordnung zu erstellen
 
@@ -62,7 +61,7 @@ Um das Problem zu beheben, melden Sie sich über ein InPrivate-Fenster bei Micro
 
 Beim Verknüpfen oder Erstellen von Zuordnungen kann der folgende Fehler auftreten:
 
-*Antwortstatuscode zeigt keinen Erfolg an: 403 (Token-Austausch).<br> Sitzungs-ID: \<Ihre Sitzungs-ID\><br> Stammaktivitäts-ID: \<Ihre Stammaktivitäts-ID\>*
+*Antwortstatuscode zeigt keinen Erfolg an: 403 (Token-Austausch).<br> Sitzungs-ID: \<your session id\><br> Stammaktivitäts-ID: \<your root activity id\>*
 
 Dieser Fehler kann auftreten, wenn Sie nicht über ausreichende Berechtigungen verfügen, um Duales Schreiben zu verknüpfen oder Zuordnungen zu erstellen. Dieser Fehler kann auch auftreten, wenn die Common Data Service-Umgebung zurückgesetzt wurde, ohne die Verknüpfung zum dualen Schreiben aufzuheben. Jeder Benutzer mit Systemadministratorrolle in Finance and Operations-Apps und Common Data Service kann die Umgebungen verbinden. Nur der Benutzer, der die duale Schreibverbindung eingerichtet hat, kann neue Entitätszuordnungen hinzufügen. Nach dem Setup kann jeder Benutzer mit Systemadministratorrolle den Status überwachen und die Zuordnungen bearbeiten.
 
@@ -85,4 +84,4 @@ Möglicherweise wird eine Fehlermeldung wie die folgende angezeigt, wenn Sie ver
 Die Behebung dieses Fehlers hängt von der Fehlerursache ab:
 
 + Wenn die Zuordnung abhängige Zuordnungen enthält, müssen Sie die abhängigen Zuordnungen dieser Entitätszuordnung aktivieren.
-+ In der Zuordnung fehlen möglicherweise Quell- oder Zielfelder. Wenn ein Feld in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Entitätsfelder treten auf Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Wenn ein Feld in Common Data Service fehlt, dann klicken Sie in der Zuordnung auf die Schaltfläche **Entitäten aktualisieren**, damit die Felder automatisch wieder in die Zuordnung eingefügt werden.
++ In der Zuordnung fehlen möglicherweise Quell- oder Zielfelder. Wenn ein Feld in der Finance and Operations-App fehlt, dann befolgen Sie die Schritte im Abschnitt [Fehlende Entitätsfelder treten auf Zuordnungen auf](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Wenn ein Feld in Common Data Service fehlt, dann klicken Sie in der Zuordnung auf die Schaltfläche **Entitäten aktualisieren** , damit die Felder automatisch wieder in die Zuordnung eingefügt werden.

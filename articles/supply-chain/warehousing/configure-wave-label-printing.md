@@ -8,7 +8,7 @@ ms.topic: configure-wave-label-printing
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate
+ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: e3b04eea7bd7dd689f8a918820ffdb4a72d813dc
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1f51ed9f05caede3d4f320ddb6b705e67df9aa1f
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986022"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016953"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Wellenetikettendruck einrichten und verwenden
 
@@ -134,7 +134,7 @@ Das Etikettenlayout steuert, welche Informationen auf dem Etikett gedruckt werde
 
 1. Wenn Sie die Frachtbrief-ID ausdrucken möchten, wählen Sie auf der Registerkarte **Verknüpfungen** die Tabelle **Arbeitspositionen** aus, und verknüpften Sie die Tabelle **Lieferungen** damit.
 1. Schließen Sie das Abfrage-Editor-Dialogfeld.
-1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt**, **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
+1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt** , **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -200,7 +200,7 @@ Das Etikettenlayout steuert, welche Informationen auf dem Etikett gedruckt werde
     ```
 
     > [!NOTE]
-    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n**-Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
+    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n** -Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
 
 Ihr Etikett kann jetzt verwendet werden.
 
@@ -391,7 +391,7 @@ Mit Wellenvorlagen können Sie bestimmte Instanzen von Wellenmethoden mit einer 
 
 1. Wenn Sie die Frachtbrief-ID ausdrucken möchten, wählen Sie auf der Registerkarte **Verknüpfungen** die Tabelle **Arbeitspositionen** aus, und verknüpften Sie die Tabelle **Lieferungen** damit.
 1. Schließen Sie das Abfrage-Editor-Dialogfeld.
-1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt**, **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
+1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt** , **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -423,7 +423,7 @@ Mit Wellenvorlagen können Sie bestimmte Instanzen von Wellenmethoden mit einer 
     ```
 
     > [!NOTE]
-    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n**-Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
+    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n** -Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
 
 Ihr Etikett kann jetzt verwendet werden.
 
@@ -534,9 +534,9 @@ Um diesem Szenario zu folgen, müssen Demodaten installiert sein, und Sie müsse
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
 2. Wählen Sie eine Vorlage aus, wie beispielsweise **62 Lieferungsstandard**.
 3. Im Inforegister **Methoden** verschieben Sie die Methode **Wellenetikettendruck** zur Spalte **Ausgewählte Methoden**.
-4. In der Spalte **Ausgewählte Methoden** weisen Sie einen Wert **Wellenschrittcode**, wie z. B. *Karton*, der Methode **Wellenetikettendruck** zu. Weitere Informationen über Wellenschrittcodes finden Sie unter [Wellenschrittcodes](wave-step-codes.md).
+4. In der Spalte **Ausgewählte Methoden** weisen Sie einen Wert **Wellenschrittcode** , wie z. B. *Karton* , der Methode **Wellenetikettendruck** zu. Weitere Informationen über Wellenschrittcodes finden Sie unter [Wellenschrittcodes](wave-step-codes.md).
 5. Verschieben Sie die Methode **Wellenetikettendruck** ein zweites Mal zur Spalte **Ausgewählte Methoden**.
-6. In der Spalte **Ausgewählte Methoden** weisen Sie einen anderen **Wellenschrittcode**-Wert, wie z. B. *Palette*, der zweiten **Wellenetikettendruck**-Methode zu. Weitere Informationen über Wellenschrittcodes finden Sie unter [Wellenschrittcodes](wave-step-codes.md).
+6. In der Spalte **Ausgewählte Methoden** weisen Sie einen anderen **Wellenschrittcode** -Wert, wie z. B. *Palette* , der zweiten **Wellenetikettendruck** -Methode zu. Weitere Informationen über Wellenschrittcodes finden Sie unter [Wellenschrittcodes](wave-step-codes.md).
 
 ### <a name="create-three-wave-label-layouts"></a>Drei Wellenetikettenlayouts erstellen
 
@@ -583,7 +583,7 @@ Um diesem Szenario zu folgen, müssen Demodaten installiert sein, und Sie müsse
 
 1. Wenn Sie die Frachtbrief-ID ausdrucken möchten, wählen Sie auf der Registerkarte **Verknüpfungen** die Tabelle **Arbeitspositionen** aus, und verknüpften Sie die Tabelle **Lieferungen** damit. 
 1. Schließen Sie das Abfrage-Editor-Dialogfeld.
-1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt**, **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
+1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt** , **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
 
 
     ```plaintext
@@ -650,7 +650,7 @@ Um diesem Szenario zu folgen, müssen Demodaten installiert sein, und Sie müsse
     ```
 
     > [!NOTE]
-    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n**-Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
+    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n** -Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
 
 1. Das erste Etikett kann jetzt verwendet werden.
 1. Erstellen Sie einen zweiten Layoutdatensatz mit den folgenden Einstellungen:
@@ -695,7 +695,7 @@ Um diesem Szenario zu folgen, müssen Demodaten installiert sein, und Sie müsse
 
 1. Wenn Sie die Frachtbrief-ID ausdrucken möchten, wählen Sie auf der Registerkarte **Verknüpfungen** die Tabelle **Arbeitspositionen** aus, und verknüpften Sie die Tabelle **Lieferungen** damit.
 1. Schließen Sie das Abfrage-Editor-Dialogfeld.
-1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt**, **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
+1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt** , **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie Code für die erforderliche Kopfzeile ein. Wenn Sie beispielsweise Zebra-Drucker verwenden, können Sie den folgenden Code verwenden.
 
     ```plaintext
     CT~~CD,~CC^~CT~
@@ -724,7 +724,7 @@ Um diesem Szenario zu folgen, müssen Demodaten installiert sein, und Sie müsse
     ```
 
     > [!NOTE]
-    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n**-Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
+    > Durch dieses Setup wird eine Kopie jedes Etiketts gedruckt. Wenn Sie mehr Kopien benötigen (z. B. eine Kopie für jede Seite der Palette), legen Sie den **n** -Wert für den Abschnitt **\^PQn** in der Fußzeile auf die erforderliche Anzahl von Kopien fest. Um vier Kopien jedes Etiketts zu drucken, geben Sie beispielsweise **\^PQ4** an.
 
 1. Das zweite Etikett kann jetzt verwendet werden.
 1. Erstellen Sie einen dritten Layoutdatensatz mit den folgenden Einstellungen:
@@ -733,7 +733,7 @@ Um diesem Szenario zu folgen, müssen Demodaten installiert sein, und Sie müsse
     - **Beschreibung:** *Unterbrechungsetikett*
 
 1. Wählen Sie im Aktionsbereich **Speichern** aus.
-1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt**, **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie den ZPL-Code für die erforderliche Kopfzeile ein. Hier ist ein Beispiel.
+1. Das Inforegister **Druckertextlayout** besteht aus drei Abschnitten, in denen Sie Druckercode schreiben können: **Kopfzeilenabschnitt** , **Textabschnitt** und **Fußzeilenabschnitt**. Im Abschnitt **Kopfzeilenabschnitt** im Feld **Etikettenkopfzeile** geben Sie den ZPL-Code für die erforderliche Kopfzeile ein. Hier ist ein Beispiel.
 
     ```plaintext
     CT~~CD,~CC^~CT~

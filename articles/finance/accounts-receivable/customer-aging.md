@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 062e8972c879d770cc4106c2811cd4c16fff0446
-ms.sourcegitcommit: 25909c6ad3616e4f75a2fe006057dda18d7cc856
+ms.openlocfilehash: 5f3a1bba4596c7b645c20a790a6cbe8725ab665d
+ms.sourcegitcommit: e43aef72b7d65db1dcb014dfada5233ac051ba7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "3974860"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4013052"
 ---
 # <a name="customer-aging-report"></a>Debitorenfälligkeitsbericht 
 
@@ -115,8 +115,9 @@ Wenn dieser Bericht generiert wird, werden die folgenden Standardparameter angez
 <tr class="even">
 <td><p><strong>Druckrichtung</strong></p></td>
 <td><p>Wählen Sie aus, ob die Berechnung der Salden und das Drucken des Fälligkeitsberichts für vergangene oder zukünftige Perioden erfolgen soll. Die Datumsangaben werden relativ zum im Feld <strong>Saldo per</strong> ausgewählten Datum ausgewertet. Wählen Sie <strong>Rückwärts</strong> aus, um Informationen zu vergangenen Perioden anzuzeigen. Wählen Sie <strong>Vorwärts</strong> aus, um Informationen zu zukünftigen Perioden anzuzeigen.</p>
-
-**Hinweis:** Die in diesem Feld eingegebenen Informationen werden nur verwendet, falls keine Zahlungsfristdefinition ausgewählt wurde.</P>
+<div class="alert">
+  
+<STRONG>Hinweis:</STRONG> Die in diesem Feld eingegebenen Informationen werden nur verwendet, falls keine Zahlungsfristdefinition ausgewählt wurde.</P>
 
 
 </div></td>

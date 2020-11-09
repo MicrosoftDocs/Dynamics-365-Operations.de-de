@@ -3,7 +3,7 @@ title: Ein Experiment verbinden und Variationen bearbeiten
 description: In diesem Thema wird beschrieben, wie Sie ein Experiment in einem Dienst eines Drittanbieters mit Dynamics 365 Commerce verbinden und wie man Variationen für das Experiment bearbeitet.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,16 +18,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ea1da0a7dc90b7197f3ee532bccc55d2ddbe4ddd
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: 030640ba8907ae52c198ac96ad2c243b533d8c53
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930206"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4096966"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Ein Experiment verbinden und Variationen bearbeiten
 
-In diesem Thema wird beschrieben, wie Sie Ihr Experiment in Commerce verbinden und Änderungen an Ihren Variationen vornehmen, damit diese mit Ihrer Hypothese übereinstimmen. Das folgende Diagramm zeigt alle Schritte, die am Einrichten und Ausführen eines Experiments auf einer E-Commerce-Website in Dynamics 365 Commerce beteiligt sind. Weitere Schritte werden in separaten Themen behandelt.
+In diesem Thema wird beschrieben, wie Sie Ihr Experiment in Commerce verbinden und Änderungen an Ihren Variationen vornehmen, damit sie mit Ihrer Hypothese übereinstimmen. 
+
+Das folgende Diagramm zeigt alle Schritte, die am Einrichten und Ausführen eines Experiments auf einer E-Commerce-Website in Dynamics 365 Commerce beteiligt sind. Weitere Schritte werden in separaten Themen behandelt.
 
 [ ![User Journey zum Experimentieren – Verbindung und Bearbeitung](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
@@ -39,8 +41,8 @@ Bevor Sie Ihr Experiment in Commerce verbinden, müssen Sie einige Entscheidunge
 
 ### <a name="determine-the-scope-of-your-experiment"></a>Den Umfang Ihres Experiments bestimmen
 Wenn Sie ein Experiment verbinden, werden Sie aufgefordert, den Umfang des Experiments zu definieren. Experimente sind definiert als **teilweiser** Umfang oder **ganzer** Umfang.
-- Wählen Sie **teilweise**, wenn Sie ein Experiment für einen bestimmten Teil einer Seite durchführen möchten. Wenn Sie diese Option auswählen, müssen Sie angeben, welche Module im Experiment enthalten sind. Änderungen, die an Teilen der Standardseite oder des Standardfragments vorgenommen werden, die nicht mit dem Experiment zusammenhängen, werden automatisch über Variationen hinweg synchronisiert.
-- Wählen Sie **ganz**, wenn Sie ein Experiment für eine ganze Seite oder ein Fragment durchführen möchten. Es werden separate Kopien der Standardseite oder des Standardfragments erstellt. Sie müssen nicht auswählen, welche Module im Experiment enthalten sind, da die gesamte Bearbeitungsfläche geändert werden kann. Sie können Module nach Bedarf hinzufügen, löschen und neu anordnen. Wenn jedoch Änderungen an der Standardseite oder dem Standardfragment vorgenommen werden, mit denen das Experiment verknüpft ist, müssen diese Änderungen über alle Variationen hinweg manuell synchronisiert werden.
+- Wählen Sie **teilweise** , wenn Sie ein Experiment für einen bestimmten Teil einer Seite durchführen möchten. Wenn Sie diese Option auswählen, müssen Sie angeben, welche Module im Experiment enthalten sind. Änderungen, die an Teilen der Standardseite oder des Standardfragments vorgenommen werden, die nicht mit dem Experiment zusammenhängen, werden automatisch über Variationen hinweg synchronisiert.
+- Wählen Sie **ganz** , wenn Sie ein Experiment für eine ganze Seite oder ein Fragment durchführen möchten. Es werden separate Kopien der Standardseite oder des Standardfragments erstellt. Sie müssen nicht auswählen, welche Module im Experiment enthalten sind, da die gesamte Bearbeitungsfläche geändert werden kann. Sie können Module nach Bedarf hinzufügen, löschen oder neu anordnen. Wenn jedoch Änderungen an der Standardseite oder dem Standardfragment vorgenommen werden, mit denen das Experiment verknüpft ist, müssen diese Änderungen über alle Variationen hinweg manuell synchronisiert werden.
 
 <!-- not to editors, we're adding an image here to illustrate the difference. it will help.) -->
 
@@ -56,10 +58,12 @@ Weitere Informationen zu Veröffentlichungsgruppen finden Sie unter [Arbeiten mi
 ## <a name="connect-your-experiment"></a>Ihr Experiment verbinden
 Um Ihr Experiment zu verbinden, starten Sie den Assistenten **Experiment verbinden**. Der Assistent führt Sie durch die Schritte, die zum Verbinden Ihres Experiments erforderlich sind. Wenn Sie den Assistenten abgeschlossen haben, ist Ihr Experiment verbunden und Variationen werden erstellt und können bearbeitet werden.
 
-1. Um den Assistenten zu starten, wählen Sie die **Experimente**-Registerkarte im Site Builder und dann **Verbinden** aus. Alternativ kann auf den Assistenten über einen Seiten- oder Fragmenteditor zugegriffen werden. Wählen Sie im Bearbeitungsmodus **Experiment verbinden** in der Befehlsleiste.
+Führen Sie die folgenden Schritte aus, um Ihr Experiment in Commerce Site Builder zu verbinden.
 
-> [!NOTE]
-> Eine Seite kann jeweils nur mit einem Experiment verbunden werden. Um eine Seite mit einem anderen Experiment zu verbinden, löschen Sie zuerst das Experiment, mit dem die Seite derzeit verbunden ist.
+1. Um den **Experiment verbinden** Assistent zu starten, wählen Sie **Experimente** im linken Navigationsbereich und wählen Sie dann **Verbinden**. Alternativ können Sie über einen Seiten- oder Fragmenteditor auf den Assistenten zugreifen, indem Sie ihn bearbeiten und **Experiment verbinden** in der Befehlsleiste auswählen.
+
+    > [!NOTE]
+    > Eine Seite kann jeweils nur mit einem Experiment verbunden werden. Um eine Seite mit einem anderen Experiment zu verbinden, löschen Sie zuerst das Experiment, mit dem die Seite derzeit verbunden ist.
 
 1. Wählen Sie die Seite oder das Fragment aus, an der bzw. dem Sie Ihr Experiment ausführen möchten.
 1. Stellen Sie den Experimentierbereich auf **teilweise** oder **ganz** ein, basierend auf der Auswahl, die Sie im Abschnitt oben [Bestimmen Sie den Umfang Ihres Experiments](#determine-the-scope-of-your-experiment) getroffen haben.

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 53df00de82b101aa02160d865a9c3bbebcfcae15
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 07d6bd0bab796d7839daa2bad91f7e88c2e881b5
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275463"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997917"
 ---
 # <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Probleme bezüglich Aktualisierungen von Finance and Operations Apps beheben
 
@@ -54,11 +53,11 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
 1. Melden Sie sich bei der virtuellen Maschine (VM) für die Finance and Operations App an.
 2. Öffnen von Visual Studio als Administrator und öffnen Sie den Application Object Tree (AOT).
 3. Suchen nach **DualWriteProjectConfiguration**.
-4. Klicken Sie im AOT mit der rechten Maustaste auf **DualWriteProjectConfiguration** und wählen Sie **Zu neuem Projekt hinzufügen**. Wählen Sie **OK**, um das neue Projekt zu erstellen, das Standardoptionen verwendet.
+4. Klicken Sie im AOT mit der rechten Maustaste auf **DualWriteProjectConfiguration** und wählen Sie **Zu neuem Projekt hinzufügen**. Wählen Sie **OK** , um das neue Projekt zu erstellen, das Standardoptionen verwendet.
 5. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf **Projekteigenschaften** und setzen Sie **Datenbank beim Erstellen synchronisieren** auf **Wahr** fest.
 6. Erstellen Sie das Projekt und bestätigen Sie, dass der Build erfolgreich ist.
 7. Auf dem **Dynamics 365** Menü wählen Sie **Datenbank synchronisieren**.
-8. Wählen Sie **Synchronisieren**, um eine vollständige Datenbanksynchronisation durchzuführen.
+8. Wählen Sie **Synchronisieren** , um eine vollständige Datenbanksynchronisation durchzuführen.
 9. Nachdem die vollständige Datenbanksynchronisierung erfolgreich war, führen Sie den Schritt zur Datenbanksynchronisierung erneut aus in Microsoft Dynamics Lifecycle Services (LCS) und verwenden Sie gegebenenfalls die manuellen Upgrade-Skripte, damit Sie mit dem Update fortfahren können.
 
 ## <a name="missing-entity-fields-issue-on-maps"></a>Fehlende Entitätsfelder treten auf Zuordnungen auf
@@ -67,17 +66,17 @@ Führen Sie folgende Schritte aus, um das Problem zu beheben.
 
 Auf der Seite **Duales Schreiben** wird möglicherweise eine Fehlermeldung angezeigt, die dem folgenden Beispiel ähnelt:
 
-*Fehlendes Quellfeld \<Feldname\> im Schema.*
+*Fehlendes Quellfeld \<field name\> im Schema.*
 
 ![Beispiel für die fehlende Quellfeldfehlermeldung](media/error_missing_field.png)
 
 Führen Sie die folgenden Schritte aus, um das Problem zu beheben und sicherzustellen, dass sich die Felder in der Entität befinden.
 
 1. Melden Sie sich bei der virtuellen Maschine (VM) an für die Finance and Operations App.
-2. Gehen Sie zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Framework-Parameter** und wählen dann auf der **Entitätseinstellungen** Registerkarte **Entitätsliste aktualisieren**, um die Entitäten zu aktualisieren.
-3. Gehen Sie zu **Arbeitsbereiche \> Datenmanagement**, wählen Sie die Registerkarte **Datenentitäten** und stellen Sie sicher, dass die Entität aufgelistet ist. Wenn die Entität nicht aufgeführt ist, melden Sie sich bei der VM für die Finance and Operations App an und stellen Sie sicher, dass die Entität verfügbar ist.
+2. Gehen Sie zu **Arbeitsbereiche \> Datenmanagement** und wählen Sie die Kachel **Framework-Parameter** und wählen dann auf der **Entitätseinstellungen** Registerkarte **Entitätsliste aktualisieren** , um die Entitäten zu aktualisieren.
+3. Gehen Sie zu **Arbeitsbereiche \> Datenmanagement** , wählen Sie die Registerkarte **Datenentitäten** und stellen Sie sicher, dass die Entität aufgelistet ist. Wenn die Entität nicht aufgeführt ist, melden Sie sich bei der VM für die Finance and Operations App an und stellen Sie sicher, dass die Entität verfügbar ist.
 4. Öffnen Sie die Seite **Entitätszuordnung** von der Seite **Duales Schreiben** in der Finance and Operations App.
-5. Wählen Sei **Entitätsliste aktualisieren**, um die Felder in den Entitätszuordnungen automatisch auszufüllen.
+5. Wählen Sei **Entitätsliste aktualisieren** , um die Felder in den Entitätszuordnungen automatisch auszufüllen.
 
 Wenn das Problem immer noch nicht behoben ist, führen Sie die folgenden Schritte aus.
 

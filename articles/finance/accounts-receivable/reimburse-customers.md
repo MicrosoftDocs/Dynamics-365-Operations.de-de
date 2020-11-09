@@ -1,9 +1,9 @@
 ---
 title: Ausführen einer Debitorenrückerstattung
 description: In diesem Thema wird erläutert, wie Rückerstattungstransaktlionen für eine Debitorengruppe erstellt werden. Wenn ein Debitor über ein Guthaben verfügt, können Sie dem Debitor den Betrag des Saldos rückerstatten.
-author: ShivamPandey-msft
+author: JodiChristiansen
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 09/09/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
-ms.author: shpandey
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97982dec140ed440682ae507f40557670ebccd3e
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: bceeaf99437f6ef66bd3b4e1710b469c262e693e
+ms.sourcegitcommit: 9e7ceb5604472f3088f611aa0360bd6a716db32b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177958"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022542"
 ---
 # <a name="reimburse-customers"></a>Ausführen einer Debitorenrückerstattung
 
@@ -42,7 +42,7 @@ Wenn Sie Rückerstattungsbuchungen erstellen, wird eine Kreditorenrechnung für 
 
 1.  Führen Sie im Debitorenmodul den Prozess **Rückerstattung** aus.
 2.  Führen Sie einen dieser Schritte aus:
-    -   Klicken Sie zum Vornehmen einer Rückerstattung für bestimmte Debitorenkonten auf **Auswählen**, und geben Sie in der Abfrage die gewünschten Debitorenkonten an.
+    -   Klicken Sie zum Vornehmen einer Rückerstattung für bestimmte Debitorenkonten auf **Auswählen** , und geben Sie in der Abfrage die gewünschten Debitorenkonten an.
     -   Klicken Sie zum Vornehmen einer Rückerstattung für alle Konten auf **OK**.
 
     Die Habenbeträge werden auf die Kreditorenkonten der Debitoren überwiesen und als gewöhnliche Zahlungen behandelt. Ist für den Debitor kein Kreditorenkonto vorhanden, wird für diesen Debitor automatisch ein einmaliges Kreditorenkonto erstellt.

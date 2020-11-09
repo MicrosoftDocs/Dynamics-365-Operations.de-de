@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c78752aa1544b12f61071fa06617af4ac2809233
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: f49eba1748861af6ee3353a6c58005ee84ccae23
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172991"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3998107"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Dual-Schreiben von Lifecycle Services einrichten
 
@@ -46,17 +45,17 @@ Sie müssen ein Administrator sein, um eine Dual-Schreib-Verbindung einzurichten
 Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.
 
 1. In LCS gehen Sie zu Ihrem Projekt.
-2. Wählen Sie **Konfigurieren**, um eine neue Umgebung bereitzustellen.
+2. Wählen Sie **Konfigurieren** , um eine neue Umgebung bereitzustellen.
 3. Wählen Sie die Version. 
 4. Wählen Sie die Topologie aus. Wenn nur eine Topologie verfügbar ist, wird diese automatisch ausgewählt.
 5. Führen Sie die ersten Schritte im Assistent **Bereitstellungseinstellungen** aus.
-6. Folgen Sie einem dieser Schritte auf der Registerkarte **Common Data Service**:
+6. Folgen Sie einem dieser Schritte auf der Registerkarte **Common Data Service** :
 
     - Wenn eine Common Data Service Umgebung bereits für Ihren Mandanten bereitgestellt ist, können sie sie auswählen.
 
         1. Legen Sie die Option **Common Data Service Konfigurieren** auf **Ja** fest.
         2. In dem Feld **Verfügbare Umgebungen** wählen Sie im Feld die Umgebung aus, die in Ihre Finance and Operations Daten integriert werden soll. Die Liste enthält alle Umgebungen, in denen Sie über Administratorrechte verfügen.
-        3. Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
+        3. Wähle Sie das Kontrollkästchen **Zustimmen** , um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
 
         ![Common Data Service Registerkarte, wenn eine Common Data Service Umgebung bereits für Ihren Mandanten bereitgestellt ist](../dual-write/media/lcs_setup_1.png)
 
@@ -70,7 +69,7 @@ Folgen Sie diesen Schritten, um eine Dual-Schreib-Verbindung einzurichten.
             > [!NOTE]
             > Sie können die Sprache und Währung später nicht mehr ändern.
 
-        5. Wähle Sie das Kontrollkästchen **Zustimmen**, um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
+        5. Wähle Sie das Kontrollkästchen **Zustimmen** , um anzuzeigen, dass Sie den Nutzungsbedingungen zustimmen.
 
         ![Common Data Service Registerkarte, wenn Ihr Mandant noch keine Common Data Service Umgebung hat](../dual-write/media/lcs_setup_2.png)
 
