@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2f2ba2564ad3e8e444e27fcc0c586ddf252afabd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: 2ddac76871a3ac574a1edcb5446be6c64e5e4682
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172644"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997229"
 ---
 # <a name="verify-that-dual-write-is-configured-in-finance-and-operations-apps-and-common-data-service"></a>Überprüfen, ob duales Schreiben in Finance and Operations-Apps und Common Data Service konfiguriert ist
 
@@ -42,7 +41,7 @@ Um festzustellen, ob die Fehler, die beim Speichern von Datensätzen für die Ak
 
     ![Überprüfen der Finance and Operations App-Verbindung, wenn Sie über Administratorrechte verfügen](media/verify_fin_ops_1.png)
 
-+ Wenn Sie keine Administratorrechte haben, erhalten Sie eine Fehlermeldung: *Daten können nicht in die Entität geschrieben werden \<Entitätsname\>*. Im Beispiel in der folgenden Abbildung können Sie keinen Kundendatensatz in der Finance and Operations App erstellen, da Dual-Write konfiguriert ist, die Referenzdaten für Kundengruppe und Zahlungsbedingungen jedoch nicht vorhanden sind in Common Data Service.
++ Wenn Sie keine Administratorrechte haben, erhalten Sie eine Fehlermeldung: *Daten können nicht in die Entität geschrieben werden \<entity name\>*. Im Beispiel in der folgenden Abbildung können Sie keinen Kundendatensatz in der Finance and Operations App erstellen, da Dual-Write konfiguriert ist, die Referenzdaten für Kundengruppe und Zahlungsbedingungen jedoch nicht vorhanden sind in Common Data Service.
 
     ![Überprüfen der Finance and Operations App-Verbindung, wenn Sie über keine Administratorrechte verfügen](media/verify_fin_ops_2.png)
 

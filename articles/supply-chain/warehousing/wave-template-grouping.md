@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4dd188cbd17cfed372283ecb3389633b0c0021eb
-ms.sourcegitcommit: a7a7303004620d2e9cef0642b16d89163911dbb4
+ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "3530465"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015825"
 ---
 # <a name="wave-template-grouping"></a>Wellenvorlagengruppierung
 
@@ -44,7 +45,7 @@ Um die Wellenvorlagengruppierung verfügbar zu machen, führen Sie die folgenden
 
 1. Wechseln Sie zu **Lagerortverwaltung \> Einstellungen \> Wellen \> Wellenvorlagen**.
 1. Wählen Sie im linken Bereich die einzurichtende Wellenvorlage aus. Wenn Sie sich darauf vorbereiten, das Szenario später in diesem Thema mithilfe von Demodaten zu bearbeiten, wählen Sie die Vorlage **62 Versandstandard** aus.
-1. Klicken Sie auf **Bearbeiten**, um die Seite in den Bearbeitungsmodus zu versetzen.
+1. Klicken Sie auf **Bearbeiten** , um die Seite in den Bearbeitungsmodus zu versetzen.
 1. Legen Sie im Inforegister **Allgemein** die folgenden Werte fest:
 
     - **Wellenerstellung automatisieren:** *Ja*
@@ -106,7 +107,7 @@ Bevor Sie beginnen, bereiten Sie Ihre Wellenvorlage wie im Abschnitt [Wellenvorl
     - **Spediteur:** *Air*
 
 1. Wechseln Sie zurück zur Ansicht **Positionen**.
-1. Klicken Sie im Abschnitt **Auftragspositionen** auf **Position hinzufügen**, um dem Raster eine Position hinzuzufügen.
+1. Klicken Sie im Abschnitt **Auftragspositionen** auf **Position hinzufügen** , um dem Raster eine Position hinzuzufügen.
 1. Legen Sie die folgenden Werte für die neue Position fest:
 
     - **Artikelnummer:** *A0002*
@@ -114,8 +115,8 @@ Bevor Sie beginnen, bereiten Sie Ihre Wellenvorlage wie im Abschnitt [Wellenvorl
 
 1. Wählen Sie die neue Bestellposition aus, und klicken Sie dann im Menü **Lagerbestand** über dem Raster auf **Reservierung**.
 1. Wählen Sie auf der Seite **Reservierung** im Aktivitätsbereich die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten**, **Für Lagerort freigeben** aus.
+1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** , **Für Lagerort freigeben** aus.
 1. Sie erhalten eine Informationsnachricht, die die Lieferung und die Welle für diese Bestellung anzeigt. Notieren Sie sich die Wellen-ID-Nummer und die Lieferungs-ID-Nummern.
 
 #### <a name="view-the-wave-that-was-created-from-sales-order-1"></a>Welle anzeigen, die aus Auftrag 1 erstellt wurde
@@ -143,7 +144,7 @@ Bevor Sie beginnen, bereiten Sie Ihre Wellenvorlage wie im Abschnitt [Wellenvorl
     - **Spediteur:** *STD*
 
 1. Wechseln Sie zurück zur Ansicht **Positionen**.
-1. Klicken Sie im Abschnitt **Auftragspositionen** auf **Position hinzufügen**, um dem Raster eine Position hinzuzufügen.
+1. Klicken Sie im Abschnitt **Auftragspositionen** auf **Position hinzufügen** , um dem Raster eine Position hinzuzufügen.
 1. Legen Sie die folgenden Werte für die neue Position fest:
 
     - **Artikelnummer** *A001*
@@ -151,8 +152,8 @@ Bevor Sie beginnen, bereiten Sie Ihre Wellenvorlage wie im Abschnitt [Wellenvorl
 
 1. Wählen Sie die neue Bestellposition aus, und klicken Sie dann im Menü **Lagerbestand** über dem Raster auf **Reservierung**.
 1. Wählen Sie auf der Seite **Reservierung** im Aktivitätsbereich die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten**, **Für Lagerort freigeben** aus.
+1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** , **Für Lagerort freigeben** aus.
 1. Sie erhalten eine Informationsnachricht, die die Lieferung und die Welle für diese Bestellung anzeigt. Notieren Sie sich die Wellen-ID-Nummer und die Lieferungs-ID-Nummern. Beachten Sie, dass sich die Wellen-ID von der Wellen-ID des ersten Auftrags unterscheidet.
 
 #### <a name="view-the-wave-that-was-created-from-sales-order-2"></a>Welle anzeigen, die aus Auftrag 2 erstellt wurde
@@ -182,7 +183,7 @@ Für diese Lieferung wurde eine neue Welle erstellt, da sie einen anderen Spedit
     - **Spediteur:** *Air*
 
 1. Wechseln Sie zurück zur Ansicht **Positionen**.
-1. Klicken Sie im Abschnitt **Auftragspositionen** auf **Position hinzufügen**, um dem Raster eine Position hinzuzufügen.
+1. Klicken Sie im Abschnitt **Auftragspositionen** auf **Position hinzufügen** , um dem Raster eine Position hinzuzufügen.
 1. Legen Sie die folgenden Werte für die neue Position fest:
 
     - **Artikelnummer** *A001*
@@ -190,8 +191,8 @@ Für diese Lieferung wurde eine neue Welle erstellt, da sie einen anderen Spedit
 
 1. Wählen Sie die neue Bestellposition aus, und klicken Sie dann im Menü **Lagerbestand** über dem Raster auf **Reservierung**.
 1. Wählen Sie auf der Seite **Reservierung** im Aktivitätsbereich die Option **Los reservieren** aus, um die volle Menge der ausgewählten Position im Lagerort zu reservieren.
-1. Schließen Sie die Seite **Reservierung**, um zum Auftrag zurückzukehren.
-1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort**, in der Gruppe **Aktivitäten**, **Für Lagerort freigeben** aus.
+1. Schließen Sie die Seite **Reservierung** , um zum Auftrag zurückzukehren.
+1. Klicken Sie im Aktivitätsbereich auf der Registerkarte **Lagerort** , in der Gruppe **Aktivitäten** , **Für Lagerort freigeben** aus.
 1. Sie erhalten eine Informationsnachricht, die die Lieferung und die Welle für diese Bestellung anzeigt. Notieren Sie sich die Wellen-ID-Nummer und die Lieferungs-ID-Nummern. Die Lieferung wurde der bestehenden Welle aus dem ersten Auftrag zugeordnet.
 
 #### <a name="view-the-wave-for-sales-orders-1-and-3"></a>Welle für Aufträge 1 und 3 anzeigen

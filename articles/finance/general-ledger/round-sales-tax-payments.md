@@ -15,15 +15,15 @@ ms.search.scope: Core, Operations
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: yijialuan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adc48d1841903670577684b1c3d773d323c19ea1
-ms.sourcegitcommit: e06da171b9cba8163893e30244c52a9ce0901146
+ms.openlocfilehash: 998dbd01352d3fa5040187e81b564d14133464db
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "3275673"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014958"
 ---
 # <a name="sales-tax-payments-and-rounding-rules"></a>Mehrwertsteuerzahlungen und Rundungsregeln
 
@@ -54,7 +54,7 @@ Die folgende Tabelle zeigt, wie ein Betrag von 98.765,43 gerundet wird. Dabei wi
 > Wenn der Rundungswert auf 0,00 eingestellt ist, gilt Folgendes:
 >
 > - Bei normaler Rundung ist das Rundungsverhalten das Gleiche wie für **Rundung = 0,01**.
-> - Für **Option der Rundungsart**, **Abrunden**, **Aufrunden** und **Eigener Vorteil** ist das Verhalten mit dem für **Rundung = 1,00** identisch.
+> - Für **Option der Rundungsart** , **Abrunden** , **Aufrunden** und **Eigener Vorteil** ist das Verhalten mit dem für **Rundung = 1,00** identisch.
 
 | Option der Rundungsart                | Rundungswert = 0,01 | Rundungswert = 0,10 | Rundungswert = 1,00 | Rundungswert = 100,00 | Rundungswert = 0,00   |
 |-------------------------------------|------------------------|------------------------|------------------------|--------------------------|--------------------------|

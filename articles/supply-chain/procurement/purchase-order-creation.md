@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchTable
+ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Retail
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16e6170bdc8f0adcefbe310fcbf61c06aa68f02d
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 206d6d6769d1dedcbfefa589fd72903e65a25ba6
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207970"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018789"
 ---
 # <a name="create-purchase-orders"></a>Bestellungen erstellen
 
@@ -42,7 +42,7 @@ Beim Erstellen einer neuen Bestellung wird ein Dialogfeld angezeigt, in dem Sie 
 
 Das erste Detail, das Sie bei der Erstellung einer Bestellung berücksichtigen müssen, ist der Typ des Auftrags. Der Typ **Bestellung** wird am häufigsten verwendet. Wenn ein Ausgleichsrechnung erforderlich ist, Sie können jedoch den Typ **Zurückgegebener Auftrag** nutzen.  
 
-Sie müssen den Lieferanten im Feld **Kreditorenkonto** angeben. Für dieses Feld können Sie das Konto oder der Name des Kreditors suchen. Wenn ein Kreditor von mehreren Standorten aus liefert, jedoch nur einzelnes Rechnungskonto verwendet, können Sie dieses Rechnungskonto im Feld **Rechnungskonto** auswählen und es dann mit anderen Kreditorenkonten nutzen. Wenn Sie eine Bestellung für Produkte erstellen, die nicht wiederholt bestellt werden, können Sie die **Einmal-Lieferant**-Option nutzen. Diese Option erstellt automatisch ein neues Kreditorenkonto das als Einmalkonto markiert wird. So wird eine spätere Bereinigung für Einmalkonten im **Kreditorenkonten**-Modul unterstützt. Wenn Sie ein Kreditorenkonto auswählen, erben viele Felder im PO-Kopf Standardwerte aus den Informationen, die dem Kreditorenkonto zugeordnet sind. Beispielsweise werden der Standard-Lieferort und das Lager aus den Kreditorinformationen kopiert. Allerdings können Sie diese Standardwerte überschreiben, soll die Bestellung für einen anderen Standort vorgesehen sein.  
+Sie müssen den Lieferanten im Feld **Kreditorenkonto** angeben. Für dieses Feld können Sie das Konto oder der Name des Kreditors suchen. Wenn ein Kreditor von mehreren Standorten aus liefert, jedoch nur einzelnes Rechnungskonto verwendet, können Sie dieses Rechnungskonto im Feld **Rechnungskonto** auswählen und es dann mit anderen Kreditorenkonten nutzen. Wenn Sie eine Bestellung für Produkte erstellen, die nicht wiederholt bestellt werden, können Sie die **Einmal-Lieferant** -Option nutzen. Diese Option erstellt automatisch ein neues Kreditorenkonto das als Einmalkonto markiert wird. So wird eine spätere Bereinigung für Einmalkonten im **Kreditorenkonten** -Modul unterstützt. Wenn Sie ein Kreditorenkonto auswählen, erben viele Felder im PO-Kopf Standardwerte aus den Informationen, die dem Kreditorenkonto zugeordnet sind. Beispielsweise werden der Standard-Lieferort und das Lager aus den Kreditorinformationen kopiert. Allerdings können Sie diese Standardwerte überschreiben, soll die Bestellung für einen anderen Standort vorgesehen sein.  
 
 Wenn der Lieferant eine Referenznummer für den Auftrag angegeben hat, können diese Informationen im Feld **Kreditorenreferenz** erfasst werden. für zurückgegebene Aufträge müssen Sie einen Wert im Feld **RMA** angeben, um auf die Autorisierung des Lieferanten für die Verarbeitung der Rückgabe zu verweisen.  
 
@@ -65,7 +65,7 @@ Eine Bestellposition für eine Rückgabe an den Kreditor hat eine negative Menge
 
 Manchmal möchten Sie die bestellte Menge teilen, so dass verschiedene Teile des an unterschiedlichen Tagen geliefert werden. Diese Lieferungen können Sie über die Aktion **Lieferzeitplan** einrichten. Sie finden sie im Menü **Bestellposition** in der Ansicht **Positionen**.  
 
-Kosten können automatisch zu PO-Positionen hinzugefügt werden wenn automatische Zuschläge für den Kreditor oder Kreditorenzuschlagsgruppe und für den Artikel oder die Artikelzuschlagsgruppe eingerichtet wurden. Normalerweise werden Zuschläge jedoch manuell zum jeweiligen Auftrag hinzugefügt. Um eine Belastung hinzuzufügen, öffnen die Seite **Belastungen verwalten**, indem Sie die Aktion **Belastungen verwalten** im Menü **Finanzdaten** in der Ansicht **Positionen** nutzen. Der Vorteil beim Hinzufügen von Belastungen auf Bestellebene ist, dass die Belastung als Lagerkosten zugeordnet werden kann. Um Belastungscodes für Produktkosten einzurichten, verwenden Sie die Belastungsoption **Artikel**. Derartige Belastungstypen müssen vor der Genehmigung der Bestellung aus dem Bestellungskopf zugeordnet werden. Sie möchten z. B. Belastungen basierend auf der Menge in jeder Position zuweisen. Die Belastungskategorie wirkt sich auch darauf aus, wie die Belastungen berücksichtigt werden. Feste Belastungen legen beispielsweise einen festen Betrag fest. Prozentuale Belastungen werden als Prozentsatz des Nettobetrags für die Auftragsposition berechnet. POs können einer Auslastung zugewiesen werden. Die Auslastung kann eine Schätzung der erwarteten Ausgaben für die Transportkosten enthalten. Sie können diese Ausgabe von der Auslastung zurück zu den Bestellungspotionen zuweisen.
+Kosten können automatisch zu PO-Positionen hinzugefügt werden wenn automatische Zuschläge für den Kreditor oder Kreditorenzuschlagsgruppe und für den Artikel oder die Artikelzuschlagsgruppe eingerichtet wurden. Normalerweise werden Zuschläge jedoch manuell zum jeweiligen Auftrag hinzugefügt. Um eine Belastung hinzuzufügen, öffnen die Seite **Belastungen verwalten** , indem Sie die Aktion **Belastungen verwalten** im Menü **Finanzdaten** in der Ansicht **Positionen** nutzen. Der Vorteil beim Hinzufügen von Belastungen auf Bestellebene ist, dass die Belastung als Lagerkosten zugeordnet werden kann. Um Belastungscodes für Produktkosten einzurichten, verwenden Sie die Belastungsoption **Artikel**. Derartige Belastungstypen müssen vor der Genehmigung der Bestellung aus dem Bestellungskopf zugeordnet werden. Sie möchten z. B. Belastungen basierend auf der Menge in jeder Position zuweisen. Die Belastungskategorie wirkt sich auch darauf aus, wie die Belastungen berücksichtigt werden. Feste Belastungen legen beispielsweise einen festen Betrag fest. Prozentuale Belastungen werden als Prozentsatz des Nettobetrags für die Auftragsposition berechnet. POs können einer Auslastung zugewiesen werden. Die Auslastung kann eine Schätzung der erwarteten Ausgaben für die Transportkosten enthalten. Sie können diese Ausgabe von der Auslastung zurück zu den Bestellungspotionen zuweisen.
 
 ## <a name="purchase-order-actions"></a>Bestellungsaktionen
 Nachdem Sie den Kopf und die Positionen zur Bestellung hinzugefügt haben, müssen Sie oft zusätzliche Schritte ausführen, bevor die Bestellung bestätigt werden kann. Da so viele Optionen verfügbar sind, ist es unter Umständen hilfreich, die entsprechende Menüelement über [Aktion suchen](../../fin-and-ops/get-started/action-search.md) zu suchen.  
@@ -77,7 +77,7 @@ Rabatte werden normalerweise beim Erstellen von Positionen hinzugefügt. Allerdi
 -   Die Aktion **Rechnungsrabatt:** berechnet einen Prozentsatz, der für die gesamte Bestellung gilt. Verwechseln Sie diesen Rabatt nicht mit dem Skonto-Rabattprozentsatz. Skonti werden angewendet, wenn die Rechnung bezahlt ist. Sie hängen vom Zahlungsausgleich nach einem bestimmten Datum ab.
 -   Wenn ein Rabatt für mehrere Positionen gilt, müssen Sie die Aktion **Sammelrabatt** zum Berechnen und Zuordnen zur Bestellung nutzen. Sammelrabatte sind Rabatte, die angeboten werden können, wenn eine Kombination von Produkten in der Bestellung einen gemeinsamen Schwellenwert übersteigt. Nur wenige Unternehmen verwenden diese Art von Rabatt.
 
-Belastungen, die einen Belastungscode haben, der den **Artikel**-Solltyp verwendet, müssen auf Positionsebene zugewiesen werden, bevor die Bestellung bestätigt werden kann. Es sinnvoll, diese Zuschläge auf der Auftragskopfebene zuzuweisen. So können Sie den Gesamtbetrag der Belastungen festlegen. Jedoch muss in diesem Fall die Belastung jeder Position zugeordnet werden, bevor die Bestellung bestätigt werden kann. Sie können die Aktion **Belastungen zuordnen** nutzen, um Beträge aus Belastungen zu Teilen, die auf Kopfebene den Auftragspositionen zugeordnet sind. Belastungen können nach dem Nettobetrag jeder Position, nach der bestellten Menge oder gleichmäßig unter allen Positionen geteilt werden. Nachdem Sie Belastungen zu Positionen zugewiesen haben, wird die Belastung aus dem Auftragskopf entfernt.  
+Belastungen, die einen Belastungscode haben, der den **Artikel** -Solltyp verwendet, müssen auf Positionsebene zugewiesen werden, bevor die Bestellung bestätigt werden kann. Es sinnvoll, diese Zuschläge auf der Auftragskopfebene zuzuweisen. So können Sie den Gesamtbetrag der Belastungen festlegen. Jedoch muss in diesem Fall die Belastung jeder Position zugeordnet werden, bevor die Bestellung bestätigt werden kann. Sie können die Aktion **Belastungen zuordnen** nutzen, um Beträge aus Belastungen zu Teilen, die auf Kopfebene den Auftragspositionen zugeordnet sind. Belastungen können nach dem Nettobetrag jeder Position, nach der bestellten Menge oder gleichmäßig unter allen Positionen geteilt werden. Nachdem Sie Belastungen zu Positionen zugewiesen haben, wird die Belastung aus dem Auftragskopf entfernt.  
 
 POs können so konfiguriert werden, dass vor ihrer Verarbeitung Budgetmittel zur Bestellung zugewiesen werden müssen. In diesem Fall können Sie die Aktion **Budgetprüfung** zur Zuordnung des Budgets nutzen.  
 

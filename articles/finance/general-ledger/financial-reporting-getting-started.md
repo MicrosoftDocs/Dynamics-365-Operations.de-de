@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 363ce16b31a199e519c969746c4f10430d9d7497
-ms.sourcegitcommit: 165e082e59ab783995c16fd70943584bc3ba3455
+ms.openlocfilehash: cd87983ce062bd1fa57e97628986cadced9971ab
+ms.sourcegitcommit: 374298f0816b57c95c0c3e3fd7e852399e1d8696
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "3967257"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3999548"
 ---
 # <a name="get-started-with-financial-reporting"></a>Erste Schritte mit Financial Reporting 
 
@@ -90,13 +90,13 @@ Benutzer, die einen Bericht erstellen, können ihre eigenen Berichte löschen. B
 In Release 10.0.8 wurde das Konzept der Ablaufdaten eingeführt. Eine neue erforderliche Funktion ist auf der Seite **Alle** im Arbeitsbereich der Funktionsverwaltung aktiviert. Die Funktion **Richtlinien zur Aufbewahrung von Finanzberichten** enthält die folgenden Änderungen:
 * Neu generierte Berichte werden automatisch mit einem Ablaufdatum von 90 Tagen ab dem Zeitpunkt ihrer Generierung gekennzeichnet.
 * Alle vorhandenen Berichte, die vor der Installation der Funktion erstellt wurden, haben eine Gültigkeitsdauer von 90 Tagen. Das Datum wird möglicherweise für einen kurzen Zeitraum leer angezeigt, bis der Finanzberichtsdienst ausgeführt wird, ein Bericht generiert wird und der Dienst die Aktualisierung vorhandener Berichte mit einem leeren Ablaufdatum durchführt. 
-* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten**, der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Optionen zur Vermerkdauer verfügbar: 
+* Benutzer mit **Finanzberichtssicherheit verwalten** haben Zugriff auf diese Funktion. Jeder Benutzer mit der Pflicht **Finanzberichte verwalten** , der die Berechtigung **Ablaufdatum des Finanzberichts beibehalten** erhalten hat, kann den Ablaufzeitraum ändern. Derzeit sind zwei Optionen zur Vermerkdauer verfügbar: 
   * Ablauf von 90 Tagen.
   * Eine Option zum Festlegen, dass der Bericht niemals abläuft.
   
 Wenn ein Ablaufdatum ausgewählt wird, zum Beispiel 90 Tage, werden die 90 Tage ab heute gezählt. Dies ist anders als bei den 90 Tagen ab dem ursprünglichen Generierungsdatum, das bei der Erstellung des Berichts festgelegt wurde. 
   
-Zusätzliche Optionen werden in zukünftigen Funktionen berücksichtigt. Ablauf von 90 Tagen ist die Standardeinstellung und Benutzer mit entsprechenden Berechtigungen können die Standardeinstellung für die **Finanzberichte**-Listenseite überschreiben.    
+Zusätzliche Optionen werden in zukünftigen Funktionen berücksichtigt. Ablauf von 90 Tagen ist die Standardeinstellung und Benutzer mit entsprechenden Berechtigungen können die Standardeinstellung für die **Finanzberichte** -Listenseite überschreiben.    
 
 ## <a name="default-reports"></a>Standardberichte
 Die Finanzberichterstellung enthält 22 standardmäßige Finanzberichte. Jeder Bericht verwendet die standardmäßige Hauptkontokategorien. Sie können diese Berichte verwenden oder sie als Ausgangspunkt für Ihre Finanzberichte nutzen. Zusätzlich zu herkömmlichen Finanzaufstellungen (z. B. Einkommensaufstellung und Bilanz) enthalten diese Standardberichte Berichte, die die unterschiedlichen Arten von Finanzberichten aufzeigen, die Sie erstellen können. 
@@ -154,7 +154,7 @@ Problem 1: Der Berichts-Designer wird nicht gestartet, wenn Sie **Neu** oder **B
      2. Geben Sie **edge://flags** ein und wählen **Eingeben**.
      3. Suchen Sie nach der Option **ClickOnce-Support** oder verwenden Sie diesen direkten Link: **edge://flags/#edge-click-once**.
      4. Stellen Sie die Dropdown-Menüoption auf **Aktiviert** ein.
-     5. Wählen Sie**Browser neu starten**.
+     5. Wählen Sie **Browser neu starten** aus.
 
 Problem 2: Dem Benutzer wurden nicht die erforderlichen Berechtigungen zur Verwendung von Financial Reporting zugewiesen. 
 

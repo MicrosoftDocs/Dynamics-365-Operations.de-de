@@ -1,7 +1,7 @@
 ---
 title: Azure-Ressourcen für IoT-Intelligenz einrichten
 description: In diesem Thema wird erläutert, wie Sie Microsoft Azure-Ressourcen erstellen und konfigurieren, die Sie für IoT-Intelligenz benötigen.
-author: ''
+author: robinarh
 manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bbac1676d28c7285c19ed48f77426a37ce123a29
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3982893"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014911"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Azure-Ressourcen für IoT-Intelligenz einrichten
 
@@ -124,7 +124,7 @@ Führen Sie die folgenden Schritte aus, um den Vault Key zu konfigurieren.
 3. Wählen Sie **Zugriffsrichtlinie hinzufügen**.
 4. Wählen Sie auf der Seite **Zugriffsrichtlinie hinzufügen** im Feld **Berechtigungen für Geheimnis** die Optionen **Abrufen** und **Liste** aus.
 5. Klicken Sie auf **Prinzipal auswählen**.
-6. Suchen Sie im Dialogfeld **Prinzipal** nach **Microsoft Dynamics ERP-Microservices**, und wählen Sie sie aus. Klicken Sie dann auf **Auswählen**.
+6. Suchen Sie im Dialogfeld **Prinzipal** nach **Microsoft Dynamics ERP-Microservices** , und wählen Sie sie aus. Klicken Sie dann auf **Auswählen**.
 7. Wählen Sie **Hinzufügen** aus.
 8. Wählen Sie **Speichern**.
 

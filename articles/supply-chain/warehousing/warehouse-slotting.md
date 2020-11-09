@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,18 +16,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f6764f8bc082962af37d4775b6fe53d8704658eb
-ms.sourcegitcommit: f64fce03ec52f844b05a9e8cac286cb201385002
+ms.openlocfilehash: ed9e6eae2ecc8de8d5eeef4699678e93dd74f193
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3597457"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017413"
 ---
 # <a name="warehouse-slotting"></a>Zuteilung von Zeitfenstern für Lagerort
 
 [!include [banner](../includes/banner.md)]
 
-Mit der Zuteilung von Zeitfenstern für den Lagerort können Sie die Nachfrage nach Artikeln und Maßeinheiten aus Bestellungen mit dem Status *Bestellt*, *Reserviert* oder *Freigegeben* konsolidieren. Der generierte Bedarf kann dann auf Lagerplätze angewendet werden, die für die Kommissionierung verwendet werden, basierend auf Menge, Einheit, physischen Dimensionen, festen Lagerplätzen und mehr. Nachdem der Plan für die Zuteilung von Zeitfenstern erstellt wurde, können Wiederbeschaffungsarbeiten erstellt werden, um die entsprechende Menge an Bestand an jeden Lagerplatz zu bringen.
+Mit der Zuteilung von Zeitfenstern für den Lagerort können Sie die Nachfrage nach Artikeln und Maßeinheiten aus Bestellungen mit dem Status *Bestellt* , *Reserviert* oder *Freigegeben* konsolidieren. Der generierte Bedarf kann dann auf Lagerplätze angewendet werden, die für die Kommissionierung verwendet werden, basierend auf Menge, Einheit, physischen Dimensionen, festen Lagerplätzen und mehr. Nachdem der Plan für die Zuteilung von Zeitfenstern erstellt wurde, können Wiederbeschaffungsarbeiten erstellt werden, um die entsprechende Menge an Bestand an jeden Lagerplatz zu bringen.
 
 Diese Funktion hilft Lagerverwaltern, Entnahmeorte intelligent zu planen, bevor sie Aufträge für den Lagerort freigeben und Kommissionierarbeiten erstellen.
 
@@ -220,7 +221,7 @@ Es muss mindestens eine Lagerplatzrichtlinie eingerichtet werden, um die Zuteilu
 
 ##### <a name="configure-the-lines-fasttab"></a>Inforegister „Positionen“ konfigurieren
 
-1. Klicken Sie im Inforegister **Positionen** auf **Neu**, um eine Position zu erstellen.
+1. Klicken Sie im Inforegister **Positionen** auf **Neu** , um eine Position zu erstellen.
 1. Legen Sie die folgenden Werte für die neue Position fest. Akzeptieren Sie die Standardwerte für alle anderen Felder.
 
     - **Von Menge:** _0_
@@ -297,7 +298,7 @@ Nachdem alle erforderlichen Elemente vorhanden sind, wie im vorherigen Abschnitt
 
 #### <a name="generate-demand"></a>Bedarf generieren
 
-1. Navigieren Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Vorlagen für Zuteilung von Zeitfenstern**, und wählen Sie die Vorlage für die Zuteilung von Zeitfenstern aus, die Sie zuvor erstellt haben.
+1. Navigieren Sie zu **Lagerortverwaltung \> Setup \> Wiederbeschaffung \> Vorlagen für Zuteilung von Zeitfenstern** , und wählen Sie die Vorlage für die Zuteilung von Zeitfenstern aus, die Sie zuvor erstellt haben.
 1. Wählen Sie im Aktivitätsbereich **Bedarf generieren** aus. Dieser Befehl wertet den gesamten Bedarf aus, der sich im System befindet und mit der Vorlagenabfrage für die Zuteilung von Zeitfenstern übereinstimmt. Der Gesamtbedarf aller Bestellungen wird dann in einer Position pro Menge/Maßeinheit zusammengefasst. Nach Abschluss des Vorgangs wird eine Informationsmeldung angezeigt.
 
 #### <a name="slotting-demand"></a>Bedarf an der Zuteilung von Zeitfenstern

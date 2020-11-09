@@ -14,15 +14,15 @@ ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anupamar-ms
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5876b953a3b3d960c106acf37731fde13b93f8e7
-ms.sourcegitcommit: ae0843763a8b6b232bb71db326fab28605ac6c53
+ms.openlocfilehash: 6610d2abe0a1b03ddd763f9a65fc1dab42f1da1b
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "3661171"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015179"
 ---
 # <a name="order-details-module"></a>Auftragsdetailmodul
 
@@ -38,7 +38,7 @@ Nachdem eine Bestellung aufgegeben wurde, kann das Bestelldetailmodul verwendet 
 
 | Eigenschaftenname  | Werte | Beschreibung |
 |----------------|--------|-------------|
-| Überschrift        | Überschriftentext und Überschriftsmarkierung (**H1**, **H2**, **H3**, **H4**, **H5** oder **H6**) | Das Auftragsdetailmodul kann eine Überschrift haben. Standardmäßig wird die **H2** Überschriftsmarkierung für die Überschrift verwendet. Die Markierung kann jedoch geändert werden, um Zugangsbedingungen zu erfüllen. |
+| Überschrift        | Überschriftentext und Überschriftsmarkierung ( **H1** , **H2** , **H3** , **H4** , **H5** oder **H6** ) | Das Auftragsdetailmodul kann eine Überschrift haben. Standardmäßig wird die **H2** Überschriftsmarkierung für die Überschrift verwendet. Die Markierung kann jedoch geändert werden, um Zugangsbedingungen zu erfüllen. |
 | Kontaktnummer | Text | Für auftragsbezogene Fragen kann eine Telefonnummer angegeben werden. |
 
 ## <a name="modules-that-can-be-used-on-an-order-details-page"></a>Module, die in einem Modul einer Auftragsdetailseite verwendet werden können
@@ -54,20 +54,20 @@ Um ein Auftragsdetailmodul einer neuen Seite hinzuzufügen und die erforderliche
 
 1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie einen Namen für die **Auftragsdetailvorlage** ein und wählen **OK**.
-1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
-1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Auf der **Standardseite** wählen Sie **Haupt** -Slot und wählen dann die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Auftragsdetails** an und wählen dann **OK** aus.
 1. Wählen Sie **Speichern** und dann **Vorschau** aus, um eine Vorlage in der Vorschau anzuzeigen. Das Auftragsdetailmodul soll nicht gerendert werden, da es den Kontext der Auftragsbestätigungsnummer benötigt.
-1. Wählen **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
-1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. Wählen **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
+1. Wechseln Sie zu **Seiten** , und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
 1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die Vorlage **Auftragsdetails-Vorlage** aus. Unter **Seitenname** geben Sie **Auftragsdetailseite** ein und wählen dann **OK**.
-1. Auf der **Standardseite** wählen Sie **Haupt**-Slot und wählen dann die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Auf der **Standardseite** wählen Sie **Haupt** -Slot und wählen dann die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Auftragsdetails** an und wählen dann **OK** aus.
 1. Wählen Sie im Eigenschaftenbereich der Auftragsdetails die Option **Überschrift** neben dem Stiftsymbol.
 1. In dem **Überschriftstext** Feld des Dialogfelds **Überschrift** geben Sie den Überschriftentext ein und wählen dann **Bestelldetails** aus und dann **OK**.
 1. Wählen **Speichern** und dann **Vorschau** aus, um eine Vorschau der Seite anzuzeigen.
-1. Wählen **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um sie zu veröffentlichen.
+1. Wählen **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um sie zu veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

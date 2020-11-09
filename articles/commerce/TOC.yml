@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-14.md
                     - name: Commerce 10.0.13 (Oktober 2020)
                       href: get-started/whats-new-commerce-10-0-13.md
-                    - name: "Commerce 10.0.12 (August\_2020)"
-                      href: get-started/whats-new-commerce-10-0-12.md
                 - name: Entfernte oder veraltete Funktionen
                   items:
                     - name: Entfernte oder veraltete Funktionen in Finance and Operations
@@ -1040,6 +1038,8 @@
                       href: add-breadcrumb.md
                     - name: Navigationsmenümodul
                       href: nav-menu-module.md
+                    - name: Siteauswahlmodul
+                      href: site-selector.md
                 - name: Compliance-Module
                   items:
                     - name: Cookie-Zustimmungsmodul
@@ -1986,6 +1986,8 @@
                       href: e-commerce-extensibility/cli-command-reference.md
                 - name: Anatomie eines Moduls
                   items:
+                    - name: Modulübersicht
+                      href: e-commerce-extensibility/modules-overview.md
                     - name: Moduldefinitionsdatei
                       href: e-commerce-extensibility/module-definition-file.md
                     - name: React-Komponentendatei eines Moduls
@@ -2028,21 +2030,27 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: App-Einstellungen
                       href: e-commerce-extensibility/app-settings.md
-                    - name: Erweitern einer Moduldefinition
+                    - name: Eine Moduldefinition erweitern
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Übersicht zur Cookie-API
                       href: e-commerce-extensibility/cookie-api-overview.md
                     - name: Interaktive Komponentenübersicht
                       href: e-commerce-extensibility/interactive-components.md
-                    - name: Globalisieren von Modulen mit der Klasse CultureInfoFormatter
+                    - name: Status „Angemeldet“ während der lokalen Entwicklung simulieren
+                      href: e-commerce-extensibility/mock-sign-in.md
+                    - name: Module mit der Klasse „CultureInfoFormatter“ globalisieren
                       href: e-commerce-extensibility/globalize-modules.md
-                - name: Entwickeln von Datenaktivitäten
+                    - name: Azure Key Vault für die sichere Schlüsselverwaltung einrichten
+                      href: e-commerce-extensibility/set-up-key-vault.md
+                - name: Datenaktivitäten entwickeln
                   items:
-                    - name: Überblick zu Datenaktivitäten
+                    - name: Übersicht über Datenaktivitäten
                       href: e-commerce-extensibility/data-actions.md
-                    - name: Testen von Datenaktivitäten mit Pseudodaten
+                    - name: Cache-Optionen für Datenaktivitäten
+                      href: e-commerce-extensibility/data-action-cache.md
+                    - name: Datenaktivitäten mit Pseudodaten testen
                       href: e-commerce-extensibility/test-data-action-mocks.md
-                    - name: Seitenweises Laden von Datenaktivitäten
+                    - name: Seitenauslastungs-Datenaktivitäten
                       href: e-commerce-extensibility/page-load-data-action.md
                     - name: Ereignisbasierte Datenaktivitäten
                       href: e-commerce-extensibility/event-based-data-actions.md
@@ -2080,7 +2088,9 @@
                       href: e-commerce-extensibility/theme-style-presets.md
                     - name: 'Design erweitern, um Modulerweiterungen hinzuzufügen'
                       href: e-commerce-extensibility/theme-module-extensions.md
-                    - name: Design aus einem Basisdesign erweitern
+                    - name: Eine Modulbibliothekskomponente in einem Design überschreiben
+                      href: e-commerce-extensibility/override-theme-component.md
+                    - name: Ein Design aus einem Basisdesign erweitern
                       href: e-commerce-extensibility/extend-theme.md
                     - name: Anpassungscode mit benutzerdefinierten Ressourcen ergänzen
                       href: e-commerce-extensibility/add-custom-resources.md
@@ -2102,6 +2112,10 @@
                       href: e-commerce-extensibility/package-deploy.md
                     - name: SDK- und Modulbibliotheksupdates
                       href: e-commerce-extensibility/sdk-updates.md
+                - name: Bewährte Methoden
+                  items:
+                    - name: Bewährte Methoden für die Dynamics 365 Commerce-Entwicklung
+                      href: e-commerce-extensibility/best-practices-dev.md
             - name: Retail SDK
               items:
                 - name: Retail SDK-Architektur
@@ -2197,7 +2211,7 @@
                 - name: Retail Typescript und C#-Proxys
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Retail Server-APIs in externen Anwendungen nutzen
-                  href: dev-itpro/consume-retail-server-api
+                  href: dev-itpro/consume-retail-server-api.md
             - name: Erweiterbarkeit von Commerce Runtime (CRT)
               items:
                 - name: Architektur und Konfiguration von CRT

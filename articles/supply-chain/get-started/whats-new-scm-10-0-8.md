@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 756924c87ced7cd2d5fc4e7c2a01b571558d3550
-ms.sourcegitcommit: 06f64550b2043582de4018bdd3924fcc1fd5d310
+ms.openlocfilehash: 1b18965b41822c6ae6c263948c6605a229277165
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "3801457"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012320"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1008-february-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.8 (Februar 2020)
 
@@ -39,10 +39,11 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel verweisen auf zusätzliche Informationen auf der Seite [Release-Pläne](https://docs.microsoft.com/dynamics365/release-plans/). Zusätzliche Links verweisen auf zusätzliche Dokumentationen oder Videos, die derzeit für diese Funktion verfügbar sind. Einige dieser Funktionen waren möglicherweise auch in einer früheren inkrementellen Version enthalten, wurden jedoch im früheren Thema *Was gibt's Neues* nicht angekündigt, also fügen wir sie hier hinzu. Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 
 - [Zusätzliche Lagerplatzzone](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/additional-location-zone)
+
 - [Anlagenverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/dynamics-365-asset-management)<br> - Weitere Informationen finden Sie unter [Anlagenverwaltung – Übersicht](../asset-management/index.md).
 - [Arbeit stornieren](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cancel-work)<br> - Weitere Informationen finden Sie unter [Lagerarbeit bei der Ausnahmebehandlung stornieren](../warehousing/cancel-warehouse-work.md).
 - [Arbeitspool für Arbeit ändern](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/change-work-pool-work)<br> - Weitere Informationen finden Sie unter [Ändern Sie den Arbeitspool bei der Arbeit](../warehousing/change-work-pool-on-work.md).
-- [Clusterposition voll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full) – Weitere Informationen finden Sie unter [Clusterposition voll](../warehousing/cluster-position-full.md).
+- [Clusterposition voll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/cluster-position-full)<br> - Weitere Informationen finden Sie unter [Clusterposition voll](../warehousing/cluster-position-full.md).
 - [Bestätigen und übertragen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/confirm-transfer)<br> - Weitere Informationen finden Sie unter [Bestätigen und übertragen](../warehousing/confirm-and-transfer.md).
 - [Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-directive-inventory-picking-aging)<br> - Weitere Informationen finden Sie unter [Fälligkeit für Lagerplatzrichtlinie-Bestandsentnahme](../warehousing/location-directive-inventory-picking-aging.md).
 - [Lagerplatzstatus](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/location-status)

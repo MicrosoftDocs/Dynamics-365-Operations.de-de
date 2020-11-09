@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c240e11394582ad1af563ee4a8e58632babfff3a
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: b02bfd83cfc4f1585c9044ebca8b20413042124a
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976378"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006165"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Kostenaufschlüsselungsrichtlinie und Gemeinkostenberechnung 
 
@@ -76,7 +76,7 @@ Eine Dimensionshierarchie, die die Meldeanforderungen der Organisation erfüllt,
 
 **Dimensionshierarchie**
 
-|              | Dimensionsmitgliedsbereiche |                     |
+|    &nbsp;    | Dimensionsmitgliedsbereiche | &nbsp;              |
 |--------------|-------------------------|---------------------|
 | **Knoten**        | **Ausgangsdimensionsmitglied**   | **Zieldimensionsmitglied** |
 | Organisation |                         |                     |
@@ -97,7 +97,7 @@ Eine Dimensionshierarchie, die die Meldeanforderungen der Organisation erfüllt,
 
 **Dimensionshierarchie**
 
-|                         | Dimensionsmitgliedsbereiche |                     |
+|      &nbsp;             | Dimensionsmitgliedsbereiche |      &nbsp;         |
 |-------------------------|-------------------------|---------------------|
 | Knoten                   | Ausgangsdimensionsmitglied   | Zieldimensionsmitglied |
 | Gewinn- und Verlustaufstellung |                         |                     |
@@ -105,7 +105,7 @@ Eine Dimensionshierarchie, die die Meldeanforderungen der Organisation erfüllt,
 
 Nachdem die Hauptbucheinträge verarbeitet wurden, sieht das Kosteneintragssaldo nach Kostenobjekt so aus.
 
-|                      | **Kostenobjekt** |           |           |           | **Summe**     |
+|      &nbsp;          | **Kostenobjekt** | &nbsp;    |  &nbsp;   |  &nbsp;   | **Summe**     |
 |----------------------|-----------------|-----------|-----------|-----------|---------------|
 | **Kostenelement**     | **CC001**       | **CC002** | **CC003** | **CC004** |               |
 | **1001 Elektrizität** | 100,00          | 200.00    | 6.000,00  | 2.000,00  | **8.300,00**  |
@@ -159,7 +159,7 @@ Wenn Sie mehr darüber erfahren möchten, wie Kosten zwischen den Kostenstellen 
 
 Kostenelementdimensionsmitglieder können wie folgt eingerichtet werden.
 
-| Kostenelemente | Typ          |               |
+| Kostenelemente | Typ          |     &nbsp;    |
 |---------------|---------------|---------------|
 | 1001          | Elektrizität   | Primär       |
 | 1002          | Löhne      | Primär       |
@@ -179,14 +179,14 @@ Die Dimensionshierarchie **Gewinn und Verlustaufstellung** muss mit den neuen Di
 
 **Dimensionshierarchie**
 
-|                         | Dimensionsmitgliedsbereiche |                     |
+|      &nbsp;             | Dimensionsmitgliedsbereiche |  &nbsp;             |
 |-------------------------|-------------------------|---------------------|
 | Knoten                   | Ausgangsdimensionsmitglied   | Zieldimensionsmitglied |
 | Gewinn- und Verlustaufstellung |                         |                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;Primäre Kosten                        | 10001                   | 10003               |
 | &nbsp;&nbsp;&nbsp;&nbsp;Sekundäre Kosten                         | **SC-CC001**            | **SC-CC004**        |
 
-Erstellen Sie eine **Kostenrolluprichtlinie**, bei der jede Kostenstelle einem entsprechenden Kostenelement vom Typ **Sekundär** zugeordnet ist.
+Erstellen Sie eine **Kostenrolluprichtlinie** , bei der jede Kostenstelle einem entsprechenden Kostenelement vom Typ **Sekundär** zugeordnet ist.
 
 **Kostenaufschlüsselungsrichtlinien**
 
@@ -225,7 +225,7 @@ Das System wendet nun die **Kostenrolluprichtlinie** an, wenn die **Kostenobjekt
 > [!NOTE]
 > Die Journaleinträge werden auf den Regeln in der **Kostenrolluprichtlinie** erstellt, wenn eine Richtlinie vorhanden ist. Der angezeigte Saldo ist der Saldo der Gemeinkostenberechnung.
 
-Die Seite **Kostenobjekt-Kostenobjektsaldo-Journaleintragsdetails**, auf die von den Journaleinträgen zugegriffen wird, zeigt, wie der Saldo erhalten wird.
+Die Seite **Kostenobjekt-Kostenobjektsaldo-Journaleintragsdetails** , auf die von den Journaleinträgen zugegriffen wird, zeigt, wie der Saldo erhalten wird.
 
 **Beispiel: Der Journaleintrag für Kostenobjekt CC002 Finanzen**
 
@@ -258,7 +258,7 @@ Die Dimensionshierarchien ermöglichen Ihnen, Daten auf verschiedenen Aggregatio
 
 Es folgt das Beispiel einer Power Pivot-Berichterstellung in Excel.
 
-| **Gewinn- und Verlustaufstellung** | **Kostenobjekt** |                |               |               |  **Summe**    |
+| **Gewinn- und Verlustaufstellung** | **Kostenobjekt** |      &nbsp;    |   &nbsp;      |     &nbsp;    |  **Summe**    |
 |-----------------------------|-----------------|----------------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002**      | **CC003**     | **CC004**     |               |
 | **Primäre Kosten**            | **10.100,00**   | **14.200,00**  | **14.000,00** | **8.500,00**  | **46.800,00** |
@@ -276,7 +276,7 @@ Mithilfe von einer **Kostenrolluprichtlinie** und **Kostenelementen vom Typs "se
 
 Wenn das gleiche Beispiel ausgeführt wird, ohne die **Kostenrolluprichtlinie** zu erstellen, sieht das Berichterstellungsergebnis wie unten dargestellt aus. Die Kosten fließen ordnungsgemäß, aber die Nachweisbarkeit und der Einblick darin, wie Kosten zwischen Kostenstellen fließen, gehen verloren.
 
-| **Gewinn- und Verlustaufstellung** | **Kostenobjekt** |           |               |               |          **Summe**  |
+| **Gewinn- und Verlustaufstellung** | **Kostenobjekt** |   &nbsp;  |    &nbsp;     |  &nbsp;       |          **Summe**  |
 |-----------------------------|-----------------|-----------|---------------|---------------|---------------|
 |                             | **CC001**       | **CC002** | **CC003**     | **CC004**     |               |
 | **Primäre Kosten**            | **0,00**        | **0,00**  | **31.082,75** | **15.717,25** | **46.800,00** |

@@ -18,17 +18,17 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b8e39539f767cc2944a9a7fdda09121921c64763
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
+ms.sourcegitcommit: d6250ee5ced43be39e789324a895fd1c07178935
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835963"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4039768"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Erstellen eines Azure-Speicherkontos und eines Schlüsseltresors
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+
 
 
 Der Add-On-Service für die elektronische Rechnungsstellung übernimmt die Zuständigkeit für die Speicherung aller Ihrer Geschäftsdaten in den Microsoft Azure-Ressourcen, die Ihrem Unternehmen gehören. Um sicherzustellen, dass der Service ordnungsgemäß funktioniert und auf alle Geschäftsdaten, die für das Add-On für die elektronische Rechnungsstellung benötigt und von ihm generiert werden, nur vom Add-On zugegriffen wird, müssen Sie zwei Azure-Hauptressourcen erstellen:

@@ -3,7 +3,7 @@ title: Arbeiten mit Fragmenten
 description: In diesem Thema wird beschrieben, warum, wann und wie Fragmente in Microsoft Dynamics 365 Commerce verwendet werden.
 author: phinneyridge
 manager: annbe
-ms.date: 07/31/2020
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b3e3299388190f03e761591a0c23164b705db9e8
-ms.sourcegitcommit: f16db76c1c235dfa445b50614bcee9219782d6dc
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: b063bf3a52f19baa11ddba31ef9313d58a0f610e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3961657"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4019563"
 ---
 # <a name="work-with-fragments"></a>Arbeiten mit Fragmenten 
 
@@ -58,31 +58,27 @@ Sie können entweder ein neues Fragment erstellen oder eine vorhandene Modulkonf
 
 ### <a name="save-an-existing-module-configuration-as-a-fragment"></a>Speichern einer vorhandenen Modulkonfiguration als Fragment
 
-Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederverwendbares Fragment zu konvertieren.
+Gehen Sie folgendermaßen vor, um ein zuvor konfiguriertes Modul in ein wiederverwendbares Fragment im Commerce Site Builder zu konvertieren.
 
 1. Öffnen Sie eine Seite oder Vorlage, die das Modul enthält, das Sie in ein Fragment konvertieren möchten.
 1. Wählen Sie im Gliederungsbereich links oder direkt in Visual Page Builder das zuvor konfigurierte Modul aus.
-1. Wählen Sie die Auslassungspunkte (**...**) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls im Visual Page Builder aus. 
-1. Wählen Sie **Als Seitenfragment teilen** aus. 
-1. Geben Sie im Dialogfeld **Als Seitenfragment speichern** einen Namen für das Fragment ein.
+1. Wählen Sie die Auslassungspunkte ( **...** ) neben dem Namen des Moduls im Gliederungsbereich oder in der Symbolleiste des ausgewählten Moduls im Visual Page Builder aus. 
+1. Wählen Sie **Als Fragment teilen**. 
+1. Geben Sie im Dialogfeld **Als Fragment speichern** einen Namen für das Fragment ein.
 1. Wählen Sie **OK** aus, um die Modulkonfiguration als Fragment zu speichern, das anderen Seiten hinzugefügt werden kann.
+<!-- The following image shows how to save a module configuration as a fragment.-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
-Das folgende Bild zeigt, wie Sie eine Modulkonfiguration als Fragment speichern.
+### <a name="create-a-new-fragment"></a>Neues Fragment erstellen
 
-![Ein Screenshot, wie eine Modulkonfiguration als Fragment gespeichert wird](./media/save-as-fragment.png)
-
-### <a name="create-a-new-fragment"></a>Ein neues Fragment erstellen
-
-Um ein neues Fragment zu erstellen, befolgen Sie diese Schritte.
+Führen Sie die folgenden Schritte aus, um ein neues Fragmente im Commerce Site Builder zu erstellen.
 
 1. Wählen Sie im linken Navigationsbereich **Fragmente** aus.
-1. Wählen Sie **Neues Seitenfragment** aus. Ein Dialogfeld mit allen verfügbaren Modultypen wird angezeigt. Wie bereits erwähnt, können Fragmente aus jedem Modultyp erstellt werden.
+1. Wählen Sie **Neu** aus. Ein Dialogfeld **Neues Fragment** mit allen verfügbaren Modultypen wird angezeigt. Wie bereits erwähnt, können Fragmente aus jedem Modultyp erstellt werden.
 1. Wählen Sie einen Modultyp für Ihr Fragment.
 
-Das folgende Bild zeigt, wo ein neues Fragment erstellt werden soll.
-
-![Ein Screenshot, wo ein neues Fragment erstellt werden soll](./media/fragment-nav-menu.png)
-
+<!-- The following image shows where to create a new fragment.-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Durch Auswahl eines generischen Containermodultyps erhalten Sie die größte Flexibilität, wenn Sie Ihr Fragment später aktualisieren und konfigurieren müssen.
 
@@ -92,30 +88,28 @@ Die folgenden Prozeduren beschreiben das Hinzufügen, Entfernen und Bearbeiten v
 
 ### <a name="add-a-fragment"></a>Fragment hinzufügen
 
-Gehen Sie folgendermaßen vor, um einer Seite ein Fragment hinzuzufügen.
+Führen Sie die folgenden Schritte aus, um ein Fragmente im Commerce Site Builder zu erstellen.
 
 1. Wählen Sie im Gliederungsbereich links oder direkt im Visual Page Builder einen Container oder Slot aus, zu dem untergeordnete Module hinzugefügt werden können.
-1. Wählen Sie im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen (**+**) aus.  
-1. Wählen Sie **Fragment hinzufügen** aus.
-
-    ![Ein Screenshot, in dem gezeigt wird, wie einem Slot oder Container ein vorhandenes Fragment hinzugefügt wird](./media/add-fragment.png)
+1. Wählen Sie die Auslassungspunkte ( **...** ) neben dem Namen des Containers oder Slots aus.  Wenn Sie alternativ Visual Page Builder verwenden, wählen Sie das Pluszeichen ( **+** ) aus.  
+1. Wählen Sie **Fragment hinzufügen**.
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Wenn der Container oder Slot keine neuen untergeordneten Module unterstützt, ist die Option **Fragment hinzufügen** nicht verfügbar.
     
-1. Suchen Sie im Dialogfeld **Fragment hinzufügen** nach einem Fragment, das Sie hinzufügen möchten, und wählen Sie es aus. Wenn keine verfügbaren Fragmente aufgelistet sind, müssen Sie möglicherweise zuerst ein Fragment aus einem Modultyp erstellen, den der ausgewählte Container oder Slot unterstützt.
+1. Suchen Sie im Dialogfeld **Fragment auswählen** nach einem Fragment, das Sie hinzufügen möchten, und wählen Sie es aus. Wenn keine verfügbaren Fragmente aufgelistet sind, müssen Sie möglicherweise zuerst ein Fragment aus einem Modultyp erstellen, den der ausgewählte Container oder Slot unterstützt.
 1. Wählen Sie Ihr gewünschtes Fragment aus, das dem Container oder Slot auf Ihrer Seite hinzugefügt werden soll.
-
-    ![Ein Screenshot des modalen Fensters der Fragmentauswahl](./media/fragment-picker.png)
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Die Module, die in einem Container oder Slot zulässig sind, werden durch die Seitenvorlage oder die eigenen Definitionen der Module definiert.
 
 ### <a name="remove-a-fragment"></a>Ein Fragment entfernen
 
-Gehen Sie folgendermaßen vor, um ein Fragment aus einem Slot oder Container auf einer Seite zu entfernen.
+Führen Sie die folgenden Schritte aus, um ein Fragment aus einem Slot oder Container auf einer Seite im Commerce Site Builder zu entfernen.
 
-1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte (**...**) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment in Visual Page Builder und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
+1. Wählen Sie links im Gliederungsbereich die Auslassungspunkte ( **...** ) neben dem Namen des zu entfernenden Fragments und anschließend das Papierkorbsymbol aus.  Alternativ können Sie das Fragment in Visual Page Builder und das Papierkorbsymbol in der Symbolleiste des Fragments auswählen.
 1. Wenn Sie aufgefordert werden, das Entfernen des Fragments zu bestätigen, wählen Sie **OK** aus.
 
 > [!NOTE]
@@ -125,7 +119,7 @@ Gehen Sie folgendermaßen vor, um ein Fragment aus einem Slot oder Container auf
 
 Um Fragmente zu bearbeiten, müssen Sie die Benutzeroberfläche des Fragmenteditors verwenden. Diese Beschränkung ist beabsichtigt. Es hilft, sicherzustellen, dass Autoren den Prozess der Bearbeitung der Module für eine bestimmte Seite nicht mit dem Prozess der Bearbeitung von Fragmenten verwechseln, die möglicherweise auf mehreren Seiten geteilt werden.
 
-Um ein neues Fragment zu bearbeiten, befolgen Sie diese Schritte.
+Führen Sie die folgenden Schritte aus, um ein neues Fragmente im Commerce Site Builder zu bearbeiten.
 
 1. Wählen Sie im linken Navigationsbereich **Fragmente** aus.
 1. Wählen Sie unter **Fragmente** das zu bearbeitende Fragment aus.

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,18 +18,16 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: ed8f0351d1e16cceb6c9749f434a8980ef2be29d
-ms.sourcegitcommit: 025561f6a21fe8705493daa290f3f6bfb9f1b962
+ms.openlocfilehash: 3c564d580d2743d8a80cdf5667b1f95e00736d60
+ms.sourcegitcommit: afc43699c0edc4ff2be310cb37add2ab586b64c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "3835853"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4000763"
 ---
 # <a name="unified-product-experience"></a>Einheitliche Produktumgebung
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Wenn ein Geschäftsökosystem aus Dynamics 365-Anwendungen besteht, wie Finance, Supply Chain Management und Sales, verwenden Unternehmen diese Anwendungen häufig für Quellproduktdaten. Der Grund dafür ist, dass diese Apps eine robuste Produktinfrastruktur bieten, die durch ausgeklügelte Preiskonzepte und genaue Bestandsverfügbarkeitsdaten abgerundet werden. Unternehmen, die ein externes Product Lifecycle Management (PLM)-System für die Beschaffung von Produktdaten verwenden, können Produkte von Finance and Operations-Apps in andere Dynamics 365-Apps kanalisieren. Die einheitliche Produkterfahrung bringt das integrierte Produktdatenmodell in Common Data Service, sodass alle Anwendungsbenutzer einschließlich Power Platform-Benutzer den Vorteil der umfassenden Produktdaten aus Finance and Operations-Apps nutzen können.
 
@@ -93,7 +90,7 @@ Da das Produkt als SKU dargestellt wird, können die Konzepte von eindeutig iden
 
 Wenn die Dual-Write-Funktionalität aktiviert ist, werden die Produkte aus Finance and Operations in anderen Dynamics 365-Produkten im Zustand **Entwurf** synchronisiert. Sie werden der ersten Preisliste mit derselben Währung hinzugefügt. Das bedeutet, sie werden der ersten Preisliste in einer Dynamics 365-App hinzugefügt, die mit der Währung Ihrer juristischen Person übereinstimmt, in der das Produkt in einer Finance and Operations-App freigegeben wird. 
 
-Produkte aus Finance and Operations-Apps werden standardmäßig mit anderen Dynamics 365-Apps im Status **Entwurf** synchronisiert. Um das Produkt mit dem Status **Aktiv** zu synchronisieren, können Sie es direkt in Auftragsangeboten verwenden, beispielsweise muss die folgende Einstellung ausgewählt werden. Wechseln Sie dazu zur Registerkarte **System > Verwaltung > Systemverwaltung > Systemeinstellungen > Verkauf**, und wählen Sie **Produkte im Status „Aktiv“ erstellen = ja** aus. 
+Produkte aus Finance and Operations-Apps werden standardmäßig mit anderen Dynamics 365-Apps im Status **Entwurf** synchronisiert. Um das Produkt mit dem Status **Aktiv** zu synchronisieren, können Sie es direkt in Auftragsangeboten verwenden, beispielsweise muss die folgende Einstellung ausgewählt werden. Wechseln Sie dazu zur Registerkarte **System > Verwaltung > Systemverwaltung > Systemeinstellungen > Verkauf** , und wählen Sie **Produkte im Status „Aktiv“ erstellen = ja** aus. 
 
 Beachten Sie, dass die Synchronisierung der Produkte aus Finance and Operations-Apps nach Common Data Service erfolgt. Dies bedeutet, dass die Werte der Produktentitätsfelder in Common Data Service zwar geändert werden können, die Werte beim Auslösen der Synchronisierung in Common Data Service jedoch überschrieben werden (wenn ein Produktfeld in einer Finance and Operations-App geändert wird). 
 
@@ -109,7 +106,7 @@ Beachten Sie, dass die Synchronisierung der Produkte aus Finance and Operations-
 
 Produktdimensionen sind Merkmale, die eine Produktvariante identifizieren. Die vier Produktdimensionen (Farbe, Größe, Stil und Konfiguration) werden auch Common Data Service zugeordnet, um die Produktvarianten zu definieren. Die folgende Abbildung zeigt das Datenmodell für die Produktdimension „Farbe”. Dasselbe Modell wird auf die Größen, Stile und Konfigurationen angewendet. 
 
-![Datenmodell für Produkte](media/dual-write-product-two.png)
+![Datenmodell für Produktdimensionen](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -145,7 +142,7 @@ Standardauftragseinstellungen definieren den Standort und Lagerort, aus dem Arti
 
 Die Maßeinheiten und die jeweilige Umrechung sind in Common Data Service entsprechend des Datenmodells im Diagramm verfügbar.
 
-![Datenmodell für Produkte](media/dual-write-product-three.png)
+![Datenmodell für Maßeinheit](media/dual-write-product-three.png)
 
 Das Maßeinheitskonzept wird in Finance and Operations-Apps und anderen Dynamics 365-Apps integriert. Für jede Einheitenklasse in einer Finance and Operations-App wird eine Einheitengruppe in einer Dynamics 365-App erstellt, die die Einheiten enthält, die zur Einheitenklasse gehören. Eine Standardbasiseinheit wird auch für jede Einheitsgruppe erstellt. 
 
@@ -205,7 +202,7 @@ Integrationsschlüssel werden verwendet, um Produkte zwischen Dynamics 365 for F
 
 Für Benutzer von Dynamics 365-Apps wird das Produkt in der Benutzeroberfläche mit **msdyn_productnumber** gekennzeichnet (beachten Sie, dass die Feldbeschriftung **Produktnummer** lautet). Im Produktformular werden das Unternehmen und das Feld „msydn_productnumber“ angezeigt. Das Feld (productnumber), bei dem es sich um den eindeutigen Schlüssel für ein Produkt handelt, wird jedoch nicht angezeigt. 
 
-Wenn Sie Apps auf Common Data Service aufbauen, sollten Sie darauf achten, dass Sie den Integrationsschlüssel **Produktnummer** (die eindeutige Produkt-ID) verwenden. Verwenden Sie nicht **msdyn_productnumber**, da sie nicht eindeutig ist. 
+Wenn Sie Apps auf Common Data Service aufbauen, sollten Sie darauf achten, dass Sie den Integrationsschlüssel **Produktnummer** (die eindeutige Produkt-ID) verwenden. Verwenden Sie nicht **msdyn_productnumber** , da sie nicht eindeutig ist. 
 
 ## <a name="initial-synchronization-of-products-and-migration-of-data-from-common-data-service-to-finance-and-operations"></a>Erstsynchronisierung von Produkten und Migration von Daten aus Common Data Service nach Finance and Operations
 

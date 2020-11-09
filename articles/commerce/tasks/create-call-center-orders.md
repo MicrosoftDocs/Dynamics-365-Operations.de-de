@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ec10e0f79e4eca7f51ba48c679dcf6fe745eb29
-ms.sourcegitcommit: 57e1dafa186fec77ddd8ba9425d238e36e0f0998
+ms.openlocfilehash: dce2fdd9d91c2bd867f0455573733aefb0796fa7
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "3141429"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107351"
 ---
 # <a name="create-call-center-orders"></a> Callcenteraufträge erstellen
 
@@ -30,29 +30,29 @@ ms.locfileid: "3141429"
 
 Diese Prozedur führt Sie Schritt für Schritt durch die Suche nach einem Debitor, das Erstellen eines neuen Auftrags, die Suche nach einem Produkt und das Einziehen einer Zahlung vom Debitor. Für diese Prozedur wird das Demo-Datenunternehmen USRT verwendet. Sie ist für den Auftragssachbearbeiter vorgesehen. Voraussetzungen: Die Benutzer, welche das Verfahren ausführen, sind als Callcenterbenutzer eingerichtet, und der halbjährliche Fabrikam-Katalog wird mit mindestens einem Quellcode veröffentlicht.
 
-1. Navigieren Sie zu Retail und Commerce > Kunden > Kundendienst.
-2. Geben Sie im SearchText-Feld die Suchkriterien ein, um den Debitor zu suchen.
-    * Für diese Beispielsprozedur geben Sie "karen" ein und drücken Sie die Taste.  
-3. Klicken Sie auf "Suchen".
-    * Da nur ein Debitor namens Karen in den Demodaten vorhanden ist, erfolgt die Auswahl automatisch.  
-4. Klicken Sie auf "Neuer Auftrag".
-5. Erweitern oder reduzieren Sie den Kopfbereich "Auftrag".
+1. Navigieren Sie zu **Retail und Commerce \> Kunden \> Kundendienst**.
+2. Geben Sie im Feld **SearchText** die Suchkriterien ein, um den Debitor zu suchen.
+    * Für diese Beispielsprozedur geben Sie Karen ein und wählen **TAB**.  
+3. Wählen Sie Suchen aus.
+    * Da nur ein Debitor namens Karen in den Demodaten vorhanden ist, wird das Ergebnis automatisch ausgewählt.  
+4. **Neuen Auftrag** auswählen.
+5. Erweitern oder reduzieren Sie den Kopfbereich **Auftrag**.
 6. Wählen Sie den Quelltyp für den Katalog aus.
-    * Wenn keine aktiven Quellcodes vorliegen, können Sie das Quellfeld schließen und diesen Schritt überspringen.  
-7. Klicken Sie auf "Position hinzufügen".
-8. Geben Sie im Feld "Artikelnummer" den Artikelsuchbegriff ein.
-    * Für diese Beispielprozedur geben Sie eine Artikelnummer " 8111 "ein und drücken Sie die Registerkarte. Dadurch wird das Artikelsuchfenster angezeigt.  
-9. Wählen Sie das Produkt aus, das zum Auftrag hinzugefügt werden soll.
+    * Wenn keine aktiven Quellcodes vorliegen, können Sie diesen Schritt überspringen.  
+7. Wählen Sie **Position hinzufügen** aus.
+8. Geben Sie im Feld **Artikelnummer** den Artikelsuchbegriff ein.
+    * Für diese Beispielprozedur geben Sie eine Artikelnummer 8111 ein und drücken Sie die Registerkarte. Durch diese Aktion wird das Artikelsuchfenster angezeigt.  
+9. Wählen Sie das Produkt aus, das zum Auftrag hinzugefügt wird.
 10. Geben Sie die Verkaufsmenge ein.
-11. Klicken Sie auf Erstellen.
-12. Klicken Sie auf "Abschließen", um die Debitorenzahlung aufzuzeichnen.
-13. Klicken Sie auf Hinzufügen.
+11. Wählen Sie **Erstellen** aus.
+12. Wählen Sie **Abschließen** , um die Debitorenzahlung aufzuzeichnen.
+13. Wählen Sie **Hinzufügen** aus.
     * Der Hinzufügen-Llink  ist die Registerkarte Zahlungen. Erweitern Sie die Registerkarte wenn sie verringert ist.  
 14. Wählen Sie die Zahlungsmethode aus.
     * Für diese Prozedur wählen Sie die Bargeldzahlungsmethode aus.  
 15. Schließen Sie die Seite.
 16. Geben Sie den Betrag ein.
-    * Für diese Prozedur geben Sie einen Betrag gleich dem Auftragssaldo ein, der in der Auftrags-Übersichtsseite auf der linken Seite des Betrag-Felds angezeigt wird. Dies ermöglicht Ihnen, den Auftrag als vollständig bezahlt abzuschließen.  
-17. Klicken Sie auf "OK".
-18. Klicken Sie auf Absenden.
+    * Für diese Prozedur geben Sie einen Betrag gleich dem Auftragssaldo ein, der in der Auftrags-Übersichtsseite auf der linken Seite des Betrag-Felds angezeigt werden kann. Dies Aktion ermöglicht Ihnen, den Auftrag als vollständig bezahlt abzuschließen.  
+17. Wählen Sie **OK**.
+18. Wählen Sie **Senden**.
 

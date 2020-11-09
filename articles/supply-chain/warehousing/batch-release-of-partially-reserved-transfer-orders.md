@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLoadPlanningWorkbench
+ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0707731caaf9b4852e3c19be899ad92f5b84e29
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 7807ae109a4a708f3530112feed1a4fb210a30ef
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3201294"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016286"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Chargenfreigabe von teilweise reservierten Umlagerungsaufträgen
 
@@ -45,15 +45,15 @@ Bevor ein Auftrag einem Lagerort in einer Charge teilweise freigegeben werden ka
 
 Erfüllungspolitische Richtlinien für Umlagerungsaufträge und Aufträge werden auf Unternehmensebene angegeben. Je nach den Einstellungen der Erfüllungsrichtlinie wird die Freisetzung von Aufträgen in einer Charge angenommen oder abgelehnt. Die Aufträge werden dann entsprechend verarbeitet.
 
--   Weitere Erfüllungspolitische Richtlinien für Aufträge und Umlagerungsaufträge klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Freigebung Lagerort** \> **Erfüllungsrichtlinie**, und erstellen Sie dann eine Erfüllungsrichtlinie, indem Sie einen Namen und eine Beschreibung eingeben.
+-   Weitere Erfüllungspolitische Richtlinien für Aufträge und Umlagerungsaufträge klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Freigebung Lagerort** \> **Erfüllungsrichtlinie** , und erstellen Sie dann eine Erfüllungsrichtlinie, indem Sie einen Namen und eine Beschreibung eingeben.
 
--   Um einen Erfüllungssatz anzugeben, legen Sie einen Werttyp und die Meldung fest, die angezeigt werden soll, wenn gegen die Erfüllungsrichtlinie verstoßen wird. Klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Freigegebener Lagerort** \>  **Erfüllungsrichtlinie** und dann**Erfüllungssatz**, **Werttyp** und **Erfüllungsverstoßnachricht**.
+-   Um einen Erfüllungssatz anzugeben, legen Sie einen Werttyp und die Meldung fest, die angezeigt werden soll, wenn gegen die Erfüllungsrichtlinie verstoßen wird. Klicken Sie auf **Lagerortverwaltung** \> **Einstellungen** \> **Freigegebener Lagerort** \>  **Erfüllungsrichtlinie** und dann **Erfüllungssatz** , **Werttyp** und **Erfüllungsverstoßnachricht**.
 
 ### <a name="set-the-fulfillment-policies-for-transfer-orders-and-sales-orders"></a>Geben Sie Erfüllungskriterien für Umlagerungsaufträge und Aufträge an
 
--   Um die Erfüllungsrichtlinien für Umlagerungsaufträge festzulegen, klicken Sie auf **Lagerverwaltung** \> **Einstellungen** \> **Parameter für Lager- und Lagerortverwaltung** \> **Umlagerungsaufträge** \> **Lagerortverwaltung**, und wählen Sie dann eine Umlagerungsauftragserfüllungsrichtlinie aus.
+-   Um die Erfüllungsrichtlinien für Umlagerungsaufträge festzulegen, klicken Sie auf **Lagerverwaltung** \> **Einstellungen** \> **Parameter für Lager- und Lagerortverwaltung** \> **Umlagerungsaufträge** \> **Lagerortverwaltung** , und wählen Sie dann eine Umlagerungsauftragserfüllungsrichtlinie aus.
 
--   Um die Erfüllungsrichtlinie für Aufträge einzurichten, klicken Sie auf **Debitoren** \> **Einstellungen** \> **Debitorenparameter** \> **Lagerortverwaltung**, und wählen Sie dann eine Auftragserfüllungsrichtlinie aus.
+-   Um die Erfüllungsrichtlinie für Aufträge einzurichten, klicken Sie auf **Debitoren** \> **Einstellungen** \> **Debitorenparameter** \> **Lagerortverwaltung** , und wählen Sie dann eine Auftragserfüllungsrichtlinie aus.
 
 ## <a name="allow-release-in-a-batch-and-specify-the-quantity-that-should-be-release-in-a-batch"></a>Friegabe in Stapelverarbeitung zulassen und die Menge definieren, die Freigabe in einem Stapel freigegeben werden soll
 
@@ -61,6 +61,6 @@ Ein Stapelverarbeitungsauftrag wird verwendet, um Aufträge in einer Stapelverar
 
 Der Parameter **Menge** gibt an, ob die gesamte Menge oder die physisch reservierte Menge in der Charge verwendet werden sollen. Der Parameter **Teilweise Freisetzung von freigegebenen Aufträgen** bestimmt, ob Aufträge in der Charge übernommen oder abgelehnt werden sollen, wenn sie zuvor vollständig freigegeben wurden.
 
--   Wenn Sie die **Menge** und **Teilweise Freisetzung von Aufträgen ermöglichen** für Umlagerungsaufträge festlegen, klicken Sie auf**Lagerortverwaltung** \> **Freigebung Lagerort** \> **Automatische Freigabe der Umlagerungsaufträge**.
+-   Wenn Sie die **Menge** und **Teilweise Freisetzung von Aufträgen ermöglichen** für Umlagerungsaufträge festlegen, klicken Sie auf **Lagerortverwaltung** \> **Freigebung Lagerort** \> **Automatische Freigabe der Umlagerungsaufträge**.
 
--   Wenn Sie die **Menge** und **Teilweise Freisetzung von Aufträgen ermöglichen** für Umlagerungsaufträge festlegen, klicken Sie auf**Lagerortverwaltung** \> **Freigebung Lagerort** \> **Automatische Freigabe der Umlagerungsaufträge**.
+-   Wenn Sie die **Menge** und **Teilweise Freisetzung von Aufträgen ermöglichen** für Umlagerungsaufträge festlegen, klicken Sie auf **Lagerortverwaltung** \> **Freigebung Lagerort** \> **Automatische Freigabe der Umlagerungsaufträge**.

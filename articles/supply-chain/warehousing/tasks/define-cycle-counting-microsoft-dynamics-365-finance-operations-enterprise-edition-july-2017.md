@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1503ef3646657a4b7bb7e240144af2ac559a62d0
-ms.sourcegitcommit: 8a2127c5af6cdbda30ccc1f9bef9bd4ab61e9e50
+ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "3383020"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016147"
 ---
 # <a name="define-cycle-counting"></a>Zykluszählung definieren  
 
@@ -46,7 +47,7 @@ Zykluszählung ist ein Lagerortprozess, den Sie verwenden können, um Artikel de
 7. Wählen Sie im Feld **Geleitet von** 'Systemgeleitet' fest. Wenn "das referenzierte System" aktiviert ist, ist der Lagerarbeiter aufgefordert, Arbeit zu öffnen, die im definierten Arbeitsklassen ist. (Wir erstellen diese Arbeitsklassen weiter)  
 8. Erweitern Sie das Inforegister **Arbeitsklassen**. Nun erstellen wir zwei Arbeitsklassen, die mit dem Menüelement des mobilen Geräts verwendet werden. Wenn das Menüelement verwendet wird, werden diese Arbeitsklassen abgefragt, und dadurch wird dem Benutzer die Arbeit mit der höchsten Priorität angezeigt.  
 9. Klicken Sie auf **Neu**.
-10. Wählen Sie im Feld**Arbeitsklassenkennung** einen Wert aus.
+10. Wählen Sie im Feld **Arbeitsklassenkennung** einen Wert aus.
 11. Klicken Sie auf **Neu**.
 12. Wählen Sie im Feld **Arbeitsklassenkennung** einen Wert aus.
 13. Klicken Sie im **Aktivitätsbereich** auf **Speichern**.

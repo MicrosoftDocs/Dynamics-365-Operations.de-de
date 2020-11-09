@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 240fdfb3519e1c4526c46fa3d5e3fbaa8e5a467e
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 540f4f4e4a047b5bc33c9be387c8940175f5f919
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3207346"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018153"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Kreditorenzusammenarbeit mit Debitoren
 
@@ -42,7 +42,7 @@ Kreditoren können außerdem Informationen zu Lieferungsbestand überwachen.
 
 Der Arbeitsbereich **Bestellungsbestätigung** ermöglicht Ihnen, auf Bestellungen zu antworten, die Ihnen zur Prüfung gesendet wurden. Er ermöglicht es Ihnen außerdem, Informationen zu Bestellungen, die eine Aktivität vom Debitor erfordern und Bestellungen, die bestätigt wurden aber noch offen sind, anzuzeigen.
 
-Es gibt drei Listen im Arbeitsbereich **Bestellungsbestätigung**:
+Es gibt drei Listen im Arbeitsbereich **Bestellungsbestätigung** :
 
 - **Bestellungen zur Prüfung** – Diese Liste enthält Bestellungen, die Ihnen gesendet wurden und eine Antwort von Ihnen erfordern. Nachdem Sie reagiert haben, wird die Bestellung nicht mehr in der Liste angezeigt. Wenn der Debitor Ihnen eine neue Version der Bestellung sendet, bevor Sie auf die frühere Version geantwortet haben, wird nur die aktuelle Version angezeigt.
 - **Debitorenaktivität abwarten** – Diese Liste zeigt alle Bestellungen an, auf die Sie geantwortet haben, die aber der Debitor noch nicht bestätigt hat. Wenn Sie eine Bestellung akzeptieren, können Sie sie in dieser Liste überwachen, bis der Status auf **Bestätigt** geändert wird. Wenn Sie eine Bestellung zurückweisen oder sie mit Änderungen akzeptieren, können Sie sie hier überwachen, bis der Debitor eine neue Version übermittelt.
@@ -59,7 +59,7 @@ Sie können die folgenden Seiten verwenden, um mit Bestellungen zu arbeiten:
 
 Die Bestellungen, die Ihnen der Debitor zur Prüfung sendet, werden im Arbeitsbereich **Bestellungsbestätigung** auf der Seite **Bestellungen zur Prüfung** angezeigt. Nachdem Sie eine Bestellung geöffnet haben, können Sie diese akzeptieren, ablehnen oder mit Änderungen akzeptieren. Es könnte im Bestellungskopf oder für einzelne Positionen Anhänge geben. Außerden können Sie Informationen zu Ihrer Antwort im Bestellungskopf oder einzelnen Positionen zuzuordnen. Zum Beispiel können einen Ersatzartikel für eine der Positionen vorschlagen.
 
-Sie können die Bestellung als PDF-Datei in der Vorschau anzeigen und drucken, indem Sie die Option **Vorschau anzeigen/Drucken** verwenden. Sie können auch die Aktivität **Dimensionen anzeigen** verwenden, um die folgenden Dimensionsspalten auszublenden oder anzuzeigen: **Standort**, **Lagerort**, **Farbe**, **Größe**, **Stil** und **Konfiguration**. 
+Sie können die Bestellung als PDF-Datei in der Vorschau anzeigen und drucken, indem Sie die Option **Vorschau anzeigen/Drucken** verwenden. Sie können auch die Aktivität **Dimensionen anzeigen** verwenden, um die folgenden Dimensionsspalten auszublenden oder anzuzeigen: **Standort** , **Lagerort** , **Farbe** , **Größe** , **Stil** und **Konfiguration**. 
 
 Bei Auswahl von **Mit Änderungen akzeptieren** können Sie bestimmte Positionen akzeptieren oder ablehnen. Sie können auch folgende Änderungen an den Positionen vornehmen:
 
@@ -87,12 +87,12 @@ Der Arbeitsbereich zeigt auch alle Angebotsanforderungen an, die Sie verloren od
 
 ### <a name="viewing-rfqs"></a>Angebotsanforderungen anzeigen
 
-Öffnen Sie den Arbeitsbereich **Kreditorenangebotsabgabe**, um auf die folgenden Informationen zuzugreifen:
+Öffnen Sie den Arbeitsbereich **Kreditorenangebotsabgabe** , um auf die folgenden Informationen zuzugreifen:
 
-- Wählen Sie **Neue Angebotseinladungen**, um die Angebotsanforderungen anzuzeigen, bei denen Ihr Unternehmen eingeladen wurde, darauf zu antworten. Von hier aus können Sie eine Angebotsanforderung anzeigen und den Angebotsprozess beginnen. Sie können auch ergänzte Angebotsanforderungen anzeigen, für die ein neues Angebot übermittelt werden muss.
+- Wählen Sie **Neue Angebotseinladungen** , um die Angebotsanforderungen anzuzeigen, bei denen Ihr Unternehmen eingeladen wurde, darauf zu antworten. Von hier aus können Sie eine Angebotsanforderung anzeigen und den Angebotsprozess beginnen. Sie können auch ergänzte Angebotsanforderungen anzeigen, für die ein neues Angebot übermittelt werden muss.
 - Wählen Sie **Zurückgegebene Angebote** aus, um die Angebotsanforderungen zu sehen, die der Debitor an Sie zurückgegeben hat, damit Sie weitere Informationen angeben können oder das Angebot aktualisieren können.
-- Wählen Sie **Angebote in Bearbeitung**, um die Angebotsanforderungen, anzuzeigen, an denen Sie oder eine Kontaktperson, die Ihr Unternehmen vertritt, gearbeitet haben, aber die noch nicht übermittelt wurden.
-- Wählen Sie **Zugesprochene Angebote**, um zu sehen, wenn der Debitor mindestens einer Position in Ihrem Angebot zugesprochen hat.
+- Wählen Sie **Angebote in Bearbeitung** , um die Angebotsanforderungen, anzuzeigen, an denen Sie oder eine Kontaktperson, die Ihr Unternehmen vertritt, gearbeitet haben, aber die noch nicht übermittelt wurden.
+- Wählen Sie **Zugesprochene Angebote** , um zu sehen, wenn der Debitor mindestens einer Position in Ihrem Angebot zugesprochen hat.
 - Wählen Sie **Verlorene Angebote** aus, um Angebote anzuzeigen, in denen alle Positionen abgelehnt wurden.
 - Wählen Sie den Link **Angebotsanforderungen** aus, um eine Liste aller Angebotsanforderungseinladungen des Kreditors anzuzeigen sowie aller Angebote, die übermittelt wurden. Die Seite **Angebotsanforderungen** listet alle Angebotsanforderungen auf, an denen ein Lieferant beteiligt war. Sie können nach Status suchen.
 - Wählen Sie den Link **Abgelehnte Angebote** aus, um eine Liste aller Angebotsanforderungen anzuzeigen, bei denen die Kontaktperson eines Kreditors es abgelehnt hat, ein Angebot zu unterbreiten.
@@ -113,7 +113,7 @@ Personen, die im öffentlichen Sektor arbeiten, können offene und abgelaufene A
 
 ### <a name="bidding"></a>Angebot unterbreiten
 
-- Klicken Sie auf **Bieten**, um damit zu beginnen, auf eine Angebotsanforderung hin ein Angebot zu unterbreiten.
+- Klicken Sie auf **Bieten** , um damit zu beginnen, auf eine Angebotsanforderung hin ein Angebot zu unterbreiten.
 
     Wenn für Angebotsfelder in den Kopfzeilen und Positionen einer Angebotsanforderung die Bearbeitung aktiviert ist, können Sie Ihr Angebot direkt im Positionsraster eingeben. Sie müssen auch jegliche zusätzlichen Angebotsinformationen berücksichtigen, die in den Positionsdetails hinzugefügt werden sollten.
 
@@ -121,7 +121,7 @@ Personen, die im öffentlichen Sektor arbeiten, können offene und abgelaufene A
 
     Zu jedem Zeitpunkt vor dem Ablaufdatum können Sie ein Angebot speichern. Sie können dann später zurückkehren, um das Angebot fertig zu stellen und zu senden. Nachdem Sie ein Angebot gesendet haben, können Sie es bis zum Ablaufdatum erneut aufrufen und aktualisieren.
 
-- Wählen Sie **Aus Angebotsanforderung zurücksetzen**, um die Daten zurückzusetzen, die Sie für ein Angebot eingegeben haben, und um die ursprünglichen Angebotsanforderung wiederherzustellen. Sie können den Kopf oder die Position zurücksetzen.
+- Wählen Sie **Aus Angebotsanforderung zurücksetzen** , um die Daten zurückzusetzen, die Sie für ein Angebot eingegeben haben, und um die ursprünglichen Angebotsanforderung wiederherzustellen. Sie können den Kopf oder die Position zurücksetzen.
 - Wählen Sie im Positionsraster **Alternative hinzufügen** oder **Alternative entfernen** aus, um mit Alternativen zu arbeiten.
 
     Manche Angebotsanforderungen lassen alternative Angebote zu. Sie können alternative Angebote nur für Positionen des Typs **Kategorie** angeben, da bestimmte Artikel nicht als Alternativen hinzugefügt werden können. 

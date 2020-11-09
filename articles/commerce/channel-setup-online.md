@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0d803b23f9de9daf624537d1d1ef30f17dc05fea
-ms.sourcegitcommit: adf196c51e2b6f532d99c177b4c6778cea8a2efc
+ms.openlocfilehash: 07225d97af76ea665fa28362cc205c6e8dc4fdf4
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "3533320"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107229"
 ---
 # <a name="set-up-an-online-channel"></a>Onlinechannel einrichten
 
@@ -70,13 +70,13 @@ Wenn Ihre E-Commerce-Site mehrere Sprachen unterstützt, erweitern Sie den Absch
 
 ## <a name="set-up-payment-account"></a>Zahlungskonto einrichten
 
-Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlungen hinzufügen. Informationen zum Einrichten eines Adyen-Zahlungskonnektors finden Sie unter [Dynamics 365 Adyen-Zahlungskonnektor](../retail/dev-itpro/adyen-connector.md).
+Aus dem Abschnitt **Zahlungskonto** können Sie einen Drittanbieter für Zahlungen hinzufügen. Mehr Informationen zum Einrichten eines Adyen-Zahlungskonnektors finden Sie unter [Dynamics 365 Adyen-Zahlungskonnektor](../retail/dev-itpro/adyen-connector.md).
 
-## <a name="additional-channel-set-up"></a>Einrichtung eines zusätzlichen Kanals
+## <a name="additional-channel-setup"></a>Einrichtung eines zusätzlichen Kanals
 
-Zusätzliche Aufgaben, die für das Einrichten des Onlinechannel erforderlich sind, umfassen das Einrichten von Zahlungsmethoden, Lieferarten und Erfüllungsgruppenzuweisungen.
+Zusätzliche Aufgaben, die für das Einrichten des Onlinechannel erforderlich sind, umfassen das Einrichten von Zahlungsmethoden, die Lieferarten und die Erfüllungsgruppenzuweisungen.
 
-Das folgende Bild zeigt die Einrichtungsoptionen **Lieferarten**, **Zahlungsmethoden** und **Zuordnung der Erfüllungsgruppen** auf der Registerkarte **Installieren**.
+Das folgende Bild zeigt die Einrichtungsoptionen **Lieferarten** , **Zahlungsmethoden** und **Zuordnung der Erfüllungsgruppen** auf der Registerkarte **Installieren**.
 
 ![Zusätzliche Aktionen zum Einrichten von Onlinechannels](media/channel-setup-online-3.png)
 

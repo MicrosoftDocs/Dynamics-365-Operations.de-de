@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 406ff268eede4a9d448b3b9c1729a00fcec8f21e
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 96f994e9f3440721105545f96d7d8475fcab2b6b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3986743"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016792"
 ---
 # <a name="consolidate-shipments-when-the-shipment-consolidation-policy-is-overridden-from-the-release-to-warehouse-page"></a>Lieferungen konsolidieren, wenn die Richtlinie zur Lieferungskonsolidierung auf der Seite „Freigabe an Lager“ überschrieben wird
 
@@ -41,13 +41,13 @@ In dem hier beschriebenen Szenario wird davon ausgegangen, dass Sie die Funktion
 
 ## <a name="create-the-sales-orders-for-this-scenario"></a>Erstellen Sie die Kundenaufträge für dieses Szenario
 
-1. Wechseln Sie zu **Debitoren \> Aufträge \> Alle Aufträge**, und erstellen Sie drei identische Aufträge mit den folgenden Einstellungen:
+1. Wechseln Sie zu **Debitoren \> Aufträge \> Alle Aufträge** , und erstellen Sie drei identische Aufträge mit den folgenden Einstellungen:
 
     - **Debitorenkonto:** *US-002*
 
 1. Eine Auftragsposition hat die folgenden Einstellungen:
 
-    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4**-Filter zugeordnet ist)
+    - **Artikelnummer:** *A0001* (ein Artikel, dem kein **Code 4** -Filter zugeordnet ist)
     - **Menge** *1.00*
 
 1. Wählen Sie **Lager \> Reservierung** und dann im Aktionsbereich die Option **Los reservieren** aus, um die Bestellposition zu reservieren.
@@ -58,21 +58,21 @@ Befolgen Sie diese Schritte, um die Lieferungskonsolidierungsrichtlinie während
 
 1. Wechseln Sie zu **Lagerortverwaltung \> An Lager freigeben \> An Lager freigeben**.
 1. Wählen Sie im oberen Bereich den ersten Auftrag aus, den Sie für dieses Szenario erstellt haben.
-1. Wählen Sie **Hinzufügen** aus, um die Position zur Freigabe zum Lager hinzuzufügen. Beachten Sie, dass die *Standard*-Lieferungskonsolidierungsrichtlinie im unteren Bereich angewendet wird.
+1. Wählen Sie **Hinzufügen** aus, um die Position zur Freigabe zum Lager hinzuzufügen. Beachten Sie, dass die *Standard* -Lieferungskonsolidierungsrichtlinie im unteren Bereich angewendet wird.
 1. Wählen Sie im unteren Bereich **Neue Lieferungskonsolidierungsrichtlinie auswählen** aus.
-1. Wählen Sie eine Richtlinie aus, die eine Konsolidierung mit anderen offenen Lieferungen derselben Richtlinie ermöglicht. Wählen Sie zum Beispiel die *CustomerOrderNo*-Richtlinie aus.
+1. Wählen Sie eine Richtlinie aus, die eine Konsolidierung mit anderen offenen Lieferungen derselben Richtlinie ermöglicht. Wählen Sie zum Beispiel die *CustomerOrderNo* -Richtlinie aus.
 1. Wählen Sie **An Lager freigeben** aus.
 1. Wählen Sie im oberen Bereich den zweiten und dritten Auftrag aus, die Sie für dieses Szenario erstellt haben.
-1. Wählen Sie **Hinzufügen** aus, um die Positionen zur Freigabe zum Lager hinzuzufügen. Beachten Sie, dass die *Standard*-Richtlinie im unteren Bereich angewendet wird.
-1. Wählen Sie die zweite Zeile Position und dann im Feld **Neue Lieferungskonsolidierungsrichtlinie auswählen** die *CustomerOrderNo*-Richtlinie aus.
+1. Wählen Sie **Hinzufügen** aus, um die Positionen zur Freigabe zum Lager hinzuzufügen. Beachten Sie, dass die *Standard* -Richtlinie im unteren Bereich angewendet wird.
+1. Wählen Sie die zweite Zeile Position und dann im Feld **Neue Lieferungskonsolidierungsrichtlinie auswählen** die *CustomerOrderNo* -Richtlinie aus.
 1. Wählen Sie **An Lager freigeben** für beide Positionen aus.
 
 ## <a name="verify-the-shipments"></a>Überprüfen Sie die Lieferungen
 
 Es sollten zwei Lieferungen erstellt worden sein:
 
-- Die erste Lieferung enthält zwei Zeilen und wurde mit der *CustomerOrderNo*-Lieferungskonsolidierungsrichtlinie erstellt.
-- Die zweite Lieferung enthält eine Position und wurde mit der *Standard*-Lieferungskonsolidierungsrichtlinie erstellt.
+- Die erste Lieferung enthält zwei Zeilen und wurde mit der *CustomerOrderNo* -Lieferungskonsolidierungsrichtlinie erstellt.
+- Die zweite Lieferung enthält eine Position und wurde mit der *Standard* -Lieferungskonsolidierungsrichtlinie erstellt.
 
 Befolgen Sie diese Schritte, um die erstellten Lieferungen zu überprüfen.
 

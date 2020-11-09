@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf61aa839d4d59b2c93eee9931eef0e6c51d4ac
-ms.sourcegitcommit: 3ba95d50b8262fa0f43d4faad76adac4d05eb3ea
+ms.openlocfilehash: 798e26badfd2a1f44891ea92f277de327fbed9c7
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "2177867"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006212"
 ---
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Neubewertung der Fremdwährung für das Sachkonto
 
@@ -41,16 +41,16 @@ Wird der Neubewertungsprozess ausgeführt, wird der Saldo für jedes Hauptkonto,
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Vorbereitungen, um die Neubewertung der Fremdwährung auszuführen
 Bevor Sie den Neubewertungsprozess ausführen können, sind folgende Einstellungen erforderlich.
 
--   Auf der Seite **Hauptkonto**:
+-   Auf der Seite **Hauptkonto** :
 -   Wenn das Hauptkonto im Hauptbuch neu bewertet werden soll, wählen Sie **Neubewertung der Fremdwährung** aus. Wenn das Hauptkonto nicht neu bewertet wird (zum Beispiel für Debitor und Kreditor, wenn Sie in untergeordneten Sachkonten neu bewertet werden) deaktivieren Sie die Option.
 -   Wenn das Hauptkonto für eine Neubewertung markiert wird, geben Sie **Wechselkurstyp** ein. Dieser Wechselkurstyp wird für die Neubewertung des Hauptkontos verwendet. Ein separates Feld **Rechnungslegungswechselkurstyp** ist für die Finanzberichterstellung verfügbar. Die zwei Felder werden nicht als synchron betrachtet und lassen es zu, dass verschiedene Wechselkurstypen für die Neubewertung und Finanzberichte verwendet werden.
 
--   Auf der Seite **Sachkonto**:
+-   Auf der Seite **Sachkonto** :
 -   Geben Sie den **Wechselkurstyp** an. Wenn der Wechselkurstyp nicht im Hauptkonto definiert ist, wird dieser Wechselkurstyp für die Neubewertung der Fremdwährung verwendet.
 -   Definieren Sie die Konten für realisierten Gewinn, realisierten Verlust, nicht realisierten Gewinn und den nicht realisierten Verlust für die Neubewertung der Währung an. Konten für realisierte Gewinne und Verluste werden verwendet, wenn Debitoren- und Kreditoren-Ausgleichstransaktionen und realisierte Gewinne und Verluste für die Neubewertung offener Transaktionen und Hauptbuch-Hauptkonten verwendet werden.
 
--   Auf der Seite **Währungsneubewertungskonten**:
--   Wählen Sie unterschiedliche Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto**-Seite verwendet.
+-   Auf der Seite **Währungsneubewertungskonten** :
+-   Wählen Sie unterschiedliche Währungsneubewertungskonten für jede Währung und jedes Unternehmen aus. Wenn keine Konten definiert werden, werden die Konten der **Sachkonto** -Seite verwendet.
 
 ## <a name="process-foreign-currency-revaluation"></a>Eine Neubewertung der Fremdwährung verarbeiten
 Nachdem die Einstellung abgeschlossen ist, können Sie die Seite **Neubewertung der Fremdwährung** verwenden, um die Transaktionen und Salden der Hauptkonten neu zu bewerten. Sie können den Prozess in die Echtzeit ausführen oder ihn planen, damit er als Stapel ausgeführt wird. 
@@ -67,7 +67,7 @@ Die Neubewertung kann für eine oder mehrere juristischen Personen ausgeführt w
 
 Die Neubewertung kann für eine oder mehrere Fremdwährung ausgeführt werden. Die Suche enthält alle Währungen, die innerhalb des festgelegten Datumsbereichs gebucht wurden, die für den Typ des Hauptkontos relevant ist (Bilanz oder Gewinn und Verlust), die für die juristischen Personen, die aktiviert werden, um den neu zu bewerten. Die Buchhaltungswährung ist in der Liste enthalten, jedoch kein Artikel wird neu bewertet, wenn die Buchhaltungswährung ausgewählt wird. 
 
-Setzen Sie **Vorschau vor der Buchung** auf **Ja** wenn Sie das Ergebnis der Hauptbuchneubewertung prüfen möchten. Die Vorschau im Hauptbuch unterscheidet sich von der Simulation in der Debitoren- Kreditoren-Neubewertung der Fremdwährung. Die Simulation in "Debitoren" und " Kreditor ist ein Bericht, doch das Hauptbuch ist eine Vorschau, die gebucht werden können, und die Mitarbeiter müssen, der Neubewertungsprozess erneut auszuführen. Die Ergebnisse der Vorschau können nach Microsoft Excel exportiert werden, um den Verlauf über die Berechnung der Beträge aufzubewahren. Sie können die Stapelverarbeitung nicht verwenden, wenn Sie die Ergebnisse der Neubewertung in der Vorschau anzeigen möchten. In der Vorschau hat der Benutzer die Option, die Ergebnisse aller juristischen Personen mithilfe der Schaltfläche **Buchen** zu buchen. Liegt ein Problem mit den Ergebnissen für eine juristische Person vor, hat der Benutzer die Option, eine Teilmenge der juristischen Personen mithilfe der Schaltfläche**Juristische Personen zum Buchen auswählen** zu verwenden. 
+Setzen Sie **Vorschau vor der Buchung** auf **Ja** wenn Sie das Ergebnis der Hauptbuchneubewertung prüfen möchten. Die Vorschau im Hauptbuch unterscheidet sich von der Simulation in der Debitoren- Kreditoren-Neubewertung der Fremdwährung. Die Simulation in "Debitoren" und " Kreditor ist ein Bericht, doch das Hauptbuch ist eine Vorschau, die gebucht werden können, und die Mitarbeiter müssen, der Neubewertungsprozess erneut auszuführen. Die Ergebnisse der Vorschau können nach Microsoft Excel exportiert werden, um den Verlauf über die Berechnung der Beträge aufzubewahren. Sie können die Stapelverarbeitung nicht verwenden, wenn Sie die Ergebnisse der Neubewertung in der Vorschau anzeigen möchten. In der Vorschau hat der Benutzer die Option, die Ergebnisse aller juristischen Personen mithilfe der Schaltfläche **Buchen** zu buchen. Liegt ein Problem mit den Ergebnissen für eine juristische Person vor, hat der Benutzer die Option, eine Teilmenge der juristischen Personen mithilfe der Schaltfläche **Juristische Personen zum Buchen auswählen** zu verwenden. 
 
 Nachdem der Neubewertung der Fremdwährung abgeschlossen ist, wird der Datensatz erstellt, um den Serviceverlauf ausgeführtem von jedem zu verfolgen.  Ein separater Datensatz wird für jede juristische Person erstellt und Buchungsebene.
 
@@ -76,38 +76,33 @@ Die Buchungen des unrealisierten Gewinns/Verlusts erfolgen in der Hauptbuchneube
 
 **Beispiel** Die folgenden Salden bestehen für Hauptkonto 110110.
 
-|            |                    |                        |                       |
+| Datum   | Sachkonto| Buchungsbetrag | Buchhaltungsbetrag |
 |------------|--------------------|------------------------|-----------------------|
-| **Datum**   | **Sachkonto** | **Buchungsbetrag** | **Buchhaltungsbetrag** |
 | 20. Januar | 110110 (Cash)      | 500 EUR (Debit)        | 1000 USD (Debit)      |
 
 Das Hauptkonto wird am 31. Januar neu bewertet.  Der unrealisierte Gewinn/der Verlust wird wie folgt berechnet.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktueller Saldo in Buchungswährung | Aktueller Saldo in der Buchhaltungswährung | Wechselkurs für Neubewertung | Neuer Buchhaltungswährungsbetrag | Unrealisierter Gewinn/Verlust    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktueller Saldo in Buchungswährung** | **Aktueller Saldo in der Buchhaltungswährung** | **Wechselkurs für Neubewertung** | **Neuer Buchhaltungswährungsbetrag** | **Unrealisierter Gewinn/Verlust**    |
 | 500 EUR                                     | 1000 USD                                   | 166.6667                         | 833.33 EUR (500 x 1.666667)        | 166.67 Verlust (833.33 – 1000) |
 
 Der nächste Buchhaltungseintrag wird erstellt.
 
-|            |                          |           |            |
+| Datum   | Sachkonto       | Belastung | Gutschrift |
 |------------|--------------------------|-----------|------------|
-| **Datum**   | **Sachkonto**       | **Soll** | **Entlastung** |
 | 31. Januar | 110110 (Cash)            |           | 166.67     |
 | 31. Januar | 801400 (Unrealisierter Verlust) | 166.67    |            |
 
 Keine neuen Buchungen werden für den Monat Februar gebucht.  Das Hauptkonto wird am 28. Februar neu bewertet.
 
-|                                             |                                            |                                  |                                    |                             |
+| Aktueller Saldo in Buchungswährung | Aktueller Saldo in der Buchhaltungswährung | Wechselkurs für Neubewertung | Neuer Buchhaltungswährungsbetrag | Unrealisierter Gewinn/Verlust    |
 |---------------------------------------------|--------------------------------------------|----------------------------------|------------------------------------|-----------------------------|
-| **Aktueller Saldo in Buchungswährung** | **Aktueller Saldo in der Buchhaltungswährung** | **Wechselkurs für Neubewertung** | **Neuer Buchhaltungswährungsbetrag** | **Unrealisierter Gewinn/Verlust**    |
 | 500 EUR                                     | 833.33 USD (1000 - 166.67)                 | 250.0000                         | 1250 USD (500 x 2.5)               | 416.67 Gewinn (1250 – 833.33) |
 
 Der nächste Buchhaltungseintrag wird erstellt.
 
-|             |                          |           |            |
+| Datum    | Sachkonto       | Belastung | Gutschrift |
 |-------------|--------------------------|-----------|------------|
-| **Datum**    | **Sachkonto**       | **Soll** | **Entlastung** |
 | 28. Februar | 110110 (Cash)            | 416.67    |            |
 | 28. Februar | 801600 (Unrealisierter Gewinn) |           | 416.67     |
 

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 1ed97d7c388347eb5afe101f51173b6d48b18fcd
-ms.sourcegitcommit: 68f1485de7d64a6c9eba1088af63bd07992d972d
+ms.openlocfilehash: a2adf284111f2ccc9a830635ab3fb8f4731c84d9
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172922"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997575"
 ---
 # <a name="bootstrap-with-company-data-faq"></a>Ausführen von Bootstrap mit Unternehmensdaten – FAQ
  
@@ -37,7 +36,7 @@ Sie verfügen möglicherweise über eine vorhandene Common Data Service- oder an
 ## <a name="when-should-i-use-bootstrapping"></a>Wann sollte Bootstrapping verwendet werden? 
 Sie sollten Bootstrapping verwenden, bevor Sie  Entitätszuordnungen für duales Schreiben aktivieren (in Schritt 5).  
 1. Um die Verbindung für duales Schreiben zwischen Instanzen der Finance and Operations-App und Common Data Service oder einer anderen Dynamics 365-App einzurichten, melden Sie sich bei der Finance and Operations-App als Administrator an. 
-2. Wechseln Sie zum Modul **Datenverwaltung**, und klicken Sie auf die Schaltfläche **Duales Schreiben**. Dadurch wird **Data Integrator** gestartet. 
+2. Wechseln Sie zum Modul **Datenverwaltung** , und klicken Sie auf die Schaltfläche **Duales Schreiben**. Dadurch wird **Data Integrator** gestartet. 
 3. Stellen Sie die Verbindung für duales Schrieben für mindestens ein Unternehmen her.  
     > [!div class="mx-imgBorder"]
     > ![Herstellen der Verbindung für duales Schreiben](media/dual-write-boot-1.png)
@@ -54,14 +53,14 @@ Der Beispielcode ist eine C#-Anwendung, die Sie in Visual Studio laden können. 
 
 Nachdem Sie die Lösung in Visual Studio entzippt und geöffnet und die NuGet-Pakete wiederhergestellt haben, suchen Sie im Code nach **TODO**. Jede Entscheidung, die Sie zur Art und Weise der Ausführung von Bootstrapping für Unternehmensinformationen treffen müssen, wird durch ein **TODO** mit Beispielcode für eine kanonische Implementierung gekennzeichnet. 
 
-Der Beispielcode zeigt nur eine von vielen Methoden zum Kategorisieren von Entitätsdatensätzen nach Unternehmen. Wenn Sie die Logik in den **TODO**-Abschnitten ändern, können Sie Ihre benutzerdefinierte Kategorisierung erstellen. 
+Der Beispielcode zeigt nur eine von vielen Methoden zum Kategorisieren von Entitätsdatensätzen nach Unternehmen. Wenn Sie die Logik in den **TODO** -Abschnitten ändern, können Sie Ihre benutzerdefinierte Kategorisierung erstellen. 
  
 ## <a name="what-should-i-expect"></a>Was sollte ich erwarten?
-Mit der Beispielanwendung können Sie standardmäßig ein Wörterbuch mit Zuordnungen zwischen Geschäftseinheiten und Unternehmenscodes bereitstellen. Jede Entität, für die Sie Bootstrapping mit dem Feld **OwningBusinessUnit** ausführen, wird automatisch für die Verwendung des angegebenen Unternehmens festgelegt. Jede Entität ohne das Feld **OwningBusinessUnit**, z. B. Produkt, legt das Unternehmen basierend auf der Zuordnung mit einem leeren Unternehmenseinheitswert fest.
+Mit der Beispielanwendung können Sie standardmäßig ein Wörterbuch mit Zuordnungen zwischen Geschäftseinheiten und Unternehmenscodes bereitstellen. Jede Entität, für die Sie Bootstrapping mit dem Feld **OwningBusinessUnit** ausführen, wird automatisch für die Verwendung des angegebenen Unternehmens festgelegt. Jede Entität ohne das Feld **OwningBusinessUnit** , z. B. Produkt, legt das Unternehmen basierend auf der Zuordnung mit einem leeren Unternehmenseinheitswert fest.
 
-Die Konsolenanwendung erwartet einen Parameter, entweder **–simulate** oder **–apply**. Wenn Sie den Befehlszeilenparameter **– simuliert werden** verwenden, werden keine Daten aktualisiert. Nur **simulation_<entityname>.csv**-Dateien werden im selben Verzeichnis wie das Tool generiert, eine für jede Entität, die aktualisiert worden wäre. Sie können diese Dateien während der Arbeit iterativ überprüfen, um sicherzustellen, dass der Code die Unternehmenswerte wie erwartet aktualisiert. 
+Die Konsolenanwendung erwartet einen Parameter, entweder **–simulate** oder **–apply**. Wenn Sie den Befehlszeilenparameter **– simuliert werden** verwenden, werden keine Daten aktualisiert. Nur **simulation_<entityname>.csv** -Dateien werden im selben Verzeichnis wie das Tool generiert, eine für jede Entität, die aktualisiert worden wäre. Sie können diese Dateien während der Arbeit iterativ überprüfen, um sicherzustellen, dass der Code die Unternehmenswerte wie erwartet aktualisiert. 
 
-Verwenden Sie den **–apply**-Parameter, wenn Sie die simulierten Aktualisierungen abgeschlossen haben. Dadurch werden alle Datensätze, die aktuell einen falschen Unternehmenswert aufweisen, in Stapeln von 1000 Datensätzen gleichzeitig (standardmäßig) aktualisiert. Der Code ist wie angegeben idempotent, d. h. Sie können ihn erneut ausführen, sodass nur die falsch zugeordneten Unternehmen aktualisiert werden. Bei Ausführung mit **–apply** gibt der Code CSV-Dateien der vorgenommenen Änderungen aus, die als **applied_<entityname>.csv** bezeichnet werden. 
+Verwenden Sie den **–apply** -Parameter, wenn Sie die simulierten Aktualisierungen abgeschlossen haben. Dadurch werden alle Datensätze, die aktuell einen falschen Unternehmenswert aufweisen, in Stapeln von 1000 Datensätzen gleichzeitig (standardmäßig) aktualisiert. Der Code ist wie angegeben idempotent, d. h. Sie können ihn erneut ausführen, sodass nur die falsch zugeordneten Unternehmen aktualisiert werden. Bei Ausführung mit **–apply** gibt der Code CSV-Dateien der vorgenommenen Änderungen aus, die als **applied_<entityname>.csv** bezeichnet werden. 
 
  ```csharp
  using Microsoft.Crm.Sdk.Messages;

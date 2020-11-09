@@ -3,7 +3,7 @@ title: Vergleich von Cloudfunktionen und lokalen Funktionen
 description: Das Thema zeigt Funktionen, die in Cloud und lokal unterstützt werden.
 author: sericks007
 manager: AnnBe
-ms.date: 03/04/2020
+ms.date: 10/04/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 50ab5827f864b53137acb77e75055e995ea6f439
-ms.sourcegitcommit: 1789a78de1cbeac19d96767812df653a191c67e9
+ms.openlocfilehash: fd73dd649e7c10916835fbb4573dd2e65bbdb39c
+ms.sourcegitcommit: 1329b3b98854422c4c3773ede44a5cefa7d07085
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100281"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4040098"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Vergleich von Cloud- und On-Premises-Funktionen
 
@@ -58,10 +58,10 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |                                      | EB: Integration in LCS                                                                  | Ja       | Nein              |
 |                                      | EB: Integration in SharePoint                                                           | Ja       | Nein              |
 |                                      | EB: Integration in Regulatory Configuration Services (RCS)                              | Ja       | Nein              |
-|                                      | EB: Verwendet lokales Dateisystem als Speicherung von EB-Konfigurationen, auf die über EB-Repositorys zugegriffen werden kann | Nein        | Ja             |
-|                                      | Integration mit PowerBI.com                                                              | Ja       | Nein              |
-|                                      | Integration mit PowerBI Desktop                                                          | Nein        | Ja             |
-|                                      | Analytische Arbeitsbereiche                                                                     | Ja       | Nein              |
+|                                      | EB: Verwendet lokales Dateisystem als Speicherung von EB-Konfigurationen, auf die über EB-Repositorys zugegriffen werden kann | Nr.        | Ja             |
+|                                      | Integration mit PowerBI.com                                                              | Ja       | Nr.              |
+|                                      | Integration mit PowerBI Desktop                                                          | Nr.        | Ja             |
+|                                      | Analytische Arbeitsbereiche                                                                     | Ja       | Nr.              |
 |                                      | Intelligente Geschäftsprozesse: Empfehlungen                                             | Ja       | Nr.              |
 |                                      | Power BI-Berichte mit OData mithilfe des Power BI-Desktops oder des Excel PowerQuery-Tools genehmigen    | Ja       | Nr.              |
 |                                      | SQL Server Reporting Services unterstützt die Skalierung nach Außen                                 | Ja       | Nein              |
@@ -81,12 +81,13 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |                                      | Aufgabenaufzeichnung - Aufgabenaufzeichnung aus der BPM-Bibliothek speichern oder laden                         | Ja       | Nr.              |
 | Support                              |                                                                                           | Ja       | Ja             |
 |                                      | Zugriff auf Support über das Menü Hilfe und Support                                             | Ja       | Nein              |
-|                                      | Geschäftsereignisse                                                                           | Ja       | Ja (entweder ist eine Internetverbindung erforderlich, oder es müssen benutzerdefinierte Endpunkte implementiert werden, um Geschäftsereignisse innerhalb des Intranets zu senden/empfangen)              |
+|                                      | Geschäftsereignisse                                                                           | Ja       | Ja (entweder ist eine Internetverbindung erforderlich, oder es müssen benutzerdefinierte Endpunkte implementiert werden, um Geschäftsereignisse innerhalb des Intranets zu senden/zu empfangen)              |
 
 ## <a name="dynamics-365-supply-chain-management"></a>Dynamics 365 Supply Chain Management 
 
 | **Bereich**                | **Funktion**             | **Cloud** | **Lokal** |
 |-------------------------|-------------------|-----------|-----------------|
+| Anlagenverwaltung                     |                                                                                           | Ja       | Nr. |
 | Compliance und Bescheinigungen        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1 Zertifizierung                                                                | Ja       | Nr.              |
 | Kostenrechnung                      |                                                                                           | Ja       | Ja             |
@@ -106,10 +107,10 @@ Die folgenden Tabellen führen die Anwendungsbereiche auf. Cloud und lokaler Sup
 |                                      | EB: Integration in LCS                                                                  | Ja       | Nein              |
 |                                      | EB: Integration in SharePoint                                                           | Ja       | Nein              |
 |                                      | EB: Integration in Regulatory Configuration Services (RCS)                              | Ja       | Nein              |
-|                                      | EB: Verwendet lokales Dateisystem als Speicherung von EB-Konfigurationen, auf die über EB-Repositorys zugegriffen werden kann | Nein        | Ja             |
-|                                      | Integration mit PowerBI.com                                                              | Ja       | Nein              |
-|                                      | Integration mit PowerBI Desktop                                                          | Nein        | Ja             |
-|                                      | Analytische Arbeitsbereiche                                                                     | Ja       | Nein              |
+|                                      | EB: Verwendet lokales Dateisystem als Speicherung von EB-Konfigurationen, auf die über EB-Repositorys zugegriffen werden kann | Nr.        | Ja             |
+|                                      | Integration mit PowerBI.com                                                              | Ja       | Nr.              |
+|                                      | Integration mit PowerBI Desktop                                                          | Nr.        | Ja             |
+|                                      | Analytische Arbeitsbereiche                                                                     | Ja       | Nr.              |
 |                                      | Intelligente Geschäftsprozesse: Empfehlungen                                             | Ja       | Nr.              |
 |                                      | Power BI-Berichte mit OData mithilfe des Power BI-Desktops oder des Excel PowerQuery-Tools genehmigen    | Ja       | Nr.              |
 |                                      | SQL Server Reporting Services unterstützt die Skalierung nach Außen                                 | Ja       | Nr.              |

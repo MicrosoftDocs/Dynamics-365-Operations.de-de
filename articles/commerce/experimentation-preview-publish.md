@@ -3,7 +3,7 @@ title: Vorschau und Veröffentlichung eines Experiments
 description: In diesem Thema wird beschrieben, wie Sie ein Experiment in Dynamics 365 Commerce in der Vorschau anzeigen und veröffentlichen.
 author: sushma-rao
 manager: AnnBe
-ms.date: 10/01/2020
+ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 91e2e4840a2d53f195d881279050b6415d48b070
-ms.sourcegitcommit: b6ab46f6e5ce60e2c3d70a348827eaf60c84cae2
+ms.openlocfilehash: f1a565917ab7a048d4d455bc0a0fbd9316237aeb
+ms.sourcegitcommit: 7592c2dec0428d56843ab395d2a52c89f77f99b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "3930205"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "4097115"
 ---
 # <a name="preview-and-publish-an-experiment"></a>Vorschau und Veröffentlichung eines Experiments
 
@@ -34,9 +34,11 @@ In diesem Thema wird beschrieben, wie Sie in Dynamics 365 Commerce eine Vorschau
 ## <a name="preview-your-experiment-variations"></a>Eine Vorschau Ihrer Experimentvarianten anzeigen
 Sie können eine Vorschau Ihrer Variationen anzeigen und sie weiter bearbeiten, bis sie so aussehen, wie Sie es möchten.
 
-1. Verwenden Sie im Site Builder das Dropdown-Menü für Variationen unterhalb der Befehlsleiste, um den Inhalt auszuwählen, für den Sie eine Vorschau anzeigen möchten. 
-1. Wählen Sie **Vorschau** in der oberen Leiste. Eine Vorschau des Inhalts, wenn er veröffentlicht wird, wird angezeigt.
-1. Um eine Vorschau einer anderen Variante anzuzeigen, wählen Sie sie aus der Dropdown-Liste aus, und wählen Sie nochmal **Vorschau**.
+Um Ihre Experimentvariationen im Commerce Site Builder anzusehen, folgen Sie diesen Schritten.
+
+1. Verwenden Sie im Site Builder das Dropdown-Menü für Variationen unterhalb der Befehlsleiste, um den Inhalt auszuwählen, für den Sie die Vorschau anzeigen möchten. 
+1. Wählen Sie in der Befehlsleiste **Vorschau** aus. Eine Vorschau des Inhalts, wenn er veröffentlicht wird, wird angezeigt.
+1. Um eine Vorschau einer anderen Variante anzuzeigen, wählen Sie sie aus dem Dropdown-Menü aus, und wählen Sie nochmal **Vorschau**.
 
 ## <a name="publish-your-experiment"></a>Ihr Experiment veröffentlichen
 Wenn Sie keine Veröffentlichungsgruppe verwenden, um zu planen, wann Ihr Experiment live geschaltet wird, und Sie sofort veröffentlichen möchten, wählen Sie **Veröffentlichen** in der Befehlsleiste. Alle zum Experiment gehörenden Variationen werden veröffentlicht.
@@ -45,7 +47,7 @@ Wenn Sie keine Veröffentlichungsgruppe verwenden, um zu planen, wann Ihr Experi
 > Wenn die Seite eine unveröffentlichte URL enthält, müssen Sie zuerst die URL veröffentlichen, da sie sonst für die Benutzer Ihrer Website nicht sichtbar ist. Weitere Details finden Sie unter [Speichern, Vorschau und Veröffentlichung einer Seite](save-preview-publish-page.md).
     
 ### <a name="use-publish-groups-to-schedule-when-your-experiment-goes-live"></a>Verwenden Sie Veröffentlichungsgruppen, um zu planen, wann Ihr Experiment live geschaltet wird
-Im Site Builder erstellte Variationen können mithilfe einer Veröffentlichungsgruppe für die Veröffentlichung geplant werden. Innerhalb einer Veröffentlichungsgruppe können Sie eine Seite oder ein Fragment mit Ihrem Experiment verbinden, indem Sie zu den Registerkarten **Experimente**, **Seiten** oder **Fragmente** wechseln. Weitere Informationen finden Sie im Thema [Ein Experiment verbinden und Variationen bearbeiten](experimentation-connect-edit.md). Weitere Informationen zu Veröffentlichungsgruppen finden Sie unter [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md).
+Im Site Builder erstellte Variationen können mithilfe einer Veröffentlichungsgruppe für die Veröffentlichung geplant werden. Innerhalb einer Veröffentlichungsgruppe können Sie eine Seite oder ein Fragment mit Ihrem Experiment verbinden, indem Sie **Experimente** im linken Navigationsbereich auswählen. Sie können dies auch tun, indem Sie **Seiten** oder **Fragmente** auswählen und den Anweisungen in [Verbinden Sie ein Experiment an und bearbeiten Sie Variationen](experimentation-connect-edit.md) folgen. Weitere Informationen zu Veröffentlichungsgruppen finden Sie unter [Arbeiten mit Veröffentlichungsgruppen](publish-groups.md).
 
 Bei der Verwendung von Veröffentlichungsgruppen mit Experimenten sind einige wichtige Überlegungen zu beachten.
 - Wenn Sie einer Veröffentlichungsgruppe eine Seite oder ein Fragment hinzufügen, an der bzw. dem ein Experiment ausgeführt wird, wird das Experiment von der Seite oder dem Fragment in der Veröffentlichungsgruppe entfernt.

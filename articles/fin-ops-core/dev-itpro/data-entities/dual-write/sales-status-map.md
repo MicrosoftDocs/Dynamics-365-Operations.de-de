@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: dce4b6310e2f6d31a115302efa7fbc132799e48f
-ms.sourcegitcommit: 4ba10abe5be8a21b95370cd970a622e954970984
+ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
+ms.sourcegitcommit: 0a741b131ed71f6345d4219a47cf5f71fec6744b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "3829284"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "3997673"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Einrichten eines Mappings für die Auftragsstatusfelder
 
@@ -36,18 +35,18 @@ Die Felder, die den Auftragsstatus angeben, haben in Microsoft Dynamics 365 Supp
 
 In Supply Chain Management spiegeln zwei Felder den Status des Auftrags wider. Die Felder, die Sie zuordnen müssen, sind **Status** und **Dokumentstatus**.
 
-Die **Status**-Aufzählung gibt den Gesamtstatus der Bestellung an. Dieser Status wird im Auftragskopf angezeigt.
+Die **Status** -Aufzählung gibt den Gesamtstatus der Bestellung an. Dieser Status wird im Auftragskopf angezeigt.
 
-Die **Status**-Aufzählung hat die folgenden Werte:
+Die **Status** -Aufzählung hat die folgenden Werte:
 
 - Offene Bestellung
 - Geliefert
 - Fakturiert
 - Storniert
 
-Die **Dokumentstatus**-Aufzählung gibt das letzte Dokument an, das für die Bestellung generiert wurde. Wenn die Bestellung beispielsweise bestätigt wird, handelt es sich bei diesem Dokument um eine Auftragsbestätigung. Wenn ein Kundenauftrag teilweise in Rechnung gestellt wird und dann die verbleibende Position bestätigt wird, bleibt der Belegstatus **Rechnung** erhalten, weil die Rechnung später im Prozess generiert wird.
+Die **Dokumentstatus** -Aufzählung gibt das letzte Dokument an, das für die Bestellung generiert wurde. Wenn die Bestellung beispielsweise bestätigt wird, handelt es sich bei diesem Dokument um eine Auftragsbestätigung. Wenn ein Kundenauftrag teilweise in Rechnung gestellt wird und dann die verbleibende Position bestätigt wird, bleibt der Belegstatus **Rechnung** erhalten, weil die Rechnung später im Prozess generiert wird.
 
-Die **Dokumentstatus**-Aufzählung hat die folgenden Werte:
+Die **Dokumentstatus** -Aufzählung hat die folgenden Werte:
 
 - Bestätigung
 - Kommissionierliste
@@ -58,7 +57,7 @@ Die **Dokumentstatus**-Aufzählung hat die folgenden Werte:
 
 In Sales spiegeln geben zwei Felder den Status der Bestellung an. Die Felder, die Sie zuordnen müssen, sind **Status** und **Verarbeitungsstatus**.
 
-Die **Status**-Aufzählung gibt den Gesamtstatus der Bestellung an. Es weist die folgenden Werte auf:
+Die **Status** -Aufzählung gibt den Gesamtstatus der Bestellung an. Es weist die folgenden Werte auf:
 
 - Aktiv
 - Übermittelt
@@ -96,16 +95,16 @@ Die folgende Tabelle zeigt die Zuordnung von **Verarbeitungsstatus** zwischen Sa
 
 ## <a name="setup"></a>Setup
 
-Um die Zuordnung für die Auftragsstatusfelder einzurichten, müssen Sie die **IsSOPIntegrationEnabled** und **isIntegrationUser**-Attribute aktivieren.
+Um die Zuordnung für die Auftragsstatusfelder einzurichten, müssen Sie die **IsSOPIntegrationEnabled** und **isIntegrationUser** -Attribute aktivieren.
 
-Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
+Um das **IsSOPIntegrationEnabled** -Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
 
 1. Gehen Sie in einem Webbrowser zu `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations`. Ersetzen Sie **\<test-name\>** durch den Link Ihres Unternehmens zu Sales.
 2. Suchen Sie auf der geöffneten Seite **organisationid** und notieren Sie sich den Wert.
 
     ![Suchen von organizationid](media/sales-map-orgid.png)
 
-3. Öffnen Sie in Sales die Browserkonsole und führen Sie das folgende Skript aus. Verwenden Sie den **organisationid**-Wert aus Schritt 2.
+3. Öffnen Sie in Sales die Browserkonsole und führen Sie das folgende Skript aus. Verwenden Sie den **organisationid** -Wert aus Schritt 2.
 
     ```javascript
     Xrm.WebApi.updateRecord("organization",
@@ -128,9 +127,9 @@ Um das **IsSOPIntegrationEnabled**-Attribut zu aktivieren, führen Sie die folge
 
     ![Auf true festgelegtes IsSOPIntegrationEnabled](media/sales-map-integration-enabled.png)
 
-Um das **isIntegrationUser**-Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
+Um das **isIntegrationUser** -Attribut zu aktivieren, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie in Sales zu **Einstellung \> Anpassung \> System anpassen**, wählen Sie **Benutzerentität** aus und öffnen Sie dann **Formular \> Benutzer**.
+1. Gehen Sie in Sales zu **Einstellung \> Anpassung \> System anpassen** , wählen Sie **Benutzerentität** aus und öffnen Sie dann **Formular \> Benutzer**.
 
     ![Öffnen des Benutzerformulars](media/sales-map-user.png)
 
@@ -146,7 +145,7 @@ Um das **isIntegrationUser**-Attribut zu aktivieren, führen Sie die folgenden S
 
     ![Liste der Anwendungsbenutzer](media/sales-map-user-mode.png)
 
-5. Ändern Sie den Wert des **Integrationsbenutzermodus**-Felds auf **Ja**.
+5. Ändern Sie den Wert des **Integrationsbenutzermodus** -Felds auf **Ja**.
 
     ![Ändern des Werts des Integrationsbenutzermodus-Felds](media/sales-map-user-mode-yes.png)
 

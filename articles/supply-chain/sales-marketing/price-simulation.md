@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 336fb51dc5fb66dfbe14091d121e0a4471b9662b
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: d61c43b6bc04bb8786aa3c47932be0ccd84ebaeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3978892"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4006258"
 ---
 # <a name="price-simulation"></a>Preissimulation
 
@@ -74,7 +74,7 @@ Situation: Erstellung eines Angebots mit den folgenden Positionen:
 
 Die Angebotspositionen werden in der folgenden Tabelle veranschaulicht.
 
-|                            | Herstellkostenkalkulation                          | Ergebnis   |
+|    &nbsp;                  | Herstellkostenkalkulation                          | Ergebnis   |
 |----------------------------|--------------------------------------|----------|
 | Verkaufsmenge             | 10 Einheiten + 12 Einheiten                  | 22 Einheiten |
 | Verkaufswert in EUR         | (10 × 15,32) + (12 × 13,75)          | 318,20   |
@@ -84,7 +84,7 @@ Die Angebotspositionen werden in der folgenden Tabelle veranschaulicht.
 
 Sie führen eine Preissimulation mit einem Rechnungsrabatt von 15 % auf das gesamte Angebot oder auf den Angebotskopf aus. In der folgenden Tabelle werden die neuen Summen des Angebots nach dem Ausführen der Preissimulation angezeigt.
 
-|                                                      | Berechnung                               | Ergebnis   |
+|     &nbsp;                                           | Berechnung                               | Ergebnis   |
 |------------------------------------------------------|-------------------------------------------|----------|
 | Verkaufsmenge                                       | 10 Einheiten + 12 Einheiten                       | 22 Einheiten |
 | Alter Verkaufswert in EUR                               | (10 × 15,32) + (12 × 13,75)               | 318,20   |
@@ -105,7 +105,7 @@ Situation: Erstellung eines Angebots mit den folgenden Positionen:
 
 Die Angebotspositionen werden in der folgenden Tabelle veranschaulicht.
 
-|                                      | Herstellkostenkalkulation                          | Ergebnis   |
+|      &nbsp;                          | Herstellkostenkalkulation                          | Ergebnis   |
 |--------------------------------------|--------------------------------------|----------|
 | Verkaufsmenge                       | 10 Einheiten + 12 Einheiten                  | 22 Einheiten |
 | Verkaufswert in EUR für "BR-12"         | 10 × 15,32                           | 153,20   |
@@ -123,7 +123,7 @@ Die Angebotspositionen werden in der folgenden Tabelle veranschaulicht.
 
 Sie führen eine Preissimulation mit einem Rechnungsrabatt von 10 % auf Einheiten des Artikels "BR-12" durch. In der folgenden Tabelle werden die neuen Summen des Angebots angezeigt, nachdem die Preissimulation für die einzelne Position ausgeführt wurde.
 
-|                                                   | Berechnung                             | Ergebnis   |
+|    &nbsp;                                         | Berechnung                             | Ergebnis   |
 |---------------------------------------------------|-----------------------------------------|----------|
 | Verkaufsmenge                                    | 10 Einheiten + 12 Einheiten                     | 22 Einheiten |
 | Alter Verkaufswert für "BR-12" in EUR                  | 10 × 15,32                              | 153,20   |

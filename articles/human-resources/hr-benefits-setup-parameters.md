@@ -2,7 +2,7 @@
 title: Vorteilsverwaltungsparameter festlegen
 description: Konfigurieren Sie Parameter für die Vorteilsverwaltung in Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 85bbe5d3b422f2f29f1d1fe8ee269b407da691c2
-ms.sourcegitcommit: 9dc5c7dd5877cc6e7cd0059d173bcd8052ba13bc
+ms.openlocfilehash: cb9dd6eb8ef840dab54eabab8526200a3a8e21f0
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "3599355"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057027"
 ---
 # <a name="set-benefits-management-parameters"></a>Vorteilsverwaltungsparameter festlegen
 
@@ -45,7 +45,7 @@ Bevor Sie Urlaubspläne in Microsoft Dynamics 365 Human Resources einrichten kö
    | **Ursachencode für Satzänderung** | Der Ursachencode, der beim Stornieren und erneuten Öffnen eines Personalvorteilsplans verwendet werden soll, wenn die Satzänderung aktualisiert wird. Er zeigt an, welche Datensätze durch die Aktualisierung der Satzänderung geändert wurden. |
    | **Vergütungsjahresgehalt** | Ermöglicht das Festlegen eines Betrags **Jahresgehalt für Vorteile** für einen Mitarbeiter. Die Personalverwaltung wird den Betrag **Jahresgehalt für Vorteile** verwenden, wenn Deckungssummen bestimmt werden, anstatt eines festen jährlichen Vergütungsbetrags. |
    | **Neueinstellung möglich** | Gibt an, ob Neueinstellungen zulässig sind. |
-   | **Registrierungsperiode für Neueinstellungen** | Die Periode, für die die Registrierung einer Neueinstellung zulässig ist.</br></br>**Hinweis**: Diese Einstellung überschreibt jede Registrierungsperiode für Neueinstellungen, die Sie in der Planberechtigungsregel festgelegt haben. |
+   | **Registrierungsperiode für Neueinstellungen** | Die Periode, für die die Registrierung einer Neueinstellung zulässig ist.</br></br>**Hinweis** : Diese Einstellung überschreibt jede Registrierungsperiode für Neueinstellungen, die Sie in der Planberechtigungsregel festgelegt haben. |
    | **Standard-Zahlungshäufigkeit** | Die Standardzahlungshäufigkeit, die verwendet wird, wenn neue Mitarbeiter hinzugefügt werden. |
    | **Lebensereignisse aktiviert** | Aktiviert Lebensereignisse. |
    | **Legacy-Vergütungsformulare ausblenden** | Ermöglicht das Ausblenden von Legacy-Vergütungsformularen. |
@@ -56,7 +56,7 @@ Bevor Sie Urlaubspläne in Microsoft Dynamics 365 Human Resources einrichten kö
 
 1. Wählen Sie im Arbeitsbereich **Vorteilsverwaltung** unter **Setup** die Option **Personalverwaltungsparameter**.
 
-2. Definieren Sie auf der Registerkarte **Mitarbeiter-Self-Service** die Werte für die folgenden Felder:
+2. Definieren Sie auf der Registerkarte **Vergütungsverwaltung** die Werte für die folgenden Felder:
 
    | Feld | Beschreibung |
    | --- | --- |

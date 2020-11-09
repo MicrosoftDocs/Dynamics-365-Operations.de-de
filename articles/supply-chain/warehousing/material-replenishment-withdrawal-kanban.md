@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules
+ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -19,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d712cc3ebdc959d1fee4a2a79e3283b84f0b901a
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3205551"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017071"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Wiederbeschaffung mit Entnahme-Kanbans
 
@@ -54,7 +54,7 @@ In diesem Szenario verbraucht ein Produktionsprozess (4) Material von einer Prod
 
 ## <a name="configure-warehouse-work-for-kanban-picking-for-the-withdrawal-kanban"></a>Konfigurieren von Lagerortarbeit für die Kanban-Entnahme mit dem Entahme-Kanban
 
-Um Rohmaterialentnahme für den Entnahme-Kanban zu aktivieren, konfigurieren Sie Wellenvorlagen, Arbeitsvorlagen und Lagerplatzdirektiven für den **Kanbanentnahme**-Arbeitsauftragstyp. Dieser Arbeitsauftragstyp unterstützt nicht den Entnahmeprozess für den Entnahme-Kanban. Er unterstützt außerdem den Entnahmeprozess für den Fertigungskanban. Allerdings können Sie einen separaten Entnahmeprozess für die einzelnen Kanbantypen konfigurieren, indem Sie die Wellenvorlagen, die Arbeitsvorlagen und die Lagerplatzdirektiven trennen. Zum Trennen von Wellenvorlagen, Arbeitsvorlagen und Lagerplatzdirektiven, legen Sie Kriterien im Aktivitätstyp (**Prozess** oder **Übertragen**) in Abfragen für diese Entitäten fest.
+Um Rohmaterialentnahme für den Entnahme-Kanban zu aktivieren, konfigurieren Sie Wellenvorlagen, Arbeitsvorlagen und Lagerplatzdirektiven für den **Kanbanentnahme** -Arbeitsauftragstyp. Dieser Arbeitsauftragstyp unterstützt nicht den Entnahmeprozess für den Entnahme-Kanban. Er unterstützt außerdem den Entnahmeprozess für den Fertigungskanban. Allerdings können Sie einen separaten Entnahmeprozess für die einzelnen Kanbantypen konfigurieren, indem Sie die Wellenvorlagen, die Arbeitsvorlagen und die Lagerplatzdirektiven trennen. Zum Trennen von Wellenvorlagen, Arbeitsvorlagen und Lagerplatzdirektiven, legen Sie Kriterien im Aktivitätstyp ( **Prozess** oder **Übertragen** ) in Abfragen für diese Entitäten fest.
 
 ## <a name="configure-the-withdrawal-kanban"></a>Konfigurieren des Entnahme-Kanban
 

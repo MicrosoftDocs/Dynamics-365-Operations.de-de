@@ -190,7 +190,7 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/dynamics365/finance/toc.json
                 - name: 'FAQ zu Abonnements, LCS-Projekten und Azure AD-Mandanten'
                   href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Umgebungen zwischen Rechenzentren verschieben
+                - name: Verschieben von Umgebungen zwischen Rechenzentren
                   href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?toc=/dynamics365/finance/toc.json
                 - name: Lizenzen zwischen Vertragstypen verschieben
                   href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?toc=/dynamics365/finance/toc.json
@@ -240,7 +240,9 @@
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Ergebnisse der Automatisierung von Kreditorenrechnungen anzeigen
                   href: accounts-payable/view-automated-vendor-invoice.md
-            - name: Buchhaltungsverteilungen und Erfassungseinträge im untergeordneten Sachkonto für Kreditorenrechnungen
+                - name: Arbeitsbereich für die Eingabe der Kreditorenrechnungen
+                  href: accounts-payable/vendor-invoices-workspace.md
+            - name: Buchhaltungsverteilungen und Erfassungseinträge in untergeordnetem Sachkonto für Kreditorenrechnungen
               href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Rechnungsabgleich sowie Intercompany-Bestellungen
               href: accounts-payable/invoice-matching-intercompany-purchase-orders.md
@@ -922,6 +924,8 @@
                   href: general-ledger/open-lines-excel-journals-documents.md
                 - name: Journaleinträge und Buchungen anzeigen
                   href: general-ledger/view-journal-entries-transactions.md
+                - name: Zwischenbilanz mit Transaktionsdetailbericht
+                  href: public-sector/general-ledger-public-sector-trial-balance.md
                 - name: Gebuchte Journaleinträge journalisieren
                   href: general-ledger/tasks/journalize-posted-journal-entries.md
                 - name: Neubewertung der Währung in einem Konsolidierungsunternehmen
@@ -1170,9 +1174,7 @@
                   href: public-sector/advanced-ledger-entries-public-sector.md
                 - name: Erweiterten Sachkontoeintrag im öffentlichen Sektor erstellen
                   href: public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Zwischenbilanz mit Transaktionsdetailbericht
-                  href: public-sector/general-ledger-public-sector-trial-balance.md
-                - name: Cash-Control-Grenzwerte verwenden
+                - name: Verwendung von Cash-Control-Limits
                   href: public-sector/cash-control.md
                 - name: Verarbeitung am Jahresende im öffentlichen Sektor
                   href: public-sector/year-end-processing-public-sector.md
@@ -1398,7 +1400,9 @@
                       href: localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
                     - name: NF-e-Zertifikate
                       href: localizations/latam-bra-nfe-certs.md
-                    - name: 'Einrichten, Importieren und Überprüfen von XML-Dokumenten für NF-e sowie DANFE'
+                    - name: Validierung von benutzerdefinierten NF-e-Zertifikaten
+                      href: localizations/nf-e-custom-certificate-validation.md
+                    - name: 'XML-Dokumenten für NF-e sowie DANFE einrichten, importieren und überprüfen'
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: NF-e-Parameter einrichten
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
@@ -2080,9 +2084,11 @@
                       href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
                     - name: Steuerermittlung
                       href: localizations/apac-ind-GST-tax-inquiry.md
+                    - name: TaxDocumentJSON-Tabelle bereinigen
+                      href: localizations/gte-clean-up-tax-document-json-table.md
                 - name: Steuermodul
                   items:
-                    - name: Informationen zum Steuermodul
+                    - name: Übersicht über das Steuermodul
                       href: general-ledger/tax-engine.md
                     - name: Importkonfiguration
                       href: general-ledger/tax-engine-import-configuration.md
@@ -2651,7 +2657,7 @@
                         - name: Bestandsprofilübersicht
                           href: localizations/rus-inventory-profile-overview.md
                         - name: Bestandsprofil einrichten
-                          hreF: localizations/rus-set-up-inventory-profile.md
+                          href: localizations/rus-set-up-inventory-profile.md
                         - name: Bestandsprofil in Dokumenten und Abfragen verwenden
                           href: localizations/rus-use-inventory-profile-documents-queries.md
                 - name: Berichterstellung

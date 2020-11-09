@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: BOMTable
+ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 555c76651609718aeed11230b4de4fec3bb39ce9
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 2ef0a43480e547c6bd19d5f9b7377ed8b73425e7
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203341"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016884"
 ---
 # <a name="batch-balancing"></a>Chargenausgleich
 
@@ -115,7 +115,7 @@ Die Beziehung zwischen einer Wirksubstanz und einer ergänzenden Substanz wird a
 
 Folgen Sie diesen Schritten, um die Beziehungen zwischen Substanzen einzurichten.
 
-1.  Wählen Sie **Produktinformationsverwaltung** \> **Rechnungen und Material und Formeln** \> **Formeln** aus, öffnen Sie eine Formelposition, und wählen Sie dann **Substanzen**, um die Seite **Kompensierendes Prinzip** zu öffnen.
+1.  Wählen Sie **Produktinformationsverwaltung** \> **Rechnungen und Material und Formeln** \> **Formeln** aus, öffnen Sie eine Formelposition, und wählen Sie dann **Substanzen** , um die Seite **Kompensierendes Prinzip** zu öffnen.
 
 2.  Wählen Sie die Position aus, die ein kompensierendes Prinzip darstellt, und wählen Sie dann zum Ausgleichen Wirksubstanz aus.
 
@@ -147,7 +147,7 @@ Da 1.10 ein positiver kompensierender Faktor ist, hat dieses kompensierende Prin
 
 **Beispiel**
 
-Sie haben ein Produkt formuliert, die Zutaten A, B, C und D für eine Formelgröße von 100 Litern enthält. Sie besitzen die ausgeglichene Menge aller Substanztypen außer der **Füller**-Substanztyp, der in einer Position verwendet wird.
+Sie haben ein Produkt formuliert, die Zutaten A, B, C und D für eine Formelgröße von 100 Litern enthält. Sie besitzen die ausgeglichene Menge aller Substanztypen außer der **Füller** -Substanztyp, der in einer Position verwendet wird.
 Ausgeglichene Menge der Füllsubstanz wird als Unterschied zwischen der Chargengröße von 100 Litern und der Summe der Inhaltsstoffe A, B und C berechnet:
 
 100 – (20 + 25.71 + 14.72) = 39.57
@@ -156,7 +156,7 @@ Ausgeglichene Menge der Füllsubstanz wird als Unterschied zwischen der Chargeng
 ---------------------------
 
 Der Chargenausgleichprozess wird durch den **Chargenausgleich** ausgeführt.
-Wählen Sie **Kostenmanagement**, und dann \> **Chargenaufträge**, auf der Registerkarte **Prozess** wählen Sie **Chargenausgleich** aus. Chargenausgleich ist verfügbar für Chargenaufträge, die den Status **Gestartet** besitzen.
+Wählen Sie **Kostenmanagement** , und dann \> **Chargenaufträge** , auf der Registerkarte **Prozess** wählen Sie **Chargenausgleich** aus. Chargenausgleich ist verfügbar für Chargenaufträge, die den Status **Gestartet** besitzen.
 
 Im Allgemeinen kann Chargenausgleich in den Chargenaufträgen angewendet werden, wenn die Formel mindestens eine Formelposition mit Inhaltsstofftyp **Aktiv** hat. (Für die Ausnahme von dieser Regel, lesen Sie "Chargenaufträge, die nicht für Chargenausgleich gelten im Abschnitt weiter unten in diesem Thema).
 

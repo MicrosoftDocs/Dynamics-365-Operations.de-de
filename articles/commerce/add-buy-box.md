@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e07bf02f10c943947fdf9ed3333373b859ff5b6c
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: beb705852be99ce817997d7017c41a0159f75419
+ms.sourcegitcommit: 69075e001d1fb4ef69282667052cd8d082273094
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817084"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4022028"
 ---
 # <a name="buy-box-module"></a>Kauffeldmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dieses Thema enthält Kauffeldmodule und es wird beschrieben, wie diese Siteseiten in Microsoft Dynamics 365 Commerce hinzugefügt werden.
 
@@ -73,7 +72,7 @@ Die folgenden Kaufelementmoduleigenschaften können unter **Site-Einstellungen \
 
 - **Warenkorbartikel-Höchstmenge** – Diese Eigenschaft dient zur Angabe der maximalen Anzahl jedes Artikels, die dem Einkaufskorb hinzugefügt werden kann. Beispielsweise kann ein Einzelhändler festlegen, dass nur 10 eines Produkts als einzelne Transaktion verkauft werden können.
 - **Bestand** – Informationen zum Anwenden von Bestandeinstellungen finden Sie unter [Wenden Sie Bestandeinstellungen an](inventory-settings.md).
-- **In den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zum Warenkorb navigieren**, **Navigieren Sie nicht zum Warenkorb**, und **Zeige Benachrichtigungen**. Wenn der Wert auf **Zum Warenkorb navigieren** eigestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Nicht zum Warenkorb navigieren** eingestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Zeige Benachrichtigungen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiterhin auf der Seite mit den Produktdetails surfen. 
+- **In den Warenkorb legen** – Mit dieser Eigenschaft wird das Verhalten angegeben, nachdem ein Artikel zum Warenkorb hinzugefügt wurde. Die möglichen Werte sind **Zum Warenkorb navigieren** , **Navigieren Sie nicht zum Warenkorb** , und **Zeige Benachrichtigungen**. Wenn der Wert auf **Zum Warenkorb navigieren** eigestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Nicht zum Warenkorb navigieren** eingestellt ist, werden Benutzer nach dem Hinzufügen eines Artikels nicht zur Warenkorbseite weitergeleitet. Wenn der Wert auf **Zeige Benachrichtigungen** festgelegt ist, wird Benutzern eine Bestätigungsbenachrichtigung angezeigt, und sie können weiterhin auf der Seite mit den Produktdetails surfen. 
 
 > [!IMPORTANT]
 > Die Site-Einstellungen **In den Einkaufskorb** sind in Dynamics 365 Commerce 10.0.11 verfügbar. Wenn Sie eine Aktualisierung von einer älteren Version von Dynamics 365 Commerce durchführen, müssen Sie die Datei appsettings.json manuell aktualisieren. Anweisungen zum Aktualisieren der Datei appsettings.json finden Sie unter [SDK- und Modulbibliothekupdates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
@@ -93,24 +92,24 @@ Um ein Kauffeldmodul einer neuen Seite hinzuzufügen und die erforderlichen Eige
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
 1. Wählen Sie im Dialogfeld **Neues Fragment** das Modul **Kauffeld** aus.
 1. Geben Sie unter **Name des Fragments** den Namen **Kauffeldfragment** ein und wählen Sie **OK** aus.
-1. Im Slot **Mediengallerie**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Im Slot **Mediengallerie** , der das Kauffeldmodul enthält, wählen Sie die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Mediengallerie** und dann **OK** aus.
-1. Im Slot **Auswahl speichern**, der das Kauffeldmodul enthält, wählen Sie die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Im Slot **Auswahl speichern** , der das Kauffeldmodul enthält, wählen Sie die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Auswahl speichern** und dann **OK** aus.
-1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
 1. Wechseln Sie zu **Vorlagen** und wählen Sie **Neu** aus, um eine neue Vorlage zu erstellen.
 1. Im Dialogfeld **Neue Vorlage** unter **Vorlagenname** geben Sie **PDP Vorlage** ein und wählen **OK**.
-1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
+1. Wählen Sie im Slot **Körper** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Standardseite** und dann **OK** aus.
-1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche (**...**) und wählen Sie **Fragment hinzufügen**.
+1. Auf dem Seitenüberblick wählen Sie den Slot **Haupt** und wählen die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Fragment hinzufügen**.
 1. Wählen Sie im Dialogfeld **Fragment auswählen** das Fragment **Kauffeldfragment** aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
-1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
-1. Wechseln Sie zu **Seiten**, und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
+1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
+1. Wechseln Sie zu **Seiten** , und wählen Sie dann **Neu** aus, um eine neue Seite zu erstellen.
 1. In dem Dialogfeld **Wählen Sie eine Vorlage** wählen Sie die Vorlage **PDP-Vorlage** aus. Unter **Seitenname** geben Sie **PDP-Seite** ein und wählen dann **OK** aus.
-1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche (**...**) und wählen Sie **Fragment hinzufügen**.
+1. Im Slot **Hauptseite** der neuen Seite wählen Sie die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Fragment hinzufügen**.
 1. Wählen Sie im Dialogfeld **Fragment auswählen** das Fragment **Kauffeldfragment** aus, das Sie zuvor erstellt haben, und wählen Sie dann **OK** aus.
-1. Seite speichern und Vorschau anzeigen. Fügen Sie die **? productid=&lt;Produktkennung&gt;**-Abfragezeichenfolgenparameter der URL der Vorschauseite hinzu. So wird der Produktkontext verwendet, um die Vorschauseite zu stellen und zu rendern.
-1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
+1. Seite speichern und Vorschau anzeigen. Fügen Sie die **? productid=&lt;Produktkennung&gt;** -Abfragezeichenfolgenparameter der URL der Vorschauseite hinzu. So wird der Produktkontext verwendet, um die Vorschauseite zu stellen und zu rendern.
+1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Seite einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen. Ein Kauffeld sollte auf der Produktdetailseite angezeigt werden.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

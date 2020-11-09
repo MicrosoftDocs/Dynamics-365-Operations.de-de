@@ -17,12 +17,12 @@ ms.search.industry: retail
 ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fb535b1f20d97042e6205b680de1cc687350f071
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 68132a78921e0a38c61c85bcc2b89dca3c25b04e
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975146"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107206"
 ---
 # <a name="store-order-fulfillment"></a>Filialauftragserfüllung
 
@@ -30,7 +30,7 @@ ms.locfileid: "3975146"
 
 Viele Einzelhändler möchten die Auftragserfüllung optimieren, indem Sie es Filialen ermöglichen, Aufträge zu erfüllen. Durch Auftragserfüllung auf Filialebene können zu große Lagerbestände für eine bestimmte Filiale vermieden werden. Sie kann auch aus logistischer Sicht in bestimmten Fällen erforderlich sein, wenn eine Filiale zusätzliche Kapazitäten besitzt oder sich in einer geringeren Versandentfernung zum Debitoren befindet. Um dieser Anforderung zu entsprechen, ist ein vereinheitlichter Auftragserfüllungsarbeitsgang in der Verkaufsstelle verfügbar.
 
-Bei Aufträgen für Erfüllung in einer bestimmten Filiale ist der Lagerort der Filiale in der Kopfzeile oder den Positionen des Auftrags festgelegt.
+Bei Aufträgen für die Erfüllung in einer bestimmten Filiale ist der Lagerort der Filiale in der Kopfzeile oder den Positionen des Auftrags festgelegt.
 
 Der Auftragserfüllungsarbeitsgang in der Verkaufsstelle enthält einen einzelnen Arbeitsbereich in der Verkaufsstelle, der verwendet werden kann, um Aufträge zu verarbeiten. Dies umfasst alles von der Annahme des Auftrags bis zur Markierung als versendet oder zum Initiieren der Filialabholung.
 
@@ -64,9 +64,9 @@ Wenn mehrere Positionen ausgewählt sind, wird vom Auftragspositionsdetail-Flyou
 
 ## <a name="pending-order-lines"></a>Ausstehende Auftragspositionen
 
-Einheitliche Auftragserfüllung umfasst die Möglichkeit, Aufträge manuell anzunehmen. Standardmäßig werden Aufträge für Erfüllung in der Filiale bereits angenommen. Wenn Geschäftsprozesse jedoch vorschreiben, dass eine Arbeitskraft auf Filialebene Aufträge annehmen muss, kann die manuelle Annahme auf Einzelhandelsfilial-Ebene aktiviert werden. Um die Auftragsannahme zu aktivieren, wechseln Sie zu **Retail und Commerce** \> **Channel** \> **Shop** \> **Alle Shops**. Öffnen Sie die gewünschte Filiale auf der Registerkarte **Allgemein**, suchen Sie die Unterüberschrift **Auftragserfüllung**. Diese Unterüberschrift hat eine Option **Manuelle Annahme**, die standardmäßig auf **Nein** festgelegt ist. Indem Sie diese Option auf **Ja** festlegen und die Änderungen an der Kanaldatenbank synchronisieren, können Auftragspositionen den Annahmeprozess durchlaufen.
+Einheitliche Auftragserfüllung umfasst die Möglichkeit, Aufträge manuell anzunehmen. Standardmäßig werden Aufträge für Erfüllung in der Filiale bereits angenommen. Wenn Geschäftsprozesse jedoch vorschreiben, dass eine Arbeitskraft auf Filialebene Aufträge annehmen muss, kann die manuelle Annahme auf Einzelhandelsfilial-Ebene aktiviert werden. Um die Auftragsannahme zu aktivieren, wechseln Sie zu **Retail und Commerce** \> **Channel** \> **Shop** \> **Alle Shops**. Öffnen Sie die gewünschte Filiale auf der Registerkarte **Allgemein** , suchen Sie die Unterüberschrift **Auftragserfüllung**. Diese Unterüberschrift hat eine Option **Manuelle Annahme** , die standardmäßig auf **Nein** festgelegt ist. Indem Sie diese Option auf **Ja** festlegen und die Änderungen an der Kanaldatenbank synchronisieren, können Auftragspositionen den Annahmeprozess durchlaufen.
 
-Arbeitskräfte mit der Berechtigung **Auftragsannahme zulassen** können die Auftragserfüllung öffnen und Positionen zur Annahme auswählen. Sobald Positionen angenommen wurden, ändert sich ihr Status von **Ausstehend** zu **Angenommen**, und der Rest des Auftragserfüllungsprozesses kann fortgesetzt werden. Wenn **Manuelle Annahme** aktiviert ist, werden Aufträge erst verarbeitet, wenn sie angenommen wurden.
+Arbeitskräfte mit der Berechtigung **Auftragsannahme zulassen** können die Auftragserfüllung öffnen und Positionen zur Annahme auswählen. Sobald Positionen angenommen wurden, ändert sich ihr Status von **Ausstehend** zu **Angenommen** , und der Rest des Auftragserfüllungsprozesses kann fortgesetzt werden. Wenn **Manuelle Annahme** aktiviert ist, werden Aufträge erst verarbeitet, wenn sie angenommen wurden.
 
 Aufträge für Abholung in der Filiale haben nie den Status **Ausstehend**. So wird ein Szenario vermieden, bei dem ein Debitor in der Filiale eintrifft und die Auftragsposition nicht verarbeitet werden kann, weil die Arbeitskraft mit den richtigen Rechten nicht verfügbar ist.
 
@@ -180,7 +180,7 @@ Positionen oder Teilpositionen können abgelehnt werden. Dadurch können sie vom
 - **Resultierender Status:** Abgelehnt
 - **Resultierender Backofficestatus:** Keine Änderung
 
-Die abgelehnten Auftragspositionen können vom Arbeitsbereich **Auftragsverarbeitung und Abfrage** aus angezeigt werden. Deakivieren Sie den Personenfilter im Arbeitsbereich, um alle abgelehnten Auftragspositionen in allen Filialen anzuzeigen. Über die Registerkarte **Abgelehnte Auftragspositionen** unter dem Abschnitt **Aufträge und Favoriten** werden Auftragspositionsdetails angezeigt. Darüber hinaus können die Benutzer auf die Schaltfläche **Abgelehnte Auftragspositionen** unter dem Abschnitt **Zusammenfassung** klicken, um zur Auftragsansicht zu navigieren. Dadurch werden alle Aufträge angezeigt, die eine oder mehrere abgelehnte Auftragspositionen haben. Wenn die verteilte Auftragsverwaltung (DOM) aktiviert ist, dann werden diese abgelehnten Aufträge automatisch den entsprechenden Filialen zur Erfüllung neu zugewiesen. Diese Auftragspositionen können jedoch auch manuell neu zugewiesen werden. Wählen Sie dazu die Position aus, bei der der **Erfüllungsstatus** als **Abgelehnt** angezeigt wird, und ändern Sie den Standort/Lagerort nach Bedarf. Klicken Sie auf das Dropdownmenü **Position aktualisieren**, und klicken Sie auf **Erfüllungsstatus zurücksetzen**, um den Erfüllungsstatus von **Abgelehnt** zu **Angenommen** oder **Ausstehend** zu ändern, entsprechend der Auftragserfüllungseinstellungen. Nachdem der Erfüllungsstatus zurückgesetzt wurde, können die Filialmitarbeiter die Auftragspositionen in POS anzeigen.
+Die abgelehnten Auftragspositionen können vom Arbeitsbereich **Auftragsverarbeitung und Abfrage** aus angezeigt werden. Deakivieren Sie den Personenfilter im Arbeitsbereich, um alle abgelehnten Auftragspositionen in allen Filialen anzuzeigen. Über die Registerkarte **Abgelehnte Auftragspositionen** unter dem Abschnitt **Aufträge und Favoriten** werden Auftragspositionsdetails angezeigt. Darüber hinaus können die Benutzer auf die Schaltfläche **Abgelehnte Auftragspositionen** unter dem Abschnitt **Zusammenfassung** klicken, um zur Auftragsansicht zu navigieren. Dadurch werden alle Aufträge angezeigt, die eine oder mehrere abgelehnte Auftragspositionen haben. Wenn die verteilte Auftragsverwaltung (DOM) aktiviert ist, dann werden diese abgelehnten Aufträge automatisch den entsprechenden Filialen zur Erfüllung neu zugewiesen. Diese Auftragspositionen können jedoch auch manuell neu zugewiesen werden. Wählen Sie dazu die Position aus, bei der der **Erfüllungsstatus** als **Abgelehnt** angezeigt wird, und ändern Sie den Standort/Lagerort nach Bedarf. Klicken Sie auf das Dropdownmenü **Position aktualisieren** , und klicken Sie auf **Erfüllungsstatus zurücksetzen** , um den Erfüllungsstatus von **Abgelehnt** zu **Angenommen** oder **Ausstehend** zu ändern, entsprechend der Auftragserfüllungseinstellungen. Nachdem der Erfüllungsstatus zurückgesetzt wurde, können die Filialmitarbeiter die Auftragspositionen in POS anzeigen.
 
 ## <a name="line-quantity-tracking"></a>Positionsmengennachverfolgung
 
@@ -194,8 +194,8 @@ Wenn man mit dem obigen Beispiel fortfährt: Wenn 200 Bretter als verpackt marki
 
 Auftragspositionen in der Verkaufsstelle haben mehrere Status, um den Status der Auftragsposition widerzuspiegeln. Status in der Verkaufsstelle und im Backoffice stimmen nicht in allen Fällen überein. Auftragspositionsstatus kann durch die Verkaufsstelle mithilfe der Auftragserfüllungsarbeitsgänge angezeigt werden. Im Backoffice können Auftragspositionen von den Auftragsdetails angezeigt werden. Auf Auftragsdetails kann über **Retail und Commerce** \> **Debitoren** \> **Alle Debitorenaufträge** zugegriffen werden. Wählen Sie die **Auftragskennung** aus, um Auftragsdetails anzuzeigen. Wählen Sie von den Auftragsdetails aus die Registerkarte **Auftrag** aus, wählen Sie dann **Detaillierter Status** unter der Unterüberschrift **Ansicht** aus.
 
-- **Ausstehend** – Auftragspositionen, die einer Filiale zugewiesen wurden, aber noch nicht angenommen wurden, haben den Status **Ausstehend**, wenn sie in der Verkaufsstelle angezeigt werden. Positionen, bei denen die Annahme in der Verkaufsstelle aussteht, haben den Status **Auftragsabwicklung** im Backoffice.
-- **Angenommen** – Auftragspositionen, die manuell angenommen wurden oder automatisch angenommen wurden, besitzen den Status **Angenommen**, wenn sie in der Verkaufsstelle angezeigt werden. Positionen mit dem Status **Angenommen** werden im Backoffice als **Auftragsabwicklung** angezeigt.
+- **Ausstehend** – Auftragspositionen, die einer Filiale zugewiesen wurden, aber noch nicht angenommen wurden, haben den Status **Ausstehend** , wenn sie in der Verkaufsstelle angezeigt werden. Positionen, bei denen die Annahme in der Verkaufsstelle aussteht, haben den Status **Auftragsabwicklung** im Backoffice.
+- **Angenommen** – Auftragspositionen, die manuell angenommen wurden oder automatisch angenommen wurden, besitzen den Status **Angenommen** , wenn sie in der Verkaufsstelle angezeigt werden. Positionen mit dem Status **Angenommen** werden im Backoffice als **Auftragsabwicklung** angezeigt.
 - **Entnahme** – Positionen, die aktuell auf der Filialebene entnommen werden, haben den Status **Entnahme**. Diese gleichen Positionen, wenn sie im Backoffice angezeigt werden, werden als **Auftragsabwicklung** angezeigt.
 - **Entnommen** und **Teilweise entnommen** – Positionen, die in der Verkaufsstelle entnommen oder teilweise entnommen wurden, besitzen den Status **Entnommen** oder **Teilweise entnommen**. Die gleichen Positionen im Backoffice werden auch als **Entnommen** oder **Teilweise entnommen** angezeigt.
 - **Verpackt** und **Teilweise verpackt** – Positionen, die in der Verkaufsstelle verpackt oder teilweise verpackt wurden, besitzen den Status **Verpackt** oder **Teilweise verpackt**. Die gleichen Positionen im Backoffice werden auch als **Geliefert** oder **Teilweise geliefert** angezeigt.

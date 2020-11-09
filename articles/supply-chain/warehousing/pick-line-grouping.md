@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations, Supply Chain Management
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 4b9cd7dac680c1691fb4c6dd4078f109254be784
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: b3497d43a500898207ed5154721ee0e3a327fb93
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3215595"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017735"
 ---
 # <a name="pick-line-grouping"></a>Gruppierung von Kommissionierpositionen
 
@@ -35,13 +35,13 @@ Bei der Kommissionierliniengruppierung können mehrere Arbeitslinien mit demselb
 
 ### <a name="create-a-mobile-device-menu-item"></a>Erstellen eines Menüelements für ein mobiles Geräts
 
-1. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Mobiles Gerät \> Menüelemente für mobile Geräte**, und erstellen Sie ein neues Menüelement mit dem Namen **Entnahmepositionen für Warengruppe – Benutzergesteuert**.
+1. Navigieren Sie zu **Lagerortverwaltung \> Einstellungen \> Mobiles Gerät \> Menüelemente für mobile Geräte** , und erstellen Sie ein neues Menüelement mit dem Namen **Entnahmepositionen für Warengruppe – Benutzergesteuert**.
 2. Legen Sie unter **Menüoptionen für das mobile Gerät** die folgenden Werte fest:
 
     - Geben Sie im Feld **Menüelementname** die Option **Warenentnahme - Gruppenposition** ein.
     - Geben Sie im Feld **Titel** die Option **Warenentnahme - Gruppenposition** ein.
     - Wählen Sie im Feld **Modus** **Arbeit**.
-    - Legen Sie die **Vorhandene Arbeit verwenden**-Option mit **Ja** fest.
+    - Legen Sie die **Vorhandene Arbeit verwenden** -Option mit **Ja** fest.
 
 3. Legen Sie auf dem Inforegister **Allgemein** die folgenden Werte fest:
 
@@ -100,7 +100,7 @@ Bevor Sie die Gruppierung von Kommissionierpositionen einrichten können, müsse
     - **Artikel M9201:** 3 Stück
     - **Artikel M9202:** 9 Stück
 
-6. Bevor Sie die Bestellungen an das Lager freigeben, müssen Sie sicherstellen, dass die Kommissionierstellen über genügend Lagerbestand für alle Artikel in allen Bestellungen verfügen. Überprüfen Sie die Einstellung **Standortrichtlinie**, um zu bestimmen, welche Kommissionierorte für die Kundenauftragskommissionierung verwendet werden.
+6. Bevor Sie die Bestellungen an das Lager freigeben, müssen Sie sicherstellen, dass die Kommissionierstellen über genügend Lagerbestand für alle Artikel in allen Bestellungen verfügen. Überprüfen Sie die Einstellung **Standortrichtlinie** , um zu bestimmen, welche Kommissionierorte für die Kundenauftragskommissionierung verwendet werden.
 7. Reservieren Sie das Inventar und geben Sie es an das Lager frei. Eine Arbeitskennung mit sechs Zeilen wird erstellt. Die Zeilen sind nach Artikelnummer sortiert.
 
 ### <a name="run-the-mobile-device-flow"></a>Den Ablauf für mobile Geräte ausführen
@@ -130,3 +130,4 @@ Bevor Sie die Gruppierung von Kommissionierpositionen einrichten können, müsse
 >    - Stückentnahme.
 >    - Arbeitspositionen, für die noch Wiederbeschaffungsarbeiten durchgeführt werden müssen.
 >    - Zu hohe Entnahme.
+>    - Artikelneuzuordnung für Entnahme mit unzureichender Menge

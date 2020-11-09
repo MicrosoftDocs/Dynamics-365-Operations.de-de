@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: f165a6187332a45e77c22de6eb10e227bc1c8f4c
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985017"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017620"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerabwicklung eingehender Ladungen für Bestellungen
 
@@ -92,7 +93,7 @@ Nachdem der Mitarbeiter diese Schritte ausgeführt hat, nimmt das System die fol
 
 | Entität | Aktualisierungen | Notiz |
 |---|---|---|
-| Last | Das Feld **Arbeit erstellt Menge** in der Ladezeile wird aktualisiert, um die registrierte Menge anzuzeigen. | Der Wert **Ladestatus** bleibt _Versandt_ oder _Offen_, wenn für die Ladung keine Versandbestätigung ausgeführt wurde. Wenn mindestens eine Einlagerungszeile gestartet wurde, wird diese in _In Bearbeitung_ geändert. |
+| Last | Das Feld **Arbeit erstellt Menge** in der Ladezeile wird aktualisiert, um die registrierte Menge anzuzeigen. | Der Wert **Ladestatus** bleibt _Versandt_ oder _Offen_ , wenn für die Ladung keine Versandbestätigung ausgeführt wurde. Wenn mindestens eine Einlagerungszeile gestartet wurde, wird diese in _In Bearbeitung_ geändert. |
 | Bestandsbuchung einer Bestellung, für die zugehörige Ladungsmengen registriert wurden |<p>Folgende Felder werden aktualisiert:</p><ul><li>Das Feld <b>Empfang</b> ist festgelegt auf <i>Eingetragen.</i></li><li>Das Feld <b>Standort</b> wird mit dem Empfangsdock-Standortcode aktualisiert. (Dieser Code ist im Feld <b>Standardbelegort</b> für jedes Lager definiert.)</li><li>Das Feld <b>Kennzeichen</b> wird mit der Kennzeichennummer aktualisiert, das bei der Registrierung eingegeben oder generiert wurde.</li><li>Das Feld <b>Ladungs-ID</b> wird mit der Nummer der Ladung aktualisiert, für die die Menge registriert wurde. (Siehe Hinweis.)</li></ul> | Die Möglichkeit, eine Verknüpfung zwischen der Bestellungs-Bestandtransaktion und den Mengen herzustellen, die für die Ladung registriert sind, wurde in Version 10.0.9 als optionale Funktion eingeführt, die _Ordnen Sie Bestelltransaktionen der Bestellung zu_ benannt wurde. Diese Funktion ist besonders vorteilhaft für Betriebsabläufe, bei denen eine einzelne Bestellung gekaufter Waren als mehrere Ladungen geliefert wird oder wenn eine Ladung Mengen für mehrere Bestellungen enthält. |
 | Lager-Einlagerung | Die Arbeit wird basierend auf einer Arbeitsvorlage erstellt, um den Mitarbeiter anzuweisen, die registrierten Mengen vom Empfangsort an einen regulären Lagerort zu verschieben. | Die Auswahl des Lagerorts wird durch die Einlagerungs-Lagerplatzrichtlinie gesteuert. Wenn keine Standortanweisung definiert wurde, ist der Einlagerungsort in der Arbeit leer. |
 
@@ -100,7 +101,7 @@ Beachten Sie, dass Lagerarbeiter den Eingang einer Bestellung mit einer oder meh
 
 - **Auf dem mobilen Gerät:** Verwenden Sie die Prozesse _Bestellungspositionseingang_ und _Bestellungspositionseingang und -einlagerung_. (Wenn für die Bestellungsmengenposition mehr als eine Ladung vorhanden ist, kann der Mitarbeiter den Prozess _Bestellpositionseingang_ verwenden. Stattdessen wird die Arbeitskraft angewiesen, die Geräteaktion zu verwenden, die dem Prozess _Ladungsartikel empfangen_ zugeordnet ist.)
 - **Auf dem Client** Verwenden Sie die Artikelerfassung.
-- **Auf dem Client:** Verwenden Sie die Aktion **Anmeldung**, auf die über die Bestellungsposition zugegriffen werden kann.
+- **Auf dem Client:** Verwenden Sie die Aktion **Anmeldung** , auf die über die Bestellungsposition zugegriffen werden kann.
 
 > [!NOTE]
 > Wenn der Bestellungsbeleg mit einer der oben genannten Methoden registriert wird, wird keine Verknüpfung zwischen der Bestellungsbestandtransaktion und der Ladung hergestellt, selbst wenn die Funktion _Ordnen Sie Bestelltransaktionen der Bestellung zu_ aktiviert ist. Eine Ausnahme von dieser Regel ist es, wenn Sie die Option **Bestellungspositionseingang** verwenden und nur eine Ladung einen anderen Status als _Empfangen_ für die Bestellposition aufweist.
@@ -143,7 +144,7 @@ Wenn der Lagerarbeiter die Einlagerungsarbeiten abgeschlossen hat, zeichnet das 
 
 | Entität | Aktualisierungen | Notiz |
 |---|---|---|
-| Last | <p>Folgende Felder werden aktualisiert:</p><ul><li>Der Wert <b>Ladestatus</b> wird abgeändert zu <i>In Bearbeitung</i>.</li><li>Der Wert <b>Arbeitsstatus</b> wird abgeändert in <i>100,00 % der abgeschlossenen Arbeiten</i>.</li></ul> | Der Wert **Ladestatus** wird abgeändert zu _In Bearbeitung_, wenn der Arbeiter die Einlagerungsaufgabe für mindestens eine Einlagerungslinie startet. |
+| Last | <p>Folgende Felder werden aktualisiert:</p><ul><li>Der Wert <b>Ladestatus</b> wird abgeändert zu <i>In Bearbeitung</i>.</li><li>Der Wert <b>Arbeitsstatus</b> wird abgeändert in <i>100,00 % der abgeschlossenen Arbeiten</i>.</li></ul> | Der Wert **Ladestatus** wird abgeändert zu _In Bearbeitung_ , wenn der Arbeiter die Einlagerungsaufgabe für mindestens eine Einlagerungslinie startet. |
 | Inventurtransaktionen von Arbeiten, für die zugehörige Mengen eingelagert wurden | Die Felder **Empfang** und **Lagerplatz** und andere relevante Felder werden aktualisiert, um die Bewegung vom Empfangsort zum Lagerort widerzuspiegeln. | Der Wert **Empfangsstatus** der Transaktionen für Bestellungen bleibt auf _Eingetragen_. |
 | Lager-Einlagerung | Der Wert **Arbeitsstatus** wird abgeändert in _Geschlossen_. | |
 
@@ -158,7 +159,7 @@ Um eine Seite zu öffnen, auf der sie einen Produktbeleg veröffentlichen könne
 - Öffnen Sie die entsprechende Bestellung und wählen Sie dann die Aktion **Produktbeleg** aus.
 - Gehen Sie zu **Beschaffung \> Bestellungen \> Empfang von Produkten \> Vorgang Produktempfang buchen**.
 
-Die Aktion **Produktbeleg**, die auf der Seite **Ladung** verfügbar ist (und auf der entsprechenden Seite für den Aktualisierungsjob, der Seite **Produktbelege aktualisieren**) können Produktbelegmengen nur für Bestellmengen mit dem Status _Eingetragen_ aktualisieren. Die Aktion **Produktbeleg**, die auf Seite **Bestellung** verfügbar ist, kann Mengen in beiden Verarbeitungsstatus enthalten (_Bestellt_ und _Eingetragen_). Sie kann auch den Umfang der Produktbelegbuchung über zusätzliche Parameter steuern, wie _Erhalten Sie jetzt Menge_ und _Registrierte Menge und Dienstleistungen_.
+Die Aktion **Produktbeleg** , die auf der Seite **Ladung** verfügbar ist (und auf der entsprechenden Seite für den Aktualisierungsjob, der Seite **Produktbelege aktualisieren** ) können Produktbelegmengen nur für Bestellmengen mit dem Status _Eingetragen_ aktualisieren. Die Aktion **Produktbeleg** , die auf Seite **Bestellung** verfügbar ist, kann Mengen in beiden Verarbeitungsstatus enthalten ( _Bestellt_ und _Eingetragen_ ). Sie kann auch den Umfang der Produktbelegbuchung über zusätzliche Parameter steuern, wie _Erhalten Sie jetzt Menge_ und _Registrierte Menge und Dienstleistungen_.
 
 Nur Bestellungen mit dem Status _Bestätigt_ können per Produktbeleg gebucht werden. Bei nicht bestätigten Bestellungen wird die Aktion **Produktbeleg** als nicht verfügbar angezeigt.
 
@@ -185,7 +186,7 @@ Um den Produktbeleg zu erhalten, buchen Sie die Ankunftsregistrierungen, die ein
 > | Version | Herstellkostenkalkulation |
 > |---|---|
 > | Versionen vor Version 10.0.10 und neuere Versionen, in denen die Funktion _Mehrere Produkteingänge pro Ladung zulassen_ nicht aktiviert ist | Die Zeilenmenge ist die Summe aller registrierten Mengen _für diese Bestellposition_ unabhängig davon, ob die Registrierung über mehrere Lasten durchgeführt wurde, unabhängig von der Last, von einem mobilen Gerät oder vom Client. |
-> | Version 10.0.10 und neuere Versionen, in denen die Funktion _Mehrere Produkteingänge pro Ladung zulassen_ aktiviert ist | Die Zeilenmenge ist die Summe aller registrierten Mengen _für den Ladedatensatz_, für die die Aktion **Buchung des Produktbelegs** eingeleitet wurde. |
+> | Version 10.0.10 und neuere Versionen, in denen die Funktion _Mehrere Produkteingänge pro Ladung zulassen_ aktiviert ist | Die Zeilenmenge ist die Summe aller registrierten Mengen _für den Ladedatensatz_ , für die die Aktion **Buchung des Produktbelegs** eingeleitet wurde. |
 
 Wenn der Benutzer **OK** auswählt, um die Buchung des Produktbelegs zu bestätigen, führt das System die folgenden Schlüsselaktualisierungen für die entsprechenden Entitäten durch.
 
@@ -206,8 +207,8 @@ Die folgende Tabelle fasst die Auswirkungen der Einstellung **Mehrere Produktein
 |---|---|---|---|
 | Wenn dieses Feld nicht verfügbar ist (Versionen vor 10.0.10) | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht.</p><p>Wenn die Lademenge auf 0 (Null) aktualisiert wird, bedeutet das, dass keine Registrierung durchgeführt wurde und die Ladezeile gelöscht wurde.</p><p>Wenn die Last keine Lastlinien enthält, wird die Last gelöscht.</p> | _Eingegangen_ | Wenn für die registrierte Menge der Bestellposition mehrere Ladungen vorhanden sind, wird nur der Status der Ladung auf _Empfangen_ aktualisiert, von der aus der Beleg gebucht wurde. |
 | Nr. | <p>Die Lademenge wird so eingestellt, dass sie der registrierten Menge entspricht, die der Lade-ID zugeordnet ist.</p><p>Wenn für die Inventurtransaktion keine Lade-ID aufgezeichnet wurde, entspricht das Verhalten dem Verhalten in Versionen vor 10.0.10.</p> | _Eingegangen_ | |
-| Ja | Keine Aktualisierungen | _Empfangen_, wenn die gesamte registrierte Ladungsmenge gleich oder größer als die Ladungsmenge ist | |
-| Ja | Keine Aktualisierungen | _Empfangen_ oder _In Verarbeitung_, wenn die gesamte registrierte Ladungsmenge kleiner als die Ladungsmenge ist | |
+| Ja | Keine Aktualisierungen | _Empfangen_ , wenn die gesamte registrierte Ladungsmenge gleich oder größer als die Ladungsmenge ist | |
+| Ja | Keine Aktualisierungen | _Empfangen_ oder _In Verarbeitung_ , wenn die gesamte registrierte Ladungsmenge kleiner als die Ladungsmenge ist | |
 
 Nach das Feld **Ladungsstatus** auf _Empfangen_ gesetzt ist, können keine Produktbelegbuchungen mehr für diese Ladung vorgenommen werden. Der Arbeiter kann jedoch die verbleibende Bestellmenge unter den folgenden Bedingungen gegen die empfangene Ladung registrieren. (Weitere Informationen erhalten Sie im Abschnitt [Mehrlieferungen empfangen](#load-over-receiving) am Anfang dieses Themas.)
 
@@ -218,7 +219,7 @@ Um zusätzliche registrierte Ladungsmengen gegen eine Ladung mit dem Status _Emp
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Veröffentlichen Sie registrierte Mengen auf der Seite Bestellung
 
-Um den Produktbeleg zu erhalten, senden Sie die registrierten Mengen von der Seite **Bestellung**, Der Benutzer führt die folgenden Aufgaben aus, bevor er die Aktion **Produktbeleg** auswählt:
+Um den Produktbeleg zu erhalten, senden Sie die registrierten Mengen von der Seite **Bestellung** , Der Benutzer führt die folgenden Aufgaben aus, bevor er die Aktion **Produktbeleg** auswählt:
 
 - Legen Sie das Feld **Menge** im Abschnitt **Parameter** auf der Registerkarte **Einstellungen** auf _registrierte Menge_ fest.
 - In dem Feld **Produktbeleg** geben Sie die Nummern der Bestellungen ein, die in der Buchung enthalten sind.
@@ -237,7 +238,7 @@ Die folgende Tabelle fasst die Auswirkungen der Einstellung **Mehrere Produktein
 
 | Mehrere Produktzugänge pro Ladung zulassen | Mengen laden | Ladungsstatus | Notiz |
 |---|---|---|---|
-| Wenn dieses Feld deaktiviert oder nicht verfügbar ist (in Versionen vor 10.0.10) | Keine Aktualisierungen | Es werden keine Updates durchgeführt. (Der Status bleibt bestehen _Offen_, _Versandt_ oder _In Bearbeitung_ .) | Da die Buchung des Produktbelegs von einer Bestellung aus initiiert wird, enthält die Aktualisierungslogik keine Informationen über die Zuordnung zwischen den registrierten Mengen in ihrem Umfang und den Lasten, für die die Registrierung erfasst wurde. Daher kann die Last für die Statusaktualisierung nicht ausgewählt werden. |
+| Wenn dieses Feld deaktiviert oder nicht verfügbar ist (in Versionen vor 10.0.10) | Keine Aktualisierungen | Es werden keine Updates durchgeführt. (Der Status bleibt bestehen _Offen_ , _Versandt_ oder _In Bearbeitung_ .) | Da die Buchung des Produktbelegs von einer Bestellung aus initiiert wird, enthält die Aktualisierungslogik keine Informationen über die Zuordnung zwischen den registrierten Mengen in ihrem Umfang und den Lasten, für die die Registrierung erfasst wurde. Daher kann die Last für die Statusaktualisierung nicht ausgewählt werden. |
 | Aktiviert | Keine Aktualisierungen | <p>Eine der folgenden Aktionen erfolgt:</p><ul><li>Der Status wird in <i>Empfangen</i> geändert, wenn die insgesamt eingegangenen und gekauften Mengen der Bestelltransaktionen der Bestellung größer oder gleich der Menge der Ladung sind, mit der sie verbunden sind.</li><li>Der Status bleibt als <i>Offen</i>, <i>Versandt</i>, oder <i>In Bearbeitung</i> bestehen, wenn die vorherige Bedingung nicht für alle Zeilen in der Last erfüllt ist.</li></ul> | |
 
 ### <a name="select-the-appropriate-product-receipt-posting-option-for-your-logistics-operations"></a>Wählen Sie die entsprechende Option für die Buchung von Produktbelegen für Ihre Logistikvorgänge
@@ -267,12 +268,12 @@ Diese Szenarien erfordern die Funktion _Mehrere Produktbelegbuchungen pro Ladung
 
 1. Öffnen Sie den Arbeitsbereich **Funktionsverwaltung**. (Ausführliche Informationen zum Suchen und Verwenden dieses Arbeitsbereichs finden Sie unter [Funktionsverwaltungsübersicht](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Aktivieren Sie die Funktion _Ordnen Sie Bestelltransaktionen der Bestellung zu_, die wie folgt aufgelistet ist:
+1. Aktivieren Sie die Funktion _Ordnen Sie Bestelltransaktionen der Bestellung zu_ , die wie folgt aufgelistet ist:
 
     - **Module:** _Lagerortverwaltung_
     - **Funktionsname:** _Ordnen Sie Bestelltransaktionen der Bestellung zu_
 
-1. Aktivieren Sie die Funktion _Mehrere Produktbelegbuchungen pro Ladung_, die wie folgt aufgelistet ist:
+1. Aktivieren Sie die Funktion _Mehrere Produktbelegbuchungen pro Ladung_ , die wie folgt aufgelistet ist:
 
     - **Module:** _Lagerortverwaltung_
     - **Funktionsname:** _Mehrere Produktbelegbuchungen pro Ladung_
@@ -307,7 +308,7 @@ Dieses Szenario zeigt, wie Mengen für eine eingehende Ladung registriert werden
 
 #### <a name="create-a-load-to-plan-receipt-of-a-purchase-order"></a>Erstellen Sie eine Ladung, um den Eingang einer Bestellung zu planen
 
-In diesem Verfahren erstellen Sie manuell eine Bestellung und eine zugehörige Ladung. Anschließend aktualisieren Sie die Ladung, um zu simulieren, dass sie vom Hersteller versendet wurde (wodurch der Ladestatus aktualisiert wird). Lagerplaner können dann Ladungen filtern nach **Ladestatus**, um erwartete eingehende Ladungen finden.
+In diesem Verfahren erstellen Sie manuell eine Bestellung und eine zugehörige Ladung. Anschließend aktualisieren Sie die Ladung, um zu simulieren, dass sie vom Hersteller versendet wurde (wodurch der Ladestatus aktualisiert wird). Lagerplaner können dann Ladungen filtern nach **Ladestatus** , um erwartete eingehende Ladungen finden.
 
 1. Wechseln Sie zu **Beschaffung \> Bestellungen \> Alle Bestellungen**.
 1. Wählen Sie **Neu** aus.
@@ -324,7 +325,7 @@ In diesem Verfahren erstellen Sie manuell eine Bestellung und eine zugehörige L
 1. Auf der Seite **Ladeplanungsworkbench** im Aktionsbereich auf der Registerkarte **Angebot und Nachfrage** wählen Sie **Hinzufügen \> Zu neuer Ladung**.
 1. Im Dialogfeld **Vorlagenzuordnung** legen Sie das Feld **Vorlagen-ID laden** auf _20 'Container_ fest.
 1. Wählen Sie **OK** aus, um das Dialogfeld zu schließen und zum Workbench zurückzukehren.
-1. Im Abschnitt **Ladungen** wählen Sie **ID laden**, um die neu erstellte Ladung zu öffnen.
+1. Im Abschnitt **Ladungen** wählen Sie **ID laden** , um die neu erstellte Ladung zu öffnen.
 1. Überprüfen Sie die Ladungskopf- und Zeilendetails und beachten Sie die folgenden Punkte:
 
     - Im Inforegister **Ladung** ist das Feld **Ladungsstatus** auf _Offen_ festgelegt.
@@ -333,7 +334,7 @@ In diesem Verfahren erstellen Sie manuell eine Bestellung und eine zugehörige L
     ![Ladungsdetails](media/inbound-load-details.png "Ladungsdetails")
 
 1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Liefern und Empfangen** und wählen dann **Bestätigen \> Eingehende Lieferung**. Beachten Sie, dass der **Status der Ladung** auf _Versandt_ geändert hat.
-1. Notieren Sie sich den Wert der **Ladungs-ID**, damit Sie ihn in der nächsten Prozedur verwenden können.
+1. Notieren Sie sich den Wert der **Ladungs-ID** , damit Sie ihn in der nächsten Prozedur verwenden können.
 
 #### <a name="register-receipt-of-the-quantities-that-arrived-on-the-load"></a>Registrieren Sie den Empfang der Mengen, die auf der Ladung angekommen sind
 
@@ -352,7 +353,7 @@ Wenn die Ladung am Wareneingangsdock ankommt, registriert ein Empfangsmitarbeite
 Die Ladungsempfangsaufgabe ist nun abgeschlossen, und der Empfangsmitarbeiter kann mit seiner nächsten Aufgabe fortfahren. Das Lagerempfangspersonal überprüft jedoch eventuell den Ladungsdatensatz und kann feststellen, dass die empfangene Menge unter der erwarteten Menge lag. Anschließend führen sie die folgende Prozedur mithilfe des Webclients aus.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
-1. Suchen Sie in der Liste die Ladung, die Sie gerade erhalten haben. (Möglicherweise müssen Sie das Kontrollkästchen **Abgeschlossene Anzeigen** auswählen, um die eingehenden Ladungen mit dem Ladungsstatus von _Versandt_ einzuschließen.) Wählen Sie dann den Link in der Spalte **ID laden**, um die Ladung zu öffnen.
+1. Suchen Sie in der Liste die Ladung, die Sie gerade erhalten haben. (Möglicherweise müssen Sie das Kontrollkästchen **Abgeschlossene Anzeigen** auswählen, um die eingehenden Ladungen mit dem Ladungsstatus von _Versandt_ einzuschließen.) Wählen Sie dann den Link in der Spalte **ID laden** , um die Ladung zu öffnen.
 1. Beachten Sie im Ladungsdatensatz, dass der Wert **Ladungsstatus** _Versandt_ bleibt, aber der Wert **Arbeit erstellte Menge** in der Ladungszeile geändert hat auf _9_.
 1. Wechseln Sie zu **Beschaffung \> Bestellungen \> Alle Bestellungen**.
 1. Suchen Sie in der Liste den Kauf, den Sie gerade erhalten haben, und wählen Sie den Link in der Spalte **Bestellung** aus, um die Bestellung zu öffnen.
@@ -360,23 +361,23 @@ Die Ladungsempfangsaufgabe ist nun abgeschlossen, und der Empfangsmitarbeiter ka
 1. Im Inforegister **Bestellpositionen** wählen Sie **Bestand \> Ansicht \> Transaktionen**.
 1. Überprüfen Sie die Details der beiden Bestellvorgänge. (Möglicherweise müssen Sie die Seite **Bestandtransaktionen** personalisieren, um das Feld **Ladungs-ID** im Raster zu sehen.) Sie sollten zwei Transaktionen sehen:
 
-    - Die Transaktion mit einer Quittung im Status _Erfasst_ repräsentiert die Erfassungsmenge von _9_, die mit dem mobilen Gerät mit einer bestimmten Ladung ausgeführt wurde. **Ladungs-ID** ist mit der betreffenden Transaktion verbunden.
-    - Die Transaktion hat eine Quittung mit dem Status _Bestellt_, der die verbleibende Bestellpostenmenge von _1_ darstellt.
+    - Die Transaktion mit einer Quittung im Status _Erfasst_ repräsentiert die Erfassungsmenge von _9_ , die mit dem mobilen Gerät mit einer bestimmten Ladung ausgeführt wurde. **Ladungs-ID** ist mit der betreffenden Transaktion verbunden.
+    - Die Transaktion hat eine Quittung mit dem Status _Bestellt_ , der die verbleibende Bestellpostenmenge von _1_ darstellt.
 
 #### <a name="product-receiptpost-the-registered-load-quantities-against-purchase-orders"></a>Produktquittung - Verbuchen Sie die erfasste Ladungsmenge mit den Bestellungen
 
 In diesem Verfahren erhalten Sie einen Produktbeleg – buchen Sie das Inventar, das Sie für eine Ladung erfasst haben. Infolgedessen werden das erhaltene Inventar und die damit verbundenen Kosten dem Hauptbuch des Unternehmens hinzugefügt.
 
 1. Gehen Sie zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
-1. Suchen Sie in der Liste die Ladung, die Sie gerade empfangen haben. (Möglicherweise müssen Sie das Kontrollkästchen **Abgeschlossene Anzeigen** auswählen, um die eingehenden Ladungen mit dem Ladungsstatus von _Versandt_ einzuschließen.) Wählen Sie dann den Link in der Spalte **ID laden**, um die Ladung zu öffnen.
-1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Senden und Empfangen** und wählen dann **Empfangen \> Produktquittung**. Klicken Sie auf **Ja**, wenn Sie zum Bestätigen Iher Auswahl aufgefordert werden.
+1. Suchen Sie in der Liste die Ladung, die Sie gerade empfangen haben. (Möglicherweise müssen Sie das Kontrollkästchen **Abgeschlossene Anzeigen** auswählen, um die eingehenden Ladungen mit dem Ladungsstatus von _Versandt_ einzuschließen.) Wählen Sie dann den Link in der Spalte **ID laden** , um die Ladung zu öffnen.
+1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Senden und Empfangen** und wählen dann **Empfangen \> Produktquittung**. Klicken Sie auf **Ja** , wenn Sie zum Bestätigen Iher Auswahl aufgefordert werden.
 1. Im Dialogfeld **Produktbeleg buchen** im Inforegister **Zeilen** überprüfen Sie das Raster. Sie sollten die Bestellposition sehen, für die die Menge für die ausgewählte Ladung registriert wurde.
 
     > [!NOTE]
     > In Versionen, in denen die Funktion _Mehrere Produktbelegbuchungen pro Ladung_ nicht verfügbar oder nicht aktiviert ist, wird die Standardmenge, die im Raster **Zeilen laden** angezeigt wird, zur Gesamtmenge, die für alle Lasten registriert wurden, die der Bestellposition zugeordnet sind.
 
 1. Im Inforegister **Übersicht** prüfen Sie das Feld **Produktquittung** im Raster. Beachten Sie, dass eine Zahl festgelegt werden muss, die die ID der ausgewählten Ladung enthält.
-1. Wählen Sie **OK**, um den Produktbeleg zu buchen und das Dialogfeld **Produktbeleg buchen** zu schließen.
+1. Wählen Sie **OK** , um den Produktbeleg zu buchen und das Dialogfeld **Produktbeleg buchen** zu schließen.
 1. Sie kehren zu den Ladungsdetails zurück. Beachten Sie folgende Punkte:
 
     - Das Feld **Ladungsstatus** ist jetzt auf _Empfangen_ festgelegt.
@@ -407,7 +408,7 @@ In diesem Verfahren aktivieren Sie mehrere Produktbelegbuchungen von derselben L
 
 #### <a name="create-two-loads-to-plan-receipt-of-a-purchase-order"></a>Erstellen Sie zwei Ladungen, um den Empfang einer Bestellung zu planen
 
-In diesem Verfahren erstellen Sie manuell eine Bestellung und zwei Ladungen. Anschließend aktualisieren Sie die Ladung manuell, um zu simulieren, dass sie vom Hersteller versendet wurde (wodurch der Ladungsstatus aktualisiert wird). Lagerplaner können dann Ladungen filtern nach **Ladestatus**, um erwartete eingehende Ladungen finden.
+In diesem Verfahren erstellen Sie manuell eine Bestellung und zwei Ladungen. Anschließend aktualisieren Sie die Ladung manuell, um zu simulieren, dass sie vom Hersteller versendet wurde (wodurch der Ladungsstatus aktualisiert wird). Lagerplaner können dann Ladungen filtern nach **Ladestatus** , um erwartete eingehende Ladungen finden.
 
 Außerdem erfahren Sie, wie Sie die Bestellposition so einstellen, dass Sie eine Menge erhalten, die 20 Prozent über der für die Position angegebenen Menge liegt.
 
@@ -424,8 +425,8 @@ Außerdem erfahren Sie, wie Sie die Bestellposition so einstellen, dass Sie eine
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte auf **Einkauf** und wählen **Aktionen \> Bestätigen**. Der Bestellstatus ist jetzt _Bestätigt_.
 1. Klicken Sie im Aktivitätsbereich auf der Registerkarte auf **Lagerort** und wählen Sie **Aktionen \> Ladungsplanungsworkbench**.
 1. Auf der Seite **Ladeplanungsworkbench** im Aktionsbereich auf der Registerkarte **Angebot und Nachfrage** wählen Sie **Hinzufügen \> Zu neuer Ladung**.
-1. Im Dialogfeld **Vorlagenzuordnung** legen Sie das Feld **Vorlagen-ID laden** auf _20 'Container_ fest. Auf der Registerkarte **Einzelheiten** ändern Sie den Wert **Menge** von _10_ zu _5_, um die Bestellpostenmenge teilweise hinzuzufügen.
-1. Wählen Sie **OK**, um Ihre Einstellungen zu übernehmen und das Dialogfeld zu schließen.
+1. Im Dialogfeld **Vorlagenzuordnung** legen Sie das Feld **Vorlagen-ID laden** auf _20 'Container_ fest. Auf der Registerkarte **Einzelheiten** ändern Sie den Wert **Menge** von _10_ zu _5_ , um die Bestellpostenmenge teilweise hinzuzufügen.
+1. Wählen Sie **OK** , um Ihre Einstellungen zu übernehmen und das Dialogfeld zu schließen.
 1. Wiederholen Sie die Schritte 8 bis 10, um eine zweite Ladung zu erstellen. Diesmal sollte das Feld **Menge** auf _5_ festgelegt werden.
 1. Auf der Seite **Ladungsplanungs-Workbench** im Raster **Ladungen** wählen Sie den Wert **Ladungs-ID** für die erste Ladung aus, die Sie erstellt haben. Die Seite **Ladungsdetails** erscheint und zeigt die ausgewählte Ladung an. Führen Sie die folgenden Schritte aus:
 
@@ -434,7 +435,7 @@ Außerdem erfahren Sie, wie Sie die Bestellposition so einstellen, dass Sie eine
     1. Wählen Sie die Schaltfläche Schließen, um zur Seite **Ladungsplanungs-Workbench** zurückzukehren.
 
 1. Wiederholen Sie den vorherigen Schritt für die zweite Ladung, die Sie erstellt haben.
-1. Notieren Sie sich die beiden Werte der **Ladungs-ID**, die im Raster **Ladungen** angezeigt werden.
+1. Notieren Sie sich die beiden Werte der **Ladungs-ID** , die im Raster **Ladungen** angezeigt werden.
 
 #### <a name="register-partial-receipt-of-the-quantities-that-arrived-on-the-first-load-and-post-the-registered-load-quantities"></a>Registrieren Sie den teilweisen Empfang der Mengen, die bei der ersten Ladung angekommen sind, und buchen Sie die registrierten Ladungsmengen
 
@@ -453,7 +454,7 @@ Dieses Verfahren zeigt, wie ein empfangender Sachbearbeiter Ladungsmengen auf ei
 1. Fahren Sie mit dem Workflow fort und lassen Sie alle anderen Felder leer oder setzen Sie sie auf Ihre Standardwerte, bis Ihr Gerät Sie darüber informiert, dass die Arbeit abgeschlossen ist.
 1. Gehen Sie im Webclient zu **Lagerortverwaltung \> Ladungen \> Alle Ladungen**.
 1. Suchen Sie in der Liste die Ladung, die Sie gerade erhalten haben, und wählen Sie den Wert **Ladungs-ID** zum Öffnen der Ladung aus. Beachten Sie, dass der Wert **Ladungsstatus** auf _Versandt_ bleibt, aber der Wert **Arbeit erstellte Menge** in der Ladungszeile geändert hat auf _3_.
-1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Senden und Empfangen** und wählen dann **Empfangen \> Produktquittung**. Klicken Sie auf **Ja**, wenn Sie zum Bestätigen Iher Auswahl aufgefordert werden.
+1. Im Aktivitätsbereich auf der Registerkarte wählen Sie **Senden und Empfangen** und wählen dann **Empfangen \> Produktquittung**. Klicken Sie auf **Ja** , wenn Sie zum Bestätigen Iher Auswahl aufgefordert werden.
 1. Im Dialogfeld **Produktbeleg buchen** überprüfen Sie im Dialogfeld die angezeigten Werte, ändern Sie sie jedoch nicht, und wählen Sie **OK**.
 1. Sie kehren zur Seite **Ladungsdetails zurück** für Ihre ausgewählte Ladung. Beachten Sie folgende Punkte:
 

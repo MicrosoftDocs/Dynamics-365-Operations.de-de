@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSLicensePlateLabel
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 9af077022ab0759534d2c1da5f39997712e6a354
-ms.sourcegitcommit: 965fa733be068dc37f482d02ebbcd77f2c3d0a45
+ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "3763454"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4017712"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumenten-Routing-Layout für Kennzeichenetiketten
 
@@ -63,10 +63,10 @@ $FieldName:FormatString$
 
 Hier ist eine Erklärung für dieses Format:
 
-- `FieldName` ist der Name des Datenfeldes (z. B. **Menge**).
+- `FieldName` ist der Name des Datenfeldes (z. B. **Menge** ).
 - `FormatString` definiert, wie die Daten gedruckt werden müssen.
 
-Die folgenden Beispiele zeigen, wie Sie die Arbeitsmenge anpassen können (**Menge**) Feld:
+Die folgenden Beispiele zeigen, wie Sie die Arbeitsmenge anpassen können ( **Menge** ) Feld:
 
 - Um immer vier Ziffern anzuzeigen (indem Sie Nullen als Platzhalter verwenden), verwenden Sie `$Qty:0000$`. Wenn die Menge beispielsweise 10 ist, wird auf dem Etikett 0010 angezeigt.
 - Um immer zwei Dezimalstellen anzuzeigen, verwenden Sie `$Qty:0.00$`. Wenn die Menge beispielsweise 10 ist, wird auf dem Etikett 10.00 angezeigt.

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart
+ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b4b3120001ecd5340c063f80ad7471050b437fd2
-ms.sourcegitcommit: 4f9912439ff78acf0c754d5bff972c4b85763093
+ms.openlocfilehash: 82249f460e5ddce9b9d43906008a3248a80daafb
+ms.sourcegitcommit: e3f4dd2257a3255c2982f4fc7b72a1121275b88a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "3203437"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4018743"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Kreditorenzusammenarbeit mit externen Kreditoren
 
@@ -185,7 +185,7 @@ Die folgende Tabelle enthält ein Beispiel der Änderungen des Status und der Ve
 | Der Kreditor übermittelt eine Antwort **Angenommen mit Änderungen**. | Der Status ist weiterhin **In externer Prüfung**. |
 | Sie nehmen einige Änderungen vor, die vom Kreditor gefordert wurden. | Der Status wird zurückgeändert in **Genehmigt**. |
 | Sie senden die neue Version der Bestellung an den Kreditor. | Eine neue Version wird in der Kreditorenportalschnittstelle erfasst und der Status wird in **Externe Prüfung** geändert. |
-| Der Kreditor genehmigt die neue Version der Bestellung. | Der Status ist weiterhin **In externer Prüfung,**, es sei denn, das Kreditorenkonto ist so konfiguriert, dass Bestellungen automatisch den Status **Bestätigt** erhalten, wenn der Keditor sie akzeptiert. |
+| Der Kreditor genehmigt die neue Version der Bestellung. | Der Status ist weiterhin **In externer Prüfung,** , es sei denn, das Kreditorenkonto ist so konfiguriert, dass Bestellungen automatisch den Status **Bestätigt** erhalten, wenn der Keditor sie akzeptiert. |
 
 Kreditoren müssen eine Bestellung in der Kreditorenzusammenarbeitsschnittstelle nicht bestätigen. Sie können auch eine E-Mail senden oder ihre Zustimmung zu einer Bestellung über andere Kanäle vermitteln. Sie können anschließend den Auftrag manuell bestätigen. In diesem Fall erhalten Sie eine Warnung, die aussagt, dass der Auftrag gerade bestätigt wird, obwohl keine Antwort vom Kreditor vorhanden ist. Die Bestellung wird dann in der Bestätigungshistorie als offener, bestätigter Auftrag ohne Antworten aufgeführt. Zu diesem Zeitpunkt hat der Kreditor nicht mehr die Möglichkeit, die Bestellung zu bestätigen oder abzulehnen.
 

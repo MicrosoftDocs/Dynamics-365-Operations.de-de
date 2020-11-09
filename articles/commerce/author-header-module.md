@@ -3,7 +3,7 @@ title: Kopfzeilenmodul
 description: In diesem Thema werden Kopfzeilenmodule behandelt und die Erstellung von Kopfzeilen in Microsoft Dynamics 365 Commerce beschrieben.
 author: anupamar-ms
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 99457b2c98eae0ddd898f852630d690140a5a4c5
-ms.sourcegitcommit: 8028fbc5b9585e87d3331ea02577ff82ede090af
+ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
+ms.sourcegitcommit: 765056b5dc1d0a8c27e56ff2cbd310ad3349ff09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "3817009"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4055449"
 ---
 # <a name="header-module"></a>Kopfzeilenmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 In diesem Thema werden Kopfzeilenmodule behandelt und die Erstellung von Kopfzeilen in Microsoft Dynamics 365 Commerce beschrieben.
 
@@ -43,7 +42,7 @@ Das folgende Bild zeigt ein Beispiel eines Kopfzeilenmoduls, das auf einer Start
 
 ## <a name="properties-of-a-header-module"></a>Eigenschaften eines Kopfmoduls
 
-Ein Kopfmodul unterstützt die Eigenschaften **Logo-Bild**, **Logo-Link** und **Meine Kontolinks**. 
+Ein Kopfmodul unterstützt die Eigenschaften **Logo-Bild** , **Logo-Link** und **Meine Kontolinks**. 
 
 Die Eigenschaften **Logo-Bild** und **Logo-Link** werden verwendet, um ein Logo auf der Seite zu definieren. Weitere Informationen finden Sie in [Hinzufügen eines Logos](add-logo.md). 
 
@@ -59,38 +58,47 @@ Die folgenden Module können im Kopfzeilenmodul verwendet werden:
 
 - **Warenkorbsymbol** – Das Warenkorbsymbolmodul stellt das Warenkorbsymbol dar, das die Anzahl der Artikel im Warenkorb zu einem bestimmten Zeitpunkt anzeigt. Weitere Informationen finden Sie unter [Warenkorb-Symbolmodul](cart-icon-module.md).
 
+- **Site-Selektor** – Mit dem Site-Auswahlmodul können Benutzer verschiedene vordefinierte Sites durchsuchen, basierend auf Markt, Regionen und Gebietsschemas. Weitere Informationen finden Sie unter [Site-Auswahl-Modul](site-selector.md).
+
+- **Selektor speichern** – Das Store Selector-Modul kann in den Store Selector-Slot eines Header-Moduls aufgenommen werden. Hier können Benutzer Geschäfte in der Nähe durchsuchen und finden. Benutzer können auch einen bevorzugten Store angeben. Dieser Store wird dann in der Kopfzeile angezeigt. Wenn das Store-Selector-Modul im Header-Modul enthalten ist, wird die **Modus** Eigenschaft auf **Store finden** festgelegt. Weitere Informationen finden Sie unter [Store-Auswahl-Modul](store-selector.md).
+
+> [!NOTE]
+> - Hilfe für das Modul Warenkorbsymbol im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.11.
+> - Hilfe für das Modul Site-Selektor im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.14.
+> - Hilfe für das Modul Store-Selektor im Header-Modul finden Sie in Dynamics 365 Commerce Release 10.0.15.
+
 ## <a name="create-a-header-fragment-for-a-page"></a>Erstellen eines Kopfzeilenfragment für eine Seite
 
 Um ein neues Kopfzeilenfragment zu erstellen, befolgen Sie diese Schritte.
 
 1. Wechseln Sie zu **Fragmente** und wählen Sie **Neu** aus, um ein neues Fragment zu erstellen.
 1. Wählen Sie im Dialogfeld **Neues Fragment** das Modul **Container** aus, geben Sie einen Namen für das Fragment ein und wählen Sie dann **OK** aus.
-1. Wählen Sie den **Standardcontainer**-Slot aus und wählen Sie im Eigenschaftenfenster rechts die Eigenschaft **Breite** auf **Bildschirm ausfüllen**.
-1. Wählen Sie im Slot **Standard-Container** die Ellipsen-Schaltfläche (**...**) und wählen Sie **Modul hinzufügen**.
-1. Im Dialogfeld **Modul hinzufügen** wählen Sie die Module **Cookie-Zustimmung**, **Kopfzeile** und **Werbebanner** und dann **OK** aus.
-1. Im Eigenschaftenbereich des **Werbebanner**-Moduls wählen Sie **Nachricht hinzufügen**und dann **Nachricht** aus.
+1. Wählen Sie den **Standardcontainer** -Slot aus und wählen Sie im Eigenschaftenfenster rechts die Eigenschaft **Breite** auf **Bildschirm ausfüllen**.
+1. Wählen Sie im Slot **Standard-Container** die Ellipsen-Schaltfläche ( **...** ) und wählen Sie **Modul hinzufügen**.
+1. Im Dialogfeld **Modul hinzufügen** wählen Sie die Module **Cookie-Zustimmung** , **Kopfzeile** und **Werbebanner** und dann **OK** aus.
+1. Im Eigenschaftenbereich des **Werbebanner** -Moduls wählen Sie **Nachricht hinzufügen** und dann **Nachricht** aus.
 1. Fügen Sie im Dialogfeld **Nachricht** dem Werbeinhalt Text und Links hinzu und wählen anschließend **OK** aus.
-1. Im Eigenschaftenbereich des **Cookie-Zustimmung**-Moduls fügen Sie der Datenschutzseite der Website Text und einen Link hinzu und konfigurieren diese.
-1. Im Slot **Navigationsmenü** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Im Eigenschaftenbereich des **Cookie-Zustimmung** -Moduls fügen Sie der Datenschutzseite der Website Text und einen Link hinzu und konfigurieren diese.
+1. Im Slot **Navigationsmenü** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
 1. Im Dialogfeld **Modul hinzufügen** wählen Sie das Modul **Navigationsmenü** und wählen Sie dann **OK**.
 1. Im Eigenschaftenbereich für das Navigationsmenümodul wählen Sie unter **Quelle für das Navigationsmenü** **Retail Server** aus.
 1. Im Eigenschaftenbereich für das Navigationsmenümodul wählen Sie unter **Statische Menüpunkte** **Menüpunkt hinzufügen** und dann **Menüpunkt** aus. 
-1. In dem **Menüpunkt**-Dialogfeld geben Sie unter **Menüelementtext** „Kontakt“ ein.
-1. In dem **Menüpunkt**-Dialogfeld wählen Sie unter **Ziel des Menüelement-Links** **Link hinzufügen** aus.
+1. In dem **Menüpunkt** -Dialogfeld geben Sie unter **Menüelementtext** „Kontakt“ ein.
+1. In dem **Menüpunkt** -Dialogfeld wählen Sie unter **Ziel des Menüelement-Links** **Link hinzufügen** aus.
 1. Im Dialogfeld **Link hinzufügen** wählen Sie die URL für die „Kontakt“-Seite der Webite und dann **OK** aus.  
 1. Wählen Sie im Dialogfeld **Menüelement** die Option **OK** aus.
-1. Im Slot **Suchen** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen (**...**) und wählen **Modul hinzufügen**.
+1. Im Slot **Suchen** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
 1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Suchen** und dann **OK** aus.
 1. Konfigurieren Sie im Eigenschaftenbereich für das Suchmodul die Eigenschaften des Navigationsmenümoduls nach Bedarf.
-1. Im Slot **Einkaufswagensymbol** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen (**...**) und wählen **Modul hinzufügen**.
-1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Einkaufswagen**-Modul und dann **OK** aus.
+1. Im Slot **Einkaufswagensymbol** wählen Sie das Kopfzeilenmodul, wählen die Ellipsen ( **...** ) und wählen **Modul hinzufügen**.
+1. Wählen Sie im Dialogfeld **Modul hinzufügen** das Modul **Einkaufswagen** -Modul und dann **OK** aus.
 1. Konfigurieren Sie im Eigenschaftenbereich für das Warenkorbsymbol-Modult die Eigenschaften nach Bedarf. Wenn das Warenkorbsymbol eine Warenkorbübersicht (auch als Minikorb bezeichnet) anzeigen soll, wenn Benutzer den Mauszeiger darüber halten, wählen Sie **Mini-Wagen anzeigen**.
-1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um das Fragment einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
 
 Um Sicherzustellen, dass eine Kopfzeile auf jeder Seite angezeigt wird, führen Sie die folgenden Schritte für jede Seitenvorlage aus, die für die Site erstellt wird.
 
 1. Im Slot **Kopfzeile** wählen Sie das Modul **Standardseite** und fügen das Fußzeilenfragment hinzu, das Sie erstellt haben.
-1. Wählen Sie **Speichern**, wählen Sie **Bearbeiten beenden**, um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen**, um es zu veröffentlichen.
+1. Wählen Sie **Speichern** , wählen Sie **Bearbeiten beenden** , um die Vorlage einzuchecken, und wählen Sie dann **Veröffentlichen** , um es zu veröffentlichen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -107,3 +115,7 @@ Um Sicherzustellen, dass eine Kopfzeile auf jeder Seite angezeigt wird, führen 
 [Cookie-Einwilligung](cookie-consent-module.md)
 
 [Fußzeilenmodul](author-footer-module.md)
+
+[Siteauswahlmodul](site-selector.md)
+
+[Shopauswahlmodul](store-selector.md)

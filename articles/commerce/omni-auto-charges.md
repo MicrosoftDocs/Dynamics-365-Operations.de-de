@@ -19,51 +19,51 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c397354ade1ac1d4f5f9bc0e6bb5d4be5a7ae9f3
-ms.sourcegitcommit: f7294160d18f15cb762c24f2459b4f0887c37541
+ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
+ms.sourcegitcommit: 776758a0ff95c3c7398986095104d1d2b9814514
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "3505610"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4107374"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Erweiterte automatische Omni-Channel-Belastungen
 
 [!include [banner](includes/banner.md)]
 
-Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erweiterten Funktionen automatische Belastungen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
+Dieses Thema enthält Informationen zur Konfiguration und Bereitstellung der erweiterten automatischen Funktionen, die in Dynamics 365 for Retail Version 10.0 verfügbar sind.
 
-Wenn die erweiterten Auto-Belastungen-Funktionen aktiviert sind, können Bestellungen, die in jedem unterstützten Commerce Channel (Verkaufsstelle (POS), Callcenter und online) erstellt wurden, die Vorteile der in der ERP-Anwendung definierten [Auto-Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) -Konfiguration nutzen, die in der ERP-Anwendung sowohl für Kopf- als auch Positionsebene bezogene Gebühren definiert werden.
+zeigenWenn die erweiterten automatische Belastungen-Funktionen aktiviert sind, können Bestellungen, die in jedem unterstützten Commerce Channel (Verkaufsstelle (POS), Callcenter und online) erstellt wurden, die Vorteile der in der ERP-Anwendung definierten [automatische Belastungen](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) -Konfiguration nutzen, die in der ERP-Anwendung sowohl für Kopf- als auch Positionsebene bezogene Gebühren definiert werden.
 
-In Versionen vor Retail-Version 10.0 [Automatische Belastung](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) sind die Konfigurationen nur für Bestellungen zugänglich, die in E-Commerce- und Call-Center-Kanälen erstellt wurden. In den Versionen 10.0 und höher können POS-erstellte Aufträge die Konfigurationen für automatische Belastungen nutzen. Auf diese Weise können der Verkaufstransaktion systematisch sonstige Zuschläge hinzugefügt werden.
+In Versionen vor Retail-Version 10.0 sind die Konfigurationen [Automatische Belastung](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) nur für Bestellungen zugänglich, die in E-Commerce- und Call-Center-Kanälen erstellt wurden. In den Versionen 10.0 und höher können POS-erstellte Aufträge die Konfigurationen für die automatische Belastungen nutzen. Auf diese Weise können der Verkaufstransaktion systematisch sonstige Zuschläge hinzugefügt werden.
 
 Bei der Verwendung von Versionen vor Version 10.0 wird ein POS-Benutzer bei der Erstellung einer "Alles versenden"- oder "Auswahl versenden"-POS-Transaktion aufgefordert, manuell eine Versandgebühr einzugeben. Während die verschiedenen Belastungsfunktionen der Anwendung in Bezug darauf genutzt werden, wie die Belastungen in den Auftrag geschrieben werden, wird keine systematische Berechnung bereitgestellt – die Berechnung basiert auf der Eingabe des Benutzers, um den Wert der Belastungen zu bestimmen. Die Gebühren können nur als ein einziger "Versand"-bezogener Gebührencode hinzugefügt werden und können nach der Erstellung am POS nicht mehr einfach bearbeitet oder geändert werden.
 
-Die Verwendung von manuellen Aufforderungen zum Hinzufügen von Versandkosten ist in den Versionen 10.0 und höher weiterhin verfügbar. Wenn eine Organisation nicht den **Erweiterte Auto-Belastungen**-Parameter aktiviert, bleiben die POS-Aufforderungen für die manuelle Eingabe von Belastungen identisch.
+Die Verwendung von manuellen Aufforderungen zum Hinzufügen von Versandkosten ist in den Versionen 10.0 und höher weiterhin verfügbar. Wenn eine Organisation nicht den **Erweiterte Auto-Belastungen** -Parameter aktiviert, bleiben die POS-Aufforderungen für die manuelle Eingabe von Belastungen identisch.
 
-Bei der erweiterten Auto-Belastungen-Funktion können POS-Benutzer systematisch alle definierten Zusatzkosten auf der Grundlage von Auto-Belastungen-Einrichtungstabellen berechnen lassen. Darüber hinaus haben die Benutzer die Möglichkeit, jeder POS-Verkaufstransaktion auf Kopf- oder Positionsebene (für einen Cash-and-Carry- oder Kundenauftrag) eine unbegrenzte Anzahl von zusätzlichen Zuschlägen und Gebühren hinzuzufügen oder zu bearbeiten.
+Bei der erweiterten automatische Belastungen-Funktion können POS-Benutzer systematisch alle definierten Zusatzkosten auf der Grundlage von automatische Belastungen-Einrichtungstabellen berechnen lassen. Darüber hinaus haben die Benutzer die Möglichkeit, jeder POS-Verkaufstransaktion auf Kopf- oder Positionsebene (für einen Cash-and-Carry- oder Kundenauftrag) eine unbegrenzte Anzahl von zusätzlichen Zuschlägen und Gebühren hinzuzufügen oder zu bearbeiten.
 
-## <a name="enabling-advanced-auto-charges"></a>Erweiterte Auto-Belastungen aktivieren
+## <a name="enabling-advanced-auto-charges"></a>Erweiterte automatische Belastungen aktivieren
 
 Auf der Seite **Retail und Commerce\> Zentralverwaltungseinrichtung \>-Parameter \> Commerce-Parameter** wechseln Sie zur Registerkarte **Debitorenaufträge**. Legen Sie im Inforegister **Belastungen** die Option **Erweiterte automatische Belastungen verwenden** auf **Ja** fest.
 
-![Erweiterte Auto-Belastungen-Parameter](media/advancedchargesparameter.png)
+![Erweiterte automatische Belastungen-Parameter](media/advancedchargesparameter.png)
 
-Wenn erweiterte Auto-Belastungen aktiviert sind, werden die Benutzer beim Erstellen eines Alles versenden- oder Auswahl versenden-Kundenauftrags nicht mehr aufgefordert, manuell eine Versandgebühr am POS-Terminal einzugeben. POS-Auftragszuschläge werden systematisch berechnet und der POS-Transaktion hinzugefügt (falls eine entsprechende Auto-Belastungstabelle gefunden wird, die dem Kriterium der zu erstellenden Bestellung entspricht). Benutzer können auch Kopf- oder Positionsebenengebühren durch neu hinzugefügte POS-Vorgänge, die den Layouts der POS-Bildschirme hinzugefügt werden können, manuell hinzufügen oder pflegen.
+Wenn erweiterte automatische Belastungen aktiviert sind, werden die Benutzer beim Erstellen eines Alles versenden- oder Auswahl versenden-Kundenauftrages nicht mehr aufgefordert, manuell eine Versandgebühr am POS-Terminal einzugeben. POS-Auftragszuschläge werden systematisch berechnet und der POS-Transaktion hinzugefügt (falls eine entsprechende Auto-Belastungstabelle gefunden wird, die dem Kriterium der zu erstellenden Bestellung entspricht). Benutzer können auch Kopf- oder Positionsebenengebühren durch neu hinzugefügte POS-Vorgänge, die den Layouts der POS-Bildschirme hinzugefügt werden können, manuell hinzufügen oder pflegen.
 
-Wenn erweiterte Auto-Belastungen aktiviert sind, werden die vorhandenen **Commerce-Parameter** für **Code für Versandgebühren** und **Rückerstattung der Versandgebühren** nicht mehr verwendet. Diese Parameter sind nur zutreffend, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** auf **Nein** festgelegt ist.
+Wenn erweiterte automatische Belastungen aktiviert sind, werden die vorhandenen **Commerce-Parameter** für **Code für Versandgebühren** und **Rückerstattung der Versandgebühren** nicht mehr verwendet. Diese Parameter sind nur zutreffend, wenn der Parameter **Erweiterte automatische Belastungen verwenden** auf **Nein** festgelegt ist.
 
-Bevor Sie diese Funktion aktivieren, stellen Sie sicher, dass Sie Ihre Mitarbeiter getestet und geschult haben, da die aktivierte Funktion den Geschäftsprozessflow der Berechnung von Versand- oder anderen Gebühren und deren Addition zu POS-Aufträgen verändert. Stellen Sie sicher, dass Sie die Auswirkungen des Prozessablaufs auf die Erstellung von Transaktionen am POS verstehen. Bei Callcenter- und E-Commerce-Aufträgen sind die Auswirkungen der Aktivierung erweiterter Auto-Belastungen minimal. Call Center- und E-Commerce-Anwendungen werden weiterhin das gleiche Verhalten aufweisen, das sie in der Vergangenheit in Bezug auf die Auto-Belastungen-Tabellen zur Berechnung zusätzlicher Auftragsgebühren hatten. Callcenterkanalbenutzer haben weiterhin die Möglichkeit, alle vom System berechneten Auto-Belastungen auf Kopf- oder Positionsebene manuell zu bearbeiten oder weitere zusätzliche Gebühren auf Kopf- oder Positionsebene manuell hinzuzufügen.
+Bevor Sie diese Funktion aktivieren, stellen Sie sicher, dass Sie Ihre Mitarbeiter getestet und geschult haben, da die aktivierte Funktion den Geschäftsprozessflow der Berechnung von Versand- oder anderen Gebühren und deren Addition zu POS-Aufträgen verändert. Stellen Sie sicher, dass Sie die Auswirkungen des Prozessablaufs auf die Erstellung von Transaktionen am POS verstehen. Bei Callcenter- und E-Commerce-Aufträgen sind die Auswirkungen der Aktivierung erweiterter automatische Belastungen minimal. Call Center- und E-Commerce-Anwendungen werden weiterhin das gleiche Verhalten aufweisen, das sie in der Vergangenheit in Bezug auf die automatische Belastungen-Tabellen zur Berechnung zusätzlicher Auftragsgebühren hatten. Callcenterkanalbenutzer haben weiterhin die Möglichkeit, alle vom System berechneten automatische Belastungen auf Kopf- oder Positionsebene manuell zu bearbeiten oder weitere zusätzliche Gebühren auf Kopf- oder Positionsebene manuell hinzuzufügen.
 
 ## <a name="additional-pos-operations"></a>Zusätzliche POS-Vorgänge
 
-Damit erweiterte Auto-Belastungen in Ihrer POS-Anwendungsumgebung ordnungsgemäß funktionieren, wurden neue POS-Vorgänge hinzugefügt. Diese Vorgänge müssen zu Ihren [POS-Bildschirmlayouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) hinzugefügt und auf den POS-Geräten bereitgestellt werden, während Sie erweiterte Auto-Belastungen bereitstellen. Wenn diese Vorgänge nicht hinzugefügt werden, sind die Benutzer nicht in der Lage, verschiedene Gebühren auf den POS-Transaktionen zu verwalten oder zu pflegen, und sie haben keine Möglichkeit, die Gebührenwerte anzupassen oder zu ändern, die systematisch auf der Grundlage von Konfigurationen für Auto-Belastungen berechnet werden. Es wird mindestens empfohlen, die Vorgang **Belastungen verwalten** in Ihrem POS-Layout einzusetzen.
+Damit erweiterte automatische Belastungen in Ihrer POS-Anwendungsumgebung ordnungsgemäß funktionieren, wurden neue POS-Vorgänge hinzugefügt. Diese Vorgänge müssen zu Ihren [POS-Bildschirmlayouts](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) hinzugefügt und auf den POS-Geräten bereitgestellt werden, während Sie erweiterte automatische Belastungen bereitstellen. Wenn diese Vorgänge nicht hinzugefügt werden, sind die Benutzer nicht in der Lage, verschiedene Gebühren auf den POS-Transaktionen zu verwalten oder zu pflegen, und sie haben keine Möglichkeit, die Gebührenwerte anzupassen oder zu ändern, die systematisch auf der Grundlage von Konfigurationen für automatische Belastungen berechnet werden. Es wird mindestens empfohlen, die Vorgang **Belastungen verwalten** in Ihrem POS-Layout einzusetzen.
 
 Die neuen Vorgänge lauten wie folgt.
 
 - **142 – Belastungen verwalten** – Verwenden Sie diesen Vorgang, damit POS-Benutzer verschiedene Belastungen für die POS-Transaktion anzeigen und bearbeiten können, die entweder manuell oder systematisch durch die automatischen Belastungsberechnungen hinzugefügt wurden.
 - **141 – Kopfzeilenbelastungen hinzufügen** – Verwenden Sie diesen Vorgang, um dem Benutzer die Möglichkeit zu geben, manuell sonstige Zuschläge auf Kopfzeilenebene zu jeder POS-Verkaufstransaktion hinzuzufügen (und den zu verwendenden Belastungscode auszuwählen).
 - **140 – Belastungen pro Position hinzufügen** – Verwenden Sie diesen Vorgang, um dem Benutzer die Möglichkeit zu geben, manuell sonstige Zuschläge auf Positionsebene zu jeder POS-Verkaufstransaktionposition hinzuzufügen (und den zu verwendenden Belastungscode auszuwählen).
-- **143 – Belastungen neu berechnen** – Verwenden Sie diesen Vorgang, um eine vollständige Neuberechnung der Belastungen für die Verkaufstransaktion zu machen. Alle zuvor vom Benutzer überschriebenen Auto-Belastungen werden basierend auf der aktuellen Warenkorbkonfiguration neu berechnet.
+- **143 – Belastungen neu berechnen** – Verwenden Sie diesen Vorgang, um eine vollständige Neuberechnung der Belastungen für die Verkaufstransaktion zu machen. Alle zuvor vom Benutzer überschriebenen automatische Belastungen werden basierend auf der aktuellen Warenkorbkonfiguration neu berechnet.
 
 Wie bei allen POS-Vorgängen können Sicherheitskonfigurationen vorgenommen werden, die eine Genehmigung des Managers erfordern, um den Vorgang auszuführen.
 
@@ -71,9 +71,9 @@ Beachten Sie unbedingt, dass die oben aufgeführten POS-Vorgänge auch dann dem 
 
 ## <a name="use-case-examples"></a>Anwendungsbeispiele
 
-In diesem Abschnitt werden Anwendungsbeispiele vorgestellt, die Ihnen helfen sollen, die Konfiguration und Verwendung von Auto-Belastungen und sonstigen Gebühren im Rahmen von Channel-Bestellungen zu verstehen. Diese Beispiele veranschaulichen das Verhalten der Anwendung, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** aktiviert wurde.
+In diesem Abschnitt werden Anwendungsbeispiele vorgestellt, die Ihnen helfen sollen, die Konfiguration und Verwendung von automatische Belastungen und sonstigen Gebühren im Rahmen von Channel-Bestellungen zu verstehen. Diese Beispiele veranschaulichen das Verhalten der Anwendung, wenn der Parameter **Erweiterte Auto-Belastungen verwenden** aktiviert wurde.
 
-### <a name="auto-charges-header-charges-example"></a>Beispiel für Auto-Belastungen für Kopfzuschläge
+### <a name="auto-charges-header-charges-example"></a>Beispiel für automatische Belastungen für Kopfzuschläge
 
 #### <a name="use-case-scenario"></a>Fallszenario verwenden
 
@@ -91,7 +91,7 @@ Definieren Sie für die Landweg-Lieferzuschläge im Positionsbereich der Seite *
 
 ![Beispiel für zwei Auto-Belastungstabellen](media/headerchargesexample.png)
 
-Definieren Sie für die Luftfrachtkosten im Positionsbereich des Formulars für Auto-Belastungen eine Gebühr von 20,00 Euro, die auf alle Aufträge angewendet wird (zwischen einem Wert von 0,01 Euro und 9.999.999 Euro).
+Definieren Sie für die Luftfrachtkosten im Positionsbereich des Formulars für automatische Belastungen eine Gebühr von 20,00 Euro, die auf alle Aufträge angewendet wird (zwischen einem Wert von 0,01 Euro und 9.999.999 Euro).
 
 Senden Sie die Änderungen an die Commerce Scale Einheit/Kanal-DB, damit der POS sie nutzen kann, indem der Einzelvorgang **Vertriebsplan 1040** ausgeführt wird.
 
@@ -99,13 +99,13 @@ Senden Sie die Änderungen an die Commerce Scale Einheit/Kanal-DB, damit der POS
 
 Nachdem die oben genannten Konfigurationsschritte abgeschlossen sind und die Änderungen in der Kanaldatenbank vorgenommen wurden, wird jede Kundenbestellung oder Verkaufstransaktion, die in den POS-, Callcenter- oder E-Commerce-Kanälen erstellt wurde und bei der die Landweg- oder Luftlieferungsmethoden auf Kopfebene festgelegt sind, diese Gebühren nutzen und automatisch auf den Verkauf anwenden.
 
-Zu diesem Zeitpunkt gelten die Gebühren für alle Verkaufstransaktionen, die innerhalb der juristischen Person getätigt werden, die diese Lieferarten nutzt, da es keine Funktionalität gibt, um zu bestimmen, dass eine Auto-Belastung nur für einen bestimmten Vertriebskanal gilt.
+Zu diesem Zeitpunkt gelten die Gebühren für alle Verkaufstransaktionen, die innerhalb der juristischen Person getätigt werden, die diese Lieferarten nutzt, da es keine Funktionalität gibt, um zu bestimmen, dass eine automatische Belastung nur für einen bestimmten Vertriebskanal gilt.
 
-Für POS- und E-Commerce-Szenarien fallen nur dann Gebühren auf Kopfebene an, wenn alle Vertriebslinien der Transaktion auf den Versand mit genau der gleichen Lieferart eingestellt sind, da es bei diesen Aufträgen keinen klar definierten "Header" gibt. Wenn es "Mischformen" der Erfüllung bei den vom POS oder E-Commerce erstellten Transaktionen gibt, werden nur Auto-Belastungen auf Linienebene berücksichtigt und angewendet.
+Für POS- und E-Commerce-Szenarien fallen nur dann Gebühren auf Kopfebene an, wenn alle Vertriebslinien der Transaktion auf den Versand mit genau der gleichen Lieferart eingestellt sind, da es bei diesen Aufträgen keinen klar definierten "Header" gibt. Wenn es Mischformen der Erfüllung bei den vom POS oder E-Commerce erstellten Transaktionen gibt, werden nur automatische Belastungen auf Linienebene berücksichtigt und angewendet.
 
 In Call-Center-Szenarien hat der Benutzer die Kontrolle über die Einstellung des Liefermodus am Auftragskopf, so dass für diese Aufträge Gebühren auf Kopfebene anfallen, auch wenn einige der Vertriebslinien für eine andere Art der Lieferung konfiguriert wurden. Die Gebühren auf Kopfebene für Call-Center-Aufträge richten sich immer nach der Lieferart, die auf der Auftragskopfebene des Kundenauftrags definiert ist.
 
-### <a name="auto-charges-line-charges-example"></a>Beispiel für Auto-Belastungen pro Auftragsposition
+### <a name="auto-charges-line-charges-example"></a>Beispiel für automatische Belastungen pro Auftragsposition
 
 #### <a name="use-case-scenario"></a>Fallszenario verwenden 
 
@@ -117,7 +117,7 @@ Dieses Szenario erfordert die Konfiguration einer Tabelle für Auto-Belastungen 
 
 Wechseln Sie zu **Debitoren \> Belastungen einrichten \> Auto-Belastungen**.
 
-Stellen Sie das Dropdown-Menü **Ebene** auf **Position** ein und erstellen Sie einen neuen Auto-Belastungsdatensatz für alle Kunden und für das spezifische Produkt oder die Produktgruppe, für die die Einrichtungsgebühren berechnet werden.
+Stellen Sie das Dropdown-Menü **Ebene** auf **Position** ein und erstellen Sie einen neuen automatischen Belastungsdatensatz für alle Kunden und für das spezifische Produkt oder die Produktgruppe, für die die Einrichtungsgebühren berechnet werden.
 
 ![Beispiel für eine Auto-Belastungstabelle auf Positionsebene](media/linechargesexample.png)
 
@@ -127,7 +127,7 @@ Senden Sie die Belastungen an die Commerce Scale Einheit/Kanal-DB, damit der POS
 
 Nachdem die oben genannten Konfigurationsschritte abgeschlossen sind und die Änderungen in der Kanaldatenbank vorgenommen wurden, löst jede Kundenbestellung oder Verkaufstransaktion, die in den POS-, Callcenter- oder E-Commerce-Kanälen erstellt wurde und diese Position in der Bestellung hat, eine Positionsbelastung aus, die systematisch zum Auftragswert hinzugefügt wird.
 
-Zu diesem Zeitpunkt gelten die Gebühren für jede Vertriebslinie, die mit der Konfiguration der Auto-Belastung auf Positionsebene innerhalb der juristischen Person übereinstimmt, da es keine Funktionalität gibt, eine Auto-Belastung auf Positionsebene zu konfigurieren, die nur für einen bestimmten Vertriebskanal gilt.
+Zu diesem Zeitpunkt gelten die Gebühren für jede Vertriebslinie, die mit der Konfiguration der automatischen Belastung auf Positionsebene innerhalb der juristischen Person übereinstimmt, da es keine Funktionalität gibt, eine Auto-Belastung auf Positionsebene zu konfigurieren, die nur für einen bestimmten Vertriebskanal gilt.
 
 ### <a name="manual-header-charges-example"></a>Beispiel für manuelle Kopfgebühren
 
@@ -189,7 +189,7 @@ Wenn Ursachencodes für überschriebene Belastungen erfasst wurden, steht auch e
 
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Rückerstattung der Belastungen bei einer POS-Retourenbuchung
 
-Wenn der Parameter **Erweiterte Auto-Belastungen verwenden** auf **Ja** gesetzt ist, entfällt der bestehende Commerce Parameter für **Rückerstattung der Versandgebühren**. Um anzugeben, welche Gebühren einem Kunden bei der Verwendung von erweiterten Auto-Belastungen systematisch erstattet werden sollen, stellen Sie sicher, dass der zugehörige Belastungscode auf der Einrichtungsseite **Belastungscode** als **Rückerstattungsfähig** konfiguriert wurde. Stellen Sie sicher, dass die Einstellungen mit Ihren Commerce-Kanaldatenbanken durch die Verarbeitung des Vertriebsplans synchronisiert wurden.
+Wenn der Parameter **Erweiterte Auto-Belastungen verwenden** auf **Ja** gesetzt ist, entfällt der bestehende Commerce Parameter für **Rückerstattung der Versandgebühren**. Um anzugeben, welche Gebühren einem Kunden bei der Verwendung von erweiterten automatischen Belastungen systematisch erstattet werden sollen, stellen Sie sicher, dass der zugehörige Belastungscode auf der Einrichtungsseite **Belastungscode** als **Rückerstattungsfähig** konfiguriert wurde. Stellen Sie sicher, dass die Einstellungen mit Ihren Commerce-Kanaldatenbanken durch die Verarbeitung des Vertriebsplans synchronisiert wurden.
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Rückerstattung der Belastungen bei einer Rücklieferungstransaktion
 
@@ -197,11 +197,11 @@ Belastungen werden nicht systematisch an **Rücklieferungen** erstattet, die in 
 
 ### <a name="configuring-pos-receipts-to-show-charges"></a>Konfigurieren von POS-Bons zur Anzeige von Belastungen
 
-Die folgenden Bon-Elemente wurden der Zugangsposition und -fußzeile hinzugefügt, um die erweiterte Auto-Belastungsfunktionalität zu unterstützen.
+Die folgenden Bon-Elemente wurden der Zugangsposition und -fußzeile hinzugefügt, um die erweiterte automatischen Belastungsfunktionalität zu unterstützen.
 
-- **Versandgebühren – Position** – Dieses Positionselement kann verwendet werden, um bestimmte Belastungscodes, die auf die Verkaufsposition angewendet wurden, wieder zusammenzufassen. Es werden nur Codes für Belastungen angezeigt, die auf der Seite **Codes für Belastungen** als **Versand**-Belastungen gekennzeichnet sind.
+- **Versandgebühren – Position** – Dieses Positionselement kann verwendet werden, um bestimmte Belastungscodes, die auf die Verkaufsposition angewendet wurden, wieder zusammenzufassen. Es werden nur Codes für Belastungen angezeigt, die auf der Seite **Codes für Belastungen** als **Versand** -Belastungen gekennzeichnet sind.
 - **Andere Belastungen – Position** – Dieses Positionselement kann verwendet werden, um alle nicht versandbezogenen Belastungscodes, die auf die Verkaufsposition angewendet wurden, wieder zusammenzufassen. Dies sind Belastungscodes, bei denen das Kennzeichen **Versand** auf der Seite **Belastungscode** nicht aktiviert wurde.
-- **Details zu Versandgebühren – Auftrag** – Dieses Element auf der Fußzeile zeigt die Beschreibungen der für die Bestellung angewandten Belastungscodes an, die als **Versand**-Gebühren auf der Einrichtungsseite **Belastungscode** gekennzeichnet wurden.
+- **Details zu Versandgebühren – Auftrag** – Dieses Element auf der Fußzeile zeigt die Beschreibungen der für die Bestellung angewandten Belastungscodes an, die als **Versand** -Gebühren auf der Einrichtungsseite **Belastungscode** gekennzeichnet wurden.
 - **Versandgebühren – Auftrag** – Dieses Element auf Fußzeilenebene zeigt den Dollarwert der versandbezogenen Belastungen an.
 - **Details zu anderen Belastungen – Auftrag** – Dieses Element auf der Fußzeile zeigt die Beschreibung der für die Bestellung angewandten Belastungscodes an, die nicht als versandbezogene Belastungen gekennzeichnet sind.
 - **Andere Kosten – Auftrag** – Dieses Element auf Fußzeilenebene zeigt den Dollarwert der nicht versandbezogenen Belastungen an.

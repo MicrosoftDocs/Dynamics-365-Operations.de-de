@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0848b7556100fba38fcab0aa2a1a109e2e055fc9
-ms.sourcegitcommit: b89baab13e530b5b1f079231619c628309a4742d
+ms.openlocfilehash: 0d6f79ea569a7a9b0d25e73e8666bf9ba19095d0
+ms.sourcegitcommit: a8665c47696028d371cdc4671db1fd8fcf9e1088
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "3959574"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "4058153"
 ---
 # <a name="configure-common-data-service-virtual-entities"></a>Konfigurieren von Common Data Service virtuellen Entitäten
 
@@ -123,10 +123,10 @@ Der nächste Schritt besteht darin, die Datenquelle der virtuellen Entität in d
 
 8. Geben Sie die erforderlichen Informationen für die Datenquellenkonfiguration ein.
 
-   - **Ziel-URL**: Die URL Ihres Personalabteilungs-Namespace.
-   - **Mandanten-ID**: Die Azure Active Directory (Azure AD)-Mandanten-ID.
-   - **AAD-Anwendungs-ID**: Die Anwendungs-ID (Client-ID), die für die im Microsoft Azure-Portal registrierte Anwendung erstellt wurde. Sie haben diese Informationen früher während des Schritts [Registrieren Sie die App in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) erhalten.
-   - **AAD-Anwendungs-Geheimnis**: Das Kundengeheimnis, das für die im Microsoft Azure-Portal registrierte Anwendung erstellt wurde. Sie haben diese Informationen früher während des Schritts [Registrieren Sie die App in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) erhalten.
+   - **Ziel-URL** : Die URL Ihres Personalabteilungs-Namespace.
+   - **Mandanten-ID** : Die Azure Active Directory (Azure AD)-Mandanten-ID.
+   - **AAD-Anwendungs-ID** : Die Anwendungs-ID (Client-ID), die für die im Microsoft Azure-Portal registrierte Anwendung erstellt wurde. Sie haben diese Informationen früher während des Schritts [Registrieren Sie die App in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) erhalten.
+   - **AAD-Anwendungs-Geheimnis** : Das Kundengeheimnis, das für die im Microsoft Azure-Portal registrierte Anwendung erstellt wurde. Sie haben diese Informationen früher während des Schritts [Registrieren Sie die App in Microsoft Azure](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) erhalten.
 
 9. Wählen Sie **Speichern & Schließen** aus.
 
@@ -149,39 +149,40 @@ Erteilen Sie Berechtigungen für die beiden Azure AD-Anwendungen in der Personal
 
 3. Wählen Sie **Neu** aus, um einen zweiten Anwendungsdatensatz zu erstellen:
 
-    - **Client-ID**: f9be0c49-aa22-4ec6-911a-c5da515226ff
-    - **Name**: Dynamics 365 HR Virtual Entity
+    - **Client-ID** : f9be0c49-aa22-4ec6-911a-c5da515226ff
+    - **Name** : Dynamics 365 HR Virtual Entity
     - Wählen Sie im Feld **Benutzer-ID** die Benutzer-ID eines Benutzers mit Administratorrechten in der Personalabteilung und der Power Apps-Umgebung aus.
 
 ## <a name="generate-virtual-entities"></a>Erstellen virtueller Entitäten
 
 Nach Abschluss des Setups können Sie die virtuellen Entitäten auswählen, die Sie generieren und in Ihrer Common Data Service-Instanz aktivieren möchten.
 
-1. Öffnen Sie das [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+1. Öffnen Sie in der Personalabteilung die Seite **Common Data Service (CDS) Integartion**.
 
-2. In der Liste **Umgebungen** wählen Sie die Power Apps-Umgebung, die Ihrer Personalabteilungsinstanz zugeordnet ist.
-
-3. Wählen Sie die **Umgebungs-URL** im Abschnitt **Details** der Seite aus.
-
-4. Im **Lösungsintegrität-Hub** wählen Sie das Symbol **Erweiterte Suche** oben rechts auf der Seite aus.
-
-5. Wählen Sie auf der Seite **Erweiterte Suche** in der Dropdown-Liste **Suche** die Option **Verfügbare HR-Einheiten** aus.
-
-6. Verwenden Sie die Filteroptionen, um die Entität oder Entitäten zu finden, die Sie aktivieren möchten.
-
-7. Wählen Sie eine Entität aus der Liste aus.
-
-8. Ändern Sie auf der Entitätsseite die Eigenschaft **Wurde erstellt** in **Ja** für die Entität.
-
-9. Entitätsseite speichern und schließen.
+2. Wählen Sie die Registerkarte **Virtuelle Entitäten**.
 
 > [!NOTE]
-> Sie können mehrere virtuelle Entitäten gleichzeitig generieren, indem Sie die Seite **Mehrere Datensätze ändern** verwenden. Wählen Sie mehrere Datensätze auf der Seite aus und wählen Sie **Bearbeiten** auf dem Menüband aus. Sie können dann die Eigenschaft **Wurde erstellt** für alle ausgewählten Datensätze ändern.
+> Die Umschaltung **Aktivieren Sie die virtuelle Entität** wird automatisch auf **Ja** gesetzt, wenn alle erforderlichen Einstellungen abgeschlossen sind. Wenn der Schalter auf **Nein** eingestellt ist, überprüfen Sie die Schritte in den vorherigen Abschnitten dieses Dokuments, um sicherzustellen, dass alle erforderlichen Einstellungen abgeschlossen sind.
 
-![Verfügbare HR-Entitäten](./media/hr-admin-integration-virtual-entities-available.jpg)
+3. Wählen Sie die Entität oder Entitäten aus, die Sie in Common Data Service generieren möchten.
 
-> [!NOTE]
-> Um den Prozess der Generierung virtueller Entitäten in zukünftigen Versionen zu optimieren, wird der Prozess auf einer Seite in der Personalabteilung ausgeführt.
+4. Wählen Sie **Generieren/Aktualisieren**.
+
+![Common Data Service Integration](./media/hr-admin-integration-common-data-service-integration.jpg)
+
+## <a name="check-entity-generation-status"></a>Überprüfen Sie den Status der Entitätsgenerierung
+
+Virtuelle Entitäten werden in Common Data Service durch einen asynchronen Hintergrundprozess generiert. Aktualisierungen der Prozessanzeige im Action Center. Details zum Prozess, einschließlich Fehlerprotokollen, werden in der Seite **Prozessautomatisierung** angezeigt.
+
+1. Öffnen Sie in Human Resources die Listenseite **Prozessautomatisierung**.
+
+2. Wählen Sie die Registerkarte **Hintergrundprozesse**.
+
+3. Wählen Sie **Hintergrundprozess für asynchrone Operationen einer virtuellen Entität**.
+
+4. Wählen Sie **Aktuelle Ergebnisse anzeigen**.
+
+Im Slideout-Bereich werden die neuesten Ausführungsergebnisse für den Prozess angezeigt. Sie können das Protokoll für den Prozess anzeigen, einschließlich aller von Common Data Service zurückgegebener Fehler.
 
 ## <a name="see-also"></a>Siehe auch
 

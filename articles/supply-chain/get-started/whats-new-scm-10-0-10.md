@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: e9ca2d2cd018777b4c5c01fb10d63505af3940c4
-ms.sourcegitcommit: 27233e0fda61dac541c5210ca8d94ab4ba74966f
+ms.openlocfilehash: 647c62c489e65596be87a658a3d53e74e53455d7
+ms.sourcegitcommit: 9dd2d38e76d4d93171315ec319e6ce7d51d4e6c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "3652106"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4012366"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Neuerungen oder Änderungen in Dynamics 365 Supply Chain Management 10.0.10 (Mai 2020)
 
@@ -39,10 +39,15 @@ In diesem Thema werden die Funktionen aufgeführt, die in Microsoft Dynamics 365
 Die folgenden Funktionen sind in diesem Release enthalten. Die Funktionen-Titel verweisen auf zusätzliche Informationen auf der Seite [Release-Pläne](https://docs.microsoft.com/dynamics365/release-plans/). Zusätzliche Links verweisen auf zusätzliche Dokumentationen oder Videos, die derzeit für diese Funktion verfügbar sind. Die meisten dieser Funktionen müssen aktiviert werden mithilfe von [Funktionsverwaltung](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), bevor Sie sie verwenden können.
 
 - [Verbesserung zur Verwendung bestehender Artikelgewichtsmarkierungen für das Lagermanagement](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/enhancement-use-existing-catch-weight-tags-warehouse-management)
+
 - [Verbesserungen der Verwaltung von eingehenden Ladungen für Lagermanagement](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - Weitere Informationen finden Sie unter [Lagerinterne Abwicklung eingehender Ladungen für Bestellungen](../warehousing/inbound-load-handling.md).
+
 - [Verbesserungen beim Etikettendruck für die Lagerverwaltung](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - Weitere Informationen finden Sie unter [Dokumentenroutinglayout für Kennzeichenbeschriftungen](../warehousing/document-routing-layout-for-license-plates.md).
+
 - [Die Masterplanung umfasst Artikel mit verfügbarem Inventar, wenn Vorverarbeitungsfilter aktiviert sind](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
+
 - [Neue Datenentitäten für den Fertigungsbereich](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+
 - [Qualitätsmanagement für Lagerortprozesse](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/quality-management-warehouse-processes)<br> - Weitere Informationen finden Sie unter [Qualitätsmanagement für Lagerortprozesse](../inventory/quality-management-for-warehouses-processes.md).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen

@@ -138,12 +138,14 @@
                           href: data-entities/dual-write/whats-new-dual-write.md
                         - name: Duales Schreiben – Übersicht
                           href: data-entities/dual-write/dual-write-overview.md
-                        - name: "Duales Schreiben\_– Einrichtung"
+                        - name: Duales Schreiben – Einrichtung
                           items:
                             - name: Systemanforderungen für duales Schreiben
                               href: data-entities/dual-write/dual-write-system-req.md
-                            - name: Unterstützte Szenarien bei der Einrichtung von dualem Schreiben
+                            - name: Anleitung zum Einrichten des dualen Schreibens
                               href: data-entities/dual-write/connection-setup.md
+                            - name: Überlegungen zur anfänglichen Synchronisierung
+                              href: data-entities/dual-write/initial-sync-guidance.md
                             - name: Einrichtung von dualem Schreiben aus Lifecycle Services
                               href: data-entities/dual-write/lcs-setup.md
                             - name: Duales Schreiben für vorhandene Finance and Operations-Apps aktivieren
@@ -402,8 +404,10 @@
                   href: database/import-database.md
                 - name: Point-in-Time-Wiederherstellung der Datenbank
                   href: database/database-point-in-time-restore.md
-                - name: Point-in-Time-Wiederherstellung der Produktdatenbank in einer Sandkastenumgebung
+                - name: Point-in-Time-Wiederherstellung der Produktdatenbank in einer Sandbox-Umgebung
                   href: database/database-pitr-prod-sandbox.md
+                - name: Just-In-Time-Datenbankzugriff aktivieren
+                  href: database/database-just-in-time-jit-access.md
             - name: Lernprogramme
               items:
                 - name: Auffrischung zu Schulungszwecken
@@ -480,11 +484,13 @@
                   href: deployment/Update-retail-channel.md
                 - name: Commerce Scale Unit (Cloud) initialisieren
                   href: deployment/Initialize-Retail-Channels.md
-                - name: Retail-Datenresidenz
+                - name: Kanäle auf eine andere Commerce Scale Unit migrieren
+                  href: deployment/Reassign-CSU.md
+                - name: Retail Data Residency
                   href: deployment/retail-data-residency.md
             - name: Lokale Bereitstellung
               items:
-                - name: Startseite bei lokalen Bereitstellungen
+                - name: Startseite bei lokaler Bereitstellung
                   href: deployment/on-premises-deployment-landing-page.md
                 - name: Lokale Bereitstellungen vorbereiten
                   items:
@@ -1458,9 +1464,9 @@
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
             - name: Support für Finance and Operations von 21Vianet in China anfordern
               href: lifecycle-services/21vianet-support.md
-            - name: Technischen Support für Finance and Operations einrichten
+            - name: Technischen Support für Finance and Operations-Apps einrichten
               href: lifecycle-services/support-experience.md
-            - name: Finance and Operations-Supportumgebungen verwalten
+            - name: Supporterfahrungen für Finance and Operations-Apps verwalten
               href: lifecycle-services/cloud-powered-support-lcs.md
         - name: Systemverwaltung
           items:

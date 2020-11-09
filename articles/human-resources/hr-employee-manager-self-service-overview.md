@@ -2,8 +2,8 @@
 title: Mitarbeiter- und Manager-Self-Service-Übersicht
 description: Dieser Artikel bietet einen Überblick über den Self-Service-Arbeitsbereich für Mitarbeiter und Manager.
 author: andreabichsel
-manager: AnnBe
-ms.date: 08/17/2020
+manager: tfehr
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-human-resources
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd642d0976c607b47a7874d0771e441153272ec9
-ms.sourcegitcommit: 2bcacef1e010c312f019dbf9740ce87d627848a7
+ms.openlocfilehash: 116c85c53b0ec2fe1e1fd2d1fbc2738f5b6351fb
+ms.sourcegitcommit: e100c1c7c8dcdacf066defc206dd2f44b8ce6100
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "3712231"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "4057051"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Mitarbeiter- und Manager-Self-Service-Übersicht
 
@@ -35,11 +35,11 @@ Wenn Sie persönliche Informationen hinzufügen oder ändern müssen, lesen Sie 
 
 ## <a name="user-not-assigned-to-a-worker-record"></a>Benutzer, der keinem Arbeitskraftdatensatz zuwiesen ist
 
-Wenn Sie Ihren Benutzer nicht mit einem **Arbeitskraft**-Datensatz auf der Seite **Benutzer** verknüpft haben, wird die folgende Meldung angezeigt:
+Wenn Sie Ihren Benutzer nicht mit einem **Arbeitskraft** -Datensatz auf der Seite **Benutzer** verknüpft haben, wird die folgende Meldung angezeigt:
 
 **Die Benutzerkennung ist dem Mitarbeiterdatensatz im System nicht zugeordnet. Sie können die Informationen erst anzeigen oder aktualisieren, wenn die entsprechende Zuordnung erfolgt ist. Wenden Sie sich hierzu an Ihren Vorgesetzten oder Ihr Support-Team.**
 
-Um einen Benutzer mit einem **Arbeitskraft**-Datensatz zu verknüpfen, navigieren Sie zu **Benutzer**, und wählen Sie den Benutzer aus. Wählen Sie **Bearbeiten** aus, fügen Sie die entsprechende Arbeitskraft im Feld **Person** auf dem Formular hinzu, und wählen Sie **Speichern** aus. Sie sollten jetzt Zugriff auf Employee Self-Service haben.
+Um einen Benutzer mit einem **Arbeitskraft** -Datensatz zu verknüpfen, navigieren Sie zu **Benutzer** , und wählen Sie den Benutzer aus. Wählen Sie **Bearbeiten** aus, fügen Sie die entsprechende Arbeitskraft im Feld **Person** auf dem Formular hinzu, und wählen Sie **Speichern** aus. Sie sollten jetzt Zugriff auf Employee Self-Service haben.
 
 ## <a name="security-requirements-for-employee-and-manager-self-service"></a>Sicherheitsanforderungen Employee und Manager Self-Service
 
@@ -74,13 +74,13 @@ Die Karte **Freizeitguthaben** zeigt die Guthaben für alle registrierten Pläne
 
 Die Karte **Aufgaben** zeigt Aufgaben an, die Ihnen zugewiesen sind, und ermöglicht Ihnen das Anzeigen und Verwalten dieser Aufgaben.
 
-Die Karte **Nächster registrierter Kurs** zeigt den nächsten Kurs an, für den Sie registriert sind. Sie können alle offene Kurse anzeigen und sich dafür registrieren. Alle Kurse, die zur Anmeldung geöffnet sind, haben den Status **Gestartet**und es Mitarbeitern ermöglichen, sich selbst zu registrieren, erscheinen auf dieser Karte. Abhängig von den Einstellungen Ihrer Organisation wird Ihre Kursregistrierung möglicherweise einem Genehmigungsprozess unterzogen.
+Die Karte **Nächster registrierter Kurs** zeigt den nächsten Kurs an, für den Sie registriert sind. Sie können alle offene Kurse anzeigen und sich dafür registrieren. Alle Kurse, die zur Anmeldung geöffnet sind, haben den Status **Gestartet** und es Mitarbeitern ermöglichen, sich selbst zu registrieren, erscheinen auf dieser Karte. Abhängig von den Einstellungen Ihrer Organisation wird Ihre Kursregistrierung möglicherweise einem Genehmigungsprozess unterzogen.
 
 Diwe Karte **Zertifikate** zeigt das Zertifikat und das Ablaufdatum des Zertifikats an, das dem aktuellen Datum am nächsten kommt. Sie können Zertifikate aktualisieren, hinzufügen oder entfernen. Abhängig von den Einstellungen Ihrer Organisation werden Kursaktualisierungen möglicherweise einem Genehmigungsprozess unterzogen.
 
 Die Karte **Nächste geplante Überprüfung** zeigt Ihre nächste Leistungsbeurteilung an. Mit dieser Karte können Sie eine neue Überprüfung starten. Ihr Manager oder Personalvertreter kann auch Überprüfungen einleiten. Abhängig von den Einstellungen Ihres Unternehmens können Sie möglicherweise auch Exit-Bewertungen von dieser Karte anzeigen, aktualisieren und senden.
 
-Sie können Ihre Ziele mit der Karte **Leistungsziele** verwalten. Diese Karte zeigt die Anzahl der Ziele an, die Sie in jedem Status haben (**Nicht angefangen**, **Auf dem richtigen Weg**, und **Muss verbessert werden**). Sie können Ziele erstellen, aktualisieren und entfernen, abhängig von Ihrer zugewiesenen rollenbasierten Sicherheit. Wenn Sie möchten, können Sie neue Ziele aus Gruppen oder Vorlagen hinzufügen. Manager und HR können auch im Namen der Mitarbeiter Ziele erstellen und bestimmen, wie detailliert jedes Ziel sein wird. Manager und Mitarbeiter können gemeinsam an Zielen arbeiten und Aktivitäten, Messungen und Status aktualisieren. Sie können auch Anhänge einfügen.
+Sie können Ihre Ziele mit der Karte **Leistungsziele** verwalten. Diese Karte zeigt die Anzahl der Ziele an, die Sie in jedem Status haben ( **Nicht angefangen** , **Auf dem richtigen Weg** , und **Muss verbessert werden** ). Sie können Ziele erstellen, aktualisieren und entfernen, abhängig von Ihrer zugewiesenen rollenbasierten Sicherheit. Wenn Sie möchten, können Sie neue Ziele aus Gruppen oder Vorlagen hinzufügen. Manager und HR können auch im Namen der Mitarbeiter Ziele erstellen und bestimmen, wie detailliert jedes Ziel sein wird. Manager und Mitarbeiter können gemeinsam an Zielen arbeiten und Aktivitäten, Messungen und Status aktualisieren. Sie können auch Anhänge einfügen.
 
 Sie können Ihre vorhandenen Fähigkeiten auf der Karte **Kompetenzen** anzeigen. Sie können Fähigkeiten aktualisieren, neue hinzufügen oder nicht mehr relevante entfernen. Abhängig von den Einstellungen Ihrer Organisation werden Änderungen an Ihren Kompetenzen möglicherweise einem Genehmigungsprozess unterzogen.
 
@@ -96,15 +96,15 @@ Melden Sie sich über den Link **Vorteile** für Vorteile an. Weitere Informatio
 
 Unter **Leistung** können Sie **Leistungserfassungen** auswählen, um Leistungsjournaleinträgen zu erstellen, die sowohl für Leistungsziele als auch für Überprüfungen verwendet werden können. Sie können **Feedback abschicken** auswählen, um Feedback für andere Mitarbeiter in Ihrer Organisation zu geben. Abhängig von den Einstellungen Ihres Unternehmens werden möglicherweise E-Mails an den Empfänger, den Absender und die Manager gesendet. Sie können Feedback an alle Mitarbeiter innerhalb der Organisation senden. Das Senden von Feedback wird nicht vom Unternehmen eingeschränkt.
 
-Unter **Kompetenzen** können Sie Änderungen an **Kursen**, **Bildung**, **Vertrauenspositionen**, und **Berufserfahrung** vornehmen. Abhängig von den Einstellungen Ihrer Organisation werden Aktualisierungen dieser Kompetenzen möglicherweise einem Genehmigungsprozess unterzogen.
+Unter **Kompetenzen** können Sie Änderungen an **Kursen** , **Bildung** , **Vertrauenspositionen** , und **Berufserfahrung** vornehmen. Abhängig von den Einstellungen Ihrer Organisation werden Aktualisierungen dieser Kompetenzen möglicherweise einem Genehmigungsprozess unterzogen.
 
 Sie können Jobdetails unter **Organisation** anzeigen. Zu den Jobdetails gehören Fähigkeiten, Zertifikate und Verantwortungsbereiche für Ihre primäre Position. Sie können auch alle ausgeliehenen Geräte sehen, die bei Ihnen ausgecheckt wurden. Abhängig von den Einstellungen Ihrer Organisation werden Änderungen an verliehener Ausrüstung möglicherweise einem Genehmigungsprozess unterzogen.
 
-Unter **Fragebogen**können Sie ausgefüllte Fragebögen sehen. Sie können auch unternehmensweite Fragebögen anzeigen, die noch nicht ausgefüllt wurden. Sie können jederzeit einen Fragebogen ausfüllen. Der Autor des Fragebogens kann den Zeitrahmen bestimmen und für wen der Fragebogen gilt.
+Unter **Fragebogen** können Sie ausgefüllte Fragebögen sehen. Sie können auch unternehmensweite Fragebögen anzeigen, die noch nicht ausgefüllt wurden. Sie können jederzeit einen Fragebogen ausfüllen. Der Autor des Fragebogens kann den Zeitrahmen bestimmen und für wen der Fragebogen gilt.
 
 Sie können benutzerdefinierte Links in **Personalverwaltungsparameter** verwalten. Sie können beispielsweise Links zu Gehaltsabrechnungen, Jahresenddokumentation oder externen Lösungen definieren. Diese Links werden am Ende dieses Abschnitts angezeigt. Sie können sie jedoch mithilfe der Personalisierung verschieben.
 
-Sie können durch Einbetten von Power Apps auch zusätzliche Registerkarten innerhalb des Mitarbeiter-Self-Service-Arbeitsbereichs erstellen. Verwenden Sie das Menü **Einstellungen**, um die Seite mit einer beliebigen Power Apps zu personalisieren. Im Menü **Einstellungen** können Sie eine Power App hinzufügen, die Details vervollständigen und die App einfügen. Standardmäßig wird Power Apps als erste Registerkarte in der Sequenz angezeigt. Sie können die Reihenfolge über die standardmäßige Personalisierung ändern.
+Sie können durch Einbetten von Power Apps auch zusätzliche Registerkarten innerhalb des Mitarbeiter-Self-Service-Arbeitsbereichs erstellen. Verwenden Sie das Menü **Einstellungen** , um die Seite mit einer beliebigen Power Apps zu personalisieren. Im Menü **Einstellungen** können Sie eine Power App hinzufügen, die Details vervollständigen und die App einfügen. Standardmäßig wird Power Apps als erste Registerkarte in der Sequenz angezeigt. Sie können die Reihenfolge über die standardmäßige Personalisierung ändern.
 
 ## <a name="my-team"></a>Mein Team
 
@@ -193,9 +193,9 @@ Sie können Positionsdaten sowohl für direkte als auch für erweiterte Berichte
 
 #### <a name="compensation-tab"></a>Registerkarte „Vergütung“
 
-Auf der Registerkarte **Vergütung** wird das Jahresgehalt des Mitarbeiters angezeigt. Unter dem Gehaltsbetrag wird eine Firmenkennung angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat und von mehreren juristischen Personen bezahlt wird, verfügt der Mitarbeiter über mehrere Vergütungskarten. Der letzte Anstiegsbetrag und der Prozentsatz werden angezeigt, basierend auf dem Beschäftigungsunternehmen.
+Auf der Registerkarte **Vergütung** wird das Jahresgehalt des Mitarbeiters angezeigt. Unter dem Gehaltsbetrag wird eine Firmenkennung angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat und von mehreren juristischen Personen bezahlt wird, verfügt der Mitarbeiter über mehrere Vergütungspläne. Um alle Vergütungspläne für juristische Personen ohne Unternehmenswechsel anzuzeigen, müssen Sie die Kreuzvergütung aktivieren unter **Personal > Gemeinsame Parameter > Erweiterter Zugriff > Unternehmensübergreifende Vergütung aktivieren**.
 
-Um den Vergütungsverlauf anzuzeigen, wählen Sie den Gehaltsbetrag aus, um das Formular **Details** zu öffnen. Im Formular **Vergütung** werden nur aktuelle und historische feste und variable Vergütungsdatensätze angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat, können Sie zwischen Unternehmen wechseln, um den Vergütungsverlauf in jedem Unternehmen anzuzeigen.
+Um den Vergütungsverlauf anzuzeigen, wählen Sie den Gehaltsbetrag aus, um das Formular **Details** zu öffnen. Im Formular **Vergütung** werden nur aktuelle und historische feste und variable Vergütungsdatensätze angezeigt. Wenn ein Mitarbeiter mehr als eine Beschäftigung hat, können Sie zwischen Unternehmen wechseln, um den Vergütungsverlauf in jedem Unternehmen anzuzeigen, oder die unternehmensübergreifende Vergütung in den Parametern Gemeinsame Personalabteilung aktivieren, um alle Vergütungspläne anzuzeigen.
 
 Sie können Vergütungen sowohl für direkte als auch für erweiterte Berichte anzeigen.
 
@@ -211,6 +211,6 @@ Manager können alle Ziele für ihr Team über die Kachel **Teamleistungsziele**
 
 #### <a name="reviews-tab"></a>Registerkarte „Bewertungen“
 
-Die Registerkarte **Bewertungen** fasst die Bewertungen des Mitarbeiters in den einzelnen Bundesstaaten zusammen: **In Bearbeitung**, **Bereit zur Überprüfung**, und **Abschließende Prüfung**. Um auf die Bewertung eines Mitarbeiters zuzugreifen, wählen Sie die Schaltfläche **Details** und wählen Sie dann die Bewertungen aus, an denen Sie zusammenarbeiten möchten. Anhand der Position einer Überprüfung im Workflow-Prozess können Sie feststellen, ob die Überprüfung zur Aktualisierung verfügbar ist. 
+Die Registerkarte **Bewertungen** fasst die Bewertungen des Mitarbeiters in den einzelnen Bundesstaaten zusammen: **In Bearbeitung** , **Bereit zur Überprüfung** , und **Abschließende Prüfung**. Um auf die Bewertung eines Mitarbeiters zuzugreifen, wählen Sie die Schaltfläche **Details** und wählen Sie dann die Bewertungen aus, an denen Sie zusammenarbeiten möchten. Anhand der Position einer Überprüfung im Workflow-Prozess können Sie feststellen, ob die Überprüfung zur Aktualisierung verfügbar ist. 
 
 Sie können alle Bewertungen für ihr Team über die Kachel **Teamleistungsüberprüfung** im Abschnitt **Zusammenfassung** von **Mein Team** sehen.

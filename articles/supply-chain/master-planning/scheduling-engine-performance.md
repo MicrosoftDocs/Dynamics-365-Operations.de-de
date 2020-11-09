@@ -16,15 +16,15 @@ ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: roxanad
+ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 18a9b7ed4cd26a806002fb1b4684de1e84f39889
-ms.sourcegitcommit: c55fecae96b4bb27bc313ba10a97eddb9c91350a
+ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "3989273"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4015066"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Verbessern der Leistung des Planungsmoduls
 
@@ -238,11 +238,7 @@ Wenn beispielsweise die Arbeitszeit für eine Ressourcengruppe an einem bestimmt
 
 Die Auslastung der Einzelvorgangsplanung für alle Ressourcen in der Ressourcengruppe an einem bestimmten Tag wird berücksichtigt, wenn die verfügbare Kapazität für die Ressourcengruppe am selben Tag berechnet wird. Für jedes Datum lautet die Berechnung:
 
-> Verfügbare Ressourcengruppenkapazität =  
-> (Kapazität für Ressourcen in der Gruppe basierend auf ihrem Kalender) -  
-> (Feinterminierte Auslastung der Ressourcen in der Gruppe) -  
-> (Grobterminierte Auslastung der Ressourcen in der Gruppe) -  
-> (Grobterminierte Auslastung der Ressourcengruppe) -
+*Verfügbare Ressourcengruppenkapazität = Kapazität für Ressourcen in der Gruppe basierend auf ihrem Kalender &ndash; Job geplante Auslastung der Ressourcen in der Gruppe &ndash; Geplante Operationen laden die Ressourcen in der Gruppe &ndash; Geplante Operationen laden die Ressourcengruppe*
 
 Auf der Registerkarte **Ressourcenanforderungen** des Arbeitsplan-Arbeitsgangs können die Ressourcenanforderungen entweder mithilfe einer bestimmten Ressource (in diesem Fall wird der Arbeitsgang mit dieser Ressource geplant), für eine Ressourcengruppe, für einen Ressourcentyp oder für eine oder mehrere Funktionen, Qualifikationen, Kurse oder Zertifikate angegeben werden. Die Verwendung all dieser Optionen bietet zwar eine große Flexibilität beim Arbeitsplandesign, erschwert jedoch auch die Planung für das Modul, da die Kapazität pro „Eigenschaft“ berücksichtigt werden muss (der abstrakte Name, der im Modul für Funktionen, Qualifikationen usw. verwendet wird).
 
@@ -252,15 +248,11 @@ Bei der Grobterminierung wird die verfügbare Kapazität für eine bestimmte Fun
 
 Für jedes Datum lautet die erforderliche Berechnung:
 
-> Die verfügbare Kapazität für eine Funktion =  
-> (die Kapazität für die Funktion) -  
-> (Feinterminierte Auslastung der Ressourcen mit der spezifischen Funktion, die in der Ressourcengruppe enthalten sind) -  
-> (Grobterminierte Auslastung der Ressourcen mit der spezifischen Funktion, die in der Ressourcengruppe enthalten sind) -  
-> (Grobterminierte Auslastung der Ressourcengruppe selbst, für die die spezifische Funktion erforderlich ist)
+*Verfügbare Kapazität für eine Fähigkeit = Kapazität für die Fähigkeit &ndash; Job geplante Auslastung der Ressourcen mit der spezifischen Funktion, die in der Ressourcengruppe enthalten ist &ndash; Geplante Operationen laden die Ressourcen mit der spezifischen Funktion, die in der Ressourcengruppe enthalten ist &ndash; Geplante Operationen laden die Ressourcengruppe selbst, für die die jeweilige Funktion erforderlich ist*
 
 Dies bedeutet, dass bei einer Auslastung einer bestimmten Ressource die Auslastung bei der Berechnung der verfügbaren Kapazität der Ressourcengruppe pro Funktion berücksichtigt wird, da die Auslastung einer bestimmten Ressource ihren Beitrag zur Kapazität der Ressourcengruppe für eine Funktion reduziert, unabhängig davon, ob die Auslastung der spezifischen Ressource sich auf diese spezifische Funktion bezieht. Wenn auf Ressourcengruppenebene eine Auslastung vorhanden ist, wird diese bei der Berechnung der verfügbaren Kapazität der Ressourcengruppe pro Funktion nur berücksichtigt, wenn die Auslastung von einem Arbeitsgang stammt, für den die spezifische Funktion erforderlich ist.
 
-Die obige Logik ist kompliziert, da diese für jeden Typ von „Eigenschaft“ gleich ist. Daher erfordert die Verwendung der Grobterminierung mit begrenzter Kapazität das Laden einer erheblichen Datenmenge.
+Die obige Logik ist kompliziert, weil diese für jeden Typ von „Eigenschaft“ gleich ist. Daher erfordert die Verwendung der Grobterminierung mit begrenzter Kapazität das Laden einer erheblichen Datenmenge.
 
 ## <a name="viewing-scheduling-engine-input-and-output"></a>Anzeigen der Ein- und Ausgabe des Planungsmoduls
 
