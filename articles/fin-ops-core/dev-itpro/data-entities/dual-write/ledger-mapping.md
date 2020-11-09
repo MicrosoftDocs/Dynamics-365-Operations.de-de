@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,41 +18,41 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20c038d0d4fe8ec3e07219862f98aef970882f26
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 7f5435a97776b817a4b99887cbab8283de25b692
+ms.sourcegitcommit: 49f3011b8a6d8cdd038e153d8cb3cf773be25ae4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3985244"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4014857"
 ---
-# <a name="integrated-ledger"></a><span data-ttu-id="7c885-103">Integriertes Sachkonto</span><span class="sxs-lookup"><span data-stu-id="7c885-103">Integrated ledger</span></span>
+# <a name="integrated-ledger"></a><span data-ttu-id="eccda-103">Integriertes Sachkonto</span><span class="sxs-lookup"><span data-stu-id="eccda-103">Integrated ledger</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-<span data-ttu-id="7c885-104">In einer Geschäftsanwendung definieren Sachkontodaten den Kern der Geschäftsabläufe eines Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="7c885-104">In a business application, ledger data defines the core set up for how a company does business.</span></span> <span data-ttu-id="7c885-105">Sachkontodaten beschreiben beispielsweise das Geschäftsjahr, in dem das Unternehmen tätig ist, die Währungen, in denen es handelt, und die Konten, die es verwendet.</span><span class="sxs-lookup"><span data-stu-id="7c885-105">For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses.</span></span> <span data-ttu-id="7c885-106">In diesem Thema wird die Integration dieser Finanzkennzahlen beschrieben.</span><span class="sxs-lookup"><span data-stu-id="7c885-106">This topic describes the integration of this core financial data.</span></span>
+<span data-ttu-id="eccda-104">In einer Geschäftsanwendung definieren Sachkontodaten den Kern der Geschäftsabläufe eines Unternehmens.</span><span class="sxs-lookup"><span data-stu-id="eccda-104">In a business application, ledger data defines the core set up for how a company does business.</span></span> <span data-ttu-id="eccda-105">Sachkontodaten beschreiben beispielsweise das Geschäftsjahr, in dem das Unternehmen tätig ist, die Währungen, in denen es handelt, und die Konten, die es verwendet.</span><span class="sxs-lookup"><span data-stu-id="eccda-105">For example, ledger data describes the fiscal year the company follows, the currencies it transacts in, and the accounts it uses.</span></span> <span data-ttu-id="eccda-106">In diesem Thema wird die Integration dieser Finanzkennzahlen beschrieben.</span><span class="sxs-lookup"><span data-stu-id="eccda-106">This topic describes the integration of this core financial data.</span></span>
 
-## <a name="templates"></a><span data-ttu-id="7c885-107">Vorlagen</span><span class="sxs-lookup"><span data-stu-id="7c885-107">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="eccda-107">Vorlagen</span><span class="sxs-lookup"><span data-stu-id="eccda-107">Templates</span></span>
 
-<span data-ttu-id="7c885-108">Sachkontodaten enthalten eine Sammlung von wichtigen Finanzentitätszuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.</span><span class="sxs-lookup"><span data-stu-id="7c885-108">Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.</span></span>
+<span data-ttu-id="eccda-108">Sachkontodaten enthalten eine Sammlung von wichtigen Finanzentitätszuordnungen, die während der Dateninteraktion zusammenarbeiten, wie in der folgenden Tabelle dargestellt.</span><span class="sxs-lookup"><span data-stu-id="eccda-108">Ledger data includes a collection of core financial entity maps that work together during data interaction, as shown in the following table.</span></span>
 
-<span data-ttu-id="7c885-109">Finance and Operations Apps</span><span class="sxs-lookup"><span data-stu-id="7c885-109">Finance and Operations apps</span></span>      | <span data-ttu-id="7c885-110">Modellgesteuerte App in Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="7c885-110">Model-driven app in Dynamics 365</span></span> | <span data-ttu-id="7c885-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="7c885-111">Description</span></span>
+<span data-ttu-id="eccda-109">Finance and Operations Apps</span><span class="sxs-lookup"><span data-stu-id="eccda-109">Finance and Operations apps</span></span>      | <span data-ttu-id="eccda-110">Modellgesteuerte App in Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="eccda-110">Model-driven app in Dynamics 365</span></span> | <span data-ttu-id="eccda-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="eccda-111">Description</span></span>
 ---------------------------------|----------------------------------|------------
-<span data-ttu-id="7c885-112">Währungen</span><span class="sxs-lookup"><span data-stu-id="7c885-112">Currencies</span></span>                       | <span data-ttu-id="7c885-113">transactioncurrencies</span><span class="sxs-lookup"><span data-stu-id="7c885-113">transactioncurrencies</span></span>            |
-<span data-ttu-id="7c885-114">FiscalCalendar</span><span class="sxs-lookup"><span data-stu-id="7c885-114">FiscalCalendar</span></span>                   | <span data-ttu-id="7c885-115">msdyn\_fiscalcalendars</span><span class="sxs-lookup"><span data-stu-id="7c885-115">msdyn\_fiscalcalendars</span></span>        |
-<span data-ttu-id="7c885-116">FiscalCalendarYear</span><span class="sxs-lookup"><span data-stu-id="7c885-116">FiscalCalendarYear</span></span>               | <span data-ttu-id="7c885-117">msdyn\_fiscalcalendaryears</span><span class="sxs-lookup"><span data-stu-id="7c885-117">msdyn\_fiscalcalendaryears</span></span>        |
-<span data-ttu-id="7c885-118">ExchRateType</span><span class="sxs-lookup"><span data-stu-id="7c885-118">ExchRateType</span></span>                     | <span data-ttu-id="7c885-119">msdyn\_exchangeratetypes</span><span class="sxs-lookup"><span data-stu-id="7c885-119">msdyn\_exchangeratetypes</span></span>        |
-<span data-ttu-id="7c885-120">ExchangeRateCurrencyPair</span><span class="sxs-lookup"><span data-stu-id="7c885-120">ExchangeRateCurrencyPair</span></span>         | <span data-ttu-id="7c885-121">msdyn\_currencyexchangeratepairs</span><span class="sxs-lookup"><span data-stu-id="7c885-121">msdyn\_currencyexchangeratepairs</span></span>        |
-<span data-ttu-id="7c885-122">FiscalPeriodEntity</span><span class="sxs-lookup"><span data-stu-id="7c885-122">FiscalPeriodEntity</span></span>               | <span data-ttu-id="7c885-123">msdyn\_fiscalcalendarperiods</span><span class="sxs-lookup"><span data-stu-id="7c885-123">msdyn\_fiscalcalendarperiods</span></span>        |
-<span data-ttu-id="7c885-124">MainAccountCategory</span><span class="sxs-lookup"><span data-stu-id="7c885-124">MainAccountCategory</span></span>              | <span data-ttu-id="7c885-125">msdyn\_mainaccountcategory</span><span class="sxs-lookup"><span data-stu-id="7c885-125">msdyn\_mainaccountcategory</span></span>        |
-<span data-ttu-id="7c885-126">MainAccount</span><span class="sxs-lookup"><span data-stu-id="7c885-126">MainAccount</span></span>                      | <span data-ttu-id="7c885-127">msdyn\_mainaccounts</span><span class="sxs-lookup"><span data-stu-id="7c885-127">msdyn\_mainaccounts</span></span>        |
-<span data-ttu-id="7c885-128">Unternehmen</span><span class="sxs-lookup"><span data-stu-id="7c885-128">Ledger</span></span>                           | <span data-ttu-id="7c885-129">msdyn\_ledgers</span><span class="sxs-lookup"><span data-stu-id="7c885-129">msdyn\_ledgers</span></span>        |
-<span data-ttu-id="7c885-130">ExchangeRates</span><span class="sxs-lookup"><span data-stu-id="7c885-130">ExchangeRates</span></span>                    | <span data-ttu-id="7c885-131">msdyn\_currencyexchangerates</span><span class="sxs-lookup"><span data-stu-id="7c885-131">msdyn\_currencyexchangerates</span></span>        |
-<span data-ttu-id="7c885-132">FinancialCalendarPeriod</span><span class="sxs-lookup"><span data-stu-id="7c885-132">FinancialCalendarPeriod</span></span>          | <span data-ttu-id="7c885-133">msdyn\_fiscalcalendarperiods</span><span class="sxs-lookup"><span data-stu-id="7c885-133">msdyn\_fiscalcalendarperiods</span></span>        |
-<span data-ttu-id="7c885-134">DimensionAttributeEntity</span><span class="sxs-lookup"><span data-stu-id="7c885-134">DimensionAttributeEntity</span></span>         | <span data-ttu-id="7c885-135">msdyn\_dimensionattributes</span><span class="sxs-lookup"><span data-stu-id="7c885-135">msdyn\_dimensionattributes</span></span>        |
-<span data-ttu-id="7c885-136">DimensionIntegrationFormatEntity</span><span class="sxs-lookup"><span data-stu-id="7c885-136">DimensionIntegrationFormatEntity</span></span> | <span data-ttu-id="7c885-137">msdyn\_financialdimensionformats</span><span class="sxs-lookup"><span data-stu-id="7c885-137">msdyn\_financialdimensionformats</span></span>        |
-<span data-ttu-id="7c885-138">LedgerChartOfAccounts</span><span class="sxs-lookup"><span data-stu-id="7c885-138">LedgerChartOfAccounts</span></span>            | <span data-ttu-id="7c885-139">msdyn\_chartofaccounts</span><span class="sxs-lookup"><span data-stu-id="7c885-139">msdyn\_chartofaccounts</span></span>        |
+<span data-ttu-id="eccda-112">Währungen</span><span class="sxs-lookup"><span data-stu-id="eccda-112">Currencies</span></span>                       | <span data-ttu-id="eccda-113">transactioncurrencies</span><span class="sxs-lookup"><span data-stu-id="eccda-113">transactioncurrencies</span></span>            |
+<span data-ttu-id="eccda-114">FiscalCalendar</span><span class="sxs-lookup"><span data-stu-id="eccda-114">FiscalCalendar</span></span>                   | <span data-ttu-id="eccda-115">msdyn\_fiscalcalendars</span><span class="sxs-lookup"><span data-stu-id="eccda-115">msdyn\_fiscalcalendars</span></span>        |
+<span data-ttu-id="eccda-116">FiscalCalendarYear</span><span class="sxs-lookup"><span data-stu-id="eccda-116">FiscalCalendarYear</span></span>               | <span data-ttu-id="eccda-117">msdyn\_fiscalcalendaryears</span><span class="sxs-lookup"><span data-stu-id="eccda-117">msdyn\_fiscalcalendaryears</span></span>        |
+<span data-ttu-id="eccda-118">ExchRateType</span><span class="sxs-lookup"><span data-stu-id="eccda-118">ExchRateType</span></span>                     | <span data-ttu-id="eccda-119">msdyn\_exchangeratetypes</span><span class="sxs-lookup"><span data-stu-id="eccda-119">msdyn\_exchangeratetypes</span></span>        |
+<span data-ttu-id="eccda-120">ExchangeRateCurrencyPair</span><span class="sxs-lookup"><span data-stu-id="eccda-120">ExchangeRateCurrencyPair</span></span>         | <span data-ttu-id="eccda-121">msdyn\_currencyexchangeratepairs</span><span class="sxs-lookup"><span data-stu-id="eccda-121">msdyn\_currencyexchangeratepairs</span></span>        |
+<span data-ttu-id="eccda-122">FiscalPeriodEntity</span><span class="sxs-lookup"><span data-stu-id="eccda-122">FiscalPeriodEntity</span></span>               | <span data-ttu-id="eccda-123">msdyn\_fiscalcalendarperiods</span><span class="sxs-lookup"><span data-stu-id="eccda-123">msdyn\_fiscalcalendarperiods</span></span>        |
+<span data-ttu-id="eccda-124">MainAccountCategory</span><span class="sxs-lookup"><span data-stu-id="eccda-124">MainAccountCategory</span></span>              | <span data-ttu-id="eccda-125">msdyn\_mainaccountcategory</span><span class="sxs-lookup"><span data-stu-id="eccda-125">msdyn\_mainaccountcategory</span></span>        |
+<span data-ttu-id="eccda-126">MainAccount</span><span class="sxs-lookup"><span data-stu-id="eccda-126">MainAccount</span></span>                      | <span data-ttu-id="eccda-127">msdyn\_mainaccounts</span><span class="sxs-lookup"><span data-stu-id="eccda-127">msdyn\_mainaccounts</span></span>        |
+<span data-ttu-id="eccda-128">Unternehmen</span><span class="sxs-lookup"><span data-stu-id="eccda-128">Ledger</span></span>                           | <span data-ttu-id="eccda-129">msdyn\_ledgers</span><span class="sxs-lookup"><span data-stu-id="eccda-129">msdyn\_ledgers</span></span>        |
+<span data-ttu-id="eccda-130">ExchangeRates</span><span class="sxs-lookup"><span data-stu-id="eccda-130">ExchangeRates</span></span>                    | <span data-ttu-id="eccda-131">msdyn\_currencyexchangerates</span><span class="sxs-lookup"><span data-stu-id="eccda-131">msdyn\_currencyexchangerates</span></span>        |
+<span data-ttu-id="eccda-132">FinancialCalendarPeriod</span><span class="sxs-lookup"><span data-stu-id="eccda-132">FinancialCalendarPeriod</span></span>          | <span data-ttu-id="eccda-133">msdyn\_fiscalcalendarperiods</span><span class="sxs-lookup"><span data-stu-id="eccda-133">msdyn\_fiscalcalendarperiods</span></span>        |
+<span data-ttu-id="eccda-134">DimensionAttributeEntity</span><span class="sxs-lookup"><span data-stu-id="eccda-134">DimensionAttributeEntity</span></span>         | <span data-ttu-id="eccda-135">msdyn\_dimensionattributes</span><span class="sxs-lookup"><span data-stu-id="eccda-135">msdyn\_dimensionattributes</span></span>        |
+<span data-ttu-id="eccda-136">DimensionIntegrationFormatEntity</span><span class="sxs-lookup"><span data-stu-id="eccda-136">DimensionIntegrationFormatEntity</span></span> | <span data-ttu-id="eccda-137">msdyn\_financialdimensionformats</span><span class="sxs-lookup"><span data-stu-id="eccda-137">msdyn\_financialdimensionformats</span></span>        |
+<span data-ttu-id="eccda-138">LedgerChartOfAccounts</span><span class="sxs-lookup"><span data-stu-id="eccda-138">LedgerChartOfAccounts</span></span>            | <span data-ttu-id="eccda-139">msdyn\_chartofaccounts</span><span class="sxs-lookup"><span data-stu-id="eccda-139">msdyn\_chartofaccounts</span></span>        |
 
 
 [!include [banner](../../includes/dual-write-symbols.md)]
@@ -67,8 +66,6 @@ ms.locfileid: "3985244"
 [!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
 
 [!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Ledger fiscal periods](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
 
 [!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
 

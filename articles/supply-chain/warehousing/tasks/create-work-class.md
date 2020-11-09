@@ -8,6 +8,7 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: WHSWorkClass
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Operations
@@ -16,26 +17,26 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc0eb4c0a6397164d068b5dd44a0807dfdf65814
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: ed9b72d891df4d40213d4854da6b09bd9876effa
+ms.sourcegitcommit: a36a4f9915ae3eb36bf8220111cf1486387713d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3979598"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4016055"
 ---
-# <a name="create-a-work-class"></a><span data-ttu-id="1e71f-103">Eine Arbeitsklasse erstellen</span><span class="sxs-lookup"><span data-stu-id="1e71f-103">Create a work class</span></span>
+# <a name="create-a-work-class"></a><span data-ttu-id="b889c-103">Eine Arbeitsklasse erstellen</span><span class="sxs-lookup"><span data-stu-id="b889c-103">Create a work class</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="1e71f-104">Dieses Verfahren zeigt Ihnen an, wie ein Arbeitsklasse eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="1e71f-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="1e71f-105">Arbeitsklassen werden verwendet, um den Typ der Arbeitsauftragspositionen zuzuweisen und/oder einzuschränken, die ein Lagerarbeiter auf einem mobilen Gerät verarbeiten kann.</span><span class="sxs-lookup"><span data-stu-id="1e71f-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="1e71f-106">Die Positionen, die eine Arbeitskraft verarbeiten kann, werden von Arbeitsklassen auf Menüeinträge des mobilen Geräts, auf denen der Lagerarbeiter Zugriff hat und der Arbeitsklasse ermittelt, die für die Arbeitspositionen angegeben sind.</span><span class="sxs-lookup"><span data-stu-id="1e71f-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="1e71f-107">Arbeitsklassen können auch verwendet werden, um den gesetzten Lagerplatz für eine Arbeitsauftragsposition zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="1e71f-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="1e71f-108">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="1e71f-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="1e71f-109">Diese Prozedur ist für die Lagerverwaltung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="1e71f-109">This procedure is intended for the warehouse manager.</span></span>
+<span data-ttu-id="b889c-104">Dieses Verfahren zeigt Ihnen an, wie ein Arbeitsklasse eingerichtet wird.</span><span class="sxs-lookup"><span data-stu-id="b889c-104">This procedure shows you how to set up a work class.</span></span> <span data-ttu-id="b889c-105">Arbeitsklassen werden verwendet, um den Typ der Arbeitsauftragspositionen zuzuweisen und/oder einzuschränken, die ein Lagerarbeiter auf einem mobilen Gerät verarbeiten kann.</span><span class="sxs-lookup"><span data-stu-id="b889c-105">Work classes are used to direct and/or limit the type of work order lines that a warehouse worker can process on a mobile device.</span></span> <span data-ttu-id="b889c-106">Die Positionen, die eine Arbeitskraft verarbeiten kann, werden von Arbeitsklassen auf Menüeinträge des mobilen Geräts, auf denen der Lagerarbeiter Zugriff hat und der Arbeitsklasse ermittelt, die für die Arbeitspositionen angegeben sind.</span><span class="sxs-lookup"><span data-stu-id="b889c-106">The lines that a worker can process are determined from the work classes on the mobile device menu items that the warehouse worker has access to and the work class that's specified on the work lines.</span></span> <span data-ttu-id="b889c-107">Arbeitsklassen können auch verwendet werden, um den gesetzten Lagerplatz für eine Arbeitsauftragsposition zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="b889c-107">Work classes can also be used to validate the put location for a work order line.</span></span> <span data-ttu-id="b889c-108">Sie können diese Prozedur im Demodatenunternehmen USMF oder für Ihre eigenen Daten ausführen.</span><span class="sxs-lookup"><span data-stu-id="b889c-108">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="b889c-109">Diese Prozedur ist für die Lagerverwaltung vorgesehen.</span><span class="sxs-lookup"><span data-stu-id="b889c-109">This procedure is intended for the warehouse manager.</span></span>
 
-1. <span data-ttu-id="1e71f-110">Wechseln Sie zu "Lagerortverwaltung" > "Einstellungen" > "Arbeit" > "Arbeitsklassen".</span><span class="sxs-lookup"><span data-stu-id="1e71f-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
-2. <span data-ttu-id="1e71f-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="1e71f-111">Click New.</span></span>
-3. <span data-ttu-id="1e71f-112">Geben Sie im Feld "Arbeitsklassenkennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1e71f-112">In the Work class ID field, type a value.</span></span>
-4. <span data-ttu-id="1e71f-113">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1e71f-113">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="1e71f-114">Wählen Sie im Feld "Arbeitsauftragstyp" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="1e71f-114">In the Work order type field, select an option.</span></span>
-6. <span data-ttu-id="1e71f-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="1e71f-115">Click New.</span></span>
-7. <span data-ttu-id="1e71f-116">Geben Sie im Feld "Typ Standort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="1e71f-116">In the Location type field, type a value.</span></span>
-    * <span data-ttu-id="1e71f-117">Wenn Sie einen Lagerplatztyp auswählen, wird eine Einschränkung festgelegt, wohin die Artikel eingelagert werden können, nachdem sie entnommen wurden.</span><span class="sxs-lookup"><span data-stu-id="1e71f-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="1e71f-118">Diese Einstellung wird verwendet, wenn Lagerplatzdirektive versuchen, den Lagerplatz aufzulösen, oder ob ein Lagerarbeiter manuell den Speicherort für die Menüoption des mobilen Geräts bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="1e71f-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
-8. <span data-ttu-id="1e71f-119">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="1e71f-119">Close the page.</span></span>
+1. <span data-ttu-id="b889c-110">Wechseln Sie zu "Lagerortverwaltung" > "Einstellungen" > "Arbeit" > "Arbeitsklassen".</span><span class="sxs-lookup"><span data-stu-id="b889c-110">Go to Warehouse management > Setup > Work > Work classes.</span></span>
+2. <span data-ttu-id="b889c-111">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b889c-111">Click New.</span></span>
+3. <span data-ttu-id="b889c-112">Geben Sie im Feld "Arbeitsklassenkennung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b889c-112">In the Work class ID field, type a value.</span></span>
+4. <span data-ttu-id="b889c-113">Geben Sie im Feld "Beschreibung" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b889c-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="b889c-114">Wählen Sie im Feld "Arbeitsauftragstyp" eine Option aus.</span><span class="sxs-lookup"><span data-stu-id="b889c-114">In the Work order type field, select an option.</span></span>
+6. <span data-ttu-id="b889c-115">Klicken Sie auf "Neu".</span><span class="sxs-lookup"><span data-stu-id="b889c-115">Click New.</span></span>
+7. <span data-ttu-id="b889c-116">Geben Sie im Feld "Typ Standort" einen Wert ein.</span><span class="sxs-lookup"><span data-stu-id="b889c-116">In the Location type field, type a value.</span></span>
+    * <span data-ttu-id="b889c-117">Wenn Sie einen Lagerplatztyp auswählen, wird eine Einschränkung festgelegt, wohin die Artikel eingelagert werden können, nachdem sie entnommen wurden.</span><span class="sxs-lookup"><span data-stu-id="b889c-117">If you select a location type, this sets a restriction on where items can be put after they've been picked.</span></span> <span data-ttu-id="b889c-118">Diese Einstellung wird verwendet, wenn Lagerplatzdirektive versuchen, den Lagerplatz aufzulösen, oder ob ein Lagerarbeiter manuell den Speicherort für die Menüoption des mobilen Geräts bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="b889c-118">This setting is used when a location directive tries to resolve the location, or if a warehouse worker manually provides the location for the mobile device menu item.</span></span>  
+8. <span data-ttu-id="b889c-119">Schließen Sie die Seite.</span><span class="sxs-lookup"><span data-stu-id="b889c-119">Close the page.</span></span>
 
