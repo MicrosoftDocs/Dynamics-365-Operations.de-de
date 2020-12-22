@@ -1,0 +1,256 @@
+- name: Dynamics 365 for Talent
+  href: talent-welcome.md
+  items:
+    - name: Erste Schritte
+      items:
+        - name: Erste Schritte mit Talent
+          href: talent-get-started.md
+        - name: Neuerungen oder Änderungen in Talent
+          href: whats-new.md
+          items:
+            - name: 1. September 2020
+              href: whats-new-talent-september-01-2020.md
+            - name: "21.\_Januar\_2020"
+              href: whats-new-talent-january-21-2020.md
+            - name: "14.\_Januar\_2020"
+              href: whats-new-talent-january-14-2020.md
+            - name: "7.\_Januar\_2020"
+              href: whats-new-talent-january-7-2020.md
+            - name: "17.\_Dezember\_2019"
+              href: whats-new-talent-december-17-2019.md
+            - name: "12.\_Dezember\_2019"
+              href: whats-new-talent-december-12-2019.md
+            - name: "3.\_Dezember\_2019"
+              href: whats-new-talent-december-3-2019.md
+            - name: "19.\_November\_2019"
+              href: whats-new-talent-november-19-2019.md
+            - name: "12.\_November\_2019"
+              href: whats-new-talent-november-12-2019.md
+            - name: "5.\_November\_2019"
+              href: whats-new-talent-november-5-2019.md
+            - name: 29. Oktober 2019
+              href: whats-new-talent-oct-29-2019.md
+            - name: 23. Oktober 2019
+              href: whats-new-talent-october-23-2019.md
+            - name: 8. Oktober 2019
+              href: whats-new-talent-october-8-2019.md
+            - name: 1. Oktober 2019
+              href: whats-new-talent-october-1-2019.md
+            - name: Neuigkeitenarchive 2019
+              items:
+                - name: 17. September 2019
+                  href: whats-new-talent-september-17-2019.md
+                - name: 10. September 2019
+                  href: whats-new-talent-september-12-2019.md
+                - name: "27.\_August\_2019"
+                  href: whats-new-talent-august-28-2019.md
+                - name: "22.\_August\_2019"
+                  href: whats-new-talent-august-21-2019.md
+                - name: "13.\_August\_2019"
+                  href: whats-new-talent-august-15-2019.md
+                - name: "6.\_August\_2019"
+                  href: whats-new-talent-august-7-2019.md
+                - name: "30.\_Juli\_2019"
+                  href: whats-new-talent-july-31-2019.md
+                - name: "23.\_Juli\_2019"
+                  href: whats-new-talent-july-24-2019.md
+                - name: "16.\_Juli\_2019"
+                  href: whats-new-talent-july-16-2019.md
+                - name: "9.\_Juli\_2019"
+                  href: whats-new-talent-july-9-2019.md
+                - name: "2.\_Juli\_2019"
+                  href: whats-new-talent-july-2-2019.md
+                - name: "25.\_Juni\_2019"
+                  href: whats-new-talent-june-25-2019.md
+                - name: "18.\_Juni\_2019"
+                  href: whats-new-talent-june-18-2019.md
+                - name: "11.\_Juni\_2019"
+                  href: whats-new-talent-june-11-2019.md
+                - name: "4.\_Juni\_2019"
+                  href: whats-new-talent-june-4-2019.md
+                - name: "28.\_Mai\_2019"
+                  href: whats-new-talent-may-28-2019.md
+                - name: "21.\_Mai\_2019"
+                  href: whats-new-talent-may-21-2019.md
+                - name: "13.\_Mai\_2019"
+                  href: whats-new-talent-may-13-2019.md
+                - name: "6.\_Mai\_2019"
+                  href: whats-new-talent-may-6-2019.md
+                - name: "30.\_April\_2019"
+                  href: whats-new-talent-april-30-2019.md
+                - name: "25.\_April\_2019"
+                  href: whats-new-talent-april-25-2019.md
+                - name: "16.\_April\_2019"
+                  href: whats-new-talent-april-16-2019.md
+                - name: "9.\_April\_2019"
+                  href: whats-new-talent-april-9-2019.md
+                - name: "2.\_April\_2019"
+                  href: whats-new-talent-april-2-2019.md
+                - name: "26.\_März\_2019"
+                  href: whats-new-talent-march-26-2019.md
+                - name: "20.\_März\_2019"
+                  href: whats-new-talent-march-20.md
+                - name: "14.\_März\_2019"
+                  href: whats-new-talent-march-14.md
+                - name: "5.\_März\_2019"
+                  href: whats-new-talent-march-5.md
+                - name: "27.\_Februar\_2019"
+                  href: whats-new-talent-feb-27.md
+                - name: "14.\_Februar\_2019"
+                  href: whats-new-talent-feb14.md
+                - name: "7.\_Februar\_2019"
+                  href: whats-new-talent-february-7.md
+                - name: "31.\_Januar\_2019"
+                  href: whats-new-talent-january-29.md
+                - name: "23.\_Januar\_2019"
+                  href: whats-new-talent-january-23.md
+                - name: "17.\_Januar\_2019"
+                  href: whats-new-talent-january-17.md
+                - name: "11.\_Januar\_2019"
+                  href: whats-new-talent-january-11.md
+            - name: Neuigkeitenarchive 2018
+              items:
+                - name: "14.\_Dezember\_2018"
+                  href: whats-new-talent-december-14.md
+                - name: "6.\_Dezember\_2018"
+                  href: whats-new-talent-december-6.md
+                - name: "27.\_November\_2018"
+                  href: whats-new-talent-november-27.md
+                - name: "15.\_November\_2018"
+                  href: whats-new-talent-november-15.md
+                - name: 31. Oktober 2018
+                  href: whats-new-talent-october-31.md
+                - name: 19. Oktober 2018
+                  href: whats-new-talent-october-19.md
+                - name: 15. Oktober 2018
+                  href: whats-new-talent-october-11.md
+                - name: 8. Oktober 2018
+                  href: whats-new-talent-october-8.md
+                - name: 1. Oktober 2018
+                  href: whats-new-talent-october-01.md
+                - name: 24. September 2018
+                  href: whats-new-talent-september-24.md
+                - name: 17. September 2018
+                  href: whats-new-talent-september-17-2018.md
+                - name: 10. September 2018
+                  href: whats-new-talent-september-10.md
+                - name: August 2018
+                  href: whats-new-talent-august2018.md
+                - name: Juli 2018
+                  href: whats-new-talent-july2018.md
+        - name: Systemanforderungen
+          href: talent-versions-update-policy.md
+        - name: Talent-Aktualisierungen
+          href: talent-updates.md
+        - name: Talent bereitstellen
+          href: provisioning-talent.md
+        - name: Funktionen verwalten
+          href: access-preview-feature.md
+        - name: Onboard bereitstellen
+          href: modular-app-tech-faq.md
+        - name: Daten aus Attract und Onboard exportieren
+          href: attract-onboard-export-data.md
+        - name: Canvas-Apps aus Power Apps einbetten
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Support zu Talent anfordern
+          href: talent-support.md
+    - name: Ihr Unternehmen mit Attract ausstatten
+      items:
+        - name: Eine Version von Attract auswählen
+          href: attract-comprehensive-hiring.md
+        - name: Funktionen und Leistungsspektrum von Attract
+          href: attract-overview.md
+        - name: Systemeinstellungen konfigurieren
+          items:
+            - name: Unternehmensdaten konfigurieren
+              href: admin-settings-attract.md
+            - name: Benutzerberechtigungen festlegen
+              href: security-attract.md
+            - name: Website mit Stellenangeboten einrichten
+              href: career-site.md
+            - name: Broadbean-Integration aktivieren
+              href: attract-admin-job-board-settings.md
+            - name: E-Mail-Einstellungen konfigurieren
+              href: attract-configure-email-settings.md
+            - name: LinkedIn-Integration einrichten
+              href: attract-admin-linkedin.md
+            - name: LinkedIn-Integration-FAQs
+              href: attract-linkedin-faq.md
+        - name: Einstellungsprozess erstellen
+          items:
+            - name: Eine Einstellungsprozessvorlage erstellen
+              href: process-templates-attract.md
+            - name: Aktivitäten einem Einstellungsprozess hinzufügen
+              href: activities-attract.md
+            - name: E-Mail-Vorlagen erstellen
+              href: email-templates.md
+            - name: Analytische Berichte verwenden
+              href: analytic-reports.md
+        - name: Stellenausschreibungen verfassen und veröffentlichen
+          items:
+            - name: Eine Stelle erstellen
+              href: creating-jobs-attract.md
+            - name: Ausschreibungen auf LinkedIn veröffentlichen
+              href: attract-post-jobs-to-linkedin.md
+            - name: Stellen auf Broadbean veröffentlichen
+              href: posting-jobs-external.md
+            - name: Eine Stelle schließen
+              href: attract-close-job.md
+        - name: Kandidaten anwerben
+          items:
+            - name: Kandidaten mithilfe von Talentpools anwerben
+              href: attract-talent-pools.md
+            - name: Kandidaten mithilfe von LinkedIn Recruiter anwerben
+              href: attract-linkedin-recruiter.md
+            - name: Kandidatenquellen nachverfolgen
+              href: source-tracking.md
+            - name: Praktische Empfehlungen
+              href: intelligent-recommendations.md
+        - name: Bewerbergespräche einrichten
+          items:
+            - name: Gespräche planen
+              href: interview-scheduling-feedback.md
+        - name: Ein Angebot unterbreiten
+          items:
+            - name: Angebotsverwaltung einrichten
+              href: offer-setup.md
+            - name: 'Angebote erstellen, genehmigen und unterzeichnen'
+              href: creating-offers.md
+        - name: Erweiterbarkeit in Attract
+          href: extensibility-attract.md
+    - name: Neue Mitarbeiter mit Onboard willkommen heißen
+      items:
+        - name: Erste Schritte mit Onboard
+          href: create-onboarding-experience.md
+        - name: Onboard-App einrichten
+          href: onboard-get-app.md
+        - name: Erstellen und versenden eines Onboarding-Leitfadens
+          href: onboard-create-guide.md
+        - name: Erstellen einer Onboarding-Vorlage
+          href: onboard-create-template.md
+        - name: Anleitungen und Vorlagen bearbeiten
+          href: onboard-edit-guides-templates.md
+        - name: Inhalte teilen
+          href: onboard-share-template.md
+        - name: Status anzeigen
+          href: onboard-view-status.md
+        - name: Ein Einstellungsteam zusammenstellen
+          href: onboard-create-team.md
+    - name: Erweiterbarkeit
+      items:
+        - name: Änderungen in Rekrutierungsdaten nachverfolgen
+          href: process-auditing.md
+        - name: Erweiterbarkeit in Attract
+          href: extensibility-attract.md
+        - name: Talent mit Power Apps und Power Automate erweitern
+          href: extensibility-examples.md
+    - name: Problembehandlung in Attract und Onboard
+      items:
+        - name: Problembehandlung bei der Veröffentlichung von Stellenausschreibungen auf LinkedIn
+          href: attract-troubleshoot-linkedin.md
+        - name: 'Benutzer kann auf Human Resources, aber nicht auf die Onboard- oder Attract-App zugreifen'
+          href: user-access-core-hr.md
+        - name: Azure Active Directory-Benutzer wurden nicht in der Personenauswahl gefunden
+          href: people-picker-user-not-found.md
+        - name: Attract-Benutzer können sich nicht mit dem Karriereportal auf Stellen bewerben
+          href: attract-troubleshoot-career-portal.md
