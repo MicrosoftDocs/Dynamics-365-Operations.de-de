@@ -19,11 +19,11 @@ ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
 ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: 361050bed5e0feabd370d225ec70784fc1933258
+ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/15/2020
-ms.locfileid: "4013156"
+ms.locfileid: "4459113"
 ---
 # <a name="distributed-order-management-dom"></a>Verteilte Auftragsverwaltung (DOM)
 
@@ -41,16 +41,16 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
 
 ## <a name="set-up-dom"></a>DOM einrichten
 
-1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration** .
-2. Erweitern Sie auf der Registerkarte **Konfigurationsschlüssel** den Knoten **Handel** , aktivieren Sie anschließend das Kontrollkästchen **Verteilte Auftragsverwaltung** .
-3. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> DOM-Parameter** .
+1. Gehen Sie zu **Systemadministration \> Einrichten \> Lizenzkonfiguration**.
+2. Erweitern Sie auf der Registerkarte **Konfigurationsschlüssel** den Knoten **Handel**, aktivieren Sie anschließend das Kontrollkästchen **Verteilte Auftragsverwaltung**.
+3. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> DOM-Parameter**.
 4. Legen Sie auf der Registerkarte **Allgemein** die folgenden Werte fest:
 
-    - **Verteilte Auftragsverwaltung aktivieren** – Setzen Sie diese Option auf **Ja** .
-    - **Verwenden von Bing Maps für DOM bestätigen** – Setzen Sie diese Option auf **Ja** .
+    - **Verteilte Auftragsverwaltung aktivieren** – Setzen Sie diese Option auf **Ja**.
+    - **Verwenden von Bing Maps für DOM bestätigen** – Setzen Sie diese Option auf **Ja**.
 
         > [!NOTE]
-        > Sie können diese Option nur dann auf **Ja** setzen, wenn die Option **Bing Maps aktivieren** auf der Registerkarte **Bing Maps** der Seite **Freigegebene Handelsparameter** ( **Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Freigegebene Handelsparameter** ) ebenfalls auf **Ja** gesetzt ist und wenn im Feld **Bing Maps-Schlüssel** ein gültiger Schlüssel eingegeben wurde.
+        > Sie können diese Option nur dann auf **Ja** setzen, wenn die Option **Bing Maps aktivieren** auf der Registerkarte **Bing Maps** der Seite **Freigegebene Handelsparameter** (**Retail und Commerce \> Zentralverwaltungseinrichtung \> Parameter \> Freigegebene Handelsparameter**) ebenfalls auf **Ja** gesetzt ist und wenn im Feld **Bing Maps-Schlüssel** ein gültiger Schlüssel eingegeben wurde.
 
     - **Einbehaltungsdauer in Tagen** – Geben Sie an, wie lange von DOM-Abläufen erzeugte Erfüllungspläne im System behalten werden sollen. Der Batchauftrag **Einrichten des Löschenauftrag für DOM-Erfüllungsdaten** löscht alle Erfüllungspläne, die älter sind, als die Anzahl der hier angegebenen Tage.
     - **Ablehnungszeitraum (in Tagen)** – Geben Sie an, wie viel Zeit vergehen soll, bis eine abgelehnte Auftragsposition dem gleichen Standort zugewiesen werden kann.
@@ -59,27 +59,27 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
 
     - **Max. Versuche zur automatischen Erfüllung** – Geben Sie an, wie häufig die DOM-Modul versuchen soll, eine Auftragsposition an einen Standort zu vermitteln. Wenn die DOM-Modul eine Auftragsposition nicht nach der angegebenen Anzahl der Versuche einem Standort vermitteln kann, wird die Auftragsposition als Ausnahme markiert. In zukünftigen Abläufen wird die Position dann solange übersprungen, bis der Status manuell zurückgesetzt wird.
     - **Regionsradius für lokales Geschäft** – Geben Sie einen Wert ein. In diesem Feld können Sie festlegen, wie Standorte gruppiert und in Bezug auf die Entfernung als gleichwertig betrachtet werden. Wenn Sie beispielsweise **100** eingeben, wird jedes Geschäft oder Verteilzentrum innerhalb eines 100-Meilen-Radius der Erfüllungsadresse in Bezug auf die Entfernung als gleichwertig betrachtet.
-    - **Solver-Typ** – Wählen Sie einen Wert aus. Für Commerce sind zwei Solver-Typen freigegeben: **Produktions-Solver** und **Vereinfachter Solver** . Für alle Maschinen, auf denen DOM ausgeführt wird (d. h., alle Server, die zur DOMBatch-Gruppe gehören), muss **Produktions-Solver** ausgewählt werden. Der Produktions-Solver erfordert den Lizenzschlüssel, der standardmäßig in Produktionsumgebungen lizenziert und festgestellt wird. Für Nicht-Produktionsumgebungen muss dieser Lizenzschlüssel manuell angegeben werden. Um den Lizenzschlüssel manuellen bereitzustellen, führen Sie die folgenden Schritte aus:
+    - **Solver-Typ** – Wählen Sie einen Wert aus. Für Commerce sind zwei Solver-Typen freigegeben: **Produktions-Solver** und **Vereinfachter Solver**. Für alle Maschinen, auf denen DOM ausgeführt wird (d. h., alle Server, die zur DOMBatch-Gruppe gehören), muss **Produktions-Solver** ausgewählt werden. Der Produktions-Solver erfordert den Lizenzschlüssel, der standardmäßig in Produktionsumgebungen lizenziert und festgestellt wird. Für Nicht-Produktionsumgebungen muss dieser Lizenzschlüssel manuell angegeben werden. Um den Lizenzschlüssel manuellen bereitzustellen, führen Sie die folgenden Schritte aus:
 
         1. Öffnen Sie in Microsoft Dynamics Lifecycle Services die Bibliothek der freigegebenen Anlage, wählen Sie **Modell** als Anlagentyp aus, und laden Sie die Datei **DOM-Lizenz** herunter.
-        2. Starten Sie den Microsoft Internetinformationsdienste (IIS)-Manager, klicken Sie mit der rechten Maustaste auf **AOSService-Website** , und wählen Sie anschließend **Entdecken** aus. Ein Windows Explorer-Fenster wird bei **\<AOS service root\>\\webroot** geöffnet. Notieren Sie den Pfad zu \<AOS Service root\>, da Sie ihn im nächsten Schritt verwenden werden.
-        3. Kopieren Sie die Konfigurationsdatei im Verzeichnis **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** .
-        4. Gehen Sie zum Client „Headquarters“, und öffnen Sie die Seite **DOM-Parameter** . Wählen Sie auf der Registerkarte **Solver** im Feld **Solver-Typ** die Option **Produktions-Solver** aus, und bestätigen Sie, dass keine Fehlermeldungen angezeigt werden.
+        2. Starten Sie den Microsoft Internetinformationsdienste (IIS)-Manager, klicken Sie mit der rechten Maustaste auf **AOSService-Website**, und wählen Sie anschließend **Entdecken** aus. Ein Windows Explorer-Fenster wird bei **\<AOS service root\>\\webroot** geöffnet. Notieren Sie den Pfad zu \<AOS Service root\>, da Sie ihn im nächsten Schritt verwenden werden.
+        3. Kopieren Sie die Konfigurationsdatei im Verzeichnis **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin**.
+        4. Gehen Sie zum Client „Headquarters“, und öffnen Sie die Seite **DOM-Parameter**. Wählen Sie auf der Registerkarte **Solver** im Feld **Solver-Typ** die Option **Produktions-Solver** aus, und bestätigen Sie, dass keine Fehlermeldungen angezeigt werden.
 
         > [!NOTE]
         > Der Vereinfachte Solver wird bereitgestellt, damit Einzelhändler die DOM-Funktion ausprobieren können, ohne eine spezielle Lizenz bereitzustellen. Organisationen können den vereinfachten Solver nicht in Produktionsumgebungen verwenden.
         >
         > Obwohl der vereinfachte Solver die gleiche Gruppe von Funktionen bereitstellt wie der Produktions-Solver, bestehen Einschränkungen hinsichtlich der Leistung (die Anzahl von Aufträgen und Auftragspositionen, die in einem Ablauf behandelt werden können) und der Konvergenz der Ergebnisse (möglicherweise liefert ein Auftragsstapel in einigen Szenarien nicht das beste Ergebnis).
      
-6. Gehen Sie zurück zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> DOM-Parameter** .
+6. Gehen Sie zurück zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> DOM-Parameter**.
 7. Weisen Sie auf der Registerkarte **Nummernkreise** anschließend den verschiedenen DOM-Entitäten die erforderlichen Nummernkreise zu.
 
     > [!NOTE]
-    > Bevor die Nummernkreise zugeordnet werden können, müssen Sie die Entitäten auf der Seite **Nummernkreise** ( **Organisationsverwaltung \> Nummernkreise \> Nummernkreise** ) definieren.
+    > Bevor die Nummernkreise zugeordnet werden können, müssen Sie die Entitäten auf der Seite **Nummernkreise** (**Organisationsverwaltung \> Nummernkreise \> Nummernkreise**) definieren.
 
 8. Die DOM-Funktion unterstützt die Definition verschiedener Arten von DOM-Regeln, und Organisationen können abhängig von ihren Geschäftsanforderungen mehrere Regeln konfigurieren. DOM-Regeln können für eine Gruppe von Standorten oder einzelne Standorte sowie für eine bestimmte Produktkategorie, ein Produkt oder eine Variante definiert werden. Um die Gruppierung der Lagerplätze zu erstellen, die für die DOM-Regeln verwendet werden müssen, führen Sie die folgenden Schritte aus:
 
-    1. Gehen Sie zu **Retail und Commerce \> Kanaleinstellungen \> Erfüllungsgruppen** .
+    1. Gehen Sie zu **Retail und Commerce \> Kanaleinstellungen \> Erfüllungsgruppen**.
     2. Geben Sie unter **Neu** einen neuen Namen und eine Beschreibung für die neue Gruppe ein.
     3. Wählen Sie **Speichern** aus.
     4. Wählen Sie **Position hinzufügen** aus, um einem einzelnen Standort zur Gruppe hinzuzufügen. Wählen Sie alternativ **Positionen hinzufügen** aus, um mehrere Standorte hinzuzufügen.
@@ -93,7 +93,7 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
     >
     > Das Aktivieren der Funktion führt auch zu aktualisierten Seiten am POS, wenn die Vorgänge „Alle versenden“ oder „Ausgewählte versenden“ ausgewählt werden.
 
-9. Um Regeln definieren, gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einstellungen \> Regeln verwalten** . Die folgenden DOM-Regeln werden derzeit unterstützt:
+9. Um Regeln definieren, gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einstellungen \> Regeln verwalten**. Die folgenden DOM-Regeln werden derzeit unterstützt:
 
     - **Mindestlagerbestandsregel** – Durch diesen Regeltyp können Organisationen für andere Zwecke als die Auftragserfüllung "Umzäunungen" für eine bestimmte Menge eines Produkts festlegen. Beispielsweise können Organisationen wünschen, dass DOM nicht den gesamten Bestand berücksichtigt, der in einem Geschäft zur Auftragserfüllung verfügbar ist. Stattdessen müssen Sie einen Lagerbestand für die Laufkundschaft reservieren. Wenn dieser Regeltyp verwendet wird, können Sie beispielsweise den Mindestlagerbestand definieren, der für eine Produktgruppe, ein Einzelprodukt oder eine Produktvariante pro Standort oder Standortgruppe behalten werden soll.
     - **Prioritätsregel für Erfüllungsstandort** – Durch diesen Regeltyp können Organisationen eine Hierarchie der Standorte definieren, um eine Priorität festzulegen, nach der das OM-Modul versucht, Erfüllungsstandorte für bestimmte Produkte zu finden. Der gültige Prioritätsbereich ist 1 bis 10, wobei 1 die höchste Priorität und 10 die niedrigste Priorität hat. Standorte, die höhere Priorität aufweisen, werden vor Standorten berücksichtigt, die niedrigere Priorität haben. Wenn die Regel als uneingeschränkte Einschränkungsregel definiert wird, werden Aufträge nur an Standorte vermittelt, für die Prioritäten definiert wurden.
@@ -135,14 +135,14 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
 
    - **Startdatum** und **Enddatum** – Für jede Regel kann mit diesen Feldern ein Gültigkeitsdatum festgelegt werden.
    - **Deaktiviert** – Nur Regeln, die in diesem Feld den Wert **Nein** haben, werden in einer DOM-Ausführung berücksichtigt.
-   - **Unbedingte Einschränkung** – Eine Regel kann als unbedingte oder nicht unbedingte Einschränkung definiert werden. Jede DOM-Ausführung durchläuft zwei Iterationen. In der ersten Iteration wird jede Regel als unbedingte Einschränkungsregel behandelt, unabhängig von der Einstellung dieses Feldes. Das bedeutet, dass jede Regel angewendet wird. Die einzige Ausnahme ist die Regel **Standortpriorität** . In der zweiten Iteration werden die Regeln entfernt, die nicht als unbedingte Einschränkungsregeln definiert wurden, und der Auftrag oder die Auftragspositionen, die bei Anwendung aller Regeln keinen Standorten zugewiesen wurden, werden nun Standorten zugewiesen.
+   - **Unbedingte Einschränkung** – Eine Regel kann als unbedingte oder nicht unbedingte Einschränkung definiert werden. Jede DOM-Ausführung durchläuft zwei Iterationen. In der ersten Iteration wird jede Regel als unbedingte Einschränkungsregel behandelt, unabhängig von der Einstellung dieses Feldes. Das bedeutet, dass jede Regel angewendet wird. Die einzige Ausnahme ist die Regel **Standortpriorität**. In der zweiten Iteration werden die Regeln entfernt, die nicht als unbedingte Einschränkungsregeln definiert wurden, und der Auftrag oder die Auftragspositionen, die bei Anwendung aller Regeln keinen Standorten zugewiesen wurden, werden nun Standorten zugewiesen.
 
 10. Erfüllungsprofile werden verwendet, um eine Regelsammlung, juristische Personen, Auftragsursprünge und Lieferarten zu gruppieren. Jede DOM-Ausführung gilt für ein bestimmtes Erfüllungsprofil. Auf diese Weise können Organisationen eine Gruppe von Regeln für mehrere juristische Personen für Aufträge definieren und ausführen, die bestimmte Auftragsursprünge und -Lieferarten haben. Wenn ein anderer Regelsatz für andere Auftragsursprünge oder Lieferarten ausgeführt werden muss, können die Erfüllungsprofile entsprechend definiert werden. Gehen Sie zum Einrichten von Erfüllungsprofilen folgendermaßen vor:  
 
-    1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> Erfüllungsprofile** .
+    1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Einrichten \> Erfüllungsprofile**.
     2. Wählen Sie **Neu** aus.
     3. Geben Sie in den Feldern **Profil** und **Beschreibung** Werte ein.
-    4. Aktivieren Sie die Option **Ergebnis automatisch übernehmen** . Wenn Sie diese Option auf **Ja** setzen, werden die Ergebnisse der DOM-Ausführung für das Profil automatisch in die Auftragspositionen übernommen. Wenn Sie diese auf **Nein** setzen, können die Ergebnisse nur im Erfüllungsplan angezeigt werden können. Sie werden nicht in die Auftragspositionen übernommen.
+    4. Aktivieren Sie die Option **Ergebnis automatisch übernehmen**. Wenn Sie diese Option auf **Ja** setzen, werden die Ergebnisse der DOM-Ausführung für das Profil automatisch in die Auftragspositionen übernommen. Wenn Sie diese auf **Nein** setzen, können die Ergebnisse nur im Erfüllungsplan angezeigt werden können. Sie werden nicht in die Auftragspositionen übernommen.
     5. Soll das DOM-Profil bei Aufträgen mit jedwedem Auftragsursprung ausgeführt werden, darunter auch Aufträge, bei denen der Auftragsursprung nicht angegeben ist, legen Sie die Option **Aufträge mit leerem Auftragsursprung verarbeiten** auf **Ja** fest. Um das Profil nur bei einigen Auftragsursprüngen auszuführen, können Sie diese auf der Seite **Auftragsursprünge** festlegen. Hierzu folgt später noch eine Erklärung.
 
     > [!NOTE]
@@ -154,34 +154,34 @@ Die folgende Abbildung zeigt den Lebenszyklus eines Auftrags in einem System fü
     > 
     > Um diese Funktion sinnvoll einzusetzen, stellen Sie sicher, dass es eine Erfüllungsgruppe gibt, die alle Versandlager enthält, und ordnen Sie diese Erfüllungsgruppe dann dem Erfüllungsprofil zu.
     
-    6. Aktivieren Sie auf dem Inforegister **Juristische Personen** die Option **Hinzufügen** , und wählen Sie dann eine juristische Person aus.
-    7. Aktivieren Sie auf dem Inforegister **Regeln** die Option **Hinzufügen** , und wählen Sie dann die Regel aus, die mit dem Profil verknüpft werden soll.
+    6. Aktivieren Sie auf dem Inforegister **Juristische Personen** die Option **Hinzufügen**, und wählen Sie dann eine juristische Person aus.
+    7. Aktivieren Sie auf dem Inforegister **Regeln** die Option **Hinzufügen**, und wählen Sie dann die Regel aus, die mit dem Profil verknüpft werden soll.
     8. Wiederholen Sie die obigen zwei Schritte, bis dem Profil alle erforderlichen Regeln zugeordnet sind.
-    9. Wählen Sie **Speichern** .
-    10. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Einstellungen** , und wählen Sie **Lieferarten** aus.
+    9. Wählen Sie **Speichern**.
+    10. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Einstellungen**, und wählen Sie **Lieferarten** aus.
     11. Wählen Sie auf der Seite **Lieferarten** die Option **Neu** aus.
     12. Wählen Sie im Feld **Unternehmen** aus, die juristische Person aus. Die Liste der Unternehmen wird auf die juristischen Personen beschränkt, die Sie zuvor hinzugefügt haben.
     13. Im Feld **Lieferart** wählen Sie die Lieferart aus, die diesem Profil zugeordnet werden soll. Eine Lieferart kann nicht mehreren aktiven Profilen zugeordnet werden.
     14. Wiederholen Sie die obigen beiden Schritte, bis dem Profil alle erforderlichen Lieferarten zugeordnet sind.
-    15. Schließen Sie die Seite **Lieferarten** .
-    16. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Einstellungen** , und wählen Sie **Auftragsursprünge** aus.
+    15. Schließen Sie die Seite **Lieferarten**.
+    16. Klicken Sie im Aktivitätsbereich auf die Registerkarte **Einstellungen**, und wählen Sie **Auftragsursprünge** aus.
     17. Wählen Sie auf der Seite **Auftragsursprünge** die Option **Neu** aus.
     18. Wählen Sie im Feld **Unternehmen** aus, die juristische Person aus. Die Liste der Unternehmen wird auf die juristischen Personen beschränkt, die Sie zuvor hinzugefügt haben.
     19. Wählen Sie im Feld **Auftragsursprung** den Auftragsursprung aus, der diesem Profil zugeordnet werden soll. Ein Auftragsursprung kann nicht mehreren aktiven Profilen zugeordnet werden.
     20. Wiederholen Sie die obigen beiden Schritte, bis dem Profil alle erforderlichen Auftragsursprünge zugeordnet sind.
-    21. Schließen Sie die Seite **Auftragsursprünge** .
+    21. Schließen Sie die Seite **Auftragsursprünge**.
     22. Legen Sie die Option **Profil aktivieren** auf **Ja** fest. Wenn in den Einstellungen ein Fehler vorhanden ist, erhalten Sie eine Warnmeldung.
 
 ## <a name="dom-processing"></a>DOM-Verarbeitung
 
 DOM wird nur in einen Batchauftrag ausgeführt. Um den Batchauftrag für DOM-Ausführungen zu konfigurieren, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Stapelverarbeitung \> DOM-Verarbeitung für einen Auftrag einrichten** .
+1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Stapelverarbeitung \> DOM-Verarbeitung für einen Auftrag einrichten**.
 1. Wählen Sie im Inforegister **Parameter** im Feld **Erfüllungsprofil** ein Profil aus, für das DOM ausgeführt werden muss.
 1. Wählen Sie im Inforegister **Im Hintergrund ausführen** im Feld **Stapelverarbeitungsgruppe** eine konfigurierte Stapelverarbeitungsgruppe aus.
 1. Geben Sie im Feld **Aufgabenbeschreibung** einen Namen für den Batchauftrag ein.
 1. Wählen Sie **Wiederholung** aus, und definieren Sie die Wiederholung des Batchauftrags.
-1. Wählen Sie **OK** .
+1. Wählen Sie **OK**.
 
 Zum Zeitpunkt des Verarbeitung berücksichtigt DOM die Reihenfolge und die Auftragspositionen, die im Folgenden beschrieben sind:
 
@@ -206,7 +206,7 @@ Wenn das Erfüllungsprofil auf **Automatisch übernehmen** festgelegt ist, werde
 
 Um alle erzeugten Erfüllungspläne anzuzeigen, führen Sie die folgenden Schritte aus.
 
-1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Verteilte Auftragsverwaltung** .
+1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Verteilte Auftragsverwaltung**.
 2. Wählen Sie Arbeitsbereich **Verteilte Auftragsverwaltung** die Kachel **Erfüllungspläne** aus.
 3. Wählen Sie die ID des relevanten Auftragserfüllungsplans aus, um den Erfüllungsplan anzuzeigen.
 
@@ -220,7 +220,7 @@ Um alle erzeugten Erfüllungspläne anzuzeigen, führen Sie die folgenden Schrit
 
 ## <a name="order-line-actions-and-statuses"></a>Auftragspositionsaktivitäten und Statusangaben
 
-Im Folgenden werden die Einstellungen für die Auftragsposition beschrieben. Gehen Sie zu **Retail und Commerce \> Kunden \> Alle Aufträge** , um die Auftragsposition zu öffnen.
+Im Folgenden werden die Einstellungen für die Auftragsposition beschrieben. Gehen Sie zu **Retail und Commerce \> Kunden \> Alle Aufträge**, um die Auftragsposition zu öffnen.
 - Ist der Option **Aus DOM-Verarbeitung ausschließen** auf der Registerkarte **Allgemein** der Auftragsposition auf **Ja** gesetzt, wird der Auftrag oder die Auftragsposition aus der DOM-Verarbeitung ausgeschlossen.
 - Im Feld **DOM-Status** auf der Registerkarte **Allgemein** der Auftragsposition kann einer der folgenden Werte festgelegt werden:
 
@@ -240,10 +240,10 @@ Im Folgenden werden die Einstellungen für die Auftragsposition beschrieben. Geh
 
 Während die DOM-Verarbeitung ausgeführt wird, werden Erfüllungspläne erstellt. Im Laufe der Zeit verfügt das System über verschiedene Erfüllungspläne. Um die Anzahl der Erfüllungspläne im System zu verwalten, können Sie einen Batchauftrag konfigurieren, der ältere Erfüllungspläne basierend auf dem Wert **Einbehaltungszeitraum in Tagen** löscht.
 
-1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Stapelverarbeitung \> Einrichtung DOM-Erfüllungsdaten-Löschauftrag** . 
+1. Gehen Sie zu **Retail und Commerce \> Verteilte Auftragsverwaltung \> Stapelverarbeitung \> Einrichtung DOM-Erfüllungsdaten-Löschauftrag**. 
 1. Wählen Sie im Feld **Stapelverarbeitungsgruppe** eine konfigurierte Stapelverarbeitungsgruppe aus.
 1. Wählen Sie **Wiederholung** aus, und definieren Sie die Wiederholung des Batchauftrags.
-1. Wählen Sie **OK** .
+1. Wählen Sie **OK**.
 
 ## <a name="more-information"></a>Weitere Informationen
 

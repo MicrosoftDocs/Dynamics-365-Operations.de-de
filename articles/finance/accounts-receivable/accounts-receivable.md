@@ -19,11 +19,11 @@ ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 69d2d320434baab21fb7e7c57ce1f043e4946d69
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3976618"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459048"
 ---
 # <a name="accounts-receivable-home-page"></a>Startseite für Debitoren
 
@@ -94,7 +94,7 @@ Akzeptieren Sie unterschiedliche Zahlungstypen von Debitoren, wie Wechsel, Barge
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-#### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
+#### <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 
 Lesen Sie den [Microsoft Dynamics 365-Produktplan](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant sind. 
 

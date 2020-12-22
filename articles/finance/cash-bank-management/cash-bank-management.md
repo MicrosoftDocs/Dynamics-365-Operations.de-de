@@ -19,11 +19,11 @@ ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
-ms.sourcegitcommit: 74b10104338222a945684d841d60ab4b8e570168
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "3899617"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459108"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startseite für Bargeld- und Bankverwaltung
 
@@ -84,7 +84,7 @@ Zu diesen Finanzinstrumenten gehören Einzahlungsbelege, Schecks, Wechsel und So
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
-#### <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
+#### <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 
 Lesen Sie die [Microsoft Dynamics 365-Veröffentlichungspläne](https://go.microsoft.com/fwlink/?linkid=2010158), um zu erfahren, welche neuen Funktionen geplant wurden. 
 

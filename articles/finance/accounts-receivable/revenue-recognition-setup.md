@@ -17,11 +17,11 @@ ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
-ms.sourcegitcommit: d37fb09101c30858bcb975931b3d8f947d72017b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "2570332"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459075"
 ---
 # <a name="revenue-recognition-setup"></a>Umsatzerkennungseinstellungen
 [!include [banner](../includes/banner.md)]
@@ -138,7 +138,7 @@ Sie können Artikelgruppen und freigegebene Produkte einrichten, indem Sie entwe
     - **Höchsttoleranz** – Geben Sie hier den prozentualen Anteil ein, der über dem Medianpreis zulässig ist.
     - **Mindesttoleranz** – Geben Sie hier den prozentualen Anteil ein, der unter dem Medianpreis zulässig ist.
 
-Nachdem Sie alle Einstellungen für das freigegebene Produkt konfiguriert haben, müssen Sie den Umsatzerlöspreis manuell definieren, indem Sie den angemessenen Marktpreis oder den Medianpreis (wenn Sie die Medianpreismethode anwenden) auf der Seite **Umsatzerlöspreise** (**Umsatzerkennung \> Einstellungen \> Lagereinrichtung \> Freigegebene Produkte**) angeben und dann im Aktivitätsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Umsatzerkennung** die Option **Umsatzerlöspreise** auswählen).
+Nachdem Sie alle Einstellungen für das freigegebene Produkt konfiguriert haben, müssen Sie den Umsatzerlöspreis manuell definieren, indem Sie den angemessenen Marktpreis oder den Medianpreis (wenn Sie die Medianpreismethode anwenden) auf der Seite **Umsatzerlöspreise** (**Umsatzerkennung \> Einstellungen \> Lagereinrichtung \> Freigegebene Produkte** angeben und dann im Aktivitätsbereich auf der Registerkarte **Verkaufen** in der Gruppe **Umsatzerkennung** die Option **Umsatzerlöspreise** auswählen).
 
 [![Umsatzerlöspreise](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 

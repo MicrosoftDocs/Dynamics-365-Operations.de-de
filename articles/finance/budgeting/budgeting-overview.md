@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5a7a03e6149d3677ac4f35522e4898e1f62da329
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 8a910aa7f54905f305ed69e9dd9eea0909e5558d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528544"
 ---
 # <a name="budgeting-home-page"></a>Budgetierung – Startseite
 
@@ -64,7 +64,7 @@ Informationen zur Integration von Planungsdaten aus anderen Modulen in Budgetpl�
 ## <a name="user-interface-and-reporting-capabilities"></a>Benutzeroberfläche und Berichtsfunktionen
 Benutzer können Budgetpläne entweder direkt im Client (mithilfe einer konfigurierbaren Budgetplan-Dokumentenseite) oder in Excel erstellen. Excel bietet mehrere zusätzliche Funktionen. So können Sie beispielsweise externe Daten als Quelle für einen Budgetplan nutzen, benutzerdefinierte Berechnungen ausführen und Microsoft Excel-PivotTable-Tabellen und -Diagramme verwenden. Die meisten Variablen im Budgetplanungsprozess können konfiguriert werden. 
 
-Sie können beispielsweise definieren, wer die Budgetierung vornimmt, was budgetiert wird und wie der Prozess verläuft. Obwohl Sie Excel für die Budgetplanung verwenden können, ist die Anwendung die vertrauenswürdigere Quelle, mit der Sie Budgetsteuerungsprobleme vermeiden können. Periodische Prozesse können verwendet werden, um ursprüngliche Daten für die Budgetierung in den Budgetplan einzufügen. Die Anwendung bietet zu Berichtszwecken eine Zusammenstellung an Standardabfrageseiten an, in denen Sie Budgetplanungsdaten anzeigen und analysieren können. Über Management Reporter können Sie auf Budgetplandaten zugreifen, und Sie können separate Budgetplanszenarien als Spalten im Management Reporter-Bericht anzeigen.
+Sie können beispielsweise definieren, wer die Budgetierung vornimmt, was budgetiert wird und wie der Prozess verläuft. Obwohl Sie Excel für die Budgetplanung verwenden können, ist die Anwendung die vertrauenswürdigere Quelle, mit der Sie Budgetsteuerungsprobleme vermeiden können. Periodische Prozesse können verwendet werden, um ursprüngliche Daten für die Budgetierung in den Budgetplan einzufügen. Die Anwendung bietet zu Berichtszwecken eine Zusammenstellung an Standardabfrageseiten an, in denen Sie Budgetplanungsdaten anzeigen und analysieren können. Über [Financial Reporting](../general-ledger/financial-reporting-getting-started.md) können Sie auf Budgetplandaten zugreifen. Separate Budgetplanszenarien können Sie sich als Spalten im Finanzbericht anzeigen lassen.
 
 
 

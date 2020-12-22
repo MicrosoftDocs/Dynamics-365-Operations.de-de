@@ -16,9 +16,11 @@
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?toc=/dynamics365/finance/toc.json
                 - name: FAQ zu Dienstupdates für One Version
                   href: ../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/finance/toc.json
+                - name: "Updates und benutzerdefinierten Codelebenszyklus verwalten\_– einschließlich Dynamics 365 Commerce"
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?toc=/dynamics365/finance/toc.json
                 - name: Software-Lebenszyklusrichtlinie – Cloud
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md?toc=/dynamics365/finance/toc.json
-                - name: Software-Lebenszyklusrichtlinie – lokal
+                - name: Software-Lebenszyklusrichtlinie – On-Premises
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/dynamics365/finance/toc.json
                 - name: Dienstupdateverfügbarkeit
                   href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?toc=/dynamics365/finance/toc.json
@@ -68,16 +70,14 @@
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Neuerungen oder Änderungen in Finance
                   items:
-                    - name: Neuerungen oder Änderungen auf der Startseite von Finance
+                    - name: Neuerungen oder Änderungen auf der Finance-Startseite
                       href: get-started/whats-new-home-page.md
+                    - name: "Finance\_10.0.16 (Februar 2021)"
+                      href: get-started/whats-new-changed-10-0-16.md
                     - name: Finance 10.0.15 (Januar 2021)
                       href: get-started/whats-new-changed-10-0-15.md
                     - name: Finance 10.0.14 (November 2020)
                       href: get-started/whats-new-changed-10-0-14.md
-                    - name: Finance 10.0.13 (Oktober 2020)
-                      href: get-started/whats-new-changed-10-0-13.md
-                    - name: "Finance 10.0.12 (August\_2020)"
-                      href: get-started/whats-new-changed-10-0-12.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Funktionen in Dynamics 365 Finance
@@ -86,8 +86,6 @@
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
             - name: "Verschobene Funktionen von AX\_2012"
               href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: Nicht in lokale Bereitstellungen implementierte Funktionen
-              href: ../fin-ops-core/fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/finance/toc.json
             - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
               href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentationsressourcen
@@ -144,7 +142,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/finance/toc.json
                 - name: Arbeitsbereiche konfigurieren und filtern
                   href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/finance/toc.json
-                - name: Seiten mithilfe des Symbols „In neuem Fenster öffnen” nebeneinander anzeigen
+                - name: Seiten mithilfe der „In neuem Fenster öffnen”-Funktion nebeneinander anzeigen
                   href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/finance/toc.json
                 - name: Tastenkombinationen
                   href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/finance/toc.json
@@ -720,10 +718,12 @@
               href: fixed-assets/depreciation-book-upgrade-considerations.md
             - name: Abgeleitete Bücher
               href: fixed-assets/derived-books.md
-            - name: Anlagewertmodel und Abschreibungsbuchzusammenführung
+            - name: Anlagewertmodell und Abschreibungsbuchzusammenführung
               href: fixed-assets/fixed-asset-value-model-depreciation-book-merge.md
             - name: Mit abgeleiteten Büchern buchen
               href: fixed-assets/post-derived-value-models.md
+            - name: Anzahl der Bücher pro Erfassung
+              href: fixed-assets/number-books-per-journal.md
             - name: Anlagenbuchungen auf Buchungsebenen buchen
               href: fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: Anlagenbuchungsoptionen
@@ -732,6 +732,8 @@
               href: fixed-assets/tasks/transfer-fixed-asset.md
             - name: Anlage teilen
               href: fixed-assets/tasks/split-fixed-asset.md
+            - name: Degressive Abschreibung nach einer Teilung reduzieren
+              href: fixed-assets/reduce-balance-depreciation-after-split.md
             - name: Anlagengruppen einrichten
               href: fixed-assets/tasks/set-up-fixed-asset-groups.md
             - name: Anlagengruppe ändern
@@ -812,15 +814,79 @@
                   href: fixed-assets/straight-line-service-life-depreciation.md
         - name: Anlagenleasing
           items:
+            - name: Anlagenleasing-Startseite
+              href: asset-leasing/asset-leasing-homepage.md
             - name: Erste Schritte beim Anlagenleasing
               href: asset-leasing/asset-leasing-quick-start.md
+            - name: Anlagenleasing-Einrichtung
+              items:
+                - name: Anlagenleasing-Parameter konfigurieren
+                  href: asset-leasing/config-lease-parameters.md
+                - name: Leasingbücher einrichten
+                  href: asset-leasing/set-up-lease-books.md
+                - name: Eine Leasinggruppe erstellen
+                  href: asset-leasing/create-lease-group.md
+                - name: Indexraten einrichten
+                  href: asset-leasing/set-up-index-rate-types.md
+                - name: Ausgabentypen einrichten
+                  href: asset-leasing/set-up-expense-types.md
+                - name: Leasingerfassungsnamen einrichten
+                  href: asset-leasing/set-up-lease-journal-names.md
+                - name: Leasingbuchungskonten einrichten
+                  href: asset-leasing/set-up-lease-posting-accts.md
+                - name: Nummernkreise zuweisen
+                  href: asset-leasing/leasing-number-sequences.md
+                - name: Benutzerrollen zuweisen
+                  href: asset-leasing/lease-user-roles.md
+            - name: Anlagenleasing verwalten
+              items:
+                - name: Ein Leasingobjekt hinzufügen oder kopieren
+                  href: asset-leasing/add-lease.md
+                - name: Eine Rechnung für eine Zahlung erstellen
+                  href: asset-leasing/create-payment-invoice.md
+                - name: Abschreibung des Nutzungsrechts am Leasingobjekt erfassen
+                  href: asset-leasing/record-rou-asset-depreciation.md
+                - name: Gebuchte Leasingtransaktionen stornieren
+                  href: asset-leasing/reverse-posted-lease-trans.md
+                - name: Ein Leasing anpassen
+                  href: asset-leasing/adjust-lease.md
+                - name: Ein Nutzungsrecht am Leasingobjekt beeinträchtigen
+                  href: asset-leasing/impair-rou-asset.md
+                - name: Ein Leasing mit einem Anlagevermögen verknüpfen
+                  href: asset-leasing/associate-lease-with-fixed-asset.md
+                - name: Leasingobjekte in Fremdwährungen erfassen
+                  href: asset-leasing/record-leases-foreign-currency.md
+                - name: An eine Indexrate gebundene Leasingzahlungen neu bewerten
+                  href: asset-leasing/revalue-payments-tied-2-index-rate.md
+                - name: Kurzfrist-Anteil der Leasingverbindlichkeit umgliedern
+                  href: asset-leasing/reclassify-st-lease-liability.md
+                - name: 'Verbindlichkeiten, Anlagen und Ausgabentransaktionen anzeigen'
+                  href: asset-leasing/view-asset-transactions.md
+                - name: Aufzinsungsintervallfunktionalität
+                  href: asset-leasing/compound-interval-functionality.md
+                - name: Zahlungspläne im Batch bestätigen
+                  href: asset-leasing/confirm-payment-schedules-in-batch.md
+                - name: Monatliche Erfassungseinträge im Batch erstellen
+                  href: asset-leasing/create-monthly-journals-batch.md
+                - name: Leasingbuchungsarten
+                  href: asset-leasing/lease-posting-types.md
+                - name: Doppelte Berichterstellung
+                  href: asset-leasing/dual-reporting.md
+                - name: Leasing-Workflow einrichten
+                  href: asset-leasing/set-up-lease-wrkflw.md
+                - name: Leasinggenehmigungs-Workflows verwenden
+                  href: asset-leasing/use-create-lease-wrkflw.md
+                - name: Leasingobjekte über das Framework für Leasingimport verwalten
+                  href: asset-leasing/manage-leases-thru-imprt-framewrk.md
+            - name: Leasing-Berichte für Anlagen
+              href: asset-leasing/asset-leasing-rprts.md
         - name: Hauptbuch
           items:
-            - name: Übersicht über das Hauptbuch
+            - name: "Hauptbuch\_– Übersicht"
               href: general-ledger/general-ledger.md
             - name: Konten
               items:
-                - name: Übersicht über Abgrenzungen
+                - name: Abgrenzungen – Übersicht
                   href: general-ledger/accruals-overview.md
                 - name: Löschungsregeln
                   href: general-ledger/elimination-rules.md
@@ -908,6 +974,8 @@
                   href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                 - name: Sachkonto-Erfassungstypen
                   href: general-ledger/ledger-journal-types.md
+                - name: Sachkonten konfigurieren
+                  href: general-ledger/configure-ledger.md
                 - name: Erfassungen erstellen und validieren
                   href: general-ledger/tasks/create-validate-journals.md
                 - name: Journaleinträge oder Buchungen anzeigen
@@ -1002,7 +1070,45 @@
                   href: general-ledger/audit-policy-violations-cases.md
                 - name: Überwachungsrichtlinien für Quelldokumente definieren
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
-        - name: Projektverwaltung und Buchhaltung
+        - name: Finanzeinblicke
+          items:
+            - name: "Finanzeinblicke\_– Startseite"
+              href: finance-insights/finance-insights-home-page.md
+            - name: Konfiguration und Administration
+              items:
+                - name: Finanzeinblicke konfigurieren
+                  href: finance-insights/configure-for-fin-insites.md
+                - name: Vorhersagen für Kundenzahlungen aktivieren
+                  href: finance-insights/enable-cust-paymnt-prediction.md
+                - name: Cashflow-Planung aktivieren
+                  href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Budgetvorschläge aktivieren
+                  href: finance-insights/enable-budget-proposal.md
+                - name: Datenintegratorprojekt erstellen
+                  href: finance-insights/create-data-integrate-project.md
+            - name: Finanzeinblicke verwenden
+              items:
+                - name: Budgetvorschläge
+                  href: finance-insights/budget-proposals.md
+                - name: Bargeldposition
+                  href: finance-insights/cash-position.md
+                - name: Cashflow-Planung
+                  href: finance-insights/cash-flow-forecast-intro.md
+                - name: Externe Daten in Cashflow-Planungen verwenden
+                  href: finance-insights/external-data-in-cash-flow.md
+                - name: Vorhersagen für Kundenzahlungen
+                  href: finance-insights/payment-insights-overview.md
+                - name: Vorhersagen für Kundenzahlungen verwenden
+                  href: finance-insights/use-customer-payment-predictions.md
+                - name: "Momentaufnahmen\_– Übersicht"
+                  href: finance-insights/payment-snapshots.md
+                - name: Ergebnisse von Machine Learning-Modellen
+                  href: finance-insights/confusion-matrix.md
+                - name: Das anfängliche Vorhersagemodell für Kundenzahlung bewerten
+                  href: finance-insights/evaluate-payment-prediction.md
+                - name: Vorhersagemodell verbessern
+                  href: finance-insights/improve-model.md
+        - name: Projektverwaltung und -buchhaltung
           items:
             - name: Projektverwaltung und Buchhaltung – Übersicht
               href: project-management/overview-project-management-accounting.md
@@ -1408,6 +1514,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: NF-e-Parameter für steuerliche Einrichtung einrichten
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: "NT2019.001\_– Regeln für Steuervorteile und Steuerbefreiungen für NF-e/NFC-e"
+                      href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
                 - name: SPED-Reinf-Steuerauszug
@@ -1506,7 +1614,7 @@
               items:
                 - name: China – Übersicht
                   href: localizations/china.md
-                - name: Finance and Operations – bearbeitet von 21Vianet in China
+                - name: Finance and Operations betrieben von 21Vianet in China
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Stücklistenvergleich
                   href: localizations/apac-chn-bom-comparison.md
@@ -1690,7 +1798,7 @@
                   href: localizations/emea-invoice-processing.md
                 - name: EU-Gelangensbestätigung ausstellen
                   href: localizations/tasks/eur-00012-issue-eu-entry-certificate.md
-                - name: OIOUBL-Standards
+                - name: Unterstützte Standards für die elektronische Rechnungsstellung
                   href: localizations/emea-oioubl-standards-electronic-invoicing.md
                 - name: Originalrechnungsreferenz (Osteuropa)
                   href: localizations/tasks/ee-00004-original-invoice-reference.md
@@ -1836,6 +1944,8 @@
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Umsatzsteuererklärung für Deutschland
                   href: localizations/emea-de-vat-declaration.md
+                - name: Bericht über elektronische Rechnungen für Kunden
+                  href: localizations/emea-deu-e-invoices.md
                 - name: Erfassungslistenbericht
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Elektronische Steuererklärungen einrichten
@@ -1938,6 +2048,8 @@
                           href: localizations/apac-ind-news-letter-10-0-12.md
                         - name: Neuerungen oder Änderungen in 10.0.13
                           href: localizations/ind-news-letter-10-0-13.md
+                        - name: Neuerungen oder Änderungen in 10.0.14
+                          href: localizations/apac-ind-news-letter-10-0-14.md
                     - name: Indien-GST-Referenzgruppen
                       href: localizations/apac-ind-gst-reference-groups.md
                     - name: GST-Integration bei Kassen
@@ -2164,6 +2276,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektronische Rechnungen für Kunden
                   href: localizations/emea-ita-e-invoices.md
+                - name: Jährliche Steuermitteilung
+                  href: localizations/emea-ita-yearly-tax-communication.md
             - name: Japan
               items:
                 - name: Japan – Übersicht
@@ -2450,11 +2564,13 @@
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: Standardprotokolldatei für Steuer (SAF-T) für Norwegen
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
+                - name: Elektronische Rechnungen für Kunden in Norwegen
+                  href: localizations/emea-nor-e-invoices.md
             - name: Polen
               items:
                 - name: Polen – Übersicht
                   href: localizations/poland.md
-                - name: Aktivieren der Stornobuchung
+                - name: Stornobuchung aktivieren
                   href: localizations/emea-pol-red-storno.md
                 - name: Berechnen von Positionsrabatten anhand des Artikelpreises
                   href: localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -2482,13 +2598,15 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Geteilte Kreditoren/Debitoren-Wechselkursdifferenz
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: 'Mehrwertsteuererklärung mit Registern (JPK_V7M, VDEK)'
+                  href: localizations/emea-pol-vdek.md
             - name: Katar
               items:
-                - name: Übersicht über Katar
+                - name: "Katar\_– Übersicht"
                   href: localizations/qatar.md
             - name: Russland
               items:
-                - name: Übersicht über Russland
+                - name: "Russland\_– Übersicht"
                   href: localizations/russia.md
                 - name: Hauptbuch
                   items:
@@ -2716,6 +2834,8 @@
                   href: localizations/apac-sau-sales-tax.md
                 - name: Zakat-Berichterstellung für Saudi-Arabien
                   href: localizations/emea-sau-zakat-reporting.md
+                - name: Einer Lieferung Bankdokumentbelastungen zuordnen
+                  href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
             - name: Singapur
               items:
                 - name: Singapur – Übersicht
@@ -2994,6 +3114,13 @@
               href: ../fin-ops-core/dev-itpro/analytics/bi-reporting-home-page.md?toc=/dynamics365/finance/toc.json
             - name: Zugang zu Informationen und Berichterstellung
               href: ../fin-ops-core/dev-itpro/analytics/information-access-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Personalisierungsoptionen mit Power BI.com
+              items:
+                - name: Bei Power BI.com-Integration verfügbare Funktionen
+                  href: ../fin-ops-core/dev-itpro/analytics/power-bi-integration.md?toc=/dynamics365/finance/toc.json
+                - name: Power BI.com-Inhalt anheften
+                  href: ../fin-ops-core/dev-itpro/analytics/pin-power-bi-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Analytische Arbeitsbereiche aus Power BI.com auswählen
             - name: Personalisierungsoptionen mit Power BI
               items:
                 - name: Bei Power BI-Integration verfügbare Funktionen
@@ -3112,7 +3239,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/finance/toc.json
                 - name: Aggregierende Messungen mit Finanzdimensionen ergänzen
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/finance/toc.json
-                - name: "Analytische Berichte mithilfe von Power\_BI\_Desktop erstellen"
+                - name: Analyseberichte mit Power BI Desktop erstellen
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Analysen zu Arbeitsbereichen mit Power BI Embedded hinzufügen
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/finance/toc.json
@@ -3532,6 +3659,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/finance/toc.json
                 - name: Eine neue ER-Lösung für den Ausdruck eines angepassten Berichts entwerfen
                   href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/finance/toc.json
+                - name: ER-Lösung zur Erstellung eines benutzerdefinierten elektronischen Dokuments anpassen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/finance/toc.json
             - name: Lernprogramme
               items:
                 - name: Informationen zur Nutzung von Datenquellen
@@ -3608,6 +3737,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                     - name: Große ausgehende Dokumente komprimieren
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurierte ER-Komponenten prüfen
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=dynamics365/finance/toc.json
                 - name: Relativer Pfad in Datenbindungen
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=dynamics365/finance/toc.json
             - name: Elektronische Berichtslösungen in Finance and Operations verwenden
@@ -3660,26 +3791,38 @@
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
                     - name: Generieren druckbarer Freitextrechnungs-Formulare (FTI)
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Überwachen der Ausführung von ER-Formaten zur Behebung von Leistungsproblemen
+                - name: Ausführung von ER-Formaten zur Behebung von Leistungsproblemen überwachen
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
-                - name: Geschäftsdokumentverwaltung
+                - name: 'Geschäftsdokumentverwaltung (BDM, Business Document Management)'
                   items:
-                    - name: Geschäftsdokumentverwaltung – Übersicht
+                    - name: "BDM\_– Übersicht"
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Neue Benutzeroberfläche für Dokumente in der Geschäftsdokumentenverwaltung
-                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md
-                    - name: Neue Felder zu einer Geschäftsdokumentvorlage in Microsoft Excel hinzufügen
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                    - name: Neue Dokumentbenutzeroberfläche in BDM
+                      href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/finance/toc.json
+                    - name: Geschäftsdokumentvorlagen in BDM bearbeiten
+                      items:
+                        - name: Einer Geschäftsdokumentvorlage in Microsoft Excel neue Felder hinzufügen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
+                        - name: Struktur einer Geschäftsdokumentvorlage aktualisieren
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
             - name: ER-Framework-API
               items:
                 - name: Liste integrierter Berichterstellungsfunktionen erweitern
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
-                - name: "API-Änderungen bei Application Update\_10.0.11"
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                - name: "API-Änderungen bei Application Update\_7.3"
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                - name: API-Änderungen
+                  items:
+                    - name: "Application Update\_7.3"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
+                    - name: "Application Update\_10.0.11"
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                 - name: Benutzerdefinierten Speicherort für generierte Dokumente angeben
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                  items:
+                    - name: 'Ein Ereignis abonnieren, um eine Antwort vom abonnierenden Handler anzufordern'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
+                    - name: Erstellung eines ER-Ziels an ein benutzerdefiniertes Empfängerwerk delegieren
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
+                - name: Datenquellenwerte vom Typ USER INPUT PARAMETER aus dem Quellcode initiieren
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobile App
           items:
             - name: Startseite der mobilen App

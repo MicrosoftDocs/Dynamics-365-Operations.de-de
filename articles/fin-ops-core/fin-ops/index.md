@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4249f2ec09e6742c843122c189cc7db7f72d1146
-ms.sourcegitcommit: 40163705a134c9874fd33be80c7ae59ccce22c21
+ms.openlocfilehash: a44324a14a78174ad4d68e6686c523c49d7aa3bd
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3005539"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4694384"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Finance and Operations-Anwendungsdokumentation
 
@@ -51,12 +50,12 @@ Ein Großteil dieses Inhalts gilt auch für die zugehörigen Produkte: Dynamics 
 <p><a href="imp-lifecycle/onboard.md">Onboarding eines Projekts</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Vorbereiten der Liveschaltung</a></p>
 
-<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Dienstupdates für eine Version</a></h3>
-<p><a href="get-started/one-version.md">FAQ zu Dienstupdates für eine Version</a></p>
+<h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Dienstupdates für One Version</a></h3>
+<p><a href="get-started/one-version.md">FAQ zu Dienstupdates für One Version</a></p>
 <p><a href="../dev-itpro/migration-upgrade/versions-update-policy.md">Software-Lebenszyklusrichtlinie: Cloud</a></p>
 <p><a href="../dev-itpro/migration-upgrade/on-prem-version-update-policy.md">Software-Lebenszyklusrichtlinie: On-Premises</a></p>
 <p><a href="get-started/public-preview-releases.md">Standardrelease- und First Release-Dienstupdates</a></p>
-<p><a href="get-started/whats-new-changed.md">Neuigkeiten oder Änderungen</a></p>
+<p><a href="get-started/whats-new-changed.md">Neuerungen oder Änderungen</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrades, Updates und Hotfixes</a></p>
 <p><a href="../dev-itpro/deployment/apply-deployable-package-system.md">Updates auf Cloudumgebungen anwenden</a></p>
 <p><a href="../dev-itpro/lifecycle-services/configure-service-updates.md">Dienstupdates konfigurieren</a></p>

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: cb8519db2f5d52d4e317b485d6ecc910956788cb
-ms.sourcegitcommit: 708ca25687a4e48271cdcd6d2d22d99fb94cf140
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "3975315"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459116"
 ---
 # <a name="customer-workflow"></a>Debitorenworkflow
 
@@ -60,4 +60,4 @@ Liegt mindestens eine vorgeschlagene Änderung vor, werden im Aktivitätsbereich
 
     Der Status auf der Seite ändert sich in **Änderungen mit ausstehender Genehmigung**.
 
-Der Workflow folgt dem Standardworkflowablauf in der Anwendung. Die genehmigende Person wird an die Seite **Debitor** weitergeleitet. Dort kann sie die Änderungen auf der Seite **Vorgeschlagene Änderungen** einsehen und den Workflow dann mit **Workflow \> Genehmigen** genehmigen. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.
+Der Workflow folgt dem Standardworkflowablauf in der Anwendung. Die genehmigende Person wird an die Seite **Debitor** weitergeleitet. Dort können die Änderungen auf der Seite **Vorgeschlagene Änderungen** geprüft und der Workflow anschließend über **Workflow \> Genehmigen** genehmigt werden. Sind alle Genehmigungen bearbeitet, werden die Felder mit den vorgeschlagenen Werten aktualisiert.

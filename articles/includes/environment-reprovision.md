@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f6bf4b6c946ebc63d3d84140f762cd4b789deb03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459069"
+---
 Wenn Sie eine Datenbank von einer Umgebung in eine andere kopieren, müssen Sie das Tool zur erneuten Bereitstellung der Umgebung ausführen, bevor die kopierte Datenbank nach Ausführung dieses Schritts voll funktionsfähig ist, um zu gewährleisten, dass alle Commerce-Komponenten aktuell sind.
 
 > [!IMPORTANT]

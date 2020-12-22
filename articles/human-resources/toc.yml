@@ -5,7 +5,9 @@
       items:
         - name: Neuerungen oder Änderungen in Human Resources
           href: hr-admin-whats-new.md
-        - name: 22. Oktober 2002
+        - name: "2.\_Dezember\_2020"
+          href: hr-whats-new-2020-12-02.md
+        - name: 22. Oktober 2020
           href: hr-whats-new-2020-10-22.md
         - name: 6. Oktober 2020
           href: hr-whats-new-2020-10-06.md
@@ -199,7 +201,7 @@
               href: ../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json
             - name: Arbeitsbereiche konfigurieren und filtern
               href: ../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json
-            - name: Seiten mithilfe des Symbols „In neuem Fenster öffnen” nebeneinander anzeigen
+            - name: Seiten mithilfe der „In neuem Fenster öffnen”-Funktion nebeneinander anzeigen
               href: ../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json
             - name: Tastenkombinationen
               href: ../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json
@@ -477,6 +479,8 @@
               href: hr-personnel-define-jobs.md
             - name: Einen Arbeitszeitkalender erstellen
               href: hr-personnel-create-working-time-calendar.md
+            - name: Kandidaten für Stelle anwerben
+              href: hr-personnel-recruit.md
             - name: FAQ zu Personalaktivitäten
               href: hr-personnel-actions-faq.md
             - name: Workflows zum Verwalten von Mitarbeiterinformationen verwenden
@@ -529,11 +533,13 @@
           items:
             - name: Vergütungsverwaltung
               items:
-                - name: Übersicht über die Vorteilsverwaltung
+                - name: "Vorteilsverwaltung\_– Übersicht"
                   href: hr-benefits-management-overview.md
                 - name: Vorteilsverwaltung konfigurieren
                   items:
-                    - name: Vorteilsverwaltungsparameter festlegen
+                    - name: Vorteilsverwaltungsparameter pro Unternehmen konfigurieren
+                      href: hr-benefits-setup-parameters-per-company.md
+                    - name: Vorteilsverwaltungs- und Mitarbeiter-Self-Service-Parameter für alle Unternehmen festlegen
                       href: hr-benefits-setup-parameters.md
                     - name: Berechtigungsregeln und -optionen konfigurieren
                       href: hr-benefits-setup-eligibility-rules.md

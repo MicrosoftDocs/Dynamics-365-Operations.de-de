@@ -14,14 +14,12 @@
               items:
                 - name: Neuerungen oder Änderungen auf der Startseite von Plattformupdates
                   href: get-started/whats-new-home-page.md
+                - name: "Plattformupdates zu 10.0.16 (Februar\_2021)"
+                  href: get-started/whats-new-platform-updates-10-0-16.md
                 - name: "Plattformupdates zu 10.0.15 (Januar\_2021)"
                   href: get-started/whats-new-platform-updates-10-0-15.md
                 - name: Plattformupdates zu 10.0.14 (November 2020)
                   href: get-started/whats-new-platform-updates-10-0-14.md
-                - name: Plattformupdates zu 10.0.13 (Oktober 2020)
-                  href: get-started/whats-new-platform-updates-10-0-13.md
-                - name: Plattformupdates zu 10.0.12 (August 2020)
-                  href: get-started/whats-new-platform-update-10-0-12.md
             - name: Entfernte oder veraltete Funktionen
               items:
                 - name: Entfernte oder veraltete Plattformfunktionen
@@ -30,8 +28,6 @@
                   href: migration-upgrade/deprecated-features.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: "Verschobene Funktionen von AX\_2012"
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Nicht in lokale Bereitstellungen implementierte Funktionen
-              href: ../fin-ops/get-started/features-not-implemented-on-prem.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Ende des Mainstreamsupports für Microsoft Dynamics AX 2009 und 2012
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
         - name: Geschäftsereignisse
@@ -162,6 +158,8 @@
                               href: data-entities/dual-write/currrency-decimal-places.md
                             - name: Zuordnung für die Kundenauftragsstatusfelder einrichten
                               href: data-entities/dual-write/sales-status-map.md
+                            - name: 'Intercompany-Aufträge filtern, um die Synchronisierung von Aufträgen und Auftragspositionen zu vermeiden'
+                              href: data-entities/dual-write/filtering-intercompany-orders.md
                         - name: Verwalten von dualem Schreiben
                           items:
                             - name: Entitäts- und Feldzuordnungen anpassen
@@ -208,10 +206,12 @@
                                   href: data-entities/dual-write/ledger-mapping.md
                                 - name: Integrierter Steuermaster
                                   href: data-entities/dual-write/tax-mapping.md
-                            - name: Mit dem Dynamics 365 Supply Chain Management-Preisgestaltungsmodul on demand synchronisieren
-                              href: data-entities/dual-write/pricing-engine.md
                             - name: Prospect-to-Cash im dualen Schreiben
                               href: data-entities/dual-write/dual-write-prospect-to-cash.md
+                            - name: Mit dem Dynamics 365 Supply Chain Management-Preisgestaltungsmodul on demand synchronisieren
+                              href: data-entities/dual-write/pricing-engine.md
+                            - name: Dynamics 365 Commerce-Preisgestaltungsmodul mit Dynamics 365 Sales verwenden
+                              href: data-entities/dual-write/commerce-pricing.md
                             - name: Hausinterne Anlagen zur Wartung
                               href: data-entities/dual-write/in-house-assets.md
                             - name: 'Integrierte Arbeitskraft, Stelle und Position'
@@ -500,6 +500,8 @@
                       href: deployment/plan-onprem-deployment.md
                     - name: Anforderungen zur Hardwaregrößenanpassung
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
+                    - name: Authentifizierung in Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/authentication-onprem.md
                 - name: Lokale Umgebungen einrichten und bereitstellen
                   items:
                     - name: Lokale Projekte in LCS einrichten
@@ -630,6 +632,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Verbindung mit Lifecycle Services (LCS) in Azure Pipelines erstellen
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: Veraltete Pipeline in Azure Pipelines aktualisieren
+                  href: dev-tools/pipeline-msbuild-update.md
             - name: Beispielanwendung für die Flottenverwaltung
               items:
                 - name: End-to-End-Szenario für die Beispielanwendung zur Flottenverwaltung
@@ -766,6 +770,8 @@
                           href: dev-ref/xpp-data/xpp-data-perf.md
                         - name: Datenzugriff mithilfe der SysDa-API
                           href: dev-ref/sysda.md
+                        - name: SQL Injection-Angriff entschärfen
+                          href: dev-ref/query-with-parameters.md
                     - name: X++-Makros
                       href: dev-ref/xpp-macros.md
                     - name: X++-Attributklassen
@@ -1462,7 +1468,7 @@
               href: lifecycle-services/lcs-support.md
             - name: Supportübersicht für Dynamics 365
               href: 'https://docs.microsoft.com/power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json'
-            - name: Support für Finance and Operations von 21Vianet in China anfordern
+            - name: Support für Finance and Operations betrieben von 21Vianet in China anfordern
               href: lifecycle-services/21vianet-support.md
             - name: Technischen Support für Finance and Operations-Apps einrichten
               href: lifecycle-services/support-experience.md
@@ -1492,12 +1498,14 @@
                   href: sysadmin/security-architecture.md
                 - name: Verschlüsselung in Finance and Operations-Apps
                   href: sysadmin/encryption.md
-                - name: Leerlaufzeitüberschreitung für Sitzungen festlegen
+                - name: Inaktivitätstimeout für Sitzungen festlegen
                   href: sysadmin/session-idle-timeout.md
                 - name: Vordefinierte Sicherheitsberichte
                   href: sysadmin/security-reports.md
                 - name: Neue Benutzer erstellen
                   href: sysadmin/tasks/create-new-users.md
+                - name: Benutzersitzungsverwaltung
+                  href: sysadmin/user-session-management.md
                 - name: Massenimport von Benutzern
                   href: sysadmin/tasks/import-bulk-users.md
                 - name: Aufgabentrennung einrichten
@@ -1558,6 +1566,8 @@
               href: sysadmin/odata-warmup.md
             - name: Azure Key Vault-Client einrichten
               href: ../../finance/localizations/setting-up-azure-key-vault-client.md
+            - name: Bereinigungsroutinen
+              href: sysadmin/cleanuproutines.md
         - name: 'Upgrades, Updates und Hotfixes'
           items:
             - name: 'Ressourcen zu Upgrades, Updates und Hotfixes'
@@ -1690,13 +1700,13 @@
               href: user-interface/user-interface-development-home-page.md
             - name: Lernprogramme
               items:
-                - name: Die Vermietungsbelastungstypen erstellen
+                - name: Formular für Vermietungsbelastungstypen erstellen
                   href: user-interface/build-rental-charge-type-form.md
-                - name: Das Kundenformular erstellen
+                - name: Kundenformular erstellen
                   href: user-interface/build-customer-form.md
                 - name: Navigation erstellen
                   href: user-interface/build-navigation.md
-                - name: Arbeitsbereiche erstellen
+                - name: Arbeitsbereich ändern
                   href: user-interface/build-workspace.md
             - name: Formulare
               items:

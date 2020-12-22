@@ -19,11 +19,11 @@ ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: 9255640240ae07c3857c0b6f55a7ee27ba3bf85b
-ms.sourcegitcommit: cde71bc7d14ea6cdff2c4e991057d39a6a0473d9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "3887087"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459111"
 ---
 # <a name="supply-chain-management-home-page"></a>Startseite zum Supply Chain Management
 
@@ -31,7 +31,7 @@ ms.locfileid: "3887087"
 
 Dieses Thema enthält eine Liste der Hilfethemen und anderer Ressourcen in Dynamics 365 Supply Chain Management.
 
-## <a name="whats-new-and-in-development"></a>Neuigkeiten und Entwicklungen
+## <a name="whats-new-and-in-development"></a>Neuerungen und Entwicklungen
 
 Besuchen Sie [Dynamics 365 – Produktplan](https://roadmap.dynamics.com/), um zu erfahren, welche neue Funktionen veröffentlicht werden und welche neue Funktionen gerade entwickelt werden.
 
